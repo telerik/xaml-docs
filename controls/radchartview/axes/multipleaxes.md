@@ -137,7 +137,7 @@ To define multiple axes for the different chart series when [SeriesProvider]({%s
 	}
 {{endregion}}
 
-![WPF RadChartView ](images/radchartview-axes-multipleaxes-0.png)
+![WPF RadChartView with Multiple Axes](images/radchartview-axes-multipleaxes-0.png)
 
 >tip Defining additional axis in a Style setter will apply the same axis instance to all series. 
 

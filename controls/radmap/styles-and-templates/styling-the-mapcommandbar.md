@@ -37,7 +37,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 >To change the button's default toggled and hover colors, you have to edit their default styles.
 
 {% if site.site_name == 'Silverlight' %}
-![WPF RadMap ](images/RadMap_StylesAndTemplates_StylingMapCommandBar_01.png)
+![WPF RadMap MapCommandBar Blend Resources](images/RadMap_StylesAndTemplates_StylingMapCommandBar_01.png)
 {% endif %}
 
 * __ControlOuterBorderVertical_Normal__ - a brush that represents the border color of the buttons inside the __MapCommandBar__ control.
@@ -69,11 +69,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 {% if site.site_name == 'Silverlight' %}
 Here is an example of these resources modified:
 
-![WPF RadMap ](images/RadMap_StylesAndTemplates_StylingMapCommandBar_02.png)
+![WPF RadMap MapCommandBar Custom Blend Resources](images/RadMap_StylesAndTemplates_StylingMapCommandBar_02.png)
 
 And here is a snapshot of the result:
 
-![WPF RadMap ](images/RadMap_StylesAndTemplates_StylingMapCommandBar_03.png)
+![WPF RadMap MapCommandBar Customized Appearance](images/RadMap_StylesAndTemplates_StylingMapCommandBar_03.png)
 {% endif %}
 
 ## See Also

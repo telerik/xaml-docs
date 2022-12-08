@@ -41,4 +41,4 @@ You can use the GaugeRange element to set specific color to your labels. The Lin
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![WPF RadGauge ](images/LinearScaleLabelRangeColor.png)
+![WPF RadGauge HorizontalLinearScale with LabelUseRangeColor](images/LinearScaleLabelRangeColor.png)

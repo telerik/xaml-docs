@@ -24,9 +24,9 @@ To change the orientation of the control, set the __Orientation__ property. The 
 	</telerik:RadStepProgressBar>
 {{endregion}}
 
-__Vertically orientation RadStepProgressBar__  
+__Vertically Oriented RadStepProgressBar__  
 
-![WPF RadStepProgressBar ](images/stepprogressbar-layout-0.png)
+![WPF RadStepProgressBar Vertically Oriented RadStepProgressBar](images/stepprogressbar-layout-0.png)
 
 To change the horizontal flow direction, set the __FlowDirection__ property. This property is applicable only in Horizontal orientation.
 
@@ -41,7 +41,7 @@ To change the horizontal flow direction, set the __FlowDirection__ property. Thi
 
 __Horizontally oriented RadStepProgressBar with changed flow direction__  
 
-![WPF RadStepProgressBar ](images/stepprogressbar-layout-1.png)
+![WPF RadStepProgressBar Horizontally Oriented with Changed Flow Direction](images/stepprogressbar-layout-1.png)
 
 To change the vertical flow direction, set the __ReverseVerticalDirection__ property to True. This property is applicable only in Vertical orientation.
 
@@ -56,7 +56,7 @@ To change the vertical flow direction, set the __ReverseVerticalDirection__ prop
 
 __Vertically oriented RadStepProgressBar with changed flow direction__  
 
-![WPF RadStepProgressBar ](images/stepprogressbar-layout-2.png)
+![WPF RadStepProgressBar Vertically Oriented with Changed Flow Direction](images/stepprogressbar-layout-2.png)
 
 ## Setting Spacing Between Steps
 
@@ -73,7 +73,7 @@ The default spacing between two adjacent steps is 100px. To change this, set the
 
 __Custom step spacing__  
 
-![WPF RadStepProgressBar ](images/stepprogressbar-layout-3.png)
+![WPF RadStepProgressBar Custom Step Spacing](images/stepprogressbar-layout-3.png)
 
 ## See Also 
 * [Getting Started]({%slug stepprogressbar-getting-started%})

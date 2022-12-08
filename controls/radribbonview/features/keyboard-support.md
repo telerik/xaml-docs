@@ -192,9 +192,9 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 {{endregion}}
 
 {% if site.site_name == 'WPF' %}
-![WPF RadRibbonView ](images/RibbonView_KeyTips_Sample_updated.png)
+![WPF RadRibbonView Key Tips](images/RibbonView_KeyTips_Sample_updated.png)
 {% else %}
-![WPF RadRibbonView ](images/RibbonView_KeyTips_Sample.png)
+![WPF RadRibbonView Key Tips](images/RibbonView_KeyTips_Sample.png)
 {% endif %}
 
 When a control's keytip is activated, the action associated with the control will be executed:

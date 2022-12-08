@@ -82,4 +82,4 @@ To be able to modify the colors of these lines you should use the following Styl
 
 
 Here is a snapshot of the result:
-![WPF RadChart ](images/RadChart_Styling_and_Appearance_Custom_StripLines_01.PNG)
+![WPF RadChart  ](images/RadChart_Styling_and_Appearance_Custom_StripLines_01.PNG)

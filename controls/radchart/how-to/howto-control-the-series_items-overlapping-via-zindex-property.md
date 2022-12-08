@@ -306,4 +306,4 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 
 ##### 5. The result:
 
-![WPF RadChart ](images/BubbleCapture.PNG)
+![WPF RadChart  ](images/BubbleCapture.PNG)

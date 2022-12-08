@@ -11,7 +11,7 @@ position: 2
 # RadRibbonView Template Structure
 
 This topic will explain you the structure of the __RadRibbonView__ template and will describe the elements in it.
-![WPF RadRibbonView ](images/RibbonView_Styling_TemplateStructure.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_TemplateStructure.png)
 
 * __RootPanel__ - a __Grid__ control that represents the main layout control in the __RadRibbonView's__ template						
 

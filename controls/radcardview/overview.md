@@ -17,7 +17,7 @@ __RadCardView__ allows you to display data in a card-like layout where you can s
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadCardView ](images/radcardview-overview-1.png)
+![WPF RadCardView Overview](images/radcardview-overview-1.png)
 
 ## Key Features
 

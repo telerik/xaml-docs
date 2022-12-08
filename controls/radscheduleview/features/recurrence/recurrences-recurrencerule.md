@@ -201,4 +201,4 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 When adding the created appointment to the __RadScheduleView__'s __AppointmentsSource__ collection the result should be similar to the snapshot below.
 
-![WPF RadScheduleView ](images/radscheduleview_recurrencerule.png)
+![WPF RadScheduleView Recurrence Rule](images/radscheduleview_recurrencerule.png)

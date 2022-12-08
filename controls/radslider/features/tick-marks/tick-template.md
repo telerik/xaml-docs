@@ -26,7 +26,7 @@ Changing the look of the tick marks can be done by setting the __TickTemplate__ 
 	</telerik:RadSlider>
 {{endregion}}
 
-![WPF RadSlider ](images/radslider_features_ellipse_ticktemplate.png)
+![WPF RadSlider Ellipse Tick Template](images/radslider_features_ellipse_ticktemplate.png)
 
 If you want to display the numeric value of each tick, you have to add a __TextBlock__ to the template and bind its __Text__ property as shown in the example bellow:
 
@@ -44,6 +44,6 @@ If you want to display the numeric value of each tick, you have to add a __TextB
 	</telerik:RadSlider>
 {{endregion}}
 
-![WPF RadSlider ](images/radslider_features_digit_ticktemplate.png)
+![WPF RadSlider Digit Tick Template](images/radslider_features_digit_ticktemplate.png)
 
 More information how to use a value converter and display not only numeric values, can be found [here](https://www.telerik.com/blogs/using-valueconverter-to-edit-slider-s-ticktemplate).

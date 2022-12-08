@@ -12,11 +12,11 @@ position: 1
 
 Since RadCoverFlow is an ItemsControl, it can easily be bound to any collection of items. In this section we will bind RadCoverFlow to an ObservableCollection of type string. Each item in this collection will contain the path to a particular image. The end result should be similar to the one bellow.
 
-![WPF RadCoverflow ](images/RadCoverFlow_Databinding1.gif)
+![WPF RadCoverflow with Football Icons](images/RadCoverFlow_Databinding1.gif)
  
 Before we begin, let’s make sure that we have added the image files to our project. I have placed them in an images folder.
 
-![WPF RadCoverflow ](images/RadCoverFlow_Databinding2.gif)
+![WPF RadCoverflow Football Images Folder](images/RadCoverFlow_Databinding2.gif)
 
 Once we have the images in the project, let’s create the ObservableCollection containing them.
 

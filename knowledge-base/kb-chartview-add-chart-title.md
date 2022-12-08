@@ -69,7 +69,7 @@ To add a title, add the chart and a TextBlock in a Grid panel with two RowDefini
 	</Grid>
 {{endregion}}
 
-![WPF ](images/kb-chartview-add-chart-title-0.png)
+![WPF RadChartView Add Chart Title](images/kb-chartview-add-chart-title-0.png)
 
 ## See Also  
 * [Getting Started RadChartView]({%slug radchartview-introduction%})

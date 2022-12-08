@@ -19,7 +19,7 @@ __RadSlider__ is a flexible UI component that allows users to select a value fro
 {% include cta-panel-overview.html %}
 {% endif %}
 				
-![WPF RadSlider ](images/RadSlider.png)
+![WPF RadSlider Overview](images/RadSlider.png)
 
 __Key Features:__
 

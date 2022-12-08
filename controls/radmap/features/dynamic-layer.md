@@ -184,11 +184,11 @@ The result:
 
 ZoomLevel = 3:
 
-![WPF RadMap ](images/RadMap_Features_DynamicLayer_03.png.PNG)
+![WPF RadMap Dynamic Layer Zoom Level 3](images/RadMap_Features_DynamicLayer_03.png.PNG)
 
 ZoomLevel = 6:
 
-![WPF RadMap ](images/RadMap_Features_DynamicLayer_06.png.PNG)
+![WPF RadMap Dynamic Layer Zoom Level 6](images/RadMap_Features_DynamicLayer_06.png.PNG)
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

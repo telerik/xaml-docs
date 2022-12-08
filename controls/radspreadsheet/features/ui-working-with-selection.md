@@ -449,15 +449,15 @@ In order to use the selection to enter a formula, start typing it by entering th
 This mode of the selection can be also used when entering the arguments of a function and is available both in the cell editor and the formula bar.
 
 
- {% if site.site_name == 'WPF' %}![Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_10.png)
+ {% if site.site_name == 'WPF' %}![WPF RadSpreadsheet Selection to Complete Formulas 1](images/RadSpreadsheet_UI_Selection_10.png)
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}![WPF RadSpreadsheet ](images/RadSpreadsheet_UI_Selection_11.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![WPF RadSpreadsheet Selection to Complete Formulas 2](images/RadSpreadsheet_UI_Selection_11.png){% endif %}
 
 If a formula is already entered and you would like to see the references used in it, enter edit mode and they will be selected automatically.
 
 
- {% if site.site_name == 'WPF' %}![Rad Spreadsheet UI Selection 10](images/RadSpreadsheet_UI_Selection_12.png)
+ {% if site.site_name == 'WPF' %}![Rad Spreadsheet Selection to Complete Formulas 3](images/RadSpreadsheet_UI_Selection_12.png)
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}![WPF RadSpreadsheet ](images/RadSpreadsheet_UI_Selection_13.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![WPF RadSpreadsheet Selection to Complete Formulas 4](images/RadSpreadsheet_UI_Selection_13.png){% endif %}

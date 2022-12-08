@@ -22,7 +22,7 @@ Like most controls, the __RadDateTimePicker__ also allows you to template it in 
 
 ## RadDateTimePicker Template Structure
 
-![WPF RadDateTimePicker ](images/dateTimePicker_styling_template_structure_010.png)
+![WPF RadDateTimePicker Template Structure](images/dateTimePicker_styling_template_structure_010.png)
 
 * __[Grid]__  - is of type __Grid__ and hosts the __RadDateTimePicker's__ template.
 
@@ -54,7 +54,7 @@ Like most controls, the __RadDateTimePicker__ also allows you to template it in 
 
 You can also modify the default template applied to the __RadDateTimePicker's__ Preview tooltip visual element.
 
-![WPF RadDateTimePicker ](images/dateTimePicker_styling_template_structure_020.png)
+![WPF RadDateTimePicker Tooltip Template Structure](images/dateTimePicker_styling_template_structure_020.png)
 
 * __[Border]__ - is of type __Border__ and represents the preview tooltip's outer border.
 
@@ -66,7 +66,7 @@ You can also modify the default template applied to the __RadDateTimePicker's__ 
 
 The __RadDateTimePicker's__ default template also gives you a simple __WatermarkTemplate__ which you can further customize in order to meet your requirements.
 
-![WPF RadDateTimePicker ](images/dateTimePicker_styling_template_structure_030.png)
+![WPF RadDateTimePicker Watermark Template Structure](images/dateTimePicker_styling_template_structure_030.png)
 
 * __[Grid]__ - hosts the __RadDateTimePicker's__ user input box content and is of type __Grid__.
 

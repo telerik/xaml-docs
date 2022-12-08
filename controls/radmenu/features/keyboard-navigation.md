@@ -16,7 +16,7 @@ Along with its other features, `RadMenu` supports keyboard navigation. You can e
 
 When a RadMenuItem is selected you can navigate through its children using the arrow keys of the keyboard. On the image below you can see a demonstration of different key presses and the result of them.
 
-![WPF RadMenu ](images/RadMenu_Keyboard_Navigation_01.png)
+![WPF RadMenu Keyboard Navigation with Arrow Keys](images/RadMenu_Keyboard_Navigation_01.png)
 
 ## Access Keys
 

@@ -109,7 +109,7 @@ The following code example initializes the __RadMaskedDateTimeInput__ to accept 
 	                                Culture="bg-BG" />
 {{endregion}}
 
-![WPF RadMaskedInput ](images/RadMaskedInput_getting_started_culture_datetime.png)
+![WPF RadMaskedInput Bulgarian Culture](images/RadMaskedInput_getting_started_culture_datetime.png)
 
 >tip For more information check out the following [Globalization Support]({%slug radmaskedinput-features-globalization%}) topic.				
 

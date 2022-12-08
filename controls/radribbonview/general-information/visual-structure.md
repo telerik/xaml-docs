@@ -13,7 +13,7 @@ position: 1
 >This section defines the terms and the concepts used in the scope of __RadRibbonView__ which you have to get familiar with before you continue reading this help.
 
 Below you can see a snapshot and explanation of the main visual elements of the __RadRibbonView__ control.
-![WPF RadRibbonView ](images/RibbonView_Visual_Structure.png)
+![WPF RadRibbonView Visual Structure](images/RibbonView_Visual_Structure.png)
 
 The structure of a __RadRibbonView__ consists of the following main elements:
 

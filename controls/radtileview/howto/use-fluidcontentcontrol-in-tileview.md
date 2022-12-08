@@ -192,4 +192,4 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 		}
 	{{endregion}}
 	
-![WPF RadTileView ](images/radtileview-howto-use-fluidcontentcontrol-in-tileview-0.png)
+![WPF RadTileView RadFluidContentControl with MVVM](images/radtileview-howto-use-fluidcontentcontrol-in-tileview-0.png)

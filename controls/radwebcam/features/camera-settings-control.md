@@ -14,7 +14,7 @@ The RadWebCam component allows you to control the settings of the connected came
 
 __Settings dialog__
 
-![WPF RadWebCam ](images/radwebcam-features-camera-settings-control-0.png)
+![WPF RadWebCam Settings Dialog](images/radwebcam-features-camera-settings-control-0.png)
 
 >important The changes applied via the settings controls reflect the settings of the camera device. This means that when you close the application, the setting will still apply to the device.
 
@@ -45,7 +45,7 @@ The `ShowAudioSettings` property allows you to control the addition of the Audio
 
 __Audio Tab__
 
-![WPF RadWebCam ](images/radwebcam-features-camera-settings-control-1.png)
+![WPF RadWebCam Audio Tab](images/radwebcam-features-camera-settings-control-1.png)
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

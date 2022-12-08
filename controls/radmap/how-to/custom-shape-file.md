@@ -23,7 +23,7 @@ This help topic will walk you through the steps you should take to create your o
 	>There are several tools that you may choose from to create your drawings. For this topic we used [Adobe Illustrator](http://www.adobe.com/products/illustrator.html).There is something significant you need to know when drawing the shapes. Shapefiles are incapable of storing true curves.
 
 	To create curves you will need to use polygons with many sides as shown on the playground's drawing below:
-	![WPF RadMap ](images/RadMap_customshapefile_playground_01.jpg)
+	![WPF RadMap Custom Shape File Polygon Many Sides](images/RadMap_customshapefile_playground_01.jpg)
 	
 	The more sides you have the better your shape will be interpreted. In our case we'll add 60:
 	![Rad Map customshapefile playground 02](images/RadMap_customshapefile_playground_02.jpg)

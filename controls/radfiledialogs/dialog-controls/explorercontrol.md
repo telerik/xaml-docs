@@ -25,7 +25,7 @@ The ExplorerControl element can be used as a stand-alone control, thus allowing 
 
 __ExplorerControl__ 
 
-![WPF RadFileDialogs ](images/explorercontrol-0.png)
+![WPF RadFileDialogs ExplorerControl](images/explorercontrol-0.png)
 
 ## Common Features
 

@@ -122,9 +122,9 @@ The UI should also respond when the caret is on a document position where the te
 
 
 #### Figure 1: Changing the Toggle State of a Button Depending on the Caret Position
-{% if site.site_name == 'Silverlight' %}![WPF RadRichTextBox ](images/RadRichTextBox_FormattingViaASampleUI_01.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![WPF RadRichTextBox Button State Based on Caret Position](images/RadRichTextBox_FormattingViaASampleUI_01.png){% endif %}
 
-{% if site.site_name == 'WPF' %}![WPF RadRichTextBox ](images/RadRichTextBox_FormattingViaASampleUI_01_WPF.png){% endif %}
+{% if site.site_name == 'WPF' %}![WPF RadRichTextBox Button State Based on Caret Position](images/RadRichTextBox_FormattingViaASampleUI_01_WPF.png){% endif %}
 
 >tip**RadRichTextBox** comes with a fully functional formatting UI out of the box. You can read more on the following links - [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}), [ContextMenu]({%slug radrichtextbox-features-context-menu%}), [SelectionMiniToolBar]({%slug radrichtextbox-features-selection-mini-toolbar%}).
 

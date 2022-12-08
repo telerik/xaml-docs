@@ -12,7 +12,7 @@ position: 1
 
 Below you can see the structure of a standard __WizardPage__ in a wizard control. 
 
-![WPF RadWizard ](images/Wizard-VisualStructure.png)
+![WPF RadWizard Visual Structure](images/Wizard-VisualStructure.png)
 
 The structure of a __WizardPage__ is pretty simple; it consists of five main elements:
 

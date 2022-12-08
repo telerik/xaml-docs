@@ -85,4 +85,4 @@ We will demonstrate this functionality implemented within a simple ListBox. For 
 
 On running the application, the following will be visualized:
 
-![WPF ](images/DragDropManger_SetVisualCue.png)
+![WPF Drag Drop Visual Cue](images/DragDropManger_SetVisualCue.png)

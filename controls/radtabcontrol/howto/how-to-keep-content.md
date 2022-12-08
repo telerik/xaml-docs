@@ -38,6 +38,6 @@ However, if you need to keep each __RadTabItem__'s content you can set the __IsC
     </telerik:RadTabControl>
 	{{endregion}}
 
-![WPF RadTabControl ](images/RadTabControl_HowTo_TabContentPreserve_15.png)
-![WPF RadTabControl ](images/RadTabControl_HowTo_TabContentPreserve_16.png)
-![WPF RadTabControl ](images/RadTabControl_HowTo_TabContentPreserve_17.png)
+![WPF RadTabControl Keep Content Preserved Tab 1](images/RadTabControl_HowTo_TabContentPreserve_15.png)
+![WPF RadTabControl Keep Content Preserved Tab 2](images/RadTabControl_HowTo_TabContentPreserve_16.png)
+![WPF RadTabControl Keep Content Preserved Tab 3](images/RadTabControl_HowTo_TabContentPreserve_17.png)

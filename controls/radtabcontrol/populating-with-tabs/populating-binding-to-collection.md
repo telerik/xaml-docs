@@ -126,7 +126,7 @@ When you want the tabs of the __RadTabControl__ to be automatically generated on
 	{{endregion}}
 
 	Now when you run the demo the result should be similar to the next image.
-	![WPF RadTabControl ](images/RadTabControl_Populating_BindingToCollection_010.png)
+	![WPF RadTabControl Tab Items Object ToString](images/RadTabControl_Populating_BindingToCollection_010.png)
 	
 	The reason for this result is that the __RadTabControl__ "still doesn't know" how to display these business objects. You need to "say" explicitly what to be displayed as a __Header__ using either the __DisplayMemberPath__ property or setting the __HeaderTemplate__ property. Additionally you need to set a __ContentTemplate__.						
 
@@ -149,7 +149,7 @@ When you want the tabs of the __RadTabControl__ to be automatically generated on
 	{{endregion}}
 
 	The final result is shown on the next image:
-	![WPF RadTabControl ](images/RadTabControl_Populating_BindingToCollection_030.png)
+	![WPF RadTabControl Tab Items DisplayMemberPath Name](images/RadTabControl_Populating_BindingToCollection_030.png)
 
 	When the __ItemsSource__ is specified, __RadTabItem__ containers are generated for each item in the collection. By using the template properties of the __RadTabControl__ and the __RadTabItem__ you can [control the appearance and the visualization]({%slug radtabcontrol-appearance-customizing-tab-items%}) of the items in the collection. 
 

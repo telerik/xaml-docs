@@ -15,7 +15,7 @@ position: 18
 ## 
 
 This help topic will demonstrate how to add location crosshair for RadChart as well as location indicator (achieved by two TextBlock-s that track the current mouse location).
-![WPF RadChart ](images/RadChart_HowTo_LocationCrosshair.PNG)
+![WPF RadChart  ](images/RadChart_HowTo_LocationCrosshair.PNG)
 
 To achieve the crosshair functionality you will add two [custom gridlines]({%slug radchart-features-annotations-custom-gridline%}) to the ChartArea (each of them parallel to one of the axes). Also, you will need three events – MouseEnter, MouseLeave and MouseMove to track the mouse cursor position and “move” the gridlines across the plot area (represented by ClipPanel element in the ChartArea template). First you need to hook up to the chart's Loaded event. When the chart is loaded you can easily get hold of the panel via the ChildrenOfType<T> extension method (add reference to the __Telerik.Windows.Controls__ namespace) like this:
 

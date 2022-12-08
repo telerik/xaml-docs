@@ -67,6 +67,6 @@ XCategory is used when the data is not sequential, i.e. values on the X Axis hav
 
 
 The result is:
-![WPF RadChart ](images/RadChart_Features_Axes_Labels_01.png)
+![WPF RadChart  ](images/RadChart_Features_Axes_Labels_01.png)
 
 

@@ -118,7 +118,7 @@ Find your __RadComboBox__ declaration and set the declared __DataTemplate__ to i
 
 Run your demo, the result can be seen on the next image:
 
-![WPF RadComboBox ](images/RadComboBox_PopulatingWithData_BindingToWcfService_010.png)
+![WPF RadComboBox Bound to Data from WCF Service](images/RadComboBox_PopulatingWithData_BindingToWcfService_010.png)
 
 ## Using MVVM Approach
 
@@ -293,7 +293,7 @@ And here is the code handling the __GetProductsCompleted__ event:
 
 Run your demo, the result can be seen on the snapshot below:
 
-![WPF RadComboBox ](images/RadComboBox_PopulatingWithData_BindingToWcfService_020.png)
+![WPF RadComboBox Bound to Data from WCF Service](images/RadComboBox_PopulatingWithData_BindingToWcfService_020.png)
 
 ## See Also
 

@@ -100,7 +100,7 @@ If the user is not valid, you have to skip the execution of the base method and 
 
 Here is a snapshot of the __RadUpload__ control, after an invalid upload attempt.
 
-![WPF RadUpload ](images/RadUpload_How_To_Simple_Authentication_01.png)
+![WPF RadUpload Security Token Required Message Notification](images/RadUpload_How_To_Simple_Authentication_01.png)
 
 ## See Also  
  * [Upload Handler]({%slug radupload-features-upload-handler%})

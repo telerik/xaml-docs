@@ -37,7 +37,7 @@ By default all __TileViewItems__ are ordered automatically like in the screensho
 	</telerik:RadTileView>
 {{endregion}}
 
-![WPF RadTileView ](images/radtileview_features_rows_columns_default.png)
+![WPF RadTileView Automatic Rows and Columns](images/radtileview_features_rows_columns_default.png)
 
 ## Setting the number of Columns
 
@@ -68,7 +68,7 @@ To set the number of columns you can use the __ColumnsCount__ property:
 	</telerik:RadTileView>
 {{endregion}}
 
-![WPF RadTileView ](images/radtileview_features_rows_columns_count.png)
+![WPF RadTileView Set Columns Count](images/radtileview_features_rows_columns_count.png)
 
 To set the maximum number of columns you can use the __MaxColumns__ property:		
 
@@ -98,7 +98,7 @@ To set the maximum number of columns you can use the __MaxColumns__ property:
 {{endregion}}
 
 The result from the above code is displayed below. As you can see now the items are ordered in two columns:
-![WPF RadTileView ](images/radtileview_features_rows_columns_count.png)
+![WPF RadTileView Set Max Columns](images/radtileview_features_rows_columns_count.png)
 
 ##  Setting the number of Rows
 
@@ -129,7 +129,7 @@ To set the number of rows you can use the __RowsCount__ property.
 	</telerik:RadTileView>
 {{endregion}}
 
-![WPF RadTileView ](images/radtileview_features_rows_columns_rows_count.png)
+![WPF RadTileView Set Rows Count](images/radtileview_features_rows_columns_rows_count.png)
 
 To set the maximum number of rows you can use the __MaxRows__ property:
 
@@ -159,7 +159,7 @@ To set the maximum number of rows you can use the __MaxRows__ property:
 {{endregion}}
 
 As you can see now the items are ordered in one row only:
-![WPF RadTileView ](images/radtileview_features_rows_columns_rows_count.png)
+![WPF RadTileView Set Max Rows](images/radtileview_features_rows_columns_rows_count.png)
 
 When both __ColumnsCount/MaxColumns__ and __RowsCount/MaxRows__ properties are set, the value of __ColumnsCount/MaxColumns__ will have a priority.
 
@@ -189,7 +189,7 @@ When both __ColumnsCount/MaxColumns__ and __RowsCount/MaxRows__ properties are s
 {{endregion}}
 
 As you can see from the image below only the __ColumnsCount__ property is respected:
-![WPF RadTileView ](images/radtileview_features_rows_columns_count.png)
+![WPF RadTileView Respected Columns Count](images/radtileview_features_rows_columns_count.png)
 
 ##  Setting Rows and Columns Size
 

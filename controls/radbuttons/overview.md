@@ -19,7 +19,7 @@ __RadButtons__ for {{ site.framework_name }} is a set of customizable buttons al
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadButtons ](images/ButtonsOverview_02.png)
+![WPF RadButtons Overview](images/ButtonsOverview_02.png)
 
 >tip
 >* If you are new to the __RadButtons__ control, don't miss the [Getting Started]({%slug radbuttons-getting-started%}) guide that demonstrates a basic __RadButtons__ scenario.

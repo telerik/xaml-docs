@@ -78,6 +78,6 @@ How to change the Background Color of RadColorPicker's palette Headers.
 		<telerik:RadColorPicker ColorSelectorStyle="{StaticResource CustomRadColorSelectorStyle}" />
 	{{endregion}}
 	
-![WPF ](images/kb-colorpicker-change-palette-background-color-0.png)
+![WPF RadColorPicker Change Palette Header Background Color](images/kb-colorpicker-change-palette-background-color-0.png)
 
 

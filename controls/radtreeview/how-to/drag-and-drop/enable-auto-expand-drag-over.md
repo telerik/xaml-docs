@@ -13,7 +13,7 @@ position: 6
 __RadTreeView__ offers you the ability to automatically expand a treeview node when dragging items over the node. In order to do that you need to perform the following action:
 
 * When dragging items over your treeview, move the mouse cursor over the treeview expander. The result will be an automatically expanded node. 
-![WPF RadTreeView ](images/RadTreeView_HowEnableAutoExpandOnDragOver_010.png)
+![WPF RadTreeView Auto Expand on Drag Over](images/RadTreeView_HowEnableAutoExpandOnDragOver_010.png)
 
 The __RadTreeView__ exposes a property __DropExpandDelay__, which sets the delay for the expand behavior. The property is of type __TimeSpan__. Here is a sample code showing you how to set it:		
 

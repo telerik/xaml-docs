@@ -197,7 +197,7 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 {{endregion}}
     
 __The image below is a snapshot taken in the middle of the animation.__
-![WPF RadChart ](images/RadChart_Features_Animations_01.png)
+![WPF RadChart Animation Snapshot](images/RadChart_Features_Animations_01.png)
 
 __AnimationSettings__ are a simple and easy way to control your animations. However, if you need further customizations, you should consider using templates.
 

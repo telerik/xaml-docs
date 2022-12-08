@@ -21,7 +21,7 @@ Like most controls, the __RadBusyIndicator__ also allows you to template it in o
 
 ## RadBusyIndicator
 
-![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_template_structure_010.png)
+![WPF RadBusyIndicator Template Structure](images/radbusyindicator_styles_and_templates_template_structure_010.png)
 
 * __[Grid]__
 
@@ -39,7 +39,7 @@ Like most controls, the __RadBusyIndicator__ also allows you to template it in o
 
 ## RadProgressBar
 
-![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_template_structure_020.png)
+![WPF RadProgressBar Template Structure](images/radbusyindicator_styles_and_templates_template_structure_020.png)
 
 * __[Grid]__ - represents the host container for the __RadProgressBar__ control.
 

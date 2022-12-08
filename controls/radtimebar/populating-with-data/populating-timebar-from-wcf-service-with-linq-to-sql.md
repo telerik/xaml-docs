@@ -14,10 +14,10 @@ This help topic will demonstrate how to populate TimeBar with data from database
 
 1. Create new Silverlight project and check "Enable WCF RIA Services":
 
-	![WPF RadTimeBar ](images/radtimebar_enable_wcf_ria.PNG)
+	![WPF RadTimeBar Silverlight Project Enable WCF RIA Services](images/radtimebar_enable_wcf_ria.PNG)
 	
 2. Before writing any LINQ queries we will need a database. Right click on the Web application and choose* Add-New-Item* -> *SQL Server Database:*
-    ![WPF RadTimeBar ](images/radtimebar_add_sql_server_database.PNG)
+    ![WPF RadTimeBar Add SQL Server Database](images/radtimebar_add_sql_server_database.PNG)
 
 	Visual Studio will ask you whether you want to place the database in the __App_Data__ folder. Click Yes to confirm.
 
@@ -28,12 +28,12 @@ This help topic will demonstrate how to populate TimeBar with data from database
 5. Open the __"Server Explorer"__ window and drag the database table onto the __"Object Relational Designer"__. (__"Object Relational Designer"__ opens automatically when you open the __DataClasses1.dbml__ file).
 
 6. By default, the __LINQ__ class is not serializable. In order to use the table in a web service, we need to make the __DataClasse1.dbml__ file serializable. Right-click on the design surface and choose __Properties__ from the drop-down. In the properties window change the __"Serialization Mode"__ to __Unidirectional__.
-    ![WPF RadTimeBar ](images/radtimebar_serialization.png)
+    ![WPF RadTimeBar Serialization Mode Unidirectional](images/radtimebar_serialization.png)
 7. Now it's time to add the WCF service. Right click on the Web project and choose Add New Item -> "WCF service".
 
 	Visual Studio adds 3 files that hold the service contract for the WCF service - __IService.cs, Service.svc__ and a code-behind to it - __Service.svc.cs.__
 
-	![WPF RadTimeBar ](images/radtimebar_add_new_wcf_service.PNG)
+	![WPF RadTimeBar Add WCF Service](images/radtimebar_add_new_wcf_service.PNG)
 
 8. Open the first file - __IService.cs__. This file contains the operation contract. Change the name and the signature of the __DoWork()__ method.
 
@@ -98,7 +98,7 @@ This help topic will demonstrate how to populate TimeBar with data from database
 11. Now you are ready to consume the service. Go to the Silverlight project and select "__Add Service Reference__"
 
 	Hit the discover button in the popped up window.
-    ![WPF RadTimeBar ](images/radtimebar_consume_wcf_service.PNG)
+    ![WPF RadTimeBar Service Reference Window](images/radtimebar_consume_wcf_service.PNG)
 
 12. Create new __TimeBar__ control in XAML and add the following Bindings:
 

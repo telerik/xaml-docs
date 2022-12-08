@@ -12,7 +12,7 @@ position: 2
 
 This section defines terms and concepts used in the scope of the `RadCircularProgressBar` control with which you have to get familiar before you continue to read its documentation. They can also be helpful when contacting our support service in order to describe your issue better.
 
-![WPF RadCircularProgressBar ](images/radcircularprogressbar-visual-structure-0.png)
+![WPF RadCircularProgressBar Visual Structure](images/radcircularprogressbar-visual-structure-0.png)
 
 * __Progress Indicator__&mdash;Indicates the current status of the progress.
 * __Progress Track__&mdash;Holder of the progress indicator used to hold and contract the progress.

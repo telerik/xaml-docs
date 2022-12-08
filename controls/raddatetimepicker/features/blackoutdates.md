@@ -121,6 +121,6 @@ This section shows how to data bind the BlackoutDates property.
 	<telerik:RadDateTimePicker BlackoutDates="{Binding BlackoutDates}" />
 {{endregion}}
 
-![WPF RadDateTimePicker ](images/raddatetimepicker-features-blackoutdates-0.png)
+![WPF RadDateTimePicker with Blackout Dates](images/raddatetimepicker-features-blackoutdates-0.png)
 
 >tip Find a runnable project that demonstrates how to use BlackoutDates in the [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/DateTimePicker/AllowedDates).

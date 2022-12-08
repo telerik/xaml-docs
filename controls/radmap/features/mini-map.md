@@ -22,7 +22,7 @@ With the __Q2 2012__ release we have introduced the Mini Map feature to the RadM
 
 The Mini Map control is enabled by default. To see it just click on the expander button at the top right corner of the Map:
 
-![WPF RadMap ](images/RadMap_Features_MiniMap_01.png)
+![WPF RadMap Mini Map](images/RadMap_Features_MiniMap_01.png)
 
 You can control the visibility of Mini Map together with its expander button via the *MiniMapExpanderVisibility* property.To collapse / expand the Mini Map you can use __IsMiniMapExpanded__.        
 
@@ -99,4 +99,4 @@ By wiring to __MapSizeChanged__ event we are setting our Height and Width for th
 
 Furthermore we turned off the visibility of the *MiniMapExpander* and wrapped the MiniMap in our own container - *RadExpander*. We added several properties to customize the ViewportArea and set the parent to which our Mini Map control belongs to. You may see the result below:
 
-![WPF RadMap ](images/RadMap_Features_MiniMap_02.png)
+![WPF RadMap MiniMap in Custom Container](images/RadMap_Features_MiniMap_02.png)

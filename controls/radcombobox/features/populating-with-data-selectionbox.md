@@ -80,7 +80,7 @@ To set the custom DataTemplate, set the __SelectionBoxTemplate__ property of Rad
 	</telerik:RadComboBox>
 {{endregion}}
 
-![WPF RadComboBox ](images/radcombobox-populating-with-data-selectionbox-0.png)
+![WPF RadComboBox with SelectionBoxTemplate](images/radcombobox-populating-with-data-selectionbox-0.png)
 
 {% if site.site_name == 'WPF' %}
 ## Multiple Selection Box Template
@@ -103,7 +103,7 @@ To customize the Selection Box when there is no selected item, set the __EmptySe
 	</telerik:RadComboBox>
 {{endregion}}
 
-![WPF RadComboBox ](images/radcombobox-populating-with-data-selectionbox-1.png)
+![WPF RadComboBox with EmptySelectionBoxTemplate](images/radcombobox-populating-with-data-selectionbox-1.png)
 
 >important The SelectionBoxTemplate, EmptySelectionBoxTemplate{% if site.site_name == 'WPF' %} and MultipleSelectionBoxTemplate{% endif %} properties are applied only when the ItemsSource property of RadComboBox is set.
 

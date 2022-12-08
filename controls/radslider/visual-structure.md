@@ -15,7 +15,7 @@ position: 2
 ## 
 
 This section defines terms and concepts used in the scope of __RadSlider__ you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. For more detailed descriptions of the template structure of the control please visit the [Template Structure]({%slug radslider-template-structure%}) section.
-![WPF RadSlider ](images/radslider_visual_structure.png)
+![WPF RadSlider Visual Structure](images/radslider_visual_structure.png)
 
 * __Tick Mark__ - tick that indicates predefined values
 					

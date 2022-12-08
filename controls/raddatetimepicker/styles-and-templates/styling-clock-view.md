@@ -46,7 +46,7 @@ In order to see these resource you have to first generate the default style for 
 
 Modifying some of the resources generated for the __RadDateTimePicker's__ style will allow you to change the appearance of the clock. Here are some of the resources:
 
-![WPF RadDateTimePicker ](images/dateTimePicker_styling_styling_the_clock_view_010.png)
+![WPF RadDateTimePicker Clock Blend Resources](images/dateTimePicker_styling_styling_the_clock_view_010.png)
 
 * __HeaderOuterBorder__ - represents the __RadDateTimePicker__ content's header outer border brush.
 
@@ -72,11 +72,11 @@ Modifying some of the resources generated for the __RadDateTimePicker's__ style 
 
 Here is an example of the above resources modified:
 
-![WPF RadDateTimePicker ](images/dateTimePicker_styling_styling_the_clock_view_020.png)
+![WPF RadDateTimePicker Clock Customized Blend Resources](images/dateTimePicker_styling_styling_the_clock_view_020.png)
 
 Here is the result:
 
-![WPF RadDateTimePicker ](images/dateTimePicker_styling_styling_the_clock_view_030.png)
+![WPF RadDateTimePicker Clock with Customized Appearance](images/dateTimePicker_styling_styling_the_clock_view_030.png)
 
 ## See Also
 

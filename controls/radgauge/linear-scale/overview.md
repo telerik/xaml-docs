@@ -24,12 +24,12 @@ The thickness of the scale bar is controlled by the __StartWidth__ and __EndWidt
 
 By default, the values start from the minimum value and move to the maximum value. It is possible to reverse this direction by setting the __IsReversed__ property to true:
 
-![WPF RadGauge ](images/LinearGaugeReversed.png)
+![WPF RadGauge Reversed](images/LinearGaugeReversed.png)
 
 The default distribution for a linear scale is __RegularDistribution__. When the scale has logarithmic distribution, it might be of type __ClassicLogarithmicDistribution__ or __RangeLogarithmicDistribution__. When the __IsLogarithmic__ property is set to true, base 10 is used for the logarithmic scale by default. 
 To modify the base of the logarithmic scale, set the __LogarithmicBase__ property accordingly:        
 
-![WPF RadGauge ](images/LinearGaugeLogarithmic.png)
+![WPF RadGauge LogarithmicBase](images/LinearGaugeLogarithmic.png)
 
 The scale elements like tick mark, label or indicator can have dynamically changed tooltip associated with it. This behavior is controlled by TootipFormat property which can be set at the correspondent property element:
 
@@ -42,6 +42,6 @@ The scale elements like tick mark, label or indicator can have dynamically chang
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![WPF RadGauge ](images/LinearScaleTickMarkTooltip.png)
+![WPF RadGauge Major Tick Tooltip Format](images/LinearScaleTickMarkTooltip.png)
 
 The only parameter is passed to the tooltip format string is value at the element location.

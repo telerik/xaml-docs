@@ -75,76 +75,76 @@ You can use it to set  the __Palette__ property of RadColorPaletteView or __Head
 This section describes all predefined palettes (ColorPresets) provided in the __RadColorPicker__ suite
 
 * __Default__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-default.png)
+	![WPF RadColorPicker Default Palette](images/radcolorpicker-predefined-palettes-default.png)
 	
 * __Standard__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-standart.png)
+	![WPF RadColorPicker Standard Palette](images/radcolorpicker-predefined-palettes-standart.png)
 	
 * __Grayscale__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-grayscale.png)
+	![WPF RadColorPicker Grayscale Palette](images/radcolorpicker-predefined-palettes-grayscale.png)
 	
 * __Web216__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-web216.png)
+	![WPF RadColorPicker Web216 Palette](images/radcolorpicker-predefined-palettes-web216.png)
 	
 * __ReallyWebSafe__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-reallyWebSafe.png)
+	![WPF RadColorPicker ReallyWebSafe Palette](images/radcolorpicker-predefined-palettes-reallyWebSafe.png)
 	
 * __Office__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-office.png)
+	![WPF RadColorPicker Office Palette](images/radcolorpicker-predefined-palettes-office.png)
 	
 * __Apex__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-apex.png)
+	![WPF RadColorPicker Apex Palette](images/radcolorpicker-predefined-palettes-apex.png)
 	
 * __Aspect__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-aspect.png)
+	![WPF RadColorPicker Aspect Palette](images/radcolorpicker-predefined-palettes-aspect.png)
 	
 * __Civic__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-civic.png)
+	![WPF RadColorPicker Civic Palette](images/radcolorpicker-predefined-palettes-civic.png)
 	
 * __Concourse__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-concourse.png)
+	![WPF RadColorPicker Concourse Palette](images/radcolorpicker-predefined-palettes-concourse.png)
 	
 * __Equity__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-equity.png)
+	![WPF RadColorPicker Equity Palette](images/radcolorpicker-predefined-palettes-equity.png)
 	
 * __Flow__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-flow.png)
+	![WPF RadColorPicker Flow Palette](images/radcolorpicker-predefined-palettes-flow.png)
 	
 * __Foundry__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-foundry.png)
+	![WPF RadColorPicker Foundry Palette](images/radcolorpicker-predefined-palettes-foundry.png)
 	
 * __Median__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-median.png)
+	![WPF RadColorPicker Median Palette](images/radcolorpicker-predefined-palettes-median.png)
 	
 * __Metro__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-metro.png)
+	![WPF RadColorPicker Metro Palette](images/radcolorpicker-predefined-palettes-metro.png)
 	
 * __Module__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-module.png)
+	![WPF RadColorPicker Module Palette](images/radcolorpicker-predefined-palettes-module.png)
 	
 * __Opulent__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-opulent.png)
+	![WPF RadColorPicker Opulent Palette](images/radcolorpicker-predefined-palettes-opulent.png)
 	
 * __Oriel__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-oriel.png)
+	![WPF RadColorPicker Oriel Palette](images/radcolorpicker-predefined-palettes-oriel.png)
 	
 * __Origin__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-origin.png)
+	![WPF RadColorPicker Origin Palette](images/radcolorpicker-predefined-palettes-origin.png)
 	
 * __Paper__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-paper.png)
+	![WPF RadColorPicker Paper Palette](images/radcolorpicker-predefined-palettes-paper.png)
 	
 * __Solstice__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-solstice.png)
+	![WPF RadColorPicker Solstice Palette](images/radcolorpicker-predefined-palettes-solstice.png)
 	
 * __Technique__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-technique.png)
+	![WPF RadColorPicker Technique Palette](images/radcolorpicker-predefined-palettes-technique.png)
 	
 * __Trek__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-trek.png)
+	![WPF RadColorPicker Trek Palette](images/radcolorpicker-predefined-palettes-trek.png)
 	
 * __Urban__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-urban.png)
+	![WPF RadColorPicker Urban Palette](images/radcolorpicker-predefined-palettes-urban.png)
 	
 * __Verve__
-	![WPF RadColorPicker ](images/radcolorpicker-predefined-palettes-verve.png)
+	![WPF RadColorPicker Verve Palette](images/radcolorpicker-predefined-palettes-verve.png)

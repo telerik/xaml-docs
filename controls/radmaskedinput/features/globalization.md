@@ -33,7 +33,7 @@ The next example declares a __RadMaskedCurrencyInput__ and a __RadMaskedDateTime
 	</Grid>
 {{endregion}}
 
-![WPF RadMaskedInput ](images/radmaskedinput_features_globalization.png)
+![WPF RadMaskedInput Custom Currency and DateTime Cultures](images/radmaskedinput_features_globalization.png)
 
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

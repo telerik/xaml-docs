@@ -146,7 +146,7 @@ Below you can find a sample custom interval implementation:
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Timeline/WPF/CustomIntervalTypes).
 
 Using the sample custom interval above, you will get the following result:
-![WPF RadTimeline ](images/radtimeline-features-custom-interval-types_01.jpg)
+![WPF RadTimeline Custom Intervals](images/radtimeline-features-custom-interval-types_01.jpg)
 
 ## See Also
  * [Intervals Formatters]({%slug radtimeline-features-intervals-formatters%})

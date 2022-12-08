@@ -12,7 +12,7 @@ position: 2
 
 This section defines the terms and concepts used in the scope of the RadDataPager that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard `RadDataPager` control.
 
-![WPF RadDataPager ](images/RadDataPager_VisualStructure_01.png)
+![WPF RadDataPager Visual Structure](images/RadDataPager_VisualStructure_01.png)
 
 * __First Page Button__&mdash;This button brings the pager on the first page of data.
 

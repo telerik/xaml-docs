@@ -14,7 +14,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ## RadButton
 
-![WPF RadButtons ](images/RadButtons_Visual_Structure_01.png)
+![WPF RadButton Visual Structure](images/RadButtons_Visual_Structure_01.png)
 
 * __Content__ - represents the content of the button.
 
@@ -32,7 +32,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ## RadDropDownButton
 
-![WPF RadButtons ](images/RadButtons_Visual_Structure_02.png)
+![WPF RadDropDownButton Visual Structure](images/RadButtons_Visual_Structure_02.png)
 
 * __Content__ - represents the content of the button.
 
@@ -46,7 +46,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ## RadRadioButton
 
-![WPF RadButtons ](images/RadButtons_Visual_Structure_03.png)
+![WPF RadRadioButton Visual Structure](images/RadButtons_Visual_Structure_03.png)
 
 * __Content__ - represents the content of the button.
 
@@ -54,7 +54,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ## RadSplitButton
 
-![WPF RadButtons ](images/RadButtons_Visual_Structure_04.png)
+![WPF RadSplitButton Visual Structure](images/RadButtons_Visual_Structure_04.png)
 
 * __Content__ - represents the content of the button.
 
@@ -70,7 +70,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 
 ## RadToggleButton
 
-![WPF RadButtons ](images/RadButtons_Visual_Structure_05.png)
+![WPF RadToggleButton Visual Structure](images/RadButtons_Visual_Structure_05.png)
 
 * __Content__ - represents the content of the button.
 
@@ -83,7 +83,7 @@ This section defines the terms and concepts used in the scope of __RadButtons__ 
 * __Thumb__: Represents the thumb part of the control.
 * __Track__: Represents the track part of the control.
 
-![WPF RadButtons ](images/RadButtons_Visual_Structure_06.png)
+![WPF RadToggleSwitchButton Visual Structure](images/RadButtons_Visual_Structure_06.png)
 
 ## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})

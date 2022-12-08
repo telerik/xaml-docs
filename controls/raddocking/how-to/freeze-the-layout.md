@@ -23,39 +23,44 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 #### __XAML__
 
 {{region xaml-raddocking-how-to-freeze-the-layout_0}}
-	<telerik:RadDocking x:Name="radDocking">
+	<telerik:RadDocking x:Name="radDocking">
+
 	    <telerik:RadSplitContainer InitialPosition="DockedLeft">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane1" Header="Pane 1">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
+	    </telerik:RadSplitContainer>
+
 	    <telerik:RadSplitContainer InitialPosition="DockedRight">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane2" Header="Pane 2">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
+	    </telerik:RadSplitContainer>
+
 	    <telerik:RadSplitContainer InitialPosition="DockedTop">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane3" Header="Pane 3">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
+	    </telerik:RadSplitContainer>
+
 	    <telerik:RadSplitContainer InitialPosition="DockedBottom">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane x:Name="radPane4" Header="Pane 4">
 	                <TextBlock Text="Some simple text here"/>
 	            </telerik:RadPane>
 	        </telerik:RadPaneGroup>
-	    </telerik:RadSplitContainer>
+	    </telerik:RadSplitContainer>
+
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_010.png)
+![WPF RadDocking Sample Declaration](images/RadDocking_HowTo_FreezeLayout_010.png)
 
 ## Disable the Close ("X") Button
 
@@ -76,7 +81,7 @@ In order to disable the close button, you need to set the __CanUserClose__ prope
 
 Here is the result:
 
-![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_020.png)
+![WPF RadDocking with Non-Closable Panes](images/RadDocking_HowTo_FreezeLayout_020.png)
 
 ## Disable the Pin/Unpin Button
 
@@ -97,7 +102,7 @@ In order to disable the pin/unpin button, you need to set the __CanUserPin__ pro
 
 Here is the result:
 
-![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_030.png)
+![WPF RadDocking with Panes without Pin/Unpin Button](images/RadDocking_HowTo_FreezeLayout_030.png)
 
 ## Disable the Float Behavior
 
@@ -147,7 +152,7 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 
 Here is the result:
 
-![WPF RadDocking ](images/RadDocking_HowTo_FreezeLayout_040.png)
+![WPF RadDocking with Panes without Context Menu](images/RadDocking_HowTo_FreezeLayout_040.png)
 
 ## Disable Resizing of the Panes
 

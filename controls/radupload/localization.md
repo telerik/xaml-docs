@@ -12,14 +12,14 @@ site_name: Silverlight
 # Localization
 
 The built-in localization mechanism in {{ site.framework_name }} allows you to localize any string resource used by the standard __RadUpload__ control. Once translated you might use your resources in {{ site.framework_name }} projects without changing anything.
-![WPF RadUpload ](images/RadUpload_Localization_01.png)
+![WPF RadUpload Localized Resources](images/RadUpload_Localization_01.png)
 
 >tip To learn more about the ways in which to localize the Telerik UI for {{ site.framework_name }} controls, please read the common topic about [Localization]({%slug common-localization%}).
 
 ## Resource Keys
 
 __RadUpload__ is a complex user interface control and its strings for localization are numerous. In order to be able to distinguish these resources, a unique identifier called __resource key__ is assigned to each localizable string.
-![WPF RadUpload ](images/RadUpload_Localization_02.png)
+![WPF RadUpload Localization Resource Keys](images/RadUpload_Localization_02.png)
 
 Here is a list of all of the __Resources__ available and their default values:
 		

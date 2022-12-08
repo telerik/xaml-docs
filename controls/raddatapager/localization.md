@@ -27,7 +27,7 @@ Here is a list of the supported languages:
 
 Below you may see the resource keys and the strings they are associated with.
 
-![WPF RadDataPager ](images/RadDataPager_Localization.png)
+![WPF RadDataPager Localizable Elements](images/RadDataPager_Localization.png)
 
 ## Resource Keys
 

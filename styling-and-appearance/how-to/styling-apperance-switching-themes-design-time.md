@@ -17,10 +17,10 @@ The UI for WPF suite provides a mechanism that allows you to change the applicat
 The following example demonstrates how the feature works in few easy steps.
 
 1. Select a Rad-control in the Visual Studio designer at design-time. This will display the Theme button at the designer's top right corner.  
-	![WPF ](images/styling-apperance-switching-themes-design-time-01.png)
+	![WPF RadButton Theme Button in Visual Studio Designer](images/styling-apperance-switching-themes-design-time-01.png)
 	
 2. Click on the __Theme__ button. This will open the Themes window where you can choose a theme.  
-	![WPF ](images/styling-apperance-switching-themes-design-time-02.png)
+	![WPF Visual Studio Themes Window](images/styling-apperance-switching-themes-design-time-02.png)
 	
 3. Select a theme and click __OK__. 
 

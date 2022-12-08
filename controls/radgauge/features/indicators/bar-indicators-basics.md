@@ -26,7 +26,7 @@ It will explain the following:
 
 ## Empty Fill
 
-The __Empty__ __Fill__ feature allows you to specify a color for the empty part of the indicator, which streches from the selected value to the other end of the scale. To do this simply use the __EmptyFill__ property. It is used as any other __Brush__ property.         
+The __Empty__ __Fill__ feature allows you to specify a color for the empty part of the indicator, which stretches from the selected value to the other end of the scale. To do this simply use the __EmptyFill__ property. It is used as any other __Brush__ property.         
 
 >tip Additionally you can use the __BorderBrush__ and __StrokeThickness__ properties to display a stroke around the entire bar.
 
@@ -55,7 +55,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_BarIndicators_Basics_01.png)
+![WPF RadGauge Bar Indicator Empty Fill](images/RadGauge_Features_BarIndicators_Basics_01.png)
 
 ## Indicator's Width
 
@@ -81,7 +81,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_BarIndicators_Basics_02.png)
+![WPF RadGauge Bar Indicator Start and End Width](images/RadGauge_Features_BarIndicators_Basics_02.png)
 
 ## Range Color Mode
 
@@ -147,4 +147,4 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_BarIndicators_Basics_03.png)
+![WPF RadGauge Range Color Modes](images/RadGauge_Features_BarIndicators_Basics_03.png)

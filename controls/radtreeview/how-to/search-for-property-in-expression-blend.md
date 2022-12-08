@@ -16,7 +16,7 @@ position: 23
 
 Sometimes it will be difficult to find the desired property in the __Properties__pane. Expression Blend supports searching functionality. On the analogy of the searching controls in the __Assets__library, you can search for properties in the __Property__pane. The search field is located on the top part of the __Property__pane.
 
-![WPF RadTreeView ](images/RadTreeView_HowToSearchPropertyInBlend_1.png)
+![WPF RadTreeView Search Property in Blend](images/RadTreeView_HowToSearchPropertyInBlend_1.png)
 
 ## See Also
 

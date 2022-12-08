@@ -25,7 +25,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 This section will explain the structure of the __RadUpload__'s template. Here is a snapshot of the template generated in Expression Blend.
 
-![WPF RadUpload ](images/RadUpload_Styles_and_Templates_TemplateStructure_01.png)
+![WPF RadUpload Template Structure](images/RadUpload_Styles_and_Templates_TemplateStructure_01.png)
 
 It contains the following parts:
 
@@ -108,7 +108,7 @@ It contains the following parts:
 
 This section will explain the structure of the __RadUploadItem__'s template. Here is a snapshot of the template generated in Expression Blend.
 
-![WPF RadUpload ](images/RadUpload_Styles_and_Temoplates_UploadItem_Template.png)
+![WPF RadUpload RadUploadItem Template Structure](images/RadUpload_Styles_and_Temoplates_UploadItem_Template.png)
 
 It contains the following parts:
 

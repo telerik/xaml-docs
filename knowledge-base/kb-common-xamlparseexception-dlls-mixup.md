@@ -39,4 +39,4 @@ Here are some situations in which this can happen:
 
 To resolve this, make sure that all Telerik dlls have the same version. To check this, use the Properties pane of the dll references in Visual Studio.
 
-![WPF ](images/kb-common-xamlparseexception-dlls-mixup-0.png)
+![WPF Check Telerik Assemblies Version in Properties Pane](images/kb-common-xamlparseexception-dlls-mixup-0.png)

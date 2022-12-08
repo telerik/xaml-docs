@@ -24,7 +24,7 @@ The infinite paging is controlled by the __IsTotalItemCountFixed__ property. Its
 	                        IsTotalItemCountFixed="True" />
 {{endregion}}
 
- ![WPF RadDataPager ](images/RadDataPager_Features_InfinitePaging_01.png)
+ ![WPF RadDataPager Fixed Total Item Count](images/RadDataPager_Features_InfinitePaging_01.png)
 
 ## See Also
 

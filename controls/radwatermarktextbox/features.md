@@ -49,7 +49,7 @@ In the following example, the user is asked to enter four digits:
 
 __RadWatermarkTextBox with watermark text__
 
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox_overview_010.png)
+![WPF RadWatermarkTextBox with Watermark Text](images/radwatermarktextbox_overview_010.png)
 
 The WatermarkContent property is of type `object`, which means that you can set a value of any type. For example:
 
@@ -67,7 +67,7 @@ The WatermarkContent property is of type `object`, which means that you can set 
 
 __RadWatermarkTextBox with custom watermark content__
 
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox_overview_020.png)
+![WPF RadWatermarkTextBox with Custom Watermark Content](images/radwatermarktextbox_overview_020.png)
 
 ## Using WatermarkTemplate Property
 
@@ -89,7 +89,7 @@ Similarly, you can use the `WatermarkTemplate` property for the same sort of sce
 
 __RadWatermarkTextBox with custom WatermarkTemplate__
 
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox_overview_030.png)
+![WPF RadWatermarkTextBox Custom WatermarkTemplate](images/radwatermarktextbox_overview_030.png)
 
 ## Setting the SelectionOnFocus Property
 
@@ -123,7 +123,7 @@ RadWatermarkTextBox control exposes two properties to set its background when it
 
 __Disabled RadWatermarkTextBox with and without DisabledBackground__
 
-![WPF RadWatermarkTextBox ](images/DisabledBackground.png)
+![WPF RadWatermarkTextBox with and without Disabled Background](images/DisabledBackground.png)
 
 #### __[XAML] Setting the ReadOnlyBackground property__
 {{region xaml-radwatermarktextbox-features_5}}
@@ -132,7 +132,7 @@ __Disabled RadWatermarkTextBox with and without DisabledBackground__
 
 __Read-only RadWatermarkTextBox with and without ReadOnlyBackground__
 
-![WPF RadWatermarkTextBox ](images/ReadOnlyBackground.png)
+![WPF RadWatermarkTextBox with and Without Read Only Background](images/ReadOnlyBackground.png)
 
 >Please note that the read-only visual is drawn over the disabled visual so the ReadOnlyBackground will take precedence over the DisabledBackground if the control is in both the disabled and read-only states.
 
@@ -179,7 +179,7 @@ The following example demonstrates the `AdditionalContent` and `AdditionalConten
 
 __RadWatermarkTextBox with custom AdditionalContent and AdditionalContentTemplate properties__
 
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox-features-additionalcontent.PNG)
+![WPF RadWatermarkTextBox Custom AdditionalContent and AdditionalContentTemplate Properties](images/radwatermarktextbox-features-additionalcontent.PNG)
 
 ## See also
 

@@ -22,7 +22,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 2. Do not forget to check the __Enable WCF Ria Services__ option:
 
- ![WPF RadDomainDataSource ](images/dds_getting_started1.png)
+ ![WPF RadDomainDataSource Silverlight Application with Enabled WCF RIA Services](images/dds_getting_started1.png)
 
 
 
@@ -35,7 +35,7 @@ Now that we have the web application, we will add our data model using the North
 2. __Rebuild the project__ so when we add the __DomainDataSource__ - it will see the generated entities.
 
 3. In the server project (___SilverlightApplication2.Web___) add a new __Domain Service Class__ and select the Customers entities:
-![WPF RadDomainDataSource ](images/dds_getting_started2.png)
+![WPF RadDomainDataSource  ](images/dds_getting_started2.png)
 
 
 

@@ -26,7 +26,7 @@ The TextBoxStyle property expects a Style object with a __TargetType__ set to __
 	</telerik:RadAutoSuggestBox>
 {{endregion}}
 
-![WPF RadAutoSuggestBox ](images/radautosuggestbox-appearance-customize-textbox-0.png)
+![WPF RadAutoSuggestBox Custom TextBoxStyle](images/radautosuggestbox-appearance-customize-textbox-0.png)
 
 ## See Also  
  * [Getting Started]({%slug radautosuggestbox-getting-started%})

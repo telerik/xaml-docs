@@ -45,7 +45,7 @@ How to change the Background color of RadGridView's ControlPanel.
 	}
 {{endregion}}
 
-![WPF ](images/kb-gridview-change-control-panel-background-0.png)
+![WPF RadGridView Change ControlPanel Background Color](images/kb-gridview-change-control-panel-background-0.png)
 
 ## See Also  
 * [Control Panel]({%slug gridview-overview-controlpanel%})

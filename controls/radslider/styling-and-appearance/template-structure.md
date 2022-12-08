@@ -21,7 +21,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 ##  RadSlider Template Structure
 
 This section will explain the structure of the __RadSlider__'s template. Here is a snapshot of the template generated in Expression Blend.
-![WPF RadSlider ](images/radslider_styles_template_structure.png)
+![WPF RadSlider Template Structure](images/radslider_styles_template_structure.png)
 
 It contains the following parts:
 

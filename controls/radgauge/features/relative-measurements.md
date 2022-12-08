@@ -24,10 +24,10 @@ The cell size depends on the scale type:
 
 When using a linear scale, the cell size is equal to the height of the scale's container. Note that the cell size takes the entire height of the container. This means that if you have a __LinearGauge__ with a height of __300__ as a container, the cell size will be equal to __300__.
 
-![WPF RadGauge ](images/RadGauge_Features_RelativeMeasurements_01.png)
+![WPF RadGauge Linear Scale Cell Size](images/RadGauge_Features_RelativeMeasurements_01.png)
 
 ## Radial Scale Cell Size
 
 When using a radial scale, the cell size is equal to the radius of the container. This means that if you have a __RadialGauge__ with height/width of __300__, the cell size will be __150__.
 
-![WPF RadGauge ](images/RadGauge_Features_RelativeMeasurements_02.png)
+![WPF RadGauge Radial Scale Cell Size](images/RadGauge_Features_RelativeMeasurements_02.png)

@@ -32,7 +32,7 @@ Here is an example of creating a determined __RadBusyIndicator__ control:
 
 Notice that when a determined __RadbusyIndicator__ is enabled its inner donut will be consecutively filled. 
 
-![WPF RadBusyIndicator ](images/radbusyindicator_features_pregress_determination_010.png)
+![WPF RadBusyIndicator Progress Determination](images/radbusyindicator_features_pregress_determination_010.png)
 
 How much of the inner donut is filled depends on the __ProgressValue__ property. If it is less or equal to 0 the donut will be empty and when it is grater or equal to 100 the donut will be filled. 
 

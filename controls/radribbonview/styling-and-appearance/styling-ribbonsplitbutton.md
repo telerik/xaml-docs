@@ -24,14 +24,14 @@ This topic will show you how to perform the second one.
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonSplitButton__ you want to style.				
 
 {% if site.site_name == 'Silverlight' %}
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_Locate.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_LocateWPF.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_CreateStyle.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_CreateStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -47,7 +47,7 @@ If you want to change the ControlTemplate elements of the __RadRibbonSplitButton
 
 You can modify these properties to achieve the desired appearance. However the most of the visual parts of the __RadRibbonSplitButton__ have to be styled in the template of it. To modify it select the style in the 'Objects and Timeline' pane, right-click on it and choose *Edit Template -> Edit Current*. In the same pane the element parts for the __RadRibbonSplitButton's__ template will get loaded.
 {% endif %}
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_ControlTemplate.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_ControlTemplate.png)
 
 {% if site.site_name == 'WPF' %}
 
@@ -63,7 +63,7 @@ Change the elements' properties until you get the desired look.
 {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonSplit__ __Button__. Their names indicate to which part of the __RadRibbonSplitButton's__ appearance they are assigned.
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_Resources.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_Resources.png)
 
 * __RadRibbonBarDropDownButtonPressedBorder -__ a brush that represents the color of the drop down button's border, when the button gets pressed.
 
@@ -104,16 +104,16 @@ Modify the resource to bring the desired appearance to the __RadRibbonSplitButto
 ## Example
 
 Here is an example of the above resources modified:
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_ResourcesModified.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_ResourcesModified.png)
 
 Here is a snapshot of the result, when the mouse is over the button:
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_ExampleMouseOver.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_ExampleMouseOver.png)
 
 when the button is pressed:
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_ExamplePressed.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_ExamplePressed.png)
 
 and when the popup is visible:
-![WPF RadRibbonView ](images/RibbonView_Styling_SplitButton_Example.png)
+![WPF RadRibbonView  ](images/RibbonView_Styling_SplitButton_Example.png)
 
 {% endif %}          
 

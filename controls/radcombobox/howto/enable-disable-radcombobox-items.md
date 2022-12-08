@@ -188,7 +188,7 @@ Using __ItemContainerStyle__ is a good solution, however, it is not the best. Im
 Two things should be mentioned here. First, note how the __IsEnabled__ property is bound in the __Style__. Second, the declared __Style__ is set as a __ItemContainerStyle__ of the __RadComboBox__. The result is shown on the image below.
 
 #### __Picture 4: Result of Example 5__
-![WPF RadComboBox ](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
+![WPF RadComboBox with Styled Disabled Items](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
 {% endif %}
 
 ## See Also  

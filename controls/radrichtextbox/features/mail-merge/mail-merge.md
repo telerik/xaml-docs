@@ -81,7 +81,7 @@ MailMerge can be done both [using the UI](#mailmerging-using-the-ui) and [progra
 
 RadRichTextBoxRibbonUI comes with a predefined UI for inserting merge fields, previewing the results and fulfilling the merge. It is separated in the Mailings tab: 
 
-![WPF RadRichTextBox ](images/RadRichTextBox_Features_MailMerge.png)
+![WPF RadRichTextBox Mail Merge Field](images/RadRichTextBox_Features_MailMerge.png)
 
 The options in the drop down button InsertMergeField are automatically populated to match the properties of the objects which are used as data source. You can also switch the display mode of the merge fields from FieldCodes (as in the picture) to FieldNames (e.g. “&lt;&lt;FirstName&gt;&gt;”) or preview the results.
             

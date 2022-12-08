@@ -19,4 +19,4 @@ __RadDataForm__ is a data oriented control from Telerik. Similar to RadGridview,
 {% include cta-panel-overview.html %}
 {% endif %}
 
- ![WPF RadDataForm ](images/RadDataForm_image_help.png)
+ ![WPF RadDataForm Overview](images/RadDataForm_image_help.png)

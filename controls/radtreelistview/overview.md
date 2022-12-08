@@ -18,7 +18,7 @@ Telerik __RadTreeListView__ combines the powerful data-driven features from __Ra
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadTreeListView ](images/RadTreeListView_Overview_03.png)
+![WPF RadTreeListView Overview](images/RadTreeListView_Overview_03.png)
 
 ## Key Features
 

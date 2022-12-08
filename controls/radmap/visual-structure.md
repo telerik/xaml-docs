@@ -28,7 +28,7 @@ This section defines the terms and concepts used in the scope of the __RadMap__ 
 
 Here is a more detailed visual structure of the __Commands Bar__:
 
-![WPF RadMap ](images/RadMap_VisualStruture_02.png)
+![WPF RadMap Visual Structure](images/RadMap_VisualStruture_02.png)
 
 * __Hide Button__ - hides the __Toolbar__ upon clicking.            
 

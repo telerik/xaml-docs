@@ -215,9 +215,9 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
 
 
 #### Figure 1: The document created at run time
-{% if site.site_name == 'Silverlight' %}![WPF RadRichTextBox ](images/RadRichTextBox_DocumentElements_RadDocument_01.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![WPF RadRichTextBox Runtime Created Document](images/RadRichTextBox_DocumentElements_RadDocument_01.png){% endif %}
 
-{% if site.site_name == 'WPF' %}![WPF RadRichTextBox ](images/RadRichTextBox_DocumentElements_RadDocument_01_WPF.png){% endif %}
+{% if site.site_name == 'WPF' %}![WPF RadRichTextBox Runtime Created Document](images/RadRichTextBox_DocumentElements_RadDocument_01_WPF.png){% endif %}
 
 This document is editable. To make it **read only** you have to set the __IsReadOnly__ property of the __RadRichTextBox__ to __True__.
         

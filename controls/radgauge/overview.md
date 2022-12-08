@@ -19,7 +19,7 @@ If you are building business dashboards or you just need graphical indicators, y
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadGauge ](images/RadGauge_Overview_02.png)
+![WPF RadGauge Overview](images/RadGauge_Overview_02.png)
 
 __RadGauge's__ key features include:
 

@@ -13,9 +13,9 @@ position: 2
 The Telerik __RadChart__ supports great integration with other controls. This tutorial will show you how to integrate __RadChart__ with __RadGridView__.
 
 The final result should look like the snapshots below: 
-![WPF RadChart ](images/RadChart_HowToGridIntegration_001.PNG)
+![WPF RadChart  ](images/RadChart_HowToGridIntegration_001.PNG)
 
-![WPF RadChart ](images/RadChart_HowToGridIntegration_005.PNG)
+![WPF RadChart  ](images/RadChart_HowToGridIntegration_005.PNG)
 
 >This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
@@ -41,7 +41,7 @@ The final result should look like the snapshots below:
 	</Grid>
 {{endregion}}
 
-![WPF RadChart ](images/RadChart_HowToGridIntegration_010.PNG)
+![WPF RadChart  ](images/RadChart_HowToGridIntegration_010.PNG)
 
 On the left side you have a __RadGridView__, where the __UnitPrice__ and __UnitsInStock__ properties from the Products table in the Northwind database will be displayed. When you select a single row, a bar chart will be generated to compare both of the parameters. If you select several rows, then a line chart will be generated.
 
@@ -204,7 +204,7 @@ Declare the __NorthwindDataSource__ class as a resource in your application and 
 
 Here is the result so far: 
 
-![WPF RadChart ](images/RadChart_HowToGridIntegration_020.PNG)
+![WPF RadChart  ](images/RadChart_HowToGridIntegration_020.PNG)
 
 * The next step is to build the bar chart (comparing the __UnitPrice__ and __UnitsInStock__ parameters) depending on the selected row(s) in the gridview.
 
@@ -352,11 +352,11 @@ Here is the result so far:
 
 Here is the final result, when you select single row from the grid view: 
 
-![WPF RadChart ](images/RadChart_HowToGridIntegration_030.PNG)
+![WPF RadChart  ](images/RadChart_HowToGridIntegration_030.PNG)
 
 And when you select multiple rows:
 
-![WPF RadChart ](images/RadChart_HowToGridIntegration_040.PNG)
+![WPF RadChart  ](images/RadChart_HowToGridIntegration_040.PNG)
 
 ## See Also
 

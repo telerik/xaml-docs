@@ -12,7 +12,7 @@ position: 1
 
 This section defines terms and concepts used in the scope of the `RadVirtualKeyboard` control with which you have to get familiar before you continue to read its documentation. They can also be helpful when contacting our support service in order to describe your issue better.
 
-![WPF RadVirtualKeyboard ](images/radvirtualkeyboard-visual-structure-0.png)
+![WPF RadVirtualKeyboard Visual Structure](images/radvirtualkeyboard-visual-structure-0.png)
 
 * __Key__&mdash;An element representing a key button on the keyboard.
 

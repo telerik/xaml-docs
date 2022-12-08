@@ -39,7 +39,7 @@ This section demonstrates the use of the BringIntoView and AutoFit methods. For 
 {{endregion}}
 
 Here is the visual result rendered by the RadDiagram’s definition above:
-![WPF RadDiagram ](images/radidiagram-features-bringintoview-autofit_01.png)
+![WPF RadDiagram Default View](images/radidiagram-features-bringintoview-autofit_01.png)
 
 * __BringIntoView__ - The method exposes several overloads:
 	* __BringIntoView(Rect newViewPort, [bool useAnimation = true])__ – this overload accepts a Rect object that defines the new viewport of the diagram and fits it inside the Rect. The second argument is optional and it determines if the bring into view should be performed with an animation. 
@@ -49,7 +49,7 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 			this.diagram.BringIntoView(new Rect(220, 180, 300, 100));
 		{{endregion}}
 
-		![WPF RadDiagram ](images/radidiagram-features-bringintoview-autofit_02.png)
+		![WPF RadDiagram Rectangle Brought Into View](images/radidiagram-features-bringintoview-autofit_02.png)
 
 	* __BringIntoView(object item, [double zoomLevel = 1], [bool useAnimation =  true])__ – this overload accepts an object that contains the shape which should be brought into the view. The last two arguments define the zoom level which should be applied and if an animation should be performed. The shape will be positioned at the center of the viewport.
 	
@@ -58,7 +58,7 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 			this.diagram.BringIntoView(this.diagramShape);
 		{{endregion}}
 
-		![WPF RadDiagram ](images/radidiagram-features-bringintoview-autofit_03.png)
+		![WPF RadDiagram Shape Brought Into View](images/radidiagram-features-bringintoview-autofit_03.png)
 	
 	* __BringIntoView(Point position, [double zoomLevel = 1], [bool useAnimation =  true])__ – this overload gets a Point object which determines the top left position of the viewport. The last two arguments define the zoom level which should be applied and if an animation should be performed.
 		
@@ -67,7 +67,7 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 			this.diagram.BringIntoView(new Point(200, 160));
 		{{endregion}}
 		
-		![WPF RadDiagram ](images/radidiagram-features-bringintoview-autofit_04.png)
+		![WPF RadDiagram Point Brought Into View](images/radidiagram-features-bringintoview-autofit_04.png)
 
 * __AutoFit__ - the method provides two overloads: 
 	
@@ -77,7 +77,7 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 			this.diagram.AutoFit();
 		{{endregion}}
 		
-		![WPF RadDiagram ](images/radidiagram-features-bringintoview-autofit_05.png)
+		![WPF RadDiagram AutoFit](images/radidiagram-features-bringintoview-autofit_05.png)
 		
 	* __AutoFit(Thickness margin, [bool useAnimation = true])__  - this overload accepts a Thickness object as an argument that determines the margin used as a white space border around the diagram items. 
 		
@@ -86,7 +86,7 @@ Here is the visual result rendered by the RadDiagram’s definition above:
 			this.diagram.AutoFit(new Thickness(100));
 		{{endregion}}
 		
-		![WPF RadDiagram ](images/radidiagram-features-bringintoview-autofit_06.png)
+		![WPF RadDiagram AutoFit with Thickness 100](images/radidiagram-features-bringintoview-autofit_06.png)
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

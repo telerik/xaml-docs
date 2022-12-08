@@ -21,15 +21,15 @@ This example shows how to install Telerik packages using the online server. This
 
 1. Navigate to the Package Manager Settings menu in Visual Studio.
 
-	![WPF ](images/nuget-installation-0.png)
+	![WPF Package Manager Settings](images/nuget-installation-0.png)
 	
 1. Add a new source in the Package Sources section.
 	
-	![WPF ](images/nuget-installation-1.png)
+	![WPF New Package Source](images/nuget-installation-1.png)
 	
 1. In the Source field fill the address of the Telerik NuGet Server and click OK. The address is: https://nuget.telerik.com/v3/index.json
 
-	![WPF ](images/nuget-installation-2.png)
+	![WPF Telerik NuGet Server Address](images/nuget-installation-2.png)
 
 1. The Telerik Server is added and ready to use.
 
@@ -39,12 +39,12 @@ The following steps show how to search and install nuget packages in the Telerik
 
 1. Select your solution or project and click on the "Manage NuGet Packages" menu.
 
-	![WPF ](images/nuget-installation-3.png)
+	![WPF Manage NuGet Packages Menu](images/nuget-installation-3.png)
 	
 1. Set the Telerik server as the current package source. This will prompt you to log into your telerik.com account. Enter user credentials and search for the needed package.
 
 1. Install the package. Some packages depend on other ones in the server, so they will be installed automatically if needed.
 
-	![WPF ](images/nuget-installation-4.png)
+	![WPF Installing Telerik Package](images/nuget-installation-4.png)
 
 >tip Read more about the different NuGet packages in the [Available NuGet Packages]({%slug nuget-available-packages%}) article.

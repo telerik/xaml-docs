@@ -20,10 +20,10 @@ The label displays as a watermark content (placeholder) when the RadWatermarkTex
 {{endregion}}
 
 #### Label default visualization  
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox-features-label-0.png)
+![WPF RadWatermarkTextBox Label Default Visualization](images/radwatermarktextbox-features-label-0.png)
 
 #### Label visualization when floated  
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox-features-label-1.png)
+![WPF RadWatermarkTextBox Label Visualization When Floated](images/radwatermarktextbox-features-label-1.png)
 
 To keep the label always positioned on top of the text input area, set the __KeepLabelFloated__ property of RadWatermarkTextBox to True.
 
@@ -56,7 +56,7 @@ The label visual element is of type [Label](https://docs.microsoft.com/en-us/dot
 {{endregion}}
 
 #### Customized label  
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox-features-label-2.png)
+![WPF RadWatermarkTextBox Customized Label](images/radwatermarktextbox-features-label-2.png)
 
 ## Animation
 

@@ -82,7 +82,7 @@ Take a look at the way the __InteractivitySettings__ are declared for a specific
 
 For example if __HoverScope__ is set to __InteractivityScope.Series__ for a given bar series, when one hovers over a bar item, the whole series will be highlighted (i.e. all of the other series within the ChartArea will become temporarily transparent); otherwise if __HoverScope__ is set to __InteractivityScope.Item__, when one hovers over a bar item, only the respective item will be highlighted (i.e. all of the other series as well all of the other bar items within the originating bar series will become temporarily transparent). The same principle applies for __SelectionScope__ as well - if it is set to __InteractivityScope.Series__, all items within the series will be selected; alternatively if it set to __InteractivtyScope.Item__, only the respective item will be selected.
 
-![WPF RadChart ](images/RadChart_Features_InteractivityEffects_010.png)
+![WPF RadChart with Hover Effect](images/RadChart_Features_InteractivityEffects_010.png)
 
 >tipIn order to enable the interactivity functionality you need to first set the interactivity scope for hover, selection, or both. The notion of "interactivity scope" specifies whether the chart control should interpret the interactivity action (selection or hover) on series level (if applicable), or on item level (if applicable).
 

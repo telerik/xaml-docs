@@ -14,10 +14,10 @@ __SelectionMiniToolBar__ is a floating toolbar that appears next to the current 
   
 
 {% if site.site_name == 'Silverlight' %}
-![WPF RadRichTextBox ](images/RadRichTextBox_Features_SelectionMiniToolbar_01.png){% endif %}
+![WPF RadRichTextBox Selection Mini Tool Bar](images/RadRichTextBox_Features_SelectionMiniToolbar_01.png){% endif %}
 
 {% if site.site_name == 'WPF' %}
-![WPF RadRichTextBox ](images/RadRichTextBox_Features_SelectionMiniToolbar_01_WPF.png){% endif %}
+![WPF RadRichTextBox Selection Mini Tool Bar](images/RadRichTextBox_Features_SelectionMiniToolbar_01_WPF.png){% endif %}
 
 As __RadRichTextBox__ loads the default __SelectionMiniToolBar__ using [MEF](http://mef.codeplex.com/), it can be completely replaced with a custom one. This can be done as easy as with the other __RadRichTextBox__ dialogs by implementing the interface __ISelectionMiniToolBar__ and marking the class that implements it with the __CustomSelectionMiniToolBarAttribute__  attribute.  The technique was also described in greater details in [this blog post](http://blogs.telerik.com/xamlteam/posts/10-09-28/some-tricks-with-mef-up-the-sleeve-of-radrichtextbox-for-silverlight.aspx).
         

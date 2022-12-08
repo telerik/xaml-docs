@@ -17,7 +17,7 @@ The __RadCouldUpload__ control can be used in scenarios when our customers need 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadCloudUpload ](images/cloudupload-overview-0.png)
+![WPF RadCloudUpload Overview](images/cloudupload-overview-0.png)
 
 ## Key Features
 

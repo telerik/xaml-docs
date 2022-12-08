@@ -21,7 +21,7 @@ If you set this property to __True__, the menu won't get closed upon a click on 
 	             StaysOpenOnClick="True" />
 {{endregion}}
 
-![WPF RadMenu ](images/RadMenu_Click_Modes_01.png)
+![WPF RadMenu Stays Open On Click](images/RadMenu_Click_Modes_01.png)
 
 >tipYou might find this functionality very useful, when having checkable menu items in your __RadMenu__. It allows you to keep the menu open, when a menu item gets checked. To learn more about this type of items read [here]({%slug radmenu-features-checkable-items%}).
 

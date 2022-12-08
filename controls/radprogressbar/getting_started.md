@@ -43,7 +43,7 @@ To set up a RadProgressBar, set its __Minimum__, __Maximum__ and __Value__ prope
 	progressBar.Value = 10
 {{endregion}}
 
-![WPF RadProgressBar ](images/radprogressbar-getting-started-0.png)
+![WPF RadProgressBar Minimum Maximum and Value Setup](images/radprogressbar-getting-started-0.png)
 
 ## Changing Orientation
 
@@ -78,7 +78,7 @@ The default orientation of RadProgressBar is horizontal. To change this, set the
 	progressBar.Orientation = Orientation.Vertical
 {{endregion}}
 
-![WPF RadProgressBar ](images/radprogressbar-getting-started-1.png)
+![WPF RadProgressBar with Vertical Orientation](images/radprogressbar-getting-started-1.png)
 
 ## Indeterminate State
 
@@ -101,7 +101,7 @@ This state presents a visualization of an unspecified waiting time. To enable it
 	progressBar.IsIndeterminate = True
 {{endregion}}
 
-![WPF RadProgressBar ](images/radprogressbar-getting-started-2.gif)
+![WPF RadProgressBar Indeterminate](images/radprogressbar-getting-started-2.gif)
 
 ## Setting a Theme
 

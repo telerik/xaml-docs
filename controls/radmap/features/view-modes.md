@@ -91,7 +91,7 @@ Here is an example:
 
 Here is a snapshot of the result.
 
-![WPF RadMap ](images/RadMap_Features_ViewModes_02.png)
+![WPF RadMap Map Command Bar Outside](images/RadMap_Features_ViewModes_02.png)
 
 ## See Also
 

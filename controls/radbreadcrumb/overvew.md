@@ -19,7 +19,7 @@ Do you need to build complicated navigation systems that allow you to track the 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadBreadcrumb ](images/radbreadcrumb-overview-1.png)
+![WPF RadBreadcrumb Overview](images/radbreadcrumb-overview-1.png)
 
 This is a list with short descriptions of the top-of-the-line features of Telerik's __RadBreadcrumb__ control:
 

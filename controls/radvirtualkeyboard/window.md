@@ -20,7 +20,7 @@ To open the keyboard window, use the `RadVirtualKeyboardWindow` control and its 
 	keyboardWindow.Show();
 {{endregion}}
 
-![WPF RadVirtualKeyboard ](images/radvirtualkeyboard-window-0.png)
+![WPF RadVirtualKeyboard Keyboard Window](images/radvirtualkeyboard-window-0.png)
 
 ## See Also  
 * [Visual Structure]({%slug radvirtualkeyboard-visual-structure%})

@@ -30,15 +30,15 @@ The Marker supports the following features:
 2. You can set location of the Marker relative to a scale bar using a telerik:ScaleObject.Location property.
 	For example, "Outside" 
 
-	![WPF RadGauge ](images/RadialMarkerLocationOutside.png)
+	![WPF RadGauge RadialScale Marker Location Outside](images/RadialMarkerLocationOutside.png)
 
 	"Inside" 
 
-	![WPF RadGauge ](images/RadialMarkerLocationInside.png)
+	![WPF RadGauge RadialScale Marker Location Inside](images/RadialMarkerLocationInside.png)
 
 	or "OverCenter" 
 
-	![WPF RadGauge ](images/RadialMarkerLocationOverCenter.png)
+	![WPF RadGauge RadialScale Marker Location OverCenter](images/RadialMarkerLocationOverCenter.png)
 
 3. telerik:ScaleObject.Offset relative to a scale bar.
 

@@ -12,7 +12,7 @@ position: 5
 
 __RadHyperlinkButton__ provides the RadButton functionality extending it with Hyperlink capabilities. 
 
-![WPF RadButtons ](images/radbuttons-features-hyperlink-button-0.png)
+![WPF RadButtons Hyperlink Button](images/radbuttons-features-hyperlink-button-0.png)
 
 ## Setting the Content, Uri and the Target
 

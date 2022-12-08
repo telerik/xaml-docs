@@ -232,4 +232,4 @@ The *LegendItemStyle* used :
 
 The picture below demonstrates the result:
  
- ![WPF RadChart ](images/RadChart_Styling_and_Appearance_Custom_Item_Style_01.png)
+ ![WPF RadChart  ](images/RadChart_Styling_and_Appearance_Custom_Item_Style_01.png)

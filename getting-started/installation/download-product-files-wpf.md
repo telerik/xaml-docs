@@ -28,15 +28,15 @@ In order to download these you need to take the following steps:
 
 2. Click on the __Downloads__ tab:
 
-	![WPF ](images/Download_product_files_0.png)
+	![WPF Progress Site Downloads Tab](images/Download_product_files_0.png)
 
 3. Select __Telerik UI for WPF__ product title:
 	
-	![WPF ](images/Download_product_files_1.png)
+	![WPF Progress Site Telerik UI for WPF Product Title](images/Download_product_files_1.png)
 
 4. The next page allows you to download the Automatic Installation msi file, DLLs and themes, PDB files, NuGet Packages, documentation files, and Source code. 
 
-	![WPF ](images/Download_product_files_2.png)
+	![WPF Progress Site Telerik UI for WPF Product Page](images/Download_product_files_2.png)
 
 Below you could find a list of the available files:
 
@@ -96,7 +96,7 @@ You could download the complete source code of the [WPF Demos application]({%slu
 
 From the __Versions__ dropdown you can select an older version to download:
 
-![WPF ](images/Download_product_files_3.png)
+![WPF Progress Site Telerik UI for WPF Available Versions](images/Download_product_files_3.png)
 
 >important Please note that if you do not see the desired version you can contact our [sales team](mailto:sales@telerik.com) and they will enable the version for download.
 

@@ -44,7 +44,7 @@ Here is a simple __RadDocking__ declaration with a single pane.
 
 As you can see, by default the close button is enabled and you can close the pane anytime when you click the "X".
 
-![WPF RadDocking ](images/RadDocking_HowTo_DisableCloseButton_010.png)
+![WPF RadDocking Default Close Button](images/RadDocking_HowTo_DisableCloseButton_010.png)
 
 So, find your __RadPane__ declaration and set the following attribute:
 
@@ -56,7 +56,7 @@ So, find your __RadPane__ declaration and set the following attribute:
 
 Now, if you run your application, the close button will be no longer visible.
 
-![WPF RadDocking ](images/RadDocking_HowTo_DisableCloseButton_020.png)
+![WPF RadDocking Pane without Close Button](images/RadDocking_HowTo_DisableCloseButton_020.png)
 
 The same operation can be done in the code-behind. In order to do that, set the __CanUserClose__ property on an instance of the __RadPane__ class to __false__.
 
@@ -79,7 +79,7 @@ The same operation can be done in the code-behind. In order to do that, set the 
 
 >Note that even the __CanUserClose__ property is set to False, when you drag your pane so that you make it floatable. The window that contains the pane will still have a close button visible. __However, you won't be able to close if you try to click the "X" button.__
 
-![WPF RadDocking ](images/RadDocking_HowTo_DisableCloseButton_030.png)
+![WPF RadDocking with ToolWindow Close Button](images/RadDocking_HowTo_DisableCloseButton_030.png)
 
 ## Handling the PreviewClose Event
 

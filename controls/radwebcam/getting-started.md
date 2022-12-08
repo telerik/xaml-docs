@@ -45,7 +45,7 @@ From this point on, you can start using the control without any additional set u
 
 __RadWebCam__
 
-![WPF RadWebCam ](images/radwebcam-getting-started-0.png)
+![WPF RadWebCam Overview](images/radwebcam-getting-started-0.png)
 
 ## Auto Start
 

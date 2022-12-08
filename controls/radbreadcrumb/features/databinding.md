@@ -20,7 +20,7 @@ The __RadBreacrumb__ provides extensive data binding support. You can  display f
 
 The following example will show you how to bind a __Breadcrumb__ control to a flat collection of business objects. The final result should look like the snapshot below:
 
-![WPF RadBreadcrumb ](images/breadcrumb_features_flat_collection.png)
+![WPF RadBreadcrumb Data Binding Example](images/breadcrumb_features_flat_collection.png)
 
 * First, you need to include the following assemblies in your XAML declaration:
 	* __Telerik.Windows.Controls__	
@@ -834,7 +834,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 
 In both approaches the final result should look like this:
 
-![WPF RadBreadcrumb ](images/breadcrumb_features_hierarchical_data.png)
+![WPF RadBreadcrumb Hierarchical Data](images/breadcrumb_features_hierarchical_data.png)
 
 {% if site.site_name == 'Silverlight' %}You can download the sample project [here](http://www.telerik.com/community/code-library/silverlight/general/breadcrumb-hierarchical-data-binding.aspx){% endif %}
 

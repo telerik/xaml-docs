@@ -159,7 +159,7 @@ You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ 
 {{endregion}}
 
 #### Figure 2: 
-![WPF RadExpander ](images/RadExpander_Features_Alignment_shrink.png)
+![WPF RadExpander Different Alignments](images/RadExpander_Features_Alignment_shrink.png)
 
 ## HorizontalHeaderAlignment and VerticalHeaderAlignment properties
 

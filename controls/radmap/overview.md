@@ -19,7 +19,7 @@ Visualize rich geographical information with Telerik __RadMap__, zoom and pan sm
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadMap ](images/RadMap_Overview_02.png)
+![WPF RadMap Overview](images/RadMap_Overview_02.png)
 
 __RadMap's__ key features include:        
 

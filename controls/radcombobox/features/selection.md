@@ -118,7 +118,7 @@ Imagine that you have a business object named __Agency__ with two members (prope
 	    SelectedValuePath="Phone"/>
 {{endregion}}
 
-![WPF RadComboBox ](images/RadComboBox_Features_Selection_005.png)
+![WPF RadComboBox with Selected Item](images/RadComboBox_Features_Selection_005.png)
 
 When you select an agency name from the combo box, the __SelectedItem__ property returns the __Agency__ data item that corresponds to the selected __Name__. However, because the __SelectedValuePath__ of this __RadComboBox__ is set to agency phone, the __SelectedValue__ is set to the __Phone__ property of the __Agency__ business object.
 

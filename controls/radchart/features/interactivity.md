@@ -68,7 +68,7 @@ The example below shows a text box with some details when a candle is clicked. _
 
 On the snapshot below you can see the __MessageBox__ shown when the user has clicked on a candle. The formatted text message takes detailed information from the underlying business object, which is accessible through the __ChartItemClickEventArgs.DataPoint.DataItem__.
 
-![WPF RadChart ](images/RadChart_Features_Interactivity_01.png)
+![WPF RadChart with MessageBox Shown on Click](images/RadChart_Features_Interactivity_01.png)
 
 ## Programmatically select items in ChartArea
 

@@ -12,7 +12,7 @@ position: 1
 
 __RadBusyIndicator__ is a content control which gives you the ability to notify the user that there is an ongoing process in the application. The most important part of its visual representation is the __ProgressBar__ and the busy content which purpose is to further inform the user about the current state of the ongoing process.
 
-![WPF RadBusyIndicator ](images/radbusyindicator_visual_structure_010.png)
+![WPF RadBusyIndicator Visual Structure](images/radbusyindicator_visual_structure_010.png)
 
 * __RadBusyIndicator's  Content__ - is the controls content.
 

@@ -17,7 +17,7 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 ## Ribbon ComboBox - Fundamentals
 
 A __Ribbon ComboBox__ is very similar to the standard __RadComboBox__ that ships with the Telerik RadControls. However, it is designed to be hosted on a ribbon control.
-![WPF RadRibbonView ](images/RadRibbonView_ComboBox_Overview.png)
+![WPF RadRibbonView Ribbon ComboBox](images/RadRibbonView_ComboBox_Overview.png)
 
 >tip The class that represents the Ribbon ComboBox is __Telerik.Windows.Controls.RadRibbonComboBox__.				
 
@@ -59,7 +59,7 @@ Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple pr
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![WPF RadRibbonView ](images/RadRibbonView_ComboBox_Sample.png)
+![WPF RadRibbonView RibbonComboBox in Ribbon Group](images/RadRibbonView_ComboBox_Sample.png)
 
 The __RadRibbonView__ is a complex control and the __Ribbon ComboBox__ is only a small part of it. The __RadRibbonView__ consists of various elements such as:
 * [Application Menu]({%slug radribbonview-applicationmenu%})

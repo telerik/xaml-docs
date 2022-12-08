@@ -30,7 +30,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 
 Here are the generated resources related to the __RadProgressBar__:
 
-![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_styling_radprogressbar_011.png)
+![WPF RadBusyIndicator Blend Resources](images/radbusyindicator_styles_and_templates_styling_radprogressbar_011.png)
 
 * __BusyIndicatorProgressBarStyle__ - represents the default style applied to the __RadProgressBar__ control.
 
@@ -44,11 +44,11 @@ Here are the generated resources related to the __RadProgressBar__:
 
 Here is an example of the above resources modified:
 
-![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_styling_radprogressbar_020.png)
+![WPF RadBusyIndicator Modified Blend Resources](images/radbusyindicator_styles_and_templates_styling_radprogressbar_020.png)
 
 Here is the result:
 
-![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_styling_radprogressbar_030.png)
+![WPF RadBusyIndicator Customized Appearance](images/radbusyindicator_styles_and_templates_styling_radprogressbar_030.png)
 
 ## Create a custom ProgressBar Style
 
@@ -91,7 +91,7 @@ Use the __ProgressBarStyle__ property to apply the style to the __RadBusyIndicat
 
 And the result is:
 
-![WPF RadBusyIndicator ](images/radbusyindicator_styles_and_templates_styling_radprogressbar_010.png)
+![WPF RadBusyIndicator  ](images/radbusyindicator_styles_and_templates_styling_radprogressbar_010.png)
 
 ## See Also
 

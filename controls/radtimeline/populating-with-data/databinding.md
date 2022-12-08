@@ -132,4 +132,4 @@ The following XAML creates a RadTimeline and binds it to our prepared collection
 
 The result can be seen below:
 
-![WPF RadTimeline ](images/RadTimeLine_databinding.PNG)
+![WPF RadTimeline DataBound](images/RadTimeLine_databinding.PNG)

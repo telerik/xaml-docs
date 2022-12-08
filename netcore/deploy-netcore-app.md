@@ -20,11 +20,11 @@ This article shows how to deploy a WPF .NET Core Application using Visual Studio
 
 1. Create a new WPF project using the [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) (VSX). If the VSX is installed you will see the __Telerik C# WPF Application (.NET Core)__ template in the Visual Studio's project templates list.
 
-	![WPF ](images/netcore-support-deploy-using-visual-studio-0.png)
+	![WPF Create New Telerik NET Core Application](images/netcore-support-deploy-using-visual-studio-0.png)
 	
 2. Select one of the application templates from the New Project Wizard. For this example, use the Calendar template.
 
-	![WPF ](images/netcore-support-deploy-using-visual-studio-1.png)
+	![WPF Telerik Select New Project Template](images/netcore-support-deploy-using-visual-studio-1.png)
 	
 #### __Figure 1: Calendar application created with the New Project Wizard__
 ![WPF Calendar application created with the New Project Wizard](images/netcore-support-deploy-using-visual-studio-2.png)
@@ -35,21 +35,21 @@ This article shows how to deploy a WPF .NET Core Application using Visual Studio
 
 1. Right click the project in Visual Studio and select the __Publish__ option. This will open the __Pick a publish taget__ dialog.
 
-	![WPF ](images/netcore-support-deploy-using-visual-studio-3.png)
+	![WPF Select Project Publish Option](images/netcore-support-deploy-using-visual-studio-3.png)
 
 2. Choose a publish location. For this example, click on the __Folder__ option and choose a directory where the application should be deployed. Then click __Create profile__.
 
-	![WPF ](images/netcore-support-deploy-using-visual-studio-4.png)
+	![WPF Choose a Publish Location](images/netcore-support-deploy-using-visual-studio-4.png)
 	
-	![WPF ](images/netcore-support-deploy-using-visual-studio-5.png)
+	![WPF Choose Folder Deploy Directory](images/netcore-support-deploy-using-visual-studio-5.png)
 
 3. Open the __Profile Settings__ via the __Configuration__ options and set the __Deployment Mode__ to __Self-contained__. Then select a __Target Runtime__.
 
-	![WPF ](images/netcore-support-deploy-using-visual-studio-6.png)
+	![WPF Profile Settings Configuration](images/netcore-support-deploy-using-visual-studio-6.png)
 
 4. Save the configuration and click the __Publish__ button. This will generate files in the publish location.
 
-	![WPF ](images/netcore-support-deploy-using-visual-studio-7.png)
+	![WPF Generated Files in Publish Location](images/netcore-support-deploy-using-visual-studio-7.png)
 
 5. Copy the output files from the publish location to your deployment environment.
 
@@ -57,4 +57,4 @@ This article shows how to deploy a WPF .NET Core Application using Visual Studio
 
 ## See Also
 
-* [Migrаting to .NET Core]({%slug netcore-support-migration%})
+* [Migrating to .NET Core]({%slug netcore-support-migration%})

@@ -380,9 +380,9 @@ The next step is to create a selector where the logic about selecting the right 
 > Don't forget to null the ItemEditTemplate, because otherwise your template selector won't be applied.
 		
 Here are some snapshots when you edit an object of type League and when you edit an object of type __Team__:
-![WPF RadTreeView ](images/RadTreeView_TemplatingItemEditTemplateSelector_001.png)
+![WPF RadTreeView Editing Item of Type League](images/RadTreeView_TemplatingItemEditTemplateSelector_001.png)
 
-![WPF RadTreeView ](images/RadTreeView_TemplatingItemEditTemplateSelector_010.png)
+![WPF RadTreeView Editing Item of Type Team](images/RadTreeView_TemplatingItemEditTemplateSelector_010.png)
 
 ## See Also
  * [ItemEditTemplate]({%slug radtreeview-populating-with-data-item-edit-template%})

@@ -38,7 +38,7 @@ Here is an example of a __RadWindow__ that can be resized, minimized or maximize
 	radWindow.ResizeMode = ResizeMode.NoResize
 {{endregion}}
 
-![WPF RadWindow ](images/RadWindow_Features_Resizing_01.png)
+![WPF RadWindow Resize Mode No Resize](images/RadWindow_Features_Resizing_01.png)
 
 ## See Also
 

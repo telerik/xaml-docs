@@ -76,4 +76,4 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_NumericScale_02.png)
+![WPF RadGauge Numeric Scale](images/RadGauge_Features_NumericScale_02.png)

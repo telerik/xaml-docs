@@ -197,7 +197,7 @@ This tutorial will show you two of them:
 
 5. Run your demo. Here is the final result:
 
-	![WPF RadTreeView ](images/RadTreeView_HowToBindTreeViewWPF_010.PNG)
+	![WPF RadTreeView XML Data Source](images/RadTreeView_HowToBindTreeViewWPF_010.PNG)
 
 You can download this demo as project in our [CodeLibrary](http://www.telerik.com/community/code-library/wpf/treeview/radtreeview-using-xmldataprovider.aspx)
 
@@ -449,7 +449,7 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 	{{endregion}}
 
 The final result may be seen on the snapshot below:
-![WPF RadTreeView ](images/RadTreeView_HowToBindTreeViewWPF_020.PNG)
+![WPF RadTreeView CollectionViewSource](images/RadTreeView_HowToBindTreeViewWPF_020.PNG)
 
 You can download this demo as project in our [CodeLibrary](http://www.telerik.com/community/code-library/wpf/treeview/radtreeview-using-collectionviewsource.aspx)
 

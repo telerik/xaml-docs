@@ -17,7 +17,7 @@ __RadWatermarkTextBox__ control represents a TextBox that allows you to define a
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadWatermarkTextBox ](images/radwatermarktextbox-overview-01.png)
+![WPF RadWatermarkTextBox Overview](images/radwatermarktextbox-overview-01.png)
 
 ## Key Features
 

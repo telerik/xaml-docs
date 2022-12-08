@@ -33,7 +33,7 @@ In order to run the __RadUpload__ in Medium Trust level you should do only one t
 
 3. Now you can configure your web site (or the whole web server) to run in Medium Trust level. Of course you can script by hand the command for Medium Trust level (see row 66 in the picture below);
 
-	![WPF RadUpload ](images/RadUpload_How_To_Medium_Trust_01.png)
+	![WPF RadUpload in Medium Trust Command Script](images/RadUpload_How_To_Medium_Trust_01.png)
 
 ## See Also  
  * [Limit the Upload Speed]({%slug radupload-how-to-limit-the-upload-speed%})

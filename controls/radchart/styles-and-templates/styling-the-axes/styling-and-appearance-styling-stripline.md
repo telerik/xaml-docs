@@ -60,7 +60,7 @@ After finishing with the changes it is time to set the style. It can be set only
 >tipTo show the strip lines for a particular axis you have to set its __StripLinesVisibility__ property to __Visible__. Read more about strip lines [here]({%slug radchart-features-axes-striplines-and-gridlines%}).
 
 Here is a snapshot of the sample result:
-![WPF RadChart ](images/RadChart_StylingAxisStripLines_04.png)
+![WPF RadChart  ](images/RadChart_StylingAxisStripLines_04.png)
 
 Here is the final XAML for the __Styles__ used:
 

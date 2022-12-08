@@ -36,4 +36,4 @@ The following example will demonstrate how you can color the RadMap using the Gr
 
 The result can be seen below:
 
-![WPF RadMap ](images/RadMap_Features_GraphColorizer.PNG)
+![WPF RadMap Graph Colorizer](images/RadMap_Features_GraphColorizer.PNG)

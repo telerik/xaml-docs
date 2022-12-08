@@ -17,7 +17,7 @@ Telerik __RadProgressBar__ is an advanced component allowing you to completely c
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadProgressBar ](images/radprogressbar-overview-0.png)
+![WPF RadProgressBar Overview](images/radprogressbar-overview-0.png)
 
 ## Key Features
 

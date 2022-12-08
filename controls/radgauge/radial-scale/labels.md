@@ -29,20 +29,20 @@ For the purpose of this tutorial the code snippet in __Example 1__ will be used.
 
 You can change the location of the labels by using the __LabelLocation__. 
 
-![WPF RadGauge ](images/radial-scale-labels-labellocation.png)
+![WPF RadGauge RadRadialGauge Label Location](images/radial-scale-labels-labellocation.png)
 
 ## Label Rotation Mode
 
 You can control the label rotation on the radial scale using __LabelRotationMode__ property. It can have the following values: __None__, 
 __Automatic__, __SurroundIn__, __SurroundOut__. 
 
-![WPF RadGauge ](images/radial-scale-labels-label_rotation-mode.png)
+![WPF RadGauge RadRadialGauge Label Rotation Mode](images/radial-scale-labels-label_rotation-mode.png)
 
 ## Label Use Range Color
 
 You can use the GaugeRange element on a radial scale to re-color labels automatically. The RadialScale has the boolean __LabelUseRangeColor__ property. If it is True, then each label within the range uses a color according to the specified range's LabelForeground property:
 
-![WPF RadGauge ](images/RadialScaleLabelRangeColor.png)
+![WPF RadGauge RadRadialGauge Label Use Range Color](images/RadialScaleLabelRangeColor.png)
 
 #### __[XAML] Example 2: Set the LabelUseRangeColor property__
 {{region radial-scale-labels_1}}
@@ -80,7 +80,7 @@ To change the format of the labels, you can use the __LabelFormat__ property. __
 	</telerik:RadRadialGauge>
 {{endregion}}
 
-![WPF RadGauge ](images/radial-scale-labels-label_format.png)
+![WPF RadGauge RadRadialGauge Label Format](images/radial-scale-labels-label_format.png)
 
 ## Label Offset
 
@@ -97,7 +97,7 @@ In a scenario where you want to offset the labels in order to avoid overlaps for
 	</telerik:RadRadialGauge>
 {{endregion}}
 
-![WPF RadGauge ](images/radial-scale-labels-label_offset.png)
+![WPF RadGauge Label Format Label Offset](images/radial-scale-labels-label_offset.png)
 
 ## Common Properties
 

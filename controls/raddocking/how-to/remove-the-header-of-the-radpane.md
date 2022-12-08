@@ -33,13 +33,13 @@ In order to remove the __Header__ of the __RadPane__ you have to set the __PaneH
 
 After that the Panes will look like this:
 
-![WPF RadDocking ](images/Pane_NoHeader.gif)
+![WPF RadDocking Pane with No Header](images/Pane_NoHeader.gif)
 
 ## Removing the RadDocumentPane’s Tab
 
 This is commonly misinterpreted as the RadPane’s Header, but here the __PaneHeaderVisibility__ is not the property we need. The Tab of the __RadDocumentPane__ is actually the Pane itself.
 
-![WPF RadDocking ](images/DocPane_WithHeader.gif)
+![WPF RadDocking Document Pane Header](images/DocPane_WithHeader.gif)
 
 So to remove it and to leave only the border of the DocumentPane in the DocumentHost you will have to set its its __Visibility__ property to __Collapsed__.
 
@@ -62,8 +62,8 @@ So to remove it and to leave only the border of the DocumentPane in the Document
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking ](images/DocPane_NoHeader.gif)
+![WPF RadDocking Document Pane No Header](images/DocPane_NoHeader.gif)
 
 If you set the __CanUserClose__ property of the __RadDocumentPane__ the 'X' button will disappear as long with the grey area. 
 
-![WPF RadDocking ](images/DocPane_NoGray.gif)
+![WPF RadDocking Document Pane No Header No Close Button](images/DocPane_NoGray.gif)

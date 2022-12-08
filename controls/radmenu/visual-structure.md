@@ -14,11 +14,11 @@ This section defines terms and concepts used in the scope of __RadMenu__ that yo
 
 The __RadMenu__ is a user interface control that presents users with navigation in the form of menu. The contents can be shown and hidden as the menu items expand and collapse. In its default state, the items are collapsed, displaying only their headers as it is shown on the snapshot below.        
 
-![WPF RadMenu ](images/RadMenu_VisualStructure_01.png)
+![WPF RadMenu Visual Structure Top Level](images/RadMenu_VisualStructure_01.png)
 
 When a menu item is selected it gets expanded and its sub items appear. See the following snapshots for more detailed information.
 
-![WPF RadMenu ](images/RadMenu_VisualStructure_02.png)
+![WPF RadMenu Visual Structure Sub Items](images/RadMenu_VisualStructure_02.png)
 
 * __Menu -__ the container that holds the top-level menu items.          
 

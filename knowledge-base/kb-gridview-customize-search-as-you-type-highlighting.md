@@ -77,7 +77,7 @@ How to remove the default cell background highlighting when search as you type a
 	</telerik:RadGridView.Columns>
 {{endregion}}
 
-![WPF ](images/kb-gridview-customize-search-as-you-type-highlighting-0.png)
+![WPF RadGridView Remove Cell Background Highlighting When Searching as you Type](images/kb-gridview-customize-search-as-you-type-highlighting-0.png)
 
 ## See Also 
 

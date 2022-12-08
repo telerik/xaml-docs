@@ -14,7 +14,7 @@ __RadExpressionEditor__ allows you to benefit from the __Lambda expressions__ as
 
 While the C# Lambda looks like __item => item.Salary__, the equivalent expression in __RadExpressionEditor__ should be defined like: __Salary__.
  
-![WPF RadExpressionEditor ](images/RadExpressionEditor_Lambda.png)
+![WPF RadExpressionEditor Salary Lambda](images/RadExpressionEditor_Lambda.png)
 
 The __Result preview__ displays the result of the expression.
 
@@ -38,7 +38,7 @@ is equivalent to:
 {{endregion}}
 
 
-![WPF RadExpressionEditor ](images/RadExpressionEditor_NestedLambda.png)
+![WPF RadExpressionEditor Nested Lambda Expression](images/RadExpressionEditor_NestedLambda.png)
 
 In the example above each __Employee__ has a property __Tasks__ and each __Task__ on its own has a property of __SubTasks__. The __Result preview__ displays the count of the __SubTasks__ properties which has more than one items.
 

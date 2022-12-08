@@ -15,7 +15,7 @@ In order to customize the control template of RadNumericUpDown, you should get f
 
 Here is an image that describes the required items from the code-behind:
 
-![WPF RadNumericUpDown ](images/RadNumericUpDown_required_parts.png)
+![WPF RadNumericUpDown Required Parts](images/RadNumericUpDown_required_parts.png)
 
 #### __XAML__
 

@@ -40,4 +40,4 @@ Below is an example of RadPolarChart with PolarAreaSeries:
 	</telerikChart:RadPolarChart>
 {{endregion}}
 
-![WPF RadChartView ](images/radchartview-chart_series_polar.png)
+![WPF RadChartView with PolarAreaSeries](images/radchartview-chart_series_polar.png)

@@ -43,22 +43,22 @@ The sample pictures show these properties in action:
 
 *ItemOverlapPercent* = 0 and *ItemWidthPercent* = 100
 
-![ItemOverlapPercent=0 and ItemWidthPercent=100 ](images/RadChart_Features_Capture1.PNG)
+![WPF RadChart with ItemOverlapPercent 0 and ItemWidthPercent 100](images/RadChart_Features_Capture1.PNG)
 
 
 
 *ItemOverlapPercent* = 0 and *ItemWidthPercent* = 50
 
-![WPF RadChart ](images/RadChart_Features_Capture2.PNG)
+![WPF RadChart with ItemOverlapPercent 0 and ItemWidthPercent 50](images/RadChart_Features_Capture2.PNG)
 
 
 
 *ItemOverlapPercent* = -20 and *ItemWidthPercent* = 50
 
-![WPF RadChart ](images/RadChart_Features_Capture3.PNG)
+![WPF RadChart WPF RadChart with ItemOverlapPercent -20 and *ItemWidthPercent 50](images/RadChart_Features_Capture3.PNG)
 
 
 
 *ItemOverlapPercent* = 50 and *ItemWidthPercent* = 50
 
-![WPF RadChart ](images/RadChart_Features_Capture4.PNG)
+![WPF RadChart with ItemOverlapPercent 50 and ItemWidthPercent 50](images/RadChart_Features_Capture4.PNG)

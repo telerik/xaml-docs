@@ -294,4 +294,4 @@ Finally the XAML:
 
 The result:
 
-![WPF RadChart ](images/RadChart_Features_Sampling_01.png)
+![WPF RadChart  ](images/RadChart_Features_Sampling_01.png)

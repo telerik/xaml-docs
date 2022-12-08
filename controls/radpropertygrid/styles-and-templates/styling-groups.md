@@ -88,7 +88,7 @@ __3.__ Instantiate the Employee object and set it as the item of the PropertyGri
 
 At this point we have the following appearance:
 
-![WPF RadPropertyGrid ](images/RadPropertyGrid_groupstyle1.png)
+![WPF RadPropertyGrid Default Group Appearance](images/RadPropertyGrid_groupstyle1.png)
 
 You then need to proceed with creating the specific style and assign it to the control.
 
@@ -118,7 +118,7 @@ __5.__ Set the __Group Style__ property of the RadPropertyGrid:
 
 The effect on the appearance of the control will be the following:
 
-![WPF RadPropertyGrid ](images/RadPropertyGrid_groupstyle2.png)
+![WPF RadPropertyGrid with Custom Group Style](images/RadPropertyGrid_groupstyle2.png)
 
 ## See Also 
 

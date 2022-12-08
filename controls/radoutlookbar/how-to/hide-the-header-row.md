@@ -12,7 +12,7 @@ position: 0
 
 To hide the header row you can use the __HeaderVisibility__ property and set the value to __Collapsed__. 
 
-![WPF RadOutlookBar ](images/ob_headervisibility.png)
+![WPF RadOutlookBar Hide the Header Row](images/ob_headervisibility.png)
 
 #### __XAML__
 {{region xaml-radoutlookbar-how-to-hide-the-header-row_0}}

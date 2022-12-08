@@ -115,7 +115,7 @@ SplashScreenDataContext provides the following settings:
 	}
 {{endregion}}
 
-![WPF RadSplashScreen ](images/radsplashscreen-features-splashscreenmanager-0.png)
+![WPF RadSplashScreen Splash Screen Manager Visual Structure](images/radsplashscreen-features-splashscreenmanager-0.png)
 
 >tip You can see how to replace the RadSplashScreen and the SplashScreenDataContext in the [Getting Started]({%slug radsplashscreen-getting-started%}#showing-custom-user-control-in-the-splash-screen) article.
 

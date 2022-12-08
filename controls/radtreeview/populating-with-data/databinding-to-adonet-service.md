@@ -210,10 +210,10 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 		{{endregion}}
 		
 	Run your demo, the result can be seen on the next picture:
-	![WPF RadTreeView ](images/RadTreeView_PopulatingWithBindingToAdoNetService_010.PNG)
+	![WPF RadTreeView Binding to ADO NET Data](images/RadTreeView_PopulatingWithBindingToAdoNetService_010.PNG)
 
 	If you try to expand any of the loaded categories, the default load on demand animation will be started: 
-	![WPF RadTreeView ](images/RadTreeView_PopulatingWithBindingToAdoNetService_020.PNG)
+	![WPF RadTreeView Load On Demand Animation](images/RadTreeView_PopulatingWithBindingToAdoNetService_020.PNG)
 
 The next step is to handle the load on demand event. 
 
@@ -312,7 +312,7 @@ The next step is to handle the load on demand event.
 	> When there are no items to add, and you want to prevent the __LoadOnDemand__ event to fire again, set the __IsLoadOnDemandEnabled__ property to __False__ to the __RadTreeViewItem__ that has fired the __LoadOnDemand__ event.
 
 And here is the result:
-![WPF RadTreeView ](images/RadTreeView_PopulatingWithBindingToAdoNetService_030.PNG)
+![WPF RadTreeView Binding to Northwind Data Source](images/RadTreeView_PopulatingWithBindingToAdoNetService_030.PNG)
 
 ## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

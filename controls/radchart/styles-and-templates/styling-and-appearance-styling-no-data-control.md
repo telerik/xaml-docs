@@ -44,7 +44,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __N
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __NoDataControl__. Their names indicate to which part of the __NoDataControl__ appearance they are assigned.{% endif %}
 
-{% if site.site_name == 'Silverlight' %}![WPF RadChart ](images/RadChart_Styles_and_Templates_Styling_NoDataControl_01.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![WPF RadChart  ](images/RadChart_Styles_and_Templates_Styling_NoDataControl_01.png){% endif %}
 
 To apply the style to the real control, set it to the __NoDataControl__ property of the __ChartArea__.
 
@@ -68,10 +68,10 @@ To apply the style to the real control, set it to the __NoDataControl__ property
 
 Here is an example of the described resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-![WPF RadChart ](images/RadChart_Styles_and_Templates_Styling_NoDataControl_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![WPF RadChart  ](images/RadChart_Styles_and_Templates_Styling_NoDataControl_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
 And here is the snapshot of the result.{% endif %}{% if site.site_name == 'Silverlight' %}
-![WPF RadChart ](images/RadChart_Styles_and_Templates_Styling_NoDataControl_03.png){% endif %}
+![WPF RadChart  ](images/RadChart_Styles_and_Templates_Styling_NoDataControl_03.png){% endif %}
 
 Here is the final XAML for the __Style__after the modifications:
 

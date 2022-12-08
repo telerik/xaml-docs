@@ -50,7 +50,7 @@ The Multiplier property of the __Radial Scale__ allows applying a multiplier to 
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_RadialScale_multiplier.png)
+![WPF RadGauge with Multiplier](images/RadGauge_Features_RadialScale_multiplier.png)
 
 ## Scale Center
 
@@ -70,7 +70,7 @@ The __RadialScale__ allows you to specify towards which point in its parent cont
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_RadialScale_01.png)
+![WPF RadGauge Scale Center](images/RadGauge_Features_RadialScale_01.png)
 
 ## Label Rotation Mode
 
@@ -99,7 +99,7 @@ Here is an example of __RadialScale__ with a __LabelRotationMode__ of __Surround
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_RadialScale_02.png)
+![WPF RadGauge LabelRotationMode SurroundOut](images/RadGauge_Features_RadialScale_02.png)
 
 ## Scale Radius
 
@@ -126,7 +126,7 @@ You can specify the radius of the __RadialScale__. This is done via the __Radius
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_RadialScale_03.png)
+![WPF RadGauge Increased Radius](images/RadGauge_Features_RadialScale_03.png)
 
 ## Start Angle
 
@@ -146,7 +146,7 @@ The StartAngle property of the __Graphic Scale__ allows you to specify the angle
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_RadialScale_04.png)
+![WPF RadGauge Start Angle 0](images/RadGauge_Features_RadialScale_04.png)
 
 ## Sweep Angle
 
@@ -168,4 +168,4 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_RadialScale_05.png)
+![WPF RadGauge Sweep Angle 360](images/RadGauge_Features_RadialScale_05.png)

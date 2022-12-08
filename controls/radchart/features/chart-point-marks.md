@@ -16,28 +16,28 @@ Most of the charts show a point mark for each data point. __RadChart__ allows yo
 __RadChart__ supports eight predefined shapes that you can use to customize the appearance of the point marks for certain series like __Line__, __Spline__, __Area__, etc. The shapes are members of the __Telerik.Windows.Controls.Charting.MarkerShape__ enumeration:
 
 * __Circle__ (default) 
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_010.png)
+![WPF RadChart Circle Point Mark](images/RadChart_Features_ChartPointMarks_010.png)
 
 * __Diamond__
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_020.png)
+![WPF RadChart Diamond Point Mark](images/RadChart_Features_ChartPointMarks_020.png)
 
 * __Hexagon__
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_030.png)
+![WPF RadChart Hexagon Point Mark](images/RadChart_Features_ChartPointMarks_030.png)
 
 * __Square__
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_040.png)
+![WPF RadChart Square Point Mark](images/RadChart_Features_ChartPointMarks_040.png)
 
 * __SquareRounded__
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_050.png)
+![WPF RadChart SquareRounded Point Mark](images/RadChart_Features_ChartPointMarks_050.png)
 
 * __StarEightRay__
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_060.png)
+![WPF RadChart StarEightRay Point Mark](images/RadChart_Features_ChartPointMarks_060.png)
 
 * __StarFiveRay__
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_070.png)
+![WPF RadChart StarFiveRay Point Mark](images/RadChart_Features_ChartPointMarks_070.png)
 
 * __Triangle__
-![WPF RadChart ](images/RadChart_Features_ChartPointMarks_080.png)
+![WPF RadChart Triangle Point Mark](images/RadChart_Features_ChartPointMarks_080.png)
 
 
 To learn more about customizing the point marks read the [Styling the Point Marks]({%slug radchart-styling-and-appearance-styling-point-marks%}) topic. In case the provided customizations are not enough, you can completely re-template the point mark. See [here]({%slug radchart-templating-point-marks%}) for more information.

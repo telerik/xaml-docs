@@ -37,17 +37,17 @@ To use the feature and generate a sample chart, define an empty chart in XAML or
 
 2. Click onto the chart in the Visual Studio designer. This will show a small screen tip on the top right part of the chart.
 
-	![WPF RadChartView ](images/radchartview-features-design-time-support-0.png)
+	![WPF RadChartView Design Time Screen Tip](images/radchartview-features-design-time-support-0.png)
 	
 3. Click on the screen tip. This will open a dropdown with the chart's gallery. Those are the chart visualizations available to be created with the design-time feature. Select one of the gallery items - for example, "Bar Charts".
 
-	![WPF RadChartView ](images/radchartview-features-design-time-support-1.png)
+	![WPF RadChartView Design Time RadChartView Gallery](images/radchartview-features-design-time-support-1.png)
 	
-4. Select a chart from the gallery. This will show the confirmation view. Click Contunue.
+4. Select a chart from the gallery. This will show the confirmation view. Click Continue.
 
-	![WPF RadChartView ](images/radchartview-features-design-time-support-2.png)
+	![WPF RadChartView Design Time RadChartView Gallery Bar Charts](images/radchartview-features-design-time-support-2.png)
 	
-	![WPF RadChartView ](images/radchartview-features-design-time-support-3.png)
+	![WPF RadChartView Design Time RadChartView Gallery Continue](images/radchartview-features-design-time-support-3.png)
 
 This will generate the following Xaml:
 
@@ -93,7 +93,7 @@ This will generate the following Xaml:
 	</telerik:RadCartesianChart>
 {{endregion}}
 
-![WPF RadChartView ](images/radchartview-features-design-time-support-4.png)
+![WPF RadChartView Bar Chart in Designer](images/radchartview-features-design-time-support-4.png)
 
 > Based on the chosen visualization, the Xaml setup will vary.
 
@@ -101,7 +101,7 @@ This will generate the following Xaml:
 
 The chart's design-time adorner allows you to easily clean up the chart's contents leaving only the control's tag (for example, RadCartesianChart) in Xaml. To do so, open the RadChartView gallery and click the "Clear" button. 
 
-![WPF RadChartView ](images/radchartview-features-design-time-support-5.png)
+![WPF RadChartView Design Time Clear Setup](images/radchartview-features-design-time-support-5.png)
 
 ## See Also
 * [Chart Series Overview]({%slug radchartview-series-chartseries%})

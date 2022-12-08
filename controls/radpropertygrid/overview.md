@@ -21,7 +21,7 @@ RadPropertyGrid can be bound to an item with just a single line of code and you 
 {% include cta-panel-overview.html %}
 {% endif %}
 
- ![WPF RadPropertyGrid ](images/RadPropertyGrid_Overview.png)
+ ![WPF RadPropertyGrid Overview](images/RadPropertyGrid_Overview.png)
 
 
 

@@ -163,7 +163,7 @@ Here is the complete XAML:
 
 Here is the result:
 
-![WPF RadDateTimePicker ](images/dateTimePicker_how_to_use_in_dataForm_010.png)
+![WPF RadDateTimePicker in RadDataForm](images/dateTimePicker_how_to_use_in_dataForm_010.png)
 
 ## See Also
 

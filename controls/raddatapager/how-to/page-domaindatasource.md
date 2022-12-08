@@ -12,7 +12,7 @@ site_name: Silverlight
 # Page DomainDataSource
 
 
- ![WPF RadDataPager ](images/RadDataPager_How_To_PageDomainDataSource_01.png)
+ ![WPF RadDataPager Binding to DomainDataSource(images/RadDataPager_How_To_PageDomainDataSource_01.png)
 
 If you are using the __WCF RIA Services__ and the __DomainDataSource,__ you probably know that the [DomainDataSource.Data](http://msdn.microsoft.com/en-us/library/system.windows.controls.domaindatasource.data%28VS.91%29.aspx) property is in fact an instance of the [DomainDataSourceView](http://msdn.microsoft.com/en-us/library/system.windows.controls.ria.domaindatasourceview%28VS.91%29.aspx) class. This class implements a handful of useful interfaces:
 

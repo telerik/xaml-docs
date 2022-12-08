@@ -10,7 +10,7 @@ position: 0
 
 # Key Features
  
-![WPF RadDocking ](images/RadDocking_GeneralInformation_KeyFeatures_010.png)
+![WPF RadDocking Key Features](images/RadDocking_GeneralInformation_KeyFeatures_010.png)
 
 This is a list with short descriptions of the top-of-the line features of Telerik's __RadDocking__ control.
 

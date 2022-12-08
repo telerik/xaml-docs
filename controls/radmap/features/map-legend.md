@@ -105,7 +105,7 @@ Here is a snapshot of the result.
 
 >tip To learn how to configure the appearance of the __MapLegend__ and its items read the [next](#configuring-the-map-legend) section.
 
-![WPF RadMap ](images/RadMap_Features_MapLegend_01.png)
+![WPF RadMap Map Legend](images/RadMap_Features_MapLegend_01.png)
 
 ## Configuring the Map Legend
 
@@ -153,7 +153,7 @@ Here is an example of a __MapLegend__ configured via these properties:
 
 Here is a snapshot of the result:
 
-![WPF RadMap ](images/RadMap_Features_MapLegend_02.png)
+![WPF RadMap Configured Map Legend](images/RadMap_Features_MapLegend_02.png)
 
 ## See Also
  * [Shape Reader]({%slug radmap-features-information-layer-shape-reder%})

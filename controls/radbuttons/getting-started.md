@@ -43,7 +43,7 @@ Here is an example of a __RadButton__ that executes some logic when it is clicke
 	End Sub
 {{endregion}}
 
-![WPF RadButtons ](images/RadButtons_Getting_Started_01.png)
+![WPF RadButtons Simple Button](images/RadButtons_Getting_Started_01.png)
 
 ## RadPathButton
 
@@ -97,7 +97,7 @@ Here is an example of a __RadDropDownButton__ that contains a list of actions in
 	</telerik:RadDropDownButton>
 {{endregion}}
 
-![WPF RadButtons ](images/RadButtons_Getting_Started_02.png)
+![WPF RadButtons Dropdown Button](images/RadButtons_Getting_Started_02.png)
 
 ## RadRadioButton
 
@@ -119,7 +119,7 @@ Here is an example of several __RadRadioButtons__ placed in two groups.
 	</StackPanel>
 {{endregion}}
 
-![WPF RadButtons ](images/RadButtons_Getting_Started_03.png)
+![WPF RadButtons Radio Buttons](images/RadButtons_Getting_Started_03.png)
 
 ## RadSplitButton
 
@@ -140,7 +140,7 @@ Here is an example of a __RadSplitButton__ definition, where a __ListBox__ contr
 	</telerik:RadSplitButton>
 {{endregion}}
 
-![WPF RadButtons ](images/RadButtons_Getting_Started_04.png)
+![WPF RadButtons Split Button](images/RadButtons_Getting_Started_04.png)
 
 ## RadToggleButton
 
@@ -160,7 +160,7 @@ Here is an example of a __RadToggleButton__ that toggles the "Monthly Newsletter
 	</StackPanel>
 {{endregion}}
 
-![WPF RadButtons ](images/RadButtons_Getting_Started_05.png)
+![WPF RadButtons Toggle Button](images/RadButtons_Getting_Started_05.png)
 
 ## RadToggleSwitchButton
 
@@ -173,7 +173,7 @@ Here is an example of a __RadToggleSwitchButton__ that switches between __ON__ a
 	</Grid>
 {{endregion}}
 
-![WPF RadButtons ](images/RadButtons_Getting_Started_06.png)
+![WPF RadButtons Toggle Switch Button](images/RadButtons_Getting_Started_06.png)
 
 ## Setting a Theme
 

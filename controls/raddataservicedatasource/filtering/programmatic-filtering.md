@@ -40,7 +40,7 @@ For example:
 
 On running the application, the following grid will be displayed:
 
-![WPF RadDataServiceDataSource ](images/RadDataServiceDataSource_ProgrammaticFiltering2.png)
+![WPF RadDataServiceDataSource Programmatic Filtering](images/RadDataServiceDataSource_ProgrammaticFiltering2.png)
 
 
 
@@ -78,4 +78,4 @@ You can build infinitely nested hierarchies of filters by using the __CompositeF
 
 Once the application is loaded, you will see the prefiltered grid: 
 
-![WPF RadDataServiceDataSource ](images/RadDataServiceDataSource_ProgrammaticFiltering.png)
+![WPF RadDataServiceDataSource Filtered with CompositeFilterDescriptor](images/RadDataServiceDataSource_ProgrammaticFiltering.png)

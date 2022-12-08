@@ -17,7 +17,7 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 ## Screen Tips - Fundamentals
 
 __Screen Tip__ is a UI feature in which a small window appears when the __mouse cursor__ is hovered over an icon or a ribbon element (command). The __popup__ window will provide details that explain the command's function. In some instances, though, the __Screen Tip__ will display only the item's name. When the mouse is moved away from the ribbon element, the __Screen Tip__ will disappear from view.
-![WPF RadRibbonView ](images/RadRibbonView_ScreenTip_Overview.png)
+![WPF RadRibbonView Screen Tips Overview](images/RadRibbonView_ScreenTip_Overview.png)
 
 __RadRibbonView__ fully supports the Microsoft Office guidelines for screen tip implementation. You can set a screen tip to any element (command) in the __RadRibbonView__.				
 
@@ -31,7 +31,7 @@ The __ScreenTip__ is a __ToolTip__ (it derives from __ToolTip__), which consists
 
 * __Icon__ - specifies the image of the screen tip.
 
-![WPF RadRibbonView ](images/RadRibbonView_ScreenTip_Elements.png)
+![WPF RadRibbonView Screen Tip Elements](images/RadRibbonView_ScreenTip_Elements.png)
 
 ## Adding Screen Tip
 
@@ -72,7 +72,7 @@ The same operation can be done in the code-behind, too. You need to invoke the _
 {{endregion}}
 
 You can see a screen tip with only __Title__ property set like it is on the next snapshot.
-![WPF RadRibbonView ](images/RadRibbonView_ScreenTip_Title.png)
+![WPF RadRibbonView Screen Tip Title](images/RadRibbonView_ScreenTip_Title.png)
 
 Setting Description
 
@@ -106,7 +106,7 @@ The same operation can be done in the code-behind, too. You need to invoke the _
 {{endregion}}
 
 You can see a screen tip with __Title__ and __Description__ properties set like on the next snapshot.
-![WPF RadRibbonView ](images/RadRibbonView_ScreenTip_Decription.png)
+![WPF RadRibbonView Screen Tip Title and Description](images/RadRibbonView_ScreenTip_Decription.png)
 
 ### Setting Icon
 
@@ -143,7 +143,7 @@ The same operation can be done in the code-behind, too. You need to invoke the _
 {{endregion}}
 
 The result is shown on the next snapshot.
-![WPF RadRibbonView ](images/RadRibbonView_ScreenTip_Icon.png)
+![WPF RadRibbonView Screen Tip Title Description and Icon](images/RadRibbonView_ScreenTip_Icon.png)
 
 The __RadRibbonView__ is a complex control and the __screen tips__ are only a small part of it. The __RadRibbonView__ consists of various elements such as:
 * [Application Menu]({%slug radribbonview-applicationmenu%})

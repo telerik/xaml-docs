@@ -57,7 +57,7 @@ In order to add new combo box items to a __RadComboBox__ control, you have to pe
 
 The result is shown on the image below:
 
-![WPF RadComboBox ](images/RadComboBox_PopulatingWithData_InCodeBehind_010.png)
+![WPF RadComboBox with Items Defined in Code-Behind](images/RadComboBox_PopulatingWithData_InCodeBehind_010.png)
 
 >tipConsider declaring combo box items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 

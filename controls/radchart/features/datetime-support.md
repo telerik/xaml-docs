@@ -135,7 +135,7 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 
 As a result, the chart will look like the one on the snapshot:
  
-      ![WPF RadChart ](images/RadChart_Features_DateTime_Support_01.png)
+      ![WPF RadChart with DateTime axis](images/RadChart_Features_DateTime_Support_01.png)
 
 ## Using DataPoint
 
@@ -251,7 +251,7 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 
 The image below shows the chart with defined using __DataPoints__:
  
-      ![WPF RadChart ](images/RadChart_Features_DateTime_Support_10.png)
+      ![WPF RadChart with DateTime Axis and DataPoints](images/RadChart_Features_DateTime_Support_10.png)
 
 Note how the values are defined in the XAML - this is the OLE Automation equivalent of the dates. In the code behind, __ToOADate()__ method is used to convert the dates and then the value is set to the __XValue__ property of the __DataPoint__ class.
 

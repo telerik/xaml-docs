@@ -14,7 +14,7 @@ When certain dates are to be hidden or should not be selected by the user, the C
 
 The following timeline shows how the selection and display ranges should relate to each other. All dates should fall between the __MinDate__ and __MaxDate__, If __DisplayDateStart__/__End__ are set, the __SelectableDates__ range and all the selected dates must fall within it.
 
-![WPF RadCalendar ](images/calendar_selectionRanges.png)
+![WPF RadCalendar Selection Ranges](images/calendar_selectionRanges.png)
 
 In the following example the Calendar has DisplayDateStart set to 6 Aug, while the SelectableDateStart is 14 Aug:
 

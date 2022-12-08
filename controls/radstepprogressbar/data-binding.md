@@ -161,7 +161,7 @@ The component's `ItemsSource` property can be assigned to a collection of any ob
 
 __Data bound StepProgressBar control__  
 
-![WPF RadStepProgressBar ](images/stepprogressbar-data-binding-0.png)
+![WPF RadStepProgressBar Bound to Data](images/stepprogressbar-data-binding-0.png)
 
 The previous example shows how to data bind the ItemsSource and SelectedItem of the control. This will populate it with data. The SelectedItem binding can be used in a separate visual element if you need to connect the selected step with a separate view.
 

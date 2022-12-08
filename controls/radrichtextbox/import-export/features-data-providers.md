@@ -189,7 +189,7 @@ __Example 5__ shows using __RadRichTextBox__ in __ItemsControl__. For each item 
 
 Here is a sample snapshot:
 
-![WPF RadRichTextBox ](images/RadRichTextBox_Features_DataProviders_01.png)
+![WPF RadRichTextBox Binding with Dynamic Data](images/RadRichTextBox_Features_DataProviders_01.png)
 
 ## Settings
 

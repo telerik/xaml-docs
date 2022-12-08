@@ -199,7 +199,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 4 . The final result should look like the snapshot below:
 
-![WPF RadChart ](images/RadChart_PopulatingWithData_SMItemsSource.png)
+![WPF RadChart  ](images/RadChart_PopulatingWithData_SMItemsSource.png)
 
 
 

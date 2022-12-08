@@ -42,4 +42,4 @@ Here is an example of a __Marker__ definition:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_Indicators_Marker_01.png)
+![WPF RadGauge Marker](images/RadGauge_Features_Indicators_Marker_01.png)

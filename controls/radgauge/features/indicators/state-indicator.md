@@ -64,4 +64,4 @@ As the indicator should display the state of the current value, you can bind it 
 
 Here is a snapshot of the result:
 
-![WPF RadGauge ](images/RadGauge_Features_BarIndicators_StateIndicator_01.png)
+![WPF RadGauge with State Indicator](images/RadGauge_Features_BarIndicators_StateIndicator_01.png)

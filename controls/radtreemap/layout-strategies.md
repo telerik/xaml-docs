@@ -19,11 +19,11 @@ Currently there are two Layout Strategies to visualize the data:
 
 * __Squarified__ - creates rectangles with best aspect ratio.
 
-	![WPF RadTreeMap ](images/radtreemap_squarified.PNG) 
+	![WPF RadTreeMap Squarified Layout Strategy](images/radtreemap_squarified.PNG) 
 	
 * __Slice and Dice__ - creates rectangles with high aspect ratio and displays them sorted either horizontally or vertically. 
 
-	![WPF RadTreeMap ](images/radtreemap_slice_and_dice.PNG)
+	![WPF RadTreeMap Slice and Dice Layout Strategy](images/radtreemap_slice_and_dice.PNG)
 
 The default one is Slice and Dice.
 

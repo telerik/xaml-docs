@@ -12,7 +12,7 @@ position: 1
 
 To start recording a video you can press the "Start recording" button or call the `StartRecording` method of the `RadWebCam` control. 
 
-![WPF RadWebCam ](images/radwebcam-features-recording-video-0.png)
+![WPF RadWebCam Start Recording Video Button](images/radwebcam-features-recording-video-0.png)
 
 To enable video recording set the `RecordingFilePath` property of the control. This is the path to the video where the recording will be stored.
 
@@ -48,7 +48,7 @@ The control allows you to replace the default elapsed date-time format. To do th
 
 __Elapsed time default format__
 
-![WPF RadWebCam ](images/radwebcam-features-recording-video-1.png)
+![WPF RadWebCam Elapsed Time Default Format](images/radwebcam-features-recording-video-1.png)
 
 #### __[XAML] Set VideoRecordingElapsedTimeFormat in XAML__
 {{region radwebcam-features-recording-video-3}}
@@ -62,7 +62,7 @@ __Elapsed time default format__
 
 __Elapsed time custom format__
 
-![WPF RadWebCam ](images/radwebcam-features-recording-video-2.png)
+![WPF RadWebCam Elapsed Time Custom Format](images/radwebcam-features-recording-video-2.png)
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

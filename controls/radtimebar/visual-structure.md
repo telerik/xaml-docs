@@ -12,7 +12,7 @@ position: 2
 
 This section defines the terms and concepts used in the scope of the __RadTimeBar__ control. They can be helpful when contacting with the support service in order to describe your issue better. Below you can see snapshots and explanations of the main visual elements of the control:
 
-![WPF RadTimeBar ](images/radtimebar_timeBarStructure_fluent.png)
+![WPF RadTimeBar Visual Structure](images/radtimebar_timeBarStructure_fluent.png)
 
 __Viewport__: The rectangular region representing the time span between __VisiblePeriodStart__ and __VisiblePeriodEnd__. 
 
@@ -24,20 +24,20 @@ __Time Ruler__: The area where the time periods are shown.
 
 __SelectionThumb__: The Selection thumb is a visual element, which is used to handle the selection of a time span in the TimeBar control. It is positioned according to the *SelectionStart* and *SelectionEnd* properties of the __RadTimeBar__.
 
-![WPF RadTimeBar ](images/radtimebar_ThumbLeftHandle_fluent.png)
+![WPF RadTimeBar Selection Thumbs](images/radtimebar_ThumbLeftHandle_fluent.png)
 
 __Selection Visibility Indicator__: This visual element indicates (as its name implies) where the SelectionThumb is and whether it is in the visible period of the time span.
 
 __Selection Indicator__: Indicates whether the Selected range is on the right or left side of the current visible time span.
 
-![WPF RadTimeBar ](images/radtimebar_visual-structure_fluent.PNG)
+![WPF RadTimeBar Selection Indicators](images/radtimebar_visual-structure_fluent.PNG)
 
 The Selection thumb can be resized in both directions using the mouse. Clicking in the middle of the selection thumb and dragging it moves the entire selection left or right.
 
-![WPF RadTimeBar ](images/radtimebar_ThumbSelect_fluent.png)
+![WPF RadTimeBar Thumb Selection](images/radtimebar_ThumbSelect_fluent.png)
 
 Selecting a time interval can be done also by creating a selection region with the mouse over the time bar like in the image below:
 
-![WPF RadTimeBar ](images/radtimebar_itemSelection_fluent.png)
+![WPF RadTimeBar Interval Selection](images/radtimebar_itemSelection_fluent.png)
 
 

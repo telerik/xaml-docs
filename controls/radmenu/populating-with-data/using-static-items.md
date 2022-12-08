@@ -35,9 +35,9 @@ In order to add items you need to use the __RadMenu's Items__ property. The __It
 	</telerik:RadMenu>
 {{endregion}}
 
-#### __Fugure 1: RadMenu with static top-level items__
+#### __Figure 1: RadMenu with static top-level items__
 
-![WPF RadMenu ](images/RadMenu_Populating_with_Data_Using_Static_Items_01.png)
+![WPF RadMenu with Static Top Level Items](images/RadMenu_Populating_with_Data_Using_Static_Items_01.png)
 
 Each of the __RadMenuItems__ can have child items that are defined in the same way. __Example 3__ illustrates how to add submenu items to one of the top-level items.
 

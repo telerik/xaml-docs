@@ -132,7 +132,7 @@ TouchManager exposes the following methods:
 ## Touch Indicator
 
 TouchManager visualizes an animated touch indicator when there is a tap and hold gesture performed on the screen. 
-![WPF ](images/touchmanager_features_01.png)
+![WPF Touch Manager Touch Indicator](images/touchmanager_features_01.png)
 
 > The indicator supports theming and it will have a different appearance in the different themes.
 

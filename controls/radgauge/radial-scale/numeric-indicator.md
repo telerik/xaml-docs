@@ -44,7 +44,7 @@ To add numeric indicator to the scale you have to include NumericIndicator eleme
 
 Every digital cell in the indicator is defined by a corresponding __SevenSegsNumberPosition__ element. The topmost element in the list define rightmost digital cell.
 
-![WPF RadGauge RadialScale NumericIndicator SevenSegsNumberPosition](images/RadialScaleNumericIndicator.png)
+![{{ site.framework_name }} RadGauge RadialScale NumericIndicator SevenSegsNumberPosition](images/RadialScaleNumericIndicator.png)
 
 The Numeric indicator supports the following features:
 

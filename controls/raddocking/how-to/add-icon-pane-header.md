@@ -38,7 +38,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking Sample Declaration](images/RadDocking_HowTo_AddPaneHeaderIcon_010.png)
+![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_HowTo_AddPaneHeaderIcon_010.png)
 
 In order to add an icon to the __RadPane's__ header, you should create a custom data template and set it to the __HeaderTemplate__ property of the __RadPane__. Consider the following example.
 
@@ -86,7 +86,7 @@ Set the created data template to the __HeaderTemplate__ property of the __RadPan
 
 Here is the final result:
 
-![WPF RadDocking with Pane Header Icons](images/RadDocking_HowTo_AddPaneHeaderIcon_020.png)
+![{{ site.framework_name }} RadDocking with Pane Header Icons](images/RadDocking_HowTo_AddPaneHeaderIcon_020.png)
 
 ## See Also
 

@@ -76,7 +76,7 @@ In the previous example, the actual data source declaration and initialization a
 
 Things are getting more complicated in the cases when you are using __ItemTemplate__ that defines your item layout. For example, if you have an __ItemTemplate__ like the one shown below, there is no straight-forward logic what __DisplayMemberPath__ should match as there are multiple members that are displayed.
 
-![WPF RadComboBox AutoComplete with Custom ItemTemplate](images/RadComboBox_Features_AutoComplete_030.png)
+![{{ site.framework_name }} RadComboBox AutoComplete with Custom ItemTemplate](images/RadComboBox_Features_AutoComplete_030.png)
 
 ### Using TextSearch.TextPath
 

@@ -30,7 +30,7 @@ __BusyContent__ property sets the loading message while the indicator is active 
 
 Here is the result:
 
-![WPF RadBusyIndicator Custom Busy Content](images/radbusyindicator_features_busycontent_0.png)
+![{{ site.framework_name }} RadBusyIndicator Custom Busy Content](images/radbusyindicator_features_busycontent_0.png)
 
 ## Setting BusyContentTemplate property
 
@@ -194,7 +194,7 @@ In the code behind you have to:
 
 Here is the final result:
 
-![WPF RadBusyIndicator Custom Busy Content Template](images/radbusyindicator_styles_and_templates_busycontenttemplate_010.png)
+![{{ site.framework_name }} RadBusyIndicator Custom Busy Content Template](images/radbusyindicator_styles_and_templates_busycontenttemplate_010.png)
 
 ## See Also
 

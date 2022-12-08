@@ -34,7 +34,7 @@ position: 3
 
 * __ItemTemplateSelector__ - template selector for the item
 
-![WPF RadOutlookBar Different Templates](images/outloobar_templates.png)
+![{{ site.framework_name }} RadOutlookBar Different Templates](images/outloobar_templates.png)
 
 ## See Also
  * [Getting Started]({%slug radoutlookbar-getting-started%})

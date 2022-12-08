@@ -13,7 +13,7 @@ position: 3
 
 Let's start with the data load lifecycle:
 
-![WPF RadDomainDataSource Data Load Lifecycle](images/dds_LoadingData.png)
+![{{ site.framework_name }} RadDomainDataSource Data Load Lifecycle](images/dds_LoadingData.png)
 
 ## Triggering a Load
 

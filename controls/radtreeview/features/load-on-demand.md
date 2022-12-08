@@ -33,7 +33,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 	</telerik:RadTreeView>
 {{endregion}}
 
-![WPF RadTreeView Sample Structure](images/RadTreeView_FeaturesLoadOnDemand_001.PNG)
+![{{ site.framework_name }} RadTreeView Sample Structure](images/RadTreeView_FeaturesLoadOnDemand_001.PNG)
 
 ## Enable Load on Demand Declaratively 
 
@@ -72,7 +72,7 @@ The same effect can be achieved if you set the __IsLoadOnDemandEnabled__ propert
 	End Sub
 {{endregion}}
 	
-![WPF RadTreeView Is Load On Demand Enabled](images/RadTreeView_FeaturesLoadOnDemand_010.PNG)
+![{{ site.framework_name }} RadTreeView Is Load On Demand Enabled](images/RadTreeView_FeaturesLoadOnDemand_010.PNG)
 
 ## Events 
 

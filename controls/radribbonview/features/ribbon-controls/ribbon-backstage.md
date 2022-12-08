@@ -49,7 +49,7 @@ In order to add a backstage to your __RadRibbonView__ control you need to set th
 {{endregion}}
 
 #### __Figure 1: RadRibbonBackstage default appearance__
-![WPF RadRibbonView RadRibbonBackstage default appearance](images/RadRibbonView_Backstage_Empty.png)
+![{{ site.framework_name }} RadRibbonView RadRibbonBackstage default appearance](images/RadRibbonView_Backstage_Empty.png)
 
 ## Adding Backstage Items
 
@@ -86,11 +86,11 @@ The __Backstage__ control derives from the __RadTabControl__. That fact allows y
 * __BackstagePosition__: Specifies where the backstage will be positioned when opened. The backstage position is an enumeration of type Telerik.Windows.Controls.RibbonView.BackstagePosition and it accepts the following values:
 	* __Office2010__: The backstage will be positioned under the tab strip area
 	
-		#### __Figure 2: BackstagePosition property set to Office2010__	![WPF RadRibbonView BackstagePosition property set to Office2010](images/RadRibbonView_Backstage_BackstagePosition_Office2010.PNG)	
+		#### __Figure 2: BackstagePosition property set to Office2010__	![{{ site.framework_name }} RadRibbonView BackstagePosition property set to Office2010](images/RadRibbonView_Backstage_BackstagePosition_Office2010.PNG)	
 
 	* __Office2013__: The backstage will be positioned on top of the tab strip area
 	
-		#### __Figure 3: BackstagePosition property set to Office2013__	![WPF RadRibbonView BackstagePosition property set to Office2013](images/RadRibbonView_Backstage_BackstagePosition_Office2013.PNG)
+		#### __Figure 3: BackstagePosition property set to Office2013__	![{{ site.framework_name }} RadRibbonView BackstagePosition property set to Office2013](images/RadRibbonView_Backstage_BackstagePosition_Office2013.PNG)
 
 	>The recommended __BackstagePosition__ for the themes from OfficeBlack to Windows8Touch including from the [Available Themes]({%slug common-styling-appearance-available-themes%}) list is the __Office2010__.  If the property is set to __Office2013__ for any of the themes before Office2013, the close button of the backstage will __not__ be displayed.
  
@@ -361,7 +361,7 @@ The __BackstageItem__ exposes the following properties that allow you to further
 {{endregion}}
 
 #### __Figure 4: Customized RadRibbonBackstage__
-![WPF RadRibbonView Customized RadRibbonBackstage](images/RadRibbonView_Backstage_Sample.png)
+![{{ site.framework_name }} RadRibbonView Customized RadRibbonBackstage](images/RadRibbonView_Backstage_Sample.png)
 
 The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that allows you to define the area over which the __Backstage__ will be displayed:
 
@@ -396,7 +396,7 @@ The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that al
 {{endregion}}
 
 #### __Figure 5: RadRibbonView with BackstageClippingElement property set__
-![WPF RadRibbonView RadRibbonView with BackstageClippingElement property set](images/RadRibbonView_BackstageClippingElement_Sample.PNG)
+![{{ site.framework_name }} RadRibbonView RadRibbonView with BackstageClippingElement property set](images/RadRibbonView_BackstageClippingElement_Sample.PNG)
 	
 ## Hide Backstage Close Button
 
@@ -414,7 +414,7 @@ To hide the close button, set the __CloseButtonVisibility__ property of __RadRib
 {{endregion}}
 
 #### __Figure 5: Hidden backstage close button in Fluent theme__
-![WPF RadRibbonView Hidden backstage close button in Fluent theme](images/RadRibbonView_Backstage_Hidden_Close_Button.PNG)
+![{{ site.framework_name }} RadRibbonView Hidden backstage close button in Fluent theme](images/RadRibbonView_Backstage_Hidden_Close_Button.PNG)
 	
 The __RadRibbonView__ is a complex control and the __backstage menu__ is only a small part of it. The __RadRibbonView__ consists of various elements such as:
 * [Application Menu]({%slug radribbonview-applicationmenu%})

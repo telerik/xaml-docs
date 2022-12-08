@@ -89,7 +89,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 	{% endif %}
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
-![WPF RadTreeView Sample Declaration](images/RadTreeView_TemplatingItemContainerStyleSelector_001.PNG)
+![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_TemplatingItemContainerStyleSelector_001.PNG)
 
 ## ItemContainerStyleSelector 
 
@@ -283,7 +283,7 @@ The next step is to create a selector where the logic about selecting the right 
 			ItemContainerStyleSelector="{StaticResource myContainerStyleSelector}"/>
 		{{endregion}}
 
-![WPF RadTreeView Item Container Style Selector](images/RadTreeView_TemplatingItemContainerStyleSelector_010.PNG)
+![{{ site.framework_name }} RadTreeView Item Container Style Selector](images/RadTreeView_TemplatingItemContainerStyleSelector_010.PNG)
 
 ## See Also
  * [ItemContainerStyle]({%slug radtreeview-styling-and-appearance-item-container-style%})

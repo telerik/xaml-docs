@@ -19,7 +19,7 @@ Do you have need of building complicated navigation systems which perform with t
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadTreeView Overview](images/RadTreeView_Overview_030.png)
+![{{ site.framework_name }} RadTreeView Overview](images/RadTreeView_Overview_030.png)
 
 ## Key Features
 

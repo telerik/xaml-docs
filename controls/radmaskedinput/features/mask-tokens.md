@@ -46,7 +46,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	</StackPanel>
 {{endregion}}
 
-![WPF RadMaskedInput Standard Mask Tokens](images/radmaskedinput_features_tokens_standard.png)
+![{{ site.framework_name }} RadMaskedInput Standard Mask Tokens](images/radmaskedinput_features_tokens_standard.png)
 
 ### 2. Numeric format codes:
 
@@ -86,7 +86,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	</StackPanel>
 {{endregion}}
 
-![WPF RadMaskedInput Numeric Mask Tokens](images/radmaskedinput_features_tokens_numeric.png)
+![{{ site.framework_name }} RadMaskedInput Numeric Mask Tokens](images/radmaskedinput_features_tokens_numeric.png)
 
 >An explanation about the default numeric format strings can be found in this [MSDN article](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings).
 
@@ -148,7 +148,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	</StackPanel>
 {{endregion}}
 
-![WPF RadMaskedInput DateTime Mask Tokens](images/radmaskedinput_features_tokens_datetime.png)
+![{{ site.framework_name }} RadMaskedInput DateTime Mask Tokens](images/radmaskedinput_features_tokens_datetime.png)
 
 >An explanation about the default DateTime format strings can be found in this [MSDN article](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
@@ -235,7 +235,7 @@ When standard date codes are too restrictive, you can create your own custom for
 	</StackPanel>
 {{endregion}}
 
-![WPF RadMaskedInput Custom DateTime Mask Tokens](images/radmaskedinput_features_tokens_datetime_custom.png)
+![{{ site.framework_name }} RadMaskedInput Custom DateTime Mask Tokens](images/radmaskedinput_features_tokens_datetime_custom.png)
 
 >If you use the __yy__ mask token, you need to keep in mind that the two letter year section will represent date time objects between the years of 1929 and 2029. Basically the __RadMaskedDateTimeInput__ control uses the __Culture__ settings and specifically the __Calendar.TwoDigitYearMax__ property to distinguish the year that is entered in the control based on its last two digits. You can find more information [here](http://msdn.microsoft.com/en-us/library/system.globalization.calendar.twodigityearmax.aspx).				
 
@@ -252,7 +252,7 @@ When standard date codes are too restrictive, you can create your own custom for
 
 >important Please note that the  "<" and ">" must be escaped in XAML, otherwise  the Visual Studio might throw an error.		  
 
-![WPF RadMaskedInput Modifier Tokens](images/radmaskedinput_features_tokens_modifier.png)
+![{{ site.framework_name }} RadMaskedInput Modifier Tokens](images/radmaskedinput_features_tokens_modifier.png)
 
 >When you customize a mask you should keep in mind that the Mask is basically structured like so:
 > __MaskTokenN.F__

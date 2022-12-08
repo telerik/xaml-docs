@@ -21,7 +21,7 @@ By default the __RadUpload__ doesn’t display the selected __RadUploadItems__. 
 	<telerik:RadUpload x:Name="radUpload" SelectionVisibility="Visible"/>
 {{endregion}}
 
-![WPF RadUpload Selection Visible](images/upload_single_selection.png)
+![{{ site.framework_name }} RadUpload Selection Visible](images/upload_single_selection.png)
 
 The __RadUpload__ control also lets users select single or multiple __RadUploadItems__ by simply setting the __SelectionMode__ property. The __SelectionMode__ property is a __SelectionMode__ enumeration which exposes the following members:
 
@@ -29,4 +29,4 @@ The __RadUpload__ control also lets users select single or multiple __RadUploadI
 
 * __Multiple__ and __Extended__ - use these values when you want the user to be able to select multiple items at one time by holding down the control key and clicking multiple items with the mouse or by using the keyboard. A second click on a selected item will unselect that item.
 
-![WPF RadUpload Multiple Selection](images/upload_multiple_selection.png)
+![{{ site.framework_name }} RadUpload Multiple Selection](images/upload_multiple_selection.png)

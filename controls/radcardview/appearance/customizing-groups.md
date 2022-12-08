@@ -24,7 +24,7 @@ To change the __visibility__ of the [group panel]({%slug radcardview-visual-stru
 {{endregion}}
 
 #### Figure 1: Hidden group panel
-![WPF RadCardView Hidden group panel](images/radcardview-appearance-customizing-groups-0.png)
+![{{ site.framework_name }} RadCardView Hidden group panel](images/radcardview-appearance-customizing-groups-0.png)
 
 To change the __background color__ of the group panel, set the __GroupPanelBackground__ property of RadCardView.
 
@@ -40,7 +40,7 @@ To __disable the sorting__ of groups with the [group member button]({%slug radca
 {{endregion}}
 
 #### Figure 2: Changed group panel background
-![WPF RadCardView Changed group panel background](images/radcardview-appearance-customizing-groups-1.png)
+![{{ site.framework_name }} RadCardView Changed group panel background](images/radcardview-appearance-customizing-groups-1.png)
 
 Additionally, the element that represents the group panel can be customized using the __GroupPanelStyle__ property.
 
@@ -57,7 +57,7 @@ Additionally, the element that represents the group panel can be customized usin
 The "cardView:" namespace points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`
 
 #### Figure 3: Customized group panel style
-![WPF RadCardView Customized group panel style](images/radcardview-appearance-customizing-groups-2.png)
+![{{ site.framework_name }} RadCardView Customized group panel style](images/radcardview-appearance-customizing-groups-2.png)
 
 To customize the [group member button]({%slug radcardview-visual-structure%}) elements in the group panel, set the __GroupPanelItemStyle__ property.
 
@@ -71,7 +71,7 @@ To customize the [group member button]({%slug radcardview-visual-structure%}) el
 {{endregion}}
 
 #### Figure 4: Customized group panel items
-![WPF RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-3.png)
+![{{ site.framework_name }} RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-3.png)
 
 ## Group Item Indentation
 
@@ -83,7 +83,7 @@ To set the group items horizontal offset (indentation), set the __GroupItemInden
 {{endregion}}
 
 #### Figure 5: Customized group panel items
-![WPF RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-4.png)
+![{{ site.framework_name }} RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-4.png)
 
 ## See Also  
 * [Data Binding]({%slug radcardview-populating-with-data-data-binding%})

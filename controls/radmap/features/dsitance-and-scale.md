@@ -61,7 +61,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadMap Distance and Scale](images/RadMap_Features_DistancAndScale_01.png)
+![{{ site.framework_name }} RadMap Distance and Scale](images/RadMap_Features_DistancAndScale_01.png)
 
 ## See Also
  * [Navigation]({%slug radmap-features-navigation%})

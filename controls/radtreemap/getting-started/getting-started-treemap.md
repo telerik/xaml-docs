@@ -125,7 +125,7 @@ The __ChildrenPath__ is the path to the property that holds the children's colle
 
 __RadTreeMap__  
 
-![WPF RadTreeMap with ItemsSource](images/radtreemap-getting-started-treemap-0.png)
+![{{ site.framework_name }} RadTreeMap with ItemsSource](images/radtreemap-getting-started-treemap-0.png)
 
 >tip Avoid inserting RadTreeMap in panels that measure its children with Infinity. In this case, the control cannot properly measure and arrange its child visuals. Examples for panels that measure the control with Infinity size are StackPanel, ScrollViewer or a Grid's Row/ColumnDefinition with its size (Width or Height) set to Auto. Instead, use panels that measure its children with the available space.
 

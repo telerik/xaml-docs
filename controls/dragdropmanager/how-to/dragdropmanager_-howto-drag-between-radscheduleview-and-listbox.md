@@ -172,4 +172,4 @@ Finally, we add a ScheduleView and bind it to a sample data:
 
 The resultant application should look as follows:
 
-![WPF Drag Drop ScheduleView to ListBox](images/DragDropManager_ScheduleViewToListBox.png)
+![{{ site.framework_name }} Drag Drop ScheduleView to ListBox](images/DragDropManager_ScheduleViewToListBox.png)

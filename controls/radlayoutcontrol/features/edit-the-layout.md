@@ -36,7 +36,7 @@ Setting the property to True will allow you to select the visual elements and gr
 The manipulation pane allows control over the arrangement of the selected element. When the edit mode is enabled you can select the elements in the layout control. The pane will be displayed horizontally centered under the selected element.
 
 #### __Figure 1: RadLayoutControl Manipulation Pane__
-![WPF RadLayoutControl RadLayoutControl Manipulation Pane](images/layoutcontrol-features-edit-the-layout-01.png)
+![{{ site.framework_name }} RadLayoutControl RadLayoutControl Manipulation Pane](images/layoutcontrol-features-edit-the-layout-01.png)
 
 The following actions can be executed through the pane:
 
@@ -44,7 +44,7 @@ The following actions can be executed through the pane:
 
 * __Select Parent__: The selection is changed to the parent layout group__. If there is no parent group, the selection won't be changed.
 	
-	#### __Figure 2: Selecting the parent group__	![WPF RadLayoutControl Selecting the parent group](images/layoutcontrol-features-edit-the-layout-02.png)
+	#### __Figure 2: Selecting the parent group__	![{{ site.framework_name }} RadLayoutControl Selecting the parent group](images/layoutcontrol-features-edit-the-layout-02.png)
 	
 * You can define the __horizontal alignment__ of the selected element. There are the following options:
 	* __Stretch__ (the default value): The element is horizontally stretched in the available space. __Example 1__ demonstrates stretch alignment.
@@ -52,7 +52,7 @@ The following actions can be executed through the pane:
 	* __Left__: The element is horizontally left aligned in the available space.
 	* __Right__: The element is horizontally right aligned in the available space.
 
-	#### __Figure 3: The horizontal alignment options__	![WPF RadLayoutControl The horizontal alignment options](images/layoutcontrol-features-edit-the-layout-03.png)
+	#### __Figure 3: The horizontal alignment options__	![{{ site.framework_name }} RadLayoutControl The horizontal alignment options](images/layoutcontrol-features-edit-the-layout-03.png)
 		
 * You can define the __vertical alignment__ of the selected element. There are the following options:
 	* __Stretch__ (the default value): The element is vertically stretched in the available space. __Example 1__ demonstrates stretch alignment.
@@ -60,7 +60,7 @@ The following actions can be executed through the pane:
 	* __Top__: The element is vertically left aligned in the available space.
 	* __Bottom__: The element is vertically right aligned in the available space.
 
-	#### __Figure 4: The vertical alignment options__	![WPF RadLayoutControl The vertical alignment options](images/layoutcontrol-features-edit-the-layout-04.png)
+	#### __Figure 4: The vertical alignment options__	![{{ site.framework_name }} RadLayoutControl The vertical alignment options](images/layoutcontrol-features-edit-the-layout-04.png)
 
 > The alignment options work with the __VerticalAlignment__ and __HorizontalAlignment__ properties of the selected component. By default the elements are vertically and horizontally stretched. Setting the alignment properties manually will affect the selected option in the manipulation pane.
 
@@ -73,7 +73,7 @@ The following actions can be executed through the pane:
 The drag and drop feature of the control gives you the ability to rearrange the elements in the layout. When an item is selected you can drag and drop it over another position. The allowed positions where the dragged item can be dropped are displayed with the [LayoutControlDropIndicator]({%slug radlayoutcontrol-visual-structure%}) element.
 
 #### __Figure 5: Dragging an element triggers the logic that displays the drop indicators.__
-![WPF RadLayoutControl Dragging an element triggers the logic that displays the drop indicators.](images/layoutcontrol-features-edit-the-layout-05.png)
+![{{ site.framework_name }} RadLayoutControl Dragging an element triggers the logic that displays the drop indicators.](images/layoutcontrol-features-edit-the-layout-05.png)
 
 > Depending on the drop position the layout control can change a panel's orientation or auto-generate additional layout groups.
 
@@ -82,7 +82,7 @@ The drag and drop feature of the control gives you the ability to rearrange the 
 The items in the layout control can be resized by dragging their resize handles placed on their top, bottom, left and right borders. 
 
 #### __Figure 6: Resizing__
-![WPF RadLayoutControl Resizing](images/layoutcontrol-features-edit-the-layout-06.png)
+![{{ site.framework_name }} RadLayoutControl Resizing](images/layoutcontrol-features-edit-the-layout-06.png)
 
 Setting the __Height__ and __Width__ of the selected element (UIElement or LayoutControlGroup) will also resize it.
 

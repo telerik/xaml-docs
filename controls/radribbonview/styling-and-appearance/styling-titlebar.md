@@ -15,10 +15,10 @@ In order to style the __TitleBar__ of the __RadRibbonView__ you have to create t
 {% if site.site_name == 'WPF' %}
 
 The controls responsible for the __TitleBar__ are the __titleBarBackground__ __Border__ control and the __WindowTitle__ control.
-![WPF RadRibbonView  ](images/RibbonView_Styling_TitleBar_ControlElements.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_TitleBar_ControlElements.png)
 
 The __titleBarBackground__ __Border__ control is responsible for the background and the border of the __TitleBar__. The __WindowTitle__ control displays the title and the application name. To modify their appearance you have to modify the template of the control. Select it, right-click on it and choose *Edit Template -> Edit Current*. The 'Objects and Timeline' pane will be populated with its template parts.
-![WPF RadRibbonView  ](images/RibbonView_Styling_TitleBar_WindowTitleTemplate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_TitleBar_WindowTitleTemplate.png)
 
 Change the elements' properties untill you get the desired look.
 
@@ -27,7 +27,7 @@ Change the elements' properties untill you get the desired look.
 {% if site.site_name == 'Silverlight' %}
 
 Modifying some of the resources generated for the __RadRibbonView's__ style will allow you to change the appearance of the __TitleBar__. Here is the list of resources that are used for it.
-![WPF RadRibbonView  ](images/RibbonView_Styling_TitleBar_Resources.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_TitleBar_Resources.png)
 
 * __RibbonTitlebarBackgroundBrush__ - a brush that represents the background color of the __TitleBar__.				
 

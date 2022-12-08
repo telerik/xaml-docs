@@ -17,7 +17,7 @@ The `RadWebCam` control allows you to display the stream provided by a web camer
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadWebCam Overview](images/radwebcam-getting-started-0.png)
+![{{ site.framework_name }} RadWebCam Overview](images/radwebcam-getting-started-0.png)
 
 >tip Get started with the control with its [Getting Started]({%slug radwebcam-getting-started%}) help article that shows how to use it in a basic scenario.
 

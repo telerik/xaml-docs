@@ -41,7 +41,7 @@ You can add __RadLayoutControl__ manually in XAML as demonstrated in __Example 1
 __RadLayoutControl__ doesn't display any content when it is not populated with items or layout groups, so at this point only the border of the control should be displayed on the screen.
 
 #### __Figure 1: Empty RadLayoutControl__
-![WPF RadLayoutControl Empty RadLayoutControl](images/layoutcontrol-getting-started-01.png)
+![{{ site.framework_name }} RadLayoutControl Empty RadLayoutControl](images/layoutcontrol-getting-started-01.png)
 
 ## Adding Items in the Control
 
@@ -59,7 +59,7 @@ You can add items through the __Items__ collection of RadLayoutControl. The layo
 {{endregion}}
 
 #### __Figure 2: RadLayoutControl with few elements added__
-![WPF RadLayoutControl RadLayoutControl with few elements added](images/layoutcontrol-getting-started-02.png)
+![{{ site.framework_name }} RadLayoutControl RadLayoutControl with few elements added](images/layoutcontrol-getting-started-02.png)
 
 > By default the layout control and its groups are ordering their items with __horizontal orientation__. You can see how to change this in the [Orientation]({%slug radlayoutcontrol-features-orientation%}) help article.
 
@@ -87,7 +87,7 @@ You can nest LayoutControlGroups into one another which allows you to separate t
 {{endregion}}
 
 #### __Figure 3: RadLayoutControl with nested groups__
-![WPF RadLayoutControl RadLayoutControl with nested groups](images/layoutcontrol-getting-started-03.png)
+![{{ site.framework_name }} RadLayoutControl RadLayoutControl with nested groups](images/layoutcontrol-getting-started-03.png)
 
 >important RadLayoutControl doesn't support data binding and setting its ItemsSource property will throw an exception (NotSupportedException).
 
@@ -109,7 +109,7 @@ The control allows you to rearrange its children at runtime. To enable this the 
 {{endregion}}
 	
 #### __Figure 4: The layout setup from Example 3 with one of the groups selected.__
-![WPF RadLayoutControl The layout setup from Example 3 with one of the groups selected.](images/layoutcontrol-getting-started-04.png)
+![{{ site.framework_name }} RadLayoutControl The layout setup from Example 3 with one of the groups selected.](images/layoutcontrol-getting-started-04.png)
 
 > Read more about the edit mode in the [Edit the Layout]({%slug radlayoutcontrol-edit-the-layout%}) article.
 
@@ -170,7 +170,7 @@ This section demonstrates a basic layout set up with nested groups and different
 {{endregion}}
 
 #### __Figure 5: RadLayoutPanel example__  
-![WPF RadLayoutControl RadLayoutPanel example](images/layoutcontrol-getting-started-05.png)
+![{{ site.framework_name }} RadLayoutControl RadLayoutPanel example](images/layoutcontrol-getting-started-05.png)
 
 > You can switch between normal and edit mode of the control by setting its __IsInEditMode__ property.
 

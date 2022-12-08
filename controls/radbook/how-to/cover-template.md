@@ -24,7 +24,7 @@ First, lets begin by creating 4 different templates:
 
 For the sake of the example, each template will will have the following structure:
 
-![WPF RadBook Page Structure](images/book_howto_covertemplates_img01.png)
+![{{ site.framework_name }} RadBook Page Structure](images/book_howto_covertemplates_img01.png)
 
 This how the four templates look like in XAML code:
 
@@ -334,8 +334,8 @@ Finally, all we have to do is populate the book with items. In this example, the
 
 This is how the final result looks like:
 
-![WPF RadBook Custom Template Front](images/book_howto_covertemplates_img02.png)
+![{{ site.framework_name }} RadBook Custom Template Front](images/book_howto_covertemplates_img02.png)
  
-![WPF RadBook Custom Template Left and Right](images/book_howto_covertemplates_img03.png)
+![{{ site.framework_name }} RadBook Custom Template Left and Right](images/book_howto_covertemplates_img03.png)
 
-![WPF RadBook Custom Template Back](images/book_howto_covertemplates_img04.png)
+![{{ site.framework_name }} RadBook Custom Template Back](images/book_howto_covertemplates_img04.png)

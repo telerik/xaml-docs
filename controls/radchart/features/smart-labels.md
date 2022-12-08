@@ -117,7 +117,7 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
     
     
 
-![WPF RadChart  ](images/RadChart_Features_SmartLabels_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_SmartLabels_01.png)
 
 ## BarLabelSettings
 
@@ -185,7 +185,7 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 {{endregion}}
 
     
-![WPF RadChart  ](images/RadChart_Features_SmartLabels_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_SmartLabels_02.png)
 
 ## RadialLabelSettings
 
@@ -243,4 +243,4 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 {{endregion}}
 
 Here is a snapshot of the result.
- ![WPF RadChart  ](images/RadChart_Features_SmartLabels_03.png)
+ ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_SmartLabels_03.png)

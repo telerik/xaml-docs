@@ -25,7 +25,7 @@ To change the placement of the tabstrip area where the items are placed, set the
 {{endregion}}
 
 #### Figure 1: All tabstrip placements
-![WPF RadTabControl All tabstrip placements](images/radtabcontrol-appearance-customizing-items-layout-0.png)
+![{{ site.framework_name }} RadTabControl All tabstrip placements](images/radtabcontrol-appearance-customizing-items-layout-0.png)
 
 The tab items can be separated in two different lines (rows). To create a new line, set the __IsBreak__ property of the RadTabItem which should start the line. Read more about this feature in the [Create Multi-Line Tabs]({%slug radtabcontrol-features-multiline-tabs%}) article.
 
@@ -40,7 +40,7 @@ The tab items can be separated in two different lines (rows). To create a new li
 {{endregion}}
 
 #### Figure 2: Tab items on multiple rows
-![WPF RadTabControl Tab items on multiple rows](images/radtabcontrol-appearance-customizing-items-layout-1.png)
+![{{ site.framework_name }} RadTabControl Tab items on multiple rows](images/radtabcontrol-appearance-customizing-items-layout-1.png)
 
 >tip The line with the selected tab will be moved on the bottom row.
 
@@ -57,4 +57,4 @@ To __align the tabs__ in the tabstrip area, set the __Align__ property of RadTab
 {{endregion}}
 
 #### Figure 3: All tabstrip alignments
-![WPF RadTabControl All tabstrip alignments](images/radtabcontrol-appearance-customizing-items-layout-2.png)
+![{{ site.framework_name }} RadTabControl All tabstrip alignments](images/radtabcontrol-appearance-customizing-items-layout-2.png)

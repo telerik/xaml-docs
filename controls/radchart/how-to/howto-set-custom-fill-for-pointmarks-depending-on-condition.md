@@ -317,4 +317,4 @@ The chart is populated with data in code-behind using [Manual Series Mappings]({
 
 
 The result can be seen on the image below:
-![WPF RadChart  ](images/RadChart_HowTo_PointMarksCustomFill.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_PointMarksCustomFill.PNG)

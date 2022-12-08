@@ -19,7 +19,7 @@ This article shows how to create a sample .NET Core 3.1 application using __RadE
 Start Visual Studio 2019 (or newer), select "Create a new project" and choose WPF App (.NET Core).
 
 #### __Figure 1: WPF (.NET Core) Application__
-![WPF (.NET Core) Application](images/entityframeworkcoredatasource-create-new-project.png)
+![{{ site.framework_name }} (.NET Core) Application](images/entityframeworkcoredatasource-create-new-project.png)
 
 ## Adding References
 

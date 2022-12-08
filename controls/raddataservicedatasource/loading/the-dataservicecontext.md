@@ -18,9 +18,9 @@ A class that derives from the __DataServiceContext__ class will be automatically
 
 {% if site.site_name == 'WPF' %}
 
-![WPF RadDataServiceDataSource Generated Files WPF](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![{{ site.framework_name }} RadDataServiceDataSource Generated Files WPF](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
-![WPF RadDataServiceDataSource Generated Files Silverlight](images/RadDataServiceDataSource_GeneratedClientCode_SL.png){% endif %}
+![{{ site.framework_name }} RadDataServiceDataSource Generated Files Silverlight](images/RadDataServiceDataSource_GeneratedClientCode_SL.png){% endif %}
 
 A typical auto-generated __DataServiceContext__ class will look like this:
 

@@ -16,7 +16,7 @@ RadPdfViewer enables you to open documents and show the bookmarks they contain i
 
 
 #### Figure 1: Bookmarks in RadPdfViewer
-![WPF RadPdfViewer Bookmarks in RadPdfViewer](images/RadPdfViewer_Bookmarks_01.png)
+![{{ site.framework_name }} RadPdfViewer Bookmarks in RadPdfViewer](images/RadPdfViewer_Bookmarks_01.png)
 
 
 ## Visualizing Bookmarks

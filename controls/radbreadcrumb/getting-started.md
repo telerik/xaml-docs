@@ -51,7 +51,7 @@ __Example 1__ demonstrates a basic __RadBreadcrumb__ definition.
 	breadcrumb.VerticalAlignment = System.Windows.VerticalAlignment.Top
 {{endregion}}
 
-![WPF RadBreadcrumb from Code](images/breadcrumb_gettingstarted_breadcrumb.png)
+![{{ site.framework_name }} RadBreadcrumb from Code](images/breadcrumb_gettingstarted_breadcrumb.png)
 
 >The __RadBreacrumb__ control is a __HeaderedItemsControl__ and its Header is used as a root element. Therefore the control always has one root element. If you don't set the __Breadcrumb.Header__ property an empty root element will be created.		  
 
@@ -141,7 +141,7 @@ Or you can populate the __RadBreadcrumb.Items__ collection in code-behind:
 	breadcrumb.Items.Add(item3)
 {{endregion}}
 
-![WPF RadBreadcrumb Dropdown Items](images/breadcrumb_gettingstarted_breadcrumb_items.png)
+![{{ site.framework_name }} RadBreadcrumb Dropdown Items](images/breadcrumb_gettingstarted_breadcrumb_items.png)
 
 In order to remove items from the __RadBreadcrumb__ control, you can remove them from the control's __Items__ collection:
 
@@ -155,7 +155,7 @@ In order to remove items from the __RadBreadcrumb__ control, you can remove them
 	breadcrumb.Items.Remove(item2)
 {{endregion}}
 
-![WPF RadBreadcrumb with Item Removed](images/breadcrumb_gettingstarted_items_remove.png)
+![{{ site.framework_name }} RadBreadcrumb with Item Removed](images/breadcrumb_gettingstarted_items_remove.png)
 
 ## Enable LinearMode
 
@@ -191,7 +191,7 @@ In order to enable the __Linear__ mode of the __RadBreadcrumb__ control, you hav
 	breadcrumb.IsLinearMode = True
 {{endregion}}
 
-![WPF RadBreadcrumb Linear Mode](images/breadcrumb_gettingstarted_linear_mode.png)
+![{{ site.framework_name }} RadBreadcrumb Linear Mode](images/breadcrumb_gettingstarted_linear_mode.png)
 
 ## Change the number of paths saved in the Breadcrumb history
 

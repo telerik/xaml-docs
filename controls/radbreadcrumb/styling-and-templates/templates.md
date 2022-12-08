@@ -18,7 +18,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 This section will explain the structure of the __RadBreadcrumb__'s template. Here is a snapshot of the template generated in Expression Blend.				
 
-![WPF RadBreadcrumb Template Structure](images/breadcrumb_templates_breadcrumb.png)
+![{{ site.framework_name }} RadBreadcrumb Template Structure](images/breadcrumb_templates_breadcrumb.png)
 
 It contains the following parts:
 

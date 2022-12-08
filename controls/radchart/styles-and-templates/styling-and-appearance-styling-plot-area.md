@@ -42,7 +42,7 @@ Your next step is to set the created style to the PlotAreaStyle property of the 
 
 Here is a snapshot of the sample result.
 
-![WPF RadChart  ](images/RadChart_StylingPlotArea_06.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingPlotArea_06.png)
 
 Here is the final XAML for the __Style__:
 

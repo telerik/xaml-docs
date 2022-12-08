@@ -48,7 +48,7 @@ You can add a __RadRibbonView__ manually in XAML as demonstrated in __Example 1_
 At this state, the ribbonview is empty - there are not tabs, backstage or any other ribbon components. You can learn about the controls that the __RadRibbonView__ can contain from the [Features]({%slug radribbonview-ribbon-tab%}) section of the documentation.
 
 #### __Figure 1: Empty RadRibbonView__
-![WPF RadRibbonView Empty RadRibbonView](images/ribbonview-getting-started-01.png)
+![{{ site.framework_name }} RadRibbonView Empty RadRibbonView](images/ribbonview-getting-started-01.png)
 
 ## Adding Ribbon Tabs
 
@@ -97,7 +97,7 @@ The tabs can be added in the __Items__ collection of RadRibbonView. The __RadRib
 {{endregion}}
 
 #### __Figure 2: RadRibbonView with several RadRibbonTabs defined in its Items collection__
-![WPF RadRibbonView RadRibbonView with several RadRibbonTabs defined in its Items collection](images/ribbonview-getting-started-02.png)
+![{{ site.framework_name }} RadRibbonView RadRibbonView with several RadRibbonTabs defined in its Items collection](images/ribbonview-getting-started-02.png)
 
 ## Adding Content in the Ribbon Tabs
 
@@ -125,7 +125,7 @@ __RadRibbonTab__ is a HeaderedItemsControl, which means that it can contain a co
 {{endregion}}
 
 #### __Figure 3: A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection__
-![WPF RadRibbonView A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection](images/ribbonview-getting-started-03.png)
+![{{ site.framework_name }} RadRibbonView A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection](images/ribbonview-getting-started-03.png)
 	
 __RadRibbonGroup__ is also a HeaderedItemsControl and it can have child elements on its own.
 
@@ -154,7 +154,7 @@ __RadRibbonGroup__ is also a HeaderedItemsControl and it can have child elements
 {{endregion}}
 
 #### __Figure 4: A RadRibbonGroup with a couple ribbon buttons defined in its Items collection__
-![WPF RadRibbonView A RadRibbonGroup with a couple ribbon buttons defined in its Items collection](images/ribbonview-getting-started-04.png)
+![{{ site.framework_name }} RadRibbonView A RadRibbonGroup with a couple ribbon buttons defined in its Items collection](images/ribbonview-getting-started-04.png)
 	
 ## Resizing
 
@@ -187,7 +187,7 @@ You can se the icon of the ribbonview's application button through the __Applica
 {{endregion}}
 
 #### __Figure 5: RadRibbonView application button image__
-![WPF RadRibbonView RadRibbonView application button image](images/ribbonview-getting-started-05.png)
+![{{ site.framework_name }} RadRibbonView RadRibbonView application button image](images/ribbonview-getting-started-05.png)
 
 ## Setting up the Application Title and Name
 
@@ -199,7 +199,7 @@ The header displayed at the title bar of __RadRibbonView__ is constructed by its
 {{endregion}}
 
 #### __Figure 6: Title and ApplicationName properties reflected in the UI__
-![WPF RadRibbonView Title and ApplicationName properties reflected in the UI](images/ribbonview-getting-started-06.png)
+![{{ site.framework_name }} RadRibbonView Title and ApplicationName properties reflected in the UI](images/ribbonview-getting-started-06.png)
 
 > You can also see the [Change Title]({%slug radribbonview-howto-change-title%}) and [Hide the Title]({%slug radribbonview-howto-hide-title%}) help articles.
 
@@ -235,7 +235,7 @@ To declare a backstage menu in __RadRibbonView__ you can set its __Backstage__ p
 {{endregion}}
 
 #### __Figure 7: RadRibbon Backstage example__
-![WPF RadRibbonView RadRibbon Backstage example](images/ribbonview-getting-started-07.png)
+![{{ site.framework_name }} RadRibbonView RadRibbon Backstage example](images/ribbonview-getting-started-07.png)
 
 ## Setting up the Quick Access Toolbar
 
@@ -255,7 +255,7 @@ The __Quick Access Toolbar__ is used to render a set of __RadRibbonView__ contro
 {{endregion}}
 
 #### __Figure  8: QuickAccessToolBar visualization with one of its buttons hovered__  
-![WPF RadRibbonView QuickAccessToolBar Hovered Button](images/ribbonview-getting-started-08.png)
+![{{ site.framework_name }} RadRibbonView QuickAccessToolBar Hovered Button](images/ribbonview-getting-started-08.png)
 
 > For more information and a practical example you can see the [Quick Access Toolbar]({%slug radribbonview-qat%}) topic.  
 
@@ -314,7 +314,7 @@ This section contains all features demonstrated in the article assembled into a 
 {{endregion}}
 
 #### __Figure 9: RadRibbonView example__  
-![WPF RadRibbonView RadRibbonView example](images/ribbonview-getting-started-09.png)
+![{{ site.framework_name }} RadRibbonView RadRibbonView example](images/ribbonview-getting-started-09.png)
 
 ## Setting a Theme
 

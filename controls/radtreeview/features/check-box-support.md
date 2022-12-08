@@ -25,7 +25,7 @@ The purpose of this tutorial is to show you how to:
 > With the Q1 2013 release, the RadioButtons logic implemented in the RadTreeView is obsolete. You can find a list with the obsolete properties in the 'Q1 2013' section of the [Backward Compatibility]({%slug radtreeview-backward-compatibility%})
 
 For the next tasks will be used the treeview shown on the next figure. 
-![WPF RadTreeView Sample](images/RadTreeView_FeaturesCheckBoxLinesSupport_001.png)
+![{{ site.framework_name }} RadTreeView Sample](images/RadTreeView_FeaturesCheckBoxLinesSupport_001.png)
 
 #### __XAML__
 
@@ -56,7 +56,7 @@ For example, add the following attribute to the treeview declaration in XAML:
 	{{endregion}}
 
 Here is a snapshot of the result. 
-![WPF RadTreeView CheckBoxes via IsOptionElementsEnabled](images/RadTreeView_FeaturesCheckBoxLinesSupport_020.png)
+![{{ site.framework_name }} RadTreeView CheckBoxes via IsOptionElementsEnabled](images/RadTreeView_FeaturesCheckBoxLinesSupport_020.png)
 
 ## Enable Check Boxes Programmatically 
 
@@ -91,7 +91,7 @@ The Tri-State CheckBox mode of __RadTreeView__ allows for RadTreeViewItems' Chec
 	{{endregion}}
 
 The result can be seen on the next figure: 
-![WPF RadTreeView CheckBoxes with IsTriStateMode](images/RadTreeView_FeaturesCheckBoxLinesSupport_050.png)
+![{{ site.framework_name }} RadTreeView CheckBoxes with IsTriStateMode](images/RadTreeView_FeaturesCheckBoxLinesSupport_050.png)
 
 The "Tri-state" behavior can be activated in the code-behind too. To do so, set the __IsTriStateMode__ property of an instance of the __RadTreeView__ class to __True__.		
 
@@ -114,7 +114,7 @@ The "Tri-state" behavior can be activated in the code-behind too. To do so, set 
 ## Accessing the CheckState Property of a RadTreeViewItem 
 
 To see the Item check state in the code-behind you should use the __CheckState__ property of the __RadTreeViewItem__ class. The __CheckState__ property is a __ToggleState__ enumeration and has the following values:
-![WPF RadTreeView CheckState of RadTreeViewItem](images/RadTreeView_FeaturesCheckBoxLinesSupport_060.png)
+![{{ site.framework_name }} RadTreeView CheckState of RadTreeViewItem](images/RadTreeView_FeaturesCheckBoxLinesSupport_060.png)
 
 * __On__ - the treeview item is checked.
 * __Off__ - the treeview item is not checked.			
@@ -169,7 +169,7 @@ The __PreviewChecked__ event occurs when the treeview item is about to be checke
 	{{endregion}}
 
 And here is the result: 
-![WPF RadTreeView Conditional Foreground on Check](images/RadTreeView_FeaturesCheckBoxLinesSupport_070.png)
+![{{ site.framework_name }} RadTreeView Conditional Foreground on Check](images/RadTreeView_FeaturesCheckBoxLinesSupport_070.png)
 
 The __PreviewUnchecked__ event is fired when the treeview item is about to be unchecked. The __Unchecked__ event occurs when the treeview item is unchecked. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 

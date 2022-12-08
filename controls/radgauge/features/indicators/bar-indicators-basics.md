@@ -55,7 +55,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Bar Indicator Empty Fill](images/RadGauge_Features_BarIndicators_Basics_01.png)
+![{{ site.framework_name }} RadGauge Bar Indicator Empty Fill](images/RadGauge_Features_BarIndicators_Basics_01.png)
 
 ## Indicator's Width
 
@@ -81,7 +81,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Bar Indicator Start and End Width](images/RadGauge_Features_BarIndicators_Basics_02.png)
+![{{ site.framework_name }} RadGauge Bar Indicator Start and End Width](images/RadGauge_Features_BarIndicators_Basics_02.png)
 
 ## Range Color Mode
 
@@ -147,4 +147,4 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Range Color Modes](images/RadGauge_Features_BarIndicators_Basics_03.png)
+![{{ site.framework_name }} RadGauge Range Color Modes](images/RadGauge_Features_BarIndicators_Basics_03.png)

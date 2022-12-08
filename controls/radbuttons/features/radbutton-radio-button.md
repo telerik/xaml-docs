@@ -15,7 +15,7 @@ The __RadRadioButton__ control inherits from the native RadioButton control and 
 >tip You can see how to use an ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
 #### __Figure 1: Radio button__
-![WPF RadButtons Radio button](images/radbuttons-features-radio-button-0.png)
+![{{ site.framework_name }} RadButtons Radio button](images/radbuttons-features-radio-button-0.png)
 
 ## Defining RadButton
 
@@ -91,15 +91,15 @@ By grouping the __RadRadioButtons__ the user will be allowed to check only one b
 The above code creates two groups of __RadRadioButtons__.		
 
 #### __Figure 2: Grouped radio buttons__
-![WPF RadButtons Grouped radio buttons](images/radbuttons-features-radio-button-1.png)
+![{{ site.framework_name }} RadButtons Grouped radio buttons](images/radbuttons-features-radio-button-1.png)
 
 ## Customizing the RadRadioButton
 
 * __IsBackgroundVisible__ - this property is of type bool and it controls the visibility of the background and the border of the RadRadioButton control when in normal state. 
-	#### __Figure 2: Radio button with hidden background__	![WPF RadButtons Radio button with hidden background](images/radbuttons-features-radio-button-2.png)
+	#### __Figure 2: Radio button with hidden background__	![{{ site.framework_name }} RadButtons Radio button with hidden background](images/radbuttons-features-radio-button-2.png)
 
 * __CornerRadius__: This property controls the corner radius of the button.
-	#### __Figure 3: Radio button with its CornerRadius set to 15__	![WPF RadButtons Radio button with its CornerRadius set to 15](images/radbuttons-features-radio-button-3.png)
+	#### __Figure 3: Radio button with its CornerRadius set to 15__	![{{ site.framework_name }} RadButtons Radio button with its CornerRadius set to 15](images/radbuttons-features-radio-button-3.png)
 
 ## See Also
  * [Button]({%slug radbuttons-features-button%})

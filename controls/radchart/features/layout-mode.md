@@ -72,19 +72,19 @@ Note the areas inside the red rectangles and see how the line and the bar charts
 
 * __LayoutMode.Normal__- the chart is drawn starting directly from the first value (1), thus making the first and the last bars partly visible.
  
-      ![WPF RadChart with LayoutMode Normal](images/RadChart_Features_LayoutMode_01.png)
+      ![{{ site.framework_name }} RadChart with LayoutMode Normal](images/RadChart_Features_LayoutMode_01.png)
 
 * __LayoutMode.Inside__- the chart data is accommodated in a way that makes the first and the last bars visible by adding small offset in the beginning and in the end of the X axis.
  
-      ![WPF RadChart with LayoutMode Inside](images/RadChart_Features_LayoutMode_02.png)
+      ![{{ site.framework_name }} RadChart with LayoutMode Inside](images/RadChart_Features_LayoutMode_02.png)
 
 * __LayoutMode.Between__- in this case each item is visualized as a margin - the labels and the bars are placed between the ticks.
  
-      ![WPF RadChart with LayoutMode Between](images/RadChart_Features_LayoutMode_03.png)
+      ![{{ site.framework_name }} RadChart with LayoutMode Between](images/RadChart_Features_LayoutMode_03.png)
 
 * __LayoutMode.Auto__- the layout mode is set automatically to __Between__ by following the logic specified above.
  
-      ![WPF RadChart with LayoutMode Auto](images/RadChart_Features_LayoutMode_04.png)
+      ![{{ site.framework_name }} RadChart with LayoutMode Auto](images/RadChart_Features_LayoutMode_04.png)
 
 ## See Also
 

@@ -22,7 +22,7 @@ More often your collection __will not be__ an [IPagedCollectionView](http://msdn
 
 ## Wrapping a collection in an IPagedCollectionView / QueryableCollectionView
 
-![WPF RadDataPager IPagedCollectionView](images/RadDataPager_Features_SourceAndPagedSource_01.png)
+![{{ site.framework_name }} RadDataPager IPagedCollectionView](images/RadDataPager_Features_SourceAndPagedSource_01.png)
 
 If you look at the constructors of [PagedCollectionView](http://msdn.microsoft.com/en-us/library/system.windows.data.pagedcollectionview%28VS.95%29.aspx) and {% if site.site_name == 'Silverlight' %}[QueryableCollectionView](http://www.telerik.com/help/silverlight/t_telerik_windows_data_queryablecollectionview.html){% endif %}{% if site.site_name == 'WPF' %}[QueryableCollectionView](http://www.telerik.com/help/wpf/t_telerik_windows_data_queryablecollectionview.html){% endif %} you will notice that you can pass in a simple [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) as a parameter. Those two classes will wrap it and provide paging capabilities over your original data.
 
@@ -79,7 +79,7 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 
 ## Binding to the PagedSource property of the RadDataPager
 
-![WPF RadDataPager Binding to the PagedSource](images/RadDataPager_Features_SourceAndPagedSource_02.png)
+![{{ site.framework_name }} RadDataPager Binding to the PagedSource](images/RadDataPager_Features_SourceAndPagedSource_02.png)
 
 In case you do not like the first approach there is a better one. When you assign an [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) as the __Source__ of a [RadDataPager](http://www.telerik.com/help/silverlight/radgridview-paging-using-telerik-raddatapager.html) it will automatically wrap it in a {% if site.site_name == 'Silverlight' %}[QueryableCollectionView](http://www.telerik.com/help/silverlight/t_telerik_windows_data_queryablecollectionview.html){% endif %}{% if site.site_name == 'WPF' %}[QueryableCollectionView](http://www.telerik.com/help/wpf/t_telerik_windows_data_queryablecollectionview.html){% endif %} and expose it through its __PagedSource__ property. From then on, you can attach any number of __ItemsControls__ to the __PagedSource__ and they will be automatically paged. Here is how to do this entirely in XAML. 
 

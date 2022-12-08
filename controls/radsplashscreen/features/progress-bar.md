@@ -36,7 +36,7 @@ To control the range and progress of the bar, set the __MinValue__, __MaxValue__
 	RadSplashScreenManager.Close();
 {{endregion}}
 
-![WPF RadSplashScreen Progress Bar](images/radsplashscreen-features-progress-bar-0.png)
+![{{ site.framework_name }} RadSplashScreen Progress Bar](images/radsplashscreen-features-progress-bar-0.png)
 
 ## Hiding Progress Bar
 

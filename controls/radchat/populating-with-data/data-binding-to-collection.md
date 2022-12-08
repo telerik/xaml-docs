@@ -88,7 +88,7 @@ The following example shows how to define custom models and use the converter.
         </telerik:RadChat>
 {{endregion}}
 
-![WPF RadChat with Data-Bound Messages](images/chat-populating-with-data-binding-to-collection-0.png)
+![{{ site.framework_name }} RadChat with Data-Bound Messages](images/chat-populating-with-data-binding-to-collection-0.png)
 
 > The example demonstrates how to work with text messages, but the same approach is also applicable for the other message types. 
 

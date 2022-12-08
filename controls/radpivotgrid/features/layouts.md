@@ -107,11 +107,11 @@ When you set the RowSubTotalsPosition property of the group description to a val
     })
 {{endregion}}
 
-![WPF RadPivotGrid Hidden Subtotals](images/pivotgrid-features-layouts-0.png)
+![{{ site.framework_name }} RadPivotGrid Hidden Subtotals](images/pivotgrid-features-layouts-0.png)
 
 The show sub totals option is available also in the context menu of the group descriptions in the RadPivotFieldList control.
 
-![WPF RadPivotGrid Show Subtotals Pivot Field List Item](images/pivotgrid-features-layouts-1.png)
+![{{ site.framework_name }} RadPivotGrid Show Subtotals Pivot Field List Item](images/pivotgrid-features-layouts-1.png)
 
 ## See Also  
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})

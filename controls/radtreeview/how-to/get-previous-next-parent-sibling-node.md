@@ -42,7 +42,7 @@ Here is a simple treeview declaration:
 	</telerik:RadTreeView>
 {{endregion}}
 
-![WPF RadTreeView Sample Declaration](images/RadTreeView_HowToGetPreviousNextSiblingParentNode_010.PNG)
+![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_HowToGetPreviousNextSiblingParentNode_010.PNG)
 
 For example, you should attach to the __SelectionChanged__ event and in the event handler get the selected items. Find the treeview declaration and add the following attribute: 
 

@@ -20,7 +20,7 @@ By default each __MenuItem__ has reserved space for an icon:
 
 Since Q2 2010 __RadMenu__ has a property for defining the width of the column, which is reserved for the Icons. The property is called __IconColumnWidth__. When you set this property to 0 the space for the icons disappears.
 
-![WPF RadMenu Icon Column Width 0](images/RadMenu_IconColumnWidth.jpg)
+![{{ site.framework_name }} RadMenu Icon Column Width 0](images/RadMenu_IconColumnWidth.jpg)
 
 ## Set Different Icon Area Width for Each MenuItem
 

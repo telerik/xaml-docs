@@ -17,7 +17,7 @@ __RadLegend__ is a stand-alone control which visualizes a list of legend items. 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadLegend Overview](images/radlegend-overview-0.png)
+![{{ site.framework_name }} RadLegend Overview](images/radlegend-overview-0.png)
 
 ## Key Features
 

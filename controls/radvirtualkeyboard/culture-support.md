@@ -26,7 +26,7 @@ The current language of the letters can be changed manually by setting the `Cult
 	virtualKeyboard.Culture = new System.Globalization.CultureInfo("bg-BG");
 {{endregion}}
 
-![WPF RadVirtualKeyboard Bulgarian Culture](images/radvirtualkeyboard-culture-support-0.png)
+![{{ site.framework_name }} RadVirtualKeyboard Bulgarian Culture](images/radvirtualkeyboard-culture-support-0.png)
 
 ## See Also
 * [Getting Started]({%slug radvirtualkeyboard-getting-started%})

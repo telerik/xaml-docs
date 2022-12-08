@@ -156,7 +156,7 @@ The following example, considering the sample data above, demonstrates how to us
 
 
 When visualized in __RadChart__, the data from the table above will look similar to the one from the image below:
-![WPF RadChart  ](images/RadChart_Features_GroupingAndAggregation_20.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_GroupingAndAggregation_20.png)
 
 As you can see, when the data is grouped by Year and Region, six groups will be created: three groups for the three regions for year 2008 and three groups for the three regions for year 2009. As a result, __RadChart__ creates six series - per one for each of the groups. Moreover, the [Striplines and Gridlines]({%slug radchart-features-axes-striplines-and-gridlines%}) display the Description so these six series are again grouped by the fruit name.
 
@@ -243,7 +243,7 @@ Based on the example above, imagine that you want to create a chart that shows t
 
 
 The result is the chart from the snapshot below:
-![WPF RadChart  ](images/RadChart_Features_GroupingAndAggregation_30.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_GroupingAndAggregation_30.png)
 
 First, the data is grouped by year, then by region. For each region, Sum function is applied to calculate the [Y-Axis]({%slug radchart-features-axes-y-axis%}) value. In this case -the sum of all the apples and bananas consumed for that year and region.
 
@@ -257,7 +257,7 @@ One property is very important to be mentioned here. This is the __GroupingSetti
 The last example does not specify explicitly the value for __ShouldCreateSeriesForLastGroup__, so __RadChart,__ by default, will not create series for the last group - Year. From the snapshot you can see, that two series are created - one for year 2008 and one for year 2009. The values for these two series are actually the result of the applied aggregate function (__Sum__) over the last group level. The __RadChart__ will use the aggregated values from the second group descriptor (Region) and for each region it will create [DataPoint]({%slug radchart-populating-with-data-overview%}) for the appropriate series based on the the parent group (Year).
 
 If you set __ShouldCreateSeriesForLastGroup__ to __True__, the result will be six data series:
-![WPF RadChart  ](images/RadChart_Features_GroupingAndAggregation_40.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_GroupingAndAggregation_40.png)
 
 Note, that the values are exactly the same as when the __ShouldCreateSeriesForLastGroup__is set to __False__, but instead of 2 series now __RadChart__ created 6 series.
 

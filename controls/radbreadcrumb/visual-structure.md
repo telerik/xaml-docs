@@ -14,7 +14,7 @@ This section defines terms and concepts used in the scope of __RadBreadcrumb__ y
 
 __RadBreadcrumb__ is a powerful control which lets you create navigation systems and display hierarchical structures, such as directories. Below you can see a snapshot and explanation of the main visual elements of the standard __RadBreadcrumb__ control.
 
-![WPF RadBreadcrumb Visual Structure](images/breadcrumb_visual_structure.png)
+![{{ site.framework_name }} RadBreadcrumb Visual Structure](images/breadcrumb_visual_structure.png)
 
 The structure of the __RadBreadcrumb__ is pretty simple. It consists of the following main elements:		
 

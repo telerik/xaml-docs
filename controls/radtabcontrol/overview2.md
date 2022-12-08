@@ -21,7 +21,7 @@ RabTabControl is part of the powerful UI for WPF navigation controls framework, 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadTabControl Overview](images/radtabcontrol-overview-01.png)
+![{{ site.framework_name }} RadTabControl Overview](images/radtabcontrol-overview-01.png)
 
 As every control from UI for {{ site.framework_name }},  RadTabControl comes with a set of pre-defined themes or you can design your own templates for a completely custom look using Expression Blend.
 

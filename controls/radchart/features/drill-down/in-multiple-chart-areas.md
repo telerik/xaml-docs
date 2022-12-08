@@ -96,6 +96,6 @@ The definition of the __ChartHierarchicalViewDescriptor__ objects is the same as
 
 Here are snapshots of the result - one for the first hierarchy level and one after clicking on the ToyYoda bar.
 
-![WPF RadChart  ](images/RadChart_Features_DrillDown_MultipleChartArea_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_DrillDown_MultipleChartArea_01.png)
 
-![WPF RadChart  ](images/RadChart_Features_DrillDown_MultipleChartArea_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_DrillDown_MultipleChartArea_02.png)

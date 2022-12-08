@@ -38,7 +38,7 @@ In order to use the __MapMouseLocationIndicator__ outside the __RadMap__ you hav
 
 Here is a snapshot of the result:
 
-![WPF RadMap Mouse Indicator Outside](images/RadMap_Features_MouseLocation_01.png)
+![{{ site.framework_name }} RadMap Mouse Indicator Outside](images/RadMap_Features_MouseLocation_01.png)
 
 ## See Also
  * [Navigation]({%slug radmap-features-navigation%})

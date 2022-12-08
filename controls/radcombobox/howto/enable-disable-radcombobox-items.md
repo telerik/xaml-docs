@@ -47,7 +47,7 @@ The __RadComboBox__ and __RadComboBoxItem__ classes expose a property named __Is
 {{endregion}}
 
 #### __Figure 1: Result of Example 2__
-![WPF RadComboBox Result of Example 2](images/RadComboBox_HowTo_EnableDisableItems_010.png)
+![{{ site.framework_name }} RadComboBox Result of Example 2](images/RadComboBox_HowTo_EnableDisableItems_010.png)
 
 ## Enable\Disable Items Using ItemContainerStyle
 
@@ -110,7 +110,7 @@ Using __RadComboBox__ with static data is the simplest scenario. However, in mos
 Note that in this case all __RadComboBoxItems__ will be disabled. However, you have the ability to determine which items to be disabled based on your custom logic. [Check out](#enabledisable-items-using-itemcontainerstyleselector) the next section to see the solution.
 
 #### __Figure 2: Result of Example 5__
-![WPF RadComboBox Result of Example 5](images/RadComboBox_HowTo_EnableDisableItems_020.png)
+![{{ site.framework_name }} RadComboBox Result of Example 5](images/RadComboBox_HowTo_EnableDisableItems_020.png)
 
 ## Enable\Disable Items Using ItemContainerStyleSelector
 
@@ -160,7 +160,7 @@ The next example demonstrates you how to achieve this.
 {{endregion}}
 
 #### __Figure 3: The result is that every odd item is disabled__
-![WPF RadComboBox The result is that every odd item is disabled](images/RadComboBox_HowTo_EnableDisableItems_030.png)
+![{{ site.framework_name }} RadComboBox The result is that every odd item is disabled](images/RadComboBox_HowTo_EnableDisableItems_030.png)
 
 ## Using Style Binding
 
@@ -188,7 +188,7 @@ Using __ItemContainerStyle__ is a good solution, however, it is not the best. Im
 Two things should be mentioned here. First, note how the __IsEnabled__ property is bound in the __Style__. Second, the declared __Style__ is set as a __ItemContainerStyle__ of the __RadComboBox__. The result is shown on the image below.
 
 #### __Picture 4: Result of Example 5__
-![WPF RadComboBox with Styled Disabled Items](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
+![{{ site.framework_name }} RadComboBox with Styled Disabled Items](images/RadComboBox_HowTo_EnableDisableItems_040_WPF.png)
 {% endif %}
 
 ## See Also  

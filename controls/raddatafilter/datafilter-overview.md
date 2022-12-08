@@ -19,7 +19,7 @@ Build complex filter expressions in a breeze with Telerik __DataFilter__. The co
 {% include cta-panel-overview.html %}
 {% endif %}
         
-![WPF RadDataFilter Overview](images/datafilter_overview.jpg)
+![{{ site.framework_name }} RadDataFilter Overview](images/datafilter_overview.jpg)
 
 ## Key Features:        
 

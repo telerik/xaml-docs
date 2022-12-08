@@ -13,9 +13,9 @@ position: 1
 This topic defines terms and concepts related to __RadAutoSuggestBox__ that you have to get familiar with before you continue reading this help.
 
 #### __Figure 1: RadAutoSuggestBox in the Fluent theme__
-![WPF RadAutoSuggestBox RadAutoSuggestBox in the Fluent theme](images/radautosuggestbox-visual-structure-0.png)  
-![WPF RadAutoSuggestBox Visual Structure](images/radautosuggestbox-visual-structure-1.png)  
-![WPF RadAutoSuggestBox Visual Structure No Content](images/radautosuggestbox-visual-structure-2.png)
+![{{ site.framework_name }} RadAutoSuggestBox RadAutoSuggestBox in the Fluent theme](images/radautosuggestbox-visual-structure-0.png)  
+![{{ site.framework_name }} RadAutoSuggestBox Visual Structure](images/radautosuggestbox-visual-structure-1.png)  
+![{{ site.framework_name }} RadAutoSuggestBox Visual Structure No Content](images/radautosuggestbox-visual-structure-2.png)
 
 The following table lists the elements that make up a RadAutoSuggestBox:
 

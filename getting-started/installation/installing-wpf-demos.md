@@ -47,19 +47,19 @@ Visual Studio solution containing the source code of the examples is available i
 
 2. Click on the __DOWNLOADS__ button. This will open the list with all available products for your account.
 
-	![WPF Progress Site Downloads Tab](images/installing-wpf-demos-0.png)
+	![{{ site.framework_name }} Progress Site Downloads Tab](images/installing-wpf-demos-0.png)
 
 3. Click on the __Progress Telerik UI for WPF__ item in the products list. This will open the page with all available downloads for the WPF product.
 
-	![WPF Progress Site Telerik UI for WPF Product Title](images/installing-wpf-demos-1.png)
+	![{{ site.framework_name }} Progress Site Telerik UI for WPF Product Title](images/installing-wpf-demos-1.png)
 
 4. Find the __Telerik_UI_for_WPF_[version]_Demos.zip__ file and click on it in order to download the .zip.
 
-	![WPF Progress Site Telerik UI for WPF Demos Archive](images/installing-wpf-demos-2.png)
+	![{{ site.framework_name }} Progress Site Telerik UI for WPF Demos Archive](images/installing-wpf-demos-2.png)
 
 5. Unzip the file and run the __ExamplesCS_WPF.sln__ file.
 
-	![WPF ExamplesCS_WPF Solution](images/installing-wpf-demos-3.png)
+	![{{ site.framework_name }} ExamplesCS_WPF Solution](images/installing-wpf-demos-3.png)
 
 >tip The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation of Telerik UI for WPF suite with the same version as the downloaded demos. 
 
@@ -69,7 +69,7 @@ In this section we will review the most common issues experienced when running t
 
 ### "Could not load file or assembly" error when running an example from the demos application
 
-![WPF Could Not Load File or Assembly Error](images/wpf_demos_0.png)
+![{{ site.framework_name }} Could Not Load File or Assembly Error](images/wpf_demos_0.png)
 
 Issues like this are caused by cached files left from a previous installation. As the WPF Demos is a ClickOnce application, we generally recommend fully uninstalling it before installing a newer version. Sometimes you might also need to manually delete the folders, if there are such left, after uninstalling the application and clearing the application cache. By default the files of the application are stored under the following directory: `C:\Users\\&lt;your_user&gt;\AppData\Local\Apps\2.0`	
 

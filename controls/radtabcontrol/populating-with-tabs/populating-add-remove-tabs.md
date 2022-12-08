@@ -73,7 +73,7 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 ## Adding And Removing Tabs Declaratively
 
 This is snapshot of a regular __RadTabControl__ with four tab items.
-![WPF RadTabControl Adding And Removing Tabs Declaratively](images/RadTabControl_Figure_00240.png)
+![{{ site.framework_name }} RadTabControl Adding And Removing Tabs Declaratively](images/RadTabControl_Figure_00240.png)
 
 And here is its XAML declaration:
 
@@ -94,7 +94,7 @@ Each one of the __RadTabItem__ nodes in the example above represents declaration
 				
 
 For example insert the following line __<telerik:RadTabItem Header="New Tab Item"/>__ after the "Web Sites" tab item and new tab item will be added to the tab control.
-![WPF RadTabControl Add New Tab Declaratively](images/RadTabControl_Figure_00250.png)
+![{{ site.framework_name }} RadTabControl Add New Tab Declaratively](images/RadTabControl_Figure_00250.png)
 
 >tipConsider declaring tabs in XAML instead of adding them by code whenever it’s possible. This includes situations when you know what tabs you need at design time.Declaring tabs in XAML is also a preferable choice when you are working with a designer that will style the control using Expression Blend.
 

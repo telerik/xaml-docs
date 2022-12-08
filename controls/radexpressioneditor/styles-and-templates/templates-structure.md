@@ -101,12 +101,12 @@ This topic will make you familiar with the template structure of __RadExpression
 
 {% if site.site_name == 'Silverlight' %}
 			 
-![WPF RadExpressionEditor Template Structure Silverlight](images/RadExpressionEditor_TemplateStructure_SL.png)
+![{{ site.framework_name }} RadExpressionEditor Template Structure Silverlight](images/RadExpressionEditor_TemplateStructure_SL.png)
 
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-![WPF RadExpressionEditor Template Structure WPF](images/RadExpressionEditor__TemplateStructure_Wpf.png)
+![{{ site.framework_name }} RadExpressionEditor Template Structure WPF](images/RadExpressionEditor__TemplateStructure_Wpf.png)
 
 {% endif %}
 

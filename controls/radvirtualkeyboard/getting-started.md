@@ -26,7 +26,7 @@ To use `RadVirtualKeyboard`, add references to the following assemblies:
 	 <telerik:RadVirtualKeyboard />
 {{endregion}}
 
-![WPF RadVirtualKeyboard Default Layout](images/radvirtualkeyboard-overview-1.png)
+![{{ site.framework_name }} RadVirtualKeyboard Default Layout](images/radvirtualkeyboard-overview-1.png)
 
 There is no need to manually subscribe an input element to the keyboard control. When you click a key on the VirtualKeyboard, a key press message is send to the OS. In addition to this, the control is unfocusable which means that if you focus a text input (like `TextBox` for example), the focus will stay there while you press the keys.
 

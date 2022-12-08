@@ -15,7 +15,7 @@ To bind the __RadTreeView__ to a collection use its __ItemsSource__ property and
 The following tutorial will guide you how to bind a __RadTreeView__ to a collection of business objects.
 
 The final result should look like the snapshot below: 
-![WPF RadTreeView Binding to ObservableCollection](images/RadTreeView_PopulatingWithDataBindingToObject_001.PNG)
+![{{ site.framework_name }} RadTreeView Binding to ObservableCollection](images/RadTreeView_PopulatingWithDataBindingToObject_001.PNG)
 
 * First, you need to include the following assemblies in your XAML declaration:
 	* __Telerik.Windows.Controls__
@@ -389,7 +389,7 @@ The final result should look like the snapshot below:
 		{{endregion}}
 
 * If you run the demo, the final result should look like the snapshot below. 
-![WPF RadTreeView Binding to ObservableCollection](images/RadTreeView_PopulatingWithDataBindingToObject_010.PNG)
+![{{ site.framework_name }} RadTreeView Binding to ObservableCollection](images/RadTreeView_PopulatingWithDataBindingToObject_010.PNG)
 
 ## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

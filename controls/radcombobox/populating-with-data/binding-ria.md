@@ -74,7 +74,7 @@ The __ComboBox__ will be bound to a __DomainDataSource__. When the control is lo
 
 Run your demo, the result can be seen on the snapshot below:
 
- ![WPF RadComboBox Bound to Data from RIA Service](images/RadComboBox_PopulatingWithData_BindingToRiaService_010.png)
+ ![{{ site.framework_name }} RadComboBox Bound to Data from RIA Service](images/RadComboBox_PopulatingWithData_BindingToRiaService_010.png)
 
 ## See Also
 

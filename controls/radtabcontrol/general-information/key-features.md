@@ -11,7 +11,7 @@ position: 0
 # Key Features
 
 Below you can see the structure of the standard __RadTabControl__, plus short description of the top-of-the line features.
-![WPF RadTabControl Key Features](images/RadTabControl_KeyFeatures_010.png)
+![{{ site.framework_name }} RadTabControl Key Features](images/RadTabControl_KeyFeatures_010.png)
 
 This is a list with short descriptions of the top-of-the line features of Telerik's __RadTabControl__.
 				

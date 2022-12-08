@@ -26,15 +26,15 @@ The major control elements of a the standard __RadPane__ are:
 
 * __Pin/Unpin Button__: This button allows you to pin and unpin the RadPane in case it is docked inside of the __RadSplitContainer__. It is visible by default but if you want to hide it, and prevent the user from changing the pin state of your pane, just set the pane's __CanUserPin__ property to __False__ and the button will be hidden.
 
-	![WPF RadDocking Pin/Unpin Button](images/RadDocking_Features_Panes_RadPane_050.png)
+	![{{ site.framework_name }} RadDocking Pin/Unpin Button](images/RadDocking_Features_Panes_RadPane_050.png)
 
 * __Close button__: This button allows you to close the __RadPane__. It is visible by default but if you want to hide it, and prevent the user from closing your pane, just set the __RadPane__'s property __CanUserClose__ to __False__ and the button will be hidden. You can also have a look at the [How to Disable the Close Button]({%slug raddocking-how-to-disable-the-close-button%}) topic.
 
-	![WPF RadDocking Close Button](images/RadDocking_Features_Panes_RadPane_060.png)
+	![{{ site.framework_name }} RadDocking Close Button](images/RadDocking_Features_Panes_RadPane_060.png)
 
 * __Tab__: The tab is visible only when a __RadPane__ is docked inside of a container that hosts more than one pane. In that case each RadPane is placed as a separate tab item. To learn more, take a look at the [Pane Groups]({%slug raddocking-features-pane-groups%}) article.
 
-	![WPF RadDocking Pane Group Tabs](images/RadDocking_Features_Panes_RadPane_070.png)
+	![{{ site.framework_name }} RadDocking Pane Group Tabs](images/RadDocking_Features_Panes_RadPane_070.png)
           
 ## See Also
 

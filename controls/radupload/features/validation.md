@@ -55,4 +55,4 @@ In order to take advantage of this feature you will need to handle the __RadUplo
 
 If the selected file is named Desert.jpg, it won't be uploaded and the __RadUpload__ will display a notification icon and a tooltip with the error message.
 
-![WPF RadUpload Validation Error Message Notification](images/RadUpload_features_validation.png)
+![{{ site.framework_name }} RadUpload Validation Error Message Notification](images/RadUpload_features_validation.png)

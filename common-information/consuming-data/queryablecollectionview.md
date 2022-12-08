@@ -53,7 +53,7 @@ The following example shows a basic QueryableCollectionView definintion without 
 {{endregion}}  
 
 #### Figure 1: RadGridView populate with QueryableCollectionView
-![WPF RadGridView populate with QueryableCollectionView](images/consuming-data-queryablecollectionview-0.png)
+![{{ site.framework_name }} RadGridView populate with QueryableCollectionView](images/consuming-data-queryablecollectionview-0.png)
 
 ## Sorting
 
@@ -66,7 +66,7 @@ The __SortDescriptors__ collection of the view allows you to define a set of [So
 {{endregion}}  
 
 #### Figure 2: RadGridView sorted with QueryableCollectionView SortDescriptors
-![WPF RadGridView sorted with QueryableCollectionView SortDescriptors](images/consuming-data-queryablecollectionview-1.png)
+![{{ site.framework_name }} RadGridView sorted with QueryableCollectionView SortDescriptors](images/consuming-data-queryablecollectionview-1.png)
 
 Generic sorting is supported too, using the `SortDescriptor<TElement, TKey>` class. 
 
@@ -96,7 +96,7 @@ The __FilterDescriptors__ collection of the view allows you to define a set of [
 {{endregion}}  
 
 #### Figure 3: RadGridView filtered with QueryableCollectionView FilterDescriptors
-![WPF RadGridView filtered with QueryableCollectionView FilterDescriptors](images/consuming-data-queryablecollectionview-2.png)
+![{{ site.framework_name }} RadGridView filtered with QueryableCollectionView FilterDescriptors](images/consuming-data-queryablecollectionview-2.png)
 
 Generic filtering is supported too, using the `FilterDescriptor<Element>` class. 
 
@@ -124,7 +124,7 @@ The __GroupDescriptors__ collection of the view allows you to define a set of [G
 {{endregion}}  
 
 #### Figure 4: RadGridView grouped with QueryableCollectionView GroupDescriptors
-![WPF RadGridView grouped with QueryableCollectionView GroupDescriptors](images/consuming-data-queryablecollectionview-3.png)
+![{{ site.framework_name }} RadGridView grouped with QueryableCollectionView GroupDescriptors](images/consuming-data-queryablecollectionview-3.png)
 
 Generic grouping is supported too, using the `GroupDescriptor<TElement, TKey, TSortingKey>` class. 
 
@@ -203,7 +203,7 @@ To use grouping, sorting and filtering set the corresponding descriptors of the 
 {{endregion}} 
 
 #### Figure 5: RadGridView populated using QueryableCollectionViewSource
-![WPF RadGridView populated using QueryableCollectionViewSource](images/consuming-data-queryablecollectionview-4.png)
+![{{ site.framework_name }} RadGridView populated using QueryableCollectionViewSource](images/consuming-data-queryablecollectionview-4.png)
 
 ## See Also
 * [Consuming Data Overview]({%slug consuming-data-overview%})

@@ -20,23 +20,23 @@ This article shows how to use the Telerik Analytics API to implement a custom Go
 
 2. Open the __Admin__ menu from the left pane's footer.
 
-	![WPF Google Analytics Open the Admin Menu](images/google-analytics-integration-0.png)
+	![{{ site.framework_name }} Google Analytics Open the Admin Menu](images/google-analytics-integration-0.png)
 	
 3. From the Admin menu click on __Create Property__ and create a new property that tracks Website data. 
 
-	![WPF Google Analytics Create Property](images/google-analytics-integration-1.png)
+	![{{ site.framework_name }} Google Analytics Create Property](images/google-analytics-integration-1.png)
 	
-	![WPF Google Analytics Create Tracking ID](images/google-analytics-integration-2.png)
+	![{{ site.framework_name }} Google Analytics Create Tracking ID](images/google-analytics-integration-2.png)
 	
 4. Copy the __Tracking ID__ from the Tracking Code menu that should open automatically when the new property is created.
 	
-	![WPF Google Analytics Open Tracking ID](images/google-analytics-integration-3.png)
+	![{{ site.framework_name }} Google Analytics Open Tracking ID](images/google-analytics-integration-3.png)
 	
 5. Create a new __Mobile App__ view in the newly created property.
 
-	![WPF Google Analytics Create Mobile App View Old](images/google-analytics-integration-4.png)
+	![{{ site.framework_name }} Google Analytics Create Mobile App View Old](images/google-analytics-integration-4.png)
 
-	![WPF Google Analytics Create Mobile App View New](images/google-analytics-integration-5.png)
+	![{{ site.framework_name }} Google Analytics Create Mobile App View New](images/google-analytics-integration-5.png)
 	
 > The Tracking ID get in step 4 will be used in the .NET API shown in the [Implementing the Analytics Provider](#implementing-the-analytics-provider) section of this article.
 
@@ -313,15 +313,15 @@ After the sucessfull set up of the custom Analytics monitor, the user interactio
 
 Any actions created with the `HitBuilder.CreateCustomEvent` method will be shown in the __Real-Time-->Events__ menu of the Google Analytics dashboard, a few seconds after the sending.
 
-![WPF Google Analytics Events Menu](images/google-analytics-integration-6.png)
+![{{ site.framework_name }} Google Analytics Events Menu](images/google-analytics-integration-6.png)
 
 Any actions created with the `HitBuilder.CreateException` method will be shown in the __Behaviour-->Crashes and Exceptions__ menu of the Google Analytics dashboard.
 
-![WPF Google Analytics Crashes and Exceptions Menu](images/google-analytics-integration-7.png)
+![{{ site.framework_name }} Google Analytics Crashes and Exceptions Menu](images/google-analytics-integration-7.png)
 
 Any actions created with the `HitBuilder.CreateTiming` method will be shown in the __Behaviour-->App Speed__ menu of the Google Analytics dashboard. In order to view the data make sure to provide some time for the dashboard to be refreshed and that you have selected a time range including the current date. 
 
-![WPF Google Analytics App Speed Menu](images/google-analytics-integration-8.png)
+![{{ site.framework_name }} Google Analytics App Speed Menu](images/google-analytics-integration-8.png)
 
 >tip For any other methods of the HitBuilder which is part of the __Windows SDK for Google Analytics__, please check its [documentation on GitHub](https://github.com/dotnet/windows-sdk-for-google-analytics/wiki/Getting-Started).
 

@@ -19,7 +19,7 @@ __RadChart__ for {{ site.framework_name }} is the exact tool to transform variou
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadChart Overview](images/RadChart_Overview_02.png)
+![{{ site.framework_name }} RadChart Overview](images/RadChart_Overview_02.png)
 
 >In order to use __RadChart__ control, you will need to add references to the following assemblies:
 * __Telerik.Windows.Controls.Charting.dll__

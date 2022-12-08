@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to create a custom __ItemTemplat
 
 The final result from this tutorial should look like the snapshot below.
 
-![WPF RadComboBox with Grid-Like Dropdown](images/RadComboBox_HowTo_GridLikeDropDown_010.png)
+![{{ site.framework_name }} RadComboBox with Grid-Like Dropdown](images/RadComboBox_HowTo_GridLikeDropDown_010.png)
 
 >Before proceeding further with this tutorial, be sure that you are familiar with how to [bind a RadComboBox to a collection of objects]({%slug radcombobox-populating-with-data-binding-to-object%}).
 
@@ -201,7 +201,7 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 
 The final result is shown again on the next image.
 
-![WPF RadComboBox with Grid-Like Dropdown](images/RadComboBox_HowTo_GridLikeDropDown_020.png)
+![{{ site.framework_name }} RadComboBox with Grid-Like Dropdown](images/RadComboBox_HowTo_GridLikeDropDown_020.png)
 
 ## See Also
 

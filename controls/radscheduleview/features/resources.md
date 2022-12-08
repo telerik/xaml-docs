@@ -121,7 +121,7 @@ Now if you want to group the appointments by Location, you can use __GroupDescri
 
 The code above will group RadScheduleView by resource type named Location. Day view and Week view are always grouped by date, so the new group description will be inserted before the standard DateGroupDescription:
 
-![WPF RadScheduleView Location Resources](images/scheduleview_features_resources_image1.png)
+![{{ site.framework_name }} RadScheduleView Location Resources](images/scheduleview_features_resources_image1.png)
 
 If you want to change the group order you could use the following syntax:
 
@@ -141,7 +141,7 @@ If you want to change the group order you could use the following syntax:
 
 The result will be the following (note the changed group order):
 
-![WPF RadScheduleView Changed Group Order](images/scheduleview_features_resources_image2.png)
+![{{ site.framework_name }} RadScheduleView Changed Group Order](images/scheduleview_features_resources_image2.png)
 
 ## Adding Resources in code behind
 

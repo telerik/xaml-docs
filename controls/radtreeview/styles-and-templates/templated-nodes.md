@@ -13,7 +13,7 @@ position: 6
 The Telerik __RadTreeView__ is a lookless and completely stylable control. This tutorial will demonstrate how you can build a horizontal treeview by simply using __Styles__ and __ControlTemplates__.
 
 Here is how the final result should look like: 
-![WPF RadTreeView Horizontal Orientation with Styles and Templates](images/RadTreeView_TemplatingTemplatedNodes.PNG)
+![{{ site.framework_name }} RadTreeView Horizontal Orientation with Styles and Templates](images/RadTreeView_TemplatingTemplatedNodes.PNG)
 
 For the purpose of this tutorial will be used the following treeview declaration: 
 
@@ -52,7 +52,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 	</telerik:RadTreeView>
 	{{endregion}}
 
-![WPF RadTreeView Sample Declaration](images/RadTreeView_TemplatingTemplatedNodes_001.PNG)
+![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_TemplatingTemplatedNodes_001.PNG)
 
 * The treeview has to be made horizontal. In order to do that you need to set the __ItemContainerStyle__ property of the __RadTreeView__ and __RadTreeViewItem__.
 
@@ -145,7 +145,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 		{{endregion}}
 
 	So far you should have the following result: 
-	![WPF RadTreeView Horizontal StackPanel](images/RadTreeView_TemplatingTemplatedNodes_010.PNG)
+	![{{ site.framework_name }} RadTreeView Horizontal StackPanel](images/RadTreeView_TemplatingTemplatedNodes_010.PNG)
 
 The next step is to make some visual enhancements in the tree. 
 
@@ -296,7 +296,7 @@ The next step is to make some visual enhancements in the tree.
 		{{endregion}}
 
 	And the effect can be seen on the next snapshot:
-	![WPF RadTreeView Horizontal Expander Style](images/RadTreeView_TemplatingTemplatedNodes_020.PNG)
+	![{{ site.framework_name }} RadTreeView Horizontal Expander Style](images/RadTreeView_TemplatingTemplatedNodes_020.PNG)
 
 * You need to create the template for the treeview nodes. Add the following __ControlTemplate__ declaration to your application resources: 
 
@@ -461,13 +461,13 @@ The next step is to make some visual enhancements in the tree.
 		{{endregion}}
 
 	We are one step closer to the desired result: 
-	![WPF RadTreeView Score Table](images/RadTreeView_TemplatingTemplatedNodes_030.PNG)
+	![{{ site.framework_name }} RadTreeView Score Table](images/RadTreeView_TemplatingTemplatedNodes_030.PNG)
 
 In order to add animation to your treeview you need to use {% if site.site_name == 'WPF' %}triggers{% endif %}{% if site.site_name == 'Silverlight' %} the Visual State Manager{% endif %}. {% if site.site_name == 'Silverlight' %}Open your application in Expression Blend.{% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 * Find the __TreeViewItemDefaultTemplate__in the Resources pane and open it for edit:
-![WPF RadTreeView Window Resources in Blend](images/RadTreeView_TemplatingTemplatedNodes_040.PNG)
+![{{ site.framework_name }} RadTreeView Window Resources in Blend](images/RadTreeView_TemplatingTemplatedNodes_040.PNG)
 Add the following visual states and set the following properties:
 {% endif %}
 
@@ -738,7 +738,7 @@ Here is the complete XAML for __ControlTemplate.Triggers__ section and the final
 	{{endregion}}
 
 And here is the final result:
-![WPF RadTreeView Final Score Table](images/RadTreeView_TemplatingTemplatedNodes_060.PNG)
+![{{ site.framework_name }} RadTreeView Final Score Table](images/RadTreeView_TemplatingTemplatedNodes_060.PNG)
 
 ## See Also
  * [Styling the Expander]({%slug radtreeview-styling-and-appearance-styling-expander%})

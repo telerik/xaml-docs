@@ -52,7 +52,7 @@ In the click event handler, we can declare our RadCallout control. To show the c
 {{endregion}}
 
 #### __Figure 1: Popup animation__
-![WPF RadCallout Popup animation](images/radcallout-features-animations_1.gif)
+![{{ site.framework_name }} RadCallout Popup animation](images/radcallout-features-animations_1.gif)
 
 ## Animation Types
 
@@ -83,7 +83,7 @@ https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPE
 {{endregion}}
 
 #### __Figure 2: Animated Popup with Easing functions__
-![WPF RadCallout Animated Popup with Easing functions](images/radcallout-features-animations_easing.gif)
+![{{ site.framework_name }} RadCallout Animated Popup with Easing functions](images/radcallout-features-animations_easing.gif)
 
 ### Fade Animation
 
@@ -111,7 +111,7 @@ The __CalloutAnimation.Fade__ animation fades the Popup control opening/closing 
 {{endregion}}
 
 #### __Figure 3: Fade animation for opening and closing state__
-![WPF RadCallout Fade animation for opening and closing state](images/radcallout-features-animations_fade_cloud.gif)
+![{{ site.framework_name }} RadCallout Fade animation for opening and closing state](images/radcallout-features-animations_fade_cloud.gif)
 
 ### Move Animation
 
@@ -139,7 +139,7 @@ The __CalloutAnimation.Move__ animation adds a moving effect to the opening/clos
 {{endregion}}
 
 #### __Figure 4: Move animation for opening and closing state__
-![WPF RadCallout Move animation for opening and closing state](images/radcallout-features-animations_move_ellipse.gif)
+![{{ site.framework_name }} RadCallout Move animation for opening and closing state](images/radcallout-features-animations_move_ellipse.gif)
 
 ### FadeAndMove Animation
 
@@ -167,7 +167,7 @@ The __CalloutAnimation.FadeAndMove__ animation is represented by a combination o
 {{endregion}}
 
 #### __Figure 5: FadeAndMove animation for opening and closing state__
-![WPF RadCallout FadeAndMove animation for opening and closing state](images/radcallout-features-animations_fademove_kaboom.gif)
+![{{ site.framework_name }} RadCallout FadeAndMove animation for opening and closing state](images/radcallout-features-animations_fademove_kaboom.gif)
 
 ### Reveal Animation
 
@@ -195,7 +195,7 @@ The __CalloutAnimation.Reveal__ animation animates the clipping effect to the co
 {{endregion}}
 
 #### __Figure 6: Reveal animation for opening and closing state__
-![WPF RadCallout Reveal animation for opening and closing state](images/radcallout-features-animations_reveal_rectangle.gif)
+![{{ site.framework_name }} RadCallout Reveal animation for opening and closing state](images/radcallout-features-animations_reveal_rectangle.gif)
 
 ### FadeAndReveal Animation
 
@@ -223,7 +223,7 @@ The __CalloutAnimation.FadeAndReveal__ animation is represented by a combination
 {{endregion}}
 
 #### __Figure 7: FadeAndReveal animation for opening and closing state__
-![WPF RadCallout FadeAndReveal animation for opening and closing state](images/radcallout-features-animations_fadereveal_roundedrectangle.gif)
+![{{ site.framework_name }} RadCallout FadeAndReveal animation for opening and closing state](images/radcallout-features-animations_fadereveal_roundedrectangle.gif)
 
 ### Scale Animation
 
@@ -251,7 +251,7 @@ The __CalloutAnimation.Scale__ animation controls the scale of the object. This 
 {{endregion}}
 
 #### __Figure 8: Scale animation for opening and closing state__
-![WPF RadCallout Scale animation for opening and closing state](images/radcallout-features-animations_scale_cloud.gif)
+![{{ site.framework_name }} RadCallout Scale animation for opening and closing state](images/radcallout-features-animations_scale_cloud.gif)
 
 ### FadeAndScale Animation
 
@@ -279,7 +279,7 @@ The __CalloutAnimation.FadeAndScale__ animation is represented by a combination 
 {{endregion}}
 
 #### __Figure 9: FadeAndScale animation for opening and closing state__
-![WPF RadCallout FadeAndScale animation for opening and closing state](images/radcallout-features-animations_fadescale_ellipse.gif)
+![{{ site.framework_name }} RadCallout FadeAndScale animation for opening and closing state](images/radcallout-features-animations_fadescale_ellipse.gif)
 
 ## Disable Animation
 

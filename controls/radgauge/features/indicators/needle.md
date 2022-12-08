@@ -44,7 +44,7 @@ Here is an example of a __Needle__ definition:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge with Needle and Pinpoint](images/RadGauge_Features_Indicators_Needle_01.png)
+![{{ site.framework_name }} RadGauge with Needle and Pinpoint](images/RadGauge_Features_Indicators_Needle_01.png)
 
 ## Tail Height
 

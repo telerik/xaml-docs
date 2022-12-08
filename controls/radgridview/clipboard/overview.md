@@ -10,7 +10,7 @@ position: 0
 
 # Clipboard Overview
 
-![WPF RadGridView Copy Paste Clipboard](images/RadGridView_ClipboardOperations.png)
+![{{ site.framework_name }} RadGridView Copy Paste Clipboard](images/RadGridView_ClipboardOperations.png)
 
 
 

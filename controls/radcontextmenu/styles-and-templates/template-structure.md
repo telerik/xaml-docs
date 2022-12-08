@@ -20,7 +20,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 This section explains the structure of the __RadContextMenu's__ template. Here is a snapshot of the template generated in Expression Blend.
 
-![WPF RadContextMenu Template Structure](images/RadContextMenu_Template_Structure_01.png)
+![{{ site.framework_name }} RadContextMenu Template Structure](images/RadContextMenu_Template_Structure_01.png)
 
 It contains the following parts:
 

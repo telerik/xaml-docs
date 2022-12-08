@@ -54,7 +54,7 @@ Each range should have a start and and end points. They are defined via the Min 
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Multiple Ranges](images/RadGauge_Features_Ranges_Basics_01.png)
+![{{ site.framework_name }} RadGauge Multiple Ranges](images/RadGauge_Features_Ranges_Basics_01.png)
 
 ## Width
 
@@ -88,7 +88,7 @@ You can control the width of a range at its start and at its end point. This is 
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Range Width](images/RadGauge_Features_Ranges_Basics_02.png)
+![{{ site.framework_name }} RadGauge Range Width](images/RadGauge_Features_Ranges_Basics_02.png)
 
 ## Range Appearance
 
@@ -131,7 +131,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Range Stroke](images/RadGauge_Features_Ranges_Basics_03.png)
+![{{ site.framework_name }} RadGauge Range Stroke](images/RadGauge_Features_Ranges_Basics_03.png)
 
 ## Indicator Appearance
 
@@ -186,7 +186,7 @@ It specifies the background color for the indicator's background when it is in t
 
 Here is a snapshot with the end result:
 
-![WPF RadGauge Range Indicator Appearance](images/RadGauge_Features_Ranges_Basics_04.png)
+![{{ site.framework_name }} RadGauge Range Indicator Appearance](images/RadGauge_Features_Ranges_Basics_04.png)
 
 ## IndicatorColorMixSensitivity
 
@@ -224,7 +224,7 @@ This sample demonstrates how the indicator changes its background in this case:
 
 Here are snapshots for different values of the bar indicator:        
 
-![WPF RadGauge Range Indicator Colors](images/RadGauge_Features_Ranges_Basics_05.png)
+![{{ site.framework_name }} RadGauge Range Indicator Colors](images/RadGauge_Features_Ranges_Basics_05.png)
 
 ## Labels Appearance
 
@@ -268,7 +268,7 @@ The appearance of the labels in the range can be controlled via the following pr
 	
 	Here is a snapshot of the result:
 
-	![WPF RadGauge Range Label Appearance](images/RadGauge_Features_Ranges_Basics_06.png)
+	![{{ site.framework_name }} RadGauge Range Label Appearance](images/RadGauge_Features_Ranges_Basics_06.png)
 
 ## Ticks Appearance
 

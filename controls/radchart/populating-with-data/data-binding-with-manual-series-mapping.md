@@ -496,7 +496,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 8 . The final result should look like the snapshot below.
-![WPF RadChart  ](images/RadChart_PopulatingWithData_ManualSeriesMapping_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_ManualSeriesMapping_01.png)
 
 9 . The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 

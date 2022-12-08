@@ -44,4 +44,4 @@ How to align the popup with the search results of RadAutoCompleteBox to the Top 
 	}
 {{endregion}}
 
-![WPF RadAutoCompleteBox Show Popup on Top](images/kb-autocompletebox-show-popup-on-top-0.png)
+![{{ site.framework_name }} RadAutoCompleteBox Show Popup on Top](images/kb-autocompletebox-show-popup-on-top-0.png)

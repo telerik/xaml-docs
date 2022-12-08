@@ -15,7 +15,7 @@ __RadToggleSwitchButton__ is a control design to display two exclusive choices. 
 >tip You can see how to use ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
 #### __Figure 1: Toggle Switch Button__
-![WPF RadButtons Toggle Switch Button](images/radbuttons-features-toggle-switch-button-0.png)
+![{{ site.framework_name }} RadButtons Toggle Switch Button](images/radbuttons-features-toggle-switch-button-0.png)
 
 ## Defining RadToggleSwitchButton
 
@@ -48,7 +48,7 @@ The RadToggleSwitchButton allows you to control the position of its CheckedConte
 * __Left__ 
 
 #### __Figure 2: ContentPosition property__
-![WPF RadButtons ContentPosition property](images/radbuttons-features-toggle-switch-button-1.png)
+![{{ site.framework_name }} RadButtons ContentPosition property](images/radbuttons-features-toggle-switch-button-1.png)
  
 ## Enable Three-State Mode
 
@@ -82,7 +82,7 @@ These properties customize the size of the ToggleSwitchButton track.
 {{endregion}}
 
 #### __Figure 3: Change Track Height/Width__
-![WPF RadButtons Change Track Height/Width](images/radbuttons-features-toggle-switch-button-2.png)
+![{{ site.framework_name }} RadButtons Change Track Height/Width](images/radbuttons-features-toggle-switch-button-2.png)
 
 ### __ThumbHeight__ and __ThumbWidth__
 
@@ -94,7 +94,7 @@ These properties customize the size of the ToggleSwitchButton track.
 {{endregion}}
 
 #### __Figure 4: Change Thumb Height/Width__
-![WPF RadButtons Change Thumb Height/Width](images/radbuttons-features-toggle-switch-button-3.png)
+![{{ site.framework_name }} RadButtons Change Thumb Height/Width](images/radbuttons-features-toggle-switch-button-3.png)
 
 ## See Also 
  * [Button]({%slug radbuttons-features-button%})

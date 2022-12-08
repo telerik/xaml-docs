@@ -21,10 +21,10 @@ Telerik __RadRibbonView__ provides a simple and consistent way for building inte
 The __RadRibbonView__ helps end-users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in __logical groups__ that are collected together under specific [tabs]({%slug radribbonview-ribbon-tab%}). Or in other words - the __Ribbon Group__ lets you categorize the commands to be displayed for the end-users.		
 
 __Ribbon Groups__ are defined into the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}). A single __Ribbon Tab__ usually contains many __Ribbon Groups__ to layout its content.
-![WPF RadRibbonView Ribbon Groups](images/RibbonView_Group_Overview.png)
+![{{ site.framework_name }} RadRibbonView Ribbon Groups](images/RibbonView_Group_Overview.png)
 
 Each Ribbon Group may have a __Header__ and a __Dialog Launcher__. The __Dialog Launcher__ appears in the bottom right corner of the group.
-![WPF RadRibbonView Dialog Launcher and Header](images/RibbonView_Group_Parts.png)
+![{{ site.framework_name }} RadRibbonView Dialog Launcher and Header](images/RibbonView_Group_Parts.png)
 
 >tip The class that represents the ribbon group is __Telerik.Windows.Controls.RadRibbonGroup__.		  
 
@@ -38,18 +38,18 @@ Each __RadRibbonGroup__ in a __RadRibbonTab__ may have four possible sizes (__Va
 
 * __Large__ - this is the default size (__Variant__).
 
-	![WPF RadRibbonView Ribbon Group Variant Large](images/RibbonView_Group_Large.png)
+	![{{ site.framework_name }} RadRibbonView Ribbon Group Variant Large](images/RibbonView_Group_Large.png)
 
 	>tip The __RadRibbonGroups__ assumes their __DefaultVariant__ (which by default is __Large__) state whenever they can.			  
 
 * __Medium__
-	![WPF RadRibbonView Ribbon Group Variant Medium](images/RibbonView_Group_Medium.png)
+	![{{ site.framework_name }} RadRibbonView Ribbon Group Variant Medium](images/RibbonView_Group_Medium.png)
 
 * __Small__
-	![WPF RadRibbonView Ribbon Group Variant Small](images/RibbonView_Group_Small.png)
+	![{{ site.framework_name }} RadRibbonView Ribbon Group Variant Small](images/RibbonView_Group_Small.png)
 
 * __Collapsed__
-	![WPF RadRibbonView Ribbon Group Variant Collapsed](images/RibbonView_Group_Collapsed.png)
+	![{{ site.framework_name }} RadRibbonView Ribbon Group Variant Collapsed](images/RibbonView_Group_Collapsed.png)
 
 For more information about the layout resizing mechanism, please refer to the [Resizing]({%slug radribbonview-resizing%}) topic. Check out the rest of the topic which is entirely dedicated to the __RadRibbonGroup__.		
 
@@ -77,7 +77,7 @@ Adding __RadRibbonGroups__ is done through the __RadRibbonTab__'s __Items__ prop
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![WPF RadRibbonView Empty Ribbon Groups](images/RibbonView_Group_Empty.png)
+![{{ site.framework_name }} RadRibbonView Empty Ribbon Groups](images/RibbonView_Group_Empty.png)
 
 ## Enabling the Dialog Launcher
 
@@ -101,7 +101,7 @@ Any group can have a dialog launcher button which appears in the bottom right co
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![WPF RadRibbonView Dialog Launchers](images/RibbonView_Group_DialogLauncher.png)
+![{{ site.framework_name }} RadRibbonView Dialog Launchers](images/RibbonView_Group_DialogLauncher.png)
 
 >tip The default value of the __RadRibbonGroup__'s __DialogLauncherVisibility__ property is __Visibility.Collapsed.__
 
@@ -162,7 +162,7 @@ The __RadRibbonGroup__ is a [HeaderedItemsControl](http://msdn.microsoft.com/en-
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![WPF RadRibbonView Sample Ribbon Group](images/RibbonView_Group_Sample.png)
+![{{ site.framework_name }} RadRibbonView Sample Ribbon Group](images/RibbonView_Group_Sample.png)
 
 ## Setting Screen Tip
 
@@ -171,7 +171,7 @@ The Telerik __RadRibbonView__'s API allows you to associate screen tips with eac
 ## Specifying Group Variants
 
 Each __RadRibbonGroup__ in a __RadRibbonTab__ may have four possible sizes (__Variants__): __Large__, __Medium__, __Small__ and __Collapsed__. __Collapsed__ groups always look the same - only the __Header__ and an __image__ are shown.
-![WPF RadRibbonView Collapsed Ribbon Groups](images/RibbonView_Group_CollapsedGroups.png)
+![{{ site.framework_name }} RadRibbonView Collapsed Ribbon Groups](images/RibbonView_Group_CollapsedGroups.png)
 
 The resizing of the elements is defined per __RadRibbonTab__. The resizing behavior of the tab is defined by setting the __Variant__ collection to each of its __RadRibbonGroups__ and is based on __priorities__. By default, if no __priorities__ are set to the __Variants__ of the __RibbonGroups,__ they will be resized from __right to left__. In order to customize the order by which the groups will be resized, the developer needs to specify a __Priority__ for each of the __RibbonGroup__ __Variants__.		
 

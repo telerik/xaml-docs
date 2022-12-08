@@ -60,7 +60,7 @@ In the __RadDateTimePicker's__ calendar you can restrict the selectable items by
 	   SelectableDateEnd="10/10/2010"/>
 {{endregion}}
 
-![WPF RadDateTimePicker with Custom Selectable Start and End Date](images/dateTimePicker_features_selection_010.png)
+![{{ site.framework_name }} RadDateTimePicker with Custom Selectable Start and End Date](images/dateTimePicker_features_selection_010.png)
 
 The date items that are after the __SelectableDateEnd__ will still be visible but the user will not be able to select them. 
 

@@ -32,7 +32,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking Sample Declaration](images/RadDocking_HowTo_AddHeaderButton_020.png)
+![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_HowTo_AddHeaderButton_020.png)
 
 ## Adding Buttons to the Pane Header 
 
@@ -75,7 +75,7 @@ Change your XAML declaration and set the __TitleTemplate__ property of the __Rad
 
 Now you will get a result which is the same as the final one. The only difference is that when you click the button nothing will happen.
 
-![WPF RadDocking with Pane Header Button](images/RadDocking_HowTo_AddHeaderButton_030.png)
+![{{ site.framework_name }} RadDocking with Pane Header Button](images/RadDocking_HowTo_AddHeaderButton_030.png)
 
 ## Adding a Behavior
 

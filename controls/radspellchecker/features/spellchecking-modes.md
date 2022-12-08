@@ -35,7 +35,7 @@ To do this kind of check, use the method as follows:
 
 When using this mode RadSpellChecker will check every word in a separate window, which looks like this: 
 
-![WPF RadSpellChecker ](images/RadSpellChecker_Dialog_WordByWord.png)
+![{{ site.framework_name }} RadSpellChecker ](images/RadSpellChecker_Dialog_WordByWord.png)
 
 
 
@@ -63,7 +63,7 @@ You can trigger this operation using the method below:
 
 When using AllAtOnce mode, RadSpellChecker loads the entire content of the control being spell-checked in a window looking like this:
 
-![WPF RadSpellChecker AllAtOnce Mode](images/RadSpellChecker_Dialog_AllAtOnce.png)
+![{{ site.framework_name }} RadSpellChecker AllAtOnce Mode](images/RadSpellChecker_Dialog_AllAtOnce.png)
 
 You are presented with the same options as the WordByWord mode. The difference is that the entire spell checking is executed in this window and only after that the content is transferred to the original control being spellchecked.
 

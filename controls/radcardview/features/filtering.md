@@ -19,7 +19,7 @@ The control internally works with a [QueryableCollectionView]({%slug consuming-d
 The data items can be filtered using the [filtering control]({%slug radcardview-visual-structure%}) which opens when a data field descriptor's filters button is pressed.
 
 #### Figure 1: RadCardView filtering control
-![WPF RadCardView RadCardView filtering control](images/radcardview-features-filtering-0.png)
+![{{ site.framework_name }} RadCardView RadCardView filtering control](images/radcardview-features-filtering-0.png)
 
 To disable user filtering, set the __IsFilteringAllowed__ property to __False__. 
 

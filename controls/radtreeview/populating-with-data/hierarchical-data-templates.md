@@ -236,7 +236,7 @@ And finally, we need to set the DataContext of the MainWindow:
 {{endregion}}
 
 Here is the final result: 
-![WPF RadTreeView Custom HierarchicalDataTemplate and ItemContainerStyle](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)
+![{{ site.framework_name }} RadTreeView Custom HierarchicalDataTemplate and ItemContainerStyle](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)
 
 ## See Also
  * [Styling and Appearance - Overview]({%slug radtreeview-styling-and-appearance-overview2%})

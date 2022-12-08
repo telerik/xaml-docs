@@ -33,7 +33,7 @@ Similar behavior is observed when an item is unpinned. Unpinning an item will mo
 
 > The pinned/unpinned item will be brought into the view.
 
-![WPF RadTabControl Pinned Unpinned Items](images/tabcontrol-pinned-tabitems.png)
+![{{ site.framework_name }} RadTabControl Pinned Unpinned Items](images/tabcontrol-pinned-tabitems.png)
 
 ## Close
 
@@ -48,7 +48,7 @@ The close button of the RadTabItem is collapsed by default. The button can be sh
 	</Style>
 {{endregion}}
 
-![WPF RadTabControl Tab Items with Close Button](images/tabcontrol-closebutton-tabitems.png)
+![{{ site.framework_name }} RadTabControl Tab Items with Close Button](images/tabcontrol-closebutton-tabitems.png)
 
 To prevent the tab from closing when the middle mouse button is pressed, set the __CloseTabsOnMouseMiddleButtonDown__ property of RadTabControl to False.
 

@@ -96,7 +96,7 @@ The __LabelPath__ determines the label that will be displayed over the tile.
 
 __RadPivotMap__  
 
-![WPF RadTreeMap with ItemsSource](images/radtreemap-getting-started-pivotmap-0.png)
+![{{ site.framework_name }} RadTreeMap with ItemsSource](images/radtreemap-getting-started-pivotmap-0.png)
 
 >tip Avoid inserting RadPivotMap in panels that measure its children with Infinity. In this case, the control cannot properly measure and arrange its child visuals. Examples for panels that measure the control with Infinity size are StackPanel, ScrollViewer or a Grid's Row/ColumnDefinition with its size (Width or Height) set to Auto. Instead, use panels that measure its children with the available space.
 

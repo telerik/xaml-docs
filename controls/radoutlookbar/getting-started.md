@@ -50,7 +50,7 @@ position: 1
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-![WPF RadOutlookBar with Icons for the Items](images/outlook_step3.png)
+![{{ site.framework_name }} RadOutlookBar with Icons for the Items](images/outlook_step3.png)
 
 ## Selecting item
 
@@ -138,7 +138,7 @@ To limit the number of items that can be displayed in the active area you can us
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-![WPF RadOutlookBar Active Items Max Count](images/outlook_step4.png)
+![{{ site.framework_name }} RadOutlookBar Active Items Max Count](images/outlook_step4.png)
 
 ## Setting a Theme
 

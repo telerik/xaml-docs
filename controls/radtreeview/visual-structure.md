@@ -14,7 +14,7 @@ This section defines terms and concepts used in the scope of __RadTreeView__ you
 
 __RadTreeView__ is a powerful control which lets you create complicated navigation systems and display hierarchical structures, such as directories and relational data. Below you can see a snapshot and explanation of the main visual elements of the standard __RadTreeView__ control.
 
-![WPF RadTreeView Visual Structure](images/RadTreeView_VisualStructure_001.png)
+![{{ site.framework_name }} RadTreeView Visual Structure](images/RadTreeView_VisualStructure_001.png)
 
 The structure of a __RadTreeView__ is pretty simple. It consists of the following main elements:
 

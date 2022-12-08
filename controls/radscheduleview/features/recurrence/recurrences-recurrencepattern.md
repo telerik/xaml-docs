@@ -499,4 +499,4 @@ When you want to specify the end date of the appointment's occurrences, then you
 
 The appointment that starts on 11.05.201 will occur until 24.05.2011. See the next image.
 
-![WPF RadScheduleView Recurrence Pattern](images/radscheduleview_recurrencypattern_4.png)
+![{{ site.framework_name }} RadScheduleView Recurrence Pattern](images/radscheduleview_recurrencypattern_4.png)

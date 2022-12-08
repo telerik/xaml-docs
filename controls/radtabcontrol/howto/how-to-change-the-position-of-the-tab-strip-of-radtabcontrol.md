@@ -12,7 +12,7 @@ position: 6
 
 __RadTabControl__ expose few properties that can be used for controlling its [tab strip]({%slug radtabcontrol-visual-structure%}) position. 
 * __TabStripPlacement__ - gets or sets the position where the tab strip should appear. The default value is Top. The property is an enumeration of type __Telerik.Windows.Controls.Dock__. The enumeration contains the following values:  
-	![WPF RadTabControl Different TabStrip Positions](images/RadTabControl_HowTo_TabStripPosition_02.png)
+	![{{ site.framework_name }} RadTabControl Different TabStrip Positions](images/RadTabControl_HowTo_TabStripPosition_02.png)
 	
 	The property can be set in the following manners:
 	#### __XAML__
@@ -52,8 +52,8 @@ __RadTabControl__ expose few properties that can be used for controlling its [ta
 * __TabOrientation__ - gets or sets the orientation of the tab items. The property is an enumeration of type __System.Windows.Controls.Orientation__. Setting the property's value to Vertical will rotate the tabs content to 90 degrees (clockwise). The orientation is set to __Horizontal__.
 	The following image demonstrates the TabOrientation set to Vertical without any other changes in the tab strip position applied:
 	
-	{% if site.site_name == 'Silverlight' %}![WPF RadTabControl TabOrientation Vertical](images/RadTabControl_HowTo_TabStripPosition_01.png){% endif %}
-	{% if site.site_name == 'WPF' %}![WPF RadTabControl TabOrientation Vertical](images/RadTabControl_HowTo_TabStripPosition_01-wpf.png){% endif %}		
+	{% if site.site_name == 'Silverlight' %}![{{ site.framework_name }} RadTabControl TabOrientation Vertical](images/RadTabControl_HowTo_TabStripPosition_01.png){% endif %}
+	{% if site.site_name == 'WPF' %}![{{ site.framework_name }} RadTabControl TabOrientation Vertical](images/RadTabControl_HowTo_TabStripPosition_01-wpf.png){% endif %}		
 
 ## See Also
  * [How to Select Control in Expression Blend]({%slug radtabcontrol-how-to-select-control-in-expression-blend%})

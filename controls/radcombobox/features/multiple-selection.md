@@ -52,7 +52,7 @@ __Example 2__ demonstrates how to change the default separator to a dash.
 {{endregion}}
 
 #### __Figure 1: Selected items separated by dash set in Example 2__
-![WPF RadComboBox Selected items separated by dash set in Example 2](images/RadComboBox_Features_MultipleSelection_01.png)
+![{{ site.framework_name }} RadComboBox Selected items separated by dash set in Example 2](images/RadComboBox_Features_MultipleSelection_01.png)
 
 >If __RadComboBox__ is __Editable__ and the __IsTextSearchEnabled__ is __True__ pressing the separator while typing inside the input area of the control will autocomplete the item to its end.
 
@@ -77,7 +77,7 @@ __Example 3__ demonstrates how to set the __MultipleSelectionSeparatorStringForm
 {{endregion}}
 
 #### __Figure 2: Selected items separated by the MultipleSelectionSeparatorStringFormat set in Example 3__
-![WPF RadComboBox Selected items separated by the MultipleSelectionSeparatorStringFormat set in Example 3](images/RadComboBox_Features_MultipleSelection_02.png)
+![{{ site.framework_name }} RadComboBox Selected items separated by the MultipleSelectionSeparatorStringFormat set in Example 3](images/RadComboBox_Features_MultipleSelection_02.png)
 
 >If __RadComboBox__ is __Editable__, the __MultipleSelectionSeparatorStringFormat__ will be applied only when the focus is not inside the input area of the control. If the input area is focused, only the __MultipleSelectionSeparator__ will be applied and visualized.
 
@@ -125,7 +125,7 @@ In __Example 4__ a __Button__ is linked to the __RadComboBoxCommands.SelectAll__
 {{endregion}}
 
 #### __Figure 3: RadCombobBox after executing SelectAll command__
-![WPF RadComboBox RadCombobBox after executing SelectAll command](images/RadComboBox_Features_MultipleSelection_03.png)
+![{{ site.framework_name }} RadComboBox RadCombobBox after executing SelectAll command](images/RadComboBox_Features_MultipleSelection_03.png)
 
 ### UnselectAll
 
@@ -147,10 +147,10 @@ __Example 5__ demonstrates how __UnselectAll__ command could be attached to the 
 {{endregion}}
 
 #### __Figure 4: Before executing UnselectAll command__
-![WPF RadComboBox Before executing UnselectAll command](images/RadComboBox_Features_MultipleSelection_04.png)
+![{{ site.framework_name }} RadComboBox Before executing UnselectAll command](images/RadComboBox_Features_MultipleSelection_04.png)
 
 #### __Figure 5: After executing UnselectAll command__
-![WPF RadComboBox After executing UnselectAll command](images/RadComboBox_Features_MultipleSelection_05.png)
+![{{ site.framework_name }} RadComboBox After executing UnselectAll command](images/RadComboBox_Features_MultipleSelection_05.png)
 
 ### ToggleSelectAll
 
@@ -173,10 +173,10 @@ __Example 6__ demonstrates how __ToggleSelectAll__ command could be attached and
 {{endregion}}
 
 #### __Figure 6: After checking the CheckBox with ToggleSelectAll command__
-![WPF RadComboBox After checking the CheckBox with ToggleSelectAll command](images/RadComboBox_Features_MultipleSelection_06.png)
+![{{ site.framework_name }} RadComboBox After checking the CheckBox with ToggleSelectAll command](images/RadComboBox_Features_MultipleSelection_06.png)
 
 #### __Figure 7: After unchecking the CheckBox with ToggleSelectAll command__
-![WPF RadComboBox After unchecking the CheckBox with ToggleSelectAll command](images/RadComboBox_Features_MultipleSelection_07.png)
+![{{ site.framework_name }} RadComboBox After unchecking the CheckBox with ToggleSelectAll command](images/RadComboBox_Features_MultipleSelection_07.png)
 
 ## MultipleSelectionBoxTemplate
 
@@ -213,7 +213,7 @@ The created __DataTemplate__ should be set to the __MultipleSelectionBoxTemplate
 {{endregion}}
 
 #### __Figure 8: RadComboBox after applying MultipleSelectionBoxTemplate__
-![WPF RadComboBox RadComboBox after applying MultipleSelectionBoxTemplate](images/RadComboBox_Features_MultipleSelection_08.png)
+![{{ site.framework_name }} RadComboBox RadComboBox after applying MultipleSelectionBoxTemplate](images/RadComboBox_Features_MultipleSelection_08.png)
 
 ## Keyboard support
 

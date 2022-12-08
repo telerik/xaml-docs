@@ -15,7 +15,7 @@ The __Appointment__ class represents a single piece of data that is visualized i
 Additionally, RadScheduleView provides the functionality to configure [repeating appointments]({%slug radscheduleview-features-recurrences-overview%}). The user has the ability to apply recurring scheduling patterns such as daily, weekly, monthly or set a range of recurrence from date to date.
 
 #### __Figure 1: RadScheduleView populated with different appointments__
-![WPF RadScheduleView RadScheduleView populated with different appointments](images/radscheduleview_understandingappointments_0.png)
+![{{ site.framework_name }} RadScheduleView RadScheduleView populated with different appointments](images/radscheduleview_understandingappointments_0.png)
 
 To learn how to manipulate the appointments displayed by the __RadScheduleView__ at run time, see the following topics:
 

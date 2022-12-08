@@ -116,7 +116,7 @@ This is the full source code of the sample:
 >caution Since you wrapped the TextBlock in a ViewBox, the Size of the Text will change according to the space available which will lead to texts with different size (shown on the image below). If you don't want such appearance, you should consider removing the ViewBox and using __TextWrapping__ and __MaxWidth__ for the TextBlock-s.
 
 The result is shown below:
-![WPF RadTreeMap Custom Leaf Template](images/radtreemap_styles_and_templates_01.PNG)
+![{{ site.framework_name }} RadTreeMap Custom Leaf Template](images/radtreemap_styles_and_templates_01.PNG)
 
 ## RadTreeMap
 
@@ -151,4 +151,4 @@ You can customize the way __RadTreeMap__ Items look like per *TypeDefinition*. T
 {{endregion}}
 
 The result is shown on the following image:
-![WPF RadTreeMap Custom Item Style](images/radtreemap_styles_and_templates.PNG)
+![{{ site.framework_name }} RadTreeMap Custom Item Style](images/radtreemap_styles_and_templates.PNG)

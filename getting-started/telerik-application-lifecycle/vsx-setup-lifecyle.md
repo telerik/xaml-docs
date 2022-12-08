@@ -48,7 +48,7 @@ After you create the WPF project and install the nugets, add any UI and related 
 	</Window>
 {{endregion}}
 
-![WPF Project with Added Tab Control](images/msi-or-zip-setup-lifecyle-6.png)
+![{{ site.framework_name }} Project with Added Tab Control](images/msi-or-zip-setup-lifecyle-6.png)
 
 ## Deploying the Application
 
@@ -64,13 +64,13 @@ To upgrade the project you can use the __Upgrade Project__ option from the Teler
 
 After the upgrade, double check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
 
-![WPF Telerik Assembly Properties Menu Option](images/msi-or-zip-setup-lifecyle-8.png)
-![WPF Telerik Assembly No Xaml File Description](images/msi-or-zip-setup-lifecyle-9.png)
+![{{ site.framework_name }} Telerik Assembly Properties Menu Option](images/msi-or-zip-setup-lifecyle-8.png)
+![{{ site.framework_name }} Telerik Assembly No Xaml File Description](images/msi-or-zip-setup-lifecyle-9.png)
 
 Delete the __bin__ and __obj__ folders of the projects that reference Telerik dlls in the solution and then __Clean__, and __Rebuild__ them. This will ensure that no older Telerik dlls are cached and used during the compilation.
 
-![WPF Delete bin and obj Folders](images/msi-or-zip-setup-lifecyle-7.png)
-![WPF Clean and Rebuild Solution](images/msi-or-zip-setup-lifecyle-10.png)
+![{{ site.framework_name }} Delete bin and obj Folders](images/msi-or-zip-setup-lifecyle-7.png)
+![{{ site.framework_name }} Clean and Rebuild Solution](images/msi-or-zip-setup-lifecyle-10.png)
 
 ## See Also  
 * [System Requirements]({%slug installation-system-requirements-wpf%})

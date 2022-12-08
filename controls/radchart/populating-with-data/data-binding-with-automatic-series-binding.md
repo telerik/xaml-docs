@@ -46,7 +46,7 @@ Take a look at this simple array declaration:
 
 If you set it to the __ItemsSource__ property of the __RadChart__ control, you will have the following result:
 
-![WPF RadChart  ](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_01.png)
 
 #### __C#__
 
@@ -183,7 +183,7 @@ Where the structure of the __Manufacturer__ class is:
 
 The result is shown on the next figure.
 
-![WPF RadChart  ](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_02.png)
 
 As you can see, automatic series mapping can be useful for simple data. However, if you need more data binding options, take a look at the [Data Binding with Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) topic and the [Data Binding to Nested Collections]({%slug radchart-populating-with-data-data-binding-to-nested-collections%}) topic.
 

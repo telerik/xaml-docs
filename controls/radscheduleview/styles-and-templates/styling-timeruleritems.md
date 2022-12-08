@@ -84,7 +84,7 @@ __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 
 Generate the RadScheduleView template from Expression Blend by right clicking the control and selecting __Edit Template > Edit a Copy__. Search for the TimeRulerItemStyleSelector and copy the selector together with all needed resources, into your own project.
 
-![WPF RadScheduleView Edit Template Copy](images/timeruler_13.PNG)
+![{{ site.framework_name }} RadScheduleView Edit Template Copy](images/timeruler_13.PNG)
 
 After choosing one of the two approaches the end result should include the following:
 
@@ -207,13 +207,13 @@ Now that all TimeRulerItem styles are in place, we can apply any desired customi
 
 The TimeRulerGroupItemStyle has been modified:
 
-![WPF RadScheduleView Custom Time Ruler Group Item Style](images/timeruler_10.PNG)
+![{{ site.framework_name }} RadScheduleView Custom Time Ruler Group Item Style](images/timeruler_10.PNG)
 
 ## Create a custom TimeRulerItemStyleSelector
 
 Let’s say we wish to customize the lines that correspond to the minor and major ticks in Timeline view:
 
-![WPF RadScheduleView Minor and Major Ticks](images/timeruler_11.PNG)
+![{{ site.framework_name }} RadScheduleView Minor and Major Ticks](images/timeruler_11.PNG)
 
 Because both lines share one and the same __TimeRulerLineStyle__, in order to style them differently, we are going to need two separate styles.  We need to create a custom TimeRulerItemStyleSelector that provides these additional styles.
 
@@ -378,4 +378,4 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 {{endregion}}
 {% endif %}
 
-![WPF RadScheduleView Time Ruler Item Style Selector](images/timeruler_12.PNG)
+![{{ site.framework_name }} RadScheduleView Time Ruler Item Style Selector](images/timeruler_12.PNG)

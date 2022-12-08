@@ -37,7 +37,7 @@ Here is an example:
 
 Here is a snapshot of the result.
 
-![WPF RadGauge Tick Size](images/RadGauge_Features_Ticks_Size_01.png)
+![{{ site.framework_name }} RadGauge Tick Size](images/RadGauge_Features_Ticks_Size_01.png)
 
 ## Location
 
@@ -60,7 +60,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Tick Location](images/RadGauge_Features_Ticks_Location_01.png)
+![{{ site.framework_name }} RadGauge Tick Location](images/RadGauge_Features_Ticks_Location_01.png)
 
 ## Appearance
 
@@ -84,7 +84,7 @@ To modify the ticks' background, simply set the __MajorTickBackground__, __Middl
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Tick Background](images/RadGauge_Features_Ticks_Appearance_01.png)
+![{{ site.framework_name }} RadGauge Tick Background](images/RadGauge_Features_Ticks_Appearance_01.png)
 
 ### Specifying a DataTemplate
 
@@ -108,4 +108,4 @@ The other way of specifying the appearance of the tick is by defining an entire 
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Tick Data Template](images/RadGauge_Features_Ticks_Appearance_02.png)
+![{{ site.framework_name }} RadGauge Tick Data Template](images/RadGauge_Features_Ticks_Appearance_02.png)

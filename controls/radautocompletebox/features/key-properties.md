@@ -58,7 +58,7 @@ The following snippet demonstrates how to set __NoResultsContent__ to simple tex
 
 And this would be the result:
 
-![WPF RadAutoCompleteBox with No Results Content](images/radautocompletebox-features-key-properties-1.png)
+![{{ site.framework_name }} RadAutoCompleteBox with No Results Content](images/radautocompletebox-features-key-properties-1.png)
 
 For more complex representation you could use __NoResultsContentTemplate__ in order to apply a DataTemplate containing the desired layout. The following example shows how to display an icon in front of the text:
 
@@ -82,7 +82,7 @@ For more complex representation you could use __NoResultsContentTemplate__ in or
 
 The result would be the following:
 
-![WPF RadAutoCompleteBox with No Results Content Template](images/radautocompletebox-features-key-properties-2.png)
+![{{ site.framework_name }} RadAutoCompleteBox with No Results Content Template](images/radautocompletebox-features-key-properties-2.png)
 
 ## Setting WatermarkContent
 

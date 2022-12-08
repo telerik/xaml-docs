@@ -39,7 +39,7 @@ Here is an example.
 	</telerik:RadTreeListView>
 {{endregion}}
 
-![WPF RadTreeListView Hierarchy Column Index 1](images/RadTreeListView_HierarchyColumn_01.png)
+![{{ site.framework_name }} RadTreeListView Hierarchy Column Index 1](images/RadTreeListView_HierarchyColumn_01.png)
 
 ## See Also
 

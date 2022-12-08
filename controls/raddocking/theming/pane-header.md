@@ -94,7 +94,7 @@ To see how to apply the theme read [here](#ApplyingTheme).{% endif %}
 
 Here is a snapshot of a sample result.
 
-![WPF RadDocking Themed Pane Header](images/RadDocking_ThemingPaneHeader_01.png)
+![{{ site.framework_name }} RadDocking Themed Pane Header](images/RadDocking_ThemingPaneHeader_01.png)
 
 ## See Also
 

@@ -25,7 +25,7 @@ Like most WPF controls, __RadTileList__ also allows you to template it in order 
 ## RadTileList ##
 
 
-![WPF RadTileList Template Structure](images/RadTileListTemplate_Img.png)
+![{{ site.framework_name }} RadTileList Template Structure](images/RadTileListTemplate_Img.png)
 
 *	__Border__ - represents the border and the background of __RadTileList__ and is of type __Border__.
 	
@@ -44,7 +44,7 @@ Like most WPF controls, __RadTileList__ also allows you to template it in order 
 
 ## TileGroupContainer  ##
 
-![WPF RadTileList TileGroupContainer Template Structure](images/TileGroupContainerTemplate_Img.png)
+![{{ site.framework_name }} RadTileList TileGroupContainer Template Structure](images/TileGroupContainerTemplate_Img.png)
 
 *	__Grid__ - hosts the elements of the template and is of type __Grid__.
 	
@@ -55,7 +55,7 @@ Like most WPF controls, __RadTileList__ also allows you to template it in order 
 
 ## Tile ##
 
-![WPF RadTileList Tile Template Structure](images/TileTemplate_Img.png)
+![{{ site.framework_name }} RadTileList Tile Template Structure](images/TileTemplate_Img.png)
 
 *	__Border__ - represents the border and the background of a Tile and is of type __Border__.
 

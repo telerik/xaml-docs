@@ -213,7 +213,7 @@ The __InitialPosition__ is a __Telerik.Windows.Controls.DockState__ enumeration,
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking RadSplitContainer](images/RadDocking_Features_SplitContainer_070.png)
+![{{ site.framework_name }} RadDocking RadSplitContainer](images/RadDocking_Features_SplitContainer_070.png)
 
 * __FloatingOnly__ - use this value when you want the __RadSplitContainer__ to be initially hosted in a floatable [Tool Window]({%slug raddocking-features-tool-window%}). 
 

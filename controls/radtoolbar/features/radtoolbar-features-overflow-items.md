@@ -21,7 +21,7 @@ The RadToolBar control automatically hides part of its items in the overflow are
 	</telerik:RadToolBar>
 {{endregion}}
 
-![WPF RadToolBar Overflow Area Structure](images/radtoolbar-features-overflow-items-0.png)
+![{{ site.framework_name }} RadToolBar Overflow Area Structure](images/radtoolbar-features-overflow-items-0.png)
 
 ## Overflow Button Visibility
 
@@ -36,7 +36,7 @@ By default the overflow button is always visible whether there are items in the 
 	</telerik:RadToolBar>
 {{endregion}}
 
-![WPF RadToolBar AutoHide Overflow Button](images/radtoolbar-features-overflow-items-1.png)
+![{{ site.framework_name }} RadToolBar AutoHide Overflow Button](images/radtoolbar-features-overflow-items-1.png)
 
 To manually control the overflow button visibility, set the `OverflowButtonVisibility` property.
 
@@ -49,7 +49,7 @@ To manually control the overflow button visibility, set the `OverflowButtonVisib
 	</telerik:RadToolBar>
 {{endregion}}
 
-![WPF RadToolBar Overflow Button Visibility Collapsed](images/radtoolbar-features-overflow-items-2.png)
+![{{ site.framework_name }} RadToolBar Overflow Button Visibility Collapsed](images/radtoolbar-features-overflow-items-2.png)
 
 ## Open Overflow Area Manually
 
@@ -89,7 +89,7 @@ To manually determine what controls from the toolbar should be added in the tool
 	</telerik:RadToolBar>
 {{endregion}}
 
-![WPF RadToolBar OverflowMode Always](images/radtoolbar-features-overflow-items-3.png)
+![{{ site.framework_name }} RadToolBar OverflowMode Always](images/radtoolbar-features-overflow-items-3.png)
 
 ## Events
 

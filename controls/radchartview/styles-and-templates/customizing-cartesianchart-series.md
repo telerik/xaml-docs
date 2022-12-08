@@ -55,7 +55,7 @@ The different chart series use different visual elements to display their data p
     </telerik:BarSeries>
 {{endregion}}
 
-![WPF RadChartView ](images/radchartview-styles-and-templates-customize-cartesianseries-1.png)
+![{{ site.framework_name }} RadChartView ](images/radchartview-styles-and-templates-customize-cartesianseries-1.png)
 
 Since Q1 2016, all Cartesian series (excluding RangeSeries) are rendering default visuals using the DefaultVisualStyle property. So, you can use it also with line and area series to display their data point visuals which don't exist by default. Note that when using line or area series you will need to set also the size of the visual. Otherwise it won't be displayed.
 
@@ -72,7 +72,7 @@ Since Q1 2016, all Cartesian series (excluding RangeSeries) are rendering defaul
     </telerik:LineSeries>
 {{endregion}}
 
-![WPF RadChartView ](images/radchartview-styles-and-templates-customize-cartesianseries-0.png)
+![{{ site.framework_name }} RadChartView ](images/radchartview-styles-and-templates-customize-cartesianseries-0.png)
 	
 > When using a [Palette]({%slug radchartview-features-palettes-introduction%}) the series' default visual will ignore the color defined in the DefaultVisualStyle and it will use the one provided by the palette.
 
@@ -93,7 +93,7 @@ All series supported by the __RadCartesianChart__ expose a __PointTemplate__ pro
     </telerik:PointSeries>
 {{endregion}}
 
-![WPF RadChartView ](images/radchartview-custom-point-template.png)
+![{{ site.framework_name }} RadChartView ](images/radchartview-custom-point-template.png)
 	
 ## Customizing Point Series
 

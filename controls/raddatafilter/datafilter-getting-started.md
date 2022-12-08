@@ -203,7 +203,7 @@ __RadGridView__ can be filtered through its __RadGridView.Items__ collection. Th
 	</Grid>
 {{endregion}}
 
-![WPF RadDataFilter Bound to the Items collection of RadGridView](images/RadDataFilter_GettingStarted_01.png)
+![{{ site.framework_name }} RadDataFilter Bound to the Items collection of RadGridView](images/RadDataFilter_GettingStarted_01.png)
 
 >You __can't use__ both RadDataFilter and RadGridView's __built in filtering__  because they are automatically synchronized with each other.          
 

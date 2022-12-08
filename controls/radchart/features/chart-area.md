@@ -13,7 +13,7 @@ position: 12
 
 __ChartArea__ is the place, where the chart graphic is drawn. The __ChartArea__ represents a layout region of the __RadChart__ control that holds certain chart series and axis data. Additionally, the __ChartArea__ exposes events for customizing the [tooltips]({%slug radchart-features-tooltips%}) and making the chart more [interactive]({%slug radchart-features-interactivity%}).
 
-![WPF RadChart Chart Area](images/RadChart_Features_ChartArea_01.png)
+![{{ site.framework_name }} RadChart Chart Area](images/RadChart_Features_ChartArea_01.png)
 
 As you can see on the image above, the __ChartArea__ has two [axes]({%slug radchart-features-axes-overview%}) - X and Y. By default X- and Y-axes are shown for all chart types except for those, which do not have axes at all - Pie and Doughnut charts.
 
@@ -87,7 +87,7 @@ When you set the label format behavior, all the labels (axes, series item labels
 
 On the image below you can see how the __Y-Axis__ and the series item labels are formatted when __LayoutFormatBehavior__ is set to __HumanReadable__, while the __X-Axis__ is formatted using custom [Format Expressions]({%slug radchart-features-format-expressions%}):
 
-![WPF RadChart Customized Chart Area](images/RadChart_Features_ChartArea_20.png)
+![{{ site.framework_name }} RadChart Customized Chart Area](images/RadChart_Features_ChartArea_20.png)
 
 ## See Also
 

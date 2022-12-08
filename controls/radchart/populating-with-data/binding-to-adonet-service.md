@@ -197,7 +197,7 @@ Add the following code which will make the initial load of the objects.
 
 Run your demo, the result can be seen on the next image:
 
-![WPF RadChart  ](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
 
 ## Using MVVM Approach
 
@@ -367,7 +367,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 Here it is shown how the final result should look like: 
 
-![WPF RadChart  ](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithDataBindingToAdoNet_010.PNG)
 
 ## See Also
 

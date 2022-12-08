@@ -24,7 +24,7 @@ To set the theme of the __RadUpload__ use the __StyleManager.Theme__ attached pr
 {{endregion}}
 
 Here is a snapshot of the result.
-![WPF RadUpload Vista Theme](images/RadUpload_How_To_Change_Theme_01.png)
+![{{ site.framework_name }} RadUpload Vista Theme](images/RadUpload_How_To_Change_Theme_01.png)
 
 ## See Also
  * [Styles and Templates - Overview]({%slug radupload-styles-and-templates-overview%})

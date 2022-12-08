@@ -18,10 +18,10 @@ An application that will use the new __RadRibbonWindow__ should be configured to
 ## Configuration
 
 First you need to configure your Silverlight project. Right click on it and choose __Properties__. Then you should enable the out of browser option:
-![WPF RadRibbonView Enable Out Of Browser Option](images/RibbonView_RibbonWindowSL_Config.png)
+![{{ site.framework_name }} RadRibbonView Enable Out Of Browser Option](images/RibbonView_RibbonWindowSL_Config.png)
 
 Then you need to click on the __Out-of-Browser Settings…__ button and check the Require Elevated Trust. Also, make sure that the WindowStyle is Borderless Round Corners: 
-![WPF RadRibbonView Require Elevated Trust](images/RibbonView_RibbonWindowSL_OOBConfig.png)
+![{{ site.framework_name }} RadRibbonView Require Elevated Trust](images/RibbonView_RibbonWindowSL_OOBConfig.png)
 
 ## Define the RadRibbonWindow in the application
 
@@ -65,13 +65,13 @@ Then you need to click on the __Out-of-Browser Settings…__ button and check th
 {{endregion}}
 
 Now, when you hit F5 you should get the following result:
-![WPF RadRibbonView Ribbon Window](images/RibbonView_RibbonWindowSL_BrowserExample.png)
+![{{ site.framework_name }} RadRibbonView Ribbon Window](images/RibbonView_RibbonWindowSL_BrowserExample.png)
 
 In order to run the project in OOB you need to install it:
-![WPF RadRibbonView Install OOB](images/RibbonView_RibbonWindowSL_Install.png)
+![{{ site.framework_name }} RadRibbonView Install OOB](images/RibbonView_RibbonWindowSL_Install.png)
 
 Then you should get the final result:
-![WPF RadRibbonView Running RibbonWindow](images/RibbonView_RibbonWindowSL_Example.png)
+![{{ site.framework_name }} RadRibbonView Running RibbonWindow](images/RibbonView_RibbonWindowSL_Example.png)
 
 ## Icon
 

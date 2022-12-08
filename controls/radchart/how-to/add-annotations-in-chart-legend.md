@@ -175,6 +175,6 @@ The following help article will demonstrate how to customize the Chart Legend so
 
 The result is shown below:
 
-![WPF RadChart  ](images/RadChart_HowToAnnotationInLegend.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToAnnotationInLegend.PNG)
 
 

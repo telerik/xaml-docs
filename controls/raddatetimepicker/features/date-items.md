@@ -28,7 +28,7 @@ Here is an example of setting these properties in XAML:
 
 Here is the result:
 
-![WPF RadDateTimePicker with DisplayDateStart and DisplayDateEnd Limitation](images/dateTimePicker_features_date_items_010.png)
+![{{ site.framework_name }} RadDateTimePicker with DisplayDateStart and DisplayDateEnd Limitation](images/dateTimePicker_features_date_items_010.png)
 
 The Next Month button is not active because of the __DisplayDateEnd__ property's value set in the example.
 
@@ -50,7 +50,7 @@ For example:
 
 The result of this example will be that when you click on the __RadDateTimePicker's__ drop-down button for the first time in the calendar you will not see the current month and year but instead the month and year defined in the __DisplayDate__ property.
 
-![WPF RadDateTimePicker with Custom DisplayDate](images/dateTimePicker_features_date_items_020.png)
+![{{ site.framework_name }} RadDateTimePicker with Custom DisplayDate](images/dateTimePicker_features_date_items_020.png)
 
 >tipIf you set the __DisplayDate__ property to a value which is not in the range of the __DisplayDateStart__ and __DisplayDateEnd__ properties you will end up with a parse error exception.
 

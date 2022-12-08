@@ -182,4 +182,4 @@ The full source code for creating Horizontal BulletGraph in code-behind.
 {{endregion}}
 
 The result: 
-![WPF RadBulletGraph Data Binding](images/radbulletgraph_databinding.PNG)
+![{{ site.framework_name }} RadBulletGraph Data Binding](images/radbulletgraph_databinding.PNG)

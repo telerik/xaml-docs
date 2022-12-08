@@ -29,7 +29,7 @@ __Figure 1__ shows how a LayoutControlGroup with few children looks. And __Examp
 {{endregion}}	
 
 #### __Figure 1: LayoutControlGroup__
-![WPF RadLayoutControl LayoutControlGroup](images/layoutcontrol-features-layoutcontrolgroup-01.png)
+![{{ site.framework_name }} RadLayoutControl LayoutControlGroup](images/layoutcontrol-features-layoutcontrolgroup-01.png)
 
 You can add __LayoutControlGroup__ into another layout group (see __Example 2__).
 
@@ -54,7 +54,7 @@ You can add __LayoutControlGroup__ into another layout group (see __Example 2__)
 {{endregion}}    
 
 #### __Figure 2: Nested LayoutControlGroups__
-![WPF RadLayoutControl Nested LayoutControlGroups](images/layoutcontrol-features-layoutcontrolgroup-02.png)	
+![{{ site.framework_name }} RadLayoutControl Nested LayoutControlGroups](images/layoutcontrol-features-layoutcontrolgroup-02.png)	
 
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

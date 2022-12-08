@@ -12,7 +12,7 @@ position: 2
 
 This section defines the terms and concepts used in the scope of the __RadTimeline__ control. They can be helpful when contacting with the support service in order to describe your issue better. Below you can see snapshots and explanations of the main visual elements of the control:
 
-![WPF RadTimeline Visual Structure](images/timeline_visualstructure_main.PNG)
+![{{ site.framework_name }} RadTimeline Visual Structure](images/timeline_visualstructure_main.PNG)
 
 * __Visible Viewport__: The rectangular region representing the time span between __VisiblePeriodStart__ and __VisiblePeriodEnd__. 
 

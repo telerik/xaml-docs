@@ -15,13 +15,13 @@ This tutorial demonstrates the usage of __HierarchicalDataTemplate__ and __Style
 For more information about __HierarchicalDataTemplate__ take a look at the [HierarchicalDataTemplates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}) topic.
 
 Imagine the following scenario. You have an Organization that has several Departments, and each Department has several Employees.
-![WPF RadTreeView Department Structure](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_001.png)
+![{{ site.framework_name }} RadTreeView Department Structure](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_001.png)
 
 It is not that difficult to create a data source reflecting the above structure. This is how the three classes look like: 
 
 * __Person__ class:		  
 
-	![WPF RadTreeView Person Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_010.png)
+	![{{ site.framework_name }} RadTreeView Person Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_010.png)
 
 	#### __C#__
 
@@ -75,7 +75,7 @@ It is not that difficult to create a data source reflecting the above structure.
 
 * __Department__ class:
 
-	![WPF RadTreeView Department Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_020.png)
+	![{{ site.framework_name }} RadTreeView Department Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_020.png)
 
 	#### __C#__
 
@@ -162,7 +162,7 @@ It is not that difficult to create a data source reflecting the above structure.
 * __Organization__ class
 		  
 
-	![WPF RadTreeView Organization Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_030.png)
+	![{{ site.framework_name }} RadTreeView Organization Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_030.png)
 
 	#### __C#__
 
@@ -519,7 +519,7 @@ As you can see, the __IsSelected__ property of each __RadTreeViewItem__ is bound
 {{endregion}}
 
 So now, if you run the project, you will see the following result:
-![WPF RadTreeView TreeView Hierarchical Binding Styles](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_050.png)
+![{{ site.framework_name }} RadTreeView TreeView Hierarchical Binding Styles](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_050.png)
 
 > If you want to implement two way data binding, your business objects should implement the __INotifyPropertyChanged__ interface. Additionally, you should set the __Binding's Mode__ to __TwoWay__ in the __Style__ declaration.
 	

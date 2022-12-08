@@ -269,7 +269,7 @@ Approach 2: Pass the level Index and the paragraph to the DocumentList.AddParagr
 {{endregion}}
 
 Figure 1: The result of the created list.
-![WPF RadRichTextBox The result of the created list.](images/RadRichTextBox_lists_example_01.png)
+![{{ site.framework_name }} RadRichTextBox The result of the created list.](images/RadRichTextBox_lists_example_01.png)
 
 ## See Also
 

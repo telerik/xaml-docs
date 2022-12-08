@@ -17,7 +17,7 @@ __RadChartView3D__ provides you with a charting component that enables three-dim
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadChartView3D Overview](images/radchartview-3d-overview-0.png)
+![{{ site.framework_name }} RadChartView3D Overview](images/radchartview-3d-overview-0.png)
 
 ## Key Features
 

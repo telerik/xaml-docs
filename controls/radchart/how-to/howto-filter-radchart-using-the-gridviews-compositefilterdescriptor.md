@@ -392,12 +392,12 @@ The code-behind:
 >tipThe code snippets above were taken from a Silverlight project but are absolutely applicable for WPF scenarios.
 
 The bound non-filtered data looks like this:
-![WPF RadChart  ](images/RadChart_HowToOriginal.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToOriginal.PNG)
 
 
 
 Filter the data by Value1 column:
-![WPF RadChart  ](images/RadChart_HowTo_Filter.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_Filter.PNG)
 
 The filtered data:
-![WPF RadChart  ](images/RadChart_HowTo_FilteredChart.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_FilteredChart.PNG)

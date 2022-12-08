@@ -28,7 +28,7 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 	</Grid>
 {{endregion}}
 
-![WPF RadCarousel RadCarouselPanel Item Movement](images/CarouselPanelMovement_01.png)
+![{{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement](images/CarouselPanelMovement_01.png)
 
 #### __C#__
 
@@ -42,7 +42,7 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 	Me.Panel.MoveBy(2)
 {{endregion}}
 
-![WPF RadCarousel RadCarouselPanel Item Movement after MoveBy](images/CarouselPanelMovement_02.png)
+![{{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement after MoveBy](images/CarouselPanelMovement_02.png)
 
 ## Using ScrollViewer
 
@@ -64,4 +64,4 @@ __RadCarouselPanel__ is a scrollable panel that can use __ScrollViewer__ to move
 	</Grid>
 {{endregion}}
 
-![WPF RadCarousel RadCarouselPanel Item Movement via ScrollViewer](images/CarouselPanelMovement_03_thumb.png)
+![{{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement via ScrollViewer](images/CarouselPanelMovement_03_thumb.png)

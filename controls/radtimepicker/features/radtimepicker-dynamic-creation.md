@@ -118,8 +118,8 @@ You may switch between different data sources at runtime as demonstrated in the 
 
 Instead of selecting the time from the clock you can also type the time you want in the TextBox. RadTime picker has KeyEvents support and Parser that validate entered time as soon as the enter key is pressed.
 
-![WPF RadTimePicker Parsing](images/Parser.jpg)
+![{{ site.framework_name }} RadTimePicker Parsing](images/Parser.jpg)
 
 You can also fully customize TimePickers Header with __HeaderContent__ property and IconStyle with __IconButtonStyle__ property. For more information review Appearance section.
 
-![WPF RadTimePicker Customized Appearance](images/Styles.jpg)
+![{{ site.framework_name }} RadTimePicker Customized Appearance](images/Styles.jpg)

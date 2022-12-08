@@ -27,7 +27,7 @@ The property is an enumeration of type __System.Windows.Controls.Orientation__ a
 {{endregion}}
 
 #### __Figure 1: Horizontal and Vertical orientations__  
-![WPF RadLayoutControl Horizontal and Vertical orientations](images/layoutcontrol-features-orientation-01.png)
+![{{ site.framework_name }} RadLayoutControl Horizontal and Vertical orientations](images/layoutcontrol-features-orientation-01.png)
 		
 > The __Orientation__ property doesn't affect the __LayoutControlTabGroup__.
 	

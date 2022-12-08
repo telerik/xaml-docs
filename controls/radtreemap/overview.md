@@ -17,7 +17,7 @@ __RadTreeMap__ and __RadPivotMap__ are data visualization controls used to displ
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadTreeMap Overview](images/radtreemap_overview.png)
+![{{ site.framework_name }} RadTreeMap Overview](images/radtreemap_overview.png)
 
 ## Key Features
 

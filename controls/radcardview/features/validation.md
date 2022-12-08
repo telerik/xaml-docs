@@ -69,7 +69,7 @@ The validation can be implemented in the view model. If the updated value is inv
 {{endregion}}
 
 #### Figure 1: Data validation visual feedback
-![WPF RadCardView Data validation visual feedback](images/radcardview-features-validation-0.png)
+![{{ site.framework_name }} RadCardView Data validation visual feedback](images/radcardview-features-validation-0.png)
 
 ## Using Data Annotations
 
@@ -97,7 +97,7 @@ The data binding validation can be enabled also by using the data annotation att
 In order to see the error visual when using data annotations, press the __Enter key__. This will add the error in the list at the bottom of the card.
 
 #### Figure 2: Data validation visual feedback when using data annotations
-![WPF RadCardView Data validation visual feedback when using data annotations](images/radcardview-features-validation-1.png)
+![{{ site.framework_name }} RadCardView Data validation visual feedback when using data annotations](images/radcardview-features-validation-1.png)
 
 ## See Also
 * [Getting Started]({%slug radcardview-getting-started%})

@@ -18,7 +18,7 @@ If a menu item in the __RadMenu__ control contains any children, they are shown 
 
 This behavior of the __RadMenu__ control can be controlled via the __ClickToOpen__ property. The default value is __False__ which means that the child items are displayed upon a hover action.
 
-![WPF RadMenu Open Child Items on Hover](images/RadMenu_Features_Opening_Modes_01.png)
+![{{ site.framework_name }} RadMenu Open Child Items on Hover](images/RadMenu_Features_Opening_Modes_01.png)
 
 Setting the property to __True__ will make the child items appear upon a mouse click on their parent. Note that the children do not automatically hide,  but they will wait for a mouse click again.
 
@@ -32,11 +32,11 @@ Setting the property to __True__ will make the child items appear upon a mouse c
 
 To illustrate this case here is a snapshot of the menu upon a hover:
 
-![WPF RadMenu Do Not Open Menu on Hover](images/RadMenu_Features_Opening_Modes_02.png)
+![{{ site.framework_name }} RadMenu Do Not Open Menu on Hover](images/RadMenu_Features_Opening_Modes_02.png)
 
 and upon a mouse click:
 
-![WPF RadMenu Open on Mouse Click](images/RadMenu_Features_Opening_Modes_03.png)
+![{{ site.framework_name }} RadMenu Open on Mouse Click](images/RadMenu_Features_Opening_Modes_03.png)
 
 ## See Also
 

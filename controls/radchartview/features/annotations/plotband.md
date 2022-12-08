@@ -62,7 +62,7 @@ A plotband starting from *180* degrees and ending in *270* degrees will look lik
 	<telerik:RadialAxisPlotBandAnnotation From="270" To="180" />
 	{{endregion}}
 
-![WPF RadChartView Radial Axis PlotBand Annotation from 180 to 270](images/RadChartView-annotations-polar-plotband-180-270.png)
+![{{ site.framework_name }} RadChartView Radial Axis PlotBand Annotation from 180 to 270](images/RadChartView-annotations-polar-plotband-180-270.png)
 
 If you wonder how to annotate the bigger segment from the image above, then you should switch the __From__ and __To__ values.
         
@@ -73,7 +73,7 @@ If you wonder how to annotate the bigger segment from the image above, then you 
 	<telerik:RadialAxisPlotBandAnnotation From="270" To="180" />
 	{{endregion}}
 
-![WPF RadChartView Radial Axis PlotBand Annotation from 270 to 180](images/RadChartView-annotations-polar-plotband-270-180.png)
+![{{ site.framework_name }} RadChartView Radial Axis PlotBand Annotation from 270 to 180](images/RadChartView-annotations-polar-plotband-270-180.png)
 
 ## Properties
 

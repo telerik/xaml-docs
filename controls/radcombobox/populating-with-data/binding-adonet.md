@@ -116,7 +116,7 @@ Find your __RadComboBox__ declaration and set the just declared __DataTemplate__
 
 Run your demo, the result can be seen on the next image:
 
-![WPF RadComboBox Bound to Data from ADO.NET Data Service](images/RadComboBox_PopulatingWithData_BindingToAdoDataService_010.png)
+![{{ site.framework_name }} RadComboBox Bound to Data from ADO.NET Data Service](images/RadComboBox_PopulatingWithData_BindingToAdoDataService_010.png)
 
 ## Using MVVM Approach
 
@@ -294,7 +294,7 @@ And here is the code for the __EntitiesLoaded__ method:
 
 Run your demo, the result can be seen on the snapshot below:
 
-![WPF RadComboBox Bound to Data from ADO.NET Data Service](images/RadComboBox_PopulatingWithData_BindingToAdoDataService_020.png)
+![{{ site.framework_name }} RadComboBox Bound to Data from ADO.NET Data Service](images/RadComboBox_PopulatingWithData_BindingToAdoDataService_020.png)
 
 ## See Also
 

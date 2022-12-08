@@ -92,7 +92,7 @@ To see how to apply the theme read [here](#ApplyingTheme).{% endif %}
 
 Here is a snapshot of a sample result.
 
-![WPF RadDocking Themed ToolWindow](images/RadDocking_ThemingToolWindow_01.png)
+![{{ site.framework_name }} RadDocking Themed ToolWindow](images/RadDocking_ThemingToolWindow_01.png)
 
 ## See Also
 

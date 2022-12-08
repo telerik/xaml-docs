@@ -12,7 +12,7 @@ position: 1
 
 This section defines terms and concepts used in the scope of the __RadCardView__ control with which you have to get familiar before you continue to read its documentation. They can also be helpful when contacting our support service in order to describe your issue better.
 
-![WPF RadCardView Visual Structure](images/radcardview-visual-structure-0.png)
+![{{ site.framework_name }} RadCardView Visual Structure](images/radcardview-visual-structure-0.png)
 
 * __Card__: An element representing an item from the __ItemsSource__ of the control.
 

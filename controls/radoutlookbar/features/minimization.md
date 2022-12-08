@@ -46,7 +46,7 @@ The default value of the __IsMinimizable__ property is __True__:
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-![WPF RadOutlookBar Default Minimization](images/outlook_minimization_IsMinimizableDef.png)
+![{{ site.framework_name }} RadOutlookBar Default Minimization](images/outlook_minimization_IsMinimizableDef.png)
 
 Setting the __IsMinimizable__ property to __False__ will disable the __Minimization__ feature of the __RadOutlookBar__:
 
@@ -69,7 +69,7 @@ Setting the __IsMinimizable__ property to __False__ will disable the __Minimizat
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-![WPF RadOutlookBar Minimization Disabled](images/outlook_minimization_IsMinimizableFalse.png)
+![{{ site.framework_name }} RadOutlookBar Minimization Disabled](images/outlook_minimization_IsMinimizableFalse.png)
 
 ## Setting the IsMinimized property
 
@@ -94,7 +94,7 @@ The __IsMinimized__ property allows you to manually control the state of the __R
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-![WPF RadOutlookBar Minimized](images/outlook_minimization_IsMinimizedTrue.png)
+![{{ site.framework_name }} RadOutlookBar Minimized](images/outlook_minimization_IsMinimizedTrue.png)
 
 ##  Setting the MinimizedWidth property
 
@@ -120,12 +120,12 @@ The default value of the __MinimizedWidth__ property is 30. However, you can cha
 	</telerik:RadOutlookBar>
 {{endregion}}
 
-![WPF RadOutlookBar with Minimized Width](images/outlook_minimization_MinimizedWidth.png)
+![{{ site.framework_name }} RadOutlookBar with Minimized Width](images/outlook_minimization_MinimizedWidth.png)
 
 ## Resizing RadOutlookBar via the vertical resizer
 
 You can also take advantage of the vertical resizer to change the state of the __RadOutlookBar__. By default when the size of the __RadOutlookBar__ exceeds 34, it's restored. Otherwise the control is minimized.
 
-![WPF RadOutlookBar Resizing with Resizer](images/outlook_minimization_Resizer.png)
+![{{ site.framework_name }} RadOutlookBar Resizing with Resizer](images/outlook_minimization_Resizer.png)
 
 Furthermore, you can set the __MinimizedWidthThreshold__ to control when to change the __RadOutlookBar__ state, when it is resized via the vertical resizer. 

@@ -60,7 +60,7 @@ Creating the WCF Service:
 
 * Add a new item "LINQ to SQL Classes" inside the web server project. Use the .dbml’s designer and drag the *Products *table onto the design surface:
 
-![WPF RadChart  ](images/RadChart_PopulatingWithDatabindingToWcf_dbml.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithDatabindingToWcf_dbml.PNG)
 
 * Then add a new item "Silverlight-enabled WCF Service" to the server project. In the *.svc.cs* file add the following Linq query to get the first 10 Products from the table:
 
@@ -184,7 +184,7 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 
 Run your demo, the result can be seen on the next image:
 
-![WPF RadChart  ](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
 
 
 
@@ -369,7 +369,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 Here it is shown how the final result should look like: 
 
-![WPF RadChart  ](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithDataBindingToWcf_010.PNG)
 
 ## See Also
 

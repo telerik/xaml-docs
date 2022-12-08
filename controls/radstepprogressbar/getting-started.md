@@ -14,7 +14,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 The following picture shows the final result produced by the code of this tutorial.
 
-![WPF RadStepProgressBar Overview](images/stepprogressbar-getting-started-0.png)
+![{{ site.framework_name }} RadStepProgressBar Overview](images/stepprogressbar-getting-started-0.png)
 			
 ## Assembly References
 

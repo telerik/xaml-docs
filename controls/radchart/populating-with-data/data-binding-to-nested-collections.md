@@ -696,7 +696,7 @@ __In order to bind RadChart to nested collections:__
 
 ##### 5. The final result should look like the snapshot below.
 
-![WPF RadChart  ](images/RadChart_PopulatingWithData_NestedCollections_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_NestedCollections_01.png)
 
 ##### 6. The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 

@@ -54,7 +54,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	</telerik:RadDocking>
 {{endregion}}
  
-![WPF RadDocking Sample Declaration](images/RadDocking_GettingStarted_ManagingDockingDynamically_010.png)
+![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_GettingStarted_ManagingDockingDynamically_010.png)
 
 ## Making a Pane Floatable in the Code-Behind
 
@@ -102,7 +102,7 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 
 Executing any of the described methods will lead to the following result:
 
-![WPF RadDocking with Floating Pane](images/RadDocking_GettingStarted_ManagingDockingDynamically_020.png)
+![{{ site.framework_name }} RadDocking with Floating Pane](images/RadDocking_GettingStarted_ManagingDockingDynamically_020.png)
 
 >__MakeFloatingOnly()__, __MakeFloatingDockable()__ and __MakeDockable()__ methods work only when all of the objects are constructed and added to the object tree. Which means that you should invoke them after the __Loaded__ event of the __RadDocking__ control has been fired.
 
@@ -226,7 +226,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 	</telerik:RadDocking>
 {{endregion}}
   
-![WPF RadDocking Panes Docked Left](images/RadDocking_GettingStarted_ManagingDockingDynamically_030.png)
+![{{ site.framework_name }} RadDocking Panes Docked Left](images/RadDocking_GettingStarted_ManagingDockingDynamically_030.png)
 
 * __DockedTop__
 
@@ -244,7 +244,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking Panes Docked Top](images/RadDocking_GettingStarted_ManagingDockingDynamically_040.png)
+![{{ site.framework_name }} RadDocking Panes Docked Top](images/RadDocking_GettingStarted_ManagingDockingDynamically_040.png)
 
 * __DockedRight__
 
@@ -262,7 +262,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 	</telerik:RadDocking>
 {{endregion}}
 
- ![WPF RadDocking Panes Docked Right](images/RadDocking_GettingStarted_ManagingDockingDynamically_050.png)
+ ![{{ site.framework_name }} RadDocking Panes Docked Right](images/RadDocking_GettingStarted_ManagingDockingDynamically_050.png)
 
 * __DockedBottom__
 
@@ -280,7 +280,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking Panes Docked Bottom](images/RadDocking_GettingStarted_ManagingDockingDynamically_060.png)
+![{{ site.framework_name }} RadDocking Panes Docked Bottom](images/RadDocking_GettingStarted_ManagingDockingDynamically_060.png)
 
 ## Pin/Unpin a Pane in the Code-Behind
 

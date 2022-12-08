@@ -23,14 +23,14 @@ This topic will show you how to perform the second one.
 
 In order to copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonRadioButton__ you want to style.
 {% if site.site_name == 'Silverlight' %}
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_Locate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_LocateWPF.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_CreateStyle.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_CreateStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -64,7 +64,7 @@ Change the elements' properties until you get the desired look.
 {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonRadioButton__. Their names indicate to which part of the __RadRibbonRadioButton's__ appearance they are assigned.
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_Resources.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_Resources.png)
 
 * __RadRibbonBarButtonSelectedBorder__ - a brush that represents the color of the __RadRibbonRadioButton's__ border, when the button is toggled.              
 
@@ -93,16 +93,16 @@ Modify the resource to bring the desired appearance to the __RadRibbonRadioButto
 ## Example
 
 Here is an example of the above resources modified.
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_ResourcesModified.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_ResourcesModified.png)
 
 Here is a snapshot of the result, when the mouse is over the button:
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_ExampleMouseOver.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_ExampleMouseOver.png)
 
 and when the button is pressed:
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_ExamplePressed.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_ExamplePressed.png)
 
 and when the button is toggled:
-![WPF RadRibbonView  ](images/RibbonView_Styling_RadioButton_ExampleToggled.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RadioButton_ExampleToggled.png)
 
 {% endif %}			
 

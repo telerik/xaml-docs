@@ -134,7 +134,7 @@ Here is an example for an __Ellipse__, positioned above Sofia, Bulgaria and visi
 
 Here is a snapshot of the result:
 
-![WPF RadMap Information Layer Item Positioning](images/RadMap_Features_InformationLayer_01.png)
+![{{ site.framework_name }} RadMap Information Layer Item Positioning](images/RadMap_Features_InformationLayer_01.png)
 
 ## Binding Items
 

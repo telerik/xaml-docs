@@ -23,7 +23,7 @@ However, you should keep in mind that the fullscreen mode can only be entered af
 	</telerik:RadMediaPlayer>
 {{endregion}}
 
-![WPF RadMediaPlayer FullScreen Mode](images/radmediaplayer_features_fullscreen.png)
+![{{ site.framework_name }} RadMediaPlayer FullScreen Mode](images/radmediaplayer_features_fullscreen.png)
 
 Since the fullscreen functionality may be application dependant, you could customize it by handling the __FullScreenChanged__ event, that is raised when the __RadMediaPlayer__ changes its fullscreen mode.
 

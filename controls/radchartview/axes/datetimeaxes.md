@@ -158,7 +158,7 @@ And finally the definition of the ChartDataObject class:
 	End Class
 {{endregion}}
 
-![WPF RadChartView with Horizontal DateTime Continuous Axis](images/radchartview-chart_datetime_continuous_axis.png)
+![{{ site.framework_name }} RadChartView with Horizontal DateTime Continuous Axis](images/radchartview-chart_datetime_continuous_axis.png)
 
 ## Date Time Categorical Axis
 
@@ -190,7 +190,7 @@ The DateTime categorical axis is a categorical axis with Date-Time values which 
 	</telerik:RadCartesianChart>
 	{{endregion}}
 
-![WPF RadChartView with Horizontal DateTime Categorical Axis](images/radchartview-chart_datetime_categorical_axis.png)
+![{{ site.framework_name }} RadChartView with Horizontal DateTime Categorical Axis](images/radchartview-chart_datetime_categorical_axis.png)
 
 ### See also
 

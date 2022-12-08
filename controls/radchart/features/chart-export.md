@@ -90,7 +90,7 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 
 The snapshot below shows the exported ExcelML file loaded into Excel.
 
-![WPF RadChart Exported ExcelML File in Excel](images/RadChart_Features_Export_01.png)
+![{{ site.framework_name }} RadChart Exported ExcelML File in Excel](images/RadChart_Features_Export_01.png)
 
 
 

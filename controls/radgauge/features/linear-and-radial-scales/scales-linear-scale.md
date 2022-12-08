@@ -106,4 +106,4 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Custom Placement](images/RadGauge_Features_LinearScale_03.png)
+![{{ site.framework_name }} RadGauge Custom Placement](images/RadGauge_Features_LinearScale_03.png)

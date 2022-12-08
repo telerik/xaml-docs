@@ -84,7 +84,7 @@ In order to enable the horizontal and/or vertical scrollbar for the restored til
 	</telerik:RadTileView>
 {{endregion}}
 
-![WPF RadTileView Restored Items ScrollBars Enabled](images/radtileview_howto_enable_scrollbars.png)
+![{{ site.framework_name }} RadTileView Restored Items ScrollBars Enabled](images/radtileview_howto_enable_scrollbars.png)
 
 ## Enable Minimized Items ScrollBar
 
@@ -124,7 +124,7 @@ In order to enable the minimized items __ScrollBar__, you need to set the __Mini
 	</telerik:RadTileView>
 {{endregion}}
 
-![WPF RadTileView Minimized Items ScrollBars Enabled](images/radtileview_howto_enable_minimized_scrollbar.png)
+![{{ site.framework_name }} RadTileView Minimized Items ScrollBars Enabled](images/radtileview_howto_enable_minimized_scrollbar.png)
 
 ## Enable AutoScrolling
 

@@ -17,7 +17,7 @@ If you need to change only the icon that is used to expand an item, you can use 
 This tutorial will walk you through the common task of styling an expander.
 
 On the snapshot below you can see how the final result will look like:
-![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_001.png)
+![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_001.png)
 
 For  the purpose of the following tutorial I will use the following treeview declaration:
 
@@ -42,7 +42,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 	</telerik:RadTreeView>
 	{{endregion}}
 
-![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_010.png)
+![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_010.png)
 
 * Since the expander is a toggle button we need to create a style with __TargetType__ - __ToggleButton__.			  
 
@@ -118,7 +118,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 		{{endregion}}
 
 * As you can see from the next figure, the expander of the treeview is changed: 
-![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_020.png)
+![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_020.png)
 
 * We are one more step closer to the final result. Next we should add some visual effects. For that purpose add the following elements to your expander template: 
 
@@ -179,10 +179,10 @@ For  the purpose of the following tutorial I will use the following treeview dec
 	The __ButtonOver__grid will be animated when the mouse is position over the expander.
 
 * Open your application in Expression Blend. Find the "__ExpanderStyle__" in the Resources pane and press the "Edit resource" button:
-	![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_030.png)
+	![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_030.png)
 
 * Right click on the __Style__object in the __Objects and Timeline__pane and select Edit Template->Edit Current...
-	![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_040.png)
+	![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_040.png)
 
 	The __ToggleButton__ template will be opened for edit.
 
@@ -192,7 +192,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 		* Set the __Button__'s Opacity to 0
 		* Set the __ButtonOver__'s Opacity to 1 (100%)
 
-		![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_050.png)
+		![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_050.png)
 
 	* __Checked__ - set the key time to 2 seconds and set the following properties:
 		* Set the __CollapseVisual__'s Opacity to 0
@@ -202,7 +202,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 		* Set the __CollapseVisual__'s Opacity to 1 (100%)
 		* Set the __CollapseVisualOver__'s Opacity to 1 (100%)					  
 
-		![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_060.png)
+		![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_060.png)
 
 Here is the result XAML: 
 
@@ -298,7 +298,7 @@ Here is the result XAML:
 
 Here is the result: 
 
-![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_070.png)
+![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_070.png)
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
@@ -309,7 +309,7 @@ If you need to change only the icon that is used to expand an item, you can use 
 This tutorial will walk you through the common task of styling an expander.
 
 On the snapshot below you can see how the final result will look like:
-![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_080.png)
+![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_080.png)
 
 For  the purpose of the following tutorial I will use the following treeview declaration: 
 
@@ -334,7 +334,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 	</telerik:RadTreeView>
 	{{endregion}}
 
-![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_090.png)
+![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_090.png)
 
 * Since the expander is a toggle button we need to create a style with __TargetType__ - __ToggleButton__.			  
 
@@ -410,7 +410,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 	{{endregion}}
 
 	As you can see from the next figure, the expander of the treeview is changed: 
-	![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_100.png)
+	![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_100.png)
 
 * We are one more step closer to the final result. Next we should add some visual effects. For that purpose add the following elements to your expander template:
 
@@ -607,7 +607,7 @@ And here is the complete XAML for the "ControlTemplate.Triggers" section:
 > With the same success and effectiveness you could use Expression Blend for adding interactivity. Since the operations in this example are pretty simple I decided to write the triggers by hand.
 
 Here is the result:
-![WPF RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_110.png)
+![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_110.png)
 
 {% endif %}
 

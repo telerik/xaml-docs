@@ -131,7 +131,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Indicator RelativeHeight and RelativeWidth](images/RadGauge_Features_Indicators_Basics_01.png)
+![{{ site.framework_name }} RadGauge Indicator RelativeHeight and RelativeWidth](images/RadGauge_Features_Indicators_Basics_01.png)
 
 ## Indicator's Value
 
@@ -177,7 +177,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-![WPF RadGauge Using the Range Color](images/RadGauge_Features_Indicators_Basics_02.png)
+![{{ site.framework_name }} RadGauge Using the Range Color](images/RadGauge_Features_Indicators_Basics_02.png)
 
 ## Value's Source
 

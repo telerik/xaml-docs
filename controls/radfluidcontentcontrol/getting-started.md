@@ -65,7 +65,7 @@ The control exposes a few properties that allow you to set a different content f
 {{endregion}}
 
 #### __Figure 1: RadFluidContentControl with size 100,100__
-![WPF RadFluidContentControl RadFluidContentControl with size 100,100](images/fluidcontentcontrol-getting-started-0.png)
+![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with size 100,100](images/fluidcontentcontrol-getting-started-0.png)
 
 ## Setting up the Content Changing Mechanism
 
@@ -103,7 +103,7 @@ To enable the size based mechanism set the __ContentChangeMode__ property of Rad
 > The default ContentChangeMode default value is set to Automatic.
 
 #### __Figure 2: RadFluidContentControl with size 150,150__
-![WPF RadFluidContentControl RadFluidContentControl with size 150,150](images/fluidcontentcontrol-getting-started-1.png)
+![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with size 150,150](images/fluidcontentcontrol-getting-started-1.png)
 
 To enable the manual mechanism set the __ContentChangeMode__ property of RadFluidContentControl to __Manual__. This allows you to manually set the __State__ property of the control, thus changing the visible content.
 
@@ -129,7 +129,7 @@ To enable the manual mechanism set the __ContentChangeMode__ property of RadFlui
 {{endregion}}
 
 #### __Figure 3: RadFluidContentControl with large content manually set via the State property__
-![WPF RadFluidContentControl RadFluidContentControl with large content manually set via the State property](images/fluidcontentcontrol-getting-started-2.png)
+![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with large content manually set via the State property](images/fluidcontentcontrol-getting-started-2.png)
 
 ## Data Binding
 

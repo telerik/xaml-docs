@@ -20,7 +20,7 @@ The __OffsetY and OffsetX__ property allows you to move the images up and down t
     <telerik:RadCoverFlow OffsetY="0"/>
 {{endregion}}
 
-![WPF RadCoverflow OffsetY 0](images/RadCoverFlow_Features8.gif)
+![{{ site.framework_name }} RadCoverflow OffsetY 0](images/RadCoverFlow_Features8.gif)
 
 #### __XAML__
 
@@ -28,7 +28,7 @@ The __OffsetY and OffsetX__ property allows you to move the images up and down t
     <telerik:RadCoverFlow OffsetY="120"/>
 {{endregion}}
 
-![WPF RadCoverflow OffsetY 120](images/RadCoverFlow_Features9.gif)
+![{{ site.framework_name }} RadCoverflow OffsetY 120](images/RadCoverFlow_Features9.gif)
 
 #### __XAML__
 
@@ -36,6 +36,6 @@ The __OffsetY and OffsetX__ property allows you to move the images up and down t
     <telerik:RadCoverFlow OffsetY="-60"/>
 {{endregion}}
 
-![WPF RadCoverflow OffsetY -60](images/RadCoverFlow_Features10.gif)
+![{{ site.framework_name }} RadCoverflow OffsetY -60](images/RadCoverFlow_Features10.gif)
 
 

@@ -73,7 +73,7 @@ __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__
 {{endregion}}
 
 #### __Figure 1: RadWizard with WizardPage__
-![WPF RadWizard RadWizard with WizardPage](images/GettingStarted-WizardPage.png)
+![{{ site.framework_name }} RadWizard RadWizard with WizardPage](images/GettingStarted-WizardPage.png)
 
 >For more information on how to control the visualization of the buttons, check out the [Wizard Buttons]({%slug wizard-buttons%}) article.
 

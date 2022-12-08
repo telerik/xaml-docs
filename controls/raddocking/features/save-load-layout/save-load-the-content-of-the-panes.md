@@ -50,7 +50,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	</telerik:RadDocking>
 {{endregion}}
 
-![WPF RadDocking Pane Declaration](images/RadDocking_Features_SaveLoadPaneContent_010.png)
+![{{ site.framework_name }} RadDocking Pane Declaration](images/RadDocking_Features_SaveLoadPaneContent_010.png)
 
 You can save the panes' content by handling the __ElementLoaded__ event of the __RadDocking__ control and setting the content of the newly created pane yourself.
 

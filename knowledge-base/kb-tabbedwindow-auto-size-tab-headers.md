@@ -65,4 +65,4 @@ Change the the default ItemsPanel of RadTabbedWindow to __TabStripPanel__. You c
 	}
 {{endregion}}
 
-![WPF RadTabbedWindow Auto Size the Tab Items](images/kb-tabbedwindow-auto-size-tab-headers-0.png)
+![{{ site.framework_name }} RadTabbedWindow Auto Size the Tab Items](images/kb-tabbedwindow-auto-size-tab-headers-0.png)

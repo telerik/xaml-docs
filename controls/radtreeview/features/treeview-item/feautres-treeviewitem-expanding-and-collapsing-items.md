@@ -152,7 +152,7 @@ The ExpandItemByPath has two overloads - one that accepts the string path and a 
 	End Sub
 {{endregion}}
 
-![WPF RadTreeView ExpandItemByPath with Separator](images/RadTreeView_TreeViewItemExpandingCollapsing_020.PNG)
+![{{ site.framework_name }} RadTreeView ExpandItemByPath with Separator](images/RadTreeView_TreeViewItemExpandingCollapsing_020.PNG)
 
 When using the overload that doesn't accept a path separator you can use the default one ("\\") or set the __PathSeparator__ property of RadTreeView to change it. 
 

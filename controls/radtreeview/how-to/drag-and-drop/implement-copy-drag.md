@@ -181,7 +181,7 @@ Now if you try to drag an item from the right __RadTreeView__ and drop it in the
 ## Copy Item When Dragging Within the Same TreeView 
 
 In this section you will see how to implement copy drag, when dragging items within the same __RadTreeView__. On the next figure you can see the initial staging.
-![WPF RadTreeView Copy Item When Dragging Within the Same TreeView](images/RadTreeView_HowToImplementCopyDrag_040.png)
+![{{ site.framework_name }} RadTreeView Copy Item When Dragging Within the Same TreeView](images/RadTreeView_HowToImplementCopyDrag_040.png)
 
 Here is a treeview populated with some hierarchical data. This is the initial XAML declaration: 
 

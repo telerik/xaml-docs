@@ -172,4 +172,4 @@ The Selection is cleared each time the SelectedItems are more than one so that y
 
 The result can be seen below:
 
-![WPF RadChart  ](images/RadChart_HowToStackedbarsSelection.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToStackedbarsSelection.PNG)

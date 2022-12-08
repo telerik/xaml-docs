@@ -16,7 +16,7 @@ position: 8
 
 __RadChart's__ [DefaultView]({%slug radchart-features-default-view%}) provides you with layout that consists of [Chart Title]({%slug radchart-features-chart-title%}), [Chart Area]({%slug radchart-features-chart-area%}) and [Chart Legend]({%slug radchart-features-chart-legend%}). However, in some cases, you might need to have more than one __ChartArea__ in order to display two or more charts separately. Of course, you will also need to use data binding via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}) in order to populate the __RadChart__ with data.
 
-![WPF RadChart  ](images/RadChart_PopulatingWithData_ManyChartAreas_10.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_ManyChartAreas_10.png)
 
 When you have multiple __ChartAreas__, for each series you can specify which chart area to be used to display the series. To do that, in XAML, use the __SeriesMapping.ChartAreaName__ property and specify the name of the __ChartArea__ you want to be used for that series. Alternatively, you can specify the __ChartArea__ in the code behind by using __SeriesMapping.ChartArea__ property - simply set it to the desired __ChartArea__ instance.
 
@@ -199,7 +199,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 
 As you can see from the image below, the __RadChart__ layout is changed and contains two __ChartAreas__ - for year 2008 and for year 2009. Two series are created and for each one of them __CharAreaName__ property is set to the appropriate __ChartArea__. Thus, the data for year 2008 goes to the left __ChartArea__ while the data for 2009 goes to the right __ChartArea__. Another option is to use __SeriesMapping.AreaName__ from the code behind to set the desired instance of the __ChartArea__ directly:
 
-![WPF RadChart  ](images/RadChart_PopulatingWithData_ManyChartAreas_20.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_ManyChartAreas_20.png)
 
 ## See Also
 

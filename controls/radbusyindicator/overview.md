@@ -19,7 +19,7 @@ __RadBusyIndicator__ enables you to display a notification whenever a longer-run
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadBusyIndicator Overview](images/radbusyindicator-overview-0.png)
+![{{ site.framework_name }} RadBusyIndicator Overview](images/radbusyindicator-overview-0.png)
 
 ## Key Features
 

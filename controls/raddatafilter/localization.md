@@ -28,7 +28,7 @@ Here is a list of the supported languages:
 
 Below you may see some of the resource keys and the strings they are associated with them.
 
-![WPF RadDataFilter Localizable Elements](images/RadDataFilter_Localization.png)
+![{{ site.framework_name }} RadDataFilter Localizable Elements](images/RadDataFilter_Localization.png)
 
 ## Resource Keys
 

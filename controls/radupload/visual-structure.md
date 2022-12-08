@@ -15,7 +15,7 @@ This section defines the terms and concepts used in the scope of __RadUpload__ t
 
 The __RadUpload__ is an user interface control, that provides the users with a way to upload their files to a server. In its default state the following visual elements can be seen.
 
-![WPF RadUpload Default Visual Structure](images/RadUpload_VisualStructure_01.png)
+![{{ site.framework_name }} RadUpload Default Visual Structure](images/RadUpload_VisualStructure_01.png)
 
 * __Title__ - Shows information related to the control's state, for example: "Select files to upload", "Uploading...", "Upload Done".
 
@@ -25,7 +25,7 @@ The __RadUpload__ is an user interface control, that provides the users with a w
 
 After selecting some files from the browse dialog window, the following elements can be seen.
 
-![WPF RadUpload Selected Files Visual Structure](images/RadUpload_VisualStructure_02.png)
+![{{ site.framework_name }} RadUpload Selected Files Visual Structure](images/RadUpload_VisualStructure_02.png)
 
 * __Add more files Button__ - it is the same as the __Browse Button__. The only difference is that the upload list will not be cleared.
 
@@ -41,7 +41,7 @@ After selecting some files from the browse dialog window, the following elements
 
 When the upload process has been started the following elements are available.
 
-![WPF RadUpload Upload Process Visual Structure](images/RadUpload_VisualStructure_03.png)
+![{{ site.framework_name }} RadUpload Upload Process Visual Structure](images/RadUpload_VisualStructure_03.png)
 
 * __Pause Button__ - pauses the upload process.
 

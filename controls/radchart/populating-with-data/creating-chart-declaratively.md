@@ -69,7 +69,7 @@ After declaring the default view, the next step is to add a chart title. Find yo
 {{endregion}}
     
      
-![WPF RadChart  ](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_010.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_010.png)
 
 ## Adding ChartLegend
 
@@ -203,7 +203,7 @@ The XAML bellow defines __LineSeriesDefinition__, that represents the line chart
 
 The result is [categorical chart]({%slug radchart-features-categorical-charts%}), where on __X-Axis__ you can see the months:
 
-![WPF RadChart  ](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_020.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_020.png)
 
 ## See Also
 

@@ -25,7 +25,7 @@ In the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls if in t
 								   Value="12345" />
 {{endregion}}
 
-![WPF RadMaskedInput Placeholders Replaced with 0](images/radmaskedinput_howto_skip_placeholders.png)
+![{{ site.framework_name }} RadMaskedInput Placeholders Replaced with 0](images/radmaskedinput_howto_skip_placeholders.png)
 
 However, if you need to define a consecutive input so that entering a new digit to this number  _____,_12,345__ will result in adding the digit to the first available position: _____,412,345__, you can set the __AllowSkipPlaceholders__ property to __False__:
 
@@ -43,4 +43,4 @@ However, if you need to define a consecutive input so that entering a new digit 
 								   Value="12345" />
 {{endregion}}
 
-![WPF RadMaskedInput Skipped Placeholders](images/radmaskedinput_howto_skip_placeholders_false.png)
+![{{ site.framework_name }} RadMaskedInput Skipped Placeholders](images/radmaskedinput_howto_skip_placeholders_false.png)

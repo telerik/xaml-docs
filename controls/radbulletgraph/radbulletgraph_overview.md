@@ -17,7 +17,7 @@ The __RadBulletGraph__ control is a variation of linear gauge. It combines a num
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![WPF RadBulletGraph Overview](images/radbulletgraph-overview-0.png)
+![{{ site.framework_name }} RadBulletGraph Overview](images/radbulletgraph-overview-0.png)
 
 ## Key Features
 

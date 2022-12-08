@@ -22,7 +22,7 @@ Each __RadPane__ has a menu, which allow you to perform certain actions against 
 
 * __Hide__ - hides the __RadPane__.
 
-![WPF RadDocking Pane Menu](images/RadDocking_Features_Panes_Pane_Menu_01.png)
+![{{ site.framework_name }} RadDocking Pane Menu](images/RadDocking_Features_Panes_Pane_Menu_01.png)
 
 You can modify the menu by using the __ContextMenuTemplate__ property of the __RadPane__. It is of type __DataTemplate__ and is expected to contain a __RadContextMenu__. Here is an example:
 
@@ -89,4 +89,4 @@ Here is the final code:
 	</telerik:RadPane>
 {{endregion}}
 
-![WPF RadDocking with Custom Pane Context Menu](images/RadDocking_Features_Panes_Pane_Menu_02.png)
+![{{ site.framework_name }} RadDocking with Custom Pane Context Menu](images/RadDocking_Features_Panes_Pane_Menu_02.png)

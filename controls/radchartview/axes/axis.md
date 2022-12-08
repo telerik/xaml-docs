@@ -39,7 +39,7 @@ Here are the __common properties__ for all kinds of axes:
 
 * __LabelFitMode__: The axis labels can be laid out in specific ways in order to improve their readability when they become too long and start to overlap each other. __LabelFitMode__ positions the labels on different lines and the other fit mode rotates the labels some user defined degree so that they appear inclined or orthogonal to the axis, making them easier to read.        
 
-	![WPF RadChartView LabelFit Modes](images/radchartview-chart_axes_labelfitmode.png)
+	![{{ site.framework_name }} RadChartView LabelFit Modes](images/radchartview-chart_axes_labelfitmode.png)
 
 * __ElementBrush__: You may colorize all axis elements (line, ticks, labels and title) simultaneously using this property. You must provide Brush as its value. You may see this property in action in the [Multiple Axes]({%slug radchartview-axes-multipleaxes%}) article.
 

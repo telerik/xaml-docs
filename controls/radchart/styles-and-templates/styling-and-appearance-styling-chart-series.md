@@ -55,7 +55,7 @@ For example, you can change the appearance of a __BarSeries__ in the following w
 
 
 Here is the result.
-![WPF RadChart  ](images/RadChart_StylingChartSeries_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_01.png)
 
 ## Styling the Series via Styles
 
@@ -117,7 +117,7 @@ The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyl
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = TryCast(Me.Resources("SplineAreaStyle"), Style)
 {{endregion}}
 
-![WPF RadChart  ](images/RadChart_StylingChartSeries_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_02.png)
 
 * To create a style for the __Item-Drawn Series__ (Bar, StackedBar, StackedBar100, HorizontalBar, HorizontalStackedBar, HorizontalStackedBar100, Pie, Doughnut, Stick, CandleStick, Bubble) you have to create a style that targets the __Shape__ class. 
 
@@ -146,7 +146,7 @@ Here is an example:
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = TryCast(Me.Resources("BarStyle"), Style)
 {{endregion}}
 
-![WPF RadChart  ](images/RadChart_StylingChartSeries_03.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_03.png)
 
 >tipTo learn how to change the foreground of the item's label when using styles take a look at the [Styling the Item Labels]({%slug radchart-styling-and-appearance-styling-item-labels%}) topic.
 
@@ -203,7 +203,7 @@ or
 	</telerik:RadChart>
 {{endregion}}
 
-![WPF RadChart  ](images/RadChart_StylingChartSeries_04.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_04.png)
 
 There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartArea__, which define the behavior of the palette. When __N__brushes are added, then the first __N__ series will use those brushes. If __PaletteBrushesRepeat__ is set to __True__, then the next __N__ series will again use the same colors. When set to __False__, the next series will fallback to use the other available resources.
 
@@ -247,17 +247,17 @@ or
 	</telerik:RadChart>
 {{endregion}}
 
-![WPF RadChart  ](images/RadChart_StylingChartSeries_05.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_05.png)
 
 >tipYou can set the __PaletteBrushesUseSolidColors__ property to true so that those Themes that have *Gradient* colors will have their Gradients set to the SolidColors as given in the Palette. Such themes are *Vista*, *Summer* and *Windows7*. For comparison you may take a look at the following two pictures:
 
 * PaletteBrushesUseSolidColors = *False* and Theme is set to Vista:
 
-![WPF RadChart  ](images/RadChart_StylingChartSeries_08.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_08.PNG)
 
 * PaletteBrushesUseSolidColors = *True* and Theme is set to Vista:
 
-![WPF RadChart  ](images/RadChart_StylingChartSeries_07.PNG)Styling Series via Retemplating
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_07.PNG)Styling Series via Retemplating
 
 If you want to see a double line when you create new LineSeriesDefinition the onliest way to do this is by retemplating the default Line Style. The double line appearance can be achieved by Transforming the Line by Y with Value -8 for example. The default Line __Fill__, __Stroke__ and __StrokeThickness__ values of the LineSeries should be set so that they are same as the properties defined in the Style. Additionally you can style the point marks so that their color equals the one set in the Style as shown in our help topic [Styling the Point Marks](http://www.telerik.com/help/silverlight/radchart-styling-and-appearance-styling-point-marks.html).
 
@@ -326,7 +326,7 @@ Here is an example:
 {{endregion}}
 
     
-![WPF RadChart  ](images/RadChart_StylingChartSeries_06.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_06.PNG)
 
 ## See Also
 

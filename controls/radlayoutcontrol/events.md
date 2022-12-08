@@ -40,7 +40,7 @@ The layout control has the following event.
 			}
 		{{endregion}}
 		
-		#### __Figure 1: Locked item__	![WPF RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
+		#### __Figure 1: Locked item__	![{{ site.framework_name }} RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
 
 ## Save/Load layout events
 

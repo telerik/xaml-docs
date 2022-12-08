@@ -211,6 +211,6 @@ The following model shows a class that derives from [DynamicObject](https://docs
 	<telerik:RadGridView ItemsSource="{Binding}" />
 {{endregion}}
 
-![WPF RadGridView with Mixed CLR and Dynamic Properties](images/gridview-how-to-use-mixed-clr-dlr-properties-0.png)
+![{{ site.framework_name }} RadGridView with Mixed CLR and Dynamic Properties](images/gridview-how-to-use-mixed-clr-dlr-properties-0.png)
 
 >tip Another code example with dynamic data can be found in the {% if site.site_name == 'Silverlight' %}[Various Data Sources](https://demos.telerik.com/silverlight/#GridView/DataSources){% else %}[Various Data Sources](https://demos.telerik.com/wpf){% endif %} demo.

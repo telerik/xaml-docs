@@ -44,7 +44,7 @@ To add a numeric indicator to the scale you have to include NumericIndicator ele
 
 Every digital cell in the indicator is defined by a corresponding NumberPosition element. The topmost element in the list defines the rightmost digital cell.
 
-![WPF RadGauge Numeric Indicator](images/NumericIndicator.png)
+![{{ site.framework_name }} RadGauge Numeric Indicator](images/NumericIndicator.png)
 
 The Numeric indicator supports the following features:
 

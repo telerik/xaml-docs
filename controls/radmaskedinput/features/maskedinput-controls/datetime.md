@@ -46,7 +46,7 @@ Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 	                                UpdateValueEvent="LostFocus" />
 {{endregion}}
 
-![WPF RadMaskedInput DateTime Mask](images/radmaskedinput_datetimeinput_default.png)
+![{{ site.framework_name }} RadMaskedInput DateTime Mask](images/radmaskedinput_datetimeinput_default.png)
 
 ## Data Binding
 
@@ -111,7 +111,7 @@ With the built-in functionality of the control it is not necessary to type __AM_
 {{endregion}}
 
 #### Figure 2: Showing the time period
-![WPF RadMaskedInput Showing the time period](images/radmaskedinput_datetimeinput_ampm.png)
+![{{ site.framework_name }} RadMaskedInput Showing the time period](images/radmaskedinput_datetimeinput_ampm.png)
  
 
 ## FormatString
@@ -131,10 +131,10 @@ You can further format the entered value by setting the __FormatString__ propert
 {{endregion}}
 
 #### Figure 2: Showing the text value when the control is focused
-![WPF RadMaskedInput Showing the text value when the control is focused](images/radmaskedinput_datetimeinput_format_string_focused.png)
+![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is focused](images/radmaskedinput_datetimeinput_format_string_focused.png)
 
 #### Figure 3: Showing the text value when the control is unfocused
-![WPF RadMaskedInput Showing the text value when the control is unfocused](images/radmaskedinput_datetimeinput_format_string_focused.png)
+![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is unfocused](images/radmaskedinput_datetimeinput_format_string_focused.png)
 
 ## See Also
  * [Getting Started]({%slug radmaskedinput-getting-started%})

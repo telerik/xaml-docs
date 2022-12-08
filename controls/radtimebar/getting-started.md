@@ -65,7 +65,7 @@ Defining the control requires setting several vital properties. Those are __Peri
 {{endregion}}
 
 #### __Figure 1: RadTimeBar__
-![WPF RadTimeBar RadTimeBar](images/radtimebar-getting-started-0.png)
+![{{ site.framework_name }} RadTimeBar RadTimeBar](images/radtimebar-getting-started-0.png)
 
 ## Setting the Visible Period
 
@@ -118,7 +118,7 @@ The visible period defines what portion of the period to be brought into the vie
 {{endregion}}
 
 #### __Figure 2: RadTimeBar with visible period set__
-![WPF RadTimeBar RadTimeBar with visible period set](images/radtimebar-getting-started-1.png)
+![{{ site.framework_name }} RadTimeBar RadTimeBar with visible period set](images/radtimebar-getting-started-1.png)
 
 ## Selecting an Interval
 
@@ -176,7 +176,7 @@ To select an interval you can set the RadTimeBar's __SelectionStart__ and __Sele
 {{endregion}}
 
 #### __Figure 3: RadTimeBar with selection defined__
-![WPF RadTimeBar RadTimeBar with selection defined](images/radtimebar-getting-started-2.png)
+![{{ site.framework_name }} RadTimeBar RadTimeBar with selection defined](images/radtimebar-getting-started-2.png)
 
 ## Hosting Another Control
 
@@ -280,7 +280,7 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 {{endregion}}
 
 #### __Figure 4: RadTimeBar and RadSparkline__
-![WPF RadTimeBar RadTimeBar and RadSparkline](images/radtimebar-getting-started-3.png)
+![{{ site.framework_name }} RadTimeBar RadTimeBar and RadSparkline](images/radtimebar-getting-started-3.png)
 
 #### DataBinding the RadSparkLine
 

@@ -20,10 +20,10 @@ The __RadTransitionControl__ allows you to create transition animations that wil
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-![WPF RadTransitionControl Overview](images/RadTransition_Overview_02.png)
+![{{ site.framework_name }} RadTransitionControl Overview](images/RadTransition_Overview_02.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![WPF RadTransitionControl Overview](images/RadTransition_Overview_02_WPF.png)
+![{{ site.framework_name }} RadTransitionControl Overview](images/RadTransition_Overview_02_WPF.png)
 {% endif %}
 
 This is a list with short descriptions of the top-of-the-line features of __Telerik's RadTransitionControl__:

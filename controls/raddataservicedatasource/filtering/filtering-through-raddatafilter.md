@@ -43,7 +43,7 @@ If you bind __RadDataFilter.Source__ to __RadDataServiceDataSource.DataView__, y
 
 On running the application, you may perform the following:
 
-![WPF RadDataServiceDataSource Filtering through RadDataFilter](images/RadDataServiceDataSource_FiteringThroughRadDataFilter.png)
+![{{ site.framework_name }} RadDataServiceDataSource Filtering through RadDataFilter](images/RadDataServiceDataSource_FiteringThroughRadDataFilter.png)
 
 >caution If __AutoLoad__ is ___false___, the descriptors will be transferred to __RadDataServiceDataSource__, but no trip to the server will be made until the __Load__ method is called.
 

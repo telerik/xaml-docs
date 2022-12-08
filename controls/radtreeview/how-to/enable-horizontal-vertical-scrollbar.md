@@ -27,7 +27,7 @@ For example, you may have the following treeview:
 	</telerik:RadTreeView>
 {{endregion}}
 	
-![WPF RadTreeView Sample Declaration](images/RadTreeView_HowToEnableHorizontalAndVerticalScrollbar_001.png)
+![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_HowToEnableHorizontalAndVerticalScrollbar_001.png)
 
 In order to enable horizontal and/or vertical scrollbar you need to add the following attribute(s) to the __RadTreeView__ declaration: 
 
@@ -38,7 +38,7 @@ In order to enable horizontal and/or vertical scrollbar you need to add the foll
 {{endregion}}
 
 And here is the result: 
-![WPF RadTreeView Enabled Scrollbars](images/RadTreeView_HowToEnableHorizontalAndVerticalScrollbar_010.png)
+![{{ site.framework_name }} RadTreeView Enabled Scrollbars](images/RadTreeView_HowToEnableHorizontalAndVerticalScrollbar_010.png)
 
 The same operation can be done in the code-behind: 
 

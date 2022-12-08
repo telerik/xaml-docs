@@ -153,7 +153,7 @@ In the code behind you have to:
 
 Here is the final result:
 
-![WPF RadBusyIndicator Report Progress Value](images/radbusyindicator_features_report_progress_value_010.png)
+![{{ site.framework_name }} RadBusyIndicator Report Progress Value](images/radbusyindicator_features_report_progress_value_010.png)
 
 ## See Also
 

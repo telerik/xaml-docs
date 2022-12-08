@@ -15,16 +15,16 @@ One of the most important features of the __RadRibbonView__ control is the dynam
 The resizing of the elements is defined per __RadRibbonTab__. The resizing behavior of one tab is __independent__ from the resizing behavior of the rest of the tabs. A __RadRibbonTab__ control can contains many __RadRibbonGroups__. Each group in your tabs can have four distinct sizes:
 
 * __Large__- this is the default size.
-	![WPF RadRibbonView Large Ribbon Group](images/RibbonView_Group_Large.png)
+	![{{ site.framework_name }} RadRibbonView Large Ribbon Group](images/RibbonView_Group_Large.png)
 
 * __Medium__
-	![WPF RadRibbonView Medium Ribbon Group](images/RibbonView_Group_Medium.png)
+	![{{ site.framework_name }} RadRibbonView Medium Ribbon Group](images/RibbonView_Group_Medium.png)
 
 * __Small__
-	![WPF RadRibbonView Small Ribbon Group](images/RibbonView_Group_Small.png)
+	![{{ site.framework_name }} RadRibbonView Small Ribbon Group](images/RibbonView_Group_Small.png)
 
 * __Collapsed__
-	![WPF RadRibbonView Collapsed Ribbon Group](images/RibbonView_Group_Collapsed.png)
+	![{{ site.framework_name }} RadRibbonView Collapsed Ribbon Group](images/RibbonView_Group_Collapsed.png)
 
 ## DefaultVariant
 
@@ -69,7 +69,7 @@ The __DefaultVariant__ is always available and is always with highest priority. 
 The resizing behavior of __RadRibbonGroup__ is specified through the RadRibbonGroup's __Variants__ collection. The collection is populated with __GroupVariant__ objects, which objects have two important properties:		
 
 * __Variant__ - defines the variant in which the group can be. The values for this property are predefined in the __RibbonGroupVariant__ enumeration, which exposes the following fields:
-	![WPF RadRibbonView Group Variants](images/RibbonView_GroupVariants.png)
+	![{{ site.framework_name }} RadRibbonView Group Variants](images/RibbonView_GroupVariants.png)
 
 * __Priority__- the priority for the specified __Variant__.			
 

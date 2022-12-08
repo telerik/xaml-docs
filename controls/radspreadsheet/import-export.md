@@ -147,7 +147,7 @@ To open or save a document with RadSpreadsheet, you can use the **Import()** and
 Through the UI of RadSpreadsheet you can enable the end user to open and save documents. Clicking the Open or Save button in the File menu of RadRSpreadsheetRibbon opens the Open/Save File dialog and lets the user to choose the file they would like to open or, respectively, the location they would like to save to.
 
 #### Figure 1: Open and Save buttons in the File menu
-![WPF RadSpreadsheet Open and Save buttons in the File menu](images/RadSpreadsheet_ImportExport_01.png)
+![{{ site.framework_name }} RadSpreadsheet Open and Save buttons in the File menu](images/RadSpreadsheet_ImportExport_01.png)
 
 
 ## See Also

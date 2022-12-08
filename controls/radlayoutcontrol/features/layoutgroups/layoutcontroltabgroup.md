@@ -27,7 +27,7 @@ __LayoutControlTabGroup__ is one of the few layout groups supported by the __Rad
 {{endregion}}
 	
 #### __Figure 1: LayoutControlTabGroup__
-![WPF RadLayoutControl LayoutControlTabGroup](images/layoutcontrol-features-layoutcontroltabgroup-01.png)
+![{{ site.framework_name }} RadLayoutControl LayoutControlTabGroup](images/layoutcontrol-features-layoutcontroltabgroup-01.png)
 
 > If a UIElement is added as a direct child of a tab group, it will be automatically wrapped into a __LayoutControlTabGroupItem__.
 
@@ -52,7 +52,7 @@ The header of the tab group item can be set through its __Header__ property. The
 {{endregion}}	
 
 #### __Figure 2: LayoutControlExpanderGroup with UIElements in its header__
-![WPF RadLayoutControl LayoutControlExpanderGroup with UIElements in its header](images/layoutcontrol-features-layoutcontroltabgroup-02.png)
+![{{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup with UIElements in its header](images/layoutcontrol-features-layoutcontroltabgroup-02.png)
 
 > __LayoutControlTabGroupItem__ is also a layout group control which means that you can move and arrange it in the layout. In other words the item can be dragged outside of the tab control group. Also, you can drag an element from the layout and place it in the tab strip area which will automatically wrap it into a LayoutControlTabGroupItem.
 
@@ -75,7 +75,7 @@ The tab group allows you to select its child tab items. The selection can be cha
 {{endregion}}
 
 #### __Figure 3: LayoutControlTabGroupItem selection__
-![WPF RadLayoutControl LayoutControlTabGroupItem selection](images/layoutcontrol-features-layoutcontroltabgroup-03.png)
+![{{ site.framework_name }} RadLayoutControl LayoutControlTabGroupItem selection](images/layoutcontrol-features-layoutcontroltabgroup-03.png)
 
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

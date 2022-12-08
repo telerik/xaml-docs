@@ -28,7 +28,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## RadMap
 
-![WPF RadMap Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_01.png)
+![{{ site.framework_name }} RadMap Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_01.png)
 
 * __[Grid]__ - layouts the elements of the __RadMap's__ template and is of type __Grid__.
 
@@ -56,7 +56,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapCommandBar
 
-![WPF RadMap MapCommandBar Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_02.png)
+![{{ site.framework_name }} RadMap MapCommandBar Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_02.png)
 
 * __PART_MapCommandDropDown__ - represents the __CommandBar__ and is of type __RadDropDownButton__. In order to change the appearance of the popup, modify the value of its __DropDownContent__ property.
 
@@ -70,7 +70,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapNavigation
 
-![WPF RadMap MapNavigation Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_03.png)
+![{{ site.framework_name }} RadMap MapNavigation Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_03.png)
 
 * __mapNavigation__ - layouts the elements of the __MapNavigation's__ template and is of type __Grid__.
 
@@ -94,7 +94,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapZoomBar
 
-![WPF RadMap MapZoomBar Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_04.png)
+![{{ site.framework_name }} RadMap MapZoomBar Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_04.png)
 
 * __mapNavigation__ - layouts the elements of the __MapZoomBar's__ template and is of type __Grid__.
 
@@ -106,7 +106,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapScale
 
-![WPF RadMap MapScale Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_05.png)
+![{{ site.framework_name }} RadMap MapScale Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_05.png)
 
 * __[Grid]__ - layouts the elements of the __MapScale's__ template and is of type __Grid__.
 
@@ -120,7 +120,7 @@ Like most controls, the __RadMap__ also allows you to template it in order to ch
 
 ## MapMouseLocationIndicator
 
-![WPF RadMap MapMouseLocationIndicator Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_06.png)
+![{{ site.framework_name }} RadMap MapMouseLocationIndicator Template Structure](images/RadMap_StylesAndTemplates_TemplateStructure_06.png)
 
 * __[Grid]__ - layouts the elements of the __MapMouseLocationIndicator's__ template and is of type __Grid__.
 	

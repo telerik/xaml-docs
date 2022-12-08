@@ -171,12 +171,12 @@ Finally, set the DataValidationViewModel to the UserControl's __DataContext__ pr
 
 Run the demo and fill all fields with valid data. As you can see no validation errors occur.
 
-{% if site.site_name == 'Silverlight' %}![WPF RadMaskedInput Validation ToolTip](images/radmaskedinput_validation_throw_exception_02-sl.png){% endif %}
-{% if site.site_name == 'WPF' %}![WPF RadMaskedInput Validation ToolTip](images/radmaskedinput_validation_throw_exception_02-wpf.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![{{ site.framework_name }} RadMaskedInput Validation ToolTip](images/radmaskedinput_validation_throw_exception_02-sl.png){% endif %}
+{% if site.site_name == 'WPF' %}![{{ site.framework_name }} RadMaskedInput Validation ToolTip](images/radmaskedinput_validation_throw_exception_02-wpf.png){% endif %}
 
 Next try to fill some improper data.
 
-{% if site.site_name == 'Silverlight' %}![WPF RadMaskedInput Validation ToolTip](images/radmaskedinput_validation_throw_exception_01-sl.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![{{ site.framework_name }} RadMaskedInput Validation ToolTip](images/radmaskedinput_validation_throw_exception_01-sl.png){% endif %}
 {% if site.site_name == 'WPF' %}![Validation Tool TipWPF](images/radmaskedinput_validation_throw_exception_01-wpf.png){% endif %}
 
 ## See Also

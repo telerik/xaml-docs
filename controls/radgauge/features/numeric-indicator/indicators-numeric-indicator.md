@@ -94,7 +94,7 @@ For example, if you want to display three digit number with two additional fract
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Numeric Scale](images/RadGauge_Features_NumericIndicator_01.png)
+![{{ site.framework_name }} RadGauge Numeric Scale](images/RadGauge_Features_NumericIndicator_01.png)
 
 ## Size
 
@@ -136,7 +136,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Numeric Indicator Custom Size](images/RadGauge_Features_NumericIndicator_02.png)
+![{{ site.framework_name }} RadGauge Numeric Indicator Custom Size](images/RadGauge_Features_NumericIndicator_02.png)
 
 ## Placement
 
@@ -170,7 +170,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Numeric Indicator Custom Placement](images/RadGauge_Features_NumericIndicator_03.png)
+![{{ site.framework_name }} RadGauge Numeric Indicator Custom Placement](images/RadGauge_Features_NumericIndicator_03.png)
 
 ## Corner Radius
 
@@ -212,7 +212,7 @@ The __CornerRadius__ property allows you to specify the radius of the indicator'
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Numeric Indicator Corner Radius](images/RadGauge_Features_NumericIndicator_07.png)
+![{{ site.framework_name }} RadGauge Numeric Indicator Corner Radius](images/RadGauge_Features_NumericIndicator_07.png)
 
 ## Display Value Format
 
@@ -247,7 +247,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![WPF RadGauge Numeric Indicator Display Value Format](images/RadGauge_Features_NumericIndicator_08.png)
+![{{ site.framework_name }} RadGauge Numeric Indicator Display Value Format](images/RadGauge_Features_NumericIndicator_08.png)
 
 ## Value
 

@@ -53,4 +53,4 @@ Adjust the positions of the series using their [RadiusFactor and InnerRadiusFact
 	</telerik:RadPieChart>
 {{endregion}}
 
-![WPF RadChartView Display Multiple Doughnut Series](images/kb-chartview-display-multiple-donut-series-0.png)
+![{{ site.framework_name }} RadChartView Display Multiple Doughnut Series](images/kb-chartview-display-multiple-donut-series-0.png)

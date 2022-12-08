@@ -23,20 +23,20 @@ This topic will show you how to perform the second one.
 ## Modifying the Default Style
 
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonView__ whose __ContextualTabs__ you want to style.
-![WPF RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_Locate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_Locate.png)
 
 From the menu choose *Object -> Edit Additional Templates -> Edit ContextualTabsStyle -> Edit a Copy*.
-![WPF RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_EditStyle.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_EditStyle.png)
 
 You will be prompted for the name of the style and where to be placed.
-![WPF RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_CreateStyle.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_CreateStyle.png)
 
 >If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
 After clicking 'OK', Expression Blend will generate the default style of the __RadRibbonView ContextualTabs__ in the __Resources__ section of your User Control. The properties available for the style will be loaded in the 'Properties' pane and you will be able to modify their default values.				
 
 In the 'Objects and Timeline' pane the element parts for the __ContextualTab's__ template will get loaded.
-![WPF RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_ControlTemplate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ContextualTabs_ControlTemplate.png)
 
 * __RootPanel__ - a __Grid__ control that represents the main layout control in the __ContextualTab's__ template.						
 

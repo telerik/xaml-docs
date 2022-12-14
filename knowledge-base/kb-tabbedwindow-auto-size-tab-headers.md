@@ -36,10 +36,12 @@ Change the the default ItemsPanel of RadTabbedWindow to __TabStripPanel__. You c
 {{region kb-tabbedwindow-auto-size-tab-headers-0}}
 	<Window.Resources>
 		<ItemsPanelTemplate x:Key="tabControlPanel">            
-			<navigation:TabStripPanel />
+			<primitives:TabStripPanel />
 		</ItemsPanelTemplate>
 	</Window.Resources>
 {{endregion}}
+
+Where __primitives__ points to `xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Primitives;assembly=Telerik.Windows.Controls.Navigation"`
 
 #### __[C#]__
 {{region kb-tabbedwindow-auto-size-tab-headers-1}}

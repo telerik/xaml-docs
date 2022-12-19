@@ -55,7 +55,9 @@ The __Diagramming Framework__ provides a list of constants that are applied thro
 
 * __SelectionRectInflationValue__: Gets of sets the margin around the selected shapes. The default value of this constant is 7px.
 
-* __StartDragDelta__: Gets or sets the minimum distance that a mouse move operation has to cover to start a drag action. The default value of this constant is 4px.		
+* __StartDragDelta__: Gets or sets the minimum distance that a mouse move operation has to cover to start a drag action. The default value of this constant is 4px.
+
+* __MinimumShapeDistanceOnConnectionManipulationSnap__: Gets or sets a __double__ value that determines he minimum distance from a connection to a given shape so that snapping occurs.	
 
 * __MinimumAdornerSize__: Gets or sets a __double__ value that determines the minimum size of the diagram items adorner.
 

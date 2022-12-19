@@ -55,7 +55,7 @@ You can modify the appearance of the selection in the control through the **Sele
 
 ## Advanced Selection Mode
 
-By default when the user select text the words are selected letter by letter. In R1 2022 we have introduced an advanced selection mode that allow you to select whole word automatically. This mode can be enabled by the **IsAdvancedSelectionEnabled** property.
+By default when the user select text the words are selected letter by letter. In R1 2022 we have introduced an advanced selection mode that allow you to select whole word automatically. The automatic words selection begins after the selection leaves the first word. This mode can be enabled by the **IsAdvancedSelectionEnabled** property.
 
 ## Programmatic Selection
 

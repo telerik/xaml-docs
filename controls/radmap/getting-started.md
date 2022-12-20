@@ -85,7 +85,7 @@ Using the third overload of the __BingRestMapProvider's__ constructor, allows yo
 
 * A __Bing Maps__ specific key.            
 
->In order to use the __Bing Maps__ with the __RadMap__ control, you have to provide a valid __Bing Maps Key__. To learn how to obtain such a key, read [this topic](http://msdn.microsoft.com/en-us/library/ee681900.aspx). Note that the __Bing Map won't__ __appear__ in your __RadMap__ control, without supplying the key.          
+>In order to use the __Bing Maps__ with the __RadMap__ control, you have to provide a valid __Bing Maps Key__. To learn how to obtain such a key, read [this topic](https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key). Note that the __Bing Map won't__ __appear__ in your __RadMap__ control, without supplying the key.          
 
 After specifying the provider, you should be able to see the respective map appear in the __RadMap__ control.
 

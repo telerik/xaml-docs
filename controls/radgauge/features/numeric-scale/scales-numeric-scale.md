@@ -76,4 +76,4 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_NumericScale_02.png)
+![{{ site.framework_name }} RadGauge Numeric Scale](images/RadGauge_Features_NumericScale_02.png)

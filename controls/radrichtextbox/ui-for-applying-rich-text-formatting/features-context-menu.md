@@ -15,7 +15,7 @@ The __RadRichTextBox__ UI has a built-in context menu feature which can be used 
 > The context menu is available only when the __Telerik.Windows.Controls.RichTextBoxUI__ dll is referenced in the project.
 
 #### __Figure 1: Menu in the context of a table__
-![WPF RadRichTextBox Menu in the context of a table](images/radrichtextbox-features-contextmenu-01.png)
+![{{ site.framework_name }} RadRichTextBox Menu in the context of a table](images/radrichtextbox-features-contextmenu-01.png)
 
 The context menu is enabled by default. You can control this with the __IsContextMenuEnabled__ property. If you set the property to False, the [Selection Mini Tool Bar]({%slug radrichtextbox-features-selection-mini-toolbar%}) will be displayed when you click the mouse right button.
 
@@ -73,7 +73,7 @@ You can customize the default context menu by subscribing for its __Showing__ ev
 The Showing event is not presented in the IContextMenu interface so you will need to cast the ContextMenu property to __Telerik.Windows.Controls.RichTextBoxUI.ContextMenu__.
 	
 #### __Figure 2: Executing the action of the new added item__  
-![WPF RadRichTextBox Executing the action of the new added item](images/radrichtextbox-features-contextmenu-02.png)
+![{{ site.framework_name }} RadRichTextBox Executing the action of the new added item](images/radrichtextbox-features-contextmenu-02.png)
 	
 You can use this approach also to remove or modify menu groups and items. They can be accessed via the __ContextMenuGroupCollection__ property of the event arguments.
 

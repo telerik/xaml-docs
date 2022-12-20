@@ -44,7 +44,7 @@ To display the data from the __WCF Data Service__, create a new WPF application 
 	End Class
 {{endregion}}
 
-![](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}
+![{{ site.framework_name }} RadDataServiceDataSource Generated WCF Files](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -112,7 +112,7 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 
 When we added the ___Service Reference___, __Visual Studio__ generated a hidden file that contains all client-side proxy classes. You can find this file if you tell the __Solution Explorer__ to ___“Show All Files”___ and then drill-down in the __Service References__ node all the way to the file called __Reference__. When you use the ___Add Service Reference___ dialog to add a data service to an application, an entity container class is created that inherits from the __DataServiceContext__ class. This class includes properties that return typed __DataServiceQuery__ instances. In this case this class is called __NorthwindEntities__ and we have further derived from it in order to specify the __Uri__ where it should get its data from. This was done so we can easily declare __RadDataServiceDataSource.DataServiceContext__ in XAML later on.{% endif %}{% if site.site_name == 'Silverlight' %}
 
-![](images/RadDataServiceDataSource_GeneratedClientCode_SL.png){% endif %}
+![{{ site.framework_name }} RadDataServiceDataSource Project Structure WCF](images/RadDataServiceDataSource_GeneratedClientCode_SL.png){% endif %}
 
 ## See Also
 * [Creating the Server Application]({%slug raddataservicedatasource-getting-started-creating-the-server-application%})

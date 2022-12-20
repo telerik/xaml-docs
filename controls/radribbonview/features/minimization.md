@@ -11,20 +11,20 @@ position: 5
 # Minimization
 
 __RadRibbonView__ supports minimization, which means that the ribbon may be hidden so that only its tab headers remain visible. In this state, more screen real estate is available to the client area of the window.
-![](images/RibbonView_Minimized.png)
+![{{ site.framework_name }} RadRibbonView Minimized State](images/RibbonView_Minimized.png)
 
 By clicking a tab header, the ribbon appears in a popup over the window client area and all of its controls are accessible.
-![](images/RibbonView_MinimizedPopup.png)
+![{{ site.framework_name }} RadRibbonView Expanded Popup](images/RibbonView_MinimizedPopup.png)
 
 There are a few ways for the end user to toggle the minimization state of the __RadRibbonView__:			
 
 * Double click on any of the tab headers.				
 
 * Choose 'Minimize the Ribbon' under the Quick Access Tool bar menu.
-	![](images/RibbonView_Minimize_QAT.png)
+	![{{ site.framework_name }} RadRibbonView Minimize the Ribbon Menu Item](images/RibbonView_Minimize_QAT.png)
 
 * Display the MinimizeButton by setting the RibbonView.MinimizeButtonVisibility to Visible and toggling the button state
-	![](images/RibbonView_Minimize_Button.png)
+	![{{ site.framework_name }} RadRibbonView Minimize Button](images/RibbonView_Minimize_Button.png)
 
 ## Properties
 

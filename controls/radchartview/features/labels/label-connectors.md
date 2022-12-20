@@ -39,7 +39,7 @@ RadChartView supports drawing of connector lines between the series' data points
 {{endregion}}
 
 #### __Figure 1: Label connectors visual appearance__
-![WPF RadChartView Label connectors visual appearance](images/radchartview-features-smart-labels-labelconnectors_01.png.png)
+![{{ site.framework_name }} RadChartView Label connectors visual appearance](images/radchartview-features-smart-labels-labelconnectors_01.png.png)
 
 ## Customizing labels connectors points
 
@@ -143,7 +143,7 @@ Now we can add the custom funnel series into the view.
 {{endregion}}
 
 #### __Figure 2: Customized connectors visual appereance__
-![WPF RadChartView Customized connectors visual appereance](images/radchartview-features-customized-labelconnectors_02.png)
+![{{ site.framework_name }} RadChartView Customized connectors visual appereance](images/radchartview-features-customized-labelconnectors_02.png)
 
 ## See Also
 * [GettingStarted]({%slug radchartview-introduction%})

@@ -75,10 +75,6 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 * __[Path]__
 
-
-
-![](images/RadDataForm_DataFormDataField.png)
-
 ## CollectionNavigator Template
 
 * __PART_RooteElement__ - hosts the elements of the template. It represents the border and the background of the CollectionNavigator and is of type Border
@@ -124,7 +120,3 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 * __Delete__ - represents the Delete button and is of type RadButton
 
 * __[Path]__
-
-
-
-![](images/RadDataForm_CollectionNavigatorTemplate.png)

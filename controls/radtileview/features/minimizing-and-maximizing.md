@@ -60,12 +60,12 @@ The __RadTileView__ control allows you to drag a __RadTileViewItem__ and dock it
 {{endregion}}
 
 #### __Figure 1: Item docking started__  
-![WPF RadTileView Item docking started](images/radtileview_features_maximized_docking.png)
+![{{ site.framework_name }} RadTileView Item docking started](images/radtileview_features_maximized_docking.png)
 
 You can see the result after you drop the item on that position in __Figure 2__.
 
 #### __Figure 2: Item docking complete__  
-![WPF RadTileView Item docking complete](images/radtileview_features_maximized_docked.png)
+![{{ site.framework_name }} RadTileView Item docking complete](images/radtileview_features_maximized_docked.png)
 
 ##  Maximize Mode
 
@@ -113,7 +113,7 @@ The __MinimizedRowsCount__ will affect the rows count only if the __MinimizedIte
 {{endregion}}
 
 #### __Figure 3: Minimized area with 2 columns__
-![WPF RadTileView Minimized area with 2 columns](images/radtileview-features-maximized-3.png)
+![{{ site.framework_name }} RadTileView Minimized area with 2 columns](images/radtileview-features-maximized-3.png)
 
 #### __[XAML] Example 4: Setting minimized area with 2 rows__  
 {{region radtileview-minimizing-and-maximizing_3}}
@@ -121,7 +121,7 @@ The __MinimizedRowsCount__ will affect the rows count only if the __MinimizedIte
 {{endregion}}
 
 #### __Figure 4: Minimized area with 2 rows__
-![WPF RadTileView Minimized area with 2 rows](images/radtileview-features-maximized-4.png)
+![{{ site.framework_name }} RadTileView Minimized area with 2 rows](images/radtileview-features-maximized-4.png)
 
 ## Preserve MaximizedItem Position
 

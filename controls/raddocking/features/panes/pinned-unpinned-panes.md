@@ -44,7 +44,7 @@ You can also [pin](#Pinning_All_Panes)/[unpin](#Unpining_All_Panes) all of the p
 
 You can recognize that a docked __RadPane__ is pinned if it is visible all the time, even if your mouse cursor is not over it. On the snapshot below you can see two pinned __RadPanes__ docked to the left and to the right side of the docking container. __Note that the pin icon of the toggle button is pointing downwards.__
 
-![](images/RadDocking_Features_Panes_Pinn_Unpinn_020.png)
+![{{ site.framework_name }} RadDocking Pinned Panes](images/RadDocking_Features_Panes_Pinn_Unpinn_020.png)
 
 ## Unpinned Panes
 
@@ -52,11 +52,11 @@ The unpinned __RadPane__ is shown only when the mouse cursor is over it and is h
 
 On the snapshot below you can see two unpinned __RadPanes__; the first is a "Toolbox" docked to the left, the second is a "Solution Explorer" docked respectively to the right. You can see that all their content is hidden, except their tab headers placed in the auto-hide area.
 
-![](images/RadDocking_Features_Panes_Pinn_Unpinn_030.png)
+![{{ site.framework_name }} RadDocking Unpinned and Hidden Panes](images/RadDocking_Features_Panes_Pinn_Unpinn_030.png)
 
 If you hover your mouse over the tab of the "Toolbox" pane, it will slide automatically overlapping the other content. __Note that the pin icon of the toggle button is pointing sideways.__
 
-![](images/RadDocking_Features_Panes_Pinn_Unpinn_040.png)
+![{{ site.framework_name }} RadDocking Hovered Pane](images/RadDocking_Features_Panes_Pinn_Unpinn_040.png)
 
 >tipIf you want to control the auto-hide area's width and hight of your unpinned panes use the respective __RadPane__'s properties __AutoHideHeight__ and __AutoHideWidth__. The size of the auto-hide area is also affected by the __FlyoutMinLength__ property of RadDocking.
 

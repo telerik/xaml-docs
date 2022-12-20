@@ -10,7 +10,7 @@ position: 0
 
 # Key Features
 
-![](images/RibbonView_paint.png)
+![{{ site.framework_name }} RadRibbonView Paint Application](images/RibbonView_paint.png)
 
 This is a list with short descriptions of the top-of-the-line features of Telerik's __RadRibbonView__ control.				
 

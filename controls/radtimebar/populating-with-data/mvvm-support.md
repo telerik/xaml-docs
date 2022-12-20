@@ -233,4 +233,4 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 
 The result can be seen below:
 
-![](images/radtimebar_mvvm.PNG)
+![{{ site.framework_name }} RadTimeBar with MVVM Data](images/radtimebar_mvvm.PNG)

@@ -20,7 +20,7 @@ To display labels for the data points in the chart series, set the series' __Sho
 {{endregion}}
 
 #### Figure 1: Series labels
-![WPF RadChartView Series labels](images/radchartview-features-label-definition-0.png)
+![{{ site.framework_name }} RadChartView Series labels](images/radchartview-features-label-definition-0.png)
 
 ## Customizing Labels
 
@@ -88,7 +88,7 @@ The following example shows how to setup the chart in a data binding scenario an
 {{endregion}}
 
 #### Figure 2: Customized labels
-![WPF RadChartView Customized labels](images/radchartview-features-label-definition-1.png)
+![{{ site.framework_name }} RadChartView Customized labels](images/radchartview-features-label-definition-1.png)
 
 The following list describes the properties available in the __ChartSeriesLabelDefinition__ class.
 
@@ -255,7 +255,7 @@ In case the chart's [SeriesProvider]({%slug radchartview-features-chartseriespro
 	{{endregion}}
 	
 #### Figure 3: Customized labels with SeriesProvider
-![WPF RadChartView Customized labels with SeriesProvider](images/radchartview-features-label-definition-2.png)
+![{{ site.framework_name }} RadChartView Customized labels with SeriesProvider](images/radchartview-features-label-definition-2.png)
 
 ## See Also  
  * [Smart Labels]({%slug radchartview-features-smart-labels%})

@@ -24,7 +24,7 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 * __PathSeparator__: Gets/sets the path separator symbol.
 
-	![](images/breadcrumb_features_overview_path_separator.png)
+	![{{ site.framework_name }} RadBreadcrumb Path Separator](images/breadcrumb_features_overview_path_separator.png)
 
 * __IsLinearMode__: A property of type bool, which controls whether the breadcrumb is in linear mode. By default this property is __False__ .
 
@@ -42,15 +42,15 @@ The __RadBreadcrumb__ and __RadBreacrumbItem__ controls expose a set of properti
 
 * __DropDownHeader__: Gets/sets the header of the RadBreadcrumbItem that is used to visualize the item when displayed inside its parent's dropdown content.
 
-	![](images/breadcrumb_features_overview_dropdown_header.png)
+	![{{ site.framework_name }} RadBreadcrumb Dropdown Header](images/breadcrumb_features_overview_dropdown_header.png)
 
 * __TextModePath__: Gets/sets the string representation of the RadBreadcrumbItem in text mode
 
-	![](images/breadcrumb_features_overview_textmodepath.png)
+	![{{ site.framework_name }} RadBreadcrumb TextModePath](images/breadcrumb_features_overview_textmodepath.png)
 
 * __Image__: A property of type ImageSource, which allows setting an icon for the item.
 
-	![](images/breadcrumb_features_overview_itemimage.png)
+	![{{ site.framework_name }} RadBreadcrumb Image](images/breadcrumb_features_overview_itemimage.png)
 
 >Please avoid using the character set as a __PathSeparator__ in the __Header__ of the items, because this can lead to an unexpected behavior when you try to expand a path. Also, keep in mind that the __'\'__ character is the default PathSeparator.
 	

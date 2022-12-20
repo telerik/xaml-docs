@@ -22,7 +22,7 @@ When the __IsMoveToPointEnabled__ property is set to __true__ and you click some
 	<telerik:RadSlider Maximum="10" IsMoveToPointEnabled="True"/>
 {{endregion}}
 
-![](images/moveToPoint.png)
+![{{ site.framework_name }} RadSlider Move To Point Enabled](images/moveToPoint.png)
 
 #### __XAML__
 
@@ -34,4 +34,4 @@ When the __IsMoveToPointEnabled__ property is set to __true__ and you click some
 	           SelectionStart="3" />
 {{endregion}}
 
-![](images/moveToPoint_selectionRange.png)
+![{{ site.framework_name }} RadSlider Move To Point Selection](images/moveToPoint_selectionRange.png)

@@ -51,7 +51,7 @@ You can control the alignment of the __RadExpander__ control through the __Horiz
 {{endregion}}
 
 #### Figure 2: RadExpander directions
-![WPF RadExpander RadExpander directions](images/RadExpander_Features_Alignment_default.png)
+![{{ site.framework_name }} RadExpander RadExpander directions](images/RadExpander_Features_Alignment_default.png)
 
 ## HorizontalAlignment and VerticalAlignment properties
 
@@ -94,7 +94,7 @@ You can control the vertical and horizontal alignment of the control through the
 {{endregion}}
 
 #### Figure 2: HorizontalAlignment and VerticalAlignment properties visual appearance
-![WPF RadExpander HorizontalAlignment and VerticalAlignment properties visual appearance](images/RadExpander_Features_Vertical_HorizontalAlignment_shrink.png)
+![{{ site.framework_name }} RadExpander HorizontalAlignment and VerticalAlignment properties visual appearance](images/RadExpander_Features_Vertical_HorizontalAlignment_shrink.png)
 
 >Please note that when the __VerticalAlignment__/__HorizontalAlignment__ properties match the __ExpandDirection__, the __Header__ will move aside as the content is expanded. 
 
@@ -159,7 +159,7 @@ You can use the __HorizontalContentAlignment__ and __VerticalContentAlignment__ 
 {{endregion}}
 
 #### Figure 2: 
-![WPF RadExpander ](images/RadExpander_Features_Alignment_shrink.png)
+![{{ site.framework_name }} RadExpander Different Alignments](images/RadExpander_Features_Alignment_shrink.png)
 
 ## HorizontalHeaderAlignment and VerticalHeaderAlignment properties
 
@@ -208,7 +208,7 @@ If the __RadExpander's__ __ExpandDirection__ is __Up__ or __Down__, you can cont
 {{endregion}}
 
 #### Figure 3: HorizontalHeaderAlignment with ExpandDirection set to Down and Up
-![WPF RadExpander HorizontalHeaderAlignment with ExpandDirection set to Down and Up](images/RadExpander_Features_Alignment_HorizontalHeaderAlignment.png)
+![{{ site.framework_name }} RadExpander HorizontalHeaderAlignment with ExpandDirection set to Down and Up](images/RadExpander_Features_Alignment_HorizontalHeaderAlignment.png)
 
 If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can control the position of the __Header's__ content through again the __HorizontalHeaderAlignment__ property.
 
@@ -243,7 +243,7 @@ If the __RadExpander's__ __ExpandDirection__ is __Right__ or __Left__, you can c
 {{endregion}}
 
 #### Figure 4: HorizontalHeaderAlignment with ExpandDirection set to Right and Left
-![WPF RadExpander HorizontalHeaderAlignment with ExpandDirection set to Right and Left](images/RadExpander_Features_Alignment_VerticalHeader.png)
+![{{ site.framework_name }} RadExpander HorizontalHeaderAlignment with ExpandDirection set to Right and Left](images/RadExpander_Features_Alignment_VerticalHeader.png)
 
 ## See Also  
 * [Getting Started]({%slug expander-getting-started%})

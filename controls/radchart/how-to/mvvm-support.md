@@ -407,7 +407,7 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 
 
 The result so far can be seen on the image below: 
-![](images/RadChart_HowToMVVM_020.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToMVVM_020.PNG)
 
 * The final step is to bind the __GradeColor__ property of the __PersonViewModel__ business object to the background of a single bar.
 
@@ -474,7 +474,7 @@ To pass this method to the __RadChart__ use its __CustomItemStyleDelegate__ prop
 Set this property into the __MVVM_Loaded__ handler.
 
 Here is the final result: 
-![](images/RadChart_HowToMVVM_030.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToMVVM_030.PNG)
 
 Additionally you may want to remove the Background from the SeriesItemsLabels. This can be achieved by retemplating the default Style so that the Background applied to the Labels is Transparent and setting the Foreground to Black for example:
 
@@ -549,7 +549,7 @@ Don't forget to apply the Style to the SeriesItemLabelStyle property of the Seri
 
 
 The result:
-![](images/RadChart_HowToMVVM_040.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToMVVM_040.PNG)
 
 ## See Also
 

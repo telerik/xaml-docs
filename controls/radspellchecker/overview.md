@@ -19,7 +19,7 @@ __RadSpellChecker__ provides you with the ability to spell check different types
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/RadSpellChecker_Overview.png)
+![{{ site.framework_name }} RadSpellChecker Overview](images/RadSpellChecker_Overview.png)
 
 __SpellChecking TextBox, RichTextBox and RadRichtextBox__- the Telerik __RadSpellChecker__ control allows you to check the aforementioned controls for errors:
 

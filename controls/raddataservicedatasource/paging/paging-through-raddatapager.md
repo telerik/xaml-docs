@@ -35,4 +35,4 @@ If you bind __RadDataPager.Source__ to __RadDataServiceDataSource.DataView__, yo
 
 In this case on running the application the following will be visualized:
 
-![](images/RadDataServiceDataSource_PagingThroughRadDataPager.png)
+![{{ site.framework_name }} RadDataServiceDataSource Paging through RadDataPager](images/RadDataServiceDataSource_PagingThroughRadDataPager.png)

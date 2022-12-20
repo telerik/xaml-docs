@@ -37,7 +37,7 @@ The next code snippet shows a regular __RadComboBox__ with static data (defined 
 
 To control the text filtering you can set the __IsFilteringEnabled__ property. By default the __IsFilteringEnabled__ is set to False. You can see on the snapshot below that in this case the items in the drop-down are not filtered.
 
-![](images/RadComboBox_Features_Filtering_010.png)
+![{{ site.framework_name }} RadComboBox Items Not Filtered](images/RadComboBox_Features_Filtering_010.png)
 
 Now go back in the initial __RadComboBox__ declaration and set the __TextSearchMode__ property to __Contains__. To enable the text filtering you will also have to set the __IsFilteringEnabled__ property to __True__.
 
@@ -51,7 +51,7 @@ Now go back in the initial __RadComboBox__ declaration and set the __TextSearchM
 
 Start your demo and write "al" in the __input box__. Now only items containing the "al" text will be displayed.
 
-![](images/RadComboBox_Features_Filtering_020.png)
+![{{ site.framework_name }} RadComboBox Items Only Containing "al"](images/RadComboBox_Features_Filtering_020.png)
 
 >importantPlease, notice that if there aren't any filtered items and you move the focus out of __RadComboBox__ the entered search text will be cleared. In order to prevent the text from clearing you need to set the __UpdateTextOnLostFocus__ property which was introduced with the SP1 Q2 2015 version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} to __False__.
 
@@ -70,7 +70,7 @@ The final scenario is when you have a __TextSearchMode__ set to __TextSearchMode
 
 Start your demo and write "al" in the __input box__. Now only items, which text starts with the "al" text, will be shown in the drop-down list.
 
-![](images/RadComboBox_Features_Filtering_030.png)
+![{{ site.framework_name }} RadComboBox Items Only Starting with "al"](images/RadComboBox_Features_Filtering_030.png)
 
 >importantWhen RadComboBox is virtualized the filtering is not supported.
 

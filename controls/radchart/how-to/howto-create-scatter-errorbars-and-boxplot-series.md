@@ -214,7 +214,7 @@ The following code snippet demonstrates the steps in action:
 
 
 The result is shown below:
-![](images/RadChart_HowToBoxPlot.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToBoxPlot.png)
 
 ## Scatter Error Bar:
 
@@ -534,4 +534,4 @@ The following code snippet demonstrates the steps above in action:
 
 
 The result is shown below:
-![](images/RadChart_HowToScatterErrorBar.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToScatterErrorBar.png)

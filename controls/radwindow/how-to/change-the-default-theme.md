@@ -70,8 +70,7 @@ To change the theme using the implicit styles mechanism you will need to make fe
 	{{endregion}}
 
 	<h4 id="figure-1"><strong>Figure 1: RadWindow with the Windows8 theme applied</strong></h4>
-	
-	![WPF RadWindow RadWindow with the Windows8 theme applied</strong></h4>](images/RadWindow_How_To_Change_the_Default_Theme_01.png)
+	![{{ site.framework_name }} RadWindow RadWindow with the Windows8 theme applied</strong></h4>](images/RadWindow_How_To_Change_the_Default_Theme_01.png)
 
 If you use __RadWindow__ as a custom UserControl as shown in __Example 3__, you will need to apply a new style targeting the custom control and base it on the default RadWindowStyle. Otherwise, the window won't be displayed.
 

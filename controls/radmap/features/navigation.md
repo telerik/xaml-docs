@@ -63,7 +63,7 @@ In order to use the __MapNavigation__ outside of the __RadMap__ you have to set 
 
 Here is a snapshot of the result.
 
-![](images/RadMap_Features_Navigation_01.png)
+![{{ site.framework_name }} RadMap Map Navigation Outside](images/RadMap_Features_Navigation_01.png)
 
 ## See Also
  * [Click Modes]({%slug radmap-features-click-modes%})

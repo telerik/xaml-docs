@@ -12,7 +12,7 @@ position: 1
 
 This section defines terms and concepts used in the scope of __RadToolBar__ you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. For more detailed descriptions of the required parts of the control please visit the [Required Parts]({%slug radtoolbar-template-parts%}) section.
 
-![](images/RadToolBar_structure.png)
+![{{ site.framework_name }} RadToolBar Visual Structure](images/RadToolBar_structure.png)
 
 * __ToolBar__ - The horizontal gray part from the picture. It holds the __Grip__, the __Strip__ panel and the __DropDown__ button 
 * __Strip panel__ - The main area that holds items - buttons, etc. 

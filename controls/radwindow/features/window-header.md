@@ -58,7 +58,7 @@ If you want to share a common icon layout structure for the content of multiple 
 	radWindow.HeaderTemplate = TryCast(Me.Resources("WindowHeaderTemplate"), DataTemplate)
 {{endregion}}
 
-![](images/RadWindow_Features_Window_Header_01.png)
+![{{ site.framework_name }} RadWindow Custom Header Template](images/RadWindow_Features_Window_Header_01.png)
 
 ## See Also
 

@@ -35,7 +35,7 @@ The __TextBoxStyle__ property allows you to customize the [input area]({%slug ra
 {{endregion}}
 
 #### Figure 1: Input area with changed colors and font
-![WPF RadComboBox Input area with changed colors and font](images/radcombobox-features-textboxstyle-0.png)
+![{{ site.framework_name }} RadComboBox Input area with changed colors and font](images/radcombobox-features-textboxstyle-0.png)
 
 ## See Also  
  * [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) 

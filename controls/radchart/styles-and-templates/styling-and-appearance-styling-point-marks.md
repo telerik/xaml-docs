@@ -56,7 +56,7 @@ For example, you can change the appearance of the point marks for a __LineSeries
 
 Here is the result.
 
-![](images/RadChart_StylingPointMarks_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingPointMarks_01.png)
 
 
 
@@ -110,7 +110,7 @@ Changing the shape of the pointmark can be done by retemplating the Scatter/Poin
 
 The result is shown below:
 
-![](images/RadChart_chart_stylingscatter.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_chart_stylingscatter.PNG)
 
 ## See Also
 

@@ -16,7 +16,7 @@ This can be done via the "Take snapshot" button of the control, or the `TakeSnap
 
 __Take snapshot button__
 
-![](images/radwebcam-features-snapshots-0.png)
+![{{ site.framework_name }} RadWebCam Take Snapshot Button](images/radwebcam-features-snapshots-0.png)
 
 #### __[XAML] Taking a snapshot in code__
 {{region radwebcam-features-snapshots-0}}

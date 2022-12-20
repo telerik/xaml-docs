@@ -12,7 +12,7 @@ position: 1
 
 To hide the minimize area you can use the __MinimizedAreaVisibility__ property and set its value to __Collapsed__.
 
-![](images/outlook_minimizedareavisibility.png)
+![{{ site.framework_name }} RadOutlookBar Hide the Minimized Area](images/outlook_minimizedareavisibility.png)
 
 #### __XAML__
 {{region xaml-radoutlookbar-how-to-hide-the-minimized-area_0}}

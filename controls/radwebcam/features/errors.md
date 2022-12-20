@@ -20,19 +20,19 @@ There are few expected errors that could appear using the control.
 
 * `No camera detected`&mdash;This error appears when there is no camera device connected to the computer.
 
-	![](images/radwebcam-features-errors-0.png)
+	![{{ site.framework_name }} RadWebCam No Camera Detected Error](images/radwebcam-features-errors-0.png)
 	
 * `The camera is unavailable`&mdash;This error appears when another application is using the camera device.
 
-	![](images/radwebcam-features-errors-1.png)
+	![{{ site.framework_name }} RadWebCam Camera Unavailable Error](images/radwebcam-features-errors-1.png)
 	
 * `Video adapter does not support the D3DFMT_X8R8G8B8 format`&mdash;This error appears when the hardware that runs the RadWebCam control doesn't support the camera rendering engine.
 
-	![](images/radwebcam-features-errors-2.png)
+	![{{ site.framework_name }} RadWebCam Video Adapter Does Not Support the D3DFMT_X8R8G8B8 Format Error](images/radwebcam-features-errors-2.png)
 	
 * `Access to the camera is denied`&mdash;This error appears when the access to the camera device is forbidden by the OS settings or any third party software.
 
-	![](images/radwebcam-features-errors-3.png)
+	![{{ site.framework_name }} RadWebCam Access to Camera Denied Error](images/radwebcam-features-errors-3.png)
 	
 ## Replacing the Error Message
 	
@@ -58,7 +58,7 @@ To replace the error message use the `CameraError` event of RadWebCam. The `Came
 
 __Customized error message__
 
-![](images/radwebcam-features-errors-4.png)
+![{{ site.framework_name }} RadWebCam Customized Error Message](images/radwebcam-features-errors-4.png)
 
 ## Customizing the Error Content Template
 
@@ -80,7 +80,7 @@ By default the error message is displayed in a simple content presenter. To cust
 
 __Custom error template__
 
-![](images/radwebcam-features-errors-5.png)
+![{{ site.framework_name }} RadWebCam Custom Error Template](images/radwebcam-features-errors-5.png)
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

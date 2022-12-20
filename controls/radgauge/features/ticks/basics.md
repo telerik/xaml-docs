@@ -37,7 +37,7 @@ Here is an example:
 
 Here is a snapshot of the result.
 
-![](images/RadGauge_Features_Ticks_Size_01.png)
+![{{ site.framework_name }} RadGauge Tick Size](images/RadGauge_Features_Ticks_Size_01.png)
 
 ## Location
 
@@ -60,7 +60,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_Ticks_Location_01.png)
+![{{ site.framework_name }} RadGauge Tick Location](images/RadGauge_Features_Ticks_Location_01.png)
 
 ## Appearance
 
@@ -68,7 +68,9 @@ The __TickProperties__ objects provide you with two ways of modifying the ticks'
 
 * [Modifying Tick's Background](#Modifying_Ticks_Background)
 
-* [Specifying a DataTemplate](#Specifying_a_DataTemplate)Modifying Tick's Background
+* [Specifying a DataTemplate](#Specifying_a_DataTemplate)
+
+### Modifying Tick's Background
 
 To modify the ticks' background, simply set the __MajorTickBackground__, __MiddleTickBackground__ or the __MinorTickBackground__ property of the respective __Scale__ object to the desired color. Here is an example:
 
@@ -82,7 +84,9 @@ To modify the ticks' background, simply set the __MajorTickBackground__, __Middl
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_Ticks_Appearance_01.png)Specifying a DataTemplate
+![{{ site.framework_name }} RadGauge Tick Background](images/RadGauge_Features_Ticks_Appearance_01.png)
+
+### Specifying a DataTemplate
 
 The other way of specifying the appearance of the tick is by defining an entire __DataTemplate__ for it, which will get applied to each of the ticks of the respective type. There you can define the visual appearance of the tick as you desire and bind the used elements to the data context of the template where needed.        
 
@@ -104,4 +108,4 @@ The other way of specifying the appearance of the tick is by defining an entire 
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_Ticks_Appearance_02.png)
+![{{ site.framework_name }} RadGauge Tick Data Template](images/RadGauge_Features_Ticks_Appearance_02.png)

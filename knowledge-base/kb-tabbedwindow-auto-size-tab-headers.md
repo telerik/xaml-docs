@@ -67,4 +67,4 @@ Where __primitives__ points to `xmlns:primitives="clr-namespace:Telerik.Windows.
 	}
 {{endregion}}
 
-![](images/kb-tabbedwindow-auto-size-tab-headers-0.png)
+![{{ site.framework_name }} RadTabbedWindow Auto Size the Tab Items](images/kb-tabbedwindow-auto-size-tab-headers-0.png)

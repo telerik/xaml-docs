@@ -113,4 +113,4 @@ How to show the total count of all items in the RadDataPager control in a RadGri
 
 __RadDataPager displaying the total items count__
 
-![](images/kb-datapager-show-total-entries-count.png)
+![{{ site.framework_name }} RadDataPager Displaying the Total Items Count](images/kb-datapager-show-total-entries-count.png)

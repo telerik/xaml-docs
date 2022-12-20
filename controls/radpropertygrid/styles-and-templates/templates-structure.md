@@ -53,7 +53,7 @@ Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) giv
 * __SortButton__- represents the RadPropertyGrid’s Sort Button and is of type RadRadioButton
 
 * __GroupButton__- represents the RadPropertyGrid’s Group Button and is of type RadRadioButton
-![](images/RadPropertyGrid_RadProperyGridTemplate.png)
+![{{ site.framework_name }} RadPropertyGrid Template Structure](images/RadPropertyGrid_RadProperyGridTemplate.png)
 
 ## PropertyGridField Template
 
@@ -83,7 +83,7 @@ Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) giv
 
 * __[Border]__ - represents the inner border and the background of the row, when the mouse is over it and is of type Border.
 
-![](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
+![{{ site.framework_name }} RadPropertyGrid PropertyGridField Template Structure](images/RadPropertyGrid_PropertyGridFieldTemplate.png)
 
 ## Modifying RadPropertyGrid Template with Blend
 

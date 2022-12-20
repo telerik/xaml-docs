@@ -15,7 +15,7 @@ In order to customize the control template of RadNumericUpDown, you should get f
 
 Here is an image that describes the required items from the code-behind:
 
-![](images/RadNumericUpDown_required_parts.png)
+![{{ site.framework_name }} RadNumericUpDown Required Parts](images/RadNumericUpDown_required_parts.png)
 
 #### __XAML__
 

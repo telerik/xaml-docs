@@ -12,20 +12,20 @@ position: 2
 
 By default a small grip visual is shown in the `RadToolBar` control. 
 
-![](images/radtoolbar-features-grip-visibility-0.png)
+![{{ site.framework_name }} RadToolBar Visible Grip Visual](images/radtoolbar-features-grip-visibility-0.png)
 
 To hide it, set the `GripVisibility` property to `Collapsed`.
 
 #### __[XAML] Example 3: Hiding the grip__
 {{region radtoolbar-features-grip-visibility-0}}	
-	<telerik:RadToolBar>
+	<telerik:RadToolBar GripVisibility="Collapsed">
 		<telerik:RadButton Content="B1" />
 		<telerik:RadButton Content="B2 " />
 		<telerik:RadButton Content="B3" />
 	</telerik:RadToolBar>           
 {{endregion}}
 
-![](images/radtoolbar-features-grip-visibility-1.png)
+![{{ site.framework_name }} RadToolBar Visible Grip Visual](images/radtoolbar-features-grip-visibility-1.png)
 
 ## See Also
 * [Getting Started]({%slug radtoolbar-getting-started%})

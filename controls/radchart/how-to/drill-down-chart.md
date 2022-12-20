@@ -82,7 +82,7 @@ Also in the following examples the charts will be populated with a various data 
 	</Grid>
 {{endregion}}
 
-![](images/RadChart_HowToDrillDownChart_010.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToDrillDownChart_010.png)
 
 When the application (the user control) is loaded, the __RadChart__ is populated with the first eight products from the Products table in the Northwind database. On the __Y Axis__ is displayed the products __UnitPrice__. On the __X Axis__ is displayed the __ProductName__ property. This is done through the __ItemsMapping__ property. 
 
@@ -532,7 +532,7 @@ Second, the __BeginLoadingOrderDetails()__ method is invoked. Finally, a new ins
 
 You can see the result on the snapshot below:
 
-![](images/RadChart_HowToDrillDownChart_020.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToDrillDownChart_020.png)
 
 Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is used as a tooltip content: 
 
@@ -695,7 +695,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 When the user clicks on a specific item (product), some information about the order details will be displayed: 
 
-![](images/RadChart_HowToDrillDownChart_030.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToDrillDownChart_030.png)
 
 ## See Also
 

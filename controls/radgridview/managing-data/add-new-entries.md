@@ -24,7 +24,7 @@ There are three ways to insert a new row in RadGridView:
 		<telerik:RadGridView NewRowPosition="Bottom" />
 	{{endregion}}
 
-	#### __Figure 1: The GridViewNewRow__	![WPF RadGridView The GridViewNewRow](images/RadGridView_AddingNewItems_0.png)
+	#### __Figure 1: The GridViewNewRow__	![{{ site.framework_name }} RadGridView The GridViewNewRow](images/RadGridView_AddingNewItems_0.png)
 
 * By calling the __BeginInsert()__ method
 

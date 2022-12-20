@@ -66,7 +66,7 @@ Here is an example of a __RadDataPager__ that displays the previous, next and nu
 	                        DisplayMode="PreviousNextNumeric" />
 {{endregion}}
 
-![](images/RadDataPager_Features_DisplayModes_01.png)
+![{{ site.framework_name }} RadDataPager DisplayMode PreviousNextNumeric](images/RadDataPager_Features_DisplayModes_01.png)
 
 If the combination of visual elements doesn't exist in the enumeration, you can combine one or more enumeration values. This is done by separating the values with a coma. Here is an example:
 
@@ -79,7 +79,7 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 	                        DisplayMode="PreviousNext,Text" />
 {{endregion}}
 
-![](images/RadDataPager_Features_DisplayModes_02.png)
+![{{ site.framework_name }} RadDataPager DisplayMode PreviousNext and Text](images/RadDataPager_Features_DisplayModes_02.png)
 
 ## See Also
 

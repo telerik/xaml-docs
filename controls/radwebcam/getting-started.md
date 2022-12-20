@@ -45,7 +45,7 @@ From this point on, you can start using the control without any additional set u
 
 __RadWebCam__
 
-![](images/radwebcam-getting-started-0.png)
+![{{ site.framework_name }} RadWebCam Overview](images/radwebcam-getting-started-0.png)
 
 ## Auto Start
 

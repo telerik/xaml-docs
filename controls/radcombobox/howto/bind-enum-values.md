@@ -213,7 +213,7 @@ There are some limitations in this approach, though – you should modify the __
 
 The result can be seen on the image below. All members of the __System.Windows.Controls.ClickMode__ enumeration are loaded in the __RadComboBox__.
 
-![](images/RadComboBox_HowTo_BindToEnumValues_010.png)
+![{{ site.framework_name }} RadComboBox Bound to Enum](images/RadComboBox_HowTo_BindToEnumValues_010.png)
 
 ## See Also
 

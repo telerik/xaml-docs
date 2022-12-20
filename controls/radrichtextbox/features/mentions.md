@@ -382,7 +382,7 @@ You can implement your own mention provider that enables you to visualize any ob
     {{endregion}}    
     
 #### Figure 4: Custom mentions 
-![WPF RadRichTextBox Custom mentions](images/RadRichTextBox_Mentions_03.gif)
+![{{ site.framework_name }} RadRichTextBox Custom mentions](images/RadRichTextBox_Mentions_03.gif)
     
 ## Custom Mention Character
 

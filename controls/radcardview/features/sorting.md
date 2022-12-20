@@ -19,7 +19,7 @@ The control internally works with a [QueryableCollectionView]({%slug consuming-d
 The data items can be sorted by clicking on a data field descriptor from the [data field descriptors list]({%slug radcardview-visual-structure%}).
 
 #### Figure 1: RadCardView sorting
-![WPF RadCardView RadCardView sorting](images/radcardview-features-sorting-0.png)
+![{{ site.framework_name }} RadCardView RadCardView sorting](images/radcardview-features-sorting-0.png)
 
 To disable user sorting, set the __CanUserSortDescriptors__ property to __False__.
 

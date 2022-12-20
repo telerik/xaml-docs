@@ -125,7 +125,7 @@ If you'd like to have a bar indicator with background that has all range colors,
 
 Here are the Default and the ProportionalBrush modes:
 
-![](images/LinearBarRange.png)
+![{{ site.framework_name }} RadGauge Default and the ProportionalBrush RangeColorMode](images/LinearBarRange.png)
 
 If you need smooth gradients between the colors then use the __GradientBrush__ mode and set the __RangeColorSmoothing__ property:
 
@@ -140,4 +140,4 @@ If you need smooth gradients between the colors then use the __GradientBrush__ m
 	</telerik:VerticalLinearScale.Indicators>
 {{endregion}}
 
-![](images/LinearBarGradientBrush.png)
+![{{ site.framework_name }} RadGauge BarIndicator GradientBrush and RangeColorSmoothing](images/LinearBarGradientBrush.png)

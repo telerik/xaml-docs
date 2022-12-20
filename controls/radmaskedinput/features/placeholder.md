@@ -18,7 +18,7 @@ The __Placeholder__ character is a character used to represent the absence of us
 {{endregion}}
 
 #### __Figure 1 : Default placeholder__
-![](images/RadMaskedTextBox_Features_Placeholder_Default.png)
+![{{ site.framework_name }} RadMaskedInput Default Placeholder](images/RadMaskedTextBox_Features_Placeholder_Default.png)
 
 When the __Value__ of a __RadMaskedInput__ control contains underscore character, it will be removed when we use the default placeholder. This is because of the default placeholder of the control is underscore character __"_"__. You can alter this behavior by changing the default __Placeholder__ or setting the __ValueMode__ property to __IncludeLiteralsAndPlaceholders__ or __IncludePlaceholders__. __Example 1__ demonstrates how to change the default __Placeholder__ of the control.
 
@@ -28,7 +28,7 @@ When the __Value__ of a __RadMaskedInput__ control contains underscore character
 {{endregion}}
 
 #### __Figure 2: Custom placeholder__
-![WPF RadMaskedInput Custom placeholder](images/RadMaskedTextBox_Features_Placeholder_Custom.png)
+![{{ site.framework_name }} RadMaskedInput Custom placeholder](images/RadMaskedTextBox_Features_Placeholder_Custom.png)
 
 >tip You can set a watermark content to the __RadMaskedInput__ controls by using the __EmptyContent__ and __EmptyContentTemplate__ properties. When the __Value__ of a __RadMaskedInput__ control is null or empty the __EmptyContent__ will be displayed. For more information, read [Watermark]({%slug radmaskedinput-features-watermark%}).
 

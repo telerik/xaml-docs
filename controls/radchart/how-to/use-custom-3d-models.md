@@ -27,7 +27,7 @@ Basically there are three steps involved in the utilization of a custom 3D model
 
 Here is a sample xaml export obtained by processing a custom 3D star model (produced by step 1.) with the Reader3ds library (step 2.):
 
-![](images/RadChart_How_To_Use_Custom_3D_Models_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_How_To_Use_Custom_3D_Models_01.png)
 
 #### __XAML__
 
@@ -333,4 +333,4 @@ Here is the actual template that follows this pattern:
 
 
 Here is the resultant 3D bar series that uses the custom 3D star model instead of the default 3D bar model:
-![](images/RadChart_How_To_Use_Custom_3D_Models_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_How_To_Use_Custom_3D_Models_02.png)

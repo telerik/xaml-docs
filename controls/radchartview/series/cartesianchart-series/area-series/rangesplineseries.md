@@ -101,7 +101,7 @@ The spline-type series provide two properties allowing to control the additional
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
-![](images/splineseries-rangespline-tension.png)
+![{{ site.framework_name }} RadChartView RangeSplineSeries with Spline Tension 0.8 (Left) and 0.4 (Right)](images/splineseries-rangespline-tension.png)
 
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calculated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
@@ -112,7 +112,7 @@ Additionally, you can control the smoothness of the spline using the `SplinePoin
 
 __SplinePointsDistanceFactor set to 0.18__
 
-![](images/splineseries-rangespline-points-distance-factor.png)
+![{{ site.framework_name }} RadChartView RangeSplineSeries with SplinePointsDistanceFactor Set to 0.18](images/splineseries-rangespline-points-distance-factor.png)
 
 ## Styling the Series
 

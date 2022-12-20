@@ -213,7 +213,7 @@ To add custom commands to __RadPane's__ menu, you should perform the following s
 
 Run your demo. __RadPane__'s menu should look like the snapshot below.
 
-![Customize or Remove RadPane's Menu](images/RadDocking_HowTo_Customize_Or_Remove_The_RadPanes_Menu.png)
+![{{ site.framework_name }} RadDocking Customize or Remove RadPane's Menu](images/RadDocking_HowTo_Customize_Or_Remove_The_RadPanes_Menu.png)
 	
 ## Removing RadPane's Menu
 
@@ -249,7 +249,7 @@ In order to remove __RadPane__'s Menu, you should set __RadPane__'s __ContextMen
 	radPane.ContextMenuTemplate = Nothing
 {{endregion}}
 
-![](images/RadDocking_HowTo_AddPaneMenuItems_040.png)
+![{{ site.framework_name }} RadDocking Remove Pane Context Menu](images/RadDocking_HowTo_AddPaneMenuItems_040.png)
 
 ## See Also
 

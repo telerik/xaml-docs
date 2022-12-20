@@ -17,19 +17,19 @@ position: 4
 This topic shows how to create simple __CRUD__ (___Create, Read, Update___ and ___Delete___) application with __RadDomainDataSource__ and __RadGridView__. For more information on how to load data initially please read [here]({%slug domaindatasource-loading-data%}).
 
 1. Create a default Silverlight project as following:
- ![](images/dds_getting_started1.png)
+ ![{{ site.framework_name }} RadDomainDataSource Create Silverlight Application](images/dds_getting_started1.png)
 
 
 
 2. Create __ADO.NET Entity__ data model called __Northwind.edmx__. For the sake of the example let's create this entity model with the __Northwnd.mdf__ file. You will need a working (started) __SQL Server EXPRESS__ service on your machine (or you have to change connection string accordingly).
- ![](images/crud_model_gridview.png)
+ ![{{ site.framework_name }} RadDomainDataSource Entity Data Model Wizard](images/crud_model_gridview.png)
 
 > Do not forget to rebuild web project on this stage. 
 
 
 
 3. Create __DomainService__ class with enabled editing:
-![](images/crud_domain_service_gridview.png)
+![{{ site.framework_name }} RadDomainDataSource Domain Service Class with Enabled Editing](images/crud_domain_service_gridview.png)
 
 
 

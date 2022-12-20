@@ -21,15 +21,15 @@ The following steps show how to setup the package source in Visual Studio.
 
 1. Navigate to the Package Manager Settings menu in Visual Studio.
 	
-	![](images/nuget-installation-0.png)
+	![{{ site.framework_name }} Package Manager Settings Menu](images/nuget-installation-0.png)
 
 1. Add a new source in the Package Sources section.
 
-	![](images/nuget-installation-1.png)
+	![{{ site.framework_name }} New Package Source](images/nuget-installation-1.png)
 	
 1. In the Source field fill the address of the Telerik NuGet Server and click OK. The address is: [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json)
 
-	![](images/nuget-installation-2.png)
+	![{{ site.framework_name }} Telerik NuGet Server Address](images/nuget-installation-2.png)
 	
 1. The Telerik Server is added and ready to use. 
 
@@ -51,15 +51,15 @@ The Telerik packages are available as `.nupkg` files that can be downloaded from
 	
 1. Navigate to the "Package Manager Settings" menu.
 	
-	![](images/nuget-installation-0.png)
+	![{{ site.framework_name }} Package Manager Settings Menu](images/nuget-installation-0.png)
 
 1. Add a new source in the "Package Sources" section.
 
-	![](images/nuget-installation-1.png)
+	![{{ site.framework_name }} New Package Sources](images/nuget-installation-1.png)
 	
 1. In the "Source" field use the path to the folder where you extracted the .zip file with the .nupkg files (step 2). Then click OK.
 
-	![](images/nuget-package-source-setup-0.png)
+	![{{ site.framework_name }} Path to .nupkg Files Archive Folder](images/nuget-package-source-setup-0.png)
 
 1. The Telerik server is added and ready to use. 
 
@@ -71,7 +71,7 @@ Once you created the package source as described in the previous sections of thi
 1. Click on the "Manage NuGet Packages" menu.
 1. Select the source from the "Package source" drop down.
 	
-	![](images/nuget-installation-4.png)
+	![{{ site.framework_name }} Select Package Source](images/nuget-installation-4.png)
 
 1. Search and install a package.
 

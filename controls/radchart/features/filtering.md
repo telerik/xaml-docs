@@ -28,7 +28,7 @@ The items in this collection are of type __ChartFilterDescriptor__. It exposes a
 
 Here is an example of a chart without filter descriptors.
 
-![](images/RadChart_Features_Filtering_01.png)
+![{{ site.framework_name }} RadChart without Filter Descriptors](images/RadChart_Features_Filtering_01.png)
 
 Here is an example of implementing filtering.
 
@@ -79,4 +79,4 @@ Here is an example of implementing filtering.
 {{endregion}}
     
 Here is a snapshot of the result.
-    ![](images/RadChart_Features_Filtering_02.png)
+    ![{{ site.framework_name }} RadChart with Filtered Data](images/RadChart_Features_Filtering_02.png)

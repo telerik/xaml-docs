@@ -35,7 +35,7 @@ The __RadHorizontalDataAxis__ and __RadVerticalDataAxis__ are part of the data b
 	}
 {{endregion}}
 
-![](images/databar-axis-0.png)
+![{{ site.framework_name }} RadDataBar Horizontal Axis](images/databar-axis-0.png)
 
 
 #### __[XAML] Example 3: Using RadVerticalDataAxis__
@@ -54,7 +54,7 @@ The __RadHorizontalDataAxis__ and __RadVerticalDataAxis__ are part of the data b
     </Grid>
 {{endregion}}
 
-![](images/databar-axis-1.png)
+![{{ site.framework_name }} RadDataBar Vertical Axis](images/databar-axis-1.png)
 
 The data axis control provides the following public properties that can be used in order __to modify its appearance__:
 

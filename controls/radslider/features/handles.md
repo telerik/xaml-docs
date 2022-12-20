@@ -22,7 +22,7 @@ RadSlider provides an increase and decrease handles, which provide an alternativ
 	<telerik:RadSlider HandlesVisibility="Visible" />
 {{endregion}}
 
-![](images/radslider_features_handles.png)
+![{{ site.framework_name }} RadSlider Increase Decreease Handles Visible](images/radslider_features_handles.png)
 
 In case you enable the handles when __RadSlider__ is in selection range mode, then by default clicking for example the __increase(right)__ handle will __increase__ the value of __SelectionEnd__, while clicking the __decrease(left)__ handle will __decrease__ the value of __SelectionStart__.
 
@@ -38,7 +38,7 @@ In case you enable the handles when __RadSlider__ is in selection range mode, th
 	               SelectionStart="5" />
 {{endregion}}
 
-![](images/radslider_features_handles_range.png)
+![{{ site.framework_name }} RadSlider Range Handles](images/radslider_features_handles_range.png)
 
 If you want to control the behavior of the __RadSlider's Handles__ when the __SelectionRange__ is enabled, you can take advantage of the __StepAction__ property. The property is enumeration of type __StepAction__ and exposes the following members:
 

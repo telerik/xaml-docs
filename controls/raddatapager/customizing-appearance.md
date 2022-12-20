@@ -29,7 +29,7 @@ The numeric buttons of the DataPager components can be customized via the `Numer
 	</telerik:RadDataPager>
 {{endregion}}
 
-![](images/raddatapager-styles-and-templates-styling-the-numeric-buttons-0.png)
+![{{ site.framework_name }} RadDataPager Customized Numeric Buttons](images/raddatapager-styles-and-templates-styling-the-numeric-buttons-0.png)
 
 The data context passed to the button is an object of type {% if site.site_name == 'Silverlight' %}[PageViewModel](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.controls.data.datapager.pageviewmodel){% else %}[PageViewModel](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.datapager.pageviewmodel){% endif %}. The `IsCurrent` property of the `PageViewModel` can be used to determine if button is selected (the current page button).
 
@@ -50,4 +50,4 @@ The text area that allows you to enter the page index can be customized via the 
 	</telerik:RadDataPager>
 {{endregion}}
 
-![](images/raddatapager-styles-and-templates-styling-the-numeric-buttons-1.png)
+![{{ site.framework_name }} RadDataPager Customized TextBox](images/raddatapager-styles-and-templates-styling-the-numeric-buttons-1.png)

@@ -40,7 +40,7 @@ Here is an example of a __RadChart__ that visualizes the following values - 10, 
 	Me.radChart.ItemsSource = New Integer() {10, 100, 1000, 10000, 100000, 1000000}
 {{endregion}}
 
-![](images/RadChart_Features_Axes_Logarithmic_Scale_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_Logarithmic_Scale_01.png)
 
 Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
@@ -82,4 +82,4 @@ Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
 >tipYou can use the __LogarithmBase__ property of the __AxisY__ to modify the base on which the logarithmic function for the axis is calculated.
 
-![](images/RadChart_Features_Axes_Logarithmic_Scale_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_Logarithmic_Scale_02.png)

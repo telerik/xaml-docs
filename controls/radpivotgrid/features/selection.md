@@ -31,20 +31,20 @@ By default the selection functionality is disabled and to turn it on you have to
 {{endregion}}
 
 #### __Figure 1: RadPivotGrid with enabled cell selection__
-![WPF RadPivotGrid RadPivotGrid with enabled cell selection](images/pivotgrid_selection_0.png)
+![{{ site.framework_name }} RadPivotGrid RadPivotGrid with enabled cell selection](images/pivotgrid_selection_0.png)
 
 Additionally, you will be able to select separate blocks of cells by pressing Ctrl key or extend the current selection by pressing Shift key.
 
 #### __Figure 2: RadPivotGrid with separate blocks of cells selected__
-![WPF RadPivotGrid RadPivotGrid with separate blocks of cells selected](images/pivotgrid_selection_1.png)
+![{{ site.framework_name }} RadPivotGrid RadPivotGrid with separate blocks of cells selected](images/pivotgrid_selection_1.png)
 
 Clicking on any of the headers will select the corresponding row/column as shown in the next figures.
 
 #### __Figure 3: RadPivotGrid with selected row by clicking on the header__
-![WPF RadPivotGrid RadPivotGrid with selected row by clicking on the header](images/pivotgrid_selection_2.png)
+![{{ site.framework_name }} RadPivotGrid RadPivotGrid with selected row by clicking on the header](images/pivotgrid_selection_2.png)
 
 #### __Figure 4: RadPivotGrid with a few rows selected by clicking on the headers and pressing Ctrl key__
-![WPF RadPivotGrid RadPivotGrid with a few rows selected by clicking on the headers and pressing Ctrl key](images/pivotgrid_selection_6.png)
+![{{ site.framework_name }} RadPivotGrid RadPivotGrid with a few rows selected by clicking on the headers and pressing Ctrl key](images/pivotgrid_selection_6.png)
 
 ## Selection Commands
 
@@ -77,12 +77,12 @@ After copying the selected cells, you could easily get that data from the clipbo
 __Figure 5__ shows the result after copying certain cells selection.
 
 #### __Figure 5: Getting the selected cells from the clipboard__
-![WPF RadPivotGrid Getting the selected cells from the clipboard](images/pivotgrid_selection_3.png)
+![{{ site.framework_name }} RadPivotGrid Getting the selected cells from the clipboard](images/pivotgrid_selection_3.png)
 
 You could also directly paste the clipboard data into Excel, for example, as illustrated in __Figure 6__.
 
 #### __Figure 6: Pasting the selected cells data into Excel__
-![WPF RadPivotGrid Pasting the selected cells data into Excel](images/pivotgrid_selection_4.png)
+![{{ site.framework_name }} RadPivotGrid Pasting the selected cells data into Excel](images/pivotgrid_selection_4.png)
 
 ## Selection Events
 
@@ -124,4 +124,4 @@ You could easily disable marking the current selection cell by setting DrawSelec
 __Figure 7__ shows how the selection looks before and after applying the Style from __Example 5__.
 
 #### __Figure 7: Selection with DrawSelectionCell set to both true and false__
-![WPF RadPivotGrid Selection with DrawSelectionCell set to both true and false](images/pivotgrid_selection_5.png)
+![{{ site.framework_name }} RadPivotGrid Selection with DrawSelectionCell set to both true and false](images/pivotgrid_selection_5.png)

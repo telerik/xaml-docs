@@ -45,7 +45,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 
 When you try to drag and dock the "Pane 2", then all [compass indicators]({%slug raddocking-features-compass%}) are available.
 
-![](images/RadDocking_HowTo_ConditionalDocking_010.png)
+![{{ site.framework_name }} RadDocking with All Compasses Enabled](images/RadDocking_HowTo_ConditionalDocking_010.png)
 
 In order to implement conditional docking, you need to perform the following instructions.
 
@@ -78,7 +78,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	End Sub
 {{endregion}}
 
-![](images/RadDocking_HowTo_ConditionalDocking_020.png)
+![{{ site.framework_name }} RadDocking without Left Compass](images/RadDocking_HowTo_ConditionalDocking_020.png)
 
 * __IsTopIndicatorVisible__ - If you want to disable the top compass indicator, then set the __IsTopIndicatorVisible__ property of the passed event arguments to __False__. 
 
@@ -103,7 +103,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	End Sub
 {{endregion}}
 
- ![](images/RadDocking_HowTo_ConditionalDocking_030.png)
+ ![{{ site.framework_name }} RadDocking without Top and Left Compasses](images/RadDocking_HowTo_ConditionalDocking_030.png)
 
 * __IsRightIndicatorVisible__ - If you want to disable the right compass indicator, then set the __IsRightIndicatorVisible__ property of the passed event arguments to __False__. 
 
@@ -128,7 +128,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	End Sub
 {{endregion}}
 
-![](images/RadDocking_HowTo_ConditionalDocking_040.png)
+![{{ site.framework_name }} RadDocking with Only Bottom Compass](images/RadDocking_HowTo_ConditionalDocking_040.png)
 
 * __IsBottomIndicatorVisible__ - If you want to disable the bottom compass indicator, then set the __IsBottomIndicatorVisible__ property of the passed event arguments to __False__. 
 
@@ -155,7 +155,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	End Sub
 {{endregion}}
 
-![](images/RadDocking_HowTo_ConditionalDocking_050.png)
+![{{ site.framework_name }} RadDocking without Any Compasses](images/RadDocking_HowTo_ConditionalDocking_050.png)
 
 * __IsCenterIndicatorVisible__ - If you want to disable the center compass indicator, then set the __IsCenterIndicatorVisible__ property of the passed event arguments to __False__. 
 

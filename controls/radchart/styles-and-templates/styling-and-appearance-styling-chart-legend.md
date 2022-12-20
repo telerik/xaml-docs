@@ -40,7 +40,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 Here are the resources generated with the __ChartLegendStyle__: {% endif %}{% if site.site_name == 'Silverlight' %}
 
-![](images/RadChart_Styles_and_Templates_Styling_ChartLegend_01.png){% endif %}
+![{{ site.framework_name }} RadChart  ](images/RadChart_Styles_and_Templates_Styling_ChartLegend_01.png){% endif %}
 
 
 * __LegendForeground__ - a brush, that represent the foreground color of the __ChartLegend__.
@@ -57,7 +57,7 @@ Here are the resources generated with the __ChartLegendStyle__: {% endif %}{% if
 
 Here are the resources generated with the __ChartLegendItemStyle__:{% endif %}{% if site.site_name == 'Silverlight' %}
 
-![](images/RadChart_Styles_and_Templates_Styling_ChartLegend_02.png){% endif %}
+![{{ site.framework_name }} RadChart  ](images/RadChart_Styles_and_Templates_Styling_ChartLegend_02.png){% endif %}
 
 * __LegendForeground__ - a brush, that represents the foreground color of the __ChartLegendItem__.
 

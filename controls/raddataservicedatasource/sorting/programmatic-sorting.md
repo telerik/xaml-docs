@@ -35,6 +35,6 @@ For example:
 {{endregion}}
 
 Once the application is loaded, the __RadGridView__ will be visualized as follows:
-![](images/RadDataServiceDataSource_ProgrammaticSorting.png)
+![{{ site.framework_name }} RadDataServiceDataSource Programmatic Sorting](images/RadDataServiceDataSource_ProgrammaticSorting.png)
 
 >caution Adding several __SortDescriptors__ to the collection will perform the sorting in the respective order.

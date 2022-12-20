@@ -116,4 +116,4 @@ Or
 			Maximum="{Binding Items.Count, ElementName=cover, Converter={StaticResource IntToIntValueConverter}, ConverterParameter=-1}"/>
 {{endregion}}
 
-![](images/RadCoverFlow_Features12.gif)
+![{{ site.framework_name }} RadCoverflow with Custom Navigation](images/RadCoverFlow_Features12.gif)

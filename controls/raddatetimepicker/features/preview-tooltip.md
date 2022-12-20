@@ -43,7 +43,7 @@ Here is an example of using these properties:
 
 Here is the result:
 
-![](images/dateTimePicker_features_preview_tooltip_010.png)
+![{{ site.framework_name }} RadDateTimePicker Error Tooltip Content and Template](images/dateTimePicker_features_preview_tooltip_010.png)
 
 >importantWhen using the above described approach you should know that setting the x:Name of the RadDateTimePicker to either __"DatePicker"__ or __"DateTimePicker"__ will lead to the ErrorTooltip not showing. The reason is that those specific names are already used in the theme of the control which lead to the binding in the custom TooltipTemplate getting broken.
 

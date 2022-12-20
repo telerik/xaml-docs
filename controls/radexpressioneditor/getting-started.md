@@ -48,7 +48,7 @@ This tutorial will walk your through the creation of a sample application contai
 
 Now, when running the application, __RadExpressionEditor__ will be displayed:
 
-![](images/RadExpressionEditor_GettingStarted.png)
+![{{ site.framework_name }} RadExpressionEditor Initial Layout](images/RadExpressionEditor_GettingStarted.png)
 
 ## Binding RadExpressionEditor
 
@@ -347,7 +347,7 @@ The functionality for defining a filter for __RadGridView__ will be implemented 
 
 On running the application and testing the functionality of adding a filter descriptor for __RadGridView__, you should see a similar result:
 
-![](images/RadExpressionEditor_GettingStarted2.png)![](images/RadExpressionEditor_GettingStarted3.png)
+![{{ site.framework_name }} RadExpressionEditor and RadGridView](images/RadExpressionEditor_GettingStarted2.png)![{{ site.framework_name }} RadExpressionEditor Filtering RadGridView](images/RadExpressionEditor_GettingStarted3.png)
 
 Still, using the __Calculation Panel__ and the items in each __Category__, you are empowered to create far more complex filtering expressions.  
 

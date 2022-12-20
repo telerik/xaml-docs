@@ -36,7 +36,7 @@ For example:
 	<telerik:RadDateTimePicker DisplayFormat="Long"/>
 {{endregion}}
 
-![](images/dateTimePicker_features_formatting_010.png)
+![{{ site.framework_name }} RadDateTimePicker Long DisplayFormat](images/dateTimePicker_features_formatting_010.png)
 
 ## Changing the culture
 
@@ -64,7 +64,7 @@ Here is an example:
 
 Here is the result:
 
-![](images/dateTimePicker_features_formatting_020.png)
+![{{ site.framework_name }} RadDateTimePicker German Culture](images/dateTimePicker_features_formatting_020.png)
 
 ## Defining a custom format
 
@@ -98,7 +98,7 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__ i
 
 Here is the result:
 
-![](images/dateTimePicker_features_formatting_030.png)
+![{{ site.framework_name }} RadDateTimePicker Customized Culture Format](images/dateTimePicker_features_formatting_030.png)
 
 ## See Also
 

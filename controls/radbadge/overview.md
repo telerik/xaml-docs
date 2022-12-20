@@ -17,7 +17,7 @@ The __RadBadge__ component is a visual indicator for UI elements. It enables you
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radbadge-overview-1.png)
+![{{ site.framework_name }} RadBadge Overview](images/radbadge-overview-1.png)
 
 ## Key Features
 

@@ -21,7 +21,7 @@ Like most controls, the __RadBusyIndicator__ also allows you to template it in o
 
 ## RadBusyIndicator
 
-![](images/radbusyindicator_styles_and_templates_template_structure_010.png)
+![{{ site.framework_name }} RadBusyIndicator Template Structure](images/radbusyindicator_styles_and_templates_template_structure_010.png)
 
 * __[Grid]__
 
@@ -39,7 +39,7 @@ Like most controls, the __RadBusyIndicator__ also allows you to template it in o
 
 ## RadProgressBar
 
-![](images/radbusyindicator_styles_and_templates_template_structure_020.png)
+![{{ site.framework_name }} RadProgressBar Template Structure](images/radbusyindicator_styles_and_templates_template_structure_020.png)
 
 * __[Grid]__ - represents the host container for the __RadProgressBar__ control.
 

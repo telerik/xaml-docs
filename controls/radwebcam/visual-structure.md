@@ -14,15 +14,15 @@ This article shows the main UI structure of the `RadWebCam` control.
 
 __RadWebCam - Initial State__
 
-![](images/radwebcam-visual-structure-0.png)
+![{{ site.framework_name }} RadWebCam Initial State Visual Structure](images/radwebcam-visual-structure-0.png)
 
 __RadWebCam - Recording State__
 
-![](images/radwebcam-visual-structure-1.png)
+![{{ site.framework_name }} RadWebCam Recording State Visual Structure](images/radwebcam-visual-structure-1.png)
 
 __RadWebCam - Settings Dialog__
 
-![](images/radwebcam-visual-structure-2.png)
+![{{ site.framework_name }} RadWebCam Settings Dialog Visual Structure](images/radwebcam-visual-structure-2.png)
 
 ## See Also
 * [Getting Started]({%slug radwebcam-getting-started%})

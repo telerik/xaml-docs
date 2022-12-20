@@ -43,7 +43,7 @@ The State Indicator is a shape with arbitrary size located anywhere in the scale
 	</telerik:RadVerticalLinearGauge>
 {{endregion}}
 
-![](images/NumericScaleStateIndicator.png)
+![{{ site.framework_name }} RadGauge Numeric Scale State Indicator](images/NumericScaleStateIndicator.png)
 
 The State indicator supports the following features:
 

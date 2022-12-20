@@ -55,7 +55,7 @@ The shape appearance can be changed with the __ShapeGeometry__, __ShapeWidth__, 
 	</telerik:RadStepProgressBar>
 {{endregion}}
 
-![](images/stepprogressbar-appearance-step-0.png)
+![{{ site.framework_name }} RadStepProgressBar Customized Step Appearance Using Direct Settings](images/stepprogressbar-appearance-step-0.png)
 
 #### __[XAML] Customizing step shapes with an implicit style__
 {{region stepprogressbar-appearance-step-1}}
@@ -84,7 +84,7 @@ The shape appearance can be changed with the __ShapeGeometry__, __ShapeWidth__, 
 	</telerik:RadStepProgressBar>
 {{endregion}}
 
-![](images/stepprogressbar-appearance-step-1.png)
+![{{ site.framework_name }} RadStepProgressBar Customized Step Appearance Using Implicit Style](images/stepprogressbar-appearance-step-1.png)
 
 The contents inside the shape can be changed with the __NotStartedIndicatorContent__, __CompletedIndicatorContent__, __IndeterminateIndicatorContent__ and the corresponding DataTemplate properties of RadStepProgressBarItem. Read more in the [Step Item Contents]({%slug stepprogressbar-step-contents%}) article.
 

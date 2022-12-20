@@ -25,7 +25,7 @@ The feature is not enabled by default. To turn it on you can set the __WrapAroun
 
 
 #### __Figure 1: Wraparound functionality enabled__
-![WPF RadMap Wraparound functionality enabled](images/RadMap_Features_WrapAround_01.png)
+![{{ site.framework_name }} RadMap Wraparound functionality enabled](images/RadMap_Features_WrapAround_01.png)
 
 When the wraparound is enabled, the longitude of the map's viewport can exceed the valid geographical boundaries (from -180 to 180 degrees in the default Mercator projection) when you pan the viewport. The [Location Conversion](#location-conversion) section of this article explains how to convert shifted locations to valid geographical boundaries (-180 to 180).
 

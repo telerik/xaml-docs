@@ -47,4 +47,4 @@ Set the __DataPointInfoTemplate__ property of TrackBallInfoControl. To do this, 
 	</telerik:RadCartesianChart.TrackBallInfoStyle>
 {{endregion}}
 
-![](images/kb-chartview-customize-trackball-display-content-0.png)
+![{{ site.framework_name }} RadChartView Customize Trackball DisplayContent](images/kb-chartview-customize-trackball-display-content-0.png)

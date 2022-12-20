@@ -10,15 +10,7 @@ position: 3
 
 # Placement
 
-The __RadContextMenu__ exposes a set of properties, which allow you to specify the location, on which it will appear. They are as follows:
-
-* [Placement](#placement)
-
-* [PlacementRectangle](#placementrectangle)
-
-* [PlacementTarget](#placementtarget)
-
-* [DropDownPlacement](#dropdownplacement)
+The __RadContextMenu__ exposes a set of properties, which allow you to specify the location, on which it will appear.
 
 ## Placement
 
@@ -53,7 +45,7 @@ Here is an example:
 	</TextBox>
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_01.png)
+![{{ site.framework_name }} RadContextMenu with Placement Bottom](images/RadContextMenu_Features_Placement_01.png)
 
 ## PlacementRectangle
 
@@ -77,7 +69,7 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 	</TextBox>
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_02.png)
+![{{ site.framework_name }} RadContextMenu with Placement Rectangle](images/RadContextMenu_Features_Placement_02.png)
 
 ## PlacementTarget
 
@@ -96,7 +88,7 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 	}
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_01.png)
+![{{ site.framework_name }} RadContextMenu with Placement Target](images/RadContextMenu_Features_Placement_01.png)
 
 Placement	|	Placement Target	|	Target Area	|	Context Menu Target Point	|	Context Menu Alignment Point
 ---	|	---	|	---	|	---	|	---
@@ -147,7 +139,7 @@ Here is an example:
 	</TextBox>
 {{endregion}}
 
-![](images/RadContextMenu_Features_Placement_03.png)
+![{{ site.framework_name }} RadContextMenu with Menu Item DropDownPlacement](images/RadContextMenu_Features_Placement_03.png)
 
 ## See Also
 

@@ -12,7 +12,7 @@ position: 5
 
 The `DocumentHost` is meant to be the default container for the editable documents in your application. By default it occupies the whole central area of the `RadDocking` control and each newly added pane is docked as a new tab page inside of it.
 
-![](images/RadDocking_Features_DocumentHost_010.png)
+![{{ site.framework_name }} RadDocking Document Host](images/RadDocking_Features_DocumentHost_010.png)
 
 Here is the XAML declaration of the above structure.
 
@@ -99,7 +99,7 @@ When the number of Panes inside the `DocumentHost` increases and there is not en
 {{endregion}}
 
 __Figure 1: __ DocumentHost with a visible `HorizontalScrollBar`:
-![WPF RadDocking DocumentHost with a visible `HorizontalScrollBar`:](images/raddocking-features-document-host-5.png)
+![{{ site.framework_name }} RadDocking DocumentHost with a visible `HorizontalScrollBar`:](images/raddocking-features-document-host-5.png)
 
 By design the `HorizontalScrollBarVisibility` property is disabled and can be visualized either by setting it to `Visible` or `Auto` (the arrow buttons will become visible when the space is not enough).
 
@@ -119,7 +119,7 @@ The `DropDownDisplayMode` property could be set to any of the following values:
 Figure 2 demonstrate the appearance of the DocumentHost when both properties are set.
 
 __Figure 2: __ DocumentHost with visible `HorizontalScrollBar` and drop down menu button:
-![WPF RadDocking DocumentHost with visible `HorizontalScrollBar` and drop down menu button:](images/raddocking-features-document-host-6.png)
+![{{ site.framework_name }} RadDocking DocumentHost with visible `HorizontalScrollBar` and drop down menu button:](images/raddocking-features-document-host-6.png)
 
 ## Controlling Content Margin
 

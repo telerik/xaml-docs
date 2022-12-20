@@ -22,7 +22,7 @@ RadSpreadsheet enables you working with charts through its UI. You can add a cha
 >noteTo be able to see the charts, you must select at least two consecutive cells, otherwise you will get an error message. In case the selected cells don't contain any values, the charts will be shown empty. 
 
 #### Figure 1: Insert Chart dialog
-![WPF RadSpreadsheet Insert Chart dialog](images/Features-Charts_15.png)
+![{{ site.framework_name }} RadSpreadsheet Insert Chart dialog](images/Features-Charts_15.png)
 
 ## Supported Chart Types
 
@@ -33,7 +33,7 @@ Column/bar charts are used to display values as sets of vertical columns, groupe
 
 | Clustered column        | Stacked column | 100% stacked column |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_1.png) | ![](images/Features-Charts_2.png) | ![](images/Features-Charts_3.png)| 
+| ![{{ site.framework_name }} RadSpreadsheet Clustered Column](images/Features-Charts_1.png) | ![{{ site.framework_name }} RadSpreadsheet Stacked Column](images/Features-Charts_2.png) | ![{{ site.framework_name }} RadSpreadsheet 100% Stacked Column](images/Features-Charts_3.png)|
 
 
 ### Bar Charts
@@ -43,7 +43,7 @@ Bar charts are analogical to the column charts, except the orientation of the ba
 
 | Clustered bar           | Stacked bar    | 100% stacked bar    |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_4.png) | ![](images/Features-Charts_5.png) | ![](images/Features-Charts_6.png)|
+| ![{{ site.framework_name }} RadSpreadsheet Clustered Bar](images/Features-Charts_4.png) | ![{{ site.framework_name }} RadSpreadsheet Stacked Bar](images/Features-Charts_5.png) | ![{{ site.framework_name }} RadSpreadsheet 100% Stacked Bar](images/Features-Charts_6.png)|
 
 
 
@@ -54,11 +54,11 @@ The line chart shows the category data distributed on the horizontal axis and al
 
 | Line                    | Stacked line   | 100% stacked line   |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_7.png) | ![](images/Features-Charts_8.png) | ![](images/Features-Charts_9.png)|
+| ![{{ site.framework_name }} RadSpreadsheet Line](images/Features-Charts_7.png) | ![{{ site.framework_name }} RadSpreadsheet Stacked Line](images/Features-Charts_8.png) | ![{{ site.framework_name }} RadSpreadsheet 100% Stacked Line](images/Features-Charts_9.png)|
 
 | Line with Markers       | Stacked line with Markers| 100% stacked line with Markers|
 | ----------------------- |:------------------------:| :----------------------------:
-| ![](images/Features-Charts_16.png) | ![](images/Features-Charts_17.png) | ![](images/Features-Charts_18.png)|
+| ![{{ site.framework_name }} RadSpreadsheet Line with Markers](images/Features-Charts_16.png) | ![{{ site.framework_name }} RadSpreadsheet Stacked Line with Markers](images/Features-Charts_17.png) | ![{{ site.framework_name }} RadSpreadsheet 100% Stacked Line with Markers](images/Features-Charts_18.png)|
 
 ### Scatter and Bubble Charts
 
@@ -68,9 +68,9 @@ In a bubble chart, a third numeric field determines the size of the data points 
 
 | Scatter     |Scatter with Smooth Lines | Scatter with Smooth Lines and Markers | 
 | ----------- |:------------------------ |:--------------------------------------| 
-| ![](images/Features-Charts_20.png) | ![](images/Features-Charts_22.png) | ![](images/Features-Charts_21.png) |
+| ![{{ site.framework_name }} RadSpreadsheet Scatter](images/Features-Charts_20.png) | ![{{ site.framework_name }} RadSpreadsheet Scatter with Smooth Lines](images/Features-Charts_22.png) | ![{{ site.framework_name }} RadSpreadsheet Scatter with Smooth Lines and Markers](images/Features-Charts_21.png) |
 | Scatter with Straight Lines     |Scatter with Straight Lines and Markers | Bubble | 
-| ![](images/Features-Charts_24.png) | ![](images/Features-Charts_23.png) | ![](images/Features-Charts_19.png) |
+| ![{{ site.framework_name }} RadSpreadsheet Scatter with Straight Lines](images/Features-Charts_24.png) | ![{{ site.framework_name }} RadSpreadsheet Scatter with Straight Lines and Markers](images/Features-Charts_23.png) | ![{{ site.framework_name }} RadSpreadsheet Bubble](images/Features-Charts_19.png) |
 
 
 
@@ -82,7 +82,7 @@ Pie charts are useful for comparing the values of different points in a single s
 
 | Pie         | Doughnut  | 
 | ----------- |:----------| 
-| ![](images/Features-Charts_10.png) | ![](images/Features-Charts_11.png) |
+| ![{{ site.framework_name }} RadSpreadsheet Pie](images/Features-Charts_10.png) | ![{{ site.framework_name }} RadSpreadsheet Doughnut](images/Features-Charts_11.png) |
 
 
 
@@ -92,7 +92,7 @@ Area charts can be used to plot change over time and draw attention to the total
 
 | Clustered area          | Stacked area   | 100% stacked area   |
 | ----------------------- |:--------------:| -------------------:|
-| ![](images/Features-Charts_12.png) | ![](images/Features-Charts_13.png) | ![](images/Features-Charts_14.png)|
+| ![{{ site.framework_name }} RadSpreadsheet Clustered Area](images/Features-Charts_12.png) | ![{{ site.framework_name }} RadSpreadsheet Stacked Area](images/Features-Charts_13.png) | ![{{ site.framework_name }} RadSpreadsheet 100% Stacked Area](images/Features-Charts_14.png)|
 
 
 ## Manipulating Charts in Code

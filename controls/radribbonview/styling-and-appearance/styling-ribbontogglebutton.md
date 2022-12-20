@@ -24,14 +24,14 @@ This topic will show you how to perform the second one.
 In order to copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonToggleButton__ you want to style.				
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RibbonView_Styling_ToggleButton_Locate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![](images/RibbonView_Styling_ToggleButton_LocateWPF.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![](images/RibbonView_Styling_ToggleButton_CreateStyle.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_CreateStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -66,7 +66,7 @@ Change the elements' properties until you get the desired look.
 {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonToggleButton__. Their names indicate to which part of the __RadRibbonToggleButton's__ appearance they are assigned.
-![](images/RibbonView_Styling_ToggleButton_Resources.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_Resources.png)
 
 * __RadRibbonBarButtonSelectedBorder__ - a brush that represents the color of the __RadRibbonToggleButton's__ border, when the button is toggled.             
 
@@ -95,16 +95,16 @@ Modify the resource to bring the desired appearance to the __RadRibbonToggleButt
 ## Example
 
 Here is an example of the above resources modified:
-![](images/RibbonView_Styling_ToggleButton_ResourcesModified.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_ResourcesModified.png)
 
 Here is a snapshot of the result, when the mouse is over the button:
-![](images/RibbonView_Styling_ToggleButton_ExampleMouseOver.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_ExampleMouseOver.png)
 
 when the button is pressed:
-![](images/RibbonView_Styling_ToggleButton_ExamplePressed.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_ExamplePressed.png)
 
 and when the button is toggled:
-![](images/RibbonView_Styling_ToggleButton_ExampleToggled.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ToggleButton_ExampleToggled.png)
 
 {% endif %}
 

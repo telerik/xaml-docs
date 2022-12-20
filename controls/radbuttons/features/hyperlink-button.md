@@ -12,7 +12,7 @@ position: 5
 
 __RadHyperlinkButton__ provides the RadButton functionality extending it with Hyperlink capabilities. 
 
-![](images/radbuttons-features-hyperlink-button-0.png)
+![{{ site.framework_name }} RadButtons Hyperlink Button](images/radbuttons-features-hyperlink-button-0.png)
 
 ## Setting the Content, Uri and the Target
 

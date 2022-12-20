@@ -87,7 +87,7 @@ To populate the control with data use its __ItemsSource__ property.
 {{endregion}}
 
 #### __Figure 1: RadHeatMap__
-![WPF RadHeatMap RadHeatMap](images/radheatmap-getting-started-0.png)
+![{{ site.framework_name }} RadHeatMap RadHeatMap](images/radheatmap-getting-started-0.png)
 
 ## Colorization
 

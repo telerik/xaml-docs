@@ -29,7 +29,7 @@ __LayoutControlToolBoxView__ is the control that represents the toolbox. This ar
 The toolbox can be associated with RadLayoutControl through its __LayoutControl__ property (see __Example 1__).
 	
 #### __Figure 1: Final result__  
-![WPF RadLayoutControl Final result](images/radlayoutcontrol-features-toolbox-toolboxview-01.png)
+![{{ site.framework_name }} RadLayoutControl Final result](images/radlayoutcontrol-features-toolbox-toolboxview-01.png)
 
 >Dropping items from the toolbox into the layout control is allowed only if the layout control is in [edit mode]({%slug radlayoutcontrol-edit-the-layout%}).
 
@@ -47,7 +47,7 @@ The toolbox allows you to track and restore the items that was removed from the 
 {{endregion}}
 	
 #### __Figure 2: Deleted items__
-![WPF RadLayoutControl Deleted items](images/radlayoutcontrol-features-toolbox-toolboxview-02.png)
+![{{ site.framework_name }} RadLayoutControl Deleted items](images/radlayoutcontrol-features-toolbox-toolboxview-02.png)
 
 ## LayoutControlHierarchicalNodeProxy
 

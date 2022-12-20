@@ -77,7 +77,7 @@ After the needed __DateGroupDescription__ is defined, it needs to be returned by
 {{endregion}}
 
 #### __Figure 1: Custom DateGroupDescription__
-![WPF RadScheduleView Custom DateGroupDescription](images/radScheduleView_features_customViewDefinition_01.png)
+![{{ site.framework_name }} RadScheduleView Custom DateGroupDescription](images/radScheduleView_features_customViewDefinition_01.png)
 
 ## Set the Format of the Group Header
 
@@ -102,7 +102,7 @@ The format of the Group Header can be altered by overriding the __FormatGroupHea
 {{endregion}}
 
 #### __Figure 2: Formatted GroupHeader name__
-![WPF RadScheduleView Formatted GroupHeader name](images/radScheduleView_features_customViewDefinition_02.png)
+![{{ site.framework_name }} RadScheduleView Formatted GroupHeader name](images/radScheduleView_features_customViewDefinition_02.png)
 
 ## Format the Text of the Visible Range 
 
@@ -127,7 +127,7 @@ The format of the string that represents the currently visible range can be modi
 {{endregion}}
 
 #### __Figure 3: Modified format of the visible range text__
-![WPF RadScheduleView Modified format of the visible range text](images/radScheduleView_features_customViewDefinition_03.png)
+![{{ site.framework_name }} RadScheduleView Modified format of the visible range text](images/radScheduleView_features_customViewDefinition_03.png)
 
 ## Show the Week Group Headers
 
@@ -149,7 +149,7 @@ By default, the week group headers are hidden. They can be shown by overriding t
 {{endregion}}
 
 #### __Figure 4: Showing the week group headers__
-![WPF RadScheduleView Showing the week group headers](images/radScheduleView_features_customViewDefinition_04.png)
+![{{ site.framework_name }} RadScheduleView Showing the week group headers](images/radScheduleView_features_customViewDefinition_04.png)
 
 ## Set the Beginning and the End of the Visible Range
 
@@ -171,7 +171,7 @@ The DateTime values for the start and end of the visible range, can be set throu
 {{endregion}}
 
 #### __Figure 5: Modify the start and end of the visible range__
-![WPF RadScheduleView Modify the start and end of the visible range](images/radScheduleView_features_customViewDefinition_05.png)
+![{{ site.framework_name }} RadScheduleView Modify the start and end of the visible range](images/radScheduleView_features_customViewDefinition_05.png)
 
 ## See Also
 * [Custom Slots]({%slug radscheduleview-features-customslots%})

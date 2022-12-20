@@ -19,7 +19,7 @@ __RadGridView__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/RadGridView_Overview_2.png)
+![{{ site.framework_name }} RadGridView Overview](images/RadGridView_Overview_2.png)
 
 __RadGridView__ key features list:
 

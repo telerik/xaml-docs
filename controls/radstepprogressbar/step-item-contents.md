@@ -25,7 +25,7 @@ To set additional contents, use the __Content__ and __AdditionalContent__ proper
 
 __RadStepProgressBar in Horizontal and Vertical Orientations__  
 
-![](images/stepprogressbar-step-contents-0.png)
+![{{ site.framework_name }} RadStepProgressBar in Horizontal and Vertical Orientations](images/stepprogressbar-step-contents-0.png)
 
 Also, the content and the additional content templates can be determined using [DataTemplateSelectors](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=windowsdesktop-6.0). To do so, use the __ContentTemplateSelector__ and __AdditionalContentTemplateSelector__ properties of RadStepProgressBarItem.
 
@@ -65,7 +65,7 @@ The different properties are used based on the current state of the step item - 
 
 __RadStepProgressBar with customized state indicator contents__  
 
-![](images/stepprogressbar-step-contents-1.png)
+![{{ site.framework_name }} RadStepProgressBar with Customized State Indicator Contents](images/stepprogressbar-step-contents-1.png)
 
 ## See Also
 * [Getting Started]({%slug stepprogressbar-getting-started%})

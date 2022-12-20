@@ -233,7 +233,7 @@ To create your own selector you have to use Visual Studio.
 		{{endregion}}
 
 And the result of the demo can be seen on the next figure: 
-![](images/RadTreeView_TemplatingItemTemplateSelector_001.PNG)
+![{{ site.framework_name }} RadTreeView Item Template Selector](images/RadTreeView_TemplatingItemTemplateSelector_001.PNG)
 
 ## See Also
  * [ItemTemplate]({%slug radtreeview-populating-with-data-item-template%})

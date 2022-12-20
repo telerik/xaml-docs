@@ -36,4 +36,4 @@ The following example will demonstrate how you can color the RadMap using the Gr
 
 The result can be seen below:
 
-![](images/RadMap_Features_GraphColorizer.PNG)
+![{{ site.framework_name }} RadMap Graph Colorizer](images/RadMap_Features_GraphColorizer.PNG)

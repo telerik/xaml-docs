@@ -16,7 +16,7 @@ __RadAutoSuggestBox__ is a text control that makes suggestions to the users as t
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radautosuggestbox-overview-1.png)
+![{{ site.framework_name }} RadAutoSuggestBox Overview](images/radautosuggestbox-overview-1.png)
 
 ## Key Features
 

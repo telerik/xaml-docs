@@ -136,7 +136,7 @@ The **Form1_Load** method in the preceding code shows the general procedure for 
 If you now run the application you should observe a result similar to that in Figure 1.
 
 #### Figure 1: Telerik UI for WPF controls hosted in a WinForms application
-![WPF Telerik UI for WPF controls hosted in a WinForms application](images/wpf-controls-wf-app-1.png)
+![{{ site.framework_name }} Telerik UI for WPF controls hosted in a WinForms application](images/wpf-controls-wf-app-1.png)
 
 ## Using Implicit Styles
 

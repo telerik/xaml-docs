@@ -559,7 +559,7 @@ Here you can see how the whole XAML declaration of the __RadRibbonView__ looks l
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![](images/RibbonView_Functional_Structure.png)
+![{{ site.framework_name }} RadRibbonView Example Functional Structure](images/RibbonView_Functional_Structure.png)
 
 This RibbonView is far from being ready but at least it illustrates the element's structure you have to follow in order to have a fully functional __RadRibbonView__.
 

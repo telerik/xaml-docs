@@ -25,19 +25,19 @@ The property is an enum of type __System.Windows.Controls.Primitives.PopupAnimat
 
 * __Fade__: The popup control gradually appears, or fades out, depending on its current state (open or not).
 
-	![](images/radbuttons-features-popup-animations-0.gif)
+	![{{ site.framework_name }} RadButtons Fade Popup Animation](images/radbuttons-features-popup-animations-0.gif)
 
 * __Slide__: The popup control slides down starting from the bottom border of the button. If the screen doesn't have enough space for the popup, the sliding behaves differently according to the position of the popup.
 	
-	![](images/radbuttons-features-popup-animations-1.gif)
+	![{{ site.framework_name }} RadButtons Slide Popup Animation](images/radbuttons-features-popup-animations-1.gif)
 
 * __Scroll__: The popup control scrolls from the lower left corner of the button. If the screen doesn't have enought space for the popup, the scrolling behaves differently according to the position of the popup.
 	
-	![](images/radbuttons-features-popup-animations-2.gif)
+	![{{ site.framework_name }} RadButtons Scroll Popup Animation](images/radbuttons-features-popup-animations-2.gif)
 
 * __None__: The popup control appears without animation. This is the default value of the property.
 
-	![](images/radbuttons-features-popup-animations-3.gif)
+	![{{ site.framework_name }} RadButtons None Popup Animation](images/radbuttons-features-popup-animations-3.gif)
 
 ## See Also
 

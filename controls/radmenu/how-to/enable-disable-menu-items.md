@@ -31,7 +31,7 @@ Disabling all menu items can be easily done by just setting the __IsEnabled__ pr
 
 This will disable the top-level menu items and they won't be expandable. 
 
-![](images/RadMenu_How_To_Enable_Disable_01.png)
+![{{ site.framework_name }} RadMenu Disable Top LeveL Items](images/RadMenu_How_To_Enable_Disable_01.png)
 
 ## Disable a Static Menu Item
 
@@ -45,7 +45,7 @@ To disable a static menu item you just have to set its __IsEnabled__ property to
 
 >Note that disabling an item will prevent it from expanding its child items (if any).
 
-![](images/RadMenu_How_To_Enable_Disable_02.png)
+![{{ site.framework_name }} RadMenu Disable Sub Item](images/RadMenu_How_To_Enable_Disable_02.png)
 
 ## Disable a Dynamic Menu Item
 

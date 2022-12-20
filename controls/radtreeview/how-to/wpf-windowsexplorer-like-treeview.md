@@ -16,7 +16,7 @@ Most of the __RadTreeView__ samples you see on the web are somewhat simplistic: 
 The purpose of this tutorial is to show you how to generate a __RadTreeView__ that has N level items of different types (for example Windows Explorer - in one directory you could have more directories and files).	  
 
 The final result should look like the snapshot below:
-![](images/RadTreeView_HowToWindowsExplorerTree_005_WPF.PNG)
+![{{ site.framework_name }} RadTreeView Like Windows Explorer](images/RadTreeView_HowToWindowsExplorerTree_005_WPF.PNG)
 
 This tutorial will combine in itself the following:
 
@@ -375,7 +375,7 @@ This tutorial will combine in itself the following:
 	{{endregion}}
 
 	Run your demo. The result so far should look like the snapshot below:
-	![](images/RadTreeView_HowToWindowsExplorerTree_020_WPF.PNG)
+	![{{ site.framework_name }} RadTreeView Drives](images/RadTreeView_HowToWindowsExplorerTree_020_WPF.PNG)
 
 	As you can see under the MyComputer node, all available drives are shown. However, not all of the drives are ready for use (for example, someone will not have a floppy - A:\ on his PC) and you would probably want to disable these items. Also that you need to enable the load on demand behavior for the drives. The best way to do all of this is to use __ItemContainerStyle__ and __ItemContainerStyleSelector__.
 
@@ -532,7 +532,7 @@ This tutorial will combine in itself the following:
 	{{endregion}}
 
 	Now run your demo. After applying the __Style__ you can see the difference. The drives which are not ready are disabled. Try to expand any of the enabled items - the LoadOnDemand event is fired.
-	![](images/RadTreeView_HowToWindowsExplorerTree_030_WPF.PNG)
+	![{{ site.framework_name }} RadTreeView Expanding Drives](images/RadTreeView_HowToWindowsExplorerTree_030_WPF.PNG)
 
 	You are one step closer to the final result. Next, you need to handle with load on demand events.  
 
@@ -692,7 +692,7 @@ This tutorial will combine in itself the following:
 	The directory style is similar to the drive style. However, the style for the file object is a little different. It sets a different image.		
 
 With the last declarations the WPF Windows Explorer TreeView is ready. Run your demo.
-![](images/RadTreeView_HowToWindowsExplorerTree_040_WPF.PNG)
+![{{ site.framework_name }} RadTreeView Like Windows Explorer](images/RadTreeView_HowToWindowsExplorerTree_040_WPF.PNG)
 
 >tip Of course, you could experiment with the application and add additional functionality. Only the sky can be the limit for you!
 

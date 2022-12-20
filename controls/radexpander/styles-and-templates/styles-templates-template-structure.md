@@ -16,7 +16,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 This section will explain the structure of the __RadExpander__'s template. Here is a snapshot of the template generated in Expression Blend.				
 
-![](images/RadExpander_Styles_Templates_TemplateStructure.png)
+![{{ site.framework_name }} RadExpander Template Structure](images/RadExpander_Styles_Templates_TemplateStructure.png)
 
 It contains the following parts:
 

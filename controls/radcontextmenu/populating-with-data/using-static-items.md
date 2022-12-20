@@ -82,7 +82,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 
 Here is a snapshot of the current result.
 
-![](images/RadContextMenu_Populating_with_Data_Static_Items_01.png)
+![{{ site.framework_name }} RadContextMenu with Static Items](images/RadContextMenu_Populating_with_Data_Static_Items_01.png)
 
 >tipEach of the __RadMenuItems__ can have child items, that are defined in the same way.
 
@@ -154,7 +154,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 {{endregion}}
 {% endif %}
 
-![](images/RadContextMenu_Populating_with_Data_Static_Items_02.png)
+![{{ site.framework_name }} RadContextMenu with Items with Icons](images/RadContextMenu_Populating_with_Data_Static_Items_02.png)
 
 >tipConsider declaring menu items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 

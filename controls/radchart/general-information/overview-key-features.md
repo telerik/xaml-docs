@@ -10,7 +10,7 @@ position: 0
 
 # Key Features
 
-![](images/RadChart_KeyFeatures_1.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_KeyFeatures_1.png)
 
 __RadChart__ key features:
 

@@ -30,15 +30,15 @@ The RadDataBar suite contains the following controls representing the different 
 
 * __RadDataBar__: Displays a single data bar representing a value. It is useful for comparing quantitative values of data. You can easily highlight negative values.   
 
-    ![](images/RadDataBar_databar.PNG)
+    ![{{ site.framework_name }} RadDataBar Normal DataBar](images/RadDataBar_databar.PNG)
 
 * __RadStackedDataBar__: Displays a set of stacked bars where each bar represents a value. The size of each bar is calculated in accordance to the set Minimum and Maximum properties.   
 
-    ![](images/RadDataBar_stackeddatabar.PNG)
+    ![{{ site.framework_name }} RadDataBar Stacked DataBar](images/RadDataBar_stackeddatabar.PNG)
 
 * __RadStacked100DataBar__: Displays a set of stacked bars where each value represents a percentage of the value. The percent is calculated based on the bar's value and the sum of all values in the stack.  
 
-    ![](images/RadDataBar_stacked100databar.PNG)
+    ![{{ site.framework_name }} RadDataBar Stacked100 DataBar](images/RadDataBar_stacked100databar.PNG)
 
 ## Using RadDataBar
 
@@ -49,7 +49,7 @@ To display a data bar visualization, you can just add a RadDataBar control in th
 	<telerik:RadDataBar Value="30" Width="300" Height="30" Background="#F7F9FE" />
 {{endregion}}
 
-![](images/raddatabar-getting-started-0.png)
+![{{ site.framework_name }} RadDataBar Customized Appearance](images/raddatabar-getting-started-0.png)
 
 ## Using RadStackedDataBar and RadStacked100DataBar
 
@@ -69,7 +69,7 @@ To display a stacked data bar visualization, you can add a __RadStackedDataBar__
 	}
 {{endregion}}
 
-![](images/raddatabar-getting-started-1.png)
+![{{ site.framework_name }} RadDataBar Stacked DataBar with ItemsSource](images/raddatabar-getting-started-1.png)
 
 The __RadStacked100DataBar__ works very similar to the RadStackedDataBar, but instead of using absolute values and relying on the predefined minimum and maximum values, it displays the bars as a percetange of the whole stack. For example, the sum of the values from __Example 3__ is `16 + 20 + 12 + 32 = 80` which will be the range's maximum. Then each value in the ItemsSource is turned to a value relative to the range and based on this information its bar's width is calculated. For example, 20 will be 0.25 which is 25% of the 80's range. This means that the bar for the value 20 will take 25% of the whole data bar.
 
@@ -80,7 +80,7 @@ To define RadStacked100DataBar, use Example 2 and 3, but replace the RadStackedD
 	<telerik:RadStacked100DataBar x:Name="stackedDataBar" Height="30" Width="300" Background="#F7F9FE"/>
 {{endregion}}
 
-![](images/raddatabar-getting-started-2.png)
+![{{ site.framework_name }} RadDataBar Defining RadStacked100DataBar](images/raddatabar-getting-started-2.png)
 
 ## See Also
 

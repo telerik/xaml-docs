@@ -31,7 +31,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 {% if site.site_name == 'Silverlight' %}
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list, you will find the brushes, styles and templates needed to change the visual appearance of the __RadMap__. Their names indicate to which part of the __RadMap__ appearance they are assigned.
 
-![](images/RadMap_StylesAndTemplates_StylingRadMap_01.png)
+![{{ site.framework_name }} RadMap Blend Resources](images/RadMap_StylesAndTemplates_StylingRadMap_01.png)
 {% endif %}
 
 * __MapBackground__ - a brush that represents the background color of the __RadMap__ control.
@@ -51,11 +51,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 {% if site.site_name == 'Silverlight' %}
 Here is an example of these resource modified:
 
-![](images/RadMap_StylesAndTemplates_StylingRadMap_02.png)
+![{{ site.framework_name }} RadMap Blend Customized Resources](images/RadMap_StylesAndTemplates_StylingRadMap_02.png)
 
 And here is a snapshot of the final result:
 
-![](images/RadMap_StylesAndTemplates_StylingRadMap_03.png)
+![{{ site.framework_name }} RadMap Customized Appearance](images/RadMap_StylesAndTemplates_StylingRadMap_03.png)
 {% endif %}
 
 ## See Also

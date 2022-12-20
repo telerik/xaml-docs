@@ -44,7 +44,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __C
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __ChartTitle__. Their names indicate to which part of the __ChartTitle__ appearance they are assigned.{% endif %}
 
-{% if site.site_name == 'Silverlight' %}![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_01.png){% endif %}
+{% if site.site_name == 'Silverlight' %}![{{ site.framework_name }} RadChart  ](images/RadChart_Styles_and_Templates_Styling_ChartTitle_01.png){% endif %}
 
 * __ChartTitleBackground__ - a brush, that represents the background color of the __ChartTitle__.
 
@@ -79,10 +79,10 @@ To apply the style to the real control, set it to the __TitleStyle__ property of
 >Don't forget to delete the dummy __ChartTitle__ control, when you finish editing the style.{% if site.site_name == 'Silverlight' %}
 
 Here is an example of the described resources modified.{% endif %}{% if site.site_name == 'Silverlight' %}
-![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
+![{{ site.framework_name }} RadChart  ](images/RadChart_Styles_and_Templates_Styling_ChartTitle_02.png){% endif %}{% if site.site_name == 'Silverlight' %}
 
 And here is the snapshot of the result.{% endif %}{% if site.site_name == 'Silverlight' %}
-![](images/RadChart_Styles_and_Templates_Styling_ChartTitle_03.png){% endif %}
+![{{ site.framework_name }} RadChart  ](images/RadChart_Styles_and_Templates_Styling_ChartTitle_03.png){% endif %}
 
 Here is the final XAML for the __Style__ after the modifications:
 

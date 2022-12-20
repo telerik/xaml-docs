@@ -16,7 +16,7 @@ position: 0
 
 The __RadChart__ control allows you to easily style its axes via the __AxisStyles__ complex property of the __Axis__ class. You can easily access it in the code-behind:
 
-![](images/RadChart_StylingAxesOverview_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxesOverview_01.png)
 
 The same applies for the y-axis.
 

@@ -90,7 +90,7 @@ To listen for errors returned by the Bing Maps service, use the __CalculateTruck
 {{endregion}}
 
 #### Figure 1: Route shape representing the route response returned by the truck route API
-![WPF RadMap Route shape representing the route response returned by the truck route API](images/radmap-features-providers-bing-rest-map-provider-truck-routing-0.png)
+![{{ site.framework_name }} RadMap Route shape representing the route response returned by the truck route API](images/radmap-features-providers-bing-rest-map-provider-truck-routing-0.png)
 
 ## Truck Routing Settings
 

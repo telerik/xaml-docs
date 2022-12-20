@@ -12,7 +12,7 @@ position: 11
 
 The __ChartTitle__ is a content control placed at the top of each chart control. It is used to display any title information regarding the visualized chart.
  
-![](images/RadChart_Features_ChartTitle_01.png)
+![{{ site.framework_name }} RadChart Chart Title](images/RadChart_Features_ChartTitle_01.png)
 
 You can specify the content of the default __ChartTitle__ control from XAML or code-behind, like this:
 
@@ -99,7 +99,7 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 
 And here is the final result:
  
-![](images/RadChart_Features_ChartTitle_02.png)
+![{{ site.framework_name }} RadChart Custom Chart Title](images/RadChart_Features_ChartTitle_02.png)
 
 If you want to learn more about styling the __ChartTitle__ take a look at the [Customizing Title]({%slug radchart-styling-and-appearance-styling-chart-title%}) topic.
 

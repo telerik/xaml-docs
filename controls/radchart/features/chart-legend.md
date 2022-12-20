@@ -81,7 +81,7 @@ In order to have legend items generated automatically, you have to use the prope
 
 As you can see, the __ChartLegend__ on the right side of the __RadChart__ is automatically generated and has one item for each manufacturer (series).
 
-![](images/RadChart_Features_ChartLegend_02.png)
+![{{ site.framework_name }} RadChart Chart Legend](images/RadChart_Features_ChartLegend_02.png)
 
 ## Manual Legend Items Generation
 
@@ -143,7 +143,7 @@ Here is a small example which demonstrates how to create and add new legend item
 
 And here is the result:
 
-![](images/RadChart_Features_ChartLegend_03.png)
+![{{ site.framework_name }} RadChart Manual Legend Items Generation](images/RadChart_Features_ChartLegend_03.png)
 
 ## Legend Display Modes
 
@@ -184,7 +184,7 @@ Here is an example of how the legend looks, when the __LegednDisplayMode__ of th
 	End Sub
 {{endregion}}
     
-![](images/RadChart_Features_ChartLegend_04.png)
+![{{ site.framework_name }} RadChart SeriesLabel Legend Display Mode](images/RadChart_Features_ChartLegend_04.png)
 
 ## Legend Positioning
 
@@ -215,7 +215,7 @@ Here is an example:
 	Me.radChart.DefaultView.ChartLegendPosition = Dock.Bottom
 {{endregion}}
     
-![](images/RadChart_Features_ChartLegend_05.png)
+![{{ site.framework_name }} RadChart Legend Positioning](images/RadChart_Features_ChartLegend_05.png)
 
 ## Legend Items Shape
 
@@ -253,7 +253,7 @@ Here is an example:
 	Me.radChart.DefaultView.ChartLegend.LegendItemMarkerShape = MarkerShape.StarFiveRay
 {{endregion}}
     
-![](images/RadChart_Features_ChartLegend_06.png)
+![{{ site.framework_name }} RadChart Legend Items Shape](images/RadChart_Features_ChartLegend_06.png)
 
 ## Reverse Legend Items Order
 

@@ -25,7 +25,7 @@ The RadWebCam control allows you to change the flip of the video feed from the a
 
 __Flipped Video__
 
-![](images/radwebcam-features-video-flip-0.png)
+![{{ site.framework_name }} RadWebCam Flipped Video](images/radwebcam-features-video-flip-0.png)
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

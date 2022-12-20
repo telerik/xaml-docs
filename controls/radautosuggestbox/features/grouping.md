@@ -88,7 +88,7 @@ The GroupStyle setting is required in order to visualize the group headers.
 	}
 {{endregion}}
 
-![](images/radautosuggestbox-features-grouping-0.png)
+![{{ site.framework_name }} RadAutoSuggestBox Grouping](images/radautosuggestbox-features-grouping-0.png)
 
 ## See Also  
  * [Getting Started]({%slug radautosuggestbox-getting-started%}) 

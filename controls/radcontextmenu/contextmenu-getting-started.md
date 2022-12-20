@@ -87,7 +87,7 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 If you run the application and right-click on the TextBox you will see an empty context menu.
 
 #### __Figure 1__
-![](images/RadContextMenu_Getting_Started_01.png)
+![{{ site.framework_name }} RadContextMenu with Empty Context Menu](images/RadContextMenu_Getting_Started_01.png)
 
 ## Add Menu Items
 
@@ -137,7 +137,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 Here is a snapshot of the result.
 
 #### __Figure 2__
-![](images/RadContextMenu_Getting_Started_02.png)
+![{{ site.framework_name }} RadContextMenu with Populated Context Menu](images/RadContextMenu_Getting_Started_02.png)
 
 ## Populating the RadContextMenu with Data
 

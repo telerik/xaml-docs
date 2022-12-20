@@ -10,7 +10,7 @@ position: 0
 
 # GestureManager
 
-__GestureManager__ is a utility class that exposes methods that allow management of the __TouchManager__'s gestures. _GestureManager__ stores all available gestures that can be performed via TouchManager and provides a mechanism to register new gestures and ensure their proper exectuion. 
+__GestureManager__ is a utility class that exposes methods that allow management of the __TouchManager__'s gestures. __GestureManager__ stores all available gestures that can be performed via TouchManager and provides a mechanism to register new gestures and ensure their proper exectuion. 
 
 __GestureManager__ exposes the following methods:
 

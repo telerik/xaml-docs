@@ -84,6 +84,7 @@ intro_columns:
       "ContextMenu": "contextmenu-overview1"
       "Menu": "radmenu-overview"
       "NavigationView (HamburgerMenu)": "radnavigationview-overview"
+      "OfficeNavigationBar": "radofficenavigationbar-overview"
       "OutlookBar": "radoutlookbar-overview"
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"

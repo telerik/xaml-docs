@@ -76,6 +76,7 @@ RadMenu	|	Telerik.Windows.Controls.Navigation
 RadNavigationView |	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadNotifyIcon | Telerik.Windows.Controls.Navigation
 RadNumericUpDown	|	Telerik.Windows.Controls.Input
+RadOfficeNavigationBar	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation
 RadOutlookBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadPanelBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadPdfProcessing	|	Telerik.Windows.Documents.Fixed, Telerik.Windows.Documents.Core, Telerik.Windows.Zip

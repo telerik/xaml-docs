@@ -104,6 +104,17 @@ The following table shows which data points are being used by the corresponding 
 		</tr>
 		<tr style="vertical-align:top;">
 			<td>
+				<strong>ScatterRangeDataPoint</strong>
+				<ul>
+					<li>ScatterRangeBarSeries</li>
+				</ul> 
+			</td>
+			<td/>
+			<td/>
+			<td/>
+		</tr>
+		<tr style="vertical-align:top;">
+			<td>
 				<strong>OhlcDataPoint</strong>
 				<ul>
 					<li>OhlcSeries</li>
@@ -184,6 +195,7 @@ Each different DataPoint inheritor implements properties that define the values 
 * [RangeDataPoint](#rangedatapoint)
 * [OhlcDataPoint](#ohlcdatapoint)
 * [ScatterDataPoint](#scatterdatapoint)
+* [ScatterRangePoint](#scatterrangedatapoint)
 * [ScatterBubbleDataPoint](#scatterbubbledatapoint)
 * [PieDataPoint](#piedatapoint)
 * [PolarDataPoint](#polardatapoint)
@@ -216,6 +228,12 @@ Additionally, the class exposes two properties that indicate whether the data po
 This data point model is used by the Cartesian chart series and it exposes two additional properties that define the position of the data point in the Cartesian coordinate system.
 
 The __XValue__ property defines the value of the data point on the horizontal axis. And the __YValue__ property defines the value of the data point on the vertical axis.
+
+## ScatterRangeDataPoint
+
+This data point model is used by the ScatterRangeBarSeries and it exposes few properties that define the position size span of the data point in the Cartesian coordinate system.
+
+The __HorizontalLow__ and __HorizontalHigh__ properties define the span of the data point on the horizontal axis. The __VerticalLow__ and __VerticalHigh__ properties define the span of the data point on the vertical axis.
 
 ## ScatterBubbleDataPoint
 

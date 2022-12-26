@@ -54,20 +54,20 @@ To bind the series to a collection of business objects, use its `ItemsSource` pr
 #### __[C#] Defining the data item model__  
 {{region radchartview-series-barseries-scatterrangebarseries-1}}
 	public class ScatterBarInfo
-    {
-        public double HorizontalLow { get; set; }
-        public double HorizontalHigh { get; set; }
-        public double VerticalLow { get; set; }
-        public double VerticalHigh { get; set; }
+	{
+		public double HorizontalLow { get; set; }
+		public double HorizontalHigh { get; set; }
+		public double VerticalLow { get; set; }
+		public double VerticalHigh { get; set; }
 
-        public ScatterBarInfo(double horizontalLow, double horizontalHigh, double verticalLow, double verticalHigh)
-        {
-            this.HorizontalLow = horizontalLow;
-            this.HorizontalHigh = horizontalHigh;
-            this.VerticalLow = verticalLow;
-            this.VerticalHigh = verticalHigh;
-        }
-    }
+ 		public ScatterBarInfo(double horizontalLow, double horizontalHigh, double verticalLow, double verticalHigh)
+		{
+			this.HorizontalLow = horizontalLow;
+			this.HorizontalHigh = horizontalHigh;
+			this.VerticalLow = verticalLow;
+			this.VerticalHigh = verticalHigh;
+		}
+	}
 {{endregion}}		
 
 #### __[C#] Populating with data__
@@ -89,11 +89,11 @@ To bind the series to a collection of business objects, use its `ItemsSource` pr
 #### __[XAML] Specifying ScatterRangeBarSeries in XAML and setting its binding properties__
 {{region radchartview-series-barseries-scatterrangebarseries-3}}
 	<telerik:ScatterRangeBarSeries x:Name="scatterRangeBarSeries" 
-								   HorizontalLowBinding="HorizontalLow" 
+				   HorizontalLowBinding="HorizontalLow" 
                                    HorizontalHighBinding="HorizontalHigh"
                                    VerticalLowBinding="VerticalLow"
                                    VerticalHighBinding="VerticalHigh"
-								   ItemsSource="{Binding}" />
+				   ItemsSource="{Binding}" />
 {{endregion}}
 	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.

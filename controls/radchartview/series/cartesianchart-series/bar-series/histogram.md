@@ -80,8 +80,7 @@ The `ChartHistogramSource` can work with one directional data (a list of `double
 
 		<telerik:RadCartesianChart Palette="Green">
 			<telerik:RadCartesianChart.HorizontalAxis>
-				<telerik:LinearAxis MajorStep="{Binding ElementName=histogramSource, Path=ActualInterval}"
-									TickOrigin="1" Maximum="30"/>
+				<telerik:LinearAxis MajorStep="{Binding ElementName=histogramSource, Path=ActualInterval}" TickOrigin="1" Maximum="30"/>
 			</telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:RadCartesianChart.VerticalAxis>
 				<telerik:LinearAxis />
@@ -108,10 +107,10 @@ The `ChartHistogramSource` can work with two dimensional data, where you can pro
 #### __[C#] Creating the data model__
 {{region radchartview-series-barseries-histogram-3}}
 	public class HistogramPlotInfo
-    {
-        public double Interval { get; set; }
-        public double Value { get; set; }
-    }
+    	{
+        	public double Interval { get; set; }
+        	public double Value { get; set; }
+    	}
 {{endregion}}
 
 #### __[C#] Preparing a collection of custom objects__
@@ -155,7 +154,7 @@ The `ChartHistogramSource` can work with two dimensional data, where you can pro
 	</Grid>
 {{endregion}}
 
-The default [aggreagte function](#changing-the-aggregate-function) when using a collection of custom objects is `Sum`. 
+The default [aggregаte function](#changing-the-aggregate-function) when using a collection of custom objects is `Sum`. 
 
 __Histogram with ChartHistogramSource and collection of custom objects__
 
@@ -168,10 +167,10 @@ The interval between the bars is calculated automatically. To set an explicit in
 #### __[XAML] Setting custom interval__
 {{region radchartview-series-barseries-histogram-6}}	
 	<telerik:ChartHistogramSource x:Name="histogramSource" 
-								  ValueBinding="Value" 
-								  IntervalValueBinding="Interval"
-								  ItemsSource="{Binding Items}"
-								  Interval="2"/>
+				      ValueBinding="Value" 
+				      IntervalValueBinding="Interval"
+				      ItemsSource="{Binding Items}"
+				      Interval="2"/>
 {{endregion}}
 
 __Histogram with manually defined interval__
@@ -185,10 +184,10 @@ By default the bars start drawing from the value of 0. To change this, set the `
 #### __[XAML] Setting custom origin value__
 {{region radchartview-series-barseries-histogram-6}}	
 	<telerik:ChartHistogramSource x:Name="histogramSource" 
-								  ValueBinding="Value" 
-								  IntervalValueBinding="Interval"
-								  ItemsSource="{Binding Items}"
-								  OriginValue="250"/>
+				      ValueBinding="Value" 
+				      IntervalValueBinding="Interval"
+				      ItemsSource="{Binding Items}"
+				      OriginValue="250"/>
 {{endregion}}
 
 __Histogram with custom origin value__
@@ -197,15 +196,15 @@ __Histogram with custom origin value__
 
 ### Setting the Histogram Orientation
 
-By default the bars will be arranged on the horizontal axis of the chart. This can be changed by setting the `Orientation` property of `ChartHistogramSource` to `Vertical`. This will arrange the bars on the vertical axis.
+By default, the bars will be arranged on the horizontal axis of the chart. This can be changed by setting the `Orientation` property of `ChartHistogramSource` to `Vertical`. This will arrange the bars on the vertical axis.
 
 #### __[XAML] Setting the histogram data orientation__
 {{region radchartview-series-barseries-histogram-7}}	
 	<telerik:ChartHistogramSource x:Name="histogramSource" 
-								  ValueBinding="Value" 
-								  IntervalValueBinding="Interval"
-								  ItemsSource="{Binding Items}"
-								  Orientation="Vertical"/>
+			     	      ValueBinding="Value" 
+				      IntervalValueBinding="Interval"
+				      ItemsSource="{Binding Items}"
+				      Orientation="Vertical"/>
 {{endregion}}
 
 __Histogram with vertical orientation__
@@ -221,20 +220,20 @@ The aggregate function can be changed by overridding the `GetValueAggregateFunct
 #### __[C#] Replacing the aggregate function__
 {{region radchartview-series-barseries-histogram-8}}	
 	public class CustomChartHistogramSource : ChartHistogramSource
-    {
-        protected override ChartAggregateFunction GetValueAggregateFunction()
-        {
-            return new ChartCountFunction();
-        }
+	{
+        	protected override ChartAggregateFunction GetValueAggregateFunction()
+        	{
+            		return new ChartCountFunction();
+        	}
     }
 {{endregion}}
 
 #### __[XAML] Using the custom histogram source__
 {{region radchartview-series-barseries-histogram-9}}	
 	<local:CustomChartHistogramSource x:Name="histogramSource" 
-									  ValueBinding="Value" 
-									  IntervalValueBinding="Interval"
-									  ItemsSource="{Binding Items}"/>
+					  ValueBinding="Value" 
+					  IntervalValueBinding="Interval"
+					  ItemsSource="{Binding Items}"/>
 {{endregion}}
 
 __Histogram with count aggregate function__

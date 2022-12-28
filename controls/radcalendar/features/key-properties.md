@@ -10,7 +10,7 @@ position: 0
 
 # Key Properties
 
-The purpose of this help article is to show you the key properties of the __RadCalendar__ control. The topic includes the following sections:
+The purpose of this help article is to show you the key properties of the `RadCalendar` control. The topic includes the following sections:
 
 * [Selection Properties](#selection-properties)
 * [Styling the Different Views](#styling-the-different-views)
@@ -18,21 +18,18 @@ The purpose of this help article is to show you the key properties of the __RadC
 
 ## Selection Properties
 
-* __SelectionMode__: This property defines how many dates can be selected at once. The possible values are __Single__, __Extended__ and __Multiple__. The default value is __Single__.  
-
-* __SelectedDate__: Gets or sets the currently selected date. If the SelectionMode is set to Multiple or Extended, returns the first date from the SelectedDates.
-* __SelectedDates__: Gets the currently selected dates. Useful when the SelectionMode is set to Multiple or Extended.  
-
-* __SelectableDateStart__: Gets or sets the first date that can be selected.
-* __SelectableDateEnd__: Gets of sets the last date that can be selected.
-
-* __BlackoutDates__: Gets or sets a collection of dates that cannot be selected
+* `SelectionMode`&mdash;This property defines how many dates can be selected at once. The possible values are `Single`, `Extended` and `Multiple`. The default value is `Single`.  
+* `SelectedDate`&mdash;Gets or sets the currently selected date. If the SelectionMode is set to Multiple or Extended, returns the first date from the SelectedDates.
+* `SelectedDates`&mdash;Gets the currently selected dates. Useful when the SelectionMode is set to Multiple or Extended.  
+* `SelectableDateStart`&mdash;Gets or sets the first date that can be selected.
+* `SelectableDateEnd`&mdash;Gets of sets the last date that can be selected.
+* `BlackoutDates`&mdash;Gets or sets a collection of dates that cannot be selected.
 
 ## Setting the Current Display Date
 
-* __DisplayDate__: This property allows you to set the current visible date. This is the date which will be displayed when you show the calendar.
+The `DisplayDate` property allows you to set the current visible date. This is the date which will be displayed when you show the calendar.
 
-#### __[XAML] Example 1: Setting DisplayDate__
+#### __[XAML] Setting DisplayDate__
 {{region xaml-radcalendar-keyproperties-0}}
 	<telerik:RadCalendar DisplayDate="4/1/2018"/>
 {{endregion}}
@@ -43,21 +40,21 @@ The purpose of this help article is to show you the key properties of the __RadC
 
 You can apply a style to the different modes through the following properties:
 
-* __MonthViewStyle__: Gets or sets the style for the month calendar view.
-* __YearViewStyle__: Gets or sets the style for the year calendar view.
-* __DecadeViewStyle__: Gets or sets the style for the decade calendar view.
-* __CenturyViewStyle__: Gets or sets the style for the century calendar view.
+* `MonthViewStyle`&mdash;Gets or sets the style for the month calendar view.
+* `YearViewStyle`&mdash;Gets or sets the style for the year calendar view.
+* `DecadeViewStyle`&mdash;Gets or sets the style for the decade calendar view.
+* `CenturyViewStyle`&mdash;Gets or sets the style for the century calendar view.
 
 ## Formatting the Headers
 
 You can apply a string format to the header of the different views through the following properties:
 
-* __MonthViewHeaderFormat__: Gets or sets the format for the header of the month view of the calendar.
-* __DecadeViewHeaderFormat__: Gets or sets the format for the header of the decade view of the calendar.
-* __YearViewHeaderFormat__: Gets or sets the format for the header of the year view of the calendar.
-* __CenturyViewHeaderFormat__: Gets or sets the format for the header of the century view of the calendar.
+* `MonthViewHeaderFormat`&mdash;Gets or sets the format for the header of the month view of the calendar.
+* `DecadeViewHeaderFormat`&mdash;Gets or sets the format for the header of the decade view of the calendar.
+* `YearViewHeaderFormat`&mdash;Gets or sets the format for the header of the year view of the calendar.
+* `CenturyViewHeaderFormat`&mdash;Gets or sets the format for the header of the century view of the calendar.
 
-#### __[XAML] Example 2: Setting MonthViewHeaderFormat__
+#### __[XAML] Setting MonthViewHeaderFormat__
 {{region xaml-radcalendar-keyproperties-1}}
 	<telerik:RadCalendar MonthViewHeaderFormat="MMMM" />
 {{endregion}}
@@ -66,8 +63,17 @@ You can apply a string format to the header of the different views through the f
 
 ## Controling the MoveRight and MoveLeft Buttons Visibility
 
-* __PreviousButtonVisibility__: Gets or sets the visibility of the __MoveLeft__ button.
-* __NextButtonVisibility__: Gets or sets the visibility of the __MoveRight__ button.
+* `PreviousButtonVisibility`&mdash;Gets or sets the visibility of the __MoveLeft__ button.
+* `NextButtonVisibility`&mdash;Gets or sets the visibility of the __MoveRight__ button.
+
+## Controling the Highlighting of the Today's Date
+
+The `IsTodayHighlighted` property allows you to control if the today's date is highlighted. Its default value is __true__. Setting this property to __false__ will remove the highlight border that is displayed on today's date.
+
+#### __[XAML] Removing the highlight of today's date__
+{{region xaml-radcalendar-keyproperties-2}}
+	<telerik:RadCalendar IsTodayHighlighted="False"/>
+{{endregion}}
 
 ## See Also
 * [Selection Modes]({%slug radcalendar-selection-modes%})

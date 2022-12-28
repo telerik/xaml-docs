@@ -209,5 +209,5 @@ __RadOfficeNavigationBarItems with custom ContentTemplateSelector__
 
 ## See Also
 * [Drag and Drop]({%slug radofficenavigationbar-drag-drop%})
-* [View Modes]({%slug radofficenavigationbar-view-modes%})
+* [Display Modes]({%slug radofficenavigationbar-display-modes%})
 * [Peek Popup]({%slug radofficenavigationbar-peek-popup%})

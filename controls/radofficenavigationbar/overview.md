@@ -23,7 +23,7 @@ The OfficeNavigationBar component is inspired by the MS Outlook Navigation Bar. 
 
 ## Key Features
 
-* __View modes__&mdash;The OfficeNavigationBar component provides two view modes, which are __Compact__ and __Full__. Read more about these modes in the [View Modes]({%slug radofficenavigationbar-view-modes%}) article.
+* __Display modes__&mdash;The OfficeNavigationBar component provides two display modes, which are __Compact__ and __Full__. Read more about these modes in the [View Modes]({%slug radofficenavigationbar-view-modes%}) article.
 
 * __Navigation options window__&mdash;The navigation options window allows you to control the order of the items, the maximum number of visible items, and the current view mode. 
 

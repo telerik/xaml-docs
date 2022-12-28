@@ -182,7 +182,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
     </Application.Resources>
 {{endregion}}
 
->Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+>Alternatively, you can use the theme of the control via the[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 
 The following image shows a RadOfficeNavigationBar with the __Windows8__ theme applied.
 
@@ -195,4 +195,4 @@ __RadOfficeNavigationBar with the Windows8 theme__
 * [Drag and Drop]({%slug radofficenavigationbar-drag-drop%})
 * [Navigation Options]({%slug radofficenavigationbar-navigation-options%})
 * [Peek Popup]({%slug radofficenavigationbar-peek-popup%})
-* [View Modes]({%slug radofficenavigationbar-view-modes%})
+* [Display Modes]({%slug radofficenavigationbar-display-modes%})

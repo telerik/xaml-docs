@@ -36,4 +36,4 @@ __RadOfficeNavigationBar with enabled drag and drop functionality__
 ## See Also
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})
 * [Peek Popup]({%slug radofficenavigationbar-peek-popup%}})
-* [View Modes]({%slug radofficenavigationbar-view-modes%})
+* [Display Modes]({%slug radofficenavigationbar-display-modes%})

@@ -14,7 +14,7 @@ The distinct values column filter displays only the first `1000` items by defaul
 
 __The distinct values filter__  
 
-![A picture show the distinct values filter in the column's FilteringControl](images/gridview-filtering-customizing-distinct-values-0.png)
+![A picture that shows the distinct values filter in the column's FilteringControl](images/gridview-filtering-customizing-distinct-values-0.png)
 
 ## Changing the Distinct Values Limit
 
@@ -27,7 +27,7 @@ To change the default value of maximum `1000` distinct values loaded into the fi
 
 ## Using the DistinctValuesLoading Event
 
-The `DistinctValuesLoading` event of `RadGridView` is fired each time the filtering control popup of a column is about to get displayed. The event should be used solely for controlling the number of distinct values that the user will see. The original distinct values can't be replaces with different type of data, because this will break the filtering engine.
+The `DistinctValuesLoading` event of `RadGridView` is fired each time the filtering control popup of a column is about to get displayed. The event should be used solely for controlling the number of distinct values that the user will see. The original distinct values can't be replaced with different type of data, because this will break the filtering engine.
 
 To change the number or filter the distinct values that are displayed, use the `ItemsSource` property of the event arguments. To get the proper distinct values, use the `GetDistinctValues` method of `RadGridView`. The method has two overloads, that allows you to provide the distinct values limit (1000 by default) and to tell if the items that are filtered out by other filters should be included in the query.
 
@@ -57,7 +57,7 @@ To change the number or filter the distinct values that are displayed, use the `
 
 ## Displaying Case Insensitive Distinct Values
 
-By default, the distinct values are case sensitive. In order to populate them case insensitive and then filter on them, use the `Filtered` and `DistinctValuesLoading` events of `RadGridView`.
+By default, the distinct values are case-sensitive. In order to populate them case-insensitive and then filter on them, use the `Filtered` and `DistinctValuesLoading` events of `RadGridView`.
 		
 #### __[C#] Setting up the distinct filter to show case insensitive values__
 {{region gridview-filtering-customizing-distinct-values-3}}
@@ -79,7 +79,7 @@ By default, the distinct values are case sensitive. In order to populate them ca
 
 ## Optimizing Distinct Filter Query
 
-By default, the distinct filtering uses a condition of the form 'Member IsEqualTo Value' for each distinct value selected. Then, all such conditions are combined with the OR operator. When the amount of distinct values checked grows, the query might become very slow. The optimize the LINQ query used to filter the data, thus improving the performance, set the `OptimizeDistinctFilterQuery` property of the assosicated __GridViewColumn__. 
+By default, the distinct filtering uses a condition of the form 'Member IsEqualTo Value' for each distinct value selected. Then, all such conditions are combined with the OR operator. When the amount of distinct values checked grows, the query might become very slow. To optimize the LINQ query used to filter the data, thus improving the performance, set the `OptimizeDistinctFilterQuery` property of the assosicated __GridViewColumn__. 
 
 When the optimization is enabled, the GridView will check the amount of distinct values checked. If this amount is less than or equal to half of all distinct values, the original query will be generated. If, however, the amount of distinct values checked is more than half of all distinct values, an inverted statement like this will be generated: (Member IsNotEqualTo uncheckedDistinctValue_0) ... AND ... (Member IsNotEqualTo uncheckedDistinctValue_N). If absolutely all distinct values are checked, then no statement will be generated at all, because this effectively means that there is no filter applied. Setting the property to `true` will try to generate the shortest possible LINQ Where clause.
 

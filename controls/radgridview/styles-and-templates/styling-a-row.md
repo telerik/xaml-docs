@@ -52,7 +52,7 @@ You have two options:
 
 ## Setting RadGridView's RowStyle and AlternateRowStyle
 
-`RadGridView` exposes the `RowStyle` and `AlternateRowStyle` properties of type __Style__. `GridViewRow` elements can be styled by providing an appropriate style for each of these properties.
+`RadGridView` exposes the `RowStyle` and `AlternateRowStyle` properties of type `Style`. `GridViewRow` elements can be styled by providing an appropriate style for each of these properties.
 
 > In order to use the `AlternateRowStyle`, you should first set the `AlternationCount` property of your RadGridView. For example, if you want to alternate each second row, you have to set its value to 2.
 
@@ -82,8 +82,6 @@ You have two options:
 #### __RadGridView with styled rows__
 
 ![Telerik {{ site.framework_name }} DataGrid-styled-row-and-alternate-row](images/gridview-styled-row-and-alternaterow.png)
-
-#### __Applying 
 
 ## Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector
 

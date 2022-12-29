@@ -75,8 +75,8 @@ You have two options:
 #### __[XAML] Applying styles to the RowStyle and AlternateRowStyle properties__
 {{region xaml-gridview-styling-row-3}}
 	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
-						 AlternationCount="2"
-						 AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
+			     AlternationCount="2"
+			     AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
 {{endregion}}
 
 #### __RadGridView with styled rows__

@@ -10,13 +10,13 @@ position: 2
 
 # RadChart vs. RadChartView
 
-Since Q3 2011 we ship two separate charting controls - __RadChart__ and __RadChartView__. __RadChart__ allows you to visualize interactive, rich, animated charts and enables the end users to analyze complex data. It provides rich and mature functionality that covers a large spectrum of use cases.			
+Since Q3 2011 we ship two separate charting components - __RadChart__ and __RadChartView__. __RadChart__ allows you to visualize interactive, rich, animated charts and enables the end users to analyze complex data. It provides rich and mature functionality that covers a large spectrum of use cases.			
 
-On the other hand, __RadChartView__ is a control that addresses some of the limitations and deficiencies that we have identified in the RadChart implementation over the years. Our [Overview]({%slug radchartview-overview%}) topic can walk you through all specifics of the __RadChartView__ control.			
+On the other hand, __RadChartView__ addresses some of the limitations and deficiencies that we have identified in the RadChart implementation over the years. __RadChartView__ is the code-name of a suite that consists of [4 charting controls]({%slug radchartview-chart-types%}) - __RadCartesianChart__, __RadPolarChart__, __RadPieChart__ and __RadFunnelChart__. The [Overview]({%slug radchartview-overview%}) topic can walk you through all specifics of __RadChartView__. 
 
-This help topic aims to compare the two controls and get you familiar with what you need to know when migrating from __RadChart__ to __RadChartView__.			
+This help topic aims to compare the two components and get you familiar with what you need to know when migrating from __RadChart__ to __RadChartView__.		
 
->Generally we would encourage you to use the new __ChartView__ control for any new project development that you are starting now. For the purpose, you need to use the new **Telerik.Windows.Controls.Chart.dll** instead of the old Telerik.Windows.Controls.Charting.dll. As for your existing applications - the migration is possible but there is no straightforward migration path between __RadChart__ and __RadChartView__ due to the different approach taken in the development of __RadChartView__.				
+>Generally we would encourage you to use the new __ChartView__ control for any new project development that you are starting now. For the purpose, you need to use the new **Telerik.Windows.Controls.Chart.dll** instead of the old Telerik.Windows.Controls.Charting.dll. As for your existing applications - the migration is possible but there is no straightforward migration path between __RadChart__ and __RadChartView__ due to the different approach taken in the development of __RadChartView__.
 
 ## Highlights of features and functionality
 
@@ -26,15 +26,15 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 * We have a custom property store used within the charting logical tree. It is about 5 times faster than DependencyObject in look-up time and consumes about 3 times less memory.								
 
-* We have an entirely custom layout and do not rely on the XAML layout system to arrange our charting view models.								
+* We have an entirely custom layout and do not rely on the XAML layout system to arrange our charting view models.
 
-* We have a stand-alone visualization layer that presents the chart view model. Every view model is presented by the simplest possible SL visual – e.g. __Rectangle__, __Line__, __Polyline__, etc. Still, every single aspect is fully customizable by specifying __DataTemplates__ or __Styles__.								
+* We have a stand-alone visualization layer that presents the chart view model. Every view model is presented by the simplest possible SL visual – e.g. __Rectangle__, __Line__, __Polyline__, etc. Still, every single aspect is fully customizable by specifying __DataTemplates__ or __Styles__.
 
 * We use __Canvas__ – the only XAML panel that does not invalidate measure automatically. When a redraw of some charting part is required, we simply update the __Width__, __Height__, __Canvas.Left__, and __Canvas.Top__ properties of the corresponding visual. A simple test proved that calling __InvalidateMeasure__ of the canvas upon a change in the ViewModel degrades performance about 10 times.								
 
-##### 2. __Architecture__- a number of chart controls built for a specific purpose vs one monolith control (provides cleaner, simpler, and relevant API)						
+##### 2. __Architecture__- a number of chart controls built for a specific purpose vs one monolith control (provides cleaner, simpler, and relevant API)
 
-* __DataBinding__ - The presentation of the data itself in both controls is achieved by declaring chart series and filling these series with data points. The significant difference is that in __RadChartView__ the chart __Series__ utilize different visualization techniques based on the data points it represents. This is why in __RadChartView__ the Series expose an __ItemsSource__ property which has to be used to populate each __Series__ with data.								
+* __DataBinding__ - The presentation of the data itself in both controls is achieved by declaring chart series and filling these series with data points. The significant difference is that in __RadChartView__ the chart __Series__ utilize different visualization techniques based on the data points it represents. This is why in __RadChartView__ the Series expose an __ItemsSource__ property which has to be used to populate each __Series__ with data.
 
 * __Axes__
 
@@ -54,15 +54,15 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 * __Series__ - __RadChartView__ supports almost all [Series]({%slug radchartview-series-chartseries%}) types known from __RadChart__ to help you create rich, visually-appealing presentations. However, there are several new features added:								
 
-	* Financial Indicators - __RadChartView__ supports 20 of the most common financial indicators to complement the data visualization for all Cartesian Series types.										
+	* Financial Indicators - __RadChartView__ supports 20 of the most common financial indicators to complement the data visualization for all Cartesian Series types.
 
-	* Polar and Radar Series - two-dimensional charts presented in radial plot area in polar coordinates.										
+	* Polar and Radar Series - two-dimensional charts presented in radial plot area in polar coordinates.
 
-	* Combined Series - uniform __RadCartesianChart Series__ can be combined in either __Stacks__ or __Clusters__. Combinations are formed when multiple __DataPoints__ from different __Series__ fall within the same category. You can read more about this in the [Chart Series]({%slug radchartview-series-chartseries%}) topic.										
+	* Combined Series - uniform __RadCartesianChart Series__ can be combined in either __Stacks__ or __Clusters__. Combinations are formed when multiple __DataPoints__ from different __Series__ fall within the same category. You can read more about this in the [Chart Series]({%slug radchartview-series-chartseries%}) topic.
 
 	* Series Orientation - both controls allow you to have horizontally or vertically oriented series. However, while in __RadChart__ you have to specify different series types - __BarSeriesDefinition__ vs. __HorizontalBarSeriesDefinition__, in __RadChartView__ this concept is changed to facilitate the usage of horizontal and vertical series. For instance, in order to display __BarSeries__ vertically in a __RadChartView__, you only need to set the __CategoricalAxis__ as a __Y-axis__ without having to change the series definition.
 
-	All supported __RadChartView Series__ types are presented in the [Series Overview]({%slug radchartview-series-chartseries%}) topic.								
+	All supported __RadChartView Series__ types are presented in the [Series Overview]({%slug radchartview-series-chartseries%}) topic.
 
 	* __Chart Legend__ - __RadChartView__ does not ship with a built-in legend. However, you can easily integrate the __RadLegend__ control in it. [Read More]({%slug radchartview-features-radlegend-support%})
 
@@ -70,11 +70,11 @@ This help topic aims to compare the two controls and get you familiar with what 
 
 * [TrackBall Behavior]({%slug radchartview-features-trackball%}) (or also known as a current value indicator) is a behavior available only within the __RadChartView__. It displays a vertical line across the charting plot area that comes with visual indicators (circles by default) at the points where the trackball line crosses the visualization of a __Series__ objects.								
 
-* [Selection]({%slug radchartview-features-selection%}) - this behavior exposes a *SelectionChanged* event that you can use to easily determine the __DataPoint__ that is selected and the __Series__ it belongs to. The behavior is available in both __RadChart__ and __RadChartView__ controls.								
+* [Selection]({%slug radchartview-features-selection%}) - this behavior exposes a *SelectionChanged* event that you can use to easily determine the __DataPoint__ that is selected and the __Series__ it belongs to. The behavior is available in both __RadChart__ and __RadChartView__ controls.
 
 * [Scroll and Zoom]({%slug radchartview-features-panzoom%}) - this behavior is available in both __RadChart__ and __RadChartView__ controls. It allows horizontal and vertical zooming and scrolling. However, the approach implemented in the __RadChartView ZoomScroll__ behavior is brand new and it allows users to simultaneously set the zoom factor for both the X and Y axes.								
 
-* [Tooltip]({%slug radchartview-features-tooltip%}) - Although both charting controls support tooltips, only the Tooltip behavior implemented within the __RadChartView__ component allows you to specify the placement and the offset of the tooltip thus further controlling where it should be visualized.								
+* [Tooltip]({%slug radchartview-features-tooltip%}) - Although both charting controls support tooltips, only the Tooltip behavior implemented within the __RadChartView__ component allows you to specify the placement and the offset of the tooltip thus further controlling where it should be visualized.
 
 ##### 4. __Sampling__ 
 
@@ -82,18 +82,18 @@ When the chart is populated with thousands of business items, the visual represe
 
 ##### 5. __Appearance__. 
 
-Unline RadChart, the __RadChartView__ control comes with a built-in set of palettes which you can use to easily customize the look and feel of your charting components. You can examine and try all available palettes in the {% if site.site_name == 'Silverlight' %}[Appearance example](https://demos.telerik.com/silverlight/#ChartView/Palettes){% endif %}{% if site.site_name == 'WPF' %}[Appearance example](https://demos.telerik.com/wpf/#ChartView/Palettes) after navigating to the __ChartView__ control, in the *Overview* section{% endif %}.						
+Unline RadChart, the __RadChartView__ control comes with a built-in set of palettes which you can use to easily customize the look and feel of your charting components. You can examine and try all available palettes in the {% if site.site_name == 'Silverlight' %}[Appearance example](https://demos.telerik.com/silverlight/#ChartView/Palettes){% else %}[Appearance example](https://demos.telerik.com/wpf/#ChartView/Palettes) after navigating to the __ChartView__ control, in the *Overview* section{% endif %}.
 
 ## Features with no equivalent in RadChartView
 
->The information is up-to-date as for R3 2016. The list of features will change with our next releases.					
+>The information is up-to-date as for R3 2022 SP1. The list of features may change with our next releases.					
 
 1. Sorting/Filtering
 2. Hierarchical Data Support*
 3. ChartTitle
 4. All 3D series types
 
-> *Currently __RadChartView__ provides partial support for Hierarchical Data through the [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) feature.					
+> *Currently __RadChartView__ provides partial support for Hierarchical Data through the [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) feature.	
 
 <!-- -->
 

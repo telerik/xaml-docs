@@ -39,20 +39,20 @@ An easier approach would be to use `ICollectionView` implementation that works w
 	#### __[C#] Setting up the data__
 	{{region radlistbox-sorting-1}}	
 		public MainWindow()
-        {            
-            InitializeComponent();
+        	{            
+            		InitializeComponent();
 			
 			var r = new Random(0);
-            var source = new ObservableCollection<ItemInfo>();            
-            for (int i = 0; i < 6; i++)
-            {
-                source.Add(new ItemInfo() { Label = "Item " + i, Number = r.Next(10, 100) });
-            }
+            		var source = new ObservableCollection<ItemInfo>();            
+            		for (int i = 0; i < 6; i++)
+            		{
+                		source.Add(new ItemInfo() { Label = "Item " + i, Number = r.Next(10, 100) });
+            		}
 
-            var qcv = new QueryableCollectionView(source);            
-            qcv.SortDescriptors.Add(new SortDescriptor() { Member = "Number", SortDirection = ListSortDirection.Descending });
-            this.listBox.ItemsSource = qcv;
-        }
+            		var qcv = new QueryableCollectionView(source);            
+            		qcv.SortDescriptors.Add(new SortDescriptor() { Member = "Number", SortDirection = ListSortDirection.Descending });
+            		this.listBox.ItemsSource = qcv;
+        	}
 	{{endregion}}
 
 1. Setup the RadListBox.

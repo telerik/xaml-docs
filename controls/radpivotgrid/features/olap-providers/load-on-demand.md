@@ -12,7 +12,7 @@ position: 7
 
 The load on demand feature allows you to fetch the needed data only when the associated group gets expanded.
 
-By default the __OLAP__ data providers (`XmlaDataProvider` and `AdomdDataProvider`) will pre-load all the data from the associated cube and display it in the __PivotGrid__. To change this behavior, set the `EnableLoadOnDemand` property of the data provider to `true`. In that case, all groups will be collapsed initially and only the data that should be displayed at this state is fetched from the cube. On expand of a group (on demand), its data will be loaded from the source and displayed in the view.
+By default the __OLAP__ data providers (`XmlaDataProvider` and `AdomdDataProvider`) will pre-load all the data from the associated cube and display it in the __PivotGrid__. To change this behavior, set the `EnableLoadOnDemand` property of the data provider to `true`. In that case, all groups will be collapsed initially and only the data that should be displayed at this state is fetched from the cube. On expand of a group (on demand), a new query is generated to load the data for the currently expanded groups.
 
 #### __[XAML]__
 {{region radpivotgrid-features-load-on-demand-0}}

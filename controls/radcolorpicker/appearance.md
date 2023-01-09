@@ -43,9 +43,9 @@ To change the palette header text contents, set the `MainPaletteHeaderText`, `St
 #### __[XAML]__
 {{region radcolorpicker-appearance-2}}
 	<telerik:RadColorPicker MainPaletteHeaderText="Main Palette"
-							StandardPaletteHeaderText="Standard Palette"
-							RecentColorsHeaderText="Recent Colors"
-							IsRecentColorsActive="true"/>
+				StandardPaletteHeaderText="Standard Palette"
+				RecentColorsHeaderText="Recent Colors"
+				IsRecentColorsActive="true"/>
 {{endregion}}
 
 ![A picture showing RadColorPicker with custom palette header texts](images/radcolorpicker-appearance-2.png)

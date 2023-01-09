@@ -6,16 +6,14 @@ slug: radcolorpicker-overview
 tags: overview
 published: True
 position: 0
-CTAControlName: AutoComplete
+CTAControlName: ColorPicker
 ---
 
 # Overview
 
-Thank you for choosing __RadColorPicker!__
-
 {% if site.site_name == 'Silverlight' %}![Color PickerSL](images/ColorPickerSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color PickerWPF](images/ColorPickerWPF.png){% endif %}
 
-__RadColorPicker__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} is a lightweight UI component that allows users to select colors from predefined Color Presets or from bound lists of custom colors. It can be used to easily format a Control's text or background.
+__RadColorPicker__ for {{site.framework_name}} is a lightweight UI component that allows users to select colors from predefined Color Presets or from bound lists of custom colors. It can be used to easily format a Control's text or background.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -25,11 +23,11 @@ __RadColorPicker__ for {% if site.site_name == 'Silverlight' %}Silverlight{% end
 
 * __Display multiple color palettes__: You can choose how many color palettes to display. Check out the [Appearance]({%slug radcolorpicker-appearance%}) article for more information.
 
-* __Populate the control with custom colors__: Add your own colors easily in an MVVM scenario. Find out more in the [Populate ColorPicker with Business Data]({%slug radcolorpicker-howto-binding-to-object%}) article. 
+* __Populate the control with custom colors__: Add your own colors easily in an MVVM scenario. Find out more in the [Populate ColorPicker with Business Data]({%slug radcolorpicker-data-binding%}) article. 
 
 * __Show recent colors__: Include a recent colors palette for colors which are not part of the other palettes. Read more about that in the [Use IsRecentColorsActive property]({%slug radcolorpicker-howto-use-isrecentcolorsactive%}).
 
-* __Set custom button content__: Change the content of the RadColorPicker button with its __ContentTemplate__ property. Find out more in the [Set Custom Content]({%slug radcolorpicker-how-to-set-custom-content%}) article.
+* __Set custom button content__: Change the content of the RadColorPicker button with its __ContentTemplate__ property. Find out more in the [Set Custom Content]({%slug radcolorpicker-appearance%}) article.
 
 * __Command property__: You can easily react to user interaction with a command from the ViewModel. Check out the [Commands]({%slug radcolorpicker-commands%}) article for more information.
 
@@ -39,7 +37,7 @@ __RadColorPicker__ for {% if site.site_name == 'Silverlight' %}Silverlight{% end
 
 >tip Get started with the control with its [Getting Started]({%slug radcolorpicker-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the examples at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#ColorPicker/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}.
+> Check out the examples at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#ColorPicker/FirstLook){% else %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}.
 
 ## See also 
 

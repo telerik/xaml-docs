@@ -12,7 +12,7 @@ position: 7
 
 The __Calculator__ component supports all native clear functionality the end user is accustomed with.		  
 
-![A picture showing RadCalculator with its clear value buttons higlighted](image/radcalculator-clearfunctionality-buttons.png)
+![A picture showing RadCalculator with its clear value buttons higlighted](images/radcalculator-clearfunctionality-buttons.png)
 
 * __Delete (&larr;)__&mdash;Deletes the last digit from the displayed number.
 

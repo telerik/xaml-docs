@@ -16,19 +16,14 @@ This article defines the terms and concepts used in the scope of the `RadCalcula
 			  
 ![Rad Calculator-Visual Structure](images/RadCalculator-VisualStructure.png)
 
-* __Memory Status__&mdash;Defines whether you have a value stored in the Memory or not.
-				  
+* __Memory Status__&mdash;Defines whether you have a value stored in the Memory or not.				  
 
-* __History__&mdash;Displays chronically the operations you have done;
-				  
+* __History__&mdash;Displays chronically the operations you have done.  
 
-* __Currently Calculated Value__&mdash;Displays the calculated value at the moment;
-				  
+* __Currently Calculated Value__&mdash;Displays the calculated value at the moment.				  
 
-* __Memory Buttons__&mdash;A set of buttons saving/calling the displayed value in/from the memory;
-				  
+* __Memory Buttons__&mdash;A set of buttons saving/calling the displayed value in/from the memory.				  
 
-* __Clear Buttons__&mdash;A set of buttons enabling you to clear a part of the displayed value, the currently calculated one or all of the operations executed so far;
-				  
+* __Clear Buttons__&mdash;A set of buttons enabling you to clear a part of the displayed value, the currently calculated one or all of the operations executed so far.				  
 
-* __Functional Buttons__&mdash;A set of buttons performing different calculations;
+* __Functional Buttons__&mdash;A set of buttons performing different calculations.

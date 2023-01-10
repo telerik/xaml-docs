@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Grouping Support
+# {{ site.framework_name }} RadPropertyGrid Grouping Support
 
 RadPropertyGrid supports grouping. Its __IsGrouped__ property controls the current RadPropertyGrid's state. You can set it to __true__ and you will have RadPropertyGrid __initially grouped__. If you set it to __false__, then you will have RadProperty __sorted__. By default the control is shown as sorted.
 

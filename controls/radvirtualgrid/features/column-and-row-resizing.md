@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Column and Row Resizing
+# {{ site.framework_name }} RadVirtualGrid Column and Row Resizing
 
 By default, __RadVirtualGrid__ will enable resizing of its columns and disable resizing of the rows.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Page Size
+# {{ site.framework_name }} RadDataPager Page Size
 
 >tip If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
 

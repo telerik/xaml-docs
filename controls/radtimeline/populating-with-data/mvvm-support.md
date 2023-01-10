@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# MVVM support
+# {{ site.framework_name }} RadTimeline MVVM support
 
 The __RadTimeline__ control can be used with great success with the Model-View-ViewModel (MVVM) pattern. This help topic will demonstrate how to bind the control with the pattern.
 

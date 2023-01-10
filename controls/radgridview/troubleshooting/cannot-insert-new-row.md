@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Cannot insert new row
+# {{ site.framework_name }} RadGridView Cannot insert new row
 
 Adding new items for RadGridView is done via the GridViewNewRow control when the __Insert key__ is pressed. It should appear in the form of an empty row that allows you to enter a value for the field of each column.
       

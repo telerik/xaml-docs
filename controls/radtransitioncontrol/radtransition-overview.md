@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadTransitionControl
 ---
 
-# Overview
+# {{ site.framework_name }} RadTransitionControl Overview
 
 Thank you for choosing Telerik __RadTransitionControl__!
 

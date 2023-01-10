@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Reload Data
+# {{ site.framework_name }} RadPropertyGrid Reload Data
 
 As of **R3 2016**, through the new **ReloadData** method you can refresh RadPropertyGrid's data engine - reload the set of **PropertyDefinitions**, reload the list of item properties and recreate the **PropertySetViewModel**, if **PropertySetMode** is different from **None**.
 

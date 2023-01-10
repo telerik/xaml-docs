@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Docx
+# {{ site.framework_name }} RadRichTextBox Docx
 
 Docx, a part of [Office Open XML](http://en.wikipedia.org/wiki/Office_Open_XML), is a zipped, XML-based file format developed by Microsoft for representing word processing document and is one of the supported formats by __RadRichTextBox__. It is the default target format for Microsoft Word since Microsoft Office 2007.
       

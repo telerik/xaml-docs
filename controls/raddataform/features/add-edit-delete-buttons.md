@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Add, Edit and Delete Operations
+# {{ site.framework_name }} RadDataForm Add, Edit and Delete Operations
 
 This article explains when the add, edit and remove operations of **RadDataForm** are available. We will cover the operations in the following order: 
 

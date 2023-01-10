@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Sticky Group Headers
+# {{ site.framework_name }} RadGridView Sticky Group Headers
 
 By default, RadGridView's group headers will go out of view once you scroll past them as illustrated in **Figure 1**.
 

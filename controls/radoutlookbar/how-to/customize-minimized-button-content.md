@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to Customize the Minimized Button Content
+# {{ site.framework_name }} RadOutlookBar How to Customize the Minimized Button Content
 
 __RadOutlookBar__ exposes two properties that can be used to customize its __Minimized Button__ (the button that is displayed when the control is minimized).
 

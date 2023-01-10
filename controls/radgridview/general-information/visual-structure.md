@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadGridView Visual Structure
 
 This section defines terms and concepts used in the scope of __RadGridView__ you have to get familiar with prior to continue reading this help.
 

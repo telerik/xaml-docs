@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Row Details
+# {{ site.framework_name }} RadTreeListView Row Details
 
 
 

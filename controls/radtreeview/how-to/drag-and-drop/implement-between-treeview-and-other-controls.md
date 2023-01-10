@@ -8,7 +8,7 @@ published: False
 position: 0
 ---
 
-# Implement Drag and Drop Between TreeView and GridView
+# {{ site.framework_name }} RadTreeView Implement Drag and Drop Between TreeView and GridView
 
 The goal of this tutorial is to show you how to implement drag and drop between __RadTreeView__ and __RadGridView__.	  
 

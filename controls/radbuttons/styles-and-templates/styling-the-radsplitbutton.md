@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Styling the RadSplitButton
+# {{ site.framework_name }} RadButtons Styling the RadSplitButton
 
 The __RadSplitButton__ can be styled by creating an appropriate __Style__ (or use Implicit Style) and setting it to the __Style__ property of the control. 
 

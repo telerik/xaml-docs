@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# RadialMenuItems
+# {{ site.framework_name }} RadRadialMenu RadialMenuItems
 
 __RadRadialMenuItem__ is the item type in __RadRadialMenu__. It is used for the top-level menu and each __RadialMenuItem__ can have other RadialMenuItems as children in order to create sub-menus.
 

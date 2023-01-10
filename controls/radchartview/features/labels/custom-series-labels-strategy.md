@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Chart Series Label Strategy
+# {{ site.framework_name }} RadChartView Chart Series Label Strategy
 
 The chart's series label strategy is responsible for the visualization of the series labels. In a specific scenario, you may need to control their appearance. The chart allows you to do that by creating a class that derives from __ChartSeriesLabelStrategy__ and override one or more of the following methods.
 

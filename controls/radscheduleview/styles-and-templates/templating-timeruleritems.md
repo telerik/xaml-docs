@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Templating the TimeRulerItems
+# {{ site.framework_name }} RadScheduleView Templating the TimeRulerItems
 
 __RadScheduleView__ provides a wide range of customizable __TimeRulerItems__. The term __TimeRulerItem__ refers to the major and minor ticks inside the TimeRuler, date group headers in TimelineView as well as day buttons and weekdays headers in MonthView.
 

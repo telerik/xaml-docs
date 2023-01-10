@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Keyboard and Mouse Support
+# {{ site.framework_name }} RadMaskedInput Keyboard and Mouse Support
 
 In addition to the standard keyboard input, __RadMaskedInput__ controls deliver the convenience of desktop applications with support for arrow-key navigation:      
 

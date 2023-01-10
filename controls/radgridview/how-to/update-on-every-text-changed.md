@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Using TextBoxBehavior
+# {{ site.framework_name }} RadGridView Using TextBoxBehavior
 
 ## TextBoxBehavior
 

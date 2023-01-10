@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to use RadDateTimePicker in a Grid
+# {{ site.framework_name }} RadDateTimePicker How to use RadDateTimePicker in a Grid
 
 This tutorial will guide you through creating a custom __RadDateTimePicker__ column in a __RadGridView__ control.
 

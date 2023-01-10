@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Navigation
+# {{ site.framework_name }} RadChart Navigation
 
 
 

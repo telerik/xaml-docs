@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Configure The Filtering Mode
+# {{ site.framework_name }} RadGridView Configure The Filtering Mode
 
 
 RadGridView has two filtering modes as described in this [article.]({%slug gridview-filtering-basic%})

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Read-Only Diagram
+# {{ site.framework_name }} RadDiagram Read-Only Diagram
 
 __RadDiagram__  provides you with plenty of properties that can control the read-only state in different aspects.	  
 

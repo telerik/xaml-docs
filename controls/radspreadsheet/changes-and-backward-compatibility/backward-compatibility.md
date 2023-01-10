@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Backward Compatibility
+# {{ site.framework_name }} RadSpreadsheet Backward Compatibility
 
 This article lists the breaking changes and how they can be fixed when upgrading from a specific version of the controls to the next one.
 

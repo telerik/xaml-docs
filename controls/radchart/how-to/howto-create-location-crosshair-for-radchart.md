@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Create Location Crosshair for RadChart
+# {{ site.framework_name }} RadChart Create Location Crosshair for RadChart
 
 
 

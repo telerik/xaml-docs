@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Regex Validation
+# {{ site.framework_name }} RadMaskedInput Regex Validation
 
 >important This feature is supported only by the __RadMaskedTextInput__ control.
 

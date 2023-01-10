@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# RadChart vs. RadChartView
+# {{ site.framework_name }} RadChartView RadChart vs. RadChartView
 
 Since Q3 2011 we ship two separate charting components - __RadChart__ and __RadChartView__. __RadChart__ allows you to visualize interactive, rich, animated charts and enables the end users to analyze complex data. It provides rich and mature functionality that covers a large spectrum of use cases.			
 

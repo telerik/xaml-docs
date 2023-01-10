@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Custom Fields
+# {{ site.framework_name }} RadRichTextBox Custom Fields
 
 
 

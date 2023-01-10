@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Customizing Items
+# {{ site.framework_name }} RadTimeline Customizing Items
 
 There are two ways you can change the template for the __RadTimeline__ items. You can either customize them with the use of ItemTemplateSelector, or with a  __TimelineItemTemplate / TimelineInstantItemTemplate__ property. This help article will walk you through these two approaches:
 * [TimelineItemTemplate / TimelineInstantItemTemplate property](#timelineitemtemplate/timelineinstantitemtemplate-property)

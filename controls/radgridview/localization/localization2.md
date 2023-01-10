@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Localization
+# {{ site.framework_name }} RadGridView Localization
 
 
 The built-in localization mechanism in the platform allows you to localize __RadGridView__ control. 

@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Localization
+# {{ site.framework_name }} RadPdfViewer Localization
 
 
 

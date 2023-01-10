@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# BollingerBandsIndicator
+# {{ site.framework_name }} RadChartView BollingerBandsIndicator
 
 BollingerBandsIndicator is used to define the prevailing high and low values in the data.
 

@@ -9,7 +9,7 @@ position: 7
 site_name: Silverlight
 ---
 
-# Use RadUpload in Medium Trust
+# {{ site.framework_name }} RadUpload Use RadUpload in Medium Trust
 
 In order to run the __RadUpload__ in Medium Trust level you should do only one thing: register the upload handler in the __web.config__ file. In order to do this you have to do the following:
 

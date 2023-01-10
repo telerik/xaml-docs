@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# BoxPlotSeries
+# {{ site.framework_name }} RadChartView BoxPlotSeries
 
 This type of series visualizes its data points using box plot shapes. An alternative name for this visualization is box and whiskers. 
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Multiple-column Sorting
+# {{ site.framework_name }} RadGridView Multiple-column Sorting
 
 On the snapshot bellow the data in __RadGridView__ is sorted ascending by the Est. column and then sorted again by the Stadium column, without removing the previous sorting. This feature is called multi column sorting.
        

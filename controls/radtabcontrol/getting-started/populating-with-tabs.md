@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Populating with Tabs
+# {{ site.framework_name }} RadTabControl Populating with Tabs
 
 
 

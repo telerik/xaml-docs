@@ -9,7 +9,7 @@ position: 11
 site_name: Silverlight
 ---
 
-# How to Make the Tab Headers Editable
+# {{ site.framework_name }} RadTabControl How to Make the Tab Headers Editable
 
 
 

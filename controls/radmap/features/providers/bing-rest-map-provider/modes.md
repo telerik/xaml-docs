@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Imagery sets
+# {{ site.framework_name }} RadMap Imagery sets
 
 The Bind Maps Rest Provider imagery service supports different types of visualization. The possible imagery sets which can be used are:
 * [__Aerial with Labels__](#aerial-with-labels)

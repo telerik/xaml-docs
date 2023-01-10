@@ -8,7 +8,7 @@ publish: True
 position: 1
 ---
 
-# Populating playlist
+# {{ site.framework_name }} RadMediaPlayer Populating playlist
 
 Populating __RadMediaPlayer's__ playlist can be done by adding items of type __RadMediaItem__ to the __Items__ collection of __RadMediaPlayer__. Below is an example of adding media items to a __RadMediaPlayer__:
 

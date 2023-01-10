@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Card Message
+# {{ site.framework_name }} RadChat Card Message
 
 > Each card needs to have an __Author__ that is passed through its constructor.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Items Editing
+# {{ site.framework_name }} RadDiagram Items Editing
 
 __RadDiagram__ gives you the ability to edit the Content of its items. You can double-click items in order to edit them or use __DiagramCommands__. __RadDiagramShape__ and __RadDiagramConnection__ also provide __EditTemplates__ and __EditTemplateSelectors__. Please note that through the examples in the tutorial, __Telerik Windows8 theme__ is applied as an Application Theme.
 

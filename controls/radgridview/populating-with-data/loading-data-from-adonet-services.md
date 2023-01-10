@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Loading Data from ADO.NET Services
+# {{ site.framework_name }} RadGridView Loading Data from ADO.NET Services
 
 The purpose of this tutorial is to show you how to populate a __RadGridView__ with data from an __ADO.NET Data Service__ in two ways:
 

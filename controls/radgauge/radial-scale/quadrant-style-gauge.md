@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Quadrant-style gauge
+# {{ site.framework_name }} RadGauge Quadrant-style gauge
 
 Many gauge application requires radial scale which have a quadrant shape: 
 

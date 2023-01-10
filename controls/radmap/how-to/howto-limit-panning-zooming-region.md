@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# How to restrict panning and zooming region in RadMap
+# {{ site.framework_name }} RadMap How to restrict panning and zooming region in RadMap
 
 ## Restrict zooming region in RadMap
 

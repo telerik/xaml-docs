@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customize the PaletteViewItem's ToolTip
+# {{ site.framework_name }} RadColorPicker Customize the PaletteViewItem's ToolTip
 
 This article will show you a way to customize the ToolTip of the PaletteView items.
 

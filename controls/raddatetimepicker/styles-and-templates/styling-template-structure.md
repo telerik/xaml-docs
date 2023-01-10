@@ -8,7 +8,7 @@ published: False
 position: 1
 ---
 
-# Templates Structure
+# {{ site.framework_name }} RadDateTimePicker Templates Structure
 
 Like most controls, the __RadDateTimePicker__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template only parts of it. This topic will make you familiar with the structure of the __RadDateTimePicker's__ templates:
 

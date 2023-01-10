@@ -9,7 +9,7 @@ position: 2
 site_name: Silverlight
 ---
 
-# Bind a RadComboBox to Enum Values
+# {{ site.framework_name }} RadComboBox Bind a RadComboBox to Enum Values
 
 The purpose of this topic is to show you how to build a __RadComboBox__ containing all values of a specific Enum. This is a fairly easy task and can be done in only few steps.
 

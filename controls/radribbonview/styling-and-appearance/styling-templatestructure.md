@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# RadRibbonView Template Structure
+# {{ site.framework_name }} RadRibbonView RadRibbonView Template Structure
 
 This topic will explain you the structure of the __RadRibbonView__ template and will describe the elements in it.
 ![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_TemplateStructure.png)

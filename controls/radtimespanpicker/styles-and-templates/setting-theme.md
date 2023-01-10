@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Setting a Theme
+# {{ site.framework_name }} RadTimeSpanPicker Setting a Theme
 
 This article will demonstrates how the user could easily apply one of the built-in themes to __RadTimeSpanPicker__.
 

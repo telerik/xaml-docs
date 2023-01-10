@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Hierarchical Data Templates
+# {{ site.framework_name }} RadTreeView Hierarchical Data Templates
 
 __RadTreeViewItem__ inherits from __HeaderedItemsControl__ and they can display hierarchical data, e.g. collections that contain other collections.
 

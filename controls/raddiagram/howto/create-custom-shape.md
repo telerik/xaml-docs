@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Create Custom Shape
+# {{ site.framework_name }} RadDiagram Create Custom Shape
 
 This tutorial will guide you through the task of creating a custom shape.
 

@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# RadMediaChapter
+# {{ site.framework_name }} RadMediaPlayer RadMediaChapter
 
 __RadMediaChapter__ derives from the __ContentControl__ class, so you can control it's appearance by specifing the __Content__ and __ContentTemplate__ properties.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Hide Selection Range Title
+# {{ site.framework_name }} RadTimeBar Hide Selection Range Title
 
 Since __Q1 2012 SP1__ we are providing new binaries for our controls, the so-called NoXAML binaries. In the normal assemblies you have all the XAML for all components for all themes included in the dll and the styling is done with explicitly set styles. This unfortunately affected the size of the binaries. With the NoXaml assemblies you will get completely clean assembly with absolutely no XAML included and you can add manually only needed resources for your application.
 

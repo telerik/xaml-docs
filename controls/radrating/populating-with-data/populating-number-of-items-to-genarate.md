@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Using the NumberOfItemsToGenarate property
+# {{ site.framework_name }} RadRating Using the NumberOfItemsToGenarate property
 
 This tutorial will show the way of populating __RadRating__ using the __NumberOfItemsToGenerate__ property.
 

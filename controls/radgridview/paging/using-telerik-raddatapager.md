@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Using Telerik RadDataPager
+# {{ site.framework_name }} RadGridView Using Telerik RadDataPager
 
 >__RadDataPager is NOT dependent on the RadGridView, so it can be freely used together with any other ItemsControl.__
 

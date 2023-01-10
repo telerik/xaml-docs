@@ -9,7 +9,7 @@ position: 8
 site_name: WPF
 ---
 
-# Set CharacterCasing Property of the Input Area
+# {{ site.framework_name }} RadComboBox Set CharacterCasing Property of the Input Area
 
 The purpose of this tutorial is to show you how to set the __CharacterCasing__ property of the [InputArea]({%slug radcombobox-general-information-visual-structure%}) of an [editable]({%slug radcombobox-features-edit-modes%}) __RadComboBox__(__RadComboBox__'s __IsEditable__ property is set to __True__).
 

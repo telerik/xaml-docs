@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# NodeViewModelBase
+# {{ site.framework_name }} RadDiagram NodeViewModelBase
 
 Telerik Diagramming Framework provides a list of __ViewModels__ defined in the __Telerik.Windows.Controls.Diagrams.Extensions.dll__.	  
 

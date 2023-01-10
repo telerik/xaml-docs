@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Localization
+# {{ site.framework_name }} RadDateTimePicker Localization
 
 The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the RadDateTimePicker control. Once translated, you might use your resources in both Silverlight and WPF projects without changing anything.      	
 

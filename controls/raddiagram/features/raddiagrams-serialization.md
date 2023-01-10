@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Serialization
+# {{ site.framework_name }} RadDiagram Serialization
 
 `RadDiagram` allows you to serialize (save) your current diagram in an XML string and later deserialize it (load). You can achieve this with the `RadDiagram.Save()` and `RadDiagram.Load(string serializationString)` methods. You can also use the DiagramCommands `Save` and `Open`.			
 

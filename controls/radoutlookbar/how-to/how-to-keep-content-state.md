@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How to Keep the Content State
+# {{ site.framework_name }} RadOutlookBar How to Keep the Content State
 
 To optimize the performance __RadOutlookBar__ uses a single ContentPresenter which holds only the Content of the currently selected __RadOutlookBarItem__. Each time the selection is changed the content of the last selected item is unloaded from the visual tree and the content of the newly selected item is loaded. Because of this the current state of the selected item's Content is lost. 
 

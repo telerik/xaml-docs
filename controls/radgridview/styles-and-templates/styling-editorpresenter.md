@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Styling Editor Presenter
+# {{ site.framework_name }} RadGridView Styling Editor Presenter
 
 If you want to change the appearance of a cell when it enters edit mode, you should modify the style of the __GridViewEditorPresenter__. This element is a plain presenter used to display the editors for the cells.
 

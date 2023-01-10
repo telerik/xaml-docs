@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How To Change the Fold Size
+# {{ site.framework_name }} RadBook How To Change the Fold Size
 
 To change the fold size you can use the __FoldSize__ property of __RadBook__. It is of type __Size__. Here is an example below: 
 

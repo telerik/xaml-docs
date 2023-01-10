@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadNumericUpDown Events
 
 RadNumericUpDown inherits several common events that can be used to customize the functionality of the control.
 

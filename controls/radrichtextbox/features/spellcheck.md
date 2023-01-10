@@ -7,7 +7,7 @@ tags: spellcheck
 published: True
 ---
 
-# Spellcheck
+# {{ site.framework_name }} RadRichTextBox Spellcheck
 
 
 The __RadRichTextBox__ control is designed to support "spell checking as you type" by setting a single property and specifying a proper dictionary to it. This topic explains you the following:

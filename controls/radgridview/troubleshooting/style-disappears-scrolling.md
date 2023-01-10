@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Styling or content mixed-up on scrolling
+# {{ site.framework_name }} RadGridView Styling or content mixed-up on scrolling
 
 __PROBLEM__
 

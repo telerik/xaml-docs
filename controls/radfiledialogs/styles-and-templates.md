@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Styles and Templates
+# {{ site.framework_name }} RadFileDialogs Styles and Templates
 
 This article is intended to give you a general understanding of how to change the visual appearance of the file dialogs and their elements. There is also comprehensive information about their control templates.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# TextBoxStyle
+# {{ site.framework_name }} RadAutoCompleteBox TextBoxStyle
 The __TextBoxStyle__ property makes it easy to customize the __RadAutoCompleteBox__ and __RadAutoCompleteBoxItem__. This article will show you how to apply a custom __TextBoxStyle__.
 
 ## Applying custom TextBoxStyle

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# SpellChecking GridCell
+# {{ site.framework_name }} RadSpellChecker SpellChecking GridCell
 
 
 

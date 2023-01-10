@@ -7,7 +7,7 @@ published: True
 position: 12
 ---
 
-# Notes
+# {{ site.framework_name }} RadSpreadsheet Notes
 
 Since R1 2022 the Spreadsheet control supports working with notes. The Notes are used for making notes or annotations about the data. All notes can be found in the __Notes__ collection of the worksheet. More information about using notes in code is available here: [SpreadProcessing Notes](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/notes).
 

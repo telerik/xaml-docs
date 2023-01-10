@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Ribbon DropDownButton
+# {{ site.framework_name }} RadRibbonView Ribbon DropDownButton
 
 The __RadRibbonDropDownButton__ represents an extension of the __RadDropDownButton__. It provides an easier interaction with the __RadRibbonView__ control. What is special about the __RadRibbonDropDownButton__ is that upon activation it can display a popup area. Any content of any kind can be nested inside the popup area.			
 

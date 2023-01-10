@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Data Operations like filtering, sorting or grouping are not re-evaluated
+# {{ site.framework_name }} RadGridView Data Operations like filtering, sorting or grouping are not re-evaluated
 
 __PROBLEM__
 

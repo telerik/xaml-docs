@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Axis
+# {{ site.framework_name }} RadSparkLine Axis
 
 This article will show you how to control the range of the plotted data and how to show and customize the axis indicator.
 

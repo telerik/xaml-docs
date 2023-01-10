@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadPivotGrid Overview
 
 This topic covers the specific events exposed by DataProviders of __RadPivotGrid__ control. All of the DataProviders as well as their FieldDescriptionProviders have useful events that can be used for customization purposes.      
 

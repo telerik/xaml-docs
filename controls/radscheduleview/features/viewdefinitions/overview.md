@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadScheduleView Overview
 
 The ScheduleView provides the functionality of displaying the data in different views. There are four predefined views from which you can choose to easily navigate through the appointments. These views ensure better flexibility and save time to write or modify the logic behind all different controls to make them work as one. You can customize each view – you can modify its orientation, the number of days displayed, customize the time ruler, etc.
 

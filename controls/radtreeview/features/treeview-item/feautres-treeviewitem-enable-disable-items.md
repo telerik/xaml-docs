@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Enable and Disable Items
+# {{ site.framework_name }} RadTreeView Enable and Disable Items
 
 By using the API of the __RadTreeView__ control you can easily disable or enable a node. You can set the boolean property __IsEnabled__ to each one of the following objects:
 

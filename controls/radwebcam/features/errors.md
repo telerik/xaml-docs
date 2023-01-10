@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Errors
+# {{ site.framework_name }} RadWebCam Errors
 
 This article demonstrates how to customize the error content shown when one of the few known camera errors appear. 
 

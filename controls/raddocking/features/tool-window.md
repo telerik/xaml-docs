@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Tool Window
+# {{ site.framework_name }} RadDocking Tool Window
 
 `ToolWindow` is the container control that hosts all panes that are in a floating state. Every time you drag a pane and undock it, a new instance of the class `Telerik.Windows.Controls.Docking.ToolWindow` is created to host that pane for you.
 

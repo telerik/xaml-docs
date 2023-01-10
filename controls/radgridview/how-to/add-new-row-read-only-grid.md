@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Insert New Row in ReadOnly RadGridView
+# {{ site.framework_name }} RadGridView Insert New Row in ReadOnly RadGridView
 
 When the RadGridView is read-only or bound to a collection that does not implement the __INotifyCollectionChanged__ interface you can use the RadGridView __Items__ collection's __AddNewItem()__ method to add an item and select it if needed. **Example 1** shows how this can be done:
 

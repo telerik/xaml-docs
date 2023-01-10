@@ -7,7 +7,7 @@ tags: format, painter
 published: True
 ---
 
-# Format Painter
+# {{ site.framework_name }} RadRichTextBox Format Painter
 
 The Format Painter feature in **RadRichTextBox** enables you to copy the formatting of a document element and apply it to other elements. the functionality can be used programmatically through the methods of the [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) class or you can use the UI.
       

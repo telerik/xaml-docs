@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Changes
+# {{ site.framework_name }} RadPersistenceFramework Changes
 
 This article describes the fixes and the new features in the PersistenceFramework.
 

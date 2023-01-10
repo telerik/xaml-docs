@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# ComboBox Column
+# {{ site.framework_name }} RadGridView ComboBox Column
 
 __GridViewComboBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of the functionality too. In addition, GridViewComboBoxColumn provides a __RadComboBox__ editor for editing cell values. It also takes care to translate the __Data Member__ value of the column to the corresponding __DisplayMember__ value of __RadComboBox__. 
 

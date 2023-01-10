@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Change PageSize Dynamically
+# {{ site.framework_name }} RadDataPager Change PageSize Dynamically
 
 Generally, the page size of a __RadDataPager__ can be set via the corresponding __PageSize__ property. However, in some cases you may require it to be changed dynamically during runtime. 
 

@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Save and Load Filter Settings
+# {{ site.framework_name }} RadGridView Save and Load Filter Settings
 
 To save and load column filters, you would have to create a simple property bag class that will hold all relevant information. 
 

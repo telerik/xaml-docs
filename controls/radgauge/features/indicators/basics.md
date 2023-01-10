@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Basics
+# {{ site.framework_name }} RadGauge Basics
 
 The indicator controls, except the __NumericIndicator__, derive from the __IndicatorBase__ class. Because of that they provide some common functionality. This topic will focus on the common features between the available indicators.
 

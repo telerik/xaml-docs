@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# RowDetailsStyleSelector
+# {{ site.framework_name }} RadGridView RowDetailsStyleSelector
 
 This article illustrates how to conditionally style row details through RadGridView's **RowDetailsStyleSelector** property.
 		

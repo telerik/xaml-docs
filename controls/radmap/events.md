@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Events
+# {{ site.framework_name }} RadMap Events
 
 This topic covers the specific events exposed by the __RadMap__ control.
 

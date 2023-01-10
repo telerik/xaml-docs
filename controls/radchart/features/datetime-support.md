@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# DateTime Support
+# {{ site.framework_name }} RadChart DateTime Support
 
 
 

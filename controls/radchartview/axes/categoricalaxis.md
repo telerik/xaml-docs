@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Categorical Axis
+# {{ site.framework_name }} RadChartView Categorical Axis
 
 The categorical axis displays a set of categories. The values for each category do not define the order in which they appear. Here is an example of a categorical axis with a few data points.
 

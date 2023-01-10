@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Parsing Without Separators
+# {{ site.framework_name }} RadDateTimePicker Parsing Without Separators
 
 __RadDateTimePicker__ provides parsing logic which allows the end users to enter dates in the input field directly without separators. This feature can be enabled by setting the __AllowParsingWithoutSeparator__ property of the control to __True__. (Its default value is __False__)
 

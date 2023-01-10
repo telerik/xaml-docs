@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Templates Structure
+# {{ site.framework_name }} RadGridView Templates Structure
 
 >tipTo learn how to style Telerik UI controls, you can read the common topics about [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})
 

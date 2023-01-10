@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Create your own navigation
+# {{ site.framework_name }} RadCoverflow Create your own navigation
 
 This article explains in details how to create your own navigation using a range control, e.g. one that inherits from the RangeBase class.
 

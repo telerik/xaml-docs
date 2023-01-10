@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# How to Remove the Header of the RadPane
+# {{ site.framework_name }} RadDocking How to Remove the Header of the RadPane
 
 The purpose of this tutorial is to show how to remove the __Header__ of the RadPane.
 

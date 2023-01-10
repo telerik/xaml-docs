@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Expand and Collapse Support
+# {{ site.framework_name }} RadCardView Expand and Collapse Support
 
 RadCardView provides you with the ability to collapse and expand cards and groups.
 

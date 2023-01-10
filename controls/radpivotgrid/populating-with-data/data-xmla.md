@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Using XmlaDataProvider
+# {{ site.framework_name }} RadPivotGrid Using XmlaDataProvider
 
 In this article we will show how to set __XmlaDataProvider__ to __RadPivotGrid__ and __RadPivotFieldList__.
 

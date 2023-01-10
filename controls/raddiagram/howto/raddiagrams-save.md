@@ -9,7 +9,7 @@ position: 6
 site_name: WPF
 ---
 
-# Save the Diagram in the File System
+# {{ site.framework_name }} RadDiagram Save the Diagram in the File System
 
 The following article will demonstrate how you can save the __RadDiagram__ in the file system and load it.	  
 

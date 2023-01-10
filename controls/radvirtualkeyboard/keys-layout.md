@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Keys Layout
+# {{ site.framework_name }} RadVirtualKeyboard Keys Layout
 
 VirtualKeyboard comes with a set of predefined key layouts.
 

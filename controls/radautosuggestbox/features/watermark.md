@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Watermark
+# {{ site.framework_name }} RadAutoSuggestBox Watermark
 
 The watermark of RadAutoSuggestBox is the content shown in the TextBox when no text is entered.
 

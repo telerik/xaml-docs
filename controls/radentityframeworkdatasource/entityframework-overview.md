@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadEntityFrameworkDataSource
 ---
 
-# Overview
+# {{ site.framework_name }} RadEntityFrameworkDataSource Overview
 
 __RadEntityFrameworkDataSource__ is a WPF data control that provides seamless integration between an user interface and data coming from an [Entity Framework](http://msdn.microsoft.com/en-us/library/bb399572.aspx)  Container.  __RadEntityFrameworkDataSource__ generates [LINQ to Entities](http://msdn.microsoft.com/en-us/library/bb399367.aspx) queries to retrieve data from an [ObjectContext](http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.aspx) based on an [ObjectQuery<T>](http://msdn.microsoft.com/en-us/library/bb345303.aspx). The control can also perform basic CRUD operations on entities located in the container. You can retrieve, shape and edit data using declarative XAML syntax only. __RadEntityFrameworkDataSource__ provides extensive code-behind API for more advanced scenarios.  __The QueryableEntityCollectionView<T>__ class, which is internally used by the control, is made publicly available for use in view models part of an MVVM architecture, where the usage of UI elements is not recommended. Thanks to the fact that all controls are part of the Telerik family, __RadEntityFrameworkDataSource__ can codelessly integrate with __RadGridView__, __RadDataPager__ and __RadDataFilter__ and perform paging, filtering, sorting, and grouping directly on the database server. __RadEntityFrameworkDataSource__ can also be used as a standalone data source control since it provides the public API needed for loading, shaping and editing data.
 

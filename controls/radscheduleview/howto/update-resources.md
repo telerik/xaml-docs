@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Update the Resources
+# {{ site.framework_name }} RadScheduleView Update the Resources
 
 This article will show how you can update the visible resources by which the RadScheduleView is grouped.
 

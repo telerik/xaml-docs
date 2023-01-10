@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Use MVVM in RadRibbonView
+# {{ site.framework_name }} RadRibbonView Use MVVM in RadRibbonView
 
 This example shows how to use a __RadRibbonView__ control with the Model-View-ViewModel (MVVM) pattern.
 

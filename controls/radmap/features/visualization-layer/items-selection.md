@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Items Selection
+# {{ site.framework_name }} RadMap Items Selection
 
 Many applications require the ability to select items shown over the map. The __VisualizationLayer__ object has built-in functionality which supports items selection, both point-type and map shapes. This article explains the usage of the items selection feature in the following main scenarios:      
 

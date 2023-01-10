@@ -8,7 +8,7 @@ published: False
 position: 5
 ---
 
-# Percent Combo Box
+# {{ site.framework_name }} RadPdfViewer Percent Combo Box
 
 
 

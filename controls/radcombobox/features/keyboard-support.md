@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadComboBox Keyboard Support
 
 This article explains the keyboard shortcuts present in __RadComboBox__ as well as the properties can be used for the keyboard navigation.
 

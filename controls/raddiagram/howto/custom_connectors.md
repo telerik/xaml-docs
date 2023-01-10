@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Using custom connectors in MVVM
+# {{ site.framework_name }} RadDiagram Using custom connectors in MVVM
 
 This tutorial will guide you through the task of populating RadDiagramShape with custom connectors in MVVM scenario.
 

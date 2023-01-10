@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Programmatic Filtering
+# {{ site.framework_name }} RadVirtualGrid Programmatic Filtering
 
 __RadVirtualGrid__ provides an API for programmatically filtering its data. The following article will go through the exposed mechanisms.
 

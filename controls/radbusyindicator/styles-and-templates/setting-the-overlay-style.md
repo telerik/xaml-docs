@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Setting the OverlayStyle
+# {{ site.framework_name }} RadBusyIndicator Setting the OverlayStyle
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
 

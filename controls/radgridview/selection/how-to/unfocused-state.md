@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Stop Showing the Unfocused State
+# {{ site.framework_name }} RadGridView Stop Showing the Unfocused State
 
 When the `RadGridView` and `RadTreeListView` controls lost the focus, their selected visual items (`GridViewRow` and `TreeListViewRow`) enter an __unfocused__ state which tones down their color (usually the color is changed to light gray). This makes it more clear that the control doesn't have the focus.
 

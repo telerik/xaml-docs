@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Ticks
+# {{ site.framework_name }} RadChart Ticks
 
 
 

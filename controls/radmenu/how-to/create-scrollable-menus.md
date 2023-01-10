@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Create Scrollable Menus
+# {{ site.framework_name }} RadMenu Create Scrollable Menus
 
 A scrolling functionality can be added to a RadMenu which displays a long list of items or the number of the visible items should be limited. The process to do that is very simple and straightforward. This article will demonstrate the process.      
 

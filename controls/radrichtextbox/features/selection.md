@@ -7,7 +7,7 @@ tags: selection
 published: True
 ---
 
-# Selection
+# {{ site.framework_name }} RadRichTextBox Selection
 
 
 **RadRichTextBox** supports not only selection via the UI, but also programmatic selection. This topic shows how you can use both approaches.

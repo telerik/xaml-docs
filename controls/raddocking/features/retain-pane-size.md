@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Retain Pane Size
+# {{ site.framework_name }} RadDocking Retain Pane Size
 
 With the official __Q2 2015__ release version of UI for WPF, __RadDocking__ introduced a brand new feature which provides the ability to easily retain the size of the Panes.
 

@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Filter on Date and Time
+# {{ site.framework_name }} RadGridView Filter on Date and Time
 
 By default, when a GridViewDataColumn is bound to a property of type **DateTime** the generated field filter editor is a [RadDateTimePicker]({%slug raddatetimepicke-getting-started%}). It's [InputMode]({%slug raddatetimepicker-features-input-modes%}), however, is DatePicker which means that only the **Date** portion of the DateTime object can be selected through the UI.
 

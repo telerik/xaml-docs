@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# CurrentTimeIndicator
+# {{ site.framework_name }} RadScheduleView CurrentTimeIndicator
 
 **RadScheduleView** provides the option to visually mark the current time in the TimeRuler and across the Appointments area through its __ShowCurrentTimeIndicator__ property.
 

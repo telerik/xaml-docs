@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# CalloutPopupSettings
+# {{ site.framework_name }} RadCallout CalloutPopupSettings
 
 The __CalloutPopupSettings__ class provides properties to control the display of RadCallout. 
 

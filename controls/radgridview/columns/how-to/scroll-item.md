@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Scroll to Particular Row or Column
+# {{ site.framework_name }} RadGridView Scroll to Particular Row or Column
 
 This article shows how to scroll RadGridView to a particular row and / or column. There are two methods that can be invoked:
 

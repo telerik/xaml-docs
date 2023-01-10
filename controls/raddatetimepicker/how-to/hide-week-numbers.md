@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# How to hide week numbers
+# {{ site.framework_name }} RadDateTimePicker How to hide week numbers
 
 The purpose of this article is to demonstrate how the week numbers in the RadCalendar part inside the drop down of a __RadDateTimePicker__ can be hidden. 
 

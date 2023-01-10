@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Expression Parser
+# {{ site.framework_name }} RadExpressionEditor Expression Parser
 
 In some scenarios, you do not need the graphical user interface of the RadExpressionEditor, but would rather just require its parsing logic for a given expression.
 

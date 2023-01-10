@@ -8,7 +8,7 @@ published: True
 position: 19
 ---
 
-# Interactivity
+# {{ site.framework_name }} RadChart Interactivity
 
 
 

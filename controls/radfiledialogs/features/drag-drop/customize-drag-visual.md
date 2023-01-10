@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customizing the Drag Visual
+# {{ site.framework_name }} RadFileDialogs Customizing the Drag Visual
 
 The visual element shown when you drag an item is presented by the __FileBrowserDragVisual__ control. To customize the appearance you can set several properties of the control or [extract its template]({%slug styling-apperance-editing-control-templates%}) and modify it.
 

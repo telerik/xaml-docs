@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Events
+# {{ site.framework_name }} RadDateTimePicker Events
 
 This article provides more detailed information about the events exposed by the __RadDateTimePicker__ control. As it inherits from the **Control** class, it also inherits all of its public events. A full list of the inherited events can be found [here](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control#events). In addition, the RadDateTimePicker exposes a few useful events.
         

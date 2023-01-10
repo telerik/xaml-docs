@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customizing CartesianChart Series
+# {{ site.framework_name }} RadChartView Customizing CartesianChart Series
 
 This article demonstrates how you can change the default look of the __RadCartesianChart__ series.      
 

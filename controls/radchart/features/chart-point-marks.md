@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Chart Point-marks
+# {{ site.framework_name }} RadChart Chart Point-marks
 
 
 Most of the charts show a point mark for each data point. __RadChart__ allows you to configure the appearance of these point marks by changing their shape and colors. To do that, you have to use __ISeriesDefinition.Appearance.PointMark__ property which is of type __PointMarkAppearanceSettings__ where you can change the __Fill__, __Shape__, __Stroke__ and __StrokeTickness__ properties of the point marks.

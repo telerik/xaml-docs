@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Create a Line Chart with Static Data
+# {{ site.framework_name }} RadChart Create a Line Chart with Static Data
 
 
 

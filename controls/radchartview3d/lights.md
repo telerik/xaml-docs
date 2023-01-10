@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Lights
+# {{ site.framework_name }} RadChartView3D Lights
 
 The lights in the 3D world are making the scene visible. The 3D chart allows you define different light sources to illuminate the scene. This can be done through the __Lights__ collection of the chart. The collection holds objects of type __System.Media.Media3D.Light__. The WPF framework provides several built-in lights which you can use – __AmbientLight__, __DirectionalLight__, __PointLight__ and  __SpotLight__. You can read more about them in the [3-D Graphics Overview](https://msdn.microsoft.com/en-us/library/ms747437(v=vs.110).aspx) MSDN article.
 

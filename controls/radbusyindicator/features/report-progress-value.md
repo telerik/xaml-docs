@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Report Progress Value
+# {{ site.framework_name }} RadBusyIndicator Report Progress Value
 
 This topic will describe the scenario in which you have a determined __RadBusyIndicator__ control which you want to be available for a predefined amount of time. In this case the __RadBusyIndicator__ provides you out of the box with a way to visualize the progress.
 

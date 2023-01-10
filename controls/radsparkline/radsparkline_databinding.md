@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# DataBinding
+# {{ site.framework_name }} RadSparkLine DataBinding
 
 Databinding for the Sparkline control involves the correlation between the business logic/data, and the visualization of the control.
 

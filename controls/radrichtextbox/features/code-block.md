@@ -7,7 +7,7 @@ tags: code,block
 published: True
 ---
 
-# Code Block
+# {{ site.framework_name }} RadRichTextBox Code Block
 
 
 

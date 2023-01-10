@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Multiple Thumbs
+# {{ site.framework_name }} RadSlider Multiple Thumbs
 
 As of **R3 2020**, the RadSlider allows you to define multiple thumbs with which to control its values and ranges.
 

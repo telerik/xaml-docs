@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Localization 
+# {{ site.framework_name }} RadWizard Localization
 The built-in localization mechanism allows you to localize __RadWizard__ control.
 
 Here is a list of the supported languages:

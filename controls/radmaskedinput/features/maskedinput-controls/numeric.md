@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# MaskedNumericInput
+# {{ site.framework_name }} RadMaskedInput MaskedNumericInput
 
 The __RadMaskedNumericInput__ represents the basic control that can be used to restrict numeric user input.
 

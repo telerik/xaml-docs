@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadBarcodeLegacy Visual Structure
 
 RadBarcodePdf417 is a 2D barcode, similar to the QR code.      
 

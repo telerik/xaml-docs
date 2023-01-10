@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# OriginValue
+# {{ site.framework_name }} RadChartView OriginValue
 
 Some series in the RadChartView suite have a mechanism which allows for determining from where the data points start drawing. This can be utilized by setting the **OriginValue** property of the series. **Example 1** demonstrates this property.
 

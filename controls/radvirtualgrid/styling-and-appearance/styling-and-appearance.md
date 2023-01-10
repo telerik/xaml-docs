@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Styling and Appearance
+# {{ site.framework_name }} RadVirtualGrid Styling and Appearance
 
 __RadVirtualGrid__ is designed to handle huge amounts of data while keeping its performance and overall user experience intact. Thus, the control does not utilize the common templating mechanism provided by WPF and does not add its visual elements to the visual tree. It provides a set of properties for customizing its appearance. 
 

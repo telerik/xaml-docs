@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customizing Track Appearance
+# {{ site.framework_name }} RadStepProgressBar Customizing Track Appearance
 
 RadStepProgressBar allows you to customize the color and size of the [track visual]({%slug stepprogressbar-visual-structure%}).
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadialMenuItem Commands
+# {{ site.framework_name }} RadRadialMenu RadialMenuItem Commands
 
 __RadRadialMenuItem__ provides a __Command__ property that can be bound to an __ICommand__ implementation. The execution of the command is triggered by click/tap event. The parameter passed to the command is set through the __CommandParameter__ property of the RadialMenuItem.        
 

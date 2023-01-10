@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Globalization
+# {{ site.framework_name }} RadDateTimePicker Globalization
 
 As of **R1 2017** RadDateTimePicker can display and parse dates from all .NET Framework calendar implementations.
 

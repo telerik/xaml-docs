@@ -9,7 +9,7 @@ position: 0
 site_name: Silverlight
 ---
 
-# Use with Silverlight Navigation Framework
+# {{ site.framework_name }} RadTransitionControl Use with Silverlight Navigation Framework
 
 
 The __RadTransitionControl__ can be used together with the __Silverlight Navigation Framework__ in order to apply transition effects, when navigating from one page to another. The only thing you have to do is to create a __ControlTemplate__ for the __Frame__ control and to place a __RadTransitionControl__ in it. This tutorial will walk you through the following:

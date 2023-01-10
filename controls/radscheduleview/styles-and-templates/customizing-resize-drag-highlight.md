@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Customizing the Resize and DragDropHighlight
+# {{ site.framework_name }} RadScheduleView Customizing the Resize and DragDropHighlight
 
 In __RadScheduleView__ it is possible to customize the resize and drag and drop highlight of appointments in the control.
 

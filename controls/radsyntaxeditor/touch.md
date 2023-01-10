@@ -7,7 +7,7 @@ tags: touch,radsyntaxeditor
 position: 6
 ---
 
-# Touch
+# {{ site.framework_name }} RadSyntaxEditor Touch
 
 The RadSyntaxEditor comes with out-of-the-box support for touch gestures.
 

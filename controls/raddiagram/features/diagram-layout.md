@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Layout
+# {{ site.framework_name }} RadDiagram Layout
 
 __Layout__ in the __RadDiagram__ refers to the way the __Shapes__ are arranged on the diagramming surface. __RadDiagram__ provides a dozen of Layout algorithms which can be easily customized.	  
 

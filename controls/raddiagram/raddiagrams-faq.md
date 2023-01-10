@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# FAQ
+# {{ site.framework_name }} RadDiagram FAQ
 
 This section answers commonly asked questions regarding the usage and implementation of Telerik RadDiagram
 

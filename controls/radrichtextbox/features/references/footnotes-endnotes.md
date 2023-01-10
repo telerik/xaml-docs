@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Footnotes and Endnotes
+# {{ site.framework_name }} RadRichTextBox Footnotes and Endnotes
 
 Footnotes and endnotes (or just notes) are used in documents and books to show the source of borrowed material or to enter explanatory or supplementary information. Footnotes are positioned at the bottom of a page, containing the annotated text, and endnotes are placed at the end of a document or the section.
 

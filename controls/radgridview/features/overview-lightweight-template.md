@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Lightweight Templates
+# {{ site.framework_name }} RadGridView Lightweight Templates
 
 
 With __2013 Q2 SP__ we have introduced lightweight templates for __RadGridView and RadTreeListView__. This article will walk you through the following sections:

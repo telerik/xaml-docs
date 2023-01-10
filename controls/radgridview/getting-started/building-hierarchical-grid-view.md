@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Building Hierarchical Grid
+# {{ site.framework_name }} RadGridView Building Hierarchical Grid
 
 This tutorial will walk you through the process of displaying hierarchical data in __RadGridView__. It will not cover the creation of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application, adding __RadGridView__ to your __UserControl__ or how to define columns. If you need information on any of these topics please read the [Getting Started]({%slug gridview-getting-started2%}) topic. 
 

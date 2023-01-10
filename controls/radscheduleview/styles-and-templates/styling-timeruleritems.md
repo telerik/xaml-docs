@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the TimeRulerItems
+# {{ site.framework_name }} RadScheduleView Styling the TimeRulerItems
 
 The __RadScheduleView__ control offers a wide range of customizable TimeRulerItems. The term TimeRulerItem in RadScheduleView encompasses the following elements: ticks and lines, date group item headers, day and expand buttons in month view.      
 

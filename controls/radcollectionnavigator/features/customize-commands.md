@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Customizing Commands
+# {{ site.framework_name }} RadCollectionNavigator Customizing Commands
 
 This article provides a description and examples of how to customize RadCollectionNavigator’s commands in a MVVM-friendly way.
 

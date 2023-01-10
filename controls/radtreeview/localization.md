@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Localization
+# {{ site.framework_name }} RadTreeView Localization
 
 The built-in localization mechanism in the framework allows you to localize the drag and drop hints in the __RadTreeView__ control. 
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Save/load Layout with LINQ to XML
+# {{ site.framework_name }} RadDocking Save/load Layout with LINQ to XML
 
 In many scenarios when creating an application that requires a more complex and flexible layout using __RadDocking__ control as a layout layer is the way to go. One of the built-in features that enrich the control’s functionality is the ability to easily save and load the state of the entire RadDocking control’s layout. The built-in __SaveLayout/LoadLayout__ functionality of the control uses XML in order to serialize and deserialize the state of the RadSplitContainer, RadPaneGroup, RadPane and RadDocumentPane instances in the control. XML is widely adopted and use as a way of formatting data in many contexts. Unfortunately working with XML is not a straight forward and easy task when customizing its notes and value is required. In scenarios where reordering and working with collections has been required developers turn to use the well known LINQ library. In the latest versions of .NET Framework a support for “LINQ to XML” has been provided in order to ease the described tasks.
             

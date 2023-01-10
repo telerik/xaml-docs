@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Insert New Row on Tab of Last Cell
+# {{ site.framework_name }} RadGridView Insert New Row on Tab of Last Cell
 
 This article will show you how to insert a new row when you are at the **last column** of the **last row** and press the **Tab** key.
 

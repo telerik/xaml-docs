@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Expand and Collapse
+# {{ site.framework_name }} RadGanttView Expand and Collapse
 
 In the __RadGanttView__ control it is possible to customize the initial expand behavior of its tasks in order to achieve a custom desired behavior. You could easily achieve a fully initially expanded or collapsed behavior by setting the __InitialExpandBehavior__ of the control. There is also a built-in expand and collapse service that could be used to expand and collapse a specific task from the code behind.
 

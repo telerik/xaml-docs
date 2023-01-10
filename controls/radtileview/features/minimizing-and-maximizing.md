@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Minimizing And Maximizing
+# {{ site.framework_name }} RadTileView Minimizing And Maximizing
 
 Each __RadTileViewItem__ can be in __Restored__, __Minimized__ or __Maximized__ state. The state is controlled by the __TileState__ property. It is an enumeration and contains the following values:
 

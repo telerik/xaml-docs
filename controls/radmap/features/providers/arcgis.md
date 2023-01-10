@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# ArcGIS Online Map Provider
+# {{ site.framework_name }} RadMap ArcGIS Online Map Provider
 
 ## ArcGisMapProvider
 

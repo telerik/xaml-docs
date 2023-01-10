@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Methods
+# {{ site.framework_name }} RadCardView Methods
 
 The RadCardView control exposes a number of public methods which allow you to invoke certain functionality programmatically. Here's a list of the available methods:
 

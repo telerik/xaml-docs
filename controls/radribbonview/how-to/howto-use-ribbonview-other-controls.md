@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Use RadRibbonView with Other controls
+# {{ site.framework_name }} RadRibbonView Use RadRibbonView with Other controls
 
 ## Use RadRibbonView with RadCalendar	  
 

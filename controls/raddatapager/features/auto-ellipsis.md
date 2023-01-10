@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Auto Ellipsis
+# {{ site.framework_name }} RadDataPager Auto Ellipsis
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Paragraph
+# {{ site.framework_name }} RadRichTextBox Paragraph
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Formatter Provider
+# {{ site.framework_name }} RadTimeBar Formatter Provider
 
 This help topic will give an overview on the Formatter Provider feature of RadTimeBar.      
 

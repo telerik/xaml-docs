@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Localization
+# {{ site.framework_name }} RadImageEditor Localization
 
 The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the __RadImageEditor__ control. Once translated you might use your resources in both Silverlight and WPF projects without changing anything. You can find more information on the localization of the Telerik UI suite [here]({%slug common-localization%}).      
 

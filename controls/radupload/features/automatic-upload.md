@@ -9,7 +9,7 @@ position: 2
 site_name: Silverlight
 ---
 
-# Automatic Upload
+# {{ site.framework_name }} RadUpload Automatic Upload
 
 The __RadUpload__ allows the files to be uploaded automatically after the user selects them from the browse dialog window. Which means that the user won't have to click the Upload button to start the process. To enable the Automatic Upload feature you can set the __IsAutomaticUpload__ property of the __RadUpload__ to __True__ (its default value is __False__).
 

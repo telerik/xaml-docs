@@ -7,7 +7,7 @@ tags: delete,style,customize,buttons,query,clear
 position: 0
 ---
 
-# Customize the Buttons
+# {{ site.framework_name }} RadAutoSuggestBox Customize the Buttons
 
 RadAutoSuggestBox has two customizeable buttons - the clear button and the query button.
 

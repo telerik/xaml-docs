@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Predefined Dialogs
+# {{ site.framework_name }} RadWindow Predefined Dialogs
 
 The __RadWindow__ provides you with a set of predefined dialog windows that are an easy way to handle a few scenarios:
 

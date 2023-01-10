@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Data Binding with Manual Series Mapping
+# {{ site.framework_name }} RadChart Data Binding with Manual Series Mapping
 
 
 

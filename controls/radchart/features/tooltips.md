@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# ToolTips
+# {{ site.framework_name }} RadChart ToolTips
 
 
 

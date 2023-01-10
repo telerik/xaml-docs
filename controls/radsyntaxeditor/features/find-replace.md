@@ -7,7 +7,7 @@ tags: find,replace,radsyntaxeditor
 position: 2
 ---
 
-# Find and Replace
+# {{ site.framework_name }} RadSyntaxEditor Find and Replace
 
 The RadSyntax editor provides an easy and intuitive way to search for a given text in the document as well as replace occurrences of this text.
 

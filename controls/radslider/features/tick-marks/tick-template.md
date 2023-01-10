@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Tick template
+# {{ site.framework_name }} RadSlider Tick template
 
 Changing the look of the tick marks can be done by setting the __TickTemplate__ property, which is of type __DataTemplate__.
 

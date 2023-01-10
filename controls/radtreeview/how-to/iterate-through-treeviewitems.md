@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Iterate Through TreeViewItems
+# {{ site.framework_name }} RadTreeView Iterate Through TreeViewItems
 
 Telerik __RadTreeView__ class inherits from __ItemsControl__. The __Items__ collection of the __ItemsControl__ is a collection of data objects, __not__ from __RadTreeViewItems__. There is a very important concept about the items and item containers. When you bind an __ItemsControl__ you have your data items populating the __Items__ collection of the control. The containers are the __visual presentations__ of those data items (in this case the containers are the __RadTreeViewItems__). Containers are not created automatically when the __ItemsControl__ is bound, but are created __asynchronously and only when needed__. For example in the case with the TreeView, the containers are not being created until their parent is expanded.
 

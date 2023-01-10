@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Serialization
+# {{ site.framework_name }} RadPivotGrid Serialization
 
 > The implementation demonstrated in this article can also be reviewed in the [Serialize LocalDataSourceProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Serialization/LocalDataSourceProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
 

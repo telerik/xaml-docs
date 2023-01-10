@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Resizing Columns
+# {{ site.framework_name }} RadGridView Resizing Columns
 
 Columns inside the __RadGridView__ are resizable by default. The user is able to easily change the column width by positioning the mouse over the columns vertical grid line and dragging it until the desired size is achieved.
 

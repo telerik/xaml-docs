@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Working with RadWindow
+# {{ site.framework_name }} RadWindow Working with RadWindow
 
 This topic will explain you how to work with the __RadWindow__ in details.
 

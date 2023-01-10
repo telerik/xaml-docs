@@ -8,7 +8,7 @@ published: False
 position: 0
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadGridView Data Binding
 
 
 Displaying data in the __RadGridView__ depends on the data binding mechanism. The entry point for the data to be bound is the __ItemsSource__ property, which you must set in order to display data in your __RadGridView__ control.

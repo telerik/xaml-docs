@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadTreeView Keyboard Support
 
 __RadTreeView__ allows you to navigate through the nodes without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation, editing, expanding, collapsing and selecting the nodes.
 

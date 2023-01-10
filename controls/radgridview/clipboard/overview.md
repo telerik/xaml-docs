@@ -8,7 +8,7 @@ published: False
 position: 0
 ---
 
-# Clipboard Overview
+# {{ site.framework_name }} RadGridView Clipboard Overview
 
 ![{{ site.framework_name }} RadGridView Copy Paste Clipboard](images/RadGridView_ClipboardOperations.png)
 

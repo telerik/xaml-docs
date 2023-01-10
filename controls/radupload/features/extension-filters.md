@@ -9,7 +9,7 @@ position: 7
 site_name: Silverlight
 ---
 
-# Extension Filters
+# {{ site.framework_name }} RadUpload Extension Filters
 
 You are able to specify the types of files that are displayed in the Browse dialog window. This is done by specifying extension filters and setting them to the __Filter__ property of the __RadUpload.__ The string value should have the following format - __"Filter Name|extension1;extension2;...extensionN"__. Here is an example of a __RadUpload__ control with a filter for image files.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Applied DataFormatString on a Column
+# {{ site.framework_name }} RadGridView Applied DataFormatString on a Column
 
 
 

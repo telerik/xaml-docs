@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadBadge Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains a __RadBadge__ control.
 

@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Custom Cell Content
+# {{ site.framework_name }} RadVirtualGrid Custom Cell Content
 
 As of **R2 2022**, the RadVirtualGrid allows you to display any control as the content of its cells.
 

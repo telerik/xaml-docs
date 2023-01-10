@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Implement Custom Map Provider
+# {{ site.framework_name }} RadMap Implement Custom Map Provider
 
 If you need to consume a service which does not have a default provider, you can create a custom map provider and set it as the **Provider** property of the **RadMap** control.
 

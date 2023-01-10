@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Customize Chart Legend - Add ScrollViewer
+# {{ site.framework_name }} RadChart Customize Chart Legend - Add ScrollViewer
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Layout Strategies
+# {{ site.framework_name }} RadTreeMap Layout Strategies
 
 By the end of this help topic you will learn about the *Layout Strategies* which are responsible for data tiling in the __RadTreeMap__ and __RadPivotMap__ controls.
 *Treemap *algorithms represent hierarchical data sets via recursive subdivision of the initial rectangle. The area of each rectangle in the treemap is proportional to the size of that particular node.

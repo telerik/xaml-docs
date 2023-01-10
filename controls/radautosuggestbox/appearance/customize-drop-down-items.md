@@ -7,7 +7,7 @@ tags: dropdown,style,customize,item,suggestion,itemtemplate,selector
 position: 1
 ---
 
-# Customize the Drop Down Items
+# {{ site.framework_name }} RadAutoSuggestBox Customize the Drop Down Items
 
 This article shows how to customize the drop down items appearance and the drop down size.
 

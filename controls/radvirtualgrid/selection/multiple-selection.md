@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Multiple Selection
+# {{ site.framework_name }} RadVirtualGrid Multiple Selection
 
 __RadVirtualGrid__ allows users to select more than one item from the displayed data. The default row/cell selection of the control is set to single mode. The multiple selection can be enabled through the __SelectionMode__ property by setting it either to __Multiple__ or __Extended__.
 

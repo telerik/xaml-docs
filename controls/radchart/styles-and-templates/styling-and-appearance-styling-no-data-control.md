@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Styling the No Data Control
+# {{ site.framework_name }} RadChart Styling the No Data Control
 
 
 

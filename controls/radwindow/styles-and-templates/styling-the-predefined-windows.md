@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the Predefined Dialogs
+# {{ site.framework_name }} RadWindow Styling the Predefined Dialogs
 
 This article explains how you could customize the look and feel of the predefined dialog windows. 
 

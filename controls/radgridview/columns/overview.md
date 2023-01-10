@@ -8,7 +8,7 @@ published: False
 position: 0
 ---
 
-# Columns Overview
+# {{ site.framework_name }} RadGridView Columns Overview
 
 This chapter gives you detailed information about columns in __RadGridView__. The covered topics are:
 

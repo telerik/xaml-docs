@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Categorical Charts
+# {{ site.framework_name }} RadChart Categorical Charts
 
 
 

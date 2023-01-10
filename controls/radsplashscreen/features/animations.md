@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Animations
+# {{ site.framework_name }} RadSplashScreen Animations
 
 RadSplashScreen provides two built-in animations - one for opening and one for closing of the screen. 
 

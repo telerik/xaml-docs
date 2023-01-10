@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Data Binding Support Overview
+# {{ site.framework_name }} RadScheduleView Data Binding Support Overview
 
 Data binding allows you to establish a link between the UI and the underlying business logic and keep them synchronized. It means that when a value is changed in the business layer, that change is automatically populated to the UI and vice versa. Of course, in order to work, you have to implement the proper notification or to use objects that have already implemented it.        
 

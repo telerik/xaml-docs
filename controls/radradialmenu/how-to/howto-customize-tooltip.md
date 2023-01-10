@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customize the ToolTip
+# {{ site.framework_name }} RadRadialMenu Customize the ToolTip
 
 This topic describes how to customize the ToolTip shown while hovering a __RadialMenuItem__. By default the ToolTip will display the Header of the item.      
 

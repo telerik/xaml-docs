@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Secondary Progress Indicator
+# {{ site.framework_name }} RadCircularProgressBar Secondary Progress Indicator
 
 `RadCircularProgressBar` allows you to visualize a second progress indicator. This is intended for scenarios where the primary indicator depends on the process of the secondary one. To display the second progress indicator, set the `SecondaryValue` property.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadDiagram Overview
 
 With the __R1 2019__ version Telerik UI for WPF we have introduced the __RadDiagramRibbon__ control. It allows users to examine and modify the settings of the diagramming items in run-time.
 

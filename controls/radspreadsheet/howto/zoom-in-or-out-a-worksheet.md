@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Zoom In or Out a Worksheet
+# {{ site.framework_name }} RadSpreadsheet Zoom In or Out a Worksheet
 
 This article describes how you can change the zoom level of the [Worksheet](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/model/worksheet), which helps to take a close-up view of your **Worksheet** or to zoom out to see more of the page at a reduced size.
 

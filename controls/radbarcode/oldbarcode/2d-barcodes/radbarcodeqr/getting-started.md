@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadBarcode Getting Started
 
 >important This is the documentation of the old version of the RadBarcode component, which is currently deprecated. Check out the new version [here]({%slug barcode-getting-started%}).
 

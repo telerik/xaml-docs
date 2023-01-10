@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Tooltip
+# {{ site.framework_name }} RadChartView Tooltip
 
 RadChartView provides a tooltip behavior which can be used to visualize arbitrary information related to a data point. The tooltip is enabled by adding __ChartToolTipBehavior__ in the __Behaviors__ collection of RadCartesianChart. To display it you can position the mouse cursor over a data point visual.
 

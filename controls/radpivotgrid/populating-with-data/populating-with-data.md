@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Populating with Data
+# {{ site.framework_name }} RadPivotGrid Populating with Data
 
 __RadPivotGrid__ and __RadFieldListControl__ are data-aware control, designed to display data in a tabular form. Both controls cannot work without data source. It can be any collection implementing IEnumerable interface, bounded to a DataBase or even bound to a Cube.      
 

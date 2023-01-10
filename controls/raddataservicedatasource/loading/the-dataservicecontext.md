@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# The DataServiceContext
+# {{ site.framework_name }} RadDataServiceDataSource The DataServiceContext
 
 __RadDataServiceDataSource__ requires a __DataServiceContext__ and a __DataServiceQuery&lt;T&gt;__ in order to connect to a remote server. 
 

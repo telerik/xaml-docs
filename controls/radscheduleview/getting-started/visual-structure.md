@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadScheduleView Visual Structure
 
 This help article will help you understand the main concepts used in the scope of the RadScheduleView control.
 

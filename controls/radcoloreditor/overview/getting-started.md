@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadColorEditor Getting Started
 
 This article will help you get started with the Telerik RadColorEditor control
 

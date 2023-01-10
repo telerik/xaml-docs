@@ -8,7 +8,7 @@ publish: True
 position: 2
 ---
 
-# Chapters
+# {{ site.framework_name }} RadMediaPlayer Chapters
 
 Each __RadMediaItem__ element can contain a number of chapters. A chapter is like a marker on the timeline of a movie, which can be used to jump to a specific moment in the movie. Each chapter has a __Position__ and __Content__ (__RadMediaChapter__ derives from __ContentControl__) properties. 
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Set DragCue Feedback for Denying a Drop
+# {{ site.framework_name }} RadTreeView Set DragCue Feedback for Denying a Drop
 
 This topic demonstrates how to deny a drop operation over a specific item and specify a visual feedback indicating the operation is not allowed.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Resizing
+# {{ site.framework_name }} RadWindow Resizing
 
 In order to resize the __RadWindow__ the user just have to drag its border in the desired direction. The [Minimizing and Maximizing]({%slug radwindow-features-minimizingmaximazing%}) are also ways of changing the __RadWindow__ size. However, you are able to restrict the user from resizing the __RadWindow__. This is done by setting the __ResizeMode__ property to one of the following values:
 

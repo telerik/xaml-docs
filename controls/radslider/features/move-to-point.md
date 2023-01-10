@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Move to point
+# {{ site.framework_name }} RadSlider Move to point
 
 
 

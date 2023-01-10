@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Icons
+# {{ site.framework_name }} RadMenu Icons
 
 The __RadMenu__ allows you to display an icon for each of the menu items. This can be done by setting the __Icon__ property of the __RadMenuItem__. For the icon to be displayed as expected, you have to either provide an element of type __Image__ for it or also set the **IconTemplate** property of the item.
 

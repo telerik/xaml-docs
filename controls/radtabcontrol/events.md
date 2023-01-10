@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadTabControl Events
 
 This article lists the events specific for the __RadTabControl__ control.
 

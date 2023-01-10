@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styles and Templates
+# {{ site.framework_name }} RadTabbedWindow Styles and Templates
 
 RadTabbedWindow allows you to easily modify its appearance by providing some useful properties.
 

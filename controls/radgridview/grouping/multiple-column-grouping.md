@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Multiple-Column Grouping
+# {{ site.framework_name }} RadGridView Multiple-Column Grouping
 
 On the snapshot you can see how the data in the __RadGridView__ is grouped by two columns - the __Country__ and the __Title__. The data is first grouped by the __Country__ column and then the data in the separate groups is grouped again by the __Title__ column.
 

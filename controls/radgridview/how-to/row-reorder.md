@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Enable Row Reordering within two RadGridView-s
+# {{ site.framework_name }} RadGridView Enable Row Reordering within two RadGridView-s
 
 RadGridView does provide you with a great amount of built-in features that enable you to extend its functionality so that it suits your needs best. However, in some cases you may require to empower the control more and implement some additional functionality. An example for this would be the integration of __row reordering__ feature for your RadGridView(s). 
 

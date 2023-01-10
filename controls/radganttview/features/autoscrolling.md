@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# AutoScrolling
+# {{ site.framework_name }} RadGanttView AutoScrolling
 
 This feature will help end users by auto scrolling the visible area of the view while dragging __GanttTasks__ in the control.
 

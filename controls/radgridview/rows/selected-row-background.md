@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# SelectedBackground and MouseOverBackground
+# {{ site.framework_name }} RadGridView SelectedBackground and MouseOverBackground
 
 The __GridViewRow__ element exposes properties which allow you to change the default brush used for its selected and mouseover states. Those are __SelectedBackground__ and __MouseOverBackground__.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadColorPicker Data Binding
 
 The ColorPicker component allows data binding to properties of a business object. This article shows how to setup a view model and bind it to the `RadColorPicker` control.
 

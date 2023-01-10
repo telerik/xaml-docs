@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changing the Viewport
+# {{ site.framework_name }} RadMap Changing the Viewport
 
 The viewport of the __Map__ control is the area currently visible within the map's bounds. This area can be controlled by utilizing the `ZoomLevel`, `Zoom`, and `Center` properties of `RadMap`.
 

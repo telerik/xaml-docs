@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Using DayTemplateSelector
+# {{ site.framework_name }} RadCalendar Using DayTemplateSelector
 
 This help topic explains in details how you can customize and apply a different __DataTemplate__ to __RadCalendar’s__ buttons by creating a custom __DataTemplateSelector__.
 

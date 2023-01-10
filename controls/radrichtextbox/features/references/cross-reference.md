@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Cross-Reference
+# {{ site.framework_name }} RadRichTextBox Cross-Reference
 
 
 

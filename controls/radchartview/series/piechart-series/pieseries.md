@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# PieSeries
+# {{ site.framework_name }} RadChartView PieSeries
 
 This series is visualized on the screen as a circle constructed with separate pie slices representing each of the data points.
 

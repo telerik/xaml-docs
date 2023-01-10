@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Events Overview
+# {{ site.framework_name }} RadGridView Events Overview
 
 This topic covers the specific events exposed by the __RadGridView__ control and its sub elements __GridViewColumn__, __GridViewRow__ and __GridViewCell__. The events are first grouped by control and then by their general purpose.
 

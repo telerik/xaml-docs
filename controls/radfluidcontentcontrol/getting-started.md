@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadFluidContentControl Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains __RadFluidContentControl__.
 

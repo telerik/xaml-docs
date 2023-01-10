@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customizing PolarChart Series
+# {{ site.framework_name }} RadChartView Customizing PolarChart Series
 
 This article demonstrates how you can change the default look of the __RadPolarChart__ series.
 

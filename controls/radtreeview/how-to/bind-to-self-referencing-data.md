@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Bind RadTreeView to Self-Referencing Data
+# {{ site.framework_name }} RadTreeView Bind RadTreeView to Self-Referencing Data
 
 This tutorial will show you how to display a __RadTreeView__ with flat, self-referencing data, loaded from a database, that has properties __ID__ and __ParentID__ (or similar) which define the hierarchy. 
 

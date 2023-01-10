@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Data Validation
+# {{ site.framework_name }} RadGridView Data Validation
 
 One of the most important features provided by __RadGridView__ is the __data validation__. Data validation features enable you to take complete control of the data entered in your grid's cells.
       

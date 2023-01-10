@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to Enter Only Positive Numbers
+# {{ site.framework_name }} RadMaskedInput How to Enter Only Positive Numbers
 
 You can control the values entered in the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls to allow only positive input.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# RadialMenu Commands
+# {{ site.framework_name }} RadRadialMenu RadialMenu Commands
 
 __RadRadialMenu__ control supports the following commands: 
 

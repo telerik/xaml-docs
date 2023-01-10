@@ -8,7 +8,7 @@ published: True
 position: 20
 ---
 
-# Last row is not fully visible
+# {{ site.framework_name }} RadGridView Last row is not fully visible
 
 __PROBLEM__
 

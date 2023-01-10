@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadCarousel
 ---
 
-# Overview
+# {{ site.framework_name }} RadCarousel Overview
 
 RadCarousel for WPF is an innovative control for interactive navigation of data, using circular or free-form motion paths. It presents complex data from a whole new perspective and gives a sense of 3D application interface.
 

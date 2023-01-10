@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# EventToCommandBehavior
+# {{ site.framework_name }} RadGridView EventToCommandBehavior
 
 The __EventToCommandBehavior__allows you to easily bind a particular RadGridView event to a command in your ViewModel.
         

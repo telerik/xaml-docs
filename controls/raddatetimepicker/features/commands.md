@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Commands
+# {{ site.framework_name }} RadDateTimePicker Commands
 
 This article provides an information about the following commands that __RadDateTimePicker__ exposes through  the __RadDateTimePickerCommands__ static class:
 

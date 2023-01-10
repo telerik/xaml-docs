@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Removing Items
+# {{ site.framework_name }} RadDiagram Removing Items
 
 __RadDiagram__ gives you the ability to remove __RadDiagramItems__ interactively, programmatically or with DiagramCommands.	  
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Pinned/Unpinned Panes
+# {{ site.framework_name }} RadDocking Pinned/Unpinned Panes
 
 Each __RadPane__ provides built-in pin/unpin functionality that allows you to control the behavior and the visualization of the docked __RadPanes__ during run-time.
 

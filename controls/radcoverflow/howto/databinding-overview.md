@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Bind to Objects
+# {{ site.framework_name }} RadCoverflow Bind to Objects
 
 Since RadCoverFlow is an ItemsControl, it can easily be bound to any collection of items. In this section we will bind RadCoverFlow to an ObservableCollection of type string. Each item in this collection will contain the path to a particular image. The end result should be similar to the one bellow.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Panning
+# {{ site.framework_name }} RadImageEditor Panning
 
 The __PanTool__ is one of the tools that come out-of-the-box with the __RadImageEditor__ and enables you to pan the image using the mouse. 
 

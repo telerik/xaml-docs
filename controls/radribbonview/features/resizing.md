@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Resizing
+# {{ site.framework_name }} RadRibbonView Resizing
 
 One of the most important features of the __RadRibbonView__ control is the dynamic layout resizing. It refers to the __RadRibbonView__'s ability to optimize its layout depending on how much space is available. This process can't be automated, however, the __RadRibbonView__'s API gives you the ability to specify how you would like the resizing to occur.
 

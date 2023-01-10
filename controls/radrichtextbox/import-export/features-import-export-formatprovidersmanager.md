@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Format Providers Manager
+# {{ site.framework_name }} RadRichTextBox Format Providers Manager
 
 
 __RadRichTextBox__ contains the **DocumentFormatProvidersManager** class that allows you to specify a set of format providers which can be used importing or exporting files letting the manager choose the appropriate format provider. The class also exposes methods that return all registered providers and supported file extensions.

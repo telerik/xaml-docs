@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Tools Overview
+# {{ site.framework_name }} RadDiagram Tools Overview
 
 Essentially the diagramming tools are a way of encapsulating series of related events usually triggered by an explicit action from the user. 
 

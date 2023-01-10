@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Break
+# {{ site.framework_name }} RadRichTextBox Break
 
 
 Break element is an inline-level flow content element, which indicates that a break should be placed at the current position. There are three types of breaks:

@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Bind RadTreeView to Hierarchical Data from WCF Service and Use Load on Demand
+# {{ site.framework_name }} RadTreeView Bind RadTreeView to Hierarchical Data from WCF Service and Use Load on Demand
 
 The purpose of this tutorial is to show you how to populate __RadTreeView__ with hierarchical data loaded from WCF service.
 

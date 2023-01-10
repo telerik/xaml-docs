@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to Customize the Calendar Buttons
+# {{ site.framework_name }} RadCalendar How to Customize the Calendar Buttons
 
 
 Customizing the buttons in __RadCalendar__ could easily be achieved by creating a custom StyleSelector and setting it to the __DayButtonStyleSelector__ property of the control.

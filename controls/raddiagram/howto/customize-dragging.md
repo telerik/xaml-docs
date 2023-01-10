@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Restrict the Draggable Area
+# {{ site.framework_name }} RadDiagram Restrict the Draggable Area
 
 The __Diagramming Framework__ implements a __DraggingService__ that controls and configures the drag operations on the diagram surface.			
 

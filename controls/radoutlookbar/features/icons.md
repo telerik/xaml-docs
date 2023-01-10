@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Icons
+# {{ site.framework_name }} RadOutlookBar Icons
 
 The __RadOutlookBarItems__ expose the __Icon__ and __SmallIcon__ properties. They are of type __BitmapSource__ and they define the source of the picture placed infront of the content of the __RadOutlookBarItem__. The bar items expose an additional __IconMargin__ property. It is used to get or set the margin of the __Icon__ element inside of the item. 
 

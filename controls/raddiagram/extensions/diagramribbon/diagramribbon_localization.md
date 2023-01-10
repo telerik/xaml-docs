@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Localization
+# {{ site.framework_name }} RadDiagram Localization
 
 The built-in localization mechanism in the platform allows you to localize the __RadDiagramRibbon__ control.
 

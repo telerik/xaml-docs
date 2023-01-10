@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Sorting with DataProvider
+# {{ site.framework_name }} RadVirtualGrid Sorting with DataProvider
 
 When __RadVirtualGrid__ populates its data through the __DataProvider__ mechanism, the sorting operation will be handled out-of-the-box. By default, the sorting of the control is enabled. The user can sort the data through the UI by clicking the column headers. Each click on a given column header will go to the consequent sorting state from one of the following ones: __Ascending__, __Descending__ and __No Sort__.
 

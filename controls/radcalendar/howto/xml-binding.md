@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# XML Binding
+# {{ site.framework_name }} RadCalendar XML Binding
 
 The current version of Silverlight does not support direct XML binding but __LINQ to XML__ can be used to retrieve the necessary data. The following example loads a collection of dates from an xml file and assigns them as the selected dates of a calendar.
 

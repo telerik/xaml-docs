@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Printing
+# {{ site.framework_name }} RadDiagram Printing
 
 This tutorial describes the Diagramming framework printing functionality.
 

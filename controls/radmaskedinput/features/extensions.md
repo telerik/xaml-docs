@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# MaskedInputExtensions
+# {{ site.framework_name }} RadMaskedInput MaskedInputExtensions
 
 The __MaskedInputExtensions__ class allows you to further customize the __MaskedInput__ controls controlled input.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Using HtmlFormatProvider
+# {{ site.framework_name }} RadRichTextBox Using HtmlFormatProvider
 
 __HtmlFormatProvider__ makes it easy to import and export __RadDocument__ to/from HTML format, preserving as much as possible of the document structure and formatting.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Cannot group, sort and filter a specific column
+# {{ site.framework_name }} RadGridView Cannot group, sort and filter a specific column
 
 __PROBLEM__
 

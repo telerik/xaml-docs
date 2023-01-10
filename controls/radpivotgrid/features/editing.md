@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Editing 
+# {{ site.framework_name }} RadPivotGrid Editing
 
 As of **R1 2018**, the **RadPivotGrid** control allows you to implement your custom editing logic through its **EditProvider** property and **EditEnded** event.
 

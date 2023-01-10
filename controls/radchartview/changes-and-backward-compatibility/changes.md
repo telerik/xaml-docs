@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadChartView Changes
 
 This article lists the __new features__ added to __RadChartView__.
 

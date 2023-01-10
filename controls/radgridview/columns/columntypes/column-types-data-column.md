@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Data Column
+# {{ site.framework_name }} RadGridView Data Column
 
 __GridViewDataColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of its functionality. In addition, it automatically creates appropriate editor elements based on the bound data type without you needing to specify a [CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%}) explicitly.
 

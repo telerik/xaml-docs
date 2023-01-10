@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Create Custom Connection Cap
+# {{ site.framework_name }} RadDiagram Create Custom Connection Cap
 
 This tutorial will guide you through the task of creating custom connection cap. The final result will look like this.
 

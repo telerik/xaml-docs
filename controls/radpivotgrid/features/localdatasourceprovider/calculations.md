@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Calculations
+# {{ site.framework_name }} RadPivotGrid Calculations
 
 __RadPivotGrid__ can apply different calculations on your data. Instead of presenting the whole Total number by using calculations you can show other information - for example what percentage of the GrandTotal is the value in particular cell.      
 

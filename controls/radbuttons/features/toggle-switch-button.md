@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Toggle Switch Button
+# {{ site.framework_name }} RadButtons Toggle Switch Button
 
 __RadToggleSwitchButton__ is a control design to display two exclusive choices. The control is represented by a track in which the thumb is smoothly sliding left and right. The two states content can be customized along with their position. The button derives from our __RadToggleButton__ control. Because of the inheritance, it has all of the features of the __RadToggleButton__ control. 
 

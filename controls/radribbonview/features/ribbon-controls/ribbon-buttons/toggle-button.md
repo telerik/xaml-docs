@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Ribbon ToggleButton
+# {{ site.framework_name }} RadRibbonView Ribbon ToggleButton
 
 The __RadRibbonToggleButton__ represents an extension of the __RadToggleButton__. It provides an easier interaction with the __RadRibbonView__ control. What is special about the __RadRibbonToggleButton__ is that it has two states - checked and unchecked. To switch between these states just click on it.
 

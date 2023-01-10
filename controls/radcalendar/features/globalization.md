@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Globalization
+# {{ site.framework_name }} RadCalendar Globalization
 
 As of **R1 2017** RadCalendar supports the following .NET Framework calendar implementations:
 

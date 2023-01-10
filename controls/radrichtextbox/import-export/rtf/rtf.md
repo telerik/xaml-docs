@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Rtf
+# {{ site.framework_name }} RadRichTextBox Rtf
 
 
 The [Rich Text Format](http://en.wikipedia.org/wiki/Rich_Text_Format)(RTF) is a proprietary document file format developed by Microsoft for creating cross-platform documents. This format can be read by most of the word processing applications. 

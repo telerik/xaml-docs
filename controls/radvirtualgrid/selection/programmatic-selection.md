@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Programmatic Selection
+# {{ site.framework_name }} RadVirtualGrid Programmatic Selection
 
 ## Select Cell Region
 

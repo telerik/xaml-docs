@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadBarcodeLegacy Visual Structure
 
 There are a total of 40 versions available in the QRCode,  from 21 by 21 modules to 177 by  177 modules, increasing in steps of 4 modules per side. Naturally, higher versions are used to encode larger amounts of data:
 

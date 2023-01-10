@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Grouping
+# {{ site.framework_name }} RadTileList Grouping
 
 * [Manually Generated Tiles](#manually-generated-tiles)
 

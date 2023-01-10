@@ -9,7 +9,7 @@ position: 5
 site_name: WPF
 ---
 
-# Serialize AdomdDataProvider
+# {{ site.framework_name }} RadPivotGrid Serialize AdomdDataProvider
 
 > The implementation demonstrated in this article can also be reviewed in the [Serialize AdomdDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Serialization/AdomdProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
 

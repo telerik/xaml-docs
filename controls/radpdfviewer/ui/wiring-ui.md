@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Wiring UI
+# {{ site.framework_name }} RadPdfViewer Wiring UI
 
 RadPdfViewer provides commands and respective command descriptors that you can easily bind to when creating UI.      
 

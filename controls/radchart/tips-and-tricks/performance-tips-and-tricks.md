@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Performance Tips and Tricks
+# {{ site.framework_name }} RadChart Performance Tips and Tricks
 
 When having scenarios with large sets of data, you can experience a lower __RadChart__ performance. Here is a list with some simple changes that can improve the performance in large data scenarios:
 

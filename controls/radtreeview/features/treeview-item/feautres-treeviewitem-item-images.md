@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Item Images
+# {{ site.framework_name }} RadTreeView Item Images
 
 __RadTreeView__ gives you the ability to define images for each item state. This tutorial will walk you through the following common tasks:
 

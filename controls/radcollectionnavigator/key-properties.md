@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadCollectionNavigator Key Properties
 
 The purpose of this help article is to show you the key properties of the __RadCollectionNavigator__ control. The topic includes the following properties:
 

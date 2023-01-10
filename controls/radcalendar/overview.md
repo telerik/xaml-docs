@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadCalendar
 ---
 
-# Overview
+# {{ site.framework_name }} RadCalendar Overview
 
 {% if site.site_name == 'Silverlight' %}
 RadCalendar is a fully featured data-input control providing the ability to display different views such as months, years, decades, centuries, multiple months view, etc. Additionally, you can select several dates at a time and define selection ranges.

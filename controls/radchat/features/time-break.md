@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Time Break
+# {{ site.framework_name }} RadChat Time Break
 
 The __TimeBreak__ mechanism of __RadChat__ is intended to encapsulate a group of messages for a given time interval. It can be either added manually or automatically.
 

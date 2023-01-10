@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# RadWindowManager
+# {{ site.framework_name }} RadWindow RadWindowManager
 
 __RadWindowManager__ is a singleton class that exposes several methods that act on all active __RadWindows__ in the current application.
 

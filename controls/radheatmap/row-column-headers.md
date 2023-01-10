@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-#  Row/Column Headers
+# {{ site.framework_name }} RadHeatMap Row/Column Headers
 
 The Row/Column headers of the RadHeatMap can be further customized through  the __RowHeaderSettings__ and __ColumnHeaderSettings__ properties. 
 

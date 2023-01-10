@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How-to: Set properties to the child gridview
+# {{ site.framework_name }} RadGridView How-to: Set properties to the child gridview
 
 
 Usually, you create the gridview hierarchy by using the __TableDefinition__ and adding it to the __ChildTableDefinitions__ collection of __RadGridView__. 

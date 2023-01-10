@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadDataForm Keyboard Support
 
 __RadDataForm__ allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing. This article will walk you through the following sections.
 

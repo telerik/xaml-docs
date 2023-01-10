@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customizing FunnelChart Series
+# {{ site.framework_name }} RadChartView Customizing FunnelChart Series
 
 This article demonstrates how you can change the default look of the __RadFunnelChart__ series.
       

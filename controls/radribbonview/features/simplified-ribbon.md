@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Simplified Ribbon
+# {{ site.framework_name }} RadRibbonView Simplified Ribbon
 
 Since the __R2 2019__ version, you have the option of changing the default layout mode to a simplified one. The idea of the simplified layout is to be more compact and take up less vertical space on the screen. 
 

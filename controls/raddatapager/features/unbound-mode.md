@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Unbound Mode
+# {{ site.framework_name }} RadDataPager Unbound Mode
 
 
 There are scenarios, in which you might want to use the __RadDataPager__ only for its UI without passing any data to it. This scenarios will require you to use the RadDataPager's __Unbound Mode__ feature. The use of this feature consists in setting some of the __RadDataPager's__ properties manually and handling a few events.

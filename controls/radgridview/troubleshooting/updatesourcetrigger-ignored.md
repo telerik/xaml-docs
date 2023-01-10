@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# UpdateSourceTrigger Property is Ignored
+# {{ site.framework_name }} RadGridView UpdateSourceTrigger Property is Ignored
 
 __PROBLEM__
 

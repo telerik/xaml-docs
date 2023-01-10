@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Add ToolTip for Columns and Headers
+# {{ site.framework_name }} RadGridView Add ToolTip for Columns and Headers
 
 This article demonstrates how to set the tooltip of the gridview's rows, columns and column headers.
 

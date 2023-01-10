@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Items Virtualization
+# {{ site.framework_name }} RadMap Items Virtualization
 
 There are numerous scenarios where large number of items should be visualized on the map surface. Using large data source within the visualization layer can decrease the overall performance of the map control, especially the initial loading and the performance during zooming or panning. This is why the visualization layer API supports __UI Virtualization__, which processes information only inside the current viewport of the RadMap thus boosting the initial loading and the overall performance of the control.      
 

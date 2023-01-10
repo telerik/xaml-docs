@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Add Computed Properties on the Client
+# {{ site.framework_name }} RadDomainDataSource Add Computed Properties on the Client
 
 
 

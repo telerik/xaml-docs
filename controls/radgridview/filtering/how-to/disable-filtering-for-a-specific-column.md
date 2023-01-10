@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Disable Filtering for a Specific Column
+# {{ site.framework_name }} RadGridView Disable Filtering for a Specific Column
 
 You can disable the filtering for a specific column by setting its **IsFilterable** property to **False**. This will hide the filtering UI of the respective column and the end user will not be able to perform filtering. The property's default value is **True**.
 

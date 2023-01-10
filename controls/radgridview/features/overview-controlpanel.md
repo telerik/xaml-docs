@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Control Panel
+# {{ site.framework_name }} RadGridView Control Panel
 
 The Control Panel is a feature of the RadGridView that provides the end user with the option to change different configurations related to RadGridView's settings through additional elements positioned on the top right of the control.
 

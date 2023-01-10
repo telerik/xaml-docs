@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Appearance
+# {{ site.framework_name }} RadButtons Appearance
 
 To customize the appearance of the __RadButtons__, you can use the standard properties that are provided by the __Control__ class, like __Background__, __Foreground__, __Effect__ etc.
 

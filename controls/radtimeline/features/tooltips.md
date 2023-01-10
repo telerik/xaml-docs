@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Tooltips
+# {{ site.framework_name }} RadTimeline Tooltips
 
 __RadTimeline__ supports tooltips for its items. You can specify a tooltip template and display the details of the item itself. The purpose of this topic is to show you how this can be achieved.
 

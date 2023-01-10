@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# GroupStyleSelector
+# {{ site.framework_name }} RadPropertyGrid GroupStyleSelector
 
 This article will show you how to style RadPropertyGrid's group rows conditionally by applying __GroupStyleSelector__.
 		

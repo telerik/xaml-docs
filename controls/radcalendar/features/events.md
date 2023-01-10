@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Events
+# {{ site.framework_name }} RadCalendar Events
 
 The __RadCalendar__ exposes three events that can be handled: __SelectionChanged__, __DisplayDateChanged__ and __DisplayModeChanged__. The events are routed events but can also be handled like normal events: 
 

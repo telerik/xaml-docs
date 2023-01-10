@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Use Callout as Thumb ToolTip in RadSlider
+# {{ site.framework_name }} RadCallout Use Callout as Thumb ToolTip in RadSlider
 
 The RadCallout can be easily used as a tooltip for the RadSlider control. To do that, we can use the __AutoToolTipContentTemplate__ property of the RadSlider to place the RadCallout inside the Thumb ToolTip. Then we need to remove the Border of the ToolTip and make it transparent so that only the content (RadCallout) is visible. The code snippet in __Example 1__ demonstrates this approach.  
 

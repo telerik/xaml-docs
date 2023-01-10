@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# How to Select Control in Expression Blend
+# {{ site.framework_name }} RadTabControl How to Select Control in Expression Blend
 
 To select control click __Selection__ (in the Toolbox, and then select the control on the artboard. You may have to click the object several times if its parent container is not already activated. Double-clicking an object on the artboard when you are using the Selection tool, activates the object's parent container.
 

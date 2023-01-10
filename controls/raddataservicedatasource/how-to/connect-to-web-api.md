@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Connect to Web API 2
+# {{ site.framework_name }} RadDataServiceDataSource Connect to Web API 2
 
 This article will show you how you can consume the data provided by a Web API 2 service with RadDataServiceDataSource and display it in a RadGridView control. The information in this article has been split in the following sections:
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# ItemTemplate
+# {{ site.framework_name }} RadLegend ItemTemplate
 
 The RadLegend control exposes an ItemTemplate property which you can use to change the default ItemTemplate. The DataContext of the template is a LegendItem object.
 

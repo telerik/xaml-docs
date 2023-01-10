@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Adding New Entries
+# {{ site.framework_name }} RadGridView Adding New Entries
 
 RadGridView comes with out-of-the-box insert functionality.
 

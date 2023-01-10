@@ -7,7 +7,7 @@ tags: custom,tagger,radsyntaxeditor
 position: 4
 ---
 
-# Custom Tagger
+# {{ site.framework_name }} RadSyntaxEditor Custom Tagger
 
 To create a custom tagger, you can inherit from the **abstract generic TaggerBase** class. You then need to implement the abstract **GetTags** method which is responsible for acquiring all spans of tags which meet a specific condition.
 

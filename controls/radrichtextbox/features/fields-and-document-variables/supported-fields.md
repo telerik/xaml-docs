@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Supported Fields
+# {{ site.framework_name }} RadRichTextBox Supported Fields
 
 This topic describes the field types that are supported out of the box in RadRichTextBox as well as the switches which can be used in combination with them.
 

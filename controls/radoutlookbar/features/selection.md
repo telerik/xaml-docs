@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Selection
+# {{ site.framework_name }} RadOutlookBar Selection
 
 ## Handling selection changes
 

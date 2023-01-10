@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Use Keyboard to Get User Response
+# {{ site.framework_name }} RadWindow Use Keyboard to Get User Response
 
 When you have an application that uses __RadWindow__ to get user response, it's common to alleviate the user experience by giving the user a chance to use the keyboard. For example, it's natural to accept response button by clicking the keyboard __Enter__ button, and respectively to cancel response by pressing the __ESC__ button. __RadWindow__ addresses this issue by the __ResponseButton__ attached property.
 

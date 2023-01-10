@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# CloudUploadFile
+# {{ site.framework_name }} RadCloudUpload CloudUploadFile
 
 __CloudUploadFile__ is part of the __RadCloudUpload__ control. It is the entity that tracks all upload-related tasks. This class does not upload a file to the cloud. It encapsulates a provider, a file name and a file stream and handles all upload-related tasks, such as progress-tracking and cancellation. The __CloudUploadFile__ object is expected to be the __DataContext__ of the [RadCloudUploadListItem]({%slug radcloudupload-radclouduploadlistitem%}).        
 

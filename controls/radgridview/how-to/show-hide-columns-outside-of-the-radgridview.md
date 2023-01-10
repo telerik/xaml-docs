@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Show/Hide Columns outside of RadGridView
+# {{ site.framework_name }} RadGridView Show/Hide Columns outside of RadGridView
 
 This topic will show you how to choose which columns to be visible from outside of __RadGridView__. 
 

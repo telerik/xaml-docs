@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Filter a Collection Property
+# {{ site.framework_name }} RadGridView Filter a Collection Property
 
 By default, RadGridView will not be able to filter properties which are **IEnumerable**. However, with two of its features you can easily add this functionality - a custom [ColumnFilterDescriptor]({%slug gridview-filtering-programmatic%}) and a [custom column]({%slug gridview-add-button-column%}) to use this descriptor.
 

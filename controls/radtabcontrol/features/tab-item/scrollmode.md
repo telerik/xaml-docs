@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# ScrollMode
+# {{ site.framework_name }} RadTabControl ScrollMode
 
 __RadTabControl__ exposes the __ScrollMode__ property which allows you to control the scrolling of the tab items. When the width of the window does not allow all tabs to be displayed, two scrolling buttons appear to the left and to the right side of the tab items. You can choose one of the __ScrollMode__ values in order to control how the tab items should be scrolled. To demonstrate the different type of scrolling we are going to use the code in Example 1.
 

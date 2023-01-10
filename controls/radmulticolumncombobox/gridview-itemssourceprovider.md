@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# GridView ItemsSourceProvider
+# {{ site.framework_name }} RadMultiColumnComboBox GridView ItemsSourceProvider
 
 By default, __RadMultiColumnComboBox__ will have the RadGridView component integrated as its DropDown. For this purpose, the control utilizes the __GridViewItemsSourceProvider__.  This article will go through the different functionalities of RadGridView supported by the __GridViewItemsSourceProvider__.
 

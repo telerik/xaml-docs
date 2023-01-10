@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# How to Use RadDocking in Prism
+# {{ site.framework_name }} RadDocking How to Use RadDocking in Prism
 
 [Prism](https://github.com/PrismLibrary) can be thought of as a set of libraries for building scalable, maintainable and testable XAML applications. It provides a number of features such as modularity, view regions and commanding. A common scenario is to use the __RadDocking__ control with Prism. The recommended approach is to declare the entire Docking control as a Prism region and add the RadPanes as region Views, after which all that is required is to create a custom RegionAdapter that would adapt the control's PanesSource to that region’s Views.
 

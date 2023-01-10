@@ -8,7 +8,7 @@ published: True
 position: 19
 ---
 
-# Localize the Filtering UI
+# {{ site.framework_name }} RadGridView Localize the Filtering UI
 
 Localizing the strings used by the filtering UI is no different than localizing anything else. [This]({%slug gridview-localization2%}) article describes the localization process in greater details. Here are the particular filtering keys that you will be looking for:
 

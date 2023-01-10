@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customizing Items Layout
+# {{ site.framework_name }} RadTabControl Customizing Items Layout
 
 RadTabControl allows you to customize the items placement and lines ordering.
 

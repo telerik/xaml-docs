@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadChart Overview
 
 __Axes__ in a chart are used to display the dimensions of the data. The __X-axis__ and the __Y-axis__ are contained in the __ChartArea__ and can be customized in XAML or code-behind.
 

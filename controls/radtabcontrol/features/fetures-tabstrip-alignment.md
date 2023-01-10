@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Tabstrip alignment
+# {{ site.framework_name }} RadTabControl Tabstrip alignment
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Axis
+# {{ site.framework_name }} RadChartView Axis
 
 RadChartView plots data points in a coordinate system defined by its two axes. There are a few different types of axes and they are: __Linear__, __Logarithmic__, __DateTime__ and __Categorical__. This article discusses the common characteristics of all the axes as well as the specifics of the __LinerAxis__. The other types are discussed in their respective help articles.        
 

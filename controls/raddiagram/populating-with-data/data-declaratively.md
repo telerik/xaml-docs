@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Declaratively
+# {{ site.framework_name }} RadDiagram Declaratively
 
 This tutorial will walk you through the common task of populating __RadDiagram__ with Diagramming items declaratively.
 

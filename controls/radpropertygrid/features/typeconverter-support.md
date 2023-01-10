@@ -8,7 +8,7 @@ published: True
 position: 20
 ---
 
-# TypeConverter Support
+# {{ site.framework_name }} RadPropertyGrid TypeConverter Support
 
 In certain cases, __RadPropertyGrid__ is used for displaying and editing properties of custom data type. By default, in such scenarios the control will display the custom type as a string. RadPropertyGrid provides __TypeConverter__ support, meaning that this behavior can be modified by defining a custom __TypeConverter__. The main methods that are usually utilized when implementing a custom __TypeConverter__ are listed below.
 

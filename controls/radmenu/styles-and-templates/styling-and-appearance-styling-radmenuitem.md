@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the RadMenuItem
+# {{ site.framework_name }} RadMenu Styling the RadMenuItem
 
 In order to style RadMenuItem elements, you can set the __ItemContainerStyle__ property of the RadMenu or a create an implicit style targeting __RadMenuItem__.
 

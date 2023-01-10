@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# BarSeries
+# {{ site.framework_name }} RadChartView BarSeries
 
 This series is visualized on the screen as separate rectangles representing each of the data points. The height (width) of the box is the distance between the point’s numerical value and the categorical axis that plots the point.     
 

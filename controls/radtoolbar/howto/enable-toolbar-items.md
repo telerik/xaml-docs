@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Enable / Disable items state
+# {{ site.framework_name }} RadToolBar Enable / Disable items state
 
 You can control the IsEnabled state of the __RadToolBar__ items thus modifying the overall look of the control: 
 

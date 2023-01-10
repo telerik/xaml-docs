@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Categories
+# {{ site.framework_name }} RadScheduleView Categories
 
 __RadScheduleView__ provides you with a built-in categories support. You can assign a category to each one of your appointments, thus making them easily distinguishable.	
 

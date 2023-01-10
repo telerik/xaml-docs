@@ -8,7 +8,7 @@ publish: True
 position: 15
 ---
 
-# RelativeMomentumIndexIndicator
+# {{ site.framework_name }} RadChartView RelativeMomentumIndexIndicator
 
 RelativeMomentumIndexIndicator counts up and down periods from the current close value relative to a close value from a previous period.
 

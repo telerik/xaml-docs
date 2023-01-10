@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Backward Compatibility
+# {{ site.framework_name }} RadMaskedInput Backward Compatibility
 
 ## Telerik RadMaskedInput suite of controls - Q3 2011
 

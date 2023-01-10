@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Collapsible Panel
+# {{ site.framework_name }} RadRibbonView Collapsible Panel
 
 RadRibbonView's dynamic layout resizing allows you to optimize the layout depending on the available space. 
 

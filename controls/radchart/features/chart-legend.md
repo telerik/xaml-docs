@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Chart Legend
+# {{ site.framework_name }} RadChart Chart Legend
 
 
 

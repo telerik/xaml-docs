@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Localization
+# {{ site.framework_name }} RadPropertyGrid Localization
 
 
 

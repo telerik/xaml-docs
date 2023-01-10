@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Input Modes
+# {{ site.framework_name }} RadDateTimePicker Input Modes
 
 This __RadDateTimePicker__ fully replaces the functionality of the __RadTimePicker__ and __RadDatePicker__ controls. When you use a __RadDateTimePicker__ control you might want to specify that you need to use the calendar or the clock independently. 
 

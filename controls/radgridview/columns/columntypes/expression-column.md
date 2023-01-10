@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Expression Column
+# {{ site.framework_name }} RadGridView Expression Column
 
 __GridViewExpressionColumn__ derives from the [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class and allows you to display various calculations in RadGridView itself. The __GridViewExpressionColumn__ can be sorted and grouped like any other type of column.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadSlider Template Structure
 
 
 

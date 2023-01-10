@@ -8,7 +8,7 @@ published: False
 position: 8
 ---
 
-# Filtering - Useful Links
+# {{ site.framework_name }} RadGridView Filtering - Useful Links
 
 >__Important!__ Please check the [filtering breaking changes]({%slug radgridview-backward-compatibility%}) introduced with __Q1 2012__.
         

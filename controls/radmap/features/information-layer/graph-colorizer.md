@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Graph Colorizer
+# {{ site.framework_name }} RadMap Graph Colorizer
 
 The __RadMap__ provides Graph Colorizer which sets filling to the Map shapes using the coloring of graph approach as its name implies. In short when any 2 shapes which have common border they will be colored differently.
 

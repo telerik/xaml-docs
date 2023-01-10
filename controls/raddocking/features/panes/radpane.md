@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# RadPane
+# {{ site.framework_name }} RadDocking RadPane
 
 The __RadPane__ is the main content unit of the __RadDocking__ control. Its main purpose is to act as a host for your content. That's why in order to have a functional RadDocking control, you need to have at least one RadPane placed inside it.
 

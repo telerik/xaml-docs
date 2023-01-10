@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Key Features
+# {{ site.framework_name }} RadTabControl Key Features
 
 Below you can see the structure of the standard __RadTabControl__, plus short description of the top-of-the line features.
 ![{{ site.framework_name }} RadTabControl Key Features](images/RadTabControl_KeyFeatures_010.png)

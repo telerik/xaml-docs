@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# MVVM Support
+# {{ site.framework_name }} RadChart MVVM Support
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# State Indicator
+# {{ site.framework_name }} RadGauge State Indicator
 
 The __State Indicator__ is a shape with arbitrary size located anywhere in the scale. It gets colored in the same color as the range to which the indicator's value belong. Via the __ScaleObject.RelativeWidth__ and __ScaleObject.RelativeHeight__ attachable properties of the indicator you can specify its size. To position it, use the __ScaleObject.RelativeX__ and __ScaleObject.RelativeY__ attachable properties.
 

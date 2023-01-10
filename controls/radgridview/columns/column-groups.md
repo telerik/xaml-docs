@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Column Groups
+# {{ site.framework_name }} RadGridView Column Groups
 
 Columns in RadGridView may be grouped in __column groups__ visually represented by common column headers.
         

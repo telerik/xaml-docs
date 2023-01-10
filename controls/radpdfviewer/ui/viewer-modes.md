@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Viewer Modes
+# {{ site.framework_name }} RadPdfViewer Viewer Modes
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Cancel Drag Start
+# {{ site.framework_name }} RadTreeView Cancel Drag Start
 
 This article demonstrates how to cancel the drag operation before it started. This is useful when you want to forbid dragging specific items from the treeview control.
 

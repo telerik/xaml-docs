@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadDataFilter Getting Started
 
 __RadDataFilter__ is a control that allows you to filter your data. It allows you to create complex filter criteria within unlimited number of filter conditions combined by logical operators. You can easily add nested filter criteria by clicking on the button for adding nested operators. This topic will help you to quickly get started using this control. It will focus on the following:
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customizing Filtering Control
+# {{ site.framework_name }} RadCardView Customizing Filtering Control
 
 RadCardView filtering control can be customized in order to match the expected design or functionality.
 

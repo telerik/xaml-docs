@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Managing Docking Controls Dynamically
+# {{ site.framework_name }} RadDocking Managing Docking Controls Dynamically
 
 The purpose of this tutorial is to show you how to manage the __RadDocking__ control dynamically (using procedural code or XAML).
 

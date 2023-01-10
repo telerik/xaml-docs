@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadDateTimePicker Keyboard Support
 
 Using the keyboard you can perform some of the most common tasks. This section describes the keyboard shortcuts used by __RadDateTimePicker__.
 

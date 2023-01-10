@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Show on Current Screen
+# {{ site.framework_name }} RadDesktopAlert Show on Current Screen
 
 By default, the alerts displayed by the RadDesktopAlertManager are only shown on the primary screen.
 

@@ -7,7 +7,7 @@ tags: shape, tool, selection
 published: True
 ---
 
-# Selection Tool
+# {{ site.framework_name }} RadImageEditor Selection Tool
 
 The SelectionTool is one of the tools that come out-of-the-box with RadImageEditor. It allows you to select a specific area from an image and apply different effects to it.
 

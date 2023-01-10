@@ -9,7 +9,7 @@ position: 1
 include_in_navigation: False
 ---
 
-# Creating ItemTemplate and SelectionBoxTemplate
+# {{ site.framework_name }} RadComboBox Creating ItemTemplate and SelectionBoxTemplate
 
 The RadComboBox exposes the __ItemTemplate__ and __SelectionBoxTemplate__ properties which allow you to define a custom datatemplate for its drop down items and for its selected item when the RadComboBox is not editable. 
 

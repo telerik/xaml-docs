@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Delete Appointment
+# {{ site.framework_name }} RadScheduleView Delete Appointment
 
 This topic describes the work flow for deleting an appointment in __RadScheduleView__ control.
 

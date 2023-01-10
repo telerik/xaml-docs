@@ -7,7 +7,7 @@ tags: events,radsyntaxeditor
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadSyntaxEditor Events
 
 Here is a list of events exposed by the RadSyntaxEditor control:
 

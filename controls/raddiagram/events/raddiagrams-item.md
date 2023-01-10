@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Items Events
+# {{ site.framework_name }} RadDiagram Items Events
 
 This topic covers the specific events exposed by the __RadDiagramItem__. The events are grouped by their general purpose.	  
 

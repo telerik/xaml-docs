@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Grouping Events
+# {{ site.framework_name }} RadGridView Grouping Events
 
 There are two events that are raised, when the data in RadGridView is __grouped from the UI__.
       

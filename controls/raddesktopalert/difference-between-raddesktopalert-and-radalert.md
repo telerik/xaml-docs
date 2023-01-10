@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Difference from RadAlert
+# {{ site.framework_name }} RadDesktopAlert Difference from RadAlert
 
 In some cases you might get confused which control you need to use - __RadDesktopAlert__ or __RadAlert__. 
 

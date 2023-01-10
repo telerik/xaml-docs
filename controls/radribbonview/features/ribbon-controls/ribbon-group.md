@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Ribbon Group
+# {{ site.framework_name }} RadRibbonView Ribbon Group
 
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ consists of various elements, one of which is the __Ribbon Group__. This topic discusses concepts fundamental to the __Ribbon Group__ at first and then goes into the usage of the __RadRibbonGroup__ class and its features.	  
 

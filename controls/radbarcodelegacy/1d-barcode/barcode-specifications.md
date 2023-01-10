@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Specifications
+# {{ site.framework_name }} RadBarcodeLegacy Specifications
 
 This help topic describes the specific characteristics of the bar codes per type.
 

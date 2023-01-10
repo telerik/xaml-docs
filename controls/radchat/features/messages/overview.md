@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadChat Overview
 
 __RadChat__ provides a predefined set of message types. They all have some common functionality which is derived from the __MessageBase__ class. All messages have an __Author__ and __CreationDate__. The message value is dependent on the given message type so it is not common for all messages. 
 

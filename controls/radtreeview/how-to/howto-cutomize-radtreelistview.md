@@ -8,7 +8,7 @@ published: True
 position: 31
 ---
 
-# Customize RadTreeListView to look like a RadTreeView 
+# {{ site.framework_name }} RadTreeView Customize RadTreeListView to look like a RadTreeView
 
 This article will go through the customization of the RadTreeListView to look a like RadTreeView control. The article explained the benefit from using our __RadTreeListView__ control for visualizing hierarchical data as ordinary hierarchical control like RadTreeView. The reason why we suggest the approach is the fact that __RadTreeListView__ is a flat control. This means that it uses only one container to visualize all of its items. What this means for your application is that you can boost the performance of the scrolling and bringing into view functionalities, as well as the virtualization.
 

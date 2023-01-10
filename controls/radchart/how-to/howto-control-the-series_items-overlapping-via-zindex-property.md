@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Control the Series Items overlapping via ZIndex property
+# {{ site.framework_name }} RadChart Control the Series Items overlapping via ZIndex property
 
 
 

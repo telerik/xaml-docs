@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# RadRichTextBoxRibbonUI
+# {{ site.framework_name }} RadRichTextBox RadRichTextBoxRibbonUI
 
 This topic explains how the predefined UI of __RadRichTextBox__ - __RadRichTextBoxRibbonUI__ - can be used.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Transition Selection
+# {{ site.framework_name }} RadTransitionControl Transition Selection
 
 We had many requests on tips how to change the transitions based on some application logic. Such logic is for example:
 

@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# Enable the Horizontal and Vertical Scrollbars
+# {{ site.framework_name }} RadTreeView Enable the Horizontal and Vertical Scrollbars
 
 For example, you may have the following treeview: 
 

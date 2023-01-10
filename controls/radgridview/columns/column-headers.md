@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Column Headers
+# {{ site.framework_name }} RadGridView Column Headers
 
 This topic will guide you through the usage of the column headers, their customization as well through performing different data operations. 
 

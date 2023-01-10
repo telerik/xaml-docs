@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# DefaultView
+# {{ site.framework_name }} RadChart DefaultView
 
 
 

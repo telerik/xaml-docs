@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Show Help Button and Change its Image
+# {{ site.framework_name }} RadRibbonView Show Help Button and Change its Image
 
 The purpose of this tutorial is to demonstrate how to show the help button and change its image. 
 

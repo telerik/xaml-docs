@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadBusyIndicator
 ---
 
-# Overview
+# {{ site.framework_name }} RadBusyIndicator Overview
 
 Thank you for choosing __RadBusyIndicator__!
 

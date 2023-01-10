@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Creating the Client Application
+# {{ site.framework_name }} RadDataServiceDataSource Creating the Client Application
 
 Once you have created the _Server Application_, you may start developing the _Client_ one. 
 

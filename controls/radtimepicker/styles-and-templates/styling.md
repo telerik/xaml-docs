@@ -8,7 +8,7 @@ published: False
 position: 2
 ---
 
-# Styling
+# {{ site.framework_name }} RadTimePicker Styling
 
 RadTimePicker allows you to customize its appearance by using Styles.This example shows how different styles can be applied to time picker toggle button to build a custom appearance. You have to set TimePicker __IconButtonStyle__ property in order to have custom appearance.
 

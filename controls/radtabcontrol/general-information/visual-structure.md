@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadTabControl Visual Structure
 
 Below you can see the structure of the standard tab control.
 ![radtabcontrol visual-structure](images/radtabcontrol_visual-structure.png)

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Marker
+# {{ site.framework_name }} RadGauge Marker
 
 The __Marker__ is one of the indicator types that the __RadGauge__ control introduces. It directly inherits the __InteractiveIndicator__ class and doesn't introduce any specific features.
 

@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadSparkLine
 ---
 
-# Overview
+# {{ site.framework_name }} RadSparkLine Overview
 
 __RadSparkline__ is a set of controls that show an information graphic. The controls are characterized by small size, excellent performance and lightweight. By definition, the sparkline is mainly used to outline trends. However, it is very flexible in terms of data points generation and can contain from just a few points, to as many as thousands of data points.
 

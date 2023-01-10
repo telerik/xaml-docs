@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadAutoSuggestBox Keyboard Support
 
 The RadAutoSuggestBox control provides several actions executed via the keyboard.
 

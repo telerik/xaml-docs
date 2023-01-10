@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Populating TimeBar from WCF service with LINQ to SQL
+# {{ site.framework_name }} RadTimeBar Populating TimeBar from WCF service with LINQ to SQL
 
 This help topic will demonstrate how to populate TimeBar with data from database using WCF service and LINQ to SQL. For the purpose - follow the steps below:
 

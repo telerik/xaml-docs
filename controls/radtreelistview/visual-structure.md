@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadTreeListView Visual Structure
 
 
 

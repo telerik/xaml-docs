@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Styling the MapZoomBar
+# {{ site.framework_name }} RadMap Styling the MapZoomBar
 
 The __MapZoomBar__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 

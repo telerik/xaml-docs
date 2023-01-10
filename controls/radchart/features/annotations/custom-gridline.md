@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Custom Gridline
+# {{ site.framework_name }} RadChart Custom Gridline
 
 
 

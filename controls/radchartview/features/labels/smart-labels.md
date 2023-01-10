@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Smart Labels
+# {{ site.framework_name }} RadChartView Smart Labels
 
 Since the official __Q1 2014__ release all series exposed by the __RadCartesianChart__ and the __RadPieChart__ controls support smart labels. The term "smart labels" refers to labels positioned in such a way that they do not overlap one another. This positioning strategy is helpful when the series has large number of data points with visualized labels. You can take advantage of this functionality through the __SmartLabelsStrategy__ property of the charting components. It is of type __ChartSmartLabelsStrategyBase__ and gets or sets the object that controls the positioning of the labels.      
 

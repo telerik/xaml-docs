@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Add Scrolling to RadContextMenu
+# {{ site.framework_name }} RadContextMenu Add Scrolling to RadContextMenu
 
 Anytime you implement a RadContextMenu which displays a long list of items, or simply wish to limit the number of items visible in the menu, you can add scrolling functionality to RadContextMenu, and more specifically vertical scrolling. The process to do that is very simple and straightforward. This article will guide you through the process. 
 

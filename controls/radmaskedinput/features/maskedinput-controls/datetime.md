@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# MaskedDateTimeInput
+# {{ site.framework_name }} RadMaskedInput MaskedDateTimeInput
 
 The __RadMaskedDateTimeInput__ represents the basic control that can be used to restrict the input of DateTime values.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Group Checkable Menu Items into Radio Group
+# {{ site.framework_name }} RadMenu Group Checkable Menu Items into Radio Group
 
 This tutorial will show you how to group your checkable menu items into a radio group. This will allow you to have only one of them checked at a time.
 

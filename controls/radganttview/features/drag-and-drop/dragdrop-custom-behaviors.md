@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Custom Drag and Drop Behaviors
+# {{ site.framework_name }} RadGanttView Custom Drag and Drop Behaviors
 
 __RadGanttView__ provides the option to customize its DragDrop and Resize behaviors in order to add some custom logic for drag and drop as well as resizing of tasks. This topic describes all the available methods you can use to implement custom drag and drop/resizing functionality.
 

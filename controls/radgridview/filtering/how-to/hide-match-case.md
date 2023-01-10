@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Hide the Match Case option of the Filtering control
+# {{ site.framework_name }} RadGridView Hide the Match Case option of the Filtering control
 
 
 By default, the filtering control shows the Match Case option when the type of the data is string. This article shows how to hide this option (as some languages does not have a difference between lower and upper case letters).

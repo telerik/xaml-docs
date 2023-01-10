@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Drill-Down
+# {{ site.framework_name }} RadExpressionEditor Drill-Down
 
 As of **R1 2019**, the RadExpressionEditor control allows users to expand complex objects and access their sub-properties. This functionality is controlled by the new **IsFieldsDrillDownEnabled** property.
 

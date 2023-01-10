@@ -7,7 +7,7 @@ tags: raddocumentmerger, merge, insert, documents
 published: True
 ---
 
-# Append Documents
+# {{ site.framework_name }} RadRichTextBox Append Documents
 
 The [RadDocumentMerger]({%slug radrichtextbox-features-merge-raddocumentmerger%}) class exposes the AppendDocument() method that enables you to append a [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) instances.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How to Define Consecutive Input
+# {{ site.framework_name }} RadMaskedInput How to Define Consecutive Input
 
 In the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls if in the user input is similar to __4_5,_12,345__, each placeholder indicating that no value is added is replaced by a __0__, thus displaying the value of __405,012,345__:
 

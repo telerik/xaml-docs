@@ -7,7 +7,7 @@ tags: getting,started,navigationviewitem
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadNavigationView Getting Started
 
 This tutorial walks you through the creation of a sample application that contains a __RadNavigationView__ control. We also demonstrate a few optional features.
 			

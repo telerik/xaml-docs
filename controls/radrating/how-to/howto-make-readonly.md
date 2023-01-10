@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Make the RadRating read only
+# {{ site.framework_name }} RadRating Make the RadRating read only
 
 The purpose of this tutorial is to show you how to make the __RadRating__ read only.
 

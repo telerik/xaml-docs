@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadContextMenu Data Binding
 
 __RadContextMenu__ supports data binding to various data sources and services. Moreover, __RadContextMenu__ can be used in two modes:
 

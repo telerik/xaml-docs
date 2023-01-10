@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to Implement Conditional Docking
+# {{ site.framework_name }} RadDocking How to Implement Conditional Docking
 
 There are cases, in which you want to __disable__ the user's ability to __dock__ panes to any of the sides. In this case you need to implement conditional docking.
 

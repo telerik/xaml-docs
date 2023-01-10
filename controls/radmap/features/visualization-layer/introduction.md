@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Introduction
+# {{ site.framework_name }} RadMap Introduction
 
 The __VisualizationLayer__ allows you to display additional data on top of the displayed map. This data can be in the form of simple framework elements, pin points or map shapes. The VisualizationLayer works like the [ItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol.aspx) class so you are able to display multiple items in a single VisualizationLayer. You can even data bind the VisualizationLayer to a collection of the geographically positioned data.      
 

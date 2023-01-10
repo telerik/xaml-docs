@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Repeat Table Header Row
+# {{ site.framework_name }} RadRichTextBox Repeat Table Header Row
 
 When working with large tables, they are visualized in more than one page. Header row repetition means that the header row(s) of a table will repeat at the top of each page on which the table spans. This article will show you how to work with this feature.
 

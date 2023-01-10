@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Vertical ScrollBar
+# {{ site.framework_name }} RadTimeline Vertical ScrollBar
 
 The VerticalScrollBarVisibility property of RadTimeline configures the vertical scrolling behavior of control.
 

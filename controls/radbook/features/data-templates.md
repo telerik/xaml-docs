@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Data Binding and Data Templates
+# {{ site.framework_name }} RadBook Data Binding and Data Templates
 
 __RadBook__ is an __ItemsControl__ and can be populated by using its __ItemsSource__ property.
 

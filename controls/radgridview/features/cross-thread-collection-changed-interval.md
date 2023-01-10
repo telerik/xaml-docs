@@ -8,7 +8,7 @@ published: True
 position: 22
 ---
 
-# Cross Thread CollectionChanged Interval
+# {{ site.framework_name }} RadGridView Cross Thread CollectionChanged Interval
 
 RadGridView dispatches the ItemsSource collection changes made on a background thread back to the UI.
 

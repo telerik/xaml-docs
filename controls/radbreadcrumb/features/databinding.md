@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Databinding
+# {{ site.framework_name }} RadBreadcrumb Databinding
 
 The __RadBreacrumb__ provides extensive data binding support. You can  display flat data collections as well as hierarchical data. The following properties are exposed to help you implement data binding scenarios with the control:	  
 

@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# Series to Axes Dependencies
+# {{ site.framework_name }} RadChartView Series to Axes Dependencies
 
 The RadChartView series works with different combinations of axes. The purpose of this topic is to make you familiar with the axes supported by each series. 
 

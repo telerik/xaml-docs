@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Column Resizing 
+# {{ site.framework_name }} RadPivotGrid Column Resizing
 
 As of **R1 2019**, the **RadPivotGrid** control allows users to resize its columns. The user can easily change the column width by positioning the mouse over the column's vertical grid line and dragging it until the desired size is achieved.
 

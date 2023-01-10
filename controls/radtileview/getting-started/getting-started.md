@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadTileView Getting Started
 
 ## Adding the RadTileView to the page
 

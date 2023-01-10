@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Snapping Appointments
+# {{ site.framework_name }} RadScheduleView Snapping Appointments
 
 RadScheduleView provides the option to automatically snap the appointments while resizing/dragging them. This behavior is enabled through the __SnapAppointments__ Boolean property:
 

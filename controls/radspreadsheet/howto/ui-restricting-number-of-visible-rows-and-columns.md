@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Restrict the Number of Visible Rows and Columns
+# {{ site.framework_name }} RadSpreadsheet Restrict the Number of Visible Rows and Columns
 
 
 

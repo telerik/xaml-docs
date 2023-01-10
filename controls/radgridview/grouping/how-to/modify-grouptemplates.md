@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Modify GroupRow
+# {{ site.framework_name }} RadGridView Modify GroupRow
 
 This article explains how you can modify the default header and footer templates of the group row. You can do that by predefining the __GroupHeaderTemplate__ and __GroupFooterTemplate__ properties. 
 

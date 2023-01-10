@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Text Tool
+# {{ site.framework_name }} RadDiagram Text Tool
 
 This article describes the __TextTool__ that was exposed with the Q1 2013 release.
 

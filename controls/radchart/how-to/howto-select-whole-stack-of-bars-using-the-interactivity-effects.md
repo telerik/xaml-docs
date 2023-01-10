@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Select Whole Stack Of Bars Using The Interactivity Effects
+# {{ site.framework_name }} RadChart Select Whole Stack Of Bars Using The Interactivity Effects
 
 
 

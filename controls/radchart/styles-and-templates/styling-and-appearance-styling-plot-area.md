@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Styling the Plot Area
+# {{ site.framework_name }} RadChart Styling the Plot Area
 
 
 

@@ -9,7 +9,7 @@ position: 10
 site_name: Silverlight
 ---
 
-# Programmatic Upload
+# {{ site.framework_name }} RadUpload Programmatic Upload
 
 You can achieve programmatic upload by using the different methods exposed by the __RadUpload__ control. Here is a list of them:
 

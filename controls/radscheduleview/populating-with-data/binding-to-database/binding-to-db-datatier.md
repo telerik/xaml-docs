@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Table Definitions and Relationships
+# {{ site.framework_name }} RadScheduleView Table Definitions and Relationships
 
 The database diagram is very common to the class diagram of the RadScheduleView interfaces:
 

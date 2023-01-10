@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Invert Axis Range
+# {{ site.framework_name }} RadChartView Invert Axis Range
 
 The chart axis range is moving from left to right when horizontal and from bottom to top when vertical.
 

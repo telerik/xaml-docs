@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Clear Functionality
+# {{ site.framework_name }} RadCalculator Clear Functionality
 
 __RadCalculator__ supports all native clear functionality the end user is accustomed with.
 		  

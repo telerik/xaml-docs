@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Carousel Message
+# {{ site.framework_name }} RadChat Carousel Message
 
 The __CarouselMessage__ utilizes the [RadCarousel]({%slug carousel-overview%}) component for displaying its data. Its constructor accepts the following parameters.
 

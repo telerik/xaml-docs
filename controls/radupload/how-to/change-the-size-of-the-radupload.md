@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Change the Size of the RadUpload
+# {{ site.framework_name }} RadUpload Change the Size of the RadUpload
 
 Typically the size of a control is changed by setting its Width and Height properties, but as the __RadUpload__ has its dimensions limited by the __MaxHeight__, __MinHeight__ and __MinWidth__ properties, you have to modify them too in order to change the size of the controls. Here are the default values for these three properties:
 

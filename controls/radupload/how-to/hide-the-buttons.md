@@ -9,7 +9,7 @@ position: 2
 site_name: Silverlight
 ---
 
-# Hide the Buttons
+# {{ site.framework_name }} RadUpload Hide the Buttons
 
 If you want to implement your custom command UI outside of the __RadUpload__, you have to hide the __RadUpload's__ buttons. In order to hide them you have to get an instance of the desired button and modify its __Opacity__ and __IsHitTestVisible__ properties. Here is an example with the Upload and Cancel buttons.
 

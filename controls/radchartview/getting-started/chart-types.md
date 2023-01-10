@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Chart Types
+# {{ site.framework_name }} RadChartView Chart Types
 
 __RadChartView__ consists of three charting components that derive form the same base class - __RadChartBase__. This articles covers the charts' API properties and events.
 

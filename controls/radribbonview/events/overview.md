@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Events Overview
+# {{ site.framework_name }} RadRibbonView Events Overview
 
 This topic covers the specific events exposed by the __RadRibbonView__ control and its sub elements. The events are first grouped by control and then by their general purpose.			
 

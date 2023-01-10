@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Backward Compatibility
+# {{ site.framework_name }} RadButtons Backward Compatibility
 
 ## Telerik RadButtons - Q3 2011
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Custom GanttTask
+# {{ site.framework_name }} RadGanttView Custom GanttTask
 
 In __RadGanttView__ control you can create custom GanttTasks in order to customize the existing properties of the task or add custom properties. There are two approaches that could be used, the first one is to inherit from __GanttTask__ class and the second one is to create a class that implements __IGanttTask__, __ISummary__, __IMilestone__, __IDependant__ interfaces.
 

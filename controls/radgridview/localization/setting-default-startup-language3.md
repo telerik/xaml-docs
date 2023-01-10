@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Setting Default Startup Language
+# {{ site.framework_name }} RadGridView Setting Default Startup Language
 
 The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} provides the possibility to set your controls in whichever language you need. Up to now the supported languages are **English**, **German**, **Spanish**, **French**, **Dutch**, **Italian** and **Turkish**.
 

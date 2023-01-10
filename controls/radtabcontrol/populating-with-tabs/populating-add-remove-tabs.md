@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Add and Remove Tabs
+# {{ site.framework_name }} RadTabControl Add and Remove Tabs
 
 
 

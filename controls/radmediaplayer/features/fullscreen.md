@@ -8,7 +8,7 @@ publish: True
 position: 4
 ---
 
-# Fullscreen
+# {{ site.framework_name }} RadMediaPlayer Fullscreen
 
 __RadMediaPlayer__ allows you to display the media content in fullscreen mode by internally changing the application fullscreen mode. You can easily toggle the mode by pressing the __FullScreen__ button or changing the __IsFullScreen__ property.
 

@@ -8,7 +8,7 @@ published: True
 position: 19
 ---
 
-# Override Diagram Command
+# {{ site.framework_name }} RadDiagram Override Diagram Command
 
 This article will show you how to override the default behavior of the commands used across the __RadDiagram__ control. 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# .NET Core Support
+# {{ site.framework_name }} RadRichTextBox .NET Core Support
 
 Similarly to the other controls in **UI for WPF**, RadRichTextBox can be used in .NET Core applications.
 

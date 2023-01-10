@@ -6,7 +6,7 @@ position: 2
 slug: barcode-upgrading
 ---
 
-# Upgrading to the new version of RadBarcode
+# {{ site.framework_name }} RadBarcode Upgrading to the new version of RadBarcode
 
 Since the __R2 2021__ release the RadBarcode has a new and improved version, which will support more features. The older version will be deprecated, however upgrading is easy and this article will walk you through the process. 
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Image  Message
+# {{ site.framework_name }} RadChat Image  Message
 
 The usage of the __ImageMessage__ is similar to the one of the [GifMessage]({%slug chat-items-gifmessage%}). The difference is that instead of passing a Uri source, the constructor accepts an Image source.
 

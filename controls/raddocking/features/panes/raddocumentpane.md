@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadDocumentPane
+# {{ site.framework_name }} RadDocking RadDocumentPane
 
 Since RadDocumentPane is a direct inheritor of __RadPane__, it shares the same code base as its parent - the [RadPane]({%slug raddocking-panes-radpane%}) class. There aren't any functional or visual differences between the RadDocumentPane and the RadPane. The RadDocumentPane exists to simplify the distinguishing between document panes and tool panes for the developer.
 

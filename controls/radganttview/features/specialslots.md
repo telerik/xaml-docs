@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Special Slots
+# {{ site.framework_name }} RadGanttView Special Slots
 
 __RadGanttView__ provides __SpecialSlotsGenerator__ property which can be used to mark certain intervals along the visible range of the control as special slots.
 

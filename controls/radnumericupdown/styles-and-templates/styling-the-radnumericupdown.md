@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Styling the RadNumericUpDown
+# {{ site.framework_name }} RadNumericUpDown Styling the RadNumericUpDown
 
 This article will demonstrate how to create a Style targeting the __RadNumericUpDown__ control.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Migration from RadMaskedTextBox
+# {{ site.framework_name }} RadMaskedInput Migration from RadMaskedTextBox
 
 ## How to migrate from the RadMaskedTextBox to the RadMaskedInput
 

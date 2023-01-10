@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Zooming
+# {{ site.framework_name }} RadGridView Zooming
 
 The `RadGridView` control provides support for zooming its content through the `EnableMouseWheelScaling` and `ScaleFactor` properties. These properties are exposed by the `GridViewDataControl` class and are fully supported by the `RadTreeListView` control as well.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Use Commands with the RadContextMenu
+# {{ site.framework_name }} RadContextMenu Use Commands with the RadContextMenu
 
 
 As the __RadMenuItem__ implements the __ICommandSource__ interface, you are able to use any kind of commands that inherit from the __ICommand__ interface with it. This tutorial will show you how to use the __RadContextMenu__ with __RoutedUICommands__ combined with the __MVVM__ pattern. Two commands are going to be exposed - one for moving an item in a ListBox up and one for moving an item down. The following things will come in focus:      

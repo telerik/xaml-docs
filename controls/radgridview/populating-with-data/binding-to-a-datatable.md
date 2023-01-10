@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Binding to the DataView of a DataTable
+# {{ site.framework_name }} RadGridView Binding to the DataView of a DataTable
 
 This article will demonstrate how to bind a __RadGridView__ to the DataView of a DataTable. An important thing when using a DataTable as a data source for a RadGridView is to make sure that the __ItemsSource__ property of the control is bound to the __DefaultView__ property of the DataTable, which is of type [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?view=netframework-4.7.2).
 

@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Set SortingState on Column
+# {{ site.framework_name }} RadGridView Set SortingState on Column
 
 Generally, each GridViewColumn enables you to set it in a specific sorting state. This may be easily done by defining its corresponding property SortingState. It may have the following values:
 

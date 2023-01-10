@@ -7,7 +7,7 @@ tags: balloon, notifications, notifyicon
 position: 4
 ---
 
-# Balloon Notifications
+# {{ site.framework_name }} RadNotifyIcon Balloon Notifications
 
 With the __RadNotifyIcon__ you can show a notification allowing you to display a message or prompt the user for some action.
 

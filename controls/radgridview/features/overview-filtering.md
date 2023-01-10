@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Filtering
+# {{ site.framework_name }} RadGridView Filtering
 
 __RadGridView__ provides you with a built-in filtering functionality, which allows the user to easily filter the data by one or more columns, just by clicking on the filtering icon next to the header text.
 

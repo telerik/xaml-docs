@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Data Binding Tips
+# {{ site.framework_name }} RadPersistenceFramework Data Binding Tips
 
 This articles describes what to have in mind when using the PersistanceFramework to save/load data bound properties.
 

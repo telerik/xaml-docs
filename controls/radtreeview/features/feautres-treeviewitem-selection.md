@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Selection
+# {{ site.framework_name }} RadTreeView Selection
 
 This article describes the selection API exposed by __RadTreeView__. The control allows you to change the selection mode, to set and get the selection and managing the selection process using events.
 

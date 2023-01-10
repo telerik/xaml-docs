@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Palettes
+# {{ site.framework_name }} RadChartView3D Palettes
 
 __RadChartView3D__ has a built-in automatic coloring mechanism. There are predefined palettes containing 3D materials used to define the textures of the chart data points.
 

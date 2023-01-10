@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadWatermarkTextBox Getting Started
 
 This tutorial will walk you through the required steps for using __RadWatermarkTextBox__. 
 

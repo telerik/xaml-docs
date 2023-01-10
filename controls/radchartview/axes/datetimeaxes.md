@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Date Time Axes
+# {{ site.framework_name }} RadChartView Date Time Axes
 
 __RadChartView__ has two DateTime dedicated axes. The first one is __DateTimeCategoricalAxis__, the other is __DateTimeContinuousAxis__. These axes are different in nature as one is categorical (discrete), and the other is continuous. This topic will cover the specific properties of these two axes.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Series Labels
+# {{ site.framework_name }} RadChartView Series Labels
 
 The __RadChartView__ control exposes a mechanism to display and customize series labels.
 

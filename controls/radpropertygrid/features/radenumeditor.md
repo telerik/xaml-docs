@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# FlagEnumEditor
+# {{ site.framework_name }} RadPropertyGrid FlagEnumEditor
 
 RadPropertyGrid now supports editing bit flag enum by exposing a new editor – __FlagEnumEditor__. It enables the user to store any combination of the values that are defined in the enumerator list:
 

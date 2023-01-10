@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the Axis Tick
+# {{ site.framework_name }} RadChart Styling the Axis Tick
 
 
 

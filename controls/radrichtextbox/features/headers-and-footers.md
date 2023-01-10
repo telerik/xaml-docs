@@ -7,7 +7,7 @@ tags: headers,and,footers
 published: True
 ---
 
-# Headers and Footers
+# {{ site.framework_name }} RadRichTextBox Headers and Footers
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Events
+# {{ site.framework_name }} RadImageEditor Events
 
 This topic covers the specific events exposed by the `RadImageEditor` and `RadImageEditorUI` controls.
 

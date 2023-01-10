@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Reordering Columns
+# {{ site.framework_name }} RadGridView Reordering Columns
 
 __RadGridView__ supports column reordering and it can be done by the user in run-time. The user can drag the desired column's header at the desired position among the other headers and drop it there.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Progress Bar
+# {{ site.framework_name }} RadSplashScreen Progress Bar
 
 By default the RadSplashScreen shows an indeterminate [RadProgressBar]({%slug getting_started%}#indeterminate-state) which notifies the user that something is loading. 
 

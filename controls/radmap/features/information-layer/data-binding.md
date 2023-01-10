@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadMap Data Binding
 
 When displaying a map, you might also want to visualize some data on it in the form of hot spots, pin points, etc. As showed in the topics under the Information Layer section, you can declare them as static objects. However, the __InformationLayer__ object allows you to dynamically load and display map markers via data binding.
 

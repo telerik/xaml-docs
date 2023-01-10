@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Localization
+# {{ site.framework_name }} RadExpressionEditor Localization
 
 The built-in localization mechanism in {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} allows you to localize  the __RadExpressionEditor__ control.
 

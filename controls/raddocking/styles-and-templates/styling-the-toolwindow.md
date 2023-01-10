@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Styling the ToolWindow
+# {{ site.framework_name }} RadDocking Styling the ToolWindow
 
 [ToolWindow]({%slug raddocking-features-tool-window%}) is the container control that hosts all panes that are in a floating state. This article will demonstrate how to create a style targeting ToolWindow. 
 

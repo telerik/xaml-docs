@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Ribbon SplitButton
+# {{ site.framework_name }} RadRibbonView Ribbon SplitButton
 
 The __RadRibbonSplitButton__ represents an extension of the __RadSplitButton__. It provides an easier interaction with the __RadRibbonView__ control. What is special about the __RadRibbonSplitButton__ is that it is separated into two areas. The first one exposes a default action for the button while the second one pops up the drop down content like the __RadRibbonDropDownButton__ does. This means that the user does not need to open the popup area every time he needs to select an action, he can just select the one exposed directly by the button.	  
 

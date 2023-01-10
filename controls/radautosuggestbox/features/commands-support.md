@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Commands
+# {{ site.framework_name }} RadAutoSuggestBox Commands
 
 RadAutoSuggestBox executes its search and clear query actions using a couple of commands.
 

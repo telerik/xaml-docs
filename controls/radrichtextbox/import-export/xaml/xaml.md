@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# XAML
+# {{ site.framework_name }} RadRichTextBox XAML
 
 The __[eXtensible Application Markup Language(XAML)](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language)__ is declaritive XML-based markup language develop by Microsoft for creating a rich graphical user interface(GUI). XAML language is the native __RadRichTextBox__ document format.
 

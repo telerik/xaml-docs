@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Configuration
+# {{ site.framework_name }} RadRadialMenu Configuration
 
 This help topic describes the basic properties used to configure the way __RadRadialMenu__ looks & behaves.
 

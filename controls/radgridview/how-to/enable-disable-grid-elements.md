@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Enable\Disable Grid Elements
+# {{ site.framework_name }} RadGridView Enable\Disable Grid Elements
 
 __RadGridView__ is an advanced control, that allows you to enable/disable its different parts. You can set the boolean property __IsEnabled__ to each one of the following objects:
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Defining Columns
+# {{ site.framework_name }} RadGridView Defining Columns
 
 __RadGridView__ provides two mechanisms for defining its columns: 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Create Custom Transitions
+# {{ site.framework_name }} RadTransitionControl Create Custom Transitions
 
 
 The __RadTransitionControl__ provides you with several built-in transition effects, but you are allowed to create your custom ones by using the __Transition Effects API__. This tutorial will explain you the steps, needed to create a custom transition. Here they are:

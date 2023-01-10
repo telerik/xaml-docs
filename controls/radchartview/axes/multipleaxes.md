@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Multiple Axes
+# {{ site.framework_name }} RadChartView Multiple Axes
 
 RadChartView allows you to define multiple horizontal and vertical axis elements in the Cartesian chart.
 

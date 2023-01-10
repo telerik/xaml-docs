@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Gap Length
+# {{ site.framework_name }} RadChartView Gap Length
 
 The __CategoricalAxis__ and the __DateTime axes (DateTimeCategoricalAxis and DateTimeContinuousAxis)__ expose a __GapLength__ property which can be used to define what type of fraction of the category slot will be filled with the visual representation of the data point. This property expects a relative value between 0 and 1. For the purpose of this tutorial we will use BarSeries as the gap length can be easily observed.
 

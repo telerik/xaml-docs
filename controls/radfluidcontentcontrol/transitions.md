@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Transitions
+# {{ site.framework_name }} RadFluidContentControl Transitions
 
 The RadFluidContentControl supports transition animations that are triggered when you change between the contents - small, normal and large. The default transition is a fade effect.
 

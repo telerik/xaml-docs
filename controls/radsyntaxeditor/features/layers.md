@@ -7,7 +7,7 @@ tags: layers,radsyntaxeditor
 position: 10
 ---
 
-# Layers
+# {{ site.framework_name }} RadSyntaxEditor Layers
 
 The RadSyntaxEditor control renders its elements on different layers based on the types of tags that are used. It does so with the help of a **UILayersBuilder** class. The default builder renders the following stack of layers:
 

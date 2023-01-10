@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Layout Splitter
+# {{ site.framework_name }} RadLayoutControl Layout Splitter
 
 The __LayoutControlSplitter__ component allows you to resize the elements in the layout at runtime when __RadLayoutControl__ is not in edit mode. The following examples show you how to define a splitter.
 

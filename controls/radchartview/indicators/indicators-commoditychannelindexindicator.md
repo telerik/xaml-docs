@@ -8,7 +8,7 @@ publish: True
 position: 4
 ---
 
-# CommodityChannelIndexIndicator
+# {{ site.framework_name }} RadChartView CommodityChannelIndexIndicator
 
 CommodityChannelIndexIndicator measures the current price level relative to an average price level over a specific period of time. The indicator can be used to identify overbought and oversold levels.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Maintain the Items' Positions When the Diagram is Resized
+# {{ site.framework_name }} RadDiagram Maintain the Items' Positions When the Diagram is Resized
 
 The purpose of this article is to show how a user can maintain the RadDiagramItems' Position, Width and Height when the Diagram is being resized.            
 

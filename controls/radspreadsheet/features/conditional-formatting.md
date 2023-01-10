@@ -6,7 +6,7 @@ tags: conditional, formatting, xlsx, rule
 published: True
 ---
 
-# Conditional Formatting
+# {{ site.framework_name }} RadSpreadsheet Conditional Formatting
 
 Since R2 2022 the Spreadsheet control supports working with conditional formatting and different rules. The conditional formatting in spreadsheet documents helps you visualize the data inside in a user-friendly manner, making it easy to analyze data, find critical issues, patterns and trends.
 

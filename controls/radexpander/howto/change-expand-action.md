@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How To Change the Action Trigering an Expand
+# {{ site.framework_name }} RadExpander How To Change the Action Trigering an Expand
 
 This article describes how to control the mouse action that triggers an expand.
 

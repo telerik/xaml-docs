@@ -8,7 +8,7 @@ published: True
 position: 20
 ---
 
-# Chart Export
+# {{ site.framework_name }} RadChart Chart Export
 
 
 

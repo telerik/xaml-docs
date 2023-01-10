@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# MVVM Support
+# {{ site.framework_name }} RadTimeBar MVVM Support
 
 The Telerik __RadTimeBar__ control can be used with great success with the __Model-View-ViewModel (MVVM)__ pattern. This help topic will demonstrate how to use the control with the pattern.
 

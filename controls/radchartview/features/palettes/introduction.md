@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Introduction
+# {{ site.framework_name }} RadChartView Introduction
 
 This series of articles will give an overview of the Palette colorization mechanism of RadChartView.      
 

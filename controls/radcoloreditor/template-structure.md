@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadColorEditor Template Structure
 
 ![Template Structure](images/radcoloreditor-template-structure.png)
 

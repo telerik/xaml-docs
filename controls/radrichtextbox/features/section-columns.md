@@ -7,7 +7,7 @@ tags: section, columns
 published: True
 ---
 
-# Section Columns
+# {{ site.framework_name }} RadRichTextBox Section Columns
 
 With the Section Columns feature, **RadRichTextBox** allows you arrange the text in a [Section]({%slug radrichtextbox-features-document-elements-section%}) into columns. This article will show you how to arrange the text into columns with equal or different width and set a separator between them.
 

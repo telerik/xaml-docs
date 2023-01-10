@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Styling the RadRibbonDropDownButton
+# {{ site.framework_name }} RadRibbonView Styling the RadRibbonDropDownButton
 
 The __RadRibbonDropDownButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.			
 

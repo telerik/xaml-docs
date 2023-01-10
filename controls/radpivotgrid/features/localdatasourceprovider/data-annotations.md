@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Data Annotations
+# {{ site.framework_name }} RadPivotGrid Data Annotations
 
 In this article we will show you how to use Data Annotations with __RadPivotGrid__. Data Annotations are used to specify validation rules, specify how the data is displayed, and set relationships between classes. More information about Data Annotation can be found [here](http://msdn.microsoft.com/en-us/library/dd901590(v=vs.95).aspx).      
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Using DataAnnotation Attributes
+# {{ site.framework_name }} RadMaskedInput Using DataAnnotation Attributes
 
 ## Validating Input Through Data Annotations
 

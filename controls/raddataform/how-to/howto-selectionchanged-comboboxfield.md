@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Handling SelectionChanged event for DataFormComboBoxField
+# {{ site.framework_name }} RadDataForm Handling SelectionChanged event for DataFormComboBoxField
 
 DataFormComboBoxField does not have a SelectionChanged event itself. In case you need such an event to implement your additional logic, you can handle the SelectionChanged event of its editing element (RadComboBox). To do that you need to:
 

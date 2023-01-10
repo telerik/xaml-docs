@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Customize Position
+# {{ site.framework_name }} RadTileView Customize Position
 
 The __Position__ property of the __RadTileViewItems__ controls the positions of the __Restored__ and/or __Minimized__ items. This article will demonstrate how this property can be bound to a property in the model in an MVVM scenario.
 

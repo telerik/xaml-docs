@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Data Point
+# {{ site.framework_name }} RadChartView Data Point
 
 The chart data points are defined by the __DataPoint__ class and more specifically its inheritors. The different chart series types work with different class that derives from DataPoint. Each class contains common information about the data point - its layout slot, the related view model, label, selection state, parent series and more.
 

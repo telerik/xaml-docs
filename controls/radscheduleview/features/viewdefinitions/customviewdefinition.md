@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Define a Custom ViewDefinition
+# {{ site.framework_name }} RadScheduleView Define a Custom ViewDefinition
 
 This topic will demonstrate the customization capabilities provided by __RadScheduleView__ for defining a custom ViewDefinition. Determining which ViewDefinition to inherit, so that the needed customizations are based on it, depends on the particular needs. More information on the built-in ViewDefinitions can be found in the [Overview]({%slug radscheduleview-viewdefinitions-overview%}) topic.
 

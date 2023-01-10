@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Overview
+# {{ site.framework_name }} RadAutoCompleteBox Overview
 
 __RadAutoCompleteBox__ provides the following properties for styling and templating the items placed inside the boxes part of the control:
 

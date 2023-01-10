@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Mouse Location
+# {{ site.framework_name }} RadMap Mouse Location
 
 The __RadMap__ uses an UI control to display the current mouse location on the map. It displays the latitude and the longitude of the mouse position.
 

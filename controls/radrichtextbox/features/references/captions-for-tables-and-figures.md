@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Captions for Tables and Figures
+# {{ site.framework_name }} RadRichTextBox Captions for Tables and Figures
 
 
 

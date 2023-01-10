@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Start the Camera
+# {{ site.framework_name }} RadWebCam Start the Camera
 
 The `RadWebCam` control automatically connects to the first camera and recording device it finds. Then it selects the highest available resolution and starts the video.
 

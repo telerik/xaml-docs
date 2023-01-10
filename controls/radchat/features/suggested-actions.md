@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Suggested Actions
+# {{ site.framework_name }} RadChat Suggested Actions
 
 __Conversational UI__ supports adding suggestions to the user. This can be done by adding __SuggestedAction__ items to the __SuggestedActions__ collection of __RadChat__.
 

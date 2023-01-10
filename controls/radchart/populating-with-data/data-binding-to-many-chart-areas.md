@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Data Binding to Many Chart Areas
+# {{ site.framework_name }} RadChart Data Binding to Many Chart Areas
 
 
 

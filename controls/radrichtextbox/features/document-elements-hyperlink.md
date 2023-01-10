@@ -7,7 +7,7 @@ tags: hyperlink
 published: True
 ---
 
-# Hyperlink
+# {{ site.framework_name }} RadRichTextBox Hyperlink
 
 
 

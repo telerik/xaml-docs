@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customized Fields
+# {{ site.framework_name }} RadDataForm Customized Fields
 
 RadDataForm auto-generates its fields by default based on the properties of the source objects. They are stacked vertically in a standard form layout and depend on the type of each property.
 

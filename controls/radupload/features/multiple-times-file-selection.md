@@ -9,7 +9,7 @@ position: 5
 site_name: Silverlight
 ---
 
-# Multiple Times File Selection
+# {{ site.framework_name }} RadUpload Multiple Times File Selection
 
 By default the __RadUpload__ allows one time file selection. This means that after selecting the desired files from the browse dialog the user won't be able to add more files to the list. To enable the multiple times file selection you have to set the __IsAppendFilesEnabled__ property to __True__ (its default value is __True__).
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Scroll to Newly Added Item
+# {{ site.framework_name }} RadGridView Scroll to Newly Added Item
 
 This article shows how to scroll RadGridView to the newly added item.
 

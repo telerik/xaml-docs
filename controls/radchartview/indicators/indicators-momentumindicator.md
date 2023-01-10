@@ -8,7 +8,7 @@ publish: True
 position: 10
 ---
 
-# MomentumIndicator
+# {{ site.framework_name }} RadChartView MomentumIndicator
 
 MomentumIndicator compares the relation of the current value to where the value was in the past.
 

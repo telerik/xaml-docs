@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Basic Hierarchies
+# {{ site.framework_name }} RadGridView Basic Hierarchies
 
 ![Telerik {{ site.framework_name }} DataGrid BasicHierarchies 1](images/RadGridView_BasicHierarchies_1.png)
 

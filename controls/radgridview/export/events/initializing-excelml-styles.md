@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# InitializingExcelMLStyles
+# {{ site.framework_name }} RadGridView InitializingExcelMLStyles
 
 >tipThis event will be only raised when exporting with __ExportFormat.ExcelML__
 

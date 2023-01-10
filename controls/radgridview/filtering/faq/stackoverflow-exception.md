@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# StackOverflowException on selecting all distinct values
+# {{ site.framework_name }} RadGridView StackOverflowException on selecting all distinct values
 
 
 The __StackOverflowException__ is thrown by the .NET Framework. When you "Select All" a LINQ query is built in order to filters. The LINQ query looks something like this:

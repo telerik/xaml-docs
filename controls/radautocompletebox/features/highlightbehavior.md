@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Highlight Behavior
+# {{ site.framework_name }} RadAutoCompleteBox Highlight Behavior
 
 With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadAutoCompleteBox__ provides a brand new __HighlightBehavior__ feature. Now it is possible to choose which item of the filtered items by the __RadAutoCompleteBox__ to be highlighted depending on a custom logic.
 

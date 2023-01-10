@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Search Location
+# {{ site.framework_name }} RadMap Search Location
 
 The RadMap control allows the user to implement search functionality, that will let the user search for a specific place on the map.  The search is performed through an __IBingRestSearchLocationProvider__ interface, which communicates with the respective map provider's services. The __BingRestMapProvider__ implements this interface. In the following sections of this article we will demonstrate how you can implement this functionality.
 

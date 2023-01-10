@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Clear Selection Button
+# {{ site.framework_name }} RadComboBox Clear Selection Button
 
 This article demonstrates how to enable the clear selection button and change its content.
 

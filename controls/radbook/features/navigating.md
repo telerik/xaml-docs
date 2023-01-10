@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Navigating
+# {{ site.framework_name }} RadBook Navigating
 
 To change the set of pages that are displayed, you should use the __RightPageIndex__ property. This property represents the index of the page that is displayed in the right side of the book. It is zero based. 
 

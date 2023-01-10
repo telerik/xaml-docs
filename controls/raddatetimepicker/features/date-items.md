@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Date Items
+# {{ site.framework_name }} RadDateTimePicker Date Items
 
 When you use the __RadDateTimePicker__ control you can customize the date items included in the __Calendar__ view. You can define start and end dates for the entries in the calendar. You do this using the following properties:
 

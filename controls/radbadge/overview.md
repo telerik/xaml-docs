@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadBadge
 ---
 
-# Overview
+# {{ site.framework_name }} RadBadge Overview
 
 The __RadBadge__ component is a visual indicator for UI elements. It enables you to easily show statuses, notifications and short messages in your app. Badges provide additional contextual information for other elements on the page.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadRibbonView Overview
 
 There is a specific set of buttons introduced with the __RadRibbonView__ control. They all inherit and extend the functionality of the standard button controls i.e. __RadRibbonToggleButton__ derives from __RadToggleButton, RadRibbonSplitButton__ derives from __RadSplitButton__, etc. The additional functionality which they provide allows you to easily implement MS-Office-Ribbon-like behavior in your application. This topic covers the common functionality for all ribbon buttons.	  
 

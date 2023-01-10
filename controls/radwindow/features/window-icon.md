@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Window Icon
+# {{ site.framework_name }} RadWindow Window Icon
 
 `RadWindow` allows you to display a custom icon in its top-left corner. To specify the icon you can use either the `Icon` or the `IconTemplate` properties.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How to Customize or Remove RadPane's Menu
+# {{ site.framework_name }} RadDocking How to Customize or Remove RadPane's Menu
 
 The purpose of this tutorial is to show you how to customize __RadPane's__ menu.
       

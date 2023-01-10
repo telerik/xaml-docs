@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Filtering Support
+# {{ site.framework_name }} RadPropertyGrid Filtering Support
 
 __RadPropertyGrid__ supports filtering through its built-in search TextBox. The default behavior is __"search as you type"__ meaning that each time you modify the text, property definitions will be filtered based on their __DisplayName__ property.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Backwards Compatibility
+# {{ site.framework_name }} RadDiagram Backwards Compatibility
 
 This article describes the __breaking changes__ introduced in the __RadDiagram__ framework.	  
 

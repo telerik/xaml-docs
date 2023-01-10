@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Use RadWindow as Main Window or User Control
+# {{ site.framework_name }} RadWindow Use RadWindow as Main Window or User Control
 
 If you want to prepare the __RadWindow__ at design-time or use it as the {% if site.site_name == 'WPF' %}MainWindow{% else %}MainPage{% endif %} of your application, you have to use it as a user control. To do this you cancreate a standard user control or window using the templates provided in the Visual Studio or replace the default {% if site.site_name == 'WPF' %}MainWindow{% else %}MainPage{% endif %} created for the application.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Placeholder
+# {{ site.framework_name }} RadMaskedInput Placeholder
 
 The __Placeholder__ character is a character used to represent the absence of user input in a __RadMaskedInput__ control. The default value is an underscore. The __Placeholder__ character will be displayed in a __RadMaskedInput__ control for any mask position that the user has not filled in yet.
 

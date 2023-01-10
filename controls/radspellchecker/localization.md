@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Localization
+# {{ site.framework_name }} RadSpellChecker Localization
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Data Annotations
+# {{ site.framework_name }} RadPropertyGrid Data Annotations
 
 This article will show you how to use **Data Annotations** with **RadPropertyGrid**.
 

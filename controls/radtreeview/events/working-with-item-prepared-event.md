@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Working with ItemPrepared Event
+# {{ site.framework_name }} RadTreeView Working with ItemPrepared Event
 
 The purpose of this tutorial is to show you how to work with the __RadTreeView__'s __ItemPrepared__ event. This event occurs when a child __RadTreeViewItem__ has been prepared and is now ready for use. The main goal of this event is to perform binding of __RadTreeViewItem__ properties to the data objects.
 

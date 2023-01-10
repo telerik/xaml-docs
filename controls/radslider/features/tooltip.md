@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# ToolTip
+# {{ site.framework_name }} RadSlider ToolTip
 
 The tooltip of RadSlider enables the user to see the value of the slider's thumb while dragging it. In order to enable the ToolTip in the RadSlider component, you can set the __AutoToolTipPlacement__ property. The property is an enumeration of type AutoToolTipPlacement and the possible values which can be set are __None__, __TopLeft__, __BottomRight__. The default value of the __AutoToolTipPlacement__ property is __None__.
 

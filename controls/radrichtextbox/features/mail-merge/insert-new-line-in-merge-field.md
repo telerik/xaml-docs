@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Insert a New Line in Merge Field
+# {{ site.framework_name }} RadRichTextBox Insert a New Line in Merge Field
 
 In RadRichtextBox, you can insert a line break using the [Break element]({%slug radrichtextbox-features-document-elements-break%}). However, when working with mail merge fields, inserting a similar document element is not possible. This is why we introduced support for the vertical tab symbol. This article explains how you can use this symbol to insert a new line in the document content and in a merge field. 
 

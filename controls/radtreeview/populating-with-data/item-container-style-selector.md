@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# ItemContainerStyleSelector
+# {{ site.framework_name }} RadTreeView ItemContainerStyleSelector
 
 The Telerik __RadTreeView__ supports [ItemContainerStyle]({%slug radtreeview-styling-and-appearance-item-container-style%}). The __ItemContainerStyle__ property gives you the ability to change the treeview items' header. The container created by the __RadTreeView__ for each item in the collection is of type __RadTreeViewItem__.
 

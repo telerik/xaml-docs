@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Progress Determination
+# {{ site.framework_name }} RadBusyIndicator Progress Determination
 
 __RadBusyIndicator__ control supports two main modes of execution. It can be either determined or indetermined. These correspond to the following scenarios: 
 

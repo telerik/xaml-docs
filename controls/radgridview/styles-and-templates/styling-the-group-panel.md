@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Styling Group Panel
+# {{ site.framework_name }} RadGridView Styling Group Panel
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewGroupPanel and GridViewGroupPanelItem]({%slug radgridview-styles-and-templates-templates-structure%}).
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# SpellChecking Modes
+# {{ site.framework_name }} RadSpellChecker SpellChecking Modes
 
 
 

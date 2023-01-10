@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to Respect Application's CurrentCulture in Custom Format Strings
+# {{ site.framework_name }} RadGridView How to Respect Application's CurrentCulture in Custom Format Strings
 
 Currently the culture used for formattng the data in RadGridView is the one specified as a __Language__ for it (or for the containing Window/UserControl). We have changed this behaviour with version __Q2 2012 SP2__, so now it is compatible with the behaviour of the MS DataGrid. 
 

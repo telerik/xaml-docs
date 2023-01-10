@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# ExportToPdf
+# {{ site.framework_name }} RadGridView ExportToPdf
 
 The __ExportToPdf__ method allows exporting to "Pdf" format. As the mechanism uses **RadSpreadProcessing** internally, there is no need for the user to make the integration manually. The method was introduced in __Q1 2015__.
 

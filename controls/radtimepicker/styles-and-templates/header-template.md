@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Header Template
+# {{ site.framework_name }} RadTimePicker Header Template
 
 In __RadTimePicker__ it is possible to customize the built-in text and template of the __Header__ and __HeaderTemplate__.        
 

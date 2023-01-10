@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Features
+# {{ site.framework_name }} RadBarcodeLegacy Features
 
 ## Version
 

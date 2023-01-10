@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Functional Structure
+# {{ site.framework_name }} RadRibbonView Functional Structure
 
 This topic aims to explain the controls' structure needed to create a fully functional __RadRibbonView__ control.			
 

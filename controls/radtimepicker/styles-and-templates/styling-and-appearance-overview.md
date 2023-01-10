@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadTimePicker Overview
 
 This section is intended to give you broad understanding of the possible ways by which you can change the visual appearance of __RadTimePicker__. There is also comprehensive information about the Control Template and it's required parts. You will need this information if you want to customize the appearance of __RadTimePicker__. 
 

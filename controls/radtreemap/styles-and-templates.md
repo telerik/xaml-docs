@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styles and Templates
+# {{ site.framework_name }} RadTreeMap Styles and Templates
 
 This section is intended to give you a broad understanding of the possible ways in which you can change the visual appearance of the RadTreeMap and RadPivotMap.
 

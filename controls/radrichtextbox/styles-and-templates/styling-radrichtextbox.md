@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the RadRichTextBox
+# {{ site.framework_name }} RadRichTextBox Styling the RadRichTextBox
 
 The __RadRichTextBox__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Integration with Content Controls
+# {{ site.framework_name }} RadTransitionControl Integration with Content Controls
 
 The __RadTransitionControl__ can be easily integrated in other more complex __ContentControls__ in order to extend their functionality. For example - __ScrollViewer__, __HeaderedContentControl__ etc.
 

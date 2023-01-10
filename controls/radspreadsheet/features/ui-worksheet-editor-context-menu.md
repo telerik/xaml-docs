@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Context Menu
+# {{ site.framework_name }} RadSpreadsheet Context Menu
 
 
 

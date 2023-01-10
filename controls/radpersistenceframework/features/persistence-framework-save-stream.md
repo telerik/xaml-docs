@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Save in a Stream
+# {{ site.framework_name }} RadPersistenceFramework Save in a Stream
 
 The __PersistenceFramework__ allows you to save the layout of __UIElements__ in a stream. The __PersistenceManager__ exposes the following methods that persist the data in a stream:		
 

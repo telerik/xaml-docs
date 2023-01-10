@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Display Labels And Tooltips For Annotations
+# {{ site.framework_name }} RadChart Display Labels And Tooltips For Annotations
 
 
 

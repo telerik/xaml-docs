@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadScheduleView
 ---
 
-# Overview
+# {{ site.framework_name }} RadScheduleView Overview
 
 Thank you for choosing Telerik __RadScheduleView__.
 

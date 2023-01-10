@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadSpreadsheet Keyboard Support
 
 By default, __RadSpreadSheet__ supports keyboard shortcuts that allow you to perform various operations without touching the mouse. The bellow tables list all supported shortcuts.
 

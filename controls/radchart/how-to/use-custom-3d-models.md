@@ -9,7 +9,7 @@ position: 5
 site_name: WPF
 ---
 
-# Use Custom 3D Models
+# {{ site.framework_name }} RadChart Use Custom 3D Models
 
 
 

@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadChartView Events
 
 This article lists the events exposed by the charting controls and their series.
 

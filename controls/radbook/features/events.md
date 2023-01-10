@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Events
+# {{ site.framework_name }} RadBook Events
 
 __RadBook__ exposes the following events:
 

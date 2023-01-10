@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Sampling
+# {{ site.framework_name }} RadChartView3D Sampling
 
 >important The sampling feature is supported only in a [data binding]({%slug radchartview3d-populating-data-databinding%}) scenario.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to Disable the Close Button
+# {{ site.framework_name }} RadDocking How to Disable the Close Button
 
 The purpose of this tutorial is to show you how to disable/hide the close ("X") button. 
 

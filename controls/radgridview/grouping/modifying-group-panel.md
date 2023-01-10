@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Modifying Group Panel
+# {{ site.framework_name }} RadGridView Modifying Group Panel
 
 __RadGridView__ exposes two properties - __GroupPanelBackground__ and __GroupPanelForeground__ which allow you to make basic modifications of the __Group Panel__ (area).
 

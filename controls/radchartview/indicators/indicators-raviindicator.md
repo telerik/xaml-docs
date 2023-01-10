@@ -8,7 +8,7 @@ publish: True
 position: 14
 ---
 
-# RaviIndicator
+# {{ site.framework_name }} RadChartView RaviIndicator
 
 RaviIndicator (range action verification index) identifies if a values pair is trending.
 

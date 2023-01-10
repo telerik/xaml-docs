@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Wizard Buttons
+# {{ site.framework_name }} RadWizard Wizard Buttons
 
 The wizard control provides the following buttons out of the box:
 *	__Next__ – will trigger the __Next__ event and will navigate to the next wizard page

@@ -9,7 +9,7 @@ position: 4
 site_name: Silverlight
 ---
 
-# Animation
+# {{ site.framework_name }} RadMenu Animation
 
 The attached properties of the Telerik __AnimationManager__ allow you to apply animation to the expanding and collapsing of the __RadMenuItems__. By default there is one animation defined and it applies to the expanding of the __RadMenuItem__.        
 

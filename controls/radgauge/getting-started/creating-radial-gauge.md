@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Creating Radial Gauge
+# {{ site.framework_name }} RadGauge Creating Radial Gauge
 
 One of the gauges you can create with the __RadGauge__ control, is a radial gauge. It is represented by a circle container with a scale in it. Additionally, it can display various indicators that point to a certain value on the scale. This topic will walk you through the creation of a sample application that contains a radial RadGauge.  
 

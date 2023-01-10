@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Edit the Layout
+# {{ site.framework_name }} RadLayoutControl Edit the Layout
 
 * [Overview](#overview)
 * [Manipulation Pane](#manipulation-pane)

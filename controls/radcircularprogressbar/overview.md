@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadCircularProgressBar
 ---
 
-# Overview
+# {{ site.framework_name }} RadCircularProgressBar Overview
 
 CircularProgressBar is a component that allows you to convey the progress of different tasks in a circular manner. 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadRibbonView Visual Structure
 
 >This section defines the terms and the concepts used in the scope of __RadRibbonView__ which you have to get familiar with before you continue reading this help.
 

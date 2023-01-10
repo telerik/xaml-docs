@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Multiple Selection
+# {{ site.framework_name }} RadComboBox Multiple Selection
 
 With the R3 2016 release version of UI for WPF, multiple items can be selected from __RadComboBox__. To enable this functionality, you have to set the  __AllowMultipleSelection__  property to __True__. This article will provide some detailed information about the available properties, commands and other features that are available when multiple selection is allowed.
 

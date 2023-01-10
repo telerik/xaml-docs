@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Handle Item Clicks
+# {{ site.framework_name }} RadContextMenu Handle Item Clicks
 
 
 

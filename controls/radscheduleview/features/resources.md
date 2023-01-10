@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Resources
+# {{ site.framework_name }} RadScheduleView Resources
 
 The __RadScheduleView__ allows you to define custom resources that can be assigned to the appointments. Custom resources let you associate additional information with your appointments, where the information for each field can be selected from a limited number of possibilities. For example, you can load the appointments of different users on a single scheduler by simply choosing the name of the user from a drop down. The same applies for various resources such as meeting rooms, team events, etc.      
 

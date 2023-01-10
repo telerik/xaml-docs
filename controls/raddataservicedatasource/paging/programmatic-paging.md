@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Programmatic Paging
+# {{ site.framework_name }} RadDataServiceDataSource Programmatic Paging
 
 Programmatic paging could be done with the help of the public paging API that __RadDataServiceDataSource.DataView__ provides. The __DataView__ property implements the __IPagedCollectionView__ interface which contains all paging methods and properties.
 

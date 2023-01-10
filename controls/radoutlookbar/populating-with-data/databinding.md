@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadOutlookBar Data Binding
 
 The goal of this article is to demonstrate how to populate a __RadOutlookBar__ with business objects. Basically the control can be data bound to a collection of objects through its __ItemsSource__ property and dynamically create __RadOutlookBarItems__. 
 

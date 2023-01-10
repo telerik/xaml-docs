@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Alternating Rows
+# {{ site.framework_name }} RadGridView Alternating Rows
 
 __RadGridView__ allows you to have alternating rows should you need to improve readability. 
 

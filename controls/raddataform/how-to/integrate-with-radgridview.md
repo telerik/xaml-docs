@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Integrate RadDataForm with RadGridView
+# {{ site.framework_name }} RadDataForm Integrate RadDataForm with RadGridView
 
 The __RadDataForm__ is may be fully integrated with the __RadGridView__ control. A great implementation would be to benefit from it in the RowDetails representation. 
 

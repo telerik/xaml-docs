@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to set the content from code behind
+# {{ site.framework_name }} RadHtmlPlaceholder How to set the content from code behind
 
 The __RadHtmlPlaceholer__ is declared on page this way:	  
 

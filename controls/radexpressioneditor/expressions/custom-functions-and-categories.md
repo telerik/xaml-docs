@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Custom Categories and Functions
+# {{ site.framework_name }} RadExpressionEditor Custom Categories and Functions
 
 As of **R1 2019**, the RadExpressionEditor control allows users to add custom categories and functions to its UI as well as remove some of the already defined ones.
 

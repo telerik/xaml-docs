@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadGauge Data Binding
 
 The __RadGauge__ control allows you to bind it to a set of values, which to be displayed consecutive one after another. This feature is implemented via the indicator of the scale and its __ValueSource__ property. It is of type __IEnumerable__ and accepts the set of values you want to display.      
 

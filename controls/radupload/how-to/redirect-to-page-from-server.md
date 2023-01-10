@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Redirect To a Page From the Server Side
+# {{ site.framework_name }} RadUpload Redirect To a Page From the Server Side
 
 You can customize the __RadUploadHandler__ to redirect the client to a certain page as soon as the upload is finished, by adding a __RedirectPage__ __RadUploadConstants__.
 

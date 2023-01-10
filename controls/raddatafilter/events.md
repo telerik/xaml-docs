@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Events
+# {{ site.framework_name }} RadDataFilter Events
 
 This topic will describe the various events exposed by **RadDataFilter**.
 

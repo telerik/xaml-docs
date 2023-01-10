@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Add Check Boxes (Radio Buttons) Next to Each Item
+# {{ site.framework_name }} RadTreeView Add Check Boxes (Radio Buttons) Next to Each Item
 
 This tutorial demonstrates how to take advantage of the built-in CheckBox support in the __RadTreeViewItems__.
 

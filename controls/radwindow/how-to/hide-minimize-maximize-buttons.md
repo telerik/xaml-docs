@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Hide the Maximize and Minimize buttons
+# {{ site.framework_name }} RadWindow Hide the Maximize and Minimize buttons
 
 If you want to hide the Minimize and Maximize buttons you have two options:
 

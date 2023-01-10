@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# LayoutControlExpanderGroup
+# {{ site.framework_name }} RadLayoutControl LayoutControlExpanderGroup
 
 __LayoutControlExpanderGroup__ is one of the few layout groups supported by the __RadLayoutControl__. __LayoutControlExpanderGroup__ behaves as the __LayoutControlGroup__ but its children are displayed in an __expander control__. Clicking on the group’s header or the expand arrow will expand or collapse its children.
 

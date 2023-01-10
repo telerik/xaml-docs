@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadMap Data Binding
 
 When displaying a map, you might also want to overlay some additional information. As we've previously seen (in the [Introduction]({%slug radmap-visualization-layer-introduction%}) help topic) we can define this information statically in XAML. However, it would be much more practical to use the VisualizationLayer's data binding capabilities to dynamically load and display map markers.
 

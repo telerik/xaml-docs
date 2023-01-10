@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# How to Remove the DocumentHost
+# {{ site.framework_name }} RadDocking How to Remove the DocumentHost
 
 In order to remove the __DocumentHost__ from your __RadDocking__ control you have to set the __RadDocking__'s __HasDocumentHost__ property to __False__.
 

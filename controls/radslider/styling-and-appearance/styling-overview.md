@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Overview
+# {{ site.framework_name }} RadSlider Overview
 
 __RadSlider__ allows you to easily modify its appearance by providing some useful properties.
 

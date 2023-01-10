@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Special and ReadOnly slots
+# {{ site.framework_name }} RadScheduleView Special and ReadOnly slots
 
 Using __RadScheduleView__ you can define special and read-only slots and apply different styles to them.  You just need to prepare a collection of Slot objects and assign it to __SpecialSlotsSource__ property of the ScheduleView.      
 

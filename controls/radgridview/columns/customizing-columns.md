@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Customizing Columns
+# {{ site.framework_name }} RadGridView Customizing Columns
 
 There are three parts of the column that can be customized separately from each other:
 

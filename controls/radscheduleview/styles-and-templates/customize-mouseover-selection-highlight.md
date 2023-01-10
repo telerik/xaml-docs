@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Customizing the MouseOver and SelectionHighlight
+# {{ site.framework_name }} RadScheduleView Customizing the MouseOver and SelectionHighlight
 
 The __RadScheduleView__ makes it possible to customize the mouseover and selection highlights of the slots in the control. The next examples will demonstrate how to do that by setting the __MouseOverHighlightStyle__ and __SelectionHighlightStyle__ properties of the RadScheduleView.
 

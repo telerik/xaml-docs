@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Show Preview of the Gallery Options
+# {{ site.framework_name }} RadRibbonView Show Preview of the Gallery Options
 
 In order to use the Live Preview feature of the __Ribbon Gallery__, a developer should use the __ActivatePreview__ and __DeactivatePreview__ events. When a __Gallery Item__ is hovered, the __ActivatePreview__ event is raised. When the mouse leaves the item, __DeactivatePreview__ event is raised. A developer can handle these events on both __RadGalleryItem__ control and on __RadGallery__ control.
 

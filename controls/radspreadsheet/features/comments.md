@@ -7,7 +7,7 @@ published: True
 position: 13
 ---
 
-# Comments
+# {{ site.framework_name }} RadSpreadsheet Comments
 
 Since R2 2022 the Spreadsheet control supports working with comments.
 

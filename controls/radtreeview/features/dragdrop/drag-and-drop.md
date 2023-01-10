@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Drag and Drop Support
+# {{ site.framework_name }} RadTreeView Drag and Drop Support
 
 The Telerik __RadTreeView__ control enhances further your application's capabilities through the rich drag-and-drop functionality. Your users can create and re-order any hierarchical structures and easily perform various drag-and-drop operations.
 

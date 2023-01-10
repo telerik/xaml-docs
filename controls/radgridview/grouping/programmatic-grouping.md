@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Programmatic Grouping
+# {{ site.framework_name }} RadGridView Programmatic Grouping
 
 Besides the built-in grouping functionality you are able to use a programmatic approach to group the data in __RadGridView__. This is achieved via the control's __GroupDescriptors__ collection. This collection of __IGroupDescriptor__ objects allows you to use descriptors (__GroupDescriptor__ or __ColumnGroupDescriptor__) to define grouping criteria and group's sorting direction for the bound data. 
 

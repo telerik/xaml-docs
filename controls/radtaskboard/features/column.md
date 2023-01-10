@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Column
+# {{ site.framework_name }} RadTaskBoard Column
 
 The __TaskBoardCardModels__ are added to the respective Column depending on the __GroupMemberPath__ property of the __RadTaskBoard__ control. 
 

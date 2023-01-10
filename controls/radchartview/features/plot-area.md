@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Plot Area
+# {{ site.framework_name }} RadChartView Plot Area
 
 The chart's plot area is the zone where all data points are drawn (see Figure 1). The API of the chart allows you to get information about the area or apply a custom style for the visual element that represents it.
 

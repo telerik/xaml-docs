@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Popup Animation
+# {{ site.framework_name }} RadButtons Popup Animation
 
 [RadDropDownButton]({%slug radbuttons-features-dropdown-button%}) and [RadSplitButton]({%slug radbuttons-features-split-button%}) support popup animations. The animation is triggered when the drop down content of the button opens.
 

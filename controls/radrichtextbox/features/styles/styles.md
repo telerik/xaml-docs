@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Styles
+# {{ site.framework_name }} RadRichTextBox Styles
 
 
 

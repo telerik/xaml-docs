@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Create Custom Column Editor
+# {{ site.framework_name }} RadGridView Create Custom Column Editor
 
 This tutorial will guide you through the common task of creating a custom column in __RadGridView__. More precisely, you will learn to create a UserControl with __TextBox__ and __RadComboBox__, as well as a custom bound column that uses it as an edit element.
 

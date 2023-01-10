@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Separator
+# {{ site.framework_name }} RadRibbonView Separator
 
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Separator__.				
 

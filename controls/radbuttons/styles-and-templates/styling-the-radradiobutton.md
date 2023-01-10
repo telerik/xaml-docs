@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Styling the RadRadioButton
+# {{ site.framework_name }} RadButtons Styling the RadRadioButton
 
 The __RadRadioButton__ can be styled by creating an appropriate __Style__ (or use Implicit Style) and setting it to the __Style__ property of the control. 
 

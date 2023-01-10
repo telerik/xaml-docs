@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual States
+# {{ site.framework_name }} RadMenu Visual States
 
 Like most {{ site.framework_name }} controls, the __RadMenu__ and the __RadMenuItem__ use the __VisualStateManager__ to modify their appearance depending on a condition. This topic will explain the states of the both and will focus on the states of the __RadMenuItem__ and how they are used from the different templates.
 

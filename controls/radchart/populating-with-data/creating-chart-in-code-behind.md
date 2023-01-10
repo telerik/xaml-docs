@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Creating a Chart in Code-behind
+# {{ site.framework_name }} RadChart Creating a Chart in Code-behind
 
 
 

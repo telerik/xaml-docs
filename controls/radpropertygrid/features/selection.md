@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Selection
+# {{ site.framework_name }} RadPropertyGrid Selection
 
 **RadPropertyGrid** provides you with a selection functionality, which allows the user to select one or more items from the data displayed by the control.
 

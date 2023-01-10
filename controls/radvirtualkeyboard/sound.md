@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Click Sound
+# {{ site.framework_name }} RadVirtualKeyboard Click Sound
 
 The keyboard comes with a click sound on key press.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Prevent Dragging Off the Screen
+# {{ site.framework_name }} RadWindow Prevent Dragging Off the Screen
 
 With its default settings, the __RadWindow__ can be dragged off the screen by the user. To prevent the user from dragging the __RadWindow__ off the screen you have to set the __IsRestricted__ property of the __RadWindow__ to __True__.
 

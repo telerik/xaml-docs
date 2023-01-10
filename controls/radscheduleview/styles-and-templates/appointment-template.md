@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Appointment Template
+# {{ site.framework_name }} RadScheduleView Appointment Template
 
 This help topic explains in details how you can customize the template of the appointments using AppointmentItemContentTemplate or AppointmentItemContentTemplateSelector properties. The second approach is used when you need to apply different templates according to some custom logic.
 

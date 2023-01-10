@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# ItemEditTemplateSelector
+# {{ site.framework_name }} RadTreeView ItemEditTemplateSelector
 
 Telerik __RadTreeView__ also supports __ItemEditTemplateSelector__. This tutorial will walk you through the common task of creating and applying __ItemEditTemplateSelector__.
 

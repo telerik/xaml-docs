@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Events
+# {{ site.framework_name }} RadLayoutControl Events
 
 This article contains basic information about the events available with __RadLayoutControl__ and its components.
 

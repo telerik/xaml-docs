@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Guidelines for Printing with RadDocument
+# {{ site.framework_name }} RadRichTextBox Guidelines for Printing with RadDocument
 
 
 

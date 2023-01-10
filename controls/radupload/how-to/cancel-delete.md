@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Cancel RadUploadItem Deletion
+# {{ site.framework_name }} RadUpload Cancel RadUploadItem Deletion
 
 The __RadUpload__ allows you to cancel the deletion of a __RadUploadItem__.	  
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Column Selection
+# {{ site.framework_name }} RadGridView Column Selection
 
 As of **R3 2016** entire columns can be added to RadGridView's selection. This can be done in any of the following ways:
 

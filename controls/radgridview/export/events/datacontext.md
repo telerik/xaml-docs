@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# DataContext of the Export Elements
+# {{ site.framework_name }} RadGridView DataContext of the Export Elements
 
 Each of the export events exposes a property which holds the **DataContext** for this particular **ExportElement**. Here is a breakdown of all the possible contexts:
 

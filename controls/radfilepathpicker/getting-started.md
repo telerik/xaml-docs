@@ -7,7 +7,7 @@ tags: getting,started,radfilepathpicker
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadFilePathPicker Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains a __RadFilePathPicker__ control.
 			

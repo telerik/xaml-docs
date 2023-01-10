@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Save/Load Layout
+# {{ site.framework_name }} RadLayoutControl Save/Load Layout
 
 >important This feature is available with __R2 2016 Service pack 1__ version of Telerik UI for WPF controls.
 

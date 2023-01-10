@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Camera
+# {{ site.framework_name }} RadChartView3D Camera
 
 The chart camera defines and controls the point of view from where the chart is observed in 3D space. __RadCartesianChart3D__ uses the WPF __Camera__ class to project 3D objects to a 2D surface. By default the chart uses the native __PerspectiveCamera__ provided by the WPF framework.
 

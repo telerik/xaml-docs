@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Expand and Collapse Timeline groups
+# {{ site.framework_name }} RadTimeline Expand and Collapse Timeline groups
 
 This help topic will provide an overview of the methods for collapsing and expanding Timeline groups.
 

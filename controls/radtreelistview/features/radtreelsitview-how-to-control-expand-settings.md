@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Expanding and Collapsing Items
+# {{ site.framework_name }} RadTreeListView Expanding and Collapsing Items
 
 The RadTreeListView control allows you to control the state of its items both **programmatically** via its public methods and through the **IsExpandedBinding** and **IsExpandableBinding** properties.
 

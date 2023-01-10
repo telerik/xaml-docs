@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# ValidationErrorTemplateHelper
+# {{ site.framework_name }} RadWatermarkTextBox ValidationErrorTemplateHelper
 
 When the control has validation errors, the border around the control will turn red and a little element will appear in the upper right corner of the control. When you hover over the element you can read the validation message. By default, the validation error tooltip message will appear only when the mouse is over this element.
 

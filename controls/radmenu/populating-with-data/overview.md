@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadMenu Overview
 
 In order to display items, you have to populate the __RadMenu__ control with some data. You can do this in two ways:
 

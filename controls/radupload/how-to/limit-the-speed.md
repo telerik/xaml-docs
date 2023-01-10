@@ -9,7 +9,7 @@ position: 4
 site_name: Silverlight
 ---
 
-# Limit the Upload Speed
+# {{ site.framework_name }} RadUpload Limit the Upload Speed
 
 To limit the upload speed you have to use the __BufferSize__ property of the __RadUpload__, the __UploadStarted__, __ProgressChanged__ and __UploadFinished__ events and a __DispatcherTimer__.
 

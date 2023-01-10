@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Qualitative Scale
+# {{ site.framework_name }} RadBulletGraph Qualitative Scale
 
 This article describes the properties exposed by the control for adjusting the qualitative scale.
 

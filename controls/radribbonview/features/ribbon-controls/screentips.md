@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Screen Tips
+# {{ site.framework_name }} RadRibbonView Screen Tips
 
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ consists of various elements, one of which are the __Screen Tips__. This topic discusses concepts fundamental to the __Screen Tips__ at first and then goes into the usage of the __ScreenTip__ class and its features.			
 

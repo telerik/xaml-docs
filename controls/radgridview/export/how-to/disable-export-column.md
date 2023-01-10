@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Disable Export of a Column 
+# {{ site.framework_name }} RadGridView Disable Export of a Column
 
 When exporting with __ExportToXlsx__ or __ExportToPdf__ methods you can choose which columns to export by setting the __ExcludedColumns__ property for the __GridViewDocumentExportOptions__. The property was introduced in __Q3 2015 SP1__. When a given column is added to this collection, it will not be exported.
 

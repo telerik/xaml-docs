@@ -8,7 +8,7 @@ publish: True
 position: 6
 ---
 
-# MediaCommands
+# {{ site.framework_name }} RadMediaPlayer MediaCommands
 
 __RadMediaPlayer__ supports all available commands in the __MediaCommands__ class.
 

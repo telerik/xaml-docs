@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Ticks and Tick frequency
+# {{ site.framework_name }} RadSlider Ticks and Tick frequency
 
 
 

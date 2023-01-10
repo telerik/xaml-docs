@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Styling the RadialMenu
+# {{ site.framework_name }} RadRadialMenu Styling the RadialMenu
 
 This help topic will explain how you can customize the look of some of the elements of the __RadialMenu__ control.    
 

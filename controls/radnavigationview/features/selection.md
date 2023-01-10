@@ -7,7 +7,7 @@ tags: selection
 position: 0
 ---
 
-# Selection
+# {{ site.framework_name }} RadNavigationView Selection
 
 The purpose of this article is to show the basic properties exposed by the __RadNavigationView__ for working with selection. 
 

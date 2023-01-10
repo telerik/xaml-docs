@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadPanelBar Overview
 
 This topic covers the specific events exposed by the __RadPanelBar__control. The events are grouped by their general purpose.	  
 

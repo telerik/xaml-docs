@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Implement Semantic Zoom on a Shape level
+# {{ site.framework_name }} RadDiagram Implement Semantic Zoom on a Shape level
 
 This tutorial demonstrates how to implement custom semantic zoom on a __RadDiagramShape__ level.	  
 

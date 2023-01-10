@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# RecurrencePatternHelper
+# {{ site.framework_name }} RadScheduleView RecurrencePatternHelper
 
 When working with saving [recurrence patterns]({%slug radscheduleview-features-recurrences-recurrencepattern%}), the __RadScheduleView__'s API provides us with the __RecurrencePatternHelper__ class, which comes from the __Telerik.Windows.Controls.ScheduleView.ICalendar__ namespace. The helper provides two main functions - turning a recurrence pattern into a nicely serialized string for storage and producing a recurrence pattern when you provide that string back to it.
 

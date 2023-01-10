@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Main Menu
+# {{ site.framework_name }} RadMenu Main Menu
 
 As of **R3 2018**, RadMenu exposes a boolean **IsMainMenu** property which indicates whether RadMenu receives a main menu activation notification. When set to **True** and the user presses the **F10** or the **Alt** key, the menu grabs the focus and its first item gets highlighted. The default value is **False**.
 

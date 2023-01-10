@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Key Modifiers
+# {{ site.framework_name }} RadContextMenu Key Modifiers
 
 The __ModifierKey__ property allows you to use a modifier key, which in combination with the mouse action opens the __RadContextMenu__. When setting the __ModifierKey__ property you can choose among several available values:
 

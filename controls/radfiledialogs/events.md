@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Events
+# {{ site.framework_name }} RadFileDialogs Events
 
 This article lists the events specific to all of the RadFileDialog controls.
 

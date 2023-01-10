@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Display HTML string in RadHtmlPlaceholder
+# {{ site.framework_name }} RadHtmlPlaceholder Display HTML string in RadHtmlPlaceholder
 
 Displaying HTML can be achieved by setting the HtmlSource property of RadHtmlPlaceholder. Any valid HTML content will be displayed as part of the Silverlight page layout and will be rendered by the browser.
 

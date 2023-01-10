@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Styling Rows
+# {{ site.framework_name }} RadGridView Styling Rows
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 

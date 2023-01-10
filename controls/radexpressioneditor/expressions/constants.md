@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Constants
+# {{ site.framework_name }} RadExpressionEditor Constants
 
 **RadExpressionEditor** allows you to use different constants for defining the expression you want. There are several types supported by the control:
 

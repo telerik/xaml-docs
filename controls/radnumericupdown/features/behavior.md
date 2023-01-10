@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadNumericUpDown Key Properties
 
 __RadNumericUpDown__ comes with a couple of key properties which you can use to customize its default behavior.
 

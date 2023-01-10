@@ -8,7 +8,7 @@ include_in_navigation: False
 position: 2
 ---
 
-# How To Databind RadToolBar 
+# {{ site.framework_name }} RadToolBar How To Databind RadToolBar
 
 The __RadToolBar__ is an __ItemsControl__ and can be databound to any __IEnumerable.__ However, it is best to bind it to a collection that implements the __INotifyCollectionChanged__ interface, like an __ObservableCollection__. 
 

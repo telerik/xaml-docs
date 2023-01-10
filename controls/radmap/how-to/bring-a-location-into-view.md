@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Bring a Location into View
+# {{ site.framework_name }} RadMap Bring a Location into View
 
 In order to bring a location point into view, you simply have to set the __Center__ property of the __RadMap__ property. Here is an example:
 

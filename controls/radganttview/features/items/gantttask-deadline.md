@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# GanttTask Deadline
+# {{ site.framework_name }} RadGanttView GanttTask Deadline
 
 With the official Q2 2014 release of UI for WPF/SL you will have the option to use the __Deadline__ property of the __GanttTask__ and visualize an indicator showing whether the task is expired.  
 

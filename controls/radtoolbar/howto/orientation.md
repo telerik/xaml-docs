@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Orientation
+# {{ site.framework_name }} RadToolBar Orientation
 
 ## Values
 

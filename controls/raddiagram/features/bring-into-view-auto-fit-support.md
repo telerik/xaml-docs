@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Bring Into View and Auto Fit Support
+# {{ site.framework_name }} RadDiagram Bring Into View and Auto Fit Support
 
 The RadDiagram framework allows you to bring a specific item(s) or position into its viewport through couple of methods – __BringIntoView()__ and __AutoFit()__.
 

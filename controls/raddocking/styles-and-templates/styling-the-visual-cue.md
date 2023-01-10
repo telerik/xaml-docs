@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling the Visual Cue
+# {{ site.framework_name }} RadDocking Styling the Visual Cue
 
 The dropping area that you see, when rearranging the containers in the __RadDocking__ control, is represented by the __VisualCue__ control.  
 

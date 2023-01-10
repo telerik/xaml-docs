@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Reordering Tiles
+# {{ site.framework_name }} RadTileView Reordering Tiles
 
 The tiles in __RadTileView__ can be reordered via drag and drop operation. The dragged __RadTileViewItem__ will be swapped with the item under the mouse. This feature is enabled by default, but you can disable it with the __IsItemDraggingEnabled__ property of __RadTileView__.
 

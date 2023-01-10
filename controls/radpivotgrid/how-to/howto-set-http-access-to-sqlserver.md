@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Set HTTP access to SQL Server
+# {{ site.framework_name }} RadPivotGrid Set HTTP access to SQL Server
 
 In this article we will show you how to setup HTTP access to your Microsoft SQL Analysis Service which is needed if you intend to use XmlaDataProvider.
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Binding DataPointMember to a DependencyProperty
+# {{ site.framework_name }} RadChart Binding DataPointMember to a DependencyProperty
 
 
 

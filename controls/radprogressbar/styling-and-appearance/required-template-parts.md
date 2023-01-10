@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Required Parts
+# {{ site.framework_name }} RadProgressBar Required Parts
 
 The control template of __RadProgressBar__ contains a number of elements needed for the correct functioning of the control. This section will explain the structure of the RadProgressBar's template. Here is a snapshot of the template generated in Expression Blend.
 

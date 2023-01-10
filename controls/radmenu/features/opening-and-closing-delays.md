@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Opening and Closing Delays
+# {{ site.framework_name }} RadMenu Opening and Closing Delays
 
 The __RadMenu__ allows you to specify delays for its closing and opening actions. This means that you can make the __RadMenu__ wait for a specific amount of time before opening or closing a menu. In order to specify these delays you can set the __ShowDelay__ and __HideDelay__ properties. They are of type __Duration__ and have the following format in XAML "0:0:0.00".
 

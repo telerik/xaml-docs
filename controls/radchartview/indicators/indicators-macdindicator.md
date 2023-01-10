@@ -8,7 +8,7 @@ publish: True
 position: 7
 ---
 
-# MacdIndicator
+# {{ site.framework_name }} RadChartView MacdIndicator
 
 MacdIndicator is a trend following indicator which displays the relationship between two moving averages of data.
 

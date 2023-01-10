@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Grouped Scenario
+# {{ site.framework_name }} RadGridView Grouped Scenario
 
 ## Perfomance tips in grouped scenario
 

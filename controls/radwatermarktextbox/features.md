@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Features
+# {{ site.framework_name }} RadWatermarkTextBox Features
 
 The most important properties of the `RadWatermarkTextBox` control are:      
 

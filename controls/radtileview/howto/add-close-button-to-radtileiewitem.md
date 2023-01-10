@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# Add a Close Button to a RadTileViewItem
+# {{ site.framework_name }} RadTileView Add a Close Button to a RadTileViewItem
 
 This article demonstrates how to add a close button next to the tile state change (minimize/maximize) button of the __RadTileViewItems__. The __Command__ property of the close button will be bound to an [ICommand](http://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.110).aspx) that removes the item from the __RadTileView's ItemsSource__.        
 

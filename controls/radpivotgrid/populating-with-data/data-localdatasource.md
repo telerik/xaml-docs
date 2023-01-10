@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Using LocalDataSourceProvider
+# {{ site.framework_name }} RadPivotGrid Using LocalDataSourceProvider
 
 __LocalDataSourceProvider__ is one of the data source providers that can be used with __RadPivotGrid__ and __RadPivotFieldList__. __LocalDataSourceProvider__ provides data access to a local source such as an IList of instances of user defined classes. In fact, any collection that implements the *IEnumerable* interface can be used as a __LocalDataSourceProvider__.      	
 

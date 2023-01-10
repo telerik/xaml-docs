@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Use IsRecentColorsActive property
+# {{ site.framework_name }} RadColorPicker Use IsRecentColorsActive property
 
 This article will show you how to use the __IsRecentColorsActive__ property of the __RadColorPicker__ control.
 

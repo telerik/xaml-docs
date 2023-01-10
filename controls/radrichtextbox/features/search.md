@@ -7,7 +7,7 @@ tags: search
 published: True
 ---
 
-# Search
+# {{ site.framework_name }} RadRichTextBox Search
 
 
 

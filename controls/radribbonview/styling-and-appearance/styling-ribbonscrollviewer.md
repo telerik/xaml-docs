@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Styling the RibbonScrollViewer
+# {{ site.framework_name }} RadRibbonView Styling the RibbonScrollViewer
 
 The __RibbonScrollViewer__ control is used both in the template structure of the __RadRibbonView__ to host the __RibbonTabs__ and in the template structure of the __RadRibbonTab__ control to host its content. If you want to edit its default style, you need to first edit the __[RadRibbonView]({%slug radribbonview-styling-ribbonview%})__ or __[RadRibbonTab ]({%slug radribbonview-styling-ribbontab%})__ __ControlTemplate__. This article will demonstrate how to edit the default style of the __RibbonScrollViewer__ control hosting the __RibbonTabs__ inside the __RadRibbonView__.
 ![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_ScrollViewer_Default.png)

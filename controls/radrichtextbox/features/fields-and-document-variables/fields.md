@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Fields
+# {{ site.framework_name }} RadRichTextBox Fields
 
 
 

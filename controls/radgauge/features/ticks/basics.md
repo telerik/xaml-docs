@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Basics
+# {{ site.framework_name }} RadGauge Basics
 
 You are able to configure the displaying of the different tick types on the scale. For each of the Ticks - Minor, Middle or Major you can configure the following:
 

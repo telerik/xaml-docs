@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Using Data Virtualization
+# {{ site.framework_name }} RadGridView Using Data Virtualization
 
 As the case of handling a lot of data is quite common, the requirement for fast data processing becomes more and more indispensable.  The result of this necessity is the __Data Virtualization__ technique that ensures much better performance as well as user experience improvements.
 

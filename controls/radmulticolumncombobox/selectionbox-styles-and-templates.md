@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# SelectionBox Styles And Templates
+# {{ site.framework_name }} RadMultiColumnComboBox SelectionBox Styles And Templates
 
 __RadMultiColumnComboBox__ exposes API for controlling the appearance of its SelectionBoxes. This can be achieved through the following mechanisms.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Tick Marks
+# {{ site.framework_name }} RadGauge Tick Marks
 
 Tick marks allow displaying of the value intervals along the gauge scale. There are 3 types of the tick marks:
 

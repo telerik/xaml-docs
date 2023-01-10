@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Save/Load the Content of the Panes
+# {{ site.framework_name }} RadDocking Save/Load the Content of the Panes
 
 This tutorial will walk you through the common tasks of saving the content of the panes.
 

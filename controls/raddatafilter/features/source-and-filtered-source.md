@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Source and Filtered Source
+# {{ site.framework_name }} RadDataFilter Source and Filtered Source
 
 
 The most important property of the __RadDataFilter__ is its __Source__ property. This is where you pass in your collection of data for paging.

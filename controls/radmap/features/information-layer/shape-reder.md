@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Shape Reader
+# {{ site.framework_name }} RadMap Shape Reader
 
 The __RadMap__ allows you to read data from several data formats and wrap it in __MapShape__ objects. The currently supported formats are:
 

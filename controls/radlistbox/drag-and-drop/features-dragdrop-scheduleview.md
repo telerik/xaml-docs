@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Drag-Drop between RadListBox and RadScheduleView
+# {{ site.framework_name }} RadListBox Drag-Drop between RadListBox and RadScheduleView
 
 This help topic will explain in details the drag-drop functionality between RadListBox and RadScheduleView controls.
 

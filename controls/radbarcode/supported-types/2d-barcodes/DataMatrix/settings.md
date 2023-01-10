@@ -7,7 +7,7 @@ published: True
 slug: barcode-data-matrix-settings
 ---
 
-# Settings
+# {{ site.framework_name }} RadBarcode Settings
 
 This article explains the specific Data Matrix code settings.
 

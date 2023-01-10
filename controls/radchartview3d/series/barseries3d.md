@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# BarSeries3D
+# {{ site.framework_name }} RadChartView3D BarSeries3D
 
 The bar series visualizes three dimensional data represented by 3D bars. Each data point defines a bar that is constructed by X, Z and Y values determining its position in the plot area. 
 

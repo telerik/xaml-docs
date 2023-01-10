@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Implement Copy Drag
+# {{ site.framework_name }} RadTreeView Implement Copy Drag
 
 The purpose of this tutorial is to show you how to implement "Copy Drag".
 

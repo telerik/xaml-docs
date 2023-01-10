@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling FilterControl
+# {{ site.framework_name }} RadDataFilter Styling FilterControl
 
 
 >Before reading this topic, you might find it useful to get familiar with the [Template Structure of the FilterControl]({%slug raddatafilter-styles-and-templates-template-structure%}).

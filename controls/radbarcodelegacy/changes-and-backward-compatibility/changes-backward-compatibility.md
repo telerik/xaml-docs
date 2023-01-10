@@ -8,6 +8,6 @@ published: False
 position: 1
 ---
 
-# Backward Compatibility
+# {{ site.framework_name }} RadBarcodeLegacy Backward Compatibility
 
 ## Q1 2014

@@ -9,7 +9,7 @@ position: 5
 site_name: Silverlight
 ---
 
-# Tech Specs and Comparisons
+# {{ site.framework_name }} RadComboBox Tech Specs and Comparisons
 
 This article compares __RadComboBox__ with native Silverlight ComboBox features and explains few additional ones as well.
 

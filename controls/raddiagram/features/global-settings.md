@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Global Settings
+# {{ site.framework_name }} RadDiagram Global Settings
 
 This article describes the global settings applied in the __Diagramming Framework__.
 

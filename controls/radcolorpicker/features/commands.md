@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Commands
+# {{ site.framework_name }} RadColorPicker Commands
 
 This topic covers the commands available in __RadColorPicker__. Commanding is a way to invoke some code in the ViewModels when a user interaction is performed instead of invoking a code behind function.
 

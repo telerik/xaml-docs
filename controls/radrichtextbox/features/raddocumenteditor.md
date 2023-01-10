@@ -7,7 +7,7 @@ tags: raddocumenteditor
 published: True
 ---
 
-# RadDocumentEditor
+# {{ site.framework_name }} RadRichTextBox RadDocumentEditor
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# MVVM Support
+# {{ site.framework_name }} RadVirtualGrid MVVM Support
 
 This topic will go through the approach of using __RadVirtualGrid__ in MVVM scenarios. This can be achieved by benefiting from the __DataProvider__ mechanism of the control. More information on this matter can be found in the [Getting Started]({%slug virtualgrid-getting-started2%}) and [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%}) topics.
 

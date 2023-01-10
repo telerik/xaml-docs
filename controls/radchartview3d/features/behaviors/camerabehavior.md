@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Camera Behavior
+# {{ site.framework_name }} RadChartView3D Camera Behavior
 
 The camera behavior allows you to control the point of view using the input device (mouse or touch). To enable the behavior you can add a __Chart3DCameraBehavior__ object in the __Behaviors__ collection of the __RadCartesianChart3D__ control.
 

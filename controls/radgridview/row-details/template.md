@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Row Details Template
+# {{ site.framework_name }} RadGridView Row Details Template
 
 The __Row Details__ template is defined through the __RowDetailsTemplate__ property of the __RadGridView__.
 

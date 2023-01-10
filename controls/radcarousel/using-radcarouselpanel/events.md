@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadCarousel Events
 
 This article lists the events specific to RadCarouselPanel. 
 

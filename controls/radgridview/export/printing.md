@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Printing
+# {{ site.framework_name }} RadGridView Printing
 
 * As of __Q1 2015__ RadGridView exposes a new method – [ExportToPdf]({%slug gridview-export-pdf%}) which allows exporting to Pdf format without the need to integrate RadGridView with RadSpreadProcessing.
 

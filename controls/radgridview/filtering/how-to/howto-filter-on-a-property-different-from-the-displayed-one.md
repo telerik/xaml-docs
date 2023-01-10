@@ -8,7 +8,7 @@ published: True
 position: 20
 ---
 
-# Filter on a Property Different from the Displayed One
+# {{ site.framework_name }} RadGridView Filter on a Property Different from the Displayed One
 
 Each GridViewColumn has a property called FilterMemberPath. This property can be used to tell the column to filter a property different from the one it displays in its cells.
 

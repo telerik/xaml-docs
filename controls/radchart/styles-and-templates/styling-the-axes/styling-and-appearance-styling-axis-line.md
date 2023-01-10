@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Styling the Axis Line
+# {{ site.framework_name }} RadChart Styling the Axis Line
 
 
 

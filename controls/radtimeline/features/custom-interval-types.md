@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Custom Interval Types
+# {{ site.framework_name }} RadTimeline Custom Interval Types
 
 __RadTimeline__ provides built-in support for a couple of predefined interval types ranging from milliseconds to centuries. For a full list of the predefined intervals, please refer to the [Interval Formatters]({%slug radtimeline-features-intervals-formatters%}) article. For all custom scenarios that the predefined intervals do not cover, the control supports custom interval type implementations.
 

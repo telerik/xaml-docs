@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Binding to WCF Service
+# {{ site.framework_name }} RadComboBox Binding to WCF Service
 
 The purpose of this tutorial is to show you how to populate a __RadComboBox__ with a data from a __WCF Service__ in two ways:
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Filtering through RadGridView
+# {{ site.framework_name }} RadDataServiceDataSource Filtering through RadGridView
 
 
 

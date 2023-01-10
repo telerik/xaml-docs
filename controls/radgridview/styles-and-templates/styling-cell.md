@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling Cells
+# {{ site.framework_name }} RadGridView Styling Cells
 
 In this article, we discuss various approaches to style the RadGridView cells:
 

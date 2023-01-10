@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Sorting
+# {{ site.framework_name }} RadSpreadsheet Sorting
 
 
 

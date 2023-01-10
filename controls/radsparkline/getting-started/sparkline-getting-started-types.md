@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Sparkline Types
+# {{ site.framework_name }} RadSparkLine Sparkline Types
 
 The sparkline suite contains several controls that provide different visualization for the plotted data. See how to set up those in the [Getting Started]({%slug radsparkline-getting-started%}) article.
 

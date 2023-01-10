@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Weather Card
+# {{ site.framework_name }} RadChat Weather Card
 
 __Weather__ card extends __ImageCard__ by adding options to display weather data. The following set of properties is exposed for this purpose. They are all or of __string__ type.
 

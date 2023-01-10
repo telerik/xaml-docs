@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Minimizing/Maximizing
+# {{ site.framework_name }} RadWindow Minimizing/Maximizing
 
 The __RadWindow__ can be minimized or maximized via the buttons in its top-right corner.
 

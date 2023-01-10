@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Put a Mark on the clicked Location
+# {{ site.framework_name }} RadMap Put a Mark on the clicked Location
 
 If you want to mark the position where the user has clicked, you just have to handle the __MapMouseClick__ event and add the desired mark element to the __InformationLayer__ of the __RadMap__ on the clicked location.
 

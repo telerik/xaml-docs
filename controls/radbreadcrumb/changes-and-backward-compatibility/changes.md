@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadBreadcrumb Changes
 
 This article describes the fixes and the new features in the RadBreadcrumb control.
 

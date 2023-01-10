@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Fluid Content Control
+# {{ site.framework_name }} RadTileView Fluid Content Control
 
 __RadFluidContentControl__ is a flexible content control used to build responsive layouts. 
 

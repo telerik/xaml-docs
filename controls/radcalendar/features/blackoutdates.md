@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# BlackoutDates
+# {{ site.framework_name }} RadCalendar BlackoutDates
 
 With the Q2 SP1 2012 release we introduced an easier way to disable dates in __RadCalendar__ control. Now all that is needed to disable certain dates in the Calendar is to bind the __BlackoutDates__ property of the control to a collection of dates.
 

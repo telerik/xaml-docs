@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# DataForm Message
+# {{ site.framework_name }} RadChat DataForm Message
 
 The __DataFormMessage__ mimics the [RadDataForm]({%slug raddataform-overview%}) control for displaying its data. The constructor of this message and its parameters are illustrated below.
 

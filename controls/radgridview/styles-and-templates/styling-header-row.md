@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Styling Header Row
+# {{ site.framework_name }} RadGridView Styling Header Row
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheaderrow).
 

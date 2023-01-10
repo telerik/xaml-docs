@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Pasting
+# {{ site.framework_name }} RadGridView Pasting
 
 Pasting is controlled similarly to [Copying]({%slug gridview-copying%}). The __ClipboardPasteMode__ property on __RadGridView__, also a flags enumeration of type 
   {% if site.site_name == 'Silverlight' %}[GridViewClipboardPasteMode](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_gridviewclipboardpastemode.html){% endif %}{% if site.site_name == 'WPF' %}[GridViewClipboardPasteMode](http://www.telerik.com/help/wpf/t_telerik_windows_controls_gridviewclipboardpastemode.html){% endif %}, dictates how pasting is performed. The values __None__, __Cells__, __SkipFirstLine__ and __SkipLastLine__ are counterparts of 

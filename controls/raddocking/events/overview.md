@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadDocking Overview
 
 This help article covers the specific events exposed by the __RadDocking__ control. The events are grouped by their general purpose.
 

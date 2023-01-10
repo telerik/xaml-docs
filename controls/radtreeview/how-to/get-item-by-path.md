@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Get Item by Path
+# {{ site.framework_name }} RadTreeView Get Item by Path
 
 The __RadTreeView__ API offers you the ability to get an item by path programmatically. This tutorial will show you how to do that.
 	  

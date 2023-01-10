@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Rows and Columns
+# {{ site.framework_name }} RadTileView Rows and Columns
 
 By default all __TileViewItems__ are ordered automatically like in the screenshot below:
 

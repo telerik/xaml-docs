@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadVirtualGrid
 ---
 
-# Overview
+# {{ site.framework_name }} RadVirtualGrid Overview
 
 __RadVirtualGrid__ is a lightweight tabular component, designed to be able to operate with huge datasets. It provides outstanding performance through evading the common templating mechanism used in the framework. Instead, the control avoids adding most of its items to the visual tree and exposes a mechanism for loading data on demand. 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Custom Sorting
+# {{ site.framework_name }} RadGridView Custom Sorting
 
 Although __RadGridView__ provides a fully functional sorting mechanism, it can sometimes be slow or ineffective, compared to other sorting mechanisms (database server, LINQ extension methods, manually working with the __SortDescriptors__ collection etc.). To benefit from them you have to bypass the existing sorting functionality of __RadGridView__.
 

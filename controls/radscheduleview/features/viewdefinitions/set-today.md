@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Set Today
+# {{ site.framework_name }} RadScheduleView Set Today
 
 The scheduleview control allows you to easily navigate to the current day. You can do this via the *Today* button shown in __Figure 1__ or by executing the __RadScheduleViewCommands.SetToday__ command.
 

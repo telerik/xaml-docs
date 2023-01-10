@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item
+# {{ site.framework_name }} RadTreeView Get Previous, Next, Parent and Sibling Node of a Specific TreeView Item
 
 The __RadTreeViewItem__ class exposes properties which allow you to access:
 

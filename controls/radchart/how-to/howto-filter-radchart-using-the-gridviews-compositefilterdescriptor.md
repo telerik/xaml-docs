@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Filter RadChart Using The GridView's CompositeFilterDescriptor
+# {{ site.framework_name }} RadChart Filter RadChart Using The GridView's CompositeFilterDescriptor
 
 
 

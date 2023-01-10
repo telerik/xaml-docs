@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Animated Layout Change
+# {{ site.framework_name }} RadTransitionControl Animated Layout Change
 
 We have taken a step further in the RadTransitionControl functionality and implemented layout animation mechanism. Animating the layout can be very CPU expensive but still depending on the project this may be required. Also even if fluid resize may be expensive, using animations with discrete steps would be acceptable.
 

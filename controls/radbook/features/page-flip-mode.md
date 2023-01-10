@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Page Flip Mode
+# {{ site.framework_name }} RadBook Page Flip Mode
 
 By default users are able turn to a page by clicking *once* on any of the page corners. To control this behaviour you can use the __PageFlipMode__ property. It is an enumeration that contains the following values:
 

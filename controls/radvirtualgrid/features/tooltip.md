@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Cell ToolTip
+# {{ site.framework_name }} RadVirtualGrid Cell ToolTip
 
 __RadVirtualGrid__ provides a cell tooltip behavior which can be used to visualize information while hovering a cell. The CellToolTip functionality is disabled by default. To enable it, you need to set the __ShowCellToolTip__ boolean property of the __RadVirtualGrid__.
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Radiuses
+# {{ site.framework_name }} RadCircularProgressBar Radiuses
 
 `RadCircularProgressBar` allows you to change the radius of the track, the primary and the secondary progress indicator. To change the track's radius, set the `TrackStartRadius` and `TrackEndRadius` properties. To modify the radius of the progress indicators, set the `IndicatorStartRadius` and `IndicatorEndRadius` properties.
 

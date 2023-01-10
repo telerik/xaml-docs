@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Localization
+# {{ site.framework_name }} RadCloudUpload Localization
 
 This article will go over the available resource keys for localizing the RadCloudUpload control.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Data Providers
+# {{ site.framework_name }} RadRichTextBox Data Providers
 
 
 The __RadRichTextBox__ control allows you to export and import its documents into various document formats - __HTML__, __XAML__, __RTF__, __DOCX__, __PDF__. You can export and import the document from and to __strings__ or __files__. For that purpose you could use the following classes:

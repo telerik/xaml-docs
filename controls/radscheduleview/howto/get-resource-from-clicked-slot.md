@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Get the Resource of the Clicked Slot/Appointment
+# {{ site.framework_name }} RadScheduleView Get the Resource of the Clicked Slot/Appointment
 
 In many scenarios you may need to implement a __RadContextMenu__ within the __RadScheduleView__ and depending on the clicked item to execute custom logic. This article will demonstrate an approach how to get the Resource of the clicked __Appointment__ or __Slot__ in __RadScheduleView__ and use it as __Header__ of a __RadMenuItem__.
 

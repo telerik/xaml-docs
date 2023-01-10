@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Mixed Selection
+# {{ site.framework_name }} RadGridView Mixed Selection
 
 __RadGridView__ allows the user to select a cell or a row. By default this functionality is disabled and to turn it on you have to set the __SelectionUnit__ property to __Mixed__.
 

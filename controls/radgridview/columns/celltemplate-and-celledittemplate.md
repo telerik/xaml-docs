@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Setting CellTemplate and CellEditTemplate
+# {{ site.framework_name }} RadGridView Setting CellTemplate and CellEditTemplate
 
 This article describes how to customize the RadGridView columns by using predefined column types and how to extend the functionality of the columns by defining a non-default editor.
 

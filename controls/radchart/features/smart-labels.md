@@ -8,7 +8,7 @@ published: True
 position: 28
 ---
 
-# Smart Labels
+# {{ site.framework_name }} RadChart Smart Labels
 
 
 

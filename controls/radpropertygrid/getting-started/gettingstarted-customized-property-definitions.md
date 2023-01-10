@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customized Property Definitions
+# {{ site.framework_name }} RadPropertyGrid Customized Property Definitions
 
 RadPropertyGrid auto-generates its property definitions by default based on the properties of the source object. They are stacked vertically in a standard form layout and depend on the type of each property.
 

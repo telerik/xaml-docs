@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Relative Measurements
+# {{ site.framework_name }} RadGauge Relative Measurements
 
 Most of the scale elements have relative size to one common dimension, which is called CellSize. If we set the relative height of the scale to be 0.9 that means that it will be calculated as 0.9 * CellSize. Thus all proportions of the scale elements will be preserved when the container size is changed.
 

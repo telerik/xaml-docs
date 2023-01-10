@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the RadBusyIndicator
+# {{ site.framework_name }} RadBusyIndicator Styling the RadBusyIndicator
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
 

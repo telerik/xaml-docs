@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Auto Expand on Drag Over
+# {{ site.framework_name }} RadTreeView Auto Expand on Drag Over
 
 __RadTreeView__ offers you the ability to automatically expand a treeview node when dragging items over the node. In order to do that you need to perform the following action:
 

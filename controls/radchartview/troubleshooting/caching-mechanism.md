@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Resolve Axis Labels Clipping
+# {{ site.framework_name }} RadChartView Resolve Axis Labels Clipping
 
 This article describes common behavior that can be encountered when using LabelTemplate for the chart axis. In general, if you set the size of the element in the template (at run-time) to a size bigger than the presenter that owns the template, the element will be clipped. This behavior comes from the size caching mechanism of the chart.
       

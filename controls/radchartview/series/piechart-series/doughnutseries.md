@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# DoughnutSeries
+# {{ site.framework_name }} RadChartView DoughnutSeries
 
 This series is visualized on the screen as separate slices representing each of the data points. The only difference from the PieSeries is that each slices is drawn with an offset from the center of the control.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Selection via CheckBox
+# {{ site.framework_name }} RadGridView Selection via CheckBox
 
 The __RadGridView__'s API offers you a __GridViewSelectColumn__, with the help of which you can perform a selection via __CheckBox__. The purpose of this tutorial is to show you how to achieve this behavior.
 

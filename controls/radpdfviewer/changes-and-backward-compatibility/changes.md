@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadPdfViewer Changes
 
 This topic summarizes the new functionality introduced in the viewer with helpful links to places in the documentation that describe in greater detail the new functionality and how it can be used.
       

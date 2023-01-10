@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Globalization Support
+# {{ site.framework_name }} RadMaskedInput Globalization Support
 
 The __RadMaskedInput__ controls provide full globalization support out-of-the-box through the __Culture__ property.
 

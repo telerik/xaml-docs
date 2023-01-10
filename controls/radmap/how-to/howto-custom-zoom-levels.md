@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Implement custom zoom levels for MapZoomBar UI
+# {{ site.framework_name }} RadMap Implement custom zoom levels for MapZoomBar UI
 
 It is now possible to customize the default preset zoom levels in the MapZoomBar UI for every map provider.
 

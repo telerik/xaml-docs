@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Date Selection Modes
+# {{ site.framework_name }} RadDateTimePicker Date Selection Modes
 
 If you want to modify the representation of the items located in the Calendar view of your __RadDateTimePicker__ control you can use the __DateSelectionMode__ property. 
 

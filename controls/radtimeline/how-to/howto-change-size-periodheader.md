@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Change the size of the timelines' period header
+# {{ site.framework_name }} RadTimeline Change the size of the timelines' period header
 
 This help topic will demonstrate how to change the size of the RadTimeline' period header.
 

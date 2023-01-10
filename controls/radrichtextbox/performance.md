@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Performance
+# {{ site.framework_name }} RadRichTextBox Performance
 
 
 When developing __RadRichTextBox__, we try to optimize the operations being executed as much as possible. Nevertheless, with the large amount of available features it cannot be helped that there might be performance diminishment in specific cases. 

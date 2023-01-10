@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Scrolling
+# {{ site.framework_name }} RadGanttView Scrolling
 
 This topic explains how you could set up __RadGanttView__ so that the view is scrolled to a specified location. The location could be a particular GanttTask, DateTime inside the TimeRuler or even a column inside the Grid part.
 

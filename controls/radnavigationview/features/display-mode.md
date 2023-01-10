@@ -7,7 +7,7 @@ tags: threshold, mode, display, pane, size
 position: 0
 ---
 
-# Display Mode
+# {{ site.framework_name }} RadNavigationView Display Mode
 
 The __RadNavigationView__ dynamically adjusts its layout depending on its size. It has three modes __Minimal__, __Compact__ and __Expanded__. 
 

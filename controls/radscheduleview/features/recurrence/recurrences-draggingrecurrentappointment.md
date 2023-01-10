@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Dragging a Recurrent Appointment
+# {{ site.framework_name }} RadScheduleView Dragging a Recurrent Appointment
 
 Using the drag-drop functionality of __RadScheduleView__, you can drag an occurrence of a recurrent appointment as well as the whole series.  This help article will explain how __RadScheduleView__ handles the case when a whole series is dragged.
 

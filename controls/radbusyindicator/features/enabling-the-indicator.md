@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Enabling the Indicator
+# {{ site.framework_name }} RadBusyIndicator Enabling the Indicator
 
 To activate the __RadBusyIndicator__ control you have to set its __IsBusy__ boolean property to __True__. 
 

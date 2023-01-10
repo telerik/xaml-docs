@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Gif Message
+# {{ site.framework_name }} RadChat Gif Message
 
 As its name states, the __GifMessage__ is intended to be used for displaying gif elements. It provides a single constructor which is illustrated below.
 

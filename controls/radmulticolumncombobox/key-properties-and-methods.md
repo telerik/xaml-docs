@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Key Properties and Methods
+# {{ site.framework_name }} RadMultiColumnComboBox Key Properties and Methods
 
 The article lists the most important properties and methods of __RadMultiColumnComboBox__.
 

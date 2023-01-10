@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Additional column added after all gridview columns
+# {{ site.framework_name }} RadGridView Additional column added after all gridview columns
 
 __PROBLEM__
 

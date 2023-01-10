@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Templating the GroupHeaders
+# {{ site.framework_name }} RadScheduleView Templating the GroupHeaders
 
 This help article explains in details how to use GroupHeaderContentTemplateSelector in order to set different DataTemplates to the GroupHeaders of __RadScheduleView__.
 

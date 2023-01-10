@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# ItemEditTemplate
+# {{ site.framework_name }} RadTreeView ItemEditTemplate
 
 Telerik __RadTreeView__ supports defining a DataTemplate that controls how the items can be edited through the __ItemEditTemplate__. This tutorial will walk you through the common task of creating and applying an __ItemEditTemplate__.
 

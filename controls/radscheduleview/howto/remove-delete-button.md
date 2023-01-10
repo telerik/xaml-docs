@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Remove the Delete Button
+# {{ site.framework_name }} RadScheduleView Remove the Delete Button
 
 This tutorial demonstrates how to remove the Delete button from the Appointments by using Implicit Styles and by using the built in property.
 

@@ -8,7 +8,7 @@ published: False
 position: 2
 ---
 
-# How to Add New Tab Item
+# {{ site.framework_name }} RadTabControl How to Add New Tab Item
 
 
 

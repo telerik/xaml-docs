@@ -7,7 +7,7 @@ tags: layout
 position: 5
 ---
 
-# Layout
+# {{ site.framework_name }} RadStepProgressBar Layout
 
 The RadStepProgressBar control is arranged horizontally by default which means that the steps are ordered from left to right. Additionally, the control can be arranged vertically from top to bottom. The flow direction can also be reversed - right to left or bottom to top.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Rotation
+# {{ site.framework_name }} RadPdfViewer Rotation
 
 
 

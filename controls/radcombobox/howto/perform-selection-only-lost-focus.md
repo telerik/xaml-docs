@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Perform Selection Only On Lost Focus or Enter Key Press
+# {{ site.framework_name }} RadComboBox Perform Selection Only On Lost Focus or Enter Key Press
 
 By default, when an item is matched by the text entered in an editable RadComboBox, it will instantaneously be set as the **SelectedItem** of the control. The same result is observed when navigating through the items with the keyboard. Setting the **UpdateSelectionOnLostFocus** property to **True** overrides this behavior and the selection will only be updated when the focus is moved out of the control or the **Enter** key is pressed.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Expanding and Collapsing Items
+# {{ site.framework_name }} RadTreeView Expanding and Collapsing Items
 
 This tutorial will walk you through the following common tasks:
 

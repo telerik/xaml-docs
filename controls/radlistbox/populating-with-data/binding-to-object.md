@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Binding To Object
+# {{ site.framework_name }} RadListBox Binding To Object
 
 To bind the __RadListBox__ to a collection of business objects, you should use its __ItemsSource__ property and define the __DataTemplate__ that is needed to display the data from the collection. If you want the changes to the collection to be automatically reflected to the __RadListBoxItems__, the collection should implement the __INotifyCollectionChanged__ interface, as well as your business object to implement the __INotifyPropertyChanged__ interface.		
 

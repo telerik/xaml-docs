@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# ScrollMode
+# {{ site.framework_name }} RadTimeBar ScrollMode
 
 The ScrollMode property of RadTimeBar configures the horizontal scrolling and zooming behavior of the control.
 

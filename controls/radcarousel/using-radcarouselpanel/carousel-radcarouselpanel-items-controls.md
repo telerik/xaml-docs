@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Using RadCarouselPanel with Items Controls
+# {{ site.framework_name }} RadCarousel Using RadCarouselPanel with Items Controls
 
 
 ## Panels in WPF

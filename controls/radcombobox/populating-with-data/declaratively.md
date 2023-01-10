@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Declaratively
+# {{ site.framework_name }} RadComboBox Declaratively
 
 This tutorial will walk you through the common task of populating __RadComboBox__ with __RadComboBoxItems__ declaratively. 
 

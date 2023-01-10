@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# CellTemplateSelector and CellEditTemplateSelector
+# {{ site.framework_name }} RadGridView CellTemplateSelector and CellEditTemplateSelector
 
 This article will show you how to conditionally apply a different data template to RadGridView cells using the __CellTemplateSelector__ and **CellEditTemplateSelector** properties.
 

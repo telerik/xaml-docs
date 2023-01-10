@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# AutoComplete
+# {{ site.framework_name }} RadComboBox AutoComplete
 
 __AutoComplete__ is a feature provided by many browsers, programs and controls. It involves the program predicting a word or phrase that the user wants to type without the user actually typing it in completely. __RadComboBox__ has full autocomplete support - while you type into the input area, the combobox returns the relative match for the currently typed text.
 

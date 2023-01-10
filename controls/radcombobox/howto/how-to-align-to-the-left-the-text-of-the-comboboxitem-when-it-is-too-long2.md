@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# How to left align the text of the ComboBoxItem when it is too long
+# {{ site.framework_name }} RadComboBox How to left align the text of the ComboBoxItem when it is too long
 
 If the text in a __RadComboBoxItem__ is longer than the width of the ComboBox itself and the ComboBox is in editable mode, when you focus __RadComboBox__ it selects all of its text and the cursor is at the end of the word for easy edition. 
 

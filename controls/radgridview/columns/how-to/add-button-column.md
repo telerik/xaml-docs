@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Add a Button Column
+# {{ site.framework_name }} RadGridView Add a Button Column
 
 This article demonstrates how to add a column with a delete button for each row. We will benefit from the static [RadGridViewCommands]({%slug gridview-commands-overview%}) class to automatically delete the corresponding row item upon clicking the button. **Figure 1** illustrates the desired result.
 

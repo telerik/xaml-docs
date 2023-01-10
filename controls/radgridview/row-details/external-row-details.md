@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# External Row Details
+# {{ site.framework_name }} RadGridView External Row Details
 
 > The External RowDetails functionality is available only if the __SelectionUnit__ is __FullRow__ or __Mixed__. For the __Mixed SelectionUnit__ the selection has to be applied through the __row indicator__.
 

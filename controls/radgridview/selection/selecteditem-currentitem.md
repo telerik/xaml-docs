@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# CurrentItem, SelectedItem and SelectedItems
+# {{ site.framework_name }} RadGridView CurrentItem, SelectedItem and SelectedItems
 
 This article explains the usage of the [SelectedItem](#selecteditem), [CurrentItem](#currentitem) & [SelectedItems](#selecteditems) properties.
 

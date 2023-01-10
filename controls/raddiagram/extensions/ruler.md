@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Ruler
+# {{ site.framework_name }} RadDiagram Ruler
 
 This article describes the features of the __RadDiagramRuler__
 

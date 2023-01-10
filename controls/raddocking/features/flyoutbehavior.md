@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# FlyoutBehavior
+# {{ site.framework_name }} RadDocking FlyoutBehavior
 
 The flyout behavior controls how and when the flyout of the __auto hide area__ is opened and closed. RadDocking comes with two implementations of the __IFlyoutBehavior__ - __ClickFlyoutBehavior__ and __HoverFlyoutBehavior__.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to Remove the Thousands Separator
+# {{ site.framework_name }} RadMaskedInput How to Remove the Thousands Separator
 
 By default the __RadMaskedNumericInput__ and __RadMaskedCurrencyInput__ controls use a culture-aware thousands separator:
 

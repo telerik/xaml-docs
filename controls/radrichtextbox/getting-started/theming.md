@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Setting a Theme
+# {{ site.framework_name }} RadRichTextBox Setting a Theme
 
 The controls from the UI for {{ site.framework_name }} suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
 

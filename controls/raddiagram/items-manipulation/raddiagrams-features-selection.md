@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Selection
+# {{ site.framework_name }} RadDiagram Selection
 
 __RadDiagram__ gives you the ability to select __RadDiagramItems__ in XAML, code behind, with data binding, interactively or by invoking __RadDiagramCommand__.	  
 

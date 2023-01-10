@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the ButtonChrome
+# {{ site.framework_name }} RadButtons Styling the ButtonChrome
 
 __ButtonChrome__ is a Control that has no input functionality. It was part of the template of the __RadButtons__. It was responsible for the visual appearance of the button. If you're using an older version of the RadControls, this article will help you style the __ButtonChrome__ control. It can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 

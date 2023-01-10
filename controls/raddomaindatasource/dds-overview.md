@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadDomainDataSource
 ---
 
-# Overview
+# {{ site.framework_name }} RadDomainDataSource Overview
 
 Telerik provides __RadDomainDataSource__ similar to the Microsoft __DomainDataSource__ control to simplify the interaction between the user interface and data from a domain context. With the __DomainDataSource__, you can retrieve, shape, and edit data using only declarative syntax. You specify the domain context to use with the __DomainDataSource__, and then call the operations that are available through that domain context. __RadDomainDataSource__ tightly integrates with __RadGridView__, __RadDataFilter__, __RadDataPager__, etc and performs filtering, paging and sorting on the server.
 

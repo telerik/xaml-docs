@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How to customize the DragVisualProvider
+# {{ site.framework_name }} RadListBox How to customize the DragVisualProvider
 
 In __RadListBox__ it is possible to enrich the drag-drop functionality of the control by creating a custom __DragVisualProvider__ or using one of the built-in DragVisualProviders. More information about the built-in DragVisualProviders could be found [here]({%slug radlistbox-features-dragdrop%}).     
 

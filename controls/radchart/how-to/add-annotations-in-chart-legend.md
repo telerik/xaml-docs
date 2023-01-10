@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Add Annotations in Chart Legend
+# {{ site.framework_name }} RadChart Add Annotations in Chart Legend
 
 
 

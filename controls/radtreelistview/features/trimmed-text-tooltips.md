@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Trimmed Text Tooltips
+# {{ site.framework_name }} RadTreeListView Trimmed Text Tooltips
 
 As of **R1 2017** through the new **ShowToolTipOnTrimmedText** property you can specify whether or not a tooltip should be shown when the text of a given cell exceeds its parent column's width. It can be set on both **RadTreeListView** and **column** level.
 

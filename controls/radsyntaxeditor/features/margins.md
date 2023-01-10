@@ -7,7 +7,7 @@ tags: margins,radsyntaxeditor
 position: 10
 ---
 
-# Margins
+# {{ site.framework_name }} RadSyntaxEditor Margins
 
 The RadSyntaxEditor control contains several panels inside its ControlTemplate, which allow for customizing its look and/or extending its functionality. In order to customize them you can use the **Margins** property, which is of type [SyntaxEditorMargins](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.syntaxeditor.ui.margins.syntaxeditormargins).
 

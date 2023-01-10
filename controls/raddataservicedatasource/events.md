@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadDataServiceDataSource Events
 
 This topic will go through the event model exposed by __RadDataServiceDataSource__ and the purposes for which each event can be used.
 

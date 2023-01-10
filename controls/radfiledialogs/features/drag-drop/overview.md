@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Drag and Drop Overview
+# {{ site.framework_name }} RadFileDialogs Drag and Drop Overview
 
 The drag and drop feature of the file dialogs allows you to grab items (file and folders) and move them to a different location. The feature supports copy and move operations and it is enabled by default. 
 

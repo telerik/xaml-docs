@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# VisualStructure
+# {{ site.framework_name }} RadPropertyGrid VisualStructure
 
 
 

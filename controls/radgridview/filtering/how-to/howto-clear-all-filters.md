@@ -8,7 +8,7 @@ published: False
 position: 8
 ---
 
-# Clear All RadGridView Filters
+# {{ site.framework_name }} RadGridView Clear All RadGridView Filters
 
 See this [article]({%slug gridview-filtering-programmatic%}) for more information.
 

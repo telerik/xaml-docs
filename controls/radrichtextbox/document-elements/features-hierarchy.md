@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Elements Hierarchy
+# {{ site.framework_name }} RadRichTextBox Elements Hierarchy
 
 
 

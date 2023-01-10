@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Drop-Down Button Icon
+# {{ site.framework_name }} RadComboBox Drop-Down Button Icon
 
 The __DropDownButtonIconContent__ and the __DropDownButtonIconContentTemplate__ properties allow you to customize the drop-down button icon of the __RadComboBox__ control.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Function Invocation
+# {{ site.framework_name }} RadExpressionEditor Function Invocation
 
 __RadExpressionEditor__ allows you to benefit from the built-in functions as well. So, you may easily invoke __Distinct([List])__ like: 
 

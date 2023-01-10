@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadNavigationView Visual Structure
 
 This topic defines terms and concepts related to __RadNavigationView__ that you have to get familiar with before you continue reading this help. __Figure 1__ demonstrates a __RadNavigationView__ with its NavigationPane opened and explanations of the visual elements .
 

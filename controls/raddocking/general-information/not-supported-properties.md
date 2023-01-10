@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Not Supported Properties
+# {{ site.framework_name }} RadDocking Not Supported Properties
 
 There are several properties that are not supported by the __RadDocking__ control. Below is a list of these properties and the reason why they are not working. However, we are working on improving their behavior. 
 

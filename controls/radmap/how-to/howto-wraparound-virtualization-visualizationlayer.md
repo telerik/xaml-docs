@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Wraparound with Virtualization in VisualizationLayer
+# {{ site.framework_name }} RadMap Wraparound with Virtualization in VisualizationLayer
 
 When using wraparound functionality, the virtualization of the RadMap control needs to be further customized.
 

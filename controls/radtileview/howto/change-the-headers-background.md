@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Change the RadTileViewItem Header Background
+# {{ site.framework_name }} RadTileView Change the RadTileViewItem Header Background
 
 This article will show you how to change the __Background__ of the __RadTileViewItems' Header__ corresponding to the state of the item in an MVVM scenario.	  
 

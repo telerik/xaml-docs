@@ -8,7 +8,7 @@ publish: True
 position: 2
 ---
 
-# AdaptiveMovingAverageKaufmanIndicator
+# {{ site.framework_name }} RadChartView AdaptiveMovingAverageKaufmanIndicator
 
 AdaptiveMovingAverageKaufmanIndicator acts as a moving average indicator, therefore it is smoothing the data to form a trend following. In addition to this, the indicator tracks the degree of noise in the trend and adjusts based on it.
 

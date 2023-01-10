@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# CartesianChart3DGrid
+# {{ site.framework_name }} RadChartView3D CartesianChart3DGrid
 
 __CartesianChart3DGrid__ is used to decorate the 3D Cartesian chart with grid lines and strip lines placed over the planes (sides) of the plot area.
 

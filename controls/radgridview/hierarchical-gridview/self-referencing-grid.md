@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Self-Referencing GridView
+# {{ site.framework_name }} RadGridView Self-Referencing GridView
 
 Except displaying hierarchical data and applying some custom criteria about when the subset of data is to be displayed, __RadGridView__ allows you to define a relation that points back to the same collection. In the cases when the hierarchical data is build from one type of items, you can use a self referencing __RadGridView__ to display the data.
 

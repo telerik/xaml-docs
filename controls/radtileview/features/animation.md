@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Animation
+# {{ site.framework_name }} RadTileView Animation
 
 This article describes how you can control the __RadTileView__ animations. By default the animations are enabled. This can be changed using the __IsItemsAnimationEnabled__ property.
 

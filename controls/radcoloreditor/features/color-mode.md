@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Color Mode
+# {{ site.framework_name }} RadColorEditor Color Mode
 
 The __RadColorEditor__ control allows supports the most popular color models. You can choose which one to use by setting the  __ColorMode__ property.
 

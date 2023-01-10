@@ -7,7 +7,7 @@ tags: ui, layer, visualization
 published: True
 ---
 
-# UI Layers
+# {{ site.framework_name }} RadRichTextBox UI Layers
 
 RadRichTextBox uses separate layers to render the different parts of a document. This topic describes which layers are used and the parts they are responsible to visualize.
 

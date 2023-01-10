@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Validation Support
+# {{ site.framework_name }} RadPropertyGrid Validation Support
 
 RadPropertyGrid supports validation through [IDataErrorInfo](#validating-through-idataerrorinfo), [INotifyDataErrorInfo](#validating-through-inotifydataerrorinfo) and through [DataAnnotations](#validating-through-dataannotations) as well as validating [PropertySets](#validating-property-sets).
 

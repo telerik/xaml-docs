@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Cross-Version Support
+# {{ site.framework_name }} RadPersistenceFramework Cross-Version Support
 
 When serializing an object the PersistenceFramework takes the concrete version of the assembly where the specific class is stored and saves it in the serialization info (see Example 1). If you reference a different version of the assembly that holds the serialized object and try to deserialize it, an exception will be thrown and the object's state won't be restored. 
 

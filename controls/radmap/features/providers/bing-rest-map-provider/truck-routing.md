@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Truck Routing
+# {{ site.framework_name }} RadMap Truck Routing
 
 RadMap provides an infrastructure that allows you to use the [Bing Maps Truck Routing API](https://docs.microsoft.com/en-us/bingmaps/rest-services/routes/calculate-a-truck-route) to get a set of locations that can be plotted on the map. 
 

@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Styling Row Details
+# {{ site.framework_name }} RadGridView Styling Row Details
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the DetailsPresenter]({%slug radgridview-styles-and-templates-templates-structure%}#detailspresenter).
 

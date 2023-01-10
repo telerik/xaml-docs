@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling RadCalculator
+# {{ site.framework_name }} RadCalculator Styling RadCalculator
 
 
 

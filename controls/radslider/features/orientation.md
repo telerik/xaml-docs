@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Orientation
+# {{ site.framework_name }} RadSlider Orientation
 
 
 

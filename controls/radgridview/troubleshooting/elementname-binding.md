@@ -9,7 +9,7 @@ position: 10
 site_name: Silverlight
 ---
 
-# ElementName binding in column Header or CellTemplate
+# {{ site.framework_name }} RadGridView ElementName binding in column Header or CellTemplate
 
 __PROBLEM__
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Image Column
+# {{ site.framework_name }} RadGridView Image Column
 
 The __GridViewImageColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of the functionality too. In addition, it allows you to easily configure the image's height, width and stretch.
 

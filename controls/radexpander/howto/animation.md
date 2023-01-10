@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Expander Animation
+# {{ site.framework_name }} RadExpander Expander Animation
 
 The RadExpander control has an animation enabled by default. 
 

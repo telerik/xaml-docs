@@ -9,7 +9,7 @@ position: 8
 site_name: Silverlight
 ---
 
-# Loading Data from Web Services
+# {{ site.framework_name }} RadGridView Loading Data from Web Services
 
 The purpose of this tutorial is to show you how to populate a __RadGridView__ with data from a __Web (asmx) Service__ in two ways:
 

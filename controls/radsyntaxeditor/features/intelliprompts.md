@@ -7,7 +7,7 @@ tags: intelliprompts,radsyntaxeditor
 position: 1
 ---
 
-# IntelliPrompts
+# {{ site.framework_name }} RadSyntaxEditor IntelliPrompts
 
 The RadSyntaxEditor has support for intelliprompts which aim to speed up coding by reducing typos and other common mistakes.
 

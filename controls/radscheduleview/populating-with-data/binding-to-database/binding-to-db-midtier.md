@@ -9,7 +9,7 @@ position: 3
 site_name: Silverlight
 ---
 
-# Entity Model, DomainContext
+# {{ site.framework_name }} RadScheduleView Entity Model, DomainContext
 
 Now, when we have the table definitions that match the types in the RadScheduleView control in a very common way, we can continue with generating the Entity Model:
 

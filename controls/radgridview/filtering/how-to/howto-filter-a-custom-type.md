@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Filter a Custom Type
+# {{ site.framework_name }} RadGridView Filter a Custom Type
 
 If you want to filter a column that is data-bound to a custom type, you need to make sure that your custom type meets certain criteria. We will use the type **Person** as an example.
 

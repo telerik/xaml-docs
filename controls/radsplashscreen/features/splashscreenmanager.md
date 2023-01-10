@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Splash Screen Manager
+# {{ site.framework_name }} RadSplashScreen Splash Screen Manager
 
 RadSplashScreenManager is the class that is used to control the splash screen. The manager allows you to change the splash screen settings and show/hide it.
 

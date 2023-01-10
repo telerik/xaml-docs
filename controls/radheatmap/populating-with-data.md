@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Populating With Data
+# {{ site.framework_name }} RadHeatMap Populating With Data
 
 This article demonstrates how the RadHeatmap control can be populated with data.
 

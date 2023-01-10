@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Increase/decrease handles
+# {{ site.framework_name }} RadSlider Increase/decrease handles
 
 
 

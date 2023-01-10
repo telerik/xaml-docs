@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadScheduleView Overview
 
 This topic covers the specific events exposed by the __RadScheduleView__ control and its sub element __Appointment__. The events are first grouped by control and then by their general purpose.      
 

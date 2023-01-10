@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to apply multiple animations for showing and hiding RadDesktopAlert
+# {{ site.framework_name }} RadDesktopAlert How to apply multiple animations for showing and hiding RadDesktopAlert
 
 Using the __ShowAnimation__ and __HideAnimation__ properties of the __DesktopAlertManager__ you could easily apply an animation or group of animations that all __RadDesktopAlert__ instances will use to show and hide. Both properties are of type __RadAnimation__ and only animations that inherits and extents that class could be set to them. __RadAnimation__ class also provides the ability to use some the common animation properties like __SpeedRatio__ and __AnimationName__.
 

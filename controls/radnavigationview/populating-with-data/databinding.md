@@ -7,7 +7,7 @@ tags: databinding, populating, data
 position: 0
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadNavigationView Data Binding
 
 __RadNavigationView__ can be bound to a collection of objects through its ItemsSource property. This article will demonstrate how to data bind a collection of custom objects to RadNavigationView.
 

@@ -7,7 +7,7 @@ tags: space, nbsp, non-breaking, insert
 published: True
 ---
 
-# Non-Breaking Spaces
+# {{ site.framework_name }} RadRichTextBox Non-Breaking Spaces
 
 The non-breaking spaces are really useful when you need to ensure that two adjacent words won't be separated on different lines. When calculating the layout of the text, **RadRichTextBox** tries to break the line on a space and to avoid breaking a word. However, it is sometimes needed to ensure that words, separated by spaces, won't appear on different lines. Here come the non-breaking spaces to help you keep adjacent words always on the same line. **RadRichTextBox** supports non-breaking spaces and enables you to insert them through its UI or in code. 
 

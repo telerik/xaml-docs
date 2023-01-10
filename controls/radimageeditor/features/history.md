@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# History
+# {{ site.framework_name }} RadImageEditor History
 
 
 

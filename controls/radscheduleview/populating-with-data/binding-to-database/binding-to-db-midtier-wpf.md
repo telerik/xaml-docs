@@ -9,7 +9,7 @@ position: 4
 site_name: WPF
 ---
 
-# Entity Model
+# {{ site.framework_name }} RadScheduleView Entity Model
 
 Now, when we have the table definitions that match the types in the RadScheduleView control in a very common way, we can continue with generating the Entity Model:
 

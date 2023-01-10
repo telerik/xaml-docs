@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to Edit an Item
+# {{ site.framework_name }} RadTreeView How to Edit an Item
 
 __RadTreeView__ supports editing the displayed text of the item. The purpose of this tutorial is to show you:
 

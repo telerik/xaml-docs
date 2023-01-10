@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Loading animation
+# {{ site.framework_name }} RadCoverflow Loading animation
 
 If you want to benefit from the built-in loading bar and you use a ItemTemplate to define a specific layout of your RadCoverFlowItems you should use the attached property EnableNotification. Here is an example how to use the attached property with a custom ItemTemplate in RadCoverFlow:
 

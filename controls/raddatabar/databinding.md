@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# DataBinding
+# {{ site.framework_name }} RadDataBar DataBinding
 
 Databinding for the RadDataBar control involves the correlation between the business logic/data, and the visualization of the control.
 

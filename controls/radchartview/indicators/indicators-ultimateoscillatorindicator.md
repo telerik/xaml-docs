@@ -8,7 +8,7 @@ publish: True
 position: 21
 ---
 
-# UltimateOscillatorIndicator
+# {{ site.framework_name }} RadChartView UltimateOscillatorIndicator
 
 UltimateOscillatorIndicator measures momentum across three timeframes. The indicators has less volatility and trade signals compared to other single timeframed indicators.
 

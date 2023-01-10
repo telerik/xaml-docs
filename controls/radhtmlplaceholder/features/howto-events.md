@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# RadHtmlPlaceholder Events
+# {{ site.framework_name }} RadHtmlPlaceholder RadHtmlPlaceholder Events
 
 One of the important custom events that __RadHtmlPlaceholder__ exposes is the __UrlLoaded__ event. This event occurs as soon as the external url that is set as a source is loaded.				
 

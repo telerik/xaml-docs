@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadGanttView Overview
 
 The __RadGanttView__ control has a built-in __DragDropBehavior__ and __ResizeBehavior__ that enable the drag and drop feature of tasks as well as their resizing. This article will show the basic functionalities of the two behaviors.
 

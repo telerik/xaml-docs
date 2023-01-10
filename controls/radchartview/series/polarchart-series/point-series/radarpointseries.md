@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadarPointSeries
+# {{ site.framework_name }} RadChartView RadarPointSeries
 
 This series is visualized on the screen as separate points representing each of the __DataPoints__.      
 

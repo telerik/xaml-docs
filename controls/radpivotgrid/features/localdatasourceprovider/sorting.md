@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Sorting
+# {{ site.framework_name }} RadPivotGrid Sorting
 
 In this article we will show how you can sort your data based on the header names or the totals.      
 

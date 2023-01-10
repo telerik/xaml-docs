@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# ItemsPanel
+# {{ site.framework_name }} RadLegend ItemsPanel
 
 By default the RadLegend uses a StackPanel with Vertical orientation to lay out its items. You can easily change the panel by setting the ItemsPanel property. 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RecurrencePattern
+# {{ site.framework_name }} RadScheduleView RecurrencePattern
 
 __RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. [Exceptions](#Exceptions) to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct __RecurrencePattern__.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Clipboard Operations
+# {{ site.framework_name }} RadDiagram Clipboard Operations
 
 __RadDiagram__ gives you the ability to __Cut__, __Copy__ and __Paste__ RadDiagramItems within an application or from __WPF__ to __Silverlight 5__ application and vice versa.	  
 

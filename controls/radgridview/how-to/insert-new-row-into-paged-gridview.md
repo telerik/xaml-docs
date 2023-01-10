@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Insert New Row into Paged GridView
+# {{ site.framework_name }} RadGridView Insert New Row into Paged GridView
 
 This help article will show you how to insert new row into paged GridView
 

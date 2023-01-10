@@ -8,7 +8,7 @@ published: True
 position: 25
 ---
 
-# Sorting
+# {{ site.framework_name }} RadChart Sorting
 
 
 

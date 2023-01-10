@@ -9,7 +9,7 @@ position: 14
 site_name: Silverlight
 ---
 
-# Integrate Data Visualization Controls With WCF RIA services
+# {{ site.framework_name }} RadChart Integrate Data Visualization Controls With WCF RIA services
 
 
 

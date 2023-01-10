@@ -7,8 +7,8 @@ tags: error,handle,handling,exception,raised
 published: True		
 position: 2		
 ---
-		
-# Error Handling
+
+# {{ site.framework_name }} RadFileDialogs Error Handling
 
 The file dialogs come with their own error handling mechanism so that you can deal with most exceptional situations that may occur while navigating through the file system.
 Here's a list of exceptions that get handled internally by the controls and can be analyzed and processed in the [ExceptionRaised]({%slug radfiledialogs-events%}) event.

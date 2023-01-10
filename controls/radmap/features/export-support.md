@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Export Support
+# {{ site.framework_name }} RadMap Export Support
 
 The __RadMap__ control has a built-in export to image support.
 

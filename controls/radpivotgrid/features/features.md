@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Features
+# {{ site.framework_name }} RadPivotGrid Features
 
 __RadPivotGrid__ is a very powerful tool for aggregations and calculations.
 

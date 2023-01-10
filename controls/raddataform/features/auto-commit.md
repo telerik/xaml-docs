@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# AutoCommit Settings
+# {{ site.framework_name }} RadDataForm AutoCommit Settings
 
 
 

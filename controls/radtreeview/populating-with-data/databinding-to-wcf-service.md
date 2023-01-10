@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Binding to WCF Service
+# {{ site.framework_name }} RadTreeView Binding to WCF Service
 
 The purpose of this tutorial is to show you how to populate a __RadTreeView__ with data from a __WCF Service__. 
 

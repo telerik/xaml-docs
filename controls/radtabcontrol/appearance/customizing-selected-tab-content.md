@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customizing Selected Tab Content
+# {{ site.framework_name }} RadTabControl Customizing Selected Tab Content
 
 This article shows how to customize the content of the RadTabControl's tab items. 
 

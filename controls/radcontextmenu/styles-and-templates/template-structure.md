@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadContextMenu Template Structure
 
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadContextMenu__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template parts of it or even independent controls related to it.
 

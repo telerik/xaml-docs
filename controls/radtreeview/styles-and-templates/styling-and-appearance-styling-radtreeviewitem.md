@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the RadTreeViewItem
+# {{ site.framework_name }} RadTreeView Styling the RadTreeViewItem
 
 The __RadTreeViewItem__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control or by creating an implicit style.
 

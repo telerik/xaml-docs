@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Handle Cell\Row Mouse Events
+# {{ site.framework_name }} RadGridView Handle Cell\Row Mouse Events
 
 This article will demonstrate how to handle RadGridView's [CellLoaded](#cellloaded-event) & [RowLoaded](#rowloaded-event) events to add handlers for the various mouse events to the control's cell and row elements. The [CellUnloaded](#cellunloaded-event) and [RowUnloaded](#rowunloaded-event) events can in turn be used to remove those handlers in order to avoid memory leaks.
 

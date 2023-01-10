@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customizing Keys
+# {{ site.framework_name }} RadVirtualKeyboard Customizing Keys
 
 The VirtualKeyboard component uses a DataTemplateSelector in order to determine the visual appearance of the keys. 
 

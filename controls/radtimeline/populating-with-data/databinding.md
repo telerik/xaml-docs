@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# DataBinding
+# {{ site.framework_name }} RadTimeline DataBinding
 
 >In order to use __RadTimeline__ control in your projects you have to add references to __Telerik.Windows.Controls.DataVisualization.dll, Telerik.Windows.Controls.dll and Telerik.Windows.Data.dll.__
 

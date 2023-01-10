@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Grouping
+# {{ site.framework_name }} RadDiagram Grouping
 
 __Grouping__ in the __RadDiagram__ is a way of organizing shapes and connections in logical groups. Groups are non-visual, logical collections of shapes and/or connections and/or other groups which can be created in code behind or with Commands.
 

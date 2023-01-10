@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Focus Input Controls In Header
+# {{ site.framework_name }} RadWindow Focus Input Controls In Header
 
 An interesting use case when working with the **RadWindow** control is when you want to add an input control, let's say **TextBox**, for example, to the window's header. When trying to do so, however, you will notice that the RadWindow itself handles various mouse events. In such way it prevents the input control from gaining focus, making it almost unusable.
 

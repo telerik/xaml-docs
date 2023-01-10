@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Custom Slots
+# {{ site.framework_name }} RadScheduleView Custom Slots
 
 This article describes how you can create a custom SpecialSlot, add custom properties to it and bind the properties in the Slot template.
 

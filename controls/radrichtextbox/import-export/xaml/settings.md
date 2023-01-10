@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Settings
+# {{ site.framework_name }} RadRichTextBox Settings
 
 __XamlFormatProvider__ allows for import of XAML documents and respectively export of RadRichTextBox to XAML file. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
 

@@ -9,7 +9,7 @@ position: 0
 site_name: Silverlight
 ---
 
-# Secure Upload File Paths
+# {{ site.framework_name }} RadUpload Secure Upload File Paths
 
 This article shows how to improve the security of the RadUploadHandler used with RadUpload for Silverlight. 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# DiagramNavigationPane
+# {{ site.framework_name }} RadDiagram DiagramNavigationPane
 
 __RadDiagramNavigationPane__ wraps the __RadDiagramThumbnail__ control and gives you the ability to easily __Pan__, __Autofit__ and __Zoom__ the RadDiagram.
 ![raddiagram-extensions-navigationpane](images/raddiagram-extensions-navigationpane.png)

@@ -8,7 +8,7 @@ published: False
 position: 1
 ---
 
-# Filter Programmatically
+# {{ site.framework_name }} RadGridView Filter Programmatically
 
 Besides the built-in filtering functionality you are able to use a programmatic approach to filter the data in the __RadGridView__. This is achieved via the __FilterDescriptors__ property of the __RadGridView__. This collection stores filter descriptors that implement the __IFilterDescriptor__ interface. The most important classes that implement this interface directly or not are:
 

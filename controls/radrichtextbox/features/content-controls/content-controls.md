@@ -7,7 +7,7 @@ tags: content controls, richtextbox
 published: True
 ---
 
-# Content Controls (Structured Document Tags)
+# {{ site.framework_name }} RadRichTextBox Content Controls (Structured Document Tags)
 
 Structured Document Tags (SDT) enable users to add specific semantics to part of the document: restricting input, modifying editing behavior etc. 
 

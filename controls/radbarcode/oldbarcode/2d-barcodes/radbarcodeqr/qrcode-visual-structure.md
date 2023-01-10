@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadBarcode Visual Structure
 
 >important This is the documentation of the old version of the RadBarcode component, which is currently deprecated. Check out the new version [here]({%slug barcode-getting-started%}).
 

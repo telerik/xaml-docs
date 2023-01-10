@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadTabControl Keyboard Support
 
 
 

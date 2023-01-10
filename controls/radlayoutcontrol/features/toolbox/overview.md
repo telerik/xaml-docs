@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# ToolBox Overview
+# {{ site.framework_name }} RadLayoutControl ToolBox Overview
 
 The layout control toolbox allows you to add items in the layout control at runtime by drag&drop and also gives you access to the history of the deleted items.
 

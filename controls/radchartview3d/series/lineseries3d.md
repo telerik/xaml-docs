@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# LineSeries3D
+# {{ site.framework_name }} RadChartView3D LineSeries3D
 
 The line series visualizes three dimensional data represented by a line shape. Each data point is defined by X, Z and Y values which determines its position in the plot area. 
 

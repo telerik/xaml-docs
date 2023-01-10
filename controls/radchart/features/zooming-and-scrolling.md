@@ -8,7 +8,7 @@ published: True
 position: 27
 ---
 
-# Zooming and Scrolling
+# {{ site.framework_name }} RadChart Zooming and Scrolling
 
 
 

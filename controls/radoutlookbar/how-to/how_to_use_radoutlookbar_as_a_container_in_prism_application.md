@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to Use RadOutlookBar as a Container in Prism Application
+# {{ site.framework_name }} RadOutlookBar How to Use RadOutlookBar as a Container in Prism Application
 
 This help article will show you how to use __RadOutlookBar__ as a container for hosting views.
 

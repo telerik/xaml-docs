@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Semicircle gauge
+# {{ site.framework_name }} RadGauge Semicircle gauge
 
 Many gauge application require radial scale which have a semicircle shape:
 

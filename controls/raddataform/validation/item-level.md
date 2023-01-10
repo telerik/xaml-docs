@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Validating Data Through Data Annotations
+# {{ site.framework_name }} RadDataForm Validating Data Through Data Annotations
 
 Aside from the __property level__ validation, RadDataForm supports validation through **data annotations**. Validation is performed on any occasion when changes are committed - navigation, insertion of new items or when **AutoCommit** is set to **True**, for example. This feature is available for both auto-generated and customized fields and all of the **System.ComponentModel.DataAnnotations** validation attributes are supported.
 

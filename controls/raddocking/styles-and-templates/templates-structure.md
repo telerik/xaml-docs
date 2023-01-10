@@ -9,7 +9,7 @@ position: 1
 include_in_navigation: False
 ---
 
-# Templates Structure
+# {{ site.framework_name }} RadDocking Templates Structure
 
 This topic will explain you the structure of the __RadDocking__ template and describe the elements in it.
 

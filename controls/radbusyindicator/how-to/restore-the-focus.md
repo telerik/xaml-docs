@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Restore the focus
+# {{ site.framework_name }} RadBusyIndicator Restore the focus
 
 This topic will show you how to handle a common scenario where you have a __RadBusyIndicator__ control having some content and you need to ensure that when the __RadBusyIndicator__ is no longer visible, the focus will be returned to a specific control in its content.
 

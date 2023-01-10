@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Add Screen Tips in the Code Behind
+# {{ site.framework_name }} RadRibbonView Add Screen Tips in the Code Behind
 
 If you want to add screen tips in the code-behind, you should use the __ScreenTip__'s __SetTitle()__, __SetIcon()__, __SetDescriptions()__ static methods. For more information read [here]({%slug radribbonview-screentips%}) .
 

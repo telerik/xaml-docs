@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Orientation and DropDownPlacement
+# {{ site.framework_name }} RadMenu Orientation and DropDownPlacement
 
 The __RadMenu__ exposes a set of properties, which allow you to specify its orientation and placement of the drop-down sub-menus. They are as follows:
 

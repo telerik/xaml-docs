@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Sorting
+# {{ site.framework_name }} RadCardView Sorting
 
 RadCardView supports sorting via the UI or in code, in case you are using ICollectionView as the ItemsSource.
 

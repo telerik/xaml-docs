@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Integration Examples
+# {{ site.framework_name }} RadFluidContentControl Integration Examples
 
 There are a couple of controls that utilize the RadFluidContentControl in some custom scenarios. This articles contains a list of those examples.
 

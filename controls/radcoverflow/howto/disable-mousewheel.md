@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Disable the MouseWheel
+# {{ site.framework_name }} RadCoverflow Disable the MouseWheel
 
 There is no property that disables the mouse wheel in RadCoverFlow, but you could inherit the control and override the OnMouseWheel method, without calling base:
 

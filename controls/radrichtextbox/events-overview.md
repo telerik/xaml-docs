@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Events
+# {{ site.framework_name }} RadRichTextBox Events
 
 
 

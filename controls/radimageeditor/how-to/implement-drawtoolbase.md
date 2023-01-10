@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Implement DrawToolBase Class
+# {{ site.framework_name }} RadImageEditor Implement DrawToolBase Class
 
 The __DrawToolBase__ class represents an abstraction of a tool, which is responsible for drawing geometries over an image. This is the base class of the __Shape and Drawing tools__. This article will describe the members of this class.
 

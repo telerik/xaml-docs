@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# UpdateValueEvent
+# {{ site.framework_name }} RadMaskedInput UpdateValueEvent
 
 The __UpdateValueEvent__ property of the __RadMaskedTextInput__ controls allows you to specify when the __Value__ property will be changed. If __UpdateValueEvent__ is set to __PropertyChanged__, the __Value__ will be changed on every key stroke, assuming that you are typing. If the __UpdateValueEvent__ is set to __LostFocus__, the __Value__ will be changed only after the __RadMaskedTextInput__ control loses its focus.
 

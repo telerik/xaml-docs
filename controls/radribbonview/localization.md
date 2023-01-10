@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Localization
+# {{ site.framework_name }} RadRibbonView Localization
 
 ## Localization Using ResourceManager
 

@@ -7,7 +7,7 @@ tags: radfilepathpicker, dialog, types
 position: 0
 ---
 
-# Dialog Types
+# {{ site.framework_name }} RadFilePathPicker Dialog Types
 
 __RadFilePathPicker__ comes with a predefined set of dialog types. The available types are determined by the __DialogType__ enumeration and the chosen option can be set to the __DialogType__ property of the control. Depending on the DialogType, one of the [RadFileDialog]({%slug radfiledialogs-getting-started%}#using-the-dialogs) controls is opened when the show dialog button is clicked. 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Unified Color
+# {{ site.framework_name }} RadColorEditor Unified Color
 
 __RadColorEditor’s UnifiedColor__ property represents an entity that exposes all the values of a color in the different color models.
 

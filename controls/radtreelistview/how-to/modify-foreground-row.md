@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Modify foreground color of Selected/Hovered row
+# {{ site.framework_name }} RadTreeListView Modify foreground color of Selected/Hovered row
 
 This help article explains how to change the foreground color of the __TreeListViewRow__ upon selecting it or hovering over it.
 

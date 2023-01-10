@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Information Layer
+# {{ site.framework_name }} RadMap Information Layer
 
 The __InformationLayer__ allows you to display additional data on top of the displayed map. This data can be in the form of simple framework elements, pin points or map shapes. As the __InformationLayer__ derives from the __ItemsControl__ class you are able to display more than one item in one and the same __InformationLayer__. You can even data bind the __InformationLayer__ to a collection of locations.      
 

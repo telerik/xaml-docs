@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the RadialMenuButton
+# {{ site.framework_name }} RadRadialMenu Styling the RadialMenuButton
 
 This topic explains how you could customize the look & feel of the __RadialMenuButton__ used for opening and closing the __RadialMenu__ as well as for navigating to the parent items.
 

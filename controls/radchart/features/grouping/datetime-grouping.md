@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# DateTime Grouping
+# {{ site.framework_name }} RadChart DateTime Grouping
 
 
 

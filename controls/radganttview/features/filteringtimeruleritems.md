@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Filtering TimeRulerItems
+# {{ site.framework_name }} RadGanttView Filtering TimeRulerItems
 
 The purpose of this tutorial is to show you how to filter the TimeRulerItems of __RadGanttView__. This feature might be useful for hiding non-working time or days from the timeline. The behavior should point the intervals to be shown, and not the ones to be hidden.
 

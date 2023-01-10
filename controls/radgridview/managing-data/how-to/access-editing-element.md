@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Access the default editing element
+# {{ site.framework_name }} RadGridView Access the default editing element
 
 This article will show how to access the default editing element of RadGridView's cells and set its properties. In addition, it will show how to alter the default behavior of selecting the whole text upon editing. 
 

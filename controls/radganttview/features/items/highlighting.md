@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Highlighting Items
+# {{ site.framework_name }} RadGanttView Highlighting Items
 
 With __RadGanttView__ you can easily highlight certain tasks in order to make them distinguishable on the Gantt chart.They can be, for example, late tasks or tasks participating in the critical path.
 

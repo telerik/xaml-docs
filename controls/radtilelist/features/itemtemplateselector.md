@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# ItemTemplateSelector
+# {{ site.framework_name }} RadTileList ItemTemplateSelector
 
 This article will show you how to conditionally apply a different data template to __RadTileList__ tiles using the __ItemTemplateSelector__ property.
 

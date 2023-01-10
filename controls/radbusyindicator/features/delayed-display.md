@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Delayed Display
+# {{ site.framework_name }} RadBusyIndicator Delayed Display
 
 When using the __RadBusyIndicator__ in your applications you can notify the users about an ongoing process with a specific delay. By changing the __DisplayAfter__ property to a certain __TimeSpan__, the __RadBusyIndicator__ is shown after the corresponding amount of time elapses. 
 

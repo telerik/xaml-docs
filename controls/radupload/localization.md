@@ -9,7 +9,7 @@ position: 8
 site_name: Silverlight
 ---
 
-# Localization
+# {{ site.framework_name }} RadUpload Localization
 
 The built-in localization mechanism in {{ site.framework_name }} allows you to localize any string resource used by the standard __RadUpload__ control. Once translated you might use your resources in {{ site.framework_name }} projects without changing anything.
 ![{{ site.framework_name }} RadUpload Localized Resources](images/RadUpload_Localization_01.png)

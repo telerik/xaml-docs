@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Expand Behavior
+# {{ site.framework_name }} RadPivotGrid Expand Behavior
 
 
 In this article we will show you how to change the initial expand/collapse behavior of __RadPivotGrid__ rows and columns.      

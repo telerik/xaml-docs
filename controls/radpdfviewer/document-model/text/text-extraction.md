@@ -8,7 +8,7 @@ published: False
 position: 3
 ---
 
-# Text Extraction
+# {{ site.framework_name }} RadPdfViewer Text Extraction
 
 
 

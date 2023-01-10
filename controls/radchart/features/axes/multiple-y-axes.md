@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Multiple Y axes
+# {{ site.framework_name }} RadChart Multiple Y axes
 
 
 

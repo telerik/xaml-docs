@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Appointment Style
+# {{ site.framework_name }} RadScheduleView Appointment Style
 
 __RadScheduleView__ control makes it easy to customize the look & feel of an __Appointment__. Not only you can customize the way Appointments look (a simple and basic customization), but you can also create a custom AppointmentStyleSelector to conditionally apply different appointment styles depending on resource types, for example.			
 

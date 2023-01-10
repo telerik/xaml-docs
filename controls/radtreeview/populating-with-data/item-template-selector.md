@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# ItemTemplateSelector
+# {{ site.framework_name }} RadTreeView ItemTemplateSelector
 
 When binding your __RadTreeView__ to a collection, you are able to configure the visualization of the data and the appearance of the __RadTreeViewItems__ via the __ItemTemplate__ and the __ItemTemplateSelectior__ properties.	  
 

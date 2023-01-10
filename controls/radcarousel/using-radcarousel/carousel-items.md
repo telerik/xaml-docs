@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Carousel Items
+# {{ site.framework_name }} RadCarousel Carousel Items
 
 ## Overview
 

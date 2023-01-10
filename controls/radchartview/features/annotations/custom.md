@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Custom Annotations
+# {{ site.framework_name }} RadChartView Custom Annotations
 
 You can place arbitary visual elements on the chart plot area by using the __CartesianCustomAnnotation__ and __PolarCustomAnnotation__.
       

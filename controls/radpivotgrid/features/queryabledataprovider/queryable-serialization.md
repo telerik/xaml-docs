@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Serialization
+# {{ site.framework_name }} RadPivotGrid Serialization
 
 > The implementation demonstrated in this article can also be reviewed in the [Serialize QueryableDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Serialization/QueryableDataProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
 

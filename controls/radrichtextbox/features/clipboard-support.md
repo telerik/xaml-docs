@@ -7,7 +7,7 @@ tags: clipboard,support
 published: True
 ---
 
-# Clipboard Support
+# {{ site.framework_name }} RadRichTextBox Clipboard Support
 
 {% if site.site_name == 'Silverlight' %}__RadRichTextBox__ takes advantage of the clipboard support in Silverlight. However, as Silverlight's clipboard supports only plain text, copied content will be stripped of all formatting. For the needs of the control, it has a built-in rich text clipboard that allows copy/paste of text along with its formatting in one rich text box or between rich text boxes in the same application.
         

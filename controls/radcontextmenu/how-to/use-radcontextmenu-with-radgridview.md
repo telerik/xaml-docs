@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Use RadContextMenu within RadGridView
+# {{ site.framework_name }} RadContextMenu Use RadContextMenu within RadGridView
 
 This tutorial will demonstrate how to use a **RadContextMenu** to add functionality to the **RadGridView** control. The article is divided into the following sections:
 

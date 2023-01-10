@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# PathButton
+# {{ site.framework_name }} RadButtons PathButton
 
 With our __Q3 2014__ official release we introduced the RadPathButton control. It derives from the __RadButton__. This means it inherits all the features of the standard button. Additionally it adds a __Path__ control to its default template. This allows you to easily add custom geometry to your button. You can instantiate this control in both XAML and code behind (see __Example 1 and 2__).
 

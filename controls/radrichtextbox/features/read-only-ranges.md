@@ -7,7 +7,7 @@ tags: read,only,ranges
 published: True
 ---
 
-# Read Only Ranges
+# {{ site.framework_name }} RadRichTextBox Read Only Ranges
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Data Binding to Collection
+# {{ site.framework_name }} RadChat Data Binding to Collection
 
 This article shows how to use RadChat in MVVM scenario by data binding its items source to a collection of view models.
 

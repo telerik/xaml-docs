@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# To Which Assemblies do I Have to Add Reference in my Project
+# {{ site.framework_name }} RadTabControl To Which Assemblies do I Have to Add Reference in my Project
 
 
 

@@ -8,7 +8,7 @@ publish: True
 position: 13
 ---
 
-# RateOfChangeIndicator
+# {{ site.framework_name }} RadChartView RateOfChangeIndicator
 
 RateOfChangeIndicator measures the relative (percent) change in the values from one period to the next.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Color Preset
+# {{ site.framework_name }} RadColorPicker Color Preset
 
 __ColorPreset__ is an enum that represent all built-in palettes.				
 

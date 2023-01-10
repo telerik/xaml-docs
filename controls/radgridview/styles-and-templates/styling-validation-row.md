@@ -8,7 +8,7 @@ published: True
 position: 22
 ---
 
-# Styling Invalid Row in RadGridView ##
+# {{ site.framework_name }} RadGridView Styling Invalid Row in RadGridView ##
 
 > Before reading this topic, you might find it useful to get familiar with RadGridView’s [validation]({%slug gridview-managing-data-validation%}) functionality.
 

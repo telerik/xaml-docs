@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Inline PivotFieldList
+# {{ site.framework_name }} RadPivotGrid Inline PivotFieldList
 
 As of **R3 2022**, the RadPivotFieldList can also be displayed inline in the RadPivotGrid control. You can enable this functionality via the attached `FieldListBehavior.ShowInline` property.
 

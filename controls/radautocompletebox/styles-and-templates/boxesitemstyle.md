@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# BoxesItemStyle
+# {{ site.framework_name }} RadAutoCompleteBox BoxesItemStyle
 
 The __BoxesItemStyle__ property, introduced with the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, makes it easy to customize the boxes of the selected items of a  __RadAutoCompleteBox__. The following article will demonstrate how to apply a custom __BoxesItemStyle__ to a __RadAutoCompleteBox__.
 

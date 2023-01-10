@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Insert and Remove Data
+# {{ site.framework_name }} RadVirtualGrid Insert and Remove Data
 
 * [Methods](#methods)
 

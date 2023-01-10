@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# ScatterPointSeries
+# {{ site.framework_name }} RadChartView ScatterPointSeries
 
 This series is visualized on the screen as separate points representing each of the data points. As all scatter series, this one also requires the RadCartesianChart to define two LinearAxis as a vertical and horizontal axis.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Validation Events
+# {{ site.framework_name }} RadGridView Validation Events
 
 
 The validation events are meant to support the data validation of the user input. They occur when the new content entered by the user is about to be committed.

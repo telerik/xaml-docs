@@ -7,7 +7,7 @@ tags: commands,radsyntaxeditor
 position: 5
 ---
 
-# Commands
+# {{ site.framework_name }} RadSyntaxEditor Commands
 
 RadSyntaxEditor exposes its functionality through various commands that can be executed on its behalf. All commands can be accessed through the **Commands** property of the control. Here's a full list of the available commands:
 

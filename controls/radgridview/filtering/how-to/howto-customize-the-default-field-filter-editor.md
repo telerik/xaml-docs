@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Customize the Default Field Filter Editor
+# {{ site.framework_name }} RadGridView Customize the Default Field Filter Editor
 
 In case you need to slightly modify the default field filter editor that we have provided, you need to attach to the FieldFilterEditorCreated event. The event arguments provide the respective column instance and the editor that we have created in our factory. This event is fired after we have created and configured the editor in the factory and before displaying it in the UI so you get the chance to change its appearance.
 

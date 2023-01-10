@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Filtering
+# {{ site.framework_name }} RadComboBox Filtering
 
 The advanced filtering mechanism of the __RadComboBox__ control allows the users to refine their search results as they type in the input area. The RadComboBox filtering is done according to the __TextSearchMode__ property of the RadComboBox. You can read some more about it in the [Text Search]({%slug radcombobox-features-textsearch%}#textsearchmode) article.
 

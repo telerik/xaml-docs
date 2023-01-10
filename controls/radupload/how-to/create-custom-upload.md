@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Create Custom RadUpload Control
+# {{ site.framework_name }} RadUpload Create Custom RadUpload Control
 
 If you need to create your own Upload control, you can rely on the __RadUpload__ control to prepare your files for upload behind the scenes.
 

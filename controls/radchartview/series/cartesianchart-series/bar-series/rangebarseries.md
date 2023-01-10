@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RangeBarSeries
+# {{ site.framework_name }} RadChartView RangeBarSeries
 
 This series is visualized on the screen as separate rectangles representing each of the data points. The main difference of the BarSeries is that you are allowed to define range with each data point.      
 

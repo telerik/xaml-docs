@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Html
+# {{ site.framework_name }} RadRichTextBox Html
 
 [HTML](http://en.wikipedia.org/wiki/HTML) (HyperText Markup Language) is a markup language used to create web pages.
 

@@ -8,7 +8,7 @@ publish: True
 position: 17
 ---
 
-# StochasticFastIndicator
+# {{ site.framework_name }} RadChartView StochasticFastIndicator
 
 StochasticFastIndicator shows the location of the close relative to the high/low range over a number of periods.
 

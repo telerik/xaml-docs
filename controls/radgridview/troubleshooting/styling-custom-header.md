@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Foreground Color Does not Change in a Custom Header
+# {{ site.framework_name }} RadGridView Foreground Color Does not Change in a Custom Header
 
 __PROBLEM__
 

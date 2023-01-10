@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Preview ToolTip
+# {{ site.framework_name }} RadDateTimePicker Preview ToolTip
 
 The __RadDateTimePicker__ control supports a preview tool tip. This feature helps you preview the inputted text while you are typing in the control's input box.
 

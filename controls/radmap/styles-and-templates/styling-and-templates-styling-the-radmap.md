@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the RadMap
+# {{ site.framework_name }} RadMap Styling the RadMap
 
 The __RadMap__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 

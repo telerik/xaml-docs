@@ -7,7 +7,7 @@ tags: comments
 published: True
 ---
 
-# Comments
+# {{ site.framework_name }} RadRichTextBox Comments
 
 
 

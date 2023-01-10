@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# How to Change the Position of the Tab Strip of RadTabControl
+# {{ site.framework_name }} RadTabControl How to Change the Position of the Tab Strip of RadTabControl
 
 __RadTabControl__ expose few properties that can be used for controlling its [tab strip]({%slug radtabcontrol-visual-structure%}) position. 
 * __TabStripPlacement__ - gets or sets the position where the tab strip should appear. The default value is Top. The property is an enumeration of type __Telerik.Windows.Controls.Dock__. The enumeration contains the following values:  

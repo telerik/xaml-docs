@@ -8,7 +8,7 @@ publish: True
 position: 16
 ---
 
-# Customize the ItemInformationAdorner
+# {{ site.framework_name }} RadDiagram Customize the ItemInformationAdorner
 
 This article will guide you through  the steps that you need to take to customize how the RadDiagram visualizes information about the shapes.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Lines Support
+# {{ site.framework_name }} RadTreeView Lines Support
 
 The __RadTreeView__ allows you to enable connected lines between the nodes of a treeview. By default the connecting lines between the nodes are not enabled (they are not visible). You should use a single property to do so - __IsLineEnabled__ and set it to __True__.
 

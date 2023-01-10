@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Styling the Axis Item Label
+# {{ site.framework_name }} RadChart Styling the Axis Item Label
 
 
 

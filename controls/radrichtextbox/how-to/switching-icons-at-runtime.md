@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Switching Icons at Runtime
+# {{ site.framework_name }} RadRichTextBox Switching Icons at Runtime
 
 
 The __IconResource__ extension is a markup extension that allows you to switch icons in your application at runtime. More information on the approach is available [here]({%slug styling-apperance-switching-icons-at-runtime%}).

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadChartView Getting Started
 
 __RadChartView__ is essentially a toolset of charting components designed to help you create a variety of rich data-visualization applications. This tutorial will walk you through the creation of a sample application that contains a RadChartView component.
 

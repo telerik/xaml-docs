@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Html Support
+# {{ site.framework_name }} RadDiagram Html Support
 
 As __RadDiagram__ supports serialization, you can save your diagramming solution in a custom __XML__ format. The __HTML support__ is built on top of this serialization logic. It is not conceived as an 'export' from within __RadDiagram__ rather we use JaveScript to convert the RadDiagram's serialization __XML__ into an __SVG__ diagram inside the browser. This way you can avoid using any plugins and instead use plain HTML to display a diagramming structure build with __RadDiagram__. This script can load a saved XML diagram or use a JavaScript variable that holds it. Internally the JavaScript makes use of the Kendo API to output the necessary HTML (SVG tags). This doesn't mean however that you need a Kendo UI license to use this script since it only uses a handful of Kendo files which are part of the Kendo core.			
 

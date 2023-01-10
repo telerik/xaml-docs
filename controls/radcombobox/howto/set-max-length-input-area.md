@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Set MaxLength Property of the Input Area
+# {{ site.framework_name }} RadComboBox Set MaxLength Property of the Input Area
 
 The purpose of this tutorial is to show you how to set the __MaxLength__ property of the [InputArea]({%slug radcombobox-general-information-visual-structure%}) of [editable]({%slug radcombobox-features-edit-modes%}) __RadComboBox__ (__RadComboBox__'s __IsEditable__ property is set to __True__).
 

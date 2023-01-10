@@ -8,7 +8,7 @@ published: True
 position: 30
 ---
 
-# Implement Search, Filter and Sort
+# {{ site.framework_name }} RadTreeView Implement Search, Filter and Sort
 
 This article will demonstrate how you can implement __searching__, __filtering__ and __sorting__ on __RadTreeView__ data. The final result will look like this:
 ![radtreeview-search-filter-sort-overview](images/radtreeview-search-filter-sort-overview.png)

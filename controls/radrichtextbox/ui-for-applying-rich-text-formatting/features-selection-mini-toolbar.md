@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Selection Mini Tool Bar
+# {{ site.framework_name }} RadRichTextBox Selection Mini Tool Bar
  
 __SelectionMiniToolBar__ is a floating toolbar that appears next to the current position after making a selection with the mouse in the document. It contains some useful commands for formatting text.
   

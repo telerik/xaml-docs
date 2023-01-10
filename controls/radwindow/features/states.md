@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# States
+# {{ site.framework_name }} RadWindow States
 
 The __RadWindow__ has three states:
 

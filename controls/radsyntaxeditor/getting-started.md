@@ -7,7 +7,7 @@ tags: getting,started,radsyntaxeditor
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadSyntaxEditor Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains a __RadSyntaxEditor__ control.
 			

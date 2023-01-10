@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Basic Selection
+# {{ site.framework_name }} RadGridView Basic Selection
 
 __RadGridView__ provides you with selection functionality, which allows the user to select one or more rows and/or cells from the data displayed by the control.
 

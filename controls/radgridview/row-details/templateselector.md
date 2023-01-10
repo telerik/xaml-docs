@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Row Details TemplateSelector
+# {{ site.framework_name }} RadGridView Row Details TemplateSelector
 
 The __RadGridView__ provides a [RowDetailsTemplate]({%slug radgridview-row-details-template%}) property and different [RowDetailsVisibility]({%slug radgridview-row-details-visibility%}) options. By default their values are inherited by all rows in the grid.         
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Selection in RadTileList
+# {{ site.framework_name }} RadTileList Selection in RadTileList
 
 As of Q1 2016, __RadTileList__ exposes a __SelectionMode__ property allowing you to control whether the user can select more than one item in the tile list.
 

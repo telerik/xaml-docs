@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Virtualization Layer
+# {{ site.framework_name }} RadMap Virtualization Layer
 
 The Virtualization Layer can be used to visualize large data sources due to its superior performance, compared to the Information Layer or the Dynamic Layer.
 

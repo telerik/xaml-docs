@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadCloudUpload Events
 
 The __RadCloudUpload__ control exposes the following events: 
 

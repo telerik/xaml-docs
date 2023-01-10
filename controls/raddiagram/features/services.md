@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Services
+# {{ site.framework_name }} RadDiagram Services
 
 This tutorial describes the __Diagramming Framework Services__.	  
 

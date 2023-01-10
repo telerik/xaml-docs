@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# KML Data Import
+# {{ site.framework_name }} RadMap KML Data Import
 
 The __RadMap__ provides support for stunning map overlays through its KML-import feature. Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__ control. In this way you can easily visualize complex shapes like country's borders on the map and fill the separate shapes with different colors in order to achieve a sort of grouping.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadDocking Visual Structure
 
 The major control elements of a the standard __RadPane__ are:
 

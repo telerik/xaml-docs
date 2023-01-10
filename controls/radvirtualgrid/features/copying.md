@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Copying
+# {{ site.framework_name }} RadVirtualGrid Copying
 
 This article will go through the mechanisms that the control provides for controlling how its content can be copied to the Clipboard.
 

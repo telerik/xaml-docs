@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# MultiColumnComboBox Column
+# {{ site.framework_name }} RadGridView MultiColumnComboBox Column
 
 __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}). In view mode it is represented by a standard TextBlock, whereas in edit mode the [RadMultiColumnComboBox]({%slug multicolumncombobox-overview%}) component is used. Here is a list of its most important properties:
 

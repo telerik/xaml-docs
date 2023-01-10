@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Clustering
+# {{ site.framework_name }} RadMap Clustering
 
 Many applications operate with collections of items which are placed close to others and it's uncomfortable to use them as separate objects for low zoom levels. The __VisualizationLayer__ supports the __Clustering__ feature. It allows grouping of items according to condition.      
 

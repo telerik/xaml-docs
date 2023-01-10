@@ -7,7 +7,7 @@ tags: events
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadStepProgressBar Events
 
 This article lists the events specific for the __RadStepProgressBar__ control.
 

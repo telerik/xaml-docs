@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Events
+# {{ site.framework_name }} RadButtons Events
 
 The __RadButtons__ raise the following specific events:
 

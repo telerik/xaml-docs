@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Populating With Data RadTreeMap
+# {{ site.framework_name }} RadTreeMap Populating With Data RadTreeMap
 
 __RadTreeMap__ control expects a hierarchical collection and presents the data according to the TypeDefinitions set.		
 

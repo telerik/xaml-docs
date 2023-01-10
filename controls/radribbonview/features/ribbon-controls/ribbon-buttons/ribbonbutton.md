@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Ribbon Button
+# {{ site.framework_name }} RadRibbonView Ribbon Button
 
 The __RadRibbonButton__ represents the basic button in the set of the __RadRibbonView__ buttons. It inherits the __RadButton__ control and extends its functionality in order to provide a better interaction with the __RadRibbonView__ control.
 

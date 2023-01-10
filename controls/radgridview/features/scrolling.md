@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Scrolling 
+# {{ site.framework_name }} RadGridView Scrolling
 
 __RadGridView__ has inbuilt default scrolling mechanism. There are also options provided to additionally configure it for a better user experience.
 

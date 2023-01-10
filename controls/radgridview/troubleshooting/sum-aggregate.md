@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Exception with Sum AggregateFuntion
+# {{ site.framework_name }} RadGridView Exception with Sum AggregateFuntion
 
 __PROBLEM__
 

@@ -9,7 +9,7 @@ position: 4
 site_name: Silverlight
 ---
 
-# Paging
+# {{ site.framework_name }} RadGridView Paging
 
 __RadGridView__ offers an excellent integration with Silverlight __DataPager__.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling RadToolBar
+# {{ site.framework_name }} RadToolBar Styling RadToolBar
 
 __RadToolBar__ control uses __StyleSelector__ mechanism to re-style its items. The control has predefined styles for the most commonly used controls as its content. 
 

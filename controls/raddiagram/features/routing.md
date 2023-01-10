@@ -7,7 +7,8 @@ tags: routing,astarrouter, treelayout,custom routertree, inflatedrectrouter, org
 published: True
 position: 13
 ---
-# Routing
+
+# {{ site.framework_name }} RadDiagram Routing
 
 A mechanism using algorithms to make sure that the connections don't cross each other while building links/paths between the shapes. 
 

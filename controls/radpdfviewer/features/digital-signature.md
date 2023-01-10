@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Digital Signature
+# {{ site.framework_name }} RadPdfViewer Digital Signature
 
 With RadPdfViewer you are able to display, sign and verify documents within your application and make sure that it has not been tampered with.
 

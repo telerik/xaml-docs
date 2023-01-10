@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Structure
+# {{ site.framework_name }} RadMediaPlayer Structure
 
 This section defines terms and concepts used in the scope of __RadMediaPlayer,__ that you have to get familiar with prior to reading further. They can also be helpful when contacting our support service in order to describe your issue better. 
 

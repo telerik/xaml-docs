@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# View Specific Properties
+# {{ site.framework_name }} RadScheduleView View Specific Properties
 
 >You can check the [Configuration]({%slug radscheduleview-viewdefinitions-configuration%}) article for more information about the properties that are common for all views.              
 

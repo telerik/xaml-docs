@@ -8,7 +8,7 @@ publish: True
 position: 16
 ---
 
-# RelativeStrengthIndexIndicator
+# {{ site.framework_name }} RadChartView RelativeStrengthIndexIndicator
 
 RelativeStrengthIndexIndicator counts up and down periods from the current close value relative to a close value from a previous period.
 

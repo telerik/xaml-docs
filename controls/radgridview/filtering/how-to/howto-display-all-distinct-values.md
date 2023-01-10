@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Display All Distinct Values
+# {{ site.framework_name }} RadGridView Display All Distinct Values
 
 By default, the distinct values that a column shows will be limited to the first 1000 distinct values that are visible in this column. If other columns have an active filter that hides some of the data rows then these rows will not be considered when extracting the distinct values. You can control this behavior by attaching to the __DistinctValuesLoading__ event of __RadGridView__ and assigning a value to the __ItemsSource__ property of the event arguments. This event will be fired each time the popup filtering control is about to be displayed. This event should be used solely for controlling the number of distinct values that the user will see. You can’t replace the original distinct values with values from another .NET Type since this would break the data engine. The distinct values that you assign to the ItemsSource property of the event arguments should always be of the same type as the data displayed in the column. 
 If possible, you should always use __RadGridView’s__ public method GetDistinctValues which has two overloads. Using the first overload you can tell __RadGridView__ to provide all distinct values for a certain column by ignoring the currently active filters of other columns(__Example 1__). This is achieved by specifying false for the filter argument of the method. For example, if we have countries and players and we have filtered by CountryX, when we request all distinct players, if 'filter' is true we will get players from CountryX only. If 'filter' is false we will get all distinct players.

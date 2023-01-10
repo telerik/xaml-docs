@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Image Card
+# {{ site.framework_name }} RadChat Image Card
 
 __ImageCard__ extends the __CardMessage__ by adding the option an __Image__ to be displayed.
 

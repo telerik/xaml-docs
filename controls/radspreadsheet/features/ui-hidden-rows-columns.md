@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Hidden Rows and Columns
+# {{ site.framework_name }} RadSpreadsheet Hidden Rows and Columns
 
 
 This article describes what hidden rows and columns are and how to work with them through the RadSpreadsheet UI. It contains the following sections:

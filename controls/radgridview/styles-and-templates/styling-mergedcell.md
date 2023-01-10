@@ -9,7 +9,7 @@ position: 5
 site_name: WPF
 ---
 
-# Styling Merged Cells
+# {{ site.framework_name }} RadGridView Styling Merged Cells
 
 >tipMerged cells have a template structure similar to [RadGridView cells]({%slug gridview-styling-cell%}). You could also read the article, [Template Structure of the GridViewMergedCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewmergedcell).
 

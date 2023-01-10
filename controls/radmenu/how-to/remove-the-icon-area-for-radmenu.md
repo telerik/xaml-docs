@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# How to Remove and Modify the Icon Area for RadMenu
+# {{ site.framework_name }} RadMenu How to Remove and Modify the Icon Area for RadMenu
 
 This article shows how to remove the Icon area and also how to modify it in order to fit different sized Icons.
 

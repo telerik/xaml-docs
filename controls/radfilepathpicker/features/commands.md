@@ -7,7 +7,7 @@ tags: commands, filepathpicker
 position: 3
 ---
 
-# Commands
+# {{ site.framework_name }} RadFilePathPicker Commands
 
 The __RadFilePathPicker__ control provides the following commands through the __RadFilePathPickerCommands__ static class: __ShowDialog__ and __Clear__. 
 

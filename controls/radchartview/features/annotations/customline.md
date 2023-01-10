@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# CustomLine Annotations
+# {{ site.framework_name }} RadChartView CustomLine Annotations
 
 The __CartesianCustomLineAnnotation__ is used to for  visualizing lines from point to point. These points are defined by the __HorizontalFrom/To__ and __VerticalFrom/To__ properties of annotation.
       ![Rad Chart View-annotations-cartesian-customline-0](images/RadChartView-annotations-cartesian-customline-0.png)

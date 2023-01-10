@@ -8,7 +8,7 @@ publish: True
 position: 12
 ---
 
-# OscillatorIndicator
+# {{ site.framework_name }} RadChartView OscillatorIndicator
 
 OscillatorIndicator is an indicator that varies over time within a values range - between set levels.
 

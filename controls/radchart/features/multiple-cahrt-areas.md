@@ -8,7 +8,7 @@ published: True
 position: 23
 ---
 
-# Multiple Chart Areas
+# {{ site.framework_name }} RadChart Multiple Chart Areas
 
 
 

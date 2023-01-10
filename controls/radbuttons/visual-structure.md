@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadButtons Visual Structure
 
 This section defines the terms and concepts used in the scope of __RadButtons__ that you have to get familiar with prior to continuing with the rest of the article. They can also be helpful in order to describe your issue better when contacting our support service. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadButton__ controls.
 

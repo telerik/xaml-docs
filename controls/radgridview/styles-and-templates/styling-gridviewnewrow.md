@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Styling the GridViewNewRow
+# {{ site.framework_name }} RadGridView Styling the GridViewNewRow
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewNewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewnewrow).
 

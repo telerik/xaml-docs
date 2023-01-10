@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Selection
+# {{ site.framework_name }} RadComboBox Selection
 
 The purpose of this tutorial is to show you the basic properties exposed by the __RadComboBox__ for working with __selection__. This topic includes the following sections:
 

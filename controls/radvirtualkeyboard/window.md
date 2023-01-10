@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Keyboard Window
+# {{ site.framework_name }} RadVirtualKeyboard Keyboard Window
 
 VirtualKeyboard provides a special window element that is styled according to the keyboard design.
 

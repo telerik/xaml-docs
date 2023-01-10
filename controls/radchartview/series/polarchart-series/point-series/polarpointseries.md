@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# PolarPointSeries
+# {{ site.framework_name }} RadChartView PolarPointSeries
 
 This series is visualized on the screen as separate points representing each of the __DataPoints__.      
 

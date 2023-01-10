@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Collapsing
+# {{ site.framework_name }} RadRibbonView Collapsing
 
 __RadRibbonView__ supports collapsing, which means that the control will automatically set the __Visibility__ of its main panel to __Collapsed__ to save space. This happens when the window in which the control is hosted is resized to a size smaller than the __CollapseThresholdSize__.
 

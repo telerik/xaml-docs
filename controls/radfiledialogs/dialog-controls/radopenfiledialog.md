@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadOpenFileDialog
+# {{ site.framework_name }} RadFileDialogs RadOpenFileDialog
 
 __RadOpenFileDialog__ is a modal dialog box that allows you to specify one or multiple filenames to open.
 

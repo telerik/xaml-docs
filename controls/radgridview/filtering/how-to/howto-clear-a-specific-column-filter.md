@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Clear a Specific Column Filter
+# {{ site.framework_name }} RadGridView Clear a Specific Column Filter
 
 
 See this [article]({%slug gridview-filtering-programmatic%}) for more information.

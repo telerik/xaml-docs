@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Number of clicks in the CheckBox column
+# {{ site.framework_name }} RadGridView Number of clicks in the CheckBox column
 
 __PROBLEM__
 

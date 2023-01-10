@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Items Relations
+# {{ site.framework_name }} RadGanttView Items Relations
 
 Project plans normally require tasks to be performed in a certain order. To achieve this, __RadGanttView__ lets you create relations between the tasks, so that they depend on each other.
 

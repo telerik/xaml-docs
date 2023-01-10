@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Use with Prism
+# {{ site.framework_name }} RadTransitionControl Use with Prism
 
 The __RadTransitionControl__ can be used together with __Prism__ for defining regions. As it derives directly from __ContentControl__, it can be used as a replacement for it.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Backwards Compatibility
+# {{ site.framework_name }} RadGanttView Backwards Compatibility
 
 This article lists the breaking changes of the control.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Events
+# {{ site.framework_name }} RadOutlookBar Events
 
 ## Events list
 

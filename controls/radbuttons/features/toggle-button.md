@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Toggle Button
+# {{ site.framework_name }} RadButtons Toggle Button
 
 __RadToggleButton__ inherits from the native __ToggleButton__ control and implements the [ICommandSource](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.110).aspx) interface. Because of the inheritance, it has all of the features of the native __ToggleButton__ control. The __ICommandSource__ implementation allows you to attach commands to the button, which will get executed when it gets clicked.	  
 

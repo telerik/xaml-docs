@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# RadComboBox Virtualization
+# {{ site.framework_name }} RadComboBox RadComboBox Virtualization
 
 
 The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}s' API gives you the ability to configure the __RadComboBox__ to support __virtualization__, which reduces the memory footprint of the application and speeds up the loading time thus enhancing additionally the UI performance. The purpose of this tutorial is to show you how to create a virtualized __RadComboBox__. 

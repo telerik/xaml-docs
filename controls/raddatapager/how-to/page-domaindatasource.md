@@ -9,7 +9,7 @@ position: 0
 site_name: Silverlight
 ---
 
-# Page DomainDataSource
+# {{ site.framework_name }} RadDataPager Page DomainDataSource
 
 
  ![{{ site.framework_name }} RadDataPager Binding to DomainDataSource(images/RadDataPager_How_To_PageDomainDataSource_01.png)

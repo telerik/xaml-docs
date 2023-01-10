@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the ApplicationButton
+# {{ site.framework_name }} RadRibbonView Styling the ApplicationButton
 
 To style the __ApplicationButton__ of the __RadRibbonView__ you can set an appropriate __Style__ to the __RadRibbonView.ApplicationButtonStyle__ property.
 In order to modify the default style of the __ApplicationButton__ you can:			

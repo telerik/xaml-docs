@@ -8,7 +8,7 @@ published: True
 position: 24
 ---
 
-# Styling Search Panel
+# {{ site.framework_name }} RadGridView Styling Search Panel
 
 >Before reading this topic, you might find it useful to get familiar with RadGridView's [Search As You Type]({%slug radgridview-search-as-you-type%}) functionality.
 

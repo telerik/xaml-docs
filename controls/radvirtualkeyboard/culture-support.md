@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Language Culture Support
+# {{ site.framework_name }} RadVirtualKeyboard Language Culture Support
 
 A specific language culture can be applied to the buttons of the VirtualKeyboard in addition to the automatic language synchronization feature.
 

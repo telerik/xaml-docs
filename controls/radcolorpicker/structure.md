@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadColorPicker Visual Structure
 
 This section defines terms and concepts used in the scope of __RadColorPicker__ you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better.
 {% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% else %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}

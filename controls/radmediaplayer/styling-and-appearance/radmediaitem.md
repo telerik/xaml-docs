@@ -8,7 +8,7 @@ publish: True
 position: 2
 ---
 
-# RadMediaItem
+# {{ site.framework_name }} RadMediaPlayer RadMediaItem
 
 __RadMediaItem__ derives from the __HeaderedSelector__ class, so you can control it's appearance by specifying the __Header__ and __HeaderTemplate__ properties.
 

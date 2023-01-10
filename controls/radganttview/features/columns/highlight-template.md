@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Customizing the CellHighlightTemplate
+# {{ site.framework_name }} RadGanttView Customizing the CellHighlightTemplate
 
 The __CellHighlightTemplate__ is the Template that is displayed when you hover over the cell with the mouse pointer.
 

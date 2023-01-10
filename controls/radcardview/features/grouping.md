@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Grouping
+# {{ site.framework_name }} RadCardView Grouping
 
 RadCardView supports grouping via the UI or in code, in case you are using ICollectionView as the ItemsSource.
 

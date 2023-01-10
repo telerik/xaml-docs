@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# In a Single Chart Area
+# {{ site.framework_name }} RadChart In a Single Chart Area
 
 
 

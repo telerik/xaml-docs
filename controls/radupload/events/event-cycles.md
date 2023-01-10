@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Event Cycles
+# {{ site.framework_name }} RadUpload Event Cycles
 
 This topic will explain the order in which the events described in the [Overview]({%slug radupload-events-overview%}) topic get fired.
 

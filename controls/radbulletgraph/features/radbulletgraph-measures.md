@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Measures
+# {{ site.framework_name }} RadBulletGraph Measures
 
 The measures allows you to show the data performance on the bullet graph control. There are several measure indicators that can be set by setting the following properties.
 

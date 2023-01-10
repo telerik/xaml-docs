@@ -7,7 +7,7 @@ tags: clipboard,support, paste, styles, options
 published: True
 ---
 
-# Paste Options
+# {{ site.framework_name }} RadRichTextBox Paste Options
 
 When pasting content in RadRichTextBox, you might want to style it in different ways depending on the specific situation. The control allows you to specify how the styles of the content being pasted should be resolved and you can choose to preserve the styling as it was in the moment of copying it or you would prefer to keep the formatting you already have in RadRichTextBox. Merging the styles is available as well. This topic explains the API of this functionality and how you can achieve the different scenarios.
 

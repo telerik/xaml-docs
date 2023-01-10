@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Framework Elements
+# {{ site.framework_name }} RadMap Framework Elements
 
 One of the objects that can be displayed inside the InformationLayer is the __FrameworkElement__. This means that you can actually display anything inside the __InformationLayer__, as the controls in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} inherit directly or indirectly the __FrameworkElement__ class. If you want to compose more than one control for your element, you just have to wrap them inside one of the layout controls.
 

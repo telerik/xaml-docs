@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Applied IValueConverter on the DataMemberBinding
+# {{ site.framework_name }} RadGridView Applied IValueConverter on the DataMemberBinding
 
 
 

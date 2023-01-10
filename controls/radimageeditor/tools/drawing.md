@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Drawing
+# {{ site.framework_name }} RadImageEditor Drawing
 
 
 The __DrawTool__ is one of the tools that come out-of-the-box with the __RadImageEditor__ and enables you to draw over the image. You can choose different brush color and size. The tool provides some customization options that are explained in detail in this topic.

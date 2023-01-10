@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Adding Files Programmatically
+# {{ site.framework_name }} RadCloudUpload Adding Files Programmatically
 
 __RadCloudUpload__ allows you to prepare files for upload in code using the __AddFile__ method of the control. The method will create a new __CloudUploadFile__ object and add it in the __Items__ collection of the RadCloudUpload component, after a validation is performed.
 

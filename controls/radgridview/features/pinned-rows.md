@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Pinned Rows
+# {{ site.framework_name }} RadGridView Pinned Rows
 
 Since **R2 2016**, RadGridView supports **Pinned Rows**. By using Pinned Rows, you can pin particular rows to the top or bottom of your **RadGridView** so that they do not participate in the vertical scrolling.
 

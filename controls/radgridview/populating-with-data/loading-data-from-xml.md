@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Loading Data from XML
+# {{ site.framework_name }} RadGridView Loading Data from XML
 
 In order to bind the __RadGridView__ to a XML you will need to convert the XML to a collection and then to bind that collection using the __ItemsSource__ property of __RadGridView__. This tutorial will show you how to do this.
 

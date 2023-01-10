@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Subscribe to Click Event in GridViewHyperlinkColumn
+# {{ site.framework_name }} RadGridView Subscribe to Click Event in GridViewHyperlinkColumn
 
 If you have defined a __GridViewHyperlinkColumn__ within your __RadGridView__, you might need to subscribe to its "Click" event for some internal operations. This article describes two approaches that you can take.
 

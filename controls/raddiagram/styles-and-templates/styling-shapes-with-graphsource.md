@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Styling Shapes When Using GraphSource
+# {{ site.framework_name }} RadDiagram Styling Shapes When Using GraphSource
  
 This article describes which styles need to be applied when using a different ActiveTool of the RadDiagram when the __GraphSource__ property is set.
 

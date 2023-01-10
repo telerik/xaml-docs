@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Controlling Appearance
+# {{ site.framework_name }} RadRibbonView Controlling Appearance
 
 There are many ways to customize the look and feel of your __RadRibbonView__ control. This topic covers some of the most useful of these properties.
 			

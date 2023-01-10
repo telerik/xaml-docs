@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Time Markers
+# {{ site.framework_name }} RadScheduleView Time Markers
 
 __RadScheduleView__ provides you with a built-in time markers support. You can assign a time marker to each one of your appointments, thus making them easily distinguishable.		
 

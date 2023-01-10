@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Create Custom HeatMap Source
+# {{ site.framework_name }} RadHeatMap Create Custom HeatMap Source
 
 This tutorial will walk you through the creation of a custom IHeatMapSource and a HeatMapDefinition that uses it. This allows you to customize the data fetching mechanism of the control, thus optimizing the performance and the memory footprint.
 

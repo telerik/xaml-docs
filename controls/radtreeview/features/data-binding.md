@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadTreeView Data Binding
 
 Binding Telerik __RadTreeView__ is as simple as setting a single property. The binding sources that the treeview supports include Objects, XML, WCF services.
 

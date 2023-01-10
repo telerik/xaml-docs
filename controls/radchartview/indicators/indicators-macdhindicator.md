@@ -8,7 +8,7 @@ publish: True
 position: 6
 ---
 
-# MacdhIndicator
+# {{ site.framework_name }} RadChartView MacdhIndicator
 
 MacdhIndicator is a trend following indicator which displays the relationship between two moving averages of data. This indicator uses histogram visualization.
 

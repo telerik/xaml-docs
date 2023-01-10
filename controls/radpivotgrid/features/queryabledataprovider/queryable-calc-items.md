@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Calculated Items
+# {{ site.framework_name }} RadPivotGrid Calculated Items
 
 A calculated item is a new item in a row or column field in which the values are the result of a custom calculation. In this case, the calculated item’s formula references one or more items in the same field. By using Calculated Items you are able to extend __RadPivotGrid__ with additional items that are not part of the data source.      
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Paging Essentials
+# {{ site.framework_name }} RadDataPager Paging Essentials
 
 
 

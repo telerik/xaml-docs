@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# CellStyleSelector
+# {{ site.framework_name }} RadGridView CellStyleSelector
 
 This article shows how to style RadGridView's cells conditionally by applying __CellStyleSelector__.
 

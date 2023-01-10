@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadTabControl Data Binding
 
 
 

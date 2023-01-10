@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadDiagram Overview
 
 The __SettingsPane__ control allows the users to examine and modify the settings of the diagramming items in run-time.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Custom Line
+# {{ site.framework_name }} RadChart Custom Line
 
 
 

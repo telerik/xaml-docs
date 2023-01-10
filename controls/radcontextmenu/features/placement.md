@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Placement
+# {{ site.framework_name }} RadContextMenu Placement
 
 The __RadContextMenu__ exposes a set of properties, which allow you to specify the location, on which it will appear.
 

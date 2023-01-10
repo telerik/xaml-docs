@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Selection
+# {{ site.framework_name }} RadMultiColumnComboBox Selection
 
 The selection in the AutoCompleteBox will display the property of the selected item to which the __DisplayMemberPath__ points. 
 

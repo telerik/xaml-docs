@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Working with Selection
+# {{ site.framework_name }} RadMaskedInput Working with Selection
 
 The purpose of this tutorial is to walk you through the common task of configuring __RadMaskedInput__ control for working with selection. The following "selection" features will be demonstrated:			
 

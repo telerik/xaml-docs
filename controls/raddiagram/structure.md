@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Structure
+# {{ site.framework_name }} RadDiagram Structure
 
 __The Telerik Diagramming Framework__ allows you to create various kinds of diagrams like Organizational, Class and Flow as well as many others.	  
 

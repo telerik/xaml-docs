@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# RadRadialMenu as a ContextMenu
+# {{ site.framework_name }} RadRadialMenu RadRadialMenu as a ContextMenu
 
 __RadRadialMenu__ can be used as a context menu for another __FrameworkElement__. This can be done by using the __RadialContextMenu__ attached property defined in the __RadRadialMenu__ class. Additionally, you will need to set the events/actions of the target element on which the menu will be displayed and closed.
 

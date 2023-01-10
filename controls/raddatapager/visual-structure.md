@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadDataPager Visual Structure
 
 This section defines the terms and concepts used in the scope of the RadDataPager that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard `RadDataPager` control.
 

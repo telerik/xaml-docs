@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Binding to Dynamic Data
+# {{ site.framework_name }} RadMenu Binding to Dynamic Data
 
 The data displayed in the __RadMenu__ has a hierarchical structure (similar to the __RadTreeView__). This means that each item may come with a set of items on its own. For that reason you have to use the __HierarchicalDataTemplate__. This tutorial will walk you through the most important steps in creating, configuring and applying a __HierarchicalDataTemplate__ to your __RadMenu__, as follows:      
 

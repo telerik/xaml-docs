@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customizing Drag Drop Behavior
+# {{ site.framework_name }} RadFileDialogs Customizing Drag Drop Behavior
 
 The drag and drop functionality of the file browser is implemented via a [DragDropBehavior]({%slug dragdropmanager-behaviors-dragdropbehavior%}). The default behavior is a class of type __FileBrowserDragDropBehavior__ and can be accessed or replaced through the __DragDropBehavior__ property of the dialog control.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadCalculator Template Structure
+# {{ site.framework_name }} RadCalculator RadCalculator Template Structure
 
 
 

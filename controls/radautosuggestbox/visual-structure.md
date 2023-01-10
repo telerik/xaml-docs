@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadAutoSuggestBox Visual Structure
 
 This topic defines terms and concepts related to __RadAutoSuggestBox__ that you have to get familiar with before you continue reading this help.
 

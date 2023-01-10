@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Context Menu
+# {{ site.framework_name }} RadPdfViewer Context Menu
 
 This article describes how you can add additional functionality to __RadPdfViewer__ – a context menu.
       

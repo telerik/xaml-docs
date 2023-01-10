@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadDesktopAlert Key Properties
 
 The purpose of this help article is to show you the key properties of __RadDesktopAlert__ control. The topic includes the following properties:
 

@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadPasswordBox
 ---
 
-# Overview
+# {{ site.framework_name }} RadPasswordBox Overview
 
 Thank you for choosing Telerik __RadPasswordBox__!
 

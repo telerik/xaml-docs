@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Text Message
+# {{ site.framework_name }} RadChat Text Message
 
 The __TextMessage__ is intended to be used for sending a simple string type message. Its constructor accepts the following parameters.
 

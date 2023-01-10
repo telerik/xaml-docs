@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Manipulating Annotations
+# {{ site.framework_name }} RadRichTextBox Manipulating Annotations
 
 
 

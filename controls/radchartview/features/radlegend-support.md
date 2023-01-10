@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# RadLegend Support
+# {{ site.framework_name }} RadChartView RadLegend Support
 
 This topic will give you an overview of the RadLegend support that RadChartView provides.
 

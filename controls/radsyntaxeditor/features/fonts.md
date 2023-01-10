@@ -7,7 +7,7 @@ tags: fonts,radsyntaxeditor
 position: 8
 ---
 
-# Fonts
+# {{ site.framework_name }} RadSyntaxEditor Fonts
 
 The RadSyntaxEditor responds to changes in its font properties just as any other WPF control. You can modify the font size and family of the control through the **FontSize** and **FontFamily** properties as demonstrated in **Example 1**.
 

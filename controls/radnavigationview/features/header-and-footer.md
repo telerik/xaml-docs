@@ -7,7 +7,7 @@ tags: header, footer
 position: 1
 ---
 
-# Header and Footer
+# {{ site.framework_name }} RadNavigationView Header and Footer
 
 The RadNavigationView's header and footer parts are fully customizable. This article will demonstrate how this can be achieved.
 

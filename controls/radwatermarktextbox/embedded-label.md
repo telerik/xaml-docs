@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Label
+# {{ site.framework_name }} RadWatermarkTextBox Label
 
 The label feature allows you to display additional information about the text.
 

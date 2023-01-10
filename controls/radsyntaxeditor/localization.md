@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Localization
+# {{ site.framework_name }} RadSyntaxEditor Localization
 
 This article will go over available resource keys for localizing the RadSyntaxEditor control.
 

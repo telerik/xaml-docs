@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How to Hide the Header Row
+# {{ site.framework_name }} RadOutlookBar How to Hide the Header Row
 
 To hide the header row you can use the __HeaderVisibility__ property and set the value to __Collapsed__. 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadOutlookBar Getting Started
 
 ## Adding the RadOutlookBar to the page
 

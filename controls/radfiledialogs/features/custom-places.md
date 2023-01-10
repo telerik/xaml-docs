@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Custom Places
+# {{ site.framework_name }} RadFileDialogs Custom Places
 
 The file dialogs provide you with the option the specify a list of directories to be displayed to the left of the **Main Pane** above the **Tree Navigation Pane** similarly to Windows' **Quick Access** view.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Camera Settings Control
+# {{ site.framework_name }} RadWebCam Camera Settings Control
 
 The RadWebCam component allows you to control the settings of the connected camera. You can do this using the settings dialog which opens when you press the [Open settings dialog]({%slug radwebcam-visual-structure%}) button.
 

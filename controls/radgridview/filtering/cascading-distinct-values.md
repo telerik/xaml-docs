@@ -8,7 +8,7 @@ published: False
 position: 5
 ---
 
-# Cascading Distinct Values
+# {{ site.framework_name }} RadGridView Cascading Distinct Values
 
 The distinct values that you see at any moment in the filtering control, are the ones that are left after all other filters have been applied. If this is not the behavior that you want, then this can be turned off.
         

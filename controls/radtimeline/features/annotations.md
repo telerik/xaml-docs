@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Annotations
+# {{ site.framework_name }} RadTimeline Annotations
 
 A TimelineAnnotation instance, specifies a single annotation that is positioned in the timeline control according to its StartDate and Duration values.
 

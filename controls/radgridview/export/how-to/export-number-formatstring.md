@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Export Numeric Values
+# {{ site.framework_name }} RadGridView Export Numeric Values
 
 __PROBLEM__
 

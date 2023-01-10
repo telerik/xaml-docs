@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Properties
+# {{ site.framework_name }} RadTimeline Properties
 
 This help topic will make you familiar with the most important properties, settings and elements of the RadTimeline control.
 

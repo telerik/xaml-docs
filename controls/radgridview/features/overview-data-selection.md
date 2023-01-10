@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Data Selection
+# {{ site.framework_name }} RadGridView Data Selection
 
 The __RadGridview__ provides you with a selection functionality, which allows the user to select one or more items from the data displayed by the control.
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Drag and Drop
+# {{ site.framework_name }} RadDocking Drag and Drop
 
 The __Drag and Drop__ compatibilities of the __RadDocking__ control allow you to re-arange the panes in a complete __WYSIWYG__ manner. When the process of dragging starts, the [Compass]({%slug raddocking-features-compass%}) menu appears to help you dock/undock your panes. 
 

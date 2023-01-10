@@ -7,7 +7,7 @@ tags: caret,radsyntaxeditor
 position: 5
 ---
 
-# Caret
+# {{ site.framework_name }} RadSyntaxEditor Caret
 
 The caret of the RadSyntaxEditor is the vertical "blinking" line that represents the current cursor position of a control that accepts text input. The appearance of the caret can be controlled by the **CaretDisplayMode** property. Its possible values as well as the resulting appearance can be observed in the following list:
 

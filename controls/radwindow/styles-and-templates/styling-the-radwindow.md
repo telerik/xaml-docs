@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling RadWindow
+# {{ site.framework_name }} RadWindow Styling RadWindow
 
 To customize the default look and feel of the RadWindow control you can extract its Style and modify its ControlTemplate. 
 

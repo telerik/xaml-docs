@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Selection
+# {{ site.framework_name }} RadPivotGrid Selection
 
 As of R3 2016 __RadPivotGrid__ provides the option to select multiple or individual cells, rows and columns using the mouse.    
 

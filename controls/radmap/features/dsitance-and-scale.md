@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Distance and Scale
+# {{ site.framework_name }} RadMap Distance and Scale
 
 The __RadMap__ uses two measure units for distance - mile and kilometer. The measure units are need for the placement of the __MapShapes__, as their width and height are measured in the selected unit. To choose the most suitable unit you have to set the __DistanceUnit__ property of the __RadMap__.        
 

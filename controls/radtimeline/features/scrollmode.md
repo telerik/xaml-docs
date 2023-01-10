@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# ScrollMode
+# {{ site.framework_name }} RadTimeline ScrollMode
 
 The ScrollMode property of RadTimeline configures the horizontal scrolling and zooming behavior of control.
 

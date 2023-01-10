@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Grouping
+# {{ site.framework_name }} RadListBox Grouping
 
 The __ListBox__ component allows you to easily group the items with the help of a `CollectionViewSource` object and the `GroupStyle` property of the control. The grouping feature not only provides a nice visualization of the items, but using the group style, you can easily customize the groups.
 

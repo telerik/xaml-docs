@@ -7,7 +7,7 @@ tags: watermarktextbox, properties
 position: 3
 ---
 
-# WatermarkTextBox Properties
+# {{ site.framework_name }} RadFilePathPicker WatermarkTextBox Properties
 
 The __RadFilePathPicker__ has a [RadWatermarkTextBox]({%slug watermarktextbox-getting-started%}) element inside it, which is responsible for holding the text. This article will list the properties that the control exposes for working with the RadWatermarkTextBox.
 

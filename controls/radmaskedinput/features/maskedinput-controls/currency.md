@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# MaskedCurrencyInput
+# {{ site.framework_name }} RadMaskedInput MaskedCurrencyInput
 
 The __RadMaskedCurrencyInput__ represents the basic control that can be used to restrict the input of currency values.				
 

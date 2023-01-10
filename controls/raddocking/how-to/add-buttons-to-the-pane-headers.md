@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to Add Buttons to the Pane Header
+# {{ site.framework_name }} RadDocking How to Add Buttons to the Pane Header
 
 The purpose of this tutorial is to walk you through the common task of adding buttons to the pane header and attaching some behavior to them.
 

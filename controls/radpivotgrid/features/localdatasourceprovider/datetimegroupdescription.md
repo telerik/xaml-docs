@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# DateTimeGroupDescription
+# {{ site.framework_name }} RadPivotGrid DateTimeGroupDescription
 
 In this article we will show you how to use DateTimeGroupDescription with your DateTime and DateTimeOffset data.
 

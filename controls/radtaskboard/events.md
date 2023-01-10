@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadTaskBoard Events
 
 Here is a list of events exposed by the RadTaskBoard control:
 

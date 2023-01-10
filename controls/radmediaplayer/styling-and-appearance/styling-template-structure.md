@@ -8,7 +8,7 @@ publish: True
 position: 1
 ---
 
-# RadMediaPlayer Template Structure
+# {{ site.framework_name }} RadMediaPlayer RadMediaPlayer Template Structure
 
 This topic will explain you the structure of the __RadMediaPlayer__ template and will describe the elements in it.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Row Details Events
+# {{ site.framework_name }} RadGridView Row Details Events
 
 * [Setting the Background of the DetailsPresenter](#setting-the-background-of-the-detailspresenter)
 * [Accessing the Expanded Item](#accessing-the-expanded-item)

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Nested Properties
+# {{ site.framework_name }} RadPropertyGrid Nested Properties
 
 RadPropertyGrid can show nested PropertyDefinitions. In order to enable the nested properties support you need to set RadPropertyGrid's __NestedPropertiesVisibility__ property to __"Visible"__. That way you will be able to modify any editable child properties of reference types.
 

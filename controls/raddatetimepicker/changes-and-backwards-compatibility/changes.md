@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadDateTimePicker Changes
 
 This article describes the release history of the control.
 

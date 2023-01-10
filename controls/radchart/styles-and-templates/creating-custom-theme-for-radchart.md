@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Creating a Custom Theme for the RadChart
+# {{ site.framework_name }} RadChart Creating a Custom Theme for the RadChart
 
 
 

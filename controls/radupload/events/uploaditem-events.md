@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# UploadItem Events
+# {{ site.framework_name }} RadUpload UploadItem Events
 
 
 

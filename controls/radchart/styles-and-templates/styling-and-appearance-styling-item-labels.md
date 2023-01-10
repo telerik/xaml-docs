@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Styling the Item Labels
+# {{ site.framework_name }} RadChart Styling the Item Labels
 
 
 

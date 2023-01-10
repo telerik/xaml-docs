@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Aggregate Functions
+# {{ site.framework_name }} RadPivotGrid Aggregate Functions
 
 In this article we will show how to use and change aggregate functions in __RadPivotGrid__ and __RadPivotFieldList__.      
 

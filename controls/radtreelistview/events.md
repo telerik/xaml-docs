@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Events
+# {{ site.framework_name }} RadTreeListView Events
 
 The __RadTreeListView__ and the __RadGridView__ derives from __GridViewDataControl__. In this way, it has the same set of events as the __RadGridView__. To learn more about the __RadGridView's__ events read its [Events]({%slug gridview-events-overview%}) topics.
 

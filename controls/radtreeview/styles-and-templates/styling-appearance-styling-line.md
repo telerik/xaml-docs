@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the Lines
+# {{ site.framework_name }} RadTreeView Styling the Lines
 
 The purpose of this tutorial is to show you how to __change the color__ of the __connected lines__ between the nodes of a __RadTreeView__. The final result should look like the one on the snapshot below:
 

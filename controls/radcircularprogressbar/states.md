@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# States
+# {{ site.framework_name }} RadCircularProgressBar States
 
 `RadCircularProgressBar` supports two types of operation modes. Each of these modes is aimed at different scenarios.
 

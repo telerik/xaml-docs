@@ -8,7 +8,7 @@ published: True
 position: 22
 ---
 
-# Negative Values
+# {{ site.framework_name }} RadChart Negative Values
 
 
 

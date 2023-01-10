@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Click Modes
+# {{ site.framework_name }} RadMap Click Modes
 
 The __RadMap__ supports both single and double mouse clicks. It provides you with a predefined behaviors for them out of the box. The possible values are to be found in the __MouseBehavior__ enumeration:
 

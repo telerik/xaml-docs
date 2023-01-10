@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadLayoutControl Overview
 
 __LayoutControl__ can work both directly with UIElements or dedicated layout group controls. The layout groups give you the ability to nest the elements displayed in the layout into one another which allows you to create more complex layouts. LayoutControl provides the following group controls.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Using DocxFormatProvider
+# {{ site.framework_name }} RadRichTextBox Using DocxFormatProvider
 
 __DocxFormatProvider__ makes it easy to import and export RadRichTextBox to/from DOCX format, preserving the entire document structure and formatting.
 

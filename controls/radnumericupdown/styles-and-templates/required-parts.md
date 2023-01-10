@@ -9,7 +9,7 @@ position: 1
 include_in_navigation: False
 ---
 
-# Required parts
+# {{ site.framework_name }} RadNumericUpDown Required parts
 
 In order to customize the control template of RadNumericUpDown, you should get familiar with the required template parts that have specific name. This is required from the code-behind implementation of __RadNumericUpDown__ and if you don’t use all of these controls with the same names, __RadNumericUpDown__ will not have complete functionality. Note that your control will still build and you will not receive any notifications for missing parts.
 

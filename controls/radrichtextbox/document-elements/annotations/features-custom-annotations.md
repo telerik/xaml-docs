@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Custom Annotations
+# {{ site.framework_name }} RadRichTextBox Custom Annotations
 
 
 

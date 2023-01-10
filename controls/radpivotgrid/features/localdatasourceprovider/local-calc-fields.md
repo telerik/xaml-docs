@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Calculated Fields
+# {{ site.framework_name }} RadPivotGrid Calculated Fields
 
 In this article you will find out how to extend __RadPivotGrid's__ generated report by adding Calculated Fields.      
 

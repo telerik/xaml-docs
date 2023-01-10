@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Labels
+# {{ site.framework_name }} RadChart Labels
 
 
 

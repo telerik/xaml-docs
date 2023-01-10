@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Theming
+# {{ site.framework_name }} RadToolTip Theming
 
 {% if site.site_name == 'Silverlight' %}
 Telerik themes are not turned on by default in __RadToolTip__. This article describes two approaches which can be used to theme the __RadToolTip__ control.

@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Use Commands with RadRibbonView Buttons
+# {{ site.framework_name }} RadRibbonView Use Commands with RadRibbonView Buttons
 
 All __RadRibbonView__ buttons provide a standard __ICommandSource__ implementation. This is why you can bind the __RadRibbonButtons__ to commands that will get executed when a button is clicked. For this purpose you can use the following properties.		
 

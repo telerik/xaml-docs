@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# How to Add Close and Create Buttons to the Tab Headers using MVVM approach
+# {{ site.framework_name }} RadTabControl How to Add Close and Create Buttons to the Tab Headers using MVVM approach
 
 >important Since R2 2019 the RadTabItem supports built-in close and pin buttons. Read more about this in the [Pin and Close]({%slug radtabcontrol-features-pinandclose%}) article.
 

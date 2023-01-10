@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Loading Data from WCF Services
+# {{ site.framework_name }} RadGridView Loading Data from WCF Services
 
 The purpose of this tutorial is to show you how to populate __RadGridView__ with data from a __WCF Service__ in two ways:
 

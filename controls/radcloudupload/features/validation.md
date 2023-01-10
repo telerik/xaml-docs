@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Validation
+# {{ site.framework_name }} RadCloudUpload Validation
 
 The __RadCloudUpload__ control allows you to validate the files that the end user has selected. For this purpose you can use the __ValidationRules__ property. It is of type __List&lt;System.Windows.Controls.ValidationRule&gt;__ and expects you to provide validation rules.        
 

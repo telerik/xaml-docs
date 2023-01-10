@@ -7,7 +7,7 @@ tags: custom,language,radsyntaxeditor
 position: 3
 ---
 
-# Custom Language
+# {{ site.framework_name }} RadSyntaxEditor Custom Language
 
 By using the **WordTaggerBase** as a base, you can create custom syntax highlighting for any custom language. In this article we will create basic highlighting for the **Python** programming language.
 

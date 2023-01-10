@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadDataForm Getting Started
 
 This article will walk your through the creation of a sample application that contains __RadDataForm__ and will show you how to:
 

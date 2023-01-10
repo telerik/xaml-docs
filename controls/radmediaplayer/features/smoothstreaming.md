@@ -8,7 +8,7 @@ publish: True
 position: 5
 ---
 
-# Smooth Streaming
+# {{ site.framework_name }} RadMediaPlayer Smooth Streaming
 
 __RadMediatelerik__ allows you to play [Smooth Streaming](http://smf.codeplex.com/) video. You have to provide implementaion of __MediaStreamSource__ that can handle Smooth streaming. Here is an example that uses __AdaptiveStreamingSource__. To enable smooth streaming set __IsStreamingSource__ to __true__ and handle the __StreamAttached__ event to provide some additional preparation.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Backgrounds and Borders
+# {{ site.framework_name }} RadGauge Backgrounds and Borders
 
 The controls in the RadGauge suite have several properties that can be used to customize their backgrounds and borders. 
 

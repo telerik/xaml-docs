@@ -7,7 +7,7 @@ tags: watermarktextbox,style,customize
 position: 2
 ---
 
-# Customize the TextBox
+# {{ site.framework_name }} RadAutoSuggestBox Customize the TextBox
 
 The appearance of the TextBox part of RadAutoSuggestBox can be customized via the __TextBoxStyle__ property of the control.
 

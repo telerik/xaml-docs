@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Clock Items
+# {{ site.framework_name }} RadDateTimePicker Clock Items
 
 You can limit the time items available in the clock view of your __RadDateTimePicker__ control in several ways. This topic explains how to achieve this, going through the following features:
 

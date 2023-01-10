@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Closing
+# {{ site.framework_name }} RadWindow Closing
 
 The __RadWindow__ can be closed by either clicking on its 'Close' button at the top-right corner or by calling the __Close()__ method of the __RadWindow__ instance.
 

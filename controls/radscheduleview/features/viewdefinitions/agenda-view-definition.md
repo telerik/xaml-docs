@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Agenda View
+# {{ site.framework_name }} RadScheduleView Agenda View
 
 __AgendaViewDefinition__ allows you to display a set of appointments for a specific period of time.
 

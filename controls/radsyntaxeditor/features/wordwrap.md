@@ -7,7 +7,7 @@ tags: word,wrap,radsyntaxeditor
 position: 11
 ---
 
-# Word Wrap
+# {{ site.framework_name }} RadSyntaxEditor Word Wrap
 
 As of **R3 2022**, the RadSyntaxEditor control supports word wrapping which enables users to view all text for a line that normally would have gone outside the viewport horizontally.
 

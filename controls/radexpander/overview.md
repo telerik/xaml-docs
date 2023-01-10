@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadExpander
 ---
 
-# Overview
+# {{ site.framework_name }} RadExpander Overview
 
 Thank you for choosing Telerik __RadExpander__!				
 

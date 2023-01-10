@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Iterate Over the Diagram Items
+# {{ site.framework_name }} RadDiagram Iterate Over the Diagram Items
 
 __RadDiagram__ provides 3 collections that store the DiagramItems - "__Items__", "__Shapes__" and "__Connections__"	  
 

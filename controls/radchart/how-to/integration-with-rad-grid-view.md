@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Integration with RadGridView
+# {{ site.framework_name }} RadChart Integration with RadGridView
 
 The Telerik __RadChart__ supports great integration with other controls. This tutorial will show you how to integrate __RadChart__ with __RadGridView__.
 

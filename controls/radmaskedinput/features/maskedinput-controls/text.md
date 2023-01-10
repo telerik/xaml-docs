@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# MaskedTextInput
+# {{ site.framework_name }} RadMaskedInput MaskedTextInput
 
 __RadMaskedTextInput__ represents a control that can be used to restrict the input of text values.
 

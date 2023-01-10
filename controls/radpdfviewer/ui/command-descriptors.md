@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Command Descriptors
+# {{ site.framework_name }} RadPdfViewer Command Descriptors
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadarAreaSeries
+# {{ site.framework_name }} RadChartView RadarAreaSeries
 
 This series is visualized on the screen as a straight line connecting each of the __DataPoints__. As an addition this series also allows the area surrounded by the line to be colored in an arbitrary way      
 

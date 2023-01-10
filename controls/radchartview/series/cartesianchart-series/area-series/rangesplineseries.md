@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# RangeSplineSeries
+# {{ site.framework_name }} RadChartView RangeSplineSeries
 
 __RangeSplineSeries__ displays a range of data by plotting two numeric values per data point. Additionally, you need to specify a minimum and maximum value for each data point. The high data points, as well as the low data points, are connected with smooth line segments and the area enclosed the two lines is colored in an arbitrary way. By default the colors of the line and the area are the same.
 

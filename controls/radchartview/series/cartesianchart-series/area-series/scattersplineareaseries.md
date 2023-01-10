@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# ScatterSplineAreaSeries
+# {{ site.framework_name }} RadChartView ScatterSplineAreaSeries
 
 The __ScatterSplineAreaSeries__ is visualized on the screen as a smooth line connecting all data points and the area between the line and the axis is colored in an arbitrary way. By default the colors of the line and the area are the same. As all scatter series, this one also requires the RadCartesianChart to define two LinearAxis.
 

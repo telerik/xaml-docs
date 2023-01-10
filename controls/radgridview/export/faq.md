@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Data Export FAQ
+# {{ site.framework_name }} RadGridView Data Export FAQ
 
 For a general example on how to Export the data, you can check our Exporting {% if site.site_name == 'WPF' %}[ WPF Demos.](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demos.](https://demos.telerik.com/silverlight/#GridView/Exporting){% endif %}
 

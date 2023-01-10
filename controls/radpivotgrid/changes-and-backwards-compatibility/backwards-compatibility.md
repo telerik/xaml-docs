@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Backwards compatibility
+# {{ site.framework_name }} RadPivotGrid Backwards compatibility
 
 This article lists the breaking changes of the control.      
 

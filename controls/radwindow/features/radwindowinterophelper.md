@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# RadWindowInteropHelper
+# {{ site.framework_name }} RadWindow RadWindowInteropHelper
 
 The **RadWindowInteropHelper** helper class assists for the interoperation between **Windows Presentation Foundation** (WPF) and **Win32** code.
 

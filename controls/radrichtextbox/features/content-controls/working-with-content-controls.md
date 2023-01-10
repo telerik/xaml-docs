@@ -7,7 +7,7 @@ tags: content controls, richtextbox
 published: True
 ---
 
-# Working with Content Controls Programmatically
+# {{ site.framework_name }} RadRichTextBox Working with Content Controls Programmatically
 
 This article shows some examples of how you can insert content controls or access existing and modify their properties from the code. In RadRichTextBox, the content controls are marked with annotations and you can manipulate them as such. Detailed information is available in the [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) topic.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Change the periods' strip line background
+# {{ site.framework_name }} RadTimeline Change the periods' strip line background
 
 This help topic will demonstrate how to change the background of the strip lines displayed behind the RadTimeline control’s periods. 
 ![RadTimeline - How to change the strip lines background 1](images/radtimeline-howto-change-striplines-background-01.png)

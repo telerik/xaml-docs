@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadScheduleView Overview
 
 The section aims to give you a general understanding of how you can bind the RadScheduleView control to data coming from a database.
 

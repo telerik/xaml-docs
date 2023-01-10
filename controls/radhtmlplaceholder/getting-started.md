@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadHtmlPlaceholder Getting Started
 
 Another important note is that the Silverlight plug-in that hosts the control has to be Windowless enabled. For example, if the Silverlight control is hosted in an .aspx page, then:
 

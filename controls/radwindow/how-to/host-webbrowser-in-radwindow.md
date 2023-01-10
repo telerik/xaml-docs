@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Host WebBrowser in RadWindow
+# {{ site.framework_name }} RadWindow Host WebBrowser in RadWindow
 
 A common scenario that you might want to achieve is hosting a [WebBrowser](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.webbrowser?redirectedfrom=MSDN&view=netframework-4.7.2) control in a RadWindow. However, by default the RadWindow does not support this, because it is displayed into a transparent WPF Window and the WPF Window doesn't support hosting a WebBrowser control when it is in transparent mode.
 

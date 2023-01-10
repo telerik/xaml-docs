@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Handle SelectionChanged for GridViewComboBoxColumn
+# {{ site.framework_name }} RadGridView Handle SelectionChanged for GridViewComboBoxColumn
 
 **GridViewComboBoxColumn** does not expose a **SelectionChanged** event itself. In case you need such an event to implement your additional logic, you can handle the SelectionChanged event of its editing element (**RadComboBox**). For example the code to do so is available bellow:
 

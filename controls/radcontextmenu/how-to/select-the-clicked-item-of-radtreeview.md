@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Select  the clicked Item of a RadTreeView
+# {{ site.framework_name }} RadContextMenu Select  the clicked Item of a RadTreeView
 
 This tutorial will show you how to select the item that was clicked, while opening the __RadContextMenu__. In order to achieve this, you have to do the following things:
 

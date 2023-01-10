@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Setting a Theme
+# {{ site.framework_name }} RadGanttView Setting a Theme
 
 The purpose of this article is to show you how to set a built-in theme to __RadGanttView__ for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
 

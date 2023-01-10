@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Filtering
+# {{ site.framework_name }} RadSpreadsheet Filtering
 
 
 

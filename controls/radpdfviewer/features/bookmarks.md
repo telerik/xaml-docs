@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Bookmarks (Outlines)
+# {{ site.framework_name }} RadPdfViewer Bookmarks (Outlines)
 
 RadPdfViewer enables you to open documents and show the bookmarks they contain in a bookmarks panel. Bookmarks or Outlines are a tree-structured hierarchy that the reader presents as a visual table of contents separated from the actual content as a side panel. The Bookmark items allow users, by interacting with them, to navigate through parts of the document and/or invoke different actions.  
 

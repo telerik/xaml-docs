@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Tips and Tricks
+# {{ site.framework_name }} RadDiagram Tips and Tricks
 
 __RadDiagram__ API allows you to tweak your application for optimal performance. You should be familiar with the following performance and optimization tips:
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# GridLine Annotations
+# {{ site.framework_name }} RadChartView GridLine Annotations
 
 GridLine annotations are lines or circles that cross the chart grid at a location on the axis, specified by their __Value__ property.
 

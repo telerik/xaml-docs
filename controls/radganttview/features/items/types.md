@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Types of Items
+# {{ site.framework_name }} RadGanttView Types of Items
 
 __RadGanttView__ control is used to display and update a list of task items using a data grid and a Gantt chart. A __task__ corresponds to some work to be completed. Tasks are often broken down into child tasks, thus forming a hierarchy.
 

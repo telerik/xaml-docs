@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadOutlookBar Changes
 
 This article describes the release history of the __RadOutlookBar__ control.
 

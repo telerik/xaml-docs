@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadCloudUpload Template Structure
 
 
 

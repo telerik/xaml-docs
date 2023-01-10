@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Programmatic Sorting
+# {{ site.framework_name }} RadGridView Programmatic Sorting
 
 Besides the built-in sorting functionality, you are able to programmatically sort the data in __RadGridView__ using the __SortDescriptors__ collection. This collection of __ISortDescriptor__ objects allows you to use descriptors that define the sorting property (or column) and the sorting direction for the bound data. Because this is a collection, you are able not only to add, but you can also remove or clear the entries.
     

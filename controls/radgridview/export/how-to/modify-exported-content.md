@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Modify RadGridView's Content Before Exporting
+# {{ site.framework_name }} RadGridView Modify RadGridView's Content Before Exporting
 
 In __R1 2016__, we introduced two new extension methods related to the exporting of RadGridView [ExportToWorkbook]({%slug gridview-export-workbook%}) and [ExportToRadFixedDocument]({%slug gridview-export-fixed-document%}). You can use them if you need to modify the content of the exported RadGridView and avoid styling the document manually.
 

@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Styling the RadDocumentPane
+# {{ site.framework_name }} RadDocking Styling the RadDocumentPane
 
 For now the __RadDocumentPane__ control is identical to the __RadPane__ control as the __RadDocumentPane__ inherits it. In that way the control properties and templates are the same and you can use the same approach to style it as with the __RadPane__ control. To learn more about styling the __RadPane__ read [here]({%slug raddocking-styling-the-radpane%}).
 

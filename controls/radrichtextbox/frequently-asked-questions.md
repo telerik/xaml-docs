@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Frequently Asked Questions
+# {{ site.framework_name }} RadRichTextBox Frequently Asked Questions
 
 
 

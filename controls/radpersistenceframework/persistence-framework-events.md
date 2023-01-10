@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Events
+# {{ site.framework_name }} RadPersistenceFramework Events
 
 This topic covers the specific events exposed by the __PersistenceManager__.	  
 

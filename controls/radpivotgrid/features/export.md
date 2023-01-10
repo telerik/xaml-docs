@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Export
+# {{ site.framework_name }} RadPivotGrid Export
 
 __RadPivotGrid__ allows you to export data to different formats using the **GenerateExport** method. In this article you will learn how to export __RadPivotGrid__ to the following formats: **XLSX** (Microsoft Excel), **DOCX** (Microsoft Word), **PDF** and **HTML**.
 

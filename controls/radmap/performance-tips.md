@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Performance Tips
+# {{ site.framework_name }} RadMap Performance Tips
 
 This article lists several settings that can be applied in order to improve the RadMap's performance.
 

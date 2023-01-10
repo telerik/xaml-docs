@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Style Sheets
+# {{ site.framework_name }} RadRichTextBox Style Sheets
 
 
 Style sheets provide an easy way to change the look of documents without altering their content. They extend the support for predefined styles by allowing the saving and loading of custom style sheets – a set of styles to be used throughout the document. What is particularly convenient about them is that you can change the colors and sizes used for headings, TOC entries, etc. just by changing the style sheet.

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Use generic SortDescriptor
+# {{ site.framework_name }} RadGridView Use generic SortDescriptor
 
 This help article will show you how to create generic expression SortDescriptor&lt;T&gt; for a databound __RadGridView__. 
 

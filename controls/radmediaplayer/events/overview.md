@@ -8,7 +8,7 @@ publish: True
 position: 0
 ---
 
-# Events Overview
+# {{ site.framework_name }} RadMediaPlayer Events Overview
 
 This topic covers the specific events exposed by the __RadMediaPlayer__ control. 
 

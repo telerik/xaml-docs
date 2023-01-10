@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Edit Lookup Values with RadComboBox
+# {{ site.framework_name }} RadDataForm Edit Lookup Values with RadComboBox
 
 __RadDataForm__ gives you the opportunity to edit the current item's properties directly as well as displaying and using lookup ones. This is easily achievable by using a RadComboBox and defining its required properties. 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadMap Template Structure
 
 Like most controls, the __RadMap__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can also template parts of it. This topic will make you familiar with the template structures of the:
 

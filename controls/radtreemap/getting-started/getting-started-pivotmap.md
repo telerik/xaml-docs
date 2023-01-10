@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Start with RadPivotMap
+# {{ site.framework_name }} RadTreeMap Getting Start with RadPivotMap
 
 This tutorial will walk you through the creation of a sample application that contains __RadPivotMap__ control.
 			

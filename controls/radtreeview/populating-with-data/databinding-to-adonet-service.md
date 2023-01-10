@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Binding to ADO.NET Data Service
+# {{ site.framework_name }} RadTreeView Binding to ADO.NET Data Service
 
 The purpose of this tutorial is to show you how to populate a __RadTreeView__ with data from an __ADO.NET Data Service__.  
 

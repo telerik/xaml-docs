@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Category Indicator
+# {{ site.framework_name }} RadTaskBoard Category Indicator
 
 There are different ways to organize your RadTaskBoard cards. The control provides category indicator color functionality, which allows you to apply different colors to its tasks. Using colors is a quick way to make tasks stand out on the board. 
 

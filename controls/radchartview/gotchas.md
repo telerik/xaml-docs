@@ -9,7 +9,7 @@ position: 5
 site_name: Silverlight
 ---
 
-# Gotchas
+# {{ site.framework_name }} RadChartView Gotchas
 
 ## Null auto-generated x:Name fields
 

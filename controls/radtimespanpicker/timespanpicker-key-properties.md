@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadTimeSpanPicker Key Properties
 
 This help article will provide information about the __StringFormat__ property, a key property of the __RadTimeSpanPicker__ control.
 

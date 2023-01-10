@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Positioning
+# {{ site.framework_name }} RadWindow Positioning
 
 This article will describe the ways to position a RadWindow prior to opening.
 

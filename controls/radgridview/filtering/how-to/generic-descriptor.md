@@ -8,7 +8,7 @@ published: True
 position: 23
 ---
 
-# Use generic FilterDescriptor
+# {{ site.framework_name }} RadGridView Use generic FilterDescriptor
 
 This help article will show you how to create generic expression FilterDescriptors<T> for __RadGridView__.
   

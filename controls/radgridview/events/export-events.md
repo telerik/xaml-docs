@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Export Events
+# {{ site.framework_name }} RadGridView Export Events
 
 You have more control over the exportation by utilizing the export events which are fired when you export data from RadGridView:
 

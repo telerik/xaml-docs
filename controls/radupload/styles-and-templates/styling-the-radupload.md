@@ -9,7 +9,7 @@ position: 2
 site_name: Silverlight
 ---
 
-# Styling the RadUpload
+# {{ site.framework_name }} RadUpload Styling the RadUpload
 
 
 

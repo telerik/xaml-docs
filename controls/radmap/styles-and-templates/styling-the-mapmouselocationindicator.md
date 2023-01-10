@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling the MapMouseLocationIndicator
+# {{ site.framework_name }} RadMap Styling the MapMouseLocationIndicator
 
 The __MapMouseLocationIndicator__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 

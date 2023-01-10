@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Filtering Behavior
+# {{ site.framework_name }} RadComboBox Filtering Behavior
 
 With the Q1 2015 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadComboBox__ provides a brand new __FilteringBehavior__ feature. Now, by using it you could easily implement your own custom logic for the Filtering mechanism of __RadComboBox__. This article will demonstrate how to implement such custom __FilteringBehavior__.
 

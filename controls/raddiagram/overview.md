@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadDiagram
 ---
 
-# Overview
+# {{ site.framework_name }} RadDiagram Overview
 
 Thank you for choosing __RadDiagram__!		
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Enable\Disable RadComboBoxItems
+# {{ site.framework_name }} RadComboBox Enable\Disable RadComboBoxItems
 
 The purpose of this tutorial is to show you how to enable and disable __RadComboBoxItems__. The following sections are included:
 

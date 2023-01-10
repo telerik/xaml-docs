@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Import/Export
+# {{ site.framework_name }} RadImageEditor Import/Export
 
 __RadImageEditor__ can load and save images in different file formats. This functionality is implemented through format providers. The format providers shipped with the control are:        
 

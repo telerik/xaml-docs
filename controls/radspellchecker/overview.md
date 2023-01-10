@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadSpellChecker
 ---
 
-# Overview
+# {{ site.framework_name }} RadSpellChecker Overview
 
 Thank you for choosing Telerik __RadSpellChecker__!
 

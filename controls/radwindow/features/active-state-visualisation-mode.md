@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Active State Visualization Mode
+# {{ site.framework_name }} RadWindow Active State Visualization Mode
 
 As of __R3 2017 SP 1__ you can use the __ShouldUpdateActiveState__ property to control whether there is a visual difference between an active and an inactive __RadWindow__. 
 

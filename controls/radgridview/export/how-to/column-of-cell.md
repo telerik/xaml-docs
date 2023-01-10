@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Get the Column of The Corresponding Cell
+# {{ site.framework_name }} RadGridView Get the Column of The Corresponding Cell
 
 When a cell(header cell, cell, footer cell, group footer cells) is exported through the __ExportToXlsx__ or __ExportToPdf__ methods , the arguments of the __ElementExportingToDocument__ event can be cast to __GridViewCellExportingEventArgs__. Thus, the column of the corresponding cell can be accessed. 
 

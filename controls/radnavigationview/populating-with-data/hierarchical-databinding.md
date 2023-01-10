@@ -7,7 +7,7 @@ tags: databinding, populating, data, hierarchical, sub, children, neste
 position: 1
 ---
 
-# Hierarchical Data Binding
+# {{ site.framework_name }} RadNavigationView Hierarchical Data Binding
 
 This article shows how to data bind hierarchical data to RadNavigationView.
 

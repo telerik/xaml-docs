@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# List  Message
+# {{ site.framework_name }} RadChat List  Message
 
 Specific for the __ListMessage__ is that it has to be populated with a source collection and can have its __SelectionMode__ set. The arguments of its constructor accept the following parameters.
 

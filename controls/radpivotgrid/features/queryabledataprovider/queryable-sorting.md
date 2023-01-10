@@ -9,7 +9,7 @@ position: 1
 site_name: WPF
 ---
 
-# Sorting
+# {{ site.framework_name }} RadPivotGrid Sorting
 
 In this article you will find out how to sort your data based on the header names or the totals.
 

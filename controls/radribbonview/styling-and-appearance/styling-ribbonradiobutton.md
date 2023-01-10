@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Styling the RadRibbonRadioButton
+# {{ site.framework_name }} RadRibbonView Styling the RadRibbonRadioButton
 
 The __RadRibbonRadioButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.			
 

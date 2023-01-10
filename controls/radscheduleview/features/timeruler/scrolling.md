@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Scrolling the TimeRuler
+# {{ site.framework_name }} RadScheduleView Scrolling the TimeRuler
 
 This article will explain how you could set up the ScheduleView, so that the ViewDefintion is scrolled to specific time or a particular appointment/slot.  We will take a look at the following properties/methods of the control:
 

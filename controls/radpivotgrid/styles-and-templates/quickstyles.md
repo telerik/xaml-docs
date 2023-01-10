@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# QuickStyle
+# {{ site.framework_name }} RadPivotGrid QuickStyle
 
 __RadPivotGrid__ provides easy styling method out of the box called __QuickStyle__. By using a custom __QuickStyle__ you can achieve a totally different visual representation with very little effort. This article will you help you to get familiar with the __QuickStyle__ and its customization potential.      
 

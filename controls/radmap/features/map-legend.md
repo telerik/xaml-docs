@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Map Legend
+# {{ site.framework_name }} RadMap Map Legend
 
 The __RadMap__ control introduces the __MapLegend__ object. It allows you to display a legend for a particular __Information Layer__ inside the __RadMap__ control. This topic will explain you the following:
 

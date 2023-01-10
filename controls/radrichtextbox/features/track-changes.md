@@ -7,7 +7,7 @@ tags: track,changes
 published: True
 ---
 
-# Track Changes
+# {{ site.framework_name }} RadRichTextBox Track Changes
 
 
 

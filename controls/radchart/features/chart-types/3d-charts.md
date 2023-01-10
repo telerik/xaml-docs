@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# 3D Charts
+# {{ site.framework_name }} RadChart 3D Charts
 
 
 

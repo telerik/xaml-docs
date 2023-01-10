@@ -8,7 +8,7 @@ published: False
 position: 4
 ---
 
-# Get a Grid Like Dropdown
+# {{ site.framework_name }} RadComboBox Get a Grid Like Dropdown
 
 The purpose of this tutorial is to show you how to create a custom __ItemTemplate__ to display multiple "columns" of data in the drop-down for each item. 
 

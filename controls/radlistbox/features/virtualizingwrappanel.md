@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# VirtualizingWrapPanel
+# {{ site.framework_name }} RadListBox VirtualizingWrapPanel
 
 This article will describe the [VirtualizingWrapPanel](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.virtualizingwrappanel) and how it can be used as an ItemsPanel for a RadListBox.
 

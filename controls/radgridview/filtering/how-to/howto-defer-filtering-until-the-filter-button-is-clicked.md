@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Defer Filtering Until the Filter Button is Clicked
+# {{ site.framework_name }} RadGridView Defer Filtering Until the Filter Button is Clicked
 
 By default, when in **Popup** filtering mode, filtering will be applied to the RadGridView control once any of the two field filter editors loses focus.
 

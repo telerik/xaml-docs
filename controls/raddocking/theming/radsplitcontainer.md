@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Theming the RadSplitContainer
+# {{ site.framework_name }} RadDocking Theming the RadSplitContainer
 
 To modify the appearance of the __RadSplitContainer__ you have to create a custom theme and place a style that targets the __RadSplitContainer__ control in it. The topic assumes that you have already created {% if site.site_name == 'WPF' %}a theme with {% endif %}a __ResourceDictionary__ that will host the styles and the resources for your custom theme. If not take a look at the overview section about [creating the theme](#CreatingTheme). The topic also assumes that you have already created the style that will be used for the __RadSplitContainer__ control. To learn how to style it take a look at the [Styling the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%}) topic.
 

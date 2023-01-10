@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# BoundColumnBase
+# {{ site.framework_name }} RadGridView BoundColumnBase
 
 __GridViewBoundColumnBase__ derives from __GridViewColumn__, which means it inherits all of the functionality too. In addition it allows you to easily bind data, format it and edit it using editors. 
 

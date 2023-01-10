@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Controlling Columns Width
+# {{ site.framework_name }} RadGridView Controlling Columns Width
 
 There are a couple of approaches available for setting the width of the columns within RadGridView:
 

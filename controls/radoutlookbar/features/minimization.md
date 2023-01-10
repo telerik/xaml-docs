@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Minimization
+# {{ site.framework_name }} RadOutlookBar Minimization
 
 You can use the __Minimization__ feature of the __RadOutlookBar__ to create more user friendly and "MS Outlook look and feel" applications. The following properties are related to this feature:
 

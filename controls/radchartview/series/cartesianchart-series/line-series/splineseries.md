@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# SplineSeries
+# {{ site.framework_name }} RadChartView SplineSeries
 
 This series is visualized on the screen as a smooth line connecting all data points.        
 

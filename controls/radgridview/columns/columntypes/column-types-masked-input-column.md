@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Masked Input Column
+# {{ site.framework_name }} RadGridView Masked Input Column
 
 __GridViewMaskedInputColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of the functionality too. In edit mode every field of the column will be represented by a [RadMaskedInput]({%slug radmaskedinput-overview%}) control depending on what __MaskType__ is set, unless a __CellEditTemplate__ is defined for the column.
        

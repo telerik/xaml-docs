@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Search as You Type
+# {{ site.framework_name }} RadGridView Search as You Type
 
 ## Showing the Search Panel
 

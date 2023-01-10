@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Unbound Mode
+# {{ site.framework_name }} RadDataFilter Unbound Mode
 
 There are scenarios, in which you might want to use __RadDataFilter__ only for its UI without passing any data to it. This scenarios will require you to use the __RadDataFilter's Unbound Mode__ feature. The usage of this feature consists in manually setting some of the __RadDataFilter's__ properties and handling events.
 

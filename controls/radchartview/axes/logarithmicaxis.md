@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Logarithmic Axis
+# {{ site.framework_name }} RadChartView Logarithmic Axis
 
 In a logarithmic axis the value of each consecutive tick is *X* times higher than the previous value. You can control how much higher each value is with the __LogarithmBase__ property. Another important property that the logarithmic axis exposes in addition to the common properties for all [axes]({%slug radchartview-axes-axis%}) is the __ExponentStep__. The default value for the ExponentStep is __1__ and the default value for the LogarithmBase is __10__.
 

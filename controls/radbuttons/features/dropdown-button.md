@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# DropDown Button
+# {{ site.framework_name }} RadButtons DropDown Button
 
 The `RadDropDownButton` control derives from __[RadButton]({%slug radbuttons-features-button%})__. Therefore it has all of the features that the `RadButton` control provides.
 

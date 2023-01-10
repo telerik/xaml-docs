@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Keyboard Navigation
+# {{ site.framework_name }} RadMenu Keyboard Navigation
 
 Along with its other features, `RadMenu` supports keyboard navigation. You can easily navigate through the items by just pressing the arrow keys on your keyboard or you can use the access key functionality.
 

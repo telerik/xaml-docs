@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# ExportAsync
+# {{ site.framework_name }} RadGridView ExportAsync
 
 You can use RadGridView's __ExportAsync__ method in order to export data asynchronously. As in the synchronous [Export]({%slug gridview-export%}) functionality, the method expects two parameters:
 

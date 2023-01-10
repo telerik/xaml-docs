@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadTileView Data Binding
 
 __RadTileView__ can be bound to a collection of objects through its __ItemsSource__ property.
 

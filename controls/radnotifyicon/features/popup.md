@@ -7,7 +7,7 @@ tags: Popup,notifyicon
 position: 1
 ---
 
-# Popup
+# {{ site.framework_name }} RadNotifyIcon Popup
 
 The __RadNotifyIcon__ allows for displaying a popup upon interacting with the icon or by manually calling the exposed methods. 
 

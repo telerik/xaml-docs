@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customize the Tooltips for TimeLine Containers
+# {{ site.framework_name }} RadGanttView Customize the Tooltips for TimeLine Containers
 
 The different types of RadGanttView tasks have different tooltip contents as demonstrated in **figures 1-3**.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Binding to Object
+# {{ site.framework_name }} RadTaskBoard Binding to Object
 
 To bind the __RadTaskBoard__ to a collection with custom objects you can use its __ItemsSource__ property. 
 

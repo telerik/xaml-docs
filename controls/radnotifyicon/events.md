@@ -7,7 +7,7 @@ tags: events
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadNotifyIcon Events
 
 Here are the events exposed by the RadNotifyIcon control:
 

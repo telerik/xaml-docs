@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Quick Access Toolbar
+# {{ site.framework_name }} RadRibbonView Quick Access Toolbar
 
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the RibbonView used in Microsoft Office. The __RadRibbonView__ consists of various elements, one of which is the __Quick Access Toolbar__. This topic discusses concepts fundamental to the __Quick Access Toolbar__ at first and then goes into the usage of the __QuickAccessToolbar__ class and its features.      
 

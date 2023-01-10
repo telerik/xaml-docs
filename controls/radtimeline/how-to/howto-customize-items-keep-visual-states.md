@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Use Custom Items with Selection and Mouse Over Visual States
+# {{ site.framework_name }} RadTimeline Use Custom Items with Selection and Mouse Over Visual States
 
 This article shows how to customize the timeline items and keep their visual states using `TimelineItemTemplate` and `TimelineInstantItemTemplate`. 
 

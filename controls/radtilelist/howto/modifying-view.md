@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Modifying TileList view
+# {{ site.framework_name }} RadTileList Modifying TileList view
 
 * [Resizing Tile](#resizing-tile)
 * [Vertical Tiles Alignment](#verticaltilesalignment)

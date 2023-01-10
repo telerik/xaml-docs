@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Custom Smart Label Strategy
+# {{ site.framework_name }} RadChartView Custom Smart Label Strategy
 
 The chart's smart labels feature tries to positions the labels of the data points in such a way that they do not overlap one another. To customize this behavior and implement custom smart labels startegy you can use create a class that derives from __ChartSmartLabelsStrategyBase__ and override its __CalculateLabelsPositions__ method.
 

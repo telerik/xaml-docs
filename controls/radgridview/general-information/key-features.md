@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Key Features
+# {{ site.framework_name }} RadGridView Key Features
 
 ![Telerik {{ site.framework_name }} DataGrid Key Features 1](images/RadGridView_KeyFeatures_1.png)
 

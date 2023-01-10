@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Plain Text 
+# {{ site.framework_name }} RadRichTextBox Plain Text
 
 Plain text is the contents of an ordinary sequential document readable as textual material without much processing.
  

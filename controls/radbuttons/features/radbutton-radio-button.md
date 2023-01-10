@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Radio Button
+# {{ site.framework_name }} RadButtons Radio Button
 
 The __RadRadioButton__ control inherits from the native RadioButton control and implements the __ICommandSource__ interface. Because of the inheritance it has all of the features of the standard RadioButton control. The __ICommandSource__ implementation allows you to attach commands to the button, that will be executed when the RadRadioButton is clicked.	  
 

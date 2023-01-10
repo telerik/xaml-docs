@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# BubbleSeries
+# {{ site.framework_name }} RadChartView BubbleSeries
 
 The bubble series is used to visualize three dimensional data. Each entity in the data set is represented by a bubble shape. Two of the data's dimensions determine the bubble's position and the third determines its size.
 

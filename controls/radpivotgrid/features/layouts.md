@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Layouts
+# {{ site.framework_name }} RadPivotGrid Layouts
 
 __RadPivotGrid__ supports all of the three most widely used report layouts: Tabular, Outline and Compact.       
 

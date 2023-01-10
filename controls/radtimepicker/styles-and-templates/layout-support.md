@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Layout Support
+# {{ site.framework_name }} RadTimePicker Layout Support
 
 The __RadTimePicker__  is style able control that support all kinds of Panel layouts. This example demonstrates how you can build a custom Time Picker by simply setting the __ItemsPanel__ property of the ClockStyle.
 

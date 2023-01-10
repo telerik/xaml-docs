@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Implementation
+# {{ site.framework_name }} RadVirtualGrid Implementation
 
 The following article will go through the process of utilizing the built-in commands of __RadVirtualGrid__.
 

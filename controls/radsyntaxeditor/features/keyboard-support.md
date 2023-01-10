@@ -7,7 +7,7 @@ tags: keyboard,support,radsyntaxeditor
 position: 7
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadSyntaxEditor Keyboard Support
 
 The keyboard combinations supported by the RadSyntaxEditor are listed in the table below.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# List Styles
+# {{ site.framework_name }} RadRichTextBox List Styles
 
 
 A list represents a set of properties which are used to describe the appearance and behavior of a set of numbered paragraphs. All lists are kept in **ListManager**, accessible through **RadDocument’s ListManager** property.

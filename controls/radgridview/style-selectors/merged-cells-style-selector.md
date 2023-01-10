@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# MergedCellsStyleSelector
+# {{ site.framework_name }} RadGridView MergedCellsStyleSelector
 
 __RadGridView__'s **MergedCellsStyleSelector** can be used to style merged cells differently based on a specific condition.
 

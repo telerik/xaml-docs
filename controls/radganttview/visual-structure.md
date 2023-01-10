@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadGanttView Visual Structure
 
 This help article will help you understand the visual structure of the RadGanttView control. The next section will focus on the main visual parts of the control.
 

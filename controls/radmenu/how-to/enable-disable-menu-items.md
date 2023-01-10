@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Enable and Disable Menu Items
+# {{ site.framework_name }} RadMenu Enable and Disable Menu Items
 
 This topic will show you how to enable and disable menu items. There are several major cases that will serve as examples:
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Styling the QuickAccessToolbar
+# {{ site.framework_name }} RadRibbonView Styling the QuickAccessToolbar
 
 The __RadRibbonView QuickAccessToolBar__ control can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Commands Support
+# {{ site.framework_name }} RadRibbonView Commands Support
 
 The __RadRibbonView__ control and its components expose several command properties that can be used for customizing their actions.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Calendar Message
+# {{ site.framework_name }} RadChat Calendar Message
 
 The __CalendarMessage__ operates with __DateTime__ value type. Its constructors accept the following parameters.
 

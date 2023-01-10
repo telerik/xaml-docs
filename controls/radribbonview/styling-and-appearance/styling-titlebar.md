@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling the RadRibbonView TitleBar
+# {{ site.framework_name }} RadRibbonView Styling the RadRibbonView TitleBar
 
 In order to style the __TitleBar__ of the __RadRibbonView__ you have to create the style for the __RadRibbonView__ itself {% if site.site_name == 'WPF' %}and modify its template{% endif %}. To see how to do this take a look at this [topic]({%slug radribbonview-styling-ribbonview%}).
 

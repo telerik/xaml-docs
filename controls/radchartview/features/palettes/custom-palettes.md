@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Creating Custom palettes
+# {{ site.framework_name }} RadChartView Creating Custom palettes
 
 
 

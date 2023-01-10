@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadCollectionNavigator Visual Structure
 
 __RadCollectionNavigator__ displays two sets of buttons, separated into two groups according to the purpose of their commands: **navigation** and **editing**.
 

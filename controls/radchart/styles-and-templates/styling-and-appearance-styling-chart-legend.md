@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling the Chart Legend
+# {{ site.framework_name }} RadChart Styling the Chart Legend
 
 
 

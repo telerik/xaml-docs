@@ -8,7 +8,7 @@ published: True
 position: 19
 ---
 
-# Indexer Support
+# {{ site.framework_name }} RadPropertyGrid Indexer Support
 
 In **R2 2016**, Telerik introduced **Indexer Support** for RadPropertyGrid's **PropertyDefinition** bindings. It covers the following scenarios:
 

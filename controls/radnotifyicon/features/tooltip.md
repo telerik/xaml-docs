@@ -7,7 +7,7 @@ tags: tooltip, notifyicon
 position: 3
 ---
 
-# Tooltip
+# {{ site.framework_name }} RadNotifyIcon Tooltip
 
 You can configure the tooltip that is displayed when the user hovers over the icon with the __TooltipContent__ property. By default a styled custom tooltip is shown. If you want to show the native tooltip, set the **UseNativeTooltip** property to **True**.
 

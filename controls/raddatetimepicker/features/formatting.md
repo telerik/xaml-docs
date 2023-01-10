@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Formatting
+# {{ site.framework_name }} RadDateTimePicker Formatting
 
 The __RadDateTimePicker__ gives you a few possibilities to change the way your data is formatted. This topic will go through the following sections:
 

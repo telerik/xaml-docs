@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadListBox Keyboard Support
 
 Using the keyboard you can easily navigate through RadListbox's items. Here's a list of the currently supported keys.
 

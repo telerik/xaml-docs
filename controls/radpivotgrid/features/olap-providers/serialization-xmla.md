@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Serialize XmlaDataProvider
+# {{ site.framework_name }} RadPivotGrid Serialize XmlaDataProvider
 
 > The implementation demonstrated in this article can also be reviewed in the [Serialize XmlaDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Serialization/XmlaProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
 

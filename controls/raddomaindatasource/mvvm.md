@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# MVVM approach to Telerik Domain Services
+# {{ site.framework_name }} RadDomainDataSource MVVM approach to Telerik Domain Services
 
 
 

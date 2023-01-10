@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to Create Custom Mask Tokens
+# {{ site.framework_name }} RadMaskedInput How to Create Custom Mask Tokens
 
 You can find a list of all built-in mask tokens that you can use when defining the mask of the __RadMaskedInput__ controls in the [Mask Tokens]({%slug radmaskedinput-features-mask-tokens%}) article. However, when your scenario requirements cannot be implemented using the built-in tokens, you can create a custom mask token to better fit your needs.
 

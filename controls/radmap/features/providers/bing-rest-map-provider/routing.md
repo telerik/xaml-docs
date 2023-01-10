@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Routing
+# {{ site.framework_name }} RadMap Routing
 
 RadMap provides a unified route search architecture which uses the functionality of the different routing services. This allows you to calculate a route between different locations on the map. You can access the routing service via __BingRestMapProvider__ provider. 
 

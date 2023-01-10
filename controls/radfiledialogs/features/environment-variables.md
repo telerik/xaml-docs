@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Environment Variables
+# {{ site.framework_name }} RadFileDialogs Environment Variables
 
 The RadFileDialogs provide out of the box support for the most common system environment variables that refer to well known directories in the Windows file system, as well as, to any user defined variables. This article will showcase the common behavior that all file dialogs share with regards to environment variables and also the differences between them.
 

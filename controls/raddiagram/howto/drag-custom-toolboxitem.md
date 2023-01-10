@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Drag Items from a Custom Databound DiagramToolbox
+# {{ site.framework_name }} RadDiagram Drag Items from a Custom Databound DiagramToolbox
 
 This tutorial describes how to implement a drag/drop operation between a custom data-bound __RadDiagramToolbox__ and a __RadDiagram__.           
 

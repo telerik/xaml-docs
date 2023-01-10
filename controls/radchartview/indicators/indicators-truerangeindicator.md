@@ -8,7 +8,7 @@ publish: True
 position: 20
 ---
 
-# TrueRangeIndicator
+# {{ site.framework_name }} RadChartView TrueRangeIndicator
 
 TrueRangeIndicator measures the daily range with addition to any gap from the closing price of the preceding day.
 

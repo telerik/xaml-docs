@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Items Indent
+# {{ site.framework_name }} RadTreeView Items Indent
 
 The __RadTreeView__ allows you to control the indent of its items. You can do that by changing the value of the __ItemsIndent__ property. The default value of this property is 20.
 

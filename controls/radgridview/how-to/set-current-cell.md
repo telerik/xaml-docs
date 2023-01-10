@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Set the Current Cell
+# {{ site.framework_name }} RadGridView Set the Current Cell
 
 You can set the current cell of the RadGridView control by using the __CurrentCellInfo__ class.
 

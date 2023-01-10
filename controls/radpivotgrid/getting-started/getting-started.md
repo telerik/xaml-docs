@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadPivotGrid Getting Started
 
 This article will explain a basic implementation of __RadPivotGrid__ using LocalDataSourceProvider.
 

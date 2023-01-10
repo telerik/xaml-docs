@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Serialization Options
+# {{ site.framework_name }} RadPersistenceFramework Serialization Options
 
 The __PersistenceManager__ class allows you to specify which properties of the __UIElements__ to be persisted. 
 

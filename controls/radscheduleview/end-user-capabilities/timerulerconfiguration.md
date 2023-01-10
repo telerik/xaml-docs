@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# TimeRuler Configuration
+# {{ site.framework_name }} RadScheduleView TimeRuler Configuration
 
 This topic describes how to configure the TimeRuler of the RadScheduleView control.
 

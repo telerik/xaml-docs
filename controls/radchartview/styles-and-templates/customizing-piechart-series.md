@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customizing PieChart Series
+# {{ site.framework_name }} RadChartView Customizing PieChart Series
 
 
 

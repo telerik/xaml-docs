@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Commands
+# {{ site.framework_name }} RadCardView Commands
 
 RadCardView provides a set of built-in commands that enables you to easily handle the user interface actions, but still make your logic independent of the UI layout. Thus, you are not obliged to subscribe to a particular event in order to achieve the desired behavior.
 

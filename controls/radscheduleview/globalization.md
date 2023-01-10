@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Globalization
+# {{ site.framework_name }} RadScheduleView Globalization
 
 As of **R2 2017** RadScheduleView supports the following .NET Framework calendar implementations:
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Customizing Cartesian Chart 3D Series
+# {{ site.framework_name }} RadChartView3D Customizing Cartesian Chart 3D Series
 
 The 3D series allows you to change the default appearance of their data point visuals. You can define a custom __Material__ (texture) or a custom shape that is described by a __MeshGeometry3D__ object.
 

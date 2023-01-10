@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customizing Groups
+# {{ site.framework_name }} RadCardView Customizing Groups
 
 A RadCardView group can be customized in order to match the expected design or functionality.
 

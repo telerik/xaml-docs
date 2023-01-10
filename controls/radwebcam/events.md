@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadWebCam Events
 
 `RadWebCam` exposes the following events, specific for the control.
 

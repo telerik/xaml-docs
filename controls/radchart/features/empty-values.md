@@ -8,7 +8,7 @@ published: True
 position: 30
 ---
 
-# Empty Values
+# {{ site.framework_name }} RadChart Empty Values
 
 
 

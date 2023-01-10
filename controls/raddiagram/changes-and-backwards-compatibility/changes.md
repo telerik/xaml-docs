@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Changes
+# {{ site.framework_name }} RadDiagram Changes
 
 This article describes the release history of the RadDiagram framework.
 

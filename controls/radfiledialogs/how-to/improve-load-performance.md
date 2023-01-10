@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Improve Load Performance
+# {{ site.framework_name }} RadFileDialogs Improve Load Performance
 
 In order to achieve optimal load performance with RadFileDialogs controls, you should be familiar with the following performance tips:
 

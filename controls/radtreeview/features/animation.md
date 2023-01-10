@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Animation
+# {{ site.framework_name }} RadTreeView Animation
 
 By default the RadTreeView control's items are expanded and collapsed with an animation. The expand\collapse animations are represented by a __TreeViewExpandCollapseAnimation__ object. This class derives from __RadAnimation__. The animation direction is controlled by the AnimationType property of the __TreeViewExpandCollapseAnimation__ class. So if you want to change the speed of the expand\collapse you can use the __AnimationManager.AnimationSelector__ attached property.
 

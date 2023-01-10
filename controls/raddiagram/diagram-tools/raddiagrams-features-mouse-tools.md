@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Mouse Tools
+# {{ site.framework_name }} RadDiagram Mouse Tools
 
 __RadDiagram__ provides 3 __Mouse Tools__ that determine the actions you can perform with your mouse - __Pointer Tool__, __Connector Tool__ and __Pan Tool__.	  
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Create a TimeBar control in Code-behind
+# {{ site.framework_name }} RadTimeBar Create a TimeBar control in Code-behind
 
 RadTimeBar supports lightweight batch initialization through the [ISupportInitialize](http://msdn.microsoft.com/en-us/library/system.componentmodel.isupportinitialize.aspx) interface. You can use the methods of this interface in code behind to create and initialize a time bar before adding it in the visual tree. Here is an example:
 

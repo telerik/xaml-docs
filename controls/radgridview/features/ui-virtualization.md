@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# UI Virtualization
+# {{ site.framework_name }} RadGridView UI Virtualization
 
 __RadGridView's API__ supports __UI Virtualization__ which processes only these visual elements that are loaded in its viewable area. This reduces the memory footprint of the application and speeds up the loading time, thus immensely enhancing the **UI performance**. 
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# PointSeries
+# {{ site.framework_name }} RadChartView PointSeries
 
 This series is visualized on the screen as separate points representing each of the data points.      
 

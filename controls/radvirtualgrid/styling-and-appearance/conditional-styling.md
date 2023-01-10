@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Conditional Styling
+# {{ site.framework_name }} RadVirtualGrid Conditional Styling
 
 This topic will demonstrate how the cells of `RadVirtualGrid` can be styled conditionally.
 

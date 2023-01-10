@@ -8,7 +8,7 @@ published: True
 position: 29
 ---
 
-# How to Use BringPathIntoView Method
+# {{ site.framework_name }} RadTreeView How to Use BringPathIntoView Method
 
 This tutorial describes how to bring a virtualized item into view using the __RadTreeView.BringPathIntoView()__ method.
 

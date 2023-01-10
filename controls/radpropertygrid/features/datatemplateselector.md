@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# DataTemplateSelector Support
+# {{ site.framework_name }} RadPropertyGrid DataTemplateSelector Support
 
 The __DataTemplateSelector__ approach enables conditional selection of __DataTemplates__, based on information provided by the respective bound data item.
 

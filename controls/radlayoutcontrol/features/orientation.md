@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Orientation
+# {{ site.framework_name }} RadLayoutControl Orientation
 
 __RadLayoutControl__ and _the _layout groups__ are ordering their children with a horizontal orientation by default. You can change this and arrange the child items in a vertical order by setting the control's __Orientation__ property to Vertical. 
 

@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadUpload Template Structure
 
 
 

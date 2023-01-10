@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Connectors
+# {{ site.framework_name }} RadDiagram Connectors
 
 The __RadDiagramShape__ and __RadDiagramContainerShape__ visuals have 5 default connectors - Top, Right, Bottom, Left and Auto. Those are the predefined points where you can connect a __RadDiagramConnection__ to the shape.
 

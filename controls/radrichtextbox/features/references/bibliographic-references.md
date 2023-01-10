@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Bibliographic References
+# {{ site.framework_name }} RadRichTextBox Bibliographic References
 
 
 

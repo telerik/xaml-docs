@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How to Move Tabs Using Drag and Drop
+# {{ site.framework_name }} RadTabControl How to Move Tabs Using Drag and Drop
 
 Set the __RadTabControl__'s property __AllowDragReorder__ to __True__ or __False__ to allow/disallow the user to reorder the tab items of your tab control using __Drag & Drop__.
 

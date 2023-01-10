@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Flattened Series
+# {{ site.framework_name }} RadChart Flattened Series
 
 
 

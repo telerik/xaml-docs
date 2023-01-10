@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Localization
+# {{ site.framework_name }} RadChat Localization
 
 > More detailed look over the localization capabilities that the framework provides can be found in the [Localization]({%slug common-localization%}) article.
 

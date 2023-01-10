@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadCollectionNavigator Getting Started
 
 __RadCollectionNavigator__’s main purpose is to expose some of the methods of [ICollectionView](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview?view=netframework-4.8)/[IEditableCollectionView](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditablecollectionview?view=netframework-4.8) through its UI and public commands.
 

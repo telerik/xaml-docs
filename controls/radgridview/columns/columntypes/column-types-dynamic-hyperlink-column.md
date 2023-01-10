@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Dynamic Hyperlink Column
+# {{ site.framework_name }} RadGridView Dynamic Hyperlink Column
 
 __GridViewDynamicHyperlinkColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}) class. Except the binding to the desired property of your business object it allows you to easily build a URL for the hyperlink that hosts the content.
 

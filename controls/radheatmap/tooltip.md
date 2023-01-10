@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# ToolTip
+# {{ site.framework_name }} RadHeatMap ToolTip
 
 The RadHeatMap control provides a tooltip behavior which can be used to visualize arbitrary information related to a data point. The ToolTip functionality is disable by default. To enable it, you need to set __ShowToolTips__ property of the RadHeatMap to true. 
 

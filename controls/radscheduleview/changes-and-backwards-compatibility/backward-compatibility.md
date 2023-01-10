@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Backwards Compatibility
+# {{ site.framework_name }} RadScheduleView Backwards Compatibility
 
 
 This article lists the breaking changes of the control.

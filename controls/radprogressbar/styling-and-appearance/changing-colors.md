@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Changing Colors
+# {{ site.framework_name }} RadProgressBar Changing Colors
 
 There are two ways of changing the colors of a __RadProgressBar__ – by setting the control's properties directly or by assigning a custom __Style__ to the control. Both methods can be used either in procedural code or in XAML.
 

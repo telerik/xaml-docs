@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Commands
+# {{ site.framework_name }} RadWebCam Commands
 
 The actions in the UI of the `RadWebCam` control are executed via commands. To access them use the `RadWebCamCommands` static class. 
 

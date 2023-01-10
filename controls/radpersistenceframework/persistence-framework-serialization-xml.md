@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# XML Serialization String
+# {{ site.framework_name }} RadPersistenceFramework XML Serialization String
 
 This article shows the XML-based format used by the PersistenceFramework to store settings.
 

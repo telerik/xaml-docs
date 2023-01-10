@@ -8,7 +8,7 @@ published: False
 position: 14
 ---
 
-# Modify Foreground Color of Selected/Hovered Row
+# {{ site.framework_name }} RadGridView Modify Foreground Color of Selected/Hovered Row
 
 This help article will show you how to modify the foreground color of the **GridViewRow** element when you select or hover it.
 

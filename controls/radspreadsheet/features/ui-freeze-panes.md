@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Freeze Panes
+# {{ site.framework_name }} RadSpreadsheet Freeze Panes
 
 
 

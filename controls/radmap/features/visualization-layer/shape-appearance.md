@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Shape Appearance
+# {{ site.framework_name }} RadMap Shape Appearance
 
 When using map shape data objects (EllipseData, LineData, PathData and so on) there are 2 ways to control their appearance:      
 

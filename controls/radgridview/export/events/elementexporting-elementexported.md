@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# ElementExporting and ElementExported
+# {{ site.framework_name }} RadGridView ElementExporting and ElementExported
 
 You have more control over the exportation by utilizing the export events which are fired when you export data from RadGridView.
 

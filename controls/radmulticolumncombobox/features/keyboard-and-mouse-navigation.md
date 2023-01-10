@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Keyboard and Mouse Navigation
+# {{ site.framework_name }} RadMultiColumnComboBox Keyboard and Mouse Navigation
 
 * [Keyboard Navigation](#keyboard-navigation)
 * [Mouse Navigation](#mouse-navigation)

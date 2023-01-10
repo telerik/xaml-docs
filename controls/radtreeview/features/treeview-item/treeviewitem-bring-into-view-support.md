@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# BringIntoView Support
+# {{ site.framework_name }} RadTreeView BringIntoView Support
 
 The __RadTreeView__ API offers __BringIntoView__ support through several methods:	  
 

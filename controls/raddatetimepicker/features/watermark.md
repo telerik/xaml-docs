@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Watermark
+# {{ site.framework_name }} RadDateTimePicker Watermark
 
 You can set a watermark content to your __RadDateTimePicker__ control. This watermark is a text field which will be visible when the __RadDateTimePicker__ is not focussed and empty, i.e. no value has been selected.
 

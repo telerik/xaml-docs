@@ -8,7 +8,7 @@ published: True
 position: 19
 ---
 
-# Design-time Support
+# {{ site.framework_name }} RadDiagram Design-time Support
 
 The __RadDiagram__ provides the developer with the possibility to enable or disable many of its features when it is added through the Visual Studio [ToolBox](https://docs.microsoft.com/en-us/visualstudio/ide/reference/toolbox?view=vs-2017). This article will show which features of the control can be configured through the design-time wizard.
 

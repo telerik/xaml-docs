@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Formatter Provider
+# {{ site.framework_name }} RadTimeline Formatter Provider
 
 This help topic will give an overview on the Formatter Provider feature of RadTimeline.      
 

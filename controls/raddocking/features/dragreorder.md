@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# DragReorder of Tabs
+# {{ site.framework_name }} RadDocking DragReorder of Tabs
 
 With the official Q3 2012 release of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} we introduced the __DragReorder__ feature of __RadDocking__ control. This feature will help end users to easily reorder existing __RadPanes__ in a specific __RadPaneGroup__.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the GridLine
+# {{ site.framework_name }} RadChart Styling the GridLine
 
 
 

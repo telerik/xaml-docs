@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Bar Indicator
+# {{ site.framework_name }} RadGauge Bar Indicator
 
 The __Linear__ and the __Radial__ __Bars__ derive from the __BarIndicator__ class. Because of that they provide some common functionality. This topic will focus on the common features between these indicators.
 

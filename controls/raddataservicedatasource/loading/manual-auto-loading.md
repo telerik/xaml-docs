@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Manual vs. Auto Loading
+# {{ site.framework_name }} RadDataServiceDataSource Manual vs. Auto Loading
 
 You can load data manually by calling the ___RadDataServiceDataSource.Load___ method or you can let the control perform an automatic load when a change affecting the query occurs. If you set the __AutoLoad__ property to ___true___, an automatic load will be initiated each time one of the following happens:
 

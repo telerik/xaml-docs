@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Selection
+# {{ site.framework_name }} RadTaskBoard Selection
 
 RadTaskBoard provides you with selection functionality, which allows the user to select an item from the data displayed in the columns. 
 

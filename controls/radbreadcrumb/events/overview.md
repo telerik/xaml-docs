@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Events Overview
+# {{ site.framework_name }} RadBreadcrumb Events Overview
 
 This topic covers the specific events exposed by the __RadBreadcrumb__ control:
 

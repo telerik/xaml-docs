@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customizing Appearance
+# {{ site.framework_name }} RadComboBox Customizing Appearance
 
 This article points to the RadComboBox API that can be used to customize its appearance using styles and templates.
 

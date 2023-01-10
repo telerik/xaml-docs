@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Implementing View-ViewModel 
+# {{ site.framework_name }} RadScheduleView Implementing View-ViewModel
 
 The purpose of this tutorial is to show you how to bind a __RadScheduleView__ with a ViewModel.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# End User Manual
+# {{ site.framework_name }} RadDataFilter End User Manual
 
 
 __RadDataFilter__ allows you to create complex filter criteria within unlimited number of filter conditions combined by logical operators.

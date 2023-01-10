@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Disable Audio Recording
+# {{ site.framework_name }} RadWebCam Disable Audio Recording
 
 This article shows how to stop the audio recording when a video is captured.
 

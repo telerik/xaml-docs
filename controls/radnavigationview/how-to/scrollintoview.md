@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Scroll Item into View
+# {{ site.framework_name }} RadNavigationView Scroll Item into View
 
 The __RadNavigationView API__ offers __ScrollIntoView__ support through the following method: __ScrollIntoView__. This method allows you to programmatically scroll an item into view when there are many RadNavigationViewItems.
 

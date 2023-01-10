@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadPropertyGrid Keyboard Support
 
 RadPropertyGrid  allows you to navigate through the items without using the mouse. The keyboard can entirely replace the mouse by allowing you to perform navigation and editing.
 

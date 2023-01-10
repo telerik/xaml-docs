@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Selection
+# {{ site.framework_name }} RadCardView Selection
 
 The selection feature of RadCardView allows you to select cards by clicking onto the card or using code.
 

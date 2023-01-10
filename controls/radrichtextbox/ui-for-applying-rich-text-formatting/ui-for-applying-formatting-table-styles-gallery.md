@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Table Styles Gallery
+# {{ site.framework_name }} RadRichTextBox Table Styles Gallery
 
 
 

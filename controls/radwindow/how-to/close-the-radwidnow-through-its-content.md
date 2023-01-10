@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Close the RadWindow Through its Content
+# {{ site.framework_name }} RadWindow Close the RadWindow Through its Content
 
 To close the __RadWindow__ through its content you have to get the instance of the __RadWindow__ and call its __Close()__ method. This tutorial will handle two possible scenarios:
 

@@ -8,7 +8,7 @@ published: False
 position: 3
 ---
 
-# Composite Filter Descriptors
+# {{ site.framework_name }} RadGridView Composite Filter Descriptors
 
 
 >Note that when programmatically filtering the __RadGridView__ via the __CompositeFilterDescriptor__ and the __FilterDescriptor__ classes, the UI filtering mechanism won't be affected. This means that the UI filtering will be applied only to the already filtered data, not to the entire data source of the __RadGridView__. In order to combine the both of them, you have to use __IColumnFilterDescriptor__ instead of __FilterDescriptor__ or __CompositeFilterDescritpor__. Learn more by reading [this article]({%slug radgridview-filtering-icolumn-filter-descriptors%}).

@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Create Scatter ErrorBars and BoxPlot Series
+# {{ site.framework_name }} RadChart Create Scatter ErrorBars and BoxPlot Series
 
 
 

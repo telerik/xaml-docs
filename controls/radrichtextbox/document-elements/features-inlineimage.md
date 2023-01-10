@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# ImageInline
+# {{ site.framework_name }} RadRichTextBox ImageInline
 
 
 

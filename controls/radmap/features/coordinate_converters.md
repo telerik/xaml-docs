@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Coordinate Converters
+# {{ site.framework_name }} RadMap Coordinate Converters
 
 By default all of built-in __RadMap__ providers (Bing Maps, OpenStreetMap) use the standard __Mercator__ projection. When reading shape files with different projections, then you can use a coordinate converter. To do this, set the `CoordinateConverter` property of `MapShapeReader`. 
 

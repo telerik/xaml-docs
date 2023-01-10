@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customizing the CellTemplate
+# {{ site.framework_name }} RadGanttView Customizing the CellTemplate
 
 The __CellTemplate__ is the Template that is displayed in the cell of each roll. It could easily be customized by setting it to any valid DataTemplate.
 

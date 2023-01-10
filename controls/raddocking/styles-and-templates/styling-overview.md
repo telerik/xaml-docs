@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadDocking Overview
 
 This section is intended to give you a broad understanding of the possible ways in which you can change the visual appearance of the __RadDocking__ control. You will need this information if you want to customize its appearance.
 

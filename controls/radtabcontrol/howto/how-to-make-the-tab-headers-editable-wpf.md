@@ -9,7 +9,7 @@ position: 12
 site_name: WPF
 ---
 
-# How to Make the Tab Headers Editable
+# {{ site.framework_name }} RadTabControl How to Make the Tab Headers Editable
 
 
 

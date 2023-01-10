@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the RadPane
+# {{ site.framework_name }} RadDocking Styling the RadPane
 
 The __RadPane__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control or by creating an implicit style.
 

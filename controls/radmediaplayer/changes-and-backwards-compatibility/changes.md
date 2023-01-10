@@ -8,7 +8,7 @@ publish: True
 position: 1
 ---
 
-# Changes
+# {{ site.framework_name }} RadMediaPlayer Changes
 
 This article describes the release history of the RadMediaPlayer control.
 

@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Edit Modes
+# {{ site.framework_name }} RadPropertyGrid Edit Modes
 
 RadPropertyGrid exposes __EditMode__ property of type __PropertyGridEditMode__, which provides different options for __editing behavior__.
 

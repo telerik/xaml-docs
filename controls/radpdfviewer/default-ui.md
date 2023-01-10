@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Default UI
+# {{ site.framework_name }} RadPdfViewer Default UI
 
 RadPdfViewer comes with pre-defined UI that is automatically wired with all of the commands provided by the control. **RadPdfViewerToolbar** compliments **RadPdfViewer**, with convenient toolbar exposing the variety of features. With single line of XAML you get all the UI expected from a standard PDF viewing application, including page navigation, [zoom]({%slug radpdfviewer-zoom-in-or-out-a-radfixeddocument%}) and page control, open/save/print buttons. When updating from version to version, you'll automatically get UI for all the new commands we expose. **RadPdfViewerNavigationPane** takes care of visualizing different navigation panels, including the [Bookmarks]({%slug radpdfviewer-features-bookmarks%}) of the PDF document.
 

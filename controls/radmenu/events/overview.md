@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadMenu Overview
 
 This topic covers the specific events exposed by the __RadMenu__ control.
         

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Formatting API
+# {{ site.framework_name }} RadRichTextBox Formatting API
 
 
 

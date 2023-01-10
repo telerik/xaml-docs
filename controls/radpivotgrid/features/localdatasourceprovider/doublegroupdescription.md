@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# DoubleGroupDescription
+# {{ site.framework_name }} RadPivotGrid DoubleGroupDescription
 
 In this article we will show you how to use DoubleGroupDescription with your numeric data.
 

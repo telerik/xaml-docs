@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Binding to XML
+# {{ site.framework_name }} RadComboBox Binding to XML
 
 The purpose of this tutorial is to show you how to bind a __RadComboBox__ control to a data defined in a XML file. In a few words, the operations you need to perform are to convert the XML to a collection of business objects and then bind that collection using the __ItemsSource__ property of the __RadComboBox__.
 

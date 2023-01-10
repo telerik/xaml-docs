@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Set GroupHeaders Width
+# {{ site.framework_name }} RadScheduleView Set GroupHeaders Width
 
 __GroupHeaders__ represent the date and resource (when RadScheduleView is grouped) headers. They can be horizontal or vertical depending on the active ViewDefinition and its Orientation. 
 

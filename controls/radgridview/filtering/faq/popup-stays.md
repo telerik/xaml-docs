@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Filtering Popup Remains Opened
+# {{ site.framework_name }} RadGridView Filtering Popup Remains Opened
 
 __PROBLEM__
 

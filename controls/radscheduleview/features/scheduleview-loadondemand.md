@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Load on Demand
+# {{ site.framework_name }} RadScheduleView Load on Demand
 
 This article demonstrates how you can load the appointments in RadScheduleView depending on the current visible range of the control. This can be very useful in scenarios where the number of appointments is very large.
 

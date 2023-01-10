@@ -7,7 +7,7 @@ tags: selection,radsyntaxeditor
 position: 3
 ---
 
-# Selection
+# {{ site.framework_name }} RadSyntaxEditor Selection
 
 The RadSyntaxEditor supports not only selection via the UI but also exposes API to work with the selection programmatically. In addition, the selection can be controlled via the keyboard by a number of key combinations. You can also disable selection in the control if your business scenario demands it.
 

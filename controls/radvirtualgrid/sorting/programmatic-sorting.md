@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Programmatic Sorting
+# {{ site.framework_name }} RadVirtualGrid Programmatic Sorting
 
 __RadVirtualGrid__ provides an API for programmatically sorting its data. The following article will go through the events exposed for this purpose.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Using TxtFormatProvider
+# {{ site.framework_name }} RadRichTextBox Using TxtFormatProvider
 
 __TxtFormatProvider__ makes it easy to import and export __RadDocument__ to/from plain text format, preserving the document structure. 
 

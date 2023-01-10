@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Charts
+# {{ site.framework_name }} RadSpreadsheet Charts
 
 
 The charts enable you to summarize the data in your spreadsheet document and make it easily readable and understandable. With RadSpreadsheet you can show charts as well as add, remove and manipulate chart objects in your spreadsheet documents.

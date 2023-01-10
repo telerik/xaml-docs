@@ -8,7 +8,7 @@ published: True
 position: 19
 ---
 
-# Validation Error Indicator Remains
+# {{ site.framework_name }} RadGridView Validation Error Indicator Remains
 
 __PROBLEM__
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the RadProgressBar
+# {{ site.framework_name }} RadBusyIndicator Styling the RadProgressBar
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the RadBusyIndicator]({%slug radbusyindicator-styles-and-templates-template-structure%}) control.
 

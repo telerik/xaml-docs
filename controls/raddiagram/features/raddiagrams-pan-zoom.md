@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Pan and Zoom
+# {{ site.framework_name }} RadDiagram Pan and Zoom
 
 In __RadDiagram__ you can easily pan, zoom in or out of your current diagramming structure. This tutorial will get you familiar with the pan and zoom implementation within the __Diagramming Framework__.            
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Properties
+# {{ site.framework_name }} RadBarcode Properties
 
 ## Most important properties
 

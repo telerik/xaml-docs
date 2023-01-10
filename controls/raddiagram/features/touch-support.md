@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Touch Support
+# {{ site.framework_name }} RadDiagram Touch Support
 
 This article describes the touch support implemented in the __RadDiagram__
 

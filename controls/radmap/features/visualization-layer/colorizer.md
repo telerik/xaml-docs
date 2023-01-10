@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Colorizer
+# {{ site.framework_name }} RadMap Colorizer
 
 The __Colorizer__ feature of the __VisualizationLayer__ allows you to colorize the __MapShapeData__ objects inside it on the basis of a condition. For example, you can create maps that display shapes for each country with fill color depending on the population of the country.        
 

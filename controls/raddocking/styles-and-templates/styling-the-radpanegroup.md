@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Styling the RadPaneGroup
+# {{ site.framework_name }} RadDocking Styling the RadPaneGroup
 
 The [RadPaneGroup]({%slug raddocking-features-pane-groups%}) control groups multiple RadPanes in a single container. This article will demonstrate how you can style the control.
 

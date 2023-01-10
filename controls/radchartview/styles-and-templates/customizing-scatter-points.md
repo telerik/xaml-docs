@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Customizing Scatter Points
+# {{ site.framework_name }} RadChartView Customizing Scatter Points
 
 RadChartView allows you to set custom shape for the Scatter points (items of the [ScatterPointSeries]({%slug radchartview-series-scatterpointseries%})) via DataTemplate. However there are cases where we would like each point in our scatter series to have different shape or color. This is where you should use the *PointTemplateSelector* property.
 

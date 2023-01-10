@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Set Group's Display Indices
+# {{ site.framework_name }} RadTileList Set Group's Display Indices
 
 
 

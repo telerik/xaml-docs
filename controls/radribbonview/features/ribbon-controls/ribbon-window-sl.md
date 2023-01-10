@@ -9,7 +9,7 @@ position: 10
 site_name: Silverlight
 ---
 
-# Ribbon Window
+# {{ site.framework_name }} RadRibbonView Ribbon Window
 
 The __RadRibbonWindow__ control is used to define a specialized window that is pre-configured with a__RadRibbonView__ to emulate MS Office UI in Silverlight. 
 

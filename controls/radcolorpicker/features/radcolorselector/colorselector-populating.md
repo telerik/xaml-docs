@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Declaration
+# {{ site.framework_name }} RadColorPicker Declaration
 
 This article demonstrates how you can declare a __RadColorSelector__ and populate it with colors.
 

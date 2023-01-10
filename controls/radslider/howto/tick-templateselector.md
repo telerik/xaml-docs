@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to Customize the Look of the Tick Marks Using TickTemplateSelector
+# {{ site.framework_name }} RadSlider How to Customize the Look of the Tick Marks Using TickTemplateSelector
 
 The __TickTemplateSelector__ property gives you the ability to display ticks with different templates. This tutorial will walk you through the common task of creating and applying __TickTemplateSelector.__
 

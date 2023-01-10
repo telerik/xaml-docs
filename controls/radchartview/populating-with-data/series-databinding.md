@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Create Data-Bound Chart
+# {{ site.framework_name }} RadChartView Create Data-Bound Chart
 
 RadChartView supports data binding and manual population with data out of the box. The data binding feature is exposed by the different series and can be utilized by assigning a value to the __ItemsSource__ property of a series object. Each series has a collection of data points, that is, a data source which it displays according to the series type. For more information on chart series, please refer to our [Chart Series]({%slug radchartview-series-chartseries%}) topic. ItemsSource is of type IEnumerable and can therefore be bound to anything. If the data source is a collection of custom objects, users will have to provide a ValueBinding which will be used by the series to determine to which property the data points of the chart will be bound to.
 

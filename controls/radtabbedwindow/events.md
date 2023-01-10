@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadTabbedWindow Events
 
 The RadTabbedWindow control exposes a number of events to let you easily customize its behavior.
 

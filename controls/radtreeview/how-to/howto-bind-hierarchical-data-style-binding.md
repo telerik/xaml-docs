@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Bind RadTreeView to Hierarchical Data and Use Style Binding
+# {{ site.framework_name }} RadTreeView Bind RadTreeView to Hierarchical Data and Use Style Binding
 
 This tutorial demonstrates the usage of __HierarchicalDataTemplate__ and __Style Bindings__ in __RadTreeView__.
 

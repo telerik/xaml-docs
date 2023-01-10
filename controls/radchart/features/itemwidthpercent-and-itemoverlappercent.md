@@ -8,7 +8,7 @@ published: True
 position: 31
 ---
 
-# ItemWidthPercent and ItemOverlapPercent
+# {{ site.framework_name }} RadChart ItemWidthPercent and ItemOverlapPercent
 
 
 

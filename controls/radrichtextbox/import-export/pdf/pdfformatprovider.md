@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Using PdfFormatProvider
+# {{ site.framework_name }} RadRichTextBox Using PdfFormatProvider
 
 __PdfFormatProvider__ makes it easy to export __RadDocument__ to PDF format, preserving the entire document structure and formatting.
   

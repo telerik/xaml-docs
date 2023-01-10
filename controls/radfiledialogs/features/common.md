@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Common
+# {{ site.framework_name }} RadFileDialogs Common
 
 This articles shows the features shared between all file dialogs controls - __RadOpenFileDialog, RadSaveFileDialog, RadOpenFolderDialog__ and __ExplorerControl__ .
 

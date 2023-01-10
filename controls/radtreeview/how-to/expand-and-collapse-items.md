@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Expand and Collapse Items
+# {{ site.framework_name }} RadTreeView Expand and Collapse Items
 
 To expand an item click on the expander icon. To expand an item programmatically set the __IsExpanded__ property to __True__. To collapse an item set the __IsExpanded__ property to __False__. When the item is expanded/collapsed it fires the __PreviewExpand__, __Expanded__ and __PreviewCollapsed__, __Collapsed__ events respectively. These events are available for the __RadTreeView__ and __RadTreeViewItem__ classes.		
 

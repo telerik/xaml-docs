@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Filter goes outside the window
+# {{ site.framework_name }} RadGridView Filter goes outside the window
 
 __PROBLEM__
 

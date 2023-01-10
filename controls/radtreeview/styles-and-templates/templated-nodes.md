@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Templated Nodes
+# {{ site.framework_name }} RadTreeView Templated Nodes
 
 The Telerik __RadTreeView__ is a lookless and completely stylable control. This tutorial will demonstrate how you can build a horizontal treeview by simply using __Styles__ and __ControlTemplates__.
 

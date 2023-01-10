@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Hyperlink Column
+# {{ site.framework_name }} RadGridView Hyperlink Column
 
 __GridViewHyperlinkColumn__ derives from the [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}) class and its content is represented by a __HyperlinkButton__ control.
 

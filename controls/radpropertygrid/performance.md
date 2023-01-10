@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Performance
+# {{ site.framework_name }} RadPropertyGrid Performance
 
 RadPropertyGrid’s API allows you to tweak your application for optimal performance. If you are a developer who wants to use RadPropertyGrid, you should familiarize yourself with the following details:
 

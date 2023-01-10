@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Styling the RadRibbonGallery
+# {{ site.framework_name }} RadRibbonView Styling the RadRibbonGallery
 
 The __RadRibbonGallery__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.			
 

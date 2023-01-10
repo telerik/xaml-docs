@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Linear Scale Overview
+# {{ site.framework_name }} RadGauge Linear Scale Overview
 
 LinearScale is used to control the overall layout of tick marks, tick labels, indicators, and ranges, as well render an optional scale bar.
 

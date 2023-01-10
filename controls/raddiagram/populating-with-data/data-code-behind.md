@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# In Code-Behind
+# {{ site.framework_name }} RadDiagram In Code-Behind
 
 This article will demonstrate how to define __RadDiagram__, __Shapes__ and __Connections__ in code behind	  
 

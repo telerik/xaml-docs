@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Direction
+# {{ site.framework_name }} RadSlider Direction
 
 
 

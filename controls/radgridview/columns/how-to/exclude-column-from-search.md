@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Exclude Column from Search
+# {{ site.framework_name }} RadGridView Exclude Column from Search
 
 __GridViewBoundColumnBase__ provides a mechanism for it to be excluded from the search mechanism. This can be achieved through its __IsSearchable__ property. It is available as of __R2 2018__. Its default value is __True__, meaning that the column will be included in the search operation. When set to __False__ the column will not take part in the searching. 
 

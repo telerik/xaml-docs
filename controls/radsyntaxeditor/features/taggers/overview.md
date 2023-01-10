@@ -7,7 +7,7 @@ tags: taggers,radsyntaxeditor
 position: 0
 ---
 
-# Taggers
+# {{ site.framework_name }} RadSyntaxEditor Taggers
 
 The RadSyntaxEditor control works with the underlying document with the help of **taggers**. Taggers are used to identify spans of text and assign them a specific tag if they match a specific condition. The identification process occurs in the **GetTags** method which can be overridden in a [custom tagger]({%slug radsyntaxeditor-features-custom-tagger%}).
 

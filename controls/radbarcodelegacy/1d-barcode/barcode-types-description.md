@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Types Description
+# {{ site.framework_name }} RadBarcodeLegacy Types Description
 
 
 This help topic will give you an overview of the following barcode types:

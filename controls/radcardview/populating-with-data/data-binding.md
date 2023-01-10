@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadCardView Data Binding
 
 RadCardView is populated with cards via its ItemsSource property.
 

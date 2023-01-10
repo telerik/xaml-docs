@@ -7,7 +7,7 @@ tags: icon, icontemplate,radnavigationviewitem
 position: 2
 ---
 
-# Icon and IconTemplate
+# {{ site.framework_name }} RadNavigationView Icon and IconTemplate
 
 The __RadNavigationViewItem__ allows you to display a custom icon in its template. To show an icon, you can use either the Icon, or the IconTemplate properties.
 

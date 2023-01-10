@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Using Static Items
+# {{ site.framework_name }} RadMenu Using Static Items
 
 This tutorial will walk you through the common task of populating __RadMenu__ with __RadMenuItems__ declaratively. 
 

@@ -9,7 +9,7 @@ position: 6
 site_name: Silverlight
 ---
 
-# Personalize the File Storage
+# {{ site.framework_name }} RadUpload Personalize the File Storage
 
 
 This tutorial will show you how to personalize the storage folder, so each user who uses your application can upload the files in his own folder.

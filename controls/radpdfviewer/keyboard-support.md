@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadPdfViewer Keyboard Support
 
 
 

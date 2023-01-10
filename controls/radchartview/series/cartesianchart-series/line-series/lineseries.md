@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# LineSeries
+# {{ site.framework_name }} RadChartView LineSeries
 
 This series is visualized on the screen as a straight line connecting all data points.
 

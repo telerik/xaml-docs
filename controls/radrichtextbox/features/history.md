@@ -7,7 +7,7 @@ tags: history
 published: True
 ---
 
-# History
+# {{ site.framework_name }} RadRichTextBox History
 
 
 

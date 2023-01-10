@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Events
+# {{ site.framework_name }} RadTransitionControl Events
 
 The RadTransitionControl raises the following specific events:
 

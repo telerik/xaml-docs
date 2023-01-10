@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Resetting the Capacity
+# {{ site.framework_name }} RadVirtualGrid Resetting the Capacity
 
 Inserting and removing rows or columns does not affect the __InitialRowCount__ or __InitialColumnCount__ properties. Thus, __RadVirtualGrid__ supports resetting its capacity to the values that are initially set for them. This can be achieved through the __Reset__ method and its two overloads:
 

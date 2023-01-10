@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Styling the RadRibbonToggleButton
+# {{ site.framework_name }} RadRibbonView Styling the RadRibbonToggleButton
 
 The __RadRibbonToggleButton__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.			
 

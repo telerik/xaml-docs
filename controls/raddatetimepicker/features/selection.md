@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Selection
+# {{ site.framework_name }} RadDateTimePicker Selection
 
 The __RadDateTimePicker__ lets you select only single values - a single date, month or year from the Calendar and/or a single time  from the Clock.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customize Row and Column Headers
+# {{ site.framework_name }} RadSpreadsheet Customize Row and Column Headers
 
 
 

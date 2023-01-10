@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Copying
+# {{ site.framework_name }} RadGridView Copying
 
 This article will give you a basic understanding on how to use:
 

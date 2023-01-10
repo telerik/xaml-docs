@@ -9,7 +9,7 @@ position: 7
 site_name: Silverlight
 ---
 
-# View and ViewModel
+# {{ site.framework_name }} RadScheduleView View and ViewModel
 
 This article will demonstrate how to implement the View and the ViewModel.
 

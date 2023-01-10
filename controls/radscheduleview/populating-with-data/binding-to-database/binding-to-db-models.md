@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Models
+# {{ site.framework_name }} RadScheduleView Models
 
 Here we will explain the tricky moments when defining the models.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Supported Controls
+# {{ site.framework_name }} RadLegend Supported Controls
 
 Here you can find information about the level of RadLegend support from other controls.      
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Key Features
+# {{ site.framework_name }} RadRibbonView Key Features
 
 ![{{ site.framework_name }} RadRibbonView Paint Application](images/RibbonView_paint.png)
 

@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Change the Default Theme
+# {{ site.framework_name }} RadUpload Change the Default Theme
 
 You can set the theme of the __RadUpload__ to one of the predefined themes for the RadControls for Silverlight or create your own custom theme. Read the [Creating a Custom Theme](http://www.telerik.com/help/silverlight/common-styling-and-appearance-creating-custom-theme.html), [Modifying a Built-In Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-modifying-built-in-theme.html) and [Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html) for more information.
 

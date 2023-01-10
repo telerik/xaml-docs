@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Group Footers
+# {{ site.framework_name }} RadGridView Group Footers
 
 __RadGridView__ exposes __group footers__ features which provide the option to render a footer under each group in the grid. Group footers display group summaries and contain footer cells that correspond to data columns.
 

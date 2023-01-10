@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Context Menu
+# {{ site.framework_name }} RadRichTextBox Context Menu
 
 The __RadRichTextBox__ UI has a built-in context menu feature which can be used to easily customize different elements in a document. The menu is displayed when you __mouse right click__ on the RadRichTextBox control. It contains some context specific commands arranged in groups. There are groups for spellchecking, clipboard, table editing and text editing.
 

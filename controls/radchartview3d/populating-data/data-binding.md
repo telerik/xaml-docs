@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadChartView3D Data Binding
 
 This article explains how to bind a 3D chart series to a collection of business objects. To data bound the series you can use its __ItemsSource__ property. The property is of type __IEnumerable__ so you can use most collection types. 
 

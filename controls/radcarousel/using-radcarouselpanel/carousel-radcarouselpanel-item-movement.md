@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# RadCarouselPanel Item Movement
+# {{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement
 
 ## Using the Public MoveBy Method
 

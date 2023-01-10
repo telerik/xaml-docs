@@ -8,7 +8,7 @@ publish: True
 position: 19
 ---
 
-# TrixIndicator
+# {{ site.framework_name }} RadChartView TrixIndicator
 
 TrixIndicator (triple exponential average) is used as a momentum indicator that oscillates around a zero line. 
 

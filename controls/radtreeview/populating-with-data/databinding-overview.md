@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# DataBinding - Overview
+# {{ site.framework_name }} RadTreeView DataBinding - Overview
 
 __Data binding__ is a process of connecting the application User Interface and business logic.
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Commands
+# {{ site.framework_name }} RadMenu Commands
 
 The __RadMenuItem__ control provides you with a standard __ICommandSource__ implementation. This means that you can bind your items to commands that will get executed when an item is clicked. For this purpose you can use the following properties.
 

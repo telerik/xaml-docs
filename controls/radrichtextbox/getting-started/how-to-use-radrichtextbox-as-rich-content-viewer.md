@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Use the RadRichTextBox as Rich Content Viewer
+# {{ site.framework_name }} RadRichTextBox Use the RadRichTextBox as Rich Content Viewer
 
 
 

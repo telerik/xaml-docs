@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadWebCam Visual Structure
 
 This article shows the main UI structure of the `RadWebCam` control.
 

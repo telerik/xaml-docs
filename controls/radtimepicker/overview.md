@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadTimePicker
 ---
 
-# Overview
+# {{ site.framework_name }} RadTimePicker Overview
 
 Thank you for choosing __Telerik RadTimePicker__! 
 

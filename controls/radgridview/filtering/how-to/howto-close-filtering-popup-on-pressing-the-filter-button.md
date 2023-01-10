@@ -8,7 +8,7 @@ published: True
 position: 22
 ---
 
-# Close Filtering Popup on Pressing Filter Button
+# {{ site.framework_name }} RadGridView Close Filtering Popup on Pressing Filter Button
 
 In order to close filtering Popup on pressing the fitler button, you need to override the __OnApplyFilter__ method of FilteringControl.
 

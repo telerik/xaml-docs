@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Controlling RadCarousel Appearance
+# {{ site.framework_name }} RadCarousel Controlling RadCarousel Appearance
 
 
 __ScrollBar Visibility Settings__

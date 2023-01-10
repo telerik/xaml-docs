@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# CustomPropertyProviders
+# {{ site.framework_name }} RadPersistenceFramework CustomPropertyProviders
 
 This tutorial describes how to use a custom property provider to define the properties that should be persisted by the __PersistenceFramework__.	  
 

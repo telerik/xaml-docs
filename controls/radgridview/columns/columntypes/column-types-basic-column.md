@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Basic Column
+# {{ site.framework_name }} RadGridView Basic Column
 
 __GridViewColumn__ is the base column type on top of which the other columns are built. It provides the common functionality typical for __RadGridView's__ columns. 
 

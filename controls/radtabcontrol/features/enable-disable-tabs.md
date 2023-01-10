@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Enable and Disable Tabs
+# {{ site.framework_name }} RadTabControl Enable and Disable Tabs
 
 
 

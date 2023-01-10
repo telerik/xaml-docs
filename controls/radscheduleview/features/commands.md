@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Commands
+# {{ site.framework_name }} RadScheduleView Commands
 
 `RadScheduleView` exposes its functionality through various commands that can be executed on its behalf. All commands are placed in the static class `RadScheduleViewCommands`. The purpose of this tutorial is to show you all of the commands exposed by the RadScheduleViewCommands class and how to execute them.
 

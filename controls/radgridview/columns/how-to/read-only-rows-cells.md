@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Read Only Rows and Cells
+# {{ site.framework_name }} RadGridView Read Only Rows and Cells
 
 This article shows how to control which rows or cells to be read only.
 

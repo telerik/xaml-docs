@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Work With Selection
+# {{ site.framework_name }} RadRibbonView Work With Selection
 
 For more information about the selection, take a look at the [ Selection]({%slug radribbonview-selection%}) topic in the __Features__ section.
 

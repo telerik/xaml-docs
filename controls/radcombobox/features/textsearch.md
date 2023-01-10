@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Text Search Functionality
+# {{ site.framework_name }} RadComboBox Text Search Functionality
 
 The __RadComboBox__ control supports rich text search functionality. The __TextSearch__ class and the __TextSearchMode__ property of the RadComboBox can be used in order to regulate how the control behaves when it receives user input.
 

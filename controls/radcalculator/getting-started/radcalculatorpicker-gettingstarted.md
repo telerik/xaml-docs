@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadCalculatorPicker Getting Started
+# {{ site.framework_name }} RadCalculator RadCalculatorPicker Getting Started
 
 This tutorial will walk your through the creation of a sample application that contains __RadCalculatorPicker__ and will show you how to:
 

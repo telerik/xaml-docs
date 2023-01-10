@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Pin and Close
+# {{ site.framework_name }} RadTabControl Pin and Close
 
 With the __R2 2019__ version of our controls, the RadTabControl now allows further customization of its items by providing pinning and closing its tab items out of the box. Every RadTabItem now can be pinned or close with a click of a button. 
 

@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Inline Editing
+# {{ site.framework_name }} RadScheduleView Inline Editing
 
 RadScheduleView supports inline editing of the displayed appointment's subject. The purpose of this tutorial is to show you:	
 

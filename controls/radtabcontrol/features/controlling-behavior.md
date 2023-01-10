@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadTabControl Key Properties
 
 __RadTabControl__ is an advanced control that allows you to control its behavior in order to achieve maximum UX satisfaction.
 

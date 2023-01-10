@@ -7,7 +7,7 @@ tags: watermark
 published: True
 ---
 
-# Watermark
+# {{ site.framework_name }} RadRichTextBox Watermark
 
 
 

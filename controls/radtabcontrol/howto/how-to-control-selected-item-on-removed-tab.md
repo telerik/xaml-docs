@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# How to Control the Selection When the SelectedItem is Removed
+# {{ site.framework_name }} RadTabControl How to Control the Selection When the SelectedItem is Removed
 
 
 

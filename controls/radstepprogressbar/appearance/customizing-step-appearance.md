@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customizing Step Appearance
+# {{ site.framework_name }} RadStepProgressBar Customizing Step Appearance
 
 RadStepProgressBar allows you to customize the appearance of the [step item]({%slug stepprogressbar-visual-structure%}) visual.
 

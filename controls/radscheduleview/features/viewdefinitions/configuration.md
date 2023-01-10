@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Configuration
+# {{ site.framework_name }} RadScheduleView Configuration
 
 RadScheduleView's predefined ViewDefinitions have various properties, which can be set in order the views to be configured best. Some of them are common for all views, others are specific for each view. In the following section we will go through all common properties.      
 

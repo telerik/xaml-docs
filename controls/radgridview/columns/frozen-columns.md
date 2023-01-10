@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Frozen Columns
+# {{ site.framework_name }} RadGridView Frozen Columns
 
 As of __R1 2018 RadGridView__ supports pinning columns both on its left and right side. Prior this version, the __FrozenColumnsCount__ property was available, through which columns could be frozen on the left side only. With the newer functionality this property is obsolete. It is replaced with the __LeftFrozenColumnsCount__ and __RightFrozenColumnsCount__ properties.
 

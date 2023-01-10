@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Section
+# {{ site.framework_name }} RadRichTextBox Section
 
 
 

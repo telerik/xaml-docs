@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Always focus the first cell on insert 
+# {{ site.framework_name }} RadGridView Always focus the first cell on insert
 
 When you insert a new item (via the Insert key or the insert row) RadGridView will check which is your current column and focus that column in the newly added and probably blank row. This picture explains it better:
 

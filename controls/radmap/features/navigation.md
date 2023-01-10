@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Navigation
+# {{ site.framework_name }} RadMap Navigation
 
 When working with the __RadMap__ control, the user would likely try to pan or zoom the map using mouse and/or keyboard or using the map navigation control. The developer is also able to implement outside navigation using the __RadMap__'s API  or to just predefine a start location. To do this you can use the following properties:
 

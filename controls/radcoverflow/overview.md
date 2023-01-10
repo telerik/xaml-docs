@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadCoverflow
 ---
 
-# Overview
+# {{ site.framework_name }} RadCoverflow Overview
 
 __RadCoverFlow__ is a useful tool that can be used to navigate through a collection of horizontally aligned images. It gives you flexibility to change camera position and reflection opacity. In this article you can find comprehensive HowTo section that gives you real world examples. You can also take a quick look at the Features section that describes all features and important events and properties. Prior to reading this article please check the [Structure]({%slug coverflow-structure%}) section that gives explanation for all terms and concepts relevant to RadCoverFlow.
 

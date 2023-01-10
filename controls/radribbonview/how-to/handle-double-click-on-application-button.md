@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Handle Double Click On Application Button
+# {{ site.framework_name }} RadRibbonView Handle Double Click On Application Button
 
 The __RadRibbonView__ class exposes the __ApplicationButtonDoubleClick__ event, which is fired when the RibbonView's __ApplicationButton__ is double-clicked.
 

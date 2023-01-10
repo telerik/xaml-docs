@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# ExplorerControl
+# {{ site.framework_name }} RadFileDialogs ExplorerControl
 
 The `ExplorerControl` is the view that presents the UI of the dialogs. When a dialog is opened its content is shown via this control.
 

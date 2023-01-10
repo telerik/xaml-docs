@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Save Snapshot to File
+# {{ site.framework_name }} RadWebCam Save Snapshot to File
 
 This article shows how to take and save a snapshot to a file.
 

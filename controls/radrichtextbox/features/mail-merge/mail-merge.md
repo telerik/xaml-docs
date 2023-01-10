@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Mail Merge
+# {{ site.framework_name }} RadRichTextBox Mail Merge
 
 
 

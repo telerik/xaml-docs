@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# Styling GridViewCheckBoxColumn
+# {{ site.framework_name }} RadGridView Styling GridViewCheckBoxColumn
 
 This topic will show you how to style the __GridViewCheckBoxColumn__.
 

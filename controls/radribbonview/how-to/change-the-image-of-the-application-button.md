@@ -9,7 +9,7 @@ position: 2
 include_in_navigation: False
 ---
 
-# Change The Image Of The Application Button
+# {{ site.framework_name }} RadRibbonView Change The Image Of The Application Button
 
 The default look of the application button is an empty rectangular button similar to the one on **Figure 1**.
 

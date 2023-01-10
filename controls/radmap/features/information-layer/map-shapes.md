@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Map Shapes
+# {{ site.framework_name }} RadMap Map Shapes
 
 The __RadMap__ control provides you with a set of shape objects, which are specifically designed to work with the __RadMap__. You will be able to find equivalents to most of the __Shapes__ introduced in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}.
 

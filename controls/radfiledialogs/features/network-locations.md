@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Network Locations
+# {{ site.framework_name }} RadFileDialogs Network Locations
 
 Since **R3 2018**, the RadFileDialogs as well as the ExplorerControl provide out of the box support for Network Locations.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Hierarchy Column
+# {{ site.framework_name }} RadTreeListView Hierarchy Column
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Tick placement
+# {{ site.framework_name }} RadSlider Tick placement
 
 
 

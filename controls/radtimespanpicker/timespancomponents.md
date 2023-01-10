@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# TimeSpanComponents
+# {{ site.framework_name }} RadTimeSpanPicker TimeSpanComponents
 
 This topic provides a detailed information for the built-in components of __RadTimeSpanPicker__ and how a custom component could be created:
 

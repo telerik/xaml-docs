@@ -8,7 +8,7 @@ publish: True
 position: 4
 ---
 
-# Customizing Axes by Using Implicit Styles
+# {{ site.framework_name }} RadChartView Customizing Axes by Using Implicit Styles
 
 RadChartView supports several types of axes. All of them are represented by the abstract Axis class that is responsible for displaying the labels and ticks.
 

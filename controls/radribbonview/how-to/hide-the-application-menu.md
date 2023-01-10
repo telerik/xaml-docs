@@ -9,7 +9,7 @@ position: 1
 include_in_navigation: False
 ---
 
-# Hide The Application Menu
+# {{ site.framework_name }} RadRibbonView Hide The Application Menu
 
 Whenever you want to prevent the end-user from using the application menu, you should set the RadRibbonView's __ApplicationButtonVisibility__ property to __Visibility.Collapsed__. For more information about the Application Menu different functionalities, take a look at the [Application Menu]({%slug radribbonview-applicationmenu%}) topic.		
 

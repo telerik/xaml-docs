@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Selection
+# {{ site.framework_name }} RadUpload Selection
 
 The __RadUploadItem__ inherits the __ListBoxItem__ class thus allowing a selection of __RadUploadItems__.
 

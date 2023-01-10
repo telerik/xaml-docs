@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Property Sets
+# {{ site.framework_name }} RadPropertyGrid Property Sets
 
 With the __property sets__ feature RadPropertyGrid enables its users to process multiple items' properties simultaneously. You no longer need to provide additional view models to expose those properties or manage their changes backwards to your business object instances. Everything now happens under the hood.
 

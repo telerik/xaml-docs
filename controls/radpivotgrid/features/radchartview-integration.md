@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# ChartView Integration
+# {{ site.framework_name }} RadPivotGrid ChartView Integration
 
 In this article we will show you how to integrate __RadPivotGrid__ with __RadChartView__.    
 

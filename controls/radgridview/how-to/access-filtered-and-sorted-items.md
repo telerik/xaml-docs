@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# How to Access Sorted and Filtered Items Within RadGridView
+# {{ site.framework_name }} RadGridView How to Access Sorted and Filtered Items Within RadGridView
 
 The RadGridView exposes an __Items__ property which represents a collection of the items after filtering, sorting and grouping operations have been applied upon the RadGridView`s __ItemsSource__.  
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Loading Data
+# {{ site.framework_name }} RadDomainDataSource Loading Data
 
 
 Let's start with the data load lifecycle:

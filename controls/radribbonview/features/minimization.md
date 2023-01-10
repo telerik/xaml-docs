@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Minimization
+# {{ site.framework_name }} RadRibbonView Minimization
 
 __RadRibbonView__ supports minimization, which means that the ribbon may be hidden so that only its tab headers remain visible. In this state, more screen real estate is available to the client area of the window.
 ![{{ site.framework_name }} RadRibbonView Minimized State](images/RibbonView_Minimized.png)

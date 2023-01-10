@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# HoverMode
+# {{ site.framework_name }} RadChartView HoverMode
 
 The different charts from the RadChartView suite expose a property called **HoverMode** which controls whether the rest of the series will fade out when a certain series is hovered. It is useful in situations with many overlapping series and has two possible values: **FadeOtherSeries** and **None**. The default value is **None**. This article will demonstrate this property with a RadCartesianChart.
 

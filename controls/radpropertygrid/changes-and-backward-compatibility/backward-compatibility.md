@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Backward Compatibility
+# {{ site.framework_name }} RadPropertyGrid Backward Compatibility
 
 ## Latest Release Notes
 

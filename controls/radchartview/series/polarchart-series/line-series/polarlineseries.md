@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# PolarLineSeries
+# {{ site.framework_name }} RadChartView PolarLineSeries
 
 This series is visualized on the screen as a straight line connecting each of the __DataPoints__.   
 

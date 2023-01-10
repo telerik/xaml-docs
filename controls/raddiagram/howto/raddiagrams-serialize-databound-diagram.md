@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Serialize a Databound Diagram
+# {{ site.framework_name }} RadDiagram Serialize a Databound Diagram
 
 This article shows how to serialize and deserialize the __RadDiagram__ in MVVM scenarios. It also demonstrates how to save/load custom properties from the ViewModels during the serialization / deserialization process.	  
 

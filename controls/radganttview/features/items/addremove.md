@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Add / Remove Items
+# {{ site.framework_name }} RadGanttView Add / Remove Items
 
 >Before proceding with adding/removing items, check [Types of Items]({%slug radganttview-features-items-types%}) topic.
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Commands
+# {{ site.framework_name }} RadButtons Commands
 
 The __RadButtons__ provide a standard __ICommandSource__ implementation and allow you to bind your buttons to commands that will be executed on click. To take advantage of the __ICommandSource__ implementation, use the following properties:	  
 

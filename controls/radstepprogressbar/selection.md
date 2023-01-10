@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Selection
+# {{ site.framework_name }} RadStepProgressBar Selection
 
 The selection feature allows you to highlight a step based on the current progress.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# How to Freeze the Layout
+# {{ site.framework_name }} RadDocking How to Freeze the Layout
 
 The purpose of this tutorial is to show you how to __freeze__ the entire layout of the __RadDocking__ control. That means to disable the:
 

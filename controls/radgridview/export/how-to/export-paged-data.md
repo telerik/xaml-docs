@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Format String Values as Numbers in HTML Export
+# {{ site.framework_name }} RadGridView Format String Values as Numbers in HTML Export
 
 __PROBLEM__
 

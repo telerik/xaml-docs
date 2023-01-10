@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Aggregates are not updated
+# {{ site.framework_name }} RadGridView Aggregates are not updated
 
 ## Column footer aggregates
 

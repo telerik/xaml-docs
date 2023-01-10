@@ -9,7 +9,7 @@ position: 12
 include_in_navigation: False
 ---
 
-# Templating the RadDocking
+# {{ site.framework_name }} RadDocking Templating the RadDocking
 
 In order to template the __RadDocking__ control you have to use Expression Blend. Open the UserControl containing your __RadDocking__ and select it.
 

@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Binding to a DataSet
+# {{ site.framework_name }} RadGridView Binding to a DataSet
 
 This article demonstrates how to bind a __RadGridView__ to data coming from a **DataSet**.
 

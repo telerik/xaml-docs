@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the Expander
+# {{ site.framework_name }} RadTreeView Styling the Expander
 
 {% if site.site_name == 'Silverlight' %}
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customizing Tab Items
+# {{ site.framework_name }} RadTabControl Customizing Tab Items
 
 This article shows how to customize the appearance of the RadTabControl's tab items.
 

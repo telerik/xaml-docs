@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# StepLineSeries
+# {{ site.framework_name }} RadChartView StepLineSeries
 
 This series is visualized on the screen as a horizontal and vertical line instead of straight line which connects all data points. This series changes its value with a step.
 

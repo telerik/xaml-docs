@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RangeSeries
+# {{ site.framework_name }} RadChartView RangeSeries
 
 __RangeSeries__ displays a range of data by plotting two numeric values per data point. Additionally, you need to specify a minimum and maximum value for each data point. The high data points, as well as the low data points, are connected with straight line segments and the area enclosed the two lines is colored in an arbitrary way. 
 

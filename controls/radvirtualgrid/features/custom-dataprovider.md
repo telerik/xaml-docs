@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Custom DataProvider
+# {{ site.framework_name }} RadVirtualGrid Custom DataProvider
 
 The __DataProvider__ class exposes various methods and properties for extending and customizing the default behavior of its respective **RadVirtualGrid** control. **Examples 1 and 2** demonstrate how you can create and apply a custom DataProvider.
 

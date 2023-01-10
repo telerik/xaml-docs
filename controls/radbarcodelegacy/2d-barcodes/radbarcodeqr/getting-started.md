@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadBarcodeLegacy Getting Started
 
 >In order to use __RadBarcodeQR__ in your projects you have to add references to the following two assemblies:
 >	- __Telerik.Windows.Data.dll__ 

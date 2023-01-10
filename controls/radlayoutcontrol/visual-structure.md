@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadLayoutControl Visual Structure
 
 This article describes the visual elements of the __RadLayoutControl__ and defines terms and concepts that are used in the scope of the control and its documentation.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadButtons Overview
 
 This section is intended to give you a broad understanding of the possible ways in which you can change the visual appearance of the __RadButtons__. There is also comprehensive information about their __ControlTemplates__. You will need this information if you want to customize their appearance.
 

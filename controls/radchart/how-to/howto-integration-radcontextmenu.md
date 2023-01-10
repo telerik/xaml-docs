@@ -9,7 +9,7 @@ position: 3
 site_name: Silverlight
 ---
 
-# Integration with RadContextMenu
+# {{ site.framework_name }} RadChart Integration with RadContextMenu
 
 
 

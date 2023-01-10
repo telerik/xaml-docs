@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to hide/show the pop-up pane in code
+# {{ site.framework_name }} RadDateTimePicker How to hide/show the pop-up pane in code
 
 The purpose of this tutorial is to demonstrate you how to show and hide the __RadDateTimePicker's__ content in code. 
 

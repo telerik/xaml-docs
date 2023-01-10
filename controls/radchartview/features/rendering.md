@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Rendering
+# {{ site.framework_name }} RadChartView Rendering
 
 The __RadChartView__ components allow you to specify the series rendering surface. This feature also provides you with the ability to adjust the overall performance of the charting components. In order to select any of the available rendering modes, you can use the __RenderOptions__ property of the series. It is of type ChartRenderOptions and it can be set to any of the following built-in __ChartRenderOptions__:
 

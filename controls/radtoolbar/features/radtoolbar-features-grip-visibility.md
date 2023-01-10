@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Grip Visibility
+# {{ site.framework_name }} RadToolBar Grip Visibility
 
 By default a small grip visual is shown in the `RadToolBar` control. 
 

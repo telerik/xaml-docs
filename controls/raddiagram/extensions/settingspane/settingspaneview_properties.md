@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# SettingsPaneView Attached Properties
+# {{ site.framework_name }} RadDiagram SettingsPaneView Attached Properties
 
 The __SettingsPaneView__ represents the default content of the RadDiagram SettingsPane. The bindings in the diagram's SettingsPane are created with custom code used through attached properties. This is necessary because the pane is opened in a Popup which is in a different visual tree and the normal XAML bindings between the application's tree and the Popup's tree might not work as expected. The SettingsPaneView exposes the following attached properties.
 

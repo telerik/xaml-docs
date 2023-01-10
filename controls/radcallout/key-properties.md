@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadCallout Key Properties
 
 This article will list the key properties provided by the RadCallout control.
 

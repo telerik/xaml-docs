@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Hiding Rows
+# {{ site.framework_name }} RadGridView Hiding Rows
 
 You can hide or show rows by configuring a __FilterDescriptor__ that filters the bound items by a certain condition. 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadFluidContentControl Data Binding
 
 RadFluidContentControl provides data binding support. This means that you can bind its Content, SmallContent and LargeContent properties and also define a DataTemplate for each content.
 

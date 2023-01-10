@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Get the data from a row
+# {{ site.framework_name }} RadGridView Get the data from a row
 
 This article shows how to obtain the data from a row of RadGridView.
 

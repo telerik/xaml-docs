@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadNumericUpDown Keyboard Support
 
 This article explains the keyboard shortcuts present in __RadNumericUpDown__ as well as the properties that can be used for keyboard navigation.
 

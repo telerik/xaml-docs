@@ -8,7 +8,7 @@ publish: True
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadMediaPlayer Getting Started
 
 This article will show you how to create a simple MediaPlayer.
 

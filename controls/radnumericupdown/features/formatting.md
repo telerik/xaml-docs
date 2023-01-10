@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Formatting
+# {{ site.framework_name }} RadNumericUpDown Formatting
 
 This article will explain in details the different formatting option of __RadNumericUpDown__.
 

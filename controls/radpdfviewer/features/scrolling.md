@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Scrolling 
+# {{ site.framework_name }} RadPdfViewer Scrolling
 
 **RadPdfViewer** has inbuilt default scrolling mechanism. 
 

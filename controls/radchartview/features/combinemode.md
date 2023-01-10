@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Combine Mode
+# {{ site.framework_name }} RadChartView Combine Mode
 
 Categorical series in RadChartView have a mechanism which can be used for combining data points that reside in different series but have the same category. This mechanism can be triggered by setting the __CombineMode__ property of the series. It is an enumeration and it allows the following values: __None, Cluster, Stack, Stack100__.
 

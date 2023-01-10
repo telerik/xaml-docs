@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Hot Spots
+# {{ site.framework_name }} RadMap Hot Spots
 
 Normally the elements placed in the [Information Layer]({%slug radmap-features-information-layer%}) get positioned via __Location__ coordinates. In this way their top-left corner will coincide with the point representing the location. When using __FrameworkElements__ in your __InformationLayer__ you can additionally arrange them around the point via their __HorizontalAlignment__ and __VerticalAlignment__ properties.      
 

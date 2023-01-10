@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# CameraViewPoint
+# {{ site.framework_name }} RadCoverflow CameraViewPoint
 
 __CameraViewPoint__
 

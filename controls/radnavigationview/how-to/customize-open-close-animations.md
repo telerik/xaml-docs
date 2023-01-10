@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customize the Open/Close Animations of the NavigationPane
+# {{ site.framework_name }} RadNavigationView Customize the Open/Close Animations of the NavigationPane
 
 __RadNavigationView__ provides built in animations for opening and closing the NavigationPane. This article will demonstrate how you can customize these animations. 
 

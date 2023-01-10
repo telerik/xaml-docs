@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Edit Appointment
+# {{ site.framework_name }} RadScheduleView Edit Appointment
 
 This topic describes the work flow for editing an appointment in __RadScheduleView__ control.
 

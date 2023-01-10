@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Empty Content
+# {{ site.framework_name }} RadChartView Empty Content
 
 RadChartView displays a warning message if a main component from the chart's setup is missing. The exact message depends on the specific part that is not set.
 

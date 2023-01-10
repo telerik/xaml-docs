@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# NoData Control
+# {{ site.framework_name }} RadChart NoData Control
 
 
 

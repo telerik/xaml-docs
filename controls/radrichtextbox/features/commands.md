@@ -7,7 +7,7 @@ tags: commands
 published: True
 ---
 
-# Commands
+# {{ site.framework_name }} RadRichTextBox Commands
 
 
 

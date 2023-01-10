@@ -8,7 +8,7 @@ published: False
 position: 6
 ---
 
-# Additional content
+# {{ site.framework_name }} RadTabControl Additional content
 
 
 

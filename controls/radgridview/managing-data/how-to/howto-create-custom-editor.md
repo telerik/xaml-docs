@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Create Custom Editor with RadGridView
+# {{ site.framework_name }} RadGridView Create Custom Editor with RadGridView
 
 The purpose of this tutorial is to show you how to create a custom editor with __RadGridView__. If you need a custom editor to edit specific data, you can use one of the following approaches:
 

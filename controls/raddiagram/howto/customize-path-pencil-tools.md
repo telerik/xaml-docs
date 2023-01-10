@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Customizing Tools
+# {{ site.framework_name }} RadDiagram Customizing Tools
 
 The purpose of this article is to guide you through the steps that you need to take in order to customize some of the built in mouse tools. In particular, the [Drawing Tools]({%slug raddiagram-features-drawing%}) of the RadDiagram.
 The steps that you need to take to customize the **Drawing** tools are:

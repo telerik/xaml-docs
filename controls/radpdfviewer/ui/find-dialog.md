@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Find Dialog
+# {{ site.framework_name }} RadPdfViewer Find Dialog
 
 
 __RadPdfViewer__ allows flexible searching in a loaded PDF document. The following article describes the available search options, as well as how to use and customize the find dialog.

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Data Binding (MVVM)
+# {{ site.framework_name }} RadStepProgressBar Data Binding (MVVM)
 
 The `RadStepProgressBar` control can be used in a data binding scenario. 
 

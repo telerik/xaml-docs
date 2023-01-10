@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Document Host
+# {{ site.framework_name }} RadDocking Document Host
 
 The `DocumentHost` is meant to be the default container for the editable documents in your application. By default it occupies the whole central area of the `RadDocking` control and each newly added pane is docked as a new tab page inside of it.
 

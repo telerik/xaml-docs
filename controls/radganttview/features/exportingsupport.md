@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Exporting Support
+# {{ site.framework_name }} RadGanttView Exporting Support
 
 With the Q2 2013 release of __RadGanttView__ the control provides an image exporting mechanism which enables its printing functionality.
 

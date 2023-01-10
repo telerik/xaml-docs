@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Using In-Memory Data
+# {{ site.framework_name }} RadGridView Using In-Memory Data
 
 The purpose of this tutorial is to show you how to populate a __RadGridView__ with in-memory data.
 

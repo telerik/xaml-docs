@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Customize the UI programmatically
+# {{ site.framework_name }} RadGridView Customize the UI programmatically
 
 You can manipulate the controls easily with two powerful extension methods: 
 

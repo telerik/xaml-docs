@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Drag Reorder
+# {{ site.framework_name }} RadGanttView Drag Reorder
 
 In the __RadGanttView__ control there are multiple build-in features that are related to dragging and dropping with the mouse such as the task __dragging__, __resizing__ and __reordering__ of tasks in the [GridView part]({%slug radganttview-visual-structure%}) of the control.
 

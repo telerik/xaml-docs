@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Drag and Drop Support
+# {{ site.framework_name }} RadDiagram Drag and Drop Support
 
 This article will get you familiar with the __RadDiagram__ drag/drop support.            
 

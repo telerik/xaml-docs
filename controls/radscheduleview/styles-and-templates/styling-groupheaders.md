@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the GroupHeaders
+# {{ site.framework_name }} RadScheduleView Styling the GroupHeaders
 
 It is a common scenario to use resources in **RadScheduleView** and group the appointments according to the resource they are assigned to. This article discusses how you can customize the **GroupHeaders**. It also explains the use of RadScheduleView's **GroupHeaderStyleSelector** property in order to apply separate styles to the GroupHeaders.
 

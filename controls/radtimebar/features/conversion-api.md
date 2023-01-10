@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Conversion API 
+# {{ site.framework_name }} RadTimeBar Conversion API
 
 __RadTimeBar__ allows you to convert a screen coordinates (a Point), to a DateTime value plotted on the timebar control. You can do that via the __ConvertPointToDateTime__ method of RadTimeBar. The method excepts an argument of type __Point__ and it returns a __DateTime__ object.
 

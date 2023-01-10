@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling and Style Selectors
+# {{ site.framework_name }} RadDiagram Styling and Style Selectors
 
 This topic describes the properties you can use to customize the default look-and-feel of the __RadDiagram__ items.	  
 

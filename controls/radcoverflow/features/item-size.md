@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Item Size
+# {{ site.framework_name }} RadCoverflow Item Size
 
 There are three different ways by which you can customize the Size of the RadCoverFlowItems. First of all, you are free to explicitly set the Width and Height of any RadCoverFlowItem like this:
 

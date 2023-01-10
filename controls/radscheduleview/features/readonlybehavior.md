@@ -8,7 +8,7 @@ published: True
 position: 20
 ---
 
-# ReadOnlyBehavior
+# {{ site.framework_name }} RadScheduleView ReadOnlyBehavior
 
 RadScheduleView's **ReadOnlyBehavior** is responsible for determining which operations are applicable to the appointments in the control. It can be customized in order to implement logic for whether you can save, edit, drag, resize, delete an appointment and edit a slot. This is done by inheriting the ReadOnlyBehavior class and overriding one or several of its virtual methods:
 

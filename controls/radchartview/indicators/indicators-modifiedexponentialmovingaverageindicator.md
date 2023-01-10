@@ -8,7 +8,7 @@ publish: True
 position: 8
 ---
 
-# ModifiedExponentialMovingAverageIndicator
+# {{ site.framework_name }} RadChartView ModifiedExponentialMovingAverageIndicator
 
 ModifiedExponentialMovingAverageIndicator acts as a moving average indicator, therefore it is smoothing the data to form a trend following. In addition to this, the indicator gives weight to the recent data and reacts faster to changes in the data.
 

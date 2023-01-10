@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Attaching input events to the map shapes
+# {{ site.framework_name }} RadMap Attaching input events to the map shapes
 
 The visualization engine based on the VisualizationLayer class separates geographical data and its visualization. The map shape data classes aren’t dependency objects. It means that you can’t attach input events to these classes directly. Instead you can attach events to the map shape visualization. It allows assigning of any input events supported by ContentPresenter to the map shape visual presentation.        
 

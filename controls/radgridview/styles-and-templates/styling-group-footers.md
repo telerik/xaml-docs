@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Styling Group Footers
+# {{ site.framework_name }} RadGridView Styling Group Footers
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [GridViewGroupFooterCell and GridViewGroupFooterRow]({%slug radgridview-styles-and-templates-templates-structure%}).
 

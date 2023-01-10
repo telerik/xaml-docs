@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Binding to ADO.NET Data Service
+# {{ site.framework_name }} RadComboBox Binding to ADO.NET Data Service
 
 The purpose of this tutorial is to show you how to populate a __RadComboBox__ with data from an ADO.NET Data Service in two ways:[Using plain methods call in the code-behind](#Using_Plain_Methods_Call_in_the_Code-Behind)[Using MVVM approach](#using-mvvm-approach)
 

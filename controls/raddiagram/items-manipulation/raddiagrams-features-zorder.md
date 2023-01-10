@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# ZOrder
+# {{ site.framework_name }} RadDiagram ZOrder
 
 __RadDiagram__ gives you the ability to control the __Z-Order__ of shapes and connections by using their __ZIndex__ property. You can also use __RadDiagramCommands__ in order to increase/decrease __ZIndex__ of the selected __RadDiagramItems__ simultaneously.	  
 

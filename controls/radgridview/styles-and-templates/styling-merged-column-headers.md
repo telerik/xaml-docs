@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Styling Column Groups
+# {{ site.framework_name }} RadGridView Styling Column Groups
 
 In order to style **Columng Groups** you will need to create two styles targeting the **CommonHeaderPresenter** and **CommonColumnHeader** elements. The __CommonHeaderPresenter__ hosts all common column headers and the __CommonColumnHeader__ is responsible for a single common column header. 
 

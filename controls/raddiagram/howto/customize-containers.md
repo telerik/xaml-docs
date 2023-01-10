@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Customize a ContainerShape
+# {{ site.framework_name }} RadDiagram Customize a ContainerShape
 
 This tutorial describes how to customize the default look and feel of the RadDiagramContainerShape.
 

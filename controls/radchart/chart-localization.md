@@ -9,7 +9,7 @@ position: 6
 site_name: Silverlight
 ---
 
-# Localization
+# {{ site.framework_name }} RadChart Localization
 
 
 The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource exposed by the standard __RadChart__ control. Once translated, you might use your resources in both Silverlight and WPF projects without changing anything.

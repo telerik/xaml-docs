@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# X-Axis
+# {{ site.framework_name }} RadChart X-Axis
 
 
 

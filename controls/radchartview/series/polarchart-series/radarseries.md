@@ -8,7 +8,7 @@ published: False
 position: 3
 ---
 
-# Radar Series
+# {{ site.framework_name }} RadChartView Radar Series
 
 The radar chart is a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. The radar series are special because they are valid only in the context of the __RadPolarChart__ control. RadPolarChart supports __RadarLineSeries__, __RadarAreaSeries__ out of the box. They are only different in the graphical primitives that are drawn. The primitives are a poly line and polygon respectively.
 

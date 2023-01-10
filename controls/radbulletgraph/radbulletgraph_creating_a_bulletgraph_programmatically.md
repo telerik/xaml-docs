@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Creating a BulletGraph Programmatically
+# {{ site.framework_name }} RadBulletGraph Creating a BulletGraph Programmatically
 
 The following article will demonstrate how to create a simple Horizontal Bullet graph programmatically but the approach is the same for the Vertical Bullet graph too.
 

@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Angles
+# {{ site.framework_name }} RadCircularProgressBar Angles
 
 `RadCircularProgressBar` allows you to specify the degrees of the start and end angles of the progress track and progress indicator. To do so, set the `StartAngle` and `EndAngle` properties. The default values of these properties are __0__ and __360__.
 

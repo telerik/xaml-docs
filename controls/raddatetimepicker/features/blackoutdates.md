@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Blackout Dates
+# {{ site.framework_name }} RadDateTimePicker Blackout Dates
 
 RadDateTimePicker allows you to disable certain dates in the [calendar part]({%slug raddatetimepicke-visual-structure%}) of the control. To do this, set the __BlackoutDates__ property of RadDateTimePicker to a collection of DateTime objects.
 

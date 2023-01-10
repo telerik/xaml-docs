@@ -9,7 +9,7 @@ position: 6
 site_name: WPF
 ---
 
-# Persist AdomdDataProvider
+# {{ site.framework_name }} RadPivotGrid Persist AdomdDataProvider
 
 > The implementation demonstrated in this article can also be reviewed in the [Persist AdomdDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Persistence/AdomdProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
 

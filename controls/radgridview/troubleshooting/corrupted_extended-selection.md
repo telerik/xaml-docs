@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# Corrupted Extended Selection
+# {{ site.framework_name }} RadGridView Corrupted Extended Selection
 
 __PROBLEM__
 

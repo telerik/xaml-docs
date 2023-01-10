@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# How to: Load data in a hierarchical grid with RIA Services
+# {{ site.framework_name }} RadGridView How to: Load data in a hierarchical grid with RIA Services
 
 Generally, there are a couple of options for filling up a hierarchical RadGridView when using RIA Services and domain data source. In the examples below we will use the __RadDomainDataSource__ control, but the approaches are the same when working with the DomainDataSource as well.
 

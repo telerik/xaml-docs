@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Axes
+# {{ site.framework_name }} RadChartView3D Axes
 
 The 3D space in the __RadCartesianChart3D__ control is defined by three axes, one for each dimension – X, Y and Z. Currently, there are a couple of axis types that can be used with the 3D chart - __LinearAxis3D__ and __CategoricalAxis3D__. 
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Navigation
+# {{ site.framework_name }} RadWizard Navigation
 
 __RadWizard__ provides out of the box a basic sequential page navigation, which allows you to navigate through the pages linearly. With the help of __RadWizard's__ events you can follow the state of the control at run time and implement custom pages sequence and page processing validation if necessary.
 

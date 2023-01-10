@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Basic Filtering
+# {{ site.framework_name }} RadGridView Basic Filtering
 
 This article will go through the following topics:
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Pane Groups
+# {{ site.framework_name }} RadDocking Pane Groups
 
 Each __RadPane__ provides built-in grouping functionality that allows you to place multiple panes inside a single container by organizing them in separate tab pages, similarly to the __RadTabControl__.
 

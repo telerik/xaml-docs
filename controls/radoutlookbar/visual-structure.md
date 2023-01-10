@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadOutlookBar Visual Structure
 
 This section defines terms and concepts used in the scope of __RadOutlookBar__ you have to get familiar with before  you continue reading this help.
 

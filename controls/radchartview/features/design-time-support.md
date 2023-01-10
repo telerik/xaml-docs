@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Design-Time Support
+# {{ site.framework_name }} RadChartView Design-Time Support
 
 RadChartView comes with an additional design-time feature that helps generating different types of visualizations easily.
 

@@ -8,7 +8,7 @@ published: False
 position: 0
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadExpander Template Structure
 
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadExpander__ also allows you to template it in order to change the control from the inside.			
 

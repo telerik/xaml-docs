@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Logarithmic Scale
+# {{ site.framework_name }} RadChart Logarithmic Scale
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling RadDateTimePicker
+# {{ site.framework_name }} RadDateTimePicker Styling RadDateTimePicker
 
 The __RadDateTimePicker__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control. 
 

@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Upload Validation
+# {{ site.framework_name }} RadUpload Upload Validation
 
 The __RadUpload__ allows you to apply some limitations regarding the uploaded files thus validating the upload process.
 

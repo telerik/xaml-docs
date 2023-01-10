@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# CandlestickSeries
+# {{ site.framework_name }} RadChartView CandlestickSeries
 
 This is a typical financial series that can be used to visualize the state of a market for a period of time. The series operates with a special kind of data in the form of four parameters defining the stock market - open, high, low, and close. The high and low values show the price range (the highest and lowest prices) over one unit of time. The open and close values indicate the opening and closing price of the stock for the corresponding period. Candlestick series have body, which has a different color depending on the value of open and close prices of the financial data point. This kind of series require one CategoricalAxis and one LinearAxis.
 

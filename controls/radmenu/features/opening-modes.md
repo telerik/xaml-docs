@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Opening Modes
+# {{ site.framework_name }} RadMenu Opening Modes
 
 If a menu item in the __RadMenu__ control contains any children, they are shown depending on a user action. There are two opening modes that recognize the following two actions:
 

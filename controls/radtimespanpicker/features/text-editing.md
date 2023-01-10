@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Text Editing
+# {{ site.framework_name }} RadTimeSpanPicker Text Editing
 
 Till now, the value of the __RadTimeSpanPicker__ can be edited through its component in the dropdown content. With the __R3 2020__ version of our Telerik UI for WPF suite, now you will be able to edit the value of the control directly. This topic will walk you through this functionality.
  

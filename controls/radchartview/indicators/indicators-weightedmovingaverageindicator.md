@@ -8,7 +8,7 @@ publish: True
 position: 23
 ---
 
-# WeightedMovingAverageIndicator
+# {{ site.framework_name }} RadChartView WeightedMovingAverageIndicator
 
 WeightedMovingAverageIndicator measures and shows the simple average for a period of past data using heavier weighting, thus smoothing the data to form a trend following.
 

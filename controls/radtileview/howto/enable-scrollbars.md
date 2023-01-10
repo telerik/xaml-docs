@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Enable the Horizontal and Vertical ScrollBars
+# {{ site.framework_name }} RadTileView Enable the Horizontal and Vertical ScrollBars
 
 For example, you may have the following __RadTileView__ declaration:
 

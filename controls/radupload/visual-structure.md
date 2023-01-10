@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadUpload Visual Structure
 
 This section defines the terms and concepts used in the scope of __RadUpload__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadUpload__ control.
 

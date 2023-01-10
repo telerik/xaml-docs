@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Zooming
+# {{ site.framework_name }} RadImageEditor Zooming
 
 RadImageEditor provides out of the box zooming functionality. 
 

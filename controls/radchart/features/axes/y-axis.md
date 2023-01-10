@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Y-Axis
+# {{ site.framework_name }} RadChart Y-Axis
 
 
 

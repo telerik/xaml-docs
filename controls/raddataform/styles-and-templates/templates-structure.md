@@ -9,7 +9,7 @@ position: 1
 include_in_navigation: False
 ---
 
-# Templates Structure
+# {{ site.framework_name }} RadDataForm Templates Structure
 
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, RadDataForm allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with:
 

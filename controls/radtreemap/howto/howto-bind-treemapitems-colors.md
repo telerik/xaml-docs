@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to Bind the Color of the TreeMapItems
+# {{ site.framework_name }} RadTreeMap How to Bind the Color of the TreeMapItems
 
 This topic will show you how to bind the color of the TreeMapItems. 
 

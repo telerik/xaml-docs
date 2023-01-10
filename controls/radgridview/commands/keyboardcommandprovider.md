@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Keyboard Command Provider
+# {{ site.framework_name }} RadGridView Keyboard Command Provider
 
 
 __RadGridView__ provides a set of keyboard navigation scenarios that will result in certain consequence of commands to be executed. However, in case you require them not to be invoked at all or to utilize different commands, you may take advantage of the __IKeyboardCommandProvider__ Interface and implement your custom logic. 

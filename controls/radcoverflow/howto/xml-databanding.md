@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Bind to XML
+# {{ site.framework_name }} RadCoverflow Bind to XML
 
 This section will explain how to bind RadCoverFlow to an XML data. In particular we will create an application that will call a Flickr web-service and based on what is specified in the search text box a result will be returned. 
 

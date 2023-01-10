@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Labels
+# {{ site.framework_name }} RadHeatMap Labels
 
 Since the __Q2 2015__ release the __RadHeatMap__ control supports cell labels. Users can enable them by using the __RadHeatMap.CellLabelSettings__ property. It is of type *HeatMapCellLabelSettings* which sets or gets the settings that are used to create the labels for each cell. The HeatMapCellLabelSettings class exposes the following properties:
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadGridView Keyboard Support
 
 
 __RadGridView__ exposes several useful properties and events, which can help you control the keyboard interaction and get notified when keyboard events occur. Moreover, using the keyboard you can perform some common tasks, such as:

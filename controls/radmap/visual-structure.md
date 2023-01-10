@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadMap Visual Structure
 
 __RadMap__ is a visual control that allows you to visualize rich geographical information, to zoom and to pan smoothly to any corner of the earth.        
 

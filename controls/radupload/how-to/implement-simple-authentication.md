@@ -9,7 +9,7 @@ position: 5
 site_name: Silverlight
 ---
 
-# Implement Simple Authentication
+# {{ site.framework_name }} RadUpload Implement Simple Authentication
 
 In order to authenticate the user that uploads files on the server-side of your application, you have to validate the user on the client and pass a parameter with his status to the server. To learn more about passing parameters to the Upload Handler read [here]({%slug radupload-features-upload-service-parameters%}).
 

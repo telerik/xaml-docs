@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Disable Drop at Specific Location
+# {{ site.framework_name }} RadTreeView Disable Drop at Specific Location
 
 In order to disable the drop operation on a specific treeview item, you need to set the boolean __RadTreeViewItem__ property __IsDropAllowed__ to __False__.
 

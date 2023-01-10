@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# ChartDataSource
+# {{ site.framework_name }} RadChartView ChartDataSource
 
 The __ChartDataSource__ object is used in sampling scenarios. Aside from binding to a collection of business objects as shown in the [Create Data-Bound Chart topic]({%slug radchartview-series-databinding%}) the __RadChartView__ component supports a more complex way of binding which allows you to combine the data items into a single data point (known as sampling) before plotting them. When the chart is populated with thousands of items, the visual representation might not be that clear. It is possible that there are two or more DataPoints shown with very close Y and X values. This is when sampling comes in handy.
 

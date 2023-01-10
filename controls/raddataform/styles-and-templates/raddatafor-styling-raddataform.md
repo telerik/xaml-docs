@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling RadDataForm
+# {{ site.framework_name }} RadDataForm Styling RadDataForm
 
 This article will demonstrate how to create a style targeting the RadDataForm control.
 

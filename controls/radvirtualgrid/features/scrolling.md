@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Scrolling
+# {{ site.framework_name }} RadVirtualGrid Scrolling
 
 __RadVirtualGrid__ exposes a scrolling mechanism which can be utilized through the following methods. As they are processed asynchronously, the scrollFinishedCallback and scrollFailedCallback callbacks can be used when certain actions are required once the scrolling has finished or failed.
 

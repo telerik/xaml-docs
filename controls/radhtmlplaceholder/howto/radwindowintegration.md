@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Integrating RadHtmlPlaceholder and RadWindow
+# {{ site.framework_name }} RadHtmlPlaceholder Integrating RadHtmlPlaceholder and RadWindow
 
 In order to use the __RadWindow__ control in your application, you need to add a reference to the __Telerik.Windows.Controls.Navigation__ assembly.<br/>{% if site.site_name == 'WPF' %}You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %}You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
 

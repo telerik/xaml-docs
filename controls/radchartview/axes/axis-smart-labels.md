@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Axis Smart Labels
+# {{ site.framework_name }} RadChartView Axis Smart Labels
 
 The RadChartView suite supports couple smart mechanisms which control the axis labels generation.
 * __SmartLabelsMode__: If enabled this feature tells the chart to recalculate the actual step of its axis automatically in order to prevent the axis' labels from overlapping one another. The recalculation logic is executed on update of the chart's layout (like resizing).

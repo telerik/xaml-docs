@@ -9,7 +9,7 @@ position: 5
 site_name: Silverlight
 ---
 
-# Silverlight Part
+# {{ site.framework_name }} RadScheduleView Silverlight Part
 
 We are ready with the implementation on the service side and we can focus on the Silverlight project.
 

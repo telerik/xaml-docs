@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Implement ToolBase Class
+# {{ site.framework_name }} RadImageEditor Implement ToolBase Class
 
 
 The __ToolBase__ class is an abstract class which implements the __ITool__ interface and has the following virtual and abstract members:

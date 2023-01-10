@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# NavigationBehavior
+# {{ site.framework_name }} RadScheduleView NavigationBehavior
 
  RadScheduleView's **NavigationBehavior** is responsible for handling the keyboard navigation. The control handles the KeyDown event for the following keys: __Tab__, __PageUp__, __PageDown__, __Home__, __End__ and all of the arrow keys. The default navigation logic of the control is implemented in the [DefaultNavigationBehavior](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.defaultnavigationbehavior) class. 
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Data Binding to Nested Collections
+# {{ site.framework_name }} RadChart Data Binding to Nested Collections
 
 
 

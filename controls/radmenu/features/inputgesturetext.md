@@ -9,7 +9,7 @@ position: 7
 site_name: WPF
 ---
 
-# InputGestureText
+# {{ site.framework_name }} RadMenu InputGestureText
 
 The __InputGestureText__ property of __RadMenuItem__ is used to display an input gesture that will execute the command tied to the specified item. It is placed right after the Header text of menu item. When using the predefined ApplicationCommands the __InputGestureText__ is displayed automatically. If you are using a custom Command the __InputGestureText__ property should be set to the required shortcut manually.   
 

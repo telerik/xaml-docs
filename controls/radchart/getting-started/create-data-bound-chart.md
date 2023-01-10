@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Create Data Bound Chart
+# {{ site.framework_name }} RadChart Create Data Bound Chart
 
 __RadChart__ is an advanced {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control providing full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as edit control properties, modify themes, create and modify templates and more.
 

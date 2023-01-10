@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Ribbon Tab
+# {{ site.framework_name }} RadRibbonView Ribbon Tab
 
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ consists of various elements, one of which is the __Ribbon Tab__. This topic discusses concepts fundamental to the __Ribbon Tab__ at first and then goes into the usage of the __RadRibbonTab__ class and its features.	  
 

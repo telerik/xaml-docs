@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Active Document Editor
+# {{ site.framework_name }} RadRichTextBox Active Document Editor
 
 RadRichTextBox displays the different parts of its content using few different document editors. A document editor is a control that implements the [IDocumentEditor](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.idocumenteditor) interface. For example the RadRichTextBox control.
 

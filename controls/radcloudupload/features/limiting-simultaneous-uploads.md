@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Limiting the Simultaneous Uploads
+# {{ site.framework_name }} RadCloudUpload Limiting the Simultaneous Uploads
 
 __RadCloudUpload__ allows you to control the maximum number of uploads that can be running simultaneously. You can do that using the __MaximumSimultaneousUploadsCount__ property. 
 

@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Binding to Dynamic Data
+# {{ site.framework_name }} RadGridView Binding to Dynamic Data
 
 __RadGridView__ provides support of several types of dynamic data. This article will discuss each one of them.
 

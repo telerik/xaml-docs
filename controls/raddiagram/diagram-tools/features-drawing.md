@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Drawing Tools
+# {{ site.framework_name }} RadDiagram Drawing Tools
 
 The __Path Tool__ and __Pencil Tool__ of the __RadDiagram__ enable you to create various types of polyline and "free-hand-drawn" shapes runtime. You can activate them through the __ActiveTool__ property.
 

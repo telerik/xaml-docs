@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# RadImageEditorUI
+# {{ site.framework_name }} RadImageEditor RadImageEditorUI
 
 __RadImageEditor__ comes with a predefined UI out of the box – __RadImageEditorUI__. As it uses XAML only, you can easily customize it for your application, by adding or removing tools that can be executed.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Error Handling
+# {{ site.framework_name }} RadExpressionEditor Error Handling
 
 As of **R3 2021** the RadExpressionEditor exposes an **ExpressionError** event which is fired when an error occurs while parsing an expression. In addition, an **Errors** property was introduced which holds a collection of the errors from a failed parsing operation.
 

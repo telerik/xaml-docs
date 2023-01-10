@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Required Parts
+# {{ site.framework_name }} RadPanelBar Required Parts
 
 The __RadPanelBar__ control needs a set of two control templates - one for the overall look of the control and another one for the individual items.
 

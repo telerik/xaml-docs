@@ -6,7 +6,7 @@ position: 0
 slug: barcode-1d-specifications
 ---
 
-# 1D Barcode Specifications
+# {{ site.framework_name }} RadBarcode 1D Barcode Specifications
 
 One dimensional (1D) barcodes are made up of lines and spaces of various widths that create specific patterns.
 

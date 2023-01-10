@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Customizing Axis Labels
+# {{ site.framework_name }} RadChartView Customizing Axis Labels
 
 The axis labels are automatically generated based on the plotted data and the axis range. The chart allows you to customize their appearance.
 

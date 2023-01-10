@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# ContainerShapes
+# {{ site.framework_name }} RadDiagram ContainerShapes
 
 This tutorial will walk you through the functionality and the main features of the RadDiagramContainerShape. 
 

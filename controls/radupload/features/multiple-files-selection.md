@@ -9,7 +9,7 @@ position: 6
 site_name: Silverlight
 ---
 
-# Multiple Files Selection
+# {{ site.framework_name }} RadUpload Multiple Files Selection
 
 By default the __RadUpload__ allows you to select and upload multiple files. If you want the user to select and upload only one file at a time you can set the __IsMultiselect__ property to __False__ (its default value is __True__).
 

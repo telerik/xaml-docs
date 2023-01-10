@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Dynamic Creation
+# {{ site.framework_name }} RadTimePicker Dynamic Creation
 
 The following snippet creates a TimePicker in XAML and code-behind:
 

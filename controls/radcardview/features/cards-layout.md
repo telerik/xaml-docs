@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Card Layout
+# {{ site.framework_name }} RadCardView Card Layout
 
 RadCardView supports two orientation based layouts arranged in rows or columns.
 

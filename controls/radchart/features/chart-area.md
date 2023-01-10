@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Chart Area
+# {{ site.framework_name }} RadChart Chart Area
 
 
 __ChartArea__ is the place, where the chart graphic is drawn. The __ChartArea__ represents a layout region of the __RadChart__ control that holds certain chart series and axis data. Additionally, the __ChartArea__ exposes events for customizing the [tooltips]({%slug radchart-features-tooltips%}) and making the chart more [interactive]({%slug radchart-features-interactivity%}).

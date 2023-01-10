@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadRibbonView Keyboard Support
 
 __RadRibbonView__ provides a keyboard navigation mechanisms using key tips{% if site.site_name == 'WPF' %} and the arrow keys{% endif %}. You can enable this feature by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadRibbonView__ control to __True__.
 

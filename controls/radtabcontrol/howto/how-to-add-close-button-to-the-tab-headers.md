@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# How to Add Close Button to the Tab Headers
+# {{ site.framework_name }} RadTabControl How to Add Close Button to the Tab Headers
 
 >important Since R2 2019 the RadTabItem supports built-in close and pin buttons. Read more about this in the [Pin and Close]({%slug radtabcontrol-features-pinandclose%}) article.
 

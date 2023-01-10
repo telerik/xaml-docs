@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Document Variables
+# {{ site.framework_name }} RadRichTextBox Document Variables
 
 
 

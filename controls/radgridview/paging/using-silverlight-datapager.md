@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Using Silverlight DataPager
+# {{ site.framework_name }} RadGridView Using Silverlight DataPager
 
 __RadGridView__ supports a great integration with the standard Silverlight __DataPager__. The purpose of this tutorial is to show you how to connect the Toolkit's __DataPager__ with the __RadGridView__.
 

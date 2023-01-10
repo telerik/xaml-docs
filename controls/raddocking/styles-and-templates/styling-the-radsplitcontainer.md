@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Styling the RadSplitContainer
+# {{ site.framework_name }} RadDocking Styling the RadSplitContainer
 
 The [RadSplitContainer]({%slug raddocking-features-split-container%}) allows you to use movable bars to divide the displayed area into resizable parts. This article will demonstrate how to style the control.
 

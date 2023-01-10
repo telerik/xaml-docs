@@ -7,7 +7,7 @@ tags: custom,regex,regular,expression,language,radsyntaxeditor
 position: 3
 ---
 
-# Custom Regex Language
+# {{ site.framework_name }} RadSyntaxEditor Custom Regex Language
 
 It is relatively easy to hardcode a collection of strings (such as the keywords in Python) and only highlight these specific words. Some languages, however, require regular expressions to be used so that highlighting can be applied as expected.
 

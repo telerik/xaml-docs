@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Templates Structure
+# {{ site.framework_name }} RadTreeListView Templates Structure
 
 
 

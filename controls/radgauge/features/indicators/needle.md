@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Needle
+# {{ site.framework_name }} RadGauge Needle
 
 The needle is one of the indicator types, that the __RadGauge__ control introduces. It inherits the __InteractiveIndicator__ class and introduces some specific features.
 

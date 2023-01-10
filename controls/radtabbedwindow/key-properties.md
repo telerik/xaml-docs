@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadTabbedWindow Key Properties
 
 This article will list the key properties provided by the RadTabbedWindow control.
 

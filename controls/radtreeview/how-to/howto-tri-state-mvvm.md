@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Implement a Tri-State CheckBox logic using MVVM
+# {{ site.framework_name }} RadTreeView Implement a Tri-State CheckBox logic using MVVM
 
 This tutorial will guide you through the process of implementing a 'tri-state' __CheckBox__ functionality in the __RadTreeView__ using MVVM.
 

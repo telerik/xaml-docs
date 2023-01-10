@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Control Panel
+# {{ site.framework_name }} RadCardView Control Panel
 
 The control panel of RadCardView allows you to include additional settings UI next to the [Data Field Descriptors Button]({%slug radcardview-visual-structure%}).
 

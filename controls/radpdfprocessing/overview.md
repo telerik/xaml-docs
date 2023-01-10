@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadPdfProcessing
 ---
 
-# Overview
+# {{ site.framework_name }} RadPdfProcessing Overview
 
 
 >**RadPdfProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview).

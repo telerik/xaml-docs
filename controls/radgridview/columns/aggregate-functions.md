@@ -7,8 +7,8 @@ tags: aggregate,functions
 published: True
 position: 2
 ---
- 
-# Aggregate Functions
+
+# {{ site.framework_name }} RadGridView Aggregate Functions
 
 You can display aggregated information for the data in a column by adding aggregate functions to the __AggregateFunctions__ collection of the column. The aggregate functions are included in __Telerik.Windows.Data__ assembly.
 

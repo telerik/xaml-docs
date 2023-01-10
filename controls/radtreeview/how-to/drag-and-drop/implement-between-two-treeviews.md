@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Implement Drag and Drop Between TreeViews
+# {{ site.framework_name }} RadTreeView Implement Drag and Drop Between TreeViews
 
 The goal of this tutorial is to show how to implement drag and drop between two different __RadTreeViews__ bound to heterogeneous data. The first __RadTreeView__ represents a local machine files tree and it displays a hierarchy of business objects containing images and their URIs. The second one represents an application files tree and displays hierarchy of another type of business objects that also containing images and in addition a title. The drop will be allowed only from the local machine tree to the application tree.
 

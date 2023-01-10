@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# CheckBox Support
+# {{ site.framework_name }} RadTreeView CheckBox Support
 
 Telerik __RadTreeView__ provides check boxes/radio buttons displayed next to each item. The __RadTreeView__ allows the user to check/uncheck the nodes and to perform various tasks with the collection of checked nodes. Using the corresponding events, you can entirely handle the node-check action.	  
 

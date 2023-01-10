@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# TextBoxStyle
+# {{ site.framework_name }} RadComboBox TextBoxStyle
 
 The __TextBoxStyle__ property allows you to customize the [input area]({%slug radcombobox-general-information-visual-structure%}) of RadComboBox. 
 

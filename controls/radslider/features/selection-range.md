@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Selection Range
+# {{ site.framework_name }} RadSlider Selection Range
 
 __RadSlider__ supports the functionality of having two thumbs, thus enabling range selection. To enable the selection range you have to set the __IsSelectionRangeEnabled__ property to __true__.
 

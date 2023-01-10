@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Hierarchy Overview
+# {{ site.framework_name }} RadGridView Hierarchy Overview
 
 Besides the trivial tabular data visualization, the __RadGridView__ is capable of displaying hierarchical data in the form of nested tables. In the [Basic Hierarchies]({%slug gridview-basic-hierarchies%}) topic you can find information about the basics of building a hierarchical grid.
 

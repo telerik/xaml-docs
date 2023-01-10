@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Find
+# {{ site.framework_name }} RadPdfViewer Find
 
 __RadPdfViewer__ allows flexible searching in a loaded PDF document. The following article describes the available find methods, as well as how to use the respective for the feature API.
 

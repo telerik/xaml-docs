@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Use Generic GroupDescriptor
+# {{ site.framework_name }} RadGridView Use Generic GroupDescriptor
 
 This help article will show you how to create generic expression GroupDescriptors<T> for __RadGridView__.
 ## Generic GroupDescriptor

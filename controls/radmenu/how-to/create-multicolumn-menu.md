@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Create Multicolumn Menu
+# {{ site.framework_name }} RadMenu Create Multicolumn Menu
 
 The default arrangement of the items in the Popup of __RadMenuItem__/__RadMenuGroupItem__ is in vertical stack. This is because the __ItemsPanel__ of __RadMenuItem__/__RadMenuGroupItem__ is a vertically oriented __StackPanel__. In order to achieve a different layouting of the sub items you have to change the panel, for this scenario you can use either __RadWrapPanel__ or __RadUniformGrid__.        
 

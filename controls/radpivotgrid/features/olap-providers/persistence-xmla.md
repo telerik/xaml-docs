@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Persist XmlaDataProvider
+# {{ site.framework_name }} RadPivotGrid Persist XmlaDataProvider
 
 > The implementation demonstrated in this article can also be reviewed in the [Persist XmlaDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Persistence/XmlaPersistence) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
 

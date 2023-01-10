@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Get aggregates from a group
+# {{ site.framework_name }} RadGridView Get aggregates from a group
 
 This article shows how to obtain aggregates from a specific group in RadGridView.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadAutoSuggestBox Events
 
 This article lists the events specific for RadAutoSuggestBox.    
 

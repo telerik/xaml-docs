@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Binding to XML
+# {{ site.framework_name }} RadTreeView Binding to XML
 
 To bind the __RadTreeView__ to a XML you will need to convert the XML to a collection and then to bind that collection using the __ItemsSource__ property of the __RadTreeView__. This tutorial will show you how to do this.
 

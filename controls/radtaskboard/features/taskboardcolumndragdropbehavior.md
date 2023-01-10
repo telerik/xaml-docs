@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# TaskBoardColumnDragDropBehavior
+# {{ site.framework_name }} RadTaskBoard TaskBoardColumnDragDropBehavior
 
 The __TaskBoardColumnDragDropBehavior__ provides drag-drop capabilities for the standard RadTaskBoard control. It automatically recognizes its host control item type and automatically adds the dragged items that are of this type.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Show First Page On The Right
+# {{ site.framework_name }} RadBook Show First Page On The Right
 
 To show the first page on the right the you should define the __FirstPagePosition__. It is an enumeration and has two values:
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Selection
+# {{ site.framework_name }} RadAutoCompleteBox Selection
 
 The purpose of this article is to show you the basic properties exposed by the __RadAutoCompleteBox__ for working with __selection__.
 

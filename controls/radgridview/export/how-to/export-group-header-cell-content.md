@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Format Group Header Cell Content
+# {{ site.framework_name }} RadGridView Format Group Header Cell Content
 
 By handling the [ElementExportingToDocument]({%slug gridview-export-events%}#elementexportingtodocument) of the RadGridView control, you can specify a custom format for the exported group header cells. For example, you can export the captions of the aggregate results with their formatted value (based on the [ResultFormatString]({%slug gridview-columns-aggregate-functions%}#resultformatstring) of the function) as well as the number of items in the group.
 

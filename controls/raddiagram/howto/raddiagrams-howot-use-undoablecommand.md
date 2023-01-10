@@ -8,7 +8,7 @@ published: True
 position: 20
 ---
 
-# Execute Undoable Action
+# {{ site.framework_name }} RadDiagram Execute Undoable Action
 
 This article will show you how to execute an undoable action. By default the diagram pushes only some actions in its undo/redo stack. Those undoable actions are performed when the user interacts with the diagram using the input device (the mouse or the keyboard for example). If you do something in code as setting a property or calling a method, the action won't be added in the undo/redo stack. To alter this you can use the diagram's __UndoRedoService__ along with the __UndoableDelegateCommnad__ class.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Headers
+# {{ site.framework_name }} RadVirtualGrid Headers
 
 __RadVirtualGrid__ has __Header__ elements for both its rows and columns. A more detailed look over the visual elements of the control can be found in the [Styling and Appearance]({%slug virtualgrid-styling-and-appearance%}) topic. The API of the control provides the __HeaderValueNeeded__ and __HeaderSizeNeeded__ events for setting the values and size of its headers. The properties that the event arguments expose are listed below.
 

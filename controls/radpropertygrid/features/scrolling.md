@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Scrolling into View
+# {{ site.framework_name }} RadPropertyGrid Scrolling into View
 
 Since __RadPropertyGrid__ utilizes UI virtualization, it only initializes those PropertyGridFields that should be currently displayed in the view port. Thus, if one aims to bring some PropertyDefinition's PropertyGridField into view, a standard visual tree traversal will not do the work. 
 

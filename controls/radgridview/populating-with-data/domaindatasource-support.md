@@ -9,7 +9,7 @@ position: 5
 site_name: Silverlight
 ---
 
-# DomainDataSource Support
+# {{ site.framework_name }} RadGridView DomainDataSource Support
 
 The purpose of this tutorial is to show you how to populate __RadGridView__ with data using __DomainDataSource__.  
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Multi-series Charts
+# {{ site.framework_name }} RadChart Multi-series Charts
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Properties
+# {{ site.framework_name }} RadTimeBar Properties
 
 When setting up the RadTimeBar you should keep in mind that the __Start Time__ properties should always be set before the __End Time__ ones. __Example 1__ shows the required precedence of the properties.
 

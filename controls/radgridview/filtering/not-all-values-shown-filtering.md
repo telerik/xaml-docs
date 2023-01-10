@@ -8,7 +8,7 @@ published: False
 position: 4
 ---
 
-# Not all values are shown in the distinct values filter
+# {{ site.framework_name }} RadGridView Not all values are shown in the distinct values filter
 
 __PROBLEM__
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Watermark
+# {{ site.framework_name }} RadMaskedInput Watermark
 
 You can set a watermark content to a __RadMaskedTextInput__ control by using the __EmptyContent__ and __EmptyContentTemplate__ properties. When the __Value__ of a __RadMaskedTextInput__ control is null or empty the __EmptyContent__ will be displayed.			
 

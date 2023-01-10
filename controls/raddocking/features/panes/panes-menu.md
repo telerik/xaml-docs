@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Pane's Menu
+# {{ site.framework_name }} RadDocking Pane's Menu
 
 Each __RadPane__ has a menu, which allow you to perform certain actions against the __RadPane__. By default the __RadMenu__ has the following items:
 

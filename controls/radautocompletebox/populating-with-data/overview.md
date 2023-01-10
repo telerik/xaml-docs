@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadAutoCompleteBox Overview
 
 In order to display items in __RadAutoCompleteBox__, you have to populate the control with some data. You can achieve this by using the ItemsSource property.
 

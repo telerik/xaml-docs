@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Controlling Appearance
+# {{ site.framework_name }} RadDocking Controlling Appearance
 
 There are a number of ways to customize the look and feel of your __RadDocking__ control. This topic covers some of the most useful of these properties.
 

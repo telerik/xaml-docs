@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Spreadsheet UI
+# {{ site.framework_name }} RadSpreadsheet Spreadsheet UI
 
 RadSpreadsheet comes with pre-defined UI that is automatically wired with all of the commands provided by the control and shows its full potential. **RadSpreadsheetRibbon** automatically registers the UI components of **RadSpreadsheet** and keeps them up-to-date after each upgrade.
 

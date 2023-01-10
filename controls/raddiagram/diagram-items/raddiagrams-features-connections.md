@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Connections
+# {{ site.framework_name }} RadDiagram Connections
 
 This tutorial will walk you through the functionality and the main features of the __RadDiagramConnection__. It contains the following sections:
 

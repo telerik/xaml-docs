@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# ToolBar Commands
+# {{ site.framework_name }} RadChat ToolBar Commands
 
 * [Adding a Command](#adding-a-command)
 * [ToolBarCommandTemplateSelector](#toolbarcommandtemplateselector)

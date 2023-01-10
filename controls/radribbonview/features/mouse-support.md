@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Mouse Support
+# {{ site.framework_name }} RadRibbonView Mouse Support
 
 __RadRibbonView__ exposes several useful events, which can help you control the mouse interaction and get notified when mouse events occur. Moreover, by using the mouse you can perform some most common tasks, such as:
 

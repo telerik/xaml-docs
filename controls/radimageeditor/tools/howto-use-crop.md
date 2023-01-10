@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Cropping
+# {{ site.framework_name }} RadImageEditor Cropping
 
 The __CropTool__ is one of the tools that come out-of-the-box with __RadImageEditor__ and gives the opportunity to crop a given area from an image. The tool provides some customization options that are explained in detail in this topic.
 

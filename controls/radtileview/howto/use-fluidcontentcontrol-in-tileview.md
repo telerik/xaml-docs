@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Use RadFluidContentControl with MVVM
+# {{ site.framework_name }} RadTileView Use RadFluidContentControl with MVVM
 
 This article will show you a step-by-step tutorial on how to use `RadFluidContentControl` in `RadTileView` in a data binding scenario. 
 

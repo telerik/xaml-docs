@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Throwing Validation Exceptions
+# {{ site.framework_name }} RadMaskedInput Throwing Validation Exceptions
 
 Masks do not necessarily guarantee that a user's input will represent a valid value for a given type; for example, -9 could be entered for an age in years. You can verify that a user's input represents a valid value by using __Data Validation__. The __RadMaskedInput__ controls provides out-of-the-box support for Data Validation. Data validation, being one of the major points when building line-of-business applications, can help you to easily separate the validation logic from the application's UI.  
 

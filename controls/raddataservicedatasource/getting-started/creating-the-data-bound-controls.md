@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Creating the Data-bound Controls
+# {{ site.framework_name }} RadDataServiceDataSource Creating the Data-bound Controls
 
 Now that we are ready with the service reference and the __DataServiceContext__, let's configure __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__.
 

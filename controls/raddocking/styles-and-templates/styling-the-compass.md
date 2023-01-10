@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Styling the Compass
+# {{ site.framework_name }} RadDocking Styling the Compass
 
 The compasses that you see, when rearranging the containers in the __RadDocking__ control, are represented by the __Compass__ and __RootCompass__ controls. The one shown inside the container under the mouse is the [Compass]({%slug raddocking-features-compass%}#compass) control.
 

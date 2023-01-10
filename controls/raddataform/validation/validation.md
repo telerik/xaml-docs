@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Property level validation
+# {{ site.framework_name }} RadDataForm Property level validation
 
 RadDataForm provides data validation of the user input. Data Validation enables you to take complete control of the data entered in the fields of the data form. 
 

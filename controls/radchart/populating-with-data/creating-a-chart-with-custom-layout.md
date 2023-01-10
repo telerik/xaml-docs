@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Creating a Chart With Custom Layout
+# {{ site.framework_name }} RadChart Creating a Chart With Custom Layout
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Bind Command to the HelpCommand property
+# {{ site.framework_name }} RadRibbonView Bind Command to the HelpCommand property
 
 The "Help" button of the RadRibbonView is not visible by default. To learn how to show it and change its icon, read the [Show Help Button and Change its Image]({%slug radribbonview-howto-show-help-icon-and-change-its-image%}).
 

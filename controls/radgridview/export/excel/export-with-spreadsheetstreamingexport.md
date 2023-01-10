@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# SpreadsheetStreamingExport
+# {{ site.framework_name }} RadGridView SpreadsheetStreamingExport
 
 The __GridViewSpreadStreamExport__ uses the [RadSpreadStreamProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview) library which allows you to create big documents (without loading the entire document in the memory) and export them to the XLSX and CSV formats. 
 

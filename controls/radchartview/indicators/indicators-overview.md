@@ -8,7 +8,7 @@ publish: True
 position: 0
 ---
 
-# Indicators Overview
+# {{ site.framework_name }} RadChartView Indicators Overview
 
 RadChartView provides a rich set of __financial indicators__ which can be used to display a certain overlay on the data. The indicators are used to measure and visualize summarised information or a trend based on the provided data.
 

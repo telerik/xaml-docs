@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Toolbar Buttons Visibility
+# {{ site.framework_name }} RadWebCam Toolbar Buttons Visibility
 
 The toolbar of RadWebCam is the element shown at the bottom part of the control, which holds the camera buttons. The control allows you to hide each button individually or the whole toolbar at once.
 

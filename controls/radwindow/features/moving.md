@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Moving
+# {{ site.framework_name }} RadWindow Moving
 
 The user can move the window by clicking on the __RadWindow__'s header and then drag it around the screen.
 

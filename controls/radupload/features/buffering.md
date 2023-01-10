@@ -9,7 +9,7 @@ position: 9
 site_name: Silverlight
 ---
 
-# Buffering
+# {{ site.framework_name }} RadUpload Buffering
 
 This article describes the buffering mechanism implemented in the RadUpload control.
 

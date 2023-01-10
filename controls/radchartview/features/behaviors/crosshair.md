@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Crosshair
+# {{ site.framework_name }} RadChartView Crosshair
 
 __RadChartView__ provides a crosshair functionality through the __ChartCrosshairBehavior__ class. This behavior display vertical and horizontal lines across the chart's plot area that intersect on the mouse position. The lines are following the mouse position.
 

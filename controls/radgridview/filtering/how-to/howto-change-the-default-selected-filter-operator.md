@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Change the Default Selected Filter Operators
+# {{ site.framework_name }} RadGridView Change the Default Selected Filter Operators
 
 To change the default selected filter operators, you have to handle the __FilterOperatorsLoading__ event of RadGridView and set them in the event arguments. When the [FilteringMode]({%slug gridview-filtering-howto-configure-the-filtering-mode%}) is __FilterRow__, you only need to set the first operator.
 

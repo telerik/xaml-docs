@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Customizing the CellSelectionTemplate
+# {{ site.framework_name }} RadGanttView Customizing the CellSelectionTemplate
 
 The __CellSelectionTemplate__ is the Template that is displayed when a cell is selected with a single mouse click.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Chart Series Overview
+# {{ site.framework_name }} RadChartView Chart Series Overview
 
 The data visualization in __RadChartView__ is done by a hierarchy of classes that inherit from the __ChartSeries__ class. Each series has a collection of data points, that is the view model of the data. A series may have its data populated directly through the __DataPoints__ property (unbound mode) or by data-binding to an arbitrary __IEnumerable__ instance through the __ItemsSource__ property. When a series is data-bound it will internally populate its DataPoints collection. A series may work either in bound or unbound mode, but not in both.
 

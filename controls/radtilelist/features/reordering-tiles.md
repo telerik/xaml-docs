@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Reordering the Tiles
+# {{ site.framework_name }} RadTileList Reordering the Tiles
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Formatting via a Sample UI
+# {{ site.framework_name }} RadRichTextBox Formatting via a Sample UI
 
 If you want to allow the user to edit and format the content of __RadRichTextBox__, you have to create UI and use the API exposed by __RadRichTextBox__. The __API__ exposes methods (like __ToggleBold()__, __ToggleItalic()__ etc.) that modify the text in the control when called. **Example 1** shows a sample code that creates UI for making the text bold, italic and underlined.
         

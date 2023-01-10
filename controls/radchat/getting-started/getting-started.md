@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadChat Getting Started
 
 This topic will guide you through the process of creating a sample application containing __RadChat__.
 

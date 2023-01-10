@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Offsets
+# {{ site.framework_name }} RadCoverflow Offsets
 
 __Offsets__
 

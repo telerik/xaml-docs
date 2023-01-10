@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to Change the Color of PivotMap Groups
+# {{ site.framework_name }} RadTreeMap How to Change the Color of PivotMap Groups
 
 This topic will show you how to change the colors of the PivotMap groups. 
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Events
+# {{ site.framework_name }} RadPropertyGrid Events
 
 This article provides more detailed information about the events exposed by the __RadPropertyGrid__ control. As it inherits from the **Control** class, it also inherits all of its public events. A full list of the inherited events can be found [here](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control#events). 
 

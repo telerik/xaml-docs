@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadGanttView Overview
 
 This topic covers the specific events exposed by __RadGanttView__.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Text Functions
+# {{ site.framework_name }} RadExpressionEditor Text Functions
 
 As of R1 2019, the RadExpression control also provides a number of functions for **string** manipulation. They can be found in the new **Text** subcategory illustrated in **Figure 1**.
  

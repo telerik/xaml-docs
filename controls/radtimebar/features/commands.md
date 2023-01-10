@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Commands Overview
+# {{ site.framework_name }} RadTimeBar Commands Overview
 
 RadTimeBar provides a set of built-in commands that enables you to further control its behavior and keep your logic separated from the UI layout.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Setting up AutoComplete
+# {{ site.framework_name }} RadComboBox Setting up AutoComplete
 
 For more information about the __RadComboBox__'s __AutoComplete__ feature, please take a look at the [AutoComplete]({%slug radcombobox-features-autocomplete%}) topic in the __Features__ section.
 

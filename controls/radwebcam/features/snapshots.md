@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Snapshots
+# {{ site.framework_name }} RadWebCam Snapshots
 
 The `RadWebCam` control allows you to snapshot the currently displayed video feed.
 

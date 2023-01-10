@@ -9,7 +9,7 @@ position: 8
 site_name: Silverlight
 ---
 
-# Create Custom Upload Handler
+# {{ site.framework_name }} RadUpload Create Custom Upload Handler
 
 In order to create a basic Upload Handler you should [create a ASHX handler class](#Defining_an_Upload_Service), which derives from the __RadUploadHandler__ class. If you want to implement some custom behavior you have to override some of the methods of the __RadUploadHandler__ class and place your custom logic in them.
 

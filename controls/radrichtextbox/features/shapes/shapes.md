@@ -8,7 +8,7 @@ position: 0
 published: True
 ---
 
-# Shapes
+# {{ site.framework_name }} RadRichTextBox Shapes
 
 The Shapes feature allows you to easily insert shapes like circles, boxes, arrows, and many others directly in your documents. You can style the inserted shapes by using gradient fills and various patterns outlines, as well as changing the size of the shapes and rotating them. 
 

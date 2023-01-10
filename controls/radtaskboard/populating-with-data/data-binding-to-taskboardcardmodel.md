@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Binding to TaskBoardCardModel
+# {{ site.framework_name }} RadTaskBoard Binding to TaskBoardCardModel
 
 The RadTaskBoard control provides a __TaskBoardCardModel__ ViewModel class designed to serve as a base ViewModel for a __RadTaskBoardCard__ element. This class is designed to expose the most required properties that allow you to track your task life cycle.
 

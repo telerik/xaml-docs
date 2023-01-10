@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the RadRibbonView
+# {{ site.framework_name }} RadRibbonView Styling the RadRibbonView
 
 The __RadRibbonView__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.			
 

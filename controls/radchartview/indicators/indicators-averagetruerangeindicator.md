@@ -9,7 +9,7 @@ position: 2
 
 ---
 
-# AverageTrueRangeIndicator
+# {{ site.framework_name }} RadChartView AverageTrueRangeIndicator
 
 AverageTrueRangeIndicator measures the level of volatility across the plotted data. 
 

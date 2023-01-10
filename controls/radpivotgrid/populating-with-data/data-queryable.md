@@ -9,7 +9,7 @@ position: 3
 site_name: WPF
 ---
 
-# Using QueryableDataProvider
+# {{ site.framework_name }} RadPivotGrid Using QueryableDataProvider
 
 __QueryableDataProvider__ is one of the data source providers that can be used with __RadPivotGrid__ and __RadPivotFieldList__. __QueryableDataProvider__ provides an easy way to use data from database with __RadPivotGrid__. In fact any collection that implements *IQueryable* interface can be used as a source of __QueryableDataProvider__.      
 

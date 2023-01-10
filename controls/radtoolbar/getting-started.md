@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadToolBar Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains __RadToolBar__. 
 

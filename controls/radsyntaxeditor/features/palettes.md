@@ -7,7 +7,7 @@ tags: palettes,radsyntaxeditor
 position: 6
 ---
 
-# Palettes
+# {{ site.framework_name }} RadSyntaxEditor Palettes
 
 <style>
 .palette-color {

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Span
+# {{ site.framework_name }} RadRichTextBox Span
 
 
 

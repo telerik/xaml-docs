@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Use MVVM in RadToolbar
+# {{ site.framework_name }} RadToolBar Use MVVM in RadToolbar
 
 This example shows how to use the __RadToolBar__ control with the Model-View-ViewModel (MVVM) pattern and a custom **DataTemplateSelector**.
 

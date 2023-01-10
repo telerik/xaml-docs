@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Selection
+# {{ site.framework_name }} RadTimeline Selection
 
 This help topic will demonstrate how you can make the timeline more interactive by enabling and configuring the selection feature.      
 

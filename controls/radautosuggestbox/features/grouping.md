@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Grouping
+# {{ site.framework_name }} RadAutoSuggestBox Grouping
 
 RadAutoSuggestBox allows you to visualize groups when ICollectionView with GroupDescriptors is used as an ItemsSource.
 

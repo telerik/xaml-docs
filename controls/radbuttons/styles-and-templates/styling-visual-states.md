@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling Visual States
+# {{ site.framework_name }} RadButtons Styling Visual States
 
 This article will show you how to change the default colors applied when you enter the different visual states of [RadButton]({%slug radbuttons-features-button%}) - __MouseOver, Pressed, Disabled__, etc.
 

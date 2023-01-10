@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the Axis Minor Tick
+# {{ site.framework_name }} RadChart Styling the Axis Minor Tick
 
 
 

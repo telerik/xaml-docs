@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Templates Structure
+# {{ site.framework_name }} RadPropertyGrid Templates Structure
 
 Like most UI controls, RadPropertyGrid allows you to template it in order to change the control from inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with: 
 

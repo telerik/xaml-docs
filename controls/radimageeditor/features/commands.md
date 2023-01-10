@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Commands
+# {{ site.framework_name }} RadImageEditor Commands
 
 The commands of RadImageEditor allows you to execute actions over the image element, like rotate, flip, undo and more.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# InlineUIContainer
+# {{ site.framework_name }} RadRichTextBox InlineUIContainer
 
 
 

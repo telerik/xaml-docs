@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Styling the Ribbon GroupChrome
+# {{ site.framework_name }} RadRibbonView Styling the Ribbon GroupChrome
 
 >tip In order to style the __GroupChrome__ control, which represents the uncollapsed group, you have to generate the default style for the __RadRibbonGroup__
 {% if site.site_name == 'WPF' %}and modify its template{% endif %}. To see how to do it take a look at the [Styling the Ribbon Group]({%slug radribbonview-styling-ribbongroup%}) topic.

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Colors
+# {{ site.framework_name }} RadPanelBar Colors
 
 You can change the colors of some elements comprising the __RadPanelBar__ by modifying some of the properties of the control. In case you need to make more drastic changes, you can create your own custom control template and change completely the look and feel of the control.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Basic Sorting
+# {{ site.framework_name }} RadGridView Basic Sorting
 
 __RadGridView__ provides you with a built-in sorting functionality, which allows the user to easily sort the data by one or several columns. 
 

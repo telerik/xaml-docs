@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customize PDF Rendering
+# {{ site.framework_name }} RadPdfViewer Customize PDF Rendering
 
 
 

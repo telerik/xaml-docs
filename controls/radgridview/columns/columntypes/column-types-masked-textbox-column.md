@@ -8,7 +8,7 @@ published: False
 position: 9
 ---
 
-# Masked TextBox Column
+# {{ site.framework_name }} RadGridView Masked TextBox Column
 
 __GridViewMaskedTextBoxColumn__ derives from [GridViewBoundColumnBase]({%slug radgridview-columns-column-types-boundcolumnbase%}), which means that it inherits all of the functionality too.  In edit mode every field of the column will be represented by a __MaskedTextBox__ control, unless a __CellEditTemplate__ is defined for the column. This allows you to add masks for the inputed data as IP Address, Specific code etc.
 

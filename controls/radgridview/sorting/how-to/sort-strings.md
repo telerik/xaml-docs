@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Sorting Strings as Numbers
+# {{ site.framework_name }} RadGridView Sorting Strings as Numbers
 
 In the .NET Platform, strings are not compared like numbers. For example, the string "100" is less than the string "2" because it compares strings in alphabetic order. 
 

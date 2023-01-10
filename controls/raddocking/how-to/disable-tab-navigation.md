@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# How to Disable the Tab Navigation of RadDocking Elements
+# {{ site.framework_name }} RadDocking How to Disable the Tab Navigation of RadDocking Elements
 
 By default, when tab navigation is used, it is possible to focus __RadDocking__ itself as well as some of its elements such as GridResizer and AutoHideArea.
 

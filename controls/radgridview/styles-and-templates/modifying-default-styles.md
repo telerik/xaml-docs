@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Modifying Default Styles
+# {{ site.framework_name }} RadGridView Modifying Default Styles
 
 This article will show you two ways to modify the default style of a control:
 

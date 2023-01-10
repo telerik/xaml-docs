@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customizing the BoxesItemTemplate
+# {{ site.framework_name }} RadAutoCompleteBox Customizing the BoxesItemTemplate
 
 In __RadAutoCompleteBox__ you can customize the way the items are displayed in the input area of the control.
 

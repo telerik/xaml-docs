@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Degraded Performance
+# {{ site.framework_name }} RadGridView Degraded Performance
 
 You might notice a reduced performance of RadGridView control. Below are listed some possible reasons:
 

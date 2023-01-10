@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Annotations
+# {{ site.framework_name }} RadPdfViewer Annotations
 
 
 

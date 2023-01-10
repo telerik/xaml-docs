@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Bind to Object Data
+# {{ site.framework_name }} RadPanelBar Bind to Object Data
 
 __RadPanelBar__ can be bound to a collection of objects and dynamically create its collection of items. The collection that is provided as ItemsSource can contain either __RadPanelBarItems__ or any other type of objects. If the ItemsSource collection contains __RadPanelBarItems__, they are directly made children of the __RadPanelBar__ control. Otherwise, the objects in the ItemsSource collection are wrapped in __RadPanelBarItem__ objects and are pushed into the __Items__ collection of the __RadPanelBar__ control.
 

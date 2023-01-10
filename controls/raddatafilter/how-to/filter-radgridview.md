@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Filter RadGridView
+# {{ site.framework_name }} RadDataFilter Filter RadGridView
 
 
 See this [article]({%slug datafilter-getting-started%}#filter-radgridview) for more information.

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Colorizers
+# {{ site.framework_name }} RadHeatMap Colorizers
 
 ## Colorizers in a Horizontal/Vertical Definition
 

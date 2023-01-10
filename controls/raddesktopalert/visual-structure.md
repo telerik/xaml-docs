@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadDesktopAlert Visual Structure
 
 This article describes all the visual elements and terms used in __RadDesktopAlert__ control. 
 

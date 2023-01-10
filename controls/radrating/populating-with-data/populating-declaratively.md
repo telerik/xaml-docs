@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Declaratively
+# {{ site.framework_name }} RadRating Declaratively
 
 This tutorial will walk you through the common task of populating __RadRating__ with __RadRatingItems__ declaratively.
 

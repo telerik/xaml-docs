@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Mini Map
+# {{ site.framework_name }} RadMap Mini Map
 
 With the __Q2 2012__ release we have introduced the Mini Map feature to the RadMap control. In this help topic you can learn the following:       
 

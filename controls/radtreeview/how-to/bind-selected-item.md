@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Bind to a Selected Item
+# {{ site.framework_name }} RadTreeView Bind to a Selected Item
 
 __RadTreeView__ exposes __SelectedItem__ property, which is a __DependencyProperty__ and can be used in a data binding.
 

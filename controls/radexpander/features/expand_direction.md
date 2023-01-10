@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Expand Direction
+# {{ site.framework_name }} RadExpander Expand Direction
 
 The __ExpandDirection__ property gets or sets the direction in which the content would expand. This property is an enumeration which exposes four values: __Down, Left, Right, Up__.
 

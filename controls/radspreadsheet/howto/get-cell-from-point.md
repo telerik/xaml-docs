@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Get cell from Point
+# {{ site.framework_name }} RadSpreadsheet Get cell from Point
 
 This article describes how you can get a cell index by using a specific location on the screen.
 

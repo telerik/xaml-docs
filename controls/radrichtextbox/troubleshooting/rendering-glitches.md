@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Rendering Glitches
+# {{ site.framework_name }} RadRichTextBox Rendering Glitches
 
 RadRichTextBox supports two different rendering mechanisms. This topic explains what you can expect from them and how you can switch between the two options.
 

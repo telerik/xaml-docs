@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# QueryableDateTimeGroupDescription
+# {{ site.framework_name }} RadPivotGrid QueryableDateTimeGroupDescription
 
 In this article you will learn how to use a QueryableDateTimeGroupDescription with your DateTime and DateTimeOffset data.
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Templating the ToolTip
+# {{ site.framework_name }} RadScheduleView Templating the ToolTip
 
 This help article will show you how to set a custom Appointment ToolTip by using the __ToolTipTemplate__ property of __RadScheduleView__.      
 

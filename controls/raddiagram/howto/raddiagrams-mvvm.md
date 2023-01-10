@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Use MVVM in RadDiagram
+# {{ site.framework_name }} RadDiagram Use MVVM in RadDiagram
 
 The following help article will demonstrate how to bind the __RadDiagram__ in MVVM scenario using the extension ViewModels which are part of the __Telerik.Windows.Controls.Diagrams.Extensions.dll__ project.			
 

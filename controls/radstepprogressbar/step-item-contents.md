@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Step Item Contents
+# {{ site.framework_name }} RadStepProgressBar Step Item Contents
 
 The RadStepProgressBarItem elements allows you to add steps into the control. This renders a step visual for each RadStepProgressBarItem. Additionally, text or any other UI can be included for each step.
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Selection Behavior
+# {{ site.framework_name }} RadGanttView Selection Behavior
 
 The RadGanttView control provides you with selection functionality, which allows the user to select one or more items at a time. To control this selection mechanism, you must set the **SelectionBehavior** property.
 

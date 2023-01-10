@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Transitions
+# {{ site.framework_name }} RadTransitionControl Transitions
 
 The __RadTransitionControl__ applies a transition effect to its content when it gets changed. There are several built-in effects, but you are able to create your own via the __HLSL__ language. 
 

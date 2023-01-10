@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Create a Custom Tool
+# {{ site.framework_name }} RadImageEditor Create a Custom Tool
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Indeterminate State Animation Customization
+# {{ site.framework_name }} RadCircularProgressBar Indeterminate State Animation Customization
 
 The indeterminate state animation of `RadCircularProgressBar` is represented by the `AnimationManager` class. To customize the default animation, create a new `RadDoubleAnimation` object instance for the `AnimationManager.AnimationSelector` attached property. To apply the custom animation correctly, set the `AnimationName` property's value to __IndeterminateIndicatorAnimation__.
 

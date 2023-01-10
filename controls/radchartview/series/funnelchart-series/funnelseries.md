@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# FunnelSeries
+# {{ site.framework_name }} RadChartView FunnelSeries
 
 The __FunnelSeries__ displays a single series of data in progressively decreasing or increasing proportions, organized in segments, where each segment represents the value for the particular item from the series. The size of each segment is determined by the value of the corresponding series item.
 

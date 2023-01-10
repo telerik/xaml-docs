@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Gauge Range
+# {{ site.framework_name }} RadGauge Gauge Range
 
 The __RadGauge__ control allows you to define ranges for your scales. The range is used for wrapping a specific section of the scale, that meets a condition.
 

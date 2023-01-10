@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadCallout Events
 
 This article lists the events of the RadCallout control when placed inside a Popup. Subscribing to the events of the control can be achieved through the __CalloutPopupService__ class. The service exposes several methods to add/remove event handlers for the RadCallout control events. 
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# ScrollBar Functionality
+# {{ site.framework_name }} RadLegend ScrollBar Functionality
 
 In this article you can find how to add scroll bar functionality to the control.
 

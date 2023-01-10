@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadChart Template Structure
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Enable Only Drop Inside
+# {{ site.framework_name }} RadTreeView Enable Only Drop Inside
 
 This tutorial demonstrates how to enable dropping inside the __RadTreeViewItems__, but not around them. 
 

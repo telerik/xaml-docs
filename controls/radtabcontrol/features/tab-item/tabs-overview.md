@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadTabControl Overview
 
 __RadTabControl__ is a container for multiple tab items. Each tab item represents an instance of the class __Telerik.Windows.Controls.RadTabItem__ and it is the only building block of the tab control. The tab control is made of two parts: the tab header and the content area. The tab headers are always visible at the left, top, right or bottom of the tab control, while the content area is visible only when the tab item is selected. For more information see the [visual structure topic]({%slug radtabcontrol-visual-structure%}) of the tab control.				
 

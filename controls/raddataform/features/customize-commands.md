@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Customizing Commands
+# {{ site.framework_name }} RadDataForm Customizing Commands
 
 This article will demonstrate how to customize RadDataForm's commands in an MVVM-friendly way as well as how to execute them manually. 
 

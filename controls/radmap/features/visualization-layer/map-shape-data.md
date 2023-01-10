@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Map Shape Data
+# {{ site.framework_name }} RadMap Map Shape Data
 
 The visualization engine based on the VisualizationLayer class introduces a new approach that separates the geographical data and its visualization. The new map shape data classes are not dependency objects. This allows them to be created in the background thread. The unified map shape visualization engine allows attaching to any input event supported by the [ContentPresenter](http://msdn.microsoft.com/en-us/library/system.windows.controls.contentpresenter.aspx) class to the map shape visual presentation.      
 

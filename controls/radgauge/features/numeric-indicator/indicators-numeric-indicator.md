@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Numeric Indicator
+# {{ site.framework_name }} RadGauge Numeric Indicator
 
 The __Numeric Indicator__ is used for displaying numeric values as digits. It does not inherit the __IndicatorBase__ class as the other indicators do, but provides functionality similar to theirs. Here is a list of the features of the __Numeric Indicator__:      
 

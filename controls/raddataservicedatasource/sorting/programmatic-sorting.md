@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Programmatic Sorting
+# {{ site.framework_name }} RadDataServiceDataSource Programmatic Sorting
 
 Programmatic sorting is performed by adding a __SortDescriptor__ object to the __SortDescriptors__ collection of the control. 
 

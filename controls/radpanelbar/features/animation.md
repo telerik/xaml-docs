@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Animation
+# {{ site.framework_name }} RadPanelBar Animation
 
 By default the RadPanelBar control's items are expanded and collapsed without an animation. To enable the expand\collapse animations you can use the **telerik:AnimationManager.IsAnimationEnabled** attached property. To customize the animation you could use the **PanelBarExpandCollapseAnimation** object.
 

@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# Item Alignment
+# {{ site.framework_name }} RadToolBar Item Alignment
 
 Since our __Q3 2014__ official release the __RadToolBar__ provides a mechanism to customize the alignment of the elements inside it. The default alignment is left. This means that the first element is hosted on the leftmost side of the toolbar and each next is visualized on the right of the previous one. Refer to Figure 1 for clarification.
 

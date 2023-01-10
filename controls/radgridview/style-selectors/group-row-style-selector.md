@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# GroupRowStyleSelector
+# {{ site.framework_name }} RadGridView GroupRowStyleSelector
 
 You can use RadGridView's **GroupRowStyleSelector** property if you need to style group rows differently based on a specific condition.
 

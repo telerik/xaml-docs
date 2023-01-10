@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# CollectionEditors
+# {{ site.framework_name }} RadPropertyGrid CollectionEditors
 
 __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that provide UI for editing collections and their items. Currently they are used in the domain of RadPropertyGrid as default editors for **IEnumerable** type-compatible properties, but they can be successfully used out of this context as standalone editors:
 

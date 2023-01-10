@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Indicators
+# {{ site.framework_name }} RadSparkLine Indicators
 
 The controls from the RadSparkline suite support several types of indicators which can be used to highlight the plotted data.
 

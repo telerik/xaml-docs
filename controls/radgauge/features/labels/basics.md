@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Basics
+# {{ site.framework_name }} RadGauge Basics
 
 The scales, derived from the [GraphicScale]({%slug radgauge-features-linear-and-radial-scales-basics%}) class, allow you to modify and configure the labels displayed next to the ticks.
         This is done by using the __Label__ related properties of the scale. These properties allow you to modify the following things:

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Persisting Settings
+# {{ site.framework_name }} RadDataFilter Persisting Settings
 
 You can save and load settings of RadDataFilter by using the [RadPersistenceFramework]({%slug persistence-framework-overview%}) control.
 

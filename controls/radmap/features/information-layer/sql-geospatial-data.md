@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# SQL Geospatial Data
+# {{ site.framework_name }} RadMap SQL Geospatial Data
 
 RadMap supports binding to SQL Geospatial data. The control allows generating map shapes from any *IEnumerable* instance (for example a row collection) which contains a property with geospatial data in __Wkt__ (Well known text) or __Wkb__ (Well known binary) format. The __Source__ property and the __GeospatialPropertyName__ property are used to specify the *IEnumerable* instance and the name of the property which contains the Geospatial data.        
 

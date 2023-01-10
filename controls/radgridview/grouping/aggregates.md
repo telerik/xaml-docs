@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Group Aggregates
+# {{ site.framework_name }} RadGridView Group Aggregates
 
 When you are using [programmatic grouping]({%slug gridview-programmatic-grouping%}), you can add aggregate functions to the group rows. These functions allow you to display information about the data in the group such as first item, last item, count of items etc. 
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Data Validation
+# {{ site.framework_name }} RadSpreadsheet Data Validation
 
 Data validation is a feature of __RadSpreadsheet__ that helps you define restrictions on what data can be entered in a cell. This is achieved by defining data validation rules which consist of a rule type, one or more arguments and a comparison operator for some of the rule types. You can specify messages that users will see before editing a cell or after entering invalid data.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Binding to Collection
+# {{ site.framework_name }} RadComboBox Binding to Collection
 
 This tutorial will guide you through the process of binding a __RadComboBox__ to a collection of business objects. It also demonstrates two ways of customizing the visualization of the bound items.
 

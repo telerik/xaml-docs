@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Intervals Formatters
+# {{ site.framework_name }} RadTimeline Intervals Formatters
 
 Every __RadTimeline's__ interval has a preset collection of formatting strings that creates the string representation of a given date to match the interval. RadTimeline automatically chooses the appropriate string formatter according to the control size and visible range.
 

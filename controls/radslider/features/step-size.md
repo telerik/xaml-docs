@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Step size
+# {{ site.framework_name }} RadSlider Step size
 
 
 

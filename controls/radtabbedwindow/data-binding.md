@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadTabbedWindow Data Binding
 
 This article demonstrates how to bind the RadTabbedWindow control to a collection of business objects.
 

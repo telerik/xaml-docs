@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Sorting
+# {{ site.framework_name }} RadPivotGrid Sorting
 
 In this article we will explain how to use sorting when your data is from OLAP Cube.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Change Background for Disabled Grid Elements
+# {{ site.framework_name }} RadGridView Change Background for Disabled Grid Elements
 
 The goal of this tutorial is to show you how to customize the look of disabled __GridViewCell__ elements. The approaches for doing so differ depending on whether you are using the older themes (which use visual states) or the newer ones (which use triggers).
 

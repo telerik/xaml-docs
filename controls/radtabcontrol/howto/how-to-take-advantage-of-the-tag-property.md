@@ -8,7 +8,7 @@ published: False
 position: 1
 ---
 
-# How to Take Advantage of the Tag Property
+# {{ site.framework_name }} RadTabControl How to Take Advantage of the Tag Property
 
 
 

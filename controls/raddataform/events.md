@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadDataForm Events
 
 This topic will describe the various events exposed by **RadDataForm**.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Window Header
+# {{ site.framework_name }} RadWindow Window Header
 
 The __RadWindow__ allows you to display a header in the top part of it. To specify the header you can use either the __Header__ or the __HeaderTemplate__ properties.
 

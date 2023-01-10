@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Selection
+# {{ site.framework_name }} RadVirtualGrid Selection
 
 This article will go through the selection mechanisms provided by __RadVirtualGrid__.
 

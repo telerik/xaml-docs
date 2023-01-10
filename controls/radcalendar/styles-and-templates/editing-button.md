@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Editing the CalendarButton Style
+# {{ site.framework_name }} RadCalendar Editing the CalendarButton Style
 
 Most of the calendar surface is taken up by the calendar buttons and most of the user interaction involves them as well.
 

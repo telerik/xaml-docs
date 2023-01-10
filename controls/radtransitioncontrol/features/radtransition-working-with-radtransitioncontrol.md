@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Working with the RadTransitionControl
+# {{ site.framework_name }} RadTransitionControl Working with the RadTransitionControl
 
 Tha __RadTransitionControl__ is a __ContentControl__ that can apply a transition effect to its content, when it gets changed. The content of the __RadTransitionControl__ can vary from simple strings to complex __UserControls__, as for any __ContentControl__. The transition effect can be chosen among the built-in ones or you can create a custom one.
 

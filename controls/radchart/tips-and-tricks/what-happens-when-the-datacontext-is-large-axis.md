@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# What happens when you have more than 200 items?
+# {{ site.framework_name }} RadChart What happens when you have more than 200 items?
 
 In a scenario with big number of items (UIElements) the performance of the application might get down. In this case you can use the sampling feature of the chart. In general, sampling is combining several data items into a single object with a value based on a specific function - as sum, average, minimum, etc. You can learn more about the feature in the [Sampling]({%slug radchart-features-sampling%}) help article.
 

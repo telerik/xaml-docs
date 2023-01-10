@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Interact with the User before the Page Changes
+# {{ site.framework_name }} RadDataPager Interact with the User before the Page Changes
 
 While developing an UI, which contains paging, you might want to ensure that there are no unfinished actions by the user, such as unsubmitted data, data in edit mode and others, on the current page. In this case, it's common to prompt the users if they surely want to continue. If the user refuses to continue, you should prevent the paging from happening. The place, where the prompt should be implemented, is the event handler for the __PageIndexChanging__ event.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to Change the Tab Items Orientation
+# {{ site.framework_name }} RadTabControl How to Change the Tab Items Orientation
 
 See how to change the tab orientation [here]({%slug radtabcontrol-getting-started%}).        
 

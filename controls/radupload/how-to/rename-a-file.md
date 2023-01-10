@@ -9,7 +9,7 @@ position: 3
 site_name: Silverlight
 ---
 
-# Rename a File
+# {{ site.framework_name }} RadUpload Rename a File
 
 You can modify the name of the file on both the client and the server side of your application. The following topic will show you how to do this.
 

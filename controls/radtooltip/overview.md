@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadToolTip
 ---
 
-# Overview
+# {{ site.framework_name }} RadToolTip Overview
 
 __RadToolTip__ is a set of controls that allows you to specify and show tooltips. It consists of:
 

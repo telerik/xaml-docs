@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Drag and Drop with RadScheduleView
+# {{ site.framework_name }} RadScheduleView Drag and Drop with RadScheduleView
 
 __RadScheduleView__ uses __DragDropManager__ to implement drag and drop of appointments. In order to add some custom logic for drag and drop, you can inherit the __Telerik.Windows.Controls.ScheduleViewDragDropBehavior__ class. The class provides several methods that you can override to implement custom drag and drop functionality. This article will demonstrate all of the available methods.
 

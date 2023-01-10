@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadCalculator Keyboard Support
 
 
 __RadCalculator__ does allow you to use all relevant keys on your keyboard and insert any valid input or perform easily the operations.

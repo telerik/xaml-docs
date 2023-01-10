@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Edit Events
+# {{ site.framework_name }} RadGridView Edit Events
 
 
 The edit events are ment to support the editing data process. They occur when the data in the __RadGridView__ is about to be edited or has been already edited by the user.

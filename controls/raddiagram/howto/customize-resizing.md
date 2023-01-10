@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Disable Horizontal or Vertical Shape Resizing
+# {{ site.framework_name }} RadDiagram Disable Horizontal or Vertical Shape Resizing
 
 In __RadDiagram__ each __RadDiagramItem__ can be resized. This operation is internally implemented by a __ResizingService__.			
 

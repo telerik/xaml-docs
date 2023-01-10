@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Add Additional Content near the Help button
+# {{ site.framework_name }} RadRibbonView Add Additional Content near the Help button
 
 The purpose of this tutorial is to show you how to add additional content near the help button.
 

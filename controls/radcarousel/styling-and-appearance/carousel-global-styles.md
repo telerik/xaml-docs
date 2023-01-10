@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Global Styles
+# {{ site.framework_name }} RadCarousel Global Styles
 
 Global styles allow easy styling of any control and this topic will show you how to redefine the visual appearance of the carousel items using this technique.
 Similarly to all __ItemsControls__, the RadCarousel has an item container, called __CarouselItem__ that serves as a wrapper for the data that gets visualized. First we will create a new style for the item container and after that we will create a new style for the data itself.

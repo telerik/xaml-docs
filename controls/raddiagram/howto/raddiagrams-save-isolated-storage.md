@@ -9,7 +9,7 @@ position: 5
 site_name: Silverlight
 ---
 
-# Save the Diagram in Isolated Storage
+# {{ site.framework_name }} RadDiagram Save the Diagram in Isolated Storage
 
 The following article will show how you can save the RadDiagram in IsolatedStorage and load it.       
 

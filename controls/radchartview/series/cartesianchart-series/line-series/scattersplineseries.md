@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# ScatterSplineSeries
+# {{ site.framework_name }} RadChartView ScatterSplineSeries
 
 This series is visualized on the screen as a smooth line connecting all data points. As all scatter series, this one also requires the RadCartesianChart to define two LinearAxis as vertical and horizontal axis.
       

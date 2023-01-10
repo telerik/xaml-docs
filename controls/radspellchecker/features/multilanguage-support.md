@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Multilanguage Support
+# {{ site.framework_name }} RadSpellChecker Multilanguage Support
 
 
 

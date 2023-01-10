@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Data Binding to ADO.NET Data Service
+# {{ site.framework_name }} RadChart Data Binding to ADO.NET Data Service
 
 
 

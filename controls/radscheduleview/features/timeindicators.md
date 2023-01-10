@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# TimeIndicators
+# {{ site.framework_name }} RadScheduleView TimeIndicators
 
 __RadScheduleView__ provides the option to visually mark a specific time on the timeline.
 

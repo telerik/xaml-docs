@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Layout Modes
+# {{ site.framework_name }} RadRichTextBox Layout Modes
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# RadDocumentMerger Overview
+# {{ site.framework_name }} RadRichTextBox RadDocumentMerger Overview
 
 **RadDocumentMerger** introduces an API that enables users to merge two RadDocument instances or append them to each other. When performing merging operations, you may encounter conflicts between the different settings of two documents. Such conflicts can be resolved/avoided by changing the settings of **RadDocumentMerger**.
 

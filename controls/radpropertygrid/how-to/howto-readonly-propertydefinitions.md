@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Read Only PropertyDefinition
+# {{ site.framework_name }} RadPropertyGrid Read Only PropertyDefinition
 
 This article shows how to control which property definitions to be read only.
 

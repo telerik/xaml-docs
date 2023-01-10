@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Center the Header of the RadWindow
+# {{ site.framework_name }} RadWindow Center the Header of the RadWindow
 
 In order to allow the content in the header to be centered, you can set a UIElement (for example TextBlock) with HorizontalAlignment="Center" as the __Header__ of the RadWindow. This is demonstrated in __Example 1__.
 

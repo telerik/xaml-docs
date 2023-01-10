@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Segments
+# {{ site.framework_name }} RadCircularProgressBar Segments
 
 `RadCircularProgressBar` allows you to split the progress track into multiple segments. To specify the segments' amount, set the `Segments` property to the desired count. This property is of type `int` and has a default value of __1__.
 

@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Alternation
+# {{ site.framework_name }} RadVirtualGrid Alternation
 
 __RadVirtualGrid__ allows alternating its rows and columns when readability needs to be improved. This article covers the mechanism in details.
 

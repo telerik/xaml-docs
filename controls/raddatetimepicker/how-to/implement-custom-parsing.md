@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# How to implement custom parsing
+# {{ site.framework_name }} RadDateTimePicker How to implement custom parsing
 
 The purpose of this tutorial is to show you how to use the __RadDateTimePicker__, implementing your own logic for parsing the value in a way that suits your needs. 
 

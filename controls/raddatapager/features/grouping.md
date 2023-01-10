@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Paging before Grouping
+# {{ site.framework_name }} RadDataPager Paging before Grouping
 
 
 There are two ways to do grouping with paging. One is to __group before paging__ and other is to __page before grouping__. The first one is the default behaviour.

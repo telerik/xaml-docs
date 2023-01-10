@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# Chart Extensions
+# {{ site.framework_name }} RadChart Chart Extensions
 
 
 

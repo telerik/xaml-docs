@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Styling Indent Cells
+# {{ site.framework_name }} RadGridView Styling Indent Cells
 
 __RadGridView__ exposes different [indent cells](#indent-cells) and [indicator presenters](#indicator-presenters) depending on its current state - being grouped, in a hierarchy, or displaying the corresponding footers. __Figure 1__ outlines the visual structure of those elements for a grouped RadGridView with the __ShowColumnFooters__ and __ShowGroupFooters__ properties set to True.
 

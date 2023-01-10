@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Working with Data
+# {{ site.framework_name }} RadGridView Working with Data
 
 In this article we will discuss the following topics:
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Palette Entry
+# {{ site.framework_name }} RadChartView Palette Entry
 
 Each palette contains PaletteEntry objects which expose the following properties:        
 

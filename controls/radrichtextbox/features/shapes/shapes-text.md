@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Shapes Text
+# {{ site.framework_name }} RadRichTextBox Shapes Text
 
 The Shapes feature allows you to easily insert shapes like circles, boxes, arrows, and many others directly in your documents. Since R3 2021 you can add styled text to each shape. 
 

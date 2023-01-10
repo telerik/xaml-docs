@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Customizing Appearance
+# {{ site.framework_name }} RadColorPicker Customizing Appearance
 
 You can customize the appearance of the __ColorPicker__ component by using the available API.
 

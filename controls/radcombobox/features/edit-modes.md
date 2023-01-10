@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Edit Modes
+# {{ site.framework_name }} RadComboBox Edit Modes
 
 __RadComboBox__ can be editable, allowing the user to type in its text box, or non-editable, where the text box is hidden. In addition, you could make the text box read-only, in order to keep the editable look, and in the same time to prevent the user from typing. The __RadComboBox__'s API exposes several properties, allowing you to configure these modes.
 

@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Localization
+# {{ site.framework_name }} RadRichTextBox Localization
 
 
 

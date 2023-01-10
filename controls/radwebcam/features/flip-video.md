@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Video Flip
+# {{ site.framework_name }} RadWebCam Video Flip
 
 The RadWebCam control allows you to change the flip of the video feed from the attached camera. To do this, set the `FlipVertically` and `FlipHorizontally` properties of RadWebCam to `True`.
 

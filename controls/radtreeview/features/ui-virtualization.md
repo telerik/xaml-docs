@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# UI Virtualization
+# {{ site.framework_name }} RadTreeView UI Virtualization
 
 The __RadTreeView__ API supports __UI Virtualization__, which processes only information loaded in the viewable area, which reduces the memory footprint of the application and speeds up the loading time thus enhancing additionally the UI performance.
 

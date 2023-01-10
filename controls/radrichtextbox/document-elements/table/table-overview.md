@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Table
+# {{ site.framework_name }} RadRichTextBox Table
 
 
 __RadRichTextBox__ is capable of displaying and editing tables. The following articles describe how you can create edit and style the tables.

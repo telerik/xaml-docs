@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Persistence
+# {{ site.framework_name }} RadPivotGrid Persistence
 
 > The implementation demonstrated in this article can also be reviewed in the [Persist QueryableDataProvider SDK Example](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/Persistence/QueryableDataProvider) of the [SDK Examples Browser](https://demos.telerik.com/xaml-sdkbrowser/)
 

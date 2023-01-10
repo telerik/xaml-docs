@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Customize the Rotation Step
+# {{ site.framework_name }} RadDiagram Customize the Rotation Step
 
 In __RadDiagram__ each __RadDiagramItem__ can be rotated. This operation is implemented by a __RotationService__.			
 

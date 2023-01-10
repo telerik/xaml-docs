@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Ribbon Gallery
+# {{ site.framework_name }} RadRibbonView Ribbon Gallery
 
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Ribbon Gallery__. This topic discusses concepts fundamental to the __Ribbon Gallery__ at first and then goes into the usage of the __RadRibbonGallery__ class and its features.	  
 

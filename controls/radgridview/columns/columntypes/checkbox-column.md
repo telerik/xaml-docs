@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# CheckBox Column
+# {{ site.framework_name }} RadGridView CheckBox Column
 
 __GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and its content is represented by a __CheckBox__ for each row. The difference between it and __GridViewSelectColumn__ is that this one is meant to be bound. As opposed, __GridViewSelectColumn__ allows you to select the row through the CheckBox that it utilizes.
 

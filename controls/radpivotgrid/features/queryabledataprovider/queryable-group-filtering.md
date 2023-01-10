@@ -9,7 +9,7 @@ position: 9
 site_name: WPF
 ---
 
-# Group Filtering
+# {{ site.framework_name }} RadPivotGrid Group Filtering
 
 
 In this article we will show you how to apply different filters on your RowGroupDescriptions and ColumnGroupDescriptions.      

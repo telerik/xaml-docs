@@ -9,7 +9,7 @@ position: 0
 site_name: WPF
 ---
 
-# Change the predefined scroll buttons
+# {{ site.framework_name }} RadCarousel Change the predefined scroll buttons
 
 RadCarousel does provide a built-in scroll bar that enables you to move the items left, right or directly to the last or first page. However, if the default view does not meet your requirements, you may easily predefine them and change their style. Basically, you need to take a couple of steps:
 

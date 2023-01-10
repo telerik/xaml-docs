@@ -8,7 +8,7 @@ published: True
 position: 26
 ---
 
-# Filtering
+# {{ site.framework_name }} RadChart Filtering
 
 
 

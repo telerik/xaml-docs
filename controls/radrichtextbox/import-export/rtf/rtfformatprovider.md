@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Using RtfFormatProvider
+# {{ site.framework_name }} RadRichTextBox Using RtfFormatProvider
 
 
 

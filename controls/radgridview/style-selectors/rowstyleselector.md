@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# RowStyleSelector
+# {{ site.framework_name }} RadGridView RowStyleSelector
 
 This article illustrates how to conditionally style rows through RadGridView's [RowStyleSelector](#rowstyleselector) and [AlternateRowStyleSelector](#alternaterowstyleselector) properties.		
 

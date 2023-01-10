@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Styling TileList
+# {{ site.framework_name }} RadTileList Styling TileList
 
 This topic will go through the process of styling the common elements of __RadTileList__.
 

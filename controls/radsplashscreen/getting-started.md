@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadSplashScreen Getting Started
 
 This tutorial will walk you through the creation of a sample application that shows a splash screen using __RadSplashScreenManager__.
 

@@ -8,7 +8,7 @@ published: True
 position: 23
 ---
 
-# Accessing the filtering popup
+# {{ site.framework_name }} RadGridView Accessing the filtering popup
 
 The __filtering control__ is a __Popup__ and it is displayed on screen over RadGridView control. You can find the instance of the specific Popup and try implementing any modifications on its behavior.
 

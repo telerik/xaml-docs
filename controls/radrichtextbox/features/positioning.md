@@ -7,7 +7,7 @@ tags: positioning
 published: True
 ---
 
-# Positioning
+# {{ site.framework_name }} RadRichTextBox Positioning
 
 The positioning feature in __RadRichTextBox__ is used to navigate through document's content and to get information about the document's elements at a specific position. The __RadDocument__ uses the positioning to track the movement of the caret and to control the selection.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Exception Handling 
+# {{ site.framework_name }} RadPdfViewer Exception Handling
 
 {% if site.site_name == 'Silverlight' %}
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# SurfaceSeries3D
+# {{ site.framework_name }} RadChartView3D SurfaceSeries3D
 
 __SurfaceSeries3D__ visualizes three-dimensional data represented by a surface. Each data point is defined by X, Z and Y values which determines its position in the plot area.
 

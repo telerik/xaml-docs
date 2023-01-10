@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# IME Support
+# {{ site.framework_name }} RadRichTextBox IME Support
 
 __RadRichTextBox__ provides built-in support for the most commonly used Microsoft IMEs like Chinese IME, Japanese IME, Korean IME and etc. which are shipped with the Windows OS. Further, you can easily add support for the IME which is used in your application. 
 

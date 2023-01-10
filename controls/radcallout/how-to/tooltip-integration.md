@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Use Callout with RadToolTip
+# {{ site.framework_name }} RadCallout Use Callout with RadToolTip
 
 The RadCallout can be easily used as a tooltip. The code snippet in __Example 1__ shows how we can do this by using RadToolTip control. 
 

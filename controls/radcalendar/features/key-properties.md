@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadCalendar Key Properties
 
 The purpose of this help article is to show you the key properties of the `RadCalendar` control. The topic includes the following sections:
 

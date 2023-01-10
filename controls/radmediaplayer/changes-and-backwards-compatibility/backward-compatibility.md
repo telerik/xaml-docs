@@ -8,7 +8,7 @@ publish: True
 position: 0
 ---
 
-# Backward Compatibility
+# {{ site.framework_name }} RadMediaPlayer Backward Compatibility
 
 ## Telerik RadMediaPlayer - Q3 2011 
 

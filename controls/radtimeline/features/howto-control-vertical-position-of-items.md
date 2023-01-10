@@ -8,7 +8,7 @@ publish: True
 position: 8
 ---
 
-# Vertical Position of the RadTimeline Items
+# {{ site.framework_name }} RadTimeline Vertical Position of the RadTimeline Items
 
 By default, __RadTimeline__ positions its items first by their __StartDate__ and then by their __Duration__, placing them in rows starting close to the control‘s timeline and moving away from it with every row. If an item, for example, starts earlier in time, it will be positioned closer to the control’s timeline. For items that start on the same date, items with smaller duration will be positioned closer to the control’s timeline. The control places an item on the next row, in case the span of this item overlaps with the span of an already positioned item.
 

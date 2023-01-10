@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Flight Card
+# {{ site.framework_name }} RadChat Flight Card
 
 __FlightCard__ is intended to display flight information in a structured user-friendly manner. Below are the properties exposed for this purpose. Specific for the __FlightCard__ card is that it exposes the __Flights__ collection which is an IList of __FlightInfo__ objects.
 

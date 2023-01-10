@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Validation
+# {{ site.framework_name }} RadDateTimePicker Validation
 
 RadDateTimePicker supports data validation that can be implemented in the view model. 
 

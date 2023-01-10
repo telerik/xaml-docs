@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Adding Rows
+# {{ site.framework_name }} RadGridView Adding Rows
 
 Adding new items in the __RadGridView__ is done via the __GridViewNewRow__ control. It appears in the form of an empty row and allows you to enter a value for the field of each column.
 

@@ -8,7 +8,7 @@ published: False
 position: 0
 ---
 
-# Filtering Basics
+# {{ site.framework_name }} RadGridView Filtering Basics
 
 
 >__Important!__ Please check the [filtering breaking changes]({%slug radgridview-backward-compatibility%}) introduced with __Q1 2012__.

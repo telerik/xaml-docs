@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Compass
+# {{ site.framework_name }} RadDocking Compass
 
 The __Compass__ element makes the whole docking process much easier, faster and precise. Thanks to it you can re-arrange the panes of your working plot within a few seconds by using [drag and drop]({%slug raddocking-features-drag-and-drop%}). The compass menu appears only when the user is dragging a pane, marking the possible docking positions within the root container and the container on which the mouse is currently over. 
 

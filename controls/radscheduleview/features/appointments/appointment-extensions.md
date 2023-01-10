@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Appointment Extensions
+# {{ site.framework_name }} RadScheduleView Appointment Extensions
 
 The **AppointmentExtensions** class in the **Telerik.Windows.Controls.ScheduleView** namespace provides you with a number of useful extension methods for working with appointments. Here's a list of them:
 

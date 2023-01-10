@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadCalculator Changes
 
 ## Q3 2014 SP
 

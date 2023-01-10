@@ -6,7 +6,7 @@ position: 1
 slug: barcode-getting-started
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadBarcode Getting Started
 
 This article will guide you through the steps needed to add a basic **RadBarcode** control in your application.
 

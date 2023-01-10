@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# CurrentCulture Format Settings are not respected
+# {{ site.framework_name }} RadGridView CurrentCulture Format Settings are not respected
 
 __PROBLEM__
 

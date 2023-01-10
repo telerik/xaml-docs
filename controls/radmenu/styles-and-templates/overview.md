@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadMenu Overview
 
 This section is intended to give you a broad understanding of the possible ways by which you can change the visual appearance of the __RadMenu__ and the __RadMenuItem__. 
 

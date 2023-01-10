@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# RadCloudUploadList
+# {{ site.framework_name }} RadCloudUpload RadCloudUploadList
 
 The __RadCloudUploadList__ is simply an __ItemsControl__ with no additional features or properties. It can be used to visualize the __Items__, __ValidItems__ or __InvalidItems__ collections of the __RadCloudUpload__ control. In order to populate this ItemsControl you can use ElementName binding to the corresponding properties of the __RadCloudUpload__ control.      
 

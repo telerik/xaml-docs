@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Layout Rendering Modes
+# {{ site.framework_name }} RadPropertyGrid Layout Rendering Modes
 
 
 

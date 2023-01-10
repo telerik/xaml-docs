@@ -9,7 +9,7 @@ position: 3
 site_name: Silverlight
 ---
 
-# Styling the RadUploadItem
+# {{ site.framework_name }} RadUpload Styling the RadUploadItem
 
 >tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the RadUploadItem control]({%slug radupload-styles-and-templates-template-structure%}).		
 

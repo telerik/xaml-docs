@@ -6,9 +6,9 @@ slug: radrichtextbox-import-export-using-xamlformatprovider
 tags: using-xamlFormatProvider
 published: True
 position: 2
---- 
+---
 
-# Using XamlFormatProvider
+# {{ site.framework_name }} RadRichTextBox Using XamlFormatProvider
 
 __XamlFormatProvider__ makes it easy to import and export RadDocument to/from XAML format. This is the native format of RadRichTextBox and Using it guarantees that anything in the document will be preserved exactly the same as it is in the control. 
 

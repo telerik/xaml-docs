@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadCalculator Getting Started
 
 This tutorial will walk your through the creation of a sample application that contains __RadCalculator__ and will show you how to:
 		  

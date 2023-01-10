@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Prevent Dialogs from Opening
+# {{ site.framework_name }} RadScheduleView Prevent Dialogs from Opening
 
 This article covers the following topics:
 

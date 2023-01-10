@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# LayoutControlGroup
+# {{ site.framework_name }} RadLayoutControl LayoutControlGroup
 
 __LayoutControlGroup__ is one of the few layout groups supported by the __RadLayoutControl__. When it comes to visual appearance __LayoutControlGroup__ is the most simple of the groups. It displays only a border around its items. 
 

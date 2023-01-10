@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Template and Style Selectors
+# {{ site.framework_name }} RadMenu Template and Style Selectors
 
 The __RadMenu__ and the __RadMenuItem__ controls come with a set of selector properties. Typically, you use a template or style selector when you have more than one data template or style defined for the same type of objects.
 

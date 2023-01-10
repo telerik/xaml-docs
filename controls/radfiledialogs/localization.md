@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Localization
+# {{ site.framework_name }} RadFileDialogs Localization
 
 > More detailed look over the localization capabilities that the framework provides can be found in the [Localization]({%slug common-localization%}) article.
 

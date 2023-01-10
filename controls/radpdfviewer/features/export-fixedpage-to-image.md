@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Exporting Fixed Page to Image
+# {{ site.framework_name }} RadPdfViewer Exporting Fixed Page to Image
 
 RadPdfViewer provides an API for exporting a PDF document page to an image. This can be done with the __ThumbnailFactory__ class. The class exposes a single method - __CreateThumbnail__ - which accepts objects of type __RadFixedPage__ and __Size__, and returns an __ImageSource__ object.
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Load on Demand
+# {{ site.framework_name }} RadTreeView Load on Demand
 
 The performance of the Telerik __RadTreeView__ control when operating with huge amount of items is significantly optimized through its load on demand feature. This mechanism lets the nodes load their child nodes as the user expands the parent by clicking on the expander icon.
 	  

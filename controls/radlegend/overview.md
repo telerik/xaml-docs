@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadLegend
 ---
 
-# Overview
+# {{ site.framework_name }} RadLegend Overview
 
 __RadLegend__ is a stand-alone control which visualizes a list of legend items. The control could be used to create a legend for a chart ot other type of data visualization.  
 

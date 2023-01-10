@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Custom Connectors
+# {{ site.framework_name }} RadDiagram Custom Connectors
 
 Custom Connectors increase your experience when using __Diagrams__ by enabling you to define custom connector points around the shapes.	
 

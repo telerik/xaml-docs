@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Templates Structure
+# {{ site.framework_name }} RadBreadcrumb Templates Structure
 
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadBreadcrumb__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can template parts of it or even independent controls related to it. This topic will make you familiar with the __RadBreadcrumb__ Template Structure			
 

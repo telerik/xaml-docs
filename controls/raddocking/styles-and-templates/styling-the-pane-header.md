@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the Pane Header
+# {{ site.framework_name }} RadDocking Styling the Pane Header
 
 The PaneHeader element displays the title of the selected pane in the given RadPaneGroup (for RadPaneGroups outside the DocumentHost), a menu and two buttons. For some more information, read the [Visual Structure]({%slug raddocking-panes-visual-structure%}) article.
 

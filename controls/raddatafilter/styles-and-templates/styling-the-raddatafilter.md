@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling RadDataFilter
+# {{ site.framework_name }} RadDataFilter Styling RadDataFilter
 
 
 >Before reading this topic, you might find it useful to get familiar with the  [Template Structure of the RadDataFilter]({%slug raddatafilter-styles-and-templates-template-structure%}) and the [Template Structure of the DataFilterPresenter]({%slug raddatafilter-styles-and-templates-template-structure%}).

@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Async SQL Geospatial Data Reader
+# {{ site.framework_name }} RadMap Async SQL Geospatial Data Reader
 
 RadMap __VisualizationLayer__ supports async reading from an SQL Geospatial data source. To do this use the __AsyncSqlGeospatialDataReader__ class. 
 

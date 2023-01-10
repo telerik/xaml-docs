@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Drag and Drop from RadGridView to RadDiagram
+# {{ site.framework_name }} RadGridView Drag and Drop from RadGridView to RadDiagram
 
 This tutorial describes how to implement a drag/drop operation from a data-bound __RadGridView__ to a __RadDiagram__ control using __DragDropManager__.
 

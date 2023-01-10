@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Localization
+# {{ site.framework_name }} RadCardView Localization
 
 The built-in [localization mechanism](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/advanced/wpf-globalization-and-localization-overview?view=netframeworkdesktop-4.8) in the platform allows you to localize __RadCardView__ control. 
 

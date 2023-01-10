@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# DesktopAlertManager
+# {{ site.framework_name }} RadDesktopAlert DesktopAlertManager
 
 Using __RadDesktopAlertManager__ you could easily visualize and position __RadDesktopAlert__ on the screen. Thanks to __RadDesktopAlertManager__, you could also display multiple alerts on the screen - it will calculate the location of all alerts so they could not overlap. When an alert gets closed, all other alerts that are currently visualized on the screen get relocated.
 

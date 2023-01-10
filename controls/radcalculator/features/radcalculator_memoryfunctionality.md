@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Memory Functionality
+# {{ site.framework_name }} RadCalculator Memory Functionality
 
 __RadCalculator__ supports all native memory functionality the end user is accustomed with. 
 		

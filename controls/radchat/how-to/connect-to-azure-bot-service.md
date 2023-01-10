@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to Connect to Azure Bot Service
+# {{ site.framework_name }} RadChat How to Connect to Azure Bot Service
 
 This topic will guide you through the process of connecting **RadChat** to a chat bot created with **Azure Bot Service**. 
 

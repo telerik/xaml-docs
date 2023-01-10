@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling DataFormDataField
+# {{ site.framework_name }} RadDataForm Styling DataFormDataField
 
 The __DataFormDataField__ is the base class for the elements that represent the fields in a RadDataForm. Other types of fields are: __DataFormComboBoxField__, __DataFormCheckBoxField__ and __DataFormDateField__.
 

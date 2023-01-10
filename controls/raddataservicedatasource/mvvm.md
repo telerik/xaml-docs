@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# MVVM Support
+# {{ site.framework_name }} RadDataServiceDataSource MVVM Support
 
 The assembly in which __RadDataServiceDataSource__ is located contains a class named __QueryableDataServiceCollectionView&lt;T&gt;.__ This is the collection view that the control uses internally. The only functionality that the control adds over this collection view is XAML-friendly API.
 

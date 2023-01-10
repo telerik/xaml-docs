@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# How to set different culture
+# {{ site.framework_name }} RadDateTimePicker How to set different culture
 
 In many scenarios it is useful to set a specific Culture in your application that differs from the Culture of the environment. In those cases the easiest and straight forward approach is to set the __CurrentCulture__ and __CurrentUICulture__ to the desired custom __CultureInfo__.
 

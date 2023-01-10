@@ -9,7 +9,7 @@ position: 6
 site_name: WPF
 ---
 
-# How to serialize ViewPort after Save/Load operation
+# {{ site.framework_name }} RadDiagram How to serialize ViewPort after Save/Load operation
 
 The following article will demonstrate how you can save the __RadDiagram__ current ViewPort position in the file system and load it again.	  
 

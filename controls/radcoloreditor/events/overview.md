@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Events Overview
+# {{ site.framework_name }} RadColorEditor Events Overview
 
 This topic covers the specific events exposed by the __RadColorEditor__ control. 
 

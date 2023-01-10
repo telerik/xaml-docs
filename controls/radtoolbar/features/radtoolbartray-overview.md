@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# ToolBarTray
+# {{ site.framework_name }} RadToolBar ToolBarTray
 
 The toolbars suite provides you with the `RadToolBarTray` control that allows you to host several `RadToolBar` elements in the same tray. The tray handles the position, size, and order of toolbars inside of it. It is divided by bands (rows) and each band can contain multiple toolbars.
 

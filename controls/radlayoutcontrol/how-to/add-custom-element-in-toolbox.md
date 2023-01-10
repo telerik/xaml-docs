@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Add Custom Element in the ToolBox
+# {{ site.framework_name }} RadLayoutControl Add Custom Element in the ToolBox
 
 This article demonstrates how to add a custom UIElement in the NewItems section of the LayoutControlToolBoxView which is located under the Items tab. 
 

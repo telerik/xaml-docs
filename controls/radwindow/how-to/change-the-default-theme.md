@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Change the Default Theme
+# {{ site.framework_name }} RadWindow Change the Default Theme
 
 You can easily change the theme of __RadWindow__ to one of the predefined themes for UI for {{ site.framework_name }} using the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) or {% if site.site_name == 'WPF' %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% else %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% endif %}.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Drag and Drop with RadScheduleView
+# {{ site.framework_name }} RadGanttView Drag and Drop with RadScheduleView
 
 With our Q1 2013 release of __RadGanttView__ control we have introduced a new built-in feature in the control that allows drag and drop functionality between the GanttView control and an outside source.
 

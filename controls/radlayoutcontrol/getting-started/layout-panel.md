@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Layout Panel
+# {{ site.framework_name }} RadLayoutControl Layout Panel
 
 The purpose of this article is to describe how the __RadLayoutControl__ children are arranged in their panel.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadFileDialogs Visual Structure
 
 This help article will help you understand the visual structure of the file dialog controls with which you have to get familiar prior to using them. This information can also be helpful when contacting our support service in order to describe your issue better.
 

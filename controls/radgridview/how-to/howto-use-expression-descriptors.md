@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Use Expression Descriptors
+# {{ site.framework_name }} RadGridView Use Expression Descriptors
 
 This help article will show you how to create generic expression descriptors (SortDescriptor<T>, GroupDescriptors<T> and FilterDescriptors<T>) for __RadGridView__.
 

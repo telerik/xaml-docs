@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Dynamic Number of Series (ChartSeriesProvider)
+# {{ site.framework_name }} RadChartView3D Dynamic Number of Series (ChartSeriesProvider)
 
 In this help topic, we describe the mechanism for an automatic series generation that ChartView3D provides.
 

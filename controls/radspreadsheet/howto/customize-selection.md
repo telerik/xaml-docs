@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customize Selection
+# {{ site.framework_name }} RadSpreadsheet Customize Selection
 
 RadSpreadsheet exposes several properties that enable you to control the way the selection in the control is rendered. This article describes the available properties and shows you how to work with them.
 

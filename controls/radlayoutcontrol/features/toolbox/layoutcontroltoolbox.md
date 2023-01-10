@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# LayoutControlToolBox
+# {{ site.framework_name }} RadLayoutControl LayoutControlToolBox
 
 __LayoutControlToolBox__ can be used to embed the toolbox into the layout control. This article demonstrates how to set it up and associate it with RadLayoutControl.
 

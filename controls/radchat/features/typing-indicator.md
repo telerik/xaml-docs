@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Typing Indicator
+# {{ site.framework_name }} RadChat Typing Indicator
 
 The __TypingIndicator__ functionality of the Conversational UI can be used to indicate that an __Author__ is typing. This is done through the following properties.
 

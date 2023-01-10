@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the RadContextMenu
+# {{ site.framework_name }} RadContextMenu Styling the RadContextMenu
 
 >tipTo learn about styling and templating the __RadMenuItem__, please take a look at the [Styles and Templates]({%slug radmenu-styling-and-appearance-styling-radmenuitem%}) section of the __RadMenu's__ help.
 

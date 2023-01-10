@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customize Appearance
+# {{ site.framework_name }} RadDiagram Customize Appearance
 
 This article describes how to customize the appearance of the __RadDiagram__,__RadDiagramShape__ and __RadDiagramConnection__ through a set of properties exposed by their API.	  
 

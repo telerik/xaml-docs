@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Infinite Paging
+# {{ site.framework_name }} RadDataPager Infinite Paging
 
 >tip If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
 

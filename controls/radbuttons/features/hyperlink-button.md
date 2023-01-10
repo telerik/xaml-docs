@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Hyperlink Button
+# {{ site.framework_name }} RadButtons Hyperlink Button
 
 __RadHyperlinkButton__ provides the RadButton functionality extending it with Hyperlink capabilities. 
 

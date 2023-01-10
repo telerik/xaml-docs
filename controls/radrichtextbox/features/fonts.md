@@ -7,7 +7,7 @@ tags: font, font-family
 published: True
 ---
 
-# Fonts
+# {{ site.framework_name }} RadRichTextBox Fonts
 
 **RadRichTextBox** uses different font families to render the text inside. This article describes how the default font families are loaded and how you can register custom ones.
 

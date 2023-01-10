@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Add Context Menu
+# {{ site.framework_name }} RadTreeView Add Context Menu
 
 In this article you will see how to attach a [RadContextMenu]({%slug contextmenu-getting-started%}) to a data-bound __RadTreeView__ and perform actions on the clicked treeview items, depending on the selection in the context menu.
 

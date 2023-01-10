@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Template Structure
+# {{ site.framework_name }} RadMaskedInput Template Structure
 
 Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} controls, the __RadMaskedInput__ controls also allow you to template them in order to change the control from the inside. Except for templating a whole control, you can template only parts of it or even independent controls related to it. The style of each __RadMaskedInput__ controls is based on a __RadMaskedInputBaseStyle__. This topic will make you familiar with the structure of the __RadMaskedInputBase__ templates. 
 

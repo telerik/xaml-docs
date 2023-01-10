@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Sorting
+# {{ site.framework_name }} RadListBox Sorting
 
 The data in the ListBox control can be sorted using few approaches. 
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadWindow Visual Structure
 
 This section defines the terms and concepts used in the scope of __RadWindow__ you have to get familiar with prior to continue reading this help. They can also be helpful when contacting our support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadMenu__ control.
 

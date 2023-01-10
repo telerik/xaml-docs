@@ -7,7 +7,7 @@ tags: raddocumentmerger, merge, insert, documents
 published: True
 ---
 
-# Insert Document at Caret Position
+# {{ site.framework_name }} RadRichTextBox Insert Document at Caret Position
 
 The [RadDocumentMerger]({%slug radrichtextbox-features-merge-raddocumentmerger%}) class exposes the **InsertDocument()** method that enables you to merge two [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) instances. The documents will be merged at the caret position of the targeted instance.
 

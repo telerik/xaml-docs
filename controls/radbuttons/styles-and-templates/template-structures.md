@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Template Structures
+# {{ site.framework_name }} RadButtons Template Structures
 
 Like most controls, the __RadButtons__ also allow you to template them in order to be changed from the inside. Except for templating the whole control, you can template only parts of it. This topic will make you familiar with the structure of the __RadButtons'__ templates.
 

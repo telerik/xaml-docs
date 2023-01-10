@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# LayoutControlTabGroup
+# {{ site.framework_name }} RadLayoutControl LayoutControlTabGroup
 
 __LayoutControlTabGroup__ is one of the few layout groups supported by the __RadLayoutControl__. __LayoutControlTabGroup__ behaves a little differently than the other types of groups. Basically, it its children are displayed in a __tab control__ and each tab item is represented by a __LayoutControlTabGroupItem__ element.
 

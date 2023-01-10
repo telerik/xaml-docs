@@ -8,7 +8,7 @@ published: True
 position: 22
 ---
 
-# Import/Export to ICalendar
+# {{ site.framework_name }} RadScheduleView Import/Export to ICalendar
 
 The RadScheduleView allows for importing and exporting data to the [ICalendar](https://en.wikipedia.org/wiki/ICalendar) format. This is supported through the [AppointmentCalendarImporter](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.icalendar.appointmentcalendarimporter) and [AppointmentCalendarExporter](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.icalendar.appointmentcalendarexporter) classes. 
 

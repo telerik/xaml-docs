@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Changes
+# {{ site.framework_name }} RadScheduleView Changes
 
 This article describes the release history of the control.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Legacy Drag Drop Mode
+# {{ site.framework_name }} RadTreeView Legacy Drag Drop Mode
 
 The RadTreeView's drag drop feature works with the Telerik DragDropManager, but originally it was implemented with the legacy RadDragAndDropManager.
 

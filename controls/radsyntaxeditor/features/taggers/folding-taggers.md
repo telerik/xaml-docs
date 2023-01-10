@@ -7,7 +7,7 @@ tags: folding,taggers,radsyntaxeditor
 position: 2
 ---
 
-# Folding Taggers
+# {{ site.framework_name }} RadSyntaxEditor Folding Taggers
 
 The folding taggers are used when you want to create collapsible (foldable) sections of code in a document. The base class responsible for this functionality is the **FoldingTaggerBase** class with concrete implementations provided out of the box being the **BracketFoldingTagger**, **CSharpFoldingTagger**, **VisualBasicFoldingTagger** and **XMLFoldingTagger**.
 

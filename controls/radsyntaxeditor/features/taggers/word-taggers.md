@@ -7,7 +7,7 @@ tags: word,taggers,radsyntaxeditor
 position: 1
 ---
 
-# Word Taggers
+# {{ site.framework_name }} RadSyntaxEditor Word Taggers
 
 A common requirement when using the RadSyntaxEditor is to highlight words which belong to a specific language classification type - such as keywords, operators and comments. Such predefined taggers include the **CSharpTagger**, **VisualBasicTagger**, **JavaScriptTagger** and **SqlTagger**. All of these taggers share a common base class - the **WordTaggerBase** class.
 

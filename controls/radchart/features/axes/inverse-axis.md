@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Inverse Axis
+# {{ site.framework_name }} RadChart Inverse Axis
 
 
 

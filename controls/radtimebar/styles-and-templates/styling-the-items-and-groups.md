@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Styling the Items and Groups
+# {{ site.framework_name }} RadTimeBar Styling the Items and Groups
 
 This section is intended to give you a broad understanding of the possible way in which you can customize the visual appearance of the __RadTimeBar__.        
 

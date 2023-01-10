@@ -9,7 +9,7 @@ position: 11
 site_name: WPF
 ---
 
-# Ribbon Window
+# {{ site.framework_name }} RadRibbonView Ribbon Window
 
 The __RadRibbonWindow__ control is used to replace the __Window__ control that represents the root UI of a WPF application. Its purpose is to allow a smoother UI when hosting the __RadRibbonView__ at the root level of the application.
 

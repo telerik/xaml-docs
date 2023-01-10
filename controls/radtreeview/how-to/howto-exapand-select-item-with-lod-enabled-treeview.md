@@ -8,7 +8,7 @@ published: True
 position: 25
 ---
 
-# Expand and Select Item with Load on Demand Enabled RadTreeView
+# {{ site.framework_name }} RadTreeView Expand and Select Item with Load on Demand Enabled RadTreeView
 
 This tutorial will demonstrate you how to __expand__ and __select__ an item when the __RadTreeView__ is in load on demand mode (__IsLoadOnDemandEnabled__ property is set to __True__).
 

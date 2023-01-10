@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadPivotGrid Changes
 
 In this article you can find out the history of the changes we've made in __RadPivotGrid__ and __RadPivotFieldList__.            
 

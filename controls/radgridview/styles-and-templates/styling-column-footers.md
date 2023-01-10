@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Styling Column Footers
+# {{ site.framework_name }} RadGridView Styling Column Footers
 
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewFooterCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewfootercell).

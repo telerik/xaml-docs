@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# DataBinding
+# {{ site.framework_name }} RadDiagram DataBinding
 
 The following article will show you how to bind the __RadDiagram__ to ViewModel collections which represent nodes and edges of a Graph.	  
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Get the WebBrowser behind the RadHtmlPlaceholder control in an out-of-browser scenario
+# {{ site.framework_name }} RadHtmlPlaceholder Get the WebBrowser behind the RadHtmlPlaceholder control in an out-of-browser scenario
 
 __RadHtmlPlaceholder__ uses [WebBrowser](http://msdn.microsoft.com/en-us/library/system.windows.controls.webbrowser(v=vs.95).aspx) control internally to render its content. You can get the browser which is used in out-of-browser scenarios through the __WebBrowser__ property of the placeholder component.
 

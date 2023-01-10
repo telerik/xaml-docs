@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Customize the Application Menu Button
+# {{ site.framework_name }} RadRibbonView Customize the Application Menu Button
 
 The default look of the [application menu]({%slug radribbonview-applicationmenu%}) button is an empty rectangle as shown in __Figure 1__.
 

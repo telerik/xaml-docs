@@ -8,7 +8,7 @@ published: False
 position: 1
 ---
 
-# Controlling Appearance
+# {{ site.framework_name }} RadGridView Controlling Appearance
 
 
 There are a number of ways to customize the look & feel of your __RadGridView__ control. This topic covers some of the most important of these properties.

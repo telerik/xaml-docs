@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Binding to Objects
+# {{ site.framework_name }} RadCalendar Binding to Objects
 
 All of the Calendar properties are dependency properties which means that they can be bound to almost any object.
 

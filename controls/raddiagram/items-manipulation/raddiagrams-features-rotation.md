@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Rotation
+# {{ site.framework_name }} RadDiagram Rotation
 
 __RadDiagram__ gives you the ability to rotate shapes by dragging their __Rotation Thumb__ or by changing their __RotationAngle__ property.	  
 

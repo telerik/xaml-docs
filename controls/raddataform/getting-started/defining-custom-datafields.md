@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Defining Custom DataFields
+# {{ site.framework_name }} RadDataForm Defining Custom DataFields
 
 This help article illustrates how to define your own DataField type.
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Selection Modes
+# {{ site.framework_name }} RadCalendar Selection Modes
 
 The Calendar supports three selection modes: __Single, Multiple and Extended__, the default selection mode is __Single__.
 

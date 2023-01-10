@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# How to configure the VisibleRange
+# {{ site.framework_name }} RadScheduleView How to configure the VisibleRange
 
 The built-in __RadScheduleView__ ViewDefinitions have specific ways to determine what the visible range will be when the CurrentDate property is set:
 

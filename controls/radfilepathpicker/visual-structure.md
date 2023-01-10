@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadFilePathPicker Visual Structure
 
 This topic defines terms and concepts related to __RadFilePathPicker__ that you have to get familiar with before you continue reading this help. 
 

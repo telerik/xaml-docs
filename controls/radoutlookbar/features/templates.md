@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Templates
+# {{ site.framework_name }} RadOutlookBar Templates
 
 * __ItemDropDownTemplate__ - template for the items displayed in the overflow area.
 

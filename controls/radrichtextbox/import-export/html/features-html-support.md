@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# HTML Support
+# {{ site.framework_name }} RadRichTextBox HTML Support
 
 A major requirement for providing rich text editing capabilities is support for HTML. The __RadRichTextBox__ control is designed to offer import/export functionality for __HTML__ out of the box – through the __HtmlFormatProvider__. However, as __HTML__ is a diverse and complicated standard, supporting it comes with certain limitations. __HtmlFormatProvider__ is designed to handle slightly malformed __HTML__ (missing closing tags, missing quotes around attributes), however in this case correct parsing cannot be guaranteed. For best results we recommend importing valid __XHTML__ content.
 

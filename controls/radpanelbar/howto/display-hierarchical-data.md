@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# How to Display Hierarchical Data
+# {{ site.framework_name }} RadPanelBar How to Display Hierarchical Data
 
 __RadPanelBarItem__ inherits from __HeaderedItemsControl__ therefore it can display hierarchical data, e.g. collections that contain other collections.
 

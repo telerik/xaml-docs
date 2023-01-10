@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Managing Data
+# {{ site.framework_name }} RadGridView Managing Data
 
 Except displaying sets of data, Telerik's __RadGridView__ also allows you to manage them. You are able to execute the standard operations - __Insert__, __Update__ and __Delete__. You can also validate the data. Besides using this functionality, you are able to control it via the several events raised at the most important key-points of the action.
 

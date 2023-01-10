@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Wizard Pages
+# {{ site.framework_name }} RadWizard Wizard Pages
 
 * [Setting HeaderTemplate, SideHeaderTemplate and FooterTemplate](#setting-headertemplate,-sideheadertemplate-and-footertemplate)
 * [Preserve WizardPage Content](#preserve-wizardpage-content)

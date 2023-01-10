@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling the Axis Title
+# {{ site.framework_name }} RadChart Styling the Axis Title
 
 
 

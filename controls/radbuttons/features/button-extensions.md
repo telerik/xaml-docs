@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Button Extensions
+# {{ site.framework_name }} RadButtons Button Extensions
 
 The Telerik suite provides built-in extensions that can change different behaviors of the button controls. This article will go through these extensions.
 

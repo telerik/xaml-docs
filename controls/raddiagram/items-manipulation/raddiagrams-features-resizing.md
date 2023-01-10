@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Resizing
+# {{ site.framework_name }} RadDiagram Resizing
 
 __RadDiagram__ gives you the ability to resize shapes by dragging their __Resizing Thumbs__. You can also use the Shapes' __Width__ and __Height__ for this purpose.
 

@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# Style the Filtering Funnel Icon
+# {{ site.framework_name }} RadGridView Style the Filtering Funnel Icon
 
 In order to style the filtering funnel icon, you should predefine the template of the __FilteringDropDown__ element and change it as you would like. You can find more information on the topic in the [Styling FilteringControl and FilteringDropDown]({%slug gridview-styling-filteringcontrol%}) article.
 

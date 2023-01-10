@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Custom Filtering Controls
+# {{ site.framework_name }} RadGridView Custom Filtering Controls
 
 As a developer, __you are not limited to the default filtering user interface provided by RadGridView when in Popup filtering mode__. After the introduction of the Custom Filtering Controls feature, you can easily craft any filtering control that you like.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Diagram Shape
+# {{ site.framework_name }} RadDiagram Diagram Shape
 
 This tutorial will walk you through the functionality and the main features of the __RadDiagramShape__.
 

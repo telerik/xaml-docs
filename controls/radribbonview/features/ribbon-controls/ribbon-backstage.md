@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Ribbon Backstage
+# {{ site.framework_name }} RadRibbonView Ribbon Backstage
 
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __Ribbon Backstage__ control allows you to achieve a more native MS Office look and feel of your application.
 

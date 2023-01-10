@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Replace the Default Filtering Control With Your Own
+# {{ site.framework_name }} RadGridView Replace the Default Filtering Control With Your Own
 
 To learn how to replace the default filtering control with a custom one, please read this [article]({%slug gridview-filtering-custom-filtering-controls%}).
 

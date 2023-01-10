@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# DropDown Properties
+# {{ site.framework_name }} RadMultiColumnComboBox DropDown Properties
 
 This article describes the set of properties that can be used for manipulating the DropDown of __RadMultiColumnComobBox__.
 

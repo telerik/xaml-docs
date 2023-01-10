@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Separator Items
+# {{ site.framework_name }} RadMenu Separator Items
 
 In order to enhance the functionality of the __RadMenu__ control, the __RadMenuItem__ can behave like a separator. In order to make it a separator you have to set its __IsSeparator__ property to either __True__ or __False__. The default value is __False__.
 

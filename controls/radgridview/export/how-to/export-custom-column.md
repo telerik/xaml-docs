@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Exporting Custom Column
+# {{ site.framework_name }} RadGridView Exporting Custom Column
 
 >important As of __R1 2018__ the __GetCellContent__ method is __no longer__ used for exporting a custom column content. Instead, the __GetExportCellContent__ one of GridViewBoundColumnBase needs to be overriden. Check __Example 2__.
 

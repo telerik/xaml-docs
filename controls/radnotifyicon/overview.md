@@ -8,7 +8,7 @@ position: 0
 CTAControlName: RadNotifyIcon
 ---
 
-# Overview
+# {{ site.framework_name }} RadNotifyIcon Overview
 
 Thank you for choosing __RadNotifyIcon__!			
 

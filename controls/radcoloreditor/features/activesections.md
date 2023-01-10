@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Active Sections
+# {{ site.framework_name }} RadColorEditor Active Sections
 
 The following article describes the __ActiveSections__ property / feature of the __RadColorEditor__. It gives you the ability to combine/remove different parts of the ColorEditor.
 

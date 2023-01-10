@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Properties
+# {{ site.framework_name }} RadDataBar Properties
 
 This topic aims to get you familiar with the specific properties of each data bar type.
 

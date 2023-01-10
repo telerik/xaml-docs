@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Qualitative Ranges
+# {{ site.framework_name }} RadBulletGraph Qualitative Ranges
 
 The qualitative ranges are visual annotations used to separate the scale into different zones. They usually indicate the state of the covered range - bad, satisfactory, good. 
 

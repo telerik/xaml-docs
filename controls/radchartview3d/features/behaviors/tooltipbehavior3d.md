@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Tooltip Behavior
+# {{ site.framework_name }} RadChartView3D Tooltip Behavior
 
 The tooltip behavior visualizes arbitrary information related to a data point. When the behavior is enabled, a tooltip is displayed on mouse over a data point. The tooltip contains information about the hovered data point.
 

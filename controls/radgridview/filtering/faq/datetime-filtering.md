@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Filtering column showing DateTime values
+# {{ site.framework_name }} RadGridView Filtering column showing DateTime values
 
 ## Items disappear when a column is filtered over a DateTime property
 

@@ -7,7 +7,7 @@ tags: threshold, mode, display, pane, size
 position: 0
 ---
 
-# Hierarchy
+# {{ site.framework_name }} RadNavigationView Hierarchy
 
 RadNavigationView allows you to define sub-items in order to achieve hierarchical menu visualizаtion.
 

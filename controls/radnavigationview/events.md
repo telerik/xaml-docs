@@ -7,7 +7,7 @@ tags: events, paneopened, paneclosed
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadNavigationView Events
 
 This article lists the events specific for RadNavigationView.
 

@@ -9,7 +9,7 @@ position: 2
 site_name: WPF
 ---
 
-# Using AdomdDataProvider
+# {{ site.framework_name }} RadPivotGrid Using AdomdDataProvider
 
 In this article we will show how to use __AdomdDataProvider__ and use data from OLAP Cube for __RadPivotGrid__.
 

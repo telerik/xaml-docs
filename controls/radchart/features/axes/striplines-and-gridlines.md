@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Striplines and Gridlines
+# {{ site.framework_name }} RadChart Striplines and Gridlines
 
 In order to improve the readiness of the chart, you can use __strip lines__ and __grid lines__. Besides, for [Y-Axis]({%slug radchart-features-axes-y-axis%}) you can also show grid lines for the minor ticks.
 

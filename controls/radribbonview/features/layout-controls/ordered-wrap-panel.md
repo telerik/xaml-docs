@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Ordered Wrap Panel
+# {{ site.framework_name }} RadRibbonView Ordered Wrap Panel
 
 RadRibbonView's dynamic layout resizing allows you to optimize the layout depending on the available space. 
 

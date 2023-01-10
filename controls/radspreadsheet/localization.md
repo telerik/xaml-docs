@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Localization
+# {{ site.framework_name }} RadSpreadsheet Localization
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Prevent Column Auto-Generation
+# {{ site.framework_name }} RadGridView Prevent Column Auto-Generation
 
 As you know, if __AutoGenerateColumns="True"__ (which is by default), RadGridView creates a column for each property of the underlying business object. This article shows __how to not auto generate a column for a specific property__.
 

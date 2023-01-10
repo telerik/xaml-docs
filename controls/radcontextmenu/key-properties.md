@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadContextMenu Key Properties
 
 This topic goes through the key properties of the `RadContextMenu` control.
 

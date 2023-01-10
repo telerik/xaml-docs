@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Elevation
+# {{ site.framework_name }} RadMap Elevation
 
 RadMap Bing Elevation Service allows you to obtain elevation information of a location on a map. You can get the elevation information for a set of locations, polyline or area on the Earth. You can access the elevation service via __BingRestMapProvider__ provider. 
 

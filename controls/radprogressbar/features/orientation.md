@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Orientation
+# {{ site.framework_name }} RadProgressBar Orientation
 
 __RadProgressBar__ has an __Orientation__ property which can be set to either *Horizontal* or *Vertical*. The two allowed values specify the direction in which the control is being "filled". Below you can see examples of how to set the __Orientation__ property both in *C#* and *XAML* code:
 

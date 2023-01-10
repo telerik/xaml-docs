@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Data Field Descriptor
+# {{ site.framework_name }} RadCardView Data Field Descriptor
 
 __CardDataFieldDescriptor__ is the element describing the data fields of cards in the RadCardView control. 
 

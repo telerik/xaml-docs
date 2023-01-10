@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Label Connectors
+# {{ site.framework_name }} RadChartView Label Connectors
 
 RadChartView supports drawing of connector lines between the series' data points and their labels. In order to enable this feature you can set the chart series' __LabelConnectorsSettings__ property. The property accepts an object of type __ChartSeriesLabelConnectorsSettings__ which exposes the following properties:
 * __FadeOpacity__: Gets or sets the opacity that is applied to the label connectors when the series is faded by the chart's hover interactivity.

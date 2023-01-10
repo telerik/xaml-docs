@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Style Exported XLSX and PDF Documents
+# {{ site.framework_name }} RadGridView Style Exported XLSX and PDF Documents
 
 If you need to style the exported RadGridView differently from its default style when exporting using the [ExportToXlsx]({%slug gridview-export-xlsx%}) & [ExportToPdf]({%slug gridview-export-pdf%}) methods, you can use the [ElementExportingToDocument]({%slug gridview-export-events%}#elementexportingtodocument) event and through the  **GridViewElementExportingToDocumentEventArgs** set the VisualParameters property to a new instance of the [CellSelectionStyle](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.gridview.cellselectionstyle) class.
 

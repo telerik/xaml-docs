@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Moving
+# {{ site.framework_name }} RadDesktopAlert Moving
 
 With the Q3 2015 release version of UI for WPF the ability to drag and drop __RadDesktopAlert__ to a specific location on the screen is now available.
 

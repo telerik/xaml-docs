@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Custom Item Style
+# {{ site.framework_name }} RadChart Custom Item Style
 
 
 

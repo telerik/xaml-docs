@@ -7,7 +7,7 @@ tags: content controls, richtextbox
 published: True
 ---
 
-# Content Controls UI
+# {{ site.framework_name }} RadRichTextBox Content Controls UI
 The easiest way to create a content control is through the user interface. You can also create them programmatically following the [Working with Content Controls Programmatically]({%slug radrichtextbox-features-working-with-content-controls%}) article. 
 
 ## User Interface

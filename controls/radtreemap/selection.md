@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Selection
+# {{ site.framework_name }} RadTreeMap Selection
 
 __RadTreeMap__ and __RadPivotMap__ support selection functionality which is disabled by default. You can enable it by setting the control's __IsSelectionEnabled__ property to __True__.
 

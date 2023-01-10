@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Display PointMarks and Labels for Specific points only 
+# {{ site.framework_name }} RadChart Display PointMarks and Labels for Specific points only
 
 
 

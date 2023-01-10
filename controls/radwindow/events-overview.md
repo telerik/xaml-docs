@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Events
+# {{ site.framework_name }} RadWindow Events
 
 The __RadWindow__ is a __HeaderedContentControl__. Almost all of the exposed events are inherited by the __HeaderedContentControl__ class. The __RadWindow__ adds several additional events for the developers.
 

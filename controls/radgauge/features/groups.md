@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Groups
+# {{ site.framework_name }} RadGauge Groups
 
 There are common scenarios when 1 scale can have few group of ranges (some electric measurement devices, for example) and few groups of indicators, which change its appearance depending on the group of ranges it works with. For example, sound volume indicator on the sound amplifier. The scale have 1 range group with green, yellow and red segments which indicate sound volume, and 1 range group with transparent and red ranges which serves as overload indicator (it turns on when sound volume is close to the end of the scale). The first range list has 4 bar indicators which show sound volume for 4 channels, the second range list - 4 state indicators which show overload status for 4 channels. In this case we need 2 range groups and 2 indicator groups.     
 

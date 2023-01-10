@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# TrackBall
+# {{ site.framework_name }} RadChartView TrackBall
 
 Along with [tooltip]({%slug radchartview-features-tooltip%}) and [pan/zoom]({%slug radchartview-features-panzoom%}) behaviors, RadChartView provides a trackball visualization through the __ChartTrackBallBehavior__ class. 
 

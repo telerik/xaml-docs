@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Templating Headers and Cells
+# {{ site.framework_name }} RadPivotGrid Templating Headers and Cells
 
 __RadPivotGrid__ provides few options to template its cells and headers out of the box. You can either apply one template to all of them using the __CellTemplate__, __RowHeaderTemplate__ and __ColumnHeaderTemplate__ properties of __RadPivotGrid__. Or you can use the __CellTemplateSelector__, __RowHeaderTemplateSelector__ and __ColumnHeaderTemplateSelector__ properties in order to implement custom TemplateSelector and template the headers and cells per condition. This article will show you how to improve the __RadPivotGrid__ appearance by applying custom Templates and implementing custom TemplateSelectors.      
 

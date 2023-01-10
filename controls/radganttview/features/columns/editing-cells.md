@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Customizing the CellEditTemplate
+# {{ site.framework_name }} RadGanttView Customizing the CellEditTemplate
 
 The __CellEditTemplate__ is the Template that is displayed when the cell is in edit mode. The edit mode is entered by double clicking a specific cell. It could easily be customized by setting it to any valid DataTemplate.
 

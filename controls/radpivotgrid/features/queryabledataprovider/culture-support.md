@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Culture Support
+# {{ site.framework_name }} RadPivotGrid Culture Support
 
 With the __2019.2.729__ version of UI for WPF, the __QueryableDataProvider__ exposes a __Culture__ property. It makes it possible to localize the underlying data using the CurrentCulture of the user or any other Culture. For example, this will allow you to display the names of the months in the desired language, use the currency symbol from the specified culture and format the values with the correct separator.      
 

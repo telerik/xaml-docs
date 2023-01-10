@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# IsIndeterminate
+# {{ site.framework_name }} RadProgressBar IsIndeterminate
 
 __RadProgressBar__ supports two modes of operation:
 

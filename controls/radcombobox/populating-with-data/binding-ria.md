@@ -9,7 +9,7 @@ position: 7
 site_name: Silverlight
 ---
 
-# Binding to RIA Service
+# {{ site.framework_name }} RadComboBox Binding to RIA Service
 
 The purpose of this tutorial is to show you how to populate a __RadComboBox__ with data from a __.NET RIA Service__.
 

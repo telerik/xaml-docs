@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Docked/Floating Panes
+# {{ site.framework_name }} RadDocking Docked/Floating Panes
 
 __RadPane__ is a flexible {{ site.framework_name }} control that can be either in docked or in floating state. Each newly created RadPane is docked by default in the root container but you can change this behavior either using the methods explained below or the properties (i.e. __InitialPosition__) exposed by the [RadSplitContainer]({%slug raddocking-features-split-container%}).
 

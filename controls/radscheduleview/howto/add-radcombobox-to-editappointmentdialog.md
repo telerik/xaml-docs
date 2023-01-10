@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Add Control to the EditAppointmentDialog
+# {{ site.framework_name }} RadScheduleView Add Control to the EditAppointmentDialog
 
 This article shows how to extend the UI of the EditAppointmentDialog by adding a custom control in it. To do this, you will need to edit the __ControlTemplate__ of the __SchedulerDialog__ control.
 

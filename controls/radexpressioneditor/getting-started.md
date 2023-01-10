@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadExpressionEditor Getting Started
 
 This tutorial will walk your through the creation of a sample application containing __RadExpressionEditor__ and will show you how to: 
 

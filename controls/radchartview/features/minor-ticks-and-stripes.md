@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Minor Ticks and Stripes
+# {{ site.framework_name }} RadChartView Minor Ticks and Stripes
 
 As of **R2 2022** the RadChartView control allows you to display **minor ticks and stripes** in addition to the major ticks and stripes.
 

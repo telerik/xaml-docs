@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# ErrorBarSeries
+# {{ site.framework_name }} RadChartView ErrorBarSeries
 
 This type of series visualizes its data points using error bar shapes. 
 

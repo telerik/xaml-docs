@@ -8,7 +8,7 @@ published: True
 position: 100
 ---
 
-# Events
+# {{ site.framework_name }} RadAutoCompleteBox Events
 
 The __RadAutoCompleteBox__ exposes almost all of the **TextBox** events. Additionally, it provides the following events:
 

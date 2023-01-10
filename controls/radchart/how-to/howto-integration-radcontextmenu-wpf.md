@@ -9,7 +9,7 @@ position: 4
 site_name: WPF
 ---
 
-# Integration with RadContextMenu
+# {{ site.framework_name }} RadChart Integration with RadContextMenu
 
 
 

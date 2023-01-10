@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Grouping and Aggregation
+# {{ site.framework_name }} RadChart Grouping and Aggregation
 
 
 

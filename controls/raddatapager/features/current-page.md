@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Current Page
+# {{ site.framework_name }} RadDataPager Current Page
 
 
 >tip If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.

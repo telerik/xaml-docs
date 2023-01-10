@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Selection Box Template
+# {{ site.framework_name }} RadComboBox Selection Box Template
 
 The selection box template allows you to define a DataTemplate for the selected item, thus customizing the [Selection Box]({%slug radcombobox-general-information-visual-structure%}) part of RadComboBox. 
 

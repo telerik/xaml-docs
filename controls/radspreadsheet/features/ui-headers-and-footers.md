@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Headers and Footers
+# {{ site.framework_name }} RadSpreadsheet Headers and Footers
 
 
 The Headers and Footers functionality enables you to add rich text content in the page margins when laying out a worksheet to pages. This functionality is useful in scenarios like [exporting to PDF](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/pdf/pdfformatprovider), [printing]({%slug radspreadsheet-ui-printing%}) or [importing/exporting to XLSX](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/xlsx/xlsxformatprovider). 

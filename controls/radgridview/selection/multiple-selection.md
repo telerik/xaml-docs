@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Multiple Selection
+# {{ site.framework_name }} RadGridView Multiple Selection
 
 __RadGridView__ allows users to select more than one item from the displayed data. By default only a single row/cell can be selected at a time but you can set the __SelectionMode__ property to either __Multiple__ or __Extended__ to enable multiple selection.
 

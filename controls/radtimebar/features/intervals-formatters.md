@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Intervals Formatters
+# {{ site.framework_name }} RadTimeBar Intervals Formatters
 
 
 

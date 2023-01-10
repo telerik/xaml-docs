@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Use TargetPhysicalFolder
+# {{ site.framework_name }} RadUpload Use TargetPhysicalFolder
 
 This article shows how to use the __TargetPhysicalFolder__ property of RadUpload.
 

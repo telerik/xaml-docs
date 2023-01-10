@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customizing the DropDownItemTemplate and DropDownItemTemplateSelector
+# {{ site.framework_name }} RadAutoCompleteBox Customizing the DropDownItemTemplate and DropDownItemTemplateSelector
 
 In the __RadAutoCompleteBox__ control you can customize the way items are rendered in the DropDown portion of the control. You can do that by setting the __DropDownItemTemplate__ or __DropDownItemTemplateSelector__ properties. They allow you to show different templates for the DropDown items.
 

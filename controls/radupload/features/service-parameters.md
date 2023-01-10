@@ -9,7 +9,7 @@ position: 3
 site_name: Silverlight
 ---
 
-# Upload Service Parameters
+# {{ site.framework_name }} RadUpload Upload Service Parameters
 
 Sometimes you may need to pass custom parameters to the upload service. 
 

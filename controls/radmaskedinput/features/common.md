@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Common
+# {{ site.framework_name }} RadMaskedInput Common
 
 This article lists features that are common between the __RadMaskedInput__ controls.
 

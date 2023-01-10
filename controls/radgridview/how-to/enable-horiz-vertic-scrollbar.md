@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Enable Horizontal and Vertical Scrollbar 
+# {{ site.framework_name }} RadGridView Enable Horizontal and Vertical Scrollbar
 
 In order to enable horizontal and/or vertical scrollbars you need to set the __ScrollViewer__'s attached properties __HorizontalScrollBarVisibility__ and/or __VerticalScrollBarVisibility__.
 

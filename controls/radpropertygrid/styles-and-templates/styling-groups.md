@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling Groups
+# {{ site.framework_name }} RadPropertyGrid Styling Groups
 
 This article will show you how to assign a common style for all the groups of the __RadPropertyGrid__. You can achieve this by creating a style and assigning it to the __GroupStyle__ property of the RadPropertyGrid. 
 

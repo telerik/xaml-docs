@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Integrate with services and a RadWindow
+# {{ site.framework_name }} RadBusyIndicator Integrate with services and a RadWindow
 
 This tutorial will show you how to apply a __RadBusyIndicator__ while a long distance calls are being in progress.        
 

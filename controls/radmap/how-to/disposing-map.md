@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Disposing RadMap
+# {{ site.framework_name }} RadMap Disposing RadMap
 
 The RadMap control usually needs to be disposed when you no longer use it. This will release all resources used by the map. To do this you can manually call the __Dispose__ method of the RadMap control.
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Axis
+# {{ site.framework_name }} RadDataBar Axis
 
 RadDataBar provides an additional component that allows you display a data axis.
 

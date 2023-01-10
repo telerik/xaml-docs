@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Mask Tokens
+# {{ site.framework_name }} RadMaskedInput Mask Tokens
 
 The __RadMaskedInput__ controls expose a __Mask__ property to allow you to further restrict the user's input accordingly to the __MaskedInput__ control definition. Bellow you can find a list with some of the most commonly used Mask tokens.	  
 

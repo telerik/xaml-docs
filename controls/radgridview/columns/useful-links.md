@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Useful Links
+# {{ site.framework_name }} RadGridView Useful Links
 
 ## Online Demos 
 {% if site.site_name == 'Silverlight' %}

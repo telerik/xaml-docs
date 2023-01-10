@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Populating With Data RadPivotMap
+# {{ site.framework_name }} RadTreeMap Populating With Data RadPivotMap
 
 __RadPivotMap__ expects data in tabular format and displays a treemap with grouped data, according to the *GroupDefinition*-s set.
 

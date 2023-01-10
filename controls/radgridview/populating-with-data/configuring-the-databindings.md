@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Configure the Data Bindings
+# {{ site.framework_name }} RadGridView Configure the Data Bindings
 
 This article will list the possible types of sources Telerik's {{ site.framework_name }} RadGridView can handle and guide you through the process of binding the control to a collection of items and configuring the data bindings for its columns.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Set Custom Appointment Height
+# {{ site.framework_name }} RadScheduleView Set Custom Appointment Height
 
 
 With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% else %}Silverlight{% endif %}, __RadScheduleView__ provides brand new customization feature for the MonthViewDefinition. Now it is possible to set different heights of the appointments by using a custom [AppointmentStyleSelector]({%slug radscheduleview-styles-and-templates-appointment-style%}#create-a-custom-appointmentstyleselector).      

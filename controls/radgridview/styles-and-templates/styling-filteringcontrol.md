@@ -8,7 +8,7 @@ published: True
 position: 19
 ---
 
-# Styling FilteringControl and FilteringDropDown
+# {{ site.framework_name }} RadGridView Styling FilteringControl and FilteringDropDown
 
 In this topic we will discuss:
 

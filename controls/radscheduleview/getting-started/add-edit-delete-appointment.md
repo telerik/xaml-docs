@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Understanding Appointments
+# {{ site.framework_name }} RadScheduleView Understanding Appointments
 
 The __Appointment__ class represents a single piece of data that is visualized in the __RadScheduleView__. Each __Appointment__ has various properties such as __Subject, Start, End, TimeZone__, etc. You can also assign [Resources]({%slug radscheduleview-features-resources%}), [Categories]({%slug radscheduleview-features-categories%}) and [TimeMarkers]({%slug radscheduleview-features-timemarkers%}) to the appointments. 
 

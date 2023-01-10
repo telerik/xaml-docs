@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Menu Items
+# {{ site.framework_name }} RadMenu Menu Items
 
 In __RadMenu__ basically there are three types of menu items which provide different ways to display the data in a hierarchical structure. They are as follows:  
 

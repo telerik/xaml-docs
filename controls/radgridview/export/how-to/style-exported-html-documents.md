@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Style Exported Html
+# {{ site.framework_name }} RadGridView Style Exported Html
 
 You can use the ExportFormat.Html to export RadGridView in HTML format.
 

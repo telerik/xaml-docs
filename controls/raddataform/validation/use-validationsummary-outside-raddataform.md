@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Use DataFormValidationSummary outside RadDataForm
+# {{ site.framework_name }} RadDataForm Use DataFormValidationSummary outside RadDataForm
 
 As of __R2 2016 SP1__, __DataFormValidationSummary__ is exposed to be used outside the context of __RadDataForm__. The control provides the following properties:
 

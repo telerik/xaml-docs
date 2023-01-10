@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Filter Descriptors
+# {{ site.framework_name }} RadDataFilter Filter Descriptors
 
 The __RadDataFilter__ exposes a __FilterDescriptors__ collection, which contains the __FilterDescriptor__ objects which represent the user's filtering criteria, made via the UI. You can use this collection to either get the currently available __FilterDescriptor__ objects or to predefine the default filtering criteria. 
 

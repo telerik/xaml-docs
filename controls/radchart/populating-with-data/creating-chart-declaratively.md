@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Creating a Chart Declaratively
+# {{ site.framework_name }} RadChart Creating a Chart Declaratively
 
 
 

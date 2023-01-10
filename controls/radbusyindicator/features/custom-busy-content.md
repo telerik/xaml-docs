@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Custom Busy Content
+# {{ site.framework_name }} RadBusyIndicator Custom Busy Content
 
 __RadBusyIndicator__ provides the option to customize what's shown in the __RadBusyIndicator's__ content while the indicator is active through its __BusyContent__ and __BusyContentTemplate__ properties. We will cover them in the following sections:
 

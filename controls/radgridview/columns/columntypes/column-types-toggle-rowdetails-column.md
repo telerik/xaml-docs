@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Toggle RowDetails Column
+# {{ site.framework_name }} RadGridView Toggle RowDetails Column
 
 __GridViewToggleRowDetailsColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class, which means that it isn't used to display data. The column is represented by an __GridViewToggleButton__ control. Clicking on it will show [RowDetails]({%slug radgridview-row-details-overview%}) if they are available. 
 

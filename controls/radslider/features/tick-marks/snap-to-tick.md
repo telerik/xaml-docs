@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Snap to Tick
+# {{ site.framework_name }} RadSlider Snap to Tick
 
 
 

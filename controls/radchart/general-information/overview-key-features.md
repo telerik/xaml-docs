@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Key Features
+# {{ site.framework_name }} RadChart Key Features
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_KeyFeatures_1.png)
 

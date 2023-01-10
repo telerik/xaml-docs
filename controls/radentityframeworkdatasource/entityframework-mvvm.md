@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# MVVM Usage
+# {{ site.framework_name }} RadEntityFrameworkDataSource MVVM Usage
 
 This article shows how to create a database using the code-first approach and display data with the help of RadEntityFrameworkDataSource and RadGridView.
 

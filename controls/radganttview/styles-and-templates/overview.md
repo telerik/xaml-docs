@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# GanttView Styles
+# {{ site.framework_name }} RadGanttView GanttView Styles
 
 {% if site.site_name == 'Silverlight' %}__RadGanttView__ supports styling only with Implicit Styles.{% endif %} You can check how to set a theme to the control in [this topic]({%slug radganttview-styles-and-templates-setting-theme%}). Using implicit styles makes it much easier to customize different parts of the control.
 

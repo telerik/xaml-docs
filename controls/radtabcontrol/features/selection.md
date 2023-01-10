@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Selection
+# {{ site.framework_name }} RadTabControl Selection
 
 __RadTabControl__ exposes several useful properties and events, which can help you to work with items selection.
         

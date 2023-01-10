@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Color Ranges
+# {{ site.framework_name }} RadCircularProgressBar Color Ranges
 
 `RadCircularProgressBar` supports setting different color ranges for the progress indicator. This is done by adding `ProgressBarColorRange` instances to the control's `ColorRanges` collection. To specify the start and end ranges of ProgressBarColorRange, set the `Start` and `End` properties. These properties are of type `double`. To specify the color for the color range, set its `Color` property.
 

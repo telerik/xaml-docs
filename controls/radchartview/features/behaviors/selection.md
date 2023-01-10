@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Selection
+# {{ site.framework_name }} RadChartView Selection
 
 The chart selection behavior enables interactions with the data point visual elements.
 

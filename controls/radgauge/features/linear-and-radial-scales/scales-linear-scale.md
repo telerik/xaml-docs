@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Linear Scale
+# {{ site.framework_name }} RadGauge Linear Scale
 
 The __LinearScale__ control allows you to display a scale of linear form. Typically the __LinearScale__ is used in the __LinearGauge__ control, but it can directly used in the other __Gauge__ controls available or even on its own. This topic will explain you the specifics regarding the usage of the __LinearScale__ control.
 

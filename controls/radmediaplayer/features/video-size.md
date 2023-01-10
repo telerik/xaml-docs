@@ -8,7 +8,7 @@ publish: True
 position: 3
 ---
 
-# Video size
+# {{ site.framework_name }} RadMediaPlayer Video size
 
 The __VideoWidth__ and __VideoHeight__ properties allow you to manipulate the size of the __MediaElement__ inside __RadMediaPlayer__. By default, the two properties have a value of __Double.NaN__ which means that the __MediaElement__ will take up as much space as the control has reserved for it. 
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadScheduleView Types and Sources
+# {{ site.framework_name }} RadScheduleView RadScheduleView Types and Sources
 
 The ScheduleView control exposes several Sources that enable data binding:
 

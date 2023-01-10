@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Button
+# {{ site.framework_name }} RadButtons Button
 
 The __RadButton__ control inherits from the __Button__ control and implements the __ICommandSource__ interface. Because of the inheritance it has all of the features that the standard __Button__ control has. Moreover, the __ICommandSource__ implementation allows you to attach commands to the button, which will get executed when it gets clicked.	  
 

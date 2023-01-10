@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Find a control in RowDetailsTemplate
+# {{ site.framework_name }} RadGridView Find a control in RowDetailsTemplate
 
 This article demonstrates how to find a control which is placed in the DataTemplate of the __RowDetailsTemplate__. 
 

@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadLayoutControl
 ---
 
-# Overview
+# {{ site.framework_name }} RadLayoutControl Overview
 
 __RadLayoutControl__ is a flexible component that allows you to arrange visual elements inside its boundaries. Thus helping you to create complex layouts that can be rearranged at runtime.
 

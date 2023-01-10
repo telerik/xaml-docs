@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Selection
+# {{ site.framework_name }} RadHeatMap Selection
 
 The RadHeatMap control allows you to select its cells visually. A border around the cell represents this functionality, and it is disabled by default. To enable it, you need to set the __SelectionMode__, __SelectedCellBorderColor__ and __SelectedCellBorderThickness__ properties of the RadHeatMap.  
 

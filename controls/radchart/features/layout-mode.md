@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Layout Mode
+# {{ site.framework_name }} RadChart Layout Mode
 
 
 

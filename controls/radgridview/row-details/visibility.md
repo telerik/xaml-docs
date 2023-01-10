@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Row Details Visibility
+# {{ site.framework_name }} RadGridView Row Details Visibility
 
 The display mode of the __Row Details__ can be specified by using the __RowDetailsVisibilityMode__ property. It can have one of the following values: 
 

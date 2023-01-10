@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# StepAreaSeries
+# {{ site.framework_name }} RadChartView StepAreaSeries
 
 The __StepAreaSeries__ is visualized on the screen as a horizontal and vertical line instead of straight line which connects all data points. The area between the line is colored in an arbitrary way. By default the colors of the line and the area are the same.
 

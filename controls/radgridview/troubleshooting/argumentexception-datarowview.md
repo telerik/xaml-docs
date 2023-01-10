@@ -9,7 +9,7 @@ position: 18
 site_name: WPF
 ---
 
-# First Chance 'System.ArgumentException'
+# {{ site.framework_name }} RadGridView First Chance 'System.ArgumentException'
 
 __PROBLEM__
 

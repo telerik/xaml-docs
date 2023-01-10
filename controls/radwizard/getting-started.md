@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadWizard Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains a __RadWizard__ control.
 

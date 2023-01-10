@@ -8,7 +8,7 @@ published: False
 position: 1
 ---
 
-# Changes and Backwards Compatibility
+# {{ site.framework_name }} RadCoverflow Changes and Backwards Compatibility
 
 
 

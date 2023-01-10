@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Culture Support
+# {{ site.framework_name }} RadPivotGrid Culture Support
 
 
 With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, the __LocalDataSourceProvider__ provides a brand new __Culture__ support option. Now it is possible to localize the underlying data using the CurrentCulture of the user or any other Culture. For example, this will allow you to display the names of the Months in the desired language, use the currency symbol from the specified culture and format the values with the correct separator.      

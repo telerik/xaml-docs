@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Updating an Entry
+# {{ site.framework_name }} RadGridView Updating an Entry
 
 Using the __RadGridView__, you can edit the data displayed in it. The data is edited in rows, which means that when a row is in edit mode, you can edit all of the fields that it contains.
 

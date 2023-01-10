@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadTreeView Visual Structure
 
 This section defines terms and concepts used in the scope of __RadTreeView__ you have to get familiar with prior to continue reading this help.
 

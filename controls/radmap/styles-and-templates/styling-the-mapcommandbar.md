@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the MapCommandBar
+# {{ site.framework_name }} RadMap Styling the MapCommandBar
 
 The __MapCommandBar__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 

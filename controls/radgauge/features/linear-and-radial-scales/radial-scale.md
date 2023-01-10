@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Radial Scale
+# {{ site.framework_name }} RadGauge Radial Scale
 
 This topic will explain you the specifics regarding the usage of the __RadialScale__ control.
 

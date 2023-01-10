@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Grouping Modes
+# {{ site.framework_name }} RadGridView Grouping Modes
 
 As of __Q3 2012__ we have introduced a new property of the RadGridView control - __GroupRenderMode__. It has two possible values:
 

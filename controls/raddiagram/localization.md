@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Localization
+# {{ site.framework_name }} RadDiagram Localization
 
 This tutorial describes the localization support implemented in the RadDiagram elements
 

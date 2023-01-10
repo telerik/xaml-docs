@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Settings
+# {{ site.framework_name }} RadRichTextBox Settings
 
 __PdfFormatProvider__ allows for export of PDF documents and respectively export of RadRichTextBox to PDF. Additionally, the export settings provide modification options. The current article outlines the available settings.
 

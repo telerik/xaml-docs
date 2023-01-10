@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Opening and Closing Delays
+# {{ site.framework_name }} RadContextMenu Opening and Closing Delays
 
 The __RadContextMenu__ allows you to specify a delay for the closing and opening actions of its child items. This means that you make the __RadContextMenu__ wait for a specific amount of time before opening or closing a sub menu. In order to specify these delays you can set the __ShowDelay__ and __HideDelay__ properties. They are of type __Duration__ and have the following format in XAML "0:0:0.00".
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadTaskBoard Key Properties
 
 This article will list the key properties provided by the RadTaskBoard control.
 

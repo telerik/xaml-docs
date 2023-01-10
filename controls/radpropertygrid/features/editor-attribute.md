@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Editor Attribute
+# {{ site.framework_name }} RadPropertyGrid Editor Attribute
 
 RadPropertyGrid provides support for the Telerik attribute __EditorAttribute__ that enables the user to define an editor for each property directly in its definition.
 

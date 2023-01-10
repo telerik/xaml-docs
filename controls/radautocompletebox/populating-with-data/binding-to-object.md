@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Binding To Object
+# {{ site.framework_name }} RadAutoCompleteBox Binding To Object
 
 To bind __RadAutoCompleteBox__ to a collection of business object, you should use its ItemsSource property.
 

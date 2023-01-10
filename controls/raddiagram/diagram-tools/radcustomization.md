@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Tools Customization
+# {{ site.framework_name }} RadDiagram Tools Customization
 
 __RadDiagram__ provides a list of all available tools, which you can easily change to better fit your applicaiton logic. You can remove built-in tools, create custom ones and add them to the list or replace existing ones with them.
 

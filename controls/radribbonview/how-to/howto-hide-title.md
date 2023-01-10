@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Hide The Title
+# {{ site.framework_name }} RadRibbonView Hide The Title
 
 The __RadRibbonView__'s API allows you to hide the __Title__ bar of your ribbon control
 

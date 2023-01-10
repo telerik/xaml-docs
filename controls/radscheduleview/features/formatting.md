@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Formatting
+# {{ site.framework_name }} RadScheduleView Formatting
 
 The __RadScheduleView__ control provides a built-in date formatting support. Each ScheduleView ViewDefinition can be easily customized to display dates and times on the time ruler and in the GroupHeaders in custom formats.      
 

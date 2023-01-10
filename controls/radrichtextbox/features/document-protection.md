@@ -7,7 +7,7 @@ tags: document,protection
 published: True
 ---
 
-# Document Protection
+# {{ site.framework_name }} RadRichTextBox Document Protection
 
 
 

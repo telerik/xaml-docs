@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Deleting an Entry
+# {{ site.framework_name }} RadGridView Deleting an Entry
 
 The __RadGridView__ has no built-in deleting functionality, but there is no need of such, as it provides you with all the things you need to implement one. This implementation consists of manually removing the desired items from the __ItemsSource__ collection of the __RadGridView__. 
 

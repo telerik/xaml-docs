@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# RadFixedDocument
+# {{ site.framework_name }} RadPdfViewer RadFixedDocument
 
 
 

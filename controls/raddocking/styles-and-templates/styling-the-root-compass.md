@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Styling the RootCompass
+# {{ site.framework_name }} RadDocking Styling the RootCompass
 
 The compasses that you see, when rearranging the containers in the __RadDocking__ control, are represented by the __Compass__ and __RootCompass__ controls. The one that marks the possible docking positions within the root container is the [RootCompass]({%slug raddocking-features-compass%}#root-compass) control. This article will demonstrate how to create a style targeting RootCompass.
 

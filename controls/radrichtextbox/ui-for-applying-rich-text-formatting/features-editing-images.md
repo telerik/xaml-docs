@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Editing Images
+# {{ site.framework_name }} RadRichTextBox Editing Images
 
 
 

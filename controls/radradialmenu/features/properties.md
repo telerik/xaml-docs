@@ -8,7 +8,7 @@ published: False
 position: 0
 ---
 
-# Properties
+# {{ site.framework_name }} RadRadialMenu Properties
 
 This topic describes all properties of __RadRadialMenu__ control and its elements.
         For more information about the structure of the menu you can take a look at the [Visual Structure]({%slug radradialmenu-visual-structure%}) article.

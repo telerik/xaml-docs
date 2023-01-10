@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# MenuItemsSource 
+# {{ site.framework_name }} RadDesktopAlert MenuItemsSource
 
 With the Q3 2015 release version of UI for WPF the ability to place a DropDownButton with menu inside __RadDeskotopAlert__ next to the close button is now available. 
 

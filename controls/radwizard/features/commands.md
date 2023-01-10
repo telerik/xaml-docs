@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Commands
+# {{ site.framework_name }} RadWizard Commands
 
 __RadWizard__ provides a set of built-in commands that enables you to easily handle the User Interface actions, but still make your logic independent of the UI layout. 
 

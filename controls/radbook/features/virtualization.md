@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# UI Virtualization
+# {{ site.framework_name }} RadBook UI Virtualization
 
 The __RadBook__ API supports __UI Virtualization__, which means that __RadBook__ will generate the minimal number of __RadBookItem__ containers for a successful page flip. This significantly reduces the memory footprint of the application and speeds up the loading time thus enhancing additionally the UI performance.
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# End-User Capabilities
+# {{ site.framework_name }} RadWindow End-User Capabilities
 
 The user is capable of doing the following actions via the UI provided by the __RadWindow__:
 

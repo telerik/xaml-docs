@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# SerializableGraphSourceBase
+# {{ site.framework_name }} RadDiagram SerializableGraphSourceBase
 
 Telerik Diagramming Framework provides a list of __ViewModels__ defined in the __Telerik.Windows.Controls.Diagrams.Extensions.dll__.	  
 

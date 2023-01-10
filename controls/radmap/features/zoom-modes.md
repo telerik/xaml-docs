@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Zooming
+# {{ site.framework_name }} RadMap Zooming
 
 The __RadMap__ allows the user to zoom in and zoom out the content of the map. 
 

@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Disable Default Animation in RadTreeView
+# {{ site.framework_name }} RadTreeView Disable Default Animation in RadTreeView
 
 By default the __RadTreeView__ control's items are __expanded__ and __collapsed__ with an animation. However, there are cases when you might want to disable these animations, e.g. when you have a large number of subitems and it takes a longer time for the animations to complete. To disable the default animations, all you have to do is to set the following attached property to the __RadTreeView__ control:  
 

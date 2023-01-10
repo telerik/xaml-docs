@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Appearance
+# {{ site.framework_name }} RadColorPicker Appearance
 
 You can customize the appearance of the palettes using the __ItemsPanel__ property:
 

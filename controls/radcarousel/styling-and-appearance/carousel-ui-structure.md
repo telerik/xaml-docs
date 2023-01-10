@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# UI Structure
+# {{ site.framework_name }} RadCarousel UI Structure
 
 Knowing the visual structure of a control is fundamental for creating new custom themes and [custom styles]({%slug carousel-global-styles%}). This topic will present the building blocks of the [RadCarousel]({%slug carousel-overview%}), thus help you to better understand its UI structure.
 

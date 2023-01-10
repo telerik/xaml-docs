@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Display Modes
+# {{ site.framework_name }} RadDataPager Display Modes
 
 
 

@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Annotation Labels
+# {{ site.framework_name }} RadChartView Annotation Labels
 
 The CartesianStrokedAnnotation class provides infrastructure for annotation labels.
 

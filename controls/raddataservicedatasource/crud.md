@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# CRUD
+# {{ site.framework_name }} RadDataServiceDataSource CRUD
 
 You can utilize all CRUD operations by working with the __DataView__ property of the __RadDataServiceDataSource__ control and add, edit or remove entities from the collection which is of type **DataItemCollection**. You can do that either programmatically via the API of the collection or leave the job to __RadGridView__ by binding its __ItemsSource__ to the DataView.
 

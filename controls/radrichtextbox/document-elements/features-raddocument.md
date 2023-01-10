@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadDocument
+# {{ site.framework_name }} RadRichTextBox RadDocument
 
 
 __RadDocument__ is the root element for __RadRichTextBox's__ content. It holds the collection of __Sections__ defined for the __RadRichTextBox__ content. It also enables you to configure the appearance of its child elements.

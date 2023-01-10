@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Binding to Object
+# {{ site.framework_name }} RadRadialMenu Binding to Object
 
 With the __Q1 2015__ release version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadRadialMenu__ provides a new way to easily populate its items in a MVVM manner. The control now supports data binding to a collection of business objects through the new __ItemsSource__ property. 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# SpellChecking Custom Controls
+# {{ site.framework_name }} RadSpellChecker SpellChecking Custom Controls
 
 
 

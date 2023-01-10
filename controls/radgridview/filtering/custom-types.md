@@ -8,7 +8,7 @@ published: False
 position: 7
 ---
 
-# Filtering Custom Types
+# {{ site.framework_name }} RadGridView Filtering Custom Types
 
 If you want to filter a column that is __data-bound to a custom type__, you need to make sure that your custom type meets certain criteria. This article is a step-by-step tutorial on how to implement your __own filtering__ for the custom type.
 

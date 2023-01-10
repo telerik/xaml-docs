@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Extensions Overview
+# {{ site.framework_name }} RadDiagram Extensions Overview
 
 The __Telerik Diagramming Framework__ comes with a set of controls and features assembled in the __Telerik.Windows.Controls.Diagrams.Extensions.dll__. The assembly contains the following controls and classes:
 

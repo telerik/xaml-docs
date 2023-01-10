@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Binding to Dynamic Data
+# {{ site.framework_name }} RadContextMenu Binding to Dynamic Data
 
 The data displayed in the __RadContextMenu__ has a hierarchical structure (similar to the __RadTreeView__). This means that each item may come with a set of items on its own. For that reason you have to use the __ItemContainerStyle__. This tutorial will walk you through the most important steps in creating, configuring and applying __ItemContainerStyle__ to your __RadContextMenu__.
 

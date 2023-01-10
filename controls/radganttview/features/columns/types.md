@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadGanttView Overview
 
 In __RadGanttView__ Tasks fields are displayed in different columns. Two types of columns can be defined in the control: __Column__ and __TreeColumn__. TreeColumn is a special type of column that is used to visualize tasks and their children in a tree structure. Both types of columns have the following customizable Templates: CellTemplate, CellEditTemplate, CellHighlightTemplate, and CellSelectionTemplate.
 

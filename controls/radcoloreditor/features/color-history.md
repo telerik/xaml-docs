@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Color History
+# {{ site.framework_name }} RadColorEditor Color History
 
 The __RadColorEditor__ control enables you to keep track of the previously selected colors through a set of properties.
 

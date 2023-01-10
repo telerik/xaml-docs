@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# MEF
+# {{ site.framework_name }} RadRichTextBox MEF
 
 __RadRichTextBox__ uses the [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx) in order to provide customization options, such as creating and utilizing custom dialogs and pop-ups, format providers and dictionaries for spellchecking. It finds and loads the types from the assemblies and they can be used without being explicitly initialized.
 

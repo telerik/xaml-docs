@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Customizing Dialog Windows
+# {{ site.framework_name }} RadScheduleView Customizing Dialog Windows
 
 >To customize the RadScheduleView dialogs, e.g. the window content, please read the [Custom Dialogs]({%slug radscheduleview-features-custom-dialogs%}) article
 

@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Templating the Point Marks
+# {{ site.framework_name }} RadChart Templating the Point Marks
 
 
 

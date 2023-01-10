@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadDocking Visual Structure
 
 This section defines the terms and the concepts used in the scope of __RadDocking__ which you have to get familiar with prior to continue reading this help.
 

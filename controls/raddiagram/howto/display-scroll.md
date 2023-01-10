@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Display ScrollViewer Inside the Diagram
+# {{ site.framework_name }} RadDiagram Display ScrollViewer Inside the Diagram
 
 This tutorial describes how to display the RadDiagram built-in ScrollViewer.
 

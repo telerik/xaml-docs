@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Backward Compatibility
+# {{ site.framework_name }} RadGridView Backward Compatibility
 
 ## Latest Release Notes
 

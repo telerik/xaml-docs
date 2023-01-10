@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# AnnotationsProvider
+# {{ site.framework_name }} RadChartView AnnotationsProvider
 
 RadChartView supports an annotations provider that is used for creating chart annotations in a data-bound scenario. Basically, the provider accepts a collection of models describing the annotations and a descriptor (or descriptors) that defines their type and appearance.
 

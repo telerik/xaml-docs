@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Value Mode
+# {{ site.framework_name }} RadMaskedInput Value Mode
 
 > This feature is supported only in __RadMaskedTextInput__.
 

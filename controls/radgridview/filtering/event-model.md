@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Event Model
+# {{ site.framework_name }} RadGridView Event Model
 
 RadGridView provides a rich filtering event model that allows customization and configuration of the default filtering behavior.
 

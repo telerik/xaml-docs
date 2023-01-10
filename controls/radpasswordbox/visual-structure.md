@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadPasswordBox Visual Structure
 
 This article describes all the visual elements and terms used in __RadPasswordBox__ control. 
 

@@ -9,7 +9,7 @@ position: 4
 site_name: Silverlight
 ---
 
-# File Size and Count Limitation
+# {{ site.framework_name }} RadUpload File Size and Count Limitation
 
 The __RadUpload__ allows you to apply some limitations regarding the size and the count of the files which the user wants to upload. This topic will explain the following:
 

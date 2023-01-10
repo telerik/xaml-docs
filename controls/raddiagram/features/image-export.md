@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Image Export
+# {{ site.framework_name }} RadDiagram Image Export
 
 This article describes the __RadDiagram ExportToImage__ feature.
 

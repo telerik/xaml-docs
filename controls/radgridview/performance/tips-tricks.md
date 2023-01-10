@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Tips and Tricks
+# {{ site.framework_name }} RadGridView Tips and Tricks
 
 __RadGridView__'s API allows you to tweak your application for optimal performance. To get the best out of the control you have to be familiar with the following performance tips.
 

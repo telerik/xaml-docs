@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# ScatterLineSeries
+# {{ site.framework_name }} RadChartView ScatterLineSeries
 
 This series is visualized on the screen as a straight line connecting all data points. As all scatter series, this one also requires the RadCartesianChart to define two LinearAxis as vertical and horizontal axis.
   

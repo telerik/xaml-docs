@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Performance - Useful Links
+# {{ site.framework_name }} RadGridView Performance - Useful Links
 
 ## Online Demos
 

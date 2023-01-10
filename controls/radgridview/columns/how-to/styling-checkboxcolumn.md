@@ -7,7 +7,8 @@ tags: style,gridviewcheckboxcolumn
 published: True
 position: 13
 ---
-# Style the GridViewCheckBoxColumn
+
+# {{ site.framework_name }} RadGridView Style the GridViewCheckBoxColumn
 
 To learn how to style __GridViewCheckBoxColumn__ read [this]({%slug gridview-columns-styling-checkboxcolumn%}) help article.
 

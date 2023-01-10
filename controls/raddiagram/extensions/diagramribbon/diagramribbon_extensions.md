@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Extensions
+# {{ site.framework_name }} RadDiagram Extensions
 
 The __RadDiagramRibbon__ control allows you to easily add one or all of the following RadDiagram and RadRibbonView extensions. This way you can give the user ability to show/hide any of the specified extensions dynamically.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Message Reports
+# {{ site.framework_name }} RadChat Message Reports
 
 * [Default Response Actions](#default-response-actions)
 * [Handling the Response](#handling-the-response)

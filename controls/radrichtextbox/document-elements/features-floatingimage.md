@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Floating Images
+# {{ site.framework_name }} RadRichTextBox Floating Images
 
 The floating images in RadRichTextBox are represented as inline images wrapped in floating block containers. This functionality allows images to be displayed inside the document and positioned on its own line or wrapped up by the content around. 
 

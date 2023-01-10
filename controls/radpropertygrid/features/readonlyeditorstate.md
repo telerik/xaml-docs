@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# ReadOnlyEditorState
+# {{ site.framework_name }} RadPropertyGrid ReadOnlyEditorState
 
 As of __Q1 2014__ release we have introduced a new property of RadPropertyGrid - __ReadOnlyEditorState__.
 

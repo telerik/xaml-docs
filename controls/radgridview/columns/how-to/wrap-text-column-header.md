@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Wrap the Text in the Column Header
+# {{ site.framework_name }} RadGridView Wrap the Text in the Column Header
 
 This article shows how you can wrap the text of the column header, i.e. to have a multi-line text in the header. The end result will look like this:
 

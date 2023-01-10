@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Sound
+# {{ site.framework_name }} RadDesktopAlert Sound
 
 RadDesktopAlert allows you to play a sound when the alert is shown.
 

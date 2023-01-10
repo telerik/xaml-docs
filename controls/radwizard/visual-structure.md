@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadWizard Visual Structure
 
 Below you can see the structure of a standard __WizardPage__ in a wizard control. 
 

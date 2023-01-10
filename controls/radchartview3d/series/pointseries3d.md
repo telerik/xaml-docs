@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# PointSeries3D
+# {{ site.framework_name }} RadChartView3D PointSeries3D
 
 The point series visualizes three dimensional data represented by ellipsoid shapes (spheres by default). Each data point is defined by X, Z and Y values which determines its position in the plot area. The size of the shapes is defined via the __PointSize__ property of the series.
 

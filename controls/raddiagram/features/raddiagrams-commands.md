@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Commands
+# {{ site.framework_name }} RadDiagram Commands
 
 __RadDiagram__ provides a powerful set of __RoutedUICommands__ that help you work with your __RadDiagram__ and its Items easily and build better MVVM applications.	  
 

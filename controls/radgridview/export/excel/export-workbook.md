@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# ExportToWorkbook
+# {{ site.framework_name }} RadGridView ExportToWorkbook
 
 In __R1 2016__ we introduced a new extension method related to the exporting of RadGridView - *ExportToWorkbook()*. You can use it if you need to modify the content of the exported RadGridView and avoid styling the document manually.
 

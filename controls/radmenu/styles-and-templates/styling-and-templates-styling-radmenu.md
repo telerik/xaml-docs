@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the RadMenu
+# {{ site.framework_name }} RadMenu Styling the RadMenu
 
 In order to style a RadMenu element, you can set the __Style__ property of the control or create an implicit style targeting RadMenu. 
 

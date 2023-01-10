@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Resizing and Item Positions
+# {{ site.framework_name }} RadOutlookBar Resizing and Item Positions
 
 This article describes the resizing feature and the item areas of RadOutlookBar.
 

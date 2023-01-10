@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Binding to CollectionViewSource
+# {{ site.framework_name }} RadTaskBoard Binding to CollectionViewSource
 
 __RadTaskBoard__ accepts __CollectionViewSource__ as data source and it will evaluate its __GroupDescriptions__ and generate corresponding columns based on that.
 

@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Styling the Point Marks
+# {{ site.framework_name }} RadChart Styling the Point Marks
 
 
 

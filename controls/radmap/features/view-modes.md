@@ -8,7 +8,7 @@ published: False
 position: 4
 ---
 
-# View Modes
+# {{ site.framework_name }} RadMap View Modes
 
 The __RadMap__ allows you to bring the map in several view modes. After setting the desired view mode, the user is also capable of changing the view, depending on his/her needs. He/She can do it via the button with the eye-like icon, which represents the command bar.
         

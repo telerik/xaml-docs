@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# AutoComplete
+# {{ site.framework_name }} RadMultiColumnComboBox AutoComplete
 
 __RadMultiColumnComboBox__ provides a built-in set of auto-completion options. The control exposes the __AutoCompleteMode__ property for setting them. It is an enumeration that has the __Suggest, Append, SuggestAppend and Search__ values. This topic will go through each one of them.
 

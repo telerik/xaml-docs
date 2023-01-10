@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Customize the TreeViewDragVisual
+# {{ site.framework_name }} RadTreeView Customize the TreeViewDragVisual
 
 When you use the __RadTreeView's__ [DragDrop]({%slug radtreeview-features-drag-and-drop%}) feature, the control internally creates and uses a __TreeViewDragVisual__ object. The drag visual has the following visual structure:  
 

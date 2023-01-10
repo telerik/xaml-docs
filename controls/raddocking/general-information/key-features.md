@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Key Features
+# {{ site.framework_name }} RadDocking Key Features
  
 ![{{ site.framework_name }} RadDocking Key Features](images/RadDocking_GeneralInformation_KeyFeatures_010.png)
 

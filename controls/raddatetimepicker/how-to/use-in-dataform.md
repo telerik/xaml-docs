@@ -9,7 +9,7 @@ position: 4
 site_name: Silverlight
 ---
 
-# How to use RadDateTimePicker in a DataForm
+# {{ site.framework_name }} RadDateTimePicker How to use RadDateTimePicker in a DataForm
 
 This tutorial will show you how easy and straightforward it might be to use a __RadDateTimePicker__ control in a __DataForm__.
 

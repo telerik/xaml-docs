@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Ribbon RadioButton
+# {{ site.framework_name }} RadRibbonView Ribbon RadioButton
 
 The __RadRibbonRadioButton__ represents an extension of the __RadRadioButton__. It provides an easier interaction with the __RadRibbonView__ control. What is special about the __RadRibbonRadioButton__ is that it has two states - checked and unchecked. To switch between these states just click on it. Adding several __RadRibbonRadioButtons__ to a __RadRibbonGroup__ allows you to have only one checked at a time.			
 

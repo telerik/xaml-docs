@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Data Bind to Dynamic Object with CLR and Dynamic Properties
+# {{ site.framework_name }} RadGridView Data Bind to Dynamic Object with CLR and Dynamic Properties
 
 This article describes how to implement DynamicObject with dynamic (DLR) and static (CLR) fields, and data bind it to RadGridView.
 

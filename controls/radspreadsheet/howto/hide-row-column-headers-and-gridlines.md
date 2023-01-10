@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Hide Row and Column Headers and Gridlines
+# {{ site.framework_name }} RadSpreadsheet Hide Row and Column Headers and Gridlines
 
 
 

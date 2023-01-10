@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling RadGridView
+# {{ site.framework_name }} RadGridView Styling RadGridView
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of RadGridView]({%slug radgridview-styles-and-templates-templates-structure%}#radgridview).
 

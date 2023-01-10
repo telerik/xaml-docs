@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Military DateTime Parsing
+# {{ site.framework_name }} RadDateTimePicker Military DateTime Parsing
 
 With the Q1 2013 release __RadDateTimePicker__ provides the option to parse the entered DateTime in a military format.
 

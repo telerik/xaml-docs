@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Binding the Color of Series Items
+# {{ site.framework_name }} RadChartView Binding the Color of Series Items
 
 This topic demonstrates how to create charts, where each individual item, has its color bound to a property of the underlying data object.
 

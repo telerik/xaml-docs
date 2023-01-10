@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# AutoComplete
+# {{ site.framework_name }} RadAutoCompleteBox AutoComplete
 
 The main feature of __RadAutoCompleteBox__ control is its AutoComplete functionality. Its behavior can be customized by setting one of the built-in modes.
 

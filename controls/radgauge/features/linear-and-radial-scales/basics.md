@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Basics
+# {{ site.framework_name }} RadGauge Basics
 
 The __GraphicScale__ class is used as a base class for the LinearScale and the RadialScale classes. It provides common functionality for both scales. This topic will explain the major features of the GraphicScale class.
 

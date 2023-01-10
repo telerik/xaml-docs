@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Contextual Tabs
+# {{ site.framework_name }} RadRibbonView Contextual Tabs
 
 A contextual tab allows you to provide the users with a certain UI when they are in a specific context or they have selected a specific element. The contextual tabs are organized in groups, so that the user can see multiple tabs available for a specific context.
 ![Rad Ribbon View Contextual Sample](images/RadRibbonView_Contextual_Sample.png)

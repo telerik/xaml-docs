@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# How to Hide the Minimized Area
+# {{ site.framework_name }} RadOutlookBar How to Hide the Minimized Area
 
 To hide the minimize area you can use the __MinimizedAreaVisibility__ property and set its value to __Collapsed__.
 

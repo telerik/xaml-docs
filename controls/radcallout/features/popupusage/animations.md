@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Animations
+# {{ site.framework_name }} RadCallout Animations
 
 When the __RadCallout__ is placed inside a Popup element, you can add animations. Through the __CalloutPopupSettings__ class, you can animate the showing and/or closing effect of the Popup. You can choose from a variety of built-in animations or create your custom animation effect so that you can add an additional look to the RadCallout. To add animation to the Popup, you just need to set the __ShowAnimationType__ and /or __CloseAnimationType__ property of the settings class.
 

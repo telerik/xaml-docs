@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# In Code-Behind
+# {{ site.framework_name }} RadRating In Code-Behind
 
 This tutorial will walk you through the common tasks of [adding](#Adding_RadRatingItems) and [removing](#Removing_RadRatingItems) __RadRatingItems__ programmatically.			
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Split Button
+# {{ site.framework_name }} RadButtons Split Button
 
 `RadSplitButton` is a UI combination of RadButton and RadDropDownButton.
 

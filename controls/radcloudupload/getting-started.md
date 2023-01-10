@@ -7,7 +7,7 @@ tags: getting,started
 position: 2
 ---
 
-# Getting Started
+# {{ site.framework_name }} RadCloudUpload Getting Started
 
 This tutorial will walk you through the creation of a sample application that contains __RadCloudUpload__.
 

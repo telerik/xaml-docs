@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Editing
+# {{ site.framework_name }} RadCardView Editing
 
 The data fields in RadCardView's cards can be edited via the UI.
 

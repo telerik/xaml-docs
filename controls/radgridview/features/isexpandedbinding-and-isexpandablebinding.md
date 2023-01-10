@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# IsExpandedBinding and IsExpandableBinding
+# {{ site.framework_name }} RadGridView IsExpandedBinding and IsExpandableBinding
 
 > This functionality is available only when  [Hierarchical RadGridView]({%slug gridview-basic-hierarchies%}) is used.
 

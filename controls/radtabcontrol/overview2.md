@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadTabControl
 ---
 
-# Overview
+# {{ site.framework_name }} RadTabControl Overview
 
 Thank you for choosing __RadTabControl__!				
 

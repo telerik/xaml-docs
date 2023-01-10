@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Hide Zero Segments Labels in PieChart 
+# {{ site.framework_name }} RadChartView Hide Zero Segments Labels in PieChart
 
 There are different ways to hide/remove the labels of the zero segments inside __PieChart__. This article will describe how to hide them by setting the __Opacity__ property of the TextBlock which holds the label. __Example 1__ demonstrate a basic scenario where the label of the zero segments will appear. 
 

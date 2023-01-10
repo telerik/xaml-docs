@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Column Footers
+# {{ site.framework_name }} RadGridView Column Footers
 
 RadGridView allows you to display additional information which applies to the columns in a specific row placed at the bottom of the control. This row consists of individual footer cells for each column.
 

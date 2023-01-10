@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Filtering
+# {{ site.framework_name }} RadFileDialogs Filtering
 
 With the __R3 2017 SP 1__ version of Telerik UI for WPF, you can now specify a filter for the __RadOpenFileDialog and RadSaveFileDialog__ dialogs in order to indicate to the user which types of files should be opened or saved. To enable this functionality you can set the __Filter__ and __FilterIndex__ properties. 
 

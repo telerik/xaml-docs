@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling Column Headers
+# {{ site.framework_name }} RadGridView Styling Column Headers
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewHeaderCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheadercell).
 

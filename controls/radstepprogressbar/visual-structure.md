@@ -7,7 +7,7 @@ tags: visual,structure
 position: 1
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadStepProgressBar Visual Structure
 
 This article describes all the visual elements and terms used in __RadStepProgressBar__ control. 
 

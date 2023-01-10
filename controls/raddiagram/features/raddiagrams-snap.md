@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Align and Snap 
+# {{ site.framework_name }} RadDiagram Align and Snap
 
 __RadDiagram__ gives you the ability to __Align__ the selected RadDiagramItems or __Snap__ them with DiagramCommands.            
 

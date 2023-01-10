@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Default Layout
+# {{ site.framework_name }} RadMap Default Layout
 
 The default layout of the __RadMap__ is represented by the UI controls that appear in it. If you want to remove one of them you can easily set the respective property of the __RadMap__:
 

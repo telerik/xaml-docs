@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Templates Structure #
+# {{ site.framework_name }} RadWizard Templates Structure #
 
 Using [Implicit styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default __ControlTemplates__ of the controls. You can follow [this]({%slug styling-apperance-editing-control-templates%}) documentation article on how to extract the __ControlTemplates__.
 

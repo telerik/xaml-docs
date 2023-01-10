@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Isolated Storage
+# {{ site.framework_name }} RadPersistenceFramework Isolated Storage
 
 The __PersistenceFramework__ allows you to save the layout of __UIElements__ in [Isolated Storage](https://docs.microsoft.com/en-us/dotnet/standard/io/isolated-storage). For that purpose the __telerik:PersistenceManager.StorageId__ attached property has to be set for each __UIElement__ that needs to be persisted. The property is used to create a file in the isolated storage for each persisted control, where the control's properties will be kept.
 

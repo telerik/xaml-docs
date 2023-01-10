@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Resizing Items
+# {{ site.framework_name }} RadPanelBar Resizing Items
 
 By default, the __RadPanelBar__ items cannot be resized through the UI. To enable the UI resizing on the items you can use the __IsResizingEnabled__ property of the __RadPanelBar__ control. It is enabled by setting the __IsResizingEnabled__ property to __True__.
 

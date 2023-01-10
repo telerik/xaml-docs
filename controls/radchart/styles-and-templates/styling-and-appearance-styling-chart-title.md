@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Styling the Chart Title
+# {{ site.framework_name }} RadChart Styling the Chart Title
 
 
 

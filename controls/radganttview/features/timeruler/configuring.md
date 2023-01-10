@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# TimeRuler
+# {{ site.framework_name }} RadGanttView TimeRuler
 
 The TimeRuler of RadGanttView is the area at the left of the data grid part. The task containers and relations are drawn there, along with the timeline visualization.
 

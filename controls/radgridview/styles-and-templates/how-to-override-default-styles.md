@@ -7,7 +7,7 @@ tags: override,default,radgridview,styles
 published: False
 ---
 
-# Override Default RadGridView Styles
+# {{ site.framework_name }} RadGridView Override Default RadGridView Styles
 
 
 This help article will show you how to override the default styles of __RadGridView__. For most cases, the work includes modifying the default template of either RadGridView or one of its components, e.g., GridViewRow. Modifying the templates is easy if you have Microsoft Expression Blend 4. [This topic]({%slug radgridview-styles-and-templates-styling-radgridview%}) explains the basics. Let's start with modifying the visual appearance of __RadGridView__.

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# ToolTips
+# {{ site.framework_name }} RadPivotGrid ToolTips
 
 __RadPivotGrid__ shows ToolTips when you place your mouse over the cells. The ToolTip has default content, but you can set your own or disable it. In this article we will show you how you can do this.      
 

@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Cancel Edit On LostFocus
+# {{ site.framework_name }} RadGridView Cancel Edit On LostFocus
 
 The RadGridView control exposes an **ActionOnLostFocus** property which allows you to control what happens when the control loses the focus.
 

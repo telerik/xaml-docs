@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadDiagram Keyboard Support
 
 Using the __Telerik Diagramming Framework__ allows you to trigger most of its features using key combinations. Below you can find a list of all supported key combinations and information about the features they trigger:		
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Lambdas
+# {{ site.framework_name }} RadExpressionEditor Lambdas
 
 __RadExpressionEditor__ allows you to benefit from the __Lambda expressions__ as well. However, in this case the syntax is slightly different.  
 

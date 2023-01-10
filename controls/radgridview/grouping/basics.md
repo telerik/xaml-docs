@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Basic Grouping
+# {{ site.framework_name }} RadGridView Basic Grouping
 
 __RadGridView__ provides a built-in grouping functionality, which allows the user to easily group the data by one or more columns.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Numeric Indicator
+# {{ site.framework_name }} RadGauge Numeric Indicator
 
 Numeric Indicator is an indicator that displays its Value property as digital indicator device. It is a character cells set that has common properties for layout, appearance and character templating. Also any character cell can be configured separately by style.
 

@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Programmatic Filtering
+# {{ site.framework_name }} RadGridView Programmatic Filtering
 
 RadGridView provides a rich API that allows you to filter programmatically. Everything that can be achieved by the end user through the UI can also be done by using the code-behind API. In this article we will discuss:
 

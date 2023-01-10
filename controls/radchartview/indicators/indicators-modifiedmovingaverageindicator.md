@@ -8,7 +8,7 @@ publish: True
 position: 9
 ---
 
-# ModifiedMovingAverageIndicator
+# {{ site.framework_name }} RadChartView ModifiedMovingAverageIndicator
 
 ModifiedMovingAverageIndicator measures and shows the average for a period of past data, thus smoothing the data to form a trend following.
 

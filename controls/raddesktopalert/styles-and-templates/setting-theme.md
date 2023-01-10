@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Setting a Theme
+# {{ site.framework_name }} RadDesktopAlert Setting a Theme
 
 The purpose of this article is to show you how to set a built-in theme to __RadDesktopAlert__.
 

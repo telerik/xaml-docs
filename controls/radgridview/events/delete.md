@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Delete Events
+# {{ site.framework_name }} RadGridView Delete Events
 
 The delete events are ment to support the deleting data process. They occur when the data in the __RadGridView__ is about to be deleted or has been already deleted by the user.
 

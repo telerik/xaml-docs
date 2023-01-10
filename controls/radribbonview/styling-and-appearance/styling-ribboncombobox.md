@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# Styling the RadRibbonComboBox
+# {{ site.framework_name }} RadRibbonView Styling the RadRibbonComboBox
 
 The __RadRibbonComboBox__ can be styled by creating an appropriate __Style__ and setting it to the __Style__ property of the control.			
 

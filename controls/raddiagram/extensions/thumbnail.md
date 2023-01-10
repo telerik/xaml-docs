@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Thumbnail
+# {{ site.framework_name }} RadDiagram Thumbnail
 
 This article will get you familiar with the __RadDiagramThumbnail__ control that is part of __Telerik Diagramming Framework__.	  
 

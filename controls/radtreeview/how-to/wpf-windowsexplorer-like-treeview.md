@@ -9,7 +9,7 @@ position: 13
 site_name: WPF
 ---
 
-# Create Windows Explorer Like WPF TreeView
+# {{ site.framework_name }} RadTreeView Create Windows Explorer Like WPF TreeView
 
 Most of the __RadTreeView__ samples you see on the web are somewhat simplistic: while they may provide heterogeneous data, usually all children of a given node are of the same type.	  
 

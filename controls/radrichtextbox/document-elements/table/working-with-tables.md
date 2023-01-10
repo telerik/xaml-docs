@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Working with Tables in Code
+# {{ site.framework_name }} RadRichTextBox Working with Tables in Code
 
 This article shows you can create or retrieve tables in the code behind. 
 

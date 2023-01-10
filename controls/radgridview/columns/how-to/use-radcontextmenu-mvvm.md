@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Use a RadContextMenu in MVVM
+# {{ site.framework_name }} RadGridView Use a RadContextMenu in MVVM
 
 This tutorial will show you how use a RadContextMenu with a RadGridView
 

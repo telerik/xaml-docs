@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Filter the Items in GridViewComboBoxColumn
+# {{ site.framework_name }} RadGridView Filter the Items in GridViewComboBoxColumn
 
 Since, the editor of __GridViewComboBoxColumn__ is RadComboBox, you can benefit from its [advanced filtering mechanism]({%slug radcombobox-features-filtering%}).
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Theming the ToolWindow
+# {{ site.framework_name }} RadDocking Theming the ToolWindow
 
 To modify the appearance of the ToolWindow you __have__ to create a custom theme and place a style that targets the __ToolWindow__ control in it. The topic assumes that you have already created {% if site.site_name == 'WPF' %}a theme with{% endif %}{% if site.site_name == 'WPF' %}{% endif %}a __ResourceDictionary__ that will host the styles and the resources for your custom theme. If not take a look at the overview section about [creating the theme](#CreatingTheme). The topic also assumes that you have created the style that will be used for the __ToolWindow__ control. To learn how to style it take a look at the [Styling the ToolWindow]({%slug raddocking-theming-toolwindow%}) topic.
 

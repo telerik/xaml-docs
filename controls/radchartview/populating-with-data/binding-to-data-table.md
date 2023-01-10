@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Binding to a DataTable
+# {{ site.framework_name }} RadChartView Binding to a DataTable
 
 In this section we will demonstrated how to bind a ChartView to a DataTable.
 

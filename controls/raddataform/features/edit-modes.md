@@ -7,7 +7,7 @@ tags: edit, modes
 position: 2
 ---
 
-# Edit Modes
+# {{ site.framework_name }} RadDataForm Edit Modes
 
 RadDataForm exposes an __EditMode__ property of type __DataFormEditMode__, which provides different options for __editing behavior__. Its possible values are **Default** and **Single**.
 

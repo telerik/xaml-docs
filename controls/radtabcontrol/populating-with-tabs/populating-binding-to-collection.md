@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Binding To Collection
+# {{ site.framework_name }} RadTabControl Binding To Collection
 
 The purpose of this tutorial is to show you how to bind a __RadTabControl__ to a collection of business objects.				
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Tiles Orientation
+# {{ site.framework_name }} RadTileList Tiles Orientation
 
 RadTileList allows you to control the order and alignment of the tiles in each group.
 

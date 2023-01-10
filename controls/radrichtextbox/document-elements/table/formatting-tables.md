@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Formatting Tables 
+# {{ site.framework_name }} RadRichTextBox Formatting Tables
 
 __RadRichTextBox__ exposes an API that allows you to use various methods to style the tables. The methods exposed by the API can be wired to a UI and get executed upon user interaction with this UI. To learn more about the __Formatting API__ of the __RadRichTextBox__, read [this topic]({%slug radrichtextbox-features-formatting-api%}).
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadCloudUpload Visual Structure
 
 
 

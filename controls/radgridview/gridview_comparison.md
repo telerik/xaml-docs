@@ -9,7 +9,7 @@ position: 3
 site_name: Silverlight
 ---
 
-# Tech Specs and Comparisons
+# {{ site.framework_name }} RadGridView Tech Specs and Comparisons
 
 
 

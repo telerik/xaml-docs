@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Data Binding to WCF Service
+# {{ site.framework_name }} RadChart Data Binding to WCF Service
 
 
 

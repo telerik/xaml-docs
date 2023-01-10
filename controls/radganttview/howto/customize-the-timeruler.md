@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Customize the TimeRuler Data and Containers
+# {{ site.framework_name }} RadGanttView Customize the TimeRuler Data and Containers
 
 In __RadGanttView__ it is possible to customize the way items are rendered in the TimeRuler portion of the control and add additional custom elements by creating a custom __TimeRulerVisualizationBehavior__.
     

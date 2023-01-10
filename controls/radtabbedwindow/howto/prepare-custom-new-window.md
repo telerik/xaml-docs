@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Prepare New Custom Window
+# {{ site.framework_name }} RadTabbedWindow Prepare New Custom Window
 
 This article shows how to prepare a custom instance of RadTabbedWindow to be used as a host when you drag out a tab item from its original window.
 

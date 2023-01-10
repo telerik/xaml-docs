@@ -8,7 +8,7 @@ published: False
 position: 1
 ---
 
-# Page RadGridView
+# {{ site.framework_name }} RadDataPager Page RadGridView
 
 
 See this [article]({%slug raddatapager-getting-started%}) for more information.

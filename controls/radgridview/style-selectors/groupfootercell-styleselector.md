@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# GroupFooterCellStyleSelector
+# {{ site.framework_name }} RadGridView GroupFooterCellStyleSelector
 
 The **GroupFooterCellStyleSelector** property of RadGridView can be used to style group footer rows differently based on a specific condition.
 

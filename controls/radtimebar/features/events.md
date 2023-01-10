@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Events
+# {{ site.framework_name }} RadTimeBar Events
 
 You can handle the following events when using the __RadTimeBar__ for a very rich user experience with the control:
 

@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the RadDropDownButton
+# {{ site.framework_name }} RadButtons Styling the RadDropDownButton
 
 The __RadDropDownButton__ can be styled by creating an appropriate __Style__ (or use Implicit Style) and setting it to the __Style__ property of the control. 
 

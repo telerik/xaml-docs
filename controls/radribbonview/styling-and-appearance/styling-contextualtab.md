@@ -9,7 +9,7 @@ position: 9
 site_name: WPF
 ---
 
-# Styling the ContextualTabs
+# {{ site.framework_name }} RadRibbonView Styling the ContextualTabs
 
 The __RadRibbonView__ __ContextualTabs__ are of type __RadRibbonTab__ and they can be styled by creating an appropriate __Style__ and setting it to the __RadRibbonView.ContextualTabsStyle__ property.			
 

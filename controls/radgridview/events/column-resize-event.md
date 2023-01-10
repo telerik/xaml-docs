@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Column Events
+# {{ site.framework_name }} RadGridView Column Events
 
 In this article we discuss RadGridView events related to **columns**:
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Precision
+# {{ site.framework_name }} RadRating Precision
 
 Users can use the __Precision__ property to control the rating precision. The property have three predefined values: 
 

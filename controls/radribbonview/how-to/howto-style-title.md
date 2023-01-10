@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Style The Title
+# {{ site.framework_name }} RadRibbonView Style The Title
 
 The __RadRibbonView__'s API allows you to customize the __Title__ bar of your ribbon control. First we are going to use the code in __Example 1__ as a starting point.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Filtering
+# {{ site.framework_name }} RadCardView Filtering
 
 RadCardView supports filtering via the UI or in code, in case you are using ICollectionView as the ItemsSource.
 

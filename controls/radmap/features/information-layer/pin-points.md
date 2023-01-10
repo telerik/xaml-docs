@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Pin Points
+# {{ site.framework_name }} RadMap Pin Points
 
 The __MapPinPoint__ class is designed to represent __Point__ objects from __KML__ files. However, it can be also used outside the __KML__ context in order to mark points of interest (POIs) or something else.      
 

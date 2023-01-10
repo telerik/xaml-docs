@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Data Formatting
+# {{ site.framework_name }} RadGridView Data Formatting
 
 __GridViewDataColumn__ and __GridViewComboBoxColumn__ allow you to format the displayed data by specifying an appropriate format string and assigning it to the __DataFormatString__ property for the column.
 

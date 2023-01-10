@@ -9,7 +9,7 @@ position: 19
 site_name: WPF
 ---
 
-# Bind RadTreeView in WPF
+# {{ site.framework_name }} RadTreeView Bind RadTreeView in WPF
 
 One of the most common scenarios is populating the __RadTreeView__ with data. In WPF data binding is one of the most powerful concepts. Data binding the __RadTreeView__ can be done in several ways.
 

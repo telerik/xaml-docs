@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Configuring the TimeRuler ticks
+# {{ site.framework_name }} RadScheduleView Configuring the TimeRuler ticks
 
 The __MajorTickLength__ and __MinorTicklength__ properties of the RadScheduleView ViewDefinitions are used to determine the density of the time ruler items. You can play with different combinations to find the one that best suits your needs. The appointments will snap with regards to the minor ticks.  Also TimelineViewDefinition has an additional __GroupTickLength__ property used to set the length of the group.
 

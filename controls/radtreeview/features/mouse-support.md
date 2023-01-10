@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Mouse Support
+# {{ site.framework_name }} RadTreeView Mouse Support
 
 On of the most important usage of your mouse device in combination with __RadTreeView__ is expanding and collapsing items. To expand\collapse an item you just need to click on the expander icon. For more information about the visual structure of the treeview read the topic [Visual Structure]({%slug radtreeview-visual-structure%}).
 

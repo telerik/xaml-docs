@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Reordering the Items
+# {{ site.framework_name }} RadTaskBoard Reordering the Items
 
 You can move one item to a different group by using the built-in drag-drop functionality. The reordering of the items is enabled by default. To disable it you can set the __IsDragDropEnabled__ property of the __RadTaskBoard__ to false.
 

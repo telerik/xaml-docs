@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Custom Content
+# {{ site.framework_name }} RadCircularProgressBar Custom Content
 
 `RadCircularProgressBar` supports setting a complex structure of elements to the `ContentTemplate` property to represent the value set for the `Content` property. The Content property is of type `object` and can hold a value of any type.
 

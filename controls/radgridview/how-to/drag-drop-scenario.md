@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Drag and Drop
+# {{ site.framework_name }} RadGridView Drag and Drop
 
 > Full implementation of __Drag__ and __Drop__ between __GridView__ and __TreeView__ is available in this {% if site.site_name == 'WPF' %}[online demo](https://demos.telerik.com/wpf/#DragAndDrop/TreeToGrid){% endif %}
 {% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %}

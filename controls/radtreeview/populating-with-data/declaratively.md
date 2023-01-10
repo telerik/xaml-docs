@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Declaratively
+# {{ site.framework_name }} RadTreeView Declaratively
 
 This tutorial will walk you through the common task of populating __RadTreeView__ with __RadTreeViewItems__ declaratively.  
 

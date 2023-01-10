@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# What is the difference between OData and WCF Data Services ?
+# {{ site.framework_name }} RadDataServiceDataSource What is the difference between OData and WCF Data Services ?
 
 
 

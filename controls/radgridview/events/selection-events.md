@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Selection Events
+# {{ site.framework_name }} RadGridView Selection Events
 
 There are a number of events relevant to the selection in the RadGridView control. The sequence of the events depends on the __SelectionUnit__ property:
 

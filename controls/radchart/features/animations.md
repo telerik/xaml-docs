@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Animations
+# {{ site.framework_name }} RadChart Animations
 
 
 

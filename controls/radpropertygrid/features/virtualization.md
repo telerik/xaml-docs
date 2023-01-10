@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# UI Virtualization
+# {{ site.framework_name }} RadPropertyGrid UI Virtualization
 
 Since __Q1 2013__ RadPropertyGrid supports __UI Virtualization__. It processes only information that is loaded in the viewable area, which reduces the memory footprint of the application and speeds up the loading time. This means that only the needed containers (rows) that are currently visible have a visual element. When RadPropertyGrid is scrolled up and down, the __UI Virtualization__ mechanism enables RadPropertyGrid to reuse the existing containers over and over again for different data items, instead of creating new ones. This is of great importance when it is bound to large data sets.
 

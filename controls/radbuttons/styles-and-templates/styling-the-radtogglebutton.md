@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Styling the RadToggleButton
+# {{ site.framework_name }} RadButtons Styling the RadToggleButton
 
 The __RadToggleButton__ can be styled by creating an appropriate __Style__ (or use Implicit Style) and setting it to the __Style__ property of the control. 
 

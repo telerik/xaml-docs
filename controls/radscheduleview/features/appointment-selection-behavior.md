@@ -8,7 +8,7 @@ published: True
 position: 18
 ---
 
-# AppointmentSelectionBehavior
+# {{ site.framework_name }} RadScheduleView AppointmentSelectionBehavior
 
 In RadScheduleView there are plugin selection behaviors that make it possible to customize the logic behind all selections in the control. There are selection behaviors like AppointmentSelectionBehavior, SlotSelectionBehavior etc.
 

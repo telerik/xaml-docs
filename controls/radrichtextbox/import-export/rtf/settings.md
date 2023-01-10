@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Settings
+# {{ site.framework_name }} RadRichTextBox Settings
 
 __RtfFormatProvider__ allows for import of RTF documents and respectively export of RadRichTextBox to RTF. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
 

@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Create a Custom Field Filter Editor
+# {{ site.framework_name }} RadGridView Create a Custom Field Filter Editor
 
 In case you do not like the default field filter editors that show up in the filtering UI you can easily replace them with your own. To do that you need to inherit from GridViewDataColumn and override the __CreateFieldFilterEditor__ method. You then have to return your editor from this method. You have to data-bind your editor’s significant property to the property called __Value__ which resides on its DataContext. You will also need to define an IValueConverter on this Binding that will be able to convert the FilterDescriptor.UnsetValue to the editor’s “empty” value. When the special singleton value FilterDescriptor.UnsetValue is assigned to a filter descriptor it turns it off. So your custom field filter editor will be able to “clear” or “turn off” the underlying FilterDescriptor.
 

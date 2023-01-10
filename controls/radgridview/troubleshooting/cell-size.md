@@ -8,7 +8,7 @@ published: True
 position: 15
 ---
 
-# Containers' Size is Increased
+# {{ site.framework_name }} RadGridView Containers' Size is Increased
 
 With __Q1 2013__ we have introduced __dynamic FontStyle, FontSize and Brushes for Windows8 and Windows8Touch Themes__.
 

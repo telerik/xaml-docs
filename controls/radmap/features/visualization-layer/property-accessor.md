@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Property Accessor
+# {{ site.framework_name }} RadMap Property Accessor
 
 As it is described in the [Data Binding]({%slug radmap-visualization-layer-data-binding%}) article the Visualization Layer uses attached properties to position and display markers on their proper places. But evaluating data bindings and accessing values of properties from UI elements takes time and slows down the visualization engine. The Visualization Layer provides a way to speed up the accessing of the map related properties from the data item without involving the UI engine.     
 

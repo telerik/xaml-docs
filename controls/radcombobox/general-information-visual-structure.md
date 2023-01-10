@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadComboBox Visual Structure
 
 This topic defines terms and concepts used in the scope of __RadComboBox__ that you have to get familiar with before you continue reading this help. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadComboBox__ control.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Debugging XMLA problems
+# {{ site.framework_name }} RadPivotGrid Debugging XMLA problems
 
 With __RadPivotGrid__ you have the ability to connect to OLAP Cube through http protocol by using XmlaDataProvider. This is great but at some point you may face different errors dedicated to the specifics of this protocol. For example your RadPivotGrid may be empty if there are some network connectivity issues. In this article we will explain how to "debug" such situations to check where the problem is.      
 

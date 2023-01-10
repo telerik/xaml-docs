@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Mouse Support
+# {{ site.framework_name }} RadComboBox Mouse Support
 
 This article explains the mouse support of the control.
 

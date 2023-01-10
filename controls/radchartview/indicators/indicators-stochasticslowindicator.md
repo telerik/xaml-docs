@@ -8,7 +8,7 @@ publish: True
 position: 18
 ---
 
-# StochasticSlowIndicator
+# {{ site.framework_name }} RadChartView StochasticSlowIndicator
 
 StochasticSlowIndicator shows the location of the close relative to the high/low range over a number of periods.
 

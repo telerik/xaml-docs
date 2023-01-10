@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Implement Drag and Drop Between TreeView and ListBox
+# {{ site.framework_name }} RadTreeView Implement Drag and Drop Between TreeView and ListBox
 
 The goal of this tutorial is to show you how to implement drag and drop between __RadTreeView__ and __ListBox__.	  
 

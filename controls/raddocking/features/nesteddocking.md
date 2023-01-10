@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Nested RadDocking Support
+# {{ site.framework_name }} RadDocking Nested RadDocking Support
 
 Even though the layout of __RadDocking__ is very agile and could be used to easily achieve many different layouts sometimes a more complex one is desired. In such scenarios it is possible to use nested __RadDocking__ instances which provide multiple __DocumentHosts__, multiple level of docking compass restriction and inner tabs inside __RadPanes__.
 

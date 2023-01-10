@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Create Horizontal TreeView
+# {{ site.framework_name }} RadTreeView Create Horizontal TreeView
 
 This tutorial will show you how to create a __RadTreeView__ with horizontal orientation.
 

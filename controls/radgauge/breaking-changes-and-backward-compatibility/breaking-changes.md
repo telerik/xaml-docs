@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Breaking Changes
+# {{ site.framework_name }} RadGauge Breaking Changes
 
 ## Q2 2012
 

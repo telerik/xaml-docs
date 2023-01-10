@@ -8,7 +8,7 @@ published: True
 position: 
 ---
 
-# Shape Tool
+# {{ site.framework_name }} RadImageEditor Shape Tool
 
 The Shape Tool is one of the tools, which come out-of-the-box with the __RadImageEditor__ and allow you to draw different shapes over an image.
 

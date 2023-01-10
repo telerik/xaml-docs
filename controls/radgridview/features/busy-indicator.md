@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Busy Indicator
+# {{ site.framework_name }} RadGridView Busy Indicator
 
 RadGridView enables you to display a notification whenever a longer-running process is being handled by the control by incorporating a [RadBusyIndicator]({%slug radbusyindicator-overview%}) inside its control template. This makes the UI more informative and the user experience smoother.
 

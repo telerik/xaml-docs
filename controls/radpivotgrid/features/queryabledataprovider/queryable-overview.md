@@ -9,7 +9,7 @@ position: 0
 site_name: WPF
 ---
 
-# QueryableDataProvider
+# {{ site.framework_name }} RadPivotGrid QueryableDataProvider
 
 In this article you will find the main advantages and limitations of __QueryableDataProvider__ and a comparison between __LocalDataSourceProvider__ and __QueryableDataProvider__.
 

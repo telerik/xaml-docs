@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Mappings
+# {{ site.framework_name }} RadTreeMap Mappings
 
 ## Colorizers
 

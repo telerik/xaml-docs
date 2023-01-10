@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Filtering with DataProvider
+# {{ site.framework_name }} RadVirtualGrid Filtering with DataProvider
 
 When __RadVirtualGrid__ populates its data through the __DataProvider__ mechanism, the filtering operation will be handled out-of-the-box. By default, the filtering of the control is enabled. The user can filter the data through the UI by clicking the filtering funnel in the column headers.
 

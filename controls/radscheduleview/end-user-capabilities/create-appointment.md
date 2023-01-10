@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Create Appointment
+# {{ site.framework_name }} RadScheduleView Create Appointment
 
 This topic describes the work flow for creating an appointment in __RadScheduleView__ control.      
 

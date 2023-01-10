@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Data Binding with Automatic Series Mappings
+# {{ site.framework_name }} RadChart Data Binding with Automatic Series Mappings
 
 
 

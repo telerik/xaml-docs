@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Export 
+# {{ site.framework_name }} RadChartView Export
 
 The __RadChartView__ suite does not have a built-in functionality for exporting the chart, but there are several ways that you can utilize to achieve that. 
 

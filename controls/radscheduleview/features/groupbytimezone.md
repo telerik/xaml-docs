@@ -8,7 +8,7 @@ published: True
 position: 16
 ---
 
-# Grouping By TimeZone
+# {{ site.framework_name }} RadScheduleView Grouping By TimeZone
 
 RadScheduleView supports grouping by time zone. This can be achieved by adding a __TimeZoneGroupDescription__ to the GroupDescriptionSource property of RadScheduleView:
 

@@ -8,7 +8,7 @@ published: False
 position: 9
 ---
 
-# UI freeze with deep nested grouping
+# {{ site.framework_name }} RadGridView UI freeze with deep nested grouping
 
 __PROBLEM__
 

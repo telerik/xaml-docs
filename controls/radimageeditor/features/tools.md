@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Tools
+# {{ site.framework_name }} RadImageEditor Tools
 
 __RadImageEditor__ provides a set of tools that allows you to customize the image element.
 

@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Modal Windows
+# {{ site.framework_name }} RadWindow Modal Windows
 
 __RadWindow__ can be displayed in two modes - as a normal __window__ or as a __modal dialog window__.
 

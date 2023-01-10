@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Selection
+# {{ site.framework_name }} RadRibbonView Selection
 
 __RadRibbonView__ supports single __RadRibbonTab__ selection. You can select it either run-time by clicking with your mouse on the appropriate tab header or programmatically via the properties described below.
 ![{{ site.framework_name }} RadRibbonView Selected Ribbon Tab](images/RibbonView_Selection_Overview.png)

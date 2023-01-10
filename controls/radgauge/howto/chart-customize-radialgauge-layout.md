@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Create Compass
+# {{ site.framework_name }} RadGauge Create Compass
 
 This example will demonstrate how to customize a __Radial Gauge__ to create compass.
 

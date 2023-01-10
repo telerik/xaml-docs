@@ -8,7 +8,7 @@ publish: True
 position: 6
 ---
 
-# Multiple Chart Series
+# {{ site.framework_name }} RadChartView Multiple Chart Series
 
 The [chart controls]({%slug radchartview-chart-types%}) allow you to add multiple [series]({%slug radchartview-series-chartseries%}) into the same chart instance. This way you can create multi-line, multi-bar charts, or any other combination of visualizations.
 

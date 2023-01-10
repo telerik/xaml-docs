@@ -7,7 +7,7 @@ tags: line, numbering
 published: True
 ---
 
-# Line Numbering
+# {{ site.framework_name }} RadRichTextBox Line Numbering
 
 RadRichTextBox enables you to display the appropriate number beside each line of text. This functionality is useful for specific types of content, such as scripts, legal or medical documents.
 

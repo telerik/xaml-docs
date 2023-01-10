@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Events
+# {{ site.framework_name }} RadSpreadsheet Events
 
 This topic describes the events you can use in RadSpreadsheet so you can get a notification about different actions.
 

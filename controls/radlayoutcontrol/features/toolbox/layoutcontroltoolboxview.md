@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# LayoutControlToolBoxView
+# {{ site.framework_name }} RadLayoutControl LayoutControlToolBoxView
 
 __LayoutControlToolBoxView__ is the control that represents the toolbox. This article demonstrates how to set it up and associate it with RadLayoutControl. 
 

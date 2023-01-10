@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadScheduleView Overview
 
 This chapter covers the most common end-user work flows in the usage of the Telerik's __RadScheduleView__.
 

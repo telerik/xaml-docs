@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Grouping
+# {{ site.framework_name }} RadDataServiceDataSource Grouping
 
 __WCF Data Services__ do not support grouping. For consistency reasons, grouping criteria is simply converted to sorting criteria by __RadDataServiceDataSource__. 
 

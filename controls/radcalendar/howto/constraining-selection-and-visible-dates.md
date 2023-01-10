@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Constraining Selection and Visible Dates
+# {{ site.framework_name }} RadCalendar Constraining Selection and Visible Dates
 
 When certain dates are to be hidden or should not be selected by the user, the Calendar can hide or disable specific date ranges.
 

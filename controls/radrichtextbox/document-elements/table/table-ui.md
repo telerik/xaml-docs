@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Using the Built-in UI to work with Tables
+# {{ site.framework_name }} RadRichTextBox Using the Built-in UI to work with Tables
 
 * [Creating a Table](#creating-a-table)
 

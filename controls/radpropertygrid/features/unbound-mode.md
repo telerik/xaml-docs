@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Unbound Mode
+# {{ site.framework_name }} RadPropertyGrid Unbound Mode
 
 With this feature RadPropertyGrid enables its users to create their own nested property hierarchies, without the need to respect any of the actual parent/child or siblings relations. 
 

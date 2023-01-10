@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Export
+# {{ site.framework_name }} RadGridView Export
 
 If you need to export RadGridView`s content, its __Export__ method comes to help. It was introduced in __Q1 2010__ and it is the preferred method of exporting data. Furthermore, it gives you control over which elements are included in the exported data.
 

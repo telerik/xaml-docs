@@ -7,7 +7,7 @@ tags: commands, navigationviewitem
 position: 3
 ---
 
-# Commands
+# {{ site.framework_name }} RadNavigationView Commands
 
 The RadNavigationViewItem inherits [ButtonBase](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.buttonbase?view=netframework-4.7.2) and as such provides you with a standard __ICommandSource__ implementation. This means that you can bind the items to commands that will get executed when an item is clicked. For this purpose the following properties can be used.
 

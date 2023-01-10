@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# UI Virtualization
+# {{ site.framework_name }} RadRichTextBox UI Virtualization
 
 
 

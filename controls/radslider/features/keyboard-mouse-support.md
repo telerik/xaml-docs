@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Keyboard and Mouse support
+# {{ site.framework_name }} RadSlider Keyboard and Mouse support
 
 
 

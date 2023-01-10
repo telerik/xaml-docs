@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadRichTextBox Keyboard Support
 
 {% if site.site_name == 'Silverlight' %}
 Telerik __RichTextBox__ for Silverlight supports commands in a way that is similar to the commanding mechanism in WPF. It is only natural that some of these commands be triggered on key combinations. There are default key-bindings defined for the most widely used commands.

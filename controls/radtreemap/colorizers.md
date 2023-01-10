@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Colorizers
+# {{ site.framework_name }} RadTreeMap Colorizers
 
 This topic aims to get you familiar with all types of colorizers you may use to change the visualization of RadTreeMap/RadPivotMap controls. To know what colorizer is, you may check out our [Mappings]({%slug radtreemap-mappings%}) topic.
 

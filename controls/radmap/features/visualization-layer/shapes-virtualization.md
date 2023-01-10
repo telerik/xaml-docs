@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Map Shapes Virtualization
+# {{ site.framework_name }} RadMap Map Shapes Virtualization
 
 ## Purposes of Map Shapes Virtualization
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# HeaderButtonStyle
+# {{ site.framework_name }} RadExpander HeaderButtonStyle
 
 The `RadExpander` control allows you to customize the style of its header, which is represented by a `RadToggleButton` element. 
 

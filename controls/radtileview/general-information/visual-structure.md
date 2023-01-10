@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Visual Structure
+# {{ site.framework_name }} RadTileView Visual Structure
 
 This section defines terms and concepts used in the scope of __RadTileView__ you have to get familiar with prior to continue reading this help.
 

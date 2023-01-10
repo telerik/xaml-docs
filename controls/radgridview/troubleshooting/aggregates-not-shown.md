@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Aggregates are not shown
+# {{ site.framework_name }} RadGridView Aggregates are not shown
 
 __PROBLEM__
 

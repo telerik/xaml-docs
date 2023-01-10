@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Key Properties
+# {{ site.framework_name }} RadPasswordBox Key Properties
 
 The purpose of this help article is to show you the key properties of __RadPasswordBox__ control. The topic includes the following properties:
 

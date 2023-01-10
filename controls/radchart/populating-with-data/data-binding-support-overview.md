@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Data Binding Support Overview
+# {{ site.framework_name }} RadChart Data Binding Support Overview
 
 
 

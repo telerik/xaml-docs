@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Filtering Behavior
+# {{ site.framework_name }} RadAutoCompleteBox Filtering Behavior
 
 The main functionality of the __RadAutoCompleteBox__ control is its filtering mechanism which filters the collection that is bound to the ItemsSource of the control based on the input in its TextBox. This article will explain the benefits of the built-in __AsyncFilteringBehavior__ and will demonstrate how to implement a custom __FilteringBehavior__.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Changes
+# {{ site.framework_name }} RadRating Changes
 
 This article describes the fixes and the new features in the RadRating control.
 

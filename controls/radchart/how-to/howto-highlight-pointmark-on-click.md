@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Highlight PointMark On Click
+# {{ site.framework_name }} RadChart Highlight PointMark On Click
 
 
 

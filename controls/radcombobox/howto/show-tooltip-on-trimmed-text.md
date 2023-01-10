@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Show Tooltip On Trimmed Text
+# {{ site.framework_name }} RadComboBox Show Tooltip On Trimmed Text
 
 If the text of a RadComboBox exceeds the width of its parent, the content will be trimmed. As of R3 2017 SP1, you can show a tooltip for the trimmed text by setting the **ComboBoxToolTipHelper.ShowToolTipOnTrimmedText** attached property to **True**. The result is demonstrated in **Figure 1**.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# RadCloudUploadListItem
+# {{ site.framework_name }} RadCloudUpload RadCloudUploadListItem
 
 The __RadCloudUploadListItem__ is part of the __RadCloudUpload__ control. It visualizes the progress and the state of the uploaded file. It has few built-in buttons in its template, such as __Upload__, __Cancel__ and __Close__. They control the uploading process.
 

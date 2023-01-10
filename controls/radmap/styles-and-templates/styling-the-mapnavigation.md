@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the MapNavigation
+# {{ site.framework_name }} RadMap Styling the MapNavigation
 
 The __MapNavigation__ exposes a __Style__ property which allows you to apply a style to it and modify its appearance.
 

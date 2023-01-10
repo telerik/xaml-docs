@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Use RadCallout with RadToolTip 
+# {{ site.framework_name }} RadToolTip Use RadCallout with RadToolTip
 
 ## See Also
  * [Getting Started]({%slug radtooltip-getting-started%})

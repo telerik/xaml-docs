@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Editing 
+# {{ site.framework_name }} RadVirtualGrid Editing
 
 > By default, the __CanUserEdit__ property of __RadVirtualGrid__ is set to __True__, thus the editing mechanism is enabled. In order to disable it, its value needs to be set to __False__.
 

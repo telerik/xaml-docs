@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# RadarLineSeries
+# {{ site.framework_name }} RadChartView RadarLineSeries
 
 This series is visualized on the screen as a straight line connecting each of the __DataPoints__.      
 

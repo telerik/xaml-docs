@@ -7,7 +7,7 @@ tags: context, menu, notifyicon
 position: 2
 ---
 
-# ContextMenu
+# {{ site.framework_name }} RadNotifyIcon ContextMenu
 
 You can display a context menu when the user interacts with the notify icon with the help of the __TrayContextMenu__ property. 
 

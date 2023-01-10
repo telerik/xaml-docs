@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Export String Value
+# {{ site.framework_name }} RadGridView Export String Value
 
 __PROBLEM__
 

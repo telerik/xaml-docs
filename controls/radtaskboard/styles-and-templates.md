@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Styles and Templates
+# {{ site.framework_name }} RadTaskBoard Styles and Templates
 
 __RadTaskBoard__ allows you to easily modify its appearance by providing some useful properties.
 

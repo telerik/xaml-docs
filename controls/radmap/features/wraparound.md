@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Wraparound
+# {{ site.framework_name }} RadMap Wraparound
 
 The WrapAround feature provides infinite horizontal panning to the __RadMap__ control which gives continuous experience as the user pans the viewport east or west. 
 

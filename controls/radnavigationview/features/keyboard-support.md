@@ -7,7 +7,7 @@ tags: keyboard, support, shortcut
 position: 4
 ---
 
-# Keyboard Support
+# {{ site.framework_name }} RadNavigationView Keyboard Support
 
 The article describes the Keyboard Support feature of RadNavigationView.
 

@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Styling RadSpellChecker
+# {{ site.framework_name }} RadSpellChecker Styling RadSpellChecker
 
 
 

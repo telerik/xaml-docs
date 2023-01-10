@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Declaratively
+# {{ site.framework_name }} RadListBox Declaratively
 
 This tutorial will walk you through the common task of populating __RadListBox__ with __RadListBoxItems__ declaratively.		
 

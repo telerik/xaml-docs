@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadPropertyGrid
 ---
 
-# Overview
+# {{ site.framework_name }} RadPropertyGrid Overview
 
 Thank you for choosing Telerik RadPropertyGrid !
 

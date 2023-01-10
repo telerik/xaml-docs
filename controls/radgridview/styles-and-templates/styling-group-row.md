@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Styling Group Row
+# {{ site.framework_name }} RadGridView Styling Group Row
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewGroupRow and GroupHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}).
 

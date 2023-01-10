@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# {{ site.framework_name }} RadDiagram Overview
 
 Telerik Diagramming Framework exposes a __RadDiagram__ class that describes the main drawing canvas. This is why in order to create a Diagramming structure you need to use the __RadDiagram__ as a root element. Then you can create your diagram elements:
 

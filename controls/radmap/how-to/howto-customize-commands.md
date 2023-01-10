@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Implement custom commands for MapCommandBar UI
+# {{ site.framework_name }} RadMap Implement custom commands for MapCommandBar UI
 
 It is now possible to customize the default set of commands in the MapCommandBar UI for every map provider.
 

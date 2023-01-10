@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadTransitionControl Data Binding
 
 You are able to bind the content of the __RadTransitionCotnrol__ to a data item or to a property of another control. Whenever the value of the data item or the property changes, the __RadTransitionControl__ will apply a transition to the change. 
 

@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Dynamic Layer
+# {{ site.framework_name }} RadMap Dynamic Layer
 
 In contrast to __InformationLayer__ which processes all items in a collection, the __DynamicLayer__ requests items to process. It makes favour when thousands of items are available (pictures of POIs, for example). Your application can select what pictures are suitable for given location and zoom factor and return only these ones.      
 

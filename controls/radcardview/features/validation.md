@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Data Validation
+# {{ site.framework_name }} RadCardView Data Validation
 
 The data fields of the RadCardView control support data validation of the user input. 
 

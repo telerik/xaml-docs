@@ -8,7 +8,7 @@ published: True
 position: 12
 ---
 
-# Touch Support
+# {{ site.framework_name }} RadGridView Touch Support
 
 
 This article describes the touch support implemented in RadGridView

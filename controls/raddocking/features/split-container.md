@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Split Container
+# {{ site.framework_name }} RadDocking Split Container
 
 The __RadSplitContainer__ allows you to use movable bars to divide the displayed area into resizable parts. With the __RadDocking__'s __SplitContainers__ you can build complex layouts like the one shown on **Figure 1**. Some practical examples of such layouts are Explorer-like and Outlook-like interfaces.
 

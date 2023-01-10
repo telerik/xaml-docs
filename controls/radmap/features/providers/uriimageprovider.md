@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# UriImageProvider
+# {{ site.framework_name }} RadMap UriImageProvider
 
 RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingRestMapProvider and OpenStreetMapProvider.
 

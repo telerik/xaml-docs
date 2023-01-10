@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Mouse Support
+# {{ site.framework_name }} RadGridView Mouse Support
 
 __RadGridView__ exposes several useful events, which can help you control the mouse interaction and get notified when mouse events occur. Moreover, using the mouse you can perform some most common tasks, such as:
 

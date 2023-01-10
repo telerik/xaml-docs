@@ -8,7 +8,7 @@ published: True
 position: 14
 ---
 
-# Navigator
+# {{ site.framework_name }} RadDocking Navigator
 
 Since the __R2 2020 SP1__ version, the RadDocking allows you to navigate through its panes with the help of the __DockingNavigator__. Press the __Ctrl + Tab__ or __Alt + F7__ key combinations, use the arrow keys to navigate between panes and get a preview of their content. 
 

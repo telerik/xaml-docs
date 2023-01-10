@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Cancel Drop
+# {{ site.framework_name }} RadTreeView Cancel Drop
 
 This article demonstrates how to cancel the drop operation. This is useful when you want to forbid the dropping on or the dropping of a particular item when using the RadTreeView control.
 

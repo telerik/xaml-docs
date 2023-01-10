@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Events
+# {{ site.framework_name }} RadTileView Events
 
 This article describes the __RadTileView__ and __RadTileViewItem__ events.
 

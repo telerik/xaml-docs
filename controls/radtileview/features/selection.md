@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-# Selection
+# {{ site.framework_name }} RadTileView Selection
 
 This article demonstrates the selection feature of the RadTileView control.
 

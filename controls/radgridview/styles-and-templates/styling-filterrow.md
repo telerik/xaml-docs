@@ -8,7 +8,7 @@ published: True
 position: 20
 ---
 
-# Styling Filter Row
+# {{ site.framework_name }} RadGridView Styling Filter Row
 
 In this topic we will discuss:
 

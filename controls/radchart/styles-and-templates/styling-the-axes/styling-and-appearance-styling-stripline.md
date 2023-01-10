@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Styling the StripLine
+# {{ site.framework_name }} RadChart Styling the StripLine
 
 
 

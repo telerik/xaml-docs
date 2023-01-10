@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Key Features
+# {{ site.framework_name }} RadScheduleView Key Features
 
 This is a list with short descriptions of the top-of-the-line features of Telerik's __RadScheduleView__ control:        
 

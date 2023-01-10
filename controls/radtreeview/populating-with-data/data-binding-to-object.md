@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Binding to Object
+# {{ site.framework_name }} RadTreeView Binding to Object
 
 To bind the __RadTreeView__ to a collection use its __ItemsSource__ property and define __HierarchicalDataTemplate__ that are needed to display the data from the collection. If you want the changes to the collection to be automatically reflected to the __RadTreeView__ items, the collection should inherit from __ObservableCollection__, or to implement the __INotifyPropertyChanged__ interface.
 

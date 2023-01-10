@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Calendar Basics
+# {{ site.framework_name }} RadCalendar Calendar Basics
 
 RadCalendar is a control that displays a calendar representation from which the user can select a single date or a range of dates (single, multiple and extended selection) with full keyboard support.
 

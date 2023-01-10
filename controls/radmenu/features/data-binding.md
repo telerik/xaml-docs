@@ -8,7 +8,7 @@ published: True
 position: 13
 ---
 
-# Data Binding
+# {{ site.framework_name }} RadMenu Data Binding
 
 __RadMenu__ supports data binding to various data sources and services. Moreover, __RadMenu__ can be used in two modes:
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# How to create a select-only RadDateTimePicker
+# {{ site.framework_name }} RadDateTimePicker How to create a select-only RadDateTimePicker
 
 This tutorial shows you how to modify the default __RadDateTimePicker__ in such a way that the user is not allowed to type in the control but only to choose from the drop down picker. 
 

@@ -8,7 +8,7 @@ published: True
 position: 11
 ---
 
-# Chart Title
+# {{ site.framework_name }} RadChart Chart Title
 
 The __ChartTitle__ is a content control placed at the top of each chart control. It is used to display any title information regarding the visualized chart.
  

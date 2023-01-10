@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Localization
+# {{ site.framework_name }} RadGanttView Localization
 
 The built-in localization mechanism in {{site.framework_name}} allows you to localize any string resource used by the RadGanttView control. Once translated, you might use your resources in both {{site.framework_name}} projects without changing anything.
 

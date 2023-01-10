@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Commands
+# {{ site.framework_name }} RadFileDialogs Commands
 
 The file dialogs suite provides several commands used to interact with the controls. All commands can be found in the __FileDialogsCommands__ static class. The commands are attached to the controls' operations as copy, cut, open folder/file, delete, etc. 
 

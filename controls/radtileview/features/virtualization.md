@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# UI Virtualization
+# {{ site.framework_name }} RadTileView UI Virtualization
 
 The __RadTileView__ API supports __UI Virtualization__, which processes only information loaded in the viewable area, which reduces the memory footprint of the application and speeds up the loading time thus enhancing additionally the UI performance.
 

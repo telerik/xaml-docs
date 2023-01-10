@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Pixels and PixelLength Conversion 
+# {{ site.framework_name }} RadGanttView Pixels and PixelLength Conversion
 
 This article demonstrates how to convert between screen size (in pixels) and TimeSpan value representing the PixelLength of RadGanttView.
 

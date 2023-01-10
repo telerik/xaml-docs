@@ -9,7 +9,7 @@ position: 4
 site_name: Silverlight
 ---
 
-# Loading Data from RIA Services
+# {{ site.framework_name }} RadGridView Loading Data from RIA Services
 
 The purpose of this tutorial is to show you how to populate a __RadGridView__ with data from a __.NET RIA Service__. 
 

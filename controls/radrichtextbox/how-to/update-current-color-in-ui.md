@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Update Current Color in UI
+# {{ site.framework_name }} RadRichTextBox Update Current Color in UI
 
 The **FormattingColorPicker** is a color picker, which allows you to update the currently selected color of the content in the UI. It tracks the current color of the document element to update the selected color accordingly and it is used in **RadRichTextBox** to apply fore color, highlight color and paragraph background color.
 

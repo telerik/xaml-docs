@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Customizing Cards
+# {{ site.framework_name }} RadCardView Customizing Cards
 
 RadCardView cards can be customized in order to match the expected design or functionality.
 

@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Nesting TileViews
+# {{ site.framework_name }} RadTileView Nesting TileViews
 
 __RadTileView__ support nesting. You can nest different __TileViews__ in order to achieve complex layouts. Check the example below:
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Customizing the DragVisual
+# {{ site.framework_name }} RadScheduleView Customizing the DragVisual
 
 This help article explains how you could customize the visual element that is shown while the user is dragging an appointment in the __ScheduleView__ control.
 

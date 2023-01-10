@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# PivotFieldList
+# {{ site.framework_name }} RadPivotGrid PivotFieldList
 
 __RadPivotFieldList__ is an integral part of __RadPivotGrid__. It gives the users the power to modify __RadPivotGrid__ and generate many different reports with the current data.
 

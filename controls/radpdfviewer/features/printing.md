@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Printing
+# {{ site.framework_name }} RadPdfViewer Printing
 
 
 __RadPdfViewer__ allows printing of the document shown in it. The following article describes the available printing methods, as well as how to use the respective for the feature API.

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Customizing Appearance
+# {{ site.framework_name }} RadDataPager Customizing Appearance
 
 RadDataPager provides few properties that allows you to customize the appearance of its elements.
 

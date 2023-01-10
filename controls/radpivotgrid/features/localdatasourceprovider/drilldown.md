@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Drill Down
+# {{ site.framework_name }} RadPivotGrid Drill Down
 
 As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** method that allows you to extract the records from your ItemsSource that were used for accumulating the result for a particular row and column. The GetUnderlyingData method takes two parameters: **Row Group** and **Column Group**.
 

@@ -9,7 +9,7 @@ position: 15
 site_name: WPF
 ---
 
-# Merged Cells
+# {{ site.framework_name }} RadGridView Merged Cells
 
 
 As of __Q3 2014 we have introduced support for merged cells in RadGridView__ control. As a result consecutive/serial cells with equal values can be merged vertically or horizontally.

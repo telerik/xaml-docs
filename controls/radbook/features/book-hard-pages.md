@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Hard Pages
+# {{ site.framework_name }} RadBook Hard Pages
 
 To enable hard paper functionality, you have to set the __HardPages__ property. The __HardPages__ property is an enum with the following values:
 

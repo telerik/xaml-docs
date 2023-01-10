@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Grouping
+# {{ site.framework_name }} RadTimeline Grouping
 
 The timeline items in a RadTimeline control can be displayed in groups. Additionally, groups of timeline items can be made expandable/collapsible.
 

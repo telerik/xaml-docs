@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Create Custom Filter Editors
+# {{ site.framework_name }} RadDataFilter Create Custom Filter Editors
 
 >You can find a running demo {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#DataFilter/CustomEditors){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf/?DataFilter/CustomEditors){% endif %}. 
 

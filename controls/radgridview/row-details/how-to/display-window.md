@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Display Row Details in RadWindow
+# {{ site.framework_name }} RadGridView Display Row Details in RadWindow
 
 As explained in the [External Row Details]({%slug radgridview-row-details-external-row-details%}) article, in order to display the row details outside of the RadGridView control, you need to place a **DetailsPresenter** control somewhere around RadGridView and wire them up. Well, it does not need to be around, really. This article will show how to place it in a [RadWindow]({%slug radwindow-getting-started%}) control and position it next to the selected row.
 

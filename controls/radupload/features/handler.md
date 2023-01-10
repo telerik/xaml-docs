@@ -9,7 +9,7 @@ position: 1
 site_name: Silverlight
 ---
 
-# Upload Handler
+# {{ site.framework_name }} RadUpload Upload Handler
 
 The __RadUpload__ control must use an upload handler on the server in order to transfer its data. 
 

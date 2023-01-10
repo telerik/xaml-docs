@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Product Card
+# {{ site.framework_name }} RadChat Product Card
 
 __ProductCard__ extends __ImageCard__ by adding a few more fields for additional information intended to describe a product. Below are the properties that are specific for it.
 

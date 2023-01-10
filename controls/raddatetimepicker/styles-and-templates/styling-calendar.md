@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling the Calendar
+# {{ site.framework_name }} RadDateTimePicker Styling the Calendar
 
 This article shows how to customize the default Style of the RadCalendar control shown in the RadDateTimePicker's dropdown.
 

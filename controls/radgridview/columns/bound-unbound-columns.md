@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Bound/Unbound Columns
+# {{ site.framework_name }} RadGridView Bound/Unbound Columns
 
 When populating __RadGridView__ with data two logical types of columns can be used - __bound and unbound__.
 

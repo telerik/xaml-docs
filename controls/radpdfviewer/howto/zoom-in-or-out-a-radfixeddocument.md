@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Zoom In or Out
+# {{ site.framework_name }} RadPdfViewer Zoom In or Out
 
 This article describes how you can change the zoom level of the [RadFixedDocument]({%slug radpdfviewer-document-model-radfixeddocument%}), which helps to take a close-up view of your **RadFixedDocument** or to zoom out to see more of the page at a reduced size.
 

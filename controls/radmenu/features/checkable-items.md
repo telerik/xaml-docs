@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Checkable Items
+# {{ site.framework_name }} RadMenu Checkable Items
 
 In order to enhance the functionality of the __RadMenu__ control, the __RadMenuItem__ can behave like a checkable item. This means that it can be checked and unchecked like a simple __CheckBox__. In order to toggle this behavior you have to set the __IsCheckable__ property of the __RadMenuItem__ to either __True__ or __False__. The default value is __False__.
 

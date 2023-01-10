@@ -9,7 +9,7 @@ position: 6
 site_name: WPF
 ---
 
-# How to Exclude Shapes from Serialization
+# {{ site.framework_name }} RadDiagram How to Exclude Shapes from Serialization
 
 The following article will demonstrate how to exclude shapes from serialization.
  

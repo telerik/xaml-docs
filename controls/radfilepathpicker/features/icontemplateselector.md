@@ -7,7 +7,7 @@ tags: radfilepathpicker, icontemplateselector
 position: 0
 ---
 
-# IconTemplateSelector
+# {{ site.framework_name }} RadFilePathPicker IconTemplateSelector
 
 The __RadFilePathPicker__ control exposes an __IconTemplateSelector__, which allows you to easily change the displayed icon depending on the __FilePath__.
 

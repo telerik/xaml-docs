@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Localization
+# {{ site.framework_name }} RadOutlookBar Localization
 
 >tipTo learn more about the ways to localize the controls from the suite please read the common topic on [Localization]({%slug common-localization%}).
 

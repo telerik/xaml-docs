@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-# Today Button
+# {{ site.framework_name }} RadDateTimePicker Today Button
 
 With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, Telerik introduced the Today button to provide the ability to select the current date and time of __RadDateTimePicker__. By default the button is not visible. However, you can make it visible by setting the __TodayButtonVisibility__ to __Visible__. You are also able to change the current content of the button using the __TodayButtonContent__.
 

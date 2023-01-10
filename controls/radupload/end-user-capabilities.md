@@ -9,7 +9,7 @@ position: 7
 site_name: Silverlight
 ---
 
-# End-User Capabilities
+# {{ site.framework_name }} RadUpload End-User Capabilities
 
 The user is able to do the following things with the __RadUpload__ control:
 

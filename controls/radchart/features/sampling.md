@@ -8,7 +8,7 @@ published: True
 position: 24
 ---
 
-# Sampling
+# {{ site.framework_name }} RadChart Sampling
 
 >__Sampling__ is __available__ in data binding scenarios __only__. __Sampling__ is also __not applicable__ when plotting data for properties of non-CLS compliant types, like __uint__.
 

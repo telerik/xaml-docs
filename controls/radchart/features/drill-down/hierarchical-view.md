@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Hierarchical View
+# {{ site.framework_name }} RadChart Hierarchical View
 
 
 

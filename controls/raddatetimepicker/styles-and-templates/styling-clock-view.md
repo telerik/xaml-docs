@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Styling the Clock
+# {{ site.framework_name }} RadDateTimePicker Styling the Clock
 
 To style the clock in your __RadDateTimePicker__ you can do the following:
 

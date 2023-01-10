@@ -6,7 +6,7 @@ position: 0
 slug: barcode-qrcode-overview
 ---
 
-# Overview
+# {{ site.framework_name }} RadBarcode Overview
 
 QR code (abbreviated from Quick Response Code) is the trademark for a type of matrix barcode first designed for the automotive industry in Japan. The QR Code system has become popular outside the automotive industry due to its fast readability and greater storage capacity compared to standard UPC barcodes.
 

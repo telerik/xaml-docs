@@ -8,5 +8,5 @@ published: True
 position: 1
 ---
 
-# Use Callout as Thumb ToolTip in RadSlider
+# {{ site.framework_name }} RadSlider Use Callout as Thumb ToolTip in RadSlider
 

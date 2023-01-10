@@ -19,6 +19,8 @@ By default the __OLAP__ data providers (`XmlaDataProvider` and `AdomdDataProvide
 	 <pivot:XmlaDataProvider x:Key="XMLADataProvider" EnableLoadOnDemand="True"/> 
 {{endregion}}
 
+>caution The [expand behavior]({%slug radpivotgrid-features-expand-behavior%}) is not supported when the load on demand feature is enabled.
+
 ## See Also  
  * [Using XmlaDataProvider]({%slug radpivotgrid-data-xmla%})
  * [Using AdomdDataProvider]({%slug radpivotgrid-data-adomd%})

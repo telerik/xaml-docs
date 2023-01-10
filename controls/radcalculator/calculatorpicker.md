@@ -28,9 +28,9 @@ The drop down state can be controlled manually with the `IsDropDownOpen` propert
 	this.calculatorPicker.IsDropDownOpen = true;
 {{endregion}}
 
-## Data Grid Integration
+## DataGrid Integration
 
-The following example shows how to utilize the `RadColorPicker` control as the cell editting element of a `RadGridView` column. To do so, define a custom `CellEditTemplate` for the column and in the `DataTemplate` add the calculator.
+The following example shows how to utilize the `RadColorPicker` control as the cell editing element of a `RadGridView` column. To do so, define a custom `CellEditTemplate` for the column and in the `DataTemplate` add the calculator.
 
 #### __[C#] Defining a model for the RadGridView rows__
 {{region radcalculatorpicker-gettingstarted-2}}

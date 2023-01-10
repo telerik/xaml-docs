@@ -14,7 +14,7 @@ This tutorial will walk your through the creation of a sample application that c
 
 ## Assembly References
 
-n order to use `RadCalculator` in your projects, you have to add reference to the following assemblies:
+In order to use `RadCalculator` in your projects, you have to add reference to the following assemblies:
 
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__

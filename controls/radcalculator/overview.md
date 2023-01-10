@@ -27,7 +27,7 @@ __![Rad Calculator-Overview](images/RadCalculator-Overview.png)__
 
 * __Basic calculations__&mdash;Addition, subtraction, multiplication, division.				  
 
-*  __Additional calculations like__&mdash;negate, squate root, reciprocal.				  
+*  __Additional calculations__&mdash;Negate, square root, reciprocal.				  
 
 *  [Keyboard support]({%slug radcalculator-keyboardsupport%})&mdash;All basic and several more specific key actions are support. 
 

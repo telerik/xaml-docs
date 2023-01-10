@@ -49,7 +49,7 @@ The following example shows how to utilize the `RadColorPicker` control as the c
 		var source = new ObservableCollection<RowInfo>();
 		for (int i = 0; i < 10; i++)
 		{
-			source.Add(new RowInfo() { Name = "Item " + i, Value = 5);
+			source.Add(new RowInfo() { Name = "Item " + i, Value = 5 });
 		}
 		DataContext = source;
 	}

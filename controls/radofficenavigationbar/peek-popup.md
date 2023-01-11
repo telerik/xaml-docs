@@ -29,7 +29,7 @@ The `RadOfficeNavigationBar` control provides a popup preview window for its ele
 
 __Displayed peek popup__
 
-![Peek popup](images/officenavigationbar-peek-popup-0.png)
+![{{ site.framework_name }} Peek popup](images/officenavigationbar-peek-popup-0.png)
 
 ## Setting the Peek Popup Content
 
@@ -51,7 +51,7 @@ Each `RadOfficeNavigationBarItem` element allows you to customize the content th
 
 __Peek popup with custom content__
 
-![Peek popup with custom content](images/officenavigationbar-peek-popup-1.png)
+![{{ site.framework_name }} Peek popup with custom content](images/officenavigationbar-peek-popup-1.png)
 
 ## Customizing the Appearance of the Peek Popup
 
@@ -75,7 +75,7 @@ The following example is based on the RadOfficeNavigationBarItem's implementatio
 
 __Peek popup with custom style__
 
-![Peek popup with custom style](images/officenavigationbar-peek-popup-2.png)
+![{{ site.framework_name }} Peek popup with custom style](images/officenavigationbar-peek-popup-2.png)
 
 ## Setting a String Format to the Peek Popup Content
 
@@ -88,7 +88,7 @@ The RadOfficeNavigationBarItem element allows you to apply a string format to th
 
 __Peek popup content with applied string format__
 
-![Peek popup content with applied string format](images/officenavigationbar-peek-popup-3.png)
+![{{ site.framework_name }} Peek popup content with applied string format](images/officenavigationbar-peek-popup-3.png)
 
 ## Controlling the Show/Close Popup Delay
 
@@ -136,6 +136,6 @@ The RadOfficeNavigationBar exposes the `PeekPopupOpening` event that will occur 
 {{endregion}}
 
 ## See Also
-* [Appearance]({%slug radofficenavigationbar-appearance%})
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})
 * [Navigation Options]({%slug radofficenavigationbar-navigation-options%})
+* [Overflow Menu]({%slug radofficenavigationbar-overflow-menu%})

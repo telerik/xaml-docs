@@ -28,7 +28,7 @@ You can add RadOfficeNavigationBar manually in XAML as demonstrated in the follo
     <telerik:RadOfficeNavigationBar/>
 {{endregion}}
 
-![Empty RadOfficeNavigationBar](images/officenavigationbar-getting-started-0.png)
+![{{ site.framework_name }} Empty RadOfficeNavigationBar](images/officenavigationbar-getting-started-0.png)
 
 ## Adding Items
 
@@ -71,7 +71,7 @@ The RadOfficeNavigationBar control works with `RadOfficeNavigationBarItem` eleme
 
 __RadOfficeNavigationBar with several RadOfficeNavigationBarItems defined in its Items collection__
 
-![RadOfficeNavigationBar with static items](images/officenavigationbar-getting-started-1.png)
+![{{ site.framework_name }} RadOfficeNavigationBar with static items](images/officenavigationbar-getting-started-1.png)
 
 The `Content` property of the RadOfficeNavigationBarItem element is of type __object__ and it can contain values of any type. You can customize how the object is going to be visualized by creating a custom DataTemplate for the `ContentTemplate` property.
 
@@ -152,7 +152,7 @@ Now that you have prepared the needed sample data, it is time to bind it to the 
 
 __RadOfficeNavigationBar with a collection bound to its ItemsSource property__
 
-![RadOfficeNavigationBar with a collection bound to its ItemsSource property](images/officenavigationbar-getting-started-2.png)
+![{{ site.framework_name }} RadOfficeNavigationBar with a collection bound to its ItemsSource property](images/officenavigationbar-getting-started-2.png)
 
 ## Setting a Theme
 
@@ -188,7 +188,7 @@ The following image shows a RadOfficeNavigationBar with the __Windows8__ theme a
 
 __RadOfficeNavigationBar with the Windows8 theme__
 
-![RadOfficeNavigationBar with the Windows8 theme](images/officenavigationbar-getting-started-3.png)
+![{{ site.framework_name }} RadOfficeNavigationBar with the Windows8 theme](images/officenavigationbar-getting-started-3.png)
 
 ## See Also
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})

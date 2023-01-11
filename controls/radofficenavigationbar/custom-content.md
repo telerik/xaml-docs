@@ -32,7 +32,7 @@ Each RadOfficeNavigationBarItem supports setting complex structures of elements 
 
 __RadOfficeNavigationBarItem with a custom ContentTemplate__
 
-![RadOfficeNavigationBarItem with a custom ContentTemplate](images/officenavigationbar-custom-content-0.png)
+![{{ site.framework_name }} RadOfficeNavigationBarItem with a custom ContentTemplate](images/officenavigationbar-custom-content-0.png)
 
 #### __[XAML] Example complex CompactContentTemplate__
 {{region radofficenavigationbar-custom-content-1}}
@@ -49,7 +49,7 @@ __RadOfficeNavigationBarItem with a custom ContentTemplate__
 
 __RadOfficeNavigationBarItem with a custom CompactContentTemplate__
 
-![RadOfficeNavigationBarItem with a custom CompactContentTemplate](images/officenavigationbar-custom-content-1.png)
+![{{ site.framework_name }} RadOfficeNavigationBarItem with a custom CompactContentTemplate](images/officenavigationbar-custom-content-1.png)
 
 ## ContentTemplateSelector and CompactContentTemplateSelector
 
@@ -205,7 +205,7 @@ Finally, apply the new Style to the `ItemContainerStyle` property of the RadOffi
 
 __RadOfficeNavigationBarItems with custom ContentTemplateSelector__
 
-![RadOfficeNavigationBarItems with custom ContentTemplateSelector](images/officenavigationbar-custom-content-2.png)
+![{{ site.framework_name }} RadOfficeNavigationBarItems with custom ContentTemplateSelector](images/officenavigationbar-custom-content-2.png)
 
 ## See Also
 * [Drag and Drop]({%slug radofficenavigationbar-drag-drop%})

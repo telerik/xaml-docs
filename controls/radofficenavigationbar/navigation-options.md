@@ -14,7 +14,7 @@ position: 5
 
 __Navigation options dialog__
 
-![Navigation options dialog](images/officenavigationbar-navigation-options-0.png)
+![{{ site.framework_name }} Navigation options dialog](images/officenavigationbar-navigation-options-0.png)
 
 ## OfficeNavigationBarDialogViewModel
 
@@ -44,6 +44,6 @@ The RadOfficeNavigationBar controls exposes the `OfficeNavigationBarDialogViewMo
 {{endregion}}
 
 ## See Also
-* [Appearance]({%slug radofficenavigationbar-appearance%})
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})
+* [Overflow Menu]({%slug radofficenavigationbar-overflow-menu%})
 * [Peek Popup]({%slug radofficenavigationbar-peek-popup%})

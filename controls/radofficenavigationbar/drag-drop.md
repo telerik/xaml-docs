@@ -31,7 +31,7 @@ position: 7
 
 __RadOfficeNavigationBar with enabled drag and drop functionality__
 
-![RadOfficeNavigationBar drag and drop](images/officenavigationbar-drag-drop-0.gif)
+![{{ site.framework_name }} RadOfficeNavigationBar drag and drop](images/officenavigationbar-drag-drop-0.gif)
 
 ## See Also
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})

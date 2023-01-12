@@ -17,13 +17,13 @@ The OfficeNavigationBar component is inspired by the MS Outlook Navigation Bar. 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/radofficenavigationbar-overview-0.png)
+![{{ site.framework_name }} RadOfficeNavigationBar overview](images/radofficenavigationbar-overview-0.png)
 
 >tip Get started with the control with its [Getting Started]({%slug radofficenavigationbar-getting-started%}) help article that shows how to use it in a basic scenario.
 
 ## Key Features
 
-* __Display modes__&mdash;The OfficeNavigationBar component provides two display modes, which are __Compact__ and __Full__. Read more about these modes in the [View Modes]({%slug radofficenavigationbar-view-modes%}) article.
+* __Display modes__&mdash;The OfficeNavigationBar component provides two display modes, which are __Compact__ and __Full__. Read more about these modes in the [View Modes]({%slug radofficenavigationbar-display-modes%}) article.
 
 * __Navigation options window__&mdash;The navigation options window allows you to control the order of the items, the maximum number of visible items, and the current view mode. 
 

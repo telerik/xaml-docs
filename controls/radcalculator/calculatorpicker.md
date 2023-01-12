@@ -19,7 +19,7 @@ The `RadCalculatorPicker` control is a drop down button with a `RadCalculator` i
 
 __RadCalculatorPicker example__  
 
-![A picture showing WPF RadCalculatorPicker](images/RadCalculatorPicker-Basic.png)
+![A picture showing {{ site.framework_name }} RadCalculatorPicker](images/RadCalculatorPicker-Basic.png)
 
 The drop down state can be controlled manually with the `IsDropDownOpen` property of `RadCalculatorPicker`.
 
@@ -75,7 +75,7 @@ The following example shows how to utilize the `RadColorPicker` control as the c
 
 __Using RadCalculatorPicker as a cell editor of RadGridView__  
 
-![A picture showing WPF RadCalculator as the editor of RadGridView cells](images/RadCalculatorPicker-IntegrationWithRadGridView.png)
+![A picture showing {{ site.framework_name }} RadCalculator as the editor of RadGridView cells](images/RadCalculatorPicker-IntegrationWithRadGridView.png)
 
 ## See Also  
 * [Getting Started]({%slug radcalculator-gettingstarted%})

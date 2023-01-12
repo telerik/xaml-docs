@@ -17,7 +17,7 @@ CTAControlName: RadCalculator
 {% include cta-panel-overview.html %}
 {% endif %}			  
 
-__![Rad Calculator-Overview](images/RadCalculator-Overview.png)__
+__![{{ site.framework_name }} RadCalculator](images/RadCalculator-Overview.png)__
 
 >tip Get started with the control with its [Getting Started]({%slug radcalculator-gettingstarted%}) help article that shows how to use it in a basic scenario.
 

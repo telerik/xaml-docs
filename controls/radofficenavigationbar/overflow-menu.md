@@ -14,7 +14,7 @@ When the number of the `RadNavigationBarItem` elements exceeds the count of the 
 
 >important The items in the overflow menu do not support drag and drop operations. 
 
->tip You can control the order of the overflow menu items at runtime through the UI via the [navigation options dialog]({%slug radofficenavigationbar-navigation-options%}). In addition, you can simulate these actions from code using the commands exposed by the [OfficeNavigationBarDialogViewModel]({%slug radofficenavigationbar-navigation-options%}#OfficeNavigationBarDialogViewModel) property.
+>tip You can control the order of the overflow menu items at runtime through the UI via the [navigation options dialog]({%slug radofficenavigationbar-navigation-options%}). In addition, you can simulate these actions from code using the commands exposed by the [OfficeNavigationBarDialogViewModel]({%slug radofficenavigationbar-navigation-options%}#officenavigationbardialogviewmodel) property.
 
 ![{{ site.framework_name }} RadOfficeNavigationBar Overflow Menu](images/officenavigationbar-overflow-menu-0.png)
 

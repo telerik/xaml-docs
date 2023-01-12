@@ -14,7 +14,7 @@ The __Calculator__ component allows you to execute all basic calculations, save 
 
 This article defines the terms and concepts used in the scope of the `RadCalculator` that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting with the support service in order to better describe your issue. Below you can see snapshot and explanations of the main states and visual elements of the standard __Calculator__ control.
 			  
-![Rad Calculator-Visual Structure](images/RadCalculator-VisualStructure.png)
+![{{ site.framework_name }} RadCalculator Visual Structure](images/RadCalculator-VisualStructure.png)
 
 * __Memory Status__&mdash;Defines whether you have a value stored in the Memory or not.				  
 

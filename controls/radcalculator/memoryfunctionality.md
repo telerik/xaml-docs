@@ -12,7 +12,7 @@ position: 5
 
 The __Calculator__ component supports all native memory functionality the end user is accustomed with. 
 
-![RadCalculator image with highlighted memory buttons](images/radcalculator-memoryfunctionality-buttons.png)
+![{{ site.framework_name }} RadCalculator image with highlighted memory buttons](images/radcalculator-memoryfunctionality-buttons.png)
 
 The following list shows the supported memory actions with example.
 
@@ -62,7 +62,7 @@ To hide the buttons, set the `MemoryButtonsVisibility` property of `RadCalculato
 	<telerik:RadCalculator MemoryButtonsVisibility="Collapsed"/>
 {{endregion}}
 
-![RadCalculator image with hidden memory buttons](images/radcalculator-memoryfunctionality-hiddenbuttons.png)
+![{{ site.framework_name }} RadCalculator image with hidden memory buttons](images/radcalculator-memoryfunctionality-hiddenbuttons.png)
 
 ## See Also  
  * [Clear Functionality]({%slug radcalculator-clearfunctionality%})

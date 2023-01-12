@@ -27,7 +27,7 @@ In order to use `RadCalculator` in your projects, you have to add reference to t
 {{endregion}}
 
 #### __RadCalculator example__
-![Rad Calculator-Basic](images/RadCalculator-Basic.png)
+![A picture showing {{ site.framework_name }} RadCalculator](images/RadCalculator-Basic.png)
 
 The calculated value can be accessed via the `Value` property of `RadCalculator`.
 
@@ -39,13 +39,13 @@ The current history can be accessed via the `History` property of `RadCalculator
 
 __Basic Calculations with RadCalculator__  
 
-![Rad Calculator-Basic Calculations](images/RadCalculator-BasicCalculations.png)
+![A picture showing {{ site.framework_name }} RadCalculator with basic calculations](images/RadCalculator-BasicCalculations.png)
 
 `RadCalculator` allows you to perform also a couple of more complex calculations - __square root, reciprocal, percent, negate__. All of them can be executed either by the corresponding buttons or through the keyboard. 
 
 __Complex Calculations with RadCalculator__  
 
-![Rad Calculator-Complex Calculations](images/RadCalculator-ComplexCalculations.png)
+![A picture showing {{ site.framework_name }} RadCalculator with complex calculations](images/RadCalculator-ComplexCalculations.png)
 
 ## Setting a Theme
 
@@ -81,7 +81,7 @@ __Example 2__ demonstrates how to merge the ResourceDictionaries so that they ar
 	
 __RadCalculator with the Material theme__  
 
-![RadCalculator with Material theme](images/calculator-material-theme.png)
+![{{ site.framework_name }} RadCalculator with Material theme](images/calculator-material-theme.png)
 
 ## See Also  
 * [Calculator Picker]({%slug radcalculatorpicker-gettingstarted%})

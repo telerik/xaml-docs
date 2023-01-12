@@ -10,7 +10,7 @@ position: 4
 
 # Calculator Picker
 
-The `RadCalculatorPicker` control is a drop down button with a `RadCalendar` in its drop down content. The button content shows the calculated value of the calculator.
+The `RadCalculatorPicker` control is a drop down button with a `RadCalculator` in its drop down content. The button content shows the calculated value of the calculator.
 
 #### __[XAML] Defining RadCalculatorPicker__
 {{region radcalculatorpicker-gettingstarted-0}}
@@ -19,7 +19,7 @@ The `RadCalculatorPicker` control is a drop down button with a `RadCalendar` in 
 
 __RadCalculatorPicker example__  
 
-![A picture showing RadCalculatorPicker](images/RadCalculatorPicker-Basic.png)
+![A picture showing WPF RadCalculatorPicker](images/RadCalculatorPicker-Basic.png)
 
 The drop down state can be controlled manually with the `IsDropDownOpen` property of `RadCalculatorPicker`.
 
@@ -75,7 +75,7 @@ The following example shows how to utilize the `RadColorPicker` control as the c
 
 __Using RadCalculatorPicker as a cell editor of RadGridView__  
 
-![A picture showing RadCalculator as the editor of RadGridView cells](images/RadCalculatorPicker-IntegrationWithRadGridView.png)
+![A picture showing WPF RadCalculator as the editor of RadGridView cells](images/RadCalculatorPicker-IntegrationWithRadGridView.png)
 
 ## See Also  
 * [Getting Started]({%slug radcalculator-gettingstarted%})

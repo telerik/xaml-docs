@@ -31,6 +31,6 @@ __![{{ site.framework_name }} RadCalculator](images/RadCalculator-Overview.png)_
 
 *  [Keyboard support]({%slug radcalculator-keyboardsupport%})&mdash;All basic and several more specific key actions are support. 
 
-*  [Memory Functionality]({%slug radcalculator_memoryfunctionality%})&mdash;The memory functionality allows you to save a value for later usage, same as with any standard calculator.
+*  [Memory functionality]({%slug radcalculator_memoryfunctionality%})&mdash;The memory functionality allows you to save a value for later usage, same as with any standard calculator.
 
 *  [Clear entry, clear all, delete functionality]({%slug radcalculator-clearfunctionality%})&mdash;The clear buttons allows you to clear the value or delete digits.

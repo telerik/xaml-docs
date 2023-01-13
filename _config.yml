@@ -95,6 +95,8 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radofficenavigationbar:
+        title: RadOfficeNavigationBar
     controls/radcircularprogressbar:
         title: RadCircularProgressBar
     controls/radvirtualkeyboard:
@@ -3544,6 +3546,11 @@ defaults:
         title_prefix: "WPF NumericUpDown"
 -
     scope:
+        path: "controls/radofficenavigationbar"
+    values:
+        title_prefix: "WPF OfficeNavigationBar"
+-
+    scope:
         path: "controls/radoutlookbar"
     values:
         title_prefix: "WPF OutlookBar"
@@ -3923,6 +3930,7 @@ intro_columns:
       "Menu": "radmenu-overview"
       "NavigationView (HamburgerMenu)": "radnavigationview-overview"
       "NotifyIcon": "radnotifyicon-overview"
+      "OfficeNavigationBar": "radofficenavigationbar-overview"
       "OutlookBar": "radoutlookbar-overview"
       "PanelBar": "radpanelbar-overview"
       "RadialMenu": "radradialmenu-overview"

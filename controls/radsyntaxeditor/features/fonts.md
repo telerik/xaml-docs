@@ -45,6 +45,8 @@ When the used font is **Consolas**, **Courier New** or **Lucida Console**, you c
     <telerik:RadSyntaxEditor FontFamily="Courier New" UseMonospacedFontOptimization="True" />
 {{endregion}}
 
+>tip In case the input language uses IME (ex: Japanese, Chinese, Korean, etc.) , `UseMonospacedFontOptimization` should be set to `false`.
+
 ## See Also
 
 * [Zooming]({%slug radsyntaxeditor-features-zooming%})

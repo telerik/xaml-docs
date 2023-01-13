@@ -10,10 +10,10 @@ position: 14
 
 # Styling Rows
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
+>tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 
 {% if site.site_name == 'WPF' %}
-> As of __R3 2018 RadGridView__ supports setting the __Background__ of the selected row and as of __R1 2019 SP1__ it supports setting the __MouseOverBackground__ of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
+> `RadGridView` supports setting the background color of the selected row, as well as setting the mouse-over color of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
 {% endif %}
 
 In this article we will discuss the following topics:
@@ -24,13 +24,13 @@ In this article we will discuss the following topics:
 
 * [Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector](#setting-radgridviews-rowstyleselector-and-alternaterowsstyleselector)
 
-#### __Figure 1: GridViewRow template structure__
+#### __GridViewRow template structure__
 
 ![Telerik {{ site.framework_name }} DataGrid-row-template](images/gridview-row-template.png)
 
 ## Targeting the GridViewRow Element
 
-In order to style all RadGridView rows of an application, you should create an appropriate style targeting the __GridViewRow__ element.
+In order to style all RadGridView rows of an application, you should create an appropriate style targeting the `GridViewRow` element.
 
 You have two options:
 
@@ -38,40 +38,54 @@ You have two options:
 
 * To copy the default style of the control and modify it.
 
->To learn how to modify the default GridViewCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
+> To learn how to modify the default `GridViewCell` style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Example 1: Styling all rows of an application__
-
-	{{region xaml-gridview-styling-row-1}}
+#### __[XAML] Styling all rows of an application__
+{{region xaml-gridview-styling-row-1}}
 	<Style TargetType="telerik:GridViewRow">
 	    <Setter Property="Background" Value="Red"/>
 	    <Setter Property="Foreground" Value="White"/>
 	</Style>
 {{endregion}}
 
->If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
+> If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
 
 ## Setting RadGridView's RowStyle and AlternateRowStyle
 
-__RadGridView__ exposes the __RowStyle__ and __AlternateRowStyle__ properties of type __Style__. __GridViewRow__ elements can be styled by providing an appropriate style for each of these properties.
+`RadGridView` exposes the `RowStyle` and `AlternateRowStyle` properties of type `Style`. `GridViewRow` elements can be styled by providing an appropriate style for each of these properties.
 
->In order to use the __AlternateRowStyle__, you should first set the **AlternationCount** property of your __RadGridView__. For example, if you want to alternate each second row, you have to set its value to 2.
+> In order to use the `AlternateRowStyle`, you should first set the `AlternationCount` property of your RadGridView. For example, if you want to alternate each second row, you have to set its value to 2.
 
-#### __[XAML] Example 2: Setting a column's CellStyle__
-
-	{{region xaml-gridview-styling-row-2}}
-	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
-	AlternationCount="2"
-	AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
+#### __[XAML] Creating styles for the RowStyle and AlternativeRowStyle properties__
+{{region xaml-gridview-styling-row-2}}
+	<Application.Resources>
+		 <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewRowStyle}" -->
+		<Style x:Key="GridViewRowStyle" TargetType="telerik:GridViewRow">
+			<Setter Property="Background" Value="Red"/>
+        	<Setter Property="Foreground" Value="White"/>
+		</Style>
+		 <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewAlternateRowStyle}" -->
+		<Style x:Key="GridViewAlternateRowStyle" TargetType="telerik:GridViewRow">
+			<Setter Property="Background" Value="Blue"/>
+            <Setter Property="Foreground" Value="White"/>
+		</Style>
+	</Application.Resources>
 {{endregion}}
 
-#### __Figure 2: RadGridView with styled rows__
+#### __[XAML] Applying styles to the RowStyle and AlternateRowStyle properties__
+{{region xaml-gridview-styling-row-3}}
+	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
+			     AlternationCount="2"
+			     AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
+{{endregion}}
+
+#### __RadGridView with styled rows__
 
 ![Telerik {{ site.framework_name }} DataGrid-styled-row-and-alternate-row](images/gridview-styled-row-and-alternaterow.png)
 
 ## Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector
 
-You could also use RadGridView's **RowStyleSelector** and **AlternateRowsStyleSelector** properties to style rows differently based on a specific condition. More details about how this can be achieved can be found in the [RowStyleSelector article]({%slug gridview-rowstyleselector%}).
+You could also use RadGridView's `RowStyleSelector` and `AlternateRowsStyleSelector` properties to style rows differently based on a specific condition. More details about how this can be achieved can be found in the [RowStyleSelector article]({%slug gridview-rowstyleselector%}).
 
 ## See Also
 

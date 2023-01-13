@@ -13,7 +13,9 @@ position: 7
 
 In this article we will show you how to change the initial expand/collapse behavior of __RadPivotGrid__ rows and columns.      
 
->important*Initial* state is the state of __RadPivotGrid__ after refresh of the used data provider.        
+>important *Initial* state is the state of __RadPivotGrid__ after refresh of the used data provider. 
+
+>caution The expand behavior is not supported when the [load on demand feature]({%slug radpivotgrid-features-load-on-demand%}) is enabled.
 
 ## GroupsExpandBehavior
 

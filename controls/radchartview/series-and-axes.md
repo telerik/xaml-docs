@@ -35,6 +35,7 @@ If you use a combination of axes that is not supported by the specific series, t
 | Range Series  | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
 | Range Spline Series  | CategoricalAxis, DateTimeCategoricalAxis, DateTimeContinuousAxis | LinearAxis, LogarithmicAxis |
 | Scatter Area Series | LinearAxis, LogarithmicAxis | LinearAxis, LogarithmicAxis |
+| Scatter Range Bar Series | LinearAxis, LogarithmicAxis | LinearAxis, LogarithmicAxis |
 | Scatter Bubble Series | LinearAxis, LogarithmicAxis | LinearAxis, LogarithmicAxis |
 | Scatter Line Series | LinearAxis, LogarithmicAxis | LinearAxis, LogarithmicAxis |
 | Scatter Point Series | LinearAxis, LogarithmicAxis | LinearAxis, LogarithmicAxis |

@@ -48,9 +48,14 @@ You can modify the appearance of the selection in the control through the **Sele
 	Ме.radRichTextBox.SelectionStroke = Brushes.DarkRed
 {{endregion}}
 
+
+
 #### Figure 1: Custom selection colors
 ![Customized Selection in RadRichTextBox](images/RadRichTextBox_Selection_02.png)
 
+## Advanced Selection Mode
+
+By default when the user select text the words are selected letter by letter. In R1 2022 we have introduced an advanced selection mode that allow you to select whole word automatically. The automatic words selection begins after the selection leaves the first word. This mode can be enabled by the **IsAdvancedSelectionEnabled** property.
 
 ## Programmatic Selection
 

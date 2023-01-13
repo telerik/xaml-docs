@@ -12,7 +12,7 @@ position: 2
 
 This section will explain how to bind RadCoverFlow to an XML data. In particular we will create an application that will call a Flickr web-service and based on what is specified in the search text box a result will be returned. 
 
-![](images/RadCoverFlow_Databinding3.gif)
+![{{ site.framework_name }} RadCoverflow Bound to Web Service Data](images/RadCoverFlow_Databinding3.gif)
 
 There are many approaches to achieve the result above. For this particular section I have chosen to pass an observable collection as a data context to the RadCoverFlow control.
 
@@ -115,4 +115,4 @@ Then you should create your RadCoverFlow as follows:
     </telerik:RadCoverFlow>
 {{endregion}}
 
- ![](images/RadCoverFlow_Databinding4.gif)
+ ![{{ site.framework_name }} RadCoverflow Bound to Web Service Data](images/RadCoverFlow_Databinding4.gif)

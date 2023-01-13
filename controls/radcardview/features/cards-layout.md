@@ -20,10 +20,10 @@ The layout is controlled with the __CardLayout__ property of RadCardView. The de
 {{endregion}}
 
 #### Figure 1: Rows layout (default)
-![WPF RadCardView Rows layout (default)](images/radcardview-features-card-layout-0.png)
+![{{ site.framework_name }} RadCardView Rows layout (default)](images/radcardview-features-card-layout-0.png)
 
 #### Figure 2: Columns layout
-![WPF RadCardView Columns layout](images/radcardview-features-card-layout-1.png)
+![{{ site.framework_name }} RadCardView Columns layout](images/radcardview-features-card-layout-1.png)
 
 The size of the cards is controlled with the __MajorLength__ and __MinorLength__ properties of RadCardView. When the CardLayout is Rows the MajorLength is applied to the card's width and the MinorLength to the card's height. When the CardLayout is Columns the MajorLength is applied to the card's height and the MinorLength to the card's width. 
 

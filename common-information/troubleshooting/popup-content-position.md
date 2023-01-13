@@ -14,11 +14,11 @@ This article describes how to resolve the wrong position of a popup's content wh
 
 The Popup control in WPF is affected by the Windows OS menu settings. This can be noticed in controls that display its content in a popup. For example, the minimized content of RadRibbonView or the items of the RadComboBox control. You can see the popup element aligned to its placement target differently on different machines.
 
-![](images/troubleshooting-popup-content-position-0.png)
+![{{ site.framework_name }} Popup Content Position](images/troubleshooting-popup-content-position-0.png)
 
 You can get the same behavior also with a native WPF Border and a Popup attached to it.
 
-![](images/troubleshooting-popup-content-position-1.png)
+![{{ site.framework_name }} Popup Content Position Handed Settings](images/troubleshooting-popup-content-position-1.png)
 
 The alignment of the popup is controlled via the Handedness setting of the Windows OS. To resolve the issue you can change the setting via the Windows settings or in code.
 
@@ -26,14 +26,14 @@ The alignment of the popup is controlled via the Handedness setting of the Windo
 
 To change the Handedness via the Windows menu use the following steps:
 
-1. Open the Windows Start menu and start the Run propmpt.	
+1. Open the Windows Start menu and start the Run prompt.	
 2. Enter the following command in the Open input - *explorer shell:::{80F3F1D5-FECA-45F3-BC32-752C152E456E}*. This will open the Tablet PC Settings  
 
-	![](images/troubleshooting-popup-content-position-2.png)
+	![{{ site.framework_name }} Popup Content Position Run Shell Command](images/troubleshooting-popup-content-position-2.png)
 	
 3. Click in the Other tab of the settings window and select the __Left-handed__ option. Then click okay.
 	
-	![](images/troubleshooting-popup-content-position-3.png)
+	![{{ site.framework_name }} Popup Content Position Set handedness](images/troubleshooting-popup-content-position-3.png)
 
 ## Changing the Handedness in code
 

@@ -45,10 +45,10 @@ You can set the PlotMode from XAML like this:
 The PlotMode property can be used with the following predefined values:        
 
 * __OnTicks__ - in this mode, the ticks match labels. Best for Linear series.  
-            ![](images/RadChartView-chart_onticks.PNG)
+            ![{{ site.framework_name }} RadChartView Plot Mode OnTicks](images/RadChartView-chart_onticks.PNG)
 
 * __BetweenTicks__ - ticks are margins (labels are between two ticks); a small margin on both sides is provided. Useful for Bar series.  
-            ![](images/RadChartView-chart_betweenticks.PNG)
+            ![{{ site.framework_name }} RadChartView Plot Mode BetweenTicks](images/RadChartView-chart_betweenticks.PNG)
 
 * __OnTicksPadded__ - ticks match labels; a small margin on both sides is provided for better presentation. It is recomended to be used with Scatter series.  
-            ![](images/RadChartView-chart_ontickspadded.PNG)
+            ![{{ site.framework_name }} RadChartView Plot Mode OnTicksPadded](images/RadChartView-chart_ontickspadded.PNG)

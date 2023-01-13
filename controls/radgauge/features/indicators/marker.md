@@ -42,4 +42,4 @@ Here is an example of a __Marker__ definition:
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_Indicators_Marker_01.png)
+![{{ site.framework_name }} RadGauge Marker](images/RadGauge_Features_Indicators_Marker_01.png)

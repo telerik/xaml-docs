@@ -28,7 +28,7 @@ After clicking the OK button a style with target type __AxisTitle__ will be crea
 
 If you go to the 'Resources' pane you will see that two additional __Styles__ have been generated together with the one for the __AxisTitle__. They are for the borders which the __AxisTitle__ uses in its template. Clicking on their icons will allow you to modify them.
 
-![](images/RadChart_StylingAxisTitle_07.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxisTitle_07.png)
 
 After finishing with the changes it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
@@ -52,7 +52,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 >tipThe title for a particular axis can be set through its __Title__ property. Read more about axes [here]({%slug radchart-features-axes-overview%}).
 
-![](images/RadChart_StylingAxisTitle_10.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxisTitle_10.png)
 
 Here is the final XAML for the __Style__:
 

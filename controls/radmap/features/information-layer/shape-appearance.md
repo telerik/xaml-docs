@@ -46,7 +46,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Features_ShapeAppearance_01.png)
+![{{ site.framework_name }} RadMap InformationLayer Ellipse Customization](images/RadMap_Features_ShapeAppearance_01.png)
 
 ## Using the MapShapeFill object on the control level
 
@@ -81,7 +81,7 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Features_ShapeAppearance_02.png)
+![{{ site.framework_name }} RadMap InformationLayer Shape with ShapeFill and HighlightFill](images/RadMap_Features_ShapeAppearance_02.png)
 
 ## Using the MapShapeFill object on the layer level
 
@@ -122,7 +122,7 @@ The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object all
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Features_ShapeAppearance_03.png)
+![{{ site.framework_name }} RadMap InformationLayer with ShapeFill and HighlightFill](images/RadMap_Features_ShapeAppearance_03.png)
 
 ## See Also
  * [Colorizer]({%slug radmap-features-colorizer%})

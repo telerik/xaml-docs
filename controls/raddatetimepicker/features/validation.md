@@ -84,7 +84,7 @@ To show the data error, set the __ValidatesOnDataErrors__ property of the Bindin
 	}
 {{endregion}}
 
-![](images/raddatetimepicker-features-validation-0.png)
+![{{ site.framework_name }} RadDateTimePicker with Custom Validation](images/raddatetimepicker-features-validation-0.png)
 
 ## See Also  
  * [Overview]({%slug raddatetimepicker-overview%})

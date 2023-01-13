@@ -155,7 +155,7 @@ The following example shows how to create a simple object describing the error b
 
 __ErrorBarSeries data binding example__  
 
-![](images/radchartview-series-errorbarseries-2.png)
+![{{ site.framework_name }} RadChartView ErrorBarSeries Data Binding Example](images/radchartview-series-errorbarseries-2.png)
 
 Read more about the data binding support in the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) article.
 

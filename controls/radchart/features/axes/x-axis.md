@@ -15,7 +15,7 @@ position: 1
 ## 
 
 This topic covers only the properties that are specific to the __X-axis__. If you want to learn more about the properties that are common to both X and Y axes take a look at the [Axes Overview]({%slug radchart-features-axes-overview%}) topic.
-![](images/RadChart_Features_Axes_x_axis_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_x_axis_01.png)
 
 Besides the common properties __X-axis__ has some specific properties, explained in the list below:
 
@@ -122,7 +122,7 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 {{endregion}}
 
 
-![](images/RadChart_Features_Axes_x_axis_01a.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_x_axis_01a.png)
 
 The __TickDistance__ has to be used together with __AutoRange__. When __AutoRange__ is set to __True__, the axis __Step__ value is calculated depending on the data range, the available space and the __TicksDistance__ value. Since __TickDistance__ defines the minimal distance between two ticks, increasing its value will cause the __Step__ value to be increased too.
 
@@ -203,7 +203,7 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 
 
 You can see the result on the snapshot below:
-![](images/RadChart_Features_Axes_x_axis_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_x_axis_02.png)
 
 When __AutoRange__ is __True__, __RadChart__ calculates the __MinValue__, __MaxValue__ and the __Step__ and draws ticks accordingly. Also, the labels are rotated to 45 degree and formatted to show only the date and a three letter month abbreviation.
 
@@ -243,7 +243,7 @@ However, the chart above could be improved if a bit more ticks are shown. When _
 	'....'
 {{endregion}}
 
-![](images/RadChart_Features_Axes_x_axis_30.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_x_axis_30.png)
 
 As you can see, the number of the ticks is increased and the chart looks much better, because of the reduced step size. Notice the last date on the __X-Axis__ - it is recalculated based on the new __Step__ value and as a result, the chart is using the whole area - no offset on the right side.
 
@@ -296,7 +296,7 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
 {{endregion}}
 
-![](images/RadChart_Features_Axes_X_axis_40.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_X_axis_40.png)
 
 Notice how the __MinValue__ and __MaxValues__ are set - they are set to the OLE Automation equivalent of the __DateTime__ value. In this example, 1 Jan 2009 and 31 Mar 2009. Additionally, the __LabelStep__ is set to 2, which means that each second tick will have a label.
 

@@ -131,7 +131,7 @@ Here is an example:
 
 Here is a snapshot of the result:
 
-![](images/RadGauge_Features_Indicators_Basics_01.png)
+![{{ site.framework_name }} RadGauge Indicator RelativeHeight and RelativeWidth](images/RadGauge_Features_Indicators_Basics_01.png)
 
 ## Indicator's Value
 
@@ -139,7 +139,7 @@ The indicators have a __Value__ property, which specifies the value from the sca
 
 ## Using the Range Color
 
-If you use ranges in your scale, you can make the indicator consitent with their color. This way, when the indicator enters into a specific range, it will take the color defined for it by the range. For this purpose you have to set the __UseRangeColor__ property of the indicator to __True__ and the __IndicatorBackground__ property of the range to the desired indicator color.
+If you use ranges in your scale, you can make the indicator consistent with their color. This way, when the indicator enters into a specific range, it will take the color defined for it by the range. For this purpose you have to set the __UseRangeColor__ property of the indicator to __True__ and the __IndicatorBackground__ property of the range to the desired indicator color.
 
 >tip To learn more about ranges, read the [Ranges]({%slug radgauge-features-ranges-gauge-range%}) topic.
 
@@ -177,7 +177,7 @@ Here is an example.
 
 Here is a snapshot of the result.
 
-![](images/RadGauge_Features_Indicators_Basics_02.png)
+![{{ site.framework_name }} RadGauge Using the Range Color](images/RadGauge_Features_Indicators_Basics_02.png)
 
 ## Value's Source
 

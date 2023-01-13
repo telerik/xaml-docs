@@ -37,7 +37,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 >To change the button's default toggled and hover colors, you have to edit their default styles.
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RadMap_StylesAndTemplates_StylingMapZoomBar_01.png)
+![{{ site.framework_name }} RadMap MapZoomBar Blend Resources](images/RadMap_StylesAndTemplates_StylingMapZoomBar_01.png)
 {% endif %}
 
 * __ControlOuterBorderVertical_Normal__ - a brush that represents the outer border color of the drop down button, the preset buttons and the slider thumb.
@@ -127,11 +127,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 {% if site.site_name == 'Silverlight' %}
 Here is an example of these resources modified:
 
-![](images/RadMap_StylesAndTemplates_StylingMapZoomBar_02.png)
+![{{ site.framework_name }} RadMap MapZoomBar Custom Blend Resources](images/RadMap_StylesAndTemplates_StylingMapZoomBar_02.png)
 
 And here is a snapshot of the result:
 
-![](images/RadMap_StylesAndTemplates_StylingMapZoomBar_03.png)
+![{{ site.framework_name }} RadMap MapZoomBar Customized Appearance](images/RadMap_StylesAndTemplates_StylingMapZoomBar_03.png)
 {% endif %}
 
 ## See Also

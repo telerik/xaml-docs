@@ -37,7 +37,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 >To change the button's default toggled and hover colors, you have to edit their default styles.
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RadMap_StylesAndTemplates_StylingMapNavigation_01.png)
+![{{ site.framework_name }} RadMap MapNavigation Blend Resources](images/RadMap_StylesAndTemplates_StylingMapNavigation_01.png)
 {% endif %}
 
 * __ControlOuterBorderVertical_Normal__ - a brush that represents the border color of the buttons inside the __MapNavigation's__ template.
@@ -91,11 +91,11 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 {% if site.site_name == 'Silverlight' %}
 Here is an example of these resources modified:
 
-![](images/RadMap_StylesAndTemplates_StylingMapNavigation_02.png)
+![{{ site.framework_name }} RadMap MapNavigation Custom Blend Resources](images/RadMap_StylesAndTemplates_StylingMapNavigation_02.png)
 
 And here is a snapshot of the result:
 
-![](images/RadMap_StylesAndTemplates_StylingMapNavigation_03.png)
+![{{ site.framework_name }} RadMap MapNavigation Customized Appearance](images/RadMap_StylesAndTemplates_StylingMapNavigation_03.png)
 {% endif %}
 
 ## See Also

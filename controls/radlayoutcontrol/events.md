@@ -39,10 +39,9 @@ The layout control has the following event.
 				e.AllowedActions = LayoutControlAllowedActions.None;                        
 			}
 		{{endregion}}
-		
+
 		#### __Figure 1: Locked item__
-		
-		![WPF RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
+	![{{ site.framework_name }} RadLayoutControl Locked item](images/layoutcontrol-events-01.png)
 
 ## Save/Load layout events
 

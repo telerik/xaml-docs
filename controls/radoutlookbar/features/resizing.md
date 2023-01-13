@@ -27,7 +27,7 @@ RadOutlookBar has three areas where the RadOutlookBarItems can reside - __active
 {{endregion}}
 
 #### Figure 1: Item Areas
-![WPF RadOutlookBar Item Areas](images/radoutlookbar-resizing-0.png)
+![{{ site.framework_name }} RadOutlookBar Item Areas](images/radoutlookbar-resizing-0.png)
 
 Items are arranged in the active area by default. If there is not enough space for all items, some will get moved to the minimized area. If the minimized area is not wide enough, the items go to the overflow area.
 

@@ -18,7 +18,7 @@ __RadSlider__ supports the functionality of having two thumbs, thus enabling ran
 	<telerik:RadSlider x:Name="slider" IsSelectionRangeEnabled="True" />
 {{endregion}}
 
-![](images/radslider_features_default_range.png)
+![{{ site.framework_name }} RadSlider Default Selection Range](images/radslider_features_default_range.png)
 
 Modifying the range can be done either via the __SelectionStart__ and __SelectionEnd__ properties or through the __Selection__ property.
 
@@ -46,7 +46,7 @@ Modifying the range can be done either via the __SelectionStart__ and __Selectio
 	slider.Selection = New SelectionRange(Of Double)(0.2, 0.4)
 {{endregion}}
 
-![](images/radslider_features_custom_range.png)
+![{{ site.framework_name }} RadSlider Custom Selection Range](images/radslider_features_custom_range.png)
 
 ## MiddleThumbClickMode
 

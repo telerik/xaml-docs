@@ -14,27 +14,15 @@ __AutoComplete__ is a feature provided by many browsers, programs and controls. 
 
 > When the __TextSearchMode__ property of the RadComboBox is set to __Contains__, the __AutoComplete__ functionality will be disabled.
 
-The purpose of this tutorial is to show you how to configure the autocomplete feature. The following sections are included:
-
-* [RadComboBox populated with a list of strings](#radcombobox-populated-with-a-list-of-strings)
-
-* [Using DisplayMemberPath](#using-displaymemberpath)
-
-* [Using custom ItemTemplate](#using-custom-itemtemplate)
-
-* [Using TextSearch.TextPath property](#using-textsearchtextpath)
-
-* [Using TextSearch.AutoCompleteTimeout property](#using-textsearchautocompletetimeout-property)
-
-* [Disable autocomplete](#disable-autocomplete)
+The purpose of this tutorial is to show you how to configure the autocomplete feature.
 
 ## RadComboBox Populated with a List of Strings
 
 In the simplest scenario your data source will be a list of strings. In this case you don't need to perform any additional work to enable or configure the autocomplete.
 
-#### __[XAML] Example 1: Create sample data__
+#### __[XAML] Create sample data__
 
-{{region radcombobox-features-autocomplete_0}}
+{{region xaml-radcombobox-features-autocomplete_0}}
 	<telerik:RadComboBox x:Name="radComboBox" Width="200" IsEditable="True">
 	    <telerik:RadComboBoxItem Content="Alapattah" />
 	    <telerik:RadComboBoxItem Content="Brickell Avenue" />
@@ -60,9 +48,9 @@ Having __RadComboBox__ populated with a list of strings is the simplest scenario
 
 For example, if you set the __DisplayMemberPath__ to __Name__ as you suppose that your data object has such property, __RadComboBox__ will try to auto complete your entry with some of the matching name values. Here is an example of how to set __DisplayMemberPath__ and use __AutoComplete__ in case your data context associated with this control has a property called __Name__.
 
-#### __[XAML] Example 2: Set DisplayMemberPath property__
+#### __[XAML] Set DisplayMemberPath property__
 
-{{region radcombobox-features-autocomplete_1}}
+{{region xaml-radcombobox-features-autocomplete_1}}
 	<telerik:RadComboBox x:Name="radComboBox" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" DisplayMemberPath="Name" IsEditable="True"/>
 {{endregion}}
 
@@ -76,7 +64,7 @@ In the previous example, the actual data source declaration and initialization a
 
 Things are getting more complicated in the cases when you are using __ItemTemplate__ that defines your item layout. For example, if you have an __ItemTemplate__ like the one shown below, there is no straight-forward logic what __DisplayMemberPath__ should match as there are multiple members that are displayed.
 
-![](images/RadComboBox_Features_AutoComplete_030.png)
+![{{ site.framework_name }} RadComboBox AutoComplete with Custom ItemTemplate](images/RadComboBox_Features_AutoComplete_030.png)
 
 ### Using TextSearch.TextPath
 
@@ -86,9 +74,9 @@ To overcome this issue the __RadComboBox__'s API supports an attached property _
 
 The following example shows you how to use the __TextSearch.TextPath__ property.
 
-#### __[XAML] Example 3: Set TextSearch attached property__
+#### __[XAML] Set TextSearch attached property__
 
-{{region radcombobox-features-autocomplete_2}}
+{{region xaml-radcombobox-features-autocomplete_2}}
 	<telerik:RadComboBox x:Name="radComboBox" 
 	                     ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" 
 	                     ItemTemplate="{StaticResource ComboBoxCustomTemplate}" IsEditable="True" 
@@ -101,9 +89,9 @@ The __TextSearch__ class exposes a static property named __AutoCompleteTimeout__
 
 The following example shows how to set __TextSearch.AutoCompleteTimeout__ property.
 
-#### __[C#] Example 4: Set AutoCompleteTimeout property__
+#### __[C#] Set AutoCompleteTimeout property__
 
-{{region radcombobox-features-autocomplete_6}}
+{{region cs-radcombobox-features-autocomplete_6}}
 	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
 {{endregion}}
 
@@ -111,22 +99,77 @@ The following example shows how to set __TextSearch.AutoCompleteTimeout__ proper
 
 By default the autocomplete feature of __RadComboBox__ is always enabled. In order to disable it, you need to set the __RadComboBox__'s __IsTextSearchEnabled__ property to __False__.
 
-#### __[XAML] Example 5: Disable AutoComplete mechanism__
+#### __[XAML] Disable AutoComplete mechanism__
 
-{{region radcombobox-features-autocomplete_3}}
+{{region xaml-radcombobox-features-autocomplete_3}}
 	<telerik:RadComboBox x:Name="radComboBox" IsTextSearchEnabled="False"/>
 {{endregion}}
 
-#### __[C#] Example 6: Disable AutoComplete mechanism in code behind__
+#### __[C#] Disable AutoComplete mechanism in code behind__
 
-{{region radcombobox-features-autocomplete_4}}
+{{region cs-radcombobox-features-autocomplete_4}}
 	radComboBox.IsTextSearchEnabled = false;
 {{endregion}}
 
-#### __[VB.NET] Example 6: Disable AutoComplete mechanism in code behind__
+#### __[VB.NET] Disable AutoComplete mechanism in code behind__
 
-{{region radcombobox-features-autocomplete_5}}
+{{region vb-radcombobox-features-autocomplete_5}}
 	radComboBox.IsTextSearchEnabled = False
+{{endregion}}
+
+## Select Items on AutoComplete
+
+The RadComboBox control exposes the `CanAutocompleteSelectItems` property which specifies whether typing a text in a RadComboBox should change the selection or not.
+
+>This property is applicable only when the dropdown of the control is opened.
+
+By default, the value of the property is `null` which means that typing some characters will only select an item if the `IsEditable` property is set to `true`.
+
+You can, however, manually set the `CanAutocompleteSelectItems` property to `true` if the control should change its selection when the user types text or to `false` when the selection should not be changed until this occurs explicitly.
+
+#### __[XAML] Disable AutoComplete item selection__
+
+{{region xaml-radcombobox-features-autocomplete_7}}
+	<telerik:RadComboBox x:Name="radComboBox" CanAutocompleteSelectItems="False"/>
+{{endregion}}
+
+#### __[C#] Disable AutoComplete item selection in code behind__
+
+{{region cs-radcombobox-features-autocomplete_8}}
+	radComboBox.CanAutocompleteSelectItems = false;
+{{endregion}}
+
+#### __[VB.NET] Disable AutoComplete item selection in code behind__
+
+{{region vb-radcombobox-features-autocomplete_9}}
+	radComboBox.CanAutocompleteSelectItems = False
+{{endregion}}
+
+## Select Partial Matches
+
+As of **R1 2023** the RadComboBox control exposes a `AutoCompleteSelectionMode` property which indicates whether selection via autocomplete is performed when a partial or a full match is found. It is an enum which has two possible values:
+
+* `PartialMatch`: Items are selected even if they only partially match the typed text. This is the **default** value.
+* `FullMatch`: Items are selected only if they exactly match the typed text.
+
+The next examples demonstrate how to set the AutoCompleteSelectionMode property so that items are only selected if they exactly match the typed text.
+
+#### __[XAML] Set the AutoCompleteSelectionMode__
+
+{{region xaml-radcombobox-features-autocomplete_10}}
+	<telerik:RadComboBox x:Name="radComboBox" AutoCompleteSelectionMode="FullMatch"/>
+{{endregion}}
+
+#### __[C#] Set the AutoCompleteSelectionMode in code behind__
+
+{{region cs-radcombobox-features-autocomplete_11}}
+	radComboBox.AutoCompleteSelectionMode = ComboBoxAutoCompleteSelectionMode.FullMatch;
+{{endregion}}
+
+#### __[VB.NET] Set the AutoCompleteSelectionMode in code behind__
+
+{{region vb-radcombobox-features-autocomplete_12}}
+	radComboBox.AutoCompleteSelectionMode = ComboBoxAutoCompleteSelectionMode.FullMatch
 {{endregion}}
 
 ## See Also

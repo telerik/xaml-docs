@@ -37,7 +37,7 @@ The barcode controls work with text data. After the control is defined (see Exam
 {{endregion}}
 
 #### __Figure 1: RadBarcode128__
-![WPF RadBarcodeLegacy RadBarcode128](images/radbarcode-getting-started-0.png)
+![{{ site.framework_name }} RadBarcodeLegacy RadBarcode128](images/radbarcode-getting-started-0.png)
 
 ## Showing the Text
 
@@ -65,7 +65,7 @@ By default the checksum is shown in the text field under the barcode. To change 
 {{endregion}}
 
 #### __Figure 1: RadBarcode128 with shown checksum__
-![WPF RadBarcodeLegacy RadBarcode128 with shown checksum](images/radbarcode-getting-started-1.png)
+![{{ site.framework_name }} RadBarcodeLegacy RadBarcode128 with shown checksum](images/radbarcode-getting-started-1.png)
 
 ## Restricting the Aspect Ratio
 

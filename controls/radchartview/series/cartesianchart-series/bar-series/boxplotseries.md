@@ -15,7 +15,7 @@ This type of series visualizes its data points using box plot shapes. An alterna
 The box plot shape allows you to display a summarized information containing five values - minimum, maximum, lower quartile (Q1), upper quartile (Q3) and median - plotted on the numeric axis of the chart.
 
 #### Figure 1: Box Plot Visual Structure
-![WPF RadChartView Box Plot Visual Structure](images/radchartview-series-boxplotseries-0.png)
+![{{ site.framework_name }} RadChartView Box Plot Visual Structure](images/radchartview-series-boxplotseries-0.png)
 
 BoxPlotSeries works with one CategoricalAxis (or DateTime axis) as horizontal axis and one numeric axis (LinearAxis or LogarithmicAxis) as vertical axis. Any other combination of axes is unsupported.
 
@@ -116,7 +116,7 @@ The following example shows how to create a simple object describing a box plot 
 {{endregion}}
 
 #### Figure 3: BoxPlotSeries data binding example
-![WPF RadChartView BoxPlotSeries data binding example](images/radchartview-series-boxplotseries-2.png)
+![{{ site.framework_name }} RadChartView BoxPlotSeries data binding example](images/radchartview-series-boxplotseries-2.png)
 
 Read more about the data binding support in the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) article.
 
@@ -166,7 +166,7 @@ The chart series allows you to auto-generate LegendItem objects containing a tit
 {{endregion}}
 
 #### Figure 4: Chart legend 
-![WPF RadChartView Chart legend](images/radchartview-series-boxplotseries-3.png)
+![{{ site.framework_name }} RadChartView Chart legend](images/radchartview-series-boxplotseries-3.png)
 
 Read more about the chart's legend settings in the [RadLegend Support]({%slug radchartview-features-radlegend-support%}) article.
 
@@ -184,7 +184,7 @@ To change the length of the lines representing the minimum and maximum values of
 {{endregion}}
 
 #### Figure 4: Minimum and maximum lines matching the box plot's width
-![WPF RadChartView Minimum and maximum lines matching the box plot's width](images/radchartview-series-boxplotseries-4.png)
+![{{ site.framework_name }} RadChartView Minimum and maximum lines matching the box plot's width](images/radchartview-series-boxplotseries-4.png)
 
 ## See Also
  * [Getting Started]({%slug radchartview-introduction%})

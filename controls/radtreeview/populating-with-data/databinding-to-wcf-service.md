@@ -233,10 +233,10 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 		{{endregion}}
 
 	Run your demo, the result can be seen on the next picture: 
-	![](images/RadTreeView_PopulatingWithBindingToWCFService_010.PNG)
+	![{{ site.framework_name }} RadTreeView Binding to WCF Service Data](images/RadTreeView_PopulatingWithBindingToWCFService_010.PNG)
 
 	If you try to expand any of the loaded categories, the default load on demand animation will be started: 
-	![](images/RadTreeView_PopulatingWithBindingToWCFService_020.PNG)
+	![{{ site.framework_name }} RadTreeView Load On Demand Animation](images/RadTreeView_PopulatingWithBindingToWCFService_020.PNG)
 
 	The next step is to handle the load on demand event. 
 
@@ -370,7 +370,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 	>When there are no items to add, and you want to prevent the __LoadOnDemand__ event to fire again, set the __IsLoadOnDemandEnabled__ property to __False__ to the __RadTreeViewItem__ that has fired the __LoadOnDemand__ event.
 
 And here is the result: 
-![](images/RadTreeView_PopulatingWithBindingToWCFService_030.PNG)
+![{{ site.framework_name }} RadTreeView Bound to WCF Service Data](images/RadTreeView_PopulatingWithBindingToWCFService_030.PNG)
 
 ## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

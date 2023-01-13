@@ -30,13 +30,13 @@ The __ExpandDirection__ property gets or sets the direction in which the content
 {{endregion}}
 
 #### __Figure 1: ExpandDirection set to Down__
-![WPF RadExpander ExpandDirection set to Down](images/RadExpander_Features_ExpandDirection_Down.gif)
+![{{ site.framework_name }} RadExpander ExpandDirection set to Down](images/RadExpander_Features_ExpandDirection_Down.gif)
 
 #### __Figure 2: ExpandDirection set to Left__
-![WPF RadExpander ExpandDirection set to Left](images/RadExpander_Features_ExpandDirection_Left.gif)
+![{{ site.framework_name }} RadExpander ExpandDirection set to Left](images/RadExpander_Features_ExpandDirection_Left.gif)
 
 #### __Figure 3: ExpandDirection set to Right__
-![WPF RadExpander ExpandDirection set to Right](images/RadExpander_Features_ExpandDirection_Right.gif)
+![{{ site.framework_name }} RadExpander ExpandDirection set to Right](images/RadExpander_Features_ExpandDirection_Right.gif)
 
 #### __Figure 4: ExpandDirection set to Up__
-![WPF RadExpander ExpandDirection set to Up](images/RadExpander_Features_ExpandDirection_Up.gif)
+![{{ site.framework_name }} RadExpander ExpandDirection set to Up](images/RadExpander_Features_ExpandDirection_Up.gif)

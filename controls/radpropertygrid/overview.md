@@ -21,7 +21,7 @@ RadPropertyGrid can be bound to an item with just a single line of code and you 
 {% include cta-panel-overview.html %}
 {% endif %}
 
- ![](images/RadPropertyGrid_Overview.png)
+ ![{{ site.framework_name }} RadPropertyGrid Overview](images/RadPropertyGrid_Overview.png)
 
 
 

@@ -14,7 +14,7 @@ RadDataForm provides data validation of the user input. Data Validation enables 
 
 Generally, the built-in validation will be performed once the edit has been committed and the RadDataForm will be visualized as follows:
 
-![](images/RadDataForm_Validation1.png)
+![{{ site.framework_name }} RadDataForm Built-In Validation](images/RadDataForm_Validation1.png)
 
 In the case above the Framework handles the validation and it fails due to type incompatibility.
 
@@ -50,7 +50,7 @@ For example:
 
 In this case the RadDataForm will be displayed as the image below:
 
-![](images/RadDataForm_Validation2.png)
+![{{ site.framework_name }} RadDataForm with RadWindow Alert](images/RadDataForm_Validation2.png)
 
 Yet another approach applicable when defining custom fields is to specify the validation properties in the binding and perform the logic inside the property setter. For example:
 
@@ -111,4 +111,4 @@ The definition of the DataFormDataField should be like follows:
 
 Once the validation is performed, the RadDataForm will be displayed as in the image below:
 
-![](images/RadDataForm_Validation3.png)
+![{{ site.framework_name }} RadDataForm with Property-Level Validation](images/RadDataForm_Validation3.png)

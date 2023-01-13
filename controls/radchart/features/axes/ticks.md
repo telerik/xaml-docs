@@ -73,4 +73,4 @@ You can do this in code-behind too.
 
 
 Here is a snapshot of the result.
-![](images/RadChart_Features_Axes_Ticks_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_Ticks_01.png)

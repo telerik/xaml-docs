@@ -50,7 +50,7 @@ You can use the code from __Example 1__ to create a __PointSeries3D__.
 {{endregion}}
 	
 #### __Figure 1: PointSeries3D__
-![WPF RadChartView3D PointSeries3D](images/radchartview-3d-pointseries3d-0.png)
+![{{ site.framework_name }} RadChartView3D PointSeries3D](images/radchartview-3d-pointseries3d-0.png)
 
 ## Data bound series
 

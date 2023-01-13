@@ -25,7 +25,7 @@ To hide the axis labels, set the `ShowLabels` property to `False`.
 
 __Vertical axis with hidden labels__  
 
-![](images/radchartview-axes-labels-0.png)
+![{{ site.framework_name }} RadChartView Vertical Axis with Hidden Labels](images/radchartview-axes-labels-0.png)
 
 ## Label Interval
 
@@ -40,7 +40,7 @@ The axis labels are positioned on each tick plotted on the axis. To change this,
 
 __Vertical axis with label interval set to 2__  
 
-![](images/radchartview-axes-labels-1.png)
+![{{ site.framework_name }} RadChartView Vertical Axis with Label Interval Set to 2](images/radchartview-axes-labels-1.png)
 
 ## String Format 
 
@@ -55,7 +55,7 @@ To adjust the string format of the labels, set the `LabelFormat` property.
 
 __Vertical axis labels formatted using the currency format C__  
 
-![](images/radchartview-axes-labels-2.png)
+![{{ site.framework_name }} RadChartView Vertical Axis Labels Formatted Using the Currency Format C](images/radchartview-axes-labels-2.png)
 
 ## Rotation
 
@@ -72,7 +72,7 @@ In order for the `LabelRotationAngle` property to take effect, the `LabelFitMode
 
 __Horizontal axis labels rotated by 90 degrees__  
 
-![](images/radchartview-axes-labels-3.png)
+![{{ site.framework_name }} RadChartView Horizontal Axis Labels Rotated by 90 Degrees](images/radchartview-axes-labels-3.png)
 
 ## Multi-line Mode
 
@@ -87,7 +87,7 @@ To arrange the labels on different vertical positions that mimics multi-line lay
 
 __Horizontal axis with multi-line labels__  
 
-![](images/radchartview-axes-labels-4.png)
+![{{ site.framework_name }} RadChartView Horizontal Axis with Multi-Line Labels](images/radchartview-axes-labels-4.png)
 
 ## Smart Labels
 
@@ -115,7 +115,7 @@ The default visual element of the axis labels is `TextBlock`. To customize its a
 
 __Vertical axis with custom label style__  
 
-![](images/radchartview-axes-labels-5.png)
+![{{ site.framework_name }} RadChartView Vertical Axis with Custom Label Style](images/radchartview-axes-labels-5.png)
 
 ## Label Template
 
@@ -138,7 +138,7 @@ To replace the default visual element of the axis labels, set the axis' `LabelTe
 
 __Vertical axis with custom label template__  
 
-![](images/radchartview-axes-labels-6.png)
+![{{ site.framework_name }} RadChartView Vertical Axis with Custom Label Template](images/radchartview-axes-labels-6.png)
 
 ## Label Template Selector
 

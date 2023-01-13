@@ -49,9 +49,9 @@ This article lists the events specific to all of the RadFileDialog controls.
 
 	> If the __InitialDirectory__ of the RadFileDialog is filtered out as in __Example 3__, the current directory on load will be the default one. 
 
-	#### Figure 1: Unfiltered Directories	![WPF RadFileDialogs Unfiltered Directories](images/radfiledialogs-directories.png)
+	#### Figure 1: Unfiltered Directories	![{{ site.framework_name }} RadFileDialogs Unfiltered Directories](images/radfiledialogs-directories.png)
 	
-	#### Figure 2: Filtered Directories Based on Example 3	![WPF RadFileDialogs Filtered Directories Based on Example 3](images/radfiledialogs-filtereddirectories.png)
+	#### Figure 2: Filtered Directories Based on Example 3	![{{ site.framework_name }} RadFileDialogs Filtered Directories Based on Example 3](images/radfiledialogs-filtereddirectories.png)
 	
 * __DirectoryNavigating__: This event occurs when the current folder is about to change. You can use it to execute an additional action or to cancel the navigation. 
 	

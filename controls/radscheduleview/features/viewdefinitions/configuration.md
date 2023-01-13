@@ -219,7 +219,7 @@ If set to True (default value) and there is more available space in the ViewDefi
 {{endregion}}
 
 #### __Figure 2: RadScheduleView with StretchGroupHeaders set__  
-![WPF RadScheduleView RadScheduleView with StretchGroupHeaders set](images/radscheduleView_viewdefinitions_configuration_08.png)
+![{{ site.framework_name }} RadScheduleView RadScheduleView with StretchGroupHeaders set](images/radscheduleView_viewdefinitions_configuration_08.png)
 
 ## Orientation
 

@@ -39,7 +39,7 @@ The UriImageProvider provides support for the following specific properties:
 Example:
 [http://c.tile.openstreetmap.org/7/70/43.png](http://c.tile.openstreetmap.org/7/70/43.png)
 (© OpenStreetMap contributors).
-![](http://c.tile.openstreetmap.org/7/70/43.png)
+![{{ site.framework_name }} RadMap Example Tile](http://c.tile.openstreetmap.org/7/70/43.png)
 
 {% if site.site_name == 'Silverlight' %}
 In a Silverlight application this can either point to absolute location (like the above example)

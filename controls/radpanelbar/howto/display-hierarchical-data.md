@@ -201,4 +201,4 @@ The following example demonstrates how to create a hierarchical data source and 
 	Me.radPanelBar.ItemsSource = MyViewModel.GenerateItems()
 {{endregion}}
 
-	![](images/PanelBar_HierarchicalData.png)
+	![{{ site.framework_name }} RadPanelBar Hierarchical Data](images/PanelBar_HierarchicalData.png)

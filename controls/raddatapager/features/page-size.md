@@ -21,7 +21,7 @@ The __RadDataPager__ splits the data into separate pages with a certain size. In
 	                        PageSize="5" />
 {{endregion}}
          
- ![](images/RadDataPager_Features_PageSize_01.png)
+ ![{{ site.framework_name }} RadDataPager Page Size 5](images/RadDataPager_Features_PageSize_01.png)
 
 ## See Also
 

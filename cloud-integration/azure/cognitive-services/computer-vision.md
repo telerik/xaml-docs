@@ -16,7 +16,7 @@ This article will guide you through the process of integrating Azure's [Computer
 
 Before you start, you need to create a new Computer Vision API account through the Azure portal. This has been explained in great detail in [this article](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
 
-![](images/create-computer-vision-resource.png)
+![{{ site.framework_name }} Image Analysis Create Computer Vision API](images/create-computer-vision-resource.png)
 
 Once you've created the account, you have to obtain the subscription keys that have been generated for you. You will require them later on in order to make API calls from your application.
 

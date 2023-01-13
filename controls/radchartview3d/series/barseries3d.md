@@ -55,7 +55,7 @@ You can use the code from __Example 1__ to create a __BarSeries3D__.
 {{endregion}}
 	
 #### __Figure 1: BarSeries3D__
-![WPF RadChartView3D BarSeries3D](images/radchartview-3d-barseries3d-0.png)
+![{{ site.framework_name }} RadChartView3D BarSeries3D](images/radchartview-3d-barseries3d-0.png)
 
 ## Data bound series
 
@@ -97,7 +97,7 @@ You can use the __OriginValue__ property to define the origin of the bars on the
 __Figure 2__ demonstrates the result from __Example 1__ but with its OriginValue set to 15.
 	
 #### __Figure 2: Origin value__
-![WPF RadChartView3D Origin value](images/radchartview-3d-barseries3d-1.png)
+![{{ site.framework_name }} RadChartView3D Origin value](images/radchartview-3d-barseries3d-1.png)
 
 ## Customizing the data point visuals
 

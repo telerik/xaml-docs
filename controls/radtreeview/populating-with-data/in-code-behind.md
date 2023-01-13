@@ -14,7 +14,7 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 
 Here is a snapshot of a regular treeview without treeview items: 
 
-![](images/RadTreeView_PopulatingWithDataCodeBehind___001.PNG)
+![{{ site.framework_name }} RadTreeView Without Items](images/RadTreeView_PopulatingWithDataCodeBehind___001.PNG)
 
 #### __XAML__
 
@@ -136,7 +136,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	{{endregion}}
 
 This will be the result if you execute the __AddTreeViewItems()__ method: 
-![](images/RadTreeView_PopulatingWithDataCodeBehind___010.PNG)
+![{{ site.framework_name }} RadTreeView Populated from Code-Behind](images/RadTreeView_PopulatingWithDataCodeBehind___010.PNG)
 
 >tip Consider declaring treeview items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 

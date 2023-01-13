@@ -18,7 +18,7 @@ __RadChart__ provides support of multi-series charts. This is useful, when you w
 
 On the snapshot below, the Turnover is represented by line chart, while the Expenses - by bar chart. As you can see, it is much easier to compare both of the values visually.
  
-      ![](images/RadChart_Features_MultiseriesCharts_01.png)
+      ![{{ site.framework_name }} RadChart with Multiple Series](images/RadChart_Features_MultiseriesCharts_01.png)
 
 Here is the sample XAML source code used to create this chart declaratively:
 

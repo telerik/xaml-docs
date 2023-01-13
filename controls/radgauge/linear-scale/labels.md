@@ -41,4 +41,4 @@ You can use the GaugeRange element to set specific color to your labels. The Lin
 	</telerik:RadHorizontalLinearGauge>
 {{endregion}}
 
-![](images/LinearScaleLabelRangeColor.png)
+![{{ site.framework_name }} RadGauge HorizontalLinearScale with LabelUseRangeColor](images/LinearScaleLabelRangeColor.png)

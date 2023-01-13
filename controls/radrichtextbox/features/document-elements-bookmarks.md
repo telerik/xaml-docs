@@ -18,7 +18,7 @@ __Bookmarks__ are a powerful tool for marking parts of the document, which can b
 
 __Bookmarks__ can be inserted in the document and removed through the __ManageBookmarksDialog__, which is opened on pressing the Bookmark button in the Insert Tab of the default RadRichTextBoxRibbonUI.
         
-![](images/RadRichTextBox_Features_DocumentElements_BookmarksUI_thumb.png)
+![{{ site.framework_name }} RadRichTextBox Bookmarks Window](images/RadRichTextBox_Features_DocumentElements_BookmarksUI_thumb.png)
 
 As all pop-ups that RadRichTextBox uses, the ManageBookmarksDialog can be completely replaced by another, user-defined dialog implementing an interface.
 

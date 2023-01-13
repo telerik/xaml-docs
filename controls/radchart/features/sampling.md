@@ -294,4 +294,4 @@ Finally the XAML:
 
 The result:
 
-![](images/RadChart_Features_Sampling_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Sampling_01.png)

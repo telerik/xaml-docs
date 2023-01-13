@@ -69,7 +69,7 @@ The __FadeTransition__ fades out the old content and fades in the new one. It ha
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-![](images/RadTransition_Features_Transitions_01.png)
+![{{ site.framework_name }} RadTransitionControl Fade Transition](images/RadTransition_Features_Transitions_01.png)
 
 ## FlipWarpTransition
 
@@ -85,7 +85,7 @@ The __FlipWarpTransition__ is a transition effect that makes zoom and slide tran
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-![](images/RadTransition_Features_Transitions_02.png)
+![{{ site.framework_name }} RadTransitionControl Flip Warp Transition](images/RadTransition_Features_Transitions_02.png)
 
 ## LinearFadeTransition
 
@@ -109,7 +109,7 @@ The __LinearFadeTransition__ is a fade transition which follows a linear pattern
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-![](images/RadTransition_Features_Transitions_03.png)
+![{{ site.framework_name }} RadTransitionControl Linear Fade Transition](images/RadTransition_Features_Transitions_03.png)
 
 ## MotionBlurredZoomTransition
 
@@ -138,7 +138,7 @@ The __MotionBlurredZoomTransition__ is basically a fade transition with motion b
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-![](images/RadTransition_Features_Transitions_04.png)
+![{{ site.framework_name }} RadTransitionControl Motion Blurred Zoom Transition](images/RadTransition_Features_Transitions_04.png)
 
 ## RollTransition
 
@@ -174,7 +174,7 @@ The __RollTransition__ rolls out the new content above the old one. You can also
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-![](images/RadTransition_Features_Transitions_05.png)
+![{{ site.framework_name }} RadTransitionControl Roll Transition](images/RadTransition_Features_Transitions_05.png)
 
 ## SlideAndZoomTransition
 
@@ -201,7 +201,7 @@ The __SlideAndZoomTransition__ zooms out the old content and decreases its opaci
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-![](images/RadTransition_Features_Transitions_06.png)
+![{{ site.framework_name }} RadTransitionControl Slide And Zoom Transition](images/RadTransition_Features_Transitions_06.png)
 
 ## WaveTransition
 
@@ -225,7 +225,7 @@ The __WaveTransition__ creates a wave effect over the old content. When the wave
 	</telerik:RadTransitionControl>
 {{endregion}}
 
-![](images/RadTransition_Features_Transitions_07.png)
+![{{ site.framework_name }} RadTransitionControl Wave Transition](images/RadTransition_Features_Transitions_07.png)
 
 ## Custom Transition Effects
 

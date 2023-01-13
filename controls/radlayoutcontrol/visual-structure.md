@@ -13,10 +13,10 @@ position: 1
 This article describes the visual elements of the __RadLayoutControl__ and defines terms and concepts that are used in the scope of the control and its documentation.
 
 #### __Figure 1: The visual structure of RadLayoutControl__
-![WPF RadLayoutControl The visual structure of RadLayoutControl](images/layoutcontrol-visual-structure-01.png)
+![{{ site.framework_name }} RadLayoutControl The visual structure of RadLayoutControl](images/layoutcontrol-visual-structure-01.png)
 
 #### __Figure 2: The visual elements involved in the drag/drop operation__
-![WPF RadLayoutControl The visual elements involved in the drag/drop operation](images/layoutcontrol-visual-structure-02.png)
+![{{ site.framework_name }} RadLayoutControl The visual elements involved in the drag/drop operation](images/layoutcontrol-visual-structure-02.png)
 
 * __LayoutControlGroup__: This is a control which is used to group UIElements or other LayoutControlGroups. There are several types of layout groups. You can find more information about this in the [Layout Groups]({%slug radlayoutcontrol-features-layoutgroups-overview%}) section in the documentation.
 

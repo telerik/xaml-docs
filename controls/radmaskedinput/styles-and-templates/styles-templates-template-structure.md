@@ -16,7 +16,7 @@ Like most {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if si
 
 Here is a snapshot of the template generated in Expression Blend.
 
-![](images/radmaskedinput_templates_maskedinputbase.png)
+![{{ site.framework_name }} RadMaskedInput Template Structure](images/radmaskedinput_templates_maskedinputbase.png)
 
 * __[Grid]__ - hosts the elements of the __RadMaskedInputBase__ template and is of type __Grid__
 	* __[Border]__ - represents the outer border of the RadMaskedInput controls and is of type __Border__

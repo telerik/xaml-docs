@@ -23,14 +23,14 @@ This topic will show you how to perform the second one.
 
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonButton__ you want to style.
 {% if site.site_name == 'Silverlight' %}
-![](images/RibbonView_Styling_Button_Locate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_Button_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![](images/RibbonView_Styling_Button_LocateWPF.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_Button_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![](images/RibbonView_Styling_Button_CreateStyle.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_Button_CreateStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -39,7 +39,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonButton__. Their names indicate to which part of the __RadRibbonButton's__ appearance they are assigned.
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RibbonView_Styling_Button_Resources.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_Button_Resources.png)
 
 * __RadRibbonBarButtonOverBorder__ - a brush that represents the color of the __RadRibbonButton's__ border, when the mouse is over it.          
 
@@ -70,13 +70,13 @@ If you want to change the __ControlTemplate__ elements of the __RadRibbonButton_
 ## Example
 
 Here is an example of the above resources modified.
-![](images/RibbonView_Styling_Button_ResourcesModified.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_Button_ResourcesModified.png)
 
 Here is a snapshot of the result when the mouse is over the button.
-![](images/RibbonView_Styling_Button_ExampleMouseOver.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_Button_ExampleMouseOver.png)
 
 and when the button is pressed
-![](images/RibbonView_Styling_Button_Example.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_Button_Example.png)
 
 {% endif %}
 

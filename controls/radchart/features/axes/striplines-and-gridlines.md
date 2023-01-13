@@ -113,10 +113,10 @@ The following example demonstrates how to configure the __GridLines__ and __Stri
 {{endregion}}
 
 The image below shows the result. You can see that the left chart has both strip and grid lines shown, while the right one has only grid lines shown, for both X and Y axes.
-![](images/RadChart_Features_Axes_StripLinesAndGridLines_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_StripLinesAndGridLines_01.png)
 
 and
-![](images/RadChart_Features_Axes_StripLinesAndGridLines_02.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_StripLinesAndGridLines_02.png)
 
 If you need to further customize the axes, please refer to [Styling the GridLine]({%slug radchart-styling-and-apearance-styling-gridline%}) and [Styling the StripLine]({%slug radchart-styling-and-appearance-styling-stripline%}).
 

@@ -59,7 +59,7 @@ You can use the code from __Example 1__ to create a __SurfaceSeries3D__.
 {{endregion}}
 	
 #### __Figure 1: SurfaceSeries3D__
-![WPF RadChartView3D SurfaceSeries3D](images/radchartview-3d-surfaceseries3d-0.png)
+![{{ site.framework_name }} RadChartView3D SurfaceSeries3D](images/radchartview-3d-surfaceseries3d-0.png)
 
 ## Data bound series
 
@@ -126,7 +126,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 		</telerik:SurfaceSeries3D>
 	{{endregion}}
 		
-	#### __Figure 2: SurfaceSeries3DValueGradientColorizer__	![WPF RadChartView3D SurfaceSeries3DValueGradientColorizer](images/radchartview-3d-surfaceseries3d-1.png)
+	#### __Figure 2: SurfaceSeries3DValueGradientColorizer__	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DValueGradientColorizer](images/radchartview-3d-surfaceseries3d-1.png)
 
 * __SurfaceSeries3DDataPointColorizer__
 
@@ -201,7 +201,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 		this.surfaceSeries.DataContext = source;
 	{{endregion}}
 		
-	#### __Figure 3: SurfaceSeries3DDataPointColorizer with default blending colorization mode__  	![WPF RadChartView3D SurfaceSeries3DDataPointColorizer with default blending colorization mode](images/radchartview-3d-surfaceseries3d-2.png)
+	#### __Figure 3: SurfaceSeries3DDataPointColorizer with default blending colorization mode__  	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with default blending colorization mode](images/radchartview-3d-surfaceseries3d-2.png)
 	
 	The __SurfaceSeries3DDataPointColorizer__ supports two colorization modes which determine the appearance of the surface. You can change the mode via the __ColorizationMode__ property of the colorizer. This property accepts the following values:
 	
@@ -213,7 +213,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 		<telerik:SurfaceSeries3DDataPointColorizer ColorizationMode="Tiles"/>
 	{{endregion}}
 	
-	#### __Figure 4: SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles__  	![WPF RadChartView3D SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles](images/radchartview-3d-surfaceseries3d-3.png)
+	#### __Figure 4: SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles__  	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles](images/radchartview-3d-surfaceseries3d-3.png)
 	
 ## Display direction
 
@@ -253,7 +253,7 @@ By default the data points of the series are not visible and only the surface ca
 {{endregion}}
 
 #### __Figure 5: SurfaceSeries3D default point visuals__  
-![WPF RadChartView3D SurfaceSeries3D default point visuals](images/radchartview-3d-surfaceseries3d-4.png)
+![{{ site.framework_name }} RadChartView3D SurfaceSeries3D default point visuals](images/radchartview-3d-surfaceseries3d-4.png)
 	
 To customize the geometry and the material of the visual elements that represent the __SurfaceSeries3D__ data points you can use the __DefaultVisualMaterial__ and __DefaultVisualGeometry__ properties of the series. Additionally, you can use the __DefaultVisualMaterialSelector__ and __DefaultVisualGeometrySelector__ to choose different materials and geometries based on a specific condition.
  

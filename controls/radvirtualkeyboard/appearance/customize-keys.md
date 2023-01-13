@@ -67,7 +67,7 @@ To customize the appearance, you can use the `VirtualKeyboardTemplateSelector` p
 	<telerik:RadVirtualKeyboard VirtualKeyboardTemplateSelector="{StaticResource KeyTemplateSelector}" />
 {{endregion}}
 
-![](images/radvirtualkeyboard-customize-keys-0.png)
+![{{ site.framework_name }} RadVirtualKeyboard Customized Keys Template Selector](images/radvirtualkeyboard-customize-keys-0.png)
 
 >tip The DataContext objects provided to the DataTemplates of the selector are implementations of the `BaseKeyViewModel` class. Read more in the [Keys Layout]({%slug radvirtualkeyboard-keys-layout%}#keys-factory) article.
 
@@ -280,7 +280,7 @@ To extend the visualization of the keys even further you can extend its view mod
 	</telerik:RadVirtualKeyboard>
 {{endregion}}
 
-![](images/radvirtualkeyboard-customize-keys-1.png)
+![{{ site.framework_name }} RadVirtualKeyboard Custom Key Factory and Template Selector](images/radvirtualkeyboard-customize-keys-1.png)
 
 ## See Also
 * [Getting Started]({%slug radvirtualkeyboard-getting-started%})

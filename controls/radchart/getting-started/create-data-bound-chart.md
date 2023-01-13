@@ -26,7 +26,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 
 * Open the __Asset Library__ (*Window->Assets*) in Expression Blend and start writing the name of the __RadChart__ in the search box.
 
- ![](images/RadChart_GettingStarted_DataBoundChart_01.png)
+ ![{{ site.framework_name }} RadChart  ](images/RadChart_GettingStarted_DataBoundChart_01.png)
 
 * Drag a __RadChart__ on the artboard.
 
@@ -239,7 +239,7 @@ Now if you run your application, the result should be similar to the below snaps
 
 
 * Spline connects all dots in one smooth graphic
-![](images/RadChart_GettingStarted_DataBoundChart_03.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_GettingStarted_DataBoundChart_03.png)
 
 ## Creating Categorical Chart
 
@@ -265,7 +265,7 @@ The __X-axis__ can be further customized by replacing the month numbers (1, 2, 3
 
 
 And here is the same chart but this time showing month names as categories for the __X-axis__ instead of the month numbers.
-      ![](images/RadChart_GettingStarted_DataBoundChart_04.png)
+      ![{{ site.framework_name }} RadChart  ](images/RadChart_GettingStarted_DataBoundChart_04.png)
 
 >tipTo make the x-Axis labels more readable you can use one of the label features provided by the __XAxis__ class. For more information read [here]({%slug radchart-features-axes-x-axis%}).
 

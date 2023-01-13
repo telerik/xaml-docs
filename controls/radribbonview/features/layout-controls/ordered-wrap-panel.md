@@ -23,14 +23,14 @@ __RadOrderedWrapPanel__ is used together with __RadButtonGroup__ to create a lay
 
 * __Normal__ state.
 
-	![](images/RadRibbonView_Ordered_WrapPanel.png)
+	![{{ site.framework_name }} RadRibbonView RadOrderedWrapPanel Normal State](images/RadRibbonView_Ordered_WrapPanel.png)
 	The __RadOrderedWrapPanel__ displays its children along __two__ horizontal lines in the __normal__ state.							
 
 	>tip When there is enough space, the __RadOrderedWrapPanel__ always tries to layout its children in __Normal__ state.						
 
 * __Compressed__ state
 
-	![](images/RadRibbonView_Ordered_WrapPanel_Compressed.png)
+	![{{ site.framework_name }} RadRibbonView RadOrderedWrapPanel Compressed State](images/RadRibbonView_Ordered_WrapPanel_Compressed.png)
 	In the __compressed__ state the __RadOrderedWrapPanel__ displays its children along __three__ horizontal lines, thus achieving a more compact and tightly packed structure.						
 
 >tip If you refer to the Microsoft Office Word product, you will note that a similar layout behavior is used by the "Font" and "Paragraph" groups.
@@ -140,7 +140,7 @@ The next example demonstrates how to build a "Font" like __RadRibbonGroup__ usin
 	</telerik:RadRibbonView>
 {{endregion}}
 
-![](images/RadRibbonView_Ordered_WrapPanel_Sample.png)
+![{{ site.framework_name }} RadRibbonView RadOrderedWrapPanel Fonts Layout](images/RadRibbonView_Ordered_WrapPanel_Sample.png)
 
 ## Setting RadOrderedWrapPanel's CompressedThreshold Property
 
@@ -158,7 +158,7 @@ In this case the panel never goes into __Compressed__ state, even though there i
 The __RadOrderedWrapPanel__'s __CompressedItemsOrder__ property allows you to change the order of the panel's children upon being compressed. This is very useful because when your child controls are split into three lines, you may want to alter their order because some are being used more frequently than others.				
 
 The next snapshot shows you the wrap panel from the first example in __compressed__ state. The __CompressedItemsOrder__ property is not set. The different RadButton groups are marked with indexes from 0 to 4 (there are 5 button groups).
-![](images/RadRibbonView_Ordered_WrapPanel_NormalOrder.png)
+![{{ site.framework_name }} RadRibbonView RadOrderedWrapPanel Normal Order](images/RadRibbonView_Ordered_WrapPanel_NormalOrder.png)
 
 For example, you may wish to change the groups order. In this case you should set the __RadOrderedWrapPanel__'s __CompressedItemsOrder__ property. You can do it in XAML by specifying a comma-delimited list of integers like in the example below.				
 
@@ -168,4 +168,4 @@ For example, you may wish to change the groups order. In this case you should se
 {{endregion}}
 
 And the result is shown on the next snapshot. Note how the order of the groups is altered.
-![](images/RadRibbonView_Ordered_WrapPanel_CompressedOrder.png)
+![{{ site.framework_name }} RadRibbonView RadOrderedWrapPanel Compressed Order](images/RadRibbonView_Ordered_WrapPanel_CompressedOrder.png)

@@ -39,7 +39,7 @@ There are different ways to hide/remove the labels of the zero segments inside _
 	</telerik:RadPieChart>
 {{endregion}}
 
-![](images/chartview-howto-pieseries-hide-zero-labels.png)
+![{{ site.framework_name }} RadChartView Pie Chart Default Zero Label](images/chartview-howto-pieseries-hide-zero-labels.png)
 
 The next step is to bind the __Opacity__ property to the slice value and apply custom __IValueConverter__ class. In the __Convert()__ method you can get the current value. If the value is zero you can return 0 to hide the label.
 
@@ -96,7 +96,7 @@ The next step is to bind the __Opacity__ property to the slice value and apply c
 	</Grid>
 {{endregion}}
 
-![](images/chartview-howto-pieseries-hide-zero-no-labels.png)
+![{{ site.framework_name }} RadChartView Pie Chart No Zero Label](images/chartview-howto-pieseries-hide-zero-no-labels.png)
 
 The label is now hidden but the label connector is still visible. To remove the connector you can create a custom class which derives from PieSeries and override the GetLabelConnector() method (as demonstrated in [this article]({%slug radchartview-features-label-connectors%}))
 
@@ -150,7 +150,7 @@ Now you can just replace the PieSeries in __Example 3__  with your custom class.
 	</Grid>
 {{endregion}}
 
-![](images/chartview-howto-pieseries-hide-zero-no-labels-no-connectors.png)
+![{{ site.framework_name }} RadChartView Pie Chart No Zero Label or Connector](images/chartview-howto-pieseries-hide-zero-no-labels-no-connectors.png)
 
 ### See Also
 

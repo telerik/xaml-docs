@@ -92,7 +92,7 @@ Finally, the implementation should be as follows:
 {{endregion}}
 
 Once you are done, the RadCarousel should be visualized as the image below:
-![](images/RadCarousel_ChangeScrollButtons.png)
+![{{ site.framework_name }} RadCarousel Customized Buttons](images/RadCarousel_ChangeScrollButtons.png)
 
 Still, you are free to change the style of the buttons just as you want them to be. 
 

@@ -59,6 +59,6 @@ The following example shows how to setup a basic model, populate RadTabControl w
 	</telerik:RadTabControl>
 {{endregion}}
 
-![](images/radtabcontrol-appearance-customizing-selected-tab-content-0.png)
+![{{ site.framework_name }} RadTabControl Tab Content Template](images/radtabcontrol-appearance-customizing-selected-tab-content-0.png)
 
 The ContentTemplate has a corresponding `DataTemplateSelector` alternative - __ContentTemplateSelector__ - that allows you to choose the DataTemplate based on a custom condition. Read how to implement a `DataTemplateSelector` in the corresponding [MSDN article](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.5).

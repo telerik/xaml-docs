@@ -18,7 +18,7 @@ site_name: WPF
 The purpose of this tutorial is to show you how to integrate __RadChart__ and __RadContextMenu__ so they can nicely work together.
 
 The final result should look like the snapshot below.
-![](images/RadChart_HowToRadContextMenuIntegration_010_WPF.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToRadContextMenuIntegration_010_WPF.png)
 
 Basically, the approach that will be demonstrated here combines the [MVVM support of RadChart]({%slug radchart-how-to-mvvm-support%}) with [RadChart data-binding]({%slug radchart-populating-with-data-data-binding-support-overview%}), and the data-binding functionality supported by the __RadMenu__ (__RadContextMenu__) control.
 

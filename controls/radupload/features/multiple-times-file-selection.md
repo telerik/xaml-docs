@@ -22,7 +22,7 @@ By default the __RadUpload__ allows one time file selection. This means that aft
 
 When the multiple times file selection is enabled, the Add more files button appears after the first selection.
 
-![](images/RadUpload_Features_Multiple_Times_File_Selection.png)
+![{{ site.framework_name }} RadUpload Add More Files Button](images/RadUpload_Features_Multiple_Times_File_Selection.png)
 
 ## See Also  
  * [Automatic Upload]({%slug radupload-features-automatic-upload%})

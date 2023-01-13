@@ -56,4 +56,4 @@ The DragVisualOffset property can be used in combination with the __RelativeStar
     End Sub
 {{endregion}}
 
-![](images/dragdropmanager-howto-set-dragvisualoffset-0.png)
+![{{ site.framework_name }} Set Drag Visual Offset](images/dragdropmanager-howto-set-dragvisualoffset-0.png)

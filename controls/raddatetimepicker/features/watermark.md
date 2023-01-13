@@ -28,7 +28,7 @@ The __DateTimeWatermarkContent__ is the simplest way to change the watermark's c
 	<telerik:RadDateTimePicker DateTimeWatermarkContent="Enter departure date"/>
 {{endregion}}
 
-![](images/dateTimePicker_features_watermark_020.png)
+![{{ site.framework_name }} RadDateTimePicker with DateTimeWatermarkContent](images/dateTimePicker_features_watermark_020.png)
 
 If you want to further customize the watermark you need to set the __DateTimeWatermarkTemplate__. This property is of type __DataTemplate__ and lets you take full control of the watermark representation. For example:
 
@@ -49,7 +49,7 @@ If you want to further customize the watermark you need to set the __DateTimeWat
 
 Here is the result:
 
-![](images/dateTimePicker_features_watermark_010.png)
+![{{ site.framework_name }} RadDateTimePicker with DateTimeWatermarkTemplate](images/dateTimePicker_features_watermark_010.png)
 
 ## See Also
 

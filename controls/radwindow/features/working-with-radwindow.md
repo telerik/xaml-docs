@@ -68,7 +68,7 @@ Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a _
 	radWindow.ShowDialog()
 {{endregion}}
 
-![](images/RadWindow_Working_with_RadWindow_01.png)
+![{{ site.framework_name }} RadWindow Shown As Modal Dialog](images/RadWindow_Working_with_RadWindow_01.png)
 
 >tipLearn more about positioning the __RadWindow__ by reading the [Positioning]({%slug radwindow-features-positioning%}) topic.
 
@@ -122,7 +122,7 @@ If you want to share a common layout structure for the content of multiple windo
 	radWindow.ContentTemplate = TryCast(Me.Resources("WindowContentTemplate"), DataTemplate)
 {{endregion}}
 
-![](images/RadWindow_Working_with_RadWindow_02.png)
+![{{ site.framework_name }} RadWindow Custom Content Template](images/RadWindow_Working_with_RadWindow_02.png)
 
 ## Program the RadWindow
 

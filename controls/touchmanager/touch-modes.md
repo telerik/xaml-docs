@@ -39,19 +39,24 @@ __TouchMode__ is an enumeration that contains the following values:
 
 This section demonstrates the TouchModes with an example containing a few nested UIElements.
 
-__Figure 1: The logical tree of the example - parent Grid, a Border inside the grid and an Ellipse inside the border__
+__The logical tree of the example - parent Grid, a Border inside the grid and an Ellipse inside the border__
+
 ![TouchManager | Touch Modes Image 01](images/touchmanager_touch_modes_01.png)
 
-__Figure 2: TouchMode.HitTestVisible__
+__TouchMode.HitTestVisible__
+
 ![TouchManager | Touch Modes Image 02](images/touchmanager_touch_modes_02.png)
 
-__Figure 3: TouchMode.HitTestHidden__
+__TouchMode.HitTestHidden__
+
 ![TouchManager | Touch Modes Image 03](images/touchmanager_touch_modes_03.png)
 
-__Figure 4: TouchMode.Locked__
+__TouchMode.Locked__
+
 ![TouchManager | Touch Modes Image 04](images/touchmanager_touch_modes_04.png)
 
-__Figure 5: TouchMode.None__
+__TouchMode.None__
+
 ![TouchManager | Touch Modes Image 05](images/touchmanager_touch_modes_05.png)
 
 ## See Also

@@ -90,13 +90,13 @@ The definition in __Example 2__ has few additional settings:
 >tip Use the __Text__ property to get or set the current query or suggestion text.
 
 #### Figure 1: Watermark content when no text is entered
-![WPF RadAutoSuggestBox Watermark content when no text is entered](images/radautosuggestbox-getting-started-0.png)
+![{{ site.framework_name }} RadAutoSuggestBox Watermark content when no text is entered](images/radautosuggestbox-getting-started-0.png)
 
 #### Figure 2: Filtered results in the drop down
-![WPF RadAutoSuggestBox Filtered results in the drop down](images/radautosuggestbox-getting-started-1.png)
+![{{ site.framework_name }} RadAutoSuggestBox Filtered results in the drop down](images/radautosuggestbox-getting-started-1.png)
 
 #### Figure 3: No result
-![WPF RadAutoSuggestBox No result](images/radautosuggestbox-getting-started-2.png)
+![{{ site.framework_name }} RadAutoSuggestBox No result](images/radautosuggestbox-getting-started-2.png)
 
 After selecting an item from the drop down list or click on the query icon, you can use __QuerySubmitted__ and __SuggestionChosen__ events to execute additional actions.
 

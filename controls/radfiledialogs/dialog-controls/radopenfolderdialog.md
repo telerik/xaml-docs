@@ -13,7 +13,7 @@ position: 2
 __RadOpenFolderDialog__ is a modal dialog box that allows you to specify one or multiple folder names to open.
 
 #### __Figure 1: RadOpenFolderDialog in single selection mode__ 
-![WPF RadFileDialogs RadOpenFolderDialog in single selection mode](images/radopenfolderdialog-01.png)
+![{{ site.framework_name }} RadFileDialogs RadOpenFolderDialog in single selection mode](images/radopenfolderdialog-01.png)
 
 ## Showing the Dialog
 
@@ -81,7 +81,7 @@ The dialog supports single and multiple selection modes. By default you can sele
 {{endregion}}
 
 #### __Figure 2: Multiple selection__ 
-![WPF RadFileDialogs Multiple selection](images/radopenfolderdialog-02.png)
+![{{ site.framework_name }} RadFileDialogs Multiple selection](images/radopenfolderdialog-02.png)
 
 ## Working with the Selected Folders
 

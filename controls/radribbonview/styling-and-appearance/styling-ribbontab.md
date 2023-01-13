@@ -24,14 +24,14 @@ This topic will show you how to perform the second one.
 To copy the default style, load your project in Expression Blend and open the User Control that holds the __RadRibbonView__. In the 'Objects and Timeline' pane select the __RadRibbonTab__ you want to style.				
 
 {% if site.site_name == 'Silverlight' %}
-![](images/RibbonView_Styling_RibbonTab_Locate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RibbonTab_Locate.png)
 {% endif %}
 {% if site.site_name == 'WPF' %}
-![](images/RibbonView_Styling_RibbonTab_LocateWPF.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RibbonTab_LocateWPF.png)
 {% endif %}
 
 From the menu choose *Object -> Edit Style -> Edit a Copy*. You will be prompted for the name of the style and where to be placed.
-![](images/RibbonView_Styling_RibbonTab_CreateStyle.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RibbonTab_CreateStyle.png)
 
 >tip If you choose to define the style in Application, it would be available for the entire application. This allows you to define a style only once and then reuse it where needed.
 
@@ -40,7 +40,7 @@ After clicking 'OK', Expression Blend will generate the default style of the __R
 {% if site.site_name == 'Silverlight' %}
 
 If you go to the 'Resources' pane, you will see an editable list of resources generated together with the style and used by it. In this list you will find the brushes, styles and templates needed to change the visual appearance of the __RadRibbonTab.__ Their names indicate to which part of the __RadRibbonTab's__ appearance they are assigned.
-![](images/RibbonView_Styling_RibbonTab_Resources.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RibbonTab_Resources.png)
 * __TabStripTabDividerBrush__ - a brush that represents the color of the separators used to divide the tab headers.
 * __TabMouseOverOuterBorder__ - a brush that represents the color of the __RadRibbonTab.Header's__ outer border, when the mouse is over it
 * __TabMouseOverInnerBorder__ - a brush that represents the color of the __RadRibbonTab.Header's__ inner border, when the mouse is over it
@@ -67,7 +67,7 @@ You can modify these properties to achieve the desired appearance. However most 
 
 {% endif %}
 
-![](images/RibbonView_Styling_RibbonTab_ControlTemplate.png)
+![{{ site.framework_name }} RadRibbonView  ](images/RibbonView_Styling_RibbonTab_ControlTemplate.png)
 
 * __RootPanel__ - a __Grid__ control that represents the main layout control in the __RadRibbonTab's__ template.						
 

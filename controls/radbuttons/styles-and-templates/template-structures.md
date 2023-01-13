@@ -16,7 +16,7 @@ Like most controls, the __RadButtons__ also allow you to template them in order 
 
 Here is a snapshot from Expression Blend.
 
-![](images/Buttons_Button_ControlTemplate.png)
+![{{ site.framework_name }} RadButton Control Template](images/Buttons_Button_ControlTemplate.png)
 
 The template contains the following parts.
 
@@ -34,7 +34,7 @@ The template contains the following parts.
 
 Here is a snapshot from Expression Blend.
 
-![](images/Buttons_DropDownButton_ControlTemplate.png)
+![{{ site.framework_name }} RadDropDownButton Control Template](images/Buttons_DropDownButton_ControlTemplate.png)
 
 The template contains the following parts.
 
@@ -62,7 +62,7 @@ The template contains the following parts.
 
 Here is a snapshot from Expression Blend.
 
-![](images/Buttons_RadioButton_ControlTemplate.png)
+![{{ site.framework_name }} RadRadioButton Control Template](images/Buttons_RadioButton_ControlTemplate.png)
 
 The template contains the following parts.
 
@@ -83,7 +83,7 @@ The template contains the following parts.
 
 Here is a snapshot from Expression Blend.
 
-![](images/Buttons_SplitButton_ControlTemplate.png)
+![{{ site.framework_name }} RadSplitButton Control Template](images/Buttons_SplitButton_ControlTemplate.png)
 
 The template contains the following parts.
 
@@ -111,7 +111,7 @@ The template contains the following parts.
 
 Here is a snapshot from Expression Blend.
 
-![](images/Buttons_ToggleButton_ControlTemplate.png)
+![{{ site.framework_name }} RadToggleButton Control Template](images/Buttons_ToggleButton_ControlTemplate.png)
 
 The template contains the following parts.
 

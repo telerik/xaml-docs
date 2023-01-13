@@ -35,7 +35,7 @@ You can instantiate your `RadDropDownButton` in both XAML and code as shown in t
 
 __Drop-down button__
 
-![](images/radbuttons-features-dropdown-button-0.png)
+![{{ site.framework_name }} RadButtons Dropdown Button](images/radbuttons-features-dropdown-button-0.png)
 
 ## Adding DropDown Content
 
@@ -57,7 +57,7 @@ In order to add content to the drop-down area of the RadDropDownButton you have 
 
 __Drop-down content__
 
-![](images/radbuttons-features-dropdown-button-1.png)
+![{{ site.framework_name }} RadButtons Dropdown Button with Dropdown Content](images/radbuttons-features-dropdown-button-1.png)
 
 >tip If you want to display dynamic content inside the drop-down area, you can use the `DropDownContentTemplate` and the `DropDownContentTemplateSelector` properties. You can read about [TemplateSelectors](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector%28v=vs.110%29.aspx) in MSDN.
 

@@ -13,7 +13,7 @@ position: 8
 Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ may consist of various elements, one of which is the __Separator__.				
 
 The __Separator__ is extremely simple element and it allows you to logically separate elements in [Application Menu]({%slug radribbonview-applicationmenu%}).
-![](images/RadRibbonView_Separator_Overview.png)
+![{{ site.framework_name }} RadRibbonView Separator Item](images/RadRibbonView_Separator_Overview.png)
 
 >tip The class that represents the separator element is __Telerik.Windows.Controls.Separator__.				
 

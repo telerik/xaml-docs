@@ -27,7 +27,7 @@ Here is a simple treeview declaration:
 	</telerik:RadTreeView>
 	{{endregion}}
 
-![](images/RadTreeView_HowToChangeDefaultHeight_001.png)
+![{{ site.framework_name }} RadTreeView Default Item Height](images/RadTreeView_HowToChangeDefaultHeight_001.png)
 
 In order to change the default height of the treeview item, you need to perform the following steps:
 
@@ -57,7 +57,7 @@ In order to change the default height of the treeview item, you need to perform 
 		{{endregion}}
 
 And here is the result: 
-![](images/RadTreeView_HowToChangeDefaultHeight_010.png)
+![{{ site.framework_name }} RadTreeView Custom Item Height](images/RadTreeView_HowToChangeDefaultHeight_010.png)
 
 ## See Also
  * [Get Item by Path]({%slug radtreeview-how-to-get-item-by-path%})

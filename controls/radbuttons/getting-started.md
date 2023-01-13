@@ -43,7 +43,7 @@ Here is an example of a __RadButton__ that executes some logic when it is clicke
 	End Sub
 {{endregion}}
 
-![](images/RadButtons_Getting_Started_01.png)
+![{{ site.framework_name }} RadButtons Simple Button](images/RadButtons_Getting_Started_01.png)
 
 ## RadPathButton
 
@@ -97,7 +97,7 @@ Here is an example of a __RadDropDownButton__ that contains a list of actions in
 	</telerik:RadDropDownButton>
 {{endregion}}
 
-![](images/RadButtons_Getting_Started_02.png)
+![{{ site.framework_name }} RadButtons Dropdown Button](images/RadButtons_Getting_Started_02.png)
 
 ## RadRadioButton
 
@@ -119,7 +119,7 @@ Here is an example of several __RadRadioButtons__ placed in two groups.
 	</StackPanel>
 {{endregion}}
 
-![](images/RadButtons_Getting_Started_03.png)
+![{{ site.framework_name }} RadButtons Radio Buttons](images/RadButtons_Getting_Started_03.png)
 
 ## RadSplitButton
 
@@ -140,7 +140,7 @@ Here is an example of a __RadSplitButton__ definition, where a __ListBox__ contr
 	</telerik:RadSplitButton>
 {{endregion}}
 
-![](images/RadButtons_Getting_Started_04.png)
+![{{ site.framework_name }} RadButtons Split Button](images/RadButtons_Getting_Started_04.png)
 
 ## RadToggleButton
 
@@ -160,7 +160,7 @@ Here is an example of a __RadToggleButton__ that toggles the "Monthly Newsletter
 	</StackPanel>
 {{endregion}}
 
-![](images/RadButtons_Getting_Started_05.png)
+![{{ site.framework_name }} RadButtons Toggle Button](images/RadButtons_Getting_Started_05.png)
 
 ## RadToggleSwitchButton
 
@@ -173,7 +173,7 @@ Here is an example of a __RadToggleSwitchButton__ that switches between __ON__ a
 	</Grid>
 {{endregion}}
 
-![](images/RadButtons_Getting_Started_06.png)
+![{{ site.framework_name }} RadButtons Toggle Switch Button](images/RadButtons_Getting_Started_06.png)
 
 ## Setting a Theme
 
@@ -208,7 +208,7 @@ __Example 10__ demonstrates how to merge the ResourceDictionaries so that they a
 __Figure 1__ shows a __RadButtons__ with the **Fluent** theme applied.
 	
 #### __Figure 1: RadButtons with the Fluent theme__
-![WPF RadButtons RadButtons with the Fluent theme](images/radbuttons-setting-theme.png)
+![{{ site.framework_name }} RadButtons RadButtons with the Fluent theme](images/radbuttons-setting-theme.png)
 
 ## See Also  
  * [Visual Structure]({%slug radbuttons-visual-structure%})

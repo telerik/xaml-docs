@@ -84,7 +84,7 @@ To disable the [Drag Preview](#visual-elements-of-the-drag-and-drop-operation), 
 {{endregion}}
 
 #### Figure 4: Hidden drag preview element
-![WPF RadTreeView Hidden drag preview element](images/RadTreeView_TreeViewDragAndDrop_050.png)
+![{{ site.framework_name }} RadTreeView Hidden drag preview element](images/RadTreeView_TreeViewDragAndDrop_050.png)
 
 ## Disable Drag Tooltip 
 
@@ -114,7 +114,7 @@ To disable the [Drag Tooltip](#visual-elements-of-the-drag-and-drop-operation), 
 {{endregion}}
 
 #### Figure 5: Hidden drag tooltip
-![WPF RadTreeView Hidden drag tooltip](images/RadTreeView_TreeViewDragAndDrop_060.png)
+![{{ site.framework_name }} RadTreeView Hidden drag tooltip](images/RadTreeView_TreeViewDragAndDrop_060.png)
 
 ## Disable Drop Preview Line 
 
@@ -145,7 +145,7 @@ To disable the [Drag Preview Line](#visual-elements-of-the-drag-and-drop-operati
 {{endregion}}
 
 #### Figure 6: Hidden drag/drop visual elements
-![WPF RadTreeView Hidden drag/drop visual elements](images/RadTreeView_TreeViewDragAndDrop_070.png)
+![{{ site.framework_name }} RadTreeView Hidden drag/drop visual elements](images/RadTreeView_TreeViewDragAndDrop_070.png)
 
 ## Customizing Drag Drop Actions
 

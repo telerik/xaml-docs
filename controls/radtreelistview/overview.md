@@ -18,7 +18,7 @@ Telerik __RadTreeListView__ combines the powerful data-driven features from __Ra
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![](images/RadTreeListView_Overview_03.png)
+![{{ site.framework_name }} RadTreeListView Overview](images/RadTreeListView_Overview_03.png)
 
 ## Key Features
 

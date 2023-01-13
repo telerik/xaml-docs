@@ -18,7 +18,7 @@ This topic will create a __RadWindow__ control containing a __RadGridView__ and 
 
 Here is a snapshot of the final result:
 
-![](images/radbusyindicator_how_service_and_radwindow_010.png)
+![{{ site.framework_name }} RadBusyIndicator Services and RadWindow Integration](images/radbusyindicator_how_service_and_radwindow_010.png)
 
 * The first thing you have to do is to declare the __RadWindow__ and set its content to be the __RadBusyIndicator__ content control as long as you want to show the indicator over the __RadWindow__ control.
 
@@ -263,7 +263,7 @@ Here is the sample data that is going to be retrieved:
 
 Here is the final result:
 
-![](images/radbusyindicator_how_service_and_radwindow_010.png)
+![{{ site.framework_name }} RadBusyIndicator Services and RadWindow Integration](images/radbusyindicator_how_service_and_radwindow_010.png)
 
 ## See Also
 

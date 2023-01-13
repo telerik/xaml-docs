@@ -49,7 +49,7 @@ To display the __RadCartesianChart3D__ you will need to define it along with its
 At this point the viewport of the chart is rendered.
 
 #### __Figure 1: Empty chart__
-![WPF RadChartView3D Empty chart](images/radchartview-3d-getting-started-0.png)
+![{{ site.framework_name }} RadChartView3D Empty chart](images/radchartview-3d-getting-started-0.png)
 
 ## Defining chart series
 
@@ -92,7 +92,7 @@ The data in the chart is presented with the chart series objects. You can find m
 {{endregion}}
 
 #### __Figure 2: PointSeries3D__
-![WPF RadChartView3D PointSeries3D](images/radchartview-3d-getting-started-1.png)	
+![{{ site.framework_name }} RadChartView3D PointSeries3D](images/radchartview-3d-getting-started-1.png)	
 
 For precisely reading the elements in the 3D space you can enable the chart's grid. You can read more about this in the [Chart Grid]({%slug radchartview3d-chartgrid%}) help article.
 
@@ -104,7 +104,7 @@ For precisely reading the elements in the 3D space you can enable the chart's gr
 {{endregion}}
 
 #### __Figure 3: Chart grid__
-![WPF RadChartView3D Chart grid](images/radchartview-3d-getting-started-2.png)
+![{{ site.framework_name }} RadChartView3D Chart grid](images/radchartview-3d-getting-started-2.png)
 
 ## Data binding
 

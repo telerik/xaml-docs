@@ -16,7 +16,7 @@ site_name: WPF
 ## 
 
 The goal of this tutorial is to create a tab control with editable headers of the tab items. The idea is to allow runtime change of the tab item's header text as shown on the snapshot below.
-![](images/RadTabControl_HowTo_EditableHeaders.png)
+![{{ site.framework_name }} RadTabControl Make the Tab Headers Editable](images/RadTabControl_HowTo_EditableHeaders.png)
 
 For the purpose of this example, you will need to create an empty WPF Application project and open it in Visual Studio.
 

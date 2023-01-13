@@ -19,11 +19,11 @@ Currently there are two Layout Strategies to visualize the data:
 
 * __Squarified__ - creates rectangles with best aspect ratio.
 
-	![](images/radtreemap_squarified.PNG) 
+	![{{ site.framework_name }} RadTreeMap Squarified Layout Strategy](images/radtreemap_squarified.PNG) 
 	
 * __Slice and Dice__ - creates rectangles with high aspect ratio and displays them sorted either horizontally or vertically. 
 
-	![](images/radtreemap_slice_and_dice.PNG)
+	![{{ site.framework_name }} RadTreeMap Slice and Dice Layout Strategy](images/radtreemap_slice_and_dice.PNG)
 
 The default one is Slice and Dice.
 

@@ -21,7 +21,7 @@ Here is a regular __RadComboBox__ declaration without items:
 	</telerik:RadComboBox>
 {{endregion}}
 
-![](images/RadComboBox_PopulatingWithData_Declaratively_010.png)
+![{{ site.framework_name }} RadComboBox without Items](images/RadComboBox_PopulatingWithData_Declaratively_010.png)
 
 In order to add combobox items you need to use the __RadComboBox__'s __Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadComboBoxItems__. For example, insert the following lines to the declaration of your __RadComboBox__ and see how it will change.
 
@@ -43,7 +43,7 @@ In order to add combobox items you need to use the __RadComboBox__'s __Items__ p
 	</telerik:RadComboBox>
 {{endregion}}
 
-![](images/RadComboBox_PopulatingWithData_Declaratively_020.png)
+![{{ site.framework_name }} RadComboBox Bound to XAML-Defined Data](images/RadComboBox_PopulatingWithData_Declaratively_020.png)
 
 >tipConsider declaring combobox items in XAML instead of adding them by code whenever it's possible. This includes situations when you know what items you need at design time.
 

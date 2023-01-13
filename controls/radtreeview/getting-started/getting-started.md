@@ -82,7 +82,7 @@ __RadTreeView__ works with __RadTreeViewItem__ elements, which should be added i
 {{endregion}}
 
 #### __Figure 1: RadTreeView flat data example__
-![WPF RadTreeView RadTreeView flat data example](images/radtreeview-getting-started-01.png)
+![{{ site.framework_name }} RadTreeView RadTreeView flat data example](images/radtreeview-getting-started-01.png)
 	
 > The __Items__ property of the treeview component is also its content property, so adding the children through the Items collection is not necessary in XAML. You can do it without wrapping the items into the RadTreeView.Items tag. The same applies for the __Items__ property of RadTreeViewItem.
 
@@ -105,7 +105,7 @@ __RadTreeViewItem__ is hierarchical items control, which means that it can conta
 {{endregion}}
 		
 #### __Figure 2: RadTreeView nested items example__
-![WPF RadTreeView RadTreeView nested items example](images/radtreeview-getting-started-02.png)	
+![{{ site.framework_name }} RadTreeView RadTreeView nested items example](images/radtreeview-getting-started-02.png)	
 
 ## Data Binding RadTreeView
 
@@ -137,7 +137,7 @@ __Example 6__ demonstrates a runnable code snippet using __RadTreeView__ with it
 {{endregion}}
 
 #### __Figure 3: Drag and drop visual example__
-![WPF RadTreeView Drag and drop visual example](images/radtreeview-getting-started-03.png)	
+![{{ site.framework_name }} RadTreeView Drag and drop visual example](images/radtreeview-getting-started-03.png)	
 
 >tip You can find out more about the drag and drop support in the [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}) help article.
 
@@ -176,7 +176,7 @@ To change the theme, you can follow the steps below:
 __Figure 4__ shows __RadTreeView__ with Windows8 theme applied.
 	
 #### __Figure 4: RadTreeView with Windows8 theme__
-![WPF RadTreeView RadTreeView with Windows8 theme](images/radtreeview-getting-started-04.png)
+![{{ site.framework_name }} RadTreeView RadTreeView with Windows8 theme](images/radtreeview-getting-started-04.png)
 	
 ## See Also
  * [Overview]({%slug radtreeview-overview2%})

@@ -52,7 +52,7 @@ The RadLegend control is populated with data via its __Items__ collection. The c
 {{endregion}}
 
 #### __Figure 1: RadLegend__
-![WPF RadLegend RadLegend](images/radlegend-getting-started-0.png)
+![{{ site.framework_name }} RadLegend RadLegend](images/radlegend-getting-started-0.png)
 
 ## Customizing the Legend Items
 

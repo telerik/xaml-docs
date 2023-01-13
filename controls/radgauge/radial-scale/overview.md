@@ -13,7 +13,7 @@ position: 0
 RadialScale is used to control the overall layout of tick marks, tick labels, indicators and ranges and to render an optional scale bar.
 
 ## Scale Bar
-![](images/RadialGauge2Scales.png)
+![{{ site.framework_name }} RadGauge Radial Scale Overview](images/RadialGauge2Scales.png)
 
 The scale bar is rendered by the RadialScale element as a continuous band spanning the entire sweep angle. The scale bar is also used as a basis for the placement of child elements, such as the tick marks.
 
@@ -27,11 +27,11 @@ StartAngle, SweepAngle, StartWidth and EndWidth properties set the region where 
 
 By default, the values start from the minimum value and move clock-wise to the maximum value. It is possible to reverse this direction by setting the IsReversed property to true:
 
-![](images/RadialScaleIsReversed.png)
+![{{ site.framework_name }} RadGauge RadialScale Reversed](images/RadialScaleIsReversed.png)
 
 Scales can be of type __Linear__ or __Logarithmic__. When the IsLogarithmic property is set to true, base 10 is used for the logarithmic scale by default. To modify the base of the logarithmic scale, set the LogarithmicBase property accordingly:
 
-![](images/RadialScaleIsLogarithmic.png)
+![{{ site.framework_name }} RadGauge RadialScale Logarithmic](images/RadialScaleIsLogarithmic.png)
 
 The scale elements like tick mark, label or indicator can have dynamically changed tooltip associated with it. This behavior is controlled by TootipFormat property which can be set at the correspondent property element:
 
@@ -42,6 +42,6 @@ The scale elements like tick mark, label or indicator can have dynamically chang
 	</telerik:RadRadialGauge>
 {{endregion}}
 
-![](images/RadialScaleTickMarkTooltip.png)
+![{{ site.framework_name }} RadGauge RadialScale Major Tick Tooltip Format](images/RadialScaleTickMarkTooltip.png)
 
 The only parameter is passed to the tooltip format string is value at the element location.

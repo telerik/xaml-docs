@@ -17,23 +17,23 @@ site_name: Silverlight
 
 This help topic will show how the Data Visualization controls can be bound to а sample database with [WCF RIA services](http://msdn.microsoft.com/en-us/library/ee707344(v=vs.91).aspx). For this sample a combination of RadTimeBar and RadLinearSparkline is used without code behind modifications or ViewModel. Changing the selection of  TimeBar’s time span updates the “Flight Statistics” and “Arrivals and Departures statistics” charts. The Bar Chart is populated with the number of Arrivals per Date (as being selected) and the Pie shows the Total of the Arrivals/Departures for the chosen time period. The picture below shows how this will look in action:
 
-![](images/RadChart_HowTo_WCF_result.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_WCF_result.PNG)
 
 Here is how this is done step-by-step:
 
 ##### 1. Create new Visual Studio 2010 Silverlight Application and check  “Enable WCF Ria Services”:
 
-![](images/RadChart_HowTo_WCF_checkbox.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_WCF_checkbox.PNG)
 
 ##### 2. Now that we have the web application, we will add our data model using the sample database (which you may find in the sample’s source code at the end of this post). For the purpose of this demonstration Entity Framework is used. Right click on the *TimeBarFirstLook_WCF_RIA.Web* server project in Solution Explorer and select Add New Item. Pick the Data category on the left, and select ADO.NET Entity Data Model, and name it FlightStatisticsModel.edmx. Create a new connection to the SQL database that will be used as datasource. In the next step, Choose Your Database Objects, check the box for Views and click Finish:
 
-![](images/RadChart_HowTo_WCF_wizard.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_WCF_wizard.PNG)
 
 ##### 3. Rebuild the project so when we add the DomainDataSource it will see the generated entities.
 
 ##### 4. In the server project (TimeBarFirstLook_WCF_RIA.Web) add a new __Domain Service Class__ and select the FlightStatisticsView:
 
-![](images/RadChart_HowTo_WCF_Domainserviceclass.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_WCF_Domainserviceclass.PNG)
 
 ##### 5. Click OK and rebuild the solution.
 
@@ -69,7 +69,7 @@ Now the Data Visualizations controls will use the DataView as ItemsSource with E
 
 Since the Pie Chart should display the Total of the Flights/Departures it is not enough to just group the data by *FlightType* and display the Sum with AggregateFunction. The chart would create a new DataSeries for each column in its datasource and we want it to be bound to both Arrivals and Departures and display a single pie. Our sample SQL Table has the Arrivals and Departures values in separate columns (see the picture below), so what we need is a list of two items – one for Arrivals and another one for Departures.
 
-![](images/RadChart_HowTo_WCF_SQLdata.PNG)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_WCF_SQLdata.PNG)
 
 To achieve this a Converter is used where the data is managed by a LINQ query:
 

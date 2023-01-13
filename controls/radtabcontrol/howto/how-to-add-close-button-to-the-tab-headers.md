@@ -13,7 +13,7 @@ position: 10
 >important Since R2 2019 the RadTabItem supports built-in close and pin buttons. Read more about this in the [Pin and Close]({%slug radtabcontrol-features-pinandclose%}) article.
 
 The goal of this tutorial is to create a tab control with closable tab items. The tab items can be closed using close button placed in the tab header as shown on the snapshot bellow.
-![](images/RadTabControl_HowTo_AddCloseButtons.png)
+![{{ site.framework_name }} RadTabControl Add Close Button to the Tab Headers](images/RadTabControl_HowTo_AddCloseButtons.png)
 
 For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Visual Studio.
 		

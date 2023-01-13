@@ -14,7 +14,7 @@ RadTimePicker allows you to customize its appearance by using Styles.This exampl
 
 In the next example you can see two custom toggle buttons styles and how TimePicker can looks in different way.
 
-![](images/ToggleButtons.jpg)
+![{{ site.framework_name }} RadTimePicker Custom Toggle Button Style](images/ToggleButtons.jpg)
 
 #### __XAML__
 

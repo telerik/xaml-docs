@@ -12,21 +12,14 @@ position: 1
 
 
 
-Like most controls, the __RadDataFilter__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can also template only parts of it. This topic will make you familiar with the template structures of the:
-      
-
-* [RadDataFilter](#raddatafilter)
-
-* [DataFilterPresenter](#datafilterpresenter)
-
-* [FilterControl](#filtercontrol)
+Like most controls, the __RadDataFilter__ also allows you to template it in order to change the control from the inside. Except for templating the whole control, you can also template only parts of it.
 
 >For more information about templating and how to modify the default templates of the __RadControls__ read the article on [different approaches on how to extract the ControlTemplates]({%slug styling-apperance-editing-control-templates%}).
         
 
 ## RadDataFilter
 
-![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_01.png)
+![{{ site.framework_name }} RadDataFilter Template Structure](images/RadDataFilter_StylesAndTemplates_TemplateStructure_01.png)
 
 * __[ScrollViewer]__ - wraps the elements of the __RadDataFilter's__ template and enables scrolling, when the __RadDataFilter__ exceeds the available space. It is of type __ScrollViewer__.
             
@@ -35,7 +28,7 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
             
 
 ## DataFilterPresenter
-![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_02.png)
+![{{ site.framework_name }} RadDataFilter DataFilterPresenter Structure](images/RadDataFilter_StylesAndTemplates_TemplateStructure_02.png)
 
 * __[Border]__
 
@@ -49,7 +42,7 @@ Like most controls, the __RadDataFilter__ also allows you to template it in orde
             
 
 ## FilterControl
-![](images/RadDataFilter_StylesAndTemplates_TemplateStructure_03.png)
+![{{ site.framework_name }} RadDataFilter FilterControl Structure](images/RadDataFilter_StylesAndTemplates_TemplateStructure_03.png)
 
 * __OuterBorder__ - represents the color of the outer border of the __FilterControl__ and is of type __Border__.
             

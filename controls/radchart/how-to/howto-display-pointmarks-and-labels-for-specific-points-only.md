@@ -305,4 +305,4 @@ Add a new chart declaration to your XAML:
 
 The result can be seen on the image below:
 
-![](images/RadChart_HowToPointmarks_010.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_HowToPointmarks_010.png)

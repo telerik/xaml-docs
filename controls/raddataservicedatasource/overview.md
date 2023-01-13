@@ -18,7 +18,7 @@ __RadDataServiceDataSource__ uses a __DataServiceContext__ and a __DataServiceQu
 {% include cta-panel-overview.html %}
 {% endif %}
 
- ![](images/RadDataServiceDataSource_Overview.gif)
+ ![{{ site.framework_name }} RadDataServiceDataSource Graphical Explanation](images/RadDataServiceDataSource_Overview.gif)
 
 
 

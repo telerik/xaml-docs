@@ -19,18 +19,18 @@ The Headers and Footers functionality enables you to add rich text content in th
 RadSpreadsheet enables you to add headers and footers in a spreadsheet’s worksheet. The headers and footers appear when you print the worksheet or export it to a PDF document; they are not displayed on the worksheet when the document is visualized when you work with it in the application.
 
 #### **Figure 1: Headers and footers in a spreadsheet**
-![WPF RadSpreadsheet Headers and footers in a spreadsheet](images/RadSpreadsheet_UI_Headers_Footers_00.png)
+![{{ site.framework_name }} RadSpreadsheet Headers and footers in a spreadsheet](images/RadSpreadsheet_UI_Headers_Footers_00.png)
 
 ## Insert Header and Footer
 
 You can insert headers or footers using the **Header/Footer tab** of the **Page Setup** section in the ribbon.
 
 #### **Figure 2: Page Setup section in ribbon**
-![WPF RadSpreadsheet Page Setup section in ribbon](images/RadSpreadsheet_UI_Headers_Footers_01.png)
+![{{ site.framework_name }} RadSpreadsheet Page Setup section in ribbon](images/RadSpreadsheet_UI_Headers_Footers_01.png)
 
 
 #### **Figure 3: Header/Footer in the Page Setup dialog box**
-![WPF RadSpreadsheet Header/Footer in the Page Setup dialog box](images/RadSpreadsheet_UI_Headers_Footers_02.png)
+![{{ site.framework_name }} RadSpreadsheet Header/Footer in the Page Setup dialog box](images/RadSpreadsheet_UI_Headers_Footers_02.png)
 
 This tab enables you to set the content of headers and footers using predefined templates. 
 
@@ -64,7 +64,7 @@ The content of the header or footer is customizable.You can insert the text that
 Keep in mind that the amount of content that can be inserted in the three sections of a header or footer depends on the space available for rendering them. 
 
 #### **Figure 4: Additional fields in Header and Footer dialog boxes**
-![WPF RadSpreadsheet Additional fields in Header and Footer dialog boxes](images/RadSpreadsheet_UI_Headers_Footers_03.png)
+![{{ site.framework_name }} RadSpreadsheet Additional fields in Header and Footer dialog boxes](images/RadSpreadsheet_UI_Headers_Footers_03.png)
 
 Along with text, you can insert several fields in a header or footer as shown in **Figure 4**.
 

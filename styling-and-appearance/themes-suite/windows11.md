@@ -315,6 +315,7 @@ Jump to the following topics to learn about the specifics of the theme's palette
 * [Using Glyphs](#using-glyphs)
 * [Using Theme Helper](#using-theme-helper)
 * [Changing Corner Radius](#changing-corner-radius)
+* [Changing ScrollBarsMode](#changing-scrollbarsmode)
 * [Changing Opacity](#changing-opacity)
 
 ## Default Theme Colors
@@ -601,6 +602,19 @@ The OverlayCornerRadius property corresponds to the first point of the list and 
 __Appearance of a RadButton control after changing the default corner radius__
 
 ![RadButton with a CornerRadius of 0](images/windows11-theme-button-cornerradius.png)	
+
+## Changing ScrollBarsMode
+
+By default, the scrollbars in the Windows 11 theme change their size depending on whether the mouse is currently over them. You have the option of setting the `ScrollBarsMode` property of the Windows 11 palette in order to control this behavior. It is of type `ScrollViewerScrollBarsMode` and can be set to one of the following values:
+
+*  `ScrollViewerScrollBarsMode.Auto`&mdash;The ScrollBars appear as a narrow sliver and expand to normal size on MouseOver. This is the default value.
+*  `ScrollViewerScrollBarsMode.Compact`&mdash;The ScrollBars appear always as a narrow sliver.
+*  `ScrollViewerScrollBarsMode.Normal`&mdash;The ScrollBars appear always with their normal size.
+
+#### __[C#] Setting the ScrollBarsMode property of the palette to Normal__
+{{region cs-styling-appearance-fluent-theme-5}}	
+	FluentPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Normal;
+{{endregion}}
 
 ## Changing Opacity 
 

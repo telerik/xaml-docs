@@ -67,6 +67,6 @@ XCategory is used when the data is not sequential, i.e. values on the X Axis hav
 
 
 The result is:
-![](images/RadChart_Features_Axes_Labels_01.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_Labels_01.png)
 
 

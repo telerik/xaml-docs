@@ -16,7 +16,7 @@ position: 3
 
 In the figure below you can see two ToolWindows with a floating pane inside of each one.
 
-![](images/RadDocking_Features_ToolWindow_010.png)
+![{{ site.framework_name }} RadDocking with ToolWindows](images/RadDocking_Features_ToolWindow_010.png)
 
 You can learn how to declare such a floating structure in the [Floating Panes](#Floating_Panes) help article.
 

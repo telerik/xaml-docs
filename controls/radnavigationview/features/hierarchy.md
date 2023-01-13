@@ -38,7 +38,7 @@ Each RadNavigationViewItem element has an Items collection that can be populated
 To control the current expand state of a RadNavigationViewItem, set its __IsExpanded__ property.
 
 #### Figure 1: Hierarchical RadNavigationView
-![WPF RadNavigationView Hierarchical RadNavigationView](images/radnavigationview-features-hierarchy-0.png)
+![{{ site.framework_name }} RadNavigationView Hierarchical RadNavigationView](images/radnavigationview-features-hierarchy-0.png)
 
 ## Multiple Expanded Items
 
@@ -59,7 +59,7 @@ To change the default horizontal offset (indent) of the child items relative to 
 {{endregion}}
 
 #### Figure 2: Sub items indentation set to 10
-![WPF RadNavigationView Sub items indentation set to 10](images/radnavigationview-features-hierarchy-1.png)
+![{{ site.framework_name }} RadNavigationView Sub items indentation set to 10](images/radnavigationview-features-hierarchy-1.png)
 
 ## Expand and Collapse Icon
 
@@ -71,7 +71,7 @@ RadNavigationViewItem has default expand and collapse icons shown in the right p
 {{endregion}}
 
 #### Figure 3: RadNaviationViewItems with folder glyphs as expand/collapse icons
-![WPF RadNavigationView RadNaviationViewItems with folder glyphs as expand/collapse icons](images/radnavigationview-features-hierarchy-2.png)
+![{{ site.framework_name }} RadNavigationView RadNaviationViewItems with folder glyphs as expand/collapse icons](images/radnavigationview-features-hierarchy-2.png)
 
 To change this behavior and use other UI for the icons like a customized RadGlyph, an Image, or any other element, set the __ExpandedIconTemplate__ and __CollapsedIconTemplate__ properties. The properties expect DataTemplate values.
 
@@ -90,7 +90,7 @@ To change this behavior and use other UI for the icons like a customized RadGlyp
 {{endregion}}
 
 #### Figure 4: RadNavigationViewItems with folder images as expand/collapse icons
-![WPF RadNavigationView RadNavigationViewItems with folder images as expand/collapse icons](images/radnavigationview-features-hierarchy-3.png)
+![{{ site.framework_name }} RadNavigationView RadNavigationViewItems with folder images as expand/collapse icons](images/radnavigationview-features-hierarchy-3.png)
 
 In data binding scenarios or when there are many items, you can use the __ItemContainerStyle__ property to set the icon properties.
 
@@ -99,7 +99,7 @@ In data binding scenarios or when there are many items, you can use the __ItemCo
 When RadNavigationView is collapsed and its current [DisplayMode]({%slug radnavigationview-display-mode%}) Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
 
 #### Figure 5: Sub menu flyout visualization
-![WPF RadNavigationView Sub menu flyout visualization](images/radnavigationview-features-hierarchy-4.png)
+![{{ site.framework_name }} RadNavigationView Sub menu flyout visualization](images/radnavigationview-features-hierarchy-4.png)
 
 ## Events
 

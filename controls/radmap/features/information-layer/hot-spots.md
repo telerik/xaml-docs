@@ -83,7 +83,7 @@ Here is the ellipse element that is centered over the location point:
 
 Here is a snapshot of the final result:
 
-![](images/RadMap_Features_HotSpots_01.png)
+![{{ site.framework_name }} RadMap Hot Spot](images/RadMap_Features_HotSpots_01.png)
 
 ## Hot Spot inside a Complex UI
 
@@ -129,7 +129,7 @@ Here is an example of an __Ellipse__, that is placed inside a __Grid__ control w
 
 Here is a snapshot of the final result:
 
-![](images/RadMap_Features_HotSpots_02.png)
+![{{ site.framework_name }} RadMap HotSpot Inside Complex UI](images/RadMap_Features_HotSpots_02.png)
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

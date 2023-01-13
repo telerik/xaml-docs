@@ -292,7 +292,7 @@ The specified label formats are:
 
 The result is shown on the image below. Note that the __YValue__ is bound to the __Close__ property of the underlying business object, while the tooltip using the __#DATAITEM__ token extracts the values from from the __High__, __Low__ and __Volume__ properties and then applies the specified format:
  
-      ![](images/RadChart_Features_FormatExpressions_010.png)
+      ![{{ site.framework_name }} RadChart with Custom Label Format String](images/RadChart_Features_FormatExpressions_010.png)
 
 >The __#TOOLTIP__ token is intended to be used when formatting items labels via __ItemLabelFormat__. This token returns the value from the __DataPoint.Tooltip__ property. More about tooltip formatting see [here]({%slug radchart-features-tooltips%}).
 

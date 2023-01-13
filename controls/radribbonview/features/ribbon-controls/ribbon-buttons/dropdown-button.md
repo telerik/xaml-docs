@@ -27,7 +27,7 @@ Here is a sample definition of a __RadRibbonDropDownButton__ without having any 
 >tip As all buttons in the RadRibbonView's set slightly expose the same functionality, take a look at the [Overview]({%slug radribbonview-buttons-overview%}) topic.			
 
 This button has its initial size set to __Large__ and its text label set to __"Paste"__.
-![](images/RibbonView_Buttons_DropDownButton.png)
+![{{ site.framework_name }} RadRibbonView Large DropDown Button](images/RibbonView_Buttons_DropDownButton.png)
 
 ## Setting the Drop Down Content
 
@@ -61,7 +61,7 @@ To set the popup content you have to simply set the __DropDownContent__ property
 	</telerik:RadRibbonDropDownButton>
 {{endregion}}
 
-![](images/RibbonView_Buttons_DropDownButton_DDContent.png)
+![{{ site.framework_name }} RadRibbonView DropDown Button Content](images/RibbonView_Buttons_DropDownButton_DDContent.png)
 
 ## Handling the Drop Down Events
 

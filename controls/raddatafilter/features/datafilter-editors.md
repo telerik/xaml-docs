@@ -12,11 +12,7 @@ position: 3
 
 
 
-The FilterEditors allow the users to input the value of their filter criteria in the __RadDataFilter__. This topic will make you familiar with the following:
-
-* [Built-in Filter Editors](#built-in-filter-editors)
-
-* [Custom Filter Editors](#custom-filter-editors)
+The FilterEditors allow the users to input the value of their filter criteria in the __RadDataFilter__.
 
 ## Built-in Filter Editors
 
@@ -32,7 +28,7 @@ The following list shows the default editors of different types of data:
 
 * __Boolean__ - the default editor is a __CheckBox.__
 
- ![](images/RadDataFilter_Features_FilterEditors_01.png)
+ ![{{ site.framework_name }} RadDataFilter All Default Editors](images/RadDataFilter_Features_FilterEditors_01.png)
 
 You can see a running demo [here](https://demos.telerik.com/silverlight/#DataFilter/DefaultEditors)
           . 

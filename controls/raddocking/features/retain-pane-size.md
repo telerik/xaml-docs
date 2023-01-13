@@ -51,13 +51,13 @@ If a whole __PaneGroup__ (with multiple panes inside) is floated the __FloatingS
 {{endregion}}
 
 __Figure 1: __ Floating Pane with a set __FloatingSize__:
-![WPF RadDocking Floating Pane with a set __FloatingSize__:](images/raddocking-features-retain-pane-size-1.png)
+![{{ site.framework_name }} RadDocking Floating Pane with a set __FloatingSize__:](images/raddocking-features-retain-pane-size-1.png)
 
 __Figure 2: __ The Pane is docked:
-![WPF RadDocking The Pane is docked:](images/raddocking-features-retain-pane-size-2.png)
+![{{ site.framework_name }} RadDocking The Pane is docked:](images/raddocking-features-retain-pane-size-2.png)
 
 __Figure 3: __ The pane retains its __FloatingSize__ when it becomes floating again:
-![WPF RadDocking The pane retains its __FloatingSize__ when it becomes floating again:](images/raddocking-features-retain-pane-size-3.png)
+![{{ site.framework_name }} RadDocking The pane retains its __FloatingSize__ when it becomes floating again:](images/raddocking-features-retain-pane-size-3.png)
 
 >Please, notice that in this mode if there is a set __FloatingSize__ to __RadPane__ only that size will be considered and kept when the Pane becomes floating.
 
@@ -72,13 +72,13 @@ If Panes with different sizes are docked in same __PaneGroup__ and the group is 
 When there are several Panes docked in same __ToolWindow__ the size they will take when we drag them out is the size of that __ToolWindow__.
 
 __Figure 1: __ The floating Pane is resized:
-![WPF RadDocking The floating Pane is resized:](images/raddocking-features-retain-pane-size-4.png)
+![{{ site.framework_name }} RadDocking The floating Pane is resized:](images/raddocking-features-retain-pane-size-4.png)
 
 __Figure 2: __ The Pane is docked:
-![WPF RadDocking The Pane is docked:](images/raddocking-features-retain-pane-size-5.png)
+![{{ site.framework_name }} RadDocking The Pane is docked:](images/raddocking-features-retain-pane-size-5.png)
 
 __Figure 3: __ The last floating size is kept when the Pane becomes floating again:
-![WPF RadDocking The last floating size is kept when the Pane becomes floating again:](images/raddocking-features-retain-pane-size-6.png)
+![{{ site.framework_name }} RadDocking The last floating size is kept when the Pane becomes floating again:](images/raddocking-features-retain-pane-size-6.png)
 
 >importantWe recommend setting __FloatingSize__ only to the Pane when initial size needs to be applied. Please, notice that this size will be appplied just once when the Pane is undocked for the first time.
 
@@ -93,10 +93,10 @@ When __RetainPaneSizeMode__ is set to __DockingAndFloating__ if a __Pane__ or __
 * If the __Pane/PaneGroup__ is docked top or bottom the __Height__ of the __ToolWindow__ will be kept unless the __ToolWindow__ has a __Height__ larger that the half of the Docking’s __Height__. If so the half of the Docking’s __Height__ will be taken. Again, please notice that if the Docking has __DocumentHost__ there will be some space preserved for it.
 
 __Figure 1: __ The Pane is docked:
-![WPF RadDocking The Pane is docked:](images/raddocking-features-retain-pane-size-7.png)
+![{{ site.framework_name }} RadDocking The Pane is docked:](images/raddocking-features-retain-pane-size-7.png)
 
 __Figure 2: __ The last docked size is preserved when the Pane becomes floating:
-![WPF RadDocking The last docked size is preserved when the Pane becomes floating:](images/raddocking-features-retain-pane-size-8.png)
+![{{ site.framework_name }} RadDocking The last docked size is preserved when the Pane becomes floating:](images/raddocking-features-retain-pane-size-8.png)
 
 >tip Find a runnable project that demonstrates all described above modes in [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Docking/RetainPaneSize).
 

@@ -163,4 +163,4 @@ __Code:__
 {{endregion}}
 
 __Preview:__
-![](images/RadToolBar_bands.png)
+![{{ site.framework_name }} RadToolBar BandIndex](images/RadToolBar_bands.png)

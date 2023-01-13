@@ -25,7 +25,7 @@ In the following example, the user is asked to enter four digits:
 
 When an empty string is entered, then the default __Placeholder__(the character used to represent the absence of user input in a __RadMaskedInput__ control) will be displayed.				
 
-![](images/RadMaskedTextBox_Features_Watermark_Default.png)
+![{{ site.framework_name }} RadMaskedInput Default Placeholder](images/RadMaskedTextBox_Features_Watermark_Default.png)
 
 If the __EmptyContent__ property is set, then it will be displayed when an empty string is entered.				
 
@@ -34,7 +34,7 @@ If the __EmptyContent__ property is set, then it will be displayed when an empty
 	<telerik:RadMaskedTextInput Mask="####" EmptyContent="Please Enter Four Digits" />
 {{endregion}}
 
-![](images/RadMaskedTextBox_Features_Watermark_Customized.png)
+![{{ site.framework_name }} RadMaskedInput Custom Empty Content](images/RadMaskedTextBox_Features_Watermark_Customized.png)
 
 The __EmptyContent__ property is of type object. Which means that you can set anything you want. For example:				
 
@@ -56,7 +56,7 @@ The __EmptyContent__ property is of type object. Which means that you can set an
 	</telerik:RadMaskedTextInput>
 {{endregion}}
 
-![](images/RadMaskedTextBox_Features_Watermark_WatermarkTextBox_Default.png)
+![{{ site.framework_name }} RadMaskedInput RadWatermarkTextBox as Empty Content](images/RadMaskedTextBox_Features_Watermark_WatermarkTextBox_Default.png)
 
 ## Using EmptyContentTemplate Property
 
@@ -83,7 +83,7 @@ Similarly, you can use the __EmptyContentTemplate__ property for the same sort o
 	</telerik:RadMaskedTextInput>
 {{endregion}}
 
-![](images/RadMaskedTextBox_Features_Watermark_WatermarkTextBox_Customized.png)
+![{{ site.framework_name }} RadMaskedInput RadWatermarkTextBox in Empty Content Template](images/RadMaskedTextBox_Features_Watermark_WatermarkTextBox_Customized.png)
 
 >tip You can see a live demo demonstrating the __EmptyContent__ property [here](https://demos.telerik.com/silverlight/#MaskedInput/MaskedTextInput).				
 

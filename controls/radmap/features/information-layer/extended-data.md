@@ -160,4 +160,4 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 
 Here is a snapshot of the result:
 
-![](images/RadMap_Features_ExtendedData_01.png)
+![{{ site.framework_name }} RadMap with Extended Data](images/RadMap_Features_ExtendedData_01.png)

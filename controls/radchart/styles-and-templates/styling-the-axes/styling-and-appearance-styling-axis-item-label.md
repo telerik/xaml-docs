@@ -60,7 +60,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 Here is a snapshot of the sample result.
 
-![](images/RadChart_StylingAxisItemLabel_04.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_StylingAxisItemLabel_04.png)
 
 Here is the final XAML for the __Style__:
 

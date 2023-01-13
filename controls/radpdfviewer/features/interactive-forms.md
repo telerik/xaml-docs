@@ -48,7 +48,7 @@ After filling the forms, you can save the document using the Save As command.
 
 <a name="figure1"><a/>
 #### **Figure 1: Interactive form fields in RadPdfViewer**
-![WPF RadPdfViewer Interactive form fields in RadPdfViewer](images/PdfViewer_InteractiveForms_1.gif)
+![{{ site.framework_name }} RadPdfViewer Interactive form fields in RadPdfViewer](images/PdfViewer_InteractiveForms_1.gif)
 
 ## See Also
 

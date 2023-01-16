@@ -1,5 +1,5 @@
 ---
-title: Providers Overview
+title: Overview
 page_title: Providers Overview
 description: This article describes the supported by the RadMap providers.
 slug: radmap-features-providers

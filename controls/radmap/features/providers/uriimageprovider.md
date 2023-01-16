@@ -5,7 +5,7 @@ description: Check our &quot;UriImageProvider&quot; documentation article for th
 slug: radmap-features-uriimageprovider
 tags: uriimageprovider
 published: True
-position: 5
+position: 6
 ---
 
 # UriImageProvider

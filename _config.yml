@@ -621,6 +621,7 @@ navigation:
         title: "Visualization Layer"
     controls/radmap/features/providers/bing-rest-map-provider:
         title: "Bing Rest Map Provider"
+        position: 2
     controls/radchartview/indicators:
         title: Financial Indicators
         position: 12

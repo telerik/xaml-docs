@@ -169,7 +169,9 @@ controls/radwatermarktextbox/embedded-label.md,
 common-information/geometry_extension.md,
 controls/radvirtualkeyboard,
 controls/radpanelbar/features/resizeable_items.md,
-getting-started/installation/nuget]
+getting-started/installation/nuget,
+controls/radmap/features/providers/mapboxprovider.md,
+controls/radmap/features/providers/vectortileproviders.md]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

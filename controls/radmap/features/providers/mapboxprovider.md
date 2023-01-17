@@ -31,7 +31,7 @@ In order to download data from the services, the provider needs to assign its `A
 
 The MapBox services provide a set of different map layers ([tilesets](https://docs.mapbox.com/studio-manual/reference/tilesets/)). Telerik can make requests to several of the vector tilesets, but the built-in style source supports one of the available sets. To change the mode, set the `Mode` property of `MapBoxMapProvider` or use the UI.
 
-The `Mode` property is a flag enum of type `MapboxVectorTileset` which allows you to set the mode to Streets, Terrain, Traffic or any combination of the modes. Currently, __the default style file source provided by Telerik supports only the `Streets` mode__. To visualize other modes, you should [provide a custom style file](#loading-custom-styles).
+The `Mode` property is a flag enum of type `MapboxVectorTileset` which allows you to set the mode to Streets, Terrain, Traffic or any combination of the modes. Currently, [the default style file source](https://github.com/mapbox/mapbox-gl-styles/blob/master/styles/basic-v9.json) deployed with the provider supports only the `Streets` mode. To visualize other modes, you should [provide a custom style file](#loading-custom-styles).
 
 #### __[XAML] Setting the Mode property__
 {{region radmap-features-mapboxprovider-1}}

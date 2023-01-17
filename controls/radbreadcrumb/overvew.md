@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Overview - Breadcrumb
 description: Check our &quot;Overview&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
 slug: radbreadcrumb-overvew
 tags: overview
@@ -10,8 +10,6 @@ CTAControlName: RadBreadcrumb
 ---
 
 # Overview
-
-Thank you for choosing Telerik __RadBreadcrumb__ !
 
 Do you need to build complicated navigation systems that allow you to track the navigation history? With __RadBreadcrumb__ you can achieve all of this and much more. With its powerful databinding mechanism, the control lets you display hierarchical structures, such as directories and relational data. With its auto-complete functionality and other advanced capabilities, the __RadBreadcrumb__ significantly improves the navigation and performance of your application. 
 
@@ -29,15 +27,11 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __TextMode and UI Navigation__- The Telerik __RadBreadcrumb__ control enhances further your web application’s capabilities through the rich navigation functionality. Your users can navigate in the control by entering a destination in a text mode or by choosing an item from the __RadBreadcrumbItem__'s children collection. [Read More]({%slug radbreadcrumb-features-overview%})
 
-* __Styling and Appearance__ - The __RadBreadcrumb__ control ships with several pre-defined themes that can be used to style it. Furthermore, Telerik's unique style building mechanism allows you to change the skin’s color scheme with just a few clicks. [Read More]({%slug radbreadcrumb-templates%})
+* __Styling and Appearance__ - The __RadBreadcrumb__ control ships with several pre-defined themes that can be used to style it. Furthermore, Telerik's unique style building mechanism allows you to change the skin’s color scheme with just a few clicks.
 
 * __Keyboard Support__ - Navigate through the nodes of the breadcrumb without using the mouse. The keyboard can replace the mouse by allowing you to perform navigation, expanding and selecting the breadcrumb items. 
 
 * __Item Images__ - __RadBreadcrumb__ gives you the ability to define images for each item [Read More]({%slug radbreadcrumb-features-overview%})
-
-* __Enhanced Routed Events Framework__ - To help your code become even more elegant and concise, we have implemented Enhanced Routed Events Framework for __RadControls__ for Silverlight. This gives you more freedom when you design your applications, since you can write instance handlers as well as class handlers for the routed events of our controls.  
-
-* __Expression Blend Support__ -  All __RadControls__ for Silverlight can be easily customized using Expression Blend.
 
 ## See Also
  * [Visual Structure]({%slug radbreadcrumb-visual-structure%})

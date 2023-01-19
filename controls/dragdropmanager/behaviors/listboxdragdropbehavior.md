@@ -1,6 +1,6 @@
 ---
-title: ListBoxDragDropBehavior
-page_title: ListBoxDragDropBehavior
+title: ListBox DragDropBehavior
+page_title: ListBoxDragDropBehavior - DragDropManager - ListBox
 description: Check our &quot;ListBoxDragDropBehavior&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
 slug: dragdropmanager-behaviors-listboxdragdropbehavior
 tags: listboxdragdropbehavior
@@ -8,92 +8,100 @@ published: True
 position: 1
 ---
 
-# ListBoxDragDropBehavior
+# ListBox DragDropBehavior
 
-In this article you can find information about the ListBoxDragDropBehavior class.
+The `ListBoxDragDropBehavior` class enables customizeable drag/drop functionality in `RadListBox` and the {{ site.framework_name }} native `ListBox`.
 
-## Attaching the behavior
+This article shows how to use the behavior in the `ListBox` control. For `RadListBox`, see its [Drag and Drop]({%slug radlistbox-features-dragdrop%}) documentation.
 
-* Add a reference to Telerik.Windows.Controls.dll and add the following XML namespaces to your XAML:
+To use the behavior with `ListBox`, set the `ListBoxDragDrop.Behavior` [attached property](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-6.0). Additional to this, the `DragDropManager.AllowDrag` or `DragDropManager.AllowCapturedDrag` attached property should be set to the `ListBoxItems` elements. This can be done via the `ItemContainerStyle` property of the control.
 
-	#### __XAML__
-	{{region dragdropmanager-behaviors-listboxdragdropbehavior_0}}
-		xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation
-		xmlns:drag="clr-namespace:Telerik.Windows.DragDrop.Behaviors;assembly=Telerik.Windows.Controls"
-	{{endregion}}
-
-* Create a ListBoxItem Style that will enable the drag of the ListBoxItem controls:
-
-	#### __XAML__
-	{{region dragdropmanager-behaviors-listboxdragdropbehavior_1}}
-		<Style x:Key="DraggableListBoxItem" TargetType="ListBoxItem">
-			<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
-		</Style>
-	{{endregion}}
-
-* Attach the ListBoxDragDropBehavior behavior:
-
-	#### __XAML__
-	{{region dragdropmanager-behaviors-listboxdragdropbehavior_2}}
-		<ListBox ItemContainerStyle="{StaticResource DraggableListBoxItem}">
-			<drag:ListBoxDragDrop.Behavior>
-				<drag:ListBoxDragDropBehavior />
-			</drag:ListBoxDragDrop.Behavior>
-		</ListBox>
-	{{endregion}}
-
-
-## Features
-
-The __ListBoxDragDropBehavior__ provides drag-drop capabilities for standard ListBox controls. It automatically recognizes its host control item Type and automatically adds the dragged items that are of this type. In some cases the __ListBoxDragDropBehavior__ will be unable to correctly recognize its host’s item Type. The ItemType property is provided for such cases {% if site.site_name == 'Silverlight' %}(Silverlight 5 example){% endif %}.
-
-#### __XAML__
-{{region dragdropmanager-behaviors-listboxdragdropbehavior_3}}
-	<drag:ListBoxDragDropBehavior ItemType="{x:Type local:IBaseClass}" />
+#### __[XAML] Setting up the ListBox and the drag/drop behavior__
+{{region dragdropmanager-behaviors-listboxdragdropbehavior-0}}
+	<ListBox ItemsSource="{Binding MyItemsCollection}" DisplayMemberPath="Name">
+		<ListBox.ItemContainerStyle>
+			<Style TargetType="ListBoxItem"> 
+				<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" /> 
+			</Style> 
+		</ListBox.ItemContainerStyle>
+		<telerik:ListBoxDragDrop.Behavior>
+			<telerik:ListBoxDragDropBehavior />
+		</telerik:ListBoxDragDrop.Behavior>
+	</ListBox>
 {{endregion}}
 
-{% if site.site_name == 'Silverlight' %}
->In Silverlight 4 you will have to either inherit from ListBoxDragDropBehavior and set the ItemType property in the class constructor, or bind it to a property in your view model that contains the correct Type.
-{% endif %}
+The default drag/drop behavior is to reorder the items if the drag/drop happens in the same `ListBox` instance. Dropping an item to another `ListBox` instance will remove it from the source control and add it to the target. If you hold the `Ctrl` key while dropping an item in another `ListBox`, the item will get copied.
 
-By default the __ListBoxDragDropBehavior__ will allow reordering/inserting items in the ListBox. To disable this feature, set AllowReorder=false on the behavior:
+## Copy Item in the Same ListBox
 
-#### __XAML__
-{{region dragdropmanager-behaviors-listboxdragdropbehavior_4}}
-	<drag:ListBoxDragDropBehavior AllowReorder="false" />
-{{endregion}}
+By default dragging with the `Ctrl` key pressed makes a copy of the dragged item on drop. This doesn't happen if the item is dropped in the same `ListBox` instance. To allow this behavior, create a class that derives from `ListBoxDragDropBehavior` and override its `CopyDraggedItems` method.
 
-The __ListBoxDragDropBehavior__ supports copying the dragged items if the `Ctrl` key is pressed. When the copy drag functionality inside the same ListBox instance, the items won't be copied, unless you override the `CopyDraggedItems` method and return a collection with copies of the dragged items.
-
-#### __C#__
-{{region dragdropmanager-behaviors-listboxdragdropbehavior_5}}
-	protected override IEnumerable<object> CopyDraggedItems(ListBoxDragDropState state)
-	{
-		return state.DraggedItems.OfType<Customer>().Select(c => c.Copy()).Cast<object>();
-	} 
-{{endregion}}
-
-## Converting data
-
-In scenarios with drag-drop between controls containing different item types the drag data should be converted using a DataConverter.
-
-* Create a new class, deriving from DataConverter:
-
-	#### __C#__
-	{{region dragdropmanager-behaviors-listboxdragdropbehavior_6}}
-		public class CustomerToAppointmentConverter : DataConverter
+#### __[C#] Creating custom drag drop behavior that allows copy items in the same ListBox instance__
+{{region dragdropmanager-behaviors-listboxdragdropbehavior-1}}
+	public class CustomListBoxDragDropBehavior : ListBoxDragDropBehavior
+    {
+        protected override IEnumerable<object> CopyDraggedItems(DragDropState state)
+        {
+            var copiedItems = new List<object>();
+            foreach (object item in state.DraggedItems)
+            {
+                object copy = CreateItemCopy(item);
+                copiedItems.Add(copy);
+            }
+            return copiedItems;
+        }
+		
+		private object CreateItemCopy(object originaItem)
 		{
+			// create and return a copy of the item
 		}
-	{{endregion}}
+    }
+{{endregion}}
 
-* Override the GetConvertToFormats() and ConvertTo(). The following method can convert from Customer to Appointment and vice versa:
+#### __[C#] Using the custom behavior__
+{{region dragdropmanager-behaviors-listboxdragdropbehavior-2}}
+	<ListBox>		
+		<telerik:ListBoxDragDrop.Behavior>
+			<local:CustomListBoxDragDropBehavior />
+		</telerik:ListBoxDragDrop.Behavior>
+	</ListBox>
+{{endregion}}
 
-	#### __C#__
-	{{region dragdropmanager-behaviors-listboxdragdropbehavior_7}}
+## Disable Item Reorder
+
+The default drag/drop behavior within the same `ListBox` instance is to reorder the items. To disable this, set the `AllowReorder` property of `ListBoxDragDropBehavior` to `false`.
+
+#### __[XAML] Disabling reordering__
+{{region dragdropmanager-behaviors-listboxdragdropbehavior-3}}
+	<telerik:ListBoxDragDropBehavior AllowReorder="False" />
+{{endregion}}
+
+## Setting Item Type
+
+The `ListBoxDragDropBehavior` automatically recognizes the item `Type` based on the `ItemsSource` of its host control and then automatically adds the dragged items that are of this type. In some cases the behavior my not recognize the item type correctly. In that situation, use the `ItemType` property of the `ListBoxDragDropBehavior` in order to manually assign the type.
+
+#### __[XAML] Setting the ItemType__
+{{region dragdropmanager-behaviors-listboxdragdropbehavior-4}}
+	<drag:ListBoxDragDropBehavior ItemType="{x:Type local:MyItemClass}" />
+{{endregion}}
+
+## Customizing the Drag and Drop Operation
+
+The `ListBoxDragDropBehavior` class derive from the `DragDropBehavior` which provides several methods that can be overridden in order to modify the actions that happen on drag and drop. Read about the available methods in the [DragDropBehavior]({%slug dragdropmanager-behaviors-dragdropbehavior%}) article.
+
+## Converting Data
+
+In scenarios with drag/drop between controls containing different item types the drag data should be converted using a `DataConverter`. The following example shows how to implement a converter and assign it to the host control. The converter example uses sample class names (Appointment and Customer) that can vary on your exact implementation and naming.
+
+#### __[C#] Creating the DataConverter class__
+{{region dragdropmanager-behaviors-listboxdragdropbehavior-5}}
+	public class CustomerToAppointmentConverter : DataConverter
+	{
 		public override string[] GetConvertToFormats()
 		{
 			return new string[] { typeof(Appointment).FullName, typeof(Customer).FullName };
 		}
+		
 		public override object ConvertTo(object data, string format)
 		{
 			var customers = (IEnumerable)DataObjectHelper.GetData(data, typeof(Customer), false);
@@ -108,18 +116,17 @@ In scenarios with drag-drop between controls containing different item types the
 			}
 			return null;
 		}	
-	{{endregion}}
+	}
+{{endregion}}
 
-* Attach the newly created DataConverter:
-
-	#### __XAML__  
-	{{region dragdropmanager-behaviors-listboxdragdropbehavior_8}}
-		<ListBox ...>
-			<drag:ListBoxDragDrop.DataConverter>
-				<local:CustomerToAppointmentConverter />
-			</drag:ListBoxDragDrop.DataConverter>
-			<drag:ListBoxDragDrop.Behavior>
-				<drag:ListBoxDragDropBehavior />
-			</drag:ListBoxDragDrop.Behavior>
-		</ListBox>
-	{{endregion}}
+#### __[C#] Using the custom DataConverter__
+{{region dragdropmanager-behaviors-listboxdragdropbehavior-6}}	
+	<ListBox>
+		<telerik:ListBoxDragDrop.DataConverter>
+			<local:CustomerToAppointmentConverter />
+		</telerik:ListBoxDragDrop.DataConverter>
+		<telerik:ListBoxDragDrop.Behavior>
+			<telerik:ListBoxDragDropBehavior />
+		</telerik:ListBoxDragDrop.Behavior>
+	</ListBox>
+{{endregion}}

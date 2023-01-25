@@ -259,12 +259,12 @@ The following list describes the tags used in the XML file:
 
 Once the XML file with the layout is defined, you can load it using the `LoadLayout` method of `RadVirtualKeyboard`. The method allows you to provide an XML `string` or a `Stream` with the XML file information. In order to load the XML file when using the approach with the Stream, you may need to set its __Build Action__ in Visual Studio's Properties menu to __Resource__.
 
-#### __[XML] LoadLayout call with a string argument__
+#### __[C#] LoadLayout call with a string argument__
 {{region radvirtualkeyboard-keys-layout-2}}	
 	virtualKeyboard.LoadLayout(xmlString);
 {{endregion}}
 
-#### __[XML] LoadLayout call with a Stream argument__
+#### __[C#] LoadLayout call with a Stream argument__
 {{region radvirtualkeyboard-keys-layout-3}}	
 	StreamResourceInfo info = Application.GetResourceStream(new Uri(@"/WpfApplication;component/keys-layout-file.xml", UriKind.Relative));
 	virtualKeyboard.LoadLayout(info.Stream);
@@ -276,7 +276,7 @@ When the file is loaded, the control parses the XML and provides its values to t
 
 When the `LoadLayout` method is used to load custom layout, the `DefaultKeyboardLayout` property is no longer applicable. Changing its value won't do anything. To enable the property again and return the default keys layouts, call the `LoadLayout` method with a `null` value.
 
-#### __[XML] Reset the default layout__
+#### __[C#] Reset the default layout__
 {{region radvirtualkeyboard-keys-layout-4}}		
 	  virtualKeyboard.LoadLayout(filename:null);
 {{endregion}}

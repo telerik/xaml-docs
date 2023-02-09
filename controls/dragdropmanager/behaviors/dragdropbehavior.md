@@ -12,15 +12,15 @@ position: 0
 
 In this article you can find information about the `DragDropBehavior` class.
 
-`DragDropBehavior` is the base class of the Telerik drag-drop behaviors and provides the high level API for handling drag-drop operations. Its methods are automatically called when the corresponding drag-drop event occurs. The D`DragDropBehavior` class inherits from `DependencyObject` and thus can be bound to other objects.
+`DragDropBehavior` is the base class of the Telerik drag-drop behaviors and provides the high level API for handling drag-drop operations. Its methods are automatically called when the corresponding drag-drop event occurs. The `DragDropBehavior` class inherits from `DependencyObject` and thus can be bound to other objects.
 
 When deriving from `DragDropBehavior` it is advisable not to keep any state in the class, in the form of member variables, because the DragDropBehavior could potentially be shared between several controls.      	
 
 The most important __methods of DragDropBehavior__ are:
 
-* `CanStartDrag`&mdash;This method is called in the context of the drag source control, just before the drag operation is started. If the method return `false` the drag operation will not start.
+* `CanStartDrag`&mdash;This method is called in the context of the drag source control, just before the drag operation is started. If the method returns `false` the drag operation will not start.
 
-* `CanDrop`&mdash;This method is called in the context of the drop target control on each mouse move event and before the call to the `Drop` method. If the method return false the drop will not be allowed and the mouse cursor will change accordingly.
+* `CanDrop`&mdash;This method is called in the context of the drop target control on each mouse move event and before the call to the `Drop` method. If the method returns false the drop will not be allowed and the mouse cursor will change accordingly.
 
 * `Drop`&mdash;This method is called in the context of the drop target control when the mouse button is released, but only if the previous `CanDrop` call returned true. It is useful when you want to perform additional actions when the drop operation is complete.
 
@@ -56,7 +56,7 @@ There are several default implementations of `IDragVisualProvider`:
 
 The `DataConverter` class provides basic data conversion API for converting the dragged data into different formats – through the `ConvertTo`, `CanConvertTo` and `GetConvertToFormats` methods. The two scenarios this class is used are:
 
-* Drag to a control having items of different Type than the source or a third party application - when the target requests data from the carried `IDataObject`, the request is redirected through the `DataConverter`, so it can be handled without overriding the `IDataObject` itself.
+* Drag to a control having items of different `Type` than the source or a third party application - when the target requests data from the carried `IDataObject`, the request is redirected through the `DataConverter`, so it can be handled without overriding the `IDataObject` itself.
 
 * Drop from a control having items of different `Type` than the target or from a third party application – when the `DragDropBehavior` cannot find appropriate data in the carried `IDataObject` it tries to convert the data to a useful `Type` using its `DataConverter` instance if present.
 

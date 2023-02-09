@@ -34,7 +34,7 @@ The default drag/drop behavior is to reorder the items if the drag/drop happens 
 
 ## Copy Item in the Same ListBox
 
-By default dragging with the `Ctrl` key pressed makes a copy of the dragged item on drop. This doesn't happen if the item is dropped in the same `ListBox` instance. To allow this behavior, create a class that derives from `ListBoxDragDropBehavior` and override its `CopyDraggedItems` method.
+By default, dragging with the `Ctrl` key pressed makes a copy of the dragged item on drop. This doesn't happen if the item is dropped in the same `ListBox` instance. To allow this behavior, create a class that derives from `ListBoxDragDropBehavior` and override its `CopyDraggedItems` method.
 
 #### __[C#] Creating custom drag drop behavior that allows copy items in the same ListBox instance__
 {{region dragdropmanager-behaviors-listboxdragdropbehavior-1}}
@@ -87,7 +87,7 @@ The `ListBoxDragDropBehavior` automatically recognizes the item `Type` based on 
 
 ## Customizing the Drag and Drop Operation
 
-The `ListBoxDragDropBehavior` class derive from the `DragDropBehavior` which provides several methods that can be overridden in order to modify the actions that happen on drag and drop. Read about the available methods in the [DragDropBehavior]({%slug dragdropmanager-behaviors-dragdropbehavior%}) article.
+The `ListBoxDragDropBehavior` class derives from the `DragDropBehavior`, which provides several methods that can be overridden in order to modify the actions that happen on drag and drop. Read more about the available methods in the [DragDropBehavior]({%slug dragdropmanager-behaviors-dragdropbehavior%}) article.
 
 ## Converting Data
 

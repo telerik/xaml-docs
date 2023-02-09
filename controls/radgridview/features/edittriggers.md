@@ -10,9 +10,9 @@ position: 16
 
 # Editing Start Triggers
 
-RadGridView supports few differen gestures that trigger the cell edit action. The default gestures are click on the current cell, press F2 on the keyboard and start typining when the current cell is focused.
+RadGridView supports few different gestures that trigger the cell edit action. The default gestures are clicking on the current cell, pressing F2 on the keyboard, and starting typing when the current cell is focused.
 
-The edit start actions are defined with the `GridViewEditTriggers` enum that is assigned to the `EditTriggers` property of the GridView or the column objects The enum provides the following set of values:
+The edit start actions are defined with the `GridViewEditTriggers` enum that is assigned to the `EditTriggers` property of the GridView or the column objects. The enum provides the following set of values:
 
 * `Default`&mdash;The default setting which combines the `CurrentCellClick`, `F2` and `TextInput` values.
 

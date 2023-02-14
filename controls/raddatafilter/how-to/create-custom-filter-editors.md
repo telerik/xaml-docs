@@ -10,7 +10,11 @@ position: 1
 
 # Create Custom Filter Editors
 
->You can find a running demo {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#DataFilter/CustomEditors){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf/?DataFilter/CustomEditors){% endif %}. 
+{% if site.site_name == 'Silverlight' %}
+>You can find a running demo [here](https://demos.telerik.com/silverlight/#DataFilter/CustomEditors)
+{% else %}
+>You can find the complete source code used in this article in the __Custom Filter Editors__ example of the [Telerik WPF Demos](https://demos.telerik.com/wpf) application.
+>{% endif %}. 
 
 If you want to specify a custom filter editor you can do it by using the __EditorTemplateSelector__ property of the control. Once the editor (custom or default) is created, you can add the final touch to it by attaching to the __EditorCreated__ event.
 
@@ -67,8 +71,7 @@ In XAML you have to create an instance of the selector, define its rules collect
 	        </telerik:RadGridView.Columns>
 	    </telerik:RadGridView>
 	</Grid>
-	{{endregion}}
-
+{{endregion}}
 
 Here is the code behind of the example. The most important thing in it is the event handler for the __EditorCreated__ event. In it you can fill __RadComboBox__ editor with the desired data. 
 

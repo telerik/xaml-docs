@@ -1,14 +1,14 @@
 ---
-title: Databinding 
-page_title: Databinding 
-description: Check our &quot;Databinding&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
+title: Data Binding 
+page_title: Data Binding - Breadcrumb
+description: Check our &quot;Data Binding&quot; documentation article for the RadBreadcrumb {{ site.framework_name }} control.
 slug: radbreadcrumb-databinding
 tags: databinding,
 published: True
 position: 1
 ---
 
-# Databinding
+# Data Binding
 
 The __RadBreacrumb__ provides extensive data binding support. You can  display flat data collections as well as hierarchical data. The following properties are exposed to help you implement data binding scenarios with the control:	  
 
@@ -97,28 +97,28 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  ExplorerItem personalInfo = new ExplorerItem()
 		  {
 		   Header = "Personal Folders",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/1PersonalFolders.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/1PersonalFolders.png"),
 		   Path = "PersonalFolders"
 		  };
 		  this.Items.Add(personalInfo);
 		  ExplorerItem programFiles = new ExplorerItem()
 		  {
 		   Header = "Program Files",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 		   Path = "ProgramFiles"
 		  };
 		  this.Items.Add(programFiles);
 		  ExplorerItem programFiles86 = new ExplorerItem()
 		  {
 		   Header = "Program Files(86)",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 		   Path = "ProgramFiles(86)"
 		  };
 		  this.Items.Add(programFiles86);
 		  ExplorerItem downloads = new ExplorerItem()
 		  {
 		   Header = "Downloads",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 		   Path = "Downloads"
 		  };
 		  this.Items.Add(downloads);
@@ -126,21 +126,21 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  {
 		   Header = "Local Disk (C:)",
 		   Path = "LocalDisk(C:)",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/HardDrive16.png")
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/HardDrive16.png")
 		  };
 		  this.Items.Add(localHard);
 		  ExplorerItem localHard2 = new ExplorerItem()
 		  {
 		   Header = "Local Disk (D:)",
 		   Path = "LocalDisk(D:)",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/HardDrive16.png")
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/HardDrive16.png")
 		  };
 		  this.Items.Add(localHard2);
 		  ExplorerItem desktop = new ExplorerItem()
 		  {
 		   Header = "Desktop",
 		   Path = "Desktop",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/Desktop.png")
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/Desktop.png")
 		  };
 		  this.Items.Add(desktop);
 		 }
@@ -176,28 +176,28 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		
 				Dim personalInfo As New ExplorerItem() With { _
 					Key .Header = "Personal Folders", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/1PersonalFolders.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/1PersonalFolders.png"), ImageSource), _
 					Key .Path = "PersonalFolders" _
 				}
 				Me.Items.Add(personalInfo)
 		
 				Dim programFiles As New ExplorerItem() With { _
 					Key .Header = "Program Files", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 					Key .Path = "ProgramFiles" _
 				}
 				Me.Items.Add(programFiles)
 		
 				Dim programFiles86 As New ExplorerItem() With { _
 					Key .Header = "Program Files(86)", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 					Key .Path = "ProgramFiles(86)" _
 				}
 				Me.Items.Add(programFiles86)
 		
 				Dim downloads As New ExplorerItem() With { _
 					Key .Header = "Downloads", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 					Key .Path = "Downloads" _
 				}
 				Me.Items.Add(downloads)
@@ -205,21 +205,21 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				Dim localHard As New ExplorerItem() With { _
 					Key .Header = "Local Disk (C:)", _
 					Key .Path = "LocalDisk(C:)", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/HardDrive16.png"), ImageSource) _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/HardDrive16.png"), ImageSource) _
 				}
 				Me.Items.Add(localHard)
 		
 				Dim localHard2 As New ExplorerItem() With { _
 					Key .Header = "Local Disk (D:)", _
 					Key .Path = "LocalDisk(D:)", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/HardDrive16.png"), ImageSource) _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/HardDrive16.png"), ImageSource) _
 				}
 				Me.Items.Add(localHard2)
 		
 				Dim desktop As New ExplorerItem() With { _
 					Key .Header = "Desktop", _
 					Key .Path = "Desktop", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/Desktop.png"), ImageSource) _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/Desktop.png"), ImageSource) _
 				}
 				Me.Items.Add(desktop)
 			End Sub
@@ -344,26 +344,26 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  ExplorerItem personalInfo = new ExplorerItem()
 		  {
 		   Header = "Personal Folders",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/1PersonalFolders.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/1PersonalFolders.png"),
 		   Children = new ObservableCollection<ExplorerItem>() 
 		   {
-			new ExplorerItem() {Header = "Deleted Items(6)", IconPath =  (ImageSource)isc.ConvertFromString("Images/2DeletedItems.png"), Path = "DeletedItems"},
-			new ExplorerItem() {Header = "Drafts", IconPath =  (ImageSource)isc.ConvertFromString("Images/3Drafts.png"), Path = "Drafts"},
-			new ExplorerItem() {Header = "Inbox(14)", IconPath =  (ImageSource)isc.ConvertFromString("Images/4Inbox.png"), Path = "Inbox",
+			new ExplorerItem() {Header = "Deleted Items(6)", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/2DeletedItems.png"), Path = "DeletedItems"},
+			new ExplorerItem() {Header = "Drafts", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/3Drafts.png"), Path = "Drafts"},
+			new ExplorerItem() {Header = "Inbox(14)", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/4Inbox.png"), Path = "Inbox",
 				 Children = new ObservableCollection<ExplorerItem>()
 				 {
-				  new ExplorerItem() {Header = "Folders", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Folders"},
+				  new ExplorerItem() {Header = "Folders", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Folders"},
 				 }
 				},
-			new ExplorerItem() {Header = "Junk E-mails", IconPath = (ImageSource)isc.ConvertFromString("Images/junk.png"), Path = "JunkEmails"},
-			new ExplorerItem() {Header = "Outbox", IconPath =  (ImageSource)isc.ConvertFromString("Images/outbox.png"), Path = "Outbox"},
-			new ExplorerItem() {Header = "Sent Items", IconPath =  (ImageSource)isc.ConvertFromString("Images/sent.png"), Path = "SentItems"},
-			new ExplorerItem() {Header = "Search Folder", IconPath =  (ImageSource)isc.ConvertFromString("Images/searchFolder.png"), Path = "SearchFolder",
+			new ExplorerItem() {Header = "Junk E-mails", IconPath = (ImageSource)isc.ConvertFromString("../../Images/junk.png"), Path = "JunkEmails"},
+			new ExplorerItem() {Header = "Outbox", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/outbox.png"), Path = "Outbox"},
+			new ExplorerItem() {Header = "Sent Items", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/sent.png"), Path = "SentItems"},
+			new ExplorerItem() {Header = "Search Folder", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/searchFolder.png"), Path = "SearchFolder",
 				 Children = new ObservableCollection<ExplorerItem>()
 				 {
-				  new ExplorerItem() {Header = "From Follow up", IconPath =  (ImageSource)isc.ConvertFromString("Images/search.png"), Path = "FromFollowup"},
-				  new ExplorerItem() {Header = "Large Mail", IconPath =  (ImageSource)isc.ConvertFromString("Images/search.png"), Path = "LargeMail"},
-				  new ExplorerItem() {Header = "Unread Mail", IconPath =  (ImageSource)isc.ConvertFromString("Images/search.png"), Path = "UnreadMail"},
+				  new ExplorerItem() {Header = "From Follow up", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/search.png"), Path = "FromFollowup"},
+				  new ExplorerItem() {Header = "Large Mail", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/search.png"), Path = "LargeMail"},
+				  new ExplorerItem() {Header = "Unread Mail", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/search.png"), Path = "UnreadMail"},
 				 }
 				}
 		   },
@@ -372,18 +372,18 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  ExplorerItem programFiles = new ExplorerItem()
 		  {
 		   Header = "Program Files",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 		   Children = new ObservableCollection<ExplorerItem>()
 		   {
-			new ExplorerItem() { Header = "Microsoft", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Microsoft" },
-			new ExplorerItem() { Header = "Microsoft.NET", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Microsoft.NET" },
+			new ExplorerItem() { Header = "Microsoft", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Microsoft" },
+			new ExplorerItem() { Header = "Microsoft.NET", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Microsoft.NET" },
 			new ExplorerItem()
 			{
 			 Header = "Internet Explorer",
-			 IconPath =  (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+			 IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 			 Path = "InternetExplorer",
 			 Children = new ObservableCollection<ExplorerItem>(){
-						   new ExplorerItem() {Header = "SIGNUP", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "SIGNUP"}
+						   new ExplorerItem() {Header = "SIGNUP", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "SIGNUP"}
 						  }
 			}
 		   },
@@ -392,30 +392,30 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  ExplorerItem programFiles86 = new ExplorerItem()
 		  {
 		   Header = "Program Files(86)",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 		   Children = new ObservableCollection<ExplorerItem>()
 		   {
-			new ExplorerItem() { Header = "Microsoft", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Microsoft" },
-			new ExplorerItem() { Header = "Microsoft.NET", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Microsoft.NET" },
+			new ExplorerItem() { Header = "Microsoft", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Microsoft" },
+			new ExplorerItem() { Header = "Microsoft.NET", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Microsoft.NET" },
 			new ExplorerItem()
 			{
 			 Header = "Skype",
-			 IconPath =  (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+			 IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 			 Path = "Skype",
 			 Children = new ObservableCollection<ExplorerItem>(){
-						   new ExplorerItem() {Header = "Phone", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Phone"},
-						   new ExplorerItem() {Header = "Toolbars", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Toolbars"},
-						   new ExplorerItem() {Header = "Plugin Manager", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "PluginManager"}
+						   new ExplorerItem() {Header = "Phone", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Phone"},
+						   new ExplorerItem() {Header = "Toolbars", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Toolbars"},
+						   new ExplorerItem() {Header = "Plugin Manager", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "PluginManager"}
 						  }
 			},
 			new ExplorerItem()
 			{
 			 Header = "Notepad++",
-			 IconPath =  (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+			 IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 			 Path = "Notepad++",
 			 Children = new ObservableCollection<ExplorerItem>(){
-						   new ExplorerItem() {Header = "localization", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "localization"},
-						   new ExplorerItem() {Header = "plugins", IconPath = (ImageSource)isc.ConvertFromString("Images/junk.png"), Path = "plugins"}
+						   new ExplorerItem() {Header = "localization", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "localization"},
+						   new ExplorerItem() {Header = "plugins", IconPath = (ImageSource)isc.ConvertFromString("../../Images/junk.png"), Path = "plugins"}
 						  }
 			}
 		   },
@@ -424,11 +424,11 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  ExplorerItem downloads = new ExplorerItem()
 		  {
 		   Header = "Downloads",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/folder2.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/folder2.png"),
 		   Children = new ObservableCollection<ExplorerItem>()
 		   {
-			new ExplorerItem() { Header = "Music", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Music" },
-			new ExplorerItem() { Header = "Movies", IconPath =  (ImageSource)isc.ConvertFromString("Images/folder.png"), Path = "Movies" }
+			new ExplorerItem() { Header = "Music", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Music" },
+			new ExplorerItem() { Header = "Movies", IconPath =  (ImageSource)isc.ConvertFromString("../../Images/folder.png"), Path = "Movies" }
 		   },
 		   Path = "Downloads"
 		  };
@@ -436,7 +436,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  {
 		   Header = "Local Disk (C:)",
 		   Path = "LocalDisk(C:)",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/HardDrive16.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/HardDrive16.png"),
 		   Children = new ObservableCollection<ExplorerItem>()
 		   {
 			personalInfo,
@@ -449,13 +449,13 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  {
 		   Header = "Local Disk (D:)",
 		   Path = "LocalDisk(D:)",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/HardDrive16.png")
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/HardDrive16.png")
 		  };
 		  ExplorerItem computer = new ExplorerItem()
 		  {
 		   Header = "Computer",
 		   Path = "Computer",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/Computer.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/Computer.png"),
 		   Children = new ObservableCollection<ExplorerItem>()
 		   {
 			localHard,
@@ -476,7 +476,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  {
 		   Header = "Desktop",
 		   Path = "Desktop",
-		   IconPath = (ImageSource)isc.ConvertFromString("Images/Desktop.png"),
+		   IconPath = (ImageSource)isc.ConvertFromString("../../Images/Desktop.png"),
 		   Children = new ObservableCollection<ExplorerItem>()
 		   {
 			computer,
@@ -519,63 +519,63 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				Dim isc As New ImageSourceConverter()
 				Dim personalInfo As New ExplorerItem() With { _
 					Key .Header = "Personal Folders", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/1PersonalFolders.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/1PersonalFolders.png"), ImageSource), _
 					Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 						New ExplorerItem() With { _
 							Key .Header = "Deleted Items(6)", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/2DeletedItems.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/2DeletedItems.png"), ImageSource), _
 							Key .Path = "DeletedItems" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Drafts", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/3Drafts.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/3Drafts.png"), ImageSource), _
 							Key .Path = "Drafts" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Inbox(14)", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/4Inbox.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/4Inbox.png"), ImageSource), _
 							Key .Path = "Inbox", _
 							Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 								New ExplorerItem() With { _
 									Key .Header = "Folders", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 									Key .Path = "Folders" _
 								} _
 							} _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Junk E-mails", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/junk.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/junk.png"), ImageSource), _
 							Key .Path = "JunkEmails" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Outbox", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/outbox.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/outbox.png"), ImageSource), _
 							Key .Path = "Outbox" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Sent Items", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/sent.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/sent.png"), ImageSource), _
 							Key .Path = "SentItems" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Search Folder", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/searchFolder.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/searchFolder.png"), ImageSource), _
 							Key .Path = "SearchFolder", _
 							Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 								New ExplorerItem() With { _
 									Key .Header = "From Follow up", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/search.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/search.png"), ImageSource), _
 									Key .Path = "FromFollowup" _
 								}, _
 								New ExplorerItem() With { _
 									Key .Header = "Large Mail", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/search.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/search.png"), ImageSource), _
 									Key .Path = "LargeMail" _
 								}, _
 								New ExplorerItem() With { _
 									Key .Header = "Unread Mail", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/search.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/search.png"), ImageSource), _
 									Key .Path = "UnreadMail" _
 								} _
 							} _
@@ -586,26 +586,26 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		
 				Dim programFiles As New ExplorerItem() With { _
 					Key .Header = "Program Files", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 					Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 						New ExplorerItem() With { _
 							Key .Header = "Microsoft", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 							Key .Path = "Microsoft" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Microsoft.NET", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 							Key .Path = "Microsoft.NET" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Internet Explorer", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 							Key .Path = "InternetExplorer", _
 							Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 								New ExplorerItem() With { _
 									Key .Header = "SIGNUP", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 									Key .Path = "SIGNUP" _
 								} _
 							} _
@@ -616,53 +616,53 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		
 				Dim programFiles86 As New ExplorerItem() With { _
 					Key .Header = "Program Files(86)", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 					Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 						New ExplorerItem() With { _
 							Key .Header = "Microsoft", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 							Key .Path = "Microsoft" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Microsoft.NET", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 							Key .Path = "Microsoft.NET" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Skype", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 							Key .Path = "Skype", _
 							Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 								New ExplorerItem() With { _
 									Key .Header = "Phone", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 									Key .Path = "Phone" _
 								}, _
 								New ExplorerItem() With { _
 									Key .Header = "Toolbars", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 									Key .Path = "Toolbars" _
 								}, _
 								New ExplorerItem() With { _
 									Key .Header = "Plugin Manager", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 									Key .Path = "PluginManager" _
 								} _
 							} _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Notepad++", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 							Key .Path = "Notepad++", _
 							Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 								New ExplorerItem() With { _
 									Key .Header = "localization", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 									Key .Path = "localization" _
 								}, _
 								New ExplorerItem() With { _
 									Key .Header = "plugins", _
-									Key .IconPath = DirectCast(isc.ConvertFromString("Images/junk.png"), ImageSource), _
+									Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/junk.png"), ImageSource), _
 									Key .Path = "plugins" _
 								} _
 							} _
@@ -673,16 +673,16 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		
 				Dim downloads As New ExplorerItem() With { _
 					Key .Header = "Downloads", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder2.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder2.png"), ImageSource), _
 					Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 						New ExplorerItem() With { _
 							Key .Header = "Music", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 							Key .Path = "Music" _
 						}, _
 						New ExplorerItem() With { _
 							Key .Header = "Movies", _
-							Key .IconPath = DirectCast(isc.ConvertFromString("Images/folder.png"), ImageSource), _
+							Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/folder.png"), ImageSource), _
 							Key .Path = "Movies" _
 						} _
 					}, _
@@ -692,7 +692,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				Dim localHard As New ExplorerItem() With { _
 					Key .Header = "Local Disk (C:)", _
 					Key .Path = "LocalDisk(C:)", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/HardDrive16.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/HardDrive16.png"), ImageSource), _
 					Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 						personalInfo, _
 						programFiles, _
@@ -704,13 +704,13 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				Dim localHard2 As New ExplorerItem() With { _
 					Key .Header = "Local Disk (D:)", _
 					Key .Path = "LocalDisk(D:)", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/HardDrive16.png"), ImageSource) _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/HardDrive16.png"), ImageSource) _
 				}
 		
 				Dim computer As New ExplorerItem() With { _
 					Key .Header = "Computer", _
 					Key .Path = "Computer", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/Computer.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/Computer.png"), ImageSource), _
 					Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 						localHard, _
 						localHard2 _
@@ -729,7 +729,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				Me.Root = New ExplorerItem() With { _
 					Key .Header = "Desktop", _
 					Key .Path = "Desktop", _
-					Key .IconPath = DirectCast(isc.ConvertFromString("Images/Desktop.png"), ImageSource), _
+					Key .IconPath = DirectCast(isc.ConvertFromString("../../Images/Desktop.png"), ImageSource), _
 					Key .Children = New ObservableCollection(Of ExplorerItem)() From { _
 						computer, _
 						computer2 _
@@ -777,8 +777,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 			    </telerik:RadBreadcrumb>
 			</Grid>
 	{{endregion}}
-		{% endif %}
-		{% if site.site_name == 'WPF' %}
+		{% else %}
 
 		#### __[XAML] Example 6: Using HierarchicalDataTemplates__  
 		{{region xaml-radbreadcrumb-databinding_10}}

@@ -34,27 +34,27 @@ To subscribe to the SelectionChanged event, you can use the `EventManager` class
 
 #### __[C#]__
 {{region kb-gridview-filter-combo-selectionchanged-0}}
-	 public partial class MainWindow : Window
-    {
-        static MainWindow()
-        {
-            EventManager.RegisterClassHandler(typeof(RadComboBox), RadComboBox.SelectionChangedEvent, new SelectionChangedEventHandler(OnFilteringControlComboBoxSelectionChanged));         
-        }
+	public partial class MainWindow : Window
+	{
+        	static MainWindow()
+        	{
+            		EventManager.RegisterClassHandler(typeof(RadComboBox), RadComboBox.SelectionChangedEvent, new SelectionChangedEventHandler(OnFilteringControlComboBoxSelectionChanged));         
+        	}
 
 
-        private static void OnFilteringControlComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var comboBox = (RadComboBox)sender;
-            var filteringControl = comboBox.ParentOfType<FilteringControl>();
-            if (filteringControl != null)
-            {
+		private static void OnFilteringControlComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			var comboBox = (RadComboBox)sender;
+			var filteringControl = comboBox.ParentOfType<FilteringControl>();
+			if (filteringControl != null)
+			{
 				// execute the custom selection changed code here
-            }
-        }
+			}
+		}
 
-        public MainWindow()
-        {
-            InitializeComponent();            
-        }
+		public MainWindow()
+		{
+			InitializeComponent();            
+		}
     }
 {{endregion}}

@@ -33,7 +33,7 @@ To access the history items, use the `HistoryItems` collection property of `RadB
 By default the history stores up to 10 items. To change this, set the `HistorySize` property of `RadBreadcrumb`.
 
 #### __[XAML] Changing the history size__
-{{region radbreadcrumb-history-1}}
+{{region radbreadcrumb-history-2}}
 	<telerik:RadBreadcrumb HistorySize="20"/>
 {{endregion}}
 

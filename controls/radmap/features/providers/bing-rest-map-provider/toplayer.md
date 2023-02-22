@@ -12,9 +12,7 @@ position: 6
 
 The `RadMap` control allows you to specify the layer option that will be displayed over the received Bing Maps imagery service. To specify the layer or layers, set the `TopLayer` property of the `BingRestMapProvider` instance. This property is of the type `BingTopLayer`.
 
->tip The TopLayer property is a flag enumeration and it allows you to specify more than one layer.
-
-The options that are exposed by the `BingTopLayer` enumeration are as follows:
+The TopLayer property is a flag enumeration and it allows you to specify more than one layer. The options that are exposed by the `BingTopLayer` enumeration are as follows:
 
 * `Basemap`&mdash;This option displays the regular road map layer with labels. This option is the default value of the TopLayer property.
 * `Background`&mdash;The Background option shows only base geometry layer without labels. This option does not have effect when the `Mode` property of the provider is set to `Ariel` or `Road` modes.

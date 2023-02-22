@@ -70,7 +70,7 @@ __RadPropertyGrid with visible nested properties__
 
 ![RadPropertyGrid with visible nested properties](images/radpropertygrid-features-nested-properties-0.png)
 
-You can find a runnable example for this feature in our {% if site.site_name == 'Silverlight' %}[Demos application](https://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions){% endif %}{% if site.site_name == 'WPF' %}[Demos application](https://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions){% endif %}.
+You can find a runnable example for this feature in our {% if site.site_name == 'Silverlight' %}[Demos application](https://demos.telerik.com/silverlight/#PropertyGrid/NestedPropertyDefinitions){% else %}[Demos application](https://demos.telerik.com/wpf/#PropertyGrid/NestedPropertyDefinitions){% endif %}.
 
 ## Manually Defining PropertyDefinitions for Nested Properties
 

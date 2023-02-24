@@ -93,7 +93,7 @@ __ScreenTip's Description example__
 
 ### Setting Icon
 
-The screen tip allows you to display an image next to the Description contnet. To set the icon, use the `ScreenTip.Icon` attached property.
+The screen tip allows you to display an image next to the Description content. To set the icon, use the `ScreenTip.Icon` attached property.
 
 #### __[XAML] Setting screen tip icon__
 {{region radribbonview-screentips_6}}
@@ -131,7 +131,7 @@ __ScreenTip's Icon example__
 
 The screen tip allows you to define a custom initial and between show delays.
 
-The initial show delay is the time that should pass from the moment the mouse enters the associated element to the moment when the screentip popup is opened. After the first opening of the tooltip there is a period during which another screentip can be shown without waiting for the initial show delay time to pass. This period is defined with the between show delay. When the user moves the mouse within this period from one element with visible screentip to another, the screentip of the second element shows immediately.
+The initial show delay is the time that should pass from the moment the mouse enters the associated element to the moment when the screen tip popup is opened. After the first opening of the tooltip there is a period during which another screen tip can be shown without waiting for the initial show delay time to pass. This period is defined with the between show delay. When the user moves the mouse within this period from one element with visible screen tip to another, the screen tip of the second element shows immediately.
 
 The delays are controlled with the `ScreenTip.InitialShowDelay` and `ScreenTip.BetweenShowDelay` attached properties.
 

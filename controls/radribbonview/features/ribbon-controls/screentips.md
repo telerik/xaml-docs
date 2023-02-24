@@ -10,44 +10,29 @@ position: 9
 
 # Screen Tips
 
-Telerik __RadRibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RadRibbonView__ consists of various elements, one of which are the __Screen Tips__. This topic discusses concepts fundamental to the __Screen Tips__ at first and then goes into the usage of the __ScreenTip__ class and its features.			
+Telerik __RibbonView__ provides a simple and consistent way for building interfaces similar to the ribbon control used in Microsoft Office. The __RibbonView__ consists of various elements, one of which are the `ScreenTip`. This topic discusses concepts fundamental to the screen tips at first and then goes into the usage of the `ScreenTip` class and its features.			
 
->tip Before proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the __RadRibbonView__ control.			
+>tip Before proceeding with this tutorial, it is recommended to get familiar with the [Visual Structure]({%slug radribbonview-visual-structure%}) of the `RadRibbonView` control.			
 
-## Screen Tips - Fundamentals
+The screen tip is a type of tooltip. UI feature in which a small window appears when the mouse cursor hovers a ribbon element (tab, group, button, etc.). The popup that is displayed on hover provides details that explain the associated ribbon element. When the mouse is moved away from the ribbon element, the __Screen Tip__ will disappear from view.
 
-__Screen Tip__ is a UI feature in which a small window appears when the __mouse cursor__ is hovered over an icon or a ribbon element (command). The __popup__ window will provide details that explain the command's function. In some instances, though, the __Screen Tip__ will display only the item's name. When the mouse is moved away from the ribbon element, the __Screen Tip__ will disappear from view.
 ![{{ site.framework_name }} RadRibbonView Screen Tips Overview](images/RadRibbonView_ScreenTip_Overview.png)
 
-__RadRibbonView__ fully supports the Microsoft Office guidelines for screen tip implementation. You can set a screen tip to any element (command) in the __RadRibbonView__.				
+The class that represents the screen tip is `Telerik.Windows.Controls.ScreenTip` which derives from the native `ToolTip`. The class allows you to set the following attached properties on any __RibbonView__ control:
 
->The class that represents the screen tip is __Telerik.Windows.Controls.ScreenTip__.					
+* `Title`&mdash;Specifies the title of the screen tip.
 
-The __ScreenTip__ is a __ToolTip__ (it derives from __ToolTip__), which consists of three parts:				
+* `Description`&mdash;Specifies the description of the screen tip.
 
-* __Title__ - specifies the title of the screen tip.					
-
-* __Description__ - specifies the description of the screen tip.					
-
-* __Icon__ - specifies the image of the screen tip.
+* `Icon`&mdash;Specifies the image of the screen tip.
 
 ![{{ site.framework_name }} RadRibbonView Screen Tip Elements](images/RadRibbonView_ScreenTip_Elements.png)
 
-## Adding Screen Tip
-
-This section shows how to attach a screen tip to a __RadRibbon__ element.				
-
->tip You can attach __Screen Tip__ to __each one__ of the __RadRibbon__ elements.				
-
-The following subsections are included:
-
-When you want to set a screen tip, you need to use the __ScreenTip__ attached property. 
-
 ### Setting Title
 
-The first element you may want to specify is the title of the screen tip. In this case you need to use the __ScreenTip__'s __Title__ property. The next example demonstrates how to set a screen tip to a [Ribbon Group]({%slug radribbonview-ribbon-group%}).							
+To enable the screen tip, set the `ScreenTip.Title` attached property on the associated ribbon control.
 
-#### __XAML__
+#### __[XAML] Setting the screen tip title on a RadRibbonGroup element__
 {{region radribbonview-screentips_0}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -59,26 +44,25 @@ The first element you may want to specify is the title of the screen tip. In thi
 	</telerik:RadRibbonView>
 {{endregion}}
 
-The same operation can be done in the code-behind, too. You need to invoke the __ScreenTip__'s __SetTitle()__ static method.							
-
-#### __C#__
+#### __[C#] Setting screen tip title in code-behind__
 {{region radribbonview-screentips_1}}
-	ScreenTip.SetTitle(radRibbonGroupClipboard, "Clipboard");
+	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Setting screen tip title in code-behind__
 {{region radribbonview-screentips_2}}
-	ScreenTip.SetTitle(radRibbonGroupClipboard, "Clipboard")
+	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard")
 {{endregion}}
 
-You can see a screen tip with only __Title__ property set like it is on the next snapshot.
+__ScreenTip's Title example__  
+
 ![{{ site.framework_name }} RadRibbonView Screen Tip Title](images/RadRibbonView_ScreenTip_Title.png)
 
-Setting Description
+### Setting Description
 
-When you want to set the description of the screen tip, you need to use the __ScreenTip__'s __Description__ property. The next example demonstrates how to do that.							
+The description is displayed in the content area under the Title. To set the description, use `ScreenTip.Description` attached property.
 
-#### __XAML__
+#### __[XAML] Setting the screen tip description on a RadRibbonGroup element__
 {{region radribbonview-screentips_3}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -91,28 +75,27 @@ When you want to set the description of the screen tip, you need to use the __Sc
 	</telerik:RadRibbonView>
 {{endregion}}
 
-The same operation can be done in the code-behind, too. You need to invoke the __ScreenTip__'s __SetDescription()__ static method.							
-
-#### __C#__
+#### __[C#] Setting screen tip description in code-behind__
 {{region radribbonview-screentips_4}}
-	ScreenTip.SetTitle(radRibbonGroupClipboard, "Clipboard");
-	ScreenTip.SetDescription(radRibbonGroupClipboard, "Show the Clipboard Task options.");
+	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
+	ScreenTip.SetDescription(this.radRibbonGroupClipboard, "Show the Clipboard Task options.");
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Setting screen tip description in code-behind__
 {{region radribbonview-screentips_5}}
-	ScreenTip.SetTitle(radRibbonGroupClipboard, "Clipboard")
-	ScreenTip.SetDescription(radRibbonGroupClipboard, "Show the Clipboard Task options.")
+	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard")
+	ScreenTip.SetDescription(Me.radRibbonGroupClipboard, "Show the Clipboard Task options.")
 {{endregion}}
 
-You can see a screen tip with __Title__ and __Description__ properties set like on the next snapshot.
+__ScreenTip's Description example__  
+
 ![{{ site.framework_name }} RadRibbonView Screen Tip Title and Description](images/RadRibbonView_ScreenTip_Decription.png)
 
 ### Setting Icon
 
-The last but not least element of the screen tip is its image (icon). It is set through the __ScreenTip__'s __Icon__ property.							
+The screen tip allows you to display an image next to the Description contnet. To set the icon, use the `ScreenTip.Icon` attached property.
 
-#### __XAML__
+#### __[XAML] Setting screen tip icon__
 {{region radribbonview-screentips_6}}
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -126,26 +109,61 @@ The last but not least element of the screen tip is its image (icon). It is set 
 	</telerik:RadRibbonView>
 {{endregion}}
 
-The same operation can be done in the code-behind, too. You need to invoke the __ScreenTip__'s __SetIcon()__ static method. See the next code-snippets.							
-
-#### __C#__
+#### __[C#] Setting screen tip icon in code-behind__
 {{region radribbonview-screentips_7}}
-	ScreenTip.SetTitle(radRibbonGroupClipboard, "Clipboard");
-	ScreenTip.SetDescription(radRibbonGroupClipboard, "Show the Clipboard Task options.");
-	ScreenTip.SetIcon(radRibbonGroupClipboard, new BitmapImage(new Uri("Images/IconMSOffice/ClipboardScreenTipIcon.png",UriKind.Relative)));
+	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
+	ScreenTip.SetDescription(this.radRibbonGroupClipboard, "Show the Clipboard Task options.");
+	ScreenTip.SetIcon(this.radRibbonGroupClipboard, new BitmapImage(new Uri("Images/IconMSOffice/ClipboardScreenTipIcon.png",UriKind.Relative)));
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Setting screen tip icon in code-behind__
 {{region radribbonview-screentips_8}}
-	ScreenTip.SetTitle(radRibbonGroupClipboard, "Clipboard")
-	ScreenTip.SetDescription(radRibbonGroupClipboard, "Show the Clipboard Task options.")
-	ScreenTip.SetIcon(radRibbonGroupClipboard, New BitmapImage(New Uri("Images/IconMSOffice/ClipboardScreenTipIcon.png", UriKind.Relative)))
+	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard")
+	ScreenTip.SetDescription(Me.radRibbonGroupClipboard, "Show the Clipboard Task options.")
+	ScreenTip.SetIcon(Me.radRibbonGroupClipboard, New BitmapImage(New Uri("Images/IconMSOffice/ClipboardScreenTipIcon.png", UriKind.Relative)))
 {{endregion}}
 
-The result is shown on the next snapshot.
+__ScreenTip's Icon example__  
+
 ![{{ site.framework_name }} RadRibbonView Screen Tip Title Description and Icon](images/RadRibbonView_ScreenTip_Icon.png)
 
-The __RadRibbonView__ is a complex control and the __screen tips__ are only a small part of it. The __RadRibbonView__ consists of various elements such as:
+### Setting Initial and Between Show Delay
+
+The screen tip allows you to define a custom initial and between show delays.
+
+The initial show delay is the time that should pass from the moment the mouse enters the associated element to the moment when the screentip popup is opened. After the first opening of the tooltip there is a period during which another screentip can be shown without waiting for the initial show delay time to pass. This period is defined with the between show delay. When the user moves the mouse within this period from one element with visible screentip to another, the screentip of the second element shows immediately.
+
+The delays are controlled with the `ScreenTip.InitialShowDelay` and `ScreenTip.BetweenShowDelay` attached properties.
+
+#### __[XAML] Setting screen tip show delay properties__
+{{region radribbonview-screentips_9}}
+	<telerik:RadRibbonView>
+	    <telerik:RadRibbonTab Header="Home">
+	        <telerik:RadRibbonGroup x:Name="radRibbonGroupClipboard" 
+	                                DialogLauncherVisibility="Visible"
+	                                Header="Clipboard"
+	                                telerik:ScreenTip.Title="Clipboard"
+	                                telerik:ScreenTip.InitialShowDelay="3000"
+	                                telerik:ScreenTip.BetweenShowDelay="1000"/>
+	    </telerik:RadRibbonTab>
+	</telerik:RadRibbonView>
+{{endregion}}
+
+#### __[C#] Setting screen tip show delay properties in code-behind__
+{{region radribbonview-screentips_10}}
+	ScreenTip.SetTitle(this.radRibbonGroupClipboard, "Clipboard");
+	ScreenTip.SetInitialShowDelay(this.radRibbonGroupClipboard, 3000);
+	ScreenTip.SetBetweenShowDelay(this.radRibbonGroupClipboard, 1000);
+{{endregion}}
+
+#### __[VB.NET] Setting screen tip show delay properties in code-behind__
+{{region radribbonview-screentips_11}}
+	ScreenTip.SetTitle(Me.radRibbonGroupClipboard, "Clipboard");
+	ScreenTip.SetInitialShowDelay(Me.radRibbonGroupClipboard, 3000);
+	ScreenTip.SetBetweenShowDelay(Me.radRibbonGroupClipboard, 1000);
+{{endregion}}
+
+## See Also  
 * [Application Menu]({%slug radribbonview-applicationmenu%})
 * [Backstage Menu]({%slug radribbonview-ribbon-backstage%})
 * [Quick Access ToolBar]({%slug radribbonview-qat%})
@@ -154,8 +172,6 @@ The __RadRibbonView__ is a complex control and the __screen tips__ are only a sm
 * [Ribbon Group]({%slug radribbonview-ribbon-group%})
 * [RibbonButtons Overview]({%slug radribbonview-buttons-overview%})
 * [Ribbon ComboBox]({%slug radribbonview-ribbon-combobox%})
-
-Additional features that you may find interesting are:
 * [Selection]({%slug radribbonview-selection%})
 * [Resizing]({%slug radribbonview-resizing%})
 * [Minimization]({%slug radribbonview-minimization%})

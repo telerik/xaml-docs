@@ -5,7 +5,7 @@ description: Check our &quot;Keyboard and Mouse Navigation&quot; documentation a
 slug: multicolumncombobox-keyboard-and-mouse-navigation
 tags: keyboard, mouse, navigation
 published: True
-position: 4
+position: 2
 ---
 
 # Keyboard and Mouse Navigation

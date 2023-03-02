@@ -44,7 +44,7 @@ In this case you need to use the UI Virtualization behavior of the RadTreeView.
 
 In order to enable the UI Virtualization behavior, you should set the `IsVirtualizing` property of the RadTreeView to __True__. See the example below:
 
->When the IsVirtualizing proeprty is set to __True__, the `ChildDefaultLength` property of the `TreeViewPanel` can be set to the expected header size of the `RadTreeViewItems` if it will be different than the default `MinHeight` of 24 for the RadTreeViewItems.
+The default minimum height of the `RadTreeViewItems` is 24. This value is taken into consideration during the virtualization process. To change it, set the `ChildDefaultLength` property of the `TreeViewPanel`. To set the property, assign the `ItemsPanel` property of `RadTreeView`.
 
 #### __[XAML] Setting the ChildDefaultLength property of the TreeViewPanel__
 {{region radtreeview-features-ui-virtualization-1}}
@@ -57,7 +57,7 @@ In order to enable the UI Virtualization behavior, you should set the `IsVirtual
 	</telerik:RadTreeView>
 {{endregion}}
 
-> Do not place RadTreeView in controls/panels which will measure it with infinity as this will disable the UI Virtualization. For example, `ScrollViewer`, `StackPanel`, and `Grid` with `Row.Height=Auto` or `Column.Width=Auto` will measure it in that way. You can place it in RowDefinition with Height="*" instead. 
+> Hosting RadTreeView in panels which will measure it with infinity will disable the UI virtualization. Examples of such panels are `ScrollViewer`, `StackPanel`, and `Grid` with `Row.Height=Auto` or `Column.Width=Auto`. You can place it in a `Grid` panel with `RowDefinition` with Height="*" instead. 
 
 #### __[XAML] Set IsVirtualizing property__
 {{region radtreeview-features-ui-virtualization-2}}

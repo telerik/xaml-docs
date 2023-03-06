@@ -40,12 +40,12 @@ The following picture demonstrates the different modes.
 
 ## Enable Step Recalculation on Zoom
 
-You can enable the automatic recalculation of the axis labels when you zoom in/out the chart by setting the __IsStepRecalculationOnZoomEnabled__ property to __True__.
+The chart axis major step is automatically recalculated on zoom. To disable this, set the __IsStepRecalculationOnZoomEnabled__ property of the axis to __False__.
 
 #### __XAML__
 {{region radchartview-features-axis-smart-labels-0}}
 	<telerik:RadCartesianChart.VerticalAxis>
-		<telerik:LinearAxis IsStepRecalculationOnZoomEnabled="True"/>
+		<telerik:LinearAxis IsStepRecalculationOnZoomEnabled="False"/>
 	</telerik:RadCartesianChart.VerticalAxis>
 {{endregion}}
 

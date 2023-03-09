@@ -1,6 +1,6 @@
 ---
-title: Introduction
-page_title: Introduction
+title: Visualization Layer Introduction
+page_title: Visualization Layer Introduction
 description: Check our &quot;Introduction&quot; documentation article for the RadMap {{ site.framework_name }} control.
 slug: radmap-visualization-layer-introduction
 tags: introduction
@@ -10,7 +10,7 @@ position: 0
 
 # Introduction
 
-The __VisualizationLayer__ allows you to display additional data on top of the displayed map. This data can be in the form of simple framework elements, pin points or map shapes. The VisualizationLayer works like the [ItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol.aspx) class so you are able to display multiple items in a single VisualizationLayer. You can even data bind the VisualizationLayer to a collection of the geographically positioned data.      
+The `VisualizationLayer` allows you to display additional data on top of the displayed map. This data can be in the form of simple framework elements, pin points or map shapes. The VisualizationLayer works like the [ItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol.aspx) class so you are able to display multiple items in a single instance. You can even data bind the VisualizationLayer to a collection of the geographically positioned data.      
 
 The VisualizationLayer provides several numerous and enhancements over the previously available layer:      
 
@@ -18,11 +18,11 @@ The VisualizationLayer provides several numerous and enhancements over the previ
 
 * Implemented asynchronous map shape readers for ESRI shape files, KML files and WKT/WKB formats (SQL Geospatial).          
 
-* The visualization layer is not geographically limited i.e. it covers the whole map surface. It speeds up initial items loading and adding of the items dynamically.Especially with collections with large number of items.          
+* The visualization layer is not geographically limited i.e. it covers the whole map surface. It speeds up initial items loading and adding of the items dynamically. Especially with collections with large number of items.          
 
 * Integrated support for the items clustering.          
 
-* Integrated support for the items virtualization. You need not to use Dynamic Layer or Virtualization Layer to load and display items when they are needed. The Visualization Layer supports this functionality “out of the box”.          
+* Integrated support for the items virtualization. You do not need to use Dynamic Layer or Virtualization Layer to load and display items when they are needed. The Visualization Layer supports this functionality “out of the box”.          
 
 * Items virtualization can be used in conjunction with items clustering without any additional efforts.          
 
@@ -34,17 +34,17 @@ The VisualizationLayer provides several numerous and enhancements over the previ
 
 The VisualizationLayer allows you to display the following items:       
 
-* FrameworkElements - this means that you can display anything (charts, images, etc.) by wrapping it inside a framework element.            
+* FrameworkElements&mdash;this means that you can display anything (charts, images, etc.) by wrapping it inside a framework element.            
 
-* Map shapes - this is a set of map shape data objects, created for usage with the RadMap. Among them you will find equivalents of the standard shape controls like Line, Rectangle, Ellipse, Polyline, Polygon and Path. Pay attention, the old map shapes (i.e. subclasses of the MapShape class) aren’t supported by VisualizationLayer. The new classes inherited from the MapShapeData object must be used.            
+* Map shapes&mdash;this is a set of map shape data objects, created for usage with the RadMap control. Among them you will find equivalents of the standard shape controls like Line, Rectangle, Ellipse, Polyline, Polygon and Path. Pay attention, the old map shapes (i.e. subclasses of the MapShape class) aren’t supported by VisualizationLayer. The new classes inherited from the MapShapeData object must be used.            
 
-* Pin points - the MapPinPoint object is usually used to display points from a KML file, but can be also used on its own.            
+* Pin points&mdash;the MapPinPoint object is usually used to display points from a KML file, but can be also used on its own.            
 
 ## Adding and positioning a framework element
 
-In order to add any framework element to the Visualization Layer you have to put it inside the VisualizationLayer's tag and set its geographical location. This is done by passing a Location object to the __MapLayer.Location__ attached property that contains the longitude and the latitude of the position to the element.  Here is an example:        
+In order to add any framework element to the Visualization Layer you have to put it inside the VisualizationLayer's tag and set its geographical location. This is done by passing a Location object to the `MapLayer.Location` attached property that contains the longitude and the latitude of the position to the element.  Here is an example:        
 
-#### __XAML__
+#### __[XAML] Adding and positioning a framework element to a VisualizationLayer instance__
 {{region radmap_visualization_layer_introduction_0}}
 	<telerik:RadMap x:Name="radMap">
 		<telerik:RadMap.Provider>
@@ -62,26 +62,26 @@ In order to add any framework element to the Visualization Layer you have to put
 	</telerik:RadMap>
 {{endregion}}
 
-You can take advantage of the __UseLayoutRounding__ property when it is necessary to have fully readable framework elements (text for example). To take advantage of the layout rounding you should set the UseLayoutRounding property to true as it is false by default.        
+You can take advantage of the `UseLayoutRounding` property when it is necessary to have fully readable framework elements (text for example). To take advantage of the layout rounding you should set the UseLayoutRounding property to true as it is false by default.
 
 Additionally you can use these two attached properties provided by the MapLayer class:        
 
-* __BaseZoomLevel__ - represents the zoom level, for which the element should have its scale transformation equal to 1.            
+* `BaseZoomLevel`&mdash;represents the zoom level, for which the element should have its scale transformation equal to 1. When this property is not utilized, the element will not be scalable when the RadMap is zoomed in or out.
 
-* __ZoomRange__ - represents the range of zoom levels for which the element should be visible.            
+* `ZoomRange`&mdash;represents the range of zoom levels for which the element should be visible.            
 
-* __MinScale__ – represents minimum scale factor which will be applied to the framework element when it has BaseZoomLevel property set and we zoom out map control.            
+* `MinScale`&mdash;represents minimum scale factor, which will be applied to the framework element when it has BaseZoomLevel property set and we zoom out map control. If this property is not set, the value that will be used in calculations will be __0.125__.
 
-* __MaxScale__ – represents maximum scale factor which will be applied to the framework element when it has BaseZoomLevel property set and we zoom in map control.            
+* `MaxScale`&mdash;represents maximum scale factor, which will be applied to the framework element when it has BaseZoomLevel property set and we zoom in map control. When this property is not used, the value that will be used when calculating the maximum scale factor will be __2__.
 
 >If you are using a more complex composition of UI Elements, these properties should be set to the one that represents the root. For example, if you have a Grid, which layouts an Ellipse and a TextBlock, you have to set the attached properties to the Grid.          
 
 <!-- -->
->Note that the location of the element on the map coincides with its top left corner, not with its center. To change the position of the element towards the location you can use its __HorizontalAlignment__ or __VerticalAlignment__ properties, or use the HotSpot feature. To learn how read [here]({%slug radmap-features-hot-spots%}).          
+>Note that the location of the element on the map coincides with its top left corner, not with its center. To change the position of the element towards the location you can use its `HorizontalAlignment` or `VerticalAlignment` properties, or use the HotSpot feature. To learn how read [here]({%slug radmap-features-hot-spots%}).          
 
 Here is an example for an Ellipse, positioned above Sofia, Bulgaria and visible only when the zoom level is grater or equal to 5 and less or equal to 12. The Ellipse will also have its normal size (100%) when the zoom level is 8. The maximum scale factor for the element is set to 8:        
 
-#### __XAML__
+#### __[XAML] Limiting the element's visibility based on the zoom level__
 {{region radmap_visualization_layer_introduction_1}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -112,7 +112,7 @@ Here is a snapshot of the result:
 
 If you want to add more than one element, you just have to place it after the previous element. Here is an example:        
 
-#### __XAML__
+#### __[XAML] Adding additional elements__
 {{region radmap_visualization_layer_introduction_2}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"

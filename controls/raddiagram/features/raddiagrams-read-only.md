@@ -18,7 +18,7 @@ Here is the list of properties that control the read-only state of the diagram i
 
 * __IsEditable__ - Indicates whether editing is enabled.			
 
-* __IsPanningEnabled__ – Indicates whether panning is enabled.			
+* __IsPanEnabled__ – Indicates whether panning is enabled.			
 
 * __IsZoomEnabled__ - Indicates whether zooming is enabled.			
 

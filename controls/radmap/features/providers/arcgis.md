@@ -12,8 +12,7 @@ position: 1
 
 The [ArcGIS online services](http://www.esri.com/software/arcgis/arcgisonline/maps/maps-and-map-layers) can be used via the __ArcGisMapProvider__ class.
 
->tip To use the [ArcGIS vector tile services](https://developers.arcgis.com/rest/services-reference/enterprise/vector-tile-service.htm) refer to the [Migrating to Vector Tile Map Provider
-](#migrating-to-vector-tile-map-provider) section of this article.
+>tip To use the [ArcGIS vector tile services](https://developers.arcgis.com/rest/services-reference/enterprise/vector-tile-service.htm) refer to the [Migrating to Vector Tile Map Provider](#migrating-to-vector-tile-map-provider) section of this article.
 
 Currently the ArcGIS map provider support six modes which specify the type of appearance of the map can and be set using the __Mode__ property:        
 

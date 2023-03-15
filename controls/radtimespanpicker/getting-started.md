@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} TimeSpanPicker
 
 This topic will walk you through the creating of  __RadTimeSpanPicker__.    
 

@@ -9,7 +9,7 @@ position: 1
 CTAControlName: RadCollectionNavigator
 ---
 
-# Overview
+# {{ site.framework_name }} CollectionNavigator Overview
 
 Thank you for choosing __RadCollectionNavigator__!				
 

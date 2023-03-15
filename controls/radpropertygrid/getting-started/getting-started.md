@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started with RadPropertyGrid
+# Getting Started with {{ site.framework_name }} RadPropertyGrid
 
 This tutorial will walk you through the creation of a sample application that contains **RadPropertyGrid**.
 

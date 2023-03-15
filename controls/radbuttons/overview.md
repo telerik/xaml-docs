@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadButtons
 ---
 
-# Overview
+# {{ site.framework_name }} Buttons Overview
 
 Thank you for choosing Telerik __RadButtons__!
 

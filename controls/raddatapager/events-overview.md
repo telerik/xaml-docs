@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-# Events
+# {{ site.framework_name }} DataPager Events
 
 This topic covers the specific events exposed by the __RadDataPager__ control.
 

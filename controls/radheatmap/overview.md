@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadHeatMap
 ---
 
-# Overview
+# {{ site.framework_name }} HeatMap Overview
 
 The __RadHeatMap__ control can be used to visualize numeric data in a matrix like representation along two axes. Its purpose is to present the data in colored rectangles where the color of each represents the rectangle's value and makes it quite easy to perceive and compare all values.
 

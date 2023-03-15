@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadColorEditor
 ---
 
-# Overview
+# {{ site.framework_name }} ColorEditor Overview
 
 Thank you for choosing Telerik's __RadColorEditor__ control! 
 

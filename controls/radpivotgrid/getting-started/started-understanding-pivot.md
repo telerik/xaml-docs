@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Understanding RadPivotGrid
+# Understanding {{ site.framework_name }} RadPivotGrid
 
 In this article we will explain the concept of __RadPivotGrid__ and __RadPivotFieldList__ - we will explain the basic terms, when you should use RadPivotGrid and when not, we will explain the idea of aggregations and calculations and how important they are, we make a comparison between RadPivotGrid and RadGridView to help you in your decision which of the two controls to choose.      
 

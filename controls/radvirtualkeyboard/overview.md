@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadVirtualKeyboard
 ---
 
-# Overview
+# {{ site.framework_name }} VirtualKeyboard Overview
 
 VirtualKeyboard is a visual keyboard component rendered on the screen that mimics keyboard interactions without a phyisical device.
 

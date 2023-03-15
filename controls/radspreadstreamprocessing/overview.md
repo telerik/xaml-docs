@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadSpreadStreamProcessing
 ---
 
-# Overview
+# {{ site.framework_name }} SpreadStreamProcessing Overview
 
 This article briefly explains the specifics of **RadSpreadStreamProcessing** - what is spread streaming, how it works compared to the RadSpreadProcessing library and when to use it.
 

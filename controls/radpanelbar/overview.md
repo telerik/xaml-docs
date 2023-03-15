@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadPanelBar
 ---
 
-# Overview
+# {{ site.framework_name }} PanelBar Overview
 
 Thank you for choosing Telerik __RadPanelBar__!  
 

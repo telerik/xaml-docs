@@ -8,7 +8,7 @@ position: 0
 CTAControlName: RadFilePathPicker
 ---
 
-# Overview
+# {{ site.framework_name }} FilePathPicker Overview
 
 RadFilePathPicker is a control which allows users to select a file or a directory from the file system or directly type the full path to it in the editor.
 

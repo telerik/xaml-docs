@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Start with RadTreeMap
+# Getting Start with {{ site.framework_name }} RadTreeMap
 
 This tutorial will walk you through the creation of a sample application that contains __RadTreeMap__ control.
 

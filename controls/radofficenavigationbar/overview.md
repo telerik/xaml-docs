@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadOfficeNavigationBar
 ---
 
-# Overview
+# {{ site.framework_name }} OfficeNavigationBar Overview
 
 The OfficeNavigationBar component is inspired by the MS Outlook Navigation Bar. It allows you to easily navigate between different views and offers the ability to quicky access a minimalistic subset of a view within a popup window.
 

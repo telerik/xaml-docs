@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Creating Linear Gauge
+# Creating {{ site.framework_name }} Linear Gauge
 
 One of the gauges you can create with the __RadGauge__ control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally, it can display various indicators that point to a certain value on the scale. This topic will walk you through the creation of a sample application that contains a linear RadGauge.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} DataBar
 
 This tutorial will walk you through the required steps for using __RadDataBar__. 
 

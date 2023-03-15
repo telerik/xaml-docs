@@ -9,7 +9,7 @@ position: 0
 CTAControlName: ColorPicker
 ---
 
-# Overview
+# {{ site.framework_name }} ColorPicker Overview
 
 {% if site.site_name == 'Silverlight' %}![Color PickerSL](images/ColorPickerSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color PickerWPF](images/ColorPickerWPF.png){% endif %}
 

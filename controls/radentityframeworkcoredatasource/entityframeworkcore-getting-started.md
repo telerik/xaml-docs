@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} EntityFrameworkCoreDataSource
 
 This article shows how to create a sample .NET Core 3.1 application using __RadEntityFrameworkCoreDataSource__ and __RadGridView__.
 

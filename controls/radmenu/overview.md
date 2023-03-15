@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadMenu
 ---
 
-# Overview
+# {{ site.framework_name }} Menu Overview
 
 Thank you for choosing Telerik __RadMenu__!        
 

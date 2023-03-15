@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadProgressBar
 ---
 
-# Overview
+# {{ site.framework_name }} ProgressBar Overview
 
 Telerik __RadProgressBar__ is an advanced component allowing you to completely convey the progress of various tasks. The control ships with several pre-defined themes and animations.
 

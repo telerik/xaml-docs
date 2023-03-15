@@ -9,7 +9,7 @@ position: 0
 CTAControlName: DragDropManager
 ---
 
-# Overview
+# {{ site.framework_name }} DragDropManager Overview
 
 __DragDropManager__ offers intuitive API similar to the WPF native drag and drop behavior. The APi allows you to enable drag-drop in multiple scenarios.
 

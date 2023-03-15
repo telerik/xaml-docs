@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadChartView
 ---
 
-# Overview
+# {{ site.framework_name }} Chart Overview
 
 >important We encourage you to review our new control [RadChartView]({%slug radchartview-overview%}) for super-fast visualization of your data. The new RadChartView is a set of controls - RadCartesianChart,RadFunnelChart, RadPieChart and RadPolarChart. The new components have better implementation and improved performance. Furthermore, the new charts are also quite flexible and easier to set up. You can read about the differences between the charts in the [RadChart vs. RadChartView]({%slug radchartview-radchartview-vs-radchart%}) help article.
 

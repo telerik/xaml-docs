@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadSlider
 ---
 
-# Overview
+# {{ site.framework_name }} Slider Overview
 
 Thank you for choosing Telerik __RadSlider__ !
 

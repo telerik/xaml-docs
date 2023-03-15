@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Rating
 
 This topic helps you to quickly get started using the __RadRating__ control. It focuses on the following: 
 

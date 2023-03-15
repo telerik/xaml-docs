@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} BusyIndicator
 
 This tutorial will walk you through the creation of a sample application that contains __RadBusyIndicator__. 
 

@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Diagram
 
 Telerik __RadDiagrams__ are a powerful diagramming framework that can bring to life your rich data-visualization scenarios. This tutorial will walk you through the main concepts and tools of the diagramming framework and help you to create the flow diagram of an "if-else" operator.
 

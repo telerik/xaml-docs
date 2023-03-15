@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Calculator
 
 This tutorial will walk your through the creation of a sample application that contains `RadCalculator`.		  
 

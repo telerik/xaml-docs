@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Carousel
 
 This tutorial will walk you through the creation of a simple application containing **RadCarousel** and will show you how to:
 

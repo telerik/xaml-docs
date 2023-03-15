@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadPivotGrid
 ---
 
-# Overview
+# {{ site.framework_name }} PivotGrid Overview
 
 Thank you for choosing __RadPivotGrid__!	
 

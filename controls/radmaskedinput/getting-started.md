@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} MaskedInput
 
 The __RadMaskedInput__ controls use a mask to distinguish between proper and improper user input. The __RadMaskedInput__ controls are enhanced TextBox controls that support a declarative syntax for accepting or rejecting user input. Using the __Mask__ property, you can specify the following input without writing any custom validation logic in your application:			
 

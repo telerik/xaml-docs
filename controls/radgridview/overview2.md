@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadGridView
 ---
 
-# Overview
+# {{ site.framework_name }} GridView Overview
 
 Thank you for choosing __RadGridView__ - Telerik's {{site.framework_name}} DataGrid!
 

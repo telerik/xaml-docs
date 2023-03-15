@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadChartView3D
 ---
 
-# Overview
+# {{ site.framework_name }} ChartView3D Overview
 
 __RadChartView3D__ provides you with a charting component that enables three-dimensional data visualization in the 3D space. Thus allowing the end user to analyze complex data. RadChartView3D is presented by the __RadCartesianChart3D__ control.
 

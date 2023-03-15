@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadWordsProcessing
 ---
 
-# Overview
+# {{ site.framework_name }} WordsProcessing Overview
 
 >**RadWordsProcessing** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview).
       

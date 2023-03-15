@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadDocking
 ---
 
-# Overview
+# {{ site.framework_name }} Docking Overview
 
 Thank you for choosing Telerik ® RadDocking!
 

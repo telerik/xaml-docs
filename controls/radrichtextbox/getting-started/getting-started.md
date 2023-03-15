@@ -8,9 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started
-
-
+# Getting Started with {{ site.framework_name }} RichTextBox
 
 __RadRichTextBox__ is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
       

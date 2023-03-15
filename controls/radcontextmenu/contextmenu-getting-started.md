@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} ContextMenu
 
 This tutorial will walk you through the creation of a __RadContextMenu__ and will show you how to:
 

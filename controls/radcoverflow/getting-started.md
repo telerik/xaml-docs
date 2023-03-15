@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} CoverFlow
 
 >In order to use __RadCoverFlow__ control in your projects you have to add references to the following assemblies:
 >	1. __Telerik.Windows.Controls__

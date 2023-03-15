@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadAutoCompleteBox
 ---
 
-# Overview
+# {{ site.framework_name }} AutoCompleteBox Overview
 
 Thank you for choosing Progress® Telerik® __RadAutoCompleteBox__!
 

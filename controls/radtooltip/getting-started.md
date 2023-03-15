@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} ToolTip
 
 In order to use __RadToolTip__ you should take advantage of the __RadToolTipService__. You can set the attached property __RadToolTipService.TooltipContent__ on some element in XAML in order to show tooltip over it.
 

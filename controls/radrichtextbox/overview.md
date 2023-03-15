@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadRichTextBox
 ---
 
-# Overview
+# {{ site.framework_name }} RichTextBox Overview
 
 __RadRichTextBox__ is a control that can display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, images, etc.
 

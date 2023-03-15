@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadGauge
 ---
 
-# Overview
+# {{ site.framework_name }} Gauge Overview
 
 Thank you for choosing __RadGauge__!
 

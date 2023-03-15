@@ -8,7 +8,7 @@ position: 0
 CTAControlName: RadNavigationView
 ---
 
-# Overview
+# {{ site.framework_name }} NavigationView Overview
 
 __RadNavigationView__ is an adaptive component, used to build a consistent navigational experience in {{ site.framework_name }} applications. The control can automatically adjust its display mode based on the amount of screen space available to it, thus improving the overall user experience (UX) of your applications.				
 

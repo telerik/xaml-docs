@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} HeatMap
 
 This tutorial will walk you through the creation of a sample application that contains __RadHeatMap__ with a categorical definition.
 

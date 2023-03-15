@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Map
 
 The __RadMap__ control allows you to display rich geographical information from various sources, including Microsoft Bing Maps, as well as to overlay the map with your own custom data. This topic will help you to quickly get started using the control. It will focus on the following:      
 

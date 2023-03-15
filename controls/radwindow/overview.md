@@ -10,7 +10,7 @@ CTAControlName: RadWindow
 previous_url: http://www.telerik.com/help/wpf/radwindow-overview.html
 ---
 
-# Overview
+# {{ site.framework_name }} Window Overview
 
 Thank you for choosing Telerik __RadWindow__!
 

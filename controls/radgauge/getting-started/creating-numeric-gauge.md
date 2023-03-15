@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Creating Numeric Gauge
+# Creating {{ site.framework_name }} Numeric Gauge
 
 One of the gauges you can create with the __RadGauge__ control, is a numeric gauge. It is represented by a container with a numerical scale in it. The numerical scale uses a numerical indicator to display the desired value. This topic will walk you through the creation of a sample application that contains a numeric RadGauge.
 

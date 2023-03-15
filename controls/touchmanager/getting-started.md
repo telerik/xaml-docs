@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting started
+# Getting started with {{ site.framework_name }} TouchManager
 
 This article demonstrates a simple image gallery implemented with __TouchManager__ and demonstrates the basic usage of the manager.
 

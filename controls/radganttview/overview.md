@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadGanttView
 ---
 
-# Overview
+# {{ site.framework_name }} GanttView Overview
 
 Telerik __RadGanttView__ is a control used for managing and visualization project planning data in a MVVM friendly way.
 

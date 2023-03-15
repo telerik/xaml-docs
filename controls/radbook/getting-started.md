@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Book
 
 This article will walk you through defining and using a RadBook control.
 

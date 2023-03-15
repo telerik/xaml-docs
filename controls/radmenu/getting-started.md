@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Menu
 
 This tutorial will walk you through the creation of a `RadMenu` and will show you how to:
 

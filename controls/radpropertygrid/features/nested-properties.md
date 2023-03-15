@@ -14,7 +14,7 @@ position: 0
 
 The following example will show a simple scenario with visible nested properties:
 
-#### __[C#] Preparing sample data__
+#### __[C#] Preparing sample data__  
 {{region radpropertygrid-nested-properties-0}}
 	DataContext = new Order()
 	{
@@ -39,7 +39,7 @@ The following example will show a simple scenario with visible nested properties
 	};
 {{endregion}}
 
-#### __[VB.NET] Preparing sample data__
+#### __[VB.NET] Preparing sample data__  
 {{region radpropertygrid-nested-properties-1}}
 	DataContext = New Order() With {
 	    .OrderDate = New DateTime(1996, 7, 5),
@@ -61,7 +61,7 @@ The following example will show a simple scenario with visible nested properties
 	}
 {{endregion}}
 
-#### __[XAML] Showing the PropertyDefinitions for the nested properties__
+#### __[XAML] Showing the PropertyDefinitions for the nested properties__  
 {{region radpropertygrid-nested-properties-2}}
 	<telerik:RadPropertyGrid Item="{Binding}" NestedPropertiesVisibility="Visible" />
 {{endregion}}
@@ -78,7 +78,7 @@ You can manually define property definitions for nested properties. To do so, ad
 
 The next example shows how to define a property definition for one of the nested properties:
 
-#### __[XAML] Defining a PropertyDefinition for a nested property__
+#### __[XAML] Defining a PropertyDefinition for a nested property__  
 {{region radpropertygrid-nested-properties-3}}
 	<telerik:RadPropertyGrid Item="{Binding}" NestedPropertiesVisibility="Visible" AutoGeneratePropertyDefinitions="False">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
@@ -95,10 +95,10 @@ The next example shows how to define a property definition for one of the nested
 
 RadPropertyGrid exposes the option to search in nested properties. To enable this functionality, set the `SearchInNestedProperties` property to `True`.
 
-#### __[XAML] Setting the SearchInNestedProperties property__
+#### __[XAML] Setting the SearchInNestedProperties property__  
 {{region radpropertygrid-nested-properties-4}}
 	<telerik:RadPropertyGrid NestedPropertiesVisibility="Visible" SearchInNestedProperties="True"/>
-{{region}}
+{{endregion}}
 
 ## Specifying the PropertyDefinition Auto-Generating Mode
 
@@ -107,7 +107,7 @@ RadPropertyGrid allows you to specify if property definitions for the nested pro
 * `FirstLevel`&mdash;When this option is set, the property definitions will be auto-generated only for the top-level properties. This is the default value of the AutoGeneratePropertyDefinitionsMode property.
 * `AllLevels`&mdash;RadPropertyGrid will recursively generate property definitions for all nested properties when this mode is selected.
 
-#### __[XAML] Setting the AutoGeneratePropertyDefinitionsMode property__
+#### __[XAML] Setting the AutoGeneratePropertyDefinitionsMode property__  
 {{region radpropertygrid-nested-properties-5}}
 	<telerik:RadPropertyGrid NestedPropertiesVisibility="Visible" AutoGeneratePropertyDefinitionsMode="AllLevels"/>
 {{endregion}}

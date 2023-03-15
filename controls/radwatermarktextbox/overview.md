@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadWatermarkTextBox
 ---
 
-# Overview
+# {{ site.framework_name }} WatermarkTextBox Overview
 
 __RadWatermarkTextBox__ control represents a TextBox that allows you to define a placeholder to be displayed when the content is empty and the control is not focused. This is useful when you want to display additional information when having an empty text input control.
 

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} EntityFrameworkDataSource
 
 This tutorial will walk you through the creation of a sample application that contains __RadGridView__ bound to __RadEntityFrameworkDataSource__.
 

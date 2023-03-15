@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Window
 
 This tutorial will walk you through the creation of a __RadWindow__ and will show you how to:
 

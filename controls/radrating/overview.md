@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadRating
 ---
 
-# Overview
+# {{ site.framework_name }} Rating Overview
 
 Thank you for choosing Telerik __RadRating__!	
 

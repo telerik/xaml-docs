@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadRibbonView
 ---
 
-# Overview
+# {{ site.framework_name }} RibbonView Overview
 
 Thank you for choosing Telerik __RadRibbonView__!
 

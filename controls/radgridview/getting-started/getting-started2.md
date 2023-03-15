@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} GridView
 
 This tutorial will walk you through the creation of a sample application that contains __RadGridView__. 
 

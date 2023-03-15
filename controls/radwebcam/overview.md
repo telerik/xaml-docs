@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadWebCam
 ---
 
-# Overview
+# {{ site.framework_name }} WebCam Overview
 
 The `RadWebCam` control allows you to display the stream provided by a web camera. You can easily start recording or take snapshot of the stream and save it to a file.
 

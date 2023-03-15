@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} FileDialogs
 
 This article will provide you with the knowledge required to use the file dialogs in a basic scenario.
 

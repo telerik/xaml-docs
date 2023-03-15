@@ -7,7 +7,7 @@ tags: getting,started,radnotifyicon
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} NotifyIcon
 
 This tutorial will walk you through the creation of a sample application that contains a __RadNotifyIcon__ control.
 			

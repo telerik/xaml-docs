@@ -9,7 +9,7 @@ position: 3
 site_name: Silverlight
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} Upload
 
 To use the __RadUpload__ control you have to configure both the client and the server side part of your application. 
 

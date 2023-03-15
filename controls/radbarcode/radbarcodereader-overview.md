@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# RadBarcodeReader 
+# {{ site.framework_name }} RadBarcodeReader 
 
 RadBarcodeReader is the newest addition to the Barcode suite. The aim of the control is to decode image representations of one of the supported barcode symbologies.
 

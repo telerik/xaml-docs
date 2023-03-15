@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with {{ site.framework_name }} DragDropManager
 
 This article will demonstrate a basic implementation of the DragDropManager by dragging between two ListBoxes. 
 

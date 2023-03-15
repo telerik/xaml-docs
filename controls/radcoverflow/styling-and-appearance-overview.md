@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Styling and Appearance
+# {{ site.framework_name }} CoverFlow Styling and Appearance
 
 This section is intended to give you broad understanding of the possible ways by which you can change the visual appearance of __RadCoverFlow__. There is also comprehensive information about the Control Template and it's required parts. You will need this information if you want to customize the appearance of __RadCoverFlow__. 
 

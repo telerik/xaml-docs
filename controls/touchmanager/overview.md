@@ -9,7 +9,7 @@ position: 0
 CTAControlName: TouchManager
 ---
 
-# TouchManager Overview
+# {{ site.framework_name }} TouchManager Overview
 
 __TouchManager__ is a framework that provides an intuitive API for handling the interaction on touch devices. The framework allows you to subscribe to touch events and control the touch hit test visibility of the elements in the visual tree. 
 

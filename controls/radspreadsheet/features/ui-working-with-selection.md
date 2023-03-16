@@ -198,7 +198,7 @@ The result from the image can be achieved with the sample code from **Example 5*
 
     Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
 
-    FloatingImage image = this.radSpreadsheet.ActiveWorksheet.Shapes.First() as FloatingImage;
+    FloatingImage image = this.radSpreadsheet.ActiveWorksheet.Images.First() as FloatingImage;
     selection.Select(image);
 {{endregion}}
 
@@ -207,7 +207,7 @@ The result from the image can be achieved with the sample code from **Example 5*
 {{region radspreadsheet-ui-working-with-selection_7}}
 
     Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    Dim image As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Shapes.First(), FloatingImage)
+    Dim image As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Images.First(), FloatingImage)
     selection.[Select](image)
 {{endregion}}
 If you would like to select the second image while deselecting the first one, this can be achieved with the following code:
@@ -219,7 +219,7 @@ If you would like to select the second image while deselecting the first one, th
 
     Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
     
-    FloatingImage image2 = this.radSpreadsheet.ActiveWorksheet.Shapes.ElementAt(1) as FloatingImage;
+    FloatingImage image2 = this.radSpreadsheet.ActiveWorksheet.Images.ElementAt(1) as FloatingImage;
     selection.Select(image2, true);
 {{endregion}}
 
@@ -228,7 +228,7 @@ If you would like to select the second image while deselecting the first one, th
 {{region radspreadsheet-ui-working-with-selection_8}}
     
     Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
-    Dim image2 As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Shapes.ElementAt(1), FloatingImage)
+    Dim image2 As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Images.ElementAt(1), FloatingImage)
     selection.[Select](image2, True)
 {{endregion}}
 

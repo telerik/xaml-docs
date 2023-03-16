@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Setting a Theme
+# Setting a Theme with Telerik UI for {{ site.framework_name }}
 
 >tip Before you proceed reading this topic we recommend you read the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) article.
 

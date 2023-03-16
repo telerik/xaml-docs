@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# First Steps
+# First Steps with Telerik UI for WPF
 
 This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
 

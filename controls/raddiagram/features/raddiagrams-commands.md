@@ -10,7 +10,7 @@ position: 9
 
 # Commands
 
-__RadDiagram__ provides a powerful set of __RoutedUICommands__ that help you work with your __RadDiagram__ and its Items easily and build better MVVM applications.	  
+`RadDiagram` provides a vast set of `RoutedUICommands` that help you work easily with the control and its items to build better MVVM applications.	  
 
 * [RadDiagram Commands](#raddiagram-commands)
 * [ExtensionsCommands](#extensionscommands)
@@ -19,78 +19,51 @@ __RadDiagram__ provides a powerful set of __RoutedUICommands__ that help you wor
 
 ## RadDiagram Commands
 
-The static __DiagramCommands__ class is located in __Telerik.Windows.Controls.Diagrams__ assembly and defines 22 RoutedUICommands:		
+The static `DiagramCommands` class is located in __Telerik.Windows.Controls.Diagrams__ assembly and defines the following RoutedUICommands:		
 
-* __Align__ - Aligns the selected shapes.[(Read more)]({%slug raddiagrams-features-snap%})
-
-* __Snap__ - Snaps the selected shapes.[(Read more)]({%slug raddiagrams-features-snap%})
-
-* __AutoFit__ - Centers and zooms the diagram to display all items.			  
-
-* __Layout__ - Organizes the diagram automatically.[(Read more)]({%slug raddiagram-features-diagram-layout%})
-
-* __Copy__ - Copies selected diagram items.[(Read More)]({%slug raddiagrams-features-clipboard%})
-
-* __Paste__ - Pastes selected diagram items.[(Read More)]({%slug raddiagrams-features-clipboard%})
-
-* __Delete__ - Deletes selected diagram items.[(Read More)]({%slug raddiagrams-features-delete%})
-
-* __Cut__ - Cut selected diagram items.[(Read More)]({%slug raddiagrams-features-clipboard%})
-
-* __Duplicate__ - Duplicates selected item/s.			  
-
-* __Undo__ - Undoes the last action.[(Read More)]({%slug raddiagrams-features-undo-redo%})
-
-* __Redo__ - Redoes the last action.[(Read More)]({%slug raddiagrams-features-undo-redo%})
-
-* __BringToFront__ - Brings to front selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
-
-* __BringForward__ - Brings forward selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
-
-* __SendToBack__ - Sends to back selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
-
-* __SendBackward__ - Sends backward selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
-
-* __Save__ - Saves the current diagram.[(Read More)]({%slug raddiagrams-features-serialization%})
-
-* __Clear__ - Clears the diagram.[(Read More)]({%slug raddiagrams-features-delete%})
-
-* __Open__ - Opens a saved diagram.[(Read More)]({%slug raddiagrams-features-serialization%})
-
-* __BeginEdit__ - Begins editing diagram item.[(Read More)]({%slug raddiagrams-features-edit%})
-
-* __CommitEdit__ - Commit the edited changes.[(Read More)]({%slug raddiagrams-features-edit%})
-
-* __CancelEdit__ - Cancel the edited changes.[(Read More)]({%slug raddiagrams-features-edit%})
-
-* __SelectAll__ - Selects all shapes in the diagram.[(Read More)]({%slug raddiagrams-features-selection%})
-
-* __Nudge__ - Moves selected item/s in a specific direction. You can pass more specifics about the nudge operation through the __CommandParameter__. 
+* `Align`&mdash;Aligns the selected shapes.[(Read more)]({%slug raddiagrams-features-snap%})
+* `Snap`&mdash;Snaps the selected shapes.[(Read more)]({%slug raddiagrams-features-snap%})
+* `AutoFit`&mdash;Centers and zooms the diagram to display all items.			  
+* `Layout`&mdash;Organizes the diagram automatically.[(Read more)]({%slug raddiagram-features-diagram-layout%})
+* `Copy`&mdash;Copies selected diagram items.[(Read More)]({%slug raddiagrams-features-clipboard%})
+* `Paste`&mdash;Pastes selected diagram items.[(Read More)]({%slug raddiagrams-features-clipboard%})
+* `Delete`&mdash;Deletes selected diagram items.[(Read More)]({%slug raddiagrams-features-delete%})
+* `Cut`&mdash;Cut selected diagram items.[(Read More)]({%slug raddiagrams-features-clipboard%})
+* `Duplicate`&mdash;Duplicates selected item/s.			  
+* `Undo`&mdash;Undoes the last action.[(Read More)]({%slug raddiagrams-features-undo-redo%})
+* `Redo`&mdash;Redoes the last action.[(Read More)]({%slug raddiagrams-features-undo-redo%})
+* `BringToFront`&mdash;Brings to front selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
+* `BringForward`&mdash;Brings forward selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
+* `SendToBack`&mdash;Sends to back selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
+* `SendBackward`&mdash;Sends backward selected diagram items.[(Read More)]({%slug raddiagrams-features-zorder%})
+* `Save`&mdash;Saves the current diagram.[(Read More)]({%slug raddiagrams-features-serialization%})
+* `Clear`&mdash;Clears the diagram.[(Read More)]({%slug raddiagrams-features-delete%})
+* `Open`&mdash;Opens a saved diagram.[(Read More)]({%slug raddiagrams-features-serialization%})
+* `BeginEdit`&mdash;Begins editing diagram item.[(Read More)]({%slug raddiagrams-features-edit%})
+* `CommitEdit`&mdash;Commit the edited changes.[(Read More)]({%slug raddiagrams-features-edit%})
+* `CancelEdit`&mdash;Cancel the edited changes.[(Read More)]({%slug raddiagrams-features-edit%})
+* `SelectAll`&mdash;Selects all shapes in the diagram.[(Read More)]({%slug raddiagrams-features-selection%})
+* `Nudge`&mdash;Moves selected item/s in a specific direction. You can pass more specifics about the nudge operation through the `CommandParameter`. 
 	This parameter can be a single string representing the direction of the nudge:
 	* __"Left"__
 	* __"Right"__
 	* __"Up"__
 	* __"Down"__
 	It can also be a string in the form of __"direction; amount"__, the __'direction'__ being a value from the above list of direction strings. The __'amount'__ options are:
-	* __"Small"__ - if the __RadDiagram IsSnapToGridEnabled__ property is set to __true__ then this amount would mean that the nudge should happen once to the appointed direction using the __SnapX/Y__ value as a step. The snap settings can be applied in the  __RadDiagram__ definition. If the __RadDiagram IsSnapToGridEnabled__ property is __false__, a __"Small"__ amount indicates a step of __5__ pixels;				  
+	* __"Small"__&mdash;if RadDiagram's `IsSnapToGridEnabled` property is set to __true__ then this amount would mean that the nudge should happen once to the appointed direction using the __SnapX/Y__ value as a step. The snap settings can be applied in the  RadDiagram__ definition. If the RadDiagram IsSnapToGridEnabled property is __false__, a __"Small"__ amount indicates a step of __5__ pixels;				  
 
-	* __"Large"__ - if the __RadDiagram IsSnapToGridEnabled__ property is set to __true__ then this amount would mean that the nudge should happen once to the appointed direction using __5*SnapX/Y__ value as a step. The snap settings can be applied in the  __RadDiagram__ definition. If the __RadDiagram IsSnapToGridEnabled__ property is false, a __"Large"__ amount indicates a step of __10__ pixels;				  
+	* __"Large"__&mdash;if RadDiagram's `IsSnapToGridEnabled` property is set to __true__ then this amount would mean that the nudge should happen once to the appointed direction using __5*SnapX/Y__ value as a step. The snap settings can be applied in the  RadDiagram definition. If the RadDiagram IsSnapToGridEnabled property is false, a __"Large"__ amount indicates a step of __10__ pixels;			  
 
-	* __any number__ - if you provide a number in the __CommandParameter__, this number would indicate the number of pixels to be used as a step for the __Nudge__ command.				  
-
-* __Group__ - Groups the selected items.[(Read More)]({%slug raddiagram-features-grouping%})
-
-* __Ungroup__ - Ungroups the selected groups.[(Read More)]({%slug raddiagram-features-grouping%})
-
-* __SwitchGridVisibility__ - Hides or shows the background grid.			  
-
-* __Load__ - Loads a diagram.			  
-
-* __Export__ - Exports a diagram.[(Read More)]({%slug raddiagram-features-image-export%})
+	* __any number__&mdash;if you provide a number in the `CommandParameter`, this number would indicate the number of pixels to be used as a step for the `Nudge` command. In order for the number to be taken into account, the `IsSnapToGridEnabled` property has to be set to __false__.				  
+* `Group`&mdash; Groups the selected items.[(Read More)]({%slug raddiagram-features-grouping%})
+* `Ungroup`&mdash;Ungroups the selected groups.[(Read More)]({%slug raddiagram-features-grouping%})
+* `SwitchGridVisibility`&mdash;Hides or shows the background grid.			  
+* `Load`&mdash;Loads a diagram.			  
+* `Export`&mdash;Exports a diagram.[(Read More)]({%slug raddiagram-features-image-export%})
 
 ## ExtensionsCommands	  
 
-In the __Telerik.Windows.Controls.Diagrams.Extensions__ namespace you can find another set of commands described in the __ExtensionsCommands__ class. This class describes the __Print__ command that allows you to print a diagramming structure. You can use this command in XAML to print the content of a __RadDiagram__ instance as follows:		
+In the __Telerik.Windows.Controls.Diagrams.Extensions__ namespace you can find another set of commands described in the `ExtensionsCommands` class. This class describes the `Print` command that allows you to print a diagramming structure. You can use this command in XAML to print the content of a RadDiagram instance as follows:		
 
 #### __XAML__
 {{region radiagram-commands_0}}
@@ -104,7 +77,7 @@ In the __Telerik.Windows.Controls.Diagrams.Extensions__ namespace you can find a
 
 ## Using Diagram Commands
 
-A possible way to use __DiagramCommands__ in __XAML__ is to bind the __Command__ property of a __RadButton__ to a DiagramCommand and set the RadDiagram as a CommandTarget of the button:		
+A possible way to use `DiagramCommands` in __XAML__ is to bind the `Command` property of a `RadButton` to a DiagramCommand and set the RadDiagram as a `CommandTarget` of the button:		
 
 Below is shown how you can use some of the Diagram Commands in an application Note that this syntax is common for every Diagram Command.
 
@@ -133,11 +106,9 @@ __Commands Parameters__
 
 You can customize the functionality of the Delete, Export and Align Commands currently.		
 
-* __Align__ - you can pass Top, Left, Right, Center, Middle, Bottom as CommandParameter.			  
-
-* __Export__- you can pass Bmp or Png. The default export format is Png.			  
-
-* __Delete__ - you can pass the item you wish to delete.			  
+* `Align`&mdash;you can pass Top, Left, Right, Center, Middle, Bottom as CommandParameter.			  
+* `Export`&mdash;you can pass Bmp or Png. The default export format is Png.			  
+* `Delete`&mdash;you can pass the item you wish to delete.			  
 
 ## Overriding Commands
 

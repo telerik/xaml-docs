@@ -10,7 +10,7 @@ position: 0
 
 # Bing Map Rest Provider
 
-The RadMap control supports visualizing tile data using the Bind Maps Rest imagery service. In order to create an instance of the __BingRestMapProvider__ you have to use the third overload of its constructor. This way you can easily pass the required parameters - map mode, labels visibility and a __Bing Maps Key__. The most important of them is the __Bing Maps Key__ parameter. Without supplying a valid key you will not be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read [Accessing the Control Using a Bing Maps Key]([http://msdn.microsoft.com/en-us/library/ee681900.aspx](https://learn.microsoft.com/en-us/previous-versions/bing/wpf-control/hh709042(v=msdn.10))).        
+The RadMap control supports visualizing tile data using the Bind Maps Rest imagery service. In order to create an instance of the __BingRestMapProvider__ you have to use the third overload of its constructor. This way you can easily pass the required parameters - map mode, labels visibility and a __Bing Maps Key__. The most important of them is the __Bing Maps Key__ parameter. Without supplying a valid key you will not be able to visualize the map inside the __RadMap__ control. In order to learn how to obtain one, please read [Accessing the Control Using a Bing Maps Key](https://learn.microsoft.com/en-us/previous-versions/bing/wpf-control/hh709042(v=msdn.10)).
 
 >The RadMap BingRestMapProvdider is based on the Bing Maps [Imagery API](https://msdn.microsoft.com/en-us/library/ff701721.aspx?f=255&MSPPError=-2147217396).
 

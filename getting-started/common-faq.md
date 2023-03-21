@@ -1,5 +1,5 @@
 ---
-title: Getting Started with XAML
+title: XAML Fundamentals
 page_title: Getting Started with XAML
 description: Getting Started.
 slug: common-faq

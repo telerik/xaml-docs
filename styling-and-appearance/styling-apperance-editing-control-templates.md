@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Editing Control Templates
+# Editing Control Templates in Telerik UI for {{ site.framework_name }}
 
 This article demonstrates two approaches on how to extract and edit the default control templates of the Telerik UI for {{ site.framework_name }} controls:
 

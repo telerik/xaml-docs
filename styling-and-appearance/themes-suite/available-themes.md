@@ -7,7 +7,7 @@ tags: themes, available
 published: True
 position: 1
 ---
-# Themes Suite
+# {{ site.framework_name }} Themes Suite
 
 The __UI for {{ site.framework_name }}__ suite comes with a variety of predefined themes which you can apply to your application. Some of the themes have ThemePalette, allowing for different color variations to expand this variety even more. Below you can find a list of the available themes, a glimpse of their appearance, the support of a ThemePalette, and the built-in color variations (if such are present).
 

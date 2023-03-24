@@ -35,6 +35,7 @@ The following events will be fired only for __RadCartesianChart__:
 			Point newPanOffset = e.NewPanOffset;
 		}
 	{{endregion}}
+	
 * __ZoomChanged__: Occurs when the chart zoom gets changed.
 	#### __[C#] Example 2: ZoomChanged event arguments__
 	{{region radchartview-events_1}}	
@@ -44,8 +45,8 @@ The following events will be fired only for __RadCartesianChart__:
 			Size newZoom = e.NewZoom;
 		}
 	{{endregion}}
-
-## Series events
+	
+## Series Events
 
 All chart series expose the following events:
 

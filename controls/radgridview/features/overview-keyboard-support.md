@@ -25,7 +25,7 @@ __RadGridView__ exposes several useful properties and events, which can help you
 
 * __Add new row__ - press __Insert__ and new row will be inserted automatically.
 
-* __Delete existing row__ - users can delete (if supported by the grid __ItemsSource__) selected items using __DELETE__ key. This feature can be controlled with __RadGridView__'s __CanUserDeleteRows__ property.
+* __Delete existing row__ - users can delete (if supported by the collection assigned to the ItemsSource of RadGridView) selected items using __DELETE__ key. This feature can be controlled with __RadGridView__'s __CanUserDeleteRows__ property. Additional to this, the delete command won't be executed if the __IsReadOnly__ property of RadGridView is __true__ or the selected row is in edit mode.
 
 >In case you require to __utilize different commands corresponding to the keyboard interaction__, you may take advantage of the IKeyboardCommandProvider interface and implement your custom logic. Please check  [this article]({%slug gridview-commands-keyboardcommandprovider%}) for further information.
 

@@ -12,7 +12,7 @@ position: 3
 
 __GridView__ allows you to easily delete rows using the `Del` key or programmatically. 
 
-The control doesn't have built-in UI for deleting rows, but it provides a command that allows to do that easily. The [RadGridViewCommands.Delete({%slug gridview-commands-overview%}) is a `RoutedUICommand` that can be assigned directly to a button or any other element that supports commands. The command can be executed also manually in code. 
+The control doesn't have built-in UI for deleting rows, but it provides a command that allows to do that easily. The [RadGridViewCommands.Delete]({%slug gridview-commands-overview%}) is a `RoutedUICommand` that can be assigned directly to a button or any other element that supports commands. The command can be executed also manually in code. 
 
 Another option to delete rows is to remove the data items from the `ItemsSource` collection of the `RadGridView`. 
 

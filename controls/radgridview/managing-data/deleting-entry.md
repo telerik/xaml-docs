@@ -10,14 +10,17 @@ position: 3
 
 # Deleting an Entry
 
-The __RadGridView__ has no built-in deleting functionality, but there is no need of such, as it provides you with all the things you need to implement one. This implementation consists of manually removing the desired items from the __ItemsSource__ collection of the __RadGridView__. 
+__GridView__ allows you to easily delete rows using the `Del` key or programmatically. 
 
->tipUsers can delete (if supported by the grid __ItemsSource__) selected items using __DELETE__ key. This feature can be enabled by setting the __RadGridView__'s __CanUserDeleteRows__ property to __True__.
+The control doesn't have built-in UI for deleting rows, but it provides a command that allows to do that easily. The [RadGridViewCommands.Delete({%slug gridview-commands-overview%}) is a `RoutedUICommand` that can be assigned directly to a button or any other element that supports commands. The command can be executed also manually in code. 
 
-For example, you can have a button in which click event you implement your deleting logic.
+Another option to delete rows is to remove the data items from the `ItemsSource` collection of the `RadGridView`. 
 
-#### __XAML__
+To disable the `Del` key deletion set the `CanUserDeleteRows` property of `RadGridView` to `true`.
 
+The following examples show how to manually remove items from the `ItemsSource`.
+
+#### __XAML__  
 {{region xaml-gridview-managing-data-deleting-entry_0}}
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Delete"
@@ -115,10 +118,7 @@ Here is an example of a sample deleting logic implemented in the event handler f
 
 In this example the implementation manages both the __RadGridView__ and the data storage. Of course it is up to the developer to shape the deleting logic, so it suits the application requirements in the best way.
 
-## See Also
-
+## See Also  
  * [Adding New Entries]({%slug gridview-managing-data-add-new-entries%})
-
  * [Updating an Entry]({%slug gridview-managing-data-updating-entry%})
-
  * [Validating]({%slug gridview-managing-data-validation%})

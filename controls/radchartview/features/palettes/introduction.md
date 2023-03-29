@@ -340,6 +340,32 @@ Here are all of the predefined chart palettes:
 			<div style="width:20px;height:20px;background: #57408D;display: inline-block;"></div>
 		</td>
   </tr>
+ <tr>
+    <td>Office2019</td>
+    <td>
+			<div style="width:20px;height:20px;background: #106EBE;display: inline-block;"></div> 
+			<div style="width:20px;height:20px;background: #F55C69;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #F1E132;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #2F96ED;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #A16FE8;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #3EEC98;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #37DBE6;display: inline-block;"></div>
+			<div style="width:20px;height:20px;background: #F08034;display: inline-block;"></div>
+		</td>
+  </tr>
+ <tr>
+    <td>Windows11</td>
+    <td>
+	<div style="width:20px;height:20px;background: #0078D4;display: inline-block;"></div> 
+	<div style="width:20px;height:20px;background: #EA005E;display: inline-block;"></div>
+	<div style="width:20px;height:20px;background: #60CCFE;display: inline-block;"></div>
+	<div style="width:20px;height:20px;background: #0093F9;display: inline-block;"></div>
+	<div style="width:20px;height:20px;background: #00B7C3;display: inline-block;"></div>
+	<div style="width:20px;height:20px;background: #FFB900;display: inline-block;"></div>
+	<div style="width:20px;height:20px;background: #C239B3;display: inline-block;"></div>
+	<div style="width:20px;height:20px;background: #6B69D6;display: inline-block;"></div>
+     </td>
+  </tr>
 </table>
 
 ## See also 

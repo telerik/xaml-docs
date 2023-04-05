@@ -61,7 +61,7 @@ Inserts the current date in one of the specified formats.
 
 **Class name: DocumentVariableField**
 
-А field which uses DocumentVariables. More information can be found here: [Document Variables]({%slug radrichtextbox-features-document-variables%}).
+A field which uses DocumentVariables. More information can be found here: [Document Variables]({%slug radrichtextbox-features-document-variables%}).
 
 ### HYPERLINK
 
@@ -182,7 +182,7 @@ Used to insert a symbol in the document.
 * \u: Specifies that the characters are Unicode. This switch can be controlled through the **IsUnicode** property of SymbolField.
 
 
-### TОC
+### TOC
 
 { TOC *[Switches]* }
 

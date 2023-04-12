@@ -155,8 +155,9 @@ The __LinearAxis__ has an additional event which will be fired when the MajorSte
 			ChartAnnotation createdAnnotation = e.Annotation;
 		}
 	{{endregion}}
-	
-## See Also
+	  
+	  
+## See Also  
 * [Getting Started]({%slug radchartview-introduction%})
 * [ChartSelectionBehaviors]({%slug radchartview-features-selection%})
 * [AnnotationsProvider]({%slug radchartview-annotations-annotationsprovider%})

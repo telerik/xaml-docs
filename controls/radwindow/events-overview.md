@@ -31,7 +31,7 @@ The __RadWindow__ raises the following specific events:
 
 	* The sender argument contains __RadWindow__. This argument is of type object, but can be cast to __RadWindow__.
 
-	* A __HostWindowCreatedEventArgs__.
+	* A [HostWindowCreatedEventArgs](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.hostwindowcreatedeventargs) object.
 {% endif %}
 
 * __LayoutChangeStarted__ - occurs when a layout change operation begins (drag, resize). The event handler receives two arguments:

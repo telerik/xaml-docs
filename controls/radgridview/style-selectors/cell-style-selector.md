@@ -12,7 +12,9 @@ position: 1
 
 This article shows how to style RadGridView's cells conditionally by applying __CellStyleSelector__.
 
->tipTo download a runnable project with the example from this article, visit [our SDK repository](https://github.com/telerik/xaml-sdk/). You can find the example in the __GridView/CellStyleSelector__ folder.
+>tip To download a runnable project with the example from this article, visit [our SDK repository](https://github.com/telerik/xaml-sdk/). You can find the example in the __GridView/CellStyleSelector__ folder.
+
+> The `CellStyle` property of the column has a higher priority than `CellStyleSelector`. This means, if the `CellStyle` is set, the `CellStyleSelector` won't be invoked.
 
 Assume we have RadGridView bound to a collection of sports clubs. Each club has a __StadiumCapacity__ property. What we want to achieve is to set the background color of the StadiumCapacity cells to __Red if the capacity > 50 000 or Yellow if the capacity < 50 000__:
 

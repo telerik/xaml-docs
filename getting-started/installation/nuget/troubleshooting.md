@@ -12,7 +12,7 @@ position: 5
 
 This article lists some of the common problems that are observed during NuGet installation.
 
-### '401 Logon failed' error
+## '401 Logon failed' error
 
 If you're receiving this error when connecting to Telerik NuGet Server, you could try to update your NuGet credentials through the __Windows Credential Manager__.
 
@@ -27,7 +27,7 @@ If you're receiving this error when connecting to Telerik NuGet Server, you coul
 6. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
 7. Reopen Visual Studio and access the Telerik NuGet server. 
 
-#### Handling Special Characters in Password
+## Handling Special Characters in Password
 
 If your password contains a special character, those characters need to be escaped or it may fail authentication resulting in *Error 401 login failure* from the NuGet server. A common character that needs to be escaped is the ampersand `&`, but it can be as unique as the section character `§`. There are two ways to handle this.
 
@@ -43,10 +43,18 @@ Add-Type -AssemblyName System.Web
 
 ![Powershell Encoding](images/nuget-troubleshooting-powershell-encoding.png)
 
-### Networking Problems
+## Networking Problems
 
 Another common problem is that your machine (PC, GitHub Actions runner or Azure DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
 
 * https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27WPF%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
 
 After you enter your telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.WPF packages available with your license.
+
+## Unable to Load the Service Index for Source
+
+The following error may occur if the nuget.telerik.com server is down.
+
+`Unable to load the service index for source https://nuget.telerik.com/v3/index.json`
+
+If you hit that error, make sure that the Telerik NuGet Feed is live at [https://status.telerik.com/](https://status.telerik.com/).

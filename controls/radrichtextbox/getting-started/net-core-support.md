@@ -35,66 +35,6 @@ The default en-US dictionary for SpellChecking is located in:
 
 >If you are migrating from .NET Framework, note that **Telerik.Windows.Documents.dll** and **Telerik.Windows.Controls.RichTextBoxUI.dll** that you have used in the .NET Framework version **have been unified** into a new, single one for the .NET Core version of the control. The associated .xaml files are changed respectively. The name of the new assembly is **Telerik.Windows.Controls.RichTextBox.dll**. 
 
-## MEF Usage
-
-If you have used RadRichTextBox in .NET Framework, you most probably know that it uses [MEF]({%slug radrichtextbox-mef%}) to load some of its component. This, however, is **no more supported in .NET Core** and all parts are integrated in the control itself.
-
-For versions **prior R3 2019**, __RadRichTextBox__ still uses MEF to load additional UI components (like dialogs and document format providers dependencies). This implementation uses the `Assembly.ReflectionOnlyLoadFrom()` method to inspect the assemblies for suitable parts. This method is not available in .NET Core. To work this around, provide a predefined type catalog at the startup of the application.
-	
-#### __[C#] Example 1: Creating type catalog manually__
-{{region cs-radrichtextbox-getting-started-net-core-support-1}}
-
-	RadCompositionInitializer.Catalog = new TypeCatalog(
-		// format providers
-		typeof(XamlFormatProvider),
-		typeof(RtfFormatProvider),
-		typeof(DocxFormatProvider),
-		typeof(PdfFormatProvider),
-		typeof(HtmlFormatProvider),
-		typeof(TxtFormatProvider),
-
-		// mini toolbars
-		typeof(SelectionMiniToolBar),
-		typeof(ImageMiniToolBar),
-
-		// context menu
-		typeof(Telerik.Windows.Controls.RichTextBoxUI.ContextMenu),
-
-		// the default English spell checking dictionary
-		typeof(RadEn_USDictionary),
-
-		// dialogs
-		typeof(AddNewBibliographicSourceDialog),
-		typeof(ChangeEditingPermissionsDialog),
-		typeof(EditCustomDictionaryDialog),
-		typeof(FindReplaceDialog),
-		typeof(FloatingBlockPropertiesDialog),
-		typeof(FontPropertiesDialog),
-		typeof(ImageEditorDialog),
-		typeof(InsertCaptionDialog),
-		typeof(InsertCrossReferenceWindow),
-		typeof(InsertDateTimeDialog),
-		typeof(InsertTableDialog),
-		typeof(InsertTableOfContentsDialog),
-		typeof(ManageBibliographicSourcesDialog),
-		typeof(ManageBookmarksDialog),
-		typeof(ManageStylesDialog),
-		typeof(NotesDialog),
-		typeof(ProtectDocumentDialog),
-		typeof(RadInsertHyperlinkDialog),
-		typeof(RadInsertSymbolDialog),
-		typeof(RadParagraphPropertiesDialog),
-		typeof(SetNumberingValueDialog),
-		typeof(SpellCheckingDialog),
-		typeof(StyleFormattingPropertiesDialog),
-		typeof(TableBordersDialog),
-		typeof(TablePropertiesDialog),
-		typeof(TabStopsPropertiesDialog),
-		typeof(UnprotectDocumentDialog),
-		typeof(WatermarkSettingsDialog));
-{{endregion}}
-	
-
 ## Paths to Resources
 
 Due to the merging of the assemblies, the resources' paths are modified as well. For example, the .NET Framework version uses paths like the following one: *pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/**. The alternative for using RadRichTextBox in .NET Core environment is:

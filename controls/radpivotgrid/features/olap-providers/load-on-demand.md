@@ -23,6 +23,8 @@ By default the __OLAP__ data providers (`XmlaDataProvider` and `AdomdDataProvide
 
 ## See Also  
  * [Using XmlaDataProvider]({%slug radpivotgrid-data-xmla%})
+{% if site.framework_name == 'WPF' %}
  * [Using AdomdDataProvider]({%slug radpivotgrid-data-adomd%})
+{% endif %} 
  * [RadPivotFieldList]({%slug radpivotgrid-fieldlist%})
  * [Features]({%slug radpivotgrid-features%})

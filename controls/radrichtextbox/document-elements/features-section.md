@@ -113,8 +113,9 @@ Here is a list of these properties:
 		this.editor.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4));
 	{{endregion}}
 
-
+{% if site.framework_name == 'WPF' %}
 * __LineNumbering__: Gets or sets the line numbering properties for the current Section object. For more information, check the [Line Numbering]({%slug radrichtextbox-features-line-numbering%}) topic.
+{% endif %}
 
 ### Add headers and footers to a Section
 

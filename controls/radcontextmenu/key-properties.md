@@ -89,4 +89,7 @@ The `ShowKeyboardCuesOnOpen` property allows you to control the visibility of th
  * [Opening on a Specific Event]({%slug radcontextmenu-features-opening-on-specific-event%})
  * [Placement]({%slug radcontextmenu-features-placement%})
  * [Opening and Closing Delays]({%slug radcontextmenu-features-opening-and-closing-delays%})
+{% if site.framework_name == 'WPF' %}
  * [MultiColumnComboBox and RestoreFocusToTargetElement]({%slug kb-multicolumncombobox-auto-close-not-working-with-contextmenu%})
+{% endif %}
+ 

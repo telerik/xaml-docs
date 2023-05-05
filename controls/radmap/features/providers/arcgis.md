@@ -83,6 +83,7 @@ The __ArcGisMapProvider__ also allows the user to change the map mode using the 
 
 ![Rad Map Features Providers ArcGIS Config](images/RadMap_Features_Providers_ArcGIS_Config.png)
 
+{% if site.framework_name == 'WPF' %}
 ## Migrating to Vector Tile Map Provider
 
 To migrate to a vector-based tile provider that uses the [ArcGIS vector tile services](https://developers.arcgis.com/rest/services-reference/enterprise/vector-tile-service.htm) you can create a custom vector tile providers. The [Custom Vector Tile Provider]({%slug radmap-features-custom-vector-tile-provider%}) article demonstrates how to do this.
@@ -96,6 +97,7 @@ Additional to this, as of 2023, part of the ArcGIS raster-based services are obs
 | Streets (world streets) | https://www.arcgis.com/home/item.html?id=3b93337983e9436f8db950e38a8629af |  https://www.arcgis.com/home/item.html?id=de26a3cf4cc9451298ea173c4b324736 |
 | Terrain (world terrain) | https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931 |  no longer supported |
 | Topographic (world topographic) | https://www.arcgis.com/home/item.html?id=30e5fe3149c34df1ba922e6f5bbf808f |  https://www.arcgis.com/home/item.html?id=7dc6cea0b1764a1f9af2e679f642f0f5 |
+{% endif %}
 
 ## See Also
  * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%})

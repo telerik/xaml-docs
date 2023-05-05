@@ -172,7 +172,9 @@ controls/radvirtualkeyboard,
 controls/radpanelbar/features/resizeable_items.md,
 getting-started/installation/nuget,
 controls/radmap/features/providers/mapboxprovider.md,
-controls/radmap/features/providers/vectortileproviders.md]
+controls/radmap/features/providers/vectortileproviders.md,
+controls/radmap/features/providers/custom-vector-tile-provider.md,
+controls/radlistbox/sorting.md]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

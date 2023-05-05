@@ -112,4 +112,6 @@ __RadListBox with grouping enabled__
 ![A picture showing RadListBox with its data grouped](images/radlistbox_how_to_group_items_01.png)
 	
 ## See Also  
-* [Get Started with UI for WPF]({%slug getting-started-first-steps%})
+{% if site.framework_name == 'WPF' %}
+ * [Get Started with UI for WPF]({%slug getting-started-first-steps%})
+{% endif %}

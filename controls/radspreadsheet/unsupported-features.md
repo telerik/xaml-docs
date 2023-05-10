@@ -24,8 +24,6 @@ This article lists some of the popular features available in Microsoft Office Op
 
 * Grouping;
 
-* Conditional formatting;
-
 * Spell checking;
 
 * Auto complete;

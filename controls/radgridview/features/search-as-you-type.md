@@ -169,7 +169,10 @@ In order to modify the search behavior, you can benefit from the following three
 With **R2 2019** we introduced a new **SearchMode** property which allows you to control how items are matched when search is executed. It has the following two possible values:
 
 * **MatchAnyTerm**: Items match the search operation when they fulfill any of the search terms. For example, if `John Terry` is inputted in the search panel, items containing **any** of the terms "John" and "Terry" in any of their properties will be matched. This is the **default** value.
+
 * **MatchAllTerms**: Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `John Terry` is entered as the search text, only items which contain **both** terms ("John" and "Terry") in any of their properties will be matched.
+
+* **MatchExact**: Items match the search operation only when they exactly match the search text. 
 
 ## Change the Label Text of the Search Panel
 
@@ -178,7 +181,6 @@ By default, the value of the __TextBlock__ appearing before the __Search TextBox
 ## Add Search Criteria Programmatically 
 
 __RadGridView's__ search mechanism supports defining a search criteria programmatically. This can be done through the __SearchByText__ Command. More information can be found in the [Commands Overview]({%slug gridview-commands-overview%}) topic. 
-
 
 ## Search Over Dynamic Data
 

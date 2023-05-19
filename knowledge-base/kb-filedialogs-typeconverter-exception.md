@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-ArithmeticException is thrown on `RadSaveFileDialog`'s `ShowDialog` call, when the __device model profile__ of the OS (from the Color Management menu) is set to __sRGB virtual device model profile__. The profiel should be set through the __Change system defaults__ menu. This setting is accessed by opening the Color Management menu in the OS, then select the Advanced tab, then click on Change system defaults... In the newly opened dialog click Advanced again and change the Device profile to "sRGB virtual device model profile".
+ArithmeticException is thrown on `RadSaveFileDialog`'s `ShowDialog` call, when the __device model profile__ of the OS (from the Color Management menu) is set to __sRGB virtual device model profile__. The profiel should be set through the __Change system defaults__ menu. This setting is accessed by opening the Color Management menu in the OS, then select the Advanced tab, then click on __Change system defaults...__ In the newly opened dialog click __Advanced__ again and change the __Device profile__ to __sRGB virtual device model profile__.
 
 This is a bug in the WPF framework that is [reported here](https://github.com/dotnet/wpf/issues/3884).
 

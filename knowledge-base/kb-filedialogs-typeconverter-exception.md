@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-ArithmeticException is thrown on `RadSaveFileDialog`'s `ShowDialog` call, when the __device model profile__ of the OS (from the Color Management menu) is set to __sRGB virtual device model profile__. The profiel should be set through the __Change system defaults__ menu. This setting is accessed by opening the Color Management menu in the OS, then select the Advanced tab, then click on __Change system defaults...__ In the newly opened dialog click __Advanced__ again and change the __Device profile__ to __sRGB virtual device model profile__.
+ArithmeticException is thrown on `RadSaveFileDialog`'s `ShowDialog` call, when the __device model profile__ of the OS (from the Color Management menu) is set to __sRGB virtual device model profile__. The profile should be set through the __Change system defaults__ menu. This setting is accessed by opening the Color Management menu in the OS, then select the Advanced tab, then click on __Change system defaults...__ In the newly opened dialog click __Advanced__ again and change the __Device profile__ to __sRGB virtual device model profile__.
 
 This is a bug in the WPF framework that is [reported here](https://github.com/dotnet/wpf/issues/3884).
 
@@ -97,7 +97,7 @@ The FileDialogs are using this type of image settings only in its `LayoutTypeToI
 2. Find the __Telerik.Windows.Controls.FileDialogs.xaml__ file in the Telerik UI for WPF installation folder and open it.
 3. From the .xaml file, copy the following resources (with x:Keys set to) "layoutTypeIconConverter", "LayoutConfiguratorItemTemplate", "LayoutConfiguratorSelectedItemTemplate" and "ExplorerControlTemplate". Then, paste the resources in your project.
 4. In the copied resources replace the `LayoutTypeToIconConverter` with the new `CustomLayoutTypeToIconConverter`. 
-5. Add an implicit style that `ControlTemplate` of the `ExplorerControl` to all file dialogs.
+5. Add an implicit style that sets the `ControlTemplate` of the `ExplorerControl` to all file dialogs.
 6. You can wrap the resources in a new ResourceDictionary. The following example shows how the dictionary should look. The example uses the __Windows 11__ theme, but you can use the resources from any other theme.
 	
 	#### __[XAML]__

@@ -95,6 +95,10 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radslideview:
+        title: RadSlideView
+    controls/radpipspager:
+        title: RadPipsPager
     controls/radofficenavigationbar:
         title: RadOfficeNavigationBar
     controls/radcircularprogressbar:
@@ -3581,6 +3585,11 @@ defaults:
         title_prefix: "WPF PersistenceFramework"
 -
     scope:
+        path: "controls/radpipspager"
+    values:
+        title_prefix: "WPF PipsPager"
+-
+    scope:
         path: "controls/radpivotgrid"
     values:
         title_prefix: "WPF PivotGrid"
@@ -3624,6 +3633,11 @@ defaults:
         path: "controls/radslider"
     values:
         title_prefix: "WPF Slider"
+-
+    scope:
+        path: "controls/radslideview"
+    values:
+        title_prefix: "WPF SlideView"
 -
     scope:
         path: "controls/radsparkline"
@@ -3933,9 +3947,11 @@ intro_columns:
       "OfficeNavigationBar": "radofficenavigationbar-overview"
       "OutlookBar": "radoutlookbar-overview"
       "PanelBar": "radpanelbar-overview"
+      "PipsPager": "radpipspager-overview"
       "RadialMenu": "radradialmenu-overview"
       "RibbonView": "radribbonview-overview"
       "SplashScreen": "radsplashscreen-overview"
+      "SlideView": "radslideview-overview"
       "TabbedWindow": "radtabbedwindow-overview"
       "TabControl": "radtabcontrol-overview2"
       "ToolBar": "radtoolbar-overview"

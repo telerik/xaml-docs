@@ -98,7 +98,7 @@ RadPropertyGrid exposes the option to search in nested properties. To enable thi
 #### __[XAML] Setting the SearchInNestedProperties property__
 {{region radpropertygrid-nested-properties-4}}
 	<telerik:RadPropertyGrid NestedPropertiesVisibility="Visible" SearchInNestedProperties="True"/>
-{{region}}
+{{endregion}}
 
 ## Specifying the PropertyDefinition Auto-Generating Mode
 

@@ -47,7 +47,10 @@ The RadMultiColumnComboBox control exposes the `SearchMode` property, which allo
 This property exposes two possible values:
 
 * `MatchAnyTerm`&mdash;Items match the search operation when they fulfill any of the search terms. For example, if `Liverpool Arsenal` is inputted in the search panel, items containing any of the terms "Liverpool" and "Arsenal" in any of their properties will be matched. This is the default value.
+
 * `MatchAllTerms`&mdash;Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `Liverpool Arsenal` is entered as the search text, only items which contain both terms ("Liverpool" and "Arsenal") in any of their properties will be matched.
+
+* `MatchExact`&mdash;Items match the search operation only when they exactly match the search text. When this mode is selected the append provider won't append text.
 
 ## Search in Hidden Columns
 

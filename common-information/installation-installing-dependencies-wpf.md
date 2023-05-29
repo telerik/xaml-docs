@@ -82,6 +82,7 @@ RadPanelBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadPdfProcessing	|	Telerik.Windows.Documents.Fixed, Telerik.Windows.Documents.Core, Telerik.Windows.Zip
 RadPdfViewer	|	Telerik.Windows.Documents.Fixed, Telerik.Windows.Documents.Core, Telerik.Windows.Controls.FixedDocumentViewers, Telerik.Windows.Zip
 RadPersistenceFramework	|	Telerik.Windows.PersistenceFramework
+RadPipsPager	|	Telerik.Windows.Controls
 RadPivotFieldList	|	Telerik.Pivot.Core, Telerik.Windows.Controls.PivotFieldList, Telerik.Windows.Controls.Pivot, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Input
 RadPivotGrid	|	Telerik.Pivot.Core, Telerik.Windows.Controls.Pivot
 RadPivotMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
@@ -94,6 +95,7 @@ RadRichTextBox	|	System.ComponentModel.Composition, Telerik.Windows.Data, Teleri
 RadRichTextBoxRibbonUI	|	Telerik.Windows.Controls.RichTextBoxUI, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.RibbonView, Telerik.Windows.Controls.ImageEditor
 RadScheduleView	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.ScheduleView, Telerik.Windows.Data
 RadSlider	|	Telerik.Windows.Controls
+RadSlideView	|	Telerik.Windows.Controls
 RadSparkLine	|	Telerik.Windows.Controls.Charting, Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.Proofing.DataGrid, Telerik.Windows.Documents.Proofing.RadGridView, Telerik.Windows.Documents, Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml
 RadSplashScreen	|	Telerik.Windows.Controls.Navigation

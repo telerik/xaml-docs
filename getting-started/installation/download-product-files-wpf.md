@@ -90,7 +90,8 @@ You could download the complete source code of the [WPF Demos application]({%slu
 
 ### Source Code
 
-* Telerik_UI_for_WPF_Source_[version].zip&mdash;Complete source code of the Telerik UI for WPF product, available only with Developer license.
+* Telerik_UI_for_WPF_Source_[version].zip&mdash;Complete source code of the Telerik UI for WPF product, available only with Developer license. With the 2023 R2 release, this .zip file will no longer contain the Telerik Document Processing product in it.
+* Telerik_UI_for_WPF_[Version]_DPL_Source.zip&mdash;Complete source code of the Telerik Document Processing product, available only with Developer license.
 
 ## Available versions
 

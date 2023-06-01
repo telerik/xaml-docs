@@ -318,6 +318,26 @@ Jump to the following topics to learn about the specifics of the theme's palette
 * [Changing ScrollBarsMode](#changing-scrollbarsmode)
 * [Changing Opacity](#changing-opacity)
 
+## Windows 11 Compact Mode
+
+The Windows 11 theme supports a compact mode that reduces the default element sizes. To enable this, set the `Windows11ThemeSizeHelper.Helper.IsInCompactMode` static property to `true`.
+
+#### __[C#] Enabling Windows 11 Compact Mode__
+{{region cs-styling-appearance-windows11-theme-0}}
+	public partial class App : Application
+    {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            Windows11ThemeSizeHelper.Helper.IsInCompactMode = true;
+            base.OnStartup(e);
+        }
+    }
+{{endregion}}
+
+__Windows 11 standard vs. compact mode in RadGridView__  
+
+![A picture showing the difference between compact and standrad mode](Images/windows11-theme-compact-mode.png)
+
 ## Default Theme Colors
 
 The **Windows11 Theme** is designed to be easily modified via the exposed colors in the theme palette.
@@ -443,7 +463,7 @@ The colors containing GradientStop in their names set the respective gradient st
 Changing the colors can be achieved in code behind.
 
 #### __[C#] Setting palette colors__
-{{region cs-styling-appearance-windows11-theme-0}}
+{{region cs-styling-appearance-windows11-theme-1}}
 	Windows11Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
 {{endregion}}
 
@@ -454,7 +474,7 @@ The Windows11 theme offers three color variations. The `System` variation corres
 The following example demonstrates the ability to switch between the supported variations by calling the `LoadPreset` method as shown below:
 
 #### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-windows11-theme-1}}
+{{region cs-styling-appearance-windows11-theme-2}}
 	//System's color variation 
 	Windows11Palette.LoadPreset(Windows11Palette.ColorVariation.System);
 
@@ -500,7 +520,7 @@ __RadWindow with Mica Effect__
 To change the occluding material, you can set the attached `BackdropMaterial` property of the `WindowEffectsHelper` class, located in the `Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls` namespace.
 
 #### __[XAML] Set Material__
-{{region xaml-styling-appearance-windows11-theme-0}}
+{{region xaml-styling-appearance-windows11-theme-3}}
 	<telerik:RadWindow x:Class="Example.MainWindow"
 					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -519,7 +539,7 @@ This is controlled via the `UseSystemAccentColor` property. Its default value is
 When set to `true`, the `AccentColor` of the theme will be the selected one in the System Color Settings of the OS, the `AccentMouseOverColor` will apply **90% opacity** to it and the `AccentPressedColor` - **80% opacity**. The `AccentSelectedColor` will also be changed with respect to the AccentColor.
 
 #### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-windows11-theme-2}}
+{{region cs-styling-appearance-windows11-theme-4}}
 	Windows11Palette.Palette.UseSystemAccentColor = true;
 {{endregion}}
 
@@ -536,7 +556,7 @@ The default font used in the theme is `Segoe UI`.
 The following shows the default font sizes and families.
 
 #### __[C#] Default FontSizes__
-{{region cs-styling-appearance-windows11-theme-3}}
+{{region cs-styling-appearance-windows11-theme-5}}
 	Windows11Palette.Palette.FontSizeS = 12;
 	Windows11Palette.Palette.FontSize = 14;
 	Windows11Palette.Palette.FontSizeM = 18;
@@ -547,7 +567,7 @@ The following shows the default font sizes and families.
 This example shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from __14__ to __18__.
 
 #### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-windows11-theme-4}}
+{{region cs-styling-appearance-windows11-theme-6}}
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Windows11Palette.Palette.FontSize = 18;
@@ -572,7 +592,7 @@ The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the
 This example shows a `RadToggleButton` control with modified brushes for its different states through the `ThemeHelper` class:
 
 #### __[XAML] Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region xaml-styling-appearance-windows11-theme-1}}
+{{region xaml-styling-appearance-windows11-theme-7}}
 	<telerik:RadToggleButton Content="RadButton"  
 						Margin="10" 
 						xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls" 
@@ -595,7 +615,7 @@ The CornerRadius property of the palette is the default one and defaults to `4`.
 The OverlayCornerRadius property corresponds to the first point of the list and defaults to `8`.
 
 #### __[C#] Changing the default corner radius__
-{{region cs-styling-appearance-windows11-theme-5}}
+{{region cs-styling-appearance-windows11-theme-8}}
 	Windows11Palette.Palette.CornerRadius = new CornerRadius(0);
 {{endregion}}
 
@@ -612,7 +632,7 @@ By default, the scrollbars in the Windows 11 theme change their size depending o
 *  `ScrollViewerScrollBarsMode.Normal`&mdash;The ScrollBars appear always with their normal size.
 
 #### __[C#] Setting the ScrollBarsMode property of the palette to Normal__
-{{region cs-styling-appearance-fluent-theme-5}}	
+{{region cs-styling-appearance-fluent-theme-9}}	
 	FluentPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Normal;
 {{endregion}}
 
@@ -621,7 +641,7 @@ By default, the scrollbars in the Windows 11 theme change their size depending o
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the Windows11Palette. The default values are __0.36__ and __1.0__ respectively. 
 
 #### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-windows11-theme-6}}
+{{region cs-styling-appearance-windows11-theme-10}}
 	Windows11Palette.Palette.DisabledOpacity = 0.5;
 	Windows11Palette.Palette.ReadOnlyOpacity = 0.5;
 {{endregion}}
@@ -631,7 +651,7 @@ If you need to change the opacity of the disabled and read-only elements, you ca
 When modifying fonts, colors, or other resources from the `Windows11Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
 #### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-windows11-theme-2}}
+{{region xaml-styling-appearance-windows11-theme-11}}
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 

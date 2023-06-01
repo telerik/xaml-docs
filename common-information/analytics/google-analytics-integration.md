@@ -12,6 +12,8 @@ position: 2
 
 This article shows how to use the Telerik Analytics API to implement a custom Google Analytics provider and send information to it.
 
+>important This article shows how to setup the Google Analytics 3 property and the corresponding SDK. On __July 1, 2023__, standard Universal Analytics (Google Analytics3) [properties will stop processing data](https://support.google.com/analytics/answer/11583528?hl=en) and most of the setup in this article won't be relevant. Instead you should setup the __Google Analytics 4__ (GA4) property and manually send web requests to the google services. Additional to this, you can use the following [unofficial GA4 .NET SDK](https://github.com/LindaLawton/google-analytics-dotnet-sdk).
+
 ## Setting up Google Analytics Dashboard
 
 >important This information is relevant at the time of writing of this article (June 2019) and it may not be up-to-date at the moment you read this article.

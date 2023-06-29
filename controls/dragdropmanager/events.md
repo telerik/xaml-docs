@@ -10,39 +10,29 @@ position: 3
 
 # Events
 
-__DragDropManager__ supports an event driven model. Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations. The following tables summarize the standard drag-and-drop events.  
+`DragDropManager` supports an event driven model. Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations. The following tables summarize the standard drag-and-drop events.  
 
 ## Drag Source Events
 
-* __DragInitialize__ -  The DragInitialize event occurs when an object is about to be dragged. All needed information about the drag should be passed to the event arguments. Drag start can be stopped by setting Cancel=true. This is a bubbling event.
+* `DragInitialize`&mdash;The DragInitialize event occurs when an object is about to be dragged. All needed information about the drag should be passed to the event arguments. Drag start can be stopped by setting Cancel=true. This is a bubbling event.
+* `GiveFeedback`&mdash;This event occurs continuously during a drag-and-drop operation and enables the drop source to give feedback information to the user. This feedback is commonly given by changing the appearance of the mouse pointer to indicate the effects allowed by the drop target. This is a bubbling event.
+* `QueryContinueDrag`&mdash;This event occurs when there is a change in the keyboard or mouse button states during a drag-and-drop operation and enables the drop source to cancel the drag-and-drop operation depending on the key/button states. This is a bubbling event.
+* `PreviewGiveFeedback`&mdash;Tunneling version of GiveFeedback.
+* `PreviewQueryContinueDrag`&mdash;Tunneling version of QueryContinueDrag.
+* `DragDropCompleted`&mdash;This event occurs when an object is dropped on the drop target and is used to notify source for end of the drag operation. This is a bubbling event.
 
-* __GiveFeedback__ - This event occurs continuously during a drag-and-drop operation and enables the drop source to give feedback information to the user. This feedback is commonly given by changing the appearance of the mouse pointer to indicate the effects allowed by the drop target. This is a bubbling event.
-
-* __QueryContinueDrag__ - This event occurs when there is a change in the keyboard or mouse button states during a drag-and-drop operation and enables the drop source to cancel the drag-and-drop operation depending on the key/button states. This is a bubbling event.
-
-* __PreviewGiveFeedback__ - Tunneling version of GiveFeedback.
-
-* __PreviewQueryContinueDrag__ - Tunneling version of QueryContinueDrag.
-
-* __DragDropCompleted__ - This event occurs when an object is dropped on the drop target and is used to notify source for end of the drag operation. This is a bubbling event.
+>important In order for the `DragInitialize` method to occur, the `DragDropManager.AllowCapturedDrag` attached property has to be set on the source element.
 
 ## Drop Target Events
 
-* __DragEnter__ - This event occurs when an object is dragged into the drop target's boundary. This is a bubbling event.
-
-* __DragLeave__ - This event occurs when an object is dragged out of the drop target's boundary. This is a bubbling event.
-
-* __DragOver__ - This event occurs continuously while an object is dragged (moved) within the drop target's boundary. This is a bubbling event.
-
-* __Drop__ - This event occurs when an object is dropped on the drop target. This is a bubbling event.
-
-* __PreviewDragEnter__ - Tunneling version of DragEnter.
-
-* __PreviewDragLeave__ - Tunneling version of DragLeave.
-
-* __PreviewDragOver__ - Tunneling version of DragOver.
-
-* __PreviewDrop__ - Tunneling version of Drop.
+* `DragEnter`&mdash;This event occurs when an object is dragged into the drop target's boundary. This is a bubbling event.
+* `DragLeave`&mdash;This event occurs when an object is dragged out of the drop target's boundary. This is a bubbling event.
+* `DragOver`&mdash;This event occurs continuously while an object is dragged (moved) within the drop target's boundary. This is a bubbling event.
+* `Drop`&mdash;This event occurs when an object is dropped on the drop target. This is a bubbling event.
+* `PreviewDragEnter`&mdash;Tunneling version of DragEnter.
+* `PreviewDragLeave`&mdash;Tunneling version of DragLeave.
+* `PreviewDragOver`&mdash;Tunneling version of DragOver.
+* `PreviewDrop`&mdash;Tunneling version of Drop.
 
 ## How to attach DragDrop Events
 

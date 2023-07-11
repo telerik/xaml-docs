@@ -12,6 +12,8 @@ position: 2
 
 __XamlFormatProvider__ makes it easy to import and export RadDocument to/from XAML format. This is the native format of RadRichTextBox and Using it guarantees that anything in the document will be preserved exactly the same as it is in the control. 
 
+>note Since R2 2023 SP1 the XamlFormatProvider automatically checks the XAML safety for undesired content. This behavior can be overridden by using the __PreProcessingXaml__ event and setting the __SkipXamlValidation__ argument. An example is available in the [settings]({%slug radrichtextbox-import-export-xaml-settings%}) article.
+
 To use __XamlFormatProvider__, you should add a reference to:
 
 * __Telerik.Windows.Documents.FormatProviders.Xaml.dll__

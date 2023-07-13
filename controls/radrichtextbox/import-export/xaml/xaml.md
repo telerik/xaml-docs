@@ -12,7 +12,7 @@ position: 0
 
 The __[eXtensible Application Markup Language(XAML)](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language)__ is declaritive XML-based markup language develop by Microsoft for creating a rich graphical user interface(GUI). XAML language is the native __RadRichTextBox__ document format.
  
- >note Since R2 2023 SP1 the XamlFormatProvider automatically checks the XAML safety for undesired content. This behavior can be overridden by using the __PreProcessingXaml__ event and setting the __SkipXamlValidation__ argument. An example is available in the [settings]({%slug radrichtextbox-import-export-xaml-settings%}) article.
+ >note Since R2 2023 SP1 the XamlFormatProvider automatically verifies the imported XAML. More information is available in the [Xaml Verification]({%slug radrichtextbox-import-export-xaml-verification%}) article.
 
 ![XAML sample](images/RadRichTextBox_Formats_And_Conversion_XAML_01.PNG)
 

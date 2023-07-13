@@ -12,7 +12,7 @@ position: 1
 
 __XamlFormatProvider__ allows for import of XAML documents and respectively export of RadRichTextBox to XAML file. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
 
->note Since R2 2023 SP1 the XamlFormatProvider automatically checks the XAML safety for undesired content. This behavior can be overridden by using the __PreProcessingXaml__ event and setting the __SkipXamlValidation__ argument.
+ >note Since R2 2023 SP1 the XamlFormatProvider automatically verifies the imported XAML. More information is available in the [Xaml Verification]({%slug radrichtextbox-import-export-xaml-verification%}) article.
 
 ## Export Settings
 
@@ -78,7 +78,7 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 
 ### Properties
 
-* __AllowedAAssemblies__  
+* __AllowedAssemblies__: This collection contains the assemblies that contains the allowed types for the XAML import.  
 
 ## See Also
 

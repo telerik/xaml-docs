@@ -10,7 +10,7 @@ position: 4
 
 # XAML Verification
 
-Since R2 2023 SP1 the __XamlFormatProvider__ automatically verifies the types used in the imported XAML. It makes sure that all used types are from for the trusted assemblies. This mechanism prevents any undesired types loading and is enabled by default. 
+Since R2 2023 SP1 the __XamlFormatProvider__ automatically verifies the types used in the imported XAML. It makes sure that all used types are from for the trusted assemblies. This mechanism prevents any unknown types loading and is enabled by default. 
 
 ### Disable the default verification
 

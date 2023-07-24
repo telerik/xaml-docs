@@ -91,7 +91,7 @@ RadMaskedDateTimeInput's `Value` property is of type `DateTime` and you can bind
 	                        	SelectionOnFocus="SelectAll"
 	                        	TextMode="PlainText"                                    
 	                        	UpdateValueEvent="LostFocus"
-                            	Value="{Binding StartDate}"/>
+                            		Value="{Binding StartDate}"/>
 {{endregion}}
 
 ## Change AM/PM

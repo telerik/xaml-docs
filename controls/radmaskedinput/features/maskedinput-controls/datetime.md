@@ -10,10 +10,10 @@ position: 3
 
 # MaskedDateTimeInput
 
-The __RadMaskedDateTimeInput__ represents the basic control that can be used to restrict the input of DateTime values.
+The `RadMaskedDateTimeInput`` represents the basic control that can be used to restrict the input of DateTime values.
 
 {% if site.site_name == 'Silverlight' %}
->In order to use the __RadMaskedDateTimeInput__ control in your projects you have to add references to the following assemblies:
+>In order to use the RadMaskedDateTimeInput control in your projects you have to add references to the following assemblies:
 >	- __Telerik.Windows.Controls__
 >	- __Telerik.Windows.Controls.Input__  
 
@@ -21,7 +21,7 @@ The __RadMaskedDateTimeInput__ represents the basic control that can be used to 
 {% endif %}
 
 {% if site.site_name == 'WPF' %} 
->In order to use the __RadMaskedDateTimeInput__ control in your projects you have to add references to the following assemblies:
+>In order to use the RadMaskedDateTimeInput control in your projects you have to add references to the following assemblies:
 >	- __Telerik.Windows.Controls__
 >	- __Telerik.Windows.Controls.Input__
 >	- __Telerik.Windows.Data__  
@@ -31,9 +31,9 @@ The __RadMaskedDateTimeInput__ represents the basic control that can be used to 
 
 ## Declaratively defined MaskedDateTimeInput
 
-Here is a simple definition of a __RadMaskedDateTimeInput__ control:
+Here is a simple definition of a RadMaskedDateTimeInput control:
 
-#### __[XAML] Example 1: Define RadMaskedDateTimeInput in XAML__
+#### __[XAML] Define RadMaskedDateTimeInput in XAML__
 {{region xaml-radmaskedinput-features-controls-datetime_0}}
 	<telerik:RadMaskedDateTimeInput Width="200"
 	                                Margin="20 20 20 10"
@@ -50,11 +50,11 @@ Here is a simple definition of a __RadMaskedDateTimeInput__ control:
 
 ## Data Binding
 
-RadMaskedDateTimeInput's __Value__ property is of type __DateTime__ and you can bind it to view model's property of type __DateTime__. 
+RadMaskedDateTimeInput's `Value` property is of type `DateTime` and you can bind it to view model's property of type DateTime. 
 
 >important Binding to the __object__ type is not supported and may result in unpredictable behavior.
 
-#### __[XAML] Example 2: Define the view model__
+#### __[XAML] Define the view model__
 {{region radmaskedinput-features-controls-datetime_1}}
 	public class ViewModel : ViewModelBase
 	{
@@ -80,25 +80,25 @@ RadMaskedDateTimeInput's __Value__ property is of type __DateTime__ and you can 
 	}
 {{endregion}}
 
-#### __[C#] Example 3: Binding the Value property__
+#### __[C#] Binding the Value property__
 {{region radmaskedinput-features-controls-datetime_2}}
 	<telerik:RadMaskedDateTimeInput Width="200" x:Name="dateTime"
-	                        Margin="20 20 20 10"
-	                        Culture="en-US"
-	                        EmptyContent="Enter digits"
-	                        InputBehavior="Replace"
-	                        Mask="dd-MM-yyyy"
-	                        SelectionOnFocus="SelectAll"
-	                        TextMode="PlainText"                                    
-	                        UpdateValueEvent="LostFocus"
-                            Value="{Binding StartDate}"/>
+	                        	Margin="20 20 20 10"
+	                        	Culture="en-US"
+	                        	EmptyContent="Enter digits"
+	                        	InputBehavior="Replace"
+	                        	Mask="dd-MM-yyyy"
+	                        	SelectionOnFocus="SelectAll"
+	                        	TextMode="PlainText"                                    
+	                        	UpdateValueEvent="LostFocus"
+                            	Value="{Binding StartDate}"/>
 {{endregion}}
 
 ## Change AM/PM
 
 With the built-in functionality of the control it is not necessary to type __AM__ or __PM__ in order to change the time period. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse. In order to display the time period simply add "t" or "tt" in the Mask property.
 
-#### __[C#] Example 3: Binding the Value property__
+#### __[C#] Binding the Value property__
 {{region radmaskedinput-features-controls-datetime_2}}
 	<telerik:RadMaskedDateTimeInput HorizontalAlignment="Center" 
 	                                Culture="en-US"
@@ -110,30 +110,34 @@ With the built-in functionality of the control it is not necessary to type __AM_
 	                                UpdateValueEvent="LostFocus" />
 {{endregion}}
 
-#### Figure 2: Showing the time period
+__Showing the time period__
+
 ![{{ site.framework_name }} RadMaskedInput Showing the time period](images/radmaskedinput_datetimeinput_ampm.png)
  
 
 ## FormatString
 
-You can further format the entered value by setting the __FormatString__ property.
+You can further format the entered value by setting the `FormatString` property.
 
-#### __[XAML] Example 2: Setting the FormatString property__
+#### __[XAML] Setting the FormatString property__
 {{region xaml-radmaskedinput-features-controls-datetime_3}}
 	<telerik:RadMaskedDateTimeInput HorizontalAlignment="Center"
-	                                Culture="en-US"
-	                                FormatString="{}Day: {0:dd}, Month: {0:MM}, Year: {0:yyyy}"
-	                                InputBehavior="Replace"
-	                                Mask="dd-MM-yyyy"
-	                                SelectionOnFocus="SelectAll"
-	                                TextMode="PlainText"
-	                                UpdateValueEvent="LostFocus" />
+                                	VerticalAlignment="Center"
+                            		Culture="en-US"
+                            		FormatString="{}Day: {0:dd}, Month: {0:MM}, Year: {0:yyyy}"
+                            		InputBehavior="Replace"
+                            		Mask="dd-MM-yyyy"
+                            		SelectionOnFocus="SelectAll"
+                            		TextMode="PlainText"
+                            		UpdateValueEvent="LostFocus" />
 {{endregion}}
 
-#### Figure 2: Showing the text value when the control is focused
+__Showing the text value when the control is focused__
+
 ![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is focused](images/radmaskedinput_datetimeinput_format_string_focused.png)
 
-#### Figure 3: Showing the text value when the control is unfocused
+__Showing the text value when the control is unfocused__
+
 ![{{ site.framework_name }} RadMaskedInput Showing the text value when the control is unfocused](images/radmaskedinput_datetimeinput_format_string_focused.png)
 
 ## See Also

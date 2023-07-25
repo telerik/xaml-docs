@@ -95,6 +95,8 @@ These packages contain all Telerik dlls for the corresponding .NET version. The 
 * etc.
 
 Each of these packages contain all .NET versions of the corresponding Telerik dll. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
+
+The __oldest nuget package__ that can be found in the __Telerik NuGet Feed__ is __2016.3.1024__.
 	
 ## NuGet Packages and Controls Localization
 

@@ -1,5 +1,5 @@
 ---
-title: Override Escape Key Logic of RadRibbonBackstage
+title: Override Esc Key Logic of RadRibbonBackstage
 page_title: Change RadRibbonBackstage Logic for Escape Key
 description: How to override escape key logic of RadRibbonBackstage
 type: how-to

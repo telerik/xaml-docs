@@ -12,6 +12,10 @@ position: 13
 
 As a developer, __you are not limited to the default filtering user interface provided by RadGridView when in Popup filtering mode__. After the introduction of the Custom Filtering Controls feature, you can easily craft any filtering control that you like.
 
+__The example in this article produces the following result__  
+
+![RadGridView for WPF Custom Filtering Control](images/gridview-filtering-custom-filtering-controls-0.png)
+
 ## Building a Custom Filtering Control
 
 In order to be able to communicate with RadGridView, your custom filtering control will have to implement the IFilteringControl interface. This interface allows RadGridView to communicate with your control.  Let’s take a look at the interface:
@@ -338,10 +342,9 @@ Finally, you have to tell the column to use this custom filtering control like t
 
 {{region xaml-gridview-filtering-custom-filtering-controls_2}}
 	<telerik:RadGridView Name="radGridView" AutoGenerateColumns="False">
-	  <telerik:RadGridView.Columns>
-	    <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}"/>
-	    <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}"/>
-	    <telerik:GridViewDataColumn DataMemberBinding="{Binding HireDate}">
+	  <telerik:RadGridView.Columns>	    
+	    <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"/>
+	    <telerik:GridViewDataColumn DataMemberBinding="{Binding ModifiedAt}">
 	      <telerik:GridViewDataColumn.FilteringControl>
 	        <local:FromDateToDateFilterControl FromDate="1/1/1990" ToDate="1/1/1995"/>
 	      </telerik:GridViewDataColumn.FilteringControl>

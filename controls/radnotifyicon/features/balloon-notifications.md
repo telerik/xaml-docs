@@ -63,6 +63,8 @@ Here are the overloads exposed by the ShowBallonTip method:
 
 * **void ShowBalloonTip(int timeout = 10)**&mdash;This overload uses the `BalloonTitle`, `BalloonText` and the icon provided by `BalloonIcon`/`BalloonIconSource` properties to show a notification. Optionally an integer can be passed to specify the amount of seconds to wait before the balloon auto hides (The system minimum and maximum are 10 and 30 seconds).
 
+      > The timeout parameter is not supported by the Windows OS after Windows Vista, so setting the `timeout` won't do anything.
+
 * **void ShowBalloonTip(string title, string text, BalloonTipIcon icon, bool doNotPlaySound = false, int timeout = 10)**&mdash;This overload allows for passing a title, text, and choosing an icon from the set of standardized icons. Optionally you can specify whether sound should be played and the amount of seconds to wait before the balloon auto hides (The system minimum and maximum are 10 and 30 seconds). 
 
     #### __[C#] Showing a warning notification__

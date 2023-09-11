@@ -95,6 +95,8 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radhighlighttextblock:
+        title: RadHighlightTextBlock
     controls/radslideview:
         title: RadSlideView
     controls/radpipspager:
@@ -3586,6 +3588,11 @@ defaults:
         title_prefix: "WPF PersistenceFramework"
 -
     scope:
+        path: "controls/radhighlighttextblock"
+    values:
+        title: "WPF HighlightTextBlock"
+-
+    scope:
         path: "controls/radpipspager"
     values:
         title_prefix: "WPF PipsPager"
@@ -3928,6 +3935,7 @@ intro_columns:
       "CircularProgressBar": "radcircularprogressbar-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
+      "HighlightTextBlock": "radhighlighttextblock-overview"
       "PersistenceFramework": "persistence-framework-overview"
       "ProgressBar": "radprogressbar-overview"
       "StepProgressBar": "stepprogressbar-overview"

@@ -24,7 +24,7 @@ The HighlightTextBlock component allows you to highlight parts or the whole text
 ## Key Features
 
 * __Highlighting__&mdash;The control provides you with the ability to highlight parts of the text or the entire text that it presents. It also provides the ability to match all instances of the searched text or only its first occurrence.
-* __Integration__&mdash;The HighlightTextBlock component allows you to use it with other components.
+* __Easy integration__&mdash;The HighlightTextBlock component allows you to use it with other components.
 * __Customization__&mdash;You can add/remove the matches, as well as style them.
 
 > Check out the demos application at [demos.telerik.com](https://demos.telerik.com/wpf/).

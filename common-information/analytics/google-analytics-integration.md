@@ -32,7 +32,7 @@ The Measurement Id and API secret copied in setps 3 and 4 will be used in the .N
 
 To send information to the Google Analytics dashboard manually, use the [Measurement Protocol (Google Analytics 4)](https://developers.google.com/analytics/devguides/collection/protocol/ga4) API provided by Google. The API allows you to send http requests with the required event information. The following example uses the [GoogleAnalytics.Ga4-Dotnet.Sdk](https://github.com/DAIMTO/GoogleAnalytics.Ga4.Dotnet.Sdk) unofficial GA4 SDK to send information to the dashboard.
 
->important The __GoogleAnalytics.Ga4.DotNet.Sdk__ is build against .NET 6, which means the example in this article is relevant to projects targeting .NET 6 and later.
+>important The __GoogleAnalytics.Ga4.DotNet.Sdk__ is build against __.NET 6__, which means the example in this article is relevant to projects targeting __.NET 6__ and later.
 
 1. Download the source code of the [GoogleAnalytics.Ga4-Dotnet.Sdk](https://github.com/DAIMTO/GoogleAnalytics.Ga4.Dotnet.Sdk).
 

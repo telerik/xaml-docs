@@ -17,9 +17,9 @@ The training course is developed to help you get started with the Telerik UI for
 {% include cta-panel-introduction.html %}
 {% endif %}
 
-The course starts with an introduction to the Telerik UI for WPF components and its benefits. The training flow then takes you to an overview of the demo application and further, you get into creating inputs, data grids, charts, documents viewers and more. The cours also talks on how to enhance the components with one of the built-in themes and or by customizing the default styles.
+The course starts with an introduction to the Telerik UI for WPF components and its benefits. The training flow then takes you to an overview of the demo application and further, you get into creating inputs, data grids, charts, document viewers, and more. The course also talks about how to enhance the components with one of the built-in themes and or by customizing the default styles.
 
-Additionally, you will learn about other important Telerik UI for WPF built-in features, such as globalization and localization and accessibility, as well as options for reporting. 
+Additionally, you will learn about other important Telerik UI for WPF built-in features, such as globalization, localization, and accessibility, as well as options for reporting. 
 
 ## Course Overview
 

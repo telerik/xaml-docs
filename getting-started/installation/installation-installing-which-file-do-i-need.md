@@ -1,56 +1,65 @@
 ---
-title: Which File Do I Need to Install?
-page_title: Which File Do I Need to Install?
-description: This article describes the installation packages for the Telerik UI for {{ site.framework_name }} and for the Demos application.
+title: Installation Approaches
+page_title: Installation Approaches
+description: "Learn which installation approach to choose when starting your work with the Telerik UI for WPF controls."
 slug: installation-installing-which-file-do-i-need
 tags: which,file,do,i,need,to,install?
 published: True
 position: 1
 ---
 
-# Which File Do I Need to Install?
+# Installation Approaches
 
-The following topic describes the installation packages for the Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} and for the Demos solution.
+To start working with Telerik UI for {{ site.framework_name }}, you can choose the installation approach that corresponds to your needs and requirements.
 
-Each installation package comes in three types:
+The Telerik UI for {{ site.framework_name }} suite supports the following installation approaches:
 
-* __MSI__ file for automatic installation.
+* Installation through the Telerik NuGet feed.
 
-* __ZIP__ file for manual (advanced) installation.
+* Installation through the Telerik UI for {{ site.framework_name }} MSI file.
 
-* __DLL__ files only (a.k.a. HOTFIX).
+* Installation through the Telerik UI for {{ site.framework_name }} ZIP file.
 
-{% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} Demos application comes in a zip package which you can extract on your machine.
+* Installation through the Telerik UI for {{ site.framework_name }} ZIP file (latest internal build).
 
-## MSI File For Automatic Installation
+* Installation with the Telerik Visual Studio extension.
 
-The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy and automatic installation of a product. It installs the controls on your computer in a folder in your Program Files named __Progress__, and automatically creates the necessary virtual folders and projects.
+## NuGet Installation
 
-For more information about how to install UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from MSI file, read [here]{% if site.site_name == 'WPF' %}({%slug installation-installing-from-msi-wpf%}).{% endif %}{% if site.site_name == 'Silverlight' %}({%slug installation-installing-from-msi%}).{% endif %}
+The [NuGet](https://docs.microsoft.com/en-us/nuget/what-is-nuget) packages are a single ZIP file with the `.nupkg` extension that contains the compiled code (DLLs), other related files, and a descriptive manifest that includes information such as the version package number.
 
->tipIf you already have Telerik UI installed from a MSI, you can safely install an updated version - the installer will keep your existing installation. The new files will be placed in a separate folder and the new installation does not damage the common installer files.
+{% if site.site_name == 'WPF' %}
+* For more information about how to install Telerik UI for {{ site.framework_name }} with NuGet, refer to the article on [installation with NuGet]({% slug nuget-installation %}).
 
-## ZIP File For Manual Installation
+* For more information about restoring Telerik UI for {{ site.framework_name }} NuGet packages in your CI workflow, refer to the article on [using token-based NuGet authentication]({% slug nuget-keys %}).
+{% else %}
+* For more information about how to install Telerik UI for {{ site.framework_name }} with NuGet, refer to the article on [installation with NuGet]({% slug installation-installing-from-nuget %}).
+{% endif %}
 
-The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used to manual (advanced) installs and for upgrading/updating purposes.
+## MSI File Installation
 
-For more information about how to install Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} from ZIP file, read [here]{% if site.site_name == 'WPF' %}({%slug installation-installing-from-zip-wpf%}).{% endif %}{% if site.site_name == 'Silverlight' %}({%slug installation-installing-from-zip%}).{% endif %}
+The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy installation of a product. The Telerik UI for {{ site.framework_name }} MSI file installs the controls on your computer in a folder in your **Program Files** named **Progress**, and automatically creates the necessary virtual folders and projects.
 
-## Latest Internal Binaries (LIB)
+>tip If you already have Telerik UI installed from an MSI, you can safely install an updated version. The installer will keep your existing installation. The new files will be placed in a separate folder and the new installation will not damage the common installer files.
 
-The Latest Internal Build (LIB) is a weekly distribution of the UI for {{ site.framework_name }} assemblies, built against the latest development environment. It contains all the newest bug fixes. And it is released on a weekly basis. Read more about this in the [LIB]({%slug installation-installing-lib%}) article.
+For more information about how to install Telerik UI for {{ site.framework_name }} from an MSI file, refer to the article on [first steps with the MSI file installation]({% slug installation-installing-from-msi-wpf %}).
 
-## Demos Application
+## ZIP File Installation
 
-The Demos Application ZIP package does not include the Telerik assemblies, so in order to build the Demos solution, you should have the latest UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} components installed on your machine and that the example projects reference these assemblies. The referenced Telerik assemblies in the Examples projects by default are taken from the Telerik {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} installation directory on your machine.
-      
+The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used for advanced manual installation and for upgrading and updating purposes.
 
->tipIf you have multiple UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %} installations on your machine the projects might sometimes reference an older installed version of the components. In that case you can run the {% if site.site_name == 'WPF' %}[Upgrade Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}){% endif %}{% if site.site_name == 'Silverlight' %}[Upgrade Wizard]({%slug radcontrols-for-silverlight-vs-extensions-upgrading%}){% endif %} to update the referenced assemblies to use the latest version of the components in the projects you need to run.
-   
-{% if site.site_name == 'Silverlight' %}   
-## See Also
+For more information about how to install Telerik UI for {{ site.framework_name }} from a ZIP file, refer to the article on [first steps with the ZIP file installation]({% slug installation-installing-from-zip-wpf %}).
 
- * [Installing UI for Silverlight from MSI File]({%slug installation-installing-from-msi%})
- 
- * [Installing UI for Silverlight from ZIP File]({%slug installation-installing-from-zip%})
- {% endif %}
+## ZIP File Installation (latest internal build)
+
+The latest internal build (LIB) are regular releases containing bug fixes.
+
+For more information about how to install LIB, refer to the article on [latest internal build]({%slug installation-installing-lib %}).
+
+## Visual Studio Extension Installation
+
+The Telerik UI for {{ site.framework_name }} library provides an option for preconfigured manual installation using the Telerik Visual Studio (VS) extension, which contains the Telerik UI for {{ site.framework_name }} DLLs and referenced assembly files.
+
+For more information about how to install Telerik UI for {{ site.framework_name }} with the VS extension, refer to the article on [first steps with the Telerik VS extension installation]({% slug radcontrols-for-wpf-vs-extensions-project-creation %}).
+
+

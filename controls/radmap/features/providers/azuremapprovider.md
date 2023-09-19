@@ -93,27 +93,45 @@ The event arguments of the NoStyleVectorTileRendering event are of the type `NoS
     private void AzureMapsProvider_NoStyleVectorTileRendering(object sender, NoStyleVectorTileRenderingEventArgs e)
     {
         VectorTileLayerRenderInfo trafficLayer = e.Layers.Where(x => x.Name == "Traffic flow").FirstOrDefault();
-
+    
         if (trafficLayer != null)
         {
             foreach (VectorTileFeatureRenderInfo featureInfo in trafficLayer.Features)
             {
                 // Set layer type 
                 featureInfo.LayerType = Telerik.Windows.Controls.Map.VectorTiles.Styles.LayerType.Line;
-
+    
                 // Get data values from Properties.
                 double trafficValue = (double)featureInfo.Properties["traffic_level"];
-
-                // Set style properties depending on data values and zoom level.
-                featureInfo.Paint.LineColor = Brushes.Red.Color;
-                featureInfo.Paint.LineWidth = 5;
-
-                // Filter traffic rendering depending on traffic level.
+    
                 if (trafficValue < 0)
                 {
                     featureInfo.Cancel = true;
                 }
+    
+                if (!featureInfo.Cancel)
+                {
+                    featureInfo.Paint.LineWidth = 2;
+    
+                    this.SetLineColor(featureInfo, trafficValue);
+                }
             }
+        }
+    }
+    
+    private void SetLineColor(VectorTileFeatureRenderInfo featureInfo, double trafficValue)
+    {
+        if (trafficValue >= 0 && trafficValue < 50)
+        {
+            featureInfo.Paint.LineColor = Brushes.Green.Color;
+        }
+        else if (trafficValue >= 50 && trafficValue < 65)
+        {
+            featureInfo.Paint.LineColor = Brushes.Yellow.Color;
+        }
+        else if (trafficValue >= 65)
+        {
+            featureInfo.Paint.LineColor = Brushes.Red.Color;
         }
     }
 {{endregion}}

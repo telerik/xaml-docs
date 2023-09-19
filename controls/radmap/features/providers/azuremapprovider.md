@@ -12,7 +12,7 @@ position: 9
 
 The `RadMap` control supports visualizing tile data using the [Azure Maps services](https://azure.microsoft.com/en-us/products/azure-maps/). This is done via the `AzureMapProvider` class. This provider supports both raster and vector sources.
 
->important The AzureMapProvider class derives from `VectorTileMapProvider`, which works with Newtonsoft.Json framework. To use the AzureMapProvider, add a reference to the corresponding .dll or install the [nuget package](https://www.nuget.org/packages/Newtonsoft.Json/).
+>important The AzureMapProvider class derives from `VectorTileMapProvider`, which works with the Newtonsoft.Json framework. To use the AzureMapProvider, add a reference to the corresponding .dll or install the [nuget package](https://www.nuget.org/packages/Newtonsoft.Json/).
 
 ## Setting the AzureMapProvider
 
@@ -31,7 +31,7 @@ __RadMap with AzureMapProvider__
 
 ![{{ site.framework_name }} RadMap with AzureMapProvider](images/radmap-features-providers-azuremapprovider-0.png)
 
->If the provider’s initialization fails, the AzureMapProvider will raise its `InitializationFaulted`` event. The event can be fired for example, when the internet connection is lost or when the service is unavailable. The event arguments are of type `InitializationFaultEventArgs`` type. The arguments provides an `Error`` property which contains the exception which is thrown while initialization.
+>If the provider’s initialization fails, the AzureMapProvider will raise its `InitializationFaulted`` event. The event can be fired for example, when the internet connection is lost or when the service is unavailable. The event arguments are of type `InitializationFaultEventArgs`` type. The arguments provide an `Error`` property which contains the exception that is thrown while initialization.
 
 ## Specifying the TileSet
 
@@ -74,11 +74,11 @@ __AzureMapProvider with specified AzureTileSet instances for the UserAccessibleM
 
 ## Styling Vector Tiles via Custom Styles
 
-The RadMap's default styling of vector tiles does not support the vector tiles of the Azure Maps services. Instead, you can use a third-party styles to style them, for example, using [TomTom Map Styles](https://developer.tomtom.com/map-display-api/documentation/mapstyles/map-styles). After retrieving the custom style, set it to the `StyleFileSource` property of the AzureMapProvider instance.
+The RadMap's default styling of vector tiles does not support the vector tiles of the Azure Maps services. Instead, you can use third-party styles to style them, for example, using [TomTom Map Styles](https://developer.tomtom.com/map-display-api/documentation/mapstyles/map-styles). After retrieving the custom style, set it to the `StyleFileSource` property of the AzureMapProvider instance.
 
 ## Manually Customizing the Appearance of the Vector Tiles via NoStyleVectorTileRenderingEventArgs Event
 
-An alternative approach for styling the vector tiles is via the `NoStyleVectorTileRenderingEventArgs` event. It will be raised for each vector tile before being rendered.
+An alternative approach for styling the vector tiles is via the `NoStyleVectorTileRendering` event. It will be raised for each vector tile before being rendered.
 
 The event arguments of the NoStyleVectorTileRendering event are of the type `NoStyleVectorTileRenderingEventArgs` and expose the following properties:
 

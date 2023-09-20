@@ -1,5 +1,5 @@
 ---
-title: Add a Button Column
+title: Customize Cell Content
 page_title: Add a Button Column
 description: See examples demonstrating how to add a column with a delete button for each row within RadGridView - Telerik's {{ site.framework_name }} DataGrid.
 slug: gridview-add-button-column
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Add a Button Column
+# Customize Cell Content
 
 This article demonstrates how to add a column with a delete button for each row. We will benefit from the static [RadGridViewCommands]({%slug gridview-commands-overview%}) class to automatically delete the corresponding row item upon clicking the button. **Figure 1** illustrates the desired result.
 

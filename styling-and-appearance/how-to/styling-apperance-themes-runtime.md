@@ -124,6 +124,7 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 ## See Also
 
+* [Switching Theme Color Variation at Runtime]({%slug kb-theming-change-theme-variation-runtime%})
 * [Switching Themes at Design-time]({%slug styling-apperance-swiching-themes-design-time%})
 * [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
 * [Setting a Theme on MS Controls]({%slug styling-apperance-themes-mscontrols%})

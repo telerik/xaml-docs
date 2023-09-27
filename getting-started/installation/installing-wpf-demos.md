@@ -11,57 +11,59 @@ site_name: WPF
 
 # Installing WPF Demos Application
 
-__Telerik WPF Demos application__ provides a rich list of examples showcasing all the important features of Telerik UI for WPF.
+Telerik WPF Demos application provides a rich list of examples showcasing all the important features of Telerik UI for WPF.
+
+![WPF Demos application picture](images/installing-wpf-demos-0.png)
 
 In this topic we will go through the following sections:
 
-* [How to Run WPF Demos Application](#how-to-run-wpf-demos-application)
+* [Installation](#installation)
 
-* [How to Get the Source Code](#how-to-get-the-source-code)
+* [Getting the Source Code](#getting-the-source-code)
 
 * [Common Issues](#common-issues)
 
-## How to Run WPF Demos Application
+## Installation
 
-WPF Demos application could be accessed from the following link: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
+The demos can be downloaded at [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/) as a ClickOnce application.
 
-You can also download the application from the Windows Store: [<img style="width:125px;height:50px" alt="Get it from Microsoft" src="https://developer.microsoft.com/en-us/store/badges/images/English_get-it-from-MS.png"/>](https://www.microsoft.com/store/apps/9PB1M527GK9C?cid=storebadge&ocid=badge)
+You can also download the application from the Windows Store.
 
-As it is deployed as a ClickOnce application it requires the following components in order to be installed and run locally:
+[<img style="width:125px;height:50px" alt="Get it from Microsoft" src="https://developer.microsoft.com/en-us/store/badges/images/English_get-it-from-MS.png"/>](https://www.microsoft.com/store/apps/9PB1M527GK9C?cid=storebadge&ocid=badge)
 
-* Windows Installer 4.5 
+The application requires the following component in order to be installed and run locally:
 
-* Microsoft .NET Framework 4.5
+* [Microsoft .NET Desktop Runtime 6.0.21 (x64)](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-* SQL Server 2008 SP3 Express or newer **(not required with R3 2017 SP1 and later)**
-
->tip If these components are already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. Note that lauching the ClickOnce application (via the launch hyperlink) is possible only in Internet Explorer. Otherwise, you will need to [install](https://demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
+If this component is already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. Note that lauching the ClickOnce application (via the launch hyperlink) is possible only in Internet Explorer. Otherwise, you will need to [install](https://demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 
 >important If you have a previous installation of WPF Demos, make sure to uninstall it before installing a newer version.
 
-## How to Get the Source Code
+## Getting the Source Code
 
-Visual Studio solution containing the source code of the examples is available in the Telerik UI for WPF download page inside your Telerik account. Follow the next steps in order to download it:
+Visual Studio solution containing the source code of the examples is available in the [Telerik UI for WPF download page](https://www.telerik.com/account/downloads/product-download?product=RCWPF) in your Telerik account. 
+
+Follow the next steps in order to download it:
 
 1. Go to your [account page at telerik.com](https://www.telerik.com/account/) and log in, if necessary.
 
 2. Click on the __DOWNLOADS__ button. This will open the list with all available products for your account.
 
-	![{{ site.framework_name }} Progress Site Downloads Tab](images/installing-wpf-demos-0.png)
+	![{{ site.framework_name }} Progress Site Downloads Tab](images/installing-wpf-demos-1.png)
 
 3. Click on the __Progress Telerik UI for WPF__ item in the products list. This will open the page with all available downloads for the WPF product.
 
-	![{{ site.framework_name }} Progress Site Telerik UI for WPF Product Title](images/installing-wpf-demos-1.png)
+	![{{ site.framework_name }} Progress Site Telerik UI for WPF Product Title](images/installing-wpf-demos-2.png)
 
 4. Find the __Telerik_UI_for_WPF_[version]_Demos.zip__ file and click on it in order to download the .zip.
 
-	![{{ site.framework_name }} Progress Site Telerik UI for WPF Demos Archive](images/installing-wpf-demos-2.png)
+	![{{ site.framework_name }} Progress Site Telerik UI for WPF Demos Archive](images/installing-wpf-demos-3.png)
 
 5. Unzip the file and run the __ExamplesCS_WPF.sln__ file.
 
-	![{{ site.framework_name }} ExamplesCS_WPF Solution](images/installing-wpf-demos-3.png)
+	![{{ site.framework_name }} ExamplesCS_WPF Solution](images/installing-wpf-demos-4.png)
 
->tip The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation of Telerik UI for WPF suite with the same version as the downloaded demos. 
+6. The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation (via the .msi installer) of the Telerik UI for WPF suite with the same version as the downloaded demos. This will create an __environment variable__ called `TelerikWPFDir` which points to the Binaries folder in the installation directory (example: *C:\Program Files (x86)\Progress\Telerik UI for WPF R3 2023*). The environment variable is used by the HintPaths in the source code to resolve the Telerik assemblies.
 
 ## Common Issues
 

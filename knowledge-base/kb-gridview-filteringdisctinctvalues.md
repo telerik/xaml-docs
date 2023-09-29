@@ -1,0 +1,48 @@
+---
+title: RadGridView Column Filtering Enum Values
+description: "How to filter Enum values in RadGridView column."
+type: how-to
+page_title: Filtering distinct values in RadGridView column for WPF.
+slug: kb-gridview-filtering-disctinctvalues
+position: 0
+tags: GridView, Filtering, Distinct Values
+ticketid: 1615231
+res_type: kb
+---
+
+## Environment
+
+<table>
+    <tbody>
+        <tr>
+            <td>Product Version</td>
+            <td>2023.2.718</td>
+        </tr>
+        <tr>
+            <td>Product</td>
+            <td>RadGridView for WPF</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## Description
+
+How to filter Enum values in `GridView` column and display all of them.
+
+## Solution
+
+You can use the [DistinctValuesLoading]({%gridview-filtering-customizing-distinct-values%}) event of `RadGridView`.
+
+#### __[C#]__
+{{region kb-gridview-filtering-disctinctvalues}}
+	private void RadGridView_DistinctValuesLoading(object sender, 	Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
+	{
+		var dataColumn = e.Column as GridViewBoundColumnBase;
+		if (dataColumn != null && dataColumn.DataType.IsEnum)
+		{
+			e.ItemsSource = Enum.GetValues(dataColumn.DataType);
+		}
+	}
+{{endregion}}
+

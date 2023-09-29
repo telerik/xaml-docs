@@ -1,11 +1,11 @@
 ---
-title: FileDialogs Demos Not Available in WPF Control Examples App
-description: "How to run FileDialogs WPF Demos application." 
-type: how-to
-page_title: How to run FileDialogs WPF Demos.
-slug: kb-filedialogsdemos-notavailable
+title: WPF Controls Demos Not Available in WPF Control Examples App
+description: "WPF controls Demos application not available." 
+type: troubleshooting
+page_title: Run WPF Controls Demos.
+slug: kb-controlsdemos-notavailable
 position: 0
-tags: filedialogs, demos
+tags: controls, demos
 ticketid: 1615001
 res_type: kb
 ---
@@ -28,10 +28,12 @@ res_type: kb
 
 ## Description
 
-How to run `FileDialogs Demos` in `WPF Control Examples` application. 
-This often happens when you have an older installation of the `WPF Demos` application and you install the latest one. It is related to cache in the [ClickOnce]({%kb-sdk-samples-browser-cannot-be-installed-or-run%}) files of the application.
+The control examples are not loading in the WPF Controls Examples application.
+This often happens when you have an older installation of the `WPF Demos` application and you install the latest one. It is related to cache in the [ClickOnce]({%slug kb-sdk-samples-browser-cannot-be-installed-or-run%}) files of the application located in C:\Users\\&lt;your_user&gt;\AppData\Local\Apps\2.0.
+![WPF RadHeatMap Overview](images/WPFControls-NotAvailable.png)
 
 ## Solution
 
-1) You can delete the application manually from the [AppData folder]({%installing-wpf-demos%}).
-2) After that, you download and install it again.
+1) Close the WPF Demos application.
+2) You can delete the application manually from the [AppData folder]({%slug installing-wpf-demos%}) located in the.
+3) After that, you download and install it again.

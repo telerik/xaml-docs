@@ -73,6 +73,7 @@ intro_columns:
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "SvgImage": "radsvgimage-overview"
       "WebCam": "radwebcam-overview"
 -
   categories:

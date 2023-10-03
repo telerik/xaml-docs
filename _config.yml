@@ -95,6 +95,8 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radsvgimage:
+        title: RadSvgImage
     controls/radhighlighttextblock:
         title: RadHighlightTextBlock
     controls/radslideview:
@@ -3581,6 +3583,11 @@ defaults:
         path: "controls/radpdfviewer"
     values:
         title_prefix: "WPF PdfViewer"
+-   
+    scope:
+        path: "controls/radsvgimage"
+    values:
+        title_prefix: "WPF SvgImage"
 -
     scope:
         path: "controls/radpersistenceframework"
@@ -4012,6 +4019,7 @@ intro_columns:
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "SvgImage": "radsvgimage-overview"
       "WebCam": "radwebcam-overview"
 
 sdk_examples: "sdk_wpf.json"

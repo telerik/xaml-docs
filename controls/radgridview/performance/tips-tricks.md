@@ -51,7 +51,9 @@ __RadGridView__'s API allows you to tweak your application for optimal performan
 
 * It is also recommended to set the **IsPropertyChangedAggregationEnabled** property to **False**. Its default value is **True**, meaning that the occurrence of the PropertyChanged event will be handled on a fixed time period using a DispatcherTimer, which improves the rendering performance when there are a large number of value updates in a short period of time. If this is not the case in your application, you can disable this property so that the resources taken by the aforementioned DispatcherTimer will be freed, thus improving the overall performance of the control.
 
+{% if site.site_name == 'WPF' %}
 * Consider switching to [RadVirtualGrid]({%slug virtualgrid-overview%}). The component lacks some of the `RadGridView`'s features, but it is very fast in comparison.
+{% endif %}
      
 ## See Also
 

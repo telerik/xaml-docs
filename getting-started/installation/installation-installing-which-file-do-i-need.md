@@ -42,13 +42,22 @@ The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for
 
 >tip If you already have Telerik UI installed from an MSI, you can safely install an updated version. The installer will keep your existing installation. The new files will be placed in a separate folder and the new installation will not damage the common installer files.
 
-For more information about how to install Telerik UI for {{ site.framework_name }} from an MSI file, refer to the article on [first steps with the MSI file installation]({% slug installation-installing-from-msi-wpf %}).
+{% if site.site_name == 'WPF' %}
+For more information about how to install Telerik UI for WPF from an MSI file, refer to the article on [first steps with the MSI file installation]({% slug installation-installing-from-msi-wpf %}).
+{% else %}
+For more information about how to install Telerik UI for Silverlight from an MSI file, refer to the article on [first steps with the MSI file installation]({% slug installation-installing-from-msi %}).
+{% endif %}
 
 ## ZIP File Installation
 
 The [ZIP](http://en.wikipedia.org/wiki/ZIP_%28file_format%29) is used for advanced manual installation and for upgrading and updating purposes.
 
-For more information about how to install Telerik UI for {{ site.framework_name }} from a ZIP file, refer to the article on [first steps with the ZIP file installation]({% slug installation-installing-from-zip-wpf %}).
+{% if site.site_name == 'WPF' %}
+For more information about how to install Telerik UI for WPF from a ZIP file, refer to the article on [first steps with the ZIP file installation]({% slug installation-installing-from-zip-wpf %}).
+{% else %}
+For more information about how to install Telerik UI for Silverlight from a ZIP file, refer to the article on [first steps with the ZIP file installation]({% slug installation-installing-from-zip %}).
+{% endif %}
+
 
 ## ZIP File Installation (latest internal build)
 
@@ -60,6 +69,10 @@ For more information about how to install LIB, refer to the article on [latest i
 
 The Telerik UI for {{ site.framework_name }} library provides an option for preconfigured manual installation using the Telerik Visual Studio (VS) extension, which contains the Telerik UI for {{ site.framework_name }} DLLs and referenced assembly files.
 
-For more information about how to install Telerik UI for {{ site.framework_name }} with the VS extension, refer to the article on [first steps with the Telerik VS extension installation]({% slug radcontrols-for-wpf-vs-extensions-project-creation %}).
+{% if site.site_name == 'WPF' %}
+For more information about how to install Telerik UI for WPF with the VS extension, refer to the article on [first steps with the Telerik VS extension installation]({% slug radcontrols-for-wpf-vs-extensions-project-creation %}).
+{% else %}
+For more information about how to install Telerik UI for Silverlight with the VS extension, refer to the article on [first steps with the Telerik VS extension installation]({% slug radcontrols-for-silverlight-vs-extensions-project-configuration %}).
+{% endif %}
 
 

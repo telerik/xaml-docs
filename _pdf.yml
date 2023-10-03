@@ -73,6 +73,7 @@ intro_columns:
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "SvgImage": "radsvgimage-overview"
       "WebCam": "radwebcam-overview"
 -
   categories:
@@ -104,6 +105,7 @@ intro_columns:
       "CircularProgressBar": "radcircularprogressbar-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
+      "HighlightTextBlock": "radhighlighttextblock-overview"
       "PersistenceFramework": "persistence-framework-overview"
       "ProgressBar": "radprogressbar-overview"
       "StepProgressBar": "stepprogressbar-overview"

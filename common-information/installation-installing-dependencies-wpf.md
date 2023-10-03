@@ -66,6 +66,7 @@ RadGanttView	|	Telerik.Windows.Controls.GanttView, Telerik.Windows.Scheduling.Co
 RadGauge	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadGridView	|	Telerik.Windows.Controls.GridView, Telerik.Windows.Data, Telerik.Windows.Controls.Input
 RadHeatMap	|	Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
+RadHighlightTextBlock	|	Telerik.Windows.Controls
 RadImageEditor	|	Telerik.Windows.Controls.ImageEditor, Telerik.Windows.Controls.Input
 RadLayoutControl	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Navigation
 RadLegend	|	Telerik.Windows.Controls
@@ -103,6 +104,7 @@ RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.
 RadSpreadsheet	|	Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
 RadStepProgressBar	|	Telerik.Windows.Controls
+RadSvgImage	|	Telerik.Windows.Controls
 RadSyntaxEditor	|	Telerik.Windows.Controls.Input, Telerik.Windows.SyntaxEditor.Core
 RadTabbedWindow	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadTabControl	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data

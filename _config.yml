@@ -95,6 +95,10 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radsvgimage:
+        title: RadSvgImage
+    controls/radhighlighttextblock:
+        title: RadHighlightTextBlock
     controls/radslideview:
         title: RadSlideView
     controls/radpipspager:
@@ -3579,11 +3583,21 @@ defaults:
         path: "controls/radpdfviewer"
     values:
         title_prefix: "WPF PdfViewer"
+-   
+    scope:
+        path: "controls/radsvgimage"
+    values:
+        title_prefix: "WPF SvgImage"
 -
     scope:
         path: "controls/radpersistenceframework"
     values:
         title_prefix: "WPF PersistenceFramework"
+-
+    scope:
+        path: "controls/radhighlighttextblock"
+    values:
+        title: "WPF HighlightTextBlock"
 -
     scope:
         path: "controls/radpipspager"
@@ -3928,6 +3942,7 @@ intro_columns:
       "CircularProgressBar": "radcircularprogressbar-overview"
       "DesktopAlert": "raddesktopalert-overview"
       "DragDropManager": "dragdropmanager-overview"
+      "HighlightTextBlock": "radhighlighttextblock-overview"
       "PersistenceFramework": "persistence-framework-overview"
       "ProgressBar": "radprogressbar-overview"
       "StepProgressBar": "stepprogressbar-overview"
@@ -4004,6 +4019,7 @@ intro_columns:
     title: "Media"
     items:
       "ImageEditor": "radimageeditor-overview"
+      "SvgImage": "radsvgimage-overview"
       "WebCam": "radwebcam-overview"
 
 sdk_examples: "sdk_wpf.json"

@@ -1,8 +1,8 @@
 ---
-title: How To Restrict the First Axis Label to be Within the Chart Pane Width
-description: "How to restrict the first axis label to be within the Chart Pane width of CartesianChart element."
+title: Restrict the First Axis Label to be Within the RadChartView Pane Width
+description: "How to restrict the first axis label to be within the Chart plot area width of CartesianChart element."
 type: how-to
-page_title: How to restrict the first axis Label to be within the Chart Pane width of RadCartesianChart for WPF.
+page_title: Avoid first axis label to be rendered outside of the plot area clip.
 slug: kb-restrictfirstaxis-to-chartpanewidth
 position: 0
 tags: axis, chart pane, label, cartesianchart
@@ -28,11 +28,11 @@ res_type: kb
 
 ## Description
 
-How to restrict the first axis label to be within the `Chart Pane` width of `RadCartesianChart` element.
+How to restrict the first axis label to be within the [plot area]({%slug radchartview-features-plot-area%}) width of `RadCartesianChart` element.
 
 ## Solution
 
-Manually clip the horizontal axis based on the plot area of the chart.
+Manually clip the horizontal axis based on the plot area of the chart. To do this, set the `Clip` property of the axis.
 
 #### __[C#]__
 {{region kb-icontemplate-remove-indenting}}

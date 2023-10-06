@@ -1,8 +1,8 @@
 ---
-title: Formatting Display of DateTime Values in Selection Box
-description: "How to convert all DateTime values to list of formatted strings."
+title: Formatting Display of DateTime Values in RadComboBox
+description: "How to convert all DateTime values to list of formatted strings in RadComboBox."
 type: how-to
-page_title: How to Display DateTime Values as Formatted Strings in Selection Box for WPF
+page_title: How to Display DateTime Values as Formatted Strings in RadComboBox for WPF
 slug: kb-datetimevalues-to-formattedstrings
 position: 0
 tags: DateTime, AllowMultipleSelection, MultipleSelectionBoxTemplate
@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-How to format `DateTime` values to strings in `SelectionBox`.
+How to format `DateTime` values to strings in [Selection Box] ({%slug radcombobox-general-information-visual-structure%}) element of the `RadComboBox`.
 
 ## Solution
 

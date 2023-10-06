@@ -30,5 +30,4 @@ The SvgImage component allows you to display SVG (Scalable Vector Graphics) imag
 > Check out the demos application at [demos.telerik.com](https://demos.telerik.com/wpf/).
 
 ## See Also
-* [Visual Structure]({%slug radsvgimage-visual-structure%})
 * [Getting Started]({%slug radsvgimage-getting-started%})

@@ -10,7 +10,7 @@ position: 4
 
 # Toggle Switch Button
 
-__RadToggleSwitchButton__ is a control design to display two exclusive choices. The control is represented by a track in which the thumb is smoothly sliding left and right. The two states content can be customized along with their position. The button derives from our __RadToggleButton__ control. Because of the inheritance, it has all of the features of the __RadToggleButton__ control. 
+__RadToggleSwitchButton__ is a control designed to display two exclusive choices. The control is represented by a track in which the thumb is smoothly sliding left and right. The two states content can be customized along with their position. The button derives from our __RadToggleButton__ control. Because of the inheritance, it has all of the features of the __RadToggleButton__ control. 
 
 >tip You can see how to use ICommand with a button in the [Commands]({%slug radbuttons-features-commands%}) topic.	  
 
@@ -61,11 +61,11 @@ To make __RadToggleSwitchButton__ to go into a three-state mode you can just set
 
 ## RadToggleSwitchButton Properties
 
-The ToggleSwitchButton expose several properties which can be used to customized its appearance.
+The ToggleSwitchButton exposes several properties which can be used to customize its appearance.
 
 ### __CheckedContent__ and __UncheckedContent__
 
-Nevertheless the RadToggleSwitchButton derives from RadToggleButton, the Content property here is not respected. Two new properties are created. These properties set the check and uncheck content state of the ToggleSwitchButton. Their position depends on the __ContentPosition__ property.
+Nevertheless, the RadToggleSwitchButton derives from RadToggleButton, the Content property here is not respected. Two new properties are created. These properties set the check and uncheck content state of the ToggleSwitchButton. Their position depends on the __ContentPosition__ property.
 
 #### __[XAML] Example 4: Setting Check/UncheckContent property__
 {{region xaml-radbuttons-features-toggle-switch-button_6}}

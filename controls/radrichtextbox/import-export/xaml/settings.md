@@ -12,6 +12,7 @@ position: 1
 
 __XamlFormatProvider__ allows for import of XAML documents and respectively export of RadRichTextBox to XAML file. Additionally, the import/export settings provide modification options. The current article outlines the available settings.
 
+ >note Since R2 2023 SP1 the XamlFormatProvider automatically verifies the imported XAML. More information is available in the [Xaml Verification]({%slug radrichtextbox-import-export-xaml-verification%}) article.
 
 ## Export Settings
 
@@ -45,9 +46,24 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 ### Import Settings Events 
 * __ImageImported__: This event is fired every time when the __Image__ is imported.
 * __InlineUIContainerImported__: This event is fired every time when the __InlineUIContainer__ is imported.
+* __PreProcessingXaml__: This event is fired right before the XAML is parsed and allows you to check it for undesired content. The event arguments expose the following options:
+	- __Xaml__: The XAML string that is being imported. You can changed it and then pass it again to the property so the changed XAML is imported. 
+	- __SkipXamlValidation__: Allows you to skip the default XAML types validation. 
 
-#### __[C#] Example 2: Setting the ExportSettings of the XamlFormatProvider__
+#### __[C#] Example 2: Disable the default XAML validation__
+{{region c#-radrichtextbox-import-export-xaml-settings_2}}
+
+	XamlFormatProvider provider = new XamlFormatProvider();
+    provider.ImportSettings.PreProcessingXaml += (s, args) => { 
+    
+        args.SkipXamlValidation = true;
+    };
+
+{{endregion}}
+
+#### __[C#] Example 3: Setting the ExportSettings of the XamlFormatProvider__
 {{region c#-radrichtextbox-import-export-xaml-settings_1}}
+
 	XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();
 	XamlImportSettings settings = new XamlImportSettings();
 	xamlFormatProvider.ImportSettings = settings;
@@ -57,7 +73,12 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 	{
 		var img = e.Image;
 	}
+	
 {{endregion}}
+
+### Properties
+
+* __AllowedAssemblies__: This collection contains the assemblies that contains the allowed types for the XAML import.  
 
 ## See Also
 

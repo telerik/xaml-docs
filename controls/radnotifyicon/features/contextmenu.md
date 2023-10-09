@@ -15,7 +15,7 @@ You can display a context menu when the user interacts with the notify icon with
 
 The __TrayContextMenu__ property expects a value of type [RadContextMenu]({%slug contextmenu-getting-started%}). __Example 1__ demonstrates how it can be used. 
 
-#### __[XAML] Example 1: Setting PopupContent and PopupContentTemplate__
+#### __[XAML] Example 1: Setting TrayContextMenu__
 {{region xaml-radnotifyicon-contextmenu-0}}
     
     <telerik:RadNotifyIcon

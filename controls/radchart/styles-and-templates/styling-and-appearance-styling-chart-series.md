@@ -205,9 +205,9 @@ or
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_04.png)
 
-There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartArea__, which define the behavior of the palette. When __N__brushes are added, then the first __N__ series will use those brushes. If __PaletteBrushesRepeat__ is set to __True__, then the next __N__ series will again use the same colors. When set to __False__, the next series will fallback to use the other available resources.
+There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartArea__, which define the behavior of the palette. When __N__ brushes are added, then the first __N__ series will use those brushes. If __PaletteBrushesRepeat__ is set to __True__, then the next __N__ series will again use the same colors. When set to __False__, the next series will fallback to use the other available resources.
 
->For example if you use the __ChartArea____PaletteBrush__ collection with __PaletteBrushesRepeat__ set to __False__, when all of the brushes get used, the next series will fallback to the __RadChart____PaletteBrushes__ and after them to the theme resources.
+>For example if you use the __ChartArea__ __PaletteBrush__ collection with __PaletteBrushesRepeat__ set to __False__, when all of the brushes get used, the next series will fallback to the __RadChart__ __PaletteBrushes__ and after them to the theme resources.
 
 #### __XAML__
 

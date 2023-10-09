@@ -326,6 +326,15 @@ __RadTreeViewItem__ provides the option to control whether the item can be selec
 {{endregion}}
 
 > The __IsSelectable__ property is available since the __R3 2018__ version.
+
+## Performing Selection on the MouseLeftButtonUp Event
+
+RadTreeView exposes the `PerformSelectionOnMouseUp` property that allows you to specify if the selection will be executed on the `MouseLeftButtonUp` or the `MoseLeftButtonDown` event. The default value of this property is __False__. Setting the PerformSelectionOnMouseUp property to __True__ will execute the selection logic on the MouseLeftButtonUp event.
+
+#### __[XAML] Example 14: Setting the PerformSelectionOnMouseUp property__
+{{region radtreeview-features-treeviewitem-selection_19}}
+	<telerik:RadTreeView PerformSelectionOnMouseUp="True"/>
+{{endregion}}
 		
 ## See Also  
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})

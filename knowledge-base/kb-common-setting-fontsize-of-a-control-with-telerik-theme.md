@@ -60,7 +60,7 @@ The approach used in the above code snippets is applicable for the following the
 
 >If you are using a different theme, which does not have a palette, you can change the font size of the application through Application.Current.MainWindow.FontSize or apply it directly for the control you wish, e.g. this.dataGrid.FontSize = 20.
 
-## See Also
-[Available Themes](%slug common-styling-appearance-available-themes%)
-[Theme Helper](%slug styling-appearance-theme-helper%)
-[Switching Themes at Runtime](%slug styling-apperance-themes-runtime%)
+## See Also  
+* [Available Themes]({%slug common-styling-appearance-available-themes%})
+* [Theme Helper]({%slug styling-appearance-theme-helper%})
+* [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%})

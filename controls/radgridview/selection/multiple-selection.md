@@ -21,7 +21,7 @@ __RadGridView__ allows users to select more than one item from the displayed dat
 	</telerik:RadGridView>
 {{endregion}}
 
-#### __[C#] Example 1: Set SelectionMode____
+#### __[C#] Example 1: Set SelectionMode__
 
 {{region cs-gridview-multiple-selection_1}}
 	this.radGridView.SelectionMode = System.Windows.Controls.SelectionMode.Extended;

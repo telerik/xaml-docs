@@ -29,7 +29,7 @@ This article lists several settings that can be applied in order to improve the 
 
 * Use the [clustering]({%slug radmap-heatures-visualization-layer-clustering%}) feature. This will allow you to combine several shapes into a single one when they start overlapping.
 
-* If using a [provider]({%slug radmap-features-providers%}), disable the tiles caching by setting the __IsCachingTilesEnabled__ property of the provider to __False__. 
+* If using a [provider]({%slug radmap-features-providers%}), disable the tiles caching by setting the __IsTileCachingEnabled__ property of the provider to __False__. 
 
 	#### __[XAML] Example 2: Disabling the tiles caching__
 	{{region radmap-performance-tips-1}}

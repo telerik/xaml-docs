@@ -10,7 +10,7 @@ position: 1
 
 # Migrating to .NET Core
 
-This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET Core 3.1, .NET 5, .NET 6 or .NET 7).
+This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET Core 3.1, .NET 6, or .NET 7).
 
 >tip Before proceeding with this topic you can check if your application's code is compatible with .NET Core using the [Microsoft Portability Analyzer](https://devblogs.microsoft.com/dotnet/are-your-windows-forms-and-wpf-applications-ready-for-net-core-3-0/) tool.
 

@@ -79,11 +79,11 @@ __RadSvgImage with set OverrideColor__
 
 The RadSvgImage control does not support the following SVG file format properties:
 
-* <audio/>
-* <mask/>
-* <mpath/>
-* <canvas/>
-* <video/>
+* &lt;audio/&gt;
+* &lt;mask/&gt;
+* &lt;mpath/&gt;
+* &lt;canvas/&gt;
+* &lt;video/&gt;
 
 ## See Also
 * [Animations]({%slug radsvgimage-animations%})

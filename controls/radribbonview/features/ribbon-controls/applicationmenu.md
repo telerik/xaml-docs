@@ -20,6 +20,7 @@ The __Application Menu__ is equivalent to the __File__ menu of the traditional m
 ![{{ site.framework_name }} RadRibbonView Application Button](images/RibbonView_ApplicationMenu_AppButton.png)
 
 The __Application Menu__ appears when a user __clicks__ the __Application Button__. This menu displays controls used to perform actions on the entire document, like Save, Print and Send. The __Application Menu__ also provides a list of recent documents, access to application options for changing user settings and preferences, and application exit. 
+
 ![{{ site.framework_name }} RadRibbonView Application Menu Areas](images/RibbonView_ApplicationMenu_Structure.png)
 
 >The class that represents the application menu is __Telerik.Windows.Controls.ApplicationMenu__.					
@@ -257,6 +258,7 @@ The next example demonstrates how to add several buttons as menu items to your a
 {{endregion}}
 
 Three ordinary __RadRibbonButtons__, one __RadRibbonSplitButton__ and one __RadRibbonDropDownButton__ are added. Also note the way for adding a separator element - __<telerik:Separator />__. The result can be seen on the snapshot below.
+
 ![{{ site.framework_name }} RadRibbonView with Ribbon Buttons Split Button and Separator](images/RibbonView_ApplicationMenu_Sample.png)
 
 ## Adding Content
@@ -346,6 +348,7 @@ The last element of the application menu is the __Footer Content__. This is the 
 {{endregion}}
 
 In this example, it is assumed that you are familiar with initializing the menu items and content of the application menu. If not, check out the previous two sections where the process of adding [menu items](#adding-menu-items) and [content](#adding-content) is described. The result of the last example is shown on the snapshot below. 
+
 ![{{ site.framework_name }} RadRibbonView Application Menu Footer Items](images/RibbonView_ApplicationMenu_Footer.png)
 
 ## Customizing the Application Menu Button
@@ -358,9 +361,7 @@ The __RadRibbonView__ class exposes the __ApplicationButtonDoubleClick__ event, 
 
 #### __XAML__
 {{region radribbonview-applicationmenu_9}}
-	<telerik:RadRibbonView ApplicationButtonDoubleClick="RadRibbonView_ApplicationButtonDoubleClick">
-	 ...
-	</telerik:RadRibbonView>
+	<telerik:RadRibbonView ApplicationButtonDoubleClick="RadRibbonView_ApplicationButtonDoubleClick"/>
 {{endregion}}
 
 The __ApplicationButtonDoubleClick__ event handler receives two arguments:
@@ -371,8 +372,8 @@ The __ApplicationButtonDoubleClick__ event handler receives two arguments:
 {{region radribbonview-applicationmenu_10}}
 	private void RadRibbonView_ApplicationButtonDoubleClick(object sender, RadRoutedEventArgs e)
 	{
-	 RadRibbonView ribbonView = sender as RadRibbonView;
-	 // Do some custom logic here.
+	 	RadRibbonView ribbonView = sender as RadRibbonView;
+	 	// Do some custom logic here.
 	}
 {{endregion}}
 

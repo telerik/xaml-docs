@@ -1,9 +1,9 @@
 ---
 title: Change Hand Icon to Any Loading Icon Upon Clicking on Filter
-description: "How to change hand icon to any loading icon upon clicking on filter"
+description: "How to modify hand icon to any loading icon upon clicking on filter"
 type: how-to
-page_title: How to change hand icon to any loading icon upon clicking on filter for WPF 
-slug: kb-changehandicon-to-loadingicon
+page_title: How to Change Hand Icon to Any Loading Icon Upon Clicking on Filter For WPF 
+slug: kb-busyindicator-change-hand-icon-to-loading-icon
 position: 0
 tags: loading icon, hand icon, filter, busyindicator
 ticketid: 1603581
@@ -31,10 +31,16 @@ How to change hand icon to any loading icon upon clicking on filter.
 
 ## Solution
 
-You can use the `MouseDown` event of the `RadGridView` control to get the `FilterDropDown`. Then you can override the cursor.
+You can use the `MouseLeftButtonDown` event of the `RadGridView` control to get the `FilterDropDown`. Then you can override the cursor.
 
 #### __[C#]__
 {{region kb-changehandicon-to-loadingicon}}
+	public MainWindow()
+	{
+		InitializeComponent();	
+		this.gridView.AddHandler(RadGridView.MouseLeftButtonDownEvent, new 			MouseButtonEventHandler(OnGridViewMouseLeftButtonDown), true);
+	}
+
 	private void OnGridViewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 	{
 		var clickedElement = (FrameworkElement)e.OriginalSource;

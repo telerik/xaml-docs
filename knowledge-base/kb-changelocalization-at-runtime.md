@@ -1,11 +1,11 @@
 ---
-title: PDFViewer Localization of The FindDialog During Runtime
+title: Change Localization of The FindDialog of PdfViewer During Runtime
 description: "How to change the localization at runtime."
 type: how-to
-page_title: How to change the localization of the FindDialog during runtime for WPF.
-slug: kb-changelocalization-at-runtime
+page_title: How to Change The Localization of The FindDialog of PdfViewer During Runtime for WPF.
+slug: kb-pdfviewer-change-localization-at-runtime
 position: 0
-tags: PDFViewer, FindDialog, localization, runtime
+tags: PdfViewer, FindDialog, localization, runtime
 ticketid: 1619188
 res_type: kb
 ---
@@ -20,7 +20,7 @@ res_type: kb
         </tr>
         <tr>
             <td>Product</td>
-            <td>RadPDFViewer for WPF</td>
+            <td>RadPdfViewer for WPF</td>
         </tr>
     </tbody>
 </table>
@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-How to change the `RadPDFViewer` localization during runtime.
+How to change the `RadPdfViewer` localization during runtime.
 
 #### __[C#]__
 {{region kb-changelocalization-at-runtime}}

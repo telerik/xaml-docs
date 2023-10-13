@@ -98,7 +98,7 @@ You can easily customize RadSplitButton by using the following properties:
 
 * `IsOpen`&mdash;Specifies whether the DropDownContent of the button is opened.
 
-* `IsChecked`&mdash;Specifies the checked state of the button when its ButtonPart behaves like a toggle button.
+* `IsChecked`&mdash;Specifies the checked state of the button when its ButtonPart behaves like a toggle button. To make this property work, the `IsToggle` property should be set to `true`.
 
 * `CloseOnEscape`&mdash;Specifies whether the drop-down should be closed when the `Esc` key gets pressed. The default value is `True`.
 

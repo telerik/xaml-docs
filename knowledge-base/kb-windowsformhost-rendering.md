@@ -1,9 +1,9 @@
 ---
-title: Windows Form Host is Not Rendering If the Panel is Collapsible
-description: "How to render Windows Form host if the Panel is collapsible"
+title: Windows Form Host is Not Rendering if The Panel is Collapsible
+description: "This article demonstrates how to render window host if the Panel is folding"
 type: how-to
-page_title: How to render Windows Form Host if the Panel is Collapsible in RadRibbonView for WPF
-slug: kb-windowsformhost-rendering
+page_title: Render Windows Form Host if The Panel is Collapsible in RadRibbonView For WPF
+slug: kb-ribbonview-window-host-rendering
 position: 0
 tags: windowsform, ribbonview, rendering, collapsible
 ticketid: 1603732

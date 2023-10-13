@@ -2,8 +2,8 @@
 title: RadGridView Column Filtering Enum Values
 description: "How to filter Enum values in RadGridView column."
 type: how-to
-page_title: Filtering distinct values in RadGridView column for WPF.
-slug: kb-gridview-filtering-disctinctvalues
+page_title: Filtering Distinct Values in RadGridView Column For WPF.
+slug: kb-gridview-filtering-disctinct-values
 position: 0
 tags: GridView, Filtering, Distinct Values
 ticketid: 1615231

@@ -19,7 +19,7 @@ res_type: kb
         </tr>
         <tr>
             <td>Product</td>
-            <td>RadBusyIndicator for WPF</td>
+            <td>RadGridView for WPF</td>
         </tr>
     </tbody>
 </table>

@@ -1,8 +1,8 @@
 ---
-title: Windows Form Host is Not Rendering if The Panel is Collapsible
-description: "This article demonstrates how to render window host if the Panel is folding"
-type: how-to
-page_title: Render Windows Form Host if The Panel is Collapsible in RadRibbonView For WPF
+title: WinForms Host is Not Rendering if The RadRibbonView Panel is Collapsible
+description: "The content of RadRibbonView is not visible when the control is minimizable and WindowsFormsHost is used."
+type: troubleshooting
+page_title: Render Windows Form Host when the RibbonView content is minimized
 slug: kb-ribbonview-window-host-rendering
 position: 0
 tags: windowsform, ribbonview, rendering, collapsible
@@ -25,15 +25,13 @@ res_type: kb
     </tbody>
 </table>
 
-
 ## Description
 
-How to render `Windows Form Host` if the `Panel` is collapsible in `RadRibbonView` element.
-
+The content of `RadRibbonView` is not visible when the control is [minimizable]({%slug radribbonview-minimization%}) and `WindowsFormsHost` is used.
 
 ## Solution
 
-To host `Windows Forms` content in a `WPF Window` or Popup, you should disable its transparency, otherwise the `Windows Forms` content won't get displayed.
+To host `WindowsFormsHost` content in a WPF Window or Popup, you should disable its transparency, otherwise the `WindowsFormsHost` content won't get displayed.
 
 #### __[C#]__
 {{region kb-windowsformhost-rendering}}

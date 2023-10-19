@@ -1,11 +1,11 @@
 ---
-title: Change Hand Icon to Any Loading Icon Upon Clicking on Filter
-description: "How to modify hand icon to any loading icon upon clicking on filter"
+title: Change Hand Cursor Icon to Loading Icon Upon Clicking on Filter in RadGridView Column Header
+description: "How to modify hand mouse cursor icon upon clicking on the filter drop down button of the GridView column header."
 type: how-to
-page_title: How to Change Hand Icon to Any Loading Icon Upon Clicking on Filter For WPF 
-slug: kb-busyindicator-change-hand-icon-to-loading-icon
+page_title: How to Replace the Hand Mouse Cursor When GridView Column Header Filter Icon is Clicked
+slug: kb-gridview-change-filteringdropdownbutton-hand-icon
 position: 0
-tags: loading icon, hand icon, filter, busyindicator
+tags: loading icon, hand icon, filter, gridview
 ticketid: 1603581
 res_type: kb
 ---
@@ -27,18 +27,18 @@ res_type: kb
 
 ## Description
 
-How to change hand icon to any loading icon upon clicking on filter.
+How to change the mouse cursor icon on click over the filter drop down button of the `RadGridView` column headers (the funnel icon).
 
 ## Solution
 
-You can use the `MouseLeftButtonDown` event of the `RadGridView` control to get the `FilterDropDown`. Then you can override the cursor.
+You can use the `MouseLeftButtonDown` event of the `RadGridView` control to get the `FilterDropDown` control. Then you can override the cursor on click.
 
 #### __[C#]__
 {{region kb-changehandicon-to-loadingicon}}
 	public MainWindow()
 	{
 		InitializeComponent();	
-		this.gridView.AddHandler(RadGridView.MouseLeftButtonDownEvent, new 			MouseButtonEventHandler(OnGridViewMouseLeftButtonDown), true);
+		this.gridView.AddHandler(RadGridView.MouseLeftButtonDownEvent, new MouseButtonEventHandler(OnGridViewMouseLeftButtonDown), true);
 	}
 
 	private void OnGridViewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -49,7 +49,7 @@ You can use the `MouseLeftButtonDown` event of the `RadGridView` control to get 
 		{
 			if (!filteringDropDown.IsDropDownOpen)
 			{
-				Mouse.OverrideCursor = Cursors.ArrowCD;                   
+				Mouse.OverrideCursor = Cursors.ArrowCD;                  
 			
 				// execute this code only if you want to return the cursor back to normal when the drop down content is opened
 				Dispatcher.BeginInvoke(new Action(() =>

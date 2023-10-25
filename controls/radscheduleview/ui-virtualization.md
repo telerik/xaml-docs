@@ -16,7 +16,7 @@ The UI virtualization of appointments and special slots is always enabled. Scrol
 
 The UI virtualization of group headers is disabled by default, but it can be enabled when needed, by setting the `IsGroupHeadersVirtualizationEnabled` property of `RadScheduleView` to `true`. The group headers virtualization will create containers only for the groups that are visible within the viewport. This is valid only for the group headers on the first level. If you have nested group headers, all children of the generated root header visuals will be generated as well. This feature is available since the __R1 2023__ release.
 
-The group headers virtualization assumes all top level headers have equal sizes. If these have non-equal sizes, this may lead to unexpected behavior with scrolling, bringintoview, incorrect highlighting size of slots, etc.
+>important The group headers virtualization assumes all top level headers have equal sizes. If these have non-equal sizes, this may lead to unexpected behavior with scrolling, bringintoview, incorrect highlighting size of slots, etc.
 
 __Group and appointment viewports with vertically arranged groups__  
  

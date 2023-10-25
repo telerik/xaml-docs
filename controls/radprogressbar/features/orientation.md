@@ -10,40 +10,40 @@ position: 1
 
 # Orientation
 
-__RadProgressBar__ has an __Orientation__ property which can be set to either *Horizontal* or *Vertical*. The two allowed values specify the direction in which the control is being "filled". Below you can see examples of how to set the __Orientation__ property both in *C#* and *XAML* code:
+`RadProgressBar` has an `Orientation` property which can be set to either __Horizontal__ or __Vertical__. The two allowed values specify the direction in which the control is being "filled".
 
-#### __XAML__
+#### __[XAML] Setting the Orientation property to Horizontal__
 {{region xaml-Orientation_0}}
 	<telerik:RadProgressBar Value="35" Height="30" Width="150" Orientation="Horizontal" />
 {{endregion}}
 
-#### __C#__
+#### __[C#] Setting the Orientation property to Horizontal__
 {{region cs-Orientation_1}}
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Setting the Orientation property to Horizontal__
 {{region vb-Orientation_2}}
 	Dim progressBar As New RadProgressBar()
 	progressBar.Orientation = System.Windows.Controls.Orientation.Horizontal
 {{endregion}}
 
-![{{ site.framework_name }} RadProgressBar Horizontal Orientation(images/progress_horizontal.jpg)
+![{{ site.framework_name }} RadProgressBar Horizontal Orientation](images/progress_horizontal.jpg)
 
 
-#### __XAML__
+#### __[XAML] Setting the Orientation property to Vertical__
 {{region xaml-Orientation_3}}
 	<telerik:RadProgressBar Value="35" Height="150" Width="30" Orientation="Vertical" />
 {{endregion}}
 
-#### __C#__
+#### __[C#] Setting the Orientation property to Vertical__
 {{region cs-Orientation_4}}
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical;
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Setting the Orientation property to Vertical__
 {{region vb-Orientation_5}}
 	Dim progressBar As New RadProgressBar()
 	progressBar.Orientation = System.Windows.Controls.Orientation.Vertical

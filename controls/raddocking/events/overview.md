@@ -18,7 +18,7 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 	* __ActivePangeChangedEventArgs__: Exposes information about NewPane (activated) and OldPane (deactivated).
 	
-* __PaneStateChange__: This event is fired whenever the state of the RadPane is changed (e.g., pin, unpin, close, show, etc.). The passed event argument is of type __ActivePangeChangedEventArgs__.
+* __PaneStateChange__: This event is fired whenever the state of the RadPane is changed (e.g., pin, unpin, close, show, etc.). The passed event argument is of type __RadRoutedEventArgs__. The modified __RadPane__ element can be accessed via the __OriginalSource__ property of the event arguments.
 	
 #### __Pin\Unpin Events__
 

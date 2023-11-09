@@ -59,12 +59,30 @@ __RadSvgImage as a markup extension__
 
 ![{{site.framework_name}} RadSvgImage as a markup extension](images/radsvgimage-getting-started-0.png)
 
+## Displaying an Xml-Based String
+
+The RadSvgImage control provides the `XmlSource` property that allows you to set an xml-based string and display it.
+
+#### __[C#] Setting the XmlSource property__
+{{region radsvgimage-getting-started-3}}
+    this.svgImage.XmlSource = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg height=\"100\" width=\"100\">\r\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"black\" stroke-width=\"3\" fill=\"red\" />\r\n</svg>";
+{{endregion}}
+
+#### __[VB.NET] Setting the XmlSource property__
+{{region radsvgimage-getting-started-4}}
+    Me.svgImage.XmlSource = "<?xml version=""1.0"" encoding=""UTF-8"" standalone=""no""?>" & vbCrLf & "<svg height=""100"" width=""100"">" & vbCrLf & "  <circle cx=""50"" cy=""50"" r=""40"" stroke=""black"" stroke-width=""3"" fill=""red"" />" & vbCrLf & "</svg>"
+{{endregion}}
+
+__RadSvgImage displaying an xml-based string__
+
+![{{site.framework_name}} RadSvgImage displaying an xml-based string](images/radsvgimage-getting-started-1.png)
+
 ## Overriding Color
 
 The RadSVGImage component allows you to replace the fill color of the geometry that displays the SVG image. To do so, set the `OverrideColor` property.
 
 #### __[XAML] Setting the OverrideColor property__
-{{region radsvgimage-getting-started-3}}
+{{region radsvgimage-getting-started-5}}
     <telerik:RadSvgImage UriSource="MySVGImage.svg"
                          OverrideColor="Red"
                          Width="128"
@@ -73,7 +91,7 @@ The RadSVGImage component allows you to replace the fill color of the geometry t
 
 __RadSvgImage with set OverrideColor__
 
-![{{site.framework_name}} RadSvgImage with set OverrideColor](images/radsvgimage-getting-started-1.png)
+![{{site.framework_name}} RadSvgImage with set OverrideColor](images/radsvgimage-getting-started-2.png)
 
 ## Not Supported SVG File Format Properties
 

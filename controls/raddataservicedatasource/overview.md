@@ -48,3 +48,16 @@ __RadDataServiceDataSource__ is a client-side technology and does not encompass 
 If you are using __.NET 3.5__, you will need to install [ADO.NET Data Services Update for .NET Framework 3.5 SP1](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=2343).
 
 If you are using __.NET 4.0 or higher__, you need to install the [WCF Data Services](http://www.microsoft.com/en-us/download/details.aspx?id=29306).
+
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF DataServiceDataSource Homepage](https://www.telerik.com/products/wpf/dataservicedatasource.aspx)
+* [Get Started with the Telerik UI for WPF DataServiceDataSource]({%slug raddataservicedatasource-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF DataServiceDataSource Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+

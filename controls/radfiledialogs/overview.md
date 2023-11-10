@@ -61,6 +61,18 @@ The file dialogs also support many other features of the native Windows file dia
 
 > Check out the controls' demos at [demos.telerik.com](https://demos.telerik.com/wpf/)
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF FileDialogs Homepage](https://www.telerik.com/products/wpf/file-dialogs.aspx)
+* [Get Started with the Telerik UI for WPF FileDialogs]({%slug radfiledialogs-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF FileDialogs Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also
 
 * [Getting Started]({%slug radfiledialogs-getting-started%})

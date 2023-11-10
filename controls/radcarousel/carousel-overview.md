@@ -63,3 +63,16 @@ RadCarouselPanel can both host standalone controls and be used in conjunction wi
 ### UI virtualization 
 
 To utilize system resources in an optimal way,  __RadCarouselPanel__ will only display UI elements for the currently visible items when used in an items control. 
+
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF Carousel Homepage](https://www.telerik.com/products/wpf/carousel.aspx)
+* [Get Started with the Telerik UI for WPF Carousel]({%slug carousel-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF Carousel Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+

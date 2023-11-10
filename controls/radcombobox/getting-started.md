@@ -253,6 +253,19 @@ __Figure 4__ shows a __RadComboBox__ with the **Windows8** theme applied.
 #### __Figure 4: RadComboBox with the Windows8 theme__
 ![RadComboBox with Windows8 theme](images/radcombobox-setting-theme.png)
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Learning Resources
+
+* [Telerik UI for WPF ComboBox Component](https://www.telerik.com/products/wpf/combobox.aspx)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
+* [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
+* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
+{% endif %}
+
 ## See Also  
  * [Populating With Data]({%slug radcombobox-populating-with-data-overview%}) 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%}) 

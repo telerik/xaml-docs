@@ -45,6 +45,18 @@ As every control from UI for WPF, RadNavigationView comes with a set of pre-defi
 
 >Check out the online demos at [demos.telerik.com](https://demos.telerik.com/wpf/).
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF NavigationView Homepage](https://www.telerik.com/products/wpf/navigationview.aspx)
+* [Get Started with the Telerik UI for WPF NavigationView]({%slug radnavigationview-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF NavigationView Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also
  * [Display Mode]({%slug radnavigationview-display-mode%})
  * [Icon and IconTemplate]({%slug radnavigationview-icon-and-icontemplate%})

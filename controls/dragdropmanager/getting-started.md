@@ -402,6 +402,19 @@ __Drag between ListBoxes__
 
 {% if site.site_name == 'WPF' %}> By default the DragDropManager shows the drag visual in a separate window. You have the option to set the `UseAdornerLayer` property of the DragDropManager. After this property is set to __True__, the drag visual will be shown in the AdornerLayer of the MainWindow.{% endif %} 
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Learning Resources
+
+* [Telerik UI for WPF DragAndDrop Component](https://www.telerik.com/products/wpf/drag-drop.aspx)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
+* [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
+* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
+{% endif %}
+
 ## See Also
 
  * [Events]({%slug dragdropmanager-events%})

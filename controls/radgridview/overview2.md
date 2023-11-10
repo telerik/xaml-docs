@@ -71,6 +71,18 @@ Check out the WPF demos [here.](https://demos.telerik.com/wpf/){% endif %}
 
 >tipYou can find more examples of how to implement various scenarios available for download from our online SDK repository [here. ](https://github.com/telerik/xaml-sdk/)Look for examples listed under __GridView__. For a better and easier reviewing of our examples you can download the [SDK Samples Browser.](https://demos.telerik.com/xaml-sdkbrowser//)
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF DataGrid Homepage](https://www.telerik.com/products/wpf/gridview.aspx)
+* [Get Started with the Telerik UI for WPF DataGrid]({%slug gridview-getting-started2%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF DataGrid Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also
 
  * [Getting Started]({%slug gridview-getting-started2%})

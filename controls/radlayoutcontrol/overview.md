@@ -35,6 +35,18 @@ __RadLayoutControl__ is a flexible component that allows you to arrange visual e
 
 >You can find examples that demonstrate RadLayoutControl in our [demo application](https://demos.telerik.com/wpf/).
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF LayoutControl Homepage](https://www.telerik.com/products/wpf/layoutcontrol.aspx)
+* [Get Started with the Telerik UI for WPF LayoutControl]({%slug radlayoutcontrol-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF LayoutControl Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also  
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})
 * [Layout Groups Overview]({%slug radlayoutcontrol-features-layoutgroups-overview%})

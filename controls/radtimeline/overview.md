@@ -32,3 +32,16 @@ __RadTimeline's__ key features list:
 * __Item tooltip__ - The developer can specify a tooltip template for the event items, in order to display their details.          
 
 * __Customizeable templates__ - you can customize the appearance of the control through TimelineItemTemplate, TimelineInstantItemTemplate and ItemTemplateSelector.
+
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF Timeline Homepage](https://www.telerik.com/products/wpf/timeline.aspx)
+* [Get Started with the Telerik UI for WPF Timeline]({%slug radtimeline-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF Timeline Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+

@@ -135,6 +135,19 @@ To enable the manual mechanism set the __ContentChangeMode__ property of RadFlui
 
 The Content, SmallContent and LargeContent properties can be data bound to properties from a business object. In this case you can define the views for each state via the __ContentTemplate, SmallContentTemplate__ and __LargeContentTemplate__ properties. Read more about this in the [Data Binding]({%slug fluidcontentcontrol-data-binding%}) article.
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Learning Resources
+
+* [Telerik UI for WPF FluidContentControl Component](empty)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
+* [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
+* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
+{% endif %}
+
 ## See Also
  * [Integration Examples]({%slug radfluidcontentcontrol-integration-examples%})
  * [Events]({%slug fluidcontentcontrol-events%})

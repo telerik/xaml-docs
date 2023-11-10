@@ -100,6 +100,19 @@ __RadPivotMap__
 
 >tip Avoid inserting RadPivotMap in panels that measure its children with Infinity. In this case, the control cannot properly measure and arrange its child visuals. Examples for panels that measure the control with Infinity size are StackPanel, ScrollViewer or a Grid's Row/ColumnDefinition with its size (Width or Height) set to Auto. Instead, use panels that measure its children with the available space.
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Learning Resources
+
+* [Telerik UI for WPF TreeMap and PivotMap Component](https://www.telerik.com/products/wpf/treemap-and-pivotmap.aspx)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
+* [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
+* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
+{% endif %}
+
 ## See Also  
 * [Mappings]({%slug radtreemap-mappings%})
 * [Colorizers]({%slug radtreemap-colorizers%})

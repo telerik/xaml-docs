@@ -34,3 +34,16 @@ __![{{ site.framework_name }} RadCalculator](images/RadCalculator-Overview.png)_
 *  [Memory functionality]({%slug radcalculator_memoryfunctionality%})&mdash;The memory functionality allows you to save a value for later usage, same as with any standard calculator.
 
 *  [Clear entry, clear all, delete functionality]({%slug radcalculator-clearfunctionality%})&mdash;The clear buttons allows you to clear the value or delete digits.
+
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF Calculator Homepage](https://www.telerik.com/products/wpf/calculator.aspx)
+* [Get Started with the Telerik UI for WPF Calculator]({%slug radcalculator-gettingstarted%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF Calculator Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+

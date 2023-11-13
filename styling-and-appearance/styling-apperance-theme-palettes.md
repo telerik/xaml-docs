@@ -87,6 +87,10 @@ The palette resources can be accessed in XAML and used to style any WPF control 
 			   Foreground="{telerik:Windows11Resource ResourceKey=AccentBrush}" />
 {{endregion}}
 
+## Setting a Theme Color Variation in Design Time
+
+You can change the theme's color variation in design-time. Check this [article]({%slug kb-themes-set-color-variation-design-time%}) to see more information on this topic.
+
 ## See Also  
 * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
 * [Color Theme Generator]({%slug common-styling-color-theme-generator%})

@@ -95,7 +95,7 @@ You can import and export documents of these formats as well as convert the form
 ## Telerik UI for WPF Support and Learning Resources
 
 * [Telerik UI for WPF WordsProcessing Homepage](https://www.telerik.com/products/wpf/words-processing.aspx)
-* [Get Started with the Telerik UI for WPF WordsProcessing]({%slug %})
+* [Get Started with the Telerik UI for WPF WordsProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/getting-started)
 * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 

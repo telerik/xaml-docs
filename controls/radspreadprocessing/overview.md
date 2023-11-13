@@ -97,7 +97,7 @@ This library enables you to work with spreadsheet documents – create ones from
 ## Telerik UI for WPF Support and Learning Resources
 
 * [Telerik UI for WPF SpreadProcessing Homepage](https://www.telerik.com/products/wpf/spreadsheet-processing.aspx)
-* [Get Started with the Telerik UI for WPF SpreadProcessing]({%slug %})
+* [Get Started with the Telerik UI for WPF SpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/getting-started)
 * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 

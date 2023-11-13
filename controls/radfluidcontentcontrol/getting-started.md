@@ -138,7 +138,6 @@ The Content, SmallContent and LargeContent properties can be data bound to prope
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
-* [Telerik UI for WPF FluidContentControl Component](empty)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
 * [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
 * [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})

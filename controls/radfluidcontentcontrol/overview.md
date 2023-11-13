@@ -32,7 +32,6 @@ __RadFluidContentControl__ is a flexible content control used to build responsiv
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
 
-* [Telerik UI for WPF FluidContentControl Homepage](empty)
 * [Get Started with the Telerik UI for WPF FluidContentControl]({%slug fluidcontentcontrol-getting-started%})
 * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})

@@ -34,7 +34,6 @@ __RadLegend__ is a stand-alone control which visualizes a list of legend items. 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
 
-* [Telerik UI for WPF Legend Homepage](empty)
 * [Get Started with the Telerik UI for WPF Legend]({%slug radlegend-getting-started%})
 * [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
 * [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})

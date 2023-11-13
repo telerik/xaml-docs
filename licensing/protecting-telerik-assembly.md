@@ -35,10 +35,10 @@ The Telerik UI for {{ site.framework_name }} suite includes a limited run time r
 Technical guidelines for protecting **Telerik UI for {{ site.framework_name }} by Progress** binaries when redistributed with other applications.
      
 There are a couple of approaches that you can take:
-* [Use the PowerShell Scripts](#use-the-powershell-scripts)
-* [Manually Edit the Source Code](#building-telerik-assemblies-from-source-code)
+* [Use the PowerShell Scripts](#protect-the-telerik-assemblies-using-the-powershell-scripts)
+* [Manually Edit the Source Code](#protect-the-telerik-assemblies-by-manually-editing-the-source-code)
 
-## Use the PowerShell Scripts
+## Protect the Telerik Assemblies Using the PowerShell Scripts
 
 Telerik UI source code provides two power shell scripts that will allow you to easily apply the modifications needed to protect the Telerik assemblies without the need to open and edit any files. The scrips are located in the **Build\BuildInstructions\AssemblyProtection** folder of the suite's source code which can be downloaded as explained in {% if site.framework_name == 'WPF' %}[this article]({%slug download-product-files-wpf%}){% else %}[this article]({%slug download-product-files%}){% endif %}. 
 
@@ -75,7 +75,7 @@ The available scripts are:
 	</Application>
 {{endregion}}
 
-## Building Telerik Assemblies from Source Code 
+## Protect the Telerik Assemblies by Manually Editing the Source Code
 
 __Prerequisites__
 
@@ -140,7 +140,7 @@ __Instructions__
 
 <!-- -->
 
-## Building Telerik Documents Assemblies from Source Code
+## Protect the Telerik Documents Assemblies by Editing the Source Code
 
 The instructions in the previous section explain how to build the **Telerik.Windows.Controls** assembly and the assemblies depending on it. The UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} suite contains libraries for processing documents which do not depend on **Telerik.Windows.Controls.dll**. 
 
@@ -148,9 +148,9 @@ If you are building the assemblies needed for one of the components depending on
         
 >importantThe following instructions are valid for Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} version __Q2 2014__ or later.
           
-1. Open **C:\Telerik{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}Source\Documents\Licensing\AssemblyProtection.cs** in a text editor (notepad, Visual Studio, etc.).
+1. Open **C:\TelerikDocumentsProcessingSource\Documents\Licensing\AssemblyProtection.cs** in a text editor (notepad, Visual Studio, etc.).
 
-	> In versions of the suite prior to R2 2016, the path is **C:\Telerik{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}Source\Documents\Core\Core\Licensing\AssemblyProtection.cs**.            
+	> In versions of the suite prior to R2 2016, the path is **C:\TelerikDocumentsProcessingSource\Documents\Core\Core\Licensing\AssemblyProtection.cs**.            
 
 2. Uncomment the following line:
             
@@ -176,6 +176,13 @@ If you are building the assemblies needed for one of the components depending on
 <!-- -->
 
 3. Execute steps **3-7** from the previous section.
+
+## Building the Source Code After Assembly Protection Code Changes
+
+After enabling the assembly protection by modifying the code as shown in the previous section of this article, the source code of Telerik UI for WPF should be rebuild. The produced dlls can be redistributed with the final product. To see how to properly rebuild the source code, check the following documents in [the .zip file with Telerik's source](https://www.telerik.com/account/product-download?product=RCWPF):
+
+* `C:\Telerik UI for WPF Source Code\Build\BuildInstructions\Source Code Build Instructions for .NET Framework (4.0 and 4.5).rtf`
+* `C:\Telerik UI for WPF Source Code\Build\BuildInstructions\Source Code Build Instructions for .NET.rtf`
 
 ## See Also  
 * [Installing Telerik UI on your Computer]({%slug installation-installing-which-file-do-i-need%})

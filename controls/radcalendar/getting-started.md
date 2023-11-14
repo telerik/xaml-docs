@@ -93,6 +93,19 @@ __Figure 4__ shows a __RadCalendar__ with the **Fluent** theme applied.
 ![RadCalendar with Fluent theme](images/radcalendar-setting-theme.png)
 
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Learning Resources
+
+* [Telerik UI for WPF Calendar Component](https://www.telerik.com/products/wpf/calendar.aspx)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
+* [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
+* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
+{% endif %}
+
 ## See Also
 
 * [Calendar Basics]({%slug radcalendar-basics%})

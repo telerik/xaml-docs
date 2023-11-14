@@ -33,6 +33,18 @@ __DragDropManager__ offers intuitive API similar to the WPF native drag and drop
 
 > Check out the control's demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#DragAndDrop){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}. Additionally, you can download more runnable projects from our [online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop).
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF DragAndDrop Homepage](https://www.telerik.com/products/wpf/drag-drop.aspx)
+* [Get Started with the Telerik UI for WPF DragAndDrop]({%slug dragdropmanager-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF DragAndDrop Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also
  * [Developer Focused Examples]({%slug dragdropmanager-sdk-examples%})
  * [DragDropPayloadManager]({%slug dragdropmanager-dragdroppayloadmanager%})

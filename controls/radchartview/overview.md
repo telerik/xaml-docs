@@ -54,6 +54,18 @@ A charting component in general is used to visualize (or plot) some data in a hu
 
 > Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#ChartView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF ChartView Homepage](https://www.telerik.com/products/wpf/chartview.aspx)
+* [Get Started with the Telerik UI for WPF ChartView]({%slug radchartview-introduction%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF ChartView Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also  
 * [Populating with data]({%slug radchartview-series-databinding%})
 * [Sampling]({%slug radchartview-populating-with-data-chartdatasource%})

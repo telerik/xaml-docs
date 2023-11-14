@@ -41,3 +41,14 @@ __RadEntityFrameworkDataSource__ is a WPF data control that provides seamless in
 
 * __MVVM support__ - is provided by the __public QueryableEntityCollectionView<T>__ class, which is the view that __RadEntityFrameworkDataSource__ internally uses. The __RadEntityFrameworkDataSource__ control is simply a thin-wrapper over this collection view, which performs all of the heavy lifting. This allows you to use it inside your view models without losing any functionality that the control would otherwise provide.
           
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF EntityFrameworkDataSource Homepage](https://www.telerik.com/products/wpf/entity-framework-data-source.aspx)
+* [Get Started with the Telerik UI for WPF EntityFrameworkDataSource]({%slug entityframework-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF EntityFrameworkDataSource Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}

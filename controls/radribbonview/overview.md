@@ -51,6 +51,18 @@ A complete list of all the key features can be found in the [Key Features]({%slu
 
 > Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#RibbonView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF RibbonView Homepage](https://www.telerik.com/products/wpf/ribbonview.aspx)
+* [Get Started with the Telerik UI for WPF RibbonView]({%slug radribbonview-gettingstarted%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF RibbonView Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also  
 * [Visual Structure]({%slug radribbonview-visual-structure%})
 * [Functional Structure]({%slug radribbonview-functional-structure%})

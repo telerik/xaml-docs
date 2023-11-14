@@ -157,6 +157,19 @@ __Figure 1__ shows __RadMaskedInput__ with the **Windows8** theme applied.
 ![Telerik {{ site.framework_name }} MaskedInput-Windows8](images/radmaskedinput-windows8.png)
 
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Learning Resources
+
+* [Telerik UI for WPF MaskedInput Component](https://www.telerik.com/products/wpf/maskedinput.aspx)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
+* [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
+* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
+{% endif %}
+
 ## See Also
  * [RadMaskedInput Controls Overview]({%slug radmaskedinput-overview%})
  * [Events Overview]({%slug radmaskedinput-events-overview%})

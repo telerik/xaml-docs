@@ -34,3 +34,16 @@ __Key features__ list includes:
 * __Silverlight/WPF Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} GanttView shares a single codebase with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your GanttView logic if you have parallel Silverlight/WPF development. 
 
 You can check __RadGanttView__ demos at {% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/](https://demos.telerik.com/silverlight/#GanttView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}
+
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF GanttView Homepage](https://www.telerik.com/products/wpf/ganttview.aspx)
+* [Get Started with the Telerik UI for WPF GanttView]({%slug radganttview-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF GanttView Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+

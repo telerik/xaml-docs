@@ -31,6 +31,18 @@ __RadChartView3D__ provides you with a charting component that enables three-dim
 
 >You can find examples that demonstrate RadChartView3D in our [demo application](https://demos.telerik.com/wpf/).
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF 3DChart Homepage](https://www.telerik.com/products/wpf/3d-chart.aspx)
+* [Get Started with the Telerik UI for WPF 3DChart]({%slug radchartview3d-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF 3DChart Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also  
 
 * [Getting Started]({%slug radchartview3d-getting-started%})

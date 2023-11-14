@@ -29,6 +29,17 @@ __RadFluidContentControl__ is a flexible content control used to build responsiv
 
 >tip Get started with the control with its [Getting Started]({%slug fluidcontentcontrol-getting-started%}) help article that shows how to use it in a basic scenario.
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Get Started with the Telerik UI for WPF FluidContentControl]({%slug fluidcontentcontrol-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF FluidContentControl Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also
  * [Integration Examples]({%slug radfluidcontentcontrol-integration-examples%})
  * [Events]({%slug fluidcontentcontrol-events%})

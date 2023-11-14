@@ -91,6 +91,19 @@ To change the theme, you can follow the steps below:
 #### __Figure 1: File dialog with VisualStudio2013 theme applied__
 ![File dialog with VisualStudio2013 theme applied](images/radfiledialogs-getting-started-01.png)
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Learning Resources
+
+* [Telerik UI for WPF FileDialogs Component](https://www.telerik.com/products/wpf/file-dialogs.aspx)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Installation]({%slug installation-installing-which-file-do-i-need%})
+* [Telerik UI for WPF and WinForms Integration]({%slug winforms-integration%})
+* [Telerik UI for WPF Visual Studio Templates]({%slug visual-studio-templates%})
+* [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
+{% endif %}
+
 ## See Also
 * [Visual Structure]({%slug radfiledialogs-visual-structure%})
 * [Events]({%slug radfiledialogs-events%})

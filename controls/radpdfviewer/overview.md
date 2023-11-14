@@ -69,6 +69,18 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 
 * Type3 fonts (Available in R1 2021).
 
+{% if site.site_name == 'WPF' %}
+## Telerik UI for WPF Support and Learning Resources
+
+* [Telerik UI for WPF PDFViewer Homepage](https://www.telerik.com/products/wpf/pdf-viewer.aspx)
+* [Get Started with the Telerik UI for WPF PDFViewer]({%slug radpdfviewer-getting-started%})
+* [Telerik UI for WPF API Reference](https://docs.telerik.com/devtools/wpf/api/)
+* [Getting Started with Telerik UI for WPF Components]({%slug getting-started-first-steps%})
+* [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
+* [Telerik UI for WPF PDFViewer Forums](https://www.telerik.com/forums/wpf)
+* [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
+{% endif %}
+
 ## See Also
 
  * [Getting Started]({%slug radpdfviewer-getting-started%})

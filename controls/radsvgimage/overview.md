@@ -43,3 +43,4 @@ The SvgImage component allows you to display SVG (Scalable Vector Graphics) imag
 
 ## See Also
 * [Getting Started]({%slug radsvgimage-getting-started%})
+* [Displaying Icons from the Telerik.SvgIcons NuGet Package in RadSvgImage]({%slug kb-radsvgimage-display-telerik-svgicons%})

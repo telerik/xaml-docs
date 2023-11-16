@@ -202,7 +202,8 @@ Notice that regardless of the type of the property you choose to bind the Docume
 You can control the way the documents are loaded in RadPdfViewer. You can choose between loading the whole document at one time or loading it page by page. The second option means that you no longer needed to parse the entire document in order to show it. However, you will need to keep the stream to the document file open.
         
 
-You can control how the document is loaded by setting the {% if site.site_name == 'WPF' %} **PdfViewer.DefaultImportSettings** {% endif %} {% if site.site_name == 'Silverlight' %}  **PdfViewer.DefaultFormatProviderSettings** {% endif %} property. This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the {% if site.site_name == 'WPF' %} [PdfImportSettings class](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/settings). {% endif %} {% if site.site_name == 'Silverlight' %}[FormatProviderSettings class](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.fixed.formatproviders.formatprovidersettings):
+You can control how the document is loaded by setting the {% if site.site_name == 'WPF' %} **PdfViewer.DefaultImportSettings** {% else %}  **PdfViewer.DefaultFormatProviderSettings** {% endif %} property.  {% if site.site_name == 'WPF' %}This property is used when the OpenPdfDocumentCommand is triggered to open a PDF file and could be set to one of the settings exposed by the [PdfImportSettings class](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/formats-and-conversion/pdf/pdfformatprovider/settings). {% endif %} 
+{% if site.site_name == 'Silverlight' %}
 
 * __ReadAllAtOnce__: This value is used by default. When ReadAllAtOnce is applied, the document stream will be copied into a memory stream, which is used by PdfViewer. When you are loading a document through an URI in combination with ReadAllAtOnce, the stream to the resource will be closed as soon as it is copied to memory. 
 
@@ -215,9 +216,8 @@ You can control how the document is loaded by setting the {% if site.site_name =
 	this.pdfViewer.DefaultFormatProviderSettings = FormatProviderSettings.ReadOnDemand;
 {{endregion}}
 
-{% endif %}  
+{% else %}
 
-{% if site.site_name == 'WPF' %}
 #### __[C#] Example 10: Setting DefaultImportSettings__
 
 {{region radpdfviewer-showing-a-file_10}}
@@ -226,9 +226,9 @@ You can control how the document is loaded by setting the {% if site.site_name =
 
 {% endif %}
 
-Another option to set the reading mode is through the constructors that accept {% if site.site_name == 'WPF' %} **PdfImportSettings** {% endif %} {% if site.site_name == 'Silverlight' %}__FormatProviderSettings__{% endif %} when creating a new instance of the **PdfDocumentSource** class. 
+Another option to set the reading mode is through the constructors that accept {% if site.site_name == 'WPF' %} **PdfImportSettings** {% else %}__FormatProviderSettings__{% endif %} when creating a new instance of the **PdfDocumentSource** class. 
 
-{% if site.site_name == 'Silverlight' %}The __ReadOnDemand__ predefined settings are used by default.{% endif %}{% if site.site_name == 'WPF' %}The default settings used by PdfViewer are `ReadingMode: OnDemand` and `CopyStream: true` to allow you parse only the needed content while you are not obligated to keep the stream to the document open.{% endif %} 
+{% if site.site_name == 'Silverlight' %}The __ReadOnDemand__ predefined settings are used by default.{% else %}The default settings used by PdfViewer are `ReadingMode: OnDemand` and `CopyStream: true` to allow you parse only the needed content while you are not obligated to keep the stream to the document open.{% endif %} 
 
 If you want to change this behavior to read all the document pages at the beginning of the import, you can create a new __PdfDocumentSource__ instance with __FormatProviderSettings.ReadAllAtOnce__ predefined settings.            
 
@@ -240,9 +240,8 @@ If you want to change this behavior to read all the document pages at the beginn
 	PdfDocumentSource source = new PdfDocumentSource(stream/uri, PdfImportSettings.ReadOnDemand);      
 {{endregion}} 
 
-{% endif %}
+{% else %}
 
-{% if site.site_name == 'Silverlight' %}
 #### __[C#] Example 11: Setting FormatProviderSettings__
 
 {{region radpdfviewer-showing-a-file_11}}

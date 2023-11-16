@@ -148,7 +148,7 @@ Get more information about the column resizing events [here]({%slug gridview-col
         }
     {{endregion}}
 
->Both __RowIsExpandedChanged__ and __RowIsExpandedChanging__ occur only when there is [Hierarchy](gridview-hierachy-overview) defined and won't be applied if using the __RowDetailsTemplate__ property with another __RadGridView__.
+>Both __RowIsExpandedChanged__ and __RowIsExpandedChanging__ occur only when there is [Hierarchy]({%slug gridview-hierachy-overview%}) defined and won't be applied if using the __RowDetailsTemplate__ property with another __RadGridView__.
 
 ## GridViewColumn
 

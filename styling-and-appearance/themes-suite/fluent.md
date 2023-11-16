@@ -265,7 +265,7 @@ __Setting FontSize and FontFamily__
 
 ## Using Glyphs
 
-The `Fluent` theme also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. With this theme we are introducting the `RadGlyph` which provides a lightweight, flexble and design-time-friendly implementation of out glyph font.  
+The `Fluent` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. With this theme we are introducting the `RadGlyph` which provides a lightweight, flexble and design-time-friendly implementation of out glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
  

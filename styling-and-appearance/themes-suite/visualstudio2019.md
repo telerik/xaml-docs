@@ -322,7 +322,7 @@ __Setting FontSize and FontFamily__
 
 ## Using Glyphs
 
-The VisualStudio2019 theme also uses the `Telerik Web UI` [font glyphs](({%slug common-styling-appearance-glyphs-overview%})) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
+The VisualStudio2019 theme also uses the `Telerik Web UI` [font glyphs]({%slug common-styling-appearance-glyphs-overview%}) by default. The `RadGlyph` provides a lightweight, flexible and design-time-friendly implementation of our glyph font.  
 
 > You can read more about the RadGlyph in the [RadGlyph Overview article]({%slug common-styling-appearance-radglyph%}) and about the range of the font glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 

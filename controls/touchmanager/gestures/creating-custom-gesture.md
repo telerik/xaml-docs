@@ -226,7 +226,7 @@ Example 6 is the main logic of the recognizer. In this example you'll see how to
 	
 #### __[VB.NET] Example 6: Implementing logic for associating event handlers with the recognizer__	
 {{region touchmanager-creating-custom-gesture-11}}
-	Public Sub [AddHandler](handler As RoutedEventHandler)
+	Public Sub AddHandler(handler As RoutedEventHandler)
 		Me.handlers.Add(New WeakReference(handler))
 		Me.HasGestureHandlers = True
 	End Sub
@@ -321,8 +321,8 @@ To use the gesture we will need to register the gesture recognizer factory and c
 	GestureManager.RegisterGestureRecognizerFactory(New TwoFingerTapGestureRecognizerFactory())
 	'-----------'
 	Dim recognizer As TwoFingerTapGestureRecognizer = GestureManager.GetOrCreateGestureRecognizer(Of TwoFingerTapGestureRecognizer)(uiElement)
-	recognizer.[AddHandler](handler)
-	element.[AddHandler](TwoFingerTapEvent, handler, False)
+	recognizer.AddHandler(handler)
+	element.AddHandler(TwoFingerTapEvent, handler, False)
 {{endregion}}
 
 In example 10 we will wrap the TwoFingerTapEvent and the logic for adding handlers in a helper class called GestureExtensions.

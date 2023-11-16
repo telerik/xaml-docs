@@ -213,7 +213,7 @@ The result from the image can be achieved with the sample code from **Example 5*
 If you would like to select the second image while deselecting the first one, this can be achieved with the following code:
         
 
-#### __[C#] Example 6: Select a shape and clear the previous selection____
+#### __[C#] Example 6: Select a shape and clear the previous selection__
 
 {{region radspreadsheet-ui-working-with-selection_8}}
 
@@ -223,13 +223,13 @@ If you would like to select the second image while deselecting the first one, th
     selection.Select(image2, true);
 {{endregion}}
 
-#### __[VB.NET] Example 6: Select a shape and clear the previous selection____
+#### __[VB.NET] Example 6: Select a shape and clear the previous selection__
 
 {{region radspreadsheet-ui-working-with-selection_8}}
     
     Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
     Dim image2 As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Images.ElementAt(1), FloatingImage)
-    selection.[Select](image2, True)
+    selection.Select(image2, True)
 {{endregion}}
 
 The result will be the following:

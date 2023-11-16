@@ -208,7 +208,7 @@ The result from the image can be achieved with the sample code from **Example 5*
 
     Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
     Dim image As FloatingImage = TryCast(Me.radSpreadsheet.ActiveWorksheet.Images.First(), FloatingImage)
-    selection.[Select](image)
+    selection.Select(image)
 {{endregion}}
 If you would like to select the second image while deselecting the first one, this can be achieved with the following code:
         

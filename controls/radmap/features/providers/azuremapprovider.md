@@ -31,7 +31,7 @@ __RadMap with AzureMapProvider__
 
 ![{{ site.framework_name }} RadMap with AzureMapProvider](images/radmap-features-providers-azuremapprovider-0.png)
 
->If the provider’s initialization fails, the AzureMapProvider will raise its `InitializationFaulted`` event. The event can be fired for example, when the internet connection is lost or when the service is unavailable. The event arguments are of type `InitializationFaultEventArgs`` type. The arguments provide an `Error`` property which contains the exception that is thrown while initialization.
+>If the provider’s initialization fails, the AzureMapProvider will raise its `InitializationFaulted` event. The event can be fired for example, when the internet connection is lost or when the service is unavailable. The event arguments are of type `InitializationFaultEventArgs` type. The arguments provide an `Error` property which contains the exception that is thrown while initialization.
 
 ## Specifying the TileSet
 

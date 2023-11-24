@@ -43,9 +43,16 @@ Telerik UI for {{ site.framework_name }} features the following controls:
 
 Throughout this article, you will find the following sections that describe all of the important aspects in depth:
 
+{% if site.site_name == 'WPF' %}
 ## Trial Version and Commercial License
 
-This UI for {{site.framework_name}} library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license]{% if site.site_name == 'WPF' %}(https://www.telerik.com/purchase/individual/wpf.aspx){% else %}(https://www.telerik.com/purchase/individual/silverlight.aspx){% endif %}. Feel free to review the Telerik UI for {{site.framework_name}} [License Agreement]{% if site.site_name == 'WPF' %}(http://www.telerik.com/purchase/license-agreement/wpf-dlw-s){% else %}(http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s){% endif %} to get acquainted with the full terms of use.	
+This UI for WPF library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase/individual/wpf.aspx). Feel free to review the Telerik UI for WPF [License Agreement](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s) to get acquainted with the full terms of use.	
+
+{% else %}
+## Commercial License
+
+This UI for Silverlight library is a commercial UI library. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase/individual/silverlight.aspx). Feel free to review the Telerik UI for Silverlight [License Agreement](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s) to get acquainted with the full terms of use.
+{% endif %}
 
 ## Support Options
 

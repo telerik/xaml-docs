@@ -40,7 +40,6 @@ In the code-behind, each time a particular class/property/method is being select
 {% if site.site_name == 'WPF' %}
  * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%})
  * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
-{% else %}
- * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%})
+{% else %} 
  * [Controls Dependencies]({%slug installation-installing-controls-dependencies%})
 {% endif %}

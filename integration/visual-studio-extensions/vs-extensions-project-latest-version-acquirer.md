@@ -26,7 +26,11 @@ Clicking the {% if site.site_name == 'Silverlight' %}__Get Now__{% else %}__Upda
 
 You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistance is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
 
+{% if site.site_name == 'WPF' %}
 If your subscription has expired, you could either proceed with downloading a trial distribution or you could renew it and initiate the download again.
+{% else %}
+If your subscription has expired, you could renew it and initiate the download again.
+{% endif %}
 
 {% if site.site_name == 'Silverlight' %}![extensions acquirertool sl 3](images/extensions_acquirertool_sl_3.png){% else %}![extensions acquirertool wpf 3](images/extensions_acquirertool_wpf_3.png){% endif %}
 

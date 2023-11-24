@@ -113,7 +113,5 @@ Almost all Telerik controls can be found in the 'telerik' URI namespace schema (
 ## See Also  
  * [Using IntelliSense in Visual Studio]({%slug installation-adding-application-using-intellisense-vs%})
  {% if site.site_name == 'WPF' %}
- * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%}) 
- {% else %}
- * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license%}) 
+ * [Upgrading Telerik UI Trial to Telerik UI Developer License or Newer Version]({%slug installation-upgrading-from-trial-to-developer-license-wpf%})
  {% endif %}

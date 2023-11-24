@@ -86,11 +86,27 @@ When __IsSearchingDeferred__ is set to __True__, the filtering will be executed 
 
 ## Commands
 
-Three new commands have been exposed for the text search functionality. 
+Three new commands have been exposed for the text search functionality, via the `RadGridViewCommands` class. 
 
-- __Search__: Executed in order to show the search panel.
-- __SearchByText__: Executed in order to perform an actual search. It takes a string as a parameter - the text to search by.
-- __CloseSearchPanel__: Executed in order to hide the search panel.
+- `Search`: Executed in order to show the search panel.
+- `SearchByText`: Executed in order to perform an actual search. It takes a string as a parameter - the text to search by.
+- `CloseSearchPanel`: Executed in order to hide the search panel.
+
+#### __[C#] Executing the search commands in code__
+{{region cs-radgridview-search-as-you-type-7}}
+	// search by text
+	string searchText = "search text";
+ 	var searchByTextCommand = (RoutedUICommand)RadGridViewCommands.SearchByText;
+ 	searchByTextCommand.Execute(searchText, this.gridView);
+
+	// open the search panel
+   	var searchCommand = (RoutedUICommand) RadGridViewCommands.Search;
+ 	searchCommand.Execute(null, this.gridView);
+
+  	// close the search panel
+   	var closeSearchPanelCommand = (RoutedUICommand)RadGridViewCommands.CloseSearchPanel;
+ 	closeSearchPanelCommand.Execute(null, this.gridView);
+{{endregion}}
 
 ## Events
 

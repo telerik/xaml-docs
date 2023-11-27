@@ -23,7 +23,7 @@ Currently there are two types of licenses used for UI for Silverlight:
 
 Developer licenses come with modified DLLs, which work without license keys. If you have a Developer license for one or more of the Telerik components, you only need to ensure that you are using the developer build when downloading the control(s). These builds have the __Dev__ abbreviation in their file names.
 
-If your application is displaying a license key error, this means that you are using a trial version of the product. Log in to your [telerik.acom](https://www.telerik.com/account/) account and download the developer build. 
+If your application is displaying a license key error, this means that you are using a trial version of the product. Log in to your [telerik.com](https://www.telerik.com/account/) account and download the developer build. 
 
 ## Trial License
 

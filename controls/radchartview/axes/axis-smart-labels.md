@@ -38,7 +38,7 @@ The following picture demonstrates the different modes.
 
 ![radchartview-features-axis-smart-labels](images/radchartview-features-axis-smart-labels-01.png)
 
-## Enable Step Recalculation on Zoom
+## Disable the Step Recalculation on Zoom
 
 The chart axis major step is automatically recalculated on zoom. To disable this, set the __IsStepRecalculationOnZoomEnabled__ property of the axis to __False__.
 

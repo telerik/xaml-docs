@@ -184,8 +184,11 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* AllowCut
 	* AllowDelete
 	* AllowPaste
-	* BackgroundGrid.Background
+	* Background
 	* BackgroundGrid.CellSize
+	* BackgroundGrid.LineStroke
+	* BackgroundGrid.LineStrokeDashArray
+	* BackgroundGrid.LineStrokeThickness
 	* ConnectionBridges
 	* ConnectionRoundedCorners
 	* IsBackgroundSurfaceVisible
@@ -198,9 +201,6 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* IsRotationEnabled
 	* IsSnapEnabled
 	* IsZoomEnabled
-	* BackgroundGrid.LineStroke
-	* BackgroundGrid.LineStrokeDashArray
-	* BackgroundGrid.LineStrokeThickness
 	* Metadata
 	* Position
 	* RouteConnections

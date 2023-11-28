@@ -184,8 +184,8 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* AllowCut
 	* AllowDelete
 	* AllowPaste
-	* Background
-	* CellSize
+	* BackgroundGrid.Background
+	* BackgroundGrid.CellSize
 	* ConnectionBridges
 	* ConnectionRoundedCorners
 	* IsBackgroundSurfaceVisible
@@ -198,9 +198,9 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* IsRotationEnabled
 	* IsSnapEnabled
 	* IsZoomEnabled
-	* LineStroke
-	* LineStrokeDashArray
-	* LineStrokeThickness
+	* BackgroundGrid.LineStroke
+	* BackgroundGrid.LineStrokeDashArray
+	* BackgroundGrid.LineStrokeThickness
 	* Metadata
 	* Position
 	* RouteConnections
@@ -363,7 +363,7 @@ To load the serialized property of the RadDiagram control, handle its `MetadataD
     End Sub
 {{endregion}}
 
-## Preserve Bindings to the Automatically Serialized Properties
+## Preserve Bindings to the Automatically Serialized Properties of the RadDiagram's Items
 
 If you have a binding between a RadDiagramItem property that is [automatically serialized](#extending-raddiagram-serialization) and a property from the item’s view model the binding won’t work after the deserialization. This is because the serialization/deserialization logic of the diagram sets those properties locally which has bigger priority than a binding. You can read more about the value setting precedence in the [Dependency Property Value Precedence](https://msdn.microsoft.com/en-us/library/vstudio/ms743230(v=vs.100).aspx) MSDN article.
 
@@ -431,6 +431,35 @@ For example, if you have a binding to the Position property you can use the foll
             <Setter Property="Position" Value="{Binding Position, Mode=TwoWay}" />
         </Style>
     </Application.Resources>
+{{endregion}}
+
+## Preserve Bindings of the Automatically Serialized Properties of the RadDiagram's Metadata
+
+To preserve the bindings of the automatically serialized properties of RadDiagram's metadata, you can derive from it and override the `Deserialize` method. Through the __info__ parameter, you can retrieve the property that is used in a data-binding scenario and set its value to __null__. This will avoid the local setting of a value for it in the base implementation of the `Deserialize` method.
+
+#### __[C#] Extending the RadDiagram control and overriding the Deserialize method__
+{{region raddiagrams-features-serialization-16}}
+    public class CustomDiagram : RadDiagram
+    {
+        public override void Deserialize(SerializationInfo info)
+        {
+            info[SerializationConstants.BackgroundGridLineStroke] = null;
+
+            base.Deserialize(info);
+        }
+    }
+{{endregion}}
+
+#### __[VB.NET] Extending the RadDiagram control and overriding the Deserialize method__
+{{region raddiagrams-features-serialization-17}}
+    Public Class CustomDiagram
+        Inherits RadDiagram
+
+        Public Overrides Sub Deserialize(ByVal info As SerializationInfo)
+            info(SerializationConstants.BackgroundGridLineStroke) = Nothing
+            MyBase.Deserialize(info)
+        End Sub
+    End Class
 {{endregion}}
 
 ## See Also

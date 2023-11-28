@@ -184,6 +184,8 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* AllowCut
 	* AllowDelete
 	* AllowPaste
+	* Background
+	* CellSize
 	* ConnectionBridges
 	* ConnectionRoundedCorners
 	* IsBackgroundSurfaceVisible
@@ -196,6 +198,9 @@ By default, not every property of the RadDiagramItem is serialized. Below is the
 	* IsRotationEnabled
 	* IsSnapEnabled
 	* IsZoomEnabled
+	* LineStroke
+	* LineStrokeDashArray
+	* LineStrokeThickness
 	* Metadata
 	* Position
 	* RouteConnections

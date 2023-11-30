@@ -27,24 +27,18 @@ res_type: kb
 
 ## Description
 
-In the following solution we are going to demonstrate how to change the group of a card when a property in an object has been changed.
+How to change the group of a card when a property in an object has been changed.
 
 ## Solution
 
-To achieve this requirement you can use a __QueryableCollectionView__ and refresh and reapply the __GroupDescriptors__ after updating a property in an object populating the __ItemsSource__.
+To achieve this requirement you can use a `QueryableCollectionView` and refresh and reapply the `GroupDescriptors` after updating a property in an object populating the `ItemsSource`.
 
 #### __[C#]
     {{region cs-kb-cardview-fix-group-changes}}
         private void OnExecuted(object obj)
 	{
-    		var groupDescriptors = new GroupDescriptorCollection();
-    		groupDescriptors.AddRange(this.CollectionView.GroupDescriptors);
-
-    		this.CollectionView.GroupDescriptors.Clear();
-    
-    		var lastItem = this.CollectionView[this.CollectionView.Count - 1];
-    		(lastItem as Person).InAttendance = !(lastItem as Person).InAttendance;
-
-    		this.CollectionView.GroupDescriptors.AddRange(groupDescriptors);
+		var lastItem = (Person)this.CollectionView[this.CollectionView.Count - 1];
+		lastItem.InAttendance = false;
+		this.CollectionView.GroupDescriptors.Reset();
 	}
     {{endregion}}

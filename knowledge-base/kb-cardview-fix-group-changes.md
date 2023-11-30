@@ -24,21 +24,21 @@ res_type: kb
     </tbody>
 </table>
 
-
 ## Description
 
 How to change the group of a card when a property in an object has been changed.
 
 ## Solution
 
-To achieve this requirement you can use a `QueryableCollectionView` and refresh and reapply the `GroupDescriptors` after updating a property in an object populating the `ItemsSource`.
+To achieve this requirement you can use a `QueryableCollectionView` as the `ItemsSource` of `RadCardView`. Then on data item property changed, reset the `GroupDescriptors` of the collection view.
 
-#### __[C#]
-    {{region cs-kb-cardview-fix-group-changes}}
-        private void OnExecuted(object obj)
+#### __[C#]__
+{{region cs-kb-cardview-fix-group-changes}}
+	private void UpdateItem()
 	{
-		var lastItem = (Person)this.CollectionView[this.CollectionView.Count - 1];
-		lastItem.InAttendance = false;
-		this.CollectionView.GroupDescriptors.Reset();
+ 		var qcv = (QueryableCollectionView)this.cardView.ItemsSource;
+   		var dataItem = (Person)qcv[0];
+		dataItem.GroupKeyProperty = "new group value";
+		qcv.GroupDescriptors.Reset();
 	}
-    {{endregion}}
+{{endregion}}

@@ -3,7 +3,7 @@ title: Using ItemTemplateSelector for ControlPanelItems in RadGridView for WPF
 description: This article explains how to use an ItemTemplateSelector instead of the default ItemTemplate for ControlPanelItems in RadGridView for WPF.
 type: how-to
 page_title: Using ItemTemplateSelector for ControlPanelItems in RadGridView for WPF
-slug: using-itemtemplateselector-for-controlpanelitems-radgridview-wpf
+slug: gridview-using-itemtemplateselector-for-controlpanelitems-radgridview-wpf
 tags: radgridview, wpf, itemtemplateselector, controlpanelitems
 res_type: kb
 ---

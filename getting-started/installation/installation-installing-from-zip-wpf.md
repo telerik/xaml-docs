@@ -39,7 +39,5 @@ The manual installing using the files from the .ZIP is actually simply referenci
 ## See Also
 {% if site.framework_name == 'WPF' %}* [System Requirements]({%slug installation-system-requirements-wpf%}){% else %}* [System Requirements]({%slug installation-system-requirements%}){% endif %}
  * [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
- 
- * [Latest Internal Build]({%slug installation-installing-lib%})
 {% if site.framework_name == 'WPF' %}* [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%}){% else %}* [Trial License Limitations]({%slug installation-installing-license-limitations%}){% endif %}
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%})

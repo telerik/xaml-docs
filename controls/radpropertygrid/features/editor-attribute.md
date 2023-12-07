@@ -830,7 +830,7 @@ The definition of the __Player business object__ used for the example is:
 
 ## Position the Modal Editor
 
-As of the **2019.2.722** [latest internal build]({%slug installation-installing-lib%}), you can control the position of the modal window when using the **Modal EditorStyle** via the new **WindowStartupLocation**, **WindowTop** and **WindowLeft** properties of the **ModalEditor** control.
+As of the **2019.2.722** latest internal build, you can control the position of the modal window when using the **Modal EditorStyle** via the new **WindowStartupLocation**, **WindowTop** and **WindowLeft** properties of the **ModalEditor** control.
 
 >important The **WindowStartupLocation** property must be set to **Manual** for the WindowTop and WindowLeft values to have any effect.
 

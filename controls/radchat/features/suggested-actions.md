@@ -74,7 +74,7 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
 
 ## SuggestedActionsOrientation
 
-Since the __2020.2.525__ [internal build]({%slug installation-installing-lib%}) version, you have the option of setting the orientation in which the suggested actions are displayed. The default orientation is __Horizontal__.
+You have the option of setting the orientation in which the suggested actions are displayed. The default orientation is __Horizontal__.
 
 #### __[XAML] Example 3: Setting the SuggestedActionsOrientation__ 
 {{region xaml-radchat-messages-suggestedactions_3}}

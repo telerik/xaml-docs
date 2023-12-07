@@ -72,5 +72,4 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 
 ## See Also  
  * [Installing Telerik UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%}) 
- * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
- * [Latest Internal Build]({%slug installation-installing-lib%})
+ * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%}) 

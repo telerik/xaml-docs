@@ -89,5 +89,4 @@ This exception is thrown when trying to open a ClickOnce application in a browse
 
 ## See Also  
  * [Installing Telerik UI for WPF from MSI File]({%slug installation-installing-from-msi-wpf%})
- * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%})
- * [Latest Internal Build]({%slug installation-installing-lib%})
+ * [Installing Telerik UI for WPF from ZIP File]({%slug installation-installing-from-zip-wpf%}) 

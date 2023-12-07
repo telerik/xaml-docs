@@ -57,7 +57,7 @@ __Example 1__ demonstrates how you can add some custom elements around the RadSy
 
 ## Indicators Margin
 
-With the **2020.3.1130** [internal build]({%slug installation-installing-lib%}), you can add **indicators** to particular lines of the RadSyntaxEditor control by using the new **IndicatorsMargin&lt;T&gt;** class.
+You can add **indicators** to particular lines of the RadSyntaxEditor control by using the new **IndicatorsMargin&lt;T&gt;** class.
 
 The generic type parameter **T** determines the type of the created object which must be a **FrameworkElement**. The class also exposes a **UpdateIndicator** method in which you can set the properties of the created indicator element. You can also conditionally style the element as the method also provides the **line number** corresponding to the line that the indicator is drawn on.
 

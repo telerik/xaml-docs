@@ -60,4 +60,4 @@ You can now start [creating your first Telerik UI for Silverlight project]({%slu
 
 {% if site.framework_name == 'WPF' %} * [First Steps]({%slug getting-started-first-steps%}){% else %} * [First Steps]({%slug getting-started-first-steps-sl%}){% endif %}
 {% if site.framework_name == 'WPF' %} * [Explore Control Features]({%slug getting-started-explore-control-features%}){% else %} * [Explore Control Features]({%slug getting-started-explore-control-features-sl%}){% endif %}
- * [Latest Internal Build]({%slug installation-installing-lib%})
+

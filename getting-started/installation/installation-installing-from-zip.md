@@ -35,6 +35,5 @@ Once the archived folders are extracted you will probably note the following fol
               
 >The Silverlight Demos application can be downloaded from the UI for Silverlight download page (in the [Telerik account](http://www.telerik.com/account.aspx)) as a separate ZIP file as well.   
 
-## See Also  
- * [Using the Hotfix (DLLs Only)]({%slug installation-installing-lib%}) 
+## See Also   
  * [Adding UI for Silverlight to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%})

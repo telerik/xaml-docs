@@ -103,11 +103,3 @@ The __oldest nuget package__ that can be found in the __Telerik NuGet Feed__ is 
 The Telerik controls have a built-in [localization]({%slug common-localization%}) support. To enable this, the corresponding satellite assemblies should be presented in the folder where the Telerik assemblies are installed. These assemblies are available when you install the product using the __full NuGet packages__. The __separate packages__ don't include the satellite assemblies. To support localization properly, these dlls should be installed. To do so, use also the separate packages with the language resources.
 
 The separate package with the language resources is named `Telerik.Windows.Controls.for.Wpf.<language code>`. For example, `Telerik.Windows.Controls.for.Wpf.fr` will include the French resources. `Telerik.Windows.Controls.for.Wpf.de` will include the German resources, and so on. 
-
-## Installing Latest Internal Build NuGet Packages
-
-You can install and test the [Latest Internal Build]({%slug installation-installing-lib%}) (LIB) dlls provided on a weekly basis, via the NuGet Package Manager. The LIB nugets are __available only as .nupkg files__ that can be downloaded from your telerik.com account. This means that you will need to create a [local package source]({%slug nuget-package-source-setup%}) and copy the files there. You __cannot__ download LIB dlls via the online Telerik nuget server [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json), because they are not available there.
-
-When you set up the package source and place the NuGet files there, you can find them in the NuGet Package Manager. To see the LIB packages you will need also to check the __Include prerelease__ option. The LIB packages have the __-hotfix__ postfix in the version field.
-
-![{{ site.framework_name }} Installing Latest Internal Build NuGet Packages](images/Common_InstallingFromNuGet_10_wpf.png)

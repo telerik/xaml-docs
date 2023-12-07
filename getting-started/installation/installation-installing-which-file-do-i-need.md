@@ -58,13 +58,6 @@ For more information about how to install Telerik UI for WPF from a ZIP file, re
 For more information about how to install Telerik UI for Silverlight from a ZIP file, refer to the article on [first steps with the ZIP file installation]({% slug installation-installing-from-zip %}).
 {% endif %}
 
-
-## ZIP File Installation (latest internal build)
-
-The latest internal build (LIB) are regular releases containing bug fixes.
-
-For more information about how to install LIB, refer to the article on [latest internal build]({%slug installation-installing-lib %}).
-
 ## Visual Studio Extension Installation
 
 The Telerik UI for {{ site.framework_name }} library provides an option for preconfigured manual installation using the Telerik Visual Studio (VS) extension, which contains the Telerik UI for {{ site.framework_name }} DLLs and referenced assembly files.

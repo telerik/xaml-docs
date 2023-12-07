@@ -38,6 +38,7 @@ This is achieved through the usage of the following three events in conjunction.
     - `FontWeight`&mdash;Sets the FontWeight of the cell.
 	- `Foreground`&mdash;Sets the Brush for the Foreground of the cell.
 	- `CellTextAlignment`&mdash;Sets the cell's text alignment.
+    - `CellTextPadding`&mdash;Sets the cell's text padding.
 
 #### __[C#] Applying conditional styling through the CellDecorationsNeeded event__
 

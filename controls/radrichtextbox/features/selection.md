@@ -267,7 +267,7 @@ Here is an example of how you can use the first approach.
 
 ## Other Selection Properties
 
-*  __MouseSelectionHandler.DoubleClickTime__: This static property controls the double click speed of the RichTextBox.
+* `MouseSelectionHandler.DoubleClickTime`&mdash; This static property controls the double click speed of the RichTextBox.
 
 ## See Also
 

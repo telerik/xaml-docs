@@ -34,6 +34,7 @@ You can find a complete list with the Operating Systems supported by .NET in the
 * [.NET 5 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/5.0/5.0-supported-os.md)
 * [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md)
 * [.NET 7 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/7.0/supported-os.md)
+* [.NET 8 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md)
 
 ## Development Environment
 
@@ -53,6 +54,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 	* [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
 	* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
 	* [.NET 7](https://dotnet.microsoft.com/download/dotnet/7.0)
+	* [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
           
 * __Microsoft Expression Blend__ (optional)
           

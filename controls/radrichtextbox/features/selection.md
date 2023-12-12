@@ -265,6 +265,10 @@ Here is an example of how you can use the first approach.
 ![Selection in RadRichTextBox](images/RadRichTextBox_Selection_01.png)
 
 
+## Other Selection Properties
+
+* `MouseSelectionHandler.DoubleClickTime`&mdash;This static property controls the double click speed of the RichTextBox.
+
 ## See Also
 
  * [Positioning]({%slug radrichtextbox-features-positioning%})

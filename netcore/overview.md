@@ -1,7 +1,7 @@
 ---
 title: .NET Support Overview 
 page_title: .NET Core Support Overview 
-description: Telerik UI for WPF allows you to create .NET Core, .NET 5 and dot NET 6 projects. 
+description: Telerik UI for WPF allows you to create .NET Core, .NET 6 and dot NET 7 and 8 projects. 
 slug: netcore-support-overview
 tags: get,started,first,steps,netcore,standard,sdk,visual,studio,vs
 published: True
@@ -10,9 +10,11 @@ position: 0
 
 # .NET Support Overview 
 
-__Telerik UI for WPF__ comes with support for __.NET Core 3.1__, __.NET 5__ and __.NET 6__. 
+__Telerik UI for WPF__ comes with support for __.NET Core 3.1__,  __.NET 6__, __.NET 7__ and __.NET 8__.
 
-There is are sets of DLLs built against the mentioned .NET versions which you can reference in an application and start using the Telerik controls. See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
+There is are sets of DLLs built against the different .NET versions which you can reference in an application and start using the Telerik controls. There are no .NET 8 dedicated Telerik assemblies, but their .NET 7 is supported in .NET 8 projects.
+
+See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
 > The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for the .NET Core 3.1 and later is that the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package should be installed manually. This is not needed if you install the Telerik dlls using nuget packages.
 
@@ -25,16 +27,6 @@ To work with the Telerik `.NET Core 3.1` DLLs you will need to have the followin
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2019 version with the latest update. The minimum version of Visual Studio is __v16.4__. 
 
 >important Read more about the .NET Core requirements in the [Prerequisites for .NET Core on Windows](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x) MSDN article.
-
-## .NET 5 Requirements
-
-To work with the Telerik `.NET 5` DLLs you will need to have the following installed.
-
-* The latest [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
-
-* [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2019 version with the latest update.
-
->important Read more about the .NET 5 requirements in the [Install .NET on Windows](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net50#dependencies) MSDN article.
 
 ## .NET 6 Requirements
 

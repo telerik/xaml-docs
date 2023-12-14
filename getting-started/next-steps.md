@@ -39,8 +39,7 @@ Installation
 * [Download Product Files]({%slug download-product-files%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies%})
 {% endif %}
-* [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%})
-* [Latest Internal Build]({%slug installation-installing-lib%})
+* [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) 
 * [Adding the Telerik Controls to Your Project]({%slug installation-adding-to-application-create-application-and-adding-control%})
 
 Appearance

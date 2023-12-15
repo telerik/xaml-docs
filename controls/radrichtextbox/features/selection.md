@@ -267,7 +267,7 @@ Here is an example of how you can use the first approach.
 
 ## Other Selection Properties
 
-* `MouseSelectionHandler.DoubleClickTime`&mdash;This static property controls the double click speed of the RichTextBox.
+* `MouseSelectionHandler.DoubleClickTime`&mdash; This static property controls the double click speed of the RichTextBox. The default value is 400ms. It is different from the default value in .NET which is 500ms. This property allows you to set the value that best suits your case. You can set it in your code usually when initializing the RichTextBoxControl. 
 
 ## See Also
 

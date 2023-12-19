@@ -158,7 +158,7 @@ __CategoriesSource__ - gets or sets the data source (__IEnumerable__) used to ge
 
 >Note that the data source passed to the property __CategoriesSource__ should contain only objects of type __Category__.
 
-#### __[C#] Example 5: Defining the Categories colleciton in the view model__
+#### __[C#] Example 5: Defining the Categories collection in the view model__
 {{region radscheduleview-populating-with-data-implementing-view-model_4}}
 	private ObservableCollection<Category> categories;
 	        public ObservableCollection<Category> Categories
@@ -205,7 +205,7 @@ __TimeMarkersSource__ - gets or sets the data source (__IEnumerable__) used to g
 
 >Note that the data source passed to the property __TimeMarkersSource__ should contain only objects of type __TimeMarker__.
 
-#### __[C#] Example 7: Defining the TimeMarkers colleciton in the view model__
+#### __[C#] Example 7: Defining the TimeMarkers collection in the view model__
 {{region radscheduleview-populating-with-data-implementing-view-model_6}}
 	private ObservableCollection<TimeMarker> timeMarkers;
         public ObservableCollection<TimeMarker> TimeMarkers
@@ -250,7 +250,7 @@ __GroupDescriptionsSource__ - gets or sets the data source (__IEnumerable\<Group
 
 >Note that the data source passed to the property __GroupDescriptionsSource__ should contain only objects of type __GroupDescription__.
 
-#### __[C#] Example 9: Defining the GroupDescriptions colleciton in the view model__
+#### __[C#] Example 9: Defining the GroupDescriptions collection in the view model__
 {{region radscheduleview-populating-with-data-implementing-view-model_8}}
 	 private GroupDescriptionCollection groupDescriptions;
         public GroupDescriptionCollection GroupDescriptions

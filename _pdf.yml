@@ -40,7 +40,7 @@ intro_columns:
       "ChartView": "radchartview-overview"
       "ChartView3D": "radchartview3d-overview"
       "DataBar": "raddatabar-overview"
-      "Diagram Framework": "raddiagram-overview"
+      "Diagram": "raddiagram-overview"
       "GanttView": "radganttview-overview"
       "Gauge": "radgauge-overview"
       "HeatMap": "radheatmap-overview"

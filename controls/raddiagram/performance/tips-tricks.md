@@ -24,40 +24,43 @@ __RadDiagram__ API allows you to tweak your application for optimal performance.
 
 * __Pan and Zoom animations__: In case you don't need the animations while zooming or panning you can disable them. In order to turn them off, you can set the __IsPanAnimationEnabled__ and __IsZoomAnimationEnabled__ attached properties to __False__.
 
-* __RadDiagramThumbnail__: The __RadDiagramThumbnail__ mechanism represent the current ViewPort of the RadDiagram. The Thumbnail is updated on every pan, zoom, position changed operation etc. In a case with a large number of items in the ViewPort, this could lead to a slow performance. In such scenarios, you can try avoiding using the __RadDiagramThumbnail__.
+* __RadDiagramThumbnail__: The __RadDiagramThumbnail__ mechanism represent the current ViewPort of the RadDiagram. The thumbnail is updated on every pan, zoom, position changed operation etc. In a case with a large number of items in the ViewPort, this could lead to a slow performance. In such scenarios, you can try avoiding using the __RadDiagramThumbnail__.
 
-* __Disable Thumbnail from refreshing__: By default __RadDiagramThumbnail__ is refreshed on every UI operation performed into the RadDiagram. You can disable its auto refreshing mechanism and manually refresh it only when necessary. You can do that via the __IsAutoRefreshEnabled__ property and the __RefreshThumbnail()__ method.
+* __Disable thumbnail from refreshing__: By default __RadDiagramThumbnail__ is refreshed on every UI operation performed into the RadDiagram. You can disable its auto refreshing mechanism and manually refresh it only when necessary. You can do that via the __IsAutoRefreshEnabled__ property and the __RefreshThumbnail()__ method of the __RadDiagramThumbnail__ class.
+
+  	#### __[XAML] Disabling the thumbnail auto refresh__
+	{{region raddiagram-performance-tips-tricks-0}}
+		<telerik:RadDiagramThumbnail Diagram="{Binding ElementName=radDiagram}" IsAutoRefreshEnabled="False" /> 
+	{{endregion}}
 
 * __Number of shapes in ViewPort__: Work with a small number of shapes in the ViewPort. The smaller the number of shapes in the Viewport the faster diagram will be.
 
 * __Clear the Diagram Cache__: When an item (node) is removed from GraphSource, its corresponding UI container (RadDiagramShape) is stored in collection of 'recycled' shapes for future use. This aims to speed up the diagram performance in extensive undo-redo and container generation operations (loadin process). However, in a scenario where large number of Add/Remove operation are performed, the therecycled collection store in memory every operation which could lead to a possible memory issues. What can be done here is to manually clear this collection at some moment by calling the __ClearCache()__ method.
 
-#### __[C#] Example 1: Clear the RadDiagram Cache__
-{{region raddiagram-performance-tips-tricks_0}}
-	(this.xDiagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();
-{{endregion}}
+	#### __[C#] Example 1: Clear the RadDiagram Cache__
+	{{region raddiagram-performance-tips-tricks_0}}
+		(this.xDiagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();
+	{{endregion}}
 
 * __Disable the segmentation service__: It is reponsible for continually dividing the RadDiagram into segments in order to more easily retrieve "nearby" shapes for certain operations. Disabling this service should be considered and tested on a "per application" basis as it could increase the overall performance, but slow down specific scenarios such as creating a connection and snapping. 
 
-#### __[C#] Example 2: Disabling the SegmentationService__
-{{region raddiagram-performance-tips-tricks_1}}
-	public MainWindow()
-	{
-		InitializeComponent();
-
+	#### __[C#] Example 2: Disabling the SegmentationService__
+	{{region raddiagram-performance-tips-tricks_1}}
+		public MainWindow()
+		{
+			InitializeComponent();
+			this.xDiagram.ServiceLocator.Register<ISegmentationService>(new CustomSegmentationService(this.xDiagram));
+		}
+	
+		public class CustomSegmentationService : SegmentationService
+	    	{
+		        public CustomSegmentationService(IGraphInternal graph) : base(graph)
+		        {
+		        }
 		
-		this.xDiagram.ServiceLocator.Register<ISegmentationService>(new CustomSegmentationService(this.xDiagram));
-	}
-
-	public class CustomSegmentationService : SegmentationService
-    {
-        public CustomSegmentationService(IGraphInternal graph) : base(graph)
-        {
-        }
-
-        public override bool IsSegmentationEnabled => false;
-    }
-{{endregion}}
+		        public override bool IsSegmentationEnabled => false;
+	    	}
+	{{endregion}}
 
 ## Optimize Layout
 
@@ -145,8 +148,6 @@ To use the diagram in a scenario with dynamic change of the graph source, you ne
 		this.diagram.LayoutAsync(LayoutType.Tree, settings);
 	}
 {{endregion}}
-
-
 	   
 ## See Also
 

@@ -23,11 +23,8 @@ __RadFixedDocument__ is the class representing a PDF document inside __RadPdfVie
 
 {% if site.site_name == 'WPF' %}
 You can create a PDF document with the API of PdfProcessing and directly assing it to RadPdfViewer.
-{% endif %}
 
-{% if site.site_name == 'WPF' %}
-#### [C#] Example 1: Create a PDF document and show it
-
+#### [C#] Example 1: Create a PDF document and show it  
 {{region radpdfviewer-document-model-radfixeddocument_1}}
     RadFixedDocument document = new RadFixedDocument();
     using (RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document))
@@ -42,21 +39,18 @@ You can create a PDF document with the API of PdfProcessing and directly assing 
 For an existing PDF document, an instance of __RadFixedDocument__ can be created using __PdfFormatProvider__  and assigned to __RadPdfViewer__ in the following way:
 
 {% if site.site_name == 'Silverlight' %}
-#### [C#] Example 1: Import a PDF document
-
+#### [C#] Example 1: Import a PDF document  
 {{region radpdfviewer-document-model-radfixeddocument_0}}
 		Stream stream = Application.GetResourceStream(new Uri("PdfViewerDemo;component/SampleData/test.pdf", UriKind.Relative)).Stream;
 		RadFixedDocument document = new PdfFormatProvider(stream, FormatProviderSettings.ReadOnDemand).Import();
 		this.pdfViewer.Document = document;
 {{endregion}}
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
+{% else %}
 #### [C#] Example 2: Import a PDF document
 
 {{region radpdfviewer-document-model-radfixeddocument_1}}
 
-    Stream stream = Application.GetResourceStream(new Uri("PdfViewerDemo;component/SampleData/test.pdf", UriKind.Relative)).Stream;
+    Stream stream = System.Windows.Application.GetResourceStream(new Uri("PdfViewerDemo;component/SampleData/test.pdf", UriKind.Relative)).Stream;
     
     Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider pdfFormatProvider = new Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider();
     pdfFormatProvider.ImportSettings = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Import.PdfImportSettings.ReadOnDemand;
@@ -66,12 +60,9 @@ For an existing PDF document, an instance of __RadFixedDocument__ can be created
 {{endregion}}
 {% endif %}
 
-
-
 >The __PdfFormatProvider__ of __RadPdfViewer__ must not be confused with that of __RadRichTextBox__. Telerik.Windows.Documents.__Fixed__.FormatProviders.Pdf.PdfFormatProvider is the provider that __RadPdfViewer__ uses to import files. It is located in the __Telerik.Windows.Documents.Fixed__ assembly.For reference, the Telerik.Windows.Documents.FormatProviders.Pdf.PdfFormatProvider of __RadRichTextBox__ is included in the __Telerik.Windows.Documents.FormatProviders.Pdf__ assembly, in a namespace with the same name. The latter can be used only to export __RadDocument__ to PDF.
 
 As you can see, {% if site.site_name == 'WPF' %}the Import() method of {% endif %}PdfFormatProvider accepts two parameters  – stream with the contents of the PDF file and format provider settings specifying the loading mode. 
-
 
 ## Members
 
@@ -86,9 +77,8 @@ The members that RadFixedDocument exposes are:
 * __Destinations__ - a collection of all destinations (roughly said “bookmarks”) in the document that have links to them. [Read more]({%slug radpdfviewer-document-model-annotations%})
 
 * __CaretPosition__ – the current position of the caret.[ Read more]({%slug radpdfviewer-text-text-position%})
-{% endif %}
+{% else %}
 
-{% if site.site_name == 'WPF' %}
 For details about the model used by PdfViewer and the members of [RadFixedDocument](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/model/radfixeddocument), check the documentation of [PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview).
 {% endif %}
 

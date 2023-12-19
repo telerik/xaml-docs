@@ -86,3 +86,22 @@ __Fill__ and __Stroke__ are the most commonly used properties which affect most 
 ## See Also
 * [Palettes]({%slug radchartview-features-palettes-introduction%})
 * [Creating Custom palettes]({%slug radchartview-features-palettes-custom-palettes%})
+
+__Palettes__ in `RadChartView` are index-based. This means that depending on the value of the `PaletteMode`, either the data points or the series will be colored. In the scenario where one series has 9 data points, the first 8 will be colored with all entries from the palette and the 9th one will begin from the first entry. You can create a custom `ChartPalette` for the __Palette__ property of the `RadCartesianChart` element. In it, you can define __PaletteEntry__ instances for the __GlobalEntries__ property, where each __Fill__ property is set to a different color.
+
+#### __[XAML] Example 3: Creating a index-based palettes__
+{{region radchartview-palettes-paletteentry-3}}
+	<tk:RadCartesianChart.Palette>
+    		<tk:ChartPalette>
+        		<tk:ChartPalette.GlobalEntries>
+            			<tk:PaletteEntry Fill="#FF0099BC" Stroke="White" />
+            			<tk:PaletteEntry Fill="#FFE74856" Stroke="White" />
+            			<tk:PaletteEntry Fill="#FFFFB900" Stroke="White" />
+            			<tk:PaletteEntry Fill="#FF0078D7" Stroke="White" />
+        		</tk:ChartPalette.GlobalEntries>
+    		</tk:ChartPalette>
+	</tk:RadCartesianChart.Palette>
+{{endregion}}
+
+#### __Figure 2: RadChartView with index-based palettes__
+![RadChartView with index-based palettes](images/RadChartView-index-based-palettes-0.png)

@@ -18,8 +18,6 @@ There are small differences in the approaches used with the different series typ
 * [Scatter Point Series](#scatter-point-series)
 * [Pie Series](#pie-series)
 
-Palettes in `RadChartView` are index-based. This means that depending on the value of the `PaletteMode`, either the data points or the series will be colored. In the scenario where one series has 9 data points, the first 8 will be colored with all entries from the palette and the 9th one will begin from the first entry.
-
 The color binding is done via the `DefaultVisualStyle` or `PointTemplate` properties of the series. In case you are using one of the [lightweight render options]({%slug radchartview-features-rendering%}) (Direct2D or Bitmap), keep in mind that bindings are not support in the `DefaultVisualStyle`. Instead, use only fixed values. Also setting the `PointTemplate` property will disable the lightweight render options and the chart will fallback to the default XAML rendering.
 
 ## Example Data Model Definition

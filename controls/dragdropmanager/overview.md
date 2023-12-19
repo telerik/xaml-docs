@@ -19,7 +19,7 @@ __DragDropManager__ offers intuitive API similar to the WPF native drag and drop
 
 ![{{ site.framework_name }} Drag Drop Between ListBoxes](images/DragDropManager_DragBetweenListBoxes.png)
 
-## Features:
+## Key Features
 
 * __Rich event handling__: The drag-drop framework provides a wide set of events that can be used to handle the actions executed upon a drag and drop operation. Using the events you can adjust the drag and drop actions to your very custom application’s logic, thus providing a great flexibility to the end user. Read more about this in the [Events]({%slug dragdropmanager-events%}) article.
 

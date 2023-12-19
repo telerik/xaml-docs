@@ -56,7 +56,7 @@ To change the theme you will need to take the following few steps.
 		
 	And then merge the dictionaries for the controls in the dlls as shown in __Example 1__.
 	
-	#### __[XAML] Example 1: Merging .xaml files for the Office_Black theme (from the theme dll)__
+	#### __[XAML] Merging .xaml files for the Office_Black theme (from the theme dll)__
 	{{region styling-apperance-implicit-styles-overview-0}}
 		<Application>
 			<Application.Resources>
@@ -97,7 +97,7 @@ The default styles and resources for each theme are shipped also in the **/Teler
 #### Figure 1: Copy the needed XAML files in a separate folder in your application
 ![implicit styles 3](images/implicit-styles-themes-folder.PNG)
 
-#### [XAML] Example 2: The MergedDictionaries in your application resources:
+#### [XAML] The MergedDictionaries in your application resources:
 {{region styling-apperance-implicit-styles-overview-1}}
 	<Application.Resources>
 		<ResourceDictionary>
@@ -130,24 +130,29 @@ To change the theme via the StyleManager you will need to take the following few
 
 3. __Set the StyleManager.Theme attached property__ on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the **InitializeComponent** method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
 
-	#### __[C#] Example 3: Setting the theme on a control level__
-	{{region styling-apperance-implicit-styles-overview-2}}		
+   	#### __[XAML] Setting the theme on a control level in XAML__
+	{{region styling-apperance-implicit-styles-overview-2}}
+		<telerik:RadGridView telerik:StyleManager.Theme="Windows11" />
+	{{endregion}}
+
+	#### __[C#] Setting the theme on a control level in code__
+	{{region styling-apperance-implicit-styles-overview-3}}		
 		StyleManager.SetTheme(radControlInstance, new Office2016Theme());
 	{{endregion}}
 	
-	#### __[VB.NET] Example 3: Setting the theme on a control level__
-	{{region styling-apperance-implicit-styles-overview-3}}	
+	#### __[VB.NET] Setting the theme on a control level in code__
+	{{region styling-apperance-implicit-styles-overview-4}}	
 		StyleManager.SetTheme(radControlInstance, New Office2016Theme())
 	{{endregion}}
 	
-	#### __[C#] Example 4: Setting the theme on application level__
-	{{region styling-apperance-implicit-styles-overview-4}}		
+	#### __[C#] Setting the theme on application level__
+	{{region styling-apperance-implicit-styles-overview-5}}		
 		StyleManager.ApplicationTheme = new Office2016Theme();
 		InitializeComponent();
 	{{endregion}}
 	
-	#### __[VB.NET] Example 4: Setting the theme on application level__
-	{{region styling-apperance-implicit-styles-overview-5}}		
+	#### __[VB.NET] Setting the theme on application level__
+	{{region styling-apperance-implicit-styles-overview-6}}		
 		StyleManager.ApplicationTheme = New Office2016Theme()
 		InitializeComponent()
 	{{endregion}}
@@ -162,17 +167,14 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 
 Some of the Telerik themes support palettes, which contains resources for the associated theme. Some of the palettes have different color variations, which can be changed with the **LoadPreset** method.
 
-#### [C#] Example 5: Changing the color variation of the theme
-
-{{region styling-appearance-green-theme-6}}
+#### [C#] Changing the color variation of the theme  
+{{region styling-appearance-green-theme-7}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);
-
 {{endregion}}
 
-#### [VB.NET] Example 5: Changing the color variation of the theme
-
-{{region styling-appearance-green-theme-7}}
+#### [VB.NET] Changing the color variation of the theme  
+{{region styling-appearance-green-theme-8}}
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
 {{endregion}}

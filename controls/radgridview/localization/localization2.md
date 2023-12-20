@@ -41,6 +41,7 @@ Here is a list of all of the __Resources__ available and their default values:
 
 Key	|	Value
 ---	|	---	
+FilterColumn | Filter Column
 GridViewAlwaysVisibleNewRow | Click here to add new item
 GridViewClearFilter | Clear Filter
 GridViewFilter | Filter
@@ -72,6 +73,10 @@ GridViewGroupPanelTopText | Group Header
 GridViewGroupPanelTopTextGrouped | Grouped by:
 GridViewSearchPanelTopText | Full Text Search
 GridViewColumnsSelectionButtonTooltip | Select Columns
+GroupColumn | Group Column
+SortAdditionalColumn | Sort Additional Column
+SortColumn | Sort Column
+
 
 ## See Also
 

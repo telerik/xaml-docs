@@ -22,19 +22,19 @@ __RadMultiColumnComboBox with a performed search__
 
 In order to modify the search behavior, you can benefit from the following three search operators:
 
-* __+__: The items that will pass the filtering operation will have to contain both the value before the operator and the one after it.
+* __+__&mdash;The items that will pass the filtering operation will have to contain both the value before the operator and the one after it.
 
     __Using the `+` search operatior__
 
     ![RadMultiColumnComboBox with plus search operator](images/radmulticolumncombobox-search-as-you-type-1.png)
 
-* __-__: All items that will pass the filtering operation will have to contain the value before the operator, but not the one after it.
+* __-__&mdash;All items that will pass the filtering operation will have to contain the value before the operator, but not the one after it.
     
     __Using the `-` search operatior__
 
     ![RadMultiColumnComboBox with minus search operator](images/radmulticolumncombobox-search-as-you-type-2.png)
 
-* __""__: When a word or a phrase is put in quotes, the filtered objects will contain only the exact same value.
+* __""__&mdash;When a word or a phrase is put in quotes, the filtered objects will contain only the exact same value.
 
     __Using the `""` search operator__
 
@@ -50,7 +50,7 @@ This property exposes two possible values:
 
 * `MatchAllTerms`&mdash;Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `Liverpool Arsenal` is entered as the search text, only items which contain both terms ("Liverpool" and "Arsenal") in any of their properties will be matched.
 
-* `MatchExact`&mdash;Items match the search operation only when they exactly match the search text. When this mode is selected the append provider won't append text.
+* `MatchExact`&mdash;Items match the search operation only when they exactly match the search text. When this mode is selected the append provider won't append text. This option is available with the __2023 R2__ version of Telerik UI for WPF.
 
 ## Search in Hidden Columns
 

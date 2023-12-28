@@ -15,7 +15,7 @@ res_type: kb
 
 ## Description
 
-I want to change the background color of a regular WPF window according to the system setting in the Windows 11 theme. However, the color does not change when I toggle the theme mode between light and dark in the system settings.
+I want to change the background color of a regular WPF window according to the Light/Dark theme setting in the Windows 11 operating system. However, the color does not change when I toggle the theme between light and dark mode in the Windows > PC Settings > Personalization.
 
 ## Solution
 

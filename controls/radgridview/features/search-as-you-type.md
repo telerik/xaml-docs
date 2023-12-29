@@ -12,17 +12,17 @@ position: 16
 
 ## Showing the Search Panel
 
-The `RadGridView` supports searching. Through the new boolean `ShowSearchPanel` property of the control, the user can show/hide the search panel. Its default value is __False__. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
+The `RadGridView` supports searching. Through the new boolean `ShowSearchPanel` property of the control, the user can show/hide the search panel. Its default value is `false`. If hidden, the search panel can be shown with the __Ctrl+F__ shortcut.
 
->important The default searching behavior has two ways of setting the operator of the filtering criteria, depending on the value type of the property over which the search is performed. For a __string__ and __Enum__ type the operator is set to __Contains__. For all other types the operator is set to __IsEqualTo__.
+>important The default searching behavior has two ways of setting the operator of the filtering criteria, depending on the value type of the property over which the search is performed. For a `string` and `Enum` type the operator is set to `Contains`. For all other types the operator is set to `IsEqualTo`.
 
 #### __[XAML] Showing the Search Panel__
 {{region xaml-radgridview-search-as-you-type-0}}
 	<telerik:RadGridView ItemsSource="{Binding Orders}"     
-							 ShowSearchPanel="True"
+			     ShowSearchPanel="True"
                              Name="orderItemsDataGrid" Margin="5" 
-							 AutoGenerateColumns="False" 
-							 ColumnWidth="*"/>
+			     AutoGenerateColumns="False" 
+			     ColumnWidth="*"/>
 {{endregion}}
 
 __Showing the Search Panel__
@@ -33,7 +33,7 @@ __Showing the Search Panel__
 
 ## Disable showing the Search Panel
 
-You can control whether the users can use the search panel through the `CanUserSearch` boolean property of  RadGridView. Its default value is __true__. Setting it to __false__ would permanently disable the functionality, meaning that the __Ctrl + F__ combination would not show the panel as well.   
+You can control whether the users can use the search panel through the `CanUserSearch` boolean property of RadGridView. Its default value is `true`. Setting it to `false` would permanently disable the functionality, meaning that the __Ctrl + F__ combination would not show the panel as well.   
 
 #### __[XAML] Disabling the Search Panel__
 {{region xaml-radgridview-search-as-you-type-1}}
@@ -69,17 +69,17 @@ __Hidden Close Button__
 
 ## Deferred Searching
 
-The deferred searching functionality can be controlled through the `IsSearchingDeferred` property. Its default value is __False__ and it determines whether the filtering through the search text box will be performed dynamically. 
+The deferred searching functionality can be controlled through the `IsSearchingDeferred` property. Its default value is `false` and it determines whether the filtering through the search text box will be performed dynamically. 
 
-When IsSearchingDeferred is set to __True__, the filtering will be executed when the value is being committed on __lost focus__ or when the __Enter__ or __Tab__ key is pressed. 
+When `IsSearchingDeferred` is set to `true`, the filtering will be executed when the value is being committed on __lost focus__ or when the __Enter__ or __Tab__ key is pressed. 
 
 #### __[XAML] Setting the IsSearchingDeferred to True__
 {{region xaml-radgridview-search-as-you-type-2}}
 	<telerik:RadGridView ItemsSource="{Binding Orders}"
-					 IsSearchingDeferred="True"
-                     Name="orderItemsDataGrid" 
-                     Margin="5" 
-                     AutoGenerateColumns="False"/>
+			     IsSearchingDeferred="True"
+                     	     Name="orderItemsDataGrid" 
+                     	     Margin="5" 
+                     	     AutoGenerateColumns="False"/>
 {{endregion}}
 
 ## Commands
@@ -87,7 +87,7 @@ When IsSearchingDeferred is set to __True__, the filtering will be executed when
 Three new commands have been exposed for the text search functionality, via the `RadGridViewCommands` class. 
 
 - `Search`&mdash;Executed in order to show the search panel.
-- `SearchByText`&mdash;Executed in order to perform an actual search. It takes a string as a parameter - the text to search by.
+- `SearchByText`&mdash;Executed in order to perform an actual search. It takes a `string` as a parameter - the text to search by.
 - `CloseSearchPanel`&mdash;Executed in order to hide the search panel.
 
 #### __[C#] Executing the search commands in code__
@@ -194,15 +194,15 @@ By default, the value of the `TextBlock` appearing before the search `TextBox` i
 
 ## Add Search Criteria Programmatically 
 
-RadGridView's search mechanism supports defining a search criteria programmatically. This can be done through the `SearchByText` Command. More information can be found in the [Commands Overview]({%slug gridview-commands-overview%}) topic. 
+RadGridView's search mechanism supports defining a search criteria programmatically. This can be done through the `SearchByText` command. More information can be found in the [Commands Overview]({%slug gridview-commands-overview%}) topic. 
 
 ## Search Over Dynamic Data
 
-RadGridView provides full support for searching over dynamic data. This includes `IDynamicMetaObjectProvider`(DynamicObject and ExpandoObject), `ICustomTypeProvider`, and `ICustomTypeDescriptor` implementations.
+RadGridView provides full support for searching over dynamic data. This includes `IDynamicMetaObjectProvider`(`DynamicObject` and `ExpandoObject`), `ICustomTypeProvider`, and `ICustomTypeDescriptor` implementations.
 
 ## Search in Hidden Columns
 
-RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the `CanUserSearchInHiddenColumns`` property of the RadGridView control to __True__.
+RadGridView's text search mechanism supports searching in hidden columns. This behavior can be enabled by setting the `CanUserSearchInHiddenColumns` property of the RadGridView control to `true`.
 
 #### __[XAML] Setting CanUserSearchInHiddenColumns property in XAML__
 {{region xaml-radgridview-search-as-you-type-6}}
@@ -211,7 +211,7 @@ RadGridView's text search mechanism supports searching in hidden columns. This b
 
 ## Search With Accent Insensitive
 
-The `SearchStateManager` property of RadGridView exposes the `IsSearchWithAccentEnabled` property, which allows you to search with accent insensitive. This behavior is turned off by default. To enable this functionality you can subscribe to the Loaded event of the RadGridView. In the event handler, you can set this property to __True__. 
+The `SearchStateManager` property of RadGridView exposes the `IsSearchWithAccentEnabled` property, which allows you to search with accent insensitive. This behavior is turned off by default. To enable this functionality you can subscribe to the Loaded event of the RadGridView. In the event handler, you can set this property to `true`. 
 
 #### __[XAML] Setting IsSearchWithAccentEnabled property__
 {{region xaml-radgridview-search-as-you-type-6}}

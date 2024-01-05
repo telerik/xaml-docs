@@ -30,8 +30,7 @@ In order to use the built-in UI, you should add references to the following asse
 * **Telerik.Windows.Controls.ImageEditor**
 * **Telerik.Windows.Controls.RibbonView**
 
-The default en-US dictionary for SpellChecking is located in:
-* **Telerik.Windows.Documents.Proofing.Dictionaries.En-US**.
+The default en-US dictionary for SpellChecking that was available via the `Telerik.Windows.Documents.Proofing.Dictionaries.En-US.dll` in .NET Framework, is now embeded into the `Telerik.Windows.Controls.RichTextBox.dll`.
 
 >If you are migrating from .NET Framework, note that **Telerik.Windows.Documents.dll** and **Telerik.Windows.Controls.RichTextBoxUI.dll** that you have used in the .NET Framework version **have been unified** into a new, single one for the .NET Core version of the control. The associated .xaml files are changed respectively. The name of the new assembly is **Telerik.Windows.Controls.RichTextBox.dll**. 
 

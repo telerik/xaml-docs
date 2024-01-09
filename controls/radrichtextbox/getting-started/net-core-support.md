@@ -23,7 +23,7 @@ To use RadRichTextBox, you need to add references to the following assemblies:
 * __Telerik.Windows.Data__
 * __Telerik.Windows.Documents.Core__
 
-In order to use the built-in UI, you should add references to the following assemblies:
+To use the built-in UI, you should add references to the following assemblies:
 
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Controls.Navigation__
@@ -32,7 +32,7 @@ In order to use the built-in UI, you should add references to the following asse
 
 ## Migration from .NET Framework
 
-If you are migrating from .NET Framework, note that there are several changes made to the assemblies. Several DLLs are now merged in а new asssembly that is named __Telerik.Windows.Controls.RichTextBox.dll__. These merged DLLs are the following ones:
+If you are migrating from .NET Framework, note that there are several changes made to the assemblies. Several DLLs are now merged in а new assembly that is named __Telerik.Windows.Controls.RichTextBox.dll__. These merged DLLs are the following ones:
 
 * __Telerik.Windows.Documents.dll__
 * __Telerik.Windows.Controls.RichTextBoxUI.dll__
@@ -46,7 +46,7 @@ If you are migrating from .NET Framework, note that there are several changes ma
 
 >important The associated __.xaml__ files are changed respectively.
 
->important MEF is no supported by the .NetCore version of the RadRichTextBox control. For more information, check the [MEF]({%slug radrichtextbox-mef%}) article.
+>important MEF is not supported by the .NetCore version of the RadRichTextBox control. For more information, check the [MEF]({%slug radrichtextbox-mef%}) article.
 
 ## Paths to Resources
 

@@ -12,9 +12,21 @@ position: 16
 
 `RadRichTextBox` uses the [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx) in order to provide customization options, such as creating and utilizing custom dialogs and pop-ups, format providers and dictionaries for spellchecking. It finds and loads the types from the assemblies and they can be used without being explicitly initialized.
 
-__This topic is not applicable for RadRichTextBox for `.NET Core` and above.__
+## .Net Core and Later Versions Specifics
 
-Replacing the RadRichTextBox tools, such as the `SelectionMiniToolBar` using custom attributes is not supported when using the control in a .NetCore and above project.
+The content of this article is not applicable to the __RadRichTextBox for .Net Core__ and later versions, as they do not support MEF.
+
+Replacing the RadRichTextBox tools, such as the `SelectionMiniToolBar` using custom attributes is not supported when using the control in a .Net Core and above project. Instead, you can use the corresponding properties of the control to apply the customization options.
+
+#### __[C#] Replacing RadRichTextBox tools with custom ones__
+{{region radrichtextbox-mef-0}}
+    this.richTextBox.SelectionMiniToolBar = new MyCustomSelectionMiniToolBar();
+{{endregion}}
+
+#### __[VB.NET] Replacing RadRichTextBox tools with custom ones__
+{{region radrichtextbox-mef-1}}
+    Me.richTextBox.SelectionMiniToolBar = New MyCustomSelectionMiniToolBar()
+{{endregion}}
 
 ## Customization
 
@@ -25,7 +37,7 @@ MEF allows you to easily customize or even replace the extensible parts.
 To plug a custom dialog and replace the default one you need to implement the corresponding interface and mark the class that implements it with an attribute. The following example shows how to replace the default `InsertDateTimeDialog` with a custom one. This will skip the default type and load the custom one. The same approach could be used to override the rest of the dialogs, the selection mini toolbar and the context menu.
 
 #### __[C#] Create Custom Dialog__
-{{region radrichtextbox-mef_0}}
+{{region radrichtextbox-mef-2}}
 	[CustomInsertDateTimeDialog]
 	public partial class CustomInsertDateTimeDialog: RadRichTextBoxWindow, IInsertDateTimeDialog 
 {{endregion}}
@@ -37,7 +49,7 @@ To plug a custom dialog and replace the default one you need to implement the co
 New format providers can be easily plugged-in by deriving from the `DocumentFormatProviderBase` class or directly from a concrete existing provider and marking the class with the `CustomDocumentFormatProviderAttribute` 
 
 #### __[C#] Create Custom Format Provider__
-{{region radrichtextbox-mef_1}}
+{{region radrichtextbox-mef-3}}
 	[CustomDocumentFormatProvider]
 	public class DocFormatProvider : DocumentFormatProviderBase
 {{endregion}}
@@ -51,7 +63,7 @@ New format providers can be easily plugged-in by deriving from the `DocumentForm
 You can create and plug your custom dictionary by implementing the `IWordDictionary` interface. The next example demonstrates how to create a dictionary for Danish.
 
 #### __[C#] Create Custom Dictionary__
-{{region radrichtextbox-mef_2}}
+{{region radrichtextbox-mef-4}}
     [WordDictionaryMetadata("da-DK")]
     public class CustomDanishDictionary : IWordDictionary
 {{endregion}}
@@ -68,7 +80,7 @@ You can define a new `TypeCatalog` with the necessary types and pass it to the `
 >The code in the next snippet requires a reference to System.ComponentModel.Composition.dll.
 
 #### __[C#] Create TypeCatalog__
-{{region radrichtextbox-mef_3}}
+{{region radrichtextbox-mef-5}}
 	RadCompositionInitializer.Catalog = new TypeCatalog(
     // format providers
     typeof(XamlFormatProvider),
@@ -130,7 +142,7 @@ You can define a new `TypeCatalog` with the necessary types and pass it to the `
 {{endregion}}
 
 #### __[VB.NET] Create TypeCatalog__
-{{region radrichtextbox-mef_3}}
+{{region radrichtextbox-mef-6}}
        UI.Extensibility.RadCompositionInitializer.Catalog = New ComponentModel.Composition.Hosting.TypeCatalog(
             GetType(XamlFormatProvider),
             GetType(RtfFormatProvider),
@@ -190,7 +202,7 @@ You could remove all the types you won’t need in your application.
 By default, RadRichTextBox loads all the format providers in the referenced assemblies. If you don’t need them all, you could turn off the MEF and register only the used providers. The next example demonstrates how to load only DocxFormatProvider, even if other format providers assemblies are added to the project .
 
 #### __[C#] Load Format Provider__
-{{region radrichtextbox-mef_4}}
+{{region radrichtextbox-mef-7}}
 	DocumentFormatProvidersManager.AutomaticallyLoadFormatProviders = false;
 	DocumentFormatProvidersManager.RegisterFormatProvider(new DocxFormatProvider());
 {{endregion}}
@@ -201,7 +213,7 @@ By default, RadRichTextBox loads all the format providers in the referenced asse
 The `UILayersBuilder` class is responsive for loading all the UI layers in RadRichTextBox. The initialization of this type will load the layers without using MEF.
 
 #### __[C#] Initialize UILayersBuilder__
-{{region radrichtextbox-mef_5}}
+{{region radrichtextbox-mef-8}}
 	this.radRichTextBox.UILayersBuilder = new UILayersBuilder();
 {{endregion}}
 
@@ -212,7 +224,7 @@ All the dictionaries for the spell checking functionality are loaded with MEF. Y
 * If the spell checking is not among the requirements for the application, you could turn it off.
 
 	#### __[C#] Disable Spell Checking__
-		{{region radrichtextbox-mef_6}}
+		{{region radrichtextbox-mef-9}}
 	
 			this.radRichTextBox.IsSpellCheckingEnabled = false;
 		{{endregion}}
@@ -220,7 +232,7 @@ All the dictionaries for the spell checking functionality are loaded with MEF. Y
 * In case you plan to use the built-in spell checker, you could tell the MEF to not search and load for all the default dictionaries and load manually only the ones which will be used in your application.
 
 	#### __[C#] Use Spell Checking Without MEF__
-		{{region radrichtextbox-mef_7}}
+		{{region radrichtextbox-mef-10}}
 	
 			this.radRichTextBox.IsSpellCheckingEnabled = true;
 			DocumentSpellChecker documentSpellChecker = this.radRichTextBox.SpellChecker as DocumentSpellChecker;

@@ -223,7 +223,29 @@ The `SearchStateManager` property of RadGridView exposes the `IsSearchWithAccent
 {{endregion}}
 
 __Using Search With Accent Insensitive__
-![radgridview search-as-you-type accent insensitive](images/radgridview-search-asyoutype-accent.PNG)
+![{{ site.framework_name }} radgridview search-as-you-type accent insensitive](images/radgridview-search-asyoutype-accent.PNG)
+
+## Exclude Column from Search
+
+The `GridViewBoundColumnBase` provides an option to exclude it from the search mechanism. To achieve this, you can use its `IsSearchable` property. The default value of this property is __True__, which means that the column will be included in the search operation. To exclude a column from this operation, set the IsSearchable property to __False__.
+
+#### __[XAML] Excluding a column from the search mechanism__
+{{region radgridview-search-as-you-type-7}}
+	<telerik:RadGridView ItemsSource="{Binding Clubs}" 
+	                     ShowSearchPanel="True" 
+	                     AutoGenerateColumns="False" 
+	                     GroupRenderMode="Flat">
+	    <telerik:RadGridView.Columns>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"  
+	                                    IsSearchable="False"/>
+	        <telerik:GridViewDataColumn DataMemberBinding="{Binding City}"/>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
+{{endregion}}
+
+__RadGridView with an excluded column from the search mechanism__
+
+![{{ site.framework_name }} RadGridView with an excluded column from the search mechanism](images/radgridview-search-as-you-type-exclude-column.png)
 
 ## See Also
 * [Basic Filtering]({%slug gridview-filtering-basic%})

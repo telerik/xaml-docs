@@ -14,9 +14,11 @@ position: 16
 
 ## .Net Core and Later Versions Specifics
 
-The content of this article is not applicable to the __RadRichTextBox for .Net Core__ and later versions, as they do not support MEF.
 
-Replacing the RadRichTextBox tools, such as the `SelectionMiniToolBar` using custom attributes is not supported when using the control in a .Net Core and above project. Instead, you can use the corresponding properties of the control to apply the customization options.
+
+The content of this article is applicable only to the __RadRichTextBox for .NET Framework__ and later versions. The __.NET Core__ and later versions as they do not support MEF.
+
+Replacing the RadRichTextBox tools, such as the `SelectionMiniToolBar` using custom attributes is not supported when using the control in a .NET Core and above project. Instead, you can use the corresponding properties of the control to apply the customization options.
 
 #### __[C#] Replacing RadRichTextBox tools with custom ones__
 {{region radrichtextbox-mef-0}}

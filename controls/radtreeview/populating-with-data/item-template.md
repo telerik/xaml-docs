@@ -10,7 +10,7 @@ position: 8
 
 # ItemTemplate
 
-When binding your __RadTreeView__ to a collection, you are able to configure the visualization of the data and the appearance of the __RadTreeViewItems__ via the __ItemTemplate__ and the __ItemTemplateSelectior__ properties. 
+When binding your __RadTreeView__ to a collection, you are able to configure the visualization of the data and the appearance of the __RadTreeViewItems__ via the __ItemTemplate__ and the __ItemTemplateSelector__ properties. 
 
 If you want to read about the __ItemTemplateSelector__, see the main topic [ItemTemplateSelector]({%slug radtreeview-populating-with-data-item-template-selector%}).
 

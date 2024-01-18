@@ -355,6 +355,7 @@ Finally, you have to tell the column to use this custom filtering control like t
 
 >In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please refer to the [Styling custom controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) section.
 
-## See Also
+>tip If you want to customize the default `FilteringControl` used by the GridView, you can [edit its ControlTemplate]({%slug styling-apperance-editing-control-templates%}) as mentioned in the [Styling FilteringControl and FilteringDropDown]({%slug gridview-styling-filteringcontrol%}) article.
 
+## See Also  
  * [Programmatic Filtering]({%slug gridview-filtering-programmatic%})

@@ -76,6 +76,8 @@ When you are finished you will see the result in the window.
 
 ![RadRichTextBoxRibbonUI](images/RadRichTextBoxRibbonUI_06.png)
 
+To make this work the "design" folder (coming from the Telerik UI for WPF installation) should be presented in the directory where the referenced Telerik dlls are placed.
+
 ## Customizing the Ribbon
 
 When the control is added at design time, the entire XAML for all elements is added as well. This allows you to customize the ribbon. For example you can delete tabs and other elements by selecting them and removing their XAML code. You can customize the elements actions by unbinding them from the default commands and adding custom event handlers. You can change any visual properties as well.

@@ -17,6 +17,7 @@ The __RadButton__ can be styled by creating an appropriate __Style__ (or use Imp
 #### __[C#] Example 1: Create custom implicit style__
 {{region radbuttons-styles-and-templates-styling-the-radbutton-0}}
 	<Window.Resources>
+ <!-- if you use NoXaml dlls, set the following property on the Style object: BasedOn="{StaticResource RadButtonStyle}" -->
 		<Style TargetType="telerik:RadButton">
 			<Setter Property="Opacity" Value="0.5"/>
 			<Setter Property="BorderBrush" Value="Red"/>

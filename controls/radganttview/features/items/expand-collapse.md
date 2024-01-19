@@ -126,3 +126,15 @@ The next screenshots show the final result:
 ![radganttview-features-items-expand-collapse-3](images/radganttview-features-items-expand-collapse-3.jpg)
 
 ![radganttview-features-items-expand-collapse-4](images/radganttview-features-items-expand-collapse-4.jpg)
+
+## Getting the Expanded State of GanttTask
+
+The expand state of the tasks is held by the `HierarchicalCollectionAdapter` of the `RadGantView`'s `ExpandCollapseService`. The adapter exposes a method named `GetItemWrapperByItemKey` which returns a `HierarchicalItem` object, which has a `IsExpanded` property. 
+
+#### __[C#] Getting the expanded state of GanttTask via the corresponding HierarchicalItem__  
+{{region cs-radganttview-features-items-expand-collapse-4}}
+	GanttTask task = myTasksSource[0];
+	HierarchicalItem hierarchicalItem = this.ganttView.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);
+ 	bool isTaskExpanded = hierarchicalItem.IsExpanded;
+{{endregion}}
+

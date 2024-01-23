@@ -79,7 +79,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTem
 
 In the code behind you have to:
 
-* Create and initialize the __DispathcherTimer__ object.
+* Create and initialize the __DispatcherTimer__ object.
 
 * Handle the click event for the button:
 

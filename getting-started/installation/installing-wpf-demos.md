@@ -63,7 +63,7 @@ Follow the next steps in order to download it:
 
 	![{{ site.framework_name }} ExamplesCS_WPF Solution](images/installing-wpf-demos-4.png)
 
-6. The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation (via the .msi installer) of the Telerik UI for WPF suite with the same version as the downloaded demos. This will create an __environment variable__ called `TelerikWPFDir` which points to the Binaries folder in the installation directory (example: *C:\Program Files (x86)\Progress\Telerik UI for WPF R3 2023*). The environment variable is used by the HintPaths in the source code to resolve the Telerik assemblies.
+6. The source code .zip does not contain the assemblies so that it is smaller in size. Building and running the demos solution locally requires to have a local installation (via the .msi installer) of the Telerik UI for WPF suite with the same version as the downloaded demos. This will create an __environment variable__ called `TelerikWPFDir` which points to the Binaries folder in the installation directory (example: *C:\Program Files (x86)\Progress\Telerik UI for WPF 2024 Q1*). The environment variable is used by the HintPaths in the source code to resolve the Telerik assemblies.
 
 ## Common Issues
 

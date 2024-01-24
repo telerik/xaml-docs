@@ -31,7 +31,7 @@ In order to manually upgrade your controls to a newer version of the suite, you 
 
 	* [ZIP file for manual (advanced) installation]({%slug installation-installing-from-zip-wpf%})
 
-* If the upgrade is major (i.e. from R2 2021 to R3 2021), check the [Release History](http://www.telerik.com/products/wpf/whats-new.aspx) to see if there are any major changes. You can also run the [API Analyzer Tool]({%slug upgrade-api-analyzer%}) to check for any breaking changes.
+* If the upgrade is major (i.e. from Q1 2024 to Q2 2024), check the [Release History](http://www.telerik.com/products/wpf/whats-new.aspx) to see if there are any major changes. You can also run the [API Analyzer Tool]({%slug upgrade-api-analyzer%}) to check for any breaking changes.
 
 * Back up your application.
 

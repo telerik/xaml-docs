@@ -61,9 +61,9 @@ To disable this behavior, you can set the AutoScrollToCaretOnTextChange property
 
 ## IME Support
 
-The RadSyntaxEditor control provides built-in support for the most commonly used Microsoft IMEs like Chinese IME, Japanese IME, Korean IME and etc. which are shipped with the Windows OS.
+The `RadSyntaxEditor` control provides built-in support for the most commonly used Microsoft IMEs like Chinese IME, Japanese IME, Korean IME and etc. which are shipped with the Windows OS.
 
->note To use this feature, set the `UseMonospacedOptimization` property of RadSyntaxEditor to __False__.
+To use this feature, set the `UseMonospacedOptimization` property of `RadSyntaxEditor` to `false`.
 
 __RadSyntaxEditor displaying Japanese IME__
 

@@ -122,6 +122,8 @@ navigation:
         title: RadPivotGrid
     controls/raddatetimepicker:
         title: RadDateTimePicker
+    controls/raddaterangepicker:
+        title: RadDateRangePicker
     controls/radcombobox:
         title: RadComboBox
     controls/dragdropmanager:
@@ -3425,6 +3427,11 @@ defaults:
         title_prefix: "WPF DateTimePicker"
 -
     scope:
+        path: "controls/raddaterangepicker"
+    values:
+        title_prefix: "WPF DateRangePicker"
+-
+    scope:
         path: "controls/raddesktopalert"
     values:
         title_prefix: "WPF DesktopAlert"
@@ -4012,6 +4019,7 @@ intro_columns:
     items:
       "Calendar": "radcalendar-overview"
       "DateTimePicker": "raddatetimepicker-overview"
+      "DateRangePicker": "raddaterangepicker-overview"
       "ScheduleView": "radscheduleview-overview"
       "TimePicker": "radtimepicker-overview"
       "TimeSpanPicker": "radtimespanpicker-overview"

@@ -180,7 +180,8 @@ controls/radmap/features/providers/mapboxprovider.md,
 controls/radmap/features/providers/vectortileproviders.md,
 controls/radmap/features/providers/custom-vector-tile-provider.md,
 styling-and-appearance/styling-apperance-theme-palettes.md,
-controls/radlistbox/sorting.md]
+controls/radlistbox/sorting.md,
+controls/raddaterangepicker]
 
 exclude_navigation: [controls/raddocking/theming/*]
 

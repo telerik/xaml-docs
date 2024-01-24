@@ -52,6 +52,7 @@ RadDataForm	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Data, Tel
 RadDataPager	|	Telerik.Windows.Controls.Data, Telerik.Windows.Data
 RadDatePicker	|	Telerik.Windows.Controls.Input
 RadDateTimePicker	|	Telerik.Windows.Controls.Input
+RadDateRangePicker	|	Telerik.Windows.Controls.Input
 RadDataServiceDataSource	|	Telerik.Windows.Data, Telerik.Windows.Controls.DataServices
 RadDesktopAlert	|	Telerik.Windows.Controls.Navigation
 RadDiagram	|	Telerik.Windows.Controls.Diagrams, Telerik.Windows.Diagrams.Core

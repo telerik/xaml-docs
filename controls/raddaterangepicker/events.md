@@ -30,5 +30,3 @@ Currently, the control provides only a single dedicated event named `CustomRange
 		e.CustomRanges.Add(newRange);
 	}
 {{endregion}}
-
-## See Also

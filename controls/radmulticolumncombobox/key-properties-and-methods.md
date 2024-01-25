@@ -5,7 +5,7 @@ description: Check our &quot;Key Properties and Methods&quot; documentation arti
 slug: multicolumncombobox-dropdown-key-properties-and-methods
 tags: key, properties, methods
 published: True
-position: 3
+position: 6
 ---
 
 # Key Properties and Methods

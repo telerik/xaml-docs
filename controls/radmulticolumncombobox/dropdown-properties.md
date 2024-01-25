@@ -5,7 +5,7 @@ description: Check our &quot;DropDown Properties&quot; documentation article for
 slug: multicolumncombobox-dropdown-properties
 tags: dropdown,properties
 published: True
-position: 2
+position: 4
 ---
 
 # DropDown Properties

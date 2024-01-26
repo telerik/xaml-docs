@@ -5,7 +5,7 @@ description: Check our &quot;Getting Started&quot; documentation article for the
 slug: multicolumncombobox-getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 ---
 
 # Getting Started with {{ site.framework_name }} MultiColumnComboBox

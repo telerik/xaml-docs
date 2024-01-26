@@ -5,7 +5,7 @@ description: Check our &quot;GridView ItemsSourceProvider&quot; documentation ar
 slug: multicolumncombobox-gridview-itemssourceprovider
 tags: gridview, itemssource, provider
 published: True
-position: 4
+position: 5
 ---
 
 # GridView ItemsSourceProvider

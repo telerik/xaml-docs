@@ -5,7 +5,7 @@ description: Check our &quot;SelectionBox Styles And Templates&quot; documentati
 slug: multicolumncombobox-gridview-selectionbox-styles-and-templates
 tags: selectionbox, styles, templates
 published: True
-position: 5
+position: 7
 ---
 
 # SelectionBox Styles And Templates

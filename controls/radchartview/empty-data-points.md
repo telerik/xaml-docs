@@ -47,7 +47,7 @@ The `RadCartesianChart` control allows you to show gaps in the data without remo
 
 ![Picture showing gaps in the chart created with an empty data point](images/radchartview-empty-data-points-0.png)
 
-The following example shows how to assing the value of the data point in code.
+The following example shows how to assign the value of the data point in code.
 
 #### __[C#] Creating an empty data point in code__
 {{region radchartview-empty-data-points-1}}
@@ -58,7 +58,7 @@ The following example shows how to assing the value of the data point in code.
 
 ## Data Binding Setup
 
-When the chart series is data bound via its ItemsSource property, the assignment of the null value is implemented in the data point models.
+When the chart series is data-bound via its ItemsSource property, the assignment of the null value is implemented in the data point models.
 
 #### __[C#] Defining the data point model__
 {{region radchartview-empty-data-points-2}}

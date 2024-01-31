@@ -57,7 +57,8 @@ Below you could find a list of the available files:
 * Telerik_UI_for_WPF_[version]\_NuGet_NoXaml_[license].zip 
 * Telerik_UI_for_WPF_[version]\_NuGet_Separate_Packages_Xaml_[license].zip
 * Telerik_UI_for_WPF_[version]\_NuGet_Separate_Packages_NoXaml_[license].zip 
-* Telerik_UI_for_WPF_[version]_[license]_Hotfix_DIGITALLY_SIGNED.zip 
+
+In versions prior Q1 2024, there is a .zip file with digitally signed version of the Telerik assembles - __Telerik_UI_for_WPF_[version]_[license]_Hotfix_DIGITALLY_SIGNED.zip__. With the Q1 2024 release __all Telerik dlls are digitally signed__ and there is no need of a separate package, which is why this .zip is no longer distributed.
 
 >Check [Setting a theme]({%slug styling-apperance-implicit-styles-overview%}) topic for more information on the Xaml and NoXaml binaries.
 

@@ -115,12 +115,11 @@ Notice the __SeriesFamily__ property, which is available for the collections in 
 	        </telerik:AreaSeries>
 	    </telerik:RadCartesianChart>
 	</Grid>
-	{{endregion}}
+{{endregion}}
 
+__Example showing the custom palette__  
 
-
-Here is a snapshot of this example:
-        ![Rad Chart View-palettes-custom-palettes-0](images/RadChartView-palettes-custom-palettes-0.png)
+![Rad Chart View-palettes-custom-palettes-0](images/RadChartView-palettes-custom-palettes-0.png)
 
 In the above example there two charts - a Pie chart and a Cartesian chart. The PieSeries of the Pie chart are using the colors from the __PaletteEntryCollection__  with __SeriesFamily__ set to "Pie". Since we did not set a specific __PaletteEntryCollection__ for the area series of the second chart, they use the colors from the __GlobalEntries__ collection.
         

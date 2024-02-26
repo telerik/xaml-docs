@@ -10,13 +10,11 @@ position: 0
 
 # Introduction
 
-This series of articles will give an overview of the Palette colorization mechanism of RadChartView.      
+This series of articles will give an overview of the Palette colorization mechanism of RadChartView.
 
-## Overview
+The __palette__ is a set of predefined Fills and Strokes which can be used to set the coloring of a chart much easier then setting explicitly the colors for each bar or slice. RadChartView brings you the options to define your own palettes and to use the ones we have prepared for you as well.
 
-The __palette__ is a set of predefined Fills and Strokes which can be used to set the coloring of a chart much easier then setting explicitly the colors for each bar or slice. RadChartView brings you the options to define your own palettes and to use the ones we have prepared for you as well. **Example 1** shows how the "Warm" palette can be used for a simple PieChart:
-
-#### __[XAML] Example 1: RadPieChart with Warm Pallete__ 
+#### __[XAML] RadPieChart with Warm Pallete__ 
 {{region radchartview-pallete}}	
 	<telerik:RadPieChart Palette="Warm">
 		<telerik:PieSeries>
@@ -29,8 +27,13 @@ The __palette__ is a set of predefined Fills and Strokes which can be used to se
 	</telerik:RadPieChart>
 {{endregion}}
 
-#### __Figure 1: Result from Example 1__
+__Pie chart with the built-in Warm palette__  
+
 ![Rad Chart View-palettes-introduction-0](images/RadChartView-palettes-introduction-0.png)
+
+The palette coloring is index based, which means that each next chart item (series or data point) will get the next [palette entry]({%slug radchartview-features-palettes-paletteentry%}) from the palette collection. When the palette entries are exhausted, they will start repeating. For example, the built-in palettes have 8 colors defined. The first chart series will take the first palette color, the second series the second color, and so on. If you end up with, lets say, 9 series, the palette entries will start repeating and the first entry will be used for the 9th chart series.
+
+By default the coloring is applied based on the series index, but few of the chart series (like `BarSeries`) allow you to change this behavior via their [PaletteMode]({%slug radchartview-series-barseries%}) property.
 
 ## Built In Palettes
 

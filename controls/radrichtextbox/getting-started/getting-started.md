@@ -10,7 +10,7 @@ position: 0
 
 # Getting Started with {{ site.framework_name }} RichTextBox
 
-__RadRichTextBox__ is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
+`RadRichTextBox` is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
       
 
 * [Assembly References](#assembly-references)
@@ -23,86 +23,87 @@ __RadRichTextBox__ is a control that allows you to display and edit rich text co
 ## Assembly References
 
 {% if site.framework_name == 'WPF' %}
->The references required to use RadRichTextBox in a **.NET Core** project have been united. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
+>The references required to use RadRichTextBox in a __.NET Core__ project have been united. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
 {% endif %}
 
-The minimal set of references you need to have in your application in order to have a **RadRichTextBox** are as follows:
+The minimal set of references you need to have in your application in order to have a RadRichTextBox are as follows:
 
-* **Telerik.Windows.Controls**
-* **Telerik.Windows.Data**
-* **Telerik.Windows.Documents** 
-* **System.ComponentModel.Composition**
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Data__
+* __Telerik.Windows.Documents__ 
+* __Telerik.Windows.Documents.Core__
+* __System.ComponentModel.Composition__
 
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
 
-* **Telerik.Windows.Controls.RichTextBoxUI**
-* **Telerik.Windows.Controls.ImageEditor**
-* **Telerik.Windows.Controls.Input**
-* **Telerik.Windows.Controls.Navigation**
-* **Telerik.Windows.Controls.RibbonView**
+* __Telerik.Windows.Controls.RichTextBoxUI__
+* __Telerik.Windows.Controls.ImageEditor__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Controls.RibbonView__
 
 
-For more information on using **RadRichTextBox** with **RadRichTextBoxRibbonUI**, please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
+For more information on using RadRichTextBox with `RadRichTextBoxRibbonUI`, please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
         
 
-If you are not using the SelectionMiniToolbar, the ContextMenu and **RadRichTextBoxRibbonUI**, you can omit the last five assemblies.
+If you are not using the SelectionMiniToolbar, the ContextMenu and RadRichTextBoxRibbonUI, you can omit the last five assemblies.
 
 For import from/ export to different file formats, you would need references to:
 
-* **Telerik.Windows.Documents.FormatProviders.OpenXml** and **Telerik.Windows.Zip** for DOCX.
-* **Telerik.Windows.Documents.FormatProviders.Html** for HTML.
-* **Telerik.Windows.Documents.FormatProviders.Xaml** for XAML.
-* **Telerik.Windows.Documents.FormatProviders.Rtf** for RTF.
-* **Telerik.Windows.Documents.FormatProviders.Pdf** and **Telerik.Windows.Zip** for PDF (export only).
+* __Telerik.Windows.Documents.FormatProviders.OpenXml__ and __Telerik.Windows.Zip__ for DOCX.
+* __Telerik.Windows.Documents.FormatProviders.Html__ for HTML.
+* __Telerik.Windows.Documents.FormatProviders.Xaml__ for XAML.
+* __Telerik.Windows.Documents.FormatProviders.Rtf__ for RTF.
+* __Telerik.Windows.Documents.FormatProviders.Pdf__ and __Telerik.Windows.Zip__ for PDF (export only).
 
 
 The default en-US dictionary for SpellChecking is located in:
 
-* **Telerik.Windows.Documents.Proofing.Dictionaries.En-US**.
+* __Telerik.Windows.Documents.Proofing.Dictionaries.En-US__.
 
 {% if site.site_name == 'Silverlight' %}
->A reference to **Telerik.Windows.Documents.FormatProviders.Html** has to be added in order to use HTML printing.{% endif %}
+>A reference to __Telerik.Windows.Documents.FormatProviders.Html__ has to be added in order to use HTML printing.{% endif %}
 
 
 {% if site.site_name == 'WPF' %}
->In order to be able to **copy/paste rich text** from desktop applications, you have to add references to **Telerik.Windows.Documents.FormatProviders.Rtf** and **Telerik.Windows.Documents.FormatProviders.Html**.{% endif %}
+>In order to be able to __copy/paste rich text__ from desktop applications, you have to add references to __Telerik.Windows.Documents.FormatProviders.Rtf__ and __Telerik.Windows.Documents.FormatProviders.Html__.{% endif %}
 
 ## Adding RadRichTextBox to the Project
 
-After adding references to the aforementioned assemblies, you can declare __RadRichTextBox__ manually by writing the XAML code in **Example 1** or add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
+After adding references to the aforementioned assemblies, you can declare RadRichTextBox manually by writing the XAML code as in the following example or add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
         
 
-#### __[XAML] Example 1: Adding RadRichTextBox in XAML__
-
+#### __[XAML] Adding RadRichTextBox in XAML__
 {{region radrichtextbox-getting-started_0}}
     <telerik:RadRichTextBox x:Name="radRichTextBox" />
 {{endregion}}
 
 
->In order to use **RadRichTextBox** in XAML, you have to add the following namespace declaration:
+>In order to use RadRichTextBox in XAML, you have to add the following namespace declaration:
 >
->#### __[XAML] Example 2: Declaring Telerik Namespace__
+>#### __[XAML] Declaring Telerik Namespace__
 >{{region telerik-schemas}}
 >    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 >{{endregion}}
 
-When you run the application, you will see an empty **RadRichTextBox** as the one in **Figure 1**.
+When you run the application, you will see an empty RadRichTextBox.
 
-#### Figure 1: Empty RadRichTextBox
+__Empty RadRichTextBox__
+
 ![{{ site.framework_name }} RadRichTextBox Empty RadRichTextBox](images/RadRichTextBox_GettingStarted_01.png)
 
 
->tip**RadRichTextBox** uses **UI Virtualization** by creating UI elements only for the parts of the document currently visible in the viewport. For this purpose, the control **should not be measured in infinity**, so avoid placing it in containers that might cause this (e.g. StackPanel, ScrollViewer).
+>tip RadRichTextBox uses __UI Virtualization__ by creating UI elements only for the parts of the document currently visible in the viewport. For this purpose, the control __should not be measured in infinity__, so avoid placing it in containers that might cause this (e.g. `StackPanel`, `ScrollViewer`).
           
 ## Using the Predefined UI of RadRichTextBox
 
-In addition to its API, __RadRichTextBox__ has a rich set of commands, exposed through its __Commands__ property. In order to use them with a UI element which supports commanding, you have to bind the __Command__ property of the element to the respective command of the __RadRichTextBox__.
+In addition to its API, RadRichTextBox has a rich set of commands, exposed through its `Commands` property. In order to use them with a UI element which supports commanding, you have to bind the `Command` property of the element to the respective command of the RadRichTextBox.
         
 
->tipTo learn more about __Commands__ read [this topic]({%slug radrichtextbox-features-commands%}).
+>tipTo learn more about Commands read [this topic]({%slug radrichtextbox-features-commands%}).
           
 
-These commands can also be used with the predefined UI that comes with __RadRichTextBox__ - __RadRichTextBoxRibbonUI__, which is a ribbon control based on [RadRibbonView]({%slug radribbonview-overview%}). You can use the predefined and customizable __ContextMenu__ and __SelectionMiniToolBar__ as well. In order to do so, make sure your project references the following assemblies:        
+These commands can also be used with the predefined UI that comes with RadRichTextBox - RadRichTextBoxRibbonUI, which is a ribbon control based on [RadRibbonView]({%slug radribbonview-overview%}). You can use the predefined and customizable `ContextMenu` and `SelectionMiniToolBar` as well. In order to do so, make sure your project references the following assemblies:        
 
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
@@ -110,14 +111,11 @@ These commands can also be used with the predefined UI that comes with __RadRich
 * __Telerik.Windows.Controls.RibbonView__
 * __Telerik.Windows.Controls.RichTextBoxUI__
 
-**Figure 2** shows what the predefined UI looks like.
+__Predefined RadRichTextBoxRibbonUI__
 
-#### Figure 2: RadRichTextBoxRibbonUI
 ![{{ site.framework_name }} RadRichTextBox RadRichTextBoxRibbonUI](images/RadRichTextBox_GettingStarted_02.png)
 
->tipYou can read more about the predefined UI by following these links - [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}), [ContextMenu]({%slug radrichtextbox-features-context-menu%}), [SelectionMiniToolBar]({%slug radrichtextbox-features-selection-mini-toolbar%}).
-
-
+>tip You can read more about the predefined UI by following these links - [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}), [ContextMenu]({%slug radrichtextbox-features-context-menu%}), [SelectionMiniToolBar]({%slug radrichtextbox-features-selection-mini-toolbar%}).
 
 ## Showing a Document in RadRichTextBox
 
@@ -125,11 +123,12 @@ You can bind a document in XAML or directly set the Document property of RadRich
 
 ### Binding in XAML
 
-With the **DataProvider** classes you can easily bind RTF, HTML or XAML documents represented as strings to a RadRichTextBox. The DocxDataProvider works with documents represented as a byte array. **Example 3** shows the implementation of a sample class that will be later used as data context for RadRichTextBox.
+With the DataProvider classes you can easily bind RTF, HTML or XAML documents represented as strings to a RadRichTextBox. The DocxDataProvider works with documents represented as a byte array. 
+
+The next example shows the implementation of a sample class that will be later used as data context for RadRichTextBox.
 
 <a name="example3"><a/>
-#### **[C#] Example 3: Sample DataContext class**
-
+#### __[C#] Sample DataContext class__
 {{region radrichtextbox-getting-started_1}}
 
     public class ExampleDataContext : INotifyPropertyChanged
@@ -164,8 +163,7 @@ With the **DataProvider** classes you can easily bind RTF, HTML or XAML document
     }
 {{endregion}}
 
-#### **[VB.NET] Example 3: Sample DataContext class**
-
+#### __[VB.NET] Sample DataContext class__
 {{region radrichtextbox-getting-started_2}}
 
 	Public Class ExampleDataContext
@@ -193,13 +191,14 @@ With the **DataProvider** classes you can easily bind RTF, HTML or XAML document
 	End Class
 {{endregion}}
 
->The ExampleDataContext class implements the **INotifyPropertyChanged** interface and raises the **PropertyChanged** event every time a property value changes in order to **support two-way binding**.
+>The ExampleDataContext class implements the `INotifyPropertyChanged` interface and raises the `PropertyChanged` event every time a property value changes, in order to __support two-way binding__.
 
-When you already have prepared the sample data, you can bind it to **RadRichTextBox**. This is done through the corresponding DataProvider. **Example 4** shows how to bind the XamlData property from [Example 3](#example3) to a XamlDataProvider and a RadRichTextBox.
+When you already have prepared the sample data, you can bind it to RadRichTextBox. This is done through the corresponding DataProvider.
 
-#### **[XAML] Example 4: Using a DataProvider**
+The following example shows how to bind the XamlData property from [the above example](#example3) to a XamlDataProvider and a RadRichTextBox.
+
+#### __[XAML] Using a DataProvider__
 {{region radrichtextbox-getting-started_3}}
-
     <Grid>
         <Grid.Resources>
             <local:ExampleDataContext x:Key="ExampleDataContext"/>
@@ -211,19 +210,16 @@ When you already have prepared the sample data, you can bind it to **RadRichText
     </Grid>
 {{endregion}}
 
->tipMore details on using data providers in **RadRichTextBox** are available [here]({%slug radrichtextbox-features-data-providers%}).
+>tip More details on using data providers in RadRichTextBox are available [here]({%slug radrichtextbox-features-data-providers%}).
 
->tipYou can download the complete runnable project demonstrating **Data Binding** in **RadRichTextBox** from our [SDK Repository](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/DataBinding).
-
+>tip You can download the complete runnable project demonstrating __Data Binding__ in RadRichTextBox from our [SDK Repository](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/DataBinding).
 
 ### Setting the Document in Code-Behind
 
-The **RadRichTextBox** class exposes the **Document** property of type [**RadDocument**]({%slug radrichtextbox-features-document-elements-raddocument%}) that allows you to assign a document to the control in code-behind. You can import an existing document and show it in RadRichTextBox using a format provider as **Example 5** shows.
+The RadRichTextBox class exposes the `Document` property of type [`RadDocument`]({%slug radrichtextbox-features-document-elements-raddocument%}) that allows you to assign a document to the control in code-behind. You can import an existing document and show it in RadRichTextBox using a format provider as the next shows.
 
-#### **[C#] Example 5: Showing an Existing Document in RadRichTextBox**
-
+#### __[C#] Showing an Existing Document in RadRichTextBox__
 {{region radrichtextbox-getting-started_4}}
-
     RadDocument document;
     Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = new Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider();
 
@@ -235,11 +231,8 @@ The **RadRichTextBox** class exposes the **Document** property of type [**RadDoc
     this.radRichTextBox.Document = document;
 {{endregion}}
 
-
-#### **[VB.NET] Example 5: Showing an Existing Document in RadRichTextBox**
-
+#### __[VB.NET] Showing an Existing Document in RadRichTextBox__
 {{region radrichtextbox-getting-started_5}}
-
 	Dim document As RadDocument
 	Dim provider As New Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider()
 
@@ -250,28 +243,20 @@ The **RadRichTextBox** class exposes the **Document** property of type [**RadDoc
 	Me.radRichTextBox.Document = document
 {{endregion}}
 
-
->tipAll the supported document formats and the corresponding format providers are described in the [Import/Export section]({%slug radrichtextbox-features-import-export%}). 
-
+>tip All the supported document formats and the corresponding format providers are described in the [Import/Export section]({%slug radrichtextbox-features-import-export%}). 
 
 ## Tables, Track Changes and Document Protection
 
-**RadRichTextBox** comes with many built-in features. Here are some of them:
+RadRichTextBox comes with many built-in features. Here are some of them:
 
 * You can create, modify and delete tables. For more details you can refer to [this topic]({%slug radrichtextbox-features-document-elements-tables%}).
 
-* The [Track Changes]({%slug radrichtextbox-features-track-changes%}) functionality by default is disabled. To enable it, set the **IsTrackChangesEnabled** property to **True**.
+* The [Track Changes]({%slug radrichtextbox-features-track-changes%}) functionality by default is disabled. To enable it, set the `IsTrackChangesEnabled` property to __True__.
 
-* You can enable the [Document Protection]({%slug radrichtextbox-features-document-protection%}) with the **ProtectDocument()** method.
-
-
+* You can enable the [Document Protection]({%slug radrichtextbox-features-document-protection%}) with the `ProtectDocument()` method.
 
 ## See Also
-
  * [Document Elements]({%slug radrichtextbox-features-document-elements-hierarchy%})
-
  * [Import/Export]({%slug radrichtextbox-features-import-export%})
-
  * [Events]({%slug radrichtextbox-events-overview%})
-
  * [Styles and Templates]({%slug radrichtextbox-styles-and-tempaltes-overview%})

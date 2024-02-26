@@ -32,7 +32,7 @@ The following picture shows the interdependency between the RadDiagram main asse
 #### __Figure 2: Interdependency of the RadDiagram control main assemblies__  
 ![Rad Diagram Getting Started Dependancies](images/RadDiagram_GettingStarted_Dependancies.png)
 
->tip You can find more info about the __Telerik UI for WPF__ dependencies in the [Controls Dependencies](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html) help article.
+>tip You can find more info about the __Telerik UI for WPF__ dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
 ## Graph Object Model
 

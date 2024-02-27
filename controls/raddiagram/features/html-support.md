@@ -1,20 +1,20 @@
 ---
-title: Html Support
-page_title: Html Support
-description: Check our &quot;Html Support&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
+title: Html Export
+page_title: Html Export
+description: Check our &quot;Html Export&quot; documentation article for the RadDiagram {{ site.framework_name }} control.
 slug: raddiagram-features-html-support
 tags: html,support
 published: True
 position: 18
 ---
 
-# Html Support
+# Html Export
 
-As __RadDiagram__ supports serialization, you can save your diagramming solution in a custom __XML__ format. The __HTML support__ is built on top of this serialization logic. It is not conceived as an 'export' from within __RadDiagram__ rather we use JaveScript to convert the RadDiagram's serialization __XML__ into an __SVG__ diagram inside the browser. This way you can avoid using any plugins and instead use plain HTML to display a diagramming structure build with __RadDiagram__. This script can load a saved XML diagram or use a JavaScript variable that holds it. Internally the JavaScript makes use of the Kendo API to output the necessary HTML (SVG tags). This doesn't mean however that you need a Kendo UI license to use this script since it only uses a handful of Kendo files which are part of the Kendo core.			
+As __RadDiagram__ supports serialization, you can save your diagramming solution in a custom __XML__ format. The __HTML export__ is built on top of this serialization logic. It is not conceived as an 'export' from within __RadDiagram__ rather we use JaveScript to convert the RadDiagram's serialization __XML__ into an __SVG__ diagram inside the browser. This way you can avoid using any plugins and instead use plain HTML to display a diagramming structure build with __RadDiagram__. This script can load a saved XML diagram or use a JavaScript variable that holds it. Internally the JavaScript makes use of the Kendo API to output the necessary HTML (SVG tags). This doesn't mean however that you need a Kendo UI license to use this script since it only uses a handful of Kendo files which are part of the Kendo core.			
 
 ## SVG Render
 
-In order to take advantage of the Html support and render a diagramming structure in SVG, you need to include the following scripts in your html page:
+In order to take advantage of the Html export and render a diagramming structure in SVG, you need to include the following scripts in your html page:
 
 * http://code.jquery.com/jquery-1.7.1.min.js
 
@@ -51,7 +51,7 @@ Using the __Export to Html__ button you will be able to create an html file disp
 
 ## Limitations
 
-* The described HTML support creates an __SVG that is a read-only__ representation of a diagram created in either the Silverlight or the WPF RadDiagram control. At the moment you can't alter the generated diagram in any way.						
+* The described HTML export creates an __SVG that is a read-only__ representation of a diagram created in either the Silverlight or the WPF RadDiagram control. At the moment you can't alter the generated diagram in any way.						
 
 * __SVG doesn't have a text-wrapping property__, which means that if your shapes contain wrapped text it will likely be rendered across and outside the bounds in the SVG representation.						
 

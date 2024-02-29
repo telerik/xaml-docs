@@ -81,7 +81,7 @@ The nested __RadDocking__ layouts can be easily saved and loaded using the built
 
 ## Not Supported Scenarios
 
-With the initial release of the nested __RadDockings__ there are a few not supported scenarios:
+The nested RadDockings have few unsupported scenarios:
 
 * Nested scenarios in the autohide areas – due to dragging issues when __RadDocking__ is placed in an unpinned __RadPane__. In order to avoid that you could either disable the dragging within the inner __RadDocking__ (you just need to set CanFloat=”False” to each __RadPane__) or the __RadPane__ which holds it should be always pinned.
 

@@ -19,7 +19,7 @@ In order to use __RadMap__ in your projects you have to add references to the fo
 * __Telerik.Windows.Data__
 * __Telerik.Windows.Controls.DataVisualization__  
 
->tip If you use a project that targets, .NET Core 3.1 or later .NET version, you will need to install also the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package manually. This happens automatically if you install the Telerik dlls using [nuget packages]({%slug installation-installing-from-nuget-wpf%}).
+>For __.NET 6__ and later you will need to install also the `System.ServiceModel.Http` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.        
 

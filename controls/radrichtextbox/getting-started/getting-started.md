@@ -10,15 +10,13 @@ position: 0
 
 # Getting Started with {{ site.framework_name }} RichTextBox
 
-`RadRichTextBox` is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
-      
+`RadRichTextBox` is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:      
 
 * [Assembly References](#assembly-references)
 * [Adding RadRichTextBox to the Project](#adding-radrichtextbox-to-the-project)
 * [Using the predefined UI of RadRichTextBox](#using-the-predefined-ui-of-radrichtextbox)
 * [Showing a Document in RadRichTextBox](#showing-a-document-in-radrichtextbox)
 * [Tables, Track Changes and Document Protection](#tables-track-changes-and-document-protection)
-
 
 ## Assembly References
 
@@ -34,6 +32,8 @@ The minimal set of references you need to have in your application in order to h
 * __Telerik.Windows.Documents.Core__
 * __System.ComponentModel.Composition__
 
+For __.NET 6__ and later you may need to install also the `System.Drawing.Common` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
+
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
 
 * __Telerik.Windows.Controls.RichTextBoxUI__
@@ -42,9 +42,7 @@ In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dia
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Controls.RibbonView__
 
-
-For more information on using RadRichTextBox with `RadRichTextBoxRibbonUI`, please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
-        
+For more information on using RadRichTextBox with `RadRichTextBoxRibbonUI`, please refer to [this article]({%slug radrichtextbox-features-radrichtextboxribbonui%}).        
 
 If you are not using the SelectionMiniToolbar, the ContextMenu and RadRichTextBoxRibbonUI, you can omit the last five assemblies.
 

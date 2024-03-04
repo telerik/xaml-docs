@@ -70,8 +70,6 @@ In order to use the __RadGridView__ control in your projects, you have to add re
 * __Telerik.Windows.Controls.GridView__
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Data__
-	
->tip If you use a project that targets, .NET Core 3.1 or later .NET version, you will need to install the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package manually. This happens automatically if you install the Telerik dlls using nuget packages.
 
 ### Add a Telerik Control to the Project
 

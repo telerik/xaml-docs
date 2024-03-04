@@ -16,7 +16,7 @@ There is are sets of DLLs built against the different .NET versions which you ca
 
 See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
-> The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for the .NET Core 3.1 and later is that the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package should be installed manually. This is not needed if you install the Telerik dlls using nuget packages.
+> The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for .NET 6 and later is that several controls rely on third party NuGet packages. These are automatically installed when adding the Telerik assemblies via NuGet or the Telerik Visual Studio Extension. In case you reference the assemblies manually, one or more of the following packages should be installed manually: `System.Data.OleDb`, `System.Drawing.Common` and `System.ServiceModel.Http`.
 
 ## .NET Core 3.1 Requirements
 

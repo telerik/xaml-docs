@@ -116,7 +116,7 @@ The `ItemsForegroundColor` and `ItemsBackgroundColor` property can be used in da
     </Grid.Resources>
 {{endregion}}
 
-![{{ site.framework_name }} RadListBoxItems foreground and background bound to properties from singleton class](images/kb-common-singleton-pattern-binding-to-properties-0.png)
+![WPF RadListBoxItems foreground and background bound to properties from singleton class](images/kb-common-singleton-pattern-binding-to-properties-0.png)
 
 We can further extend this example to provide the option for the user to customize the properties from the UserSettings class. In this case, we can use the RadColorPicker to modify them.
 
@@ -130,4 +130,4 @@ We can further extend this example to provide the option for the user to customi
 
 __RadColorPicker instances modifying the ItemsForegroundColor and ItemsBackgroundColor properties__
 
-![{{ site.framework_name RadColorPicker instances modifying the ItemsForegroundColor and ItemsBackgroundColor properties}}](images/kb-common-singleton-pattern-binding-to-properties-1.gif)
+![WPF RadColorPicker instances modifying the ItemsForegroundColor and ItemsBackgroundColor properties](images/kb-common-singleton-pattern-binding-to-properties-1.gif)

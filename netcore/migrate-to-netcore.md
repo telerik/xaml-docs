@@ -1,41 +1,39 @@
 ---
-title: Migrating to .NET Core
-page_title: Migrating to .NET Core
-description: This article shows how to migrate from an existing Telerik WPF .NET Framework project to a .NET Core one.
+title: Migrating to .NET
+page_title: Migrating to .NET
+description: This article shows how to migrate from an existing Telerik WPF .NET Framework project to a .NET 6 and later.
 slug: netcore-support-migration
 tags: get,started,first,steps,migrate,core,standard,visual,studio,
 published: True
 position: 1
 ---
 
-# Migrating to .NET Core
+# Migrating to .NET
 
-This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET Core 3.1, .NET 6, or .NET 7).
+This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET 6, .NET 7 or .NET 8).
 
->tip Before proceeding with this topic you can check if your application's code is compatible with .NET Core using the [Microsoft Portability Analyzer](https://devblogs.microsoft.com/dotnet/are-your-windows-forms-and-wpf-applications-ready-for-net-core-3-0/) tool.
-
-1. Create a new __.NET Core 3.1__ application using Visual Studio. 
+1. Create a new __.NET__ application using Visual Studio. 
 	
 	#### Figure 1: Creating new project
 	![{{ site.framework_name }} Creating new project](images/netcore-support-migration-0.png)	
 	
 	>tip You can also use the Telerik Visual Studio Extensions to create a new project. Read more about this in the [Integration]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) section of the documentation.
 	
-2. Add the existing files from the original project as linked files to the .NET Core project.
+2. Add the existing files from the original project as linked files to the .NET project.
 	
 	#### Figure 2: Linking files from the original project
 	![{{ site.framework_name }} Add Existing Items To Project](images/netcore-support-migration-1.png)
 	
 	![{{ site.framework_name }} Linking files from the original project](images/netcore-support-migration-2.png)
  
-3. Reference the Telerik assemblies built against .NET Core 3.1.
+3. Reference the Telerik assemblies built against .NET.
 	
-	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NetCore*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
+	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NET+version number*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
 	
-	#### Figure 3: Checking if a Telerik assembly is built against .NET Core 3.1
+	#### Figure 3: Checking if a Telerik assembly is built against .NET  
 	![{{ site.framework_name }} Checking if a Telerik assembly is built against .NET Core 3.1](images/netcore-support-migration-3.png)
-	
-4. If you are not using nuget packages to install the Telerik dlls, you will need to install the [Microsoft.Windows.Compatibility](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) package manually.
+
+4. Several controls rely on third party NuGet packages. These are automatically installed when adding the Telerik assemblies via NuGet or the Telerik Visual Studio Extension. In case you reference the assemblies manually, one or more of the following packages should be installed manually: `System.Data.OleDb`, `System.Drawing.Common` and `System.ServiceModel.Http`.
 
 ## Tips
 

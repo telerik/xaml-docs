@@ -33,13 +33,13 @@ The dates available for selection can be limited via the `SelectableDateStart` a
 
 #### __[XAML] Setting the selection range in XAML__
 {{region raddaterangepicker-programmatic-selection-0}}
-	<telerik:RadDateRangePicker SelectableDateStart="2024/1/19" SelectableDateEnd="2024/2/5" />
+	<telerik:RadDateRangePicker SelectableDateStart="2024/3/7" SelectableDateEnd="2024/3/27" />
 {{endregion}}
 
 #### __[XAML] Setting the selection range in C#__
 {{region raddaterangepicker-programmatic-selection-1}}
-	this.dateRangePicker.SelectableDateStart = new DateTime(2024, 1, 19);
-	this.dateRangePicker.SelectableDateEnd = new DateTime(2024, 2, 5);
+	this.dateRangePicker.SelectableDateStart = new DateTime(2024, 3, 7);
+	this.dateRangePicker.SelectableDateEnd = new DateTime(2024, 3, 27);
 {{endregion}}
 
 ![Picture showing WPF RadDateRangePicker with a limited range of selectable dates](images/raddaterangepicker-programmatic-selection-1.png)

@@ -29,9 +29,11 @@ The DateRangePicker component allows you to easily enrich your UI with a tool fo
 
 * __Blackout dates__&mdash;This features can be used to disable a set of dates which cannot be selected.
 
-* __Customizable input element__&mdash;The DateRangePicker control allows you to customize the format and placeholders of the input area.
+* __Customizable input element__&mdash;The DateRangePicker control allows you to customize the formatting, the empty content and the placeholders of the input area.
 
 * __Customizable calendars__&mdash;The control has a set of two calendars that show the current and next month or year, which can be customized via number of properties of the control. 
+
+* __Customizable list of predefined date ranges__&mdash;The list with the predefined date ranges allows the end user to easily select a range. 
 
 >tip Get started with the control with its [Getting Started]({%slug raddaterangepicker-getting-started%}) help article that shows how to use it in a basic scenario.
 

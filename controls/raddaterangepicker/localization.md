@@ -38,7 +38,8 @@ DateRangePicker_Last30Days | Last 30 Days
 DateRangePicker_Last7Days | Last 7 Days
 DateRangePicker_LastMonth | Last Month
 DateRangePicker_LastYear | Last Year
-
+DateRangePicker_StartDate | Start Date
+DateRangePicker_EndDate | End Date
 
 ## See Also
 * [Getting Started]({%slug raddaterangepicker-getting-started%})

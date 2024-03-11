@@ -69,6 +69,8 @@ __Custom date patterns__
 
 The `DatePattern` doesn't support formats for abbreviated days (ddd, dddd) and months (MMM, MMMM).
 
+If the `DatePattern` cannot correctly parse the date, the `Culture` settings are used.
+
 ## See Also  
 * [Customizing Appearance]({%slug raddaterangepicker-customizing-appearance%})
 * [Getting Started]({%slug raddaterangepicker-getting-started%})

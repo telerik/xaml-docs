@@ -41,7 +41,7 @@ If your business class satisfies these requirements you can use the default prop
 
 #### __[C#]__
 {{region radmap_visualization_layer_property_accessor_0}}
-	public class MapItem : INotifyPropertyChanged
+	public class MapItem : INotifyPropertyChanged, INotifyLocationChanged
 	{
 		private double baseZoomLevel = double.NaN;
 		private string caption = string.Empty;
@@ -60,6 +60,8 @@ If your business class satisfies these requirements you can use the default prop
 			this.ZoomRange = zoomRange;
 		}
 	
+		public event EventHandler<LocationChangedEventArgs> LocationChanged;
+		
 		public event PropertyChangedEventHandler PropertyChanged;
 	
 		public double BaseZoomLevel
@@ -98,8 +100,10 @@ If your business class satisfies these requirements you can use the default prop
 	
 			set
 			{
+				var oldLocation = this.location;
 				this.location = value;
-				this.OnPropertyChanged("Location");
+				this.OnPropertyChanged("Location");				
+				this.OnLocationChanged(oldLocation, this.location);
 			}
 		}
 	
@@ -121,9 +125,15 @@ If your business class satisfies these requirements you can use the default prop
 		{
 			if (this.PropertyChanged != null)
 			{
-				this.PropertyChanged(
-					this, 
-					new PropertyChangedEventArgs(propertyName));
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		public void OnLocationChanged(Location oldLocation, Location newLocation)
+		{
+			if (LocationChanged != null)
+			{
+				LocationChanged(this, new LocationChangedEventArgs(oldLocation, newLocation));
 			}
 		}
 	}
@@ -132,7 +142,7 @@ If your business class satisfies these requirements you can use the default prop
 #### __[VB.NET]__
 {{region radmap_visualization_layer_property_accessor_0}}
 	Public Class MapItem
-		Implements INotifyPropertyChanged
+		Implements INotifyPropertyChanged, INotifyLocationChanged
 		Private m_baseZoomLevel As Double = Double.NaN
 		Private m_caption As String = String.Empty
 		Private m_location As Location = Location.Empty
@@ -148,7 +158,11 @@ If your business class satisfies these requirements you can use the default prop
 			Me.BaseZoomLevel = baseZoomLevel
 			Me.ZoomRange = zoomRange
 		End Sub
+		
 	
+		Public Event LocationChanged As EventHandler(Of LocationChangedEventArgs) _
+			Implements INotifyLocationChanged.LocationChanged
+		
 		Public Event PropertyChanged As PropertyChangedEventHandler _
 			Implements INotifyPropertyChanged.PropertyChanged
 	
@@ -180,8 +194,10 @@ If your business class satisfies these requirements you can use the default prop
 			End Get
 	
 			Set(value As Location)
+				Dim oldLocation = Me.m_location
 				Me.m_location = value
 				Me.OnPropertyChanged("Location")
+				Me.OnLocationChanged(oldLocation, Me.m_location)
 			End Set
 		End Property
 		
@@ -204,8 +220,11 @@ If your business class satisfies these requirements you can use the default prop
 		End Property
 	
 		Private Sub OnPropertyChanged(propertyName As String)
-			RaiseEvent PropertyChanged(Me, _
-			  New PropertyChangedEventArgs(propertyName))
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End Sub
+		
+		Public Sub OnLocationChanged(oldLocation As Location, newLocation As Location)
+			RaiseEvent LocationChanged(Me, New LocationChangedEventArgs(oldLocation, newLocation))
 		End Sub
 	End Class
 {{endregion}}

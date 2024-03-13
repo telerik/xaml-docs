@@ -1,5 +1,5 @@
 ---
-title: Property the TextAlignment of the GridViewColumn to the Merged Cells in RadGridView for WPF
+title: Propagate the TextAlignment of the GridViewColumn to the Merged Cells in RadGridView for WPF
 description: This article explains how to set the TextAlignment property in the merged cells in Telerik DataGird for WPF.
 type: how-to
 page_title: Sync the TextAlignment Property of GridViewColumn With the Text in the GridView Merged Cells

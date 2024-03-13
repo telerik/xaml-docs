@@ -55,7 +55,7 @@ The Items collection from the above code snippet will be populating a `RadListBo
         </Grid.DataContext>
         <telerik:RadListBox ItemsSource="{Binding Items}" DisplayMemberPath="ItemName"/>
     </Grid>
-{endregion}
+{{endregion}}
 
 If the user would like to have the ability to customize the foreground and background colors of the items at runtime, this logic will most commonly be defined in the view model. In this scenario an additional class can be created to hold this customization logic, so it is separated from the logic from the view model. This new class can follow the singleton pattern and expose properties that the user can customize, which can be used in data-binding.
 

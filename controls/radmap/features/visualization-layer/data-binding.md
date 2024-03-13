@@ -10,29 +10,27 @@ position: 1
 
 # Data Binding
 
-When displaying a map, you might also want to overlay some additional information. As we've previously seen (in the [Introduction]({%slug radmap-visualization-layer-introduction%}) help topic) we can define this information statically in XAML. However, it would be much more practical to use the VisualizationLayer's data binding capabilities to dynamically load and display map markers.
+When displaying a map, you might also want to overlay some additional information. As we've previously seen (in the [Introduction]({%slug radmap-visualization-layer-introduction%}) help topic) we can define this information statically in XAML. However, it would be much more practical to use the `VisualizationLayer`'s data binding capabilities to dynamically load and display map markers.
 
-The VisualizationLayer simulates functionality of the __ItemsControl__ class so in order to display your map data dynamically you just have to treat the VisualizationLayer as a typical ItemsControl. This means you have to use its __ItemsSource__ and __ItemTemplate__ properties. You can also make a use of the __ItemTemplateSelector__ property, in order to implement advanced visualization depending on the data item.        
+The `VisualizationLayer` simulates functionality of the `ItemsControl` class so in order to display your map data dynamically you just have to treat the layer as a typical items control. This means you have to use its `ItemsSource` and `ItemTemplate` properties. You can also make a use of the `ItemTemplateSelector` property, in order to implement advanced visualization depending on the data item.        
 
-When loading your map data dynamically there are several attached properties that you can use in order to position and display the marker on its proper place:        
+When using a custom visual in the `ItemTemplate` of the layer, there are several attached properties that can be used to position and display the marker on its proper place:
 
-* __MapLayer.Location__ - represents the latitude and the longitude of the map point.            
+* `MapLayer.Location`&mdash;Represents the latitude and the longitude of the map point.            
 
-* __BaseZoomLevel__ - represents the zoom level, for which the element should have its scale transformation equal to 1.            
+* `MapLayer.BaseZoomLevel`&mdash;Represents the zoom level, for which the element should have its scale transformation equal to 1.            
 
-* __ZoomRange__ - represents the range of zoom levels for which the element should be visible.            
+* `MapLayer.ZoomRange`&mdash;Represents the range of zoom levels for which the element should be visible.            
+  
+* `MapLayer.MinScale`&mdash;Represents minimum scale factor which will be applied to the framework element when it has `BaseZoomLevel` property set and we zoom out map control.            
+  
+* `MapLayer.MaxScale`&mdash;Represents maximum scale factor which will be applied to the framework element when it has `BaseZoomLevel` property set and we zoom in map control.            
 
-* __MinScale__ – represents minimum scale factor which will be applied to the framework element when it has BaseZoomLevel property set and we zoom out map control.            
+In order to provide the needed data to the visualization layer, you have to create a collection of business objects, which represent the desired data. The following example shows how to do this.        
 
-* __MaxScale__ – represents maximum scale factor which will be applied to the framework element when it has BaseZoomLevel property set and we zoom in map control.            
-
-In order to provide the needed data to the visualization layer, you have to create a collection of business objects, which represent the desired data.        
-
-Let's first define the business class that represent's our objects:        
-
-#### __C#__
+#### __[C#] Defining the item model__
 {{region radmap_visualization_layer_data_binding_0}}
-	public class MapItem : INotifyPropertyChanged
+	public class MapItem : INotifyPropertyChanged, INotifyLocationChanged
 	{
 		private double baseZoomLevel = double.NaN;
 		private string caption = string.Empty;
@@ -50,6 +48,8 @@ Let's first define the business class that represent's our objects:
 			this.BaseZoomLevel = baseZoomLevel;
 			this.ZoomRange = zoomRange;
 		}
+	
+		public event EventHandler<LocationChangedEventArgs> LocationChanged;
 	
 		public event PropertyChangedEventHandler PropertyChanged;
 	
@@ -89,8 +89,10 @@ Let's first define the business class that represent's our objects:
 	
 			set
 			{
+				var oldLocation = this.location;
 				this.location = value;
-				this.OnPropertyChanged("Location");
+				this.OnPropertyChanged("Location");				
+				this.OnLocationChanged(oldLocation, this.location);
 			}
 		}
 	
@@ -117,13 +119,21 @@ Let's first define the business class that represent's our objects:
 					new PropertyChangedEventArgs(propertyName));
 			}
 		}
+		
+		public void OnLocationChanged(Location oldLocation, Location newLocation)
+		{
+			if (LocationChanged != null)
+			{
+				LocationChanged(this, new LocationChangedEventArgs(oldLocation, newLocation));
+			}
+		}
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Defining the item model__
 {{region radmap_visualization_layer_data_binding_0}}
 	Public Class MapItem
-		Implements INotifyPropertyChanged
+		Implements INotifyPropertyChanged, INotifyLocationChanged
 		Private m_baseZoomLevel As Double = Double.NaN
 		Private m_caption As String = String.Empty
 		Private m_location As Location = Location.Empty
@@ -140,6 +150,9 @@ Let's first define the business class that represent's our objects:
 			Me.ZoomRange = zoomRange
 		End Sub
 	
+		Public Event LocationChanged As EventHandler(Of LocationChangedEventArgs) _
+			Implements INotifyLocationChanged.LocationChanged
+			
 		Public Event PropertyChanged As PropertyChangedEventHandler _
 			Implements INotifyPropertyChanged.PropertyChanged
 	
@@ -171,8 +184,10 @@ Let's first define the business class that represent's our objects:
 			End Get
 	
 			Set(value As Location)
+				Dim oldLocation = Me.m_location
 				Me.m_location = value
 				Me.OnPropertyChanged("Location")
+				Me.OnLocationChanged(oldLocation, Me.m_location)
 			End Set
 		End Property
 	
@@ -188,15 +203,18 @@ Let's first define the business class that represent's our objects:
 		End Property
 	
 		Private Sub OnPropertyChanged(propertyName As String)
-			RaiseEvent PropertyChanged(Me, _
-			  New PropertyChangedEventArgs(propertyName))
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End Sub
+		
+		Public Sub OnLocationChanged(oldLocation As Location, newLocation As Location)
+			RaiseEvent LocationChanged(Me, New LocationChangedEventArgs(oldLocation, newLocation))
 		End Sub
 	End Class
 {{endregion}}
 
-The next step is to define how we want to visualize our data items through the ItemTemplate property of the VisualizationLayer and set the desired bindings in it. In the current example, the marker will be represented by an ellipse:        
+>important You can notice that the business class implements the `INotifyLocationChanged` interface. This is necessary in order to properly support runtime changes of the `Location` property.
 
-#### __XAML__
+#### __[XAML] Defining the ItemTemplate and binding the attached properties__
 {{region radmap_visualization_layer_data_binding_0}}
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -230,9 +248,7 @@ The next step is to define how we want to visualize our data items through the I
 	</telerik:RadMap>
 {{endregion}}
 
-The last thing to do is to retrieve the data and set it as the ItemsSource the VisualizationLayer:        
-
-#### __C#__
+#### __[C#] Setting up the items source__
 {{region radmap_visualization_layer_data_binding_1}}
 	public partial class Example: Window
 	{
@@ -273,14 +289,13 @@ The last thing to do is to retrieve the data and set it as the ItemsSource the V
 					"Varna", 
 					new Location(43.2073941930888, 27.9275176988258), 
 					8, 
-					new ZoomRange(5, 12)));
-			
+					new ZoomRange(5, 12)));			
 			return data;
 		}
 	}
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Setting up the items source__
 {{region radmap_visualization_layer_data_binding_1}}
 	Public Partial Class Example
 		Inherits Window
@@ -320,8 +335,7 @@ The last thing to do is to retrieve the data and set it as the ItemsSource the V
 					"Varna", _
 					New Location(43.2073941930888, 27.9275176988258), _
 					8, _
-					New ZoomRange(5, 12)))
-		
+					New ZoomRange(5, 12)))		
 			Return data
 		End Function
 	End Class

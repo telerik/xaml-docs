@@ -21,7 +21,7 @@ How to create a control that shows TIFF images.
 
 ## Solution 1
 
-You can use the [RadImageEditor]({%slug %}) control to show the .tiff image format. 
+You can use the [RadImageEditor]({%slug radimageeditor-overview%}) control to show the .tiff image format. 
 
 At the moment of writing this article (2024), the `RadImageEditor` displays the .tiff only as static image.
 

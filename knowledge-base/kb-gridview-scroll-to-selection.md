@@ -18,7 +18,6 @@ res_type: kb
 ## Description
 
 How to automatically scroll to the selected row in RadGridView for WPF.
-Item in Visual Studio Extensions.
 
 ## Solution
 

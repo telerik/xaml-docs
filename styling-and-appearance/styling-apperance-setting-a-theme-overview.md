@@ -120,6 +120,8 @@ The default styles and resources for each theme are shipped also in the **/Teler
 
 ## Setting a Theme Using StyleManager
 
+> Switching the theme at runtime when using `StyleManager` is not supported. To enable this feature, use the [NoXaml dlls and Implicit Styles](#setting-a-theme-using-implicit-styles) theming. Read more in the [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%}) article.
+
 StyleManager is used when working with the standard (Xaml) dlls. The StyleManager is a class that applies different styles on the Telerik controls based on the set theme. It allows you to set the theme on a control level and on application level.
 
 To change the theme via the StyleManager you will need to take the following few steps.
@@ -160,8 +162,6 @@ To change the theme via the StyleManager you will need to take the following few
 Read more about this approach in the {% if site.site_name == 'Silverlight' %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% else %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %} help section.
 
 >caution Merging theme resource dictionaries when using StyleManager (mixing implicit styles theming and StyleManager) is not supported. Use StyleManager only with Xaml dlls, or Implicit Styles only with NoXaml binaries.
-
-> Switching the global theme at runtime by setting `StyleManager.ApplicationTheme` is not supported. To enable this feature, use the [NoXaml dlls and Implicit Styles](#setting-a-theme-using-implicit-styles) theming. Read more in the [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%}) article.
 
 ## Changing Color Variation
 

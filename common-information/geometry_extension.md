@@ -53,6 +53,7 @@ __Example 1 and Example 2__ demonstrate how you can use the extension in XAML an
 	}
 {{endregion}}
 
+Additional to this, all [glyph icons]({%slug common-styling-appearance-glyphs-reference-sheet%}) can be converted to `Geometry` objects using the [RadGlyph.GetGeometry]({%slug common-styling-appearance-radglyph%}#use-glyphs-as-geometry) static method.
 
 ## See Also
 

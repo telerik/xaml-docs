@@ -69,6 +69,8 @@ This article will list the key properties provided by the __CalloutPopupSettings
 
 * __HorizontalOffset__: A __boolean__ property that gets or sets the horizontal offset of the host Popup. Default value is 0.
 
+* __CanPopupExceedScreen__: Indicates if the callout popup can exceed the screen bounds. The default behavior of the WPF `Popup` element is to automatically re-position when it reaches the screen bounds in order to remain inside the screen. Setting the property to `true` disables this behavior and the popup visual can be displayed outside of the monitor. The default value is `false`.
+
 ## See Also
 
 * [Getting Started]({%slug radcallout-getting-started%})

@@ -121,7 +121,20 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 
 ## Accessing the Headers and Footers
 
-The RadRichTextBox control exposes the `ActiveDocumentEditor` property. It provides information about the currently active editor that you can utilize to access the Headers and Footers.
+The Headers and Footers can be retrieved, for example, via interating the `Sections` collection of the `Document` property of the RadRichTextBox control. Each [Section]({%slug radrichtextbox-features-document-elements-section%}#add-headers-and-footers-to-a-section) instance exposes this information via its API.
+
+#### __[C#] Retrieving the Headers__
+{{region radrichtextbox-features-headers-and-footers_8}}
+foreach (Telerik.Windows.Documents.Model.Section section in this.radRichTextBox.Document.Sections)
+{
+    if (!section.Headers.Default.IsEmpty)
+    {
+		//Execute your logic for the Headers's Default property
+    }
+}
+{{endregion}}
+
+Additionally, the RadRichTextBox control exposes the `ActiveDocumentEditor` property. It provides information about the currently active editor that you can utilize to access the Headers and Footers.
 
 >tip More information about the ActiveDocumentEditor property can be found [here]({%slug radrichtextbox-getting-started-activedocumenteditor%}).
 

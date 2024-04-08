@@ -125,13 +125,53 @@ The Headers and Footers can be retrieved, for example, via interating the `Secti
 
 #### __[C#] Retrieving the Headers__
 {{region radrichtextbox-features-headers-and-footers_8}}
-foreach (Telerik.Windows.Documents.Model.Section section in this.radRichTextBox.Document.Sections)
-{
-    if (!section.Headers.Default.IsEmpty)
-    {
-		//Execute your logic for the Headers's Default property
-    }
-}
+	foreach (Telerik.Windows.Documents.Model.Section section in this.radRichTextBox.Document.Sections)
+	{
+	    if (!section.Headers.Default.IsEmpty)
+	    {
+	        RadDocument radDocument = new RadDocument();
+	        Section section1 = new Section();
+	        Paragraph paragraph = new Paragraph();
+	        Span span = new Span("Default");
+	        paragraph.Inlines.Add(span);
+	        section.Blocks.Add(paragraph);
+	
+	        RadDocument document = new RadDocument();
+	        document.Sections.Add(section1);
+	
+	        section.Headers.Default.Body = document;
+	    }
+	
+	    if (!section.Headers.First.IsEmpty)
+	    {
+	        RadDocument radDocument = new RadDocument();
+	        Section section1 = new Section();
+	        Paragraph paragraph = new Paragraph();
+	        Span span = new Span("First");
+	        paragraph.Inlines.Add(span);
+	        section.Blocks.Add(paragraph);
+	
+	        RadDocument document = new RadDocument();
+	        document.Sections.Add(section1);
+	
+	        section.Headers.Default.Body = document;
+	    }
+	
+	    if (!section.Headers.Even.IsEmpty)
+	    {
+	        RadDocument radDocument = new RadDocument();
+	        Section section1 = new Section();
+	        Paragraph paragraph = new Paragraph();
+	        Span span = new Span("Even");
+	        paragraph.Inlines.Add(span);
+	        section.Blocks.Add(paragraph);
+	
+	        RadDocument document = new RadDocument();
+	        document.Sections.Add(section1);
+	
+	        section.Headers.Default.Body = document;
+	    }
+	}
 {{endregion}}
 
 Additionally, the RadRichTextBox control exposes the `ActiveDocumentEditor` property. It provides information about the currently active editor that you can utilize to access the Headers and Footers.

@@ -82,8 +82,6 @@ This section contains the offline documentation as well as the ApiReference (bot
 You could download the complete source code of the [WPF Demos application]({%slug installing-wpf-demos %}) as well as the provided sample applications.
 
 * Telerik_UI_for_WPF_[version]_Demos.zip
-* SalesDashboard_WPF_[license]_[version]_SourceCode.zip
-* ExecutiveDashboard_WPF_[license]_[version]_SourceCode.zip
 * ColorThemeGenerator_WPF_[license]_[version]_SourceCode.zip
 * CRM_WPF_[license]_[version]_SourceCode.zip
 * ERP_WPF_[license]_[version]_SourceCode.zip

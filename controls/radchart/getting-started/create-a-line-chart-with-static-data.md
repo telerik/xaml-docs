@@ -12,9 +12,7 @@ position: 1
 
 
 
-__RadChart__ is an advanced 
-{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}
-{% if site.site_name == 'WPF' %}WPF{% endif %} control providing full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as edit control properties, modify themes, create and modify templates and more.
+__RadChart__ is an advanced {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control providing full Blend support. From within the visual environment of Blend, you can easily perform various tasks such as edit control properties, modify themes, create and modify templates and more.
 
 This tutorial will walk you through the creation of a __RadChart__ and will show how to:
 

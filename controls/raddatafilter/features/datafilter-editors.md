@@ -10,8 +10,6 @@ position: 3
 
 # Filter Editors
 
-
-
 The FilterEditors allow the users to input the value of their filter criteria in the __RadDataFilter__.
 
 ## Built-in Filter Editors
@@ -30,20 +28,11 @@ The following list shows the default editors of different types of data:
 
  ![{{ site.framework_name }} RadDataFilter All Default Editors](images/RadDataFilter_Features_FilterEditors_01.png)
 
-You can see a running demo [here](https://demos.telerik.com/silverlight/#DataFilter/DefaultEditors)
-          . 
-
 ## Custom Filter Editors
 
 If you want to specify a custom filter editor you can do that by using the __EditorTemplateSelector__ property of the control. Once the editor (custom or default) has been created you can add the final touch to it by attaching to the __EditorCreated__ event. A full example can be found [here]({%slug raddatafilter-how-to-create-custom-filter-editors%}).
 
-You can see a running demo [here](https://demos.telerik.com/silverlight/#DataFilter/CustomEditors)
-          . 
-
 ## See Also
-
  * [Getting Started]({%slug datafilter-getting-started%})
-
  * [Filter Descriptors]({%slug raddatafilter-features-filter-descriptors%})
-
  * [Source and Filtered Source]({%slug raddatafilter-features-source-and-filtered-source%})

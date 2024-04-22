@@ -10,13 +10,33 @@ position: 3
 
 # Rendering
 
-The __RadChartView__ components allow you to specify the series rendering surface. This feature also provides you with the ability to adjust the overall performance of the charting components. In order to select any of the available rendering modes, you can use the __RenderOptions__ property of the series. It is of type ChartRenderOptions and it can be set to any of the following built-in __ChartRenderOptions__:
+The __RadChartView__ components allow you to specify the series rendering surface. This feature also provides you with the ability to adjust the overall performance of the charting components. In order to select any of the available rendering modes, you can use the `RenderOptions` property of the series. It is of type `ChartRenderOptions` and it can be set to any of the following built-in __ChartRenderOptions__:
 
-* __Direct2DRenderOptions__
-* __XamlRenderOptions__
-* __BitmapRenderOptions__
+* `SkiaRenderOptions`
+* `Direct2DRenderOptions`
+* `XamlRenderOptions`
+* `BitmapRenderOptions`
 
 It is important to have in mind that the rendering feature affects only the default visual components of the series. If a custom PointTemplate is applied on the series, the charting component will create separate content presenters for each data point and the rendering options will not be able to affect the rendering of these points.
+
+## Skia Rendering
+
+Skia is 2D graphic library for drawing graphics in a performant way. The RadChartView components can also benefit from the Skia API to further extend and optimize their rendering capabilities and performance.
+
+In order to use the `SkiaRenderOptions`, you will need to install the [SkiSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/2.88.6) (version 2.88.6). After referencing the SkiaSharp binary, you will be able to set the `RenderOptions` property of the series.
+
+#### __XAML__
+{{region radchartview-features-rendering-0}}
+	<telerik:RadCartesianChart.Series>
+		<telerik:LineSeries>
+			<telerik:LineSeries.RenderOptions>
+				<telerik:SkiaRenderOptions/>
+			</telerik:LineSeries.RenderOptions>
+		</telerik:LineSeries>
+	</telerik:RadCartesianChart.Series>
+{{endregion}}
+
+By defaut, the anti-aliasing feature of the Skia rendering is enbaled. To disable this, set the `IsAntialias` property of the `SkiaRenderOptions` to `false`.
 
 ## Direct 2D Rendering
 
@@ -41,7 +61,7 @@ In order to use the Direct2DRenderOptions, you will need to reference the follow
 After referencing those binaries, you will be able to set the RenderOptions property of the series like this:
 
 #### __XAML__
-{{region radchartview-features-rendering-0}}
+{{region radchartview-features-rendering-1}}
 	<telerik:RadCartesianChart.Series>
 	  <telerik:LineSeries>
 		  <telerik:LineSeries.RenderOptions>
@@ -80,7 +100,7 @@ Using this rendering mode, the __RadChartView__ will create one Bitmap image and
 You can enable this rendering mode with the following code:
 
 #### __XAML__
-{{region radchartview-features-rendering-1}}
+{{region radchartview-features-rendering-2}}
 	<telerik:RadCartesianChart.Series>
 		<telerik:LineSeries>
 			<telerik:LineSeries.RenderOptions>

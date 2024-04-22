@@ -23,7 +23,7 @@ It is important to have in mind that the rendering feature affects only the defa
 
 Skia is 2D graphic library for drawing graphics in a performant way. The RadChartView components can also benefit from the Skia API to further extend and optimize their rendering capabilities and performance.
 
-In order to use the `SkiaRenderOptions`, you will need to install the [SkiSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/2.88.6) (version 2.88.6). After referencing the SkiaSharp binary, you will be able to set the `RenderOptions` property of the series.
+In order to use the `SkiaRenderOptions`, you will need to install the [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/2.88.6) (version 2.88.6). After referencing the SkiaSharp binary, you will be able to set the `RenderOptions` property of the series.
 
 #### __XAML__
 {{region radchartview-features-rendering-0}}
@@ -36,7 +36,7 @@ In order to use the `SkiaRenderOptions`, you will need to install the [SkiSharp 
 	</telerik:RadCartesianChart.Series>
 {{endregion}}
 
-By defaut, the anti-aliasing feature of the Skia rendering is enbaled. To disable this, set the `IsAntialias` property of the `SkiaRenderOptions` to `false`.
+The Skia rendering supports anti-aliasing feature which is enabled by default. If you need to disable this, you can set the set the `IsAntialias` property of the `SkiaRenderOptions` to `false`.
 
 ## Direct 2D Rendering
 

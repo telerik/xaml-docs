@@ -44,7 +44,7 @@ Instead of setting the properties directly, you can use data bindings via the co
 	</telerik:RadGridView.RowStyle>
 {{endregion}}
 
-#### __[C#] Binding properties of RadTreeViewItem via the ItemContainerStyle__
+#### __[XAML] Binding properties of RadTreeViewItem via the ItemContainerStyle__
 {{region common-ui-virtualization-3}}
 	<telerik:RadTreeView.ItemContainerStyle>
 		<!-- in case you use NoXaml dlls, you should also set the following attribute to the Style object -->

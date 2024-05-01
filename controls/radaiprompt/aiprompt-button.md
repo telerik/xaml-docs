@@ -14,10 +14,10 @@ The AIPrompt component can also be displayed as a button that will show a `RadAI
 
 The RadAIPromptButton provides the following properties:
 
-* `AIPrompt`&mdash;This property allows you to set an RadAIPrompt instance that will be displayed when the RadAIPromptButton is open.
-* `PopupWidth`&mdash;This property provides the ability to specify the width of the popup of RadAIPromptButton.
-* `PopupHeight`&mdash;This property provides the ability to specify the height of the popup of RadAIPromptButton.
-* `IsPopupOpen`&mdash;This property allows you to open/close the popup holding the RadAIPrompt.
+* `AIPrompt`&mdash;Allows you to set an RadAIPrompt instance that will be displayed when the RadAIPromptButton is open.
+* `PopupWidth`&mdash;Provides the ability to specify the width of the popup of RadAIPromptButton.
+* `PopupHeight`&mdash;Provides the ability to specify the height of the popup of RadAIPromptButton.
+* `IsPopupOpen`&mdash;Allows you to open/close the popup holding the RadAIPrompt.
 
 #### __[XAML] Creating a RadAIPromptButton__
 {{region radaiprompt-prompt-button-0}}

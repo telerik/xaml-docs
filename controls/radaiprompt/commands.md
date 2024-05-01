@@ -14,11 +14,11 @@ position: 4
 
 The following list shows the commands that are exposed by the RadAIPrompt control:
 
-* `PromptRequestCommand`&mdash;This command occurs when the input button is clicked.
-* `SuggestionClickedCommand`&mdash;This command occurs when a suggestion from the Suggestions collection is clicked.
-* `OutputItemCopyCommand`&mdash;This command occurs when the copy button of the generated response item is clicked.
-* `OutputItemRetryCommand`&mdash;This command occurs when the retry button of the generated respone item is clicked.
-* `OutputItemRatingChangedCommand`&mdash;This command occurs when the rating of the generated response is changed through the UI.
+* `PromptRequestCommand`&mdash;This command is executed when the input button is clicked.
+* `SuggestionClickedCommand`&mdash;This command is executed when a suggestion from the Suggestions collection is clicked.
+* `OutputItemCopyCommand`&mdash;This command is executed when the copy button of the generated response item is clicked.
+* `OutputItemRetryCommand`&mdash;This command is executed when the retry button of the generated respone item is clicked.
+* `OutputItemRatingChangedCommand`&mdash;This command is executed when the rating of the generated response is changed through the UI.
 
 ## Configuring Custom Commands
 

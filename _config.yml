@@ -96,7 +96,7 @@ navigation:
         position: 10
 ## X3 Controls Start
     controls/radaiprompt:
-        title:RadAIPrompt
+        title: RadAIPrompt
     controls/radsvgimage:
         title: RadSvgImage
     controls/radhighlighttextblock:

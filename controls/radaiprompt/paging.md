@@ -21,7 +21,7 @@ The `RadAIPrompt` supports paging on the output items from the output view. To e
     <telerik:RadAIPrompt x:Name="aiPrompt" 
                          PromptRequest="OnPromptRequested" 
                          IsPagingEnabled="True"
-                         PageSize="5">
+                         PageSize="3">
         <telerik:RadAIPromptInputItem />
         <telerik:RadAIPromptOutputItem />
     </telerik:RadAIPrompt>

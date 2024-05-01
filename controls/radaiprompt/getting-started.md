@@ -62,10 +62,6 @@ When the input button is clicked, the RadAIPrompt control will raise the `Prompt
     </telerik:RadAIPrompt>
 {{endregion}}
 
-__RadAIPrompt with sample request text__
-
-![WPF RadAIPrompt with sample request text](images/radaiprompt-getting-started-1.png)
-
 #### __[C#] Handling the PromptRequest event__
 {{region radaiprompt-getting-stared-3}}
     private void OnPromptRequested(object sender, PromptRequestEventArgs e)
@@ -87,7 +83,7 @@ __RadAIPrompt with sample request text__
 
 __RadAIPrompt with a response in the output view__
 
-![WPF RadAIPrompt with a response in the output view](images/radaiprompt-getting-started-2.png)
+![WPF RadAIPrompt with a response in the output view](images/radaiprompt-getting-started-1.png)
 
 ## Setting a Theme
 
@@ -125,7 +121,7 @@ The following image shows a RadAIPrompt with the __Fluent__ theme applied.
 
 __RadAIPrompt with the Fluent theme__
 
-![WPF RadAIPrompt with the Fluent theme](images/radaiprompt-getting-started-3.png)
+![WPF RadAIPrompt with the Fluent theme](images/radaiprompt-getting-started-2.png)
 
 ## See Also
 * [Views]({%slug radaiprompt-views%})

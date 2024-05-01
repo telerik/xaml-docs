@@ -93,7 +93,7 @@ The following example showscases the RadAIPrompt when the above properties are u
                 </DataTemplate>
             </telerik:RadAIPrompt.SuggestionsHeaderContentTemplate>
             <telerik:RadAIPrompt.SuggestionsExpanderStyle>
-                <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource RadExpanderStyle}" -->
+                <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource SuggestionsExpanderStyle}" -->
                 <Style TargetType="telerik:RadExpander">
                     <Setter Property="Background" Value="Orange"/>
                 </Style>

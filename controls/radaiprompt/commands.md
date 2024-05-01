@@ -18,7 +18,7 @@ The following list shows the commands that are exposed by the RadAIPrompt contro
 * `SuggestionClickedCommand`&mdash;This command occurs when a suggestion from the Suggestions collection is clicked.
 * `OutputItemCopyCommand`&mdash;This command occurs when the copy button of the generated response item is clicked.
 * `OutputItemRetryCommand`&mdash;This command occurs when the retry button of the generated respone item is clicked.
-* `OutputItemRatingChangedCommand`&mdash;This command occurs when the rating of the generated response is changed.
+* `OutputItemRatingChangedCommand`&mdash;This command occurs when the rating of the generated response is changed through the UI.
 
 ## Configuring Custom Commands
 
@@ -49,7 +49,7 @@ This class exposes the `Command` property that will allow you to set an `IComman
 
     		this.MyCommands = new ObservableCollection<AIPromptCommandBase>()
     		{
-                aiPromptCommand
+                simplifyCommand
             };
         }
 

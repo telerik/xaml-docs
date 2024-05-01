@@ -10,7 +10,7 @@ position: 6
 
 # Views
 
-The `RadAIPrompt` control provides 3 default views that you can include in its `Items` collection. The control supports only one instance of each view to be defined in this collection.
+The `RadAIPrompt` control provides 3 default items that have as their content the dfault views. They will need to be included in its `Items` collection. The control supports only one instance of each view to be defined in this collection.
 
 >important Setting the ItemsSource collection of the RadAIPrompt control is not supported. The Items collection has to be used instead.
 
@@ -71,7 +71,7 @@ The commands view is an additional view that will display the commands set to th
 
 __RadAIPrompt with the commands view in the RadAIPrompt__
 
-![WPF RadAIPrompt with the commands view in the RadAIPrompt]
+![WPF RadAIPrompt with the commands view in the RadAIPrompt](images/radaiprompt-views-2.png)
 
 ## Common Properties
 
@@ -104,7 +104,7 @@ Additionally, the RadAIPromptItem class derives from the native WPF `HeaderedCon
 
 __RadAIPrompt with customized views__
 
-![WPF RadAIPrompt with customized views](images/radaiprompt-views-2.png)
+![WPF RadAIPrompt with customized views](images/radaiprompt-views-3.png)
 
 # See Also
 * [Commands]({%slug radaiprompt-commands%})

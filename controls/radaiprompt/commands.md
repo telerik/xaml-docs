@@ -10,15 +10,49 @@ position: 4
 
 # Commands
 
-`RadAIPrompt` provides several commands that you can utilize when working with the component. Furthermore, it allows you to define custom commands that will be displayd in a separate view to further personalize the control. 
+`RadAIPrompt` provides several commands that you can utilize when working with the component. Furthermore, it allows you to define custom commands that will be displayed in a separate view to further personalize the control. 
 
 The following list shows the commands that are exposed by the RadAIPrompt control:
 
 * `PromptRequestCommand`&mdash;This command is executed when the input button is clicked.
 * `SuggestionClickedCommand`&mdash;This command is executed when a suggestion from the Suggestions collection is clicked.
 * `OutputItemCopyCommand`&mdash;This command is executed when the copy button of the generated response item is clicked.
-* `OutputItemRetryCommand`&mdash;This command is executed when the retry button of the generated respone item is clicked.
+* `OutputItemRetryCommand`&mdash;This command is executed when the retry button of the generated response item is clicked.
 * `OutputItemRatingChangedCommand`&mdash;This command is executed when the rating of the generated response is changed through the UI.
+
+The following example shows how to utilize one of the above-listed commands.
+
+#### __[C#] Defining an ICommand property in the view model__
+{{region radaiprompt-commands-0}}
+    public class MyViewModel
+    {
+        public MyViewModel()
+        {
+            this.PromptRequestCommand = new DelegateCommand(OnPromptRequestCommandExecuted);
+        }
+    
+        public ICommand PromptRequestCommand { get; set; }
+    
+        private void OnPromptRequestCommandExecuted(object obj)
+        {
+            //Execute your logic here when the PromptRequestCommand of RadAIPrompt is executed
+        }
+    }
+{{endregion}}
+
+#### __[XAML] Binding the view model ICommand to the PromptRequestCommand of RadAIPrompt__
+{{region radaiprompt-commands-1}}
+    <Grid>
+        <Grid.DataContext>
+            <local:MyViewModel/>
+        </Grid.DataContext>
+        <telerik:RadAIPrompt x:Name="aiPrompt"
+                             PromptRequestCommand="{Binding PromptRequestCommand}">
+            <telerik:RadAIPromptInputItem />
+            <telerik:RadAIPromptOutputItem />
+        </telerik:RadAIPrompt>
+    </Grid>
+{{endregion}}
 
 ## Configuring Custom Commands
 
@@ -36,7 +70,7 @@ To add a logic that will be executed when the user interacts with the commands v
 This class exposes the `Command` property that will allow you to set an `ICommand` implementation to it. It will be raised when the User interacts with it. 
 
 #### __[C#] Creating an AIPromptCommand instance__
-{{region radaiprompt-commands-0}}
+{{region radaiprompt-commands-2}}
     public class MyViewModel
     {
         public MyViewModel()
@@ -63,7 +97,7 @@ This class exposes the `Command` property that will allow you to set an `IComman
 {{endregion}}
 
 #### __[XAML] Binding the custom commands collection to RadAIPrompt__
-{{region radaiprompt-commands-1}}
+{{region radaiprompt-commands-3}}
     <Grid>
         <Grid.DataContext>
             <local:MyViewModel/>
@@ -85,7 +119,7 @@ __RadAIPrompt with a custom commands collection__
 The `AIPromptCommandGroup` object provides the `Commands` collection property. It will allow you to group `AIPromptCommand` instances.
 
 #### __[C#] Creating an AIPromptCommandGroup instance__
-{{region radaiprompt-commands-2}}
+{{region radaiprompt-commands-4}}
     public class MyViewModel
     {
         public MyViewModel()

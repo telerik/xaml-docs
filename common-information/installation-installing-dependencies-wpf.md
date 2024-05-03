@@ -19,6 +19,7 @@ Controls	|	Assembly
 ---	|	---
 TouchManager | Telerik.Windows.Controls
 DragDropManager	|	Telerik.Windows.Controls
+RadAIPrompt | Telerik.Windows.Controls, Telerik.Windows.Controls.ConversationalUI, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadAutoCompleteBox	|	Telerik.Windows.Controls.Input
 RadAutoSuggestBox	|	Telerik.Windows.Controls.Input
 RadBadge | Telerik.Windows.Controls

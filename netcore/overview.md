@@ -10,23 +10,15 @@ position: 0
 
 # .NET Support Overview 
 
-__Telerik UI for WPF__ comes with support for __.NET Core 3.1__,  __.NET 6__, __.NET 7__ and __.NET 8__.
+__Telerik UI for WPF__ comes with support for __.NET 6__ and later.
 
-There is are sets of DLLs built against the different .NET versions which you can reference in an application and start using the Telerik controls. There are no .NET 8 dedicated Telerik assemblies, but their .NET 7 is supported in .NET 8 projects.
+Telerik provides sets of DLLs built against the different .NET versions which you can reference in an application and start using the Telerik controls. 
+
+There are no .NET 8 dedicated Telerik assemblies, but their .NET 7 is supported in .NET 8 projects.
 
 See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
-> The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for .NET 6 and later is that several controls rely on third party NuGet packages. These are automatically installed when adding the Telerik assemblies via NuGet or the Telerik Visual Studio Extension. In case you reference the assemblies manually, one or more of the following packages should be installed manually: `System.Data.OleDb`, `System.Drawing.Common` and `System.ServiceModel.Http`.
-
-## .NET Core 3.1 Requirements
-
-To work with the Telerik `.NET Core 3.1` DLLs you will need to have the following installed.
-
-* The latest [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1).
-
-* [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2019 version with the latest update. The minimum version of Visual Studio is __v16.4__. 
-
->important Read more about the .NET Core requirements in the [Prerequisites for .NET Core on Windows](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x) MSDN article.
+The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for .NET 6 and later is that several controls rely on third party NuGet packages. These are automatically installed when adding the Telerik assemblies via NuGet or the Telerik Visual Studio Extension. In case you reference the assemblies manually, one or more of the following packages should be installed manually: `System.Data.OleDb`, `System.Drawing.Common` and `System.ServiceModel.Http`.
 
 ## .NET 6 Requirements
 
@@ -46,7 +38,7 @@ To work with the Telerik `.NET 7` DLLs you will need to have the following insta
 
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2022 (v17.2 latest preview or newer).
 
-## Design-Time Support
+## Design-Time Support and Visual Studio ToolBox
 
 The Telerik controls can be drag/dropped from the __Visual Studio Toolbox__. To enable this under .NET you will need to [reference the Telerik dlls via nuget]({%slug nuget-installation%}). Installing the nuget packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik nuget packages installed.
 
@@ -55,4 +47,5 @@ Additionally, the Telerik controls introduce customized design-time support as u
 >tip Creating a project via the [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}), allows you to select a NuGet version and automatically add the packages in the project when created, thus adding the Telerik .NET controls into the Visual Studio Toolbox.
 
 ## See Also  
+* [Telerik Version Distributions]({%slug installation-distributions%})
 * [Deploying WPF .NET Core Application]({%slug netcore-support-deploy-using-visual-studio%})

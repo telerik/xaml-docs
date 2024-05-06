@@ -45,7 +45,6 @@ When using __VirtualQueryableCollectionView__ for WPF, you may easily benefit fr
     }
 {{endregion}}
 
-
 #### __[VB.NET]Example 1: Wrap a query in a VirtualQueryableCollectionView__
 
 {{region using-data-virtualization_1}}
@@ -64,9 +63,7 @@ In the example above Entity Framework is used. However, you may use Linq to SQL,
 
 >When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
 
-{% endif %}
-
-{% if site.site_name == 'Silverlight' %}
+{% else %}
 
 In order to utilize the VirtualQueryableCollectionView class, you may take the following approach (the example below demonstrates the case when utilizing WCF RIA Services):
 
@@ -116,13 +113,8 @@ __ItemsLoading__ event will be raised if you try to access some item by index an
 >important When you provide IQueryable in the VirtualQueryableCollectionView you do not need to handle the ItemsLoading event.
 
 >When __ScrollMode is configured as Deferred__, then a __ScrollPositionIndicator__ will be shown as the user scrolls vertically. Its content will be an empty value until the user releases the scrollbar to a particular position so that the items to be displayed into view are actually loaded. In order to avoid this, you could permanently __hide the indicator__ defining a Style for this visual element setting its Opacity to 0.
-               
-{% if site.site_name == 'WPF' %}
-Check out the WPF Demos [here.](https://demos.telerik.com/wpf/)
 
-You can also check this [blog.](http://blogs.telerik.com/vladimirenchev/posts/10-10-20/data-virtualization-for-your-silverlight-and-wpf-applications.aspx){% endif %}
 {% if site.site_name == 'Silverlight' %}
-
 Check out the online demo [here.](https://demos.telerik.com/silverlight/#DataVirtualization/FirstLook)
 
 You can also check those additional blogs:
@@ -131,8 +123,10 @@ You can also check those additional blogs:
 
 * [Data Virtualization, WCF RIA Services and Visual Studio Async CTP](http://blogs.telerik.com/vladimirenchev/posts/11-04-18/telerik-data-virtualization-wcf-ria-services-and-visual-studio-async-ctp.aspx)
 
-* [Data Virtualization and Server sorting and filtering with WCF RIA Services](http://blogs.telerik.com/vladimirenchev/posts/10-12-09/server-sorting-and-filtering-with-wcf-ria-services-and-telerik-data-virtualization-for-silverlight.aspx){% endif %}
+* [Data Virtualization and Server sorting and filtering with WCF RIA Services](http://blogs.telerik.com/vladimirenchev/posts/10-12-09/server-sorting-and-filtering-with-wcf-ria-services-and-telerik-data-virtualization-for-silverlight.aspx)
+{% endif %}
 
-## See Also
-
+## See Also  
  * [Using Data Virtualization with RadGridView]({%slug gridview-populating-datavirtualization%})
+ * [WPF Demos Application](https://demos.telerik.com/wpf/)
+ * [Data Virtualization in WPF Applications](https://www.telerik.com/blogs/data-virtualization-for-your-silverlight-and-wpf-applications)

@@ -26,7 +26,7 @@ The __[Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-pr
 
 <!-- -->
 
->Since the __R2 2019__ version of UI for WPF, .NET Core versions of the Visual Studio Templates are available for __C#__ with __Visual Studio 2019__.
+>Since __R2 2019__ of Telerik UI for WPF, .NET versions of the Visual Studio Templates are available for __C#__ with __Visual Studio 2019__ and later.
 
 In this article you will find more information on how to create a project from one of the available templates as well as more details regarding what controls each template contains.
 

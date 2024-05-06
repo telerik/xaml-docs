@@ -10,18 +10,17 @@ position: 8
 
 # In-Memory Data
 
-The purpose of this tutorial is to show you how to create in-memory data and use it in the context of your {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
+The purpose of this tutorial is to show you how to create in-memory data and use it in the context of your {{ site.framework_name }} application. The following common tasks will be examined:
 
 * Creating in-memory data. 
 
-* Setting it as a data source/data context in {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application.
+* Setting it as a data source/data context in {{ site.framework_name }} application.
 
 ## Creating In-Memory Data
 
-__Example 1__ shows how you can create some in-memory data.
+The following example shows how to setup a basic data model along with a view model.
 
-#### __[C#] Example 1: Creating in-memory data__
-
+#### __[C#] Creating in-memory data__  
 {{region consuming-data-in-memory-data_0}}
 	public class Category
     {
@@ -42,7 +41,6 @@ __Example 1__ shows how you can create some in-memory data.
                 {
                     this.categories = this.CreateCategories();
                 }
-
                 return this.categories;
             }
         }
@@ -71,9 +69,7 @@ __Example 1__ shows how you can create some in-memory data.
     }
 {{endregion}}
 
-
-
-#### __[VB.NET] Example 1: Creating in-memory data__
+#### __[VB.NET] Creating in-memory data__
 
 {{region consuming-data-in-memory-data_1}}
 	Public Class Category
@@ -145,16 +141,12 @@ __Example 1__ shows how you can create some in-memory data.
 
 {{endregion}}
 
-## Setting In-Memory Data as DataSource In {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application
+## Setting In-Memory Data as DataSource In {{ site.framework_name }} Application
 
 You can set the in-memory data as a data source in xaml or in code.
 
-* Using XAML. __Example 2__ shows some sample XAML.
-
-#### __[XAML] Example 2: Setting the data source in xaml__
-
+#### __[XAML] Setting the data source in xaml__  
 {{region consuming-data-in-memory-data_2}}
-
     <Grid>
 	  	<Grid.DataContext>
             <local:ViewModel />
@@ -165,10 +157,7 @@ You can set the in-memory data as a data source in xaml or in code.
     </Grid>
 {{endregion}}
 
-*  In code-behind as shown in __Example 3__.
-
-#### __[C#] Example 3: Setting the data source in code__
-
+#### __[C#] Setting the data source in code__  
 {{region consuming-data-in-memory-data_3}}
 	public MainWindow()
 	{
@@ -177,8 +166,7 @@ You can set the in-memory data as a data source in xaml or in code.
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 3: Setting the data source in code__
-
+#### __[VB.NET] Setting the data source in code__  
 {{region consuming-data-in-memory-data_4}}
 	Public Sub New()
 		InitializeComponent()
@@ -186,10 +174,6 @@ You can set the in-memory data as a data source in xaml or in code.
 	End Sub
 {{endregion}}
 
-## See Also
+## See Also  
 
-{% if site.site_name == 'Silverlight' %}
- * [DomainDataSource Support]({%slug consuming-data-domain-datasource-support%})
-{% endif %}
-
- * [Using XML]({%slug consuming-data-using-xml%})
+* [Using XML]({%slug consuming-data-using-xml%})

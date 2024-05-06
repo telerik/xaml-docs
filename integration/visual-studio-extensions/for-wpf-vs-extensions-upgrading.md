@@ -13,7 +13,7 @@ site_name: WPF
 
 An important feature of Progress Telerik UI for WPF Extension is the __Project Upgrade Wizard__.
 
-The Upgrade Wizard (started by using the __Telerik > Telerik UI for WPF > Upgrade Wizard__ menu item) is used to change the version of Telerik UI for WPF your project uses.
+The Upgrade Wizard (started by using the __Extensions > Telerik UI for WPF > Upgrade Wizard__ menu item) is used to change the version of Telerik UI for WPF your project uses.
 
 In addition to the pure assembly reference change, the upgrade wizard provides several important features:
 
@@ -39,13 +39,13 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 
 ![VSExtentions WPF Upgrade Wizard Toolbox](images/VSExtentions_WPF_UpgradeWizardOptions.png)
 
-Notes:
+### Notes
 
-* The distribution selection screen lists all the Telerik UI for WPF versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions. Hotfixes, downloaded manually cannot be detected.
+* The distribution selection screen lists all the Telerik UI for WPF versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions.
 
 * You can use the __GET LATEST__ button to access the Latest Version Acquirer and download the latest available version on our website.
 
-* The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or the Live Examples.
+* The distribution, downloaded by the Upgrade Wizard contains only the .dll and related files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or any code examples.
 
 	![VSExtensions Themes Folder](images/VSExtensions_WPF_ThemeFilesUnderNamedFolder.png)
 

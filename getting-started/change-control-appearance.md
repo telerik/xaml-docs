@@ -38,7 +38,7 @@ If you wish to apply further customizations such as repositioning the building p
 
 ## Color Theme Generator
 
-The **Crystal**, **Fluent**, **Material**, **Office2016Touch**, **Office2016**, **Green**, **VisualStudio2013**, **Office2013**, **Windows8Touch** and **Windows8** themes are fully customizable using the available brushes to adjust each color. 
+All Telerik themes starting from [Windows8` and later]({%slug common-styling-appearance-available-themes%}) (like __Windows11__, **Crystal**, **Fluent**, **Material**, **Office2016**, etc.) are fully customizable using the assocaited [theme palettes]({%slug styling-appearance-theme-helper%}) properties.
 
 For seamless color customization and faster palette creation that looks great and matches all controls, we created the [Color Theme Generator]({%slug common-styling-color-theme-generator%}).
 

@@ -16,27 +16,23 @@ There are two ways to do this - the first one is to install [Progress Telerik WP
 
 ## Creating Application with the Telerik Visual Studio Extension
 
-1. Open [Microsoft Visual Studio]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}){% else %}({%slug installation-system-requirements-wpf%}){% endif %}.
-
-2. Create new Telerik {{ site.site_name }} application. {% if site.site_name == 'WPF' %}Read more in the [Create Project]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) article.{% endif %}
+1. Open Visual Studio and createa create a new Telerik {{ site.site_name }} project. {% if site.site_name == 'WPF' %}Read more in the [Create Project]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) article.{% endif %}
 	
 	#### __Figure 1: Creating new Telerik application__	
 	{% if site.site_name == 'Silverlight' %}
 	![Creating new Telerik application](images/installation-adding-to-application-create-application-and-adding-control-0.png)
 	{% else %}
-	![Creating new Telerik application](images/installation-adding-to-application-create-application-and-adding-control-1.png)
-
-	>You can choose __.Net Framework 4.0__ or __.Net Framework 4.5__ for your application. Also there is a separate project template for __.Net Core__.
+	![Creating new Telerik application](images/installation-adding-to-application-create-application-and-adding-control-1.png)	
 	{% endif %}
 
-3. Choose the project template. The options are a blank template or one of the MS Office inspired project templates. Choose the Blank option.
+2. Choose the project template. The options are a blank template or one of the MS Office inspired project templates. Choose the Blank option.
 	
 	#### __Figure 2: Choosing a project template__
 	![Choosing an application template](images/installation-adding-to-application-create-application-and-adding-control-2.png)
 
 	At this point the project references only the common Telerik.Windows.Controls.dll. 
 
-4. {% if site.site_name == 'WPF' %}[Configure the project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% else' %}[Configure the project]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the control you are going to use from the list (or search them in the search box). Clicking OK will add all required references for the controls.
+3. {% if site.site_name == 'WPF' %}[Configure the project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}){% else %}[Configure the project]({%slug radcontrols-for-silverlight-vs-extensions-project-configuration%}){% endif %} using the Project Configuration Wizard. This will add the dlls required by the controls you want to use. When you open the wizard you can select the control you are going to use from the list (or search them in the search box). Clicking OK will add all required references for the controls.
 
 	#### __Figure 3: Adding references to the charting controls__
 	![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
@@ -45,9 +41,7 @@ There are two ways to do this - the first one is to install [Progress Telerik WP
 
 ## Creating Application and Manually Referencing the Telerik Assemblies
 
-1. Open [Microsoft Visual Studio]{% if site.site_name == 'Silverlight' %}({%slug installation-system-requirements%}){% else %}({%slug installation-system-requirements-wpf%}){% endif %}.
-          	
-2. Create a new {{ site.site_name }} application.
+1. Open Visual Studio and create a new {{ site.site_name }} application.
 	
 	#### __Figure 4: Creating new {{ site.site_name }} application__  	
 	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-4.png)
@@ -58,7 +52,7 @@ There are two ways to do this - the first one is to install [Progress Telerik WP
 	![Creating new application](images/installation-adding-to-application-create-application-and-adding-control-6.png)
 	{% endif %}
 
-3. Add references to the Telerik assemblies. There are two options to do this.
+2. Add references to the Telerik assemblies. There are two options to do this.
 	
 	* [Drag a Telerik control from the toolbox](#dragging-controls-from-visual-studio-toolbox). When the control gets dropped onto the Visual Studio designer's surface, Visual Studio will automatically add the corresponding references.
 	

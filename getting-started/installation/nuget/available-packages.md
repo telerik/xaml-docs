@@ -13,7 +13,7 @@ Telerik UI for WPF comes with a several different packages that can be installed
 
 ![{{ site.framework_name }} Telerik UI for {{ site.framework_name }} Available NuGet Packages](images/nuget-available-packages-0.png)
 
-The Telerik dlls are built against different versions of .NET starting from .NET 4 to the latest official .NET. Additionally, the dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a big set of assemblies that can be downloaded which are also available as nuget packages. 
+The Telerik dlls are built against different versions of .NET starting from .NET 4.6.2 to the latest official .NET. The dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a rich set of assemblies that can be downloaded which are also available as nuget packages. 
 
 The packages can be downloaded as `.nupkg` files which can be used to [setup a local package source]({%slug nuget-package-source-setup%}) or alternatively the [online Telerik package source]({%slug nuget-package-source-setup%}) can be used. These two different options contain slightly different set of packages. This article targets to list and describe the packages.
 
@@ -23,36 +23,32 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 
 ### Full Packages
 
-* `Telerik_UI_for_WPF_<version number>_NuGet_Xaml_Dev.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
-	* `Telerik.UI.for.Wpf.40.Xaml`
-	* `Telerik.UI.for.Wpf.45.Xaml`
-	* `Telerik.UI.for.Wpf.50.Xaml`
+* `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Xaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
+	* `Telerik.UI.for.Wpf.462.Xaml`
 	* `Telerik.UI.for.Wpf.60.Xaml`
-	* `Telerik.UI.for.Wpf.NetCore.Xaml`
+	* `Telerik.UI.for.Wpf.70.Xaml`
+
+	Each of these packages contains the all Telerik UI for WPF (Xaml) dlls for the corresponding .NET framework. _The number _462__ means __.NET 4.6.2__, __60__ means __.NET 6_ and so on. The __.Xaml__ part at the ending of the package name indicates that it contains the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
 	
-	Each of these packages contains the all Telerik UI for WPF (Xaml) dlls for the corresponding .NET framework. __.40__ means __.NET 4__, __.45__ means __.NET 4.5__ and so on. The __.Xaml__ part at the ending of the package name indicates that it contains the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
-	
-* `Telerik_UI_for_WPF_<version number>_NuGet_NoXaml_Dev.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
-	* `Telerik.UI.for.Wpf.40`
-	* `Telerik.UI.for.Wpf.45`
-	* `Telerik.UI.for.Wpf.50`
+* `Telerik_UI_for_WPF_<version number>_Dev_NuGet_NoXaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:	
+	* `Telerik.UI.for.Wpf.462`	
 	* `Telerik.UI.for.Wpf.60`
-	* `Telerik.UI.for.Wpf.NetCore`
+	* `Telerik.UI.for.Wpf.70`
 	
 	Each of these packages contains the all Telerik UI for WPF (NoXaml) dlls for the corresponding .NET framework. Compared to the previous set of packages, the names here don't end with __.Xaml__ which indicates that they contain the [NoXaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
 	
 ### Separate Packages
 
-* `Telerik_UI_for_WPF_<version number>_NuGet_Separate_Packages_Xaml_Dev.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
+* `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Separate_Packages_Xaml.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
 	* `Telerik.Windows.Controls.for.Wpf.Xaml`
 	* `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml`
 	* `Telerik.Windows.Controls.GridView.for.Wpf.Xaml`
 	* `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml`
 	* etc.
 	
-	Each of these packages contain the corresponding Telerik ([Xaml]({%slug xaml-vs-noxaml%})) dll for all available .NET frameworks (.40, .45, .5, etc.). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
+	Each of these packages contain the corresponding Telerik ([Xaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .7). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
 	
-* `Telerik_UI_for_WPF_<version number>_NuGet_Separate_Packages_NoXaml_Dev.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
+* `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Separate_Packages_NoXaml.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
 	* `Telerik.Windows.Controls.for.Wpf`
 	* `Telerik.Windows.Controls.Navigation.for.Wpf`
 	* `Telerik.Windows.Controls.GridView.for.Wpf`
@@ -61,7 +57,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	* `Telerik.Windows.Themes.Material.for.Wpf`
 	* etc.
 	
-	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET frameworks (.40, .45, .5, etc.). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.	
+	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .7). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.	
 	
 ## Telerik NuGet Server Packages
 
@@ -69,14 +65,12 @@ There is an [online package source]({%slug nuget-package-source-setup%}) that ca
 
 ### Full Packages
 
-The onlie package source contains full packages only for the .NET Core and later assemblies.
+The onlie package source contains full packages only for the .NET and later assemblies.
 
-* `Telerik.UI.for.Wpf.NetCore`
-* `Telerik.UI.for.Wpf.NetCore.Xaml`
-* `Telerik.UI.for.Wpf.50`
-* `Telerik.UI.for.Wpf.50.Xaml`
 * `Telerik.UI.for.Wpf.60`
 * `Telerik.UI.for.Wpf.60.Xaml`
+* `Telerik.UI.for.Wpf.70`
+* `Telerik.UI.for.Wpf.70.Xaml`
 
 These packages contain all Telerik dlls for the corresponding .NET version. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
 

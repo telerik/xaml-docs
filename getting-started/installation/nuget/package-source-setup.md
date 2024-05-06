@@ -46,8 +46,9 @@ The Telerik packages are available as `.nupkg` files that can be downloaded from
 
 	You will find 4 .zip files with nuget packages on the download page. These contains two different package types (full and separate) each containing two different types of Telerik dlls ([Xaml and NoXaml]({%slug xaml-vs-noxaml%})).
 	
-	* `Telerik_UI_for_WPF_{version}NuGet{Xaml/NoXaml}_Dev.zip` are available for the supported .NET versions and combine all UI for WPF assemblies in one NuGet.
-	* `Telerik_UI_for_WPF_{version}NuGet_Separate_Packages{Xaml/NoXaml}_Dev.zip` contains the separate NuGet packages of all UI for WPF assemblies. These are useful if you don't want to include all Telerik assemblies in your project, but only the ones you are referencing.	
+	* `Telerik_UI_for_WPF_{version}_Dev_NuGet_{Xaml/NoXaml}.zip` are available for the supported .NET versions and combine all UI for WPF assemblies in one NuGet.
+	
+	* `Telerik_UI_for_WPF_{version}_Dev_NuGet_Separate_Packages_{Xaml/NoXaml}.zip` contains the separate NuGet packages of all UI for WPF assemblies. These are useful if you don't want to include all Telerik assemblies in your project, but only the ones you are referencing.	
 	
 1. Navigate to the "Package Manager Settings" menu.
 	
@@ -83,7 +84,7 @@ Selecting the Telerik's source as the __Package source__ in Visual Studio will p
 
 * The following video demonstrates how to add the Telerik NuGet Feed to your NuGet Package Sources:
 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+	<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
 
 ## See Also  
 * [Available NuGet Packages]({%slug nuget-available-packages%})

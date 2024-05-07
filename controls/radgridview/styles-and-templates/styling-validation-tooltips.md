@@ -44,7 +44,7 @@ __RadGridView's__ validation tooltip styles are located in __Telerik.Windows.Con
 
 * Manually [Edit the ControlTemplates]({%slug styling-apperance-editing-control-templates%}) 
 
-* Use [Microsoft Expression Blend]({%slug common-styling-appearance-edit-control-templates-blend%}) 
+* Use Microsoft Expression Blend
 
 >tip The recommended approach for editing __ControlTemplates__ is using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}).
 

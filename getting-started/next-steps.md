@@ -31,7 +31,7 @@ Video Tutorials
 * [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
 
 Installation
-* [Which File Do I Need to Install?]({%slug installation-installing-which-file-do-i-need%})
+* [Installation Approaches]({%slug installation-installing-which-file-do-i-need%})
 {% if site.site_name == 'WPF' %}
 * [Download Product Files]({%slug download-product-files-wpf%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})

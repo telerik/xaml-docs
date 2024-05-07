@@ -14,17 +14,15 @@ The UI for {{ site.framework_name }} provides with several extension methods tha
 
 The methods are available in the __ChildrenOfTypeExtensions__ and __ParentOfTypeExtensions__ static classes. They extend the DependencyObject class so you can call them on any UI element.
 
->important The extension methods would be able to enumerate the children/parents only if the visual tree of the control has been loaded. This is why you should call the methods after the Loaded event of the corresponding control was invoked.
+To use the methods you will need to include the Telerik.Windows.Controls namespace. One way to do that is to add 'using' directive that points to - `using Telerik.Windows.Controls;`
 
->tip To call the method as an extension of DependencyObject you will need to add 'using' directive that points to Telerik.Windows.Controls - `using Telerik.Windows.Controls;`
+>important The extension methods would be able to enumerate the children/parents only if the visual tree of the control has been loaded. This is why you should call the methods after the Loaded event of the corresponding control was invoked.
 
 ## ChildrenOfTypeExtensions
 
 This class exposes several methods that you can use to get the children of an element.
 
-* __ChildrenOfType&lt;T&gt;__
-	
-	ChildrenOfType is a generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for elements of the concrete type.
+* __ChildrenOfType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for elements of the concrete type.
 	
 	#### __[C#] Example 1: Getting all children of type RadToggleButton from a RadExpander control__
 	{{region common-visual-tree-helpers-0}}
@@ -35,9 +33,7 @@ This class exposes several methods that you can use to get the children of an el
 		IEnumerable<RadToggleButton> toggleButtons = ChildrenOfTypeExtensions.ChildrenOfType<RadToggleButton>(radExpander);
 	{{endregion}}
 	
-* __FindChildByType&lt;T&gt;__
-
-	FindChildByType is a generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for an element of the concrete type. The methods returns the first element it founds.
+* __FindChildByType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for an element of the concrete type. The methods returns the first element it founds.
 	
 	#### __[C#] Example 2: Getting a child type RadToggleButton from a RadExpander control__
 	{{region common-visual-tree-helpers-1}}	
@@ -52,9 +48,7 @@ This class exposes several methods that you can use to get the children of an el
 
 This class exposes several methods that you can use to get the parents of an element.
 
-* __ParentOfType&lt;T&gt;__
-	
-	ParentOfType is a generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the application for parent elements of the concrete type. The method returns the first parent if founds.
+* __ParentOfType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the application for parent elements of the concrete type. The method returns the first parent if founds.
 	
 	#### __[C#] Example 3: Getting the parent of type RadExpander from a RadToggleButton control__
 	{{region common-visual-tree-helpers-2}}
@@ -65,11 +59,11 @@ This class exposes several methods that you can use to get the parents of an ele
 		RadExpander expander = ParentOfTypeExtensions.ParentOfType<RadExpander>(radToggleButton);
 	{{endregion}}
 	
-* __GetParents__: This method get all visual parents of the element. The method can be used the same way as in __Example 3__. 
+* __GetParents()__&mdash;This method get all visual parents of the element. The method can be used the same way as in __Example 3__. 
 
-* __GetVisualParent&lt;T&gt;__: This method gets the first visual parent of the element. The method can be used the same way as in __Example 3__. 
+* __GetVisualParent&lt;T&gt;()__&mdash;This method gets the first visual parent of the element. The method can be used the same way as in __Example 3__. 
 
-* __IsAncestorOf__: This method checks if an element is a parent of another element.
+* __IsAncestorOf()__&mdash;This method checks if an element is a parent of another element.
 
 ## See Also  
 * [Attached Behaviors]({%slug common-mvvm-attached-behavior%})

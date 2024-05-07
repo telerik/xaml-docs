@@ -1,22 +1,22 @@
 ---
-title: .NET Core Support
-page_title: .NET Core Support
-description: Check our &quot;.NET Core Support&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+title: .NET Support
+page_title: .NET 6 Support
+description: Check our &quot;.NET Support&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-getting-started-net-core-support
-tags: netcore,.net core
+tags: netcore,.net core,6,7
 published: True
 position: 1
 ---
 
-# .NET Core Support
+# .NET Support
 
-Similarly to the other controls in UI for WPF, `RadRichTextBox` can be used in .NET Core applications.
+Similarly to the other controls in UI for WPF, `RadRichTextBox` can be used in .NET 6 and later applications.
 
 This article describes the differences with the .NET Framework version you might encounter.
 
-## Assembly References
+## Assembly References in .NET 6 and Later
 
-To use RadRichTextBox, you need to add references to the following assemblies:
+To use RadRichTextBox in a .NET 6 or later project, you need to add references to the following assemblies:
 
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.RichTextBox__
@@ -32,7 +32,7 @@ To use the built-in UI, you should add references to the following assemblies:
 
 ## Migration from .NET Framework
 
-If you are migrating from .NET Framework, note that there are several changes made to the assemblies. Several DLLs are now merged in а new assembly that is named __Telerik.Windows.Controls.RichTextBox.dll__. These merged DLLs are the following ones:
+If you are migrating from .NET Framework, note that there are several changes made to the assemblies. Several DLLs are now merged in a new assembly that is named __Telerik.Windows.Controls.RichTextBox.dll__. These merged DLLs are the following ones:
 
 * __Telerik.Windows.Documents.dll__
 * __Telerik.Windows.Controls.RichTextBoxUI.dll__
@@ -46,21 +46,25 @@ If you are migrating from .NET Framework, note that there are several changes ma
 
 >important The associated __.xaml__ files are changed respectively.
 
->important MEF is not supported by the .NetCore version of the RadRichTextBox control. For more information, check the [MEF]({%slug radrichtextbox-mef%}) article.
+>important MEF is not supported by the .Net 6 and later versions of the RadRichTextBox control. For more information, check the [MEF]({%slug radrichtextbox-mef%}) article.
 
 ## Paths to Resources
 
-Due to the merging of the assemblies, the resources' paths are modified as well. For example, the .NET Framework version uses paths like the following one: *pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/**. The alternative for using RadRichTextBox in .NET Core environment is:
+Due to the merging of the assemblies, the resources' paths are modified as well. For example, the .NET Framework version uses paths like the following one: `pack://application:,,,/Telerik.Windows.Controls.RichTextBoxUI;component/`. The alternative for using RadRichTextBox in .NET Core environment is:
 
 #### __[XAML]__
 
 {{region xaml-radrichtextbox-getting-started-net-core-support-2}}
+    <!-- old path -->
+	pack://application:,,,/Telerik.Windows.Controls.RichTextBox;component/*
+	
+	<!-- new path -->
     pack://application:,,,/Telerik.Windows.Controls.RichTextBox;component/RichTextBoxUI/*
 {{endregion}}
 
 ## Reorganized Resource Dictionaries 
 
-When using implicit themes, you need to merge the XAML resources so you can have styling for the controls. RadRichTextBox for .NET Core needs the following resources:
+When using implicit themes, you need to merge the XAML resources so you can have styling for the controls. RadRichTextBox for .NET needs the following resources:
 
 #### __[XAML]__
 {{region xaml-radrichtextbox-getting-started-net-core-support-3}}

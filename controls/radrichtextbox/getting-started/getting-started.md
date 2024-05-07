@@ -21,7 +21,7 @@ position: 0
 ## Assembly References
 
 {% if site.framework_name == 'WPF' %}
->The references required to use RadRichTextBox in a __.NET Core__ project have been united. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
+>The references required to use RadRichTextBox in __.NET__ 6 or later projects have been united. Check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
 {% endif %}
 
 The minimal set of references you need to have in your application in order to have a RadRichTextBox are as follows:
@@ -31,8 +31,7 @@ The minimal set of references you need to have in your application in order to h
 * __Telerik.Windows.Documents__ 
 * __Telerik.Windows.Documents.Core__
 * __System.ComponentModel.Composition__
-
-For __.NET 6__ and later you may need to install also the `System.Drawing.Common` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
+* __System.Drawing.Common NuGet package__&mdash;Required only for __.NET 6__ and later and only if the Telerik assemblies are referenced manually in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
 

@@ -30,7 +30,7 @@ This tutorial will walk your through the creation of a sample application contai
 	* __Telerik.Windows.Documents.Core__
 	* __Telerik.Windows.Documents.Flow__
 	
->importantIf you are using **.NET Core**, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
+>importantIf you are using **.NET 6** and later, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
 
 >In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged:  
 * System.Windows.xaml
@@ -353,7 +353,7 @@ Still, using the __Calculation Panel__ and the items in each __Category__, you a
 
 >You can access ExpressionEditor.Expression.Type.
 
->__RadExpressionEditor__ provides support for dynamic objects with __ICustomTypeProvider__ (.NET 4.5) or __ICustomTypeDescriptor__ implementation. It will scan the object's properties and show them in the __Fields list__.
+>__RadExpressionEditor__ provides support for dynamic objects with __ICustomTypeProvider__ or __ICustomTypeDescriptor__ implementation. It will scan the object's properties and show them in the __Fields list__.
 
 ## Customizing the editor
 

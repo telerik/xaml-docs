@@ -22,26 +22,30 @@ The extensions handle the following major points in the development with Telerik
 
 * __Toolbox configuration__: Select what version of Telerik UI for {{ site.framework_name }} to be populated in the Visual Studio Toolbox.
 
-__Progress Telerik UI for {{ site.framework_name }} Extension__ is distributed with the Telerik UI for {{ site.framework_name }} installer. It can be downloaded and installed as separate product from the [Visual Studio Gallery](https://marketplace.visualstudio.com/) for Visual Studio 2012 and later. The extension supports Visual Studio 2012, 2013, 2015, 2017, 2019 and 2022, and it handles .NET 4.0+ applications.
+__Progress Telerik UI for {{ site.framework_name }} Extension__ is distributed with the Telerik UI for {{ site.framework_name }} installer. It can be downloaded and installed as separate product from the [Visual Studio Gallery](https://marketplace.visualstudio.com/) for Visual Studio 2019 and later. 
 
-Progress Telerik UI for {{ site.framework_name }} Extension can be accessed through the __Telerik | Telerik UI for WPF__ menu in versions prior to Visual Studio 2019 and in the __Extensions | Telerik | Telerik UI for {{ site.framework_name }}__ in Visual Studio 2019. The extensions show  different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of the application as well.
+Progress Telerik UI for {{ site.framework_name }} Extension can be accessed through the __Extensions | Telerik | Telerik UI for {{ site.framework_name }}__ menu in Visual Studio. The extensions show different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of the application as well.
 
-#### Figure 1: No selected project in Visual Studio
+__No selected project in Visual Studio__  
+
 {% if site.framework_name == 'WPF' %}
 ![VSExtentions WPF Overview Menu Create](images/VSExtentions_WPF_OverviewMenuCreate.png)
 {% else %}
-![VSExtentions WPF Overview Menu Create](images/VSExtentions_SL_OverviewMenuCreate.png)
+![VSExtentions Silverlight Overview Menu Create](images/VSExtentions_SL_OverviewMenuCreate.png)
 {% endif %}
 
 {% if site.framework_name == 'WPF' %}
-#### Figure 2: Selected project in Visual Studio is Standard WPF Application
+__Selected project in Visual Studio is Standard WPF Application__  
+
 ![VSExtentions WPF Overview Menu Convert](images/VSExtentions_WPF_OverviewMenuConvert.png)
 {% else %}
-#### Figure 2: Selected project in Visual Studio is Standard Silverlight Application
-![VSExtentions WPF Overview Menu Convert](images/VSExtentions_SL_OverviewMenuConvert.png)
+__Selected project in Visual Studio is Standard Silverlight Application__  
+
+![VSExtentions Silverlight Overview Menu Convert](images/VSExtentions_SL_OverviewMenuConvert.png)
 {% endif %}
 
-#### Figure 3: Selected project in Visual Studio is Telerik Application
+__Selected project in Visual Studio is Telerik Application__  
+
 {% if site.framework_name == 'WPF' %}
 ![VSExtentions WPF Overview Menu Configure](images/VSExtentions_WPF_OverviewMenuConfigure.png)
 {% else %}
@@ -50,7 +54,8 @@ Progress Telerik UI for {{ site.framework_name }} Extension can be accessed thro
 
 When installed, the extensions add several project templates to the New Project dialog of Visual Studio.
 
-#### Figure 4: Telerik project templates
+__Telerik project templates__  
+
 {% if site.framework_name == 'WPF' %}
 ![VSExtentions WPF Overview Project Templates](images/VSExtentions_WPF_OverviewProjectTemplates.jpg)
 {% else %}
@@ -58,7 +63,28 @@ When installed, the extensions add several project templates to the New Project 
 {% endif %}
 
 {% if site.framework_name == 'WPF' %}
->These are available in the language specific nodes of the dialog as well. New Project dialog contains Telerik WPF Application under both CSharp\Windows and Visual Basic\Windows nodes.
-{% else %}
->These are available in the language specific nodes of the dialog as well. New Project dialog contains Telerik Silverlight Application under both CSharp\Silverlight and Visual Basic\Silverlight nodes.
+### Visual Studio Support
+
+<table>
+	<thead>
+		<tr>
+			<th width="33.6%">Visual Studio Version</th>
+			<th width="66.3%">Notes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td width="33.6%">Visual Studio 2019 and 2022</td>
+			<td width="66.3%">The latest version of Telerik VSX is distributed and fully supported in these versions of Visual Studio. With Q2 2024, the Telerik VSX supports .NET Framework 4.6.2 and later projects and .NET 6 and later.</td>
+		</tr>		
+		<tr>
+			<td width="33.6%">Visual Studio 2015 and 2017</td>
+			<td width="66.3%">With R1 2023 the Telerik VSX is still distributed with the product, but updates are not longer available for these versions of Visual Studio</td>
+		</tr>
+		<tr>
+			<td width="33.6%">Visual Studio 2012</td>
+			<td width="66.3%">With the Q1 2024 release, the Telerik VSX no longer supports this version of Visual Studio.</td>
+		</tr>
+	</tbody>
+</table>
 {% endif %}

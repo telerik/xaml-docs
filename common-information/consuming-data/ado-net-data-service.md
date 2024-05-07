@@ -12,7 +12,7 @@ position: 2
 
 The purpose of this tutorial is to show you how to make a call to an ADO.NET Data Service in the context of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
 
->tipYou can check our [RadDataServiceDataSource]({%slug %}) which provides seamless integration between an user interface and data coming from a WCF Data Service.
+>tip You can check the Telerik [RadDataServiceDataSource]({%slug %}) which provides seamless integration between an user interface and data coming from a WCF Data Service.
 
 * Adding a reference.
 
@@ -20,17 +20,15 @@ The purpose of this tutorial is to show you how to make a call to an ADO.NET Dat
 
 * Making {% if site.site_name == 'Silverlight' %}asynchronous{% endif %} call to the service and consuming the service result.
 
+This tutorial will use the __Northwind__ database, which can be accessed from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/v4/Northwind/Northwind.svc)
+
 >The process of developing an ADO.NET Data Service is beyond the scope of this tutorial. For more information read [here](http://msdn.microsoft.com/en-us/library/cc907912.aspx).
-
->This tutorial will use the __Northwind__ database, which can be downloaded from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/v4/Northwind/Northwind.svc)
-
->tipThe Telerik __OpenAccess__ ORM also supports excellent integration with ADO.NET Data Services.
 
 ## Adding Reference
 
 The first step is to add a new connected service to your application. In order to add the needed connected service, you will need to add the [OData Connected Service](https://marketplace.visualstudio.com/items?itemName=laylaliu.ODataConnectedService) Visual Studio extension. After adding this extension you can follow the steps below.
 
->tipThe __OData Connected Service__ tool works only with __Visual Studio 2017__.
+>tipThe __OData Connected Service__ tool works only with __Visual Studio 2017 and 2019__.
 
 #### __Figure 1: Select the "References" folder, right click with your mouse button and choose "Add Connected Service"__ 
 ![Common Consuming Data Wcf Service 010](images/Common_ConsumingDataWcfService_010.png)
@@ -74,7 +72,7 @@ Once the ADO.NET data service is added all needed assemblies will be included in
 
 __NorthwindEntities__ represents the runtime context of a given data service. While data services themselves are stateless, the context is not, so state on the client is maintained between interactions in order to support features such as identity resolution and optimistic concurrency.  
 
-## Making Asynchronous Call to the Service and Consuming the Result
+## Making a Call to the Service and Consuming the Result
 
 Making a call to an ADO.NET Data Service is a simple process. Here is a sample code, demonstrating how to load all categories from the Categories table in the Northwind database: 
 

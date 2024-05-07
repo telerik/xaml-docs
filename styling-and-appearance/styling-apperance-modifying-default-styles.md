@@ -6,6 +6,7 @@ slug: styling-apperance-modifying-default-styles
 tags: modifying,default,styles
 published: True
 position: 4
+include_in_navigation: false
 ---
 
 # Modifying Default Styles

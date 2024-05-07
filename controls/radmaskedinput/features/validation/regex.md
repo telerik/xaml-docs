@@ -12,7 +12,7 @@ position: 1
 
 ## Validating Input Through Data Annotations
 
-With the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} 4.0 platform you can take advantage of the __System.ComponentModel.DataAnnotations__ assembly. The following code snippet demonstrates how to use data annotation attributes to validate a property value. It is even better when you use __RIA services__, since this code will be automatically added for you by the __RIA Service's__ code generator.		
+With the {{ site.framework_name }} framework you can take advantage of the __System.ComponentModel.DataAnnotations__ assembly. The following code snippet demonstrates how to use data annotation attributes to validate a property value. It is even better when you use __RIA services__, since this code will be automatically added for you by the __RIA Service's__ code generator.		
 
 #### __[C#] Example 1: Creating DataAnnotationAttributesValidationViewModel class__
 {{region cs-radmaskedinput-validation-regex_0}}

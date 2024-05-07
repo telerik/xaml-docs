@@ -29,7 +29,7 @@ To change the theme, you can follow the steps below:
 	* **Telerik.Windows.Documents**
 
 {% if site.framework_name == 'WPF' %}
->If you are using the **.NET Core** version of RadRichTextBox, make sure to check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) topic for an updated list of the resources the control uses.
+>If you are using the **.NET 6** or later version of RadRichTextBox, make sure to check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) topic for an updated list of the resources the control uses.
 {% endif %}
 
 **Example 1** demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
@@ -62,6 +62,6 @@ To change the theme, you can follow the steps below:
 
  * [Getting Started]({%slug radrichtextbox-getting-started%})
  {% if site.framework_name == 'WPF' %}
- * [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%})
+ * [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%})
  {% endif %}
  * [Import/Export]({%slug radrichtextbox-features-import-export%})

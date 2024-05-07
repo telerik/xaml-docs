@@ -10,15 +10,15 @@ position: 3
 
 # Getting Started with {{ site.framework_name }} EntityFrameworkCoreDataSource
 
-This article shows how to create a sample .NET Core 3.1 application using __RadEntityFrameworkCoreDataSource__ and __RadGridView__.
+This article shows how to create a sample .NET application using __RadEntityFrameworkCoreDataSource__ and __RadGridView__.
 
-> __RadEntityFrameworkCoreDataSource__ is built on top of [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/). You should familiarize yourself with the framework before going over this tutorial.
+> __RadEntityFrameworkCoreDataSource__ is built on top of [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/). It is recommended to familiarize yourself with the framework before going over this tutorial.
 
-## Creating the WPF (.NET Core) Application
+## Creating the WPF .NET Application
 
 Start Visual Studio 2019 (or newer), select "Create a new project" and choose WPF App (.NET Core).
 
-#### __Figure 1: WPF (.NET Core) Application__
+#### __Figure 1: WPF .NET Application__
 ![{{ site.framework_name }} (.NET Core) Application](images/entityframeworkcoredatasource-create-new-project.png)
 
 ## Adding References
@@ -30,8 +30,7 @@ Before we get started, we will add the following NuGet packages.
 * __Microsoft.EntityFrameworkCore.Tools__
 
 	The required __Microsoft.EntityFrameworkCore__ version varies based on the target .NET version of the Telerik dlls.
-	
-	* __.NET Core__&mdash;EFCore version __3.1.5__
+		
 	* __.NET 6__&mdash;EFCore version __6.0.9__
 	* __.NET 7__&mdash;EFCore version __7.0.0__
 	

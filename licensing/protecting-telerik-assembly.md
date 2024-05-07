@@ -22,7 +22,7 @@ The Telerik UI for {{ site.framework_name }} suite includes a limited run-time r
 
 	The design-time assemblies are located in the __Telerik UI for WPF installation folder/Binaries/WPF40/design__ folder.
 	
-	>tip The location of the design-time assemblies may vary depending on the Xaml or NoXaml binaries usage and also the .NET version of the control dlls. For example, the [NoXaml]({%slug xaml-vs-noxaml%}), .NET 4.5 design-time assemblies are located in  *Telerik UI for WPF installation folder/Binaries.NoXaml/WPF45/design*.
+	>tip The location of the design-time assemblies may vary depending on the Xaml or NoXaml binaries usage and also the .NET version of the control dlls. For example, the [NoXaml]({%slug xaml-vs-noxaml%}), .NET 4.6.2 design-time assemblies are located in  *Telerik UI for WPF installation folder/Binaries.NoXaml/WPF462/design*.
 
 * WPF applications that offer a trial or free version of Your application. __If offering a free or trial version of Your Integrated Product, redistribution of the assemblies is not permitted. You are required to protect all Telerik assemblies by using the method in the [Protecting Telerik UI Assemblies](#protecting-telerik-ui-assemblies) section of this article.__
 
@@ -181,7 +181,7 @@ If you are building the assemblies needed for one of the components depending on
 
 After enabling the assembly protection by modifying the code as shown in the previous section of this article, the source code of Telerik UI for WPF should be rebuilt. The produced DLLs can be redistributed with the final product. To see how to properly rebuild the source code, check the following documents in [the .zip file with Telerik's source](https://www.telerik.com/account/product-download?product=RCWPF):
 
-* `C:\Telerik UI for WPF Source Code\Build\BuildInstructions\Source Code Build Instructions for .NET Framework (4.0 and 4.5).rtf`
+* `C:\Telerik UI for WPF Source Code\Build\BuildInstructions\Source Code Build Instructions for .NET Framework (4.6.2).rtf`
 * `C:\Telerik UI for WPF Source Code\Build\BuildInstructions\Source Code Build Instructions for .NET.rtf`
 
 ## See Also  

@@ -19,11 +19,9 @@ For more information about which installation package you need to install, read 
 
 For more information about the system requirements, read [here]({%slug installation-system-requirements-wpf%}).
 
->tipThe latest package available for download already has all updates/HOTFIXES applied. There is no need to update it further.
+The MSI installation __will not overwrite__ previous Telerik UI for WPF installations, unless it is of the same version.
 
->tipThe MSI installation __will not overwrite__ previous Telerik UI for WPF installations, unless it is of the same version.
-
-Before installing Telerik UI for WPF on your machine, you need to download the latest MSI package.
+Before installing Telerik UI for WPF on your machine, you need to download the latest MSI package file.
 
 ## Downloading MSI Package
 
@@ -37,25 +35,25 @@ Before installing Telerik UI for WPF on your machine, you need to download the l
 
 * After downloading the UI for WPF and executing the MSI file you should see the welcome window that is shown on the next image.
 
-![Common Installing FromMSIFiles 010 WPF](images/2017_Common_InstallingFromMSIFiles_010_WPF.png)
+	![Common Installing FromMSIFiles 010 WPF](images/2017_Common_InstallingFromMSIFiles_010_WPF.png)
 
 * Click "Read License Agreement" button - the "Telerik End User License Agreement" dialog will appear. In order to continue you need to read and accept the License Agreement.
 
-![Common Installing FromMSIFiles 020 WPF](images/2017_Common_InstallingFromMSIFiles_020_WPF.png)
+	![Common Installing FromMSIFiles 020 WPF](images/2017_Common_InstallingFromMSIFiles_020_WPF.png)
 
 * After reading the License Agreement, click "OK" and then "I Agree - Continue".
 
-The next dialog gives you the ability to choose the setup type that best suits your needs. You can either install all Telerik Components or choose which features to install. The second option is recommended for advanced users. 
+	The next dialog gives you the ability to choose the setup type that best suits your needs. You can either install all Telerik Components or choose which features to install. The second option is recommended for advanced users. 
 
-![Common Installing FromMSIFiles 025 WPF](images/2017_Common_InstallingFromMSIFiles_025_WPF.png)
+	![Common Installing FromMSIFiles 025 WPF](images/2017_Common_InstallingFromMSIFiles_025_WPF.png)
 
-Choose the "Customize" option. The next dialog gives you the ability explicitly to choose the you want features to be installed.
+	Choose the "Customize" option. The next dialog gives you the ability explicitly to choose the you want features to be installed.
 
-![Common Installing FromMSIFiles 030 WPF](images/2017_Common_InstallingFromMSIFiles_030_WPF.png)
+	![Common Installing FromMSIFiles 030 WPF](images/2017_Common_InstallingFromMSIFiles_030_WPF.png)
 
-You have the ability to choose the installation location. The default location is __C:\Program Files (x86)\Progress\__(where C:\ is the drive where your Windows installation folder is located).
+	You have the ability to choose the installation location. The default location is __C:\Program Files (x86)\Progress\__(where C:\ is the drive where your Windows installation folder is located).
 
->Once choosing the installation location, the wizard will create the necessary virtual folders.
+	>Once choosing the installation location, the wizard will create the necessary virtual folders.
 
 * Click "OK".
 

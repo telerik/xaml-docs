@@ -13,7 +13,7 @@ site_name: WPF
 
 This article shows how to convert a standard WPF project to a Telerik WPF project.
 
-Progress Telerik UI for WPF Extension's __Convert Project Wizard__ could be accessed through the Telerik menu when you need to convert an existing WPF application to a Telerik WPF application.
+Progress Telerik UI for WPF Extension's __Convert Project Wizard__ could be accessed through the Visual Studio's _Extension__ menu when you need to convert an existing WPF application to a Telerik WPF application.
 
 ![VSExtentions WPF Overview Menu Convert](images/VSExtentions_WPF_OverviewMenuConvert.png)
 
@@ -27,33 +27,21 @@ The wizard’s first page lets you:
 
 * Select a Telerik UI version from the list of versions detected on your system
 
-* Download the latest versions available on our website using the __GET LATEST__ button
+* Download the latest versions available on our website using the __GET LATEST__ button. The button will be available only when there is a newer version released on our web site.
 
 * Specify which assemblies your project would use. When selecting a Telerik UI for WPF assembly all dependent controls are selected automatically and vice-versa.
 
->GET LATEST button is available only when there is a newer version released on our web site.
-<!-- -->
-
->If you prefer the Telerik assemblies to be copied into your solution folder, the **Copy referenced assemblies to solution and source control** option could be selected *only* into the [Visual Studio Extensions Options]({%slug radcontrols-vs-extensions-options%}).
-<!-- -->
+If you prefer the Telerik assemblies to be copied into your solution folder, the **Copy referenced assemblies to solution and source control** option could be selected *only* into the [Visual Studio Extensions Options]({%slug radcontrols-vs-extensions-options%}).
   
->The Convert Project Wizard’s second page is only available if you use theming based on implicit styles. ([more information]({%slug styling-apperance-implicit-styles-overview%}))        
-
-Through the Convert Project Wizard’s second page you can:
+The Convert Project Wizard’s second page is only available if you use theming based on [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). 
 
 ![VSExtensions WPF Project Config Wizard Step 2](images/VSExtensions_WPF_ProjectConvert_Themes.png)      
 
-* Select which theme will be applied to your project. Check the content of each theme or see the preview of it when select it into the Convert Project:            
-
-When you click the Finish button:        
-
-* The selected assembly references get added to your project         
-
-* A default application-wide theme gets set if you use theming based on implicit styles.
+The second page of the Convert Project Wizard’s lets you select which theme will be applied to your project. When you click the Finish button, the selected assembly references get added to your project and the default application-wide theme gets set.
 
 ## Convert Project from XAML to NoXAML or Vice Versa
 
-When converting a project from __XAML to NoXAML (or vice-versa),__ you need first to remove all __Telerik__ references from the project. Then you can right-click on the project and launch the Convert Wizard. The final step is to select the assemblies that you need in your project.
+When converting a project from [XAML to NoXAML]({%slug xaml-vs-noxaml%}) (or vice-versa),__ you need first to remove all __Telerik__ references from the project. Then you can right-click on the project and launch the Convert Wizard. The final step is to select the assemblies that you need in your project.
 
 ## See Also  
  * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})

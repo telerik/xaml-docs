@@ -59,5 +59,4 @@ To manually add Telerik UI for WPF to the Visual Studio Toolbox, follow the step
 
 ## See Also
  * [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%})
- * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%})
- * [Using IntelliSense in Visual Studio]({%slug installation-adding-application-using-intellisense-vs%})
+ * [Namespace Declaration]({%slug installation-adding-application-namespace-declaration%}) 

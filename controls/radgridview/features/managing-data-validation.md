@@ -54,10 +54,6 @@ RadGridView exposes a property - ValidatesOnDataErrors - that controls the way t
 
 * __Default__: This is the default value. It combines the two previous ones - InViewMode | InEditMode. 
 
-{% if site.site_name == 'WPF' %}
->*Telerik.Windows.Data.INotifyDataErrorInfo* interface was created for WPF 4.0. version since *System.ComponentModel.INotifyDataErrorInfo* was available for Silverlight only. If using WPF 4.5, please reference *System.ComponentModel.INotifyDataErrorInfo* instead.
-{% endif %}
-
 ## Setting the Validation Type
 
 In __R2 2016__, Telerik introduced the __ValidationType__ property of RadGridView. It provides you with the possibility to choose what type of validation to apply for each instance of RadGridView. It is a __Flags Enumeration__ and can take the following values:

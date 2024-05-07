@@ -65,7 +65,26 @@ __Telerik project templates__
 {% if site.framework_name == 'WPF' %}
 ### Visual Studio Support
 
-| Visual Studio 2012 | Visual Studio 2015 and 2017 | Visual Studio 2019 and 2022 |
-| ------------------ | --------------------------- | --------------------------- |
-| With the Q1 2024 release, the Telerik VSX no longer supports this version of Visual Studio. | With R1 2023 the Telerik VSX is still distributed with the product, but updates are not longer available for these versions of Visual Studio | The latest version of Telerik VSX is distributed and fully supported in these versions of Visual Studio. With Q2 2024, the Telerik VSX supports .NET Framework 4.6.2 and later projects and .NET 6 and later.
+<table>
+	<thead>
+		<tr>
+			<th width="33.6%">Visual Studio Version</th>
+			<th width="66.3%">Notes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td width="33.6%">Visual Studio 2019 and 2022</td>
+			<td width="66.3%">The latest version of Telerik VSX is distributed and fully supported in these versions of Visual Studio. With Q2 2024, the Telerik VSX supports .NET Framework 4.6.2 and later projects and .NET 6 and later.</td>
+		</tr>		
+		<tr>
+			<td width="33.6%">Visual Studio 2015 and 2017</td>
+			<td width="66.3%">With R1 2023 the Telerik VSX is still distributed with the product, but updates are not longer available for these versions of Visual Studio</td>
+		</tr>
+		<tr>
+			<td width="33.6%">Visual Studio 2012</td>
+			<td width="66.3%">With the Q1 2024 release, the Telerik VSX no longer supports this version of Visual Studio.</td>
+		</tr>
+	</tbody>
+</table>
 {% endif %}

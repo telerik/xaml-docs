@@ -65,13 +65,9 @@ This help article covers the specific events exposed by the __RadDocking__ contr
 
 * __ElementLoaded__: Raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is loaded. The passed event argument is of type __LayoutSerializationEventArgs__.
 
-* __ElementSaving__: Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be saved. The passed event argument is of type __LayoutSerializationEventArgs__.
-
 * __ElementLayoutSaving__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts saving. The passed event argument is of type __LayoutSerializationSavingEventArgs__. Element layout saving can be canceled by setting the __Cancel__ property from the event arguments.
 
 * __ElementSaved__: Raised after a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is saved. The passed event argument is of type __LayoutSerializationEventArgs__.
-
-* __ElementCleaning__: Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) is about to be cleaned. The passed event argument is of type __LayoutSerializationEventArgs__.
 
 * __ElementLayoutCleaning__ (introduced with R2 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% else %}Silverlight{% endif %}) - Raised when a docking element (__Pane__, __PaneGroup__ or __SplitContainer__) starts cleaning up. The passed event argument is of type __LayoutSerializationCleaningEventArgs__. Element layout cleaning can be canceled by setting the __Cancel__ property from the event arguments.
 

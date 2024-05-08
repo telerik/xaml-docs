@@ -1,27 +1,17 @@
 ---
-title: Changes and Backward Compatibility
-page_title: Changes and Backward Compatibility
-description: Check our &quot;Changes and Backward Compatibility&quot; documentation article for the DragDropManager {{ site.framework_name }} control.
+title: Breaking Changes
+page_title: Breaking Changes
+description: Check our &quot;Breaking Changes&quot; documentation article for the DragDropManager WPF control.
 slug: dragdropmanager-changes-and-backward-compatibility
-tags: changes,and,backward,compatibility
+tags: changes, compatibility, breaking changes
 published: True
 position: 1
 ---
 
-# Changes and Backward Compatibility
+# Breaking Changes
 
-This article describes the release history of the control.
+This article describes the breaking changes history of the DragDropManager control.
 
-## Latest Release Notes
+To see the fixes and features included in our latest official release please refer to our [Release History](http://www.telerik.com/support/whats-new/wpf/release-history).
 
-You can check the latest Release Notes {% if site.site_name == 'Silverlight' %}[ here.](http://www.telerik.com/products/silverlight/whats-new/release_notes.aspx){% endif %}{% if site.site_name == 'WPF' %}[ here.](http://www.telerik.com/products/wpf/whats-new/release-history.aspx){% endif %}
-
-## Telerik DragDropManager Q2 2011
-
-Introduced new drag drop framework with API similar to .NET build-in with the extended drag abilities:
-
-* Out of the box drag between applications/windows (WPF)
-
-* Rich event model for controlling the drag process
-
-* Improved support in specific scenarios – Popups, Docking, etc.
+* The `DragDropManager.TouchDragTrigger` attached property and the `TouchDragTrigger` enumeration are omitted. Use the `DragDropManager.DragStartTrigger`attached property and the `TouchDragStartTrigger` enumeration instead. 

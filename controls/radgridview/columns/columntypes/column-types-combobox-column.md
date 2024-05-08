@@ -14,8 +14,6 @@ The`GridViewComboBoxColumn` column derives from [GridViewBoundColumnBase]({%slug
 
 >tip Typing on the keyboard in GridViewComboBoxColumn will point to the first item starting with the same character.
 
->important  __IsLightweightModeEnabled__ - introduced in __R2 2016__. Setting this property to __True__ is recommended when the __DataMemberBinding__ of the column is not a nested property. Its default value is __False__. When set to __True__, the new lightened lookup logic is triggered, thus the performance of GridViewComboBoxColumn is significantly increased. If the column`s DataMemberBinding is a nested property, the value of __IsLightweightModeEnabled__ is not respected.
-
 Here is a list of the most important properties:
 
 * `DataMemberBinding`&mdash;you should specify the property of the bound business object to relate to `SelectedValueMemberPath` from column's ItemsSource. 
@@ -162,6 +160,17 @@ The multi-column ComboBoxColumn in this example will have two columns showing th
 __Multi-select GridViewColumnComboBox column in RadGridView__
 
 ![MultiColumnComboBox Column in RadGridView - Telerik's WPF DataGrid](images/gridview_multi_column_combo.png)
+
+## Utilizing the IsLightweightModeEnabled Mode
+
+The GridViewComboBoxColumn column exposes the `IsLightweightModeEnabled` property that will allow you to use a different lookup strategy. This will increase the performance of the column, which will result in improved performance of the RadGridView or RadTreeListView control. To enable this mode, set the IsLightweightModeEnabled property to __True__.
+
+>tip For the best scrolling performance, utilize the `ItemsSource` property and the `DataMemberBinding` property has to be bound to a __primitive type__ property.
+
+#### __[XAML] Enabling the lightweight mode__
+{{region xaml-radgridview-columns-column-types-combobox-column_13}}
+	<telerik:GridViewComboBoxColumn IsLightweightModeEnabled="True"/>
+{{endregion}}
 
 ## See Also
  * [Binding GridViewComboBoxColumn by using the EnumDataSource utility]({%slug consuming-data-enumdatasource%})

@@ -260,8 +260,6 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 
 * __BringPathIntoView(string path)__: The *path* parameter is the path of the __RadTreeViewItem__ that you want to bring into the view. 
 	
-	>tip Since Q3 2013, the tree will try to bring the item on the top of the viewport.
-	
 	#### __[C#] Example 7: Bring the RadTreeViewItem by its path on the top of the viewport__
 	{{region radtreeview-features-treeviewitem-bring-into-view-support_9}}
 		string path = "Item 10\\Item 10.1";
@@ -296,6 +294,8 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 	#### __Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__
 	![{{ site.framework_name }} RadTreeView The item is positioned with 100 pixels offset from the top of the viewport](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
 
+	> When the UI virtualization of RadTreeView is enabled, the brought item may not be positioned at the top of the viewport due to specifics of the virtualization mechanism. This means that the offset may not behave as expected. In such cases, you can manually update the scroll position as described in the [following KB article]({%slug kb-treeview-bringpathintoview-offset-virtualization%}).
+ 
 >tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in the [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%}) help article in our documentation.		
 
 ## See Also

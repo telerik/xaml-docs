@@ -5,7 +5,7 @@ description: Check how you can upgrade your Trial assemblies to Telerik UI Devel
 slug: installation-upgrading-from-trial-to-developer-license-wpf
 tags: upgrading,telerik,ui,trial,to,telerik,ui,developer,license,or,newer,version
 published: True
-position: 1
+position: 0
 site_name: WPF
 ---
 

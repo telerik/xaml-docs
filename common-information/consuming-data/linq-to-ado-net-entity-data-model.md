@@ -30,22 +30,26 @@ The purpose of this article is to show you how to use __LINQ__ against __ADO.NET
 
 You can take advantage of the **Visual Studio Entity Data Model Wizard** to generate an Entity Data Model from the Northwind database automatically.
 
-To do so, follow these steps:
-
 1. Right-click on your project in the Solution Explorer window and select the menu option **Add -> New Item**.
-![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_1.png)
+	
+	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_1.png)
 
 2. In the **Add New Item** dialog, select the **Data** category. Select the **ADO.NET Entity Data Model** template, give the Entity Data Model the name Northwind.edmx, and click the **Add** button. Clicking the **Add** button launches the **Data Model Wizard**.
-![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_2.png)
+	
+	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_2.png)
 
 3. In the **Choose Model Contents** step, choose the **EF Designer from Database** option and click the Next button.
-![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_3.png)
+	
+	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_3.png)
 
 4. In the **Choose Your Data Connection** step, select the Northwind.mdf database connection, enter the entities connection settings name NorthwindEntities, and click the Next button.
-![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_4.png)
+	
+	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_4.png)
 
 5. In the **Choose Your Database Objects and Settings** step, select the desired database tables, specify the model namespace and click the **Finish** button.
-![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_5.png)
+
+	![Telerik {{ site.framework_name }} LINQ to ADO.NET Entity Data Model 1](images/common_information_linq_ado.net_5.png)
+	
 ## Query an Entity from the Database
 
 The code in __Example 1__ shows how to use LINQ query syntax to retrieve an __IEnumerable__ sequence of __Product__ objects.
@@ -217,8 +221,5 @@ __Example 5__ shows you how to implement efficient server-side database paging. 
 {{endregion}}
 
 ## See Also  
-{% if site.site_name == 'WPF' %} 
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
-{% else %}
- * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})
-{% endif %}
+

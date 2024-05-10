@@ -28,10 +28,9 @@ In short, the __Telerik Upgrade API Analyzer__ tool will help you with the upgra
 
 **Telerik Upgrade API Analyzer** is a **ClickOnce** application that can be downloaded from our website. [Download the Upgrade API Analyzer](https://demos.telerik.com/UpgradeAPIAnalyzer/setup.exe).
 
->The tool relies on **Microsoft .NET Framework 4.5.2** and if you haven’t got the framework on your machine, the setup of the tool installs it automatically.
+>The tool relies on **Microsoft .NET Framework 4.7.2** and if you haven’t got the framework on your machine, the setup of the tool installs it automatically.
 
 ## How Do You Use The Tool?
-
 
 Running the __Telerik Upgrade API Analyzer__ opens the screen shown in __Figure 1__.
 
@@ -50,7 +49,7 @@ All you need to do is:
 
 4. Open the solution you’re planning to upgrade.  
 
->tipYou can also run the Telerik Upgrade API Analyzer from the [Upgrade Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}), by clicking the *Compatibility* button (see **Figure 2**). In this case, the tool opens with *Technology*, *Your Version* and *Version to Upgrade* parameters pointed out in the wizard. When Upgrade API Analyzer is started directly through the *Compatibility* button without installing the tool first, the installation starts automatically. In case .NET Framework 4.5.2 is not present on your machine, the application prompts you to install it manually at the end of the installation.
+>tipYou can also run the Telerik Upgrade API Analyzer from the [Upgrade Project Wizard]({%slug radcontrols-for-wpf-vs-extensions-upgrading%}), by clicking the *Compatibility* button (see **Figure 2**). In this case, the tool opens with *Technology*, *Your Version* and *Version to Upgrade* parameters pointed out in the wizard. When Upgrade API Analyzer is started directly through the *Compatibility* button without installing the tool first, the installation starts automatically. In case .NET Framework 4.7.2 is not present on your machine, the application prompts you to install it manually at the end of the installation.
 
 #### __Figure 2: Compatibility button in Upgrade Project Wizard__
 ![{{ site.framework_name }} Compatibility button in Upgrade Project Wizard](images/upgrade-api-analyzer_5.png)

@@ -14,9 +14,9 @@ Once you have the controls [working in your project]({%slug getting-started-firs
 
 ## Demos
 
-To get an overview of what each control offers, the fastest approach is to go to our [Live Demos](http://demos.telerik.com/wpf).
+To get an overview of what each control offers, the fastest approach is download the [WFP Demos Application](http://demos.telerik.com/wpf).
 
-You can also [download the source code of the demo application]({%slug download-product-files-wpf%}) from your telerik.com account as a Visual Studio project and play around with the demos in the comfort of your IDE. The `Telerik_UI_for_WPF_[version]_Demos.zip` archive contains the respective source code.
+You can also [download the source code of the demo application]({%slug installing-wpf-demos%}#getting-the-source-code) from your [telerik.com account](https://www.telerik.com/account/downloads/product-download?product=RCWPF) as a Visual Studio project and play around with the demos in the comfort of your IDE. The `Telerik_UI_for_WPF_[version]_Demos.zip` archive contains the respective source code.
 
 ## Explore properties and tags
 

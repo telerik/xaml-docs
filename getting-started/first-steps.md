@@ -24,15 +24,15 @@ The easiest way to get the controls to your development machine is to use the [P
 
 ![Download automated installer Telerik_UI_for_WPF_<version>_Dev.msi](images/download-msi.png "Telerik_UI_for_WPF_<version>_Dev.msi")
 
-> If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/download-trial-file/v2-b/ui-for-wpf) and the same options will apply to you as well.
+> If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/try/ui-for-wpf) and the same options will apply to you as well.
 
->tip The following article can help you choose the installation type that is most suitable for your needs and preferences: [Which File Do I Need to Install]({%slug installation-installing-which-file-do-i-need%}).
+>tip The following article can help you choose the installation type that is most suitable for your needs and preferences: [Installation Approaches]({%slug installation-installing-which-file-do-i-need%}).
 
 ## Creating Application with Telerik Visual Studio Extensions
 
 The easiest way to create a Telerik UI for WPF project is to use **Visual Studio Extensions** which are distributed with the Telerik UI for WPF installer.
 
-The Visual Studio Extensions can be accessed through the Telerik | Telerik UI for WPF menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a WPF Application as well.
+The Visual Studio Extensions can be accessed through the Extensions | Telerik | Telerik UI for WPF menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a WPF Application as well.
 
 1. Open [Microsoft Visual Studio]({%slug installation-system-requirements-wpf%}).
 

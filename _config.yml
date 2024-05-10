@@ -95,6 +95,8 @@ navigation:
     knowledge-base:
         position: 10
 ## X3 Controls Start
+    controls/radaiprompt:
+        title: RadAIPrompt
     controls/radsvgimage:
         title: RadSvgImage
     controls/radhighlighttextblock:
@@ -3282,6 +3284,11 @@ defaults:
         title_prefix: "WPF DragDropManager"
 -
     scope:
+        path: "controls/radaiprompt"
+    values:
+        title_prefix: "WPF AIPrompt"
+-
+    scope:
         path: "controls/radautocompletebox"
     values:
         title_prefix: "WPF AutoCompleteBox"
@@ -3942,6 +3949,7 @@ intro_columns:
   -
     title: "Interactivity & UX"
     items:
+      "AIPrompt": "radaiprompt-overview"
       "Badge": "radbadge-overview"
       "BusyIndicator": "radbusyindicator-overview"
       "Callout": "radcallout-overview"

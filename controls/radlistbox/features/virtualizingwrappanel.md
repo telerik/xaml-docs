@@ -18,15 +18,13 @@ This article will describe the [VirtualizingWrapPanel](https://docs.telerik.com/
 * __ItemWidth__: Gets or sets a value that specifies the Width of all items that are contained within a VirtualizingWrapPanel.
 * __ScrollStep__: Gets or sets a value for the amount that will be scrolled when using the mouse wheel or the scrollbar buttons (Not supported when grouping is enabled).
 
-> Scrolling with the __Page up__ and __Page down__ keys and navigating with the __Left__ and __Right__ arrow keys is not supported when grouping is enabled. 
+	> Scrolling with the __Page up__ and __Page down__ keys and navigating with the __Left__ and __Right__ arrow keys is not supported when grouping is enabled. 
 
-The VirtualizingWrapPanel also suports the following attached properties from the [VirtualizingPanel](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.virtualizingpanel?view=netframework-4.8) class for __.Net 4.5__ and above:
-
-* __VirtualizingPanel.ScrollUnit__ : The possible values are __Pixel__ (the scrolling is pixel based) and __Item__ (the scrolling is item based). (When grouping is enabled, only __Pixel__ is supported).
+* __VirtualizingPanel.ScrollUnit__ : The possible values are __Pixel__ (the scrolling is pixel based) and __Item__ (the scrolling is item based). (When grouping is enabled, only __Pixel__ is supported). The default value is __Item__.
 * __VirtualizingPanel.IsVirtualizingWhenGrouping__ : Set this property to __True__ to enable virtualizing when grouping. 
 * __VirtualizingPanel.VirtualizationMode__: Specifies the method the panel will use to manage virtualizing its child items. The possible values are __Standard__ (create and discard the item containers) and __Recycling__ (reuse the item containers).
 
->important Since the __R3 2019__ version, the __VirtualizingPanel.ScrollUnit__ property is respected for __.Net 4.5__ and above. Its default value is __Item__, which means that the default scrolling will be by item. In order to have pixel based scrolling you can set this property to __Pixel__.
+	The ScrollUnit, IsVirtualizingWhenGroupinga and VirtualizationMode properties are available in .NET 4.6.2 and later.
 
 ## VirtualizingWrapPanel
 
@@ -213,7 +211,7 @@ __Example 3__ demonstrates how you can apply grouping to the data by setting the
 
 ## Grouping and Virtualization
 
-Since the __R3 2019__ version of __UI for WPF__ the VirtualizingWrapPanel supports virtualization when the data is grouped. This feature is only available for __.Net 4.5__ and above.
+The VirtualizingWrapPanel supports virtualization when the data is grouped. This feature is only available for __.NET 4.6.2__ and above.
 
 In order to turn on this feature, you have to set the __VirtualizingPanel.IsVirtualizingWhenGrouping__ attached property to __True__.
 

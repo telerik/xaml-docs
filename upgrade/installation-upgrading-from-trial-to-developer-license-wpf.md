@@ -5,7 +5,7 @@ description: Check how you can upgrade your Trial assemblies to Telerik UI Devel
 slug: installation-upgrading-from-trial-to-developer-license-wpf
 tags: upgrading,telerik,ui,trial,to,telerik,ui,developer,license,or,newer,version
 published: True
-position: 1
+position: 0
 site_name: WPF
 ---
 
@@ -31,7 +31,7 @@ In order to manually upgrade your controls to a newer version of the suite, you 
 
 	* [ZIP file for manual (advanced) installation]({%slug installation-installing-from-zip-wpf%})
 
-* If the upgrade is major (i.e. from Q1 2024 to Q2 2024), check the [Release History](http://www.telerik.com/products/wpf/whats-new.aspx) to see if there are any major changes. You can also run the [API Analyzer Tool]({%slug upgrade-api-analyzer%}) to check for any breaking changes.
+* If the upgrade is major (i.e. from Q1 2024 to Q2 2024), check the [Release History](https://www.telerik.com/support/whats-new/wpf) to see if there are any major changes. You can also run the [API Analyzer Tool]({%slug upgrade-api-analyzer%}) to check for any breaking changes.
 
 * Back up your application.
 
@@ -55,8 +55,6 @@ Alternatively, if a previous version is detected, you will observe the following
 
 ![Common Installing Already Installed WPF](images/Common_Installing_PreviousVersionInstalled_WPF.png)
 
->If you agree to this prompt and the newly-installed version is a service pack, it will be installed in the same folder as the major release.
-
 ## Checking the Assemblies' Version
 
 To check what type of license the binaries you're using have, you can check the **Properties** of the **Telerik.Windows.Controls.dll** file. **Only this file** contains information for the dlls version in its metadata. To get this information use the following steps:
@@ -68,7 +66,7 @@ To check what type of license the binaries you're using have, you can check the 
 #### Figure 1: Telerik.Windows.Controls.dll Properties
 ![Telerik.Windows.Controls.dll Properties](images/Common_Installing_TrialVersionDescription_WPF.png)
           
-If your dll files contain this suffix in the description then they are of the Trial version and you have to replace them with Development assemblies.
+If your dll files contain this suffix in the description then they are of the Trial version and you have to replace them with the licensed assemblies.
 
 ## Updating NuGet Packages
 

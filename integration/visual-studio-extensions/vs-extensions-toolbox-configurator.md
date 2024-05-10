@@ -21,6 +21,3 @@ After running the Toolbox Configurator it shows the version of the currently ins
 When the Finish button is clicked Visual Studio will be restarted so that the changes can take effect.
 
 >The Toolbox Configurator will overwrite the toolbox registration performed during installation. Additionally, after configuring the toolbox, the 'Add References' dialog will suggest Telerik assemblies from the selected distribution only and you will see the selected controls in the Toolbox | Choose Items context menu.        
-
->tip The __Toolbox Configurator__ is supported in Visual Studio 2010, 2012, 2013, 2015, 2019 and 2022.
-

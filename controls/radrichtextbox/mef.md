@@ -12,13 +12,11 @@ position: 16
 
 `RadRichTextBox` uses the [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx) in order to provide customization options, such as creating and utilizing custom dialogs and pop-ups, format providers and dictionaries for spellchecking. It finds and loads the types from the assemblies and they can be used without being explicitly initialized.
 
-## .Net Core and Later Versions Specifics
-
-
+## .Net 6  and Later Versions Specifics
 
 The content of this article is applicable only to the __RadRichTextBox for .NET Framework__ and later versions. The __.NET Core__ and later versions as they do not support MEF.
 
-Replacing the RadRichTextBox tools, such as the `SelectionMiniToolBar` using custom attributes is not supported when using the control in a .NET Core and above project. Instead, you can use the corresponding properties of the control to apply the customization options.
+Replacing the RadRichTextBox tools, such as the `SelectionMiniToolBar` using custom attributes is not supported when using the control in a .NET 6 and above project. Instead, you can use the corresponding properties of the control to apply the customization options.
 
 #### __[C#] Replacing RadRichTextBox tools with custom ones__
 {{region radrichtextbox-mef-0}}
@@ -241,6 +239,5 @@ All the dictionaries for the spell checking functionality are loaded with MEF. Y
 			documentSpellChecker.AutomaticallyLoadDefaultDictionaries = false;
 		{{endregion}}
 
-## See also 
-
-* [Performance]({%slug radrichtextbox-performance%})
+## See also  
+*[Performance]({%slug radrichtextbox-performance%})

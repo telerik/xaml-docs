@@ -25,7 +25,7 @@ The protocol can be changed to HTTPS by setting the static `ProtocolHelper.UseHt
 
 Enabling the HTTPS protocol will also redirect the Bing logging service to use HTTPS. Additionally, all providers, except Bing, will require you to change also the default security protocol. This is done via the `ServicePointManager.SecurityProtocol` property. 
 
-#### __[C#] Set the security protocol in .NET 4.5 and later__
+#### __[C#] Set the security protocol__
 {{region radmap-providers-https-support-1}}
 	public MainWindow()
 	{
@@ -35,6 +35,8 @@ Enabling the HTTPS protocol will also redirect the Bing logging service to use H
 		InitializeComponent();
 	}
 {{endregion}}
+
+In case you are using an older version of Telerik UI for WPF that targets .NET 4.0, use the following setting:
 
 #### __[C#] Set the security protocol in .NET 4__
 {{region radmap-providers-https-support-0}}

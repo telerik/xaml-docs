@@ -19,143 +19,81 @@ This help article will show you how to set a built-in theme to Telerik UI for WP
 
 * [Setting Application-Wide Built-in Theme in the Code-Behind](#setting-application-wide-built-in-theme-in-the-code-behind)
 
-Telerik's __WPF controls__ support the following themes:      
+See the Telerik themes in the [Avilable Themes]({%slug common-styling-appearance-available-themes%}) article.
 
-* __Office_Black__
-* __Office_Blue__
-* __Office_Silver__
-* __Expression_Dark__
-* __Summer__
-* __Vista__
-* __Windows7__
-* __Transparent__
-* __Windows8__
-* __Windows8Touch__
-* __Office2016__
-* __Office2016Touch__
-* __Office2013__
-* __Office2019__
-* __VisualStudio2013__
-* __VisualStudio2019__
-* __Green__
-* __Material__
-* __Fluent__
-* __Crystal__
+In order to use one of the themes with the StyleManager you need to add references to the Telerik assemblies in your WPF project. You can find more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.
 
->The __Silverlight themes__ are located in separate assemblies so that the size of the control assembly is optimized (smaller). The __WPF themes__ are embedded in the control assemblies.
+## Setting a Theme per Control
 
->important With **Q1 2014** the **Themes** folder, containing the standard themes used with StyleManager, is not provided in the installation package anymore. They can be separately downloaded from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} download page in your [Telerik account](http://www.telerik.com/account.aspx).        
+In order to change the theme of a single control in XAML you need to set the `StyleManager.Theme` attached property.
 
-In order to use one of the themes with the StyleManager you need to create a new WPF application or open an existing one and add a references to the assemblies with the desired Telerik __WPF controls__.
-
->You can find more information about the control dependencies in the [Control Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) topic.        
-
-You are now ready to apply the themes to either a single control or for all controls in your application scope.
-
->The following examples use the __Vista__ theme.        
-
-## Setting Instance-Specific Built-in Theme in XAML
-
-In order to change the theme of a single control in XAML you have to declare a resource of type __Theme__ and set an appropriate key. To complete this procedure, follow the instructions below.        
-
-1. Open the user control that hosts your control. 
-
-2. Declare one of the Telerik WPF controls and set the attached property __StyleManager.Theme__ value to __Vista__.        
-
-3. After executing all steps your code should be similar to __Example 1__.        
-
-#### __[XAML] Example 1: Changing the theme of a RadSlider to Vista in XAML__  
-{{region common-styling-apperance-setting-theme-wpf_0}}
-	<UserControl x:Class="Test.SampeControl"
-	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	    xmlns:telerikControls="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls">
-	    <Grid>	
-	        <telerikControls:RadSlider x:Name="radSlider"
-	            telerikControls:StyleManager.Theme="Vista"/>
-	
-	    </Grid>
-	</UserControl>
+#### __[XAML] Changing the theme of a RadSlider to Windows11 in XAML__  
+{{region common-styling-apperance-setting-theme-wpf_0}}	
+	<telerikControls:RadSlider telerikControls:StyleManager.Theme="Windows11"/>	
 {{endregion}}
 
-## Setting Instance-Specific Built-in Theme in the Code-Behind
+The following example shows how to change the theme of a single control in code-behind. 
 
-You can also choose to change the theme for the Telerik WPF controls in code-behind. To achieve this follow the brief steps described below.        
+#### __[C#] Changing the theme of a RadSlider to Windows11 in code__  
+{{region common-styling-apperance-setting-theme-wpf_1}}
+	StyleManager.SetTheme(this.radSlider, new Windows11Theme() );
+{{endregion}}
 
-1. Open your user control.        
+#### __[VB.NET] Changing the theme of a RadSlider to Windows11 in code__  
+{{region common-styling-apperance-setting-theme-wpf_2}}
+	StyleManager.SetTheme(Me.radSlider, New Windows11Theme())
+{{endregion}}
 
-2. Make sure you have explicitly named the target control in XAML.        
+__RadSlider with Windows11 theme applied__  
 
-3. In the constructor of your user control place the following code:        
-
-	#### __[C#] Example 2: Changing the theme of a RadSlider to Vista in code__  
-	{{region common-styling-apperance-setting-theme-wpf_1}}
-		StyleManager.SetTheme( radSlider, new VistaTheme() );
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: Changing the theme of a RadSlider to Vista in code__  
-	{{region common-styling-apperance-setting-theme-wpf_2}}
-		StyleManager.SetTheme(radSlider, New VistaTheme())
-	{{endregion}}
-
-Figure 1: RadSlider with Vista theme applied
 ![Common Styling Theming Setting Built In Theme 020 WPF](images/Common_StylingThemingSettingBuiltInTheme_020_WPF.png)
 
-## Setting Application-Wide Built-in Theme in the Code-Behind
+## Setting Application-Wide Theme
 
-Changing the application theme is similar to changing the theme of single controls in WPF. However, changing the application theme has a much bigger impact as it affects all controls in the scope of your application. You should use the constructor of your application to set the desired theme. The steps below describe how to change the application theme:        
+Changing the application theme is similar to changing the theme of single controls in WPF. However, changing the application theme has a much bigger impact as it affects all controls in the scope of your application. You can use the constructor of your application or the main window to set the desired theme. 
 
-1. Open your existing application or create a new one.        
-
-2. Open __MainWindow.xaml.cs__. In this case __MainWindow.xaml.cs__ is your entry point for the application. If you wonder which is your startup window, open the __App.xaml__ file and see the __StartupUri__ attribute.  
-
-	#### __[XAML] Example 3: Setting the application's StartupUri__  
-	{{region common-styling-apperance-setting-theme-wpf_3}}
-		<Application x:Class="Test.App"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			StartupUri="Window1.xaml">
-			<Application.Resources>	
-			</Application.Resources>
-		</Application>
-	{{endregion}}
-
-3. Declare the following code __before the InitializeComponent()__ call, depending on the name of your theme as follows:        
-
-	#### __[C#] Example 4: Setting the application theme in code__  
-	{{region common-styling-apperance-setting-theme-wpf_4}}
-		StyleManager.ApplicationTheme = new VistaTheme();
-	{{endregion}}
-
-	#### __[VB.NET] Example 4: Setting the application theme in code__  
-	{{region common-styling-apperance-setting-theme-wpf_5}}
-		StyleManager.ApplicationTheme = New VistaTheme()
-	{{endregion}}
-
-4. After properly executing the steps your __MainWindow__ class should be similar to __Example 2__.  
-
-	#### __[C#] Example 5: Set application-specific theme__  
-	{{region common-styling-apperance-setting-theme-wpf_6}}
-		public partial class Window1 : Window
+#### __[C#] Set application-specific theme in the MainWindow constructor__  
+{{region common-styling-apperance-setting-theme-wpf_3}}
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
 		{
-			public Window1()
-			{
-				StyleManager.ApplicationTheme = new VistaTheme();
-				InitializeComponent();
-			}
+			StyleManager.ApplicationTheme = new Windows11Theme();
+			InitializeComponent();
 		}
-	{{endregion}}
+	}
+{{endregion}}
 
-	#### __[VB.NET] Example 5: Set application-specific theme__  
-	{{region common-styling-apperance-setting-theme-wpf_7}}
-		Public Partial Class Window1
-			Inherits Window
-			Public Sub New()
-				StyleManager.ApplicationTheme = New VistaTheme()
-				InitializeComponent()
-			End Sub
-		End Class
-	{{endregion}}
+#### __[VB.NET] Set application-specific theme in the MainWindow constructor__  
+{{region common-styling-apperance-setting-theme-wpf_4}}
+	Public Partial Class MainWindow
+		Inherits Window
+		Public Sub New()
+			StyleManager.ApplicationTheme = New Windows11Theme()
+			InitializeComponent()
+		End Sub
+	End Class
+{{endregion}}
+
+#### __[C#] Set application-specific theme in the App constructor__  
+{{region common-styling-apperance-setting-theme-wpf_5}}	
+	public App()
+	{
+		StyleManager.ApplicationTheme = new Windows11Theme();
+		InitializeComponent();
+	}
+{{endregion}}
+
+#### __[VB.NET] Set application-specific theme in the App constructor__  
+{{region common-styling-apperance-setting-theme-wpf_6}}
+	Public Class App
+		Inherits Application
+		Public Sub New()
+			StyleManager.ApplicationTheme = New Windows11Theme()
+			InitializeComponent()
+		End Sub
+	End Class
+{{endregion}}
 	
 ## See Also
  * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

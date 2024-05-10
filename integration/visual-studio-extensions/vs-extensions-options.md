@@ -12,7 +12,7 @@ position: 8
 
 __Progress Telerik UI for {{ site.framework_name }} Extension__ options dialog provides settings, so you can configure the extension to best suit your needs.
 
-It can be accessed through the __Visual Studio | Telerik | VSExtensions Options…__ menu.
+It can be accessed through the __Visual Studio | Extensions | Telerik | UI for WPF | Options__ menu.
 
 ![VSExtentions Options Dialog Menu](images/VSExtentions_OptionsDialogMenu.png)
 

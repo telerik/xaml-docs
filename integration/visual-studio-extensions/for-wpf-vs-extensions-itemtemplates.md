@@ -12,6 +12,8 @@ position: 5
 
 Since the __R1 2020__ version of the Progress Telerik UI for WPF Extension, item templates for creating a new UserControls are available. They allow you to quickly setup Telerik controls in your existing projects. Follow these steps in order to add an item template.
 
+> This feature is availbale only for .NET Framework projects.
+
 1. Right-click on your project, and select __Add__ -> __New Item__.
 
     ![VSExtentions WPF Scenario Wizard Menu 2](images/extensions_wpf_add_item_template.png)

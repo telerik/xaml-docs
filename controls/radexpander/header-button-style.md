@@ -5,7 +5,7 @@ description: This article will show you how to customize the header button style
 slug: radexpander-features-header-button-style
 tags: button style, header button, expander, expander button
 published: True
-position: 3
+position: 2
 ---
 
 # HeaderButtonStyle

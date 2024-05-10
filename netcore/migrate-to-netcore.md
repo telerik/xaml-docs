@@ -31,24 +31,12 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NET+version number*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
 	
 	#### Figure 3: Checking if a Telerik assembly is built against .NET  
-	![{{ site.framework_name }} Checking if a Telerik assembly is built against .NET Core 3.1](images/netcore-support-migration-3.png)
+	![{{ site.framework_name }} Checking if a Telerik assembly is built against .NET 6](images/netcore-support-migration-3.png)
 
 4. Several controls rely on third party NuGet packages. These are automatically installed when adding the Telerik assemblies via NuGet or the Telerik Visual Studio Extension. In case you reference the assemblies manually, one or more of the following packages should be installed manually: `System.Data.OleDb`, `System.Drawing.Common` and `System.ServiceModel.Http`.
 
-## Tips
+>tip The getting started experience in RadRichTextBox for .NET has been improved compared to its .NET Framework alternative. Check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for more details on the changes you might encounter.
 
-* If your project has images with [__Build Action__](https://docs.microsoft.com/en-us/visualstudio/ide/build-actions?view=vs-2019) set to Resource, change it to Embeded Resource or Content.
-
-* If you use the __AssemblyInfo__ or __App.manifest__ files from your original project, add them manually in the .NET Core project. The new project template uses a different approach and generates the same assembly attributes as part of the build process.
-	
-	#### __[XML] Example 1: GenerateAssemblyInfo attribute__
-	{{region netcore-support-migration-0}}
-		<generateassemblyinfo>false</generateassemblyinfo>
-	{{endregion}}
-
-* The getting started experience in RadRichTextBox for .NET Core has been improved compared to its .NET Framework alternative. Check the [.NET Core Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for more details on the changes you might encounter.
-
-## See Also
-
-* [Deploy WPF .NET Core Application]({%slug netcore-support-deploy-using-visual-studio%})
-* [Using RadRichTextBox in .NET Core]({%slug radrichtextbox-getting-started-net-core-support%})
+## See Also  
+* [Deploy WPF .NET Application]({%slug netcore-support-deploy-using-visual-studio%})
+* [Using RadRichTextBox in .NET]({%slug radrichtextbox-getting-started-net-core-support%})

@@ -117,7 +117,7 @@ To set the origin, use the `TickOrigin` property of the axis (available in `Line
 
 ## Setting the Desired Ticks Count
 
-The axis allows you to set the desired ticks count via the `DesiredTickCount` property. The axis will try to calculate a proper step based on the axis range and the desired number of ticks. Note, that the actual number of ticks may be be slightly higher or lower, since the automatic range calculation takes into account different factors and it tries to display a reasonable step between the ticks. For example, if the `DesiredTickCount` is 7, then 6 or 8 ticks may be drawn, depending on the range of the axis.
+The axis allows you to set the desired tick count via the `DesiredTickCount` property. The axis will try to calculate a proper step based on the axis range and the desired number of ticks. Note, that the actual number of ticks may be slightly higher or lower since the automatic range calculation takes into account different factors and it tries to display a reasonable step between the ticks. For example, if the `DesiredTickCount` is 7, then 6 or 8 ticks may be drawn, depending on the range of the axis.
 
 #### __[XAML] Setting desired number of ticks__
 {{region radchartview-axis-range-6}}

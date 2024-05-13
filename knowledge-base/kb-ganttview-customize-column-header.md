@@ -26,7 +26,7 @@ ticketid: 1648836
 
 ## Description
 
-The header of the ColumnDefinition class is represented by a ColumnHeaderContainer element. The default style of this element sets its ContentTemplate property to a TextBlock element. This element displays the value set to the Header property of the ColumnDefinition class. This prevents setting complex structure for the headers of the columns.
+The header of the RadGanttView's ColumnDefinition class is represented by a ColumnHeaderContainer element. The default style of this element sets its ContentTemplate property to a TextBlock element. This element displays the value set to the Header property of the ColumnDefinition class. This prevents setting complex structure for the headers of the columns.
 
 ## Solution
 

@@ -2,7 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: Check our &quot;Breaking Changes&quot; documentation article for the RadProgressBar control.
-slug: progressbar-breaking-changes
+slug: radprogressbar-breaking-changes
 tags: breaking, changes
 published: True
 position: 3

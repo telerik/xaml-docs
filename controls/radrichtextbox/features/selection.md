@@ -228,20 +228,61 @@ __Multiple selection in RadRichTextBox__
 
 ![Selection in RadRichTextBox](images/RadRichTextBox_Selection_01.png)
 
-## Other Selection Properties
+## Mouse Selection Settings
 
-* `MouseSelectionHandler.DoubleClickTime`&mdash;This static property controls the double click speed of the RichTextBox. The default value is __400ms__. It is different from the default value in .NET which is __500ms__. This property allows you to set the value that best suits your case. You can set it in your code usually when initializing the RichTextBoxControl.
+* `MouseSelectionHandler.DoubleClickTime`&mdash;This static property controls the double click speed of the RichTextBox. The default value is __400ms__. It is different from the default value in .NET which is __500ms__. This property allows you to set the value that best suits your case. You can set it in your code usually when initializing the RichTextBox control.
+
 * `MouseSelectionHandler.MouseDragThreshold`&mdash;This static property controls the number of pixels that the mouse needs to travel so that the action is considered a drag operation. The default value is __3__.
+
 * `MouseSelectionHandler.MouseDoubleClickThreshold`&mdash;This static property controls the number of pixels that are allowed for the mouse to move when double-clicking. The default value of this property is __1__.
 
-## Other Selection Properties
+## Customizing Keyboard Shift Selection
 
-* `MouseSelectionHandler.DoubleClickTime`&mdash; This static property controls the double click speed of the RichTextBox. The default value is 400ms. It is different from the default value in .NET which is 500ms. This property allows you to set the value that best suits your case. You can set it in your code usually when initializing the RichTextBoxControl. 
+The keyboard selection that happens on __Shift + arrow keys__ press can be customized by creating a custom `KeyboardSelectionHandler`. The handler is assigned to the `KeyboardSelectionHandler` property of the `ActiveEditorPresenter` of `RadRichTextBox`.
 
-## See Also
+The selection handler allows you to override several methods invoked on selection when using the `Shift` key.
 
+* `UpdateSelection`&mdash;Allows you to implement custom logic to update the selection of the document manually.
+* `ExpandDownLeft`&mdash;The method is invoked on __Shift + arrow keys__ selection when the cursor is inside a table and the right end of the cell content is reached.
+* `ExpandTopRight`&mdash;The method is invoked on __Shift + arrow keys__ selection when the cursor is inside a table and the left end of the cell content is reached.
+
+#### __[C#] Creating custom KeyboardSelectionHandler__
+{{region radrichtextbox-features-selection-4}}
+	public class CustomSelectionHandler : KeyboardSelectionHandler
+	{
+		public CustomSelectionHandler(RadDocument document) : base(document)
+		{
+		}
+
+		public override DocumentPosition ExpandDownLeft(DocumentPosition currentPosition)
+		{
+			currentPosition.MoveToNext();
+			return currentPosition;
+		}
+
+		public override DocumentPosition ExpandTopRight(DocumentPosition currentPosition)
+		{
+			currentPosition.MoveToPrevious();
+			return currentPosition;
+		}
+
+		public override void UpdateSelection(MoveCaretDirections direction = MoveCaretDirections.Unknown)
+		{
+			base.UpdateSelection(direction);
+		}
+	}
+{{endregion}}
+
+#### __[C#] Assigning the custom KeyboardSelectionHandler__
+{{region radrichtextbox-features-selection-5}}
+	private void RadRichTextBox_Loaded(object sender, RoutedEventArgs e)
+	{
+		var documentPresenter = (DocumentPresenterBase)this.radRichTextBox.ActiveEditorPresenter;
+		documentPresenter.KeyboardSelectionHandler = new CustomSelectionHandler(this.radRichTextBox.Document);
+	}
+{{endregion}}
+
+## See Also  
  * [Positioning]({%slug radrichtextbox-features-positioning%})
-
  * [History]({%slug radrichtextbox-features-history%})
-
  * [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%})

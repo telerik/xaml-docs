@@ -17,17 +17,17 @@ category: knowledge-base
 
 ## Description
 
-The [built-in seleciton feature]({%slug radchartview-features-selection%}) of RadChartView allows you to select data points in the chart by clicking the corresponding data point visuals.
+The [built-in selection feature]({%slug radchartview-features-selection%}) of RadChartView allows you to select data points in the chart by clicking the corresponding data point visuals.
 
-This article describes how to implement custom selection logic activated on click over the LineSeries' line. The selection will highlight the series with a different `Stroke` setting.
+This article describes how to implement custom selection logic activated on clicking over the LineSeries' line. The selection will highlight the series with a different `Stroke` setting.
 
 ## Solution
 
-The chart's LineSeries already have a selection infrastructure that can be used to mark the line as selected. To do that, set the `AllowSelect` and `IsSelected` properties of the series to `true`.
+The chart's LineSeries already has a selection infrastructure that can be used to mark the line as selected. To do that, set the `AllowSelect` and `IsSelected` properties of the series to `true`.
 
 The selection state can be toggled in the `MouseLeftButtonDown` event of the chart.
 
-The highlighting of the series can be implemented either in the mouse event handler, or with a trigger (as shown in this example) or another WPF method. Basically, on mouse click, the `Stroke` property of the corresponding `LineSeries` should be updated.
+The highlighting of the series can be implemented either in the mouse event handler or with a trigger (as shown in this example) or another WPF method. Basically, on mouse click, the `Stroke` property of the corresponding `LineSeries` should be updated.
 
 The following example shows how to combine these suggestions.
 

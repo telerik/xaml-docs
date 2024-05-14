@@ -26,7 +26,7 @@ ticketid: 1649117
 
 ## Solution
 
-[Extract the default control template]{%slug styling-apperance-editing-control-templates%#extracting-control-templates-manually-from-the-theme-xaml-file} of `RadToggleSwitchButton` and include an additional `ContentPresenter` element. This ContentPresenter will use the values set to the `Content` and `ContentTemplate` properties of RadToggleSwitchButton. You can use these properties to set your content when the control's IsChecked is set to null.
+[Extract the default control template]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) of `RadToggleSwitchButton` and include an additional `ContentPresenter` element. This ContentPresenter will use the values set to the `Content` and `ContentTemplate` properties of RadToggleSwitchButton. You can use these properties to set your content when the control's IsChecked is set to null.
 
 The following example shows the modified control template of the RadToggleSwitchButton control for the Windows 11 theme.
 

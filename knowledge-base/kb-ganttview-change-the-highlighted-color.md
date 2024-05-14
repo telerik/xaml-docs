@@ -30,7 +30,7 @@ Change the color of the highlighted items of RadGanttView.
 
 ## Solution
 
-To achieve this behavior, you can implement a custom [attached property]({%slug common-mvvm-attached-behavior%}). It will retrive the elements responsible for the highlighted states of the EventContainer and SummaryContainer elements and update them based on its value. To retrieve the elements for the highlighted state, use the [ChildrenOfType]({%slug common-visual-tree-helpers%#childrenoftypeextensions}) extension method.
+To achieve this behavior, you can implement a custom [attached property]({%slug common-mvvm-attached-behavior%}). It will retrive the elements responsible for the highlighted states of the EventContainer and SummaryContainer elements and update them based on its value. To retrieve the elements for the highlighted state, use the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) extension method.
 
 #### __[C#] Custom attached property for modifying the highlighted items' color__
 {{region kb-ganttview-change-the-highlighted-color-0}}

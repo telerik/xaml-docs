@@ -25,7 +25,7 @@ The `ITraceMonitor` interface provides the following set of methods.
 * `TrackError`: Traces an error in a specified feature.
 * `TrackValue`: This method is called when a value connected with a specific feature is tracked.
 
-The methods are invoked automatically by some of the Telerik controls (the ones supporting the trace monitor). A different method will be called based on the executed action. For all other cases (where Telerik doesn't automatically call the methods), you can manually call the methods manually on the corresponding action. 
+The methods are invoked automatically by some of the Telerik controls (the ones supporting the trace monitor). A different method will be called based on the executed action. For all other cases (where Telerik doesn't automatically call the methods), you can call the methods manually on the corresponding action. 
 
 #### __[C#] Implementing the ITraceMonitor__
 {{region application-analytics-0}}
@@ -118,7 +118,7 @@ To add a feature tracking outside of the features tracked by default, you can ma
 
 ## Traceable Features in Telerik Controls
 
-Currently only a few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from bindings are not supported.
+Currently, only a few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from bindings are not supported.
        
 ### Supported controls and features
 	   

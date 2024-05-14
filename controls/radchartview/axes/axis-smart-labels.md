@@ -10,50 +10,55 @@ position: 1
 
 # Axis Smart Labels
 
-The RadChartView suite supports couple smart mechanisms which control the axis labels generation.
-* __SmartLabelsMode__: If enabled this feature tells the chart to recalculate the actual step of its axis automatically in order to prevent the axis' labels from overlapping one another. The recalculation logic is executed on update of the chart's layout (like resizing).
-* __IsStepRecalculationOnZoomEnabled__: If enabled this feature controls if the axis should recalculate the actual step it uses when the chart gets zoomed. 
+The RadChartView suite supports couple of smart mechanisms which control the axis labels generation.
+* `SmartLabelsMode`&mdash;If enabled this feature tells the chart to recalculate the actual step of its axis automatically in order to prevent the axis' labels from overlapping one another. The recalculation logic is executed on update of the chart's layout (like resizing).
+* `IsStepRecalculationOnZoomEnabled`&mdash;If enabled this feature controls if the axis should recalculate the actual step it uses when the chart gets zoomed. 
 
 >important By default both mechanisms are disabled. 
 
 ## Using the Smart Labels Mode
 
-You can enable the smart labels mode by setting the __SmartLabelsMode__ property of the axis.
+You can enable the smart labels mode by setting the `SmartLabelsMode` property of the axis.
 
-#### __XAML__
+#### __[XAML] Setting the smart labels mode to SmartStep__
 {{region radchartview-features-axis-smart-labels-0}}
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis SmartLabelsMode="SmartStep"/>
 	</telerik:RadCartesianChart.VerticalAxis>
 {{endregion}}
 
-The SmartLabelMode property is of type AxisSmartLabelsMode enum and it defines the algorithm which should be used for generating the labels. The enumeration expose the following properties:
-* __None__ (default value): Do not attempt to avoid overlapping labels
-* __SmartStep__: The axis will choose a step (or a tick interval) in such a way that labels don’t overlap
-* __SmartStepAndRange__: The axis will choose a step and range in such a way that labels don’t overlap
+The `SmartLabelMode` property is of type `AxisSmartLabelsMode` enum and it determines the algorithm which should be used for generating the labels. The enumeration expose the following properties:
+
+* `None` (default value)&mdash;Do not attempt to avoid overlapping labels
+* `SmartStep`&mdash;The axis will choose a step (or a tick interval) in such a way that labels don’t overlap
+* `SmartStepAndRange`&mdash;The axis will choose a step and range in such a way that labels don’t overlap. 
 	
-	>important This mode is supported only by the __LinearAxis__ and the __LogarithmicAxis__.
+	>important `SmartStepAndRange` is supported only by the `LinearAxis` and `LogarithmicAxis`.
 	
-The following picture demonstrates the different modes.
+__Example illustrating the SmartStep mode applied on both chart axes (horizontal and vertical)__
 
 ![radchartview-features-axis-smart-labels](images/radchartview-features-axis-smart-labels-01.png)
 
+__Example illustrating the SmartStepAndRange mode applied on the vertical axis__
+
+![radchartview-features-axis-smart-labels](images/radchartview-features-axis-smart-labels-02.png)
+
 ## Disable the Step Recalculation on Zoom
 
-The chart axis major step is automatically recalculated on zoom. To disable this, set the __IsStepRecalculationOnZoomEnabled__ property of the axis to __False__.
+The chart axis major step is automatically recalculated on zoom. To disable this, set the `IsStepRecalculationOnZoomEnabled` property of the axis to `False`.
 
-#### __XAML__
-{{region radchartview-features-axis-smart-labels-0}}
+#### __[XAML] Disabling the automatic step recalculation on zoom__
+{{region radchartview-features-axis-smart-labels-1}}
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis IsStepRecalculationOnZoomEnabled="False"/>
 	</telerik:RadCartesianChart.VerticalAxis>
 {{endregion}}
 
-The following picture demonstrates this feature:
+__Example illustrating how the IsStepRecalculationOnZoomEnabled property affects the axis (applied only on the vertical axis)__
 
-![radchartview-features-axis-smart-labels](images/radchartview-features-axis-smart-labels-02.png)
+![radchartview-features-axis-smart-labels](images/radchartview-features-axis-smart-labels-03.png)
 
->This mechanism is supported only by the chart's numeric axes.
+This mechanism is __supported only by the chart's numeric axes__.
 
 ## See Also
 * [Overview]({%slug radchartview-overview %})

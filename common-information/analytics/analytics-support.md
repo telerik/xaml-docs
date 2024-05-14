@@ -12,84 +12,117 @@ position: 1
 
 When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors that occurred during the execution. Using analytics you will be able to trace certain features of the controls and get statistics about their usage.
 
-This article will discuss the following topics:
+The analytics support is implemented through the `TraceMonitor` static class and its `AnalyticsMonitor`. To enable this feature, the `ITraceMonitor` interface should be implemented and assigned to the `TraceMonitor.AnalyticsMonitor` property.
 
-* [ITraceMonitor Interface](#itracemonitor-interface)
-* [How Analytics Works](#how-analytics-works)
-* [Traceable Features](#traceable-features)
+## Implementing ITraceMonitor
 
->important With the [discontinuation of the Telerik Platform](https://www.telerik.com/platform-next-level) as of **R2 2018 SP1** we've also removed the two dependent assemblies from our suite - **EQATEC.Analytics.Monitor.dll** and **Telerik.Windows.Analytics.dll**. The respective NuGet packages have been removed as well. Instead, the **ITraceMonitor** interface should be used as explained below.
+The `ITraceMonitor` interface provides the following set of methods.
 
-## ITraceMonitor Interface
+* `TrackAtomicFeature`: This method is called when an atomic feature is executed.
+* `TrackFeatureStart`: This method is called when a feature is initiated.
+* `TrackFeatureEnd`: This method is called when a feature finishes execution.
+* `TrackFeatureCancel`: This method is called when a feature is canceled.
+* `TrackError`: Traces an error in a specified feature.
+* `TrackValue`: This method is called when a value connected with a specific feature is tracked.
 
-As of **R2 2017 SP1**, the Telerik UI for {{ site.framework_name }} suite exposes the **ITraceMonitor** interface which represents a monitor which receives trace events from the controls.
+The methods are invoked automatically by some of the Telerik controls (the ones supporting the trace monitor). A different method will be called based on the executed action. For all other cases (where Telerik doesn't automatically call the methods), you can manually call the methods manually on the corresponding action. 
 
-You need to implement the following methods in order to receive trace events from the controls used in your application:
+#### __[C#] Implementing the ITraceMonitor__
+{{region application-analytics-0}}
+	public class ApplicationTraceMonitor : ITraceMonitor
+	{
+		 public void TrackAtomicFeature(string feature)
+		 {           
+			// The 'feature' parameter of the methods gives the analytics name of the corresponding control along with the action name. For example, if the analytics name of the control is "MyCloseButton" and the executed action is "Click" you will get "MyCloseButton.Click" as the 'feature'.
+			
+			// Send the feature information to the analytics service you are using (example: Google Analytics or similar)
+		 }
 
-* **TrackAtomicFeature**: This method is called when an atomic feature is executed.
-* **TrackFeatureStart**: This method is called when a feature is initiated.
-* **TrackFeatureEnd**: This method is called when a feature finishes execution.
-* **TrackFeatureCancel**: This method is called when a feature is canceled.
-* **TrackError**: Traces an error in a specified feature.
-* **TrackValue**: This method is called when a value connected with a specific feature is tracked.
+		 public void TrackError(string feature, Exception exception)
+		 {
+			 // Send the feature information to the analytics service you are using (example: Google Analytics or similar)
+		 }
 
-Once you've created your implementation of the interface in accordance to your provider of choice you need to set the static **TraceMonitor.AnalyticsMonitor** property as shown in **Example 1**.
+		 public void TrackFeatureCancel(string feature)
+		 {
+			 // Send the feature information to the analytics service you are using (example: Google Analytics or similar)
+		 }
 
-#### __[C#] Example 1: Set TraceMonitor.AnalyticsMonitor__
+		 public void TrackFeatureEnd(string feature)
+		 {
+			 // Send the feature information to the analytics service you are using (example: Google Analytics or similar)
+		 }
 
-{{region cs-application-analytics_1}}
-	TraceMonitor.AnalyticsMonitor = new MyMonitor();
+		 public void TrackFeatureStart(string feature)
+		 {
+			 // Send the feature information to the analytics service you are using (example: Google Analytics or similar)
+		 }
+
+		 public void TrackValue(string feature, long value)
+		 {
+			 // Send the feature information to the analytics service you are using (example: Google Analytics or similar)
+		 }
+	}
 {{endregion}}
 
-#### __[VB.NET] Example 1: Set TraceMonitor.AnalyticsMonitor__
+To enable the implemented trace monitor, set the static `TraceMonitor.AnalyticsMonitor` property.
 
-{{region vb-application-analytics_1}}
+#### __[C#] Setting the TraceMonitor.AnalyticsMonitor__  
+{{region application-analytics-1}}
+	public MainWindow()
+	{
+		TraceMonitor.AnalyticsMonitor = new ApplicationTraceMonitor();
+		InitializeComponent();
+	}
+{{endregion}}
+
+#### __[VB.NET] Setting the TraceMonitor.AnalyticsMonitor__  
+{{region vb-application-analytics-2}}
 	TraceMonitor.AnalyticsMonitor = New MyMonitor()
 {{endregion}}
 
-## How Analytics Works
-      
-Let's first define a couple of controls.
+To __include a control in the analytics tracking__, set the `Analytics.Name` attached property on it.
 
-#### __[XAML] Example 2: Add controls__
-
-{{region xaml-application-analytics_2}}
-	<StackPanel Orientation="Horizontal"> 
-	    <telerik:RadComboBox Width="200"> 
-	        <telerik:RadComboBoxItem Content="Silverlight" /> 
-	        <telerik:RadComboBoxItem Content="WPF" /> 
-	        <telerik:RadComboBoxItem Content="ASP.NET AJAX" /> 
-	        <telerik:RadComboBoxItem Content="WinForms" /> 
-	    </telerik:RadComboBox> 
-	    <telerik:RadButton Content="Select" Click="Select_Click" /> 
-	</StackPanel> 
-{{endregion}}
-
-All that is needed to enable analytics for these controls is to set the __telerik:Analytics.Name__ attached property. This has been demonstrated in __Example 3__. Note that the set values will be used in the dashboard.
-
-#### __[XAML] Example 3: Set Analytics.Name property__
-
-{{region application-analytics_3}}
+#### __[XAML] Setting Analytics.Name property__
+{{region application-analytics-3}}
 	<StackPanel Orientation="Horizontal"> 
 	    <telerik:RadComboBox Width="200" telerik:Analytics.Name="ComboBoxSelection"> 
-	        <telerik:RadComboBoxItem Content="Silverlight" /> 
+	        <telerik:RadComboBoxItem Content="WinUI" /> 
 	        <telerik:RadComboBoxItem Content="WPF" /> 
-	        <telerik:RadComboBoxItem Content="ASP.NET AJAX" /> 
+	        <telerik:RadComboBoxItem Content="Blazor" /> 
 	        <telerik:RadComboBoxItem Content="WinForms" /> 
 	    </telerik:RadComboBox> 
-	    <telerik:RadButton telerik:Analytics.Name="SelectButton" Content="Select" Click="Select_Click" /> 
+	    <telerik:RadButton telerik:Analytics.Name="SelectButton" Content="Select" /> 
 	</StackPanel>
 {{endregion}}
 
-You can then go to the dashboard of your analytics provider, where you will find information and statistics for the registered features for different periods of time.
+In the example above, if you click on the `RadButton` the `TrackAtomicFeature` method of the `ITraceMonitor` will be invoked. The `feature` string will be "SelectButton.Click". Opening and closing the `RadComboBox` will call the `TrackAtomicFeature` method with the `feature` set to "ComboBoxSelection.DropDownOpened" and "ComboBoxSelection.DropDownClosed". 
+The different Telerik controls will report different actions and may use the other methods of the monitor.
 
-## Traceable Features
+To add a feature tracking outside of the features tracked by default, you can manually call the methods of the `ITraceMonitor`.
+
+#### __[C#] Tracking features manually__
+{{region application-analytics-4}}
+	private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+	{
+		string featureContent = "WPFApplication.Exception";
+		TraceMonitor.AnalyticsMonitor.TrackError(featureContent, e.Exception);
+	}
+
+	private void RadPasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+	{
+		string featureContent = "LoginPasswordBox.PasswordChanged";
+		TraceMonitor.AnalyticsMonitor.TrackAtomicFeature(featureContent);
+	}
+{{endregion}}
+
+## Traceable Features in Telerik Controls
 
 Currently only a few controls support analytics out of the box. Note that only user interactions will be tracked - initial values and values from bindings are not supported.
-
-#### __Table 1: Supported controls and features__
-        
-Feature	|	Feature Name
+       
+### Supported controls and features
+	   
+Feature Action	|	Feature Name
 ---	|	---
 __RadBusyIndicator__	|	
 Show	|	ShowIndicator
@@ -155,8 +188,9 @@ SelectionChanged	|	SelectionChanged
 __RadVirtualGrid__ |
 SelectionChanged	|	SelectionChanged
 
-{% if site.site_name == 'WPF' %}
-## See Also
+>important With the [discontinuation of the Telerik Platform](https://www.telerik.com/platform-next-level) as of **R2 2018 SP1** we've also removed the two dependent assemblies from our suite - **EQATEC.Analytics.Monitor.dll** and **Telerik.Windows.Analytics.dll**. The respective NuGet packages have been removed as well. Instead, the **ITraceMonitor** interface should be used as explained below.
 
+{% if site.site_name == 'WPF' %}
+## See Also  
 * [Google Analytics Integration]({%slug google-analytics-integration%})
 {% endif %}

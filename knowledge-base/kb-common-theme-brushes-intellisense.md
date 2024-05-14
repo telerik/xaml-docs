@@ -20,7 +20,7 @@ You can create a new ResourceDictionary file that will contain `SolidColorBrush`
 
 The following example will use some of the colors of the Windows 11 theme and the properties exposed by the `Windows11Palette` object.
 
->tip To view the full list of the default colors for the theme you use, check its [Default Theme Colors]{%slug common-styling-appearance-windows11-theme%#default-theme-colors} section.
+>tip To view the full list of the default colors for the theme you use, check its [Default Theme Colors]({%slug common-styling-appearance-windows11-theme%}#default-theme-colors) section.
 
 #### __[XAML] Creating a new ResourceDictionary and defining new SolidColorBrush instances__
 {{region kb-common-theme-brushes-intellisense-0}}

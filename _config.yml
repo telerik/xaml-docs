@@ -1147,22 +1147,22 @@ navigation:
         position: 6
     "wpflab":  
         title: "WPF Labs"
-        position: 0
+        position: 8
     "common-information":
         title: "Common Information"
-        position: 7
+        position: 9
     "integration":
         title: "Integration"
-        position: 8
+        position: 10
     "cloud-integration":
         title: "Cloud Integration"
-        position: 9
+        position: 11
     "testing":
         title: "Testing"
-        position: 10
+        position: 12
     "developer-focused-examples":
         title: "Developer Focused Examples"    
-        position: 11     
+        position: 13     
 ## Common End
 
 ## Api Reference Start

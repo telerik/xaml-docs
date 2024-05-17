@@ -1145,6 +1145,9 @@ navigation:
     "upgrade":  
         title: "Upgrade"
         position: 6
+    "wpflab":  
+        title: "WPF Labs"
+        position: 0
     "common-information":
         title: "Common Information"
         position: 7

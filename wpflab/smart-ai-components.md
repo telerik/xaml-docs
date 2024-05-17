@@ -5,6 +5,7 @@ description: Telerik Smart (AI) Components is a set of integration examples that
 slug: wpflab-smart-ai-components
 tags: wpf,lab,smart,ai,prompt,components,services
 position: 0
+published: false
 ---
 
 # Smart AI Components

@@ -12,7 +12,7 @@ published: false
 
 Telerik Smart (AI) Components is a set of integration examples that show how to use the Telerik UI for WPF controls in AI-based scenario. Therefore, making it easy to add AI-powered features to your .NET applications without extra effort. Smart(AI) Components are currently in an experimental phase.
 
-The projects showing the smart components can be found at [https://github.com/telerik/telerik-smartai-components/tree/master](https://github.com/telerik/telerik-smartai-components/tree/master).
+The projects showing the smart components can be found at [https://github.com/telerik/telerik-smartai-components](https://github.com/telerik/smart-ai-components/tree/master).
 
 To run the examples, you should first [aquire key credentials](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#authentication) required to access the end point of the [Azure OpenAI services](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference).
 

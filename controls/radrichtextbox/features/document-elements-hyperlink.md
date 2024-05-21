@@ -161,7 +161,7 @@ You have control over it using the __HyperlinkToolTipFormatString__ property of 
 This property allows you to control what action should trigger the opening of a hyperlink. The possible options are:
 
 - **CtrlClick**: Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
-- **CtrlClick**: Triggers the hyperlink when users click on the hyperlink.
+- **Click**: Triggers the hyperlink when users click on the hyperlink.
 
 
 #### [C#] Example 6: Change the default hyperlink navigation mode

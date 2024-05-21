@@ -34,7 +34,7 @@ There are two main types of aggregate functions available which in turn serve as
 
 	* __SumFunction__: Returns the **sum** of all cell values in the column.
 
->tipYou can also create a generic aggregate function to define some custom aggregate expressions by inheriting __Telerik.Windows.Data.EnumerableAggregateFunction__ or **EnumerableSelectorAggregateFunction** class. {% if site.site_name == 'WPF' %}For example implementations, check out the __Custom Aggregate Function__ RadGridView example from our [demos](https://demos.telerik.com/wpf/) and the [CustomAggregateFunctionEnumerableProperty](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomAggregateFunctionEnumerableProperty) SDK example{% endif %}{% if site.site_name == 'Silverlight' %}An example can be found [here](https://demos.telerik.com/silverlight/#GridView/CustomAggregates){% endif %}.
+Check the [Custom Aggregate Functions]({%slug radgridview-columns-custom-aggregate-functions%}) article to see how to implement custom aggregate functions by inheriting the `EnumerableAggregateFunction` and `EnumerableSelectorAggregateFunction` classes.
 
 ## Adding an Aggregate Function
 
@@ -259,6 +259,7 @@ If you want to have a default aggregate function for the custom column which is 
 {{endregion}}
 
 ## See Also  
+ * [Custom Aggregate Functions]({%slug radgridview-columns-custom-aggregate-functions%})
  * [Group Aggregates]({%slug gridview-grouping-aggregates%})
  * [Group Footers]({%slug gridview-group-footers%})
  * [Aggregates are not shown]({%slug gridview-troubleshooting-aggregates-not-shown%})

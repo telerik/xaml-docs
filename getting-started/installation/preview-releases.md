@@ -10,7 +10,7 @@ position: 6
 
 # Preview Release
 
-The Preview is a minor release of the Telerik UI for WPF assemblies, that is uploaded between the major releases (Q1, Q2, Q3 and Q4). The Preview is released on demand so its frequency vary from none to several versions between two major releases. The purpose of the Preview is to allow the users to test the latest features and bug fixes before the major release. 
+The Preview is a minor release of the Telerik UI for WPF assemblies, that is uploaded between the major releases (Q1, Q2, Q3 and Q4). The Preview is released on demand so its frequency vary from none to several versions between two major releases. The purpose of the Preview is to allow the users to test the latest bug fixes before the major release. 
 
 ## Downloading the Preview Release
 

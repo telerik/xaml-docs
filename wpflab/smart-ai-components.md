@@ -26,7 +26,7 @@ This example shows how to integrate the Azure OpenAI services with __RadRichText
 
 This example shows how to integrate the Azure OpenAI services with __RadSpreadsheet for WPF__. In the example, you can use the custom `AIFunction` to get the result of the cells automatically.
 
-![Gif showing how to use the Telerik WPF Smart RadRichTextBox application](images/wpflab-smart-ai-components-1.gif)
+![Gif showing how to use the Telerik WPF Smart RadSpreadsheet application](images/wpflab-smart-ai-components-1.gif)
 
 ## See Also  
 * [Telerik UI for WPF Getting Started]({%slug getting-started-first-steps%})

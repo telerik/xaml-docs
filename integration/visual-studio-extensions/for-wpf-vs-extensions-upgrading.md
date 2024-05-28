@@ -51,6 +51,8 @@ The next screen allows you to update the Visual Studio Toolbox with the newly se
 
 * A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.
 
+* The Upgrade Wizard won't work if the Telerik assemblies are installed with a NuGet package. In this case, you can [update the package via the NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#update-a-package).
+
 ## See Also  
  * [Configure Project]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}) 
  * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%}) 

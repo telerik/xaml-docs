@@ -14,7 +14,7 @@ The __RadChartView__ suite does not have a built-in functionality for exporting 
 
 ## Export RadChartView to PDF
 
-You can export the charting components using the __ExportUIElement__ example which implements exporting of UIElements with the [RadPdfProcessing]({%slug radpdfprocessing-overview%}) library. You can read about the example in the [Export Support]({%slug common-export-support %}) common article.
+You can export the charting components using the __ExportUIElement__ example which implements exporting of UIElements with the [Document Processing Libraries]({%slug document-processing-libraries-overview%}) library. You can read about the example in the [Export Support]({%slug common-export-support %}) common article.
 
 >You can find a runnable example in our [GitHub](https://github.com/telerik/document-processing-sdk) repository: [Export UI Element to PDF](https://github.com/telerik/document-processing-sdk/tree/master/PdfProcessing/ExportUIElement).
 
@@ -45,4 +45,4 @@ The following code snippets demonstrate how to use the ExportToImage() method.
 * [Getting Started]({%slug radchartview-introduction %})
 * [SDK Examples]({%slug radchartview-sdk-examples %})
 * [Export Support]({%slug common-export-support %})
-* [RadPdfProcessing]({%slug radpdfprocessing-overview%})
+* [Document Processing Libraries]({%slug document-processing-libraries-overview%})

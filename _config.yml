@@ -683,9 +683,7 @@ navigation:
         title: RadSpellChecker		
     controls/radspellchecker/styles-and-templates:
         title: Styles and Templates
-        position: 4	
-    "*radziplibrary":
-        title: RadZipLibrary
+        position: 4
     "*radpdfviewer":
         title: RadPdfViewer
     controls/radpdfviewer/document-model:
@@ -702,15 +700,6 @@ navigation:
         position: 8
     controls/radpdfviewer/document-model/text:
         title: Text
-    controls/radspreadprocessing/working-with-workbooks:
-        title: Workbooks
-        position: 3
-    "*radspreadprocessing":
-        title: RadSpreadProcessing
-    "*radwordsprocessing":
-        title: RadWordsProcessing
-    "*radpdfprocessing":
-        title: RadPdfProcessing
     "*radrichtextbox":
         title: RadRichTextBox		
     controls/radrichtextbox/getting-started:
@@ -772,8 +761,6 @@ navigation:
         position: 19	
     controls/radrichtextbox/features/merge-documents:
         title: Merge Documents
-    "*radspreadstreamprocessing":
-        title: RadSpreadStreamProcessing       
 ## Centaur Controls End
 
 ## X1 Controls Start
@@ -1162,7 +1149,7 @@ navigation:
         position: 10
     "developer-focused-examples":
         title: "Developer Focused Examples"    
-        position: 11     
+        position: 11
 ## Common End
 
 ## Api Reference Start
@@ -3592,9 +3579,9 @@ defaults:
         title_prefix: "WPF PasswordBox"
 -
     scope:
-        path: "controls/radpdfprocessing"
+        path: "document-processing-libraries"
     values:
-        title_prefix: "WPF PdfProcessing"
+        title_prefix: "Telerik Document Processing"
 -
     scope:
         path: "controls/radpdfviewer"
@@ -3687,19 +3674,9 @@ defaults:
         title_prefix: "WPF SplashScreen"
 -
     scope:
-        path: "controls/radspreadprocessing"
-    values:
-        title_prefix: "WPF SpreadProcessing"
--
-    scope:
         path: "controls/radspreadsheet"
     values:
         title_prefix: "WPF Spreadsheet"
--
-    scope:
-        path: "controls/radspreadstreamprocessing"
-    values:
-        title_prefix: "WPF SpreadStreamProcessing"
 -
     scope:
         path: "controls/radsyntaxeditor"
@@ -3812,16 +3789,6 @@ defaults:
         title_prefix: "WPF Wizard"
 -
     scope:
-        path: "controls/radwordsprocessing"
-    values:
-        title_prefix: "WPF WordsProcessing"
--
-    scope:
-        path: "controls/radziplibrary"
-    values:
-        title_prefix: "WPF ZipLibrary"
--
-    scope:
         path: "controls/touchmanager"
     values:
         title_prefix: "WPF TouchManager"
@@ -3845,9 +3812,6 @@ google_analytics: UA-111455-1
 google_tag_manager: GTM-6X92
 gcs_engine: '001595215763381649090:jt1stbj813w'
 gcs_api_key: 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M'
-
-# Folders not supporting Silverlight:
-non-sl-folders: ["radwordsprocessing", "radspreadstreamprocessing"]
 
 edit_repo_url: https://github.com/telerik/xaml-docs/edit/master
 product: "Telerik UI for WPF"
@@ -3921,14 +3885,8 @@ intro_columns:
       "CloudUpload": "radcloudupload-overview"
       "FileDialogs": "radfiledialogs-overview"
       "FilePathPicker": "radfilepathpicker-overview"
-      "PdfProcessing": "radpdfprocessing-overview"
-      "PdfViewer": "radpdfviewer-overview"
-      "SpreadProcessing": "radspreadprocessing-overview"
-      "SpreadStreamProcessing":
-        isLink: true
-        value: "https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview"
-      "WordsProcessing": "radwordsprocessing-overview"
-      "ZipLibrary": "radziplibrary-overview"
+      "Document Processing Libraries": "document-processing-libraries-overview"
+      "PdfViewer": "radpdfviewer-overview"      
 -
   categories:
   -

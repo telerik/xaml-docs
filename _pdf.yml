@@ -118,15 +118,10 @@ intro_columns:
     items:
       "CloudUpload": "radcloudupload-overview"
       "FileDialogs": "radfiledialogs-overview"
-      "FilePathPicker": "radfilepathpicker-overview"
-      "PdfProcessing": "radpdfprocessing-overview"
-      "PdfViewer": "radpdfviewer-overview"
-      "SpreadProcessing": "radspreadprocessing-overview"
-      "SpreadStreamProcessing":
-        isLink: true
-        value: "https://docs.telerik.com/devtools/document-processing/libraries/radspreadstreamprocessing/overview"
-      "WordsProcessing": "radwordsprocessing-overview"
-      "ZipLibrary": "radziplibrary-overview"
+      "FilePathPicker": "radfilepathpicker-overview"      
+      "PdfViewer": "radpdfviewer-overview"      
+      "Document Processing Libraries": document-processing-libraries-overview
+      
   -
     title: "Layout"
     items:

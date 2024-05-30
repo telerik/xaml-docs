@@ -1,18 +1,18 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadRibbonView {{ site.framework_name }} control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadRibbonView WPF control.
 slug: radribbonview-gettingstarted
 tags: getting,started
 published: True
 position: 1
 ---
 
-# Getting Started with {{ site.framework_name }} RibbonView
+# Getting Started with WPF RibbonView
 
-This tutorial will walk you through the creation of a sample application that contains __RadRibbonView__.
+This tutorial will walk you through the creation of a sample application that contains `RadRibbonView`.
 
->Before reading this tutorial you should get familiar with the [visual]({%slug radribbonview-visual-structure%}) and [functional]({%slug radribbonview-functional-structure%}) structure of the control.
+>important Before reading this tutorial you should get familiar with the [visual]({%slug radribbonview-visual-structure%}) and [functional]({%slug radribbonview-functional-structure%}) structure of the control.
 
 * [Assembly References](#assembly-references)
 * [Defining a RadRibbonView](#defining-a-radribbonview)
@@ -27,38 +27,40 @@ This tutorial will walk you through the creation of a sample application that co
 
 ## Assembly References
 
-In order to use the __RadRibbonView__ control, you will need to add references to the following assemblies:
+In order to use the RadRibbonView control, you will need to add references to the following assemblies:
+
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Controls.RibbonView__
 * __Telerik.Windows.Data__
 
-You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
-
 ## Defining a RadRibbonView
 
-You can add a __RadRibbonView__ manually in XAML as demonstrated in __Example 1__.
+You can add a RadRibbonView manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Example 1: Adding a RadRibbonView in XAML__
+#### __[XAML] Adding a RadRibbonView in XAML__
 {{region radribbonview-gettingstarted-0}}
 	<telerik:RadRibbonView />
 {{endregion}}
 	
-At this state, the ribbonview is empty - there are not tabs, backstage or any other ribbon components. You can learn about the controls that the __RadRibbonView__ can contain from the [Features]({%slug radribbonview-ribbon-tab%}) section of the documentation.
+At this state, the ribbonview is empty - there are not tabs, backstage or any other ribbon components. You can learn about the controls that the RadRibbonView can contain from the [Features]({%slug radribbonview-ribbon-tab%}) section of the documentation.
 
-#### __Figure 1: Empty RadRibbonView__
-![{{ site.framework_name }} RadRibbonView Empty RadRibbonView](images/ribbonview-getting-started-01.png)
+__Empty RadRibbonView__
+
+![WPF RadRibbonView Empty RadRibbonView](images/ribbonview-getting-started-01.png)
 
 ## Adding Ribbon Tabs
 
-The __RadRibbonView__ helps users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in logical groups that are collected together under specific tabs. The ribbon tabs allows you to categorize the commands to be displayed to the users. The class that represents the ribbon tab is the __RadRibbonTab__.
+The RadRibbonView helps users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in logical groups that are collected together under specific tabs. The ribbon tabs allows you to categorize the commands to be displayed to the users. The class that represents the ribbon tab is the `RadRibbonTab`.
 
-> For more information about the __RadRibbonTab__, check out the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}) help article in the __Ribbon Controls__ section. Also, keep in mind that you can use contextual tabs. You can read more about this in the [Contextual Tabs]({%slug radribbonview-contextual-tabs%}) topic.
+>tip For more information about the RadRibbonTab, check out the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}) help article. Also, keep in mind that you can use contextual tabs. You can read more about this in the [Contextual Tabs]({%slug radribbonview-contextual-tabs%}) topic.
 
-The tabs can be added in the __Items__ collection of RadRibbonView. The __RadRibbonTab__ class exposes a __Header__ property that is used to define the content of its header. __Example 2__ and __Example 3__ demonstrate how to do this in XAML and code-behind.
+The tabs can be added in the `Items` collection of RadRibbonView. The RadRibbonTab class exposes the `Header` property that is used to define the content of its header. 
 
-#### __[XAML] Example 2: Adding RadRibbonTabs in XAML__  
+The next examples demonstrate how to do this in XAML and code-behind:
+
+#### __[XAML] Adding RadRibbonTabs in XAML__  
 {{region radribbonview-gettingstarted-01}}
     <telerik:RadRibbonView>
 		<telerik:RadRibbonView.Items>
@@ -70,7 +72,7 @@ The tabs can be added in the __Items__ collection of RadRibbonView. The __RadRib
 	</telerik:RadRibbonView>
 {{endregion}}
 	
-#### __[C#] Example 3: Adding RadRibbonTabs in code__
+#### __[C#] Adding RadRibbonTabs in code__
 {{region radribbonview-gettingstarted-02}}
 	RadRibbonView ribbonView = new RadRibbonView();
 	ribbonView.Items.Add(new RadRibbonTab() { Header = "Home" });
@@ -79,7 +81,7 @@ The tabs can be added in the __Items__ collection of RadRibbonView. The __RadRib
 	ribbonView.Items.Add(new RadRibbonTab() { Header = "References" });
 {{endregion}}
 			
-#### __[VB.NET] Example 3: Adding RadRibbonTabs in code__
+#### __[VB.NET] Adding RadRibbonTabs in code__
 {{region radribbonview-gettingstarted-03}}
 	Dim ribbonView As New RadRibbonView()
 	ribbonView.Items.Add(New RadRibbonTab() With { _
@@ -96,20 +98,15 @@ The tabs can be added in the __Items__ collection of RadRibbonView. The __RadRib
 	})
 {{endregion}}
 
-#### __Figure 2: RadRibbonView with several RadRibbonTabs defined in its Items collection__
-![{{ site.framework_name }} RadRibbonView RadRibbonView with several RadRibbonTabs defined in its Items collection](images/ribbonview-getting-started-02.png)
+__RadRibbonView with several RadRibbonTabs defined in its Items collection__
+
+![WPF RadRibbonView RadRibbonView with several RadRibbonTabs defined in its Items collection](images/ribbonview-getting-started-02.png)
 
 ## Adding Content in the Ribbon Tabs
 
-__RadRibbonTab__ is a HeaderedItemsControl, which means that it can contain a collection of items. The children of the ribbon tab should be objects of type __RadRibbonGroup__. They expose a __Header__ property that is used to define the content of their header.
+RadRibbonTab is a `HeaderedItemsControl`, which means that it can contain a collection of items. The children of the ribbon tab should be objects of type `RadRibbonGroup`. They expose a Header property that is used to define the content of their header.
 
-> The Items collection of RadRibbonTab can contain any UIElement. However, if you do not wrap it manually into a RadRibbonGroup control, the ribbonview will do it automatically.
-
-<!---->  
-
-> You can find more information about __RadRibbonGroup__ in the [Ribbon Group]({%slug radribbonview-ribbon-group%}) help article.
-
-#### __[XAML] Example 4: Adding RadRibbonGroups__
+#### __[XAML] Adding RadRibbonGroups__
 {{region radribbonview-gettingstarted-04}}
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonView.Items>
@@ -124,12 +121,13 @@ __RadRibbonTab__ is a HeaderedItemsControl, which means that it can contain a co
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### __Figure 3: A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection__
-![{{ site.framework_name }} RadRibbonView A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection](images/ribbonview-getting-started-03.png)
-	
-__RadRibbonGroup__ is also a HeaderedItemsControl and it can have child elements on its own.
+#### __A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection__
 
-#### __[XAML] Example 5: Adding RadRibbonGroup content__
+![WPF RadRibbonView A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection](images/ribbonview-getting-started-03.png)
+
+The RadRibbonGroup element is also a HeaderedItemsControl and it can have child elements on its own.
+
+#### __[XAML] Adding RadRibbonGroup content__
 {{region radribbonview-gettingstarted-05}}
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonView.Items>
@@ -153,65 +151,71 @@ __RadRibbonGroup__ is also a HeaderedItemsControl and it can have child elements
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### __Figure 4: A RadRibbonGroup with a couple ribbon buttons defined in its Items collection__
-![{{ site.framework_name }} RadRibbonView A RadRibbonGroup with a couple ribbon buttons defined in its Items collection](images/ribbonview-getting-started-04.png)
-	
+__A RadRibbonGroup with a couple ribbon buttons defined in its Items collection__
+
+![WPF RadRibbonView A RadRibbonGroup with a couple ribbon buttons defined in its Items collection](images/ribbonview-getting-started-04.png)
+
+>important The Items collection of RadRibbonTab can contain any UIElement. However, if you do not wrap it manually into a RadRibbonGroup control, the ribbonview will do it automatically.
+
+>tip You can find more information about RadRibbonGroup in the [Ribbon Group]({%slug radribbonview-ribbon-group%}) help article.
+
 ## Resizing
 
-One of the most important features of __RadRibbonView__ is the dynamic layout resizing. It refers to the __RadRibbonView__'s ability to optimize its layout depending on how much space is available. This process can't be automated; however, the __RadRibbonView__'s API gives you the ability to specify how you would like the resizing to occur. 
+One of the most important features of RadRibbonView is the dynamic layout resizing. It refers to the RadRibbonView's ability to optimize its layout depending on how much space is available. This process can't be automated; however, the RadRibbonView's API gives you the ability to specify how you would like the resizing to occur. 
 
 Check out the following topics, which are tightly connected to the resizing behavior:  
+
 * [Resizing]({%slug radribbonview-resizing%})
 * [Ordered Wrap Panel]({%slug radribbonview-ordered-wrap-panel%})
 * [Collapsible Panel]({%slug radribbonview-collapsible-panel%})
 	
 ## Setting up the Application Button Icon
 
-You can se the icon of the ribbonview's application button through the __ApplicationButtonImageSource__ property, which is of type ImageSource.
+You can se the icon of the ribbonview's application button through the `ApplicationButtonImageSource` property, which is of type `ImageSource`.
 
-#### __[XAML] Example 6: Setting the RadRibbonView application button image source in XAML__
+#### __[XAML] Setting the RadRibbonView application button image source in XAML__
 {{region radribbonview-gettingstarted-06}}
 	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png" />
 {{endregion}}
 	
-#### __[C#] Example 7: Setting the RadRibbonView application button image source in code__
+#### __[C#] Setting the RadRibbonView application button image source in code__
 {{region radribbonview-gettingstarted-07}}
 	RadRibbonView ribbonView = new RadRibbonView();
 	ribbonView.ApplicationButtonImageSource = new BitmapImage(new Uri(appIconStringPath));
 {{endregion}}
 	
-#### __[VB.NET] Example 7: Setting the RadRibbonView application button image source in code__
+#### __[VB.NET] Setting the RadRibbonView application button image source in code__
 {{region radribbonview-gettingstarted-08}}
 	Dim ribbonView As New RadRibbonView()
 	ribbonView.ApplicationButtonImageSource = New BitmapImage(New Uri(appIconStringPath))
 {{endregion}}
 
-#### __Figure 5: RadRibbonView application button image__
-![{{ site.framework_name }} RadRibbonView RadRibbonView application button image](images/ribbonview-getting-started-05.png)
+__RadRibbonView application button image__
+
+![WPF RadRibbonView RadRibbonView application button image](images/ribbonview-getting-started-05.png)
 
 ## Setting up the Application Title and Name
 
-The header displayed at the title bar of __RadRibbonView__ is constructed by its __Title__ and __ApplicationName__ properties with a dash separator between them. You can take a peek at the [Visual Structure]({%slug radribbonview-visual-structure%}) article to see how it looks.
+The header displayed at the title bar of RadRibbonView is constructed by its `Title` and `ApplicationName` properties with a dash separator between them. You can take a peek at the [Visual Structure]({%slug radribbonview-visual-structure%}) article to see how it looks.
 
-#### __[XAML] Example 8: Setting the RadRibbonView application title and name__
+#### __[XAML] Setting the RadRibbonView application title and name__
 {{region radribbonview-gettingstarted-09}}
 	<telerik:RadRibbonView ApplicationName="RadRibbonView" Title="Document 1" />
 {{endregion}}
 
-#### __Figure 6: Title and ApplicationName properties reflected in the UI__
-![{{ site.framework_name }} RadRibbonView Title and ApplicationName properties reflected in the UI](images/ribbonview-getting-started-06.png)
+__Title and ApplicationName properties reflected in the UI__
 
-> You can also see the [Change Title]({%slug radribbonview-howto-change-title%}) and [Hide the Title]({%slug radribbonview-howto-hide-title%}) help articles.
+![WPF RadRibbonView Title and ApplicationName properties reflected in the UI](images/ribbonview-getting-started-06.png)
+
+>important You can also see the [Change Title]({%slug radribbonview-howto-change-title%}) and [Hide the Title]({%slug radribbonview-howto-hide-title%}) help articles.
 
 ## Setting up the Ribbon Backstage
 
-The __backstage menu__ is equivalent to the __File__ menu of the traditional menu UIs. It is represented by the rectangular button (the __application button__) in the upper-left corner of the __RadRibbonView__ control. The backstage menu appears when a user clicks the application button. This menu can be used to display controls used to perform actions on the entire document like save, print and send.
+The __backstage menu__ is equivalent to the __File__ menu of the traditional menu UIs. It is represented by the rectangular button (the __application button__) in the upper-left corner of the RadRibbonView control. The backstage menu appears when a user clicks the application button. This menu can be used to display controls used to perform actions on the entire document like save, print and send.
 
-To declare a backstage menu in __RadRibbonView__ you can set its __Backstage__ property to an object of type __RadRibbonBackstage__. 
+To declare a backstage menu in RadRibbonView you can set its `Backstage` property to an object of type `RadRibbonBackstage`. 
 
-> You can learn more about the backstage control in the [Ribbon Backstage]({%slug radribbonview-ribbon-backstage%}) help article. 
-
-#### __[XAML] Example 9: Sample backstage definition with several child RadRibbonBackstageItems in its Items collection.__
+#### __[XAML] Sample backstage definition with several child RadRibbonBackstageItems in its Items collection.__
 {{region radribbonview-gettingstarted-10}}
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonView.Backstage>                
@@ -234,14 +238,17 @@ To declare a backstage menu in __RadRibbonView__ you can set its __Backstage__ p
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### __Figure 7: RadRibbon Backstage example__
-![{{ site.framework_name }} RadRibbonView RadRibbon Backstage example](images/ribbonview-getting-started-07.png)
+__RadRibbon Backstage example__
+
+![WPF RadRibbonView RadRibbon Backstage example](images/ribbonview-getting-started-07.png)
+
+>tip You can learn more about the backstage control in the [Ribbon Backstage]({%slug radribbonview-ribbon-backstage%}) help article. 
 
 ## Setting up the Quick Access Toolbar
 
-The __Quick Access Toolbar__ is used to render a set of __RadRibbonView__ controls (commands) that are most commonly used in the application. It is rendered right above the ApplicationButton to make it easily accessible to users. To declare the Quick Access ToolBar, you need to set the __QuickAccessToolBar__ property. 
+The Quick Access Toolbar is used to render a set of RadRibbonView controls (commands) that are most commonly used in the application. It is rendered right above the ApplicationButton to make it easily accessible to users. To declare the Quick Access ToolBar, you need to set the `QuickAccessToolBar` property. 
 
-#### __[XAML] Example 10: Sample setup of QuickAccessToolBar__
+#### __[XAML] Sample setup of QuickAccessToolBar__
 {{region radribbonview-gettingstarted-11}}
 	 <telerik:RadRibbonView>
 		<telerik:RadRibbonView.QuickAccessToolBar>
@@ -254,16 +261,17 @@ The __Quick Access Toolbar__ is used to render a set of __RadRibbonView__ contro
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### __Figure  8: QuickAccessToolBar visualization with one of its buttons hovered__  
-![{{ site.framework_name }} RadRibbonView QuickAccessToolBar Hovered Button](images/ribbonview-getting-started-08.png)
+__QuickAccessToolBar visualization with one of its buttons hovered__  
 
-> For more information and a practical example you can see the [Quick Access Toolbar]({%slug radribbonview-qat%}) topic.  
+![WPF RadRibbonView QuickAccessToolBar Hovered Button](images/ribbonview-getting-started-08.png)
+
+>tip For more information and a practical example you can see the [Quick Access Toolbar]({%slug radribbonview-qat%}) topic.  
 
 ## Code Example
 
 This section contains all features demonstrated in the article assembled into a single example.
 
-#### __[XAML] Example 12: Complete code example__
+#### __[XAML] Complete code example__
 {{region radribbonview-gettingstarted-12}}
 	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png"
 						   ApplicationName="RadRibbonView"
@@ -313,8 +321,9 @@ This section contains all features demonstrated in the article assembled into a 
 	</telerik:RadRibbonView>
 {{endregion}}
 
-#### __Figure 9: RadRibbonView example__  
-![{{ site.framework_name }} RadRibbonView RadRibbonView example](images/ribbonview-getting-started-09.png)
+__RadRibbonView example__  
+
+![WPF RadRibbonView RadRibbonView example](images/ribbonview-getting-started-09.png)
 
 ## Setting a Theme
 
@@ -324,7 +333,7 @@ The controls from our suite support different themes. You can see how to apply a
 
 To change the theme, you can follow the steps below:
 
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#RibbonView/Theming){% endif %} application.
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our [WPF Controls Examples](https://demos.telerik.com/wpf/) application.
 
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the RadRibbonView, you will need to merge the following resources:
 
@@ -333,9 +342,9 @@ To change the theme, you can follow the steps below:
 	* __Telerik.Windows.Controls.Navigation__
 	* __Telerik.Windows.Controls.RibbonView__
 
-__Example 13__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
+The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 13: Merge the ResourceDictionaries__  
+#### __[XAML] Merge the ResourceDictionaries__  
 {{region radribbonview-getting-started_7}}
 	<Application.Resources>
 		<ResourceDictionary>
@@ -350,14 +359,12 @@ __Example 13__ demonstrates how to merge the ResourceDictionaries so that they a
 	</Application.Resources>
 {{endregion}}
 
->Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+>Alternatively, you can use the theme of the control via the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach.
 
-__Figure 10__ shows a RadRibbonView with the **Windows8** theme applied.
+__RadRibbonView with the Windows8 theme__
 
-#### __Figure 10: RadRibbonView with the Windows8 theme__
-![RadRibbonView with Windows8 theme](images/radribbonView-setting-theme.png)  
+![WPF RadRibbonView with Windows8 theme](images/radribbonView-setting-theme.png)  
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF RibbonView Component](https://www.telerik.com/products/wpf/ribbonview.aspx)
@@ -368,7 +375,6 @@ __Figure 10__ shows a RadRibbonView with the **Windows8** theme applied.
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
-{% endif %}
 
 ## See Also
  * [Commands Support]({%slug radribbonview-features-commands-support%})

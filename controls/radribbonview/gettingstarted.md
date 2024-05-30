@@ -209,6 +209,38 @@ __Title and ApplicationName properties reflected in the UI__
 
 >important You can also see the [Change Title]({%slug radribbonview-howto-change-title%}) and [Hide the Title]({%slug radribbonview-howto-hide-title%}) help articles.
 
+## Setting the Color of the Title
+
+The RadRibbonView control exposes the `TitleBarBackground` property that will allow you to customize the color of the control's title.
+
+#### __[XAML] Setting the color of the RadRibbonView's title__
+{{region radribbonview-gettingstarted-10}}
+	<telerik:RadRibbonView TitleBarBackground="Red">
+		<telerik:RadRibbonView.Items>
+			<telerik:RadRibbonTab Header="Home">
+				<telerik:RadRibbonGroup Header="Clipboard">                        
+					<telerik:RadRibbonButton Text="Copy" />
+					<telerik:RadRibbonSplitButton Text="Paste">
+						<telerik:RadRibbonSplitButton.DropDownContent>
+							<telerik:RadMenu>
+								<telerik:RadMenuItem Header="Paste" />
+								<telerik:RadMenuItem Header="Paste from" />
+							</telerik:RadMenu>
+						</telerik:RadRibbonSplitButton.DropDownContent>
+					</telerik:RadRibbonSplitButton>
+				</telerik:RadRibbonGroup>
+				<telerik:RadRibbonGroup Header="Font">
+				</telerik:RadRibbonGroup>
+			</telerik:RadRibbonTab>
+			<telerik:RadRibbonTab Header="View" />
+		</telerik:RadRibbonView.Items>
+	</telerik:RadRibbonView>
+{{endregion}}
+
+__RadRibbonView with a different color set to the title__
+
+![WPF RadRibbonView with a different color set to the title](images/ribbonview-getting-started-10.png)
+
 ## Setting up the Ribbon Backstage
 
 The __backstage menu__ is equivalent to the __File__ menu of the traditional menu UIs. It is represented by the rectangular button (the __application button__) in the upper-left corner of the RadRibbonView control. The backstage menu appears when a user clicks the application button. This menu can be used to display controls used to perform actions on the entire document like save, print and send.
@@ -216,7 +248,7 @@ The __backstage menu__ is equivalent to the __File__ menu of the traditional men
 To declare a backstage menu in RadRibbonView you can set its `Backstage` property to an object of type `RadRibbonBackstage`. 
 
 #### __[XAML] Sample backstage definition with several child RadRibbonBackstageItems in its Items collection.__
-{{region radribbonview-gettingstarted-10}}
+{{region radribbonview-gettingstarted-11}}
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonView.Backstage>                
 			<telerik:RadRibbonBackstage>
@@ -249,7 +281,7 @@ __RadRibbon Backstage example__
 The Quick Access Toolbar is used to render a set of RadRibbonView controls (commands) that are most commonly used in the application. It is rendered right above the ApplicationButton to make it easily accessible to users. To declare the Quick Access ToolBar, you need to set the `QuickAccessToolBar` property. 
 
 #### __[XAML] Sample setup of QuickAccessToolBar__
-{{region radribbonview-gettingstarted-11}}
+{{region radribbonview-gettingstarted-12}}
 	 <telerik:RadRibbonView>
 		<telerik:RadRibbonView.QuickAccessToolBar>
 			<telerik:QuickAccessToolBar>
@@ -272,7 +304,7 @@ __QuickAccessToolBar visualization with one of its buttons hovered__
 This section contains all features demonstrated in the article assembled into a single example.
 
 #### __[XAML] Complete code example__
-{{region radribbonview-gettingstarted-12}}
+{{region radribbonview-gettingstarted-13}}
 	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png"
 						   ApplicationName="RadRibbonView"
 						   Title="Document 1">
@@ -345,7 +377,7 @@ To change the theme, you can follow the steps below:
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 #### __[XAML] Merge the ResourceDictionaries__  
-{{region radribbonview-getting-started_7}}
+{{region radribbonview-getting-started_14}}
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>

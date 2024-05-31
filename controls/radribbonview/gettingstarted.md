@@ -52,9 +52,9 @@ __Empty RadRibbonView__
 
 ## Adding Ribbon Tabs
 
-The RadRibbonView helps users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in logical groups that are collected together under specific tabs. The ribbon tabs allows you to categorize the commands to be displayed to the users. The class that represents the ribbon tab is the `RadRibbonTab`.
+The RadRibbonView helps users to quickly find the tools and options they need in order to complete a task. Tools and options are organized in logical groups that are collected together under specific tabs. The ribbon tabs allows you to categorize the commands to be displayed to the users. The class that represents the ribbon tab is the [RadRibbonTab]({%slug radribbonview-ribbon-tab%}).
 
->tip For more information about the RadRibbonTab, check out the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}) help article. Also, keep in mind that you can use contextual tabs. You can read more about this in the [Contextual Tabs]({%slug radribbonview-contextual-tabs%}) topic.
+>tip You can also use contextual tabs. You can read more about this in the [Contextual Tabs]({%slug radribbonview-contextual-tabs%}) topic.
 
 The tabs can be added in the `Items` collection of RadRibbonView. The RadRibbonTab class exposes the `Header` property that is used to define the content of its header. 
 

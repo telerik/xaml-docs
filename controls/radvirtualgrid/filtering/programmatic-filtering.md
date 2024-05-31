@@ -10,30 +10,27 @@ position: 1
 
 # Programmatic Filtering
 
-__RadVirtualGrid__ provides an API for programmatically filtering its data. The following article will go through the exposed mechanisms.
+`RadVirtualGrid` provides an API for programmatically filtering its data. The following article will go through the exposed mechanisms.
 
-> The __FilteringControl__ of __RadVirtualGrid__ can be manually closed by calling the __CloseFilteringControl__ method of the control.
+>important The `FilteringControl` of RadVirtualGrid can be manually closed via the `CloseFilteringControl` method of the control.
 
 >important The events that this section covers cannot be utilized when the __DataProvider__ mechanism is used for populating data. In such scenario, the built-in filtering can be altered through a [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%}).
 
-__RadVirtualGrid__ provides a set of events which can be utilized so that the filtering operation is aligned to the specific needs. They will be raised in the order they are listed below.
+RadVirtualGrid provides a set of events which can be utilized so that the filtering operation is aligned to the specific needs. They will be raised in the order they are listed below.
 
-### DataMemberNeeded
+## DataMemberNeeded
 
-It is raised when the control is initially loaded and data related information for the given column is needed. It can be provided through the following properties that the event arguments expose.
+It is raised when the control is initially loaded and data related information for the given column is needed. 
 
-* __ColumnIndex__: Gives information regarding the index of the given column.
+It can be provided through the following properties that the event arguments expose:
 
-* __DataType__: Gives information regarding the data type of the underlying member. The property can also be set.
+* `ColumnIndex`&mdash;Gives information regarding the index of the given column.
+* `DataType`&mdash;Gives information regarding the data type of the underlying member. The property can also be set.
+* `IsFilterable`&mdash;Provides information regarding whether the column generated for the given data member is filterable. The property can also be set.
+* `IsSortable`&mdash;Provides information regarding whether the column generated for the given data member is sortable. The property can also be set.
+* `MemberName`&mdash;Gives information regarding the name of the underlying data member. The property can also be set.
 
-* __IsFilterable__: Provides information regarding whether the column generated for the given data member is filterable. The property can also be set.
-
-* __IsSortable__: Provides information regarding whether the column generated for the given data member is sortable. The property can also be set.
-
-* __MemberName__: Gives information regarding the name of the underlying data member. The property can also be set.
-
-#### __[C#] Example 1: Subscribing to the DataMemberNeeded event__
-
+#### __[C#] Subscribing to the DataMemberNeeded event__
 {{region radvirtualgrid-filtering-programmatic-filtering_0}}
 	private void VirtualGrid_DataMemberNeeded(object sender, DataMemberEventArgs e)
         {
@@ -46,18 +43,17 @@ It is raised when the control is initially loaded and data related information f
         }
 {{endregion}}
 
-### DistinctValuesLoading
+## DistinctValuesLoading
 
-When the user clicks the filtering funnel, this event is raised as the __FilteringControl__ needs to be populated with the relevant distinct values. Achieving this can be done through the properties of the event arguments.
+When the user clicks the filtering funnel, this event is raised as the FilteringControl needs to be populated with the relevant distinct values.
 
-* __Cancel__: The event can be canceled by setting the property value to true.
+Achieving this can be done through the properties of the event arguments:
 
-* __ColumnIndex__: Provides information regarding the index of the column for which the distinct values are needed.
+* `Cancel`&mdash;The event can be canceled by setting the property value to true.
+* `ColumnIndex`&mdash;Provides information regarding the index of the column for which the distinct values are needed.
+* `ItemsSource`&mdash;The property through which the distinct values required for the given column are provided.
 
-* __ItemsSource__: The property through which the distinct values required for the given column are provided.
-
-#### __[C#] Example 2: Subscribing to the DistinctValuesLoading event__
-
+#### __[C#] Subscribing to the DistinctValuesLoading event__
 {{region radvirtualgrid-filtering-programmatic-filtering_1}}
 	private void VirtualGrid_DistinctValuesLoading(object sender, DistinctValuesLoadingEventArgs e)
         {
@@ -70,22 +66,22 @@ When the user clicks the filtering funnel, this event is raised as the __Filteri
 
 The end result after providing the needed distinct values will be as shown below.
 
-#### __Figure 1: RadVirtualGrid populated with distinct values__
-![Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Programmatic_Filtering_02.png)
+__RadVirtualGrid populated with distinct values__
 
-### FilterOperatorsLoading
+![WPF Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Programmatic_Filtering_02.png)
 
-After the required distinct values are loaded, the __FilteringControl__ provides a mechanism its filter operators to be manipulated. The event arguments expose the following properties.
+## FilterOperatorsLoading
 
-* __AvailableOperators__: A readonly collection containing the available filter operators. It cannot be assigned and filter operators can only be removed from it.
+After the required distinct values are loaded, the FilteringControl provides a mechanism its filter operators to be manipulated.
 
-* __ColumnIndex__: Providing information regarding the index for the column for which the filter operators are being loaded.
+The event arguments expose the following properties:
 
-* __DefaultFilterOperator1__: Gets or sets the first default operator.
+* `AvailableOperators`&mdash;A readonly collection containing the available filter operators. It cannot be assigned and filter operators can only be removed from it.
+* `ColumnIndex`&mdash;Providing information regarding the index for the column for which the filter operators are being loaded.
+* `DefaultFilterOperator1`&mdash;Gets or sets the first default operator.
+* `DefaultFilterOperator2`&mdash;Gets or sets the second default operator.
 
-* __DefaultFilterOperator2__: Gets or sets the second default operator.
-
-#### __[C#] Example 3: Subscribing to the FilterOperatorsLoading event__
+#### __[C#] Subscribing to the FilterOperatorsLoading event__
 {{region radvirtualgrid-filtering-programmatic-filtering_2}}
 	 private void VirtualGrid_FilterOperatorsLoading(object sender, FilterOperatorsLoadingEventArgs e)
         {
@@ -97,16 +93,16 @@ After the required distinct values are loaded, the __FilteringControl__ provides
         }
 {{endregion}}
 
-### FieldFilterEditorCreated
+## FieldFilterEditorCreated
 
-Raised when the FilteringControl loads the field filter editor. It provides the ability the default filter editor to be customized. This can be achieved through the properties of the event arguments.
+Raised when the FilteringControl loads the field filter editor. It provides the ability the default filter editor to be customized.
 
-* __ColumnIndex__: Gives information regarding the index of the column for which the filter editor has been created.
+This can be achieved through the properties of the event arguments:
 
-* __Editor__: The default field filter editor can be accessed. Also, this is the property through which a custom filter editor can be applied.
+* `ColumnIndex`&mdash;Gives information regarding the index of the column for which the filter editor has been created.
+* `Editor`&mdash;The default field filter editor can be accessed. Also, this is the property through which a custom filter editor can be applied.
 
-#### __[C#] Example 4: Subscribing to the FieldFilterEditorCreated event__
-
+#### __[C#] Subscribing to the FieldFilterEditorCreated event__
 {{region radvirtualgrid-filtering-programmatic-filtering_3}}
 	private void VirtualGrid_FieldFilterEditorCreated(object sender, FieldFilterEditorCreatedEventArgs e)
         {
@@ -123,12 +119,13 @@ Raised when the FilteringControl loads the field filter editor. It provides the 
         }
 {{endregion}}
 
-### FilterOperatorsPreparing
+## FilterOperatorsPreparing
 
-It is triggered when the filter operators are being prepared. Here is the state at which the filtering can be canceled if needed. This can be done by setting the __Cancel__ property of the event arguments to __true_.
+It is triggered when the filter operators are being prepared. Here is the state at which the filtering can be canceled if needed. 
 
-#### __[C#] Example 5: Subscribing to the FilterOperatorsPreparing event__
+This can be done by setting the `Cancel` property of the event arguments to __true__ as shown in the following example:
 
+#### __[C#] Subscribing to the FilterOperatorsPreparing event__
 {{region radvirtualgrid-filtering-programmatic-filtering_4}}
 	private void VirtualGrid_FilterDescriptorsPreparing(object sender, FilteringEventArgs e)
         {
@@ -139,20 +136,18 @@ It is triggered when the filter operators are being prepared. Here is the state 
         }
 {{endregion}}
 
-### FilterOperatorsPrepared
+## FilterOperatorsPrepared
 
-At this state the filter operators are ready and the filtering operation can be executed. The event arguments provide the properties listed below.
+At this state the filter operators are ready and the filtering operation can be executed.
 
-* __Added__: A collection of the added filter descriptor.
+The event arguments provide the properties listed below:
 
-* __ColumnFilterDescriptor__: The filter descriptor generated for the given column.
+* `Added`&mdash;A collection of the added filter descriptor.
+* `ColumnFilterDescriptor`&mdash;The filter descriptor generated for the given column.
+* `ColumnIndex`&mdash;The index for which the filter operators have been loaded.
+* `Removed`&mdash;The collection of removed filter operators.
 
-* __ColumnIndex__: The index for which the filter operators have been loaded.
-
-* __Removed__: The collection of removed filter operators.
-
-#### __[C#] Example 6: Subscribing to the FilterOperatorsPrepared event__
-
+#### __[C#] Subscribing to the FilterOperatorsPrepared event__
 {{region radvirtualgrid-filtering-programmatic-filtering_5}}
 	private void VirtualGrid_FilterDescriptorsPrepared(object sender, FilteredEventArgs e)
         {
@@ -166,7 +161,40 @@ At this state the filter operators are ready and the filtering operation can be 
         }
 {{endregion}}
 
-Note, that in the example above, the __CompositeFilterDescriptorCollection__ is used for filtering the __underlying data source__. For this purpose, the __Where extension method__ which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryableextensions#Telerik_Windows_Data_QueryableExtensions_Where_System_Linq_IQueryable_Telerik_Windows_Data_CompositeFilterDescriptorCollection_). After the filtering is evaluated for the data source, the __InitialRowCount__ of __RadVirtualGrid__ needs to be set so that it equals the number of items that have passed the filtering criteria.
+Note, that in the example above, the `CompositeFilterDescriptorCollection` is used for filtering the __underlying data source__. For this purpose, the __Where extension method__ which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryableextensions#Telerik_Windows_Data_QueryableExtensions_Where_System_Linq_IQueryable_Telerik_Windows_Data_CompositeFilterDescriptorCollection_). After the filtering is evaluated for the data source, the `InitialRowCount` of RadVirtualGrid needs to be set so that it equals the number of items that have passed the filtering criteria.
+
+## FilterDescriptorsPreparing
+
+This event is raised when the filter descriptors for the filtered column are being prepared.
+
+The event arguments are of the type of `FilteringEventArgs` and expose the following properties:
+
+* `Added`&mdash;Provides a collection that contains the added filter descriptors.
+* `Removed`&mdash;Provides a collection that contains the removed filter descriptors.
+* `ColumnFilterDescriptor`&mdash;Gets the filter descriptor for the filtered column.
+* `ColumnIndex`&mdash;Gets the index of the column that is filtered.
+* `Cancel`&mdash;Allows you to cancel the preparation of the filter descriptors.
+
+#### __[C#] Subscribing to the FilterDescriptorsPreparing event__
+{{region radvirtualgrid-filtering-programmatic-filtering-6}}
+
+{{endregion}}
+
+## FilterDescriptorsPrepared
+
+This event is raised when the filter descriptors for the filtered column are prepared and the filtering operation will be executed.
+
+The event arguments are of the type of `FilteredEventArgs` and expose the following properties:
+
+* `Added`&mdash;Provides a collection that contains the added filter descriptors.
+* `Removed`&mdash;Provides a collection that contains the removed filter descriptors.
+* `ColumnFilterDescriptor`&mdash;Gets the filter descriptor for the filtered column.
+* `ColumnIndex`&mdash;Gets the index of the column that is filtered.
+
+#### __[C#] Subscribing to the FilterDescriptorsPreparing event__
+{{region radvirtualgrid-filtering-programmatic-filtering-6}}
+
+{{endregion}}
 
 ## See Also
 

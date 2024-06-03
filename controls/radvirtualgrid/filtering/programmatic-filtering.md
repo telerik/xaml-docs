@@ -155,7 +155,7 @@ The event arguments are of the type of `FilteredEventArgs` and expose the follow
 * `ColumnFilterDescriptor`&mdash;Gets the filter descriptor for the filtered column.
 * `ColumnIndex`&mdash;Gets the index of the column that is filtered.
 
-#### __[C#] Subscribing to the FilterDescriptorsPreparing event__
+#### __[C#] Subscribing to the FilterDescriptorsPrepared event__
 {{region radvirtualgrid-filtering-programmatic-filtering-5}}
 private void VirtualGrid_FilterDescriptorsPrepared(object sender, FilteredEventArgs e) 
 { 

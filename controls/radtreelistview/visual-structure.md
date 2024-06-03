@@ -10,15 +10,11 @@ position: 2
 
 # Visual Structure
 
-
-
-## 
-
 This section defines the terms and concepts used in the scope of __RadTreeListView__ that you have to get familiar with prior to continue reading this help. They can also be helpful when contacting the support service in order to describe your issue better. Below you can see snapshots and explanations of the main states and visual elements of the standard __RadTreeListView__ control.
 
 __RadTreeListView__ is an essential user interface control used to display hierarchical structures in tabular format. The represented data is organized in rows and columns and can be additionally sorted and filtered. Below you can see snapshots and explanations of the main visual elements of the standard __RadTreeListView__ control.
 
->As the __RadTreeListView__ directly inherits the __RadGridView__ it shares a common visual structure with it. This topic will cover only the specifics around the __RadTreeListView's__ structure. If you want a complete information about  the visual structure, please take a look at the {% if site.site_name == 'Silverlight' %}[Visual Structure](http://www.telerik.com/help/silverlight/gridview-visual-structure.html){% endif %}{% if site.site_name == 'WPF' %}[Visual Structure](http://www.telerik.com/help/wpf/gridview-visual-structure.html){% endif %} topic in the __RadGridView__ documentation.
+>As the __RadTreeListView__ inherits the base class of __RadGridView__ (__GridViewDataControl__) it shares a common visual structure with it. This topic will cover only the specifics around the __RadTreeListView's__ structure. If you want a complete information about  the visual structure, please take a look at the {% if site.site_name == 'Silverlight' %}[Visual Structure](http://www.telerik.com/help/silverlight/gridview-visual-structure.html){% else %}[Visual Structure](http://www.telerik.com/help/wpf/gridview-visual-structure.html){% endif %} topic in the __RadGridView__ documentation.
 
 ![{{ site.framework_name }} RadTreeListView Visual Structure](images/RadTreeListView_VisualStructure_01.png)
 

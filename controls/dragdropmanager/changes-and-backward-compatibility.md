@@ -14,4 +14,4 @@ This article describes the breaking changes history of the DragDropManager contr
 
 To see the fixes and features included in our latest official release please refer to our [Release History](http://www.telerik.com/support/whats-new/wpf/release-history).
 
-* The `DragDropManager.TouchDragTrigger` attached property and the `TouchDragTrigger` enumeration are omitted. Use the `DragDropManager.DragStartTrigger`attached property and the `TouchDragStartTrigger` enumeration instead. 
+* The `DragDropManager.TouchDragTrigger` attached property and the `TouchDragTrigger` enumeration are omitted. Use the `TouchManager.DragStartTrigger`attached property and the `TouchDragStartTrigger` enumeration instead. 

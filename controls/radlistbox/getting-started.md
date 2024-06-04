@@ -20,6 +20,12 @@ In order to use __RadListBox__ in your project you have to add the following ass
 
 You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadListBox__ control in XAML code:
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadListBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadListBox to the Project
 
 #### __[XAML] Example 1: Adding RadListBox__

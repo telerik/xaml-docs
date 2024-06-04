@@ -19,6 +19,12 @@ In order to use __RadAutoSuggestBox__, you will need to add references to the fo
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadAutoSuggestBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining RadAutoSuggestBox
 
 RadAutoSuggestBox allows you to visualize a list of search results on demand when you enter text. When the text in the control changes, the __TextChanged__ event is fired, where you can filter the ItemsSource of the control. This will open the drop down and display the filtered items. 

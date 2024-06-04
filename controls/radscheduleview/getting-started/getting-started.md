@@ -29,6 +29,12 @@ In order to use the __RadScheduleView__ control in your projects, you have to ad
 * __Telerik.Windows.Controls.ScheduleView__
 * __Telerik.Windows.Data__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadScheduleView__ when working with NuGet packages, install the `Telerik.Windows.Controls.ScheduleView.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadScheduleView to the Project
 
 Before proceeding with adding __RadScheduleView__ to your project, make sure the required assembly references are added to the project. 

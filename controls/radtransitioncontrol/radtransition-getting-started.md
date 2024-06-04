@@ -26,6 +26,11 @@ In order to use RadTransitionControl control in your projects, you have to add a
 
 * __Telerik.Windows.Controls__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTransitionControl__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Add a RadTransitionControl to your application
 

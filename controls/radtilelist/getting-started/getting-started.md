@@ -11,7 +11,6 @@ position: 0
 # Getting Started with {{ site.framework_name }} TileList
 
 This tutorial will walk your through the creation of a sample application that contains __RadTileList__ and will show you how:
-      
 
 * Add RadTileList to your project
 
@@ -19,14 +18,24 @@ This tutorial will walk your through the creation of a sample application that c
 
 * Reorder RadTileList's Tile
 
-For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Visual Studio.
-      
+## Assembly References
+
+To use the __RadTileList__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Data__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTileList__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.      
 
 ## Creating RadTileList
 
 * Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project
-
-* Add references to the assemblies: __Telerik.Windows.Controls__ and __Telerik.Windows.Data__
 
 * Add RadTileList as demonstrated below:
 {% if site.site_name == 'Silverlight' %}

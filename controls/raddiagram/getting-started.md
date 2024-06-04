@@ -34,6 +34,12 @@ The following picture shows the interdependency between the RadDiagram main asse
 
 >tip You can find more info about the __Telerik UI for WPF__ dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use `RadDiagram` when working with NuGet packages, install the `Telerik.Windows.Controls.Diagrams.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Graph Object Model
 
 The __Graph Object Model__ is the main concept behind the diagramming framework. It contains the following three main objects:		

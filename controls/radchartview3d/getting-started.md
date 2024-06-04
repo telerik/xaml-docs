@@ -27,6 +27,12 @@ In order to use __RadCartesianChart3D__, you will need to add references to the 
 
 You can find the required assemblies for each control from the UI for WPF suite in [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadCartesianChart3D__ when working with NuGet packages, install the `Telerik.Windows.Controls.Chart.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining chart and axes
 
 To display the __RadCartesianChart3D__ you will need to define it along with its axes (see __Example 1__). You can find more information about the chart's axes in the [Axes]({%slug radchartview3d-axes%}) help article.

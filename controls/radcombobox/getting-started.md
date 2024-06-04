@@ -19,6 +19,12 @@ In order to use the __RadComboBox__ control in your projects, you have to add re
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadComboBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadComboBox to the Project
 
 Before proceeding with adding __RadComboBox__ to your project, make sure the required assembly references are added to the project. 

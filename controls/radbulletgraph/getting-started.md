@@ -21,6 +21,12 @@ In order to use RadBulletGraph in your project you have to add a reference to th
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadBulletGraph__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisulization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## BulletGraph Types
 
 The RadBulletGraph suite provides two controls - one horizontally arranged and one vertically.

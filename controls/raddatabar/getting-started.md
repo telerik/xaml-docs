@@ -24,6 +24,12 @@ In order to add __RadDataBar__ in your application, you need to add references t
 * __Telerik.Windows.Controls.DataVisualization__
 * __Telerik.Windows.Data__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadDataBar__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Visualization Types
 
 The RadDataBar suite contains the following controls representing the different visualizations.

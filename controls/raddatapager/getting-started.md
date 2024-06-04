@@ -14,24 +14,28 @@ The __RadDataPager__ is a control that allows you to split your data into pages 
 
 >To learn more about the concepts behind the __RadDataPager__ you can read the [Paging Essentials]({%slug raddapager-features-paging-essentials%}) topic first.
 
+## Assembly References
+
+To use the __RadDataPager__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Data__
+* __Telerik.Windows.Data__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadDataPager__ when working with NuGet packages, install the `Telerik.Windows.Controls.Data.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadDataPager
 
-In order to use __RadDataPager__ in your project, you need to add references to the following assemblies:
+To use the __RadDataPager__ in the XAML you have to add the following namespace declaration: __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__ 
 
-* __Telerik.Windows.Controls.dll__
-
-* __Telerik.Windows.Controls.Data.dll__
-
-* __Telerik.Windows.Data.dll__
-
-After adding references to the aforementioned dlls, you can declare a new __RadDataPager__ as any normal __Silverlight/WPF__ control.
-
->To use the __RadDataPager__ in the XAML you have to add the following namespace declaration: __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__ 
-
-#### __[XAML] Example 1: Declare a RadDataPager__
-
+#### __[XAML] Example 1: Declare a RadDataPager__ 
 {{region raddatapager-getting-started_0}}
-
 	<telerik:RadDataPager x:Name="radDataPager" />
 {{endregion}}
 

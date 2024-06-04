@@ -18,17 +18,26 @@ This article will walk your through the creation of a sample application that co
 
 * [Bind RadDataForm to a collection of custom objects](#binding-raddataform-to-a-collection-of-custom-objects);
 
-For the purpose of this example, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight {% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %}Application project and open it in Visual Studio.
+## Assembly References
+
+To use the __RadDataForm__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Data__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Data__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadDataForm__ when working with NuGet packages, install the `Telerik.Windows.Controls.Data.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadDataForm to the Project
 
 * Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
-
-* Add references to the assemblies:
-	* __Telerik.Windows.Controls__
-	* __Telerik.Windows.Controls.Data__
-	* __Telerik.Windows.Controls.Input__ 
-	* __Telerik.Windows.Data__
 
 * Add the RadDataForm to the Grid:
 

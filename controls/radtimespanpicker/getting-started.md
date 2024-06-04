@@ -12,9 +12,22 @@ position: 1
 
 This topic will walk you through the creating of  __RadTimeSpanPicker__.    
 
->In order to use __RadTimeSpanPicker__ in your project you have to add references to the following two assemblies:
-> * Telerik.Windows.Controls.dll
-> * Telerik.Windows.Controls.Input.dll
+## Assembly References
+
+To use the __RadTimeSpanPicker__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTimeSpanPicker__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+## Adding RadTimeSpanPicker to the Projects
 
 You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create __RadTimeSpanPicker__ in XAML
 

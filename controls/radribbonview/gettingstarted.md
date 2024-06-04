@@ -35,6 +35,12 @@ In order to use the RadRibbonView control, you will need to add references to th
 * __Telerik.Windows.Controls.RibbonView__
 * __Telerik.Windows.Data__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadRibbonView__ when working with NuGet packages, install the `Telerik.Windows.Controls.RibbonView.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining a RadRibbonView
 
 You can add a RadRibbonView manually in XAML as demonstrated in the following example:

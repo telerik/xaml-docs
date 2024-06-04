@@ -18,9 +18,15 @@ This tutorial will walk you through the creation of a sample application that co
 
 ## Assembly References
 
->In order to use __RadNumericUpDown__ control in your projects you have to add references to the following assemblies:
->	1. __Telerik.Windows.Controls__
->	2. __Telerik.Windows.Controls.Input__
+To use __RadNumericUpDown__ control in your projects you have to add references to the following assemblies:
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadNumericUpDown__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadNumericUpDown to the Project
 

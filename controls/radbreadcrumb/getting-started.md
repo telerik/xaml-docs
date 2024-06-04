@@ -20,11 +20,15 @@ In order to use __RadBreadcrumb__  in your projects, you have to add references 
 * __Telerik.Windows.Controls.Navigation__
 {% if site.site_name == 'WPF' %}
 * __Telerik.Windows.Data__ 
-
->You can find more info [here]({%slug installation-installing-controls-dependencies-wpf %}).
 {% endif %}
-{% if site.site_name == 'Silverlight' %}
->You can find more info [here]({%slug installation-installing-controls-dependencies%}).{% endif %}
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadBreadcrumb__ when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ##  Define a Breadcrumb control
 

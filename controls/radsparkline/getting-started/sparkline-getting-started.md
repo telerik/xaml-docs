@@ -25,6 +25,12 @@ In order to use the __RadSparkline__ control, you will need to add references to
 * __Telerik.Windows.Controls.DataVisualization__
 * __Telerik.Windows.Data__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadSparkline__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Sparkline Types
 
 The sparkline bundle contains few controls which can be used for different data visualization. The supported visualizations are line, scatter points, area, column and win/loss bars. Read more about this in the [Sparkline Types]({%slug radsparkline-getting-started-types%}) article.

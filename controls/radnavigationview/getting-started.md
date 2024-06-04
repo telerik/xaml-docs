@@ -20,6 +20,12 @@ To use __RadNavigationView__, add references to the following assemblies:
 
 >tip To find the required assemblies for each control, see the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadNavigationView__ when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining RadNavigationView
 
 __Example 1__ demonstrates how you can define a RadNavigationView in xaml.

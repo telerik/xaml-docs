@@ -22,17 +22,23 @@ __RadDataFilter__ is a control that allows you to filter your data. It allows yo
 
 * [Exposing the Filtered Collection](#exposing-the-filtered-collection)
 
+## Assembly References
+
+To use the __RadDataFilter__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Data__
+* __Telerik.Windows.Data__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadDataFilter__ when working with NuGet packages, install the `Telerik.Windows.Controls.Data.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadDataFilter
-
-In order to use __RadDataFilter__ in your project, you need to add references to the following assemblies:
-
-* __Telerik.Windows.Controls.Data.dll__
-
-* __Telerik.Windows.Controls.dll__
-
-* __Telerik.Windows.Data.dll__
-
-After adding references to the aforementioned dlls, you can declare a new __RadDataFilter__ as any normal Silverlight/WPF control.
 
 To use the __RadDataFilter__ in the XAML you have to add the following namespace declaration:
 

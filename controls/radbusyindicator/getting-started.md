@@ -20,6 +20,12 @@ In order to use __RadBusyIndicator__ in your projects, you have to add reference
 
 * __Telerik.Windows.Controls__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadBusyIndicator__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadBusyIndicator to the Project
 
 Make sure the required assembly reference is added to the project before you proceed with adding __RadBusyIndicator__ to your project.

@@ -22,6 +22,12 @@ To use RadAIPrompt, add a reference to the following assemblies:
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Data__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use `RadAIPrompt` when working with NuGet packages, install the `Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining the RadAIPrompt
 
 You can add RadAIPrompt manually in XAML as demonstrated in the following example:

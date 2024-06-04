@@ -16,20 +16,32 @@ This tutorial will walk your through the creation of a sample application contai
 
 * Utilize __RadExpressionEditor__ with other controls.
 
+## Assembly References
+
+To use the __RadExpressionEditor__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Data__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Expressions__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Data__
+* __Telerik.Windows.Documents__
+* __Telerik.Windows.Documents.Core__
+* __Telerik.Windows.Documents.Flow__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadExpressionEditor__ when working with NuGet packages, install the `Telerik.Windows.Controls.Expressions.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadExpressionEditor to the project
 
 * Create a new project;
 
-* Add references to the needed assemblies 
-	* __Telerik.Windows.Controls__
-	* __Telerik.Windows.Controls.Data__
-	* __Telerik.Windows.Controls.Expressions__
-	* __Telerik.Windows.Controls.Navigation__
-	* __Telerik.Windows.Data__
-	* __Telerik.Windows.Documents__
-	* __Telerik.Windows.Documents.Core__
-	* __Telerik.Windows.Documents.Flow__
-	
 >importantIf you are using **.NET 6** and later, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
 
 >In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged:  

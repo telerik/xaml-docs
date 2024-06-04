@@ -20,6 +20,14 @@ In order to use __RadTimeline__ control in your project you have to add referenc
 * __Telerik.Windows.Controls.DataVisualization.dll__
 * __Telerik.Windows.Data.dll__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTimeline__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+## Adding RadTimeline to the Project
+
 You can include the control in your page by either dragging it from the toolbox in Visual Studio or manually creating the control. __Example 1__ demonstrate how to create __RadTimeline__ in XAML.
 
 #### __[XAML] Example 1: Creating RadTimeline control__

@@ -21,6 +21,12 @@ In order to use __RadWatermarkTextBox__ in your application, you need to add ref
 
 * __Telerik.Windows.Controls__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadWatermarkTextBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadWatermarkTextBox to the Project 
 
 #### __[XAML] Example 1: Defining RadWatermarkTextBox__

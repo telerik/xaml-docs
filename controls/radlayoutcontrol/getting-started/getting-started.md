@@ -29,6 +29,12 @@ In order to use the __RadLayoutControl__ component, you will need to add referen
 
 You can find a list with the required assemblies for each control from the UI for WPF suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadLayoutControl__ when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining a RadLayoutControl
 
 You can add __RadLayoutControl__ manually in XAML as demonstrated in __Example 1__. 

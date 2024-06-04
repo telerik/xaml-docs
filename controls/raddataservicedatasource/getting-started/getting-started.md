@@ -12,20 +12,26 @@ position: 0
 
 This tutorial will walk you through the creation of a sample application that contains __RadDataServiceDataSource__  control. 
 
-> In order to use __RadDataServiceDataSource__ in your project you need to add references to the following assemblies
+## Assembly References
 
->- __Telerik.Windows.Controls__
+To use the __RadDataServiceDataSource__ in your projects you have to add references to the following assemblies:
 
->- __Telerik.Windows.Controls.DataServices__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.DataServices__
 
+If you are using OData version 3 you need to add reference to  __Telerik.Windows.Controls.DataServices50__ which is built against __Microsoft.Data.Services.Client__ with version __5.6.4__.
 
->tipIf you are using OData version 3 you need to add reference to  __Telerik.Windows.Controls.DataServices50__ which is built against __Microsoft.Data.Services.Client__ with version __5.6.4__.
+For OData version 4 support, you need to add reference to __Telerik.Windows.Controls.DataServices60__ which is built against __Microsoft.OData.Client__ with __version 6.15.0__.
 
-{% if site.site_name == 'WPF' %}
->tip For OData version 4 support, you need to add reference to __Telerik.Windows.Controls.DataServices60__ which is built against __Microsoft.OData.Client__ with __version 6.15.0__.
+Since the __R2 2021__ release, you can find a __Telerik.Windows.Controls.DataServices__ dll in the __WPF60__ and __WPF70__ folders built against __Microsoft.OData.Client__ with __version 7.8.3__.
 
->tip Since the __R2 2021__ release, you can find a __Telerik.Windows.Controls.DataServices__ dll in the __NetCore__, __WPF60__ and __WPF70__ folders built against __Microsoft.OData.Client__ with __version 7.8.3__.
-{% endif %}
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadDataServiceDataSource__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataServices.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadDataServiceDataSource 
 

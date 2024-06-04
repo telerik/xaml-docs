@@ -35,24 +35,21 @@ The __ElementExporting__ and __ElementExportingToDocument__ events can be cancel
 You can subscribe to the events either declaratively or from the code-behind, as shown in the next three examples.
 
 #### __[XAML] Example 1: Subscribe to events declaratively__
-
-	{{region xaml-gridview-export-events_0}}
+{{region xaml-gridview-export-events_0}}
 	<telerik:RadGridView x:Name="RadGridView1"
 	             ElementExporting="RadGridView1_ElementExporting"
 	             ElementExported="RadGridView1_ElementExported" />
 {{endregion}}
 
 #### __[C#] Example 2: Subscribe to events from the code-behind__
-
-	{{region cs-gridview-export-events_1}}
+{{region cs-gridview-export-events_1}}
 	RadGridView1.ElementExporting += RadGridView1_ElementExporting;
 	RadGridView1.ElementExported += RadGridView1_ElementExported;
 {{endregion}}
 
 
-#### __[VB.NET] Example 2: Subscribe to events from the code-behind__
-
-	{{region vb-gridview-export-events_2}}
+#### __[VB.NET] Example 2: Subscribe to events from the code-behind__  
+{{region vb-gridview-export-events_2}}
 	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
 	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
 {{endregion}}
@@ -81,8 +78,6 @@ The event argument's property __Element__ identifies the currently exported elem
 - *Table*
 
 You can use the Element property in combination with the __Cancel__ property to omit the export of a certain element.
-
->As of version __Q1 2015__, we have removed the obsolete class __GridViewExportEventArgs__ as well as the __TextAlignment__, __VerticalAlignment__, __Background__, __Foreground__, __FontFamily__, __FontSize__, __FontWeight__, __Width__, __Height__, __Styles__ and __Attributes__ properties from the __GridViewElementExportingEventArgs__ class. You can find detailed instructions on how to migrate your existing code related to styling in the [Backward Compatibility]({%slug radgridview-backward-compatibility%}#q1-2015) article.
 	
 ## ElementExported
 

@@ -96,7 +96,7 @@ When the __SelectionMode__ is __Extended__, you can set the __DragElementAction_
 
 ## Events
 
-There are five events relevant to the selection functionality in the RadGridView - __SelectionChanging, SelectionChanged, CurrentCellChanged, SelectedCellsChanging and SelectedCellsChanged__. To learn more about each of them go to the [Selection Events]({%slug gridview-selection-events%}) article.
+There are five events relevant to the selection functionality in the RadGridView - __SelectionChanging, SelectionChanged, CurrentCellInfoChanged, SelectedCellsChanging and SelectedCellsChanged__. To learn more about each of them go to the [Selection Events]({%slug gridview-selection-events%}) article.
 
 ## See Also
 

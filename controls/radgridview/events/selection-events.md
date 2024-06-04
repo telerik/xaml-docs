@@ -12,8 +12,8 @@ position: 5
 
 There are a number of events relevant to the selection in the RadGridView control. The sequence of the events depends on the __SelectionUnit__ property:
 
-* __FullRow__: The sequence of events is as follows&mdash;__CurrentCellChanged__  -> __CurrentCellInfoChanged__ -> __SelectionChanging__ -> __SelectedCellsChanging__ -> __SelectedCellsChanged__ -> __SelectionChanged__ .
-* __Cell__: The sequence of events is as follows&mdash;__CurrentCellChanged__  -> __CurrentCellInfoChanged__ -> __SelectedCellsChanging__ -> __SelectedCellsChanged__.
+* __FullRow__: The sequence of events is as follows&mdash; __CurrentCellInfoChanged__ -> __SelectionChanging__ -> __SelectedCellsChanging__ -> __SelectedCellsChanged__ -> __SelectionChanged__ .
+* __Cell__: The sequence of events is as follows&mdash; __CurrentCellInfoChanged__ -> __SelectedCellsChanging__ -> __SelectedCellsChanged__.
 * __Mixed__: The sequence of events depends on whether a row or a cell was selected.
 
 The events are fired by RadGridView each time there is a modification of the __SelectedItems__ / __SelectedCells__ collection, regardless of the way it happened (by user input or programmatically). 
@@ -56,7 +56,6 @@ Fires each time there is a change in the __SelectedItems__ collection. This happ
 	}
 {{endregion}}
 
-
 #### __[VB.NET] Subscribing to the SelectionChanged event__
 
 {{region vb-gridview-selection-events_3}}
@@ -68,32 +67,6 @@ The __SelectionChangeEventArgs__ class exposes the following specific properties
 
 * __AddedItems__&mdash;A collection of the items that have been added to the selection.
 * __RemovedItems__&mdash;A collection of the items that have been removed from the selection.
-
-## CurrentCellChanged
-
-This event is raised when a cell is selected. It fires before the __SelectionChanged__ event.
-
->This event was obsoleted with the **R3 2022 SP1** release. The event uses visual containers in its arguments which cannot be provided successfully in a virtualized scenario because of the container recycling. You can use the [CurrentCellInfoChangedEvent](#currentcellinfochanged) event instead.
-
-#### __[C#] Subscribing to the CurrentCellChanged event__
-
-{{region cs-gridview-selection-events_4}}
-	private void CurrentCellChanged(object sender, GridViewCurrentCellChangedEventArgs e)
-	{
-	}
-{{endregion}}
-
-#### __[VB.NET] Subscribing to the CurrentCellChanged event__
-
-{{region vb-gridview-selection-events_5}}
-	Private Sub CurrentCellChanged(ByVal sender As Object, ByVal e As GridViewCurrentCellChangedEventArgs)
-	End Sub
-{{endregion}}
-
-The __GridViewCurrentCellChangedEventArgs__ class exposes the following specific properties:
-
-* __NewCell__&mdash;An instance of the newly selected cell.
-* __OldCell__&mdash;An instance of the previously selected cell.
 
 ## CurrentCellInfoChanged
 

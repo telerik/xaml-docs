@@ -69,8 +69,6 @@ The event argument`s property __Element__ identifies the currently exported elem
 - *Table*
 
 You can use it in combination with the __Cancel__ property to omit the export of a certain element.
-
->As of version __Q1 2015__ we have removed the obsolete class GridViewExportEventArgs and TextAlignment, VerticalAlignment, Background, Foreground, FontFamily, FontSize, FontWeight, Width, Height, Styles, Attributes properties from GridViewElementExportingEventArgs class. You can find detailed instructions on how to migrate your existing code related to styling in the [Backward Compatibility]({%slug radgridview-backward-compatibility%}#q1-2015) article.
 	
 ## ElementExported
 

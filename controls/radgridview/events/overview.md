@@ -32,7 +32,7 @@ This topic covers the specific events exposed by the __RadGridView__ control and
 
 ### Selection Events
 
-* __CurrentCellChanged__: Occurs when the selected grid cell has changed. The type of the passed event arguments is __GridViewCurrentCellChangedEventArgs__.
+* __CurrentCellInfoChanged__: Occurs when the selected grid cell has changed. The type of the passed event arguments is __GridViewCurrentCellInfoChangedEventArgs__.
 
 * __SelectionChanged__: Occurs when the selected grid row has changed. The type of the passed event arguments is __SelectionChangeEventArgs__.
 

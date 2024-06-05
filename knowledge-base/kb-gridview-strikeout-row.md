@@ -1,7 +1,7 @@
 ---
 title: Strikeout the Rows of RadGridView
-description: This article will show you how to strikeout/strikethrough the RadGanttView rows.
-page_title: Strikethrough the Row of RadGridView
+description: This article will show you how to draw horizontal lines (strikeout/strikethrough) accross the RadGridView rows.
+page_title: Strikethrough the GridViewRow of RadGridView
 type: how-to
 slug: kb-gridview-strikeout-row
 position: 0
@@ -32,13 +32,13 @@ How to strikeout/strikethrough the rows of `RadGridView`.
 
 Extract the default `ControlTemplate` of the `GridViewRow` element. It has an __x:Name="GridViewRowTemplate"__. In it, add a new `Border` element and set the `Grid.Column` and `Grid.ColumnSpan` attached property to __2__. You can customize the color and the thickness via the `BorderBrush`, `Height`, and `BorderBrush` properties. Set the `Visibility` property to `Collapsed`. 
 
->tip To learn how to extract the default ControlTemplates of our controls, check the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) article.
+>tip To learn how to extract the default ControlTemplates of the Telerik controls, check the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}#extracting-control-templates-manually-from-the-theme-xaml-file) article.
 
 To control the visibility of the additional Border element, create a new `DataTrigger` in the `ControlTemplate.Triggers` collection of the extracted ControlTemplate. Bind DataTrigger to a property from your business model, which depending on its value, will change the Visibility property of the Border element.
 
 Create a new `Style` with `TargetType="GridViewRow"` and set the modified ControlTemplate to the `Template` property.
 
-The following example showcases this approach when the Windows 11 theme is applied:
+The following example showcases this approach when the [Windows 11 theme]({%slug common-styling-appearance-windows11-theme%}) is applied:
 
 #### __[C#] Creating a sample model and view model__
 {{region kb-gridview-strikeout-row-0}}

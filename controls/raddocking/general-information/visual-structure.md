@@ -52,4 +52,3 @@ To create a fully featured layout you need the following controls:
 
 * [Key Features]({%slug raddocking-key-features%})
 * [Getting Started]({%slug raddocking-getting-started2%})
-* [Templating the RadDocking]({%slug raddocking-styles-and-templates-templating-the-raddocking%})

@@ -51,9 +51,7 @@ In order to style all __ToolWindows__ in a RadDocking, you should create a style
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
-## See Also
-
- * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
+## See Also  
  * [Tool Window]({%slug raddocking-features-tool-window%})
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
  * [Docked/Floating Panes]({%slug raddocking-features-panes-docked-floating-panes%})

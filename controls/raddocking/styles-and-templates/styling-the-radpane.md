@@ -47,12 +47,9 @@ In order to style all __RadPane__ elements in a RadDocking, you should create a 
 
 >important You will notice that in __Figure 1__ all RadPanes are red except the selected one. Inside the ControlTemplate of the RadPane there are triggers/visual states which set the Background when a pane becomes selected and that value takes precedence over the value from the implicit style. In order to change this behavior, you can extract and modify the RadPane ControlTemplate for the theme(s) that you are using. For more information on how to do that read, the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
-## See Also
-
- * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
+## See Also  
  * [RadPane]({%slug raddocking-panes-radpane%})
  * [Docked/Floating Panes]({%slug raddocking-features-panes-docked-floating-panes%})
  * [Pinned/Unpinned Panes]({%slug raddocking-panes-pinned-unpinned-panes%})
- * [Controlling Appearance]({%slug raddocking-styling-controlling-appearance%})
  * [Styling the RadDocumentPane]({%slug raddocking-styling-the-raddocumentpane%})
  * [Styling the RadPaneGroup]({%slug raddocking-styling-the-radpanegroup%})

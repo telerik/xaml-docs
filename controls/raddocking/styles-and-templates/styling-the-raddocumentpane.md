@@ -16,10 +16,6 @@ For now the __RadDocumentPane__ control is identical to the __RadPane__ control 
 
 ## See Also
 
- * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
-
  * [RadPane]({%slug raddocking-panes-radpane%})
-
  * [RadDocumentPane]({%slug raddocking-panes-raddocumentpane%})
-
  * [Styling the RadPane]({%slug raddocking-styling-the-radpane%})

@@ -88,8 +88,8 @@ __RadDocking__ -> __RadSplitContainer__ -> __RadPaneGroup__ -> __RadPane__
 ## Styling and Appearance of the RadPane
 
 If you need to customize or style your __RadPane__ instances  take a look at the following topics:
-        
-* [Controlling Appearance]({%slug raddocking-styling-controlling-appearance%})
+       
+
 * [Styling the RadPane]({%slug raddocking-styling-the-radpane%})
 * [How to Customize or Remove the RadPane's Menu]({%slug raddocking-how-to-add-menu-items-to-the-radpanes-menu%})
 * [How to Add Buttons to the Pane Header]({%slug raddocking-how-to-add-buttons-to-the-pane-headers%})

@@ -42,10 +42,6 @@ Here is the XAML declaration of the above structure.
 
 >Placing `RadPaneGroup` directly in the DocumentHost is not a supported scenario in the Docking control. The RadPaneGroup needs to be placed in a `RadSplitContainer`.
 
-## Modifying DocumentHost
-
-The `DocumentHost` is part of the template of the Docking control. To learn how to modify it, take a look at the [Templating the RadDocking]({%slug raddocking-styles-and-templates-templating-the-raddocking%}) topic.
-
 ## Setting the CloseButtonPosition
 
 You could easily set the close button position of the Panes that are placed in the DocumentHost by setting the `CloseButtonPosition` property of the Docking control to one of the three built-in predefined settings (InGroup, InPane and InPaneAndGroup).

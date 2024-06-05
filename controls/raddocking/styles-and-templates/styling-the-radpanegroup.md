@@ -48,9 +48,7 @@ In order to style all __RadPaneGroups__ in a RadDocking, you should create a sty
 
 >tip In order to learn how to further modify the control by extracting its ControlTemplate, read the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article.
 
-## See Also
-
- * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
+## See Also   
  * [Pane Groups]({%slug raddocking-features-pane-groups%})
  * [RadPane]({%slug raddocking-panes-radpane%})
  * [Styling the RadPane]({%slug raddocking-styling-the-radpane%})

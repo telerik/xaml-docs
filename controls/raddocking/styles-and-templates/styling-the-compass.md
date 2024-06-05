@@ -52,7 +52,6 @@ In order to style all __Compass__ elements in a RadDocking, you should create a 
 
 ## See Also
 
- * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})
  * [Compass]({%slug raddocking-features-compass%})
  * [Drag and Drop]({%slug raddocking-features-drag-and-drop%})
  * [Styling the RootCompass]({%slug raddocking-styling-the-root-compass%})

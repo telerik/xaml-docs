@@ -45,7 +45,3 @@ In order to style all __RadTreeViewItem__ elements in a RadTreeView, you should 
 ![RadTreeViewItems with Red Foreground](images/RadTreeView_RadTreeViewItem_Style.png)
 
 > You can also use the [ItemContainerStyle]({%slug radtreeview-styling-and-appearance-item-container-style%}) and [ItemContainerStyleSelector]({%slug radtreeview-populating-with-data-item-container-style-selector%}) properties of the __RadTreeView__ in order to style its items. 
-
-## See Also
-
- * [Styling and Appearance - Overview]({%slug raddocking-styling-overview%})

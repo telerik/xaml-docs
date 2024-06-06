@@ -59,6 +59,12 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 >You can find more info [here]({%slug installation-installing-controls-dependencies-wpf%}).
 {% endif %}
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadMaskedInput__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 After adding references to the aforementioned dlls, you can declare a new __RadMaskedInput__ control as any normal {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control.				
 
 #### __[XAML] Example 1: Declare RadMaskedInput controls in XAML__

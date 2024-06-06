@@ -12,11 +12,20 @@ position: 2
 
 The __PersistenceFramework__ allows you to save the visual state of your application either in an isolated storage or in a Stream.  
 
->In order to use the __PersistenceFramework__ in your application, you need to add a reference to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.PersistenceFramework__ 
+## Assembly References
 
->You can find more info {% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html). {% endif %}{% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}
+To use the __PersistenceFramework__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.PersistenceFramework____
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __PersistenceFramework__ when working with NuGet packages, install the `Telerik.Windows.PersistenceFramework.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Persisted Types
 

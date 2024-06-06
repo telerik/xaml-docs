@@ -10,6 +10,21 @@ position: 1
 
 # Getting Started with {{ site.framework_name }} ColorPicker
 
+## Assembly References
+
+To use the __RadColorPicker__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadColorPicker__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Selection
 
 __RadColorPicker__ is a control that displays  a set of palettes from which the user can select a single color.		

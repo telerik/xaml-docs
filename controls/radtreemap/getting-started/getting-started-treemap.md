@@ -21,6 +21,12 @@ In order to use RadTreeMap, you will need to add references to the following ass
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTreeMap__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Setting up the Data Source
 
 To populate the control with tiles you will need to provide a collection of items that will be assigned to its __ItemsSource__ property. 

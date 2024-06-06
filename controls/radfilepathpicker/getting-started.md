@@ -23,6 +23,12 @@ In order to use __RadFilePathPicker__, you will need to add references to the fo
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadFilePathPicker__ when working with NuGet packages, install the `Telerik.Windows.Controls.FileDialogs.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining RadFilePathPicker
 
 __Example 1__ demonstrates how you can define a RadFilePathPicker in xaml.

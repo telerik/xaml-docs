@@ -47,6 +47,12 @@ In order to use the __RadTreeListView__ in your application, you should add refe
 
 * __Telerik.Windows.Controls.Input__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTreeListView__ when working with NuGet packages, install the `Telerik.Windows.Controls.GridView.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Add RadTreeListView to the Project
 
 After you make sure you have added the needed assembly references, you can either add the control manually by writing the __XAML code (Example 2)__ or you can drag it from the Visual Studio Toolbox and drop it over the XAML view.

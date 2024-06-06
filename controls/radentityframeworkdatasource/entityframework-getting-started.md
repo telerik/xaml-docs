@@ -60,6 +60,12 @@ Now let's go to the client side.
 
 * __Telerik.Windows.Data__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadEntityFrameworkDataSource__ when working with NuGet packages, install the `Telerik.Windows.Controls.EntityFramework.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 **2.** Now add the __RadGridView__ and __RadEntityFrameworkDataSource__ controls to the main window. **Example 1** demonstrates how you can do that.
 
 #### __[XAML] Example 1: Adding RadGridView and RadEntityFrameworkDataSource__

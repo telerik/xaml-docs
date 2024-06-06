@@ -18,10 +18,17 @@ The following picture shows the final result produced by the code of this tutori
 			
 ## Assembly References
 
-In order to use __RadStepProgressBar__, you will need to add references to the following assemblies:  
+In order to use __RadStepProgressBar__, you will need to add references to the following assemblies:
+  
 * __Telerik.Windows.Controls__
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadStepProgressBar__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Defining RadStepProgressBar
 

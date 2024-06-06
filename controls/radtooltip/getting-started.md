@@ -10,6 +10,22 @@ position: 2
 
 # Getting Started with {{ site.framework_name }} ToolTip
 
+## Assembly References
+
+To use the __RadToolTip__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadToolTip__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+## Using RadToolTip in the Project
+
 In order to use __RadToolTip__ you should take advantage of the __RadToolTipService__. You can set the attached property __RadToolTipService.TooltipContent__ on some element in XAML in order to show tooltip over it.
 
 #### __[XAML] Example 1__

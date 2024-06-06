@@ -19,6 +19,12 @@ To use `RadVirtualKeyboard`, add references to the following assemblies:
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Navigation__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use `RadVirtualKeyboard` when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining the RadVirtualKeyboard
 
 #### __[XAML] Defining RadVirtualKeyboard in XAML__

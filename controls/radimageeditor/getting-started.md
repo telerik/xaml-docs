@@ -22,6 +22,12 @@ In order to use __RadImageEditor__ in your projects, you have to add references 
 
 * __Telerik.Windows.Controls.Input__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadImageEditor__ when working with NuGet packages, install the `Telerik.Windows.Controls.ImageEditor.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadImageEditor to the Project
 
 The next few code examples will demonstrate how to add a __RadImageEditor__ in XAML, load a sample picture and execute a command on that picture. __Example 1__ showcases a __RadImageEditor__ and a Button defined in XAML.

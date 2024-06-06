@@ -20,6 +20,12 @@ In order to use the __RadGanttView__ control in your projects, you have to add r
 * __Telerik.Windows.Controls.GanttView__
 * __Telerik.Windows.Scheduling.Core__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadGanttView__ when working with NuGet packages, install the `Telerik.Windows.Controls.GanttView.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadGanttView to your project
 
 You can add __RadGanttView__ by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view. 

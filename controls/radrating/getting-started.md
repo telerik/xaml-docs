@@ -20,8 +20,14 @@ This topic helps you to quickly get started using the __RadRating__ control. It 
 ## Assembly References
 
 In order to use __RadRating__ in your projects you have to add references to the following two assemblies:
- * __Telerik.Windows.Controls__
- * __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadRating__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadRating to the project
 

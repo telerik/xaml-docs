@@ -12,29 +12,30 @@ position: 1
 
 This tutorial will walk you through the creation of a simple application containing **RadCarousel** and will show you how to:
 
-For the purpose of this example, you will need to create an empty WPF Application in Visual Studio.
+## Assembly References
 
-## Add RadCarousel to Your Project
+To use __RadCarousel__, add references to the following assemblies:
 
-Once a new WPF project is created, you will need to add references to the assemblies:
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Data__
 
-* **Telerik.Windows.Controls;**
+You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
-* **Telerik.Windows.Controls.Navigation;**
+### Adding Telerik Assemblies Using NuGet
 
-* **Telerik.Windows.Data;**
+To use `__RadCarousel__` when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
-Next, you need to add RadCarousel to your application. You may set some of its basic properties like **Background** or **Height**. Bear in mind that you will need to define the **telerik** namespace. Furthermore, if you want to access it in the code-behind, you may declare its **Name** attribute: 
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+## Adding RadCarousel to the Project
 
 #### __[XAML] Example 1: Adding RadGridView to application__
-
-	{{region xaml-carousel-getting-started_0}}
-	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
-	  <telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />
-	</UserControl>
+{{region xaml-carousel-getting-started_0}}
+	<telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />	
 {{endregion}}
 
-## Bind RadCarousel to a Collection of Custom Objects
+## Binding RadCarousel to a Collection of Custom Objects
 
 For the purpose of this tutorial we will create a new **Employee** class with a couple of properties:
 

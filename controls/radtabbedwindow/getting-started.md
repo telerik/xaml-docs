@@ -20,6 +20,12 @@ In order to use the __RadTabbedWindow__ control in your projects, you have to ad
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Controls.Data__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTabbedWindow__ when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadTabbedWindow to the Project
 
 Start by creating a new WPF window using Visual Studio's item template.

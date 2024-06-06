@@ -12,20 +12,24 @@ position: 1
 
 This article will explain a basic implementation of __RadPivotGrid__ using LocalDataSourceProvider.
 
-## Adding RadPivotGrid to your application.        
+## Assembly References
 
->__RadPivotGrid__ can be used after adding reference to the following assemblies:
-{% if site.site_name == 'WPF' %}
->* Telerik.Pivot.Core
->* Telerik.Windows.Controls.Pivot
->* Telerik.Windows.Controls
-{% endif %}
-{% if site.site_name == 'Silverlight' %}
->* Telerik.Pivot.Core
->* Telerik.Windows.Controls.Pivot
->* Telerik.Windows.Controls
->* System.Runtime.Serialization
-{% endif %}
+To use the __RadPivotGrid__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Pivot.Core__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Pivot__
+* __Telerik.Windows.Controls.Input__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadPivotGrid__ when working with NuGet packages, install the `Telerik.Windows.Controls.Pivot.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+## Adding RadPivotGrid to your application.        
 
 There are two ways to add __RadPivotGrid__ to your application:        
 

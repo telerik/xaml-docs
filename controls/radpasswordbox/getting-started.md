@@ -22,6 +22,12 @@ In order to use the __RadPasswordBox__ control in your projects, you have to add
 
 * __Telerik.Windows.Controls__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadPasswordBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadPasswordBox to the Project
 
 Before proceeding with adding __RadPasswordBox__ to your project, make sure the required assembly references are added to the project. 

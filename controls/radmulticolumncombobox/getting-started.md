@@ -24,6 +24,12 @@ In order to use __RadMultiColumnComboBox__ in your application, you need to add 
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Data__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadMultiColumnComboBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.GridView.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadMultiColumnComboBox to the Project
 
 #### __[XAML] Example 1: Defining RadMultiColumnComboBox Declaratively__

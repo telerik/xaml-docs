@@ -24,6 +24,12 @@ In order to use the __RadGauge__ control in your projects, you have to add refer
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.DataVisualization__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadGauge__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining a Numeric Gauge with a NumericScale
 
 Unlike the [radial]({%slug radgauge-getting-started-creating-radial-gauge%}#defining-a-radialgauge-with-a-radialscale) and [linear]({%slug radgauge-getting-started-creating-linear-gauge%}#defining-a-linear-gauge-with-a-linear-scale) scales, the numeric scale doesn't require a special container. However you can use any of the 9 radial gauge and 2 linear gauge controls to wrap the __NumericScale__ control. Additionally, you can put a __NumericScale__ in a __Grid__ container too. In order to define a numerical scale inside the __Gauge__ control, you have to use the __NumericScale__ control. The __Gauge__ works as an __ItemsControl__, which takes __NumericScale__ controls as items. This means that you can have more than one scale inside the gauge.

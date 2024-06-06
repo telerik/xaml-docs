@@ -20,6 +20,12 @@ In order to use the __RadTimePicker__ control in your projects, you have to add 
 
 You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug installation-installing-controls-dependencies%}){% endif %}{% if site.site_name == 'WPF' %}[here]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadTimePicker__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Setting the SelectedTime
 
 The __SelectedTime__ property holds the selected time. Examples 1 and 2 demonstrate how you can set this property in xaml and code behind. For more information, check out the [Selection]({%slug raddatetimepicker-features-selection%}) article of the __RadDateTimePicker__.

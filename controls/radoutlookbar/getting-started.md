@@ -10,28 +10,25 @@ position: 1
 
 # Getting Started with {{ site.framework_name }} OutlookBar
 
-## Adding the RadOutlookBar to the page
+## Assembly References
 
-{% if site.site_name == 'WPF' %}
->In order to use __RadOutlookBar__ control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__ 
->	- __Telerik.Windows.Controls.Navigation__ 
->	- __Telerik.Windows.Data__  
+To use the __RadOutlookBar__ in your projects you have to add references to the following assemblies:
 
->You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-{% endif %}
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Data__
 
-{% if site.site_name == 'Silverlight' %}
->In order to use __RadOutlookBar__ control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__ 
->	- __Telerik.Windows.Controls.Navigation__  
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 
->You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-{% endif %}
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadOutlookBar__ when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+## Adding the RadOutlookBar to the Project
 
 ![RadOutlookBar Step 1](images/outlook_step1.png)
-
-## Adding icons to the items
 
 #### __[XAML] Example 1__
 {{region xaml-radoutlookbar-getting-started_0}}

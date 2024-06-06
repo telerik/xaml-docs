@@ -18,7 +18,6 @@ This tutorial will walk you through the required steps for using `RadVirtualGrid
 * [Populating with Data through DataProvider](#populating-with-data-through-dataprovider)
 * [MeasureTextOnRender](#measuretextonrender)
 
-
 ## Assembly References
 
 In order to use RadVirtualGrid in your application, you need to add references to the following assemblies:
@@ -26,6 +25,12 @@ In order to use RadVirtualGrid in your application, you need to add references t
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.VirtualGrid__
 * __Telerik.Windows.Data__
+
+### Adding Telerik Assemblies Using NuGet
+
+To use `RadVirtualGrid` when working with NuGet packages, install the `Telerik.Windows.Controls.VirtualGrid.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadVirtualGrid to the Project
 

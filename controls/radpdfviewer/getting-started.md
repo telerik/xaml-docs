@@ -10,10 +10,7 @@ position: 1
 
 # Getting Started with {{ site.framework_name }} PdfViewer
 
-
-
-__RadPdfViewer__ is a control that allows you to display PDF files natively in {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. This topic helps you to quickly get started using the control. It focuses on the following:
-      
+__RadPdfViewer__ is a control that allows you to display PDF files natively in {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. This topic helps you to quickly get started using the control. It focuses on the following:      
 
 * [Adding the Required Assembly References](#assembly-references)
 * [Declaring RadPdfViewer in XAML](#adding-radpdfviewer-to-a-page)
@@ -21,8 +18,7 @@ __RadPdfViewer__ is a control that allows you to display PDF files natively in {
 
 ## Assembly References
 
-The minimal set of assembly references you need to add to your {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project in order to use RadPdfViewer are listed below:
-        
+The minimal set of assembly references you need to add to your {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project in order to use RadPdfViewer are listed below:        
 
 * **Telerik.Windows.Controls.dll**
 * **Telerik.Windows.Controls.FixedDocumentViewers.dll**
@@ -47,6 +43,14 @@ RadPdfViewer can also import and show documents containing predefined CMap table
 * **Telerik.Windows.Documents.CMapUtils.dll**
 
 >Check the [CMap tables](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/concepts/cmaps) topic for more details on importing documents containing that feature.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use RadPdfViewer when working with NuGet packages, install the `Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml` package.
+To use the PdfViewer's dialogs and other additional UI elements, install the `Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml` package.
+The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadPdfViewer to a Page
 

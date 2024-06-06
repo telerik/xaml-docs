@@ -11,7 +11,6 @@ position: 0
 # Getting Started with {{ site.framework_name }} Spreadsheet
 
 This article explains how to add a __RadSpreadsheet__ control to a page in your application.
-      
 
 It contains the following sections:
 
@@ -44,26 +43,28 @@ The assemblies that contain the implementation of __RadSpreadsheet__ and must be
 
 * **Telerik.Windows.Documents.Spreadsheet.dll**
 
-
 For export and import to **XLSX**:
 
 * **Telerik.Windows.Zip.dll**
 
 * **Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll**
 
-
 To export a document to **PDF**, you will need to add a reference to the corresponding assembly:
 
 * **Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll**
 
-
 Note that in order to import/export in XLSX or export to PDF, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadsheet-import-export%}).
 
-If you want to use the sample UI provided in our demos you should add this reference as well:
-        
+If you want to use the sample UI provided in our demos you should add this reference as well:        
 
 * **Telerik.Windows.Controls.RibbonView.dll**
 {% if site.site_name == 'WPF' %}* **Telerik.Windows.Controls.SpreadsheetUI.dll**{% endif%}
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadSpreadsheet__ when working with NuGet packages, install the `Telerik.Windows.Controls.Spreadsheet.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Namespaces
 

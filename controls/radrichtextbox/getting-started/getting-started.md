@@ -53,7 +53,6 @@ For import from/ export to different file formats, you would need references to:
 * __Telerik.Windows.Documents.FormatProviders.Rtf__ for RTF.
 * __Telerik.Windows.Documents.FormatProviders.Pdf__ and __Telerik.Windows.Zip__ for PDF (export only).
 
-
 The default en-US dictionary for SpellChecking is located in:
 
 * __Telerik.Windows.Documents.Proofing.Dictionaries.En-US__.
@@ -61,14 +60,22 @@ The default en-US dictionary for SpellChecking is located in:
 {% if site.site_name == 'Silverlight' %}
 >A reference to __Telerik.Windows.Documents.FormatProviders.Html__ has to be added in order to use HTML printing.{% endif %}
 
-
 {% if site.site_name == 'WPF' %}
 >In order to be able to __copy/paste rich text__ from desktop applications, you have to add references to __Telerik.Windows.Documents.FormatProviders.Rtf__ and __Telerik.Windows.Documents.FormatProviders.Html__.{% endif %}
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadRichTextBox__ when working with NuGet packages in __.NET Framework 4.6.2__, install the `Telerik.Windows.Documents.for.Wpf.Xaml` package. In .NET Framework 4.6.2 you will need to install packages also for the format providers and the RichTextBoxUI component. In .NET 6 these components are merged in the RichTextBox package mentioned below.
+
+To use __RadRichTextBox__ when working with NuGet packages in __.NET 6__ and later, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml` package. 
+
+The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadRichTextBox to the Project
 
-After adding references to the aforementioned assemblies, you can declare RadRichTextBox manually by writing the XAML code as in the following example or add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
-        
+After adding references to the aforementioned assemblies, you can declare RadRichTextBox manually by writing the XAML code as in the following example or add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.        
 
 #### __[XAML] Adding RadRichTextBox in XAML__
 {{region radrichtextbox-getting-started_0}}

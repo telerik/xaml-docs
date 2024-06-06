@@ -14,11 +14,18 @@ This article will help you get started with the Telerik RadColorEditor control
 
 ## Assembly References
 
->In order to use the __RadColorEditor__ in your projects you have to add references to the following assemblies:
+To use the __RadColorEditor__ in your projects you have to add references to the following assemblies:
+
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
->{% if site.site_name == 'WPF' %}You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}
->{% if site.site_name == 'Silverlight' %}You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %}
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadColorEditor__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding __RadColorEditor__ to the Project
 

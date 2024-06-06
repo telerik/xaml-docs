@@ -21,20 +21,17 @@ This tutorial will walk you through the creation of a sample application that co
 
 In order to use __RadPanelBar__ control in your projects you have to add references to the following assemblies:
 
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
 {% if site.site_name == 'WPF' %}
-
-* __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Data__
-
 {% endif %}
 
-{% if site.site_name == 'Silverlight' %}
+### Adding Telerik Assemblies Using NuGet
 
-* __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Navigation__
+To use __RadPanelBar__ when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
-{% endif %}
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadPanelBar to the Project
 

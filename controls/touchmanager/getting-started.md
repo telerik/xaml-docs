@@ -12,7 +12,19 @@ position: 2
 
 This article demonstrates a simple image gallery implemented with __TouchManager__ and demonstrates the basic usage of the manager.
 
-> TouchManager requires the __Telerik.Windows.Controls__ assembly to be referenced in the project.
+## Assembly References
+
+To use the __TouchManager__ in your projects you have to add references to the following assemblies:
+
+* __Telerik.Windows.Controls__
+
+You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __TouchManager__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 First, we can create the UI of the gallery (Example 1). We will use one panel to hold several Image elements that will represent the gallery with the small images (the thumbnails). Then we can add another panel that will display the selected image.
 

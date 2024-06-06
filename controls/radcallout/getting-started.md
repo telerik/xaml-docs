@@ -20,6 +20,12 @@ To use RadCallout, you will need to add references to the following assemblies:
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
+### Adding Telerik Assemblies Using NuGet
+
+To use `RadCallout` when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Defining RadCallout in XAML
 
 The control can be used as a static element to highlight an element from your application. This gives you the freedom to place the control in any type of parent.

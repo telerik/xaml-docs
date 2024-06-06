@@ -30,8 +30,14 @@ This tutorial will walk you through the creation of a `RadMenu` and will show yo
 
 In order to use the RadMenu control in your projects you have to add references to the following assemblies:
 
-* __Telerik.Windows.Controls.Navigation.dll__
-* __Telerik.Windows.Controls.dll__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Navigation__
+
+### Adding Telerik Assemblies Using NuGet
+
+To use RadMenu when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadMenu
 

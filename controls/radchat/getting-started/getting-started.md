@@ -19,6 +19,12 @@ This topic will guide you through the process of creating a sample application c
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Controls.ConversationalUI__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadChat__ when working with NuGet packages, install the `Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadChat to the Project
 
 Before proceeding with adding __RadChat__ to your project, make sure the required assembly references are added to the project. 

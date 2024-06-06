@@ -12,9 +12,16 @@ position: 1
 
 This topic will walk you through the creating of __RadRadialMenu__.    
 
->In order to use __RadRadialMenu__ in your project you have to add references to the following two assemblies:
-> * Telerik.Windows.Controls.dll
-> * Telerik.Windows.Controls.Navigation.dll
+To use __RadRadialMenu__ in your project you have to add references to the following two assemblies:
+
+* Telerik.Windows.Controls.dll
+* Telerik.Windows.Controls.Navigation.dll
+
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadRadialMenu__ when working with NuGet packages, install the `Telerik.Windows.Controls.Navigation.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## RadRadialMenu as a Normal Menu
 

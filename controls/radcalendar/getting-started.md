@@ -19,6 +19,12 @@ In order to use the __RadCalendar__ control in your projects, you have to add re
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
 
+### Adding Telerik Assemblies Using NuGet
+
+To use __RadCalendar__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
 ## Adding RadCalendar to the Project
 
 **Example 1** demonstrates how you can add a RadCalendar in xaml.

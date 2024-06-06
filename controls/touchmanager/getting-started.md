@@ -26,12 +26,6 @@ To use __TouchManager__ when working with NuGet packages, install the `Telerik.W
 
 Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadColorEditor__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
-
 First, we can create the UI of the gallery (Example 1). We will use one panel to hold several Image elements that will represent the gallery with the small images (the thumbnails). Then we can add another panel that will display the selected image.
 
 #### __[XAML] Example 1: Defining the UI of the TouchManager example__

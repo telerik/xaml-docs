@@ -1,6 +1,6 @@
 ---
-title: Focus Input Controls In Header
-page_title: Focus Input Controls In Header
+title: Allow Hit Test on Controls in the Header
+page_title: Allow Hit Test on Controls in the Header
 description: Check our &quot;Focus Input Controls In Header&quot; documentation article for the RadWindow {{ site.framework_name }} control.
 slug: radwindow-how-to-focus-input-controls-in-header
 tags: focus,input,controls,in,header
@@ -8,20 +8,20 @@ published: True
 position: 0
 ---
 
-# Focus Input Controls In Header
+# Allow Hit Test on Controls in the Header
 
-An interesting use case when working with the **RadWindow** control is when you want to add an input control, let's say **TextBox**, for example, to the window's header. When trying to do so, however, you will notice that the RadWindow itself handles various mouse events. In such way it prevents the input control from gaining focus, making it almost unusable.
+By default `RadWindow` handles the mouse events for the elements defined in its header, which excludes them from the hit testing.
 
-To prevent the RadWindow from handling the mouse events, you have to set the attached **WindowHost.HitTestable** of the input control to **True**.
+This means that placing input controls like `TextBox` or `Button` won't react to the mouse events. To change this behavior, set the `WindowHost.HitTestable` attached property on the corresponding element to `true`.
 
-#### __[XAML] Example 1: Set WindowHost.HitTestable property__
-
+#### __[XAML] Set the WindowHost.HitTestable property__  
 {{region xaml-radwindow-how-to-focus-input-controls-in-header_0}}
-	<TextBox Text="{Binding SearchText}" telerik:WindowHost.HitTestable="True" />
+	<telerik:RadWindow.Header>
+		<TextBox Text="{Binding Text}" telerik:WindowHost.HitTestable="True" />
+ 	<telerik:RadWindow.Header>
 {{endregion}}
 
-## See Also
-
+## See Also  
  * [Center the Header of the RadWindow]({%slug radwindow-how-to-center-the-header-of-the-content%})
  * [Working with RadWindow]({%slug radwindow-features-working-with-radwindow%})
  * [Hide the Maximize and Minimize Buttons]({%slug radwindow-how-to-hide-minimize-maximize-buttons%})

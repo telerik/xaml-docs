@@ -76,7 +76,7 @@ When creating a custom map provider, you can choose one of these sources and ove
 
 #### __[C#] Example 2: Create a custom TiledMapSource__
 {{region radmap-howto-custom-provider_1}}
-	public cs-class MyMapSource : TiledMapSource
+	public class MyMapSource : TiledMapSource
 	{
 	       /// <summary>
 	       /// Initializes a new instance of the MyMapSource class.

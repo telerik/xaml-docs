@@ -35,7 +35,7 @@ The API of the `RadDiagram` control allows you to tweak your application for opt
 		(this.xDiagram.ContainerGenerator as GenericContainerGenerator<Telerik.Windows.Controls.Diagrams.RadDiagramItem>).ClearCache();
 	{{endregion}}
 
-* __Disable the segmentation service__&mdash;It is reponsible for continually dividing the RadDiagram into segments in order to more easily retrieve "nearby" shapes for certain operations. Disabling this service should be considered and tested on a "per application" basis as it could increase the overall performance, but slow down specific scenarios such as creating a connection and snapping. 
+* __Disable the segmentation service__&mdash;It is responsible for continually dividing the RadDiagram into segments in order to more easily retrieve "nearby" shapes for certain operations. Disabling this service should be considered and tested on a "per application" basis as it could increase the overall performance, but slow down specific scenarios such as creating a connection and snapping. 
 
 	#### __[C#] Disabling the SegmentationService__
 	{{region raddiagram-performance-tips-tricks_1}}
@@ -69,7 +69,7 @@ The API of the `RadDiagram` control allows you to tweak your application for opt
 	this.xDiagram.Connections.ForEach(x => x.Update());
 {{endregion}}
 
-* __Simplify Shapes Template__&mdash;In a scenario with a large number of shapes you can try to simplify the template of the shapes as much as possible. This way you can increase the initial load time. You can check the [Create Custom Shape]({%slug raddiagram-howto-create-custom-shape%}) help article which desribes how you can create a custom shape. __Example 2__ demonstrate possible template. 
+* __Simplify Shapes Template__&mdash;In a scenario with a large number of shapes you can try to simplify the template of the shapes as much as possible. This way you can increase the initial load time. You can check the [Create Custom Shape]({%slug raddiagram-howto-create-custom-shape%}) help article which desribes how you can create a custom shape. The following example demonstrate possible template: 
 
 #### __[XAML] Simplify Shapes Template__
 {{region raddiagram-performance-tips-tricks_3}}
@@ -88,7 +88,7 @@ The API of the `RadDiagram` control allows you to tweak your application for opt
 	</Style>
 {{endregion}}
 
-* __Routing__&mdash;The routing functionality of the diagram provides several algorithms __(OrgTreeRouter, AStarRouter, InflatedRectRouter)__ which can be used to reduce the crossing of the connection. In some cases, one can be much faster than others. You can test your scenario with all of them and used the one which works best for your case.
+* __Disable connection bridges__&mdash;In a scenario with many connections and enabled [connections bridge]({%slug raddiagrams-features-connections%}#connection-bridge) functionality, the performance can be reduced. The reason for this is because the algorithm for combining and calculating crossing geometries is a complex one. To disable it, set the `ConnectionBridge` property of RadDiagram to __None__.
        
 ## Optimize Copy Paste 
 
@@ -139,7 +139,17 @@ To use the diagram in a scenario with dynamic change of the graph source, you ne
 		this.diagram.LayoutAsync(LayoutType.Tree, settings);
 	}
 {{endregion}}
-	   
+
+## Routing
+
+* __Increase routing grid size__&mdash;Increasing the `DiagramConstants.RoutingGridSize` property's value will result in faster calculations for the routing paths with the cost of not so well-looking corners and routings around shapes.
+
+### AStarRouter
+
+* __Use the AStarRouter__&mdash;The `AStarRouter` uses a version of the [A* search algorithm](http://en.wikipedia.org/wiki/A*_search_algorithm) to find the best route between two points. This is not the default router of RadDiagram. To set it, create a new instance of the AStarRouter class and assign it to the `RoutingService.Router` property of the `RadDiagram` instance. There are some penalties when using this router. To learn more about them, check out the [AStarRouter]({%slug raddiagram-features-routing%}#astarrouter) section.
+* __Disable the AvoidShapes functionality__&mdash;The `AvoidShapes` property of the AStarRouter will make the connections go around the shapes. The default value is __True__, which will reduce the performance when having many shapes and connections in the current viewport. To disable it, set the AvoidShapes property to __False__.
+* __WallOptimization functionality__&mdash;If the `WallOptimization` property of the AStarRouter is set to __True__, the router will try to optimize the some of the steps, in order to reduce the amount of corners. This feature will increase the calculation time and may result in reduced perfomance.
+
 ## See Also
 
 * [Getting Started]({%slug raddiagram-getting-started%})

@@ -12,6 +12,10 @@ position: 4
 
 This article lists and describes the breaking changes introduced in the RadGridView component. For a full list of changes, see the [Release History](https://www.telerik.com/support/whats-new/wpf/release-history) pages of the Telerik UI for WPF product.
 
+## 2024 Q2 (2024.2.514)
+
+* Removed the `Telerik.Windows.Controls.ExportFormat.Xlsx` and `Telerik.Windows.Controls.ExportFormat.Pdf` enum options. Use the [ExportToPdf]({%slug gridview-export-pdf%}) and [ExportToXlsx]({%slug gridview-export-xlsx%}) methods instead.
+
 ## R3 2022 SP1
 
 * The `CurrentCellChanged` event was removed. Use [CurrentCellInfoChanged]({%slug gridview-selection-events%}#currentcellinfochanged) instead. The event was removed because it was using visual containers in its arguments which cannot be provided successfully in a virtualized scenario because of the containers recycling.

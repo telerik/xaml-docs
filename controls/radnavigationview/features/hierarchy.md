@@ -9,7 +9,7 @@ position: 0
 
 # Hierarchy
 
-RadNavigationView allows you to define sub-items in order to achieve hierarchical menu visualizаtion.
+RadNavigationView allows you to define sub-items in order to achieve hierarchical menu visualization.
 
 Each RadNavigationViewItem element has an Items collection that can be populated with RadNavigationViewItem elements, thus allowing multiple levels of items to be defined in the hierarchy.
 
@@ -106,6 +106,38 @@ __Sub menu flyout visualization__
 
 ![RadNavigationView Sub menu flyout visualization](images/radnavigationview-features-hierarchy-4.png)
 
+## AllowSingleClickExpandInCompactMode
+
+RadNavigationView exposes the `AllowSingleClickExpandInCompactMode` property. It allows you to choose if the top-level `RadNavigationViewItem` elements can expand with a single click when hosted in a [flyout]({%slug radnavigationview-features-hierarchy%}#flyout). The default value of the AllowSingleClickExpandInCompactMode property is __True__. If the property is set to false, two clicks will need to be performed, in order to open a different top-level RadNavigationViewItem element.
+
+#### __[XAML] Setting the AllowSingleClickExpandInCompactMode property__
+{{region radnavigationview-features-hierarchy-5}}
+	<telerik:RadNavigationView PaneHeader="Mail"
+	                           DisplayMode="Compact" 
+	                           AllowSingleClickExpandInCompactMode="False">
+	    <telerik:RadNavigationView.Items>
+	        <telerik:RadNavigationViewItem Content="Accounts">
+	            <telerik:RadNavigationViewItem.Items>
+	                <telerik:RadNavigationViewItem Content="Martin Ivanov (mi@prgs.com)"/>
+	                <telerik:RadNavigationViewItem Content="Stenly Grigorov (sg@prgs.com)"/>
+	            </telerik:RadNavigationViewItem.Items>
+	        </telerik:RadNavigationViewItem>
+	        <telerik:RadNavigationViewItem Content="Folders">
+	            <telerik:RadNavigationViewItem.Items>
+	                <telerik:RadNavigationViewItem Content="Inbox"/>
+	                <telerik:RadNavigationViewItem Content="Drafts"/>
+	                <telerik:RadNavigationViewItem Content="Sent Items"/>
+	                <telerik:RadNavigationViewItem Content="Deleted Items"/>
+	            </telerik:RadNavigationViewItem.Items>
+	        </telerik:RadNavigationViewItem>
+	    </telerik:RadNavigationView.Items>
+	</telerik:RadNavigationView>
+{{endregion}}
+
+__RadNavigationView with two clicks to open a different top-level RadNavigationViewItem element__
+
+![RadNavigationView with two clicks to open a different top-level RadNavigationViewItem element](images/radnavigationview-features-hierarchy-5.gif)
+
 ## Events
 
 The expanding and collapsing actions fire the `ItemExpanded` and `ItemCollapsed` events of RadNavigationView. 
@@ -113,12 +145,12 @@ The expanding and collapsing actions fire the `ItemExpanded` and `ItemCollapsed`
 Additionally, the RadNavigationViewItem exposes `Expanded` and `Collapsed` events.
 
 #### __[XAML] Subscribing to ItemExpanded event__
-{{region radnavigationview-features-hierarchy-5}}
+{{region radnavigationview-features-hierarchy-6}}
 	<telerik:RadNavigationView ItemExpanded="RadNavigationView_ItemExpanded" />
 {{endregion}}
 
 #### __[C#] ItemExpanded event handler__
-{{region radnavigationview-features-hierarchy-6}}
+{{region radnavigationview-features-hierarchy-7}}
 	private void RadNavigationView_ItemExpanded(object sender, RoutedEventArgs e)
 	{
 		var expandedItem = (RadNavigationViewItem)e.OriginalSource;

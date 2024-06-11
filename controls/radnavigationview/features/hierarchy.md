@@ -13,7 +13,7 @@ RadNavigationView allows you to define sub-items in order to achieve hierarchica
 
 Each RadNavigationViewItem element has an Items collection that can be populated with RadNavigationViewItem elements, thus allowing multiple levels of items to be defined in the hierarchy.
 
-#### __[XAML] Example 1: Setting up hierarchical navigation view in XAML__
+#### __[XAML] Setting up hierarchical navigation view in XAML__
 {{region radnavigationview-features-hierarchy-0}}
 	<telerik:RadNavigationView PaneHeader="Mail">
 		<telerik:RadNavigationView.Items>
@@ -37,45 +37,48 @@ Each RadNavigationViewItem element has an Items collection that can be populated
 
 To control the current expand state of a RadNavigationViewItem, set its __IsExpanded__ property.
 
-#### Figure 1: Hierarchical RadNavigationView
-![{{ site.framework_name }} RadNavigationView Hierarchical RadNavigationView](images/radnavigationview-features-hierarchy-0.png)
+__Hierarchical RadNavigationView__
+
+![RadNavigationView Hierarchical RadNavigationView](images/radnavigationview-features-hierarchy-0.png)
 
 ## Multiple Expanded Items
 
-By default, multiple RadNavigationViewItem elements with child items can be expanded at once. To change this and allow only a single expanded item, set the __AllowMultipleExpandedItems__ property of RadNavigationView to False. 
+By default, multiple RadNavigationViewItem elements with child items can be expanded at once. To change this and allow only a single expanded item, set the `AllowMultipleExpandedItems` property of RadNavigationView to False. 
 
-#### __[XAML] Example 2: Disabling multiple expanded items at once__
+#### __[XAML] Disabling multiple expanded items at once__
 {{region radnavigationview-features-hierarchy-1}}
 	<telerik:RadNavigationView AllowMultipleExpandedItems="False" />
 {{endregion}}
 
 ## Child Items Indentation
 
-To change the default horizontal offset (indent) of the child items relative to their parent, set the __SubItemsIndentation__ property of RadNavigationView.
+To change the default horizontal offset (indent) of the child items relative to their parent, set the `SubItemsIndentation` property of RadNavigationView.
 
-#### __[XAML] Example 3: Setting the indent of sub items__
+#### __[XAML] Setting the indent of sub items__
 {{region radnavigationview-features-hierarchy-2}}
 	<telerik:RadNavigationView SubItemsIndentation="10" />
 {{endregion}}
 
-#### Figure 2: Sub items indentation set to 10
-![{{ site.framework_name }} RadNavigationView Sub items indentation set to 10](images/radnavigationview-features-hierarchy-1.png)
+__Sub items indentation set to 10__
+
+![RadNavigationView Sub items indentation set to 10](images/radnavigationview-features-hierarchy-1.png)
 
 ## Expand and Collapse Icon
 
-RadNavigationViewItem has default expand and collapse icons shown in the right part of the item when it has children. To replace the icons, set the __ExpandedIcon__ and __CollapsedIcon__ properties of RadNavigationViewItem. The default icon template uses [RadGlyph]({%slug common-styling-appearance-radglyph%}) and you can set the properties to a glyph string from the [glyphs reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
+RadNavigationViewItem has default expand and collapse icons shown in the right part of the item when it has children. To replace the icons, set the `ExpandedIcon` and `CollapsedIcon` properties of RadNavigationViewItem. The default icon template uses [RadGlyph]({%slug common-styling-appearance-radglyph%}) and you can set the properties to a glyph string from the [glyphs reference sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}).
 
-#### __[XAML] Example 4: Setting the expand and collapse icons__
+#### __[XAML] Setting the expand and collapse icons__
 {{region radnavigationview-features-hierarchy-3}}
 	<telerik:RadNavigationViewItem ExpandedIcon="&#xe901;" CollapsedIcon="&#xe900;">
 {{endregion}}
 
-#### Figure 3: RadNaviationViewItems with folder glyphs as expand/collapse icons
-![{{ site.framework_name }} RadNavigationView RadNaviationViewItems with folder glyphs as expand/collapse icons](images/radnavigationview-features-hierarchy-2.png)
+__RadNaviationViewItems with folder glyphs as expand/collapse icons__
 
-To change this behavior and use other UI for the icons like a customized RadGlyph, an Image, or any other element, set the __ExpandedIconTemplate__ and __CollapsedIconTemplate__ properties. The properties expect DataTemplate values.
+![RadNavigationView RadNaviationViewItems with folder glyphs as expand/collapse icons](images/radnavigationview-features-hierarchy-2.png)
 
-#### __[XAML] Example 5: Setting the expand and collapse icon templates__
+To change this behavior and use other UI for the icons like a customized RadGlyph, an Image, or any other element, set the `ExpandedIconTemplate` and `CollapsedIconTemplate` properties. The properties expect DataTemplate values.
+
+#### __[XAML]Setting the expand and collapse icon templates__
 {{region radnavigationview-features-hierarchy-4}}
 	<Window.Resources>
 		<DataTemplate x:Key="ExpandedCollapsedIconTemplate">
@@ -89,30 +92,32 @@ To change this behavior and use other UI for the icons like a customized RadGlyp
                                    CollapsedIconTemplate="{StaticResource ExpandedCollapsedIconTemplate}" />                    
 {{endregion}}
 
-#### Figure 4: RadNavigationViewItems with folder images as expand/collapse icons
-![{{ site.framework_name }} RadNavigationView RadNavigationViewItems with folder images as expand/collapse icons](images/radnavigationview-features-hierarchy-3.png)
+__RadNavigationViewItems with folder images as expand/collapse icons__
 
-In data binding scenarios or when there are many items, you can use the __ItemContainerStyle__ property to set the icon properties.
+![RadNavigationView RadNavigationViewItems with folder images as expand/collapse icons](images/radnavigationview-features-hierarchy-3.png)
+
+In data binding scenarios or when there are many items, you can use the `ItemContainerStyle` property to set the icon properties.
 
 ## Flyout 
 
 When RadNavigationView is collapsed and its current [DisplayMode]({%slug radnavigationview-display-mode%}) Compact, you can display the nested menu items by clicking on the collapsed RadNavigationViewItems.
 
-#### Figure 5: Sub menu flyout visualization
-![{{ site.framework_name }} RadNavigationView Sub menu flyout visualization](images/radnavigationview-features-hierarchy-4.png)
+__Sub menu flyout visualization__
+
+![RadNavigationView Sub menu flyout visualization](images/radnavigationview-features-hierarchy-4.png)
 
 ## Events
 
-The expanding and collapsing actions fire the __ItemExpanded__ and __ItemCollapsed__ events of RadNavigationView. 
+The expanding and collapsing actions fire the `ItemExpanded` and `ItemCollapsed` events of RadNavigationView. 
 
-Additionally, the RadNavigationViewItem exposes __Expanded__ and __Collapsed__ events.
+Additionally, the RadNavigationViewItem exposes `Expanded` and `Collapsed` events.
 
-#### __[XAML] Example 6: Subscribing to ItemExpanded event__
+#### __[XAML] Subscribing to ItemExpanded event__
 {{region radnavigationview-features-hierarchy-5}}
 	<telerik:RadNavigationView ItemExpanded="RadNavigationView_ItemExpanded" />
 {{endregion}}
 
-#### __[C#] Example 7: ItemExpanded event handler__
+#### __[C#] ItemExpanded event handler__
 {{region radnavigationview-features-hierarchy-6}}
 	private void RadNavigationView_ItemExpanded(object sender, RoutedEventArgs e)
 	{

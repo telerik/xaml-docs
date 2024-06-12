@@ -155,7 +155,7 @@ The final result should look like the one on the snapshot below:
 			<Style TargetType="telerik:GridViewRow">
 				<Setter Property="telerik:DragDropManager.AllowDrag"
 						Value="True" />
-				<Setter Property="telerik:DragDropManager.TouchDragTrigger"
+				<Setter Property="telerik:TouchManager.DragStartTrigger"
 						Value="TapAndHold"/>
 			</Style>
 		</telerik:RadGridView.RowStyle>

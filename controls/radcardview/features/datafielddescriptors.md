@@ -103,6 +103,15 @@ The filtering from the UI can be disabled via the __AllowFiltering__ property.
 
 The UI of the data field's value presenter can be customized using the __EditorTemplate__ property when the data field is in edit mode. To change the element when the data fields is in normal state, then set the __ReadOnlyTemplate__. Read more in the [Customizing Cards]({%slug radcardview-appearance-customizing-groups%}) article.
 
+## Hiding the Data Field Descriptors Button
+
+To hide the button that shows the drop down with all fields ([Data Field Descriptors Button]({%slug radcardview-visual-structure%})), set the `DataFieldDescriptorsButtonVisibility` property of `RadCardView` to `Collapsed`.
+
+#### __[XAML] Setting CardDataFieldDescriptor DisplayOrder property__
+{{region radcardview-features-datafielddescriptors-5}}
+	<telerik:RadCardView DataFieldDescriptorsButtonVisibility="Collapsed"/>
+{{endregion}}
+
 ## See Also
 * [Data Binding]({%slug radcardview-populating-with-data-data-binding%})
 * [Customizing Groups]({%slug radcardview-appearance-customizing-groups%}) 

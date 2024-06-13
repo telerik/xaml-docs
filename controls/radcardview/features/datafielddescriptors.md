@@ -107,7 +107,7 @@ The UI of the data field's value presenter can be customized using the __EditorT
 
 To hide the button that shows the drop down with all fields ([Data Field Descriptors Button]({%slug radcardview-visual-structure%})), set the `DataFieldDescriptorsButtonVisibility` property of `RadCardView` to `Collapsed`.
 
-#### __[XAML] Setting CardDataFieldDescriptor DisplayOrder property__
+#### __[XAML] Setting DataFieldDescriptorsButtonVisibility property__
 {{region radcardview-features-datafielddescriptors-5}}
 	<telerik:RadCardView DataFieldDescriptorsButtonVisibility="Collapsed"/>
 {{endregion}}

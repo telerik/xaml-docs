@@ -5,10 +5,13 @@ description: Telerik UI for WPF allows you to create .NET Core projects.
 slug: netcore-project-converter
 tags: netcore,standard,converter,migration,migrate
 published: True
+include_in_navigation: False
 position: 2
 ---
 
 # .NET Core Project Converter
+
+>important With Q2 2024 the Project Converter is no longer supported. The converter works only with Visual Studio 2019 and .NET Core 3.1 projects. The last Telerik version where .NET Core 3.1 assemblies were distributed was 2024.1.423.
 
 Since R2 2020 Telerik UI for WPF suite provides tooling in Visual Studio 2019, via the [Telerik Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}), that will convert client projects that use .NET Framework 4.8 (or lower) into .NET Core projects to ease out the migration.
 

@@ -148,6 +148,20 @@ You can then add the margin to the RadSyntaxEditor as shown in **Example 3**.
 
 >You can add new bookmarks both by clicking on the margin in the UI and by programmatically adding integers to its Indicators collection.
 
+## Removing the Line Numbers Panel
+
+To remove the line numbers panel, you can clear the `ScrollableLeft` margins collection.
+
+#### [C#] Removing the line numbers
+{{region cs-radsyntaxeditor-features-margins-4}}
+	public MainWindow()
+	{
+		InitializeComponent();
+	      	this.syntaxEditor.Document = new Telerik.Windows.SyntaxEditor.Core.Text.TextDocument();
+	      	this.syntaxEditor.Margins.ScrollableLeft.Clear();
+	}
+{{endregion}}
+
 ## See Also
 
 * [Taggers]({%slug radsyntaxeditor-features-taggers%})

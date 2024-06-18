@@ -41,7 +41,7 @@ To change the number or filter the distinct values that are displayed, use the `
 
 ## Retrieving Columns Distinct Values
 
-RadGridView exposes the `GetDistinctValues` method that will allow you to retrieve distincts values of a column. The method has two overloads, that allows you to provide the distinct values limit (1000 by default) and to tell if the items that are filtered out by other filters should be included in the query.
+RadGridView exposes the `GetDistinctValues` method that retrieves the distincts values of a column. The method has two overloads, that allows you to provide the distinct values limit (1000 by default) and to tell if the items that are filtered out by other filters should be included in the query.
 
 #### __[C#] Using the default overload of the GetDistinctValues method__
 {{region gridview-filtering-customizing-distinct-values-2}}

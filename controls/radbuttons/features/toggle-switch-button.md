@@ -103,10 +103,10 @@ To set the corner radius of the track, set the `CheckedTrackRadius` and `Uncheck
 #### __[XAML] Setting track corner radius properties__
 {{region xaml-radbuttons-features-toggle-switch-button-8}}
 	<telerik:RadToggleSwitchButton ContentPosition="Both" 
-								   CheckedContent="On" 
-								   UncheckedContent="Off"
-								   CheckedTrackRadius="10"
-								   UncheckedTrackRadius="10"/>
+				       CheckedContent="On" 
+				       UncheckedContent="Off"
+				       CheckedTrackRadius="10"
+				       UncheckedTrackRadius="10"/>
 {{endregion}}
 
 __Tracks with radiuses of 5 and 10 pixels__  

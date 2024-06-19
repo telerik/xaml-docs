@@ -34,8 +34,10 @@ Here is a list of the most important properties.
 	</telerik:RadGridView>
 {{endregion}}
 
-#### __Figure 1: The resulting RadGridView__
+__The resulting RadGridView__  
 
 ![Image Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_6.png)
 
->You can have a look at the [Image Column Filtering](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) demo from the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/) for a good example of how to override GridViewImageColumn's distinct values to be images and not a string path.
+You can have a look at the [Image Column Filtering](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) demo from the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/) for a good example of how to override GridViewImageColumn's distinct values to be images and not a string path.
+
+The image column exposes also the `ErrorImageSource` property which can be used to set a placeholder image for the cases when an image error occurs. Image error in this context is when the file decoding fails and the [ImageFailed](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.image.imagefailed?view=windowsdesktop-8.0) event of the underlying `Image` control is raised.

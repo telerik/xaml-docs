@@ -73,4 +73,3 @@ Creating a DataTemplate in code is not as simple as creating a visual element, l
 ## See Also 
 * [Introduction]({%slug introduction%})
 * [Getting Started with XAML]({%slug common-faq%})
-* [Adding Telerik UI to an Application]({%slug installation-adding-to-application-create-application-and-adding-control%})

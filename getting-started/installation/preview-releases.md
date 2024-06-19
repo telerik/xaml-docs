@@ -37,4 +37,3 @@ The following image shows the name of the Preview dlls generated on 19th of Apri
 ## See Also  
 * [Installing UI for WPF from NuGet Package]({%slug nuget-installation%})
 * [Trial License Limitations]({%slug installation-installing-license-limitations-wpf%})  
-* [Creating an Application and Adding UI for WPF]({%slug installation-adding-to-application-create-application-and-adding-control%}) 

@@ -90,4 +90,3 @@ By default, the validation error tooltip message will appear only when the mouse
 ## See Also 
 * [Introduction]({%slug introduction%})
 * [Getting Started with XAML]({%slug common-faq%})
-* [Adding Telerik UI to an Application]({%slug installation-adding-to-application-create-application-and-adding-control%})

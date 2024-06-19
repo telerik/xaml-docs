@@ -1089,15 +1089,12 @@ navigation:
         position: 0
     "getting-started/installation":
         title: "Installation"
-        position: 5
+        position: 8
     "getting-started/installation/nuget":
         title: "NuGet Installation"        
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
-        position: 6
-    "getting-started/telerik-application-lifecycle":
-        title: "Telerik Application Lifecycle"
-        position: 7
+        position: 9
     "styling-and-appearance/stylemanager":
         title: "StyleManager"
         position: 10

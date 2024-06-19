@@ -5,7 +5,7 @@ description: This article lists the .NET versions supported by Telerik UI for WP
 slug: installation-distributions
 tags: distributions,versions
 published: True
-position: 4
+position: 3
 ---
 
 # Telerik .NET Version Distributions

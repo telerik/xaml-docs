@@ -5,7 +5,7 @@ description: Installing WPF Demos application.
 slug: installing-wpf-demos
 tags: installing, wpf, demos
 published: True
-position: 9
+position: 4
 site_name: WPF
 ---
 

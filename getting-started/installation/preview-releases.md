@@ -5,7 +5,7 @@ description: This article describes the Telerik WPF Preview release and how to d
 slug: installation-preview-releases
 tags: using,the,hotfix,(dlls,only), lib, latest, internal, build, preview
 published: True
-position: 6
+position: 5
 ---
 
 # Preview Release

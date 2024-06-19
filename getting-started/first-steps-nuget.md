@@ -1,14 +1,14 @@
 ---
-title: Using NuGet Installation
-page_title: Using NuGet Installation
+title: First Steps With Nuget
+page_title: First Steps With Nuget
 description: This article describes the lifecycle of a Telerik application when using nuget packages.
 slug: nuget-setup-lifecycle
 tags: nuget,lifecycle,application
 published: True
-position: 1
+position: 0
 ---
 
-# Telerik Application Lifecyle Using Nuget Packages
+# First Steps With Nuget Packages
 
 This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
 

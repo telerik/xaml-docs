@@ -5,7 +5,7 @@ description: "Get started with Telerik UI for WPF by following a step-by-step vi
 slug: getting-started-video-onboarding
 tags: onboarding,video,virtual,classroom,course,learning
 published: True
-position: 10
+position: 14
 ---
 
 # Video Onboarding

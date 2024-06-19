@@ -5,7 +5,7 @@ description: This article lists some resources to help you better understand of 
 slug: getting-started-next-steps
 tags: Next Steps
 published: True
-position: 3
+position: 5
 ---
 
 # Next Steps

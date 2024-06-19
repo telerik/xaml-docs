@@ -5,7 +5,7 @@ description: This article will show you the shortest way to get started with Tel
 slug: getting-started-explore-control-features
 tags: Explore Control Features
 published: True
-position: 1
+position: 3
 ---
 
 # Explore UI for WPF Control Features

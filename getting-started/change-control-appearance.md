@@ -5,7 +5,7 @@ description: This article explains how to customize the appearance of the contro
 slug: getting-started-change-control-appearance
 tags: Change Control Appearance
 published: True
-position: 2
+position: 4
 ---
 
 # Change Control Appearance

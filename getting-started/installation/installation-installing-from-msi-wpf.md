@@ -5,7 +5,7 @@ description: The article describes how to install the Telerik WPF product using 
 slug: installation-installing-from-msi-wpf
 tags: installing,ui,for,wpf,from,msi,file
 published: True
-position: 3
+position: 7
 site_name: WPF
 ---
 

@@ -5,7 +5,7 @@ description: The following topic will show you how to manually declare a Telerik
 slug: installation-adding-application-namespace-declaration
 tags: namespace,declaration
 published: True
-position: 10
+position: 13
 site_name: WPF
 ---
 

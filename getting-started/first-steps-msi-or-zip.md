@@ -1,18 +1,18 @@
 ---
-title: Using MSI or ZIP Installation
-page_title: Telerik Application Lifecyle Using MSI or ZIP Installation
+title: First Steps With MSI/ZIP
+page_title: First Steps With MSI and ZIP Installation
 description: This article describes the lifecycle of a Telerik WPF application when using MSI or ZIP installation.
 slug: msi-or-zip-setup-lifecycle
 tags: pipeline,lifecycle
 published: True
-position: 0
+position: 2
 ---
 
-# Telerik Application Lifecyle Using MSI or ZIP Installation
+# First Steps With MSI or ZIP
 
 This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
 
-The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file to get the dlls. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}) or [Telerik UI for WPF Extension]({%slug vsx-setup-lifecycle%}) as shown in the corresponding articles in this documentation section.
+The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file to get the dlls. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}) or [Telerik UI for WPF Extension]({%slug getting-started-first-steps%}) as shown in the corresponding articles in this documentation section.
 
 ## Creating a Project
 

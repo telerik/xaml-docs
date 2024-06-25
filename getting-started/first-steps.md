@@ -1,14 +1,14 @@
 ---
-title: First Steps
-page_title: First Steps
+title: First Steps with VS Extension
+page_title: First Steps with VS Extension
 description: This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
 slug: getting-started-first-steps
 tags: get,started,first,steps
 published: True
-position: 0
+position: 1
 ---
 
-# First Steps with Telerik UI for WPF
+# Telerik UI for WPF First Steps with Visual Studio Extensions
 
 This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
 

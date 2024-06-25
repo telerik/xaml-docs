@@ -5,7 +5,7 @@ description: The article describes how to install the Telerik WPF product using 
 slug: installation-installing-from-zip-wpf
 tags: installing,ui,for,from,zip,file
 published: True
-position: 4
+position: 6
 ---
 
 # Installing UI for {{ site.framework_name }} from ZIP File

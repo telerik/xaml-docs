@@ -58,3 +58,5 @@ RadRichTextBox allows you to define a custom caret factory. To do so, create a c
 {{region radrichtextbox-features-caret-2}}
     this.radRichTextBox.CaretFactory = new MyCaretFactory();
 {{endregion}}
+
+>tip You can find a runnable project with a customization to the caret functionality of the RadRichTextBox control in our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret). Additionally, you can view it in our [SDK Samples Browser](sdk-samples-browser) application under the name __Custom Caret__.

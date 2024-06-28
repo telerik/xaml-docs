@@ -9,7 +9,7 @@ published: True
 
 # Document Ruler
 
-The `DocumentRuler` element allows you to visualize a guide that will assist you in aligning text, tables, graphics, and other elements. To display the document ruler, wrap it around a `RadRichTextBox` instance.
+The `DocumentRuler` element allows you to visualize a guide that will assist you in aligning text, tables, graphics, and other elements via the thumbs of the horizontal and vertical rulers. To display the document ruler, wrap it around a `RadRichTextBox` instance.
 
 #### __[XAML] Displaying the DocumentRuler__
 {{region radrichtextbox-features-document-ruler-0}}
@@ -22,7 +22,7 @@ __RadRichTextBox with DocumentRuler__
 
 ![RadRichTextBox with DocumentRuler](images/radrichtextbox-features-document-ruler-0.png)
 
-## Customizing the Appearance the Document Ruler
+## Customizing the Appearance of the Document Ruler
 
 The DocumentRuler object derives from the `DocumentRulerBase` class, which exposes the following API for customizing the appearance:
 
@@ -42,7 +42,7 @@ The DocumentRuler object derives from the `DocumentRulerBase` class, which expos
 * `TableColumnThumbStyle`&mdash;This property allows you to specify a style for the table column thumb.
 * `DefaultRulerThumbType`&mdash;This property provides you with the ability to set a style for the default ruler thumb.
 
-#### __[XAML] Customizing the Appearance the Document Ruler__
+#### __[XAML] Customizing the Appearance of the Document Ruler__
 {{region radrichtextbox-features-document-ruler-1}}
     <telerik:DocumentRuler MarkersBrush="Orange">
         <telerik:DocumentRuler.VerticalThumbStyle>
@@ -106,3 +106,7 @@ The DocumentRuler control exposes the `IsReadOnly` property. You can use it to p
 ## Customizing the Behavior of the DocumentRuler
 
 You can customize the DocumentRuler's behavior by providing a custom implementation for the [IDocumentRulerController](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.richtextboxui.idocumentrulercontroller) interface to the `Controller` property. You can either create your own implementation of this interface or extend the default [RadRichTextBoxRulerController](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.richtextboxui.radrichtextboxrulercontroller) class.
+
+## See Also
+* [TabStop]({%slug radrichtextbox-features-raddocumenteditor%}#raddocumenteditor-methods)
+* [Section Columns]({%slug radrichtextbox-features-section-columns%})

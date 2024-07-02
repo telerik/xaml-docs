@@ -12,8 +12,6 @@ position: 0
 
 This tutorial will walk you through the common task of populating `RadComboBox` with `RadComboBoxItems` declaratively. 
 
-![{{ site.framework_name }} RadComboBox without Items](images/RadComboBox_PopulatingWithData_Declaratively_010.png)
-
 In order to add combobox items you need to use the `RadComboBox` `Items` property. The property is of `ItemCollection` and it contains the populated items. The following example shows how to add items in the ComboBox:
 
 #### __[XAML]__  

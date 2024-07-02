@@ -1,8 +1,8 @@
 ---
-title: How to Utilize the LocalizableResourceExtension Markup Extension. 
+title: How to Utilize the LocalizableResourceExtension Markup Extension
 description: This article shows how you can use the LocalizableResourceExtension markup extension.
-page_title: Utilizing the LocalizationResourceExtension Markup Extension.
-type: how-o
+page_title: Utilizing the LocalizationResourceExtension Markup Extension
+type: how-to
 slug: kb-common-localizableresourceextension
 position: 0
 tags: wpf, localization, localizableresourceextension, dynamic, support dynamic localization

@@ -5,64 +5,44 @@ description: This article demonstrates how to bind RadComboBox to a collection o
 slug: radcombobox-populating-with-data-binding-to-object
 tags: binding,to,object
 published: True
-position: 4
+position: 1
 ---
 
 # Binding to Collection
 
-This tutorial will guide you through the process of binding a __RadComboBox__ to a collection of business objects. It also demonstrates two ways of customizing the visualization of the bound items.
+This tutorial will guide you through the process of binding a `RadComboBox` to a collection of business objects. It also demonstrates two ways of customizing the visualization of the bound items:
 
-* [Set the DisplayMemberPath Property](#set-the-displaymemberpath-property)
-* [Define a Custom ItemTemplate](#define-a-custom-itemtemplate)
+* [Setting the DisplayMemberPath Property](#set-the-displaymemberpath-property)
+* [Defining a Custom ItemTemplate](#define-a-custom-itemtemplate)
 
->tip Before reading this tutorial you should get familiar with the [Data Binding]({%slug radcombobox-populating-with-data-binding-support-overview%}) support of the __RadComboBox__ control.
+To bind the ComboBox to a collection of business objects, you should set its `ItemsSource` property. If you want the changes to the collection and the properties of the data items to be automatically reflected in the UI, the collection needs to implement the `INotifyCollectionChanged` interface (such collection is ObservableCollection&lt;T&gt;) and your business objects have to implement the `INotifyPropertyChanged` interface.
 
-To bind the __RadComboBox__ to a collection of business objects, you should set its __ItemsSource__ property. If you want the changes to the collection to be automatically reflected in the __RadComboBoxItems__, the collection needs to implement the __INotifyCollectionChanged__ interface and your business objects have to implement the __INotifyPropertyChanged__ interface.
+The following example shows how to implement the models structure and use it in the ComboBox control.
 
-First, define the __RadComboBox__ control in your XAML as demonstrated in **Example 1**.
-
-#### __[XAML] Example 1: RadComboBox definition__
-
-{{region xaml-radcombobox-populating-with-data-binding-to-object_0}}
-	<telerik:RadComboBox x:Name="radComboBox" Width="200" />
-{{endregion}}
-
-Now, create a new business object named __Agency__. Its structure is shown in **Example 2**.
-
-#### __[C#] Example 2: The Agency class__
-
+#### __[C#] Creating the data item's model__  
 {{region cs-radcombobox-populating-with-data-binding-to-object_1}}
 	public class Agency
 	{
 	    public Agency()
 	    {
 	    }
+		
 	    public Agency( string name, string phone, string zip )
 	    {
 	        this.Name = name;
 	        this.Phone = phone;
 	        this.Zip = zip;
 	    }
-	    public string Name
-	    {
-	        get;
-	        set;
-	    }
-	    public string Phone
-	    {
-	        get;
-	        set;
-	    }
-	    public string Zip
-	    {
-	        get;
-	        set;
-	    }
+		
+	    public string Name { get; set; }
+		
+	    public string Phone { get; set; }
+
+	    public string Zip { get; set; }
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: The Agency class__
-
+#### __[VB.NET] Creating the data item's model__  
 {{region vb-radcombobox-populating-with-data-binding-to-object_2}}
 	Public Class Agency
 	    Public Sub New()
@@ -102,10 +82,7 @@ Now, create a new business object named __Agency__. Its structure is shown in **
 	End Class
 {{endregion}}
 
-Then create a new class named __AgencyViewModel__ to hold an __ObservableCollection__ of __Agency__ objects. This collection will be the data source for the RadComboBox. **Examples 3 through 5** demonstrate how to set this collection as the ItemsSource of the RadComboBox.
-
-#### __[C#] Example 3: The AgencyViewModel class__
-
+#### __[C#] Creating the main view model__
 {{region cs-radcombobox-populating-with-data-binding-to-object_3}}
 	public class AgencyViewModel
 	{
@@ -115,10 +92,9 @@ Then create a new class named __AgencyViewModel__ to hold an __ObservableCollect
 	    {
 	        get
 	        {
-	            if ( agencies == null )
+	            if (agencies == null)
 	            {
-	                agencies = new ObservableCollection<Agency>();
-	
+	                agencies = new ObservableCollection<Agency>();	
 	                agencies.Add( new Agency( "Exotic Liquids", "(171) 555-2222", "EC1 4SD" ) );
 	                agencies.Add( new Agency( "New Orleans Cajun Delights", "(100) 555-4822", "70117" ) );
 	                agencies.Add( new Agency( "Grandma Kelly's Homestead", "(313) 555-5735", "48104" ) );
@@ -148,26 +124,22 @@ Then create a new class named __AgencyViewModel__ to hold an __ObservableCollect
 	                agencies.Add( new Agency( "Escargots Nouveaux", "(New Item) 85.57.00.07", "71300" ) );
 	                agencies.Add( new Agency( "Gai pâturage", "(New Item) 38.76.98.06", "74000" ) );
 	                agencies.Add( new Agency( "Forêts d'érables", "(New Item) (514) 555-2955", "J2S 7S8" ) );
-	            }
-	
+	            }	
 	            return agencies;
 	        }
 	    }
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 3: The AgencyViewModel class__
-
+#### __[VB.NET] Creating the main view model__  
 {{region vb-radcombobox-populating-with-data-binding-to-object_4}}
 	Public Class AgencyViewModel
 	    Private agencies As ObservableCollection(Of Agency)
 	
 	    Public ReadOnly Property Agency() As ObservableCollection(Of Agency)
 	        Get
-	            If agencies Is Nothing Then
-	
-	                agencies = New ObservableCollection(Of Agency)()
-	
+	            If agencies Is Nothing Then	
+	                agencies = New ObservableCollection(Of Agency)()	
 	                agencies.Add(New Agency("Exotic Liquids", "(171) 555-2222", "EC1 4SD"))
 	                agencies.Add(New Agency("New Orleans Cajun Delights", "(100) 555-4822", "70117"))
 	                agencies.Add(New Agency("Grandma Kelly's Homestead", "(313) 555-5735", "48104"))
@@ -197,54 +169,45 @@ Then create a new class named __AgencyViewModel__ to hold an __ObservableCollect
 	                agencies.Add(New Agency("Escargots Nouveaux", "(New Item) 85.57.00.07", "71300"))
 	                agencies.Add(New Agency("Gai pâturage", "(New Item) 38.76.98.06", "74000"))
 	                agencies.Add(New Agency("Forêts d'érables", "(New Item) (514) 555-2955", "J2S 7S8"))
-	            End If
-	
+	            End If	
 	            Return agencies
 	        End Get
 	    End Property
 	End Class
 {{endregion}}
 
-#### __[XAML] Example 4: The AgencyViewModel resource__
-
+#### __[XAML] Initializing the view model as a resource__  
 {{region xaml-radcombobox-populating-with-data-binding-to-object_5}}
 	<UserControl.Resources>
 	    <example:AgencyViewModel x:Key="DataSource"/>
 	</UserControl.Resources>
 {{endregion}}
 
-#### __[XAML] Example 5: Set RadComboBox's ItemsSource__
-
+#### __[XAML] Setting RadComboBox's ItemsSource__  
 {{region xaml-radcombobox-populating-with-data-binding-to-object_6}}
 	<telerik:RadComboBox Width="200" x:Name="radComboBox" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}"/>
 {{endregion}}
 
-## Set the DisplayMemberPath Property
+## Option 1: Set the DisplayMemberPath Property
 
-By default, the content of the items will be set to the value returned by the __ToString()__ method of the underlying business objects.
+By default, the content of the items will be set to the value returned by the `ToString()` method of the underlying business objects. As this is rarely the desired behavior, `RadComboBox` exposes a `DisplayMemberPath` property. Its purpose is to specify a property of the source object to serve as the visual representation of the ComboBox item.
 
-As this is rarely the desired behavior, RadComboBox exposes a __DisplayMemberPath__ property. Its purpose is to specify a property of the source object to serve as the visual representation of the combo box item.
+The following example demonstrates how to set the `DisplayMemberPath` property to point to the `Name` property of the `Agency` objects.
 
-**Example 6** demonstrates how to set the __RadComboBox__'s __DisplayMemberPath__ property to point to the __Name__ property of the __Agency__ objects.
-
-#### __[XAML] Example 6: Set DisplayMemberPath property__
-
+#### __[XAML] Set DisplayMemberPath property__  
 {{region xaml-radcombobox-populating-with-data-binding-to-object_9}}
 	<telerik:RadComboBox x:Name="radComboBox" DisplayMemberPath="Name" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" />
 {{endregion}}
 
-The end result is shown on **Figure 1**.
-
-#### Figure 1: RadComboBox displaying agency names
+__RadComboBox displaying agency names__  
 
 ![RadComboBox displaying agency names](images/RadComboBox_PopulatingWithData_BindingToObject_030.png)
 
-## Define a Custom ItemTemplate
+## Option 2: Define a Custom ItemTemplate
 
-The DisplayMemberPath works well if the value you want to display is contained in a single property of the business objects. If you want to visualize more information, you can define a custom __DataTemplate__ and set it as the __RadComboBox__'s __ItemTemplate__ property. The process of doing so is demonstrated in **examples 7 and 8**.
+The `DisplayMemberPath` works well if the value you want to display is contained in a single property of the business objects. If you want to visualize more information, you can define a custom `DataTemplate` and set it as the `RadComboBox` `ItemTemplate` property. The process of doing so is demonstrated below.
 
-#### __[XAML] Example 7: Define the custom DataTemplate__
-
+#### __[XAML] Define the custom DataTemplate__   
 {{region xaml-radcombobox-populating-with-data-binding-to-object_7}}
 	<UserControl.Resources>
 	    <example:AgencyViewModel x:Key="DataSource"/>
@@ -271,20 +234,16 @@ The DisplayMemberPath works well if the value you want to display is contained i
 	</UserControl.Resources>
 {{endregion}}
 
-#### __[XAML] Example 8: Set the RadComboBox's ItemTemplate property__
-
+#### __[XAML] Setting the RadComboBox's ItemTemplate property__  
 {{region xaml-radcombobox-populating-with-data-binding-to-object_8}}
 	<telerik:RadComboBox x:Name="radComboBox" ItemTemplate="{StaticResource ComboBoxCustomTemplate}" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Agency}" />
 {{endregion}}
 
-The final result is illustrated in **Figure 2**.
-
-#### Figure 1: RadComboBox displaying a custom template
+__RadComboBox displaying a custom template__  
 
 ![RadComboBox displaying a custom template](images/RadComboBox_PopulatingWithData_BindingToObject_020.png)
 
 ## See Also
-
  * [Binding to WCF Service]({%slug radcombobox-populating-with-data-binding-to-wcf%})
  * [Binding to ADO.NET Data Service]({%slug radcombobox-populating-with-data-binding-adonet%})
  * [Binding to XML]({%slug radcombobox-populating-with-data-binding-xml%})

@@ -64,11 +64,11 @@ The following example showcases this approach for a __.NET Framework__ project. 
 
         }
     }
-{{end region}}
+{{endregion}}
 
 The following example showcases this approach for a __.NET__ project. Since the MEF functionality is no longer supported by the __.NET 6 and later versions__, set a new instance of the `CustomSelectionMiniToolBar` element to the `SelectionMiniToolBar` property of `RadRichTextBox`. 
 
-#### __[C#] Custom SelectionMiniToolBar for a .NET project__
+#### __[C#] Custom SelectionMiniToolBar for a .NET project__  
 {{region kb-radrichtextbox-difference-in-the-highlighted-colors-1}}
     //CustomSelectionMiniToolBar attribute is not present
     public class CustomSelectionMiniToolBar : SelectionMiniToolBar
@@ -97,11 +97,11 @@ The following example showcases this approach for a __.NET__ project. Since the 
 
         }
     }
-{{end region}}
+{{endregion}}
 
-#### __[C#] Setting the custom SelectionMiniToolBar to the RadRichTextBox control__
+#### __[C#] Setting the custom SelectionMiniToolBar to the RadRichTextBox control__   
 {{region kb-radrichtextbox-difference-in-the-highlighted-colors-2}}
-    this.richTextBox.SelectionMiniToolBar = new CustomSelectionMiniToolBar(); 
+	this.richTextBox.SelectionMiniToolBar = new CustomSelectionMiniToolBar(); 
 {{endregion}}
 
 __RadRichTextBox with a custom SelectionMiniToolBar__

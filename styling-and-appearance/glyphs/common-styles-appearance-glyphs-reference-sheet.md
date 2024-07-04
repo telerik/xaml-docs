@@ -32,12 +32,12 @@ table th:nth-of-type(6) {
 
 # Glyphs Reference Sheet
 
-This article lists all available glyphs from the TelerikWebUI font along with their names, number and string values. For more information about the glyphs, see the [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) help article. 
+This article lists all available glyphs from the TelerikWebUI font along with their names, numbers, and string values. For more information about the glyphs, see the [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) help article. 
 
 With the release of the Windows 11 theme, the TelerikFluentIcons font has been added. This font provides different  
 
 |Glyph TelerikFluentIcons|Glyph TelerikWebUI|Glyph Name|Glyph number|Glyph string value|Is New?|
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 ||__Navigation and Layout__||||
 |<i class=" .k-i-arrow-45-up-right"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
 |<i class=" t-i-arrow-45-down-right"></i>|GlyphArrow45DownRight|e001|&amp;#xe001;|

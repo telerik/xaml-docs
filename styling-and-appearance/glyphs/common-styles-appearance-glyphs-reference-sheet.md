@@ -39,7 +39,7 @@ With the release of the Windows 11 theme, the TelerikFluentIcons font has been a
 |Glyph TelerikFluentIcons|Glyph TelerikWebUI|Glyph Name|Glyph number|Glyph string value|Is New?|
 |---|---|---|---|---|---|
 ||__Navigation and Layout__||||
-|<i class=" .k-i-arrow-45-up-right"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
+|<i class=" k-u-arrow-45-up-right"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
 |<i class=" t-i-arrow-45-down-right"></i>|GlyphArrow45DownRight|e001|&amp;#xe001;|
 |<i class=" t-i-arrow-45-down-left"></i>|GlyphArrow45DownLeft|e002|&amp;#xe002;|
 |<i class=" t-i-arrow-45-up-left"></i>|GlyphArrow45UpLeft|e003|&amp;#xe003;|

@@ -1,9 +1,9 @@
 ---
 title: Glyphs Reference Sheet
 page_title: Glyphs Reference Sheet
-description: This article lists all available glyphs from the TelerikWebUI font.
+description: This article lists all available glyphs from the TelerikWebUI and TelerikFluentIcons fonts.
 slug: common-styling-appearance-glyphs-reference-sheet
-tags: glyphs,telerikwebui,office2016,fonts,foregrounds,text,icons,reference,sheet
+tags: glyphs,telerikwebui,telerikfluenticons,office2016,fonts,foregrounds,text,icons,reference,sheet
 published: True
 position: 1
 glyphs_reference_sheet: True
@@ -14,15 +14,18 @@ table th:first-of-type {
     width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 40%;
+    width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 20%;
+    width: 30%;
 }
 table th:nth-of-type(4) {
     width: 20%;
 }
 table th:nth-of-type(5) {
+    width: 20%;
+}
+table th:nth-of-type(6) {
     width: 10%;
 }
 </style>
@@ -31,12 +34,12 @@ table th:nth-of-type(5) {
 
 This article lists all available glyphs from the TelerikWebUI font along with their names, number and string values. For more information about the glyphs, see the [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) help article. 
 
-> The glyphs marked with __*__ in the last column were introduced with the **R2 2022** release of the suite.
+With the release of the Windows 11 theme, the TelerikFluentIcons font has been added. This font provides different  
 
-|Glyph|Glyph Name|Glyph number|Glyph string value|Is New?|
+|Glyph TelerikFluentIcons|Glyph TelerikWebUI|Glyph Name|Glyph number|Glyph string value|Is New?|
 |---|---|---|---|---|
 ||__Navigation and Layout__||||
-|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
+|<i class=" .k-i-arrow-45-up-right"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
 |<i class=" t-i-arrow-45-down-right"></i>|GlyphArrow45DownRight|e001|&amp;#xe001;|
 |<i class=" t-i-arrow-45-down-left"></i>|GlyphArrow45DownLeft|e002|&amp;#xe002;|
 |<i class=" t-i-arrow-45-up-left"></i>|GlyphArrow45UpLeft|e003|&amp;#xe003;|

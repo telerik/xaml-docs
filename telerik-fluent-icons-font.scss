@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: 'TelerikFluentIcons';
+    src: url(font_path("TelerikFluentIcons.eot"));
+    src: url(font_path("TelerikFluentIcons.eot")), url(font_path("TelerikFluentIcons.woff")), url(font_path("TelerikFluentIcons.ttf"));
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  /* TelerikFluentIcons start */
+  
+  i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'TelerikFluentIcons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Custom style for centering the glyphs */
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .k-i-caret-tr::before {
+    content: "\e000";
+  }
+  
+  .k-i-arrow-45-up-right::before {
+    content: "\e000";
+  }
+  
+  .k-i-collapse-ne::before {
+    content: "\e000";
+  }
+  
+  .k-i-resize-ne::before {
+    content: "\e000";
+  }
+  
+  .k-i-caret-br::before {
+    content: "\e001";
+  }
+  
+  .k-i-arrow-45-down-right::before {
+    content: "\e001";
+  }
+  
+  .k-i-collapse-se::before {
+    content: "\e001";
+  }
+  
+  .k-i-resize-se::before {
+    content: "\e001";
+  }
+  
+  
+  
+  /* TelerikFluentIcons end */

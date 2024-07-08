@@ -40,12 +40,16 @@ The palette object can be accessed and modified in code-behind by using the corr
  
 The palette resources can be replaced also in XAML. This can be done by re-defining the resource in XAML and using the same x:Key as the original resource used by the palette. __This approach is applicable with .NET 4.5 and later.__
 
-To define or modify a theme brush or another theme resource in XAML, use the corresponding markup extension class (ex: `Windows11ResourceKey`).
+To define or modify a theme brush or another theme resource in XAML, use the corresponding markup extension class (ex: `Windows11ResourceKey`). 
+
+The name of the markup extension matches the theme name with "ResourceKey" as postfix. For example, to set properties of the `Windows11Palette`, use the `Windows11ResourceKey` markup extension class. For, the `FluentPalette`, use `FluentResourceKey`,  and so on. The property names in the markup extensions matches the ones in the palette class with the sole exception that in the markup extension all color values are of type `Brush` which requires a slight change in the name. For example, `Windows11Palette.AccentColor` becomes `Windows11ResourceKey.AccentBrush`.
 
 #### __[XAML] Replacing a default palette resource in the App.xaml file globally for all Telerik controls that use this resource__
 {{region styling-apperance-theme-palettes-1}}
 	<Application.Resources>
 		<SolidColorBrush x:Key="{x:Static telerik:Windows11ResourceKey.AccentBrush}" Color="Purple" />
+  		<Thickness x:Key="{x:Static telerik:Windows11ResourceKey.FocusVisualMargin  }" Left="10" Top="10" Right="10" Bottom="10"/>
+		<CornerRadius x:Key="{x:Static telerik:Windows11ResourceKey.CornerRadius}">10</CornerRadius>
 	</Application.Resources>
 {{endregion}}
 
@@ -54,7 +58,9 @@ To define or modify a theme brush or another theme resource in XAML, use the cor
 	<telerik:RadButton>
 		<telerik:RadButton.Resources>
 			<!-- Control-specific modification -->
-			<SolidColorBrush x:Key="{x:Static telerik:Windows11ResourceKey.AccentBrush}" Color="Purple" />
+			<SolidColorBrush x:Key="{x:Static telerik:Windows11ResourceKey.AccentBrush}" Color="Purple" />   			
+   			<Thickness x:Key="{x:Static telerik:Windows11ResourceKey.FocusVisualMargin}" Left="10" Top="10" Right="10" Bottom="10"/>
+      			<CornerRadius x:Key="{x:Static telerik:Windows11ResourceKey.CornerRadius}">10</CornerRadius>
 		</telerik:RadButton.Resources>
 	</telerik:RadButton>
 {{endregion}}

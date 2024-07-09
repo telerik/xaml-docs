@@ -38,7 +38,9 @@ If you wish to apply further customizations such as repositioning the building p
 
 ## Color Theme Generator
 
+{% if site.site_name == 'WPF' %}
 All Telerik themes starting from [Windows8` and later]({%slug common-styling-appearance-available-themes%}) (like __Windows11__, **Crystal**, **Fluent**, **Material**, **Office2016**, etc.) are fully customizable using the assocaited [theme palettes]({%slug styling-appearance-theme-helper%}) properties.
+{% endif %}
 
 For seamless color customization and faster palette creation that looks great and matches all controls, we created the [Color Theme Generator]({%slug common-styling-color-theme-generator%}).
 

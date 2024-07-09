@@ -221,5 +221,8 @@ __Example 5__ shows you how to implement efficient server-side database paging. 
 {{endregion}}
 
 ## See Also  
+
+{% if site.site_name == 'WPF' %}
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
+{% endif %}
 

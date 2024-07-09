@@ -294,7 +294,9 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 	#### __Figure 5: The item is positioned with 100 pixels offset from the top of the viewport__
 	![{{ site.framework_name }} RadTreeView The item is positioned with 100 pixels offset from the top of the viewport](images/RadTreeView_TreeViewBringIntoViewSupport_040.png)
 
+	{% if site.site_name == 'WPF' %}
 	> When the UI virtualization of RadTreeView is enabled, the brought item may not be positioned at the top of the viewport due to specifics of the virtualization mechanism. This means that the offset may not behave as expected. In such cases, you can manually update the scroll position as described in the [following KB article]({%slug kb-treeview-bringpathintoview-offset-virtualization%}).
+	{% endif %}
  
 >tip You can find a complete solution demonstrating the __BringPathIntoView()__ method implementation in the [How to Use BringPathIntoView Method]({%slug radtreeview-how-to-bring-path-into-view%}) help article in our documentation.		
 

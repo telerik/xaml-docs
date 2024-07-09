@@ -186,7 +186,11 @@ controls/radmap/features/providers/custom-vector-tile-provider.md,
 styling-and-appearance/styling-apperance-theme-palettes.md,
 controls/radlistbox/sorting.md,
 controls/raddaterangepicker,
-getting-started/installation/distributions.md]
+getting-started/installation/distributions.md,
+getting-started/installation/preview-releases.md,
+upgrade/upgrade-migrate-to-net.md,
+common-information/ui-virtualization.md,
+wpflab/]
 
 exclude_navigation: [controls/raddocking/theming/*]
 
@@ -874,12 +878,9 @@ intro_columns:
   categories:
   -
     title: "File Upload & Management"
-    items:
-      "PdfProcessing": "radpdfprocessing-overview"
-      "PdfViewer": "radpdfviewer-overview"
-      "SpreadProcessing": "radspreadprocessing-overview"
+    items:      
+      "PdfViewer": "radpdfviewer-overview"      
       "Upload": "radupload-overview"
-      "ZipLibrary": "radziplibrary-overview"
   -
     title: "Layout"
     items:

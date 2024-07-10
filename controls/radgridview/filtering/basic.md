@@ -72,7 +72,7 @@ This behavior can be controlled by adjusting the `IsFilteringDeferred` property 
 
 ### Keep Filter Popup Open
 
-Through the `FilteringDropDownStaysOpen` property, you can control whether the filtering dropdown should stay open when a click outside of the popup occurs. It has a default value of `False`. If set to `True`, the popup will only close on a click on either the `Close` button or the `Filter` icon.
+Through the `FilteringDropDownStaysOpen` property of `RadGridView`, you can control whether the filtering dropdown should stay open when a click outside of the popup occurs. It has a default value of `False`. If set to `True`, the popup will only close on a click on either the `Close` button or the `Filter` icon.
 
 ## Filter Row
 

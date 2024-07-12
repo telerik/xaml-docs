@@ -273,6 +273,5 @@ __Figure 4__ shows a __RadComboBox__ with the **Windows8** theme applied.
 {% endif %}
 
 ## See Also  
- * [Populating With Data]({%slug radcombobox-populating-with-data-overview%}) 
  * [AutoComplete]({%slug radcombobox-features-autocomplete%}) 
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})

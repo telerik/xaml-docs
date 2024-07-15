@@ -26,6 +26,7 @@ The following examples demonstrates how to set the `GroupHeaderTemplate` for a `
 	    <DataTemplate>
 	        <StackPanel>
 	            <TextBlock Foreground="#FFED7971" Text="Test Key" />
+	            <TextBlock Foreground="#FFED7971" Text="{Binding Column.Header}" />
 	            <TextBlock Foreground="#FFED7971" Text="{Binding Group.Key}" />
 	        </StackPanel>
 	    </DataTemplate>
@@ -40,6 +41,7 @@ You could do the same for all the columns by defining a `GroupHeaderTemplate` fo
 	    <DataTemplate>
 	        <StackPanel>
 	            <TextBlock Foreground="#FFED7971" Text="Test Key" />
+	     	    <TextBlock Foreground="#FFED7971" Text="{Binding Column.Header}" />
 	            <TextBlock Foreground="#FFED7971" Text="{Binding Group.Key}" />
 	        </StackPanel>
 	    </DataTemplate>

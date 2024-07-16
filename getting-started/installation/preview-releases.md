@@ -18,13 +18,13 @@ The Preview is __available as a NuGet__ package. Alternatively, you can __downlo
 
 1. Go to the Telerik UI for WPF product [download page](https://www.telerik.com/account/product-download?product=RCWPF). 
 	
-2. Click on the __Latest Internal Build__ button. This will download an archive with the UI for {{ site.framework_name }} __assemblies__.
+2. Click on the __Download__ button in the __Latest Preview__ banner. This will download an archive with the UI for {{ site.framework_name }} __assemblies__.
 
-	![WPF Progress Site Telerik UI for WPF Latest Internal Build Button](images/installation-preview-releases-0.png)
+	![WPF Progress Site Telerik UI for WPF Latest Preview Button](images/installation-preview-releases-0.png)
 
-	To get a specific version of the Preview, open the __Internal Bulds__ tab on the download page. And select a version from the list.
+	To get a specific version of the Preview, open the __Previews__ tab on the download page. Then, select a version from the list.
 
-	![WPF Progress Site Telerik UI for WPF Internal Builds Tab](images/installation-preview-releases-1.png)
+	![WPF Progress Site Telerik UI for WPF Previews Tab](images/installation-preview-releases-1.png)
 
 ## Version Number Breakdown
 

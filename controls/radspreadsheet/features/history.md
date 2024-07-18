@@ -72,4 +72,6 @@ __RadSpreadsheet with custom redo/undo buttons__
 
 ![RadSpreadsheet with custom redo/undo buttons](images/radspreadsheet-history-0.gif)
 
-The history functionality is also present in the [RadSpreadsheetRibbon]({%slug radspreadsheet-getting-started-spreadsheet-ui%}) element, which is a UI component that you can use together with RadSpreadsheet. Via the Undo and Redo buttons in the top-left corner, you can execute the `Redo` and `Undo` methods of the `History` property.
+## RadSpreadsheetRibbon
+
+The history functionality is also present in the [RadSpreadsheetRibbon]({%slug radspreadsheet-getting-started-spreadsheet-ui%}) element, which is a UI component that you can use together with RadSpreadsheet. Via the undo and redo buttons in the top-left corner, you can execute this logic through the UI.

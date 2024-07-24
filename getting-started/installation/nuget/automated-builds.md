@@ -34,7 +34,7 @@ There are a couple of common questions and issues:
 * Telerik feed not being found
     * The most common reason for a problem is that the path to the `nuget.config` file is wrong (it should, by default, be at the root level). 
     * Make sure the URL to the server is correct `https://nuget.telerik.com/nuget` (HTTPS, no trailing slash)
-* '401 login failed' error. See the **Troubleshooting** section below
+* '401 login failed' error. 
 * An `index.json not found` error can occur from many root causes. If you have successfully authenticated, this error usually means that the feed wasn't able to be searched or connected to. A common reason is an incorrect feed URL, such as including a trailing slash - Correct: `https://nuget.telerik.com/nuget` and Incorrect: `https://nuget.telerik.com/nuget/`.
 
 A few things to double check to ensure correct setup:

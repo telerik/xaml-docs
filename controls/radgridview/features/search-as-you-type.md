@@ -254,16 +254,11 @@ __RadGridView with an excluded column from the search mechanism__
 
 ## Disable the Data Filtering when Searching
 
-The RadGridView's SearchStateManager property exposes the `IsSearchFilteringEnabled` option. It will allow you to control whether the data will be filtered when a search operation is performed. The default value of the IsSeachFilteringEnabled property is set to __True__, which will filter the data. When the data filtering is disabled, search operations will only highlight the cells that match the search criteria.	
+The RadGridView control exposes the `IsSearchFilteringEnabled` option. It will allow you to control whether the data will be filtered when a search operation is performed. The default value of the IsSeachFilteringEnabled property is set to __True__, which will filter the data. When the data filtering is disabled, search operations will only highlight the cells that match the search criteria.	
 
 #### __[C#] Disabling the data filtering when performing search__
 {{region radgridView-search-as-you-type-8}}
-	private void GridView_Loaded(object sender, RoutedEventArgs e)
-	{
-		var radGridView = (RadGridView)sender;
-
-		radGridView.SearchStateManager.IsSearchFilteringEnabled = false;
-	}
+	<telerik:RadGridView IsSearchFilteringEnabled="False"/>
 {{endregion}}
 
 ## See Also

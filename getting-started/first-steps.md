@@ -44,14 +44,14 @@ The Visual Studio Extensions can be accessed through the Extensions | Telerik | 
 	#### __Figure 3: Creating new Telerik application__	
 	![Creating new Telerik application](images/installation-adding-to-application-create-application-and-adding-control-1.png)
 
-3. Choose the application template. The options are a blank template or one of the MS Office inspired application templates. Choose the Blank option.
+3. Choose the project template and the corresponding settings. For an empty project without any Telerik controls added to the view, choose the Blank option.
 	
 	#### __Figure 4: Choosing an application template__
 	![Choosing an application template](images/installation-adding-to-application-create-application-and-adding-control-2.png)
 
-	At this point the project references only the common Telerik.Windows.Controls.dll. 
+	At this point the project references only the common Telerik.Windows.Controls.dll and you can start adding controls in the UI. 
 
-4. Configure the project using the Project Configuration Wizard. You can do that by going to Telerik > Telerik UI for WPF > Configure Project. When you open the wizard you can select the controls you are going to use from the list (or search them in the search box). Once you have selected them, click OK and it will add the required dlls and references to your project.
+	You can further configure the project using the Project Configuration Wizard. You can do that by going to the __Extensions > Telerik > Telerik UI for WPF > Configure Project__ menu in Visual Studio. When you open the wizard you can select the controls you are going to use from the list (or search them in the search box). Once you have selected them, click Finish. This will add the required dlls and references to your project.
 
 	#### __Figure 5: Adding references to the charting controls__
 	![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
@@ -71,7 +71,7 @@ In order to use the __RadGridView__ control in your projects, you have to add re
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Data__
 
-### Add a Telerik Control to the Project
+### Adding a Telerik Control to the Project
 
 You can add __RadGridView__ manually by writing the XAML code in __Example 1__ or you can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 	

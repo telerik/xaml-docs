@@ -124,8 +124,52 @@ The current mode can be changed via the `DistinctValuesSearchMode` property of t
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" EnableDistinctValuesFiltering="True" DistinctValuesSearchMode="Contains"/>
 {{endregion}}
 
- 	
+## Grouping DateTime Values
 
+By default the distinct values of type `DateTime` are shown in a flat list where each record shows the full date-time value. To group the values by date-time component (year, month and day), change the distinct values display mode. This is done by setting the `DistinctValuesDisplayMode` property of the associated `GridViewColumn` to `Tree`.
 
+#### __[XAML] Setting the DistinctValuesDisplayMode property__
+{{region gridview-filtering-customizing-distinct-values-7}}
+	<telerik:GridViewDataColumn DataMemberBinding="{Binding MyDate}" DistinctValuesDisplayMode="Tree"/>
+{{endregion}}
 
+__The distinct values display modes comparison__  
 
+![A picture showing RadGridView for WPF with Tree and List distinct values display modes comparison](images/gridview-filtering-customizing-distinct-values-2.png)
+
+## Modifying the Display Values
+
+By default the distinct values list will display the raw values of the data items. To change the appearance of the values, override the `FilteringDisplayFunc` function of the `GridViewDataColumn`.
+
+#### __[C#] Creating a custom column and overridding the FilteringDisplayFunc__
+{{region gridview-filtering-customizing-distinct-values-8}}
+	public class CustomGridViewDataColumn : GridViewDataColumn 
+    { 
+        private Func<object, object> filteringDisplayFunc; 
+ 
+        public CustomGridViewDataColumn() 
+        { 
+            this.filteringDisplayFunc = GetDistinctValueDisplayObject; 
+        } 
+ 
+        private object GetDistinctValueDisplayObject(object arg) 
+        { 
+			// the "arg" object is the raw data value of the cell 
+			bool isEmployed = (bool)args;
+			return isEmployed ? "Is employed" : "Is not employed";  
+			
+			// you can return also a UIElement here if you need more custom visualization
+        } 
+ 
+        protected override Func<object, object> FilteringDisplayFunc 
+        { 
+            get { return filteringDisplayFunc; } 
+        } 
+    } 
+{{endregion}}
+
+The following [KB article]({%slug kb-gridview-filteringdisplayfunc%}) and the [ImageColumnFiltering SDK example](https://github.com/telerik/xaml-sdk/tree/master/GridView/ImageColumnFiltering) contain runnable examples showing the `FilteringDisplayFunc` feature.
+
+__Customized display for bool distinct values__  
+
+![A picture showing RadGridView for WPF with customized display values in the distinct values list](images/gridview-filtering-customizing-distinct-values-3.png)

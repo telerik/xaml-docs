@@ -13,7 +13,9 @@ site_name: WPF
 
 This article shows how to convert a standard WPF project to a Telerik WPF project.
 
-Progress Telerik UI for WPF Extension's __Convert Project Wizard__ could be accessed through the Visual Studio's _Extension__ menu when you need to convert an existing WPF application to a Telerik WPF application.
+The project conversion feature is available only for .NET Framework projects.
+
+Progress Telerik UI for WPF Extension's __Convert Project Wizard__ could be accessed through the Visual Studio's __Extensions__ menu when you need to convert an existing WPF application to a Telerik WPF application. 
 
 ![VSExtentions WPF Overview Menu Convert](images/VSExtentions_WPF_OverviewMenuConvert.png)
 
@@ -41,7 +43,7 @@ The second page of the Convert Project Wizard’s lets you select which theme wi
 
 ## Convert Project from XAML to NoXAML or Vice Versa
 
-When converting a project from [XAML to NoXAML]({%slug xaml-vs-noxaml%}) (or vice-versa),__ you need first to remove all __Telerik__ references from the project. Then you can right-click on the project and launch the Convert Wizard. The final step is to select the assemblies that you need in your project.
+When converting a project from [XAML to NoXAML]({%slug xaml-vs-noxaml%}) (or vice-versa), you need first to remove all __Telerik__ references from the project. Then you can right-click on the project and launch the Convert Wizard. The final step is to select the assemblies that you need in your project.
 
 ## See Also  
  * [Automatic Dependency Resolving]({%slug radcontrols-for-wpf-vs-extensions-automatic-resolving%})

@@ -77,7 +77,7 @@ These packages contain all Telerik dlls for the corresponding .NET version. The 
 * `Telerik.UI.for.Wpf.AllControls.NoXaml`
 * `Telerik.UI.for.Wpf.AllControls.Xaml`
 
-The __AllControls__ packages contain all Telerik controls for all distributed .NET versions.
+The __AllControls__ packages contain all Telerik assemblies for all distributed .NET versions.
 
 ### Separate Packages
 

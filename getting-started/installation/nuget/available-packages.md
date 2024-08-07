@@ -9,13 +9,13 @@ position: 0
 
 # Available NuGet Packages
 
-Telerik UI for WPF comes with a several different packages that can be installed via the Telerik server or from a local package source.
+Telerik UI for WPF comes with several different packages that can be installed via the Telerik server or from a local package source.
 
 ![{{ site.framework_name }} Telerik UI for {{ site.framework_name }} Available NuGet Packages](images/nuget-available-packages-0.png)
 
 The Telerik dlls are built against different versions of .NET starting from .NET 4.6.2 to the latest official .NET. The dlls can be separated into two categories - [Xaml and NoXaml]({%slug xaml-vs-noxaml%}). This creates a rich set of assemblies that can be downloaded which are also available as nuget packages. 
 
-The packages can be downloaded as `.nupkg` files which can be used to [setup a local package source]({%slug nuget-package-source-setup%}) or alternatively the [online Telerik package source]({%slug nuget-package-source-setup%}) can be used. These two different options contain slightly different set of packages. This article targets to list and describe the packages.
+The packages can be downloaded as `.nupkg` files which can be used to [setup a local package source]({%slug nuget-package-source-setup%}) or alternatively the [online Telerik package source]({%slug nuget-package-source-setup%}) can be used. These two different options contain a slightly different set of packages. This article aims to list and describe the packages.
 
 ## NuGet Local Packages
 
@@ -28,7 +28,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	* `Telerik.UI.for.Wpf.60.Xaml`
 	* `Telerik.UI.for.Wpf.70.Xaml`
 
-	Each of these packages contains the all Telerik UI for WPF (Xaml) dlls for the corresponding .NET framework. _The number _462__ means __.NET 4.6.2__, __60__ means __.NET 6_ and so on. The __.Xaml__ part at the ending of the package name indicates that it contains the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
+	Each of these packages contains all Telerik UI for WPF (Xaml) dlls for the corresponding .NET framework. _The number _462__ means __.NET 4.6.2__, __60__ means __.NET 6_ and so on. The __.Xaml__ part at the ending of the package name indicates that it contains the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
 	
 * `Telerik_UI_for_WPF_<version number>_Dev_NuGet_NoXaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:	
 	* `Telerik.UI.for.Wpf.462`	
@@ -57,7 +57,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	* `Telerik.Windows.Themes.Material.for.Wpf`
 	* etc.
 	
-	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .7). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.	
+	Each of these packages contains the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .7). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.	
 	
 ## Telerik NuGet Server Packages
 
@@ -65,7 +65,7 @@ There is an [online package source]({%slug nuget-package-source-setup%}) that ca
 
 ### Full Packages
 
-The onlie package source contains full packages only for the .NET and later assemblies.
+The online package source contains full packages only for the .NET and later assemblies.
 
 * `Telerik.UI.for.Wpf.60`
 * `Telerik.UI.for.Wpf.60.Xaml`
@@ -73,6 +73,11 @@ The onlie package source contains full packages only for the .NET and later asse
 * `Telerik.UI.for.Wpf.70.Xaml`
 
 These packages contain all Telerik dlls for the corresponding .NET version. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
+
+* `Telerik.UI.for.Wpf.AllControls.NoXaml`
+* `Telerik.UI.for.Wpf.AllControls.Xaml`
+
+The __AllControls__ packages contain all Telerik controls for all distributed .NET versions.
 
 ### Separate Packages
 

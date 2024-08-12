@@ -22,8 +22,6 @@ The purpose of this tutorial is to show you how to:
 
 * Use the corresponding events to handle the check/uncheck action. 
 
-> With the Q1 2013 release, the RadioButtons logic implemented in the RadTreeView is obsolete. You can find a list with the obsolete properties in the 'Q1 2013' section of the [Backward Compatibility]({%slug radtreeview-backward-compatibility%})
-
 For the next tasks will be used the treeview shown on the next figure. 
 ![{{ site.framework_name }} RadTreeView Sample](images/RadTreeView_FeaturesCheckBoxLinesSupport_001.png)
 

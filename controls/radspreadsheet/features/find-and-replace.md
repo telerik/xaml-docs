@@ -27,12 +27,12 @@ The following example showcases how to replace text in the current worksheet via
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="\*"/>
         </Grid.RowDefinitions>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="\*"/>
             </Grid.ColumnDefinitions>
             <StackPanel>
                 <telerik:RadWatermarkTextBox x:Name="replaceWhatWatermarkTextBox"

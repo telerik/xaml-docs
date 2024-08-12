@@ -11,23 +11,29 @@ glyphs_reference_sheet: True
 
 <style>
 table th:first-of-type {
-    width: 10%;
+    width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+    width: 20%;
 }
 table th:nth-of-type(3) {
     width: 30%;
 }
 table th:nth-of-type(4) {
-    width: 20%;
+    width: 10%;
 }
 table th:nth-of-type(5) {
-    width: 20%;
+    width: 10%;
 }
 table th:nth-of-type(6) {
     width: 10%;
 }
+
+    @font-face { font-family: TelerikFluentIcons; src: url ('fonts/TelerikFluentIcons.ttf'); 
+        .telerik-fluent-icons-style {
+            font-family: TelerikFluentIcons
+        }
+    }
 </style>
 
 # Glyphs Reference Sheet
@@ -39,7 +45,7 @@ With the release of the Windows 11 theme, the TelerikFluentIcons font has been a
 |Glyph TelerikFluentIcons|Glyph TelerikWebUI|Glyph Name|Glyph number|Glyph string value|Is New?|
 |---|---|---|---|---|---|
 ||__Navigation and Layout__||||
-|<i class=" telerikfluenticons-arrow-45-up-right"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
+|<i class=" t-i-telerik-fluent-icons-style"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
 |<i class=" t-i-arrow-45-down-right"></i>|GlyphArrow45DownRight|e001|&amp;#xe001;|
 |<i class=" t-i-arrow-45-down-left"></i>|GlyphArrow45DownLeft|e002|&amp;#xe002;|
 |<i class=" t-i-arrow-45-up-left"></i>|GlyphArrow45UpLeft|e003|&amp;#xe003;|

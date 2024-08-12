@@ -1,8 +1,8 @@
 ---
-title: Design-Time Error is Displayed when Setting the GuidItem Property in XAML.
+title: Design-Time Error is Displayed when Setting the GuidItem Property in XAML
 description: This article shows how to resolve a design-time error that is displayed when setting the GuidItem property in XAML.
 type: troubleshooting
-page_title: Resolve Design-Time Error that is Displayed when Using the GuidItem Property in XAML.
+page_title: Resolve Design-Time Error that is Displayed when Using the GuidItem Property in XAML
 slug: kb-notifyicon-design-error-guiditem-property
 tags: notifyicon, design-time, guiditem, guid, item
 ticketid: 1655464

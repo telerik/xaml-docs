@@ -236,5 +236,4 @@ __Figure 1__ shows a __RadButtons__ with the **Fluent** theme applied.
 ## See Also  
  * [Visual Structure]({%slug radbuttons-visual-structure%})
  * [Commands]({%slug radbuttons-features-commands%})
- * [Events]({%slug radbuttons-events%})
- * [Styles and Templates]({%slug radbuttons-styles-and-templates-overview%})
+ * [Events]({%slug radbuttons-events%}) 

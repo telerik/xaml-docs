@@ -23,6 +23,9 @@ table th:nth-of-type(4) {
     width: 10%;
 }
 table th:nth-of-type(5) {
+    width: 20%;
+}
+table th:nth-of-type(6) {
     width: 10%;
 }
 table th:nth-of-type(6) {

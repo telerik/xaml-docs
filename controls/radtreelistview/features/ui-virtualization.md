@@ -10,10 +10,6 @@ position: 12
 
 # UI Virtualization
 
-
-
-## 
-
 The __RadTreeListView API__ supports __UI Virtualization__, which processes only information that is loaded in the viewable area, which reduces the memory footprint of the application and speeds up the loading time, thus additionally enhancing the UI performance. 
 
 The grid utilizes horizontal and vertical virtualization and introduces container recycling for a further improvement of speed and memory footprint. This is of great importance when __RadTreeListView__ is bound to large data sets. The __UI virtualization__ technique ensures that the grid creates only the needed containers (rows/cells) which are shown in the viewport of the grid. The container recycling pushes further the speed of scrolling __horizontally__ and __vertically__. This feature enables __RadTreeListView__ to reuse the existing containers over and over again for different data items, instead of creating new ones. These techniques, combined with the outstanding LINQ-based data engine, guarantee the exceptional fast performance of Telerik’s __RadTreeListView__.

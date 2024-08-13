@@ -2,7 +2,7 @@
 title: Breaking Changes
 page_title: Breaking Changes
 description: This article lists the breaking changes introduced in the RadTreeView for WPF component through the releases.
-slug: gridview-breaking-changes
+slug: treeview-breaking-changes
 tags: breaking, changes, backward,compadibility
 published: True
 position: 4

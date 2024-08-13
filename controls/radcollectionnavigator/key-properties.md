@@ -17,7 +17,7 @@ The purpose of this help article is to show you the key properties of the __RadC
 
 ## ButtonsStyle
 
-Through RadCollectionNavigator's **ButtonStyle** property, you can define a custom style for all of its buttons. The buttons are of type **RadButton** and you can find more information on how to style them in [the following section]({%slug radbuttons-styles-and-templates-overview%}).
+Through RadCollectionNavigator's **ButtonStyle** property, you can define a custom style for all of its buttons.
 
 ## CommandButtonsVisibility
 

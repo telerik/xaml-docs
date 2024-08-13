@@ -11,13 +11,13 @@ glyphs_reference_sheet: True
 
 <style>
 table th:first-of-type {
-    width: 5%;
+    width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 5%;
+    width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 40%;
+    width: 30%;
 }
 table th:nth-of-type(4) {
     width: 20%;
@@ -29,8 +29,8 @@ table th:nth-of-type(6) {
     width: 10%;
 }
     @font-face { font-family: TelerikFluentIcons; src: url('/devtools/wpf/fonts/TelerikFluentIcons.ttf'); }
-    .telerik-fluent-icons-font-style {
-        font-family: TelerikFluentIcons
+    telerik-fluent-icons-font-style {
+        font-family: TelerikFluentIcons !important;
     }
 </style>
 

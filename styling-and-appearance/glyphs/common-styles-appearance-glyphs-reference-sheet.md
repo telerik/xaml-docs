@@ -11,19 +11,19 @@ glyphs_reference_sheet: True
 
 <style>
 table th:first-of-type {
-    width: 20%;
+    width: 5%;
 }
 table th:nth-of-type(2) {
-    width: 20%;
+    width: 5%;
 }
 table th:nth-of-type(3) {
     width: 40%;
 }
 table th:nth-of-type(4) {
-    width: 10%;
+    width: 20%;
 }
 table th:nth-of-type(5) {
-    width: 10%;
+    width: 20%;
 }
 table th:nth-of-type(6) {
     width: 10%;
@@ -43,7 +43,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |Glyph - Fluent|Glyph|Glyph Name|Glyph number|Glyph string value|Is New?|
 |---|---|---|---|---|---|
 ||__Navigation and Layout__||||
-|<i class=" .telerik-fluent-icons-font-style"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
+|<i class=" t-i-arrow-45-up-right .telerik-fluent-icons-font-style"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|
 |<i class=" t-i-arrow-45-down-right"></i>|GlyphArrow45DownRight|e001|&amp;#xe001;|
 |<i class=" t-i-arrow-45-down-left"></i>|GlyphArrow45DownLeft|e002|&amp;#xe002;|
 |<i class=" t-i-arrow-45-up-left"></i>|GlyphArrow45UpLeft|e003|&amp;#xe003;|

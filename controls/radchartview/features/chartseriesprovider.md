@@ -157,8 +157,6 @@ In the following example, the chart is populated by a collection of 3 items, thu
 	
 	public class SeriesViewModel
     {
-        public string SeriesType { get; set; }
-
         public ObservableCollection<DataItem> Items { get; set; }
     }
 	
@@ -176,7 +174,6 @@ In the following example, the chart is populated by a collection of 3 items, thu
             {
                 new SeriesViewModel()
                 {
-                    SeriesType = "Bar",
                     Items = new ObservableCollection<DataItem>()
                     {
                         new DataItem() { Category = "A", Value = 5},
@@ -187,7 +184,6 @@ In the following example, the chart is populated by a collection of 3 items, thu
                 },
                 new SeriesViewModel()
                 {
-                    SeriesType = "Bar",
                     Items = new ObservableCollection<DataItem>()
                     {
                         new DataItem() { Category = "A", Value = 15},
@@ -198,7 +194,6 @@ In the following example, the chart is populated by a collection of 3 items, thu
                 },
                 new SeriesViewModel()
                 {
-                    SeriesType = "Line",
                     Items = new ObservableCollection<DataItem>()
                     {
                         new DataItem() { Category = "A", Value = 21},
@@ -234,7 +229,6 @@ In the following example, the chart is populated by a collection of 3 items, thu
 			Me.Data = New ObservableCollection(Of SeriesViewModel)() _
 				From {
 					New SeriesViewModel() With {
-						.SeriesType = "Bar",
 						.Items = New ObservableCollection(Of DataItem)() From {
 							New DataItem() With {
 								.Category = "A",
@@ -255,7 +249,6 @@ In the following example, the chart is populated by a collection of 3 items, thu
 						}
 					},
 					New SeriesViewModel() With {
-						.SeriesType = "Bar",
 						.Items = New ObservableCollection(Of DataItem)() From {
 							New DataItem() With {
 								.Category = "A",
@@ -276,7 +269,6 @@ In the following example, the chart is populated by a collection of 3 items, thu
 						}
 					},
 					New SeriesViewModel() With {
-						.SeriesType = "Line",
 						.Items = New ObservableCollection(Of DataItem)() From {
 							New DataItem() With {
 								.Category = "A",

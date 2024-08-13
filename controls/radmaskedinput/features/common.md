@@ -187,13 +187,22 @@ The __IsLastPositionEditable__ property indicates whether the last position in t
 
 ## TextBoxStyle
 
-The __RadMaskedInput__ controls have a __TextBoxStyle__ property which allows you to modify the style of the underlying text box element representing the input. The property is of type Style which targets TextBox.
+The __RadMaskedInput__ controls have a `TextBoxStyle` property which allows you to modify the style of the underlying text box element representing the input. The property is of type `Style` which targets `PreviewInputTextBox`.
 
 #### __[XAML] Example 7: Setting TextBoxStyle__
 {{region xaml-radmaskedinput-features-common_6}}
 	<telerik:RadMaskedTextInput>
+ 		   <!-- This ResourceDictionary is not required if you use the NoXaml version of the Telerik dlls -->
+      		   <!-- It is used to access the MaskedInputTextBoxStyle resource used with the BasedOn setting -->
+	     	   <!-- You can consider moving the ResourceDictionary to a parent element's Resources, like Window.Resources or UserControl.Resources  -->
+ 		   <telerik:RadMaskedTextInput.Resources>
+			<!-- The .xaml file here will vary based on the used Telerik theme. For example, if you use Windows 11, the file should be GenericWindows11.xaml. For VisualStudio2019, GenericVisualStudio2019.xaml -->
+		       <ResourceDictionary Source="/Telerik.Windows.Controls.Input;component/Themes/GenericOffice2019.xaml" />
+		   </telerik:RadMaskedTextInput.Resources>
 		<telerik:RadMaskedTextInput.TextBoxStyle>
-			<Style TargetType="TextBox">
+  			<!-- The "maskedInput" namespace points to: -->
+     			<!-- xmlns:maskedInput="clr-namespace:Telerik.Windows.Controls.MaskedInput;assembly=Telerik.Windows.Controls.Input" -->
+			<Style TargetType="maskedInput:PreviewInputTextBox" BasedOn="{StaticResource MaskedInputTextBoxStyle}">
 				<Setter Property="TextWrapping" Value="Wrap" />
 				<Setter Property="SelectionBrush" Value="Green" />
 			</Style>

@@ -29,7 +29,7 @@ table th:nth-of-type(6) {
     width: 10%;
 }
 
-    @font-face { font-family: TelerikFluentIcons; src: url ('fonts/TelerikFluentIcons.ttf'); 
+    @font-face { font-family: TelerikFluentIcons; src: url ('/devtools/wpf/fonts/TelerikFluentIcons.ttf'); 
         .telerik-fluent-icons-style {
             font-family: TelerikFluentIcons
         }

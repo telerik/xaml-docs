@@ -27,7 +27,7 @@ Here is a list of the most important properties and how they can be used.
 
 * __AggregateFunctions__: This property allows defining aggregate functions, which results will appear in the column footer. Read more [here]({%slug gridview-columns-aggregate-functions%}).
             
-* __CellEditTemplate, CellStyle, CellTemplate__: By setting these properties you are able to modify the default look of the cells in the columns e.g. to place custom elements in the cell. Read more [here]({%slug gridview-columns-customizing-columns%}).
+* __CellEditTemplate, CellStyle, CellTemplate__: By setting these properties you are able to modify the default look of the cells in the columns e.g. to place custom elements in the cell. Read more [here]({%slug gridview-columns-customizing-columns%}) and [here]({%slug radgridview-columns-celltemplate-and-celledittemplate%}).
             
 * __Footer, FooterCellStyle, GroupFooterStyle__: By setting these properties you are able to modify the content and the appearance of the column footers. To learn how read the [Column Footers]({%slug gridview-columns-column-footers%}) topic.
             

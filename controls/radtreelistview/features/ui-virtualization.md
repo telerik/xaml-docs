@@ -20,14 +20,10 @@ The grid utilizes horizontal and vertical virtualization and introduces containe
 
 >The standard layout system creates item containers and computes layout for each item associated with a list control. The word ___"virtualize"___ refers to a technique by which a subset of user interface (UI) elements are generated from a larger number of data items based on which items are visible on-screen. Generating many UI elements when only a few elements might be on the screen can adversely affect the performance of your application.
 
-The following tutorial shows how to bind to a collection of business objects and to virtualize the items displayed in a __RadTreeListView__ element using the __EnableColumnVirtualization__ and __EnableRowVirtualization__ property.
+__RadTreeListView__ directly inherits the __RadGridView__ and it uses its virtualization mechanism. To learn more read the [respective topic]({%slug radgridview-features-ui-virtualization%}) in the __RadGridView's__ documentation.
 
-As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its virtualization mechanism. To learn more read the [respective topic]({%slug radgridview-features-ui-virtualization%}) in the __RadGridView's__ documentation.
-
-## See Also
-
+## See Also  
  * [Getting Started]({%slug radtreeliestview-getting-started%})
-
- * [Hierarchy Column]({%slug radtreelistview-features-hierarchy-column%})
-
+ * [Hierarchy Column]({%slug radtreelistview-features-hierarchy-column%}) 
+ * [Common UI Virtualization]({%slug common-ui-virtualization%})
  * [Performance]({%slug radtreelistview-performance%})

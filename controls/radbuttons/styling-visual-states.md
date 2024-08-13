@@ -397,5 +397,4 @@ In the next snippet the ControlTemplate of the Style will be modified in such a 
 ## See Also
  * [Commands]({%slug radbuttons-features-commands%})
  * [Getting Started]({%slug radbuttons-getting-started%})
- * [Styling the ButtonChrome]({%slug radbuttons-styles-and-templates-styling-buttonchrome%})
  * [Modifying Default Styles]({%slug styling-apperance-modifying-default-styles%})

@@ -60,5 +60,4 @@ The following list presents the most popular features in Telerik's __RadButtons_
 ## See Also
  * [Getting Started]({%slug radbuttons-getting-started%})
  * [Visual Structure]({%slug radbuttons-visual-structure%})
- * [Events]({%slug radbuttons-events%})
- * [Styles and Templates]({%slug radbuttons-styles-and-templates-overview%})
+ * [Events]({%slug radbuttons-events%}) 

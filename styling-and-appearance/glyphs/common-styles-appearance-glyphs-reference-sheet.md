@@ -144,7 +144,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-chevron-double-right telerik-fluent-icons-font-style"></i>|<i class=" t-i-chevron-double-right"></i>|GlyphChevronDoubleRight|e05f|&amp;#xe05f;|*|
 |<i class=" t-i-chevron-double-down telerik-fluent-icons-font-style"></i>|<i class=" t-i-chevron-double-down"></i>|GlyphChevronDoubleBottom|e060|&amp;#xe060;|*|
 |<i class=" t-i-chevron-double-left telerik-fluent-icons-font-style"></i>|<i class=" t-i-chevron-double-left"></i>|GlyphChevronDoubleLeft|e061|&amp;#xe061;|*|
-||__Action__|__e100__|||
+|||__Action__|__e100__|||
 |<i class=" t-i-undo telerik-fluent-icons-font-style"></i>|<i class=" t-i-undo"></i>|GlyphUndo|e100|&amp;#xe100;|
 |<i class=" t-i-redo telerik-fluent-icons-font-style"></i>|<i class=" t-i-redo"></i>|GlyphRedo|e101|&amp;#xe101;|
 |<i class=" t-i-reset telerik-fluent-icons-font-style"></i>|<i class=" t-i-reset"></i>|GlyphReset|e102|&amp;#xe102;|
@@ -238,7 +238,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-stick telerik-fluent-icons-font-style"></i>|<i class=" t-i-stick"></i>|GlyphStick|e15a|&amp;#xe15a;|*|
 |<i class=" t-i-unstick telerik-fluent-icons-font-style"></i>|<i class=" t-i-unstick"></i>|GlyphUnstick|e15b|&amp;#xe15b;|*|
 |<i class=" t-i-set-column-position telerik-fluent-icons-font-style"></i>|<i class=" t-i-set-column-position"></i>|GlyphSetColumnPosition|e15c|&amp;#xe15c;|*|
-||__Media__|__e200__|||
+|||__Media__|__e200__|||
 |<i class=" t-i-play telerik-fluent-icons-font-style"></i>|<i class=" t-i-play"></i>|GlyphPlay|e200|&amp;#xe200;|
 |<i class=" t-i-pause telerik-fluent-icons-font-style"></i>|<i class=" t-i-pause"></i>|GlyphPause|e201|&amp;#xe201;|
 |<i class=" t-i-stop telerik-fluent-icons-font-style"></i>|<i class=" t-i-stop"></i>|GlyphStop|e202|&amp;#xe202;|
@@ -254,7 +254,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-play-sm telerik-fluent-icons-font-style"></i>|<i class=" t-i-play-sm"></i>|GlyphPlaySm|e20c|&amp;#xe20c;|*|
 |<i class=" t-i-pause-sm telerik-fluent-icons-font-style"></i>|<i class=" t-i-pause-sm"></i>|GlyphPauseSm|e20d|&amp;#xe20d;|*|
 |<i class=" t-i-stop-sm telerik-fluent-icons-font-style"></i>|<i class=" t-i-stop-sm"></i>|GlyphStopSm|e20e|&amp;#xe20e;|*|
-||__Toggle__|__e300__|||
+|||__Toggle__|__e300__|||
 |<i class=" t-i-heart-outline telerik-fluent-icons-font-style"></i>|<i class=" t-i-heart-outline"></i>|GlyphHeartOutline|e300|&amp;#xe300;|
 |<i class=" t-i-heart telerik-fluent-icons-font-style"></i>|<i class=" t-i-heart"></i>|GlyphHeart|e301|&amp;#xe301;|
 |<i class=" t-i-star-outline telerik-fluent-icons-font-style"></i>|<i class=" t-i-star-outline"></i>|GlyphStarOutline|e302|&amp;#xe302;|
@@ -266,12 +266,12 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-circle telerik-fluent-icons-font-style"></i>|<i class=" t-i-circle"></i>|GlyphCircle|e308|&amp;#xe308;|
 |<i class=" t-i-radiobutton telerik-fluent-icons-font-style"></i>|<i class=" t-i-radiobutton"></i>|GlyphRadioButton|e309|&amp;#xe309;|
 |<i class=" t-i-radiobutton-checked telerik-fluent-icons-font-style"></i>|<i class=" t-i-radiobutton-checked"></i>|GlyphRadioButtonChecked|e30A|&amp;#xe30a;|
-||__Alert and Notification__|__e400__|||
+|||__Alert and Notification__|__e400__|||
 |<i class=" t-i-notification telerik-fluent-icons-font-style"></i>|<i class=" t-i-notification"></i>|GlyphNotification|e400|&amp;#xe400;|
 |<i class=" t-i-information telerik-fluent-icons-font-style"></i>|<i class=" t-i-information"></i>|GlyphInformation|e401|&amp;#xe401;|
 |<i class=" t-i-question telerik-fluent-icons-font-style"></i>|<i class=" t-i-question"></i>|GlyphQuestion|e402|&amp;#xe402;|
 |<i class=" t-i-warning telerik-fluent-icons-font-style"></i>|<i class=" t-i-warning"></i>|GlyphWarning|e403|&amp;#xe403;|
-||__Image__|__e500__|||
+|||__Image__|__e500__|||
 |<i class=" t-i-photo-camera telerik-fluent-icons-font-style"></i>|<i class=" t-i-photo-camera"></i>|GlyphPhotoCamera|e500|&amp;#xe500;|
 |<i class=" t-i-image telerik-fluent-icons-font-style"></i>|<i class=" t-i-image"></i>|GlyphImage|e501|&amp;#xe501;|
 |<i class=" t-i-image-export telerik-fluent-icons-font-style"></i>|<i class=" t-i-image-export"></i>|GlyphImageExport|e502|&amp;#xe502;|
@@ -357,7 +357,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-justify-between-vertical telerik-fluent-icons-font-style"></i>|<i class=" t-i-justify-between-vertical"></i>|GlyphJustifyBetweenVertical|e552|&amp;#xe552;|*|
 |<i class=" t-i-justify-around-vertical telerik-fluent-icons-font-style"></i>|<i class=" t-i-justify-around-vertical"></i>|GlyphJustifyAroundVertical|e553|&amp;#xe553;|*|
 |<i class=" t-i-color-canvas telerik-fluent-icons-font-style"></i>|<i class=" t-i-color-canvas"></i>|GlyphColorCanvas|e554|&amp;#xe554;|*|
-||__Editor__|__e600__|||
+|||__Editor__|__e600__|||
 |<i class=" t-i-page-properties telerik-fluent-icons-font-style"></i>|<i class=" t-i-page-properties"></i>|GlyphPageProperties|e600|&amp;#xe600;|
 |<i class=" t-i-bold telerik-fluent-icons-font-style"></i>|<i class=" t-i-bold"></i>|GlyphBold|e601|&amp;#xe601;|
 |<i class=" t-i-italic telerik-fluent-icons-font-style"></i>|<i class=" t-i-italic"></i>|GlyphItalic|e602|&amp;#xe602;|
@@ -534,14 +534,14 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-letter-space telerik-fluent-icons-font-style"></i>|<i class=" t-i-letter-space"></i>|GlyphLetterSpace|e6ae|&amp;#xe6ae;|*|
 |<i class=" t-i-line-height telerik-fluent-icons-font-style"></i>|<i class=" t-i-line-height"></i>|GlyphLineHeight|e6af|&amp;#xe6af;|*|
 |<i class=" t-i-blockquote telerik-fluent-icons-font-style"></i>|<i class=" t-i-blockquote"></i>|GlyphBlockquote|e6b0|&amp;#xe6b0;|*|
-||__Map__|__e700__|||
+|||__Map__|__e700__|||
 |<i class=" t-i-globe-outline telerik-fluent-icons-font-style"></i>|<i class=" t-i-globe-outline"></i>|GlyphGlobeOutline|e700|&amp;#xe700;|
 |<i class=" t-i-globe telerik-fluent-icons-font-style"></i>|<i class=" t-i-globe"></i>|GlyphGlobe|e701|&amp;#xe701;|
 |<i class=" t-i-marker-pin telerik-fluent-icons-font-style"></i>|<i class=" t-i-marker-pin"></i>|GlyphMarkerPin|e702|&amp;#xe702;|
 |<i class=" t-i-marker-pin-target telerik-fluent-icons-font-style"></i>|<i class=" t-i-marker-pin-target"></i>|GlyphMarkerPinTarget|e703|&amp;#xe703;|
 |<i class=" t-i-pin telerik-fluent-icons-font-style"></i>|<i class=" t-i-pin"></i>|GlyphPin|e704|&amp;#xe704;|
 |<i class=" t-i-unpin telerik-fluent-icons-font-style"></i>|<i class=" t-i-unpin"></i>|GlyphUnpin|e705|&amp;#xe705;|
-||__Social__|__e800__|||
+|||__Social__|__e800__|||
 |<i class=" t-i-share telerik-fluent-icons-font-style"></i>|<i class=" t-i-share"></i>|GlyphShare|e800|&amp;#xe800;|
 |<i class=" t-i-user telerik-fluent-icons-font-style"></i>|<i class=" t-i-user"></i>|GlyphUser|e801|&amp;#xe801;|
 |<i class=" t-i-inbox telerik-fluent-icons-font-style"></i>|<i class=" t-i-inbox"></i>|GlyphInbox|e802|&amp;#xe802;|
@@ -587,7 +587,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-vimeo-box telerik-fluent-icons-font-style"></i>|<i class=" t-i-vimeo-box"></i>|VimeoBox|e82a|&amp;#xe82a;|*|
 |<i class=" t-i-youtube telerik-fluent-icons-font-style"></i>|<i class=" t-i-youtube"></i>|Youtube|e82b|&amp;#xe82b;|*|
 |<i class=" t-i-youtube-box telerik-fluent-icons-font-style"></i>|<i class=" t-i-youtube-box"></i>|YoutubeBox|e82c|&amp;#xe82c;|*|
-||__File__|__e900__|||
+|||__File__|__e900__|||
 |<i class=" t-i-folder telerik-fluent-icons-font-style"></i>|<i class=" t-i-folder"></i>|GlyphFolder|e900|&amp;#xe900;|
 |<i class=" t-i-folder-open telerik-fluent-icons-font-style"></i>|<i class=" t-i-folder-open"></i>|GlyphFolderOpen|e901|&amp;#xe901;|
 |<i class=" t-i-folder-add telerik-fluent-icons-font-style"></i>|<i class=" t-i-folder-add"></i>|GlyphFolderAdd|e902|&amp;#xe902;|
@@ -660,7 +660,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 |<i class=" t-i-files-error telerik-fluent-icons-font-style"></i>|<i class=" t-i-files-error"></i>|GlyphFilesError|e945|&amp;#xe945;|*|
 |<i class=" t-i-data-rest telerik-fluent-icons-font-style"></i>|<i class=" t-i-data-rest"></i>|GlyphDataRest|e946|&amp;#xe946;|*|
 |<i class=" t-i-file-typescript telerik-fluent-icons-font-style"></i>|<i class=" t-i-file-typescript"></i>|GlyphFileTypescript|e947|&amp;#xe947;|*|
-||__Charts__|__ea00__|||
+|||__Charts__|__ea00__|||
 |<i class=" t-i-graph telerik-fluent-icons-font-style"></i>|<i class=" t-i-graph"></i>|GlyphGraph|ea00|&amp;#xea00;|*|
 |<i class=" t-i-chart-column-clustered telerik-fluent-icons-font-style"></i>|<i class=" t-i-chart-column-clustered"></i>|GlyphColumnClustered|ea01|&amp;#xea01;|*|
 |<i class=" t-i-chart-column-stacked telerik-fluent-icons-font-style"></i>|<i class=" t-i-chart-column-stacked"></i>|GlyphColumnStacked|ea02|&amp;#xea02;|*|

@@ -11,7 +11,7 @@ glyphs_reference_sheet: True
 
 <style>
 table th:first-of-type {
-    width: 10%;
+    width: 15%;
 }
 table th:nth-of-type(2) {
     width: 10%;
@@ -26,7 +26,7 @@ table th:nth-of-type(5) {
     width: 20%;
 }
 table th:nth-of-type(6) {
-    width: 10%;
+    width: 5%;
 }
 
     @font-face { font-family: TelerikFluentIcons; src: url('/devtools/wpf/fonts/TelerikFluentIcons.ttf'); }
@@ -39,7 +39,9 @@ table th:nth-of-type(6) {
 
 This article lists all available glyphs from the TelerikWebUI font along with their names, number and string values. For more information about the glyphs, see the [Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}) help article. 
 
-> The glyphs marked with __*__ in the last column were introduced with the **R2 2022** release of the suite.
+>important The glyphs marked with __*__ in the last column were introduced with the **R2 2022** release of the suite.
+
+>important With the release of the Windows 11 theme, you can use the TelerikFluentIcons font to apply an alternative font to glyphs. To apply it, set the `Font` property of the `RadGlyph` element to __"TelerikFluentIcons"__.
 
 |Glyph-TelerikFluentIcons font|Glyph|Glyph Name|Glyph number|Glyph string value|Is New?|
 |---|---|---|---|---|---|

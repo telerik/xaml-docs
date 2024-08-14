@@ -14,13 +14,13 @@ table th:first-of-type {
     width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+    width: 15%;
 }
 table th:nth-of-type(3) {
     width: 30%;
 }
 table th:nth-of-type(4) {
-    width: 20%;
+    width: 15%;
 }
 table th:nth-of-type(5) {
     width: 20%;
@@ -43,7 +43,7 @@ This article lists all available glyphs from the TelerikWebUI font along with th
 
 >important With the release of the Windows 11 theme, you can use the TelerikFluentIcons font to apply an alternative font to glyphs. To apply it, set the `Font` property of the `RadGlyph` element to __"TelerikFluentIcons"__.
 
-|Glyph-TelerikFluentIcons font|Glyph|Glyph Name|Glyph number|Glyph string value|Is New?|
+|TelerikFluentIcons Glyph|TelerikWebUI Glyph|Glyph Name|Glyph number|Glyph string value|Is New?|
 |---|---|---|---|---|---|
 ||__Navigation and Layout__||||
 |<i class=" t-i-arrow-45-up-right telerik-fluent-icons-font-style"></i>|<i class=" t-i-arrow-45-up-right"></i>|GlyphArrow45UpRight|e000|&amp;#xe000;|

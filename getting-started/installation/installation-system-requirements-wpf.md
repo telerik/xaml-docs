@@ -41,7 +41,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 	* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
 	* [.NET 7](https://dotnet.microsoft.com/download/dotnet/7.0)
 
-	As of 2024 Q4 (November), we will deprecate the Telerik dlls built against .NET 7. This decision is rooted in our dedication to align with Microsoft’s recommended framework versions so that our products leverage the latest advancements in technology, security, and performance. 
+		As of 2024 Q4 (November), we will deprecate the Telerik dlls built against .NET 7. This decision is rooted in our dedication to align with Microsoft’s recommended framework versions so that our products leverage the latest advancements in technology, security, and performance. 
 
 	* [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
 

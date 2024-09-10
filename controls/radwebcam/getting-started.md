@@ -26,7 +26,7 @@ For __.NET 6__ and later you will need to install also the `System.Drawing.Commo
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
->important With the 2024 Q3 release the __SharpDX__ library used for the rendering of the camera's video feed was replaced with the __SkiaSharp__ library. This was necessary because after March 2019, [SharpDX is no longer maintained](https://github.com/sharpdx/SharpDX).
+>important With the 2024 Q4 release the __SharpDX__ library used for the rendering of the camera's video feed was replaced with the __SkiaSharp__ library. This was necessary because after March 2019, [SharpDX is no longer maintained](https://github.com/sharpdx/SharpDX).
 
 > RadWebCam uses Microsoft [Media Foundation](https://docs.microsoft.com/en-us/windows/win32/medfound/about-the-media-foundation-sdk) which requires a __minimum OS version of Windows Vista or later__. Also, some versions of Windows 7 don't have the __Media Feature Package__ installed, so you may need to install it separately.
 

@@ -151,7 +151,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		
 		private void Editor_HyperlinkClicked(object sender, Telerik.Windows.Controls.Spreadsheet.Worksheets.MouseHandlers.HyperlinkClickedEventArgs e)
 		{
-			if (e.URL.EndsWith("exe"))
+			if (e.Url.EndsWith("exe"))
 			{
 				e.Handled = true;
 				MessageBoxResult Result = MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
@@ -160,7 +160,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 				{
 					Process.Start(new ProcessStartInfo()
 					{
-						FileName = e.URL,
+						FileName = e.Url,
 						UseShellExecute = true
 					});
 				}

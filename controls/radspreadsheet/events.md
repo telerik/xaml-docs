@@ -168,6 +168,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		}
 	{{endregion}}
 
+ 	The `HyperlinkClickedEventArgs` exposes also the `IsTrustedUrl` property, which can be set to `false` to prevent the url from openning.
+
 >The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
 
 ## Cells Events

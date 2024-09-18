@@ -10,11 +10,11 @@ position: 2
 
 # Annotations
 
-RadPdfViewer supports link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address. In addition, if there are links pointing to bookmarks in the same document, the view port will be scrolled to the destination specified in the link.
+RadPdfViewer supports link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, navigated to the respective address. In addition, if there are links pointing to bookmarks in the same document, the viewport will be scrolled to the destination specified in the link.
 
 ## Annotation and Hyperlink Click Events
 
-* `AnnotationClicked` event of `RadPdfViewer`&mdash;This event is fired when you click on an annotation such as a hyperlink.  It comes handy when you want to detect or even cancel the opening of a web page. The `AnnotationEventArgs` contains the `Annotation` and `Link` objects. The action of the clicked annotation can be determined by the `Action` property of the event args. Handling the event in the following manner will not only show the URI of each clicked link as the text of a MessageBox, but will also cancel the default navigation behavior.
+* `AnnotationClicked` event of `RadPdfViewer`&mdash;This event is fired when you click on an annotation such as a hyperlink.  It comes in handy when you want to detect or even cancel the opening of a web page. The `AnnotationEventArgs` contains the `Annotation` and `Link` objects. The action of the clicked annotation can be determined by the `Action` property of the event args. Handling the event in the following manner will not only show the URI of each clicked link as the text of a MessageBox, but will also cancel the default navigation behavior.
 
 	#### __[C#] Defining the AnnotationClicked event handler__
 	{{region radpdfviewer-document-model-annotations_0}}

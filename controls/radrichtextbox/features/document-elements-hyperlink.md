@@ -9,56 +9,33 @@ published: True
 
 # Hyperlink
 
-
-
-The __Telerik.Windows.Documents.Model.Hyperlink__ class has been obsoleted with regard to the newly extended functionality of hyperlinks, allowing the following scenarios:
-      
-
-* having a hyperlink which spans several paragraphs;
-
-* being able to embed all kind of elements inside hyperlinks, e.g. images, tables and table elements;
-
-* making bookmarks in the document the targets of hyperlinks.
-
-The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo), [HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).
-      
-
-You can also use the exposed [customization options](#othercustomizationoptions) for setting the tool tip format and detecting the click of hyperlinks.
-      
-
-
+The hyperlink functionality in RadRichTextBox is encapusalted in the [HyperlinkInfo](#hyperlinkinfo), [HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend) classes. 
 
 ## HyperlinkInfo
 
-More often than not, you would only need to use objects of type HyperlinkInfo. HyperlinkInfo objects have the following properties:
+The `HyperlinkInfo` class allows you to easily insert hyperlinks in the current selection of the document. The class exposes the following properties:
 
-* **IsAnchor**: A boolean property determining if the hyperlink points to a URL or a bookmark;
+* `IsAnchor`&mdash;A boolean property determining if the hyperlink points to a URL or a bookmark;
 
-* **NavigateUri**: The URI of the hyperlink;
+* `NavigateUri`&mdash;The URI of the hyperlink;
 
-* **Target**: Determines if the link should be opened in another window (if set to HyperlinkTargets.Blank) or in the same frame (HyperlinkTargets.Self).
+* `Target`&mdash;Determines if the link should be opened in another window (when set to `HyperlinkTargets.Blank`) or in the same frame (`HyperlinkTargets.Self`).
 
-
-#### __[C#] Example 1: Inserting a hyperlink in a document programmatically__
-
+#### __[C#] Inserting a hyperlink pointing to a web address__  
 {{region radrichtextbox-features-document-elements-hyperlink_0}}
 	HyperlinkInfo info = new HyperlinkInfo()
 	{
-	    NavigateUri = "https://demos.telerik.com/silverlight/#RichTextBox/TelerikEditor",
+	    NavigateUri = "https://www.telerik.com/products/wpf/overview.aspx",
 	    Target = HyperlinkTargets.Blank,
 	    IsAnchor = false
 	};
 	this.radRichTextBox.InsertHyperlink(info, "RichTextBox demo");
 {{endregion}}
 
+To insert a hyperlink to a bookmark within the document, specify the bookmark's name as the `NavigateUri` and set the `IsAnchor` to `true`.
 
-
-A link to a bookmark is inserted by specifying the bookmark's name as **NavigateUri** and setting the **IsAnchor** to *true*.
-
-#### __[C#] Example 2:  Inserting a hyperlink pointing to a bookmark in a document programmatically__
-
-{{region radrichtextbox-features-document-elements-hyperlink_1}}
-
+#### __[C#] Inserting a hyperlink pointing to a bookmark in the document__  
+{{region radrichtextbox-features-document-elements-hyperlink_1}}  
 	HyperlinkInfo info = new HyperlinkInfo()
 	{
 	   NavigateUri = "bookmark1",
@@ -68,41 +45,35 @@ A link to a bookmark is inserted by specifying the bookmark's name as **Navigate
 	this.radRichTextBox.InsertHyperlink(info, "Link to Bookmark 1");
 {{endregion}}
 
+The `InsertHyperlink` method provides the following overloads:         
 
+* `public void InsertHyperlink(HyperlinkInfo hyperlinkInfo, IEnumerable&lt;Inline&gt; inlines)`&mdash;Inserts a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is Bold or there is an image inside the hyperlink.
 
-You can also use the overloaded methods for inserting a hyperlink:
-         
+* `public void `InsertHyperlink(HyperlinkInfo hyperlinkInfo)`&mdash;Creates a hyperlink from the currently selected part of the document.
 
-* public void __InsertHyperlink(HyperlinkInfo hyperlinkInfo, IEnumerable&lt;Inline&gt; inlines)__: Inserts a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is Bold or there is an image inside the hyperlink;
-          
+To remove hyperlink from the document, position the caret within the hyperlink span and call the `RemoveHyperlink`.
 
-* public void __InsertHyperlink(HyperlinkInfo hyperlinkInfo)__: Creates a hyperlink from the currently selected part of the document;
-
-
-Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking the method dedicated to do that.
-
-#### __[C#] Example 3: Remove a hyperlink__
-
+#### __[C#] Removing the hyperlink under the caret position__  
 {{region radrichtextbox-features-document-elements-hyperlink_2}}
-
 	this.radRichTextBox.RemoveHyperlink();
 {{endregion}}
 
-
-
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
-HyperlinkRangeStart and HyperlinkRangeEnd are Inline DocumentElements and can be added to the inlines of a document, if you are building the contents of a RadDocument in code-behind.
+The `HyperlinkRangeStart` and `HyperlinkRangeEnd` are Inline DocumentElements and can be added to the inlines of a document when building the contents of a RadDocument in code-behind. Using these classes give a bit more control over the creation and spanning of hyperlinks.
 
-#### __[C#] Example 4: Add hyperlink that spans on multiple document elements__
+To add a hyperlink using this API, add the range start object and then pair it with the range end. The information about the hyperlink is stored in a `HyperlinkInfo` object assigned to the `HyperlinkRangeStart`. Then, the range objects are added to the `Paragraph`'s `Inlines` collection.
 
+#### __[C#] Adding a hyperlink that spans on multiple document elements__  
 {{region radrichtextbox-features-document-elements-hyperlink_3}}
-
+	// creating the hyperlink range	
 	HyperlinkRangeStart hyperlinkStart = new HyperlinkRangeStart();
 	HyperlinkRangeEnd hyperlinkEnd = new HyperlinkRangeEnd();
 	hyperlinkEnd.PairWithStart(hyperlinkStart);
 	HyperlinkInfo hyperlinkInfo = new HyperlinkInfo() { NavigateUri = "http://telerik.com", Target = HyperlinkTargets.Blank };
 	hyperlinkStart.HyperlinkInfo = hyperlinkInfo;
+	
+	// document setup
 	RadDocument document = new RadDocument();
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
@@ -110,6 +81,8 @@ HyperlinkRangeStart and HyperlinkRangeEnd are Inline DocumentElements and can be
 	ImageInline image = new ImageInline(new Uri("/Telerik.Windows.Controls.RichTextBoxUI;component/Images/MSOffice/32/Picture.png", UriKind.Relative));
 	image.Size = new Size(32, 32);
 	Span spanAfter = new Span(" and some text after the image");
+	
+	// inserting the hyper link range and the content where the hyper links spans
 	paragraph.Inlines.Add(hyperlinkStart);
 	paragraph.Inlines.Add(spanBefore);
 	paragraph.Inlines.Add(image);
@@ -118,23 +91,20 @@ HyperlinkRangeStart and HyperlinkRangeEnd are Inline DocumentElements and can be
 	Paragraph anotherParagraph = new Paragraph();
 	anotherParagraph.Inlines.Add(new Span("Another paragraph here and still in hyperlink"));
 	anotherParagraph.Inlines.Add(hyperlinkEnd);
+	
 	section.Blocks.Add(anotherParagraph);
-	document.Sections.Add(section);
+	document.Sections.Add(section);	
 	this.radRichTextBox.Document = document;
 {{endregion}}
 
-
-
-The result:
+__The document created with the hyperlink range setup__  
 
 ![Hyperlink spanning on an image](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_ImageInHyperlink.png)
 
-You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd** if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the **HyperlinkInfo** or the whole part of the document that is included in the hyperlink.
+The `HyperlinkRangeStart` and `HyperlinkRangeEnd` objects are used also when accessing and modifying the hyperlinks from the document.
 
-#### __[C#] Example 5: Delete all hyperlinks in a document and replace them with text__
-
+#### __[C#] Deleting all hyperlinks in a document and replace them with text__  
 {{region radrichtextbox-features-document-elements-hyperlink_4}}
-
 	IEnumerable<HyperlinkRangeStart> links = this.radRichTextBox.Document.EnumerateChildrenOfType<HyperlinkRangeStart>();
 	foreach (HyperlinkRangeStart link in links)
 	{
@@ -145,70 +115,79 @@ You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd** if y
 	}
 {{endregion}}
 
+## Changing the Hyperlink ToolTip
 
+By default the hyperlink tooltip displays the navigation Uri along with the navigation mode (Ctrl+Click or Click only). To change format used to display this information, set the `HyperlinkToolTipFormatString` property of `RadRichTextBox`. This will set the format for all hyperlinks in the document.
 
-## Other Customization Options
+#### __[C#] Change the default hyperlink tooltip format__  
+{{region radrichtextbox-features-document-elements-hyperlink_6}}
+	<telerik:RadRichTextBox HyperlinkToolTipFormatString="{}Navigate to '{0}' by pressing {1}"/>
+{{endregion}}
 
-### __ToolTip__
+[Showing the custom tooltip format](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_HyperlinkToolTipFormatString.png)
 
-By default, hyperlinks take a fixed string as a tool tip. The default format shows the URI of the hyperlink.
+## Hyperlink Navigation Trigger
 
-You have control over it using the __HyperlinkToolTipFormatString__ property of RadRichTextBox, which will set the format for all hyperlinks in the document.
-        
+The trigger that navigates to the corresponding Uri is controlled by the `HyperlinkNavigationMode` property of `RadRichTextBox`. The mode can be set to one of the following values:
 
-### __HyperlinkNavigationMode__
+* `CtrlClick`&mdash;Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
+* `Click`&mdash;Triggers the hyperlink when users click on the hyperlink.
 
-This property allows you to control what action should trigger the opening of a hyperlink. The possible options are:
-
-- **CtrlClick**: Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
-- **Click**: Triggers the hyperlink when users click on the hyperlink.
-
-
-#### [C#] Example 6: Change the default hyperlink navigation mode
-
- {{region radrichtextbox-features-document-elements-hyperlink_6}}
-
+#### __[C#] Change the default hyperlink navigation mode__  
+{{region radrichtextbox-features-document-elements-hyperlink_7}}
 	this.radRichTextBox.HyperlinkNavigationMode = Telerik.Windows.Documents.UI.HyperlinkNavigationMode.Click;
 {{endregion}}
 
-### __HyperlinkClicked__
+## Handling the Hyperlink Click Navigation
 
-When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextBox__ is fired. The sender of the event is the document element, which the user has clicked on, e.g. a Span, an Image, InlineUIContainer, etc. The event args on the other hand, provide the possibility to mark the event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.
-        
+When a hyperlink is clicked, the `HyperlinkClicked` event of `RadRichTextBox` is raised. The sender of the event is the document element, which the user has clicked on, e.g. a `Span`, an `Image`, `InlineUIContainer`, etc. The event args provide the possibility to cancel or replace the navigation action. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecure address or from starting a local process.
 
-![Handling HyperlinkClicked event of RadRichTextBox](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_HyperlinkClicked.png)
+The default hyperlink navigation can be cancelled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`.
 
+#### __[C#] Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
+{{region radrichtextbox-features-document-elements-hyperlink_8}}
+	private void RadRichTextBox_HyperlinkClicked(object sender, HyperlinkClickedEventArgs e)
+	{
+		var link = e.URL;
+		if (link.EndsWith("exe"))
+		{
+			e.Handled = true;
+			MessageBoxResult Result = MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
+		   
+			if (Result == MessageBoxResult.Yes)
+			{
+				Process.Start(new ProcessStartInfo()
+				{
+					FileName = link,
+					UseShellExecute = true
+				});
+			}
+		}
+	}
+{{endregion}}
 
-### Styling a Hyperlink 
+With the 2024 Q4 release, the default navigation behavior of the hyperlinks is to automatically open only valid web or email addresses.
 
-By default, when the users insert a hyperlink in RadRichTextBox, it is styled with the built-in Hyperlink style. If you would like to change the default appearance of the hyperlinks in a document, you can do so by modifying the style.
+## Customizing the Hyperlink Visual
 
->For more information about the styles in RadRichTextBox, check the [Styles]({%slug radrichtextbox-features-styles%}) topic.
+By default, when the users insert a hyperlink in RadRichTextBox, it is styled with the built-in Hyperlink style. To change the default appearance of the hyperlinks in a document, modifying the [associated style]({%slug radrichtextbox-features-styles%}).
 
-#### [C#] Example 7: Change the default hyperlink style
-
-{{region radrichtextbox-features-document-elements-hyperlink_4}}
-	
+#### __Change the default hyperlink style__
+{{region radrichtextbox-features-document-elements-hyperlink_9}}	
 	StyleDefinition hyperlinkStyle = this.radRichTextBox.Document.StyleRepository[RadDocumentDefaultStyles.HyperlinkStyleName];
 	hyperlinkStyle.SpanStyle.FontSize = 20; 
 	hyperlinkStyle.SpanStyle.ForeColor = Colors.Green;
 	hyperlinkStyle.SpanStyle.UnderlineDecoration = UnderlineTypes.None;
 {{endregion}}
 
-Here is how the customized style looks like:
+__A hyperlink with customized font styles__  
 
 ![Custom style for hyperlink in RadRichTextBox](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_CustomStyle.png)
 
-## See Also
-
+## See Also  
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
-
  * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
-
  * [Section]({%slug radrichtextbox-features-document-elements-section%})
-
  * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
-
  * [Span]({%slug radrichtextbox-features-document-elements-span%})
-
  * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})

@@ -20,11 +20,11 @@ The __RadRichTextBox__ control raises the following specific events:
 
 * __CommandExecuted__ - occurs after a command gets executed. The event handler receives two arguments:
     * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
-    * A __CommandExecutedEventArgs__ object. This arguments allows you to access the command to be executed and its command parameter.
+    * A __CommandExecutedEventArgs__ object. These arguments allow you to access the command to be executed and its command parameter.
     
 * __CommandExecuting__ - occurs before a command gets executed. The event handler receives two arguments:
     * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
-    * A __CommandExecutingEventArgs__ object. This arguments allows you to access the command to be executed and its command parameter and to cancel the command execution.
+    * A __CommandExecutingEventArgs__ object. These arguments allow you to access the command to be executed and its command parameter and to cancel the command execution.
     
     >There is an SDK example demonstrating how you can customize the behavior of the commands using the above-listed events: [Customize Commands SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomizeCommands)
 
@@ -56,7 +56,7 @@ The __RadRichTextBox__ control raises the following specific events:
     * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
     * An __EventArgs__ object.              
 
-* __DocumentContentChanged__ - occurs when the content of the current document has changed. This is aggregated event, which is raised not more frequently than the value specified in RadDocument.DocumentContentChangedInterval property for performance reasons. The default value of DocumentContentChangedInterval is 30ms. 
+* __DocumentContentChanged__ - occurs when the content of the current document has changed. This is an aggregated event, which is raised not more frequently than the value specified in RadDocument.DocumentContentChangedInterval property for performance reasons. The default value of DocumentContentChangedInterval is 30ms. 
 The event handler receives two arguments:
 
 	* The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.
@@ -70,7 +70,7 @@ The event handler receives two arguments:
     * The sender argument contains the __Span__ containing the hyperlink's content. This argument is of type object, but can be cast to the __Span__ type.
     * A __HyperlinkClickedEventArgs__ object. This argument allows you to access the URL and the target of the hyperlink.
 
-	The default hyperlink navigation can be cancelled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecure address or from starting a local process.
+	The default hyperlink navigation can be canceled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecured address or from starting a local process.
 
 	#### __[C#] Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
 	{{region radrichtextbox-events-overview-0}}

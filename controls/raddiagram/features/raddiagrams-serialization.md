@@ -16,45 +16,7 @@ position: 7
 
 In the code below you can see how to save and load a RadDiagram using Commands. Please note that before saving the current diagramming structure, it is best to check whether there are any items to save:				
 
->Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the {% if site.site_name == 'Silverlight' %}[Setting a Theme](http://www.telerik.com/help/silverlight/common-styling-apperance-setting-theme.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %}{% if site.site_name == 'WPF' %}[Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind){% endif %} article you can find more information on how to set an application-wide theme.
-
-{% if site.site_name == 'Silverlight' %}
-
-#### __[XAML] RadDiagram defined in Xaml__
-{{region xaml-raddiagrams_features_serialization_1}}
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-	  
-		<telerik:RadDiagram x:Name="diagram" Grid.Row="1">
-			<telerik:RadDiagramShape />
-			<telerik:CommandManager.CommandBindings>
-				<telerik:CommandBindingCollection>
-					<telerik:CommandBinding Command="telerik:DiagramCommands.Save"
-							Executed="CommandBinding_Executed_Save"
-							CanExecute="CommandBinding_CanExecute" />
-					<telerik:CommandBinding Command="telerik:DiagramCommands.Open"
-							Executed="CommandBinding_Executed_Open" />
-				</telerik:CommandBindingCollection>
-			</telerik:CommandManager.CommandBindings>
-		</telerik:RadDiagram>
-		<StackPanel Orientation="Horizontal">
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Save"
-					CommandTarget="{Binding ElementName=diagram}" Content="Save" />
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Copy"
-					CommandTarget="{Binding ElementName=diagram}" Content="Copy" />
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Paste"
-					CommandTarget="{Binding ElementName=diagram}" Content="Paste" />
-			<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Open"
-					CommandTarget="{Binding ElementName=diagram}" Content="Load" />
-		</StackPanel>
-	</Grid>
-{{endregion}}
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
+>Please note that the examples in this tutorial are showcasing Telerik Windows8 theme. In the [Setting a Theme](http://www.telerik.com/help/wpf/common-styling-apperance-setting-theme-wpf.html#Setting_Application-Wide_Built-In_Theme_in_the_Code-Behind) article, you can find more information on how to set an application-wide theme.
 
 #### __[XAML] RadDiagram Xaml__
 {{region xaml-raddiagrams_features_serialization_0}}
@@ -86,8 +48,6 @@ In the code below you can see how to save and load a RadDiagram using Commands. 
 		</telerik:RadDiagram>
 	</StackPanel>
 {{endregion}}
-
-{% endif %}
 
 #### __[C#] Save-Load logic__
 {{region cs-raddiagrams_features_serialization_2}}

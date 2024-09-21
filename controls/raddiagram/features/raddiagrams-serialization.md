@@ -12,6 +12,8 @@ position: 7
 
 `RadDiagram` allows you to serialize (save) your current diagram in an XML string and later deserialize it (load). You can achieve this with the `RadDiagram.Save()` and `RadDiagram.Load(string serializationString)` methods. You can also use the DiagramCommands `Save` and `Open`.			
 
+>important With the `2024 Q3 SP1` release, the RadDiagram control requires registering the custom types of elements, in order to deserialize them successfully. Read more in the [Allowing Safe Types and Assemblies]({%slug raddiagrams-features-serialization%}#allowing-tafe-types-and-assemblies) section of this article.
+
 ## Save And Load A RadDiagram
 
 In the code below you can see how to save and load a RadDiagram using Commands. Please note that before saving the current diagramming structure, it is best to check whether there are any items to save:				
@@ -421,6 +423,56 @@ To preserve the bindings of the automatically serialized properties of RadDiagra
         End Sub
     End Class
 {{endregion}}
+
+## Allowing Safe Types and Assemblies
+
+The RadDiagram control requires registering the types of any custom shapes, connections, and connectors. This is required, so that the serialized string is deserialized successfully. To do so, the `DiagramConstants` class exposes the `AllowedSerializationTypes` collection that will allow you to add the `Type` of the custom elements. 
+
+The default registered types are the following ones:
+
+* `RadDiagramShape`
+* `RadDiagramContainerShape`
+* `RadDiagramTextShape`
+* `RadDiagramConnection`
+* `RadDiagramConnector`
+
+The following example shows how to register your custom element's Type:
+
+#### __[C#] Registering the Type of а custom RadDiagramShape__
+{{region raddiagrams=features-serialization-18}}
+	DiagramConstants.AllowedSerializationTypes.Add(typeof(MyCustomShape));
+{{endregion}}
+
+#### __[VB.NET] Registering the Type of а custom RadDiagramShape__
+{{region raddiagrams=features-serialization-19}}
+	DiagramConstants.AllowedSerializationTypes.Add(GetType(MyCustomShape))
+{{endregion}}
+
+If the custom elements are defined in a separate assembly, the RadDiagram control provides the option to register it. This is done via the `SafeSerializationAssemblies` collection of the `DiagramContants` class. This collection is of the type of `Dictionary&lt;string, string&gt;` where the key is the name of the registered assembly and value is the `PublicKeyToken`. Setting a public key token is optional.
+
+#### __[C#] Registring an assembly that contains the custom elements types without public key token__
+{{region raddiagrams=features-serialization-20}}
+	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", string.Empty);
+{{endregion}}
+
+#### __[VB.NET] Registring an assembly that contains the custom elements types without public key token__
+{{region raddiagrams=features-serialization-21}}
+	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", String.Empty)
+{{endregion}}
+
+If your assembly has a set public key token, you can add as a parameter to the `Add` method as shown in the below example:
+
+#### __[C#] Registring an assembly that contains the custom elements types with public key token__
+{{region raddiagrams=features-serialization-22}}
+	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", "customdiagramelements-public-key-token-here");
+{{endregion}}
+
+#### __[VB.NET] Registring an assembly that contains the custom elements types with public key token__
+{{region raddiagrams=features-serialization-23}}
+	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", "customdiagramelements-public-key-token-here")
+{{endregion}}
+
+>important If a deserialization operation is undergoing and the custom types are not registered, an error will be displayed in the __Output__ window of Visual Studio. Furthermore, these custom elements will not be deserialized in the RadDiagram control. The displayed error will be as follows: __"The your-custom-shape/conneciton/connector type is not safe for deserialization. It must be registered in DiagramConstants.AllowedSerializationTypes or its defining assembly must be registered in DiagramConstants.SafeSerializationAssemblies."__
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

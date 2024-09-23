@@ -49,7 +49,7 @@ The `InsertHyperlink` method provides the following overloads:
 
 * `public void InsertHyperlink(HyperlinkInfo hyperlinkInfo, IEnumerable&lt;Inline&gt; inlines)`&mdash;Inserts a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is Bold or there is an image inside the hyperlink.
 
-* `public void `InsertHyperlink(HyperlinkInfo hyperlinkInfo)`&mdash;Creates a hyperlink from the currently selected part of the document.
+* `public void InsertHyperlink(HyperlinkInfo hyperlinkInfo)`&mdash;Creates a hyperlink from the currently selected part of the document.
 
 To remove hyperlink from the document, position the caret within the hyperlink span and call the `RemoveHyperlink`.
 

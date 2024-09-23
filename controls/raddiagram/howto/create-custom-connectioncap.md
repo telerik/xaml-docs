@@ -14,7 +14,7 @@ This tutorial will guide you through the task of creating custom connection cap.
 
 ![Custom Cap](images/RadDiagram_Features_CustomCapsFinal.png)
 
-With our __Q1 2015__ official release we extended our __RadDiagramConnection__ component so that its caps can now be customized.
+>With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-tafe-types-and-assemblies).
 
 To implement the neccesary customization you need to create custom class deriving from our RadDiagramConnection and override a couple of methods. Our comopnent exposes the __CreateSourceCapGeometry()__ and __CreateTargetCapGeometry()__ methods which we will take advantage of. As their names imply the CreateSourceCapGeometry() generates the source cap and the CreateTargetCapGeometry() generates the target cap. These methods should return an object of type __PathFigure__ which is further used as the respective cap of the RadDiagramConnection. The customized implementation of those methods should create the desired PathFigures based on three points. Those points are received as parameters of the methods.
 

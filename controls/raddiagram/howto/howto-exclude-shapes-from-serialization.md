@@ -12,7 +12,9 @@ site_name: WPF
 # How to Exclude Shapes from Serialization
 
 The following article will demonstrate how to exclude shapes from serialization.
- 
+
+>With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-tafe-types-and-assemblies).
+
 For the purpose of this example, we will create the following view models.
 
 * __Node__: A class deriving from the [NodeViewModelBase]({%slug raddiagram-data-nodeviewmodel%}) class that represents a node. The class will implement two additional properties: bool __IsStatic__ and Guid __ID__. The serialization of the shapes will depends on the first property. The __Guid__ property will be returned in the __GetNodeUniqueId()__ to cache the serialized shapes and connections.

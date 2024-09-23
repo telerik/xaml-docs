@@ -12,11 +12,15 @@ position: 1
 
 This article describes the release history of the RadDiagram framework.
 
-
 To see the fixes and features included in our latest official release please refer to our {% if site.site_name == 'Silverlight' %} [Release History](http://www.telerik.com/support/whats-new/silverlight/release-history) {% endif %} {% if site.site_name == 'WPF' %} [Release History](http://www.telerik.com/support/whats-new/wpf/release-history) {% endif %}.
 
+## 2024 Q3 SP1
 
-## Q1 2014
+### What's New
+
+* RadDiagram requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-tafe-types-and-assemblies).
+
+## 2014 Q1
 
 ### What's Fixed
 
@@ -36,7 +40,7 @@ To see the fixes and features included in our latest official release please ref
 
 	>You can examine the [Tools Customization]({%slug raddiagram-tools-customization%}) tutorial for more information.				  
 
-## Q2 2013
+## 2013 Q2
 
 ### What's Fixed
 
@@ -104,7 +108,7 @@ To see the fixes and features included in our latest official release please ref
 
 * Zoom step customization 
 
-## Q1 2013
+## 2013 Q1
 
 ### What's Fixed
 
@@ -168,7 +172,7 @@ To see the fixes and features included in our latest official release please ref
 
 * Add event notifying that all shapes are prepared for layout
 
-## Q3 2012
+## 2012 Q3
 
 ### What's Fixed
 
@@ -250,7 +254,7 @@ To see the fixes and features included in our latest official release please ref
 
 * Feature: Create an example in the QSF that is based on visual objects - charts, grids...
 
-## Q2 2012
+## 2012 Q2
 
 ### What's Fixed
 

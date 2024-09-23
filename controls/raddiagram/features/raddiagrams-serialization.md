@@ -472,7 +472,7 @@ If your assembly has a set public key token, you can add as a parameter to the `
 	DiagramConstants.SafeSerializationAssemblies.Add("CustomDiagramElements", "customdiagramelements-public-key-token-here")
 {{endregion}}
 
->important If a deserialization operation is undergoing and the custom types are not registered, an error will be displayed in the __Output__ window of Visual Studio. Furthermore, these custom elements will not be deserialized in the RadDiagram control. The displayed error will be as follows: __"The your-custom-shape/conneciton/connector type is not safe for deserialization. It must be registered in DiagramConstants.AllowedSerializationTypes or its defining assembly must be registered in DiagramConstants.SafeSerializationAssemblies."__
+>important If a deserialization operation is undergoing and the custom types are not registered, an error will be displayed in the __Output__ window of Visual Studio. Furthermore, these custom elements will not be deserialized in the RadDiagram control. The displayed error will be as follows: __"The your-custom-shape/connection/connector type is not safe for deserialization. It must be registered in DiagramConstants.AllowedSerializationTypes or its defining assembly must be registered in DiagramConstants.SafeSerializationAssemblies."__
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

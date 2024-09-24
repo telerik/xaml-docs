@@ -111,9 +111,12 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 
 ## Import Settings
 
-__HtmlFormatProvider__ exposes __ImportSettings__, which allow you to control the import of the HTML file.
+The `HtmlFormatProvider` exposes `ImportSettings` (of type `HtmlImportSettings`), which allows you to control the import of the HTML file.
+
+With the 2024 Q2 (2024.3.924) release the `HtmlImportSettings` class now inherits the `XamlImportSettings`. This enforces the automatic [XML verification]({%slug radrichtextbox-import-export-xaml-verification%}) needed to handle security risks related to the execution of XML content in the application.  
 
 ### ImportSettings Properties
+
 * __UseDefaultStylesheetForFontProperties__: A property of type __bool__ that indicates whether the default font properties of RadRichTextBox or the defaults in the HTML specification should be used for the elements that do not set their FontSize, FontFamily, FontWeight and FontStyle explicitly.
 * __UseHtmlHeadingStyles__: A property of type __bool__ that indicates whether the heading style of the imported HTML should be imported or not.
 

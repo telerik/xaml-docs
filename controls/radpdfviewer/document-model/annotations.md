@@ -58,6 +58,7 @@ RadPdfViewer supports link annotations, which means that if you open a PDF file 
 		}
 	{{endregion}}
 
+
 ## Accessing the Annotations Collection
 
 The `Annotations` collection property of `RadFixedDocument` provides access to all annotations in the document.

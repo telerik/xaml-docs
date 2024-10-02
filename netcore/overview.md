@@ -14,8 +14,6 @@ __Telerik UI for WPF__ comes with support for __.NET 6__ and later.
 
 Telerik provides sets of DLLs built against the different .NET versions which you can reference in an application and start using the Telerik controls. 
 
-There are no .NET 8 dedicated Telerik assemblies, but their .NET 7 is supported in .NET 8 projects.
-
 See how to migrate your app in the [Migrating to .NET Core]({%slug netcore-support-migration%}) article.
 
 The installation approaches for the __.NET__ versions of the Telerik dlls are the same as the ones for the __.NET Framework__ version. Read more in the [Getting Started]({%slug getting-started-first-steps%}) section of the documentation. The additional setting for .NET 6 and later is that several controls rely on third party NuGet packages. These are automatically installed when adding the Telerik assemblies via NuGet or the Telerik Visual Studio Extension. In case you reference the assemblies manually, one or more of the following packages should be installed manually: `System.Data.OleDb`, `System.Drawing.Common` and `System.ServiceModel.Http`.
@@ -30,11 +28,11 @@ To work with the Telerik `.NET 6` DLLs you will need to have the following insta
 
 >important Read more about the .NET 6 requirements in the [Install .NET on Windows](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60) MSDN article.
 
-## .NET 7 Requirements
+## .NET 8 Requirements
 
-To work with the Telerik `.NET 7` DLLs you will need to have the following installed.
+To work with the Telerik `.NET 8` DLLs you will need to have the following installed.
 
-* The latest [.NET 7 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+* The latest [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2022 (v17.2 latest preview or newer).
 

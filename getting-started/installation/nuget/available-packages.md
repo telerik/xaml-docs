@@ -26,14 +26,14 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 * `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Xaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
 	* `Telerik.UI.for.Wpf.462.Xaml`
 	* `Telerik.UI.for.Wpf.60.Xaml`
-	* `Telerik.UI.for.Wpf.70.Xaml`
+	* `Telerik.UI.for.Wpf.80.Xaml`
 
 	Each of these packages contains all Telerik UI for WPF (Xaml) dlls for the corresponding .NET framework. _The number _462__ means __.NET 4.6.2__, __60__ means __.NET 6_ and so on. The __.Xaml__ part at the ending of the package name indicates that it contains the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
 	
 * `Telerik_UI_for_WPF_<version number>_Dev_NuGet_NoXaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:	
 	* `Telerik.UI.for.Wpf.462`	
 	* `Telerik.UI.for.Wpf.60`
-	* `Telerik.UI.for.Wpf.70`
+	* `Telerik.UI.for.Wpf.80`
 	
 	Each of these packages contains the all Telerik UI for WPF (NoXaml) dlls for the corresponding .NET framework. Compared to the previous set of packages, the names here don't end with __.Xaml__ which indicates that they contain the [NoXaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
 	
@@ -46,7 +46,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	* `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml`
 	* etc.
 	
-	Each of these packages contain the corresponding Telerik ([Xaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .7). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
+	Each of these packages contain the corresponding Telerik ([Xaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .8). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
 	
 * `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Separate_Packages_NoXaml.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
 	* `Telerik.Windows.Controls.for.Wpf`
@@ -56,8 +56,8 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	* `Telerik.Windows.Themes.Fluent.for.Wpf`
 	* `Telerik.Windows.Themes.Material.for.Wpf`
 	* etc.
-	
-	Each of these packages contains the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .7). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.	
+
+	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .8). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.  
 	
 ## Telerik NuGet Server Packages
 
@@ -69,8 +69,8 @@ The online package source contains full packages only for the .NET and later ass
 
 * `Telerik.UI.for.Wpf.60`
 * `Telerik.UI.for.Wpf.60.Xaml`
-* `Telerik.UI.for.Wpf.70`
-* `Telerik.UI.for.Wpf.70.Xaml`
+* `Telerik.UI.for.Wpf.80`
+* `Telerik.UI.for.Wpf.80.Xaml`
 
 These packages contain all Telerik dlls for the corresponding .NET version. The package names ending with __.Xaml__ contain the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls. The ones without .Xaml in the name have the __NoXaml__ version.
 

@@ -10,7 +10,7 @@ position: 1
 
 # Migrating to .NET
 
-This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET 6, .NET 7 or .NET 8).
+This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET 6 or later).
 
 1. Create a new __.NET__ application using Visual Studio. 
 	

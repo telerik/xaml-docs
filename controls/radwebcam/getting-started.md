@@ -23,6 +23,8 @@ In order to use `RadWebCam`, you will need to add references to the following as
 * __SharpDX__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/SharpDX* folder.
 * __SharpDX.Direct3D9__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/SharpDX* folder.
 
+	>important With the 2024 Q4 release the __SharpDX__ library used for the rendering of the camera's video feed will be replaced with the __SkiaSharp__ library. This is necessary because after March 2019, [SharpDX is no longer maintained](https://github.com/sharpdx/SharpDX).
+
 >For __.NET 6__ and later you will need to install also the `System.Drawing.Common` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.

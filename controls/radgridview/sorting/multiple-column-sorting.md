@@ -10,7 +10,7 @@ position: 3
 
 # Multiple-Column Sorting
 
-The `RadGridView` control allows you to sort multiple columns. To do this at run-time, hold the __Shift__ key when clicking on the column headers. To change this, refer to the [Specify Multiple-Column Sorting Modifier Keys]({%slug %}#specify-multiple-column-sorting-modifier-keys) section of this article.
+The `RadGridView` control allows you to sort multiple columns. To do this at run-time, hold the __Shift__ key when clicking on the column headers. To change this, refer to the [Specify Multiple-Column Sorting Modifier Keys]({%slug gridview-multiple-column-sorting%}#specify-multiple-column-sorting-modifier-keys) section of this article.
 
 On the snapshot below, the data in RadGridView is sorted ascending by the Est. column and then sorted again by the Stadium column, without removing the previous sorting.
        

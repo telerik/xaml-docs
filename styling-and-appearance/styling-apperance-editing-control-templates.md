@@ -19,7 +19,7 @@ This article demonstrates two approaches on how to extract and edit the default 
 
 The **XAML** files with the different themes for all controls are located in the __Themes.Implicit__ folder. You can find this folder in the Telerik UI for {{ site.framework_name }} installation directory, for example, `C:\Program Files (x86)\Progress\Telerik UI for WPF R2 2021\Themes.Implicit`.
 
-The .xaml files inside the __NET Framework__ folder are meant for **.NET Framework 4.6.2**. The .xaml files inside the __NET__ contains the resources for the __.NET 6__ and __.NET 7__ frameworks. 
+The .xaml files inside the __NET Framework__ folder are meant for **.NET Framework 4.6.2**. The .xaml files inside the __NET__ contains the resources for the __.NET 6__ and __.NET 8__ frameworks. 
 
 The following example shows how to extract the **RadListBox** control template for the **Office_Black** theme:
 

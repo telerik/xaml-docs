@@ -42,6 +42,11 @@ You can specify multiple modifier keys that will have to be held when clicking o
     <telerik:RadGridView ItemsSource="{Binding Clubs}" MultipleColumnSortModifiers="Ctrl+Shift"/>
 {{endregion}}
 
+#### __[C#] Setting multiple modifier keys to the MultipleColumnSortModifiers property__
+{{region gridview-multiple-column-sorting-2}}
+    this.gridView.MultipleColumnSortModifiers = ModifierKeys.Control | ModifierKeys.Shift;
+{{endregion}}
+
 >tip Setting the MultipleColumnSortModifiers property to an empty value will allow you to sort multiple columns without holding a modifier key.
 
 ## See Also

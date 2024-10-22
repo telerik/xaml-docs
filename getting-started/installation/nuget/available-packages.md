@@ -57,7 +57,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	* `Telerik.Windows.Themes.Material.for.Wpf`
 	* etc.
 
-	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .8). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.  
+	Each of these packages contain the corresponding Telerik ([NoXaml]({%slug xaml-vs-noxaml%})) dll for all available .NET versions (.462, .6, .8). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
 	
 ## Telerik NuGet Server Packages
 

@@ -84,7 +84,7 @@ If none of the build-in callout types satisfy your needs, the control allows you
 {{endregion}}
 
 #### Figure 3: Custom Geometry
-	![Telerik Callout Key Properties 3](images/radcallout-key-properties-custom.PNG)
+![Telerik Callout Key Properties 3](images/radcallout-key-properties-custom.PNG)
 	
 ## See Also
 

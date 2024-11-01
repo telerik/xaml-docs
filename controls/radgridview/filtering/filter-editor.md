@@ -13,8 +13,9 @@ Filter Editor is one of the [filtering modes]({%slug gridview-filtering-basic%})
 
 ## Visual Structure
 
-[Image with the visual structure of the RadDataFilterView panel](images/gridview-filter-editor-0.png)
-[Image with the visual structure of the filter editor dialog](images/gridview-filter-editor-1.png)
+![Image with the visual structure of the RadDataFilterView panel](images/gridview-filter-editor-0.png)
+
+![Image with the visual structure of the filter editor dialog](images/gridview-filter-editor-1.png)
 
 * __Data Filter View__&mdash;The panel displaying the applied filters and the related options.
 * __Apply Filters CheckBox__&mdash;A CheckBox that enables/disables the selected filters in the associated RadGridView instances.
@@ -49,7 +50,7 @@ The editor is positioned at the bottom of the data grid component, but this can 
 
 __Top positioned filter editor panel__  
 
-[Image with the filter editor positioned at top](images/gridview-filter-editor-2.png)
+![Image with the filter editor positioned at top](images/gridview-filter-editor-2.png)
 
 ## Toggling the Filters
 
@@ -70,7 +71,7 @@ The filters can be enabled or disabled with the __Apply Filters CheckBox__ or wi
 
 __Enable/disable filters check box__
 
-[Image with disabled filter editor by unchecking its checkbox](images/gridview-filter-editor-3.png)
+![Image with disabled filter editor by unchecking its checkbox](images/gridview-filter-editor-3.png)
 
 ## Toggling the Filter Editor Panel Visibility
 
@@ -91,7 +92,7 @@ Additional to that, the panel can be shown and hidden with the column headers co
 
 __Column header context menu__
 
-[Image showing the column header context menu](images/gridview-filter-editor-4.png)
+![Image showing the column header context menu](images/gridview-filter-editor-4.png)
 
 ## Removing Filters on Panel Close
 
@@ -129,7 +130,7 @@ The message displayed when no filters are applied can be customized with the `Em
 
 __Changed default empty filters text__
 
-[Image showing customized empty filters content](images/gridview-filter-editor-5.png)
+![Image showing customized empty filters content](images/gridview-filter-editor-5.png)
 
 #### __[XAML] Setting the EmptyFiltersContentTemplate property__
 {{region gridview-filter-editor-7}}
@@ -153,7 +154,7 @@ __Changed default empty filters text__
 
 __Changed default empty filters visual__
 
-[Image showing customized empty filters content template](images/gridview-filter-editor-6.png)
+![Image showing customized empty filters content template](images/gridview-filter-editor-6.png)
 
 ## Commands
 
@@ -259,7 +260,7 @@ To __change the spacing__ between the filter criteria visuals, set the `FilterPa
 
 __Increased spacing between the filter parts__
 
-[Image showing customized spacing between the filter parts](images/gridview-filter-editor-7.png)
+![Image showing customized spacing between the filter parts](images/gridview-filter-editor-7.png)
 
 To __hide the close button__, set the `CloseButtonVisibility` property to `Collapsed`.
 
@@ -278,7 +279,7 @@ To __hide the close button__, set the `CloseButtonVisibility` property to `Colla
 
 __Hidden close button__  
 
-[Image showing the filter editor panel with hidden close button](images/gridview-filter-editor-8.png)
+![Image showing the filter editor panel with hidden close button](images/gridview-filter-editor-8.png)
 
 To __change the layout behavior__ of the panel that displays the filtering criterias, change the `IsWrappingEnabled` property. By default, when the criteria visuals go outside of the available width, they will get clipped. Setting `IsWrappingEnabled` to `true` will wrap the visuals and display them on multiple rows. 
 
@@ -297,7 +298,7 @@ To __change the layout behavior__ of the panel that displays the filtering crite
 
 __Wrapped filter parts__  
 
-[Image showing the wrapping feature of the filter editor panel](images/gridview-filter-editor-9.png)
+![Image showing the wrapping feature of the filter editor panel](images/gridview-filter-editor-9.png)
 
 The wrapping behavior can be enabled and disabled also with the __Toggle Wrapping Button__. When there is enough width to display all filtering criterias the button won't be displayed and the `CanToggleWrapping` property of `RadDataFilterView` will return `false`.
 
@@ -319,7 +320,7 @@ To __change the default size of the dialog__ with the `RadDataFilter` control, s
 
 __Filter editor dialog with customized size__
 
-[Image showing customized filter editor dialog size](images/gridview-filter-editor-10.png)
+![Image showing customized filter editor dialog size](images/gridview-filter-editor-10.png)
 
 ## Customizing Filtering Criteria Visuals
 
@@ -343,7 +344,7 @@ To change the member and value backgrounds, set the `MemberBackground` and `Valu
 
 __Customized FilterPart member and value backgrounds__  
 
-[Image showing customized member and value backgrounds for the filter parts](images/gridview-filter-editor-11.png)
+![Image showing customized member and value backgrounds for the filter parts](images/gridview-filter-editor-11.png)
 
 The `FilterPart` can be further customized by setting its `ContentTemplate` property.
 
@@ -396,7 +397,7 @@ The `FilterPart` can be further customized by setting its `ContentTemplate` prop
 
 __Customized FilterPart content__  
 
-[Image showing custom template for the FilterPart elements](images/gridview-filter-editor-11.png)
+![Image showing custom template for the FilterPart elements](images/gridview-filter-editor-11.png)
 
 The data context in the `ContentTemplate` is an object of type `FilterPartViewModel` which contains the following information:
 

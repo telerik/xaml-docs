@@ -5,7 +5,7 @@ description: Learn more about the filtering functionality of Telerik's {{ site.f
 slug: gridview-filtering-basic
 tags: basic,filtering
 published: True
-position: 9
+position: 0
 ---
 
 # Basic Filtering
@@ -32,7 +32,7 @@ There are three built-in filtering modes which you can choose from by setting th
 
 * [Filter Row](#filter-row)
 
-* [Filter Editor](#filter-row)
+* [Filter Editor](#filter-editor)
 
 ## Popup Filtering
 

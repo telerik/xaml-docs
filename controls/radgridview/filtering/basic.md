@@ -26,11 +26,13 @@ You can use the [IsFilteringAllowed]({%slug gridview-filtering-howto-disable-fil
 
 ## Filter Modes
 
-There are two built-in filtering modes which you can choose from by setting the `FilteringMode` property of `RadGridView`.
+There are three built-in filtering modes which you can choose from by setting the `FilteringMode` property of `RadGridView`.
 
 * [Popup Filtering](#popup-filtering)
 
 * [Filter Row](#filter-row)
+
+* [Filter Editor](#filter-row)
 
 ## Popup Filtering
 
@@ -91,6 +93,12 @@ Once a value has been entered and a filter operator has been selected the filter
 Just like with the Popup filtering mode, you can always plug-in your very own field filter editor as described in [this article]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). If you want to modify the appearance or behavior of the default field filter editor that we have selected for you, you can easily do that by attaching to the `FieldFilterEditorCreated` event of RadGridView as demonstrated [here]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}).
 
 >A custom filtering control can only be used when the FilteringMode is Popup. The FilterRow cannot use custom filtering controls.
+
+## Filter Editor 
+
+The filter editor mode displays a data filter view panel at the bottom of RadGridView which allows you to create complex filtering criterias using the RadDataFilter control. Read more about this in the [Filter Editor]({%slug gridview-filter-editor%}) article.
+
+![An image showing the Telerik RadGridView's FilterEditor mode](images/gridview_filtering_basic_filtereditormode)
 
 ## FilterMemberPath
 

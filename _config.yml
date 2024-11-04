@@ -1040,6 +1040,9 @@ navigation:
     "*events":
         title: Events
         position: 80
+     "security":
+        title: Security
+        position: 6
     "netcore":
         title: .NET Core Support
         position: 8

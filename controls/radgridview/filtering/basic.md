@@ -98,7 +98,7 @@ Just like with the Popup filtering mode, you can always plug-in your very own fi
 
 The filter editor mode displays a data filter view panel at the bottom of RadGridView which allows you to create complex filtering criterias using the RadDataFilter control. Read more about this in the [Filter Editor]({%slug gridview-filter-editor%}) article.
 
-![An image showing the Telerik RadGridView's FilterEditor mode](images/gridview_filtering_basic_filtereditormode)
+![An image showing the Telerik RadGridView's FilterEditor mode](images/gridview_filtering_basic_filtereditormode.png)
 
 ## FilterMemberPath
 

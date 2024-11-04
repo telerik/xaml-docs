@@ -9,7 +9,7 @@ position: 3
 
 # Filter Editor
 
-Filter Editor is one of the [filtering modes]({%slug gridview-filtering-basic%}) of RadGridView, which allows you to create complex filter expressions. The visualization of the editor consists of a panel displaying an overview of the filtering criterias and a dialog with embedded[RadDataFilter]({%slug datafilter-overview%}) control that is used to add, remove and modify the filters.
+Filter Editor is one of the [filtering modes]({%slug gridview-filtering-basic%}) of RadGridView, which allows you to create complex filter expressions. The visualization of the editor consists of a panel displaying an overview of the filtering criterias and a dialog with embedded [RadDataFilter]({%slug datafilter-overview%}) control that is used to add, remove and modify the filters.
 
 ## Visual Structure
 

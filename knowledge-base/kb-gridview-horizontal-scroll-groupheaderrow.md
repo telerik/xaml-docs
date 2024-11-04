@@ -48,5 +48,5 @@ The following example shows how to use the `RowLoaded` event.
 			Telerik.Windows.Controls.GridView.SelectiveScrollingGrid.SetSelectiveScrollingClip(button, true);
 		}
 	}
-{{endregion
+{{endregion}}
 

@@ -1,5 +1,5 @@
 ---
-title: Setting a Theme on MS Controls
+title: Theming Support for WPF Native Controls
 page_title: Setting a Theme on MS Controls
 description: Telerik themes define styles also for few {{ site.framework_name }} native controls like TextBox, Button, ScrollViewer and more.
 slug: styling-apperance-themes-mscontrols
@@ -8,57 +8,59 @@ published: True
 position: 9
 ---
 
-# Setting a Theme on MS Controls
+# Theming Support for WPF Native Controls
 
-The __Telerik themes__ are designed to work with Telerik controls and several native {{ site.framework_name }} controls. 
+The [Telerik themes]({%slug common-styling-appearance-available-themes%}) provide styling for the Telerik controls and also several native WPF controls. 
 
-This article lists all the native {{ site.framework_name }} controls supporting Telerik theming, and shows how to enable the theming using the [Style Manager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) and [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) mechanisms. 
+This article lists all the native WPF controls supporting Telerik theming, and shows how to enable the theming using the [Style Manager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) and [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) mechanisms. 
+
+When using the __Implicit Styles__ theming mechanism, the native controls are themed automatically when the Telerik's __System.Windows.xaml__ file gets merged in the application resources.
+
+When using the __StyleManager__ theming, only the native controls used in the templates of the Telerik controls are automatically themed. All external WPF controls use their default theming.
 
 ## Native controls supported by the Telerik theming mechanism
 
-Below is the full control list of native {{ site.framework_name }} controls supported by the Telerik theming mechanism:		
+Below is the full control list of native WPF controls supported by the Telerik theming mechanism:		
 
-* System.Windows.Controls.__Button__
+* `System.Windows.Controls.Button`
 
-* System.Windows.Controls.__ScrollViewer__
+* `System.Windows.Controls.ScrollViewer`
 
-* System.Windows.Controls.__CheckBox__
+* `System.Windows.Controls.CheckBox`
 
-* System.Windows.Controls.__TextBox__
+* `System.Windows.Controls.TextBox`
 
-* System.Windows.Controls.__RadioButton__
+* `System.Windows.Controls.RadioButton`
 
-* System.Windows.Controls.__ListBox__
+* `System.Windows.Controls.ListBox`
 
-* System.Windows.Controls.__PasswordBox__
+* `System.Windows.Controls.PasswordBox`
 
-* System.Windows.Controls.Primitives.__RepeatButton__
+* `System.Windows.Controls.Primitives.RepeatButton`
 
-* System.Windows.Controls.__Tooltip__
+* `System.Windows.Controls.Tooltip`
 
-* System.Windows.Documents.__Hyperlink__
+* `System.Windows.Documents.Hyperlink`
 
-{% if site.site_name == 'WPF' %}
-* System.Windows.Controls.Primitives.__StatusBar__
+* `System.Windows.Controls.Primitives.__StatusBar`
 
-* System.Windows.Controls.__GridSplitter__
+* `System.Windows.Controls.GridSplitter`
 
-* System.Windows.Controls.__Separator__
-{% endif %}
+* `System.Windows.Controls.Separator`
 
-Additionally, there are two more controls part of the Telerik UI for {{ site.framework_name }} suite which mimic the WPF native [Label](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.label?view=netframework-4.5) and [GroupBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.groupbox?view=netframework-4.5). There are no styles for the native versions of those controls because of the Silverlight version of the Telerik's suite (Telerik UI for Silverlight). In the Silverlight framework there are no native Label and GroupBox controls so they were created in the Telerik suite in order to provide them to the Silverlight users and also to enable the theming support.
+Additionally, there are two more controls part of the Telerik UI for WPF suite which mimic the WPF native [Label](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.label?view=netframework-4.5) and [GroupBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.groupbox?view=netframework-4.5). There are no styles for the native versions of those controls. The reason behind this decision is a legacy related to the Silverlight framework (now outdated), which shared a common codebase with WPF. In the Silverlight framework there wasn't native Label and GroupBox controls so they were created in the Telerik suite in order to provide them to the Silverlight users and also to enable the theming support.
 
-* Telerik.Windows.Controls.__Label__
+* `Telerik.Windows.Controls.`Label`
 
-* Telerik.Windows.Controls.__GroupBox__
+* `Telerik.Windows.Controls.GroupBox`
 
 >Before proceeding with this tutorial, you can check the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) topic.
 
-## Setting a Theme Using Implicit Styles 
+## Setting the Theme Using Implicit Styles 
 
 To set the theme to all controls in the application, merge the corresponding ResourceDictionary (__System.Windows.xaml__). This will ensure that the native controls used in the Telerik ones will have the correct theme applied. In this case, any instance of the native controls which is separately defined will also get the Telerik theme.		
 
-#### __[XAML] Example 1: Merging the System.Windows.xaml file__ 
+#### __[XAML] Merging the System.Windows.xaml file__ 
 {{region styling-apperance-themes-mscontrols-0}}
 	<Application.Resources>
 		<ResourceDictionary>
@@ -70,9 +72,9 @@ To set the theme to all controls in the application, merge the corresponding Res
 	</Application.Resources>
 {{endregion}}
 
-To set the theme seprately per control, you can merge the System.Windows.xaml resource in the __Resources__ dictionary of the corresponding control.
+To set the theme seprately per control, you can merge the System.Windows.xaml resource in the `Resources` dictionary of the corresponding control.
 
-#### __[XAML] Example 2: Setting a theme per control using implicit styles__ 
+#### __[XAML] Setting a theme per control using implicit styles__ 
 {{region styling-apperance-themes-mscontrols-1}}
 	<CheckBox Content="CheckBox">	
 		<CheckBox.Resources>
@@ -81,9 +83,9 @@ To set the theme seprately per control, you can merge the System.Windows.xaml re
 	</CheckBox>
 {{endregion}}
 
-To avoid applying the theme to a specific native control after the global theming setting (in the App.xaml Resources), you can set its Style property to an Style object without any Setters.
+To avoid applying the theme to a specific native control after the global theming setting (in the App.xaml `Resources`), you can set its Style property to an `Style` object without any `Setters`.
 
-#### __[XAML] Example 3: Disabling the default theming__ 
+#### __[XAML] Disabling the default theming__ 
 {{region styling-apperance-themes-mscontrols-2}}
 	<CheckBox Content="CheckBox">	
 		<CheckBox.Style>
@@ -92,13 +94,13 @@ To avoid applying the theme to a specific native control after the global themin
 	</CheckBox>
 {{endregion}}
 
-## Setting a Theme Using StyleManager
+## Setting the Theme Using StyleManager
 
-When using StyleManager, the theme can be set only per control. There is no global setting that will apply to all native controls in the view. 
+When using __StyleManager__, the theme can be set only per control. There is no global setting that will apply to all native controls in the view. 
 
-To set the theme per control, use the __StyleManager.Theme__ attached property.
+To set the theme per control, use the `StyleManager.Theme` attached property.
 
-#### __[XAML] Example 4: Setting a theme per control using StyleManager__ 
+#### __[XAML] Setting a theme per control using StyleManager__ 
 {{region styling-apperance-themes-mscontrols-3}}
  	<CheckBox Content="CheckBox" telerik:StyleManager.Theme="Office2013" />
 {{endregion}}

@@ -5,7 +5,7 @@ description: Read this article to learn how you can use the rich API of Telerik'
 slug: gridview-filtering-programmatic
 tags: programmatic,filtering
 published: True
-position: 10
+position: 1
 ---
 
 # Programmatic Filtering

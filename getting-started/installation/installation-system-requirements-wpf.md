@@ -27,7 +27,6 @@ You can find a complete list with the Operating Systems supported by .NET in the
 
 * [.NET 4.6.2 to 4.8 supported operating systems](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)
 * [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md)
-* [.NET 7 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/7.0/supported-os.md)
 * [.NET 8 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md)
 
 ## Development Environment
@@ -38,11 +37,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
         
 * __.NET Framework__. The following versions are supported:	
 	* [.NET 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) to [.NET 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
-	* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
-	* [.NET 7](https://dotnet.microsoft.com/download/dotnet/7.0)
-
-		As of 2024 Q4 (November), we will deprecate the Telerik dlls built against .NET 7. This decision is rooted in our dedication to align with Microsoft’s recommended framework versions so that our products leverage the latest advancements in technology, security, and performance. 
-
+	* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)	
 	* [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 * __SQL Server 2008 Express__ (optional). Download the latest version from [here](https://www.microsoft.com/en-us/sql-server/sql-server-2019).          

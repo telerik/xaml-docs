@@ -874,9 +874,6 @@ navigation:
     controls/radgridview/paging:
         title: Paging
         position: 16
-    controls/radgridview/performance:
-        title: Performance
-        position: 17
     controls/radgridview/populating-with-data:
         title: Populating with data
         position: 18

@@ -26,10 +26,6 @@ These techniques, combined with the outstanding LINQ-based data engine, guarante
 
 You can check the topic on [Styling or content mixed-up on scrolling]({%slug gridview-troubleshooting-style-disappears-scrolling%}) on some issues with styling the visual elements.
         
-## See Also
-
- * [Degraded Performance]({%slug gridview-troubleshooting-performance%})
-
- * [Styling or content mixed-up on scrolling]({%slug gridview-troubleshooting-style-disappears-scrolling%})
-
- * [Grouped Scenario]({%slug gridview-performance-grouped%})
+## See Also  
+ * [Performance Tips and Tricks]({%slug radgridview-performance-tips-tricks%})
+ * [Styling or content mixed-up on scrolling]({%slug gridview-troubleshooting-style-disappears-scrolling%}) 

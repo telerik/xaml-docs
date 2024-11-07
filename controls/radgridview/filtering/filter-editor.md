@@ -54,20 +54,7 @@ __Top positioned filter editor panel__
 
 ## Toggling the Filters
 
-The filters can be enabled or disabled with the __Apply Filters CheckBox__ or with the `AreFiltersApplied` property of `RadDataFilterView`. Setting the property to `false` will disable the filters and update the RadGridView's data view.
-
-#### __[XAML] Setting the AreFiltersApplied property__
-{{region gridview-filter-editor-2}}
-	<telerik:RadGridView FilteringMode="FilterEditor">
-		<telerik:RadGridView.Resources>
-			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls: -->
-			<!--BasedOn="{StaticResource RadDataFilterViewStyle}"-->
-			<Style TargetType="telerik:RadDataFilterView">
-				<Setter Property="AreFiltersApplied" Value="False" />
-			</Style>
-		</telerik:RadGridView.Resources>
-	</telerik:RadGridView>
-{{endregion}}
+The filters can be enabled or disabled with the __Apply Filters CheckBox__. Deselecting the CheckBox will disable the filters and update the RadGridView's data view accordingly.
 
 __Enable/disable filters check box__
 
@@ -78,7 +65,7 @@ __Enable/disable filters check box__
 The panel can be hidden with the `RadGridViewCommands.ToggleFilterEditor` command and the __Close Button__.
 
 #### __[C#] Executing the RadGridViewCommands.ToggleFilterEditor command__
-{{region gridview-filter-editor-3}}
+{{region gridview-filter-editor-2}}
 	this.gridView.PendingCommands.Add(RadGridViewCommands.ToggleFilterEditor);
 	this.gridView.ExecutePendingCommand();
 {{endregion}}
@@ -86,7 +73,7 @@ The panel can be hidden with the `RadGridViewCommands.ToggleFilterEditor` comman
 Additional to that, the panel can be shown and hidden with the column headers context menu. This is a menu displayed on mouse right click over any column header. To enable the menu set the `EnableHeaderContextMenu` property of `RadGridView` to `true`.
 
 #### __[XAML] Enabling the column header context menu__
-{{region gridview-filter-editor-4}}
+{{region gridview-filter-editor-3}}
 	<telerik:RadGridView EnableHeaderContextMenu="True" FilteringMode="FilterEditor" />
 {{endregion}}
 
@@ -99,7 +86,7 @@ __Column header context menu__
 By default closing the panel (with the close button or the command), won't clear the applied filters. To change this behavior and clear the filters, set the `ShouldRemoveFiltersOnClose` property of `RadDataFilterView` to `True`.
 
 #### __[XAML] Setting the ShouldRemoveFiltersOnClose property__
-{{region gridview-filter-editor-5}}
+{{region gridview-filter-editor-4}}
 	<telerik:RadGridView FilteringMode="FilterEditor">
 		<telerik:RadGridView.Resources>
 			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls: -->
@@ -116,7 +103,7 @@ By default closing the panel (with the close button or the command), won't clear
 The message displayed when no filters are applied can be customized with the `EmptyFiltersContent` and `EmptyFiltersContentTemplate` properties of `RadDataFilterView`.
 
 #### __[XAML] Setting the EmptyFiltersContent property__
-{{region gridview-filter-editor-6}}
+{{region gridview-filter-editor-5}}
 	<telerik:RadGridView FilteringMode="FilterEditor">
 		<telerik:RadGridView.Resources>
 			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
@@ -133,7 +120,7 @@ __Changed default empty filters text__
 ![Image showing customized empty filters content](images/gridview-filter-editor-5.png)
 
 #### __[XAML] Setting the EmptyFiltersContentTemplate property__
-{{region gridview-filter-editor-7}}
+{{region gridview-filter-editor-6}}
 	<telerik:RadGridView FilteringMode="FilterEditor">
 		<telerik:RadGridView.Resources>
 			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->
@@ -178,7 +165,7 @@ The `EditorCreatedHandler` property allows to set a handler of type `EventHandle
 The `AutoGeneratingItemPropertyDefinitionHandler` property allows to set a handler of type `EventHandler<DataFilterAutoGeneratingItemPropertyDefinitionEventArgs>` that is invoked when the filter operators starts loading. This allows you to remove operators from the collection with the available operators.
 
 #### __[C#] Assigning the handler objects in code behind__
-{{region gridview-filter-editor-8}}
+{{region gridview-filter-editor-7}}
 	private void RadGridView_Loaded(object sender, RoutedEventArgs e)
 	{
 		var gridView = (RadGridView)sender;
@@ -190,12 +177,12 @@ The `AutoGeneratingItemPropertyDefinitionHandler` property allows to set a handl
 {{endregion}}
 
 #### __[XAML] Defining a handler property in a view model__
-{{region gridview-filter-editor-9}}
+{{region gridview-filter-editor-8}}
 	public EventHandler<Telerik.Windows.Controls.Data.DataFilter.FilterOperatorsLoadingEventArgs> MyEditorCreatedHandler { get; set; }
 {{endregion}}
 
 #### __[XAML] Assigning the handler object with data binding__
-{{region gridview-filter-editor-10}}
+{{region gridview-filter-editor-9}}
 	<telerik:RadGridView FilteringMode="FilterEditor">
 		<telerik:RadGridView.Resources>
 			<!-- Add the following setting to the Style tag if using the Telerik NoXaml dlls -->

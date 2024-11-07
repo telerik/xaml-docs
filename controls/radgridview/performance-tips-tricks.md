@@ -1,6 +1,6 @@
 ---
-title: Tips and Tricks
-page_title: Tips and Tricks
+title: Performance Tips and Tricks
+page_title: Performance Tips and Tricks
 description: Check out our list of tips and tricks related to Telerik's {{ site.framework_name }} DataGrid that will help you tweak your application for optimal performance.
 slug: radgridview-performance-tips-tricks
 tags: tips,and,tricks
@@ -8,7 +8,7 @@ published: True
 position: 17
 ---
 
-# Tips and Tricks
+# Performance Tips and Tricks
 
 __RadGridView__'s API allows you to tweak your application for optimal performance. To get the best out of the control you have to be familiar with the following performance tips.
 

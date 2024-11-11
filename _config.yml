@@ -559,13 +559,7 @@ navigation:
     controls/radslider:
         title: RadSlider
     controls/radslider/features/tick-marks:		
-        title: Tick Marks		
-    controls/radslider/events:		
-        title: Events		
-        position: 7					
-    controls/radslider/styling-and-appearance:		
-        title: Styling and Appearance		
-        position: 8				
+        title: Tick Marks
     controls/radslider/howto:		
         title: How To		
         position: 9

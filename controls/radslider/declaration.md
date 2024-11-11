@@ -5,7 +5,7 @@ description: This article demonstrates how to create a sample application contai
 slug: radslider-declaration
 tags: getting,started
 published: True
-position: 1
+position: 2
 ---
 
 # Getting Started

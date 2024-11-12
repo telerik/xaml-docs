@@ -1,14 +1,14 @@
 ---
-title: Events Overview
-page_title: Events Overview
-description: Check our &quot;Events Overview&quot; documentation article for the RadSlider {{ site.framework_name }} control.
+title: Events
+page_title: Events
+description: Check our &quot;Events&quot; documentation article for the RadSlider {{ site.framework_name }} control.
 slug: radslider-events-overview
 tags: events,overview
 published: True
 position: 3
 ---
 
-# Events Overview
+# Events
 
 This topic covers the specific events exposed by the RadSlider control.	  
 

@@ -5,18 +5,14 @@ description: Check our &quot;Visual Structure&quot; documentation article for th
 slug: radspreadsheet-visual-structure
 tags: visual,structure
 published: True
-position: 2
+position: 1
 ---
 
 # Visual Structure
 
+This section defines terms and concepts used in the scope of __RadSpreadsheet__ that will help you get familiar with the control. We highly encourage you to read the article before you continue with the rest of the documentation of __RadSpreadsheet__.      
 
-
-This section defines terms and concepts used in the scope of __RadSpreadsheet__ that will help you get familiar with the control. We highly encourage you to read the article before you continue with the rest of the documentation of __RadSpreadsheet__.
-      
-
-__RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. It can contain one or more Worksheets, each of which with its own [Scale Factor]({%slug radspreadsheet-zoom-in-or-out-a-worksheet%}). Every worksheet contains cells that are identified by a row number (rows are represented by numbers - 1, 2, 3) and a column number (columns are represented by letters of the alphabet in the UI).
-      
+__RadSpreadsheet__ is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes. It can contain one or more Worksheets, each of which with its own [Scale Factor]({%slug radspreadsheet-zoom-in-or-out-a-worksheet%}). Every worksheet contains cells that are identified by a row number (rows are represented by numbers - 1, 2, 3) and a column number (columns are represented by letters of the alphabet in the UI).      
 
 ## Spreadsheet UI Visual Structure![Rad Spreadsheet Visual Structure 01](images/RadSpreadsheet_Visual_Structure_01.png)
 

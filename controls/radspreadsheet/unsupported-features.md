@@ -5,18 +5,12 @@ description: Check our &quot;Unsupported Features&quot; documentation article fo
 slug: radspreadsheet-unsupported-features
 tags: unsupported,features
 published: True
-position: 8
+position: 12
 ---
 
 # Unsupported Features
 
-
-
-This article lists some of the popular features available in Microsoft Office Open XML Spreadsheet (xlsx) and common editors
-        which are currently not supported in __RadSpreadsheet__.
-      
-
-## 
+This article lists some of the popular features available in Microsoft Office Open XML Spreadsheet (xlsx) and common editors which are currently not supported in __RadSpreadsheet__.
 
 * Comments;
 

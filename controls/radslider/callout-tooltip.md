@@ -5,7 +5,7 @@ description: Check our &quot;Use Callout as Thumb ToolTip in RadSlider&quot; doc
 slug: radslider-how-to-callout-tooltip
 tags: how,to,tooltip,callout,thumb
 published: True
-position: 1
+position: 8
 ---
 
 # Use Callout as Thumb ToolTip in RadSlider

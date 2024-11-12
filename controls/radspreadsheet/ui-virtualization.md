@@ -5,7 +5,7 @@ description: Check our &quot;UI Virtualization&quot; documentation article for t
 slug: radspreadsheet-ui-virtualization
 tags: ui,virtualization
 published: True
-position: 13
+position: 9
 ---
 
 # UI Virtualization

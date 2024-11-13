@@ -1034,6 +1034,9 @@ navigation:
     "security":
         title: Security
         position: 9
+    "breaking-changes":
+        title: Breaking Changes
+        position: 8
     "netcore":
         title: .NET Core Support
         position: 8

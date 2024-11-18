@@ -19,7 +19,7 @@ This tutorial will walk you through the creation of a __RadContextMenu__ and wil
 To use the __RadContextMenu__ in your projects you have to add references to the following assemblies:
 
 * __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Navigation__
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
 

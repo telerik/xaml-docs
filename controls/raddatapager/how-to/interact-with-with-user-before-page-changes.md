@@ -59,10 +59,6 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 
 ![{{ site.framework_name }} RadDataPager Dialog Before Navigating to Next Page](images/RadDataPager_How_To_Interact_With_The_User_01.png)
 
-## See Also
-
+## See Also  
  * [Events]({%slug raddatapager-events-overview%})
-
- * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
-
  * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})

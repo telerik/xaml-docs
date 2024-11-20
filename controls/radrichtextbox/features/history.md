@@ -20,6 +20,7 @@ This topic will explain you how to:
 * [Undo/Redo Actions](#undoredo-actions)
 * [Change History Depth](#change-history-depth)
 * [Preserve History Using RadDocumentEditor](#preserve-history-using-raddocumenteditor)
+* [UndoGroup](#undogroup)
 
 ## Enable/Disable History
 
@@ -157,6 +158,8 @@ To cancel the execution of the undo group and prevent it from being recorded to 
 	
 	documentEditor.CancelUndoGroup() 
 {{endregion}}
+
+One thing to note here is that it is not possible to remove some actions from the undo history altogether, i.e. you cannot perform an action without it getting registered in the Undo/Redo stack. In most cases, however, this is sufficient, as you can group the operations that you do not want to name and show explicitly to the end user with the ones that have been user-initiated and are expected by the person modifying the content of RadRichTextBox.
 
 ## See Also
 

@@ -10,7 +10,6 @@ position: 7
 
 # Unbound Mode
 
-
 There are scenarios, in which you might want to use the __RadDataPager__ only for its UI without passing any data to it. This scenarios will require you to use the RadDataPager's __Unbound Mode__ feature. The use of this feature consists in setting some of the __RadDataPager's__ properties manually and handling a few events.
 
 The example in this topic will show you a __ListBox__ bound to a list of integers. A __RadDataPager__ will be used as UI to page the data, but the paging itself will be done outside of the __RadDataPager__ via __LINQ__ extension methods.
@@ -85,11 +84,6 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 	End Class
 {{endregion}}
 
-
-## See Also
-
+## See Also  
  * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})
-
- * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
-
  * [Display Modes]({%slug raddatapager-features-display-modes%})

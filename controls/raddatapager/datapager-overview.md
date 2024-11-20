@@ -27,11 +27,7 @@ Telerik DataPager provides the user with a navigation interface to page through 
 
 * __AutoEllipsis and DisplayMode__&mdash;Controls the user interface of the pager. 
 
-{% if site.site_name == 'Silverlight' %}
-* __WCF RIA Services and DomainDataSource support__&mdash;RadDataPager can be easily integrated with the `DomainDataSource` control and consume server data through __WCF RIA Services__. Check out the online demo at [https://demos.telerik.com/silverlight/#DomainDataSource/FirstLook](https://demos.telerik.com/silverlight/#DomainDataSource/FirstLook).
-{% else %}
 * __WCF Data Services and DataServicesDataSource support__&mdash;RadDataPager can be easily integrated with the `DataServicesDataSource` control and consume server data through __WCF Services__.
-{% endif %}
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
@@ -48,5 +44,4 @@ Telerik DataPager provides the user with a navigation interface to page through 
 ## See Also  
  * [Visual Structure]({%slug raddatapager-visual-structure%})
  * [Getting Started]({%slug raddatapager-getting-started%})
- * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
  * [Events]({%slug raddatapager-events-overview%})

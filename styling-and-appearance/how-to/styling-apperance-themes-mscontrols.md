@@ -110,7 +110,7 @@ There is no global setting in the __StyleManager__ that will apply the theme to 
 	<Application.Resources>
 	 	<Style TargetType="CheckBox">
 			<Setter Property="telerik:StyleManager.Theme" Value="Windows11" />
-	    	</Style>
+		</Style>
    	</Application.Resources>
 {{endregion}}
 

@@ -28,4 +28,3 @@ This section defines the terms and concepts used in the scope of the RadDataPage
 
 ## See Also 
  * [Getting Started]({%slug raddatapager-getting-started%})
- * [Paging Essentials]({%slug raddapager-features-paging-essentials%})

@@ -96,10 +96,6 @@ Here is the XAML for the example.
 
 ![{{ site.framework_name }} RadDataPager Current Page](images/RadDataPager_Features_CurrentPage_01.png)
 
-## See Also
-
- * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
-
- * [Page Size]({%slug raddatapager-features-page-size%})
-
+## See Also  
+ * [Page Size]({%slug raddatapager-features-page-size%}) 
  * [Display Modes]({%slug raddatapager-features-display-modes%})

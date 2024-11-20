@@ -12,8 +12,6 @@ position: 3
 
 The __RadDataPager__ is a control that allows you to split your data into pages and display it in a user-friendly way. This topic will help you quickly get started using the control.
 
->To learn more about the concepts behind the __RadDataPager__ you can read the [Paging Essentials]({%slug raddapager-features-paging-essentials%}) topic first.
-
 ## Assembly References
 
 To use the __RadDataPager__ in your projects you have to add references to the following assemblies:
@@ -22,7 +20,7 @@ To use the __RadDataPager__ in your projects you have to add references to the f
 * __Telerik.Windows.Controls.Data__
 * __Telerik.Windows.Data__
 
-You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
 ### Adding Telerik Assemblies Using NuGet
 
@@ -143,7 +141,7 @@ The controls from our suite support different themes. You can see how to apply a
 
 To change the theme, you can follow the steps below:
 
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#DataPager/Theming){% endif %} application.
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our [WPF Demos](https://demos.telerik.com/wpf/) application.
 
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the __RadDataPager__, you will need to merge the following resources:
 
@@ -165,7 +163,7 @@ __Example 5__ demonstrates how to merge the ResourceDictionaries so that they ar
 	</Application.Resources>
 {{endregion}}
 
->Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+Alternatively, you can use the theme of the control via the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}).
 
 __Figure 3__ shows a __RadDataPager__ with the **Windows8** theme applied.
 
@@ -185,9 +183,7 @@ __Figure 3__ shows a __RadDataPager__ with the **Windows8** theme applied.
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
 {% endif %}
 
-## See Also
-
-* [Paging Essentials]({%slug raddapager-features-paging-essentials%})
+## See Also  
 * [Visual Structure]({%slug raddatapager-visual-structure%})
 * [Events]({%slug raddatapager-events-overview%})
 * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})

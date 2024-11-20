@@ -76,8 +76,6 @@ To undo and redo some actions, you can call the `Undo` and `Redo` methods of Rad
 	End Sub
 {{endregion}}
 
-## UndoGroup
-
 ## Change History Depth
 
 To change the history capacity you have to set the desired value of the `Depth` property of the DocumentHistory. The default one is __1000__.
@@ -95,6 +93,70 @@ To change the history capacity you have to set the desired value of the `Depth` 
 ## Preserve History Using RadDocumentEditor
 
 RadDocument has API of its own, but using it has a set of limitations. One of those limitations is that the methods of RadDocument are not registered in the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer be able to undo and redo their previous changes. You can find detailed information on the topic [here]({%slug radrichtextbox-features-raddocumenteditor%}).
+
+## UndoGroup
+
+The `RadDocumentEditor` control allows you to group several methods so that they are added to the Undo/Redo stack as a single item. To do so, you can use the `BeginUndoGroup` and `EndUndoGroup` methods.
+
+#### __[C#] Using the BeginUndoGroup and EndUndoGroup methods__
+{{region radrichtextbox-features-history-8}}
+	documentEditor.BeginUndoGroup(); 
+	
+	if (documentEditor.Document.CaretPosition.IsPositionInsideTable) 
+	{ 
+	    documentEditor.InsertTableRow(); 
+	    documentEditor.InsertTableRow(); 
+	    documentEditor.InsertTableRow(); 
+	    documentEditor.Document.Selection.Clear(); 
+	} 
+	
+	documentEditor.EndUndoGroup("Insert three table rows"); 
+{{endregion}}
+
+#### __[VB.NET] Using the BeginUndoGroup and EndUndoGroup methods__
+{{region radrichtextbox-features-history-9}}
+	documentEditor.BeginUndoGroup() 
+	
+	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then 
+		documentEditor.InsertTableRow() 
+		documentEditor.InsertTableRow() 
+		documentEditor.InsertTableRow() 
+		documentEditor.Document.Selection.Clear() 
+	End If 
+	
+	documentEditor.EndUndoGroup("Insert three table rows") 
+{{endregion}}
+
+To cancel the execution of the undo group and prevent it from being recorded to the history, you can use the `CancelUndoGroup` method.
+
+#### __[C#] Using the CancelUndoGroup method__
+{{region radrichtextbox-features-history-10}}
+	documentEditor.BeginUndoGroup(); 
+	
+	if (documentEditor.Document.CaretPosition.IsPositionInsideTable) 
+	{ 
+		documentEditor.InsertTableRow(); 
+		documentEditor.InsertTableRow(); 
+		documentEditor.InsertTableRow(); 
+		documentEditor.Document.Selection.Clear(); 
+	} 
+	
+	documentEditor.CancelUndoGroup(); 
+{{endregion}}
+
+#### __[VB.NET] Using the CancelUndoGroup method__
+{{region radrichtextbox-features-history-11}}
+	documentEditor.BeginUndoGroup() 
+	
+	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then 
+		documentEditor.InsertTableRow() 
+		documentEditor.InsertTableRow() 
+		documentEditor.InsertTableRow() 
+		documentEditor.Document.Selection.Clear() 
+	End If 
+	
+	documentEditor.CancelUndoGroup() 
+{{endregion}}
 
 ## See Also
 

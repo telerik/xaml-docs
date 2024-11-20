@@ -10,10 +10,6 @@ position: 1
 
 # Display Modes
 
-
-
-## 
-
 >tip If you are new to the __RadDataPager__ control, you can consider reading the [Getting Started]({%slug raddatapager-getting-started%}) topic before continuing.
 
 The __RadDataPager__ allows you to decide which of its visual elements to be visible. This is done via the __PagerDisplayModes__ enumeration and the __DisplayMode__ property. 
@@ -81,10 +77,6 @@ If the combination of visual elements doesn't exist in the enumeration, you can 
 
 ![{{ site.framework_name }} RadDataPager DisplayMode PreviousNext and Text](images/RadDataPager_Features_DisplayModes_02.png)
 
-## See Also
-
+## See Also  
  * [Page Size]({%slug raddatapager-features-page-size%})
-
- * [Paging Essentials]({%slug raddapager-features-paging-essentials%})
-
  * [Auto Ellipsis]({%slug raddatapager-features-auto-ellipsis%})

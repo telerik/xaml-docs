@@ -16,7 +16,7 @@ Currently, this section of the documentation contains only the latest release no
 
 ## 2024 Q2
 
-### Common Changes
+#### Common Changes
 
 * Removed the __.NET Core 3.1__ distribution of the Telerik dlls.
 
@@ -24,7 +24,7 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `Telerik.Windows.Controls.Automation.Peers.RadRangeBaseAutomationPeer` class. Use the `Telerik.Windows.Automation.Peers.RadRangeBaseAutomationPeer` class instead.
 
-### Docking
+#### Docking
 
 * Removed the `ElementSaving` and `ElementCleaning` events of `RadDocking`. Use the `ElementLayoutSaving` and `ElementLayoutCleaning` events instead. 
 
@@ -36,55 +36,55 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `DraggedSplitContainer` property of `PreviewShowCompassEventArgs`. Use the `DraggedElement` property instead.
 
-### DateTimePicker
+#### DateTimePicker
 
 * Changed the name of the `RadDateTimePicker`'s `BlackoutDatesDatesProperty` dependency property to `BlackoutDatesProperty` because of a typo.
 
 * Changed the name of the `RadDateTimePicker`'s `IsDownOpenProperty` dependency property to `IsDropDownOpenProperty` because of a typo.
 
-### DragDropManager
+#### DragDropManager
 
 * Removed the `DragDropManager.TouchDragTrigger` attached property and the `TouchDragTrigger` enumeration. Use the `TouchManager.DragStartTrigger` attached property and the `TouchDragStartTrigger` enumeration instead.
 
-### Expander
+#### Expander
 
 * Removed the `Telerik.Windows.Controls.RadExpanderAutomationPeer` class. Use `Telerik.Windows.Automation.Peers.RadExpanderAutomationPeer` instead.
 
-### GridView
+#### GridView
 
 * Removed the `CurrentCellChanged` event of `RadGridView`. Use the `CurrentCellInfoChanged` event instead. 
 
 * Removed the `ExportFormat.Xlsx` and `ExportFormat.Pdf` values from the `ExportFormat` enumeration. Use the [ExportToXlsx]({%slug gridview-export-xlsx%}) and [ExportToPdf]({%slug gridview-export-pdf%}) methods instead.
 
-### ListBox
+#### ListBox
 
 * Removed the `OnIsReadOnlyChanged` protected method of `RadListBox`, because it doesn't do anything.
 
-### ProgressBar
+#### ProgressBar
 
 * Removed the `Telerik.Windows.Controls.RadProgressBarAutomationPeer` class. Use `Telerik.Windows.Automation.Peers.RadProgressBarAutomationPeer` instead.
 
-### RichTextBox
+#### RichTextBox
 
 * Removed the `HandleDocumentCaretPositionChanging` and `HandleDocumentCaretPositionChanged` methods from the `KeyboardSelectionHandler` class. Use the [ExpandTopRight and ExpandDownLeft methods]({%slug radrichtextbox-features-selection%}) instead.
 
-### TouchManager
+#### TouchManager
 
 * Removed the `TouchManager.IsTouchHitTestVisible` attached property. Use the `TouchManager.TouchMode` property instead.
 
 ## 2024 Q4
 
-### Common Changes
+#### Common Changes
 
 * Removed the __.NET 7__ distribution of the Telerik dlls.
 
 * Removed __.NET Core Convert Wizard__ from the Telerik Visual Studio Extensions.
 
-### Barcode
+#### Barcode
 
 * Removed the old barcode engine. Use the `RadBarcode` control instead. Read more in the [following article]({%slug barcode-upgrading%}).
 
-### Diagram
+#### Diagram
 
 * Removed the `DiagramCommands.Print` command. Use the `DiagramExtensionCommands.Print` command instead.
 
@@ -114,17 +114,17 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `FitTo` method of the `RadDiagram` class. Use the `BringIntoView` method instead.
 
-### Docking
+#### Docking
 
 * Removed the `OnElementSaving` and `OnElementCleaning` protected virtual methods of `RadDocking`. Use the `OnElementLayoutCleaning` and `OnElementLayoutSaving` methods instead.
 
 * Removed the `GetRootlevelSplitContainer ` method of the `DockingLogicalTreeHelper` class because of a typo. Use the `GetRootLevelSplitContainer` method instead.
 
-### GanttView
+#### GanttView
 
 * Removed the `GetCorrectedSize` and `GetCorrectedRect` methods of the `LogicalCanvasPanel` class. The methods were a legacy code used only in the Silverlight branch of the source code. These are not used in WPF.
 
-### PdfViewer
+#### PdfViewer
 
 * Removed the `Commands` property of `RadPdfViewer`. Use `CommandDescriptors` property instead. 
 
@@ -136,7 +136,7 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `OnExceptionEventArgs` class. Use the `DocumentUnhandledExceptionEventArgs` class instead.
 
-### RibbonView
+#### RibbonView
 
 * Removed the `DividerDarkBrush` and `DividerLightBrush` properties of the `ButtonGroupPanel` class. Use the `BorderBrush` property of the `RadButtonGroupItem` instead.
 
@@ -167,7 +167,7 @@ Currently, this section of the documentation contains only the latest release no
 	* `TopTemplate` 
 	* `BottomTemplate`
 
-### RichTextBox
+#### RichTextBox
 
 * Removed the `RadRichTextPageView` class. 
 
@@ -283,31 +283,31 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `DoubleToVisibilityConverter` class. 
 
-### Sparklines
+#### Sparklines
 
 * Removed `IndicatorsVisiblity` property of the `RadLinearSparklineBase` class. Use the `IndicatorsVisibilityProperty` instead. 
 
 * Removed the `Telerik.Windows.Controls.Sparklines.RectToRectangleGeometryConveter` class. Use the `Telerik.Windows.Controls.Sparklines.RectToRectangleGeometryConverter` class instead.
 
-### Spreadsheet
+#### Spreadsheet
 
 * Removed the `DocumentContentChanged` event of the `CellEditor` class. Use the `TextChanged` event instead. 
 
 * Removed the `OnDocumentContentChanged` protected method if `CellEditor`. Use the `OnTextChanged` method instead.
 
-### TimeBar
+#### TimeBar
 
 * Removed the `IntervalContainerBase` class. Use the `TimeBarIntervalContainerBase` class instead.
 
 * Removed the `IntervalControlBase` class. Use the `TimeBarIntervalControlBase` class instead. 
 
-### Timeline
+#### Timeline
 
 * Removed the `TimelinePeriodContainerBase` class. Use the `TimeIntervalContainerBase` class instead.
 
 * Removed the `TimelinePeriodControlBase` class. Use the `TimeIntervalControlBase` class instead. 
 
-### TreeMap
+#### TreeMap
 
 * Removed the `AbsoluteValueBrushColorizer` class. Use the `ValueBrushColorizer` class instead. 
 
@@ -317,6 +317,6 @@ Currently, this section of the documentation contains only the latest release no
 
 * Removed the `RelativeValueGradientColorizer` class. Use the `ValueGradientColorizer` class instead. 
 
-### WebCam
+#### WebCam
 
 * Replaced the __SharpDX__ dependencies with __SkiaSharp__. This was needed because the SharpDX library is no longer maintained since May 2019.

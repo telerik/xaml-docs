@@ -93,7 +93,7 @@ To change the history capacity you have to set the desired value of the `Depth` 
 
 ## Preserve History Using RadDocumentEditor
 
-RadDocument has API of its own, but using it has a set of limitations. One of those limitations is that the methods of RadDocument are not registered in the undo/redo stack. Thus, once such a method is used, the history stack is cleared and users will no longer be able to undo and redo their previous changes. You can find detailed information on the topic [here]({%slug radrichtextbox-features-raddocumenteditor%}).
+The methods of the RadDocument class do not register in the undo/redo stack. Once a method is invoked, the history stack will be cleared and the users will no longer be able to undo/redo previous actions. Due to this and for some other factors, the RadDocumentEditor class was introduced. You can find detailed information about it [here]({%slug radrichtextbox-getting-started%}#raddocumenteditor).
 
 ## UndoGroup
 
@@ -165,4 +165,3 @@ One thing to note here is that it is not possible to remove some actions from th
 
  * [Selection]({%slug radrichtextbox-features-selection%})
  * [Positioning]({%slug radrichtextbox-features-positioning%})
- * [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%})

@@ -21,7 +21,7 @@ The packages can be downloaded as `.nupkg` files which can be used to [setup a l
 
 The Telerik UI for WPF product provides `.nupkg` files that can be downloaded from [your telerik.com account](https://www.telerik.com/account/product-download?product=RCWPF). The download page has the following .zip files.
 
-### Full Packages
+### Full Packages (Local)
 
 * `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Xaml.zip`&mdash;Contains `.nupkg` files for the following __full packages__:
 	* `Telerik.UI.for.Wpf.462.Xaml`
@@ -37,7 +37,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	
 	Each of these packages contains the all Telerik UI for WPF (NoXaml) dlls for the corresponding .NET framework. Compared to the previous set of packages, the names here don't end with __.Xaml__ which indicates that they contain the [NoXaml]({%slug xaml-vs-noxaml%}) version of the Telerik assemblies.
 	
-### Separate Packages
+### Separate Packages (Local)
 
 * `Telerik_UI_for_WPF_<version number>_Dev_NuGet_Separate_Packages_Xaml.zip`&mdash;This file contains __separate packages__ for each Telerik assembly.
 	* `Telerik.Windows.Controls.for.Wpf.Xaml`
@@ -63,7 +63,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 
 There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-package-files) ones. 
 
-### Full Packages
+### Full Packages (Server)
 
 The online package source contains full packages only for the .NET and later assemblies.
 
@@ -79,7 +79,7 @@ These packages contain all Telerik dlls for the corresponding .NET version. The 
 
 The __AllControls__ packages contain all Telerik assemblies for all distributed .NET versions.
 
-### Separate Packages
+### Separate Packages (Server)
 
 * `Telerik.Windows.Controls.for.Wpf.Xaml`
 * `Telerik.Windows.Controls.for.Wpf`

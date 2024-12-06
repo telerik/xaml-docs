@@ -1,7 +1,7 @@
 ---
 title: Controls Documentation
 page_title: Controls Documentation
-description: Easily build next-generation applications with {% if site.site_name == 'Silverlight' %}110+ Silverlight{% else %}150+ WPF{% endif %} controls from Telerik. Check the Telerik UI for {{ site.framework_name }} documentation for guidance and examples. 
+description: Easily build next-generation applications with 150+ WPF controls from Telerik. Check the Telerik UI for {{ site.framework_name }} documentation for guidance and examples. 
 slug: introduction
 tags: introduction
 published: True
@@ -10,28 +10,13 @@ position: 0
 
 # Welcome to Telerik UI for {{ site.framework_name }}
 
-<!--{% if site.site_name == 'Silverlight' %}
-<img src="images/UI_for_SL_logo.png" style="min-width:334px;width: 30%;" alt="Telerik UI for Silverlight logo" />
-{% else %}
 <img src="images/UI_for_WPF_logo.png" style="min-width:287px;width: 30%;" alt="Telerik UI for WPF logo" />
-{% endif %}-->
 
-Thank you for choosing {% if site.site_name == 'Silverlight' %}[Telerik UI for Silverlight](https://www.telerik.com/products/silverlight/overview.aspx){% else %}[Telerik UI for WPF](https://www.telerik.com/products/wpf/overview.aspx){% endif %}.
-
-{% if site.site_name == 'Silverlight' %}
-Telerik UI for Silverlight provide native controls for Silverlight 5. The suite includes more than 110+ UI controls for building rich line-of-business Silverlight applications.
-
-Sharing the same codebase with Telerik WPF controls, the Silverlight controls offer a clean and intuitive API, Blend support and powerful theming capabilities that will radically improve your RIA development. 
-
-To learn more please visit the [Telerik UI for Silverlight](https://www.telerik.com/products/silverlight/overview.aspx) product overview page.
-
-{% else %}
+Thank you for choosing [Telerik UI for WPF](https://www.telerik.com/products/wpf/overview.aspx).
 
 Telerik UI for WPF is a complete commercial toolset for building next-generation line of business and kiosk applications for Windows Presentation Foundation. Leveraging the amazing potential of this platform as well as many years of excellence in presentation layer technologies, Telerik UI for WPF controls provide a high-performance, visually appealing, and highly customizable shortcut to the world of engaging user experiences.  
 
 To learn more please visit the [Telerik UI for WPF](https://www.telerik.com/products/wpf/overview.aspx) product overview page.
-
-{% endif %}
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-introduction.html %}
@@ -43,33 +28,23 @@ Telerik UI for {{ site.framework_name }} features the following controls:
 
 Throughout this article, you will find the following sections that describe all of the important aspects in depth:
 
-{% if site.site_name == 'WPF' %}
 ## Trial Version and Commercial License
 
 This UI for WPF library is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase/individual/wpf.aspx). Feel free to review the Telerik UI for WPF [License Agreement](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s) to get acquainted with the full terms of use.	
-
-{% else %}
-## Commercial License
-
-This UI for Silverlight library is a commercial UI library. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase/individual/silverlight.aspx). Feel free to review the Telerik UI for Silverlight [License Agreement](http://www.telerik.com/purchase/license-agreement/silverlight-dlw-s) to get acquainted with the full terms of use.
-{% endif %}
 
 ## Support Options
 
 For any issues you might encounter while working with UI for {{site.framework_name}}, use any of the available support channels:
 
-* License holders and active trialists can take advantage of our outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [dedicated support system]{% if site.site_name == 'WPF' %}(https://www.telerik.com/account/support-tickets?pid=601&q=&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false){% else %}(https://www.telerik.com/account/support-tickets?_ga=2.179992356.1411787990.1590474262-464467820.1568993725&supcId=7b77c362-2470-014e-c420-55ced82066d6&fbp=false&pid=571&q=){% endif %}.
-* Our [forums]{% if site.site_name == 'WPF' %}(https://www.telerik.com/forums/wpf){% else %}(https://www.telerik.com/forums/silverlight){% endif %} are part of the free support you can get from the community and from the team on all kinds of general issues.
-* Our [feedback portal]{% if site.site_name == 'WPF' %}(https://feedback.telerik.com/wpf){% else %}(https://feedback.telerik.com/silverlight){% endif %} provides information on the features/bugs in discussion and also the planned ones for release.
+* License holders and active trialists can take advantage of our outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [dedicated support system](https://www.telerik.com/account/support-tickets?pid=601&q=&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false).
+* Our [forums](https://www.telerik.com/forums/wpf) are part of the free support you can get from the community and from the team on all kinds of general issues.
+* Our [feedback portal](https://feedback.telerik.com/wpf) provides information on the features/bugs in discussion and also the planned ones for release.
 * You may still need a tailor-made solution for your project. In such cases, go straight to [Progress Services](https://www.progress.com/services).
 
-{% if site.site_name == 'WPF' %}
 ## Learning Resources
 
 * [Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
 * [Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
-
-{% endif %}
 
 ## Installation and Deployment
 
@@ -84,19 +59,12 @@ To learn more about the different approaches for populating the Telerik &reg; UI
 To find how to customize the look of Telerik UI for {{ site.framework_name }} using tools such as Expression Blend and information on how to use our predefined themes visit the [Styling and Appearance]({%slug styling-apperance-implicit-styles-overview%}) section.
 
 ## Related Links
-{% if site.site_name == 'Silverlight' %}
-* Telerik UI for Silverlight product page - [http://www.telerik.com/products/silverlight/overview.aspx](http://www.telerik.com/products/silverlight/overview.aspx)
 
-* Telerik UI for Silverlight demos - [https://demos.telerik.com/silverlight/](https://demos.telerik.com/silverlight/)
-
-* Latest news for Telerik UI for Silverlight - [http://www.telerik.com/support/whats-new/silverlight](http://www.telerik.com/support/whats-new/silverlight)
-{% else %}
 * Telerik UI for WPF product page - [http://www.telerik.com/products/wpf/overview.aspx](http://www.telerik.com/products/wpf/overview.aspx)
 
 * Telerik UI for WPF demos - [ https://demos.telerik.com/wpf/ ]( https://demos.telerik.com/wpf/ )
 
 * Latest news for Telerik UI for WPF - [http://www.telerik.com/support/whats-new/wpf](http://www.telerik.com/support/whats-new/wpf)
-{% endif %}
 
 * Essential support - [http://www.telerik.com/support](http://www.telerik.com/support)
 
@@ -116,6 +84,6 @@ Creating an issue is great, but what we really love are pull requests. This is t
 
 __Forums__
 
-You can visit the [Telerik UI for {{ site.framework_name }} forums]{% if site.site_name == 'Silverlight' %}(http://www.telerik.com/forums/silverlight){% else %}(http://www.telerik.com/forums/wpf){% endif %} and leave us a feedback.  Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
+You can visit the [Telerik UI for {{ site.framework_name }} forums](http://www.telerik.com/forums/wpf) and leave us a feedback. Please notice that this method will take a bit longer to reach our documentation team. However, if you need a fast reply from our support team, leaving feedback in the forum guarantees a support number for your suggestions and that we will follow up on it.
 
 Thank you for your contribution to the {{ site.framework_name }} Documentation!

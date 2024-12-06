@@ -14,8 +14,6 @@ slug: barcode-overview
 
 ![RadBarcode Overview](images/barcode_overview.png)
 
-> This is the documentation for the new implementation of the __RadBarcode__ component. You can check out the old documentation [here]({%slug radbarcode-overview%}).
-
 ## Key features
 
 * **Support for different one-dimensional barcodes**: including EAN13, EAN8, UPC-A, UPC-E and Code39 symbologies. Go to [1D barcodes]({%slug barcode-supported-types-overview %}#linear-1d-barcodes) section for the full list.

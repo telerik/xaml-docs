@@ -3807,7 +3807,7 @@ intro_columns:
   -
     title: "Data Visualization"
     items:
-      "Barcode": "radbarcode-overview"
+      "Barcode": "barcode-overview"
       "BulletGraph": "radbulletgraph_overview"
       "ChartView": "radchartview-overview"
       "ChartView3D": "radchartview3d-overview"

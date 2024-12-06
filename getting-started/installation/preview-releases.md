@@ -14,7 +14,9 @@ The Preview is a minor release of the Telerik UI for WPF assemblies, that is upl
 
 ## Downloading the Preview Release
 
-The Preview is __available as a NuGet__ package. Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
+The Preview is __available as a NuGet__ package. Note that the Preview packages are not uploaded on the [Telerik NuGet Feed]({%slug nuget-package-source-setup%}#using-the-telerik-nuget-server-as-package-source), but are available only as [local nuget package]({%slug nuget-available-packages%}).
+
+Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
 
 1. Go to the Telerik UI for WPF product [download page](https://www.telerik.com/account/product-download?product=RCWPF). 
 	

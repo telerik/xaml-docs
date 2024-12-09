@@ -5,7 +5,7 @@ description: "Find answers to common questions about Telerik UI for WPF best sec
 slug: security-faq
 tags: telerik, security, wpf, faq, desktop, development
 published: True
-position: 1
+position: 2
 ---
 
 # Frequently Asked Questions (FAQ)

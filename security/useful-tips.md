@@ -5,7 +5,7 @@ description: "Learn Telerik's best security practices, vulnerability reporting, 
 slug: security-tips
 tags: telerik, security, wpf, redistributing, report, tips, useful, vulnerability
 published: True
-position: 2
+position: 1
 ---
 
 # Useful Security Tips

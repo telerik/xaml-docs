@@ -38,7 +38,7 @@ When loading the persisted layout, the `PersistenceFramework` will instantiate t
 
 Each Telerik assembly has an extension method that will load the types in the AllowedTypes collection of a control, on which it is invoked. In the scope of the PersistenceFramework, calling these methods on the PersistenceManager will update its AllowedTypes collection.
 
-The following example will show you how to allow the types that are used in the next __Telerik.Windows.Controls.Docking.dll__ and __Telerik.Windows.Controls.Navigation.dll__ inside the PersistenceManager.
+The following example will show you how to allow the types that are used in the __Telerik.Windows.Controls.Docking.dll__ and __Telerik.Windows.Controls.Navigation.dll__ inside the PersistenceManager.
 
 #### __[C#] Allowing the types that are used in the Telerik.Windows.Controls.Docking and Telerik.Windows.Controls.Navigation assemblies__
 {{region persistence-framework-allowed-types-4}}
@@ -72,7 +72,7 @@ In cases where internal WPF types need to be added to the AllowedTypes collectio
 
 ## TypeRestored Event
 
-The retrieve each type that is present in the saved layout, you can utilize the `TypeRestored` event. You can inspect both the type and its assembly, and decide if the PersistenceFramework will allow its instantiation, by adding it to the AllowedTypes collection. The event arguments are of the type of `TypeRestoredEventArgs` and provide the following API:
+To retrieve each type that is present in the saved layout, you can utilize the `TypeRestored` event. You can inspect both the type and its assembly, and decide whether to allow the PersistenceFramework to instantiate it, by adding it to the AllowedTypes collection. The event arguments are of the type of `TypeRestoredEventArgs` and provide the following API:
 
 * `Type`&mdash;Provides the type that is restored.
 * `AssemblyQualifiedName`&mdash;Provides the type's assembly name.

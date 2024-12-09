@@ -1,7 +1,7 @@
 ---
 title: Toggle RowDetails Column
 page_title: Toggle RowDetails Column
-description: Learn how to use the Toggle RowDetails Column in Telerik's {{ site.framework_name }} DataGrid to show RowDetails if they are available.
+description: Learn how to use the Toggle RowDetails Column in Telerik's DataGrid to show RowDetails if they are available.
 slug: radgridview-columns-column-types-toggle-rowdetails-column
 tags: toggle,rowdetails,column
 published: True
@@ -10,34 +10,60 @@ position: 10
 
 # Toggle RowDetails Column
 
-__GridViewToggleRowDetailsColumn__ derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class, which means that it isn't used to display data. The column is represented by an __GridViewToggleButton__ control. Clicking on it will show [RowDetails]({%slug radgridview-row-details-overview%}) if they are available. 
+`GridViewToggleRowDetailsColumn` derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class, which means that it isn't used to display data. The column is represented by an `GridViewToggleButton` control. Clicking on it will show [RowDetails]({%slug radgridview-row-details-overview%}) if they are available. This column will automatically link the created toggle buttons to the DetailsVisibilityProperty of each GridViewRow.
 
->You should either configure __RadGridView.RowDetailsVisibilityMode__ property to control the state of __all grid rows__ or use a __GridViewToggleRowDetailsColumn__ to control the state of __each individual row__. Since __GridViewToggleRowDetailsColumn__ operates on the respective __GridViewRow.DetailsVisibilityProperty__, having a __RadGridView.RowDetailsVisibilityMode__ different from collapsed might lead to unexpected results.
-
-Here is a list of the most important properties.
-
-* __ToggleButtonStyle__ - allows you to apply a style to the toggle button.
-
-* __ExpandMode__ - allows you to specify, whether only one row details can be visible on a time. The possible values are:
-	* __Single__ 
-	* __Multiple__ (default). 
-
->If ExpandMode property is set to __Single__, expanding a new row with the toggle button will collapse the previous one.
-
-#### __[XAML] Example 1: Define GridViewToggleRowDetailsColumn in XAML.__
-
+#### __[XAML] Defining GridViewToggleRowDetailsColumn in XAML__
 {{region xaml-radgridview-columns-column-types-toggle-rowdetails-column_0}}
 	<telerik:RadGridView x:Name="radGridView"
-	                 AutoGenerateColumns="False">
+	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewToggleRowDetailsColumn />
-	        <!--...-->
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
 {{endregion}}
 
+__GridViewToggleRowDetailsColumn__
+
+![GridViewToggleRowDetailsColumn](images/radgridview-columns-column-types-toggle-rowdetails-column-0.png)
+
+>important You should either configure the `RowDetailsVisibilityMode` property of `RadGridView` to control the state of __all grid rows__ or use a GridViewToggleRowDetailsColumn to control the state of __each individual row__. Since GridViewToggleRowDetailsColumn operates on the respective DetailsVisibilityProperty of the GridViewRow, having the RowDetailsVisibilityMode property of RadGridView different from `Collapsed` might lead to unexpected results.
+
+## Setting the Expand Mode
+
+The GridViewToggleRowDetailsColumn exposes the `ExpandMode` property that will allow you to specify whether or not only one row details can be visible on a time. The possible values are as follows:
+
+* `Single`&mdash;Only a single row details will be visible at a time. 
+* `Multiple`&mdash;Multple row details can be visible at a time. This is the default value of the ExpandMode property.
+
+>important If ExpandMode property is set to `Single`, expanding a new row with the toggle button will collapse the previous one.
+
+## Stying the Toggle Button
+
+The GridViewToggleRowDetailsColumn allows you to set a Style for the expand/collapse button. This is done via the `ToggleButtonStyle` property.
+
+#### __[XAML] Setting a Style for the ToggleButtonStyle__
+{{region radgridview-columns-column-types-toggle-rowdetails-column_1}}
+	<telerik:RadGridView x:Name="radGridView"
+	                     AutoGenerateColumns="False">
+	    <telerik:RadGridView.Columns>
+			<telerik:GridViewToggleRowDetailsColumn ExpandMode="Single">
+			    <telerik:GridViewToggleRowDetailsColumn.ToggleButtonStyle>
+			        <Style TargetType="ToggleButton">
+			            <Setter Property="Height" Value="26"/>
+			            <Setter Property="Width" Value="26"/>
+			            <Setter Property="Background" Value="Orange"/>
+			        </Style>
+			    </telerik:GridViewToggleRowDetailsColumn.ToggleButtonStyle>
+			</telerik:GridViewToggleRowDetailsColumn>
+	    </telerik:RadGridView.Columns>
+	</telerik:RadGridView>
+{{endregion}}
+
+__GridViewToggleRowDetailsColumn with custom Style for the ToggleButtonStyle property__
+
+![GridViewToggleRowDetailsColumn with custom Style for the ToggleButtonStyle property](images/radgridview-columns-column-types-toggle-rowdetails-column-1.png)
+
 # See also:
 
 * [RowDetails]({%slug radgridview-row-details-overview%}) 
-
 * [Row Details Template]({%slug radgridview-row-details-template%})

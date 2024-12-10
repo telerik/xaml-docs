@@ -81,7 +81,8 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 * [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
 {% endif %}
 
-## See Also
+## See Also  
+* [Useful Security Tips]({%slug security-tips%})
 
  * [Getting Started]({%slug radpdfviewer-getting-started%})
  * [Wiring UI]({%slug radpdfviewer-wiring-ui%})

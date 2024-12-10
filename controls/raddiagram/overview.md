@@ -86,5 +86,8 @@ You can find all the general features of the diagram documented in the [Features
 {% endif %}
 
 ## See Also
+* [Useful Security Tips]({%slug security-tips%})
+
+## See Also
  * [Structure]({%slug raddiagram-structure%})
  * [Getting Started]({%slug raddiagram-getting-started%})

@@ -282,6 +282,116 @@ The selection handler allows you to override several methods invoked on selectio
 	}
 {{endregion}}
 
+## Customizing Mouse Selection Behavior
+
+The mouse selection behavior in the RichTextBox control can be customized by creating a class that derives from `MouseSelectionHandler` and override its methods. The custom handler, can be assigned to the `MouseSelectionHandler` property of the `ActiveEditorPresenter` of `RadRichTextBox`.
+
+The following example shows how to implement a custom selection handler which selects specific words on a single click.
+
+#### __[C#] Creating custom MouseSelectionHandler__
+{{region radrichtextbox-features-selection-6}}
+	public class CustomMouseSelectionHandler : MouseSelectionHandler
+	{
+		RadDocument currentDocument;
+		private List<string> predefinedSingleClickWords;
+
+		internal List<string> PredefinedSingleClickWords
+		{
+			get 
+			{
+				if (predefinedSingleClickWords == null)
+				{
+					predefinedSingleClickWords = new List<string>();
+				}
+				return predefinedSingleClickWords; 
+			}
+		}
+
+		public CustomMouseSelectionHandler(RadDocument document, DocumentPresenterBase presenter)
+			: base(document, presenter)
+		{
+			currentDocument = document;
+		}
+
+		public override void RegisterDocumentMouseUp(SourceType source = SourceType.Mouse, Point? position = null)
+		{
+			base.RegisterDocumentMouseUp(source, position);
+			TrySelectWordUnderMouse();
+		}
+
+		public bool TrySelectWordUnderMouse()
+		{
+			var position = currentDocument.CaretPosition;
+			var clickedInlineBox = position.GetCurrentInlineBox();
+
+			if (predefinedSingleClickWords.Any(x => x.ToLower().Equals(clickedInlineBox.Text.ToLower())))
+			{
+				DocumentPosition startPosition = new DocumentPosition(position);
+				DocumentPosition endPosition = new DocumentPosition(startPosition);
+				startPosition.MoveToCurrentWordStart();
+				endPosition.MoveToCurrentWordEnd();
+				this.currentDocument.Selection.SetSelectionStart(startPosition);
+				this.currentDocument.Selection.AddSelectionEnd(endPosition);
+				return true;
+			}
+			return false;
+		}
+
+		// Below you can see other methods that can be overridden:
+
+		protected override void RegisterDocumentMultipleMouseDown(bool ctrlPressed, bool shiftPressed, Point position)
+		{
+			base.RegisterDocumentMultipleMouseDown(ctrlPressed, shiftPressed, position);
+		}
+
+		public override void RegisterDocumentMouseRightButtonDown(UIElement originalSource, SourceType source = SourceType.Mouse)
+		{
+			base.RegisterDocumentMouseRightButtonDown(originalSource, source);
+		}
+
+		public override void RegisterDocumentMouseDown(bool ctrlPressed, bool shiftPressed, Point position, UIElement originalSource = null, SourceType source = SourceType.Mouse)
+		{
+			base.RegisterDocumentMouseDown(ctrlPressed, shiftPressed, position, originalSource, source);
+		}
+
+		public override void RegisterDocumentMouseMove(Point position, SourceType source = SourceType.Mouse)
+		{
+			base.RegisterDocumentMouseMove(position, source);
+		}
+
+		protected override void RegisterDocumentSingleMouseDown(bool ctrlPressed, bool shiftPressed, Point position, UIElement originalSource)
+		{
+			base.RegisterDocumentSingleMouseDown(ctrlPressed, shiftPressed, position, originalSource);
+		}
+	}
+{{endregion}}
+
+#### __[C#] Assigning the custom MouseSelectionHandler__
+{{region radrichtextbox-features-selection-7}}
+	private void RadRichTextBox_Loaded(object sender, RoutedEventArgs e)
+	{
+		UpdateMouseSelectionHandler((RadRichTextBox)sender);
+	}
+
+	private void RadRichTextBox_DocumentChanged(object sender, EventArgs e)
+	{
+		UpdateMouseSelectionHandler((RadRichTextBox)sender);
+	}
+
+	private void UpdateMouseSelectionHandler(RadRichTextBox rtb)
+	{
+		var presenter = rtb.ActiveEditorPresenter as DocumentPresenterBase;
+		if (presenter != null)
+		{
+			var selectionHandler = new CustomMouseSelectionHandler(rtb.Document, presenter);
+			selectionHandler.PredefinedSingleClickWords.Add("Telerik");
+			selectionHandler.PredefinedSingleClickWords.Add("Microsoft");
+			selectionHandler.PredefinedSingleClickWords.Add("NET");
+			presenter.MouseSelectionHandler = selectionHandler;
+		}
+	}
+{{endregion}}
+
 ## See Also  
  * [Positioning]({%slug radrichtextbox-features-positioning%})
  * [History]({%slug radrichtextbox-features-history%})

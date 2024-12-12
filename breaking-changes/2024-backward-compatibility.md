@@ -14,6 +14,12 @@ In 2024 there are breaking changes only in the Q2 and Q4 releases.
 
 Currently, this section of the documentation contains only the latest release notes (starting from 2024). For older changes, check the __Breaking Changes__ and __Backward Compatibility__ help articles of the individual Telerik controls.
 
+## 2024 Q4 (2024.4.1213)
+
+#### PersistenceFramework
+
+* The `PersistenceManager` now requires to provide a list of allowed types. If the list is `null` or if a type that is deserialized is not presented in the list, a `NotSupportedException` is thrown. The `IsolatedStorageProvider` is also affected as it uses the `PersistenceManager`. Read more about this in the [Allowed Types]({%slug persistence-framework-allowed-types%}) article.
+
 ## 2024 Q2
 
 #### Common Changes

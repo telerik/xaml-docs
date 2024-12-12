@@ -10,7 +10,11 @@ position: 8
 
 # Allowed Types
 
-When loading the persisted layout, the `PersistenceFramework` will instantiate the saved types only if they are allowed. This is controlled by the `PersistenceManager` class, which has predefined types that are allowed by default. You can also register other types by modifying its `AllowedTypes` collection or by using the `AllowTypes` extension method.
+When loading the persisted layout, the PersistenceFramework will instantiate the saved types only if they are allowed. Otherwise, a `NotSupportedException` is thrown.
+
+To allow specific types, add them in the `AllowedTypes` collection of the `PersistenceManager` class. 
+
+When the `PersistenceManager` gets initialized the `AllowedTypes` collection is automatically filled with several WPF native types and also types from the `Telerik.Windows.Controls` assembly.
 
 #### __[C#] Allowing a type using the AllowedTypes collection of the PersistenceManager__
 {{region persistence-framework-allowed-types-0}}
@@ -36,9 +40,9 @@ When loading the persisted layout, the `PersistenceFramework` will instantiate t
 
 ## Allowing Types from the Telerik Assemblies 
 
-Each Telerik assembly has an extension method that will load the types in the AllowedTypes collection of a control, on which it is invoked. In the scope of the PersistenceFramework, calling these methods on the PersistenceManager will update its AllowedTypes collection.
+Each Telerik assembly has an extension method part of the associated `AllowedTypesExtensions` class that allows you to automatically load the Telerik types in the `AllowedTypes` collection of the `PersistenceManager`. 
 
-The following example will show you how to allow the types that are used in the __Telerik.Windows.Controls.Docking.dll__ and __Telerik.Windows.Controls.Navigation.dll__ inside the PersistenceManager.
+The following example shows how to allow the types that are defined in the `Telerik.Windows.Controls.Docking` and `Telerik.Windows.Controls.Navigation` assemblies.
 
 #### __[C#] Allowing the types that are used in the Telerik.Windows.Controls.Docking and Telerik.Windows.Controls.Navigation assemblies__
 {{region persistence-framework-allowed-types-4}}
@@ -94,13 +98,15 @@ To retrieve each type that is present in the saved layout, you can utilize the `
 
 ## Allowing Types when Using IsolatedStorageProvider
 
-To allow types to be instantiated by the PersistenceFramework when working with the `IsolatedStorageProvider`, you need to pass a new PersistenceManager instance to its constructor. On it, you can utilize the AllowTypes extension method or use its AllowedTypes collection.
+To allow types to be instantiated by the PersistenceFramework when working with the `IsolatedStorageProvider`, you need to pass a new `PersistenceManager` instance to its constructor. On it, you can utilize the AllowTypes extension method or use its AllowedTypes collection.
 
 #### __[C#] Allowing types when using IsolatedStorageProvider__
 {{region persistence-framework-allowed-types-10}}
     PersistenceManager manager = new PersistenceManager()
-        .AddDockingControls()
-        .AddNavigationControls();
+        .AllowDockingControls()
+        .AllowNavigationControls();
+		
+	manager.AllowedTypes.Add(typeof(MyCustomType));
 
     IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager);
 {{endregion}}
@@ -108,8 +114,10 @@ To allow types to be instantiated by the PersistenceFramework when working with 
 #### __[VB.NET] Allowing types when using IsolatedStorageProvider__
 {{region persistence-framework-allowed-types-11}}
     Dim manager As PersistenceManager = New PersistenceManager()
-       .AddDockingControls()
-       .AddNavigationControls()
+       .AllowDockingControls()
+       .AllowNavigationControls()
+	   
+	manager.AllowedTypes.Add(GetType(MyCustomType))
        
     Dim isoProvider As IsolatedStorageProvider = New IsolatedStorageProvider(manager)
 {{endregion}}

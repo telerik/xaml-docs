@@ -34,7 +34,7 @@ The issue occurs because of the interoperation between the WinForms and WPF tech
 
 ## Solution
 
-To prevent this, change the FlyoutBehavior property of RadDocking from its default HoverFlyoutBehavior to [ClickFlyoutBehavior]({%slug %}).
+To prevent this, change the FlyoutBehavior property of RadDocking from its default HoverFlyoutBehavior to [ClickFlyoutBehavior]({%slug raddocking-features-panes-flyoutbehavior%}).
 
 #### __[XAML]__
 {{region kb-docking-unpinned-pane-hide-on-winforms-content-click-0}}

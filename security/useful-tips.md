@@ -14,6 +14,8 @@ In this article, you will find helpful security tips and resources to strengthen
 
 ## Safe Deserialization
 
+Deserialization in the context of WPF often means that XML content gets parsed to CLR objects which are loaded in memory. This carries a security risk related to loading untrusted types, which can be used to abuse the logic of the application. An attacker could use this entry point to deserialize and load malicious content that executes a command on the OS.
+
 Telerik components that support deserialization operations implement a safety method to allow loading only trusted types, thus improving the application security. This feature consists of creating a list of allowed CLR types that can be loaded during deserialization. If the deserialization process reaches a type that is not part of this list, an exception is thrown.
 
 The following resources show which Telerik controls support safe deserialization and how to use it:
@@ -26,7 +28,9 @@ The following resources show which Telerik controls support safe deserialization
 
 ## Secure Hyperlink Clicks
 
-In WPF hyperlink navigation actions can start a new process on the user machine. Most of the time this can be controlled in the application's logic, where such addresses can be validated, thus mitigating the security risk. In cases when the hyperlink is loaded dynamically from an unknown source, like from a document loaded in Telerik PdfViewer or RichTexBox, the link may be insecure. For such scenarios the Telerik's document hyperlink components come with a built-in URI validation logic. If the hyperlink doesn't point to a valid address, the navigation won't work and a message box will be displayed. Additional to that, the Telerik document viewer components that support hyperlinks expose a `HyperlinkClicked` event that can be handled in order to further modify the click action, thus improving the security even more.
+In WPF hyperlink navigation actions can start a new process on the user machine. This can execute a malicious command untrusted by the user. Most of the time this can be controlled in the application's logic, where such addresses can be validated, thus mitigating the security risk. 
+
+In cases when the hyperlink is loaded dynamically from an unknown source, like from a document loaded in Telerik PdfViewer or RichTexBox, the link may be insecure. For such scenarios the Telerik's document hyperlink components come with a built-in URI validation logic. If the hyperlink doesn't point to a valid address, the navigation won't work and a message box will be displayed. Additional to that, the Telerik document viewer components that support hyperlinks expose a `HyperlinkClicked` event that can be handled in order to further modify the click action, thus improving the security even more.
 
 The following resources show how to use the `HyperlinkClicked` event in the corresponding controls:
 

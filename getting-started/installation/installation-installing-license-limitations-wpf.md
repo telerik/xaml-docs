@@ -27,13 +27,9 @@ If your application is displaying a license key error, this means that you are u
 
 ## Trial License
 
-The free trial licenses of all Telerik products are fully functional and will work for an unlimited time but with trial error messages (see below) displayed randomly on the page.
+The free trial licenses of all Telerik products are fully functional and will work for an unlimited time but with a trial message displayed in a popup dialog. 
 
-## Trial Error Messages
-
-The trial licenses will occasionally display the following message on your application:
-
-`Telerik UI for WPF trial version. Copyright Telerik © 2002-2014. To remove this message, please, purchase a developer version.`
+The trial message states that the application uses a trial version of Telerik UI for WPF and prompts you to purchase a developer license.
 
 ## See Also  
  * [Adding UI for WPF to the Visual Studio Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}) 

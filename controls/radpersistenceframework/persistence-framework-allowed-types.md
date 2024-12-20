@@ -10,11 +10,13 @@ position: 8
 
 # Allowed Types
 
-When loading the persisted layout, the PersistenceFramework will instantiate the saved types only if they are allowed. Otherwise, a `NotSupportedException` is thrown.
+When loading the persisted layout, the PersistenceFramework will instantiate the saved types only if they are allowed. Otherwise, an exception is thrown.
 
 To allow specific types, add them in the `AllowedTypes` collection of the `PersistenceManager` class. 
 
 When the `PersistenceManager` gets initialized the `AllowedTypes` collection is automatically filled with several WPF native types and also types from the `Telerik.Windows.Controls` assembly.
+
+If the deserializer reaches an unknown type an `UnauthorizedDeserializationException` is thrown.
 
 #### __[C#] Allowing a type using the AllowedTypes collection of the PersistenceManager__
 {{region persistence-framework-allowed-types-0}}
@@ -37,6 +39,8 @@ When the `PersistenceManager` gets initialized the `AllowedTypes` collection is 
 {{region persistence-framework-allowed-types-3}}
     Dim manager As PersistenceManager = New PersistenceManager().AllowTypes(GetType(SolidColorBrush))
 {{endregion}}
+
+In case the AllowedTypes property is assigned to a `null` value, a `NotSupportedException` is thrown.
 
 ## Allowing Types from the Telerik Assemblies 
 

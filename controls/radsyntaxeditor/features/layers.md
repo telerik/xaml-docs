@@ -42,7 +42,7 @@ We will now create a custom layer which will be responsible for highlighting any
         {
         }
 
-		protected override FrameworkElement GetLinePartUIElement(ClassificationTag tag, Span span, UIUpdateContext updateContext)
+		protected override FrameworkElement GetLinePartUIElement(ClassificationTag tag, Telerik.Windows.SyntaxEditor.Core.Text.Span span, UIUpdateContext updateContext)
         {
 			if (tag.ClassificationType != ClassificationTypes.Keyword)
 			{

@@ -15,16 +15,7 @@ RadGridView comes with out-of-the-box insert functionality.
 There are three ways to insert a new row in RadGridView:
 
 * By pressing the __Insert__ key
-* By clicking on the row which is shown in the control when the `NewRowPosition` property is set to either __Top__ or __Bottom__
-
-	#### __[XAML] Showing the GridViewNewRow__
-	{{region xaml-gridview-managing-data-add-new-entries_14}}
-		<telerik:RadGridView NewRowPosition="Bottom" />
-	{{endregion}}
-
-	__GridViewNewRow__
-	![RadGridView GridViewNewRow](images/RadGridView_AddingNewItems_0.png)
-
+* By clicking on the row which is shown in the control when the `NewRowPosition` property is set to either __Top__ or __Bottom__. To learn more about this approach, check this [article]({%slug gridview-new-row%}).
 * By calling the `BeginInsert` method
 
 	#### __[C#] Adding new rows with BeginInsert()__

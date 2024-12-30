@@ -3,8 +3,8 @@ title: Stretching Content Size to Maximum Width in RadScheduleView DayViewDefini
 description: Learn how to extend the active view definition's width to use the full-screen width in RadScheduleView for WPF.
 type: how-to
 page_title: How to Use Full-Screen Width in RadScheduleView DayViewDefinition for WPF
-slug: radcheduleview-dayviewdefinition-full-width
-tags: radcheduleview, wpf, dayviewdefinition, stretch, full width
+slug: scheduleview-dayviewdefinition-full-width
+tags: scheduleview, wpf, dayviewdefinition, stretch, full width
 res_type: kb
 ticketid: 1671345
 ---
@@ -34,17 +34,17 @@ To extend the content size of the RadScheduleView's active view definition, you 
 
 Here is an example code snippet to achieve the desired behavior:
 
-```xml
-<telerik:RadScheduleView x:Name="scheduleView" DataContext="{StaticResource MyViewModel}" AppointmentsSource="{Binding MyAppointments}">
-    <telerik:RadScheduleView.ViewDefinitions>
-        <telerik:DayViewDefinition MinTimeRulerExtent="{Binding ElementName=scheduleView, Path=ActualWidth}"/>
-    </telerik:RadScheduleView.ViewDefinitions>
-</telerik:RadScheduleView>
-```
+#### __[XAML]__
+{{region scheduleview-dayviewdefinition-full-width-0}}
+    <telerik:RadScheduleView x:Name="scheduleView" DataContext="{StaticResource MyViewModel}" AppointmentsSource="{Binding MyAppointments}">
+        <telerik:RadScheduleView.ViewDefinitions>
+            <telerik:DayViewDefinition MinTimeRulerExtent="{Binding ElementName=scheduleView, Path=ActualWidth}"/>
+        </telerik:RadScheduleView.ViewDefinitions>
+    </telerik:RadScheduleView>
+{{endregion}}
 
 For more details on configuring the TimeRuler, refer to the [WPF ScheduleView - TimeRuler Configuration](https://docs.telerik.com/devtools/wpf/controls/radscheduleview/end-user-capabilities/timerulerconfiguration) documentation.
 
 ## See Also
-
 - [RadScheduleView Overview](https://docs.telerik.com/devtools/wpf/controls/radscheduleview/overview)
 - [RadScheduleView End-User Capabilities](https://docs.telerik.com/devtools/wpf/controls/radscheduleview/end-user-capabilities/overview)

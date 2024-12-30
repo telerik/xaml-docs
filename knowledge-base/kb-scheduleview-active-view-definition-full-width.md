@@ -3,7 +3,7 @@ title: Stretching Content Size to Maximum Width in RadScheduleView DayViewDefini
 description: Learn how to extend the active view definition's width to use the full-screen width in RadScheduleView for WPF.
 type: how-to
 page_title: How to Use Full-Screen Width in RadScheduleView DayViewDefinition for WPF
-slug: scheduleview-dayviewdefinition-full-width
+slug: kb-scheduleview-dayviewdefinition-full-width
 tags: scheduleview, wpf, dayviewdefinition, stretch, full width
 res_type: kb
 ticketid: 1671345

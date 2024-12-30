@@ -30,14 +30,14 @@ If the deserializer reaches an unknown type an `UnauthorizedDeserializationExcep
     manager.AllowedTypes.Add(GetType(SolidColorBrush))
 {{endregion}}
 
-#### __[C#] Allowing a type using the AllowTypes extension method__
+#### __[C#] Allowing a type using the AllowedTypes extension method__
 {{region persistence-framework-allowed-types-2}}
-    PersistenceManager manager = new PersistenceManager().AllowTypes(typeof(SolidColorBrush));
+    PersistenceManager manager = new PersistenceManager().AllowedTypes(typeof(SolidColorBrush));
 {{endregion}}
 
-#### __[VB.NET] Allowing a type using the AllowTypes extension method__
+#### __[VB.NET] Allowing a type using the AllowedTypes extension method__
 {{region persistence-framework-allowed-types-3}}
-    Dim manager As PersistenceManager = New PersistenceManager().AllowTypes(GetType(SolidColorBrush))
+    Dim manager As PersistenceManager = New PersistenceManager().AllowedTypes(GetType(SolidColorBrush))
 {{endregion}}
 
 In case the AllowedTypes property is assigned to a `null` value, a `NotSupportedException` is thrown.
@@ -66,16 +66,16 @@ The following example shows how to allow the types that are defined in the `Tele
 
 In cases where internal WPF types need to be added to the AllowedTypes collection, you can obtain them at runtime and utilize the AllowTypes method. One such case is with the native WPF `Selector` class that assigns the `SelectedItems` property to a `SelectedItemCollection` type, which is internal. In this specific scenario, invoking the `AllowInputControls` method will resolve this, however, if you need to allow internal types, you can follow the approach from the following example:
 
-#### __[C#] Allowing internal types via the AllowTypes method__
+#### __[C#] Allowing internal types via the AllowedTypes method__
 {{region persistence-framework-allowed-types-6}}
     var listBox = new ListBox();
-    manager.AllowTypes(listBox.SelectedItems.GetType());
+    manager.AllowedTypes(listBox.SelectedItems.GetType());
 {{endregion}}
 
-#### __[VB.NET] Allowing internal types via the AllowTypes method__
+#### __[VB.NET] Allowing internal types via the AllowedTypes method__
 {{region persistence-framework-allowed-types-7}}
     Dim listBox = New ListBox()
-    manager.AllowTypes(listBox.SelectedItems.[GetType]())
+    manager.AllowedTypes(listBox.SelectedItems.[GetType]())
 {{endregion}}
 
 ## TypeRestored Event

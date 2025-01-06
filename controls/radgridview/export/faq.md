@@ -21,15 +21,15 @@ For a general example on how to Export the data, you can check the Exporting exa
 
 See this approach in the [ExportPagedDataExcel](https://github.com/telerik/xaml-sdk/tree/master/GridView/ExportPagedDataExcel) SDK example.
 
-## How to avoid error warning when exporting and 'xls' extension
+## Avoid Error Warning When Exporting to XLS Format
 
 The alert is a new security feature in Excel 2007 called Extension Hardening, which ensures that the file content being opened matches the extension type specified in the shell command that is attempting to open the file. In order to avoid getting this warning, you should export to ExcelML format with XML extension. You can also refer to the [following help article]({%slug gridview-troubleshooting-warning-message-excel%}) for additional information.            
 
-## How to Export Data to `xlsx` Format
+## How to Export Data to XLSX Format
 
 As of Q1 2015 a new method is introduced: [ExportToXlsx]({%slug gridview-export-xlsx%}). This exporting functionality is demonstrated in the [Exporting to Xlsx and Pdf](https://demos.telerik.com/wpf/) demo.
 
-##  How to Export Data to `pdf` Format
+##  How to Export Data to PDF Format
 
 As of Q1 2015 a new method is introduced: [ExportToPdf]({%slug gridview-export-pdf%}). This exporting functionality is demonstrated in the [Exporting to Xlsx and Pdf](https://demos.telerik.com/wpf/) demo.
 

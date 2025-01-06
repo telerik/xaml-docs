@@ -1,6 +1,6 @@
 ---
-title: New Row
-page_title: New Row
+title: Add New Row Button
+page_title: Add New Row Button
 description: This article will provide information about the new row functionality of Telerik UI for WPF RadGridView.
 slug: gridview-new-row
 tags: gridview, new, row, new row, position
@@ -8,9 +8,9 @@ published: True
 position: 23
 ---
 
-# New Row
+# Add New Row Button
 
-`RadGridView` allows you to display an additional row that will allow you to insert new entries in the bound collection. To display it, set the `NewRowPosition` property to either __Top__ or __Bottom__ and expose an empty constructor in the underlying object.
+`RadGridView` allows you to display an additional row that will allow you to insert new entries in the bound collection. To display it, set the `NewRowPosition` property to either `Top` or `Bottom` and expose an empty constructor in the underlying object.
 
 >important The Bottom option works only when the `GroupRenderMode` property of `RadGridView` is set to `Flat`.
 
@@ -20,6 +20,7 @@ The following example shows how to display the new row:
 {{region gridview-new-row-0}}
     public class Person
     {
+        //Expose an empty constructor to create a new row
         public Person()
         { 
         }
@@ -47,6 +48,7 @@ The following example shows how to display the new row:
 #### __[VB.NET] Defining the underlying object and view model__
 {{region gridview-new-row-1}}
     Public Class Person
+        'Expose an empty constructor to create a new row
         Public Sub New()
         End Sub
 

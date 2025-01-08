@@ -1,7 +1,7 @@
 ---
 title: IME Support
 page_title: IME Support
-description: Check our &quot;IME Support&quot; documentation article for the RadRichTextBox {{ site.framework_name }} control.
+description: Check our &quot;IME Support&quot; documentation article for the RadRichTextBox WPF control.
 slug: radrichtextbox-features-ime-support
 tags: ime, support
 published: True
@@ -10,49 +10,43 @@ position: 11
 
 # IME Support
 
-__RadRichTextBox__ provides built-in support for the most commonly used Microsoft IMEs like Chinese IME, Japanese IME, Korean IME and etc. which are shipped with the Windows OS. Further, you can easily add support for the IME which is used in your application. 
-
+`RadRichTextBox` provides built-in support for the most commonly used Microsoft IMEs like Chinese IME, Japanese IME, Korean IME and etc. which are shipped with the Windows OS. Further, you can easily add support for the IME which is used in your application. 
 
 ## Caret class
 
 The caret is the UI which represents where the current document position is. It also provides ability to modify the text. It exposes several events which are corresponding to the relevant text operation.
 
-* __TextInputStart__: This event is fired when a UI element initially gets text. 
-* __TextInputUpdate__: This event is fired when text continues to be composed and IME is used.
-* __TextInput__: This event is fired when the text should be committed.
+* `TextInputStart`&mdash;This event is fired when a UI element initially gets text. 
+* `TextInputUpdate`&mdash;This event is fired when text continues to be composed and IME is used.
+* `TextInput`&mdash;This event is fired when the text should be committed.
 
 
 ### How the text is inserted in RadRichTextBox?
 
-The **CaretTextInputHandler** class is responsible for the text insertion in RadRichTextBox. It is attached to the Caret’s **TextInserted** event, which has TextInsertedEventArgs as event arguments. 
+The `CaretTextInputHandler` class is responsible for the text insertion in RadRichTextBox. It is attached to the Caret’s `TextInserted` event, which has `TextInsertedEventArgs` as event arguments. 
 
+The TextInsertedEventArgs class exposes the following properties:
 
-__TextInsertedEventArgs__
+* `Text`&mdash;This property represents the text which is entered.
+* `ShouldPersist`&mdash;This property carries the information if the composition text should be persisted.
+* `ShouldStartNewComposition`&mdash;This property identifies if a new text composition should be started.
 
-* __Text__: This property represents the text which is entered.
-* __ShouldPersist__: This property carries the information if the composition text should be persisted.
-* __ShouldStartNewComposition__: This property identifies if a new text composition should be started.
-
-When you are executing your logic in the overridden Caret event handlers, it is important to execute the **OnTextInserted** method with the desired TextInsertedEventArgs, so the TextInserted event will be fired and the CaretTextInputHandler will process the text depending on the arguments.
-
+When you are executing your logic in the overridden Caret event handlers, it is important to execute the `OnTextInserted` method with the desired TextInsertedEventArgs, so the TextInserted event will be fired and the CaretTextInputHandler will process the text depending on the arguments.
 
 ## Custom IME Support
 
-If you want to add support for another input method editor, you can easily achieve it by creating a custom caret and plug it in the __RadRichTextBox__. Here is what is necessary to know before doing that.
-
+If you want to add support for another input method editor, you can easily achieve it by creating a custom caret and plug it in the RadRichTextBox. Here is what is necessary to know before doing that.
 
 ## ICaretFactory interface
 
-The **ICaretFactory** interface has a CreateCaret() method which is responsible for the caret creation. It returns the caret which should handle the text input.
+The `ICaretFactory` interface has a `CreateCaret` method which is responsible for the caret creation. It returns the caret which should handle the text input.
 
 
 ## How to implement your own IME support?
 
 To achieve a different than the Microsoft IME support, you should implement your own caret which inherits RadRichTextBox’s Caret class and overrides the handlers of the above mentioned events. In these overridden methods you can execute the specific logic for the corresponding input method editor. 
 
-
-#### __C#__
-
+#### __[C#] Extending the Caret class__
 {{region radrichtextbox-ime-support-0}}
 	public class SogouCaret : Caret
 	{
@@ -64,8 +58,7 @@ To achieve a different than the Microsoft IME support, you should implement your
 	}
 {{endregion}}
 
-#### __VB.NET__
-
+#### __[VB.NET] Extending the Caret class__
 {{region radrichtextbox-ime-support-1}}
 	Public Class SogouCaret
 	    Inherits Caret
@@ -75,15 +68,12 @@ To achieve a different than the Microsoft IME support, you should implement your
 	    Protected Overloads Sub OnTextInputUpdate(ByVal sender As Object, ByVal e As TextCompositionEventArgs)
 	
 	    Protected Overloads Sub OnTextInput(ByVal e As TextCompositionEventArgs)
-	
 	End Class
 {{endregion}}
 
+The inherited caret should be created by a factory class, which should implement the `ICaretFactory` interface.
 
-The inherited caret should be created by a factory class, which should implement the ICaretFactory interface.
-
-#### __C#__
-
+#### __[C#] Implementing a custom caret factory__
 {{region radrichtextbox-ime-support-2}}
 	public class SogouCaretFactory : ICaretFactory
 	{
@@ -94,8 +84,7 @@ The inherited caret should be created by a factory class, which should implement
 	}
 {{endregion}}
 
-#### __VB.NET__
-
+#### __[VB.NET] Implementing a custom caret factory__
 {{region radrichtextbox-ime-support-3}}
 	Public Class SogouCaretFactory
 	    Implements ICaretFactory
@@ -107,25 +96,20 @@ The inherited caret should be created by a factory class, which should implement
 	End Class
 {{endregion}}
 
+The last thing you should do, is to set the RadRichTextBox’ `CaretFactory` property to be your factory class.
 
-The last thing you should do, is to set the RadRichTextBox’ CaretFactory property to be your factory class.
-
-#### __C#__
-
+#### __[C#] Setting the custom caret factory__
 {{region radrichtextbox-ime-support-4}}
 	this.radRichTextBox.CaretFactory = new SogouCaretFactory();
 {{endregion}}
 
-#### __VB.NET__
+#### __[VB.NET] Setting the custom caret factory__
 
 {{region radrichtextbox-ime-support-5}}
 	Me.radRichTextBox.CaretFactory = new SogouCaretFactory()
 {{endregion}}
 
-
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret).
-
-
+>tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret).
 
 ## See Also
  * [SDK Example Custom Caret](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret) 

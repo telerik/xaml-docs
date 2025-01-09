@@ -407,7 +407,7 @@ The final result should look like the one on the snapshot below:
             this.InitializeRowDragAndDrop(row);
         }
 
-		private void AssociatedObject_RowUnloaded(object? sender, RowUnloadedEventArgs e)
+		private void AssociatedObject_RowUnloaded(object sender, RowUnloadedEventArgs e)
 		{
 		     if (e.Row is GridViewRow)
 		     {

@@ -373,6 +373,8 @@ The final result should look like the one on the snapshot below:
         {
             this.AssociatedObject.RowLoaded -= this.AssociatedObject_RowLoaded;
             this.AssociatedObject.RowLoaded += this.AssociatedObject_RowLoaded;
+    		this.AssociatedObject.RowUnloaded -= AssociatedObject_RowUnloaded;
+	    	this.AssociatedObject.RowUnloaded += AssociatedObject_RowUnloaded;
             this.UnsubscribeFromDragDropEvents();
             this.SubscribeToDragDropEvents();
 
@@ -405,6 +407,14 @@ The final result should look like the one on the snapshot below:
             this.InitializeRowDragAndDrop(row);
         }
 
+		private void AssociatedObject_RowUnloaded(object? sender, RowUnloadedEventArgs e)
+		{
+		     if (e.Row is GridViewRow)
+		     {
+		          DragDropManager.RemoveDragOverHandler(e.Row, OnRowDragOver);                
+		     }
+		}
+   
         private void InitializeRowDragAndDrop(GridViewRow row)
         {
             if (row == null)

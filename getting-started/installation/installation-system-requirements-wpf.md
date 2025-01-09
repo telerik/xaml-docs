@@ -44,7 +44,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 
 >caution We can no longer claim a dedicated support for XBAP applications. This is due to the fact that, since Internet Explorer 9, XBAP is disabled by default. We strongly recommend using ClickOnce deployment instead. With this in mind, please note that some of the information in this article may be outdated. Please [contact our support team](https://www.telerik.com/account/support-center/contact-us/technical-support) if you have an inquiry regarding the support for a given control.
       
-## Hardware Enviroment
+## Hardware Environment
 
 * __Processor__: minimum 1 GHz processor
 

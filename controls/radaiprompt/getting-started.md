@@ -16,11 +16,14 @@ This tutorial will walk you through the creation of a sample application that co
 
 To use RadAIPrompt, add a reference to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.ConversationalUI__
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.Data__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

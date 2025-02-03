@@ -14,11 +14,14 @@ This tutorial will walk you through the required steps for using __RadListBox__.
 
 ## Assembly References
 
-In order to use __RadListBox__ in your project you have to add the following assembly:
+In order to use __RadListBox__ in your project you have to add the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls.dll__
 
 You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create the __RadListBox__ control in XAML code:
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

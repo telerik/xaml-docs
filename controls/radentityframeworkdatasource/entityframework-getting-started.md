@@ -46,6 +46,7 @@ Now let's go to the client side.
 
 **1.** Add References to the following __Telerik__ assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
 
 * __Telerik.Windows.Controls.EntityFramework__ (mandatory for __RadEntityFrameworkDataSource__ with EF **5.0** or previous)
@@ -59,6 +60,8 @@ Now let's go to the client side.
 * __Telerik.Windows.Controls.Input__ (mandatory for __RadGridView__)
 
 * __Telerik.Windows.Data__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

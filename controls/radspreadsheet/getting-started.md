@@ -26,39 +26,33 @@ It contains the following sections:
 
 The assemblies that contain the implementation of __RadSpreadsheet__ and must be referenced in order to use the control are:
         
+* __Telerik.Licensing.Runtime__
+* __Telerik.Windows.Controls.dll__
+* __Telerik.Windows.Controls.GridView.dll__
+* __Telerik.Windows.Controls.Input.dll__
+* __Telerik.Windows.Controls.Navigation.dll__
+* __Telerik.Windows.Controls.Spreadsheet.dll__
+* __Telerik.Windows.Data.dll__
+* __Telerik.Windows.Documents.Core.dll__
+* __Telerik.Windows.Documents.Spreadsheet.dll__
 
-* **Telerik.Windows.Controls.dll**
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
-* **Telerik.Windows.Controls.GridView.dll**
+For export and import to __XLSX__:
 
-* **Telerik.Windows.Controls.Input.dll**
+* __Telerik.Windows.Zip.dll__
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll__
 
-* **Telerik.Windows.Controls.Navigation.dll**
+To export a document to __PDF__, you will need to add a reference to the corresponding assembly:
 
-* **Telerik.Windows.Controls.Spreadsheet.dll**
-
-* **Telerik.Windows.Data.dll**
-
-* **Telerik.Windows.Documents.Core.dll**
-
-* **Telerik.Windows.Documents.Spreadsheet.dll**
-
-For export and import to **XLSX**:
-
-* **Telerik.Windows.Zip.dll**
-
-* **Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll**
-
-To export a document to **PDF**, you will need to add a reference to the corresponding assembly:
-
-* **Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll**
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll__
 
 Note that in order to import/export in XLSX or export to PDF, the format provider must be registered manually. More information on Import/Export can be found [here]({%slug radspreadsheet-import-export%}).
 
 If you want to use the sample UI provided in our demos you should add this reference as well:        
 
-* **Telerik.Windows.Controls.RibbonView.dll**
-{% if site.site_name == 'WPF' %}* **Telerik.Windows.Controls.SpreadsheetUI.dll**{% endif%}
+* __Telerik.Windows.Controls.RibbonView.dll__
+{% if site.site_name == 'WPF' %}* __Telerik.Windows.Controls.SpreadsheetUI.dll__{% endif%}
 
 ### Adding Telerik Assemblies Using NuGet
 
@@ -105,11 +99,11 @@ Then, all that is left is to add the __Spreadsheet__ component to the page:
 ## Spreadsheet and RibbonView
 
 
-__RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the commanding mechanism that it employs. If you would like to use the control with a [RadRibbonView]({%slug radribbonview-overview%}), which shows the full potential of the control, you can refer to the {% if site.site_name == 'Silverlight' %}[SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/SL/FirstLook).{% endif %}{% if site.site_name == 'WPF' %} [Spreadsheet UI]({%slug radspreadsheet-getting-started-spreadsheet-ui%}) topic that describes how you can take advantage of **RadSpreadsheetRibbon**.{% endif %}        
+__RadSpreadsheet__ is easy to integrate with all kinds of UI thanks to the commanding mechanism that it employs. If you would like to use the control with a [RadRibbonView]({%slug radribbonview-overview%}), which shows the full potential of the control, you can refer to the {% if site.site_name == 'Silverlight' %}[SDK repository](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/SL/FirstLook).{% endif %}{% if site.site_name == 'WPF' %} [Spreadsheet UI]({%slug radspreadsheet-getting-started-spreadsheet-ui%}) topic that describes how you can take advantage of __RadSpreadsheetRibbon__.{% endif %}        
 
 ## Open/Save Documents
 
-To open a document, you need to import it and the export functionalities will help you to save one. To work with documents of the formats supported by **RadSpreadsheet**, you should use the format provider classes. For more information on the matter, please check the [Import/Export]({%slug radspreadsheet-import-export%}) topic.
+To open a document, you need to import it and the export functionalities will help you to save one. To work with documents of the formats supported by __RadSpreadsheet__, you should use the format provider classes. For more information on the matter, please check the [Import/Export]({%slug radspreadsheet-import-export%}) topic.
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

@@ -16,6 +16,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 To use the __RadDataServiceDataSource__ in your projects you have to add references to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.DataServices__
 
@@ -26,6 +27,8 @@ For OData version 4 support, you need to add reference to __Telerik.Windows.Cont
 Since the __R2 2021__ release, you can find a __Telerik.Windows.Controls.DataServices__ dll in the __WPF60__ and __WPF70__ folders built against __Microsoft.OData.Client__ with __version 7.8.3__.
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

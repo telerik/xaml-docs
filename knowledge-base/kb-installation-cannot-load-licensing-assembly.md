@@ -1,5 +1,5 @@
 ---
-title: Could not Load File Or Assembly Telerik.Licensing.Runtime, Version 1.4.4.0 Runtime Error
+title: Could not Load File Or Assembly Telerik.Licensing.Runtime, Version 1.4.6.0 Runtime Error
 description: FileNotFoundException thrown at runtime when the version of the referenced Telerik.Licensing.Runtime dll is mismatched.
 page_title: FileNotFoundException Exception Cannot Load Telerik.Licensing.Runtime Assembly
 type: troubleshooting

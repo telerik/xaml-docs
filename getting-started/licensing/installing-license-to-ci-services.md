@@ -1,5 +1,5 @@
 ---
-title: Installing License Key to CI Services
+title: Adding License Key to CI Services
 page_title: Installing License Key to CI Services
 description: The article describes how to install a license key for the Telerik UI for WPF product to CI Services.
 slug: installing-license-to-ci-services
@@ -8,11 +8,11 @@ published: True
 position: 2
 ---
 
-# Installing License Key to CI Services
+# Adding the License Key to CI/CD Services
 
-This article describes how to set up and activate your Telerik UI for WPF [license key]({%slug installing-license-key%}) across a few popular CI services by using environment variables.
+This article describes how to set up and activate your Telerik UI for WPF [license key]({%slug installing-license-key%}) across a few popular CI/CD services by using environment variables.
 
-When working with CI/CD platforms, always add the Telerik.Licensing NuGet package as a project dependency. This package activates the Telerik UI for WPF components at build time by using the provided license key.
+When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet package as a project dependency. This package activates the Telerik UI for WPF components at build time by using the provided license key.
 
 > If you cannot use NuGet packages in your project, see the workaround in the [Adding Your License Key to CI Platforms as a Code Snippet](LINK TO ARTICLE) KB article.
 
@@ -22,7 +22,7 @@ The license activation process in a CI/CD environment involves the following ste
 
 1. Add the `Telerik.Licensing` NuGet package as a project dependency: `<PackageReference Include="Telerik.Licensing" Version="1.*" />`
 
-1. [Create an environment variable](#creating-an-environment-variable) and add your UI for WPF license key as a value.
+1. [Create an environment variable](#creating-an-environment-variable) named `TELERIK_LICENSE` and add your UI for WPF license key as a value.
 
 ## Creating an Environment Variable
 

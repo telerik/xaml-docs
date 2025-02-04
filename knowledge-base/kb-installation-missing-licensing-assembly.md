@@ -1,5 +1,5 @@
 ---
-title: Resolve Could not Find Assembly Telerik.Licensing.Runtime Compile Error After Upgrade
+title: Could not Find Assembly Telerik.Licensing.Runtime Compile Error After Upgrade
 description: Unknown build error 'Could not find assembly Telerik.Licensing.Runtime' exception after upgrade.
 page_title: The Project Cannot Find Telerik.Licensing.Runtime Assembly After Upgrade
 type: troubleshooting

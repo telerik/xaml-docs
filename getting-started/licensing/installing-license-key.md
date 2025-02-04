@@ -48,8 +48,6 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
 1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`. 
 
-	The file content should look something like this:	
-
 1. Add the `TelerikLicense.cs` file to your project. 
 
 	Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.

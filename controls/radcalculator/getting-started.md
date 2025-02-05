@@ -16,9 +16,12 @@ This tutorial will walk your through the creation of a sample application that c
 
 In order to use `RadCalculator` in your projects, you have to add reference to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
 		
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
 ### Adding Telerik Assemblies Using NuGet
 
 To use `RadCalculator` when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})

@@ -18,14 +18,17 @@ __RadSpellChecker__ is a control that allows you to spellcheck a number of contr
 
 In order to use __RadSpellChecker__ in your project, you need to add a reference to the following assemblies: 
 
-* Telerik.Windows.Controls.dll
-* Telerik.Windows.Controls.Input.dll
-* Telerik.Windows.Controls.Navigation.dll
-* Telerik.Windows.Documents.Proofing.dll
-* Telerik.Windows.Documents.Proofing.Dictionaries.En-US.dll
-* Telerik.Windows.Documents.dll
-* Telerik.Windows.Documents.Core.dll
-* Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml.dll
+* __Telerik.Licensing.Runtime__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Documents.Proofing__
+* __Telerik.Windows.Documents.Proofing.Dictionaries.En-US__
+* __Telerik.Windows.Documents__
+* __Telerik.Windows.Documents.Core__
+* __Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

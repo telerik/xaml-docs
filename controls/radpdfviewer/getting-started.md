@@ -20,27 +20,30 @@ __RadPdfViewer__ is a control that allows you to display PDF files natively in {
 
 The minimal set of assembly references you need to add to your {% if site.site_name == 'Silverlight' %} Silverlight {% endif %}{% if site.site_name == 'WPF' %} WPF {% endif %} project in order to use RadPdfViewer are listed below:        
 
-* **Telerik.Windows.Controls.dll**
-* **Telerik.Windows.Controls.FixedDocumentViewers.dll**
-* **Telerik.Windows.Documents.Core.dll**
-* **Telerik.Windows.Documents.Fixed.dll**
-* **Telerik.Windows.Zip.dll**
+* __Telerik.Licensing.Runtime__
+* __Telerik.Windows.Controls.dll__
+* __Telerik.Windows.Controls.FixedDocumentViewers.dll__
+* __Telerik.Windows.Documents.Core.dll__
+* __Telerik.Windows.Documents.Fixed.dll__
+* __Telerik.Windows.Zip.dll__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 If you want to include a RadToolBar, you also need to reference:
 
-* **Telerik.Windows.Controls.Input.dll**
-* **Telerik.Windows.Controls.Navigation.dll**
+* __Telerik.Windows.Controls.Input.dll__
+* __Telerik.Windows.Controls.Navigation.dll__
 
 You can also take advantage of some RadPdfViewer-specific controls such as FindDialog and PercentComboBox. To use them, you need to add the following references to your project:
         
 
-* **Telerik.Windows.Controls.Input.dll**
-* **Telerik.Windows.Controls.Navigation.dll**        
-* **Telerik.Windows.Controls.FixedDocumentViewersUI.dll**
+* __Telerik.Windows.Controls.Input.dll__
+* __Telerik.Windows.Controls.Navigation.dll__        
+* __Telerik.Windows.Controls.FixedDocumentViewersUI.dll__
             
 RadPdfViewer can also import and show documents containing predefined CMap tables. To enable this functionality with the default implementation, you will need to add a reference to: 
 
-* **Telerik.Windows.Documents.CMapUtils.dll**
+* __Telerik.Windows.Documents.CMapUtils.dll__
 
 >Check the [CMap tables](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/concepts/cmaps) topic for more details on importing documents containing that feature.
 
@@ -65,7 +68,7 @@ You have to first declare the Telerik namespace.
 
 
 
-After that, you can add a RadPdfViewer, as shown in **Example 2**.
+After that, you can add a RadPdfViewer, as shown in __Example 2__.
 
 #### __[XAML] Example 2: Create a PdfViewer__
 
@@ -75,13 +78,13 @@ After that, you can add a RadPdfViewer, as shown in **Example 2**.
 	</Grid>
 {{endregion}}
 
-> When you create a RadPdfViewer, ensure that the control is **not** placed in a container that measures its children in Infinity as this could lead to unexpected behavior of the viewer. Examples of such containers are **ScrollViewer**, **StackPanel** or **Grid** with row height and column width set to ***Auto***. 
+> When you create a RadPdfViewer, ensure that the control is __not__ placed in a container that measures its children in Infinity as this could lead to unexpected behavior of the viewer. Examples of such containers are __ScrollViewer__, __StackPanel__ or __Grid__ with row height and column width set to __*Auto__*. 
 
 ## Wiring the UI with RadPdfViewer Commands 
 
 The navigation panel is separated from the control to provide better customization options. In order to add a panel in your application, you can use __RadToolBar__, which has the command descriptors of the viewer as a DataContext.
 {% if site.site_name == 'WPF' %}        
->Since R1 2018, you can use the predefined UI of RadPdfViewer - **RadPdfViewerToolBar**. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
+>Since R1 2018, you can use the predefined UI of RadPdfViewer - __RadPdfViewerToolBar__. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
 {% endif %}
 #### __[XAML] Example 3: Add a RadToolBar to RadPdfViewer__
 
@@ -93,7 +96,7 @@ The navigation panel is separated from the control to provide better customizati
 
 >tipYou can download a complete runnable example that shows the default RadPdfViewer with RadToolBar configuration from the [Telerik® SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
 
-You can then add buttons, combo boxes, etc., bound to the respective command descriptors of the viewer, as **Example 4** shows.
+You can then add buttons, combo boxes, etc., bound to the respective command descriptors of the viewer, as __Example 4__ shows.
 
 #### __[XAML] Example 4: Wire a CommandDescriptor to a RadButton__
 
@@ -121,7 +124,7 @@ The controls from our suite support different themes. You can see how to apply a
 >important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
 
 To change the theme, you can follow the steps below:
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#GridView/Theming){% endif %} application.
+* Choose between the themes and add reference to the corresponding theme assembly (ex: __Telerik.Windows.Themes.Windows8.dll__). You can see the different themes applied in the __Theming__ examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#GridView/Theming){% endif %} application.
 
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For RadPdfViewer, you will need to merge the following resources:
 
@@ -143,7 +146,7 @@ __Example 5__ demonstrates how to merge the ResourceDictionaries so that they ar
 		</Application.Resources>
 {{endregion}}
 
-__Figure 1__ shows RadPdfViewer with the **Windows8** theme applied.
+__Figure 1__ shows RadPdfViewer with the __Windows8__ theme applied.
 	
 #### __Figure 1: RadPdfViewer with the Windows8 theme__
 ![Telerik {{ site.framework_name }} PdfViewer-windows8](images/RadPdfViewer-windows8.png)

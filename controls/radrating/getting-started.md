@@ -20,8 +20,12 @@ This topic helps you to quickly get started using the __RadRating__ control. It 
 ## Assembly References
 
 In order to use __RadRating__ in your projects you have to add references to the following two assemblies:
+
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

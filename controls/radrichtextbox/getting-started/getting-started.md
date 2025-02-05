@@ -25,12 +25,15 @@ position: 0
 
 The minimal set of references you need to have in your application in order to have a RadRichTextBox are as follows:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Data__
 * __Telerik.Windows.Documents__ 
 * __Telerik.Windows.Documents.Core__
 * __System.ComponentModel.Composition__
 * __System.Drawing.Common NuGet package__&mdash;Required only for __.NET 6__ and later and only if the Telerik assemblies are referenced manually in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
 

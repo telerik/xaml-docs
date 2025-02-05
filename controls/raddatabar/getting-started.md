@@ -20,9 +20,12 @@ This tutorial will walk you through the required steps for using __RadDataBar__.
 
 In order to add __RadDataBar__ in your application, you need to add references to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.DataVisualization__
 * __Telerik.Windows.Data__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

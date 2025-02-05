@@ -12,22 +12,16 @@ position: 3
 
 The `RadMaskedDateTimeInput`` represents the basic control that can be used to restrict the input of DateTime values.
 
-{% if site.site_name == 'Silverlight' %}
->In order to use the RadMaskedDateTimeInput control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.Controls.Input__  
+In order to use the RadMaskedDateTimeInput control in your projects you have to add references to the following assemblies:
 
->You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).
-{% endif %}
+* __Telerik.Licensing.Runtime__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Data__  
 
-{% if site.site_name == 'WPF' %} 
->In order to use the RadMaskedDateTimeInput control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.Controls.Input__
->	- __Telerik.Windows.Data__  
+You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
 
->You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
-{% endif %}
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ## Declaratively defined MaskedDateTimeInput
 

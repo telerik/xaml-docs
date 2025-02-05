@@ -18,10 +18,13 @@ This article describes the differences with the .NET Framework version you might
 
 To use RadRichTextBox in a .NET 6 or later project, you need to add references to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.RichTextBox__
 * __Telerik.Windows.Data__
 * __Telerik.Windows.Documents.Core__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 To use the built-in UI, you should add references to the following assemblies:
 

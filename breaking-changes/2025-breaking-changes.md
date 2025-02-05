@@ -14,6 +14,12 @@ Currently, this section of the documentation contains only the latest release no
 
 ## 2025 Q1
 
+#### Common Changes
+
+* The Telerik UI for WPF has a new licensing mechanism. Due to this, you need to either add the __Telerik.Licensing__ NuGet package or reference the __Telerik.Licensing.Runtime.dll__ . You also need to [install a license key]({%slug installing-license-key%}).
+
+#### RichTextBox
+
 * The `ShouldPersist` and `ShouldStartNewComposition` properties of the `TextInsertedEventArgs` class are now obsoleted. Use the `ImeLanguage` and `CurrentEvent` properties instead.
 
 * The `TextInsertedEventArgs(string text, bool shouldPersist, bool shouldStartNewComposition)` constructor of the TextInsertedEventArgs class is now obsoleted. Instead, use the `TextInsertedEventArgs(string text, InputEvents currentEvent, ImeLanguage imeLanguage)` constructor.

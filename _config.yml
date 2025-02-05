@@ -1011,7 +1011,7 @@ navigation:
     "getting-started/installation/nuget":
         title: "NuGet Installation"   
     "getting-started/licensing":
-        title: "Licensing"
+        title: "Activating Your License"
         position: 7        
     "getting-started/adding-telerik-ui-to-an-application":
         title: "Adding Telerik UI to an Application"
@@ -1045,7 +1045,7 @@ navigation:
         title: "Style and Appearance"
         position: 4
     "licensing":
-        title: "Distribution and Licensing"
+        title: "Redistribution"
         position: 5
     "upgrade":  
         title: "Upgrade"

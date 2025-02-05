@@ -12,8 +12,6 @@ position: 0
 
 The Telerik UI for {{ site.framework_name }} suite includes a limited run-time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions and redistribute your solutions to your end users who are not required to purchase a license from Telerik to access your solution.
 
-{% if site.framework_name == 'WPF' %}
-
 ## Examples of Permitted Uses
 
 * WPF applications for internal company use.
@@ -27,8 +25,6 @@ The Telerik UI for {{ site.framework_name }} suite includes a limited run-time r
 * WPF applications that offer a trial or free version of Your application. __If offering a free or trial version of Your Integrated Product, redistribution of the assemblies is not permitted. You are required to protect all Telerik assemblies by using the method in the [Protecting Telerik UI Assemblies](#protecting-telerik-ui-assemblies) section of this article.__
 
 >important The next sections in this article describe how to include additional protection to the Telerik assemblies redistributed with your application when necessary.
-
-{% endif %}
 
 ## Protecting Telerik UI Assemblies
 

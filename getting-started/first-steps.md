@@ -12,21 +12,19 @@ position: 1
 
 This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
 
-Once you have your first simple control up and running, take a look at the [next steps](#next-steps) section to start exploring the control functionality in more details.
+The topic shows what is the lifecycle when using the Telerik Visual Studio Extension. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}).
 
-For additional resources you can also review the Related Articles section on the right.
+## Downloading the Extension
 
-## Download the Controls
+To download the Telerik Visual Studio Extenion, you can either download the `.msi` installer from the Telerik UI for WPF [download page](https://www.telerik.com/account/product-download?product=RCWPF) or use the __Extensions__ menu of Visual Studio to download the extension from the marketplace (*"Progress Telerik UI for WPF Extension"*).
 
-The easiest way to get the controls to your development machine is to use the [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) or to download the automated MSI installer from [your telerik.com account](https://www.telerik.com/account/product-download?product=RCWPF).
+__Download automated (.msi) installer__  
 
->caption Figure 1: Download automated (.msi) installer
+![Download automated installer Telerik_UI_for_WPF_<version>_Dev.msi](images/download-msi.png")
 
-![Download automated installer Telerik_UI_for_WPF_<version>_Dev.msi](images/download-msi.png "Telerik_UI_for_WPF_<version>_Dev.msi")
+If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/try/ui-for-wpf) and the same options will apply to you as well.
 
-> If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/try/ui-for-wpf) and the same options will apply to you as well.
-
->tip The following article can help you choose the installation type that is most suitable for your needs and preferences: [Installation Approaches]({%slug installation-installing-which-file-do-i-need%}).
+The following article can help you choose the installation type that is most suitable for your needs and preferences: [Installation Approaches]({%slug installation-installing-which-file-do-i-need%}).
 
 ## Creating Application with Telerik Visual Studio Extensions
 
@@ -38,25 +36,39 @@ The Visual Studio Extensions can be accessed through the Extensions | Telerik | 
 
 2. Create new Telerik WPF application.
 
-	#### __Figure 2: Go to Telerik > Telerik  UI for WPF > Create New Telerik Project__
-	![Run Create Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_WPF_OverviewMenuCreate.png "Run Create Project Wizard")
+	__Go to Telerik > Telerik  UI for WPF > Create New Telerik Project__  
 	
-	#### __Figure 3: Creating new Telerik application__	
+	![Run Create Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_WPF_OverviewMenuCreate.png)
+	
+	__Creating new Telerik application__  
+	
 	![Creating new Telerik application](images/installation-adding-to-application-create-application-and-adding-control-1.png)
 
 3. Choose the project template and the corresponding settings. For an empty project without any Telerik controls added to the view, choose the Blank option.
 	
-	#### __Figure 4: Choosing an application template__
+	__Choosing an application template__  
+	
 	![Choosing an application template](images/installation-adding-to-application-create-application-and-adding-control-2.png)
 
-	At this point the project references only the common Telerik.Windows.Controls.dll and you can start adding controls in the UI. 
+	At this point the project references only the common `Telerik.Windows.Controls.dll` and `Telerik.Licensing.Runtime.dll`, and you can start adding controls in the UI. 
 
-	You can further configure the project using the Project Configuration Wizard. You can do that by going to the __Extensions > Telerik > Telerik UI for WPF > Configure Project__ menu in Visual Studio. When you open the wizard you can select the controls you are going to use from the list (or search them in the search box). Once you have selected them, click Finish. This will add the required dlls and references to your project.
+4. In case you haven't installed a license key already, you can download one using the License Validation screen.
+	
+	__License validation screen (license not found)__  
+	
+	![License validation screen](images/installation-adding-to-application-create-application-and-adding-control-license-validation.png)
+	
+	__License validation screen (successfully downloaded a license)__
+	
+	![License validation screen - successfull download](images/installation-adding-to-application-create-application-and-adding-control-successfull-download.png)
+	
+You can further configure the project using the Project Configuration Wizard. You can do that by going to the __Extensions > Telerik > Telerik UI for WPF > Configure Project__ menu in Visual Studio. When you open the wizard you can select the controls you are going to use from the list (or search them in the search box). Once you have selected them, click Finish. This will add the required dlls and references to your project.
 
-	#### __Figure 5: Adding references to the charting controls__
-	![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
+__Adding references to the charting controls__  
+	
+![Common Installing Creating Application 013 WPF](images/installation-adding-to-application-create-application-and-adding-control-3.png)	
 
-	> This step is optional and you will only need it if you use controls that are not defined in Telerik.Windows.Controls.dll.
+This step is optional and you will only need it if you use controls that are not defined in `Telerik.Windows.Controls.dll`.
 
 ## Add a Telerik Control to the Project
 
@@ -75,15 +87,14 @@ In order to use the __RadGridView__ control in your projects, you have to add re
 
 You can add __RadGridView__ manually by writing the XAML code in __Example 1__ or you can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 	
-#### __[XAML] Example 1: Adding RadGridView in XAML__
-
+#### __[XAML] Adding RadGridView in XAML__
 {{region xaml-gridview-getting-started2_0}}
 	<telerik:RadGridView />
 {{endregion}}
 
 If you run the application, you will see an empty grid with no columns and rows as demonstrated in __Figure 6__. 
 
-#### __Figure 6: The empty grid generated by the code in Example 1__
+__The empty grid generated by the code in Example 1__  
 
 ![Telerik {{ site.framework_name }} DataGrid GettingStarted 2](images/RadGridView_GettingStarted_2.png)
 
@@ -91,8 +102,7 @@ If you run the application, you will see an empty grid with no columns and rows 
 
 In order to populate the __RadGridView__ control with data, you should create a collection of business objects. Create a new class named __Profile__ and add several different type properties to it, as shown in __Example 2__.
 
-#### __[C#] Example 2: Simple business class__
-
+#### __[C#] Simple business class__  
 {{region cs-gridview-getting-started2_0}}
 	    public class Profile
     {
@@ -103,8 +113,7 @@ In order to populate the __RadGridView__ control with data, you should create a 
     }
 {{endregion}}
 
-#### __[VB.NET] Example 2: Simple business class__
-
+#### __[VB.NET] Simple business class__
 {{region vb-gridview-getting-started2_0}}
 	Public Class Profile
     Public Property ID As Integer
@@ -116,8 +125,7 @@ End Class
 
 Next, create a collection of Profile objects in the MainWindow and set the RadGridView ItemSource.  
 
-#### __[C#] Example 3: Simple business class__
-
+#### __[C#] Simple business class__
 {{region cs-gridview-getting-started2_0}}
 		public MainWindow()
     {
@@ -133,9 +141,7 @@ Next, create a collection of Profile objects in the MainWindow and set the RadGr
     }
 {{endregion}}
 
-
-#### __[VB.NET] Example 3: Simple business class__
-
+#### __[VB.NET] Simple business class__
 {{region vb-gridview-getting-started2_0}}
 	Public Sub New()
     Me.InitializeComponent()
@@ -159,8 +165,7 @@ Next, create a collection of Profile objects in the MainWindow and set the RadGr
 
 Now that you have prepared the needed sample data, you need to bind it to each column in XAML as shown in the Example 4 below.
 
-#### __[XAML] Example 4: Define RadGridView in XAML__
-
+#### __[XAML] Define RadGridView in XAML__
 {{region xaml-gridview-getting-started2_1}}
 	<Grid>
         <telerik:RadGridView x:Name="gridView"
@@ -177,7 +182,7 @@ Now that you have prepared the needed sample data, you need to bind it to each c
 
 Run the project and you should see something like this:
 
-#### __Figure 7: The final result__
+__The final result__  
 
 ![Main window with RadGridView](images/main-window-with-radgridview.png "Main window with RadGridView")
 
@@ -189,9 +194,7 @@ Now that you have the Telerik UI for WPF controls running in your project, you m
 * [Change control appearance]({%slug getting-started-change-control-appearance%})
 * [Further information]({%slug getting-started-next-steps%})
 
-## See Also
-
+## See Also  
 * [System Requirements]({%slug installation-system-requirements-wpf%})
 * [Download Product Files]({%slug download-product-files-wpf%})
 * [Add Telerik Namespace]({%slug installation-adding-application-namespace-declaration%})
-* [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)

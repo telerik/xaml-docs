@@ -10,50 +10,42 @@ position: 3
 
 # Explore UI for WPF Control Features
 
-Once you have the controls [working in your project]({%slug getting-started-first-steps%}), it's time to see what they can do. This article provides a short overview of how to get started with finding control functionality so you can use it.
+Once you have the controls [working in your project]({%slug nuget-setup-lifecycle%}), it's time to see what they can do. This article provides a short overview of how to get started with finding control functionality so you can use it.
 
 ## Demos
 
 To get an overview of what each control offers, the fastest approach is download the [WFP Demos Application](http://demos.telerik.com/wpf).
 
-You can also [download the source code of the demo application]({%slug installing-wpf-demos%}#getting-the-source-code) from your [telerik.com account](https://www.telerik.com/account/downloads/product-download?product=RCWPF) as a Visual Studio project and play around with the demos in the comfort of your IDE. The `Telerik_UI_for_WPF_[version]_Demos.zip` archive contains the respective source code.
+You can also [download the source code of the demo application]({%slug installing-wpf-demos%}#getting-the-source-code) from your [telerik.com account](https://www.telerik.com/account/downloads/product-download?product=RCWPF) as a Visual Studio project and play around with the demos in the comfort of your IDE.
 
-## Explore properties and tags
+## Properties and Tags
 
 You can **explore** the available properties, events and inner tags of any control through the VS **intellisense** to get a quick glimpse of their concepts and availability.
-
->caption Figure 1: Explore Intellisense in the markup
-
-![Explore Intellisense in the markup](adding-telerik-ui-to-an-application/images/installation-adding-application-using-intellisense-vs-wpf-0.png "Explore Intellisense in the markup")
-
->caption Figure 2: Explore Intellisense in the code-behind
-
-![Explore Intellisense in the code-behind](adding-telerik-ui-to-an-application/images/installation-adding-application-using-intellisense-vs-wpf-2.png "Explore Intellisense in the code-behind")
 
 ## Documentation
 
 In addition to that, the **documentation** provides a section for each control that contains help articles **on distinct features and API reference**.
 
->caption Figure 3: Typical control documentation structure
+__Typical control documentation structure__  
 
 ![Typical control documentation structure](images/typical-control-docs-structure.png "Typical control documentation structure")
 
 ## Design-time
 
-Last, but not least, some most common tasks and configuration options are available in the control's [Smart Tag in Design Mode]({%slug common-smart-tags%}). You will also find **design-time wizards** and **links** that can be useful when you are getting started with a feature, or even for advanced users who want to save time with setting up collections, data sources or properties.
+Some of the most common tasks and configuration options are available in the control's [Smart Tag in Design Mode]({%slug common-smart-tags%}). You will also find **design-time wizards** and **links** that can be useful when you are getting started with a feature, or even for advanced users who want to save time with setting up collections, data sources or properties.
 
->caption Figure 4: Smart Tag features
+__Smart Tag features__  
 
 ![Smart Tag features](images/smart-tag-features.png "Smart Tag features")
+
+## SDK Examples
+
+The SDK Examples (also known as Developer Focused Examples) are a good source with runnable project showing different features of the Telerik UI for WPF controls. Find the SDK Examples in the [corresponding GitHub repository](https://github.com/telerik/xaml-sdk).
 
 ## Next Steps
 
 Now that you have the Telerik UI for WPF controls running in your project, you may want to explore their features, customize their behavior or change their appearance. Below you can find guidance on getting started with such tasks:
 
-* [Change control appearance]({%slug getting-started-change-control-appearance%})
-* [Further information]({%slug getting-started-next-steps%})
+* [Change Control Appearance]({%slug getting-started-change-control-appearance%})
+* [Further Information]({%slug getting-started-next-steps%})
 
-## See Also
-
-* [First Steps]({%slug getting-started-first-steps%})
-* [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)

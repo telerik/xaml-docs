@@ -12,7 +12,7 @@ position: 2
 
 This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
 
-The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file to get the dlls. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}) or [Telerik UI for WPF Extension]({%slug getting-started-first-steps%}) as shown in the corresponding articles in this documentation section.
+The topic shows what is the lifecycle when using the __.msi__ or __.zip__ file to get the dlls. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}) or [Telerik UI for WPF Extension]({%slug getting-started-first-steps%}).
 
 ## Creating a Project
 
@@ -39,6 +39,10 @@ Use the Visual Studio's Reference Manager to browse and reference the Telerik dl
 ![{{ site.framework_name }} Added References](images/msi-or-zip-setup-lifecyle-5.png)
 
 If you need to set a [Telerik theme]({%slug common-styling-appearance-available-themes%}) different than the default one check the [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%}) and the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) articles.
+
+## Installing a License Key
+
+To use the Telerik WPF product you will need to install a valid license key. Otherwise, you will see warning messages and banners related to the licensing. See how to activate a license in the [Installing License Key]({%slug installing-license-key%}) article.
 
 ## Adding Telerik Controls
 

@@ -10,12 +10,7 @@ position: 14
 
 # Video Onboarding
 
-All users with an active trial or commercial license have access to a [Telerik UI for WPF getting started video course](https://learn.telerik.com/learn/course/16/Telerik%2520UI%2520for%2520WPF) available in [Telerik's Virtual Classroom](https://learn.telerik.com/learn).
-The training course is developed to help you get started with the Telerik UI for WPF components and features. It aims to put you in the shoes of an engineer who adds new features to an existing application.
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-introduction.html %}
-{% endif %}
+Telerik UI for WPF offers a comprehensive [video getting started course](https://www.telerik.com/support/video-courses) available to all developers. This class is designed to help you get started with the Telerik UI for WPF components and features. It aims to put you in the shoes of an engineer who adds new features to an existing application.
 
 The course starts with an introduction to the Telerik UI for WPF components and its benefits. The training flow then takes you to an overview of the demo application and further, you get into creating inputs, data grids, charts, document viewers, and more. The course also talks about how to enhance the components with one of the built-in themes and or by customizing the default styles.
 
@@ -33,7 +28,7 @@ This video explains the details around the project you will be modifying&mdash;w
 
 ## Onboarding Modules
 
-The Telerik UI for WPF technical online training has an approximate duration of 2 hours and is split into eight modules with the following learning path:
+The [Telerik UI for WPF technical online training](https://www.telerik.com/support/video-courses) has an approximate duration of 2 hours and is split into eight modules with the following learning path:
 
 * **Chapter 1: Welcome Settings** (Course overview, prerequisites, about Telerik UI for WPF, tour of demo application)
 * **Chapter 2: Getting Started** (Running the sample application code)
@@ -43,6 +38,3 @@ The Telerik UI for WPF technical online training has an approximate duration of 
 * **Chapter 6: Scheduler** (Working with scheduler component to plan tasks and meetings)
 * **Chapter 7: Reporting** (Working with the report viewer component)
 * **Chapter 8: Styling and Themes** (Applying Telerik themes and customizing Telerik components)
-
-If you wish to learn more and continue with the video onboarding, [enroll in the training](https://learn.telerik.com/learn/course/16/Telerik%2520UI%2520for%2520WPF) from the [Virtual Classroom](https://learn.telerik.com/learn).
-  

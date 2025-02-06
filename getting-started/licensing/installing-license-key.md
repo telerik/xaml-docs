@@ -24,7 +24,7 @@ To download a license key for Telerik UI for WPF, you must have either a develop
  
 	![Picture showing the License Keys page](images/installing-license-key-0.png)
 
-> The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel), [automated MSI installer]({%slug installation-installing-from-msi-wpf%}), and the [Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) will automatically download and store your license key in the `%appdata%\Telerik` directory. This makes it available for all projects developed on the local machine.	
+> The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) and the [Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) will automatically download and store your license key in the `%appdata%\Telerik` directory. This makes it available for all projects developed on the local machine.	
 
 ## Activating the UI for WPF Components
 

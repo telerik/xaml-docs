@@ -14,29 +14,29 @@ The Telerik UI for {{ site.framework_name }} controls can also be installed via 
 
 ![Progress Control Panel](images/progress-control-panel-1.png)
 
-## Download and Log-in
+## Downloading and Log-in
 
-To start, download the Progress Control Panel from the following [page](https://www.telerik.com/download-trial-file/v2/control-panel) and run the downloaded **.exe** file. You will soon be presented with the login screen where you need to provide your Telerik account credentials to sign in.
+To start, download the Progress Control Panel from the following [page](https://www.telerik.com/download-trial-file/v2/control-panel) and run the downloaded `.exe` file. You will soon be presented with the login screen where you need to provide your Telerik account credentials to sign in.
 
-#### Figure 1: The Progress Control Panel Login Screen
+__The Progress Control Panel Login Screen__  
 
 ![The Progress Control Panel Login Screen](images/progress-control-panel-2.png)
 
-## Select Products to Install
+## Selecting Products to Install
 
 Afterwards, you will be presented with a screen containing sections for **All** products, **Purchased** products, **Trial** products, and **Free** products. These sections each have a split screen view - the left contains installed products that can be updated and the right contains products that can be installed.
 
-You can continue by selecting the **Telerik UI for {{ site.framework_name }} suite**. Once you click the checkbox, the option to proceed or cancel will be displayed.
+You can continue by selecting the **Telerik UI for {{ site.framework_name }}** suite. Once you click the checkbox, the option to proceed or cancel will be displayed.
 
-#### Figure 2: The Progress Control Panel List of Available Products
+__The Progress Control Panel List of Available Products__
 
 ![The Progress Control Panel List of Available Products](images/progress-control-panel-3.png)
 
-## Configure Installation
+## Configurating Installation
 
 Once you click **Proceed**, you will then be given the opportunity to review your choice and make changes to the installation folder. When you're ready to proceed, accept the license agreements and click **Proceed** once more. If you forgot something or checked the wrong box, click **Back** and correct your selection.
 
-#### Figure 3: The Progress Control Panel Installation Configuration Page
+__The Progress Control Panel Installation Configuration Page__
 
 ![The Progress Control Panel Installation Configuration Page](images/progress-control-panel-4.png)
 
@@ -46,18 +46,13 @@ When you click Proceed, the Progress Control Panel will download the necessary f
 
 After the installation is complete, you will be returned to the main screen to install or update more products.
 
-#### Figure 4: The Progress Control Panel with Telerik UI for WPF Installed
+__The Progress Control Panel with Telerik UI for WPF Installed__
 
 ![The Progress Control Panel with Telerik UI for WPF Installed](images/progress-control-panel-5.png)
 
-{% if site.framework_name == 'WPF' %}
 You can now start [creating your first Telerik UI for WPF project]({%slug getting-started-first-steps%}#create-a-ui-for-wpf-project).
-{% else %}
-You can now start [creating your first Telerik UI for Silverlight project]({%slug getting-started-first-steps-sl%}#create-a-ui-for-silverlight-project).
-{% endif %}
 
-## See Also
-
-{% if site.framework_name == 'WPF' %} * [First Steps]({%slug getting-started-first-steps%}){% else %} * [First Steps]({%slug getting-started-first-steps-sl%}){% endif %}
-{% if site.framework_name == 'WPF' %} * [Explore Control Features]({%slug getting-started-explore-control-features%}){% else %} * [Explore Control Features]({%slug getting-started-explore-control-features-sl%}){% endif %}
+## See Also  
+* [First Steps]({%slug getting-started-first-steps%})
+* [Explore Control Features]({%slug getting-started-explore-control-features%})
 

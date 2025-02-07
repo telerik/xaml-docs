@@ -52,7 +52,7 @@ The Visual Studio Extensions can be accessed through the Extensions | Telerik | 
 
 	At this point the project references only the common `Telerik.Windows.Controls.dll` and `Telerik.Licensing.Runtime.dll`, and you can start adding controls in the UI. 
 
-4. In case you haven't installed a license key already, you can download one using the License Validation screen.
+4. In case you haven't installed a [license key]({%slug installing-license-key%}) already, you can download one using the License Validation screen.
 	
 	__License validation screen (license not found)__  
 	
@@ -61,7 +61,9 @@ The Visual Studio Extensions can be accessed through the Extensions | Telerik | 
 	__License validation screen (successfully downloaded a license)__
 	
 	![License validation screen - successfull download](images/installation-adding-to-application-create-application-and-adding-control-successfull-download.png)
-	
+
+	If you have a license key already installed the License Validation screen will be skipped.
+
 You can further configure the project using the Project Configuration Wizard. You can do that by going to the __Extensions > Telerik > Telerik UI for WPF > Configure Project__ menu in Visual Studio. When you open the wizard you can select the controls you are going to use from the list (or search them in the search box). Once you have selected them, click Finish. This will add the required dlls and references to your project.
 
 __Adding references to the charting controls__  

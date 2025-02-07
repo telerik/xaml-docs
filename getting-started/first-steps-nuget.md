@@ -10,9 +10,7 @@ position: 0
 
 # First Steps With Nuget Packages
 
-This article describes the lifecycle of a Telerik application. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
-
-The topic shows what is the lifecycle when using the Telerik __nuget packages__ to get dlls. As an alternative, you can use [MSI or Zip files]({%slug msi-or-zip-setup-lifecycle%}), or [Telerik UI for WPF Extension]({%slug getting-started-first-steps%}) as shown in the corresponding articles in this documentation section.
+This article describes the lifecycle of a Telerik application when using NuGet packages. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
 
 ## Creating a Project
 

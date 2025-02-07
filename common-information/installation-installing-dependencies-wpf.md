@@ -13,7 +13,10 @@ site_name: WPF
 
 The following topic describes all controls from UI for WPF and the assemblies they require when deploying your application.
 
->Note that the assembly __Telerik.Windows.Controls__ must always be part of your application.
+The following two assemblies should be always referenced in the project:
+
+* `Telerik.Windows.Controls.dll`
+* `Telerik.Licensing.Runtime.dll`&mdash;The licensing assembly can be installed also via the `Telerik.Licensing` NuGet package.
           
 Controls	|	Assembly
 ---	|	---
@@ -126,7 +129,7 @@ RadTreeView	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadVirtualGrid | Telerik.Windows.Controls.VirtualGrid, Telerik.Windows.Controls, Telerik.Windows.Data
 RadVirtualKeyboard | Telerik.Windows.Controls.Navigation
 RadWatermarkTextBox	|	Telerik.Windows.Controls
-RadWebCam	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Media, Telerik.Windows.MediaFoundation, MediaFoundation, SharpDX, SharpDX.Direct3D9
+RadWebCam	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Media, Telerik.Windows.MediaFoundation, MediaFoundation, the SkiaSharp NuGet package
 RadWindow	|	Telerik.Windows.Controls.Navigation
 RadWizard	|	Telerik.Windows.Controls, Telerik.Windows.Data, Telerik.Windows.Controls.Navigation 
 RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Flow, Telerik.Windows.Zip, Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Telerik.Windows.Documents.Fixed

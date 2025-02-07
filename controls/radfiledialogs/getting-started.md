@@ -15,6 +15,8 @@ This article will provide you with the knowledge required to use the file dialog
 ## Assembly References
 
 In order to use the file dialog controls, you will need to add references to the following assemblies:
+
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Controls.Navigation__
@@ -25,6 +27,8 @@ In order to use the file dialog controls, you will need to add references to the
 >For __.NET 6__ and later you will need to install also the `System.Data.OleDb` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 You can find the required assemblies for each control from the Telerik UI for WPF suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

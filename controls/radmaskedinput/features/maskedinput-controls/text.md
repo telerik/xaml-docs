@@ -12,22 +12,16 @@ position: 2
 
 `RadMaskedTextInput` represents a control that can be used to restrict the input of text values.
 
-{% if site.site_name == 'Silverlight' %}
-To use the RadMaskedCurrencyInput control in your projects, add references to the following assemblies:
-
-* __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Input__  
-
-{% endif %}
-
-{% if site.site_name == 'WPF' %} 
 To use the RadMaskedTextInput control in your projects, add references to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Data__  
 
-{% endif %}
+You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ## Declaratively defined MaskedTextInput
 

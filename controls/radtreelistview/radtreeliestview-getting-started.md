@@ -39,6 +39,7 @@ Please note that __RadTreeListView__ and the [Hierarchical RadGridView]({%slug g
 
 In order to use the __RadTreeListView__ in your application, you should add references to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 
 * __Telerik.Windows.Controls.GridView__
@@ -46,6 +47,8 @@ In order to use the __RadTreeListView__ in your application, you should add refe
 * __Telerik.Windows.Data__
 
 * __Telerik.Windows.Controls.Input__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

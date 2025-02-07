@@ -39,12 +39,15 @@ Before we get started, we will add the following NuGet packages.
 	
 We will also add the needed Telerik references.
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.Data__
 * __Telerik.Windows.Controls.EntityFrameworkCore__
 * __Telerik.Windows.Controls.GridView__
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Data__
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

@@ -42,22 +42,16 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 
 ## Declare RadMaskedInput controls
 
-{% if site.site_name == 'Silverlight' %}
->In order to use the __RadMaskedInput__ control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.Controls.Input__  
+In order to use the __RadMaskedInput__ control in your projects you have to add references to the following assemblies:
 
->You can find more info [here]({%slug installation-installing-controls-dependencies%}).
-{% endif %}
+* __Telerik.Licensing.Runtime__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Data__  
 
-{% if site.site_name == 'WPF' %} 
->In order to use the __RadMaskedInput__ control in your projects you have to add references to the following assemblies:
->	- __Telerik.Windows.Controls__
->	- __Telerik.Windows.Controls.Input__
->	- __Telerik.Windows.Data__  
+You can find more info [here]({%slug installation-installing-controls-dependencies-wpf%}).
 
->You can find more info [here]({%slug installation-installing-controls-dependencies-wpf%}).
-{% endif %}
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

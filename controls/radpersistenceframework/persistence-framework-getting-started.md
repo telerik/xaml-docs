@@ -16,10 +16,13 @@ The __PersistenceFramework__ allows you to save the visual state of your applica
 
 To use the __PersistenceFramework__ in your projects you have to add references to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
-* __Telerik.Windows.PersistenceFramework____
+* __Telerik.Windows.PersistenceFramework__
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

@@ -16,6 +16,7 @@ The __RadMap__ control allows you to display rich geographical information from 
 
 To use the __RadMap__ in your projects you have to add references to the following assemblies:
 
+* __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 * __Telerik.Windows.Controls.DataVisualization__
 * __Telerik.Windows.Data__
@@ -23,6 +24,8 @@ To use the __RadMap__ in your projects you have to add references to the followi
 >For __.NET 6__ and later you will need to install also the `System.ServiceModel.Http` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 ### Adding Telerik Assemblies Using NuGet
 

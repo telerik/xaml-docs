@@ -24,7 +24,7 @@ If you're receiving this error when connecting to Telerik NuGet Server, you coul
     1. Use the email address in the place of username
     2. Make sure any special characters are escaped (see *Handling Special Characters in Password* below)
     3. Click "Save" 
-6. Make sure the URL does not have a trailing slash, it must be only `https://nuget.telerik.com/nuget`
+6. Make sure the URL matches `https://nuget.telerik.com/v3/index.json`
 7. Reopen Visual Studio and access the Telerik NuGet server. 
 
 ## Handling Special Characters in Password
@@ -47,7 +47,7 @@ Add-Type -AssemblyName System.Web
 
 Another common problem is that your machine (PC, GitHub Actions runner or Azure DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
 
-* https://nuget.telerik.com/nuget/Search()?$filter=IsAbsoluteLatestVersion&searchTerm=%27WPF%27&includePrerelease=true&$skip=0&$top=100&semVerLevel=2.0.0. 
+* https://nuget.telerik.com/v3/search?q=wpf
 
 After you enter your telerik.com username and password, you should see an XML search result containing a list of all the Telerik.UI.for.WPF packages available with your license.
 

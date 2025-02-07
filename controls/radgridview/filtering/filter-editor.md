@@ -392,3 +392,38 @@ The data context in the `ContentTemplate` is an object of type `FilterPartViewMo
 * `Content`&mdash;This is the content that will be displayed in the content area. It can be an operator name (And, Or, StartsWith, Contains, etc.), member (property name), value or a opening/closing bracket.
 
 The view model gives information also for the current level of the filtering part in the composite filter's hierarchy through the `Level` property. 
+
+## Customizing the Display Names of Properties
+
+By default the data filer will use associated the property names in the dropdown that allows you to select a field. To change this and use a custom display name, either use the `System.ComponentModel.DisplayName` attribute on the corresponding property in the model, or use the [AutoGeneratingItemPropertyDefinitionHandler](#events).
+
+#### __[C#] Using the DisplayName attribute__
+{{region gridview-filter-editor-17}}
+	[DisplayName("Est.")]
+	public DateTime Established
+	{
+	    get { return this.established; }
+	    set
+	    {
+	        if (value != this.established)
+	        {
+	            this.established = value;
+	            this.OnPropertyChanged("Established");
+	        }
+	    }
+	}
+{{endregion}}
+
+#### __[C#] Using the AutoGeneratingItemPropertyDefinitionHandler to synchronize the field display name in the RadDataFiler with the Header of the GridViewColumn__
+{{region gridview-filter-editor-18}}
+	private void OnAutoGeneratingPropertyDefinition(object sender, DataFilterAutoGeneratingItemPropertyDefinitionEventArgs e)
+	{
+	    if (e.ItemPropertyDefinition.PropertyName == "MyProperty")
+	    {
+	        var column = this.gridView.Columns.OfType<GridViewBoundColumnBase>().FirstOrDefault(c => c.DataMemberBinding.Path.Path == e.ItemPropertyDefinition.PropertyName);
+	        e.ItemPropertyDefinition.DisplayName = column.Header.ToString();
+	    }
+	}
+{{endregion}}
+
+

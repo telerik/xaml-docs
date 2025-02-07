@@ -10,7 +10,13 @@ position: 8
 
 # Allowed Types
 
-When loading the persisted layout, the `PersistenceFramework` will instantiate the saved types only if they are allowed. This is controlled by the `PersistenceManager` class, which has predefined types that are allowed by default. You can also register other types by modifying its `AllowedTypes` collection or by using the `AllowTypes` extension method.
+When loading the persisted layout, the PersistenceFramework will instantiate the saved types only if they are allowed. Otherwise, an exception is thrown.
+
+To allow specific types, add them in the `AllowedTypes` collection of the `PersistenceManager` class. 
+
+When the `PersistenceManager` gets initialized the `AllowedTypes` collection is automatically filled with several WPF native types and also types from the `Telerik.Windows.Controls` assembly.
+
+If the deserializer reaches an unknown type an `UnauthorizedDeserializationException` is thrown.
 
 #### __[C#] Allowing a type using the AllowedTypes collection of the PersistenceManager__
 {{region persistence-framework-allowed-types-0}}
@@ -24,21 +30,23 @@ When loading the persisted layout, the `PersistenceFramework` will instantiate t
     manager.AllowedTypes.Add(GetType(SolidColorBrush))
 {{endregion}}
 
-#### __[C#] Allowing a type using the AllowTypes extension method__
+#### __[C#] Allowing a type using the AllowedTypes extension method__
 {{region persistence-framework-allowed-types-2}}
-    PersistenceManager manager = new PersistenceManager().AllowTypes(typeof(SolidColorBrush));
+    PersistenceManager manager = new PersistenceManager().AllowedTypes(typeof(SolidColorBrush));
 {{endregion}}
 
-#### __[VB.NET] Allowing a type using the AllowTypes extension method__
+#### __[VB.NET] Allowing a type using the AllowedTypes extension method__
 {{region persistence-framework-allowed-types-3}}
-    Dim manager As PersistenceManager = New PersistenceManager().AllowTypes(GetType(SolidColorBrush))
+    Dim manager As PersistenceManager = New PersistenceManager().AllowedTypes(GetType(SolidColorBrush))
 {{endregion}}
+
+In case the AllowedTypes property is assigned to a `null` value, a `NotSupportedException` is thrown.
 
 ## Allowing Types from the Telerik Assemblies 
 
-Each Telerik assembly has an extension method that will load the types in the AllowedTypes collection of a control, on which it is invoked. In the scope of the PersistenceFramework, calling these methods on the PersistenceManager will update its AllowedTypes collection.
+Each Telerik assembly has an extension method part of the associated `AllowedTypesExtensions` class that allows you to automatically load the Telerik types in the `AllowedTypes` collection of the `PersistenceManager`. 
 
-The following example will show you how to allow the types that are used in the __Telerik.Windows.Controls.Docking.dll__ and __Telerik.Windows.Controls.Navigation.dll__ inside the PersistenceManager.
+The following example shows how to allow the types that are defined in the `Telerik.Windows.Controls.Docking` and `Telerik.Windows.Controls.Navigation` assemblies.
 
 #### __[C#] Allowing the types that are used in the Telerik.Windows.Controls.Docking and Telerik.Windows.Controls.Navigation assemblies__
 {{region persistence-framework-allowed-types-4}}
@@ -58,16 +66,16 @@ The following example will show you how to allow the types that are used in the 
 
 In cases where internal WPF types need to be added to the AllowedTypes collection, you can obtain them at runtime and utilize the AllowTypes method. One such case is with the native WPF `Selector` class that assigns the `SelectedItems` property to a `SelectedItemCollection` type, which is internal. In this specific scenario, invoking the `AllowInputControls` method will resolve this, however, if you need to allow internal types, you can follow the approach from the following example:
 
-#### __[C#] Allowing internal types via the AllowTypes method__
+#### __[C#] Allowing internal types via the AllowedTypes method__
 {{region persistence-framework-allowed-types-6}}
     var listBox = new ListBox();
-    manager.AllowTypes(listBox.SelectedItems.GetType());
+    manager.AllowedTypes(listBox.SelectedItems.GetType());
 {{endregion}}
 
-#### __[VB.NET] Allowing internal types via the AllowTypes method__
+#### __[VB.NET] Allowing internal types via the AllowedTypes method__
 {{region persistence-framework-allowed-types-7}}
     Dim listBox = New ListBox()
-    manager.AllowTypes(listBox.SelectedItems.[GetType]())
+    manager.AllowedTypes(listBox.SelectedItems.[GetType]())
 {{endregion}}
 
 ## TypeRestored Event
@@ -94,13 +102,15 @@ To retrieve each type that is present in the saved layout, you can utilize the `
 
 ## Allowing Types when Using IsolatedStorageProvider
 
-To allow types to be instantiated by the PersistenceFramework when working with the `IsolatedStorageProvider`, you need to pass a new PersistenceManager instance to its constructor. On it, you can utilize the AllowTypes extension method or use its AllowedTypes collection.
+To allow types to be instantiated by the PersistenceFramework when working with the `IsolatedStorageProvider`, you need to pass a new `PersistenceManager` instance to its constructor. On it, you can utilize the AllowTypes extension method or use its AllowedTypes collection.
 
 #### __[C#] Allowing types when using IsolatedStorageProvider__
 {{region persistence-framework-allowed-types-10}}
     PersistenceManager manager = new PersistenceManager()
-        .AddDockingControls()
-        .AddNavigationControls();
+        .AllowDockingControls()
+        .AllowNavigationControls();
+		
+	manager.AllowedTypes.Add(typeof(MyCustomType));
 
     IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager);
 {{endregion}}
@@ -108,8 +118,10 @@ To allow types to be instantiated by the PersistenceFramework when working with 
 #### __[VB.NET] Allowing types when using IsolatedStorageProvider__
 {{region persistence-framework-allowed-types-11}}
     Dim manager As PersistenceManager = New PersistenceManager()
-       .AddDockingControls()
-       .AddNavigationControls()
+       .AllowDockingControls()
+       .AllowNavigationControls()
+	   
+	manager.AllowedTypes.Add(GetType(MyCustomType))
        
     Dim isoProvider As IsolatedStorageProvider = New IsolatedStorageProvider(manager)
 {{endregion}}

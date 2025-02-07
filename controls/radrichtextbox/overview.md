@@ -145,3 +145,4 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
  * [Getting Started]({%slug radrichtextbox-getting-started%})
  * [Events]({%slug radrichtextbox-events-overview%})
  * [Styles and Templates]({%slug radrichtextbox-styles-and-tempaltes-overview%})
+ * [Useful Security Tips]({%slug security-tips%})

@@ -22,7 +22,7 @@ The easiest way to get the controls to your development machine is to use the [P
 
 >caption Figure 1: Download automated (.msi) installer
 
-![Download automated installer Telerik_UI_for_WPF_<version>_Dev.msi](images/download-msi.png "Telerik_UI_for_WPF_<version>_Dev.msi")
+![Download automated installer Telerik_UI_for_WPF_<version>_Dev.msi](images/download-msi.png")
 
 > If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/try/ui-for-wpf) and the same options will apply to you as well.
 

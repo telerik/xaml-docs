@@ -41,6 +41,10 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 	
 	![{{ site.framework_name }} Create New Project Wizard - NuGet options](images/radcontrols-for-wpf-vs-extensions-project-creation-4.png)
 
+5. The wizard validates your Telerik UI for WPF license and lets you download a new [license key file](%slug installing-license-key%) if one such is not found.
+
+	![Create New Project Wizard license key validation error](images/radcontrols-for-wpf-vs-extensions-project-creation-6.png)
+
 You can also start the Telerik's __Create New Project Wizard__ (see step 2) from the Visual Studio's New Project Wizard.
 
 __Visual Studio New Project Wizard__  

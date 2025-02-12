@@ -50,7 +50,7 @@ Below is the full control list of native WPF controls supported by the Telerik t
 
 Additionally, there are two more controls part of the Telerik UI for WPF suite which mimic the WPF native [Label](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.label?view=netframework-4.5) and [GroupBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.groupbox?view=netframework-4.5). There are no styles for the native versions of those controls. The reason behind this decision is a legacy related to the Silverlight framework (now outdated), which shared a common codebase with WPF. In the Silverlight framework there wasn't native Label and GroupBox controls so they were created in the Telerik suite in order to provide them to the Silverlight users and also to enable the theming support.
 
-* `Telerik.Windows.Controls.`Label`
+* `Telerik.Windows.Controls.Label`
 
 * `Telerik.Windows.Controls.GroupBox`
 

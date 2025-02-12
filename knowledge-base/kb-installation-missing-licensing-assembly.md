@@ -28,7 +28,7 @@ res_type: kb
 
 An error occurs after upgrade that the `Telerik.Licensing.Runtime` assembly cannot be found. The error message is something like this:
 
-`Unknown build error, 'Could not find assembly 'Telerik.Licensing.Runtime, Version=1.4.6.0, Culture=neutral, PublicKeyToken=tokenhere'. Either explicitly load this assembly using a method such as LoadFromAssemblyPath() or use a MetadataAssemblyResolver that returns a valid assembly.'
+`Unknown build error, 'Could not find assembly 'Telerik.Licensing.Runtime, Version=1.4.6.0, Culture=neutral, PublicKeyToken=tokenhere'. Either explicitly load this assembly using a method such as LoadFromAssemblyPath() or use a MetadataAssemblyResolver that returns a valid assembly.`
 
 This may happen if you upgrade to 2025 Q1 from an older version. With 2025 Q1, a new [licensing mechanism]({%slug installing-license-key%}) was introduced, which requires you to reference the `Telerik.Licensing.Runtime` dll.
 

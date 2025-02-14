@@ -35,6 +35,12 @@ To do this, you can subscribe to the MouseLeftButtonDown event of RadImageEditor
 
 #### __[C#]__
 {{region kb-imageeditor-get-clicked-image-point-0}}
+	 public MainWindow()
+	 {
+     		InitializeComponent();
+     		this.imageEditor.AddHandler(RadImageEditor.MouseLeftButtonDownEvent, new MouseButtonEventHandler(imageEditor_MouseLeftButtonDown), true);
+ 	}
+  
 	private void imageEditor_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
 	{
 		var image = e.OriginalSource as Image;

@@ -81,15 +81,19 @@ In order to display an icon inside __RadDesktopAlert__ the __Icon__ property sho
 #### __[C#] Example 4: Setting Icon__
 {{region cs-raddesktopalert-features-key-properties_3}}
 	var alert = new RadDesktopAlert();
-	alert.Icon = new Image { Source = Application.Current.FindResource("DesktopAlertIcon") as ImageSource, Width = 48, Height = 48 };
+ 	// the "DesktopAlertIcon" in the example below points to a Telerik's ImageSource resource defined in the XAML, similar to this: <ImageSource x:Key="DesktopAlertIcon">pack://application:,,,/Telerik.Windows.Controls.Navigation;component/Themes/Images/DesktopAlertIconFlatBlack.png</ImageSource>
+ 	ImageSource icon = Application.Current.FindResource("DesktopAlertIcon") as ImageSource;
+	alert.Icon = new Image { Source = icon, Width = 48, Height = 48 };
 {{endregion}}
 
 #### __[VB.NET] Example 4: Setting Icon__
 {{region vb-raddesktopalert-features-key-properties_3}}
 	Dim alert = New RadDesktopAlert()
+ 	'the "DesktopAlertIcon" in the example below points to a Telerik's ImageSource resource defined in the XAML, similar to this: <ImageSource x:Key="DesktopAlertIcon">pack://application:,,,/Telerik.Windows.Controls.Navigation;component/Themes/Images/DesktopAlertIconFlatBlack.png</ImageSource>
+  	Dim icon = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource)
 	alert.Icon = New Image() With
 	{
-	    .Source = TryCast(Application.Current.FindResource("DesktopAlertIcon"), ImageSource),
+	    .Source = icon,
 	    .Width = 48,
 	    .Height = 48
 	}

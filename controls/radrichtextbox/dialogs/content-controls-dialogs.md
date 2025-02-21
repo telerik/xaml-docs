@@ -14,11 +14,9 @@ This dialog allows you to edit the properties of the [content controls]({%slug r
 
 ![An image showing the content controls properties dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-content-controls-0.png)
 
-The dialog can be opened from the __Properties__ button in the __Developer__ tab of the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}) or via the in the same option in the right-click menu (context menu) of `RadRichTextBox`.
+The dialog can be opened from the __Properties__ button in the __Developer__ tab of the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
 
 ![An image showing the button that opens the content controls properties dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-content-controls-1.png)
-
-![An image showing the context menu that opens the content controls properties dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-content-controls-2.png)
 
 ## Showing the Dialog Manually
 

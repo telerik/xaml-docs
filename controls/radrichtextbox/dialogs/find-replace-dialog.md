@@ -12,7 +12,7 @@ position: 1
 
 The find and replace dialog allows you find text and replace it if needed.
 
-![An image showing the find and replace dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-find-replace-0,png)
+![An image showing the find and replace dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-find-replace-0.png)
 
 The dialog can be opened from the __Find/Replace__ button in the __Home__ tab of the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
 

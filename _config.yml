@@ -632,6 +632,9 @@ navigation:
     controls/radrichtextbox/features:
         title: Features
         position: 6
+    controls/radrichtextbox/dialogs:
+        title: Dialogs
+        position: 6
     controls/radrichtextbox/features/shapes:
         title: Shapes
     controls/radrichtextbox/features/content-controls:

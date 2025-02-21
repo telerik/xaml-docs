@@ -12,11 +12,11 @@ position: 1
 
 This allows you to insert and edit [bookmarks]({%slug radrichtextbox-features-document-elements-bookmarks%}) in the document.
 
-![An image showing the bookmarks dialog of RadRichTextBox for WPF](images/radrichtextbox-dialogs-bookmarks-0.png)
+![An image showing the bookmarks dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-bookmarks-0.png)
 
 The dialog can be opened from the __Bookmark__ button in the __Insert__ tab of the [RadRichTextBoxRibbonUI]({%slug radrichtextbox-features-radrichtextboxribbonui%}).
 
-![An image showing the button that opens the bookmarks dialog of RadRichTextBox for WPF](images/radrichtextbox-dialogs-bookmarks-1.png)
+![An image showing the button that opens the bookmarks dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-bookmarks-1.png)
 
 ## Showing the Dialog Manually
 

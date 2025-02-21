@@ -20,7 +20,7 @@ The insert bibliographic dialog can be opened from the __Add New Source__ option
 
 The manage bibliographic references can be opened with the __Manage Sources__ button.
 
-![An image showing the button that opens the bibliographic references dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-hyperlink-2.png)
+![An image showing the button that opens the bibliographic references dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-bibliographic-sources-2.png)
 
 ## Showing the Dialog Manually
 

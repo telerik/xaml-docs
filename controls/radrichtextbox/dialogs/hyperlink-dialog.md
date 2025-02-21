@@ -18,7 +18,7 @@ The dialog can be opened from the __Hyperlink__ button in the __Insert__ tab of 
 
 ![An image showing the button that opens the hyperlink dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-hyperlink-1.png)
 
-![An image showing the context menu that opens the hyperlink dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-hyperlink-2.png)
+![An image showing the context menu that opens the hyperlink dialog of RadRichTextBox for WPF](images/richtextbox-dialogs-hyperlink-3.png)
 
 ## Showing the Dialog Manually
 

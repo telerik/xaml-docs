@@ -42,7 +42,7 @@ Below is the full control list of native WPF controls supported by the Telerik t
 
 * `System.Windows.Documents.Hyperlink`
 
-* `System.Windows.Controls.Primitives.__StatusBar`
+* `System.Windows.Controls.Primitives.StatusBar`
 
 * `System.Windows.Controls.GridSplitter`
 

@@ -5,7 +5,7 @@ description: Check our &quot;Breaking Changes&quot; documentation article for th
 slug: dragdropmanager-changes-and-backward-compatibility
 tags: changes, compatibility, breaking changes
 published: True
-position: 1
+position: 4
 ---
 
 # Breaking Changes

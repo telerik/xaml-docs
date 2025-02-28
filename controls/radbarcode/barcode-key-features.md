@@ -51,8 +51,8 @@ __Example 1__ shows a RadBarcode with the Code39 symbology applied.
 
 RadBarcode provides three sizing modes that will help you fine-tune the rendering of your codes:
 
-* __Manual__: You could define the size of the smallest line or dot of the code through the Module property and the other lines and dots multiply that size. Module property is measured in device pixels;
-* __Snap__: The code is stretched to the available size, but each line or dot is drawn with exact number of pixels so they look sharp;
+* __Manual__: You could define the size of the smallest line or dot of the code through the Module property and the other lines and dots multiply that size. Module property is measured in device pixels.
+* __Snap__: The code is stretched to the available size, but each line or dot is drawn with exact number of pixels so they look sharp. If the number of bars is greater than the pixel width of the barcode, the barcode won't get rendered to avoid wrong visualization.  
 * __Stretch__: The code is stretched in such a way to fit exactly the available size, each line or dot size is calculated so they snap to the device pixels. In order the lines to stay sharp and stretch the barcode to the available size, some of them are slightly thicker than others.
 
 __Example 2__ shows the same Barcode with Manual SizingMode:

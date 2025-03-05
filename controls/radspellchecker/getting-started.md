@@ -14,9 +14,17 @@ __RadSpellChecker__ is a control that allows you to spellcheck a number of contr
 
 >tip__RadRichTextBox__ has a built-in spell checker (RadDocumentSpellChecker) that provides similar functionality and the benefit of underlining the incorrect words with a red curly line. If you would like to use __RadSpellChecker__ instead of the default spell checker you should disable the document spell checker by setting the property __IsSpellCheckingEnabled__ = ”False”. This can be done, for example, in order to create a similar look of the RadRichTextBoxes and the TextBoxes in your application.
 
-## Using RadSpellChecker with TextBox, RichTextBox or RadRichTextBox
+## Adding Telerik Assemblies Using NuGet
 
-In order to use __RadSpellChecker__ in your project, you need to add a reference to the following assemblies: 
+To use __RadSpellChecker__ when working with NuGet packages, install the `Telerik.Windows.Documents.Proofing.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
@@ -28,14 +36,6 @@ In order to use __RadSpellChecker__ in your project, you need to add a reference
 * __Telerik.Windows.Documents.Core__
 * __Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml__
 
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadSpellChecker__ when working with NuGet packages, install the `Telerik.Windows.Documents.Proofing.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
-
 After adding reference to the aforementioned dlls, you can use the static class RadSpellChecker and its Check(Control controlToSpellCheck, SpellCheckingMode mode) method.
 
 #### __C#__
@@ -46,8 +46,6 @@ After adding reference to the aforementioned dlls, you can use the static class 
 	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.WordByWord);
 	}
 {{endregion}}
-
-
 
 For the RadSpellChecker to work properly there is just one more thing you need to provide: a class deriving from RadDictionary which loads a .TDF file containing a dictionary for a specific language. Such a class is defined in “__Telerik.Windows.Documents.Proofing.Dictionaries.En-US__” included in Telerik UI. It contains a dictionary you can use in order to spell check in English. If you reference it in your project, it will be loaded automatically by MEF. 
 

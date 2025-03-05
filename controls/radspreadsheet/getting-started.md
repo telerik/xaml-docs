@@ -22,9 +22,17 @@ It contains the following sections:
 
 * [Open/Save Documents](#opensave-documents)
 
-## Assembly References
+## Adding Telerik Assemblies Using NuGet
 
-The assemblies that contain the implementation of __RadSpreadsheet__ and must be referenced in order to use the control are:
+To use __RadSpreadsheet__ when working with NuGet packages, install the `Telerik.Windows.Controls.Spreadsheet.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
         
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls.dll__
@@ -35,8 +43,6 @@ The assemblies that contain the implementation of __RadSpreadsheet__ and must be
 * __Telerik.Windows.Data.dll__
 * __Telerik.Windows.Documents.Core.dll__
 * __Telerik.Windows.Documents.Spreadsheet.dll__
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 For export and import to __XLSX__:
 
@@ -53,12 +59,6 @@ If you want to use the sample UI provided in our demos you should add this refer
 
 * __Telerik.Windows.Controls.RibbonView.dll__
 {% if site.site_name == 'WPF' %}* __Telerik.Windows.Controls.SpreadsheetUI.dll__{% endif%}
-
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadSpreadsheet__ when working with NuGet packages, install the `Telerik.Windows.Controls.Spreadsheet.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Namespaces
 

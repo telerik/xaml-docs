@@ -12,22 +12,22 @@ position: 1
 
 This topic will walk you through the creating of __RadTimeline__.    
 
-## Assembly References
+## Adding Telerik Assemblies Using NuGet
 
-In order to use __RadTimeline__ control in your project you have to add references to the following assemblies:
+To use __RadTimeline__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls.dll__
 * __Telerik.Windows.Controls.DataVisualization.dll__
 * __Telerik.Windows.Data.dll__
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadTimeline__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadTimeline to the Project
 

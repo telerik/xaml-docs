@@ -18,6 +18,14 @@ This tutorial will walk you through the creation of a sample application that co
 
 As of version __2013 Q3 SP1__ we have added support for __EntityFramework 6.0__. You will need to reference the __Telerik.Windows.Controls.EntityFramework60__ assembly, rather than the __Telerik.Windows.Controls.EntityFramework__ one in order for this to work.
 
+## Adding Telerik Assemblies Using NuGet
+
+To use __RadEntityFrameworkDataSource__ when working with NuGet packages, install the `Telerik.Windows.Controls.EntityFramework.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
 ## Creating the WPF Application
 
 1. Note that __RadEntityFrameworkDataSource__ is built on top of the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/ef/ef6/). Basic Entity Framework experience is required for working with __RadEntityFrameworkDataSource__.
@@ -60,14 +68,6 @@ Now let's go to the client side.
 * __Telerik.Windows.Controls.Input__ (mandatory for __RadGridView__)
 
 * __Telerik.Windows.Data__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadEntityFrameworkDataSource__ when working with NuGet packages, install the `Telerik.Windows.Controls.EntityFramework.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 **2.** Now add the __RadGridView__ and __RadEntityFrameworkDataSource__ controls to the main window. **Example 1** demonstrates how you can do that.
 

@@ -12,9 +12,17 @@ position: 2
 
 This tutorial will walk you through the creation of a sample application that contains `RadWebCam`.
 
-## Assembly References
+## Adding Telerik Assemblies Using NuGet
 
-In order to use `RadWebCam`, you will need to add references to the following assemblies:
+To use `RadWebCam` when working with NuGet packages, install the `Telerik.Windows.Controls.Media.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
@@ -24,8 +32,6 @@ In order to use `RadWebCam`, you will need to add references to the following as
 * __MediaFoundation__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/MediaFoundation* folder.
 * [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/2.88.6) (version 2.88.6).
 
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
 For __.NET 6__ and later you will need to install also the `System.Drawing.Common` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
@@ -33,12 +39,6 @@ You can find the required assemblies for each control from the suite in the [Con
 >important With the 2024 Q4 release the __SharpDX__ library used for the rendering of the camera's video feed was replaced with the __SkiaSharp__ library. This was necessary because after March 2019, [SharpDX is no longer maintained](https://github.com/sharpdx/SharpDX).
 
 > RadWebCam uses Microsoft [Media Foundation](https://docs.microsoft.com/en-us/windows/win32/medfound/about-the-media-foundation-sdk) which requires a __minimum OS version of Windows Vista or later__. Also, some versions of Windows 7 don't have the __Media Feature Package__ installed, so you may need to install it separately.
-
-### Adding Telerik Assemblies Using NuGet
-
-To use `RadWebCam` when working with NuGet packages, install the `Telerik.Windows.Controls.Media.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Setting up the Control
 

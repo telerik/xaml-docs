@@ -14,7 +14,15 @@ This article will demonstrate a basic implementation of the DragDropManager by d
 
 >To learn how to use the DragDropManager in a more MVVM-friendly matter though commands, have a look at the "DragDrop Using Commands" demo from our [SDK Samples Browser](https://github.com/telerik/xaml-sdk/). The source code of the demo is also available in our [GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DragDrop/DragDropUsingCommands).
 
-## Adding Assembly References
+## Adding Telerik Assemblies Using NuGet
+
+To use `DragDropManager` when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
 
 In order to use the `DragDropManager` API you need to add a reference to the following assemblies:
 
@@ -22,14 +30,6 @@ In order to use the `DragDropManager` API you need to add a reference to the fol
 * __Telerik.Windows.Controls__
 
 The required Telerik assemblies can be added using one of the available [installation approaches]({%slug installation-installing-which-file-do-i-need%}). 
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
-
-To use `DragDropManager` when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Using the DragDropManager Events
 

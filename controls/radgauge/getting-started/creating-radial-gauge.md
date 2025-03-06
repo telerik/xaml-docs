@@ -17,21 +17,21 @@ One of the gauges you can create with the __RadGauge__ control, is a radial gaug
 * [Defining an Indicator](#defining-an-indicator)
 * [Set Indicator's Position](#set-indicators-position)
 
-## Assembly References
-
-In order to use the __RadGauge__ control in your projects, you have to add references to the following assemblies:
-
-* __Telerik.Licensing.Runtime__
-* __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.DataVisualization__
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
+## Adding Telerik Assemblies Using NuGet
 
 To use __RadGauge__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
 Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.DataVisualization__
 
 ## Defining a RadialGauge with a RadialScale
 

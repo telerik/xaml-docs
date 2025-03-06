@@ -21,9 +21,17 @@ Start Visual Studio 2019 (or newer), select "Create a new project" and choose WP
 #### __Figure 1: WPF .NET Application__
 ![{{ site.framework_name }} (.NET Core) Application](images/entityframeworkcoredatasource-create-new-project.png)
 
-## Adding References
+## Adding Telerik Assemblies Using NuGet
 
-Before we get started, we will add the following NuGet packages.
+To use __RadEntityFrameworkCoreDataSource__ when working with NuGet packages, install the `Telerik.Windows.Controls.EntityFrameworkCore.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
 
 * __Microsoft.EntityFrameworkCore__
 * __Microsoft.EntityFrameworkCore.SqlServer__
@@ -46,14 +54,6 @@ We will also add the needed Telerik references.
 * __Telerik.Windows.Controls.GridView__
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Data__
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadEntityFrameworkCoreDataSource__ when working with NuGet packages, install the `Telerik.Windows.Controls.EntityFrameworkCore.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Xaml Usage
 

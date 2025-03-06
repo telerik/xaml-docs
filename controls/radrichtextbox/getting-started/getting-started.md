@@ -19,11 +19,25 @@ position: 0
 * [Tables, Track Changes and Document Protection](#tables-track-changes-and-document-protection)
 * [RadDocumentEditor](#raddocumenteditor)
 
-## Assembly References
+## Adding Telerik Assemblies Using NuGet
+
+To use RadRichTextBox when working with NuGet packages in __.NET Framework 4.6.2__, install the `Telerik.Windows.Documents.for.Wpf.Xaml` package. In .NET Framework 4.6.2 you will need to install packages also for the format providers and the RichTextBoxUI component. In .NET 6 these components are merged in the RichTextBox package mentioned below.
+
+To use RadRichTextBox when working with NuGet packages in __.NET 6__ and later, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml` package. 
+
+The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+, you can add a reference to the following assemblies:
 
 >The references required to use RadRichTextBox in __.NET__ 6 or later projects have been united. Check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
 
-The minimal set of references you need to have in your application in order to have a RadRichTextBox are as follows:
+If you are not using NuGet packages, you can add a reference to the required assemblies manually. The minimal set of references you need to have in your application in order to have a RadRichTextBox are as follows:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
@@ -32,8 +46,6 @@ The minimal set of references you need to have in your application in order to h
 * __Telerik.Windows.Documents.Core__
 * __System.ComponentModel.Composition__
 * __System.Drawing.Common NuGet package__&mdash;Required only for __.NET 6__ and later and only if the Telerik assemblies are referenced manually in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
 
@@ -60,16 +72,6 @@ The default en-US dictionary for SpellChecking is located in:
 * __Telerik.Windows.Documents.Proofing.Dictionaries.En-US__.
 
 >In order to be able to __copy/paste rich text__ from desktop applications, you have to add references to __Telerik.Windows.Documents.FormatProviders.Rtf__ and __Telerik.Windows.Documents.FormatProviders.Html__.
-
-### Adding Telerik Assemblies Using NuGet
-
-To use RadRichTextBox when working with NuGet packages in __.NET Framework 4.6.2__, install the `Telerik.Windows.Documents.for.Wpf.Xaml` package. In .NET Framework 4.6.2 you will need to install packages also for the format providers and the RichTextBoxUI component. In .NET 6 these components are merged in the RichTextBox package mentioned below.
-
-To use RadRichTextBox when working with NuGet packages in __.NET 6__ and later, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml` package. 
-
-The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Adding RadRichTextBox to the Project
 

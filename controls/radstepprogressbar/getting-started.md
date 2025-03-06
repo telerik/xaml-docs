@@ -16,22 +16,22 @@ The following picture shows the final result produced by the code of this tutori
 
 ![{{ site.framework_name }} RadStepProgressBar Overview](images/stepprogressbar-getting-started-0.png)
 			
-## Assembly References
+## Adding Telerik Assemblies Using NuGet
 
-In order to use __RadStepProgressBar__, you will need to add references to the following assemblies:
+To use __RadStepProgressBar__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
 
 You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadStepProgressBar__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Defining RadStepProgressBar
 

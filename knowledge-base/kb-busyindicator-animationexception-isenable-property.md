@@ -84,11 +84,11 @@ The complete stacktrace is the following:
 
 ## Solution
 
-To work this around, extract and modify the ControlTemplate of RadBusyIndicator.
+To work this around, extract and [modify the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of RadBusyIndicator.
 
 The exact modification is to replace the `ObjectAnimationUsingKeyFrames` that animates the `(Control.IsEnabled)` property.
 
-```xml
+```xaml
 	<BooleanAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.001" Storyboard.TargetName="Content" Storyboard.TargetProperty="(Control.IsEnabled)">
 		<DiscreteBooleanKeyFrame KeyTime="00:00:00">
 			<DiscreteBooleanKeyFrame.Value>

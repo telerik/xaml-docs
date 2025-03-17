@@ -40,9 +40,17 @@ There are four __RadMaskedInput__ controls that you can use in order to further 
 
 * [RadMaskedDateTimeInput]({%slug radmaskedinput-features-controls-datetime%}) - the control is used to display __DateTime__ values. This is why its __Value__ property is of type __System.DateTime?__.					
 
-## Declare RadMaskedInput controls
+## Adding Telerik Assemblies Using NuGet
 
-In order to use the __RadMaskedInput__ control in your projects you have to add references to the following assemblies:
+To use __RadMaskedInput__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
@@ -51,15 +59,7 @@ In order to use the __RadMaskedInput__ control in your projects you have to add 
 
 You can find more info [here]({%slug installation-installing-controls-dependencies-wpf%}).
 
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
-
-### Adding Telerik Assemblies Using NuGet
-
-To use __RadMaskedInput__ when working with NuGet packages, install the `Telerik.Windows.Controls.Input.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
-
-After adding references to the aforementioned dlls, you can declare a new __RadMaskedInput__ control as any normal {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control.				
+After adding the NuGet package or manually referencing the assemblies, you can declare a new __RadMaskedInput__ control as any normal {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} control.				
 
 #### __[XAML] Example 1: Declare RadMaskedInput controls in XAML__
 {{region xaml-radmaskedinput-getting-started_0}}

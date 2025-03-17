@@ -15,9 +15,17 @@ Telerik __RadDiagrams__ are a powerful diagramming framework that can bring to l
 #### __Figure 1: Flow diagram example__  
 ![Rad Diagram Getting Started Sample](images/RadDiagram_GettingStartedSample.png)
 
-## Assembly References
+## Adding Telerik Assemblies Using NuGet
 
-In order to use the __Telerik Diagramming Framework__ in your projects, you have to add references to the following assemblies:
+To use `RadDiagram` when working with NuGet packages, install the `Telerik.Windows.Controls.Diagrams.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+
+Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
+## Adding Assembly References Manually
+
+If you are not using NuGet packages, you can add a reference to the following assemblies:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
@@ -25,11 +33,10 @@ In order to use the __Telerik Diagramming Framework__ in your projects, you have
 * __Telerik.Windows.Diagrams.Core__
 
 To use the RadDiagram [MVVM support]({%slug raddiagram-data-extensionsviewmodels%}) or one of the extensions tools like the [settings pane]({%slug raddiagram-extensions-settingspane-overview%}) or the [toolbox]({%slug raddiagram-extensions-toolbox%}) you will need to add reference also to the following assemblies:
+
 * __Telerik.Windows.Controls.Diagrams.Extensions__ 
 * __Telerik.Windows.Controls.Input__
 * __Telerik.Windows.Controls.Navigation__
-
->tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 
 The following picture shows the interdependency between the RadDiagram main assemblies. Note that the Telerik.Windows.Controls.Diagrams.Extensions relies also on Telerik.Windows.Controls.Input and Telerik.Windows.Controls.Navigation.
 
@@ -37,12 +44,6 @@ The following picture shows the interdependency between the RadDiagram main asse
 ![Rad Diagram Getting Started Dependancies](images/RadDiagram_GettingStarted_Dependancies.png)
 
 >tip You can find more info about the __Telerik UI for WPF__ dependencies in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
-
-### Adding Telerik Assemblies Using NuGet
-
-To use `RadDiagram` when working with NuGet packages, install the `Telerik.Windows.Controls.Diagrams.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
-
-Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
 ## Graph Object Model
 

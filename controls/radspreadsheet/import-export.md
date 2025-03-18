@@ -10,7 +10,6 @@ position: 6
 
 # Import/Export
 
-
 The model of **RadSpreadsheet** enables you to easily open or save documents from the most common spreadsheet formats. This topic describes how you can use these functionalities in your application.
 
 ## Supported Formats
@@ -28,7 +27,6 @@ Here is a list of all the formats supported in **RadSpreadsheet**:
 * **Csv** (comma separated): Plain text format that saves the content of the cells in the *active* worksheet. The format strips all formatting and keeps only the result values of cells. These values are separated by a *culture dependent* delimiter.
 
 * **Txt** (tab delimited): Plain text format, which preserves only the content of the cells in the *active* worksheet. The format does not save any formatting and keeps only the result values of the cells. These values are delimited via tabs.
-
 
 ## Format Providers
 
@@ -144,7 +142,7 @@ To open or save a document with RadSpreadsheet, you can use the **Import()** and
 
 ### Using UI
 
-Through the UI of RadSpreadsheet you can enable the end user to open and save documents. Clicking the Open or Save button in the File menu of RadRSpreadsheetRibbon opens the Open/Save File dialog and lets the user to choose the file they would like to open or, respectively, the location they would like to save to.
+Through the UI of RadSpreadsheet you can enable the end user to open and save documents. Clicking the Open or Save button in the File menu of RadSpreadsheetRibbon opens the Open/Save File dialog and lets the user to choose the file they would like to open or, respectively, the location they would like to save to.
 
 #### Figure 1: Open and Save buttons in the File menu
 ![{{ site.framework_name }} RadSpreadsheet Open and Save buttons in the File menu](images/RadSpreadsheet_ImportExport_01.png)

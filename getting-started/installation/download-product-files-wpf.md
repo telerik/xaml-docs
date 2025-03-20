@@ -72,18 +72,10 @@ In versions prior Q1 2024, there is a .zip file with digitally signed version of
 
 ### Documentation
 
-This section contains the offline help documentation as well as the API Reference in the following formats: `CHM`, `Help3` and `PDF`. The documentation convers the Telerik UI for WPF and [DocumentProcessing](https://docs.telerik.com/devtools/document-processing/introduction) products.
+This section contains the offline help documentation as well as the API Reference in a `PDF` format. The documentation convers the Telerik UI for WPF and [DocumentProcessing](https://docs.telerik.com/devtools/document-processing/introduction) products.
 
-* `Telerik_UI_for_WPF_Documentation_Help3_[version].zip`
-* `Telerik_UI_for_WPF_Documentation_[version].chm`
-* `Telerik_UI_for_WPF_ApiReference_[version].chm`
 * `Telerik_UI_for_WPF_[version].pdf`
-* `Telerik_Document_Processing_Documentation_[version].chm`
-* `Telerik_Document_Processing_ApiReference_[version].chm`
-* `Telerik_Document_Processing_Documentation_Help3_[version].zip`
-* `Telerik_Document_Processing_ApiReference_Help3_[version].zip`
 * `Telerik_Document_Processing_[version].pdf`
-* `Telerik_UI_for_WPF_ApiReference_Help3_[version].zip`
 
 ### Resources
 

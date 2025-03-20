@@ -74,7 +74,7 @@ This article showcases how to display copyright attribution label for the OpenSt
         </Grid>
     {{endregion}}
 
-    __RadMap with displayed copyright attribution label__
+    __RadMap with displayed copyright attribution label when using OpenStreetMapProvider__
 
     ![RadMap with displayed copyright attribution label](images/kb-map-copyright-label-0.png)
 
@@ -84,5 +84,31 @@ This article showcases how to display copyright attribution label for the OpenSt
 
     #### __[XAML] Defining the RadMap control with an AzureMapProvider__
     {{region kb-map-copyright-label-2}}
-
+        <Grid>
+            <Grid.Resources>
+                <Style TargetType="telerik:MapScale">
+                    <Setter Property="Margin" Value="0 8 20 22" />
+                </Style>
+            </Grid.Resources>
+            <telerik:RadMap x:Name="map"
+                                ZoomLevel="7" 
+                                MinZoomLevel="4">
+                <telerik:RadMap.Provider>
+                    <telerik:AzureMapProvider SubscriptionKey="Your API key"/>
+                </telerik:RadMap.Provider>
+            </telerik:RadMap>
+            <Grid x:Name="CopyrightContainer" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                <telerik:Label Content="©2025 OSM ©2025 Microsoft Azure Maps" 
+                               FontSize="10"
+                               Padding="5 2 20 4"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Right"/>
+            </Grid>
+        </Grid>
     {{endregion}}
+
+    __RadMap with displayed copyright attribution label when using AzureMapProvider__
+
+    ![RadMap with displayed copyright attribution label when using AzureMapProvider](images/kb-map-copyright-label-1.png)
+
+>important The text used for the copyright attribution label is exemplary. For an accurate copyright attribution label, refer to the appropriate service copyright article of the provider that you are using.

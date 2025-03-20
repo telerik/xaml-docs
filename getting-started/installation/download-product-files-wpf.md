@@ -72,7 +72,7 @@ In versions prior Q1 2024, there is a .zip file with digitally signed version of
 
 ### Documentation
 
-This section contains the offline help documentation as well as the API Reference in a `PDF` format. The documentation convers the Telerik UI for WPF and [DocumentProcessing](https://docs.telerik.com/devtools/document-processing/introduction) products.
+This section contains the offline help documentation as well as the API Reference in a `PDF` format. The documentation covers the Telerik UI for WPF and [Document Processing](https://docs.telerik.com/devtools/document-processing/introduction) products.
 
 * `Telerik_UI_for_WPF_[version].pdf`
 * `Telerik_Document_Processing_[version].pdf`

@@ -34,11 +34,7 @@ Here is demonstrated how to change these properties in XAML:
 	<telerik:RadDateTimePicker StartTime="12:00" EndTime="18:00" TimeInterval="0:30"/>
 {{endregion}}
 
-
-
 >The __TimeInterval__ property is also of type __TimeSpan__. In this example you set its value to 30 minutes, this is why you need to set the __TimeInterval__ to 0:30, meaning 0 hours and 30 minutes. You can also achieve the same result in code-behind.
-
-Here is the result:
          
 ![{{ site.framework_name }} RadDateTimePicker with Custom TimeInterval](images/dateTimePicker_features_clock_items_010.png)
 
@@ -89,19 +85,12 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 	    Return times
 	End Function
 {{endregion}}
-
-Here is the result:
          
 ![{{ site.framework_name }} RadDateTimePicker with Custom ClockItemsSource](images/dateTimePicker_features_clock_items_020.png)
 
-## See Also
-
+## See Also  
  * [Overview]({%slug raddatetimepicker-overview%})
-
  * [Visual Structure]({%slug raddatetimepicke-visual-structure%})
-
  * [Date Items]({%slug raddatetimepicker-features-date-items%})
-
  * [Selection]({%slug raddatetimepicker-features-selection%})
-
  * [Formatting]({%slug raddatetimepicker-features-formatting%})

@@ -33,7 +33,13 @@ position: 20
 	Me.radMap.Provider = openStreetMap
 {{endregion}}
 
-### Setting a User-Agent
+## Attribution Copyright Label
+
+When using the OpenStreetMapProvider, you have to display an attribution copyright label to the Open Street Map services. To learn more about the accurate copyright label's content, please refer to the [OpenStreetMap Attribution Guideline](https://osmfoundation.org/wiki/Licence/Attribution_Guidelines) article.
+
+>tip To learn how to customize the RadMap to allocate space for displaying an element containing a sample attribution copyright label, check this [article]({%slug kb-map-copyright-label%}).
+
+## Setting a User-Agent
 
 The OpenStreetMapProvider class provides the option of passing a User-Agent header, which will be used in the web request for downloading the tiles from the Standard tile layer. This allows for compliance with the [OpenStreetMaps Tile Usage Policy](https://operations.osmfoundation.org/policies/tiles/). 
 

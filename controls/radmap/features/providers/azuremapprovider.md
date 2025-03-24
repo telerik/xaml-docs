@@ -33,6 +33,12 @@ __RadMap with AzureMapProvider__
 
 >If the provider’s initialization fails, the AzureMapProvider will raise its `InitializationFaulted` event. The event can be fired for example, when the internet connection is lost or when the service is unavailable. The event arguments are of type `InitializationFaultEventArgs` type. The arguments provide an `Error` property which contains the exception that is thrown while initialization.
 
+## Attribution Copyright Label
+
+When using the AzureMapProvider, you have to display an attribution copyright label to the Azure Maps services. To learn more about the accurate copyright label's content, please refer to this [article](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-show-attribution).
+
+>tip To learn how to customize the RadMap to allocate space for displaying an element containing a sample attribution copyright label, check this [article]({%slug kb-map-copyright-label%}).
+
 ## Specifying the TileSet
 
 The Azure Maps services provide a set of different map layers ([tilesets](https://learn.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tileset?tabs=HTTP#tilesetid)). The AzureMapProvider class will allow you to specify one of these raster or vector tilesets, by setting the `TileSet` property.

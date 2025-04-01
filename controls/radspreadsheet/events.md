@@ -146,10 +146,10 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
 		{ 
 			RadWorksheetEditor editor = (RadWorksheetEditor)this.radSpreadsheet.ActiveSheetEditor; 
-			editor.HyperlinkClicked += this.Editor_HyperlinkClicked;		 
+			editor.HyperlinkClicked += this.RadWorksheetEditor_HyperlinkClicked;		 
 		} 
 		
-		private void Editor_HyperlinkClicked(object sender, Telerik.Windows.Controls.Spreadsheet.Worksheets.MouseHandlers.HyperlinkClickedEventArgs e)
+		private void RadWorksheetEditor_HyperlinkClicked(object sender, Telerik.Windows.Controls.Spreadsheet.Worksheets.MouseHandlers.HyperlinkClickedEventArgs e)
 		{
 			if (e.Url.EndsWith("exe"))
 			{
@@ -169,6 +169,16 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 	{{endregion}}
 
  	The `HyperlinkClickedEventArgs` exposes also the `IsTrustedUrl` property, which can be set to `false` to prevent the url from openning.
+	
+	The cell clicked to open the hyperlink can be accessed with the `CellIndex` property of `HyperlinkClickedEventArgs`.
+	
+	#### __[C#] Accessing the CellIndex of the clicked cell__
+	{{region radspreadsheet-events_5}}			
+		private void RadWorksheetEditor_HyperlinkClicked(object sender, Telerik.Windows.Controls.Spreadsheet.Worksheets.MouseHandlers.HyperlinkClickedEventArgs e)
+		{
+			CellIndex cellIndex = e.CellIndex;
+		}
+	{{endregion}}`	
 
 >The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
 
@@ -177,7 +187,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 * `CellPropertyChanged`&mdash;Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range.
 
 	#### **[C#] Using the CellPropertyChangedEvent to show a notification when the users change the fill of a cell**
-	{{region radspreadsheet-events_5}}		
+	{{region radspreadsheet-events_6}}		
 		public void AttachToCellPropertyChangedEvent()
 		{
 		    this.radSpreadsheet.ActiveWorksheet.Cells.CellPropertyChanged += Cells_CellPropertyChanged;
@@ -193,7 +203,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 	{{endregion}}
 
 	#### **[VB.NET] Using the CellPropertyChangedEvent**
-	{{region radspreadsheet-events_6}}		
+	{{region radspreadsheet-events_7}}		
 	    Public Sub AttachToCellPropertyChangedEvent()
 	        AddHandler Me.radSpreadsheet.ActiveWorksheet.Cells.CellPropertyChanged, AddressOf Cells_CellPropertyChanged
 	    End Sub

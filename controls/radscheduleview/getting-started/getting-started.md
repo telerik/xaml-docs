@@ -12,7 +12,8 @@ position: 0
 
 This tutorial will walk you through the creation of a sample application that contains __RadScheduleView__.      
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadScheduleView to the Project](#adding-radscheduleview-to-the-project)
 * [Populating with Data](#populating-with-data)
 * [Adding ViewDefinitions](#adding-viewdefinitions)

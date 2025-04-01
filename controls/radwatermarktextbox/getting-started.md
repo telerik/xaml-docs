@@ -12,7 +12,8 @@ position: 1
 
 This tutorial will walk you through the required steps for using __RadWatermarkTextBox__. 
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Setting the WatermarkContent](#setting-watermark-content)
 
 ## Adding Telerik Assemblies Using NuGet

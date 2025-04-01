@@ -12,7 +12,8 @@ position: 0
 
 One of the gauges you can create with the __RadGauge__ control, is a radial gauge. It is represented by a circle container with a scale in it. Additionally, it can display various indicators that point to a certain value on the scale. This topic will walk you through the creation of a sample application that contains a radial RadGauge.  
 
-* [Assembly References](#assembly-references)  
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)  
 * [Defining a RadialGauge with a Radial Scale](#defining-a-radialgauge-with-a-radialscale)
 * [Defining an Indicator](#defining-an-indicator)
 * [Set Indicator's Position](#set-indicators-position)

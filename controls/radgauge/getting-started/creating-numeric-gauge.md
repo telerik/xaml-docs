@@ -12,7 +12,8 @@ position: 2
 
 One of the gauges you can create with the __RadGauge__ control, is a numeric gauge. It is represented by a container with a numerical scale in it. The numerical scale uses a numerical indicator to display the desired value. This topic will walk you through the creation of a sample application that contains a numeric RadGauge.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Defining a Numeric Gauge with a NumericScale](#defining-a-numeric-gauge-with-a-numericscale)
 * [Defining a Numeric Indicator](#defining-a-numeric-indicator)
 * [Set Indicator's Position](#set-indicators-position)

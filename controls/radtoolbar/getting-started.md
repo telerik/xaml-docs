@@ -12,7 +12,8 @@ position: 2
 
 This tutorial will walk you through the creation of a sample application that contains __RadToolBar__. 
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Add RadToolBar to the Project](#add-radtoolbar-to-the-project)
 * [Populating with Data](#populating-with-data)
 

@@ -14,7 +14,8 @@ This article explains how to add a __RadSpreadsheet__ control to a page in your 
 
 It contains the following sections:
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 
 * [Namespaces](#namespaces)
 

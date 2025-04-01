@@ -12,7 +12,8 @@ position: 2
 
 This tutorial will walk you through the creation of a sample application that contains a __RadWizard__ control.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadWizard to the Project](#adding-radwizard-to-the-project)
 * [Adding pages to RadWizard](#adding-pages-to-radwizard)
 

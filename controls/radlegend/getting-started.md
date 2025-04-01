@@ -12,7 +12,8 @@ position: 1
 
 This tutorial will walk you through the creation of a sample application that contains __RadLegend__.
 
-* [Assembly references](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Defining RadLegend and Adding Items](#defining-radlegend-and-adding-items)
 * [Customizing the Legend Items](#customizing-the-legend-items)
 * [Changing the Items Panel](#changing-the-items-panel)

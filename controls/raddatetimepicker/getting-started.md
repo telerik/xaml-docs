@@ -12,7 +12,8 @@ position: 3
 
 This tutorial will walk you through the creation of a sample application that contains RadDateTimePicker.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadDateTimePicker to the Project](#adding-raddatetimepicker-to-the-project)
 * [Working with Selected Values](#working-with-selected-values)
 * [Manually Updating the Bound Property](#manually-updating-the-bound-property)

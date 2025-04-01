@@ -12,7 +12,8 @@ position: 1
 
 This article will walk you through the creation of a sample application that contains a __RadCartesianChart3D__ component.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Defining chart and axes](#defining-chart-and-axes)
 * [Data binding](#data-binding)
 * [Setting chart size](#setting-chart-size)

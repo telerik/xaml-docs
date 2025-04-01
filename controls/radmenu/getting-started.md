@@ -12,7 +12,8 @@ position: 3
 
 This tutorial will walk you through the creation of a `RadMenu` and will show you how to:
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 
 * [Adding RadMenu](#adding-radmenu)
 

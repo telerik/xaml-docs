@@ -12,7 +12,8 @@ position: 0
 
 This tutorial will walk you through the creation of a sample application that contains __RadLinearSparkline__. The other controls from the RadSparkline suite are set up using the same principle.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Sparkline Types](#sparkline-types)
 * [Defining Sparkline](#defining-sparkline)
 * [Showing Axis](#showing-axis)

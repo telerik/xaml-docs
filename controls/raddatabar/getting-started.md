@@ -12,7 +12,8 @@ position: 1
 
 This tutorial will walk you through the required steps for using __RadDataBar__. 
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadDataBar to the Project](#adding-raddatabar-to-the-project)
 * [Displaying collection of Bars](#displaying-collection-of-bars)
 

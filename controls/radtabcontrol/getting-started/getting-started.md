@@ -12,7 +12,8 @@ position: 0
 
 This tutorial will walk you through the creation of a sample application that contains __RadTabControl__.
 
-* [Assembly references](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Defining a RadTabControl](#defining-a-radtabcontrol)
 * [Adding tabs](#adding-tabs)
 * [Adding content in the tabs](#adding-content-in-the-tabs)

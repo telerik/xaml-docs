@@ -45,6 +45,8 @@ More specifically, the GridViewDataColumn will generate a **CheckBox** for **boo
 	Me.radGridView.Columns.Add(column)
 {{endregion}}
 
+The `DataMemberBinding` property defines which property from the row's underlying data item should be used to populate the cells in the column. If the `DataMemberBinding` is not set, the column will try to fallback to the `UniqueName` property of the column (if assigned) and automatically create a binding using the unique name as the property path.
+
 Via the __DataFormatString__ property you are able to format the bound data and display it the way you want. **Figure 1** shows a **DateTime** column with custom formatting.
 
 #### __Figure 1: GridViewDataColumn with custom formatting__

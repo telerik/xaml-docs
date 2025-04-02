@@ -18,6 +18,16 @@ Currently, this section of the documentation contains only the latest release no
 
 * The Telerik UI for WPF product no longer distributes offline help documentation in the Help3 and CHM formats.
 
+#### RichTextBox
+
+* The `MouseSelectionHandler(RadDocument document)` obsolete constructor of the `MouseSelectionHandler` class was removed. Instead, use the `MouseSelectionHandler(RadDocument document, IDocumentEditorPresenter presenter)` constructor.
+  
+* The `TextInsertedEventArgs(string text, bool shouldPersist, bool shouldStartNewComposition)` obsolete constructor of the `TextInsertedEventArgs` class was removed. Instead, use the `TextInsertedEventArgs(string text, InputEvents currentEvent, ImeLanguage imeLanguage)` constructor.
+
+* The `RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)` obsolete method of the `DocumentSpellChecker` class was removed. Instead, use the `RemoveCustomDictionary(CultureInfo culture)` method.
+
+* The `TextInsertedEventArgs(string text, bool shouldPersist, bool shouldStartNewComposition)` obsolete constructor of the `TextInsertedEventArgs` class was removed. Instead, use the `TextInsertedEventArgs(string text, InputEvents currentEvent, ImeLanguage imeLanguage)` constructor.
+
 ## 2025 Q1
 
 #### Common Changes

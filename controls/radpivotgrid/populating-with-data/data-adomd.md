@@ -13,8 +13,6 @@ site_name: WPF
 
 In this article we will show how to use __AdomdDataProvider__ and use data from OLAP Cube for __RadPivotGrid__.
 
->cautionWith the current release RadPivotGrid supports only Microsoft.AnalysisServices.AdomdClient version 10.0. After installing it, you will find the Microsoft.AnalysisServices.AdomdClient.dll under C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\100.
-
 ## ADOMD.NET
 
 __ADOMD.NET__ is a Microsoft .NET Framework data provider that is designed to communicate with Microsoft SQL Server Analysis Services. __ADOMD.NET__ uses the XML for Analysis protocol to communicate with analytical data sources. More information about ADOMD can be found [here](http://msdn.microsoft.com/en-us/library/ms123483(v=sql.90).aspx).   

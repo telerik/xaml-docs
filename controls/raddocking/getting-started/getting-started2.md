@@ -12,7 +12,8 @@ position: 0
 
 This tutorial will walk you through the creation of a sample application that contains the __RadDocking__ control. 
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadDocking to the Project](#adding-raddocking-to-the-project)
 * [Adding DocumentHost, RadSplitContainer, RadPaneGroup and RadPanes](#adding-documenthost-radsplitcontainer-radpanegroup-and-radpanes)
 * [Header, Content, CanFloat of RadPane](#header-content-canfloat-of-radpane)

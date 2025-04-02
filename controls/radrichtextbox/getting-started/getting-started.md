@@ -12,7 +12,8 @@ position: 0
 
 `RadRichTextBox` is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:      
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadRichTextBox to the Project](#adding-radrichtextbox-to-the-project)
 * [Using the predefined UI of RadRichTextBox](#using-the-predefined-ui-of-radrichtextbox)
 * [Showing a Document in RadRichTextBox](#showing-a-document-in-radrichtextbox)

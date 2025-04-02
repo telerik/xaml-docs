@@ -12,7 +12,8 @@ position: 2
 
 This tutorial will walk you through the creation of a sample application that contains __RadPanelBar__. 
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadPanelBar to the Project](#adding-radpanelbar-to-the-project)
 * [Declaratively populating the RadPanelBar control Items collection](#declaratively-populating-the-radpanelbar-control-items-collection)
 * [Databinding the RadPanelBar control](#databinding-the-radpanelbar-control)

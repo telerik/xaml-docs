@@ -12,7 +12,8 @@ position: 1
 
 One of the gauges you can create with the __RadGauge__ control, is a linear gauge. It is represented by a rectangular container with a linear scale in it. Additionally, it can display various indicators that point to a certain value on the scale. This topic will walk you through the creation of a sample application that contains a linear RadGauge.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Defining a Linear Gauge with a Linear Scale](#defining-a-linear-gauge-with-a-linear-scale)
 * [Defining an Indicator](#defining-an-indicator)
 * [Set Indicator's Position](#set-indicators-position)

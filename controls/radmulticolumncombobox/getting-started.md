@@ -12,7 +12,8 @@ position: 3
 
 This tutorial will walk you through the required steps for using __RadMultiColumnComboBox__. 
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadMultiColumnComboBox to the Project](#adding-radmulticolumncombobox-to-the-project)
 
 ## Adding Telerik Assemblies Using NuGet

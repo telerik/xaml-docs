@@ -12,7 +12,8 @@ position: 1
 
 This tutorial will walk you through the creation of a sample application that contains __RadAutoCompleteBox__.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Add RadAutoCompleteBox to the Project](#add-radautocompletebox-to-the-project)
 * [Populate with Data](#populate-with-data)
 * [Customize the Control](#customize-the-control)

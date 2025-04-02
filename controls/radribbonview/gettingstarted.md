@@ -14,7 +14,8 @@ This tutorial will walk you through the creation of a sample application that co
 
 >important Before reading this tutorial you should get familiar with the [visual]({%slug radribbonview-visual-structure%}) and [functional]({%slug radribbonview-functional-structure%}) structure of the control.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Defining a RadRibbonView](#defining-a-radribbonview)
 * [Adding Ribbon Tabs](#adding-ribbon-tabs)
 * [Adding Content in the Ribbon Tabs](#adding-content-in-the-ribbon-tabs)

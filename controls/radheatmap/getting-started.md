@@ -12,7 +12,8 @@ position: 1
 
 This tutorial will walk you through the creation of a sample application that contains __RadHeatMap__ with a categorical definition.
 
-* [Assembly references](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Setting up the Data](#setting-up-the-data)
 * [Setting up the Control](#setting-up-the-control)
 * [Colorization](#colorization)

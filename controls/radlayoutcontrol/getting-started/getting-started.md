@@ -12,7 +12,8 @@ position: 1
 
 This tutorial will walk you through the creation of a sample application that contains __RadLayoutControl__.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Defining a RadLayoutControl](#defining-a-radlayoutcontrol)
 * [Adding Items in the Control](#adding-items-in-the-control)
 * [Layout Groups](#layout-groups)

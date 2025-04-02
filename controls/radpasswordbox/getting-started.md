@@ -12,7 +12,8 @@ position: 1
 
 This tutorial will walk you through the creation of a sample application that contains __RadPasswordBox__.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 * [Adding RadPasswordBox to the Project](#adding-radpasswordbox-to-the-project)
 * [Setting Watermark](#setting-watermark)
 

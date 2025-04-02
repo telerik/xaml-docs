@@ -12,7 +12,8 @@ position: 1
 
 The __RadTransitionControl__ derives from __ContentControl__ and its purpose is to visualize some content (__UserControls__, __UIElements__, __Data__ etc). Additionally it can apply transition effects upon changing its content. This tutorial will help you get started with the RadTransitionControl basics.
 
-* [Assembly References](#assembly-references)
+* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
+* [Adding Assembly References Manually](#adding-assembly-references-manually)
 
 * [Add a RadTransitionControl to your application](#add-a-radtransitioncontrol-to-your-application)
 

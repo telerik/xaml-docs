@@ -450,7 +450,7 @@ The following example shows how to register your custom element's Type:
 	DiagramConstants.AllowedSerializationTypes.Add(GetType(MyCustomShape))
 {{endregion}}
 
-If the custom elements are defined in a separate assembly, the RadDiagram control provides the option to register it. This is done via the `SafeSerializationAssemblies` collection of the `DiagramContants` class. This collection is of the type of `Dictionary&lt;string, string&gt;` where the key is the name of the registered assembly and value is the `PublicKeyToken`. Setting a public key token is optional.
+If the custom elements are defined in a separate assembly, the RadDiagram control provides the option to register it. This is done via the `SafeSerializationAssemblies` collection of the `DiagramContants` class. This collection is of the type of Dictionary&lt;string, string&gt; where the key is the name of the registered assembly and value is the `PublicKeyToken`. Setting a public key token is optional.
 
 #### __[C#] Registring an assembly that contains the custom elements types without public key token__
 {{region raddiagrams=features-serialization-20}}

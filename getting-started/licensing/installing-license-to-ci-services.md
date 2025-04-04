@@ -51,7 +51,7 @@ The recommended approach for providing your license key to the `Telerik.Licensin
 	#### __[YML]__
 	{{region installing-license-to-ci-services-0}}
 		env:
-			TELERIK_LICENSE: ${{ secrets.TELERIK_LICENSE }}
+			TELERIK_LICENSE: ${{ "{{ secrets.TELERIK_LICENSE }}" }}
 	{{endregion}}
 
 ## See Also  

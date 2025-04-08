@@ -8,7 +8,7 @@ published: True
 position: 9
 ---
 
-## EmptyText 
+# EmptyText 
 
 The __EmptyText__ property allows you to specify a string that will be shown when there is no selection. 
 

@@ -10,9 +10,9 @@ position: 1
 
 # Telerik UI for WPF First Steps with Visual Studio Extensions
 
-This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
+This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly. The topic shows what is the lifecycle when using the Telerik Visual Studio Extension.
 
-The topic shows what is the lifecycle when using the Telerik Visual Studio Extension. As an alternative, you can use [NuGet packages]({%slug nuget-setup-lifecycle%}).
+> Note that the recommended installation approach is to use the [Telerik NuGet packages]({%slug nuget-installation%})
 
 ## Downloading the Extension
 
@@ -20,7 +20,7 @@ To download the Telerik Visual Studio Extenion, you can either download the `.ms
 
 __Download automated (.msi) installer__  
 
-![Download automated installer Telerik_UI_for_WPF_<version>_Dev.msi](images/download-msi.png")
+![Download automated installer Telerik_UI_for_WPF_<version>_Dev.msi](images/download-msi.png)
 
 If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/try/ui-for-wpf) and the same options will apply to you as well.
 
@@ -38,7 +38,7 @@ The Visual Studio Extensions can be accessed through the Extensions | Telerik | 
 
 	__Go to Telerik > Telerik  UI for WPF > Create New Telerik Project__  
 	
-	![Run Create Project Wizard](../integration/visual-studio-extensions/images/VSExtentions_WPF_OverviewMenuCreate.png)
+	![Run Create Project Wizard](../../integration/visual-studio-extensions/images/VSExtentions_WPF_OverviewMenuCreate.png)
 	
 	__Creating new Telerik application__  
 	
@@ -183,8 +183,6 @@ Now that you have prepared the needed sample data, you need to bind it to each c
 {{endregion}}
 
 Run the project and you should see something like this:
-
-__The final result__  
 
 ![Main window with RadGridView](images/main-window-with-radgridview.png "Main window with RadGridView")
 

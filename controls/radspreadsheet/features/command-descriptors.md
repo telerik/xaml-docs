@@ -8,6 +8,8 @@ published: True
 position: 0
 ---
 
+# Command Descriptors
+
 ## Default Command Descriptors
 
 __RadSpreadsheet__'s command descriptors are wrappers of its predefined set of commands. They were introduced as a way to easily enable/disable the commands based on the current document state. This comes in handy in the creation of UI for the RadSpreadsheet such as a ribbon, context menu, etc.

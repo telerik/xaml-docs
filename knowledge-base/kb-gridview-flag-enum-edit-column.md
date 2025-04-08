@@ -10,9 +10,9 @@ res_type: kb
 
 ## Environment
 
-| Product | RadGridView for WPF |
-| ------- | ------------------- |
-| Version | 2022.2.511         |
+| Product | Version |
+| --- | --- |
+| RadGridView for WPF | 2022.2.511 |
 
 ## Description
 

@@ -26,13 +26,12 @@ How to obtain a reference to the underlying GridViewRow data model on mouse over
 
 Subscribe to the __MouseEnter__ event of the GridViewRow elements. To do this, you can use the __RowLoaded__ and __RowUnloaded__ events of RadGridView as shown in __Examples 1 and 2__.
 
-#### __[XAML] Example 1: Add handlers for RowLoaded and RowUnloaded__
+#### __[XAML] Add handlers for RowLoaded and RowUnloaded__
 {{region xaml-kb-gridview-howto-get-item-on-mouseover-0}}
-
-   <telerik:RadGridView RowLoaded="RadGridView_RowLoaded" RowUnloaded="RadGridView_RowUnloaded"/>
+	<telerik:RadGridView RowLoaded="RadGridView_RowLoaded" RowUnloaded="RadGridView_RowUnloaded"/>
 {{endregion}}
 
-#### __[C#] Example 2: Add MouseEnter event handler and access the hovered item__
+#### __[C#] Add MouseEnter event handler and access the hovered item__
 {{region cs-kb-gridview-howto-get-item-on-mouseover-1}}
 
    private object hoveredRowModel;
@@ -60,6 +59,5 @@ Subscribe to the __MouseEnter__ event of the GridViewRow elements. To do this, y
     } 
 {{endregion}}
 
-## See Also
-
+## See Also  
 * [RadGridView Getting Started]({%slug gridview-getting-started2%})

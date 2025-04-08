@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-## Customizing Drag and Drop 
+# Customizing Drag and Drop 
 
 The drag/drop operations in RadTreeView can be customized using the control's API or the DragDropManager.
 

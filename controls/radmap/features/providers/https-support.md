@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-## Https Support
+# Https Support
 
 All built-in providers like Bing and ArcGIS are using the HTTP protocol when constructing the web URLs used to download the map tile images.
 

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-## Tiles Cache
+# Tiles Cache
 
 RadMap allows you to cache the tile images downloaded by the map provider.
 

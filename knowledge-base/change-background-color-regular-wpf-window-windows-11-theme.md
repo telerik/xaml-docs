@@ -10,9 +10,9 @@ res_type: kb
 
 ## Environment
 
-| Product | Progress Telerik UI for WPF |
-| ------- | ------------------------- |
-| Version | 2023.2.718               |
+| Product | Version |
+| --- | --- |
+| RadCalculator for WPF | 2023.2.718 |
 
 ## Description
 

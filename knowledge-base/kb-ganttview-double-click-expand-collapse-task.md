@@ -10,9 +10,9 @@ res_type: kb
 
 ## Environment
 
-| **Product** | Telerik UI for WPF |
-|-------------|-------------------|
-| **Version** | 2023.3.1010      |
+| Product | Version |
+| --- | --- |
+| UI for WPF | 2023.3.1010 |
 
 ## Description
 

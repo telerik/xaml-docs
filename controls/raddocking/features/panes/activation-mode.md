@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-## RadPane Activation
+# RadPane Activation
 			  
 There are two possible approaches for activating/deactivating a pane - using the __ActivePane__ property of the **RadDocking** control or using the __IsActive__ property of the **RadPane**. Both approaches will lead to the same final result but could be used in different scenarios. Using the IsActive property of the RadPane is useful when you want to activate a pane but do not have a reference to the RadDocking control itself.
         

@@ -10,7 +10,7 @@ res_type: kb
 ## Environment
 
 | Product | Version |
-|---------|---------|
+| --- | --- |
 | UI for WPF | 2023.3.1114 |
 
 ## Description

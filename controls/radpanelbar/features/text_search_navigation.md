@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-## Text Search Navigation
+# Text Search Navigation
 
 RadPanelBar allows you to navigate through its items by typing on the keyboard __while the control is focused__. This will search and select the corresponding item.
 

@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-## Getting Started with {{ site.framework_name }} ChartView3D
+# Getting Started with WPF ChartView3D
 
 This article will walk you through the creation of a sample application that contains a __RadCartesianChart3D__ component.
 

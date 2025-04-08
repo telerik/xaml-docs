@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-## Tables Dialogs
+# Tables Dialogs
 
 The RichTextBox component provides several dialogs to work create and modify [tables]({%slug radrichtextbox-features-document-elements-tables%}).
 

@@ -11,19 +11,10 @@ res_type: kb
 ---
 
 ## Environment
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>2021.2.615</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® UI for WPF</td>
-		</tr>
-	</tbody>
-</table>
 
+| Product | Version |
+| --- | --- |
+| RadSplashScreen for WPF | 2021.2.615 |
 
 ## Description
 

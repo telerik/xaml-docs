@@ -11,9 +11,9 @@ ticketid: 1632150
 
 ## Environment
 
-| Product | RadFileDialogs for WPF |
+| Product | Version |
 | --- | --- |
-| Version | 2024.3.806 |
+| RadFileDialogs for WPF | 2024.3.806 |
 
 ## Description
 

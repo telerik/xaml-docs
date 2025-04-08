@@ -8,10 +8,11 @@ tags: raddocking, multiple-threads, exception, thread
 res_type: kb
 ---
 
-# Environment
-| Product | RadDocking for WPF |
-| ------- | ----------------- |
-| Version | 2019.2.618       |
+## Environment
+
+| Product | Version |
+| --- | --- |
+| RadDocking for WPF | 2019.2.618 |
 
 ## Description
 

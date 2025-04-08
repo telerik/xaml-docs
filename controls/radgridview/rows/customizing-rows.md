@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-## Hiding the Row Indicator
+# Hiding the Row Indicator
 
 By default the first cell of a row represents the row indicator area. The indicator appears when the row is set as current.
 

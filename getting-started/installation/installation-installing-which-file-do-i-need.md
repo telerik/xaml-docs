@@ -10,15 +10,15 @@ position: 1
 
 # Installation Approaches
 
-To start working with Telerik UI for {{ site.framework_name }}, you can choose the installation approach that corresponds to your needs and requirements.
+To start working with Telerik UI for WPF, you can choose the installation approach that corresponds to your needs and requirements.
 
-The Telerik UI for {{ site.framework_name }} suite supports the following installation approaches:
+The Telerik UI for WPF suite supports the following installation approaches:
 
-* Installation through the Telerik NuGet feed.
+* Installation through the Telerik NuGet feed (recommended approach).
 
-* Installation through the Telerik UI for {{ site.framework_name }} MSI file.
+* Installation through the Telerik UI for WPF MSI file.
 
-* Installation through the Telerik UI for {{ site.framework_name }} ZIP file.
+* Installation through the Telerik UI for WPF ZIP file.
 
 * Installation with the Telerik Visual Studio extension.
 
@@ -26,21 +26,17 @@ The Telerik UI for {{ site.framework_name }} suite supports the following instal
 
 The [NuGet](https://docs.microsoft.com/en-us/nuget/what-is-nuget) packages are a single ZIP file with the `.nupkg` extension that contains the compiled code (DLLs), other related files, and a descriptive manifest that includes information such as the version package number.
 
-{% if site.site_name == 'WPF' %}
-* For more information about how to install Telerik UI for {{ site.framework_name }} with NuGet, refer to the article on [installation with NuGet]({% slug nuget-installation %}).
+* For more information about how to install Telerik UI for WPF with NuGet, refer to the article on [installation with NuGet]({% slug nuget-installation %}).
 
-* For more information about restoring Telerik UI for {{ site.framework_name }} NuGet packages in your CI workflow, refer to the article on [using token-based NuGet authentication]({% slug nuget-keys %}).
-{% else %}
-* For more information about how to install Telerik UI for {{ site.framework_name }} with NuGet, refer to the article on [installation with NuGet]({% slug installation-installing-from-nuget %}).
-{% endif %}
+* For more information about restoring Telerik UI for WPF NuGet packages in your CI workflow, refer to the article on [using token-based NuGet authentication]({% slug nuget-keys %}).
 
 ## MSI File Installation
 
-The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy installation of a product. The Telerik UI for {{ site.framework_name }} MSI file installs the controls on your computer in a folder in your **Program Files** named **Progress**, and automatically creates the necessary virtual folders and projects.
+The [MSI](http://en.wikipedia.org/wiki/Windows_Installer) files are intended for easy installation of a product. The Telerik UI for WPF MSI file installs the controls in the following directory `C:\Program Files (x86)\Progress\` by default.
 
->tip If you already have Telerik UI installed from an MSI, you can safely install an updated version. The installer will keep your existing installation. The new files will be placed in a separate folder and the new installation will not damage the common installer files.
+If you already have Telerik UI installed from an MSI, you can safely install an updated version. The installer will keep your existing installation. The new files will be placed in a separate folder and the new installation will not damage the common installer files.
 
-For more information about how to install Telerik UI for WPF from an MSI file, refer to the article on [first steps with the MSI file installation]({% slug installation-installing-from-msi-wpf %}).
+
 
 ## ZIP File Installation
 
@@ -50,6 +46,6 @@ For more information about how to install Telerik UI for WPF from a ZIP file, re
 
 ## Visual Studio Extension Installation
 
-The Telerik UI for {{ site.framework_name }} library provides an option for preconfigured manual installation using the Telerik Visual Studio (VS) extension, which contains the Telerik UI for {{ site.framework_name }} DLLs and referenced assembly files.
+The Telerik UI for WPF library provides an option for preconfigured manual installation using the Telerik Visual Studio (VS) extension, which contains the Telerik UI for WPF DLLs and referenced assembly files.
 
 For more information about how to install Telerik UI for WPF with the VS extension, refer to the article on [first steps with the Telerik VS extension installation]({% slug radcontrols-for-wpf-vs-extensions-project-creation %}).

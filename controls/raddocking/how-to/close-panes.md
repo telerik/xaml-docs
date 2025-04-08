@@ -8,7 +8,7 @@ published: True
 position: 6
 ---
 
-## Close RadPane Instances
+# Close RadPane Instances
 
 Each __RadPane__ is closable by default via the **Close** button or the **Hide** menu item shown on the snapshots above.
         

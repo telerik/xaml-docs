@@ -12,7 +12,7 @@ res_type: kb
 
 | Product | Version |
 | --- | --- |
-| RadCalculator for WPF | 2023.2.718 |
+| UI for WPF | 2023.2.718 |
 
 ## Description
 

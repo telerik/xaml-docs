@@ -8,6 +8,8 @@ published: True
 position: 1
 ---
 
+# Visual Structure
+
 This section defines terms and concepts used in the scope of the `RadAIPrompt` control, with which you have to get familiar before you continue to read its documentation. They can also be helpful when contacting our support service in order to describe your issue better.
 
 ![WPF RadAIPrompt Visual Structure](images/radaiprompt-visual-structure-0.png)

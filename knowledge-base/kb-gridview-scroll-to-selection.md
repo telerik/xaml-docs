@@ -10,10 +10,9 @@ res_type: kb
 
 ## Environment
 
-| Property | Value |
+| Product | Version |
 | --- | --- |
-| Product | Progress® Telerik® UI for WPF |
-| Version | 2024.1.312 |
+| UI for WPF | 2024.1.312 |
 
 ## Description
 

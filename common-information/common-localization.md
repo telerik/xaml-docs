@@ -58,47 +58,11 @@ To localize your controls using the built-in localization mechanism, you first h
 
 ![Common Localization 050](images/Common_Localization_050.PNG)
 
-{% if site.site_name == 'Silverlight' %}
-Then, you must define your preferred languages in the **&lt;Supported Cultures&gt;** tag of your project file in order to notify the framework about the supported cultures. To do so, open the project file with a text editor and insert the code below into the __&lt;PropertyGroup&gt;__ section.
+Or you should install the corresponding NuGet package. For example `Telerik.Windows.Controls.for.Wpf.es`.
 
-#### __[XAML] Example 1: Setting supported cultures__
-
-{{region common-localization_4}}
-	<SupportedCultures>en;nl</SupportedCultures>
-{{endregion}}
-
-The next step for defining the language settings of the application is changing the __Current Culture__ of the application.
-            
-#### __[C#] Example 2: Setting the current culture of the application__
-
-{{region common-localization_11}}
-	private void Application_Startup(object sender, StartupEventArgs e)
-	{
-	    Thread.CurrentThread.CurrentCulture = new CultureInfo("de");
-	    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
-	
-	    this.RootVisual = new MainPage();
-	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the current culture of the application__
-
-{{region common-localization_12}}
-	Private Sub Application_Startup(sender As Object, e As StartupEventArgs)
-	    Thread.CurrentThread.CurrentCulture = New CultureInfo("de")
-	    Thread.CurrentThread.CurrentUICulture = New CultureInfo("de")
-	
-	    Me.RootVisual = New MainPage()
-	End Sub
-{{endregion}}
-
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
 The next step for defining the language settings of the application is changing the __Current Culture__ of the application:
          
-#### __[C#] Example 1: Setting the current culture of the application__
-
+#### __[C#] Setting the current culture of the application__  
 {{region common-localization_9}}
 	public App()
 	{
@@ -107,16 +71,13 @@ The next step for defining the language settings of the application is changing 
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 1: Setting the current culture of the application__
-
+#### __[VB.NET] Setting the current culture of the application__  
 {{region common-localization_10}}
 	Public Sub New()
 	    Thread.CurrentThread.CurrentCulture = New CultureInfo("de")
 	    Thread.CurrentThread.CurrentUICulture = New CultureInfo("de")
 	End Sub
 {{endregion}}
-
-{% endif %}
 
 That's it. Your controls should now be localized in the preferred language.
 
@@ -134,13 +95,9 @@ In Figure 3 you can see some resource keys and the strings they are associated w
 
 ![Common_Localization_060](images/Common_Localization_060.png)
 
->tipFor a full list of __resource keys__, check out the __Localization__ topic for the specific control.
+>tip For a full list of __resource keys__, check out the __Localization__ topic for the specific control.
 
-{% if site.site_name == 'WPF' %}
-<!-- -->
-
->tipYou can find the ".resx" files containing the translations for the supported languages inside the "Core\Controls" directory of the [source code]({%slug download-product-files-wpf%}#source-code).
-{% endif %}
+>tip You can find the ".resx" files containing the translations for the supported languages inside the "Core\Controls" directory of the [source code]({%slug download-product-files-wpf%}#source-code).
 
 ## Localization Using ResourceManager
 
@@ -162,7 +119,7 @@ Now that you have the needed files, it's time to localize only the text for the 
       
 >Note that the name of the resource string should be the same as the resource key for the string that you are localizing. The resource key for RadGridView's group panel is __GridViewGroupPanelText__.
           
->tipFor a full list of __resource keys__, check out the __Localization__ topic for the specific control.
+>tip For a full list of __resource keys__, check out the __Localization__ topic for the specific control.
 
 Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resource __Name__ (**GridViewGroupPanelText**) of the other two files should be the same. The __Value__ column will contain the translation for the appropriate language.
 
@@ -172,7 +129,7 @@ Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resour
 
 The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any Telerik UI controls, by going through all resource keys and returning the appropriate translation. You then set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
 
-#### __[C#] {% if site.site_name == 'WPF' %}Example 2{% else %}Example 3{% endif %}: Setting the LocalizationManager's ResourceManager__
+#### __[C#] Setting the LocalizationManager's ResourceManager__
 {{region common-localization_2}}
 	LocalizationManager.Manager = new LocalizationManager()
 	{
@@ -180,32 +137,20 @@ The last step is to instantiate the __LocalizationManager__ class, which allows 
 	};
 {{endregion}}
 
-#### __[VB.NET] {% if site.site_name == 'WPF' %}Example 2{% else %}Example 3{% endif %}: Setting the LocalizationManager's ResourceManager__
+#### __[VB.NET] Setting the LocalizationManager's ResourceManager__
 {{region common-localization_3}}
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = GridViewResources.ResourceManager
 {{endregion}}
 
-{% if site.site_name == 'WPF' %}
 
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file, you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others, to __No code generation__.         
-{% endif %}
-
-{% if site.site_name == 'Silverlight' %}
->If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file, you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others, to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __&lt;PropertyGroup&gt;__ section. In this way you notify the framework about the supported cultures.
-
-#### __[XAML] Example 4: Setting the project's supported cultures__
-{{region common-localization_4}}
-	<SupportedCultures>en;nl</SupportedCultures>
-{{endregion}}
-{% endif %}
 
 ## Localization Using Custom Localization Manager
 
-If you want to translate your controls to a language different from the default available ones, you will need to create a custom **LocalizationManager**. To do so, create a class that derives from __LocalizationManager__ and override its __GetStringOverride()__ method. The logic is pretty simple - you just have to create a switch statement and return the correct translation for each resource key, as shown below:
-        
+If you want to translate your controls to a language different from the default available ones, you will need to create a custom **LocalizationManager**. To do so, create a class that derives from __LocalizationManager__ and override its __GetStringOverride()__ method. The logic is pretty simple - you just have to create a switch statement and return the correct translation for each resource key, as shown below:        
 
-#### __[C#] {% if site.site_name == 'WPF' %}Example 3{% else %}Example 5{% endif %}: Overriding the LocalizationManager's GetStringOverride() method__
+#### __[C#] Overriding the LocalizationManager's GetStringOverride() method__
 {{region common-localization_5}}
 	public class CustomLocalizationManager : LocalizationManager
 	{
@@ -251,7 +196,7 @@ If you want to translate your controls to a language different from the default 
 	  }
 {{endregion}}
 
-#### __[VB.NET] {% if site.site_name == 'WPF' %}Example 3{% else %}Example 5{% endif %}: Overriding the LocalizationManager's GetStringOverride() method__
+#### __[VB.NET] Overriding the LocalizationManager's GetStringOverride() method__
 {{region common-localization_6}}
 	Public Class CustomLocalizationManager
 	 Inherits LocalizationManager
@@ -298,7 +243,7 @@ If you want to translate your controls to a language different from the default 
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 
-#### __[C#] {% if site.site_name == 'WPF' %}Example 4{% else %}Example 6{% endif %}: Using resource files in the GetStringOverride() method__
+#### __[C#] Using resource files in the GetStringOverride() method__
 {{region common-localization_7}}
 	public override string GetStringOverride(string key)
 	{
@@ -313,7 +258,7 @@ Of course, if you don't want to hard-code your translation inside your source co
 	}
 {{endregion}}
 
-#### __[VB.NET] {% if site.site_name == 'WPF' %}Example 4{% else %}Example 6{% endif %}: Using resource files in the GetStringOverride() method__
+#### __[VB.NET] Using resource files in the GetStringOverride() method__
 {{region common-localization_8}}
 	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	    Select Case key
@@ -328,13 +273,13 @@ Of course, if you don't want to hard-code your translation inside your source co
 
 All that's left to do is to set our CustomLocalizationManager to the static Manager property of the LocalizationManager. Please note that you need to do this assingnment prior to invoking the InitializeComponent method of the affected controls.
 
-#### __[C#] {% if site.site_name == 'WPF' %}Example 5{% else %}Example 7{% endif %}: Applying the custom LocalizationManager__
+#### __[C#] Applying the custom LocalizationManager__
 {{region common-localization_0}}
 	LocalizationManager.Manager = new CustomLocalizationManager();
     InitializeComponent();
 {{endregion}}
 
-#### __[VB.NET] {% if site.site_name == 'WPF' %}Example 5{% else %}Example 7{% endif %}: Applying the custom LocalizationManager__
+#### __[VB.NET] Applying the custom LocalizationManager__
 {{region common-localization_1}}
 	LocalizationManager.Manager = New CustomLocalizationManager()
 	InitializeComponent()
@@ -344,14 +289,14 @@ All that's left to do is to set our CustomLocalizationManager to the static Mana
 
 The LocalizableResourceExtension is a handy markup extension that returns a localization string based on a given key.
 
-#### __[XAML] {% if site.site_name == 'WPF' %}Example 6{% else %}Example 8{% endif %}: Using the LocalizableResourceExtension__
+#### __[XAML] Using the LocalizableResourceExtension__
 {{region common-localization_12}}
 	<telerik:RadButton Content="{telerik:LocalizableResource Key=GridViewClearFilter}" Click="GridView_ClearFilter" />
 {{endregion}}
 
 In the example above, it uses the GridViewClearFilter key provided by the default ResourceManager of the LocalizationManager, however, you can easily use your own keys by specifying a [custom ResourceManager](#localization-using-resourcemanager).
 
-#### __[XAML] {% if site.site_name == 'WPF' %}Example 7{% else %}Example 9{% endif %}: Get custom localization string__
+#### __[XAML] Get custom localization string__
 {{region common-localization_13}}
 	<telerik:Label Content="{telerik:LocalizableResource Key=EmployeeString}" />
 {{endregion}}
@@ -360,24 +305,24 @@ In the example above, it uses the GridViewClearFilter key provided by the defaul
 
 The LocalizationManager class also exposes a static boolean **UseDynamicLocalization** property which you can set to **True** to update your controls if a culture change occurs during runtime.
 
-#### __[C#] {% if site.site_name == 'WPF' %}Example 8{% else %}Example 10{% endif %}: Get custom localization string__
+#### __[C#] Get custom localization string__
 {{region common-localization_14}}
     LocalizationManager.UseDynamicLocalization = true;
 {{endregion}}
 
-#### __[VB.NET] {% if site.site_name == 'WPF' %}Example 8{% else %}Example 10{% endif %}: Applying the custom LocalizationManager__
+#### __[VB.NET] Applying the custom LocalizationManager__
 {{region common-localization_14}}
     LocalizationManager.UseDynamicLocalization = True
 {{endregion}}
 
 With this setting, changing the **Culture** of the LocalizationManager will update any strings localized using the LocalizableResource extension.
 
-#### __[C#] {% if site.site_name == 'WPF' %}Example 9{% else %}Example 11{% endif %}: Applying the custom LocalizationManager__
+#### __[C#] Applying the custom LocalizationManager__
 {{region common-localization_15}}
     LocalizationManager.Manager.Culture = new CultureInfo("de");
 {{endregion}}
 
-#### __[VB.NET] {% if site.site_name == 'WPF' %}Example 9{% else %}Example 11{% endif %}: Applying the custom LocalizationManager__
+#### __[VB.NET] Applying the custom LocalizationManager__
 {{region common-localization_15}}
     LocalizationManager.Manager.Culture = New CultureInfo("de")
 {{endregion}}
@@ -385,7 +330,4 @@ With this setting, changing the **Culture** of the LocalizationManager will upda
 >Please note that not all controls from the UI for {{ site.framework_name }} suite support dynamic localization out-of-the box. You can, however, [edit the control templates]({%slug styling-apperance-editing-control-templates%}) of unsupported controls and use the LocalizableResourceExtension wherever possible.
 
 ## See Also
- {% if site.site_name == 'WPF' %}
 * [Extract the Default Telerik Localization Resources]({%slug kb-localization-extract-resx-files%})
-{% endif %}
-* [Consuming Data - Overview]({%slug consuming-data-overview%})

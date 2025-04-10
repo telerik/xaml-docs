@@ -32,6 +32,8 @@ The RadSpreadsheet control is optimized to bring a great performance, but this c
 		<telerik:RadSpreadsheetRibbon IsMinimized="True" />
 	{{endregion}}
 
+* Use .NET 8 or later, instead of .NET Framework, because the general WPF performance there is improved.
+
 ## See Also  
 
 * [UI Virtualization]({%slug radspreadsheet-ui-virtualization%})

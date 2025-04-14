@@ -1,6 +1,6 @@
 ---
-title: First Steps with VS Extension
-page_title: First Steps with VS Extension
+title: Installing UI for WPF (Using VSX)
+page_title: Installing UI for WPF with Visual Studio Extension
 description: This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly.
 slug: getting-started-first-steps
 tags: get,started,first,steps
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Telerik UI for WPF First Steps with Visual Studio Extensions
+# Installing UI for WPF Using Visual Studio Extensions
 
 This article explains how to get the Telerik UI for WPF controls in your project and start using them quickly. The topic shows what is the lifecycle when using the Telerik Visual Studio Extension.
 

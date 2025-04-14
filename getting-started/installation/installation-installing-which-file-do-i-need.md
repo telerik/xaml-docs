@@ -14,7 +14,7 @@ To start working with Telerik UI for WPF, you can choose the installation approa
 
 The Telerik UI for WPF suite supports the following installation approaches:
 
-* Installation through the Telerik NuGet feed (recommended approach).
+* Installation through the Telerik NuGet feed (__recommended approach__).
 
 * Installation through the Telerik UI for WPF MSI file.
 

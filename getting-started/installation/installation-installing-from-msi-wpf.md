@@ -1,5 +1,5 @@
 ---
-title: Installing UI for WPF from MSI File
+title: Installating UI for WPF (Using MSI File)
 page_title: Installing UI for WPF from MSI File
 description: The article describes how to install the Telerik WPF product using the msi installator file.
 slug: installation-installing-from-msi-wpf
@@ -9,7 +9,7 @@ position: 7
 site_name: WPF
 ---
 
-# Installing UI for WPF from MSI File
+# Installing UI for WPF Using MSI File
 
 The following topic describes what steps you should perform in order to install Telerik UI for WPF using the __MSI__ installer file. 
 

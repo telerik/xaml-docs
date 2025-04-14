@@ -5,7 +5,7 @@ description: This article explains how to get the Telerik UI for WPF controls in
 slug: getting-started-first-steps
 tags: get,started,first,steps
 published: True
-position: 1
+position: 6
 ---
 
 # Installing UI for WPF Using Visual Studio Extensions

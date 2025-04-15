@@ -16,7 +16,9 @@ The following topic describes all controls from UI for WPF and the assemblies th
 The following two assemblies should be always referenced in the project:
 
 * `Telerik.Windows.Controls.dll`
-* `Telerik.Licensing.Runtime.dll`&mdash;The licensing assembly can be installed also via the `Telerik.Licensing` NuGet package.
+* `Telerik.Licensing.Runtime.dll`&mdash;We recommend installing the dll via the `Telerik.Licensing` NuGet package.
+
+In general we recommend [using the NuGet packages]({%slug nuget-installation%}) to install Telerik UI for WPF in the corresponding project. There are several different types of packages which you can find listed in the [following article]({%slug nuget-available-packages%}) article. 
           
 Controls	|	Assembly
 ---	|	---

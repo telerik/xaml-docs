@@ -10,23 +10,15 @@ position: 6
 
 # Getting Started with XAML
 
-Before proceed reading the __Telerik UI for {{ site.framework_name }}__ documentation we recommend that you check the fundamental concepts of {% if site.site_name == 'WPF' %}__Windows Presentation Foundation (WPF)__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %}. This article contains basic information about the {% if site.site_name == 'WPF' %}__WPF__{% endif %}{% if site.site_name == 'Silverlight' %}__Silverlight__{% endif %} framework and tells you where to find relevant information about its features.
+Before proceed reading the __Telerik UI for WPF__ documentation we recommend that you check the fundamental concepts of __Windows Presentation Foundation__ (WPF). This article contains basic information about the WPF framework and tells you where to find relevant information about its features.
 
 ## Overview
 
-{% if site.site_name == 'WPF' %}
 __Windows Presentation Foundation__ provides a unified programming model for building Windows smart client user experiences that incorporate UI, media, and documents. 
 
->important For more information, see the [WPF Overview](http://msdn.microsoft.com/en-us/library/ms754130.aspx) MSDN article.
-{% endif %}
+>important For more information, see the [WPF Overview](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-9.0) MSDN article.
 
-{% if site.site_name == 'Silverlight' %}
-__Microsoft Silverlight__ is a cross-browser, cross-platform implementation of the .NET Framework for building and delivering rich interactive applications (RIA) for the Web. It also helps you create applications that run outside browser on your desktop. 
-
->important For more information, see the [Silverlight Overview](http://msdn.microsoft.com/en-us/library/bb404700(VS.95).aspx) MSDN article.
-{% endif %}
-
-The following sections describe the most basic features of the {{ site.framework_name }} framework.
+The following sections describe the most basic features of the WPF framework.
 
 * [XAML (Extensible Application Markup Language)](#xaml-extensible-application-markup-language)
 * [Assemblies and Namespaces in .NET](#assemblies-and-namespaces-in-net)
@@ -44,62 +36,57 @@ The following sections describe the most basic features of the {{ site.framework
 
 ## XAML (Extensible Application Markup Language)
 
-__Extensible Application Markup Language__ (XAML) is an __XML-based markup language__ that is used to construct the visual appearance of an application. XAML to {{ site.framework_name }} what HTML is to web. You can find details on XAML concepts and how to use the language in your applications in the {% if site.site_name == 'WPF' %}[XAML Overview](http://msdn.microsoft.com/en-us/library/ms752059.aspx){% endif %}{% if site.site_name == 'Silverlight' %}[XAML Overview](https://msdn.microsoft.com/en-us/library/cc189054(VS.95).aspx){% endif %} MSDN article. {% if site.site_name == 'WPF' %}See also the [WPF Architecture](http://msdn.microsoft.com/en-us/library/ms750441.aspx) MSDN article.{% endif %}
+__Extensible Application Markup Language__ (XAML) is an __XML-based markup language__ that is used to construct the visual appearance of an application. XAML to {{ site.framework_name }} what HTML is to web. You can find details on XAML concepts and how to use the language in your applications in the [XAML Overview (WPF .NET](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/xaml/?view=netdesktop-9.0) MSDN article. See also the [WPF Architecture](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/wpf-architecture?view=netframeworkdesktop-4.8) article.
 
 ## Assemblies and Namespaces in .NET
 
-* __Assemblies__: An assembly is a collection of types and resources that are built to work together as a logical unit of functionality. All types in the .NET Framework must exist in assemblies; the common language runtime (CLR) does not support types outside assemblies. For more information, see the [Assemblies in the Common Language Runtime](https://msdn.microsoft.com/en-us/library/k3677y81(v=vs.110).aspx) MSDN article.
+* __Assemblies__: An assembly is a collection of types and resources that are built to work together as a logical unit of functionality. All types in the .NET Framework must exist in assemblies; the common language runtime (CLR) does not support types outside assemblies. For more information, see the [Assemblies in the Common Language Runtime](https://learn.microsoft.com/en-us/dotnet/standard/assembly) MSDN article.
 
-* __Namespaces__: The namespace keyword is used to declare a scope. Namespaces are a second organizational method that complements assemblies. Namespaces are a way of grouping type names reducing the chance of name collisions. A namespace can contain other namespaces and types. The full name of a type includes the combination of namespaces that contain that type. For more information, see the [Namespaces (C# Programming Guide)](https://msdn.microsoft.com/en-us/library/0d941h9d.aspx) MSDN article.
+* __Namespaces__: The namespace keyword is used to declare a scope. Namespaces are a second organizational method that complements assemblies. Namespaces are a way of grouping type names reducing the chance of name collisions. A namespace can contain other namespaces and types. The full name of a type includes the combination of namespaces that contain that type. For more information, see the [Namespaces (C# Programming Guide)](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces) MSDN article.
 
 ## Events
 
-{% if site.site_name == 'WPF' %}__WPF__ introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application. For more information, see the [Events](http://msdn.microsoft.com/en-us/library/ms753115.aspx) MSDN article.{% endif %}
-
-{% if site.site_name == 'Silverlight' %}The base class library in __Silverlight__ is a subset of the larger .NET Framework class library. It includes the base data types, such as strings and integers. It also includes such diverse types as type conversion classes, exception classes, collection and container classes, events and event handlers, and threading and synchronization classes. For more information, see the [Events Overview](https://msdn.microsoft.com/en-us/library/cc189018(v=vs.95).aspx) MSDN article.{% endif %}
+__WPF__ introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application. For more information, see the [Events](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/events-wpf?view=netframeworkdesktop-4.8) article.
 
 ## Attached Properties
 
-An attached property is used as a type of global property that can be set on any object. For more information, see the {% if site.site_name == 'WPF' %}[Attached Properties Overview](http://msdn.microsoft.com/en-us/library/ms749011.aspx){% endif %}{% if site.site_name == 'Silverlight' %}[Attached Properties Overview](http://msdn.microsoft.com/en-us/library/cc265152(v=vs.95).aspx){% endif %} MSDN article.
+An attached property is used as a type of global property that can be set on any object. For more information, see the [Attached Properties Overview](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-9.0) article.
 
 ## Collections and Data Structures
 
-Detailed information on this topic can be found in the {% if site.site_name == 'WPF' %}[Collections and Data Structures](https://msdn.microsoft.com/en-us/library/7y3x785f(v=vs.110).aspx){% endif %}{% if site.site_name == 'Silverlight' %}[Collections and Data Structures](http://msdn.microsoft.com/en-us/library/7y3x785f(v=vs.95).aspx){% endif %} MSDN article.
+Detailed information on this topic can be found in the [Collections and Data Structures](https://learn.microsoft.com/en-us/dotnet/standard/collections/) article.
 
 ## Data Binding
 
-Data binding is the process that establishes a connection between the application UI and the business logic. It provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of common language runtime objects and XML. For more information, see the {% if site.site_name == 'WPF' %}[Data Binding](http://msdn.microsoft.com/en-us/library/ms750612.aspx){% endif %}{% if site.site_name == 'Silverlight' %}[Data Binding](http://msdn.microsoft.com/en-us/library/cc278072(v=vs.95).aspx){% endif %} MSDN article.
+Data binding is the process that establishes a connection between the application UI and the business logic. It provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of common language runtime objects and XML. For more information, see the [Data Binding](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/?view=netdesktop-9.0) article.
 
 ## Binding Collections
 
-A binding source object can be treated as a data collection of objects that are often grouped together (such as the result of a query to a database). You can enumerate over any collection that implements the [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the UI automatically, the collection must implement the [INotifyCollectionChanged](http://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) interface. This interface exposes an event, that should be raised whenever the underlying collection changes. {% if site.site_name == 'WPF' %}WPF provides a built-in implementation of a data collection that implements the INotifyCollectionChanged interface — the [ObservableCollection&lt;T&gt;](http://msdn.microsoft.com/en-us/library/ms668604.aspx) class.{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight provides a built-in implementation of a data collection that implements the INotifyCollectionChanged interface — the [ObservableCollection&lt;T&gt;)](http://msdn.microsoft.com/en-us/library/ms668604(v=vs.95).aspx) class.{% endif %}
+A binding source object can be treated as a data collection of objects that are often grouped together (such as the result of a query to a database). You can enumerate over any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-9.0) interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the UI automatically, the collection must implement the [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-9.0) interface. This interface exposes an event, that should be raised whenever the underlying collection changes. WPF provides a built-in implementation of a data collection that implements the INotifyCollectionChanged interface — the [ObservableCollection&lt;T&gt;](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-9.0) class.
 
 ## Data Conversion
 
-With the help of __IValueConverter__, you can apply custom logic to a binding. The converter allows you to convert the value of the bound property to another value or to even another type. {% if site.site_name == 'WPF' %}For more information, see the [IValueConverter Interface](http://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter.aspx) MSDN article.{% endif %}{% if site.site_name == 'Silverlight' %}For more information and an example, see the [IValueConverter Interface](https://msdn.microsoft.com/en-us/library/system.windows.data.ivalueconverter(v=vs.95).aspx) MSDN article.{% endif %}
+With the help of __IValueConverter__, you can apply custom logic to a binding. The converter allows you to convert the value of the bound property to another value or to even another type. For more information, see the [IValueConverter Interface](https://learn.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=windowsdesktop-9.0) article.
 
 ## Commanding
 
-The {{ site.framework_name }} framework supports a commanding input mechanism whose purpose is to separate the logic that executes the command from the object that invokes the command. The most common use of commands is the avoid using events and code-behind. Instead, the command and its logic are defined in the view model and then bound to the visual element in the UI. For more information, see the {% if site.site_name == 'WPF' %}[Commanding Overview](https://msdn.microsoft.com/en-us/library/ms752308(v=vs.110).aspx){% endif %}{% if site.site_name == 'Silverlight' %}[ICommandInterface](https://msdn.microsoft.com/en-us/library/system.windows.input.icommand(v=vs.95).aspx){% endif %} MSDN article{% if site.site_name == 'Silverlight' %} and the 
-[Command Support]({%slug common-command-support%}) article{% endif %}.
+The WPF framework supports a commanding input mechanism whose purpose is to separate the logic that executes the command from the object that invokes the command. The most common use of commands is the avoid using events and code-behind. Instead, the command and its logic are defined in the view model and then bound to the visual element in the UI. For more information, see the [Commanding Overview](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/commanding-overview?view=netframeworkdesktop-4.8) article.
 
 ## Styles and Templates
 
-{% if site.site_name == 'WPF' %}WPF styling and templating refer to a suite of features that allows an application to create visually compelling applications in a standardized way. For more information, see the [Styles and Templates](http://msdn.microsoft.com/en-us/library/bb613570.aspx) MSDN article.{% endif %}
-{% if site.site_name == 'Silverlight' %} Silverlight styling and templating refer to a suite of features that allows an application to create visually compelling applications in a standardized way. With Silverlight you can use styles and templates in order to customize control behavior and appearance. For more information, see the [Styles and Templates](http://msdn.microsoft.com/en-us/library/cc278075(v=vs.95).aspx) MSDN article.{% endif %}
+WPF styling and templating refer to a suite of features that allows an application to create visually compelling applications in a standardized way. For more information, see the [Styles and Templates](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/styles-and-templates?view=netframeworkdesktop-4.8) MSDN article.
 
 ## Data Templates
 
-{% if site.site_name == 'WPF' %}WPF has built-in support for customizing data presentation. Its [data templating](http://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) model provides great flexibility. For more information, see the [Data Templating Overview](http://msdn.microsoft.com/en-us/library/ms742521.aspx) MSDN article.{% endif %}
-{% if site.site_name == 'Silverlight' %}Silverlight has built-in support for customizing data presentation. Its [data templating](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate(v=vs.95).aspx) model provides great flexibility. For more information, see the [Styles and Templates](http://msdn.microsoft.com/en-us/library/cc278075(v=vs.95).aspx) MSDN article.{% endif %}
+WPF has built-in support for customizing data presentation. Its [data templating](https://learn.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=windowsdesktop-9.0) model provides great flexibility. For more information, see the [Data Templating Overview](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/data-templating-overview?view=netframeworkdesktop-4.8) article.
 
 ## Style Selectors
 
-The style selector provides a way to apply different styles based on custom logic. For more information, see the [StyleSelector Class](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx) MSDN article.
+The style selector provides a way to apply different styles based on custom logic. For more information, see the [StyleSelector Class](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.styleselector?view=windowsdesktop-9.0) MSDN article.
 
 ## Data Template Selectors
 
-The data template selector enables you to choose different DataTemplate based on the data object and the data-bound element. For more information, see the [DataTemplateSelector Class](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) MSDN article.
+The data template selector enables you to choose different DataTemplate based on the data object and the data-bound element. For more information, see the [DataTemplateSelector Class](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=windowsdesktop-9.0) MSDN article.
 
 ## See Also  
 

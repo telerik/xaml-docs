@@ -14,34 +14,23 @@ Now that you have the Telerik UI for WPF controls running in your project, the l
 
 If you are just getting started, you can find guidance in the following articles:
 
-{% if site.site_name == 'WPF' %}
-* [First Steps]({%slug getting-started-first-steps%})
+* [First Steps]({%slug nuget-setup-lifecycle%})
 * [Explore control features]({%slug getting-started-explore-control-features%})
-{% else %}
-* [First Steps]({%slug getting-started-first-steps-sl%})
-* [Explore control features]({%slug getting-started-explore-control-features-sl%})
-{% endif %}
 * [Change control appearance]({%slug getting-started-change-control-appearance%})
 
 ### More Learning Resources
 
 You don't need all of this immediately, but you can use this list as a starting point for future reference. 
 
-Video Tutorials
-* [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
+#### Video Tutorials  
+* [Video Onboarding]({%slug getting-started-video-onboarding%})
 
-Installation
+#### Installation
 * [Installation Approaches]({%slug installation-installing-which-file-do-i-need%})
-{% if site.site_name == 'WPF' %}
 * [Download Product Files]({%slug download-product-files-wpf%})
 * [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})
-{% else %}
-* [Download Product Files]({%slug download-product-files%})
-* [Controls Dependencies]({%slug installation-installing-controls-dependencies%})
-{% endif %}
-* [Telerik Visual Studio Extensions]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) 
 
-Appearance
+#### Appearance
 * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
 * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
 * [Styling the Controls]({%slug implicit-styles-styling-the-controls%})
@@ -49,18 +38,15 @@ Appearance
 * [Available Themes]({%slug common-styling-appearance-available-themes%})
 * [Color Theme Generator]({%slug common-styling-color-theme-generator%})
 
-Common Information
+#### Common Information
 * [Consuming Data]({%slug consuming-data-overview%})
 * [Localization]({%slug common-localization%})
 * [UI Automation Support]({%slug common-ui-automation%})
-{% if site.site_name == 'WPF' %}
-* [Coded UI support]({%slug coded-ui-support%})
-{% endif %}
 * [Visual Tree Helpers]({%slug common-visual-tree-helpers%})
 
-MVVM Helpers
+#### MVVM Helpers
 * [Attached Behaviors]({%slug common-mvvm-attached-behavior%})
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})
 * [Converters]({%slug common-converters%})
 * [ViewModelBase]({%slug common-viewmodelbase-class%})
-* [Delegate Command]({%slug common-mvvm-delegate-command-implementation%})
+* [DelegateCommand]({%slug common-mvvm-delegate-command-implementation%})

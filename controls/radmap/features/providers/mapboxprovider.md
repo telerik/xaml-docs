@@ -19,13 +19,19 @@ In order to download data from the services, the provider needs to assign its `A
 #### __[XAML] Setting up MapBoxMapProvider__
 {{region radmap-features-mapboxprovider-0}}
 	<telerik:RadMap>
-		<telerik:RadMap.Provider>			
+		<telerik:RadMap.Provider>
 			<telerik:MapBoxMapProvider AccessToken="Your Access Token"/>
 		</telerik:RadMap.Provider>
 	</telerik:RadMap>
 {{endregion}}
 
 ![A picture showing RadMap with MapBoxMapProvider](images/radmap-features-mapboxprovider-0.png)
+
+## Attribution Copyright Label
+
+When using the MapBoxMapProvider, you have to display an attribution copyright label to the Mapbox services. To learn more about the accurate copyright label's content, please refer to the [MapBox Attribution](https://docs.mapbox.com/help/dive-deeper/attribution/) article.
+
+>tip To learn how to customize the RadMap to allocate space for displaying an element containing a sample attribution copyright label, check this [article]({%slug kb-map-copyright-label%}).
 
 ## Changing the Tile Set Mode
 
@@ -82,5 +88,4 @@ To assign a custom [style](https://docs.mapbox.com/mapbox-gl-js/style-spec/) `.j
 
 ## See Also 
 * [Vector Tile Providers]({%slug radmap-features-urivectortilemapprovider%})
-
 

@@ -20,7 +20,6 @@ In __R1 2016__, we introduced a new extension method related to the exporting of
 * Telerik.Windows.Documents.Core.dll
 * Telerik.Windows.Documents.Spreadsheet.dll 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
-* Telerik.Windows.Zip.dll
 
 ## Usage
 

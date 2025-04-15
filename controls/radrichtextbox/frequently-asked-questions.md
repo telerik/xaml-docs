@@ -75,7 +75,7 @@ RadRichTextBox does not have a Text property because different formats for impor
 
 * TxtFormatProvider (plain text) – Telerik.Windows.Documents;
 
-* DocxFormatProvider - Telerik.Windows.Documents.FormatProviders.OpenXml and Telerik.Windows.Zip;
+* DocxFormatProvider - Telerik.Windows.Documents.FormatProviders.OpenXml;
 
 * HtmlFormatProvider - Telerik.Windows.Documents.FormatProviders.Html;
 
@@ -83,7 +83,7 @@ RadRichTextBox does not have a Text property because different formats for impor
 
 * RtfFormatProvider – Telerik.Windows.Documents.FormatProviders.Rtf;
 
-* PdfFormatProvider - Telerik.Windows.Documents.FormatProviders.Pdf and Telerik.Windows.Zip.
+* PdfFormatProvider - Telerik.Windows.Documents.FormatProviders.Pdf;
 
 You can read more about the use of format providers [here]({%slug radrichtextbox-features-import-export%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document. An example is illustrated below:
         

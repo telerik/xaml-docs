@@ -14,6 +14,8 @@ This article will list the breaking changes and how they can be fixed when upgra
 
 ## 2025 Q2
 
+* The format providers no longer need a reference to `Telerik.Windows.Zip.dll`.
+
 * The `MouseSelectionHandler(RadDocument document)` obsolete constructor of the `MouseSelectionHandler` class was removed. Instead, use the `MouseSelectionHandler(RadDocument document, IDocumentEditorPresenter presenter)` constructor.
   
 * The `TextInsertedEventArgs(string text, bool shouldPersist, bool shouldStartNewComposition)` obsolete constructor of the `TextInsertedEventArgs` class was removed. Instead, use the `TextInsertedEventArgs(string text, InputEvents currentEvent, ImeLanguage imeLanguage)` constructor.

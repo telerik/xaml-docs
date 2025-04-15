@@ -35,7 +35,6 @@ By default, RadPivotGrid will export all groups' items, no matter if some of the
 >	* __Telerik.Windows.Documents.Core__
 >	* __Telerik.Windows.Documents.Spreadsheet__
 >	* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml__
->	* __Telerik.Windows.Zip__
 
 In order to export __RadPivotGrid__ to xlsx format (Excel file), you have to use __XlsxFormatProvider__ from *Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx* namespace. The __XlsxFormatProvider__ has *Export* method, which has two arguments - first one is a Workbook that has to be exported and the second one is the output stream. In our case we'll create a simple Workbook (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) with a single Worksheet (instance of *Telerik.Windows.Documents.Spreadsheet.Model.Workbook*) in it.        
 

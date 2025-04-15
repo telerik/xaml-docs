@@ -85,8 +85,7 @@ RadNumericUpDown	|	Telerik.Windows.Controls.Input
 RadOfficeNavigationBar	|	Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation
 RadOutlookBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
 RadPanelBar	|	Telerik.Windows.Controls.Navigation, Telerik.Windows.Data
-RadPdfProcessing	|	Telerik.Windows.Documents.Fixed, Telerik.Windows.Documents.Core, Telerik.Windows.Zip
-RadPdfViewer	|	Telerik.Windows.Documents.Fixed, Telerik.Windows.Documents.Core, Telerik.Windows.Controls.FixedDocumentViewers, Telerik.Windows.Zip
+RadPdfViewer	|	Telerik.Windows.Documents.Fixed, Telerik.Windows.Documents.Core, Telerik.Windows.Controls.FixedDocumentViewers
 RadPersistenceFramework	|	Telerik.Windows.PersistenceFramework
 RadPipsPager	|	Telerik.Windows.Controls
 RadPivotFieldList	|	Telerik.Pivot.Core, Telerik.Windows.Controls.PivotFieldList, Telerik.Windows.Controls.Pivot, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Input
@@ -105,9 +104,7 @@ RadSlideView	|	Telerik.Windows.Controls
 RadSparkLine	|	Telerik.Windows.Controls.Charting, Telerik.Windows.Controls.DataVisualization, Telerik.Windows.Data
 RadSpellChecker	|	Telerik.Windows.Documents.Proofing, Telerik.Windows.Documents.Proofing.DataGrid, Telerik.Windows.Documents.Proofing.RadGridView, Telerik.Windows.Documents, Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml
 RadSplashScreen	|	Telerik.Windows.Controls.Navigation
-RadSpreadProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
 RadSpreadsheet	|	Telerik.Windows.Controls, Telerik.Windows.Controls.GridView, Telerik.Windows.Controls.Input, Telerik.Windows.Controls.Navigation, Telerik.Windows.Controls.Spreadsheet, Telerik.Windows.Data, Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Spreadsheet, Telerik.Windows.Maths
-RadSpreadStreamProcessing	|	Telerik.Documents.SpreadsheetStreaming
 RadStepProgressBar	|	Telerik.Windows.Controls
 RadSvgImage	|	Telerik.Windows.Controls
 RadSyntaxEditor	|	Telerik.Windows.Controls.Input, Telerik.Windows.SyntaxEditor.Core
@@ -132,7 +129,6 @@ RadWatermarkTextBox	|	Telerik.Windows.Controls
 RadWebCam	|	Telerik.Windows.Controls, Telerik.Windows.Controls.Media, Telerik.Windows.MediaFoundation, MediaFoundation, the SkiaSharp NuGet package
 RadWindow	|	Telerik.Windows.Controls.Navigation
 RadWizard	|	Telerik.Windows.Controls, Telerik.Windows.Data, Telerik.Windows.Controls.Navigation 
-RadWordsProcessing	|	Telerik.Windows.Documents.Core, Telerik.Windows.Documents.Flow, Telerik.Windows.Zip, Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Telerik.Windows.Documents.Fixed
 RadZipLibrary	|	Telerik.Windows.Zip
 LayoutControls	|	Telerik.Windows.Controls
 

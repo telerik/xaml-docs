@@ -20,7 +20,6 @@ The __ExportToPdf__ method uses additional libraries so you need to add referenc
 * Telerik.Windows.Documents.Spreadsheet.dll 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
 * Telerik.Windows.Documents.Fixed.dll
-* Telerik.Windows.Zip.dll
 * Telerik.Windows.Controls.GridView.Export.dll
 
 >  __Telerik.Windows.Controls.GridView.Export.dll__ is a new binary introduced in __Q1 SP of 2015__. It delimits the exporting to __Pdf__ functionality from __Telerik.Windows.Controls.GridView.dll__, so in order to use __ExportToPdf__ method, the new dll should also be added.

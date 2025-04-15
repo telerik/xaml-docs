@@ -284,13 +284,13 @@ The __RadSplitContainer__'s __InitialPosition__ property can also be set in the 
 
 ## Setting the InitialSize of the RadSplitContainer
 
-You can set the initial size of your split containers using the attached property __DockingPanel.InitialSize__.
+The initial size of the `RadSplitContainer` is set with the `DockingPanel.InitialSize` attached property. This propery is of type `Size` which allows you to set both width and height, but only one of the values will be used, based on the `RadDockPanel.Dock` setting of the container. When the dock position is `Top` or `Bottom`, the `Height` value of the `InitialSize` will be used. When the dock position is `Left` or `Right`, the `Width` will be used. The other dimension will autosize, based on the layout.
 
 #### __[XAML] Example 10: Setting InitialSize__
 
 {{region xaml-raddocking-features-split-container_24}}
 	<telerik:RadDocking x:Name="radDocking8">
-	    <telerik:RadSplitContainer telerik:DockingPanel.InitialSize="80,200">
+	    <telerik:RadSplitContainer telerik:DockingPanel.InitialSize="80,1">
 	        <telerik:RadPaneGroup>
 	            <telerik:RadPane Header="Left Pane" Content="Pane Left 1" />
 	        </telerik:RadPaneGroup>
@@ -298,7 +298,7 @@ You can set the initial size of your split containers using the attached propert
 	</telerik:RadDocking>
 {{endregion}}
 
-On the snapshot you can see that the pane titled "Left Pane" has width set to 80, while its height is equal to the height of the container to which it is docked, ignoring the height specified by the __DockingPanel.InitialSize__ property.
+On the snapshot you can see that the pane titled "Left Pane" (docked left by default) has width set to 80, while its height is equal to the height of the container to which it is docked, ignoring the height specified by the `DockingPanel.InitialSize` property.
 
 ![Setting InitialSize](images/RadDocking_Features_SplitContainer_100.png)
 

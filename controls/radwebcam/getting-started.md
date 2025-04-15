@@ -22,7 +22,7 @@ In order to use `RadWebCam`, you will need to add references to the following as
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.MediaFoundation__
 * __MediaFoundation__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/MediaFoundation* folder.
-* [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/2.88.6) (version 2.88.6).
+* [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/3.116.1) (version 3.116.1).
 
 >tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 

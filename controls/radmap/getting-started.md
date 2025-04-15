@@ -1,20 +1,20 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadMap control.
 slug: radmap-getting-started
 tags: getting,started
 published: True
 position: 4
 ---
 
-# Getting Started with {{ site.framework_name }} Map
+# Getting Started with Map
 
-The __RadMap__ control allows you to display rich geographical information from various sources, including Microsoft Bing Maps, as well as to overlay the map with your own custom data. This topic will help you to quickly get started using the control. It will focus on the following:      
+The `RadMap` control allows you to display rich geographical information from various sources, including Microsoft Azure Maps, as well as to overlay the map with your own custom data. This topic will help you to quickly get started using the control. It will focus on the following:      
 
 ## Adding Telerik Assemblies Using NuGet
 
-To use __RadMap__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+To use RadMap when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
 Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
@@ -31,13 +31,13 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 >For __.NET 6__ and later you will need to install also the `System.ServiceModel.Http` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
-You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+You can find the required assemblies for each control from the suite in the[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
 ## Creating a RadMap
 
-After adding references to the aforementioned dlls, you can declare a new __RadMap__ as any normal Silverlight/WPF control.        
+After adding references to the aforementioned dlls, you can declare a new RadMap instance.        
 
-#### __[XAML] Example 1: Defining map in XAML__
+#### __[XAML] Defining map in XAML__
 {{region radmap-getting-started_0}}
    	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 		<Grid x:Name="LayoutRoot">
@@ -48,72 +48,45 @@ After adding references to the aforementioned dlls, you can declare a new __RadM
 
 ## Specifying a Provider
 
-The __RadMap__ control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the __RadMap__ control supports a few providers out of the box:        
+The RadMap control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the RadMap control supports a few providers out of the box:        
 
-* [Bing Maps]({%slug radmap-features-providers-bing-rest-map%}) 
-
+* [Azure Maps]({%slug radmap-features-providers-azuremapprovider%}) 
 * [OpenStreet Maps]({%slug radmap-features-providers%}#openstreet-maps) 
-
 * [ArcGIS Online]({%slug radmap-features-providers-arcgis%}) 
-
 * [Empty Provider]({%slug radmap-features-empty-provider%}) 
-
 * [URI Image provider]({%slug radmap-features-uriimageprovider%}) 
-
 * __WMS__
 
-This example will use __Bing Maps__ as its provider. In order to do that you have to set the __Provider__ property of the __RadMap__ to the built-in __BingMapProvider__ class.        
+This example will use Azure Maps as its provider. In order to do that you have to set the `Provider` property of the RadMap to the built-in `AzureMapProvider` class.        
 
-#### __[XAML] Example 2: Specifying provider to the RadMap control__
+#### __[XAML] Specifying a provider to the RadMap control__
 {{region radmap-getting-started_1}}
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 		<Grid x:Name="LayoutRoot">
 			<telerik:RadMap x:Name="radMap">
 				<telerik:RadMap.Provider>
-					<telerik:BingRestMapProvider ApplicationId="Bing_Map_Key"
-											 Mode="Aerial"
-											 IsLabelVisible="True"/>
+					<telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"/>
 				</telerik:RadMap.Provider>
 			</telerik:RadMap>
 		</Grid>
 	</UserControl> 
-{{endregion}}
+{{endregion}}        
 
-#### __[C#] Example 3: Setting BingRestMapProvider__
-{{region radmap-getting-started_2}}
-	this.radMap.Provider = new BingRestMapProvider( MapMode.Aerial, true, "key" );
-{{endregion}}
+>important To use the Azure Maps with the RadMap control, you have to provide a valid subscription key. To learn how to obtain such a key, read [this topic](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-manage-account-keys). Note that the Azure Map will not appear in your RadMap control, without supplying a valid subscription key.          
 
-#### __[VB.NET] Example 3: Setting BingRestMapProvider__
-{{region radmap-getting-started_3}}
-	Me.radMap.Provider = New BingRestMapProvider(MapMode.Aerial, True, "key")
-{{endregion}}
+After specifying the provider, you should be able to see the respective map appear in the RadMap control.
 
-Using the third overload of the __BingRestMapProvider's__ constructor, allows you to pass some starting parameters:        
-
-* The starting view mode of the map: Aerial.
-
-* The visibility of the map labels: Visible.
-
-* A __Bing Maps__ specific key.            
-
->In order to use the __Bing Maps__ with the __RadMap__ control, you have to provide a valid __Bing Maps Key__. To learn how to obtain such a key, read [this topic](https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key). Note that the __Bing Map won't__ __appear__ in your __RadMap__ control, without supplying the key.          
-
-After specifying the provider, you should be able to see the respective map appear in the __RadMap__ control.
-
-![{{ site.framework_name }} RadMap Getting Started](images/RadMap_GettingStarted_01.png)
+![RadMap Getting Started](images/RadMap_GettingStarted_01.png)
 
 ## Displaying Data
 
-You are able to display data on the top of the visualized map. The data may be represented by any framework element or map shape objects. This can be accomplished via the __RadMap's__ layers.        
+You are able to display data on the top of the visualized map. The data may be represented by any framework element or map shape objects. This can be accomplished via the RadMap's layers.        
 
 There are two visualization engines in the RadMap package:
 
-* The old implementation of the map objects' (points and shapes) visualization consists of three layers: __InformationLayer__, __DynamicLayer__ and __VirtualizationLayer__. This visualization engine, however, lacks certain features and has a few performance issues.            
+* The old implementation of the map objects' (points and shapes) visualization consists of three layers: `InformationLayer`, `DynamicLayer` and `VirtualizationLayer`. This visualization engine, however, lacks certain features and has a few performance issues.     
 
-* In the __Q2 2013__ release we introduced a new visualization engine in the RadMap. It has been designed from scratch to have better performance. The new visualization engine replaces all three layers with the new __VisualizationLayer__.            
-
-The major goals of the new engine are:        
+The major goals of the new engine are:
 
 * Improve the performance of the data visualization.
 
@@ -133,34 +106,6 @@ The controls from our suite support different themes. You can see how to apply a
 
 >important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
 
-To change the theme, you can follow the steps below:
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Fluent.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#Map/Theming){% endif %} application.
-
-* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For __RadMap__, you will need to merge the following resources:
-
-	* __Telerik.Windows.Controls__
-	* __Telerik.Windows.Controls.DataVisualization__
-
-__Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
-
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radmap-getting-started_04}}
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.DataVisualization.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-{{endregion}}
-
-__Figure 4__ shows __RadMap__ with the **Fluent** theme applied.
-	
-#### __Figure 4: RadMap with the Fluent theme__
-![Telerik {{ site.framework_name }} Map-fluent](images/radmap-fluent.png)
-
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
@@ -178,4 +123,3 @@ __Figure 4__ shows __RadMap__ with the **Fluent** theme applied.
 
  * [Overview]({%slug radmap-overview%})
  * [Visual Structure]({%slug radmap-visual-structure%})
- * [Bing Map Rest Provider]({%slug radmap-features-providers-bing-rest-map%})

@@ -12,6 +12,8 @@ position: 2
 
 The RadMap control allows the user to implement search functionality, that will let the user search for a specific place on the map.  The search is performed through an __IBingRestSearchLocationProvider__ interface, which communicates with the respective map provider's services. The __BingRestMapProvider__ implements this interface. In the following sections of this article we will demonstrate how you can implement this functionality.
 
+>caution The Bing Maps REST Services is [deprecated](https://learn.microsoft.com/en-us/bingmaps/rest-services/). The BingRestMapProvider will be supported until 2026 Q2 inclusive. To avoid disruptions, you can use the [Azure Maps Services](https://learn.microsoft.com/en-us/azure/azure-maps/), which are supported by the RadMap control via the [AzureMapProvider](radmap-features-providers-azuremapprovider).
+
 >The RadMap search functionality wraps the [Location API](https://msdn.microsoft.com/en-us/library/ff701715.aspx) of the Bing Rest Map services.
 
 ## Find a place by given Location or Query

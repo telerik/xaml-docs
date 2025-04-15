@@ -10,7 +10,11 @@ position: 1
 
 # Imagery sets
 
-The Bind Maps Rest Provider imagery service supports different types of visualization. The possible imagery sets which can be used are:
+The Bind Maps Rest Provider imagery service supports different types of visualization.
+
+>caution The Bing Maps REST Services is [deprecated](https://learn.microsoft.com/en-us/bingmaps/rest-services/). The BingRestMapProvider will be supported until 2026 Q2 inclusive. To avoid disruptions, you can use the [Azure Maps Services](https://learn.microsoft.com/en-us/azure/azure-maps/), which are supported by the RadMap control via the [AzureMapProvider](radmap-features-providers-azuremapprovider).
+
+The possible imagery sets which can be used are:
 * [__Aerial with Labels__](#aerial-with-labels)
 * [__Aerial without Labels__](#aerial-without-labels)
 * [__AerialOnDemand__](#aerialondemand)

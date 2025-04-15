@@ -35,7 +35,6 @@ If you are not using NuGet packages, you can add a reference to the required ass
 * __Telerik.Windows.Controls.FixedDocumentViewers.dll__
 * __Telerik.Windows.Documents.Core.dll__
 * __Telerik.Windows.Documents.Fixed.dll__
-* __Telerik.Windows.Zip.dll__
 
 If you want to include a RadToolBar, you also need to reference:
 

@@ -346,7 +346,7 @@ When a formula is already entered and you would like to see the references used 
 
 ## Working with the Current Region
 
-The current region concept is represented by a `CellRange` object that represents all adjacent cells around the active cell of the `Selection` object. The range expands around the active cell in all directions, until it reaches empty cells.
+The current region concept is represented by a `CellRange` object that contains all adjacent non-empty cells around the active cell of the `Selection` object. The range expands around the active cell in all directions, until it reaches empty cells.
 
 The range can be accessed with the `CurrentRegion` property of the `Selection` object.
 

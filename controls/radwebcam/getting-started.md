@@ -30,7 +30,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 * __Telerik.Windows.Controls.Navigation__
 * __Telerik.Windows.MediaFoundation__
 * __MediaFoundation__: This dll is located in the *UI for WPF installation folder/Binaries or Binaries.NoXaml/{.NET Version}/MediaFoundation* folder.
-* [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/2.88.6) (version 2.88.6).
+* [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/3.116.1) (version 3.116.1).
 
 For __.NET 6__ and later you will need to install also the `System.Drawing.Common` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 

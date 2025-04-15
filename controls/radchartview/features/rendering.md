@@ -25,7 +25,7 @@ Skia is 2D graphic library for drawing graphics in a performant way. The RadChar
 
 In order to use the `SkiaRenderOptions`, you will need to reference the following binaries in your project:
 
-* [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/2.88.6) (version 2.88.6).
+* [SkiaSharp NuGet package](https://www.nuget.org/packages/SkiaSharp/3.116.1) (version 3.116.1).
 * __Telerik.Windows.Controls.Chart.Skia.dll__
 
 After that you can set the `RenderOptions` property of the series.

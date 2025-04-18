@@ -1,7 +1,7 @@
 ---
 title: Wraparound
 page_title: Wraparound
-description: Check our &quot;Wraparound&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Wraparound&quot; documentation article for the RadMap control.
 slug: radmap-features-wraparound
 tags: wraparound, continuous, panning, horizontal, infinite
 published: True
@@ -63,8 +63,6 @@ When the wraparound feature is enabled on the RadMap the built-in MiniMap also h
 
 The wraparound feature is supported by the following providers.
 
-* __BingRestMapProvider__
-
 * __OpenStreetMapProvider__
 
 * __ArcGisMapProvider__
@@ -73,4 +71,3 @@ The wraparound feature is supported by the following providers.
  * [Getting Started] ({%slug radmap-getting-started%})
  * [MiniMap] ({%slug radmap-features-mini-map%})
  * [Wraparound with Virtualization in VisualizationLayer] ({%slug radmap-howto-wraparound-virtualization-visualizationlayer%})
- * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%})

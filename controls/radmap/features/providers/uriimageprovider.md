@@ -10,7 +10,7 @@ position: 6
 
 # UriImageProvider
 
-RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like BingRestMapProvider and OpenStreetMapProvider.
+RadMap provides support for single image provider through the __UriImageProvider__ class besides the built-in support for tiled (MultiScaleImage) providers like AzureMapProvider and OpenStreetMapProvider.
 
 >important The UriImageProvider is suitable for showing images of city areas or cities. It is not designed to handle big geographical spaces (such as entire countries or continents) as this may result in a considerably big size of the created images which may cause an **OutOfMemoryException** on some machines.
       

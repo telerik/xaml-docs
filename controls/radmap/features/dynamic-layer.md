@@ -1,7 +1,7 @@
 ---
 title: Dynamic Layer
 page_title: Dynamic Layer
-description: Check our &quot;Dynamic Layer&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Dynamic Layer&quot; documentation article for the RadMap control.
 slug: radmap-features-dynamic-layer
 tags: dynamic,layer
 published: True
@@ -159,15 +159,15 @@ In this method you have to implement your logic for getting the desired items. T
 	End Class
 {{endregion}}
 
-You can set the dynamic source to a new instance of the *MapDynamicSource* and create a new definition for the __BingMaps__ provider:        
+You can set the dynamic source to a new instance of the MapDynamicSource and create a new definition for the AzureMapProvider:        
 
 #### __C#__
 {{region radmap-features-dynamic-layer_3}}
 	public MainPage()
 	{
-	  InitializeComponent();
-	  this.radMap.Provider = new BingRestMapProvider(MapMode.Aerial, true, "--Your Key here--"); 
-	  this.dynamicLayer.DynamicSource = new MapDynamicSource();
+	    InitializeComponent();
+        this.radMap.Provider = new AzureMapProvider() { SubscriptionKey = "Your Subscription Key" };
+        this.dynamicLayer.DynamicSource = new MapDynamicSource();
 	}
 {{endregion}}
 
@@ -175,8 +175,8 @@ You can set the dynamic source to a new instance of the *MapDynamicSource* and c
 {{region radmap-features-dynamic-layer_4}}
 	Public Sub New()
 		InitializeComponent()
-		Me.radMap.Provider = New BingRestMapProvider(MapMode.Aerial, True, "--Your Key here--")
-		Me.dynamicLayer.DynamicSource = New MapDynamicSource()
+        this.radMap.Provider = new AzureMapProvider() { SubscriptionKey = "Your Subscription Key" };
+        this.dynamicLayer.DynamicSource = new MapDynamicSource();
 	End Sub
 {{endregion}}
 
@@ -184,11 +184,11 @@ The result:
 
 ZoomLevel = 3:
 
-![{{ site.framework_name }} RadMap Dynamic Layer Zoom Level 3](images/RadMap_Features_DynamicLayer_03.png.PNG)
+![{{ site.framework_name }} RadMap Dynamic Layer Zoom Level 3](images/RadMap_Features_DynamicLayer_03.png)
 
 ZoomLevel = 6:
 
-![{{ site.framework_name }} RadMap Dynamic Layer Zoom Level 6](images/RadMap_Features_DynamicLayer_06.png.PNG)
+![{{ site.framework_name }} RadMap Dynamic Layer Zoom Level 6](images/RadMap_Features_DynamicLayer_06.png)
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

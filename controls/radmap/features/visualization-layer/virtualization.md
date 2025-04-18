@@ -1,7 +1,7 @@
 ---
 title: Items Virtualization
 page_title: Items Virtualization
-description: Check our &quot;Items Virtualization&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Items Virtualization&quot; documentation article for the RadMap  control.
 slug: radmap-visualization-layer-virtualization
 tags: items,virtualization
 published: True
@@ -36,7 +36,7 @@ The __ZoomLevelGrid__ exposes the following properties:
 
 * __MinZoom__: A property of type __int__ that gets or sets the minimum zoom.            
 
-By default the cell has a size which equals the size of tile (256x256) which is usually used by the map providers like Bing and OpenStreet. Specifying the size of а cell for the zoom level affects a number of requests to a __Virtualization Source__ which is depended on the viewport size of the map.        
+By default the cell has a size which equals the size of tile (256x256) which is usually used by the map providers like AzureMapProvider and OpenStreetMapProvider. Specifying the size of а cell for the zoom level affects a number of requests to a __Virtualization Source__ which is depended on the viewport size of the map.        
 
 >important If the requests are performed slowly (for example they use a service which has low performance) you can increase the cell size to lower the number of requests.          
     

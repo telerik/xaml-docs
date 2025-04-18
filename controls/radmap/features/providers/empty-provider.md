@@ -37,4 +37,3 @@ Here is an example of creating an __EmptyProivder__ and setting it to the __RadM
 
 ## See Also
  * [Providers Overview]({%slug radmap-features-providers%})
- * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%})

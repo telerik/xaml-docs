@@ -77,12 +77,23 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 {{region persistence-framework-isolated-storage_1}}
 	private void Save(object sender, RoutedEventArgs e)
 	{
-		IsolatedStorageProvider isoProvider = new IsolatedStorageProvider();
+		var manager = new PersistenceManager() 
+			.AllowNavigationControls() 
+			.AllowRichTextBoxControls();  
+		manager.AllowedTypes.Add(typeof(MyCustomType)); 
+ 
+		IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager); 
 		isoProvider.SaveToStorage();
 	}
+	
 	private void Load(object sender, RoutedEventArgs e)
 	{
-		IsolatedStorageProvider isoProvider = new IsolatedStorageProvider();
+		var manager = new PersistenceManager() 
+			.AllowNavigationControls() 
+			.AllowRichTextBoxControls();  
+		manager.AllowedTypes.Add(typeof(MyCustomType)); 
+ 
+		IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager);
 		isoProvider.LoadFromStorage();
 	}
 {{endregion}}
@@ -101,17 +112,20 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 
 The __IsolatedStorageProvider.SaveToStorage()__ method will save the properties of all controls for which the __telerik:PersistenceManager.StorageId__ attached property is set. In __Example 2__ all properties of the __RadTreeView__ and the __ContentControl__ will be saved:
 
-#### __Figure 1: Result from Example 1__
+#### __Figure 1: Result from Example 1__  
 ![Using the IsolatedStorageProvider](images/PersistenceFramework_IsolatedStorage_Initial.png)
 
-1. Expand Condiments and select Gula Malacca. Add description for the item in the Details ContentControl. Then hit Save:
-![Saving the layout with the IsolatedStorageProvider](images/PersistenceFramework_IsolatedStorage_Save.png)
+1. Expand Condiments and select Gula Malacca. Add description for the item in the Details ContentControl. Then hit Save:  
+
+	![Saving the layout with the IsolatedStorageProvider](images/PersistenceFramework_IsolatedStorage_Save.png)
 
 2. Now change the layout of the UserControl - for example collapse Condiments and expand Confections. Then Select Maxilaku and add description for it. 
-![Changing the layout](images/PersistenceFramework_IsolatedStorage_Change.png)
+
+	![Changing the layout](images/PersistenceFramework_IsolatedStorage_Change.png)
 
 3. If you want to retrieve the previous state of the controls in your page, all you need to do is hit Load:
-![Loading the layout with the IsolatedStorageProvider](images/PersistenceFramework_IsolatedStorage_Load.png)
+	
+	![Loading the layout with the IsolatedStorageProvider](images/PersistenceFramework_IsolatedStorage_Load.png)
 
 ## IsolatedStorageProvider Members
 

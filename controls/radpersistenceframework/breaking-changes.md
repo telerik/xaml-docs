@@ -12,6 +12,10 @@ position: 6
 
 This article lists and describes the breaking changes introduced in the RadPersistenceFramework. For a full list of changes, see the [Release History](https://www.telerik.com/support/whats-new/wpf/release-history) pages of the Telerik UI for WPF product.
 
+## 2025 Q2
+
+* The obsolete `IsolatedStorageProvider` empty constructor was removed. Now you need to provide a `PersistenceManager` object in the constructor with its [Allowed Types]({%slug persistence-framework-allowed-types%}) collection populated with safe types.
+
 ## 2024 Q4 (2024.4.1213)
 
 The `PersistenceManager` now requires to provide a list of allowed types. If the list is `null` or if a type that is deserialized is not presented in the list, a `NotSupportedException` is thrown. 

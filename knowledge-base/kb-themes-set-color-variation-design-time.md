@@ -15,7 +15,7 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td>2023.3 1115</td>
+			<td>2023.3.1114</td>
 		</tr>
 		<tr>
 			<td>Product</td>

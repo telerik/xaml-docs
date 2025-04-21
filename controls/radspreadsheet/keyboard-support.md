@@ -32,6 +32,7 @@ By default, __RadSpreadSheet__ supports keyboard shortcuts that allow you to per
 |Ctrl + PageUp|Switch sheets to left|
 |Ctrl + Space|Select all cells|
 |Shift + Space|Select the entire row|
+|Ctrl + Shift + * | Select the current region |
 |PageDown|Move one screen down|
 |PageUp|Move one screen up|
 |Shift + PageDown|Move one screen down and select from current cell|

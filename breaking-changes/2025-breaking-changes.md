@@ -18,6 +18,8 @@ Currently, this section of the documentation contains only the latest release no
 
 * The Telerik UI for WPF product no longer distributes offline help documentation in the Help3 and CHM formats.
 
+* The `IsFullTrustExtension` class was removed. No longer needed in the .NET versions supported by Telerik.
+
 #### RichTextBox
 
 * The `MouseSelectionHandler(RadDocument document)` obsolete constructor of the `MouseSelectionHandler` class was removed. Instead, use the `MouseSelectionHandler(RadDocument document, IDocumentEditorPresenter presenter)` constructor.

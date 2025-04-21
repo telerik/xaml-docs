@@ -350,7 +350,7 @@ The current region concept is represented by a `CellRange` object that contains 
 
 ![A picture showing the current region concept in RadSpreadsheet](images/RadSpreadsheet_UI_Selection_14.png)
 
-The range can be accessed with the `CurrentRegion` property of the `Selection` object.
+The range can be accessed with the `CurrentRegion` property of the `Selection` instance.
 
 #### __[C#] Getting the current region__  
 {{region radspreadsheet-ui-working-with-selection-10}}
@@ -358,13 +358,16 @@ The range can be accessed with the `CurrentRegion` property of the `Selection` o
 	CellRange currentRegion = selection.CurrentRegion;
 {{endregion}}
 
-To select the current region, call the `SelectCurrentRegion` method of the `CellPosition` object.
+To select the current region, call the `SelectCurrentRegion` method of the `CellPosition` instance.
 
 #### __[C#] Selecting the current region programmatically__  
 {{region radspreadsheet-ui-working-with-selection-11}}
 	Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection; 
 	CellPosition activePosition = selection.ActiveRange.ActivePosition;
-	bool result = activePosition.SelectCurrentRegion();
+	
+ 	bool result = activePosition.SelectCurrentRegion();
+ 	//or
+  	selection.Select(selection.CurrentRegion);
 {{endregion}}
 
 The current region can be selected also using the `Ctrl+Shift+*` keyboard combination.

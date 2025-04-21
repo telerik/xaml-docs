@@ -136,6 +136,6 @@ __RadAIPrompt with the Fluent theme__
 * [Views]({%slug radaiprompt-views%})
 * [Suggestions]({%slug radaiprompt-suggestions%})
 * [Events]({%slug radaiprompt-events%})
-* [RadAIPromptButon]({%slug radaiprompt-prompt-button%})
+* [RadAIPromptButton]({%slug radaiprompt-prompt-button%})
 * [Commands]({%slug radaiprompt-commands%})
 * [Paging]({%slug radaiprompt-paging%})

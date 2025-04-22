@@ -10,10 +10,9 @@ position: 1
 
 # RadDocument
 
-
 __RadDocument__ is the root element for __RadRichTextBox's__ content. It holds the collection of __Sections__ defined for the __RadRichTextBox__ content. It also enables you to configure the appearance of its child elements.
       
-## Work with the Contents of RadDocument Through its API
+## RadDocument Settings
 
 The **RadDocument** class exposes numerous properties and methods enabling you to control settings and apply modifications related to the document. The next list shows several of the most used properties:
 
@@ -29,10 +28,7 @@ The **RadDocument** class exposes numerous properties and methods enabling you t
 		</telerik:RadRichTextBox>
 	{{endregion}}
 	
-	
-	
-	>The __SectionDefault~__ settings get applied only when Paged layout mode is used.
-                  
+	>The __SectionDefault~__ settings get applied only when Paged layout mode is used.                  
 
 * __SectionDefaultPageMargin__: Defines the default margin for each of the sections in the **RadDocument**. To assign different margins for each of the sections, use the respective property of the [__Section__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.section) class.
 
@@ -57,27 +53,28 @@ The **RadDocument** class exposes numerous properties and methods enabling you t
 
 There are also members allowing you to control different features and functionalities, like:
 
--	Bibliographics
--	Document variables and fields
--	Captions
--	Caret position
--	Comments
--	Endnotes and footnotes
--	Revisions 
--	Layout and styling settings
--	Line breaking rules
--	Mail merge 
--	Protection
--	Selection
+- Bibliographics
+- Document variables and fields
+- Captions
+- Caret position
+- Comments
+- Endnotes and footnotes
+- Revisions 
+- Layout and styling settings
+- Line breaking rules
+- Mail merge 
+- Protection
+- Selection
 
 >For the full list of the members refer to the [RadDocument API Reference](https://docs.telerik.com/devtools/{{ site.framework_name }}/api/telerik.windows.documents.model.raddocument) page.
-
 
 ## Specifics
 
 The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Visual Tree, it is measured by the framework and arranges its children. This is the moment when the layout cycle is completed; each of the document elements calculates its size and arranges its children.
 
 As the two states of the document - measured and not measured are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor.
+
+The RadDocument class provides a rich set of settings, but because of the required measure and arrange phases, the rendering of its contents may not work properly when working with the RadDocument API directly. Instead, when modifying content we recommend using the [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) instead.
 
 ## Adding Sections to RadDocument
 

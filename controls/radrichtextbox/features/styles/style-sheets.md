@@ -102,7 +102,7 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 
 {{region radrichtextbox-features-style-sheets_5}}
     SaveFileDialog sfd = new SaveFileDialog();
-    sfd.Filter = "Xaml Files|*.xaml";
+    sfd.Filter = "Xaml Files|\*.xaml";
     if (sfd.ShowDialog() == true)
     {
         using (var stream = sfd.OpenFile())
@@ -120,7 +120,7 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 
 {{region radrichtextbox-features-style-sheets_6}}
     Dim sfd As New SaveFileDialog()
-    sfd.Filter = "Xaml Files|*.xaml"
+    sfd.Filter = "Xaml Files|\*.xaml"
     If sfd.ShowDialog() = True Then
 	    Using stream = sfd.OpenFile()
     Dim stylesheet As New Stylesheet()

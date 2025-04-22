@@ -98,13 +98,18 @@ In addition to its API, RadRichTextBox has a rich set of commands, exposed throu
 
 >tip To learn more about Commands read [this topic]({%slug radrichtextbox-features-commands%}).       
 
-These commands can also be used with the predefined UI that comes with RadRichTextBox - RadRichTextBoxRibbonUI, which is a ribbon control based on [RadRibbonView]({%slug radribbonview-overview%}). You can use the predefined and customizable `ContextMenu` and `SelectionMiniToolBar` as well. In order to do so, make sure your project references the following assemblies:        
+These commands can also be used with the predefined UI that comes with RadRichTextBox - `RadRichTextBoxRibbonUI`, which is a ribbon control based on [RadRibbonView]({%slug radribbonview-overview%}). You can use the predefined and customizable `ContextMenu` and `SelectionMiniToolBar` as well. 
 
-* __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Input__
-* __Telerik.Windows.Controls.Navigation__
-* __Telerik.Windows.Controls.RibbonView__
-* __Telerik.Windows.Controls.RichTextBoxUI__
+__In .NET 8__, the predefined UI is included in the `Telerik.Windows.Controls.RichTextBox.dll`. You can access the additional controls after installing the `Telerik.Windows.Controls.RichTextBox.for.Wpf` NuGet package or referencing the dll. 
+
+__In .NET Framework (4.6.2 to 4.8)__, the predefined dll is located in a separate assembly named `Telerik.Windows.Controls.RichTextBoxUI.dll`. To access the additional controls, install the `Telerik.Windows.Controls.RichTextBoxUI.for.Wpf` NuGet package or reference the dll.
+
+If you reference the corresponding dll manually (instead of using the NuGet package), you should add references also to the following dlls:
+
+* `Telerik.Windows.Controls`
+* `Telerik.Windows.Controls.Input`
+* `Telerik.Windows.Controls.Navigation`
+* `Telerik.Windows.Controls.RibbonView`
 
 __Predefined RadRichTextBoxRibbonUI__
 

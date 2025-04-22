@@ -12,7 +12,7 @@ position: 1
 
 This article will list the breaking changes and how they can be fixed when upgrading to a specific version of the controls to the next one.
 
-## What's Differet in 2025 Q1
+## What's Different in 2025 Q1
 
 The `ShouldPersist` and `ShouldStartNewComposition` properties of the `TextInsertedEventArgs` class are now obsoleted. Use the `ImeLanguage` and `CurrentEvent` properties instead.
 

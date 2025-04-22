@@ -20,7 +20,6 @@ __ExportToWorkbook__ uses additional libraries so you need to add references to 
 * Telerik.Windows.Documents.Core.dll
 * Telerik.Windows.Documents.Spreadsheet.dll 
 * Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
-* Telerik.Windows.Zip.dll
 
 ## Usage
 

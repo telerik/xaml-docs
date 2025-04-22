@@ -25,7 +25,6 @@ The minimal set of assembly references you need to add to your {% if site.site_n
 * __Telerik.Windows.Controls.FixedDocumentViewers.dll__
 * __Telerik.Windows.Documents.Core.dll__
 * __Telerik.Windows.Documents.Fixed.dll__
-* __Telerik.Windows.Zip.dll__
 
 >tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
 

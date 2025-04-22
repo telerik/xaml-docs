@@ -344,6 +344,5 @@ The final step is to set the custom __VirtualizationSource__ class to the __Virt
 Similar and more complex example you can find in our [GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Map/WPF/WrapAroundAndVirtualization).
 
 ## See Also
- * [Bing Map Rest Provider]({%slug radmap-features-providers-bing-rest-map%})
  * [VisualizationLayer - Introduction]({%slug radmap-visualization-layer-introduction%})
  * [Wraparound] ({%slug radmap-features-wraparound%}) 

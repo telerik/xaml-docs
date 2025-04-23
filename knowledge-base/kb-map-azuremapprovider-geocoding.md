@@ -1,10 +1,10 @@
 ---
-title: Implement Geocoding with the Azure Map Services
-page_title: Searching Locations Using Azure Map Services
-description: This article showcases how to achieve geocoding (searching) using the Azure Map Services
+title: Implement Geocoding with the Azure Maps Services
+page_title: Searching Locations Using Azure Maps Services
+description: This article showcases how to achieve geocoding (searching) using the Azure Maps services.
 type: how-to
 slug: kb-map-azuremapprovider-geocoding
-tags: map, azure, search, geocoding, azure map, provider
+tags: map, azure, search, geocoding, Azure Maps, provider
 res_type: kb
 ---
 
@@ -24,11 +24,11 @@ res_type: kb
 
 ## Description
 
-Implementing geocoding (searching) functionality using the Azure Map Services.
+Implementing geocoding (searching) functionality using the Azure Maps services.
 
 ## Solution
 
-To achieve geocoding functionality using the Azure Map Services, you can create a new helper class. It will create a URL request for the Microsoft's geocoding API and use the response to center the RadMap control. In order to receive a valid response from the geocoding API, you will need to pass a valid location and subscription key to the request URL string.
+To achieve geocoding functionality using the Azure Maps services, you can create a new helper class. It will create a URL request for the Microsoft's geocoding API and use the response to center the RadMap control. In order to receive a valid response from the geocoding API, you will need to pass a valid location and subscription key to the request URL string.
 
 #### __[C#] Implementing a helper class for retrieving the searched location__
 {{region kb-map-azuremapprovider-geocoding-0}}
@@ -38,7 +38,7 @@ To achieve geocoding functionality using the Azure Map Services, you can create 
 
         internal async static Task<Location> GetGeoCode(string location)
         {
-            //Modify this URL to match your Azure Maps subscription key and location
+            //Modify this URL to match your Azure Mapss subscription key and location
             var requestUrl = $"https://atlas.microsoft.com/geocode?api-version=2025-01-01&query={location}&subscription-key={MyAzureMapsSubscriptionKey}";
 
             var response = await httpClient.GetAsync(requestUrl);
@@ -172,3 +172,5 @@ Additionally, you can follow the next example, which showcases how to utilize th
 __RadMap with AzureMapProvider and geocoding functionality__
 
 ![RadMap with AzureMapProvider and geocoding functionality](images/kb-map-azuremapprovider-geocoding.png)
+
+>tip For a more in-depth example of an Azure Maps services routing, check the __Routing__ demo from our [Demos application]({%slug installing-wpf-demos%}).

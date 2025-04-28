@@ -130,8 +130,9 @@ The __LinearAxis__ has an additional event which will be fired when the MajorSte
 			var unSelectedPoints = e.RemovedPoints;
 		}
 	{{endregion}}
-	
-## Provider events
+
+<br/>
+## Provider events  
 
 * __ChartSeriesProvider__: The series provider exposes the following events:
 
@@ -154,8 +155,7 @@ The __LinearAxis__ has an additional event which will be fired when the MajorSte
 			object test = e.Context;
 			ChartAnnotation createdAnnotation = e.Annotation;
 		}
-	{{endregion}}
-	  
+	{{endregion}}	  
 	  
 ## See Also  
 * [Getting Started]({%slug radchartview-introduction%})

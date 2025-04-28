@@ -20,6 +20,8 @@ To show separators between the menu items, you can use the `RadMenuSeparatorItem
 	    <!-- other items here -->
 	</telerik:RadMenu> 
 {{endregion}}
+
+![{{ site.framework_name }} RadMenu Separator Item](images/RadMenu_Features_Separator_Items_01.png)
  
 ## See Also  
  * [Checkable Items]({%slug radmenu-features-checkable-items%})  

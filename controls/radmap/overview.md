@@ -37,9 +37,9 @@ __RadMap's__ key features include:
 
 * __KML Data Import__- __RadMap__ provides support for stunning map overlays through its KML-import feature.  Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__ control.
 
-* __Routing__ - the control provides Azure Maps routing support.          
+* __Routing__: The control supports routing. You can do this via the Azure Maps services and the `VirtualizationLayer`. For an example, check this [article]({%slug kb-map-azuremapprovider-routing%}).       
 
-* __Geocode__ - __RadMap__ has Azure Maps geocoding support.          
+* __Search/Geocode__: RadMap supports searching locations. You can do this via the Azure Maps services and the `VirtualizationLayer`. You can check this [article]({%slug kb-map-azuremapprovider-geocoding%}) to see an example for this functionality.       
 
 Do not miss the online demos at: {% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#Map/SalesDashboard](https://demos.telerik.com/silverlight/#Map/SalesDashboard){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/#Map/SalesDashboard](https://demos.telerik.com/wpf/#Map/SalesDashboard){% endif %}
 

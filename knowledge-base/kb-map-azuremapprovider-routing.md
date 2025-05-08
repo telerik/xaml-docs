@@ -208,7 +208,7 @@ To achieve routing functionality using the Azure Maps services, you can create a
 
 Additionally, you can follow the next example, which showcases how to utilize the created `AzureRoutingHelper` class and its logic.
 
-#### __[XAML] Defining the RadMap and the UI elements for the geocoding logic__
+#### __[XAML] Defining the RadMap and the UI elements for the routing logic__
 {{region kb-map-azuremapprovider-routing-2}}
 <Grid x:Name="LayoutRoot" Margin="8">
     <Grid.RowDefinitions>

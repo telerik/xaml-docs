@@ -173,4 +173,4 @@ __RadMap with AzureMapProvider and geocoding functionality__
 
 ![RadMap with AzureMapProvider and geocoding functionality](images/kb-map-azuremapprovider-geocoding.png)
 
->tip For a more in-depth example of an Azure Maps services routing, check the __Routing__ demo from our [Demos application]({%slug installing-wpf-demos%}).
+>tip For a more in-depth example of an Azure Maps services geocoding, check the __Geocoding__ demo from our [Demos application]({%slug installing-wpf-demos%}).

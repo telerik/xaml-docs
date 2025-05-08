@@ -36,6 +36,8 @@ If you are not using NuGet packages, you can add a reference to the required ass
 * __Telerik.Windows.Documents.Core.dll__
 * __Telerik.Windows.Documents.Fixed.dll__
 
+>tip With the 2025 Q1 release, the Telerik UI for WPF has a new licensing mechanism. You can learn more about it [here]({%slug installing-license-key%}).
+
 If you want to include a RadToolBar, you also need to reference:
 
 * __Telerik.Windows.Controls.Input.dll__

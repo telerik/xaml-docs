@@ -12,6 +12,8 @@ position: 6
 
 The `RadMap` control allows you to specify the layer option that will be displayed over the received Bing Maps imagery service. To specify the layer or layers, set the `TopLayer` property of the `BingRestMapProvider` instance. This property is of the type `BingTopLayer`.
 
+>caution The Bing Maps REST Services is [deprecated](https://learn.microsoft.com/en-us/bingmaps/rest-services/). The BingRestMapProvider will be supported until 2026 Q2 inclusive. To avoid disruptions, you can use the [Azure Maps Services](https://learn.microsoft.com/en-us/azure/azure-maps/), which are supported by the RadMap control via the [AzureMapProvider](radmap-features-providers-azuremapprovider).
+
 The TopLayer property is a flag enumeration and it allows you to specify more than one layer. The options that are exposed by the `BingTopLayer` enumeration are as follows:
 
 * `Basemap`&mdash;This option displays the regular road map layer with labels. This option is the default value of the TopLayer property.

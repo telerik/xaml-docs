@@ -14,7 +14,7 @@ The vector tile format allows you to store geospatial geometry data. This inform
 
 ![A picture showing WPF RadMap with UriVectorTileMapProvider](images/radmap-features-urivectortilemapprovider-0.png)
 
-The vector tiles contain only geometry information that is loaded (or downloaded) on demand when the current viewport changes. The appearance of the geometry is defined in a separate style file. Combining this information, the provider prepares and renders visuals on the client. Compared to this, the raster-based providers, like BingRestMapProvider, OpenStreetMapProvider or UriImageProvider, download a raster image from the associated server, which increases the network traffic.
+The vector tiles contain only geometry information that is loaded (or downloaded) on demand when the current viewport changes. The appearance of the geometry is defined in a separate style file. Combining this information, the provider prepares and renders visuals on the client. Compared to this, the raster-based providers, like AzureMapProvider, OpenStreetMapProvider or UriImageProvider, download a raster image from the associated server, which increases the network traffic.
 
 >important The vector tile providers (`UriVectorTileMapProvider`, `MbTilesMapProvider` and `MapBoxMapProvider`) work with the __Newtonsoft.Json__ framework. To use the provider, add a reference to the corresponding .dll or install the [nuget package](https://www.nuget.org/packages/Newtonsoft.Json/).
 

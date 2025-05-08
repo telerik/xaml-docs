@@ -1,7 +1,7 @@
 ---
 title: Implement Custom Map Provider
 page_title: Implement Custom Map Provider
-description: Check our &quot;Implement Custom Map Provider&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Implement Custom Map Provider&quot; documentation article for the RadMap control.
 slug: radmap-howto-custom-provider
 tags: implement,custom,map,provider
 published: True
@@ -16,7 +16,7 @@ If you need to consume a service which does not have a default provider, you can
 
 The **MapProviderBase** is the base class for all map providers. Two widely-used implementations of the class are the __TiledProvider__ and __ImageProvider__.
 
-* __TiledProvider__ is a base class for map providers that show a map as a sequence of tiles (e.g. [BingMaps]({%slug radmap-features-providers-bing-rest-map%}), [OpenStreetMap]({%slug radmap-features-providers%}#openstreet-maps).
+* __TiledProvider__ is a base class for map providers that show a map as a sequence of tiles (e.g. [AzureMapProvider]({%slug radmap-features-providers-azuremapprovider%}), [OpenStreetMap]({%slug radmap-features-providers%}#openstreet-maps).
 
 * __ImageProvider__ is a base class for providers that show a map as a single image ([UriImageProvider]({%slug radmap-features-uriimageprovider%})). 
 
@@ -60,7 +60,7 @@ As seen in **Example 1**, the next requirement is to add instances of the abstra
 
 The two default implementations of this abstract class are the __TiledMapSource__ and the __ImageMapSource__.
 
-* __TiledMapSource__ is a base class for map sources that return map tiles (that includes all BingMaps sources: aerial, road, birds eye, and all OpensStreetMap sources: Mapnik and Osmarenderer).
+* __TiledMapSource__ is a base class for map sources that return map tiles (that includes all OpensStreetMap sources: Mapnik and Osmarenderer).
 
 * __ImageMapSource__ is a base class for map sources that return a single map image.
 
@@ -180,5 +180,5 @@ A common requirement when using the RadMap control is to use the OpenStreetMap s
 ## See Also
 
 * [OpenStreetMap]({%slug radmap-features-providers%})#openstreet-maps)
-* [BingMaps]({%slug radmap-features-providers-bing-rest-map%})
+* [AzureMaps]({%slug radmap-features-providers-azuremapprovider%})
 * [UriImageProvider]({%slug radmap-features-uriimageprovider%})

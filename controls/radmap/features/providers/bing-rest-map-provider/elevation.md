@@ -12,6 +12,8 @@ position: 5
 
 RadMap Bing Elevation Service allows you to obtain elevation information of a location on a map. You can get the elevation information for a set of locations, polyline or area on the Earth. You can access the elevation service via __BingRestMapProvider__ provider. 
 
+>caution The Bing Maps REST Services is [deprecated](https://learn.microsoft.com/en-us/bingmaps/rest-services/). The BingRestMapProvider will be supported until 2026 Q2 inclusive. To avoid disruptions, you can use the [Azure Maps Services](https://learn.microsoft.com/en-us/azure/azure-maps/), which are supported by the RadMap control via the [AzureMapProvider](radmap-features-providers-azuremapprovider).
+
 >The RadMap built-in elevation service wraps the [Elevation API](https://msdn.microsoft.com/en-us/library/jj158959.aspx) of the Bing Maps Rest services.
 
 ![Rad Rest Map Routing Example](images/RadMap_Features_Rest_Provider_Elevation.png)

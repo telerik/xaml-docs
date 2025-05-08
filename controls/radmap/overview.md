@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview
-description: Check our &quot;Overview&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Overview&quot; documentation article for the RadMap control.
 slug: radmap-overview
 tags: overview
 published: True
@@ -23,7 +23,7 @@ Visualize rich geographical information with Telerik __RadMap__, zoom and pan sm
 
 __RadMap's__ key features include:        
 
-* __Map Sources__ - with Telerik __RadMap__ you can visualize rich geographical information from external geo imagery sources. Currently the __RadMap__ supports Bing Map Source, empty provider, OpenStreetMap provider and also offers custom provider extensibility options.          
+* __Map Sources__ - with Telerik __RadMap__ you can visualize rich geographical information from external geo imagery sources. Currently the __RadMap__ supports Azure Map Source, empty provider, OpenStreetMap provider and also offers custom provider extensibility options.          
 
 * __Pan and Zoom__ - Telerik __RadMap__ supports panning and zooming through the mouse, the keyboard and the navigational controls.          
 
@@ -35,13 +35,11 @@ __RadMap's__ key features include:
 
 * __Dynamic Layer__- the dynamic layer takes the information layer one step further allowing items virtualization using web services. This means that items are only loaded when the region of the map they belong to is visible. The result is a blazing fast __RadMap__.          
 
-* __KML Data Import__- __RadMap__ provides support for stunning map overlays through its KML-import feature.  Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__ control.          
+* __KML Data Import__- __RadMap__ provides support for stunning map overlays through its KML-import feature.  Once you have the desired set of features (place marks, images, polygons, textual descriptions, etc.) encoded in KML, you can easily import the data and visualize it through the __RadMap__ control.
 
-* __Search__ - __RadMap__ supports searching Locations via the search mechanism exposed by __BingRestMapProvider__.
+* __Routing__: The control supports routing. You can do this via the Azure Maps services and the `VirtualizationLayer`. For an example, check this [article]({%slug kb-map-azuremapprovider-routing%}).       
 
-* __Routing__ - the control provides Bing Maps routing support.          
-
-* __Geocode__ - __RadMap__ has __BingRestMapProvider__ geocoding support.          
+* __Search/Geocode__: RadMap supports searching locations. You can do this via the Azure Maps services and the `VirtualizationLayer`. You can check this [article]({%slug kb-map-azuremapprovider-geocoding%}) to see an example for this functionality.       
 
 Do not miss the online demos at: {% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#Map/SalesDashboard](https://demos.telerik.com/silverlight/#Map/SalesDashboard){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/#Map/SalesDashboard](https://demos.telerik.com/wpf/#Map/SalesDashboard){% endif %}
 

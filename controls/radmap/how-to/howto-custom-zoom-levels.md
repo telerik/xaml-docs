@@ -1,7 +1,7 @@
 ---
 title: Implement custom zoom levels for MapZoomBar UI
 page_title: Implement custom zoom levels for MapZoomBar UI
-description: Check our &quot;Implement custom zoom levels for MapZoomBar UI&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Implement custom zoom levels for MapZoomBar UI&quot; documentation article for the RadMap control.
 slug: radmap-howto-custom-zoom-levels
 tags: implement,custom,zoom,levels,for,mapzoombar,ui
 published: True
@@ -14,7 +14,7 @@ It is now possible to customize the default preset zoom levels in the MapZoomBar
 
 ## Customization of the zoom levels in the MapZoomBar
 
-You can add custom zoom level through the __MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel, commandText, dataTemplate, imageUri)__:
+You can add custom zoom level through the `MapZoomBar.RegisterSetZoomLevelCommand` method, which accepts the following parameters:
 
 * zoomLevel - Specifies the zoom level to set.
 
@@ -26,7 +26,7 @@ You can add custom zoom level through the __MapZoomBar.RegisterSetZoomLevelComma
 
 Here is a sample code snippet that demonstrates zoom level customization:
 
-#### __XAML__
+#### __[XAML]__
 {{region radmap-howto-custom-zoom-levels_0}}
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
@@ -75,56 +75,67 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	</Grid>
 {{endregion}}
 
-#### __C#__
+#### __[C#]__
 {{region radmap-howto-custom-zoom-levels_1}}
-	private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
-	private string VEKey;
-	private BingRestMapProvider provider;
-	public MainPage()
+	public class MainWindow : Window
 	{
-	    this.provider = new BingRestMapProvider(MapMode.Aerial, true, this.VEKey);
-	    this.RadMap1.Provider = provider;
-	    this.RadMap1.InitializeCompleted += new EventHandler(RadMap1_InitializeCompleted);
-	}
-	
-	private void RadMap1_InitializeCompleted(object sender, EventArgs e)
-	{
-	    // remove the default zoom levels
-	    RadMap1.MapZoomBar.Commands.Clear();
-	    this.AddCustomZoomAction(15, "Downtown");
-	    this.AddCustomZoomAction(18, "Neighborhood");
-	    this.AddCustomZoomAction(20, "Block");
-	}
-	private void AddCustomZoomAction(int zoomLevel, string label)
-	{
-	    string imagePath = string.Format(ImagePathFormat, label);
-	    this.RadMap1.MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel,
-	        label,
-	        this.LayoutRoot.Resources["CustomCommandDataTemplate"] as DataTemplate,
-	        new Uri(imagePath, UriKind.RelativeOrAbsolute));
+		private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
+		private AzureMapProvider provider;
+
+		public MainPage()
+		{
+		    this.provider = new AzureMapProvider(){ SubscriptionKey = "Your Subscription Key" };
+		    this.RadMap1.Provider = provider;
+		    this.RadMap1.InitializeCompleted += new EventHandler(RadMap1_InitializeCompleted);
+		}
+
+		private void RadMap1_InitializeCompleted(object sender, EventArgs e)
+		{
+		    // remove the default zoom levels
+		    RadMap1.MapZoomBar.Commands.Clear();
+		    this.AddCustomZoomAction(15, "Downtown");
+		    this.AddCustomZoomAction(18, "Neighborhood");
+		    this.AddCustomZoomAction(20, "Block");
+		}
+		private void AddCustomZoomAction(int zoomLevel, string label)
+		{
+		    string imagePath = string.Format(ImagePathFormat, label);
+		    this.RadMap1.MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel,
+		        label,
+		        this.LayoutRoot.Resources["CustomCommandDataTemplate"] as DataTemplate,
+		        new Uri(imagePath, UriKind.RelativeOrAbsolute));
+		}
 	}
 {{endregion}}
 
 #### __VB.NET__
 {{region radmap-howto-custom-zoom-levels_2}}
-	Private Const ImagePathFormat As String = "/Map;component/Silverlight/CustomCommands/Images/{0}.png"
-	Private VEKey As String
-	Private provider As BingRestMapProvider
-	Public Sub New()
-	 Me.provider = New BingRestMapProvider(MapMode.Aerial, True, Me.VEKey)
-	 Me.RadMap1.Provider = provider
-	 Me.RadMap1.InitializeCompleted += New EventHandler(RadMap1_InitializeCompleted)
-	End Sub
+	Public Partial Class MainWindow
+    Inherits Window
+
+    	Private Const ImagePathFormat As String = "/Map;component/Silverlight/CustomCommands/Images/{0}.png"
+    	Private provider As AzureMapProvider
 	
-	Private Sub RadMap1_InitializeCompleted(sender As Object, e As EventArgs)
-	 ' remove the default zoom levels '
-	 RadMap1.MapZoomBar.Commands.Clear()
-	 Me.AddCustomZoomAction(15, "Downtown")
-	 Me.AddCustomZoomAction(18, "Neighborhood")
-	 Me.AddCustomZoomAction(20, "Block")
-	End Sub
-	Private Sub AddCustomZoomAction(zoomLevel As Integer, label As String)
-	 Dim imagePath As String = String.Format(ImagePathFormat, label)
-	 Me.RadMap1.MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel, label, TryCast(Me.LayoutRoot.Resources("CustomCommandDataTemplate"), DataTemplate), New Uri(imagePath, UriKind.RelativeOrAbsolute))
-	End Sub
+    	Public Sub New()
+    	    StyleManager.ApplicationTheme = New Windows11Theme()
+    	    InitializeComponent()
+    	    Me.provider = New AzureMapProvider() With {
+    	        .SubscriptionKey = "Your Subscription Key"
+    	    }
+    	    Me.RadMap1.Provider = provider
+    	    Me.RadMap1.InitializeCompleted += New EventHandler(AddressOf RadMap1_InitializeCompleted)
+    	End Sub
+	
+    	Private Sub RadMap1_InitializeCompleted(ByVal sender As Object, ByVal e As EventArgs)
+    	    RadMap1.MapZoomBar.Commands.Clear()
+    	    Me.AddCustomZoomAction(15, "Downtown")
+    	    Me.AddCustomZoomAction(18, "Neighborhood")
+    	    Me.AddCustomZoomAction(20, "Block")
+    	End Sub
+	
+    	Private Sub AddCustomZoomAction(ByVal zoomLevel As Integer, ByVal label As String)
+    	    Dim imagePath As String = String.Format(ImagePathFormat, label)
+    	    Me.RadMap1.MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel, label, TryCast(Me.LayoutRoot.Resources("CustomCommandDataTemplate"), DataTemplate), New Uri(imagePath, UriKind.	RelativeOrAbsolute))
+    	End Sub
+	End Class
 {{endregion}}

@@ -10,7 +10,7 @@ position: 8
 
 # Https Support
 
-All built-in providers like Bing and ArcGIS are using the HTTP protocol when constructing the web URLs used to download the map tile images.
+All built-in providers like OpenStreetMapProvider and ArcGisMapProvider are using the HTTP protocol when constructing the web URLs used to download the map tile images.
 
 The protocol can be changed to HTTPS by setting the static `ProtocolHelper.UseHttpsScheme` property to `true`. This will redirect the built-in provider's tile downloading links to use HTTPS.
 
@@ -23,7 +23,7 @@ The protocol can be changed to HTTPS by setting the static `ProtocolHelper.UseHt
 	}
 {{endregion}}
 
-Enabling the HTTPS protocol will also redirect the Bing logging service to use HTTPS. Additionally, all providers, except Bing, will require you to change also the default security protocol. This is done via the `ServicePointManager.SecurityProtocol` property. 
+Additionally, all providers, except Azure, will require you to change also the default security protocol. This is done via the `ServicePointManager.SecurityProtocol` property. 
 
 #### __[C#] Set the security protocol__
 {{region radmap-providers-https-support-1}}
@@ -52,6 +52,6 @@ In case you are using an older version of Telerik UI for WPF that targets .NET 4
 If HTTPS is enabled, but the security protocol is not changed, a SLL network error ("A SSLv3-compatible ClientHello handshake was found.") will appear and no tile images will be downloaded.
 
 ## See Also  
+ * [Providers Overview]({%slug radmap-features-providers%})
  * [Empty provider]({%slug radmap-features-empty-provider%})
- * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%}) 
  * [UriImageProvider]({%slug radmap-features-uriimageprovider%})

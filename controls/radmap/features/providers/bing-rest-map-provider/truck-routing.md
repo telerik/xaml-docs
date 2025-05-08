@@ -14,6 +14,8 @@ RadMap provides an infrastructure that allows you to use the [Bing Maps Truck Ro
 
 The truck routing API is accessed via the __BingRestMapProvider__ provider, and it is used to calculate a route between different locations on the map.
 
+>caution The Bing Maps REST Services is [deprecated](https://learn.microsoft.com/en-us/bingmaps/rest-services/). The BingRestMapProvider will be supported until 2026 Q2 inclusive. To avoid disruptions, you can use the [Azure Maps Services](https://learn.microsoft.com/en-us/azure/azure-maps/), which are supported by the RadMap control via the [AzureMapProvider](radmap-features-providers-azuremapprovider).
+
 ## Creating a Truck Routing Request
 
 To create a request that returns the set of truck routing locations, you can define a __BingRestTruckRouteRequest__, set it up and pass it to the __CalculateTruckRouteAsync__ method of BingRestMapProvider.

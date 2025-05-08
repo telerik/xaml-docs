@@ -12,6 +12,8 @@ position: 3
 
 RadMap provides a unified route search architecture which uses the functionality of the different routing services. This allows you to calculate a route between different locations on the map. You can access the routing service via __BingRestMapProvider__ provider. 
 
+>caution The Bing Maps REST Services is [deprecated](https://learn.microsoft.com/en-us/bingmaps/rest-services/). The BingRestMapProvider will be supported until 2026 Q2 inclusive. To avoid disruptions, you can use the [Azure Maps Services](https://learn.microsoft.com/en-us/azure/azure-maps/), which are supported by the RadMap control via the [AzureMapProvider](radmap-features-providers-azuremapprovider).
+
 >The BingRestMapProvider's built-in routing service wraps the [Routes API](https://msdn.microsoft.com/en-us/library/ff701705.aspx) of the Bing Maps Rest services.
 
 ![Rad Rest Map Routing Example](images/RadMap_Features_Rest_Provider_Routing.png)	

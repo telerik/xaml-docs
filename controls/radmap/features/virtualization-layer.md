@@ -1,7 +1,7 @@
 ---
 title: Virtualization Layer
 page_title: Virtualization Layer
-description: Check our &quot;Virtualization Layer&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Virtualization Layer&quot; documentation article for the RadMap control.
 slug: radmap-features-virtualization-layer
 tags: virtualization,layer
 published: True
@@ -26,7 +26,7 @@ The Virtualization Layer exposes the following properties:
 
 Like the DynamicLayer, the Virtualization requires a division of the map space in regions. The division of map space is defined using the VirtualizationLayer.ZoomLevelGridList collection. Each ZoomLevelGrid should define a minimum zoom level for its division. The maximum zoom level for a grid is the minimum zoom layer of the next grid in the list. Also each zoom level is divided in a grid of latitude/longitude divisions.        
 
-The ZoomLevelGrid provides the __CellWidth__ and __CellHeight__ properties which allow specifying the size of cell on the map in pixels. By default the cell has a size which equals the size of tile (256x256) which is usually used by the map providers like Bing and OpenStreet.        
+The ZoomLevelGrid provides the __CellWidth__ and __CellHeight__ properties which allow specifying the size of cell on the map in pixels. By default the cell has a size which equals the size of tile (256x256) which is usually used by the map providers like AzureMapProvider and OpenStreetMapProvider.        
 
 Specifying the size of cell for the zoom level affects to a number of requests to a Virtualization Source which is depended on the viewport size of the map.        
 

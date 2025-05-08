@@ -127,6 +127,6 @@ The `RadMap` control uses the [built-in .NET caching mechanism](https://docs.mic
 {{endregion}}
 
 ## See Also
+ * [Providers Overview]({%slug radmap-features-providers%})
  * [Empty provider]({%slug radmap-features-empty-provider%})
- * [BingRestMapProvider]({%slug radmap-features-providers-bing-rest-map%}) 
  * [UriImageProvider]({%slug radmap-features-uriimageprovider%})

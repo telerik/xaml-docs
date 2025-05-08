@@ -1,7 +1,7 @@
 ---
 title: Shapefiles Support
 page_title: Shapefiles Support
-description: Check our &quot;Shapefiles Support&quot; documentation article for the RadMap {{ site.framework_name }} control.
+description: Check our &quot;Shapefiles Support&quot; documentation article for the RadMap control.
 slug: radmap-features-shapefiles-support
 tags: shapefiles,support
 published: True
@@ -79,7 +79,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	Next shape
 {{endregion}}
 
->tip RadMap provides built-in converters  for the following coordinate systems EPSG:4326 (Mercator, degrees) <-> OSGB36 (National Grid UK), EPSG:4326 (Mercator, degrees) <-> EPSG:900913 (Mercator, meters). This allows you to use shapefiles created for OSGB36 or EPSG:900913 with map providers that use EPSG:4326 so it is possible to show such shapefiles "as is" over the BingMaps or OpenStreetMap imagery data. The converter (__OSGB36Converter__/ __EPSG900913Converter__) can be specified by setting the __MapShapeReader.CoordinateConverter__ property.
+>tip RadMap provides built-in converters  for the following coordinate systems EPSG:4326 (Mercator, degrees) <-> OSGB36 (National Grid UK), EPSG:4326 (Mercator, degrees) <-> EPSG:900913 (Mercator, meters). This allows you to use shapefiles created for OSGB36 or EPSG:900913 with map providers that use EPSG:4326 so it is possible to show such shapefiles "as is" over the Azure Maps or OpenStreetMap imagery data. The converter (__OSGB36Converter__/ __EPSG900913Converter__) can be specified by setting the __MapShapeReader.CoordinateConverter__ property.
 
 ## See Also
  * [KML Data Import]({%slug radmap-features-kml-data-import%})

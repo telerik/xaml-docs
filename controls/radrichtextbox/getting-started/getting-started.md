@@ -556,7 +556,6 @@ The newly created __documentEditor__ instance now provides all capabilities that
  * [Document Elements]({%slug radrichtextbox-features-document-elements-hierarchy%})
  * [Import/Export]({%slug radrichtextbox-features-import-export%})
  * [Events]({%slug radrichtextbox-events-overview%})
- * [Styles and Templates]({%slug radrichtextbox-styles-and-tempaltes-overview%})
  * [History]({%slug radrichtextbox-features-history%})
  * [Using RadRichTextBox's formatting API ]({%slug radrichtextbox-features-formatting-api%})
  * [Merge Documents]({%slug radrichtextbox-features-merge-raddocumentmerger%})

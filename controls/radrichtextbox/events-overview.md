@@ -109,4 +109,3 @@ The event handler receives two arguments:
 
 ## See Also  
  * [Getting Started]({%slug radrichtextbox-getting-started%})
- * [Styles and Templates]({%slug radrichtextbox-styles-and-tempaltes-overview%})

@@ -1,5 +1,5 @@
 ---
-title: First Steps With Nuget
+title: First Steps With UI for WPF
 page_title: First Steps With Nuget
 description: This article describes the lifecycle of a Telerik application when using nuget packages.
 slug: nuget-setup-lifecycle
@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# First Steps With Nuget Packages
+# First Steps With Telerik UI for WPF (Using Nuget Packages)
 
 This article describes the lifecycle of a Telerik application when using NuGet packages. This includes creating, deploying, redistributing, and upgrading an application with referenced Telerik dlls.
 

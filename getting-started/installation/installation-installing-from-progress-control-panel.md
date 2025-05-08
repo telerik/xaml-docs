@@ -14,6 +14,8 @@ The Telerik UI for {{ site.framework_name }} controls can also be installed via 
 
 ![Progress Control Panel](images/progress-control-panel-1.png)
 
+> Note that the recommended installation approach is to use the [Telerik NuGet packages]({%slug nuget-installation%})
+
 ## Downloading and Log-in
 
 To start, download the Progress Control Panel from the following [page](https://www.telerik.com/download-trial-file/v2/control-panel) and run the downloaded `.exe` file. You will soon be presented with the login screen where you need to provide your Telerik account credentials to sign in.
@@ -50,7 +52,7 @@ __The Progress Control Panel with Telerik UI for WPF Installed__
 
 ![The Progress Control Panel with Telerik UI for WPF Installed](images/progress-control-panel-5.png)
 
-You can now start [creating your first Telerik UI for WPF project]({%slug getting-started-first-steps%}#create-a-ui-for-wpf-project).
+You can now start [creating your first Telerik UI for WPF project]({%slug nuget-setup-lifecycle%}#creating-a-project).
 
 ## See Also  
 * [First Steps]({%slug getting-started-first-steps%})

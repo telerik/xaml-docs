@@ -18,7 +18,7 @@ This article lists the events exposed by the charting controls and their series.
 * [Behavior events](#behavior-events)
 * [Provider events](#provider-events)
 
-## Chart controls events
+## Chart Controls Events
 
 __All charting controls__ in the RadChartView suite work with the following events:
 
@@ -54,7 +54,7 @@ All chart series expose the following events:
 * __SeriesAnimationCompleted__:  This event is fired when the animation for all datapoints of the series is completed.
 * __PointAnimationCompleted__: This event is fired when the animation of the series is completed.
 
-## Axis events
+## Axis Events
 
 The __LinearAxis, LogarithmicAxis, DateTimeContinuousAxis__ continuous axes of the charts expose the following events
 * __ActualRangeChanged__: Occurs when the actual range changes.
@@ -83,7 +83,7 @@ The __LinearAxis__ has an additional event which will be fired when the MajorSte
 	
 > You can find more information about the axes events in the [Axis]({%slug radchartview-axes-axis%}#common-events) help article.
 	
-## Behavior events
+## Behavior Events
 
 * __ChartCrosshairBehavior__: This behavior exposes the following event:
 
@@ -129,9 +129,9 @@ The __LinearAxis__ has an additional event which will be fired when the MajorSte
 			var selectedPoints = e.AddedPoints;
 			var unSelectedPoints = e.RemovedPoints;
 		}
-	{{endregion}}
-	
-## Provider events
+	{{endregion}}  
+
+## Provider Events
 
 * __ChartSeriesProvider__: The series provider exposes the following events:
 
@@ -154,8 +154,7 @@ The __LinearAxis__ has an additional event which will be fired when the MajorSte
 			object test = e.Context;
 			ChartAnnotation createdAnnotation = e.Annotation;
 		}
-	{{endregion}}
-	  
+	{{endregion}}	  
 	  
 ## See Also  
 * [Getting Started]({%slug radchartview-introduction%})

@@ -71,13 +71,9 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Multi-region selection__:
 	The built-in multi-region support enables you to perform various operations for more than one selection simultaneously. For more information, see the [Selection]({%slug radrichtextbox-features-selection%}) article.
 
-{% if site.site_name == 'Silverlight' %}
-* __Delete, Cut, Copy and Paste in plain text (using Silverlight's build-in clipboard). Copy/Paste in internal rich-text clipboard.__ For more information, see the [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%}) article.
-{% endif %}
-{% if site.site_name == 'WPF' %}
 * __Rich-text clipboard__:
     The control allows rich text copy/paste from the clipboard. This includes rich text copied from applications like Word, OpenOffice etc. For more information, see the [Clipboard Support]({%slug radrichtextbox-features-clipboard-support%}) article. 
-    * Different **[Paste Options]({%slug radrichtextbox-features-paste-options%})** are supported as well.{% endif %}
+    * Different **[Paste Options]({%slug radrichtextbox-features-paste-options%})** are supported as well.
 
 * __Import/export__:
 	Telerik RadRichTextBox allows you to load XAML, HTML, RTF, DOCX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats. The control also supports export to PDF. For more information, see the [Import/Export]({%slug radrichtextbox-features-import-export%}) article.
@@ -136,6 +132,5 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 
 ## See Also
  * [Getting Started]({%slug radrichtextbox-getting-started%})
- * [Events]({%slug radrichtextbox-events-overview%})
- * [Styles and Templates]({%slug radrichtextbox-styles-and-tempaltes-overview%})
+ * [Events]({%slug radrichtextbox-events-overview%}) 
  * [Useful Security Tips]({%slug security-tips%})

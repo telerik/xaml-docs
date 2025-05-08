@@ -10,8 +10,6 @@ position: 4
 
 # Span
 
-
-
 The __Span__ class represents an inline object that allows you to display formatted text. The __Spans__ can only be used in the context of a __Paragraph__ class. As the spans are inline elements they get placed one after another and the text inside them gets wrapped to the next line if the space is insufficient.
 
 This topic will explain you how to:
@@ -21,6 +19,8 @@ This topic will explain you how to:
 * [Add Text to a Span](#add-text-to-a-span)
 
 * [Customize a Span](#customize-a-span)
+
+>tip To modify the document content at runtime we recommend using the [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) class when possible, instead of working with `RadDocument` directly. The document editor ensures that the document will be measured and arranged properly on each change.
 
 ## Use Spans
 
@@ -40,8 +40,6 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 	</telerik:RadRichTextBox>
 {{endregion}}
 
-
-
 #### __C#__
 
 {{region radrichtextbox-features-document-elements-span_1}}
@@ -52,8 +50,6 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 	section.Blocks.Add( paragraph );
 	this.radRichTextBox.Document.Sections.Add( section );
 {{endregion}}
-
-
 
 #### __VB.NET__
 
@@ -66,8 +62,6 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 	Me.radRichTextBox.Document.Sections.Add(section)
 {{endregion}}
 
-
-
 ## Add Text to a Span
 
 To specify the text in the __Span__ you can use its __Text__ property.
@@ -78,8 +72,6 @@ To specify the text in the __Span__ you can use its __Text__ property.
 	<telerik:Span Text="Thank you for choosing Telerik RadRichTextBox!" />
 {{endregion}}
 
-
-
 #### __C#__
 
 {{region radrichtextbox-features-document-elements-span_4}}
@@ -87,16 +79,12 @@ To specify the text in the __Span__ you can use its __Text__ property.
 	span.Text = "Thank you for choosing Telerik RadRichTextBox!";
 {{endregion}}
 
-
-
 #### __VB.NET__
 
 {{region radrichtextbox-features-document-elements-span_5}}
 	Dim span As New Span()
 	span.Text = "Thank you for choosing Telerik RadRichTextBox!"
 {{endregion}}
-
-
 
 ## Customize a Span
 
@@ -120,16 +108,10 @@ The __Span__ exposes several properties that allow you to customize the layout o
 
 * __UnderlineDecoration__ - indicates whether the text should be underlined.
 
-## See Also
-
+## See Also  
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
-
  * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})
-
  * [Section]({%slug radrichtextbox-features-document-elements-section%})
-
  * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
-
  * [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%})
-
  * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})

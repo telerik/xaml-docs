@@ -9,7 +9,7 @@ position: 0
 CTAControlName: RadRichTextBox
 ---
 
-# {{ site.framework_name }} RichTextBox Overview
+# WPF RichTextBox Overview
 
 __RadRichTextBox__ is a control that can display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, images, etc.
 
@@ -40,15 +40,12 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 
 * __Section Columns__:
 	You can arrange the text into columns with equal or different width and set a separator between them. Find more information on how to use this feature in the [Section Columns UI]({%slug radrichtextbox-ui-for-applying-rich-text-formatting-section-columns%}) and [Section Columns API]({%slug radrichtextbox-features-section-columns%}) articles.
-	
-{% if site.framework_name == 'WPF' %}
+
 * __Content controls__:
     Allows you to view and edit the content controls in the document. For more information, see the [Content Controls]({%slug radrichtextbox-features-content-controls%}) article.
 
 * __Shapes__:
     You can create, modify and delete shapes of multiple types inside RadRichTextBox. Check out the [Shapes]({%slug radrichtextbox-features-shapes%}) help topic for more details.
-
-{% endif %}
 
 * __Format Painter__:
 	The Format Painter feature enables you to copy the formatting of a particular content and paste it on other elements, so you can easily achieve the desired format. For more information about this functionality, check the [Format Painter]({%slug radrichtextbox-features-format-painter%}) topic.
@@ -63,7 +60,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 	An extensible spell checking for different languages, using the built-in or custom dictionaries. For more information, see the [Spellcheck]({%slug radrichtextbox-features-spellcheck%}) article.
 
 * __Printing__:
-	{% if site.site_name == 'Silverlight' %}The printing feature allows you to choose between HTML printing for better performance and the Silverlight printing.{% endif %}{% if site.site_name == 'WPF' %}The printing feature allows you to use the native printing implementation of WPF{% endif %}. For more information, see the [Guidelines for Printing with RadDocument]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}) article.
+	The printing feature allows you to use the native printing implementation of WPF. For more information, see the [Guidelines for Printing with RadDocument]({%slug radrichtextbox-guidelines-for-printing-with-raddocument%}) article.
 
 * __Multi-level Undo/Redo Support__:
 	Telerik __RadRichTextBox__ provides multilevel Undo/Redo support which allows past actions to be reviewed and reversed.For more information, see the [History]({%slug radrichtextbox-features-history%}) article.
@@ -124,12 +121,9 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * __Code blocks__:
 	This feature allows you to add source code fragments in a document. For more information, see the [Code Block]({%slug radrichtextbox-features-code-block%}) article.
 
-{% if site.site_name == 'WPF' %}
 * __Line Numbering__:
 	Add or customize line numbering to create the document content easy to refer to. For more information, see the [Line Numbering]({%slug radrichtextbox-features-line-numbering%}) article.
-{% endif %}
-	
-{% if site.site_name == 'WPF' %}
+
 ## Telerik UI for WPF Support and Learning Resources
 
 * [Telerik UI for WPF RichTextBox Homepage](https://www.telerik.com/products/wpf/richtextbox.aspx)
@@ -139,7 +133,6 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF RichTextBox Forums](https://www.telerik.com/forums/wpf)
 * [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
-{% endif %}
 
 ## See Also
  * [Getting Started]({%slug radrichtextbox-getting-started%})

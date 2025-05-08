@@ -12,7 +12,7 @@ position: 16
 
 `RadRichTextBox` uses the [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx) in order to provide customization options, such as creating and utilizing custom dialogs and pop-ups, format providers and dictionaries for spellchecking. It finds and loads the types from the assemblies and they can be used without being explicitly initialized.
 
-## .Net 6  and Later Versions Specifics
+## .NET Core and Later Versions Specifics
 
 The content of this article is applicable only to the __RadRichTextBox for .NET Framework__ and later versions. The __.NET Core__ and later versions as they do not support MEF.
 
@@ -67,7 +67,6 @@ You can create and plug your custom dictionary by implementing the `IWordDiction
     [WordDictionaryMetadata("da-DK")]
     public class CustomDanishDictionary : IWordDictionary
 {{endregion}}
-
 
 ## Initial Load Performance of RadRichTextBox
 

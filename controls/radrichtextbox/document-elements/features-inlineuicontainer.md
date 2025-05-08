@@ -10,25 +10,18 @@ position: 7
 
 # InlineUIContainer
 
-
-
 __RadRichTextBox__ provides you with the functionality of enclosing custom UI elements in its document. This is achieved with the help of a special type of inline document element called __InlineUIContainer__, which can wrap any object of type System.Windows.__UIElement__, e.g. a button, an image or even a media element or media player.
       
-The __InlineUIContainer__ is an inline element, so it should be placed in a __Block__ that can contain inline elements (e.g. __Paragraph__).
-      
+The __InlineUIContainer__ is an inline element, so it should be placed in a __Block__ that can contain inline elements (e.g. __Paragraph__).      
 
 ## Add UI Element to an InlineUIContainer
 
-You can add any element that derives from the UIElement class inside the __InlineUIContainer__. To do that, simply wrap the desired element inside the tag of the __InlineUIContainer__ in case you are defining it in XAML. If you are using code, use the __UIElement__ property of the container. Here is a simple example with a __Button__.
-        
+You can add any element that derives from the UIElement class inside the __InlineUIContainer__. To do that, simply wrap the desired element inside the tag of the __InlineUIContainer__ in case you are defining it in XAML. If you are using code, use the __UIElement__ property of the container. Here is a simple example with a __Button__.        
 
->In order to utilize the __InlineUIContainer__, you have to set its __Height__ and __Width__ explicitly (or use the constructor that takes a __Size__ as a parameter). Otherwise, they will not be shown in the document.
-          
+>In order to utilize the __InlineUIContainer__, you have to set its __Height__ and __Width__ explicitly (or use the constructor that takes a __Size__ as a parameter). Otherwise, they will not be shown in the document.          
 
-#### __[XAML] Example 1: Add UI Element to an InlineUIContainer__
-
+#### __[XAML] Example 1: Add UI Element to an InlineUIContainer__  
 {{region radrichtextbox-features-document-elements-inlineuicontainer_0}}
-
 	<telerik:RadRichTextBox Name="radRichTextBox">
 	    <telerik:RadDocument>
 	        <telerik:Section>
@@ -42,12 +35,8 @@ You can add any element that derives from the UIElement class inside the __Inlin
 	</telerik:RadRichTextBox>
 {{endregion}}
 
-
-
-#### __[C#] Example 1: Add UI Element to an InlineUIContainer__
-
+#### __[C#] Example 1: Add UI Element to an InlineUIContainer__  
 {{region radrichtextbox-features-document-elements-inlineuicontainer_1}}
-
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
 	InlineUIContainer container = new InlineUIContainer();
@@ -59,12 +48,8 @@ You can add any element that derives from the UIElement class inside the __Inlin
 	this.radRichTextBox.Document.Sections.Add(section);
 {{endregion}}
 
-
-
 #### __[VB.NET] Example 1: Add UI Element to an InlineUIContainer__
-
 {{region radrichtextbox-features-document-elements-inlineuicontainer_2}}
-
 	Dim _section As New Section()
 	Dim _paragraph As New Paragraph()
 	Dim container As New InlineUIContainer()
@@ -76,14 +61,10 @@ You can add any element that derives from the UIElement class inside the __Inlin
 	Me.radRichTextBox.Document.Sections.Add(_section)
 {{endregion}}
 
-
-
 __Example 2__ is a more complex example, which demonstrates how to implement a Button that inserts a MediaElement inside the __RadRichTextBox__'s document.
 
-#### __[C#] Example 2: Add MediaElement on Button Click__
-
+#### __[C#] Example 2: Add MediaElement on Button Click__ 
 {{region radrichtextbox-features-document-elements-inlineuicontainer_3}}
-
 	private static Size defaultSize = new Size(900, 400);
 	private void InsertMedia(Size size)
 	{
@@ -116,8 +97,6 @@ __Example 2__ is a more complex example, which demonstrates how to implement a B
 	}
 {{endregion}}
 
-
-
 #### __[VB.NET] Example 2: Add MediaElement on Button Click__
 
 {{region radrichtextbox-features-document-elements-inlineuicontainer_4}}
@@ -146,8 +125,6 @@ __Example 2__ is a more complex example, which demonstrates how to implement a B
 	End Sub
 {{endregion}}
 
-
-
 ## Specifics
 
 >important InlineUIContainer elements are not copyable. 
@@ -161,12 +138,10 @@ The following scenarios are affected:
 
 The reason is that copying InlineUIContainer involves cloning of the internal UIElement, which cannot be handled in a generic way. 
 
-
 To enable copying of InlineUIContainers in your application, you can create a custom object, which can copy the UIElement inside the container. What you need to do is to inherit the InlineUIContainer class and override IsCopyable, CreateNewElementInstance(), CopyPropertiesFromOverride(). The container and its parts are copied in the CopyPropertiesFromOverride() method, so you should ensure that the override copies the UIElement inside the container as well.
 
 #### __[C#] Example 3: Implement CopyableInlineUIContainer for a Button as underlying UIElement__
 {{region radrichtextbox-features-document-elements-inlineuicontainer_5}}
-
 	public class CopyableInlineUIContainer : InlineUIContainer
 	{
 		internal CopyableInlineUIContainer()
@@ -208,9 +183,7 @@ To enable copying of InlineUIContainers in your application, you can create a cu
 			};
 		}
 	}
-
 {{endregion}}
-
 
 #### __[VB.NET] Example 3: Implement CopyableInlineUIContainer for a Button as underlying UIElement__
 {{region radrichtextbox-features-document-elements-inlineuicontainer_6}}
@@ -251,10 +224,8 @@ To enable copying of InlineUIContainers in your application, you can create a cu
 
 There is a very generic option for copying UIElement objects, which might help in most of the cases. However, have in mind that depending on the UI elements on which it will be invoked, **the implementation might differ**.
 
-
 #### __[C#] Example 4: Copy UI Element__
 {{region radrichtextbox-features-document-elements-inlineuicontainer_7}}
-
 	public static UIElement Clone(this UIElement elementToClone)
 	{
 	    if (elementToClone != null)
@@ -270,10 +241,8 @@ There is a very generic option for copying UIElement objects, which might help i
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 4: Copy UI Element__
-
+#### __[VB.NET] Example 4: Copy UI Element__  
 {{region radrichtextbox-features-document-elements-inlineuicontainer_8}}
-
     <Extension()>
     Public Shared Function Clone(ByVal elementToClone As UIElement) As UIElement
         If elementToClone IsNot Nothing Then
@@ -287,23 +256,19 @@ There is a very generic option for copying UIElement objects, which might help i
     End Function
 {{endregion}}
 
-
 ## Import/Export InlineUIContainers
 
-Most features that __RadRichTextBox__ provides are also supported in the format providers that it uses for export and import.
-        
+Most features that __RadRichTextBox__ provides are also supported in the format providers that it uses for export and import.        
 
->tipFor more information on Import/Export, please refer to [this topic]({%slug radrichtextbox-features-import-export%}).
-          
+>tip For more information on Import/Export, please refer to [this topic]({%slug radrichtextbox-features-import-export%}).          
 
-However, as the UIElement class is a {% if site.site_name == 'WPF' %} WPF {% endif %} {% if site.site_name == 'Silverlight' %} Silverlight {% endif %} specific concept, some format providers support them in a non-standard way and others do not support them at all.
+However, as the UIElement class is a WPF specific concept, some format providers support them in a non-standard way and others do not support them at all.
 
 ### Exporting InlineUIContainers:
 
 Different approaches have been adopted when it comes to exporting inline UI containers via the format providers:
 
-* __XamlFormatProvider__: Inline UI containers are serialized as expected, thus ensuring lossless export in simple cases, e.g. when a button is in the container. Custom attached properties may not be exported.
-            
+* __XamlFormatProvider__: Inline UI containers are serialized as expected, thus ensuring lossless export in simple cases, e.g. when a button is in the container. Custom attached properties may not be exported.            
 
 * __HtmlFormatProvider__: The inline UI containers are serialized as XAML and are included in the HTML as comments. If the user handles the __InlineUIContainerExporting__ event, they can provide their own implementation for the export of the UI elements by accessing the properties of the __InlineUIContainerExportingEventArgs__ and setting the ones they need. The __CommentContent__ contains the XAML serialization and the __HtmlContent__ string property can be set to the desired user-defined HTML equivalent of the UI element. It will appear when the page is rendered outside __RadRichTextBox__. The UI element can also be omitted from the document altogether.
 
@@ -321,24 +286,16 @@ Different approaches have been adopted when it comes to exporting inline UI cont
 ### Importing InlineUIContainers
 
 There are some differences between the format providers when it comes to importing __InlineUIContainers__, too.
-        
 
 * __XamlFormatProvider__: All inline UI containers are deserialized and imported.
-            
 
 * __DocxFormatProvider__: There cannot be any inline UI containers in DOCX, as they are not exported in the first place.
 
-            
-* __RtfFormatProvider__: There cannot be any inline UI containers in RTF, as they are not exported in the first place.
-            
+* __RtfFormatProvider__: There cannot be any inline UI containers in RTF, as they are not exported in the first place.            
 
 * __PdfFormatProvider__: PDF import is currently not supported.
 
-            
-## See Also
-
+## See Also  
 * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
-
 * [Section]({%slug radrichtextbox-features-document-elements-section%})
-
 * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})

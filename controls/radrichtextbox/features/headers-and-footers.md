@@ -31,7 +31,6 @@ The `Headers` and `Footers` are properties of a Section and each section in the 
 
 * `Default`&mdash;Used on all pages of the section, where First or Even are not applicable or not specified.
 
-
 ## Customizing Headers and Footers
 
 The following example demonstrates how you can create a Header.
@@ -119,7 +118,7 @@ Headers and footers are only present in Paged layout mode, so the easiest way to
 	}
 {{endregion}}
 
-## Accessing the Headers and Footers
+## Working with the Headers and Footers
 
 The Headers and Footers can be retrieved, for example, via interating the `Sections` collection of the `Document` property of the RadRichTextBox control. Each [Section]({%slug radrichtextbox-features-document-elements-section%}#add-headers-and-footers-to-a-section) instance exposes this information via its API.
 
@@ -178,8 +177,6 @@ Additionally, the RadRichTextBox control exposes the `ActiveDocumentEditor` prop
 
 >tip More information about the ActiveDocumentEditor property can be found [here]({%slug radrichtextbox-getting-started-activedocumenteditor%}).
 
-## See Also
-
- * [Section]({%slug radrichtextbox-features-document-elements-section%})
-
+## See Also  
+ * [Section]({%slug radrichtextbox-features-document-elements-section%})  
  * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})

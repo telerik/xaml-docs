@@ -74,7 +74,7 @@ The first time a __RadDocument__ is shown inside a __RadRichTextBox__ in the Vis
 
 As the two states of the document - measured and not measured are too different, distinct methods for manipulating the content of the document should be used before the document is measured and after the first time that it is shown in the editor.
 
-The RadDocument class provides a rich set of settings, but because of the required measure and arrange phases, the rendering of its contents may not work properly when working with the RadDocument API directly. Instead, when modifying content we recommend using the [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) instead.
+The RadDocument class provides a rich set of settings, but because of the required measure and arrange phases, the rendering of its contents may not work properly when working with the RadDocument API directly. Instead, when modifying content __we recommend using the [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%})__ instead.
 
 ## Adding Sections to RadDocument
 
@@ -119,8 +119,7 @@ Splitting an already measured document into two sections at the current caret po
 
 ## Creating a Document at Run Time
 
-One of the common uses of __RadRichTextBox__ is to create a document programmatically and show it in the editor. **RadDocument** can contain several other elements:
-        
+One of the common uses of __RadRichTextBox__ is to create a document programmatically and show it in the editor. **RadDocument** can contain several other elements.        
 
 * [Section]({%slug radrichtextbox-features-document-elements-section%})
 * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
@@ -210,31 +209,17 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
     Me.radRichTextBox.Document = document
 {{endregion}}
 
+__The document created at run time__
 
-#### Figure 1: The document created at run time
-{% if site.site_name == 'Silverlight' %}![{{ site.framework_name }} RadRichTextBox Runtime Created Document](images/RadRichTextBox_DocumentElements_RadDocument_01.png){% endif %}
+![{{ site.framework_name }} RadRichTextBox Runtime Created Document](images/RadRichTextBox_DocumentElements_RadDocument_01_WPF.png)
 
-{% if site.site_name == 'WPF' %}![{{ site.framework_name }} RadRichTextBox Runtime Created Document](images/RadRichTextBox_DocumentElements_RadDocument_01_WPF.png){% endif %}
+This document is editable. To make it **read only** you have to set the [IsReadOnly]({%slug radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer%}) property of the __RadRichTextBox__ to __True__.     
 
-This document is editable. To make it **read only** you have to set the __IsReadOnly__ property of the __RadRichTextBox__ to __True__.
-        
-
->tip To learn more about the read-only feature, read [this topic]({%slug radrichtextbox-how-to-use-radrichtextbox-as-rich-content-viewer%}).
-
-
-
-## See Also
-
+## See Also  
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})
-
  * [Section]({%slug radrichtextbox-features-document-elements-section%})
-
  * [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%})
-
  * [Span]({%slug radrichtextbox-features-document-elements-span%})
-
  * [Hyperlink]({%slug radrichtextbox-features-document-elements-hyperlink%})
-
- * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%})
- 
+ * [InlineImage]({%slug radrichtextbox-features-document-elements-inlineimage%}) 
  * [Merge Documents]({%slug radrichtextbox-features-merge-raddocumentmerger%})

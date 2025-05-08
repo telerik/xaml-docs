@@ -624,7 +624,7 @@ navigation:
         title: Changes and Backward Compatibility
         position: 2
     controls/radrichtextbox/document-elements:
-        title: Document Elements
+        title: Document Model
         position: 5
     controls/radrichtextbox/document-elements/table:
         title: Table

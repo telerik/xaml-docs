@@ -14,7 +14,7 @@ This topic aims to answer some of the frequently asked questions about the use o
 
 ## Setting Default Style Settings on the Document
 
-RadRichTextBox has a Boolean property called __DocumentInheritsDefaultStyleSettings__, which must be set to __True__, if you want to set some default font properties. Otherwise your settings for the following properties would be disregarded:        
+RadRichTextBox has a Boolean property called __DocumentInheritsDefaultStyleSettings__, which must be set to __True__, if you want to set some default font properties. Otherwise your settings for the following properties would be disregarded:
 
 * FontFamily;
 

@@ -14,21 +14,23 @@ The floating images in RadRichTextBox are represented as inline images wrapped i
 
 This topic will explain you how to use the **FloatingImageBlock** element.
 
+>tip To modify the document content at runtime we recommend using the [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) class when possible, instead of working with `RadDocument` directly. The document editor ensures that the document will be measured and arranged properly on each change.
+
 ## Supported Image Extensions
 
 With **RadRichTextBox**, you can work with images from the following file formats:
 
- - JPG
- - JPEG
- - PNG
- - BMP
- - TIFF
- - TIF
- - GIF
- - ICO
- - ICON
- - WMF 
- - EMF
+`JPG`
+`JPEG`
+`PNG`
+`BMP`
+`TIFF`
+`TIF`
+`GIF`
+`ICO`
+`ICON`
+`WMF`
+`EMF`
 
 ## FloatingImageBlock Class Overview
 

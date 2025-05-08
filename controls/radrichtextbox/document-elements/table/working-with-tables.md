@@ -12,12 +12,13 @@ position: 1
 
 This article shows you can create or retrieve tables in the code behind. 
 
+>tip To modify the document content at runtime we recommend using the [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) class when possible, instead of working with `RadDocument` directly. The document editor ensures that the document will be measured and arranged properly on each change.
+
 ## Creating a Table Programmatically
 
 The __RadRichTextBox__ exposes a rich API, which allows you to use various methods to add, modify or delete elements from the [__RadDocument__]({%slug radrichtextbox-features-document-elements-raddocument%}). Information about the table properties and methods can be found here: [Properties and Methods]({%slug radrichtextbox-features-api%})
 
 #### __[C#] Example 1: Create a Table in Code-Behind__
-
 {{region radrichtextbox-features-document-elements-tables_2}}
     RadDocument document = new RadDocument();
     Section section = new Section();
@@ -64,10 +65,7 @@ The __RadRichTextBox__ exposes a rich API, which allows you to use various metho
     this.radRichTextBox.Document = document;
 {{endregion}}
 
-
-
 #### __[VB.NET] Example 1: Create a Table in Code-Behind__
-
 {{region radrichtextbox-features-document-elements-tables_3}}
     Dim document As New RadDocument()
     Dim section As New Section()
@@ -114,8 +112,6 @@ The __RadRichTextBox__ exposes a rich API, which allows you to use various metho
     Me.radRichTextBox.Document = document
 {{endregion}}
 
-
-
 __Figure 1__ shows the result of the code in __Example 1__.
 
 #### __Figure 1: Table generated in code-behind__
@@ -129,7 +125,6 @@ In order to merge cells in the table you can use the __RowSpan__ and __ColumnSpa
 >note Please note that when using __RowSpan__ and __ColumnSpan__ the cells are not merged. The cells are only resized and they will be on top of the other cells.  
 
 #### __[C#] Example 2: Use RowSpan and ColumnSpan Properties__
-
 {{region radrichtextbox-document-elements-working-with-tables_0}}   
     Table table = new Table();
     table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
@@ -200,11 +195,9 @@ In order to merge cells in the table you can use the __RowSpan__ and __ColumnSpa
     }
 
     radRichTextBox.InsertTable(table);
-
 {{endregion}}
 
 #### __[VB.NET] Example 2: Use RowSpan and ColumnSpan Properties__
-
 {{region radrichtextbox-document-elements-working-with-tables_VB0}}   
 	Dim table As New Table()
 	table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
@@ -273,7 +266,6 @@ In order to merge cells in the table you can use the __RowSpan__ and __ColumnSpa
 	Next i
 
 	radRichTextBox.InsertTable(table)
-
 {{endregion}}
 
 The result is demonstrated in the following image.
@@ -286,31 +278,20 @@ The result is demonstrated in the following image.
 
 In order to iterate a table you need to get it first. You can use the __EnumerateChildrenOfType__ method to get all tables in the document.
 
-
-
 #### __[C#] Example 3: Get all tables from an existing document__
-
 {{region radrichtextbox-document-elements-working-with-tables_1}}   
-
-    var tables = radRichTextBox.Document.EnumerateChildrenOfType<Table>();
-   
+    var tables = radRichTextBox.Document.EnumerateChildrenOfType<Table>();   
 {{endregion}}
 
 #### __[VB.NET] Example 3: Get all tables from an existing document__
-
 {{region radrichtextbox-document-elements-working-with-tables_VB1}}   
-
-    Dim tables = radRichTextBox.Document.EnumerateChildrenOfType(Of Table)()
-   
+    Dim tables = radRichTextBox.Document.EnumerateChildrenOfType(Of Table)()   
 {{endregion}}
-
 
 Now that you have the table you can iterate the rows and columns by using the following approach. 
 
 #### __[C#] Example 4: Iterate all Rows and Columns__
-
 {{region radrichtextbox-document-elements-working-with-tables_2}}   
-
     var table = radRichTextBox.Document.EnumerateChildrenOfType<Table>().FirstOrDefault();
     if (table != null)
     {
@@ -327,14 +308,10 @@ Now that you have the table you can iterate the rows and columns by using the fo
             }
         }
     }
-
 {{endregion}}
 
-
 #### __[VB.NET] Example 4: Iterate all Rows and Columns__
-
 {{region radrichtextbox-document-elements-working-with-tables_VB2}}   
-
     Dim table = radRichTextBox.Document.EnumerateChildrenOfType(Of Table)().FirstOrDefault()
     If table IsNot Nothing Then
         For Each row As TableRow In table.Rows
@@ -347,7 +324,4 @@ Now that you have the table you can iterate the rows and columns by using the fo
             Next cell
         Next row
     End If
-
 {{endregion}}
-
-  

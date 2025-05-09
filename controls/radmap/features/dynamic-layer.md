@@ -188,7 +188,7 @@ ZoomLevel = 3:
 
 ZoomLevel = 6:
 
-![{{ site.framework_name }} RadMap Dynamic Layer Zoom Level 6](images/RadMap_Features_DynamicLayer_06.png)
+![{{ site.framework_name }} RadMap Dynamic Layer Zoom Level 6](images/RadMap_Features_DynamicLayer_06.PNG)
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

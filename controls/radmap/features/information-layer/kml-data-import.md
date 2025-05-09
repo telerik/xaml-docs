@@ -39,7 +39,7 @@ To pass the desired KML file you have to use the __Source__ property of the __Ma
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
 	        <telerik:InformationLayer.Reader>
-	            <telerik:MapShapeReader Source="/Silverlight.Help.RadMapSamples;component/Data/bulgaria.kml" />
+	            <telerik:MapShapeReader Source="/MyApp;component/Data/bulgaria.kml" />
 	        </telerik:InformationLayer.Reader>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
@@ -48,13 +48,13 @@ To pass the desired KML file you have to use the __Source__ property of the __Ma
 #### __C#__
 {{region radmap-features-kml-data-import_1}}
 	this.informationLayer.Reader = new MapShapeReader();
-	this.informationLayer.Reader.Source = new Uri( "/Silverlight.Help.RadMapSamples;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute );
+	this.informationLayer.Reader.Source = new Uri( "/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute );
 {{endregion}}
 
 #### __VB.NET__
 {{region radmap-features-kml-data-import_2}}
 	Me.informationLayer.Reader = New MapShapeReader()
-	Me.informationLayer.Reader.Source = New Uri("/Silverlight.Help.RadMapSamples;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute)
+	Me.informationLayer.Reader.Source = New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute)
 {{endregion}}
 
 ## Manual Shape Reading
@@ -75,7 +75,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 {{region radmap-features-kml-data-import_4}}
 	private void LoadKMLData()
 	{
-	    StreamResourceInfo streamResource = Application.GetResourceStream( new Uri( "/Sample;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute ) );
+	    StreamResourceInfo streamResource = Application.GetResourceStream( new Uri( "/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute ) );
 	    List<FrameworkElement> elements = KmlReader.Read( streamResource.Stream );
 	    foreach ( FrameworkElement element in elements )
 	    {
@@ -87,7 +87,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 #### __VB.NET__
 {{region radmap-features-kml-data-import_5}}
 	Private Sub LoadKMLData()
-	 Dim streamResource As StreamResourceInfo = Application.GetResourceStream(New Uri("/Silverlight.Help.RadMapSamples;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute))
+	 Dim streamResource As StreamResourceInfo = Application.GetResourceStream(New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute))
 	 Dim elements As List(Of FrameworkElement) = KmlReader.Read(streamResource.Stream)
 	 For Each element As FrameworkElement In elements
 	  Me.informationLayer.Items.Add(element)

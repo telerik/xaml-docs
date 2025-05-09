@@ -135,7 +135,7 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 	    ConverterParameter = "{Name}: {Population} people",
 	    Source = sofiaEllipse.ExtendedData
 	};
-	tooltip.SetBinding( ToolTip.ContentProperty, tooltipBinding );
+	tooltip.SetBinding(ContentProperty, tooltipBinding );
 	ToolTipService.SetToolTip( sofiaEllipse, tooltip );
 	this.informationLayer.Items.Add( sofiaEllipse );
 {{endregion}}
@@ -153,7 +153,7 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 	' Assign tooltip which uses the extended properties.'
 	Dim _tooltip As New ToolTip()
 	Dim tooltipBinding As New Binding() With {.Converter = New ExtendedDataConverter(), .ConverterParameter = "{Name}: {Population} people", .Source = sofiaEllipse.ExtendedData}
-	_tooltip.SetBinding(ToolTip.ContentProperty, tooltipBinding)
+	_tooltip.SetBinding(ContentProperty, tooltipBinding)
 	ToolTipService.SetToolTip(sofiaEllipse, _tooltip)
 	Me.informationLayer.Items.Add(sofiaEllipse)
 {{endregion}}

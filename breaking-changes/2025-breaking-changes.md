@@ -16,6 +16,8 @@ Currently, this section of the documentation contains only the latest release no
 
 #### Common changes
 
+* The .NET 6 dlls set of Telerik UI for WPF is no longer distributed with the product. The minimum .NET version is {{ site.minimum_net_core_version }}.
+
 * The Telerik UI for WPF product no longer distributes offline help documentation in the Help3 and CHM formats.
 
 * The `IsFullTrustExtension` class was removed. No longer needed in the .NET versions supported by Telerik.

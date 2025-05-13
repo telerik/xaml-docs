@@ -16,7 +16,7 @@ The controls from the UI for {{ site.framework_name }} suite support different t
 
 To change the theme, you can follow the steps below:
 
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#RichTextBox/Theming){% endif %} application.
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our [WPF Controls Examples](https://demos.telerik.com/wpf/) application.
 
 * Merge the ResourceDictionaries with the namespaces required for the controls that you are using from the theme assembly. For __RadRichTextBox__, you will need to merge the following resources:
 
@@ -28,9 +28,7 @@ To change the theme, you can follow the steps below:
 	* **Telerik.Windows.Controls.ImageEditor**
 	* **Telerik.Windows.Documents**
 
-{% if site.framework_name == 'WPF' %}
->If you are using the **.NET 6** or later version of RadRichTextBox, make sure to check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) topic for an updated list of the resources the control uses.
-{% endif %}
+>If you are using the **{{ site.minimum_net_core_version }}** or later version of RadRichTextBox, make sure to check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) topic for an updated list of the resources the control uses.
 
 **Example 1** demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
@@ -53,15 +51,11 @@ To change the theme, you can follow the steps below:
 		</Application.Resources>
 {{endregion}}
 
+__RadRichTextBox with the Windows8 theme__  
 
-#### __Figure 4: RadRichTextBox with the Windows8 theme__
 ![Telerik {{ site.framework_name }} RadRichTextBox with Windows 8 Theme](images/RadRichTextBox-Windows8.png)
 
-
-## See Also
-
- * [Getting Started]({%slug radrichtextbox-getting-started%})
- {% if site.framework_name == 'WPF' %}
- * [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%})
- {% endif %}
+## See Also  
+ * [Getting Started]({%slug radrichtextbox-getting-started%}) 
+ * [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) 
  * [Import/Export]({%slug radrichtextbox-features-import-export%})

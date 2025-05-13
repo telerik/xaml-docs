@@ -25,7 +25,7 @@ __RadRichTextBox__ is a control that can display and edit rich-text content incl
 	Telerik RadRichTextBox control allows you to apply diffent rich formatting options. You can find some of them listed below.	
 	* Bold, Italic
 	* Underline, Strike Through, Superscript and Subscript
-	* {% if site.site_name == 'Silverlight' %}Built-in Silverlight fonts and sizes{% endif %}{% if site.site_name == 'WPF' %}Usage of all available system fonts {% endif %}
+	* Usage of all available system fonts
 	* Text color and background
 	* Bullet and numbered lists
 	* Paragraph alignment and indentation

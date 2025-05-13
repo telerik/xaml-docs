@@ -22,9 +22,9 @@ position: 0
 
 ## Adding Telerik Assemblies Using NuGet
 
-To use RadRichTextBox when working with NuGet packages in __.NET Framework 4.6.2__, install the `Telerik.Windows.Documents.for.Wpf.Xaml` package. In .NET Framework 4.6.2 you will need to install packages also for the format providers and the RichTextBoxUI component. In .NET 6 these components are merged in the RichTextBox package mentioned below.
+To use RadRichTextBox when working with NuGet packages in __.NET Framework 4.6.2__, install the `Telerik.Windows.Documents.for.Wpf.Xaml` package. In .NET Framework 4.6.2 you will need to install packages also for the format providers and the RichTextBoxUI component. In {{ site.minimum_net_core_version }} these components are merged in the RichTextBox package mentioned below.
 
-To use RadRichTextBox when working with NuGet packages in __.NET 6__ and later, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml` package. 
+To use RadRichTextBox when working with NuGet packages in __{{ site.minimum_net_core_version }}__ and later, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml` package. 
 
 The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
@@ -36,7 +36,7 @@ Read more about NuGet installation in the [Installing UI for WPF from NuGet Pack
 
 , you can add a reference to the following assemblies:
 
->The references required to use RadRichTextBox in __.NET__ 6 or later projects have been united. Check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
+>The references required to use RadRichTextBox in __{{ site.minimum_net_core_version }}__ or later projects have been united. Check the [.NET Support]({%slug radrichtextbox-getting-started-net-core-support%}) help topic for the full list of dependencies.
 
 If you are not using NuGet packages, you can add a reference to the required assemblies manually. The minimal set of references you need to have in your application in order to have a RadRichTextBox are as follows:
 
@@ -46,7 +46,7 @@ If you are not using NuGet packages, you can add a reference to the required ass
 * __Telerik.Windows.Documents__ 
 * __Telerik.Windows.Documents.Core__
 * __System.ComponentModel.Composition__
-* __System.Drawing.Common NuGet package__&mdash;Required only for __.NET 6__ and later and only if the Telerik assemblies are referenced manually in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
+* __System.Drawing.Common NuGet package__&mdash;Required only for __{{ site.minimum_net_core_version }}__ and later and only if the Telerik assemblies are referenced manually in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 In order to use the built-in pop-ups (SelectionMiniToolBar, ContextMenu, all dialogs), you should add references to the following assemblies:
 
@@ -100,7 +100,7 @@ In addition to its API, RadRichTextBox has a rich set of commands, exposed throu
 
 These commands can also be used with the predefined UI that comes with RadRichTextBox - `RadRichTextBoxRibbonUI`, which is a ribbon control based on [RadRibbonView]({%slug radribbonview-overview%}). You can use the predefined and customizable `ContextMenu` and `SelectionMiniToolBar` as well. 
 
-__In .NET 8__, the predefined UI is included in the `Telerik.Windows.Controls.RichTextBox.dll`. You can access the additional controls after installing the `Telerik.Windows.Controls.RichTextBox.for.Wpf` NuGet package or referencing the dll. 
+__In {{ site.minimum_net_core_version }}__, the predefined UI is included in the `Telerik.Windows.Controls.RichTextBox.dll`. You can access the additional controls after installing the `Telerik.Windows.Controls.RichTextBox.for.Wpf` NuGet package or referencing the dll. 
 
 __In .NET Framework (4.6.2 to 4.8)__, the predefined dll is located in a separate assembly named `Telerik.Windows.Controls.RichTextBoxUI.dll`. To access the additional controls, install the `Telerik.Windows.Controls.RichTextBoxUI.for.Wpf` NuGet package or reference the dll.
 
@@ -403,8 +403,6 @@ The newly created __documentEditor__ instance now provides all capabilities that
 | InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a paragraph with Heading style into the document at the current caret position. |
 | InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink) | Inserts a cross-reference to a caption into the document at the current caret position. |
 
-{% if site.site_name == 'WPF' %}
-
 #### [Content Controls Related]({%slug radrichtextbox-features-content-controls%})
 
 |Method|Description|
@@ -441,8 +439,6 @@ The newly created __documentEditor__ instance now provides all capabilities that
 |ChangeShapeTextFill(ShapeInline shape, IShapeFill fill)|Changes the fill of a shape's text.|
 |ChangeShapeTextOutlineDash(ShapeInline shape, LineDashType dash)|Changes the dash of a shape's text outline dash.|
 |ChangeShapeTextOutlineWidth(ShapeInline shape, double width)|Changes the width of a shape's outline width.|
-
-{% endif %}
 
 #### [Styles Related]({%slug radrichtextbox-features-styles%})
 

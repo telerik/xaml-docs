@@ -17,7 +17,6 @@ The Telerik UI for WPF product provides several different sets of assemblies (di
 | .NET distribution | Release | End of support | Supported runtime |
 |----|----|----|----|
 | .NET Framework 4.6.2 | 2024 Q2 | N/A | .NET Framework 4.6.2 and later |
-| .NET 6 | R3 2021 SP1 | N/A | .NET 6 and later	|
 | .NET 8 | 2024 Q4 | N/A | .NET 8 and later |
 
 ### Out of Support Versions
@@ -29,6 +28,7 @@ The Telerik UI for WPF product provides several different sets of assemblies (di
 | .NET Core 3.1 | R1 2019 | 2024 Q2 | .NET Core 3.1 and later |
 | .NET 5 | R2 2020 | R3 2022 SP2 | .NET 5 and later |
 | .NET 7 | R3 2022 SP2 | 2024 Q4 | .NET 7, NET 8 and later |
+| .NET 6 | R3 2021 SP1 | 2025 Q2 | .NET 6 and later	|
 
 #### Terms used in the tables
 

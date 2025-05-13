@@ -26,7 +26,6 @@ Telerik UI for WPF can be installed on any operating system that supports .NET 4
 You can find a complete list with the Operating Systems supported by .NET in the MSDN documentation.  
 
 * [.NET 4.6.2 to 4.8 supported operating systems](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)
-* [.NET 6 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md)
 * [.NET 8 supported operating systems](https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md)
 
 ## Development Environment
@@ -36,8 +35,7 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) 2015/2017/2019/2022
         
 * __.NET Framework__. The following versions are supported:	
-	* [.NET 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) to [.NET 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
-	* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)	
+	* [.NET 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) to [.NET 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)	
 	* [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 * __SQL Server 2008 Express__ (optional). Download the latest version from [here](https://www.microsoft.com/en-us/sql-server/sql-server-2019).          

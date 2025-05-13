@@ -32,7 +32,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 * __Telerik.Windows.Controls.FileDialogs__
 * __Telerik.Windows.Data__
 
->For __.NET 6__ and later you will need to install also the `System.Data.OleDb` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
+>For __{{ site.minimum_net_core_version }}__ and later you will need to install also the `System.Data.OleDb` NuGet package. This is __required only if the Telerik assemblies are referenced manually__ in the project. In case you install the dlls using NuGet or the Telerik Visual Studio Extension, this package is included automatically.
 
 You can find the required assemblies for each control from the Telerik UI for WPF suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 

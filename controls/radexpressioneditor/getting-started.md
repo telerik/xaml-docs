@@ -39,13 +39,13 @@ If you are not using NuGet packages, you can add a reference to the following as
 * __Telerik.Windows.Documents.Core__
 * __Telerik.Windows.Documents.Flow__
 
-You can find the required assemblies for each control from the suite in the {% if site.site_name == 'Silverlight' %}[Controls Dependencies]({%slug installation-installing-controls-dependencies%}){% else %}[Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %} help article.
+You can find the required assemblies for each control from the suite in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) help article.
 
 ## Adding RadExpressionEditor to the project
 
 * Create a new project;
 
->importantIf you are using **.NET 6** and later, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
+>importantIf you are using **{{ site.minimum_net_core_version }}** and later, please note that instead of the **Telerik.Windows.Documents.dll** you need to use the new **Telerik.Windows.Controls.RichTextBox.dll** assembly.
 
 >In case you use [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please make sure all the needed resource dictionaries are merged:  
 * System.Windows.xaml
@@ -257,36 +257,7 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 {{endregion}}
 
 Once we declared the business object and the corresponding __ViewModel__, we can define __RadExpressionEditor__ and bind it appropriately. 
-{% if site.site_name == 'Silverlight' %}
-#### __[XAML] Example 4__
 
-{{region radexpressioneditor-getting-started_7}}
-	<UserControl x:Class="RadExpressionEditor_SL.MainPage"
-	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-	             xmlns:my="clr-namespace:RadExpressionEditor_SL"
-	             mc:Ignorable="d" d:DesignHeight="700" d:DesignWidth="700">
-	 <UserControl.Resources>
-	  <my:MyViewModel x:Key="MyViewModel" />
-	 </UserControl.Resources>
-	 <Grid DataContext="{StaticResource MyViewModel}">
-	  <Grid.RowDefinitions>
-	   <RowDefinition Height="*" />
-	   <RowDefinition Height="*"/>
-	   <RowDefinition Height="Auto"/>
-	  </Grid.RowDefinitions>
-	  <telerik:RadGridView x:Name="GridView" ItemsSource="{Binding Employees}" CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" />
-	  <telerik:RadExpressionEditor Item="{Binding Employees[0]}" Grid.Row="1"
-	                                     x:Name="ExpressionEditor" 
-	                                     ExpressionChanged="ExpressionEditor_ExpressionChanged"/>
-	   </Grid>
-	</UserControl>
-{{endregion}}
-{% endif %}
-{% if site.site_name == 'WPF' %}
 #### __[XAML] Example 4__
 
 {{region radexpressioneditor-getting-started_8}}
@@ -314,7 +285,6 @@ Once we declared the business object and the corresponding __ViewModel__, we can
 	  </Grid>
 	</Window>
 {{endregion}}
-{% endif %}
 
 The functionality for defining a filter for __RadGridView__ will be implemented in the handler of __ExpressionChanged__ event:  
 
@@ -410,7 +380,7 @@ The controls from our suite support different themes. You can see how to apply a
 
 To change the theme, you can follow the steps below:
 
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#Diagrams/Theming){% endif %} application.
+* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our [WPF Controls Examples](https://demos.telerik.com/wpf/) application.
 
 * Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the __RadExpressionEditor__, you will need to merge the following resources:
 
@@ -437,14 +407,13 @@ __Example 8__ demonstrates how to merge the ResourceDictionaries so that they ar
 	</Application.Resources>
 {{endregion}}
 
->Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+>Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf)
 
 __Figure 14__ shows a __RadExpressionEditor__ with the **Windows8** theme applied.
 
 #### __Figure 14: RadExpressionEditor with the Windows8 theme__
 ![RadExpressionEditor with Windows8 theme](images/radexpressionEditor-setting-theme.png)
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF ExpressionEditor Component](https://www.telerik.com/products/wpf/expressioneditor.aspx)
@@ -455,5 +424,3 @@ __Figure 14__ shows a __RadExpressionEditor__ with the **Windows8** theme applie
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
-{% endif %}
-

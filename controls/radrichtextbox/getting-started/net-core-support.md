@@ -10,13 +10,13 @@ position: 1
 
 # .NET Support
 
-Similarly to the other controls in UI for WPF, `RadRichTextBox` can be used in .NET 6 and later applications.
+Similarly to the other controls in UI for WPF, `RadRichTextBox` can be used in {{ site.minimum_net_core_version }} and later applications.
 
 This article describes the differences with the .NET Framework version you might encounter.
 
-## Assembly References in .NET 6 and Later
+## Assembly References in {{ site.minimum_net_core_version }} and Later
 
-To use RadRichTextBox in a .NET 6 or later project, you need to add references to the following assemblies:
+To use RadRichTextBox in a {{ site.minimum_net_core_version }} or later project, you need to add references to the following assemblies:
 
 * __Telerik.Licensing.Runtime__
 * __Telerik.Windows.Controls__
@@ -49,7 +49,7 @@ If you are migrating from .NET Framework, note that there are several changes ma
 
 >important The associated __.xaml__ files are changed respectively.
 
->important MEF is not supported by the .Net 6 and later versions of the RadRichTextBox control. For more information, check the [MEF]({%slug radrichtextbox-mef%}) article.
+>important MEF is not supported by the {{ site.minimum_net_core_version }} and later versions of the RadRichTextBox control. For more information, check the [MEF]({%slug radrichtextbox-mef%}) article.
 
 ## Paths to Resources
 

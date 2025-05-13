@@ -13,7 +13,7 @@ site_name: WPF
 
 The following tutorial will show you how to add UI for WPF controls to the Visual Studio toolbox.
 
->important This article is relevant for .NET Framework projects. If you use .NET 6 and later, see the "Design-Time Support" section of the [.NET Overview]({%slug netcore-support-overview%}) article.
+>important This article is relevant for .NET Framework projects. If you use {{ site.minimum_net_core_version }} and later, see the "Design-Time Support" section of the [.NET Overview]({%slug netcore-support-overview%}) article.
 
 ## Adding UI for WPF to Visual Studio Toolbox
 

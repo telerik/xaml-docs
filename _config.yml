@@ -3724,7 +3724,7 @@ defaults:
 
 # Define any custom fields that you use in the site here
 framework_name: WPF
-minimum_net_core_version: NET 6
+minimum_net_core_version: NET 8
 
 # Feedback Form Porduct Code
 productCode: RCWPF

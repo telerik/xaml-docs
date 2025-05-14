@@ -62,7 +62,7 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 	                var workbook = GenerateWorkbook();
 	
 	                XlsxFormatProvider provider = new XlsxFormatProvider();
-	                provider.Export(workbook, stream);
+	                provider.Export(workbook, stream, null);
 	            }
 	        }
 	        catch (IOException ex)
@@ -233,7 +233,7 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 					Dim workbook = GenerateWorkbook()
 	
 					Dim provider As New XlsxFormatProvider()
-					provider.Export(workbook, stream)
+					provider.Export(workbook, stream, null)
 				End Using
 			Catch ex As IOException
 				MessageBox.Show(ex.Message)
@@ -977,7 +977,7 @@ Here is a simple method, that will export the document to the specified file str
 	        {
 	            using (var stream = dialog.OpenFile())
 	            {
-	                provider.Export(document, stream);
+	                provider.Export(document, stream, null);
 	            }
 	        }
 	        catch (IOException ex)
@@ -996,7 +996,7 @@ Here is a simple method, that will export the document to the specified file str
 		If result = True Then
 			Try
 				Using stream = dialog.OpenFile()
-					provider.Export(document, stream)
+					provider.Export(document, stream, null)
 				End Using
 			Catch ex As IOException
 				MessageBox.Show(ex.Message)

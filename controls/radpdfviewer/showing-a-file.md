@@ -109,7 +109,6 @@ In __Example 3__ and __Example 4__, PdfViewerDemo is the name of the project and
 
 __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create a document for __RadPdfViewer__. This allows you to easily import your documents directly using __PdfFormatProvider__ instead of __PdfDocumentSource__.
               
-{% if site.site_name == 'WPF' %}
 #### __[C#] Example 5: Set RadFixedDocument through PdfFormatProvider__
 
 {{region radpdfviewer-showing-a-file_5}}
@@ -124,32 +123,9 @@ __PdfDocumentSource__ internally uses the __PdfFormatProvider__ class to create 
     
     PdfFormatProvider provider = new PdfFormatProvider();
     provider.ImportSettings = PdfImportSettings.ReadOnDemand;
-    RadFixedDocument doc = provider.Import(stream);
+    RadFixedDocument doc = provider.Import(stream, null);
     this.pdfViewer.Document = doc;
 {{endregion}}
-
-{% endif %}
-
-{% if site.site_name == 'Silverlight' %} 
-#### __[C#] Example 5: Set RadFixedDocument through PdfFormatProvider__
-
-{{region radpdfviewer-showing-a-file_5}}
-
-	string pdfFilePath = "Sample.pdf";
-	MemoryStream stream = new MemoryStream();
-	
-	using (Stream input = File.OpenRead(pdfFilePath))
-	{
-	    input.CopyTo(stream);
-	}
-	
-	FormatProviderSettings settings = new FormatProviderSettings(ReadingMode.OnDemand);
-	PdfFormatProvider provider = new PdfFormatProvider(stream, settings);
-	RadFixedDocument doc = provider.Import();
-	this.pdfViewer.Document = doc;
-{{endregion}}
-
-{% endif %}
               
 
 ## Binding the DocumentSource of RadPdfViewer

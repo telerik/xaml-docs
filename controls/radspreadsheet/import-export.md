@@ -122,7 +122,7 @@ To open or save a document with RadSpreadsheet, you can use the **Import()** and
 	
 	using (Stream input = new FileStream(fileName, FileMode.Open))
 	{
-	    this.radSpreadsheet.Workbook = formatProvider.Import(input);
+	    this.radSpreadsheet.Workbook = formatProvider.Import(input, null);
 	}
 {{endregion}}
 
@@ -134,7 +134,7 @@ To open or save a document with RadSpreadsheet, you can use the **Import()** and
 	
 	using (Stream output = new FileStream(fileName, FileMode.Create))
 	{
-	    formatProvider.Export(this.radSpreadsheet.Workbook, output);
+	    formatProvider.Export(this.radSpreadsheet.Workbook, output, null);
 	}
 {{endregion}}
 

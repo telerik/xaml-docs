@@ -21,7 +21,6 @@ __RadFixedDocument__ is the class representing a PDF document inside __RadPdfVie
 
 ## Creation
 
-{% if site.site_name == 'WPF' %}
 You can create a PDF document with the API of PdfProcessing and directly assing it to RadPdfViewer.
 
 #### [C#] Example 1: Create a PDF document and show it  
@@ -34,18 +33,9 @@ You can create a PDF document with the API of PdfProcessing and directly assing 
     
     this.pdfViewer.Document = document;
 {{endregion}}
-{% endif %}
 
 For an existing PDF document, an instance of __RadFixedDocument__ can be created using __PdfFormatProvider__  and assigned to __RadPdfViewer__ in the following way:
 
-{% if site.site_name == 'Silverlight' %}
-#### [C#] Example 1: Import a PDF document  
-{{region radpdfviewer-document-model-radfixeddocument_0}}
-		Stream stream = Application.GetResourceStream(new Uri("PdfViewerDemo;component/SampleData/test.pdf", UriKind.Relative)).Stream;
-		RadFixedDocument document = new PdfFormatProvider(stream, FormatProviderSettings.ReadOnDemand).Import();
-		this.pdfViewer.Document = document;
-{{endregion}}
-{% else %}
 #### [C#] Example 2: Import a PDF document
 
 {{region radpdfviewer-document-model-radfixeddocument_1}}
@@ -55,7 +45,7 @@ For an existing PDF document, an instance of __RadFixedDocument__ can be created
     Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider pdfFormatProvider = new Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.PdfFormatProvider();
     pdfFormatProvider.ImportSettings = Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Import.PdfImportSettings.ReadOnDemand;
     
-    RadFixedDocument document = pdfFormatProvider.Import(stream);
+    RadFixedDocument document = pdfFormatProvider.Import(stream, null);
     this.pdfViewer.Document = document;
 {{endregion}}
 {% endif %}

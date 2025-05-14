@@ -51,7 +51,7 @@ This method exports the associated RadGridView to a [Workbook](https://docs.tele
                 var provider = new XlsxFormatProvider();
                 using (var output = dialog.OpenFile())
                 {
-                    provider.Export(workbook, output);
+                    provider.Export(workbook, output, null);
                 }
             }
         }

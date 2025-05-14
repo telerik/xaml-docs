@@ -50,7 +50,7 @@ This method exports the associated RadGridView to a [RadFixedDocument](https://d
                 var provider = new PdfFormatProvider();
                 using (var output = dialog.OpenFile())
                 {
-                    provider.Export(fixedDoc, output);
+                    provider.Export(fixedDoc, output, null);
                 }
             }
         }

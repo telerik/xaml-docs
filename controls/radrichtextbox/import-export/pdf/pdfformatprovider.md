@@ -31,7 +31,7 @@ The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ in
 	using (Stream output = File.OpenWrite("sample.pdf"))
 	{
 	    RadDocument document = CreateRadDocument();
-	    provider.Export(document, output);
+	    provider.Export(document, output, null);
 	}
 {{endregion}}
 

@@ -53,8 +53,6 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 * __UseDefaultPrinter__ - forces silent printing. The option is only relevant for Native printing mode.              
 
-* __ForceVector__ - forces vector printing in Silverlight 5. Its default value is true. If set to false, tries to execute vector printing and in case it fails the “old” bitmap printing is executed.              
-
 * __PageRange__ - allows you to specify a single page or a range of pages which to be printed.
 
 #### __C#__  

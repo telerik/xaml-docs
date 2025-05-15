@@ -12,9 +12,7 @@ position: 0
 
 ![Telerik {{ site.framework_name }} DataGrid Key Features 1](images/RadGridView_KeyFeatures_1.png)
 
-This is a list with short descriptions of the top-of-the line features of __RadGridView__ control.
-        
-* __WPF/Silverlight Code Compatibility__ - the {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Grid shares a common code-base and API with its {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %} counterpart. This means that you can achieve close to 100% code reuse for your grid logic if you have parallel Silverlight/WPF development.
+This is a list with short descriptions of the top-of-the line features of __RadGridView__ control.        
             
 * __Powerful DataBinding__: RadGridView can be bound to various data source types, such as Objects, Collections, XML, WCF and RIA services and LINQ. [Read more]({%slug gridview-configuring-the-databindings%}).
 
@@ -42,9 +40,7 @@ This is a list with short descriptions of the top-of-the line features of __RadG
 
 * __ControlPanel__: As of __Q3 2013__ we have introduced a new feature allowing the developer to define __ControlPanelItems__. [Read more]({%slug gridview-overview-controlpanel%}).
 
-{% if site.site_name == 'WPF' %}
 * __Merged Cells__: As of __Q3 2014__ we have introduced support for __merged cells in RadGridView__ control. As a result the serial cells with equal values can be merged vertically or horizontally. [Read more]({%slug gridview-merged-cells%})
-{% endif %}
 
 * __StyleSelectors__: RadGridView has built in support for applying Style selectors. [Read more]({%slug gridview-cell-style-selector%})
 
@@ -64,34 +60,26 @@ To break away from the standard tabular view, you can customize the row appearan
 
 * __Self Referencing Hierarchy__: Often tabular data defines a hierarchical relationship with itself. This approach is used to model tree-like structures that can be nested to arbitrary depths. __RadGridView__ supports that scenario through its self-reference hierarchy feature that allows you to define a relation that points back to the same table. For example, consider a Customer object with a collection of related customers. [Read more]({%slug gridview-self-referencing-grid%})
 
-* __Selecting and Navigating__: __RadGridView__ provides a familiar selection API that will make {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} developers feel at home. The control supports single and multiple records selection that can be manipulated both with the mouse and with the keyboard. [Read more]({%slug gridview-selection-basics%})
+* __Selecting and Navigating__: __RadGridView__ provides a familiar selection API that will make the WPF developers feel at home. The control supports single and multiple records selection that can be manipulated both with the mouse and with the keyboard. [Read more]({%slug gridview-selection-basics%})
 
-* __Localization Support__: RadGridView provides advanced Localization support.  In addition, as RadGridView for Silverlight and WPF share the same API, once a control has been localized for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}, the control's declaration can be reused in {% if site.site_name == 'Silverlight' %}WPF{% endif %}{% if site.site_name == 'WPF' %}Silverlight{% endif %}. [Read more]({%slug gridview-localization2%})
-
+* __Localization Support__: RadGridView provides advanced [Localization]({%slug gridview-localization2%}) support.
+  
 * __Flexible API__: With its easy to understand API, RadGridView provides fast and easy way to further deal with its elements and their properties in the code-behind.
             
 * __Enhanced Routed Events Framework__: To help your code become even more elegant and concise, Enhanced Routed Events Framework for RadControls for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} is implemented. This gives you more freedom when you design your applications, since you can write instance handlers as well as class handlers for the routed events of your controls.
             
 * __Expression Blend support__:  All UI Controls can be easily customized using Expression Blend.
-
-{% if site.site_name == 'WPF' %}           
-* As of __Q3 2012__ official release we have included __Level 1 Coded UI test support__ across our controls. For more detailed information on Coded UI and Levels of support you could check this
+   
+* __Levels 1,2 and 3Coded UI test support__ across our controls. For more detailed information on Coded UI and Levels of support you could check this
 [link](http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx).
-As of __Q2 2013__ we have included [Level 2 and Level 3 Coded UI test support]( http://blogs.msdn.com/b/visualstudioalm/archive/2011/10/28/coded-ui-test-extension-for-3rd-party-controls-the-basics-explained.aspx).
 
-* __Searching__: Supported as of  __R1 2016__. Through it the control extends the existing filtering functionality by enabling highlighting of the filtered data. More information can be found in the [Search as you type]({%slug radgridview-search-as-you-type%}) topic.
+* __Searching__: Through it the control extends the existing filtering functionality by enabling highlighting of the filtered data. More information can be found in the [Search as you type]({%slug radgridview-search-as-you-type%}) topic.
 
 * __Pinned Rows__: As of __R2 2016 RadGridView__ provides a mechanism for pinning particular rows to the top of the control, so that they do not participate in the vertical scrolling. A detailed explanation of this feature can be found in the [Pinned Rows]({%slug radgridview-pinned-rows%}) article.
-{% endif %}
 
-## See Also
-
+## See Also  
  * [RadGridView Overview]({%slug gridview-overview2%})
-
  * [Visual Structure]({%slug gridview-visual-structure%})
-
  * [Getting Started]({%slug gridview-getting-started2%})
-
- * [Populating with Data]({%slug gridview-data-overview%})
- 
+ * [Populating with Data]({%slug gridview-data-overview%}) 
  * [UI Virtualization]({%slug radgridview-features-ui-virtualization%})

@@ -28,7 +28,7 @@ This video explains the details around the project you will be modifying&mdash;w
 
 ## Onboarding Modules
 
-The [Telerik UI for WPF technical online training](https://www.telerik.com/support/video-courses) has an approximate duration of 2 hours and is split into eight modules with the following learning path:
+The [Telerik UI for WPF technical online training](https://www.youtube.com/playlist?list=PLvmaC-XMqeBarzOke7ro9VvoiVlAiDyuy) has an approximate duration of 2 hours and is split into eight modules with the following learning path:
 
 * **Chapter 1: Welcome Settings** (Course overview, prerequisites, about Telerik UI for WPF, tour of demo application)
 * **Chapter 2: Getting Started** (Running the sample application code)

@@ -51,6 +51,3 @@ Almost all Telerik controls can be found in the `telerik` URI namespace schema. 
 	{{endregion}}
 
 >tip See the Telerik assemblies required by each control in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.
-
-## See Also  
-* [Upgrading Telerik UI Trial to Telerik UI Developer License]({%slug installation-upgrading-from-trial-to-developer-license-wpf%})

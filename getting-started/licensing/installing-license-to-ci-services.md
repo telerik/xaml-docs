@@ -48,11 +48,10 @@ The recommended approach for providing your license key to the `Telerik.Licensin
 
 1. After running `npm install` or `yarn`, add a build step to activate the license:
 
-	#### __[YML]__
-	{{region installing-license-to-ci-services-0}}
+	```YML
 		env:
 			TELERIK_LICENSE: ${{ "{{ secrets.TELERIK_LICENSE }}" }}
-	{{endregion}}
+	```
 
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})

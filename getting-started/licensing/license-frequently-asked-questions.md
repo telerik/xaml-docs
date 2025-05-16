@@ -36,7 +36,13 @@ This depends on your license type.
 		
 	See the [Invalid License]({%slug license-activation-errors-and-warnings%}#invalid-license) section for more information.
 
-* __Subscription licenses__ will prevent you from building the application with an expired license key. Deployed applications will continue to function normally.
+* __Subscription licenses__ used in deployed applications will continue to function normally. However, the following will happen if you rebuild the application with an expired subscription license:
+
+	* A watermark appears on application startup.
+	* A modal dialog appears on application startup.
+	* A warning message is logged in the build log.	
+		
+	See the [Invalid License]({%slug license-activation-errors-and-warnings%}#invalid-license) section for more information.
 
 * __Trial licenses__ will prevent the applications from functioning normally once the trial period has expired. The following will happen if you try to build or run the application:
 	

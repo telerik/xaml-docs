@@ -18,6 +18,8 @@ A missing, expired, or invalid license will result in:
 
 * A modal dialog appearing on application startup. Clicking the __OK__ button of the dialog closes the dialog and removes the banner until the next application startup.
 
+	![A picture showing the watermark and dialog that occurs when no valid license can be found](images/license-activation-errors-and-warnings-2.png)
+
 * A warning message similar to the following appearing in the build log:
 	
 	![A picture showing the license key errors in the Visual Studio Error List pane](images/license-activation-errors-and-warnings-0.png)
@@ -46,12 +48,14 @@ When using Telerik UI for WPF in a project with an expired or missing license, t
 
 | Condition or Error | Message Code | Solution |
 | ------------------ | ------------ | -------- |
-| `No license key is detected` | TKL002 | [Install a license key]({%slug installing-license-key%}) to activate the UI components and remove the error message. |
-| `Invalid license key` | TKL003 | [Download a new license key]({%slug installing-license-key%}#downloading-the-license-key) and install it to activate the UI components and remove the error message. |
-| `Your subscription license has expired.` | TKL103; TKL104 | Renew your subscription and [download a new license key]({%slug installing-license-key%}#downloading-the-license-key). |
-| `Your perpetual license is invalid.` | TKL102 | You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: <ul><li>Renew your subscription and [download a new license key]({%slug installing-license-key%}#downloading-the-license-key).</li><li>Downgrade to a product version included in your perpetual license as indicated in the message.</li></ul> |
-| `Your trial license has expired.` | TKL105 | Purchase a commercial license to continue using the product. |
-| `Your license is not valid for the detected product(s).` | TKL101 | Review the purchase options for the listed products. Alternatively, remove the references to the listed packages from `package.json.` |
+| `No Telerik and Kendo UI License file found` | TKL002 | [Install a license key]({%slug installing-license-key%}) to activate the UI components and remove the error message. |
+| `Corrupted Telerik and Kendo UI License Key content` | TKL003 | [Download a new license key]({%slug installing-license-key%}#downloading-the-license-key) and install it to activate the UI components and remove the error message. |
+| `Unable to locate licenses for all products` | TKL004 | Your license is not valid for all Telerik and Kendo products added to your project. If you have already purchased the required license, then [update your license key]({%slug installing-license-key%}#downloading-the-license-key). |
+| `Telerik UI for WPF is not listed in your current license file` | TKL101 | Review the purchase options for the listed products. Alternatively, remove the references to the listed packages from `package.json.` |
+| `Your perpetual license is invalid` | TKL102 | You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: <ul><li>Renew your subscription and [download a new license key]({%slug installing-license-key%}#downloading-the-license-key).</li><li>Downgrade to a product version included in your perpetual license as indicated in the message.</li></ul> |
+| `Your subscription license has expired` | TKL103; TKL104 | Renew your subscription and [download a new license key]({%slug installing-license-key%}#downloading-the-license-key). |
+| `Your trial license has expired` | TKL105 | Purchase a commercial license to continue using the product. |
+| `No Telerik or Kendo UI product references detected in project` | TKL001 | If you use Telerik products and see this message, update the `Telerik.Licensing` package to version 1.4.6 or later. If you do not use Telerik products, remove the `Telerik.Licensing` NuGet reference from your project. |
 
 ## See Also  
 * [Setting Up Your License Key]({%slug installing-license-key%})

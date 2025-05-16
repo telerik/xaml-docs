@@ -14,7 +14,8 @@ The Telerik UI for WPF assemblies depend on a specific version of the `Telerik.L
 
 | Telerik.Licensing Version | UI for WPF Version<br/>(From) |  UI for WPF Version<br/>(To) |
 | ------------------------- | ----------------------------- | ---------------------------- |
-| 1.4.6 | 2025.1.211 (latest) | N/A |
+| 1.4.6 | 2025.1.211 | 2025.1.211 |
+| 1.6.5 | 2025.2.520 (latest) | N/A |
 
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})

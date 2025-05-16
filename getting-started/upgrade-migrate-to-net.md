@@ -5,7 +5,7 @@ description: Check how to migrate a Telerik's WPF application from .NET 4.0 or 4
 slug: upgrade-migrate-to-net
 tags: upgrading,telerik,ui,trial,to,telerik,ui,developer,license,or,newer,version,netframework
 published: True
-position: 1
+position: 3
 ---
 
 # Project Migration to .NET 4.6.2 and .{{ site.minimum_net_core_version }}
@@ -14,23 +14,7 @@ With the 2024 Q2 release (from May 2024), the Telerik UI for WPF product no long
 
 This article describes how to migrate to a newer version of .NET.
 
-## Migrating from .NET Framework 4.0/4.5 to .NET Framework 4.6.2
-
-There is no difference in the APIs between the different types of Telerik dlls, so you need to only change the __Target framework__ of the project and the referenced Telerik dlls.
-
-1. Download and install the corresponding [.NET Framework developer pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) (4.6.2 or later).	
-	
-2. Right click on the WPF project in Visual Studio and select the __Properties__ option from the context menu.
-
-	![](images/upgrade-migrate-to-net-0.png)
-	
-3. In the __Target framework__ menu, select __.NET Framework 4.6.2__ or later version and save the project file.
-
-	![](images/upgrade-migrate-to-net-1.png)
-	
-4. Update the referenced Telerik assemblies using the preferred installation approach. For example, via [NuGet]({%slug nuget-installation%}) or the [.msi installer]({%slug installation-installing-from-msi-wpf%}).
-
-5. You may need to manually delete the __bin__ and __obj__ folders before rebuilding the project in order to ensure that any Visual Studio assemblies cache is cleared.
+> In case you are using .NET Framework, we recommend upgrading to .NET 8 or later in order to take advantage of the easier project maintenance and general .NET performance optimizations.
 
 ## Migrating from .NET Core 3.1 to .{{ site.minimum_net_core_version }}
 
@@ -53,6 +37,24 @@ There is no difference in the APIs between the different types of Telerik dlls, 
 ## Migrating from .NET Framework 4.0/4.5 to .{{ site.minimum_net_core_version }}
 
 To migrate from .NET Framework to .NET, you can create a new .{{ site.minimum_net_core_version }} (or later) project and include the corresponding files from the .NET Framework project. Then, [install the Telerik .NET assemblies]({%slug installation-installing-which-file-do-i-need%}) in the new project. This approach is described in more detail in the [Migrating to .NET]({%slug netcore-support-migration%}) article.
+
+## Migrating from .NET Framework 4.0/4.5 to .NET Framework 4.6.2
+
+There is no difference in the APIs between the different types of Telerik dlls, so you need to only change the __Target framework__ of the project and the referenced Telerik dlls.
+
+1. Download and install the corresponding [.NET Framework developer pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) (4.6.2 or later).	
+	
+2. Right click on the WPF project in Visual Studio and select the __Properties__ option from the context menu.
+
+	![](images/upgrade-migrate-to-net-0.png)
+	
+3. In the __Target framework__ menu, select __.NET Framework 4.6.2__ or later version and save the project file.
+
+	![](images/upgrade-migrate-to-net-1.png)
+	
+4. Update the referenced Telerik assemblies using the preferred installation approach. For example, via [NuGet]({%slug nuget-installation%}) or the [.msi installer]({%slug installation-installing-from-msi-wpf%}).
+
+5. You may need to manually delete the __bin__ and __obj__ folders before rebuilding the project in order to ensure that any Visual Studio assemblies cache is cleared.
 
 ## See Also  
 * [Overview of porting from .NET Framework to .NET](https://learn.microsoft.com/en-us/dotnet/core/porting/)

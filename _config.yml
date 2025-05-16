@@ -1050,9 +1050,6 @@ navigation:
     "licensing":
         title: "Redistribution"
         position: 5
-    "upgrade":  
-        title: "Upgrade"
-        position: 6
     "wpflab":  
         title: "WPF Labs"
         position: 0

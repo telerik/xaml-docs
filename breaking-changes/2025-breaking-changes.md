@@ -12,6 +12,26 @@ This article lists the breaking changes introduced with the Telerik UI for WPF r
 
 Currently, this section of the documentation contains only the latest release notes (starting from 2025). For older changes, check the __Breaking Changes__ and __Backward Compatibility__ help articles of the individual Telerik controls.
 
+## 2025 Q2
+
+#### Common changes
+
+* The .NET 6 dlls set of Telerik UI for WPF is no longer distributed with the product. The minimum .NET version is {{ site.minimum_net_core_version }}.
+
+* The Telerik UI for WPF product no longer distributes offline help documentation in the Help3 and CHM formats.
+
+* The `IsFullTrustExtension` class was removed. No longer needed in the .NET versions supported by Telerik.
+
+#### RichTextBox
+
+* The `MouseSelectionHandler(RadDocument document)` obsolete constructor of the `MouseSelectionHandler` class was removed. Instead, use the `MouseSelectionHandler(RadDocument document, IDocumentEditorPresenter presenter)` constructor.
+  
+* The `TextInsertedEventArgs(string text, bool shouldPersist, bool shouldStartNewComposition)` obsolete constructor of the `TextInsertedEventArgs` class was removed. Instead, use the `TextInsertedEventArgs(string text, InputEvents currentEvent, ImeLanguage imeLanguage)` constructor.
+
+* The `RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)` obsolete method of the `DocumentSpellChecker` class was removed. Instead, use the `RemoveCustomDictionary(CultureInfo culture)` method.
+
+* The `TextInsertedEventArgs(string text, bool shouldPersist, bool shouldStartNewComposition)` obsolete constructor of the `TextInsertedEventArgs` class was removed. Instead, use the `TextInsertedEventArgs(string text, InputEvents currentEvent, ImeLanguage imeLanguage)` constructor.
+
 ## 2025 Q1
 
 #### Common Changes

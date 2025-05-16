@@ -22,7 +22,6 @@ The __Export with SpreadsheetStreamingExport__ functionality uses additional lib
 * Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll
 * Telerik.Documents.SpreadsheetStreaming.dll
 * Telerik.Windows.Data.dll
-* Telerik.Windows.Zip.dll
 
 > __Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll__ is a new binary introduced in __R1 2019__. 
 

@@ -19,7 +19,7 @@ This article demonstrates two approaches on how to extract and edit the default 
 
 The **XAML** files with the different themes for all controls are located in the __Themes.Implicit__ folder. You can find this folder in the Telerik UI for {{ site.framework_name }} installation directory, for example, `C:\Program Files (x86)\Progress\Telerik UI for WPF R2 2021\Themes.Implicit`.
 
-The .xaml files inside the __NET Framework__ folder are meant for **.NET Framework 4.6.2**. The .xaml files inside the __NET__ contains the resources for the __.NET 6__ and __.NET 8__ frameworks. 
+The .xaml files inside the __NET Framework__ folder are meant for **.NET Framework 4.6.2**. The .xaml files inside the __NET__ contains the resources for __.{{ site.minimum_net_core_version }}__. 
 
 The following example shows how to extract the **RadListBox** control template for the **Office_Black** theme:
 
@@ -29,7 +29,7 @@ The following example shows how to extract the **RadListBox** control template f
 
 1. Locate the __Telerik.Windows.Controls.xaml__ file and open it with your favorite editor.
 
-   To find the XAML file for any control, you need to know the name of the {% if site.site_name == 'Silverlight' %}[assembly that contains the controls]({%slug installation-installing-controls-dependencies%}){% else %}[assembly that contains the control]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}. The name of the XAML file corresponds to the name of the assembly.
+   To find the XAML file for any control, you need to know the name of the [assembly that contains the control]({%slug installation-installing-controls-dependencies-wpf%}) The name of the XAML file corresponds to the name of the assembly.
 
    __Figure 1: Navigating to the required XAML file__
 
@@ -99,10 +99,6 @@ To add a rounded red border around the **RadListBox** control, follow the steps 
 ![RadListBox control with red border](images/styling-apperance-editing-control-templates_2.png)
 
 ## Extracting Control Templates Using Visual Studio
-
-{% if site.site_name == 'Silverlight' %}
-> Extracting control templates of the control using Visual Studio is only possible when the project reference XAML assemblies. In Silverlight, Visual Studio won't be able to obtain the default templates of the controls when the referenced DLLs are NoXAML.
-{% endif %}
 
 Another way to extract a control template is to use the **Visual Studio designer** or **Expression Blend**:
 

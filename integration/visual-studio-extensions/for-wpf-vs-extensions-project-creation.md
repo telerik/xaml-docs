@@ -25,13 +25,13 @@ The fastest way to have such a project is by using the Progress Telerik UI for W
 	
 	![{{ site.framework_name }} Configure your new project menu](images/radcontrols-for-wpf-vs-extensions-project-creation-1.png)
 	
-3. Select the project options, like target framework, reference type, theme mechanism, etc., and click Next. This step is available only with the project template for .NET 6 and later. 
+3. Select the project options, like target framework, reference type, theme mechanism, etc., and click Next. This step is available only with the project template for .{{ site.minimum_net_core_version }} and later. 
 	
 	![{{ site.framework_name }} Configure your new project menu](images/radcontrols-for-wpf-vs-extensions-project-creation-2.png)
 	
 4. In the __Create New Project Wizard__ select the project template you want to use. The wizard allows you to define a blank project with only the `Telerik.Windows.Controls.dll` referenced, or to use one of the [Office-inspired templates]({%slug visual-studio-templates%}) (Calendar, Word-Inspired, etc.). 
 	
-	__.NET 6 and later project creation wizard__  
+	__.{{ site.minimum_net_core_version }} and later project creation wizard__  
 	
 	![{{ site.framework_name }} Create New Project Wizard](images/radcontrols-for-wpf-vs-extensions-project-creation-3.png)
 	

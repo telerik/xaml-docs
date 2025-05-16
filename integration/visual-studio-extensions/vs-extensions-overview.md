@@ -28,41 +28,22 @@ Progress Telerik UI for {{ site.framework_name }} Extension can be accessed thro
 
 __No selected project in Visual Studio__  
 
-{% if site.framework_name == 'WPF' %}
 ![VSExtentions WPF Overview Menu Create](images/VSExtentions_WPF_OverviewMenuCreate.png)
-{% else %}
-![VSExtentions Silverlight Overview Menu Create](images/VSExtentions_SL_OverviewMenuCreate.png)
-{% endif %}
 
-{% if site.framework_name == 'WPF' %}
 __Selected project in Visual Studio is Standard WPF Application__  
 
 ![VSExtentions WPF Overview Menu Convert](images/VSExtentions_WPF_OverviewMenuConvert.png)
-{% else %}
-__Selected project in Visual Studio is Standard Silverlight Application__  
-
-![VSExtentions Silverlight Overview Menu Convert](images/VSExtentions_SL_OverviewMenuConvert.png)
-{% endif %}
 
 __Selected project in Visual Studio is Telerik Application__  
 
-{% if site.framework_name == 'WPF' %}
 ![VSExtentions WPF Overview Menu Configure](images/VSExtentions_WPF_OverviewMenuConfigure.png)
-{% else %}
-![VSExtentions WPF Overview Menu Configure](images/VSExtentions_SL_OverviewMenuConfigure.png)
-{% endif %}
 
 When installed, the extensions add several project templates to the New Project dialog of Visual Studio.
 
 __Telerik project templates__  
 
-{% if site.framework_name == 'WPF' %}
 ![VSExtentions WPF Overview Project Templates](images/VSExtentions_WPF_OverviewProjectTemplates.jpg)
-{% else %}
-![VSExtentions WPF Overview Project Templates](images/VSExtentions_SL_OverviewProjectTemplates.png)
-{% endif %}
 
-{% if site.framework_name == 'WPF' %}
 ### Visual Studio Support
 
 <table>
@@ -87,4 +68,3 @@ __Telerik project templates__
 		</tr>
 	</tbody>
 </table>
-{% endif %}

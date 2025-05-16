@@ -1,7 +1,7 @@
 ---
 title: Migrating to .NET
 page_title: Migrating to .NET
-description: This article shows how to migrate from an existing Telerik WPF .NET Framework project to a .NET 6 and later.
+description: This article shows how to migrate from an existing Telerik WPF .NET Framework project to a .NET 8 and later.
 slug: netcore-support-migration
 tags: get,started,first,steps,migrate,core,standard,visual,studio,
 published: True
@@ -10,7 +10,7 @@ position: 1
 
 # Migrating to .NET
 
-This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.NET 6 or later).
+This article shows how to migrate from an existing WPF .NET Framework project to a .NET one (.{{ site.minimum_net_core_version }} or later).
 
 1. Create a new __.NET__ application using Visual Studio. 
 	
@@ -31,7 +31,7 @@ This article shows how to migrate from an existing WPF .NET Framework project to
 	If Telerik UI for WPF is installed on the machine, you can find the dlls in the "*UI for WPF installation folder\Binaries\NET+version number*" folder. Otherwise, [download the .zip file]({%slug installation-installing-from-zip-wpf%}) with the dlls or install them via the [NuGet package manager]({%slug nuget-installation%}).
 	
 	#### Figure 3: Checking if a Telerik assembly is built against .NET  
-	![{{ site.framework_name }} Checking if a Telerik assembly is built against .NET 6](images/netcore-support-migration-3.png)
+	![{{ site.framework_name }} Checking if a Telerik assembly is built against .NET 8](images/netcore-support-migration-3.png)
 
 4. Several controls rely on third party NuGet packages. These are automatically installed when adding the Telerik assemblies via NuGet or the Telerik Visual Studio Extension. In case you reference the assemblies manually, one or more of the following packages should be installed manually: `System.Data.OleDb`, `System.Drawing.Common` and `System.ServiceModel.Http`.
 

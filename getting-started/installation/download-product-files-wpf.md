@@ -42,29 +42,25 @@ Below you could find a list of the available files separated by category.
 
 ## Available Files
 
-The following section lists the files that can be download from the Telerik UI for WPF download page. The download separates the files in several categories - "Installation", "Other Setup Files", "Documentation", "Resources" and "Source Code".
+The following section lists the files that can be downloaded from the Telerik UI for WPF download page. The download separates the files in several categories - "Installation", "Other Setup Files", "Documentation", "Resources" and "Source Code".
 
-The following placeholder words will be used in the list to omit the need to add the concrete license type or product version:
-
-* `[license]`&mdash;Could be Trial or Dev depending on the license you have.
-
-* `[version]`&mdash;Replaces the version the file corresponds to. For example: "2024_2_423".
+The `[version]` placeholder words will be used in the list to omit the need to add the concrete product version.
 
 #### Installation
 
-* `Telerik_UI_for_WPF_[version]_[license].msi`&mdash;Automatic installation, check [Installing Telerik UI for WPF from MSI file]({%slug installation-installing-from-msi-wpf%}) for more details.
+* `Telerik_UI_for_WPF_[version].msi`&mdash;Automatic installation, check [Installing Telerik UI for WPF from MSI file]({%slug installation-installing-from-msi-wpf%}) for more details.
 
 #### Other Setup Files
 
-* `Telerik_UI_for_WPF_[version]_[license]_Dlls.zip`&mdash;Used for manual installation, for more details check [Installing Telerik UI for WPF from ZIP file]({%slug installation-installing-from-zip-wpf%}).
+* `Telerik_UI_for_WPF_[version]_Dlls.zip`&mdash;Used for manual installation, for more details check [Installing Telerik UI for WPF from ZIP file]({%slug installation-installing-from-zip-wpf%}).
 * `Telerik_UI_for_WPF_[version]_Themes.zip`&mdash;Contains two folders containing the default styles and templates for the controls when using the [Xaml and NoXaml]({%slug xaml-vs-noxaml%}).
-* `Telerik_UI_for_WPF_[version]_[license]_PDBs.zip`
-* `Telerik_UI_for_WPF_[version]_[license]\_NuGet_Xaml.zip`
-* `Telerik_UI_for_WPF_[version]_[license]\_NuGet_NoXaml.zip`
-* `Telerik_UI_for_WPF_[version]_[license]\_NuGet_Separate_Packages_Xaml.zip`
-* `Telerik_UI_for_WPF_[version]_[license]\_NuGet_Separate_Packages_NoXaml.zip`
+* `Telerik_UI_for_WPF_[version]_PDBs.zip`
+* `Telerik_UI_for_WPF_[version]_NuGet_Xaml.zip`
+* `Telerik_UI_for_WPF_[version]_NuGet_NoXaml.zip`
+* `Telerik_UI_for_WPF_[version]_NuGet_Separate_Packages_Xaml.zip`
+* `Telerik_UI_for_WPF_[version]_NuGet_Separate_Packages_NoXaml.zip`
 
-In versions prior Q1 2024, there is a .zip file with digitally signed version of the Telerik assembles - __Telerik_UI_for_WPF_[version]_[license]_Hotfix_DIGITALLY_SIGNED.zip__. With the Q1 2024 release __all Telerik dlls are digitally signed__ and there is no need of a separate package, which is why this .zip is no longer distributed.
+In versions prior Q1 2024, there is a .zip file with digitally signed version of the Telerik assembles - __Telerik_UI_for_WPF_[version]_Hotfix_DIGITALLY_SIGNED.zip__. With the Q1 2024 release __all Telerik dlls are digitally signed__ and there is no need of a separate package, which is why this .zip is no longer distributed.
 
 >Check [Setting a theme]({%slug styling-apperance-implicit-styles-overview%}) topic for more information on the Xaml and NoXaml binaries.
 
@@ -72,29 +68,21 @@ In versions prior Q1 2024, there is a .zip file with digitally signed version of
 
 ### Documentation
 
-This section contains the offline help documentation as well as the API Reference in the following formats: `CHM`, `Help3` and `PDF`. The documentation convers the Telerik UI for WPF and [DocumentProcessing](https://docs.telerik.com/devtools/document-processing/introduction) products.
+This section contains the offline help documentation as well as the API Reference in a `PDF` format. The documentation covers the Telerik UI for WPF and [Document Processing](https://docs.telerik.com/devtools/document-processing/introduction) products.
 
-* `Telerik_UI_for_WPF_Documentation_Help3_[version].zip`
-* `Telerik_UI_for_WPF_Documentation_[version].chm`
-* `Telerik_UI_for_WPF_ApiReference_[version].chm`
 * `Telerik_UI_for_WPF_[version].pdf`
-* `Telerik_Document_Processing_Documentation_[version].chm`
-* `Telerik_Document_Processing_ApiReference_[version].chm`
-* `Telerik_Document_Processing_Documentation_Help3_[version].zip`
-* `Telerik_Document_Processing_ApiReference_Help3_[version].zip`
 * `Telerik_Document_Processing_[version].pdf`
-* `Telerik_UI_for_WPF_ApiReference_Help3_[version].zip`
 
 ### Resources
 
 You could download the complete source code of the Telerik [WPF Demos application]({%slug installing-wpf-demos %}) as well as the provided sample applications.
 
-* `Telerik_UI_for_WPF_[version]_[license]_Demos.msi`
+* `Telerik_UI_for_WPF_[version]_Demos.msi`
 * `Telerik_UI_for_WPF_[version]_Demos_Source.zip`
-* `CRM_WPF_[version]_[license]_Source.zip`
-* `OutlookInspiredApp_WPF_[version]_[license]_Source.zip`
-* `ColorThemeGenerator_WPF_[version]_[license]_Source.zip`
-* `ERP_WPF_[version]_[license]_Source.zip`
+* `CRM_WPF_[version]_Source.zip`
+* `OutlookInspiredApp_WPF_[version]_Source.zip`
+* `ColorThemeGenerator_WPF_[version]_Source.zip`
+* `ERP_WPF_[version]_Source.zip`
 
 ### Source Code
 

@@ -147,3 +147,35 @@ __Manually customizing the appearance the vector tiles__
 ![{{ site.framework_name }} Manually customizing the appearance the vector tiles](images/radmap-features-providers-azuremapprovider-3.png)
 
 >tip You can see an example of this styling approach for the vector tiles and the AzureMapProvider in our [Demos application](https://demos.telerik.com/wpf/).
+
+## Language
+
+The Azure Maps services provide a culture parameter in its URL address and the AzureMapProvider allows you to utilize it. To do so, set the `Language` property to the desired culture string.
+
+>tip Check the [Localization support in Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/supported-languages) article for the supported languages of the Azure Maps services.
+
+#### __[XAML] Setting the Langauge property of the AzureMapProvider__
+{{region radmap-features-providers-azuremapprovider-4}}
+    <telerik:RadMap x:Name="radMap">
+        <telerik:RadMap.Provider>
+            <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key" Language="bg-BG"/>
+        </telerik:RadMap.Provider>
+    </telerik:RadMap>
+{{endregion}}
+
+__AzureMapProvider with localized tile sets__
+
+![AzureMapProvider with localized tile sets](images/radmap-features-providers-azuremapprovider-4.png)
+
+## APIVersion
+
+The AzureMapProvider provides the functionality to specify the [Render](https://learn.microsoft.com/en-us/rest/api/maps/render?view=rest-maps-2025-01-01) Rest API version of the Azure Maps services. This is done via the `APIVersion` property of the provider. The lastest version of the Render Rest API is __2024-04-01__ and the AzureMapProvider uses it.
+
+#### __[XAML] Setting a previous version of the Render Rest API version__
+{{region radmap-features-providers-azuremapprovider-5}}
+    <telerik:RadMap x:Name="radMap">
+        <telerik:RadMap.Provider>
+            <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key" APIVersion="2022-08-01"/>
+        </telerik:RadMap.Provider>
+    </telerik:RadMap>
+{{endregion}}

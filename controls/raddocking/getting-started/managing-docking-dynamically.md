@@ -353,7 +353,7 @@ If you want to close a pane in the code-behind, then you need to set the __IsHid
 {{region cs-raddocking-managing-docking-controls-dynamically_21}}
 	private void ClosePane()
 	{
-	    radPane1.IsHidden = false;
+	    radPane1.IsHidden = true;
 	}
 {{endregion}}
 
@@ -361,8 +361,15 @@ If you want to close a pane in the code-behind, then you need to set the __IsHid
 
 {{region vb-raddocking-managing-docking-controls-dynamically_22}}
 	Private Sub ClosePane()
-		radPane1.IsHidden = False
+		radPane1.IsHidden = true
 	End Sub
+{{endregion}}
+
+To re-open the closed pane set `IsHidden` back to `false`.
+
+#### __[C#] Re-opening a closed pane__  
+{{region cs-raddocking-managing-docking-controls-dynamically_23}}	
+	radPane1.IsHidden = true;
 {{endregion}}
 
 If you need further management of the __RadDocking__ you can take a look at some of the following topics:
@@ -401,10 +408,7 @@ If you need further customizations of the __RadDocking__ you can take a look at 
 
 * [Style the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%})
 
-## See Also
-
+## See Also  
  * [Key Features]({%slug raddocking-key-features%})
-
  * [Visual Structure]({%slug raddocking-visual-structure%})
-
  * [Getting Started]({%slug raddocking-getting-started2%})

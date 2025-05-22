@@ -1,7 +1,7 @@
 ---
 title: Installing License Key
 page_title: Installing License Key
-description: The article describes how to install a license key for the Telerik UI for WPF product.
+description: The article describes how to install a license key (licensing) for the Telerik UI for WPF product.
 slug: installing-license-key
 tags: installing,ui,for,wpf,file,license,key
 published: True

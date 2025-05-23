@@ -94,6 +94,12 @@ To enforce the use of the license key file, unset the environment variable.
 
 No, versions released prior to January 2025 (Q1) do not require a license key.
 
+## Why I see the missing license key message when the Telerik components are used in a class library even if the license key is properly installed?
+
+If you reference the Telerik components in a class library that is used in the main project, you will need to install the `Telerik.Licensing` package also in the main project. Otherwise, you will see the invalid/not found license key message. An alternative solution would be to set the following attributes to the `PackageReference` installing the Telerik product in the class library project - `IncludeAssets` to `All` and `PrivateAssets` to `None`.
+
+Both approaches are shown in the [following KB article]({%slug kb-installation-missing-license-in-class-library-setup%}).
+
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})
 * [Setting Up Your License Key]({%slug installing-license-key%})

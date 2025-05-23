@@ -1,7 +1,7 @@
 ---
 title: Building Hierarchical Grid View
 page_title: Building Hierarchical Grid
-description: Check out our tutorial that will walk you through the process of displaying hierarchical data in RadGridView - Telerik's {{ site.framework_name }} DataGrid.
+description: Check out our tutorial that will walk you through the process of displaying hierarchical data in RadGridView - Telerik's WPF DataGrid.
 slug: gridview-building-hierarchical-grid-view
 tags: building,hierarchical,grid,view
 published: True
@@ -10,22 +10,21 @@ position: 1
 
 # Building Hierarchical Grid
 
-This tutorial will walk you through the process of displaying hierarchical data in __RadGridView__. It will not cover the creation of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application, adding __RadGridView__ to your __UserControl__ or how to define columns. If you need information on any of these topics please read the [Getting Started]({%slug gridview-getting-started2%}) topic. 
+This tutorial will walk you through the process of displaying hierarchical data in `RadGridView`. It will not cover the creation of a WPF application, adding RadGridView to your `UserControl` or how to define columns. If you need information on any of these topics please read the [Getting Started]({%slug gridview-getting-started2%}) topic. 
 
-The final result should look like the one displayed on **Figure 1**.
+The final result should look like the one displayed in the next image.
 
-#### Figure 1: Hierarchical RadGridView
+__Hierarchical RadGridView__
 
-![Telerik {{ site.framework_name }} DataGrid Building Hierarchical Grid](images/RadGridView_BuildingHierarchicalGrid_3.png)
+![Telerik WPF DataGrid Building Hierarchical Grid](images/RadGridView_BuildingHierarchicalGrid_3.png)
 
-Assuming that you have already created a {{ site.framework_name }} application and defined the __RadGridView__ control, it is time to prepare the sample data for it.
+Assuming that you have already created a WPF application and defined the RadGridView control, it is time to prepare the sample data for it.
 
 ## Preparing the Data
 
 The sample data is represented by teams divided into divisions. First create the class that will represent a single team.
 
-#### __[C#] Example 1: The Team class__
-
+#### __[C#] The Team class__
 {{region cs-gridview-building-hierarchical-grid-view_0}}
 	public class Team
 	{
@@ -47,8 +46,7 @@ The sample data is represented by teams divided into divisions. First create the
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 1: The Team class__
-
+#### __[VB.NET] The Team class__
 {{region vb-gridview-building-hierarchical-grid-view_1}}
 	Public Class Team
 	    Private _Id As Integer
@@ -85,8 +83,7 @@ The sample data is represented by teams divided into divisions. First create the
 
 The class that represents a single division will contain a collection of Team objects.
 
-#### __[C#] Example 2: The Division class__
-
+#### __[C#] The Division class__
 {{region cs-gridview-building-hierarchical-grid-view_2}}
 	public class Division
 	{
@@ -108,8 +105,7 @@ The class that represents a single division will contain a collection of Team ob
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 2: The Division class__
-
+#### __[VB.NET] The Division class__
 {{region vb-gridview-building-hierarchical-grid-view_3}}
 	Public Class Division
 	    Private _Id As Integer
@@ -144,12 +140,11 @@ The class that represents a single division will contain a collection of Team ob
 	End Class
 {{endregion}}
 
->Note that if you want to support two way binding your classes should implement the __INotifyPropertyChanged__ interface and raise the __PropertyChanged__ event every time a property value changes.
+>Note that if you want to support two way binding your classes should implement the `INotifyPropertyChanged` interface and raise the `PropertyChanged` event every time a property value changes.
 
-Create a __DivisionsService__ class and implement a static method __GetDivisions.__ For the purpose of this tutorial it will return an observable collection containing several hard-coded divisions.
+Create a `DivisionsService` class and implement a static method `GetDivisions`. For the purpose of this tutorial it will return an observable collection containing several hard-coded divisions.
 
-#### __[C#] Example 3: The DivisionsService class__
-
+#### __[C#] The DivisionsService class__
 {{region cs-gridview-building-hierarchical-grid-view_4}}
 	public class DivisionsService
 	{
@@ -222,8 +217,7 @@ Create a __DivisionsService__ class and implement a static method __GetDivisions
 	}
 {{endregion}}
 
-#### __[VB.NET] Example 3: The DivisionsService class__
-
+#### __[VB.NET] The DivisionsService class__
 {{region vb-gridview-building-hierarchical-grid-view_5}}
 	Public Class DivisionsService
 	    Public Shared Function GetDivisions() As ObservableCollection(Of Division)
@@ -297,10 +291,9 @@ Create a __DivisionsService__ class and implement a static method __GetDivisions
 	End Class
 {{endregion}}
 
-Now after the sample data is prepared you are ready to bind it to the __RadGridView__. To do this set the __ItemsSource__ property of the grid to the collection returned by the __GetDivisions__ method. But first define the following columns.
+Now after the sample data is prepared you are ready to bind it to the RadGridView. To do this set the `ItemsSource` property of the grid to the collection returned by the GetDivisions method. But first define the following columns.
 
-#### __[XAML] Example 4: Defining the RadGridView__
-
+#### __[XAML] Defining the RadGridView__
 {{region xaml-gridview-building-hierarchical-grid-view_6}}
 	<telerik:RadGridView x:Name="HierarchicalGridView"
 	                 AutoGenerateColumns="False">
@@ -313,32 +306,29 @@ Now after the sample data is prepared you are ready to bind it to the __RadGridV
 	</telerik:RadGridView>
 {{endregion}}
 
-Set the __ItemsSource__ in the code-behind file of your UserControl.
+Set the ItemsSource in the code-behind file of your UserControl.
 
-#### __[C#] Example 5: Setting the control's ItemsSource__
+#### __[C#] Setting the control's ItemsSource__
 
 {{region cs-gridview-building-hierarchical-grid-view_7}}
 	this.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions();
 {{endregion}}
 
-#### __[VB.NET] Example 5: Setting the control's ItemsSource__
+#### __[VB.NET] Setting the control's ItemsSource__
 
 {{region vb-gridview-building-hierarchical-grid-view_8}}
 	Me.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions()
 {{endregion}}
 
-If you run the application at this stage you will observe the result from **Figure 2**.
+__RadGridView without a hierarchy__
 
-#### Figure 2: RadGridView without a hierarchy
-
-![Telerik {{ site.framework_name }} DataGrid No Hierarchy](images/RadGridView_BuildingHierarchicalGrid_1.png)
+![Telerik WPF DataGrid No Hierarchy](images/RadGridView_BuildingHierarchicalGrid_1.png)
 
 ## Defining ChildTableDefinitions
 
-The next step is to make the __RadGridView__ display the collections of teams as children of the respective rows. To do that use the __ChildTableDefinitions__ property of the __RadGridView__ and define a new __GridViewTableDefinition__ with the following relation.
+The next step is to make the RadGridView display the collections of teams as children of the respective rows. To do that use the `ChildTableDefinitions` property of the RadGridView and define a new `GridViewTableDefinition` with the following relation.
 
-#### __[XAML] Example 6: Defining ChildTableDefinitions__
-
+#### __[XAML] Defining ChildTableDefinitions__
 {{region xaml-gridview-building-hierarchical-grid-view_9}}
 	<telerik:RadGridView x:Name="HierarchicalGridView" AutoGenerateColumns="False">
 	    <telerik:RadGridView.ChildTableDefinitions>
@@ -359,20 +349,17 @@ The next step is to make the __RadGridView__ display the collections of teams as
 	</telerik:RadGridView>
 {{endregion}}
 
->You can read more about the **GridViewTableDefinition** [here]({%slug gridview-basic-hierarchies%}).
+__RadGridView with a hierarchy__
 
-After defining the definitions you will observe the hierarchical grids as illustrated on **Figure 3**.
+![Telerik WPF DataGrid with a Hierarchy](images/RadGridView_BuildingHierarchicalGrid_2.png)
 
-#### Figure 3: RadGridView with a hierarchy
-
-![Telerik {{ site.framework_name }} DataGrid with a Hierarchy](images/RadGridView_BuildingHierarchicalGrid_2.png)
+>You can read more about the GridViewTableDefinition [here]({%slug gridview-basic-hierarchies%}).
 
 ## HierarchyChildTemplate
 
-If you need to set properties of the child RadGridView instances, you can use the **HierarchyChildTemplate**.
+If you need to set properties of the child RadGridView instances, you can use the `HierarchyChildTemplate`.
 
-#### __[XAML] Example 7: Setting the control's HierarchyChildTemplate__
-
+#### __[XAML] Setting the control's HierarchyChildTemplate__
 {{region xaml-gridview-building-hierarchical-grid-view_10}}
 	<telerik:RadGridView x:Name="HierarchicalGridView" AutoGenerateColumns="False" GroupRenderMode="Flat">
 		<telerik:RadGridView.ChildTableDefinitions>
@@ -403,13 +390,11 @@ If you need to set properties of the child RadGridView instances, you can use th
 	</telerik:RadGridView>
 {{endregion}}
 
-The final result is observed on **Figure 4**.
+__Customized child grids__
 
-#### Figure 4: Customized child grids
+![Telerik WPF DataGrid with Customized Child Grids](images/RadGridView_BuildingHierarchicalGrid_3.png)
 
-![Telerik {{ site.framework_name }} DataGrid with Customized Child Grids](images/RadGridView_BuildingHierarchicalGrid_2.png)
-
->You can also use the **HierarchyChildTemplateSelector** property to specify a DataTemplateSelector and provide different templates for the child elements based on the parent row which is expanded.
+>You can also use the `HierarchyChildTemplateSelector` property to specify a DataTemplateSelector and provide different templates for the child elements based on the parent row which is expanded.
 
 To learn more about the Hierarchical Grids you can visit the [Hierarchical GridView]({%slug gridview-hierachy-overview%}) section.
 

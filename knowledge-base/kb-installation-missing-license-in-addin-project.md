@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-The invalid/missing Telerik license key dialog is shown in addin projects even when a valid license is installed.
+The invalid/missing Telerik license key dialog is shown in addin (like Excel VSTO Add-in) projects even when a valid license is installed.
 
 ## Solution
 

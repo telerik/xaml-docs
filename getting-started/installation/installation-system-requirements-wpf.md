@@ -34,8 +34,8 @@ In order to develop applications with Telerik UI for WPF you need to have instal
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) 2015/2017/2019/2022
         
-* __.NET Framework__. The following versions are supported:	
-	* [.NET 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) to [.NET 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)	
+* __.NET Framework / .NET__. The following versions are supported:	
+	* [.NET Framework 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) to [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)	
 	* [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 * __SQL Server 2008 Express__ (optional). Download the latest version from [here](https://www.microsoft.com/en-us/sql-server/sql-server-2019).          

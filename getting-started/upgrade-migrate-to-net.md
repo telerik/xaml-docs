@@ -30,7 +30,7 @@ There is no difference in the APIs between the different types of Telerik dlls, 
 
 	![](images/upgrade-migrate-to-net-3.png)
 	
-4. Update the referenced Telerik assemblies using the preferred installation approach. For example, via [NuGet]({%slug nuget-installation%}) or the [.msi installer]({%slug installation-installing-from-msi-wpf%}).
+4. Update the referenced Telerik assemblies using the preferred installation approach (we recommend [using NuGet]({%slug nuget-installation%})).
 
 5. You may need to manually delete the __bin__ and __obj__ folders before rebuilding the project in order to ensure that any Visual Studio assemblies cache is cleared.
 
@@ -52,7 +52,7 @@ There is no difference in the APIs between the different types of Telerik dlls, 
 
 	![](images/upgrade-migrate-to-net-1.png)
 	
-4. Update the referenced Telerik assemblies using the preferred installation approach. For example, via [NuGet]({%slug nuget-installation%}) or the [.msi installer]({%slug installation-installing-from-msi-wpf%}).
+4. Update the referenced Telerik assemblies using the preferred installation approach (we recommend [using NuGet]({%slug nuget-installation%})).
 
 5. You may need to manually delete the __bin__ and __obj__ folders before rebuilding the project in order to ensure that any Visual Studio assemblies cache is cleared.
 

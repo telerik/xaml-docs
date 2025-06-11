@@ -31,7 +31,7 @@ To install your license key by using the [Telerik UI for WPF Visual Studio exten
 1. Open Visual Studio.
 1. Go to **Extensions** > **Telerik** > **Licensing** > **Download Key**.
 
-  ![Picture showing the License Keys page](images/vsx-download-license-key-file.png)
+  ![Download a license key file in the VS extensions for WPF](images/vsx-download-license-key-file.png)
 
 The Visual Studio extension puts the file in your home directory (`%appdata%\Telerik`), which activates the WPF components.
 

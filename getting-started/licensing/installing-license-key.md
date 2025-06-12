@@ -16,9 +16,9 @@ To download a license key for Telerik UI for WPF, you must have either a develop
 
 Depending on your development environment and preferences, you can install your license key in either of the following ways:
 
-* [*Automatic installation*](#automatic-license-key-installation) for NuGet-based development&mdash;suitable for developers using Telerik productivity tools like the Telerik extensions for Visual Studio and the Progress Control Panel.
-* [*Manual installation*](#manual-license-key-installation) for NuGet-based development&mdash;suitable for trial users and developers who prefer to manage their projects and Telerik product versions manually.
-* [*Manual installation for projects without NuGet references*](#adding-a-license-key-to-projects-without-nuget-references)&mdash;suitable for developers who cannot use NuGet references in their projects.
+* [*Automatic installation*](#automatic-license-key-installation) for projects with NuGet references&mdash;suitable for developers using Telerik productivity tools like the Telerik extensions for Visual Studio and the Progress Control Panel.
+* [*Manual installation*](#manual-license-key-installation) for projects with NuGet references&mdash;suitable for trial users and developers who prefer to manage their projects and Telerik product versions manually.
+* [*Manual installation for projects using assembly references (no NuGet packages)*](#adding-a-license-to-projects-using-telerik-assembly-references-no-nuget-packages)&mdash;suitable for developers who cannot use NuGet references in their projects and use the Telerik DLLs instead.
 
 ## Automatic License Key Installation
 
@@ -37,13 +37,7 @@ The Visual Studio extension puts the file in your home directory (`%appdata%\Tel
 
 ### Installing a License Key with the Progress Control Panel
 
-Upon starting the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction), the application automatically downloads your license key file to your home directory (`%appdata%\Telerik`), which activates the WPF components.
-
-To manually trigger the license key download&mdash;for example, when you renew you license or purchase a new one:
-
-1. Open the Progress Control Panel.
-1. Go to **View all subscriptions**.
-1. Click **DOWNLOAD LICENSE KEY**.
+To install your Telerik License Key by using the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction), start the application. It automatically downloads your license key file to your home directory (`%appdata%\Telerik`), which activates the WPF components.
 
 ## Manual License Key Installation
 
@@ -61,11 +55,11 @@ Alternatively, copy the `telerik-license.txt` license key file to the root folde
 
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the product. If your project doesn’t use NuGet packages, see [Adding a License Key to Projects without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
 
-## Adding a License Key to Projects without NuGet References
+## Adding a License to Projects Using Telerik Assembly References (no NuGet packages)
 
 Telerik strongly recommends the use of NuGet packages whenever possible. Only include the license key as a code snippet when NuGet packages are not an option.
 
-If you cannot use NuGet packages in your project, add the license as a code snippet:
+If you add the Telerik components to your project by referencing the Telerik assemblies, you must add the license to the project as a code snippet:
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 

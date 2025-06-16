@@ -100,6 +100,10 @@ If you reference the Telerik components in a class library that is used in the m
 
 Both approaches are shown in the [following KB article]({%slug kb-installation-missing-license-in-class-library-setup%}).
 
+## Why I see the "No License Found" dialog after installing the license key?
+
+The [following KB article]({%slug kb-licensing-no-license-found-message%}) describes the most common reasons where the missing license message is shown after installing the license key.
+
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})
 * [Setting Up Your License Key]({%slug installing-license-key%})

@@ -40,3 +40,26 @@ This happens because there is no proper main window and application context, whi
 	}
 ```
 
+If you prefer to avoid setting your script key in the C# code, you can use the [approach with the TelerikLicense.cs file]({%slug installing-license-key%}) where the `EvidenceAttribute` is added and then manually fetch the key from it. 
+
+```csharp
+	public MyWPFUserControl()
+	{		
+  		var evidenceAttr = typeof(MainWindow).Assembly.GetCustomAttribute<Telerik.Licensing.EvidenceAttribute>();
+  		var key = evidenceAttr?.Value ?? "";
+   		TelerikLicensing.Register(key);
+
+		InitializeComponent();
+	}
+```
+
+In version __1.6.7__ of [TelerikLicensing](https://www.nuget.org/packages/Telerik.Licensing) a parameterless overload of the `TelerikLicensing.Register`. This will allow you to use the [approach with the TelerikLicense.cs file]({%slug installing-license-key%}) and call the register method without passing the script key in the C# code.
+
+```csharp
+	public MyWPFUserControl()
+	{
+		TelerikLicensing.Register();
+		InitializeComponent();
+	}
+```
+

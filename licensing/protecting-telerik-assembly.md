@@ -1,7 +1,7 @@
 ---
 title: Redistributing Telerik Assemblies
 page_title: Redistributing Telerik Assemblies
-description: This article describes the redistribution process for the Telerik UI for WPF and Silverlight binaries. 
+description: This article describes the redistribution process for the Telerik UI for WPF binaries. 
 slug: protecting-telerik-radcontrols-assembly
 tags: protecting,telerik,ui,assembly,redistribute
 published: True

@@ -58,5 +58,6 @@ Whenever you purchase a new Telerik UI for WPF license or renew an existing one,
 
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})
+* [No License Found - Troubleshooting]({%slug kb-licensing-no-license-found-message%})
 * [Adding the License Key to CI Services]({%slug installing-license-to-ci-services%})
 * [Frequently Asked Questions about Your UI for WPF License Key]({%slug license-frequently-asked-questions%})

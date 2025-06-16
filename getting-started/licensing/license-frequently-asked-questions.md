@@ -102,7 +102,7 @@ Both approaches are shown in the [following KB article]({%slug kb-installation-m
 
 ## Why I see the "No License Found" dialog after installing the license key?
 
-The [following KB article]({%slug kb-licensing-no-license-found-message%}) describes most common reasons where the missing license message is displayed after installing the license key.
+The [following KB article]({%slug kb-licensing-no-license-found-message%}) describes the most common reasons where the missing license message is shown after installing the license key.
 
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})

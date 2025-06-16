@@ -14,9 +14,13 @@ The SDK-Style project template is a modernized way of creating .NET projects whi
 
 The [SDK-Style projects](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview) are basically a set of MSBuild targets and tasks that execute the project-related tasks like compiling, packing, and publishing code. It is used by default when creating .NET projects in Visual Studio, but it is supported also in .NET Framework projects (starting with .NET Framework 4.6.2), where the classic project template is still used by default. 
 
+## General Recommendation
+
 The __general recommendation__ here is to __migrate to .NET__ which has noticeable performance improvements compared to .NET Framework. The newer framework also comes with other improvements related to security, testing, better APIs and more. Additional to that, .NET comes with a long term support from Microsoft.
 
-If you cannot migrate to .NET, you can still improve your .NET Framework project by using the SDK-Style template. This change will bring the __following benefits__:
+If you cannot migrate to .NET, you can still improve your .NET Framework project by using the SDK-Style template. This change will bring the __following benefits__.
+
+## Why to Use the SDK-Style Project Template
 
 * Simplified and much cleaner project definition. Instead of defining each file, reference and setting in the .csproj file, a lot of these come automatically from the SDK.
 * Improved NuGet package management. Using this approach will allow you to use the [PackageReference](https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) approach more easily. Edits in the packages configuration can happen very swiftly by just updating the `.csproj` file.
@@ -55,13 +59,14 @@ The following guide describes how to update your project .NET Framework project 
 	{{endregion}}	
 
 	If you don't have anything custom in the `AssemblyInfo.cs` file you can delete it instead of removing only the specific attributes.
-	Also, if you don't have custom settings in the `Resources.resx` or the `Settings.settings` file you can __delete the entire Properties folder__.
+	
+ 	Also, if you don't have custom settings in the `Resources.resx` or the `Settings.settings` file you can __delete the entire Properties folder__.
 
 1. Build and run your project.
 
 ### Moving NuGets from the packages.config file to PackageReferences
 
-If you use NuGet packages installed with the `packages.config` file you can migrate them in a new `ItemGroup` added in the `.csproj` file. The following example shows before and after NuGet definition:
+If you use NuGet packages installed with the `packages.config` file you can move them in a new `ItemGroup` added in the `.csproj` file. The following example shows before and after NuGet definition:
 
 #### __[XML] packages.config definition (before)__
 {{region sdk-styled-project-migration-2}}

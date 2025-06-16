@@ -12,7 +12,7 @@ position: 0
 
 The Telerik UI for {{ site.framework_name }} suite includes a limited run-time royalty-free license to redistribute the controls in your own solutions subject to the License Agreement. You can use the components in the suite to build your own solutions and redistribute your solutions to your end users who are not required to purchase a license from Telerik to access your solution.
 
->important With the introduction of our new licensing mechanism, Telerik UI for WPF has simplified deployment requirements. Starting from 2025 Q2 users are no longer required to protect the Telerik assemblies using the methods described below. Instead, the product now requires you to [install a license key]({%slug installing-license-key%})). Applications without a valid license will continue to function normally, but will display a warning dialog and a watermark.
+>important With the introduction of our new licensing mechanism, Telerik UI for WPF has simplified deployment requirements. __Starting from 2025 Q2 users are no longer required to protect the Telerik assemblies__ using the methods described below. Instead, the product now requires you to [install a license key]({%slug installing-license-key%})). Applications without a valid license will continue to function normally, but will display a warning dialog and a watermark.
 
 ## Examples of Permitted Uses
 

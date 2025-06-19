@@ -14,7 +14,7 @@ This tutorial will walk you through the creation of a RadBulletGraph.
 
 ## Adding Telerik Assemblies Using NuGet
 
-To use __RadBulletGraph__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisulization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+To use __RadBulletGraph__ when working with NuGet packages, install the `Telerik.Windows.Controls.DataVisualization.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
 Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 

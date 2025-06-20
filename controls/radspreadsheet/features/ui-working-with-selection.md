@@ -76,6 +76,27 @@ The `Selection` class also exposes an `ActiveCell` property that designates the 
     selection.ActiveCellMode = ActiveCellMode.Edit
 {{endregion}}
 
+## Getting the Values of the Selected Cells
+
+The selection can be accessed via the `Selection` property of the worksheet editor object. To get the values, call the `GetValue` method of each cell in the selection.
+
+```csharp
+	Selection selection = this.spreadsheet.ActiveWorksheetEditor.Selection;
+	CellRange selectedCells = selection.ActiveRange.SelectedCellRange;
+	CellIndex startIndex = selectedCells.FromIndex;
+	CellIndex endIndex = selectedCells.ToIndex;
+	
+	for (int column = start.ColumnIndex; column <= end.ColumnIndex; column++)
+	{
+		for (int row = start.RowIndex; row <= end.RowIndex; row++)
+		{
+			object value = worksheet.Cells[row, column].GetValue().Value.RawValue;
+			// execute your logic here
+		}
+	}
+```
+
+
 ## Changing the UI Selection
 
 The UI cell selection can be a single cell or a rectangular region of cells. If you hold down the `Ctrl` key, you can select multiple rectangular regions of cells. Note that these cell ranges do not have to be adjacent. In fact, they can be dispersed across the worksheet and can even intersect. The next several examples aim to illustrate how to create one and multiple-region selection through the API of the `RadSpreadsheet`.

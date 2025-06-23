@@ -107,6 +107,37 @@ RadSplashScreenManager can be used to display any UI element. This means that yo
 
 ![{{ site.framework_name }} RadSplashScreen Custom Control](images/radsplashscreen-getting-started-1.png)
 
+In case you want to keep the default visualization and add extra content, you can host the `RadSplashScreen` control inside the custom `UserControl`. In this case, if you want to take advantage of the `SplashScreenDataContext` don't forget to manually add the data bindings on the `RadSplashScreen` control.
+
+```xaml
+	<UserControl x:Class="RadSplashScreenTest.MyUserControl"
+	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+		<UserContro.Resources>
+			<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+		</UserControl.Resources>
+		<Grid>
+		        <telerik:RadSplashScreen ProgressValue="{Binding ProgressValue}"
+						 MinValue="{Binding MinValue}"
+						 MaxValue="{Binding MaxValue}"
+						 Content="{Binding Content}"
+						 IsIndeterminate="{Binding IsIndeterminate}"
+						 Footer="{Binding Footer}"
+						 ImagePath="{Binding ImagePath}"
+						 HorizontalContentAlignment="{Binding HorizontalContentAlignment}"
+						 HorizontalFooterAlignment="{Binding HorizontalFooterAlignment}"
+						 ImageStretch="{Binding ImageStretch}"
+						 ImageWidth="{Binding ImageWidth}"
+					 	 ImageHeight="{Binding ImageHeight}"
+						 ProgressBarVisibility="{Binding IsProgressBarVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+			<!-- extra content here -->
+		</Grid>
+	</UserControl>
+```
+
 ## Setting a Theme
 
 The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.

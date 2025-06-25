@@ -291,7 +291,7 @@ The keys factory creates the view models of the buttons after the corresponding 
 * `RegularKeyViewModel`
 * `SpecialKeyViewModel`
 
-The key factory is represented by the `DefaultKeyFactory` which can be used to customize the view models creation. You can access or replace the default factory using the `KeyFactory` property of `RadVirtualKeyboard`. You can find an example showing how to implement a custom key factory in the [Customizing Keys]({%slug radvirtualkeyboard-customize-keys%}#adding-custom-information-in-the-keys) article.
+The key factory is represented by the `DefaultKeyFactory` class which can be used to customize the view models creation. You can access or replace the default factory using the `KeyFactory` property of `RadVirtualKeyboard`. You can find an example showing how to implement a custom key factory in the [Customizing Keys]({%slug radvirtualkeyboard-customize-keys%}#adding-custom-information-in-the-keys) article.
 
 ## See Also
 * [Getting Started]({%slug radvirtualkeyboard-getting-started%})

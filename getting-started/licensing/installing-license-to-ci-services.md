@@ -55,5 +55,5 @@ The recommended approach for providing your license key to the `Telerik.Licensin
 
 ## See Also  
 * [License Activation Errors and Warnings]({%slug license-activation-errors-and-warnings%})
-* [Setting Up Your License Key]({%slug installing-license-key%}}
+* [Setting Up Your License Key]({%slug installing-license-key%})
 * [Frequently Asked Questions about Your UI for WPF License Key]({%slug license-frequently-asked-questions%})

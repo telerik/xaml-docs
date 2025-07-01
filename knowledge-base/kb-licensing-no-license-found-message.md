@@ -37,6 +37,7 @@ The following list describes known scenarios where the missing license dialog is
 * Incorrect license installation
 * Using Telerik UI for WPF in a class library project
 * Using Telerik UI for WPF in a add-in/plug-in project
+* Using multiple Telerik products with the TelerikLicense.cs file license activation
 
 ### Incorrect License Installation
 
@@ -52,9 +53,23 @@ Both approaches are described in the [following article]({%slug installing-licen
 
 When using the WPF product in a class library project, you will to install the Telerik.Licensing package also in the main project that consumes the class library. This is described in the [following KB article]({%slug kb-installation-missing-license-in-class-library-setup%}).
 
+In case you are not [installing Telerik via NuGet]({%slug nuget-installation%}), then you should copy [the TelerikLicense.cs file]({%slug installing-license-key%}#adding-a-license-to-projects-using-telerik-assembly-references-no-nuget-packages) also in the main project which consumes the class library.
+
 ### Using Telerik in Add-in/Plug-in Project
 
 When using the WPF product in add-in/plugin projects that are consumed by a third party software like Excel, Revit, AutoCAD, etc., you will to manually register your script key. This is described in the [following KB article]({%slug kb-installation-missing-license-addin-project%}).
+
+### Using Multiple Telerik Products with the TelerikLicense.cs File License Activation
+
+The recommended installation approach is to use the Telerik NuGet packages. If you are not using that and adding assembly reference instead, then you need to [utilize the TelerikLicense.cs file]({%slug installing-license-key%}#adding-a-license-to-projects-using-telerik-assembly-references-no-nuget-packages). In this case, when using multiple Telerik products in the same application (e.g. WPF, WinForms, Reporting) you will need to copy the `EvidenceAttribute` for each Telerik product in the TelerikLicense.cs class.
+
+```csharp
+	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WPF-script-key-here")]
+ 	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")]
+  [assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")]
+```
+
+
 
 
 

@@ -65,9 +65,23 @@ If you add the Telerik components to your project by referencing the Telerik ass
 
 1. On the Progress® Telerik® UI for WPF row, click the __View key__ link in the __SCRIPT KEY__ column.
 
-1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.
+1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`. The code snippet contains an assembly attribute called `EvidenceAttribute` that holds information about the license key.
 
 1. Add the `TelerikLicense.cs` file to your project.
+
+#### __[C#] TelerikLicense.cs file content example__
+{{region installing-license-key-0}}
+	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-wpf-script-key-here")]
+{{endregion}}
+
+In case you use multiple Telerik products in the same application (e.g. Wpf, WinForms, Reporting), you will need to add the license script keys for all products.
+
+#### __[C#] TelerikLicense.cs file content with multiple script keys__
+{{region installing-license-key-1}}
+	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WPF-script-key-here")]
+ 	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")]
+  	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")]
+{{endregion}}
 
 >Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
 

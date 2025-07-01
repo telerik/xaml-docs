@@ -22,9 +22,6 @@ As the __RadTreeListView__ inherits the __RadGridView__ you might find it useful
 
 * [Selection via CheckBox]({%slug gridview-selection-via-checkbox%})
 
-* [How to enable Horizontal and Vertical Scrollbar]({%slug radgridview-how-to-enable-horiz-vertic-scrollbar%})
-
-
 * [Create Custom Editor with RadGridView]({%slug radgridview-howto-create-custom-editor%})
 
 * [Show/Hide Columns outside of the RadGridView]({%slug radgridview-how-to-show-hide-columns-outside-of-the-radgridview%})

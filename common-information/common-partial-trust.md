@@ -12,8 +12,6 @@ position: 9
 
 This topic will give you an overview of the Partial Trust support across all the Telerik WPF controls.
 
->caution We can no longer claim a dedicated support for XBAP applications. This is due to the fact that, since Internet Explorer 9, XBAP is disabled by default. We strongly recommend using ClickOnce deployment instead. With this in mind, please note that some of the information in this article may be outdated. Please [contact our support team](https://www.telerik.com/account/support-tickets?pid=601) if you have an inquiry regarding the support for a given control.
-
 All controls in the suite require the following permissions due to the license mechanism that is used:
 
 * __System.Security.Permissions.FileIOPermission__
@@ -105,3 +103,5 @@ WatermarkTextBox	|	Yes	|
 Window	|	No	|	
 WordsProcessing	|	Yes	|	
 ZipLibrary |    Yes  |
+
+<!-- We can no longer claim a dedicated support for XBAP applications. This is due to the fact that, since Internet Explorer 9, XBAP is disabled by default. We strongly recommend using ClickOnce deployment instead. With this in mind, please note that some of the information in this article may be outdated. Please [contact our support team](https://www.telerik.com/account/support-tickets?pid=601) if you have an inquiry regarding the support for a given control. -->

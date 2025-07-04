@@ -42,22 +42,22 @@ Follow these steps:
 Example implementation:
 
 ```csharp
-private void RadDateTimePicker_ParseDateTimeValue(object sender, ParseDateTimeEventArgs args)
-{
-    if (!args.IsParsingSuccessful)
+    private void RadDateTimePicker_ParseDateTimeValue(object sender, ParseDateTimeEventArgs args)
     {
-        Dispatcher.BeginInvoke(new Action(() =>
+        if (!args.IsParsingSuccessful)
         {
-            this.dateTimePicker.IsTooltipOpen = false;
-        }));
+            Dispatcher.BeginInvoke(new Action(() =>
+            {
+                this.dateTimePicker.IsTooltipOpen = false;
+            }));
+        }
     }
-}
 ```
 
 Attach the event handler to your RadDateTimePicker instance:
 
 ```csharp
-this.dateTimePicker.ParseDateTimeValue += RadDateTimePicker_ParseDateTimeValue;
+    this.dateTimePicker.ParseDateTimeValue += RadDateTimePicker_ParseDateTimeValue;
 ```
 
 This approach prevents the tooltip from displaying when parsing the input fails.

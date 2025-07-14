@@ -23,7 +23,7 @@ When the __DialogType__ is __OpenFolder__, a [RadOpenFolderDialog]({%slug radfil
 
 When the __DialogType__ is __SaveFile__, a [RadSaveFileDialog]({%slug radfiledialogs-radsavefiledialog%}) is opened.
 
-## Open а Native Windows Dialog
+## Showing a Custom Dialog
 
 In order to open a native windows dialog instead of the RadFileDialogs, you can handle the __DialogOpening__ event as demonstrated in __Example 1__.
 

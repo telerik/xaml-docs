@@ -55,6 +55,8 @@ Alternatively, copy the `telerik-license.txt` license key file to the root folde
 
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the product. If your project doesn’t use NuGet packages, see [Adding a License Key to Projects without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
 
+> When using the Telerik UI for WPF components in a __class library__, the `Telerik.Licensing` package should be installed also in the project that consumes the class library (the main project).
+
 ## Adding a License to Projects Using Telerik Assembly References (no NuGet packages)
 
 Telerik strongly recommends the use of NuGet packages whenever possible. Only include the license key as a code snippet when NuGet packages are not an option.

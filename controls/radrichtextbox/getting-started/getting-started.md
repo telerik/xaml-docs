@@ -62,11 +62,11 @@ If you are not using the SelectionMiniToolbar, the ContextMenu and RadRichTextBo
 
 For import from/ export to different file formats, you would need references to:
 
-* __Telerik.Windows.Documents.FormatProviders.OpenXml__ and __Telerik.Windows.Zip__ for DOCX.
+* __Telerik.Windows.Documents.FormatProviders.OpenXml__ for DOCX.
 * __Telerik.Windows.Documents.FormatProviders.Html__ for HTML.
 * __Telerik.Windows.Documents.FormatProviders.Xaml__ for XAML.
 * __Telerik.Windows.Documents.FormatProviders.Rtf__ for RTF.
-* __Telerik.Windows.Documents.FormatProviders.Pdf__ and __Telerik.Windows.Zip__ for PDF (export only).
+* __Telerik.Windows.Documents.FormatProviders.Pdf__ and for PDF (export only).
 
 The default en-US dictionary for SpellChecking is located in:
 

@@ -18,6 +18,8 @@ position: 17
             
 * It is recommended to use the `Flat` [GroupRenderMode]({%slug gridview-grouping-groupingmodes%}). Configuring it involves rendering rows one below the other, which leads to better performance results as opposed to the Nested mode where rows are nested into one another in case nesting is required (grouping or hierarchy). The Flat mode also resolves few rendering issues related to the Nested mode.
 
+* You can set the `EnableLightweightTextRendering` property of RadGridView to __true__. This property will enable a lightweight mode for rendering cell's text. Check this [article]({%slug gridview-lightweight-text-rendering%}) to learn more about this functionality.
+
 * You can also speed up the performance of the control by using the [lightweight templates]({%slug gridview-overview-lightweight-template%}) for RadGridView and RadTreeListView. Their main idea is to limit the number of visual elements within the templates of the rows and cells and reduce the amount of time it takes to render them.
 
 * If applicable, you can also __turn off the generation of automation peers__ through the new global `AutomationMode` property of the `AutomationManager`. By setting it to `Disabled` you can greatly improve the performance of the control in certain scenarios.

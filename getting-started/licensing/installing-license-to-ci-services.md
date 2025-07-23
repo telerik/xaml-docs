@@ -88,11 +88,12 @@ With a classic pipeline, use the “Download secure file” task and a PowerShel
 	
  	![](images/installing-license-to-ci-services-0.png)
 
-1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the secureFilePath property of the output variable.
+1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the `secureFilePath` property of the output variable.
 	
  	![](images/installing-license-to-ci-services-1.png)
 
 The script to set the environment variable is quoted below:
+
 ```powershell
 	Write-Host "Setting TELERIK_LICENSE_PATH to $(telerikLicense.secureFilePath)"
 	Write-Host "##vso[task.setvariable variable=TELERIK_LICENSE_PATH;]$(telerikLicense.secureFilePath)"

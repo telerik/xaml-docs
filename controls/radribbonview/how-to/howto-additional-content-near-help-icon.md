@@ -12,7 +12,7 @@ position: 8
 
 The purpose of this tutorial is to show you how to add additional content near the help button.
 
->By default the help button is collapsed (not visible). If you want to learn how to enable it, read [here]({%slug radribbonview-howto-show-help-icon-and-change-its-image%}).		  
+>By default the help button is collapsed (not visible). If you want to learn how to enable it, read [here]({%slug radribbonview-help-button%}).		  
 
 To add additional content near the help button, you should use the __RadRibbonView__'s __TabStripAdditionalContent__ property. It is of type object and you can insert any content.
 

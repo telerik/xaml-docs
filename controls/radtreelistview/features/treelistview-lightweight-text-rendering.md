@@ -32,9 +32,9 @@ The panel that is used for the lightweight rendering mode, will be forced to red
 
 ## Known Limitations
 
-* Merged cells are not supported with this rendering mode.
-* Frozen columns are not supported with this rendering mode.
-* The `Nested` option of the `GroupRenderMode` property does not support this rendering mode.
+* Merged cells are not supported with this rendering mode. If the merged cells functionality is enabled, a `NotSupportedException` will be raised.
+* Frozen columns are not supported with this rendering mode. Set the `CanUserFreezeColumns` property of RadTreeListView to __False__, in order to use the text rendering mode. Otherwise, a `NotSupportedException` will be raised.
+* The `Nested` option of the `GroupRenderMode` property does not support this rendering mode. Set the group render mode to `Flat` to use the text rendering mode. Otherwise, a `NotSupportedException` will be raised.
 * The `ShowTooltipOnTrimmedText` property of the columns does not support this rendering mode, as it relies on the `TextBlock` element of each the cell.
 * The `CellTemplate` or `CellTemplateSelector` properties of the columns will disable this rendering mode for their cells.
 * The `ContentTemplate` or `ContentTemplateSelector` properties of the `GridViewCell` element will disable this rendering mode.

@@ -10,7 +10,7 @@ position: 24
 
 # Lightweight Text Rendering
 
-The `RadGridView` control provides the functionality to use a lightweight rendering mode for the cells' text, which will increase the performance. To enable this functionality, set the `EnableLightweightTextRendering` property to __True__. This alternative rendering mode will skip the creation of `TextBlock` elements that are used to display the cells' text. Instead, it will draw it in a separate panel.
+The `RadGridView` control provides the functionality to use a lightweight rendering mode for the cells' text, which boosts the performance. To enable this functionality, set the `EnableLightweightTextRendering` property of `RadGridView` to `true`. This alternative rendering will skip the creation of `TextBlock` elements that are used to display the cells' text. Instead, it will use a faster drawing API, which draws the cells in a separate panel.
 
 #### __[WPF] Enabling the lightweight rendering mode__
 {{region gridview-lightweight-text-rendering-0}}
@@ -31,6 +31,8 @@ The panel that is used for the lightweight rendering mode, will be forced to red
 * `VerticalContentAlignment`
 
 ## Known Limitations
+
+The lightweight text rendering is more performant, but it comes at the cost of some feature limitations. The following list shows some of the known features that are unsupported with the mode.
 
 * Merged cells are not supported with this rendering mode. If the merged cells functionality is enabled, a `NotSupportedException` will be raised.
 * Frozen columns are not supported with this rendering mode. Set the `CanUserFreezeColumns` property of RadGridView to __False__, in order to use the text rendering mode. Otherwise, a `NotSupportedException` will be raised.

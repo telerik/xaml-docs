@@ -127,7 +127,6 @@ You can check the Output pane of Visual Studio for diagnostics information relat
 
 To increase the likelihood of the Telerik MCP server being used, add custom instructions to your AI tool:
 - [GitHub Copilot custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot#about-repository-custom-instructions-for-github-copilot-chat)
-- [Cursor rules](https://docs.cursor.com/context/rules)
 
 ### Sample Prompts
 

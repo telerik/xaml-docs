@@ -139,7 +139,7 @@ The following examples demonstrate useful prompts for the Telerik WPF MCP Server
 
 ## Number of Requests
 
-@[template](/_contentTemplates/common/ai-coding-assistant.md#number-of-requests)
+@[template](/_contentTemplates/ai-coding-assistant.md#number-of-requests)
 
 ## Local AI Model Integration
 

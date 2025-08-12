@@ -54,10 +54,9 @@ To use the Telerik WPF Copilot extension:
 
 The following examples demonstrate useful prompts for the Telerik WPF extension:
 
-* "`@TelerikWPF` Generate a GridView with sorting and paging enabled."
-* "`@TelerikWPF` Create a Telerik ComboBox for WPF with multiple selection enabled."
-* "`@TelerikWPF` Show me how to implement a Chart with line series."
-* "`@TelerikWPF` Generate a QueryableCollectionView with grouping and filtering capabilities."
+* "`@TelerikWPF` Give me an example of binding an ObservableCollection<Customer> to a RadGridView, including sorting and grouping."
+* "`@TelerikWPF` Create a RadComboBox bound to a list of countries in MVVM, displaying country names but binding the SelectedValue to a CountryCode property."
+* "`@TelerikWPF` Show XAML and ViewModel code for a RadTreeView bound to a hierarchical ObservableCollection<Category> where each category contains products. Expand all categories by default."
 
 ![Image showing the TelerikWPF trigger word](images/ai-copilot-extension-0.png)
 

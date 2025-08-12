@@ -132,9 +132,9 @@ To increase the likelihood of the Telerik MCP server being used, add custom inst
 
 The following examples demonstrate useful prompts for the Telerik WPF MCP Server:
 
-* "`/telerik` Generate a DataGrid with sorting and paging. Bind it to a Person model with sample ViewModel."
-* "`/telerikWPF` Create a ComboBox showing a product list. Include Product class and sample data."
-* "`/telerik` Build a CollectionView with sorting and filtering capabilities."
+* "`/telerik` Give me an example of binding an ObservableCollection<Customer> to a RadGridView, including sorting and grouping."
+* "`/telerikWPF` Create a RadComboBox bound to a list of countries in MVVM, displaying country names but binding the SelectedValue to a CountryCode property."
+* "`/telerik` Show XAML and ViewModel code for a RadTreeView bound to a hierarchical ObservableCollection<Category> where each category contains products. Expand all categories by default."
 
 ## Number of Requests
 

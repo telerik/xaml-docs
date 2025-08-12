@@ -1,15 +1,15 @@
 ---
 title: Copilot Extension
 page_title: Telerik WPF GitHub Copilot Extension
-description: Learn how to add and use the Telerik WPF GitHub Copilot extension as a .NET WPF AI coding assistant and code generator for better developer productivity. The Telerik WPF GitHub Copilot extension provides proprietary context about Telerik UI for .NET WPF to AI-powered software.
+description: Learn how to add and use the Telerik WPF GitHub Copilot extension as a WPF AI coding assistant and code generator for better developer productivity. The Telerik WPF GitHub Copilot extension provides proprietary context about Telerik UI for WPF to AI-powered software.
 slug: ai-copilot-extension
 tags: telerik, wpf, ai, coding assistant, ai server
 position: 10
 ---
 
-# Telerik WPF GitHub Copilot Extension
+# Telerik WPF GitHub Copilot Extension <sup>(Preview)</sup>
 
-The Telerik WPF [GitHub Copilot](https://github.com/features/copilot) extension is an AI-powered coding assistant that provides specialized knowledge about [Telerik UI for .NET WPF components](https://www.telerik.com/wpf). 
+The Telerik WPF [GitHub Copilot](https://github.com/features/copilot) extension is an AI-powered coding assistant that provides specialized knowledge about [Telerik UI for WPF components](https://www.telerik.com/wpf). 
 
 This extension enhances GitHub Copilot with proprietary context about Telerik WPF controls, helping you:
 
@@ -78,4 +78,4 @@ If you encounter issues:
 * [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
 * [GitHub Copilot Tutorials](https://github.com/features/copilot/tutorials)
 * [Telerik WPF MCP Server]({%slug ai-mcp-server%})
-* [Telerik UI for .NET WPF Documentation](https://docs.telerik.com/devtools/wpf/)
+* [Telerik UI for WPF Documentation](https://docs.telerik.com/devtools/wpf/)

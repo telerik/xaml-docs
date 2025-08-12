@@ -7,7 +7,7 @@ tags: telerik,wpf,ai,coding assistant
 position: 0
 ---
 
-# Telerik UI for WPF AI Coding Assistant
+# Telerik UI for WPF AI Coding Assistant <sup>(Preview)</sup>
 
 The Telerik UI for WPF __AI Coding Assistant__ enhances your developer experience and increases productivity when building WPF applications with Telerik UI for WPF components.
 

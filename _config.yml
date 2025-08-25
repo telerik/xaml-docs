@@ -12,7 +12,10 @@ controls/radspellchecker/sdk-examples.md]
 exclude_navigation: [knowledge-base/*, controls/radchart/*, controls/raddocking/theming/*]
 
 navigation:
-## List your directory names and order here, like this:
+## List your directory names and order here, like this:   
+    ai-assistant:
+        title: AI Coding Assistant
+        position: 7
     knowledge-base:
         position: 10
 ## X3 Controls Start

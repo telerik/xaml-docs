@@ -7,7 +7,7 @@ tags: telerik,wpf,ai,coding assistant
 position: 0
 ---
 
-# Telerik UI for WPF AI Coding Assistant <sup>(Preview)</sup>
+# Telerik UI for WPF AI Coding Assistant
 
 The Telerik UI for WPF __AI Coding Assistant__ enhances your developer experience and increases productivity when building WPF applications with Telerik UI for WPF components.
 
@@ -36,20 +36,9 @@ To use the Telerik WPF AI Coding Assistant, you need:
 @[template](/_contentTemplates/ai-coding-assistant.md#getting-started)
 * @[template](/_contentTemplates/ai-coding-assistant.md#number-of-requests)
 
-## Supported Assemblies
+## Supported Components
 
-The Telerik UI for WPF AI Coding Assistant currently covers the following assemblies:
-
-* __Telerik.Windows.Controls__
-* __Telerik.Windows.Controls.Input__
-* __Telerik.Windows.Controls.Navigation__
-* __Telerik.Windows.Controls.Docking__
-* __Telerik.Windows.Controls.GridView__
-* __Telerik.Windows.Controls.RibbonView__
-* __Telerik.Windows.Controls.FixedDocumentViewers__
-* __Telerik.Windows.Controls.FixedDocumentViewersUI__
-* __Telerik.Windows.Documents__&mdash;If the RadRichTextBox control is used in a .NET Framework application.
-* __Telerik.Windows.Controls.RichTextBox__&mdash;If the RadRichTextBox control is used in a .NET application.
+@[template](/_contentTemplates/ai-coding-assistant.md#supported-components)
 
 ## Recommendations
 
@@ -60,15 +49,27 @@ Consider the following recommendations when working with the AI Coding Assistant
 * When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
 * At the time of publishing, **Claude Sonnet 4** and **GPT-4.1** produce optimal results.
 
-## Number of Requests
+## Usage Limits
 
-The Telerik WPF AI Coding Assistant allows the following maximum number of requests based on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
+Access to the AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
 
-| License Type | Request Limit |
-|--------------|---------------|
-| Perpetual | 50 requests per year |
-| Subscription | Virtually unlimited with fair use threshold of 300 requests per day |
-| Trial | 300 requests per trial period (does not reset with new trial activations) |
+### Subscription License
+
+* A Subscription is the primary license that grants full access to the AI Coding Assistant.
+* Includes a virtually unlimited number of requests, with a fair use threshold of __300 requests per day__.
+* Best for ongoing and high-volume usage.
+
+### Perpetual License (Limited Access)
+
+* Perpetual licenses include limited access of __50 requests per year__.
+* Intended for exploring and trying out the AI Coding Assistant.
+* For continued or higher-volume access, upgrade to a Subscription license.
+
+### Trial License
+
+* Trial licenses include __300 requests per trial per year__ (does not reset with new trial activations) .
+* Reactivating the same trial for a new release does not grant additional requests.
+* Designed for evaluating the feature before purchasing.
 
 > All Telerik AI tools share a single request quota for your Telerik account. Usage from the [Telerik Copilot extension]({%slug ai-copilot-extension%}) and [Telerik MCP server]({%slug ai-mcp-server%}) counts toward the same limit. Complex prompts in the MCP server may consume multiple requests.
 

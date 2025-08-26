@@ -36,6 +36,30 @@ To use the Telerik WPF AI Coding Assistant, you need:
 @[template](/_contentTemplates/ai-coding-assistant.md#getting-started)
 * @[template](/_contentTemplates/ai-coding-assistant.md#number-of-requests)
 
+## Supported Assemblies
+
+The Telerik UI for WPF AI Coding Assistant currently covers the following assemblies:
+
+* __Telerik.Windows.Controls__
+* __Telerik.Windows.Controls.Input__
+* __Telerik.Windows.Controls.Navigation__
+* __Telerik.Windows.Controls.Docking__
+* __Telerik.Windows.Controls.GridView__
+* __Telerik.Windows.Controls.RibbonView__
+* __Telerik.Windows.Controls.FixedDocumentViewers__
+* __Telerik.Windows.Controls.FixedDocumentViewersUI__
+* __Telerik.Windows.Documents__&mdash;If the RadRichTextBox control is used in a .NET Framework application.
+* __Telerik.Windows.Controls.RichTextBox__&mdash;If the RadRichTextBox control is used in a .NET application.
+
+## Recommendations
+
+Consider the following recommendations when working with the AI Coding Assistant:
+
+* Add NuGet packages/referenced assemblies for the Telerik UI for WPF product.
+* Ser the __.sln__ as a context.
+* When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
+* At the time of publishing, **Claude Sonnet 4** and **GPT-4.1** produce optimal results.
+
 ## Number of Requests
 
 The Telerik WPF AI Coding Assistant allows the following maximum number of requests based on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
@@ -68,7 +92,13 @@ Data Storage:
 
 > Make sure also to review the terms and privacy policies of your selected AI model and AI client.
 
+## Telerik Document Processing AI Coding Assistant
+
+You can also use the AI Coding Assistant for Telerik Document Processing to generate high-quality code samples and speed up your development.
+Read the full guide in the dedicated [DPL AI Coding Assistant article](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview). 
+
 ## Next Steps
 
-* Install the [Telerik WPF GitHub Copilot Extension]({%slug ai-copilot-extension%})
-* Configure the [Telerik WPF MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client
+* Install the [Telerik WPF GitHub Copilot Extension]({%slug ai-copilot-extension%}).
+* Configure the [Telerik WPF MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client.
+* Explore the [Telerik UI for WPF Prompt Library]({%slug ai-prompt-library%}).

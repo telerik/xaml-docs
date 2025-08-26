@@ -7,7 +7,7 @@ tags: telerik,WPF,ai,ai server,dotnetWPF,coding assistant
 position: 20
 ---
 
-# Telerik WPF MCP Server <sup>(Preview)</sup>
+# Telerik WPF MCP Server
 
 The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik UI for WPF components.
 

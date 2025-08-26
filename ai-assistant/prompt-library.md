@@ -9,8 +9,6 @@ position: 30
 
 # Telerik UI for WPF Prompt Library
 
-Welcome to the Telerik UI for WPF Prompt Library.
-
 The prompts provided here are intended and optimized for use with the Telerik UI for WPF AI Coding Assistant [MCP Server]({%slug ai-mcp-server%}). They can help you kick start your app development and speed up the component configuration process.
 
 This collection of prompts is not exhaustive and the Telerik UI for WPF team is constantly working on adding more prompts to the library.
@@ -24,132 +22,64 @@ All prompts in this library target the [MCP Server]({%slug ai-mcp-server%}) via 
 3. (Optional) Customize the prompt as needed for your specific use case but keep the `#telerikwpf` handle.<br/>When modifying the prompts, make sure the changes comply with the [recommendations]({%slug ai-overview%}#recommendations) for the AI Coding Assistant.
 4. Run the prompt against the [MCP Server]({%slug ai-mcp-server%}).
 
->warning Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
+>Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
 
->caption Use with the Copilot Extension
+<!-- -->
+
+>Use with the Copilot Extension
 
 To run the provided prompts in the Telerik UI for WPF GitHub Copilot Extension (without the MCP Server installed), modify the prompts to use the `@telerikwpf` handle instead.
 
-## Assembly-Specific Prompts
+## Component Specific Prompts
 
-This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}#supported-assemblies).
+This section provides prompt ideas for the [currently supported components]({%slug ai-overview%}#supported-components).
 
-### Controls Assembly
+### ListBox
 
-The __Telerik.Windows.Controls__ assembly exposes many components. One of them is the [Telerik UI for WPF RadListBox]({%slug radlistbox-overview%}) control, which allows you to display a list of items from which the user can choose.
+[RadListBox for WPF]({%slug radlistbox-overview%}) allows you to display a list of selectable items.
 
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+* `#telerikwpf Add a RadListBox data bound to a collection of business objects. Each object should have Id and Name properties. Use the Name as the display value in each item.`
 
-```prompt
-#telerikwpf Add a RadListBox data bound to a collection of business objects. Each object should have Id and Name properties. Use the Name as the display value in each item.
-```
-```ts
-```
+* `#telerikwpf Add a RadListBox for countries bound to 500 items in the view model. Sort the data by date founded property and group the data by continent. Apply styling to the countries.`
 
-```prompt
-#telerikwpf Add a RadListBox for countries bound to 500 items in the view model. Sort the data by date founded property and group the data by continent. Apply styling to the countries.
-```
-```ts
-```
+* `#telerikwpf Add an example with the RadListBox control bound to a collection of 200 items. The items should contain name, address, city and id. Preselect the second item and apply custom ui for the items. The UI should also include an image and a checkbox.`
 
-```prompt
-#telerikwpf Add an example with the RadListBox control bound to a collection of 200 items. The items should contain name, address, city and id. Preselect the second item and apply custom ui for the items. The UI should also include an image and a checkbox. 
-```
-```ts
-```
+### GridView
 
-</div>
+[RadGridView for WPF]({%slug gridview-overview2%}) enables you to create fully customizable and highly interactive interfaces for display and management of large data.
 
-### Input Assembly
+* `#telerikwpf Create a RadGridView with 100 records each having Id, Name and Company. Group the data by Company. Sort by name. Add aggregate count function for the company column.`
 
-The __Telerik.Windows.Controls.Input__ assembly exposes many input controls. One of them is the [Telerik UI for WPF RadComboBox]({%slug radcombobox-overview%}), which is a drop-down list component with a number of advanced features.
+* `#telerikwpf Data bind the RadGridView control to a collection of items. Add columns for stocks data manually where one of the columns should use a combobox.`
 
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+* `#telerikwpf Create a RadGridView with 3 columns - Name, Country, City. Add the corresponding business object in the code behind and populate is with sample data. Add 20 entries to the data. How to automatically force the columns to fill the grid area?`
 
-```prompt
-#telerikwpf Add RadComboBox data bound to a collection of business objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI.
-```
-```ts
-```
+* `#telerikwpf Add custom controls in the cells of each RadGridView column. One of the column should have a context menu with options for adding, removing, deleting row.`
 
-</div>
+* `#telerikwpf Create a RadGridView with 3 columns - Name, Country, City. Add the corresponding business object in the code behind and populate is with sample data. Add 20 entries to the data. Add filter in RadGridView on load of the control. Filter by Name member. Show me how to preselect distinct values in the column filter of RadGridView.`
 
-### GridView Assembly
+### Docking
 
-The __Telerik.Windows.Controls.GridView__ assembly provides the [Telerik UI for WPF RadGridView]({%slug gridview-overview2%}) component, which enables you to create fully customizable and highly interactive interfaces for display and management of large data.
+[RadDocking for WPF]({%slug raddocking-overview2%}) can be used to introduce a docking system similar to the panes layout in Microsoft Visual Studio.
 
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
+* `#telerikwpf Create a basic RadDocking layout with two panes docked on the left, one on the right and two on the bottom of the control.`
 
-```prompt
-#telerikwpf Create a RadGridView with 100 records each having Id, Name and Company. Group the data by Company. Sort by name. Add aggregate count function for the company column.
-```
-```ts
-```
+* `#telerikwpf Save and load the RadDocking layout.`
 
-```prompt
-#telerikwpf Data bind the RadGridView control to a collection of items. Add columns for stocks data manually where one of the columns should use a combobox.
-```
-```ts
-```
+* `#telerikwpf Prevent a RadDocking pane from floating.`
 
-```prompt
-#telerikwpf Create a RadGridView with 3 columns - Name, Country, City. Add the corresponding business object in the code behind and populate is with sample data. Add 20 entries to the data. How to automatically force the columns to fill the grid area?
-```
-```ts
-```
+### RichTextBox 
 
-```prompt
-#telerikwpf Add custom controls in the cells of each RadGridView column. One of the column should have a context menu with options for adding, removing, deleting row.
-```
-```ts
-```
+[RadRichTextBox for WPF]({%slug radrichtextbox-overview%}) allows you to display and edit rich-text documents.
 
-```prompt
-#telerikwpf Create a RadGridView with 3 columns - Name, Country, City. Add the corresponding business object in the code behind and populate is with sample data. Add 20 entries to the data. Add filter in RadGridView on load of the control. Filter by Name member. Show me how to preselect distinct values in the column filter of RadGridView.
-```
-```ts
-```
+* `#telerikwpf Define a text editor using RadRichTextBox and load document. Add RadRichTextBox toolbar or a ribbon with button settings for the editor (formatting, open/save document, insert images, etc).`
 
-</div>
+* `#telerikwpf How to import and export different formats in the RadRichTextBox. Add toolbar items for import and export options.`
 
-### Docking Assembly
+### ComboxBox
 
-The __Telerik.Windows.Controls.Docking__ assembly provides the [Telerik UI for WPF RadDocking]({%slug raddocking-overview2%}), which you can use to introduce a docking system like the Microsoft Visual Studio.
+[RadComboBox for WPF]({%slug radcombobox-overview%}) is a drop-down list component with a number of advanced features.
 
-The following prompt requests are follow-up ones that you can use to setup a RadDocking control instance.
+* `#telerikwpf Add RadComboBox data bound to a collection of business objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI.`
 
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
-
-```prompt
-#telerikwpf Create a basic RadDocking layout with two panes docked on the left, one on the right and two on the bottom of the control.
-```
-```ts
-```
-
-```prompt
-#telerikwpf Save and load the RadDocking layout.
-```
-```ts
-```
-
-```prompt
-#telerikwpf Prevent a RadDocking pane from floating.
-```
-```ts
-```
-
-</div>
-
-### RichTextBox/Documents Assemblies
-
-The __Telerik.Windows.Controls.RichTextBox__ and __Telerik.Windows.Documents__ assemblies allow you to use the [Telerik UI for WPF RadRichTextBox]({%slug radrichtextbox-overview%}) component depending on, in which framework version the control is used. It allows you to display and edit rich-text content.
-
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
-
-```prompt
-#telerikwpf How to import and export different formats in the RadRichTextBox. Add toolbar items for import and export options.
-```
-```ts
-```
-
-</div>
+* `#telerikwpf Define RadComboBox with its ItemsSource set to collection of custom CLR objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI. Show all of the properties in the drop down and allow multipe selection.`

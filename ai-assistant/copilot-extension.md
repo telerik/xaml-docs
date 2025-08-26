@@ -7,7 +7,7 @@ tags: telerik, wpf, ai, coding assistant, ai server
 position: 10
 ---
 
-# Telerik WPF GitHub Copilot Extension <sup>(Preview)</sup>
+# Telerik WPF GitHub Copilot Extension
 
 The Telerik WPF [GitHub Copilot](https://github.com/features/copilot) extension is an AI-powered coding assistant that provides specialized knowledge about [Telerik UI for WPF components](https://www.telerik.com/wpf). 
 
@@ -36,14 +36,14 @@ Follow these steps to install and configure the Telerik WPF Copilot extension:
 1. Enter your GitHub password when prompted.
 1. You will be redirected to telerik.com. Enter your Telerik account credentials if prompted. This step links the GitHub Copilot extension with your Telerik account.
 1. Upon successful Telerik authentication, you will be redirected to a confirmation page that indicates successful Copilot extension installation.
-1. Restart your [Copilot-enabled app](https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions#supported-clients-and-ides) (Visual Studio).
+1. Restart Visual Studio.
 1. Start a new chat session in Copilot.
 
 ## Usage
 
 To use the Telerik WPF Copilot extension:
 
-1. Open the GitHub Copilot chat window in your [Copilot-enabled app](https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions#supported-clients-and-ides) (Visual Studio).
+1. Open the GitHub Copilot chat window in Visual Studio.
 1. Ensure you are in **Ask** mode and not in **Edit** or **Agent** mode. The Edit and Agent modes do not use the Telerik Copilot extension. However, the Agent mode can use the [Telerik WPF MCP server]({%slug ai-mcp-server%}).
 1. Start your prompt with `@TelerikWPF` and type your request. Verify that `@TelerikWPF` is recognized and highlighted; otherwise, the extension may not be properly installed.
 1. Look for a status label such as **Telerik WPF working...** or **Telerik WPF generating response...** in the output to confirm the extension is active.

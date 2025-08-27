@@ -24,10 +24,6 @@ All prompts in this library target the [MCP Server]({%slug ai-mcp-server%}) via 
 
 >Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
 
-<!-- -->
-
->Use with the Copilot Extension
-
 To run the provided prompts in the Telerik UI for WPF GitHub Copilot Extension (without the MCP Server installed), modify the prompts to use the `@telerikwpf` handle instead.
 
 ## Component Specific Prompts

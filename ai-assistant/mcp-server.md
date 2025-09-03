@@ -81,7 +81,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
  {
    "inputs": [],
    "servers": {
-     "telerik_wpf_assistant": {
+     "telerik-wpf-assistant": {
        "type": "stdio",
        "command": "npx",
        "args": ["-y", "@progress/telerik-wpf-mcp@latest"],

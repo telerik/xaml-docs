@@ -81,7 +81,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
  {
    "inputs": [],
    "servers": {
-     "telerik_wpf_assistant": {
+     "telerik-wpf-assistant": {
        "type": "stdio",
        "command": "npx",
        "args": ["-y", "@progress/telerik-wpf-mcp@latest"],
@@ -96,7 +96,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
  ```
 
 2. Restart Visual Studio.
-3. Enable the `telerik_wpf_assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+3. Enable the `telerik-wpf-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 	![](images/ai-mcp-server-0.png)
 
@@ -111,7 +111,7 @@ To use the Telerik MCP Server:
 1. Start your prompt with one of these triggers:
    - `/telerik` / `@telerik` / `#telerik`
    - `/telerikwpf` / `@telerikwpf` / `#telerikwpf`
-   - `#telerik_wpf_assistant`
+   - `#telerik-wpf-assistant`
    
 1. Grant permissions when prompted (per session, workspace, or always).
 

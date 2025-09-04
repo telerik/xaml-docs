@@ -30,7 +30,7 @@ The invalid/missing Telerik license key dialog is shown in addin (like Excel VST
 
 ## Solution
 
-This happens because there is no proper main window and application context, which means that the licensing mechanism cannot get evaluated as epxected. To resolve this, use the `TelerikLicensing.Register` static method with your license script key, which can be downloaded from the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page.
+This happens because there is no proper main window and application context, which means that the licensing mechanism cannot get evaluated as expected. To resolve this, use the `TelerikLicensing.Register` static method with your license script key, which can be downloaded from the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page.
 
 ```csharp
 	public MyWPFUserControl()

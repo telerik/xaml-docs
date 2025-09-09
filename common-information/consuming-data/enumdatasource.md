@@ -25,36 +25,34 @@ For the purposes of this article, we will use the following enumeration:
 
 #### __[C#] Example 1: The Position enumeration__
 
-{{region cs-common-enumdatasource-1}}
-	public enum Position
-    {
-        [Display(Name = "Goalkeeper", ShortName = "Goalie")]
-        [Description("The player responsible for protecting his team's goal.")]
-        GK = 0,
-        DF = 1,
-        MF = 2,
-        FW = 3
-    }
-{{endregion}}
-
-#### __[VB.NET] Example 1: The Position enumeration__
-
+```C#
+public enum Position
+{
+	[Display(Name = "Goalkeeper", ShortName = "Goalie")]
+	[Description("The player responsible for protecting his team's goal.")]
+	GK = 0,
+	DF = 1,
+	MF = 2,
+	FW = 3
+}
+```
+```VB.NET
 {{region vb-common-enumdatasource-1}}
-	Public Enum Position
-		<Display(Name := "Goalkeeper", ShortName := "Goalie"), Description("The player responsible for protecting his team's goal.")>
-		GK = 0
-		DF = 1
-		MF = 2
-		FW = 3
-	End Enum
+Public Enum Position
+	<Display(Name := "Goalkeeper", ShortName := "Goalie"), Description("The player responsible for protecting his team's goal.")>
+	GK = 0
+	DF = 1
+	MF = 2
+	FW = 3
+End Enum
 {{endregion}}
+```
 
 ## EnumMemberViewModel
 
 Calling the generic **FromType<T>** method will return an **IEnumerable** of **EnumMemberViewModel** - one for each [browsable](https://msdn.microsoft.com/en-us/library/system.componentmodel.browsableattribute.browsable) member of the enumeration.
 
 #### __[C#] Example 2: Calling the FromType method__
-
 {{region cs-common-enumdatasource-2}}
 	IEnumerable<Telerik.Windows.Data.EnumMemberViewModel> positions;
     public IEnumerable<Telerik.Windows.Data.EnumMemberViewModel> Positions

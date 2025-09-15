@@ -22,9 +22,9 @@ The __RadAutoCompleteBox__ exposes almost all of the **TextBox** events. Additio
 
 * __ItemsFound__: Occurs when the items' search is completed. It is an event of [AsyncFilteringBehavior](https://docs.telerik.com/devtools/wpf/controls/radautocompletebox/features/filteringbehavior). The type of the passed arguments is __AsyncItemSearchEventArgs__.
 
-#### __[C#] Example 1: Modify the collection with the found results from the event arguments__
+__Example 1: Modify the collection with the found results from the event arguments__
 
-	{{region cs-radautocompletebox-events-0}}
+	```C#
 		public MainWindow()
         {
             InitializeComponent();
@@ -50,6 +50,6 @@ The __RadAutoCompleteBox__ exposes almost all of the **TextBox** events. Additio
                 result.Add(item);
             }
         }
-	{{endregion}}
+	```
 
 >tipYou can remove and add items from the e.Results collection or sort and filter them.

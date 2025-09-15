@@ -20,18 +20,18 @@ By default, the __ToolBar__ of __RadChat__ will not be visible. When a __ToolBar
 * __Text__: The text Content that will be set to the generated __Button__.
 * __Command__: The __ICommand__ that is to be executed when clicking the __Button__.
 
-#### __[C#] Example 1: Defining a sample Command Action__ 
-{{region radchat-messages-toolbarcommands_01}}
+__Example 1: Defining a sample Command Action__ 
+```C#
 	 private void OnClickCommandExecute(object obj)
         {
             MessageBox.Show("Command executed!");
         }
-{{endregion}}
+```
 
-#### __[C#] Example 2: Adding a ToolBarCommand__ 
-{{region radchat-messages-toolbarcommands_02}}
+__Example 2: Adding a ToolBarCommand__ 
+```C#
 	this.chat.ToolBarCommands.Add(new ToolBarCommand() { Text = "Click", Command = new DelegateCommand(OnClickCommandExecute) });
-{{endregion}}
+```
 
 Adding such __ToolBarCommand__ will have the following visual appearance.
 
@@ -47,8 +47,8 @@ Clicking the generated __Button__ will execute the defined __ICommand__.
 
 The __Conversational UI__ supports defining custom __DataTemplate__ for the elements generated in its __ToolBar__. This is done through the __ToolBarCommandTemplateSelector__. Its conditional logic can be implemented based on the given __ToolBarCommand__.
 
-#### __[C#] Example 3: Defining a ToolBarCommandTemplateSelector__
-{{region radchat-messages-toolbarcommands_03}} 
+__Example 3: Defining a ToolBarCommandTemplateSelector__
+```C# 
 	public class ToolBarCommandTemplateSelector : DataTemplateSelector
     {
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
@@ -64,12 +64,12 @@ The __Conversational UI__ supports defining custom __DataTemplate__ for the elem
         public DataTemplate ClickTemplate { get; set; }
         
     }
-{{endregion}}
+```
 
 After having the __ToolBarCommandTemplateSelector__ implemented, it can be defined in XAML as follows.
 
-#### __[XAML] Example 4: Adding the ToolBarCommandTemplateSelector__
-{{region radchat-messages-toolbarcommands_04}} 
+__Example 4: Adding the ToolBarCommandTemplateSelector__
+```XAML 
 	<Window.Resources>
         <my:ToolBarCommandTemplateSelector x:Key="ToolBarCommandTemplateSelector">
             <my:ToolBarCommandTemplateSelector.ClickTemplate>
@@ -82,14 +82,14 @@ After having the __ToolBarCommandTemplateSelector__ implemented, it can be defin
             </my:ToolBarCommandTemplateSelector.ClickTemplate>
         </my:ToolBarCommandTemplateSelector>
     </Window.Resources>
-{{endregion}}
+```
 
 Finally, the __ToolBarCommandTemplateSelector__ can be applied to __RadChat__.
 
-#### __[XAML] Example 5: Applying the ToolBarCommandTemplateSelector__
-{{region radchat-messages-toolbarcommands_05}} 
+__Example 5: Applying the ToolBarCommandTemplateSelector__
+```XAML 
 	<telerik:RadChat x:Name="chat" ToolBarCommandTemplateSelector="{StaticResource ToolBarCommandTemplateSelector}"/>
-{{endregion}}
+```
 
 #### __Figure 3: Conversational UI with custom ToolBarCommandTemplateSelector__
 ![Applying the ToolBarCommandTemplateSelector](images/RadChat_Items_ToolBarCommands_03.png)

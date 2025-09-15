@@ -55,9 +55,9 @@ Insert a page field:
 
 #### __C#__
 
-{{region radrichtextbox-features-fields_0}}
+```C#
     this.radRichTextBox.InsertField(new PageField());
-{{endregion}}
+```
 
 ## Updating a Field
 
@@ -68,9 +68,9 @@ Update a field:
 
 #### __C#__
 
-{{region radrichtextbox-features-fields_1}}
+```C#
     this.radRichTextBox.UpdateField(fieldRangeStart);
-{{endregion}}
+```
 
 ## Updating all Fields
 

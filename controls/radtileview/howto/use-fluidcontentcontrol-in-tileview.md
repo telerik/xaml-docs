@@ -15,7 +15,7 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 1. Create the model that will be used to describe each separate TileViewItem.
 
 	#### __C#__  
-	{{region radtileview-howto-use-fluidcontentcontrol-in-tileview-0}}
+	```C#
 		public class TileInfo : ViewModelBase
 		{	
 			private ContentState _contentState;
@@ -59,12 +59,12 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 			NormalContent = 0,
 			LargeContent = 2
 		}
-	{{endregion}}
+	```
 	
 2. The `RadTileView` and `RadFluidContentControl` use different enum types to describe the current state (small, normal, large). To sync these with the `ContentState` defined in the custom model, you can use `IValueConverters` and data bind the corresponding properties.
 	
-	#### __[C#] A converter that converts from ContentState to TileViewItemState and back__
-	{{region radtileview-howto-use-fluidcontentcontrol-in-tileview-1}}
+	__A converter that converts from ContentState to TileViewItemState and back__
+	```C#
 		public class TileStateConverter : IValueConverter
 		{
 			public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -99,10 +99,10 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 				}
 			}
 		}
-	{{endregion}}
+	```
 	
-	#### __[C#] A converter that converts from ContentState to FluidContentControlState and back__
-	{{region radtileview-howto-use-fluidcontentcontrol-in-tileview-2}}
+	__A converter that converts from ContentState to FluidContentControlState and back__
+	```C#
 		public class FluidContentStateConverter : IValueConverter
 		{	
 			public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -137,12 +137,12 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 				}
 			}
 		}
-	{{endregion}}
+	```
 	
 3. To display the information based on the custom model, define `ItemTemplate` (for the headers of the items) and `ContentTemplate` (for the content). The state of the model can be bound to the state of the TileViewItems, by using the `ItemContainerStyle` property. The following code shows how to define the templates, the style and the converters, along with the RadTileView setup.
 
-	#### __[XAML]__
-	{{region radtileview-howto-use-fluidcontentcontrol-in-tileview-3}}
+	
+	```XAML
 		<UserControl.Resources>
 			<local:FluidContentStateConverter x:Key="fluidContentStateConverter" />
 			<local:TileStateConverter x:Key="tileStateConverter" />
@@ -176,12 +176,12 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 								 MinimizedItemsPosition="Right" 
 								 MinimizedRowHeight="200" />
 		</Grid>
-	{{endregion}}
+	```
 	
 4. To populate the TileView with data, set its `ItemsSource` property.
 
 	#### __C#__  
-	{{region radtileview-howto-use-fluidcontentcontrol-in-tileview-4}}
+	```C#
 		public partial class TileViewContainer : UserControl
 		{
 			public TileViewContainer()
@@ -190,6 +190,6 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 				this.radTileView.ItemsSource = TileInfo.GenerateItems();
 			}
 		}
-	{{endregion}}
+	```
 	
 ![{{ site.framework_name }} RadTileView RadFluidContentControl with MVVM](images/radtileview-howto-use-fluidcontentcontrol-in-tileview-0.png)

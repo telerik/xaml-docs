@@ -21,14 +21,14 @@ The following information will cover the view modes defined for the `OpenStreetM
 
 Each provider exposes a different property for controlling the current view mode. To change it for the OpenStreetMapProvider, set the `Layer` property.
 
-#### __[XAML] Setting the view mode for the OpenStreetMapProvider__
-{{region radmap-features-view-modes-0}}
+__Setting the view mode for the OpenStreetMapProvider__
+```XAML
 	<telerik:RadMap>
 	    <telerik:RadMap.Provider>
 	        <telerik:OpenStreetMapProvider APIKey="Your API Key" StandardModeUserAgent="Your User Agent" Layer="Humanitarian"/>
 	    </telerik:RadMap.Provider>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 __OpenStreetMapProvider with the Humanitarian view mode set as default__
 
@@ -44,8 +44,8 @@ The UI element that represents the eye-like button is of the type of `MapCommand
 
 The following example showcases this approach:
 
-#### __[XAML] Using the MapCommandBar outside of RadMap__
-{{region radmap-features-view-modes-1}}
+__Using the MapCommandBar outside of RadMap__
+```XAML
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*"/>
@@ -59,7 +59,7 @@ The following example showcases this approach:
 	    </telerik:RadMap>
 	    <telerik:MapCommandBar MapControl="{Binding ElementName=radMap}" HorizontalAlignment="Right" Grid.Row="1"/>
 	</Grid>
-{{endregion}}
+```
 
 __RadMap with MapCommandBar outside of its default layout__
 

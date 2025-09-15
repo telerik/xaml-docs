@@ -20,17 +20,17 @@ The RadSpreadsheet control is optimized to bring a great performance, but this c
 
 * If using [RadSpreadsheetRibbon]({%slug radspreadsheet-getting-started-spreadsheet-ui%}), remove the tabs or other elements that are not necessary in the application. To do this, you can use the [ChildrenOfType]({%slug common-visual-tree-helpers%}) extension method, or you can [modify the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of RadSpreadsheetRibbon.
 
-	#### __[C#] Using the ChildrenOfType method to remove the first tab from the ribbon control__
-	{{region spreadsheet-performance-tips-0}}
+	__Using the ChildrenOfType method to remove the first tab from the ribbon control__
+	```C#
 		this.spreadsheetRibbon.ChildrenOfType<RadRibbonView>().FirstOrDefault().Items.RemoveAt(0);  
-	{{endregion}}
+	```
 
 * If using [RadSpreadsheetRibbon]({%slug radspreadsheet-getting-started-spreadsheet-ui%}), set its `IsMinimized` property to `true`.
 	
-	#### __[XAML] Minimizing the ribbon control__
-	{{region spreadsheet-performance-tips-1}}
+	__Minimizing the ribbon control__
+	```XAML
 		<telerik:RadSpreadsheetRibbon IsMinimized="True" />
-	{{endregion}}
+	```
 
 * Use .NET 8 or later, instead of .NET Framework, because the general WPF performance there is improved.
 

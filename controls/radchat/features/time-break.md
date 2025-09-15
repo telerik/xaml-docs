@@ -23,8 +23,8 @@ __RadChat__ can automatically add a TimeBreak at a given interval. This can achi
 ## Adding a TimeBreak Manually
 __RadChat__ provides the __AddTimeBreak__ method for adding a __TimeBreak__ which accepts a string parameter for its header.
 
-#### __[C#] Example 2: Adding TimeBreak__ 
-{{region radchat-messages-timebreak_02}}
+__Example 2: Adding TimeBreak__ 
+```C#
 	 		var firstTextMessage = new TextMessage(this.otherAuthor, "Hello Peter! How are you?");
             var secondTextMessage = new TextMessage(this.otherAuthor, "I hope I find you well!");
             var thirdTextMessage = new TextMessage(this.otherAuthor, "How is family? ");
@@ -34,7 +34,7 @@ __RadChat__ provides the __AddTimeBreak__ method for adding a __TimeBreak__ whic
             this.chat.AddMessage(thirdTextMessage);
 
             this.chat.AddTimeBreak(DateTime.Now.DayOfWeek.ToString() + " " + DateTime.Now.TimeOfDay.Hours.ToString() + " : " + DateTime.Now.TimeOfDay.Minutes.ToString());
-{{endregion}}
+```
 
 #### __Figure 2: Adding a TimeBreak__
 ![Adding a TimeBreak](images/RadChat_TimeBreak_01.png)

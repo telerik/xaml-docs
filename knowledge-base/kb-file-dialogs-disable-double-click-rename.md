@@ -32,8 +32,8 @@ How to disable file rename on fast double click in RadFileDialogs ExplorerContro
 
 A common behavior on double click is file select and open. In the `ExplorerControl` there is no file opening, so instead a file renaming action is started when you double click the file. To cancel the file renaming, subscribe to the `Renaming` event of `ExplorerControl` and set the `Cancel` property of the event arguments to `true`. The double click action can be indicated through the `PreviewMouseDoubleClick` event of the `ExplorerControl`.
 
-#### __[C#]__
-{{region kb-file-dialogs-disable-double-click-rename-0}}
+
+```C#
 	private bool isDoubleClick = false;
 	
 	private void ExplorerControl_PreviewMouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -49,4 +49,4 @@ A common behavior on double click is file select and open. In the `ExplorerContr
 		}
 		isDoubleClick = false;
 	}
-{{endregion}}
+```

@@ -31,8 +31,8 @@ Make sure that the __IsInEditMode__ property of the item is set to True after th
 
 __Example 1__ demonstrates a sample implementation of a model and a viewmodel that contains a collection of models as well as a command for adding new items. 
 
-#### __[C#] Example 1: The Model and ViewModel__
-{{region cs-kb-treeview-add-item-in-edit-mode-0}}
+__Example 1: The Model and ViewModel__
+```C#
 	public class Team : ViewModelBase
 	{
         private string name = "";
@@ -117,10 +117,8 @@ __Example 1__ demonstrates a sample implementation of a model and a viewmodel th
             }), DispatcherPriority.Loaded);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: The Model and ViewModel__
-{{region vb-kb-treeview-add-item-in-edit-mode-1}}
+```
+```VB.NET
 	Public Class Team
         Inherits ViewModelBase
 
@@ -194,12 +192,12 @@ __Example 1__ demonstrates a sample implementation of a model and a viewmodel th
     End Class
 
     
-{{endregion}}
+```
 
 __Example 2__ shows how the RadTreeView is setup. Note, that the __ItemEditTemplate__ is set along with a style binding the IsInEditMode property of the RadTreeViewItem to the property in our model. 
 
-#### __[XAML] Example 2: The view__
-{{region xaml-kb-treeview-add-item-in-edit-mode-2}}
+__Example 2: The view__
+```XAML
 
     <Grid>
         <Grid.DataContext>
@@ -230,7 +228,7 @@ __Example 2__ shows how the RadTreeView is setup. Note, that the __ItemEditTempl
                             ItemsSource="{Binding Teams}">
         </telerik:RadTreeView>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result after the add button is clicked in the Fluent theme__
 

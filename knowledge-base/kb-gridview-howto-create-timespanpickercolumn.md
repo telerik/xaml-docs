@@ -26,8 +26,8 @@ How to implement a GridViewDataColumn, which can display, edit and filter a prop
 
 To achieve this we will inherit GridViewDataColumn, override the __CreateCellEditElement__ and __CreateFieldFilterEditor__ methods and use a [RadTimeSpanPicker]({%slug radtimespanpicker-getting-started%}) in order to manipulate the TimeSpan values. 
 
-#### __[C#] Example 1: Sample model and viewmodel__
-{{region cs-kb-gridview-howto-create-timespanpickercolumn-0}}
+__Example 1: Sample model and viewmodel__
+```C#
 
     public class Player : ViewModelBase
     {
@@ -122,12 +122,12 @@ To achieve this we will inherit GridViewDataColumn, override the __CreateCellEdi
             }
         }
     }
-{{endregion}}
+```
 
 __Example 2__ demonstrates how we can utilize the __CreateCellEditElement__ and __CreateFieldFilterEditor__ methods of the GridViewDataColumn. This allows us to return a new instance of a __RadTimeSpanPicker__ and bind its __Value__ property accordingly. 
 
-#### __[C#] Example 2: Custom TimeSpanPickerColumn__
-{{region cs-kb-gridview-howto-create-timespanpickercolumn-1}}
+__Example 2: Custom TimeSpanPickerColumn__
+```C#
 
     public class TimeSpanPickerColumn : GridViewDataColumn
     {
@@ -191,10 +191,10 @@ __Example 2__ demonstrates how we can utilize the __CreateCellEditElement__ and 
             }
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Using the custom TimeSpanPickerColumn__
-{{region xaml-kb-gridview-howto-create-timespanpickercolumn-2}}
+__Example 3: Using the custom TimeSpanPickerColumn__
+```XAML
 
     <Grid>
         <Grid.DataContext>
@@ -210,7 +210,7 @@ __Example 2__ demonstrates how we can utilize the __CreateCellEditElement__ and 
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 > The "my" namespace refers to the namespace where the "TimeSpanPickerColumn" and "MyViewModel" classes are defined. 
 

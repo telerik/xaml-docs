@@ -27,7 +27,7 @@ Here are the steps that you should follow to create a RadTimeBar with implicit W
 
 	#### __XAML__
 
-	{{region radtimebar-hide-selection-range-title_0}}
+	```XAML
 			<Application.Resources>
 				<ResourceDictionary>
 					<ResourceDictionary.MergedDictionaries>
@@ -35,7 +35,7 @@ Here are the steps that you should follow to create a RadTimeBar with implicit W
 					</ResourceDictionary.MergedDictionaries>
 				</ResourceDictionary>
 			</Application.Resources>
-		{{endregion}}
+		```
 
 4. Set *Telerik.Windows.Controls.StyleManager.IsEnabled* to false in your application constructor.
 
@@ -43,7 +43,7 @@ Now let's add a sample TimeBar:
 
 #### __XAML__
 
-{{region radtimebar-hide-selection-range-title_1}}
+```XAML
 	<telerik:RadTimeBar Width="950" Height="250"
 	        Margin="0,30,0,0" 
 	        PeriodStart="01-01-2012"
@@ -59,7 +59,7 @@ Now let's add a sample TimeBar:
 	        <telerik:WeekInterval />
 	    </telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-	{{endregion}}
+	```
 
 
 
@@ -69,7 +69,7 @@ To hide the range selection title you'll need to remove it from the SelectionRan
 
 #### __XAML__
 
-{{region radtimebar-hide-selection-range-title_2}}
+```XAML
 	  <Style x:Key="SelectionRangeStyle" TargetType="Thumb">
 	    <Setter Property="BorderBrush" Value="{StaticResource TimeBar_SelectionThumb_Range_OuterBorder}" />
 	    <Setter Property="BorderThickness" Value="{StaticResource TimeBar_SelectionThumb_Range_OuterBorder_BorderThickness}" />
@@ -118,7 +118,7 @@ To hide the range selection title you'll need to remove it from the SelectionRan
 	      </Setter.Value>
 	    </Setter>
 	  </Style>
-	{{endregion}}
+	```
 
 
 

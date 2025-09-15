@@ -22,7 +22,7 @@ Let's for example have a [Custom Appointment]({%slug radscheduleview-features-ap
 
 #### __C#__
 
-{{region radscheduleview-styles-and-templates-appointment-template_1}}
+```C#
 	public class Task : Appointment
 	{
 	    private bool isDone;
@@ -44,13 +44,13 @@ Let's for example have a [Custom Appointment]({%slug radscheduleview-features-ap
 	    }
 		...
 	}
-{{endregion}}
+```
 
 We will create the following DataTemplate in order to show some additional information about the appointment:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-appointment-template_0}}
+```XAML
 	<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 	<DataTemplate x:Key="AppointmentTemplate">
 		<StackPanel>
@@ -59,7 +59,7 @@ We will create the following DataTemplate in order to show some additional infor
 			<TextBlock Text="Finished" Foreground="Red" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />            
 		</StackPanel>
 	</DataTemplate>
-{{endregion}}
+```
 
 >Note that custom properties should be bound through Appointment property of the DataContext.
 
@@ -67,13 +67,13 @@ Then the DataTemplate should be set to __AppointmentContentTemplate__ property o
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-appointment-template_2}}
+```XAML
 	<telerik:RadScheduleView 
 			AppointmentsSource="{Binding Appointments}"						
 			AppointmentItemContentTemplate="{StaticResource AppointmentTemplate}">
 		...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Here is the end result:
 
@@ -89,7 +89,7 @@ First, we will have to create a custom class which inherits from Telerik.Windows
 
 #### __C#__
 
-{{region radscheduleview-styles-and-templates-appointment-template_3}}
+```C#
 	public class CustomAppointmentTemplateSelector : Telerik.Windows.Controls.ScheduleViewDataTemplateSelector
 	{
 	    public DataTemplate DayAppointmentTemplate { get; set; }
@@ -107,13 +107,13 @@ First, we will have to create a custom class which inherits from Telerik.Windows
 			return base.SelectTemplate(item, container, activeViewDefinition);
 		}
 	}
-{{endregion}}
+```
 
 Then define the CustomAppointmentTemplateSelector and the DataTemplates in XAML:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-appointment-template_4}}
+```XAML
 	<local:CustomAppointmentTemplateSelector x:Key="CustomAppointmentTemplateSelector">
 	    <local:CustomAppointmentTemplateSelector.DayAppointmentTemplate>
 	        <DataTemplate>
@@ -130,19 +130,19 @@ Then define the CustomAppointmentTemplateSelector and the DataTemplates in XAML:
 	        </DataTemplate>
 	    </local:CustomAppointmentTemplateSelector.DefaultAppointmentTemplate>
 	</local:CustomAppointmentTemplateSelector>
-{{endregion}}
+```
 
 And apply it to the ScheduleView:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-appointment-template_5}}
+```XAML
 	<telerik:RadScheduleView 
 			AppointmentsSource="{Binding Appointments}"						
 			AppointmentItemContentTemplateSelector="{StaticResource CustomAppointmentTemplateSelector}">
 			...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 The following screenshot shows how the same appointment looks in different ViewDefinitions:
 

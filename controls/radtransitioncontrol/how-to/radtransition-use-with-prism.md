@@ -14,9 +14,9 @@ The __RadTransitionControl__ can be used together with __Prism__ for defining re
 
 >tip Read some more about the __Prism__ library in its [github repository](https://github.com/PrismLibrary/Prism).
 
-#### __[XAML] Example 1: Setting the RegionName attached property__
+__Example 1: Setting the RegionName attached property__
 
-{{region xaml-radtransition-how-to-use-with-prism_1}}
+```XAML
 	<Grid xmlns:prism="http://prismlibrary.com/"
         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
         <telerik:RadTransitionControl prism:RegionManager.RegionName="ContentRegion">
@@ -25,7 +25,7 @@ The __RadTransitionControl__ can be used together with __Prism__ for defining re
 			</telerik:RadTransitionControl.Transition>
 		</telerik:RadTransitionControl>
 	</Grid>
-{{endregion}}
+```
 
 ## See Also
 

@@ -14,7 +14,7 @@ To save and load column filters, you would have to create a simple property bag 
 
 #### __C#__
 
-{{region cs-gridview-filtering-howto-save-and-load-filter-settings_0}}
+```C#
 	public class FilterDescriptorProxy
 	{
 	    public Telerik.Windows.Data.FilterOperator Operator { get; set; }
@@ -30,12 +30,12 @@ To save and load column filters, you would have to create a simple property bag 
 	    public Telerik.Windows.Data.FilterCompositionLogicalOperator FieldFilterLogicalOperator { get; set; }
 	    public FilterDescriptorProxy Filter2 { get; set; }
 	}
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-gridview-filtering-howto-save-and-load-filter-settings_0}}
+```VB.NET
 	Public Class FilterDescriptorProxy
 	    Public Property [Operator]() As Telerik.Windows.Data.FilterOperator
 	        Get
@@ -105,13 +105,13 @@ To save and load column filters, you would have to create a simple property bag 
 	    End Property
 	    Private m_Filter2 As FilterDescriptorProxy
 	End Class
-{{endregion}}
+```
 
 To save the settings you need to read the current filtering information from RadGridView and store it in a collection of these property bag objects. You can then take this collection and serialize it to a medium of your choice a database or an XML file, for example, by using RadPersistenceFramework.
 
 #### __C#__
 
-{{region cs-gridview-filtering-howto-save-and-load-filter-settings_1}}
+```C#
 	public static IEnumerable<FilterSetting> SaveColumnFilters(Telerik.Windows.Controls.GridView.GridViewDataControl grid)
 	{
 	    IList<FilterSetting> settings = new List<FilterSetting>();
@@ -187,11 +187,11 @@ To save the settings you need to read the current filtering information from Rad
 	
 	    grid.FilterDescriptors.ResumeNotifications();
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-filtering-howto-save-and-load-filter-settings_1}}
+```VB.NET
 	Public Shared Function SaveColumnFilters(grid As Telerik.Windows.Controls.GridView.GridViewDataControl) As IEnumerable(Of FilterSetting)
 	    Dim settings As IList(Of FilterSetting) = New List(Of FilterSetting)()
 	
@@ -256,7 +256,7 @@ To save the settings you need to read the current filtering information from Rad
 	
 	    grid.FilterDescriptors.ResumeNotifications()
 	End Sub
-{{endregion}}
+```
 
 >Note that when the filters are being restored we suspend and resume the notifications in order to perform the filtering in a single batch. 
 
@@ -264,7 +264,7 @@ When you deserialize the filter settings, you only need to find the respective c
 
 #### __C#__
 
-{{region cs-gridview-filtering-howto-save-and-load-filter-settings_2}}
+```C#
 	private IEnumerable<FilterSetting> serializedSettings;
 	
 	private void OnSaveButtonClick(object sender, RoutedEventArgs e)
@@ -282,11 +282,11 @@ When you deserialize the filter settings, you only need to find the respective c
 	
 	    LoadColumnFilters(this.radGridView, savedSettings);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-filtering-howto-save-and-load-filter-settings_2}}
+```VB.NET
 	Private serializedSettings As IEnumerable(Of FilterSetting)
 	
 	Private Sub OnSaveButtonClick(sender As Object, e As RoutedEventArgs)
@@ -302,7 +302,7 @@ When you deserialize the filter settings, you only need to find the respective c
 	
 	    LoadColumnFilters(Me.radGridView, savedSettings)
 	End Sub
-{{endregion}}
+```
 
 More about this you can learn [here]({%slug gridview-filtering-programmatic%}).
 

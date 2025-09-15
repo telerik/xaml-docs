@@ -23,7 +23,7 @@ All ItemsControl-derived classes expose a public property, ItemsPanel, that allo
 
 #### __XAML__
 
-{{region xaml-carousel-radcarouselpanel-items-controls_0}}
+```XAML
 	<ListBox x:Name="HorizontalListBox">
 	  <ListBox.ItemsPanel>
 	    <ItemsPanelTemplate>
@@ -31,7 +31,7 @@ All ItemsControl-derived classes expose a public property, ItemsPanel, that allo
 	    </ItemsPanelTemplate>
 	  </ListBox.ItemsPanel>
 	</ListBox>
-{{endregion}}
+```
 
 
 
@@ -41,7 +41,7 @@ RadCarouselPanel, being a normal Panel can be used in a similar fashion thus all
 
 #### __XAML__
 
-{{region xaml-carousel-radcarouselpanel-items-controls_1}}
+```XAML
 	<ListView x:Name="ListView">
 	  <ListView.ItemsPanel>
 	    <ItemsPanelTemplate>
@@ -49,7 +49,7 @@ RadCarouselPanel, being a normal Panel can be used in a similar fashion thus all
 	    </ItemsPanelTemplate>
 	  </ListView.ItemsPanel>
 	</ListView>
-{{endregion}}
+```
 
 
 

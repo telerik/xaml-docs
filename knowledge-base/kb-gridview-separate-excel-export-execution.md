@@ -37,8 +37,8 @@ The export itself consists of two actions - preparing the document model and sav
 
 To do this, you can use the [ExportToWorkbook]({%slug gridview-export-workbook%}) method to prepare the document model. This will return a [Workbook](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-workbooks/working-with-workbooks-what-is-workbook). The `Workbook` can be send to another thread which can [save it to a file](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/import-and-export-to-excel-file-formats/xls/xlsformatprovider).
 
-#### __[C#]__
-{{region kb-gridview-separate-excel-export-execution-0}}
+
+```C#
 	private BackgroundWorker worker;
 	private Workbook documentToExport;
 	private XlsxFormatProvider provider = new XlsxFormatProvider();
@@ -75,7 +75,7 @@ To do this, you can use the [ExportToWorkbook]({%slug gridview-export-workbook%}
 		this.documentToExport = this.gridView.ExportToWorkbook();
 		this.worker.RunWorkerAsync();
 	}
-{{endregion}}
+```
 
 ## Solution 2
 

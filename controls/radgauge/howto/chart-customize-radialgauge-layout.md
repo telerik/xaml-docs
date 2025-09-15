@@ -16,7 +16,7 @@ For the purpose we'll create a Radial Gauge with the following parameters that d
 Here is the XAML code:
 
 #### __XAML__
-{{region radgauge-customize-radialgauge-layout_0}}
+```XAML
 	<telerik:RadRadialGauge Width="250" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale StartAngle="270"
 									SweepAngle="360"
@@ -41,7 +41,7 @@ Here is the XAML code:
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Our gauge looks like this:
 
@@ -50,7 +50,7 @@ Our gauge looks like this:
 To make it look more like compass we'll need to customize the labels so that they are the four cardinal directions - N(North), E(east), S(south) and W(west). To remove the default gauge labels we'll use *LabelTemplate*. We'll also need to customize the needle. All this will be done via Styles:
 
 #### __XAML__
-{{region radgauge-customize-radialgauge-layout_1}}
+```XAML
 	<UserControl.Resources>
 		<telerik:Windows8Colors x:Key="Windows8Colors" />
 		<SolidColorBrush x:Key="AccentBrush" Color="{Binding Source={StaticResource Windows8Colors}, Path=Palette.AccentColor}" />
@@ -117,7 +117,7 @@ To make it look more like compass we'll need to customize the labels so that the
 			</telerik:RadialScale>
 		</telerik:RadRadialGauge>
 	</Grid>
-{{endregion}}
+```
 
 Here's the result:
 
@@ -126,7 +126,7 @@ Here's the result:
 You may additionally customize the appearance of the compass. For example we can add an outer border and some custom ticks. The full source code for our compass is shown below:
 
 #### __XAML__
-{{region radgauge-customize-radialgauge-layout_2}}
+```XAML
 	<UserControl.Resources>
 		<telerik:Windows8Colors x:Key="Windows8Colors" />
 		<SolidColorBrush x:Key="AccentBrush" Color="{Binding Source={StaticResource Windows8Colors}, Path=Palette.AccentColor}" />
@@ -207,6 +207,6 @@ You may additionally customize the appearance of the compass. For example we can
 			</telerik:RadialScale>
 		</telerik:RadRadialGauge>
 	</Grid>
-{{endregion}}
+```
 
 ![gauge customize radialgauge compass final](images/gauge_customize_radialgauge_compass_final.PNG)

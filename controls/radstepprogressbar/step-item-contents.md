@@ -14,14 +14,14 @@ The RadStepProgressBarItem elements allows you to add steps into the control. Th
 
 To set additional contents, use the __Content__ and __AdditionalContent__ properties of RadStepProgressBarItem. The Content renders a presenter on bottom of the step in horizontal orientation or on the right side in vertical orientation. The AdditionalContent renders a presenter on top of the step in horizontal and on the left in vertical orientation.
 
-#### __[XAML]__
-{{region stepprogressbar-step-contents-0}}
+
+```XAML
 	<telerik:RadStepProgressBar>
 		<telerik:RadStepProgressBarItem AdditionalContent="Step 1" Content="Your Order" />
 		<telerik:RadStepProgressBarItem AdditionalContent="Step 2" Content="Cart" />
 		<telerik:RadStepProgressBarItem AdditionalContent="Step 3" Content="Payment" />
 	</telerik:RadStepProgressBar>
-{{endregion}}
+```
 
 __RadStepProgressBar in Horizontal and Vertical Orientations__  
 
@@ -37,8 +37,8 @@ The different properties are used based on the current state of the step item - 
 
 >In order to replace the indicator content when the step item is in Completed and Indeterminate state, you will need to set the the CompletedIndicatorContentTemplate and IndeterminateIndicatorContentTemplate properties.
 
-#### __[XAML]__
-{{region stepprogressbar-step-contents-0}}
+
+```XAML
 	<telerik:RadStepProgressBar Width="500" SelectedItemStatus="Indeterminate">
 		<telerik:RadStepProgressBar.Resources>
 			<DataTemplate x:Key="IndicatorContentTemplate">
@@ -61,7 +61,7 @@ The different properties are used based on the current state of the step item - 
 										CompletedIndicatorContentTemplate="{StaticResource IndicatorContentTemplate}"
 										IndeterminateIndicatorContentTemplate="{StaticResource IndicatorContentTemplate}"/>
 	</telerik:RadStepProgressBar>
-{{endregion}}
+```
 
 __RadStepProgressBar with customized state indicator contents__  
 

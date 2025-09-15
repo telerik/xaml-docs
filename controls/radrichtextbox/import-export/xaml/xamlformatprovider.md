@@ -22,14 +22,14 @@ In order to import a XAML document, you can use the overloads of the __Import()_
 
 __Example 1__ shows how to use XamlFormatProvider to import XAML document from a file.
 
-#### __[C#] Example 1: Import XAML document from a file__
-{{region cs-radrichtextbox-import-export-using-xamlformatprovider-0}}
+__Example 1: Import XAML document from a file__
+```C#
 	XamlFormatProvider xamlformatProvider = new XamlFormatProvider();
 	using (FileStream inputStream = new FileStream("XamlDocument.xaml",FileMode.Open))
 	{
 		this.radRichTextBox.Document = xamlformatProvider.Import(inputStream);
 	}
-{{endregion}}
+```
 
 
 ## Export
@@ -38,15 +38,15 @@ In order to export a document to XAML, you need to use the __Export()__ method o
 
 __Example 2__ shows how to use __XamlFormatProvider__ to export __RadDocument__ to a file.
 
-#### __[C#] Example 3: Export document to a file__
-{{region cs-radrichtextbox-import-export-using-xamlformatprovider-1}}
+__Example 3: Export document to a file__
+```C#
 	XamlFormatProvider provider = new XamlFormatProvider();
 	using (FileStream output =  new FileStream("XamlDocument.xaml",FileMode.OpenOrCreate))
 	{
 		RadDocument document = this.radRichTextBox.Document;
 		provider.Export(document, output);
 	}
-{{endregion}}
+```
 
 >tip However, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using RadRichTextBox in a data bound scenarios. For such cases, the [DataProvider]({%slug radrichtextbox-features-data-providers%}) classes are used. They wrap the FormatProviders' functionality and allow its usage in XAML.
 

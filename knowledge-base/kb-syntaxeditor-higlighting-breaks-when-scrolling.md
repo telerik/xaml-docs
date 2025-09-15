@@ -39,10 +39,10 @@ This can lead to incorrect highlighting in some cases as can be observed on **Fi
 
 If you want to ensure that highlighting is correct in all scenarios, you need to set the **ShouldTaggersProcessEntireLines** property to **True**.
 
-#### __[C#] Example 1: Make RadSyntaxEditor process the entire lines__
-{{region cs-kb-syntaxeditor-how-to-classify-class-names-from-assembly-0}}
+__Example 1: Make RadSyntaxEditor process the entire lines__
+```C#
     <telerik:RadSyntaxEditor ShouldTaggersProcessEntireLines="True" />
-{{endregion}}
+```
 
 #### Figure 2: Correct XAML highlighting
 

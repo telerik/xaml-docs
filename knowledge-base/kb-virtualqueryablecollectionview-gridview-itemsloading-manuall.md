@@ -38,8 +38,8 @@ To adjust the total items count, set the `VirtualItemCount` property of the coll
 
 In the `ItemsLoading` event handler, you can manually fetch and add items in the collection view.
 
-#### __[C#] Setting up the VirtualQueryableCollectionView__
-{{region kb-virtualqueryablecollectionview-gridview-itemsloading-manuall-0}}
+__Setting up the VirtualQueryableCollectionView__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -58,6 +58,6 @@ In the `ItemsLoading` event handler, you can manually fetch and add items in the
 			vqcv.Add(item);
 		}
 	}
-{{endregion}}
+```
 
 

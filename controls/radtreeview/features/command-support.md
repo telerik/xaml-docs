@@ -33,7 +33,7 @@ In this section we will demonstrate how you can trigger custom logic implemented
 
 #### __C#__
 
-{{region radtreeview-features-command-support_0}}
+```C#
 	public class ItemModel : ViewModelBase
 	{
 		private bool inInEditMode;
@@ -74,11 +74,11 @@ In this section we will demonstrate how you can trigger custom logic implemented
 
 		public ObservableCollection<ItemModel> Children { get; set; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-features-command-support_1}}
+```VB.NET
 	Public Class ItemModel
 		Inherits ViewModelBase
 		Private inInEditMode As Boolean
@@ -127,13 +127,13 @@ In this section we will demonstrate how you can trigger custom logic implemented
 		End Property
 		Private m_Children As ObservableCollection(Of ItemModel)
 	End Class
-{{endregion}}
+```
 
 Furthermore, we can create a __ViewModel__ class which will fill and expose an __Items__ collection of type __ObservableCollection<ItemModel>__. Also, this class will hold the custom logic which will be triggered by the command of the __RadTreeViewItem__
 
 #### __C#__
 
-{{region radtreeview-features-command-support_2}}
+```C#
 	public class ViewModel
 	{
 		public ViewModel()
@@ -176,11 +176,11 @@ Furthermore, we can create a __ViewModel__ class which will fill and expose an _
 			}
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-features-command-support_3}}
+```VB.NET
 	Public Class ViewModel
 		Public Sub New()
 			Me.Items = New ObservableCollection(Of ItemModel)()
@@ -222,14 +222,14 @@ Furthermore, we can create a __ViewModel__ class which will fill and expose an _
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __CommandExecutionTrigger__ properties of the __RadTreeViewItems__. For this purpose we will also allow the editing of items and we will use the boolean __IsInEditMode__ property defined in the custom __ItemModel__ class to set the corresponding __RadTreeViewItem__ in edit mode. This will be done in the __OnEditCommandExecute()__ method implemented in the __ViewModel__ class. In order to differ the item that invokes the command we can pass each __RadTreeViewItem's DataContext__ as __CommandParameter__ to the method where custom logic will be implemented. In order to achieve this we can use the __RelativeSource__ binding.
 		{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
-{{region radtreeview-features-command-support_4}}
+```XAML
 	<Grid>
 		<Grid.Resources>
 			<HierarchicalDataTemplate x:Key="HDT" ItemsSource="{Binding Children}">
@@ -247,14 +247,14 @@ In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __Com
 						 ItemTemplate="{StaticResource HDT}"
 						 ItemsSource="{Binding Items}" />
 	</Grid>
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
-{{region radtreeview-features-command-support_5}}
+```XAML
 	<Grid>
 		<Grid.Resources>
 			<telerik:HierarchicalDataTemplate x:Key="HDT" ItemsSource="{Binding Children}">
@@ -272,6 +272,6 @@ In MVVM scenarios it is best to use a __Style__ to set the __Command__ and __Com
 						 ItemTemplate="{StaticResource HDT}"
 						 ItemsSource="{Binding Items}" />
 	</Grid>
-{{endregion}}
+```
 
 {% endif %}

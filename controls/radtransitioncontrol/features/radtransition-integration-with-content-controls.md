@@ -23,7 +23,7 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 
 #### __XAML__
 
-{{region xaml-radtransition-features-integration-with-content-controls_1}}
+```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate1" TargetType="controlsToolkit:HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -40,11 +40,11 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
 	    </StackPanel>
 	</ControlTemplate>
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region xaml-radtransition-features-integration-with-content-controls_2}}
+```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate2" TargetType="HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -61,7 +61,7 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 	                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
 	    </StackPanel>
 	</ControlTemplate>
-{{endregion}}
+```
 
 The first __ContentPresenter__ is responsible for the header and the second one - for the content. Replace the second one with the __RadTransitionControl__ and preserve the __TemplateBindings__.
 
@@ -69,13 +69,13 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 
 #### __XAML__
 
-{{region xaml-radtransition-features-integration-with-content-controls_3}}
+```XAML
 	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region xaml-radtransition-features-integration-with-content-controls_4}}
+```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate3" TargetType="controlsToolkit:HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -94,11 +94,11 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 	
 	    </StackPanel>
 	</ControlTemplate>
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region xaml-radtransition-features-integration-with-content-controls_5}}
+```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate" TargetType="HeaderedContentControl">
 	    <StackPanel>
 	        <ContentPresenter Cursor="{TemplateBinding Cursor}"
@@ -117,7 +117,7 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 	
 	    </StackPanel>
 	</ControlTemplate>
-{{endregion}}
+```
 
 Next, configure the __RadTransitionControl__ to match your needs. For example, define its __Transition__.
 
@@ -128,7 +128,7 @@ Next, configure the __RadTransitionControl__ to match your needs. For example, d
 
 #### __XAML__
 
-{{region xaml-radtransition-features-integration-with-content-controls_7}}
+```XAML
 	<telerik:RadTransitionControl Cursor="{TemplateBinding Cursor}"
 	                      ContentTemplate="{TemplateBinding ContentTemplate}"
 	                      Content="{TemplateBinding Content}"
@@ -139,7 +139,7 @@ Next, configure the __RadTransitionControl__ to match your needs. For example, d
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-{{endregion}}
+```
 
 ## See Also
 

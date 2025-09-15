@@ -30,8 +30,8 @@ RadBusyindicator freezes while RadGridView export is running.
 
 To minimize this, separate the creating of the document model from the saving of the file. Saving of the file can be executed on a separate thread. Also, use the ExportToWorkbook() method for creating the document model.
 
-#### __[C#]__
-{{region kb-gridview-busyindicator-freezes-while-exporting-excel-0}}
+
+```C#
 	private BackgroundWorker backgroundWorker;
 	private Stream documentStream;
 
@@ -74,7 +74,7 @@ To minimize this, separate the creating of the document model from the saving of
 			this.radBusyIndicator.IsBusy = false;
 		}));
 	}
-{{endregion}}
+```
 
 ## See Also  
 * [Export Overview]({%slug gridview-export-overview%})

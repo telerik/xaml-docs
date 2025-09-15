@@ -16,10 +16,10 @@ __Bound columns__ represent the data from __RadGridView's__ ItemsSource. They su
 
 #### __XAML__
 
-{{region xaml-gridview-columns-bound-unbound-columns_0}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
 	                Header="ID (Bound)" />
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 1](images/RadGridView_BoundUnboundColumns_1.png)
 
@@ -29,7 +29,7 @@ Here is an example for unbound column:
 
 #### __XAML__
 
-{{region xaml-gridview-columns-bound-unbound-columns_1}}
+```XAML
 	<telerik:GridViewColumn Header="Name">
 	    <telerik:GridViewColumn.CellTemplate>
 	        <DataTemplate>
@@ -43,7 +43,7 @@ Here is an example for unbound column:
 	        </DataTemplate>
 	    </telerik:GridViewColumn.CellTemplate>
 	</telerik:GridViewColumn>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 2](images/RadGridView_BoundUnboundColumns_2.png)
 
@@ -55,7 +55,7 @@ Here is the above sample of an unbound column transformed into a template column
 
 #### __XAML__
 
-{{region xaml-gridview-columns-bound-unbound-columns_2}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name (Unbound)">
 	    <telerik:GridViewDataColumn.CellTemplate>
 	        <DataTemplate>
@@ -69,7 +69,7 @@ Here is the above sample of an unbound column transformed into a template column
 	        </DataTemplate>
 	    </telerik:GridViewDataColumn.CellTemplate>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 3](images/RadGridView_BoundUnboundColumns_3.png)
 

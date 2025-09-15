@@ -22,7 +22,7 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 
 #### [C#] Example 1: Defining class Person
 
-{{region raddatafilter-features-data-annotations_0}}
+```C#
 
 	public class Person
 	{
@@ -44,13 +44,13 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 	        set;
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### [VB] Example 1: Defining class Person
 
-{{region raddatafilter-features-data-annotations_1}}
+```VB
 
 	Public Class Person
 	 <Display(AutoGenerateFilter = False)> _
@@ -83,7 +83,7 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 	 End Property
 	 Private m_Title As String
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -100,7 +100,7 @@ For example, you can apply the attribute like so:
 #### [C#] Example 2: Setting a property to not be displayed
 
 
-{{region raddatafilter-features-data-annotations_2}}
+```C#
 	
 	[Browsable(false)]
 	[Display(ShortName = "Company's Address")]
@@ -109,7 +109,7 @@ For example, you can apply the attribute like so:
 	    get;
 	    set;
 	}
-	{{endregion}}
+	```
 
 
 

@@ -32,8 +32,8 @@ The reason behind this behavior is that the **HighlightItem** controls that show
 
 To avoid this, you need to set the **Panel.ZIndex** attached property of the HighlightItems that show the special slots to a low value.
 
-#### __[XAML] Example 1: Set HighlightItem's ZIndex__
-{{region xaml-kb-scheduleview-selection-not-correct-when-using-special-slots-1}}
+__Example 1: Set HighlightItem's ZIndex__
+```XAML
 
   <local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
     <local:SpecialSlotStyleSelector.NonworkingHourStyle>
@@ -53,7 +53,7 @@ To avoid this, you need to set the **Panel.ZIndex** attached property of the Hig
       </Style>
     </local:SpecialSlotStyleSelector.NonworkingHourStyle>
   </local:SpecialSlotStyleSelector>
-{{endregion}}
+```
 
 ## See Also
 * [Available Themes]({%slug common-styling-appearance-available-themes%})

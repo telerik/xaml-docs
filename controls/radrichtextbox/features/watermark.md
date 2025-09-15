@@ -39,9 +39,9 @@ There is also a set of predefined textual watermarks - the most commonly used on
 
 #### __C#__
 
-{{region radrichtextbox-features-watermark_0}}
+```C#
 	this.editor.SetWatermark(Telerik.Windows.Documents.Model.PredefinedWatermarkType.Confidential);
-{{endregion}}
+```
 
 
 You can create custom watermarks using the __WatermarkTextSettings__ and __WatermarkImageSettings__ classes and the respective methods of __RadRichTextBox__ - __SetWatermarkText()__ and __SetWatermarkImage()__.
@@ -51,7 +51,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 
 #### __C#__
 
-{{region radrichtextbox-features-watermark_1}}
+```C#
 	WatermarkTextSettings textSettings = new WatermarkTextSettings();
 	textSettings.Text = "Purple Watermark";
 	textSettings.RotateAngle = 30;
@@ -59,7 +59,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 	textSettings.ForegroundColor = Colors.Purple;
 
 	this.editor.SetWatermarkText(textSettings);
-{{endregion}}
+```
 
 
 
@@ -67,13 +67,13 @@ And this is how you create an image watermark and apply it:
 
 #### __C#__
 
-{{region radrichtextbox-features-watermark_2}}
+```C#
 	WatermarkImageSettings imageSettings = new WatermarkImageSettings();
 	imageSettings.UriSource = uri; 
 	imageSettings.Size = new Size(500, 665);
 
 	this.editor.SetWatermarkImage(imageSettings);
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}{% endif %}
 

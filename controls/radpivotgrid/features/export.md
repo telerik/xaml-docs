@@ -42,9 +42,9 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 
 >You can use the method below and call it on a click of a button for example. By using it, __RadPivotGrid__ will be exported with the same fonts and colors as it is in your application. You can remove the properties, which you do not want to export (for example fill, indent or alignment).         
 
-#### __[C#] Example 1: Generating the exported workbook__
+__Example 1: Generating the exported workbook__
 
-{{region radpivotgrid-features-export_1}}
+```C#
 	private void ExportToExcel()
 	{
 	    SaveFileDialog dialog = new SaveFileDialog();
@@ -215,11 +215,8 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 	
 	    return null;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Generating the exported workbook__
-
-{{region radpivotgrid-features-export_1}}
+```
+```VB.NET
 	Private Sub ExportToExcel()
 		Dim dialog As New SaveFileDialog()
 		dialog.DefaultExt = "xlsx"
@@ -360,7 +357,7 @@ Our first task is to get needed information from __RadPivotGrid__ by using Expor
 	
 		Return Nothing
 	End Function
-{{endregion}}
+```
 
 ## Export to Word, Pdf and HTML
 
@@ -373,9 +370,9 @@ No matter which of these three formats you have chosen, you will have to create 
 
 >tipYou can put __RadRichTextBox__ as a content of a __RadWindow__ and use the window as PrintPreview dialog. You can check a full implementation of this solution in our {% if site.site_name == 'Silverlight' %}[Export](https://demos.telerik.com/silverlight/#PivotGrid/Export){% endif %}{% if site.site_name == 'WPF' %}[Export](https://demos.telerik.com/wpf/){% endif %} demo. If you do not want to show PrintPreview dialog, you can set the visibility of the window to collapsed.          
 
-#### __[C#] Example 2: Generating the exported document__
+__Example 2: Generating the exported document__
 
-{{region radpivotgrid-features-export_2}}
+```C#
 	private RadDocument GenerateRadDocument()
 	{
 	    var export = pivot.GenerateExport();
@@ -669,11 +666,8 @@ No matter which of these three formats you have chosen, you will have to create 
 	            return Telerik.Windows.Documents.Layout.RadTextAlignment.Left;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Generating the exported document__
-
-{{region radpivotgrid-features-export_2}}
+```
+```VB.NET
 	Private Function GenerateRadDocument() As RadDocument
 		Dim export = pivot.GenerateExport()
 		Dim rowCount As Integer = export.RowCount
@@ -960,13 +954,13 @@ No matter which of these three formats you have chosen, you will have to create 
 				Return Telerik.Windows.Documents.Layout.RadTextAlignment.Left
 		End Select
 	End Function
-{{endregion}}
+```
 
 Here is a simple method, that will export the document to the specified file stream. This method is used in all of the below cases.        
 
-#### __[C#] Example 3: Method for exporting the generated document__
+__Example 3: Method for exporting the generated document__
 
-{{region radpivotgrid-features-export_3}}
+```C#
 	private static void SaveFile(SaveFileDialog dialog, IDocumentFormatProvider provider, RadDocument document)
 	{
 	    var result = dialog.ShowDialog();
@@ -985,11 +979,8 @@ Here is a simple method, that will export the document to the specified file str
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Method for exporting the generated document__
-
-{{region radpivotgrid-features-export_3}}
+```
+```VB.NET
 	Private Shared Sub SaveFile(ByVal dialog As SaveFileDialog, ByVal provider As IDocumentFormatProvider, ByVal document As RadDocument)
 		Dim result = dialog.ShowDialog()
 		If result = True Then
@@ -1002,7 +993,7 @@ Here is a simple method, that will export the document to the specified file str
 			End Try
 		End If
 	End Sub
-{{endregion}}
+```
 
 ### Export To Word
 
@@ -1011,9 +1002,9 @@ Here is a simple method, that will export the document to the specified file str
 After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__. Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.
               
 
-#### __[C#] Example 4: Exporting the generated document as DOCX__
+__Example 4: Exporting the generated document as DOCX__
 
-{{region radpivotgrid-features-export_4}}
+```C#
 	private void WordExport_Click(object sender, RoutedEventArgs e)
 	{
 	    RadDocument document = GenerateRadDocument();
@@ -1025,11 +1016,8 @@ After you've generated the document (instance of __RadDocument__) you have to se
 	    dialog.Filter = "Word document (docx) | *.docx |All Files (*.*) | *.*";
 	    SaveFile(dialog, provider, document);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Exporting the generated document as DOCX__
-
-{{region radpivotgrid-features-export_4}}
+```
+```VB.NET
 	Private Sub WordExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim document As RadDocument = GenerateRadDocument()
 		richTextBox.Document = document
@@ -1040,7 +1028,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 		dialog.Filter = "Word document (docx) | *.docx |All Files (*.*) | *.*"
 		SaveFile(dialog, provider, document)
 	End Sub
-{{endregion}}
+```
 
 ### Export To Pdf
 
@@ -1048,9 +1036,9 @@ After you've generated the document (instance of __RadDocument__) you have to se
 
 After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__. Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.              
 
-#### __[C#] Example 5: Exporting the generated document as PDF__
+__Example 5: Exporting the generated document as PDF__
 
-{{region radpivotgrid-features-export_5}}
+```C#
 	private void PdfExport_Click(object sender, RoutedEventArgs e)
 	{
 	    RadDocument document = GenerateRadDocument();
@@ -1062,11 +1050,8 @@ After you've generated the document (instance of __RadDocument__) you have to se
 	    dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*";
 	    SaveFile(dialog, provider, document);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Exporting the generated document as PDF__
-
-{{region radpivotgrid-features-export_5}}
+```
+```VB.NET
 	Private Sub PdfExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim document As RadDocument = GenerateRadDocument()
 		rtb.Document = document
@@ -1077,7 +1062,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 		dialog.Filter = "Pdf document (pdf) | *.pdf |All Files (*.*) | *.*"
 		SaveFile(dialog, provider, document)
 	End Sub
-{{endregion}}
+```
 
 > The [ExportPivotGrid](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/ExportPivotGrid) example shows how the RadPivotGrid can be exported to PDF via the [PdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. The approach that is used is similar to the one from the [ExportUIElement](https://github.com/telerik/document-processing-sdk/tree/master/PdfProcessing/ExportUIElement) example.  
 
@@ -1087,9 +1072,9 @@ After you've generated the document (instance of __RadDocument__) you have to se
 
 After you've generated the document (instance of __RadDocument__) you have to set the *Document* property of __RadRichTextBox__. Note that __RadRichTextBox__ should be visible in order to create the document based on *Document* property.              
 
-#### __[C#] Example 6: Exporting the generated document as HTML__
+__Example 6: Exporting the generated document as HTML__
 
-{{region radpivotgrid-features-export_6}}
+```C#
 	private void HtmlExport_Click(object sender, RoutedEventArgs e)
 	{
 	    RadDocument document = GenerateRadDocument();
@@ -1101,11 +1086,8 @@ After you've generated the document (instance of __RadDocument__) you have to se
 	    dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*";
 	    SaveFile(dialog, provider, document);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Exporting the generated document as HTML__
-
-{{region radpivotgrid-features-export_6}}
+```
+```VB.NET
 	Private Sub HtmlExport_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim document As RadDocument = GenerateRadDocument()
 		rtb.Document = document
@@ -1116,7 +1098,7 @@ After you've generated the document (instance of __RadDocument__) you have to se
 		dialog.Filter = "Html document (html) | *.html |All Files (*.*) | *.*"
 		SaveFile(dialog, provider, document)
 	End Sub
-{{endregion}}
+```
 
 >A working version of this example is also available in the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/), titled **Export PivotGrid**.
 

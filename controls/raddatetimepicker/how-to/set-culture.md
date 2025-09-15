@@ -20,13 +20,13 @@ The next code snippet demonstrates how to set the CurrentCulture and CurrentUICu
 
 #### __C#__
 
-{{region cs-raddatetimepicker-how-to-set-culture-1}}
+```C#
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
 	Thread.CurrentThread.CurrentCulture = culture;
 	Thread.CurrentThread.CurrentUICulture = culture;
-{{endregion}}
+```
 
 The next figures show the difference with the custom en-US culture and the normal environment culture (which in this case is bg-BG):
 
@@ -53,7 +53,7 @@ The next code snippet shows how to set the date pattern in order to change the d
 
 #### __C#__
 
-{{region cs-raddatetimepicker-how-to-set-culture-2}}
+```C#
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
@@ -66,13 +66,13 @@ The next code snippet shows how to set the date pattern in order to change the d
 	culture.DateTimeFormat = dtfInfo;
 	Thread.CurrentThread.CurrentCulture = culture;
 	Thread.CurrentThread.CurrentUICulture = culture;
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 #### __C#__
 
-{{region cs-raddatetimepicker-how-to-set-culture-3}}
+```C#
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
@@ -84,7 +84,7 @@ The next code snippet shows how to set the date pattern in order to change the d
 	culture.DateTimeFormat = dtfInfo;
 	Thread.CurrentThread.CurrentCulture = culture;
 	Thread.CurrentThread.CurrentUICulture = culture;
-{{endregion}}
+```
 {% endif %}
 
 The next figure shows the final result:

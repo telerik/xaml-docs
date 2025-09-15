@@ -16,8 +16,8 @@ This article will list the key properties provided by the RadTaskBoard control.
 
 This is a boolean property which determines whether the control will auto generate its columns or not. By default this property is true. You can disable the auto generation of the columns by setting the __AutoGenerateColumns__ property to false. Then you will need to define them manually.
 
-#### __[XAML] Example 1: Manually defined columns__	
-	{{region xaml-radtaskboard-key-properties_0}}		
+__Example 1: Manually defined columns__	
+	```XAML		
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" AutoGenerateColumns="False">
 			<telerik:RadTaskBoard.Columns>
 				<telerik:TaskBoardColumn GroupName="Not Done" />
@@ -25,42 +25,42 @@ This is a boolean property which determines whether the control will auto genera
 				<telerik:TaskBoardColumn GroupName="Done" />
 			</telerik:RadTaskBoard.Columns>
 		</telerik:RadTaskBoard>		
-	{{endregion}}
+	```
 
 ## GroupMemberPath
 
 It allows you to specify the property, whose value will be used to group the task items. 
 
-#### __[XAML] Example 2: Set GroupMemberPath__
-	{{region xaml-radtaskboard-key-properties_1}}
+__Example 2: Set GroupMemberPath__
+	```XAML
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" />
-	{{endregion}}
+	```
 
 ## ColumnWidth and CollapsedColumnWidth 
 
 Through the __ColumnWidth and CollapsedColumnWidth__, you can control the default Width of the TaskBoardColumn in expanded and collapsed state. __Example 3__ shows how to set these properties and their default values.
 
-#### __[C#] Example 3: Set ColumnWidth and CollapsedColumnWidth__
-	{{region cs-radtaskboard-key-properties_2}}
+__Example 3: Set ColumnWidth and CollapsedColumnWidth__
+	```C#
 		this.taskBoard.ColumnWidth = 300; 
 		this.taskBoard.CollapsedColumnWidth = 42; 
-	{{endregion}}
+	```
 
 ## ColumnHeaderHeight
 
 To change the default height of the headers inside the columns you can use the __ColumnHeaderHeight__ property of the RadTaskBoard. __Example 4__ shows how to set this property and its default value.
 
-#### __[C#] Example 4: Set ColumnHeaderHeight__
-	{{region cs-radtaskboard-key-properties_3}}
+__Example 4: Set ColumnHeaderHeight__
+	```C#
 	   this.taskBoard.ColumnHeaderHeight = 40; 
-	{{endregion}}
+	```
 
 ## ColumnHeaderTemplate
 
 To further customize the headers of all columns, you can create your own DataTemplate and apply it to the __ColumnHeaderTemplate__ property of the RadTaskBoard.
 
-#### __[XAML] Example 5: Set ColumnHeaderTemplate__
-	{{region xaml-radtaskboard-key-properties_4}}
+__Example 5: Set ColumnHeaderTemplate__
+	```XAML
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" ItemsSource="{Binding Data}">
 			<telerik:RadTaskBoard.ColumnHeaderTemplate>
 				<DataTemplate>
@@ -68,25 +68,25 @@ To further customize the headers of all columns, you can create your own DataTem
 				</DataTemplate>
 			</telerik:RadTaskBoard.ColumnHeaderTemplate>
 		</telerik:RadTaskBoard>
-	{{endregion}}
+	```
 
 ## ColumnOffset
 
 To increase the space between the columns, you can set the __ColumnOffset__ property. __Example 5__ shows how to set this property and its default value.
 
-#### __[C#] Example 6: Set ColumnOffset__
-	{{region cs-radtaskboard-key-properties_5}}
+__Example 6: Set ColumnOffset__
+	```C#
 	   this.taskBoard.ColumnOffset = 10; 
-	{{endregion}}
+	```
 
 ## CanUserSelect, IsDragDropEnabled, and CanUserCollapseColumns
 
 To restrict the user from selecting / reordering the tasks, or collapsing the column you can use the corresponding properties: __CanUserSelect, IsDragDropEnabled, and CanUserCollapseColumns__
 	
-#### __[XAML] Example 7: Set CanUserSelect, IsDragDropEnabled, and CanUserCollapseColumns__
-	{{region xaml-radtaskboard-key-properties_6}}
+__Example 7: Set CanUserSelect, IsDragDropEnabled, and CanUserCollapseColumns__
+	```XAML
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" CanUserCollapseColumns="False" CanUserSelect="False" IsDragDropEnabled="False" />
-	{{endregion}}
+	```
 
 ## Categories
 	

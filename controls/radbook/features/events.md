@@ -26,8 +26,8 @@ __RadBook__ exposes the following events:
 
 Please find below and example of how to use those events:
 
-#### __[XAML] Example 1: Subscribing to the RadBook events__  
-{{region xaml-radbook-events_0}}
+__Example 1: Subscribing to the RadBook events__  
+```XAML
 	<Grid x:Name="LayoutRoot" Background="Purple">
 	    <telerik:RadBook x:Name="RadBook1" 
 	                        Margin="50"
@@ -64,10 +64,10 @@ Please find below and example of how to use those events:
 	        </telerik:RadBookItem>
 	    </telerik:RadBook>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Adding event handlers__  
-{{region cs-radbook-events_1}}
+__Example 2: Adding event handlers__  
+```C#
 	public partial class MainPage : UserControl
 	{
 		public MainPage()
@@ -99,10 +99,8 @@ Please find below and example of how to use those events:
 			e.Handled = true;//if the page flip should stop
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Adding event handlers__  
-{{region vb-radbook-events_2}}
+```
+```VB.NET
 	Partial Public Class MainPage
 		Inherits UserControl
 		Public Sub New()
@@ -127,4 +125,4 @@ Please find below and example of how to use those events:
 			e.Handled = True 'if the page flip should stop '
 		End Sub
 	End Class
-{{endregion}}
+```

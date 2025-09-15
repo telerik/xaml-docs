@@ -20,7 +20,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 
 #### __XAML__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_0}}
+	```XAML
 		<UserControl.Resources>
 		
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
@@ -48,7 +48,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 			   ItemTemplate="{StaticResource League}"/>
 		
 		</Grid>
-		{{endregion}}
+		```
 
 {% endif %}
 	
@@ -56,7 +56,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 
 #### __XAML__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_10}}
+	```XAML
 		<UserControl.Resources>
 		
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
@@ -84,7 +84,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 			   ItemTemplate="{StaticResource League}"/>
 		
 		</Grid>
-		{{endregion}}
+		```
 
 	{% endif %}
 
@@ -102,34 +102,34 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-container-style-selector_1}}
+		```XAML
 			<Style x:Key="LeagueItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
 				<Setter Property="Foreground" Value="Red"/>
 				<Setter Property="IsExpanded" Value="True"/>
 			</Style>
-			{{endregion}}
+			```
 
 	* __DivisionItemContainerStyle__
 
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-container-style-selector_2}}
+		```XAML
 			<Style x:Key="DivisionItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
 				<Setter Property="Foreground" Value="Green"/>
 				<Setter Property="IsExpanded" Value="True"/>
 			</Style>
-			{{endregion}}
+			```
 
 	* __TeamItemContainerStyle__
 
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-container-style-selector_3}}
+		```XAML
 			<Style x:Key="TeamItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
 				<Setter Property="Foreground" Value="Purple"/>
 				<Setter Property="FontSize" Value="16"/>
 			</Style>
-			{{endregion}}
+			```
 
 	>The style defined for the __ItemContainerStyle__ property should have as __TargetType__  the __RadTreeViewItem__ class.
 
@@ -143,25 +143,25 @@ The next step is to create a selector where the logic about selecting the right 
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_4}}
+	```C#
 		public class LeagueItemContainerStyleSelector : StyleSelector
 		{
 		}
-		{{endregion}}
+		```
 
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_5}}
+	```VB.NET
 		Public Class LeagueItemContainerStyleSelector
 			Inherits StyleSelector
 		End Class
-		{{endregion}}
+		```
 
 * Override the __SelectStyle__ method and implement your custom logic in it. The method accepts as arguments an __object__ and a __DependencyObject__. The object argument is the actual object being bound and the __DependecyObject__ is the container for it. 
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_6}}
+	```C#
 		public class LeagueItemContainerStyleSelector : StyleSelector
 		{
 			private Style leagueStyle;
@@ -211,11 +211,11 @@ The next step is to create a selector where the logic about selecting the right 
 				}
 			}
 		}
-		{{endregion}}
+		```
 		
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_7}}
+	```VB.NET
 		Public Class LeagueItemContainerStyleSelector
 			Inherits StyleSelector
 			Private m_leagueStyle As Style
@@ -261,27 +261,27 @@ The next step is to create a selector where the logic about selecting the right 
 				End Set
 			End Property
 		End Class
-		{{endregion}}
+		```
 
 * Define the created selector as a resource in your XAML and set it to the __ItemContainerStyleSelector__ property. 
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_8}}
+	```XAML
 		<example:LeagueItemContainerStyleSelector x:Key="myContainerStyleSelector"
 			LeagueStyle="{StaticResource LeagueItemContainerStyle}"
 			DivisionStyle="{StaticResource DivisionItemContainerStyle}"
 			TeamStyle="{StaticResource TeamItemContainerStyle}"/>
-		{{endregion}}
+		```
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-container-style-selector_9}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView"
 			ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 			ItemTemplate="{StaticResource League}"
 			ItemContainerStyleSelector="{StaticResource myContainerStyleSelector}"/>
-		{{endregion}}
+		```
 
 ![{{ site.framework_name }} RadTreeView Item Container Style Selector](images/RadTreeView_TemplatingItemContainerStyleSelector_010.PNG)
 

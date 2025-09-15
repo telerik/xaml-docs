@@ -21,8 +21,8 @@ This series is visualized on the screen as separate points representing each of 
 
 You can use the following definition to display a simple ScatterPointSeries
 
-#### __[XAML] Example 1: Declaring an ScatterPointSeries in XAML__
-{{region  radchartview-series-scatterpointseries_0}}
+__Example 1: Declaring an ScatterPointSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:LinearAxis/>
@@ -44,7 +44,7 @@ You can use the following definition to display a simple ScatterPointSeries
 		</telerik:ScatterPointSeries>
 	</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: ScatterPointSeries visual appearance__
 ![radchartview-series-scatterpointseries](images/radchartview-series-scatterpointseries.png)
@@ -58,9 +58,9 @@ You can use the following definition to display a simple ScatterPointSeries
 
 You can use the __YValueBinding__ and __XValueBinding__ properties of the ScatterPointSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-scatterpointseries_1}}
+```C#
 	public class PlotInfo
     {
         public double XValue { get; set; }
@@ -73,12 +73,12 @@ You can use the __YValueBinding__ and __XValueBinding__ properties of the Scatte
 		new PlotInfo() { XValue = 0, YValue = 2},
 		//....
 	};
-{{endregion}}		
+```		
 
-#### __[XAML] Example 3: Specify a ScatterPointSeries in XAML__
-{{region radchartview-series-scatterpointseries_2}}
+__Example 3: Specify a ScatterPointSeries in XAML__
+```XAML
 	<telerik:ScatterPointSeries ItemsSource="{Binding}" YValueBinding="YValue" XValueBinding="XValue"/>
-{{endregion}}	
+```	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

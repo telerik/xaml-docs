@@ -50,7 +50,7 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 
 #### __XAML__
 
-{{region xaml-radchart-features-animations_0}}
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -107,13 +107,13 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-animations_1}}
+```C#
 	RadChart radChart= new RadChart();
 	//....
 	radChart.DefaultView.ChartArea.AnimationSettings = new AnimationSettings();
@@ -152,11 +152,11 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	barSeries.Add( new DataPoint(){ YValue = 89 } );
 	barSeries.Add( new DataPoint(){ YValue = 80 } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( barSeries );
-{{endregion}}
+```
     
 #### __VB.NET__
 
-{{region vb-radchart-features-animations_2}}
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AnimationSettings = New AnimationSettings()
 	radChart.DefaultView.ChartArea.AnimationSettings.ItemDelay = New TimeSpan(0)
@@ -194,7 +194,7 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	barSeries.Add(New DataPoint(89))
 	barSeries.Add(New DataPoint(80))
 	radChart.DefaultView.ChartArea.DataSeries.Add(barSeries)
-{{endregion}}
+```
     
 __The image below is a snapshot taken in the middle of the animation.__
 ![{{ site.framework_name }} RadChart Animation Snapshot](images/RadChart_Features_Animations_01.png)
@@ -205,7 +205,7 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 
 #### __XAML__
 
-{{region xaml-radchart-features-animations_3}}
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -218,27 +218,27 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-animations_4}}
+```C#
 	//....
 	radChart.DefaultView.ChartArea.EnableAnimations = false;
 	radChart.DefaultView.ChartArea.EnableStripLinesAnimation = false;
 	//....
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-animations_5}}
+```VB.NET
 	radChart.DefaultView.ChartArea.EnableAnimations = False
 	radChart.DefaultView.ChartArea.EnableStripLinesAnimation = False
-{{endregion}}
+```
 
 
 

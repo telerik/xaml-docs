@@ -45,18 +45,18 @@ Before proceeding with adding __RadScheduleView__ to your project, make sure the
 
 You can add __RadScheduleView__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadScheduleView in XAML__
+__Example 1: Adding RadScheduleView in XAML__
 
-{{region radscheduleview-getting-started_0}}
+```XAML
 	<telerik:RadScheduleView />     
-{{endregion}}
+```
 
 
 >In order to use __RadScheduleView__ in XAML you have to add the following namespace declaration:
->#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region telerik-schemas}}
+>__Example 2: Declaring Telerik Namespace__
+>```XAML
 >    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
->{{endregion}}
+>```
 
 If you run the application, you will see an empty ScheduleView with a message saying that AppointmentsSource should be provided as demonstrated in __Figure 1__. 
 
@@ -68,9 +68,9 @@ If you run the application, you will see an empty ScheduleView with a message sa
 
 In order to populate __RadScheduleView__ with data, you should bind its __AppointmentsSource__ property to a collection of __Appointment__ objects. First, create a ViewModel class containing an ObservableCollection of Appointments as shown in __Example 3__.
 
-#### __[C#] Example 3: View Model containing an ObservableCollection of Appointments__
+__Example 3: View Model containing an ObservableCollection of Appointments__
 
-{{region radscheduleview-getting-started_1}}
+```C#
 	public class MyViewModel
 	{
 		private ObservableCollection<Appointment> appointments;
@@ -110,12 +110,8 @@ In order to populate __RadScheduleView__ with data, you should bind its __Appoin
 		return apps;
 		}   
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 3: View Model containing an ObservableCollection of Appointments__
-
-{{region radscheduleview-getting-started_1}}
+```
+```VB.NET
 	Public Class MyViewModel
 
 		Private m_appointments As ObservableCollection(Of Appointment)
@@ -149,20 +145,20 @@ In order to populate __RadScheduleView__ with data, you should bind its __Appoin
 			Return apps
 		End Function
 	End Class
-{{endregion}}
+```
 
 Now that you have prepared the needed sample data, it is time to bind RadScheduleView to it. For that purpose, you should set the __RadScheduleView's AppointmentsSource__ property to the collection of Appointments.
 
 __Example 4__ demonstrates how you can bind the AppointmentsSource collection in XAML. The _local_ namespace in the example corresponds to the namespace where __MyViewModel__ resides.
 
-#### __[XAML] Example 4: Bind RadScheduleView__
+__Example 4: Bind RadScheduleView__
 
-{{region radscheduleview-getting-started_2}}
+```XAML
     <Grid.Resources>
         <local:MyViewModel x:Key="MyViewModel" />
     </Grid.Resources>
     <telerik:RadScheduleView DataContext="{StaticResource MyViewModel}"  AppointmentsSource="{Binding Appointments}" />
-{{endregion}}
+```
 
 If you run the application at this stage, you will again see an empty ScheduleView with a message saying that a View Definition should be selected as shown in __Figure 2__. 
 
@@ -174,15 +170,15 @@ If you run the application at this stage, you will again see an empty ScheduleVi
 
 __Example 5__ demonstrates how you can add a DayViewDefinition to the __RadScheduleView__ control:
 
-#### __[XAML] Example 5: Add DayViewDefinition__
+__Example 5: Add DayViewDefinition__
 
-{{region radscheduleview-getting-started_3}}
+```XAML
 	<telerik:RadScheduleView DataContext="{StaticResource MyViewModel}" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 >You can add more than one ViewDefinition. There are five view definitions available:
 >* DayViewDefinition
@@ -220,8 +216,8 @@ To change the theme, you can follow the steps below:
 
 __Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 8: Merge the ResourceDictionaries__  
-{{region radtreeview-getting-started_08}}
+__Example 8: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -233,7 +229,7 @@ __Example 8__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 4__ shows __RadScheduleView__ with the **Windows8** theme applied.
 	

@@ -32,8 +32,8 @@ How to change the group of a card when a property in an object has been changed.
 
 To achieve this requirement you can use a `QueryableCollectionView` as the `ItemsSource` of `RadCardView`. Then on data item property changed, reset the `GroupDescriptors` of the collection view.
 
-#### __[C#]__
-{{region cs-kb-cardview-fix-group-changes}}
+
+```C#
 	private void UpdateItem()
 	{
  		var qcv = (QueryableCollectionView)this.cardView.ItemsSource;
@@ -41,4 +41,4 @@ To achieve this requirement you can use a `QueryableCollectionView` as the `Item
 		dataItem.GroupKeyProperty = "new group value";
 		qcv.GroupDescriptors.Reset();
 	}
-{{endregion}}
+```

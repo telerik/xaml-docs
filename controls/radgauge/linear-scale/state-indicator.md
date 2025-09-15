@@ -13,7 +13,7 @@ position: 5
 The State Indicator is a shape with arbitrary size located anywhere in the scale. If state indicator's value put into one of the scale ranges then shape is filled with brush of this range. To add state indicator to the scale you have to include StateIndicator element to the list of the scale indicators:
 
 #### __XAML__
-{{region linear-scale-state-indicator_0}}
+```XAML
 	<telerik:RadVerticalLinearGauge Width="100" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale IsInteractive="True"
 	                         RangeLocation="Outside"
@@ -48,7 +48,7 @@ The State Indicator is a shape with arbitrary size located anywhere in the scale
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge State Indicator](images/LinearScaleStateIndicator.png)
 

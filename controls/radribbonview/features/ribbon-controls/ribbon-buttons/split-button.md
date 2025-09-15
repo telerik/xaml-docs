@@ -17,12 +17,12 @@ The __RadRibbonSplitButton__ represents an extension of the __RadSplitButton__. 
 Here is a sample definition of a __RadRibbonSplitButton__ without having any drop down content defined:	  
 
 #### __XAML__
-{{region radribbonview-split-button_0}}
+```XAML
 	<telerik:RadRibbonSplitButton LargeImage="Icons/32/paste.png"
 	                              Size="Large"
 	                              SmallImage="Icons/16/paste.png"
 	                              Text="Paste" />
-{{endregion}}
+```
 
 >tip As all buttons in the RadRibbonView's set slightly expose the same functionality, take a look at the [Overview]({%slug radribbonview-buttons-overview%}) topic.
 
@@ -39,7 +39,7 @@ Please note that the __Text__ value of the button is displayed in its button par
 To set the popup content you have to simply set the __DropDownContent__ property of the button. Here is an example of a __RadRibbonSplitButton__ with three menu items inside its drop down.		
 
 #### __XAML__
-{{region radribbonview-split-button_1}}
+```XAML
 	<telerik:RadRibbonSplitButton LargeImage="Icons/32/paste.png" Size="Large"
 	        SmallImage="Icons/16/paste.png" Text="Paste">
 	    <telerik:RadRibbonSplitButton.DropDownContent>
@@ -62,7 +62,7 @@ To set the popup content you have to simply set the __DropDownContent__ property
 	        </telerik:RadContextMenu>
 	    </telerik:RadRibbonSplitButton.DropDownContent>
 	</telerik:RadRibbonSplitButton>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadRibbonView Split Button Dropdown Content](images/RibbonView_Buttons_SplitButton_DDContent.png)
 
@@ -77,7 +77,7 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 * __DropDownOpend__ - fires after the popup area has been opened.			
 
 #### __XAML__
-{{region radribbonview-split-button_2}}
+```XAML
 	<telerik:RadRibbonSplitButton LargeImage="Icons/32/paste.png"
 	                              ...
 	                              DropDownClosed="RadRibbonSplitButton_DropDownClosed"
@@ -85,10 +85,10 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 	                              DropDownOpening="RadRibbonSplitButton_DropDownOpening">
 	    ...
 	</telerik:RadRibbonSplitButton>
-{{endregion}}
+```
 
 #### __C#__
-{{region radribbonview-split-button_3}}
+```C#
 	private void RadRibbonSplitButton_DropDownClosed(object sender, RoutedEventArgs e)
 	{
 	}
@@ -98,10 +98,10 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 	private void RadRibbonSplitButton_DropDownOpening(object sender, RoutedEventArgs e)
 	{
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radribbonview-split-button_4}}
+```VB.NET
 	Private Sub RadRibbonSplitButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
 	End Sub
 	
@@ -110,7 +110,7 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 	
 	Private Sub RadRibbonSplitButton_DropDownOpening(sender As Object, e As RoutedEventArgs)
 	End Sub
-{{endregion}}		  
+```		  
 
 ## See Also
  * [Styling the RadRibbonSplitButton]({%slug radribbonview-styling-ribbonsplitbutton%})

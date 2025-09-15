@@ -39,14 +39,14 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 **Example 1** demonstrates how you can add a RadPanelBar in xaml.
 
-#### __[XAML] Example 1: RadPanelBar with statically declared items in xaml__
-{{region xaml-radpanelbar-populating_0}}
+__Example 1: RadPanelBar with statically declared items in xaml__
+```XAML
 	<telerik:RadPanelBar>
 	    <telerik:RadPanelBarItem Header="Item 1" />
 	    <telerik:RadPanelBarItem Header="Item 2" />
 	    <telerik:RadPanelBarItem Header="Item 3" />
 	</telerik:RadPanelBar>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1 in Office2016 Theme__
 ![RadPanelBar Getting Started](images/panelbar_getting_started.png)
@@ -55,8 +55,8 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 **Example 2** demonstrates how you can add __RadPanelBarItems__ directly to the __Items__ collection of the RadPanelBar in code behind:			
 
-#### __[C#] Example 2: Adding RadPanelBarItems in code__
-{{region cs-radpanelbar-populating_2}}
+__Example 2: Adding RadPanelBarItems in code__
+```C#
 	RadPanelBar myPanelBar = new RadPanelBar();
 	RadPanelBarItem item1 = new RadPanelBarItem() { Header = "Item 1" };
 	RadPanelBarItem item2 = new RadPanelBarItem() { Header = "Item 2" };
@@ -64,10 +64,8 @@ If you are not using NuGet packages, you can add a reference to the following as
 	myPanelBar.Items.Add(item1);
 	myPanelBar.Items.Add(item2);
 	myPanelBar.Items.Add(item3);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Adding RadPanelBarItems in code__
-{{region vb-radpanelbar-populating_3}}
+```
+```VB.NET
 	Dim myPanelBar As New RadPanelBar()
 	Dim item1 As New RadPanelBarItem() With {
 	.Header = "Item 1"
@@ -81,7 +79,7 @@ If you are not using NuGet packages, you can add a reference to the following as
 	myPanelBar.Items.Add(item1)
 	myPanelBar.Items.Add(item2)
 	myPanelBar.Items.Add(item3)
-{{endregion}}
+```
 
 ## Databinding the RadPanelBar Control		  
 
@@ -104,8 +102,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region radpanelbar-getting-started_4}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -115,7 +113,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

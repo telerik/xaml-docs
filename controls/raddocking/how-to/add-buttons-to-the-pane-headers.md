@@ -18,7 +18,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 
 #### __XAML__
 
-{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_0}}
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -30,7 +30,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_HowTo_AddHeaderButton_020.png)
 
@@ -42,7 +42,7 @@ Create a new data template in your XAML. For example, see the next declaration:
 
 #### __XAML__
 
-{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_1}}
+```XAML
 	<DataTemplate x:Key="TitleTemplate">
 	    <Grid>
 	        <Grid.ColumnDefinitions>
@@ -55,13 +55,13 @@ Create a new data template in your XAML. For example, see the next declaration:
 	                   Content="Float!" />
 	    </Grid>
 	</DataTemplate>
-{{endregion}}
+```
 
 Change your XAML declaration and set the __TitleTemplate__ property of the __RadPane__.
 
 #### __XAML__
 
-{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_2}}
+```XAML
 	<telerik:RadDocking.DocumentHost>
 	    <telerik:RadSplitContainer>
 	        <telerik:RadPaneGroup x:Name="radPaneGroup1">
@@ -71,7 +71,7 @@ Change your XAML declaration and set the __TitleTemplate__ property of the __Rad
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking.DocumentHost>
-{{endregion}}
+```
 
 Now you will get a result which is the same as the final one. The only difference is that when you click the button nothing will happen.
 
@@ -83,7 +83,7 @@ In order to add a behavior to the button, you should use the command mechanism. 
 
 #### __XAML__
 
-{{region xaml-raddocking-how-to-add-buttons-to-the-pane-headers_3}}
+```XAML
 	<DataTemplate x:Key="TitleTemplateCommand">
 	    <Grid>
 	        <Grid.ColumnDefinitions>
@@ -97,7 +97,7 @@ In order to add a behavior to the button, you should use the command mechanism. 
 	                   Content="Float!" />
 	    </Grid>
 	</DataTemplate>
-{{endregion}}
+```
 
 >This is the complete list of the exposed __RadDocking__ commands:
 >	* Close

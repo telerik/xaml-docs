@@ -22,10 +22,10 @@ The `RadSpreadsheetSheetSelector` control is located in the `Telerik.Windows.Con
 
 By default the sheet selector component is displayed. To hide it, set the `RadSpreadsheetSheetSelector.IsSheetSelectorVisible` [attached property](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-9.0) on the `RadSpreadsheet` control to `false`.
 
-#### __[XAML] Setting the IsSheetSelectorVisible property__
-{{region radspreadsheet-sheet-selector-0}}
+__Setting the IsSheetSelectorVisible property__
+```XAML
 	<telerik:RadSpreadsheet spreadsheetControls:RadSpreadsheetSheetSelector.IsSheetSelectorVisible="False"/>
-{{endregion}}
+```
 
 __RadSpreadsheet with hidden sheet selector__  
 
@@ -35,10 +35,10 @@ __RadSpreadsheet with hidden sheet selector__
 
 By default the sheet selector has a button displayed next to the worksheeet tabs that allows to add new worksheets in the document. To hide the button, set the `RadSpreadsheetSheetSelector.IsAddButtonVisible` [attached property](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-9.0) on the `RadSpreadsheet` control to `false`.
 
-#### __[XAML] Setting the IsAddButtonVisible property__
-{{region radspreadsheet-sheet-selector-1}}
+__Setting the IsAddButtonVisible property__
+```XAML
 	<telerik:RadSpreadsheet spreadsheetControls:RadSpreadsheetSheetSelector.IsAddButtonVisible="False"/>
-{{endregion}}
+```
 
 __RadSpreadsheet with hidden add button__  
 
@@ -54,8 +54,8 @@ __Sheet selector's context menu__
 
 The context menu can be modified or accessed via the `SheetSelectorContextMenu` property of `RadSpreadsheet`.
 
-#### __[C#] Customizing the existing context menu__
-{{region radspreadsheet-sheet-selector-1}}
+__Customizing the existing context menu__
+```C#
 	private void RadSpreadsheet_Loaded(object sender, RoutedEventArgs e)
 	{
 		var spreadsheet = (RadSpreadsheet)sender;
@@ -73,10 +73,10 @@ The context menu can be modified or accessed via the `SheetSelectorContextMenu` 
 		};
 		spreadsheet.SheetSelectorContextMenu.Items.Add(newMenuItem);
 	}
-{{endregion}}
+```
 
-#### __[XAML] Replacing the context menu__
-{{region radspreadsheet-sheet-selector-1}}
+__Replacing the context menu__
+```XAML
 	<telerik:RadSpreadsheet>
 		<telerik:RadSpreadsheet.SheetSelectorContextMenu>
 			<telerik:RadContextMenu>
@@ -85,12 +85,12 @@ The context menu can be modified or accessed via the `SheetSelectorContextMenu` 
 			</telerik:RadContextMenu>
 		</telerik:RadSpreadsheet.SheetSelectorContextMenu>
 	</telerik:RadSpreadsheet>
-{{endregion}}
+```
 
 Additional to that, the menu can be accessed with the `GetContextMenu` and `SetContextMenu` methods of `RadSpreadsheetSheetSelector`.
 
-#### __[C#] Using the GetContextMenu and SetContextMenu methods__
-{{region radspreadsheet-sheet-selector-1}}
+__Using the GetContextMenu and SetContextMenu methods__
+```C#
 	private void RadSpreadsheet_Loaded(object sender, RoutedEventArgs e)
 	{
 		var spreadsheet = (RadSpreadsheet)sender;
@@ -102,4 +102,4 @@ Additional to that, the menu can be accessed with the `GetContextMenu` and `SetC
 		// setting the menu
 		sheetSelector.SetContextMenu(newRadContextMenuInstance);
 	}
-{{endregion}}
+```

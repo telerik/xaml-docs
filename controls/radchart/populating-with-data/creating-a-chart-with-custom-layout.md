@@ -18,7 +18,7 @@ If, for example, you want to show the monthly sales of cars for the year 2009 on
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-creating-chart-declaratively_5}}
+```XAML
 	<telerik:RadChart UseDefaultLayout="False" Height="362" Width="1042" VerticalAlignment="Bottom">
 	    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,10,0,20">
 	        <Grid.RowDefinitions>
@@ -83,7 +83,7 @@ If, for example, you want to show the monthly sales of cars for the year 2009 on
 	                             Grid.Row="1" Grid.Column="2" />
 	    </Grid>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

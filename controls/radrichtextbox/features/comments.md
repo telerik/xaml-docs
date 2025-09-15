@@ -46,12 +46,12 @@ Here is an example usage of these commands:
 
 #### __XAML__
 
-{{region radrichtextbox-features-comments_0}}
+```XAML
     <telerik:RadButton Content="New Comment" 
                        Command="{Binding ElementName=radRichTextBox, Path=Commands.InsertCommentCommand}" />
     <CheckBox Content="Show Comments" 
               telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding ElementName=radRichTextBox, Path=Commands.ToggleCommentsCommand}" />
-{{endregion}}
+```
 
 
 
@@ -104,7 +104,7 @@ You can customize the looks of the comments by attaching to the __CommentShowing
 
 #### __C#__
 
-{{region radrichtextbox-features-comments_0}}
+```C#
     private void RadRichTexBox_CommentShowing(object sender, CommentShowingEventArgs e)
     {
         if (e.Comment.Author == "Boss")
@@ -120,7 +120,7 @@ You can customize the looks of the comments by attaching to the __CommentShowing
             e.AppearanceSettings.HighlightColor = Colors.LightGray;
         }
     }
-{{endregion}}
+```
 
 
 

@@ -16,9 +16,9 @@ The __RadPane__ can be styled by creating an appropriate __Style__ and setting i
 
 In order to style all __RadPane__ elements in a RadDocking, you should create a style targeting __RadPane__.
 
-#### __[XAML] Example 1: Creating an implicit style targeting RadPane__
+__Example 1: Creating an implicit style targeting RadPane__
 
-{{region xaml-raddocking-styling-the-radpane_0}}
+```XAML
 	<Application.Resources>
 		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 		<Style TargetType="telerik:RadPane" BasedOn="{StaticResource RadPaneStyle}">-->
@@ -40,7 +40,7 @@ In order to style all __RadPane__ elements in a RadDocking, you should create a 
             </telerik:RadSplitContainer>
         </telerik:RadDocking>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadPane with Red Background in the Office2016 theme__
 ![RadPane with Red Background](images/RadDocking_RadPane_Styling.png)

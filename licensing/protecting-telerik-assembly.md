@@ -60,8 +60,8 @@ The available scripts are:
 
 4. In your application resources **App.xaml** create a string resource with key __"Telerik.Windows.Controls.Key"__ and value equal to the value of the ApplicationName defined in **step 2**:
 
-#### __[XAML] Example 1: Merging the application key resource__ 	
-{{region protecting-telerik-radcontrols-assembly_5}}
+__Example 1: Merging the application key resource__ 	
+```XAML
 	<Application 
 	      xmlns="http://schemas.microsoft.com/client/2007"
 	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
@@ -71,7 +71,7 @@ The available scripts are:
 	            <system:String x:Key="Telerik.Windows.Controls.Key">Sample Application Name v2.0 (tm)</system:String>
 	        </Application.Resources>
 	</Application>
-{{endregion}}
+```
 
 ## Protect the Telerik Assemblies by Manually Editing the Source Code
 
@@ -85,35 +85,35 @@ __Instructions__
 
 2. Uncomment the following line:
 
-	#### __[C#] Example 2: Before the change__ 	
-	{{region protecting-telerik-radcontrols-assembly_0}}
+	__Example 2: Before the change__ 	
+	```C#
         public static void Validate()
 		{
 		    //Uncomment the following line
 		    //ValidatePassPhrase();
 		}
-	{{endregion}}
+	```
 	
-	#### __[C#] Example 3: After the change__ 		
-	{{region protecting-telerik-radcontrols-assembly_1}}
+	__Example 3: After the change__ 		
+	```C#
         public static void Validate()
 		{
 		    //Uncomment the following line
 		    ValidatePassPhrase();
 		}
-	{{endregion}}
+	```
 
 3. Change the **ApplicationName** constant to match the name of your application:
 
-	#### __[C#] Example 4: Before the change__ 		
-	{{region protecting-telerik-radcontrols-assembly_2}}
+	__Example 4: Before the change__ 		
+	```C#
 		internal const string ApplicationName = "MyApp";
-	{{endregion}}
+	```
 	
-	#### __[C#] Example 5: After the change__ 		
-	{{region protecting-telerik-radcontrols-assembly_3}}
+	__Example 5: After the change__ 		
+	```C#
 		internal const string ApplicationName = "Sample Application Name v2.0 (tm)";
-	{{endregion}}
+	```
 
 4. Save __AssemblyProtection.cs__ and rebuild the suite (described separately in the source code build instructions document).
             
@@ -123,8 +123,8 @@ __Instructions__
 
 7. In your application resources **App.xaml** create a string resource with key __"Telerik.Windows.Controls.Key"__ and value equal to the value of the ApplicationName constant from **step 3**:
 
-	#### __[XAML] Example 6: Merging the application key resource__ 	
-	{{region protecting-telerik-radcontrols-assembly_4}}
+	__Example 6: Merging the application key resource__ 	
+	```XAML
 		<Application 
 			  xmlns="http://schemas.microsoft.com/client/2007"
 			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
@@ -134,7 +134,7 @@ __Instructions__
 					<system:String x:Key="Telerik.Windows.Controls.Key">Sample Application Name v2.0 (tm)</system:String>
 				</Application.Resources>
 		</Application>
-	{{endregion}}
+	```
 
 <!-- -->
 
@@ -152,24 +152,24 @@ If you are building the assemblies needed for one of the components depending on
 
 2. Uncomment the following line:
             
-	#### __[C#] Example 7: Before the change__  
-	{{region protecting-telerik-radcontrols-assembly_6}}
+	__Example 7: Before the change__  
+	```C#
 		public static bool IsValid()
 		{
 			// Uncomment the following line
 			// return ValidatePassPhrase();
 			return true;
 		}
-	{{endregion}}
+	```
 
-	#### __[C#] Example 8: After the change__  
-	{{region protecting-telerik-radcontrols-assembly_7}}
+	__Example 8: After the change__  
+	```C#
 		public static bool IsValid()
 		{
 			// Uncomment the following line
 			return ValidatePassPhrase();
 		}
-	{{endregion}}
+	```
 
 <!-- -->
 

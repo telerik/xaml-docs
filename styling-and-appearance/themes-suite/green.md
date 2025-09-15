@@ -202,17 +202,17 @@ The general naming convention is: `GreenPalette.Palette.[name]Color` is responsi
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-green-theme-0}}
+__Setting palette colors__
+```C#
 	GreenPalette.Palette.AccentHighColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Theme Variation
 
 The Green theme comes with two built-in colro variations:
 
-#### __[C#] The ColorVariation enumeration that determines which color variation should be used__
-{{region cs-styling-appearance-green-theme-1}}
+__The ColorVariation enumeration that determines which color variation should be used__
+```C#
 	/// <summary>
 	/// Represents theme color variations.
 	/// </summary>
@@ -228,7 +228,7 @@ The Green theme comes with two built-in colro variations:
 		/// </summary>
 		Light
 	}
-{{endregion}}
+```
 
 >important The `Dark` color variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when choosing it. 
 
@@ -238,23 +238,21 @@ __Light and Dark color variations demonstrated with RadCalendar__
 
 You can switch between the color variations by calling the `LoadPreset` method as shown below:
 
-#### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-green-theme-2}}
+__Changing the color variation of the theme__
+```C#
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);	
 
 	//light color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light);
-{{endregion}}
-	
-#### __[VB.NET] Changing the color variation of the theme__
-{{region vb-styling-appearance-green-theme-0}}
+```
+```VB.NET
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
 
 	//light color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Light)
-{{endregion}}
+```
 
 ## Changing Font Properties
 
@@ -266,25 +264,23 @@ The FontSize and FontFamily properties are public so you can easily modify the t
 
 A list with all the available FontSize and FontFamily options with their default values follows:
 
-#### __[C#] Default FontFamily and FontSize values__
-{{region cs-styling-appearance-green-theme-3}}
+__Default FontFamily and FontSize values__
+```C#
 	GreenPalette.Palette.FontSizeXS = 10;
 	GreenPalette.Palette.FontSizeS = 11; 
 	GreenPalette.Palette.FontSize = 12;
 	GreenPalette.Palette.FontSizeL = 13;
 	GreenPalette.Palette.FontSizeXL = 14; 
 	GreenPalette.Palette.FontFamily = new FontFamily("Segoe UI");
-{{endregion}}
-	
-#### __[VB.NET] Default FontFamily and FontSize values__
-{{region vb-styling-appearance-green-theme-1}}
+```
+```VB.NET
 	GreenPalette.Palette.FontSizeXS = 10
 	GreenPalette.Palette.FontSizeS = 11
 	GreenPalette.Palette.FontSize = 12
 	GreenPalette.Palette.FontSizeL = 13
 	GreenPalette.Palette.FontSizeXL = 14
 	GreenPalette.Palette.FontFamily = New FontFamily("Segoe UI");
-{{endregion}}
+```
 
 More details regarding the rarely used font sizes can be found below:  
 * `GreenPalette.Palette.FontSizeXS` is used in: 
@@ -310,8 +306,8 @@ More details regarding the rarely used font sizes can be found below:
 
 As the following example shows, you can change the default FontFamily from "Segoe UI" to "Comic Sans MS" and the FontSize from __12__ to __14__ on a click of a button:
 
-#### __[XAML] The view of the example__
-{{region xaml-styling-appearance-green-theme-0}}
+__The view of the example__
+```XAML
 	<StackPanel> 
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/> 
 		 <telerik:RadButton x:Name="BtnChangeFontSize"
@@ -319,24 +315,22 @@ As the following example shows, you can change the default FontFamily from "Sego
 								   HorizontalAlignment="Center" VerticalAlignment="Center" 
 								   Click="OnButtonChangeFontSizeClick" />
 	</StackPanel>
-{{endregion}}
+```
 
-#### __[C#] Changing the FontSize and the FontFamily__
-{{region cs-styling-appearance-green-theme-4}}
+__Changing the FontSize and the FontFamily__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		GreenPalette.Palette.FontSize = 14;
 		GreenPalette.Palette.FontFamily = new FontFamily("Comic Sans MS");
 	}
-{{endregion}}
-
-#### __[VB.NET] Changing the FontSize and the FontFamily__	
-{{region vb-styling-appearance-green-theme-2}}
+```
+```VB.NET
 	Private Sub OnButtonChangeFontSizeClick(sender As Object, e As RoutedEventArgs)
 		GreenPalette.Palette.FontSize = 14
 		GreenPalette.Palette.FontFamily = New FontFamily("Comic Sans MS")
 	End Sub
-{{endregion}}
+```
 
 __Change in theme fonts__
 
@@ -346,26 +340,24 @@ __Change in theme fonts__
 
 The Green theme also exposes an easy way to modify the corner radius of many elements in your application. You can use the following properties which are shown below with their default values:
 
-#### __[C#] Default CornerRadius values__	
-{{region cs-styling-appearance-green-theme-5}}
+__Default CornerRadius values__	
+```C#
 	GreenPalette.Palette.CornerRadius = new CornerRadius(1, 1, 1, 1);
 	GreenPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 1, 1);
 	GreenPalette.Palette.CornerRadiusLeft = new CornerRadius(1, 0, 0, 1);
 	GreenPalette.Palette.CornerRadiusRight = new CornerRadius(0, 1, 1, 0);
 	GreenPalette.Palette.CornerRadiusTop = new CornerRadius(1, 1, 0, 0);
-{{endregion}}
-
-#### __[VB.NET] Default CornerRadius values__	
-{{region vb-styling-appearance-green-theme-3}}
+```
+```VB.NET
 	GreenPalette.Palette.CornerRadius = New CornerRadius(1, 1, 1, 1)
 	GreenPalette.Palette.CornerRadiusBottom = New CornerRadius(0, 0, 1, 1)
 	GreenPalette.Palette.CornerRadiusLeft = New CornerRadius(1, 0, 0, 1)
 	GreenPalette.Palette.CornerRadiusRight = New CornerRadius(0, 1, 1, 0)
 	GreenPalette.Palette.CornerRadiusTop = New CornerRadius(1, 1, 0, 0)
-{{endregion}}
+```
 
-#### __[XAML] The view of the example__	
-{{region xaml-styling-appearance-green-theme-1}}
+__The view of the example__	
+```XAML
 	<StackPanel>
 		 <telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
 		 <telerik:RadComboBox x:Name="ComboBoxChangeCornerRadius"
@@ -374,10 +366,10 @@ The Green theme also exposes an easy way to modify the corner radius of many ele
 							  SelectedIndex="1"
 							  HorizontalAlignment="Center" />
 	</StackPanel>
-{{endregion}}
+```
 
-#### __[C#] Changing the CornerRadius__	
-{{region cs-styling-appearance-green-theme-6}}
+__Changing the CornerRadius__	
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -397,10 +389,8 @@ The Green theme also exposes an easy way to modify the corner radius of many ele
 			GreenPalette.Palette.CornerRadiusTop = new CornerRadius(selectedValue, selectedValue, 0, 0); 
 		}
 	}
-{{endregion}}
-	
-#### __[VB.NET] Changing the CornerRadius__	
-{{region vb-styling-appearance-green-theme-4}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Me.CornerRadiusComboBox.ItemsSource = Enumerable.Range(0, 10)
@@ -417,7 +407,7 @@ The Green theme also exposes an easy way to modify the corner radius of many ele
 			GreenPalette.Palette.CornerRadiusTop = New CornerRadius(selectedValue, selectedValue, 0, 0)
 		End If
 	End Sub
-{{endregion}}
+```
 
 __Changes in corner radius__	
 
@@ -427,20 +417,18 @@ __Changes in corner radius__
 
 If you need to change the opacity of disabled elements, you can easily do it by using the `DisabledOpacity` property of the GreenPalette as follows: 
 
-#### __[XAML] The view of the opacity__	
-{{region xaml-styling-appearance-green-theme-2}}
+__The view of the opacity__	
+```XAML
 	<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10" IsEnabled="False"/>
-{{endregion}}
+```
 
-#### __[C#] Changing the DisabledOpacity__	
-{{region cs-styling-appearance-green-theme-7}}
+__Changing the DisabledOpacity__	
+```C#
 	GreenPalette.Palette.DisabledOpacity = 0.5;
-{{endregion}}
-	
-#### __[VB.NET] Changing the DisabledOpacity__	
-{{region vb-styling-appearance-green-theme-5}}
+```
+```VB.NET
 	GreenPalette.Palette.DisabledOpacity = 0.5
-{{endregion}}
+```
 	
 __Changes in the disabled elements opacity__
 
@@ -448,26 +436,24 @@ __Changes in the disabled elements opacity__
 	
 The same is applicable for the ReadOnly state of controls by using the exposed `ReadOnlyOpacity` property of GreenPalette. The default values are __0.2__ for the `DisabledOpacity` and __1__ for the `ReadOnlyOpacity` property. 
 
-#### __[XAML] The view of the example__		
-{{region xaml-styling-appearance-green-theme-3}}
+__The view of the example__		
+```XAML
 	<StackPanel Width="200" HorizontalAlignment="Center">
 		<TextBox Text="TextBox" Margin="5" />
 		<TextBox Text="Disabled TextBox" Margin="5" IsEnabled="False" />
 		<TextBox Text="ReadOnly TextBox" Margin="5" IsReadOnly="True" />
 	</StackPanel>
-{{endregion}}
+```
 
-#### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-green-theme-8}}
+__Changing the opacity__		
+```C#
 	GreenPalette.Palette.DisabledOpacity = 0.5;
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5;
-{{endregion}}
-	
-#### __[VB.NET] Changing the opacity__		
-{{region vb-styling-appearance-green-theme-6}}
+```
+```VB.NET
 	GreenPalette.Palette.DisabledOpacity = 0.5
 	GreenPalette.Palette.ReadOnlyOpacity = 0.5
-{{endregion}}
+```
 
 __Changes in the readonly elements opacity__
 
@@ -477,8 +463,8 @@ __Changes in the readonly elements opacity__
 
 When modifying fonts, colors, or other resources from the `GreenPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-green-theme-4}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -486,7 +472,7 @@ When modifying fonts, colors, or other resources from the `GreenPalette` and `St
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also
 * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

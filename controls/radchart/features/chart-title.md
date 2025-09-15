@@ -18,7 +18,7 @@ You can specify the content of the default __ChartTitle__ control from XAML or c
 
 #### __XAML__
 
-{{region xaml-radchart-features-chart-title_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -30,25 +30,25 @@ You can specify the content of the default __ChartTitle__ control from XAML or c
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radchart-features-chart-title_1}}
+```C#
 	this.radChart.DefaultView.ChartTitle.Content = "Monthly Sales for 2009";
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-features-chart-title_2}}
+```VB.NET
 	radChart.DefaultView.ChartTitle.Content = "Monthly Sales for 2009"
-{{endregion}}
+```
 
 Since __ChartTitle__ is a content control, you can set as its content not only textual data but also any other type of controls. The following example demonstrates how to create custom chart title with __TextBlock__ in a __Border__ control.
 
 #### __XAML__
 
-{{region xaml-radchart-features-chart-title_3}}
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -66,11 +66,11 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radchart-features-chart-title_4}}
+```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	//....
 	Border border = new Border();
@@ -79,11 +79,11 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 	border.BorderBrush = new SolidColorBrush(Color.FromArgb( 255, 173, 216, 230 ));
 	border.Child = new TextBlock(){ Text = "Monthly Sales for 2009" };
 	radChart.DefaultView.ChartTitle.Content = border;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-features-chart-title_5}}
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
 	Dim border As New Border()
@@ -93,7 +93,7 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 	border.Child = New TextBlock()
 	'Set the content of the ChartTitle'
 	radChart.DefaultView.ChartTitle.Content = border
-{{endregion}}
+```
 
 
 

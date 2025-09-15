@@ -20,8 +20,8 @@ Here is the result when the first page is displayed on the righ side of the book
 
 ![RadBook](images/book_step4.png)
 
-#### __[XAML] Example 1: Setting the FirstPagePosition property__  
-{{region xaml-radbook-show-first-page-on-the-right_0}}
+__Example 1: Setting the FirstPagePosition property__  
+```XAML
 	<telerik:RadBook x:Name="RadBook1" 
 	                    Margin="50"
 	                    FirstPagePosition="Right">
@@ -50,4 +50,4 @@ Here is the result when the first page is displayed on the righ side of the book
 	                    Text="Page 4" />
 	    </telerik:RadBookItem>
 	</telerik:RadBook>
-{{endregion}}
+```

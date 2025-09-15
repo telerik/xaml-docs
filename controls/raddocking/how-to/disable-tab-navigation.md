@@ -18,9 +18,9 @@ With R2 2016 of UI for WPF, we introduced a way to easily disable the tab naviga
 
 Let’s, for example, have a simple RadDocking definition as shown in __Example 1__.
 
-#### __[XAML] Example 1: Simple RadDocking definition__
+__Example 1: Simple RadDocking definition__
 
-{{region xaml-raddocking-how-to-disable-tab-navigation_0}}
+```XAML
 	<telerik:RadDocking Width="240" Height="200">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -32,7 +32,7 @@ Let’s, for example, have a simple RadDocking definition as shown in __Example 
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 In the example, when RadDocking receives the focus, a user needs to push the Tab key several times in order to navigate to the TextBox inside the pane as shown in __Figure 1__.   
 
@@ -41,9 +41,9 @@ In the example, when RadDocking receives the focus, a user needs to push the Tab
 
 In order to change this behavior, you will need to set the __IsTabStop__ property to __False__ for some elements inside __RadDocking__. You can use Styles targeting these elements added inside App.xaml.
 
-#### __[XAML] Example 2: Applying IsTabStop through the Styles of RadDocking elements__
+__Example 2: Applying IsTabStop through the Styles of RadDocking elements__
 
-{{region xaml-raddocking-how-to-disable-tab-navigation_1}}
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -67,7 +67,7 @@ In order to change this behavior, you will need to set the __IsTabStop__ propert
 	        </Style>
 	    </ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >__Example 2__ uses the Office_Black theme, however, the approach is applicable for all themes.
 

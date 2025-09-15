@@ -33,8 +33,8 @@ It only takes a few simple steps to use the tool.
 
 6. Paste the palette settings code in your application. The recommended place for this code is in the App class. Or anywhere before the InitializeComponent call of the main window or user control.
 
-	#### __[C#] Example 1: Adding the copied settings in the application__
-	{{region common-styling-color-theme-generator-0}}
+	__Example 1: Adding the copied settings in the application__
+	```C#
 		public MainWindow()
 		{
 			FluentPalette.Palette.AccentColor = (Color)ColorConverter.ConvertFromString("#FF0099BC");
@@ -64,7 +64,7 @@ It only takes a few simple steps to use the tool.
 	
 			InitializeComponent();
 		}
-	{{endregion}}
+	```
 
 To reset the default colors of the application, click the **Reset All Settings** button.
 

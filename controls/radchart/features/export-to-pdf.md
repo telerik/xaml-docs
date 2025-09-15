@@ -30,7 +30,7 @@ The following code creates the Chart part of the PDF document:
 
 #### __C#__
 
-{{region cs-radchart-features-export-to-pdf_0}}
+```C#
 	Telerik.Windows.Documents.Model.Section section = new Telerik.Windows.Documents.Model.Section();
 	Telerik.Windows.Documents.Model.Paragraph paragraph = new Telerik.Windows.Documents.Model.Paragraph();
 	BitmapImage bi = new BitmapImage();
@@ -49,13 +49,13 @@ The following code creates the Chart part of the PDF document:
 	   paragraph.Inlines.Add(image);
 	   section.Blocks.Add(paragraph);
 	   document.Sections.Add(section);
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-export-to-pdf_1}}
+```VB.NET
 	Dim section As New Telerik.Windows.Documents.Model.Section()
 	Dim paragraph As New Telerik.Windows.Documents.Model.Paragraph()
 	Dim bi As New BitmapImage()
@@ -75,7 +75,7 @@ The following code creates the Chart part of the PDF document:
 	}
 	paragraph.Inlines.Add(image)
 	section.Blocks.Add(paragraph)
-{{endregion}}
+```
 
 
 As for the grid part of the constructed document – all you need to do is create a second __Section__ element and construct __Table__ with the respective __TableRow__/ __TableCell__ elements. We will not go into details as you may find them as well as the source listing in this [online example](https://demos.telerik.com/silverlight/#GridView/PrintAndExportWithRadDocument) and this blog post [here](http://blogs.telerik.com/vladimirenchev/posts/10-11-11/pdf_export_with_radgridview_for_silverlight_q3_2010.aspx).
@@ -84,7 +84,7 @@ Now that the document model is ready, you can add a Button that will function as
 
 #### __C#__
 
-{{region cs-radchart-features-export-to-pdf_4}}
+```C#
 	private void Export_Click(object sender, System.Windows.RoutedEventArgs e)
 	        {
 	            SaveFileDialog dialog = new SaveFileDialog();
@@ -109,13 +109,13 @@ Now that the document model is ready, you can add a Button that will function as
 	                }
 	            }
 	        }
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-export-to-pdf_5}}
+```VB.NET
 	Private Sub Export_Click(sender As Object, e As System.Windows.RoutedEventArgs)
 	    Dim dialog As New SaveFileDialog()
 	    dialog.DefaultExt = "*.pdf"
@@ -136,5 +136,5 @@ Now that the document model is ready, you can add a Button that will function as
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 

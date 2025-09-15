@@ -28,7 +28,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region cs-radchart-howto-integration-radcontextmenu-wpf_0}}
+```C#
 	public class MenuItem : INotifyPropertyChanged
 	{
 	    private bool isChecked;
@@ -203,13 +203,13 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-integration-radcontextmenu-wpf_1}}
+```VB.NET
 	Public Class MenuItem
 	    Implements INotifyPropertyChanged
 	
@@ -355,7 +355,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	
 	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 
 
@@ -363,7 +363,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region cs-radchart-howto-integration-radcontextmenu-wpf_2}}
+```C#
 	public class MenuItemsCollection : ObservableCollection<MenuItem>
 	{
 	    private MenuItem parent;
@@ -392,13 +392,13 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        base.InsertItem( index, item );
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-integration-radcontextmenu-wpf_3}}
+```VB.NET
 	Public Class MenuItemsCollection
 	    Inherits ObservableCollection(Of MenuItem)
 	    Private m_parent As MenuItem
@@ -425,7 +425,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        MyBase.InsertItem(index, item)
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 
 
@@ -433,7 +433,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region cs-radchart-howto-integration-radcontextmenu-wpf_4}}
+```C#
 	public class ChartDataItem : INotifyPropertyChanged
 	{
 	    private double yValue;
@@ -473,13 +473,13 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-integration-radcontextmenu-wpf_5}}
+```VB.NET
 	Public Class ChartDataItem
 	    Implements INotifyPropertyChanged
 	    Private m_yValue As Double
@@ -513,7 +513,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	
 	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 
 
@@ -521,21 +521,21 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region cs-radchart-howto-integration-radcontextmenu-wpf_6}}
+```C#
 	public class ChartDataCollection : ObservableCollection<ChartDataItem>
 	{
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-integration-radcontextmenu-wpf_7}}
+```VB.NET
 	Public Class ChartDataCollection
 	    Inherits ObservableCollection(Of ChartDataItem)
 	End Class
-{{endregion}}
+```
 
 
 
@@ -543,7 +543,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __C#__
 
-{{region cs-radchart-howto-integration-radcontextmenu-wpf_8}}
+```C#
 	public class ChartViewModel
 	{
 	    private Random rand = new Random( DateTime.Now.Millisecond );
@@ -576,13 +576,13 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        return item;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-integration-radcontextmenu-wpf_9}}
+```VB.NET
 	Public Class ChartViewModel
 	    Private rand As New Random(DateTime.Now.Millisecond)
 	    Private m_data As ChartDataCollection
@@ -612,7 +612,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        Return item
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
@@ -620,7 +620,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 #### __XAML__
 
-{{region xaml-radchart-howto-integration-radcontextmenu-wpf_10}}
+```XAML
 	<Style x:Key="CustomStyle"
 	       TargetType="telerik:Bar">
 	    <Setter Property="Template">
@@ -676,7 +676,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
@@ -692,7 +692,7 @@ The code snippet below shows you the full XAML code:
 
 #### __XAML__
 
-{{region xaml-radchart-howto-integration-radcontextmenu-wpf_11}}
+```XAML
 	<Grid>
 	    <Grid.Resources>
 	        <HierarchicalDataTemplate x:Key="MenuItemTemplate"
@@ -788,7 +788,7 @@ The code snippet below shows you the full XAML code:
 	        </telerik:RadChart.SeriesMappings>
 	    </telerik:RadChart>
 	</Grid>
-{{endregion}}
+```
 
 
 
@@ -796,7 +796,7 @@ The code snippet below shows you the full XAML code:
 
 #### __XAML__
 
-{{region xaml-radchart-howto-integration-radcontextmenu-wpf_12}}
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	   ItemsSource="{Binding Data}">
 	    <telerik:RadChart.SeriesMappings>
@@ -811,13 +811,13 @@ The code snippet below shows you the full XAML code:
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-howto-integration-radcontextmenu-wpf_13}}
+```C#
 	public void SetDataContex()
 	{
 	    this.DataContext = new ChartViewModel();
@@ -831,17 +831,17 @@ The code snippet below shows you the full XAML code:
 	        //...
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-integration-radcontextmenu-wpf_14}}
+```VB.NET
 	Dim menu As RadContextMenu = CType(sender, RadContextMenu)
 	Dim clickedBar As Bar = menu.GetClickedElement(Of Bar)()
 	Dim clickedBarYValue As Double = clickedBar.DataPoint.YValue
-{{endregion}}
+```
 
 
 

@@ -32,17 +32,17 @@ When a __RadDocument__ instance was for some reason created from code – built 
 
 #### __C#__
 
-{{region radrichtextbox-features-raddocumenteditor_0}}
+```C#
 	RadDocumentEditor documentEditor = new RadDocumentEditor(document);
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region radrichtextbox-features-raddocumenteditor_0}}
+```VB.NET
 	Dim documentEditor As New RadDocumentEditor(document)
-{{endregion}}
+```
 
 
 
@@ -51,7 +51,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 
 #### __C#__
 
-{{region radrichtextbox-features-raddocumenteditor_1}}
+```C#
 	documentEditor.BeginUndoGroup();
 
 	if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
@@ -63,13 +63,13 @@ The newly created *documentEditor* instance now provides all capabilities that a
 	}
 	
 	documentEditor.EndUndoGroup("Insert three table rows");
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region radrichtextbox-features-raddocumenteditor_1}}
+```VB.NET
 	documentEditor.BeginUndoGroup()
 	
 	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
@@ -80,7 +80,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 	End If
 	
 	documentEditor.EndUndoGroup("Insert three table rows")
-{{endregion}}
+```
 
 
 
@@ -88,7 +88,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 #### __C#__
 
-{{region radrichtextbox-features-raddocumenteditor_2}}
+```C#
 	documentEditor.BeginUndoGroup();
 
 	if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
@@ -100,13 +100,13 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 	}
 	
 	documentEditor.CancelUndoGroup();
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region radrichtextbox-features-raddocumenteditor_2}}
+```VB.NET
 	documentEditor.BeginUndoGroup()
 	
 	If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
@@ -117,7 +117,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 	End If
 	
 	documentEditor.CancelUndoGroup()
-{{endregion}}
+```
 
 
 

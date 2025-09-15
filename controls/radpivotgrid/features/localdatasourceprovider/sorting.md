@@ -40,15 +40,15 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 
 #### __XAML__
 
-{{region radpivotgrid-features-sort_1}}
+```XAML
 	<pivot:PropertyGroupDescription PropertyName="Name" SortOrder="Descending"/>
 	<pivot:DoubleGroupDescription PropertyName="Price" SortOrder="Ascending"/>
 	<pivot:DateTimeGroupDescription PropertyName="Date" SortOrder="Descending"/>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-sort_1}}
+```C#
 	Telerik.Pivot.Core.PropertyGroupDescription propGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
 	propGroupDescription.PropertyName = "Name";
 	propGroupDescription.SortOrder = SortOrder.Descending;
@@ -60,11 +60,11 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.SortOrder = SortOrder.Descending;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-sort_1}}
+```VB.NET
 	Dim propGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propGroupDescription.PropertyName = "Name"
 	propGroupDescription.SortOrder = SortOrder.Descending
@@ -76,21 +76,21 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"
 	dateTimeGroupDescription.SortOrder = SortOrder.Descending
-{{endregion}}
+```
 
 * If you need to avoid the data to be sorted anyhow, you can set the __SortOrder__ property to __None__. This way the data will appear the way it is was received from the data source:            
 
 #### __XAML__
 
-{{region radpivotgrid-features-sort_4}}
+```XAML
 	<pivot:PropertyGroupDescription PropertyName="Name" SortOrder="None"/>
 	<pivot:DoubleGroupDescription PropertyName="Price" SortOrder="None"/>
 	<pivot:DateTimeGroupDescription PropertyName="Date" SortOrder="None"/>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-sort_4}}
+```C#
 	Telerik.Pivot.Core.PropertyGroupDescription propGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
 	propGroupDescription.PropertyName = "Name";
 	propGroupDescription.SortOrder = SortOrder.None;
@@ -102,11 +102,11 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.SortOrder = SortOrder.None;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-sort_4}}
+```VB.NET
 	Dim propGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propGroupDescription.PropertyName = "Name"
 	propGroupDescription.SortOrder = SortOrder.None
@@ -118,7 +118,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"
 	dateTimeGroupDescription.SortOrder = SortOrder.None
-{{endregion}}
+```
 
 >Note that the __SortOrder None__ property is available with the __Q1 2014 SP1__ version of Telerik UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}.              
 
@@ -126,7 +126,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 
 #### __XAML__
 
-{{region radpivotgrid-features-sort_2}}
+```XAML
 	<pivot:PropertyGroupDescription PropertyName="Name" SortOrder="Ascending">
 	    <pivot:PropertyGroupDescription.GroupComparer>
 	        <pivot:GrandTotalComparer AggregateIndex="0"/>
@@ -144,11 +144,11 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	        <pivot:GrandTotalComparer AggregateIndex="0"/>
 	    </pivot:DateTimeGroupDescription.GroupComparer>
 	</pivot:DateTimeGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-sort_2}}
+```C#
 	Telerik.Pivot.Core.PropertyGroupDescription propGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
 	propGroupDescription.PropertyName = "Name";
 	propGroupDescription.SortOrder = SortOrder.Descending;
@@ -163,11 +163,11 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.SortOrder = SortOrder.Descending;
 	dateTimeGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-sort_2}}
+```VB.NET
 	Dim propGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propGroupDescription.PropertyName = "Name"
 	propGroupDescription.SortOrder = SortOrder.Descending
@@ -182,7 +182,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	dateTimeGroupDescription.PropertyName = "Date"
 	dateTimeGroupDescription.SortOrder = SortOrder.Descending
 	dateTimeGroupDescription.GroupComparer = New GrandTotalComparer() With {.AggregateIndex = 0}
-{{endregion}}
+```
 
 >The __AggregateIndex__ property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have __AggregateIndex = 0__ and the second - __AggregateIndex = 1__.              
 

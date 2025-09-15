@@ -22,9 +22,9 @@ You do this by using the __IsBusyIndicationVisible__ boolean property. Its value
 
 Here is an example of this additional behavior that you will need:
 
-#### __[C#] Declaring the AttachedProperty__
+__Declaring the AttachedProperty__
 
-{{region cs-radbusyindicator-how-to-restore-the-focus_0}}
+```C#
 	public class FocusHelper
 	{
 	    private static void OnEnsureFocusChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -56,19 +56,19 @@ Here is an example of this additional behavior that you will need:
 			typeof(FocusHelper), 
 			new PropertyMetadata(OnEnsureFocusChanged));
 	}
-{{endregion}}
+```
 
 In the definition of the content element you will have to include the new behavior.
 
-#### __[XAML] Define the new behavior inside the content__
+__Define the new behavior inside the content__
 
-{{region xaml-radbusyindicator-how-to-restore-the-focus_1}}
+```XAML
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator">                          
 	    <Grid>
 	        <TextBox example:FocusHelper.EnsureFocus="{Binding IsBusyIndicationVisible, ElementName=radBusyIndicator}"/>
 	    </Grid>
 	</telerik:RadBusyIndicator>
-{{endregion}}
+```
 
 ## Restoring the Focus to the Last Focused Control
 
@@ -79,9 +79,9 @@ The next example shows how to save the last focused Control and reset its focus 
 
 1. First we will need to create a sample layout and set the __RadBusyIndicator__:            
 
-	#### __[XAML] Sample layout declaration__
+	__Sample layout declaration__
 
-	{{region xaml-radbusyindicator-how-to-restore-the-focus_2}}
+	```XAML
 		<Border BorderBrush="Black" 
 				BorderThickness="2" 
 				Height="200" Width="220"
@@ -99,21 +99,21 @@ The next example shows how to save the last focused Control and reset its focus 
 				</StackPanel>
 			</telerik:RadBusyIndicator>
 		</Border>
-	{{endregion}}
+	```
 
 2. Next we will need to create a property for the focused control to be save to in the code behind or the ViewModel:            
 
-	#### __[C#] Property declaration__
+	__Property declaration__
 
-	{{region cs-radbusyindicator-how-to-restore-the-focus_1}}
+	```C#
 		private Control focusedElement { get; set; }
-	{{endregion}}
+	```
 
 3. Create an set the DispatcherTimer that will enable and disable the BusyIndicator control:
 
-	#### __[C#] Set the DispatcherTimer__
+	__Set the DispatcherTimer__
 
-	{{region cs-radbusyindicator-how-to-restore-the-focus_2}}
+	```C#
 		private DispatcherTimer dispatcherTimer { get; set; }
 		
 		public Example()
@@ -148,7 +148,7 @@ The next example shows how to save the last focused Control and reset its focus 
 			this.focusedElement.Focus();
 			this.focusedElement.IsEnabledChanged -= focusedElement_IsEnabledChanged;
 		}
-	{{endregion}}
+	```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/BusyIndicator/RestoreFocus).
 

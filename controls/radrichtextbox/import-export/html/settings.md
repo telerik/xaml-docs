@@ -47,8 +47,8 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 	* __Inline__: Inline properties of document elements using style attribute.	
 * __Title__: A property of type __string__ that allows you to set a Title to the generated HTML file. 
 
-#### __[C#] Example 1: Exclude properties__
-{{region c#-radrichtextbox-import-export-html-settings_0}}
+__Example 1: Exclude properties__
+```C#
 
 	HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
 	htmlExportSettings.PropertiesToIgnore["span"].Add("color");
@@ -82,7 +82,7 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 	htmlExportSettings.PropertiesToIgnore["td"].Add("border-right");
 	htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
 	htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
-{{endregion}}
+```
 
 
 >important **Microsoft Office** does not support HTML that has multiple CSS class selectors applied on a single element. As we are aiming for compliance with the HTML standard, this syntax should be supported in RadDocument. In order to generate HTML that is compliant with MS Office, please use the **StylesExportMode.Inline** setting of HtmlExportSettings.
@@ -99,15 +99,15 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 * __ImageExporting__: This event is fired only when the respective option of ImageExportMode is applied.
 * __InlineUIContainerExporting__: This event is fired on every attempt to export an __InlineUIContainer__. For more information, please refer to the article about InlineUIContainers.
 		
-#### __[C#] Example 2: Setting the ExportSettings of the HtmlFormatProvider__
-{{region c#-radrichtextbox-import-export-html-settings_1}}
+__Example 2: Setting the ExportSettings of the HtmlFormatProvider__
+```C#
 	HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
 	htmlExportSettings.ExportBoldAsStrong = true;
 	htmlExportSettings.SpanExportMode = SpanExportMode.AlwaysExport;
 	
 	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
 	htmlFormatProvider.ExportSettings = htmlExportSettings;
-{{endregion}}
+```
 
 ## Import Settings
 
@@ -129,14 +129,14 @@ With the 2024 Q2 (2024.3.924) release the `HtmlImportSettings` class now inherit
 * __InlineUIContainerImporting__: This event is fired on every attempt to import a __InlineUIContainer__.
 * __LoadImageFromUrl__: This event was introduced at a time when __HtmlFormatProvider__ did not automatically load images from URLs. The feature is currently supported out of the box, but this event can be useful if using virtual directories and files on the server.
 
-#### __[C#] Example 3: Setting the ImportSettings of the HtmlFormatProvider__
-{{region c#-radrichtextbox-import-export-html-settings_2}}
+__Example 3: Setting the ImportSettings of the HtmlFormatProvider__
+```C#
 	HtmlImportSettings htmlImportSettings = new HtmlImportSettings();
 	htmlImportSettings.UseDefaultStylesheetForFontProperties = true;	
 	
 	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
 	htmlFormatProvider.ImportSettings = htmlImportSettings;
-{{endregion}}
+```
 
 ## See Also
 

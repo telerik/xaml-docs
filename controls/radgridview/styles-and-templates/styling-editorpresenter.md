@@ -16,14 +16,14 @@ If you want to change the appearance of a cell when it enters edit mode, you sho
 
 >You could also learn how to extract control templates in the [following article]({%slug styling-apperance-editing-control-templates%}).
 
-#### __[XAML] Example 1: Styling the GridViewEditorPresenter__
+__Example 1: Styling the GridViewEditorPresenter__
 
-	{{region xaml-gridview-styling-editorpresenter_1}}
+	```XAML
 		<Style TargetType="{x:Type telerik:GridViewEditorPresenter}">
 		    <Setter Property="Template" Value="{StaticResource GridViewEditorPresenterTemplate}"/>
 		    <Setter Property="Padding" Value="5"/>
 		</Style>
-	{{endregion}}
+	```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewEditorPresenterStyle__.
 

@@ -32,8 +32,8 @@ How to resize RadDiagramShape below the minimum size of 15px.
 
 Set the __DiagramConstants.MinimumShapeSize__ and __DiagramConstants.MinimumAdornerSize__ properties.
 
-#### __[C#]__
-{{region kb-diagram-change-shape-minimum-size-0}}
+
+```C#
 	public MainWindow()
 	{
 		DiagramConstants.MinimumAdornerSize = 3;
@@ -41,4 +41,4 @@ Set the __DiagramConstants.MinimumShapeSize__ and __DiagramConstants.MinimumAdor
 		
 		InitializeComponent();
 	}
-{{endregion}}
+```

@@ -22,19 +22,19 @@ This allows you to implement virtually any behavior you want within your tool an
 
 1. __Create your tool.__<br/>Create a WatermarkTool class which implements the __ITool__ interface. The interface contains four properties and six methods which you need to implement.
 
-	#### __[C#] Example 1: Create a tool__
+	__Example 1: Create a tool__
 	
-	{{region cs-radimageeditor-howto-custom-tool_0}}
+	```C#
 		public class WatermarkTool : ITool
-	{{endregion}}
+	```
 
 
 1. __Create a command.__<br/>The public IImageCommand GetCommand() method requires you to return a command linked with the tool. Create a custom command which implements the __IImageCommand__ interface and a field of the command's type in the WatermarkTool class.
             
 
-	#### __[C#] Example 2: Create Command__
+	__Example 2: Create Command__
 	
-	{{region cs-radimageeditor-howto-custom-tool_1}}
+	```C#
 		private WatermarkCommand watermarkCommand;
 		public class WatermarkCommand : IImageCommand
 		{
@@ -73,7 +73,7 @@ This allows you to implement virtually any behavior you want within your tool an
 		        return new RadBitmap(source.Width, source.Height, grid);
 		    }
 		}
-	{{endregion}}
+	```
 
 
 
@@ -82,9 +82,9 @@ This allows you to implement virtually any behavior you want within your tool an
 1. __Create command context.__<br/>Create context for your custom command. In this case we will take into account the Opacity, Rotation, Scale and Image properties.
             
 	
-	#### __[C#] Example 3: Create Command Context__
+	__Example 3: Create Command Context__
 	
-	{{region cs-radimageeditor-howto-custom-tool_2}}
+	```C#
 		public class WatermarkCommandContext
 		{
 		    public double Opacity { get; private set; }
@@ -99,7 +99,7 @@ This allows you to implement virtually any behavior you want within your tool an
 		        this.Image = image;
 		    }
 		}
-	{{endregion}}
+	```
 	
 	The context is also used in the public object GetContext() method in your tool.
 	            
@@ -109,9 +109,9 @@ This allows you to implement virtually any behavior you want within your tool an
 	>tip__ToolSettingsHeader__ is a content control located in the Telerik.Windows.Controls.ImageEditor assembly.
 	              
 	
-	#### __[XAML] Example 4: Create Custom Tool Settings__
+	__Example 4: Create Custom Tool Settings__
 	
-	{{region xaml-radimageeditor-howto-custom-tool_3 }}
+	```XAML
 		<toolSettingsHeader:ToolSettingsHeader 
 		                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -140,13 +140,13 @@ This allows you to implement virtually any behavior you want within your tool an
 		        <telerik:NumericPropertyEditor PropertyName="Scale" x:Name="scale" MinimumValue="0.1" MaximumValue="5" Grid.Row="4" Grid.ColumnSpan="2" Margin="5" />
 		    </Grid>
 		</toolSettingsHeader:ToolSettingsHeader>
-	{{endregion}}
+	```
 	
 	
 	
-	#### __[C#] Example 5: Interaction logic for tool settings__
+	__Example 5: Interaction logic for tool settings__
 	
-	{{region cs-radimageeditor-howto-custom-tool_4}}
+	```C#
 		public partial class WatermarkToolSettings : ToolSettingsHeader
 		{
 		    public WatermarkToolSettings()
@@ -157,16 +157,16 @@ This allows you to implement virtually any behavior you want within your tool an
 		        this.rotation.Value = WatermarkTool.DefaultRotation;
 		    }
 		    //...
-	{{endregion}}
+	```
 
 
 
 1. Implement the __AttachUI()__, __DetachUI()__ and __ResetSettings()__ methods.
 	            
 	
-	#### __[C#] Example 6: Implement UI settings related methods__
+	__Example 6: Implement UI settings related methods__
 	
-	{{region cs-radimageeditor-howto-custom-tool_5}}
+	```C#
 		public void AttachUI(ToolInitInfo previewInitInfo)
 		{
 		    this.currnetEditor = previewInitInfo.ImageEditor;
@@ -191,7 +191,7 @@ This allows you to implement virtually any behavior you want within your tool an
 		    this.settings.rotation.Value = DefaultRotation;
 		    this.settings.scale.Value = DefaultScale;
 		}
-	{{endregion}}
+	```
 	
 	
 	

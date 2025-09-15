@@ -18,7 +18,7 @@ Firstly, we define ListBox and bind it to sample data. We also allow dropping to
 
 #### __XAML__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_0}}
+```XAML
 	<ListBox Grid.Column="1" x:Name="SampleListBox" AllowDrop="True" Background="WhiteSmoke">
 	   <ListBox.Resources>
 	        <Style TargetType="ListBoxItem">
@@ -26,25 +26,25 @@ Firstly, we define ListBox and bind it to sample data. We also allow dropping to
 	        </Style>
 	   </ListBox.Resources>
 	</ListBox>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_1}}
+```C#
 	SampleListBox.ItemsSource = new ObservableCollection<Appointment>();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_2}}
+```VB.NET
 	SampleListBox.ItemsSource = New ObservableCollection(Of Appointment)()
-{{endregion}}
+```
 
 Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handlers to initialize and perform the drag and drop process in the ListBox. We need DragDropCompleted to handle removing the items when item is dragged from ListBox. Also we use DragOver handler to disable drop over the ListBox when drag has started from the same LisBox:
 
 #### __C#__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_3}}
+```C#
 	DragDropManager.AddDragInitializeHandler(SampleListBox, OnDragInitialize);
 	DragDropManager.AddDragOverHandler(SampleListBox, OnListDragOver);
 	DragDropManager.AddDragDropCompletedHandler(SampleListBox, OnDragDropComplete);
@@ -92,11 +92,11 @@ Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handl
 	    }
 	    args.Handled = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_4}}
+```VB.NET
 	DragDropManager.AddDragInitializeHandler(Me, New DragInitializeEventHandler(AddressOf OnDragInitialized))           
 	DragDropManager.AddDragOverHandler(Me, New Telerik.Windows.DragDrop.DragEventHandler(AddressOf OnListDragOver))
 	DragDropManager.AddDragDropCompletedHandler(Me, New DragDropCompletedEventHandler(AddressOf(DragDropComplete))
@@ -138,37 +138,37 @@ Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handl
 	 End If
 	 args.Handled = True
 	End Sub
-{{endregion}}
+```
 
 Finally, we add a ScheduleView and bind it to a sample data:
 
 #### __XAML__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_5}}
+```XAML
 	<telerik:RadScheduleView x:Name="ScheduleView">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	         <telerik:MonthViewDefinition />
 	    </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_6}}
+```C#
 	ScheduleView.AppointmentsSource = new ObservableCollection<Appointment>(
 	                from c in Enumerable.Range(0, 10)
 	                select new Appointment { Start = DateTime.Now.AddDays(c % 5), End = DateTime.Now.AddDays(c % 5).AddHours(2), Subject = "Event " + c });
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region dragdropmanager_-howto-drag-between-RadScheduleView-and-ListBox_7}}
+```VB.NET
 	ScheduleView.AppointmentsSource = New ObservableCollection(Of Appointment)(From c In Enumerable.Range(0, 10)New Appointment() With { _
 	 Key .Start = DateTime.Now.AddDays(c Mod 5), _
 	 Key .[End] = DateTime.Now.AddDays(c Mod 5).AddHours(2), _
 	 Key .Subject = "Event " & Convert.ToString(c) _
 	})
-{{endregion}}
+```
 
 The resultant application should look as follows:
 

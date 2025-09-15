@@ -12,9 +12,9 @@ position: 8
 
 By handling the [ElementExportingToDocument]({%slug gridview-export-events%}#elementexportingtodocument) of the RadGridView control, you can specify a custom format for the exported group header cells. For example, you can export the captions of the aggregate results with their formatted value (based on the [ResultFormatString]({%slug gridview-columns-aggregate-functions%}#resultformatstring) of the function) as well as the number of items in the group.
 
-#### __[C#] Example 1: Custom Group Header Cell Export Content__
+__Example 1: Custom Group Header Cell Export Content__
 
-{{region cs-gridview-export-group-header-cell-content-1}}
+```C#
     private void Grid_ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
     {
         if (e.Element == ExportElement.GroupHeaderCell)
@@ -29,11 +29,8 @@ By handling the [ElementExportingToDocument]({%slug gridview-export-events%}#ele
             e.Value = value;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Custom Group Header Cell Export Content__
-
-{{region vb-gridview-export-group-header-cell-content-1}}
+```
+```VB.NET
 	Private Sub Grid_ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewElementExportingToDocumentEventArgs)
 		If e.Element = ExportElement.GroupHeaderCell Then
 			Dim group = TryCast(e.DataContext, QueryableCollectionViewGroup)
@@ -45,7 +42,7 @@ By handling the [ElementExportingToDocument]({%slug gridview-export-events%}#ele
 			e.Value = value
 		End If
 	End Sub
-{{endregion}}
+```
 
 {% figure 1, "Custom Group Header Cell Export Content", "format-groupheadercell-result.png" %}
 

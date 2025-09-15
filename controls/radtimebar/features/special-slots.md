@@ -15,7 +15,7 @@ __RadTimeBar__ provides an easy way to mark certain intervals along the visible
 Below you can find a sample weekends generator implementation:
         
 #### __C#__	
-{{region radtimebar-features-special-slots-0}}
+```C#
 	using Telerik.Windows.Controls;
 	using Telerik.Windows.Controls.TimeBar;
 
@@ -33,10 +33,10 @@ Below you can find a sample weekends generator implementation:
 		  }
 	  }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__		
-{{region radtimebar-features-special-slots-1}}
+```VB.NET
 	Imports Telerik.Windows.Controls
 	Imports Telerik.Windows.Controls.TimeBar
 
@@ -54,12 +54,12 @@ Below you can find a sample weekends generator implementation:
 		  End While
 	  End Function
 	End Class
-{{endregion}}
+```
 
 Using the __SpecialSlotsGenerator__ property of the __RadTimeBar__ control you can specify a custom __ITimeRangeGenerator__ instance that defines certain time intervals as special. The example below shows how you can specify a time range generator for a __RadTimeBar__ control:
 
 #### __XAML__	
-{{region radtimebar-features-special-slots-2}}
+```XAML
 	<telerik:RadTimeBar PeriodStart="1-Jan-2010" PeriodEnd="1-Jan-2011">
 		<telerik:RadTimeBar.SpecialSlotsGenerator>
 			<example:WeekendsGenerator />
@@ -69,7 +69,7 @@ Using the __SpecialSlotsGenerator__ property of the __RadTimeBar__ control you c
 			<telerik:DayInterval />
 		</telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-{{endregion}}
+```
 
 Using the sample weekends generator above, you will get the following result:
 ![Rad Timebar-features-special-slots](images/RadTimebar-features-special-slots.jpg)

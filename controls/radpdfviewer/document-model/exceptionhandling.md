@@ -30,7 +30,7 @@ This is an example how to subscribe the event and handle the exception if there 
 
 #### __C#__
 
-{{region radpdfviewer-document-model-exceptionhandling_0}}
+```C#
 	        private void LoadFromUri(object sender, System.Windows.RoutedEventArgs e)
 	        {
 	            this.pdfViewer.DocumentSource = new PdfDocumentSource(new System.Uri("PdfViewerDemo;component/SampleData/Sample.pdf", System.UriKind.Relative));
@@ -45,7 +45,7 @@ This is an example how to subscribe the event and handle the exception if there 
 	                // The document contains a filter which is not supported.
 	            }
 	        }
-{{endregion}}
+```
 
 
 

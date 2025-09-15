@@ -20,12 +20,12 @@ One can create a __TextPostion__ for a particular document, page and index using
 
 #### __C#__
 
-{{region radpdfviewer-text-text-position_0}}
+```C#
 	public TextPosition(RadFixedDocument document) 
 	public TextPosition(RadFixedPage page)
 	public TextPosition(RadFixedPage page, int index) 
 	public TextPosition(TextPosition position)
-{{endregion}}
+```
 
 
 
@@ -50,7 +50,7 @@ The members that the __TextPosition__ class exposes are:
 
 #### __C#__
 
-{{region radpdfviewer-text-text-position_1}}
+```C#
 	public bool MoveToNextPosition()
 	public bool MoveToPreviousPosition()
 	public bool MoveToPosition(TextPosition position)
@@ -64,7 +64,7 @@ The members that the __TextPosition__ class exposes are:
 	public bool MoveLineDown()
 	public bool MoveToStartOfDocument()
 	public bool MoveToEndOfDocument()
-{{endregion}}
+```
 
 
 
@@ -76,9 +76,9 @@ The caret position of __RadFixedDocument__ is also a __TextPosition__ and all me
 
 #### __C#__
 
-{{region radpdfviewer-text-text-position_2}}
+```C#
 	this.pdfViewer.Document.CaretPosition.MoveToEndOfDocument();
-{{endregion}}
+```
 
 
 This will not only move the caret to the end of the document, but will also [scroll]({%slug radpdfviewer-scrolling%}) the document to bring it into view, as the view port follows the caret.

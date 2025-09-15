@@ -26,7 +26,7 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 
 #### __XAML__
 
-{{region radscheduleview-howto-update-resources_0}}
+```XAML
 	<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}"  ...>		
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition GroupFilter="{Binding GroupFilter}" />
@@ -37,25 +37,25 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 			</telerik:GroupDescriptionCollection>
 		</telerik:RadScheduleView.GroupDescriptionsSource>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 We will add checkboxes for each resource in order to allow the user to change their Visibility:
 
 #### __XAML__
 
-{{region radscheduleview-howto-update-resources_1}}
+```XAML
 	<StackPanel>
 		<CheckBox Content="Show Room1" IsChecked="{Binding ShowRoom1, Mode=TwoWay}" />
 		<CheckBox Content="Show Room2" IsChecked="{Binding ShowRoom2, Mode=TwoWay}" />
 		<CheckBox Content="Show Room3" IsChecked="{Binding ShowRoom3, Mode=TwoWay}" />
 	</StackPanel>
-{{endregion}}
+```
 
 Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the GroupFilter predicate to the ViewModel:
 
 #### __C#__
 
-{{region radscheduleview-howto-update-resources_2}}
+```C#
 	public class ViewModel : ViewModelBase
 	{
 		private bool _showRoom1 = true;
@@ -125,13 +125,13 @@ Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the G
 			}
 		}
 	}
-{{endregion}}
+```
 
 Add the UpdateGroupFilter() method:
 
 #### __C#__
 
-{{region radscheduleview-howto-update-resources_3}}
+```C#
 	private bool GroupFilterFunc(object groupName)
 	{
 		IResource resource = groupName as IResource;
@@ -153,7 +153,7 @@ Add the UpdateGroupFilter() method:
 	{
 		this.GroupFilter = new Func<object, bool>(this.GroupFilterFunc);
 	}
-{{endregion}}
+```
 
 So checking/unchecking the checkboxes will update the visible Resources in the ViewDefintion:
 
@@ -177,19 +177,19 @@ Calling the following code will add an additional “Room4” resource:
 
 #### __C#__
 
-{{region radscheduleview-howto-update-resources_4}}
+```C#
 	locationResType.Resources.Add(new Resource("Room4"));
 	ResourceTypes.Remove(locationResType);
 	ResourceTypes.Add(locationResType);
-{{endregion}}
+```
 
 where __ResourceTypes__ is the collection to which ResourceTypesSource property of the ScheduleView is bound:
 
 #### __XAML__
 
-{{region radscheduleview-howto-update-resources_5}}
+```XAML
 	<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}" … />
-{{endregion}}
+```
 
 This will lead to the following result:
 

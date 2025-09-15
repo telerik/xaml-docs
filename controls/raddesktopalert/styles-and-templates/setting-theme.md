@@ -31,16 +31,16 @@ You could do that using one of the following approaches:
 	
 	After that merge the xaml files in the App.xaml as shown in __Example 1__:
 	
-	#### __[XAML] Example 1: Merging the .xaml files__
+	__Example 1: Merging the .xaml files__
 
-	{{region xaml-raddesktopalert-styles-and-templates-setting-theme_0}}
+	```XAML
 		<ResourceDictionary>
 		    <ResourceDictionary.MergedDictionaries>
 		        <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.xaml" />
 		        <ResourceDictionary Source="/Telerik.Windows.Themes.VisualStudio2013;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
 		    </ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
-	{{endregion}}
+	```
 	
 * Add references to the required assemblies from Binaries.NoXaml folder. Create a Themes folder in your project that contains the corresponding .xaml files from Themes.Implicit/../VisualStudio2013/../Themes/ folder located in the installation folder:
 
@@ -49,16 +49,16 @@ You could do that using one of the following approaches:
 	
 	__Example 2__ shows how to merge the copied .xaml files.            
 
-	#### __[XAML] Example 2: Merging the .xaml files__
+	__Example 2: Merging the .xaml files__
 
-	{{region xaml-raddesktopalert-styles-and-templates-setting-theme_1}}
+	```XAML
 	<ResourceDictionary>
 	    <ResourceDictionary.MergedDictionaries>
 	        <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
 	        <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
 	    </ResourceDictionary.MergedDictionaries>
 	</ResourceDictionary>
-{{endregion}}
+```
 	
 Either way you choose, the end result will be the following:
 

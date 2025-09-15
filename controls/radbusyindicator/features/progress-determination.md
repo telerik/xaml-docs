@@ -24,11 +24,11 @@ If you need a determined __RadBusyIndicator__ you have to set the value of the _
 
 Here is an example of creating a determined __RadBusyIndicator__ control:
 
-#### __[XAML] Setting IsIndeterminate__
+__Setting IsIndeterminate__
 
-{{region xaml-radbusyindicator-features-progress-determination_0}}
+```XAML
 	<telerik:RadBusyIndicator IsIndeterminate="False" />
-{{endregion}}
+```
 
 Notice that when a determined __RadbusyIndicator__ is enabled its inner donut will be consecutively filled. 
 

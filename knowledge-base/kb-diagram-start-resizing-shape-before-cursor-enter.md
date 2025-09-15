@@ -32,8 +32,8 @@ How to start resizing a shape (SizeAll cursor shown) before the mouse enters the
 
 To introduce a small tolerance between the shape bounds and the mouse position where you can start the resizing operation, create a __custom PointerTool__ and replace the default one in the __ToolService__.
 
-#### __[C#]__
-{{region kb-diagram-start-resizing-shape-before-cursor-enter-0}}
+
+```C#
 	public class CustomPointerTool : PointerTool
     {
         private GroupService groupService;
@@ -81,10 +81,10 @@ To introduce a small tolerance between the shape bounds and the mouse position w
             this.SelectionService.SelectItems(itemsToSelect, addToExistingSelection);
         }
     }
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-diagram-start-resizing-shape-before-cursor-enter-1}}
+
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -92,7 +92,7 @@ To introduce a small tolerance between the shape bounds and the mouse position w
 		var toolService = this.radDiagram.ServiceLocator.GetService<IToolService>() as ToolService;
 		toolService.ToolList[0] = new CustomPointerTool(this.diagram);            
 	}
-{{endregion}}
+```
 
 ## See Also  
 * [RadDiagram Getting Started]({%slug raddiagram-getting-started%})

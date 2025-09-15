@@ -31,7 +31,7 @@ Here is an example of a __Needle__ definition:
 
 #### __XAML__
 
-{{region radgauge-features-indicators-needle_0}}
+```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="1" Max="12">
 	        <telerik:RadialScale.Indicators>
@@ -40,7 +40,7 @@ Here is an example of a __Needle__ definition:
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -51,7 +51,7 @@ Here is a snapshot of the result:
 Gets or sets the relative height of the needle tail. You can change the height of the needle tail by using the __TailHeight__ property. To calculate its height you'll need to substract the radial scale __Width__ (0.1 by default) from the scale __Radius__. 
 
 #### __XAML__
-{{region radgauge-features-indicators-needle_1}}
+```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="1" Max="12" 
 	                         Radius="1" 
@@ -66,7 +66,7 @@ Gets or sets the relative height of the needle tail. You can change the height o
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result: 
 

@@ -23,9 +23,9 @@ RadScheduleView's **ReadOnlyBehavior** is responsible for determining which oper
 
 To implement a custom readonlybehavior, you have to create a class which inherits ReadOnlyBehavior.
 
-#### __[C#] Example 1: Custom ReadOnlyBehavior__
+__Example 1: Custom ReadOnlyBehavior__
 
-{{region cs-radscheduleview-features-readonly-behavior_0}}
+```C#
     public class CustomReadonlyBehavior : ReadOnlyBehavior
     {
         public override bool CanSaveAppointment(IReadOnlySettings readOnlySettings, IOccurrence occurrence)
@@ -58,11 +58,8 @@ To implement a custom readonlybehavior, you have to create a class which inherit
             return base.CanEditSlot(readOnlySettings, slot);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Custom ReadOnlyBehavior__
-
-{{region vb-radscheduleview-features-readonly-behavior_1}}
+```
+```VB.NET
     Public Class CustomReadonlyBehavior
 	Inherits ReadOnlyBehavior
         Public Overrides Function CanSaveAppointment(readOnlySettings As IReadOnlySettings, occurrence As IOccurrence) As Boolean
@@ -89,21 +86,21 @@ To implement a custom readonlybehavior, you have to create a class which inherit
             Return MyBase.CanEditSlot(readOnlySettings, slot)
         End Function
 End Class
-{{endregion}}
+```
 
 > Note, that by default the base class implementation of the ReadOnlyBehavior class works with the [ReadOnlySlots]({%slug radscheduleview-features-speacialslots%}) of the RadScheduleView. If you want to change the default behavior, you can introduce custom logic. For an example implementation, check out the [ReadOnlyBehavior](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/CustomReadOnlyBehavior) SDK example.
 
 Then you need to set it to RadScheduleView's **ReadOnlyBehavior** property.
 
-#### __[XAML] Example 2: Setting ReadOnlyBehavior__
+__Example 2: Setting ReadOnlyBehavior__
 
-{{region xaml-radscheduleview-features-readonly-behavior_2}}
+```XAML
     <telerik:RadScheduleView>
         <telerik:RadScheduleView.ReadOnlyBehavior>
             <local:CustomReadonlyBehavior />
         </telerik:RadScheduleView.ReadOnlyBehavior>
     </telerik:RadScheduleView>
-{{endregion}}
+```
 
 > In this example the namespace **"local"** is referring to the namespace in which the CustomReadonlyBehavior is declared.
 

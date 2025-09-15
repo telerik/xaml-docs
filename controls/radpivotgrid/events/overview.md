@@ -20,7 +20,7 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 
 #### __C#__
 
-{{region radpivotgrid-events-overview_1}}
+```C#
 	private void OnPrepareDescriptionForField(object sender, Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs e)
 	{
 		// Get the current DoubleGroupDescription description.
@@ -32,11 +32,11 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 			e.Description = new Telerik.Pivot.Core.PropertyGroupDescription() { PropertyName = doubleGroupDescription.PropertyName };
 		}
 	}
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-events-overview_1}}
+```VB
 	Private Sub OnPrepareDescriptionForField(ByVal sender As Object, ByVal e As Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs)
 		' Get the current DoubleGroupDescription description.
 		Dim doubleGroupDescription = TryCast(e.Description, DoubleGroupDescription)
@@ -46,7 +46,7 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 			e.Description = New Telerik.Pivot.Core.PropertyGroupDescription() With {.PropertyName = doubleGroupDescription.PropertyName}
 		End If
 	End Sub
-{{endregion}}
+```
 
 * __StatusChanged__ - raised whenever the status of the DataProvider is changed. It can be used in order to execute custom logic whenever the DataProvider is updated.            
 
@@ -56,7 +56,7 @@ You can find an example below that demonstrates how to get the current status of
 
 #### __C#__
 
-{{region radpivotgrid-events-overview_2}}
+```C#
 	private void OnDataProviderStatusChanged(object sender, DataProviderStatusChangedEventArgs e)
 	{
 	    if (e.NewStatus == DataProviderStatus.Ready)
@@ -67,11 +67,11 @@ You can find an example below that demonstrates how to get the current status of
 			}));
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-events-overview_2}}
+```VB
 	Private Sub OnDataProviderStatusChanged(ByVal sender As Object, ByVal e As DataProviderStatusChangedEventArgs)
 		If e.NewStatus = DataProviderStatus.Ready Then
 			Dispatcher.BeginInvoke(New Action(Sub()
@@ -79,7 +79,7 @@ You can find an example below that demonstrates how to get the current status of
 			End Sub))
 		End If
 	End Sub
-{{endregion}}
+```
 
 >You can also check for errors through the __Error__ property of the arguments.              
 
@@ -91,7 +91,7 @@ You can find an example below that demonstrates how to get the current status of
 
 #### __C#__
 
-{{region radpivotgrid-events-overview_3}}
+```C#
 	private void OnGetDescriptionsDataAsyncCompleted(object sender, GetDescriptionsDataCompletedEventArgs e)
 	{
 		var rootItem = e.DescriptionsData.RootFieldInfo;
@@ -120,11 +120,11 @@ You can find an example below that demonstrates how to get the current status of
 		rootItem.Children.Add(firstFolder);
 		rootItem.Children.Add(secondFolder);       
 	}
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-events-overview_3}}
+```VB
 	Private Sub OnGetDescriptionsDataAsyncCompleted(ByVal sender As Object, ByVal e As GetDescriptionsDataCompletedEventArgs)
 		Dim rootItem = e.DescriptionsData.RootFieldInfo
 		Dim allContainers = rootItem.Children.ToList()
@@ -146,7 +146,7 @@ You can find an example below that demonstrates how to get the current status of
 		rootItem.Children.Add(firstFolder)
 		rootItem.Children.Add(secondFolder)
 	End Sub
-{{endregion}}
+```
 
 You can observe the final result on __Figure 1__.
 

@@ -57,9 +57,9 @@ Additionally, you can customize the default appearance of the connector points t
 
 The diagram doesn't support undo custom type connectors when __Undo command__ is executed. Executing the command will create the connectors of type __RadDiagramConnector__ by default. To Undo custom connectors, your custom class needs to implement the __ICloneable__ interface. Then you can implement its Clone() method and return your custom type.
 
-#### __[C#] Example 1: Undo Custom Connectors__
+__Example 1: Undo Custom Connectors__
 
-{{region cs-raddiagrams-features-shapes-connectors_0}}
+```C#
 	public class CustomConnector : RadDiagramConnector, ICloneable
 	{
 		object ICloneable.Clone()
@@ -70,7 +70,7 @@ The diagram doesn't support undo custom type connectors when __Undo command__ is
 			return diagramConnector;
 		}
 	}
-{{endregion}}
+```
 
 ## See Also  
  * [Structure]({%slug raddiagram-structure%})

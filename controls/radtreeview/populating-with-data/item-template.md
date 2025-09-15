@@ -26,7 +26,7 @@ The final result should look like the snapshot below:
 		{% if site.site_name == 'Silverlight' %}
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-template_0}}
+		```XAML
 			<UserControl.Resources>
 			
 				<DataTemplate x:Key="Team">
@@ -49,14 +49,14 @@ The final result should look like the snapshot below:
 			<Grid x:Name="LayoutRoot" Background="White">
 				<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
 			</Grid>
-			{{endregion}}
+			```
 
 		{% endif %}
 		{% if site.site_name == 'WPF' %}
 
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-template_4}}
+		```XAML
 			<UserControl.Resources>
 			
 				<DataTemplate x:Key="Team">
@@ -79,7 +79,7 @@ The final result should look like the snapshot below:
 			<Grid x:Name="LayoutRoot" Background="White">
 				<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
 			</Grid>
-			{{endregion}}
+			```
 
 		{% endif %}
 
@@ -93,7 +93,7 @@ The final result should look like the snapshot below:
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-template_1}}
+	```XAML
 		<telerik:HierarchicalDataTemplate x:Key="League">
 			<Grid d:DesignWidth="93" d:DesignHeight="26">
 			 <Grid.ColumnDefinitions>
@@ -104,13 +104,13 @@ The final result should look like the snapshot below:
 			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap"/>
 			</Grid>
 		</telerik:HierarchicalDataTemplate>
-		{{endregion}}
+		```
 
 	{% endif %}{% if site.site_name == 'WPF' %}
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-template_5}}
+	```XAML
 		<HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
 				ItemTemplate="{StaticResource Division}">
 			<Grid d:DesignWidth="93" d:DesignHeight="26">
@@ -122,7 +122,7 @@ The final result should look like the snapshot below:
 			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
 			</Grid>
 		</HierarchicalDataTemplate>
-		{{endregion}}
+		```
 
 	{% endif %}
 
@@ -158,7 +158,7 @@ The final result should look like the snapshot below:
 	{% if site.site_name == 'Silverlight' %}
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-template_2}}
+	```XAML
 		<telerik:HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
 				ItemTemplate="{StaticResource Division}">
 			<Grid d:DesignWidth="93" d:DesignHeight="26">
@@ -170,14 +170,14 @@ The final result should look like the snapshot below:
 			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
 			</Grid>
 		</telerik:HierarchicalDataTemplate>
-		{{endregion}}
+		```
 
 	{% endif %}
 	{% if site.site_name == 'WPF' %}
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-template_6}}
+	```XAML
 		<HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions, Mode=OneWay}"
 				ItemTemplate="{StaticResource Division}">
 			<Grid d:DesignWidth="93" d:DesignHeight="26">
@@ -189,7 +189,7 @@ The final result should look like the snapshot below:
 			 <TextBlock Margin="0" Grid.Column="1" TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}"/>
 			</Grid>
 		</HierarchicalDataTemplate>
-		{{endregion}}
+		```
 
 	{% endif %}
 
@@ -203,7 +203,7 @@ Here is the final XAML:
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region radtreeview-populating-with-data-item-template_3}}
+```XAML
 	<UserControl.Resources>
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 	
@@ -248,14 +248,14 @@ Here is the final XAML:
 	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 	       ItemTemplate="{StaticResource League}" />
 	</Grid>
-	{{endregion}}
+	```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
-{{region radtreeview-populating-with-data-item-template_7}}
+```XAML
 	<UserControl.Resources>
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 	
@@ -300,7 +300,7 @@ Here is the final XAML:
 	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 	       ItemTemplate="{StaticResource League}" />
 	</Grid>
-	{{endregion}}
+	```
 
 {% endif %}
 

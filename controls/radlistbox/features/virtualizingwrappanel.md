@@ -30,9 +30,9 @@ This article will describe the [VirtualizingWrapPanel](https://docs.telerik.com/
 
 In order to demonstrate how the VirtualizingWrapPanel can be used, we will setup some sample data as demonstrated in __Example 1__.
 
-#### __[C#] Example 1: Setting up the model and viewmodel__
+__Example 1: Setting up the model and viewmodel__
 
-{{region cs-radlistbox-features-virtualizingwrappanel-0}}
+```C#
 	public class ViewModel : ViewModelBase
     {
         private ObservableCollection<Customer> customers;
@@ -85,11 +85,8 @@ In order to demonstrate how the VirtualizingWrapPanel can be used, we will setup
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting up the model and viewmodel__
-
-{{region cs-radlistbox-features-virtualizingwrappanel-0}}
+```
+```VB.NET
 	Public Class Customer
 		Public Property Name() As String
 		Public Property Id() As Integer
@@ -156,14 +153,14 @@ In order to demonstrate how the VirtualizingWrapPanel can be used, we will setup
 			End Set
 		End Property
     End Class
-{{endregion}}
+```
 
 ## Setting up the RadListBox
 
 __Example 2__ demonstrates how the VirtualizingWrapPanel can be used as an ItemsPanel for a __RadListBox__. You can read some more about the benefits of UI Virtualization in the following [article](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/optimizing-performance-controls#displaying-large-data-sets).
 
-#### __[XAML] Example 2: RadListBox with VirtualizingWrapPanel as ItemsPanel__
-{{region xaml-radlistbox-features-virtualizingwrappanel-3}}
+__Example 2: RadListBox with VirtualizingWrapPanel as ItemsPanel__
+```XAML
 	<UserControl>
 		<UserControl.Resources>
 			<local:ViewModel x:Key="ViewModel" />
@@ -187,7 +184,7 @@ __Example 2__ demonstrates how the VirtualizingWrapPanel can be used as an Items
 			</telerik:RadListBox>
 		</Grid>
 	</UserControl>	
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 2 in the Office2016 theme__
 ![RadListBox with VirtualizingWrapPanel as ItemsPanel](images/radlistbox_features_virtualizingwrappanel.gif)
@@ -196,8 +193,8 @@ __Example 2__ demonstrates how the VirtualizingWrapPanel can be used as an Items
 
 __Example 3__ demonstrates how you can apply grouping to the data by setting the __GroupStyle__ property. Otherwise, the example uses the same setup as __Example 2__.
 
-#### __[XAML] Example 3: Grouped RadListBox with VirtualizingWrapPanel as ItemsPanel__
-{{region xaml-radlistbox-features-virtualizingwrappanel-3}}
+__Example 3: Grouped RadListBox with VirtualizingWrapPanel as ItemsPanel__
+```XAML
 	<telerik:RadListBox.GroupStyle>
 		<GroupStyle>
 			<GroupStyle.HeaderTemplate>
@@ -207,7 +204,7 @@ __Example 3__ demonstrates how you can apply grouping to the data by setting the
 			</GroupStyle.HeaderTemplate>
 		</GroupStyle>
 	</telerik:RadListBox.GroupStyle>
-{{endregion}}
+```
 
 ## Grouping and Virtualization
 
@@ -217,8 +214,8 @@ In order to turn on this feature, you have to set the __VirtualizingPanel.IsVirt
 
 Additionally, you have to set the __VirtualizingPanel.ScrollUnit__ to __Pixel__, since __VirtualizingPanel.ScrollUnit="Item"__ is not supported while grouping. Optionally, you can also set the __VirtualizingPanel.VirtualizationMode__ property to __Recycling__ in order for the item containers to be recycled during scrolling.
 
-#### __[XAML] Example 4: Turning on virtualization while grouping__
-{{region xaml-radlistbox-features-virtualizingwrappanel-4}}
+__Example 4: Turning on virtualization while grouping__
+```XAML
 	<telerik:RadListBox VirtualizingPanel.ScrollUnit="Pixel"
 						VirtualizingPanel.IsVirtualizingWhenGrouping="True"
 						VirtualizingPanel.VirtualizationMode="Recycling">
@@ -241,7 +238,7 @@ Additionally, you have to set the __VirtualizingPanel.ScrollUnit__ to __Pixel__,
 			</GroupStyle>
 		</telerik:RadListBox.GroupStyle>
 	</telerik:RadListBox>
-{{endregion}}
+```
 
 >Note that you also need to set the attached properties on the panel in the **GroupStyle** as they will not be transferred automatically.
 

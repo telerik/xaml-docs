@@ -32,8 +32,8 @@ The Minimize and Minus font glyphs are stretched when hosted in RadPathButton.
 
 This happens because RadPathButton stretches its Path element by default. To change this behavior, you can set the Stretch property of the Path to None via the __PathStyle__ property of RadPathButton.
 
-#### __[XAML]__
-{{region kb-buttons-minimize-minus-glyphs-stretched-in-pathbutton-0}}
+
+```XAML
 	<telerik:RadPathButton.PathStyle>
 		<Style TargetType="{x:Type Path}">
 			<Setter Property="Fill" Value="Black"/>
@@ -43,4 +43,4 @@ This happens because RadPathButton stretches its Path element by default. To cha
 			<Setter Property="SnapsToDevicePixels" Value="True"/>
 		</Style>
 	</telerik:RadPathButton.PathStyle>
-{{endregion}}
+```

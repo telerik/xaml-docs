@@ -32,7 +32,7 @@ The `RadDesktopAlert`'s `Height` property is set to a certain value based on the
 
 To scale the height of the RadDesktopAlert's height based on the displayed content, set the Height property to `Auto`.
 
-#### __[XAML] Setting the Height property of RadDesktopAlert to Auto__
-{{region kb-desktopalert-set-height-0}}
+__Setting the Height property of RadDesktopAlert to Auto__
+```XAML
 	<telerik:RadDesktopAlert Height="Auto"/>
-{{endregion}}
+```

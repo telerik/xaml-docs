@@ -16,9 +16,9 @@ In order to achieve the desired behavior, you should create a [custom KeyboardCo
 
 **Example 1** shows how this can be done:
 
-#### __[C#] Example 1: Handling the Tab key__
+__Example 1: Handling the Tab key__
 
-	{{region cs-gridview-add-new-row-on-tab-last-cell_0}}
+	```C#
 	public override IEnumerable<ICommand> ProvideCommandsForKey(Key key)
 	{
 	    List<ICommand> commandsToExecute = base.ProvideCommandsForKey(key).ToList();
@@ -56,11 +56,8 @@ In order to achieve the desired behavior, you should create a [custom KeyboardCo
 	
 	    return commandsToExecute;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Handling the Tab key__
-
-	{{region vb-gridview-add-new-row-on-tab-last-cell_0}}
+```
+```VB.NET
 	Public Overrides Function ProvideCommandsForKey(key__1 As Key) As IEnumerable(Of ICommand)
 	    Dim commandsToExecute As List(Of ICommand) = MyBase.ProvideCommandsForKey(key__1).ToList()
 	
@@ -94,7 +91,7 @@ In order to achieve the desired behavior, you should create a [custom KeyboardCo
 	
 	    Return commandsToExecute
 	End Function
-{{endregion}}
+```
 
 ## See Also
 

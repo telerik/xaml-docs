@@ -26,9 +26,9 @@ Here's a list of properties that the column exposes:
 
 For the purposes of this article we will assume that the data objects expose **Name** and **TeamUrl** properties as defined in **Example 1**.
 
-#### __[C#] Example 1: The Club class__
+__Example 1: The Club class__
 
-{{region cs-radgridview-columns-column-types-hyperlink-column_1}}
+```C#
 	public class Club : ViewModelBase
 	{   
 	    private string name;
@@ -59,12 +59,8 @@ For the purposes of this article we will assume that the data objects expose **N
 	        }
 	    }
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 1: The Club class__
-
-{{region vb-radgridview-columns-column-types-hyperlink-column_2}}
+```
+```VB.NET
 	Public Class Club
 	    Inherits ViewModelBase		
 		
@@ -94,21 +90,21 @@ For the purposes of this article we will assume that the data objects expose **N
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 ## Set Up the Hyperlink Column
 
 If you bind the RadGridView control to a collection of **Club** objects, you can define the GridViewHyperlinkColumn column as shown in **Example 2**.
 
-#### __[XAML] Example 2: Define GridViewHyperlinkColumn in XAML__
+__Example 2: Define GridViewHyperlinkColumn in XAML__
 
-{{region xaml-radgridview-columns-column-types-hyperlink-column_3}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Clubs}" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewHyperlinkColumn Header="Team Url" DataMemberBinding="{Binding TeamUrl}" ContentBinding="{Binding Name}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 **Figure 1** illustrates the result of the code in **Example 1**.
 

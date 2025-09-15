@@ -16,8 +16,8 @@ The __StepAreaSeries__ is visualized on the screen as a horizontal and vertical 
 
 You can use the definition from __Example 1__ to display a StepAreaSeries.
 
-#### __[XAML] Example 1: Declaring a StepAreaSeries in XAML__
-{{region radchartview-series-stepareaseries_0}}
+__Example 1: Declaring a StepAreaSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -39,7 +39,7 @@ You can use the definition from __Example 1__ to display a StepAreaSeries.
 			</telerik:StepAreaSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: StepAreaSeries visual appearance__
 ![radchartview-series-stepareaseries](images/radchartview-series-steplineareaseries.png)
@@ -76,9 +76,9 @@ You can use the definition from __Example 1__ to display a StepAreaSeries.
 
 You can use the ValueBinding and CategoryBinding properties of the StepAreaSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-stepareaseries_1}}
+```C#
 	public class PlotInfo
     {	
         public string Category { get; set; }
@@ -91,12 +91,12 @@ You can use the ValueBinding and CategoryBinding properties of the StepAreaSerie
 		new PlotInfo() { Category = "January", Value = 2},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a StepAreaSeries in XAML__
-{{region radchartview-series-stepareaseries_2}}	
+__Example 3: Specify a StepAreaSeries in XAML__
+```XAML	
 	 <telerik:StepAreaSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value"/>
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

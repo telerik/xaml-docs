@@ -25,9 +25,9 @@ Here, under the section of &lt;Property Group&gt; is the element &lt;Supported C
 
 #### __XAML__
 
-{{region xaml-gridview-localization-setting-default-startup-language3_0}}
+```XAML
 	  <SupportedCultures>es</SupportedCultures>
-{{endregion}}
+```
 
 Thus the framework is notified about the supported cultures and will include the satellite resource assemblies for all Telerik controls.
 
@@ -37,17 +37,17 @@ The thing that you must do for defining the language settings of the application
 
 #### __C#__
 
-{{region cs-gridview-localization-setting-default-startup-language3_1}}
+```C#
 	Thread.CurrentThread.CurrentCulture = new CultureInfo("es");
 	Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-localization-setting-default-startup-language3_2}}
+```VB.NET
 	Thread.CurrentThread.CurrentCulture = New CultureInfo("es")
 	Thread.CurrentThread.CurrentUICulture = New CultureInfo("es")
-{{endregion}}
+```
 
 {% endif %}
 

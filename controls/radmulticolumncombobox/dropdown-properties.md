@@ -25,14 +25,14 @@ This article describes the set of properties that can be used for manipulating t
 
 The Height of the DropDown element can be set through the __DropDownHeight__ property.
 
-#### __[XAML] Example 1: Setting the DropDownHeight property__
-{{region radmulticolumncombobox-dropdown-properties_01}}
+__Example 1: Setting the DropDownHeight property__
+```XAML
 	 <telerik:RadMultiColumnComboBox DisplayMemberPath="Name" DropDownHeight="200">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
                 <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Orders}" />
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 #### __Figure 1: Setting the DropDownHeight property__
 ![Setting the DropDownHeight property](images/MultiColumnComboBox_DropDown_Properties_01.png)
@@ -84,15 +84,15 @@ __RadMultiColumnComboBox__ provides a predefined set of options for setting the 
 
 By default, the __DropDown__ of RadMultiColumnComboBox will be kept open when the user performs selection. The __CloseDropDownAfterSelectionInput__ property of RadMultiColumnComboBox can be used in order to close the __DropDown__ each time the user applies a new selection. This can be achieved by setting its value to __True__.
 
-#### __[XAML] Example 2: Setting the CloseDropDownAfterSelectionInput property__
-{{region radmulticolumncombobox-dropdown-properties_02}}
+__Example 2: Setting the CloseDropDownAfterSelectionInput property__
+```XAML
 	<telerik:RadMultiColumnComboBox CloseDropDownAfterSelectionInput="True"
                                         DisplayMemberPath="Name" SelectionMode="Multiple">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
                 <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs}" />
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 ## See Also
 

@@ -21,17 +21,17 @@ The __RadTileView__ in this scenario will be data bound to a collection of busin
 
 #### __C#__
 
-{{region radtileview-howto-add-close-button-to-radtileiewitem_0}}
+```C#
 	public class DataItem
 	{
 		public string Header { get; set; }
 		public string Content { get; set; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtileview-howto-add-close-button-to-radtileiewitem_0}}
+```VB.NET
 	Public Class DataItem
 		Public Property Header() As String
 			Get
@@ -52,13 +52,13 @@ The __RadTileView__ in this scenario will be data bound to a collection of busin
 		End Property
 		Private m_Content As String
 	End Class
-{{endregion}}
+```
 
 The collection passed to the __RadTileView's ItemsSource__ can be wrapped in a View Model class
 
 #### __C#__
 
-{{region radtileview-howto-add-close-button-to-radtileiewitem_1}}
+```C#
 	public class MainViewModel
 	{
 		public ObservableCollection<DataItem> Items { get; set; }
@@ -79,11 +79,11 @@ The collection passed to the __RadTileView's ItemsSource__ can be wrapped in a V
 			}
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtileview-howto-add-close-button-to-radtileiewitem_1}}
+```VB.NET
 	Public Class MainViewModel
 		Public Property Items() As ObservableCollection(Of DataItem)
 			Get
@@ -108,13 +108,13 @@ The collection passed to the __RadTileView's ItemsSource__ can be wrapped in a V
 			Next
 		End Sub
 	End Class
-{{endregion}}
+```
 
 After creating the view models you can add the __RadTileView__ definition in xaml.
 
 #### __XAML__
 
-{{region radtileview-howto-add-close-button-to-radtileiewitem_0}}
+```XAML
 	<telerik:RadTileView ItemsSource="{Binding Items}" 					 
 						 MinimizedRowHeight="150" 
 						 MinimizedColumnWidth="200" 
@@ -133,7 +133,7 @@ After creating the view models you can add the __RadTileView__ definition in xam
 			</DataTemplate>
 		</telerik:RadTileView.ContentTemplate>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 ## Extract and Edit the RadTileViewItem HeaderStyle
 
@@ -143,7 +143,7 @@ The __RadTileViewItem’s__ header is represented by __TileViewItemHeader__ cont
 
 #### __XAML__
 
-{{region radtileview-howto-add-close-button-to-radtileiewitem_1}}
+```XAML
 	................
 	<Border BorderBrush="White" BorderThickness="0,0,0,1" Background="{TemplateBinding Background}" CornerRadius="1" Padding="10,0,7,0">
 	<Grid MinHeight="28">
@@ -238,7 +238,7 @@ The __RadTileViewItem’s__ header is represented by __TileViewItemHeader__ cont
 	</Grid>
 	</Border>
 	...........
-{{endregion}}
+```
 
 > The code snippet above doesn't contain the complete definition of the __TileViewItemHeader.ControlTemplate__, but only the part of it that is changed. You can see the complete template in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/TileView/AddCloseButton).          
 
@@ -250,7 +250,7 @@ The final stage of this tutorial is to implement the Close button’s command. W
 
 	#### __C#__
 
-	{{region radtileview-howto-add-close-button-to-radtileiewitem_2}}
+	```C#
 		public static class TileViewCommandsExtension
 		{
 			static TileViewCommandsExtension()
@@ -260,11 +260,11 @@ The final stage of this tutorial is to implement the Close button’s command. W
 
 			public static RoutedUICommand Delete { get; private set; }
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtileview-howto-add-close-button-to-radtileiewitem_2}}
+	```VB.NET
 		Public NotInheritable Class TileViewCommandsExtension
 			Private Sub New()
 			End Sub
@@ -282,21 +282,21 @@ The final stage of this tutorial is to implement the Close button’s command. W
 			End Property
 			Private Shared m_Delete As RoutedUICommand
 		End Class
-	{{endregion}}
+	```
 
 2. Set the __Command__ property of the close __RadButton__ in the __ControlTemplate__ of the __TileViewItemHeader__ to the command.
 
 	#### __XAML__
 
-	{{region radtileview-howto-add-close-button-to-radtileiewitem_2}}
+	```XAML
 		<telerik:RadButton Margin="2 0 0 0" Command="local:TileViewCommandsExtension.Delete" Grid.Column="1" x:Name="CloseButton" InnerCornerRadius="0">
-	{{endregion}}
+	```
 
 3. Register command binding for the command in the static constructor of the __UserControl__ where the __RadTileView__ is used.           
 
 	#### __C#__
 
-	{{region radtileview-howto-add-close-button-to-radtileiewitem_3}}
+	```C#
 		public partial class Example : UserControl
 		{
 			static Example()
@@ -318,11 +318,11 @@ The final stage of this tutorial is to implement the Close button’s command. W
 				InitializeComponent();
 			}
 		}
-	{{endregion}}
+	```
 	
 	#### __VB.NET__
 
-	{{region radtileview-howto-add-close-button-to-radtileiewitem_3}}
+	```VB.NET
 		Partial Public Class Example
 			Inherits UserControl
 			Shared Sub New()
@@ -340,13 +340,13 @@ The final stage of this tutorial is to implement the Close button’s command. W
 				InitializeComponent()
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 4. Define behavior for the command by implementing the Execute and CanExecute event handlers.
 
 	#### __C#__
 
-	{{region radtileview-howto-add-close-button-to-radtileiewitem_4}}
+	```C#
 		public partial class Example : UserControl
 		{
 			static Example()
@@ -386,11 +386,11 @@ The final stage of this tutorial is to implement the Close button’s command. W
 				InitializeComponent();
 			}
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtileview-howto-add-close-button-to-radtileiewitem_4}}
+	```VB.NET
 		Partial Public Class Example
 			Inherits UserControl
 			Shared Sub New()
@@ -426,7 +426,7 @@ The final stage of this tutorial is to implement the Close button’s command. W
 				InitializeComponent()
 			End Sub
 		End Class
-	{{endregion}}
+	```
 	
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TileView/AddCloseButton).       
 

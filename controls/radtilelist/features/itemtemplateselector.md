@@ -24,9 +24,9 @@ To do so follow these steps:
 
 **2.** Override its __SelectTemplate method__. Based on your conditions - you return the proper __DataTemplate__ that will be applied to the framework element (a tile in our case).
 
-#### __[C#] Example 1: Defining the ItemTemplateSelector__
+__Example 1: Defining the ItemTemplateSelector__
 
-{{region cs-radtilelist-itemtemplateselector_0}}
+```C#
 	public class MyTileTemplateSelector : DataTemplateSelector
 	{
 	    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
@@ -48,15 +48,15 @@ To do so follow these steps:
 	    public DataTemplate BigStadium { get; set; }
 	    public DataTemplate SmallStadium { get; set; }
 	}
-{{endregion}}
+```
 
 In this case we have two different __DataTemplates__ that could be applied - __BigStadium__ and __SmallStadium__. Depending on the underlying data we select which template to apply.
 
 **3.** In the XAML file define the template selector as a resource and set the properties of the __BigStadium__ and __SmallStadium__:
 
-#### __[XAML] Example 2: Defining the ItemTemplateSelector as a Resource in XAML__
+__Example 2: Defining the ItemTemplateSelector as a Resource in XAML__
 
-{{region xaml-radtilelist-itemtemplateselector-1}}
+```XAML
 	<Grid.Resources>
 	  <my:MyTileTemplateSelector x:Key="myTileTemplateSelector">
 	    <my:MyTileTemplateSelector.BigStadium>
@@ -97,17 +97,17 @@ In this case we have two different __DataTemplates__ that could be applied - __B
 	    </my:MyTileTemplateSelector.SmallStadium>
 	  </my:MyTileTemplateSelector>
 	</Grid.Resources>
-{{endregion}}
+```
 
 **4.** Finally, set the __ItemTemplateSelector__ property of __RadTileList__:
 
-#### __[XAML] Example 3: Applying the ItemTemplateSelector__
+__Example 3: Applying the ItemTemplateSelector__
 
-{{region xaml-radtilelist-itemtemplateselector-2}}
+```XAML
 	<telerik:RadTileList  x:Name="RadTileList"
 	                      ItemTemplateSelector="{StaticResource myTileTemplateSelector}"
 	                      ItemsSource="{Binding Clubs}"/>
-{{endregion}}
+```
 
 ## See Also
 * [Styling TileList]({%slug tilelist-styling%})

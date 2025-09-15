@@ -18,8 +18,8 @@ The RadImageEditor commands apply an effect over the image or execute an action 
 
 An instance of the `ImageEditorCommands` class is created and assigned to the `Commands` property of `RadImageEditor` which can be used to access the commands. The `ImageEditorCommands` instance is associated with the corresponding `RadImageEditor` control and it executes the commands over its image.
 
-#### __[XAML] Example 1: Using an image editor command in XAML__
-{{region radimageeditor-features-commands-and-tools-0}}
+__Example 1: Using an image editor command in XAML__
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinitions/>
@@ -28,92 +28,92 @@ An instance of the `ImageEditorCommands` class is created and assigned to the `C
 		<telerik:RadImageEditor x:Name="radImageEditor"/>
         <telerik:RadButton Content="Open image" Command="{Binding ElementName=radImageEditor, Path=Commands.Open}" Grid.Row="1"/>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Using an image editor command in code__
-{{region radimageeditor-features-commands-and-tools-1}}
+__Example 2: Using an image editor command in code__
+```C#
 	this.radImageEditor.Commands.Open.Execute(null);
-{{endregion}}
+```
 
 The following list shows the __available commands__ in the `ImageEditorCommands` class.
 
 * __OpenImageCommand__: Opens a dialog that allows you to select an image file which will get loaded into the corresponding `RadImageEditor` element. The CommandParameter of the command is optional and it expects a string describing the [file extension filter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog.filter?view=net-5.0) of the file dialog.
 
-	#### __[C#] Example 3: Using OpenImageCommand__
-	{{region radimageeditor-features-commands-and-tools-2}}
+	__Example 3: Using OpenImageCommand__
+	```C#
 		this.radImageEditor.Commands.Open.Execute("Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*");
-	{{endregion}}
+	```
 
 * __SaveImageCommand__: Opens a dialog that allows you to select where on the file system the current image will get saved. The CommandParameter of the command is optional and it expects a string describing the [file extension filter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog.filter?view=net-5.0) of the file dialog.
 
-	#### __[C#] Example 4: Using SaveImageCommand__
-	{{region radimageeditor-features-commands-and-tools-3}}
+	__Example 4: Using SaveImageCommand__
+	```C#
 		this.radImageEditor.Commands.Save.Execute("Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*");
-	{{endregion}}
+	```
 
 * __UndoCommand__: Undo the last change applied to the image. This command doesn't use the CommandParameter.
 
-	#### __[C#] Example 5: Using UndoCommand__
-	{{region radimageeditor-features-commands-and-tools-4}}
+	__Example 5: Using UndoCommand__
+	```C#
 		this.radImageEditor.Commands.Undo.Execute(null);
-	{{endregion}}
+	```
 
 * __RedoCommand__: Executes a redo action over the current image. This command doesn't use the CommandParameter.
 
-	#### __[C#] Example 6: Using RedoCommand__
-	{{region radimageeditor-features-commands-and-tools-5}}
+	__Example 6: Using RedoCommand__
+	```C#
 		this.radImageEditor.Commands.Undo.Execute(null);
-	{{endregion}}
+	```
 
 * __Rotate90ClockwiseCommand__: Rotates the image by 90 degrees clockwise. This command doesn't use the CommandParameter.
 
-	#### __[C#] Example 7: Using Rotate90ClockwiseCommand__
-	{{region radimageeditor-features-commands-and-tools-6}}
+	__Example 7: Using Rotate90ClockwiseCommand__
+	```C#
 		this.radImageEditor.Commands.Rotate90Clockwise.Execute(null);
-	{{endregion}}
+	```
 	
 * __Rotate90CounterclockwiseCommand__: Rotates the image by 90 degrees clockwise. This command doesn't use the CommandParameter.
 
-	#### __[C#] Example 8: Using Rotate90CounterclockwiseCommand__
-	{{region radimageeditor-features-commands-and-tools-7}}
+	__Example 8: Using Rotate90CounterclockwiseCommand__
+	```C#
 		this.radImageEditor.Commands.Rotate90Counterclockwise.Execute(null);
-	{{endregion}}
+	```
 
 * __Rotate180Command__: Rotates the image by 180 degrees clockwise. This command doesn't use the CommandParameter.
 
-	#### __[C#] Example 9: Using Rotate180Command__
-	{{region radimageeditor-features-commands-and-tools-8}}
+	__Example 9: Using Rotate180Command__
+	```C#
 		this.radImageEditor.Commands.Rotate180.Execute(null);
-	{{endregion}}
+	```
 
 * __InvertColorsCommand__: Inverts the colors in the image. This command doesn't use the CommandParameter.
 	
-	#### __[C#] Example 10: Using InvertColorsCommand__
-	{{region radimageeditor-features-commands-and-tools-9}}
+	__Example 10: Using InvertColorsCommand__
+	```C#
 		this.radImageEditor.Commands.InvertColors.Execute(null);
-	{{endregion}}
+	```
 
 * __FlipVerticalCommand__: Flips the image vertically. This command doesn't use the CommandParameter.
 
-	#### __[C#] Example 11: Using FlipVerticalCommand__
-	{{region radimageeditor-features-commands-and-tools-10}}
+	__Example 11: Using FlipVerticalCommand__
+	```C#
 		this.radImageEditor.Commands.FlipVertical.Execute(null);
-	{{endregion}}
+	```
 
 * __FlipHorizontalCommand__: Flips the image horizontally. This command doesn't use the CommandParameter.
 
-	#### __[C#] Example 12: Using FlipHorizontalCommand__
-	{{region radimageeditor-features-commands-and-tools-11}}
+	__Example 12: Using FlipHorizontalCommand__
+	```C#
 		this.radImageEditor.Commands.FlipHorizontal.Execute(null);
-	{{endregion}} 
+	``` 
 
 * __ExecuteToolCommand__: Executes a [tool]({%slug radimageeditor-features-tools%}). The CommandParameter is required and it expects an object of type [ITool](https://docs.telerik.com/devtools/wpf/api/telerik.windows.media.imaging.tools.itool).
 
-	#### __[C#] Example 13: Using ExecuteToolCommand__
-	{{region radimageeditor-features-commands-and-tools-12}}
+	__Example 13: Using ExecuteToolCommand__
+	```C#
 		ITool tool = new BlurTool();
 		this.radImageEditor.Commands.ExecuteTool.Execute(tool);
-	{{endregion}}
+	```
 	
 ## ImageCommands
 
@@ -125,136 +125,136 @@ The following list shows the __available commands__ in the `ImageCommands` class
 
 * __FlipCommand__: Flips the image horizontally or vertically. The context expected by the command is of type `FlipCommandContext` which contains information about the flip orientation.
 
-	#### __[C#] Example 14: Using ExecuteToolCommand__
-	{{region radimageeditor-features-commands-and-tools-13}}
+	__Example 14: Using ExecuteToolCommand__
+	```C#
 		var context = new FlipCommandContext(Orientation.Vertical);
 		RadBitmap newImage = ImageCommands.Flip.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 
 	The command also provide two public static methods that can be used instead of the `Execute` method.
 	
-	#### __[C#] Example 15: Using FlipCommand static methods__
-	{{region radimageeditor-features-commands-and-tools-14}}		
+	__Example 15: Using FlipCommand static methods__
+	```C#		
 		RadBitmap horizontallyFlippedImage = FlipCommand.FlipHorizontal(this.radImageEditor.Image);
 		RadBitmap verticallyFlippedImage = FlipCommand.FlipVertical(this.radImageEditor.Image);
-	{{endregion}}
+	```
 	
 * __RotateCommand__: Rotates the image by the specified degree. The context expected by the command is of type `RotateCommandContext` which contains information about the rotation degrees and the color of the background that will be shown behind the rotated image.
 
-	#### __[C#] Example 16: Using RotateCommand__
-	{{region radimageeditor-features-commands-and-tools-15}}
+	__Example 16: Using RotateCommand__
+	```C#
 		var context = new RotateCommandContext(22, Colors.Green);
 		RadBitmap newImage = ImageCommands.Rotate.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __ContrastCommand__: Changes the contrast and brightness of the image. The context expected by the command is of type `ContrastCommandContext` which contains information about the level of brightness and contrast that will be applied over the image. The default brightness is 0 and the allowed values are between -1 and 1. The default contrast is 1.5 and the allowed values are between 0 and 2.
 
-	#### __[C#] Example 17: Using ContrastCommand__
-	{{region radimageeditor-features-commands-and-tools-16}}
+	__Example 17: Using ContrastCommand__
+	```C#
 		var context = new ContrastCommandContext(brightness: 0.25, contrast: 0.25);
 		RadBitmap newImage = ImageCommands.Contrast.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __BlurCommand__: Applies a blur effect over the image. The context expected by the command is of type `BlurCommandContext` which contains information about the blur amount and the input size.
 
-	#### __[C#] Example 18: Using BlurCommand__
-	{{region radimageeditor-features-commands-and-tools-17}}
+	__Example 18: Using BlurCommand__
+	```C#
 		var context = new BlurCommandContext(0.5, new Size(500, 500));
 		RadBitmap newImage = ImageCommands.Blur.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __SharpenCommand__: Sharpens the image. The context expected by the command is of type `SharpenCommandContext` which contains information about the blur amount and the input size.
 
-	#### __[C#] Example 19: Using SharpenCommand__
-	{{region radimageeditor-features-commands-and-tools-18}}
+	__Example 19: Using SharpenCommand__
+	```C#
 		var originalImage = this.radImageEditor.Image;
 		var context = new SharpenCommandContext(0.5, new Size(originalImage.Width, originalImage.Height));
 		RadBitmap newImage = ImageCommands.Sharpen.Execute(originalImage, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __HueShiftCommand__: Applies a hue shift effect over the image. The context expected by the command is of type `HueShiftCommandContext` which contains information about hue offset.
 
-	#### __[C#] Example 20: Using HueShiftCommand__
-	{{region radimageeditor-features-commands-and-tools-19}}
+	__Example 20: Using HueShiftCommand__
+	```C#
 		var context = new HueShiftCommandContext(40);
 		RadBitmap newImage = ImageCommands.HueShift.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __InvertColorsCommand__: Inverts the colors in the image. This command doesn't use a context object.
 
-	#### __[C#] Example 21: Using InvertColorsCommand__
-	{{region radimageeditor-features-commands-and-tools-20}}
+	__Example 21: Using InvertColorsCommand__
+	```C#
 		RadBitmap newImage = ImageCommands.InvertColors.Execute(this.radImageEditor.Image, null);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __SaturationCommand__: Applies saturation to the image. The context expected by the command is of type `SaturationCommandContext` which contains information about saturation.
 
-	#### __[C#] Example 22: Using SaturationCommand__
-	{{region radimageeditor-features-commands-and-tools-21}}
+	__Example 22: Using SaturationCommand__
+	```C#
 		var context = new SaturationCommandContext(40);
 		RadBitmap newImage = ImageCommands.Saturation.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __CropCommand__: Crops the image. The context expected by the command is of type `CropCommandContext` which contains information about the top left position where the crop starts and the final size of the cropped image.
 
-	#### __[C#] Example 23: Using CropCommand__
-	{{region radimageeditor-features-commands-and-tools-22}}
+	__Example 23: Using CropCommand__
+	```C#
 		var context = new CropCommandContext(10, 10, 250, 250);
 		RadBitmap newImage = ImageCommands.Crop.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 
 * __ResizeCommand__: Resizes the image. The context expected by the command is of type `ResizeCommandContext` which contains information about the new width and height of the image.
 
-	#### __[C#] Example 24: Using ResizeCommand__
-	{{region radimageeditor-features-commands-and-tools-23}}
+	__Example 24: Using ResizeCommand__
+	```C#
 		var context = new ResizeCommandContext(250, 250);
 		RadBitmap newImage = ImageCommands.Resize.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 * __CanvasResizeCommand__: Resizes the canvas. The context expected by the command is of type `CanvasResizeCommandContext` which contains information about the image alignment, the new size of the canvas and the background color.
 
-	#### __[C#] Example 25: Using CanvasResizeCommand__
-	{{region radimageeditor-features-commands-and-tools-24}}
+	__Example 25: Using CanvasResizeCommand__
+	```C#
 		var context = new CanvasResizeCommandContext(Colors.Green, HorizontalAlignment.Left, VerticalAlignment.Top, 250, 250);
 		RadBitmap newImage = ImageCommands.CanvasResize.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 	
 * __RoundCornersCommand__: Adds round corners around the image. The context expected by the command is of type `RoundCornersCommandContext` which contains information about the corner radius, the border and the background.
 
-	#### __[C#] Example 26: Using RoundCornersCommandd__
-	{{region radimageeditor-features-commands-and-tools-25}}
+	__Example 26: Using RoundCornersCommandd__
+	```C#
 		var context = new RoundCornersCommandContext(10, Colors.Green, 2, Colors.Black);
 		RadBitmap newImage = ImageCommands.RoundCorners.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 	
 * __DrawTextCommand__: Draws text over the image. The context expected by the command is of type `DrawTextCommandContext` which contains information about text and its position.
 
-	#### __[C#] Example 27: Using DrawTextCommand__
-	{{region radimageeditor-features-commands-and-tools-26}}
+	__Example 27: Using DrawTextCommand__
+	```C#
 		var context = new DrawTextCommandContext(16, Colors.Green, "My text", new Point(100, 100), 0);
 		RadBitmap newImage = ImageCommands.DrawText.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 	
 * __DrawCommand__: Draws a shape path over the image. The context expected by the command is of type `DrawCommandContext` which contains information about the drawn path.
 
-	#### __[C#] Example 28: Using DrawCommand__
-	{{region radimageeditor-features-commands-and-tools-27}}
+	__Example 28: Using DrawCommand__
+	```C#
 		var path = new Path();
 		path.Data = new EllipseGeometry(new Point(100, 100), 10, 10);
 		path.Fill = Brushes.Green;
@@ -265,7 +265,7 @@ The following list shows the __available commands__ in the `ImageCommands` class
 		var context = new DrawCommandContext(path);
 		RadBitmap newImage = ImageCommands.Draw.Execute(this.radImageEditor.Image, context);
 		this.radImageEditor.Image = newImage;
-	{{endregion}}
+	```
 	
 ## ImageEditorRoutedCommands
 
@@ -293,15 +293,15 @@ The following list shows the __available commands__ in the `ImageEditorRoutedCom
 
 * __Save__
 
-#### __[XAML] Example 29: Using the ImageEditorRoutedCommands__
-{{region radimageeditor-features-commands-and-tools-28}}
+__Example 29: Using the ImageEditorRoutedCommands__
+```XAML
 	<Grid>
         <telerik:RadImageEditor x:Name="radImageEditor" />
         <telerik:RadButton Content="Invert Colors" 
 						   Command="commands:ImageEditorRoutedCommands.InvertColors"
                            CommandTarget="{Binding ElementName=radImageEditor}"/>
     </Grid>
-{{endregion}}
+```
 
 The __commands__ namespace declaration points to the following namespace: `xmlns:commands="clr-namespace:Telerik.Windows.Media.Imaging.ImageEditorCommands.RoutedCommands;assembly=Telerik.Windows.Controls.ImageEditor"`.
 

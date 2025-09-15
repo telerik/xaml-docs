@@ -44,7 +44,7 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 
 #### __XAML__
 
-{{region radscheduleview-features-timemarkers_0}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 			<telerik:RadScheduleView.TimeMarkersSource>
 				<telerik:TimeMarkerCollection>
@@ -56,13 +56,13 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 or
 
 #### __C#__
 
-{{region radscheduleview-features-timemarkers_1}}
+```C#
 	public class MyViewModel : ViewModelBase
 	{
 		public ObservableCollection<Appointment> Appointments { get; set; }
@@ -77,11 +77,11 @@ or
 			};
 		}
 	}
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region radscheduleview-features-timemarkers_3}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" 
 				AppointmentsSource="{Binding Appointments}"
 				TimeMarkersSource="{Binding TimeMarkers}">		
@@ -89,15 +89,15 @@ or
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Finally, set the DataContext:
 
 #### __C#__
 
-{{region radscheduleview-features-timemarkers_4}}
+```C#
 	this.DataContext = new MyViewModel();
-{{endregion}}
+```
 
 Here is the result:
 

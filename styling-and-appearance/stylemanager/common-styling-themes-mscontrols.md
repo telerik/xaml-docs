@@ -56,7 +56,7 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 
 #### __XAML__
 
-{{region common-styling-themes-mscontrols_1}}
+```XAML
 	<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -65,7 +65,7 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 	        <Style TargetType="Button"/>
 	    </Application.Resources>
 	</Application>
-	{{endregion}}
+	```
 
 
 
@@ -73,7 +73,7 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 
 #### __C#__
 
-{{region common-styling-themes-mscontrols_2}}
+```C#
 	public App()
       {
           this.Startup += this.Application_Startup;
@@ -83,13 +83,13 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
           InitializeComponent();
          StyleManager.SetBasedOn(((Style)Current.Resources[typeof(Button)]), StyleManager.ApplicationTheme);
       }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region common-styling-themes-mscontrols_3}}
+```VB.NET
     Public Sub New()
         Me.Startup += Me.Application_Startup
         Me.[Exit] += Me.Application_Exit
@@ -98,7 +98,7 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
         InitializeComponent()
         StyleManager.SetBasedOn(DirectCast(Current.Resources(GetType(Button)), Style), StyleManager.ApplicationTheme)
     End Sub
-	{{endregion}}
+	```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
@@ -106,14 +106,14 @@ When you apply an __Application theme__ at runtime, though, only Telerik control
 
 #### __XAML__
 
-{{region common-styling-themes-mscontrols_4}}
+```XAML
 	<Window.Resources>
 		<telerik:Expression_DarkTheme x:Key="Theme" />
 		<Style TargetType="Button">
 	        <Setter Property="telerik:StyleManager.Theme" Value="{StaticResource Theme}"/>
 	    </Style>
 	</Window.Resources>
-	{{endregion}}
+	```
 {% endif %}
 
 ## See Also

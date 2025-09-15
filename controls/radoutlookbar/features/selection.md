@@ -15,7 +15,7 @@ position: 0
 To handle changes in the selection you can use the __SelectionChanged__ event: 
 
 #### __XAML__
-{{region xaml-radoutlookbar-selection_0}}
+```XAML
 	<telerik:RadOutlookBar PreviewSelectionChanged="RadOutlookBar1_PreviewSelectionChanged"
 	                       SelectionChanged="RadOutlookBar1_SelectionChanged">
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
@@ -30,10 +30,10 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 	        <TextBlock Text="Item 3 Content" />
 	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
-{{endregion}}
+```
 
 #### __C#__
-{{region cs-radoutlookbar-selection_1}}
+```C#
 	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
 	{
 		RadOutlookBarItem newSelectedItem = (sender as
@@ -44,24 +44,24 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 	{
 		//use the Handled property to prevent the selection           
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region vb-radoutlookbar-selection_1}}
+```VB.NET
 	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
 	End Sub
 	Private Sub RadOutlookBar1_PreviewSelectionChanged(sender As Object, e As Telerik.Windows.Controls.RadSelectionChangedEventArgs)
 	    'use the Handled property to prevent the selection'           
 	End Sub
-{{endregion}}
+```
 
 ## Setting selected item
 
 You can set the selected item by using its __IsSelected__ property:
         
 #### __XAML__
-{{region xaml-radoutlookbar-selection_2}}
+```XAML
 	<telerik:RadOutlookBar>
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
@@ -75,7 +75,7 @@ You can set the selected item by using its __IsSelected__ property:
 	        <TextBlock Text="Item 3 Content" />
 	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
-{{endregion}}
+```
 
 ## Properties
 

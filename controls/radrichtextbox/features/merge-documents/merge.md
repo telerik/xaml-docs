@@ -23,14 +23,14 @@ Along with the [RadDocument]({%slug radrichtextbox-features-document-elements-ra
 
 #### **[C#] Example 1: Merge documents with InsertDocumentOptions**
 
-{{region cs-radrichtextbox-features-raddocumentmerger_1}}
+```C#
  
 	InsertDocumentOptions options = new InsertDocumentOptions();
 	options.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle;
 	options.InsertLastParagraphMarker = false;
 	
 	merger.InsertDocument(sourceDocument, options);
-{{endregion}}
+```
 
 There is another overload of InsertDocument() that takes only a [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%}) instance. When you use this overload, the default values of InsertDocumentOptions are used when merging documents.  
 

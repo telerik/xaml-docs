@@ -22,8 +22,8 @@ The following list shows the commands that are exposed by the RadAIPrompt contro
 
 The following example shows how to utilize one of the above-listed commands.
 
-#### __[C#] Defining an ICommand property in the view model__
-{{region radaiprompt-commands-0}}
+__Defining an ICommand property in the view model__
+```C#
     public class MyViewModel
     {
         public MyViewModel()
@@ -38,10 +38,10 @@ The following example shows how to utilize one of the above-listed commands.
             //Execute your logic here when the PromptRequestCommand of RadAIPrompt is executed
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Binding the view model ICommand to the PromptRequestCommand of RadAIPrompt__
-{{region radaiprompt-commands-1}}
+__Binding the view model ICommand to the PromptRequestCommand of RadAIPrompt__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MyViewModel/>
@@ -52,7 +52,7 @@ The following example shows how to utilize one of the above-listed commands.
             <telerik:RadAIPromptOutputItem />
         </telerik:RadAIPrompt>
     </Grid>
-{{endregion}}
+```
 
 ## Configuring Custom Commands
 
@@ -69,8 +69,8 @@ To add a logic that will be executed when the user interacts with the commands v
 
 This class exposes the `Command` property that will allow you to set an `ICommand` implementation to it. It will be raised when the User interacts with it. 
 
-#### __[C#] Creating an AIPromptCommand instance__
-{{region radaiprompt-commands-2}}
+__Creating an AIPromptCommand instance__
+```C#
     public class MyViewModel
     {
         public MyViewModel()
@@ -94,10 +94,10 @@ This class exposes the `Command` property that will allow you to set an `IComman
     		MessageBox.Show("SimplifyCommand Executed");
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Binding the custom commands collection to RadAIPrompt__
-{{region radaiprompt-commands-3}}
+__Binding the custom commands collection to RadAIPrompt__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MyViewModel/>
@@ -108,7 +108,7 @@ This class exposes the `Command` property that will allow you to set an `IComman
             <telerik:RadAIPromptCommandsItem />
         </telerik:RadAIPrompt>
     </Grid>
-{{endregion}}
+```
 
 __RadAIPrompt with a custom commands collection__
 
@@ -118,8 +118,8 @@ __RadAIPrompt with a custom commands collection__
 
 The `AIPromptCommandGroup` object provides the `Commands` collection property. It will allow you to group `AIPromptCommand` instances.
 
-#### __[C#] Creating an AIPromptCommandGroup instance__
-{{region radaiprompt-commands-4}}
+__Creating an AIPromptCommandGroup instance__
+```C#
     public class MyViewModel
     {
         public MyViewModel()
@@ -167,7 +167,7 @@ The `AIPromptCommandGroup` object provides the `Commands` collection property. I
             MessageBox.Show("ExtendCommand Executed");
         }
     }
-{{endregion}}
+```
 
 __RadAIPrompt with grouped commands__
 

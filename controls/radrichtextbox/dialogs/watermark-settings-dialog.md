@@ -22,14 +22,14 @@ The dialog can be opened using the __Watermark__ drop down button in the __Page 
 
 The dialog can be shown by executing the `ShowWatermarkSettingsDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-watermark-settings-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowWatermarkSettingsDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowWatermarkSettingsDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-watermark-settings-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowWatermarkSettingsDialog();
-{{endregion}}
+```

@@ -47,9 +47,9 @@ We will specify the following classes, which are going to be used to the RadTree
 * __MyItem:__ A class that will be our business object. This class will have a collection of MyItems. It will be used to show hierarchy in the RadTreeView.
 * __MyViewModel:__ The main ViewModel class of the application.
 
-	#### __[C#] Example 1: Creating ViewModels__
+	__Example 1: Creating ViewModels__
 
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_0}}
+	```C#
 		public class MyItem
 		{
 			public string Title { get; set; }
@@ -91,11 +91,8 @@ We will specify the following classes, which are going to be used to the RadTree
 				}
 			}
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 1: Creating ViewModels__
-
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_1}}
+	```
+```VB.NET
 		Public Class MyItem
 			Public Property Title As String
 
@@ -137,14 +134,14 @@ We will specify the following classes, which are going to be used to the RadTree
 				Next
 			End Sub
 		End Class	
-	{{endregion}}
+	```
 
 
 	Now consider both of the background notes at the beginning of the topic and take a look at the following code snippet. It declares a __HierarchicalDataTemplate__ and uses the __ItemContainerStyle__ property of both the __RadTreeView__ and the __HierarchicalDataTemplate__.{% if site.site_name == 'Silverlight' %}
 
-	#### __[XAML] Example 2: Defining RadTreeView in XAML__
+	__Example 2: Defining RadTreeView in XAML__
 
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_2}}
+	```XAML
 		<Window.Resources>
 		
 			<Style TargetType="telerik:RadTreeViewItem" x:Key="redStyle">
@@ -173,14 +170,14 @@ We will specify the following classes, which are going to be used to the RadTree
 				</telerik:RadTreeView.ItemTemplate>
 			</telerik:RadTreeView>		
 		</Grid>
-	{{endregion}}
+	```
 
 	{% endif %}
 	{% if site.site_name == 'WPF' %}
 
-	#### __[XAML] Example 2: Defining RadTreeView in XAML__
+	__Example 2: Defining RadTreeView in XAML__
 
-	{{region radtreeview-populating-with-data-hierarchical-data-templates_3}}
+	```XAML
 		<Window.Resources>
 		
 			<Style TargetType="telerik:RadTreeViewItem" x:Key="redStyle">
@@ -212,28 +209,26 @@ We will specify the following classes, which are going to be used to the RadTree
 			</telerik:RadTreeView>
 		
 		</Grid>
-	{{endregion}}
+	```
 	{% endif %}
 
 And finally, we need to set the DataContext of the MainWindow:
 
-#### __[C#] Example 3: Setting DataContext__
-{{region radtreeview-populating-with-data-hierarchical-data-templates_4}}
+__Example 3: Setting DataContext__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.DataContext = new MyViewModel();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting DataContext__
-{{region radtreeview-populating-with-data-hierarchical-data-templates_5}}
+```
+```VB.NET
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.DataContext = new MyViewModel();
 	}
-{{endregion}}
+```
 
 Here is the final result: 
 ![{{ site.framework_name }} RadTreeView Custom HierarchicalDataTemplate and ItemContainerStyle](images/RadTreeView_TemplatingHierarchicalDataTemplate_010.PNG)

@@ -25,8 +25,8 @@ To scroll to the top of the GridView, you can use the `ScrollItemIntoView` metho
 
 The following code snippets show the two approaches:
 
-#### __[XAML] ScrollItemIntoView example__
-{{region kb-gridview-scroll-to-top-on-pagechanged-0}}
+__ScrollItemIntoView example__
+```XAML
 	private void RadDataPager_PageIndexChanged(object sender, Telerik.Windows.Controls.PageIndexChangedEventArgs e)
 	{
 		// the dispatcher delays the ScrollIntoView call
@@ -38,10 +38,10 @@ The following code snippets show the two approaches:
 			}
 		}));
 	}
-{{endregion}}
+```
 
-#### __[XAML] ScrollToTop example__
-{{region kb-gridview-scroll-to-top-on-pagechanged-1}}
+__ScrollToTop example__
+```XAML
 	private void RadDataPager_PageIndexChanged(object sender, Telerik.Windows.Controls.PageIndexChangedEventArgs e)
 	{
 		var scrollViewer = this.gridView.FindChildByType<GridViewScrollViewer>();
@@ -50,4 +50,4 @@ The following code snippets show the two approaches:
 			scrollViewer.ScrollToTop();
 		}
 	}
-{{endregion}}
+```

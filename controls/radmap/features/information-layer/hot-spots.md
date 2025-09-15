@@ -27,7 +27,7 @@ This example will show an ellipse, which should be positioned over the geographi
 To mark an element as a __HotSpot__ you have to set its __MapLayer__.__HotSpot__ attached property.        
 
 #### __XAML__
-{{region radmap-features-hot-spots_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -44,7 +44,7 @@ To mark an element as a __HotSpot__ you have to set its __MapLayer__.__HotSpot__
 	        </Ellipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## Positioning a Hot Spot
 
@@ -59,7 +59,7 @@ To adjust the position of the element via the __HotSpot__ you have to set its __
 Here is the ellipse element that is centered over the location point:
 
 #### __XAML__
-{{region radmap-features-hot-spots_1}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -79,7 +79,7 @@ Here is the ellipse element that is centered over the location point:
 	        </Ellipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the final result:
 
@@ -92,7 +92,7 @@ In some cases you might have a more complex structure, where the element represe
 Here is an example of an __Ellipse__, that is placed inside a __Grid__ control with two rows and two columns. Note that the Ellipse is still the control that is centered over the location.        
 
 #### __XAML__
-{{region radmap-features-hot-spots_2}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -125,7 +125,7 @@ Here is an example of an __Ellipse__, that is placed inside a __Grid__ control w
 	        </Grid>                
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the final result:
 

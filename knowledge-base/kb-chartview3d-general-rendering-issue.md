@@ -37,8 +37,8 @@ __Fragmented chart visualization__
 
 Possible solution is to update the drivers of the video card. Additional to this, try disabling the hardware acceleration in WPF.
 
-#### __[C#]__
-{{region kb-chartview3d-general-rendering-issue-0}}
+
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -56,4 +56,4 @@ Possible solution is to update the drivers of the video card. Additional to this
 			base.OnSourceInitialized(e);
 		}
 	}
-{{endregion}}
+```

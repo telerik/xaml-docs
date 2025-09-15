@@ -22,30 +22,28 @@ __LayoutControlToolBox__ can be used to embed the toolbox into the layout contro
 
 This section shows a sample toolbox definition.
 
-#### __[XAML] Example 1: Setting up the toolbox in XAML__  
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-0}}
+__Example 1: Setting up the toolbox in XAML__  
+```XAML
 	<telerik:RadLayoutControl x:Name="layout">
 		<telerik:RadLayoutControl.AdditionalCanvasItems>
 			<telerik:LayoutControlToolBox LayoutControl="{Binding ElementName=layout}" />
 		</telerik:RadLayoutControl.AdditionalCanvasItems>
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting up the toolbox in code__  
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-1}}
+__Example 2: Setting up the toolbox in code__  
+```C#
 	RadLayoutControl layoutControl = new RadLayoutControl();
 	var toolbox = new LayoutControlToolBox();
 	toolbox.LayoutControl = layoutControl;
 	layoutControl.AdditionalCanvasItems.Add(toolbox);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting up the toolbox in code__  	
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-2}}
+```
+```VB.NET
 	Dim layoutControl As New RadLayoutControl()
 	Dim toolbox = New LayoutControlToolBox()
 	toolbox.LayoutControl = layoutControl
 	layoutControl.AdditionalCanvasItems.Add(toolbox)
-{{endregion}}
+```
 
 The toolbox can be associated with RadLayoutControl through its __LayoutControl__ property (see __Example 1__).
 
@@ -65,27 +63,25 @@ When the button is clicked the toolbox view will be opened in a popup.
 
 You can manually control the state of the toolbox through the __IsOpen__ property of __LayoutControlToolBox__.
 
-#### __[XAML] Example 3: Setting the IsOpen property in XAML__  
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-3}}
+__Example 3: Setting the IsOpen property in XAML__  
+```XAML
 	<telerik:LayoutControlToolBox IsOpen="True" />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting the IsOpen property in code__  
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-4}}
+__Example 4: Setting the IsOpen property in code__  
+```C#
 	layoutControlToolBox.IsOpen = true;
-{{endregion}}
-	
-#### __[VB.NET] Example 4: Setting the IsOpen property in code__  
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-5}}
+```
+```VB.NET
 	layoutControlToolBox.IsOpen = True;
-{{endregion}}
+```
 
 ## Customize the toolbox view
 	
 The popup of the LayoutControlToolBox component contains a __LayoutControlToolBoxView__ element. You can use the __ToolBoxView__ property to get this element and modify it. Or to define a new toolbox view and assign it to the LayoutControlToolBox.
 
-#### __[XAML] Example 5: Replacing the default toolbox view__  
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-6}}
+__Example 5: Replacing the default toolbox view__  
+```XAML
 	<telerik:RadLayoutControl x:Name="layout">
 		<telerik:RadLayoutControl.AdditionalCanvasItems>
 			<telerik:LayoutControlToolBox LayoutControl="{Binding ElementName=layout}">
@@ -95,7 +91,7 @@ The popup of the LayoutControlToolBox component contains a __LayoutControlToolBo
 			</telerik:LayoutControlToolBox>
 		</telerik:RadLayoutControl.AdditionalCanvasItems>
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 	
 #### __Figure 3: Modified toolbox view__
 ![{{ site.framework_name }} RadLayoutControl Modified toolbox view](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-03.png)
@@ -104,8 +100,8 @@ The popup of the LayoutControlToolBox component contains a __LayoutControlToolBo
 
 The toolbox view is displayed in a __RadWindow__ element which can be customized through the __WindowStyle__ property of __LayoutControlToolBox__.
 
-#### __[XAML] Example 6: Setting custom window style__
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-7}}
+__Example 6: Setting custom window style__
+```XAML
 	<telerik:RadLayoutControl x:Name="layout">
 		<telerik:RadLayoutControl.AdditionalCanvasItems>
 			<telerik:LayoutControlToolBox LayoutControl="{Binding ElementName=layout}">	
@@ -119,7 +115,7 @@ The toolbox view is displayed in a __RadWindow__ element which can be customized
 			</telerik:LayoutControlToolBox>
 		</telerik:RadLayoutControl.AdditionalCanvasItems>
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 	
 > The __BasedOn__ setting is applicable only in a scenario with [implicit styles]({%slug styling-apperance-implicit-styles-overview%}). This attribute is set so that the custom style inherits the default toolbox window style. The __LayoutControlToolBoxWindowStyle__ is located in the __Telerik.Windows.Controls.Navigation.xaml__ ResourceDictionary.
 	
@@ -130,15 +126,15 @@ The toolbox view is displayed in a __RadWindow__ element which can be customized
 
 The button that opens the toolbox can be re-positioned in the additional items canvas of RadLayoutControl. This can be done via the __Canvas.Left__, __Canvas.Top__, __Canvas.Right__ and __Canvas.Bottom__ properties.
 
-#### __[XAML] Example 7: Positioning the toggle button at the bottom-left side of the layout control__   
-{{region radlayoutcontrol-features-toolbox-layoutcontroltoolbox-8}}
+__Example 7: Positioning the toggle button at the bottom-left side of the layout control__   
+```XAML
 	<telerik:RadLayoutControl>
 		<telerik:RadLayoutControl.AdditionalCanvasItems>
 			<telerik:LayoutControlToolBox Canvas.Left="0" Canvas.Bottom="0" 
 										  LayoutControl="{Binding ElementName=layout}" />
 		</telerik:RadLayoutControl.AdditionalCanvasItems>
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 #### __Figure 5: Bottom-right positioned button__
 ![{{ site.framework_name }} RadLayoutControl Bottom-right positioned button](images/radlayoutcontrol-features-toolbox-layoutcontroltoolbox-05.png)

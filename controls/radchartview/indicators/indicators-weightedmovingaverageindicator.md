@@ -14,15 +14,15 @@ WeightedMovingAverageIndicator measures and shows the simple average for a perio
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
-#### __[XAML] Example 1: WeightedMovingAverageIndicator__
-{{region radchartview-indicators-weightedmovingaverageindicator-0}}
+__Example 1: WeightedMovingAverageIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		<telerik:WeightedMovingAverageIndicator Period="5"
 												CategoryBinding="Date"                                             
 												ValueBinding="Close"
 												ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: WeightedMovingAverageIndicator
 <img src="images/radchartview-indicators-weightedmovingaverageindicator-0.png" style="width: 80%;">

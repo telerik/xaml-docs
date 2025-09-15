@@ -34,8 +34,8 @@ To add alternation color to the items inside the drop-down content you can take 
 
 The following example demonstrates how to use this property and how to apply custom color to the alternation items.
 
-#### __[C#]__
-{{region kb-combobox-howto-add-alternation-color-0}}
+
+```C#
 	<telerik:RadComboBox AlternationCount="2" ItemsSource="{Binding Data}" DisplayMemberPath="Name">
 		<telerik:RadComboBox.ItemContainerStyle>
 			<Style TargetType="telerik:RadComboBoxItem">
@@ -52,4 +52,4 @@ The following example demonstrates how to use this property and how to apply cus
 			</Style>
 		</telerik:RadComboBox.ItemContainerStyle>
 	</telerik:RadComboBox>
-{{endregion}}
+```

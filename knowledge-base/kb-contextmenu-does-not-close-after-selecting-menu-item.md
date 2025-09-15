@@ -32,8 +32,8 @@ This behavior is observed because of the timing of executing a menu item's comma
 
 To resolve this you can use the application's **Dispatcher** to delay the opening of the dialog as shown in **Example 1**.
 
-#### __[XAML] Example 1: Delaying the opening of a dialog window__
-{{region kb-contextmenu-does-not-close-after-selecting-menu-item-1}}
+__Example 1: Delaying the opening of a dialog window__
+```XAML
     private void RadContextMenu_ItemClick(object sender, Telerik.Windows.RadRoutedEventArgs e)
     {
         Dispatcher.BeginInvoke(new Action(() =>
@@ -41,7 +41,7 @@ To resolve this you can use the application's **Dispatcher** to delay the openin
             MessageBox.Show("Command Executed!");
         }));
     }
-{{endregion}}
+```
 
 ## See Also
 * [Handle Item Clicks]({%slug radcontextmenu-how-to-handle-item-clicks%})

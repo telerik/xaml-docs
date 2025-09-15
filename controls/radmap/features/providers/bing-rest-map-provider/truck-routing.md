@@ -24,8 +24,8 @@ The request needs two settings - the route points, defined via the __RoutePoints
 
 > The BingRestTruckRouteRequest options are described in the [Truck Routing Settings](#truck-routing-settings) section of this article.
 
-#### __[XAML] Example 1: Defining RadMap__
-{{region radmap-features-providers-bing-rest-map-provider-truck-routing-0}}
+__Example 1: Defining RadMap__
+```XAML
 	<telerik:RadMap x:Name="radMap">
 		<telerik:RadMap.Provider>
 			<telerik:BingRestMapProvider x:Name="bingRestMapProvider" 
@@ -35,10 +35,10 @@ The request needs two settings - the route points, defined via the __RoutePoints
 		</telerik:RadMap.Provider>
 		<telerik:VisualizationLayer Name="routeLayer" />
 	</telerik:RadMap>	
-{{endregion}}
+```
 
-#### __[C#] Example 2: Creating a truck route request__
-{{region radmap-features-providers-bing-rest-map-provider-truck-routing-1}}	
+__Example 2: Creating a truck route request__
+```C#	
 	private void RequestTruckRoute()
 	{
 		BingRestTruckRouteRequest request = new BingRestTruckRouteRequest();		
@@ -49,12 +49,12 @@ The request needs two settings - the route points, defined via the __RoutePoints
 
 		this.bingRestMapProvider.CalculateTruckRouteAsync(request);
 	}
-{{endregion}}
+```
 
 The response from the BingRestTruckRouteRequest is get via the __CalculateTruckRouteCompleted__ event of BingRestMapProvider.
 
-#### __[C#] Example 3: Collecting the truck route response__
-{{region radmap-features-providers-bing-rest-map-provider-truck-routing-2}}
+__Example 3: Collecting the truck route response__
+```C#
 	private void BingRestMapProvider_CalculateTruckRouteCompleted(object sender, BingRestRoutingCompletedEventArgs e)
 	{
 		Telerik.Windows.Controls.DataVisualization.Map.BingRest.Route route = e.Route;
@@ -79,17 +79,17 @@ The response from the BingRestTruckRouteRequest is get via the __CalculateTruckR
 			this.radMap.SetView(rect);
 		}
 	}
-{{endregion}}
+```
 
 To listen for errors returned by the Bing Maps service, use the __CalculateTruckRouteError__ event of BingRestMapProvider.
 
-#### __[C#] Example 4: Collecting truck route response errors__
-{{region radmap-features-providers-bing-rest-map-provider-truck-routing-3}}
+__Example 4: Collecting truck route response errors__
+```C#
 	private void BingRestMapProvider_CalculateTruckRouteError(object sender, Telerik.Windows.Controls.Map.BingRestCalculateRouteErrorEventArgs e)
 	{
 		Exception error = e.Error;
 	}
-{{endregion}}
+```
 
 #### Figure 1: Route shape representing the route response returned by the truck route API
 ![{{ site.framework_name }} RadMap Route shape representing the route response returned by the truck route API](images/radmap-features-providers-bing-rest-map-provider-truck-routing-0.png)
@@ -122,8 +122,8 @@ The settings can be used via the __Options__ property of __BingRestTruckRouteReq
 
 An additional setting is the distance unit that can be set via the __DistanceUnit__ property of BingRestTruckRouteRequest.
 
-#### __[C#] Example 5: Set request options__
-{{region radmap-features-providers-bing-rest-map-provider-truck-routing-4}}	
+__Example 5: Set request options__
+```C#	
 	private void RequestTruckRoute()
 	{
 		BingRestTruckRouteRequest request = new BingRestTruckRouteRequest();		
@@ -136,7 +136,7 @@ An additional setting is the distance unit that can be set via the __DistanceUni
 		
 		// add RoutePoints and request the route here
 	}
-{{endregion}}
+```
 
 ## See Also
  * [Providers Overview] ({%slug radmap-features-providers%})

@@ -12,11 +12,11 @@ position: 2
 
 __RadSlider__ supports the functionality of having two thumbs, thus enabling range selection. To enable the selection range you have to set the __IsSelectionRangeEnabled__ property to __true__.
 
-#### __[XAML] Example 1: Enabling Selection Range__
+__Example 1: Enabling Selection Range__
 
-{{region xaml-radslider-selection-range_0}}
+```XAML
 	<telerik:RadSlider x:Name="slider" IsSelectionRangeEnabled="True" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Default Selection Range](images/radslider_features_default_range.png)
 
@@ -26,25 +26,22 @@ Modifying the range can be done either via the __SelectionStart__ and __Selectio
 
 * __SelectionEnd__: Sets the end of the selection range and is of type __double__
 
-#### __[XAML] Example 2: Setting SelectionStart and SelectionEnd in XAML__
+__Example 2: Setting SelectionStart and SelectionEnd in XAML__
 
-{{region xaml-radslider-selection-range_1}}
+```XAML
 	<telerik:RadSlider IsSelectionRangeEnabled="True" SelectionStart="0.2" SelectionEnd="0.4" />
-{{endregion}}
+```
 
 * __Selection__: It is of type __SelectionRange<double>__ and it sets __Start__ and __End__ double values to define the selection range
 
-#### __[C#] Example 3: Setting Selection in code-behind__
+__Example 3: Setting Selection in code-behind__
 
-{{region cs-radslider-selection-range_2}}
+```C#
 	slider.Selection = new SelectionRange<double>(0.2, 0.4);
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting Selection in code-behind__
-
-{{region vb-radslider-selection-range_3}}
+```
+```VB.NET
 	slider.Selection = New SelectionRange(Of Double)(0.2, 0.4)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Custom Selection Range](images/radslider_features_custom_range.png)
 
@@ -60,47 +57,41 @@ The __MiddleThumbClickMode__ property controls the behavior of the thumbs defini
 
 The RadSlider control also exposes properties to control the minimum and maximum distance between its **SelectionStart** and **SelectionEnd** values. This distance can be set through the **MinimumRangeSpan** and **MaximumRangeSpan** properties.
 
-#### __[XAML] Example 4: Setting MinimumRangeSpan and MaximumRangeSpan in XAML__
+__Example 4: Setting MinimumRangeSpan and MaximumRangeSpan in XAML__
 
-{{region xaml-radslider-selection-range_4}}
+```XAML
 	<telerik:RadSlider IsSelectionRangeEnabled="True" MinimumRangeSpan="5" MaximumRangeSpan="30" />
-{{endregion}}
+```
 
-#### __[C#] Example 5: Setting MinimumRangeSpan and MaximumRangeSpan in code-behind__
+__Example 5: Setting MinimumRangeSpan and MaximumRangeSpan in code-behind__
 
-{{region cs-radslider-selection-range_5}}            
+```C#            
 	slider.MinimumRangeSpan = 5;
     slider.MaximumRangeSpan = 30;
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting MinimumRangeSpan and MaximumRangeSpan in code-behind__
-
-{{region vb-radslider-selection-range_5}}	
+```
+```VB.NET	
 	slider.MinimumRangeSpan = 5
     slider.MaximumRangeSpan = 30
-{{endregion}}
+```
 
 ## Suppress Coercion
 
 Through the **IsCoercionSuppressed** property you can control whether the slider should coerce the setting of related properties like **Selection**, **SelectionStart**, **SelectionEnd**, **MinimumRangeSpan** and **MaximumRangeSpan**.
 
-#### __[XAML] Example 6: Setting IsCoercionSuppressed in XAML__
+__Example 6: Setting IsCoercionSuppressed in XAML__
 
-{{region xaml-radslider-selection-range_6}}
+```XAML
 	<telerik:RadSlider IsCoercionSuppressed="True" IsSelectionRangeEnabled="True" MinimumRangeSpan="5" MaximumRangeSpan="30" />
-{{endregion}}
+```
 
-#### __[C#] Example 7: Setting IsCoercionSuppressed in code-behind__
+__Example 7: Setting IsCoercionSuppressed in code-behind__
 
-{{region cs-radslider-selection-range_7}}            
+```C#            
 	slider.IsCoercionSuppressed = true;
-{{endregion}}
-
-#### __[VB.NET] Example 7: Setting IsCoercionSuppressed in code-behind__
-
-{{region vb-radslider-selection-range_7}}	
+```
+```VB.NET	
 	slider.IsCoercionSuppressed = true
-{{endregion}}
+```
 
 If set to **True**, the coercion is done only when the user manipulates the slider and not if the related properties are set in code or through bindings.
 

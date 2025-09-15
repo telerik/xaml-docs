@@ -31,9 +31,9 @@ How to change the RadGlyph icons' color when changing the theme variation during
 
 To have the RadGlyph icon reflect the change of the theme variation, you can use a **GeometryDrawing** object and bind it's brush's **Color** property to a specified color from the respective theme palette.
 
-#### __[XAML]__
 
-{{region cs-kb-theming-change-icon-color-variation_1}}
+
+```XAML
 	<telerik:RadMenuItem.Icon>
 		<Image Stretch="UniformToFill" Width="35" Height="20" Margin="2">
 			<Image.Source>
@@ -49,7 +49,7 @@ To have the RadGlyph icon reflect the change of the theme variation, you can use
 			</Image.Source>
 		</Image>
 	</telerik:RadMenuItem.Icon>
-{{endregion}}
+```
 
 >The above example uses the Office2019Palette, but you can replace this with the palette for the theme(s) you're using.
 

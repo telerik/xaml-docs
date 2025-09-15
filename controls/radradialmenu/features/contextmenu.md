@@ -24,9 +24,9 @@ When __RadRadialMenu__ is used as a context menu, you can set its __ShowEventNam
 
 __Example 1__ show how these properties can be used when the RadialContextMenu is attached to a TextBox:
 
-#### __[XAML] Example 1: Setting ShowEventName/HideEventName properties__
+__Example 1: Setting ShowEventName/HideEventName properties__
 
-{{region xaml-radradialmenu-features-contextmenu_0}}
+```XAML
 	<TextBox Text="Some Text">
 	    <telerik:RadRadialMenu.RadialContextMenu>
 	        <telerik:RadRadialMenu ShowEventName="GotFocus" HideEventName="LostFocus">
@@ -36,7 +36,7 @@ __Example 1__ show how these properties can be used when the RadialContextMenu i
 	        </telerik:RadRadialMenu>
 	    </telerik:RadRadialMenu.RadialContextMenu>
 	</TextBox>
-{{endregion}}
+```
 
 >importantThe values set to ShowEventName/HideEventName should be valid event names of the target element.
 
@@ -48,9 +48,9 @@ __RadialMenuCommands__ class can be used in the following ways:
 
 * With the Telerik [EventToCommandBehavior:]({%slug common-event-to-command-behavior%}) __Example 2__ shows how you can use EventToCommandBehavior to bind the Show/Hide commands to any of the target element's events:            
 
-	#### __[XAML] Example 2: Using EventToCommandBehavior__
+	__Example 2: Using EventToCommandBehavior__
 
-	{{region xaml-radradialmenu-features-contextmenu_1}}
+	```XAML
 		<TextBox Text="Some Text">
 		    <telerik:EventToCommandBehavior.EventBindings>
 		        <telerik:EventBinding EventName="GotFocus" Command="{x:Static telerik:RadialMenuCommands.Show}" />
@@ -62,13 +62,13 @@ __RadialMenuCommands__ class can be used in the following ways:
 		        </telerik:RadRadialMenu>
 		    </telerik:RadRadialMenu.RadialContextMenu>
 		</TextBox>
-	{{endregion}}
+	```
 
 * With InputBindings - you can add KeyBinding, for example, to the InputBindings collection of the target element in order to show/hide the RadialContextMenu when pressing a certain key. __Example 3__ demonstrates how to define showing it on clicking Ctrl+M and hiding it on clicking Escape key.         
 
-	#### __[XAML] Example 3: Using InputBindings__
+	__Example 3: Using InputBindings__
 
-	{{region xaml-radradialmenu-features-contextmenu_2}}
+	```XAML
 		<TextBox Text="Some Text">
 		    <TextBox.InputBindings>
 		        <KeyBinding Modifiers="Control" Key="M" Command="{x:Static telerik:RadialMenuCommands.Show}" />
@@ -80,18 +80,18 @@ __RadialMenuCommands__ class can be used in the following ways:
 		        </telerik:RadRadialMenu>
 		    </telerik:RadRadialMenu.RadialContextMenu>
 		</TextBox>
-	{{endregion}}
+	```
 
 * In code-behind - __Example 4__ shows how you can explicitly call Show/Hide commands in code-behind.
 
-	#### __[C#] Example 4: In code-behind__
+	__Example 4: In code-behind__
 
-	{{region cs-radradialmenu-features-contextmenu_3}}
+	```C#
 		//show the RadialContextMenu
 		RadialMenuCommands.Show.Execute(null, textBox1);
 		
 		//hide the RadialContextMenu
 		RadialMenuCommands.Hide.Execute(null, textBox1);
-	{{endregion}}
+	```
 
 	where *textBox1* is the name of the target element to which the RadialContextMenu is attached.

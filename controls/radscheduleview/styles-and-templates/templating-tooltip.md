@@ -16,7 +16,7 @@ If you have for example __RadScheduleView__ set up the following way:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-tooltip_0}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	        <telerik:DayViewDefinition />
@@ -36,13 +36,13 @@ If you have for example __RadScheduleView__ set up the following way:
 	        </telerik:GroupDescriptionCollection>
 	    </telerik:RadScheduleView.GroupDescriptionsSource>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 And you want to replace the default ToolTip with custom one which shows the full information of the Appointment including the location of the Appoinment. In this case you can use the ToolTipTemplate property of the __RadScheduleView__. Firstly you need to define appropriate DataTemplate as a resource like shown below:       
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-tooltip_1}}
+```XAML
 	<DataTemplate x:Key="ToolTipTemplate">
 	    <Grid>
 	        <Grid.RowDefinitions>
@@ -73,7 +73,7 @@ And you want to replace the default ToolTip with custom one which shows the full
 	        </StackPanel>
 	    </Grid>
 	</DataTemplate>
-{{endregion}}
+```
 
 >Note that the ToolTip receives object of type AppointmentItemProxy as a DataContext which contains the actual Appointment. You can easily bind to its properties like shown above.          
 
@@ -83,11 +83,11 @@ Aftewards you just need to set the DataTemplate as a __ToolTipTemplate__ the fol
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-tooltip_2}}
+```XAML
 	<telerik:RadScheduleView ToolTipTemplate="{StaticResource ToolTipTemplate}" ... >
 	    ...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 And here is the final result:
 
 ![radscheduleview-styles-and-templates-templating-tooltip](images/radscheduleview-styles-and-templates-templating-tooltip.png)

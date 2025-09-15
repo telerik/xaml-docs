@@ -25,7 +25,7 @@ The final result should look like the snapshot below:
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_0}}
+	```C#
 		public class Team
 		{
 			public Team( string name )
@@ -38,11 +38,11 @@ The final result should look like the snapshot below:
 				set;
 			}
 		}
-		{{endregion}}
+		```
 
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_1}}
+	```VB.NET
 		Public Class Team
 			Public Sub New(ByVal name As String)
 				Me.Name = name
@@ -58,13 +58,13 @@ The final result should look like the snapshot below:
 				End Set
 			End Property
 		End Class
-		{{endregion}}
+		```
 		
 * Create a new class named __Division__. The class has a single string property - __Name__ and a collection with teams.
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_2}}
+	```C#
 		public class Division
 		{
 			public Division( string name )
@@ -83,11 +83,11 @@ The final result should look like the snapshot below:
 				set;
 			}
 		}
-		{{endregion}}
+		```
 
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_3}}
+	```VB.NET
 		Public Class Division
 			Public Sub New(ByVal name As String)
 				Me.Name = name
@@ -114,13 +114,13 @@ The final result should look like the snapshot below:
 				End Set
 			End Property
 		End Class
-		{{endregion}}
+		```
 
 * Create a new class named __League__. The class has a single string property and a collection with divisions objects. Practically, a collection of __League__ objects will be the data source for the treeview.
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_4}}
+	```C#
 		public class League
 		{
 			public League( string name )
@@ -139,11 +139,11 @@ The final result should look like the snapshot below:
 				set;
 			}
 		}
-		{{endregion}}
+		```
 
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_5}}
+	```VB.NET
 		Public Class League
 			Public Sub New(ByVal name As String)
 				Me.Name = name
@@ -170,13 +170,13 @@ The final result should look like the snapshot below:
 				End Set
 			End Property
 		End Class
-		{{endregion}}
+		```
 
 * Create a new class named __RadTreeViewSampleData__. This will be the data source (the model) for the __RadTreeView__. The class has a reference to an __ObservableCollection__ of __League__ objects and a single method which initializes the data.
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_6}}
+	```C#
 		public class RadTreeViewSampleData
 		{
 			public RadTreeViewSampleData()
@@ -231,11 +231,11 @@ The final result should look like the snapshot below:
 				d.Teams.Add( new Team( "Team Epsilon" ) );
 			}
 		}
-		{{endregion}}
+		```
 		
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object_7}}
+	```VB.NET
 		Public Class RadTreeViewSampleData
 			Public Sub New()
 				Me.InitializeLeaguesDataSource()
@@ -298,7 +298,7 @@ The final result should look like the snapshot below:
 				Return value
 			End Function
 		End Class
-		{{endregion}}
+		```
 
 * The next step is to declare the __RadTreeViewSampleData__ as a resource in your application.
 			
@@ -306,22 +306,22 @@ The final result should look like the snapshot below:
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object-0}}
+	```XAML
 		<UserControl.Resources>
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 		</UserControl.Resources>
-		{{endregion}}
+		```
 
 	{% endif %}
 	{% if site.site_name == 'WPF' %}
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object-1}}
+	```XAML
 		<Window.Resources>
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 		</Window.Resources>
-		{{endregion}}
+		```
 
 	{% endif %}
 
@@ -334,7 +334,7 @@ The final result should look like the snapshot below:
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object-2}}
+	```XAML
 		<UserControl.Resources>
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 		
@@ -350,14 +350,14 @@ The final result should look like the snapshot below:
 				<TextBlock Text="{Binding Name}" />
 			</telerik:HierarchicalDataTemplate>
 		</UserControl.Resources>
-		{{endregion}}
+		```
 
 	{% endif %}
 	{% if site.site_name == 'WPF' %}
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object-3}}
+	```XAML
 		<Window.Resources>
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 		
@@ -374,7 +374,7 @@ The final result should look like the snapshot below:
 			</HierarchicalDataTemplate>
 		
 		</Window.Resources>
-		{{endregion}}
+		```
 
 	{% endif %}
 
@@ -382,11 +382,11 @@ The final result should look like the snapshot below:
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-data-binding-to-object-4}}
+	```XAML
 		<telerik:RadTreeView
 			   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 			   ItemTemplate="{StaticResource League}" />
-		{{endregion}}
+		```
 
 * If you run the demo, the final result should look like the snapshot below. 
 ![{{ site.framework_name }} RadTreeView Binding to ObservableCollection](images/RadTreeView_PopulatingWithDataBindingToObject_010.PNG)

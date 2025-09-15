@@ -49,36 +49,36 @@ When the __SelectionUnit__ of __RadVirtualGrid__ is set to __Column__, all cells
 
 * __SelectedCellsChanging__ - raised when the __SelectedCells__ collection is about to change. The event arguments expose the following specific properties: __AddedItems__ - a collection of the item(s) that has/have been added to the selection. __RemovedItems__ - a collection of the item(s) that has/have been removed from the selection. __IsCancelable__ - gets a value that indicates whether the event is cancelable. __Cancel__ - a boolean property that enables canceling the selection.
 
-#### __[C#] Example 1: Subscribing to the SelectionCellsChanging event__
+__Example 1: Subscribing to the SelectionCellsChanging event__
 
-{{region radvirtualgrid-selection-selection_0}}
+```C#
 	private void VirtualGrid_SelectedCellsChanging(object sender, VirtualGridSelectedCellsChangingEventArgs e)
         {
 
         }
-{{endregion}}
+```
 
 * __SelectedCellsChanged__ - raised when the __SelectedCells__ collection has changed. The event arguments expose the following specific properties: __AddedItems__ and __RemovedItems__. 
 
-#### __[C#] Example 2: Subscribing to the SelectionCellsChanged event__
+__Example 2: Subscribing to the SelectionCellsChanged event__
 
-{{region radvirtualgrid-selection-selection_1}}
+```C#
 	private void VirtualGrid_SelectedCellsChanged(object sender, VirtualGridSelectedCellsChangedEventArgs e)
         {
 
         }
-{{endregion}}
+```
 
 * __SelectionChanged__ - raised when the selection of the control has changed. It is triggered only when the __SelectionUnit__ is different from __Cell__. The event arguments expose the following specific properties: __AddedItems__ and __RemovedItems__. 
 
-#### __[C#] Example 3: Subscribing to the SelectionChanged event__
+__Example 3: Subscribing to the SelectionChanged event__
 
-{{region radvirtualgrid-selection-selection_2}}
+```C#
 	  private void VirtualGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
-{{endregion}}
+```
 
 ## See Also
 

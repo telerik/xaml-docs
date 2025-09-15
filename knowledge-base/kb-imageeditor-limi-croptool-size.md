@@ -33,8 +33,8 @@ How to define the minimum and maximum size for the CropTool in RadImageEditor.
 3. Susbcribe to the `CropRectChanged` event of CropAdorner.
 4. In the event handler limit the size of the adorner, by setting its `CropRect` property. You can expose additional properties on the custom crop tool class which can hold the min and max sizes.
 
-#### __[C#]__
-{{region kb-imageeditor-limi-croptool-size-0}}
+
+```C#
 	public class CustomCropTool : CropTool
 	{
 		public Size MaxCropSize { get; set; }
@@ -57,16 +57,16 @@ How to define the minimum and maximum size for the CropTool in RadImageEditor.
 			this.cropAdorner.CropRect = new Rect(currentRect.Location, new Size(w, h));
 		}
 	}
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-imageeditor-limi-croptool-size-1}}
+
+```XAML
 	<telerik:ImageToolItem ImageKey="Crop" Text="Crop" Command="commands:ImageEditorRoutedCommands.ExecuteTool">
 		<telerik:ImageToolItem.CommandParameter>
 			<local:CustomCropTool x:Name="cropTool" MaxCropSize="300, 300" MinCropSize="100, 100" InitialSize="200, 200"   />
 		</telerik:ImageToolItem.CommandParameter>
 	</telerik:ImageToolItem>
-{{endregion}}
+```
 
 ## See Also
 * [CropTool]({%slug radimageeditor-tools-crop%})

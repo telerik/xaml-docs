@@ -30,8 +30,8 @@ How to exclude columns from the [column chooser in the control panel]({%slug gri
 
 1. Create an **IValueConverter** with your custom predicate to filter the columns.
 
-	#### __[XAML] Example 1: Exclude the columns bound to the IsDeleted property from the column chooser__
-	{{region kb-kb-gridview-exclude-columns-from-column-chooser-0}}
+	__Example 1: Exclude the columns bound to the IsDeleted property from the column chooser__
+	```XAML
 		public class ColumnsConverter : IValueConverter
 		{
 			public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -46,12 +46,12 @@ How to exclude columns from the [column chooser in the control panel]({%slug gri
 				throw new NotImplementedException();
 			}
 		}
-	{{endregion}}
+	```
 
 2. Use the converter in the binding to the **Columns** property.
 	
-	#### __[XAML]__
-	{{region kb-gridview-remove-search-cell-background-0}}
+	
+	```XAML
 		<telerik:ControlPanelItem ButtonTooltip="Column chooser">
 			<telerik:ControlPanelItem.ContentTemplate>
 				<DataTemplate>
@@ -68,7 +68,7 @@ How to exclude columns from the [column chooser in the control panel]({%slug gri
 				</DataTemplate>
 			</telerik:ControlPanelItem.ContentTemplate>
 		</telerik:ControlPanelItem>
-	{{endregion}}
+	```
 
 ## See Also  
 

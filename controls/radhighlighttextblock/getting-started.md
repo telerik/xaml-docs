@@ -31,19 +31,19 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add RadHighlightTextBlock manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Adding RadHighlightTextBlock in XAML__
-{{region radhighlighttextblock-getting-started-0}}
+__Adding RadHighlightTextBlock in XAML__
+```XAML
     <telerik:RadHighlightTextBlock/>
-{{endregion}}
+```
 
 ## Setting Text and Highlighting Part of It
 
 The RadHighlightTextBlock control displays a text via its `Text` property. It will match and highlight part of the presented text by the value that is set to its `HighlightText` property.
 
-#### __[XAML] Setting text and highlighting part of it__
-{{region radhighlighttextblock-getting-started-1}}
+__Setting text and highlighting part of it__
+```XAML
     <telerik:RadHighlightTextBlock Text="Thank you for choosing Telerik UI for WPF." HighlightText="Telerik UI for WPF"/>
-{{endregion}}
+```
 
 __RadHighlightTextBlock with a highlighted match__
 
@@ -53,13 +53,13 @@ __RadHighlightTextBlock with a highlighted match__
 
 The RadHighlightTextBlock exposes two properties that will allow you to change the color of the foreground and background of the highlighted matches. To do so, set the `HighlightBackground` and `HighlightForeground` properties.
 
-#### __[XAML] Setting the HighlightBackground and HighlightForeground properties__
-{{region radhighlighttextblock-getting-started-2}}
+__Setting the HighlightBackground and HighlightForeground properties__
+```XAML
 	<telerik:RadHighlightTextBlock Text="Thank you for choosing Telerik UI for WPF." 
 	                               HighlightText="Telerik UI for WPF"
 	                               HighlightBackground="LightCyan"
 	                               HighlightForeground="Red"/>
-{{endregion}}
+```
 
 __RadHighlightTextBlock with custom brushes for the HighlightBackground and HighlightForeground properties__
 
@@ -69,12 +69,12 @@ __RadHighlightTextBlock with custom brushes for the HighlightBackground and High
 
 RadHighlightTextBlock allows you to control how the highlighting will be applied. To the first found match, the last found one, or all occurrences. To control this behavior, set the `HighlightMode` property. The available options are `FirstMatch`, `LastMatch`, and `AllMatches`. The default value is `FirstMatch`.
 
-#### __[XAML] Setting the HighlightMode to AllMatches__
-{{region radhighlighttextblock-getting-started-3}}
+__Setting the HighlightMode to AllMatches__
+```XAML
 	<telerik:RadHighlightTextBlock HighlightMode="AllMatches"
                                	   Text="Thank you for choosing Telerik UI for WPF. To learn mode please visit the Telerik UI for WPF product overview page."
                                    HighlightText="Telerik UI for WPF"/>
-{{endregion}}
+```
 
 __RadHighlightTextBlock with highlighting all the matches__
 
@@ -94,8 +94,8 @@ The controls from our suite support different themes. You can see how to apply a
 
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__
-{{region radhighlighttextblock-getting-started-4}}
+__Merge the ResourceDictionaries__
+```XAML
     <Application.Resources>
     	<ResourceDictionary>
     		<ResourceDictionary.MergedDictionaries>
@@ -104,7 +104,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
     		</ResourceDictionary.MergedDictionaries>
     	</ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can change the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

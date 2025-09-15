@@ -27,8 +27,8 @@ The Caret class represents the caret in the RadDocument object. It exposes the f
 
 The following example showcases how to disable asynchronous text addition when typing fast:
 
-#### __[C#] Creating a custom caret__
-{{region radrichtextbox-features-caret-0}}
+__Creating a custom caret__
+```C#
     public class MyCaret : Caret
     {
         public MyCaret()
@@ -37,14 +37,14 @@ The following example showcases how to disable asynchronous text addition when t
             this.EnableAsynchronousTextInsertion = false;
         }
     }
-{{endregion}}
+```
 
 ## Caret Factory
 
 RadRichTextBox allows you to define a custom caret factory. To do so, create a class and implement the `ICaretFactory` interface. This factory is used to return a new instance of your custom Caret class via the `CreateCaret` method. To set it on the RadRichTextBox instance, use its `CaretFactory` property.
 
-#### __[C#] Creating a custom caret factory__
-{{region radrichtextbox-features-caret-1}}
+__Creating a custom caret factory__
+```C#
     public class MyCaretFactory : ICaretFactory
     {
         public Caret CreateCaret()
@@ -52,11 +52,11 @@ RadRichTextBox allows you to define a custom caret factory. To do so, create a c
             return new MyCaret();
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Setting the custom caret factory to the RadRichTextBox control__
-{{region radrichtextbox-features-caret-2}}
+__Setting the custom caret factory to the RadRichTextBox control__
+```XAML
     this.radRichTextBox.CaretFactory = new MyCaretFactory();
-{{endregion}}
+```
 
 >tip You can find a runnable project with a customization to the caret functionality of the RadRichTextBox control in our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret). Additionally, you can view it in our [SDK Samples Browser](sdk-samples-browser) application under the name __Custom Caret__.

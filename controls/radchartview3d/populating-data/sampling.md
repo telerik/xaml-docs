@@ -18,8 +18,8 @@ __ChartDataSource__ is the class used to apply sampling on the original data. Th
 
 __ChartDataSource__ implements the IEnumerable interface which allows you to assing it to the ItemsSource property of a chart 3D series.
 
-#### __[XAML] Example 1: Setting ChartDataSource__
-{{region xaml-radchartview3d-populating-data-sampling-0}}	
+__Example 1: Setting ChartDataSource__
+```XAML	
 	<Grid>
 		<telerik:ChartDataSource x:Name="chartDataSource" ItemsSource="{Binding Items}" SamplingThreshold="10" />
 		<telerik:RadCartesianChart3D>		
@@ -31,7 +31,7 @@ __ChartDataSource__ implements the IEnumerable interface which allows you to ass
 			</telerik:RadCartesianChart3D.Series>
 		</telerik:RadCartesianChart3D>
 	</Grid>
-{{endregion}}
+```
 
 Let's say that the original set of data from __Example 1__ called "Items" contains 100 items. With SamplingThreshold set to 10, the chart will try to create 10 DataPoint3D models and add them to the DataPoints collection of the series.
 

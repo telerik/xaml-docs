@@ -24,8 +24,8 @@ The next steps show how to create and set a custom DropDownItemTemplate to the R
 
 1. Next we need to create a valid __DataTemplate__ and set the necessary binding for the __Name__, __Capital__ properties of the ItemsSource items:
 
-#### __[XAML] Example 1: Declaring valid DataTemplate__
-{{region xaml-radautocompletebox-customizing-drop-down-itemtemplate-0}}
+__Example 1: Declaring valid DataTemplate__
+```XAML
 	<DataTemplate x:Key="CustomDropDownItemTemplate">
 		<Border BorderBrush="Gray" BorderThickness="1" Margin="2">
 			<Grid>
@@ -60,17 +60,17 @@ The next steps show how to create and set a custom DropDownItemTemplate to the R
 			</Grid>
 		</Border>
 	</DataTemplate>
-{{endregion}}
+```
 
 1. Finally you will need to declare the __RadAutoCompleteBox__ in the xaml and set its __ItemsSource__, __DisplayMemberPath__ and __DropDownItemTemplate__ properties:
 
-#### __[XAML] Example 2: Setting the DropDownItemTemplate__
-{{region xaml-radautocompletebox-customizing-drop-down-itemtemplate-1}}
+__Example 2: Setting the DropDownItemTemplate__
+```XAML
 	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}"
 								Width="200"
 								DisplayMemberPath="Name"
 								DropDownItemTemplate="{StaticResource CustomDropDownItemTemplate}"/>
-{{endregion}}
+```
 
 The next screenshots show the final result:
 #### __Figure 1__
@@ -86,8 +86,8 @@ The next screenshots show the final result:
 
 This section will describe how you can create a custom __DropDownItemTemplateSelector__ in order to display different template depending on a property. We are going to extend the __Example 1__. First, we need to create a class which derives from __DataTemplateSelector__ and overrides the SelectTemplate method. Inside the method, we can return different template depending on our condition.
 
-#### __[XAML]Example 3: Custom DataTemplateSelector class__
-{{region xaml-radautocompletebox-customizing-drop-down-itemtemplate-0}}
+__Example 3: Custom DataTemplateSelector class__
+```XAML
 	public class MyDropDownItemTemplateSelector : DataTemplateSelector
 	{
 		public DataTemplate CustomDropDownItemTemplate { get; set; }
@@ -103,12 +103,12 @@ This section will describe how you can create a custom __DropDownItemTemplateSel
 			return CustomDropDownItemTemplate;
 		}
 	}
-{{endregion}}
+```
 
 The next step is to specify the MyDropDownItemTemplateSelector in the Resources of the Window and set our custom templates. Then we can set our custom DataTemplateSelector to the __DropDownItemTemplateSelector__ property.
 
-#### __[XAML] Example 4: Setting the DropDownItemTemplateSelector__
-{{region xaml-radautocompletebox-customizing-drop-down-itemtemplate-1}}
+__Example 4: Setting the DropDownItemTemplateSelector__
+```XAML
 	<Window.Resources>
         <DataTemplate x:Key="CustomDropDownItemTemplate">
             <Border BorderBrush="Gray" BorderThickness="1" Margin="2">
@@ -158,7 +158,7 @@ The next step is to specify the MyDropDownItemTemplateSelector in the Resources 
                                 DisplayMemberPath="Name" 
                                 DropDownItemTemplateSelector="{StaticResource dropDownItemTemplateSelector}"/>
     </Grid>
-{{endregion}}
+```
 
 ![radautocompletebox-customizing-drop-down-itemtemplate-1](images/radautocompletebox-customizing-drop-down-itemtemplate-selector.png)
 

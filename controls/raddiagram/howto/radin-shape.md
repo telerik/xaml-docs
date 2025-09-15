@@ -18,7 +18,7 @@ Let's start by defining a __RadDiagram__ instance in our view:
 
 #### __XAML__
 
-{{region raddiagram-howto-radcontrols-in-shape-0}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -34,13 +34,13 @@ Let's start by defining a __RadDiagram__ instance in our view:
 							Zoom="1">
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 Next, we can add a __RadDiagramShape__ that contains a __RadGridView__ component. We will define these controls in our XAML view:
 
 #### __XAML__
 
-{{region raddiagram-howto-radcontrols-in-shape-1}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -73,7 +73,7 @@ Next, we can add a __RadDiagramShape__ that contains a __RadGridView__ component
 			</telerik:RadDiagramShape>
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 If you run the solution at this point, you should get the following diagramming structure:
 ![raddiagram-howto-radcontrols-empty-gridview](images/raddiagram-howto-radcontrols-empty-gridview.png)
@@ -82,7 +82,7 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 
 #### __C#__
 
-{{region raddiagram-howto-radcontrols-in-shape-0}}
+```C#
 	public class ProductSales
 	{
 	    public ProductSales(int quantity, int month, string monthName)
@@ -96,11 +96,11 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 	    public int Month { get; set; }
 	    public string MonthName { get; set; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-howto-radcontrols-in-shape-0}}
+```VB.NET
 	Public Class ProductSales
 	    Public Sub New(quantity As Integer, month As Integer, monthName As String)
 	        Me.Quantity = quantity
@@ -136,13 +136,13 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 	    End Property
 	    Private m_MonthName As String
 	End Class
-{{endregion}}
+```
 
 Next in our code-behind we can create a method that returns a list of __ProductSales__ and use its result as a __DataContext__ of the view:        
 
 #### __C#__
 
-{{region raddiagram-howto-radcontrols-in-shape-1}}
+```C#
 	private static List<ProductSales> GetProductSales()
 	{
 	    var persons = new List<ProductSales>
@@ -167,11 +167,11 @@ Next in our code-behind we can create a method that returns a list of __ProductS
 	    InitializeComponent();
 	    this.DataContext = GetProductSales();
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-howto-radcontrols-in-shape-1}}
+```VB.NET
 	Private Shared Function GetProductSales() As List(Of ProductSales)
 	    Dim persons = New List(Of ProductSales)() From {
 	        New ProductSales(154, 1, "January"),
@@ -193,7 +193,7 @@ Next in our code-behind we can create a method that returns a list of __ProductS
 	    InitializeComponent()
 	    Me.DataContext = GetProductSales()
 	End Sub
-{{endregion}}
+```
 
 Now if we run the solution we will have a populated __RadGridView__ control inside the __RadDiagramShape__.
 ![raddiagram-howto-radcontrols-gridview](images/raddiagram-howto-radcontrols-gridview.png)
@@ -202,7 +202,7 @@ We can also define a shape in the code-behind file and set its content to any Ra
 
 #### __C#__
 
-{{region raddiagram-howto-radcontrols-in-shape-2}}
+```C#
 	public Example()
 	{
 	    InitializeComponent();
@@ -227,11 +227,11 @@ We can also define a shape in the code-behind file and set its content to any Ra
 	    };
 	    this.diagram.AddShape(calendar);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-howto-radcontrols-in-shape-2}}
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.DataContext = GetProductSales()
@@ -257,7 +257,7 @@ We can also define a shape in the code-behind file and set its content to any Ra
 	    }
 	    Me.diagram.AddShape(calendar)
 	End Sub
-{{endregion}}
+```
 
 Running the project now should display two shapes within the __RadDiagram__ instance:
 ![raddiagram-howto-radcontrols](images/raddiagram-howto-radcontrols.png)
@@ -266,7 +266,7 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 
 #### __C#__
 
-{{region raddiagram-howto-radcontrols-in-shape-3}}
+```C#
 	private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
 	{
 	    // the alternative to this code-approach is to set the ContentTemplate in XAML
@@ -282,11 +282,11 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 	    con.SourceCapType = CapType.Arrow6Filled;
 	    con.TargetCapType = CapType.Arrow2Filled;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-howto-radcontrols-in-shape-3}}
+```VB.NET
 	Private Sub OnLoaded(sender As Object, routedEventArgs As RoutedEventArgs) '
 	    ' the alternative to this code-approach is to set the ContentTemplate in XAML '
 	    ' See the documentation on this, http://www.telerik.com/help/wpf/raddiagrams-features-shapes.html
@@ -300,7 +300,7 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 	    con.SourceCapType = CapType.Arrow6Filled
 	    con.TargetCapType = CapType.Arrow2Filled
 	End Sub
-{{endregion}}
+```
 
 ![raddiagram-howto-radcontrols-link](images/raddiagram-howto-radcontrols-link.png)
 

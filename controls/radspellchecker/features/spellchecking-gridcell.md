@@ -30,7 +30,7 @@ After that you can set the attached property telerik:RadGridViewSpellCheckHelper
 
 #### __XAML__
 
-{{region radspellchecker-spellchecking-gridcell_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
 	   <telerik:RadGridView.Columns>
 	      <telerik:GridViewDataColumn telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
@@ -47,7 +47,7 @@ After that you can set the attached property telerik:RadGridViewSpellCheckHelper
 	      </telerik:GridViewDataColumn>
 	   </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 
 
@@ -62,12 +62,12 @@ This approach is a little more complex than the former one. Here we can use diff
 
 #### __C#__
 
-{{region radspellchecker-spellchecking-gridcell_1}}
+```C#
 	private void spellcheckBButton_Click(object sender, RoutedEventArgs e)
 	{
 	    RadGridViewSpellCheckHelper.CheckChildControl(this.radGridView, "textBox1");
 	}
-	{{endregion}}
+	```
 
 
 
@@ -79,7 +79,7 @@ Here is an example of the XAML:
 
 #### __XAML__
 
-{{region radspellchecker-spellchecking-gridcell_2}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding}">
 	   <telerik:RadGridView.Columns>
 	      <telerik:GridViewDataColumn >
@@ -101,7 +101,7 @@ Here is an example of the XAML:
 	      </telerik:GridViewDataColumn>
 	   </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 
 

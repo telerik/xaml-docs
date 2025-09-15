@@ -28,17 +28,17 @@ In some cases, it is convenient to extend the currently available fields to suit
 
 This topic will list the steps for creating such a custom field.
 
-#### __[C#] Example 1: Inherit from MergeField or CodeBasedField__
+__Example 1: Inherit from MergeField or CodeBasedField__
 
-{{region radrichtextbox-features-custom-fields_0}}
+```C#
 
 	    public class CustomField : CodeBasedField
-{{endregion}}
+```
 
 
 
-#### __[C#] Example 2: Give a FieldTypeName to instances of your field__
-{{region radrichtextbox-features-custom-fields_1}}
+__Example 2: Give a FieldTypeName to instances of your field__
+```C#
 
     private static readonly string FieldType = "CUSTOMFIELD";
     public override string FieldTypeName
@@ -48,30 +48,30 @@ This topic will list the steps for creating such a custom field.
             return CustomField.FieldType;
         }
     }
-{{endregion}}
+```
 
 The field type is shown when the field is in code mode, just after the opening curly bracket. If you toggle the field to **Code** mode and modify this first word, the type of the field will also change. That is why it is important to give a meaningful name to the field.
 
 Register your custom field type in the factory that RadDocument uses. To ensure the field is always registered for the application, make sure it has been registered **before initializing RadRichTextBox**. 
 
-#### __[C#] Example 3: Register the custom field__
+__Example 3: Register the custom field__
 	
-{{region radrichtextbox-features-custom-fields_2}}
+```C#
 
 	CodeBasedFieldFactory.RegisterFieldType(CustomField.FieldType, () => new CustomField());
-{{endregion}}
+```
 	
 The function passed as a second parameter essentially tells the document how it could create a new instance of the field. This is required because fields have to be created internally when you copy/paste or even when you toggle field modes.
 
-#### __[C#] Example 3: Override the CreateInstance() method to return a new instance of your custom field__
+__Example 3: Override the CreateInstance() method to return a new instance of your custom field__
 	
-{{region radrichtextbox-features-custom-fields_3}}
+```C#
 
     public override Field CreateInstance()
     {
         return new CustomField();
     }
-{{endregion}}
+```
 
 
 If you have inherited from **CodeBasedField** or you would like to customize the way the field appears in the document in **ResultMode**, you can override the **GetResultFragment()** method. In short, it will return a **DocumentFragment** with the content that should be shown when the field is updated and its mode is changed to **Result**.
@@ -83,15 +83,15 @@ That is all that needs to be done in order to be able to get your custom field w
 
 If you would like to add some properties to this field, similar to the PropertyPath field of MergeFields, you can do so following the steps bellow:
 
-#### __[C#] Example 4: Create a readonly FieldProperty__
+__Example 4: Create a readonly FieldProperty__
 
-{{region radrichtextbox-features-custom-fields_4}}
+```C#
     private readonly FieldProperty myProperty;
-{{endregion}}
+```
 
-#### __[C#] Example 5: Add a public CLR property__ 
+__Example 5: Add a public CLR property__ 
 	
-{{region radrichtextbox-features-custom-fields_5}}
+```C#
 
     [XamlSerializable]
     public string MyProperty
@@ -111,59 +111,59 @@ If you would like to add some properties to this field, similar to the PropertyP
             this.InvalidateCode();
         }
     }
-{{endregion}}
+```
 
 Properties of type string can be set and retrieved from the FieldProperty directly. No other types are accepted, as it would not be possible to convert them correctly to text for the purpose of field evaluation when inserted in the document. Therefore, if you would like to have non-string properties, you would have to make the conversion to/from string yourself.
 
 The XamlSerializable attribute ensures that this property will be exported and imported to/from XAML when XamlFormatProvider is used. The other part of the code ensures that the field will be reset only if the new value is different and that the code will be invalidated, so as to be correctly updated on the next pass.
 
-#### __[C#] Example 6: Declare a static FieldPropertyDefinition wired to your property__
-{{region radrichtextbox-features-custom-fields_6}}
+__Example 6: Declare a static FieldPropertyDefinition wired to your property__
+```C#
 
     public static readonly FieldPropertyDefinition MyPropertyProperty = new FieldPropertyDefinition("MyProperty");
-{{endregion}}
+```
 
 
-#### __[C#] Example 7: Make sure to initialize the FieldProperty in the constructor of your field__
+__Example 7: Make sure to initialize the FieldProperty in the constructor of your field__
 
-{{region radrichtextbox-features-custom-fields_7}}
+```C#
 
     public CustomField()
     {
         this.myProperty = new FieldProperty(this, CustomField.MyPropertyProperty);
     }
-{{endregion}}
+```
 
 
-#### __[C#] Example 8: Ensure that your custom property is copied along with the other field properties__
+__Example 8: Ensure that your custom property is copied along with the other field properties__
 
-{{region radrichtextbox-features-custom-fields_8}}
+```C#
 
     protected override void CopyPropertiesFromCodeExpression(FieldCodeExpression fieldCodeExpression)
     {
         base.CopyPropertiesFromCodeExpression(fieldCodeExpression);
         this.myProperty.SetValue(fieldCodeExpression.FieldArgumentNode);
     }
-{{endregion}}
+```
 
 This method is used when a field is created from field fragment. This happens when you update a field and is what enables changing the property path of a merge field by typing in the editor or even changing a PageField to a DateField. As the type of the new field is inferred from the text in the document, it is required that the field be created anew and the respective properties must be copied as well.
 
-#### __[C#] Example 9: Add the custom property to the code fragment of the field__
+__Example 9: Add the custom property to the code fragment of the field__
 	
-{{region radrichtextbox-features-custom-fields_9}}
+```C#
 
     protected override void BuildCodeOverride()
     {
         base.BuildCodeOverride();
         this.CodeBuilder.SetFieldArgument(this.myProperty);
     }
-{{endregion}}
+```
 
 This method is invoked when the **CodeFragment** of the field is requested. In it, the field arguments and switches must be added, so that they are properly included in the field.
 	
-#### __[C#] Example 10: Ensure the custom property is copied__
+__Example 10: Ensure the custom property is copied__
 	
-{{region radrichtextbox-features-custom-fields_10}}
+```C#
 
     public override void CopyPropertiesFrom(Field fromField)
     {
@@ -171,21 +171,21 @@ This method is invoked when the **CodeFragment** of the field is requested. In i
         CustomField customField = (CustomField)fromField;
         this.myProperty.CopyPropertiesFrom(customField.myProperty);
     }
-{{endregion}}
+```
 
 As field ranges are copyable, this method must be overridden in order to ensure that the added properties will also be copied.
 
 If you like, you can also customize the fragment that is returned when the **ResultFragment** is requested. This is done by overriding the GetResultFragment ()method. 
 
-#### __[C#] Example 11: Override GetResultFragment()__
+__Example 11: Override GetResultFragment()__
 	
-{{region radrichtextbox-features-custom-fields_11}}
+```C#
 
     protected override DocumentFragment GetResultFragment()
     {
         return DocumentFragment.CreateFromInline(new Span(this.MyProperty));
     }
-{{endregion}}
+```
 
 
 ## Integrating with UpdateAllFields Operation
@@ -194,12 +194,12 @@ Updating all fields in a document (by calling __UpdateAllFields__ method) is a c
 
 To change the default update order and behavior, additional update information can be registered for a field type using the __FieldsUpdateManager__ static class.
 
-#### __[C#] Example 12: Control the update order__
+__Example 12: Control the update order__
 
-{{region radrichtextbox-features-custom-fields_12}}
+```C#
 
 	FieldsUpdateManager.RegisterFieldUpdateInfo(typeof(CustomField), new FieldTypeUpdateInfo() { Priority = -1000 });
-{{endregion}}
+```
 
 The properties influencing the update operation are grouped in __FieldTypeUpdateInfo__ class:
 

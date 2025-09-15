@@ -16,9 +16,9 @@ __ProductCard__ extends __ImageCard__ by adding a few more fields for additional
 * __Rating__: sets the rating value of the given card product
 * __Price__: the product price
 
-#### __[C#] Example 1: Defining a ProductCard__
+__Example 1: Defining a ProductCard__
 
-{{region radchat-messages-productcard_01}}
+```C#
 	  ProductCardMessage productCardMessage = new ProductCardMessage(this.currentAuthor);
             
             productCardMessage.Title = "Health Insurance";
@@ -33,7 +33,7 @@ __ProductCard__ extends __ImageCard__ by adding a few more fields for additional
             productCardMessage.Rating = 3;
 
             this.chat.AddMessage(productCardMessage);
-{{endregion}}
+```
 
 Adding such __ProductCard__ will result in the following message.
 

@@ -18,64 +18,64 @@ One very important aspect of the data binding is the __DataContext__. It is the 
 
 #### __XAML__
 
-{{region radtreeview-populating-with-data-databinding-overview_0}}
+```XAML
 	<telerik:RadTreeView DataContext="{StaticResource Categories}" />
-	{{endregion}}
+	```
 
 #### __C#__
 
-{{region radtreeview-populating-with-data-databinding-overview_1}}
+```C#
 	radTreeView.DataContext = new CategoryList();
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region radtreeview-populating-with-data-databinding-overview_2}}
+```VB.NET
 	radTreeView.DataContext = New CategoryList()
-	{{endregion}}
+	```
 
 The __DataContext__ property is inherited, e.g. if you assign a __DataContext__ to an element, all of its children will automatically have the same data context, unless you assign them a different data context. For example, if you have the following control structure: 
 
 #### __XAML__
 
-{{region radtreeview-populating-with-data-databinding-overview_3}}
+```XAML
 	<Grid x:Name="LayoutRoot">
 	    <telerik:RadTreeView x:Name="radTreeView1"/>
 	    <telerik:RadTreeView x:Name="radTreeView2"/>      
 	</Grid>
-	{{endregion}}
+	```
 	
 You can simply assign the __DataContext__ to the __Grid__ control and both tree views will inherit it.
 
 #### __XAML__
 
-{{region radtreeview-populating-with-data-databinding-overview_4}}
+```XAML
 	<Grid x:Name="LayoutRoot"DataContext="{StaticResource categories}">
-	{{endregion}}
+	```
 	
 Where the static resource __categories__ is defined in XAML as follows: 
 
 #### __XAML__
 
-{{region radtreeview-populating-with-data-databinding-overview_5}}
+```XAML
 	<UserControl.Resources>
 	  <local:CategoryList x:Key="categories" />
 	</UserControl.Resources>
-	{{endregion}}
+	```
 	
 Or in code-behind: 
 
 #### __C#__
 
-{{region radtreeview-populating-with-data-databinding-overview_6}}
+```C#
 	LayoutRoot.DataContext = new CategoryList();
-	{{endregion}}
+	```
 	
 #### __VB.NET__
 
-{{region radtreeview-populating-with-data-databinding-overview_7}}
+```VB.NET
 	LayoutRoot.DataContext = New CategoryList()
-	{{endregion}}
+	```
 
 ## See Also
  * [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%})

@@ -19,7 +19,7 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 For the purpose of this tutorial, let's define the following __RadTreeView__ control:		
 
 #### __XAML__
-{{region persistence-framework-save-stream_0}}
+```XAML
 	<telerik:RadTreeView x:Name="treeView">
 	    <telerik:RadTreeViewItem Header="Beverages">
 	        <telerik:RadTreeViewItem Header="Chai" />
@@ -44,49 +44,49 @@ For the purpose of this tutorial, let's define the following __RadTreeView__ con
 	        <telerik:RadTreeViewItem Header="Valkoinen suklaa" />
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 In order to persist the __RadTreeView__'s properties in a stream, you need to create an instance of the __PersistenceManager__:		
 
 #### __C#__
-{{region persistence-framework-save-stream_1}}
+```C#
 	private Stream stream;
 	private void Save(object sender, RoutedEventArgs e)
 	{
 	 PersistenceManager manager = new PersistenceManager();
 	 stream = manager.Save(treeView);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region persistence-framework-save-stream_2}}
+```VB.NET
 	Private stream As Stream
 	
 	Private Sub Save(sender As Object, e As RoutedEventArgs)
 		Dim manager As New PersistenceManager()
 		stream = manager.Save(treeView)
 	End Sub
-{{endregion}}
+```
 
 The persisted visual state of the __RadTreeView__ control can be restored using the __PersistencaManager__.__Load__ method:		
 
 #### __C#__
-{{region persistence-framework-save-stream_3}}
+```C#
 	private void Load(object sender, RoutedEventArgs e)
 	{
 	 PersistenceManager manager = new PersistenceManager();
 	 stream.Position = 0L;
 	 manager.Load(treeView, stream);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region persistence-framework-save-stream_4}}
+```VB.NET
 	Private Sub Load(sender As Object, e As RoutedEventArgs)
 		Dim manager As New PersistenceManager()
 	        stream.Position = 0L
 		manager.Load(treeView, stream)
 	End Sub
-{{endregion}}
+```
 
 >tip Please keep in mind that before loading the persisted data from a stream, you need to make sure that the stream's position matches the beginning of the persisted bytes. In case when the persisted data is saved in a new stream, before loading it, you should set the __Stream.Position__ to __0L__.

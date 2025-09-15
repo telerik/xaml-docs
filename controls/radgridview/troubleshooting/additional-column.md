@@ -28,9 +28,9 @@ You can use either of the following methods:
 
 #### __XAML__
 
-{{region xaml-gridview-troubleshooting-additional-column_0}}
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding Clubs}" ColumnWidth="*" />
-{{endregion}}
+```
 
 The result would be:
 
@@ -40,11 +40,11 @@ The result would be:
 
 #### __XAML__
 
-{{region xaml-gridview-troubleshooting-additional-column_1}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
 	            Header="Stadium" 
 	            Width="*"/>
-{{endregion}}
+```
 
 Now, the result would be:
 

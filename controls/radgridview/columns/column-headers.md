@@ -28,18 +28,18 @@ Usually the top cell of a column is called Header. Its purpose is to set a capti
 
 To set value for the header use the __Header__ property of the column. 
 
-#### __[XAML] Example 1: Setting the Header Property__
+__Example 1: Setting the Header Property__
 
-{{region xaml-gridview-columns-column-headers_0}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
 	                Header="ID" />
-{{endregion}}
+```
 
 The __Header__ property is of type __object__ and you are not limited to just using plain text. For example, you can add a corresponding picture to be displayed as header.
 
-#### __[XAML] Example 2: Setting Custom Content to the Header Property__
+__Example 2: Setting Custom Content to the Header Property__
 
-{{region xaml-gridview-columns-column-headers_1}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}">
 	    <telerik:GridViewDataColumn.Header>
 	        <StackPanel Orientation="Horizontal">
@@ -51,7 +51,7 @@ The __Header__ property is of type __object__ and you are not limited to just us
 	        </StackPanel>
 	    </telerik:GridViewDataColumn.Header>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 #### __Figure 2: Displaying custom content in column headers__ 
 
@@ -68,14 +68,14 @@ There are two elements on the headers that can be customized:
 
 Column headers can only be hidden by setting __ShowColumnHeaders__ property of __RadGridView__ to __False__.
 
-#### __[XAML] Example 3: Setting the ShowColumnHeaders property to False__
+__Example 3: Setting the ShowColumnHeaders property to False__
 
-{{region xaml-gridview-columns-column-headers_2}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                 ShowColumnHeaders="False">
 	    <!-- ... -->
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 #### __Figure 3: Hiding the column headers__ 
 
@@ -124,8 +124,8 @@ To learn more about the customizing of the headers please refer to the [Customiz
 As of __Q2 2016__, __GridViewHeaderCell__ exposes __TextWrapping__, __TextAlignment__, __TextTrimming__ and __TextDecorations__ properties. These customizations can be also applied on column level through the __HeaderTextWrapping__, __HeaderTextAlignment__, __HeaderTextTrimming__ and __HeaderTextDecorations__ properties. If the same property is set to __both elements__, the value of the one corresponding to __GridViewColumn__ will be respected.
 
 
-#### __[XAML] Example 5: Setting the Text Properties of GridViewHeaderCell and GridViewColumn__
-{{region xaml-gridview-columns-column-headers_3}}
+__Example 5: Setting the Text Properties of GridViewHeaderCell and GridViewColumn__
+```XAML
 	<Window.Resources>
 	    <Style TargetType="telerik:GridViewHeaderCell"
 	           		x:Key="HeaderCellStyle">
@@ -158,7 +158,7 @@ As of __Q2 2016__, __GridViewHeaderCell__ exposes __TextWrapping__, __TextAlignm
                                         HeaderTextDecorations="Underline"/>
     	</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 #### Figure 5: Setting the text properties of GridViewHeaderCell and GridViewColumn
 

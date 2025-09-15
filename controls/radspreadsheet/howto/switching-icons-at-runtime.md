@@ -19,12 +19,12 @@ The __IconResource__ extension is a markup extension that allows you to switch i
 __RadSpreadsheet__ comes with two separate sets of icons that can be used in its UI. They reside in the __Telerik.Windwos.Controls.Spreadsheet.dll__ and defining an __IconSources__ resource for them is demonstrated in __Example 1__.
 
 
-#### __[XAML] Example 1: Creating IconSources__
+__Example 1: Creating IconSources__
 
-{{region radspreadsheet-howto-switching-icons-at-runtime_0}}
+```XAML
 	<telerik:IconSources x:Key="SpreadsheetIconPaths" LightBasePath="/Telerik.Windows.Controls.Spreadsheet;component/Images/Light/"
                                DarkBasePath="/Telerik.Windows.Controls.Spreadsheet;component/Images/Dark/"/>
-{{endregion}}
+```
 
 
 >tipTo browse all icons you can download the source code of the controls from your Telerik account. The images are located at {%if site.site_name == 'WPF' %}\Telerik\_UI\_for\_WPF\_Source\_[Version]\Controls\Spreadsheet\Controls\Images\Light.{%endif%} {%if site.site_name == 'Silverlight' %} \Telerik\_UI\_for\_Silverlight\_Source\_[Version]\Controls\Spreadsheet\Controls\Images\Light.{%endif%}

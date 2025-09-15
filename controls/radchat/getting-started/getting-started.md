@@ -36,11 +36,11 @@ Before proceeding with adding __RadChat__ to your project, make sure the require
 
 You can add __Conversational UI__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadChat in XAML__
+__Example 1: Adding RadChat in XAML__
 
-{{region xaml-chat-getting-started_0}}
+```XAML
 	<telerik:RadChat x:Name="chat" />
-{{endregion}}
+```
 
 Running the application at this state will result in an empty chat.
 
@@ -52,9 +52,9 @@ Running the application at this state will result in an empty chat.
 
 Two authors will be defined for this example. Note, that the __CurrentAuthor__ property of __RadChat__  must be set.
 
-#### __[C#] Example 3: Adding Authors to RadChat__
+__Example 3: Adding Authors to RadChat__
 
-{{region cs-chat-getting-started_2}}
+```C#
 	public partial class MainWindow : Window
     {
         private Author currentAuthor;
@@ -69,11 +69,8 @@ Two authors will be defined for this example. Note, that the __CurrentAuthor__ p
             this.chat.CurrentAuthor = currentAuthor;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Adding Authors to RadChat__
-
-{{region vb-chat-getting-started_3}}
+```
+```VB.NET
 	Partial Public Class MainWindow
         Inherits Window
 
@@ -88,21 +85,21 @@ Two authors will be defined for this example. Note, that the __CurrentAuthor__ p
                 Me.chat.CurrentAuthor = currentAuthor
             End Sub
     End Class
-{{endregion}}
+```
 
 ## Handling the Sent Message
 
 The user's input can be handled by hooking up to the __SendMessage__ event of __RadChat__. The event arguments are of type __RoutedEventArgs__ which are extended by the __Message__ property.
 
-#### __[C#] Example 4: Subscribing to the SendMessage event__
-{{region xaml-chat-getting-started_4}}
+__Example 4: Subscribing to the SendMessage event__
+```C#
 	<telerik:RadChat x:Name="chat" SendMessage="RadChat_SendMessage" />
-{{endregion}}
+```
 
 
-#### __[C#] Example 5: SendMessage event handler__
+__Example 5: SendMessage event handler__
 
-{{region cs-chat-getting-started_5}}
+```C#
 
     private void RadChat_SendMessage(object sender, SendMessageEventArgs e)
     {
@@ -112,11 +109,8 @@ The user's input can be handled by hooking up to the __SendMessage__ event of __
         var updatedMessageText = "[Updated from event handler] " + (e.Message as TextMessage).Text;
         this.chat.AddMessage(this.chat.CurrentAuthor, updatedMessageText);
     }
-{{endregion}}
-
-#### __[VB.NET] Example 5: SendMessage event handler__
-
-{{region vb-chat-getting-started_6}}
+```
+```VB.NET
 
     Private Sub RadChat_SendMessage(ByVal sender As Object, ByVal e As SendMessageEventArgs)
 		' We will handle the event in order to add a new message manually
@@ -125,7 +119,7 @@ The user's input can be handled by hooking up to the __SendMessage__ event of __
 		Dim updatedMessageText = "[Updated from event handler] " & (TryCast(e.Message, TextMessage)).Text
 		Me.chat.AddMessage(Me.chat.CurrentAuthor, updatedMessageText)
     End Sub
-{{endregion}}
+```
 
 This setup will have the following result.
 
@@ -152,8 +146,8 @@ To change the theme, you can follow the steps below:
 
 __Example 6__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 6: Merge the ResourceDictionaries__  
-{{region xaml-radchat-getting-started_7}}
+__Example 6: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -165,7 +159,7 @@ __Example 6__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

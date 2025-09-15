@@ -22,7 +22,7 @@ The dialog can be opened from the __Properties__ button in the __Developer__ tab
 
 The dialog can be shown by executing the `ShowContentControlPropertiesDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region radrichtextbox-dialogs-content-controls-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowContentControlPropertiesDialogCommand.Execute(null);
-{{endregion}}
+```

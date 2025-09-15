@@ -97,8 +97,8 @@ To use the Telerik WPF product you will need to install a valid license key. Oth
 
 After you create the WPF project and reference the Telerik assemblies, add any UI and related code-behind, models, and styles. This example will show a fundamental setup, including a RadTabControl with few tabs defined in XAML.
 
-#### __[XAML] Adding Telerik control in the UI__
-{{region installation-installing-from-zip-0}}
+__Adding Telerik control in the UI__
+```XAML
 	<Window x:Class="TelerikWpfApplication.MainWindow"
 		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -115,7 +115,7 @@ After you create the WPF project and reference the Telerik assemblies, add any U
 			</telerik:RadTabControl>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 
 ![WPF Project with Added Tab Control](images/msi-or-zip-setup-lifecyle-6.png)
 

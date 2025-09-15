@@ -65,10 +65,10 @@ The general naming convention is: `Office2013Palette.Palette.[name]Color` is res
 
 Changing the colors can be achieved in code behind.
 
-#### __[XAML] Setting palette colors__
-{{region xaml-styling-appearance-office2013-theme-0}}
+__Setting palette colors__
+```XAML
 	Office2013Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Theme Variation
 
@@ -85,8 +85,8 @@ The following are the supported color variations of the Office2013 theme:
 
 This is how the `ColorVariation` enumeration looks:
 
-#### __[C#]__
-{{region cs-styling-appearance-office2013-theme-0}}
+
+```C#
 	/// <summary>
 	/// Represents theme color variations.
 	/// </summary>
@@ -107,36 +107,36 @@ This is how the `ColorVariation` enumeration looks:
 		/// </summary>
 		White
 	}
-{{endregion}}
+```
 
 The `Office2013` theme offers a very intuitive and easy way to change its color variation. You can change the variation by using the `LoadPreset` method of `Office2013Palette` in the entry point of your application. You just have to pass to the method the desired color variation as a parameter.
 
 For example, if you want to set the `DarkGray` color variation, you should have the following code-block in your application:
 {% if site.site_name == 'WPF' %}
 
-#### __[C#]__
-{{region cs-styling-appearance-office2013-theme-1}}
+
+```C#
     public MainWindow()
     {
         Office2013Palette.LoadPreset(Office2013Palette.ColorVariation.DarkGray);
 
         InitializeComponent();
     }
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
 
-#### __[C#]__
 
-{{region cs-styling-appearance-office2013-theme-2}}
+
+```C#
     public UserControl()
     {
         Office2013Palette.LoadPreset(Office2013Palette.ColorVariation.DarkGray);
 
         InitializeComponent();
     }
-{{endregion}}
+```
 {% endif %}
 
 >The `DarkGray` variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when choosing it.
@@ -151,8 +151,8 @@ These properties are public so you can easily modify the theme resources at one 
 
 All the available __FontSizes__ and __FontFamily__ as well as their __default values__:
 
-#### __[C#]__
-{{region cs-styling-appearance-office2013-theme-3}}
+
+```C#
 	Office2013Palette.Palette.FontSizeXXS = 10;
 	Office2013Palette.Palette.FontSizeXS = 12; 
 	Office2013Palette.Palette.FontSizeS = 13;
@@ -160,7 +160,7 @@ All the available __FontSizes__ and __FontFamily__ as well as their __default va
 	Office2013Palette.Palette.FontSizeL = 15;
 	Office2013Palette.Palette.FontSizeXL = 16;
 	Office2013Palette.Palette.FontFamily = new FontFamily("Calibri");
-{{endregion}}
+```
 
 More details regarding the usage of the rarely used font sizes inside the different controls can be found below:
 
@@ -174,23 +174,23 @@ More details regarding the usage of the rarely used font sizes inside the differ
 	
 As the following example shows, you can change the default FontFamily from "Calibri" to "MonoType Corsiva" and the FontSize from __15__ to __16__ on a click of a button:
 
-#### __[XAML]__
-{{region xaml-styling-appearance-office2013-theme-0}}
+
+```XAML
 	<StackPanel>
 		<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
 		<telerik:RadButton HorizontalAlignment="Center" Content="Change Font" Click="OnButtonChangeFontSizeClick" />
 	</StackPanel>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region cs-styling-appearance-office2013-theme-4}}
+
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Office2013Palette.Palette.FontSizeL = 24;
 		Office2013Palette.Palette.FontSizeS = 16;
 		Office2013Palette.Palette.FontFamily = new FontFamily("MonoType Corsiva");
 	}
-{{endregion}}
+```
 
 This will be the final result:
 
@@ -200,22 +200,20 @@ This will be the final result:
 
 If you need to change the opacity of the disabled elements, you can now easily do so by using the `DisabledOpacity` property of the `Office2013Palette`. Its default value is __0.3__.
 
-#### __[C#] Changing the opacity__
-{{region cs-styling-appearance-office2013-theme-5}}
+__Changing the opacity__
+```C#
 	Office2013Palette.Palette.DisabledOpacity = 0.5;
-{{endregion}}
-	
-#### __[VB.NET] Changing the opacity__
-{{region vb-styling-appearance-office2013-theme-0}}
+```
+```VB.NET
 	Office2013Palette.Palette.DisabledOpacity = 0.5
-{{endregion}}
+```
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `Office2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-office2013-theme-1}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -223,7 +221,7 @@ When modifying fonts, colors, or other resources from the `Office2013Palette` an
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

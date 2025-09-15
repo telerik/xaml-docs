@@ -18,13 +18,13 @@ Determining the number of __DataPoints__ to be displayed is done by setting the 
 
 #### __XAML__
 
-{{region xaml-radchart-features-sampling_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SamplingSettings>
 	        <telerik:SamplingSettings SamplingThreshold="100" />
 	    </telerik:RadChart.SamplingSettings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 >tipSet the __SamplingThreshold__ to __0__ to disable the feature.
 
@@ -52,14 +52,14 @@ Here is an example:
 
 #### __XAML__
 
-{{region xaml-radchart-features-sampling_1}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SamplingSettings>
 	        <telerik:SamplingSettings SamplingFunction="Average"
 	                                  SamplingThreshold="100" />
 	</telerik:RadChart.SamplingSettings>
 	k:RadChart>
-{{endregion}}
+```
 
 
 
@@ -87,7 +87,7 @@ These steps are made by the static class Statistics:
 
 #### __C#__
 
-{{region cs-radchart-features-sampling_2}}
+```C#
 	public static class Statistics
 	{
 	    public static double StdDev<TSource>(IEnumerable<TSource> source, Func<TSource, MyClass> selector)
@@ -124,13 +124,13 @@ These steps are made by the static class Statistics:
 	        return sum;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-sampling_3}}
+```VB.NET
 	Public NotInheritable Class Statistics
 	    Private Sub New()
 	    End Sub
@@ -163,7 +163,7 @@ These steps are made by the static class Statistics:
 	        Return sum
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
@@ -171,7 +171,7 @@ The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSe
 
 #### __C#__
 
-{{region cs-radchart-features-sampling_4}}
+```C#
 	public class StandardDeviationFunction : EnumerableSelectorAggregateFunction
 	{
 	    protected override string AggregateMethodName
@@ -190,13 +190,13 @@ The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSe
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-sampling_5}}
+```VB.NET
 	Public Class StandardDeviationFunction
 	    Inherits EnumerableSelectorAggregateFunction
 	    Protected Overrides ReadOnly Property AggregateMethodName() As String
@@ -211,7 +211,7 @@ The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSe
 	        End Get
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
@@ -219,7 +219,7 @@ The Chart itself is populated by [List of Business Object]({%slug radchart-popul
 
 #### __C#__
 
-{{region cs-radchart-features-sampling_6}}
+```C#
 	public Sample ()
 	{      
 	    InitializeComponent();
@@ -241,13 +241,13 @@ The Chart itself is populated by [List of Business Object]({%slug radchart-popul
 	{
 	    public double Y { get; set; }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-sampling_7}}
+```VB.NET
 	Private Sub New()
 	    InitializeComponent()
 	    RadChar1.DefaultView.ChartArea.AxisX.LabelStep = 4
@@ -261,7 +261,7 @@ The Chart itself is populated by [List of Business Object]({%slug radchart-popul
 	Public Class [MyClass]
 	    Public Property Y() As Double
 	End Class
-{{endregion}}
+```
 
 
 
@@ -271,7 +271,7 @@ Finally the XAML:
 
 #### __XAML__
 
-{{region xaml-radchart-features-sampling_8}}
+```XAML
 	<telerik:RadChart Name="RadChar1">
 	            <telerik:RadChart.DefaultSeriesDefinition>
 	                <telerik:ScatterSeriesDefinition ShowItemLabels="False" ShowItemToolTips="False" />
@@ -288,7 +288,7 @@ Finally the XAML:
 	                </telerik:SeriesMapping>
 	            </telerik:RadChart.SeriesMappings>
 	        </telerik:RadChart>
-{{endregion}}
+```
 
 
 

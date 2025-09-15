@@ -30,8 +30,8 @@ ticketid: 1649117
 
 The following example shows the modified control template of the RadToggleSwitchButton control for the Windows 11 theme.
 
-#### __[XAML] Modifying the default control template of RadToggleSwitchButton to display content when it is in an undefined state__
-{{region kb-buttons-toggleswitchbutton-three-state-content-0}}
+__Modifying the default control template of RadToggleSwitchButton to display content when it is in an undefined state__
+```XAML
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -266,10 +266,10 @@ The following example shows the modified control template of the RadToggleSwitch
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
-#### __[XAML] Setting the Content and ContentTemplate when the IsChecked property is null__
-{{region kb-buttons-toggleswitchbutton-three-state-content-1}}
+__Setting the Content and ContentTemplate when the IsChecked property is null__
+```XAML
     <telerik:RadToggleSwitchButton IsThreeState="True">
         <telerik:RadToggleSwitchButton.Style>
             <Style TargetType="telerik:RadToggleSwitchButton" BasedOn="{StaticResource CustomToggleSwitchButtonStyle}">
@@ -290,7 +290,7 @@ The following example shows the modified control template of the RadToggleSwitch
             </Style>
         </telerik:RadToggleSwitchButton.Style>
     </telerik:RadToggleSwitchButton>
-{{endregion}}
+```
 
 __RadToggleSwichButton with content when the IsChecked property is null__
 

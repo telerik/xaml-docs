@@ -40,12 +40,12 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region xaml-gridview-styles-and-templates-controlling-appearance_0}}
+```XAML
 	<telerik:RadGridView GridLinesVisibility="Vertical"
 	             ShowColumnFooters="True"
 	             ShowColumnHeaders="False"
 	             ColumnBackground="Bisque"/>
-{{endregion}}
+```
 
 The final result should be similar to this:
 
@@ -67,9 +67,9 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region xaml-gridview-styles-and-templates-controlling-appearance_1}}
+```XAML
 	<telerik:RadGridView MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
-{{endregion}}
+```
 
 ## Rows
 
@@ -93,7 +93,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region xaml-gridview-styles-and-templates-controlling-appearance_2}}
+```XAML
 	<telerik:RadGridView RowIndicatorVisibility="Collapsed"
 	             RowDetailsVisibilityMode="VisibleWhenSelected"
 	             AlternationCount="2">
@@ -105,7 +105,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 	        </DataTemplate>
 	    </telerik:RadGridView.RowDetailsTemplate>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 2](images/RadGridView_Controlling_Appearance_2.png)
 
@@ -127,14 +127,14 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 #### __XAML__
 
-{{region xaml-gridview-styles-and-templates-controlling-appearance_3}}
+```XAML
 	<telerik:RadGridView ShowGroupFooters="True" ShowGroupPanel="False">
 	    <telerik:RadGridView.GroupDescriptors>
 	        <telerik:GroupDescriptor Member="Country">
 	        </telerik:GroupDescriptor>
 	    </telerik:RadGridView.GroupDescriptors>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Controlling Appearance 3](images/RadGridView_Controlling_Appearance_3.png)
 

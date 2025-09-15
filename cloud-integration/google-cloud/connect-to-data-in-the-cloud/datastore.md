@@ -24,14 +24,14 @@ For the purpose of this example, you have to enable the Google Cloud DataStore A
 
 Create a standard {{ site.framework_name }} application and add a [RadDataForm]({%slug raddataform-getting-started%}). It will provide an interface to update the entities in your DataStore instance. Please note that we are handling the EditEnded event with a command via the [EventToCommandBehavior]({%slug common-event-to-command-behavior%}).
 
-#### __[XAML] Example 1: Defining the view__
-{{region xaml-cloud-services-google-cloud-datastore-0}}
+__Example 1: Defining the view__
+```XAML
     <telerik:RadDataForm ItemsSource="{Binding Tasks}" AutoCommit="False" AutoEdit="True" AutoGeneratingField="RadDataForm_AutoGeneratingField">
         <telerik:EventToCommandBehavior.EventBindings>
             <telerik:EventBinding EventName="EditEnded" Command="{Binding EditEndedCommand}" />
         </telerik:EventToCommandBehavior.EventBindings>
     </telerik:RadDataForm>
-{{endregion}}
+```
 
 ## Step 2: Install the NuGet package
 
@@ -43,8 +43,8 @@ Open the NuGet Package Manager and install the **Google.Cloud.Datastore.V1** pac
 
 **Example 2** shows the **Task** class which will hold the example data. The **Id** property will be used for retrieving the item from the DataStore instance.
 
-#### __[C#] Example 2: Defining the Task class__
-{{region cs-cloud-services-google-cloud-datastore-1}}
+__Example 2: Defining the Task class__
+```C#
     public class Task
     {
         public long Id { get; set; }
@@ -55,10 +55,8 @@ Open the NuGet Package Manager and install the **Google.Cloud.Datastore.V1** pac
 
         public DateTime Created { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the Task class__
-{{region cs-cloud-services-google-cloud-datastore-1}}
+```
+```VB.NET
     Public Class Task
 		Public Property Id() As Long
 
@@ -68,14 +66,14 @@ Open the NuGet Package Manager and install the **Google.Cloud.Datastore.V1** pac
 
 		Public Property Created() As Date
     End Class
-{{endregion}}
+```
 
 ## Step 4: Define the ViewModel
 
 The next step is to create the ViewModel. It will need a [DatastoreDb](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Datastore.V1/api/Google.Cloud.Datastore.V1.DatastoreDb.html) object which will be responsible for adding, retrieving and updating entities from the DataStore instance and a [KeyFactory](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Datastore.V1/api/Google.Cloud.Datastore.V1.KeyFactory.html) object which will create keys.
 
-#### __[C#] Example 3: Defining the ViewModel__
-{{region cs-cloud-services-google-cloud-datastore-2}}
+__Example 3: Defining the ViewModel__
+```C#
     public class ViewModel : ViewModelBase
     {
         private DatastoreDb db;
@@ -151,10 +149,8 @@ The next step is to create the ViewModel. It will need a [DatastoreDb](https://g
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Defining the ViewModel__
-{{region vb-cloud-services-google-cloud-datastore-3}}
+```
+```VB.NET
     Public Class ViewModel
 	Inherits ViewModelBase
 
@@ -221,7 +217,7 @@ The next step is to create the ViewModel. It will need a [DatastoreDb](https://g
 			Next task
 		End Sub
 End Class
-{{endregion}}
+```
 
 In the **AddTasksToDataStore** method we are adding a couple of Task entities which have the same properties as our Task class. Then in the **GetTasksFromDataStore** method we are retrieving the entities from the DataStore instance, converting them to Task objects and adding them to an ObservableCollection which will be the ItemsSource of our RadDataForm. In the **OnEditEnded** method which is called when the EditEnded event of the RadDataForm is fired, we are using the **Id** property of the Task objects in order to retrieve the correct entity from the DataStore instance, modify it and update it. 
 
@@ -235,8 +231,8 @@ In the **AddTasksToDataStore** method we are adding a couple of Task entities wh
 
 All that is left is to set the DataContext to the ViewModel and pass your project id as a parameter. Please note that we are preventing the generation of a field for the **Id** property of the Task objects since we only need it for retrieving the correct entity from the DataStore.
 
-#### __[C#] Example 4: Set the DataContext__
-{{region cs-cloud-services-google-cloud-datastore-4}}
+__Example 4: Set the DataContext__
+```C#
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -254,10 +250,8 @@ All that is left is to set the DataContext to the ViewModel and pass your projec
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Set the DataContext__
-{{region vb-cloud-services-google-cloud-datastore-5}}
+```
+```VB.NET
     Partial Public Class MainWindow
 	Inherits Window
 
@@ -273,7 +267,7 @@ All that is left is to set the DataContext to the ViewModel and pass your projec
 			End If
 		End Sub
     End Class
-{{endregion}}
+```
 
 >In order to locate your project id, please read the [Locate the project ID](https://support.google.com/cloud/answer/6158840?hl=en) help article. 
 

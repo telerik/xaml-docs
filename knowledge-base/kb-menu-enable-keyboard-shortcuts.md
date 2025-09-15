@@ -25,8 +25,8 @@ In WPF, in order to recieve a `KeyDown` event, the corresponding element needs t
 
 To add shortcuts for the menu, you can add `KeyBinding` objects in the host `Window`'s `InputBindings` collection. 
 
-#### __[XAML]__
-{{region kb-menu-enable-keyboard-shortcuts-0}}
+
+```XAML
 	<Window x:Class="MyWpfApplication.MainWindow"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -48,5 +48,5 @@ To add shortcuts for the menu, you can add `KeyBinding` objects in the host `Win
 			</telerik:RadMenu>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 

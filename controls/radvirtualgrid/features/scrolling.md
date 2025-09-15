@@ -14,9 +14,9 @@ __RadVirtualGrid__ exposes a scrolling mechanism which can be utilized through t
 
 * __ScrollIndexIntoViewAsync(int rowIndex, int columnIndex, Action scrollFinishedCallback, Action scrollFailedCallback)__
 
-#### __[C#] Example 1: Calling the ScrollIndexIntoViewAsync method__
+__Example 1: Calling the ScrollIndexIntoViewAsync method__
 
-{{region radvirtualgrid-features_scrolling_0}}
+```C#
 	 this.VirtualGrid.ScrollIndexIntoViewAsync(40, 20,
             new Action(() =>
             {
@@ -26,13 +26,13 @@ __RadVirtualGrid__ exposes a scrolling mechanism which can be utilized through t
             {
                 MessageBox.Show("Failed!");
             }));
-{{endregion}}
+```
 
 * __ScrollRowIndexIntoViewAsync(int rowIndex, Action scrollFinishedCallback, Action scrollFailedCallback)__
 
-#### __[C#] Example 2: Calling the ScrollRowIndexIntoViewAsync method__
+__Example 2: Calling the ScrollRowIndexIntoViewAsync method__
 
-{{region radvirtualgrid-features_scrolling_1}}
+```C#
 	this.VirtualGrid.ScrollRowIndexIntoViewAsync(40,
                 new Action(() =>
                 {
@@ -42,13 +42,13 @@ __RadVirtualGrid__ exposes a scrolling mechanism which can be utilized through t
             {
                 MessageBox.Show("Failed!");
             }));
-{{endregion}}
+```
 
 * __ScrollColumnIndexIntoViewAsync(int columnIndex, Action scrollFinishedCallback, Action scrollFailedCallback)__
 
-#### __[C#] Example 2: Calling the ScrollColumnIndexIntoViewAsync method__
+__Example 2: Calling the ScrollColumnIndexIntoViewAsync method__
 
-{{region radvirtualgrid-features_scrolling_2}}
+```C#
 	this.VirtualGrid.ScrollColumnIndexIntoViewAsync(40,
                 new Action(() =>
                 {
@@ -58,7 +58,7 @@ __RadVirtualGrid__ exposes a scrolling mechanism which can be utilized through t
             {
                 MessageBox.Show("Failed!");
             }));
-{{endregion}}
+```
 
 ## See Also 
 

@@ -20,7 +20,7 @@ We'll get started with a class with two properties - X and Y. They will be used 
 
 #### __C#__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_1}}
+```C#
 
 	public class ChartData
 	{
@@ -56,12 +56,12 @@ We'll get started with a class with two properties - X and Y. They will be used 
 			}
 		}
 	}
-	{{endregion}}
+	```
 
 
 #### __VB.NET__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_2}}
+```VB.NET
 
 	 Public Class ChartData
 		Private ReadOnly Red As Brush = New SolidColorBrush(Colors.Red)
@@ -88,7 +88,7 @@ We'll get started with a class with two properties - X and Y. They will be used 
 			End Get
 		End Property
 	 End Class
-	{{endregion}}
+	```
 
 
 Our next task is to create a ViewModel. For the purpose - create new class that inherits the ViewModelBase abstract class.
@@ -101,7 +101,7 @@ What we'll need to add in it - a property of type List of ChartData. It will be 
 
 #### __C#__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_3}}
+```C#
 
 	public class ViewModel : ViewModelBase
 	{
@@ -140,11 +140,11 @@ What we'll need to add in it - a property of type List of ChartData. It will be 
 			return data;
 		}
 	}
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_4}}
+```VB.NET
 
 	Public Class ViewModel
 		Inherits ViewModelBase
@@ -176,7 +176,7 @@ What we'll need to add in it - a property of type List of ChartData. It will be 
 				Return data
 			End Function
 	End Class
-	{{endregion}}
+	```
 
 
 It's time to create our ScatterPoint series in XAML and populate it with data. It is beyond the scope of this topic to describe how you can populate the series. Please refer to our [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) topic for details.
@@ -184,7 +184,7 @@ It's time to create our ScatterPoint series in XAML and populate it with data. I
 
 #### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_0}}
+```XAML
 
 	<UserControl.DataContext>
 		<local:ViewModel />
@@ -218,7 +218,7 @@ It's time to create our ScatterPoint series in XAML and populate it with data. I
 	
 		</telerik:RadCartesianChart>
 	</Grid>
-	{{endregion}}
+	```
 
 
 Up to now you should have a ScatterPoint series with elliptical shape where the color of each point comes from a propery of the underlying Business object.
@@ -231,7 +231,7 @@ For our scenario where we would like different shape for the pointmarks, this me
 
 #### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_7}}
+```XAML
 
 	<UserControl.Resources>
 		<local:ScatterPointTemplateSelector x:Key="templateSelector" />
@@ -270,11 +270,11 @@ For our scenario where we would like different shape for the pointmarks, this me
 	
 		</telerik:RadCartesianChart>
 	</Grid>
-	{{endregion}}
+	```
 
 #### __C#__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_5}}
+```C#
 
 	  public class ScatterPointTemplateSelector : DataTemplateSelector
 	    {
@@ -295,11 +295,11 @@ For our scenario where we would like different shape for the pointmarks, this me
 	            }
 	        }
 	    }
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region radchartview-styles-and-templates-customizing-scatter-points_6}}
+```VB.NET
 
 	'NOTE: This code snippet uses implicit typing. You will need to set 'Option Infer On' in the VB file or set 'Option Infer' at the project level: '
 	
@@ -318,6 +318,6 @@ For our scenario where we would like different shape for the pointmarks, this me
 				End If
 			End Function
 	  End Class
-	{{endregion}}
+	```
 
 ![Rad Chart View-custom scatter points](images/RadChartView-custom_scatter_points.PNG)

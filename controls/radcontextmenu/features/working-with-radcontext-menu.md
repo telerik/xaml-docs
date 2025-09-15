@@ -22,9 +22,9 @@ This article will make you familiar with the basics around the usage of the __Ra
 
 To attach a __RadContextMenu__ to a control, you have to set the instance of it to the __RadContextMenu.ContextMenu__ attached property.
 
-#### __[XAML] Example 1: Attach a RadContextMenu__
+__Example 1: Attach a RadContextMenu__
 
-{{region xaml-radcontextmenu-features-working-with-radcontext-menu_0}}
+```XAML
 	<TextBox x:Name="textBox"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -33,21 +33,18 @@ To attach a __RadContextMenu__ to a control, you have to set the instance of it 
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 
-#### __[C#] Example 1: Attach a RadContextMenu__
+__Example 1: Attach a RadContextMenu__
 
-{{region cs-radcontextmenu-features-working-with-radcontext-menu_1}}
+```C#
     RadContextMenu radContextMenu = new RadContextMenu();
     RadContextMenu.SetContextMenu(this.textBox, radContextMenu);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Attach a RadContextMenu__
-
-{{region vb-radcontextmenu-features-working-with-radcontext-menu_2}}
+```
+```VB.NET
     Dim radContextMenu As New RadContextMenu()
     radContextMenu.SetContextMenu(Me.textBox, radContextMenu)
-{{endregion}}
+```
 
 ## Add Menu Items to the RadContextMenu
 
@@ -57,9 +54,9 @@ To attach a __RadContextMenu__ to a control, you have to set the instance of it 
 
 The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample declaration of several child menu items.
 
-#### __[XAML] Example 2: Add Menu Items__
+__Example 2: Add Menu Items__
 
-{{region xaml-radcontextmenu-features-working-with-radcontext-menu_3}}
+```XAML
 	<TextBox x:Name="textBox1"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -71,11 +68,11 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Add Menu Items__
+__Example 2: Add Menu Items__
 
-{{region cs-radcontextmenu-features-working-with-radcontext-menu_4}}
+```C#
     RadContextMenu radContextMenu = new RadContextMenu();
     RadMenuItem copyItem = new RadMenuItem();
     copyItem.Header = "Copy";
@@ -87,11 +84,8 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
     cutItem.Header = "Cut";
     radContextMenu.Items.Add(cutItem);
     RadContextMenu.SetContextMenu(this.textBox, radContextMenu);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Add menu items__
-
-{{region vb-radcontextmenu-features-working-with-radcontext-menu_5}}
+```
+```VB.NET
     Dim radContextMenu As New RadContextMenu()
     Dim copyItem As New RadMenuItem()
     copyItem.Header = "Copy"
@@ -103,7 +97,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
     cutItem.Header = "Cut"
     radContextMenu.Items.Add(cutItem)
     radContextMenu.SetContextMenu(Me.textBox, radContextMenu)
-{{endregion}}
+```
 
 ## Get the Clicked Element
 
@@ -111,17 +105,14 @@ When an element gets clicked and the __RadContextMenu__ appears, you might need 
 
 For example, if you have a __RadTreeView__ with a __RadContextMenu__ attached, and you want to get the instance of the __RadTreeViewItem__, which has been right-clicked, you can use the following lines of code.
 
-#### __[C#] Example 3: Get clicked element__
+__Example 3: Get clicked element__
 
-{{region cs-radcontextmenu-features-working-with-radcontext-menu_6}}
+```C#
 	RadTreeViewItem item = radContextMenu.GetClickedElement<RadTreeViewItem>();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Get clicked element__
-
-{{region vb-radcontextmenu-features-working-with-radcontext-menu_7}}
+```
+```VB.NET
 	Dim item As RadTreeViewItem = radContextMenu.GetClickedElement(Of RadTreeViewItem)()
-{{endregion}}
+```
 
 >tipA more complex example scenario can be found in the [Use RadContextMenu with a RadGridView]({%slug radcontextmenu-how-to-use-radcontextmenu-with-radgridview%}) topic and in the [Select the Clicked Item of a RadTreeView]({%slug radcontextmenu-how-to-select-the-clicked-item-of-radtreeview%}) topic.
 

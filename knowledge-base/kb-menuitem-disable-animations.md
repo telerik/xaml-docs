@@ -36,12 +36,12 @@ How to disable the animations of the `RadMenuItem` element.
 
 The `RadMenuItem` element is used in controls such as the `RadMenu` and the `RadContextMenu`. To disable the animation, set the `AnimationManager.AnimationSelector` attached property to __null__.
 
-#### __[XAML] Disabling the animation of the RadMenuItem element__
-{{region kb-menuitem-disable-animations-0}}
+__Disabling the animation of the RadMenuItem element__
+```XAML
     <Application.Resources>
         <!-- If NoXaml is used: BasedOn="{StaticResource RadMenuItemStyle}" -->
         <Style TargetType="telerik:RadMenuItem">
             <Setter Property="telerik:AnimationManager.AnimationSelector" Value="{x:Null}"/>
         </Style>
     </Application.Resources>
-{{endregion}}
+```

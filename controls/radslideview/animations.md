@@ -16,8 +16,8 @@ The `RadSlideView` control has a built-in support for animations. It has default
 
 RadSlideView has two `MoveАnimation` instances defined in its default style. You can modify them by creating a new `AnimationSelector` instance for the `AnimationManager.AnimationSelector` attached property. Then, add a new `AnimationGroup` with two `MoveAnimation` instances for the newly created AnimationSelector. You can alter these animations by customizing their duration via the `Duration` property and setting a speed ratio using the `SpeedRatio` property. Also, you can apply an easing by setting the `Easing` property.
 
-#### __[XAML] Customizing the default animations for RadSlideView__
-{{region radslideview-animations-0}}
+__Customizing the default animations for RadSlideView__
+```XAML
     <telerik:RadSlideView>
         <telerik:AnimationManager.AnimationSelector>
             <telerik:AnimationSelector>
@@ -36,7 +36,7 @@ RadSlideView has two `MoveАnimation` instances defined in its default style. Yo
             </telerik:AnimationSelector>
         </telerik:AnimationManager.AnimationSelector>
     </telerik:RadSlideView>
-{{endregion}}
+```
 
 >important For the animations to be applied correctly, do not remove the `AnimationName` and `TargetElementName` properties of the above elements.
 
@@ -48,10 +48,10 @@ __RadSlideView with modified animations__
 
 To disable the animations, set the `IsAnimationEnabled` attached property of the AnimationManager class to __False__.
 
-#### __[XAML] Disable RadSlideView element's animations__
-{{region radslideview-animations-1}}
+__Disable RadSlideView element's animations__
+```XAML
     <telerik:RadSlideView telerik:AnimationManager.IsAnimationEnabled="False"/>
-{{endregion}}
+```
 
 ## See Also
 * [Navigation Buttons]({%slug radslideview-navigation-buttons%})

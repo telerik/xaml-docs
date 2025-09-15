@@ -106,7 +106,7 @@ It is time to configure our Internet Information Service (IIS). To do it start I
 
 	#### __XAML__
 
-	{{region radpivotgrid-howto-httpaccess_1}}
+	```XAML
 		<?xml version="1.0" encoding="utf-8"?>
 		<access-policy>
 		  <cross-domain-access>
@@ -120,7 +120,7 @@ It is time to configure our Internet Information Service (IIS). To do it start I
 			</policy>
 		  </cross-domain-access>
 		</access-policy>
-	{{endregion}}
+	```
 
 	If you use Authentication for your service, you should add Authorization in the http-request-headers:  __http-request-headers="SOAPAction,Authorization"__. More information about clientaccespolicy can be found [here](http://msdn.microsoft.com/en-us/library/cc197955(v=vs.95).aspx).
 	{% endif %}

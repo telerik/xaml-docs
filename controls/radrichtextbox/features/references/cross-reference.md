@@ -109,9 +109,9 @@ Every bookmark has a unique name. So in order to insert a reference to a bookmar
 
 #### __C#__
 
-{{region radrichtextbox-features-cross-reference_1}}
+```C#
 	public void InsertCrossReferenceToBookmark(string bookmarkName, ReferenceContentType contentType, bool insertAsHyperlink)
-{{endregion}}
+```
 
 
 
@@ -123,9 +123,9 @@ You have to pass the paragraph (with heading style applied, of course) that you 
 
 #### __C#__
 
-{{region radrichtextbox-features-cross-reference_2}}
+```C#
 	public void InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink)
-{{endregion}}
+```
 
 
 The parameters are almost the same, except the first one. It represents the paragraph you want to reference. The other two have the same purpose.Inserting Cross-Reference to a Caption
@@ -134,9 +134,9 @@ The method signature is:
 
 #### __C#__
 
-{{region radrichtextbox-features-cross-reference_3}}
+```C#
 	public void InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink)
-{{endregion}}
+```
 
 
 The first parameter represents the paragraph (__Caption__) you want to refer.

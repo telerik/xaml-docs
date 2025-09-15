@@ -22,7 +22,7 @@ So lets create a simple class that we'll use to save (when serializing) and load
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization_1}}
+```C#
 	[DataContract]
 	public class DataProviderSettings
 	{
@@ -44,11 +44,11 @@ So lets create a simple class that we'll use to save (when serializing) and load
 	    [DataMember]
 	    public PivotAxis AggregatesPosition { get; set; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization_1}}
+```VB.NET
 	<DataContract> _
 	Public Class DataProviderSettings
 		<DataMember> _
@@ -69,7 +69,7 @@ So lets create a simple class that we'll use to save (when serializing) and load
 		<DataMember> _
 		Public Property AggregatesPosition() As PivotAxis
 	End Class
-{{endregion}}
+```
 
 
 
@@ -77,7 +77,7 @@ The next step is to implement the serializer. When serializing the provider, you
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization_2}}
+```C#
 	public abstract class DataProviderSerializer
 	{
 	    public abstract IEnumerable<Type> KnownTypes { get; }
@@ -167,11 +167,11 @@ The next step is to implement the serializer. When serializing the provider, you
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization_2}}
+```VB.NET
 	Public MustInherit Class DataProviderSerializer
 		Public MustOverride ReadOnly Property KnownTypes() As IEnumerable(Of Type)
 	
@@ -243,13 +243,13 @@ The next step is to implement the serializer. When serializing the provider, you
 			End Get
 		End Property
 	End Class
-{{endregion}}
+```
 
 So the last step is to serialize the provider and deserialize it:        
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization_3}}
+```C#
 	string lastSerializadProvider;
 	
 	//serializiation
@@ -259,11 +259,11 @@ So the last step is to serialize the provider and deserialize it:
 	//deserialization
 	LocalDataSourceSerializer provider = new LocalDataSourceSerializer();
 	provider.Deserialize(this.pivotGrid.DataProvider, this.lastSerializadProvider);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization_3}}
+```VB.NET
 	Dim lastSerializadProvider As String
 	
 	'serializiation
@@ -273,7 +273,7 @@ So the last step is to serialize the provider and deserialize it:
 	'deserialization
 	Dim provider As New LocalDataSourceSerializer()
 	provider.Deserialize(Me.pivotGrid.DataProvider, Me.lastSerializadProvider)
-{{endregion}}
+```
 
 ## Serialize custom types
 
@@ -289,7 +289,7 @@ So if you have implemented a custom group description, it should be similar to t
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization_4}}
+```C#
 	[DataContract]
 	public class CustomGroupDescription : PropertyGroupDescriptionBase
 	{
@@ -306,11 +306,11 @@ So if you have implemented a custom group description, it should be similar to t
 	        return new CustomGroupDescription();
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization_4}}
+```VB.NET
 	<DataContract> _
 	Public Class CustomGroupDescription
 		Inherits PropertyGroupDescriptionBase
@@ -326,13 +326,13 @@ So if you have implemented a custom group description, it should be similar to t
 			Return New CustomGroupDescription()
 		End Function
 	End Class
-{{endregion}}
+```
 
 And here's the change in *LocalDataSourceSerializer* class:        
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization_5}}
+```C#
 	public class LocalDataSourceSerializer : DataProviderSerializer
 	{
 	    private IEnumerable<Type> myKnownTypes = PivotSerializationHelper.KnownTypes.Concat<Type>(new List<Type>() { typeof(CustomGroupDescription) });
@@ -345,11 +345,11 @@ And here's the change in *LocalDataSourceSerializer* class:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization_5}}
+```VB.NET
 	Public Class LocalDataSourceSerializer
 		Inherits DataProviderSerializer
 	
@@ -361,7 +361,7 @@ And here's the change in *LocalDataSourceSerializer* class:
 			End Get
 		End Property
 	End Class
-{{endregion}}
+```
 
 ## See Also
 

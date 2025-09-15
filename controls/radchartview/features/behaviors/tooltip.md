@@ -21,8 +21,8 @@ The user has control over the visualization of the tooltip information and the p
 
 The __ChartToolTipBehavior__ should be added in the __Behaviors__ collection of the chart.
 
-#### __[XAML] Example 1: Defining a tooltip behavior__
-{{region radchart-features-tooltip_8}}
+__Example 1: Defining a tooltip behavior__
+```XAML
 	<telerik:RadCartesianChart>			
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis/>
@@ -46,7 +46,7 @@ The __ChartToolTipBehavior__ should be added in the __Behaviors__ collection of 
 			</telerik:ScatterPointSeries.DataPoints>	
 		</telerik:ScatterPointSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 	
 At this point if you hover a data point visual a tooltip with basic information about the data point is displayed.
 
@@ -57,8 +57,8 @@ At this point if you hover a data point visual a tooltip with basic information 
 
 To customize the apperance of the tooltip you can use the __TooltipTemplate__ property. The property can be found both on the RadCartesianChart and the chart series classes.
 
-#### __[XAML] Example 2: Setting TooltipTemplate of the series__
-{{region radchart-features-tooltip_9}}
+__Example 2: Setting TooltipTemplate of the series__
+```XAML
 	<telerik:ScatterPointSeries.TooltipTemplate>
 		<DataTemplate>
 			<Border Background="#5A000000" Padding="5" TextElement.Foreground="White">
@@ -75,7 +75,7 @@ To customize the apperance of the tooltip you can use the __TooltipTemplate__ pr
 			</Border>
 		</DataTemplate>
 	</telerik:ScatterPointSeries.TooltipTemplate>
-{{endregion}}
+```
 
 #### __Figure 2: Custom tooltip example__
 ![Rad Chart View-Chart Tooltip Behavior 1](images/chartview-features-charttooltipbehavior-1.png)
@@ -88,8 +88,8 @@ This section demonstrates how to create a custom tooltip that displays the growt
 
 First we will need a chart, which is bound to a collection of custom objects (refer to [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more details on the binding). The objects in the data source will be used directly as values for the data points as well as content for out tooltips. We create several properties like Quarter, Profit, PreviousQuarter, PreviousDifference, NextQuarter and NextDifference properties for the purpose.
 
-#### __[C#] Example 3: Defining the Data Model__
-{{region radchart-features-tooltip_5}}
+__Example 3: Defining the Data Model__
+```C#
 	public class ProfitDifferenceContext
 	{
 		public string Quarter
@@ -123,10 +123,8 @@ First we will need a chart, which is bound to a collection of custom objects (re
 			set;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Defining the Data Model__
-{{region radchart-features-tooltip_6}}
+```
+```VB.NET
 	Public Class ProfitDifferenceContext
 	    Dim _quarter As String
 	    Dim _profit As Double
@@ -189,12 +187,12 @@ First we will need a chart, which is bound to a collection of custom objects (re
 	        End Set
 	    End Property    
 	End Class
-{{endregion}}
+```
 
 We should set data to the values so that it will be able to display information about the currently hovered data point via the TooltipTemplate.
 
-#### __[C#] Example 4: Populating and setting the data__
-{{region radchart-features-tooltip_7}}
+__Example 4: Populating and setting the data__
+```C#
 	public MainPage()
 	{
 		InitializeComponent();
@@ -234,10 +232,10 @@ We should set data to the values so that it will be able to display information 
 		}
 		return items;
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Defining the view__
-{{region radchart-features-tooltip_0}}
+__Example 5: Defining the view__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">	
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -247,12 +245,12 @@ We should set data to the values so that it will be able to display information 
 		</telerik:RadCartesianChart.VerticalAxis>
 		<telerik:BarSeries CategoryBinding="Quarter" ValueBinding="Profit"/>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 Now we need to define our tooltip behavior and set its tool tip template. It will display the value of the selected data point and also how this value relates to the previous and next quarters.
 
-#### __[XAML] Example 6: Defining the tooltip behavior and the tooltip template__
-{{region radchart-features-tooltip_1}}
+__Example 6: Defining the tooltip behavior and the tooltip template__
+```XAML
 	<telerik:RadCartesianChart.Behaviors>
 		<telerik:ChartTooltipBehavior Placement="Top" VerticalOffset="20" />
 	</telerik:RadCartesianChart.Behaviors>
@@ -298,20 +296,20 @@ Now we need to define our tooltip behavior and set its tool tip template. It wil
 			</Grid>
 		</DataTemplate>
 	</telerik:RadCartesianChart.TooltipTemplate>
-{{endregion}}
+```
 
 The example uses couple of custom binding converters to pretify the visualization. You can find their implementation.
 
-#### __[XAML] Example 7: Defining converters in the Resources of the chart__  
-{{region radchart-features-tooltip_2}}
+__Example 7: Defining converters in the Resources of the chart__  
+```XAML
 	<telerik:RadCartesianChart.Resources>
 	       <local:ProfitToBrushConverter x:Key="ProfitToBrushConverter"/>
 	       <local:QuarterToVisibilityConverter x:Key="QuarterToVisibilityConverter"/>
 	</telerik:RadCartesianChart.Resources>
-{{endregion}}
+```
 
-#### __[C#] Example 8: Converters implementation__  
-{{region radchart-features-tooltip_3}}
+__Example 8: Converters implementation__  
+```C#
 	public class QuarterToVisibilityConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -348,10 +346,8 @@ The example uses couple of custom binding converters to pretify the visualizatio
 	        throw new NotImplementedException();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 8: Converters implementation__  
-{{region radchart-features-tooltip_4}}
+```
+```VB.NET
 	Public Class QuarterToVisibilityConverter
 	    Implements IValueConverter
 	
@@ -390,7 +386,7 @@ The example uses couple of custom binding converters to pretify the visualizatio
 	        Throw New NotImplementedException
 	    End Function
 	End Class
-{{endregion}}
+```
 
 #### __Figure 3: Example result__
 ![Rad Chart View-Chart Tooltip Behavior 2](images/chartview-features-charttooltipbehavior-2.png)

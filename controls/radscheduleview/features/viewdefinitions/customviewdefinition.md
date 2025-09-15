@@ -28,8 +28,8 @@ This topic will demonstrate the customization capabilities provided by __RadSche
 
 When a custom ViewDefinition based on __WeekViewDefinition__ or __MonthViewDefinition__ is defined, you could customize the grouping of the used __DateGroupDescription__. In this case the __DateGroupDescription__ property of the ViewDefinition needs to be overriden by returning a  custom object inheriting from __DateGroupDescription__. The custom __DateGroupDescription__ object needs to override the __GroupLength__ property.
 
-#### __[C#] Example 1: Defining the custom DateGroupDescription__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-0}}
+__Example 1: Defining the custom DateGroupDescription__
+```C#
 	class MyGroupDescription : DateGroupDescription
 	{
 	    public override TimeSpan GroupLength
@@ -40,10 +40,8 @@ When a custom ViewDefinition based on __WeekViewDefinition__ or __MonthViewDefin
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the custom DateGroupDescription__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-1}}
+```
+```VB.NET
 	Class MyGroupDescription
 	Inherits DateGroupDescription
 		Public Overrides ReadOnly Property GroupLength() As TimeSpan
@@ -52,12 +50,12 @@ When a custom ViewDefinition based on __WeekViewDefinition__ or __MonthViewDefin
 			End Get
 		End Property
 	End Class
-{{endregion}}
+```
 
 After the needed __DateGroupDescription__ is defined, it needs to be returned by the __DateGroupDescription__ property of the custom ViewDefinition.
 
-#### __[C#] Example 2: Return the custom DateGroupDescription__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-2}}
+__Example 2: Return the custom DateGroupDescription__
+```C#
 	protected override DateGroupDescription DateGroupDescription
 	{
 		get
@@ -65,16 +63,14 @@ After the needed __DateGroupDescription__ is defined, it needs to be returned by
 			return new MyGroupDescription();
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Return the custom DateGroupDescription__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-3}}
+```
+```VB.NET
 		Protected Overrides ReadOnly Property DateGroupDescription() As DateGroupDescription
 			Get
 				Return New MyGroupDescription()
 			End Get
 		End Property
-{{endregion}}
+```
 
 #### __Figure 1: Custom DateGroupDescription__
 ![{{ site.framework_name }} RadScheduleView Custom DateGroupDescription](images/radScheduleView_features_customViewDefinition_01.png)
@@ -83,23 +79,21 @@ After the needed __DateGroupDescription__ is defined, it needs to be returned by
 
 The format of the Group Header can be altered by overriding the __FormatGroupHeaderName__ method.
 
-#### __[C#] Example 3: Set the format of the Group Header__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-4}}
+__Example 3: Set the format of the Group Header__
+```C#
 	protected override string FormatGroupHeaderName(IFormatProvider formatInfo, object groupName)
 	{
 		var date = (DateTime)groupName;	       
 		return String.Format("{0} {1}", date.DayOfWeek, date.Day);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Set the format of the GroupHeader__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-5}}
+```
+```VB.NET
 	Protected Overrides Function FormatGroupHeaderName(formatInfo As IFormatProvider, groupName As Object) As String
 		Dim [date] = DirectCast(groupName, DateTime)
 
 		Return [String].Format("{0} {1}", [date].DayOfWeek, [date].Day)
 	End Function
-{{endregion}}
+```
 
 #### __Figure 2: Formatted GroupHeader name__
 ![{{ site.framework_name }} RadScheduleView Formatted GroupHeader name](images/radScheduleView_features_customViewDefinition_02.png)
@@ -108,23 +102,21 @@ The format of the Group Header can be altered by overriding the __FormatGroupHea
 
 The format of the string that represents the currently visible range can be modified by overriding the __FormatVisibleRangeText__ method. 
 
-#### __[C#] Example 4: Set the format of the currently visible range text__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-6}}
+__Example 4: Set the format of the currently visible range text__
+```C#
 	protected override string FormatVisibleRangeText(IFormatProvider formatInfo, 
             DateTime rangeStart, DateTime rangeEnd, DateTime currentDate)
 	{
 		return String.Format("Start: {0}.{1}, End: {2}.{3}", 
 			rangeStart.Day, rangeStart.Month, rangeEnd.Day, rangeEnd.Month);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Set the format of the currently visible range text__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-6}}
+```
+```VB.NET
 	Protected Overrides Function FormatVisibleRangeText(formatInfo As IFormatProvider, 
 		rangeStart As DateTime, rangeEnd As DateTime, currentDate As DateTime) As String
 			Return [String].Format("Start: {0}.{1}, End: {2}.{3}", rangeStart.Day, rangeStart.Month, rangeEnd.Day, rangeEnd.Month)
 	End Function
-{{endregion}}
+```
 
 #### __Figure 3: Modified format of the visible range text__
 ![{{ site.framework_name }} RadScheduleView Modified format of the visible range text](images/radScheduleView_features_customViewDefinition_03.png)
@@ -133,20 +125,18 @@ The format of the string that represents the currently visible range can be modi
 
 By default, the week group headers are hidden. They can be shown by overriding the __GetShowWeekGroupHeaders__ method
 
-#### __[C#] Example 5: Show the week group headers__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-7}}
+__Example 5: Show the week group headers__
+```C#
 	protected override bool GetShowWeekGroupHeaders()
 	{
 		return true;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Show the week group headers__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-8}}
+```
+```VB.NET
 	Protected Overrides Function GetShowWeekGroupHeaders() As Boolean
 		Return True
 	End Function
-{{endregion}}
+```
 
 #### __Figure 4: Showing the week group headers__
 ![{{ site.framework_name }} RadScheduleView Showing the week group headers](images/radScheduleView_features_customViewDefinition_04.png)
@@ -155,8 +145,8 @@ By default, the week group headers are hidden. They can be shown by overriding t
 
 The DateTime values for the start and end of the visible range, can be set through the __GetVisibleRangeStart__ and __GetVisibleRangeEnd__ methods.
 
-#### __[C#] Example 6: Setting visible range__
-{{region radscheduleview-features-viewdefinitions-define-custom-viewdefinition-9}}
+__Example 6: Setting visible range__
+```C#
 	protected override DateTime GetVisibleRangeStart(DateTime dateTime, 
 	System.Globalization.CultureInfo culture, DayOfWeek? firstDayOfWeek)
 	{
@@ -168,7 +158,7 @@ The DateTime values for the start and end of the visible range, can be set throu
 	{
 		return dateTime.AddDays(5);
 	}
-{{endregion}}
+```
 
 #### __Figure 5: Modify the start and end of the visible range__
 ![{{ site.framework_name }} RadScheduleView Modify the start and end of the visible range](images/radScheduleView_features_customViewDefinition_05.png)

@@ -30,47 +30,47 @@ The drag-drop functionality of __RadListBox__ can be enabled by setting its Drag
 
 * Add a reference to Telerik.Windows.Controls.dll and add the following XML namespaces to your XAML:
 
-#### __[XAML] Example 1: Reference Telerik.Windows.Controls.dll__
+__Example 1: Reference Telerik.Windows.Controls.dll__
 
-{{region xaml-radlistbox-features-dragdrop_0}}
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+```
 
 * Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem controls:
 
-#### __[XAML] Example 2: RadListBoxItem Style__
+__Example 2: RadListBoxItem Style__
 
-{{region xaml-radlistbox-features-dragdrop_1}}
+```XAML
 	<UserControl.Resources>
 		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
 	    		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 		</Style>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) note that the Style that targets RadListBoxItem should be based on the default __RadListBoxItemStyle__.
 
-#### __[XAML] Example 3: RadListBoxItem Style in NoXAML__
+__Example 3: RadListBoxItem Style in NoXAML__
 
-{{region xaml-radlistbox-features-dragdrop_2}}
+```XAML
 	<UserControl.Resources>
 		<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem" BasedOn="{StaticResource RadListBoxItemStyle}">
 			<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 		</Style>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 * Attach the ListBoxDragDropBehavior behavior:
 
-#### __[XAML] Example 4: Attaching the ListBoxDragDropBehavior__
+__Example 4: Attaching the ListBoxDragDropBehavior__
 
-{{region xaml-radlistbox-features-dragdrop_3}}
+```XAML
 	<telerik:RadListBox ItemContainerStyle="{StaticResource DraggableListBoxItem}">
 	    <telerik:RadListBox.DragDropBehavior>
 	        <telerik:ListBoxDragDropBehavior />
 	    </telerik:RadListBox.DragDropBehavior>
 	</telerik:RadListBox>
-{{endregion}}
+```
 
 ## Features
 
@@ -80,13 +80,13 @@ The DragVisualProvider enriches the drag-drop functionality of RadListBox contro
 
 In order to enable the visual DragCue the provider needs to be attached to the ListBox control:        
 
-#### __[XAML] Example 5: Attaching the DragVisualProvider__
+__Example 5: Attaching the DragVisualProvider__
 
-{{region xaml-radlistbox-features-dragdrop_4}}
+```XAML
 	<telerik:RadListBox.DragVisualProvider>
 	    <telerik:ScreenshotDragVisualProvider />
 	</telerik:RadListBox.DragVisualProvider>
-{{endregion}}
+```
 
 The DragVisualProvider can be set to:
 
@@ -128,9 +128,9 @@ In scenarios with drag-drop between controls containing different item types the
 
 * Create a new class, deriving from DataConverter and override the GetConvertToFormats() and ConvertTo(). The following method can convert data from Product to Order:
 
-#### __[C#] Example 6: Overriding the GetConvertToFormats and ConvertTo__
+__Example 6: Overriding the GetConvertToFormats and ConvertTo__
 
-{{region cs-radlistbox-features-dragdrop_5}}
+```C#
 	public class ProductToOrderConverter : DataConverter
 	{
 	    public override string[] GetConvertToFormats()
@@ -151,13 +151,13 @@ In scenarios with drag-drop between controls containing different item types the
 	        return null;
 	    }
 	}
-{{endregion}}
+```
 
 The final configuration of the RadListBox control in XAML should look like:
 
-#### __[XAML] Example 7: Final configuration of RadListBox__
+__Example 7: Final configuration of RadListBox__
 
-{{region xaml-radlistbox-features-dragdrop_6}}
+```XAML
 	<telerik:RadListBox ItemsSource="{Binding Products}" ItemContainerStyle="{StaticResource DraggableListBoxItem}">
 	    <telerik:RadListBox.DragVisualProvider>
 	        <telerik:ScreenshotDragVisualProvider />
@@ -170,7 +170,7 @@ The final configuration of the RadListBox control in XAML should look like:
 	    </telerik:RadListBox.DataConverter>
 	</telerik:RadListBox>
 	<telerik:RadListBox ItemsSource="{Binding Orders}" />
-{{endregion}}
+```
 
 The end result:
 

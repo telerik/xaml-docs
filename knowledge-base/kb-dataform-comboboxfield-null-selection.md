@@ -29,11 +29,11 @@ res_type: kb
 
 The following setup produces a `null` value in the `SelectedItem` of the RadDataFormComboBoxField on Commit button click.
 
-#### __[XAML]__
-{{region kb-dataform-comboboxfield-null-selection-0}}
+
+```XAML
 	<telerik:DataFormComboBoxField DataMemberBinding="{Binding SelectedItem}"
 								   ItemsSource="{Binding Items}" />
-{{endregion}}
+```
 
 This happens if the Commit button unloads the control from the visual tree. For example, if hosted in dialog window that gets closed on commit.
 
@@ -41,10 +41,10 @@ This happens if the Commit button unloads the control from the visual tree. For 
 
 To resolve this, add a `RadComboBox` control directly inside of the `Content` of the data field.
 
-#### __[XAML]__
-{{region kb-dataform-comboboxfield-null-selection-1}}
+
+```XAML
 	<telerik:DataFormComboBoxField>
 		<telerik:RadComboBox SelectedItem="{Binding SelectedItem}" 
 							 ItemsSource="{Binding Items}"  />
 	</telerik:DataFormComboBoxField>  
-{{endregion}}
+```

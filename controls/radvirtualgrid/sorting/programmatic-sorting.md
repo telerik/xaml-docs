@@ -26,9 +26,9 @@ It is raised when the control is initially loaded and data related information f
 
 * __MemberName__: Gives information regarding the name of the underlying data member. The property can also be set.
 
-#### __[C#] Example 3: Subscribing to the DataMemberNeeded event__
+__Example 3: Subscribing to the DataMemberNeeded event__
 
-{{region radvirtualgrid-sorting-programmatic-sorting_0}}
+```C#
 	private void VirtualGrid_DataMemberNeeded(object sender, DataMemberEventArgs e)
         {
             if (e.ColumnIndex == 0)
@@ -38,15 +38,15 @@ It is raised when the control is initially loaded and data related information f
                 e.MemberName = "Name";
             }
         }
-{{endregion}}
+```
 
 ### SortDescriptorPreparing
 
 Raised at the state when the user clicks the header of a given column and the relevant sort descriptor is being prepared. At this state, the sorting operation can be canceled. This is done through the __Cancel__ property of the event arguments.
 
-#### __[C#] Example 1: Subscribing to the SortDescriptorPreparing event__
+__Example 1: Subscribing to the SortDescriptorPreparing event__
 
-{{region radvirtualgrid-sorting-programmatic-sorting_1}}
+```C#
 	private void VirtualGrid_SortDescriptorPreparing(object sender, SortingEventArgs e)
         {
             if (e.ColumnIndex == 0)
@@ -54,7 +54,7 @@ Raised at the state when the user clicks the header of a given column and the re
                 e.Cancel = true;
             }
         }
-{{endregion}}
+```
 
 ### SortDescriptorPrepared
 
@@ -66,9 +66,9 @@ It is raised when the sort descriptor is ready and the sorting operation can be 
 
 * __SortDirection__: Provides information regarding the applied sorting state.
 
-#### __[C#] Example 2: Subscribing to the SortDescriptorPrepared event__
+__Example 2: Subscribing to the SortDescriptorPrepared event__
 
-{{region radvirtualgrid-sorting-programmatic-sorting_2}}
+```C#
 	private void VirtualGrid_SortDescriptorPrepared(object sender, SortedEventArgs e)
         {
             SortDescriptorCollection sortDescriptorCollection = new SortDescriptorCollection();
@@ -76,7 +76,7 @@ It is raised when the sort descriptor is ready and the sorting operation can be 
 
             clubsSource.AsQueryable().Sort(sortDescriptorCollection);
         }
-{{endregion}}
+```
 
 Note, that in the example above, the __SortDescriptorCollection__ is used for sorting the __underlying data source__. For this purpose, the __Sort__ extension method which is defined within the __Telerik QueryableExtensions__ is utilized. More information can be found [here](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.queryableextensions#Telerik_Windows_Data_QueryableExtensions_Sort_System_Linq_IQueryable_Telerik_Windows_Data_SortDescriptorCollection_). 
 

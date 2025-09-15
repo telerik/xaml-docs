@@ -30,7 +30,7 @@ If you want to implement multi-column grouping you just have to define __GroupDe
 
 #### __XAML__
 
-{{region xaml-gridview-multiple-column-grouping_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                AutoGenerateColumns="False">
 	    <telerik:RadGridView.GroupDescriptors>
@@ -40,13 +40,13 @@ If you want to implement multi-column grouping you just have to define __GroupDe
 	                            SortDirection="Ascending" />
 	    </telerik:RadGridView.GroupDescriptors>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 This can be done at run time via managed code too:
 
 #### __C#__
 
-{{region cs-gridview-multiple-column-grouping_1}}
+```C#
 	GroupDescriptor countryDescriptor = new GroupDescriptor();
 	countryDescriptor.Member = "Country";
 	countryDescriptor.SortDirection = ListSortDirection.Ascending;
@@ -55,11 +55,11 @@ This can be done at run time via managed code too:
 	titleDescriptor.Member = "Title";
 	titleDescriptor.SortDirection = ListSortDirection.Ascending;
 	this.radGridView.GroupDescriptors.Add(titleDescriptor);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-multiple-column-grouping_2}}
+```VB.NET
 	Dim countryDescriptor As New GroupDescriptor()
 	countryDescriptor.Member = "Country"
 	countryDescriptor.SortDirection = ListSortDirection.Ascending
@@ -68,7 +68,7 @@ This can be done at run time via managed code too:
 	titleDescriptor.Member = "Title"
 	titleDescriptor.SortDirection = ListSortDirection.Ascending
 	Me.radGridView.GroupDescriptors.Add(titleDescriptor)
-{{endregion}}
+```
 
 The result is the same as if the user has dragged and dropped the desired columns into the grouping area:
 

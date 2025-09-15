@@ -22,16 +22,16 @@ The default value of the property is **CommitEdit** meaning that all changes wil
 
 Let's say, for example, that you want to have two buttons outside of your RadGridView which are bound to the **CommitEdit** and **CancelRowEdit** commands.
 
-#### __[XAML] Example 1: Buttons Bound to RadGridView Commands__
+__Example 1: Buttons Bound to RadGridView Commands__
 
-{{region xaml-gridview-how-to-cancel-edit-on-lost-focus-0}}
+```XAML
     <Button Content="Confirm" 
             Command="telerik:RadGridViewCommands.CommitEdit"
             CommandTarget="{Binding ElementName=GridView}"/>
 	<Button Content="Cancel" 
             Command="telerik:RadGridViewCommands.CancelRowEdit"
             CommandTarget="{Binding ElementName=GridView}"/>
-{{endregion}}
+```
 
 With the default behavior, once you edit a cell and click the "Cancel" button, the changes will be actually committed, because RadGridView loses focus prior to the command being executed.
 
@@ -40,11 +40,11 @@ With the default behavior, once you edit a cell and click the "Cancel" button, t
 
 To overcome this, you can simply set the ActionOnLostFocus property to **None**.
 
-#### __[XAML] Example 2: Set ActionOnLostFocus to None__
+__Example 2: Set ActionOnLostFocus to None__
 
-{{region xaml-gridview-how-to-cancel-edit-on-lost-focus-1}}
+```XAML
     <telerik:RadGridView ActionOnLostFocus="None" ...>
-{{endregion}}
+```
 
 This way the "Cancel" button will work as expected as illustrated on **Figure 2**.
 

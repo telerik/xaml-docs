@@ -33,25 +33,25 @@ When using any of the [Telerik themes]({%slug common-styling-appearance-availabl
 
 Most controls use the theme Palette's FontSize property, yet all themes support a different number of various font sizes. For example, if the Office2016Theme is applied to your application, you can change the following font size properties of its palette:
 
-#### __[C#] Example 1: Modifying the FontSize and FontFamily in the Office2016 theme__
-{{region kb-common-setting-fontsize-in-code-behind-for-a-telerik-theme-0}}
+__Example 1: Modifying the FontSize and FontFamily in the Office2016 theme__
+```C#
 	Office2016Palette.Palette.FontSizeS = 10; 
 	Office2016Palette.Palette.FontSize = 12; 
 	Office2016Palette.Palette.FontSizeL = 14;
 	Office2016Palette.Palette.FontFamily = new FontFamily("Segoe UI"); 
-{{endregion}}
+```
 
 The values assigned to the Palette's font size properties are the default ones. You can change them on a click of a button as well at run-time. The following Example 2 how to change the default FontFamily from "Segoe UI" to "Calibri" and the FontSize from 12 to 14.
 
 
-#### __[C#] Example 2: Changing the default FontSize and FontFamily in the Office2016 theme on a button click__
-{{region kb-common-setting-fontsize-in-code-behind-for-a-telerik-theme-1}}
+__Example 2: Changing the default FontSize and FontFamily in the Office2016 theme on a button click__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e) 
 	{ 
 		Office2016Palette.Palette.FontSize = 14; 
 		Office2016Palette.Palette.FontFamily = new FontFamily("Calibri"); 
 	} 
-{{endregion}}
+```
 
 #### __Figure 1: Setting different FontSize and FontFamily__
 ![{{ site.framework_name }} Setting different FontSize and FontFamily](../styling-and-appearance/images/common-styling-appearance-office2016-theme-1.png)	

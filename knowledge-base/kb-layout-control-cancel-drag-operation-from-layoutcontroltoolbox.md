@@ -34,9 +34,9 @@ To disallow the drop of a particular item from the toolbox to the RadLayoutContr
 
 The example below shows how to cancel the drop of a **LayoutControlExpanderGroup** but this can also be modified to work for any element.
 
-#### __[C#]__
 
-{{region cs-kb-layout-control-cancel-drag-operation-from-layoutcontroltoolbox_1}}
+
+```C#
     public MainWindow()
     {
         InitializeComponent();
@@ -53,7 +53,7 @@ The example below shows how to cancel the drop of a **LayoutControlExpanderGroup
             e.Handled = true;
         }
     }
-{{endregion}}
+```
 
 ## See Also
 * [DragDropManager]({%slug dragdropmanager-getting-started%})

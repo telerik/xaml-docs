@@ -14,8 +14,8 @@ TrueRangeIndicator measures the daily range with addition to any gap from the cl
 
 To set up the indicator you can set its __CategoryBinding, HighBinding, LowBinding, CloseBinding, and ItemsSource__ properties. 
 
-#### __[XAML] Example 1: Defining TrueRangeIndicator__
-{{region radchartview-indicators-truerangeindicator-0}}
+__Example 1: Defining TrueRangeIndicator__
+```XAML
 	<telerik:RadCartesianChart.Indicators>
 		<telerik:TrueRangeIndicator CategoryBinding="Date" 
                                     HighBinding="High"
@@ -23,7 +23,7 @@ To set up the indicator you can set its __CategoryBinding, HighBinding, LowBindi
                                     CloseBinding="Close" 
 									ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: TrueRangeIndicator
 <img src="images/radchartview-indicators-truerangeindicator-0.png" style="width: 80%;">

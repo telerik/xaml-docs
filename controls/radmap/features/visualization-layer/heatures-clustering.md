@@ -48,20 +48,20 @@ More information about using of the __ItemTemplate__ property you can find in th
 
 To get notified when the cluster elements are created, the __ClustersInvalidated__ event of the VisualizationLayer can be utilized.
 
-#### __[XAML] Example 1: Subscribe to ClustersInvalidated event__
+__Example 1: Subscribe to ClustersInvalidated event__
 
-{{region xaml-radmap-visualization-layer-clustering_0}}
+```XAML
     <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClustersInvalidated="VisualizationLayer_ClustersInvalidated"/>
-{{endregion}}
+```
 
-#### __[C#] Example 2: ClustersInvalidated event handler__
+__Example 2: ClustersInvalidated event handler__
 
-{{region csharp-radmap-visualization-layer-clustering_1}}
+```C#
     private void VisualizationLayer_ClustersInvalidated(object sender, System.EventArgs e)
 	{
 		// custom logic		
 	}
-{{endregion}}
+```
 
 ## Items Grouping Example
 
@@ -69,8 +69,8 @@ The following example demonstrates how to use the __Clustering__ feature to disp
 
 If you try to load this file using the shape-file reader directly, like the sample XAML code below, then the performance of zooming and panning will be slow. Also the data items will be overlapped for low zoom levels (1-7).
         
-#### __[XAML] Example 3: Displaying Airports of USA__
-{{region radmap-visualization-layer-clustering_4}}
+__Example 3: Displaying Airports of USA__
+```XAML
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -95,7 +95,7 @@ If you try to load this file using the shape-file reader directly, like the samp
             </telerik:RadMap>
         </Grid>
     </UserControl>
-{{endregion}}
+```
 
 Here is a snapshot of the displayed items for zoom level 3:
 
@@ -105,15 +105,15 @@ Such performance is a reason to use the __Clustering__ feature to improve the pe
 
 You can set the __ClusteringEnabled__ property to __true__ for enabling the feature.        
 
-#### __[XAML] Example 4: Enable clustering functionality__
+__Example 4: Enable clustering functionality__
 
-{{region xaml-radmap-visualization-layer-clustering_5}}
+```XAML
     <telerik:VisualizationLayer x:Name="VisualizationLayer1" ClusteringEnabled="True">
         <telerik:VisualizationLayer.Reader>
             <telerik:AsyncShapeFileReader Source="/ItemsGroupingExample;component/Resources/airports.shp" ToolTipFormat="AIRPT_NAME" />
         </telerik:VisualizationLayer.Reader>
     </telerik:VisualizationLayer>
-{{endregion}}
+```
 
 Here is a snapshot of the displayed items for zoom level 3 when the grouping is used:
 
@@ -123,8 +123,8 @@ By default the cluster looks like above and it shows how many items it contains.
 
 You can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties to customize the appearance of the item and of the cluster.
         
-#### __[XAML] Example 5: Customizing the appearance of the cluster__
-{{region radmap-visualization-layer-clustering_6}}
+__Example 5: Customizing the appearance of the cluster__
+```XAML
     <UserControl x:Class="ItemsGroupingExample.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -198,7 +198,7 @@ You can configure the __ItemTemplate__ and __ClusterItemTemplate__ properties to
             </telerik:RadMap>
         </Grid>
     </UserControl>
-{{endregion}}
+```
 
 There are the results of using custom templates for clusters and items:
 ![Rad Map Features Virtualization Layer Clustering 2](images/RadMap_Features_VirtualizationLayer_Clustering_2.png)
@@ -257,8 +257,8 @@ Many of these properties are used by the cluster generator, only. It calculates 
 
 The __ClusterState__ property allows displaying the items of cluster without increasing of the zoom level. You can attach the mouse events in the cluster template like the XAML code below.
         
-#### __[XAML] Example 6: Subscribing to MouseLeftButtonDown and MouseRightButtonDown events__
-{{region radmap-visualization-layer-clustering_7}}
+__Example 6: Subscribing to MouseLeftButtonDown and MouseRightButtonDown events__
+```XAML
     <DataTemplate x:Key="ClusterTemplate">
         <Border Background="#af3f3f3f"
                 CornerRadius="3"
@@ -272,12 +272,12 @@ The __ClusterState__ property allows displaying the items of cluster without inc
             </StackPanel>
         </Border>
     </DataTemplate>
-{{endregion}}
+```
 
 The following *MouseLeftButtonDown* event handler uses to expand the items of cluster to the polygon vertices:
         
-#### __[C#] Example 8: MouseLeftButtonDown event handler__
-{{region radmap-visualization-layer-clustering_9}}
+__Example 8: MouseLeftButtonDown event handler__
+```C#
 	private void ExpandClusterToPolygon(object sender, MouseButtonEventArgs e)
 	{
 	    FrameworkElement element = sender as FrameworkElement;
@@ -300,10 +300,8 @@ The following *MouseLeftButtonDown* event handler uses to expand the items of cl
 	
 	    e.Handled = true;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 8: MouseLeftButtonDown event handler__
-{{region radmap-visualization-layer-clustering_10}}
+```
+```VB.NET
     Private Sub ExpandClusterToPolygon(sender As Object, e As MouseButtonEventArgs)
         Dim element As FrameworkElement = TryCast(sender, FrameworkElement)
         If element IsNot Nothing Then
@@ -320,12 +318,12 @@ The following *MouseLeftButtonDown* event handler uses to expand the items of cl
 
         e.Handled = True
     End Sub
-{{endregion}}
+```
 
 The following *MouseRightButtonDown* event handler uses to expand the items of cluster to their original locations:
         
-#### __[C#] Example 9: MouseRightButtonDown event handler__
-{{region radmap-visualization-layer-clustering_11}}
+__Example 9: MouseRightButtonDown event handler__
+```C#
 	private void ExpandCluster(object sender, MouseButtonEventArgs e)
 	{
 	    FrameworkElement element = sender as FrameworkElement;
@@ -348,10 +346,8 @@ The following *MouseRightButtonDown* event handler uses to expand the items of c
 	
 	    e.Handled = true;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 9: MouseRightButtonDown event handler__
-{{region radmap-visualization-layer-clustering_12}}
+```
+```VB.NET
     Private Sub ExpandCluster(sender As Object, e As MouseButtonEventArgs)
         Dim element As FrameworkElement = TryCast(sender, FrameworkElement)
         If element IsNot Nothing Then
@@ -368,7 +364,7 @@ The following *MouseRightButtonDown* event handler uses to expand the items of c
 
         e.Handled = True
     End Sub
-{{endregion}}
+```
 
 In the snapshots below you can see how the above example will be displayed using different __ClusterState__ values. The __ClusterState__ of cluster which contains six items is __Collapsed__.
 ![Rad Map Features Virtualization Layer Clustering 4](images/RadMap_Features_VirtualizationLayer_Clustering_4.png)

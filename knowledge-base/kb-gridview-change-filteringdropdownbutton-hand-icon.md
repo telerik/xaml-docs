@@ -33,8 +33,8 @@ How to change the mouse cursor icon on click over the filter drop down button of
 
 You can use the `MouseLeftButtonDown` event of the `RadGridView` control to get the `FilterDropDown` control. Then you can override the cursor on click.
 
-#### __[C#]__
-{{region kb-changehandicon-to-loadingicon}}
+
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();	
@@ -63,4 +63,4 @@ You can use the `MouseLeftButtonDown` event of the `RadGridView` control to get 
 			}
 		}
 	}
-{{endregion}}
+```

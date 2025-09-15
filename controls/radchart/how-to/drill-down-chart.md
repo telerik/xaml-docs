@@ -28,7 +28,7 @@ Also in the following examples the charts will be populated with a various data 
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_0}}
+```XAML
 	<FrameworkElement.Resources>            
 	    <example:NorthwindDataSource x:Key="DataSource" />
 	</FrameworkElement.Resources>
@@ -80,7 +80,7 @@ Also in the following examples the charts will be populated with a various data 
 	        </telerik:RadChart.DefaultView>
 	    </telerik:RadChart>
 	</Grid>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToDrillDownChart_010.png)
 
@@ -88,7 +88,7 @@ When the application (the user control) is loaded, the __RadChart__ is populated
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_1}}
+```XAML
 	<telerik:RadChart.SeriesMappings>
 	    <telerik:SeriesMapping LegendLabel="Products UnitPrice">
 	        <telerik:SeriesMapping.SeriesDefinition>
@@ -102,7 +102,7 @@ When the application (the user control) is loaded, the __RadChart__ is populated
 	        </telerik:SeriesMapping.ItemMappings>
 	    </telerik:SeriesMapping>
 	</telerik:RadChart.SeriesMappings>
-{{endregion}}
+```
 
 
 
@@ -110,7 +110,7 @@ Also the products' names are rotated on 45 degrees. In order to do that you shou
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_2}}
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  Margin="8"
 	                  ItemsSource="{Binding}">
@@ -129,7 +129,7 @@ Also the products' names are rotated on 45 degrees. In order to do that you shou
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -137,12 +137,12 @@ Also the products' names are rotated on 45 degrees. In order to do that you shou
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_3}}
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  Margin="8"
 	                  ItemsSource="{Binding Source={StaticResource DataSource},
 	                                        Path=Products}" />
-{{endregion}}
+```
 
 
 
@@ -154,7 +154,7 @@ It has two properties of type __ObservableCollection__:
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_4}}
+```C#
 	public class NorthwindDataSource
 	{
 	    private static NorthwindEntities northwindEntity;
@@ -180,13 +180,13 @@ It has two properties of type __ObservableCollection__:
 	    {
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_5}}
+```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
 	
@@ -215,7 +215,7 @@ It has two properties of type __ObservableCollection__:
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
@@ -223,7 +223,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_6}}
+```C#
 	public NorthwindDataSource()
 	{
 	    northwindEntity = new NorthwindEntities( new Uri( "http://localhost:52981/Services/SampleAdoNetDataService.svc/" ) );
@@ -234,13 +234,13 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 	    products.BeginExecute(
 	        (IAsyncResult result) => { EntitiesLoaded<Products>(result, this.Products); }, products);
 	}
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_7}}
+```C#
 	public NorthwindDataSource()
 	{
 	    northwindEntity = new NorthwindEntities(new Uri("http://localhost:52981/Services/SampleAdoNetDataService.svc/"));
@@ -251,12 +251,12 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 	        this.Products.Add( p );
 	    }
 	}
-{{endregion}}
+```
 
     
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_8}}
+```VB.NET
 	Public Sub New()
 	    northwindEntity = New NorthwindEntities(New Uri("http://localhost:52981/Services/SampleAdoNetDataService.svc/"))
 	    Me.Products = New ObservableCollection(Of Products)()
@@ -276,12 +276,12 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 	        entities.Add(entity)
 	    Next
 	End Sub
-{{endregion}}
+```
 
     
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_9}}
+```VB.NET
 	Public Sub New()
 	    northwindEntity = New NorthwindEntities(New Uri("http://localhost:52981/Services/SampleAdoNetDataService.svc/"))
 	    Me.Products = New ObservableCollection(Of Products)()
@@ -290,7 +290,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 	        Me.Products.Add(p)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -298,7 +298,7 @@ And the __EntitiesLoaded__ method:{% endif %}
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_10}}
+```C#
 	private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
 	{
 	    DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
@@ -307,20 +307,20 @@ And the __EntitiesLoaded__ method:{% endif %}
 	        entities.Add( entity );
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_11}}
+```VB.NET
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 	    Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
 	    For Each entity As T In query.EndExecute(result)
 	        entities.Add(entity)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -328,7 +328,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_12}}
+```C#
 	public static void BeginLoadingOrderDetails(Products p, int rowCount )
 	{
 	    var query = ( from od in northwindEntity.Order_Details.Expand("Orders")
@@ -340,13 +340,13 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 	    orderDetails.BeginExecute(
 	        ( IAsyncResult result ) => EntitiesLoaded<Order_Details>( result, p.Order_Details ), orderDetails );
 	}
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_13}}
+```C#
 	public static void LoadOrderDetails( Products p, int rowCount )
 	{
 	    var query = ( from od in northwindEntity.Order_Details.Expand( "Orders" )
@@ -359,13 +359,13 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 	        p.Order_Details.Add( orderDetail );
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_14}}
+```VB.NET
 	Public Shared Sub BeginLoadingOrderDetails(ByVal p As Products, ByVal rowCount As Integer)
 	    Dim query = (From od In northwindEntity.Order_Details.Expand("Orders") _
 	        Where od.ProductID = p.ProductID _
@@ -377,13 +377,13 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 	    Dim orderDetails As DataServiceQuery(Of Order_Details) = DirectCast(query, DataServiceQuery(Of Order_Details))
 	    orderDetails.BeginExecute(Sub(result As IAsyncResult) EntitiesLoaded(Of Order_Details)(result, p.Order_Details), orderDetails)
 	End Sub
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_15}}
+```VB.NET
 	Public Shared Sub LoadOrderDetails(ByVal p As Products, ByVal rowCount As Integer)
 	    Dim query = (From od In northwindEntity.Order_Details.Expand("Orders") _
 	        Where od.ProductID = p.ProductID _
@@ -396,7 +396,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 	        p.Order_Details.Add(orderDetail)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -404,11 +404,11 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_16}}
+```XAML
 	<telerik:SeriesMapping.SeriesDefinition>
 	    <telerik:BarSeriesDefinition ShowItemToolTips="True" />
 	</telerik:SeriesMapping.SeriesDefinition>
-{{endregion}}
+```
 
 
 
@@ -416,7 +416,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_17}}
+```XAML
 	<telerik:ChartArea ItemToolTipOpening="ChartArea_ItemToolTipOpening" LegendName="chartLegend">
 	    <telerik:ChartArea.AxisX>
 	        <telerik:AxisX LabelRotationAngle="45" />
@@ -439,7 +439,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 	    <telerik:AxisY DefaultLabelFormat="C" />
 	</telerik:ChartArea.AxisY>
 	</telerik:ChartArea>
-{{endregion}}
+```
 
 
 
@@ -447,7 +447,7 @@ Switch in the code-behind. Here is the code for the event handler:
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_18}}
+```C#
 	private void ChartArea_ItemToolTipOpening( ItemToolTip2D tooltip, ItemToolTipEventArgs e )
 	{
 	    Products p = e.DataPoint.DataItem as Products;
@@ -457,13 +457,13 @@ Switch in the code-behind. Here is the code for the event handler:
 	    toolTipControl.DataContext = p.Order_Details;
 	    tooltip.Content = toolTipControl;
 	}
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_19}}
+```C#
 	private void ChartArea_ItemToolTipOpening(ItemToolTip2D tooltip, ItemToolTipEventArgs e)
 	{
 	    Products p = e.DataPoint.DataItem as Products;
@@ -473,13 +473,13 @@ Switch in the code-behind. Here is the code for the event handler:
 	    toolTipControl.DataContext = p.Order_Details;
 	    tooltip.Content = toolTipControl;
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_20}}
+```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
 	    Dim p As Products = TryCast(e.DataPoint.DataItem, Products)
 	    p.Order_Details = New ObservableCollection(Of Order_Details)()
@@ -489,13 +489,13 @@ Switch in the code-behind. Here is the code for the event handler:
 	    toolTipControl.DataContext = p.Order_Details
 	    tooltip.Content = toolTipControl
 	End Sub
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_21}}
+```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
 	    Dim p As Products = TryCast(e.DataPoint.DataItem, Products)
 	    p.Order_Details = New ObservableCollection(Of Order_Details)()
@@ -505,7 +505,7 @@ Switch in the code-behind. Here is the code for the event handler:
 	    toolTipControl.DataContext = p.Order_Details
 	    tooltip.Content = toolTipControl
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -513,18 +513,18 @@ When the tooltip is opened, the underlying product is extracted first:
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_22}}
+```C#
 	           
 	Products p = e.DataPoint.DataItem as Products;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_23}}
+```VB.NET
 	Dim p As Products = TryCast(e.DataPoint.DataItem, Products)
-{{endregion}}
+```
 
 
 
@@ -538,7 +538,7 @@ Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is 
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_24}}
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  Margin="8"
 	                  ItemsSource="{Binding}">
@@ -557,7 +557,7 @@ Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -565,7 +565,7 @@ Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is 
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-drill-down-chart_25}}
+```XAML
 	<telerik:ChartArea ItemClick="ChartArea_ItemClick"
 	                   ItemToolTipOpening="ChartArea_ItemToolTipOpening"
 	                   LegendName="chartLegend">
@@ -576,7 +576,7 @@ Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is 
 	        <telerik:AxisY DefaultLabelFormat="C" />
 	    </telerik:ChartArea.AxisY>
 	</telerik:ChartArea>
-{{endregion}}
+```
 
 
 
@@ -584,7 +584,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_26}}
+```C#
 	private void ChartArea_ItemClick( object sender, ChartItemClickEventArgs e )
 	{
 	    // Get the product and load all order details
@@ -605,13 +605,13 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 	    newSeriesMapping.ItemMappings.Add( newItemMapping );
 	    radChart.SeriesMappings.Add( newSeriesMapping );
 	}
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-how-to-drill-down-chart_27}}
+```C#
 	private void ChartArea_ItemClick(object sender, ChartItemClickEventArgs e)
 	{
 	    // Get the product and load all order details
@@ -633,7 +633,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 	    newSeriesMapping.ItemMappings.Add(newItemMapping);
 	    radChart.SeriesMappings.Add(newSeriesMapping);
 	}
-{{endregion}}
+```
 
 
 
@@ -641,7 +641,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_28}}
+```VB.NET
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
 	    ' Get the product and load all order details
 	    Dim selectedItem As Products = TryCast(e.DataPoint.DataItem, Products)
@@ -662,13 +662,13 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 	    newSeriesMapping.ItemMappings.Add(newItemMapping)
 	    radChart.SeriesMappings.Add(newSeriesMapping)
 	End Sub
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-drill-down-chart_29}}
+```VB.NET
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
 	    ' Get the product and load all order details
 	    Dim selectedItem As Products = TryCast(e.DataPoint.DataItem, Products)
@@ -689,7 +689,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 	    newSeriesMapping.ItemMappings.Add(newItemMapping)
 	    radChart.SeriesMappings.Add(newSeriesMapping)
 	End Sub
-{{endregion}}
+```
 
 
 

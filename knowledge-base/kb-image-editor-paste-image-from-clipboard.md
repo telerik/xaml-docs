@@ -31,8 +31,8 @@ Paste an image file or selection from the clipboard to RadImageEditor.
 
 The following code snippet demonstrates how to get an image from the clipboard and load it in RadImageEditor.
 
-#### __[C#]__
-{{region cs-kb-image-editor-paste-image-from-clipboard-0}}
+
+```C#
 
 	this.ImageEditor.KeyUp += (s, e) =>
 	{
@@ -55,10 +55,8 @@ The following code snippet demonstrates how to get an image from the clipboard a
 			}
 		}
 	};
-{{endregion}}
-
-#### __[VB.NET]__
-{{region vb-kb-image-editor-paste-image-from-clipboard-0}}
+```
+```VB.NET
 
  	AddHandler Me.ImageEditor.KeyUp, Sub(s, e)
 		If e.Key = Key.V AndAlso KeyboardModifiers.IsControlDown Then
@@ -74,6 +72,6 @@ The following code snippet demonstrates how to get an image from the clipboard a
 		  End If
 		End If
 	End Sub
-{{endregion}}
+```
 
 The first if statement checks whether an image was copied from another image. If this is not the case, we check whether a whole image file has been copied to the clipboard.

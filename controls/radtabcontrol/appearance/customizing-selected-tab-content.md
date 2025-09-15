@@ -16,17 +16,17 @@ The content of a tab is provided using the __Content__ property of RadTabItem. T
 
 The following example shows how to setup a basic model, populate RadTabControl with data and customize the content template of the tabs.
 
-#### __[C#] Example 1: Defining tab model__
-{{region radtabcontrol-appearance-customizing-selected-tab-content-0}}
+__Example 1: Defining tab model__
+```C#
 	public class TabInfo
     {
         public string Header { get; set; }
         public string Content { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 2: Populating the control with data__
-{{region radtabcontrol-appearance-customizing-selected-tab-content-1}}
+__Example 2: Populating the control with data__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent();
@@ -38,10 +38,10 @@ The following example shows how to setup a basic model, populate RadTabControl w
 		   new TabInfo() { Header = "Settings", Content="Settings content" }
 		};
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting up the ContentTemplate__
-{{region radtabcontrol-appearance-customizing-selected-tab-content-2}}
+__Example 3: Setting up the ContentTemplate__
+```XAML
 	<telerik:RadTabControl ItemsSource="{Binding}">
 		<telerik:RadTabControl.ItemTemplate>
 			<DataTemplate>
@@ -57,7 +57,7 @@ The following example shows how to setup a basic model, populate RadTabControl w
 			</DataTemplate>
 		</telerik:RadTabControl.ContentTemplate>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTabControl Tab Content Template](images/radtabcontrol-appearance-customizing-selected-tab-content-0.png)
 

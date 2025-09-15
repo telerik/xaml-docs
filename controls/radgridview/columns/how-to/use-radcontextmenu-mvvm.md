@@ -29,7 +29,7 @@ First you need to define the context menu with menu items.
 
 #### __XAML__
 
-{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_1}}
+```XAML
 	<local:ObjectToStringConverter x:Key="ObjectToStringConverter" />
 	<local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
 	    <telerik:RadContextMenu DataContext="{Binding Path=UIElement.Column.DataControl.DataContext, RelativeSource={RelativeSource Self}}" InheritDataContext="False">
@@ -79,13 +79,13 @@ First you need to define the context menu with menu items.
 	        </telerik:RadMenuItem>
 	    </telerik:RadContextMenu>
 	</local:RadContextMenuXamlHolder>
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
 
-{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_0}}
+```XAML
 	<local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
 	    <telerik:RadContextMenu InheritDataContext="False" DataContext="{Binding Path=UIElement.Column.DataControl.DataContext, RelativeSource={RelativeSource Self}}">
 	        <telerik:RadMenuItem Command="{Binding SortAscendingCommand}"
@@ -129,7 +129,7 @@ First you need to define the context menu with menu items.
 	        </telerik:RadMenuItem>
 	    </telerik:RadContextMenu>
 	</local:RadContextMenuXamlHolder>
-{{endregion}}
+```
 
 {% endif %}
 
@@ -139,11 +139,11 @@ You need to attach the defined context menu to the column headers.
 
 #### __XAML__
 
-{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_2}}
+```XAML
 	<Style TargetType="telerik:GridViewHeaderCell">
 	    <Setter Property="telerik:RadContextMenu.ContextMenu" Value="{Binding Path=ContextMenu, Source={StaticResource ContextMenuHolder}}" />
 	</Style>
-{{endregion}}
+```
 
 
 ## Define the RadGridView
@@ -152,11 +152,11 @@ The style targeting GridViewHeaderCell will be automatically applied for the Rad
 
 #### __XAML__
 
-{{region xaml-gridview-how-to-use-radcontextmenu-mvvm_3}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource ViewModel}">
 	    <telerik:RadGridView ItemsSource="{Binding Items}" />
 	</Grid>
-{{endregion}}
+```
 
 ## Implementaions in code behind
 
@@ -164,7 +164,7 @@ The RadContextMenuXamlHolder class is defined in code behind like so:
 
 #### __C#__
 
-{{region cs-gridview-how-to-use-radcontextmenu-mvvm_4}}
+```C#
 	[ContentProperty("ContextMenu")]
 	public class RadContextMenuXamlHolder : INotifyPropertyChanged
 	{
@@ -195,7 +195,7 @@ The RadContextMenuXamlHolder class is defined in code behind like so:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 {% if site.site_name == 'WPF' %}
@@ -206,7 +206,7 @@ The RadContextMenuXamlHolder class is defined as follows:
 
 #### __C#__
 
-{{region cs-gridview-how-to-use-radcontextmenu-mvvm_6}}
+```C#
 	public class ObjectToStringConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -219,7 +219,7 @@ The RadContextMenuXamlHolder class is defined as follows:
 	        throw new NotImplementedException();
 	    }
 	}
-{{endregion}}
+```
 
 {% endif %}
 
@@ -228,7 +228,7 @@ The implementation of the ViewModel is below:
 
 #### __C#__
 
-{{region cs-gridview-how-to-use-radcontextmenu-mvvm_5}}
+```C#
 	public ViewModel()
 	{
 	    this.Items = LoadData();
@@ -424,7 +424,7 @@ The implementation of the ViewModel is below:
 	    return new List<Order>();
 	}
 	    }
-{{endregion}}
+```
 
 
 ## The defined ContextMenu works

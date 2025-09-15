@@ -18,24 +18,21 @@ You can display an icon in the RadWindow control's title bar, through its `Icon`
 
 >important `RadWindow` is declared and opened from the code behind by default. The only way to use the RadWindow as a visual element in XAML is when it represents the entire UserControl. To learn more about that read [Use RadWindow as User Control]({%slug radwindow-how-to-use-radwindow-as-user-control%}) article.
 
-#### __[C#] Setting the Icon property__
+__Setting the Icon property__
 
-{{region cs-radwindow-features-window-icon_0}}
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.Icon = new Image()
 	{
 	    Source = new BitmapImage(new Uri("../../Images/WindowIcon.png", UriKind.Relative))
 	};
-{{endregion}}
-
-#### __[VB.NET] Setting the Icon property__
-
-{{region vb-radwindow-features-window-icon_1}}
+```
+```VB.NET
 	Dim radWindow As New RadWindow()
 	Dim image As New Image()
 	image.Source = New BitmapImage(New Uri("../../Images/WindowIcon.png", UriKind.Relative))
 	radWindow.Icon = image
-{{endregion}}
+```
 
 This will be the final result:
 
@@ -45,48 +42,42 @@ This will be the final result:
 
 You can define a custom `DataTemplate` for the `IconTemplate` property that will be displayed as a title bar icon.
 
-#### __[XAML] Setting the IconTemplate property in XAML__
+__Setting the IconTemplate property in XAML__
 
-{{region xaml-radwindow-features-window-icon_2}}
+```XAML
 	<UserControl.Resources>
 	    <DataTemplate x:Key="WindowIconTemplate">
 	        <Image Source="/Images/WindowIcon.png" Stretch="None" />
 	    </DataTemplate>
 	</UserControl.Resources>
-{{endregion}}
+```
 
-#### __[C#] Setting the IconTemplate property in code-behind__
+__Setting the IconTemplate property in code-behind__
 
-{{region cs-radwindow-features-window-icon_3}}
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.IconTemplate = this.Resources["WindowIconTemplate"] as DataTemplate;
-{{endregion}}
-
-#### __[VB.NET] Setting the IconTemplate property in code-behind__
-
-{{region vb-radwindow-features-window-icon_4}}
+```
+```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.IconTemplate = TryCast(Me.Resources("WindowIconTemplate"), DataTemplate)
-{{endregion}}
+```
 
 ## Setting the IconMargin
 
 You can control the margin that is applied to the chosen icon, through the `IconMargin` property of `RadWindow`.
 
-#### __[XAML] Setting the IconMargin property in XAML__
+__Setting the IconMargin property in XAML__
 
-{{region xaml-radwindow-features-window-icon-5}}
+```XAML
 	<telerik:RadWindow x:Name="radWindow" IconMargin="5 0 0 0"/>
-{{endregion}}
+```
 
-#### __[C#] Setting the IconMargin property in code-behind__
+__Setting the IconMargin property in code-behind__
 
-{{region cs-radwindow-features-window-icon-6}}
+```C#
 	this.radWindow.IconMargin = new Thickness(5, 0, 0, 0);
-{{endregion}}
-
-#### __[VB.NET] Setting the IconMargin property in code-behind__
-
-{{region vb-radwindow-features-window-icon-7}}
+```
+```VB.NET
 	Me.radWindow.IconMargin = New Thickness(5, 0, 0, 0)
-{{endregion}}
+```

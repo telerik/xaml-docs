@@ -32,16 +32,16 @@ The following example demonstrates how you can use the SelectionChanged event:
 
 #### __XAML__
 
-{{region radtimeline-features-selection-3}}
+```XAML
 	<telerik:RadTimeline SelectionMode="Single"
 	                     IsSelectionEnabled="True"
 	                     SelectionChanged="RadTimeline_SelectionChanged"/>
 	
-	{{endregion}}
+	```
 
 #### __C#__
 
-{{region radtimeline-features-selection-0}}
+```C#
 	private void RadTimeline_SelectionChanged(object sender, SelectionChangeEventArgs e)
 	{
 	    var selectedItem = (sender as RadTimeline).SelectedItem;
@@ -51,18 +51,18 @@ The following example demonstrates how you can use the SelectionChanged event:
 	        //Do something with the selected item.
 	    }
 	}
-	{{endregion}}
+	```
 	
 #### __VB.NET__
 
-{{region radtimeline-features-selection-0}}
+```VB.NET
 	Private Sub RadTimeline_SelectionChanged(sender As Object, e As SelectionChangeEventArgs)
 		Dim selectedItem = TryCast(sender, RadTimeline).SelectedItem			
 		If selectedItem IsNot Nothing Then
 		'Do something with the selected item.
 		End If
 	End Sub
-	{{endregion}}
+	```
 
 ## Selection Modes
 
@@ -74,7 +74,7 @@ The following example demonstrates how to enable the __Single__ selection mode f
         
 #### __XAML__
 
-{{region radtimeline-features-selection-0}}
+```XAML
 	<telerik:RadTimeline SelectionMode="Single"
 	                     IsSelectionEnabled="True"
 	                     PeriodStart="2011-01-01"
@@ -91,7 +91,7 @@ The following example demonstrates how to enable the __Single__ selection mode f
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
+	```
 
 ![Rad Timeline-features-selection-0-Selection Mode Single](images/RadTimeline-features-selection-0-SelectionMode_Single.jpg)
 
@@ -103,7 +103,7 @@ The following example demonstrates how to enable the __Multiple__ selection mode
 
 #### __XAML__
 
-{{region radtimeline-features-selection-1}}
+```XAML
 	<telerik:RadTimeline SelectionMode="Multiple"
 	                     IsSelectionEnabled="True"
 	                     PeriodStart="2011-01-01"
@@ -120,7 +120,7 @@ The following example demonstrates how to enable the __Multiple__ selection mode
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
+	```
 
 ![Rad Timeline-features-selection-1-Selection Mode Multiple](images/RadTimeline-features-selection-1-SelectionMode_Multiple.jpg)
 
@@ -141,7 +141,7 @@ The following example demonstrates how to enable the __Extended__ selection mode
 
 #### __XAML__
 
-{{region radtimeline-features-selection-2}}
+```XAML
 	<telerik:RadTimeline SelectionMode="Extended"
 	                     IsSelectionEnabled="True"
 	                     PeriodStart="2011-01-01"
@@ -158,6 +158,6 @@ The following example demonstrates how to enable the __Extended__ selection mode
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
+	```
 
 ![Rad Timeline-features-selection-2-Selection Mode Extended](images/RadTimeline-features-selection-2-SelectionMode_Extended.jpg)

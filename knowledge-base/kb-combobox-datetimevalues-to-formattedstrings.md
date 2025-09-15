@@ -33,8 +33,8 @@ How to format `DateTime` values to strings in the [Selection Box]({%slug radcomb
 
 To get the desired effect, you can bind to the `SelectedItems` or to the original string value and use an `IValueConverter` to format the values.
 
-#### __[C#]__
-{{region kb-datetimevalues-to-formattedstrings}}
+
+```C#
 	public class DateTimeStringConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -50,12 +50,12 @@ To get the desired effect, you can bind to the `SelectedItems` or to the origina
 			return string.Join(", ", result);
 		}
 	}
-{{endregion}}
+```
 
 In the XAML code you can use the `RadComboBox` `MultipleSelectionBoxTemplate` property and bind the `Text` property of the `TextBlock` to the context provided in the `DataTemplate` with the converter.
 
-#### __[XAML]__
-{{region kb-datetimevalues-to-formattedstrings}}
+
+```XAML
 	<telerik:RadComboBox x:Name="radComboBox" AllowMultipleSelection="True">
 		<telerik:RadComboBox.MultipleSelectionBoxTemplate>
 			<DataTemplate>
@@ -63,4 +63,4 @@ In the XAML code you can use the `RadComboBox` `MultipleSelectionBoxTemplate` pr
 			</DataTemplate>
 		</telerik:RadComboBox.MultipleSelectionBoxTemplate>
 	</telerik:RadComboBox>
-{{endregion}}
+```

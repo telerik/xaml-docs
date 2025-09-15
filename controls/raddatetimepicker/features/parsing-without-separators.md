@@ -14,23 +14,20 @@ __RadDateTimePicker__ provides parsing logic which allows the end users to enter
 
 >important When this feature is enabled, the entered date will be parsed according to the [military format]({%slug raddatetimepicker-features-militaryparsing%}) rules and you have to set the DateTimeFormats to one of the supported ones listed in the article in order for this feature to work correctly. 
 
-#### __[XAML] Example 1: Setting the AllowParsingWithoutSeparator in xaml__
+__Example 1: Setting the AllowParsingWithoutSeparator in xaml__
 
-{{region xaml-raddatetimepicker-features-parsing-without-separators_0}}
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" AllowParsingWithoutSeparator="True" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the AllowParsingWithoutSeparator in code__
+__Example 2: Setting the AllowParsingWithoutSeparator in code__
 
-{{region cs-raddatetimepicker-features-parsing-without-separators_1}}
+```C#
 	this.radDateTimePicker.AllowParsingWithoutSeparator = true;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the AllowParsingWithoutSeparator in code__
-
-{{region vb-raddatetimepicker-features-parsing-without-separators_2}}
+```
+```VB.NET
 	Me.radDateTimePicker.AllowParsingWithoutSeparator = True
-{{endregion}}
+```
 
 __Figure 1__ shows how the entered text is handled in both cases. In the first case the text is parsed as a month and day while in the second case - as a year, since no separators are entered.
 

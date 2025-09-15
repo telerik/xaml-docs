@@ -18,7 +18,7 @@ The __CellTemplate__, __RowHeaderTemplate__ and __ColumnHeaderTemplate__ propert
 
 #### __XAML__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_5}}
+```XAML
 	<UserControl.Resources>     
 		<DataTemplate x:Key="CellTemplate">
 			<Border BorderThickness="1 1 0 0" BorderBrush="LightGray">
@@ -31,17 +31,17 @@ The __CellTemplate__, __RowHeaderTemplate__ and __ColumnHeaderTemplate__ propert
 			<TextBlock Text="{Binding Data, Mode=OneWay}" FontStyle="Italic" Margin="4 0 0 0"  VerticalAlignment="Center" />
 		</DataTemplate>
 	</UserControl.Resources>  
-{{endregion}}
+```
 
 And apply them as shown below:
 
 #### __XAML__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_6}}
+```XAML
 	<pivot:RadPivotGrid CellTemplate="{StaticResource CellTemplate}" 
 						RowHeaderTemplate="{StaticResource HeaderTemplate}" 
 						ColumnHeaderTemplate="{StaticResource HeaderTemplate}" />
-{{endregion}}
+```
 
 __Figure 1__ demonstrates the final result.
 
@@ -55,7 +55,7 @@ Implementing a custom __CellTemplateSelector__ allows you to apply different tem
 
 #### __C#__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_1}}
+```C#
 	public class CellTemplateSelector : DataTemplateSelector
 	{
 	    public DataTemplate RedTemplate { get; set; }
@@ -85,11 +85,11 @@ Implementing a custom __CellTemplateSelector__ allows you to apply different tem
 	        return base.SelectTemplate(item, container);
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_1}}
+```VB
 	Public Class CellTemplateSelector
 	    Inherits DataTemplateSelector
 	
@@ -114,13 +114,13 @@ Implementing a custom __CellTemplateSelector__ allows you to apply different tem
 	        Return MyBase.SelectTemplate(item, container)
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Next thing to do is to define the required templates in the XAML as shown below:        
 
 #### __XAML__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_1}}
+```XAML
 	<UserControl.Resources>        
 	    <local:CellTemplateSelector x:Key="CellTemplateSelector">
 	        <local:CellTemplateSelector.GreenTemplate>
@@ -143,15 +143,15 @@ Next thing to do is to define the required templates in the XAML as shown below:
 	        </local:CellTemplateSelector.RedTemplate>
 	    </local:CellTemplateSelector>
 	</UserControl.Resources>  
-{{endregion}}
+```
 
 And the last step would be to assign the __CellTemplateSelector__ to __RadPivotGrid__:        
 
 #### __XAML__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_2}}
+```XAML
 	<pivot:RadPivotGrid x:Name="pivotGrid" CellTemplateSelector="{StaticResource CellTemplateSelector}"/>
-{{endregion}}
+```
 
 You can see the final result on __Figure 2__.
 
@@ -166,7 +166,7 @@ By implementing a custom __HeaderTemplateSelector__ you are able to modify the t
 
 #### __C#__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_2}}
+```C#
 	public class HeaderTemplateSelector : DataTemplateSelector
 	{
 	    public DataTemplate ProductTemplate { get; set; }
@@ -185,11 +185,11 @@ By implementing a custom __HeaderTemplateSelector__ you are able to modify the t
 	        return base.SelectTemplate(item, container);
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_2}}
+```VB
 	Public Class HeaderTemplateSelector
 		Inherits DataTemplateSelector
 	
@@ -207,13 +207,13 @@ By implementing a custom __HeaderTemplateSelector__ you are able to modify the t
 			Return MyBase.SelectTemplate(item, container)
 		End Function
 	End Class
-{{endregion}}
+```
 
 Next thing to do is to define the required templates in the XAML the following way:        
 
 #### __XAML__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_3}}
+```XAML
 	<local:ProductToImageConverter x:Key="ProductToImageConverter"/>        
 	<local:HeaderTemplateSelector x:Key="HeaderTemplateSelector">
 	    <local:HeaderTemplateSelector.ProductTemplate>
@@ -229,13 +229,13 @@ Next thing to do is to define the required templates in the XAML the following w
 	        </DataTemplate>
 	    </local:HeaderTemplateSelector.ProductTemplate>
 	</local:HeaderTemplateSelector>
-{{endregion}}
+```
 
 Using an IValueConverter you will be able to return the path for the needed image depending content of the header cell:        
 
 #### __C#__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_3}}
+```C#
 	public class ProductToImageConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -249,11 +249,11 @@ Using an IValueConverter you will be able to return the path for the needed imag
 	        throw new NotImplementedException();
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_3}}
+```VB
 	Public Class ProductToImageConverter
 		Implements IValueConverter
 	
@@ -266,16 +266,16 @@ Using an IValueConverter you will be able to return the path for the needed imag
 			Throw New NotImplementedException()
 		End Function
 	End Class
-{{endregion}}
+```
 
 Finaly you will have to assing the HeaderTemplateSelector to the __RowHeaderTemplateSelector__ and __ColumnHeaderTemplateSelector__ properties of __RadPivotGrid__.       
 
 #### __XAML__
 
-{{region radpivotgrid-styles-and-templates-templating-cells_4}}
+```XAML
 	<pivot:RadPivotGrid RowHeaderTemplateSelector="{StaticResource HeaderTemplateSelector}" 
 					    ColumnHeaderTemplateSelector="{StaticResource HeaderTemplateSelector}"/>
-{{endregion}}
+```
 
 You can see the final result on __Figure 3__.
 

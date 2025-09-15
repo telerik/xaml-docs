@@ -38,16 +38,16 @@ First you have to define your __RadDateTimePicker__ control and point out that y
 
 #### __XAML__
 
-{{region xaml-raddatetimepicker-how-to-implement-custom-parsing_0}}
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
 	                           ParseDateTimeValue="radDateTimePicker_ParseDateTimeValue"/>
-{{endregion}}
+```
 
 Then in the event handler you can provide the parsing logic. For the current example you have to get the entered text and check if it represents a valid month's name.
 
 #### __C#__
 
-{{region cs-raddatetimepicker-how-to-implement-custom-parsing_1}}
+```C#
 	private void radDateTimePicker_ParseDateTimeValue(object sender, Telerik.Windows.Controls.ParseDateTimeEventArgs args)
 	{
 	    string input = args.TextToParse.ToLower();
@@ -68,11 +68,11 @@ Then in the event handler you can provide the parsing logic. For the current exa
 	        args.IsParsingSuccessful = false;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-raddatetimepicker-how-to-implement-custom-parsing_2}}
+```VB.NET
 	Private Sub radDateTimePicker_ParseDateTimeValue(sender As Object, args As Telerik.Windows.Controls.ParseDateTimeEventArgs)
 	    Dim input As String = args.TextToParse.ToLower()
 	    Dim formatInfo As New System.Globalization.DateTimeFormatInfo()
@@ -89,7 +89,7 @@ Then in the event handler you can provide the parsing logic. For the current exa
 	        args.IsParsingSuccessful = False
 	    End If
 	End Sub
-{{endregion}}
+```
 	
 Here is the result:
 

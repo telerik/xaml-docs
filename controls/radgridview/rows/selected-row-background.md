@@ -22,13 +22,13 @@ RadGridView has a default Brush for its selection on row level depending on the 
 
 As of __R3 2018 RadGridView__ provides support for setting the background of its selected rows through the __SelectedBackground__ property of __GridViewRow__.
 
-#### __[XAML] Example 1: Setting the SelectedBackground property of GridViewRow__
+__Example 1: Setting the SelectedBackground property of GridViewRow__
 
-{{region xaml-radgridview-rows-selectedrow-background_0}}
+```XAML
 	 <Style TargetType="telerik:GridViewRow">
             <Setter Property="SelectedBackground" Value="Bisque"/>
         </Style>
-{{endregion}}
+```
 
 #### __Figure 2: RadGridView with modified Background for its Selected Row__
 
@@ -44,13 +44,13 @@ As of __R3 2018 RadGridView__ provides support for setting the background of its
 
 As of __R1 2019 SP1__, you are able to change the brush used for the mouseover state of the GridViewRow by setting its __MouseOverBackground__ property as demonstrated in __Example 2__.
 
-#### __[XAML] Example 2: Setting the MouseOverBackground property of GridViewRow__
+__Example 2: Setting the MouseOverBackground property of GridViewRow__
 
-{{region xaml-radgridview-rows-selectedrow-background_1}}
+```XAML
 	<Style TargetType="telerik:GridViewRow" >
         <Setter Property="MouseOverBackground" Value="Pink" />
     </Style>
-{{endregion}}
+```
 
 #### __Figure 2: RadGridView with modified MouseOver Background__
 

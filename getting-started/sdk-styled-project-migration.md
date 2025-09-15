@@ -34,8 +34,8 @@ The following guide describes how to update your project .NET Framework project 
 
 1. Open the `.csproj` file of the project and replace its contents with the following XML.
 
-	#### __[XML]__
-	{{region sdk-styled-project-migration-0}}
+	
+	```XML
 		<Project Sdk="Microsoft.NET.Sdk">
 			<PropertyGroup>
 				<OutputType>WinExe</OutputType>
@@ -43,20 +43,20 @@ The following guide describes how to update your project .NET Framework project 
 				<UseWPF>true</UseWPF>
 			</PropertyGroup>
 		</Project>
-	{{endregion}}	
+	```	
 	
 	If you have settings specific to your build you may want to re-apply them in the new .csproj file definition.
 	
 1. Go to the __Properties__ folder of the project and remove the following assembly attributes from the `AssemblyInfo.cs` file.
 
-	#### __[C#]__
-	{{region sdk-styled-project-migration-1}}
+	
+	```C#
 		//[assembly: AssemblyConfiguration("")]
 		//[assembly: AssemblyCompany("Progress")]
 		//[assembly: AssemblyProduct("WpfApp1")]
 		//[assembly: AssemblyVersion("1.0.0.0")]
 		//[assembly: AssemblyFileVersion("1.0.0.0")]
-	{{endregion}}	
+	```	
 
 	If you don't have anything custom in the `AssemblyInfo.cs` file you can delete it instead of removing only the specific attributes.
 	
@@ -68,17 +68,17 @@ The following guide describes how to update your project .NET Framework project 
 
 If you use NuGet packages installed with the `packages.config` file you can move them in a new `ItemGroup` added in the `.csproj` file. The following example shows before and after NuGet definition:
 
-#### __[XML] packages.config definition (before)__
-{{region sdk-styled-project-migration-2}}
+__packages.config definition (before)__
+```XML
 	<packages>
 		<package id="Telerik.Windows.Controls.for.Wpf.Xaml" version="2025.2.521" targetFramework="net46" />
 		<package id="Telerik.Windows.Controls.Navigation.for.Wpf.Xaml" version="2025.2.521" targetFramework="net46" />
 		<package id="Telerik.Windows.Controls.GridView.for.Wpf.Xaml" version="2025.2.521" targetFramework="net46" />
 	</packages>
-{{endregion}}	
+```	
 
-#### __[XML] PackageReference definitions (after)__
-{{region sdk-styled-project-migration-3}}
+__PackageReference definitions (after)__
+```XML
 	<Project Sdk="Microsoft.NET.Sdk">
 		<PropertyGroup>
 			<OutputType>WinExe</OutputType>
@@ -91,7 +91,7 @@ If you use NuGet packages installed with the `packages.config` file you can move
 			<PackageReference Include="Telerik.Windows.Controls.GridView.for.Wpf.Xaml" Version="2025.2.521" />
 		</ItemGroup>	
 	</Project>
-{{endregion}}	
+```	
 
 ## See Also  
 * [.NET Project SDKs](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview)

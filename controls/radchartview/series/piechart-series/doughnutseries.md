@@ -23,8 +23,8 @@ This series is visualized on the screen as separate slices representing each of 
 
 You can use the following definition to display a simple DoughnutSeries
 
-#### __[XAML] Example 1: Declaring an DoughnutSeries in XAML__
-{{region  radchartview-series-doughnutseries_0}}
+__Example 1: Declaring an DoughnutSeries in XAML__
+```XAML
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:DoughnutSeries>
@@ -38,7 +38,7 @@ You can use the following definition to display a simple DoughnutSeries
 			</telerik:DoughnutSeries>
 		</telerik:RadPieChart.Series>
 	</telerik:RadPieChart>
-{{endregion}}
+```
 
 #### __Figure 1: DoughnutSeries visual appearance__	
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries.png)
@@ -56,9 +56,9 @@ You can use the following definition to display a simple DoughnutSeries
 
 You can use the __ValueBinding__ property of the DoughnutSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-doughnutseries_1}}
+```C#
 	public class PlotInfo
     {
         public double Value { get; set; }
@@ -70,12 +70,12 @@ You can use the __ValueBinding__ property of the DoughnutSeries to bind the Data
 		new PlotInfo() { Value = 43.46},
 		//....
 	};
-{{endregion}}		
+```		
 
-#### __[XAML] Example 3: Specify a DoughnutSeries in XAML__
-{{region radchartview-series-doughnutseries_2}}
+__Example 3: Specify a DoughnutSeries in XAML__
+```XAML
 	<telerik:DoughnutSeries ItemsSource="{Binding}" ValueBinding="Value" />
-{{endregion}}	
+```	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -111,10 +111,10 @@ Setting __InnerRadiusFactor__ to a value bigger than 1 (ex: 1.4) will make the e
 
 The default value of __InnerRadiusFactor__ is 0.5
 
-#### __[XAML] Example 4: Setting RadiusFactor and InnerRadiusFactor__
-{{region radchartview-series-doughnutseries_3}}
+__Example 4: Setting RadiusFactor and InnerRadiusFactor__
+```XAML
 	<telerik:DoughnutSeries RadiusFactor="1" InnerRadiusFactor="0.3">
-{{endregion}}	
+```	
 
 #### __Figure 2: RadiusFactor of 1 (left) and 0.5 (right), and InnerRadiusFactor of 0.2 (left) and 0.3 (right)__
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-1.png)
@@ -123,8 +123,8 @@ The default value of __InnerRadiusFactor__ is 0.5
 
 The DoughnutSeries allows you to offset each doughnut slice from the center of the doughnut. To do this set the __OffsetFromCenter__ property of the corresponding PieDataPoint.
 
-#### __[XAML] Example 5: Offsetting pie slices__
-{{region radchartview-series-doughnutseries_4}}
+__Example 5: Offsetting pie slices__
+```XAML
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:DoughnutSeries>
@@ -138,15 +138,15 @@ The DoughnutSeries allows you to offset each doughnut slice from the center of t
 			</telerik:DoughnutSeries>
 		</telerik:RadPieChart.Series>
 	</telerik:RadPieChart>
-{{endregion}}	
+```	
 
 #### __Figure 3: Exploding pie slices__
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-2.png)
 
 Additionally, you can define the offset for the selected PieDataPoint objects, via the __SelectedPointOffset__ property of DoughnutSeries. In this case when you select a data point, the corresponding doughnut slice will *explode* from the center of the doughnut.
 
-#### __[XAML] Example 6: Setting SelectedPointOffset__
-{{region radchartview-series-doughnutseries_5}}
+__Example 6: Setting SelectedPointOffset__
+```XAML
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:DoughnutSeries SelectedPointOffset="0.25" RadiusFactor="0.7">
@@ -163,7 +163,7 @@ Additionally, you can define the offset for the selected PieDataPoint objects, v
 			<telerik:ChartSelectionBehavior />
 		</telerik:RadPieChart.Behaviors>
 	</telerik:RadPieChart>
-{{endregion}}
+```
 
 #### __Figure 4: Selected exploding pie slices__
 ![radchartview-series-doughnutseries](images/radchartview-series-doughnutseries-3.png)

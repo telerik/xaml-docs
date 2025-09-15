@@ -16,29 +16,29 @@ This articles shows the features shared between all file dialogs controls - __Ra
 
 All the dialog controls expose a __InitialDirectory__ property that determines the directory that will be opened when the dialog shows.
 
-#### __[C#] Setting initial directory__ 
-{{region radfiledialogs-features-common-0}}
+__Setting initial directory__ 
+```C#
 	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
 	saveFileDialog.Owner = this;
 	
 	saveFileDialog.InitialDirectory = @"C:\Temp\";
 	
 	saveFileDialog.ShowDialog();	
-{{endregion}}
+```
 
 ## Setting the Initial Layout of the Tiles
 
 All the dialog controls expose a __InitialSelectedLayout__ property that determines the initial layout of the list with the files
 
-#### __[C#] Setting initial layout__ 
-{{region radfiledialogs-features-common-1}}
+__Setting initial layout__ 
+```C#
 	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();	
 	saveFileDialog.Owner = this;
 	
 	saveFileDialog.InitialSelectedLayout = Telerik.Windows.Controls.FileDialogs.LayoutType.Tiles;
 	
 	saveFileDialog.ShowDialog();	
-{{endregion}}
+```
 
 **RadOpenFileDialog in Tile view mode in the Office2016 theme**
 ![RadOpenFileDialog in Tile view mode](images/FileDialogs_TileViewMode.png)
@@ -90,13 +90,13 @@ As of __R1 2018 RadFileDialogs__ has a ContextMenu. The well-known ContextMenu u
 ## Disable the Automatic Expanding to Current Directory
 By default the main pane with the files/folders and the navigation tree are synced and when you navigate through the folders the selection in the tree navigation pane will also be updated. To disable this you can set the __ExpandToCurrentDirectory__ property of the dialog to False.
 
-#### __[C#] Disabling the automatic expanding to current directory__ 
-{{region radfiledialogs-features-common-2}}
+__Disabling the automatic expanding to current directory__ 
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theOwnerWindow;
 	openFileDialog.ExpandToCurrentDirectory = false;
 	openFileDialog.ShowDialog();
-{{endregion}}
+```
 
 >tip When enabled the automatic expanding always synchronizes the files/folders list with the navigation tree. If you want to sync them only on load of the control, you can skip setting the property initially and then subscribe to the Loaded event of the dialog. In the event handler you can set the ExpandToCurrentDirectory property to False.
 
@@ -104,13 +104,13 @@ By default the main pane with the files/folders and the navigation tree are sync
 
 By default the file dialogs don't show hidden files and folders. To show them you can set the __ShowHiddenFiles__ property of the corresponding file dialog control to True.
 
-#### __[C#] Enable showing hidden files and folders__ 
-{{region radfiledialogs-features-common-3}}
+__Enable showing hidden files and folders__ 
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = this;
 	openFileDialog.ShowHiddenFiles = true;
 	openFileDialog.ShowDialog();            
-{{endregion}}
+```
 
 **Showing hidden files**
 ![Showing hidden files](images/radfiledialogs-features-common-0.png)
@@ -119,13 +119,13 @@ By default the file dialogs don't show hidden files and folders. To show them yo
 
 By default, when the file dialogs are shown, they will load all shared drives under the "This PC" node. There are scenarios when some drives are expected to load slower than normal. This could cause a delay in loading the file dialogs. In such scenarios, __LoadDrivesInBackground__ will get in handy. Setting this property to true will indicate the control to load the drives under the "This PC" node in a background thread. This way, we can reduce the loading time of the file dialogs and work with them while the engine is loading all drives.
 
-#### __[C#] Load Drives in Background Thread__ 
-{{region radfiledialogs-features-common-4}}
+__Load Drives in Background Thread__ 
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = this;
 	openFileDialog.LoadDrivesInBackground = true;
 	openFileDialog.ShowDialog();            
-{{endregion}}
+```
 
 ## Tooltips on Trimmed Text
 
@@ -146,13 +146,13 @@ By default, the file dialogs allow you to rename the files and folders. To preve
 
 >important When the __CanUserRename__ property is set to __False__ the __Rename__ option from the context menu will be omitted.
 
-#### __[C#] Set CanUserRename to False__
-{{region radfiledialogs-features-common-5}}
+__Set CanUserRename to False__
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = this;
 	openFileDialog.CanUserRename = false;
 	openFileDialog.ShowDialog();
-{{endregion}}
+```
 
 ## See Also 
 * [Custom Places]({%slug radfiledialogs-features-customplaces%})

@@ -24,8 +24,8 @@ The `ExtensionMethodsType` tells the type of the static class that holds the met
 
 The `AggregateMethodName` returns the name of the aggregation method from the static class.
 
-#### __[C#] Implementing a static class that holds the aggregation functions__
-{{region radgridview-columns-custom-aggregate-functions-0}}
+__Implementing a static class that holds the aggregation functions__
+```C#
 	public static class ClubModelAggregates
     {
         public static string SumGoalsPerHalfSeason<TSource>(IEnumerable<Club> clubs)
@@ -52,10 +52,10 @@ The `AggregateMethodName` returns the name of the aggregation method from the st
             return sb.ToString();
         }
     }
-{{endregion}}
+```
 
-#### __[C#] Implementing a custom function that calculates the median of the items__
-{{region radgridview-columns-custom-aggregate-functions-1}}
+__Implementing a custom function that calculates the median of the items__
+```C#
 	public class CustomSumFunction : EnumerableAggregateFunction
     {
         protected override string AggregateMethodName
@@ -71,10 +71,10 @@ The `AggregateMethodName` returns the name of the aggregation method from the st
             }
         }
     }
-{{endregion}}
+```
 
-#### __[C#] The Club model used to populate the ItemsSource of RadGridView__
-{{region radgridview-columns-custom-aggregate-functions-2}}
+__The Club model used to populate the ItemsSource of RadGridView__
+```C#
 	public class Club : ViewModelBase
     {	
 		// other properties here
@@ -105,16 +105,16 @@ The `AggregateMethodName` returns the name of the aggregation method from the st
 			};
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Adding the function in the AggregateFunctions collection of RadGridView's columns__
-{{region radgridview-columns-custom-aggregate-functions-3}}
+__Adding the function in the AggregateFunctions collection of RadGridView's columns__
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding MyProperty}">
 		<telerik:GridViewDataColumn.AggregateFunctions>
 			<local:CustomSumFunction />
 		</telerik:GridViewDataColumn.AggregateFunctions>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 Find a runnable project showing this approach in the [following SDK sample](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomAggregateFunctionEnumerableProperty).
 
@@ -128,8 +128,8 @@ The `ExtensionMethodsType` tells the type of the static class that holds the met
 
 The `AggregateMethodName` returns the name of the aggregation method from the static class.
 
-#### __[C#] Implementing a static class that holds the aggregation functions__
-{{region radgridview-columns-custom-aggregate-functions-4}}
+__Implementing a static class that holds the aggregation functions__
+```C#
 	public static class MedianAggregates
 	{
 		// Invoked when the SourceFiled of the AggregateFunction points to a property which Type is System.Int32
@@ -196,10 +196,10 @@ The `AggregateMethodName` returns the name of the aggregation method from the st
 			return items.Length == 2 ? (items[0] + items[1]) / 2m : (items[mid - 1] + items[mid]) / 2m;
 		}
 	}
-{{endregion}}
+```
 
-#### __[C#] Implementing a custom function that calculates the median of the items__
-{{region radgridview-columns-custom-aggregate-functions-5}}
+__Implementing a custom function that calculates the median of the items__
+```C#
 	public class MedianFunction : EnumerableSelectorAggregateFunction
 	{
 		protected override string AggregateMethodName
@@ -215,26 +215,26 @@ The `AggregateMethodName` returns the name of the aggregation method from the st
 			}
 		}
 	}
-{{endregion}}
+```
 
-#### __[XAML] Adding the function in the AggregateFunctions collection of RadGridView's columns__
-{{region radgridview-columns-custom-aggregate-functions-6}}
+__Adding the function in the AggregateFunctions collection of RadGridView's columns__
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Number}">
 		<telerik:GridViewDataColumn.AggregateFunctions>
 			<local:MedianFunction SourceField="Number"/>
 		</telerik:GridViewDataColumn.AggregateFunctions>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 ## Using Generic Aggregate Function
 
 To implement a generic aggregate function, you can use the `AggregateFunction<TElement, TResult>` class and set its `AggregationExpression` property.
 
-#### __[C#] Defining custom aggregate function__
-{{region radgridview-columns-custom-aggregate-functions-7}}
+__Defining custom aggregate function__
+```C#
 	var customSumFunction  = new AggregateFunction<Club, int>() 
 	{ 
 		AggregationExpression = clubs => clubs.Select(x => x.StadiumCapacity).Sum() 
 	}; 
 	this.gridView.Columns[0].AggregateFunctions.Add(customSumFunction); 
-{{endregion}}
+```

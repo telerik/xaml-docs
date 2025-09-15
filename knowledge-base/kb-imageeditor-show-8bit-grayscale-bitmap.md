@@ -28,8 +28,8 @@ res_type: kb
 ## Solution
 To show a grayscale image, you can use the FormatConvertedBitmap class as shown in the [following article](https://www.c-sharpcorner.com/uploadfile/mahesh/grayscale-image-in-wpf/). The following code snippet demonstrate this approach:
 
-#### __[C#]__
-{{region cs-kb-carousel-troubleshooting-handle-verticalorientation-swipe-1}}
+
+```C#
 	private void CreateGrayScaleImage()
 	{
 		var bmpImage = new BitmapImage();
@@ -45,6 +45,6 @@ To show a grayscale image, you can use the FormatConvertedBitmap class as shown 
 
 		this.radImageEditor.Image = new RadBitmap(grayBitmap);
 	}
-{{endregion}}
+```
 
 

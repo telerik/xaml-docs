@@ -23,8 +23,8 @@ When using the RadCalculatorPicker on a device without a numeric keypad, the dec
 
 To make RadCalculatorPicker recognize the period (.) or comma (,) key as the decimal separator, subscribe to the `KeyDown` event and execute the `RadCalculatorCommands.UpdateInput` command.
 
-#### __[C#]__
-{{region kb-calculator-recognize-period-comma-decimal-0}}
+
+```C#
 	private void RadCalculatorPicker_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
 	{
 		if (e.Key == System.Windows.Input.Key.OemPeriod)
@@ -32,4 +32,4 @@ To make RadCalculatorPicker recognize the period (.) or comma (,) key as the dec
 			RadCalculatorCommands.UpdateInput.Execute(CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator);
 		}
 	}
-{{endregion}}
+```

@@ -45,9 +45,9 @@ The approach for accomplishing this is to create a separate class, inherit the D
 
 The class responsible for customizing the keyboard navigation should to be similar to Example 1:
 
-#### __[C#] Example 1: Creating a custom KeyboardCommandProvider__
+__Example 1: Creating a custom KeyboardCommandProvider__
 
-	{{region cs-raddataform-features-keyboard-support_0}}
+	```C#
 	public class CustomKeyboardCommandProvider : DataFormCommandProvider
 	{
 	    public CustomKeyboardCommandProvider()
@@ -82,11 +82,8 @@ The class responsible for customizing the keyboard navigation should to be simil
 	        return actionsToExecute;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating a custom KeyboardCommandProvider__
-
-	{{region vb-raddataform-features-keyboard-support_0}}
+```
+```VB.NET
 	Public Class CustomKeyboardCommandProvider
 	    Inherits DataFormCommandProvider
 	    Public Sub New()
@@ -117,43 +114,40 @@ The class responsible for customizing the keyboard navigation should to be simil
 	        Return actionsToExecute
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Following up the code-snippet above, a press of Left/ Right keys will result in moving to the Next/ Previous item and editing it. However, do not forget to remove the predefined commands for that particular key by calling the Clear() method.
 
 The last thing to be done is to set the CommandProvider property of the RadDataForm to be the newly-created CustomKeyboardCommandProvider class:
 
-#### __[XAML] Example 2: Set the CommandProvider property__
+__Example 2: Set the CommandProvider property__
 
-	{{region xaml-raddataform-features-keyboard-support_1}}
+	```XAML
 	<Grid.Resources>
 	    <my:CustomKeyboardCommandProvider x:Key="CustomProvider"/>
 	</Grid.Resources>
 	<telerik:RadDataForm x:Name="RadDataForm1"
 	                 ItemsSource="{Binding Employees}" 
 	                 CommandProvider="{StaticResource CustomProvider}"/>
-{{endregion}}
+```
 
 
-#### __[C#] Example 2: Set the CommandProvider property__
+__Example 2: Set the CommandProvider property__
 
-	{{region cs-raddataform-features-keyboard-support_2}}
+	```C#
 	this.RadDataForm1.CommandProvider = new CustomKeyboardCommandProvider(this.RadDataForm1);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Set the CommandProvider property__
-
-	{{region vb-raddataform-features-keyboard-support_2}}
+```
+```VB.NET
 	Me.RadDataForm1.CommandProvider = New CustomKeyboardCommandProvider(Me.RadDataForm1)
-{{endregion}}
+```
 
 ## Disable the Built-in Navigation
 
 As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation__ property. Its default value is __True__. In order to __disable the built-in navigation__, you can set its value to __False__.
 
-#### __[C#] Example 3: Setting the EnableBuiltInNavigation property to False__ 
+__Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
-	{{region cs-raddataform-features-keyboard-support_3}}
+	```C#
 	public class NoBuiltInNavigationKeyboardCommandProvider : DataFormCommandProvider
 	{
 	    public NoBuiltInNavigationKeyboardCommandProvider()
@@ -167,11 +161,8 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
 	        this.EnableBuiltInNavigation = false;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the EnableBuiltInNavigation property to False__ 
-
-	{{region vb-raddataform-features-keyboard-support_3}}
+```
+```VB.NET
 	Public Class NoBuiltInNavigationKeyboardCommandProvider
 	    Inherits DataFormCommandProvider
 	    Public Sub New()
@@ -183,15 +174,15 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
 	        Me.EnableBuiltInNavigation = False
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## Control the Processing of Handled Events
 
 As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __DataFormCommandProvider__ is exposed. Its default value is __True__. If you want to manually process handled events, you can set its value to __False__.
 
-#### __[C#] Example 4: Setting the ShouldProcessHandledEvents to False__
+__Example 4: Setting the ShouldProcessHandledEvents to False__
 
-	{{region cs-raddataform-features-keyboard-support_4}}
+	```C#
 	public class ProcessHandledEventsKeyboardCommandProvider : DataFormCommandProvider
 	{
 	    public ProcessHandledEventsKeyboardCommandProvider()
@@ -205,11 +196,8 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
 	        this.ShouldProcessHandledEvents = false;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting the ShouldProcessHandledEvents to False__
-
-	{{region vb-raddataform-features-keyboard-support_4}}
+```
+```VB.NET
 	Public Class ProcessHandledEventsKeyboardCommandProvider
 	    Inherits DataFormCommandProvider
 	    Public Sub New()
@@ -221,7 +209,7 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
 	        Me.ShouldProcessHandledEvents = False
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## See Also
 

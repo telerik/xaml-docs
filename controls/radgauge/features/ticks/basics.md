@@ -27,13 +27,13 @@ To specify the size of all major ticks you should use the __MajorTickRelativeWid
 Here is an example:
 
 #### __XAML__
-{{region radgauge-features-ticks-basics_0}}
+```XAML
 	<telerik:RadHorizontalLinearGauge Width="200" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100"
 	                         MajorTickRelativeWidth="0.003*"
 	                         MajorTickRelativeHeight="0.12*"/>
 	</telerik:RadHorizontalLinearGauge> 
-{{endregion}}
+```
 
 Here is a snapshot of the result.
 
@@ -46,7 +46,7 @@ The __TickProperties__ class exposes a __Location__ property, which allows you t
 Here is an example:
 
 #### __XAML__
-{{region radgauge-features-ticks-basics_1}}
+```XAML
 	<telerik:RadHorizontalLinearGauge Width="200" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100"
 	                         MajorTickRelativeHeight="0.2*"
@@ -56,7 +56,7 @@ Here is an example:
 	                         MiddleTickLocation="OverCenter"
 	                         MinorTickLocation="OverCenter" />
 	</telerik:RadHorizontalLinearGauge> 
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -75,12 +75,12 @@ The __TickProperties__ objects provide you with two ways of modifying the ticks'
 To modify the ticks' background, simply set the __MajorTickBackground__, __MiddleTickBackground__ or the __MinorTickBackground__ property of the respective __Scale__ object to the desired color. Here is an example:
 
 #### __XAML__
-{{region radgauge-features-ticks-basics_2}}
+```XAML
 	<telerik:RadHorizontalLinearGauge Width="200" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100" 
 	                         MajorTickBackground="#FFE50000"/>
 	</telerik:RadHorizontalLinearGauge> 
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -91,7 +91,7 @@ Here is a snapshot of the result:
 The other way of specifying the appearance of the tick is by defining an entire __DataTemplate__ for it, which will get applied to each of the ticks of the respective type. There you can define the visual appearance of the tick as you desire and bind the used elements to the data context of the template where needed.        
 
 #### __XAML__
-{{region radgauge-features-ticks-basics_3}}
+```XAML
 	<telerik:RadHorizontalLinearGauge Width="200" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadHorizontalLinearGauge.Resources>
 	        <DataTemplate x:Key="CustomTemplate">
@@ -104,7 +104,7 @@ The other way of specifying the appearance of the tick is by defining an entire 
 	                         MajorTickTemplate="{StaticResource CustomTemplate}"
 	                         MajorTickRelativeWidth="0.03*"/>
 	</telerik:RadHorizontalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

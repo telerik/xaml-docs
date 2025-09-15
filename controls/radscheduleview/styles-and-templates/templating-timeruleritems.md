@@ -49,9 +49,9 @@ First, you will need to retrieve the default __TimeRulerItemTemplateSelector__ f
 
 __Example 1__ shows TimeRulerItemTemplateSelector with modified VerticalDayMajorItemTemplate and VerticalDayMinorItemTemplate.
 
-#### __[XAML] Example 1: Modified TimeRulerItemTemplateSelector__
+__Example 1: Modified TimeRulerItemTemplateSelector__
 
-{{region radscheduleview-styles-and-templates-templating-timeruleritems_0}}
+```XAML
 	<telerikScheduleView:TimeRulerItemTemplateSelector x:Key="TimeRulerItemTemplateSelector">
 		...    
 		<telerikScheduleView:TimeRulerItemTemplateSelector.VerticalDayMajorItemTemplate>
@@ -66,7 +66,7 @@ __Example 1__ shows TimeRulerItemTemplateSelector with modified VerticalDayMajor
 		</telerikScheduleView:TimeRulerItemTemplateSelector.VerticalDayMinorItemTemplate>   
 		...
 	</telerikScheduleView:TimeRulerItemTemplateSelector>
-{{endregion}}
+```
 
 >The text of the TextBlock inside the templates is bound to the __FormattedValue__ property, which is formed after the StringFormat is set through the [Formatting properties]({%slug radscheduleview-features-formatting%}) of the ViewDefinitions is applied.
 
@@ -76,9 +76,9 @@ All that is left is to set __TimeRulerItemTemplateSelector__ property of the Sch
 
 __Example 2__ shows how the __RadScheduleView__ is defined.
 
-#### __[XAML] Example 2: RadScheduleView with TimeRulerItemTemplateSelector set__
+__Example 2: RadScheduleView with TimeRulerItemTemplateSelector set__
 
-{{region radscheduleview-styles-and-templates-templating-timeruleritems_1}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
             TimeRulerItemTemplateSelector="{StaticResource TimeRulerItemTemplateSelector}">
 		<telerik:RadScheduleView.ViewDefinitions>
@@ -86,7 +86,7 @@ __Example 2__ shows how the __RadScheduleView__ is defined.
 									   TimerulerMinorTickStringFormat=":{0:mm}" />            
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>   
-{{endregion}}
+```
 
 __Figure 8__ shows the final result.
 

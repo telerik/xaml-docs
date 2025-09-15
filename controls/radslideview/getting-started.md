@@ -31,10 +31,10 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add RadSlideView manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Adding RadSlideView in XAML__
-{{region radslideview-getting-started-0}}
+__Adding RadSlideView in XAML__
+```XAML
     <telerik:RadSlideView/>
-{{endregion}}
+```
 
 __Empty RadSlideView__
 
@@ -46,25 +46,23 @@ RadSlideView allows you to data bind it to a collection of business objects. To 
 
 The following example will demonstrate a simple data binding scenario.
 
-#### __[C#] Defining the model__
-{{region radslideview-getting-started-1}}
+__Defining the model__
+```C#
     public class Photo
     {
         public string Title { get; set; }
         public string ImagePath { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Defining the model__
-{{region radslideview-getting-started-2}}
+```
+```VB.NET
     Public Class Photo
         Public Property Title As String
         Public Property ImagePath As String
     End Class
-{{endregion}}
+```
 
-#### __[C#] Defining the view model__
-{{region radslideview-getting-started-3}}
+__Defining the view model__
+```C#
     public class PhotosViewModel
     {
         public PhotosViewModel()
@@ -78,10 +76,8 @@ The following example will demonstrate a simple data binding scenario.
         }
         public ObservableCollection<Photo> Photos { get; set; } 
     }
-{{endregion}}
-
-#### __[VB.NET] Defining the view model__
-{{region radslideview-getting-started-4}}
+```
+```VB.NET
     Public Class PhotosViewModel
         Public Sub New()
             Me.Photos = New ObservableCollection(Of Photo)() From {
@@ -102,10 +98,10 @@ The following example will demonstrate a simple data binding scenario.
 
         Public Property Photos As ObservableCollection(Of Photo)
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Binding the collection to the ItemsSource property__
-{{region radslideview-getting-started-5}}
+__Binding the collection to the ItemsSource property__
+```XAML
     <Grid>
         <Grid.Resources>
             <local:PhotosViewModel x:Key="PhotosViewModel"/>
@@ -114,10 +110,10 @@ The following example will demonstrate a simple data binding scenario.
                               ItemsSource="{Binding Photos}">
         </telerik:RadSlideView>
     </Grid>
-{{endregion}}
+```
 
-#### __[XAML] Customizing the appearance of the bound items via the ItemTemplate property of RadSlideView__
-{{region radslideview-getting-started-6}}
+__Customizing the appearance of the bound items via the ItemTemplate property of RadSlideView__
+```XAML
     <Grid>
         <Grid.Resources>
             <local:PhotosViewModel x:Key="PhotosViewModel"/>
@@ -145,7 +141,7 @@ The following example will demonstrate a simple data binding scenario.
             </telerik:RadSlideView.ItemTemplate>
         </telerik:RadSlideView>
     </Grid>
-{{endregion}}
+```
 
 __RadSlideView in a sample data-binding scenario__
 
@@ -165,8 +161,8 @@ The controls from our suite support different themes. You can see how to apply a
 
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__
-{{region radslideview-getting-started-7}}
+__Merge the ResourceDictionaries__
+```XAML
     <Application.Resources>
     	<ResourceDictionary>
     		<ResourceDictionary.MergedDictionaries>
@@ -175,7 +171,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
     		</ResourceDictionary.MergedDictionaries>
     	</ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

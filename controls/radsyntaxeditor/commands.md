@@ -35,18 +35,18 @@ position: 5
 
 The following example demonstrates how to select and delete the first occurrence of the "Telerik" word from the loaded text in code-behind and in XAML:
 
-#### __[C#] Use commands in code-behind__
-{{region radsyntaxeditor-commands-1}}
+__Use commands in code-behind__
+```C#
     this.syntaxEditor.Commands.NavigateNextMatchCommand.Execute("Telerik");
     this.syntaxEditor.Commands.DeleteCommand.Execute(null);
-{{endregion}}
+```
 
-#### __[XAML] Use commands in XAML__
-{{region radsyntaxeditor-commands-2}}
+__Use commands in XAML__
+```XAML
     <telerik:RadSyntaxEditor x:Name="syntaxEditor" />
     <telerik:RadButton Content="Select Next Match" Command="{Binding Commands.NavigateNextMatchCommand, ElementName=syntaxEditor}" CommandParameter="Telerik" />
     <telerik:RadButton Content="Delete" Command="{Binding Commands.DeleteCommand, ElementName=syntaxEditor}" />
-{{endregion}}
+```
 
 ## Managing Commands
 
@@ -54,29 +54,25 @@ RadSyntaxEditor allows you to register and unregister its commands. To do so, yo
 
 The following examples show how to register and unregister the `CodeCompletionCommand`:
 
-#### __[C#] Register a command__
-{{region radsyntaxeditor-commands-3}}
+__Register a command__
+```C#
     SyntaxEditorDelegateCommand codeCompletionCommand = (SyntaxEditorDelegateCommand)this.syntaxEditor.Commands.CodeCompletionCommand;
     this.syntaxEditor.KeyBindings.RegisterCommand(codeCompletionCommand, Key.Enter, ModifierKeys.Control);
-{{endregion}}
-
-#### __[VB.NET] Register a command__
-{{region radsyntaxeditor-commands-4}}
+```
+```VB.NET
     Dim codeCompletionCommand As SyntaxEditorDelegateCommand = CType(Me.syntaxEditor.Commands.CodeCompletionCommand, SyntaxEditorDelegateCommand)
     Me.syntaxEditor.KeyBindings.RegisterCommand(codeCompletionCommand, Key.Enter, ModifierKeys.Control)
-{{endregion}}
+```
 
-#### __[C#] Unregister a command__
-{{region radsyntaxeditor-commands-5}}
+__Unregister a command__
+```C#
     SyntaxEditorDelegateCommand codeCompletionCommand = (SyntaxEditorDelegateCommand)this.syntaxEditor.Commands.CodeCompletionCommand;
     this.syntaxEditor.KeyBindings.UnregisterCommand(codeCompletionCommand);
-{{endregion}}
-
-#### __[VB.NET] Unregister a command__
-{{region radsyntaxeditor-commands-6}}
+```
+```VB.NET
     Dim codeCompletionCommand As SyntaxEditorDelegateCommand = CType(Me.syntaxEditor.Commands.CodeCompletionCommand, SyntaxEditorDelegateCommand)
     Me.syntaxEditor.KeyBindings.UnregisterCommand(codeCompletionCommand)
-{{endregion}}
+```
 
 >important Registering and unregistering commands would require the RadSyntaxEditor control to be loaded. You can utilize the RegisterCommand and UnregisterCommand methods in the `Loaded` event of the control.
 

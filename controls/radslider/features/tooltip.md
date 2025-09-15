@@ -12,10 +12,10 @@ position: 8
 
 The tooltip of RadSlider enables the user to see the value of the slider's thumb while dragging it. In order to enable the ToolTip in the RadSlider component, you can set the __AutoToolTipPlacement__ property. The property is an enumeration of type AutoToolTipPlacement and the possible values which can be set are __None__, __TopLeft__, __BottomRight__. The default value of the __AutoToolTipPlacement__ property is __None__.
 
-#### __[XAML] Example 1: Set AutoToolTipPlacement property to TopLeft in horizontal orientation__
-{{region  xaml-radslider-tooltip-01}}
+__Example 1: Set AutoToolTipPlacement property to TopLeft in horizontal orientation__
+```XAML
 	<telerik:RadSlider Minimum="0" Maximum="10" AutoToolTipPlacement="TopLeft"/>
-{{endregion}}
+```
 
 You can change the postion of the tool tip by setting the Orientation and AutoToolTipPlacement properties. The following pictures display the different position of the tool tip.
 #### __Figure 1: Horizontal orientated sliders__
@@ -28,8 +28,8 @@ You can change the postion of the tool tip by setting the Orientation and AutoTo
 
 By default, the ToolTip displays the thumb's value with two decimal symbols of precision (52.42 for example). To change the precision or the default representation of the ToolTip content you can set the __AutoToolTipContentTemplate__ property.
 
-#### __[XAML] Example 3: Set custom DataTemplate to AutoToolTipContentTemplate property__
-{{region  xaml-radslider-tooltip-03}}
+__Example 3: Set custom DataTemplate to AutoToolTipContentTemplate property__
+```XAML
 	<telerik:RadSlider Minimum="0" Maximum="10" AutoToolTipPlacement="TopLeft">
 		<telerik:RadSlider.AutoToolTipContentTemplate>
 			<DataTemplate>
@@ -37,7 +37,7 @@ By default, the ToolTip displays the thumb's value with two decimal symbols of p
 			</DataTemplate>
 		</telerik:RadSlider.AutoToolTipContentTemplate>
 	</telerik:RadSlider>	
-{{endregion}}
+```
 
 #### __Figure 3: Setting custom template to the AutoToolTipContentTemplate property__
 ![RadSlider ToolTip AutoToolTipPlacement BottomRight](images/RadSlider_AutoToolTipPlacement_ContentTemplate_04.png)
@@ -55,8 +55,8 @@ When selection range is enabled, the tooltip will appear on the start thumb or t
 
 With the __R2 2020__ version of Telerik UI for WPF controls, the RadSlider control exposes a __ThumbToolTipStyle__ property which can be used to customize the thumb tooltip. __Example 4__ demonstrates how we can use this property to add RadCallout control inside the thumb tooltip.
 
-#### __[XAML] Example 4: Callout as a ToolTip for RadSlider Thumb__
-{{region  xaml-radslider-tooltip-04}}
+__Example 4: Callout as a ToolTip for RadSlider Thumb__
+```XAML
 	<telerik:RadSlider AutoToolTipPlacement="TopLeft" Minimum="0" Maximum="100" LargeChange="5" SmallChange="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" > 
 		<telerik:RadSlider.ThumbToolTipStyle> 
 			<Style TargetType="ToolTip"> 
@@ -72,7 +72,7 @@ With the __R2 2020__ version of Telerik UI for WPF controls, the RadSlider contr
 			</DataTemplate> 
 		</telerik:RadSlider.AutoToolTipContentTemplate> 
     </telerik:RadSlider>     
-{{endregion}}
+```
 
 ## See Also
  * [Getting Started]({%slug radslider-declaration%})	

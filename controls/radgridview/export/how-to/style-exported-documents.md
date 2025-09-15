@@ -29,9 +29,9 @@ The class provides the following useful properties:
 * **Underline**: Gets or sets the Underline of the text in the cells.
 * **VerticalAlignment**: Gets or sets the vertical alignment.
 
-#### __[C#] Example 1: Style exported XLSX/PDF document__
+__Example 1: Style exported XLSX/PDF document__
 
-{{region cs-gridview-export-style-exported-xlsx-pdf-documents_0}}
+```C#
 	private void ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
 	{
 	    if (e.Element == ExportElement.HeaderRow)
@@ -53,11 +53,8 @@ The class provides the following useful properties:
 	        };
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Style exported XLSX/PDF document__
-
-{{region vb-gridview-export-style-exported-xlsx-pdf-documents_0}}
+```
+```VB.NET
 	Private Sub ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewElementExportingToDocumentEventArgs)
 	    If e.Element = ExportElement.HeaderRow Then
 	        TryCast(e.VisualParameters, GridViewDocumentVisualExportParameters).Style = New CellSelectionStyle() With {
@@ -73,7 +70,7 @@ The class provides the following useful properties:
 	        }
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

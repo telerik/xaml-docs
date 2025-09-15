@@ -36,16 +36,16 @@ You have two options:
 
 The style in **Example 1** will style all the column headers in your application.
 
-#### __[XAML] Example 1: Styling all header cells of an application__
+__Example 1: Styling all header cells of an application__
 
-{{region xaml-gridview-styling-headercell_0}}
+```XAML
 	<Application.Resources>
 		<Style TargetType="telerik:GridViewHeaderCell">
 			<Setter Property="Foreground" Value="Red"/>
 			<Setter Property="HorizontalContentAlignment" Value="Center"/>
 		</Style>
 	</Application.Resources>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base your style on the __GridViewHeaderCellStyle__.
 
@@ -55,9 +55,9 @@ __RadGridView__ header cells can also be styled by creating an appropriate __Sty
 
 The style from **Example 2** will only be applied to the **Number** column as we've set its HeaderCellStyle property.
 
-#### __[XAML] Example 2: Setting a column's HeaderCellStyle__
+__Example 2: Setting a column's HeaderCellStyle__
 
-{{region xaml-gridview-styling-headercell_1}}
+```XAML
     <Grid>
         <Grid.Resources>
             <Style x:Key="CustomGridViewHeaderCellStyle" TargetType="telerik:GridViewHeaderCell" BasedOn="{StaticResource GridViewHeaderCellStyle}">
@@ -72,7 +72,7 @@ The style from **Example 2** will only be applied to the **Number** column as we
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 2: RadGridView with styled header cell__
 

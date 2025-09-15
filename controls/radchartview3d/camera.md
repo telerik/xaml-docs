@@ -16,14 +16,14 @@ The point of view is defined by the position of the camera in the 3D space (x, y
 
 You can get the camera object using the __Camera__ property of the chart.
 
-#### __[C#] Example 1: Getting/setting the chart camera__
-{{region radchartview3d-camera-0}}
+__Example 1: Getting/setting the chart camera__
+```C#
 	// Getting the camera
 	Camera camera = chart.Camera;	
 	
 	// Setting the camera
 	chart.Camera = new OrthographicCamera();	
-{{endregion}}
+```
 
 > You can find more information about 3D and the WPF cameras in the [3-D Graphics Overview article](https://msdn.microsoft.com/en-us/library/ms747437(v=vs.110).aspx) in MSDN. 
 

@@ -14,20 +14,20 @@ RadGridView allows you to display additional information which applies to the co
 
 By default, column footers are hidden and in order to make them visible you have to set the __ShowColumnFooters__ property to __True__.
 
-#### __[XAML] Example 1: Show column footers__
-{{region xaml-gridview-columns-column-footers_1}}
+__Example 1: Show column footers__
+```XAML
 	<telerik:RadGridView ShowColumnFooters="True">
 	  <!-- ... -->
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 To set the value of the footer cells, you can use the __Footer__ property of the columns.
 
-#### __[XAML] Example 2: Set the content of the footer cells__
+__Example 2: Set the content of the footer cells__
 
-{{region xaml-gridview-columns-column-footers_2}}
+```XAML
 	<telerik:GridViewDataColumn Header="ID" DataMemberBinding="{Binding EmployeeID}" Footer="Footer cell" />
-{{endregion}}
+```
 
 #### Figure 1: RadGridView with footer cells
 
@@ -35,9 +35,9 @@ To set the value of the footer cells, you can use the __Footer__ property of the
 
 Because it is of type object, you are not limited to just using plain text. For example, you can add a corresponding picture to the footer text.
 
-#### __[XAML] Example 3: Adding an image to the footer content__
+__Example 3: Adding an image to the footer content__
 
-{{region xaml-gridview-columns-column-footers_1}}
+```XAML
 	<telerik:GridViewDataColumn Header="ID" DataMemberBinding="{Binding EmployeeID}">
 	  	<telerik:GridViewDataColumn.Footer>
 			<Grid>
@@ -50,7 +50,7 @@ Because it is of type object, you are not limited to just using plain text. For 
 			</Grid>
 	  	</telerik:GridViewDataColumn.Footer>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 #### Figure 2: Image in the footer cell
 
@@ -60,15 +60,15 @@ Because it is of type object, you are not limited to just using plain text. For 
 
 Column footers are also used to display aggregated information on the data displayed in the column via aggregate functions.
 
-#### __[XAML] Example 4: Adding an aggregate function to a column__
+__Example 4: Adding an aggregate function to a column__
 
-{{region xaml-gridview-columns-column-footers_1}}
+```XAML
 	<telerik:GridViewDataColumn Header="ID" DataMemberBinding="{Binding EmployeeID}"> 
 		<telerik:GridViewDataColumn.AggregateFunctions> 
 			<telerik:CountFunction Caption="Count:	" /> 
 		</telerik:GridViewDataColumn.AggregateFunctions> 
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 #### Figure 3: Footer cell with aggregate results
 

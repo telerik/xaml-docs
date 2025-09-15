@@ -47,34 +47,34 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 
 #### __XAML__
 
-{{region xaml-gridview-events-delete_0}}
+```XAML
 	<telerik:RadGridView x:Name="gridView" Deleting="gridView_Deleting" />
-{{endregion}}
+```
 
 
 #### __C#__
 
-{{region cs-gridview-events-delete_1}}
+```C#
 	this.gridView.Deleting += gridView_Deleting;
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-gridview-events-delete_2}}
+```VB.NET
 	AddHandler Me.gridView.Deleting, AddressOf gridView_Deleting
 	' #endregion
 	
 	'#region gridview-events-delete_7
 	AddHandler Me.gridView.Deleted, AddressOf gridView_Deleted
-{{endregion}}
+```
 
 
 The Deleting event is cancelable. The example below uses the __Deleting__ event to ask the user for confirmation before the deletion is performed.
 
 #### __C#__
 
-{{region cs-gridview-events-delete_3}}
+```C#
 	protected IEnumerable<Object> itemsToBeDeleted;
 	
 	private void gridView_Deleting(object sender, Telerik.Windows.Controls.GridViewDeletingEventArgs e)
@@ -101,13 +101,13 @@ The Deleting event is cancelable. The example below uses the __Deleting__ event 
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-gridview-events-delete_4}}
+```VB.NET
 	Protected itemsToBeDeleted As IEnumerable(Of Object)
 	
 	Private Sub gridView_Deleting(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewDeletingEventArgs)
@@ -130,7 +130,7 @@ The Deleting event is cancelable. The example below uses the __Deleting__ event 
 	        Next club
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## Deleted event
 
@@ -143,22 +143,22 @@ You can subscribe to the __Deleted__ event declaratively or runtime like this:
 
 #### __XAML__
 
-{{region xaml-gridview-events-delete_5}}
+```XAML
 	<telerik:RadGridView x:Name="gridView" Deleted="gridView_Deleted" />
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-gridview-events-delete_6}}
+```C#
 	this.gridView.Deleted += gridView_Deleted;
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-gridview-events-delete_7}}
+```VB.NET
 	AddHandler Me.gridView.Deleted, AddressOf gridView_Deleted
-{{endregion}}
+```
 
 
 ## See Also

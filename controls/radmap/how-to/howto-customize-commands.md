@@ -27,8 +27,8 @@ The CommandDescription class exposes the following properties:
 
 Here is a sample code snippet that demonstrates custom `RoutedUICommand` usage:
 
-#### __[XAML]__
-{{region radmap-howto-customize-commands_0}}
+
+```XAML
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
 	        <DataTemplate x:Key="CustomCommandDataTemplate">
@@ -74,10 +74,10 @@ Here is a sample code snippet that demonstrates custom `RoutedUICommand` usage:
 	                    GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104">
 	    </telerik:RadMap>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region radmap-howto-customize-commands_1}}
+
+```C#
 	public partial class MainWindow : Window
 	{
 	    private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
@@ -122,10 +122,8 @@ Here is a sample code snippet that demonstrates custom `RoutedUICommand` usage:
 	        // execute custom action here...
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-{{region radmap-howto-customize-commands_2}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 	    Inherits Window
 
@@ -166,12 +164,12 @@ Here is a sample code snippet that demonstrates custom `RoutedUICommand` usage:
 	    Private Sub ExecuteCustomCommand(ByVal sender As Object, ByVal e As ExecutedRoutedEventArgs)
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 Here is a sample code snippet that demonstrates custom `DelegateCommand` usage:
 
-#### __[XAML]__
-{{region radmap-howto-customize-commands_3}}
+
+```XAML
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
 	        <DataTemplate x:Key="MyDataTemplate">
@@ -202,10 +200,10 @@ Here is a sample code snippet that demonstrates custom `DelegateCommand` usage:
 	                    GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104">
 	    </telerik:RadMap>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region radmap-howto-customize-commands_4}}
+
+```C#
 	public partial class MainWindow : Window
 	{
 	    private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
@@ -242,10 +240,8 @@ Here is a sample code snippet that demonstrates custom `DelegateCommand` usage:
 	        MessageBox.Show(string.Format("My command: {0}", parameter));
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-{{region radmap-howto-customize-commands_5}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 	    Inherits Window
 	
@@ -277,4 +273,4 @@ Here is a sample code snippet that demonstrates custom `DelegateCommand` usage:
 	        MessageBox.Show(String.Format("My command: {0}", parameter))
 	    End Sub
 	End Class
-{{endregion}}
+```

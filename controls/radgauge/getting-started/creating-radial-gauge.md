@@ -41,8 +41,8 @@ The radial gauge type is represented by the __RadRadialGauge__ class. The __RadR
 >To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:
 >`xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`	
 
-#### __[XAML] Example 1: Creating RadRadialGauge with a RadialScale__
-{{region xaml-radgauge-getting-started-creating-radial-gauge_2}}
+__Example 1: Creating RadRadialGauge with a RadialScale__
+```XAML
 	<telerik:RadRadialGauge x:Name="radialGauge"
 	                        Width="300"
 	                        Height="300">
@@ -50,7 +50,7 @@ The radial gauge type is represented by the __RadRadialGauge__ class. The __RadR
 	                         Max="12">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 >tip To learn more about the usage of the __RadialScale__ control read the [Radial Scale]({%slug radgauge-features-radial-scale%}) topic.  
 
@@ -64,8 +64,8 @@ The radial gauge type is represented by the __RadRadialGauge__ class. The __RadR
 
 The __RadialScale__ control allows you to display different types of indicators that point to a value on the scale. To specify an indicator, use the __Indicators__ property, which is of type __UIElementCollection__. This means that the __Indicators__ property can hold more than one indicator. Example 2 shows a RadialScale that uses a __Needle__ indicator to mark the current value as well as __Pinpoint__ to mark the center of the Gauge.        
 
-#### __[XAML] Example 2: Adding Indicators__
-{{region radgauge-getting-started-creating-radial-gauge_3}}
+__Example 2: Adding Indicators__
+```XAML
 	 <telerik:RadRadialGauge x:Name="radialGauge"
 	                        Width="300"
 	                        Height="300">
@@ -77,7 +77,7 @@ The __RadialScale__ control allows you to display different types of indicators 
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 #### __Image 2: Result from Example 2__
 
@@ -87,8 +87,8 @@ The __RadialScale__ control allows you to display different types of indicators 
 
 To make the indicator point to a certain value from the scale, you have to use the __Value__ property of the indicator. Example 3 shows how you can work with this property:        
 
-#### __[XAML] Example 3: Setting indicator's position__
-{{region xaml-radgauge-getting-started-creating-radial-gauge_4}}
+__Example 3: Setting indicator's position__
+```XAML
 	<telerik:RadRadialGauge Name="radialGauge"
 	                    Width="300"
 	                    Height="300">
@@ -101,7 +101,7 @@ To make the indicator point to a certain value from the scale, you have to use t
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 #### __Image 3: Result from Example 3__
 

@@ -26,7 +26,7 @@ The BoxPlot have five number summaries: the smallest observation (sample minimum
 
 #### __XAML__
 
-{{region radchart-howto-create-scatter-errorbars-and-boxplot-series_0}}
+```XAML
 	<Style x:Key="CustomCandleStickStyle" TargetType="telerik:CandleStick">
 	                <Setter Property="EmptyFill" Value="{StaticResource CandleStickEmptyRectangleFill}"/>
 	                <Setter Property="RadiusX" Value="{StaticResource CandleRadiusX}" />
@@ -62,7 +62,7 @@ The BoxPlot have five number summaries: the smallest observation (sample minimum
 	                    </Setter.Value>
 	                </Setter>
 	            </Style>
-	{{endregion}}
+	```
 
 
 ##### 2. Create new *CustomCandleStick* class that inherits the *CandleStick* class and set the CustomLine as set in the template as Parametric Line. A few more methods are added in order to calculate the necessary coordinates for the additional Line visual, so that it can be positioned on the Plot Area:
@@ -79,7 +79,7 @@ The following code snippet demonstrates the steps in action:
 
 #### __C#__
 
-{{region radchart-howto-create-scatter-errorbars-and-boxplot-series_1}}
+```C#
 	public partial class MainPage : UserControl 
 	    {
 	        public MainPage() //MainWindow() in WPF
@@ -150,13 +150,13 @@ The following code snippet demonstrates the steps in action:
 	            return new CustomCandleStick();
 	        }
 	    }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-create-scatter-errorbars-and-boxplot-series_2}}
+```VB.NET
 	Partial Public Class MainPage
 	Inherits UserControl
 	Public Sub New()
@@ -209,7 +209,7 @@ The following code snippet demonstrates the steps in action:
 	Return New CustomCandleStick()
 	End Function
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -222,7 +222,7 @@ Since we will need two crossing Lines to achieve the Error Bar Chart we can add 
 
 #### __XAML__
 
-{{region radchart-howto-create-scatter-errorbars-and-boxplot-series_3}}
+```XAML
 	<Style x:Key="CustomScatterPointStyle" 
 	              TargetType="demo:ScatterErrorBar"> 
 	              <Setter Property="Template" > 
@@ -246,7 +246,7 @@ Since we will need two crossing Lines to achieve the Error Bar Chart we can add 
 	                  </Setter.Value> 
 	              </Setter> 
 	          </Style>
-	{{endregion}}
+	```
 
 
 
@@ -265,7 +265,7 @@ The following code snippet demonstrates the steps above in action:
 
 #### __C#__
 
-{{region radchart-howto-create-scatter-errorbars-and-boxplot-series_4}}
+```C#
 	public partial class MainPage : UserControl
 	    {
 	        public MainPage()
@@ -423,13 +423,13 @@ The following code snippet demonstrates the steps above in action:
 	            set;
 	        }
 	    }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-create-scatter-errorbars-and-boxplot-series_5}}
+```VB.NET
 	Partial Public Class MainPage
 	Inherits UserControl
 	Public Sub New()
@@ -529,7 +529,7 @@ The following code snippet demonstrates the steps above in action:
 	Public Property MinValue() As Double
 	Public Property MaxValue() As Double
 	End Class
-	{{endregion}}
+	```
 
 
 

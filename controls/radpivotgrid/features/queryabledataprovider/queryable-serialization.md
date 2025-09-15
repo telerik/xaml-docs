@@ -20,9 +20,9 @@ This article will go through the process of serializing and deserializing the cu
 
 The DataContract attribute is added to all classes used by the QueryableDataProvider. This enables easy serialization with the DataContractSerializer. Below is a sample definition of such classes. The __DataContract__ attribute is added on class level and the __DataMember__ one is added for each property.
 
-#### __[C#] Example 1: Using the DataContract attribute__	
+__Example 1: Using the DataContract attribute__	
 
-{{region radpivotgrid-features-queryable-serialization_1}}
+```C#
 	[DataContract]
     public class DataProviderSettings
     {
@@ -44,15 +44,15 @@ The DataContract attribute is added to all classes used by the QueryableDataProv
         [DataMember]
         public PivotAxis AggregatesPosition { get; set; }
     }
-{{endregion}}
+```
 
 ## Implementing the Serializer
 
 The next step is to implement the serializer. When serializing the provider an instance of the __DataProviderSettings__ class has to be created with all of its properties set. After that you can serialize the instance to a file or a stream. 
 
-#### __[C#] Example 2: Implementing the Serializer__
+__Example 2: Implementing the Serializer__
 
-{{region radpivotgrid-features-queryable-serialization_2}}
+```C#
 	 public abstract class DataProviderSerializer
     {
         public abstract IEnumerable<Type> KnownTypes { get; }
@@ -130,15 +130,15 @@ The next step is to implement the serializer. When serializing the provider an i
             }
         }
     }
-{{endregion}}
+```
 
 ## Specifying the KnownTypes
 
 In the previous example a collection of KnownTypes is passed to the __DataContractSerializer__. It consists of all types needed for serializing the QueryableDataProvider. For this purpose we created a new __QueryablePivotSerializationHelper__ class which has a static member - KnownTypes.
 
-#### __[C#] Example 3: Specifying the KnownTypes__
+__Example 3: Specifying the KnownTypes__
 
-{{region radpivotgrid-features-queryable-serialization_3}}
+```C#
 	public class QueryableProviderSerializer: DataProviderSerializer
     {
         public override IEnumerable<Type> KnownTypes
@@ -149,15 +149,15 @@ In the previous example a collection of KnownTypes is passed to the __DataContra
             }
         }
     }
-{{endregion}}
+```
 
 ## Serialize and Deserialize 
 
 The final step is to serialize and deserialize the data provider.
 
-#### __[C#] Example 4: Serialize and Deserialize the Data Provider__
+__Example 4: Serialize and Deserialize the Data Provider__
 
-{{region radpivotgrid-features-queryable-serialization_4}}
+```C#
 
 	string lastSerializedProvider;
 
@@ -168,7 +168,7 @@ The final step is to serialize and deserialize the data provider.
 	//deserialization
 	QueryableProviderSerializer serializer = new QueryableProviderSerializer();
     serializer.Deserialize(this.PivotGrid.DataProvider, this.lastSerializedProvider);
-{{endregion}}
+```
 
 ## See Also
 

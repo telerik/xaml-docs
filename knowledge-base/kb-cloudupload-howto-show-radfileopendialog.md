@@ -25,8 +25,8 @@ How to replace the default MS OpenFileDialog with a [RadOpenFileDialog]({%slug r
 
 Handle the __AddingFiles__ event of the RadCloudUpload control, cancel the creation of the default dialog with the **CancelDialogOpening** property, open a new RadOpenFileDialog and populate the **FileNames** collection with the files, selected in the dialog.
 
-#### __[C#]__
-{{region cs-kb-cloudupload-howto-show-radfileopendialog-1}}
+
+```C#
     private void RadCloudUpload_AddingFiles(object sender, AddingFilesEventArgs e)
     {
         e.CancelDialogOpening = true;
@@ -45,10 +45,8 @@ Handle the __AddingFiles__ event of the RadCloudUpload control, cancel the creat
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET]__
-{{region vb-kb-cloudupload-howto-show-radfileopendialog-1}}
+```
+```VB.NET
 	Private Sub RadCloudUpload_AddingFiles(ByVal sender As Object, ByVal e As AddingFilesEventArgs)
 		e.CancelDialogOpening = True
 
@@ -63,7 +61,7 @@ Handle the __AddingFiles__ event of the RadCloudUpload control, cancel the creat
 			Next file
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

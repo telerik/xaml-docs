@@ -36,8 +36,8 @@ In specific scenarios, you might need to detect when the user reached the last p
 
 Attach to the scroll bar's ValueChanged event once the PdfViewer control is loaded and check the new value:
 
-#### #### __[C#]__
-{{region kb-pdfviewer-scroll-to-last-page}}
+#### 
+```C#
 	private void PdfViewer_Loaded(object sender, RoutedEventArgs e)
 	{
 		this.pdfViewer.VerticalScrollBar.ValueChanged += this.VerticalScrollBar_ValueChanged;
@@ -50,7 +50,7 @@ Attach to the scroll bar's ValueChanged event once the PdfViewer control is load
 			// The user scrolled to the end of the document. 
 		}
 	}
-{{endregion}}
+```
 
 ## See Also  
 * [Scrolling]({%slug radpdfviewer-scrolling%})

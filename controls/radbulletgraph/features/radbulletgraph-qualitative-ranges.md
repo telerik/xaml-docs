@@ -18,8 +18,8 @@ The qualitative ranges are visual annotations used to separate the scale into di
 
 The ranges are defined manually in the __QualitativeRanges__ collection of the control. Each range is presented by the QualitativeRange control which exposes the following properties - __Brush__ and __Value__.
 
-#### __[XAML] Example 1: Showing qualitative ranges__
-{{region radbulletgraph-features-qualitative-ranges-0}}
+__Example 1: Showing qualitative ranges__
+```XAML
 	<telerik:RadHorizontalBulletGraph FeaturedMeasure="40" 
 									  ComparativeMeasure="65"                                           
 									  ProjectedValue="60">
@@ -29,7 +29,7 @@ The ranges are defined manually in the __QualitativeRanges__ collection of the c
 			<telerik:QualitativeRange Brush="#D8E841" Value="100"/>
 		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
 	</telerik:RadHorizontalBulletGraph>
-{{endregion}}
+```
 
 > The QualitativeRange is drawn from the Minimum of the scale to the value set in the Value property. If the Value property is not set, the range will be drawn to the Maximum of the scale.
 
@@ -50,8 +50,8 @@ The quality brushes are stored in the following properties.
 
 * __QualityGoodBrush__
 
-#### __[XAML] Example 2: Using the quality brushes__
-{{region radbulletgraph-features-qualitative-ranges-1}}
+__Example 2: Using the quality brushes__
+```XAML
 	<telerik:RadHorizontalBulletGraph x:Name="radBulletGraph" 
 									  FeaturedMeasure="40" 
 									  ComparativeMeasure="65" 
@@ -62,7 +62,7 @@ The quality brushes are stored in the following properties.
 			<telerik:QualitativeRange Brush="{Binding ElementName=radBulletGraph, Path=QualityGoodBrush}" />
 		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
 	</telerik:RadHorizontalBulletGraph>
-{{endregion}}
+```
 
 #### Figure 2: Predefined quality brushes in the Office2016 theme
 ![radbulletgraph-features-qualitative-ranges-1.png](images/radbulletgraph-features-qualitative-ranges-1.png)

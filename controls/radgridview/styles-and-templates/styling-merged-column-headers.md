@@ -12,9 +12,9 @@ position: 8
 
 In order to style **Columng Groups** you will need to create two styles targeting the **CommonHeaderPresenter** and **CommonColumnHeader** elements. The __CommonHeaderPresenter__ hosts all common column headers and the __CommonColumnHeader__ is responsible for a single common column header. 
 
-#### __[XAML] Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
+__Example 1: Styling the CommonHeaderPresenter and CommonColumnHeader__
 
-{{region xaml-gridview-styling-column-groups_1}}
+```XAML
 	<UserControl.Resources>
 		<!-- If you use NoXaml dlls and the implicit styles theming you will need to set also the BasedOn property to the Style object-->
 
@@ -28,7 +28,7 @@ In order to style **Columng Groups** you will need to create two styles targetin
 		    <Setter Property="Background" Value="Red"/>
 		</Style>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 This will result in a red background for the merged header cells.
 

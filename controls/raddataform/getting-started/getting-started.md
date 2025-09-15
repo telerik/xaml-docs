@@ -44,15 +44,15 @@ You can find the required assemblies for each control from the suite in the {% i
 
 * Add the RadDataForm to the Grid:
 
-#### __[XAML] Example 1: Adding RadDataForm in XAML__
+__Example 1: Adding RadDataForm in XAML__
 
-	{{region xaml-raddataform-getting-started_0}}
+	```XAML
 	  <UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid x:Name="LayoutRoot" Background="White">
 	      <telerik:RadDataForm x:Name="RadDataForm1" />
 	    </Grid>
 	  </UserControl>
-{{endregion}}
+```
 
 Now if you run the application, you will see the empty RadDataForm:
 
@@ -64,9 +64,9 @@ Now if you run the application, you will see the empty RadDataForm:
 
 Firstly, for the purpose of this tutorial, we will create a new **Employee** class with a couple of exposed properties:
 
-#### __[C#] Example 2: Creating an Employee Class with Some Exposed Properties__
+__Example 2: Creating an Employee Class with Some Exposed Properties__
 
-	{{region cs-raddataform-getting-started_1}}
+	```C#
 	public class Employee
 	{
 	    public string FirstName
@@ -105,11 +105,8 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	        set;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Creating an Employee Class with Some Exposed Properties__
-
-	{{region vb-raddataform-getting-started_1}}
+```
+```VB.NET
 	Public Class Employee
 	    Public Property FirstName() As String
 	        Get
@@ -175,36 +172,33 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 	    End Property
 	    Private m_Gender As Gender
 	End Class
-{{endregion}}
+```
 
 In the example above **Gender** is of type enum:
 
-#### __[C#] Example 3: Create Gender Enumeration__
+__Example 3: Create Gender Enumeration__
 
-	{{region cs-raddataform-getting-started_2}}
+	```C#
 	public enum Gender
 	{
 	    Female,
 	    Male
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Create Gender Enumeration__
-
-	{{region vb-raddataform-getting-started_2}}
+```
+```VB.NET
 	Public Enum Gender
 	    Female
 	    Male
 	End Enum
-{{endregion}}
+```
 
 >Note that in case you want to be notified on the changes made on the data item, the class Employee should implement the __INotifyPropertyChanged__ interface and raise the __PropertyChanged__ event every time a property value changes.
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadDataForm:
 
-#### __[C#] Example 4: Binding a Single Item to RadDataForm__
+__Example 4: Binding a Single Item to RadDataForm__
 
-	{{region cs-raddataform-getting-started_3}}
+	```C#
 	Employee employee = new Employee()
 	{
 	    FirstName = "Sarah",
@@ -216,11 +210,8 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	    Gender = Gender.Female
 	};
 	this.RadDataForm1.CurrentItem = employee;
-{{endregion}}
-
-#### __[VB.NET] Example 4: Binding a Single Item to RadDataForm__
-
-	{{region vb-raddataform-getting-started_3}}
+```
+```VB.NET
 	Dim employee As New Employee() With {
 	 .FirstName = "Sarah",
 	 .LastName = "Blake",
@@ -231,7 +222,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	 .Gender = Gender.Female
 	}
 	Me.RadDataForm1.CurrentItem = employee
-{{endregion}}
+```
 
 After you run the application you should see the following:
 
@@ -243,9 +234,9 @@ After you run the application you should see the following:
 
 We will create a simple **EmployeeService** class with a single static method - **GetEmployees()** that will return an **ObservableCollection&lt;Employee&gt;**, containing several hard-coded employees:
 
-#### __[C#] Example 5: Creating an EmployeeService class with a static GetEmployees() method__
+__Example 5: Creating an EmployeeService class with a static GetEmployees() method__
 
-	{{region cs-raddataform-getting-started_4}}
+	```C#
 	public class EmployeeService
 	{
 	    public static ObservableCollection<Employee> GetEmployees()
@@ -292,11 +283,8 @@ We will create a simple **EmployeeService** class with a single static method - 
 	        return employees;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Creating an EmployeeService class with a static GetEmployees() method__
-
-	{{region vb-raddataform-getting-started_4}}
+```
+```VB.NET
 	Public Class EmployeeService
 	    Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	        Dim employees As New ObservableCollection(Of Employee)()
@@ -339,21 +327,18 @@ We will create a simple **EmployeeService** class with a single static method - 
 	        Return employees
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
-#### __[C#] Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
+__Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
-	{{region cs-raddataform-getting-started_5}}
+	```C#
 	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
-{{endregion}}
-
-#### __[VB.NET] Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
-
-	{{region vb-raddataform-getting-started_5}}
+```
+```VB.NET
 	Me.RadDataForm1.ItemsSource = EmployeeService.GetEmployees()
-{{endregion}}
+```
 
 On running the application, you should see the following:
 
@@ -381,8 +366,8 @@ To change the theme, you can follow the steps below:
 
 __Example 7__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 7: Merge the ResourceDictionaries__  
-{{region xaml-raddataform-gettingstarted_6}}
+__Example 7: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -393,7 +378,7 @@ __Example 7__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

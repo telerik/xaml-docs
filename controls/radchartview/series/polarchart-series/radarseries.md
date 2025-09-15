@@ -16,7 +16,7 @@ Below is an example of RadPolarChart with *RadarLineSeries:*
 
 #### __XAML__
 
-{{region radchart-series-radarseries_0}}
+```XAML
    <telerik:RadPolarChart>
 		<telerik:RadPolarChart.Grid>
 			<telerik:PolarChartGrid GridLineVisibility="Both" />
@@ -52,6 +52,6 @@ Below is an example of RadPolarChart with *RadarLineSeries:*
 			</telerik:RadarLineSeries.DataPoints>
 		</telerik:RadarLineSeries>
 	</telerik:RadPolarChart>
-{{endregion}}
+```
 
 ![Rad Chart View-chart series radar](images/RadChartView-chart_series_radar.PNG)

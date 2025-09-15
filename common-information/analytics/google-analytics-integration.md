@@ -50,8 +50,8 @@ To implement analytics provider that sends data to the Google dashboard, create 
 
 The following example demonstrates a simple implementation of the `ITraceMonitor` interface that uses the `MeasurementService` class from the __GoogleAnalytics.Ga4-Dotnet.Sdk__ project to send events to the Google Analytics 4 property.
 
-#### __[C#] IHttpClientFactory implementation needed by the MeasurementService__  
-{{region google-analytics-integration-0}}
+__IHttpClientFactory implementation needed by the MeasurementService__  
+```C#
 	public class HttpClientFactory : IHttpClientFactory
     {
         private readonly string _baseAddress = "https://www.google-analytics.com";
@@ -68,10 +68,10 @@ The following example demonstrates a simple implementation of the `ITraceMonitor
             };
         }
     }
-{{endregion}}
+```
 
-#### __[C#] ITraceMonitor implementation__  
-{{region google-analytics-integration-1}}
+__ITraceMonitor implementation__  
+```C#
 	public class GoogleAnalyticsMonitor : ITraceMonitor
     {
         private MeasurementService service;
@@ -145,18 +145,18 @@ The following example demonstrates a simple implementation of the `ITraceMonitor
             EventResponse result = await service.CreateEventRequest(request).Execute(false);
         }
     }
-{{endregion}}
+```
 
 To apply the custom monitor, set the static `TraceMonitor.AnalyticsMonitor` property, possibly in the constructor of your application.
 
-#### __[C#] Set the TraceMonitor.AnalyticsMonitor__  
-{{region google-analytics-integration-2}}
+__Set the TraceMonitor.AnalyticsMonitor__  
+```C#
 	public App()
 	{
 		InitializeComponent();
 		TraceMonitor.AnalyticsMonitor = new GoogleAnalyticsMonitor("MeasurementId", "AppSecret");
 	}
-{{endregion}}
+```
 
 >tip Read in details how to setup the Google Analytics dashboards in its [documentation](https://support.google.com/analytics/).
 

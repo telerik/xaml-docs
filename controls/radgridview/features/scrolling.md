@@ -30,8 +30,8 @@ When RadGridView's **ScrollMode** is set to **Deferred**, a small tooltip appear
 
 > If you want to prevent the ScrollPositionIndicator from showing, you can set the __ShowScrollPositionIndicator__ property of the RadGridView to __False__. This property is available since the __2018.3.1029__ version. Setting the ShowScrollPositionIndicator property will only have an effect when the **ScrollMode** is set to **Deferred**.
 
-#### __[XAML] Example 1: Defining ScrollPositionIndicatorTemplate__  
-{{region xaml-gridview-scrolling_0}}
+__Example 1: Defining ScrollPositionIndicatorTemplate__  
+```XAML
     <telerik:RadGridView.ScrollPositionIndicatorTemplate>
         <DataTemplate>
             <StackPanel>
@@ -46,21 +46,21 @@ When RadGridView's **ScrollMode** is set to **Deferred**, a small tooltip appear
             </StackPanel>
         </DataTemplate>
     </telerik:RadGridView.ScrollPositionIndicatorTemplate>
-{{endregion}}
+```
 
 #### __Figure 1: Custom ScrollPositionIndicator__  
 ![Telerik {{ site.framework_name }} DataGrid scroll-position-indicator-template](images/radgridview-scrollpositionindicatortemplate.png)
 
 Additionally, you can style the element by creating the appropriate style and setting the **TargetType** property to **telerik:ScrollPositionIndicator** as demonstrated in **Example 2**:
 
-#### __[XAML] Example 2: Styling ScrollPositionIndicator__  
-{{region xaml-gridview-scrolling_1}}
+__Example 2: Styling ScrollPositionIndicator__  
+```XAML
 	<Style TargetType="telerik:ScrollPositionIndicator">
         <Setter Property="Foreground" Value="Yellow" />
         <Setter Property="Background" Value="Red" />
         <Setter Property="Padding" Value="30" />
     </Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the **ScrollPositionIndicatorStyle**.
 
@@ -88,42 +88,42 @@ The following behavior settings are exposed for customization:
 You can enable and disable the behavior by setting a value to the Boolean property __IsEnabled__.
 
 #### **[XAML] Example 3: Setting the IsEnabled property**  
-{{region xaml-gridview-scrolling_2}}
+```XAML
 	<telerik:RadGridView telerik:ScrollingSettingsBehavior.IsEnabled="False"/>
-{{endregion}}
+```
 
 ### ScrollAreaPadding
 
 By setting this property you can customize at which point the scrolling begins. Its default value is 0px. You need to set a value bigger than the default one in order to be able to use the __ScrollStep__ and __ScrollStepTime__ properties.
 
 #### **[XAML] Example 4: Setting the ScrollAreaPadding property**  
-{{region xaml-gridview-scrolling_3}}
+```XAML
 	<telerik:RadGridView telerik:ScrollingSettingsBehavior.ScrollAreaPadding="5 20"/>
-{{endregion}}
+```
 
 ### ScrollStep
 
 You can manipulate how many pixels will be skipped while scrolling by setting this property. It expects double values and its default one is 0.0
 
 #### **[XAML] Example 5: Setting the ScrollStep property**  
-{{region xaml-gridview-scrolling_4}}
+```XAML
 	<telerik:RadGridView telerik:ScrollingSettingsBehavior.ScrollStep="1.5"/>
-{{endregion}}
+```
 
 ### ScrollStepTime
 
 This property determines the time between each scroll step. It has no default value.
 
 #### **[XAML] Example 6: Setting the ScrollStepTime property**  
-{{region xaml-gridview-scrolling_5}}
+```XAML
 	<telerik:RadGridView telerik:ScrollingSettingsBehavior.ScrollStepTime="00:00:00.5"/>
-{{endregion}}
+```
 
 ## Number of Scrolled Rows
 
 RadGridView scrolls 3 rows with each scroll step of the mouse wheel. To change the number of rows that are scrolled, set the __MouseWheelScrollDelta__ property.
 
-#### __[XAML] Example 7: Setting MouseWheelScrollDelta__
-{{region xaml-gridview-scrolling_6}}
+__Example 7: Setting MouseWheelScrollDelta__
+```XAML
 	<telerik:RadGridView MouseWheelScrollDelta="20" />
-{{endregion}}
+```

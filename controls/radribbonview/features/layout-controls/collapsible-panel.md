@@ -22,8 +22,8 @@ If there is not enough height to draw the buttons in the corresponding number of
 
 >tip The height of the panel can be changed by changing the height of the RadRibbonView's content. To do this, set the __ContentHeight__ property of RadRibbonView.
 
-#### __[XAML] Example 1: Setting up RadRibbonView with RadCollapsiblePanel__
-{{region radribbonview-collapsible-panel-0}}
+__Example 1: Setting up RadRibbonView with RadCollapsiblePanel__
+```XAML
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonTab Header="Home">
 			<telerik:RadRibbonGroup Header="Options">
@@ -59,7 +59,7 @@ If there is not enough height to draw the buttons in the corresponding number of
 			<!-- add other groups here -->
 		</telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 #### Figure 1: Comparison between the different group sizes (variants)
 ![Comparison between the different group sizes (variants)](images/radribbonview-collapsible-panel-0.png)
@@ -68,10 +68,10 @@ If there is not enough height to draw the buttons in the corresponding number of
 
 By default the RadCollapsiblePanel is using __3 rows__. To change this behavior, set the __RadCollapsiblePanel.SmallButtonsPerColumn__ attached property on the RadRibbonView element.
 
-#### __[XAML] Example 2: Setting the number of rows__
-{{region radribbonview-collapsible-panel-1}}
+__Example 2: Setting the number of rows__
+```XAML
 	<telerik:RadRibbonView telerik:RadCollapsiblePanel.SmallButtonsPerColumn="2"/>
-{{endregion}}
+```
 
 #### Figure 2: Collapsible panel with 2 rows
 ![Collapsible panel with 2 rows](images/radribbonview-collapsible-panel-1.png)
@@ -82,10 +82,10 @@ By default the RadCollapsiblePanel is using __3 rows__. To change this behavior,
 
 By default the RadCollapsiblePanel does not apply additional vertical spacing between the buttons. To change this and increase the distance between the rows, set the __RadCollapsiblePanel.ItemSpacing__ attached property on the RadRibbonView element.
 
-#### __[XAML] Example 3: Setting the vertical spacing__
-{{region radribbonview-collapsible-panel-2}}
+__Example 3: Setting the vertical spacing__
+```XAML
 	<telerik:RadRibbonView ContentHeight="110" Margin="10" telerik:RadCollapsiblePanel.ItemSpacing="10" />
-{{endregion}}
+```
 
 #### Figure 3: Collapsible panel with a vertical spacing of 10 between the buttons
 ![{{ site.framework_name }} RadRibbonView Collapsible panel with a vertical spacing of 10 between the buttons](images/radribbonview-collapsible-panel-2.png)

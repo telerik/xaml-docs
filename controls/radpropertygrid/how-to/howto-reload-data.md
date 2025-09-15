@@ -14,17 +14,14 @@ As of **R3 2016**, through the new **ReloadData** method you can refresh RadProp
 
 >Note that this is different from the **Rebind** method which simply recreates RadPropertyGrid's contents according to the bound data.
 
-#### __[C#] Example 1: Call RadPropertyGrid's ReloadData method__
+__Example 1: Call RadPropertyGrid's ReloadData method__
 
-{{region radpropertygrid-howto-reload-data_0}}
+```C#
 	this.radPropertyGrid.ReloadData();
-{{endregion}}
-
-#### __[VB.NET] Example 1: Call RadPropertyGrid's ReloadData method__
-
-{{region radpropertygrid-howto-reload-data_1}}
+```
+```VB.NET
 	Me.radPropertyGrid.ReloadData()
-{{endregion}}
+```
 
 >Calling the **ReloadData** method will also clear RadPropertyGrid's **SelectedPropertyDefinition**.
 

@@ -34,8 +34,8 @@ Setting the `ScrollViewer.HorizontalScrollBarVisibility` directly onto the `RadP
 
 2. Set the `HorizontalScrollBarVisibility` property to `Disabled` via a `Setter`.
 
-#### __[XAML] Disable horizontal scrollbar__
-{{region kb-property-grid-disable-horizontal-scrollbar-0}}
+__Disable horizontal scrollbar__
+```XAML
 	<telerik:RadPropertyGrid>
 	    <telerik:RadPropertyGrid.Resources>
 	        <Style TargetType="ScrollViewer">
@@ -43,4 +43,4 @@ Setting the `ScrollViewer.HorizontalScrollBarVisibility` directly onto the `RadP
 	        </Style>
 	    </telerik:RadPropertyGrid.Resources>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```

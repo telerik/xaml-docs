@@ -20,7 +20,7 @@ The final result should look like the snapshot below:
 
 #### __XAML__
 
-{{region xaml-gridview-loading-data-from-xml_0}}
+```XAML
 	<Items>
 	    <XmlNodeItem Team="Barcelona" Country="Spain"/>
 	    <XmlNodeItem Team="Juventus" Country="Italy"/>
@@ -35,13 +35,13 @@ The final result should look like the snapshot below:
 	    <XmlNodeItem Team="Ajax" Country="Holland"/>
 	    <XmlNodeItem Team="Olimpic M" Country="France"/>
 	</Items>
-{{endregion}}
+```
 
 * Create a new class named __XmlNodeItem__. The class is pretty simple and it represents a separate node from the XML document. Its properties are __Team__ and __Country__. Both of the properties are of type string. Here is the source code: 
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-xml_1}}
+```C#
 	public class XmlNodeItem
 	{
 	    [XmlAttribute(AttributeName = "Team")]
@@ -57,11 +57,11 @@ The final result should look like the snapshot below:
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-xml_2}}
+```VB.NET
 	Public Class XmlNodeItem
 	    Private _Team As String
 	    <XmlAttribute(AttributeName := "Team")>
@@ -85,13 +85,13 @@ The final result should look like the snapshot below:
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 * Create a new class named __XmlNodeItemList__, which derives from __ObservableCollection__ of __XmlNodeItem__. This is a collection that will be created from the XML file. __RadGridView__ will be bound to this collection. 
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-xml_3}}
+```C#
 	[XmlRoot(ElementName = "Items")]
 	public class XmlNodeItemList : ObservableCollection<XmlNodeItem>
 	{
@@ -103,11 +103,11 @@ The final result should look like the snapshot below:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-xml_4}}
+```VB.NET
 	<XmlRoot(ElementName := "Items")>
 	Public Class XmlNodeItemList
 	    Inherits ObservableCollection(Of XmlNodeItem)
@@ -117,13 +117,13 @@ The final result should look like the snapshot below:
 	        Next
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 * Create a new class named __RadGridViewXmlDataSource__, which derives from __XmlNodeItemList__. Practically, this will be the data source (the model) for the __RadGridView__. The class takes a path to the XML file and deserialize the data in the private method __RetrieveData__. 
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-xml_5}}
+```C#
 	public class RadGridViewXmlDataSource : XmlNodeItemList
 	{
 	    private string source;
@@ -148,11 +148,11 @@ The final result should look like the snapshot below:
 	        return list;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-xml_6}}
+```VB.NET
 	Public Class RadGridViewXmlDataSource
 	    Inherits XmlNodeItemList
 	    Private m_source As String
@@ -174,13 +174,13 @@ The final result should look like the snapshot below:
 	        Return list
 	    End Function
 	End Class
-{{endregion}}
+```
 
 * The next step is to declare the __RadGridViewXmlDataSource__ as a resource in your application. 
 
 #### __XAML__
 
-{{region xaml-gridview-loading-data-from-xml_7}}
+```XAML
 	<UserControl.Resources>
 	    <local:RadGridViewXmlDataSource x:Key="DataSource" Source="RadGridViewBindingToXml.xml"/>
 	    <XmlDataProvider x:Key="loadingDataFromXml">
@@ -200,15 +200,15 @@ The final result should look like the snapshot below:
 	                <XmlNodeItem Team="Ajax" Country="Holland"/>
 	                <XmlNodeItem Team="Olimpic M" Country="France"/>
 	            </Items>
-{{endregion}}
+```
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
 
-{{region xaml-gridview-loading-data-from-xml_8}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Source={StaticResource DataSource}}"/>
-{{endregion}}
+```
 
 Run your demo, the result can be seen on the next picture: 
 

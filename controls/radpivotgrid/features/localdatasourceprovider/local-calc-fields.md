@@ -24,7 +24,7 @@ The first task is to decide what is the calculation formula that you want to use
 
 #### __C#__
 
-{{region radpivotgrid-features-local-calc-fields_1}}
+```C#
 	public class CommissionCalculatedField : CalculatedField
 	{
 	    private RequiredField extendPriceField;
@@ -57,11 +57,11 @@ The first task is to decide what is the calculation formula that you want to use
 	        return null;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-local-calc-fields_1}}
+```VB.NET
 	Public Class CommissionCalculatedField
 		Inherits CalculatedField
 	
@@ -90,33 +90,33 @@ The first task is to decide what is the calculation formula that you want to use
 			Return Nothing
 		End Function
 	
-{{endregion}}
+```
 
 Now it is time to add a new instance of this class to the CalculatedFields collection of LocalDataSourceProvider:        
 
 #### __XAML__
 
-{{region radpivotgrid-features-local-calc-fields_2}}
+```XAML
 	<pivot:LocalDataSourceProvider.CalculatedFields>
 	    <local:CommissionCalculatedField Name="Commission" />
 	</pivot:LocalDataSourceProvider.CalculatedFields>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-local-calc-fields_2}}
+```C#
 	var calculatedField = new CommissionCalculatedField();
 	calculatedField.Name = "Commission";
 	dataProvider.CalculatedFields.Add(calculatedField);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-local-calc-fields_2}}
+```VB.NET
 	Dim calculatedField = New CommissionCalculatedField()
 	calculatedField.Name = "Commission"
 	dataProvider.CalculatedFields.Add(calculatedField)
-{{endregion}}
+```
 
 >importantIf you add caculated fields in code behind, you have to set the ItemsSource of LocalDataSourceProvider after you have added all calculated fields or to wrap the code between *BeginInit() - EndInit()* methods (or inside *using DeferRefresh() { ... } section* ).          
 
@@ -128,27 +128,27 @@ In order to use the calculated field in the generated report, you have to add it
 
 #### __XAML__
 
-{{region radpivotgrid-features-local-calc-fields_3}}
+```XAML
 	<pivot:LocalDataSourceProvider.AggregateDescriptions>
 	    <pivot:CalculatedAggregateDescription CalculatedFieldName="Commission" />
 	</pivot:LocalDataSourceProvider.AggregateDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-local-calc-fields_3}}
+```C#
 	var calculatedAggregate = new CalculatedAggregateDescription();
 	calculatedAggregate.CalculatedFieldName = "Commission";
 	dataProvider.AggregateDescriptions.Add(calculatedAggregate);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-local-calc-fields_3}}
+```VB.NET
 	Dim calculatedAggregate = New CalculatedAggregateDescription()
 	calculatedAggregate.CalculatedFieldName = "Commission"
 	dataProvider.AggregateDescriptions.Add(calculatedAggregate)
-{{endregion}}
+```
 
 The result will look like this:
 

@@ -33,9 +33,9 @@ The **FontSize** property of the **RadRichTextBox** is not applied to its text.
 
 To display the proper **FontSize** passed to the RadRichTextBox control, you need to also set its [DocumentInheritsDefaultStyleSettings]({%slug radrichtextbox-frequently-asked-questions%}#setting-default-style-settings-on-the-document) property to **True**.
 
-#### __[XAML]__
 
-{{region kb-richtextbox-fontsize-not-respected-0}}
+
+```XAML
 	<Grid>
 		<telerik:RadRichTextBox x:Name="radRichTextBox" 
 								DocumentInheritsDefaultStyleSettings="True" 
@@ -44,7 +44,7 @@ To display the proper **FontSize** passed to the RadRichTextBox control, you nee
 								RichTextBox="{Binding ElementName=radRichTextBox}"  
 								Html="{Binding Path=Html, Mode=TwoWay}" />
 	</Grid>
-{{endregion}}
+```
 
 ## See Also
 

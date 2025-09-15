@@ -41,8 +41,8 @@ The linear gauge type is represented by the __HorizontalLinearGauge__ or __Verti
 >To use the __RadGauge__ control and its components in XAML you have to declare the following namespace:  
 >`xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-#### __[XAML] Example 1: Creating RadVerticalLinearGauge with a VerticalLinearScale__
-{{region xaml-radgauge-getting-started-creating-linear-gauge_2}}
+__Example 1: Creating RadVerticalLinearGauge with a VerticalLinearScale__
+```XAML
 	<telerik:RadVerticalLinearGauge Width="100" Height="200">
 	    <telerik:VerticalLinearScale Min="0" 
 	                    Max="20"
@@ -54,7 +54,7 @@ The linear gauge type is represented by the __HorizontalLinearGauge__ or __Verti
 	                    MajorTickRelativeHeight="0.003\*">
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 >tip To learn more about the usage of the __LinearScale__ control, read the [Linear Scale]({%slug linear-scale-overview%}) topic.
 
@@ -68,8 +68,8 @@ The linear gauge type is represented by the __HorizontalLinearGauge__ or __Verti
 
 The __LinearScale__ control allows you to display different types of indicators that point to a value on the scale. To specify an indicator use the __Indicators__ property, which is of type __ItemCollection__. This means that the __Indicators__ property can hold more than one indicator. Example 2 shows how you can define a LinearScale that uses a Marker indicator to mark the current value.
 
-#### __[XAML] Example 2: Adding Indicators__
-{{region xaml-radgauge-getting-started-creating-linear-gauge_3}}
+__Example 2: Adding Indicators__
+```XAML
 	<telerik:RadVerticalLinearGauge Width="100" Height="200">
 	    <telerik:VerticalLinearScale Min="0" 
 	                         Max="20"
@@ -87,7 +87,7 @@ The __LinearScale__ control allows you to display different types of indicators 
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 #### __Image 2: Result from Example 2__
 
@@ -97,8 +97,8 @@ The __LinearScale__ control allows you to display different types of indicators 
 
 To make the indicator point to a certain value on the scale, you have to use the Value property of the indicator. 
 
-#### __[XAML] Example 3: Setting indicator's position__
-{{region xaml-radgauge-getting-started-creating-linear-gauge_4}}
+__Example 3: Setting indicator's position__
+```XAML
 	<telerik:RadVerticalLinearGauge Width="100" Height="200">
 	    <telerik:VerticalLinearScale Min="0" 
 	                         Max="20"
@@ -117,7 +117,7 @@ To make the indicator point to a certain value on the scale, you have to use the
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 #### __Image 3: Result from Example 3__
 

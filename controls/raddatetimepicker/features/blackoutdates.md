@@ -20,13 +20,13 @@ RadDateTimePicker allows you to disable certain dates in the [calendar part]({%s
 
 This section shows how to set the BlackoutDates in code behind.
 
-#### __[XAML] Example 1: Defining RadDateTimePicker__
-{{region raddatetimepicker-features-blackoutdates-0}}
+__Example 1: Defining RadDateTimePicker__
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the BlackoutDates property in code behind__
-{{region raddatetimepicker-features-blackoutdates-1}}	
+__Example 2: Setting the BlackoutDates property in code behind__
+```C#	
 	public MainWindow()
 	{		
 		InitializeComponent();
@@ -41,10 +41,8 @@ This section shows how to set the BlackoutDates in code behind.
 		};
 		this.radDateTimePicker.BlackoutDates = blackoutDates;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the BlackoutDates property in code behind__
-{{region raddatetimepicker-features-blackoutdates-2}}	
+```
+```VB.NET	
 	Public Sub New()
 	    InitializeComponent()
 	    Dim startDate As DateTime = DateTime.Today
@@ -56,14 +54,14 @@ This section shows how to set the BlackoutDates in code behind.
 	    }
 	    Me.radDateTimePicker.BlackoutDates = blackoutDates
 	End Sub
-{{endregion}}
+```
 
 ## Data Binding BlackoutDates
 
 This section shows how to data bind the BlackoutDates property.
 
-#### __[C#] Example 3: Setting up the model__
-{{region raddatetimepicker-features-blackoutdates-3}}
+__Example 3: Setting up the model__
+```C#
 	public class MainViewModel
     {
         public ObservableCollection<DateTime> BlackoutDates { get; set; }
@@ -80,10 +78,8 @@ This section shows how to data bind the BlackoutDates property.
             };
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting up the model__
-{{region raddatetimepicker-features-blackoutdates-4}}
+```
+```VB.NET
 	Public Class MainViewModel
 		Public Property BlackoutDates As ObservableCollection(Of DateTime)
 
@@ -97,29 +93,27 @@ This section shows how to data bind the BlackoutDates property.
 			}
 		End Sub
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting the data context__
-{{region raddatetimepicker-features-blackoutdates-5}}
+__Example 4: Setting the data context__
+```C#
 	public MainWindow()
 	{		
 		InitializeComponent();
 		this.DataContext = new MainViewModel();		
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting the data context__
-{{region raddatetimepicker-features-blackoutdates-6}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Me.DataContext = New MainViewModel()
 	End Sub
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Data binding the BlackoutDates property__
-{{region raddatetimepicker-features-blackoutdates-4}}
+__Example 5: Data binding the BlackoutDates property__
+```XAML
 	<telerik:RadDateTimePicker BlackoutDates="{Binding BlackoutDates}" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDateTimePicker with Blackout Dates](images/raddatetimepicker-features-blackoutdates-0.png)
 

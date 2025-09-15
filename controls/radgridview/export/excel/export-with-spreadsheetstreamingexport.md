@@ -29,12 +29,12 @@ The __Export with SpreadsheetStreamingExport__ functionality uses additional lib
 
 In order to export RadGridView, you need to define an instance of the __GridViewSpreadStreamExport__ class. You must then pass the instance of the __RadGridView__ control that you want to be exported as a parameter. You can also specify the name of the sheet that will be exported as well as the ExportFormat - **XLSX** or **CSV**. 
 
-#### __[C#] Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
-{{region cs-gridview-export-spreadsheetstreamingexport_0}}
+__Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
+```C#
 	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
     spreadStreamExport.SheetName = "Sheet1";
     spreadStreamExport.ExportFormat = SpreadStreamExportFormat.Xlsx;
-{{endregion}}
+```
 
 ## RunExport
 
@@ -47,11 +47,11 @@ Once you've correctly initialized the GridViewSpreadStreamExport, you can call t
 
 As you can observe, you must either specify a file name or provide a stream for the GridViewSpreadStreamExport to work with and must create an instance of the **SpreadStreamExportRenderer** class which exposes the methods needed to export using RadSpreadStreamProcessing. Optionally, you can also pass in [GridViewSpreadStreamExportOptions](#gridviewspreadstreamexportoptions) to customize the export to your needs.
 
-#### __[C#] Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
-{{region cs-gridview-export-spreadsheetstreamingexport_0}}
+__Example 1: Exporting RadGridView with GridViewSpreadStreamExport__
+```C#
 	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
 	spreadStreamExport.RunExport(dialog.FileName.ToString(), new SpreadStreamExportRenderer());
-{{endregion}}
+```
 
 When the exporting operation is completed, the __ExportCompleted__ event of __GridViewSpreadStreamExport__ is raised.
 
@@ -64,11 +64,11 @@ You can also export __RadGridView__ asynchronously by utilizing the __RunExportA
 - **RunExportAsync(Stream exportStream, SpreadStreamExportRenderer exportRenderer)**
 - **RunExportAsync(Stream exportStream, SpreadStreamExportRenderer exportRenderer, GridViewSpreadStreamExportOptions options)**
 
-#### __[C#] Example 2: Exporting RadGridView Asynchronously__
-{{region cs-gridview-export-spreadsheetstreamingexport_1}}
+__Example 2: Exporting RadGridView Asynchronously__
+```C#
 	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
 	spreadStreamExport.RunExportAsync(dialog.FileName.ToString(), new SpreadStreamExportRenderer());
-{{endregion}}
+```
 
 When the progress of the asynchronous export changes, the __AsyncExportProgressChanged__ event of __GridViewSpreadStreamExport__ is triggered. Finally, when the export operation is over, the __AsyncExportCompleted__ event is raised.
 
@@ -93,9 +93,9 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 - **IgnoreCollapsedGroups**: Specifies whether the collapsed groups should be exported (this property was introduced in **R3 2019**).
 - **ExcludedColumns**: Specifies which columns to be excluded while exporting the control (this property was introduced in the **2020.2.622 internal build**).
 
-#### __[C#] Example 3: Export RadGridView with headers, footers and default styles__
+__Example 3: Export RadGridView with headers, footers and default styles__
 
-{{region gridview-export-spreadsheetstreamingexport_2}}
+```C#
 	GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.GridView);
                                spreadStreamExport.RunExport(dialog.FileName.ToString(), 
     							 							new SpreadStreamExportRenderer(), 
@@ -105,7 +105,7 @@ Via the GridViewSpreadStreamExportOptions you can customize how the RadGridView 
 																ShowColumnFooters = true, 
 																ExportDefaultStyles=true 
 								 							});
-{{endregion}}
+```
 
 #### __Figure 1: Exporting with ExportDefaultStyles set to True__
 ![Telerik {{ site.framework_name }} DataGrid export-default-styles 2](../images/exportdefaultstyles2.png)

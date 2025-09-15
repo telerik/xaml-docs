@@ -16,9 +16,9 @@ You can use RadGridView's **GroupRowStyleSelector** property if you need to styl
 
 To achieve this, first create a new class that inherits from the **StyleSelector** class and override its **SelectStyle** method:
 
-#### __[C#] Example 1: The GroupRowStyleSelector class__
+__Example 1: The GroupRowStyleSelector class__
 
-	{{region cs-gridview-styling-group-row-4}}
+	```C#
 	public class GroupRowStyleSelector : StyleSelector
 	{
 	    public override Style SelectStyle(object item, DependencyObject container)
@@ -37,11 +37,8 @@ To achieve this, first create a new class that inherits from the **StyleSelector
 	    public Style BigGroupStyle { get; set; }
 	    public Style SmallGroupStyle { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: The GroupRowStyleSelector class__
-	
-	{{region vb-gridview-styling-group-row-4}}
+```
+```VB.NET
 	Public Class GroupRowStyleSelector
 	    Inherits StyleSelector
 	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
@@ -78,13 +75,13 @@ To achieve this, first create a new class that inherits from the **StyleSelector
 	    End Property
 	    Private m_SmallGroupStyle As Style
 	End Class
-{{endregion}}
+```
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigGroupStyle** and **SmallGroupStyle**:
 
-#### __[XAML] Example 2: Setting the BigGroupStyle and SmallGroupStyle__
+__Example 2: Setting the BigGroupStyle and SmallGroupStyle__
 
-	{{region xaml-gridview-styling-group-row-5}}
+	```XAML
 	<Window.Resources>
 	    <my:GroupRowStyleSelector x:Key="GroupRowStyleSelector">
 	        <my:GroupRowStyleSelector.BigGroupStyle>
@@ -99,7 +96,7 @@ In the XAML file, define the style selector as a resource and set the properties
 	        </my:GroupRowStyleSelector.SmallGroupStyle>
 	    </my:GroupRowStyleSelector>
 	</Window.Resources>
-{{endregion}}
+```
 
 >If you're using **GroupRenderMode="Nested"** the style should target the **GridViewGroupRow** element.
 
@@ -107,11 +104,11 @@ In the XAML file, define the style selector as a resource and set the properties
 
 Finally, set the **GroupRowStyleSelector** property:
 
-#### __[XAML] Example 3: Setting the GroupRowStyleSelector property__
+__Example 3: Setting the GroupRowStyleSelector property__
 
-	{{region xaml-gridview-styling-group-row-6}}
+	```XAML
 	<telerik:RadGridView GroupRowStyleSelector="{StaticResource GroupRowStyleSelector}" />
-{{endregion}}
+```
 
 And here is the final result:
 

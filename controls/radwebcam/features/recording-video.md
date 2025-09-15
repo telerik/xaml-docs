@@ -16,27 +16,27 @@ To start recording a video you can press the "Start recording" button or call th
 
 To enable video recording set the `RecordingFilePath` property of the control. This is the path to the video where the recording will be stored.
 
-#### __[XAML] Set the recording file path in XAML__
-{{region radwebcam-features-recording-video-0}}
+__Set the recording file path in XAML__
+```XAML
 	<telerik:RadWebCam RecordingFilePath="C:\\temp\\video.mp4"/>
-{{endregion}}
+```
 
-#### __[C#] Set the recording file path in code__
-{{region radwebcam-features-recording-video-1}}
+__Set the recording file path in code__
+```C#
 	string videoFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "video.mp4");
 	
 	// If there is no "video.mp4" file, such file will get created. If the file exists, it will get overridden.
 	radWebCam.RecordingFilePath = videoFileName
 	
 	radWebCam.StartRecording();
-{{endregion}}
+```
 
 To stop recording, press the "Stop" button or call the `StopRecording` method of RadWebCam. This will stop the recording and close the file stream.
 
-#### __[C#] Stop capturing a video__
-{{region radwebcam-features-recording-video-2}}
+__Stop capturing a video__
+```C#
 	radWebCam.StopRecording();
-{{endregion}}
+```
 
 You can indicate that the camera control is recording via its `IsRecording` property.
 
@@ -50,15 +50,15 @@ __Elapsed time default format__
 
 ![{{ site.framework_name }} RadWebCam Elapsed Time Default Format](images/radwebcam-features-recording-video-1.png)
 
-#### __[XAML] Set VideoRecordingElapsedTimeFormat in XAML__
-{{region radwebcam-features-recording-video-3}}
+__Set VideoRecordingElapsedTimeFormat in XAML__
+```XAML
 	<telerik:RadWebCam VideoRecordingElapsedTimeFormat="ss" />
-{{endregion}}
+```
 
-#### __[C#] Set VideoRecordingElapsedTimeFormat in code__
-{{region radwebcam-features-recording-video-4}}
+__Set VideoRecordingElapsedTimeFormat in code__
+```C#
 	this.radWebCam.VideoRecordingElapsedTimeFormat = "ss";
-{{endregion}}
+```
 
 __Elapsed time custom format__
 

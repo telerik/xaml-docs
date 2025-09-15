@@ -16,8 +16,8 @@ __LayoutControlGroup__ is one of the few layout groups supported by the __RadLay
 
 __Figure 1__ shows how a LayoutControlGroup with few children looks. And __Example 1__ demonstrates how to set up a group.
 
-#### __[XAML] Example 1: Setting up LayoutControlGroup__
-{{region layoutcontrol-features-layoutcontrolgroup-01}}
+__Example 1: Setting up LayoutControlGroup__
+```XAML
 	<telerik:RadLayoutControl>            
 		<telerik:LayoutControlGroup >                
 			<Button Content="Item 1" />
@@ -26,15 +26,15 @@ __Figure 1__ shows how a LayoutControlGroup with few children looks. And __Examp
 			<Button Content="Item 4" />
 		</telerik:LayoutControlGroup>
 	</telerik:RadLayoutControl>      
-{{endregion}}	
+```	
 
 #### __Figure 1: LayoutControlGroup__
 ![{{ site.framework_name }} RadLayoutControl LayoutControlGroup](images/layoutcontrol-features-layoutcontrolgroup-01.png)
 
 You can add __LayoutControlGroup__ into another layout group (see __Example 2__).
 
-#### __[XAML] Example 2: Nesting LayoutControlGroups__
-{{region layoutcontrol-features-layoutcontrolgroup-02}}
+__Example 2: Nesting LayoutControlGroups__
+```XAML
 	<telerik:RadLayoutControl>
 		<telerik:LayoutControlGroup>
 			<telerik:LayoutControlGroup Orientation="Vertical">                    
@@ -51,7 +51,7 @@ You can add __LayoutControlGroup__ into another layout group (see __Example 2__)
 			<Button Content="Item 6" />
 		</telerik:LayoutControlGroup>
 	</telerik:RadLayoutControl>
-{{endregion}}    
+```    
 
 #### __Figure 2: Nested LayoutControlGroups__
 ![{{ site.framework_name }} RadLayoutControl Nested LayoutControlGroups](images/layoutcontrol-features-layoutcontrolgroup-02.png)	

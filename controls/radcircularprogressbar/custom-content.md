@@ -12,8 +12,8 @@ position: 6
 
 `RadCircularProgressBar` supports setting a complex structure of elements to the `ContentTemplate` property to represent the value set for the `Content` property. The Content property is of type `object` and can hold a value of any type.
 
-#### __[XAML] Setting the Content and ContentTemplate properties__
-{{region radcircularprogressbar-custom-content-0}}
+__Setting the Content and ContentTemplate properties__
+```XAML
     <telerik:RadCircularProgressBar Name="circularProgressBar" 
                                     Value="75"
                                     Maximum="100"
@@ -34,12 +34,12 @@ position: 6
             </DataTemplate>
         </telerik:RadCircularProgressBar.ContentTemplate>
     </telerik:RadCircularProgressBar>
-{{endregion}}
+```
 
 ![RadCircularProgressBar with custom content](images/radcircularprogressbar-custom-content-0.png)
 
-#### __[XAML] Custom content with indeterminate state__
-{{region radcircularprogressbar-custom-content-1}}
+__Custom content with indeterminate state__
+```XAML
     <telerik:RadCircularProgressBar Name="circularProgressBar" 
                                     Value="75"
                                     Maximum="100"
@@ -54,7 +54,7 @@ position: 6
             </DataTemplate>
         </telerik:RadCircularProgressBar.ContentTemplate>
     </telerik:RadCircularProgressBar>
-{{endregion}}
+```
 
 ![RadCircularProgressBar with custom content and indeterminate state](images/radcircularprogressbar-custom-content-1.gif)
 
@@ -62,13 +62,13 @@ position: 6
 
 RadCircularProgressBar allows you to set a string format to the `ContentStringFormat` property. This format will be applied to the Content property.
 
-#### __[XAML] Custom ContentStringFormat__
-{{region radcircularprogressbar-custom-content-2}}
+__Custom ContentStringFormat__
+```XAML
     <telerik:RadCircularProgressBar Name="circularProgressBar" 
                                     Value="0.75"
                                     Content="{Binding ElementName=circularProgressBar, Path=Value}" 
                                     ContentStringFormat="p2"/>
-{{endregion}}
+```
 
 ![RadCircularProgressBar with applied ContentStringFormat](images/radcircularprogressbar-custom-content-2.png)
 

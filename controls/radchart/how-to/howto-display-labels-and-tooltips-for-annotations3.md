@@ -20,7 +20,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 #### __XAML__
 
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_0}}
+```XAML
 	<Style x:Key="ChartAreaStyle" TargetType="telerik:ChartArea">
 	                <Setter Property="Template2D">
 	                    <Setter.Value>
@@ -97,7 +97,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 	                    </Setter.Value>
 	                </Setter>
 	            </Style>
-	{{endregion}}
+	```
 
 
 
@@ -105,7 +105,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 #### __XAML__
 
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_1}}
+```XAML
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding Data}" BorderThickness="1,0,1,1" BorderBrush="Black">
 	            <telerik:RadChart.PaletteBrushes>
 	                <SolidColorBrush Color="Black" />
@@ -152,7 +152,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 	                </telerik:ChartDefaultView>
 	            </telerik:RadChart.DefaultView>
 	        </telerik:RadChart>
-	{{endregion}}
+	```
 
 
 
@@ -162,7 +162,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 #### __XAML__
 
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_2}}
+```XAML
 	<Style x:Key="NewMarkedZones" TargetType="telerik:MarkedZone">
 	                <Setter Property="Background" Value="#33333333" />
 	                <Setter Property="Template" >
@@ -181,7 +181,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 	                    </Setter.Value>
 	                </Setter>
 	            </Style>
-	{{endregion}}
+	```
 
 
 
@@ -191,9 +191,9 @@ Additionally the __TextWrapping__ property of the MarkedZone's Text Block is set
 
 #### __XAML__
 
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_3}}
+```XAML
 	<telerik:MarkedZone StartY="0" EndY="4000" Style="{StaticResource NewMarkedZones}" DataContext="This is my custom label" Background="#FF9AD846" />
-	{{endregion}}
+	```
 
 
 
@@ -204,7 +204,7 @@ The same can be achieved with __CustomGridLines__ like this:
 
 #### __XAML__
 
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_4}}
+```XAML
 	     <SolidColorBrush x:Key="AxisStroke" Color="#FF000000" />
 	
 	        <Style x:Key="gridLineStyle"
@@ -231,7 +231,7 @@ The same can be achieved with __CustomGridLines__ like this:
 	                </Setter.Value>
 	            </Setter>
 	        </Style>
-	{{endregion}}
+	```
 
 
 

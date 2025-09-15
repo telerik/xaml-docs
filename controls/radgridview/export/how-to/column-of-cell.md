@@ -13,8 +13,8 @@ position: 2
 When a cell(header cell, cell, footer cell, group footer cells) is exported through the __ExportToXlsx__ or __ExportToPdf__ methods , the arguments of the __ElementExportingToDocument__ event can be cast to __GridViewCellExportingEventArgs__. Thus, the column of the corresponding cell can be accessed. 
 
 The following example illustrates the approach:
-#### __[C#] Example 3: Getting the Column of the Corresponding Cell__
-{{region gridview-troubleshooting-cell-column-0}}
+__Example 3: Getting the Column of the Corresponding Cell__
+```C#
 	this.gridViewExport.ElementExportingToDocument += (s, e) =>
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -26,10 +26,10 @@ The following example illustrates the approach:
 	        }
 	    }
 	};
-{{endregion}}
+```
 
 #### [VB.NET] Example 3: Getting the Column of the Corresponding Cell
-{{region gridview-troubleshooting-cell-column-1}}
+```VB.NET
 	Me.gridViewExport.ElementExportingToDocument += Function(s, e) 
 	    If e.Element = ExportElement.Cell Then
 	        Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
@@ -38,4 +38,4 @@ The following example illustrates the approach:
 	            End If
 	    End If
 	End Function
-{{endregion}}
+```

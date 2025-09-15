@@ -16,9 +16,9 @@ The __RadTreeViewItem__ can be styled by creating an appropriate __Style__ and s
 
 In order to style all __RadTreeViewItem__ elements in a RadTreeView, you should create a style targeting __RadTreeViewItem__.
 
-#### __[XAML] Example 1: Creating an implicit style targeting RadTreeViewItem__
+__Example 1: Creating an implicit style targeting RadTreeViewItem__
 
-{{region xaml-radtreeview-styling-and-appearance-styling-radtreeviewitem_0}}
+```XAML
 	<Grid>
         <Grid.Resources>
             <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
@@ -39,7 +39,7 @@ In order to style all __RadTreeViewItem__ elements in a RadTreeView, you should 
             </telerik:RadTreeView.Items>
         </telerik:RadTreeView>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadTreeViewItem with Red Foreground in the Fluent theme__
 ![RadTreeViewItems with Red Foreground](images/RadTreeView_RadTreeViewItem_Style.png)

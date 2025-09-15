@@ -24,9 +24,9 @@ This article will guide you through the creation of a **WinAppDriver** test.
 
 4\. Create a **TestSession** class where you set the **AppiumOptions** as follows:
 
-#### __[C#] Example 1: The TestSession class__
+__Example 1: The TestSession class__
 
-{{region appium-geting-started-1}}
+```C#
     public class TestSession
     {
         private const string WindowsApplicationDriverUrl = "http://127.0.0.1:4723";
@@ -78,15 +78,15 @@ This article will guide you through the creation of a **WinAppDriver** test.
             }
         }
     }
-{{endregion}}
+```
 
 Here is the place to mention that our sample test application consists of the **RadGridView** setup from its respective [Getting Started]({%slug gridview-getting-started2%}) article with the addition of a **RadButton** which deletes the currently selected item.
 
 ![The sample test application](images/appium-getting-started-3.png)
 
-#### __[XAML] Example 2: The test application setup__
+__Example 2: The test application setup__
 
-{{region xaml-appium-geting-started-2}}
+```XAML
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="\*" />
@@ -98,26 +98,26 @@ Here is the place to mention that our sample test application consists of the **
         <telerik:RadGridView x:Name="gridView" ItemsSource="{Binding Clubs}"/>
         <telerik:RadButton x:Name="deleteButton" Grid.Row="1" Content="Delete Row" Click="OnDeleteButtonClick" />
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 3: The delete button click handler__
+__Example 3: The delete button click handler__
 
-{{region cs-appium-geting-started-3}}
+```C#
     private void OnDeleteButtonClick(object sender, RoutedEventArgs e)
     {
         this.gridView.PendingCommands.Add(RadGridViewCommands.SelectCurrentItem);
         this.gridView.PendingCommands.Add(RadGridViewCommands.Delete);
         this.gridView.ExecutePendingCommand();
     }
-{{endregion}}
+```
 
 5\. Rename the auto-generated **UnitTest1** class to **TelerikControlsScenarios** which should inherit from **TestSession**.
 
 6\. Next, create the following methods and fields for the class.
 
-#### __[C#] Example 4: The TelerikControlsScenarios class__
+__Example 4: The TelerikControlsScenarios class__
 
-{{region cs-appium-geting-started-4}}
+```C#
     [TestClass]
     public class TelerikControlsScenarios : TestSession
     {
@@ -144,7 +144,7 @@ Here is the place to mention that our sample test application consists of the **
             TearDown();
         }
     }
-{{endregion}}
+```
 
 There are two general ways to write tests:
 
@@ -159,9 +159,9 @@ All you need to do now is to click the **Generate and copy C# code to Clipboard*
 
 Alternatively, you can write the test from scratch.
 
-#### __[C#] Example 5: Defining the DeleteGridRow method__
+__Example 5: Defining the DeleteGridRow method__
 
-{{region appium-geting-started-5}}
+```C#
     [TestMethod]
     public void DeleteGridRow()
     {
@@ -175,7 +175,7 @@ Alternatively, you can write the test from scratch.
         gridRowElements = gridView.FindElementsByClassName(@"GridViewRow").ToList();
         Assert.IsTrue(gridRowElements.Count == 2, "Expected rows: 2, Actual rows: " + gridRowElements.Count);
     }
-{{endregion}}
+```
 
 8\. Right-click the Unit Test project in Visual Studio and click **Run Tests**. The test will launch your application, repeat the recorded steps, and close the application afterwards. All test activity is logged in the WinAppDriver console.
 

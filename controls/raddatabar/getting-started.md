@@ -54,10 +54,10 @@ The RadDataBar suite contains the following controls representing the different 
 
 To display a data bar visualization, you can just add a RadDataBar control in the view and set its __Value__ property. This will create a horizontal bar measured according to the Value. The value range of the bar is defined by its __Minimum__ and __Maximum__ properties, which default values are 0 an 100 respectively.
 
-#### __[XAML] Example 1: Defining RadDataBar__
-{{region raddatabar-getting-started-0}}
+__Example 1: Defining RadDataBar__
+```XAML
 	<telerik:RadDataBar Value="30" Width="300" Height="30" Background="#F7F9FE" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDataBar Customized Appearance](images/raddatabar-getting-started-0.png)
 
@@ -65,19 +65,19 @@ To display a data bar visualization, you can just add a RadDataBar control in th
 
 To display a stacked data bar visualization, you can add a __RadStackedDataBar__ control in the view and set its __ItemsSource__ property. This will create a set of stacked horizontal bars measured according to the values in the ItemsSource. The value range of the bar is defined by its __Minimum__ and __Maximum__ properties, which default values are 0 an 100 respectively.
 
-#### __[XAML] Example 2: Defining RadStackedDataBar__
-{{region raddatabar-getting-started-1}}
+__Example 2: Defining RadStackedDataBar__
+```XAML
 	<telerik:RadStackedDataBar x:Name="stackedDataBar" Height="30" Width="300" Background="#F7F9FE"/>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Setting RadStackedDataBar ItemsSource__
-{{region raddatabar-getting-started-2}}
+__Example 3: Setting RadStackedDataBar ItemsSource__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent();
 		this.stackedDataBar.ItemsSource = new List<double>() { 16, 20, 12, 32 };
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDataBar Stacked DataBar with ItemsSource](images/raddatabar-getting-started-1.png)
 
@@ -85,10 +85,10 @@ The __RadStacked100DataBar__ works very similar to the RadStackedDataBar, but in
 
 To define RadStacked100DataBar, use Example 2 and 3, but replace the RadStackedDataBar with RadStacked100DataBar.
 
-#### __[XAML] Example 4: Defining RadStacked100DataBar__
-{{region raddatabar-getting-started-3}}
+__Example 4: Defining RadStacked100DataBar__
+```XAML
 	<telerik:RadStacked100DataBar x:Name="stackedDataBar" Height="30" Width="300" Background="#F7F9FE"/>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDataBar Defining RadStacked100DataBar](images/raddatabar-getting-started-2.png)
 

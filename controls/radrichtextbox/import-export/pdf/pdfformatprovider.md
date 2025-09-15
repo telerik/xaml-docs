@@ -22,15 +22,15 @@ The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ in
         
 >The PdfFormatProvider class of RadRichTextBox is located in the **Telerik.Windows.Documents.FormatProviders.Pdf namespace**.
 
-#### __[C#] Export to PDF file__
-{{region cs-radrichtextbox-import-export-pdf-pdfformatprovider_0}}
+__Export to PDF file__
+```C#
 	PdfFormatProvider provider = new PdfFormatProvider();
 	using (Stream output = File.OpenWrite("sample.pdf"))
 	{
 	    RadDocument document = CreateRadDocument();
 	    provider.Export(document, output, null);
 	}
-{{endregion}}
+```
 
 The result from the method is a document that can be opened in any application that supports PDF documents.
 

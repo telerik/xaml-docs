@@ -32,20 +32,18 @@ How to save the layout of the RadDocking control when its unloaded.
 
 1. Add a new event handler for the `Unloaded` event of the `RadDocking` using the `EventManager.RegisterClassHandler` static method.
 
-    #### __[C#] Add a new event handler for the Unloaded event of RadDocking__
-    {{region kb-docking-save-layout-on-unloaded-event-0}}
+    __Add a new event handler for the Unloaded event of RadDocking__
+    ```C#
         EventManager.RegisterClassHandler(typeof(RadDocking), RadDocking.   UnloadedEvent, new RoutedEventHandler(OnUnloaded));
-    {{endregion}}
-
-    #### __[VB.NET] Add a new event handler for the Unloaded event of RadDocking__
-    {{region kb-docking-save-layout-on-unloaded-event-1}}
+    ```
+```VB.NET
         EventManager.RegisterClassHandler(GetType(RadDocking), RadDocking.  UnloadedEvent, New RoutedEventHandler(OnUnloaded))
-    {{endregion}}
+    ```
 
 2. Implement the save logic in the newly added event handler for the `Unloaded` event.
 
-    #### __[C#] Sample implementation of saving the layout in the newly added   handler__
-    {{region kb-docking-save-layout-on-unloaded-event-2}}
+    __Sample implementation of saving the layout in the newly added   handler__
+    ```C#
         private void OnUnloaded(object sender, RoutedEventArgs e)
         {
             using (IsolatedStorageFile storage = IsolatedStorageFile.   GetUserStoreForAssembly())
@@ -56,10 +54,8 @@ How to save the layout of the RadDocking control when its unloaded.
                 }
             }
         }
-    {{endregion}}
-
-    #### __[VB.NET] Sample implementation of saving the layout in the newly added   handler__
-    {{region kb-docking-save-layout-on-unloaded-event-3}}
+    ```
+```VB.NET
         Private Sub OnUnloaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
             Using storage As IsolatedStorageFile = IsolatedStorageFile. GetUserStoreForAssembly()
                 Using isoStream = storage.OpenFile("RadDocking_Layout.xml",     FileMode.Create)
@@ -67,4 +63,4 @@ How to save the layout of the RadDocking control when its unloaded.
                 End Using
             End Using
         End Sub
-    {{endregion}}
+    ```

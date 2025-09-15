@@ -34,8 +34,8 @@ Then you can add the needed Telerik references.
 
 We will create two classes, which will serve as our models: Customer and Order, where each customer will have a collection of orders. We will also define a DbContext that will hold the entities.  
 
-#### __[C#] Example 1: Defining the Models, DbContext and ViewModel__
-{{region cs-entityframework-mvvm-usage-0}}
+__Example 1: Defining the Models, DbContext and ViewModel__
+```C#
 
 	public class Customer
     {
@@ -70,14 +70,14 @@ We will create two classes, which will serve as our models: Customer and Order, 
         public DbSet<Order> Orders { get; set; }
     }
     
-{{endregion}}
+```
 
 ## Populating the Database
 
 We will create a viewmodel that will populate our database and also hold an instance of a __QueryableEntityCollectionView__ that will be the bridge between the RadGridView and our database. We will also introduce a command that will execute the __SaveChanges__ method of the DbContext on a button's click. 
 
-#### __[C#] Example 2: Defining the ViewModel__
-{{region cs-entityframework-mvvm-usage-1}}
+__Example 2: Defining the ViewModel__
+```C#
 
 	public class ViewModel : ViewModelBase
     {
@@ -129,14 +129,14 @@ We will create a viewmodel that will populate our database and also hold an inst
             this.context.SaveChanges();
         }
     }
-{{endregion}}
+```
 
 ## Displaying the Data
 
 All that is left is to declare our XAML and wire up the viewmodel. We will display the data in a RadGridView with a [Row Details Template]({%slug radgridview-row-details-template%}) and use a [RadDataPager]({%slug datapager-overview%}) to add paging functionality. 
 
-#### __[XAML] Example 3: Seting up the XAML__
-{{region xaml-entityframework-mvvm-usage-2}}
+__Example 3: Seting up the XAML__
+```XAML
 
 	 <Grid>
         <Grid.DataContext>
@@ -173,7 +173,7 @@ All that is left is to declare our XAML and wire up the viewmodel. We will displ
             </telerik:EventToCommandBehavior.EventBindings>
         </Button>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 2: Result from running the example in the Fluent theme__
 ![RadGridView and RadDataPager in the Fluent theme](images/RadEntityFramework_MVVM_Gridview_Pager.png)

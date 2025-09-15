@@ -22,8 +22,8 @@ The following example will use some of the colors of the Windows 11 theme and th
 
 >tip To view the full list of the default colors for the theme you use, check its [Default Theme Colors]({%slug common-styling-appearance-windows11-theme%}#default-theme-colors) section.
 
-#### __[XAML] Creating a new ResourceDictionary and defining new SolidColorBrush instances__
-{{region kb-common-theme-brushes-intellisense-0}}
+__Creating a new ResourceDictionary and defining new SolidColorBrush instances__
+```XAML
     <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
@@ -65,14 +65,14 @@ The following example will use some of the colors of the Windows 11 theme and th
         <SolidColorBrush x:Key="DisabledBorderBrush" Color="{Binding Source={x:Static telerik:Windows11Palette.Palette}, Path=DisabledBorderColor}" />
         <SolidColorBrush x:Key="ValidationBrush" Color="{Binding Source={x:Static telerik:Windows11Palette.Palette}, Path=ValidationColor}" />
     </ResourceDictionary>
-{{endregion}}
+```
 
-#### __[XAML] Merging the created ResourceDictionary__
-{{region kb-common-theme-brushes-intellisense-1}}
+__Merging the created ResourceDictionary__
+```XAML
     <Application.Resources>
         <ResourceDictionary Source="Windows11BrushesResourceDictionary.xaml"/>
     </Application.Resources>
-{{endregion}}
+```
 
 __Visual Studio suggesting the colors from the Windows 11 theme__
 

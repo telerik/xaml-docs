@@ -25,7 +25,7 @@ The following sections show a couple of sample scenarios where you can use multi
 This example shows two chart series with a common horizontal axis and two vertical axes. In this case one of the series has its `VerticalAxis` property set and the other one uses the `VerticalAxis` of the `RadCartesianChart`. 
 
 #### __XAML__ 
-{{region radchart-axes-multipleaxes_0}}
+```XAML
 	 <telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -61,7 +61,7 @@ This example shows two chart series with a common horizontal axis and two vertic
 			</telerik:LineSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![Rad Chart View-chart axes twoverticalaxes](images/RadChartView-chart_axes_twoverticalaxes.PNG)
 
@@ -70,7 +70,7 @@ This example shows two chart series with a common horizontal axis and two vertic
 This example shows two chart series with a common vertical axis and two horizontal axes. In this case one of the series has its `HorizontalAxis` property set and the other one uses the `HorizontalAxis` of the `RadCartesianChart`. 
 
 #### __XAML__  
-{{region radchart-axes-multipleaxes_1}}
+```XAML
 	<telerik:RadCartesianChart>
 	    <telerik:RadCartesianChart.HorizontalAxis>
 	        <telerik:CategoricalAxis ElementBrush="Orange"/>
@@ -104,7 +104,7 @@ This example shows two chart series with a common vertical axis and two horizont
 	        </telerik:LineSeries>
 	    </telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![Rad Chart View-chart axes twohorizontalaxes](images/RadChartView-chart_axes_twohorizontalaxes.PNG)
 
@@ -113,7 +113,7 @@ This example shows two chart series with a common vertical axis and two horizont
 To define multiple axes for the different chart series when [SeriesProvider]({%slug radchartview-features-chartseriesprovider%}) is setup, you can use the `SeriesCreated` event of the provider. In the event handler, you can define a new instance of an axis to each series.
 
 #### __XAML__  
-{{region radchart-axes-multipleaxes_2}}
+```XAML
 	<telerik:ChartSeriesProvider Source="{Binding Data}" 
 								 SeriesCreated="ChartSeriesProvider_SeriesCreated">
 		<telerik:CategoricalSeriesDescriptor CategoryPath="Category"
@@ -126,16 +126,16 @@ To define multiple axes for the different chart series when [SeriesProvider]({%s
 			</telerik:CategoricalSeriesDescriptor.Style>
 		</telerik:CategoricalSeriesDescriptor>
 	</telerik:ChartSeriesProvider>
-{{endregion}}
+```
 
 #### __C#__  
-{{region radchart-axes-multipleaxes_3}}
+```C#
 	private void ChartSeriesProvider_SeriesCreated(object sender, ChartSeriesCreatedEventArgs e)
 	{
 		var series = (CartesianSeries)e.Series;
 		series.VerticalAxis = new LinearAxis() { Title = "Series Axis" };
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView with Multiple Axes](images/radchartview-axes-multipleaxes-0.png)
 

@@ -16,9 +16,9 @@ The dropping area that you see, when rearranging the containers in the __RadDock
 
 In order to style all __VisualCues__ in a RadDocking, you should create a style targeting __VisualCue__.
 
-#### __[XAML] Example 1: Creating a style targeting VisualCue__
+__Example 1: Creating a style targeting VisualCue__
 
-{{region xaml-raddocking-styling-the-visual-cue-0}}
+```XAML
     <Application.Resources>
         <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
             <Style x:Key="CustomVisualCueStyle" TargetType="telerik:VisualCue" BasedOn="{StaticResource VisualCueStyle}">-->
@@ -41,7 +41,7 @@ In order to style all __VisualCues__ in a RadDocking, you should create a style 
 			</telerik:RadPaneGroup>
 		</telerik:RadSplitContainer>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 #### __Figure 1: RadDocking with styled VisualCue in the Office2016 theme__
 ![RadDocking with styled VisualCue](images/RadDocking_VisualCue_Style.png)

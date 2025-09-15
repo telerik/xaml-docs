@@ -26,7 +26,7 @@ Here is a small example:
 
 #### __C#__
 
-{{region cs-gridview-not-all-values-shown-filtering_0}}
+```C#
 	private void radGridView_DistinctValuesLoading(object sender, GridViewDistinctValuesLoadingEventArgs e)
 	{
 	    if ((string)e.Column.Header == "Name")
@@ -34,7 +34,7 @@ Here is a small example:
 	        e.ItemsSource = radGridView.GetDistinctValues(e.Column, true, radGridView.Items.Count);
 	    }
 	}
-{{endregion}}
+```
 
 Now the listbox in the filtering control will be populated with all the 2000 items. 
 

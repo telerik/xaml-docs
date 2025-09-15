@@ -34,13 +34,13 @@ SingleRangeGenerator allows you view the whole TimeRuler specified by the visibl
 
 #### __XAML__
 
-{{region xaml-radganttview-filteringtimeruleritems_0}}
+```XAML
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
 	    <telerik:RadGanttView.TimeLineFilteringBehavior>
 	        <telerik:SingleRangeGenerator />
 	    </telerik:RadGanttView.TimeLineFilteringBehavior>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 And here is the end result:
 
@@ -60,13 +60,13 @@ So it can be used to mark the working days, for example:
 
 #### __XAML__
 
-{{region xaml-radganttview-filteringtimeruleritems_1}}
+```XAML
 	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}">
 	    <telerik:RadGanttView.TimeLineFilteringBehavior>
 	        <telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
 	    </telerik:RadGanttView.TimeLineFilteringBehavior>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 And here is the end result:
 
@@ -80,7 +80,7 @@ In RadGanttView it is possible to implement a custom IRangeGenerator. You just n
 
 #### __C#__
 
-{{region cs-radganttview-filteringtimeruleritems_1}}
+```C#
 	public class CustomRangeGenerator : ViewModelBase, IRangeGenerator
 	{
 		public System.Collections.Generic.IEnumerable<IDateRange> GetRanges(IDateRange visibleRange)
@@ -96,19 +96,19 @@ In RadGanttView it is possible to implement a custom IRangeGenerator. You just n
 			}
 		}
 	}
-{{endregion}}
+```
 
 All that's left is to set the newly created class to the TimeLineFilteringBehavior property:
 
 #### __XAML__
 
-{{region xaml-radganttview-filteringtimeruleritems_2}}
+```XAML
 	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}">
 	    <telerik:RadGanttView.TimeLineFilteringBehavior>
 	        <example:CustomRangeGenerator />
 	    </telerik:RadGanttView.TimeLineFilteringBehavior>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 And here is the end result:
 

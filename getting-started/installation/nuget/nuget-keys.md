@@ -67,8 +67,8 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
 
 1. In your `nuget.config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-    #### __[XML]__
-    {{region installation-nuget-keys-0}}
+    
+    ```XML
         <configuration>
             <packageSources>
                 <clear/>
@@ -83,7 +83,7 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
             </packageSourceCredentials>
             ...
         </configuration>
-    {{endregion}}
+    ```
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 

@@ -26,9 +26,9 @@ __AppointmentsSource__ - gets or sets the data source (__IEnumerable__) used to 
 
 >Note that the data source passed to the property __AppointmentsSource__ should contain only objects that implement the __IAppointment__ interface.
 
-#### __[C#] Example 1: Defining the AppointmentsSource collection in the view model__
+__Example 1: Defining the AppointmentsSource collection in the view model__
 
-{{region radscheduleview-populating-with-data-data-binding_0}}
+```C#
 	public class MyViewModel : ViewModelBase
     {
         private ObservableCollection<Appointment> appointments;
@@ -67,11 +67,11 @@ __AppointmentsSource__ - gets or sets the data source (__IEnumerable__) used to 
             return apps;
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Binding the AppointmentsSource__
+__Example 2: Binding the AppointmentsSource__
 
-{{region radscheduleview-populating-with-data-implementing-view-model_1}}
+```XAML
 	   <telerik:RadScheduleView x:Name="scheduleView"
                 DataContext="{StaticResource MyViewModel}"
                 AppointmentsSource="{Binding Appointments}">
@@ -80,7 +80,7 @@ __AppointmentsSource__ - gets or sets the data source (__IEnumerable__) used to 
                     <telerik:DayViewDefinition />
                 </telerik:RadScheduleView.ViewDefinitions>
             </telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## ResourceTypesSource
 
@@ -88,9 +88,9 @@ __ResourceTypesSource__ -  gets or sets the data source (__IEnumerable__) used t
 
 >Note that the data source passed to the property __ResourceTypesSource__ should contain only objects of type __ResourceType__.
 
-#### __[C#] Example 3: Defining the ResourceTypesSource collection in the view model__
+__Example 3: Defining the ResourceTypesSource collection in the view model__
 
-{{region radscheduleview-populating-with-data-implementing-view-model_2}}
+```C#
 	private ObservableCollection<ResourceType> resourceTypesSource;
         public ObservableCollection<ResourceType> ResourceTypesSource
         {
@@ -137,10 +137,10 @@ __ResourceTypesSource__ -  gets or sets the data source (__IEnumerable__) used t
 
             return resourceTypes;
         }
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Binding the ResourceTypesSource__
-{{region radscheduleview-populating-with-data-implementing-view-model_3}}
+__Example 4: Binding the ResourceTypesSource__
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView"
                 DataContext="{StaticResource MyViewModel}"
                 ResourceTypesSource="{Binding ResourceTypesSource}"
@@ -150,7 +150,7 @@ __ResourceTypesSource__ -  gets or sets the data source (__IEnumerable__) used t
                     <telerik:DayViewDefinition />
                 </telerik:RadScheduleView.ViewDefinitions>
             </telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## CategoriesSource
 
@@ -158,8 +158,8 @@ __CategoriesSource__ - gets or sets the data source (__IEnumerable__) used to ge
 
 >Note that the data source passed to the property __CategoriesSource__ should contain only objects of type __Category__.
 
-#### __[C#] Example 5: Defining the Categories collection in the view model__
-{{region radscheduleview-populating-with-data-implementing-view-model_4}}
+__Example 5: Defining the Categories collection in the view model__
+```C#
 	private ObservableCollection<Category> categories;
 	        public ObservableCollection<Category> Categories
 	        {
@@ -183,11 +183,11 @@ __CategoriesSource__ - gets or sets the data source (__IEnumerable__) used to ge
 	
 	            return categories;
 	        }
-{{endregion}}
+```
 
 
-#### __[XAML] Example 6: Binding the CategoriesSource__
-{{region radscheduleview-populating-with-data-implementing-view-model_5}}
+__Example 6: Binding the CategoriesSource__
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView"
                 DataContext="{StaticResource MyViewModel}"
                 CategoriesSource="{Binding Categories}"
@@ -197,7 +197,7 @@ __CategoriesSource__ - gets or sets the data source (__IEnumerable__) used to ge
                     <telerik:DayViewDefinition />
                 </telerik:RadScheduleView.ViewDefinitions>
             </telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## TimeMarkersSource
 
@@ -205,8 +205,8 @@ __TimeMarkersSource__ - gets or sets the data source (__IEnumerable__) used to g
 
 >Note that the data source passed to the property __TimeMarkersSource__ should contain only objects of type __TimeMarker__.
 
-#### __[C#] Example 7: Defining the TimeMarkers collection in the view model__
-{{region radscheduleview-populating-with-data-implementing-view-model_6}}
+__Example 7: Defining the TimeMarkers collection in the view model__
+```C#
 	private ObservableCollection<TimeMarker> timeMarkers;
         public ObservableCollection<TimeMarker> TimeMarkers
         {
@@ -229,10 +229,10 @@ __TimeMarkersSource__ - gets or sets the data source (__IEnumerable__) used to g
 
             return timeMarkers;
         }
-{{endregion}}
+```
 
-#### __[XAML] Example 8: Binding the TimeMarkersSource__
-{{region radscheduleview-populating-with-data-implementing-view-model_7}}
+__Example 8: Binding the TimeMarkersSource__
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView"
                 DataContext="{StaticResource MyViewModel}"
                 TimeMarkersSource="{Binding TimeMarkers}"
@@ -242,7 +242,7 @@ __TimeMarkersSource__ - gets or sets the data source (__IEnumerable__) used to g
                     <telerik:DayViewDefinition />
                 </telerik:RadScheduleView.ViewDefinitions>
             </telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## GroupDescriptionsSource
 
@@ -250,8 +250,8 @@ __GroupDescriptionsSource__ - gets or sets the data source (__IEnumerable\<Group
 
 >Note that the data source passed to the property __GroupDescriptionsSource__ should contain only objects of type __GroupDescription__.
 
-#### __[C#] Example 9: Defining the GroupDescriptions collection in the view model__
-{{region radscheduleview-populating-with-data-implementing-view-model_8}}
+__Example 9: Defining the GroupDescriptions collection in the view model__
+```C#
 	 private GroupDescriptionCollection groupDescriptions;
         public GroupDescriptionCollection GroupDescriptions
         {
@@ -266,10 +266,10 @@ __GroupDescriptionsSource__ - gets or sets the data source (__IEnumerable\<Group
                 return this.groupDescriptions;
             }
         }
-{{endregion}}
+```
 
-#### __[XAML] Example 10: Binding the GroupDescriptionsSource__
-{{region radscheduleview-populating-with-data-implementing-view-model_9}}
+__Example 10: Binding the GroupDescriptionsSource__
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView"
                 DataContext="{StaticResource MyViewModel}"
                 GroupDescriptionsSource="{Binding GroupDescriptions}"
@@ -279,7 +279,7 @@ __GroupDescriptionsSource__ - gets or sets the data source (__IEnumerable\<Group
                     <telerik:DayViewDefinition />
                 </telerik:RadScheduleView.ViewDefinitions>
             </telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## See Also
 

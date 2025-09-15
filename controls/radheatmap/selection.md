@@ -24,11 +24,11 @@ The __SelectedCellBorderColor__ property is of type __Color__ that gets or sets 
 
 The __SelectedCellBorderThickness__ property is of type __Thickness__ that gets or sets the thickness of the selection border.
 
-#### __[XAML] Example 1: Enabling the selection behavior of the RadHeatMap__
+__Example 1: Enabling the selection behavior of the RadHeatMap__
 
-{{region xaml-radheatmap-selection_0}}
+```XAML
 	 <telerik:RadHeatMap SelectionMode="MultipleDataItems" SelectedCellBorderColor="Red" SelectedCellBorderThickness="2" />
-{{endregion}}
+```
 
 #### __Figure 1: RadHeatMap with selection enabled__
 

@@ -20,12 +20,12 @@ To use **FormattingColorPicker** you will need to add a reference to the **Teler
 
 **Example 1** demonstrates how to add the control to your XAML and bind it to a command.
 
-#### __[XAML] Example 1: Add FormattingColorPicker__
+__Example 1: Add FormattingColorPicker__
 
-{{region radrichtextbox-how-to-update-current-color-in-ui_0}}
+```XAML
 
 	<telerik:FormattingColorPicker ActiveColor="Red" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding ChangeFontForeColorCommand}"/>
-{{endregion}}
+```
 
 
 

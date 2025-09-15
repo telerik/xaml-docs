@@ -26,8 +26,8 @@ How to undock a RadPaneGroup programmatically.
 
 To achieve this requirement you can create the following helper method.
 
-#### __[C#] Example 1: Create the helper method to float a RadPaneGroup__
-    {{region cs-kb-docking-float-whole-group-in-code-1}}
+__Example 1: Create the helper method to float a RadPaneGroup__
+    ```C#
         public void FloatGroup(RadPaneGroup paneGroup)
         {
             var panes = paneGroup.EnumeratePanes().ToList();
@@ -40,14 +40,14 @@ To achieve this requirement you can create the following helper method.
                 firstPane.PaneGroup.AddItem(panes[i], DockPosition.Center);
             }
         }
-    {{endregion}}
+    ```
 
 You can then use this method to undock any RadPaneGroup.
 
-#### __[C#] Example 2: Use the FloatGroup helper method__
-    {{region cs-kb-docking-float-whole-group-in-code-1}}
+__Example 2: Use the FloatGroup helper method__
+    ```C#
         this.FloatGroup(this.paneGroup1);
-    {{endregion}}
+    ```
 
 ## See Also
 * [Docked/Floating Panes]({%slug raddocking-features-panes-docked-floating-panes%})

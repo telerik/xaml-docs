@@ -20,7 +20,7 @@ The __Separator__ is extremely simple element and it allows you to logically sep
 The next example demonstrates how to add a __Separator__ to an __ApplicationMenu__ object.				
 
 #### __XAML__
-{{region radribbonview-separator_0}}
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonView.ApplicationMenu>
 	        <telerik:ApplicationMenu>
@@ -31,4 +31,4 @@ The next example demonstrates how to add a __Separator__ to an __ApplicationMenu
 	        </telerik:ApplicationMenu>
 	    </telerik:RadRibbonView.ApplicationMenu>
 	</telerik:RadRibbonView>
-{{endregion}}
+```

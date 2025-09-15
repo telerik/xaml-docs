@@ -18,11 +18,11 @@ The pin functionality can be controlled using the following methods exposed by t
 
 * `PinRowTop(int index)`&mdash;Pins a row at a given index on the top.
 
-	#### __[C#] Example 1: Calling the PinRowTop method__
+	__Example 1: Calling the PinRowTop method__
 
-	{{region radvirtualgrid-features_pinnedrowsandcolumns_0}}
+	```C#
 		virtualGrid.PinRowTop(1);
-	{{endregion}}
+	```
 
 	#### __Figure 1: RadVirtualGrid with pinned row at the top__
 
@@ -30,11 +30,11 @@ The pin functionality can be controlled using the following methods exposed by t
 
 * `PinRowBotton(int index)`&mdash;Pins a row at a given index to the bottom.
 
-	#### __[C#] Example 2: Calling the PinRowBottom method__
+	__Example 2: Calling the PinRowBottom method__
 
-	{{region radvirtualgrid-features_pinnedrowsandcolumns_1}}
+	```C#
 		virtualGrid.PinRowBottom(1);
-	{{endregion}}
+	```
 
 	#### __Figure 2: RadVirtualGrid with pinned row at the bottom__
 
@@ -42,11 +42,11 @@ The pin functionality can be controlled using the following methods exposed by t
 
 * `PinColumnLeft(int index)`&mdash;Pins a column at a given index to the left.
 
-	#### __[C#] Example 3: Calling the PinColumnLeft method__
+	__Example 3: Calling the PinColumnLeft method__
 
-	{{region radvirtualgrid-features_pinnedrowsandcolumns_2}}
+	```C#
 		virtualGrid.PinColumnLeft(1);
-	{{endregion}}
+	```
 
 	#### __Figure 3: RadVirtualGrid with pinned column on the left__
 
@@ -54,11 +54,11 @@ The pin functionality can be controlled using the following methods exposed by t
 
 * `PinColumnRight(int index)`&mdash;Pins a column at a given index to the right.
 
-	#### __[C#] Example 4: Calling the PinColumnRight method__
+	__Example 4: Calling the PinColumnRight method__
 
-	{{region radvirtualgrid-features_pinnedrowsandcolumns_3}}
+	```C#
 		virtualGrid.PinColumnRight(1);
-	{{endregion}}
+	```
 
 	#### __Figure 4: RadVirtualGrid with pinned column on the right__
 
@@ -72,11 +72,11 @@ Unpinning an already pinned row or column can be achieved through the `UnpinRow`
 
 * `UnpinColumn(int index)`&mdash;Unpins a column at a given index.
 
-#### __[C#] Example 5: Unpin methods usage__  
-{{region radvirtualgrid-features_pinnedrowsandcolumns_4}}
+__Example 5: Unpin methods usage__  
+```C#
 	virtualGrid.UnpinRow(1);
 	virtualGrid.UnpinColumn(1);
-{{endregion}}
+```
 
 ## Commands Support
 

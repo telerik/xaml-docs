@@ -32,8 +32,8 @@ A `DataTrigger` defined in a `GridViewColumn`'s `CellTemplate` or `CellEditTempl
 
 Several alternative options can be used instead of `DataTrigger`. The following trigger definition will serve as a reference on how to replace it with another approach.
 
-#### __[XAML] DataTrigger definition__
-{{region kb-gridview-datatrigger-doesnt-work-in-celltemplate-0}}
+__DataTrigger definition__
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding PersonName}"> 
 		<telerik:GridViewDataColumn.CellTemplate> 
 			<DataTemplate> 
@@ -46,7 +46,7 @@ Several alternative options can be used instead of `DataTrigger`. The following 
 			</DataTemplate> 
 		</telerik:GridViewDataColumn.CellTemplate> 
 	</telerik:GridViewDataColumn> 
-{{endregion}}
+```
 
 Instead, use one of the following ideas:
 
@@ -54,8 +54,8 @@ Instead, use one of the following ideas:
 
 	In that case an additional property in the row's data model should be defined and updated accordingly.
 	
-	#### __[XAML]__
-	{{region kb-gridview-datatrigger-doesnt-work-in-celltemplate-1}}
+	
+	```XAML
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding PersonName}"> 
 			<telerik:GridViewDataColumn.CellTemplate> 
 				<DataTemplate> 
@@ -63,14 +63,14 @@ Instead, use one of the following ideas:
 				</DataTemplate> 
 			</telerik:GridViewDataColumn.CellTemplate> 
 		</telerik:GridViewDataColumn> 
-	{{endregion}}
+	```
 	
 * __Using an `IValueConverter`.__
 
 	In that case the converter can return red color if the bound boolean value is false, and black (or other) color when true.
 
-	#### __[XAML]__
-	{{region kb-gridview-datatrigger-doesnt-work-in-celltemplate-2}}
+	
+	```XAML
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding PersonName}"> 
 			<telerik:GridViewDataColumn.CellTemplate> 
 				<DataTemplate> 
@@ -78,14 +78,14 @@ Instead, use one of the following ideas:
 				</DataTemplate> 
 			</telerik:GridViewDataColumn.CellTemplate> 
 		</telerik:GridViewDataColumn> 
-	{{endregion}}
+	```
 	
 * __Using the `ContentTemplate` of `GridViewCell` instead of the `CellTemplate`.__
 
 	To utilize this idea, use the `CellStyle` property of the column.
 
-	#### __[XAML]__
-	{{region kb-gridview-datatrigger-doesnt-work-in-celltemplate-3}}
+	
+	```XAML
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding PersonName}"> 
 			<telerik:GridViewDataColumn.CellStyle> 
 				<Style TargetType="telerik:GridViewCell">
@@ -104,4 +104,4 @@ Instead, use one of the following ideas:
 				</Style>
 			</telerik:GridViewDataColumn.CellTemplate> 
 		</telerik:GridViewDataColumn> 
-	{{endregion}}
+	```

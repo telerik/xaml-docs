@@ -47,8 +47,8 @@ In the next snippet the ControlTemplate of the Style will be modified in such a 
 
 >important The changes applied in the ControlTemplate (in the following code) are marked with comments using the pattern "Changed OldValue to NewValue". For example: "Changed Background from "{StaticResource ControlBackground_MouseOver}" to "#FF8080:" ".
 
-#### __[XAML] Example 1: Customized RadButton Style - based on the Office_Black Theme__
-{{region radbuttons-styles-and-templates-styling-visual-states-0}}
+__Example 1: Customized RadButton Style - based on the Office_Black Theme__
+```XAML
 	<Grid>
 		<Grid.Resources>
 			<SolidColorBrush x:Key="ControlForeground_Normal" Color="#FF000000"/>
@@ -247,14 +247,14 @@ In the next snippet the ControlTemplate of the Style will be modified in such a 
 					
 		<telerik:RadButton Content="RadButton" Padding="20"/>
 	</Grid>
-{{endregion}}
+```
 
 #### Figure 1: Office_Black RadButton with customized visual states
 ![radbuttons-styles-and-templates-styling-visual-states-0.png](images/radbuttons-styles-and-templates-styling-visual-states-0.png)
 
 {% if site.site_name == 'WPF' %}
-#### __[XAML] Example 2: Customized RadButton Style - based on the Office2016 Theme__
-{{region radbuttons-styles-and-templates-styling-visual-states-1}}
+__Example 2: Customized RadButton Style - based on the Office2016 Theme__
+```XAML
 	<Grid>
 		<Grid.Resources>
 			<Style TargetType="telerik:RadButton">
@@ -384,7 +384,7 @@ In the next snippet the ControlTemplate of the Style will be modified in such a 
 					
 		<telerik:RadButton Content="RadButton" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="20"/>
 	</Grid>
-{{endregion}}
+```
 
 #### Figure 2: Office2016 RadButton with customized visual states
 ![radbuttons-styles-and-templates-styling-visual-states-1.png](images/radbuttons-styles-and-templates-styling-visual-states-1.png)

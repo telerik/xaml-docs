@@ -31,18 +31,18 @@ You can include the control in your page by either dragging it from the toolbox 
 
 ## Adding RadListBox to the Project
 
-#### __[XAML] Example 1: Adding RadListBox__
+__Example 1: Adding RadListBox__
 
-{{region xaml-radlistbox-getting-started_0}}
+```XAML
 	<telerik:RadListBox x:Name="radListBox" Width="200" />
-{{endregion}}
+```
 
 ## Populating with Items
 
 The control can either be populated by adding __RadListBoxItems__ to its __Items__ collection, or by its data binding support.
 
-#### __[XAML] Example 2: Adding RadListBoxItems__
-{{region xaml-radlistbox-getting-started_1}}
+__Example 2: Adding RadListBoxItems__
+```XAML
 	<telerik:RadListBox  Width="200" x:Name="radListBox">
 	    <telerik:RadListBoxItem Content="Australia" />
 	    <telerik:RadListBoxItem Content="Brazil" />
@@ -51,14 +51,14 @@ The control can either be populated by adding __RadListBoxItems__ to its __Items
 	    <telerik:RadListBoxItem Content="England" />
 	    <telerik:RadListBoxItem Content="Germany" />
 	</telerik:RadListBox>
-{{endregion}}
+```
 
 #### __[XAML] Example 3: Binding RadListBox
 
-{{region xaml-radlistbox-getting-started_2}}
+```XAML
 	<telerik:RadListBox x:Name="radListBox" Width="200" 
 						ItemsSource="{Binding Items}"/>
-{{endregion}}
+```
 
 >More detailed information on how to populate __RadListBox__ with some data you can found [here]({%slug radlistbox-populating-with-data-overview%}).
 
@@ -77,8 +77,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region radlistbox-getting-started_2}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -87,7 +87,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 __Figure 4__ shows __RadMap__ with the **Fluent** theme applied.
 	

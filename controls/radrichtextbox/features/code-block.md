@@ -46,14 +46,14 @@ Additionally, you can enable the display of line numbers and the alternating lin
 
 #### __C#__
 
-{{region radrichtextbox-features-code-block_0}}
+```C#
 	string code = "this.IsCodeBlock = true;\nthis.IsCodeBlock = false;\nthis.IsCodeBlock = true;";
 	CodeFormattingSettings formattingSettings = new CodeFormattingSettings(CodeLanguages.CSharp);
 	formattingSettings.IsLineNumberingEnabled = true;
 	formattingSettings.IsAlternatingLinesEnabled = true;
 
 	this.radRichTextBox.InsertCodeBlock(code, formattingSettings);
-{{endregion}}
+```
 
 
 The inner representation of the code block in the document is achieved by surrounding the content with __CodeAnnotationRangeStart__ and __CodeAnnotationRangeEnd__.
@@ -67,9 +67,9 @@ To remove the code block you can use the __DeleteCodeBlock()__ method of __RadRi
 
 #### __C#__
 
-{{region radrichtextbox-features-code-block_1}}
+```C#
 	this.radRichTextBox.DeleteCodeBlock(codeBlockRangeStart);
-{{endregion}}
+```
 
 
 The contents of a code block can be selected and copied, but cannot be edited. However, existing code blocks can be modified with the code block dialog.
@@ -91,14 +91,14 @@ You can also register or change which style will be used for which classificatio
 
 #### __C#__
 
-{{region radrichtextbox-features-code-block_2}}
+```C#
 	StyleDefinition commentJS = new StyleDefinition("CommentJS", StyleType.Character);
 	commentJS.SpanProperties.ForeColor = Colors.Gray;
 	commentJS.IsCustom = false;
 	commentJS.IsPrimary = false;
 	
 	this.radRichTextBox.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS);
-{{endregion}}
+```
 
 
 >tipYou can download a runnable project showing how to add custom code formatting language from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RadRichTextBox / CustomCodeFormattingLanguage__.

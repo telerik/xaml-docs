@@ -44,10 +44,10 @@ There are two ways to add __RadPivotGrid__ to your application:
 
 #### __XAML__
 
-{{region radpivotgrid-getting-started_1}}
+```XAML
 	<pivot:RadPivotGrid Name="radPivotGrid1">            
 	</pivot:RadPivotGrid>
-{{endregion}}
+```
 
 >importantYou will have to define the pivot namespace in your __XAML__: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__
 
@@ -57,7 +57,7 @@ In our application we will show data for some office materials - their quantity,
 
 #### __C#__
 
-{{region radpivotgrid-getting-started_1}}
+```C#
 	public class Product
 	{
 	    public string Name { get; set; }
@@ -65,11 +65,11 @@ In our application we will show data for some office materials - their quantity,
 	    public double Price { get; set; }
 	    public DateTime Date { get; set; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-getting-started_1}}
+```VB.NET
 	Public Class Product
 	    Public Property Name() As String
 	        Get
@@ -108,13 +108,13 @@ In our application we will show data for some office materials - their quantity,
 	    End Property
 	    Private m_Date As DateTime
 	End Class
-{{endregion}}
+```
 
 Now we'll add a method that will create a sample data for our application:
 
 #### __C#__
 
-{{region radpivotgrid-getting-started_2}}
+```C#
 	private static IList<Product> GeneratePivotData()
 	{
 	    IList<Product> PivotData = new List<Product>()
@@ -159,11 +159,11 @@ Now we'll add a method that will create a sample data for our application:
 	
 	    return PivotData;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-getting-started_2}}
+```VB.NET
 	Private Shared Function GeneratePivotData() As IList(Of Product)
 	    Dim PivotData As IList(Of Product) = New List(Of Product)() From { _
 	New Product() With { _
@@ -386,7 +386,7 @@ Now we'll add a method that will create a sample data for our application:
 	
 	    Return PivotData
 	End Function
-{{endregion}}
+```
 
 ## Create the RadPivotGrid LocalDataSourceProvider
 
@@ -394,7 +394,7 @@ It is time to define the DataSource for our __RadPivotGrid__. We'll do it in the
 
 #### __XAML__
 
-{{region radpivotgrid-getting-started_2}}
+```XAML
 	<pivot:LocalDataSourceProvider x:Key="LocalDataProvider" AggregatesPosition="Rows">
 	    <pivot:LocalDataSourceProvider.RowGroupDescriptions>
 	        <pivot:PropertyGroupDescription PropertyName="Name" />
@@ -407,32 +407,32 @@ It is time to define the DataSource for our __RadPivotGrid__. We'll do it in the
 	        <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
 	    </pivot:LocalDataSourceProvider.AggregateDescriptions>
 	</pivot:LocalDataSourceProvider>
-{{endregion}}
+```
 
 In the definition of the __RadPivotGrid__ you'll have to set the DataProvider property to the LocalDataSourceProvider we've just created.    		
 
 #### __XAML__
 
-{{region radpivotgrid-getting-started_3}}
+```XAML
 	<pivot:RadPivotGrid Name="radPivotGrid1" DataProvider="{StaticResource LocalDataProvider}" >            
 	</pivot:RadPivotGrid>
-{{endregion}}
+```
 
 The DataProvider is set, but it still doesn't have any data in it. It's time to use our *GenerateData* method. Add the following code to your code behind:    		
 
 #### __C#__
 
-{{region radpivotgrid-getting-started_3}}
+```C#
 	InitializeComponent();
 	(this.Resources["LocalDataProvider"] as LocalDataSourceProvider).ItemsSource = GeneratePivotData();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-getting-started_3}}
+```VB.NET
 	InitializeComponent()
 	TryCast(Me.Resources("LocalDataProvider"), LocalDataSourceProvider).ItemsSource = GeneratePivotData()
-{{endregion}}
+```
 
 ## Final Result and Full Project
 
@@ -445,7 +445,7 @@ Here's the full implementation of our project:
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region radpivotgrid-getting-started_4}}
+```XAML
 	<Window x:Class="RadPivotGrid_GettingStarted.MainWindow"
 					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -472,11 +472,11 @@ Here's the full implementation of our project:
 	        </pivot:RadPivotGrid>
 	    </Grid>
 	</Window>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-getting-started_4}}
+```C#
 	using System;
 	using System.Collections.Generic;
 	using System.Windows;
@@ -546,12 +546,12 @@ Here's the full implementation of our project:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region radpivotgrid-getting-started_4}}
+```VB.NET
 	Imports System
 	Imports System.Collections.Generic
 	Imports System.Windows
@@ -825,13 +825,13 @@ Here's the full implementation of our project:
 	        Return PivotData
 	    End Function
 	End Class
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region radpivotgrid-getting-started_5}}
+```XAML
 	<UserControl x:Class="RadPivotGrid_GettingStarted.MainPage"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -859,11 +859,11 @@ Here's the full implementation of our project:
 	        </pivot:RadPivotGrid>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-getting-started_5}}
+```C#
 	using System;
 	using System.Collections.Generic;
 	using System.Windows.Controls;
@@ -933,12 +933,12 @@ Here's the full implementation of our project:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region radpivotgrid-getting-started_5}}
+```VB.NET
 	Imports System
 	Imports System.Collections.Generic
 	Imports System.Windows.Controls
@@ -1213,7 +1213,7 @@ Here's the full implementation of our project:
 	        Return PivotData
 	    End Function
 	End Class
-{{endregion}}
+```
 {% endif %}
 
 ## Setting a Theme
@@ -1233,8 +1233,8 @@ To change the theme, you can follow the steps below:
 
 __Example 1__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 1: Merge the ResourceDictionaries__  
-{{region RadPivotGrid-getting-started_7}}
+__Example 1: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -1244,7 +1244,7 @@ __Example 1__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

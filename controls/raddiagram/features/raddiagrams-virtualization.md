@@ -15,9 +15,9 @@ __Telerik Diagramming Framework__ supports __UI Virtualization__, which collapse
 By default the __Virtualization__ feature of the __RadDiagram__ is enabled. You can disable it by setting the __DiagramSurface.IsVirtualizing__ attached property to False.
 		
 #### __XAML__	
-{{region raddiagram-features-virtualization-0}}
+```XAML
     <telerik:RadDiagram x:Name="diagram" telerik:DiagramSurface.IsVirtualizing="False"/>	  		  
-{{endregion}}
+```
 
 <br />
 >tip Binding the __Visibility__ property of the diagram items is not recommended. That is because when the virtualization is enabled the diagram items have their Visibility set locally. A value which is locally set has a higher priority than a one set through a OneWay binding so the value that comes from the binding won't be respected. To hide a shape we recommend using its __Opacity__ property instead.

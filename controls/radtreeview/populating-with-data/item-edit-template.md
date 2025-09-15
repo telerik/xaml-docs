@@ -19,8 +19,8 @@ Telerik __RadTreeView__ supports defining a DataTemplate that controls how the i
 __Example 1__ demonstrates how to define a RadTreeView in xaml and setup a DataTemplate that will be used for editing the items. This DataTemplate is displayed when an item enters edit mode (for example after pressing the __F2__ key).
 
 {% if site.site_name == 'Silverlight' %}
-#### __[XAML] Example 1: Defining the ItemEditTemplate__
-{{region radtreeview-populating-with-data-item-edit-template_0}}
+__Example 1: Defining the ItemEditTemplate__
+```XAML
 
 	<Grid>
         <Grid.Resources>
@@ -55,12 +55,12 @@ __Example 1__ demonstrates how to define a RadTreeView in xaml and setup a DataT
 	   ItemTemplate="{StaticResource League}" Margin="8" 
 	   ItemEditTemplate="{StaticResource LeagueItemEditTemplate}"/>
     </Grid>
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
-#### __[XAML] Example 1: Defining the ItemEditTemplate__
-{{region radtreeview-populating-with-data-item-edit-template_0}}
+__Example 1: Defining the ItemEditTemplate__
+```XAML
 
 	<Grid>
         <Grid.Resources>
@@ -95,7 +95,7 @@ __Example 1__ demonstrates how to define a RadTreeView in xaml and setup a DataT
 	   ItemTemplate="{StaticResource League}" Margin="8" 
 	   ItemEditTemplate="{StaticResource LeagueItemEditTemplate}"/>
     </Grid>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}

@@ -26,7 +26,7 @@ In the following example a new __RadChart__ control is declared along with two s
 
 #### __XAML__
 
-{{region xaml-radchart-features-interactivity-effects_0}}
+```XAML
 	<telerik:RadChart x:Name="RadChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -62,7 +62,7 @@ In the following example a new __RadChart__ control is declared along with two s
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -70,13 +70,13 @@ Take a look at the way the __InteractivitySettings__ are declared for a specific
 
 #### __XAML__
 
-{{region xaml-radchart-features-interactivity-effects_1}}
+```XAML
 	<telerik:BarSeriesDefinition>
 	    <telerik:BarSeriesDefinition.InteractivitySettings>
 	        <telerik:InteractivitySettings HoverScope="Series" SelectionScope="Series" />
 	    </telerik:BarSeriesDefinition.InteractivitySettings>
 	</telerik:BarSeriesDefinition>
-{{endregion}}
+```
 
 
 
@@ -98,7 +98,7 @@ The following code snippets represent the complete source code used in the topic
 
 #### __XAML__
 
-{{region xaml-radchart-features-interactivity-effects_2}}
+```XAML
 	<telerik:RadChart x:Name="RadChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -134,13 +134,13 @@ The following code snippets represent the complete source code used in the topic
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-interactivity-effects_3}}
+```C#
 	public class DataObject
 	{
 	    private static Random rand = new Random(Environment.TickCount);
@@ -232,13 +232,13 @@ The following code snippets represent the complete source code used in the topic
 	        return list;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-interactivity-effects_4}}
+```VB.NET
 	Public Class DataObject
 	    Private Shared rand As New Random(Environment.TickCount)
 	    Private Shared adjrand As New Random(Environment.TickCount + rand.[Next]())
@@ -303,23 +303,23 @@ The following code snippets represent the complete source code used in the topic
 	        Return list
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-interactivity-effects_5}}
+```C#
 	this.RadChart.ItemsSource = DataObject.GetData();
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-interactivity-effects_6}}
+```VB.NET
 	Me.RadChart.ItemsSource = DataObject.GetData()
-{{endregion}}
+```
 
 
 

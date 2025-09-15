@@ -14,8 +14,8 @@ CommodityChannelIndexIndicator measures the current price level relative to an a
 
 To set up the indicator you can set its __CategoryBinding, HighBinding, LowBinding, CloseBinding, and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
-#### __[XAML] Example 1: Defining CommodityChannelIndexIndicator__
-{{region radchartview-indicators-commoditychannelindexindicator-0}}
+__Example 1: Defining CommodityChannelIndexIndicator__
+```XAML
 	<telerik:RadCartesianChart.Indicators>
 		<telerik:CommodityChannelIndexIndicator Period="5" 
 											    CategoryBinding="Date" 
@@ -24,7 +24,7 @@ To set up the indicator you can set its __CategoryBinding, HighBinding, LowBindi
 											    CloseBinding="Close" 
 											    ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: CommodityChannelIndexIndicator
 <img src="images/radchartview-indicators-commoditychannelindexindicator-0.png" style="width: 80%;">

@@ -14,22 +14,20 @@ The following article will demonstrate how to create a simple Horizontal Bullet 
 
 1. The first thing you have to do is to create a new instance of the __RadHorizontalBulletGraph__ class in the code and add it to a parent control.
 
-	#### __[C#] Example 1: Creating a new instance of RadHorizontalBulletGraph and adding it to the parent container__  
-	{{region cs-radbulletgraph-creating-bulletgraph-programmatically-0}}
+	__Example 1: Creating a new instance of RadHorizontalBulletGraph and adding it to the parent container__  
+	```C#
 		RadHorizontalBulletGraph horizontalBulletGraph = new RadHorizontalBulletGraph();
 		this.LayoutRoot.Children.Add(horizontalBulletGraph);
-	{{endregion}}
-
-	#### __[VB.NET] Example 1: Creating a new instance of RadHorizontalBulletGraph and adding it to the parent container__  
-	{{region vb-radbulletgraph-creating-bulletgraph-programmatically-1}}
+	```
+```VB.NET
 		Dim horizontalBulletGraph As New RadHorizontalBulletGraph()
 		Me.LayoutRoot.Children.Add(horizontalBulletGraph)
-	{{endregion}}
+	```
 
 2. Configure the BulletGraph by setting sample values for it's properties.
 
-	#### __[C#] Example 2: Setting up the bullet graph__  
-	{{region cs-radbulletgraph-creating-bulletgraph-programmatically-2}}
+	__Example 2: Setting up the bullet graph__  
+	```C#
 		horizontalBulletGraph.AutoRange = false;
 		horizontalBulletGraph.Width = 300;
 		horizontalBulletGraph.Height = 60;
@@ -49,10 +47,8 @@ The following article will demonstrate how to create a simple Horizontal Bullet 
 		QualitativeRange range2 = new QualitativeRange();
 		range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8");
 		horizontalBulletGraph.QualitativeRanges.Add(range2);
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: Setting up the bullet graph__  
-	{{region vb-radbulletgraph-creating-bulletgraph-programmatically-3}}
+	```
+```VB.NET
 		horizontalBulletGraph.AutoRange = False
 		horizontalBulletGraph.Width = 300
 		horizontalBulletGraph.Height = 60
@@ -72,14 +68,14 @@ The following article will demonstrate how to create a simple Horizontal Bullet 
 		Dim range2 As New QualitativeRange()
 		range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8")
 		horizontalBulletGraph.QualitativeRanges.Add(range2)
-	{{endregion}}
+	```
 
 	The Colors for the qualitative ranges are set with Hex Values and are converted to SolidColorBrush using the method provided in [this](http://forums.silverlight.net/forums/p/24190/488858.aspx) forum post.
 
 The full source code for creating Horizontal BulletGraph in code-behind.
 
-#### __[C#] Example 3: The full code of the example__  
-{{region cs-radbulletgraph-creating-bulletgraph-programmatically-4}}
+__Example 3: The full code of the example__  
+```C#
 	public MainPage()
 	{
 	    InitializeComponent();
@@ -129,10 +125,8 @@ The full source code for creating Horizontal BulletGraph in code-behind.
 	    }
 	    return theAnswer;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: The full code of the example__  
-{{region vb-radbulletgraph-creating-bulletgraph-programmatically-5}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Dim horizontalBulletGraph As New RadHorizontalBulletGraph()
@@ -179,7 +173,7 @@ The full source code for creating Horizontal BulletGraph in code-behind.
 	    End Try
 	    Return theAnswer
 	End Function
-{{endregion}}
+```
 
 The result: 
 ![{{ site.framework_name }} RadBulletGraph Data Binding](images/radbulletgraph_databinding.PNG)

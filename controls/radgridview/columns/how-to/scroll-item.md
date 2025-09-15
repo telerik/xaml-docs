@@ -32,26 +32,22 @@ __ScrollIntoViewAsync__ method accepts the following parameters:
 
 Here is the code that will scroll to the last row and last column of RadGridView:
 
-#### __[C#] Example 1: Scroll to the last row and last column__
+__Example 1: Scroll to the last row and last column__
 
-{{region cs-gridview-scroll-item_0}}
+```C#
 	this.radgridView.ScrollIntoViewAsync(this.radgridView.Items[this.radgridView.Items.Count - 1], //the row
 	                                  this.radgridView.Columns[this.radgridView.Columns.Count - 1], //the column
 	                                  new Action<FrameworkElement>((f) =>
 	                                  {
 	                                      (f as GridViewRow).IsSelected = true; // the callback method; if it is not necessary, you may set that parameter to null;
 	                                  }));
-{{endregion}}
-
-
-#### __[VB.NET] Example 1: Scroll to the last row and last column__
-
-{{region vb-gridview-scroll-item_0}}
+```
+```VB.NET
 	Me.radgridView.ScrollIntoViewAsync(Me.radgridView.Items(Me.radgridView.Items.Count - 1), Me.radgridView.Columns(Me.radgridView.Columns.Count - 1),
 	                                   New Action(Of FrameworkElement)(Sub(f)
 	                                                                       TryCast(f, GridViewRow).IsSelected = True ' the callback method; if it is not necessary, you may set that parameter to null;
 	                                                                   End Sub)) 'the column - the row
-{{endregion}}
+```
 
 You should use this method when [UI virtualization]({%slug radgridview-features-ui-virtualization%}) is turned on (which is by default). If for some reason you have disabled the virtualization - you can use the __ScrollIntoView__ counterpart. The only difference in terms of programming API is that no callback method is called when the ScrollIntoView succeeds.
  
@@ -70,28 +66,23 @@ __ScrollIndexIntoViewAsync__ method accepts the following parameters:
 
 Here is the code that will scroll into the last row and last column of RadGridView:
 
-#### __[C#] Example 2: Scroll into the last row and last column of RadGridView__
+__Example 2: Scroll into the last row and last column of RadGridView__
 
-{{region cs-gridview-scroll-item_2}}
+```C#
 	this.radgridView.ScrollIndexIntoViewAsync(this.radgridView.Items.Count - 1, //the row
 	                                  this.radgridView.Columns[this.radgridView.Columns.Count - 1], //the column
 	                                  new Action<FrameworkElement>((f) =>
 	                                  {
 	                                      (f as GridViewRow).IsSelected = true; // the callback method; if it is not necessary, you may set that parameter to null;
 	                                  }), null);
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 2: Scroll into the last row and last column of RadGridView__
-
-{{region vb-gridview-scroll-item_2}}
+```
+```VB.NET
 	Me.radgridView.ScrollIndexIntoViewAsync(Me.radgridView.Items.Count - 1, Me.radgridView.Columns(Me.radgridView.Columns.Count - 1),
 	                                        New Action(Of FrameworkElement)(Sub(f)
 	                                                                            TryCast(f, GridViewRow).IsSelected = True ' the callback method; if it is not necessary, you may set that parameter to null;
 	                                                                        End Sub),
 	                                        Nothing) 'the column - the row
-{{endregion}}
+```
 
 You should use this method when [UI virtualization]({%slug radgridview-features-ui-virtualization%}) is turned on (which is by default). If you have disabled the virtualization - you can use the __ScrollIndexIntoView__ counterpart. The only difference in terms of programming API is that no callback method is called when the ScrollIndexIntoView succeeds.
             

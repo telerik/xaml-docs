@@ -56,7 +56,7 @@ You can use it directly in XAML:
 
 #### __XAML__
 
-{{region raddiagram-extensions-toolbox-0}}
+```XAML
 	<Grid>
 			<Grid.DataContext>
 				<telerik:HierarchicalGalleryItemsCollection />
@@ -118,13 +118,13 @@ You can use it directly in XAML:
 														Converter={StaticResource BooleanToVisibilityConverter}}" />
 	
 	</Grid>
-{{endregion}}
+```
 
 or define a property of type __HierarchicalGalleryItemsCollection__ in your ViewModel:                
 
 #### __C#__
 
-{{region raddiagram-extensions-toolbox-0}}
+```C#
 	public class MainViewModel
 	{
 	    public HierarchicalGalleryItemsCollection GalleryItems { get; set; }
@@ -134,11 +134,11 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	        this.GalleryItems = new HierarchicalGalleryItemsCollection();
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-extensions-toolbox-0}}
+```VB.NET
 	Public Class MainViewModel
 		Public Property GalleryItems() As HierarchicalGalleryItemsCollection
 			Get
@@ -154,11 +154,11 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 			Me.GalleryItems = New HierarchicalGalleryItemsCollection()
 		End Sub
 	End Class	
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region raddiagram-extensions-toolbox-1}}
+```XAML
 	<Grid>
 		<Grid.DataContext>
 			 <!-- local is an alias pointing to your local namespace where the MainViewModel class is defined-->
@@ -222,7 +222,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 														Converter={StaticResource BooleanToVisibilityConverter}}" />
 	
 	</Grid>
-{{endregion}}
+```
 
 ## Configure a RadDiagramToolbox to Display Part of the HierarchicalGalleryItemsCollection
 
@@ -230,7 +230,7 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 
 #### __C#__
 
-{{region raddiagram-extensions-toolbox-1}}
+```C#
 	public class MainViewModel
 	{
 	    public ObservableCollection<Gallery> GalleryItems { get; set; }
@@ -256,11 +256,11 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 	        }
 	    }
 	}	
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-extensions-toolbox-1}}
+```VB.NET
 	Public Class MainViewModel
 		Public Property GalleryItems() As ObservableCollection(Of Gallery)
 			Get
@@ -289,13 +289,13 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 			Next
 		End Sub
 	End Class	
-{{endregion}}
+```
 
 Next, you can customize your *GalleryItems* collection to display only the Basic Shapes gallery like so:
 
 #### __C#__
 
-{{region raddiagram-extensions-toolbox-2}}
+```C#
 	public class MainViewModel
 	{
 	    public ObservableCollection<Gallery> GalleryItems { get; set; }
@@ -321,11 +321,11 @@ Next, you can customize your *GalleryItems* collection to display only the Basic
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-extensions-toolbox-2}}
+```VB.NET
 	Public Class MainViewModel
 		Public Property GalleryItems() As ObservableCollection(Of Gallery)
 			Get
@@ -354,7 +354,7 @@ Next, you can customize your *GalleryItems* collection to display only the Basic
 			Next
 		End Sub
 	End Class
-{{endregion}}
+```
 
 ![Rad Diagram Extensions Toolbox Basic Shapes](images/RadDiagram_Extensions_Toolbox_BasicShapes.png)
 
@@ -366,7 +366,7 @@ For the purpose of this tutorial we will create a class describing our shapes an
 
 #### __C#__
 
-{{region raddiagram-extensions-toolbox-3}}
+```C#
 	public class MyShape
 	{
 	    public Geometry Geometry { get; set; }
@@ -446,11 +446,11 @@ For the purpose of this tutorial we will create a class describing our shapes an
 	        this.Items.Add(secondGallery);
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagram-extensions-toolbox-3}}
+```VB.NET
 	Public Class MyShape
 		Public Property Geometry() As Geometry
 		Public Property Header() As String
@@ -485,13 +485,13 @@ For the purpose of this tutorial we will create a class describing our shapes an
 			Me.Items.Add(secondGallery)
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Once the ViewModels are all in place, you can use the *MainViewModel* as the __DataContext__ of the __RadDiagramToolbox__ and bind its __ItemsSource__ to the *Items* collection. You will also need to define __DataTemplates__ to visualize the *MyShape* and *MyGallery* items properly.
 
 #### __XAML__
 
-{{region raddiagram-extensions-toolbox-2}}
+```XAML
 	<Grid>
 		<Grid.DataContext>
 			<local:MainViewModel />
@@ -562,7 +562,7 @@ Once the ViewModels are all in place, you can use the *MainViewModel* as the __D
 														Converter={StaticResource BooleanToVisibilityConverter}}" />
 	
 	</Grid>
-{{endregion}}
+```
 
 ![Rad Diagram Extensions Toolbox Custom Gallery](images/RadDiagram_Extensions_Toolbox_CustomGallery.png)
 

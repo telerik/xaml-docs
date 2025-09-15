@@ -22,18 +22,18 @@ Firstly, you need to create a DayButtonTemplateSelector class that inherits the 
 
 #### __C#__
 
-{{region cs-radcalendarstyling-and-appearance-daytemplateselector-1}}
+```C#
 	public class DayButtonTemplateSelector : DataTemplateSelector
 	{
 	
 	}
-{{endregion}}
+```
 
 Next we need to define the needed DataTemplates and override the __SelectTemplate__ method. For this concrete scenario the days on which a new Template should be set are stored in collections named "SpecialHolidays" and “BookedDays” - based on your condition, in the particular case comparison between the Days of the Calendar with the one from the collections, you return the proper DataTemplate that should be applied:
 
 #### __C#__
 
-{{region cs-radcalendarstyling-and-appearance-daytemplateselector-2}}
+```C#
 					
 			public DataTemplate DefaultTemplate { get; set; }
 			public DataTemplate BookedDayTemplate { get; set; }
@@ -61,13 +61,13 @@ Next we need to define the needed DataTemplates and override the __SelectTemplat
 			
 			          return this.DefaultTemplate;
 			      }
-	{{endregion}}
+	```
 
 As a next step you need to create a StaticResource in XAML for the DayButtonTemplateSelector and the Templates that contains:
 
 #### __XAML__
 
-{{region xaml-radcalendarstyling-and-appearance-daytemplateselector-1}}
+```XAML
 	<local:DayButtonTemplateSelector x:Key="DayButtonTemplateSelector">
 	    <local:DayButtonTemplateSelector.DefaultTemplate>
 	        <DataTemplate>
@@ -113,14 +113,14 @@ As a next step you need to create a StaticResource in XAML for the DayButtonTemp
 	        </DataTemplate>
 	    </local:DayButtonTemplateSelector.SpecialHolidayTemplate>
 	</local:DayButtonTemplateSelector>
-{{endregion}}
+```
 
 The last step is to set the __DayTemplateSelector__ property of the control:
 
 #### __XAML__
-{{region xaml-radcalendarstyling-and-appearance-daytemplateselector-2}}
+```XAML
 	<telerik:RadCalendar DayTemplateSelector="{StaticResource DayButtonTemplateSelector}" />
-{{endregion}}
+```
 
 The following figure demonstrates the final result:
 

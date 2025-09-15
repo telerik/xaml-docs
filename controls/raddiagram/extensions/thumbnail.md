@@ -28,7 +28,7 @@ The __RadDiagramThumbnail__ control provides a preview of the overall layout of 
 You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In both cases, in order to synchronize it with your diagram, you need to set its __Diagram__ property accordingly.	  
 
 #### __XAML__
-{{region raddiagram-extensions-thumbnail-0}}
+```XAML
     <Grid x:Name="LyoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -48,21 +48,21 @@ You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In bo
                                      Grid.Row="1"
                                      Diagram="{Binding ElementName=xDiagram}" />
     </Grid>
-{{endregion}}
+```
 
 #### __C#__	
-{{region raddiagram-extensions-thumbnail-1}}
+```C#
     RadDiagramThumbnail xDiagramThumbnail= new RadDiagramThumbnail() { Diagram = this.xDiagram };
     ...
     this.LayoutRoot.Children.Add(xDiagramThumbnail);
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region raddiagram-extensions-thumbnail-2}}
+```VB.NET
     Dim xDiagramThumbnail As New RadDiagramThumbnail() With { .Diagram = Me.xDiagram }
     ...
     Me.LayoutRoot.Children.Add(xDiagramThumbnail)		  		  
-{{endregion}}
+```
 
 ![Rad Diagram Extensions Thumbnail](images/RadDiagram_Extensions_Thumbnail.png)
 
@@ -75,7 +75,7 @@ If you need to update the __RadDiagramThumbnail__ viewport, you can take advanta
 The __RadDiagramThumbnail__ indicates the current viewport of the __RadDiagram__ through a __Red Rectangle__ element. You can change the style of this rectangle by applying a custom style on it. The __RadDiagramThumbnail__ control exposes a __ViewportStyle__ property which you can use to change the __Stroke__ and the __StrokeThickness__ of the Viewport rectangle.
 
 #### __XAML__
-{{region raddiagram-extensions-thumbnail-3}}
+```XAML
 	<telerik:RadDiagramThumbnail x:Name="xThumbnail"
 								 Grid.Row="1"
 								 Diagram="{Binding ElementName=xDiagram}">
@@ -85,7 +85,7 @@ The __RadDiagramThumbnail__ indicates the current viewport of the __RadDiagram__
 			</Style>
 		</telerik:RadDiagramThumbnail.ViewportStyle>
 	</telerik:RadDiagramThumbnail>
-{{endregion}}
+```
 
 ![Rad Diagram Extensions Thumbnail Viewport Style](images/RadDiagram_Extensions_Thumbnail_ViewportStyle.png)
 

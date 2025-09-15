@@ -18,8 +18,8 @@ __SurfaceSeries3D__ visualizes three-dimensional data represented by a surface. 
 
 You can use the code from __Example 1__ to create a __SurfaceSeries3D__. 
 
-#### __[XAML] Example 1: Defining series in XAML__	
-{{region radchartview3d-series-surfaceseries3d-0}}
+__Example 1: Defining series in XAML__	
+```XAML
 	<telerik:RadCartesianChart3D>
 		<telerik:RadCartesianChart3D.XAxis>
 			<telerik:CategoricalAxis3D/>
@@ -56,7 +56,7 @@ You can use the code from __Example 1__ to create a __SurfaceSeries3D__.
 			<telerik:CartesianChart3DGrid />
 		</telerik:RadCartesianChart3D.Grid>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 	
 #### __Figure 1: SurfaceSeries3D__
 ![{{ site.framework_name }} RadChartView3D SurfaceSeries3D](images/radchartview-3d-surfaceseries3d-0.png)
@@ -65,8 +65,8 @@ You can use the code from __Example 1__ to create a __SurfaceSeries3D__.
 
 You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __SurfaceSeries3D__ to bind the __SurfaceDataPoint3D__ properties to the properties of the view models. The __ItemsSource__ property is used to pass the data collection to the series.
 
-#### __[C#] Example 2: Defining a model for the data points and setting up the data context__
-{{region radchartview3d-series-surfaceseries3d-1}}
+__Example 2: Defining a model for the data points and setting up the data context__
+```C#
 	public class PlotInfo
 	{
 		public double XValue { get; set; }
@@ -80,12 +80,12 @@ You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ prope
 		new PlotInfo { XValue = 10, YValue = 20, ZValue = 150, },
 		//....
 	};
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting up the series__
-{{region radchartview3d-series-surfaceseries3d-2}}
+__Example 3: Setting up the series__
+```XAML
 	<telerik:SurfaceSeries3D XValueBinding="XValue"  YValueBinding="YValue" ZValueBinding=”ZValue” ItemsSource="{Binding}"/>
-{{endregion}}
+```
 
 ## Colorizers
 	
@@ -97,15 +97,15 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 
 	The colorizer works with relative offsets (between 0 and 1) by default. You can change this and work with absolute offsets by setting the __IsAbsolute__ property to __True__. 
 
-	#### __[XAML] Example 4: Setting the IsAbsolute property__  
-	{{region radchartview3d-series-surfaceseries3d-3}}
+	__Example 4: Setting the IsAbsolute property__  
+	```XAML
 		<telerik:SurfaceSeries3DValueGradientColorizer IsAbsolute="True">
-	{{endregion}}
+	```
 	
 	The gradient stops are stored in the __GradientStops__ collection.
 
-	#### __[XAML] Example 5: Setting the gradient stops__  
-	{{region radchartview3d-series-surfaceseries3d-4}}
+	__Example 5: Setting the gradient stops__  
+	```XAML
 		<telerik:SurfaceSeries3D>
 			<telerik:SurfaceSeries3D.Colorizer>
 				<telerik:SurfaceSeries3DValueGradientColorizer IsAbsolute="True">
@@ -124,7 +124,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 				</telerik:SurfaceSeries3DValueGradientColorizer>
 			</telerik:SurfaceSeries3D.Colorizer>
 		</telerik:SurfaceSeries3D>
-	{{endregion}}
+	```
 		
 	#### __Figure 2: SurfaceSeries3DValueGradientColorizer__	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DValueGradientColorizer](images/radchartview-3d-surfaceseries3d-1.png)
 
@@ -136,8 +136,8 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 
 	__Examples 6, 7 and 8__ demonstrate how to use the colorizer in a data binding scenario.
 
-	#### __[XAML] Example 6: Setting up the view__
-	{{region radchartview3d-series-surfaceseries3d-5}}
+	__Example 6: Setting up the view__
+	```XAML
 		<telerik:RadCartesianChart3D>
 			<telerik:RadCartesianChart3D.XAxis>
 				<telerik:CategoricalAxis3D/>
@@ -163,10 +163,10 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 				<telerik:CartesianChart3DGrid />
 			</telerik:RadCartesianChart3D.Grid>
 		</telerik:RadCartesianChart3D>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 7: Defining the view model of the data points__  
-	{{region radchartview3d-series-surfaceseries3d-6}}
+	__Example 7: Defining the view model of the data points__  
+	```C#
 		public class PlotInfo
 		{
 			public string XValue { get; set; }
@@ -174,10 +174,10 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 			public double ZValue { get; set; }
 			public Color Color { get; set; }
 		}
-	{{endregion}}	
+	```	
 		
-	#### __[C#] Example 8: Setting up the DataContext__  
-	{{region radchartview3d-series-surfaceseries3d-7}}
+	__Example 8: Setting up the DataContext__  
+	```C#
 		var source = new ObservableCollection<PlotInfo>()
 		{
 			new PlotInfo() { XValue = "1", YValue = "1", ZValue = 9, Color = (Color)ColorConverter.ConvertFromString("#C02E1D") },
@@ -199,7 +199,7 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 		};
 		
 		this.surfaceSeries.DataContext = source;
-	{{endregion}}
+	```
 		
 	#### __Figure 3: SurfaceSeries3DDataPointColorizer with default blending colorization mode__  	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with default blending colorization mode](images/radchartview-3d-surfaceseries3d-2.png)
 	
@@ -208,10 +208,10 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 	* __Blend__: The surface is divided into triangles determined by the original data points centers. The pixels in each triangle are color blends between the three colors determined by the data points (see __Figure 3__). This is the default colorization mode.
 	* __Tiles__: Each data point is presented by a tile with a solid color (see __Figure 4__).
 	
-	#### __[XAML] Example 9: Setting colorization mode__  
-	{{region radchartview3d-series-surfaceseries3d-8}}
+	__Example 9: Setting colorization mode__  
+	```XAML
 		<telerik:SurfaceSeries3DDataPointColorizer ColorizationMode="Tiles"/>
-	{{endregion}}
+	```
 	
 	#### __Figure 4: SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles__  	![{{ site.framework_name }} RadChartView3D SurfaceSeries3DDataPointColorizer with ColorizationMode set to Tiles](images/radchartview-3d-surfaceseries3d-3.png)
 	
@@ -219,38 +219,38 @@ The __SurfaceSeries3D__ colorizer determines the color appearance of the surface
 
 The display direction specifies how the 3D points are connected, thus how the surface is displayed. The points are connected in a way to respect their 2D position on the plane which is perpendicular to the display direction. For example, if the display direction is the Z axis, then the points are connected so that their 2D position in the XY plane is respected.
 
-#### __[XAML] Example 10: Setting display direction__  
-{{region radchartview3d-series-surfaceseries3d-9}}
+__Example 10: Setting display direction__  
+```XAML
 	<telerik:SurfaceSeries3D DisplayDirection="Z" />
-{{endregion}}
+```
 	
 ## Customizing surface triangulation	
 
 __SurfaceSeries3D__ allows you define a custom collection of triangle indices used to create the triangles which form the surface. The indices collection will be set to the __MeshGeometry3D__ object that presents the surface. To pass the custom triangulation you can use the __TriangleIndices__ collection of __SurfaceSeries3D__. When the collection is null, the chart calculates the triangle indices automatically.
 
-#### __[C#] Example 11: Setting display direction__  
-{{region radchartview3d-series-surfaceseries3d-10}}
+__Example 11: Setting display direction__  
+```C#
 	surfaceSeries.TriangleIndices = GetTriangleIndices();
 	//....
 	private Int32Collection GetTriangleIndices()
 	{
 		//get the triangle indices
 	}
-{{endregion}}
+```
 
 ## Customizing the data point visuals
 
 By default the data points of the series are not visible and only the surface can be seen. You can display the data point visuals by setting the __PointSize__ property. 
 
-#### __[XAML] Example 12: Setting point size in XAML__  
-{{region radchartview3d-series-surfaceseries3d-11}}
+__Example 12: Setting point size in XAML__  
+```XAML
 	<telerik:SurfaceSeries3D PointSize="60 60 60">
-{{endregion}}
+```
 
-#### __[C#] Example 13: Setting point size in code__  
-{{region radchartview3d-series-surfaceseries3d-12}}
+__Example 13: Setting point size in code__  
+```C#
 	surfaceSeries.PointSize = new Size3D(60, 60, 60);
-{{endregion}}
+```
 
 #### __Figure 5: SurfaceSeries3D default point visuals__  
 ![{{ site.framework_name }} RadChartView3D SurfaceSeries3D default point visuals](images/radchartview-3d-surfaceseries3d-4.png)

@@ -12,15 +12,15 @@ position: 4
 
 In order to allow the content in the header to be centered, you can set a UIElement (for example TextBlock) with HorizontalAlignment="Center" as the __Header__ of the RadWindow. This is demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Centering the Header of the RadWindow__
+__Example 1: Centering the Header of the RadWindow__
 
-{{region xaml-radwindow-how-to-center-the-header-of-the-content-0}}
+```XAML
 	<telerik:RadWindow Width="380">
 	    <telerik:RadWindow.Header>
 	        <TextBlock Text="My Header" HorizontalAlignment="Center" />
 	    </telerik:RadWindow.Header>
 	</telerik:RadWindow>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadWindow with Centered Header](images/RadWindow_How_To_Center_the_Header_01.png)

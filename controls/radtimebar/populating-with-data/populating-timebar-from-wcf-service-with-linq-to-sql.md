@@ -39,30 +39,30 @@ This help topic will demonstrate how to populate TimeBar with data from database
 
 	#### __C#__
 
-	{{region radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql_0}}
+	```C#
 		[ServiceContract]
 		public interface IService
 		{
 		[OperationContract]
 		List<SampleTable> GetTimeBarData();
 		}
-		{{endregion}}
+		```
 		
 	#### __VB.NET__
 
-	{{region radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql_1}}
+	```VB.NET
 		<ServiceContract>
 		Public Interface IService
 		<OperationContract>
 		Function GetTimeBarData() As List(Of SampleTable)
 		End Interface
-		{{endregion}}
+		```
 
 9. Go to the __Service.svc.cs__ file and implement the __IService1__ interface. Then select all data from the SampleTables table by using LINQ query:
 
 	#### __C#__
 
-	{{region radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql_2}}
+	```C#
 		public class Service : IService
 		{
 		  public List<SampleTable> GetTimeBarData()
@@ -74,13 +74,13 @@ This help topic will demonstrate how to populate TimeBar with data from database
 		   return data;
 		  }
 		}
-		{{endregion}}
+		```
 
 
 
 	#### __VB.NET__
 
-	{{region radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql_3}}
+	```VB.NET
 		Public Class Service
 		Implements IService
 		Public Function GetTimeBarData() As List(Of SampleTable)
@@ -91,7 +91,7 @@ This help topic will demonstrate how to populate TimeBar with data from database
 		Return data
 		End Function
 		End Class
-		{{endregion}}
+		```
 
 10. You should open the Web.config file and change the binding type of the service. Make sure that your web service uses a basicHttpBinding, not the default __wsHttpBinding__. Scroll down until you find the __system.serviceModel__ tag. Change the __binding="wsHttpBinding"__ to __binding="basicHttpBinding"__. The reason to change the binding is because Silverlight supports only basic binding (SOAP 1.1 etc.).
 
@@ -104,7 +104,7 @@ This help topic will demonstrate how to populate TimeBar with data from database
 
 	#### __XAML__
 
-	{{region radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql_4}}
+	```XAML
 		<UserControl.DataContext>
 				<viewModel:ViewModel />
 			</UserControl.DataContext>
@@ -125,7 +125,7 @@ This help topic will demonstrate how to populate TimeBar with data from database
 					</telerik:RadTimeBar>
 				</StackPanel>
 			</Grid>
-		{{endregion}}
+		```
 	
 	>You should use a TwoWay binding for the TimeBar's properties. This is required because of the coercing of the values that happens when a binding is executed.  
 
@@ -133,7 +133,7 @@ This help topic will demonstrate how to populate TimeBar with data from database
 
 	#### __C#__
 
-	{{region radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql_5}}
+	```C#
 		public class ViewModel : INotifyPropertyChanged		
 			{
 				private DateTime _StartDate = DateTime.MinValue;
@@ -282,11 +282,11 @@ This help topic will demonstrate how to populate TimeBar with data from database
 					}
 				}  
 			}
-		{{endregion}}
+		```
 
 	#### __VB.NET__
 
-	{{region radtimebar-populating-timebar-from-wcf-service-with-linq-to-sql_6}}
+	```VB.NET
 		Public Class ViewModel
 			  Implements INotifyPropertyChanged
 		
@@ -415,4 +415,4 @@ This help topic will demonstrate how to populate TimeBar with data from database
 						  RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 					End Sub
 		End Class
-		{{endregion}}
+		```

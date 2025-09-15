@@ -30,7 +30,7 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 
 #### __C#__
 
-{{region cs-radchart-features-chart-export_0}}
+```C#
 	SaveFileDialog dialog = new SaveFileDialog();
 	dialog.DefaultExt = "*.xls";
 	dialog.Filter = "Files(*.xls)|*.xls";
@@ -39,13 +39,13 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 	Stream fileStream = dialog.OpenFile();
 	radChart.ExportToExcelML( fileStream );
 	fileStream.Close();
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-chart-export_1}}
+```VB.NET
 	Dim dialog As New SaveFileDialog()
 	dialog.DefaultExt = "*.xls"
 	dialog.Filter = "Files(*.xls)|*.xls"
@@ -55,13 +55,13 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 	Dim fileStream As Stream = dialog.OpenFile()
 	radChart.ExportToExcelML(fileStream)
 	fileStream.Close()
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-chart-export_2}}
+```C#
 	SaveFileDialog dialog = new SaveFileDialog();
 	dialog.DefaultExt = "*.xls";
 	dialog.Filter = "Files(*.xls)|*.xls";
@@ -69,13 +69,13 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 	    return;
 	radChart.ExportToExcelML(dialog.FileName);
 	fileStream.Close();
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-chart-export_3}}
+```VB.NET
 	Dim dialog As New SaveFileDialog()
 	dialog.DefaultExt = "*.xls"
 	dialog.Filter = "Files(*.xls)|*.xls"
@@ -84,7 +84,7 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 	End If
 	radChart.ExportToExcelML(dialog.FileName)
 	fileStream.Close()
-{{endregion}}
+```
 
 
 

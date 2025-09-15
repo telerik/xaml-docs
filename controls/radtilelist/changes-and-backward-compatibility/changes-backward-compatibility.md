@@ -29,9 +29,9 @@ position: 1
 
 Before:
 
-#### __[XAML] Example 1: RadTileList before Q3 2014__
+__Example 1: RadTileList before Q3 2014__
 
-{{region xaml-radtilelist-changes-backward-compatibility-0}}
+```XAML
 			<Grid.Resources>
 			   <telerik:TileGroup Header="Continent" x:Key="Group1" />
 			   <telerik:TileGroup Header="Country" x:Key="Group2" />
@@ -43,15 +43,15 @@ Before:
 			<telerik:Tile Group="{StaticResource Group1}" Content="Asia" />
 			<telerik:Tile Group="{StaticResource Group2}" Content="Italy" />
 			</telerik:RadTileList>-->
-	{{endregion}}
+	```
 
 
 
 After __Q3 2014__
 
-#### __[XAML] Example 2: RadTileList after Q3 2014__
+__Example 2: RadTileList after Q3 2014__
 
-{{region xaml-radtilelist-changes-backward-compatibility-1}}
+```XAML
 			<telerik:RadTileList x:Name="RadTileList">
 				<telerik:RadTileList.Groups>
 					<telerik:TileGroup Header="Continent">
@@ -68,7 +68,7 @@ After __Q3 2014__
 					</telerik:TileGroup>
 				</telerik:RadTileList.Groups>
 			</telerik:RadTileList>
-	{{endregion}}
+	```
 
 
 
@@ -78,9 +78,9 @@ After __Q3 2014__
 *  Since each group is now represented of __TileGroupContainer__, if you have custom theme, you need to copy the style for this control in the template of RadTileList:
           
 
-#### __[XAML] Example 3: Setting a Style for TileGroupContainer__
+__Example 3: Setting a Style for TileGroupContainer__
 
-{{region xaml-radtilelist-changes-backward-compatibility-2}}
+```XAML
 			<DataTemplate x:Key="GroupTemplate">
 			  <ContentPresenter Content="{Binding Header}"/>
 			</DataTemplate>
@@ -110,20 +110,20 @@ After __Q3 2014__
 			  <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
 			  <Setter Property="UseLayoutRounding" Value="True"/>
 			</Style>
-	{{endregion}}
+	```
 
 
 
 * If you have custom theme, you need to update the panel of RadTileList and it should be:
           
 
-#### __[XAML] Example 4: Updating the panel of RadTileList__
+__Example 4: Updating the panel of RadTileList__
 
-{{region xaml-radtilelist-changes-backward-compatibility-3}}
+```XAML
 			<ItemsPanelTemplate x:Key="RadTileListItemsPanelTemplate">
 			  <telerik:TileListGroupPanel/>
 			</ItemsPanelTemplate>
-	{{endregion}}
+	```
 
 
 

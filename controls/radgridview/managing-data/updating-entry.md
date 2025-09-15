@@ -16,21 +16,21 @@ There are three ways for the row to enter edit mode. The first one is when the u
 
 #### __C#__
 
-{{region cs-gridview-managing-data-updating-entry_0}}
+```C#
 	this.radGridView.BeginEdit();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-managing-data-updating-entry_1}}
+```VB.NET
 	Me.radGridView.BeginEdit()
-{{endregion}}
+```
 
 For example, you can use a button to call this method.
 
 #### __XAML__
 
-{{region xaml-gridview-managing-data-updating-entry_2}}
+```XAML
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Edit"
 	    Click="Button_Click" />
@@ -38,26 +38,26 @@ For example, you can use a button to call this method.
 	        <!--...-->
 	    </telerik:RadGridView>
 	</StackPanel>
-{{endregion}}
+```
 
 And in the event handler call the method for the Click event.
 
 #### __C#__
 
-{{region cs-gridview-managing-data-updating-entry_3}}
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    this.radGridView.BeginEdit();
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-managing-data-updating-entry_4}}
+```VB.NET
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.radGridView.BeginEdit()
 	End Sub
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Editing Items 1](images/RadGridView_EditingItems_1.png)
 
@@ -69,30 +69,30 @@ The next step in implementing the adding functionality is to attach event handle
 
 #### __XAML__
 
-{{region xaml-gridview-managing-data-updating-entry_5}}
+```XAML
 	<telerik:RadGridView BeginningEdit="radGridView_BeginningEdit"
 	             RowEditEnded="radGridView_RowEditEnded">
 	    <!--...-->
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 
 The __BeginningEdit__ event is raised before the row enters edit mode. In the event handler you can cancel the operation or modify the cell being edited via the __Cancel__ and __Cell__ properties of the __GridViewBeginningEditRoutedEvenArgs__.
 
 #### __C#__
 
-{{region cs-gridview-managing-data-updating-entry_6}}
+```C#
 	private void radGridView_BeginningEdit(object sender, GridViewBeginningEditRoutedEventArgs e)
 	{
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-managing-data-updating-entry_7}}
+```VB.NET
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As GridViewBeginningEditRoutedEventArgs)
 	End Sub
-{{endregion}}
+```
 
 There are several ways to commit the edited data and all of them will raise the __RowEditEnded__ event. The first one occurs when the user presses __Enter__, the second when the __CommitEdit()__ method is called and the last one when another row is selected. The editing operation can also be cancelled by pressing __Escape.__ The first time you press __Escape__ only the cell cancels the edit. By pressing the __Escape__ second time, the whole row leaves edit mode. Another way to make the row cancel the edit is by calling the __CancelEdit()__ method. In this case the __RowEditEnded__ event will be raised again.
 
@@ -100,7 +100,7 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 
 #### __C#__
 
-{{region cs-gridview-managing-data-updating-entry_10}}
+```C#
 	private void radGridView_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
 	{
 	    if (e.EditAction == GridViewEditAction.Cancel)
@@ -112,11 +112,11 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 	        //Update the entry in the data base based on your logic.
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-managing-data-updating-entry_11}}
+```VB.NET
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	    If e.EditAction = GridViewEditAction.Cancel Then
 	        Exit Sub
@@ -126,7 +126,7 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 	        'Edit the entry in the data base based on your logic.
 	    End If
 	End Sub
-{{endregion}}
+```
 
 >You can also use the __CellEditEnded__ event to handle the committing or the cancelling actions and the logic in the event handler will be executed every time a cell gets edited. In some cases this might be inconvenient because different calls to a service might be made for each cell.
 

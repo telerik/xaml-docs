@@ -22,26 +22,23 @@ This article will give you information about the **RadObservableCollection**.
 
 Simply put, a RadObservableCollection represents an **ObservableCollection** that has the ability to suspend change notification events. Here is a typical use-case:
 
-#### __[C#] Example 1: Using RadObservableCollection__
+__Example 1: Using RadObservableCollection__
 
-{{region cs-consuming-data-radobservablecollection_1}}
+```C#
 	clubs.SuspendNotifications();
     foreach (var item in newItems)
     {
         clubs.Add(item);
     }
     clubs.ResumeNotifications();
-{{endregion}}
-
-#### __[VB.NET] Example 1: Using RadObservableCollection__
-
-{{region vb-consuming-data-radobservablecollection_1}}
+```
+```VB.NET
 	clubs.SuspendNotifications()
 	For Each item In newItems
 		clubs.Add(item)
 	Next item
 	clubs.ResumeNotifications()
-{{endregion}}
+```
 
 ## Methods
 

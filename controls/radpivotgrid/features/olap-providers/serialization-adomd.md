@@ -23,7 +23,7 @@ So lets create a simple class that we'll use to save (when serializing) and load
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization-adomd_1}}
+```C#
 	[DataContract]
 	public class DataProviderSettings
 	{
@@ -45,11 +45,11 @@ So lets create a simple class that we'll use to save (when serializing) and load
 	    [DataMember]
 	    public PivotAxis AggregatesPosition { get; set; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization-adomd_1}}
+```VB.NET
 	<DataContract> _
 	Public Class DataProviderSettings
 		<DataMember> _
@@ -70,13 +70,13 @@ So lets create a simple class that we'll use to save (when serializing) and load
 		<DataMember> _
 		Public Property AggregatesPosition() As PivotAxis
 	End Class
-{{endregion}}
+```
 
 The next step is to implement the serializer. When serializing the provider, you have to create an instance of *DataProviderSettings* class and set all of the properties. After that you can serialize the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new __AdomdPivotSerializationHelper__ class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize AdomdDataProvider. Here's an example how to implement your own serializer:        
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization-adomd_2}}
+```C#
 	public abstract class DataProviderSerializer
 	{
 	    public abstract IEnumerable<Type> KnownTypes { get; }
@@ -165,11 +165,11 @@ The next step is to implement the serializer. When serializing the provider, you
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization-adomd_2}}
+```VB.NET
 	Public MustInherit Class DataProviderSerializer
 		Public MustOverride ReadOnly Property KnownTypes() As IEnumerable(Of Type)
 	
@@ -240,13 +240,13 @@ The next step is to implement the serializer. When serializing the provider, you
 			End Get
 		End Property
 	End Class
-{{endregion}}
+```
 
 So the last step is to serialize the provider and deserialize it:        
 
 #### __C#__
 
-{{region radpivotgrid-features-serialization-adomd_3}}
+```C#
 	string lastSerializadProvider;
 	
 	//serializiation
@@ -256,11 +256,11 @@ So the last step is to serialize the provider and deserialize it:
 	//deserialization
 	AdomdProviderSerializer provider = new AdomdProviderSerializer();
 	provider.Deserialize(this.pivot.DataProvider, this.lastSerializedProvider);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-serialization-adomd_3}}
+```VB.NET
 	Dim lastSerializadProvider As String
 	
 	'serializiation'
@@ -270,7 +270,7 @@ So the last step is to serialize the provider and deserialize it:
 	'deserialization'
 	Dim provider As New AdomdProviderSerializer()
 	provider.Deserialize(Me.pivot.DataProvider, Me.lastSerializedProvider)
-{{endregion}}
+```
 
 ## See Also
 

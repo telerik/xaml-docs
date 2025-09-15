@@ -40,7 +40,7 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
 
 #### [XAML] Example 1: Using PersonMentionProvider
 
-{{region radrichtextbox-features-mentions_0}}
+```XAML
 
     <telerik:RadRichTextBox x:Name="radRichTextBox" >
         <telerik:RadRichTextBox.MentionContext>
@@ -61,11 +61,11 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
         </telerik:RadRichTextBox.MentionContext>
     </telerik:RadRichTextBox>
 
-{{endregion}}
+```
 
 #### [C#] Example 1: Using PersonMentionProvider
 
-{{region radrichtextbox-features-mentions_1}}
+```C#
 
     List<PersonMentionItem> personMentionItems = new List<PersonMentionItem>() {
                 new PersonMentionItem() { Name = "Maria Anders", Mail = "manders@somecompany.com", ImageSource = new BitmapImage(new Uri("../../../../Images/manders.png", UriKind.Relative)) },
@@ -79,11 +79,11 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
     personMentionProvider.ItemsSource = personMentionItems;
                 
     this.radRichTextBox.MentionContext.Providers.Add(personMentionProvider);                
-{{endregion}}
+```
 
 #### [VB.NET] Example 1: Using PersonMentionProvider
 
-{{region radrichtextbox-features-mentions_2}}
+```VB.NET
 
     Dim personMentionItems = New List(Of PersonMentionItem)() From {
         New PersonMentionItem() With {.Name = "Maria Anders", .Mail = "manders@somecompany.com", .ImageSource = New BitmapImage(New Uri("../../../../Images/manders.png", UriKind.Relative))},
@@ -96,7 +96,7 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
     personMentionProvider.ItemsSource = personMentionItems
     
     Me.radRichTextBox.MentionContext.Providers.Add(personMentionProvider)
-{{endregion}}
+```
 
 **Figure 2** shows how the result of **Example 1** would look like in RadRichTextBox.
 
@@ -114,7 +114,7 @@ You can implement your own mention provider that enables you to visualize any ob
     
     #### [C#] Example 2: Custom mention item
     
-    {{region radrichtextbox-features-mentions_3}}
+    ```C#
     
         public class OrganizationInfo : INotifyPropertyChanged
         {
@@ -166,11 +166,11 @@ You can implement your own mention provider that enables you to visualize any ob
                 }
             }
         }
-    {{endregion}}
+    ```
     
         #### [VB.NET] Example 2: Custom mention item
     
-        {{region radrichtextbox-features-mentions_4}}
+        ```VB.NET
         
             Public Class OrganizationInfo
                 Inherits INotifyPropertyChanged
@@ -210,7 +210,7 @@ You can implement your own mention provider that enables you to visualize any ob
                     RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
                 End Sub
             End Class
-        {{endregion}}
+        ```
     
 1. Implement a custom mention provider
 
@@ -218,7 +218,7 @@ You can implement your own mention provider that enables you to visualize any ob
 
     #### [C#] Example 3: Custom mention provider
 
-    {{region radrichtextbox-features-mentions_5}}
+    ```C#
             
         public class OrganizationMentionProvider : MentionProviderBase<OrganizationInfo>
         {
@@ -249,12 +249,12 @@ You can implement your own mention provider that enables you to visualize any ob
                 }
             }
         }
-    {{endregion}}
+    ```
             
 
     #### [VB.NET] Example 3: Custom mention provider
 
-    {{region radrichtextbox-features-mentions_6}}
+    ```VB.NET
             
         Public Class OrganizationMentionProvider
             Inherits MentionProviderBase(Of OrganizationInfo)
@@ -277,7 +277,7 @@ You can implement your own mention provider that enables you to visualize any ob
                 End If
             End Sub
         End Class
-    {{endregion}}
+    ```
                 
 1. Implement a data template for the custom mention provider
 
@@ -288,7 +288,7 @@ You can implement your own mention provider that enables you to visualize any ob
         
     #### [C#] Example 4: DataTemplate for the custom mention item
 
-    {{region radrichtextbox-features-mentions_7}}
+    ```C#
     
         string organizationDataTemplateXaml = @" <DataTemplate xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
                                                             xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' 
@@ -302,12 +302,12 @@ You can implement your own mention provider that enables you to visualize any ob
         
         DataTemplate template = (DataTemplate)XamlReader.Load(XmlReader.Create(new StringReader(organizationDataTemplateXaml)));
 
-    {{endregion}}
+    ```
     
     
     #### [VB.NET] Example 4: DataTemplate for the custom mention item
 
-    {{region radrichtextbox-features-mentions_8}}
+    ```VB.NET
     
         Dim organizationDataTemplateXaml As String = " <DataTemplate xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
                                                                 xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' 
@@ -319,7 +319,7 @@ You can implement your own mention provider that enables you to visualize any ob
                                                             </StackPanel>
                                                     </DataTemplate>"
         Dim template As DataTemplate = CType(XamlReader.Load(XmlReader.Create(New StringReader(organizationDataTemplateXaml))), DataTemplate)
-    {{endregion}}
+    ```
     
 1. Register the mention provider with its mention character and the new data template
 
@@ -327,7 +327,7 @@ You can implement your own mention provider that enables you to visualize any ob
     
     #### [C#] Example 5: Add the provider and the data template to the MentionContext
     
-    {{region radrichtextbox-features-mentions_9}}
+    ```C#
     
         OrganizationMentionProvider organizationMentionProvider = new OrganizationMentionProvider();
         organizationMentionProvider.MentionCharacter = '#';
@@ -344,12 +344,12 @@ You can implement your own mention provider that enables you to visualize any ob
         this.radRichTextBox.MentionContext.Providers.Add(organizationMentionProvider);
         
         this.radRichTextBox.MentionContext.Templates.Add(template);  
-    {{endregion}}
+    ```
     
     
     #### [VB.NET] Example 5: Add the provider and the data template to the MentionContext
     
-    {{region radrichtextbox-features-mentions_10}}
+    ```VB.NET
     
         Dim organizationMentionProvider As OrganizationMentionProvider = New OrganizationMentionProvider()
         organizationMentionProvider.MentionCharacter = "#"
@@ -379,7 +379,7 @@ You can implement your own mention provider that enables you to visualize any ob
         organizationMentionProvider.ItemsSource = organizations;
         Me.radRichTextBox.MentionContext.Providers.Add(organizationMentionProvider)
         Me.radRichTextBox.MentionContext.Templates.Add(Template)    
-    {{endregion}}    
+    ```    
     
 #### Figure 4: Custom mentions 
 ![{{ site.framework_name }} RadRichTextBox Custom mentions](images/RadRichTextBox_Mentions_03.gif)
@@ -390,7 +390,7 @@ The mention character is the character that triggers the visibility of the drop-
 
 #### [XAML] Example 6: Changing the mention character
 
-{{region radrichtextbox-features-mentions_11}}
+```XAML
 
     <mentions:PersonMentionProvider MentionCharacter="#">
         <mentions:PersonMentionProvider.ItemsSource>
@@ -399,23 +399,23 @@ The mention character is the character that triggers the visibility of the drop-
             </x:Array>
         </mentions:PersonMentionProvider.ItemsSource>
     </mentions:PersonMentionProvider>
-{{endregion}}
+```
 
 #### [C#] Example 6: Changing the mention character
 
-{{region radrichtextbox-features-mentions_12}}
+```C#
 
     PersonMentionProvider personMentionProvider = new PersonMentionProvider();
     personMentionProvider.MentionCharacter = '#';
-{{endregion}}
+```
 
 #### [VB.NET] Example 6: Changing the mention character
 
-{{region radrichtextbox-features-mentions_13}}
+```VB.NET
 
     Dim personMentionProvider As PersonMentionProvider = New PersonMentionProvider()
     personMentionProvider.MentionCharacter = "#"
-{{endregion}}
+```
 
 >If the mention character applied to a mention provider is already used by another provider, an **InvalidOperationException** is thrown.
 
@@ -425,7 +425,7 @@ You can implement your own logic determining what and how it is being inserted i
 
 #### [C#] Example 7: Custom insert action
 
-{{region radrichtextbox-features-mentions_14}}
+```C#
 
     public class CustomPersonMentionProvider : PersonMentionProvider
     {
@@ -438,11 +438,11 @@ You can implement your own logic determining what and how it is being inserted i
             }
         }
     }
-{{endregion}}
+```
 
 #### [VB.NET] Example 7: Custom insert action
 
-{{region radrichtextbox-features-mentions_15}}
+```VB.NET
 
     Public Class CustomPersonMentionProvider
         Inherits PersonMentionProvider
@@ -454,7 +454,7 @@ You can implement your own logic determining what and how it is being inserted i
             End If
         End Sub
     End Class
-{{endregion}}
+```
 
 ## Customize the Filtering
 
@@ -464,7 +464,7 @@ After typing the mention character in the beginning of a span, the drop-down men
 
 #### [C#] Example 8: Custom filtering
 
-{{region radrichtextbox-features-mentions_16}}
+```C#
 
     public class CustomPersonMentionProvider : PersonMentionProvider
     {
@@ -484,11 +484,11 @@ After typing the mention character in the beginning of a span, the drop-down men
             }
         }
     }
-{{endregion}}
+```
 
 #### [VB.NET] Example 8: Custom filtering
 
-{{region radrichtextbox-features-mentions_17}}
+```VB.NET
 
     Public Class CustomPersonMentionProvider
         Inherits PersonMentionProvider
@@ -503,7 +503,7 @@ After typing the mention character in the beginning of a span, the drop-down men
             End If
         End Function
     End Class
-{{endregion}}
+```
 
 
 ## Using Multiple Mention Providers

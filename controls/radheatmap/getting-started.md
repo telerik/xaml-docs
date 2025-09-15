@@ -41,15 +41,15 @@ You can find the required assemblies for each control from the suite in the {% i
 
 To use the RadHeatMap control you will need to define a model that will describe the data that will be shown.
 
-#### __[C#] Example 1: Defining the model__
-{{region radheatmap-getting-started-0}}
+__Example 1: Defining the model__
+```C#
 	public class TempInfo
 	{
 		public int Year { get; set; }
 		public string Month { get; set; }
 		public double Temperature { get; set; }
 	}
-{{endregion}}
+```
 
 ## Setting up the Control
 
@@ -63,8 +63,8 @@ The __ValuePath__ property contains the name of the property in the custom model
 
 To populate the control with data use its __ItemsSource__ property.
 
-#### __[XAML] Example 2: Defining the heatmap__
-{{region radheatmap-getting-started-1}}
+__Example 2: Defining the heatmap__
+```XAML
 	<telerik:RadHeatMap>
 		<telerik:RadHeatMap.Definition>
 			<telerik:CategoricalDefinition x:Name="categoricalDefinition"
@@ -73,10 +73,10 @@ To populate the control with data use its __ItemsSource__ property.
 										   ValuePath="Temperature" />
 		</telerik:RadHeatMap.Definition>
 	</telerik:RadHeatMap>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Creating the data and setting the ItemsSource__
-{{region radheatmap-getting-started-2}}
+__Example 3: Creating the data and setting the ItemsSource__
+```C#
 	private void PrepareData()
 	{
 		int year = 2018;
@@ -95,7 +95,7 @@ To populate the control with data use its __ItemsSource__ property.
 
 		this.categoricalDefinition.ItemsSource = source;
 	}	
-{{endregion}}
+```
 
 #### __Figure 1: RadHeatMap__
 ![{{ site.framework_name }} RadHeatMap RadHeatMap](images/radheatmap-getting-started-0.png)

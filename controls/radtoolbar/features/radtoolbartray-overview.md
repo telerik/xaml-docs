@@ -19,8 +19,8 @@ The toolbars suite provides you with the `RadToolBarTray` control that allows yo
 
 The following example shows a very basic definition of the `RadToolBarTray` control with two RadToolBars.
 
-#### __[XAML] Example 1: Define the tray in XAML__
-{{region xaml-radtoolbartray-overview-0}}
+__Example 1: Define the tray in XAML__
+```XAML
 	<telerik:RadToolBarTray VerticalAlignment="Center" Width="460">
 		<telerik:RadToolBar>
 			<telerik:RadButton Content="Button 1" />
@@ -32,7 +32,7 @@ The following example shows a very basic definition of the `RadToolBarTray` cont
 			<telerik:RadButton Content="Button 2 " />
 		</telerik:RadToolBar>          
 	</telerik:RadToolBarTray>
-{{endregion}}
+```
 
 #### __Figure 2: RadToolBarTray populated with RadToolBars__
 ![RadToolBarTray populated with RadToolBars](images/radtoolbartray-overview-1.png)
@@ -48,8 +48,8 @@ The following picture shows how the band and band index affect the positions of 
 
 > By default all `RadToolBar` elements hosted in the tray are positioned in the first band (Band=0). The default band index is the based on the collection index of the toolbar plus the current band position.
 
-#### __[XAML] Example 2: Setting Band and BandIndex manually__
-{{region xaml-radtoolbartray-overview-1}}
+__Example 2: Setting Band and BandIndex manually__
+```XAML
 	<telerik:RadToolBarTray>
 		<telerik:RadToolBar BandIndex="1">
 			<telerik:RadButton Content="Button 1" />
@@ -70,7 +70,7 @@ The following picture shows how the band and band index affect the positions of 
 			<telerik:RadButton Content="Button 10 " />
 		</telerik:RadToolBar>
 	</telerik:RadToolBarTray>
-{{endregion}}
+```
 
 #### __Figure 4: RadToolBars with Band and BandIndex set__
 ![RadToolBarTray populated with RadToolBars demonstrating the Band and BandIndex properties](images/radtoolbartray-overview-3.png)
@@ -79,8 +79,8 @@ The following picture shows how the band and band index affect the positions of 
 
 By default, the `RadToolBarTray` will order the toolbars horizontally. Also, the RadToolBar controls will order its items horizontally. To switch the orientation of the tray and the toolbars set the `Orientation` property of `RadToolBarTray` to `Vertical`.
 
-#### __[XAML] Example 3: Setting Orientation__
-{{region xaml-radtoolbartray-overview-2}}
+__Example 3: Setting Orientation__
+```XAML
 	<telerik:RadToolBarTray Orientation="Vertical" VerticalAlignment="Center" Width="460">
 		<telerik:RadToolBar>
 			<telerik:RadButton Content="B1" />
@@ -93,7 +93,7 @@ By default, the `RadToolBarTray` will order the toolbars horizontally. Also, the
 			<telerik:RadButton Content="B6" />
 		</telerik:RadToolBar>           
 	</telerik:RadToolBarTray>
-{{endregion}}
+```
 
 #### __Figure 4: RadToolBarTray with Vertical Orientation__
 ![RadToolBarTray with Vertical Orientation](images/radtoolbartray-overview-4.png)
@@ -102,8 +102,8 @@ By default, the `RadToolBarTray` will order the toolbars horizontally. Also, the
 
 Since the __R1 2020 SP1__ release, the RadToolBarTray supports generating RadToolBars when its ItemsSource property is set. __Examples 4 and 5__ demonstrate how to achieve the same result shown in Example 2 in an MVVM manner.
 
-#### __[C#] Example 4: Sаmple models and viewmodels__
-{{region cs-radtoolbartray-overview-3}}
+__Example 4: Sаmple models and viewmodels__
+```C#
 	public class ToolBarButtonViewModel 
     {
         public string Content { get; set; }
@@ -187,10 +187,8 @@ Since the __R1 2020 SP1__ release, the RadToolBarTray supports generating RadToo
                                         };
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Sаmple models and viewmodels__
-{{region vb-radtoolbartray-overview-3}}
+```
+```VB.NET
 	Public Class ToolBarButtonViewModel
 		Public Property Content() As String
 	End Class
@@ -256,10 +254,10 @@ Since the __R1 2020 SP1__ release, the RadToolBarTray supports generating RadToo
 				}
 		End Function
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Defining the RadToolBarTray in xaml__
-{{region xaml-radtoolbartray-overview-5}}
+__Example 5: Defining the RadToolBarTray in xaml__
+```XAML
 	<Grid>
         <Grid.Resources>
             <DataTemplate DataType="{x:Type local:ToolBarButtonViewModel}">
@@ -280,4 +278,4 @@ Since the __R1 2020 SP1__ release, the RadToolBarTray supports generating RadToo
 
         <telerik:RadToolBarTray ItemsSource="{Binding ToolBarModels}" ItemContainerStyle="{StaticResource ToolBarStyle}" />
     </Grid>
-{{endregion}}
+```

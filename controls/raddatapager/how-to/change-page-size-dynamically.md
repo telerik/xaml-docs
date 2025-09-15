@@ -16,8 +16,8 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
 
 * Define an __IValueConverter__ responsible for adding items in the __RadComboBox__ depending on the number of data items in __RadGridView__:
 
-#### __[C#] Example 1: The IValueConverter responsible for generating the list of page sizes__
-{{region cs-raddatapager-change-page-size-dynamically_0}}
+__Example 1: The IValueConverter responsible for generating the list of page sizes__
+```C#
 
 	public class CountConverter : IValueConverter
     {
@@ -39,10 +39,8 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
             return value;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: The IValueConverter responsible for generating the list of page sizes__
-{{region vb-raddatapager-change-page-size-dynamically_1}}
+```
+```VB.NET
 
 	Public Class CountConverter
 	Implements IValueConverter
@@ -61,12 +59,12 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
 			Return value
 		End Function
 	End Class
-{{endregion}}
+```
 
 * Predefine the template of the __DataPagerPresenter__ control and bind the __ItemsSource__ of the __RadComboBox__ to the __ItemCount__ property of the __RadDataPager__:
 
-#### __[XAML] Example 2: Modify the control template of the DataPagerPresenter__
-{{region raddatapager-change-page-size-dynamically_2}}
+__Example 2: Modify the control template of the DataPagerPresenter__
+```XAML
 
 	<Application.Resources>
         <ResourceDictionary>
@@ -205,12 +203,12 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 * Define the __RadDataPager__ in XAML if you have not done so already:
 
-#### __[XAML] Example 3: Define the RadDataPager__
-{{region raddatapager-change-page-size-dynamically_3}}
+__Example 3: Define the RadDataPager__
+```XAML
 
 	<Grid x:Name="LayoutRoot" >
         <Grid.RowDefinitions>
@@ -221,7 +219,7 @@ So, if you want to use a __RadComboBox__, for example, for changing the size and
         <telerik:RadDataPager Grid.Row="1" Source="{Binding Items, ElementName=grid}" PageSize="10"  
                               IsTotalItemCountFixed="True"  />
     </Grid>
-{{endregion}}
+```
 
 Once you created all the necessary elements, your application should be displayed as follows:
 

@@ -31,17 +31,15 @@ The RadOfficeNavigationBar controls exposes the `OfficeNavigationBarDialogViewMo
 * `IsCompactModeCheckBoxVisible`&mdash;Gets or sets a boolean value indicating whether the CheckBox for switching to Compact mode will be visible.
 * `Items`&mdash;Gets or sets the items displayed in the OfficeNavigationBarDialogListBox.
 
-#### __[C#] Executing the Reset command__
-{{region radofficenavigationbar-navigation-options-0}}
+__Executing the Reset command__
+```C#
     ICommand resetCommand = radOfficeNavigationBar.OfficeNavigationBarDialogViewModel.ResetCommand;
     resetCommand.Execute(null);
-{{endregion}}
-
-#### __[VB.NET] Executing the Reset command__
-{{region radofficenavigationbar-navigation-options-1}}
+```
+```VB.NET
     Dim resetCommand As ICommand = radOfficeNavigationBar.OfficeNavigationBarDialogViewModel.ResetCommand
     resetCommand.Execute(Nothing)
-{{endregion}}
+```
 
 ## See Also
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})

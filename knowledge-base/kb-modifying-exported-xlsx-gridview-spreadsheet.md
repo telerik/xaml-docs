@@ -32,8 +32,8 @@ This article will show you how to add an extra row at the top of the speadsheet 
 
 The first step is to invoke the GridView's **ExportToWorkbook** method, optionally passing a `GridViewDocumentExportOptions` parameter.
 
-#### __[C#]__
-{{region kb-gridview-modifying-exported-xlsx-spreadsheet-0}}
+
+```C#
 	var exportOptions = new GridViewDocumentExportOptions()
 	{
     		ShowColumnFooters = true,
@@ -42,14 +42,14 @@ The first step is to invoke the GridView's **ExportToWorkbook** method, optional
 		ShowGroupHeaderRowAggregates = true
 	};
 	Workbook workbook = MyGridView.ExportToWorkbook(exportOptions);
-{{endregion}}
+```
 
 With the `Workbook` exported, you can now use the features of the Telerik Document Processing Libraries' **RadSpreadProcessing** to modify the document. 
 
 In this example, we are inserting a new row above the exported data to add a title.
 
-#### __[C#]__
-{{region kb-gridview-modifying-exported-xlsx-spreadsheet-1}}
+
+```C#
 	// Step 1. Get the first worksheet
 	Worksheet worksheet = workbook.ActiveWorksheet;
 
@@ -61,12 +61,12 @@ In this example, we are inserting a new row above the exported data to add a tit
 
 	// Step 4. Insert the text "GridView Export" into the selected cell
 	selection.SetValue("GridView Export");
-{{endregion}}
+```
 
 Finally, we can now save it as an xlsx file using the `XlsxFormatProvider`.
 
-#### __[C#]__
-{{region kb-gridview-modifying-exported-xlsx-spreadsheet-2}}
+
+```C#
 	var dialog = new SaveFileDialog
 	{
 	    DefaultExt = "xlsx",
@@ -82,7 +82,7 @@ Finally, we can now save it as an xlsx file using the `XlsxFormatProvider`.
 		new XlsxFormatProvider().Export(workbook, output);
 	    }
 	}
-{{endregion}}
+```
 
 ## Resources
 

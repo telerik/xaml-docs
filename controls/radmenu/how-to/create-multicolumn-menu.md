@@ -16,7 +16,7 @@ We are going to use a __RadMenuGroupItem__ for the dropdown and set an IconTempl
 
 #### __XAML__
 
-{{region xaml-radmenu-how-to-create-multicolumn-menu_0}}
+```XAML
 	<Style x:Key="MultiColumnMenuItemStyle" TargetType="telerik:RadMenuGroupItem">
 	    <Setter Property="ItemsPanel">
 	        <Setter.Value>
@@ -26,13 +26,13 @@ We are going to use a __RadMenuGroupItem__ for the dropdown and set an IconTempl
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 Apply the created style to the __RadMenuGroupItem__ items by setting it to the __ItemContainerStyle__ property of the desired top-level __RadMenuItem__.
 
 #### __XAML__
 
-{{region xaml-radmenu-how-to-create-multicolumn-menu_1}}
+```XAML
 	<telerik:RadMenu>
 	    <telerik:RadMenuItem Header="File" />
 	    <telerik:RadMenuItem Header="Options" ItemContainerStyle="{StaticResource MultiColumnMenuItemStyle}">
@@ -44,7 +44,7 @@ Apply the created style to the __RadMenuGroupItem__ items by setting it to the _
 	        </telerik:RadMenuGroupItem>
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 Here is a snapshot of the result.
 

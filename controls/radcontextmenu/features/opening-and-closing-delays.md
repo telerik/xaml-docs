@@ -16,10 +16,10 @@ Here is an example of a __RadContextMenu__ with a delay before opening a sub men
 
 #### __XAML__
 
-{{region xaml-radcontextmenu-features-opening-and-closing-delays_0}}
+```XAML
 	<telerik:RadMenu VerticalAlignment="Top"
 	                 ShowDelay="0:0:1"
 	                 HideDelay="0:0:1">
 	    ...
 	</telerik:RadMenu>
-{{endregion}}
+```

@@ -25,18 +25,18 @@ You can export the chart to an image using the __Telerik.Windows.Media.Imaging.E
 The following code snippets demonstrate how to use the ExportToImage() method.
 
 #### __XAML__
-{{region radchartview-export-0}}
+```XAML
 	<telerik:RadCartesianChart x:Name="chart" />
-{{endregion}}
+```
 
 #### __C#__
-{{region radchartview-export-1}}
+```C#
 	string filename = "ExportedChart.png"; 
 	using (Stream fileStream = File.Open(filename, FileMode.OpenOrCreate))
 	{
 		Telerik.Windows.Media.Imaging.ExportExtensions.ExportToImage(this.chart, fileStream, new PngBitmapEncoder());
 	}
-{{endregion}}
+```
 
 >tip The ExportToImage() method expects that the UI element which will be exported is __measured and arranged__ - otherwise, an exception will be thrown.
 

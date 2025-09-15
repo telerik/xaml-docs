@@ -16,12 +16,12 @@ The axis labels are automatically generated based on the plotted data and the ax
 
 To hide the axis labels, set the `ShowLabels` property to `False`.
 
-#### __[XAML] Setting ShowLabels__
-{{region radchartview-axes-labels-0}}
+__Setting ShowLabels__
+```XAML
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis ShowLabels="False" />
 	</telerik:RadCartesianChart.VerticalAxis>
-{{endregion}}
+```
 
 __Vertical axis with hidden labels__  
 
@@ -31,12 +31,12 @@ __Vertical axis with hidden labels__
 
 The axis labels are positioned on each tick plotted on the axis. To change this, set the `LabelInterval` property of the associated axis.
 
-#### __[XAML] Setting LabelInterval__
-{{region radchartview-axes-labels-1}}
+__Setting LabelInterval__
+```XAML
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis LabelInterval="2" />
 	</telerik:RadCartesianChart.VerticalAxis>
-{{endregion}}
+```
 
 __Vertical axis with label interval set to 2__  
 
@@ -46,12 +46,12 @@ __Vertical axis with label interval set to 2__
 
 To adjust the string format of the labels, set the `LabelFormat` property.
 
-#### __[XAML] Setting LabelFormat__
-{{region radchartview-axes-labels-2}}
+__Setting LabelFormat__
+```XAML
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis LabelFormat="C" />
 	</telerik:RadCartesianChart.VerticalAxis>
-{{endregion}}
+```
 
 __Vertical axis labels formatted using the currency format C__  
 
@@ -63,12 +63,12 @@ To rotate the axis labels, set the `LabelFitMode` property to `Rotate`. This wil
 
 In order for the `LabelRotationAngle` property to take effect, the `LabelFitMode` should be set to `Rotate`.
 
-#### __[XAML] Setting LabelFitMode to Rotate__
-{{region radchartview-axes-labels-3}}
+__Setting LabelFitMode to Rotate__
+```XAML
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:CategoricalAxis LabelFitMode="Rotate" LabelRotationAngle="-90"/>
 	</telerik:RadCartesianChart.HorizontalAxis>
-{{endregion}}
+```
 
 __Horizontal axis labels rotated by 90 degrees__  
 
@@ -78,12 +78,12 @@ __Horizontal axis labels rotated by 90 degrees__
 
 To arrange the labels on different vertical positions that mimics multi-line layout, set the `LabelFitMode` property to `MultiLine`. 
 
-#### __[XAML] Setting LabelFitMode to MultiLine__
-{{region radchartview-axes-labels-4}}
+__Setting LabelFitMode to MultiLine__
+```XAML
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:CategoricalAxis LabelFitMode="MultiLine" />
 	</telerik:RadCartesianChart.HorizontalAxis>
-{{endregion}}
+```
 
 __Horizontal axis with multi-line labels__  
 
@@ -97,8 +97,8 @@ The axis smart labels feature allows you to avoid situations where the axis has 
 
 The default visual element of the axis labels is `TextBlock`. To customize its appearance, set the axis' `LabelStyle` property. The `TargetType` of the `Style` object should target the `TextBlock` class.
 
-#### __[XAML] Setting LabelStyle__
-{{region radchartview-axes-labels-5}}
+__Setting LabelStyle__
+```XAML
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis>
 			<telerik:LinearAxis.LabelStyle>
@@ -111,7 +111,7 @@ The default visual element of the axis labels is `TextBlock`. To customize its a
 			</telerik:LinearAxis.LabelStyle>
 		</telerik:LinearAxis>
 	</telerik:RadCartesianChart.VerticalAxis>
-{{endregion}}
+```
 
 __Vertical axis with custom label style__  
 
@@ -121,8 +121,8 @@ __Vertical axis with custom label style__
 
 To replace the default visual element of the axis labels, set the axis' `LabelTemplate` property.
 
-#### __[XAML] Setting LabelTemplate__
-{{region radchartview-axes-labels-6}}
+__Setting LabelTemplate__
+```XAML
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis>
 			<telerik:LinearAxis.LabelTemplate>
@@ -134,7 +134,7 @@ To replace the default visual element of the axis labels, set the axis' `LabelTe
 			</telerik:LinearAxis.LabelTemplate>
 		</telerik:LinearAxis>
 	</telerik:RadCartesianChart.VerticalAxis>
-{{endregion}}
+```
 
 __Vertical axis with custom label template__  
 
@@ -144,8 +144,8 @@ __Vertical axis with custom label template__
 
 To replace the default visual element of the axis labels with different elements based on a condition, use the `LabelTemplateSelector` property of the axis. The following example shows how to define a [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=windowsdesktop-6.0) and use it to choose between two different DataTemplates.
 
-#### __[XAML] Defining the view__
-{{region radchartview-axes-labels-7}}
+__Defining the view__
+```XAML
 	<Grid.Resources>
 	   <DataTemplate x:Key="GrayTemplate">
 	       <Border BorderThickness="2"
@@ -184,10 +184,10 @@ To replace the default visual element of the axis labels with different elements
 	        <telerik:LinearAxis Maximum="100"/>
 	    </telerik:RadCartesianChart.VerticalAxis>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
-#### __[XAML] Defining the template selector__
-{{region radchartview-axes-labels-8}}
+__Defining the template selector__
+```XAML
 	public class BinaryTemplateSelector : DataTemplateSelector
 	{
 	    public DataTemplate Template1
@@ -208,7 +208,7 @@ To replace the default visual element of the axis labels with different elements
 	        return tmp;
 	    }
 	}
-{{endregion}}
+```
 
 __Horizontal axis with customized labels and ticks__  
 

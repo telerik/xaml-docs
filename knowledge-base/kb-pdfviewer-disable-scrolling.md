@@ -33,8 +33,8 @@ How to disable scrolling in the [RadPdfViewer]({%slug radpdfviewer-overview%}).
 
 This functionality can be achieved by creating and using a template where the **ScrollBar**'s (both horizontal and vertical) **Visibility** is set to _Collapsed_. Then in the code behind setting all command descriptors related to scrolling to false and handle all the related events. Check the following code snippets:
 
-#### __[XAML]__ Creating a template and setting it to the RadPdfViewer
-{{region kb-pdfviewer-disable-scrolling-0}}
+ Creating a template and setting it to the RadPdfViewer
+```XAML
 
 	<Window.Resources>
         <ControlTemplate x:Key="FixedDocumentViewerBaseTemplate" TargetType="controlViewers:FixedDocumentViewerBase">
@@ -81,10 +81,10 @@ This functionality can be achieved by creating and using a template where the **
 
         <telerik:RadPdfViewer Grid.Row="1" x:Name="pdfViewer" DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}" Style="{StaticResource RadPdfViewerStyle}" />
     </Grid>
-{{endregion}}
+```
 
-#### __[C#]__ Disable commands related to scrolling and handle the related events
-{{region kb-pdfviewer-disable-scrolling-1}}
+ Disable commands related to scrolling and handle the related events
+```C#
 
     public MainWindow()
     {
@@ -111,7 +111,7 @@ This functionality can be achieved by creating and using a template where the **
             e.Handled = true;
         }
     }
-{{endregion}}
+```
 
 ## Notes
 

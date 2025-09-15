@@ -20,7 +20,7 @@ Using the fact that all data items are automatically wrapped inside a __Carousel
 
 #### __XAML__
 
-{{region xaml-carousel-items_0}}
+```XAML
 	<Style TargetType="{x:Type telerik:CarouselItem}">
 	  <Setter Property="Template" >
 	    <Setter.Value>
@@ -57,7 +57,7 @@ Using the fact that all data items are automatically wrapped inside a __Carousel
 	    </Setter.Value>
 	  </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
@@ -67,7 +67,7 @@ The above style will make all carousel items look identical. If you need selecti
 
 #### __XAML__
 
-{{region xaml-carousel-items_1}}
+```XAML
 	<ControlTemplate.Triggers>
 	  <Trigger Property="IsSelected" Value="True" >
 	    <Setter TargetName="CarouselItemMainBorder" Property="Background">
@@ -92,7 +92,7 @@ The above style will make all carousel items look identical. If you need selecti
 	    </Setter>
 	  </Trigger>
 	</ControlTemplate.Triggers>
-{{endregion}}
+```
 
 
 
@@ -102,7 +102,7 @@ Remember the __ContentPresenter__ control that we used in our __CarouselItem__ c
 
 #### __XAML__
 
-{{region xaml-carousel-items_2}}
+```XAML
 	<Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">
 	  <Setter Property="Template">
 	    <Setter.Value>
@@ -131,6 +131,6 @@ Remember the __ContentPresenter__ control that we used in our __CarouselItem__ c
 	    </Setter.Value>
 	  </Setter>
 	</Style>
-{{endregion}}
+```
 
 

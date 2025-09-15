@@ -25,8 +25,8 @@ This is a bug in .NET 8 which is described in the following two Microsoft items:
 
 To work it around, set the static `_ItemsControlDoesNotSupportAutomation` internal field of the `System.Windows.AccessibilitySwitches` class.
 
-#### __[C#]__
-{{region kb-common-net8-automationpeers-issue-0}}
+
+```C#
 	public partial class App : Application
 	{
 		public App()
@@ -36,4 +36,4 @@ To work it around, set the static `_ItemsControlDoesNotSupportAutomation` intern
 			field.SetValue(null, 1);
 		}
 	}
-{{endregion}}
+```

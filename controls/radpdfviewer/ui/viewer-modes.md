@@ -32,7 +32,7 @@ The code of the buttons can be declared as follows:
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region radpdfviewer-viewer-modes_0}}
+```XAML
 	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
 	  <telerik:RadToolBar.Resources>
 	    <converters:FixedDocumentViewerModeConverter x:Key="ModeConverter" />
@@ -53,12 +53,12 @@ The code of the buttons can be declared as follows:
 	</telerik:RadToolBar>
 	
 	<telerik:RadPdfViewer Grid.Row="1" x:Name="pdfViewer" DefaultFormatProviderSettings="ReadAllAtOnce" DocumentSource="/PdfViewerDemo;component/SampleData/test.pdf" />
-{{endregion}}
+```
 {% endif %}
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region radpdfviewer-viewer-modes_1}}
+```XAML
 	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
 	  <telerik:RadToolBar.Resources>
 	    <converters:FixedDocumentViewerModeConverter x:Key="ModeConverter" />
@@ -79,7 +79,7 @@ The code of the buttons can be declared as follows:
 	</telerik:RadToolBar>
 	
 	<telerik:RadPdfViewer Grid.Row="1" x:Name="pdfViewer" DefaultFormatProviderSettings="ReadAllAtOnce" DocumentSource="/PdfViewerDemo;component/SampleData/test.pdf" />
-{{endregion}}
+```
 {% endif %}
 
 Note that the RadToolBar control is bound to the CommandDescriptorss property of the PDF viewer.
@@ -88,10 +88,10 @@ The declarations of the namespaces used in the snippet above are:
 
 #### __XAML__
 
-{{region radpdfviewer-viewer-modes_2}}
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	xmlns:converters="clr-namespace:Telerik.Windows.Documents.Converters;assembly=Telerik.Windows.Controls.FixedDocumentViewers"
-{{endregion}}
+```
 
 
 
@@ -101,9 +101,9 @@ The mode of the viewer is set using the Mode property, e.g.:
 
 #### __C#__
 
-{{region radpdfviewer-viewer-modes_0}}
+```C#
 	  this.pdfViewer.Mode = Telerik.Windows.Documents.Fixed.UI.FixedDocumentViewerMode.TextSelection;
-{{endregion}}
+```
 
 
 

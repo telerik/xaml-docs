@@ -19,8 +19,8 @@ The RadAIPromptButton provides the following properties:
 * `PopupHeight`&mdash;Provides the ability to specify the height of the popup of RadAIPromptButton.
 * `IsPopupOpen`&mdash;Allows you to open/close the popup holding the RadAIPrompt.
 
-#### __[XAML] Creating a RadAIPromptButton__
-{{region radaiprompt-prompt-button-0}}
+__Creating a RadAIPromptButton__
+```XAML
     <telerik:RadAIPromptButton x:Name="aiPromptButton">
     	<telerik:RadAIPromptButton.AIPrompt>
     		<telerik:RadAIPrompt x:Name="aiPrompt" 
@@ -32,7 +32,7 @@ The RadAIPromptButton provides the following properties:
     		</telerik:RadAIPrompt>
     	</telerik:RadAIPromptButton.AIPrompt>
     </telerik:RadAIPromptButton>
-{{endregion}}
+```
 
 __RadAIPromptButton__
 

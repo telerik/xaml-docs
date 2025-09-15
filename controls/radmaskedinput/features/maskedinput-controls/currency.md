@@ -27,8 +27,8 @@ You can find more info [here](http://www.telerik.com/help/wpf/installation-insta
 
 Here is a simple definition of a __RadMaskedCurrencyInput__ control:				
 
-#### __[XAML] Example 1: Define RadMaskedCurrencyInput in XAML__
-{{region xaml-radmaskedinput-features-controls-currency_0}}
+__Example 1: Define RadMaskedCurrencyInput in XAML__
+```XAML
 	<telerik:RadMaskedCurrencyInput Width="200"
 	                                Margin="20 20 20 10"
 	                                Culture="en-US"
@@ -39,7 +39,7 @@ Here is a simple definition of a __RadMaskedCurrencyInput__ control:
 	                                TextMode="PlainText"
 	                                UpdateValueEvent="LostFocus"
 	                                Value="12345.67" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Default Currency](images/radmaskedinput_currencyinput_default.png)
 
@@ -59,8 +59,8 @@ RadMaskedCurrencyInput's __Value__ property is of type __nullable decimal (decim
 
 >important Binding to __object__ is not support and may result in unpredictable behavior.
 
-#### __[XAML] Example 2: Define the view model__
-{{region radmaskedinput-features-controls-currency_1}}
+__Example 2: Define the view model__
+```XAML
 	public class ViewModel : ViewModelBase
 	{
 		private decimal? amount;
@@ -83,17 +83,17 @@ RadMaskedCurrencyInput's __Value__ property is of type __nullable decimal (decim
             }
         }	
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 3: Binding the Value property__
-{{region radmaskedinput-features-controls-currency_2}}
+__Example 3: Binding the Value property__
+```C#
 	<telerik:RadMaskedCurrencyInput Culture="en-US"
 								   InputBehavior="Replace"
 								   Mask="#9.2"
 								   TextMode="PlainText"
 								   UpdateValueEvent="LostFocus"
 								   Value="{Binding Amount,Mode=TwoWay}" />
-{{endregion}}
+```
 
 
 ## FormatString
@@ -105,8 +105,8 @@ Format Strings](http://msdn.microsoft.com/en-us/library/0c899ak8.aspx) to furthe
 
 When __Mask__ property is set the __FormatString__ property will be applied to the __Text__ property of MaskedCurrencyInput control. 
 
-#### __[XAML] Example 4: Setting the FormatString property in Mask scenario__
-{{region radmaskedinput-features-controls-currency_3}}
+__Example 4: Setting the FormatString property in Mask scenario__
+```XAML
 	<telerik:RadMaskedCurrencyInput Culture="en-US" x:Name="currencyInput" Width="200"
 								   EmptyContent="Enter digits"
 								   FormatString="n3"
@@ -124,7 +124,7 @@ When __Mask__ property is set the __FormatString__ property will be applied to t
 			<TextBlock Text="{Binding Value,ElementName=currencyInput}"/>
 		</StackPanel>
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Format String with Mask](images/radmaskedinput_currencyinput_format_string_withMask.png)
 
@@ -132,8 +132,8 @@ When __Mask__ property is set the __FormatString__ property will be applied to t
 
 In __No-Mask__ scenario the __FormatString__ property will be applied to the __Value__ property of MaskedNumericInput control. 
 
-#### __[XAML] Example 5: Setting the FormatString property__
-{{region xaml-radmaskedinput-features-controls-currency_4}}
+__Example 5: Setting the FormatString property__
+```XAML
 	<telerik:RadMaskedCurrencyInput HorizontalAlignment="Center"
 	                                EmptyContent="Enter currency"
 	                                Culture="en-US"
@@ -141,7 +141,7 @@ In __No-Mask__ scenario the __FormatString__ property will be applied to the __V
 	                                UpdateValueEvent="LostFocus"
 	                                SpinMode="PositionAndValue" 
 	                                Value="123456"/>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Format String with No Mask](images/radmaskedinput_currencyinput_format_string.png)
 

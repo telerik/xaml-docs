@@ -33,8 +33,8 @@ How to add additional element inside RadTabbedWindow's header.
 
 To achieve this requirement, you can subscribe to the Loaded event of RadTabbedWindow. Inside the event handler, you can get the StackPanel that holds the header buttons. Then, you can insert new buttons on the panel.
 
-#### __[C#] Example 1: Subscribe to the ContextMenuOpening event__
-    {{region cs-kb-add-additional-element-inside-radtabbedwindows-header-1}}
+__Example 1: Subscribe to the ContextMenuOpening event__
+    ```C#
         private void RadTabbedWindow_Loaded(object sender, RoutedEventArgs e)
 		{
 			var stackWithButtons = this.ChildrenOfType<StackPanel>().FirstOrDefault( x=> x.Name == "HeaderButtons");
@@ -43,4 +43,4 @@ To achieve this requirement, you can subscribe to the Loaded event of RadTabbedW
 				stackWithButtons.Children.Insert(0, new RadButton() { Content = "My Custom Button" });
 			}
 		}
-    {{endregion}}
+    ```

@@ -58,12 +58,12 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 #### __C#__
 
-{{region radpdfviewer-localization_3}}
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	    ResourceManager = RadPdfViewerResources.ResourceManager
 	};
-{{endregion}}
+```
 
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/Localization).
@@ -76,9 +76,9 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 #### __C#__
 
-{{region radpdfviewer-localization_0}}
+```C#
 	            LocalizationManager.Manager = new CustomLocalizationManager();
-{{endregion}}
+```
 
 
 
@@ -89,7 +89,7 @@ What is left in order to fulfil the localization is to override the method __Get
 
 #### __C#__
 
-{{region radpdfviewer-localization_1}}
+```C#
 	    public class CustomLocalizationManager : LocalizationManager
 	    {
 	        public override string GetStringOverride(string key)
@@ -128,7 +128,7 @@ What is left in order to fulfil the localization is to override the method __Get
 	            return base.GetStringOverride(key);
 	        }
 	    }
-{{endregion}}
+```
 
 
 
@@ -137,7 +137,7 @@ Of course, if you don't want to hard-code your translation inside the source cod
 
 #### __C#__
 
-{{region radpdfviewer-localization_2}}
+```C#
 	    public class CustomLocalizationManager : LocalizationManager
 	    {
 	        public override string GetStringOverride(string key)
@@ -152,4 +152,4 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	            return base.GetStringOverride(key);
 	        }
 	    }
-{{endregion}}
+```

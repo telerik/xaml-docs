@@ -26,7 +26,7 @@ The example will represent a __ListBox and RadGridView__. The ListBox will list 
 Here are the definitions of the controls.
 
 #### __XAML__
-{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_0}}
+```XAML
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="150"/>
@@ -36,12 +36,12 @@ Here are the definitions of the controls.
 	    <telerik:RadGridView Grid.Column="1"
 	                 Margin="10,0,0,0" />
 	</Grid>
-{{endregion}}
+```
 
 Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via Element Binding.
 
 #### __XAML__
-{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_1}}
+```XAML
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="150"/>
@@ -52,13 +52,13 @@ Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via 
 	                 Grid.Column="1" 
 	                 Margin="10,0,0,0" />
 	</Grid>
-{{endregion}}
+```
 
 After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox. It should include a __CheckBox__ and you can bind its __IsChecked__ property to __column.IsVisible__ property using __TwoWay__ Data Binding.
 
 #### __XAML__
 
-{{region xaml-radgridview-how-to-show-hide-columns-outside-of-the-radgridview_2}}
+```XAML
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="150"/>
@@ -76,7 +76,7 @@ After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox.
 	                 Grid.Column="1" 
 	                 Margin="10,0,0,0" />
 	</Grid>
-{{endregion}}
+```
 
 Provide RadGridView with an appropriate data source and run your application. The result should be similar to this snapshot:
 ![Telerik {{ site.framework_name }} DataGrid Telerik {{ site.framework_name }} DataGrid how to column chooser 2](images/RadGridView_radgridview_how_to_column_chooser_2.png)

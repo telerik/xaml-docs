@@ -13,9 +13,9 @@ position: 5
 If you want to allow the user to edit and format the content of __RadRichTextBox__, you have to create UI and use the API exposed by __RadRichTextBox__. The __API__ exposes methods (like __ToggleBold()__, __ToggleItalic()__ etc.) that modify the text in the control when called. **Example 1** shows a sample code that creates UI for making the text bold, italic and underlined.
         
 
-#### __[XAML] Example 1: Creating Formatting UI__
+__Example 1: Creating Formatting UI__
 
-{{region radrichtextbox-getting-started-formatting-via-a-sample-ui_0}}
+```XAML
     <StackPanel Orientation="Horizontal">
         <ToggleButton Content="B"
         x:Name="BoldButton"
@@ -27,15 +27,15 @@ If you want to allow the user to edit and format the content of __RadRichTextBox
         x:Name="UnderlineButton"
         Click="UnderlineButton_Click" />
     </StackPanel>
-{{endregion}}
+```
 
 
 
 **Example 2** demonstrates how you can call the corresponding API methods from code-behind.
 
-#### __[C#] Example 2: Using the Formatting API in Code-Behind__
+__Example 2: Using the Formatting API in Code-Behind__
 
-{{region radrichtextbox-getting-started-formatting-via-a-sample-ui_1}}
+```C#
     private void BoldButton_Click(object sender, RoutedEventArgs e)
     {
         this.radRichTextBox.ToggleBold();
@@ -51,13 +51,8 @@ If you want to allow the user to edit and format the content of __RadRichTextBox
         this.radRichTextBox.ToggleUnderline();
         this.radRichTextBox.Focus(); //return focus to the control
     }
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 2: Using the Formatting API in Code-Behind__
-
-{{region radrichtextbox-getting-started-formatting-via-a-sample-ui_2}}
+```
+```VB.NET
 	Private Sub BoldButton_Click(sender As Object, e As RoutedEventArgs)
 	    Me.radRichTextBox.ToggleBold()
 	    Me.radRichTextBox.Focus()
@@ -70,16 +65,16 @@ If you want to allow the user to edit and format the content of __RadRichTextBox
 	    Me.radRichTextBox.ToggleUnderline()
 	    Me.radRichTextBox.Focus()
 	End Sub
-{{endregion}}
+```
 
 
 
 The UI should also respond when the caret is on a document position where the text is modified. For example, the __BoldButton__ should be toggled if the caret is on bold text. This can be done by handling the __ToggleStateChanged__ event as demonstrated in **Example 3**. 
         
 
-#### __[C#] Example 3: Changing the Toggle State of a Button Depending on the Caret Position__
+__Example 3: Changing the Toggle State of a Button Depending on the Caret Position__
 
-{{region radrichtextbox-getting-started-formatting-via-a-sample-ui_3}}
+```C#
 
 	    InitializeComponent();
 	    this.radRichTextBox.Commands.ToggleBoldCommand.ToggleStateChanged += new EventHandler<Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs<bool>>(ToggleCommand_ToggleStateChanged);
@@ -95,13 +90,8 @@ The UI should also respond when the caret is on a document position where the te
 	        button.IsChecked = e.NewValue;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 3: Changing the Toggle State of a Button Depending on the Caret Position__
-
-{{region radrichtextbox-getting-started-formatting-via-a-sample-ui_4}}
+```
+```VB.NET
     Public Sub New()
         InitializeComponent()
 
@@ -113,7 +103,7 @@ The UI should also respond when the caret is on a document position where the te
     Private Sub ToggleBoldCommand_ToggleStateChanged(sender As Object, e As Telerik.Windows.Documents.RichTextBoxCommands.StylePropertyChangedEventArgs(Of Boolean))
         BoldButton.IsChecked = e.NewValue
     End Sub
-{{endregion}}
+```
 
 
 

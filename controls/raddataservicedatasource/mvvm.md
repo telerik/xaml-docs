@@ -20,9 +20,9 @@ The __QueryableDataServiceCollectionView&lt;T&gt;__ class has the same API as th
 
 **Example 1** demonstrates how to set up your viewmodel to use the QueryableDataServiceCollectionView class.
 
-#### __[C#] Example 1: Creating the viewmodel class__
+__Example 1: Creating the viewmodel class__
 
-{{region cs-raddataservicedatasource-mvvm_0}}
+```C#
 
 	public class MainViewModel : ViewModelBase
     {
@@ -51,11 +51,8 @@ The __QueryableDataServiceCollectionView&lt;T&gt;__ class has the same API as th
 			}
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the viewmodel class__
-
-{{region vb-raddataservicedatasource-mvvm_1}}
+```
+```VB.NET
 
 	Public Class MainViewModel
 		Inherits ViewModelBase
@@ -83,13 +80,13 @@ The __QueryableDataServiceCollectionView&lt;T&gt;__ class has the same API as th
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 You can then set up your data controls in the same way you would if you were using the RadDataServiceDataSource control.
 
-#### __[XAML] Example 2: Binding the data controls__
+__Example 2: Binding the data controls__
 
-{{region xaml-raddataservicedatasource-mvvm_2}}
+```XAML
 	
 	<UserControl>
 		<UserControl.DataContext>
@@ -104,7 +101,7 @@ You can then set up your data controls in the same way you would if you were usi
 			<telerik:RadDataPager Grid.Row="1" Source="{Binding OrdersView}" PageSize="20" />
 		</Grid>
 	</UserControl>
-{{endregion}}
+```
 
 ## See Also
 * [ViewModelBase class]({%slug common-viewmodelbase-class%})

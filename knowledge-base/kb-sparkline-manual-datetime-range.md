@@ -32,9 +32,9 @@ How to set the minimum (MinXValue) and maximum (MaxXValue) when DateTime values 
 
 To define the range manually, set the __AutoRange__ property of RadSparkline to False. Then set the __MinXValue__ and __MaxXValue__ properties. To make this work with DateTime values, you will need to use the __Ticks of the DateTime__ objects used as minimum and maximum of the range.
 
-#### __[C#]__
-{{region kb-sparkline-manual-datetime-range-0}}
+
+```C#
 	this.radSparkline.AutoRange = false;
 	this.radSparkline.MinXValue = minDateTime.Ticks;
 	this.radSparkline.MaxXValue = maxDateTime.Ticks;
-{{endregion}}
+```

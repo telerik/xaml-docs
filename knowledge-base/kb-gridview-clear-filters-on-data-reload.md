@@ -32,10 +32,10 @@ How to remove the column filter when the ItemsSource of RadGridView is reset.
 
 By default the column filter is not cleared when the ItemsSource of RadGridView gets updated. To do this, manually clear the ColumnFilterDescriptor of the GridViewDataColumn objects.
 
-#### __[C#]__
-{{region kb-gridview-clear-filters-on-data-reload-0}}
+
+```C#
 	foreach (var column in gridView.Columns.OfType<GridViewDataColumn>())
 	{
 		column.ColumnFilterDescriptor.Clear();
 	}
-{{endregion}}
+```

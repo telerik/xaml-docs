@@ -22,8 +22,8 @@ By default the currently visible content of RadFluidContentControl is automatica
 
 The next example works with the following content sizes - SmallContent (200px X 200px), NormalContent (400px X 400px) and LargeContent (600px X 600px).
 
-#### __[XAML] Example 1: Automatic Content Changing__  
-{{region xaml-radtileview-fluid-content-control_0}}
+__Example 1: Automatic Content Changing__  
+```XAML
 	<telerik:RadFluidContentControl NormalToSmallThreshold="400 400" NormalToLargeThreshold="600 600">
 		<telerik:RadFluidContentControl.SmallContent>
 			<Border Background="LightBlue" Width="200" Height="200">
@@ -41,7 +41,7 @@ The next example works with the following content sizes - SmallContent (200px X 
 			</Border>
 		</telerik:RadFluidContentControl.LargeContent>
 	</telerik:RadFluidContentControl>
-{{endregion}}
+```
 
 The following list describes how to threshold properties work.
 
@@ -57,8 +57,8 @@ To change the currently visible content manually, set the `ContentChangeMode` pr
 
 The following example shows how to use the `TileStateChanged` event of RadTileView in order to  update the `State` property of RadFluidContentControl.
 
-#### __[XAML] Example 2 (part 1): Manual Content Changing__
-{{region radtileview-fluid-content-control_2}}
+__Example 2 (part 1): Manual Content Changing__
+```XAML
 	<telerik:RadTileView TileStateChanged="RadTileView_TileStateChanged" Width="600" Height="400">
 		<telerik:RadTileViewItem Header="Item A">
 			<telerik:RadFluidContentControl ContentChangeMode="Manual">
@@ -102,10 +102,10 @@ The following example shows how to use the `TileStateChanged` event of RadTileVi
 			</telerik:RadFluidContentControl>
 		</telerik:RadTileViewItem>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
-#### __[C#] Example 2 (part 2): Handling the TileStateChanged event__  
-{{region cs-radtileview-fluid-content-control_3}}
+__Example 2 (part 2): Handling the TileStateChanged event__  
+```C#
 	private void RadTileView_TileStateChanged(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	{
 		var item = (RadTileViewItem)e.Source;
@@ -123,10 +123,8 @@ The following example shows how to use the `TileStateChanged` event of RadTileVi
 				break;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2 (part 2): Handling the TileStateChanged event__  
-{{region vb-radtileview-fluid-content-control_3}}
+```
+```VB.NET
 	Private Sub RadTileView_TileStateChanged(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 		Dim item = CType(e.Source, RadTileViewItem)
 		Dim fluidControl = CType(item.Content, RadFluidContentControl)
@@ -140,7 +138,7 @@ The following example shows how to use the `TileStateChanged` event of RadTileVi
 				fluidControl.State = FluidContentControlState.Normal
 		End Select
 	End Sub
-{{endregion}}
+```
 
 ![Fluid Control Large and Small Content](images/radtileview-fluid-content-control-0.png)  
 ![Fluid Control Normal Content](images/radtileview-fluid-content-control-1.png)

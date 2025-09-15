@@ -43,17 +43,14 @@ Here is a full list of the available functions:
 
 The same can be achieved via code-behind as well by using the code from **Example 1**.
 
-#### __[C#] Example 1: Creating the expression in code-behind__
+__Example 1: Creating the expression in code-behind__
 
-{{region cs-radexpressioneditor-expressions-text-functions-1}}
+```C#
     this.ExpressionEditor.ExpressionText = @"Name.EndsWith(""l"")";
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the expression in code-behind__
-
-{{region vb-radexpressioneditor-expressions-text-functions-1}}
+```
+```VB.NET
     Me.ExpressionEditor.ExpressionText = "Name.EndsWith(""l"")"
-{{endregion}}
+```
 
 ## See Also
 

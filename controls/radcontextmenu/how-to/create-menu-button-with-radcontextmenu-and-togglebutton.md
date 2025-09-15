@@ -20,7 +20,7 @@ Here is the final code snippet.
 
 #### __XAML__
 
-{{region xaml-radcontextmenu-how-to-create-menu-button-with-radcontextmenu-and-togglebutton_0}}
+```XAML
 	<ToggleButton Content="Click me"
 	              HorizontalAlignment="Left"
 	              IsChecked="{Binding IsOpen, ElementName=radContextMenu, Mode=TwoWay}">
@@ -32,7 +32,7 @@ Here is the final code snippet.
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</ToggleButton>
-{{endregion}}
+```
 
 The things you have to make attention to here are: how the __RadContextMenu__ is attached to the __ToggleButton__ and the __ElementBinding__ applied to the __ToggleButton's__ __IsChecked__ property.
 

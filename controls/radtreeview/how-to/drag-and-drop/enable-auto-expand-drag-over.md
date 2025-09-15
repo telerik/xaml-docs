@@ -18,35 +18,35 @@ __RadTreeView__ offers you the ability to automatically expand a treeview node w
 The __RadTreeView__ exposes a property __DropExpandDelay__, which sets the delay for the expand behavior. The property is of type __TimeSpan__. Here is a sample code showing you how to set it:		
 
 #### __C#__
-{{region radtreeview-how-to-enable-auto-expand-drag-over-0}}
+```C#
 	radTreeView.DropExpandDelay = TimeSpan.FromSeconds(5);
-{{endregion}}
+```
 
 #### __VB.NET__	
-{{region radtreeview-how-to-enable-auto-expand-drag-over-1}}
+```VB.NET
 	radTreeView.DropExpandDelay = TimeSpan.FromSeconds(5)
-{{endregion}}
+```
 
 ## Disable Auto Expand on DragOver
 
 The __RadTreeView__ doesn't actually allow you to disable the auto-expand feature, however you can set the value of the __DropExpandDelay__ property to represent a long period of time. This way your users won't trigger the auto-expand at all while dragging over an item. For instance you can set the __DropExpandDelay__ to an hour:		
 
 #### __XAML__	
-{{region radtreeview-how-to-enable-auto-expand-drag-over-2}}
+```XAML
 	<telerik:RadTreeView IsDragDropEnabled="True" DropExpandDelay="1:0:0"/>
-{{endregion}}
+```
 
 You can also set the value from code-behind:
 	
 #### __C#__
-{{region radtreeview-how-to-enable-auto-expand-drag-over-3}}
+```C#
 	radTreeView.DropExpandDelay = TimeSpan.FromMinutes(60);		
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radtreeview-how-to-enable-auto-expand-drag-over-4}}
+```VB.NET
 	radTreeView.DropExpandDelay = TimeSpan.FromMinutes(60)
-{{endregion}}
+```
 
 ## See Also
  * [Drag and Drop]({%slug radtreeview-features-drag-and-drop%})

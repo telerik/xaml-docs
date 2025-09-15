@@ -36,21 +36,21 @@ For example, you can change the appearance of a __BarSeries__ in the following w
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-chart-series_0}}
+```C#
 	BarSeriesDefinition barDefinition = new BarSeriesDefinition();
 	barDefinition.Appearance.Fill = new SolidColorBrush( Colors.Orange );
 	this.radChart.DefaultSeriesDefinition = barDefinition;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-chart-series_1}}
+```VB.NET
 	Dim barDefinition As New BarSeriesDefinition()
 	barDefinition.Appearance.Fill = New SolidColorBrush(Colors.Orange)
 	Me.radChart.DefaultSeriesDefinition = barDefinition
-{{endregion}}
+```
 
 
 
@@ -71,16 +71,16 @@ The second way is to define a style and set it through the __SeriesStyles__ comp
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_2}}
+```XAML
 	<Style x:Key="SelfDrawingSeriesStyle" TargetType="telerik:SelfDrawingSeries" />
-{{endregion}}
+```
 
 The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyle__. The __BorderLineStyle__ is __obligatory__, as it defines the main chart contour. The __BackgroundStyle must be__ set when your chart represents an area. Here is an example:
 
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_3}}
+```XAML
 	<Style x:Key="SplineAreaStyle" TargetType="telerik:SelfDrawingSeries">
 	    <Setter Property="BorderLineStyle">
 	        <Setter.Value>
@@ -99,23 +99,23 @@ The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyl
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-chart-series_4}}
+```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = this.Resources[ "SplineAreaStyle" ] as Style;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-chart-series_5}}
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = TryCast(Me.Resources("SplineAreaStyle"), Style)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_02.png)
 
@@ -127,24 +127,24 @@ Here is an example:
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_6}}
+```XAML
 	<Style x:Key="BarStyle" TargetType="Shape">
 	    <Setter Property="Fill" Value="Orange" />
 	</Style>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-chart-series_7}}
+```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = this.Resources[ "BarStyle" ] as Style;
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-chart-series_8}}
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = TryCast(Me.Resources("BarStyle"), Style)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_03.png)
 
@@ -169,14 +169,14 @@ The __PaletteBrushes__ is read-only and allows you to specify a set of brushes t
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_9}}
+```XAML
 	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
 	    <telerik:RadChart.PaletteBrushes>
 	        <SolidColorBrush Color="Green" />
 	        <SolidColorBrush Color="Orange" />
 	    </telerik:RadChart.PaletteBrushes>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -186,7 +186,7 @@ or
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_10}}
+```XAML
 	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -201,7 +201,7 @@ or
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_04.png)
 
@@ -211,7 +211,7 @@ There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartAr
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_11}}
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  VerticalAlignment="Top"
 	                  PaletteBrushesRepeat="True">
@@ -220,7 +220,7 @@ There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartAr
 	        <SolidColorBrush Color="Orange" />
 	    </telerik:RadChart.PaletteBrushes>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -228,7 +228,7 @@ or
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_12}}
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  VerticalAlignment="Top"
 	                  PaletteBrushesRepeat="True">
@@ -245,7 +245,7 @@ or
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_05.png)
 
@@ -265,7 +265,7 @@ Here is an example:
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_13}}
+```XAML
 	<Style x:Key="MyDoubleLineStyle" TargetType="telerik:Line">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -295,7 +295,7 @@ Here is an example:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
@@ -305,25 +305,25 @@ Here is an example:
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-chart-series_14}}
+```C#
 	RadChart1.DefaultSeriesDefinition = line;
 	line.Appearance.Stroke = new SolidColorBrush(System.Windows.Media.Colors.Blue);
 	line.Appearance.Fill = new SolidColorBrush(System.Windows.Media.Colors.Blue);
 	line.Appearance.StrokeThickness = 1;
 	line.ItemStyle = this.Resources["MyDoubleLineStyle"] as Style;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-chart-series_15}}
+```VB.NET
 	RadChart1.DefaultSeriesDefinition = line
 	line.Appearance.Stroke = New SolidColorBrush(System.Windows.Media.Colors.Blue)
 	line.Appearance.Fill = New SolidColorBrush(System.Windows.Media.Colors.Blue)
 	line.Appearance.StrokeThickness = 1
 	line.ItemStyle = TryCast(Me.Resources("MyDoubleLineStyle"), Style)
-{{endregion}}
+```
 
     
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_06.PNG)

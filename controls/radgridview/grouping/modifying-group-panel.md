@@ -22,9 +22,9 @@ In the following example the group panel background is set to YellowGreen.
 
 #### __XAML__
 
-{{region xaml-gridview-modifying-group-panel_0}}
+```XAML
 	<telerik:RadGridView GroupPanelBackground="Coral" />
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Grouping ModifyingGroupPanel 010](images/RadGridView_Grouping_ModifyingGroupPanel_010.png)
 
@@ -34,9 +34,9 @@ Similarly to group panel's background you may also change the group panel's fore
 
 #### __XAML__
 
-{{region xaml-gridview-modifying-group-panel_1}}
+```XAML
 	<telerik:RadGridView GroupPanelBackground="Coral" GroupPanelForeground="AntiqueWhite" />
-{{endregion}}
+```
 
 And the result is:
 

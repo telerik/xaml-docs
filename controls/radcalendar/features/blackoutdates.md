@@ -20,15 +20,15 @@ The purpose of the following tutorial is to show how to disable certain dates in
 
 #### __C#__
 
-{{region cs-radcalendar-features-blackoutdates_0}}
+```C#
 	public ObservableCollection<DateTime> BlackoutDates { get; set; }
-{{endregion}}
+```
 
 * Populate the property with some sample data:
 
 #### __C#__
 
-{{region cs-radcalendar-features-blackoutdates_1}}
+```C#
 	public MyViewModel()
 	{
 		this.BlackoutDates = new ObservableCollection<DateTime>()
@@ -49,15 +49,15 @@ The purpose of the following tutorial is to show how to disable certain dates in
 			new DateTime(2012, 8, 26),
 	    };
 	}
-{{endregion}}
+```
 
 * Bind the collection to the BlackoutDates property of the Calendar control:
 
 #### __XAML__
 
-{{region xaml-radcalendar-features-blackoutdates_0}}
+```XAML
 	<telerik:RadCalendar BlackoutDates="{Binding BlackoutDates}"/>
-{{endregion}}
+```
 
 The end result is:
 

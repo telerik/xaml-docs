@@ -18,9 +18,9 @@ In the following example the only content of the __RadBusyIndicator__ control is
 
 The first thing you have to do is to specify that you want your indicator to be determined. You do this by setting its __IsIndetermined__ boolean property to __False__.
 
-#### __[XAML] Setting IsIndeterminate__
+__Setting IsIndeterminate__
 
-{{region xaml-radbusyindicator-features-report-progress-value_0}}
+```XAML
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator" 
 	                          IsIndeterminate="False" 
 	                          ProgressValue="{Binding ProgressValue}">
@@ -30,7 +30,7 @@ The first thing you have to do is to specify that you want your indicator to be 
 	                Click="showIndicatorButton_Click" />
 	    </Grid>
 	</telerik:RadBusyIndicator>
-{{endregion}}
+```
 
 Notice that you have also defined the __ProgressValue__ property. For the purpose of this example, by using data binding you have bound it to a property named in the same way located in the code-behind. Through this binding you will be changing this property to report any shifts in the __RadBusyIndicator's__ progress value. 
 
@@ -56,9 +56,9 @@ In the code behind you have to:
 >* __System.ComponentModel__
 >* __System.Windows.Threading__
 
-#### __[C#] ProgressDetermination class implementation__
+__ProgressDetermination class implementation__
 
-{{region cs-radbusyindicator-features-report-progress-value_1}}
+```C#
 	public partial class ProgressDetermination : UserControl, INotifyPropertyChanged
 	{
 	    private int progressValue;
@@ -103,11 +103,11 @@ In the code behind you have to:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
-#### __[VB] ProgressDetermination class implementation__
+__ProgressDetermination class implementation__
 
-{{region vb-radbusyindicator-features-report-progress-value_2}}
+```VB
 	Public Class ProgressDetermination
 		Implements INotifyPropertyChanged
 	
@@ -149,7 +149,7 @@ In the code behind you have to:
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Here is the final result:
 

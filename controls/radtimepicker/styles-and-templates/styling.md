@@ -18,7 +18,7 @@ In the next example you can see two custom toggle buttons styles and how TimePic
 
 #### __XAML__
 
-{{region xaml-radtimepicker-styling_0}}
+```XAML
 	<Style x:Key="TimePickerToggleButtonStyle" TargetType="ToggleButton">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -113,12 +113,12 @@ In the next example you can see two custom toggle buttons styles and how TimePic
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 And here you can see how to set TimePicker IconButtonStyle:
 
 #### __XAML__
 
-{{region xaml-radtimepicker-styling_1}}
+```XAML
 	<telerik:RadTimePicker />
-{{endregion}}
+```

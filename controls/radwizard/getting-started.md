@@ -40,46 +40,42 @@ You can find the required assemblies for each control from the suite in the {% i
 
 You can add __RadWizard__ in XAML or in code. You can also add the control by dragging it from the {% if site.framework_name == 'WPF' %}[Toolbox]({%slug installation-adding-to-vs-2015-toolbox-wpf%}){% else %}[Toolbox]({%slug installation-adding-to-vs-2015-toolbox-sl%}){% endif %}. 
 
-#### __[XAML] Example 1: Adding a RadWizard in XAML__
-{{region xaml-radwizard-getting-started-2}}
+__Example 1: Adding a RadWizard in XAML__
+```XAML
 	 <telerik:RadWizard x:Name="wizard" />
-{{endregion}}
+```
 
 >In order to use __RadWizard__ you should define the following namespace:
 __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__
 
-#### __[C#] Example 2: Adding a RadWizard in code__
-{{region cs-radwizard-getting-started-0}}
+__Example 2: Adding a RadWizard in code__
+```C#
 	 RadWizard wizard = new RadWizard();
-{{endregion}}
-
-#### __[VB.NET] Example 2: Adding a RadWizard in code__
-{{region vb-radwizard-getting-started-1}}
+```
+```VB.NET
 	Private wizard As RadWizard = New RadWizard()
-{{endregion}}
+```
  
 ## Adding pages to RadWizard
 
  To add pages to __RadWizard__ you can use its __WizardPages__ collection, which consists of [__WizardPage__]({%slug wizard-pages%}) elements. Here is an example of defining a page in code and in xaml: 
 
-#### __[XAML] Example 3: Adding a WizardPage in XAML__
-{{region xaml-radwizard-getting-started-5}}
+__Example 3: Adding a WizardPage in XAML__
+```XAML
 	<telerik:RadWizard x:Name="radWizard" >
 		<telerik:RadWizard.WizardPages>
 			<telerik:WizardPage Content="My Wizard Page Content" />
 		</telerik:RadWizard.WizardPages>			
 	</telerik:RadWizard>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Adding WizardPages in code__
-{{region cs-radwizard-getting-started-3}}
+__Example 4: Adding WizardPages in code__
+```C#
 	 wizard.WizardPages.Add(new WizardPage() { Content = "My Wizard Page Content" });
-{{endregion}}
-
-#### __[VB.NET] Example 4: Adding WizardPages in code__
-{{region vb-radwizard-getting-started-4}}
+```
+```VB.NET
 	 wizard.WizardPages.Add(New WizardPage() With {.Content ="My Wizard Page Content"})
-{{endregion}}
+```
 
 #### __Figure 1: RadWizard with WizardPage__
 ![{{ site.framework_name }} RadWizard RadWizard with WizardPage](images/GettingStarted-WizardPage.png)
@@ -102,8 +98,8 @@ To change the theme, you can follow the steps below:
 
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 5: Merge the ResourceDictionaries__  
-{{region radtreeview-getting-started_08}}
+__Example 5: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -113,7 +109,7 @@ __Example 5__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 2__ shows __RadWizard__ with the **Windows8** theme applied.
 	

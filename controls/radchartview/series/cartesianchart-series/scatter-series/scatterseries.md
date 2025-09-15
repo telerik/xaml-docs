@@ -14,7 +14,7 @@ RadChartView provides a group of scatter series that can be plotted on two linea
 
 #### __XAML__
 
-{{region radchart-series-scatterseries_0}}
+```XAML
 	<telerik:RadCartesianChart>
 	   <telerik:RadCartesianChart.HorizontalAxis>
 	      <telerik:LinearAxis/>
@@ -40,7 +40,7 @@ RadChartView provides a group of scatter series that can be plotted on two linea
 	      </telerik:ScatterPointSeries.DataPoints>
 	   </telerik:ScatterPointSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 All scatter series have __XValueBinding__ and __YValueBinding__  properties which work in the same way as the [CategoryBinding and ValueBinding]({%slug radchartview-series-databinding%}) properties of the CategoricalAxis.
         

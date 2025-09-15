@@ -17,24 +17,24 @@ The selection feature of RadCardView allows you to select cards by clicking onto
 
 Selecting an item updates the __SelectedItem__ property of RadCardView. The property can be used to control the selection in code. The __SelectedItem__ holds a reference to an item from the __ItemsSource__ of the control.
 
-#### __[C#] Example 1: Setting SelectedItem in code__
-{{region cs-radcardview-features-selection-0}}
+__Example 1: Setting SelectedItem in code__
+```C#
 	 var itemsSource = (ObservableCollection<MyDataItem>)this.cardView.ItemsSource;
 	 var firstItem = itemsSource[0];
 	 this.cardView.SelectedItem = firstItem;
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Data binding the SelectedItem property__
-{{region xaml-radcardview-features-selection-1}}
+__Example 2: Data binding the SelectedItem property__
+```XAML
 	  <telerik:RadCardView SelectedItem="{Binding MySelectedItemProperty, Mode=TwoWay}" />
-{{endregion}}
+```
 
 To disable the user selection from the UI, set the __CanUserSelect__ property of RadCardView to __False__. 
 
-#### __[XAML] Example 3: Disabling user selection__
-{{region xaml-radcardview-features-selection-2}}
+__Example 3: Disabling user selection__
+```XAML
 	<telerik:RadCardView CanUserSelect="False" />
-{{endregion}}
+```
 
 Changing the selected item fires the __SelectionChanged__ event. Read more in the [Events]({%slug radcardview-events%}) article.
 
@@ -46,10 +46,10 @@ If the underlying ItemsSource for your RadCardView control inherits from the **I
 
 If you want to disable this functionality, you can set the **IsSynchronizedWithCurrentItem** property of the control to **False**.
 
-#### __[XAML] Example 4: Disable synchronization between CurrentItem and SelectedItem__
-{{region xaml-radcardview-features-selection-3}}
+__Example 4: Disable synchronization between CurrentItem and SelectedItem__
+```XAML
 	<telerik:RadCardView IsSynchronizedWithCurrentItem="False" />
-{{endregion}}
+```
 
 ## See Also  
 * [Getting Started]({%slug radcardview-getting-started%})

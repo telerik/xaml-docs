@@ -22,45 +22,39 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
 
 * As of __Q2 2014 SP__ release we introduced the option to turn off the generating of the automation peers through the new global __AutomationMode__ property of the __AutomationManager__. You can check the [UI Automation Support]({%slug common-ui-automation%}) article for more information.
 
-    #### __[C#] Example 1: Setting AutomationMode__
+    __Example 1: Setting AutomationMode__
 
-    {{region cs-radpropertygrid-performance_0}}
+    ```C#
         public App()
         {
             AutomationManager.AutomationMode = AutomationMode.Disabled;
             this.InitializeComponent();
         }
-    {{endregion}}
-
-    #### __[VB.NET] Example 2: Setting AutomationMode__
-
-    {{region vb-radpropertygrid-performance_1}}
+    ```
+```VB.NET
 		Public Sub New()
 			AutomationManager.AutomationMode = AutomationMode.Disabled
 			Me.InitializeComponent()
 		End Sub
-    {{endregion}}
+    ```
 
 * Another optimization would be to __disable the Touch Support__ via the __TouchManager__. You can refer to the [Touch Support]({%slug touch-support%}) article for more information.
 
-    #### __[C#] Example 2: Disabling touch support__
+    __Example 2: Disabling touch support__
 
-    {{region cs-radpropertygrid-performance_1}}
+    ```C#
         public App()
         {
             TouchManager.IsEnabled = false;
             this.InitializeComponent();
         }
-    {{endregion}}
-
-    #### __[VB.NET] Example 2: Disabling touch support__
-
-    {{region vb-radpropertygrid-performance_1}}
+    ```
+```VB.NET
 		Public Sub New()
 			TouchManager.IsEnabled = False
 			Me.InitializeComponent()
 		End Sub
-    {{endregion}}
+    ```
 
 * As of __Q1 2012__ release we have introduced the option to enable/disable searching in nested properties through the __SearchInNestedProperties__ property of RadPropertyGrid (the default value is __False__). Setting it to __True__, can lead to degraded performance, when you have a lot of visible nested properties.
 
@@ -68,26 +62,23 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
 
 * When adding/removing a lot of __PropertyDefinitions__ (for example more than 100) at runtime, you should consider invoking the respective __SuspendNotifications()__ and __ResumeNotifications()__ methods and raise notifications only once for all the operations.
 
-    #### __[C#] Example 3: Suspending notifications while adding property definitions__
+    __Example 3: Suspending notifications while adding property definitions__
 
-    {{region cs-radpropertygrid-performance_2}}
+    ```C#
         this.propertyGrid.PropertyDefinitions.SuspendNotifications();
         foreach (PropertyDefinition propertyDefinition in largeCollectionOfPropertyDefinitions)
         {
             this.propertyGrid.PropertyDefinitions.Add(propertyDefinition);
         }
         this.propertyGrid.PropertyDefinitions.ResumeNotifications();
-    {{endregion}}
-
-    #### __[VB.NET] Example 3: Suspending notifications while adding property definitions__
-
-    {{region vb-radpropertygrid-performance_2}}
+    ```
+```VB.NET
 		Me.propertyGrid.PropertyDefinitions.SuspendNotifications()
 		For Each propertyDefinition As PropertyDefinition In largeCollectionOfPropertyDefinitions
 			Me.propertyGrid.PropertyDefinitions.Add(propertyDefinition)
 		Next propertyDefinition
 		Me.propertyGrid.PropertyDefinitions.ResumeNotifications()
-    {{endregion}}
+    ```
 
 ## See Also
 

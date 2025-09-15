@@ -18,22 +18,20 @@ The RadTransitionControl raises the following specific events:
 
     * A __TriggeringTransitionEventArgs__ object. It exposes only the __Cancel__ property, which allows you to cancel the transition, as demonstrated in __Example 1__. Note, that even if the transition is cancelled, the Content will still be changed. 
 
-    #### __[C#] Example 1: Canceling the TriggeringTransion event__ 	
-    {{region cs-radtransition-events-overview_0}}
+    __Example 1: Canceling the TriggeringTransion event__ 	
+    ```C#
         private void RadTransitionControl_TriggeringTransition(object sender, TriggeringTransitionEventArgs e)
         {
             // you can specify a condition for cancelling here
             e.Cancel = true;
         }
-    {{endregion}}
-
-    #### __[VB.NET] Example 1: Canceling the TriggeringTransion event__ 	
-    {{region vb-radtransition-events-overview_1}}
+    ```
+```VB.NET
         Private Sub RadTransitionControl_TriggeringTransition(ByVal sender As Object, ByVal e As TriggeringTransitionEventArgs)
 			' you can specify a condition for cancelling here
 			e.Cancel = True
         End Sub
-    {{endregion}}
+    ```
 
 * __TransitionStatusChanged__: This event is fired anytime there is a change in the content and the transition animation. The event handler receives two arguments:
 
@@ -41,8 +39,8 @@ The RadTransitionControl raises the following specific events:
 
     * A __TransitionStatusChangedEventArgs__ object. It exposes a __Status__ property which is of type [TransitionStatus](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.transitioncontrol.transitionstatus). 
 
-    #### __[C#] Example 2: Handling the TransitionStatusChanged event__ 	
-    {{region cs-radtransition-events-overview_2}}
+    __Example 2: Handling the TransitionStatusChanged event__ 	
+    ```C#
         private void RadTransitionControl_TransitionStatusChanged(object sender, TransitionStatusChangedEventArgs e)
         {
             switch (e.Status)
@@ -60,10 +58,8 @@ The RadTransitionControl raises the following specific events:
                     break;
             }
         }
-    {{endregion}}
-
-    #### __[VB.NET] Example 2: Handling the TransitionStatusChanged event__ 	
-    {{region vb-radtransition-events-overview_3}}
+    ```
+```VB.NET
         Private Sub RadTransitionControl_TransitionStatusChanged(ByVal sender As Object, ByVal e As TransitionStatusChangedEventArgs)
             Select Case e.Status
                 Case TransitionStatus.Started
@@ -75,7 +71,7 @@ The RadTransitionControl raises the following specific events:
                 Case Else
             End Select
         End Sub
-    {{endregion}}
+    ```
 
 ## When Does a Transition Start?
 
@@ -87,8 +83,8 @@ If you want to do some UI related logic, like disabling buttons, while a transit
 
 You can also use the __IsTransitionIdle__ property. It allows you to bind the __IsEnabled__ of a UIElement to the __IsTransitionIdle__ property, as demonstrated in __Example 3__.
 
-#### __[XAML] Example 3: Using the IsTransitionIdle property__ 	
-{{region xaml-radtransition-events-overview_4}}
+__Example 3: Using the IsTransitionIdle property__ 	
+```XAML
     <Button Content="Sample button" IsEnabled="{Binding IsTransitionIdle, ElementName=RadTransitionControl}"/>
         
     <telerik:RadTransitionControl x:Name="RadTransitionControl">
@@ -96,4 +92,4 @@ You can also use the __IsTransitionIdle__ property. It allows you to bind the __
             <telerik:SlideAndZoomTransition />
         </telerik:RadTransitionControl.Transition>
     </telerik:RadTransitionControl>
-{{endregion}}
+```

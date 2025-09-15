@@ -23,8 +23,8 @@ When a [DataProvider]({%slug virtualgrid-custom-dataprovider%}) is used, the Cel
 
 Here's an example of how you can display an image for one of the columns.
 
-#### __[C#] Define the template for the cells__
-{{region radvirtualgrid-custom-cell-content-0}}
+__Define the template for the cells__
+```C#
     <Window.Resources>
         <DataTemplate x:Key="ImageTemplate">
             <!-- This example assumes the bound objects expose a public Image property
@@ -32,10 +32,10 @@ Here's an example of how you can display an image for one of the columns.
             <Image Source="{Binding Image}" />
         </DataTemplate>
     </Window.Resources>
-{{endregion}}
+```
 
-#### __[C#] Display image as the content of the cells__
-{{region radvirtualgrid-custom-cell-content-1}}
+__Display image as the content of the cells__
+```C#
     private void VirtualGrid_CellTemplateNeeded(object sender, Telerik.Windows.Controls.VirtualGrid.CellTemplateEventArgs e)
     {
         if (e.ColumnIndex == 3)
@@ -43,7 +43,7 @@ Here's an example of how you can display an image for one of the columns.
             e.DataTemplate = this.Resources["ImageTemplate"] as DataTemplate;
         }
     }
-{{endregion}}
+```
 
 ![Display image as the content of the cells](images/radvirtualgrid-features-custom-cell-content-1.png)
 	

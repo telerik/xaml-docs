@@ -22,30 +22,27 @@ RadPropertyGrid supports validation through [IDataErrorInfo](#validating-through
 
 In order to have the validation rules defined through the [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo) interface, you will have to implement additional code which sets the __ValidatesOnDataErrors__ and __NotifyOnValidationError__ properties of the Binding to __"true"__. Please note, that the default binding generated for auto-generated PropertyDefinition have those properties set to __"false"__. 
 
-#### __[C#] Example 1: Setting ValidatesOnDataErrors and NotifyOnValidationError of the Binding__
+__Example 1: Setting ValidatesOnDataErrors and NotifyOnValidationError of the Binding__
 
-	{{region cs-radpropertygrid-features-validation_1}}
+	```C#
 	private void rpg_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    (e.PropertyDefinition.Binding as Binding).ValidatesOnDataErrors = true;
 	    (e.PropertyDefinition.Binding as Binding).NotifyOnValidationError = true;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting ValidatesOnDataErrors and NotifyOnValidationError of the Binding__
-
-	{{region vb-radpropertygrid-features-validation_1}}
+```
+```VB.NET
 	Private Sub rpg_AutoGeneratingPropertyDefinition(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
 	    TryCast(e.PropertyDefinition.Binding, Binding).ValidatesOnDataErrors = True
 	    TryCast(e.PropertyDefinition.Binding, Binding).NotifyOnValidationError = True
 	End Sub
-{{endregion}}
+```
 
 You can define the validation rules like so:
 
-#### __[C#] Example 2: Defining validation rules__
+__Example 2: Defining validation rules__
 
-	{{region cs-radpropertygrid-features-validation_2}}
+	```C#
 	public string this[string columnName]
 	{
 	    get
@@ -65,11 +62,8 @@ You can define the validation rules like so:
 	        return string.Empty;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining validation rules__
-
-	{{region vb-radpropertygrid-features-validation_2}}
+```
+```VB.NET
 	Default Public ReadOnly Property Item(ByVal columnName As String) As String
 	    Get
 	        If columnName = "IntProp" Then
@@ -84,15 +78,15 @@ You can define the validation rules like so:
 	        Return String.Empty
 	    End Get
 	End Property
-{{endregion}}
+```
 
 ## Validating through INotifyDataErrorInfo
 
 Provided your business objects correctly implement the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo) interface, such validation is supported out of the box. **Example 3** and **Example 4** demonstrate a sample implementation.
 
-#### __[C#] Example 3: Defining the validation method__
+__Example 3: Defining the validation method__
 
-	{{region cs-radpropertygrid-features-validation_8}}
+	```C#
 		private void ValidateName()
         {
             var error = "Name must be at least 5 characters!";
@@ -106,11 +100,8 @@ Provided your business objects correctly implement the [INotifyDataErrorInfo](ht
                 this.RemoveError("Name", error);
             }
         }
-	{{endregion}}
-
-#### __[VB.NET] Example 3: Defining the validation method__
-
-	{{region vb-radpropertygrid-features-validation_8}}
+	```
+```VB.NET
 		Private Sub ValidateName()
             Dim [error] = "Name must be at least 5 characters!"
 
@@ -120,11 +111,11 @@ Provided your business objects correctly implement the [INotifyDataErrorInfo](ht
                 Me.RemoveError("Name", [error])
             End If
         End Sub
-	{{endregion}}
+	```
 
-#### __[C#] Example 4: Calling the ValidateName method__
+__Example 4: Calling the ValidateName method__
 
-	{{region cs-radpropertygrid-features-validation_7}}
+	```C#
 		public string Name
         {
             get { return this.name; }
@@ -138,11 +129,8 @@ Provided your business objects correctly implement the [INotifyDataErrorInfo](ht
                 }
             }
         }
-	{{endregion}}
-
-#### __[VB.NET] Example 4: Calling the ValidateName method__
-
-	{{region vb-radpropertygrid-features-validation_7}}
+	```
+```VB.NET
 		Public Property Name() As String
             Get
                 Return Me._name
@@ -155,34 +143,31 @@ Provided your business objects correctly implement the [INotifyDataErrorInfo](ht
                 End If
             End Set
         End Property
-	{{endregion}}
+	```
 
 ## Validating through DataAnnotations
 
 In order to have the validation rules defined through [DataAnnotations](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) respected, you will have to set the ValidatesOnExceptions property of the Binding to true. Please note, that the default binding generated for auto-generated PropertyDefinition does not have this property set to true. 
 
-#### __[C#] Example 5: Setting ValidatesOnExceptions of Binding__
+__Example 5: Setting ValidatesOnExceptions of Binding__
 
-	{{region cs-radpropertygrid-features-validation_3}}
+	```C#
 	private void rpg1_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    (e.PropertyDefinition.Binding as Binding).ValidatesOnExceptions = true;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting ValidatesOnExceptions of Binding__
-
-	{{region vb-radpropertygrid-features-validation_3}}
+```
+```VB.NET
 	Private Sub rpg1_AutoGeneratingPropertyDefinition(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
 	    TryCast(e.PropertyDefinition.Binding, Binding).ValidatesOnExceptions = True
 	End Sub
-{{endregion}}
+```
 
 For example you can define the Required DataAnnotations attribute like so:
 
-#### __[C#] Example 6: Defining DataAnnotations Attribute__
+__Example 6: Defining DataAnnotations Attribute__
 
-	{{region cs-radpropertygrid-features-validation_4}}
+	```C#
 	private string requiredField;
 	[Required(ErrorMessage = "This field is Required.")]
 	public string RequiredField
@@ -195,11 +180,8 @@ For example you can define the Required DataAnnotations attribute like so:
 	        this.OnPropertyChanged("RequiredField");
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Defining DataAnnotations Attribute__
-
-	{{region vb-radpropertygrid-features-validation_4}}
+```
+```VB.NET
 	Private _requiredField As String
 	<Required(ErrorMessage:="This field is Required.")>
 	Public Property RequiredField() As String
@@ -212,13 +194,13 @@ For example you can define the Required DataAnnotations attribute like so:
 	        Me.OnPropertyChanged("RequiredField")
 	    End Set
 	End Property
-{{endregion}}
+```
 
 You may notice that there is a call to a ValidateProperty method. You will have to define such method like this:
 
-#### __[C#] Example 7: Defining ValidateProperty method__
+__Example 7: Defining ValidateProperty method__
 
-	{{region cs-radpropertygrid-features-validation_5}}
+	```C#
 	public void ValidateProperty(string propName, object value)
 	{
 	    var result = new List<System.ComponentModel.DataAnnotations.ValidationResult>();
@@ -228,11 +210,8 @@ You may notice that there is a call to a ValidateProperty method. You will have 
 	        throw new ValidationException(result[0].ErrorMessage);
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: Defining ValidateProperty method__
-
-	{{region vb-radpropertygrid-features-validation_5}}
+```
+```VB.NET
 	Public Sub ValidateProperty(ByVal propName As String, ByVal value As Object)
 	    Dim result = New List(Of ValidationResult)()
 	    Validator.TryValidateProperty(value, New ValidationContext(Me, Nothing, Nothing) With {.MemberName = propName}, result)
@@ -240,7 +219,7 @@ You may notice that there is a call to a ValidateProperty method. You will have 
 	        Throw New ValidationException(result(0).ErrorMessage)
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## Validating Property Sets
 
@@ -248,9 +227,9 @@ You may notice that there is a call to a ValidateProperty method. You will have 
 
 In order to enable validation for the fields that represent property sets, you need to set the __PropertySetsValidationFunction__ of RadPropertyGrid. The function takes two arguments: __string__ - the property that is being changed and __object__ - the value that is about to be applied. The function returns a string that represents the error message. 
 
-#### __[C#] Example 8: Setting the PropertySetsValidationFunction__
+__Example 8: Setting the PropertySetsValidationFunction__
 
-	{{region cs-radpropertygrid-features-validation_6}}
+	```C#
 	this.rpg.PropertySetsValidationFunction = new Func<string, object, string>((s, t) => 
 	{
 	    if (s == "Name" && t != null && t.ToString().Length < 5)
@@ -262,11 +241,8 @@ In order to enable validation for the fields that represent property sets, you n
 	        return null;
 	    }
 	});
-{{endregion}}
-
-#### __[VB.NET] Example 8: Setting the PropertySetsValidationFunction__
-
-	{{region vb-radpropertygrid-features-validation_6}}
+```
+```VB.NET
 	Me.rpg.PropertySetsValidationFunction = New Func(Of String, Object, String)(Function(s, t)
 	                                                                                If s = "Name" AndAlso t IsNot Nothing AndAlso t.ToString().Length < 5 Then
 	                                                                                    Return "Name should contain more than 5 characters!"
@@ -274,7 +250,7 @@ In order to enable validation for the fields that represent property sets, you n
 	                                                                                    Return Nothing
 	                                                                                End If
 	                                                                            End Function)
-{{endregion}}
+```
 
 __Figure 1__ shows the appearance of RadPropertyGrid after validation is applied.
 

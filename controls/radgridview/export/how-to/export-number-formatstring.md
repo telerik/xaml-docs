@@ -24,9 +24,9 @@ When an element is exported through the [ExportToXlsx]({%slug gridview-export-xl
 
 **Example 1** illustrates the approach:
 
-#### __[C#] Example 1: Handling the ElementExportingToDocument event__
+__Example 1: Handling the ElementExportingToDocument event__
 
-{{region cs-gridview-export-numeric-value_0}}
+```C#
 	private void Grid_ElementExportingToDocument(object sender, GridViewElementExportingToDocumentEventArgs e)
 	{
 		if (e.Element == ExportElement.Cell)
@@ -60,11 +60,8 @@ When an element is exported through the [ExportToXlsx]({%slug gridview-export-xl
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Handling the ElementExportingToDocument event__
-
-{{region vb-gridview-export-numeric-value_1}}
+```
+```VB.NET
 	Private Sub Grid_ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewElementExportingToDocumentEventArgs)
 		If e.Element = ExportElement.Cell Then
 			Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
@@ -89,15 +86,15 @@ When an element is exported through the [ExportToXlsx]({%slug gridview-export-xl
 			End If
 		End If
 	End Sub
-{{endregion}}
+```
 
 __SOLUTION 2__
 
 If you're exporting RadGridView's data with the [Export]({%slug gridview-export%}) method, you need to handle the [ElementExporting]({%slug gridview-export-events-elementexporting-elementexported%}) event instead as shown in **Example 2**.
 
-#### __[C#] Example 2: Handling the ElementExporting event__
+__Example 2: Handling the ElementExporting event__
 
-{{region cs-gridview-export-numeric-value_2}}
+```C#
 	private void Grid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
 		if (e.Element == ExportElement.Cell)
@@ -115,11 +112,8 @@ If you're exporting RadGridView's data with the [Export]({%slug gridview-export%
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Handling the ElementExporting event__
-
-{{region vb-gridview-export-numeric-value_3}}
+```
+```VB.NET
 	Private Sub Grid_ElementExporting(ByVal sender As Object, ByVal e As GridViewElementExportingEventArgs)
 		If e.Element = ExportElement.Cell Then
 			Dim tryInt = Integer.TryParse(e.Value.ToString().Replace(",", ""), var i)
@@ -133,7 +127,7 @@ If you're exporting RadGridView's data with the [Export]({%slug gridview-export%
 			End If
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

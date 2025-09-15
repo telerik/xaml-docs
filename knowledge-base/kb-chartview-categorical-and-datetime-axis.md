@@ -35,8 +35,8 @@ The RadChartView doesn't support a combination of one categorical axis and one D
 
 The following example shows how to setup the chart and implement the suggested idea.
 
-#### __[C#] The data point model__
-{{region kb-chartview-categorical-and-datetime-axis-0}}
+__The data point model__
+```C#
 	public class PlotInfo
     {
         public long DateTicks
@@ -47,10 +47,10 @@ The following example shows how to setup the chart and implement the suggested i
         public DateTime Date { get; set; }
         public string Category { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] An IValueConverter that converts from the ticks value to a DateTime object__
-{{region kb-chartview-categorical-and-datetime-axis-1}}
+__An IValueConverter that converts from the ticks value to a DateTime object__
+```C#
 	public class TicksToDateConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -64,10 +64,10 @@ The following example shows how to setup the chart and implement the suggested i
             throw new NotImplementedException();
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] The chart setup__
-{{region kb-chartview-categorical-and-datetime-axis-2}}
+__The chart setup__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows11">
 		<telerik:RadCartesianChart.Resources>
 			<local:TicksToDateConverter x:Key="TicksToDateConverter" />
@@ -91,10 +91,10 @@ The following example shows how to setup the chart and implement the suggested i
 						   CategoryBinding="Category"
 						   PaletteMode="DataPoint"/>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
-#### __[C#] The data population__
-{{region kb-chartview-categorical-and-datetime-axis-3}}
+__The data population__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -105,6 +105,6 @@ The following example shows how to setup the chart and implement the suggested i
 		}
 		this.barSeries.ItemsSource = source;
 	}
-{{endregion}}
+```
 
 ![Result chart](images/kb-chartview-categorical-and-datetime-axis-0.png)

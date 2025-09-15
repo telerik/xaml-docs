@@ -17,7 +17,7 @@ __RadExpressionEditor__ always generates a __LambdaExpression__ with one paramet
 Once the Expression is available, you can also compile it manually like so:
 
 #### __C#__
-{{region radexpressioneditor-expressions-overview-0}}
+```C#
 	var expr = (LambdaExpression)ExpressionEditor.Expression;
     if (expr != null)
     {
@@ -25,7 +25,7 @@ Once the Expression is available, you can also compile it manually like so:
         var expr2 = System.Linq.Expressions.Expression.Lambda(newBody, expr.Parameters) as Expression<Func<Club, int>>;
         var func = expr2.Compile();
     }
-{{endregion}}
+```
 
 Here are the basic concepts of the expression engine: 
 

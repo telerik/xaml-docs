@@ -21,11 +21,11 @@ The default option __utilizes lighter UI, but also provides fewer options__:
 
 3. When a validation error occurs, __users are not encouraged to fix it, or cancel their change__ by blocking the UI.
 
-#### __[XAML] Example 1: RadDataForm with Default EditMode__
+__Example 1: RadDataForm with Default EditMode__
 
-{{region xaml-raddataform-edit-modes_0}}
+```XAML
 	<telerik:RadDataForm EditMode="Default"/>
-{{endregion}}
+```
 
 __Figure 1__: RadDataForm with Default EditMode
 
@@ -37,11 +37,11 @@ Single EditMode introduces the concept of __editing properties one at a time__. 
 
 It relies on DataFormDataField's **DataMemberBinding** property. Setting this mode is not supported with dynamic data.
 
-#### __[XAML] Example 2: RadDataForm with EditMode set to Single__
+__Example 2: RadDataForm with EditMode set to Single__
 
-{{region xaml-raddataform-edit-modes_1}}
+```XAML
 	<telerik:RadDataForm EditMode="Single"/>
-{{endregion}}
+```
 
 __Figure 2__: RadDataForm with Single EditMode
 

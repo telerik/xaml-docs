@@ -28,26 +28,26 @@ To create categorical charts, you have to map the category values to the __XCate
 
 #### __XAML__
 
-{{region xaml-radchart-features-categorical-charts_0}}
+```XAML
 	<telerik:DataPoint XCategory="Apples" YValue="41" />
 	<telerik:DataPoint XCategory="Oranges" YValue="33" />
 	<telerik:DataPoint XCategory="Grapes" YValue="25" />
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radchart-features-categorical-charts_1}}
+```C#
 	DataSeries dataSeries = new DataSeries();
 	dataSeries.Definition = new BarSeriesDefinition();
 	dataSeries.Add( new DataPoint() { YValue = 41, XCategory = "Apples" } );
 	dataSeries.Add( new DataPoint() { YValue = 33, XCategory = "Oranges" } );
 	dataSeries.Add( new DataPoint() { YValue = 25, XCategory = "Grapes" } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( dataSeries );
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-features-categorical-charts_2}}
+```VB.NET
 	Dim dataSeries As New DataSeries()
 	dataSeries.Definition = New BarSeriesDefinition()
 	Dim dataPoint As New DataPoint()
@@ -63,13 +63,13 @@ To create categorical charts, you have to map the category values to the __XCate
 	dataPoint.XCategory = "Grapes"
 	dataSeries.Add(dataPoint)
 	radChart.DefaultView.ChartArea.DataSeries.Add(dataSeries)
-{{endregion}}
+```
 
 If you want to use data binding, then you have to set the __DataPointMember__ to __XCategory__ instead of __XValue__.
 
 #### __C#__
 
-{{region cs-radchart-features-categorical-charts_3}}
+```C#
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.SeriesDefinition = new BarSeriesDefinition();
 	ItemMapping itemMapping = new ItemMapping();
@@ -81,11 +81,11 @@ If you want to use data binding, then you have to set the __DataPointMember__ to
 	itemMapping.FieldName = "Orders";
 	seriesMapping.ItemMappings.Add(itemMapping);
 	radChart.SeriesMappings.Add(seriesMapping);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-features-categorical-charts_4}}
+```VB.NET
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.SeriesDefinition = New BarSeriesDefinition()
 	Dim itemMapping As New ItemMapping()
@@ -97,7 +97,7 @@ If you want to use data binding, then you have to set the __DataPointMember__ to
 	itemMapping.FieldName = "Orders"
 	seriesMapping.ItemMappings.Add(itemMapping)
 	radChart.SeriesMappings.Add(seriesMapping)
-{{endregion}}
+```
 
 If you are looking for more data binding options take a look at the [Populating with Data Overview]({%slug radchart-populating-with-data-overview%}) topic.
 

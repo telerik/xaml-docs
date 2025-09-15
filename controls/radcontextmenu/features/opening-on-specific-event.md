@@ -16,7 +16,7 @@ Setting the __EventName__ property will make __RadContextMenu__ to listen for a 
 
 #### __XAML__
 
-{{region xaml-radcontextmenu-features-opening-on-specific-event_0}}
+```XAML
 	<Button Width="100"
 	        Content="Click me!"
 	        VerticalAlignment="Top">
@@ -26,7 +26,7 @@ Setting the __EventName__ property will make __RadContextMenu__ to listen for a 
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</Button>
-{{endregion}}
+```
 
 As you can see in this particular example, __RadContextMenu__ is listening for the __Click__ event of its host. So when you click the button, a context menu will appear.
 

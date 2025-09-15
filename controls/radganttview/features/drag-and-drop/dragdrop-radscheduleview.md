@@ -20,19 +20,19 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 
 	#### __XAML__
 
-	{{region xaml-radganttview-dragdrop-radscheduleview-0}}
+	```XAML
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 		    <telerik:RadScheduleView.ViewDefinitions>
 		        <telerik:WeekViewDefinition/>
 		    </telerik:RadScheduleView.ViewDefinitions>
 		</telerik:RadScheduleView>
-	{{endregion}}
+	```
 
 	and the ViewModel should look like this:
 
 	#### __C#__
 
-	{{region cs-radganttview-dragdrop-radscheduleview-0}}
+	```C#
 		public class ViewModel : ViewModelBase
 		{
 		    private ObservableCollection<Appointment> appointments;
@@ -84,13 +84,13 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 		        return appointments;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Next you should declare the GanttView control and populate it with some sample data:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-dragdrop-radscheduleview-1}}
+	```XAML
 		<telerik:RadGanttView x:Name="radGanttView" 
 		TasksSource="{Binding GanttTasks}" 
 		VisibleRange="{Binding VisibleRange}">
@@ -100,13 +100,13 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 	and the ViewModel should look like this:
 
 	#### __C#__
 
-	{{region cs-radganttview-dragdrop-radscheduleview-1}}
+	```C#
 		public class ViewModel : ViewModelBase
 		{
 		    //...
@@ -163,13 +163,13 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 		    }
 		    //...
 		}
-	{{endregion}}
+	```
 
 1. Create a custom __GanttDragDropBehavior__ and override its __CanStartDrag()__ method in order to restrict the drag and drop functionality from the Timeline of the GanttView control (in the current version of the control drag and drop from the Timeline is not supported):
 
 	#### __C#__
 
-	{{region cs-radganttview-dragdrop-radscheduleview-2}}
+	```C#
 		public class CustomGanttDragDropBehavior : GanttDragDropBehavior
 		{
 		    protected override bool CanStartDrag(SchedulingDragDropState state)
@@ -177,13 +177,13 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 		        return state.IsReorderOperation;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Create a custom __ScheduleViewDragDropBehavior__ and override its __ConvertDraggedData()__ and __CanStartDrag()__ methods:
 
 	#### __C#__
 
-	{{region cs-radganttview-dragdrop-radscheduleview-3}}
+	```C#
 		public class CustomScheduleViewDragDropBehavior : ScheduleViewDragDropBehavior
 		{
 		    public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
@@ -202,13 +202,13 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 		        return state.DraggedAppointments.Count() < 2;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Create a custom __IDataObjectProvider__ that will convert data from the ScheduleView to the GanttView control:
 
 	#### __C#__
 
-	{{region cs-radganttview-dragdrop-radscheduleview-4}}
+	```C#
 		public class CustomScheduleViewConverter : IDataObjectProvider
 		{
 		    public object GetData(string type, bool autoConvert, IEnumerable<IOccurrence> draggedAppointments)
@@ -237,13 +237,13 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 		        return null;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Declare the newly created behaviors and converter to the ScheduleView and GanttView controls, the xaml of the two controls should look like this:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-dragdrop-radscheduleview-2}}
+	```XAML
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 		Margin="20">
 		    <telerik:RadScheduleView.ViewDefinitions>
@@ -267,7 +267,7 @@ This help article demonstrates how to achieve drag and drop between RadScheduleV
 		        <local:CustomGanttDragDropBehavior/>
 		    </telerik:RadGanttView.DragDropBehavior>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 The next screenshots show the final result:
 

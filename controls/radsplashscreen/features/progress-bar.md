@@ -16,8 +16,8 @@ You can change this visualization and indicate some progress instead, by setting
 
 To control the range and progress of the bar, set the __MinValue__, __MaxValue__ and __ProgressValue__ properties of __SplashScreenDataContext__.
 
-#### __[C#] Example 1: Showing a progress bar in the splash screen__
-{{region radsplashscreen-features-progress-bar-0}}
+__Example 1: Showing a progress bar in the splash screen__
+```C#
 	var dataContext = (SplashScreenDataContext)RadSplashScreenManager.SplashScreenDataContext;
 	dataContext.Footer = "Filling Up Loading Bar";	
 	
@@ -34,7 +34,7 @@ To control the range and progress of the bar, set the __MinValue__, __MaxValue__
 	}
 
 	RadSplashScreenManager.Close();
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSplashScreen Progress Bar](images/radsplashscreen-features-progress-bar-0.png)
 
@@ -42,11 +42,11 @@ To control the range and progress of the bar, set the __MinValue__, __MaxValue__
 
 To hide the progress bar, set the __IsProgressBarVisible__ property of the [SplashScreenDataContext]({%slug radsplashscreen-features-splashscreenmanager%}#) object to __False__.
 
-#### __[C#] Example 2: Hiding the progress bar__
-{{region radsplashscreen-features-progress-bar-1}}
+__Example 2: Hiding the progress bar__
+```C#
 	var dataContext = (SplashScreenDataContext)RadSplashScreenManager.SplashScreenDataContext;
 	dataContext.IsProgressBarVisible = false;
-{{endregion}}
+```
 
 ## See Also  
 * [Getting Started]({%slug radsplashscreen-getting-started%})

@@ -27,8 +27,8 @@ How to updade the visual representation of the CollectionEditor control.
 
 [Extract and edit]({%slug styling-apperance-editing-control-templates%}) its ControlTemplate, modify it so that it suits your needs and apply it through a style targeting __CollectionEditor__. __Example 1__ demonstrates how an additional button can be added to the template. 
 
-#### __[XAML] Example 1: Modifying the CollectionEditor ControlTemplate in the Fluent theme__
-{{region xaml-kb-propertygrid-collectioneditor-template-0}}
+__Example 1: Modifying the CollectionEditor ControlTemplate in the Fluent theme__
+```XAML
 	 <Application.Resources>
         <ResourceDictionary>
             <ControlTemplate x:Key="CollectionEditor_Template" TargetType="telerik:CollectionEditor">
@@ -165,7 +165,7 @@ How to updade the visual representation of the CollectionEditor control.
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}} 
+``` 
 
 #### __Figure 1: CollectionEditor with modified ControlTemplate in the Fluent theme__
 ![CollectionEditor with modified ControlTemplate in the Fluent theme](images/kb-propertygrid-collectioneditor-template.png)

@@ -17,7 +17,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 
 #### __C#__
 
-{{region radcombobox-howto-set-character-casing_0}}
+```C#
 	public class EditableComboBox
 	{
 	    public static int GetCharacterCasing( DependencyObject obj )
@@ -37,11 +37,11 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    {
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radcombobox-howto-set-character-casing_1}}
+```VB.NET
 	Public Class EditableComboBox
 	    Public Shared Function GetCharacterCasing(ByVal obj As DependencyObject) As Integer
 	        Return CInt(obj.GetValue(CharacterCasingProperty))
@@ -53,7 +53,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    Private Shared Sub OnCharacterCasingChanged(ByVal obj As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 In the __OnCharacterCasingChanged()__ event handler you should perform the following step.
 
@@ -65,7 +65,7 @@ In the __OnCharacterCasingChanged()__ event handler you should perform the follo
 
 #### __C#__
 
-{{region radcombobox-howto-set-character-casing_2}}
+```C#
 	public class EditableComboBox
 	{
 	    public static int GetCharacterCasing( DependencyObject obj )
@@ -101,14 +101,14 @@ In the __OnCharacterCasingChanged()__ event handler you should perform the follo
 	            , null );
 	    }
 	}
-{{endregion}}
+```
 
 Finally set the property in XAML.
 
 #### __XAML__
 
-{{region radcombobox-howto-set-character-casing_3}}
+```XAML
 	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.CharacterCasingProperty="1"/>
-{{endregion}}
+```
 
 >tipNote that you have to set the __RadComboBox__'s __IsEditable__ property to __True__.

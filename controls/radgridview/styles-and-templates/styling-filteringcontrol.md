@@ -46,9 +46,9 @@ You can modify it similarly to the FilteringDropDown style and set it as follows
 
 #### __XAML__
 
-{{region xaml-gridview-styling-filteringdropdown_2}}
+```XAML
 	<telerik:GridViewDataColumn FilteringControlStyle="{StaticResource FilteringControlStyle}" />
-{{endregion}}
+```
 
 >You can find the Template Structure of the FilteringControl [here]({%slug radgridview-styles-and-templates-templates-structure%}).
 

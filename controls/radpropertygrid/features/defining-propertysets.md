@@ -20,9 +20,9 @@ In order to benefit from this feature, you should set RadPropertyGrid's **Proper
 
 For the means of illustrating the separate mode values, the following types will be used:
 
-#### __[C#] Example 1: Preparing sample data__
+__Example 1: Preparing sample data__
 
-	{{region cs-radpropertygrid-defining-propertysets_0}}
+	```C#
 	public class Ellipse
 	{
 	    public Color FillColor { get; set; }
@@ -64,11 +64,8 @@ For the means of illustrating the separate mode values, the following types will
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Preparing sample data__
-
-	{{region vb-radpropertygrid-defining-propertysets_0}}
+```
+```VB.NET
 	Public Class Ellipse
 	    Public Property FillColor() As Color
 	    Public Property RadiusX1() As Double
@@ -103,18 +100,18 @@ For the means of illustrating the separate mode values, the following types will
 	        End Get
 	    End Property
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Defining RadPropertyGrid__
+__Example 2: Defining RadPropertyGrid__
 
-	{{region xaml-radpropertygrid-defining-propertysets_1}}
+	```XAML
 	<Grid>
 	    <Grid.Resources>
 	        <local:ViewModel x:Key="ViewModel" />
 	    </Grid.Resources>
 	    <telerik:RadPropertyGrid DataContext="{StaticResource ViewModel}" Item="{Binding Shapes}" />
 	</Grid>
-{{endregion}}
+```
 
 ## Property Set Modes
 
@@ -156,17 +153,14 @@ As of **R3 2017**, RadPropertyGrid exposes a **PropertySet** property of type Pr
 
 > More information about the DynamicObject class can be found in [this MSDN article](https://msdn.microsoft.com/en-us/library/system.dynamic.dynamicobject).
 
-#### __[C#] Example 3: Update PropertySet value__
+__Example 3: Update PropertySet value__
 
-	{{region cs-radpropertygrid-defining-propertysets_2}}
+	```C#
 		this.RadPropertyGrid.PropertySet["FillColor"] = Colors.Blue;
-	{{endregion}}
-
-#### __[VB.NET] Example 3: Update PropertySet value__
-
-	{{region vb-radpropertygrid-defining-propertysets_2}}
+	```
+```VB.NET
 		Me.RadPropertyGrid.PropertySet("FillColor") = Colors.Blue
-	{{endregion}}
+	```
 
 The control also provides an **UpdatePropertySetValue** which accepts three arguments:
 
@@ -176,17 +170,14 @@ The control also provides an **UpdatePropertySetValue** which accepts three argu
 
 **Example 4** demonstrates how to update the property set similarly to **Example 3** but without propagating the changed values back to the underlying models.
 
-#### __[C#] Example 4: Update PropertySet value without notifying underlying models__
+__Example 4: Update PropertySet value without notifying underlying models__
 
-	{{region cs-radpropertygrid-defining-propertysets_3}}
+	```C#
 		this.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, false);
-	{{endregion}}
-
-#### __[VB.NET] Example 4: Update PropertySet value without notifying underlying models__
-
-	{{region vb-radpropertygrid-defining-propertysets_3}}
+	```
+```VB.NET
 		Me.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, False)
-	{{endregion}}
+	```
 
 >You can check the __Validating Property Sets__ section from the control's [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
 
@@ -196,9 +187,9 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 
 **Examples 5-7** demonstrate how to use a custom **EditorTemplate** for the integer property of a property set.
 
-#### __[XAML] Example 5: Defining editor template__
+__Example 5: Defining editor template__
 
-	{{region xaml-radpropertygrid-defining-propertysets_4}}
+	```XAML
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
 	        <local:ViewModel x:Key="vm" />
@@ -212,11 +203,11 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 	                         PropertySetMode="Union" 
 	                         AutoGeneratingPropertyDefinition="RadPropertyGrid_AutoGeneratingPropertyDefinition"/>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 6: Setting EditorTemplate of a PropertyDefinition__
+__Example 6: Setting EditorTemplate of a PropertyDefinition__
 
-	{{region cs-radpropertygrid-defining-propertysets_5}}
+	```C#
 	private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    if (e.PropertyDefinition.DisplayName == "CornersCount")
@@ -224,21 +215,18 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 	        e.PropertyDefinition.EditorTemplate = LayoutRoot.Resources["editorTemplate"] as DataTemplate;
 	    }
 	}
-{{endregion}}
-	
-#### __[VB.NET] Example 6: Setting EditorTemplate of a PropertyDefinition__
-
-	{{region vb-radpropertygrid-defining-propertysets_5}}
+```
+```VB.NET
 	Private Sub RadPropertyGrid_AutoGeneratingPropertyDefinition(sender As Object, e As Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs)
 	    If e.PropertyDefinition.DisplayName = "CornersCount" Then
 	        e.PropertyDefinition.EditorTemplate = TryCast(LayoutRoot.Resources("editorTemplate"), DataTemplate)
 	    End If
 	End Sub
-{{endregion}}
+```
 	
-#### __[C#] Example 7: Defining IValueConverter__
+__Example 7: Defining IValueConverter__
 
-	{{region cs-radpropertygrid-defining-propertysets_6}}
+	```C#
 	public class MyConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -250,11 +238,8 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 	        return value;
 	    }
 	}
-{{endregion}}
-	
-#### __[VB.NET] Example 7: Defining IValueConverter__
-
-	{{region vb-radpropertygrid-defining-propertysets_6}}
+```
+```VB.NET
 	Public Class MyConverter
 	    Implements IValueConverter
 	    Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object Implements IValueConverter.Convert
@@ -264,7 +249,7 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 	        Return value
 	    End Function
 	End Class
-{{endregion}}
+```
 
 #### Figure 4: RadNumericUpDown for integer property of property set
 
@@ -274,15 +259,15 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 
 By default, __RadPropertyGrid__ will create an object instance for a property of custom data type with null value. This behavior can be altered through the __ShouldAddNullForNonMatchingValues__ boolean property. Its default value is __False__. When set to __True__, the control __will not create a new instance__ for __null property values__. 
 
-#### __[XAML] Example 8: Setting the ShouldAddNullForNonMatchingValues property to True__
+__Example 8: Setting the ShouldAddNullForNonMatchingValues property to True__
 
-	{{region xaml-radpropertygrid-defining-propertysets_7}}
+	```XAML
 
 	      <telerik:RadPropertyGrid DataContext="{StaticResource vm}"
 	                                 Item="{Binding Shapes}"
 	                                 PropertySetMode="Union"
 	                                 telerik:PropertySet.ShouldAddNullForNonMatchingValues="True"/>
-{{endregion}}
+```
 
 ## See Also
 

@@ -14,8 +14,8 @@ The chart axis range is moving from left to right when horizontal and from botto
 
 The axis range direction can be changed by setting the `IsInverse` property of the corresponding chart axis.
 
-#### __[XAML]__
-{{region xaml-radchart-axes-invert-axis-0}}
+
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis IsInverse="True"/>
@@ -35,7 +35,7 @@ The axis range direction can be changed by setting the `IsInverse` property of t
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 The following picture shows two charts - one with the default range direction (on the top) and another with inverted axes ranges (on the bottom).
 

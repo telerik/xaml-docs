@@ -20,7 +20,7 @@ The final result should look like the one on the snapshot below:
 
 #### __C#__
 
-{{region dragdropmanager-howto-draganddrop-within-radgridview_1}}
+```C#
 	public class MessageViewModel
 	{
 		public static IList Generate()
@@ -63,11 +63,11 @@ The final result should look like the one on the snapshot below:
 			return this.Sender;
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region dragdropmanager-howto-draganddrop-within-radgridview_2}}
+```VB.NET
 	Public Class MessageViewModel
 		Public Shared Function Generate() As IList
 			Dim data As IList = New ObservableCollection(Of MessageViewModel)()
@@ -118,13 +118,13 @@ The final result should look like the one on the snapshot below:
 			Return Me.Sender
 		End Function
 	End Class
-{{endregion}}
+```
 
 * The XAML should look like the code snippet below.
 
 #### __XAML__
 
-{{region dragdropmanager-howto-draganddrop-within-radgridview_0}}
+```XAML
 	<telerik:RadGridView   AutoGenerateColumns="True"
 	                        Margin="5"
 	                        Name="radGridView"
@@ -160,7 +160,7 @@ The final result should look like the one on the snapshot below:
 			</Style>
 		</telerik:RadGridView.RowStyle>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 >If you are referencing NoXaml binaries, then your style should specify __BasedOn={StaticResource GridViewRowStyle}__.
           
@@ -168,7 +168,7 @@ The final result should look like the one on the snapshot below:
 
 #### __C#__
 
-{{region dragdropmanager-howto-draganddrop-within-radgridview_15}}
+```C#
 	public class DropIndicationDetails : ViewModelBase
 	{
 		private object currentDraggedItem;
@@ -225,11 +225,11 @@ The final result should look like the one on the snapshot below:
 			}
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region dragdropmanager-howto-draganddrop-within-radgridview_16}}
+```VB.NET
 	Public Class DropIndicationDetails
 		Inherits ViewModelBase
 		Private m_currentDraggedItem As Object
@@ -282,7 +282,7 @@ The final result should look like the one on the snapshot below:
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 * The row reorder capabilities will be encapsulated in a __Behavior__. Create a new class named __RowReorderBehavior__.            
 
@@ -290,7 +290,7 @@ The final result should look like the one on the snapshot below:
 
 #### __C#__
 
-{{region dragdropmanager-howto-draganddrop-within-radgridview_17}}
+```C#
 	public class RowReorderBehavior
     {
         private const string DropPositionFeedbackElementName = "DragBetweenItemsFeedback";
@@ -656,13 +656,13 @@ The final result should look like the one on the snapshot below:
             return grid;
         }
     }
-{{endregion}}
+```
 
 Finally, you should populate your  __RadGridView__ with sample data and attach the attached behavior:
 
 #### __C#__
 
-{{region dragdropmanager-howto-draganddrop-within-radgridview_19}}
+```C#
 	public MainWindow()
 	{
     	InitializeComponent();
@@ -670,17 +670,17 @@ Finally, you should populate your  __RadGridView__ with sample data and attach t
 		this.radGridView.ItemsSource = MessageViewModel.Generate();
 		RowReorderBehavior.SetIsEnabled(this.radGridView, true);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region dragdropmanager-howto-draganddrop-within-radgridview_20}}
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 
 		Me.radGridView.ItemsSource = MessageViewModel.Generate()
 		RowReorderBehavior.SetIsEnabled(Me.radGridView, True)
 	End Sub
-{{endregion}}
+```
 
 >tipYou can download a __runnable project__ on the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropWithLines).
 

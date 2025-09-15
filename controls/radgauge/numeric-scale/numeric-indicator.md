@@ -17,7 +17,7 @@ The appearance of characters in the numeric indicator could be specified with a 
 To add a numeric indicator to the scale you have to include NumericIndicator element to the list of the scale indicators:
 
 #### __XAML__
-{{region numeric-scale-numeric-indicator_0}}
+```XAML
 	<telerik:RadVerticalLinearGauge Width="150" Height="50" telerik:StyleManager.Theme="Windows8">
 	    <telerik:NumericScale Min="0">
 	        <telerik:NumericScale.Indicators>
@@ -40,7 +40,7 @@ To add a numeric indicator to the scale you have to include NumericIndicator ele
 	        </telerik:NumericScale.Indicators>
 	    </telerik:NumericScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Every digital cell in the indicator is defined by a corresponding NumberPosition element. The topmost element in the list defines the rightmost digital cell.
 

@@ -20,21 +20,21 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 
 * Create a Customer class:
 
-#### __[C#]  Business object creation__
+__Business object creation__
 
-{{region cs-radlistbox-features-dragdrop-scheduleview-0}}
+```C#
 	public class Customer
 	{
 	    public string Name { get; set; }
 	    public int ID { get; set; }
 	}
-{{endregion}}
+```
 
 * Create a ViewModel that initializes the ListBox ItemsSource and the ScheduleView AppointmentsSource and populate them with simple data:
 
-#### __[C#]  ViewModel creation__
+__ViewModel creation__
 
-{{region cs-radlistbox-features-dragdrop-scheduleview-1}}
+```C#
 	public ObservableCollection<Customer> CustomersSource { get; private set; }
 	public ObservableCollection<Appointment> AppointmentsSource { get; private set; }
 	public ViewModel()
@@ -57,13 +57,13 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 	  new Appointment { Start = monday, End = monday.AddHours(1), Subject = "Appointment 5" } 
 	 };
 	}
-{{endregion}}
+```
 
 * Create AppointmentToCustomerConverter class that inherits DataConverter:
 
-#### __[C#]  AppointmentToCustomerConverter class creation__
+__AppointmentToCustomerConverter class creation__
 
-{{region cs-radlistbox-features-dragdrop-scheduleview-2}}
+```C#
 	public class AppointmentToCustomerConverter : DataConverter
 	{
 	    public override string[] GetConvertToFormats()
@@ -81,13 +81,13 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 	        return null;
 	    }
 	}
-{{endregion}}
+```
 
 * Create custom ScheduleViewDragDropBehavior that inherits ScheduleViewDragDropBehavior:
 
-#### __[C#]  ScheduleViewDragDropBehavior__
+__ScheduleViewDragDropBehavior__
 
-{{region cs-radlistbox-features-dragdrop-scheduleview-3}}
+```C#
 	public class ScheduleViewDragDropBehavior : Telerik.Windows.Controls.ScheduleViewDragDropBehavior
 	{
 	    public object customers { get; set; }
@@ -105,23 +105,23 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 	        return base.ConvertDraggedData(data);
 	    }
 	}
-{{endregion}}
+```
 
 * Create a RadListBoxItem Style that will enable the drag of the RadListBoxItem controls:
 
-#### __[XAML]  RadListBoxItem Style__
+__RadListBoxItem Style__
 
-{{region xaml-radlistbox-features-dragdrop-scheduleview-0}}
+```XAML
 	<Style x:Key="DraggableListBoxItem" TargetType="telerik:RadListBoxItem">
 	    <Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 	</Style>
-{{endregion}}
+```
 
 * The final configuration of the two controls in XAML should look like:
 
-#### __[XAML]  Configuration of RadListBox and RadScheduleView__
+__Configuration of RadListBox and RadScheduleView__
 
-{{region xaml-radlistbox-features-dragdrop-scheduleview-1}}
+```XAML
 	<telerik:RadListBox x:Name="ListBox"
 						ItemsSource="{Binding CustomersSource}" 
 						DisplayMemberPath="Name" 
@@ -145,7 +145,7 @@ We will go through a simple example to illustrate the approach. RadListBox is bo
 			<local:ScheduleViewDragDropBehavior />
 		</telerik:RadScheduleView.DragDropBehavior>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Here is the end result:
 

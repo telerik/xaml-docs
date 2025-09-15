@@ -33,18 +33,18 @@ Read more about NuGet installation in the [Installing UI for WPF from NuGet Pack
 
 ## Adding RadCarousel to the Project
 
-#### __[XAML] Example 1: Adding RadGridView to application__
-{{region xaml-carousel-getting-started_0}}
+__Example 1: Adding RadGridView to application__
+```XAML
 	<telerik:RadCarousel x:Name="MyCarousel" Background="Black" Height="400" />	
-{{endregion}}
+```
 
 ## Binding RadCarousel to a Collection of Custom Objects
 
 For the purpose of this tutorial we will create a new **Employee** class with a couple of properties:
 
-#### __[C#] Example 2: The Employee class__
+__Example 2: The Employee class__
 
-	{{region cs-carousel-getting-started_2}}
+	```C#
 	public class Employee
 	{
 	    public string FirstName
@@ -68,11 +68,8 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 	        set;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: The Employee class__
-
-	{{region vb-carousel-getting-started_2}}
+```
+```VB.NET
 	Public Class Employee
 	    Public Property FirstName() As String
 	        Get
@@ -111,13 +108,13 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 	    End Property
 	    Private m_Position As String
 	End Class
-{{endregion}}
+```
 
 Furthermore, as some data will be needed, we will create **EmployeeService** class that provides a static **GetEmployees()** method:
 
-#### __[C#] Example 3: The EmployeeService class__
+__Example 3: The EmployeeService class__
 
-	{{region cs-carousel-getting-started_3}}
+	```C#
 	public class EmployeeService
 	{
 	    public static ObservableCollection<Employee> GetEmployees()
@@ -163,11 +160,8 @@ Furthermore, as some data will be needed, we will create **EmployeeService** cla
 	        return employees;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: The EmployeeService class__
-
-	{{region vb-carousel-getting-started_3}}
+```
+```VB.NET
 	Public Class EmployeeService
 	    Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	        Dim employees As New ObservableCollection(Of Employee)()
@@ -210,21 +204,18 @@ Furthermore, as some data will be needed, we will create **EmployeeService** cla
 	        Return employees
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Once all the data is prepared, we may set the RadCarousel's **ItemsSource**:
 
-#### __[C#] Example 4: Setting RadCarousel's ItemsSource__
+__Example 4: Setting RadCarousel's ItemsSource__
 
-	{{region cs-carousel-getting-started_4}}
+	```C#
 	this.MyCarousel.ItemsSource = EmployeeService.GetEmployees();
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting RadCarousel's ItemsSource__
-
-	{{region vb-carousel-getting-started_4}}
+```
+```VB.NET
 	Me.MyCarousel.ItemsSource = EmployeeService.GetEmployees()
-{{endregion}}
+```
 
 After running the application, you will see the following result:
 
@@ -236,9 +227,9 @@ After running the application, you will see the following result:
 
 Generally, RadCarousel may be easily used for displaying images and navigating through them. All you need to do is to add those that you want to be visualized in a **List<Image>** for example and set RadCarousel's ItemsSource:
 
-#### __[C#] Example 5: Setting RadCarousel's ItemsSource to a list of images__
+__Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
-	{{region cs-carousel-getting-started_5}}
+	```C#
 	List<Image> myImages = new List<Image>();
 	Image myImage = new Image();
 	myImage.Source = new BitmapImage(new Uri("/Images/nature1.jpg", UriKind.Relative));
@@ -266,11 +257,8 @@ Generally, RadCarousel may be easily used for displaying images and navigating t
 	myImage4.Width = 200;
 	myImages.Add(myImage4);
 	this.MyCarousel.ItemsSource = myImages;
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting RadCarousel's ItemsSource to a list of images__
-
-	{{region vb-carousel-getting-started_5}}
+```
+```VB.NET
 	Dim myImages As New List(Of Image)()
 	Dim myImage As New Image()
 	myImage.Source = New BitmapImage(New Uri("/Images/nature1.jpg", UriKind.Relative))
@@ -298,7 +286,7 @@ Generally, RadCarousel may be easily used for displaying images and navigating t
 	myImage4.Width = 200
 	myImages.Add(myImage4)
 	Me.MyCarousel.ItemsSource = myImages
-{{endregion}}
+```
 
 **Figure 2** shows the final result:
 
@@ -323,8 +311,8 @@ To change the theme, you can follow the steps below:
 
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 2: Merge the ResourceDictionaries__  
-{{region xaml-radcarousel-getting-started_3}}
+__Example 2: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -334,7 +322,7 @@ __Example 2__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

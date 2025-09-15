@@ -32,9 +32,9 @@ __RadRadialMenuItem__ provides the following properties:
 
 __Example 1__ shows how they can be set.        
 
-#### __[XAML] Example 1: Setting RadRadialMenuItem properties__
+__Example 1: Setting RadRadialMenuItem properties__
 
-{{region xaml-radradialmenu-features-radialmenuitems_0}}
+```XAML
 	<telerik:RadRadialMenu>
 	    <telerik:RadRadialMenuItem Header="File" ToolTipContent="Click to open the File menu" >
 	        <telerik:RadRadialMenuItem.IconContent>
@@ -48,7 +48,7 @@ __Example 1__ shows how they can be set.
 	    </telerik:RadRadialMenuItem>
 	    <!--...-->
 	</telerik:RadRadialMenu>
-{{endregion}}
+```
 
 Figure 1: Setting RadialMenuItems properties
 ![Rad Radial Menu Menu Items 01](images/RadRadialMenu_MenuItems_01.png)
@@ -70,14 +70,14 @@ Figure 2: RadialMenu with "File" and "Mail" items selected
 
 __RadialMenuItems__ can be grouped, so that they behave as radio buttons when selected. This is implemented through the __GroupName__ property of the __RadialMenuItem__ which specifies the group it belongs to.         
 
-#### __[XAML] Example 2: Grouping RadialMenuItems__
+__Example 2: Grouping RadialMenuItems__
 
-{{region xaml-radradialmenu-features-radialmenuitems_1}}
+```XAML
 	<telerik:RadRadialMenuItem Header="Upload">
 	    <telerik:RadRadialMenuItem Header="Upload" GroupName="UploadGroup" />
 	    <telerik:RadRadialMenuItem Header="Download" GroupName="UploadGroup" />
 	</telerik:RadRadialMenuItem>
-{{endregion}}
+```
 
 As a result, selecting one of the items deselects the other one (if selected).
 

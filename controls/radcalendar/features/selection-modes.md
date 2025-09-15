@@ -16,9 +16,9 @@ The following snippet creates a Calendar with Extended selection mode:
 
 #### __XAML__
 
-{{region xaml-radcalendar-selection-modes_0}}
+```XAML
 	<telerik:RadCalendar SelectionMode="Extended" />
-{{endregion}}
+```
 
 In __Single Selection mode__ only one date can be selected. Note that the SelectedDate can be null as well, which means that no date is selected. Keyboard movement selects an item.
 

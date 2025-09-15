@@ -34,23 +34,23 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 #### __C#__
 
-{{region radpivotgrid-features-localization_1}}
+```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
 	InitializeComponent();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-localization_1}}
+```VB.NET
 	LocalizationManager.Manager = New CustomLocalizationManager()
 	InitializeComponent()
-{{endregion}}
+```
 
 *CustomLocalizationManager* must inherit __LocalizationManager__ and override its *GetStringOverride* method. Here is an implementation of a custom localization:        
 
 #### __C#__
 
-{{region radpivotgrid-features-localization_2}}
+```C#
 	public class CustomLocalizationManager : LocalizationManager
 	{
 	    private IDictionary<string, string> dictionary;
@@ -216,11 +216,11 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-localization_2}}
+```VB.NET
 	Public Class CustomLocalizationManager
 		Inherits LocalizationManager
 	
@@ -384,7 +384,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 			End If
 		End Function
 	End Class
-{{endregion}}
+```
 
 As you can see, there are a lot of keys that have to be localized. In the table below you can find more information about each of them.        
 

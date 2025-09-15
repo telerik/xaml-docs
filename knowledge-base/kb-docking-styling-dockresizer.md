@@ -32,8 +32,8 @@ How to customize the background colors of the normal and preview states of the D
 
 To customize the colors of the DockResizer's normal and preview states add the following two Styles: 
 
-#### __[XAML]__
-{{region kb-docking-styling-dockresizer-0}}
+
+```XAML
     <!--If the NoXaml binaries are used, the following style needs to be based on the default one, like so:--> 
     <!--<Style TargetType="Control" BasedOn="{StaticResource GridResizerPreviewStyle}">-->
 
@@ -59,4 +59,4 @@ To customize the colors of the DockResizer's normal and preview states add the f
         <Setter Property="Background" Value="#190099BC"/>
         <Setter Property="PreviewStyle" Value="{StaticResource ResizerPreviewStyle}"/>
     </Style>
-{{endregion}}
+```

@@ -33,14 +33,14 @@ You can find the required assemblies for each control from the suite in the [Con
 
 If your app is setup, you are ready to add a **RadBarcode** control to it. __Example 1__ demonstrates a QRCode symbology. For more details on the available Barcode symbologies go to the [Supported Types]({%slug barcode-supported-types-overview %}) topic.
 
-#### __[XAML] Example 1: Defining a RadBarcode__
-{{region xaml-barcode-getting-started-0}}
+__Example 1: Defining a RadBarcode__
+```XAML
 	<telerik:RadBarcode Value="https://www.telerik.com/wpf"  Height="200" Width="200" x:Name="barcode">
 		<telerik:RadBarcode.Symbology>
 			<telerik:QRCode />
 		</telerik:RadBarcode.Symbology>
 	</telerik:RadBarcode>
-{{endregion}}
+```
 
 #### Figure 1: Barcode Getting Started
 ![Getting Started Example](images/barcode_getting_started.png)

@@ -33,8 +33,8 @@ How to acquire the old and new parent of a task after reorder via drag and drop.
 
 For the purpose you can define a [custom GanttDragDropBehavior]({%slug radganttview-dragdrop-custom-behaviors%}) and override its **Drop** method as follows:
 
-#### __[C#]__
-{{region cs-kb-ganttview-howto-get-old-new-parent-task-after-reorder-1}}
+
+```C#
   	protected override void Drop(SchedulingDragDropState state)
   	{
 		var task = state.DraggedItem as GanttTask;
@@ -44,7 +44,7 @@ For the purpose you can define a [custom GanttDragDropBehavior]({%slug radganttv
 		var newItem = this.Gantt.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);
 		var newParent = newItem.Parent;
   	}
-{{endregion}}
+```
 
 ## See Also
 * [Custom GanttDragDropBehavior]({%slug radganttview-dragdrop-custom-behaviors%})

@@ -18,14 +18,14 @@ The `RadMap` control supports visualizing tile data using the [Azure Maps servic
 
 To use this provider, create a new AzureMapProvider instance and add it to the `Providers` collection of the RadMap control. After that, you will need to set the subscription key of the user's Azure account to the `SubscriptionKey` property of the AzureMapProvider instance. To obtain a key, you can review the [Manage authentication in Azure Maps](https://learn.microsoft.com/en-gb/azure/azure-maps/how-to-manage-authentication#view-authentication-details/) article.
 
-#### __[XAML] Adding the AzureMapProvider to the RadMap control__
-{{region radmap-features-providers-azuremapprovider-0}}
+__Adding the AzureMapProvider to the RadMap control__
+```XAML
     <telerik:RadMap>
         <telerik:RadMap.Providers>
             <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"/>
         </telerik:RadMap.Providers>
     </telerik:RadMap>
-{{endregion}}
+```
 
 __RadMap with AzureMapProvider__
 
@@ -43,15 +43,15 @@ When using the AzureMapProvider, you have to display an attribution copyright la
 
 The Azure Maps services provide a set of different map layers ([tilesets](https://learn.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tileset?tabs=HTTP#tilesetid)). The AzureMapProvider class will allow you to specify one of these raster or vector tilesets, by setting the `TileSet` property.
 
-#### __[XAML] Specifying the tileset__
-{{region radmap-features-providers-azuremapprovider-1}}
+__Specifying the tileset__
+```XAML
     <telerik:RadMap x:Name="map">
         <telerik:RadMap.Providers>
             <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"
                                       TileSet="DarkGrey"/>
         </telerik:RadMap.Providers>
     </telerik:RadMap>
-{{endregion}}
+```
 
 __AzureMapProvider with specified tileset__
 
@@ -59,8 +59,8 @@ __AzureMapProvider with specified tileset__
 
 By default RadMap's navigation UI doesn't display any modes for the AzureMapProvider. To enable this, set the provider's `UserAccessibleModes` collection property.
 
-#### __[XAML] Setting the tileset modes__
-{{region radmap-features-providers-azuremapprovider-2}}
+__Setting the tileset modes__
+```XAML
     <telerik:RadMap>
         <telerik:RadMap.Providers>
             <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key"
@@ -72,7 +72,7 @@ By default RadMap's navigation UI doesn't display any modes for the AzureMapProv
             </telerik:RadMap.Providers>
         </telerik:AzureMapProvider>
     </telerik:RadMap>
-{{endregion}}
+```
 
 __AzureMapProvider with specified AzureTileSet instances for the UserAccessibleModes property__
 
@@ -94,8 +94,8 @@ The event arguments of the NoStyleVectorTileRendering event are of the type `NoS
 
 >important The NoStyleVectorTileRendering event will be raised when the `IgnoreStyle` property of the AzureMapProvider instance is set to `False`.
 
-#### __[C#] Manually customizing the appearance the vector tiles__
-{{region radmap-features-providers-azuremapprovider-3}}
+__Manually customizing the appearance the vector tiles__
+```C#
     private void AzureMapsProvider_NoStyleVectorTileRendering(object sender, NoStyleVectorTileRenderingEventArgs e)
     {
         VectorTileLayerRenderInfo trafficLayer = e.Layers.Where(x => x.Name == "Traffic flow").FirstOrDefault();
@@ -140,7 +140,7 @@ The event arguments of the NoStyleVectorTileRendering event are of the type `NoS
             featureInfo.Paint.LineColor = Brushes.Red.Color;
         }
     }
-{{endregion}}
+```
 
 __Manually customizing the appearance the vector tiles__
 
@@ -154,14 +154,14 @@ The Azure Maps services provide a culture parameter in its URL address and the A
 
 >tip Check the [Localization support in Azure Maps](https://learn.microsoft.com/en-us/azure/azure-maps/supported-languages) article for the supported languages of the Azure Maps services.
 
-#### __[XAML] Setting the Langauge property of the AzureMapProvider__
-{{region radmap-features-providers-azuremapprovider-4}}
+__Setting the Langauge property of the AzureMapProvider__
+```XAML
     <telerik:RadMap x:Name="radMap">
         <telerik:RadMap.Provider>
             <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key" Language="bg-BG"/>
         </telerik:RadMap.Provider>
     </telerik:RadMap>
-{{endregion}}
+```
 
 __AzureMapProvider with localized tile sets__
 
@@ -171,11 +171,11 @@ __AzureMapProvider with localized tile sets__
 
 The AzureMapProvider provides the functionality to specify the [Render](https://learn.microsoft.com/en-us/rest/api/maps/render?view=rest-maps-2025-01-01) Rest API version of the Azure Maps services. This is done via the `APIVersion` property of the provider. The lastest version of the Render Rest API is __2024-04-01__ and the AzureMapProvider uses it.
 
-#### __[XAML] Setting a previous version of the Render Rest API version__
-{{region radmap-features-providers-azuremapprovider-5}}
+__Setting a previous version of the Render Rest API version__
+```XAML
     <telerik:RadMap x:Name="radMap">
         <telerik:RadMap.Provider>
             <telerik:AzureMapProvider SubscriptionKey="Azure_Maps_Subscription_Key" APIVersion="2022-08-01"/>
         </telerik:RadMap.Provider>
     </telerik:RadMap>
-{{endregion}}
+```

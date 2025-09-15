@@ -37,7 +37,7 @@ In XAML you have to create an instance of the selector, define its rules collect
           
 #### __XAML__
 
-{{region raddatafilter-how-to-create-custom-filter-editors_4}}
+```XAML
 
 	<UserControl.Resources>
 	    <DataTemplate x:Key="ComboBoxEditor">
@@ -71,7 +71,7 @@ In XAML you have to create an instance of the selector, define its rules collect
 	        </telerik:RadGridView.Columns>
 	    </telerik:RadGridView>
 	</Grid>
-{{endregion}}
+```
 
 Here is the code behind of the example. The most important thing in it is the event handler for the __EditorCreated__ event. In it you can fill __RadComboBox__ editor with the desired data. 
 
@@ -79,7 +79,7 @@ As you can see by using the switch statement you can extend the logic for additi
 
 #### __C#__
 
-{{region raddatafilter-how-to-create-custom-filter-editors_5}}
+```C#
 
 	public partial class CustomFilterEditorsSample : UserControl
 	{
@@ -102,13 +102,13 @@ As you can see by using the switch statement you can extend the logic for additi
 	        return new List<string>() { "Owner", "Sales Representative", "Sales Associate", "Sales Agent", "Marketing Assistent" };
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region raddatafilter-how-to-create-custom-filter-editors_6}}
+```VB.NET
 
 	Public Partial Class CustomFilterEditorsSample
 	 Inherits UserControl
@@ -133,7 +133,7 @@ As you can see by using the switch statement you can extend the logic for additi
 	  }
 	 End Function
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -145,7 +145,7 @@ Here is the code for the Employee object and the sample data.
 
 #### __C#__
 
-{{region raddatafilter-how-to-create-custom-filter-editors_7}}
+```C#
 
 	public class Employee
 	{
@@ -171,13 +171,13 @@ Here is the code for the Employee object and the sample data.
 	        set;
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region raddatafilter-how-to-create-custom-filter-editors_8}}
+```VB.NET
 
 	Public Class Employee
 	 Public Sub New(name As String, companyName As String, title As String)
@@ -213,13 +213,13 @@ Here is the code for the Employee object and the sample data.
 	 End Property
 	 Private m_Title As String
 	End Class
-	{{endregion}}
+	```
 
 
 
 #### __C#__
 
-{{region raddatafilter-how-to-create-custom-filter-editors_9}}
+```C#
 
 	ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 	employees.Add( new Employee( "Maria Anders", "Alfreds Futterkiste", "Sales Representative" ) );
@@ -232,13 +232,13 @@ Here is the code for the Employee object and the sample data.
 	employees.Add( new Employee( "Laurence Lebihan", "Bon app'", "Owner" ) );
 	employees.Add( new Employee( "Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager" ) );
 	employees.Add( new Employee( "Victoria Ashworth", "B's Beverages", "Sales representative" ) );
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region raddatafilter-how-to-create-custom-filter-editors_10}}
+```VB.NET
 
 	Dim employees As New ObservableCollection(Of Employee)()
 	employees.Add(New Employee("Maria Anders", "Alfreds Futterkiste", "Sales Representative"))
@@ -251,4 +251,4 @@ Here is the code for the Employee object and the sample data.
 	employees.Add(New Employee("Laurence Lebihan", "Bon app'", "Owner"))
 	employees.Add(New Employee("Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager"))
 	employees.Add(New Employee("Victoria Ashworth", "B's Beverages", "Sales representative"))
-{{endregion}}
+```

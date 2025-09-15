@@ -26,8 +26,8 @@ How to determine which timeline group was clicked.
 
 Handle the MouseRightButtonDown/MouseLeftButtonDown event of the RadTimeLine and check, if the clicked element is a TimelineItemGroupControl.
 
-#### __[C#] Example 1: Checking the clicked element__
-{{region cs-kb-timeline-howto-determine-clicked-group-0}}
+__Example 1: Checking the clicked element__
+```C#
 
 	private void RadTimeline_MouseRightButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
     {
@@ -41,10 +41,8 @@ Handle the MouseRightButtonDown/MouseLeftButtonDown event of the RadTimeLine and
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Checking the clicked element__
-{{region vb-kb-timeline-howto-determine-clicked-group-1}}
+```
+```VB.NET
 
 	Private Sub RadTimeline_MouseRightButtonDown(ByVal sender As Object, ByVal e As System.Windows.Input.MouseButtonEventArgs)
 		Dim panel = TryCast(e.OriginalSource, VirtualizingTimelinePanel)
@@ -55,7 +53,7 @@ Handle the MouseRightButtonDown/MouseLeftButtonDown event of the RadTimeLine and
 			End If
 		End If
     End Sub
-{{endregion}}
+```
 
 ## See Also
 

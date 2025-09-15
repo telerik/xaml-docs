@@ -66,14 +66,14 @@ This is how you can add a new source:
 
 #### __C#__
 
-{{region radrichtextbox-features-bibliographic-references_1}}
+```C#
 	BibliographicSource bibliographicSource = new BibliographicSource("test");
 	bibliographicSource.Author = "authorTest";
 	bibliographicSource.Title = "titleTest";
 	bibliographicSource.Editor = "editorTest";
 	bibliographicSource.SourceType = BibliographicSourceType.Book;
 	this.editor.Document.BibliographicSources.Add(bibliographicSource);
-{{endregion}}
+```
 
 
 
@@ -81,7 +81,7 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 
 #### __C#__
 
-{{region radrichtextbox-features-bibliographic-references_2}}
+```C#
 	APAFifthEditionStyle APAFifthEdition = new APAFifthEditionStyle();
 	this.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition);
 	 
@@ -92,7 +92,7 @@ To create a custom __BibliographicStyle__ you have to derive from __Bibliographi
 	new ISO690_FirstElementAndDateStyle();
 	this.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, 
 	ISO690_FirstElementAndDate);
-{{endregion}}
+```
 
 Insert Citation Field using code behind
 
@@ -100,11 +100,11 @@ The Citation field is a field not different from every other field. You can use 
 
 #### __C#__
 
-{{region radrichtextbox-features-bibliographic-references_3}}
+```C#
 	CitationField citationField = new CitationField();
 	citationField.SourceName = "test";
 	this.editor.Document.InsertField(citationField, FieldDisplayMode.Result);
-{{endregion}}
+```
 
 Insert Bibliography Field using code behind
 
@@ -112,10 +112,10 @@ The Bibliography field is a field not different from every other field. You can 
 
 #### __C#__
 
-{{region radrichtextbox-features-bibliographic-references_4}}
+```C#
 	BibliographyField bibliographyField = new BibliographyField();
 	this.editor.Document.InsertField(bibliographyField, FieldDisplayMode.Result);
-{{endregion}}
+```
 
 Changing Bibliographic Style using code behind
 
@@ -123,8 +123,8 @@ There is a method called __ChangeBibliographicStyle()__ on __RadRichTextBox__. I
 
 #### __C#__
 
-{{region radrichtextbox-features-bibliographic-references_5}}
+```C#
 	this.editor.ChangeBibliographicStyle(new HarvardAnglia2008Style());
-{{endregion}}
+```
 
 

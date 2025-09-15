@@ -17,7 +17,7 @@ The bubble series is used to visualize three dimensional data. Each entity in th
 You can use the following definition to display a simple BubbleSeries:
 
 #### __XAML__
-{{region radchartview-series-bubbleseries-0}}
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -37,7 +37,7 @@ You can use the following definition to display a simple BubbleSeries:
 			</telerik:BubbleSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 The following image demonstrates the end result:  
 ![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_01.png)
@@ -47,7 +47,7 @@ The following image demonstrates the end result:
 You can use the __ValueBinding__, __CategoryBinding__ and the __BubbleSizeBinding__ properties of the BubbleSeries to bind the DataPoints’ properties to the properties from your view models.
 
 #### __C#__
-{{region radchartview-series-bubbleseries-1}}
+```C#
 	public class PlotInfo
 	{
 		public string XCat { get; set; }
@@ -61,12 +61,12 @@ You can use the __ValueBinding__, __CategoryBinding__ and the __BubbleSizeBindin
 		new PlotInfo { XCat = "France", YVal = 20, Size = 50, },
 		//....
 	};
-{{endregion}}
+```
 	
 #### __XAML__
-{{region radchartview-series-bubbleseries-2}}
+```XAML
 	<telerik:BubbleSeries ValueBinding="YVal"  CategoryBinding="XCat" BubbleSizeBinding="Size" ItemsSource="{Binding}"/>
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite
 
@@ -77,11 +77,11 @@ The series supports all standard features exposed by all other categorical serie
 * __DataPointLegendSettings__ - the series supports two types of legend settings, the first one is the common SeriesLegendSettings which can be used with all types of series and it maps each legend item to a series. The series supports an additional DataPointLegendSettings which maps the legend items per data point. 
 
 	#### __XAML__
-	{{region radchartview-series-bubbleseries-3}}
+	```XAML
 		<telerik:BubbleSeries.LegendSettings>
 			<telerik:DataPointLegendSettings/>
 		</telerik:BubbleSeries.LegendSettings>
-	{{endregion}}
+	```
 	
 	![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_02.png)
 	
@@ -95,9 +95,9 @@ The series supports all standard features exposed by all other categorical serie
 * __Hover interactivity__ – RadCartesianChart exposes a property called HoverMode. This property can be used only by the bubble and bar series. If it is set to “FadeOtherSeries”, when you mouse over a data point, the bubbles from all other series will fade out. The default value of the property is “None”.
 
 	#### __XAML__
-	{{region radchartview-series-bubbleseries-4}}
+	```XAML
 		<telerik:RadCartesianChart HoverMode="FadeOtherSeries">
-	{{endregion}}
+	```
 	
 	![radchartview-series-bubbleseries](images/radchartview-series-bubbleseries_04.png)
 	
@@ -114,7 +114,7 @@ You can customize the BubbleSize of each DataPoint by creating a custom bubble s
 The following code snippet demonstrates an example implementation of a bubble size selector:
 
 #### __C#__
-{{region radchartview-series-bubbleseries-5}}
+```C#
     public class CustomBubbleSizeSelector : ChartBubbleSizeSelector
     {
         public static double SelectBubbleSize(double bubbleSize)
@@ -128,16 +128,16 @@ The following code snippet demonstrates an example implementation of a bubble si
             return new RadSize(size, size);
         }
     }
-{{endregion}}
+```
 
 #### __XAML__
-{{region radchartview-series-bubbleseries-6}}
+```XAML
 	<FrameworkElement.Resources>
 		<local:CustomBubbleSizeSelector x:Key="CustomBubbleSizeSelector" />
     </FrameworkElement.Resources>
 	..........
     <telerik:BubbleSeries BubbleSizeSelector="{StaticResource selector}" >
-{{endregion}}
+```
 
 >tip Find a runnable project showing the BubbleSeries in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/BubbleSeriesAndNegativeValues).
 

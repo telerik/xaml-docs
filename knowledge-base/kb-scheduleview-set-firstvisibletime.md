@@ -32,8 +32,8 @@ How to change the FirstVisibleTime of RadScheduleView when the active view defin
 
 Create a custom control that derives from RadScheduleView and override the OnActiveViewDefinitionChanged. Then reset the FirstVisibleTime property.
 
-#### __[C#]__
-{{region kb-scheduleview-set-firstvisibletime-0}}
+
+```C#
 	public class CustomScheduleView : RadScheduleView
 	{
 		protected override void OnActiveViewDefinitionChanged(ViewDefinitionBase oldValue, ViewDefinitionBase newValue)
@@ -46,4 +46,4 @@ Create a custom control that derives from RadScheduleView and override the OnAct
 			this.FirstVisibleTime = time;
 		}
 	}
-{{endregion}}
+```

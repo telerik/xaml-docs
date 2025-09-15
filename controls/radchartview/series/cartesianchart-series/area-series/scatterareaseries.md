@@ -21,8 +21,8 @@ The __ScatterAreaSeries__ is visualized on the screen as a straight line connect
 
 You can use the definition from __Example 1__ to display a ScatterAreaSeries.
 
-#### __[XAML] Example 1: Declaring a ScatterAreaSeries in XAML__
-{{region radchartview-series-scatterareaseries_0}}	
+__Example 1: Declaring a ScatterAreaSeries in XAML__
+```XAML	
 	<telerik:RadCartesianChart Palette="Windows8">
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:LinearAxis />
@@ -44,7 +44,7 @@ You can use the definition from __Example 1__ to display a ScatterAreaSeries.
 		</telerik:ScatterAreaSeries>
 	</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: ScatterAreaSeries visual appearance__  
 ![radchartview-series-scatterlineareaseries](images/radchartview-series-scatterlineareaseries.png)
@@ -74,9 +74,9 @@ You can use the definition from __Example 1__ to display a ScatterAreaSeries.
 
 You can use the __YValueBinding__ and __XValueBinding__ properties of the ScatterAreaSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-areaseries-scatterareaseries_1}}
+```C#
 	public class PlotInfo
     {
         public double XValue { get; set; }
@@ -89,12 +89,12 @@ You can use the __YValueBinding__ and __XValueBinding__ properties of the Scatte
 		new PlotInfo() { XValue = 0, YValue = 2},
 		//....
 	};
-{{endregion}}		
+```		
 
-#### __[XAML] Example 3: Specify a ScatterAreaSeries in XAML__
-{{region radchartview-series-areaseries-rangesplineseries_2}}
+__Example 3: Specify a ScatterAreaSeries in XAML__
+```XAML
 	<telerik:ScatterAreaSeries ItemsSource="{Binding}" YValueBinding="YValue" XValueBinding="XValue"/>
-{{endregion}}	
+```	
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

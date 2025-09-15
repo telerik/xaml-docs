@@ -28,9 +28,9 @@ This topic will show you how to perform the second one.
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-no-data-control_0}}
+```XAML
 	xmlns:telerikCharting=&quot;clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting&quot;
-{{endregion}}
+```
 
 
 
@@ -50,17 +50,17 @@ To apply the style to the real control, set it to the __NoDataControl__ property
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-no-data-control_1}}
+```C#
 	this.radChart.DefaultView.ChartArea.NoDataControlStyle = this.Resources["NoDataControlStyle"] as Style;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-no-data-control_2}}
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.NoDataControlStyle = TryCast(Me.Resources("NoDataControlStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -77,7 +77,7 @@ Here is the final XAML for the __Style__after the modifications:
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-no-data-control_3}}
+```XAML
 	<System:Double x:Key="NoDataFontSize">16</System:Double>
 	<FontWeight x:Key="NoDataFontWeight">Normal</FontWeight>
 	<VerticalAlignment x:Key="NoDataVerticalAlignment">Center</VerticalAlignment>
@@ -160,7 +160,7 @@ Here is the final XAML for the __Style__after the modifications:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 

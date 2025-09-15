@@ -54,8 +54,8 @@ The __ChartMoveAnimation__ animates the sliding effect of the series/point from 
 	* Right: When set series or points are moved starting from the __right__ side of the plot area.	
 	* Bottom: When set series or points are moved starting from the __left__ side of the plot area.
 
-#### __[XAML] Example 1: Setting move animation in XAML__
-{{region radchartview-features-animations-0}}
+__Example 1: Setting move animation in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -84,7 +84,7 @@ The __ChartMoveAnimation__ animates the sliding effect of the series/point from 
 			</telerik:BarSeries>         
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 2: This animation look as follows__
 ![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-MoveAnimation.gif)
@@ -100,8 +100,8 @@ The __ChartRevealAnimation__  animation animates the clipping of the series and 
 	* __Horizontal:__ Default value. When set the animation is horizontally oriented.
 	* __Vertical:__ When set the animation is vertically oriented.
 
-#### __[XAML] Example 2: Setting reveal animation in XAML__
-{{region radchartview-features-animations-1}}
+__Example 2: Setting reveal animation in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -130,7 +130,7 @@ The __ChartRevealAnimation__  animation animates the clipping of the series and 
 			</telerik:AreaSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 3: This animation look as follows__
 ![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-reveal-animation.gif)
@@ -142,8 +142,8 @@ The __ChartFadeAnimation__ fades in the series and their points. The fade effect
 * __MinOpacity:__ A property of type __double__ that gets or sets the initial opacity of the animation. Default value is __0.01__
 * __MaxOpacity:__ A property of type __double__ that gets or sets the final opacity of the animation. Default value is __1__.
 
-#### __[XAML] Example 3: Setting fade animation in XAML__
-{{region radchartview-features-animations-2}}
+__Example 3: Setting fade animation in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -166,7 +166,7 @@ The __ChartFadeAnimation__ fades in the series and their points. The fade effect
 			</telerik:BubbleSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 4: This animation look as follows__
 ![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-fade-animation.gif)
@@ -175,8 +175,8 @@ The __ChartFadeAnimation__ fades in the series and their points. The fade effect
 
 The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The difference here is that this animation add additional fade in effect.
 
-#### __[XAML] Example 4: Setting drop and fade animation in XAML__
-{{region radchartview-features-animations-3}}
+__Example 4: Setting drop and fade animation in XAML__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -229,7 +229,7 @@ The __ChartDropFadeAnimation__ derives from __ChartMoveAnimation__. The differen
 			</telerik:AreaSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 5: This animation look as follows__
 ![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-drop-fade-animation.gif)
@@ -246,8 +246,8 @@ The __ChartScaleAnimation__ animates the size of the series and their points. Yo
 	* __Vertical:__ When set the scaling is performed vertically.
 	* __Both:__ When set the scaling is performed in both directions.
 
-#### __[XAML] Example 5: Setting scale animation in XAML__
-{{region radchartview-features-animations-4}}
+__Example 5: Setting scale animation in XAML__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -300,7 +300,7 @@ The __ChartScaleAnimation__ animates the size of the series and their points. Yo
 			</telerik:AreaSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 6: This animation look as follows__
 ![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-scale-animation.gif)
@@ -314,8 +314,8 @@ The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the 
 * __InitialStartAngle:__ A property of type __double__ that gets or sets the initial value of the start angle. Default value is __-90__.
 * __InitialSweepAngle:__ A property of type __double__ that gets or sets the initial value of the sweep angle. Default value is __0__.
 
-#### __[XAML] Example 6: Setting pie chart angle range animation in XAML__
-{{region radchartview-features-animations-5}}
+__Example 6: Setting pie chart angle range animation in XAML__
+```XAML
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:PieSeries>
@@ -332,7 +332,7 @@ The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the 
 			</telerik:PieSeries>
 		</telerik:RadPieChart.Series>
 	</telerik:RadPieChart>
-{{endregion}}
+```
 
 #### __Figure 7: This animation look as follows__
 ![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-pie-angle-range-animation.gif)
@@ -343,8 +343,8 @@ The __PieChartAngleRangeAnimation__ animates the __AngleRange__ property of the 
 
 The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of the PieSeries. The animation stars from 0 to the value of the __RadiusFactor__ property.
 
-#### __[XAML] Example 7: Setting pie chart radius factor animation in XAML__
-{{region radchartview-features-animations-6}}
+__Example 7: Setting pie chart radius factor animation in XAML__
+```XAML
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:RadPieChart.Series>
 			<telerik:PieSeries>
@@ -361,7 +361,7 @@ The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of 
 			</telerik:PieSeries>
 		</telerik:RadPieChart.Series>
 	</telerik:RadPieChart>	 
-{{endregion}}
+```
 
 #### __Figure 8: This animation look as follows__
 ![{{ site.framework_name }} RadChartView This animation look as follows](images/radchartview-features-animations-pie-radius-factor-animation.gif)
@@ -370,8 +370,8 @@ The __PieChartRadiusFactorAnimation__ animates the __RadiusFactor__ property of 
 
 All built-in animation of the chart derives from __ChartAnimationBase__. In order to create a custom animation, you need to define a custom class which derives from this base class. This class provides __BuildPointAnimation()__ and __BuildSeriesAnimation()__ methods which can be overridden so you can create your own animation. __Example 2__ demonstrate custom point animation.
 
-#### __[C#] Example 8: Custom point animation__
-{{region radchartview-features-animations-7}}
+__Example 8: Custom point animation__
+```C#
 	public class CustomAnimation : ChartAnimationBase
     {
         protected override RadAnimation BuildPointAnimation(FrameworkElement visual, DataPoint point, RadRect plotAreaClip)
@@ -391,10 +391,10 @@ All built-in animation of the chart derives from __ChartAnimationBase__. In orde
             return g;
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 8: Setting custom animation in XAML__
-{{region radchartview-features-animations-8}}
+__Example 8: Setting custom animation in XAML__
+```XAML
 	<telerik:RadCartesianChart  x:Name="chart" Palette="Windows8" >
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -423,7 +423,7 @@ All built-in animation of the chart derives from __ChartAnimationBase__. In orde
 			</telerik:BubbleSeries>                     
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 9: This custom animation look as follows__
 ![{{ site.framework_name }} RadChartView This custom animation look as follows](images/radchartview-features-animations-custom-animation.gif)

@@ -25,12 +25,12 @@ To get the actual range when the axis is zoom-in, use the `ActualVisibleRange` p
 
 To get the actual major step, use the `ActualMajorStep` property of the axis.
 
-#### __[C#] Getting the actual range of a LinearAxis__
-{{region radchartview-axis-range-0}}
+__Getting the actual range of a LinearAxis__
+```C#
 	ValueRange<double> actualRange = linearAxis.ActualRange;
 	ValueRange<double> actualVisibleRange = linearAxis.ActualVisibleRange;
 	double actualMajorStep = linearAxis.ActualMajorStep;
-{{endregion}}
+```
 
 The axis also provides a couple of __events raised when the range changes__.
 
@@ -38,8 +38,8 @@ The axis also provides a couple of __events raised when the range changes__.
 * `ActualVisibleRangeChanged`
 * `ActualMajorStepChanged`
 
-#### __[C#] Actual range and step changed event handlers__
-{{region radchartview-axis-range-1}}
+__Actual range and step changed event handlers__
+```C#
 	private void LinearAxis_ActualMajorStepChanged(object sender, EventArgs e)
 	{
 		var axis = (LinearAxis)sender;
@@ -57,27 +57,27 @@ The axis also provides a couple of __events raised when the range changes__.
 		ValueRange<double> newRange = e.NewRange;
 		ValueRange<double> oldRange = e.PreviousRange;
 	}
-{{endregion}}
+```
 
 ## Setting the Range Manually
 
 The axis range can be adjusted manually by setting the `Minimum` and `Maximum` properties of the axis.
 
-#### __[XAML] Setting axis range in XAML__
-{{region radchartview-axis-range-2}}
+__Setting axis range in XAML__
+```XAML
 	<telerik:LinearAxis Minimum="100" Maximum="1000" />
 	
 	<telerik:DateTimeContinuousAxis Minimum="05/13/2024" Maximum="06/13/2024" />	
-{{endregion}}
+```
 
-#### __[XAML] Setting axis range in C#__
-{{region radchartview-axis-range-3}}
+__Setting axis range in C#__
+```XAML
 	this.linearAxis.Minimum = 100;
 	this.linearAxis.Maximum = 100;
 	
 	this.dateTimeContinuousAxis.Minimum = DateTime.Today;
 	this.dateTimeContinuousAxis.Maximum = DateTime.Today.Months(12);	
-{{endregion}}
+```
 
 ![WPF ChartView Axis Range Setting](images/radchartview-axis-range-0.png)
 
@@ -87,10 +87,10 @@ The chart axes allow you to manually set the major and minor step, which determi
 
 To set the major step, use the `MajorStep` property of the axis.
 
-#### __[XAML] Setting major step__
-{{region radchartview-axis-range-4}}
+__Setting major step__
+```XAML
 	<telerik:LinearAxis Minimum="100" MajorStep="150" Maximum="1000" />
-{{endregion}}
+```
 
 ![WPF ChartView Axis Major Step Setting](images/radchartview-axis-range-1.png)
 
@@ -108,10 +108,10 @@ The tick origin determines the value where the ticks originate. The positions of
 
 To set the origin, use the `TickOrigin` property of the axis (available in `LinearAxis` and `DateTimeContinuousAxis`).
 
-#### __[XAML] Setting major step__
-{{region radchartview-axis-range-5}}
+__Setting major step__
+```XAML
 	<telerik:LinearAxis Minimum="100" TickOrigin="500" MajorStep="150" Maximum="1000" />
-{{endregion}}
+```
 
 ![WPF ChartView Axis Tick Origin Setting](images/radchartview-axis-range-2.png)
 
@@ -119,10 +119,10 @@ To set the origin, use the `TickOrigin` property of the axis (available in `Line
 
 The axis allows you to set the desired tick count via the `DesiredTickCount` property. The axis will try to calculate a proper step based on the axis range and the desired number of ticks. Note, that the actual number of ticks may be slightly higher or lower since the automatic range calculation takes into account different factors and it tries to display a reasonable step between the ticks. For example, if the `DesiredTickCount` is 7, then 6 or 8 ticks may be drawn, depending on the range of the axis.
 
-#### __[XAML] Setting desired number of ticks__
-{{region radchartview-axis-range-6}}
+__Setting desired number of ticks__
+```XAML
 	<telerik:LinearAxis DesiredTickCount="5" />
-{{endregion}}
+```
 
 ![WPF ChartView Axis Desired Tick Count Setting](images/radchartview-axis-range-3.png)
 	

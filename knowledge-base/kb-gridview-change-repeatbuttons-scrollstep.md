@@ -38,8 +38,8 @@ Subscribe to the PreviewMouseLeftButtonDown event of RadGridView. In the event h
 
 The following example shows how to implement this for the horizontal ScrollBar, but you can use this approach also for the vertical one.
 
-#### __[C#]__
-{{region kb-gridview-change-repeatbuttons-scrollstep-0}}
+
+```C#
 	private void RadGridView_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 	{
 		var originalSourceEl = e.OriginalSource as FrameworkElement;
@@ -66,4 +66,4 @@ The following example shows how to implement this for the horizontal ScrollBar, 
 			}
 		}
 	}
-{{endregion}}
+```

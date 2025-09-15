@@ -16,8 +16,8 @@ The purpose of this tutorial is to show you how to set different colors to your 
 
 First, we can go ahead and create some sample data and apply it directly to the ItemSource of the RadTaskBoard. The RadTaskBoard control will be populated with a collection of __TaskBoardCardModel__. The category indicator functionality uses the __CategoryName__ property of the TaskBoardCardModel to match the item with the color.
 
-#### __[C#] Example 1: Defining ViewModel__
-{{region cs-radtaskboard-features-category-indicator-0}}
+__Example 1: Defining ViewModel__
+```C#
     public MainWindow()
 	{
 		InitializeComponent();  
@@ -58,15 +58,15 @@ First, we can go ahead and create some sample data and apply it directly to the 
 
 		return tasks;
 	}
-{{endregion}}
+```
 
 The next step is to declare our colors. The __Categories__ collection property of the RadTaskBoard needs to be set. We can create a __CategoryCollection__ with __CategoryModel__ objects inside. The CategoryModel exposes __CategoryName__ and __CategoryBrush__ properties. The value of the __CategoryName__ will be used to match the value of the __CategoryName__ of the TaskBoardCardModel. And the color set to the CategoryBrush will be applied to the task.
 
 >The CategoryCollection and CategoryModel class can be accessed in XAML through the following namespace:  
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
-#### __[XAML] Example 2: Specifying custom colors__
-	{{region xaml-radtaskboard-features-category-indicator-1}}
+__Example 2: Specifying custom colors__
+	```XAML
 	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State">
 			<telerik:RadTaskBoard.Categories>
 				<taskBoard:CategoryCollection>
@@ -76,7 +76,7 @@ The next step is to declare our colors. The __Categories__ collection property o
 				</taskBoard:CategoryCollection>
 			</telerik:RadTaskBoard.Categories>
 		</telerik:RadTaskBoard>
-	{{endregion}}
+	```
 
 If you run the application now, you should get a structure like in Figure 1:
 #### Figure 1: Tasks with different categories Color
@@ -86,8 +86,8 @@ If you run the application now, you should get a structure like in Figure 1:
 
 When you don't want a given task to have a color, you can set the __ShowCategoryIndicator__ property of the TaskBoardCardModel to false. We are going to set this property to false to the second TaskBoardCardModel element from __Example 1__. 
 
-#### __[C#] Example 3: Hide Category Indicator on the second item__
-{{region cs-radtaskboard-features-category-indicator-0}}
+__Example 3: Hide Category Indicator on the second item__
+```C#
     public MainWindow()
 	{
 		InitializeComponent();  
@@ -129,7 +129,7 @@ When you don't want a given task to have a color, you can set the __ShowCategory
 
 		return tasks;
 	}
-{{endregion}}
+```
 
 __Figure 2__ demonstrates this change.
 

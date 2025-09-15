@@ -13,8 +13,8 @@ position: 10
 As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** method that allows you to extract the records from your ItemsSource that were used for accumulating the result for a particular row and column. The GetUnderlyingData method takes two parameters: **Row Group** and **Column Group**.
 
 {% if site.site_name == 'Silverlight' %}
-#### __[C#] Example 1: Calling GetUnderlyingData on Cell Double-Click__
-{{region cs-radpivotgrid-features-localdatasourceprovider-drilldown_1}}
+__Example 1: Calling GetUnderlyingData on Cell Double-Click__
+```C#
 	private void pivotGrid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
         if (e.ClickCount == 2)
@@ -35,11 +35,11 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 			}
         }
     }
-{{endregion}}
+```
 {% endif %}
 {% if site.site_name == 'WPF' %}
-#### __[C#] Example 1: Calling GetUnderlyingData on Cell Double-Click__
-{{region cs-radpivotgrid-features-localdatasourceprovider-drilldown_2}}
+__Example 1: Calling GetUnderlyingData on Cell Double-Click__
+```C#
 	private void pivotGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
 	{
 		var pivotGrid = sender as RadPivotGrid;
@@ -57,12 +57,12 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 		    }
 		}
 	}
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-#### __[VB.NET] Example 1: Calling GetUnderlyingData on Cell Double-Click__
-{{region vb-radpivotgrid-features-localdatasourceprovider-drilldown_1}}
+__Example 1: Calling GetUnderlyingData on Cell Double-Click__
+```VB.NET
 	Private Sub pivotGrid_MouseLeftButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
 		If e.ClickCount = 2 Then
 			Dim pivotGrid = TryCast(sender, RadPivotGrid)
@@ -78,11 +78,11 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 			End If
 		End If
 	End Sub
-{{endregion}}
+```
 {% endif %}
 {% if site.site_name == 'WPF' %}
-#### __[VB.NET] Example 1: Calling GetUnderlyingData on Cell Double-Click__
-{{region vb-radpivotgrid-features-localdatasourceprovider-drilldown_2}}
+__Example 1: Calling GetUnderlyingData on Cell Double-Click__
+```VB.NET
 	Private Sub pivotGrid_MouseDoubleClick(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
 			Dim pivotGrid = TryCast(sender, RadPivotGrid)
 			If pivotGrid IsNot Nothing Then
@@ -96,7 +96,7 @@ As of **R1 2017**, **LocalDataSourceProvider** exposes a **GetUnderlyingData** m
 				End If
 			End If
 	End Sub
-{{endregion}}
+```
 {% endif %}
 
 Once RadPivotGrid has finished processing the underlying data, the newly-introduced **GetUnderlyingDataCompleted** event will be fired. Its **DrillDownCompletedEventArgs** have two properties:
@@ -108,9 +108,9 @@ Once RadPivotGrid has finished processing the underlying data, the newly-introdu
 
 >importantThe GetUnderlyingDataCompleted event is raised on multiple threads, so it is required to use **Dispatcher** when executing custom logic inside of the event handler.
 
-#### __[C#] Example 2: The GetUnderlyingDataCompleted Event Handler__
+__Example 2: The GetUnderlyingDataCompleted Event Handler__
 
-{{region cs-radpivotgrid-features-localdatasourceprovider-drilldown_3}}
+```C#
 	private void dataProvider_GetUnderlyingDataCompleted(object sender, DrillDownCompletedEventArgs e)
     {
 		Dispatcher.BeginInvoke(new Action(() => 
@@ -125,11 +125,8 @@ Once RadPivotGrid has finished processing the underlying data, the newly-introdu
 	        }
 		}));
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: The GetUnderlyingDataCompleted Event Handler__
-
-{{region vb-radpivotgrid-features-localdatasourceprovider-drilldown_3}}
+```
+```VB.NET
 	Private Sub dataProvider_GetUnderlyingDataCompleted(ByVal sender As Object, ByVal e As DrillDownCompletedEventArgs)
 			Dispatcher.BeginInvoke(New Action(Sub()
 				If e.InnerExceptions.Count() = 0 Then
@@ -139,7 +136,7 @@ Once RadPivotGrid has finished processing the underlying data, the newly-introdu
 				End If
 			End Sub))
 	End Sub
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 >A better example of the Drill Down functionality can be found [here](https://demos.telerik.com/silverlight/#PivotGrid/DrillDown).

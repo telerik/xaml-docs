@@ -20,10 +20,10 @@ The __SerializationId must be unique__. If there are elements with matching __Se
 
 If an element doesn't have __SerializationId__ property set, it will not be saved in the serialized XML file. So, it will be removed from the layout when the XML file loads.
 
-#### __[XAML] Example 1: Setting SerializationId in XAML__
-{{region layoutcontrol-features-serializaion-01}}
+__Example 1: Setting SerializationId in XAML__
+```XAML
 	<telerik:RadLayoutControl telerik:RadLayoutControl.SerializationId="myLayoutControlID" />
-{{endregion}}
+```
 
 When moving an element (via drag and drop) that doesn't have a LayoutControlGroup parent, the __element is automatically wrapped in a LayoutControlGroup__ which is added in the RadLayoutControl and marked as automatically generated.
  
@@ -31,15 +31,15 @@ When moving an element (via drag and drop) that doesn't have a LayoutControlGrou
 
 The layout can be saved via the __SaveToXmlString()__ method.
 
-#### __[C#] Example 2: Saving the layout__
-{{region layoutcontrol-features-serializaion-02}}
+__Example 2: Saving the layout__
+```C#
 	string serializationString = this.layoutControl.SaveToXmlString();
-{{endregion}}
+```
 
 The groups that are generated automatically at runtime are also serialized, but their SerializationId is not set. If you want the serialization/deserialization to work properly you will need to manually set the __SerializationId__ in the __ElementSaving__ event of __RadLayoutControl__.
 	
-#### __[C#] Example 3: Setting SerializationId in code__
-{{region layoutcontrol-features-serializaion-03}}
+__Example 3: Setting SerializationId in code__
+```C#
 	private void layoutControl_ElementSaving(object sender, Telerik.Windows.Controls.LayoutControl.Serialization.LayoutElementSavingEventArgs e)
 	{
 		string serializationId = RadLayoutControl.GetSerializationId(e.Element);
@@ -49,16 +49,16 @@ The groups that are generated automatically at runtime are also serialized, but 
 			RadLayoutControl.SetSerializationId(e.Element, serializationId);
 		}
 	}
-{{endregion}}
+```
 	
 ## Loading the layout
 
 The layout can be saved via the __LoadFromXmlString()__ method.
 
-#### __[C#] Example 4: Loading the layout__
-{{region layoutcontrol-features-serializaion-04}}
+__Example 4: Loading the layout__
+```C#
 	this.layoutControl.LoadFromXmlString(serializationString);
-{{endregion}}
+```
 
 ## Loading elements removed from the visual tree
 
@@ -68,8 +68,8 @@ By default the RadLayoutControl will loaded only items which are in the visual t
 
 To load an element, which has been removed between the save and load process, you can subscribe to the __ElementLoading__ event for this purpose. This event occurs when an element loading operation starts. For any element that is no presented in the visual tree the __e.Element__ property from the event arguments will be __Null__. You can use this to create a new instance of the removed element and assign it on the __e.Element__ property. The type of the currently loaded element can be get from the __e.Info__ property from the event arguments.
 
-#### __[C#] Example 5: Create new instance of the removed element__
-{{region layoutcontrol-features-serializaion-05}}
+__Example 5: Create new instance of the removed element__
+```C#
 	private void LayoutControl_ElementLoading(object sender, Telerik.Windows.Controls.LayoutControl.Serialization.LayoutElementLoadingEventArgs e)
         {
             if (e.Element == null)
@@ -98,7 +98,7 @@ To load an element, which has been removed between the save and load process, yo
             }
             return null;
         }
-{{endregion}}
+```
 
 ## List of default saved properties
 
@@ -155,8 +155,8 @@ __RadLayoutControl__ exposes several events relevant to the serialization proces
 
 You can use the __ElementSaving__ or the __ElementSaved__ events to save a custom property. And then __ElementLoading__ or __ElementLoaded__ to load it.
 
-#### __[C#] Example 6: Saving custom property__
-{{region layoutcontrol-features-serializaion-06}}
+__Example 6: Saving custom property__
+```C#
 	private void layoutControl_ElementSaving(object sender, Telerik.Windows.Controls.LayoutControl.Serialization.LayoutElementSavingEventArgs e)
 	{
 		// save a custom property
@@ -169,18 +169,18 @@ You can use the __ElementSaving__ or the __ElementSaved__ events to save a custo
 		var opacity = e.Info["Opacity"];
 		e.Element.Opacity = double.Parse(opacity.ToString());
 	}
-{{endregion}}
+```
 	
 You can also use the serialization events to replace the value of any of the automatically saved/loaded properties.
 
-#### __[C#] Example 7: Replacing the value of a saved property__	
-{{region layoutcontrol-features-serializaion-07}}
+__Example 7: Replacing the value of a saved property__	
+```C#
 	private void layoutControl_ElementSaved(object sender, Telerik.Windows.Controls.LayoutControl.Serialization.LayoutElementSerializationEventArgs e)
 	{
 		// replace the value of the VerticalAlignment property saved in the SerializationInfo object
 		e.Info["VerticalAlignment"] = VerticalAlignment.Top;		
 	}
-{{endregion}}
+```
 
 Note that you can use the __Element__ property of the __ElementLoading__ event arguments and replace it with another element. This could be useful in a scenario where the Element property is __null__.
 
@@ -188,23 +188,23 @@ Note that you can use the __Element__ property of the __ElementLoading__ event a
 
 You can use the __ElementLoading__ and __ElementSaving__ events to prevent the serialization/deserialization process. 
 
-#### __[C#] Example 8: Cancel loading__	
-{{region layoutcontrol-features-serializaion-08}}
+__Example 8: Cancel loading__	
+```C#
 	private void layoutControl_ElementLoading(object sender, Telerik.Windows.Controls.LayoutControl.Serialization.LayoutElementLoadingEventArgs e)
 	{	
 		e.Cancel = true;
 	}
-{{endregion}}
+```
 	
 > The elements in the RadLayoutControl are cleared before the ElementLoading event is invoked. If you cancel it the corresponding element (e.Element) won't be re-added in the visual tree.
 
-#### __[C#] Example 9: Cancel saving__	
-{{region layoutcontrol-features-serializaion-09}}
+__Example 9: Cancel saving__	
+```C#
 	private void layoutControl_ElementSaving(object sender, Telerik.Windows.Controls.LayoutControl.Serialization.LayoutElementSavingEventArgs e)
 	{
 		e.Cancel = true;	
 	}
-{{endregion}}
+```
 
 <br />
 
@@ -214,8 +214,8 @@ This section demonstrate how the saved XML string is structured.
 	
 Saving the layout defined in __Example 10__ will generated the XML from __Example 10__. You can notice the __LayoutControlGroup__ with *x:Name="layoutControlGroup_3"* was not serialized.
 
-#### __[XAML] Example 10: LayoutControl defined in XAML__
-{{region layoutcontrol-features-serializaion-10}}
+__Example 10: LayoutControl defined in XAML__
+```XAML
 	<telerik:RadLayoutControl x:Name="layoutControl" telerik:RadLayoutControl.SerializationId="myLayoutControlID">
 		<Button Content="Button" telerik:RadLayoutControl.SerializationId="buttonID_1"/>
 		<Border Background="Bisque" telerik:RadLayoutControl.SerializationId="buttonID_2"/>
@@ -229,10 +229,10 @@ Saving the layout defined in __Example 10__ will generated the XML from __Exampl
 			</telerik:LayoutControlGroup>
 		</telerik:LayoutControlGroup>
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
-#### __[C#] Example 11: Generated XML string__
-{{region layoutcontrol-features-serializaion-11}}
+__Example 11: Generated XML string__
+```C#
 	<?xml version="1.0" encoding="utf-8"?>
 	<RadLayoutControl Type="Telerik.Windows.Controls.RadLayoutControl" Width="NaN" Height="NaN" MinWidth="0" MinHeight="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SerializationId="myLayoutControlID" Orientation="Horizontal" IsAutoGenerated="false" IsInEditMode="false">
 	  <Items>
@@ -250,7 +250,7 @@ Saving the layout defined in __Example 10__ will generated the XML from __Exampl
 		</LayoutControlGroup>
 	  </Items>
 	</RadLayoutControl>
-{{endregion}}	
+```	
 	
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

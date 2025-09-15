@@ -48,11 +48,11 @@ Printing __RadSpreadsheet__ is easily done programmatically through the __Print(
 
 #### [C#] Example 1: Print RadSpreadsheet programmatically
 
-{{region radspreadsheet-ui-printing_0}}
+```C#
 
 	PrintWhatSettings printWhatSettings = new PrintWhatSettings(ExportWhat.ActiveSheet, false);
 	this.radSpreadsheet.Print(printWhatSettings);
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
@@ -67,7 +67,7 @@ Depending on whether you want to show a __PrintDialog__ before printing, you can
 
 #### [C#] Example 1: Print RadSpreadsheet programmatically
 
-{{region radspreadsheet-ui-printing_1}}
+```C#
 
 	PrintWhatSettings printWhatSettings = new PrintWhatSettings(ExportWhat.ActiveSheet, false);
 	
@@ -77,7 +77,7 @@ Depending on whether you want to show a __PrintDialog__ before printing, you can
 	// Prints silently to the default printer without showing the print dialog.
 	this.radSpreadsheet.Print(printWhatSettings, new PrintDialog());
 	
-{{endregion}}
+```
 
 {% endif %}
 
@@ -125,12 +125,12 @@ The following code snippet shows how to integrate the print preview with RadRibb
 
 #### [XAML] Example 2: Integrate the print preview with RadRibbonView's backstage
 
-{{region radspreadsheet-ui-printing_0}}
+```XAML
 
 	        <telerik:RadRibbonBackstageItem Header="Print" IsDefault="false">
 	            <spreadsheetControls:PrintPreviewControl RadSpreadsheet="{Binding Path=RadSpreadsheet, Mode=OneTime}" />
 	        </telerik:RadRibbonBackstageItem>
-{{endregion}}
+```
 
 
 #### Figure 4: Print preview

@@ -16,8 +16,8 @@ position: 23
 
 The following example shows how to display the new row:
 
-#### __[C#] Defining the underlying object and view model__
-{{region gridview-new-row-0}}
+__Defining the underlying object and view model__
+```C#
     public class Person
     {
         //Expose an empty constructor to create a new row
@@ -43,10 +43,8 @@ The following example shows how to display the new row:
 
         public ObservableCollection<Person> People { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Defining the underlying object and view model__
-{{region gridview-new-row-1}}
+```
+```VB.NET
     Public Class Person
         'Expose an empty constructor to create a new row
         Public Sub New()
@@ -76,10 +74,10 @@ The following example shows how to display the new row:
 
         Public Property People As ObservableCollection(Of Person)
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Defining the RadGridView to show the new row__
-{{region gridview-new-row-2}}
+__Defining the RadGridView to show the new row__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MainViewModel/>
@@ -88,7 +86,7 @@ The following example shows how to display the new row:
                              ItemsSource="{Binding People}"
                              NewRowPosition="Top"/>
     </Grid>
-{{endregion}}
+```
 
 __The new row of RadGridView for inserting data__
 
@@ -102,8 +100,8 @@ The `NewRowPosition` property allows you to specify whether the new row will be 
 * `Top`&mdash;Displays the new row on top of the displayed items.
 * `Bottom`&mdash;Displays the new row on the bottom of the items in the current view port. For this option, the `GroupRenderMode` property of RadGridView has to be set to `Flat`.
 
-#### __[XAML] Setting the new row position to be on the bottom__
-{{region gridview-new-row-3}}
+__Setting the new row position to be on the bottom__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MainViewModel/>
@@ -113,7 +111,7 @@ The `NewRowPosition` property allows you to specify whether the new row will be 
                              GroupRenderMode="Flat"
                              NewRowPosition="Bottom"/>
     </Grid>
-{{endregion}}
+```
 
 __RadGridView's new row positioned on the bottom__
 
@@ -123,8 +121,8 @@ __RadGridView's new row positioned on the bottom__
 
 RadGridView provides the ability to customize the content of the new row. To do so, you can utilize the `GridViewNewRowContent` and `GridViewNewRowContentTemplate` properties. 
 
-#### __[XAML] Using the GridViewNewRowContent and GridViewNewRowContentTemplate__
-{{region gridview-new-row-4}}
+__Using the GridViewNewRowContent and GridViewNewRowContentTemplate__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MainViewModel/>
@@ -144,7 +142,7 @@ RadGridView provides the ability to customize the content of the new row. To do 
             </telerik:RadGridView.GridViewNewRowContentTemplate>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 __RadGridView's new row with customized content__
 

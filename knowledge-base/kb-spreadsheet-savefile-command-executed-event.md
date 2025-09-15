@@ -32,8 +32,8 @@ How to listen for the save file command of RadSpreadsheet for WPF.
 
 To do this, you can subscribe to the `UICommandExecuted` event of the `RadWorksheetEditor` object.
 
-#### __[C#]__
-{{region kb-spreadsheet-savefile-command-executed-event-0}}
+
+```C#
 	RadWorksheetEditor editorCache = null;
 
 	private void RadSpreadsheet_ActiveSheetEditorChanged(object? sender, EventArgs e)
@@ -58,4 +58,4 @@ To do this, you can subscribe to the `UICommandExecuted` event of the `RadWorksh
 		  // execute your code here
 		}
 	}
-{{endregion}}
+```

@@ -17,7 +17,7 @@ The Graph Colorizer has two major properties: __ShapeFillCollection__ and __High
 The following example will demonstrate how you can color the RadMap using the Graph Colorizer. 
 
 #### __XAML__
-{{region radmap-features-colorizer_7}}
+```XAML
 	<telerik:InformationLayer.Colorizer>
 		<telerik:GraphColoriser>
 			<telerik:GraphColoriser.ShapeFillCollection>
@@ -32,7 +32,7 @@ The following example will demonstrate how you can color the RadMap using the Gr
 			</telerik:GraphColoriser.HighlightFillCollection>            
 		</telerik:GraphColoriser>
 	</telerik:InformationLayer.Colorizer>
-{{endregion}}
+```
 
 The result can be seen below:
 

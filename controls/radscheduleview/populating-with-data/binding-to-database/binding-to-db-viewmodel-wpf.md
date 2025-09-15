@@ -19,7 +19,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 
 #### __XAML__
 
-{{region radscheduleview-populating-with-data-binding-to-db-viewmodel-wpf_0}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"/>
@@ -49,7 +49,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 		</telerik:RadBusyIndicator>
 		<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
 	</Grid>
-{{endregion}}
+```
 
 >The appointments are loaded from the database when the VisibleRangeChanged command is executed.
 
@@ -57,7 +57,7 @@ When "Save data" button is clicked, we save the data to the server.
 
 #### __C#__
 
-{{region radscheduleview-populating-with-data-binding-to-db-viewmodel-wpf_1}}
+```C#
 	private void OnSaveExecuted(object param) 
 	{
 		ScheduleViewRepository.SaveData();
@@ -69,7 +69,7 @@ When "Save data" button is clicked, we save the data to the server.
 	{
 		return ScheduleViewRepository.Context.SaveChanges() > 0;
 	}
-{{endregion}}
+```
 
 ## ViewModel
 
@@ -81,7 +81,7 @@ Here is the code:
 
 #### __C#__
 
-{{region radscheduleview-populating-with-data-binding-to-db-viewmodel-wpf_2}}
+```C#
 	private void LoadData()
 	{
 		this.ResourceTypes.AddRange(ScheduleViewRepository.Context.SqlResourceTypes);
@@ -90,13 +90,13 @@ Here is the code:
 	
 		this.Categories.AddRange(ScheduleViewRepository.Context.Categories);
 	}
-{{endregion}}
+```
 
 Also, we need to handle the Appointments.CollectionChanged event and in the handler we add or remove the items from the ObjectSets:
 
 #### __C#__
 
-{{region radscheduleview-populating-with-data-binding-to-db-viewmodel-wpf_3}}
+```C#
 	private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
 	{
 		if (e.Action == NotifyCollectionChangedAction.Add)
@@ -133,4 +133,4 @@ Also, we need to handle the Appointments.CollectionChanged event and in the hand
 			}
 		}
 	}
-{{endregion}}
+```

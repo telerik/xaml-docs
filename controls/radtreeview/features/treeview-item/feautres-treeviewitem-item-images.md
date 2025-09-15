@@ -22,7 +22,7 @@ For the purpose of this tutorial, the treeview defined in the next XAML snippet 
 
 #### __XAML__
 
-{{region radtreeview-feautres-treeviewitem-item-images_0}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -39,7 +39,7 @@ For the purpose of this tutorial, the treeview defined in the next XAML snippet 
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 ![{{ site.framework_name }} RadTreeView Sample Structure](images/RadTreeView_TreeViewItemImages_001.PNG)
 
@@ -57,7 +57,7 @@ When you store all your images for the TreeView into a single folder you can use
 
 #### __XAML__
 
-{{region radtreeview-feautres-treeviewitem-item-images_1}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView"
 	    ImagesBaseDir="/Examples/Common/Images/Vista Icons/">
 	    <telerik:RadTreeViewItem Header="Sport Categories" DefaultImageSrc="Icon1.png">
@@ -75,7 +75,7 @@ When you store all your images for the TreeView into a single folder you can use
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 The result is: 
 
@@ -99,24 +99,24 @@ When setting the __DefaultImageSrc__, __ExpandedImageSrc__ and __SelectedImageSr
 
 	#### __C#__
 
-	{{region radtreeview-feautres-treeviewitem-item-images_2}}
+	```C#
 		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
 		{
 		 e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png";
 		 e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png";
 		 e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"; 
 		}
-		{{endregion}}
+		```
 
 	#### __VB.NET__
 
-	{{region radtreeview-feautres-treeviewitem-item-images_3}}
+	```VB.NET
 		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
 			e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png"
 			e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png"
 			e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"
 		End Sub
-		{{endregion}}
+		```
 
 or
 
@@ -124,7 +124,7 @@ or
 
 	#### __C#__
 
-	{{region radtreeview-feautres-treeviewitem-item-images_4}}
+	```C#
 		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
 		{
 		 BitmapImage defaultImage = new BitmapImage(new Uri("Icon1.png", UriKind.Relative));
@@ -134,7 +134,7 @@ or
 		 BitmapImage selectedImage = new BitmapImage(new Uri("Icon3.png", UriKind.Relative));
 		 e.PreparedItem.SelectedImageSrc = selectedImage;
 		}
-		{{endregion}}
+		```
 
 
 
@@ -142,7 +142,7 @@ or
 
 	#### __VB.NET__
 
-	{{region radtreeview-feautres-treeviewitem-item-images_5}}
+	```VB.NET
 		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
 			Dim defaultImage As New BitmapImage(New Uri("Icon1.png", UriKind.Relative))
 			e.PreparedItem.DefaultImageSrc = defaultImage
@@ -151,7 +151,7 @@ or
 			Dim selectedImage As New BitmapImage(New Uri("Icon3.png", UriKind.Relative))
 			e.PreparedItem.SelectedImageSrc = selectedImage
 		End Sub
-		{{endregion}}
+		```
 
 ## Using Images from the Client Bin Directory or a Relative Directory
 
@@ -165,9 +165,9 @@ For example, see these cases:
 
 #### __XAML__
 
-{{region radtreeview-feautres-treeviewitem-item-images_6}}
+```XAML
 	ImagesBaseDir="/Examples/Common/Images/Vista Icons/"
-	{{endregion}}
+	```
 
 Which means that the "Examples" directory is located in the same directory where the .XAP file is placed and the images are located in the "Vista Icons" directory. 
 

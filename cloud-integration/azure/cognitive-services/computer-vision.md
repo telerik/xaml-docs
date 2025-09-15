@@ -34,9 +34,9 @@ You can then [set a theme]({%slug styling-apperance-implicit-styles-overview%}) 
 
 Once you've set a theme for your application, add the following dictionary to your list of merged dictionaries which will enable you to use the **TelerikWebUI** [font glyphs]({%slug common-styling-appearance-glyphs-reference-sheet%}) for the icons in the project.
 
-#### __[XAML] Example 1: The User Control's Definition__
+__Example 1: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-image-analysis-1}}
+```XAML
     <Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -45,15 +45,15 @@ Once you've set a theme for your application, add the following dictionary to yo
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 ## Define the User Control's Layout
 
 Now, add a new **UserControl** to your project. You can give it a descriptive name, such as ImageUploadControl, for example. Next, define the following XAML:
 
-#### __[XAML] Example 2: The User Control's Definition__
+__Example 2: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-image-analysis-1}}
+```XAML
 
     <UserControl x:Class="AzureCognitiveServices.ImageUploadControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -86,7 +86,7 @@ Now, add a new **UserControl** to your project. You can give it a descriptive na
 			</Border>
 		</Grid>
 	</UserControl>
-{{endregion}}
+```
 
 ## Add the Newtonsoft.Json NuGet Package
 
@@ -100,9 +100,9 @@ You also need to add a reference to **System.Net.Http** which holds the API requ
 
 The code in **Example 3** handles the button's **Click** event and uses the Computer Vision API to analyze the image uploaded file which is selected from a [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}).
 
-#### __[XAML] Example 3: The User Control's Definition__
+__Example 3: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-image-analysis-2}}
+```XAML
 
     public partial class ImageUploadControl : UserControl
 	{
@@ -141,13 +141,13 @@ The code in **Example 3** handles the button's **Click** event and uses the Comp
 
 		// ...
 	}
-{{endregion}}
+```
 
 What's left to do is to define the **MakeAnalysisRequest** method which will get the actual response from the service for the provided image and the **CalculatePortraitProbability** method which will calculate the final result based on the **categories** and **tags** from the response.
 
-#### __[XAML] Example 4: The User Control's Definition__
+__Example 4: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-image-analysis-3}}
+```XAML
 
 	/// <summary>
 	/// Gets the analysis of the specified image file by using the Computer Vision REST API.
@@ -255,7 +255,7 @@ What's left to do is to define the **MakeAnalysisRequest** method which will get
 
 		return 0;
 	}
-{{endregion}}
+```
 
 The code from **Example 4** creates an HTTP request which is asynchronously processed by the service. The returned JSON is then deserialized into an **ImageResponse** instance which is modeled to hold the data (an example of the actual JSON which is returned can be found in [this article](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/quickstarts/csharp#analyze-an-image-response)).
 
@@ -267,12 +267,12 @@ Once the probability is calculated it is passed to the **Confidence** property o
 
 That's it. You can now use the control however you find necessary to analyze uploaded images.
 
-#### __[XAML] Example 5: Use the User Control__
+__Example 5: Use the User Control__
 
-{{region cloud-integration-cognitive-services-image-analysis-4}}
+```XAML
 
 	<local:ImageUploadControl Height="60" />
-{{endregion}}
+```
 
 **Figure 1** shows the final result in the Office2016 theme.
 

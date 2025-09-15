@@ -30,15 +30,15 @@ res_type: kb
 
 To display the content of the WindowsFormsHost you need to make the RadWindow control non-transparent. This can be achieved by setting the attached **WindowInteropHelper.AllowTransparency** property to **False**.
 
-#### __[C#]__
-{{region kb-window-howto-display-windowsformshost-in-radwindow-0}}
+
+```C#
 	public App()
 	{
 		var window = new MainWindow();
 		RadWindowInteropHelper.SetAllowTransparency(window, false);
 		window.Show();
 	}
-{{endregion}}
+```
 
 ## See Also
 

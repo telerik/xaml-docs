@@ -33,8 +33,8 @@ How to change the culture of the [find dialog]({%slug radpdfviewer-find-dialog%}
 
 To change the localization settings of the find dialog, you will need to unregiser it in order to unload it. Then set the application culture and, register the dialog again.
 
-#### __[C#]__
-{{region kb-changelocalization-at-runtime}}
+
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    	RadPdfViewerAttachedComponents.SetRegisterFindDialog(pdfViewer, false);
@@ -42,4 +42,4 @@ To change the localization settings of the find dialog, you will need to unregis
 	    	Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
 	    	RadPdfViewerAttachedComponents.SetRegisterFindDialog(pdfViewer, true);
 	}
-{{endregion}}
+```

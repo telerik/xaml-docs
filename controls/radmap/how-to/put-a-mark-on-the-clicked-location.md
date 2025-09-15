@@ -21,7 +21,7 @@ The following example will use a __RadMap__ with one __InformationLayer__. The _
 Here is the code for the example:
 
 #### __XAML__
-{{region radmap-how-to-put-a-mark-on-the-clicked-location_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480"
@@ -44,24 +44,24 @@ Here is the code for the example:
 	        </telerik:InformationLayer.ItemTemplate>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 #### __C#__
-{{region radmap-how-to-put-a-mark-on-the-clicked-location_1}}
+```C#
 	private void radMap_MapMouseClick( object sender, MapMouseRoutedEventArgs eventArgs )
 	{
 	    this.informationLayer.Items.Clear();
 	    this.informationLayer.Items.Add( eventArgs.Location );
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap-how-to-put-a-mark-on-the-clicked-location_2}}
+```VB.NET
 	Private Sub radMap_MapMouseClick(ByVal sender As Object, ByVal eventArgs As MapMouseRoutedEventArgs)
 		Me.informationLayer.Items.Clear()
 		Me.informationLayer.Items.Add(eventArgs.Location)
 	End Sub
-{{endregion}}
+```
 
 ## See Also
  * [Information Layer]({%slug radmap-features-information-layer%})

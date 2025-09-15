@@ -19,8 +19,8 @@ The __RadDiagramRibbon__ control allows you to easily add one or all of the foll
 
 To add a __RadDiagramToolbox__ to the RadDiagramRibbon control, you can bind the __ToolBox__ property to a RadDiagramToolBox using an ElementName binding.
 
-#### __[XAML] Example 1: Add RadDiagramToolbox to DiagramRibbon__
-{{region xaml-raddiagram-extensions-diagramribbon-extensions-0}}
+__Example 1: Add RadDiagramToolbox to DiagramRibbon__
+```XAML
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -37,14 +37,14 @@ To add a __RadDiagramToolbox__ to the RadDiagramRibbon control, you can bind the
         </telerik:RadDiagram>
         <telerik:RadDiagramToolbox x:Name="toolBox" Grid.Column="0" Grid.Row="1" ItemsSource="{Binding GalleryItems}" />      
     </Grid>
-{{endregion}}
+```
 
 ## DiagramNavigationPane
 
 To add a __RadDiagramNavigationPane__ to the RadDiagramRibbon control, you can bind the __NavigationPane__ property to a RadDiagramNavigationPane using an ElementName binding.
 
-#### __[XAML] Example 2: Add RadDiagramNavigationPane to DiagramRibbon__
-{{region xaml-raddiagram-extensions-diagramribbon-extensions-1}}
+__Example 2: Add RadDiagramNavigationPane to DiagramRibbon__
+```XAML
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -63,14 +63,14 @@ To add a __RadDiagramNavigationPane__ to the RadDiagramRibbon control, you can b
         </telerik:RadDiagram>
         <telerik:RadDiagramNavigationPane Grid.Column="1" Grid.Row="1" x:Name="navigationPane" Diagram="{Binding ElementName=diagram}" HorizontalAlignment="Left" VerticalAlignment="Bottom" />    
     </Grid>
-{{endregion}}
+```
 
 ## RadDiagramRuler
 
 To add a __RadDiagramRuler__ to the DiagramRibbon the __VerticalRuler__ and __HorizontalRuler__ properties can be bound to RadDiagramRuler instances using an ElementName binding.
 
-#### __[XAML] Example 3: Add RadDiagramRuler to DiagramRibbon__
-{{region xaml-raddiagram-extensions-diagramribbon-extensions-2}}
+__Example 3: Add RadDiagramRuler to DiagramRibbon__
+```XAML
 		<Grid>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
@@ -91,14 +91,14 @@ To add a __RadDiagramRuler__ to the DiagramRibbon the __VerticalRuler__ and __Ho
 			<telerik:RadDiagramRuler x:Name="verticalRuler" Placement="Left" Diagram="{Binding ElementName=diagram}" Grid.Row="1" Grid.Column="0"/>
 			<telerik:RadDiagramRuler x:Name="horizontalRuler" Placement="Bottom" Diagram="{Binding ElementName=diagram}" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2"/>
 		</Grid>
-{{endregion}}
+```
 
 ## QuickAccessToolBar
 
 To add __QuickAccessToolBar__ to the DiagramRibbon you can bind the **QuickAccessToolBar** property a QuickAccessToolBar instance using an ElementName binding.
 
-#### __[XAML] Example 4: Add QuickAccessToolBar to DiagramRibbon__
-{{region xaml-raddiagram-extensions-diagramribbon-extensions-3}}
+__Example 4: Add QuickAccessToolBar to DiagramRibbon__
+```XAML
 		<Grid>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
@@ -120,14 +120,14 @@ To add __QuickAccessToolBar__ to the DiagramRibbon you can bind the **QuickAcces
 				<telerik:RadDiagramShape Content="Shape 1"/>
 			</telerik:RadDiagram>    
 		</Grid>
-{{endregion}}
+```
 
 ## RadRibbonBackstage
 
 To add a __Backstage__ to the DiagramRibbon you can use the __Backstage__ property and declare a __RadRibbonBackstage__ element.
 
-#### __[XAML] Example 5: Add Backstage to DiagramRibbon__
-{{region xaml-raddiagram-extensions-diagramribbon-extensions-4}}
+__Example 5: Add Backstage to DiagramRibbon__
+```XAML
 	<Grid x:Name="LayoutRoot">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
@@ -148,7 +148,7 @@ To add a __Backstage__ to the DiagramRibbon you can use the __Backstage__ proper
 			<telerik:RadDiagramShape Content="Shape 1"/>
 		</telerik:RadDiagram>    
 	</Grid>
-{{endregion}}
+```
 
 ## See Also
 

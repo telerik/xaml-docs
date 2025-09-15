@@ -20,8 +20,8 @@ The __Validate()__ method of each rule will be executed providing the selected f
 
 There is a built-in validation rule (__CloudUploadFileSizeValidationRule__) that can be used to validate the size of the files. __Example 1__ demonstrates how you can use the rule.
 
-#### __[XAML] Example 1: Adding a validation rule__
-{{region radcloudupload-features-validation-01}}
+__Example 1: Adding a validation rule__
+```XAML
 	<telerik:RadCloudUpload>
 		<telerik:RadCloudUpload.ValidationRules>
 			<!--10MB limit-->
@@ -29,7 +29,7 @@ There is a built-in validation rule (__CloudUploadFileSizeValidationRule__) that
 		</telerik:RadCloudUpload.ValidationRules>
 	 ...
 	</telerik:RadCloudUpload>
-{{endregion}}
+```
 
 ## See Also
 * [Create Custom Validation Rule]({%slug radcloudupload-howto-create-custom-validation-rule%})

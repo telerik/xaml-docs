@@ -76,9 +76,9 @@ The following section will provide some detailed information about the following
 
 The __CanDrop__(*DragDropState* state) method gets the value specifying whether the drag and drop operation can be finished or not. The method is called  multiple times during the operation. On each call you can check if a requirement is fulfilled in order to prevent or allow the completion of the drop. For example, you can easily prevent copying Appointments when dragging them with the Control Key pressed by returning false if the key is pressed:
 
-#### __[C#] Example 1: Overriding the CanDrop method__
+__Example 1: Overriding the CanDrop method__
 
-{{region radscheduleview-features-draganddrop_1}}
+```C#
 	public override bool CanDrop(DragDropState state)
 	{
 	    if (state.IsControlPressed)
@@ -88,15 +88,15 @@ The __CanDrop__(*DragDropState* state) method gets the value specifying whether 
 	
 	    return base.CanDrop(state);
 	}
-{{endregion}}
+```
 
 ### CanStartDrag(DragDropState state)
 
 __CanStartDrag__(*DragDropState* state) - Gets the value specifying whether the drag operation can be performed or not. The method is called at the moment when the operation is starting. For example, if you need to prevent dragging of more than two Appointments, you can override the method the following way:
 
-#### __[C#] Example 2: Overriding the CanStartDrag method__
+__Example 2: Overriding the CanStartDrag method__
 
-{{region radscheduleview-features-draganddrop_2}}
+```C#
 	public override bool CanStartDrag(DragDropState state)
 	{
 	    if (state.DraggedAppointments.Count() > 2)
@@ -106,15 +106,15 @@ __CanStartDrag__(*DragDropState* state) - Gets the value specifying whether the 
 	
 	    return base.CanStartDrag(state);
 	} 
-{{endregion}}
+```
 
 ### Drop(DragDropState state)
 
 __Drop__(*DragDropState* state) - The method is called right after the Appointment is dropped and before the DragDropCompleted method is called. For example, if you want to add a Category to the just dropped Appointment, you can do it as shown below:
 
-#### __[C#] Example 3: Override the Drop method__
+__Example 3: Override the Drop method__
 
-{{region radscheduleview-features-draganddrop_3}}
+```C#
 	public override void Drop(DragDropState state)
 	{
 	    var appointment = state.Appointment as Appointment;
@@ -126,15 +126,15 @@ __Drop__(*DragDropState* state) - The method is called right after the Appointme
 	
 	    base.Drop(state);
 	}
-{{endregion}}
+```
 
 ### CanResize(DragDropState state)
 
 __CanResize__(*DragDropState* state) - Gets the value specifying whether the resize operation can be finished or not. The method is called multiple times during the Resize operation and you can easily stop the operation by returning false. The following example demonstrates how to stop the resizing when the duration becomes more than two hours and less than half an hour.
 
-#### __[C#] Example 4: Override the CanResize method__
+__Example 4: Override the CanResize method__
 
-{{region radscheduleview-features-draganddrop_4}}
+```C#
 	public override bool CanResize(DragDropState state)
 	{
 	    var destinationSlot = state.DestinationSlots.First() as Slot;
@@ -147,15 +147,15 @@ __CanResize__(*DragDropState* state) - Gets the value specifying whether the res
 	
 	    return base.CanResize(state);
 	}
-{{endregion}}
+```
 
 ### CanStartResize(DragDropState state)
 
 __CanStartResize__(*DragDropState* state) - Gets the value specifying whether the resize operation can be performed or not. The method is called at the moment when the operation is starting. For example, if you need to prevent the resizing of an Appointment that is marked with the Busy TimeMarker, you will need to do it the following way:
 
-#### __[C#] Example 5: Override the CanStartResize method__
+__Example 5: Override the CanStartResize method__
 
-{{region radscheduleview-features-draganddrop_5}}
+```C#
 	public override bool CanStartResize(DragDropState state)
 	{
 	    var appointment = state.Appointment as Appointment;
@@ -167,15 +167,15 @@ __CanStartResize__(*DragDropState* state) - Gets the value specifying whether th
 	
 	    return base.CanStartResize(state);
 	}
-{{endregion}}
+```
 
 ### Resize(DragDropState state)
 
 __Resize__(*DragDropState* state) - The method is called right after the resize operation is finished. You can find the initial Appointment in the Appointment property of the *DragDropState* and the new information in the DestinationSlot property. So, for example, you can easily modify the Appointment subject after resizing in order to include the new duration as shown below:        
 
-#### __[C#] Example 6: Override the Resize method__
+__Example 6: Override the Resize method__
 
-{{region radscheduleview-features-draganddrop_6}}
+```C#
 	public override void Resize(DragDropState state)
 	{
 	    var appointment = state.Appointment as Appointment;
@@ -184,7 +184,7 @@ __Resize__(*DragDropState* state) - The method is called right after the resize 
 	    appointment.Subject = "New duration: " + duration.ToString("h\\:mm\\:ss");
 	    base.Resize(state);
 	}
-{{endregion}}
+```
 
 This is the result:
 
@@ -196,9 +196,9 @@ This is the result:
 
 __ConvertDraggedData__(Object data) - This method is fired when you drag appointments from a different source (another control or application) and is used to convert the data to an appointment. For example, if you are dragging from a ListBox to ScheduleView and you have objects of type Customer as an ItemsSource of the ListBox, you can convert the dragged Customer object to an Appointment the following way:           
 
-#### __[C#] Example 7: Override the ConvertDraggedData method__
+__Example 7: Override the ConvertDraggedData method__
 
-{{region radscheduleview-features-draganddrop_7}}
+```C#
 	public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
 	{
 	    if (Telerik.Windows.DragDrop.Behaviors.DataObjectHelper.GetDataPresent(data, typeof(Meeting), false))
@@ -214,7 +214,7 @@ __ConvertDraggedData__(Object data) - This method is fired when you drag appoint
 	
 	    return base.ConvertDraggedData(data);
 	}
-{{endregion}}
+```
 
 This will create a new Appointment with the Subject being the Name of the dropped customer as shown below:
 
@@ -224,9 +224,9 @@ This will create a new Appointment with the Subject being the Name of the droppe
 
 __CoerceDraggedItems__(*DragDropState* state) - Initializes the drag operation. This method could be used to filter the selected appointments. This method allows adding or removing Appointments to the selection depending on a specific condition. For example, if you need to filter the dragged Appointments by the Resource in order to move all the Appointments with the current Resource, you do it the following way:           
 
-#### __[C#] Example 8: Override the CoerceDraggedItems method__
+__Example 8: Override the CoerceDraggedItems method__
 
-{{region radscheduleview-features-draganddrop_8}}
+```C#
 	public override IEnumerable<IOccurrence> CoerceDraggedItems(DragDropState state)
 	{
 	    var resource = (state.Appointment as Appointment).Resources.First();
@@ -235,7 +235,7 @@ __CoerceDraggedItems__(*DragDropState* state) - Initializes the drag operation. 
 	
 	    return desiredAppointments;
 	}
-{{endregion}}
+```
 
 ### DragDropCompleted(DragDropState state)
 
@@ -250,21 +250,21 @@ __DragDropCanceled__( *DragDropState* state) - The method is called whenever the
 
 After the CustomDragDropBehavior is implemented, all you need is to set it as RadScheduleView.DragDropBehavior:
 
-#### __[XAML] Example 9: Set the CustomDragDropBehavior__
+__Example 9: Set the CustomDragDropBehavior__
 
-{{region radscheduleview-features-draganddrop_0}}
+```XAML
 	<telerik:RadScheduleView.DragDropBehavior>
 	  <local:CustomDragDropBehavior />
 	</telerik:RadScheduleView.DragDropBehavior>
-{{endregion}}
+```
 
 ### ResizeCursor
 
 The __ResizeCursor__ property was introduced with Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}. Using it you can change the cursor that indicates a resize operation is happening. That could be done initially or while resizing an Appointment, for example, inside the __CanResize__ method:
 
-#### __[C#] Example 10: Setting the ResizeCursor property__
+__Example 10: Setting the ResizeCursor property__
 
-{{region radscheduleview-features-draganddrop_0}}
+```C#
 	public override bool CanResize(DragDropState state)
 	{
 		var destinationSlot = state.DestinationSlots.First() as Slot;
@@ -279,7 +279,7 @@ The __ResizeCursor__ property was introduced with Q1 2016 release of UI for {% i
 		this.ResizeCursor = Cursors.SizeNS;
 		return base.CanResize(state);
 	}
-{{endregion}}
+```
 
 >The default cursor is represented by setting the ResizeCursor property value to null.
 

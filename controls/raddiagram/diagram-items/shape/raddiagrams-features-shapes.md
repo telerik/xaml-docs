@@ -28,19 +28,19 @@ This tutorial will walk you through the functionality and the main features of t
 The __RadDiagramShape__ is an object that describes the nodes of the diagram. You can configure its form using the __Geometry__ property as it allows you to define a custom geometry:		
 
 #### __XAML__
-{{region raddiagram-features-shapes-5}}
+```XAML
     <telerik:RadDiagramShape Width="80"
                              Height="80"
                              Geometry="M16.35,6.39 C16.28,7.36 12.26,20.45 12.26,20.45 L20.56,20.45 C20.56,20.45 16.64,7.54 16.53,6.39 z M12.30,0.50 L20.97,0.50 L32.50,33.50 L24.54,33.50 L22.23,26.16 L10.70,26.16 L8.42,33.50 L0.50,33.50 z"
                              Position="160,80" />		  
-{{endregion}}
+```
 
 ![Rad Diagram Features Shapes Custom Shape](../images/RadDiagram_Features_Shapes_CustomShape.png)
 
 or to use one of the predefined shape geometries:		
 
 #### __XAML__
-{{region raddiagram-features-shapes-6}}
+```XAML
     <telerik:RadDiagramShape x:Name="ConditionShape"
                     Width="80"
                     Height="80"
@@ -48,19 +48,19 @@ or to use one of the predefined shape geometries:
                     FontWeight="Bold"
                     Geometry="{telerik:FlowChartShape ShapeType=PredefinedShape}"
                     Position="160,80" />
-{{endregion}}
+```
 
 #### __C#__
-{{region raddiagram-features-shapes-7}}
+```C#
     RadDiagramShape shape = new RadDiagramShape();
     shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape);
-{{endregion}}
+```
 	
 #### __VB.NET__
-{{region raddiagram-features-shapes-8}}
+```VB.NET
     Dim shape As New RadDiagramShape()
     shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape)
-{{endregion}}
+```
 	
 >The __ShapeFactory__ class allows you to get a shape geometry from the __enums__ with predefined shapes. This way you can create a __RadDiagramShape__ in code-behind still taking advantage of the predefined list of shapes. The predefined shapes can be accesses in code-behind through the following enumerations:
 >	- __ArrowShapeType__ - describes all ArrowShapes
@@ -80,20 +80,20 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 * Define a sample string value for the __RadDiagramShape.Content__ property:			
 
 	#### __XAML__
-	{{region raddiagram_features_shapes_0}}
+	```XAML
 		<Grid>
 			<telerik:RadDiagram x:Name="MyDiagram">
 				<telerik:RadDiagramShape Content="RadDiagramShape" />
 			</telerik:RadDiagram>
 		</Grid>
-	{{endregion}}
+	```
 
 	![Rad Diagram Features Shapes String Content](../images/RadDiagram_Features_Shapes_StringContent.png)
 
 * Define __UIElements__ in the __Content__ of the shape:
 
 	#### __XAML__
-	{{region raddiagram_features_shapes_1}}
+	```XAML
 		<Grid>
 			<telerik:RadDiagram x:Name="MyDiagram">
 				<telerik:RadDiagramShape x:Name="EndShape"
@@ -112,14 +112,14 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 				</telerik:RadDiagramShape>
 			</telerik:RadDiagram>
 		</Grid>
-	{{endregion}}
+	```
 
 	![Rad Diagram Features Shapes Custom Content](../images/RadDiagram_Features_Shapes_CustomContent.png)
 
 * Bind the __Content__ to a business property: For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
 
 	#### __C#__
-	{{region raddiagram-features-shapes-82}}
+	```C#
 		public class EmployeeViewModel
 		{
 			public string ImagePath { get; set; }
@@ -135,10 +135,10 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 			LastName = "Davolio",
 			JobPosition = "President Marketing"
 		};
-	{{endregion}}
+	```
 	
 	#### __VB.NET__
-	{{region raddiagram-features-shapes-83}}
+	```VB.NET
 		Public Class EmployeeViewModel
 			Public Property ImagePath() As String
 			Public Property JobPosition() As String
@@ -152,17 +152,17 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 		  .LastName = "Davolio",
 		  .JobPosition = "President Marketing"
 		  }
-	{{endregion}}
+	```
 
 	#### __XAML__  
-	{{region raddiagram_features_shapes_2}}
+	```XAML
 			<Grid>
 				<telerik:RadDiagram x:Name="MyDiagram">
 					<telerik:RadDiagramShape Content="{Binding LastName}"
 											 Position="20,40" />
 				</telerik:RadDiagram>
 			</Grid>
-	{{endregion}}
+	```
 
 	![Rad Diagram Features Shapes Data Binding](../images/RadDiagram_Features_Shapes_DataBinding.png)
 	When you bind the __Content__ to a business class, the __RadDiagramShape__ will display the result of the business item __ToString()__ method. If you bind to a business property, then the value of the property will be displayed as the content of the shape.
@@ -170,7 +170,7 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 * If you want to customize the visual representation of the bound property, you can take advantage of the __RadDiagramShape ContentTemplate__ property:			
 
 	#### __XAML__  
-	{{region raddiagram_features_shapes_3}}
+	```XAML
 		<Grid>
 			<telerik:RadDiagram x:Name="MyDiagram">
 				<telerik:RadDiagramShape Content="{Binding}"
@@ -218,7 +218,7 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 				</telerik:RadDiagramShape>
 			</telerik:RadDiagram>
 		</Grid>
-	{{endregion}}
+	```
 
 	![Rad Diagram Features Shapes Data Template](../images/RadDiagram_Features_Shapes_DataTemplate.png)
 
@@ -254,7 +254,7 @@ You can set the __RadDiagramShape__ in edit mode using the __IsInEditMode__ prop
 If the __RadDiagramShape.Content__ property is bound to a business item, you can set the connection __EditTemplate__ to define how the business item will be edited. For example if we use the __BusinessItem__ class, defined above, as a __DataContext__ of the __RadDiagram__, we can set up the following connection:			
 
 #### __XAML__  
-{{region raddiagram_features_shapes_4}}
+```XAML
     <Grid>
         <telerik:RadDiagram x:Name="MyDiagram">
             <telerik:RadDiagramShape Content="{Binding}"
@@ -313,7 +313,7 @@ If the __RadDiagramShape.Content__ property is bound to a business item, you can
             </telerik:RadDiagramShape>
         </telerik:RadDiagram>
     </Grid>
-{{endregion}}
+```
 
 ![Rad Diagram Features Shapes Edit Template](../images/RadDiagram_Features_Shapes_EditTemplate.png)
 

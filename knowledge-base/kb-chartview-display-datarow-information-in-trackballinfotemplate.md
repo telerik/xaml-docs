@@ -32,8 +32,8 @@ How to display `DataTable` `DataRow` information in the `TrackBallInfoTemplate` 
 
 To display the values of the DataRow, you can use the `DataItem` property of the `DataPoint` instance. The DataPoint comes from the `DataPointInfo` object that is generated for each series entry. The DataItem will be of type DataRow and you can use the square brackets syntax to choose which values are going to be displayed.
 
-#### __[XAML] Displaying DataTable DataRow information in TrackBallInfoTemplate__
-{{region kb-chartview-datarow-info-in-trackballinfotemplate-0}}
+__Displaying DataTable DataRow information in TrackBallInfoTemplate__
+```XAML
     <telerik:PointSeries ItemsSource="{Binding DataTable.DefaultView}">
         <telerik:PointSeries.TrackBallInfoTemplate>
             <DataTemplate>
@@ -44,4 +44,4 @@ To display the values of the DataRow, you can use the `DataItem` property of the
             </DataTemplate>
         </telerik:PointSeries.TrackBallInfoTemplate>
     </telerik:PointSeries>
-{{endregion}}
+```

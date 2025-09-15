@@ -28,8 +28,8 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 
 * Create a new class named __ExplorerItem__ :
 
-	#### __[C#] Example 1: Creating a model for the breadcrumb items__  
-	{{region cs-radbreadcrumb-databinding_0}}
+	__Example 1: Creating a model for the breadcrumb items__  
+	```C#
 		public class ExplorerItem
 		{
 			 public string Header { get; set; }
@@ -37,10 +37,8 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 			 public string Path { get; set; }
 			 public ImageSource IconPath { get; set;} 
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 1: Creating a model for the breadcrumb items__  
-	{{region vb-radbreadcrumb-databinding_1}}
+	```
+```VB.NET
 		Public Class ExplorerItem
 				Public Property Header() As String
 						Get
@@ -79,12 +77,12 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				End Property
 				Private _IconPath As ImageSource
 		End Class
-	{{endregion}}
+	```
 
 * Create a new class __MainViewModel__ - it will contain the collection of  __ExplorerItems__ that we will use as __ItemsSource__ for the __RadBreadcrumb__ as well as a __string__ property - __Header__
 
-	#### __[C#] Example 2: Creating a main view model__  
-	{{region cs-radbreadcrumb-databinding_2}}
+	__Example 2: Creating a main view model__  
+	```C#
 		public class MainViewModel
 		{
 		 public ObservableCollection<ExplorerItem> Items { get; set; }
@@ -145,10 +143,8 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  this.Items.Add(desktop);
 		 }
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: Creating the main view model__  
-	{{region vb-radbreadcrumb-databinding_3}}
+	```
+```VB.NET
 		Public Class MainViewModel
 			Public Property Items() As ObservableCollection(Of ExplorerItem)
 				Get
@@ -224,12 +220,12 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				Me.Items.Add(desktop)
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 * Use the __MainViewModel__ as data context for a __RadBreadcrumb__ control:			
 
-	#### __[XAML] Example 3: Setting up the DataContex of the breadcrumb__  
-	{{region xaml-radbreadcrumb-databinding_4}}
+	__Example 3: Setting up the DataContex of the breadcrumb__  
+	```XAML
 		<FrameworkElement.DataContext>
 		    <vm:MainViewModel />
 		</FrameworkElement.DataContext>
@@ -247,14 +243,14 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		        </telerik:RadBreadcrumb.ItemTemplate>
 		    </telerik:RadBreadcrumb>
 		</Grid>
-	{{endregion}}
+	```
 
 ##  Display hierarchical data in the Breadcrumb control
 
 * Extend the __ExplorerItem__ by adding a collection of __ExplorerItems__.  		
 
-	#### __[C#] Example 4: Extending the breadcrumb items' model__  
-	{{region cs-radbreadcrumb-databinding_5}}
+	__Example 4: Extending the breadcrumb items' model__  
+	```C#
 		public class ExplorerItem
 		{
 		 public string Header { get; set; }
@@ -267,10 +263,8 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  this.Children = new ObservableCollection<ExplorerItem>();
 		 }
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 4: Extending the breadcrumb items' model__  
-	{{region vb-radbreadcrumb-databinding_6}}
+	```
+```VB.NET
 		Public Class ExplorerItem
 			Public Property Header() As String
 				Get
@@ -323,12 +317,12 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				Me.Children = New ObservableCollection(Of ExplorerItem)()
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 * Create a __MainViewModel__ class to define a hierarchical data collection of __ExplorerItems__:
 
-	#### __[C#] Example 5: Creating the main view model__  
-	{{region cs-radbreadcrumb-databinding_7}}
+	__Example 5: Creating the main view model__  
+	```C#
 		public class MainViewModel
 		{
 		 public ObservableCollection<ExplorerItem> Items { get; set; }
@@ -486,10 +480,8 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		  this.Items = new ObservableCollection<ExplorerItem>() { this.Root };
 		 }
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 5: Creating the main view model__  
-	{{region vb-radbreadcrumb-databinding_8}}
+	```
+```VB.NET
 		Public Class MainViewModel
 			Public Property Items() As ObservableCollection(Of ExplorerItem)
 				Get
@@ -741,14 +733,14 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 				}
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 * Display the hierarchical data collection in the __RadBreadcrumb__ control using:			
 
 	* __HierarchicalDataTemplates__:
 		{% if site.site_name == 'Silverlight' %}
-		#### __[XAML] Example 6: Using HierarchicalDataTemplates__  
-		{{region xaml-radbreadcrumb-databinding_9}}
+		__Example 6: Using HierarchicalDataTemplates__  
+		```XAML
 			<FrameworkElement.DataContext>
 			    <vm:MainViewModel />
 			</FrameworkElement.DataContext>
@@ -776,11 +768,11 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 			        </telerik:RadBreadcrumb.ItemTemplate>
 			    </telerik:RadBreadcrumb>
 			</Grid>
-	{{endregion}}
+	```
 		{% else %}
 
-		#### __[XAML] Example 6: Using HierarchicalDataTemplates__  
-		{{region xaml-radbreadcrumb-databinding_10}}
+		__Example 6: Using HierarchicalDataTemplates__  
+		```XAML
 			<FrameworkElement.DataContext>
 			    <vm:MainViewModel />
 			</FrameworkElement.DataContext>
@@ -808,7 +800,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 			        </telerik:RadBreadcrumb.ItemTemplate>
 			    </telerik:RadBreadcrumb>
 			</Grid>
-	{{endregion}}
+	```
 	{% endif %}
 
 	* the __Breadcrumb__ properties exposed to facilitate your efforts in populating the control with hierarchical data:
@@ -818,8 +810,8 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 
 		* __HierarchicalMemberPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem.DropDownHeader__.							
 
-			#### __[XAML] Example 7: Using HierarchicalMemberPath__  
-			{{region xaml-radbreadcrumb-databinding_11}}
+			__Example 7: Using HierarchicalMemberPath__  
+			```XAML
 				<telerik:RadBreadcrumb VerticalAlignment="Top"
 									   Header="{Binding Root}"
 									   HeaderMemberPath="Header"
@@ -829,7 +821,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 									   IsIconVisible="True"
 									   ItemsSource="{Binding Root.Children}"
 									   TextModePath="Path" />
-			{{endregion}}
+			```
 
 In both approaches the final result should look like this:
 

@@ -31,8 +31,8 @@ How to auto-size the rows of the RadGridView control based on its height.
 
 1. Define the following method in the code-behind of the control which holds your RadGridView instance:
 
-	#### __[C#]__
-	{{region kb-gridview-howto-autosize-rows-0}}
+	
+	```C#
     private void AdjustRowHeight()
     {
         var scrollViewer = this.radGridView.ChildrenOfType<GridViewScrollViewer>().First();
@@ -42,14 +42,14 @@ How to auto-size the rows of the RadGridView control based on its height.
             this.radGridView.RowHeight = rowHeight;
         }
     }
-	{{endregion}}
+	```
 
 What this does is to get the actual height of the **GridViewScrollViewer** - which is the element that holds all the rows of the control - and subtract from it the height of the header row element. This height is then divided by the total row count.
 
 2. Call the **AdjustRowHeight** method in the **Loaded** and **SizeChanged** events of the RadGridView control:
 
-	#### __[C#]__
-	{{region kb-gridview-howto-autosize-rows-1}}
+	
+	```C#
     private void RadGridView_Loaded(object sender, RoutedEventArgs e)
     {
         this.AdjustRowHeight();
@@ -59,7 +59,7 @@ What this does is to get the actual height of the **GridViewScrollViewer** - whi
     {
         this.AdjustRowHeight();
     }
-	{{endregion}}
+	```
 
 ## See Also
 * [ChildrenOfType]({%slug common-visual-tree-helpers%})

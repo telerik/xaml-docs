@@ -20,8 +20,8 @@ This is a typical financial series that can be used to visualize the state of a 
 
 You can use the following definition to display a simple OhlcSeries
 
-#### __[XAML] Example 1: Declaring a OhlcSeries in XAML__
-{{region radchartview-series-ohlcseries_0}}
+__Example 1: Declaring a OhlcSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:CategoricalAxis/>
@@ -41,7 +41,7 @@ You can use the following definition to display a simple OhlcSeries
 		</telerik:OhlcSeries>
 	</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: OhlcSeries visual appearance__
 ![radchartview-series-ohlcseries](images/radchartview-series-ohlcseries.png)
@@ -58,9 +58,9 @@ You can use the following definition to display a simple OhlcSeries
 
 You can use the CategoryBinding, OpenBinding, CloseBinding, LowBinding, HighBinding properties of the OhlcSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-ohlcseries_1}}
+```C#
 	public class PlotInfo
     {	
         public string Category { get; set; }
@@ -76,12 +76,12 @@ You can use the CategoryBinding, OpenBinding, CloseBinding, LowBinding, HighBind
 		new PlotInfo() { Category = "January", Open = 5, Close = 4, Low = 2, High = 10},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a OhlcSeries in XAML__
-{{region radchartview-series-ohlcseries_2}}	
+__Example 3: Specify a OhlcSeries in XAML__
+```XAML	
 	<telerik:OhlcSeries ItemsSource="{Binding}" CategoryBinding="Category" OpenBinding="Open" CloseBinding="Close" LowBinding="Low" HighBinding="High" />
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

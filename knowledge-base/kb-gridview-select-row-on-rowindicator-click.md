@@ -33,8 +33,8 @@ How to select RadGridView row when you click on the cell on the left side of the
 
 Get the `Border` element that represents the row indicator and subscribe to its `MouseLeftButtonDown`  event. Then, in the event handler, select the row manually. To get the `Border` you can use the `RowLoaded` event of `RadGridView` in combination with the [ChildrenOfType]({%slug common-visual-tree-helpers%}) extension method. The `RowUnloaded` event can be used to unsubscribe from the mouse event, thus preventing memory leaks.
 
-#### __[XAML]__
-{{region kb-gridview-select-row-on-rowindicator-click-0}}
+
+```XAML
 	private void RadGridView_RowLoaded(object sender, Telerik.Windows.Controls.GridView.RowLoadedEventArgs e)
 	{
 		var indicator = e.Row.ChildrenOfType<Border>().FirstOrDefault(x => x.Name == "PART_IndicatorPresenter");
@@ -59,4 +59,4 @@ Get the `Border` element that represents the row indicator and subscribe to its 
 		var dataItem = indicator.DataContext;
 		this.gridView.SelectedItems.Add(dataItem);
 	}
-{{endregion}}
+```

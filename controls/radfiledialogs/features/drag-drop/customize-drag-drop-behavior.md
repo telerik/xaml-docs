@@ -16,8 +16,8 @@ To customize the behavior, you can create a new class that derives from FileBrow
 
 The following example will show you how to create a behavior that allows you to drag files only, but not folders. To do so you will need to override the CanDragStart method of the behavior and based on the information received from the __DragDropState__ class return true or false.
 
-#### __[C#] Example 1: Custom drag drop behavior__ 
-{{region radfiledialogs-features-dragdrop-customizing-drag-drop-behavior-0}}
+__Example 1: Custom drag drop behavior__ 
+```C#
 	public class CustomFileBrowserDragDropBehavior : FileBrowserDragDropBehavior
 	{
 		public override bool CanStartDrag(DragDropState state)
@@ -35,15 +35,15 @@ The following example will show you how to create a behavior that allows you to 
 			}
 		}
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the custom behavior__
-{{region radfiledialogs-features-dragdrop-customizing-drag-drop-behavior-1}}
+__Example 2: Setting the custom behavior__
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = theOwnerWindow;
 	openFileDialog.DragDropBehavior = new CustomFileBrowserDragDropBehavior();	
 	openFileDialog.ShowDialog();
-{{endregion}}
+```
 
 > This example was designed for the scenario where you can drag/drop only a single item. For multiple selection you will need to extend the example.
 

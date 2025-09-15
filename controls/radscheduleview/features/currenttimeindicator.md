@@ -23,15 +23,15 @@ This article covers the following topics:
 
 In order to display the current time indicator, you must set the __ShowCurrentTimeIndicator__ property of the RadScheduleView as in __Example 1__.
 
-#### __[XAML] Example 1: Enable CurrentTimeIndicator__
+__Example 1: Enable CurrentTimeIndicator__
 
-{{region xaml-radscheduleview-currenttimeindicator_0}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowCurrentTimeIndicator="True">            
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition />               
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>	
-{{endregion}}
+```
 
 Running the code from __Example 1__ will result in RadScheduleView with current time marked as shown in __Figure 1__.
 
@@ -46,9 +46,9 @@ As of R2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler o
 * **AppointmentsArea** – the indicator is shown only through the Appointments panel.
 * **WholeArea** – the indicator is shown on both the TimeRuler and Appointments panel.
 
-#### __[XAML] Example 2: Set CurrentTimeIndicatorLocation__
+__Example 2: Set CurrentTimeIndicatorLocation__
 
-{{region xaml-radscheduleview-currenttimeindicator_1}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
 		ShowCurrentTimeIndicator="True"
 		CurrentTimeIndicatorLocation="WholeArea">            
@@ -56,7 +56,7 @@ As of R2 2016, you can show the CurrentTimeIndicator not only in the TimeRuler o
 			<telerik:DayViewDefinition />               
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 __Figure 2__ shows current time marked across the whole area of RadScheduleView.
 
@@ -71,9 +71,9 @@ __CurrentTimeIndicatorStyle__ is applied to the part of the CurrentTimeIndicator
 
 __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows how the Style properties should be set to the ScheduleView.
 
-#### __[XAML] Example 3: Define CurrentTimeIndicator Styles__
+__Example 3: Define CurrentTimeIndicator Styles__
 
-{{region xaml-radscheduleview-currenttimeindicator_2}}
+```XAML
 	<Style x:Key="CurrentTimeIndicatorStyle" TargetType="telerik:CurrentTimeIndicator">
 		<Setter Property="Canvas.ZIndex" Value="2"/>  
 		<Setter Property="Template">
@@ -94,11 +94,11 @@ __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows h
 			</Setter.Value>
 		</Setter>
 	</Style>
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Set CurrentTimeIndicator Style Properties__
+__Example 4: Set CurrentTimeIndicator Style Properties__
 
-{{region xaml-radscheduleview-currenttimeindicator_3}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
 		ShowCurrentTimeIndicator="True"
 		CurrentTimeIndicatorLocation="WholeArea" 
@@ -108,7 +108,7 @@ __Example 3__ demonstrates how both Styles are defined and __Example 4__ shows h
 			<telerik:DayViewDefinition />               
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 If you run the application at this stage, you will see RadScheduleView with CurrentTimeIndicator styled in different colors as shown in __Figure 3__.
 
@@ -117,9 +117,9 @@ If you run the application at this stage, you will see RadScheduleView with Curr
 
 Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeIndicator in order to allow rendering elements with bigger size. For example, if you need the part in the TimeRuler area to be thicker, you can customize the __CurrentTimeIndicatorStyle__ as shown in __Example 5__. 
 
-#### __[XAML] Example 5: Set AllowCustomSize__
+__Example 5: Set AllowCustomSize__
 
-{{region xaml-radscheduleview-currenttimeindicator_4}}
+```XAML
 	<Style x:Key="CurrentTimeIndicatorStyle" TargetType="telerik:CurrentTimeIndicator">
 		<Setter Property="Canvas.ZIndex" Value="2"/>
 		<Setter Property="AllowCustomSize" Value="True" />
@@ -131,7 +131,7 @@ Additionally, you could set the __AllowCustomSize__ property of the CurrentTimeI
 			</Setter.Value>
 		</Setter>
 	</Style>
-{{endregion}}
+```
 
 Running the application will lead to the result shown in __Figure 4__.
 

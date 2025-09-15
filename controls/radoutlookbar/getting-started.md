@@ -33,8 +33,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 ![RadOutlookBar Step 1](images/outlook_step1.png)
 
-#### __[XAML] Example 1__
-{{region xaml-radoutlookbar-getting-started_0}}
+__Example 1__
+```XAML
 	<telerik:RadOutlookBar>
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
@@ -48,7 +48,7 @@ You can find the required assemblies for each control from the suite in the {% i
 	        <TextBlock Text="Item 3 Content" />
 	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadOutlookBar with Icons for the Items](images/outlook_step3.png)
 
@@ -56,8 +56,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 By default the first item will be selected. In order to select another item you can use the __IsSelected__ property.        
 
-#### __[XAML] Example 2__
-{{region xaml-radoutlookbar-getting-started_1}}
+__Example 2__
+```XAML
 	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -77,7 +77,7 @@ By default the first item will be selected. In order to select another item you 
 	        </telerik:RadOutlookBar>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 ![RadOutlookBar Icons support](images/outlook_step2.png)
 
@@ -85,8 +85,8 @@ By default the first item will be selected. In order to select another item you 
 
 To handle the changes in the selection you can use the __SelectionChanged__ event of the __RadOutlookBar__:        
 
-#### __[XAML] Example 3__
-{{region xaml-radoutlookbar-getting-started_2}}
+__Example 3__
+```XAML
 	<telerik:RadOutlookBar x:Name="RadOutlookBar1" SelectionChanged="RadOutlookBar1_SelectionChanged">
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
@@ -100,29 +100,27 @@ To handle the changes in the selection you can use the __SelectionChanged__ even
 	        <TextBlock Text="Item 3 Content" />
 	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
-{{endregion}}
+```
 
-#### __[C#] Example 4__
-{{region cs-radoutlookbar-getting-started_3}}
+__Example 4__
+```C#
 	private void RadOutlookBar1_SelectionChanged(object sender, RoutedEventArgs e)
 	{
 		RadOutlookBarItem newSelectedItem = (sender as RadOutlookBar).SelectedItem as RadOutlookBarItem;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4__
-{{region vb-radoutlookbar-getting-started_3}}
+```
+```VB.NET
 	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)
 	End Sub
-{{endregion}}
+```
 
 ## Limiting active items
 
 To limit the number of items that can be displayed in the active area you can use the __ActiveItemsMaxCount__ property:        
 
-#### __[XAML] Example 5__
-{{region xaml-radoutlookbar-getting-started_4}}
+__Example 5__
+```XAML
 	<telerik:RadOutlookBar ActiveItemsMaxCount="2">
 	    <telerik:RadOutlookBarItem Header="Item 1" Icon="Letter.png">
 	        <TextBlock Text="Item 1 Content" />
@@ -136,7 +134,7 @@ To limit the number of items that can be displayed in the active area you can us
 	        <TextBlock Text="Item 3 Content" />
 	    </telerik:RadOutlookBarItem>
 	</telerik:RadOutlookBar>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadOutlookBar Active Items Max Count](images/outlook_step4.png)
 
@@ -157,8 +155,8 @@ To change the theme, you can follow the steps below:
 
 __Example 6__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 6: Merge the ResourceDictionaries__  
-{{region radoutlookbar-getting-started_6}}
+__Example 6: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -168,7 +166,7 @@ __Example 6__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

@@ -14,19 +14,19 @@ As of **R3 2022**, the RadSyntaxEditor control supports word wrapping which enab
 The functionality can be enabled by setting the `IsWordWrapEnabled` property to `True`.
 
 #### [XAML] Enable word-wrap in XAML
-{{region xaml-radsyntaxeditor-features-wordwrap_2}}
+```XAML
     <telerik:RadSyntaxEditor x:Name="syntaxEditor" IsWordWrapEnabled="True" />
-{{endregion}}
+```
 
 #### [C#] Enable word-wrap in code-behind
-{{region cs-radsyntaxeditor-features-wordwrap_2}}
+```C#
     this.syntaxEditor.IsWordWrapEnabled = true;
-{{endregion}}
+```
 
 #### [VB.NET] Enable word-wrap in code-behind
-{{region vb-radsyntaxeditor-features-wordwrap_2}}
+```VB.NET
     Me.syntaxEditor.IsWordWrapEnabled = True
-{{endregion}}
+```
 
 #### RadSyntaxEditor with word wrapping
 

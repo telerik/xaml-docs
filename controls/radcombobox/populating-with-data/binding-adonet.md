@@ -20,9 +20,9 @@ The purpose of this tutorial is to show you how to populate a `RadComboBox` with
 Before proceeding further with this tutorial you need to create a new application and a `RadComboBox` declaration in your XAML.
 
 #### __XAML__  
-{{region radcombobox-populating-with-data-binding-adonet_0}}
+```XAML
 	<telerik:RadComboBox x:Name="radComboBox"/>
-{{endregion}}
+```
 
 ## Using Plain Methods Call in the Code-Behind
 
@@ -31,21 +31,21 @@ Before proceeding further with this tutorial you need to create a new applicatio
 2. Switch to the code-behind and add a reference to the `NorthwindEntities` object.
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_1}}
+	```C#
 		NorthwindEntities dbContext = new NorthwindEntities( new Uri( "Enter your service address here") );
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_2}}
+	```VB.NET
 		Dim dbContext As New NorthwindEntities(New Uri("Enter your service address here"))
-	{{endregion}}
+	```
 
 	>tip For more information about how to add a reference to an ADO.NET Data Service and how to create a new instance of the exposed entity, take a look at the [Consuming ADO.NET Data Service]({%slug consuming-data-ado-net-data-service%}) topic.
 
 3. The ComboBoxs control will be populated with all __Products__ from the __Northwind__ database. In the drop-down list the `ProductName` and the `UnitPrice` properties will be displayed. Add the following code which will make the initial load of the objects.
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_3}}
+	```C#
 		private void BeginRequest()
 		{
 			DataServiceQuery<Products> query = dbContext.CreateQuery<Products>( "Products" );
@@ -58,10 +58,10 @@ Before proceeding further with this tutorial you need to create a new applicatio
 			var products = query.EndExecute( asyncResult ).ToList();
 			this.radComboBox.ItemsSource = products;
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_4}}
+	```VB.NET
 		Private Sub BeginRequest()
 			Dim query As DataServiceQuery(Of Products) = dbContext.CreateQuery(Of Products)("Products")
 			query.BeginExecute(RequestCompleted, query)
@@ -72,22 +72,22 @@ Before proceeding further with this tutorial you need to create a new applicatio
 			Dim products = query.EndExecute(asyncResult).ToList()
 			Me.radComboBox.ItemsSource = products
 		End Sub
-	{{endregion}}
+	```
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_5}}
+	```C#
 		this.radComboBox.ItemsSource = dbContext.Products.Execute();
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_6}}
+	```VB.NET
 		Me.radComboBox.ItemsSource = dbContext.Products.Execute()
-	{{endregion}}
+	```
 
 4. You need to declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-adonet_7}}
+	```XAML
 		<UserControl.Resources>
 			<DataTemplate x:Key="CustomItemTemplate">
 				<StackPanel Orientation="Horizontal">
@@ -98,14 +98,14 @@ Before proceeding further with this tutorial you need to create a new applicatio
 				</StackPanel>
 			</DataTemplate>
 		</UserControl.Resources>
-	{{endregion}}
+	```
 
 5. Find your __RadComboBox__ declaration and set the just declared __DataTemplate__ to its __ItemTemplate__ property.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-adonet_8}}
+	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" ItemTemplate="{StaticResource CustomItemTemplate}"/>
-	{{endregion}}
+	```
 
 __The end result with the data fetched from the service__  
 
@@ -118,17 +118,17 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 1. Create a new class named `NorthwindDataSource`.
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_9}}
+	```C#
 		public class NorthwindDataSource
 		{
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_10}}
+	```VB.NET
 		Public Class NorthwindDataSource
 		End Class
-	{{endregion}}
+	```
 
 2. Add a reference to your ADO.NET Data Service.
 
@@ -137,7 +137,7 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 4. In the `NorthwindDataSource` class add a reference to the `NorthwindEntities` object:
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_11}}
+	```C#
 		public class NorthwindDataSource
 		{
 			private static NorthwindEntities northwindEntity;
@@ -154,10 +154,10 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 				set;
 			}
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_12}}
+	```VB.NET
 		Public Class NorthwindDataSource
 			Private Shared northwindEntity As NorthwindEntities
 		
@@ -176,28 +176,28 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 				End Set
 			End Property
 		End Class
-	{{endregion}}
+	```
 
 5. Add the following code in the constructor of the `NorthwindDataSource`. It will make the initial load of all __Products__ from the database:
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_13}}
+	```C#
 		northwindEntity.Products.BeginExecute(
 		   ( IAsyncResult result ) => EntitiesLoaded<Products>( result, this.Products ),
 		   northwindEntity.Products );
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_14}}
+	```VB.NET
 		northwindEntity.Products.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Products)(result, Me.Products), northwindEntity.Products)
-	{{endregion}}
+	```
 
 	{% if site.site_name == 'Silverlight' %}
 	And here is the code for the __EntitiesLoaded__ method:
 	{% endif %}
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_15}}
+	```C#
 		private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
 		{
 		   DataServiceQuery<T> query = result.AsyncState as DataServiceQuery<T>;
@@ -206,46 +206,46 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 			   entities.Add( entity );
 		   }
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_16}}
+	```VB.NET
 		Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 			Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
 			For Each entity As T In query.EndExecute(result)
 				entities.Add(entity)
 			Next
 		End Sub
-	{{endregion}}
+	```
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-adonet_17}}
+	```C#
 		foreach ( Products p in northwindEntity.Products.Execute() )
 		{
 			this.Products.Add( p );
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-adonet_18}}
+	```VB.NET
 		For Each p As Products In northwindEntity.Products.Execute()
 			Me.Products.Add(p)
 		Next
-	{{endregion}}
+	```
 
 6. Declare the `NorthwindDataSource` object as a resource in your application.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-adonet_19}}
+	```XAML
 		<UserControl.Resources>
 			<example:NorthwindDataSource x:Key="DataSource"/>   
 		</UserControl.Resources>
-	{{endregion}}
+	```
 
 7. Declare a custom `DataTemplate` to determine how the items in the drop-down will look like. 
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-adonet_20}}
+	```XAML
 		<UserControl.Resources>
 			<DataTemplate x:Key="CustomItemTemplate">
 				<StackPanel Orientation="Horizontal">
@@ -258,16 +258,16 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 		
 			<example:NorthwindDataSource x:Key="DataSource"/>
 		</UserControl.Resources>
-	{{endregion}}
+	```
 
 8. Update your `RadComboBox` declaration - set the `ItemsSource` and `ItemTemplate` properties.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-adonet_21}}
+	```XAML
 		<telerik:RadComboBox x:Name="radComboBox"
 			ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"
 			ItemTemplate="{StaticResource CustomItemTemplate}"/>
-	{{endregion}}
+	```
 
 __The end result with the data fetched from the service__  
 

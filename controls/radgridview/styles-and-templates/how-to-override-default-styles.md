@@ -26,9 +26,9 @@ You need to modify GridViewRow's template. [This topic]({%slug gridview-styling-
 
 ![Telerik {{ site.framework_name }} DataGrid styling row background mouseover2](images/styling_row_background_mouseover2.png)
 
-#### __[XAML] Example 1: The Default Border When the Mouse Hovers GridViewRow__
+__Example 1: The Default Border When the Mouse Hovers GridViewRow__
 
-{{region xaml-how-to-override-default-gridview-styles_0}}
+```XAML
 	!--
 	                                <Border x:Name="Background_Over" 
 	        BorderBrush="{StaticResource ItemOuterBorder_Over}" 
@@ -38,13 +38,13 @@ You need to modify GridViewRow's template. [This topic]({%slug gridview-styling-
 	                                    <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="{StaticResource ItemBackground_Over}"/>
 	                                </Border>
 	                                -->
-{{endregion}}
+```
 
 Now you can change all the properties you want, e.g., the __BorderBrush__ value will affect the border, the __Background__ will affect the background, etc. The next example changes the values a little to end up with this XAML:
 
-#### __[XAML] Example 2: Modified The Default Border When the Mouse Hovers GridViewRow__
+__Example 2: Modified The Default Border When the Mouse Hovers GridViewRow__
 
-{{region xaml-how-to-override-default-gridview-styles_1}}
+```XAML
 	!--
 	                                <Border x:Name="Background_Over" 
 	 BorderBrush="Blue" 
@@ -54,7 +54,7 @@ Now you can change all the properties you want, e.g., the __BorderBrush__ value 
 	                                    <Border BorderBrush="{StaticResource ItemInnerBorder_Over}" BorderThickness="1" Background="Gray"/>
 	                                </Border>
 	                                -->
-{{endregion}}
+```
 
 Finally, you need to set the __RowStyle__ property of __RadGridView__ to the style you have just modified.
 
@@ -67,7 +67,7 @@ This example shows how to remove the border of the current cell (the one that ha
 
 You need to edit the template of GridViewCell. [This topic]({%slug gridview-styling-cell%}) explains the basics. Once you have the template, search for the term "current". You will find a __VisualState__, __Trigger__ and __Border__ which you need to delete.
 
-#### __[XAML] Example 3: Elements that Need to be Deleted from the Template of GridViewCell__
+__Example 3: Elements that Need to be Deleted from the Template of GridViewCell__
 	<VisualState x:Name="Current">
     <Storyboard>
         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Background_Current"
@@ -101,12 +101,12 @@ You need to edit the template of GridViewCell. [This topic]({%slug gridview-styl
 
 Finally, find the __Property="FocusVisualStyle"__ and set its value to null:{% endif %}
 
-#### __[XAML] Example 4: Setting the FocusVisualStyle Property to null__
+__Example 4: Setting the FocusVisualStyle Property to null__
 
-{{region xaml-how-to-override-default-gridview-styles_3}}
+```XAML
 	!--
 	                <Setter Property="FocusVisualStyle" Value="{x:Null}" />
 	                -->
-{{endregion}}
+```
 
 Now make the style implicit (i.e., do not specify the __x:Key__ attribute) so it will apply to all __GridViewCell__ elements.

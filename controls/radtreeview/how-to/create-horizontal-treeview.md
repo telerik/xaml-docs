@@ -16,7 +16,7 @@ Here is an ordinary treeview declaration:
 
 #### __XAML__
 
-{{region radtreeview-how-to-create-horizontal-treeview_0}}
+```XAML
 	<telerik:RadTreeView>
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -33,7 +33,7 @@ Here is an ordinary treeview declaration:
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_HowToCreateHorizontalTreeView_001.PNG)
 
@@ -43,7 +43,7 @@ Declare the following style in the resources of your application. It will set th
 
 #### __XAML__
 
-{{region radtreeview-how-to-create-horizontal-treeview_1}}
+```XAML
 	<Style TargetType="telerik:RadTreeViewItem" x:Key="TreeViewItemStyle">
 	    <Setter Property="ItemsPanel">
 	        <Setter.Value>
@@ -53,13 +53,13 @@ Declare the following style in the resources of your application. It will set th
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+	```
 
 Apply this style to the __ItemContainerStyle__ of the treeview and each treeview item. 
 
 #### __XAML__
 
-{{region radtreeview-how-to-create-horizontal-treeview_2}}
+```XAML
 	<telerik:RadTreeView ItemContainerStyle="{StaticResource TreeViewItemStyle}">
 	    <telerik:RadTreeViewItem Header="Sport Categories" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
 	        <telerik:RadTreeViewItem Header="Football" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
@@ -76,7 +76,7 @@ Apply this style to the __ItemContainerStyle__ of the treeview and each treeview
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 Here is the result:
 ![{{ site.framework_name }} RadTreeView Horizontal Orientation](images/RadTreeView_HowToCreateHorizontalTreeView_010.PNG)

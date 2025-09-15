@@ -37,9 +37,9 @@ Use the **WorkbookContentChanged** event.
 
 #### __C#__
 
-{{region kb-workbook-track-changes}}
+```C#
 
     bool hasBeenWorkbookModified = false;
     workbook.WorkbookContentChanged += (sender, args) => { hasBeenWorkbookModified = true; }
                                         
-{{endregion}}
+```

@@ -35,9 +35,9 @@ To extend the base implementation of the __RadDiagramConnection__ element, [extr
 
 The following example shows the extracted and modified control template of the __RadDiagramConnection__ element, from the __Office2016__ theme. The used version of the assemblies for this example is __NoXaml__, which allows for easier customization of the controls' templates.
 
-#### __[XAML]__
 
-{{region kb-diagram-custom-connection-cap_0}}
+
+```XAML
 	<ControlTemplate TargetType="telerik:RadDiagramConnection">
 	    <Grid x:Name="RootTemplate">
 	        <VisualStateManager.VisualStateGroups>
@@ -133,13 +133,13 @@ The following example shows the extracted and modified control template of the _
 	        </Canvas>
 	    </Grid>
 	</ControlTemplate>
-{{endregion}}
+```
 
 Create a class that derives from the __RadDiagramConnection__ class and implement the following logic for handling the two additional path elements.
 
-#### __[C#]__
 
-{{region kb-diagram-custom-connection-cap_1}}
+
+```C#
 	public class CustomConnection : RadDiagramConnection
 	{
 	    private Path sourceConnectionCap;
@@ -207,11 +207,8 @@ Create a class that derives from the __RadDiagramConnection__ class and implemen
 	        return geometry;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-
-{{region kb-diagram-custom-connection-cap_2}}
+```
+```VB.NET
 	Public Class CustomConnection
 	    Inherits RadDiagramConnection
 
@@ -272,13 +269,13 @@ Create a class that derives from the __RadDiagramConnection__ class and implemen
 	        Return geometry
 	    End Function
 	End Class
-{{endregion}}
+```
 
 The result is a custom connection element, which can be used both in Xaml and in code.
 
-#### __[XAML]__
 
-{{region kb-diagram-custom-connection-cap_3}}
+
+```XAML
 	<telerik:RadDiagram>
 		<!--values set for the new custom Path properties-->
 	    <local:CustomConnection StartPoint="400, 100" 
@@ -288,11 +285,11 @@ The result is a custom connection element, which can be used both in Xaml and in
 								SourceCapSize="6, 6" 
 	                            TargetCapSize="6, 6"/>
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
-#### __[C#]__
 
-{{region kb-diagram-custom-connection-cap_4}}
+
+```C#
 	var connection = new CustomConnection() 
     {
         SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1,
@@ -302,11 +299,8 @@ The result is a custom connection element, which can be used both in Xaml and in
     };
 
     this.diagram.Items.Add(connection);
-{{endregion}}
-
-#### __[VB.NET]__
-
-{{region kb-diagram-custom-connection-cap_5}}
+```
+```VB.NET
     Dim connection = New CustomConnection() With
     {
         .SourceCapType = Telerik.Windows.Diagrams.Core.CapType.Arrow1,
@@ -316,7 +310,7 @@ The result is a custom connection element, which can be used both in Xaml and in
     }
 	
     diagram.Items.Add(connection)
-{{endregion}}
+```
 
 #### __Figure 1: Result__
 

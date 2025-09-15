@@ -22,12 +22,12 @@ Open your __RadChart__ project in Expression Blend. To add the dummy __Rectangle
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-stripline_0}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <!--  ...  -->
 	    <Rectangle />
 	</Grid>
-{{endregion}}
+```
 
 
 
@@ -41,19 +41,19 @@ After finishing with the changes it is time to set the style. It can be set only
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-stripline_1}}
+```C#
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = this.Resources["HorizontalAlternateStripLineStyle"] as Style;
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.StripLineStyle = this.Resources["HorizontalStripLineStyle"] as Style;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-stripline_2}}
+```VB.NET
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = TryCast(Me.Resources("HorizontalAlternateStripLineStyle"), Style)
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.StripLineStyle = TryCast(Me.Resources("HorizontalStripLineStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -66,7 +66,7 @@ Here is the final XAML for the __Styles__ used:
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-stripline_3}}
+```XAML
 	<Style x:Key="HorizontalAlternateStripLineStyle" TargetType="Rectangle">
 	    <Setter Property="Fill">
 	        <Setter.Value>
@@ -77,12 +77,12 @@ Here is the final XAML for the __Styles__ used:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-stripline_4}}
+```XAML
 	<Style x:Key="HorizontalStripLineStyle" TargetType="Rectangle">
 	    <Setter Property="Fill" Value="LightGray" />
 	</Style>
-{{endregion}}
+```

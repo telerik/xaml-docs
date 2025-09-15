@@ -28,8 +28,8 @@ First create a custom UserControl class that derives from **UserControl**. Then 
 
 > Some of the themes do not support multiple color variations. To see which themes have more than one color palette, you can look in the [Theme Suite]({%slug common-styling-appearance-available-themes%}) article.
 
-#### __[C#]__
-{{region kb-radsplashscreen-set-palette-with-stylemanager-overview-0}}
+
+```C#
 
     public partial class SplashScreenUserControl : UserControl
     {
@@ -40,12 +40,12 @@ First create a custom UserControl class that derives from **UserControl**. Then 
         	InitializeComponent();
         }
     }
-{{endregion}}
+```
 
 After that use the generic **Show** method of **RadSplashScreenManager** to display the color variation.
 
-#### __[C#]__
-{{region kb-radsplashscreen-set-palette-with-stylemanager-overview-1}}
+
+```C#
 
     public partial class App : Application
     {
@@ -59,4 +59,4 @@ After that use the generic **Show** method of **RadSplashScreenManager** to disp
     		}
     }
 
-{{endregion}}
+```

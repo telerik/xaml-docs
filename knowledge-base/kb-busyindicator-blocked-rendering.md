@@ -36,8 +36,8 @@ To do that, you can display the `RadBusyIndicator` in a `Window` opened on a new
 
 >tip Use this approach only if the main UI thread is blocked. In case you need to busy indicate background operations, use the control in its [original setup]({%slug radbusyindicator-getting-started%}).
 
-#### __[C#]__
-{{region kb-busyindicator-blocked-rendering-0}}
+
+```C#
 	public partial class MainWindow : Window
 	{
 		private Window busyIndicatorWindow;
@@ -104,4 +104,4 @@ To do that, you can display the `RadBusyIndicator` in a `Window` opened on a new
 			return thread;
 		}      
 	}
-{{endregion}}
+```

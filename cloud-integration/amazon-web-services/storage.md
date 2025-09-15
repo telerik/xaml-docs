@@ -16,9 +16,9 @@ The **Amazon Simple Storage Service** (Amazon S3) is a storage service that allo
 
 Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
 
-#### __[XAML] Example 1: Defining the view __
+__Example 1: Defining the view__
 
-{{region xaml-cloud-services-aws-storage-0}}
+```XAML
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250" />
@@ -39,7 +39,7 @@ Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({
             <telerik:RadButton Command="{Binding DeleteItemCommand}" Content="Delete item" Grid.Row="2"/>
         </Grid>
     </Grid>
-{{endregion}}
+```
 
 ## Step 2: Install the NuGet package
 
@@ -49,9 +49,9 @@ Open the NuGet Package Manager and install the **AWSSDK.S3** package.
 
 In addition you need to add the following to your App.config file:
 
-#### __[XAML] Example 2: Adding the AWS Profile in App.config__
+__Example 2: Adding the AWS Profile in App.config__
 
-{{region xaml-cloud-services-aws-storage-1}}
+```XAML
     <?xml version="1.0" encoding="utf-8" ?>
         <configuration>
             <appSettings>
@@ -59,7 +59,7 @@ In addition you need to add the following to your App.config file:
                 <add key="AWSRegion" value="eu-west-3" />
             </appSettings>
         </configuration>
-{{endregion}}
+```
 
 > If you do not have an AWS account in Visual Studio, please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
@@ -71,9 +71,9 @@ Before proceeding with the example you will have to create a new bucket using th
 
 The next step is to create the ViewModel. It will need an [IAmazonS3](https://docs.aws.amazon.com/sdkfornet/latest/apidocs/items/TS3IS3NET45.html) client object which will be used for managing the data. We also need to implement all of the commands that the RadButtons are bound to.
 
-#### __[C#] Example 3: Defining the ViewModel__
+__Example 3: Defining the ViewModel__
 
-{{region cs-cloud-services-aws-storage-2}}
+```C#
     public class ViewModel
     {
         string bucketName = "mytestbucket";
@@ -171,11 +171,8 @@ The next step is to create the ViewModel. It will need an [IAmazonS3](https://do
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Defining the ViewModel__
-
-{{region vb-cloud-services-aws-storage-3}}
+```
+```VB.NET
     Public Class ViewModel
         Private bucketName As String = "mytestbucket"
 
@@ -277,15 +274,15 @@ The next step is to create the ViewModel. It will need an [IAmazonS3](https://do
             Next
         End Sub
     End Class
-{{endregion}}
+```
 
 ## Step 5: Define the OpenFileDialogService
 
 The only thing left is to define the interface through which we are opening the [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}). We also need to define the implementation of that interface which will simply open a RadOpenFileDialog and return the path of the opened file.
 
-#### __[C#] Example 4: Defining the OpenFileDialogService and IFileDialogService__
+__Example 4: Defining the OpenFileDialogService and IFileDialogService__
 
-{{region cs-cloud-services-aws-storage-4}}
+```C#
     public interface IFileDialogService
     {
         string OpenFileDialog();
@@ -309,11 +306,8 @@ The only thing left is to define the interface through which we are opening the 
             return string.Empty;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining the OpenFileDialogService and FileDialogService__
-
-{{region cs-cloud-services-aws-storage-5}}
+```
+```VB.NET
     Interface IFileDialogService
         Function OpenFileDialog() As String
     End Interface
@@ -334,28 +328,25 @@ The only thing left is to define the interface through which we are opening the 
             Return String.Empty
         End Function
     End Class
-{{endregion}}
+```
 
 All that is left is to set the DataContext to our ViewModel and pass an instance of the OpenFileDialogService.
 
-#### __[C#] Example 5: Set the DataContext__
+__Example 5: Set the DataContext__
 
-{{region cs-cloud-services-aws-storage-6}}
+```C#
     public MainWindow()
     {
         InitializeComponent();
         this.DataContext = new ViewModel(new OpenFileDialogService());
     }
-{{endregion}}
-
-#### __[VB.NET] Example 5: Set the DataContext__
-
-{{region vb-cloud-services-aws-storage-7}}
+```
+```VB.NET
     Public Sub MainWindow()
         InitializeComponent()
         Me.DataContext = New ViewModel(New OpenFileDialogService())
     End Sub
-{{endregion}}
+```
 
 #### Figure 1: Example after uploading a file and listing it in the Office2016 theme
 

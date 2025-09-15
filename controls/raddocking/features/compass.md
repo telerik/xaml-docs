@@ -40,9 +40,9 @@ The class that represents the RootCompass element is [Telerik.Windows.Controls.D
 
 You can get notified when the __Compass__ and __RootCompass__ are shown via the __PreviewShowCompass__ event of the __RadDocking__. This event can be used for implementation of [conditional docking]({%slug raddocking-how-to-implement-conditional-docking%}).
 
-#### __[C#] Example 1: Handling the PreviewShowCompass event__
+__Example 1: Handling the PreviewShowCompass event__
 
-{{region cs-raddocking-features-compass_4}}
+```C#
 	       
 	public CompassSample()
 	{
@@ -60,11 +60,8 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 			e.Compass.IsRightIndicatorVisible = false;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Handling the PreviewShowCompass event__
-
-{{region vb-raddocking-features-compass_5}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 	
@@ -78,7 +75,7 @@ You can get notified when the __Compass__ and __RootCompass__ are shown via the 
 			e.Compass.IsRightIndicatorVisible = False
 		End If
 	End Sub	
-{{endregion}}
+```
 
 ## See Also
  * [Pane Groups]({%slug raddocking-features-pane-groups%})

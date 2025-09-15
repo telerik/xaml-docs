@@ -20,8 +20,8 @@ __RadBook__ contains two additional properties used for templating:
 
 Below is an example of how to bind __RadBook__ to a collection of items that display photos and info.
 
-#### __[C#] Example 1: Setting up the ItemsSource of RadBook__  
-{{region cs-radbook-data-templates_0}}
+__Example 1: Setting up the ItemsSource of RadBook__  
+```C#
 	public partial class MainPage : UserControl
 	{
 		public MainPage()
@@ -90,10 +90,8 @@ Below is an example of how to bind __RadBook__ to a collection of items that dis
 		public DateTime DateTaken { get; set; }
 		public string Size { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting up the ItemsSource of RadBook__  
-{{region vb-radbook-data-templates_1}}
+```
+```VB.NET
 	Partial Public Class MainPage
 			Inherits UserControl
 			Public Sub New()
@@ -117,10 +115,10 @@ Below is an example of how to bind __RadBook__ to a collection of items that dis
 			Public Property DateTaken() As Date
 			Public Property Size() As String
 		End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Binding RadBook to a collection of business objects__  
-{{region xaml-radbook-data-templates_2}}
+__Example 2: Binding RadBook to a collection of business objects__  
+```XAML
 	    <Grid x:Name="LayoutRoot" Background="Purple">
 	        <Grid.Resources>
 	            <!--  Declare the template used for the left pages  -->
@@ -168,7 +166,7 @@ Below is an example of how to bind __RadBook__ to a collection of items that dis
 	                         LeftPageTemplate="{StaticResource LeftPageTemplate}"
 	                         RightPageTemplate="{StaticResource RightPageTemplate}" />
 	    </Grid>
-{{endregion}}
+```
 
 ![RadBook DataBinding](images/book_datatemplates.png)
 

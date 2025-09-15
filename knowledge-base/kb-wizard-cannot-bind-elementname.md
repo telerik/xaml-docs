@@ -31,8 +31,8 @@ Cannot find the source of data binding with ElementName reference when the eleme
 
 The following code snippet shows the setup that reproduces the issue.
 
-#### __[XAML]__
-{{region kb-wizard-cannot-bind-elementname-0}}
+
+```XAML
 	<telerik:WizardPage.Content>
 		<DataTemplate>
 			<StackPanel>
@@ -41,14 +41,14 @@ The following code snippet shows the setup that reproduces the issue.
 			</StackPanel>
 		</DataTemplate>
 	</telerik:WizardPage.Content>
-{{endregion}}
+```
 
 ## Solution
 
 This behavior comes from an optimization in the RadWizard control. To resolve it, you can use __ContentTemplate__, instead of Content.
 
-#### __[XAML]__
-{{region kb-wizard-cannot-bind-elementname-1}}
+
+```XAML
 	<telerik:WizardPage.ContentTemplate>
 		<DataTemplate>
 			<StackPanel>
@@ -57,16 +57,16 @@ This behavior comes from an optimization in the RadWizard control. To resolve it
 			</StackPanel>
 		</DataTemplate>
 	</telerik:WizardPage.ContentTemplate>
-{{endregion}}
+```
 
 Or you can use the __x:Reference__ keyword.
 
-#### __[XAML]__
-{{region kb-wizard-cannot-bind-elementname-2}}
+
+```XAML
 	<telerik:WizardPage.Content>
 		<StackPanel>
 			<Label Target="{Binding Source={x:Reference txt_Code2}}" Content="_code." />
 			<TextBox Name="txt_Code2" />
 		</StackPanel>
 	</telerik:WizardPage.Content>
-{{endregion}}
+```

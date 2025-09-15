@@ -34,9 +34,9 @@ As of **R2 2016 SP1** the **HandleKeyDown** method can be overridden in order to
 
 A possible scenario would be to select the highlighted item and move the focus to the next control once the user presses **Tab**. Example 1 demonstrates how this can be achieved.
 
-#### __[C#] Example 1: Overriding the HandleKeyDown method__
+__Example 1: Overriding the HandleKeyDown method__
 
-{{region cs-radautocompletebox-features-keyboard-support-0}}
+```C#
 	public class CustomAutoCompleteBox : RadAutoCompleteBox
 	{
 		protected override bool HandleKeyDown(Key systemKey)
@@ -50,11 +50,8 @@ A possible scenario would be to select the highlighted item and move the focus t
 			return base.HandleKeyDown(systemKey);
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Overriding the HandleKeyDown method__
-
-{{region vb-radautocompletebox-features-keyboard-support-0}}
+```
+```VB.NET
 	Public Class CustomAutoCompleteBox
 	Inherits RadAutoCompleteBox
 
@@ -67,15 +64,15 @@ A possible scenario would be to select the highlighted item and move the focus t
 			Return MyBase.HandleKeyDown(systemKey)
 		End Function
 	End Class
-{{endregion}}
+```
 
 ## HighlightedIndex
 
 With the **2020.3.817** version of the controls the RadAutoCompleteBox exposes a new **HighlightedIndex** property which you can use to manually change the highlighted item. This property can be used along with the **HandleKeyDown** method to allow navigation using the **Page Up** and **Page Down** keys, for example.
 
-#### __[C#] Example 2: Using the HighlightedIndex property in the HandleKeyDown method__
+__Example 2: Using the HighlightedIndex property in the HandleKeyDown method__
 
-{{region cs-radautocompletebox-features-keyboard-support-1}}
+```C#
     public class CustomAutoCompleteBox : RadAutoCompleteBox
     {
         protected override bool HandleKeyDown(Key systemKey)
@@ -95,11 +92,8 @@ With the **2020.3.817** version of the controls the RadAutoCompleteBox exposes a
             return base.HandleKeyDown(systemKey);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Using the HighlightedIndex property in the HandleKeyDown method__
-
-{{region vb-radautocompletebox-features-keyboard-support-1}}
+```
+```VB.NET
 	Public Class CustomAutoCompleteBox
 		Inherits RadAutoCompleteBox
 
@@ -117,17 +111,17 @@ With the **2020.3.817** version of the controls the RadAutoCompleteBox exposes a
 			Return MyBase.HandleKeyDown(systemKey)
 		End Function
 	End Class
-{{endregion}}
+```
 
 ## Tab Navigation
 
 __TabNavigationExtensions.IsTabStop__ attached property indicates whether RadAutoCompleteBox is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since **R3 2016**.
 
-#### __[XAML] Example 3: RadAutoCompleteBox with TabNavigationExtensions.IsTabStop__
+__Example 3: RadAutoCompleteBox with TabNavigationExtensions.IsTabStop__
 
-{{region xaml-radautocompletebox-features-keyboard-support-2}}
+```XAML
 	<telerik:RadAutoCompleteBox telerik:TabNavigationExtensions.IsTabStop="False" />
-{{endregion}}
+```
 
 ## See Also
 

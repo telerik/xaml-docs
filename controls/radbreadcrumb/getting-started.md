@@ -35,26 +35,24 @@ You can find the required assemblies for each control from the suite in the {% i
 
 __Example 1__ demonstrates a basic __RadBreadcrumb__ definition.  
 
-#### __[XAML] Example 1: Defining a RadBreadcrumb in XAML__  
-{{region xaml-radbreadcrumb-getting-started_0}}
+__Example 1: Defining a RadBreadcrumb in XAML__  
+```XAML
 	<telerik:RadBreadcrumb x:Name="breadcrumb" Header="Breadcrumb Header" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining a RadBreadcrumb in code__  
-{{region cs-radbreadcrumb-getting-started_1}}
+__Example 2: Defining a RadBreadcrumb in code__  
+```C#
 	RadBreadcrumb breadcrumb = new RadBreadcrumb();
 	breadcrumb.Header = "Breadcrumb Header";
 	breadcrumb.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
 	breadcrumb.VerticalAlignment = System.Windows.VerticalAlignment.Top;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a RadBreadcrumb in code__  
-{{region vb-radbreadcrumb-getting-started_2}}
+```
+```VB.NET
 	Dim breadcrumb As New RadBreadcrumb()
 	breadcrumb.Header = "Breadcrumb Header"
 	breadcrumb.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch
 	breadcrumb.VerticalAlignment = System.Windows.VerticalAlignment.Top
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadBreadcrumb from Code](images/breadcrumb_gettingstarted_breadcrumb.png)
 
@@ -66,8 +64,8 @@ So far there is an empty __RadBreadcrumb__ containing no items.
 
 You can add items to the __RadBreadcrumb__ control by defining __RadBreadcrumbItem__ controls inside the __RadBreadcrumb__ definition in XAML:		
 
-#### __[XAML] Example 3: Adding RadBreadcrumbItems in XAML__  
-{{region xaml-radbreadcrumb-getting-started_3}}
+__Example 3: Adding RadBreadcrumbItems in XAML__  
+```XAML
 	<telerik:RadBreadcrumb Header="Breadcrumb Header" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 	    <telerik:RadBreadcrumbItem Header="BreadcrumbItem 1" DropDownHeader="DropDownItem 1">
 	        <telerik:RadBreadcrumbItem Header="BreadcrumbItem 1.1" DropDownHeader="DropDownItem 1.1"/>
@@ -81,12 +79,12 @@ You can add items to the __RadBreadcrumb__ control by defining __RadBreadcrumbIt
 	    </telerik:RadBreadcrumbItem>
 	    <telerik:RadBreadcrumbItem Header="BreadcrumbItem 3" DropDownHeader="DropDownItem 3" />
 	</telerik:RadBreadcrumb>
-{{endregion}}
+```
 
 Or you can populate the __RadBreadcrumb.Items__ collection in code-behind:
 
-#### __[C#] Example 4: Adding RadBreadcrumbItems in code__  
-{{region cs-radbreadcrumb-getting-started_4}}
+__Example 4: Adding RadBreadcrumbItems in code__  
+```C#
 	RadBreadcrumbItem item1 = new RadBreadcrumbItem() { Header = "BreadcrumbItem 1", DropDownHeader = "DropDownItem 1" };
 	item1.Items.Add(new RadBreadcrumbItem() { Header = "BreadcrumbItem 1.1", DropDownHeader = "DropDownItem 1.1" });
 	item1.Items.Add(new RadBreadcrumbItem() { Header = "BreadcrumbItem 1.2", DropDownHeader = "DropDownItem 1.2" });
@@ -99,10 +97,8 @@ Or you can populate the __RadBreadcrumb.Items__ collection in code-behind:
 	breadcrumb.Items.Add(item2);
 	RadBreadcrumbItem item3 = new RadBreadcrumbItem() { Header = "BreadcrumbItem 3", DropDownHeader = "DropDownItem 3" };
 	breadcrumb.Items.Add(item3);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Adding RadBreadcrumbItems in code__  
-{{region vb-radbreadcrumb-getting-started_5}}
+```
+```VB.NET
 	Dim item1 As New RadBreadcrumbItem() With { 
 	        Key .Header = "BreadcrumbItem 1", 
 	        Key .DropDownHeader = "DropDownItem 1" 
@@ -144,21 +140,19 @@ Or you can populate the __RadBreadcrumb.Items__ collection in code-behind:
 	        Key .DropDownHeader = "DropDownItem 3" 
 	}
 	breadcrumb.Items.Add(item3)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadBreadcrumb Dropdown Items](images/breadcrumb_gettingstarted_breadcrumb_items.png)
 
 In order to remove items from the __RadBreadcrumb__ control, you can remove them from the control's __Items__ collection:
 
-#### __[C#] Example 5: Removing RadBreadcrumbItems__  
-{{region cs-radbreadcrumb-getting-started_6}}
+__Example 5: Removing RadBreadcrumbItems__  
+```C#
 	breadcrumb.Items.Remove(item2);
-{{endregion}}
-
-#### __[VB.NET] Example 5: Removing RadBreadcrumbItems__  
-{{region vb-radbreadcrumb-getting-started_7}}
+```
+```VB.NET
 	breadcrumb.Items.Remove(item2)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadBreadcrumb with Item Removed](images/breadcrumb_gettingstarted_items_remove.png)
 
@@ -168,8 +162,8 @@ By default the __RadBreadcrumb__ control has two modes - normal and text mode. I
 
 In order to enable the __Linear__ mode of the __RadBreadcrumb__ control, you have to set the __IsLinearMode__ property to __True__ :
 
-#### __[XAML] Example 6: Enabling linear mode in XAML__  
-{{region xaml-radbreadcrumb-getting-started_8}}
+__Example 6: Enabling linear mode in XAML__  
+```XAML
 	<telerik:RadBreadcrumb  Header="Breadcrumb Header" HorizontalAlignment="Stretch"
 	        VerticalAlignment="Top" IsLinearMode="True">
 	    <telerik:RadBreadcrumbItem Header="BreadcrumbItem 1" DropDownHeader="DropDownItem 1">
@@ -184,17 +178,15 @@ In order to enable the __Linear__ mode of the __RadBreadcrumb__ control, you hav
 	    </telerik:RadBreadcrumbItem>
 	    <telerik:RadBreadcrumbItem Header="BreadcrumbItem 3" DropDownHeader="DropDownItem 3" />
 	</telerik:RadBreadcrumb>
-{{endregion}}
+```
 
-#### __[C#] Example 7: Enabling linear mode in code__  
-{{region cs-radbreadcrumb-getting-started_9}}
+__Example 7: Enabling linear mode in code__  
+```C#
 	breadcrumb.IsLinearMode = true;
-{{endregion}}
-
-#### __[VB.NET] Example 7: Enabling linear mode in code__  
-{{region vb-radbreadcrumb-getting-started_10}}
+```
+```VB.NET
 	breadcrumb.IsLinearMode = True
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadBreadcrumb Linear Mode](images/breadcrumb_gettingstarted_linear_mode.png)
 
@@ -202,23 +194,21 @@ In order to enable the __Linear__ mode of the __RadBreadcrumb__ control, you hav
 
 By default the __RadBreadcrumb__ control keeps a history of 10 visited paths. If you want to increase or decrease this number, you can set the __HistorySize__ property:		
 
-#### __[XAML] Example 8: Setting the history size in XAML__  
-{{region xaml-radbreadcrumb-getting-started_11}}
+__Example 8: Setting the history size in XAML__  
+```XAML
 	<telerik:RadBreadcrumb Header="Breadcrumb Header" HorizontalAlignment="Stretch"
 	        VerticalAlignment="Top" HistorySize="15">
 	    ...
 	</telerik:RadBreadcrumb>
-{{endregion}}
+```
 
-#### __[C#] Example 9: Setting the history size in code__  
-{{region cs-radbreadcrumb-getting-started_12}}
+__Example 9: Setting the history size in code__  
+```C#
 	breadcrumb.HistorySize = 15;
-{{endregion}}
-
-#### __[VB.NET] Example 9: Setting the history size in code__  
-{{region vb-radbreadcrumb-getting-started_13}}
+```
+```VB.NET
 	breadcrumb.HistorySize = 15
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -237,8 +227,8 @@ To change the theme, you can follow the steps below:
 
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 2: Merge the ResourceDictionaries__  
-{{region xaml-radbreadcrumb-getting-started_1}}
+__Example 2: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -248,7 +238,7 @@ __Example 2__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

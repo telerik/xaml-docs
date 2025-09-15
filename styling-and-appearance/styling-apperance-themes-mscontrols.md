@@ -53,7 +53,7 @@ If you want to style those native controls based on the current application them
 
 #### __XAML__
 
-{{region styling-apperance-themes-runtime_4}}
+```XAML
 	<Application.Resources>
 	  <ResourceDictionary>
 	    <ResourceDictionary.MergedDictionaries>
@@ -62,7 +62,7 @@ If you want to style those native controls based on the current application them
 	    </ResourceDictionary.MergedDictionaries>
 	  </ResourceDictionary>
 	</Application.Resources>
-	{{endregion}}
+	```
 
 > If you want to customize the style of the native controls and keep the Telerik theming you should base your custom styles on the default style that the theme provides as explained in the [Styling the Controls article]({%slug implicit-styles-styling-the-controls%}). For example, the x:Key of the TextBox style is __TextBoxStyle__.
 

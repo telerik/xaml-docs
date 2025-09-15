@@ -18,9 +18,9 @@ You then need to add an additional animation to the default hover and/or selecti
 
 **Example 1** demonstrates how to edit the **Selected** visual state in order to change the foreground of the row when it is selected.
 
-#### __[XAML] Example 1: Modify Selected visual state__
+__Example 1: Modify Selected visual state__
 
-{{region xaml-gridview-how-to-modify-foreground-row_0}}
+```XAML
     <VisualState x:Name="Selected">
 	<Storyboard>
 	    <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Selected" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -38,13 +38,13 @@ You then need to add an additional animation to the default hover and/or selecti
 	    </ObjectAnimationUsingKeyFrames>
 	</Storyboard>
     </VisualState>
-{{endregion}}
+```
 
 **Example 2** demonstrates how to edit the **MouseOver** visual state in order to change the foreground of the row when it is hovered.
 
-#### __[XAML] Example 2: Modify MouseOver visual state__
+__Example 2: Modify MouseOver visual state__
 
-{{region xaml-gridview-how-to-modify-foreground-row_1}}
+```XAML
     <VisualState x:Name="MouseOver">
 	<Storyboard>
 	    <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="Background_Over" Storyboard.TargetProperty="(UIElement.Visibility)">
@@ -59,16 +59,16 @@ You then need to add an additional animation to the default hover and/or selecti
 	    </ObjectAnimationUsingKeyFrames>
 	</Storyboard>
     </VisualState>
-{{endregion}}
+```
 
 **Example 3** shows how to define your own brush resources with an appropriate color for these animations.
         
-#### __[XAML] Example 3: Custom brushes for the Selected and MouseOver states__
+__Example 3: Custom brushes for the Selected and MouseOver states__
 
-{{region xaml-gridview-how-to-modify-foreground-row_2}}
+```XAML
     <SolidColorBrush x:Key="GridView_ItemForeground_Selected" Color="Green"/>
     <SolidColorBrush x:Key="GridView_ItemForeground_Over" Color="Red"/>
-{{endregion}}
+```
 
 ## See Also
 

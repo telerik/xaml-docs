@@ -23,7 +23,7 @@ The final result should look like the snapshots below:
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-integration-with-rad-grid-view_0}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="Auto"/>
@@ -39,7 +39,7 @@ The final result should look like the snapshots below:
 	    </telerik:RadGridView>
 	    <telerik:RadChart x:Name="radChart" Grid.Column="1" Margin="8"/>
 	</Grid>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToGridIntegration_010.PNG)
 
@@ -49,7 +49,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 
 #### __C#__
 
-{{region cs-radchart-how-to-integration-with-rad-grid-view_1}}
+```C#
 	public class NorthwindDataSource
 	{
 		private static NorthwindEntities northwindEntity;
@@ -82,13 +82,13 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 			}
 		}
 	}
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-how-to-integration-with-rad-grid-view_2}}
+```C#
 	public class NorthwindDataSource
 	{
 	    private static NorthwindEntities northwindEntity;
@@ -109,13 +109,13 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-integration-with-rad-grid-view_3}}
+```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
 	
@@ -147,13 +147,13 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	        Next
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-integration-with-rad-grid-view_4}}
+```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
 	
@@ -175,7 +175,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
@@ -183,22 +183,22 @@ Declare the __NorthwindDataSource__ class as a resource in your application and 
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-integration-with-rad-grid-view_5}}
+```XAML
 	<FrameworkElement.Resources>
 	    <example:NorthwindDataSource x:Key="DataSource"/>
 	</FrameworkElement.Resources>
-{{endregion}}
+```
 
 
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-integration-with-rad-grid-view_6}}
+```XAML
 	<telerik:RadGridView Margin="8" 
 	AutoGenerateColumns="False" SelectionMode="Multiple"
 	IsReadOnly="True" ShowGroupPanel="False"
 	ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}" />
-{{endregion}}
+```
 
 
 
@@ -212,13 +212,13 @@ Here is the result so far:
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-integration-with-rad-grid-view_7}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" Margin="8" 
 	AutoGenerateColumns="False" SelectionMode="Multiple"
 	IsReadOnly="True" ShowGroupPanel="False"
 	ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"
 	SelectionChanged="radGridView_SelectionChanged" />
-{{endregion}}
+```
 
 
 
@@ -226,7 +226,7 @@ Here is the result so far:
 
 #### __C#__
 
-{{region cs-radchart-how-to-integration-with-rad-grid-view_8}}
+```C#
 	private void radGridView_SelectionChanged(object sender, SelectionChangeEventArgs e)
 	{
 	    Collection<Products> selectedList = new Collection<Products>();
@@ -240,13 +240,13 @@ Here is the result so far:
 	    CreateSeriesMappings(selectedList);
 	    SetChartItemsSource(selectedList);
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-integration-with-rad-grid-view_9}}
+```VB.NET
 	Private Sub radGridView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
 	    Dim selectedList As New Collection(Of Products)()
 	    ' Get all selected Items '
@@ -258,7 +258,7 @@ Here is the result so far:
 	    CreateSeriesMappings(selectedList)
 	    SetChartItemsSource(selectedList)
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -266,7 +266,7 @@ Here is the result so far:
 
 #### __C#__
 
-{{region cs-radchart-how-to-integration-with-rad-grid-view_10}}
+```C#
 	private void CreateSeriesMappings( Collection<Products> invoicesList )
 	{
 	    radChart.SeriesMappings.Clear();
@@ -292,13 +292,13 @@ Here is the result so far:
 	    radChart.SeriesMappings.Add( seriesMapping );
 	    radChart.SeriesMappings.Add( seriesMapping1 );
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-integration-with-rad-grid-view_11}}
+```VB.NET
 	Private Sub CreateSeriesMappings(ByVal invoicesList As Collection(Of Products))
 	    radChart.SeriesMappings.Clear()
 	
@@ -323,7 +323,7 @@ Here is the result so far:
 	    radChart.SeriesMappings.Add(seriesMapping)
 	    radChart.SeriesMappings.Add(seriesMapping1)
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -331,22 +331,22 @@ Here is the result so far:
 
 #### __C#__
 
-{{region cs-radchart-how-to-integration-with-rad-grid-view_12}}
+```C#
 	private void SetChartItemsSource( Collection<Products> invoicesList )
 	{
 	    radChart.ItemsSource = invoicesList;
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-integration-with-rad-grid-view_13}}
+```VB.NET
 	Private Sub SetChartItemsSource(ByVal invoicesList As Collection(Of Products))
 	    radChart.ItemsSource = invoicesList
 	End Sub
-{{endregion}}
+```
 
 
 

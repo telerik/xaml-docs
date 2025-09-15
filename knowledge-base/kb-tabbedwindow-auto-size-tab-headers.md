@@ -32,19 +32,19 @@ How to auto size the RadTabItem headers in RadTabbedWindow, instead of showing a
 
 Change the the default ItemsPanel of RadTabbedWindow to __TabStripPanel__. You can do this in the Loaded event handler of RadTabbedWindow.
 
-#### __[XAML]__
-{{region kb-tabbedwindow-auto-size-tab-headers-0}}
+
+```XAML
 	<Window.Resources>
 		<ItemsPanelTemplate x:Key="tabControlPanel">            
 			<primitives:TabStripPanel />
 		</ItemsPanelTemplate>
 	</Window.Resources>
-{{endregion}}
+```
 
 Where __primitives__ points to `xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Primitives;assembly=Telerik.Windows.Controls.Navigation"`
 
-#### __[C#]__
-{{region kb-tabbedwindow-auto-size-tab-headers-1}}
+
+```C#
 	private void OpenTabbedWindow()
 	{
 		var tabbedWindow = new RadTabbedWindow();
@@ -65,6 +65,6 @@ Where __primitives__ points to `xmlns:primitives="clr-namespace:Telerik.Windows.
 		var childTabControl = tabbedWindow.FindChildByType<RadTabControl>();
 		childTabControl.OverflowMode = TabOverflowMode.Wrap;
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTabbedWindow Auto Size the Tab Items](images/kb-tabbedwindow-auto-size-tab-headers-0.png)

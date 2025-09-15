@@ -33,15 +33,15 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add __RadGanttView__ by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view. 
 
-#### __[XAML] Example 1: Defining a RadGanttView__
+__Example 1: Defining a RadGanttView__
 
-{{region xaml-radganttview-getting-started_0}}
+```XAML
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid>
 	        <telerik:RadGanttView x:Name="ganttView" />
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 If you run the application now, you will see an empty RadGanttView as demonstrated in __Figure 1__:
 
@@ -52,9 +52,9 @@ If you run the application now, you will see an empty RadGanttView as demonstrat
 
 You can manually define columns in order to showcase information from the displayed tasks as demonstrated in __Example 2__.
 
-#### __[XAML] Example 2: Defining columns__
+__Example 2: Defining columns__
 
-{{region xaml-radganttview-getting-started_1}}
+```XAML
 	<telerik:RadGanttView x:Name="ganttView2">
 	    <telerik:RadGanttView.Columns>
 	        <telerik:TreeColumnDefinition Header="Title" Width="AutoHeaderAndContent"/>
@@ -62,7 +62,7 @@ You can manually define columns in order to showcase information from the displa
 	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 >Check the [Columns Overview]({%slug radganttview-features-columns-types%}) topic for more information about the columns of the data grid.    
 
@@ -70,9 +70,9 @@ You can manually define columns in order to showcase information from the displa
 
 In order to populate a RadGanttView control with sample data, you can create a collection of __GanttTask__ objects as demonstrated in __Example 3__. The example also shows how you can specify a __DateRange__ object in order to bind it to the __VisibleRange__ property of RadGanttView. It will control the range that is visible in the timeline section of the control.  
 
-#### __[C#] Example 3: Creating a ViewModel__
+__Example 3: Creating a ViewModel__
 
-{{region cs-radganttview-getting-started_2}}
+```C#
     public class ViewModel : ViewModelBase
     {
         private DateRange visibleRange;
@@ -108,11 +108,8 @@ In order to populate a RadGanttView control with sample data, you can create a c
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Creating a ViewModel__
-
-{{region vb-radganttview-getting-started_3}}
+```
+```VB.NET
 	Public Class ViewModel
 		Inherits ViewModelBase
 			Private _visibleRange As DateRange
@@ -143,11 +140,11 @@ In order to populate a RadGanttView control with sample data, you can create a c
 				End Set
 			End Property
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Binding to a TaskSource__
+__Example 4: Binding to a TaskSource__
 
-{{region xaml-radganttview-getting-started_4}}
+```XAML
 	<Grid>
         <Grid.DataContext>
             <local:ViewModel />
@@ -160,7 +157,7 @@ In order to populate a RadGanttView control with sample data, you can create a c
             </telerik:RadGanttView.Columns>
         </telerik:RadGanttView>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 4 in the Office2016 theme__
 
@@ -182,8 +179,8 @@ To change the theme, you can follow the steps below:
 
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 5: Merge the ResourceDictionaries__  
-{{region xaml-radganttview-getting-started_5}}
+__Example 5: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -193,7 +190,7 @@ __Example 5__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 	
 #### __Figure 3: RadGanttView with the Windows8 theme applied__
 ![RadGanttView with Windows8 theme](images/ganttview_gettingstarted_windows8theme.png)

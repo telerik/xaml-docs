@@ -40,14 +40,14 @@ Let's have the __RadListBox__ bound to "Customers" collection as explained in [B
 
 Setting __TextPath__ /__TextBinding__ property will allow to use "Name" property of the Customer object for AutoComplete:
 
-#### __[XAML]  Setting TextPath__
+__Setting TextPath__
 
-{{region xaml-radlistbox-features-autocomplete_2}}
+```XAML
 	<telerik:RadListBox  Width="300" x:Name="radListBox1"
 	ItemsSource="{Binding Customers}"
 	ItemTemplate="{StaticResource ListBoxCustomTemplate}"
 	TextPath="Name" />
-{{endregion}}
+```
 
 Typing, for example "L" will select the corresponding item:
 
@@ -63,30 +63,27 @@ Typing, for example "L" will select the corresponding item:
 
 By default the autocomplete feature of __RadListBox__ is always enabled. In order to disable it, you need to set the __RadListBox__'s __IsTextSearchEnabled__ property to __False__.
 
-#### __[XAML]  Setting IsTextSearchEnabled__
+__Setting IsTextSearchEnabled__
 
-{{region xaml-radlistbox-features-autocomplete_0}}
+```XAML
 	<telerik:RadListBox x:Name="radListBox" IsTextSearchEnabled="False"/>
-{{endregion}}
+```
 
-#### __[C#]  Setting IsTextSearchEnabled__
+__Setting IsTextSearchEnabled__
 
-{{region cs-radlistbox-features-autocomplete_1}}
+```C#
 	radListBox.IsTextSearchEnabled = false;
-{{endregion}}
+```
 
 ## Using AutocompleteBehavior.AutoCompleteTimeout
 
 The __AutocompleteBehavior__ class exposes a static property named __AutoCompleteTimeout__ which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after which the typed text for the autocomplete is reset. Its default value is **1 second**.
 
-#### __[C#] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
+__Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
 
-{{region cs-radlistbox-features-autocomplete_3}}
+```C#
 	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting AutocompleteBehavior.AutoCompleteTimeout__
-
-{{region vb-radlistbox-features-autocomplete_3}}
+```
+```VB.NET
 	Telerik.Windows.Controls.Primitives.AutocompleteBehavior.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
-{{endregion}}
+```

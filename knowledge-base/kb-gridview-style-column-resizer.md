@@ -26,9 +26,9 @@ How to apply a style to the thumbs responsible for resizing the columns.
 
 To style the column resizers, you need to [edit the default template]({%slug styling-apperance-editing-control-templates%}) of the **GridViewHeaderCell** element and replace the default **ColumnHeaderGripperStyle** which is set for the **PART_LeftHeaderGripper** and **PART_RightHeaderGripper** elements.
 
-#### __[XAML] Example 1: Override the ColumnHeaderGripperStyle__
+__Example 1: Override the ColumnHeaderGripperStyle__
 
-{{region xaml-kb-gridview-style-column-resizer-0}}
+```XAML
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -75,7 +75,7 @@ To style the column resizers, you need to [edit the default template]({%slug sty
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 #### Figure 1: The modified column resizers
 

@@ -34,10 +34,10 @@ The purpose of this tutorial is to show you how to validate data using __RadGrid
 For the purpose of this tutorial, we will use the __RadGridView__ declaration in __Example 1__. The __RadGridView__ is [populated]({%slug gridview-in-memory-date%}) with some sample data.
       
 
-#### __[XAML] Example 1: Declare RadGridView__
-{{region xaml-gridview-managing-data-validation_0}}
+__Example 1: Declare RadGridView__
+```XAML
 	<telerik:RadGridView x:Name="radGridView"/>
-{{endregion}}
+```
 
 #### __Figure 1: Standard appearance of RadGridView__
 ![Telerik {{ site.framework_name }} DataGrid Validation 010](images/RadGridView_Validation_010.png)
@@ -64,10 +64,10 @@ In __R2 2016__, Telerik introduced the __ValidationType__ property of RadGridVie
 *  __INotifyDataErrorInfo__: Only validation through the __INotifyDataErrorInfo__ interface is respected.
 *  __Default__: Validation through all three mechanisms is respected.
 
-#### __[XAML] Example 2: Set the ValidationType property of RadGridView__
-{{region xaml-gridview-managing-data-validation_11}}
+__Example 2: Set the ValidationType property of RadGridView__
+```XAML
 	<telerik:RadGridView x:Name="radGridView" ValidationType="Default"/>
-{{endregion}}
+```
 
 ## Validating Data on a Cell Level
  
@@ -77,15 +77,15 @@ __Example 3__ shows how to validate the __OrderNo__ property of the __Order__ ob
 
 Attach to the __CellValidating__ event, which is exposed by the __RadGridView__.        
 
-#### __[XAML] Example 3: Attach to the CellValidating event__
-{{region xaml-gridview-managing-data-validation_1}}
+__Example 3: Attach to the CellValidating event__
+```XAML
 	<telerik:RadGridView CellValidating="radGridView_CellValidating"/>
-{{endregion}}
+```
 
 Switch to the code-behind and add your custom validation logic in the event handler.
 
-#### __[C#] Example 3: Add custom logic in the code behind__
-{{region cs-gridview-managing-data-validation_2}}
+__Example 3: Add custom logic in the code behind__
+```C#
 	private void radGridView_CellValidating(object sender, Telerik.Windows.Controls.GridViewCellValidatingEventArgs e)
 	{
 	    if (e.Cell.Column.UniqueName == "OrderNO")
@@ -97,10 +97,8 @@ Switch to the code-behind and add your custom validation logic in the event hand
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Add custom logic in the code behind__
-{{region vb-gridview-managing-data-validation_3}}
+```
+```VB.NET
 	Private Sub radGridView_CellValidating(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewCellValidatingEventArgs)
 	    If e.Cell.Column.UniqueName = "OrderNO" Then
 	        If e.NewValue.ToString().Length < 5 Then
@@ -109,7 +107,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 When you try to enter an order number that has fewer than five characters, you should see a validation message that is similar to the one in __Figure 2__.
 
@@ -124,8 +122,8 @@ When you set the __e.IsValid__ property to __False__, this will cancel the editi
 
 An alternative approach is to use validation on a __property level__ as shown in __Example 4__. In this case, you need to throw an exception when an incorrect value is about to be set. This results in a binding validation error (__Figure 3__) and the __GridViewBoundColumnBase__ editor will enter into an invalid state.
 
-#### __[C#] Example 4: Set validation on a property level__
-{{region cs-gridview-managing-data-validation_4}}
+__Example 4: Set validation on a property level__
+```C#
 	public class Order
 	{
 	    private string orderNo;
@@ -147,10 +145,8 @@ An alternative approach is to use validation on a __property level__ as shown in
 	
 	    public int Total { get; internal set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Set validation on a property level__
-{{region vb-gridview-managing-data-validation_5}}
+```
+```VB.NET
 	Public Class Order
 	    Private m_orderNo As String
 	
@@ -168,7 +164,7 @@ An alternative approach is to use validation on a __property level__ as shown in
 	
 	    Public Property Total As Integer
 	End Class
-{{endregion}}
+```
 
 #### __Figure 3: RadGridView's appearance after validation__
 ![Telerik {{ site.framework_name }} DataGrid Validation 030](images/RadGridView_Validation_030.png)
@@ -183,15 +179,15 @@ __Example 5__ shows how to validate the __OrderNO__ and __Total__ properties of 
 
 Attach to the __RowValidating__ event, which is exposed by the __RadGridView__.
 
-#### __[XAML] Example 5: Attach to the RowValidating event__
-{{region xaml-gridview-managing-data-validation_6}}
+__Example 5: Attach to the RowValidating event__
+```XAML
 	<telerik:RadGridView RowValidating="radGridView_RowValidating"/>
-{{endregion}}
+```
 
 Switch to the code-behind and add your custom validation logic in the event handler as demonstrated in **Example 6**.
 
-#### __[C#] Example 6: Apply custom logic in the RowValidating event__
-{{region cs-gridview-managing-data-validation_7}}
+__Example 6: Apply custom logic in the RowValidating event__
+```C#
 	private void radGridView_RowValidating(object sender, Telerik.Windows.Controls.GridViewRowValidatingEventArgs e)
 	{
 	
@@ -214,10 +210,8 @@ Switch to the code-behind and add your custom validation logic in the event hand
 	        e.IsValid = false;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Apply custom logic in the RowValidating event__
-{{region vb-gridview-managing-data-validation_8}}
+```
+```VB.NET
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewRowValidatingEventArgs)
 	    Dim order As Order = TryCast(e.Row.DataContext, Order)
 	    If [String].IsNullOrEmpty(order.OrderNO) OrElse order.OrderNO.Length < 5 Then
@@ -235,7 +229,7 @@ Switch to the code-behind and add your custom validation logic in the event hand
 	        e.IsValid = False
 	    End If
 	End Sub
-{{endregion}}
+```
 
 A few things worth mentioning here:
 
@@ -257,8 +251,8 @@ RadGridView also allows you to take advantage of the __System.ComponentModel.Dat
 
 **Example 7** shows you how to use __DataAnnotations__ in order to validate the __OrderNO__ property of the __Order__ object.
 
-#### __[C#] Example 7: Set validation through data DataAnnotations__
-{{region cs-gridview-managing-data-validation_9}}
+__Example 7: Set validation through data DataAnnotations__
+```C#
 	[Required]
 	public string OrderNO
 	{
@@ -274,10 +268,8 @@ RadGridView also allows you to take advantage of the __System.ComponentModel.Dat
 	        this.orderNo = value;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: Set validation through data DataAnnotations__
-{{region vb-gridview-managing-data-validation_10}}
+```
+```VB.NET
 	<Required()>
 	Public Property OrderNO() As String
 	    Get
@@ -290,7 +282,7 @@ RadGridView also allows you to take advantage of the __System.ComponentModel.Dat
 	        Me.m_orderNo = value
 	    End Set
 	End Property
-{{endregion}}
+```
 
 >In order to use DataAnnotations you should add a reference to the __System.ComponentModel.DataAnnotations__ assembly.       
 
@@ -321,8 +313,8 @@ You can see the result in __Figure 5__.
 
 The RadGridView control validation engine includes some specific required properties, internally set on the editor's binding, generated by default. When defining a custom CellEditTemplate, these properties won't be set internally. __Example 8__ demonstrates which binding properties need to be set to make the validation work as expected.
 
-#### __[C#] Example 8: Set required validation properties to the editing element__
-{{region cs-gridview-managing-data-validation_9}}
+__Example 8: Set required validation properties to the editing element__
+```C#
 	<telerik:GridViewDataColumn.CellEditTemplate>
 		<DataTemplate>
 			<TextBox Text="{Binding Path=MyPropertyName,
@@ -334,7 +326,7 @@ The RadGridView control validation engine includes some specific required proper
 								Mode=TwoWay}" />
 		</DataTemplate>
 	</telerik:GridViewDataColumn.CellEditTemplate>
-{{endregion}}
+```
 
 ## Examples
 

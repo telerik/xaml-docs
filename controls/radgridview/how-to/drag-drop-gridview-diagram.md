@@ -20,8 +20,8 @@ First we will specify the following ViewModels which are going to be used to pop
 * __EmployeeGraphSource:__ A class deriving from the __ObservableGraphSourceBase__ ViewModel that represents the RadDiagram __GraphSource__.
 * __MainViewModel:__ The main ViewModel class of the application.
 	
-#### __[C#] Example 1: Creating ViewModels__
-	{{region drag-and-drop-from-radgridview-to-raddiagram_0}}	
+__Example 1: Creating ViewModels__
+	```C#	
 		public class Employee
 		{
 			public Employee(string firstName, string lastName)
@@ -61,13 +61,13 @@ First we will specify the following ViewModels which are going to be used to pop
 				return data;
 			}
 		}
-	{{endregion}}
+	```
 
 Next, we can go ahead and define the __RadDiagram__ and __RadGridView__ controls in our view:
 
-#### __[XAML] Example 2: Defining RadDiagram and RadGridView in XAML__
+__Example 2: Defining RadDiagram and RadGridView in XAML__
 
-{{region drag-and-drop-from-radgridview-to-raddiagram_1}}
+```XAML
 	<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -110,18 +110,18 @@ Next, we can go ahead and define the __RadDiagram__ and __RadGridView__ controls
             </telerik:RadDiagram.ContainerShapeStyle>
         </telerik:RadDiagram>
     </Grid>
-{{endregion}}
+```
 
 And finally, we need to set the DataContext of the MainWindow:
 
-#### __[C#] Example 3: Setting DataContext__
-	{{region drag-and-drop-from-radgridview-to-raddiagram_2}}	
+__Example 3: Setting DataContext__
+	```C#	
 		public MainWindow()
         {
             InitializeComponent();
             this.DataContext = new MainViewModel();
         }
-	{{endregion}}	
+	```	
 
 If you run the application now, you should get a structure like in **Figure 1**:
 
@@ -132,19 +132,19 @@ You can observe that you still can't drag-drop a row from the RadGridView to the
 
 The next step is to make sure that the GridViewRows are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowDrag__ attached property to __True__ on every __GridViewRow__.
 
-#### __[XAML] Example 4: Setting AllowDrag attached property__
-{{region drag-and-drop-from-radgridview-to-raddiagram_3}}	
+__Example 4: Setting AllowDrag attached property__
+```XAML	
 	<telerik:RadGridView.RowStyle>
 		<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
 			<Setter Property="telerik:DragDropManager.AllowDrag" Value="True" />
 		</Style>
 	</telerik:RadGridView.RowStyle>	
-{{endregion}}
+```
 	
 To create a visual clue that the user has started dragging a row, we can create a custom attached property. In the property changed callback we can subscribe to the __DragInitialize__ event of the __RadGridView__ using __DragDropManager__. In the event handler we can set the __DragVisual__ property from the event arguments.
 
-#### __[C#] Example 5: Creating custom attached property__
-{{region drag-and-drop-from-radgridview-to-raddiagram_4}}	
+__Example 5: Creating custom attached property__
+```C#	
 	public class DragDropBehavior
     {
         public static readonly DependencyProperty IsEnabledProperty =
@@ -181,10 +181,10 @@ To create a visual clue that the user has started dragging a row, we can create 
 			args.DragVisual = new TextBlock() { Margin = new Thickness(5), Background = Brushes.Bisque, Text = employee.FirstName + " " + employee.LastName };
 		}
     }
-{{endregion}}
+```
 
-#### __[C#] Example 6: Setting the attached property to the RadGridView__
-{{region drag-and-drop-from-radgridview-to-raddiagram_5}}	
+__Example 6: Setting the attached property to the RadGridView__
+```C#	
 	<telerik:RadGridView x:Name="gridView" Margin="5" Grid.Column="0" 
 						 CanUserReorderColumns="False"                          
 						 ItemsSource="{Binding EmployeeData}"                              
@@ -196,21 +196,21 @@ To create a visual clue that the user has started dragging a row, we can create 
 			</Style>
 		</telerik:RadGridView.RowStyle>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 The final step which we need to do is to subscribe to the **PreviewDrop** event of the RadDiagram. In the event handler we can get the current dragged row using the GetData() method of the Data property from the event arguments. Then you can add the item to the GraphSource of the RadDiagram.
 
-#### __[C#] Example 7: Subcribe to the PreviewDrop event__
-{{region drag-and-drop-from-radgridview-to-raddiagram_6}}	
+__Example 7: Subcribe to the PreviewDrop event__
+```C#	
 	<telerik:RadDiagram Grid.Column="1" GraphSource="{Binding EmployeeGraphSource}"                             
                         x:Name="xDiagram"
 						PreviewDrop="RadDiagram_PreviewDrop" > 
 	. . . .
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
-#### __[C#] Example 8: PreviewDrop event handler__
-{{region drag-and-drop-from-radgridview-to-raddiagram_7}}	
+__Example 8: PreviewDrop event handler__
+```C#	
 	private void RadDiagram_PreviewDrop(object sender, System.Windows.DragEventArgs e)
 	{
 		var droppedRow = e.Data.GetData(typeof(GridViewRow));
@@ -223,7 +223,7 @@ The final step which we need to do is to subscribe to the **PreviewDrop** event 
 		(this.DataContext as MainViewModel).EmployeeGraphSource.AddNode(node);
 		(this.DataContext as MainViewModel).EmployeeData.Remove(employee);
 	}
-{{endregion}}
+```
 
 >For a more complex example, you can check out the [DragDropToDiagram](https://github.com/telerik/xaml-sdk/tree/master/GridView/DragDropToDiagram) example in the RadGridView SDK examples section.
 

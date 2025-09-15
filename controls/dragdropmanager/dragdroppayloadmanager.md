@@ -22,7 +22,7 @@ Let's start by creating a simple drag drop application with two __RadListBoxes__
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_01}}
+```C#
 	public class ViewModel : ViewModelBase
 	{
 	    public ObservableCollection<Customer> ItemsSource1 { get; set; }
@@ -42,13 +42,13 @@ Let's start by creating a simple drag drop application with two __RadListBoxes__
 	        this.ItemsSource2 = new ObservableCollection<string>();
 	    }
 	}
-{{endregion}}
+```
 
 The __RadListBoxes__ are defined in XAML the following way:        
 
 #### __XAML__
 
-{{region dragdropmanager-payloadmanager_01}}
+```XAML
 	<Grid>
 	    <Grid.DataContext>
 	        <local:ViewModel />
@@ -70,7 +70,7 @@ The __RadListBoxes__ are defined in XAML the following way:
 	                ItemsSource="{Binding ItemsSource2}"  
 	                AllowDrop="True" />
 	</Grid>
-{{endregion}}
+```
 
 You can see the application in __Figure 1__:
 
@@ -82,15 +82,15 @@ Next you will need to enable the drag and drop by adding a __DragInitializeHandl
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_03}}
+```C#
 	DragDropManager.AddDragInitializeHandler(this.ListBox1, OnDragInitialize);            
-{{endregion}}
+```
 
 In the handler method where the payload is generated you will need to attach a DataConverter that will be used to convert the dragged item from object of type Customer to a simple string. That is why before implementing the handler you will need to create the following DataConverter:        
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_02}}
+```C#
 	public class CustomerToStringConverter : DataConverter
 	{
 	    public override object ConvertTo(object data, string format)
@@ -110,7 +110,7 @@ In the handler method where the payload is generated you will need to attach a D
 	        return new string[] { typeof(string).FullName };
 	    }
 	}
-{{endregion}}
+```
 
 >tipThe DataConverter can convert objects from multiple types to multiple types inside its __ConvertTo()__ method. You will need to check if the format is the desired one as well as if the needed data is present. The __GetConvertToFormats()__ method should return a collection of the supported formats to convert to, so the control can accept or prevent the drop when the dragged object cannot be converted to the required format.
 
@@ -118,7 +118,7 @@ In the __DragInitialize__ handler itself you will need to pass to the DragDropPa
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_04}}
+```C#
 	private void OnDragInitialize(object sender, DragInitializeEventArgs e)
 	{
 	    e.AllowedEffects = DragDropEffects.All;
@@ -128,21 +128,21 @@ In the __DragInitialize__ handler itself you will need to pass to the DragDropPa
 	    e.Data = payload;
 	    e.Handled = true;
 	}            
-{{endregion}}
+```
 
 Now you can add the __DropHandler__ for the second __RadListBox__ inside of which the dragged data will be converted using the converter.        
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_07}}
+```C#
 	DragDropManager.AddDropHandler(this.ListBox2, OnDrop);
-{{endregion}}
+```
 
 Inside of the handler you can also add another DataObject to the payload that indicates whether the drop was successful or not. Let's add an object named __IsDropSuccessful__ and set its value to __true__. This way you will know afterwards in the __DragDropCompletedHandler__ of the first __RadListBox__ if the drop on the second one was successful (or data has been dropped elsewhere):       
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_08}}
+```C#
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    var data = DragDropPayloadManager.GetDataFromObject(e.Data, typeof(string).FullName);
@@ -150,19 +150,19 @@ Inside of the handler you can also add another DataObject to the payload that in
 	    DragDropPayloadManager.SetData(e.Data, "IsDropSuccessful", true);        
 	    e.Handled = true;
 	}
-{{endregion}}
+```
 
 After that, you should handle the __DragDropCompleted__ of the first list box and check if the drop was successful:        
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_09}}
+```C#
 	DragDropManager.AddDragDropCompletedHandler(this.ListBox2, OnDragDropCompleted);
-{{endregion}}
+```
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_10}}
+```C#
 	private void OnDragDropCompleted(object sender, DragDropCompletedEventArgs e)
 	{
 	    var isDropSuccessful = DragDropPayloadManager.GetDataFromObject(e.Data, "IsDropSuccessful");
@@ -175,19 +175,19 @@ After that, you should handle the __DragDropCompleted__ of the first list box an
 	
 	    e.Handled = true;
 	}
-{{endregion}}
+```
 
 In addition to this, you can use the __DragDropPayloadManager__ in order to check whether the dragged data can be converted to a type that is required from the ItemsSource. This is done by using the __GetFormats__ method, which returns a collection of the supported types. If the required type is not present, you can easily prevent the drop by setting the __Effects__ property of the drag arguments to __DragDropEffects.None__:        
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_05}}
+```C#
 	DragDropManager.AddDragOverHandler(this.ListBox2, OnDragOver);         
-{{endregion}}
+```
 
 #### __C#__
 
-{{region dragdropmanager-payloadmanager_06}}
+```C#
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    var formats = DragDropPayloadManager.GetFormats(e.Data, true);
@@ -203,7 +203,7 @@ In addition to this, you can use the __DragDropPayloadManager__ in order to chec
 	
 	    e.Handled = true;
 	}      
-{{endregion}}
+```
 
 __Figure 2__ shows the final result. When the dragged item is dropped, it will be converted to a string, added to the ItemsSource of the second __RadListBox__ and removed from the ItemsSource of the first list box.
 

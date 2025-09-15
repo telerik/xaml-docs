@@ -35,8 +35,8 @@ Change the colors of the color picker in the selection mini toolbar of the RadRi
 
 The following example showcases this approach for a __.NET Framework__ project. It will utilize the `CustomSelectionMiniToolBar` attribute, which the [MEF support]({%slug radrichtextbox-mef%}) will read and use this custom implementation:
 
-#### __[C#] Custom SelectionMiniToolBar for a .NET Framework project__
-{{region kb-radrichtextbox-difference-in-the-highlighted-colors-0}}
+__Custom SelectionMiniToolBar for a .NET Framework project__
+```C#
     [CustomSelectionMiniToolBar]
     public class CustomSelectionMiniToolBar : SelectionMiniToolBar
     {
@@ -64,12 +64,12 @@ The following example showcases this approach for a __.NET Framework__ project. 
 
         }
     }
-{{endregion}}
+```
 
 The following example showcases this approach for a __.NET__ project. Since the MEF functionality is no longer supported by the __.NET 6 and later versions__, set a new instance of the `CustomSelectionMiniToolBar` element to the `SelectionMiniToolBar` property of `RadRichTextBox`. 
 
-#### __[C#] Custom SelectionMiniToolBar for a .NET project__  
-{{region kb-radrichtextbox-difference-in-the-highlighted-colors-1}}
+__Custom SelectionMiniToolBar for a .NET project__  
+```C#
     //CustomSelectionMiniToolBar attribute is not present
     public class CustomSelectionMiniToolBar : SelectionMiniToolBar
     {
@@ -97,12 +97,12 @@ The following example showcases this approach for a __.NET__ project. Since the 
 
         }
     }
-{{endregion}}
+```
 
-#### __[C#] Setting the custom SelectionMiniToolBar to the RadRichTextBox control__   
-{{region kb-radrichtextbox-difference-in-the-highlighted-colors-2}}
+__Setting the custom SelectionMiniToolBar to the RadRichTextBox control__   
+```C#
 	this.richTextBox.SelectionMiniToolBar = new CustomSelectionMiniToolBar(); 
-{{endregion}}
+```
 
 __RadRichTextBox with a custom SelectionMiniToolBar__
 

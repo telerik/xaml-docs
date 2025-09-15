@@ -21,8 +21,8 @@ The bar series visualizes three dimensional data represented by 3D bars. Each da
 
 You can use the code from __Example 1__ to create a __BarSeries3D__. 
 
-#### __[XAML] Example 1: Defining series in XAML__	
-{{region radchartview3d-series-barseries3d-0}}
+__Example 1: Defining series in XAML__	
+```XAML
 	<telerik:RadCartesianChart3D>
 		<telerik:RadCartesianChart3D.XAxis>
 			<telerik:CategoricalAxis3D />
@@ -52,7 +52,7 @@ You can use the code from __Example 1__ to create a __BarSeries3D__.
 			<telerik:CartesianChart3DGrid />
 		</telerik:RadCartesianChart3D.Grid>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 	
 #### __Figure 1: BarSeries3D__
 ![{{ site.framework_name }} RadChartView3D BarSeries3D](images/radchartview-3d-barseries3d-0.png)
@@ -61,8 +61,8 @@ You can use the code from __Example 1__ to create a __BarSeries3D__.
 
 You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __BarSeries3D__ to bind the __XyzDataPoints__’ properties to the properties of the view models. The __ItemsSource__ property is used to pass the data collection to the series.
 
-#### __[C#] Example 2: Defining a model for the data points and setting up the data context__
-{{region radchartview3d-series-barseries3d-1}}
+__Example 2: Defining a model for the data points and setting up the data context__
+```C#
 	public class PlotInfo
 	{
 		public double XValue { get; set; }
@@ -76,12 +76,12 @@ You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ prope
 		new PlotInfo { XValue = 10, YValue = 20, ZValue = 150, },
 		//....
 	};
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting up the series__
-{{region radchartview3d-series-barseries3d-2}}
+__Example 3: Setting up the series__
+```XAML
 	<telerik:BarSeries3D XValueBinding="XValue"  YValueBinding="YValue" ZValueBinding=”ZValue” ItemsSource="{Binding}"/>
-{{endregion}}
+```
 	
 ## Display direction
 
@@ -89,10 +89,10 @@ The display direction of the series specifies which axis determines the start (o
 
 You can use the __OriginValue__ property to define the origin of the bars on the corresponding axis determined by the __DisplayDirection__ property. The default origin value is __0__.
 
-#### __[XAML] Example 4: Setting the origin value__
-{{region radchartview3d-series-barseries3d-3}}
+__Example 4: Setting the origin value__
+```XAML
 	<telerik:BarSeries3D OriginValue="15">
-{{endregion}}
+```
 
 __Figure 2__ demonstrates the result from __Example 1__ but with its OriginValue set to 15.
 	

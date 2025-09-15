@@ -14,9 +14,9 @@ This help article illustrates how to define your own DataField type.
 
 For this purpose you need to create a class which inherits from **DataFormDataField** and overrides its **GetControl()** and **GetControlBindingProperty()** methods:
 
-#### __[C#] Example 1: Creating the DataFormNumericUpDownField class__
+__Example 1: Creating the DataFormNumericUpDownField class__
 
-	{{region cs-raddataform-defining-custom-datafields_0}}
+	```C#
 	public class DataFormNumericUpDownField : DataFormDataField
 	{
 	    protected override DependencyProperty GetControlBindingProperty()
@@ -36,11 +36,8 @@ For this purpose you need to create a class which inherits from **DataFormDataFi
 	        return numericUpDown;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the DataFormNumericUpDownField class__
-
-	{{region vb-raddataform-defining-custom-datafields_0}}
+```
+```VB.NET
 	Public Class DataFormNumericUpDownField
 	    Inherits DataFormDataField
 	    Protected Overrides Function GetControlBindingProperty() As DependencyProperty
@@ -60,19 +57,19 @@ For this purpose you need to create a class which inherits from **DataFormDataFi
 	        Return numericUpDown
 	    End Function
 	End Class
-{{endregion}}
+```
 
 The next step is to handle RadDataForm's **AutoGeneratingField** event and set the **DataField** to the new **DataFormNumericUpDownField**:
 
-#### __[XAML] Example 2: Initializing a RadDataForm__
+__Example 2: Initializing a RadDataForm__
 
-	{{region xaml-raddataform-defining-custom-datafields_2}}
+	```XAML
 	<telerik:RadDataForm x:Name="DataForm1" AutoGeneratingField="RadDataForm_AutoGeneratingField" />
-{{endregion}}
+```
 
-#### __[C#] Example 3: Handling the AutoGeneratingField event__
+__Example 3: Handling the AutoGeneratingField event__
 
-	{{region cs-raddataform-defining-custom-datafields_1}}
+	```C#
 	private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
 	{
 	    if (e.DataField.Label.Equals("Number"))
@@ -80,11 +77,8 @@ The next step is to handle RadDataForm's **AutoGeneratingField** event and set t
 	        e.DataField = new DataFormNumericUpDownField() { Label = e.DataField.Label, DataMemberBinding = e.DataField.DataMemberBinding };
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Handling the AutoGeneratingField event__
-
-	{{region vb-raddataform-defining-custom-datafields_1}}
+```
+```VB.NET
 		Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
 		    If e.DataField.Label.Equals("Number") Then
 		        e.DataField = New DataFormNumericUpDownField() With {
@@ -93,13 +87,13 @@ The next step is to handle RadDataForm's **AutoGeneratingField** event and set t
 		        }
 		    End If
 		End Sub
-	{{endregion}}
+	```
 
 And here's how you can use the DataFormNumericUpDownField in XAML:
           
-#### __[XAML] Example 4: Using the DataFormNumericUpDownField in a Custom DataTemplate__
+__Example 4: Using the DataFormNumericUpDownField in a Custom DataTemplate__
 
-	{{region xaml-raddataform-defining-custom-datafields_3}}
+	```XAML
 	<Grid>
 	    <Grid.Resources>
 	        <DataTemplate x:Key="MyTemplate">
@@ -116,7 +110,7 @@ And here's how you can use the DataFormNumericUpDownField in XAML:
 	                     NewItemTemplate="{StaticResource MyTemplate}">
 	    </telerik:RadDataForm>
 	</Grid>
-{{endregion}}
+```
 
 ## See Also
 

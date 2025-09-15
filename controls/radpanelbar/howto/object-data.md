@@ -18,13 +18,13 @@ Naturally, if the collection you are binding to implements the __INotifyCollecti
 
 **Examples 1 and 2** demonstrate how you can bind the __RadPanelBar__ to a collection of strings:
 
-#### __[XAML] Example 1: RadPanelBar definition__
-{{region xaml-radpanelbar-object-data_0}}
+__Example 1: RadPanelBar definition__
+```XAML
 	<telerik:RadPanelBar ItemsSource="{Binding}" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Binding RadPanelBar to list of strings__
-{{region cs-radpanelbar-object-data_1}}
+__Example 2: Binding RadPanelBar to list of strings__
+```C#
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -39,10 +39,8 @@ Naturally, if the collection you are binding to implements the __INotifyCollecti
             this.DataContext = myListDataSource;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Binding RadPanelBar to list of strings__
-{{region vb-radpanelbar-object-data_2}}
+```
+```VB.NET
 	Partial Public Class MainWindow
 		Inherits Window
 
@@ -57,7 +55,7 @@ Naturally, if the collection you are binding to implements the __INotifyCollecti
 			Me.DataContext = myListDataSource
 		End Sub
 	End Class
-{{endregion}}
+```
 
 By default, the string values from the ItemsSource collection will be assigned to the __Header__ property of each __RadPanelBarItem__ in the __RadPanelBar__ control you are populating.
 
@@ -68,18 +66,18 @@ By default, the string values from the ItemsSource collection will be assigned t
 
 In case you want to display (in the item headers) a specific property of an object in a source collection, you can use either the __DisplayMemberPath__, or the __ItemTemplate__ property of __RadPanelBar__. The approach of using an ItemTemplate is demonstrated in **Examples 3 and 4**:
 
-#### __[XAML] Example 3: RadPanelBar definition with ItemTemplate__
-{{region xaml-radpanelbar-object-data_3}}
+__Example 3: RadPanelBar definition with ItemTemplate__
+```XAML
 	<HierarchicalDataTemplate x:Key="headerTemplate" ItemsSource="{Binding Items}">
 		<TextBlock Text="{Binding Text}" />
 	</HierarchicalDataTemplate>
 
 	<telerik:RadPanelBar ItemsSource="{Binding}" 
 						 ItemTemplate="{StaticResource headerTemplate}"/>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Displaying a specific property as a Header__
-{{region cs-radpanelbar-object-data_4}}
+__Example 3: Displaying a specific property as a Header__
+```C#
 	public class SampleItem : ViewModelBase
     {
         private string text;
@@ -136,10 +134,8 @@ In case you want to display (in the item headers) a specific property of an obje
 			this.DataContext = source;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Displaying a specific property as a Header__
-{{region vb-radpanelbar-object-data_5}}
+```
+```VB.NET
 	Public Class SampleItem
 		Inherits ViewModelBase
 
@@ -194,7 +190,7 @@ In case you want to display (in the item headers) a specific property of an obje
 		End Sub
 	End Class
 
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 4 in Office2016 Theme__
 ![RadPanelBar binding to object](images/PanelBar_Binding.png)

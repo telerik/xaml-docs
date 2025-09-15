@@ -37,7 +37,7 @@ In the __CreateTargetCapGeometry()__ method the parameters serve for the very sa
 The next code snippet will create custom connection caps as shown in the beggining of this article.
 
 #### __C#__
-{{region raddiagram-howto-create-custom-connectioncap-0}}
+```C#
     public class CustomConnection : RadDiagramConnection
     {
         protected override System.Windows.Media.PathFigure CreateSourceCapGeometry(System.Windows.Point startPoint, System.Windows.Point endPoint, ref System.Windows.Point baseLineStart)
@@ -80,10 +80,10 @@ The next code snippet will create custom connection caps as shown in the beggini
             return result;
         }
     }
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region raddiagram-howto-create-custom-connectioncap-1}}
+```VB.NET
     Public Class CustomConnection
         Inherits RadDiagramConnection
         Protected Overrides Function CreateSourceCapGeometry(startPoint As System.Windows.Point, endPoint As System.Windows.Point, ByRef baseLineStart As System.Windows.Point) As System.Windows.Media.PathFigure
@@ -151,18 +151,18 @@ The next code snippet will create custom connection caps as shown in the beggini
             Return result
         End Function
     End Class
-{{endregion}}  
+```  
 
 After utilising this code you can go in XAML and use your custom connection like this:
 
 #### __XAML__
-{{region raddiagram-howto-create-custom-connectioncap-2}}
+```XAML
     <telerik:RadDiagram x:Name="diagram">
 			<telerik:RadDiagramShape x:Name="shape1" Position="100 100" ZIndex="1"/>
 			<telerik:RadDiagramShape x:Name="shape2" Position="300 100" ZIndex="1"/>
 			<local:CustomConnection Source="{Binding ElementName=shape1}" Target="{Binding ElementName=shape2}" ZIndex="3"/>
 		</telerik:RadDiagram>
-{{endregion}}
+```
 		
 >"__local__" points to the namespace where the CustomConnection class is defined. Note, that if you are using the NoXaml dlls, you should base the style for the CustomConnection on the [default one for the theme]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls).
 

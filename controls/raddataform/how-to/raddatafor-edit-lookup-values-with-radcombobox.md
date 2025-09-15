@@ -14,9 +14,9 @@ __RadDataForm__ gives you the opportunity to edit the current item's properties 
 
 For the purpose of this tutorial we will create two quite simple classes - Person and Country:
 
-#### __[C#] Example 1: Creating the Person and Country Classes__
+__Example 1: Creating the Person and Country Classes__
 
-	{{region cs-raddataform-edit-lookup-values-with-radcombobox_0}}
+	```C#
 	public class Person
 	{
 	    public string FirstName { get; set; }
@@ -28,11 +28,8 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	    public int ID { get; set; }
 	    public string Name { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the Person and Country Classes__
-
-	{{region vb-raddataform-edit-lookup-values-with-radcombobox_0}}
+```
+```VB.NET
 	Public Class Person
 	    Public Property FirstName() As String
 	        Get
@@ -82,13 +79,13 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 	    End Property
 	    Private m_Name As String
 	End Class
-{{endregion}}
+```
 
 Afterwards, we may add the source of the RadDataForm:
 
-#### __[C#] Example 2: Set the ItemsSource__
+__Example 2: Set the ItemsSource__
 
-	{{region cs-raddataform-edit-lookup-values-with-radcombobox_1}}
+	```C#
 	InitializeComponent();
 	List<Person> persons = new List<Person>();
 	// A sample list of source objects for the RadDataForm. 
@@ -96,11 +93,8 @@ Afterwards, we may add the source of the RadDataForm:
 	persons.Add(new Person() { FirstName = "Angelo", LastName = "Romano", CountryID = 2 });
 	persons.Add(new Person() { FirstName = "Jean", LastName = "Michel", CountryID = 3 });
 	this.RadDataForm1.ItemsSource = persons;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Set the ItemsSource__
-
-	{{region vb-raddataform-edit-lookup-values-with-radcombobox_1}}
+```
+```VB.NET
 	InitializeComponent()
 	Dim persons As New List(Of Person)()
 	' A sample list of source objects for the RadDataForm. 
@@ -120,15 +114,15 @@ Afterwards, we may add the source of the RadDataForm:
 	 .CountryID = 3
 	})
 	Me.RadDataForm1.ItemsSource = persons
-{{endregion}}
+```
 
 Now, in order to edit the lookup values we have to do two things:
 
 * Create a source for the RadComboBox - we'll create a **CountriesService** class with a public static **GetCountries()** method
 
-#### __[C#] Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
+__Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
 
-	{{region cs-raddataform-edit-lookup-values-with-radcombobox_2}}
+	```C#
 	public class CountriesService
 	{
 	    public static List<Country> GetCountries()
@@ -141,11 +135,8 @@ Now, in order to edit the lookup values we have to do two things:
 	        return countries;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
-
-	{{region vb-raddataform-edit-lookup-values-with-radcombobox_2}}
+```
+```VB.NET
 	Public Class CountriesService
 	    Public Shared Function GetCountries() As List(Of Country)
 	        Dim countries As New List(Of Country)()
@@ -168,15 +159,15 @@ Now, in order to edit the lookup values we have to do two things:
 	        Return countries
 	    End Function
 	End Class
-{{endregion}}
+```
 
 * Define the RadComboBox as a field in the RadDataForm. To achieve this we have two options - to handle the AutoGeneratingField event and define a DataFormComboBoxField or create a template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate:
 
 1. Scenario 1 - handle the AutoGeneratingField:
 
-#### __[C#] Example 4: Handling the AutoGeneratingField Event__
+__Example 4: Handling the AutoGeneratingField Event__
 
-	{{region cs-raddataform-edit-lookup-values-with-radcombobox_3}}
+	```C#
 	private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
 	{
 	    if (e.PropertyName == "CountryID")
@@ -190,11 +181,8 @@ Now, in order to edit the lookup values we have to do two things:
 	        };
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Handling the AutoGeneratingField Event__
-
-	{{region vb-raddataform-edit-lookup-values-with-radcombobox_3}}
+```
+```VB.NET
 	Private Sub RadDataForm_AutoGeneratingField(sender As Object, e As Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs)
 	    If e.PropertyName = "CountryID" Then
 	        e.DataField = New DataFormComboBoxField() With {
@@ -207,7 +195,7 @@ Now, in order to edit the lookup values we have to do two things:
 	        }
 	    End If
 	End Sub
-{{endregion}}
+```
 
 Figure 1 shows the resulting RadDataForm:
 
@@ -217,9 +205,9 @@ Figure 1 shows the resulting RadDataForm:
 
 2. Scenario 2 - define the template for the ReadOnlyTemplate, EditTemplate and NewItemTemplate: 
 
-#### __[XAML] Example 5: Defining the Template for ReadOnlyTemplate, EditTemplate and NewItemTemplate__
+__Example 5: Defining the Template for ReadOnlyTemplate, EditTemplate and NewItemTemplate__
 
-	{{region xaml-raddataform-edit-lookup-values-with-radcombobox_4}}
+	```XAML
 	<UserControl.Resources>
 	    <my:MyViewModel x:Key="MyViewModel" />
 	</UserControl.Resources>
@@ -252,13 +240,13 @@ Figure 1 shows the resulting RadDataForm:
 	        NewItemTemplate="{StaticResource MyTemplate}">
 	    </telerik:RadDataForm>
 	</Grid>
-{{endregion}}
+```
 
 In this case the Countries and Persons collections used for the ItemsSources of the ComboBoxField and the RadDataForm are defined in the ViewModel class:
 
-#### __[C#] Example 6: Defining the Countries and Persons Collections in the ViewModel__
+__Example 6: Defining the Countries and Persons Collections in the ViewModel__
 
-	{{region cs-raddataform-edit-lookup-values-with-radcombobox_5}}
+	```C#
 	public class MyViewModel
 	{
 	    private List<Country> countries;
@@ -290,11 +278,8 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Defining the Countries and Persons Collections in the ViewModel__
-
-	{{region vb-raddataform-edit-lookup-values-with-radcombobox_5}}
+```
+```VB.NET
 	Public Class MyViewModel
 	    Private m_countries As List(Of Country)
 	    Private m_persons As List(Of Person)
@@ -331,6 +316,6 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 	        End Get
 	    End Property
 	End Class
-{{endregion}}
+```
 
 The result will be same as the one in the first scenario.

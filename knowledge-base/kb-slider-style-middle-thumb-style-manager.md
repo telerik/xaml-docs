@@ -33,8 +33,8 @@ The most likely cause for this issue is that you're using the [StyleManager them
 
 The example below includes the optimal Height values for each of the [themes]({%slug common-styling-appearance-available-themes%}) provided by the Telerik UI for WPF suite.
 
-#### __[XAML]__
-{{region xaml-kb-slider-style-middle-thumb-style-manager}}
+
+```XAML
 	<Style x:Key="CustomSelectionMiddleThumbStyle" TargetType="Thumb">
 		<!--Office2013, VisualStudio2013, ExpressionDark, VisualStudio2019-->
 		<Setter Property="Height" Value="6" />
@@ -71,7 +71,7 @@ The example below includes the optimal Height values for each of the [themes]({%
 	<Style TargetType="telerik:RadSlider">
 		<Setter Property="SelectionMiddleThumbStyle" Value="{StaticResource CustomSelectionMiddleThumbStyle}" />
 	</Style>
-{{endregion}}
+```
 
 ## See Also
 * [StyleManager ThemingApproach]({%slug common-styling-apperance-setting-theme-wpf%})

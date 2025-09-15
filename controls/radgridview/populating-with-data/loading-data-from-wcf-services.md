@@ -22,9 +22,9 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __XAML__
 
-{{region xaml-gridview-loading-data-from-wcf-services_0}}
+```XAML
 	<telerik:RadGridView />
-{{endregion}}
+```
 
 ## Plain Method Calls
 
@@ -34,15 +34,15 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_1}}
+```C#
 	WcfServiceClient serviceClient = new WcfServiceClient();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_2}}
+```VB.NET
 	Private serviceClient As New WcfServiceClient()
-{{endregion}}
+```
 
 >tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the {% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
 
@@ -50,7 +50,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_3}}
+```C#
 	private void BeginRequest()
 	{
 	    serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
@@ -62,11 +62,11 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	    var customers = e.Result;
 	    this.radGridView.ItemsSource = customers;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_4}}
+```VB.NET
 	Private Sub BeginRequest()
 	    AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	    serviceClient.LoadCustomersAsync()
@@ -76,19 +76,19 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	    Dim customers = e.Result
 	    Me.radGridView.ItemsSource = customers
 	End Sub
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_5}}
+```C#
 	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_6}}
+```VB.NET
 	Me.radGridView.ItemsSource = serviceClient.LoadCustomers()
-{{endregion}}
+```
 
 Run your demo, the result can be seen on the next image:
 
@@ -102,18 +102,18 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_7}}
+```C#
 	public class NorthwindDataSource
 	{
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_8}}
+```VB.NET
 	Public Class NorthwindDataSource
 	End Class
-{{endregion}}
+```
 
 * Add a reference to your WCF Service 
 
@@ -123,7 +123,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_9}}
+```C#
 	public class NorthwindDataSource
 	{
 	    private SampleWcfServiceClient serviceClient;
@@ -138,11 +138,11 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_10}}
+```VB.NET
 	Public Class NorthwindDataSource
 	    Private serviceClient As SampleWcfServiceClient
 	    Public Sub New()
@@ -151,7 +151,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    End Sub
 	    Public Property Customers() As ObservableCollection(Of Customer)
 	End Class
-{{endregion}}
+```
 
 >tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the 
 {% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
@@ -160,34 +160,34 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_11}}
+```C#
 	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
 	serviceClient.LoadCustomersAsync();
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_12}}
+```C#
 	foreach (Customer c in serviceClient.LoadCustomers())
 	{
 	    this.Customers.Add(c);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_13}}
+```VB.NET
 	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	serviceClient.LoadCustomersAsync()
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_14}}
+```VB.NET
 	For Each c As Customer In serviceClient.LoadCustomers()
 	    Me.Customers.Add(c)
 	Next c
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -195,7 +195,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 #### __C#__
 
-{{region cs-gridview-loading-data-from-wcf-services_15}}
+```C#
 	if (e.Error == null && e.Result != null)
 	{
 	    foreach (Customer c in e.Result)
@@ -203,35 +203,35 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 	        this.Customers.Add(c);
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-loading-data-from-wcf-services_16}}
+```VB.NET
 	If e.Error Is Nothing AndAlso e.Result IsNot Nothing Then
 	    For Each c As Customer In e.Result
 	        Me.Customers.Add(c)
 	    Next c
 	End If
-{{endregion}}
+```
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
 #### __XAML__
 
-{{region xaml-gridview-loading-data-from-wcf-services_17}}
+```XAML
 	<UserControl.Resources>
 	    <local:NorthwindDataSource x:Key="DataSource"/>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
 
-{{region xaml-gridview-loading-data-from-wcf-services_18}}
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>
-{{endregion}}
+```
 
 Run your demo, the result can be seen on the next picture: 
 

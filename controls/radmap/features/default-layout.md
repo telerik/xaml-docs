@@ -25,11 +25,11 @@ The default layout of the __RadMap__ is represented by the UI controls that appe
 In case you want to hide all of the controls and create your own custom layout, you don't have to set each of these properties, you can simply set the __UseDefaultLayout__ property of the __RadMap__ to __False__.
 
 #### __XAML__
-{{region radmap-features-default-layout_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                UseDefaultLayout="False">
 	</telerik:RadMap>
-{{endregion}}
+```
 
 To learn how to use each of the __RadMap__ controls independent and outside of it, read the following topics:
 

@@ -20,14 +20,14 @@ Clicking the filtering icon in the column headers opens a menu with the distinct
 
 In order to filter __TreeListView__'s low level nodes directly through the distinct values listbox, you can manually set its __ItemsSource__. Just subscribe to the __DistinctValuesLoading__ event of __TreeListView__ and set the __e.ItemsSource__ to the collection you want to show.  
 
-#### __[C#] Example 1: Setting the ItemsSource of the GridViewDistinctValuesLoadingEventArgs__
-{{region radtreeliestview-getting-started_0}}
+__Example 1: Setting the ItemsSource of the GridViewDistinctValuesLoadingEventArgs__
+```C#
 
 	private void radTreeListView_DistinctValuesLoading(object sender, GridView.GridViewDistinctValuesLoadingEventArgs e)
 	{
 	    e.ItemsSource = WarehouseService.GetNames();
 	}
-{{endregion}}
+```
 
 As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its filtering mechanism. The __RadGridView__ allows you to implement programmatic filtering, custom filtering and more. To learn more read the [respective topics]({%slug gridview-filtering-basic%}) in the __RadGridView's__ documentation.
 
@@ -35,10 +35,10 @@ As the __RadTreeListView__ directly inherits the __RadGridView__ it uses its fil
 
 Since **R2 2018 SP1** you have the option to prevent the expanding of the RadTreeListView items after it is filtered. You can do that by setting the **AutoExpandItemsAfterFilter** property to **False**. The default value of the property is **True** which keeps the previous behavior of expanding all items after filtering.
 
-#### __[XAML] Example 2: Setting the AutoExpandItemsAfterFilter property__
-{{region radtreeliestview-getting-started_1}}
+__Example 2: Setting the AutoExpandItemsAfterFilter property__
+```XAML
 	 <telerik:RadTreeListView AutoExpandItemsAfterFilter="False" >
-{{endregion}}
+```
 
 ## See Also
 

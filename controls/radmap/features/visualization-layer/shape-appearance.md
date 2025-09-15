@@ -26,7 +26,7 @@ The three properties are of type MapShapeFill. The MapShapeFill object allows yo
 In the following example, the MouseLeftButtonDown event on the shape visualization is used to switch between regular and highlighted fill.        
 
 #### __XAML__
-{{region radmap_visualization_layer_shape_appearance_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
 	                Center="42.6957539183824, 23.3327663758679">
@@ -54,10 +54,10 @@ In the following example, the MouseLeftButtonDown event on the shape visualizati
 			</telerik:RectangleData>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 #### __C#__
-{{region radmap_visualization_layer_shape_appearance_0}}
+```C#
 	public partial class HighlightShapeOnMouseClick : UserControl
 	{
 		public HighlightShapeOnMouseClick()
@@ -102,10 +102,10 @@ In the following example, the MouseLeftButtonDown event on the shape visualizati
 			e.Handled = true;
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap_visualization_layer_shape_appearance_0}}
+```VB.NET
 	Partial Public Class HighlightShapeOnMouseClick
 		Inherits UserControl
 	
@@ -141,7 +141,7 @@ In the following example, the MouseLeftButtonDown event on the shape visualizati
 			e.Handled = True
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 ![radmap-visualization-layer-shape-appearance-0](images/radmap-visualization-layer-shape-appearance-0.png)
@@ -158,7 +158,7 @@ The three properties are of type MapShapeFill. The MapShapeFill object allows yo
 Here is an example:        
 
 #### __XAML__
-{{region radmap_visualization_layer_shape_appearance_1}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
 	                Center="42.6957539183824, 23.3327663758679">
@@ -186,7 +186,7 @@ Here is an example:
 	                             Height="0.2" />
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ![radmap-visualization-layer-shape-appearance-2](images/radmap-visualization-layer-shape-appearance-2.png)
 

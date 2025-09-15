@@ -24,9 +24,9 @@ In addition to configuring the __EditTriggers__ property, you can set __OpenDrop
 
 This could be done in __XAML__ by applying a Style targeting the RadComboBox element as an **EditorStyle** of the column. **Example 1** demonstrates how this can be done.
 
-#### __[XAML] Example 1: Setting the OpenDropDownOnFocus through the EditorStyle property__
+__Example 1: Setting the OpenDropDownOnFocus through the EditorStyle property__
 
-{{region xaml-gridview-combobox-column-clicks_0}}
+```XAML
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding ClubID}"
 					SelectedValueMemberPath="ID"
 					EditTriggers="CellClick"
@@ -38,15 +38,15 @@ This could be done in __XAML__ by applying a Style targeting the RadComboBox ele
 		</Style>
 	    </telerik:GridViewComboBoxColumn.EditorStyle>
 	</telerik:GridViewComboBoxColumn>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base your style on the __RadComboBoxStyle__.
 
 You can also achieve this in code-behind by handling the [PreparingCellForEdit]({%slug gridview-events-edit%}#preparingcellforedit-event) event of the RadGridView control, as shown in **Example 2**.
 
-#### __[C#] Example 2: Handling the PreparingCellForEdit event__
+__Example 2: Handling the PreparingCellForEdit event__
 
-{{region cs-gridview-combobox-column-clicks_1}}
+```C#
 	private void GridView_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 		var comboBox = e.EditingElement as RadComboBox;
@@ -55,26 +55,23 @@ You can also achieve this in code-behind by handling the [PreparingCellForEdit](
 			comboBox.OpenDropDownOnFocus = true;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Handling the PreparingCellForEdit event__
-
-{{region vb-gridview-combobox-column-clicks_2}}
+```
+```VB.NET
 	Private Sub GridView_PreparingCellForEdit(ByVal sender As Object, ByVal e As GridViewPreparingCellForEditEventArgs)
 		Dim comboBox = TryCast(e.EditingElement, RadComboBox)
 		If comboBox IsNot Nothing Then
 			comboBox.OpenDropDownOnFocus = True
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## Single-click Selection
 
 In addition, you can have the cell leave edit mode when a selection in the dropdown is made by handling the **SelectionChanged** event of the combobox. To do so, you need to attach to the [PreparedCellForEdit]({%slug gridview-events-edit%}#preparedcellforedit-event) event of the RadGridView control. **Example 3** demonstrates a possible approach.
 
-#### __[C#] Example 3: Handling the PreparedCellForEdit event__
+__Example 3: Handling the PreparedCellForEdit event__
 
-{{region cs-gridview-combobox-column-clicks_3}}
+```C#
 	private void GridView_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 		var comboBox = e.EditingElement as RadComboBox;
@@ -89,11 +86,8 @@ In addition, you can have the cell leave edit mode when a selection in the dropd
 			};
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Handling the PreparedCellForEdit event__
-
-{{region vb-gridview-combobox-column-clicks_4}}
+```
+```VB.NET
 	Private Sub GridView_PreparedCellForEdit(ByVal sender As Object, ByVal e As GridViewPreparingCellForEditEventArgs)
 		Dim comboBox = TryCast(e.EditingElement, RadComboBox)
 		If comboBox IsNot Nothing Then
@@ -104,7 +98,7 @@ In addition, you can have the cell leave edit mode when a selection in the dropd
 			End Sub
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

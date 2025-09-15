@@ -32,14 +32,14 @@ In order to set the content of the __RadTransitionControl__ you have to use its 
 
 #### __XAML__
 
-{{region xaml-radtransition-features-working-with-radtransitioncontrol_0}}
+```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl">
 	    <Image Source="/Silverlight.Help.RadTransitionControlSamples;component/Demos/Images/Koala.jpg"
 	    Stretch="Uniform"
 	    Width="320"
 	    Height="240" />
 	</telerik:RadTransitionControl>
-{{endregion}}
+```
 
 You can also bind the __Content__ of the __RadTransitionControl__ to a data object and use the __ContentTemplate__ property to define a __DataTemplate__ to visualize the object. To learn more about data binding inside __RadTransitionControl__ read the [Data Binding]({%slug radtransition-features-data-binding%}) topic.
 
@@ -51,19 +51,19 @@ When the content of the __RadTransitionControl__ gets changed, the control can a
 
 #### __XAML__
 
-{{region xaml-radtransition-features-working-with-radtransitioncontrol_1}}
+```XAML
 	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region xaml-radtransition-features-working-with-radtransitioncontrol_2}}
+```XAML
 	<telerik:RadTransitionControl>
 	    <telerik:RadTransitionControl.Transition>
 	        <telerikTransitions:MotionBlurredZoomTransition />
 	    </telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-{{endregion}}
+```
 
 To learn more about the different built-in transition effects or how to create your own, read the [Transitions]({%slug radtransition-features-transitions%}) topic.
 
@@ -73,9 +73,9 @@ The duration of the transition effect is determined by the __Duration__ property
 
 #### __XAML__
 
-{{region xaml-radtransition-features-working-with-radtransitioncontrol_3}}
+```XAML
 	<telerik:RadTransitionControl x:Name="radTransitionControl" Duration="00:00:03" />
-{{endregion}}
+```
 
 ## Transition Easing
 
@@ -92,13 +92,13 @@ By default there is no easing function specified for the __RadTransitionControl_
 
 #### __XAML__
 
-{{region xaml-radtransition-features-working-with-radtransitioncontrol_4}}
+```XAML
 	<telerik:RadTransitionControl x:Name="radTransitionControl1">
 	    <telerik:RadTransitionControl.Easing>
 	        <BackEase EasingMode="EaseInOut" Amplitude="0.5" />
 	    </telerik:RadTransitionControl.Easing>
 	</telerik:RadTransitionControl>
-{{endregion}}
+```
 
 ## See Also
 

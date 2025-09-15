@@ -18,15 +18,15 @@ Let's imagine that you need to use a __RadListBox__ event in the ViewModel in or
         
 #### __XAML__
 
-{{region common-event-to-command-behavior_01}}
+```XAML
 	<telerik:RadListBox ItemsSource="{Binding ListBoxItems}" />
-{{endregion}}
+```
 
 Which DataContext is the ViewModel below:
         
 #### __C#__
 
-{{region common-event-to-command-behavior_01}}
+```C#
 	public class ViewModel: ViewModelBase
 	{
 	    public ObservableCollection<string> ListBoxItems { get; set; }
@@ -36,25 +36,25 @@ Which DataContext is the ViewModel below:
 	        this.ListBoxItems = new ObservableCollection<string> { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
 	    }
 	}
-{{endregion}}
+```
 
 And you need to handle the MouseEnter event of the ListBox, the __EventToCommandBehavior__ will easily allow you to bind that event to a command in the ViewModel. You would just need to add object of type __EventBinding__ to the __EventToCommandBehavior.EventBindings__ collection. The __EventBinding__ object contains few properties, in this case you will need to use the Command property which should be bound to the desired Command and the Event property which represents the event you want to handle:
        
 #### __XAML__
 
-{{region common-event-to-command-behavior_02}}
+```XAML
 	<telerik:RadListBox x:Name="ListBox" ItemsSource="{Binding ListBoxItems}">
 	    <telerik:EventToCommandBehavior.EventBindings>
 	        <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseEnter" />
 	    </telerik:EventToCommandBehavior.EventBindings>
 	</telerik:RadListBox>
-{{endregion}}
+```
 
 The last thing you should do is to define the custom command in the ViewModel as shown below:
         
 #### __C#__
 
-{{region common-event-to-command-behavior_02}}
+```C#
 	public ICommand CustomCommand { get; set; }
 	    ...
 	public ViewModel()
@@ -67,7 +67,7 @@ The last thing you should do is to define the custom command in the ViewModel as
 	{
 	    MessageBox.Show("Command Executed!");
 	}
-{{endregion}}
+```
 
 And here is the final result:
 ![Common Event To Command Behavior 1](images/Common_EventToCommandBehavior_1.png)
@@ -78,11 +78,11 @@ Sometimes it appears that the event you need to handle is already handled in the
        
 #### __XAML__
 
-{{region common-event-to-command-behavior_03}}
+```XAML
 	<telerik:EventToCommandBehavior.EventBindings>
 	    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True" />
 	</telerik:EventToCommandBehavior.EventBindings>
-{{endregion}}
+```
 
 The result will be the same command executed when the ListBox is Clicked.
 
@@ -99,23 +99,23 @@ With the __CommandParameter__ property you can easily pass an object or bind it 
                 
 #### __XAML__
 
-{{region common-event-to-command-behavior_04}}
+```XAML
 	<telerik:EventToCommandBehavior.EventBindings>
 	    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True"
 	                          CommandParameter="This is a command parameter!"/>
 	</telerik:EventToCommandBehavior.EventBindings>
-{{endregion}}
+```
 
 And the method in the ViewModel should look as follows:
               
 #### __C#__
 
-{{region common-event-to-command-behavior_03}}
+```C#
 	private void OnCustomCommandExecuted(object obj)
 	{
 	    MessageBox.Show(obj.ToString());
 	}
-{{endregion}}
+```
 
 This will be the result:
 ![Common Event To Command Behavior 2](images/Common_EventToCommandBehavior_2.png)
@@ -127,16 +127,16 @@ You can also pass the event arguments to the method by setting the __PassEventAr
 
 #### __XAML__
 
-{{region common-event-to-command-behavior_05}}
+```XAML
 	<telerik:EventToCommandBehavior.EventBindings>
 	    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True"
 	                        PassEventArgsToCommand="True" />
 	</telerik:EventToCommandBehavior.EventBindings>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region common-event-to-command-behavior_04}}
+```C#
 	private void OnCustomCommandExecuted(object obj)
 	{
 	    var clickedItem = (obj as MouseButtonEventArgs).OriginalSource as TextBlock;
@@ -145,7 +145,7 @@ You can also pass the event arguments to the method by setting the __PassEventAr
 	        MessageBox.Show("Clicked Item: " + clickedItem.Text);
 	    }
 	}
-{{endregion}}
+```
 
 Here is the result:
 ![Common Event To Command Behavior 3](images/Common_EventToCommandBehavior_3.png)
@@ -160,11 +160,11 @@ The __EventToCommandBehavior__ gives you the ability to add multiple __EventBini
         
 #### __XAML__
 
-{{region common-event-to-command-behavior_06}}
+```XAML
 	<telerik:EventToCommandBehavior.EventBindings>
 	    <telerik:EventBinding Command="{Binding CustomCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True" />
 	    <telerik:EventBinding Command="{Binding AnotherCommand}" EventName="MouseLeftButtonDown" RaiseOnHandledEvents="True" />
 	</telerik:EventToCommandBehavior.EventBindings>
-{{endregion}}
+```
 
 >If you have multiple commands attached to a single event, the commands will be executed in the order they are defined in the __EventBindings__ collection (from top to bottom).

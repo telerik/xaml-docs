@@ -40,11 +40,11 @@ __RadNumericUpDown__ comes with a couple of key properties which you can use to 
 
 **Example 1** demonstrates how to set the **IsReadOnly** property of the control.
 
-#### __[XAML] Example 1: Make RadNumericUpDown read-only__
+__Example 1: Make RadNumericUpDown read-only__
 
-{{region xaml-radnumericupdown-behavior_0}}
+```XAML
 	<telerik:RadNumericUpDown x:Name="radNumericUpDown" IsReadOnly="True"/>
-{{endregion}}
+```
 
 #### Figure 1: A read-only RadNumericUpDown
 

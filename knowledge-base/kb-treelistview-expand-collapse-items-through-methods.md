@@ -36,9 +36,9 @@ The public methods exposed by the control can be used in such scenarios to updat
 
 Here is how you can use the methods in an MVVM-friendly manner by creating appropriate **Action** properties:
 
-#### __[C#] Define the required Actions__
+__Define the required Actions__
 
-{{region cs-kb-treelistview-expand-collapse-items-through-methods_1}}
+```C#
     public class WarehouseViewModel : ViewModelBase
     {
         public Action ExpandAllAction { get; set; }
@@ -52,13 +52,13 @@ Here is how you can use the methods in an MVVM-friendly manner by creating appro
 
         // ...
     }
-{{endregion}}
+```
 
 You can then set these actions as follows:
 
-#### __[C#] Use the API of the TreeListView in the Actions__
+__Use the API of the TreeListView in the Actions__
 
-{{region cs-kb-treelistview-expand-collapse-items-through-methods_2}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -71,13 +71,13 @@ You can then set these actions as follows:
 
 		this.DataContext = viewModel;
 	}
-{{endregion}}
+```
 
 You can then expose an appropriate method to use inside your viewmodel and also bind it to a command if this is necessary:
 
-#### __[C#] Invoke the ExpandItemAction and ExpandAllAction__
+__Invoke the ExpandItemAction and ExpandAllAction__
 
-{{region cs-kb-treelistview-expand-collapse-items-through-methods_3}}
+```C#
 	public WarehouseViewModel()
 	{
 		this.ExpandItemCommand = new DelegateCommand(OnExpandItemCommandExecuted);
@@ -99,7 +99,7 @@ You can then expose an appropriate method to use inside your viewmodel and also 
 
 		this.ExpandAllAction();
 	}
-{{endregion}}
+```
 
 The collapse actions can be bound in a similar manner.
 

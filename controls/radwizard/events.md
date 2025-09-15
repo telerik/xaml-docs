@@ -21,8 +21,8 @@ This article lists the events specific to RadWizard control.
 	* __OldPage__: A __WizardPage__ property, which gets the currently selected wizard page.
 	* __NewPage__: A __WizardPage__ property, which gets the wizard page to be selected.
 
-#### __[C#] Example 1: Subscribe to the SelectionChanging Event__  
-{{region csharp-wizard-events_0}}
+__Example 1: Subscribe to the SelectionChanging Event__  
+```C#
 	private void wizard_SelectionChanging(object sender, SelectedPageChangingEventArgs e)
 	{
 		var cancel = e.Cancel;
@@ -30,7 +30,7 @@ This article lists the events specific to RadWizard control.
 		var newPage = e.NewPage;
 		var oldPage = e.OldPage;
 	}
-{{endregion}}
+```
 	
 * __SelectionChanged__: Occurs when the selected page has changed. The type of the passed event arguments is __SelectedPageChangedEventArgs__. Through this class, you can access the following properties:
 
@@ -38,15 +38,15 @@ This article lists the events specific to RadWizard control.
 	* __OldPage__: A __WizardPage__ property, which gets the currently selected wizard page.
 	* __NewPage__: A __WizardPage__ property, which gets the wizard page to be selected.
 
-#### __[C#] Example 2: Subscribe to the SelectionChanged Event__  
-{{region csharp-wizard-events_1}}
+__Example 2: Subscribe to the SelectionChanged Event__  
+```C#
 	private void wizard_SelectionChanged(object sender, SelectedPageChangedEventArgs e)
 	{
 		var selectionDirection = e.Direction;
 		var newPage = e.NewPage;
 		var oldPage = e.OldPage;
 	}
-{{endregion}}
+```
 	
 ## Navigation buttons events 
 
@@ -58,8 +58,8 @@ All of the event handlers for these events receive two arguments and are execute
 * __Help__: Occurs when the __Help__ button has been clicked.
 * __Cancel__: Occurs when the __Cancel__ button has been clicked.
 
-#### __[C#] Example 3: Navigation buttons event handlers__  
-{{region csharp-wizard-events_2}}
+__Example 3: Navigation buttons event handlers__  
+```C#
 	private void wizard_Previous(object sender, NavigationButtonsEventArgs e)
 	{
 		var selectedPageIndex = e.SelectedPageIndex;
@@ -84,7 +84,7 @@ All of the event handlers for these events receive two arguments and are execute
 	{
 		var selectedPageIndex = e.SelectedPageIndex;
 	}	
-{{endregion}}
+```
 	
 ## Other events:
 
@@ -96,29 +96,29 @@ All of the event handlers for these events receive two arguments and are execute
 	* __SelectedPage__: A __WizardPage__ property, which gets the page from which it was invoked.
 	* __Action__: A property, which gets the action which will be performed. There are two possible actions ___“Abort”___ and ___“Finish”___. The __Action__ property will be with value ___“Abort”___ when the user has clicked the __Cancel__ button and ___“Finish”___ when the __Finish__ button is clicked.
 	
-#### __[C#] Example 4: Subscribe to the Completing Event__  
-{{region csharp-wizard-events_3}}
+__Example 4: Subscribe to the Completing Event__  
+```C#
 	private void wizard_Completing(object sender, WizardCompletingEventArgs e)
 	{
 		var cancel = e.Cancel;
 		var action = e.Action;
 		var selectedPage = e.SelectedPage;
 	}
-{{endregion}}	
+```	
 	
 * __Completed__: Occurs when the wizard has already finish. The	 __WizardCompletedEventArgs__ class exposes the following specific properties:
 
 	* __SelectedPage__ - a __WizardPage__ property, which gets the page from which it was invoked.
 	* __Action__ -an enumeration property, which gets the action which was performed. There are two possible actions ___“Abort”___ and ___“Finish”___. The __Action__ property will be with value ___“Abort”___ when the user had clicked the __Cancel__ button and ___“Finish”___ when the __Finish__ button was clicked.
 	
-#### __[C#] Example 5: Subscribe to the Completed Event__  
-{{region csharp-wizard-events_3}}
+__Example 5: Subscribe to the Completed Event__  
+```C#
 	private void wizard_Completed(object sender, WizardCompletedEventArgs e)
 	{
 		var action = e.Action;
 		var selectedPage = e.SelectedPage;
 	}
-{{endregion}}	
+```	
 	
 ## See Also  
  * [Getting Started]({%slug wizard-getting-started%})

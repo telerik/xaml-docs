@@ -23,12 +23,12 @@ In this topic we will go through the following sections:
 
 By default the selection functionality is disabled and to turn it on you have to set __AllowSelection__ property of the __PivotGrid__ to true as in __Example 1__.
 
-#### __[XAML] Example 1: Enabling selection__
+__Example 1: Enabling selection__
 
-{{region radpivotgrid-features-selection_0}}
+```XAML
 	<pivot:RadPivotGrid Name="radPivotGrid1" DataProvider="{StaticResource LocalDataProvider}" AllowSelection="True">
 	</pivot:RadPivotGrid>
-{{endregion}}
+```
 
 #### __Figure 1: RadPivotGrid with enabled cell selection__
 ![{{ site.framework_name }} RadPivotGrid RadPivotGrid with enabled cell selection](images/pivotgrid_selection_0.png)
@@ -55,24 +55,24 @@ __RadPivotGrid__ provides the following commands through its __PivotGridCommands
 
 __Example 2__ demonstrates how you could use CopySelection and ClearSelection commands together with a button.
 
-#### __[XAML] Example 2: Using PivotGrid Commands__
+__Example 2: Using PivotGrid Commands__
 
-{{region radpivotgrid-features-selection_1}}
+```XAML
 	<Button Content="Copy Selected Cells" 
         Command="{x:Static pivot:PivotGridCommands.CopySelection}" 
         CommandTarget="{Binding ElementName=radPivotGrid1}" />
     <Button Content="Clear Selected Cells" 
         Command="{x:Static pivot:PivotGridCommands.ClearSelection}" 
         CommandTarget="{Binding ElementName=radPivotGrid1}" />
-{{endregion}}
+```
 
 After copying the selected cells, you could easily get that data from the clipboard with code as shown in __Example 3__.
 
-#### __[XAML] Example 3: Getting selected cells from the clipboard__
+__Example 3: Getting selected cells from the clipboard__
 
-{{region radpivotgrid-features-selection_2}}
+```XAML
 	var result = Clipboard.GetText(TextDataFormat.Text);
-{{endregion}}
+```
 
 __Figure 5__ shows the result after copying certain cells selection.
 
@@ -92,9 +92,9 @@ You could also directly paste the clipboard data into Excel, for example, as ill
 
 Any changes in the appearance of the selection overlay should be made inside the __SelectionOverlayStyle__. __Example 4__ shows the SelectionOverlayStyle with the provided properties.
 
-#### __[XAML] Example 4: SelectionOverlayStyle__
+__Example 4: SelectionOverlayStyle__
 
-{{region radpivotgrid-features-selection_2}}
+```XAML
 	<Style x:Key="SelectionOverlayStyle" TargetType="pivot:SelectionOverlay">
 		<Setter Property="SelectionFill" Value="{StaticResource SelectionFill}"/>
 		<Setter Property="SelectionStroke" Value="{StaticResource SelectionStroke}"/>
@@ -106,20 +106,20 @@ Any changes in the appearance of the selection overlay should be made inside the
 		<Setter Property="SelectionCellStrokeThickness" Value="1"/>
 		<Setter Property="DrawSelectionCell" Value="True"/>
     </Style>
-{{endregion}}
+```
 
 SelectionFill/SelectionStroke/SelectionStrokeThickness and SelectionPadding properties refer to the whole selection blocks, while the SelectionCell properties refer to the current selection cell. 
 
 You could easily disable marking the current selection cell by setting DrawSelectionCell to False as in __Example 5__.
 
-#### __[XAML] Example 5: Disable marking the current selection cell__
+__Example 5: Disable marking the current selection cell__
 
-{{region radpivotgrid-features-selection_3}}
+```XAML
 	<Style x:Key="SelectionOverlayStyle1" TargetType="pivot:SelectionOverlay">           
 		<Setter Property="DrawSelectionCell" Value="False"/>
 	</Style>
 	<Style TargetType="pivot:SelectionOverlay" BasedOn="{StaticResource SelectionOverlayStyle1}"/>
-{{endregion}}
+```
 
 __Figure 7__ shows how the selection looks before and after applying the Style from __Example 5__.
 

@@ -32,9 +32,9 @@ __RadVirtualGrid__ has __Header__ elements for both its rows and columns. A more
 
 * __SizeUnit__: An enumeration that provides two values - __Pixel__ and __Star__. The first one sets a precise pixel size, whereas the second one applies a relative size for the header.
 
-#### __[C#] Example 1: Handling the HeaderSizeNeededEvent__
+__Example 1: Handling the HeaderSizeNeededEvent__
 
-{{region radvirtualgrid-features_headers_0}}
+```C#
 	private void VirtualGrid_HeaderSizeNeeded(object sender, Telerik.Windows.Controls.VirtualGrid.HeaderSizeEventArgs e)
         {
             if (e.HeaderOrientation == Telerik.Windows.Controls.VirtualGrid.VirtualGridOrientation.Horizontal)
@@ -49,7 +49,7 @@ __RadVirtualGrid__ has __Header__ elements for both its rows and columns. A more
                 }
             }
         }
-{{endregion}}
+```
 
 #### __Figure 1: RadVirtualGrid with custom size for the headers__
 

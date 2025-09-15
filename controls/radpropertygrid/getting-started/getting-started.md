@@ -36,13 +36,13 @@ Before proceeding with adding **RadPropertyGrid** to your project, make sure the
 
 You can add **RadPropertyGrid** manually by writing the XAML code in **Example 1**. You can also add the control by dragging it from the **Visual Studio Toolbox** and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadPropertyGrid__
+__Example 1: Adding RadPropertyGrid__
 
-{{region xaml-radpropertygrid-getting-started-getting-started_0}}
+```XAML
 	<Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <telerik:RadPropertyGrid x:Name="PropertyGrid1" />
 	</Grid>
-{{endregion}}
+```
 
 Now, if you run your application, you will see an empty RadPropertyGrid similarly to **Figure 1**.
 
@@ -54,9 +54,9 @@ Now, if you run your application, you will see an empty RadPropertyGrid similarl
 
 You may bind RadPropertyGrid to a single data item. Thus, you will be able to examine and edit its properties. The only thing you need is to set the **Item** property of RadPropertyGrid. The binding may be performed both in XAML and in the code-behind.
 
-#### __[C#] Example 2: Binding to data item__
+__Example 2: Binding to data item__
 
-{{region cs-radpropertygrid-getting-started-getting-started_1}}
+```C#
 	this.PropertyGrid1.Item = new Employee()
 	{
 	    FirstName = "Sarah",
@@ -67,11 +67,8 @@ You may bind RadPropertyGrid to a single data item. Thus, you will be able to ex
 	    Salary = 3500,
 	    Gender = Gender.Female
 	};
-{{endregion}}
-
-#### __[VB.NET] Example 2: Binding to data item__
-	
-{{region vb-radpropertygrid-getting-started-getting-started_1}}
+```
+```VB.NET
 	Me.PropertyGrid1.Item = New Employee() With {
 	  .FirstName = "Sarah",
 	  .LastName = "Blake",
@@ -81,7 +78,7 @@ You may bind RadPropertyGrid to a single data item. Thus, you will be able to ex
 	  .Salary = 3500,
 	  .Gender = Gender.Female
 	}
-{{endregion}}
+```
 
 Once you set the Item and run the application you will see a RadPropertyGrid as the one illustrated in **Figure 2**.
 
@@ -93,12 +90,12 @@ Once you set the Item and run the application you will see a RadPropertyGrid as 
 
 You can also bind the Item property of RadPropertyGrid to a visual element and still view and edit its properties. **Example 3** shows how to bind RadPropertyGrid's Item property to a **RadButton**.
 
-#### __[XAML] Example 3: Binding to visual element__
+__Example 3: Binding to visual element__
 
-{{region xaml-radpropertygrid-getting-started-getting-started_2}}
+```XAML
 	<telerik:RadButton x:Name="button1" Content="MyButton" />
 	<telerik:RadPropertyGrid Item="{Binding ElementName= button1}"/>
-{{endregion}}
+```
 
 When you run the application, you will see the following RadPropertyGrid.
 
@@ -145,8 +142,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radpropertygrid-getting-started-getting-started_3}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -157,7 +154,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 4__ shows RadPropertyGrid with the **Windows8** theme applied.
 	

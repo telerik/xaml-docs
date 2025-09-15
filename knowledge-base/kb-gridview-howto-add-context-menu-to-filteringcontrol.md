@@ -27,8 +27,8 @@ How to display a context menu for elements inside the FilteringControl of the Ra
 
 Create a class that inherits from FilteringControl and handle the __PreviewMouseRightButtonDown__ event. Inside the event handler, add the logic for displaying the context menu. 
 
-#### __[C#] Example 1: Creating a custom FilteringControl__
-{{region cs-kb-gridview-howto-add-context-menu-to-filteringcontrol-0}}
+__Example 1: Creating a custom FilteringControl__
+```C#
 
 	public class ExtendedFilteringControl : FilteringControl
     {
@@ -60,10 +60,8 @@ Create a class that inherits from FilteringControl and handle the __PreviewMouse
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating a custom FilteringControl__
-{{region vb-kb-gridview-howto-add-context-menu-to-filteringcontrol-1}}
+```
+```VB.NET
 
 	Public Class ExtendedFilteringControl
 	    Inherits FilteringControl
@@ -95,12 +93,12 @@ Create a class that inherits from FilteringControl and handle the __PreviewMouse
 			End If
 		End Sub
     End Class
-{{endregion}}
+```
 
 Then you have to set the __FilteringControl__ property of the columns which will utilize the custom control. 
 
-#### __[C#] Example 2: Setting the FilteringControl of the columns__
-{{region cs-kb-gridview-howto-add-context-menu-to-filteringcontrol-2}}
+__Example 2: Setting the FilteringControl of the columns__
+```C#
 
 	public partial class MainWindow : Window
     {
@@ -119,10 +117,8 @@ Then you have to set the __FilteringControl__ property of the columns which will
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the FilteringControl of the columns__
-{{region vb-kb-gridview-howto-add-context-menu-to-filteringcontrol-3}}
+```
+```VB.NET
 
 	Partial Public Class MainWindow
 	Inherits Window
@@ -139,7 +135,7 @@ Then you have to set the __FilteringControl__ property of the columns which will
 			Next column
 		End Sub
     End Class
-{{endregion}}
+```
 
 > The examples use the RadGridView setup from its [Getting Started]({%slug gridview-getting-started2%}) article.
 

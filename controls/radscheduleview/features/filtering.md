@@ -18,7 +18,7 @@ The following filter will exclude all appointments whose start date is not today
 
 #### [C#] Example 1: Define the appointments filter predicate
 
-{{region cs-radscheduleview-features-filtering-1}}
+```C#
     public Predicate<IAppointment> AppointmentsFilter
     {
         get { return Filter; }
@@ -34,17 +34,17 @@ The following filter will exclude all appointments whose start date is not today
     {
         return app != null && app.Start.Date == DateTime.Today;
     }
-{{endregion}}
+```
 
 #### [XAML] Example 2: Set a definition's AppointmentFilter property
 
-{{region xaml-radscheduleview-features-filtering-2}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:WeekViewDefinition AppointmentFilter="{Binding DataContext.AppointmentFilter, ElementName=scheduleView}"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>	
-{{endregion}}
+```
 
 ## OccurenceFilter
 
@@ -54,7 +54,7 @@ The filter demonstrated in **examples 3 and 4** will exclude all occurences whos
 
 #### [C#] Example 3: Define the occurences filter predicate
 
-{{region cs-radscheduleview-features-filtering-3}}
+```C#
     public Predicate<IOccurrence> OccurenceFilter
     {
         get { return Filter; }
@@ -70,17 +70,17 @@ The filter demonstrated in **examples 3 and 4** will exclude all occurences whos
     {
         return (occ.End - occ.Start) <= TimeSpan.FromHours(1);
     }
-{{endregion}}
+```
 
 #### [XAML] Example 4: Set a definition's AppointmentFilter property
 
-{{region xaml-radscheduleview-features-filtering-4}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:WeekViewDefinition OccurrenceFilter="{Binding DataContext.OccurenceFilter, ElementName=scheduleView}"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## See Also
 

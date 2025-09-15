@@ -22,15 +22,15 @@ As __RadImageEditor__ is highly extensible, you can create your own format provi
 
 The format providers can load images from streams and bytes just like shown in **Example 1**.
 
-#### __[C#] Example 1: Load an image__  
-{{region cs-radimageeditor-features-import-export_0}}
+__Example 1: Load an image__  
+```C#
 	this.imageEditor.Image = formatProvider.Import(stream);
-{{endregion}}
+```
 
 The code from **Example 2** loads an image from a file using the open file dialog.{% if site.site_name == 'Silverlight' %}
 
-#### __[C#] Example 2: Load an image through the OpenFileDialog__  
-{{region cs-radimageeditor-features-import-export_1}}
+__Example 2: Load an image through the OpenFileDialog__  
+```C#
 	private void AddImageInEditor()
 	{
 	   OpenFileDialog ofd = new OpenFileDialog();
@@ -54,14 +54,14 @@ The code from **Example 2** loads an image from a file using the open file dialo
 	      }
 	   }
 	}
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __[C#] Example 2: Load an image through the OpenFileDialog__
+__Example 2: Load an image through the OpenFileDialog__
 
-{{region cs-radimageeditor-features-import-export_2}}
+```C#
 	private void AddImageInEditor()
 	{
 	    OpenFileDialog ofd = new OpenFileDialog();
@@ -85,13 +85,13 @@ The code from **Example 2** loads an image from a file using the open file dialo
 	        }
 	    }
 	}
-{{endregion}}
+```
 {% endif %}
 
 You can use the available format providers to export the images as well.  **Example 3** shows how you can get the image of the editor, encode it in a specific format – BMP or PNG, and save it using the SaveFileDialog.
 
-#### __[C#] Example 3: Save an image through the SaveFileDialog__  
-{{region cs-radimageeditor-features-import-export_3}}
+__Example 3: Save an image through the SaveFileDialog__  
+```C#
 	private void ExportImageInEditor()
 	{
 	    SaveFileDialog sfd = new SaveFileDialog();
@@ -118,16 +118,16 @@ You can use the available format providers to export the images as well.  **Exam
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 >One thing to note is that the last applied change may not be committed (which normally happens when you press Enter or change the current tool).
 
 To commit this last change, use the method from **Example 4**
 
-#### __[C#] Example 4: Commit a change__  
-{{region cs-radimageeditor-features-import-export_4}}
+__Example 4: Commit a change__  
+```C#
 	this.imageEditorUI.ImageEditor.CommitTool();
-{{endregion}}
+```
 
 
 ## See Also  

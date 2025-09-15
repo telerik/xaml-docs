@@ -14,9 +14,9 @@ The __RadDataForm__ is may be fully integrated with the __RadGridView__ control.
 
 For the purpose of this tutorial we will first create a class - Employee. In order to update the items of the grid once the corresponding field in the RadDataForm has been changed, we will implement the **INotifyPropertyChanged** Interface.
 
-#### __[C#] Example 1: Creating an Employee class that implements INotifyPropertyChanged__
+__Example 1: Creating an Employee class that implements INotifyPropertyChanged__
 
-	{{region cs-raddataform-integrate-with-radgridview_0}}
+	```C#
 	public class Employee : INotifyPropertyChanged
 	{
 	    public event PropertyChangedEventHandler PropertyChanged;
@@ -128,11 +128,8 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 	        return employees;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating an Employee class that implements INotifyPropertyChanged__
-
-	{{region vb-raddataform-integrate-with-radgridview_0}}
+```
+```VB.NET
 	Public Class Employee
 	    Implements INotifyPropertyChanged
 	    Private Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
@@ -250,13 +247,13 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 	        Return employees
 	    End Function
 	End Class
-{{endregion}}
+```
 
 The definition of the of the RadGridView may be as follows:
 
-#### __[XAML] Example 2: Defining the RadGridView__
+__Example 2: Defining the RadGridView__
 
-	{{region xaml-raddataform-integrate-with-radgridview_1}}
+	```XAML
 	<telerik:RadGridView x:Name="RadGridView1" IsReadOnly="True" ItemsSource="{Binding Employees}" 
 	                     CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" 
 	                     Height="500"  Width="700"
@@ -267,21 +264,18 @@ The definition of the of the RadGridView may be as follows:
 	        </DataTemplate>
 	    </telerik:RadGridView.RowDetailsTemplate>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 Afterwards, all you have to do is to set the ItemsSource of the grid:
 
-#### __[C#] Example 3: Setting the RadGridView's ItemsSource__
+__Example 3: Setting the RadGridView's ItemsSource__
 
-	{{region cs-raddataform-integrate-with-radgridview_2}}
+	```C#
 	this.RadGridView1.ItemsSource = Employee.GetEmployees();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the RadGridView's ItemsSource__
-
-	{{region vb-raddataform-integrate-with-radgridview_2}}
+```
+```VB.NET
 	Me.RadGridView1.ItemsSource = Employee.GetEmployees()
-{{endregion}}
+```
 
 Once you define all the required parts, you will see the following:
 

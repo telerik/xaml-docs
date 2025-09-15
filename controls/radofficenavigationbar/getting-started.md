@@ -32,10 +32,10 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add RadOfficeNavigationBar manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Adding RadOfficeNavigationBar in XAML__
-{{region radofficenavigationbar-getting-started-0}}
+__Adding RadOfficeNavigationBar in XAML__
+```XAML
     <telerik:RadOfficeNavigationBar/>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} Empty RadOfficeNavigationBar](images/officenavigationbar-getting-started-0.png)
 
@@ -43,8 +43,8 @@ You can add RadOfficeNavigationBar manually in XAML as demonstrated in the follo
 
 The RadOfficeNavigationBar control works with `RadOfficeNavigationBarItem` elements that are added to the `Items` collection of the control. These elements can be added both in XAML and in code.
 
-#### __[XAML] Adding RadOfficeNavigationBarItems in XAML__
-{{region radofficenavigationbar-getting-started-1}}
+__Adding RadOfficeNavigationBarItems in XAML__
+```XAML
     <telerik:RadOfficeNavigationBar>
         <telerik:RadOfficeNavigationBar.Items>
             <telerik:RadOfficeNavigationBarItem Content="Item 1"/>
@@ -52,19 +52,17 @@ The RadOfficeNavigationBar control works with `RadOfficeNavigationBarItem` eleme
             <telerik:RadOfficeNavigationBarItem Content="Item 3"/>
         </telerik:RadOfficeNavigationBar.Items>
     </telerik:RadOfficeNavigationBar>
-{{endregion}}
+```
 
-#### __[C#] Adding RadOfficeNavigationBarItems in code__
-{{region radofficenavigationbar-getting-started-2}}
+__Adding RadOfficeNavigationBarItems in code__
+```C#
     RadOfficeNavigationBar radOfficeNavigationBar = new RadOfficeNavigationBar();
 
     radOfficeNavigationBar.Items.Add(new RadOfficeNavigationBarItem() { Content = "Item 1" });
     radOfficeNavigationBar.Items.Add(new RadOfficeNavigationBarItem() { Content = "Item 2" });
     radOfficeNavigationBar.Items.Add(new RadOfficeNavigationBarItem() { Content = "Item 3" });
-{{endregion}}
-
-#### __[VB.NET] Adding RadOfficeNavigationBarItems in code__
-{{region radofficenavigationbar-getting-started-3}}
+```
+```VB.NET
     Dim radOfficeNavigationBar As RadOfficeNavigationBar = New RadOfficeNavigationBar()
 
     radOfficeNavigationBar.Items.Add(New RadOfficeNavigationBarItem() With {
@@ -76,7 +74,7 @@ The RadOfficeNavigationBar control works with `RadOfficeNavigationBarItem` eleme
     radOfficeNavigationBar.Items.Add(New RadOfficeNavigationBarItem() With {
         .Content = "Item 3"
     })
-{{endregion}}
+```
 
 __RadOfficeNavigationBar with several RadOfficeNavigationBarItems defined in its Items collection__
 
@@ -90,25 +88,23 @@ RadOfficeNavigationBar allows you to data bind it to a collection of business ob
 
 The following example will demonstrate a simple data binding scenario.
 
-#### __[C#] Simple business class__
-{{region radofficenavigationbar-getting-started-4}}
+__Simple business class__
+```C#
     public class ItemModel
     {
         public string Name { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Simple business class__
-{{region radofficenavigationbar-getting-started-5}}
+```
+```VB.NET
     Public Class ItemModel
         Public Property Name As String
     End Class
-{{endregion}}
+```
 
 Next, you can create a view model that will contain a collection of ItemModel objects.
 
-#### __[C#] View model containing ObservableCollection of ItemModel objects__
-{{region radofficenavigationbar-getting-started-6}}
+__View model containing ObservableCollection of ItemModel objects__
+```C#
     public class ItemsViewModel
     {
         public ItemsViewModel()
@@ -123,10 +119,8 @@ Next, you can create a view model that will contain a collection of ItemModel ob
 
         public ObservableCollection<ItemModel> ItemModels { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] View model containing ObservableCollection of ItemModel objects__
-{{region radofficenavigationbar-getting-started-7}}
+```
+```VB.NET
     Public Class ItemsViewModel
 
     Public Sub New()
@@ -145,19 +139,19 @@ Next, you can create a view model that will contain a collection of ItemModel ob
 
     Public Property ItemModels As ObservableCollection(Of ItemModel)
     End Class
-{{endregion}}
+```
 
 Now that you have prepared the needed sample data, it is time to bind it to the RadOfficeNavigationBar. To do so, set its `ItemsSource` property to the collection of ItemModel objects. Additionally, you can set `DisplayMemberPath` property to mark which property of the business object will be used as its visual representation inside RadOfficeNavigationBar.
 
-#### __[XAML] Binding the collection to the ItemsSource property__
-{{region radofficenavigationbar-getting-started-8}}
+__Binding the collection to the ItemsSource property__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:ItemsViewModel/>
         </Grid.DataContext>
         <telerik:RadOfficeNavigationBar ItemsSource="{Binding ItemModels}" DisplayMemberPath="Name"/>
     </Grid>
-{{endregion}}
+```
 
 __RadOfficeNavigationBar with a collection bound to its ItemsSource property__
 
@@ -178,8 +172,8 @@ The controls from our suite support different themes. You can see how to apply a
 
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__
-{{region radofficenavigationbar-getting-started-9}}
+__Merge the ResourceDictionaries__
+```XAML
     <Application.Resources>
     	<ResourceDictionary>
     		<ResourceDictionary.MergedDictionaries>
@@ -189,7 +183,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
     		</ResourceDictionary.MergedDictionaries>
     	</ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

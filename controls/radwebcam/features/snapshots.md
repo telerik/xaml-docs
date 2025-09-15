@@ -20,8 +20,8 @@ __Take snapshot button__
 
 ![{{ site.framework_name }} RadWebCam Take Snapshot Button](images/radwebcam-features-snapshots-0.png)
 
-#### __[XAML] Taking a snapshot in code__
-{{region radwebcam-features-snapshots-0}}
+__Taking a snapshot in code__
+```XAML
 	public MainWindow()
 	{
 		InitializeComponent();		
@@ -38,10 +38,10 @@ __Take snapshot button__
 		BitmapSource snapshot = e.Snapshot;
 		// here you save the source to a file, in memory, or to show it in the UI
 	}
-{{endregion}}
+```
 
-#### __[VB.NET] Taking a snapshot in code__
-{{region vb-radwebcam-features-snapshots-0}}
+__Taking a snapshot in code__
+```VB.NET
 	Public Sub New()
         InitializeComponent()
         Me.radWebCam.SnapshotTaken += AddressOf RadWebCam_SnapshotTaken
@@ -55,7 +55,7 @@ __Take snapshot button__
         Dim snapshot As BitmapSource = e.Snapshot
 		' here you save the source to a file, in memory, or to show it in the UI
     End Sub
-{{endregion}}
+```
 
 To discard the snapshot preview, call the `DiscardSnapshot` method of RadWebCam. The method works only when a snapshot is taken and is currently being previewed.
 
@@ -65,20 +65,18 @@ Additionally, there is a `SaveSnapshot` method which fires the `SnapshotTaken` e
 
 By default when you take a snapshot a preview of the image will be shown. To disable this, set the `PreviewSnapshots` property to `False`.
 
-#### __[XAML] Disable snapshots preview in XAML__
-{{region radwebcam-features-snapshots-1}}
+__Disable snapshots preview in XAML__
+```XAML
 	<telerik:RadWebCam PreviewSnapshots="False" />
-{{endregion}}
+```
 
-#### __[C#] Disable snapshots preview in code__
-{{region radwebcam-features-snapshots-2}}
+__Disable snapshots preview in code__
+```C#
 	this.radWebCam.PreviewSnapshots = false;
-{{endregion}}
-
-#### __[VB.NET] Disable snapshots preview in code__
-{{region vb-radwebcam-features-snapshots-2}}
+```
+```VB.NET
 	Me.radWebCam.PreviewSnapshots = False
-{{endregion}}
+```
 
 You can indicate if the snapshot preview is displayed via the `IsPreviewingSnapshot` property of RadWebCam.
 

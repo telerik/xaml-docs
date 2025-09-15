@@ -25,9 +25,9 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 * Then we need to define our __ViewModels__. We can start by creating a class to describe the __RadTabItems__ - __TabViewModel__ exposing a __Header__ property. As we're taking an MVVM approach to implement the Add and Close buttons functionality, we'll also have to set up Add and Close commands in the __TabViewModel__.
 			
 
-#### __[C#] Example 1: Create ViewModels__
+__Example 1: Create ViewModels__
 
-{{region radtabcontrol-how-to-add-close-button-mvvm-0}}
+```C#
     public class MainViewModel
     {
         public MainViewModel()
@@ -64,13 +64,8 @@ For the purpose of this example, you will need to create an empty  {% if site.si
             tabItem.Dispose();
         }
     }
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 1: Create ViewModels__
-
-{{region radtabcontrol-how-to-add-close-button-mvvm-0}}
+	```
+```VB.NET
     Public Class MainViewModel
         Public Sub New()
             Me.Tabs = New ObservableCollection(Of TabViewModel)()
@@ -105,16 +100,16 @@ For the purpose of this example, you will need to create an empty  {% if site.si
             tabItem.Dispose()
         End Sub
     End Class
-	{{endregion}}
+	```
 
 
 
 * After that we can go ahead and create a __MainViewModel__ to define the collection of *TabViewModel* items which we will use to populate the __RadTabControl.ItemsSource__. Please note that as the add/close logic will change the __RadTabControl.ItemsSource__ collection, it's best to implement the commands execution methods in this ViewModel as well:
 			
 
-#### __[C#] Example 2: Creating TabViewModel__
+__Example 2: Creating TabViewModel__
 
-{{region radtabcontrol-how-to-add-close-button-mvvm-1}}
+```C#
     public class TabViewModel : INotifyPropertyChanged, IDisposable
     {
         private bool isSelected;
@@ -193,13 +188,8 @@ For the purpose of this example, you will need to create an empty  {% if site.si
             }
         }
     }
-	{{endregion}}
-
-
-
-#### __[VB.NET] Example 2: Creating TabViewModel__
-
-{{region radtabcontrol-how-to-add-close-button-mvvm-1}}
+	```
+```VB.NET
     Public Class TabViewModel
         Implements INotifyPropertyChanged
         Implements IDisposable
@@ -275,7 +265,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
             RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
         End Sub
     End Class
-	{{endregion}}
+	```
 
 
 * Now that our ViewModels are all in place, we can proceed with the definition of our view. In order to take full advantage of the implemented commands we have to bind the Add/Close __Buttons Command__ properties to the appropriate __DelegateCommands__ definitions.
@@ -283,9 +273,9 @@ For the purpose of this example, you will need to create an empty  {% if site.si
 
 * Here is how the __Resources__ section of our view looks like: {% if site.site_name == 'WPF' %}
 
-#### __[XAML] Example 3: Binding buttons Command property__
+__Example 3: Binding buttons Command property__
 
-{{region radtabcontrol-how-to-add-close-button-mvvm-0}}
+```XAML
       <Style x:Key="CloseButton"
              TargetType="{x:Type Button}">
         <Setter Property="Template">
@@ -392,13 +382,13 @@ For the purpose of this example, you will need to create an empty  {% if site.si
                 Value="{Binding IsSelected, Mode=TwoWay}" />
       </Style>
 	
-	{{endregion}}
+	```
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __[XAML] Example 3: Binding buttons Command property__
+__Example 3: Binding buttons Command property__
 
-{{region radtabcontrol-how-to-add-close-button-mvvm-0-sl}}
+```XAML
     <Style x:Key="CloseButton" TargetType="Button">
         <Setter Property="Template">
             <Setter.Value>
@@ -557,15 +547,15 @@ For the purpose of this example, you will need to create an empty  {% if site.si
     <Style TargetType="telerik:RadTabItem">
         <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
     </Style>
-	{{endregion}}
+	```
 
 {% endif %}
 
 * And here is the __RadTabControl__ definition:			
 
-#### __[XAML] Example 4: Defining RadTabControl__
+__Example 4: Defining RadTabControl__
 
-{{region radtabcontrol-how-to-add-close-button-mvvm-1}}
+```XAML
     <telerik:RadTabControl x:Name="tabControl"
                          Width="600"
                          Height="300"
@@ -573,7 +563,7 @@ For the purpose of this example, you will need to create an empty  {% if site.si
                          ItemTemplate="{StaticResource TabItemTemplate}"
                          ItemsSource="{Binding Tabs}"
                          OverflowMode="Wrap" />
-	{{endregion}}
+	```
 
 
 >Please note that in the above sample we have defined custom styles for the __Button__ controls which you can remove or modify accordignly to your requirements.

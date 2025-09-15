@@ -20,8 +20,8 @@ To add custom commands to __RadPane's__ menu, you should perform the following s
 
 1. You can create a custom class CustomRadDockingCommands. Inside, you can create a singleton property of type __Telerik.Windows.Controls.RoutedUICommand__. __Example 1__ demonstrates how you can do that.
 	
-	#### __[C#] Example 1: Create Singleton command property__
-	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_0}}
+	__Example 1: Create Singleton command property__
+	```C#
 		public class CustomRadDockingCommands
 		{
 			private static RoutedUICommand closeAllPanesButThisCommand;			
@@ -37,12 +37,12 @@ To add custom commands to __RadPane's__ menu, you should perform the following s
 				}
 			}			
 		}
-	{{endregion}}
+	```
 
 1. Create a custom __DataTemplate__ by using the Telerik's __RadContextMenu__ and __RadMenuItem__ controls. You can use either the built-in __RadDockingCommands__ or create a custom one - both approaches are demonstrated in this topic. Set the created __DataTemplate__ to __RadPane__'s __ContextMenuTemplate__ property. __Example 2__ show how to set __RadPane__'s __ContextMenuTemplate__ property.
           
-	#### __[XAML] Example 2: Custom DataTemplate for the ContextMenuTemplate property__
-	{{region xaml-raddocking-how-to-add-menu-items-to-the-radpanes-menu_2}}
+	__Example 2: Custom DataTemplate for the ContextMenuTemplate property__
+	```XAML
 		<Window.Resources>
 			<DataTemplate x:Key="ContextMenuTemplate">
 				<telerik:RadContextMenu InheritDataContext="False">
@@ -84,12 +84,12 @@ To add custom commands to __RadPane's__ menu, you should perform the following s
 				</telerik:RadSplitContainer>
 			</telerik:RadDocking>
 		</Grid>
-	{{endregion}}
+	```
 
 1. You should implement your custom logic in the __OnCloseAllPanesButThis__ and __OnCloseAllPanesButThisCanExecute__ methods. They specify whether the command can be executed and what action is performed, when it is executed. __Example 3__ demonstrates sample logic for the command methods. 
           
-	#### __[C#] Example 3: Implement Execute and CanExecute methods__
-	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_4}}
+	__Example 3: Implement Execute and CanExecute methods__
+	```C#
 		public class CustomRadDockingCommands
 		{
 			private static RoutedUICommand closeAllPanesButThisCommand;
@@ -144,12 +144,12 @@ To add custom commands to __RadPane's__ menu, you should perform the following s
 				}
 			}
 		}
-	{{endregion}}
+	```
 
 1. Your menu command is ready and you have a custom __DataTemplate__, which is set to the __ContextMenuTemplate__ property. The next step is to register your custom command by using the __Telerik.Windows.Controls.CommandManager__ class in the __CustomRadDockingCommands__ constructor. __Example 4__ shows the final structure of the __CustomRadDockingCommands__ class.
 	
-	#### __[C#] Example 4: Register CloseAllPanesButThisCommand custom command__
-	{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_3}}
+	__Example 4: Register CloseAllPanesButThisCommand custom command__
+	```C#
 		public class CustomRadDockingCommands
 		{
 			private static RoutedUICommand closeAllPanesButThisCommand;
@@ -209,7 +209,7 @@ To add custom commands to __RadPane's__ menu, you should perform the following s
 				}
 			}
 		}
-	{{endregion}}
+	```
 
 Run your demo. __RadPane__'s menu should look like the snapshot below.
 
@@ -219,9 +219,9 @@ Run your demo. __RadPane__'s menu should look like the snapshot below.
 
 In order to remove __RadPane__'s Menu, you should set __RadPane__'s __ContextMenuTemplate__ property to __null__ (respectively __{x:Null}__ in XAML).
 
-#### __[XAML] Example 5: Set ContextMenuTemplate property to null__
+__Example 5: Set ContextMenuTemplate property to null__
 
-{{region xaml-raddocking-how-to-add-menu-items-to-the-radpanes-menu_5}}
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -235,19 +235,16 @@ In order to remove __RadPane__'s Menu, you should set __RadPane__'s __ContextMen
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
-#### __[C#] Example 6: Set ContextMenuTemplate property to null in code behind__
+__Example 6: Set ContextMenuTemplate property to null in code behind__
 
-{{region cs-raddocking-how-to-add-menu-items-to-the-radpanes-menu_6}}
+```C#
 	radPane.ContextMenuTemplate = null;
-{{endregion}}
-
-#### __[VB.NET] Example 6: Set ContextMenuTemplate property to null in code behind__
-
-{{region vb-raddocking-how-to-add-menu-items-to-the-radpanes-menu_7}}
+```
+```VB.NET
 	radPane.ContextMenuTemplate = Nothing
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking Remove Pane Context Menu](images/RadDocking_HowTo_AddPaneMenuItems_040.png)
 

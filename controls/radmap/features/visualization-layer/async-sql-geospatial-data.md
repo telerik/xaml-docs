@@ -48,8 +48,8 @@ The AsyncSqlGeospatialDataReader supports the following geometry types.
 
 This section shows how to assemble an example that demonstrates reading Wkt geospatial data.
 
-#### __[C#] Example 1: Defining the Wkt model and the data storage__
-{{region radmap-features-async-sql-geospatial-data-0}}
+__Example 1: Defining the Wkt model and the data storage__
+```C#
 	public class WktItemModel
     {
         public string Name { get; set; }
@@ -108,10 +108,8 @@ This section shows how to assemble an example that demonstrates reading Wkt geos
             return result;
         }
     } 
-{{endregion}}
-
-#### __[VB.NET] Example 1:  Defining the Wkt model and the data storage__
-{{region radmap-features-async-sql-geospatial-data-1}}
+```
+```VB.NET
 	Public Class WktItemModel
 		Public Property Name As String
 		Public Property Geometry As String
@@ -135,10 +133,10 @@ This section shows how to assemble an example that demonstrates reading Wkt geos
 			Return result
 		End Function
 	End Module
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Defining the map with the reader and setting it up__
-{{region radmap-features-async-sql-geospatial-data-2}}
+__Example 2: Defining the map with the reader and setting it up__
+```XAML
 	<telerik:RadMap Center="33.7861647934865,-84.371616833534"
 					ZoomLevel="10">
 		<telerik:RadMap.Provider>
@@ -167,14 +165,14 @@ This section shows how to assemble an example that demonstrates reading Wkt geos
 			</telerik:VisualizationLayer.HighlightFill>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Notice the __ToolTipFormat__ setting in the AsyncSqlGeospatialDataReader. It points to the Name property of the WktItemModel class. This enables a tooltip that will show the value of the Name property when you mouse over the corresponding shape.
 
 Additionally, the __ItemTemplate__ of the VisualizationLayer is set. This will affect only the Point geometries. Instead of the default pin we show a simple ellipse. The __MapLayer.HotSpot__ property allows you to define a HotSpot object that offsets the position of the UIElement by relative portion of its size. In this example X=0.5 means half of the width and Y=0.5 half of the height of the Ellipse. The Ellipse will be centered at the location of the Point geometry.
 
-#### __[C#] Example 3: Setting the reader's source in code__
-{{region radmap-features-async-sql-geospatial-data-3}}
+__Example 3: Setting the reader's source in code__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent();
@@ -182,17 +180,15 @@ Additionally, the __ItemTemplate__ of the VisualizationLayer is set. This will a
 		// Note that you can bind the Source property also in XAML
 		this.asyncSqlGeospatialDataReader.Source = WktDataStorage.GetData();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the reader's source in code__
-{{region radmap-features-async-sql-geospatial-data-4}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		
 		' Note that you can bind the Source property also in XAML
 		Me.asyncSqlGeospatialDataReader.Source = WktDataStorage.GetData()
 	End Sub
-{{endregion}}
+```
 
 #### Figure 1: RadMap populated with MapShapeData objects via the AsyncSqlGeospatialDataReader
 ![radmap-features-async-sql-geospatial-data-0.png](images/radmap-features-async-sql-geospatial-data-0.png)

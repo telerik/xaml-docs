@@ -20,7 +20,7 @@ A simple demonstration how to use the ItemTemplate property is given below:
 
 {% if site.site_name == 'WPF' %}
 #### __XAML__
-{{region radlegend-overview_0_WPF}}
+```XAML
 	<telerik:RadLegend HorizontalAlignment="Center" UseLayoutRounding="True">
 	    <telerik:RadLegend.ItemTemplate>
 	        <DataTemplate>
@@ -49,12 +49,12 @@ A simple demonstration how to use the ItemTemplate property is given below:
 	        </telerik:LegendItemCollection>
 	    </telerik:RadLegend.Items>
 	</telerik:RadLegend>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
-{{region radlegend-overview_0_SL}}
+```XAML
 	<telerik:RadLegend HorizontalAlignment="Center" UseLayoutRounding="True">
 	    <telerik:RadLegend.ItemTemplate>
 	        <DataTemplate>
@@ -86,7 +86,7 @@ A simple demonstration how to use the ItemTemplate property is given below:
 	        </telerik:LegendItemCollection>
 	    </telerik:RadLegend.Items>
 	</telerik:RadLegend>
-{{endregion}}
+```
 {% endif %}
 
 And here is the end result:

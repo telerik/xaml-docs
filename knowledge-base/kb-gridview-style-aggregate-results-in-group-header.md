@@ -29,9 +29,9 @@ The approach would differ depending on the value of the [ColumnAggregatesAlignme
 
 __Example 1__ demonstrates a sample model and viewmodel that will be used for demonstration purposes. 
 
-#### __[C#] Example 1: The model and viewmodel__
+__Example 1: The model and viewmodel__
 
-{{region cs-kb-gridview-style-aggregate-results-in-group-header-0}}
+```C#
     public class Product
     {
         public Product(string name, int id)
@@ -85,11 +85,8 @@ __Example 1__ demonstrates a sample model and viewmodel that will be used for de
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: The model and viewmodel__
-
-{{region vb-kb-gridview-style-aggregate-results-in-group-header-1}}
+```
+```VB.NET
     Public Class Product
         Public Sub New(ByVal name As String, ByVal id As Integer)
             Me.Name = name
@@ -133,15 +130,15 @@ __Example 1__ demonstrates a sample model and viewmodel that will be used for de
             End Get
         End Property
     End Class
-{{endregion}}
+```
 
 #### Styling the GridViewAggregateResultCell elements
 
 This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grouping-aggregates%}#align-aggregates-in-groupheaderrow) of the RadGridView is __NoAlignment__. __Example 2__ shows how to create a style targeting GridViewAggregateResultCell and change its Background depending on its DataContext. 
 
-#### __[XAML] Example 2: Conditionally styling GridViewAggregateResultCell__
+__Example 2: Conditionally styling GridViewAggregateResultCell__
 
-{{region xaml-kb-gridview-style-aggregate-results-in-group-header-2}}
+```XAML
 
     <Grid>
         <Grid.DataContext>
@@ -171,11 +168,11 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
             </telerik:RadGridView.GroupDescriptors>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 3: AggregateResultsListItemCountToBackgroundConverter implementation__
+__Example 3: AggregateResultsListItemCountToBackgroundConverter implementation__
 
-{{region cs-kb-gridview-style-aggregate-results-in-group-header-3}}
+```C#
 
     public class AggregateResultsListItemCountToBackgroundConverter : IValueConverter
     {
@@ -198,11 +195,8 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
             throw new NotImplementedException();
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: AggregateResultsListItemCountToBackgroundConverter implementation__
-
-{{region vb-kb-gridview-style-aggregate-results-in-group-header-4}}
+```
+```VB.NET
 
     Public Class AggregateResultsListItemCountToBackgroundConverter
 	    Implements IValueConverter
@@ -221,7 +215,7 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
             Throw New NotImplementedException()
         End Function
     End Class
-{{endregion}}
+```
 
 
 #### __Figure 1: Result from Example 2 in the Fluent theme__
@@ -233,9 +227,9 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
 
 This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grouping-aggregates%}#align-aggregates-in-groupheaderrow) of the RadGridView is  __NextToGroupKey__ or __BelowToGroupKey__. __Example 4__ shows how to create a style targeting GridViewGroupHeaderCell and change its Background depending on its DataContext. 
 
-#### __[XAML] Example 4: Conditionally styling GridViewGroupHeaderCell__
+__Example 4: Conditionally styling GridViewGroupHeaderCell__
 
-{{region xaml-kb-gridview-style-aggregate-results-in-group-header-5}}
+```XAML
 
     <Grid>
         <Grid.DataContext>
@@ -272,11 +266,11 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
             </telerik:RadGridView.GroupDescriptors>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 5: Implementation of converters used in Example 4__
+__Example 5: Implementation of converters used in Example 4__
 
-{{region cs-kb-gridview-style-aggregate-results-in-group-header-6}}
+```C#
     public class ItemCountToBackgroundConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -311,11 +305,8 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
             throw new InvalidOperationException("IsNullConverter can only be used OneWay.");
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 5: Implementation of converters used in Example 4__
-
-{{region vb-kb-gridview-style-aggregate-results-in-group-header-7}}
+```
+```VB.NET
     Public Class ItemCountToBackgroundConverter
         Implements IValueConverter
 
@@ -345,7 +336,7 @@ This approach is valid when the [ColumnAggregatesAlignment]({%slug gridview-grou
             Throw New InvalidOperationException("IsNullConverter can only be used OneWay.")
         End Function
     End Class
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 3 in the Fluent theme__
 

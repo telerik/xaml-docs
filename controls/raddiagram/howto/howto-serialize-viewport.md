@@ -15,8 +15,8 @@ The following article will demonstrate how you can save the __RadDiagram__ curre
 
 Let's first configure our XAML. We'll keep it simple - two buttons for save and Load and a Diagram with one shape.
 
-#### __[XAML] Example 1: RadDiagram with a single shape and two buttons for save and load__
-{{region xaml-raddiagrams-howto-serialize-viewport-save-load-0}}
+__Example 1: RadDiagram with a single shape and two buttons for save and load__
+```XAML
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -35,14 +35,14 @@ Let's first configure our XAML. We'll keep it simple - two buttons for save and 
             </telerik:RadDiagram>
         </Grid>
     </Grid>
-{{endregion}}
+```
 
 In code behind we are subscribing to the Execute method of the Open/Save DiagramCommands. Then using the [DiagramExtension FileManager]({%slug raddiagram-extensions-filemanager%}) class you can export the diagram into file and load it again from it.
 
 The next step is to subscribe to the __MetadataSerialized__ and __MetadataDeserialized__ events of the diagram control. In the MetadataSerialized event handler you can add a __Key__ to the __SerializationInfo__ object which will hold the __ViewPort.TopLeft__ property before the control is saved. Then in the __MetadataDeserialized__ event handler you can get the value of this property and call the __BringIntoView()__ method of the RadDiagram when the __DiagramCommands.Open__ command execute. __Example 2__ shows the whole logic for performing this approach.
 
-#### __[C#] Example 2: Code-Behind logic__
-{{region cs-raddiagrams-howto-serialize-viewport-save-load-1}}
+__Example 2: Code-Behind logic__
+```C#
 	public partial class MainWindow : Window
 	{
 		private FileManager fileManager;
@@ -106,7 +106,7 @@ The next step is to subscribe to the __MetadataSerialized__ and __MetadataDeseri
 				owner.fileManager.SaveToFile();
 		}
 	}
-{{endregion}}
+```
 
 ## See Also
  * [Serialization]({%slug raddiagrams-features-serialization%})

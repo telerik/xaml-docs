@@ -20,8 +20,8 @@ The following tutorial shows how to bind to a collection of business objects and
 
 The following example demonstrates a simple RadTreeView declaration. You can find `RadTreeViewSampleData` custom class implementation in the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) help article.
 
-#### __[XAML] Binding RadTreeView to large number of items__
-{{region radtreeview-features-ui-virtualization-0}}
+__Binding RadTreeView to large number of items__
+```XAML
 	<UserControl.Resources>	
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>	
 	    <DataTemplate x:Key="TeamDataTemplate">
@@ -34,7 +34,7 @@ The following example demonstrates a simple RadTreeView declaration. You can fin
 	                ItemTemplate="{StaticResource TeamDataTemplate}">
 	    </telerik:RadTreeView>	
 	</Grid>
-{{endregion}}
+```
 
 The RadTreeView is bound to a collection with 10000 Team objects. By default the `IsVirtualizing` property is set to __False__. Which means that when you try to expand the "Teams" node, it will take a few minutes in order the containers to be generated. That will freeze your application.
 
@@ -46,8 +46,8 @@ In order to enable the UI Virtualization behavior, you should set the `IsVirtual
 
 The default minimum height of the `RadTreeViewItems` is 24. This value is taken into consideration during the virtualization process. To change it, set the `ChildDefaultLength` property of the `TreeViewPanel`. To set the property, assign the `ItemsPanel` property of `RadTreeView`.
 
-#### __[XAML] Setting the ChildDefaultLength property of the TreeViewPanel__
-{{region radtreeview-features-ui-virtualization-1}}
+__Setting the ChildDefaultLength property of the TreeViewPanel__
+```XAML
 	<telerik:RadTreeView>
 		<telerik:RadTreeView.ItemsPanel>
 			<ItemsPanelTemplate>
@@ -55,14 +55,14 @@ The default minimum height of the `RadTreeViewItems` is 24. This value is taken 
 			</ItemsPanelTemplate>
 		</telerik:RadTreeView.ItemsPanel>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 > Hosting RadTreeView in panels which will measure it with infinity will disable the UI virtualization. Examples of such panels are `ScrollViewer`, `StackPanel`, and `Grid` with `Row.Height=Auto` or `Column.Width=Auto`. You can place it in a `Grid` panel with `RowDefinition` with Height="*" instead. 
 
-#### __[XAML] Set IsVirtualizing property__
-{{region radtreeview-features-ui-virtualization-2}}
+__Set IsVirtualizing property__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsVirtualizing="True">
-{{endregion}}
+```
 
 Now when you try to expand the first node, then only those elements that will be on the screen will be generated.
 
@@ -85,28 +85,28 @@ The TreeVirtualizationMode property is a `VirtualizationMode` enumeration which 
 
 When you use `VirtualizationMode.Standard`, then items that are out of view and are not expanded will be virtualized. Additionally, no container caching or reuse is done. This mode is suited for long lists with little jagging and little scrolling/searching. It consumes less memory at expense of CPU. Expanding and scrolling through a heavily indented hierarchy will mean that little items will be virtualized since most of them will be expanded.
 
-#### __[XAML] Setting Standard virtualization mode__
-{{region radtreeview-features-ui-virtualization-3}}
+__Setting Standard virtualization mode__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" telerikTreeView:TreeViewPanel.IsVirtualizing="True" telerikTreeView:TreeViewPanel.TreeVirtualizationMode="Standard">
-	{{endregion}}
+	```
 
 ## TreeVirtualizationMode.Recycling
 
 When you use `VirtualizationMode.Recycling`, then items that are out of view and are not expanded will be virtualized. Additionally, containers are cached and reused at `ItemsControl` level. The container cache is cleared after 3 seconds of inactivity. This mode is suited for long lists with little jagging. Scrolling longer lists is very fast. It consumes more memory at expense of CPU. Expanding and scrolling though a heavily indented hierarchy will mean little items will be virtualized since most of them will be expanded.
 
-#### __[XAML] Setting Recycling virtualization mode__
-{{region radtreeview-features-ui-virtualization-4}}
+__Setting Recycling virtualization mode__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" telerikTreeView:TreeViewPanel.IsVirtualizing="True" telerikTreeView:TreeViewPanel.TreeVirtualizationMode="Recycling">
-{{endregion}}
+```
 
 ## TreeVirtualizationMode.Hierarchical
 
 When you use `VirtualizationMode.Hierarchical`, then items that are out of view will be virtualized. Expanded items are also virtualized. Containers are cached and reused at TreeView level. This mode is suited for indented hierarchies and fully expanded trees. Scrolling may be slower in longer lists (collapsed trees) but faster when the tree is expanded. Expanding and scrolling through a long heavily indented hierarchy should be fast.
 
-#### __[XAML] Setting Hierarchical virtualization mode__
-{{region radtreeview-features-ui-virtualization-5}}
+__Setting Hierarchical virtualization mode__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" telerikTreeView:TreeViewPanel.IsVirtualizing="True" telerikTreeView:TreeViewPanel.VirtualizationMode="Hierarchical">
-{{endregion}}
+```
 
 > By default, a `TreeViewPanel` instance creates an item container for each visible item and discards it when it is no longer needed (such as when the item is scrolled out of view). When an ItemsControl contains many items, the process of creating and discarding item containers can negatively affect performance. 
 

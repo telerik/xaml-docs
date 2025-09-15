@@ -24,7 +24,7 @@ Here is a sample __RadWindow__, used as user control, with a button in it:
 
 #### __XAML__
 
-{{region xaml-radwindow-how-to-close-the-radwidnow-through-its-content_0}}
+```XAML
 	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
 	                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -33,46 +33,46 @@ Here is a sample __RadWindow__, used as user control, with a button in it:
 	        <Button Content="Close me!" HorizontalAlignment="Center" VerticalAlignment="Center" />
 	    </Grid>
 	</telerik:RadWindow>
-{{endregion}}
+```
 
 As the button is in the same control like the __RadWindow__, you can get the __RadWindow__ instance in the code-behind. In order to close the window through the button you have to attach to its __Click__ event and call the __Close()__ method of the __RadWindow__.
 
 #### __XAML__
 
-{{region xaml-radwindow-how-to-close-the-radwidnow-through-its-content_1}}
+```XAML
 	<Button Content="Close me!"
 	        Click="Button_Click"
 	        HorizontalAlignment="Center"
 	        VerticalAlignment="Center" />
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radwindow-how-to-close-the-radwidnow-through-its-content_2}}
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    this.Close();
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radwindow-how-to-close-the-radwidnow-through-its-content_3}}
+```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 	    Me.Close()
 	End Sub
-{{endregion}}
+```
 
 >tipInstead of event handler you can use a __RadButton__ with the __Close__ command for the __RadWindow__. Here is an example:
 
 #### __XAML__
 
-{{region xaml-radwindow-how-to-close-the-radwidnow-through-its-content_2}}
+```XAML
 	<telerik:RadButton Content="Close me!"
 	                   HorizontalAlignment="Center"
 	                   VerticalAlignment="Center"
 	                   Command="telerik:WindowCommands.Close" />
-{{endregion}}
+```
 
 ## Content, represented by a UserControl
 
@@ -82,22 +82,22 @@ In this scenario the __Button__ is placed inside a __UserControl__, which is pas
 
 #### __C#__
 
-{{region cs-radwindow-how-to-close-the-radwidnow-through-its-content_4}}
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    RadWindow window = this.ParentOfType<RadWindow>();
 	    window.Close();
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radwindow-how-to-close-the-radwidnow-through-its-content_5}}
+```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 	    Dim window As RadWindow = Me.ParentOfType(Of RadWindow)()
 	    window.Close()
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

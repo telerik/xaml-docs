@@ -30,10 +30,10 @@ Set the __IsTabStop__ property to include/exclude the control in the tab navigat
 
 #### __XAML__
 
-{{region radtabcontrol-features-keyboard-support_0}}
+```XAML
 	<telerik:RadTabControl x:Name="tabControl" KeyDown="tabControl_KeyDown" KeyUp="tabControl_KeyUp">
 	</telerik:RadTabControl>
-	{{endregion}}
+	```
 
 
 
@@ -41,7 +41,7 @@ The implementation of both event handlers __tabControl_KeyDown__ and __tabContro
 
 #### __C#__
 
-{{region radtabcontrol-features-keyboard-support_1}}
+```C#
 	private void tabControl_KeyDown( System.Object sender, System.Windows.Input.KeyEventArgs e)
 	{
 	    MessageBox.Show("The pressed key is: " + e.Key.ToString());
@@ -50,20 +50,20 @@ The implementation of both event handlers __tabControl_KeyDown__ and __tabContro
 	{
 	    MessageBox.Show("The released key is: " + e.Key.ToString());
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-features-keyboard-support_2}}
+```VB.NET
 	Private Sub tabControl_KeyDown( ByVal sender As System.Object, ByVal e As System.Windows.Input.KeyEventArgs)
 	    MessageBox.Show("The pressed key is: " + e.Key.ToString())
 	End Sub
 	Private Sub tabControl_KeyUp( ByVal sender As System.Object, ByVal e As System.Windows.Input.KeyEventArgs)
 	    MessageBox.Show("The released key is: " + e.Key.ToString())
 	End Sub
-	{{endregion}}
+	```
 
 
 

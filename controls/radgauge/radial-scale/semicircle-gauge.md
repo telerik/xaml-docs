@@ -17,7 +17,7 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 * __North__ - the RadRadialGauge control has a template which represents north-oriented semi-circle.          
 
 	#### __XAML__
-	{{region radial-scale-semicircle-gauge_0}}
+	```XAML
 		<telerik:RadSemicircleNorthGauge telerik:StyleManager.Theme="Windows8">
 			<telerik:SemicircleNorthScale>
 				<telerik:SemicircleNorthScale.Indicators>
@@ -26,14 +26,14 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 				</telerik:SemicircleNorthScale.Indicators>
 			</telerik:SemicircleNorthScale>
 		</telerik:RadSemicircleNorthGauge>
-	{{endregion}}
+	```
 
 	![{{ site.framework_name }} RadGauge Semicircle North Scale](images/SemicircleNGauge.png)
 
 * __South__ - the RadRadialGauge control has a template which represents south-oriented semi-circle.          
 
 	#### __XAML__
-	{{region radial-scale-semicircle-gauge_1}}
+	```XAML
 		<telerik:RadSemicircleSouthGauge telerik:StyleManager.Theme="Windows8">
 			<telerik:SemicircleSouthScale>
 				<telerik:SemicircleSouthScale.Indicators>
@@ -42,14 +42,14 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 				</telerik:SemicircleSouthScale.Indicators>
 			</telerik:SemicircleSouthScale>
 		</telerik:RadSemicircleSouthGauge>
-	{{endregion}}
+	```
 
 	![{{ site.framework_name }} RadGauge Semicircle South Scale](images/SemicircleSGauge.png)
 
 * __East__ - the RadRadialGauge control has a template which represents east-oriented semi-circle.          
 
 	#### __XAML__
-	{{region radial-scale-semicircle-gauge_2}}
+	```XAML
 		<telerik:RadSemicircleEastGauge telerik:StyleManager.Theme="Windows8">
 			<telerik:SemicircleEastScale>
 				<telerik:SemicircleEastScale.Indicators>
@@ -58,14 +58,14 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 				</telerik:SemicircleEastScale.Indicators>
 			</telerik:SemicircleEastScale>
 		</telerik:RadSemicircleEastGauge>
-	{{endregion}}
+	```
 
 	![{{ site.framework_name }} RadGauge Semicircle East Scale](images/SemicircleEGauge.png)
 
 * __West__ - the RadRadialGauge control has a template which represents west-oriented semi-circle.          
 
 	#### __XAML__
-	{{region radial-scale-semicircle-gauge_3}}
+	```XAML
 		<telerik:RadSemicircleWestGauge telerik:StyleManager.Theme="Windows8">
 			<telerik:SemicircleWestScale>
 				<telerik:SemicircleWestScale.Indicators>
@@ -74,6 +74,6 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 				</telerik:SemicircleWestScale.Indicators>
 			</telerik:SemicircleWestScale>
 		</telerik:RadSemicircleWestGauge>
-	{{endregion}}
+	```
 
 	![{{ site.framework_name }} RadGauge Semicircle West Scale](images/SemicircleWGauge.png)

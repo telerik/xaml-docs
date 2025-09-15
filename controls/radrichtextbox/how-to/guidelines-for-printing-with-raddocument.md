@@ -54,7 +54,7 @@ the correct way to create it is as follows:
 
 #### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_0}}
+```C#
 	Table table = new Table();
 	TableRow row1 = new TableRow();
 	TableRow row2 = new TableRow();
@@ -70,7 +70,7 @@ the correct way to create it is as follows:
 	
 	table.Rows.Add(row1);
 	table.Rows.Add(row2);
-{{endregion}}
+```
 
 
 
@@ -87,9 +87,9 @@ Here is how you can set the PreferredWidth of the columns in __Fixed TableLayout
 
 #### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_1}}
+```C#
 	cell.PreferredWidth = new TableWidthUnit(TableWidthUnitType.Fixed, width);
-{{endregion}}
+```
 
 
 
@@ -103,9 +103,9 @@ Customization of the __TableCells__ is possible with regard to their Padding. Th
 
 #### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_2}}
+```C#
 	TableCell cell11 = new TableCell() { Padding = new Padding(20) };
-{{endregion}}
+```
 
 
 
@@ -114,7 +114,7 @@ TableCells are BlockContainers like Sections. That is why it is possible to embe
 
 #### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_3}}
+```C#
 	private void AddContentToCell(TableCell cell)
 	{
 	    Paragraph paragraph1 = new Paragraph();
@@ -125,7 +125,7 @@ TableCells are BlockContainers like Sections. That is why it is possible to embe
 	    cell.Blocks.Add(paragraph1);
 	    cell.Blocks.Add(paragraph2);            
 	}
-{{endregion}}
+```
 
 
 
@@ -139,7 +139,7 @@ Paragraphs can be added to BlockContainers – Sections and TableCells. Here is 
 
 #### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_4}}
+```C#
 	Paragraph paragraph = new Paragraph();
 	Span span = new Span("Text in the first paragraph");
 	paragraph.Inlines.Add(span);
@@ -147,7 +147,7 @@ Paragraphs can be added to BlockContainers – Sections and TableCells. Here is 
 	
 	section.Blocks.Add(paragraph);
 	section.Blocks.Add(emptyParagraph);
-{{endregion}}
+```
 
 
 

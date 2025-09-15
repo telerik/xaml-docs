@@ -54,7 +54,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 
 #### __C#__
 
-{{region radrichtextbox-features-document-elements-bookmarks_0}}
+```C#
 	private void ReplaceContentOfBookmark(string bookmarkName)
 	{
 	    BookmarkRangeStart bookmark = this.radRichTextBox.Document.GetBookmarkByName(bookmarkName);
@@ -62,7 +62,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 	    this.radRichTextBox.Delete(false);
 	    this.radRichTextBox.Insert(bookmarksToContent[bookmarkName]);
 	}
-{{endregion}}
+```
 
 
 
@@ -70,7 +70,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 
 #### __C#__
 
-{{region radrichtextbox-features-document-elements-bookmarks_1}}
+```C#
 	private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)
 	{
 	    BookmarkRangeStart[] bookmarks = this.radRichTextBox.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();
@@ -91,7 +91,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 	        radRichTextBox.Insert(bookmarksToContent[item.Name]);
 	    }
 	}
-{{endregion}}
+```
 
 
 

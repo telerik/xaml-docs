@@ -319,23 +319,23 @@ The colors ending with Low- and High- Color set the respective gradient stop col
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-crystal-theme-0}}
+__Setting palette colors__
+```C#
 	CrystalPalette.Palette.AccentPressedColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Theme Variation
 
 You can switch between the color palettes by calling the `LoadPreset` method as shown below:
 
-#### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-crystal-theme-1}}	
+__Changing the color variation of the theme__
+```C#	
 	//default color variation
 	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Light);  
 
 	//dark color variation
 	CrystalPalette.LoadPreset(CrystalPalette.ColorVariation.Dark);
-{{endregion}}
+```
 
 >important The `Dark` variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
 
@@ -349,23 +349,23 @@ The default font used in the theme is [Roboto](https://fonts.google.com/specimen
 
 >important For complex scenarios we strongly recommend setting the FontSize properties only __before the application is initialized__. 
 
-#### __[C#] Default FontSize__
-{{region cs-styling-appearance-crystal-theme-2}}
+__Default FontSize__
+```C#
 	CrystalPalette.Palette.FontSizeXS = 11;
 	CrystalPalette.Palette.FontSizeS = 12;
 	CrystalPalette.Palette.FontSize = 13;
 	CrystalPalette.Palette.FontSizeL = 14;
 	CrystalPalette.Palette.FontSizeXL = 15;
-{{endregion}}
+```
 
-#### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-crystal-theme-3}}
+__Changing the theme's FontSize and FontFamily__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		CrystalPalette.Palette.FontSize = 16;
 		CrystalPalette.Palette.FontFamily = new FontFamily("Calibri Italic");
 	}
-{{endregion}}
+```
 
 __Setting FontSize and FontFamily__
 
@@ -381,10 +381,10 @@ The `Crystal` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-s
 
 The `Crystal` theme exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the `CornerRadius` value is __5__.
 
-#### __[C#] Changing the default corner radius__
-{{region cs-styling-appearance-crystal-theme-4}}
+__Changing the default corner radius__
+```C#
 	CrystalPalette.Palette.CornerRadius = new CornerRadius(0); 	
-{{endregion}}
+```
 
 __Apperance of a RadButton control after changing the default corner radius__
 
@@ -403,20 +403,20 @@ The `MaterialAssist` static class comes from the Material theme and it is reused
 * `ShadowDepth`&mdash;Enum property that indicates the depth of the shadow effect over the control. There are 5 values that can be selected.
 * `IsShadowDisabled`&mdash;The property is used to control the visibility of the shadow effect.
 
-#### __[XAML] Declare the namespace for the helper components__
-{{region xaml-styling-appearance-crystal-theme-0}}
+__Declare the namespace for the helper components__
+```XAML
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
 	xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
-#### __[XAML] Set RadToggleButton's visual appearance through the visual helpers__
-{{region xaml-styling-appearance-crystal-theme-1}}
+__Set RadToggleButton's visual appearance through the visual helpers__
+```XAML
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
                                helpers:ThemeHelper.MouseOverBrush="{telerik:CrystalResource ResourceKey=AccentMouseOverBrush}"
                                helpers:ThemeHelper.PressedBrush="{telerik:CrystalResource ResourceKey=AccentPressedBrush}"
                                helpers:ThemeHelper.CheckedBrush="{telerik:CrystalResource ResourceKey=ValidationBrush}"/>
-{{endregion}}
+```
 
 __Appearance of the RadToggleButton in the different states__
 
@@ -426,10 +426,10 @@ __Appearance of the RadToggleButton in the different states__
 
 In accordance to the MacOS design, by default the minimize, maximize, restore and close buttons of the RadWindow controls are displayed on the left of the window's title in the Crystal theme. This can be easily modified via the `WindowButtonsAlignment` property of the Crystal palette.
 
-#### __[C#] Changing the WindowButtonsAlignment__
-{{region cs-styling-appearance-crystal-theme-5}}
+__Changing the WindowButtonsAlignment__
+```C#
 	CrystalPalette.Palette.WindowButtonsAlignment = ButtonsAlignment.Right; 	
-{{endregion}}
+```
 
 __Appearance of the RadWindow with the different alignments__
 
@@ -449,33 +449,31 @@ __ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__
 
 ![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/crystal-light-scrollbarsmode.gif)
 
-#### __[C#] Setting the ScrollBarsMode property of the palette to Compact__
-{{region cs-styling-appearance-crystal-theme-6}}	
+__Setting the ScrollBarsMode property of the palette to Compact__
+```C#	
 	CrystalPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact;
-{{endregion}}
+```
 
 ## Changing Opacity 
 
 If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the CrystalPalette. The default values are __0.35__ and __0.55__ respectively. 
 
-#### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-crystal-theme-7}}
+__Changing the opacity__		
+```C#
 	CrystalPalette.Palette.DisabledOpacity = 0.5;
 	CrystalPalette.Palette.ReadOnlyOpacity = 0.5;
-{{endregion}}
-	
-#### __[VB.NET] Changing the opacity__		
-{{region vb-styling-appearance-material-theme-0}}
+```
+```VB.NET
 	CrystalPalette.Palette.DisabledOpacity = 0.5
 	CrystalPalette.Palette.ReadOnlyOpacity = 0.5
-{{endregion}}
+```
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `CrystalPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-crystal-theme-2}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -483,7 +481,7 @@ When modifying fonts, colors, or other resources from the `CrystalPalette` and `
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources> 
-{{endregion}}
+```
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

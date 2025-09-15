@@ -22,9 +22,9 @@ Here is an example of setting these properties in XAML:
 
 #### __XAML__
 
-{{region xaml-raddatetimepicker-features-date-items_0}}
+```XAML
 	<telerik:RadDateTimePicker DisplayDateStart="1/1/2010" DisplayDateEnd="11/15/2010"/>
-{{endregion}}
+```
 
 Here is the result:
 
@@ -44,9 +44,9 @@ For example:
 
 #### __XAML__
 
-{{region xaml-raddatetimepicker-features-date-items_1}}
+```XAML
 	<telerik:RadDateTimePicker DisplayDate="4/1/2010"/>
-{{endregion}}
+```
 
 The result of this example will be that when you click on the __RadDateTimePicker's__ drop-down button for the first time in the calendar you will not see the current month and year but instead the month and year defined in the __DisplayDate__ property.
 

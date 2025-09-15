@@ -26,7 +26,7 @@ Now you are able to define more than one chart area inside the __RadChart__ cont
 
 #### __XAML__
 
-{{region xaml-radchart-features-drill-down-in-multiple-chart-areas_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
 	    <Grid>
 	        <Grid.RowDefinitions>
@@ -39,7 +39,7 @@ Now you are able to define more than one chart area inside the __RadChart__ cont
 	                           NoDataString="Select a company to see details by model." />
 	    </Grid>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -49,7 +49,7 @@ The definition of the __ChartHierarchicalViewDescriptor__ objects is the same as
 
 #### __XAML__
 
-{{region xaml-radchart-features-drill-down-in-multiple-chart-areas_1}}
+```XAML
 	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
 	    <Grid>
 	        <Grid.RowDefinitions>
@@ -90,7 +90,7 @@ The definition of the __ChartHierarchicalViewDescriptor__ objects is the same as
 	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

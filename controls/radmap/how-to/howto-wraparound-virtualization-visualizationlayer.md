@@ -20,8 +20,8 @@ In WrapAround mode, this portion will have Longitude value exceeding the valid g
 
 In the next part of this article, we will display points of interest (POIs) over the cities (Berlin, London, Amsterdam, Madrid, Barcelona, Rome) in the map in MVVM scenario and set the virtualization when the wraparound mode of the map is on. In __Example 1__ we will specify the business object which will hold the Longitude, Latitude values, the name of the cities and their location.
 
-#### __[C#] Example 1:  Business object__
-{{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_0}}
+__Example 1:  Business object__
+```C#
 	public class CityLocation : ViewModelBase
     {
         private double \_lattitude;
@@ -86,12 +86,12 @@ In the next part of this article, we will display points of interest (POIs) over
             }
         }
     }
-{{endregion}}
+```
 
 Then you can create custom class which implement the __IMapItemsVirtualizationSource__ interface. In the handler of the __MapItemRequest()__ event you can get the __LocationRect__ region from the arguments and normalize the region by using GetCoercedLocation method of RadMap. Then you need to calculate which cities should be displayed in the normalized region.
 
-#### __[C#] Example 2: Custom class__
-{{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_1}}
+__Example 2: Custom class__
+```C#
 	public class VirtualizationSource : IMapItemsVirtualizationSource
     {
         private bool isFirstRequest = true;
@@ -126,12 +126,12 @@ Then you can create custom class which implement the __IMapItemsVirtualizationSo
             dataContext.SetCities(list, eventArgs);
         }
     }
-{{endregion}}
+```
 
 In the ViewModel we shift the locations by shifting their longitudes using __SetCities()__ and __TryGetLongitudeMatchInRange()__ methods.
 
-#### __[C#] Example 3: Create view model__
-{{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_2}}
+__Example 3: Create view model__
+```C#
 	public class ExampleViewModel : ViewModelBase
 	{
 		private MapProviderBase mapProvider;
@@ -255,12 +255,12 @@ In the ViewModel we shift the locations by shifting their longitudes using __Set
 			return longitude;
 		}
 	}
-{{endregion}}
+```
 
 Then you can declare the RadMap control in XAML where you can specify custom __DataTemplate__ for the POI and then you can set it to the ItemTemplate property of the __VisualizationLayer__.
 
-#### __[XAML] Example 4: Declare RadMap in XAML__
-{{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_3}}
+__Example 4: Declare RadMap in XAML__
+```XAML
     <Window.Resources>
 		<local:ExampleViewModel x:Key="ViewModel" />
 		<DataTemplate x:Key="pointTemplate">
@@ -328,18 +328,18 @@ Then you can declare the RadMap control in XAML where you can specify custom __D
             </telerik:VisualizationLayer>
         </telerik:RadMap>
     </Grid>
-{{endregion}}
+```
 
 The final step is to set the custom __VirtualizationSource__ class to the __VirtualizationSource__ property of the __VisualizationLayer__.  You can check __Example 5__.
 
-#### __[C#] Example 5: Set the custom VirtualizationSource class to the VirtualizationSource property__
-{{region c#-radmap-radmap-howto-wraparound-virtualization-visualizationlayer_4}}
+__Example 5: Set the custom VirtualizationSource class to the VirtualizationSource property__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.visualizationLayer.VirtualizationSource = new VirtualizationSource(this.LayoutRoot.DataContext as ExampleViewModel);
 	}
-{{endregion}}
+```
 
 Similar and more complex example you can find in our [GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Map/WPF/WrapAroundAndVirtualization).
 

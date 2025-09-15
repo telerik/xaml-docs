@@ -28,9 +28,9 @@ Each worksheet has a property called __RenderNameConverter__, which provides a m
 __Example 1__ shows a simple implementation for the converter class used for creating the snapshots above.
         
 
-#### __[C#] Example 1: Create a custom name converter__
+__Example 1: Create a custom name converter__
 
-{{region radspreadsheet-howto-customize-row-column-headers_0}}
+```C#
 	    public class CustomNameConverter : HeaderNameRenderingConverterBase
 	    {
 	        protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
@@ -44,18 +44,18 @@ __Example 1__ shows a simple implementation for the converter class used for cre
 	            return base.ConvertColumnIndexToNameOverride(context, columnIndex);
 	        }
 	    }
-{{endregion}}
+```
 
 
 
 After implementing your custom name converter you need to instantiate it and assign it to the worksheet __RenderNameConverter__ property. __Example 2__ sets a new instance of the CustomNameConverter created in __Example 1__ to a __RadSpreadsheet__'s worksheet.
         
 
-#### __[C#] Example 2: Instantiate and assign a custom converter__
+__Example 2: Instantiate and assign a custom converter__
 
-{{region radspreadsheet-howto-customize-row-column-headers_1}}
+```C#
 	            this.radSpreadsheet.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
-	{{endregion}}
+	```
 
 
 

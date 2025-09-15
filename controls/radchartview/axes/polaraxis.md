@@ -22,7 +22,7 @@ Below is an example of RadPolarChart that demonstrates the properties of its pol
 
 #### __XAML__
 
-{{region radchart-axes-polaraxis_0}}
+```XAML
 	<telerikChart:RadPolarChart>
 	    <telerikChart:RadPolarChart.Grid>
 	        <telerikChart:PolarChartGrid/>
@@ -38,7 +38,7 @@ Below is an example of RadPolarChart that demonstrates the properties of its pol
 	        <telerikChart:NumericRadialAxis/>
 	    </telerikChart:RadPolarChart.RadialAxis>
 	</telerikChart:RadPolarChart>
-	{{endregion}}
+	```
 
 
 

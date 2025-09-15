@@ -33,8 +33,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 Defining the control requires setting several vital properties. Those are __PeriodStart__, __PeriodEnd__ and __Intervals__.
 
-#### __[XAML] Example 1: Adding RadTimeBar in XAML__
-{{region radtimebar-getting-started-0}}
+__Example 1: Adding RadTimeBar in XAML__
+```XAML
 	<telerik:RadTimeBar PeriodStart="1-Jan-2019 12:00:00 AM" 
 						PeriodEnd="31-Dec-2019 11:59:59 PM">
 		<telerik:RadTimeBar.Intervals>
@@ -44,10 +44,10 @@ Defining the control requires setting several vital properties. Those are __Peri
 			<telerik:DayInterval />
 		</telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Adding RadTimeBar in code__
-{{region radtimebar-getting-started-1}}	
+__Example 2: Adding RadTimeBar in code__
+```C#	
 	RadTimeBar timeBar = new RadTimeBar();
 	timeBar.BeginInit();
 	timeBar.PeriodStart =  new DateTime(2019, 1, 1, 12, 0, 0);
@@ -57,10 +57,8 @@ Defining the control requires setting several vital properties. Those are __Peri
 	timeBar.Intervals.Add(new WeekInterval());
 	timeBar.Intervals.Add(new DayInterval());
 	timeBar.EndInit();
-{{endregion}}
-
-#### __[VB.NET] Example 2: Adding RadTimeBar in code__
-{{region radtimebar-getting-started-2}}	
+```
+```VB.NET	
 	Dim timeBar As RadTimeBar = New RadTimeBar()
     timeBar.BeginInit()
     timeBar.PeriodStart = New DateTime(2019, 1, 1, 12, 0, 0)
@@ -70,7 +68,7 @@ Defining the control requires setting several vital properties. Those are __Peri
     timeBar.Intervals.Add(New WeekInterval())
     timeBar.Intervals.Add(New DayInterval())
     timeBar.EndInit()
-{{endregion}}
+```
 
 #### __Figure 1: RadTimeBar__
 ![{{ site.framework_name }} RadTimeBar RadTimeBar](images/radtimebar-getting-started-0.png)
@@ -79,8 +77,8 @@ Defining the control requires setting several vital properties. Those are __Peri
 
 The visible period defines what portion of the period to be brought into the viewport. This can be also looked as zooming. The visible period is defined via the __VisiblePeriodStart__ and __VisiblePeriodEnd__ properties.
 
-#### __[XAML] Example 3: Setting the visible period in XAML__
-{{region radtimebar-getting-started-3}}
+__Example 3: Setting the visible period in XAML__
+```XAML
 	<telerik:RadTimeBar PeriodStart="1-Jan-2019 12:00:00 AM" 
 						PeriodEnd="31-Dec-2019 11:59:59 PM"
 						
@@ -93,10 +91,10 @@ The visible period defines what portion of the period to be brought into the vie
 			<telerik:DayInterval />
 		</telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting the visible period in code__
-{{region radtimebar-getting-started-4}}
+__Example 4: Setting the visible period in code__
+```C#
 	RadTimeBar timeBar = new RadTimeBar();
 	timeBar.BeginInit();
 	timeBar.PeriodStart = new DateTime(2019, 1, 1, 12, 0, 0);
@@ -108,10 +106,8 @@ The visible period defines what portion of the period to be brought into the vie
 	timeBar.Intervals.Add(new WeekInterval());
 	timeBar.Intervals.Add(new DayInterval());
 	timeBar.EndInit();
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting the visible period in code__
-{{region radtimebar-getting-started-5}}
+```
+```VB.NET
 	Dim timeBar As RadTimeBar = New RadTimeBar()
     timeBar.BeginInit()
     timeBar.PeriodStart = New DateTime(2019, 1, 1, 12, 0, 0)
@@ -123,7 +119,7 @@ The visible period defines what portion of the period to be brought into the vie
     timeBar.Intervals.Add(New WeekInterval())
     timeBar.Intervals.Add(New DayInterval())
     timeBar.EndInit()
-{{endregion}}
+```
 
 #### __Figure 2: RadTimeBar with visible period set__
 ![{{ site.framework_name }} RadTimeBar RadTimeBar with visible period set](images/radtimebar-getting-started-1.png)
@@ -132,8 +128,8 @@ The visible period defines what portion of the period to be brought into the vie
 
 To select an interval you can set the RadTimeBar's __SelectionStart__ and __SelectionEnd__ properties.
 
-#### __[XAML] Example 5: Setting the selection in XAML__
-{{region radtimebar-getting-started-6}}
+__Example 5: Setting the selection in XAML__
+```XAML
 	<telerik:RadTimeBar PeriodStart="1-Jan-2019 12:00:00 AM" 
 						PeriodEnd="31-Dec-2019 11:59:59 PM"						
 						VisiblePeriodStart="14-March-2019 12:00:00 AM" 
@@ -147,10 +143,10 @@ To select an interval you can set the RadTimeBar's __SelectionStart__ and __Sele
 			<telerik:DayInterval />
 		</telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-{{endregion}}
+```
 
-#### __[C#] Example 6: Setting the selection in code__
-{{region radtimebar-getting-started-7}}
+__Example 6: Setting the selection in code__
+```C#
 	RadTimeBar timeBar = new RadTimeBar();
 	timeBar.BeginInit();
 	timeBar.PeriodStart = new DateTime(2019, 1, 1, 12, 0, 0);
@@ -164,10 +160,8 @@ To select an interval you can set the RadTimeBar's __SelectionStart__ and __Sele
 	timeBar.Intervals.Add(new WeekInterval());
 	timeBar.Intervals.Add(new DayInterval());
 	timeBar.EndInit();
-{{endregion}}
-
-#### __[VB.NET] Example 6: Setting the selection in code__
-{{region radtimebar-getting-started-8}}
+```
+```VB.NET
 	Dim timeBar As RadTimeBar = New RadTimeBar()
     timeBar.BeginInit()
     timeBar.PeriodStart = New DateTime(2019, 1, 1, 12, 0, 0)
@@ -181,7 +175,7 @@ To select an interval you can set the RadTimeBar's __SelectionStart__ and __Sele
     timeBar.Intervals.Add(New WeekInterval())
     timeBar.Intervals.Add(New DayInterval())
     timeBar.EndInit()
-{{endregion}}
+```
 
 #### __Figure 3: RadTimeBar with selection defined__
 ![{{ site.framework_name }} RadTimeBar RadTimeBar with selection defined](images/radtimebar-getting-started-2.png)
@@ -192,8 +186,8 @@ The RadTimeBar component allows you to host another control in it, thus enchanci
 
 The following example demonstrates how to populate a simple RadLinearSparkline with data and host it in RadTimeBar. Read more about the RadSparkline controls in its [help documentation]({%slug radsparkline_overview%}).
 
-#### __[XAML] Example 7: Hosting RadSparkline in RadTimeBar in XAML__
-{{region radtimebar-getting-started-9}}
+__Example 7: Hosting RadSparkline in RadTimeBar in XAML__
+```XAML
 	<telerik:RadTimeBar PeriodStart="1-Jan-2019 12:00:00 AM" 
 						PeriodEnd="31-Dec-2019 11:59:59 PM"						
 						VisiblePeriodStart="14-March-2019 12:00:00 AM" 
@@ -210,10 +204,10 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 			<telerik:RadLinearSparkline x:Name="sparkline"/>
 		</telerik:RadTimeBar.Content>
 	</telerik:RadTimeBar>
-{{endregion}}
+```
 
-#### __[C#] Example 8: Hosting RadSparkline in RadTimeBar in code__
-{{region radtimebar-getting-started-10}}
+__Example 8: Hosting RadSparkline in RadTimeBar in code__
+```C#
 	this.timeBar = new RadTimeBar();
 	timeBar.BeginInit();
 	timeBar.PeriodStart = new DateTime(2019, 1, 1, 12, 0, 0);
@@ -228,10 +222,8 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 	timeBar.Intervals.Add(new DayInterval());
 	timeBar.EndInit();            
 	timeBar.Content = new RadLinearSparkline();
-{{endregion}}
-
-#### __[VB.NET] Example 8: Hosting RadSparkline in RadTimeBar in code__
-{{region radtimebar-getting-started-11}}	
+```
+```VB.NET	
 	Dim timeBar As RadTimeBar = New RadTimeBar()
 	timeBar.BeginInit()
 	timeBar.PeriodStart = New DateTime(2019, 1, 1, 12, 0, 0)
@@ -246,10 +238,10 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 	timeBar.Intervals.Add(New DayInterval())
 	timeBar.EndInit()
 	timeBar.Content = New RadLinearSparkline()
-{{endregion}}
+```
 
-#### __[C#] Example 9: Setting up the ItemsSource of the sparkline control__
-{{region radtimebar-getting-started-12}}
+__Example 9: Setting up the ItemsSource of the sparkline control__
+```C#
 	private static Random r = new Random();
 	
 	// You can decide where to use this method. 
@@ -265,10 +257,8 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 		}
 		this.sparkline.ItemsSource = data;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 9: Setting up the ItemsSource of the sparkline control__
-{{region radtimebar-getting-started-13}}
+```
+```VB.NET
 	Private Shared r As Random = New Random()
 	' You can decide where to use this method. 
 	' For example, you can call it after the InitializeComponent() call of the view where the control is used (ex: MainWindow.xaml.cs).
@@ -285,7 +275,7 @@ The following example demonstrates how to populate a simple RadLinearSparkline w
 
         Me.sparkline.ItemsSource = data
     End Sub
-{{endregion}}
+```
 
 #### __Figure 4: RadTimeBar and RadSparkline__
 ![{{ site.framework_name }} RadTimeBar RadTimeBar and RadSparkline](images/radtimebar-getting-started-3.png)
@@ -313,8 +303,8 @@ To change the theme, you can follow the steps below:
 
 __Example 10__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 10: Merge the ResourceDictionaries__  
-{{region radtimebar-getting-started_7}}
+__Example 10: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -324,7 +314,7 @@ __Example 10__ demonstrates how to merge the ResourceDictionaries so that they a
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

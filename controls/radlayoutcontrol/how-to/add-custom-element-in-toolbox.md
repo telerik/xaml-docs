@@ -17,13 +17,13 @@ This article demonstrates how to add a custom UIElement in the NewItems section 
 
 To add a new element in the toolbox you can use the __NewItems__ collection of LayoutControlToolBoxView and insert a new [LayoutControlHierarchicalNodeProxy]({%slug radlayoutcontrol-features-toolbox-toolboxview%}#layoutcontrolhierarchicalnodeproxy) object. The proxy has several properties that describe the toolbox item - header, element type and element instance - which will be used when the item is dropped in the layout control. __Example 1 and 2__ show how to set up the proxy and add it in the NewItems collection.
 
-#### __[XAML] Example 1: Example LayoutControlToolBoxView definition__
-{{region radlayoutcontrol-how-to-add-custom-element-in-toolbox-0}}
+__Example 1: Example LayoutControlToolBoxView definition__
+```XAML
 	<telerik:LayoutControlToolBoxView x:Name="toolBoxView" LayoutControl="{Binding ElementName=layoutControl}">
-{{endregion}}
+```
 	
-#### __[C#] Example 2: Creat item proxies and add them in the NewItems collection__
-{{region radlayoutcontrol-how-to-add-custom-element-in-toolbox-1}}
+__Example 2: Creat item proxies and add them in the NewItems collection__
+```C#
 	LayoutControlHierarchicalNodeProxy buttonToolBoxProxy = new LayoutControlHierarchicalNodeProxy();
 	buttonToolBoxProxy.Header = "Button";
 	buttonToolBoxProxy.OriginalItemType = typeof(Button);
@@ -36,7 +36,7 @@ To add a new element in the toolbox you can use the __NewItems__ collection of L
 
 	this.toolBoxView.NewItems.Add(buttonToolBoxProxy);
 	this.toolBoxView.NewItems.Add(textBoxToolBoxProxy);
-{{endregion}}
+```
 	
 In __Example 2__ we add two additional proxies in the collection and they represent a TextBox and a Button which can be dragged and dropped from the toolbox to the layout control.
 

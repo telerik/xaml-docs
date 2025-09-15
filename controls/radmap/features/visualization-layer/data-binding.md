@@ -28,8 +28,8 @@ When using a custom visual in the `ItemTemplate` of the layer, there are several
 
 In order to provide the needed data to the visualization layer, you have to create a collection of business objects, which represent the desired data. The following example shows how to do this.        
 
-#### __[C#] Defining the item model__
-{{region radmap_visualization_layer_data_binding_0}}
+__Defining the item model__
+```C#
 	public class MapItem : INotifyPropertyChanged, INotifyLocationChanged
 	{
 		private double baseZoomLevel = double.NaN;
@@ -128,10 +128,8 @@ In order to provide the needed data to the visualization layer, you have to crea
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Defining the item model__
-{{region radmap_visualization_layer_data_binding_0}}
+```
+```VB.NET
 	Public Class MapItem
 		Implements INotifyPropertyChanged, INotifyLocationChanged
 		Private m_baseZoomLevel As Double = Double.NaN
@@ -210,12 +208,12 @@ In order to provide the needed data to the visualization layer, you have to crea
 			RaiseEvent LocationChanged(Me, New LocationChangedEventArgs(oldLocation, newLocation))
 		End Sub
 	End Class
-{{endregion}}
+```
 
 >important You can notice that the business class implements the `INotifyLocationChanged` interface. This is necessary in order to properly support runtime changes of the `Location` property.
 
-#### __[XAML] Defining the ItemTemplate and binding the attached properties__
-{{region radmap_visualization_layer_data_binding_0}}
+__Defining the ItemTemplate and binding the attached properties__
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
 	                Center="42.6957539183824, 23.3327663758679">
@@ -246,10 +244,10 @@ In order to provide the needed data to the visualization layer, you have to crea
 			</telerik:VisualizationLayer.ItemTemplate>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
-#### __[C#] Setting up the items source__
-{{region radmap_visualization_layer_data_binding_1}}
+__Setting up the items source__
+```C#
 	public partial class Example: Window
 	{
 	    public Example()
@@ -293,10 +291,8 @@ In order to provide the needed data to the visualization layer, you have to crea
 			return data;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Setting up the items source__
-{{region radmap_visualization_layer_data_binding_1}}
+```
+```VB.NET
 	Public Partial Class Example
 		Inherits Window
 		Public Sub New()
@@ -339,4 +335,4 @@ In order to provide the needed data to the visualization layer, you have to crea
 			Return data
 		End Function
 	End Class
-{{endregion}}
+```

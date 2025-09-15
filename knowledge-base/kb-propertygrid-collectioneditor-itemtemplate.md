@@ -27,8 +27,8 @@ How to set a generic ItemTemplate property for all CollectionEditorPicker contro
 
 First, we can create a custom attached property which will be set to the __CollectionEditorPicker__ control. Inside the property changed method, we can subscribe to the Loaded event of the control and sets its ItemTemplate property.
 
-#### __[C#] Example 1: Create Models__
-{{region csharp-kb-propertygrid-collectioneditor-itemtemplate-0}}
+__Example 1: Create Models__
+```C#
 	public class MyCollectionEditorPickerBehavior
 	{
 		public static bool GetIsEnabled(DependencyObject obj)
@@ -54,13 +54,13 @@ First, we can create a custom attached property which will be set to the __Colle
 			};
 			}
 	}
-{{endregion}} 
+``` 
 
 The next step is to set the attached property to the CollectionEditorPicker. To do that we can subscribe to the __AutoGeneratingPropertyDefinition__ event of the RadPropertyGrid. In its event handler, we can [create DataTemplate]({%slug using-datatemplate-in-code%}) in code and assign it to the __e.PropertyDefinition.EditorTemplate__ from the event arguments. The DataTemplate will include CollectionEditorPicker with the mentioned above custom attached property.
 
 
-#### __[C#] Example 2:__
-{{region csharp-kb-propertygrid-collectioneditor-itemtemplate-2}}		
+__Example 2:__
+```C#		
 	private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 			// Your custom collection properties
@@ -83,7 +83,7 @@ The next step is to set the attached property to the CollectionEditorPicker. To 
 			e.PropertyDefinition.EditorTemplate = template;
 		}
 	}
-{{endregion}} 
+``` 
  
 
 ## See Also

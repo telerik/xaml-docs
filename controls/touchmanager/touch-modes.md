@@ -20,20 +20,18 @@ __TouchMode__ is an enumeration that contains the following values:
 * __Locked__: The element is visible for touch input and it will capture the touch device on touch down. All touch events will be marked as handled, thus preventing event routing.
 * __None__: The element will suppress all touch events. No touch events will be raised for touch input within the boundaries of the element.
 
-#### __[XAML] Example 1: Setting TouchMode in XAML__
-{{region touchmanager-touch-modes-0}}
+__Example 1: Setting TouchMode in XAML__
+```XAML
 	<Border x:Name="element" telerik:TouchManager.TouchMode="HitTestVisible" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting TouchMode in code__
-{{region touchmanager-touch-modes-1}}
+__Example 2: Setting TouchMode in code__
+```C#
 	TouchManager.SetTouchMode(this.element, TouchMode.HitTestVisible);
-{{endregion}}
-	
-#### __[VB.NET] Example 2: Setting TouchMode in code__
-{{region touchmanager-touch-modes-2}}
+```
+```VB.NET
 	TouchManager.SetTouchMode(Me.element, TouchMode.HitTestVisible)
-{{endregion}}
+```
 
 ## TouchMode examples
 

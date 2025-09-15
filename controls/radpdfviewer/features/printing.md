@@ -24,14 +24,14 @@ The button shown in the above picture is actually bound to the __PrintPdfDocumen
 
 #### __XAML__
 
-{{region radpdfviewer-printing_0}}
+```XAML
 	      <telerik:RadButton Command="{Binding PrintCommandDescriptor.Command}" Visibility="{Binding PrintCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
 	        <ToolTipService.ToolTip>
 	          <TextBlock Text="Print" />
 	        </ToolTipService.ToolTip>
 	        <Image Source="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/printer.png" Stretch="None" />
 	      </telerik:RadButton>
-{{endregion}}
+```
 
 
 >tipMore about command descriptors you can find [here]({%slug radpdfviewer-command-descriptors%}).
@@ -59,7 +59,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 #### __C#__
 
-{{region radpdfviewer-printing_0}}
+```C#
 	    PrintSettings settings = new PrintSettings()
 	    {
 	        DocumentName = "My document",
@@ -69,7 +69,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 	    };
 
 	    this.pdfViewer.Print(settings);
-{{endregion}}
+```
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
@@ -83,7 +83,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 #### __C#__
 
-{{region radpdfviewer-printing_1}}
+```C#
 	    PrintSettings settings = new PrintSettings()
 	    {
 	        DocumentName = "My document",
@@ -92,7 +92,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 	    };
 
 	    this.pdfViewer.Print(settings);
-{{endregion}}
+```
 
 RadPdfViewer also provides a __Print(PrintDialog printDialog, PrintSettings settings)__ method. It allows you to pass an already initialized PrintDialog instance to the method and print the PDF document shown in the viewer. This means that you have control over the way the document is printed and can, for example, print it silently to a printer other than the default one.
 

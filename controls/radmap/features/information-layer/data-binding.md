@@ -41,7 +41,7 @@ In order to provide the needed data to your __RadMap__ control, you have to crea
 The next step is to define the __ItemTemplate__ for the information layer and set the desired bindings in it. In the current example, the marker will be represented by an ellipse marked as a Hot Spot.
 
 #### __XAML__
-{{region radmap-features-data-binding_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -71,14 +71,14 @@ The next step is to define the __ItemTemplate__ for the information layer and se
 	        </telerik:InformationLayer.ItemTemplate>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 The last thing to do is to set the __ItemsSource__ property of the __InformationLayer__. This has to be done after the initialization of the map provider, otherwise the marker elements will appear before the map has loaded. For this purpose you have to use the __InitializationCompleted__ event, which get raised after the initialization of the map provider completes.
 
 >tip The code for the __GetMapData()__ method can be found at the [end of the topic](#sample_code).
 
 #### __C#__
-{{region radmap-features-data-binding_1}}
+```C#
 	public DataBindingSample()
 	{
 	    InitializeComponent();
@@ -88,10 +88,10 @@ The last thing to do is to set the __ItemsSource__ property of the __Information
 	{
 	    this.informationLayer.ItemsSource = this.GetMapData();
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap-features-data-binding_2}}
+```VB.NET
 	Public Sub New()
 	 InitializeComponent()
 	 Me.radMap.InitializeCompleted += radMap_InitializeCompleted
@@ -99,7 +99,7 @@ The last thing to do is to set the __ItemsSource__ property of the __Information
 	Private Sub radMap_InitializeCompleted(sender As Object, e As EventArgs)
 	 Me.informationLayer.ItemsSource = Me.GetMapData()
 	End Sub
-{{endregion}}
+```
 
 As a result you should be able to see the markers on your __RadMap__.
 
@@ -118,7 +118,7 @@ The code for the business object and for the sample data can be found at the [en
 To learn how and when to set the __ItemsSource__ of the __InformationLayer__, please read [the previous section](#using-data-binding-in-the-datatemplate).
 
 #### __XAML__
-{{region radmap-features-data-binding_3}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -154,12 +154,12 @@ To learn how and when to set the __ItemsSource__ of the __InformationLayer__, pl
 	        </telerik:InformationLayer.ItemTemplate>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Finally here is the code for the business object and the __GetMapData()__ method.
 
 #### __C#__
-{{region radmap-features-data-binding_4}}
+```C#
 	public class MapItem
 	{
 	    public MapItem( string caption, Location location, double baseZoomLevel, ZoomRange zoomRange )
@@ -190,10 +190,10 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap-features-data-binding_5}}
+```VB.NET
 	Public Class MapItem
 	 Public Sub New(caption As String, location As Location, baseZoomLevel As Double, zoomRange As ZoomRange)
 	  Me.Caption = caption
@@ -238,10 +238,10 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	 End Property
 	 Private m_ZoomRange As ZoomRange
 	End Class
-{{endregion}}
+```
 
 #### __C#__
-{{region radmap-features-data-binding_6}}
+```C#
 	private ObservableCollection<MapItem> GetMapData()
 	{
 	    ObservableCollection<MapItem> data = new ObservableCollection<MapItem>();
@@ -251,10 +251,10 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	    data.Add( new MapItem( "Varna", new Location( 43.2073941930888, 27.9275176988258 ), 5, new ZoomRange( 5, 12 ) ) );
 	    return data;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap-features-data-binding_7}}
+```VB.NET
 	Private Function GetMapData() As ObservableCollection(Of MapItem)
 	 Dim data As New ObservableCollection(Of MapItem)()
 	 data.Add(New MapItem("Sofia", New Location(42.6957539183824, 23.3327663758679), 5, New ZoomRange(5, 12)))
@@ -263,7 +263,7 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	 data.Add(New MapItem("Varna", New Location(43.2073941930888, 27.9275176988258), 5, New ZoomRange(5, 12)))
 	 Return data
 	End Function
-{{endregion}}
+```
 
 ## See Also
  * [Getting Started]({%slug radmap-getting-started%})

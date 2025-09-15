@@ -51,9 +51,9 @@ Once you copy the template, you can modify it and apply it either to a single in
 
 To add a rounded red border around the **RadListBox** control, follow the steps above to extract the control template. Then modify the control template as demonstrated in **Example 1** below.
 
-#### __[XAML] Example 1: Adding a border around the RadListBox control__
+__Example 1: Adding a border around the RadListBox control__
 
-{{region xaml-styling-apperance-editing-control-templates_0}}
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -92,7 +92,7 @@ To add a rounded red border around the **RadListBox** control, follow the steps 
 	        </Style>
 	    </ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 #### __Figure 2: RadListBox control with red border__
 
@@ -128,9 +128,9 @@ Another way to extract a control template is to use the **Visual Studio designer
 
 Let's assume you just need to style one specific instance of the control and you have chosen to extract the style with a resource key in the current document. **Example 2** shows the generated XAML code.
 
-#### __[XAML] Example 2: The generated XAML code__
+__Example 2: The generated XAML code__
 
-{{region styling-apperance-editing-control-templates_1}}
+```XAML
 	<UserControl>
 	    <UserControl.Resources>
 	        <Style x:Key="RadListBoxStyle1" TargetType="{x:Type telerik:RadListBox}" BasedOn="{StaticResource RadListBoxStyle}">
@@ -148,7 +148,7 @@ Let's assume you just need to style one specific instance of the control and you
 	        <telerik:RadListBox Style="{StaticResource RadListBoxStyle1}" ItemsSource="{Binding ListBoxItems}" />
 	    </Grid>
 	<UserControl>
-{{endregion}}
+```
 
 ## See Also
 

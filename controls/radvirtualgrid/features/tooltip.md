@@ -12,11 +12,11 @@ position: 11
 
 __RadVirtualGrid__ provides a cell tooltip behavior which can be used to visualize information while hovering a cell. The CellToolTip functionality is disabled by default. To enable it, you need to set the __ShowCellToolTip__ boolean property of the __RadVirtualGrid__.
 
-#### __[XAML] Example 1: Show Cell ToolTip__
+__Example 1: Show Cell ToolTip__
 
-{{region radvirtualgrid-celltooltip-0}}
+```XAML
 	<telerik:RadVirtualGrid ShowCellToolTip="True"/>
-{{endregion}}
+```
 
 ## Setting the CellToolTip while RadVirtualGrid is populated through DataProvider
 
@@ -34,9 +34,9 @@ The following example demonstrates how we can modify the default cell tooltip of
 
 > To get the value of the current hovered cell, you need to call the base.OnCellToolTipNeeded() method. Otherwise, the value property from the event arguments will be null.
 
-#### __[C#] Example 2: Override OnCellToolTipNeeded to provide custom value__
+__Example 2: Override OnCellToolTipNeeded to provide custom value__
 
-{{region radvirtualgrid-celltooltip-1}}
+```C#
 	public class MyDataProvider : DataProvider
 	{
 		public MyDataProvider(IEnumerable source)
@@ -56,7 +56,7 @@ The following example demonstrates how we can modify the default cell tooltip of
 			}
 		}
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadVirtualGrid Custom Cell Tooltip](images/radvirtualgrid-features-celltooltip-customtooltip.PNG)
 
@@ -66,39 +66,39 @@ In this case, while RadVirtualGrid is manually populated, the control provides a
 
 > In order for the __RadVirtualGrid__ to be populated with data, its __InitialRowCount__ and __InitialColumnCount__ properties need to be set.
 
-#### __[XAML] Example 1: Setting the InitialRowCount and InitialColumnCount properties__
-	{{region radvirtualgrid-celltooltip-2}}
+__Example 1: Setting the InitialRowCount and InitialColumnCount properties__
+	```XAML
 		<telerik:RadVirtualGrid x:Name="VirtualGrid"  
 								InitialColumnCount="5"  
 								InitialRowCount="5"/> 
-	{{endregion}}
+	```
 
 The control populates its data through the CellValueNeeded event. In our case, we will show the row/column index of the current hovered cell.
 
-#### __[C#] Example 2: Setting the InitialRowCount and InitialColumnCount properties__
-	{{region radvirtualgrid-celltooltip-3}}
+__Example 2: Setting the InitialRowCount and InitialColumnCount properties__
+	```C#
 		private void virtualGrid_CellValueNeeded(object sender,Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e) 
 		{ 
 			e.Value = String.Format("{0}.{1}", e.RowIndex, e.ColumnIndex); 
 		}  
-	{{endregion}}
+	```
 
 You can set the CellToolTip content with a similar code by subscribing to the __CellToolTipNeeded__ event.
 
-#### __[C#] Example 3: Setting the Value of the ToolTip__
-	{{region radvirtualgrid-celltooltip-4}}
+__Example 3: Setting the Value of the ToolTip__
+	```C#
 		private void virtualGrid_CellToolTipNeeded(object sender,Telerik.Windows.Controls.VirtualGridToolTipEventArgs e) 
 		{ 
 			e.Value = String.Format("ToolTip Row:{0},Col:{1}", e.RowIndex, e.ColumnIndex); 
 		}  
-	{{endregion}}
+	```
 
 ## CellToolTipTemplate
 
 You can customize the CellToolTip through the CellToolTipTemplate property of the RadVirtualGrid.
 
-#### __[C#] Example 4: Setting CellTooltipTemplate property to custom DataTemplate__
-	{{region radvirtualgrid-celltooltip-5}}
+__Example 4: Setting CellTooltipTemplate property to custom DataTemplate__
+	```C#
 		<Window.Resources>
 			<DataTemplate x:Key="CustomToolTipTemplate">
 				<TextBlock Text="{Binding }" Foreground="Red"/>
@@ -111,7 +111,7 @@ You can customize the CellToolTip through the CellToolTipTemplate property of th
 						CellToolTipTemplate="{StaticResource CustomToolTipTemplate}" 
 						ShowCellToolTip="True" />   
 		</Grid>
-	{{endregion}}
+	```
 
 ![{{ site.framework_name }} RadVirtualGrid Custom Cell Tooltip Template](images/radvirtualgrid-features-celltooltip-customtooltiptemplate.PNG)	
 	

@@ -27,8 +27,8 @@ To place a custom icon as a marker on a clicked location in RadMap, you can subs
 
 To customize the marker visual, you can use the `ItemTemplate` of the `VisualizationLayer`.
 
-#### __[XAML] Defining the RadMap element__
-{{region kb-map-add-icon-on-map-click-0}}
+__Defining the RadMap element__
+```XAML
 	<telerik:RadMap x:Name="radMap"
 					MapMouseClick="RadMap_MapMouseClick"
 					MouseClickMode="None">
@@ -46,14 +46,14 @@ To customize the marker visual, you can use the `ItemTemplate` of the `Visualiza
 			</telerik:VisualizationLayer.ItemTemplate>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 
-#### __[C#] Implementing the click logic__
-{{region kb-map-add-icon-on-map-click-1}}
+__Implementing the click logic__
+```C#
 	private void RadMap_MapMouseClick(object sender, Telerik.Windows.Controls.Map.MapMouseRoutedEventArgs eventArgs)
 	{
 		this.layer.Items.Clear();
 		this.layer.Items.Add(eventArgs.Location);
 	}
-{{endregion}}
+```

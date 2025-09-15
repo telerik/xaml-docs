@@ -32,7 +32,7 @@ We need to generate a brush value from the string stored in the database. What w
 
 #### __C#__
 
-{{region radscheduleview-populating-with-data-binding-to-db-models_0}}
+```C#
 		internal static class SolidColorBrushHelper
 		{
 			public static Brush FromNameString(string brushName)
@@ -59,4 +59,4 @@ We need to generate a brush value from the string stored in the database. What w
 				return new SolidColorBrush(Color.FromArgb(a, r, g, b));
 			}
 		}
-{{endregion}}
+```

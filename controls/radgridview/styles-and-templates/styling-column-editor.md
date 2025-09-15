@@ -27,23 +27,23 @@ For example, if you want to set the style for the __GridViewDataColumn__'s edito
 
 >To learn how to modify the default styles of a control, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Example 1: Styling all text boxes of an application__
+__Example 1: Styling all text boxes of an application__
 
-	{{region xaml-radgridview-styling-column-editor_0}}
+	```XAML
 	<Style x:Key="TextBoxStyle" TargetType="TextBox">
 	    <Setter Property="Background" Value="Red"/>
 	    <Setter Property="Foreground" Value="Yellow"/>
 	    <Setter Property="Padding" Value="2"/>
 	</Style>
-{{endregion}}
+```
 
 >If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you need to base the style on __TextBoxStyle__.
 
-#### __[XAML] Example 2: Setting a column's EditorStyle__
+__Example 2: Setting a column's EditorStyle__
 
-	{{region xaml-radgridview-styling-column-editor_1}}
+	```XAML
 	<telerik:GridViewDataColumn EditorStyle="{StaticResource TextBoxStyle}" />
-{{endregion}}
+```
 
 #### __Figure 1: RadGridView with styled column edtior__
 

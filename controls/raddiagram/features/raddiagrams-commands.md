@@ -66,14 +66,14 @@ The static `DiagramCommands` class is located in __Telerik.Windows.Controls.Diag
 In the __Telerik.Windows.Controls.Diagrams.Extensions__ namespace you can find another set of commands described in the `ExtensionsCommands` class. This class describes the `Print` command that allows you to print a diagramming structure. You can use this command in XAML to print the content of a RadDiagram instance as follows:		
 
 #### __XAML__
-{{region radiagram-commands_0}}
+```XAML
     <telerik:RadButton xmlns:extensions="clr-namespace:Telerik.Windows.Controls.Diagrams.Extensions;assembly=Telerik.Windows.Controls.Diagrams.Extensions"
 					Content="Print" 
 					Command="extensions:DiagramExtensionCommands.Print" 
 					CommandTarget="{Binding ElementName=diagram}" 
 					HorizontalAlignment="Center" 
 					VerticalAlignment="Center"/>	
-{{endregion}}
+```
 
 ## Using Diagram Commands
 
@@ -82,7 +82,7 @@ A possible way to use `DiagramCommands` in __XAML__ is to bind the `Command` pro
 Below is shown how you can use some of the Diagram Commands in an application Note that this syntax is common for every Diagram Command.
 
 #### __XAML__
-{{region radiagram-commands_1}}
+```XAML
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="buttonsStack">
             <telerik:RadGeometryButton Height="55" Width="55" Command="telerik:DiagramCommands.AutoFit"
                     ToolTipService.ToolTip="Autofit" CommandTarget="{Binding ElementName=diagram}" Content="Autofit"
@@ -98,7 +98,7 @@ Below is shown how you can use some of the Diagram Commands in an application No
                     CommandParameter="Png" CommandTarget="{Binding ElementName=diagram}"					
                     Geometry="M6.7093377,5.0820007 C10.505837,5.0813236 12.205385,8.5835428 13.709369,8.4989958 C15.616847,8.3917685 16.999527,6.8087606 16.999527,6.8087606 L17.000025,13.080002 L3.0000243,13.080002 L3.0000243,7.9753876 C3.0000243,7.9753876 4.842936,5.0823336 6.7093377,5.0820007 z M1.9999999,2.0000048 L1.9999999,13.999995 L18,13.999995 L18,2.0000048 z M1.1920929E-06,0 L20,0 L20,16 L0,16 z" />
         </StackPanel>
-{{endregion}}
+```
 
 ![raddiagram-features-commands](images/raddiagram-features-commands.png)
 

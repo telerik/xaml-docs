@@ -21,22 +21,20 @@ The __RadRadioButton__ control inherits from the native RadioButton control and 
 
 You can instantiate your __RadRadioButton__ in both XAML and code.
 
-#### __[XAML] Example 1: Defining a button in XAML__
-{{region xaml-radbutton-features-radio-button_0}}
+__Example 1: Defining a button in XAML__
+```XAML
 	<telerik:RadRadioButton Content="Radio Item" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining a button in code__
-{{region cs-radbutton-features-radio-button_1}}
+__Example 2: Defining a button in code__
+```C#
 	RadRadioButton radRadioButton = new RadRadioButton() { Content = "Radio Item" };
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a button in code__  
-{{region vb-radbutton-features-radio-button_2}}
+```
+```VB.NET
 	Dim radRadioButton As New RadRadioButton() With { _
 	    .Content = "Radio Item" _
 	}
-{{endregion}}
+```
 
 ## Button Checked Events
 
@@ -52,32 +50,30 @@ The check state of the button can be manually controlled via its __IsChecked__ p
 
 Here is an example of handling the __Checked__ event of a button.		
 
-#### __[XAML] Example 3: Subscribing to the Checked event__  
-{{region xaml-radbutton-features-radio-button_3}}
+__Example 3: Subscribing to the Checked event__  
+```XAML
 	<telerik:RadRadioButton Content="Radio Item" Checked="RadRadioButton_Checked"/>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Defining a Checked event handler__  
-{{region cs-radbutton-features-radio-button_4}}
+__Example 4: Defining a Checked event handler__  
+```C#
 	private void RadRadioButton_Checked(object sender, RoutedEventArgs e)
 	{
 	    //implement your logic here
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining a Checked event handler__  
-{{region vb-radbutton-features-radio-button_5}}
+```
+```VB.NET
 	Private Sub RadRadioButton_Checked(sender As Object, e As RoutedEventArgs)
 	    'implement your logic here '
 	End Sub
-{{endregion}}
+```
 
 ## Grouping RadRadioButtons
 
 By grouping the __RadRadioButtons__ the user will be allowed to check only one button in the group. In order to group several RadRadioButtons you can place them in the same layout panel (see Example 5).
 
-#### __[XAML] Example 5: Grouping radio buttons__  
-{{region xaml-radbutton-features-radio-button_6}}
+__Example 5: Grouping radio buttons__  
+```XAML
 	<StackPanel>
 	    <telerik:RadRadioButton Content="Item 1.1" />
 	    <telerik:RadRadioButton Content="Item 1.2" />
@@ -86,7 +82,7 @@ By grouping the __RadRadioButtons__ the user will be allowed to check only one b
 	    <telerik:RadRadioButton Content="Item 2.1" />
 	    <telerik:RadRadioButton Content="Item 2.2" />
 	</StackPanel>
-{{endregion}}
+```
 
 The above code creates two groups of __RadRadioButtons__.		
 

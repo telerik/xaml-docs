@@ -23,7 +23,7 @@ __In order to bind RadChart to nested collections:__
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_0}}
+```C#
 	using System;
 	using System.Collections.ObjectModel;
 	namespace Silverlight.Help.RadChartSamples
@@ -127,13 +127,13 @@ __In order to bind RadChart to nested collections:__
 	        }
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_1}}
+```VB.NET
 	Imports System
 	Imports System.Collections.ObjectModel
 	Namespace Silverlight.Help.RadChartSamples
@@ -601,7 +601,7 @@ __In order to bind RadChart to nested collections:__
 	  End Function
 	 End Class
 	End Namespace
-	{{endregion}}
+	```
 
 
 
@@ -610,7 +610,7 @@ __In order to bind RadChart to nested collections:__
 
 #### __XAML__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_2}}
+```XAML
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <telerik:RadChart x:Name="radChart">
@@ -623,7 +623,7 @@ __In order to bind RadChart to nested collections:__
 	        </telerik:RadChart.DefaultView>
 	    </telerik:RadChart>
 	</Grid>
-	{{endregion}}
+	```
 
 
 
@@ -632,7 +632,7 @@ __In order to bind RadChart to nested collections:__
 
 #### __XAML__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_3}}
+```XAML
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
 	    <telerik:RadChart x:Name="radChart">
@@ -665,7 +665,7 @@ __In order to bind RadChart to nested collections:__
 	        </telerik:RadChart.SeriesMappings>
 	    </telerik:RadChart>
 	</Grid>
-	{{endregion}}
+	```
 
 
 
@@ -674,23 +674,23 @@ __In order to bind RadChart to nested collections:__
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_4}}
+```C#
 	List<ObservableCollection<TradeData>> sampleData = new List<ObservableCollection<TradeData>>();
 	sampleData.Add( TradeData.GetWeeklyData( "CSCO" ) );
 	sampleData.Add( TradeData.GetWeeklyData( "MSFT" ) );
 	this.radChart.ItemsSource = sampleData;
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_5}}
+```VB.NET
 	Dim sampleData As New List(Of ObservableCollection(Of TradeData))()
 	sampleData.Add(TradeData.GetWeeklyData("CSCO"))
 	sampleData.Add(TradeData.GetWeeklyData("MSFT"))
 	Me.radChart.ItemsSource = sampleData
-	{{endregion}}
+	```
 
 
 
@@ -703,7 +703,7 @@ __In order to bind RadChart to nested collections:__
 
 #### __C#__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_6}}
+```C#
 	List<ObservableCollection<TradeData>> sampleData = new List<ObservableCollection<TradeData>>();
 	sampleData.Add( TradeData.GetWeeklyData( "CSCO" ) );
 	sampleData.Add( TradeData.GetWeeklyData( "MSFT" ) );
@@ -732,13 +732,13 @@ __In order to bind RadChart to nested collections:__
 	seriesMapping.ItemMappings.Add( itemMapping );
 	this.radChart.SeriesMappings.Add( seriesMapping );
 	this.radChart.ItemsSource = sampleData;
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-populating-with-data-data-binding-to-nested-collections_7}}
+```VB.NET
 	Dim sampleData As New List(Of ObservableCollection(Of TradeData))()
 	sampleData.Add(TradeData.GetWeeklyData("CSCO"))
 	sampleData.Add(TradeData.GetWeeklyData("MSFT"))
@@ -767,7 +767,7 @@ __In order to bind RadChart to nested collections:__
 	seriesMapping.ItemMappings.Add(itemMapping)
 	Me.radChart.SeriesMappings.Add(seriesMapping)
 	Me.radChart.ItemsSource = sampleData
-	{{endregion}}
+	```
 
 
 

@@ -50,10 +50,10 @@ You can change these settings using the [PasteSettings](#pastesettings-members) 
 The **IsPasteOptionsPopupEnabled** dependency property of RadRichTextBox enables you to control whether the popup shown when pasting will be enabled or not. The default value of the property is `true`.
 
 #### [XAML] Example 1: Turn off the popup providing paste options
-{{region radrichtextbox-features-paste-options_0}}
+```XAML
 
     <telerik:RadRichTextBox x:Name="radRichTextBox" IsPasteOptionsPopupEnabled="False" />
-{{endregion}}
+```
 
 
 ## Setting Default Behavior
@@ -83,9 +83,9 @@ You can invoke the paste with specific options through the RadRichTextBox/RadDoc
 >important The method exposed by **RadRichTextBox** executes the paste and shows the popup for the user to choose another paste option if they would like to. If you would like to paste from the code without showing any UI, you can use the method of **RadDocumentEditor**.
 
 #### [C#] Example 2: Paste with Specific Settings
-{{region radrichtextbox-features-paste-options_1}}
+```C#
     this.radRichTextBox.Paste(PasteOption.MergeFormatting);
-{{endregion}}
+```
 
 ## Executing Paste through UI
 

@@ -28,7 +28,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 
 #### __C#__
 
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_0}}
+```C#
 	public class RoutedEventHelper
 	{
 	    //Create the routed event:
@@ -71,13 +71,13 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 	        }
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_1}}
+```VB.NET
 	Public Class RoutedEventHelper
 	    'Create the routed event:'
 			Public Shared ReadOnly CloseTabEvent As RoutedEvent = EventManager.RegisterRoutedEvent("CloseTab", RoutingStrategy.Bubble, GetType(RoutedEventHandler), GetType(RoutedEventHelper))
@@ -107,7 +107,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 	        End If
 	    End Sub
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -121,7 +121,7 @@ Another thing that is worth mentioning is the declaration of the attached proper
 
 #### __XAML__
 
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_2}}
+```XAML
 	<UserControl.Resources>
 	    <Style x:Key="ClosableStyle" TargetType="telerik:RadTabItem">
 	        <Setter Property="HeaderTemplate">
@@ -161,7 +161,7 @@ Another thing that is worth mentioning is the declaration of the attached proper
 	    <telerik:RadTabControl x:Name="tabControl" ItemContainerStyle="{StaticResource ClosableStyle}">
 	    </telerik:RadTabControl>
 	</Grid>
-	{{endregion}}
+	```
 
 
 
@@ -179,7 +179,7 @@ Later in the __UserControl.Resources__ section you declare a custom item contain
 
 #### __C#__
 
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_3}}
+```C#
 	public partial class MainPage : UserControl
 	{
 	    ObservableCollection<TabItemModel> tabItemsModel = new ObservableCollection<TabItemModel>();
@@ -223,13 +223,13 @@ Later in the __UserControl.Resources__ section you declare a custom item contain
 	        set;
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_4}}
+```VB.NET
 	Partial Public Class Page
 	    Inherits UserControl
 	    Private tabItemsModel As New ObservableCollection(Of TabItemModel)()
@@ -275,7 +275,7 @@ Later in the __UserControl.Resources__ section you declare a custom item contain
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
+	```
 
 
 

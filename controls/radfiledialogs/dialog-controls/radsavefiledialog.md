@@ -21,8 +21,8 @@ To show the dialog call its __ShowDialog__ method. If a valid file is selected w
 
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
-#### __[C#] Example 1: Show a save file dialog__
-{{region radfiledialogs-radsavefiledialog-0}}
+__Example 1: Show a save file dialog__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -42,7 +42,7 @@ To show the dialog call its __ShowDialog__ method. If a valid file is selected w
 			}
 		}
 	}
-{{endregion}}
+```
 
 > The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set. 
 
@@ -50,8 +50,8 @@ To show the dialog call its __ShowDialog__ method. If a valid file is selected w
 
 You can open a read-write file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName property and open the file manually.
 
-#### __[C#] Example 2: Open a file stream__
-{{region radfiledialogs-radsavefiledialog-1}}
+__Example 2: Open a file stream__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -71,7 +71,7 @@ You can open a read-write file stream for the selected file using the __OpenFile
 			}
 		}
 	}
-{{endregion}}
+```
 
 ## Working with the selected file
 
@@ -79,8 +79,8 @@ You can get the path of the selected file via the __FileName__ property (see __E
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
-#### __[C#] Example 3: Set the file name__
-{{region radfiledialogs-radsavefiledialog-2}}
+__Example 3: Set the file name__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -98,7 +98,7 @@ The __FileName__ property can be set manually. This will change the value displa
 			saveFileDialog.ShowDialog();
 		}
 	}
-{{endregion}}
+```
 
 #### __Figure 2: Setting the file name__
 ![Setting the file name](images/radsavefiledialog-02.png)	

@@ -36,11 +36,11 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Adding RadMultiColumnComboBox to the Project
 
-#### __[XAML] Example 1: Defining RadMultiColumnComboBox Declaratively__
-{{region radmulticolumncombobox-gettingstarted_0}}
+__Example 1: Defining RadMultiColumnComboBox Declaratively__
+```XAML
 	<telerik:RadMultiColumnComboBox VerticalAlignment="Top">
     </telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 #### __Figure 1: Defining RadMultiColumnComboBox__
 ![RadMultiColumnComboBox](images/MultiColumnComboBox_GettingStarted_01.png)
@@ -48,13 +48,13 @@ If you are not using NuGet packages, you can add a reference to the following as
 Note, that such definition would simply result in having an AutoComplete box. In order to have the actual __RadGridView__ populated as a Content of the DropDown the __GridViewItemsSourceProvider__ needs to be set as an __ItemsSourceProvider__. Note, that the __DisplayMemberPath__ property of __RadMultiColumnComboBox__ is also set. Its purpose is to point to a property of the bound data item present in the source collection of the ItemsSourceProvider. Thus, the control will be aware what value to display in the __AutoCompleteBox__. If not set, the control would simply call the __ToString__ method of the bound item.
 
 #### __[XAML] Example 2: Setting the GridViewItemsSourceProvider
-{{region radmulticolumncombobox-gettingstarted_1}}
+```XAML
 	 <telerik:RadMultiColumnComboBox VerticalAlignment="Top" DisplayMemberPath="Name">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
                 <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs}" />
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 This definition will have the following output. 
 
@@ -79,8 +79,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region radmulticolumncombobox-setting-theme-getting-started_6}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -91,7 +91,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

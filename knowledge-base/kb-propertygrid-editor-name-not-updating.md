@@ -30,19 +30,19 @@ How to data bind a property from the model of the collection shown in the collec
 
 1. Define a DataTemplate containing a TextBlock bound to a property from the model of the items in the collection.
 
-	#### __[XAML]__
-	{{region kb-propertygrid-editor-name-not-updating-0}}
+	
+	```XAML
 		<Window.Resources>
 			<DataTemplate x:Key="CollectionEditorTemplate">
 				<TextBlock Text="{Binding Name}" />
 			</DataTemplate>
 		</Window.Resources>
-	{{endregion}}
+	```
 	
 2. Subscribe to the FieldLoaded event of RadPropertyGrid and set the ItemTemplate of the loaded editor. Do this only if the editor is an element of type CollectionEditorPicker.
 
-	#### __[C#]__
-	{{region kb-propertygrid-editor-name-not-updating-1}}
+	
+	```C#
 		private void radPropertyGrid_FieldLoaded(object sender, FieldEventArgs e)
 		{
 			var collectionEditorPicker = e.Field.Content as CollectionEditorPicker;
@@ -54,4 +54,4 @@ How to data bind a property from the model of the collection shown in the collec
 				}));
 			}           
 		}
-	{{endregion}}
+	```

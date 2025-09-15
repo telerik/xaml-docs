@@ -17,7 +17,7 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region xaml-radcontextmenu-populating-with-data-using-static-items_0}}
+```XAML
 	<TextBox Width="200" VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
@@ -25,13 +25,13 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region xaml-radcontextmenu-populating-with-data-using-static-items_3}}
+```XAML
 	<TextBox Width="200" VerticalAlignment="Top"
 	         ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
@@ -40,7 +40,7 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 In order to add items you need to use the __RadContextMenu's Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadMenuItems__. For example, take a look at the following lines.
@@ -48,7 +48,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region xaml-radcontextmenu-populating-with-data-using-static-items_1}}
+```XAML
 	<TextBox Width="200" VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
@@ -60,12 +60,12 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region xaml-radcontextmenu-populating-with-data-using-static-items_4}}
+```XAML
 	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
@@ -77,7 +77,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 Here is a snapshot of the current result.
@@ -91,7 +91,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region xaml-radcontextmenu-populating-with-data-using-static-items_2}}
+```XAML
 	<TextBox Width="200" VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
@@ -118,13 +118,13 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
 #### __XAML__
 
-{{region xaml-radcontextmenu-populating-with-data-using-static-items_5}}
+```XAML
 	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu>
@@ -151,7 +151,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 ![{{ site.framework_name }} RadContextMenu with Items with Icons](images/RadContextMenu_Populating_with_Data_Static_Items_02.png)

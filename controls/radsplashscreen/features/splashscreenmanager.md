@@ -16,17 +16,17 @@ RadSplashScreenManager is the class that is used to control the splash screen. T
 
 To show the splash screen, call the __RadSplashScreenManager.Show__ method. This will open a window hosting a __RadSplashScreen__ control. You can replace the RadSplashScreen by using the alternative oveload of the Show method where you can pass a type representing the control that should be displayed. 
 
-#### __[C#] Example 1: Showing a splash screen__
-{{region radsplashscreen-features-splashscreenmanager-0}}	
+__Example 1: Showing a splash screen__
+```C#	
 	RadSplashScreenManager.Show();
-{{endregion}}
+```
 
 To close the splash screen, call the __RadSplashScreenManager.Close__ method.
 
-#### __[C#] Example 2: Closing a splash screen__
-{{region radsplashscreen-features-splashscreenmanager-1}}	
+__Example 2: Closing a splash screen__
+```C#	
 	RadSplashScreenManager.Close();
-{{endregion}}
+```
 
 Find more examples in the [Getting Started]({%slug radsplashscreen-getting-started%}) article.
 
@@ -48,8 +48,8 @@ RadSplashScreenManager provides several properties that allow you to set up the 
 
 > All those settings should be set __before the Show method__ call.
 
-#### __[C#] Example 3: Applying manager settings__
-{{region radsplashscreen-features-splashscreenmanager-2}}		
+__Example 3: Applying manager settings__
+```C#		
 	RadSplashScreenManager.StartupPosition = new Point(100, 100);
 	RadSplashScreenManager.SplashScreenDataContext = "This is the new data context.";
 	RadSplashScreenManager.ShowAnimation = new ScaleAnimation() { MinScale = 0.1, MaxScale = 0.9, Duration = TimeSpan.FromSeconds(2) };
@@ -59,7 +59,7 @@ RadSplashScreenManager provides several properties that allow you to set up the 
 	{
 		RadSplashScreenManager.Show();
 	}
-{{endregion}}
+```
 
 ## SplashScreenDataContext
 
@@ -97,8 +97,8 @@ SplashScreenDataContext provides the following settings:
 
 >tip Read more about the progress visualization in the [Progress Bar]({%slug radsplashscreen-features-progress-bar%}) article.
 
-#### __[C#] Example 4: Applying splash screen settings__
-{{region radsplashscreen-features-splashscreenmanager-3}}		
+__Example 4: Applying splash screen settings__
+```C#		
 	var dataContext = (SplashScreenDataContext)RadSplashScreenManager.SplashScreenDataContext;
 	dataContext.ImagePath = "/SplashScreenWPFApplication;component/Images/splash-screen-image.png";
 	dataContext.Content = "Loading... 45%";
@@ -113,7 +113,7 @@ SplashScreenDataContext provides the following settings:
 	{
 		RadSplashScreenManager.Show();
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSplashScreen Splash Screen Manager Visual Structure](images/radsplashscreen-features-splashscreenmanager-0.png)
 

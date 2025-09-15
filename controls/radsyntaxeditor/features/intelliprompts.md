@@ -16,7 +16,7 @@ The RadSyntaxEditor has support for intelliprompts which aim to speed up coding 
 Through the **CompletionListWindow** you can show a collection of items when the user inputs a given string. To do so, you need to first populate its presenter's **CompletionListItems** collection.
 
 #### [C#] Example 1: Populate and display the completion list window
-{{region cs-radsyntaxeditor-features-selection_2}}
+```C#
 
     var completionListItems = new CompletionInfoCollection()
     {
@@ -27,7 +27,7 @@ Through the **CompletionListWindow** you can show a collection of items when the
 
     this.syntaxEditor.IntelliPrompts.CompletionListWindow.Presenter.CompletionListItems = completionListItems;
     this.syntaxEditor.CompleteCode(); // or this.syntaxEditor.IntelliPrompts.CompletionListWindow.Show();
-{{endregion}}
+```
 
 #### Figure 1: Code completion
 ![Code completion](images/syntaxeditor-intelliprompts-completion.png)
@@ -39,7 +39,7 @@ Through the **CompletionListWindow** you can show a collection of items when the
 Through the **OverloadListWindow** you can show a collection of overloads when the user tries to invoke a certain method. To do so, you need to first populate its presenter's **OverloadListItems** collection.
 
 #### [C#] Example 2: Populate and display the completion list window
-{{region cs-radsyntaxeditor-features-selection_2}}
+```C#
 
     var overloadList = new OverloadInfoCollection
     {
@@ -49,7 +49,7 @@ Through the **OverloadListWindow** you can show a collection of overloads when t
 
     this.syntaxEditor.IntelliPrompts.OverloadListWindow.Presenter.OverloadListItems = overloadList;
     this.syntaxEditor.IntelliPrompts.OverloadListWindow.Show();
-{{endregion}}
+```
 
 #### Figure 2: Overload list
 ![Overload list](images/syntaxeditor-intelliprompts-overloads.png)

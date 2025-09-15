@@ -12,20 +12,18 @@ position: 6
 
 The `RadOfficeNavigationBar` control provides a popup preview window for its elements when the mouse is over one of them. This functionality is disabled by default. To enable it, set the `IsPeekPopupEnabled` property to __True__.
 
-#### __[XAML] Setting the IsPeekPopupEnabled property__
-{{region radofficenavigationbar-peek-popup-0}}
+__Setting the IsPeekPopupEnabled property__
+```XAML
     <telerik:RadOfficeNavigationBar x:Name="radOfficeNavigationBar" IsPeekPopupEnabled="True"/>
-{{endregion}}
+```
 
-#### __[C#] Setting the IsPeekPopupEnabled property in code__
-{{region radofficenavigationbar-peek-popup-1}}
+__Setting the IsPeekPopupEnabled property in code__
+```C#
     this.radOfficeNavigationBar.IsPeekPopupEnabled = true;
-{{endregion}}
-
-#### __[VB.NET] Setting the IsPeekPopupEnabled property in code__
-{{region radofficenavigationbar-peek-popup-2}}
+```
+```VB.NET
     Me.radOfficeNavigationBar.IsPeekPopupEnabled = True
-{{endregion}}
+```
 
 __Displayed peek popup__
 
@@ -35,8 +33,8 @@ __Displayed peek popup__
 
 Each `RadOfficeNavigationBarItem` element allows you to customize the content that will be displayed. To do so, you can use its `PeekPopupContent`, `PeekPopupContentTemplate`, and `PeekPopupContentTemplateSelector` properties.
 
-#### __[XAML] Setting the peek popup content__
-{{region radofficenavigationbar-peek-popup-3}}
+__Setting the peek popup content__
+```XAML
     <telerik:RadOfficeNavigationBarItem Content="Mail" PeekPopupContent="Mail">
         <telerik:RadOfficeNavigationBarItem.PeekPopupContentTemplate>
             <DataTemplate>
@@ -47,7 +45,7 @@ Each `RadOfficeNavigationBarItem` element allows you to customize the content th
             </DataTemplate>
         </telerik:RadOfficeNavigationBarItem.PeekPopupContentTemplate>
     </telerik:RadOfficeNavigationBarItem>
-{{endregion}}
+```
 
 __Peek popup with custom content__
 
@@ -59,8 +57,8 @@ The peek popup's appearance can be customized for each RadOfficeNavigationBarIte
 
 The following example is based on the RadOfficeNavigationBarItem's implementation from the above code snippet.
 
-#### __[XAML] Customizing the appearance of the peek popup__
-{{region radofficenavigationbar-peek-popup-4}}
+__Customizing the appearance of the peek popup__
+```XAML
     <telerik:RadOfficeNavigationBarItem.PeekPopupStyle>
         <!--Set BasedOn property if NoXaml assemblies are used: BasedOn="{StaticResource RadCalloutStyle}"-->
         <Style TargetType="telerik:RadCallout">
@@ -71,7 +69,7 @@ The following example is based on the RadOfficeNavigationBarItem's implementatio
             <Setter Property="BorderThickness" Value="3"/>
         </Style>
     </telerik:RadOfficeNavigationBarItem.PeekPopupStyle>
-{{endregion}}
+```
 
 __Peek popup with custom style__
 
@@ -81,10 +79,10 @@ __Peek popup with custom style__
 
 The RadOfficeNavigationBarItem element allows you to apply a string format to the value that is set to the PeekPopupContent property. To set a string format, you can set the `PeekPopupContentStringFormat` property.
 
-#### __[XAML] Applying a string format to the peek popup content__
-{{region radofficenavigationbar-peek-popup-5}}
+__Applying a string format to the peek popup content__
+```XAML
     <telerik:RadOfficeNavigationBarItem Content="Mail" PeekPopupContent="5" PeekPopupContentStringFormat="There are {0} new e-mails."/>
-{{endregion}}
+```
 
 __Peek popup content with applied string format__
 
@@ -94,10 +92,10 @@ __Peek popup content with applied string format__
 
 You can control the show/close delay of the peek popup. To do so, you can set the `PeekPopupShowDelay` and `PeekPopupCloseDelay` properties of RadOfficeNavigationBar.
 
-#### __[XAML] Setting the PeekPopupShowDelay and PeekPopupCloseDelay properties__
-{{region radofficenavigationbar-peek-popup-6}}
+__Setting the PeekPopupShowDelay and PeekPopupCloseDelay properties__
+```XAML
     <telerik:RadOfficeNavigationBar x:Name="radOfficeNavigationBar" PeekPopupShowDelay="0" PeekPopupCloseDelay="1000"/>
-{{endregion}}
+```
 
 ## PeekPopupOpening Event
 
@@ -115,8 +113,8 @@ The RadOfficeNavigationBar exposes the `PeekPopupOpening` event that will occur 
 
     * `Cancel`&mdash;The Cancel property can be used to prevent the peek popup from opening. To stop the popup from opening, set this property to __false__.
 
-#### __[C#] Prevent the peek popup from showing for a certain item__
-{{region radofficenavigationbar-peek-popup-7}}
+__Prevent the peek popup from showing for a certain item__
+```C#
     private void radOfficeNavigationBar_PeekPopupOpening(object sender, PeekPopupOpeningEventArgs e)
     {
         if (e.OfficeNavigationBarItem.Content.ToString() == "Mail")
@@ -124,16 +122,16 @@ The RadOfficeNavigationBar exposes the `PeekPopupOpening` event that will occur 
             e.Cancel = true;
         }
     }
-{{endregion}}
+```
 
-#### __[VB] Prevent the peek popup from showing for a certain item__
-{{region radofficenavigationbar-peek-popup-8}}
+__Prevent the peek popup from showing for a certain item__
+```VB
     Private Sub radOfficeNavigationBar_PeekPopupOpening(ByVal sender As Object, ByVal e As  PeekPopupOpeningEventArgs)
         If e.OfficeNavigationBarItem.Content.ToString() Is "Mail" Then
             e.Cancel = True
         End If
     End Sub
-{{endregion}}
+```
 
 ## See Also
 * [Custom Content]({%slug radofficenavigationbar-custom-content%})

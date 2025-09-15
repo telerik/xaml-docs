@@ -28,25 +28,25 @@ Here is a list of the most important features of the __RadDataPager__:
 
 #### __XAML__
 
-{{region xaml-radgridview-paging-using-telerik-raddatapager_0}}
+```XAML
 	<telerik:RadDataPager Source="{Binding MyCollection}" />
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radgridview-paging-using-telerik-raddatapager_1}}
+```C#
 	IEnumerable data = new List<int>() { 1, 2, 3 };
 	RadDataPager radDataPager = new RadDataPager();
 	radDataPager.Source = data;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radgridview-paging-using-telerik-raddatapager_2}}
+```VB.NET
 	Dim data As IEnumerable = New List(Of Integer)()
 	Dim radDataPager As New RadDataPager()
 	radDataPager.Source = data
-{{endregion}}
+```
 
 * __WCF RIA Services and DomainDataSource Support__ - the __RadDataPager__ can be easily integrated with the __DomainDataSource__ control and consume server data through the __.NET RIA Services__.
 
@@ -98,7 +98,7 @@ __RadDataPager__ can be used together with __DomainDataSource__ provided by the 
 
 #### __XAML__
 
-{{region xaml-radgridview-paging-using-telerik-raddatapager_8}}
+```XAML
 	<StackPanel>
 	    <riaControls:DomainDataSource x:Name="domainDataSource"
 	          AutoLoad="True"
@@ -116,7 +116,7 @@ __RadDataPager__ can be used together with __DomainDataSource__ provided by the 
 	  DisplayMode="FirstLastPreviousNextNumeric, Text"
 	  IsTotalItemCountFixed="True" />
 	</StackPanel>
-{{endregion}}
+```
 
 ## See Also
 

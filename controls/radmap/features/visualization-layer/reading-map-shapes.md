@@ -43,8 +43,8 @@ The Visualization Layer reads map shape data using asynchronous map shape data r
 
 If your application loads a comparatively small number of map shape data, then you can specify the data source directly in XAML as demonstrated in __Example 1__.        
 
-#### __[XAML] Example 1: AsyncShapeFileReader with its source set in xaml__
-{{region radmap_visualization_layer_reading_map_shapes_0}}
+__Example 1: AsyncShapeFileReader with its source set in xaml__
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="5"
 	                Center="36, -120">
@@ -63,12 +63,12 @@ If your application loads a comparatively small number of map shape data, then y
 			</telerik:VisualizationLayer.Reader>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 In this case the reader starts reading immediately and the loaded shapes will be visible even in the design time. But very often the data source contains numerous map shapes. In this case it is reasonable to perform loading in runtime only and show progress or busy indicator until the process is completed. This is demonstrated in __Examples 2 and 3__.       
 
-#### __[XAML] Example 2: AsyncShapeFileReader with the ProgressChanged and ReadShapeDataCompleted events__
-{{region radmap_visualization_layer_reading_map_shapes_1}}
+__Example 2: AsyncShapeFileReader with the ProgressChanged and ReadShapeDataCompleted events__
+```XAML
 	<telerik:RadBusyIndicator Name="busyIndicator">
 		<telerik:RadMap x:Name="radMap"
 	                    ZoomLevel="6"
@@ -90,10 +90,10 @@ In this case the reader starts reading immediately and the loaded shapes will be
 			</telerik:VisualizationLayer>
 		</telerik:RadMap>
 	</telerik:RadBusyIndicator>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Showing a BusyIndicator while the AsyncShapeFileReader is loading shapes__
-{{region radmap_visualization_layer_reading_map_shapes_2}}
+__Example 3: Showing a BusyIndicator while the AsyncShapeFileReader is loading shapes__
+```C#
 	public partial class EsriFileReader : UserControl
 	{
 		public EsriFileReader()
@@ -128,10 +128,8 @@ In this case the reader starts reading immediately and the loaded shapes will be
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Showing a BusyIndicator while the AsyncShapeFileReader is loading shapes__
-{{region radmap_visualization_layer_reading_map_shapes_3}}
+```
+```VB.NET
 	Partial Public Class EsriFileReader
 		Inherits UserControl
 		Public Sub New()
@@ -160,7 +158,7 @@ In this case the reader starts reading immediately and the loaded shapes will be
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 >Sometimes map shape data source can contain extremely large number of the items. In this case you can be faced with insufficient productivity of the WPF/Silverlight rendering engine. If your application is intended to show large number of map shapes, we strongly recommend using items virtualization, which is available out-of-the-box in the VisualizationLayer.   
 
@@ -174,16 +172,16 @@ The events described in this section are available for the AsyncShapeFileReader,
 
 * __PreviewReadShapeData__: Occurs each time when a shape data is read. __Example 5__ demonstrates how you can use the PreviewReadShapeData event in order to cancel the loading of the shapes.
 
-	#### __[XAML] Example 4: AsyncShapeFileReader with PreviewReadShapeData event__
-	{{region radmap_visualization_layer_reading_map_shapes_4}}
+	__Example 4: AsyncShapeFileReader with PreviewReadShapeData event__
+	```XAML
 		<telerik:VisualizationLayer.Reader>
 			<telerik:AsyncShapeFileReader  x:Name="reader"
 										   PreviewReadShapeData="AsyncShapeFileReader_PreviewReadShapeData"/>
 		</telerik:VisualizationLayer.Reader>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 5: Cancel shape loading__
-	{{region radmap_visualization_layer_reading_map_shapes_5}}
+	__Example 5: Cancel shape loading__
+	```C#
 		private void AsyncShapeFileReader_PreviewReadShapeData(object sender, Telerik.Windows.Controls.Map.PreviewReadShapeDataCompletedEventArgs e)
 		{
 			if (e.Items.Count > 0)
@@ -195,10 +193,8 @@ The events described in this section are available for the AsyncShapeFileReader,
 				this.reader.CancelAsync();
 			}
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 5: Cancel shape loading__
-	{{region radmap_visualization_layer_reading_map_shapes_6}}
+	```
+```VB.NET
 		Private Sub AsyncShapeFileReader_PreviewReadShapeData(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Map.PreviewReadShapeDataCompletedEventArgs)
 			If e.Items.Count > 0 Then
 				Dim shape = e.Items(0)
@@ -208,7 +204,7 @@ The events described in this section are available for the AsyncShapeFileReader,
 				Me.reader.CancelAsync()
 			End If
 		End Sub
-	{{endregion}}
+	```
 
 * __ProgressChanged__:  Occurs when part of data is read.
 
@@ -228,8 +224,8 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 
 * __Single property value:__
 
-	#### __[XAML] Example 6: Setting the ToolTipFormat of the AsyncShapeFileReader in xaml__
-	{{region radmap_visualization_layer_reading_map_shapes_7}}
+	__Example 6: Setting the ToolTipFormat of the AsyncShapeFileReader in xaml__
+	```XAML
 		<telerik:RadMap x:Name="radMap">
 			<telerik:RadMap.Provider>
 				<telerik:OpenStreetMapProvider />
@@ -242,17 +238,15 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 				</telerik:VisualizationLayer.Reader>
 			</telerik:VisualizationLayer>
 		</telerik:RadMap>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 7: Setting the ToolTipFormat of the AsyncShapeFileReader in code__
-	{{region radmap_visualization_layer_reading_map_shapes_8}}
+	__Example 7: Setting the ToolTipFormat of the AsyncShapeFileReader in code__
+	```C#
 		this.visualizationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
-	{{endregion}}
-
-	#### __[VB.NET] Example 7: Setting the ToolTipFormat of the AsyncShapeFileReader in code__
-	{{region radmap_visualization_layer_reading_map_shapes_9}}
+	```
+```VB.NET
 		Me.visualizationLayer.Reader.ToolTipFormat = "CNTRY_NAME"
-	{{endregion}}
+	```
 
 	
 	#### Figure 1: Result from Example 6
@@ -262,8 +256,8 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 
 	>Note that in this case the format string begins with "{}". This escapes the following {PropertyName} expressions. In code behind you don't need to add it to the actual format string.              
 
-	#### __[XAML] Example 8: Setting the ToolTipFormat of the AsyncShapeFileReader to a formatted property in xaml__
-	{{region radmap_visualization_layer_reading_map_shapes_10}}
+	__Example 8: Setting the ToolTipFormat of the AsyncShapeFileReader to a formatted property in xaml__
+	```XAML
 		<telerik:RadMap x:Name="radMap">
 			<telerik:RadMap.Provider>
 				<telerik:OpenStreetMapProvider />
@@ -276,25 +270,23 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 				</telerik:VisualizationLayer.Reader>
 			</telerik:VisualizationLayer>
 		</telerik:RadMap>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 9: Setting the ToolTipFormat of the AsyncShapeFileReader to a formatted property in code__
-	{{region radmap_visualization_layer_reading_map_shapes_11}}
+	__Example 9: Setting the ToolTipFormat of the AsyncShapeFileReader to a formatted property in code__
+	```C#
 		this.visualizationLayer.Reader.ToolTipFormat = "{SQKM|F2}";
-	{{endregion}}
-
-	#### __[VB.NET] Example 9: Setting the ToolTipFormat of the AsyncShapeFileReader to a formatted property in code__
-	{{region radmap_visualization_layer_reading_map_shapes_12}}
+	```
+```VB.NET
 		Me.visualizationLayer.Reader.ToolTipFormat = "{SQKM|F2}"
-	{{endregion}}
+	```
 
 	#### Figure 2: Result from Example 8
 	![radmap-visualization-layer-reading-map-shapes-1](images/radmap-visualization-layer-reading-map-shapes-1.png)
 
 * __Multiple formatted property values:__
 
-	#### __[XAML] Example 10: Setting the ToolTipFormat of the AsyncShapeFileReader to a complex format in xaml__
-	{{region radmap_visualization_layer_reading_map_shapes_13}}
+	__Example 10: Setting the ToolTipFormat of the AsyncShapeFileReader to a complex format in xaml__
+	```XAML
 		<telerik:RadMap x:Name="radMap">
 			<telerik:RadMap.Provider>
 				<telerik:OpenStreetMapProvider />
@@ -307,17 +299,15 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 				</telerik:VisualizationLayer.Reader>
 			</telerik:VisualizationLayer>
 		</telerik:RadMap>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 11: Setting the ToolTipFormat of the AsyncShapeFileReader to a complex format in code__
-	{{region radmap_visualization_layer_reading_map_shapes_14}}
+	__Example 11: Setting the ToolTipFormat of the AsyncShapeFileReader to a complex format in code__
+	```C#
 		this.visualizationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|#,#.0} sq. km.";
-	{{endregion}}
-
-	#### __[VB.NET] Example 11: Setting the ToolTipFormat of the AsyncShapeFileReader to a complex format in code__
-	{{region radmap_visualization_layer_reading_map_shapes_15}}
+	```
+```VB.NET
 		Me.visualizationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|#,#.0} sq. km."
-	{{endregion}}
+	```
 
 	#### Figure 3: Result from Example 10
 	![radmap-visualization-layer-reading-map-shapes-2](images/radmap-visualization-layer-reading-map-shapes-2.png)
@@ -330,8 +320,8 @@ __In this case the DataTemplate takes as DataContext the entire Extended Data Se
 
 >The ToolTipTemplate property will take precedence over the ToolTipFormat one.              
 
-#### __[XAML] Example 12: AsyncShapeFileReader with ToolTipTemplate __
-{{region radmap_visualization_layer_reading_map_shapes_16}}
+__Example 12: AsyncShapeFileReader with ToolTipTemplate__
+```XAML
 	<UserControl x:Class="TestMapFeatures.Views.VisualizationLayer.Readers.SpecifyTooltipTemplate"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -389,7 +379,7 @@ __In this case the DataTemplate takes as DataContext the entire Extended Data Se
 			</telerik:RadBusyIndicator>
 		</Grid>
 	</UserControl>
-{{endregion}}
+```
 
 #### Figure 4: Result from Example 12
 ![radmap-visualization-layer-reading-map-shapes-3](images/radmap-visualization-layer-reading-map-shapes-3.png)
@@ -398,8 +388,8 @@ __In this case the DataTemplate takes as DataContext the entire Extended Data Se
 
 The ToolTipStyle property allows you to specify a Style of the tooltip that gets displayed. The Style should target the ToolTip control.   
 
-#### __[XAML] Example 13: AsyncShapeFileReader with ToolTipTemplate and ToolTipStyle__
-{{region radmap_visualization_layer_reading_map_shapes_17}}
+__Example 13: AsyncShapeFileReader with ToolTipTemplate and ToolTipStyle__
+```XAML
 	<UserControl x:Class="TestMapFeatures.Views.VisualizationLayer.Readers.SpecifyTooltipTemplate"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -468,7 +458,7 @@ The ToolTipStyle property allows you to specify a Style of the tooltip that gets
 			</telerik:RadBusyIndicator>
 		</Grid>
 	</UserControl>
-{{endregion}}
+```
 
 #### Figure 5: Result from Example 13
 ![radmap-visualization-layer-reading-map-shapes-4](images/radmap-visualization-layer-reading-map-shapes-4.png)
@@ -477,8 +467,8 @@ The ToolTipStyle property allows you to specify a Style of the tooltip that gets
 
 There are many scenarios when it is necessary to read multiple shape files into one layer. The AsyncShapeFileReader and AsyncKmlReader have an ability to specify several sources to read in one process. To specify every single file to read you should use AsyncReaderSourceobject as demonstrated in __Example 14__.   
 
-#### __[XAML] Example 14: Reading multiple shape files with AsyncShapeFileReader in xaml__
-{{region radmap_visualization_layer_reading_map_shapes_18}}
+__Example 14: Reading multiple shape files with AsyncShapeFileReader in xaml__
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="6"
 	                Center="37, -120">
@@ -502,10 +492,10 @@ There are many scenarios when it is necessary to read multiple shape files into 
 			</telerik:VisualizationLayer.Reader>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
-#### __[C#]  Example 15: Reading multiple shape files with AsyncShapeFileReader in code__
-{{region radmap_visualization_layer_reading_map_shapes_19}}
+__Example 15: Reading multiple shape files with AsyncShapeFileReader in code__
+```C#
 	this.mapShapeDataReader.SourceCollection.Add(
 		new AsyncReaderSource()
 		{
@@ -533,10 +523,8 @@ There are many scenarios when it is necessary to read multiple shape files into 
 		});
 	
 	this.mapShapeDataReader.ReadAsync();
-{{endregion}}
-
-#### __[VB.NET] Example 15: Reading multiple shape files with AsyncShapeFileReader in code__
-{{region radmap_visualization_layer_reading_map_shapes_20}}
+```
+```VB.NET
 	Me.mapShapeDataReader.SourceCollection.Add( _
 		New AsyncReaderSource() With _
 		{
@@ -564,7 +552,7 @@ There are many scenarios when it is necessary to read multiple shape files into 
 		})
 	
 	Me.mapShapeDataReader.ReadAsync()
-{{endregion}}
+```
 
 ## Clearing the Layer
 

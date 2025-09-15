@@ -27,9 +27,9 @@ This approach involves inheriting from __GridViewColumn__ and overriding the __C
 
 >important In order to automatically export a custom column, it should implement the **IExportableColumn** interface.
 
-#### __[C#] Example 1: Override the CreateCellElement method__
+__Example 1: Override the CreateCellElement method__
 
-{{region cs-gridview-add-button-column_0}}
+```C#
 	public class MyButtonColumn : Telerik.Windows.Controls.GridViewColumn
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -41,11 +41,8 @@ This approach involves inheriting from __GridViewColumn__ and overriding the __C
 	        return button;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Override the CreateCellElement method__
-
-{{region vb-gridview-add-button-column_0}}
+```
+```VB.NET
 	Public Class MyButtonColumn
 	Inherits Telerik.Windows.Controls.GridViewColumn
 
@@ -62,24 +59,24 @@ This approach involves inheriting from __GridViewColumn__ and overriding the __C
 			Return button
 		End Function
 	End Class
-{{endregion}}
+```
 
 Now you need to add this custom column to our RadGridView's **Columns** collection. **Example 2** shows how to do this in XAML.
 
-#### __[XAML] Example 2: Define the custom column in XAML__
+__Example 2: Define the custom column in XAML__
 
-{{region xaml-gridview-add-button-column_1}}
+```XAML
 	<telerik:RadGridView.Columns>
 	    <!-- ... -->
 	    <my:MyButtonColumn Header="Delete" />
 	</telerik:RadGridView.Columns>
-{{endregion}}
+```
 
 The same can be achieved in code-behind as illustrated in **Example 3**.
 
-#### __[C#] Example 3: Define the custom column in code-behind__
+__Example 3: Define the custom column in code-behind__
 
-{{region cs-gridview-add-button-column_2}}
+```C#
 	private void clubsGrid_DataLoaded(object sender, EventArgs e)
 	{
 	    this.clubsGrid.Columns.Add(new MyButtonColumn()
@@ -87,23 +84,20 @@ The same can be achieved in code-behind as illustrated in **Example 3**.
 	        Header = "Delete"
 	    });
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Define the custom column in code-behind__
-
-{{region vb-gridview-add-button-column_2}}
+```
+```VB.NET
 	Private Sub clubsGrid_DataLoaded(ByVal sender As Object, ByVal e As EventArgs)
 		Me.clubsGrid.Columns.Add(New MyButtonColumn() With {.Header = "Delete"})
 	End Sub
-{{endregion}}
+```
 
 ## Use the GridViewColumn's CellTemplate Property
 
 With this approach we will re-define the template of the cells for that column. In this case, we specify a simple **DataTemplate** which contains our delete button.
 
-#### __[XAML] Specify the GridViewColumn's CellTemplate__
+__Specify the GridViewColumn's CellTemplate__
 
-{{region xaml-gridview-add-button-column_3}}
+```XAML
 	<telerik:RadGridView.Columns>
 	    <!-- ... -->
 	    <telerik:GridViewColumn Header="Delete" >
@@ -116,7 +110,7 @@ With this approach we will re-define the template of the cells for that column. 
 	        </telerik:GridViewColumn.CellTemplate>
 	    </telerik:GridViewColumn>
 	</telerik:RadGridView.Columns>
-{{endregion}}
+```
 
 Notice that we've set the **Command** of the button to the **RadGridViewCommands.Delete** command and passed in the current row item (the DataContext of the cell) as the **CommandParameter**.
 

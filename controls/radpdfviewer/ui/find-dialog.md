@@ -44,11 +44,11 @@ In a few simple steps the FindDialog could be added to a project.
 First of all, it is obligatory to register a new find dialog. This can be done using the ExtensibilityManager.
         
 
-#### __[C#] Example 1:  Register FindDialog using ExtensibilityManager__
+__Example 1:  Register FindDialog using ExtensibilityManager__
 
-{{region radpdfviewer-find-dialog_0}}
+```C#
 		ExtensibilityManager.RegisterFindDialog(new FindDialog());
-{{endregion}}
+```
 
 
 {% if site.site_name == 'WPF' %}        
@@ -56,10 +56,10 @@ If you prefer adding the dialog through XAML, you can use the RegisterFindDialog
 
 #### [XAML] Example 1: Register FindDialog in XAML 
 
-{{region radpdfviewer-find-dialog_1}}
+```XAML
 		<telerik:RadPdfViewer telerik:RadPdfViewerAttachedComponents.RegisterFindDialog="True" />
 
-{{endregion}}
+```
 
 {% endif %}
 
@@ -77,7 +77,7 @@ In order to achieve this, should be created a class which inherits the __IFindDi
 
 #### [C#] Example 2:Create custom find dialog
 
-{{region radpdfviewer-find-dialog_2}}
+```C#
 	    public class CustomFindDialog : Window, IFindDialog
 	    {
 	        public void ShowDialog(FindDialogContext context)
@@ -85,7 +85,7 @@ In order to achieve this, should be created a class which inherits the __IFindDi
 	            // ...
 	        }
 	    }
-{{endregion}}
+```
 
 >tip Find a runnable project showing this functionality in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomFindDialog).
 

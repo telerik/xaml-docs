@@ -18,24 +18,24 @@ Create new interface that will represent the basic information for the files/fol
 
 #### __C#__
 
-{{region radtreemap-populating-with-data-radtreemap_0}}
+```C#
 	public interface IDiskItem
 	{
 		string Name { get; }
 		long Size { get; }
 		IEnumerable<IDiskItem> Children { get; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreemap-populating-with-data-radtreemap_1}}
+```VB.NET
 	Public Interface IDiskItem
 		ReadOnly Property Name() As String
 		ReadOnly Property Size() As Long
 		ReadOnly Property Children() As IEnumerable(Of IDiskItem)
 	End Interface
-{{endregion}}
+```
 
 The Children collection can be substituted with any source that implements one of the following interfaces:
 
@@ -49,7 +49,7 @@ Add two new classes -> *File* and *Folder* that implement the above interface:
 
 #### __C#__
 
-{{region radtreemap-populating-with-data-radtreemap_2}}
+```C#
 	public class Folder : IDiskItem
 	{
 		private string _name;
@@ -118,11 +118,11 @@ Add two new classes -> *File* and *Folder* that implement the above interface:
 			get { return null; }
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreemap-populating-with-data-radtreemap_3}}
+```VB.NET
 	Public Class Folder
 		Implements IDiskItem
 
@@ -211,26 +211,26 @@ Add two new classes -> *File* and *Folder* that implement the above interface:
 		End Property
 	
 	End Class
-{{endregion}}
+```
 
 In *XAML* add two __TypeDefinitions__ using the *__TypeDefinitions__* collection - one for the File and one for the Folder. The __ValuePath__ property specifies from where the data for the values should be taken. You may also control the Labels that are to be displayed for each tile using the __LabelPath__ property. Note how the __ChildrenPath__ property specifies the children of the Folder TypeDefinition:
 
 #### __XAML__
 
-{{region radtreemap-populating-with-data-radtreemap_4}}
+```XAML
 	<telerik:RadTreeMap Name="treeMap1">
 		<telerik:RadTreeMap.TypeDefinitions>
 						<telerik:TypeDefinition TargetTypeName="Folder" ValuePath="Size" ChildrenPath="Children" LabelPath="Name" />
 						<telerik:TypeDefinition TargetTypeName="File" ValuePath="Size" LabelPath="Name" />
 		</telerik:RadTreeMap.TypeDefinitions>
 	</telerik:RadTreeMap>
-{{endregion}}
+```
 
 Here is a sample datasource:
 
 #### __C#__
 
-{{region radtreemap-populating-with-data-radtreemap_6}}
+```C#
 	public MainPage() // MainWindow in WPF
 	{
 		InitializeComponent();
@@ -245,17 +245,17 @@ Here is a sample datasource:
 				new File("pagefile.sys", 114)};
 		treeMap1.ItemsSource = datasource;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreemap-populating-with-data-radtreemap_5}}
+```VB.NET
 	Public Sub New() ' MainWindow in WPF '
 		InitializeComponent()
 			Dim datasource = New List(Of IDiskItem)() From {New Folder("Windows", New List(Of IDiskItem)() With { New Folder("Fonts", New List(Of IDiskItem)() With { New File("Arial", 256), New File("Tahoma", 246)}), New Folder("Logs", New List(Of IDiskItem)() With { New File("Log1.log", 112), New File("Log2.log", 156)}) }), New Folder ("My Documents", New List(Of IDiskItem)() With { New File("Document1.txt", 88), New File("Document2.txt", 55)}), New File("pagefile.sys", 114)}
 		treeMap1.ItemsSource = datasource
 	End Sub
-{{endregion}}
+```
 
 The result is shown below:
 ![Rad Tree Map Data Population](images/RadTreeMap_DataPopulation.png)

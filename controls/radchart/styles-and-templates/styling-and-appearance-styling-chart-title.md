@@ -28,9 +28,9 @@ This topic will show you how to perform the second one.
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-title_0}}
+```XAML
 	xmlns:telerikCharting=&quot;clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting&quot;
-{{endregion}}
+```
 
 
 
@@ -70,9 +70,9 @@ To apply the style to the real control, set it to the __TitleStyle__ property of
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-title_1}}
+```XAML
 	<telerik:RadChart x:Name="radChart" TitleStyle="{StaticResource ChartTitleStyle}" />
-{{endregion}}
+```
 
 
 
@@ -88,7 +88,7 @@ Here is the final XAML for the __Style__ after the modifications:
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-title_2}}
+```XAML
 	<LinearGradientBrush x:Key="ChartTitleBackground" StartPoint="0.5,0" EndPoint="0.5,1">
 	    <GradientStop Offset="1" Color="#FFEDEDED" />
 	    <GradientStop Color="White" />
@@ -137,7 +137,7 @@ Here is the final XAML for the __Style__ after the modifications:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 

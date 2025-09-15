@@ -20,7 +20,7 @@ The Telerik __RadChart__ control can be used with great success with the __Model
 
 #### __C#__
 
-{{region cs-radchart-how-to-mvvm-support_0}}
+```C#
 	public class Person : INotifyPropertyChanged
 	{
 	    private double grade;
@@ -60,13 +60,13 @@ The Telerik __RadChart__ control can be used with great success with the __Model
 	            this.PropertyChanged( this, new PropertyChangedEventArgs( propertyName ) );
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-mvvm-support_1}}
+```VB.NET
 	Public Class Person
 	    Implements INotifyPropertyChanged
 	    Private m_grade As Double
@@ -102,7 +102,7 @@ The Telerik __RadChart__ control can be used with great success with the __Model
 	
 	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 
 
@@ -117,7 +117,7 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 
 #### __C#__
 
-{{region cs-radchart-how-to-mvvm-support_2}}
+```C#
 	public class PersonViewModel : INotifyPropertyChanged
 	{
 	    private Person _person;
@@ -199,13 +199,13 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 	        return Color.FromArgb( a, r, g, b );
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-mvvm-support_3}}
+```VB.NET
 	Public Class PersonViewModel
 	    Implements INotifyPropertyChanged
 	    Private _person As Person
@@ -286,7 +286,7 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 	
 	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 
 
@@ -303,9 +303,9 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-mvvm-support_4}}
+```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8"/>
-{{endregion}}
+```
 
 
 
@@ -321,7 +321,7 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 
 #### __C#__
 
-{{region cs-radchart-how-to-mvvm-support_5}}
+```C#
 	private void MVVM_Loaded( object sender, RoutedEventArgs e )
 	{
 	    radChart.DefaultView.ChartArea.AxisY.AutoRange = false;
@@ -337,13 +337,13 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 	    radChart.SeriesMappings.Add( seriesMapping );
 	    radChart.ItemsSource = this.GetData();
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-mvvm-support_6}}
+```VB.NET
 	Private Sub MVVM_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    radChart.DefaultView.ChartArea.AxisY.AutoRange = False
 	    radChart.DefaultView.ChartArea.AxisY.MinValue = 0
@@ -360,7 +360,7 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 	    radChart.SeriesMappings.Add(seriesMapping)
 	    radChart.ItemsSource = Me.GetData()
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -368,7 +368,7 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 
 #### __C#__
 
-{{region cs-radchart-how-to-mvvm-support_7}}
+```C#
 	private List<PersonViewModel> GetData()
 	{
 	    Random rand = new Random( DateTime.Now.Millisecond );
@@ -380,13 +380,13 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 	        modelList.Add( new PersonViewModel( person ) );
 	    return modelList;
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-mvvm-support_8}}
+```VB.NET
 	Private Function GetData() As List(Of PersonViewModel)
         Dim rand As Random = New Random(DateTime.Now.Millisecond)
         Dim studentList As List(Of Person) = New List(Of Person)
@@ -402,7 +402,7 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
         Next
         Return modelList
     End Function
-{{endregion}}
+```
 
 
 
@@ -417,7 +417,7 @@ Here is the method that will be passed to the delegate.
 
 #### __C#__
 
-{{region cs-radchart-how-to-mvvm-support_9}}
+```C#
 	public Style BuildCustomItemStyle( Control item, Style style, DataPoint point, DataSeries dataSeries )
 	{
 	    if ( ( item as BaseChartItem ) == null )
@@ -431,13 +431,13 @@ Here is the method that will be passed to the delegate.
 	    newStyle.Setters.Add( new Setter( Shape.FillProperty, brush ) );
 	    return newStyle;
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-mvvm-support_10}}
+```VB.NET
 	Public Function BuildCustomItemStyle(item As Control, style As Style, point As DataPoint, dataSeries As DataSeries) As Style
 	    If TryCast(item, BaseChartItem) Is Nothing Then
 	        Return style
@@ -449,7 +449,7 @@ Here is the method that will be passed to the delegate.
 	    newStyle.Setters.Add(New Setter(Shape.FillProperty, brush))
 	    Return newStyle
 	End Function
-{{endregion}}
+```
 
 
 
@@ -457,17 +457,17 @@ To pass this method to the __RadChart__ use its __CustomItemStyleDelegate__ prop
 
 #### __C#__
 
-{{region cs-radchart-how-to-mvvm-support_11}}
+```C#
 	this.radChart.CreateItemStyleDelegate = this.BuildCustomItemStyle;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-mvvm-support_12}}
+```VB.NET
 	Me.radChart.CreateItemStyleDelegate = Me.BuildCustomItemStyle
-{{endregion}}
+```
 
 
 
@@ -480,7 +480,7 @@ Additionally you may want to remove the Background from the SeriesItemsLabels. T
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-mvvm-support_13}}
+```XAML
 	<Style x:Key="MySeriesItemLabel_Style" TargetType="telerik:SeriesItemLabel">
 	    <Setter Property="Padding" Value="2,0" />
 	    <Setter Property="Foreground" Value="Black"/>
@@ -526,7 +526,7 @@ Additionally you may want to remove the Background from the SeriesItemsLabels. T
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
@@ -534,17 +534,17 @@ Don't forget to apply the Style to the SeriesItemLabelStyle property of the Seri
 
 #### __C#__
 
-{{region cs-radchart-how-to-mvvm-support_14}}
+```C#
 	radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["MySeriesItemLabel_Style"] as Style;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-mvvm-support_15}}
+```VB.NET
 	radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = TryCast(Me.Resources("MySeriesItemLabel_Style"), Style)
-{{endregion}}
+```
 
 
 

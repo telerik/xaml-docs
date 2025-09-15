@@ -16,9 +16,9 @@ GridLine annotations are lines or circles that cross the chart grid at a locatio
 
 In the case of RadCartesianChart, the CartesianGridLineAnnotation represents a vertical or horizontal line that crosses the entire plot area. 
 
-#### __[XAML] Example 1: Adding CartesianGridLineAnnotations__
+__Example 1: Adding CartesianGridLineAnnotations__
 
-{{region xaml-radchartview-annotations-gridline_0}}
+```XAML
 	<telerik:RadCartesianChart x:Name="cartesianChart">
 		<telerik:RadCartesianChart.Annotations>
 			<telerik:CartesianGridLineAnnotation Axis="{Binding ElementName=verticalAxis}" 
@@ -49,7 +49,7 @@ In the case of RadCartesianChart, the CartesianGridLineAnnotation represents a v
 			<telerik:LinearAxis x:Name="horizontalAxis"/>
 		</telerik:RadCartesianChart.HorizontalAxis>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: CartesianGridLineAnnotations in RadCartesianChart__
 ![Rad Chart View-annotations-cartesian-gridline](images/RadChartView-annotations-cartesian-gridline.png)
@@ -58,9 +58,9 @@ In the case of RadCartesianChart, the CartesianGridLineAnnotation represents a v
 
 PolarAxisGridLineAnnotations represent concentric circles that cross the polar axis at the corresponding __Value__.
 
-#### __[XAML] Example 2: Adding PolarAxisGridLineAnnotation__
+__Example 2: Adding PolarAxisGridLineAnnotation__
 
-{{region xaml-radchartview-annotations-gridline_1}}
+```XAML
 	<telerik:RadPolarChart>
 		<telerik:RadPolarChart.Annotations>
 			<telerik:PolarAxisGridLineAnnotation Value="2" Stroke="Red"/>
@@ -86,7 +86,7 @@ PolarAxisGridLineAnnotations represent concentric circles that cross the polar a
 			<telerik:PolarAxis/>
 		</telerik:RadPolarChart.PolarAxis>
 	</telerik:RadPolarChart>
-{{endregion}}
+```
 
 #### __Figure 2: PolarAxisGridLineAnnotations in RadPolarChart__
 ![Rad Chart View-annotations-polar-gridline](images/RadChartView-annotations-polar-gridline.png)
@@ -96,9 +96,9 @@ PolarAxisGridLineAnnotations represent concentric circles that cross the polar a
 RadialAxisGridLineAnnotations basically represent the radius of a RadPolarChart.
         
 
-#### __[XAML] Example 3: Defining RadialAxisGridLineAnnotation__
+__Example 3: Defining RadialAxisGridLineAnnotation__
 
-{{region xaml-radchartview-annotations-gridline_2}}
+```XAML
 	<telerik:RadPolarChart>
 		<telerik:RadPolarChart.Annotations>
 			<telerik:RadialAxisGridLineAnnotation Value="30" Stroke="Red"/>
@@ -124,7 +124,7 @@ RadialAxisGridLineAnnotations basically represent the radius of a RadPolarChart.
 			<telerik:PolarAxis/>
 		</telerik:RadPolarChart.PolarAxis>
 	</telerik:RadPolarChart>
-{{endregion}}
+```
 
 #### __Figure 3: RadialAxisGridLineAnnotations in RadPolarChart__
 ![Rad Chart View-annotations-radial-gridline](images/RadChartView-annotations-radial-gridline.png)

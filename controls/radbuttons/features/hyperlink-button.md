@@ -18,10 +18,10 @@ __RadHyperlinkButton__ provides the RadButton functionality extending it with Hy
 
 The most common properties for utilizing the control are its __NavigateUri__ and __Content__ properties. The former one is intended to be used for navigating to the needed Uri when __RadHyperlinkButton__ is clicked. The latter one sets the content that will be visualized by the control. Also, the location at which the link to be opened can be set through the __TargetName__ string property.
 
-#### __[XAML] Example 1: Setting the NavigateUri and Content__
-{{region radhyperlinkbutton-gettingstarted_0}}
+__Example 1: Setting the NavigateUri and Content__
+```XAML
 	<telerik:RadHyperlinkButton NavigateUri="http://www.progress.com" Content="Hyperlink Button" TargetName="_blank"/>
-{{endregion}}
+```
 
 #### __Figure 1: RadHyperlinkButton in Normal State__
 ![RadHyperlinkButton in Normal State](images/RadHyperlinkButton_GettingStarted_01.png)

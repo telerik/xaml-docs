@@ -73,7 +73,7 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_0}}
+```C#
 
     SdtCheckBoxState checkedBoxState = new SdtCheckBoxState();
     checkedBoxState.Font = new FontFamily("Arial");
@@ -87,7 +87,7 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
     properties.CheckedState = checkedBoxState;
     properties.UncheckedState = uncheckedBoxState;
     properties.Checked = true;
-{{endregion}}
+```
 
 ### ComboBox and DropDownList
 
@@ -102,7 +102,7 @@ The __ComboBox__ and __DropDownList__ provide the user with options to choose fr
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_1}}
+```C#
 
     List<ListItem> items = new List<ListItem>();
     items.Add(new ListItem() { DisplayText = "Choice 1", Value = "a" });
@@ -111,7 +111,7 @@ The __ComboBox__ and __DropDownList__ provide the user with options to choose fr
     ComboBoxProperties properties = new ComboBoxProperties();
     properties.Items = items;
     properties.SelectedItem = items.Where(li => li.Value == "a").FirstOrDefault();
-{{endregion}}
+```
 
 ### Date
 
@@ -126,7 +126,7 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_2}}
+```C#
 
     DateProperties properties = new DateProperties();
     properties.DateFormat = "MM/dd/yyyy H:mm";
@@ -134,7 +134,7 @@ The __Date__ content control allows you to enter a date by using a calendar. The
     properties.FullDate = DateTime.Now;
     properties.Calendar = SdtCalendar.Gregorian;
     properties.DateMappingType = DateMappingType.DateTime;
-{{endregion}}
+```
 
 ### Text
 
@@ -145,11 +145,11 @@ The __Text__ content control allows you to enter plain text. The text content co
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_3}}
+```C#
 
     TextProperties properties = new TextProperties();
     properties.IsMultiline = true;
-{{endregion}}
+```
 
 ### RepeatingSection
 
@@ -160,12 +160,12 @@ The __Text__ content control allows you to enter plain text. The text content co
 
 #### __C#__
 
-{{region radrichtextbox-features-content-controls_4}}
+```C#
 
     RepeatingSectionProperties properties = new RepeatingSectionProperties();
     properties.SectionTitle = "Title";
     properties.AllowInsertAndDeleteSections = true;
-{{endregion}}
+```
 
 # See Also
 * [Manipulating Annotations]({%slug radrichtextbox-features-document-elements-manipulating-annotations%}) 

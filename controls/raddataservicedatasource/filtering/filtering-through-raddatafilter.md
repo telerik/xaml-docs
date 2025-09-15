@@ -18,7 +18,7 @@ If you bind __RadDataFilter.Source__ to __RadDataServiceDataSource.DataView__, y
 
 #### __XAML__
 
-{{region raddataservicedatasource-filtering-filtering-through-raddatafilter_0}}
+```XAML
 
 	<Grid x:Name="LayoutRoot" Background="White">
 	 <Grid.RowDefinitions>
@@ -35,7 +35,7 @@ If you bind __RadDataFilter.Source__ to __RadDataServiceDataSource.DataView__, y
 	    IsBusy="{Binding IsBusy, ElementName=customersDataSource}" 
 	    ShowGroupPanel="False"/> 
 	</Grid>
-{{endregion}}
+```
 
 
 

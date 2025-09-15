@@ -18,11 +18,11 @@ With the Q1 2014 version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %
 
 #### __XAML__
 
-{{region radscheduleview-howto-remove-delete-button_5}}
+```XAML
 	<telerik:RadScheduleView ShowAppointmentDeleteButton="False">
 	    ...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 >Setting the __ShowAppointmentDeleteButton__ property to false will only remove the button - you still be able to delete an Appointment by pressing the Delete keyboard button. In order to totally disable the deleting of the Appointments please check the [Disable the Confirm Delete Dialog](#disable-the-confirm-delete-dialog) section from this article.          
 
@@ -38,7 +38,7 @@ First of all you will have to implement a custom __AppointmentStyleSelector__ wi
 
 #### __C#__
 
-{{region radscheduleview-howto-remove-delete-button_1}}
+```C#
 	public class CustomAppointmentStyleSelector : OrientedAppointmentItemStyleSelector
 	{
 	    public Style CustomHorizontalStyle { get; set; }
@@ -59,14 +59,14 @@ First of all you will have to implement a custom __AppointmentStyleSelector__ wi
 	        return base.SelectStyle(item, container, activeViewDefinition);
 	    }
 	}
-{{endregion}}
+```
 
 
 The styles will be used in order to apply a templates without the delete buttons. So the next step will be to extract both the default __AppointmentItemVerticalControlTemplate__ and __AppointmentItemHorizontalControlTemplate__ ControlTemplates from the used __RadScheduleView__ theme. You can find it in Themes.Implicit folder which is located in the installation folder of the controls. Drill down to find the __Telerik.Windows.Controls.ScheduleView.xaml__ file in that directory. From this resource file you can extract the templates and any needed resources that it uses. Afterwards you could just place them in the App.xaml file as Application resources as shown below:        
 
 #### __XAML__
 
-{{region radscheduleview-howto-remove-delete-button_4}}
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -84,13 +84,13 @@ The styles will be used in order to apply a templates without the delete buttons
 	        </ControlTemplate>
 	    </ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 After having both ControlTemplates you could apply them in XAML through the custom __AppointmentStyleSelector__ as follows:        
 
 #### __XAML__
 
-{{region radscheduleview-howto-remove-delete-button_1}}
+```XAML
 	<local:CustomAppointmentStyleSelector x:Key="CustomAppointmentStyleSelector">
 	    <local:CustomAppointmentStyleSelector.CustomHorizontalStyle>
 	        <Style TargetType="telerik:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
@@ -103,7 +103,7 @@ After having both ControlTemplates you could apply them in XAML through the cust
 	        </Style>
 	    </local:CustomAppointmentStyleSelector.CustomVerticalStyle>
 	</local:CustomAppointmentStyleSelector>
-{{endregion}}
+```
 
 >Note that when using __Implicit Styles__ you don't need to replace the whole style, but just part of it when it is based on the default style.					
 
@@ -111,7 +111,7 @@ You also need to set the custom __AppointmentStyleSelector__ to the __RadSchedul
 
 #### __XAML__
 
-{{region radscheduleview-howto-remove-delete-button_2}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" AppointmentStyleSelector="{StaticResource CustomAppointmentStyleSelector}">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	        <telerik:DayViewDefinition />
@@ -119,15 +119,15 @@ You also need to set the custom __AppointmentStyleSelector__ to the __RadSchedul
 	        <telerik:TimelineViewDefinition />
 	    </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Until this moment the Appointments should have the default apperance. Now you just need to find the Button named DeleteButton and remove it from both the __AppointmentItemVerticalControlTemplate__ and __AppointmentItemHorizontalControlTemplate__ ControlTemplates.        
 
 #### __XAML__
 
-{{region radscheduleview-howto-remove-delete-button_3}}
+```XAML
 	<telerik:RadButton x:Name="DeleteButton" ... />                       
-{{endregion}}
+```
 
 And here is the final result:
 
@@ -139,7 +139,7 @@ If you also want to avoid the appearance of the delete confirm dialog, you will 
 
 #### __C#__
 
-{{region radscheduleview-howto-remove-delete-button_2}}
+```C#
 	private void ScheduleView_ShowDialog(object sender, Telerik.Windows.Controls.ShowDialogEventArgs e)
 	{
 	    if (e.DialogViewModel is ConfirmDialogViewModel)
@@ -148,7 +148,7 @@ If you also want to avoid the appearance of the delete confirm dialog, you will 
 	        e.Cancel = true;
 	    }
 	}
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ScheduleView/RemoveDeleteButton).         
 

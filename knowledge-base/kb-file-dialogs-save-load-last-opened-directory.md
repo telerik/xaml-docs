@@ -23,8 +23,8 @@ How to implement custom behavior that saves and restores the last opened directo
 
 To ensure `RadOpenFileDialog` remembers the last opened directory even across different application sessions, implement a custom logic to store the last directory path. This approach involves saving the directory path to a persistent storage, such as application settings or a file, and then retrieving it the next time the dialog is opened.
 
-#### __[C#]__
-{{region kb-file-dialogs-save-load-last-opened-directory-0}}
+
+```C#
     public partial class App : Application
     {
         private IsolatedStorageFile isoStore = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
@@ -78,10 +78,10 @@ To ensure `RadOpenFileDialog` remembers the last opened directory even across di
             }
         }
     }
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-file-dialogs-save-load-last-opened-directory-1}}
+
+```C#
 	private void OnShowDialogButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadOpenFileDialog openFileDialog = new RadOpenFileDialog
@@ -95,6 +95,6 @@ To ensure `RadOpenFileDialog` remembers the last opened directory even across di
 			((App)App.Current).UpdateFileDialogDirectoryCache(System.IO.Path.GetDirectoryName(fileName));
 		}
 	}
-{{endregion}}
+```
 
 

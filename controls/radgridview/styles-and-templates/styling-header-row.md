@@ -34,13 +34,13 @@ You have two options:
 
 >To learn how to modify the default GridViewHeaderRow style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Example 1: Styling all header rows of an application__
+__Example 1: Styling all header rows of an application__
 
-	{{region xaml-gridview-styling-header-row-1}}
+	```XAML
 	<Style TargetType="telerik:GridViewHeaderRow">
 	    <Setter Property="Background" Value="Red"/>
 	</Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewHeaderRowStyle__.
 
@@ -48,11 +48,11 @@ You have two options:
 
 __RadGridView's header row__ can also be styled by creating an appropriate __Style__ for the **GridViewHeaderRow**  element and setting it as the __HeaderRowStyle__ property.
 
-#### __[XAML] Example 2: Setting RadGridView's HeaderRowStyle__
+__Example 2: Setting RadGridView's HeaderRowStyle__
 
-	{{region xaml-gridview-styling-header-row-2}}
+	```XAML
 	<telerik:RadGridView HeaderRowStyle="{StaticResource HeaderRowStyle}" />
-{{endregion}}
+```
 
 #### __Figure 1: RadGridView with styled header row__
 

@@ -17,9 +17,9 @@ The need of reusable DataTemplates is a common scenario with quite few universal
 
 Here is an example with RadPropertyGrid that has its Item property bound to a Button:
 
-#### __[XAML] Example 1: Using AutoBindBehavior__
+__Example 1: Using AutoBindBehavior__
 
-	{{region xaml-radpropertygrid-autobind_0}}
+	```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	  <Grid.Resources>
 	    <DataTemplate x:Key="editorTemplate">
@@ -43,7 +43,7 @@ Here is an example with RadPropertyGrid that has its Item property bound to a Bu
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	  </telerik:RadPropertyGrid>
 	</Grid>
-{{endregion}}
+```
 
 ![Rad Property Grid Sets Autobind](images/RadPropertyGrid_Sets_Autobind.png)
 
@@ -89,16 +89,16 @@ In most cases when a custom __DataTemplate__ is defined, the element within it w
 ## Set the BindingMode of Custom Data Type
 By default, the __AutoBindBehavior__ supports __TwoWay Binding__ only for the data types listed in the previous section. For a __custom data type__, the __BindingMode__ is __OneWay__. This behavior can be altered through the __BindingModeOverride__ property. 
 
-#### __[XAML]Example 2: Setting the BindingModeOverride property to TwoWay__
+__Example 2: Setting the BindingModeOverride property to TwoWay__
 
-	{{region xaml-radpropertygrid-autobind_1}}
+	```XAML
 	<Grid.Resources>
 	  <DataTemplate x:Key="editorTemplate1">
 	    <TextBox Foreground="Red" FontWeight="Bold"
 	             telerik:AutoBindBehavior.BindingModeOverride="TwoWay"/>
 	  </DataTemplate>
 	</Grid.Resources>
-{{endregion}}
+```
           
 
 ## See Also

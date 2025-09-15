@@ -18,18 +18,16 @@ This article describes how to data bind business objects to __RadTileView__.
 
 * Create a new class named __CustomerAccount__. The structure of the class is shown in Example 2.
 
-	#### __[C#] Example 1: The business class that will be used as a model of the tileview items__
-	{{region radtileview-populating-binding-to-collection_0}}
+	__Example 1: The business class that will be used as a model of the tileview items__
+	```C#
 		public class CustomerAccount
 		{
 			public string Name { get; set; }
 			public string City { get; set; }
 			public string Description { get; set; }
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 1: The business class that will be used as a model of the tileview items__
-	{{region radtileview-populating-binding-to-collection_1}}
+	```
+```VB.NET
 		Public Class CustomerAccount
 			Private _Name As String
 				Public Property Name() As String
@@ -61,12 +59,12 @@ This article describes how to data bind business objects to __RadTileView__.
 					End Set
 				End Property	
 		End Class
-	{{endregion}}	
+	```	
 
 * Create a class that defines a collection of business objects.
 
-	#### __[C#] Example 2: The class that holds a collection of the business objects.__
-	{{region radtileview-populating-binding-to-collection_2}}
+	__Example 2: The class that holds a collection of the business objects.__
+	```C#
 		public class BankViewModel
 		{
 			public ObservableCollection<CustomerAccount> Customers { get; set; }
@@ -93,10 +91,8 @@ This article describes how to data bind business objects to __RadTileView__.
 				});            
 			}
 		}
-	{{endregion}}
-		
-	#### __[VB.NET] Example 2: The class that holds a collection of the business objects.__
-	{{region radtileview-populating-binding-to-collection_3}}
+	```
+```VB.NET
 		Public Class BankViewModel
 			Public Property Customers() As ObservableCollection(Of CustomerAccount)
 				Get
@@ -126,36 +122,34 @@ This article describes how to data bind business objects to __RadTileView__.
 				})
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 	As you can see, the __BankViewModel__ class has a reference to an ObservableCollection of __CustomerAccount__ objects. This collection is populated in the AddCustomers() method and it will be bound to the __ItemsSource__ property of __RadTileView__.
 
 * Set the DataContext of your application to a new instance of the created view model.
 
-	#### __[C#] Example 3: Setting the DataContext of the application.__
-	{{region radtileview-populating-binding-to-collection_4}}
+	__Example 3: Setting the DataContext of the application.__
+	```C#
 		public UserControl()
 		{
 			InitializeComponent();
 			this.DataContext = new BankViewModel();
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 3: Setting the DataContext of the application.__
-	{{region radtileview-populating-binding-to-collection_5}}
+	```
+```VB.NET
 		Public Sub New()
 			InitializeComponent()
 			Me.DataContext = New BankViewModel()
 		End Sub
-	{{endregion}}
+	```
 
 * Then bind the __ItemsSource__ property to the collection of the view model.
 
-	#### __[XAML] Example 4: Setting the ItemsSource of the RadTileView control.__
-	{{region radtileview-populating-binding-to-collection_6}}
+	__Example 4: Setting the ItemsSource of the RadTileView control.__
+	```XAML
 		<telerik:RadTileView x:Name="xTileView" 
 						   ItemsSource="{Binding Customers}" />
-	{{endregion}}
+	```
 
 * The result should be similar to Figure 1.
 			
@@ -174,21 +168,21 @@ You can modify the visual appearance of the item's header using either the __Ite
 
 	Create a __DataTemplate__ and set it to the __RadTileView__'s __ItemTemplate__ property. 
  
-	#### __[XAML] Example 5: Declaring the DataTemplate__
-	{{region radtileview-populating-binding-to-collection_7}}
+	__Example 5: Declaring the DataTemplate__
+	```XAML
 		<DataTemplate x:Key="ItemTemplate">
 				<TextBlock Text="{Binding Name}" />
 		</DataTemplate>
-	{{endregion}}
+	```
 
 	Update the __RadTileView__'s declaration and set its __ItemTemplate__ property like in the example below:
 
-	#### __[XAML] Example 6: Declaring the DataTemplate__
-	{{region radtileview-populating-binding-to-collection_8}}
+	__Example 6: Declaring the DataTemplate__
+	```XAML
 		<telerik:RadTileView x:Name="xTileView" 
 						   ItemsSource="{Binding Customers}"
 						   ItemTemplate="{Binding ItemTemplate}"/>
-	{{endregion}}
+	```
 	  
 * Using the __DisplayMemberPath__ property	
 	
@@ -196,12 +190,12 @@ You can modify the visual appearance of the item's header using either the __Ite
 
 	__Example 7__ demonstrates how to set the __DisplayMemberPath__ property.		
 	  
-	#### __[XAML] Example 7: Setting the DisplayMemberPath__
-	{{region radtileview-populating-binding-to-collection_9}}
+	__Example 7: Setting the DisplayMemberPath__
+	```XAML
 		<telerik:RadTileView x:Name="xTileView" 
 							 DisplayMemberPath="Name"
 							 ItemsSource="{Binding Customers}"/>
-	{{endregion}}	
+	```	
   
 Figure 2 shows the end result.
 
@@ -210,24 +204,24 @@ Figure 2 shows the end result.
 
 You can modify the visual appearance of the item's content using the __ContentTemplate__ property of RadTileView.
 
-#### __[XAML] Example 8: Declaring the content DataTemplate__
-{{region radtileview-populating-binding-to-collection_10}}
+__Example 8: Declaring the content DataTemplate__
+```XAML
 	<DataTemplate x:Key="ContentTemplate">
 		<StackPanel>
 			<TextBlock Text="{Binding City,StringFormat='City: {0}'}"/>
 			<TextBlock Text="{Binding Description,StringFormat='Decription: {0}'}" TextWrapping="Wrap"/>
 		</StackPanel>
 	</DataTemplate>
-{{endregion}}
+```
 
 Update your __RadTileView__'s declaration and set its __ContentTemplate__ property.
 
-#### __[XAML] Example 9: Declaring the content DataTemplate__
-{{region radtileview-populating-binding-to-collection_11}}
+__Example 9: Declaring the content DataTemplate__
+```XAML
 	<telerik:RadTileView ItemsSource="{Binding Customers}"
                          DisplayMemberPath="Name"
                          ContentTemplate="{StaticResource ContentTemplate}"/>
-{{endregion}}
+```
 
 The final result is shown on the next image:
 

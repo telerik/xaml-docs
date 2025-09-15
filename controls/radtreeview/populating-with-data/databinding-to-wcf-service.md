@@ -22,11 +22,11 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_0}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 		   IsLoadOnDemandEnabled="True" IsExpandOnSingleClickEnabled="True"
 		   LoadOnDemand="radTreeView_LoadOnDemand"/>
-	{{endregion}}
+	```
 
 	The treeview will be bound to a data source object, that has a property __Categories__. When the __LoadOnDemand__ event of __RadTreeView__ is fired, the selected category asynchronously loads its related products. 
 
@@ -34,11 +34,11 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_1}}
+	```C#
 		public class NorthwindDataSource
 		{
 		}
-	{{endregion}}
+	```
 
 * Add a reference to your WCF Service
 * In the __NorthwindDataSource__ class add a reference to an __ObservableCollection__ of __Categories.__
@@ -46,7 +46,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_3}}
+	```C#
 		public class NorthwindDataSource
 		{
 			private SampleWcfServiceClient serviceClient;
@@ -61,34 +61,34 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 				set;
 			}
 		}
-	{{endregion}}
+	```
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Categories__ from the database: 
 
 	#### __C#__  
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_5}}
+	```C#
 		this.serviceClient.LoadCategoriesCompleted += new EventHandler<LoadCategoriesCompletedEventArgs>( serviceClient_LoadCategoriesCompleted );
 		this.serviceClient.LoadCategoriesAsync();
-	{{endregion}}
+	```
 
 	#### __C#__  
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_6}}
+	```C#
 		foreach ( Categories c in serviceClient.LoadCategories() )
 		{
 			this.Categories.Add( c );
 		}
-	{{endregion}}		
+	```		
 
 * Update your treeview declaration - set the __ItemsSource__ and __ItemTemplate__ properties. 
 
 	#### __XAML__  
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_14}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 			IsLoadOnDemandEnabled="True" IsExpandOnSingleClickEnabled="True"
 			LoadOnDemand="radTreeView_LoadOnDemand"
 			ItemTemplate="{StaticResource CategoryTemplate}"
 			ItemsSource="{Binding Source={StaticResource DataSource}, Path=Categories}"/>
-	{{endregion}}
+	```
 
 	Run your demo, the result can be seen on the next picture:
 
@@ -103,7 +103,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 * Add the following method to the __NorthwindDataSource__ class, which aims to load the products for the expanded category: 
 
 	#### __C#__
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_15}}
+	```C#
 		public void BeginLoadingProducts( Categories category )
 		{
 			serviceClient.LoadProductsByCategoryIdCompleted += new EventHandler<LoadProductsByCategoryIdCompletedEventArgs>( serviceClient_LoadProductsByCategoryIdCompleted );
@@ -120,10 +120,10 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 				}
 			}
 		}
-	{{endregion}}
+	```
 
 	#### __C#__
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_16}}
+	```C#
 		public void LoadProducts( Categories category )
 		{
 			category.Products = new ObservableCollection<Products>();
@@ -132,12 +132,12 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 				category.Products.Add( p );
 			}
 		}
-	{{endregion}}
+	```
 
 	The body of the exposed __LoadProductsByCategoryId()__ method is shown on the code snippet below.
 		
 	#### __C#__
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_24}}
+	```C#
 		[OperationContract]
 		public List<Products> LoadProductsByCategoryId( int categoryId )
 		{
@@ -148,12 +148,12 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 					select p;
 			return q.ToList();
 		}
-	{{endregion}}
+	```
 
 * Add the following code to the load on demand event handler, which you declared on step 1. 
 
 	#### __C#__  
-	{{region radtreeview-populating-with-data-databinding-to-wcf-service_19}}
+	```C#
 		private void radTreeView_LoadOnDemand( object sender, Telerik.Windows.RadRoutedEventArgs e )
 		{
 			RadTreeViewItem item = e.OriginalSource as RadTreeViewItem;
@@ -167,7 +167,7 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 				item.IsLoadOnDemandEnabled = false;
 			}
 		}
-	{{endregion}}
+	```
 
 	>When there are no items to add, and you want to prevent the __LoadOnDemand__ event to fire again, set the __IsLoadOnDemandEnabled__ property to __False__ to the __RadTreeViewItem__ that has fired the __LoadOnDemand__ event.
 

@@ -38,14 +38,14 @@ To retrieve the corresponding __IControlSpellChecker__ for your control (in our 
 
 #### __C#__
 
-{{region radspellchecker-multilanguage-support_0}}
+```C#
 	//Here we take the IControlSpellChecker instance for the TextBox Control
 	IControlSpellChecker controlSpellchecker = ControlSpellCheckersManager.GetControlSpellChecker(typeof(TextBox));
 	//We get the SpellChecker property and cast it to DocumentSpellChecker (which inherits from ISpellChecker) 
 	DocumentSpellChecker documentSpellChecker = (DocumentSpellChecker) controlSpellchecker.SpellChecker; 
 	//Then we set the SpellCheckingCulture of DocumentSpellChecker to Spanish
 	documentSpellChecker.SpellCheckingCulture = new System.Globalization.CultureInfo("es-ES");
-{{endregion}}
+```
 
 
 
@@ -65,14 +65,14 @@ In fact the code here is pretty much the same as the code above:
 
 #### __C#__
 
-{{region radspellchecker-multilanguage-support_1}}
+```C#
 	//Here we take the IControlSpellChecker instance for the TextBoxControl
 	IControlSpellChecker controlSpellchecker = ControlSpellCheckersManager.GetControlSpellChecker(typeof(TextBox));
 	//We get the SpellChecker property and cast it to DocumentSpellChecker(which inherits from ISpellChecker) 
 	DocumentSpellChecker documentSpellChecker = (DocumentSpellChecker) controlSpellchecker.SpellChecker; 
 	//Then we add the class deriving from RadDictionary and the Culture info to the DocumentSpellChecker(we are using Spanish again for the example)
 	documentSpellChecker.AddDictionary(new RadEs_ESDictionary(), new System.Globalization.CultureInfo("es-ES"));
-{{endregion}}
+```
 
 
 
@@ -81,7 +81,7 @@ In this case the RadEs_ESDictionary class is located in another assembly and inh
 
 #### __C#__
 
-{{region radspellchecker-multilanguage-support_2}}
+```C#
 	public class RadEs_ESDictionary : RadDictionary
 	{
 	   public RadEs_ESDictionary()
@@ -93,7 +93,7 @@ In this case the RadEs_ESDictionary class is located in another assembly and inh
 	        this.Load(stream);
 	   }
 	}
-{{endregion}}
+```
 
 
 

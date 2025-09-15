@@ -40,19 +40,19 @@ The purpose of the SelectedItem property is to get or set the currently selected
 
 * When your __RadListBox__ is with static data (declared in XAML), the SelectedItem property is of type RadListBoxItem.
 
-#### __[C#]  Getting the SelectedItem of type RadListBoxItem__
+__Getting the SelectedItem of type RadListBoxItem__
 
-{{region cs-radlistbox-features-selection_0}}
+```C#
 	var selectedItem = radListBox.SelectedItem as RadListBoxItem;
-{{endregion}}
+```
 
 * When your __RadListBox__ is [data bound to a collection of custom objects]({%slug radlistbox-populating-with-data-binding-to-object%}), the SelectedItem is of the type of the custom object.     			
 
-#### __[C#]  Getting the SelectedItem of type custom object__
+__Getting the SelectedItem of type custom object__
 
-{{region cs-radlistbox-features-selection_1}}
+```C#
 	var customer = radListBox.SelectedItem as Customer;
-{{endregion}}
+```
 
 ## Using SelectedValue and SelectedValuePath/SelectedValueBinding
 
@@ -68,24 +68,24 @@ The following example demonstrates the usage of the __SelectedItem__, __Selected
 
 Imagine that you have a business object named Customer with two members(properties): Name and City. And a __RadListBox__ control which is [data bound]({%slug radlistbox-populating-with-data-binding-to-object%}) to a list of Customer objects. 
 
-#### __[C#]  Business object named Customer__
+__Business object named Customer__
 
-{{region cs-radlistbox-features-selection_3}}
+```C#
 	public class Customer
 	{
 		public string Name { get; set; }
 		public string City { get; set; }
 	}
-{{endregion}}
+```
 
-#### __[XAML]  Initializing of RadListBox__
+__Initializing of RadListBox__
 
-{{region xaml-radlistbox-features-selection_4}}
+```XAML
 	<telerik:RadListBox  Width="300" x:Name="radListBox1" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			SelectedValuePath="City"				
 			DisplayMemberPath="Name"/>
-{{endregion}}
+```
 
 ![radlistbox populatingwithdata bindingtoobject 020](images/radlistbox_populatingwithdata_bindingtoobject_020.png)
 
@@ -95,11 +95,11 @@ When you select a Customer name from the listbox, the SelectedItem property retu
 
 Use the __SelectedIndex__ property to get or set the index of the selected item. For example, by using the __SelectedIndex__ property, you could specify which the default selected item is. 
 
-#### __[XAML]  Setting SelectedIndex__
+__Setting SelectedIndex__
 
-{{region xaml-radlistbox-features-selection_2}}
+```XAML
 	<telerik:RadListBox x:Name="radListBox" Width="200" SelectedIndex="3" />
-{{endregion}}
+```
 
 ## Using the Text and TextPath / TextBinding
 

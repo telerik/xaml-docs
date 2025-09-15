@@ -18,7 +18,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 #### __C#__
 
-{{region cs-gridview-in-memory-date_1}}
+```C#
 	public class Car
 	{
 	    public Car()
@@ -43,11 +43,11 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-in-memory-date_2}}
+```VB.NET
 	Public Class Car
 	
 	    Public Sub New()
@@ -78,13 +78,13 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 * Create a new class named __RadGridViewSampleData__. 
 
 #### __C#__
 
-{{region cs-gridview-in-memory-date_5}}
+```C#
 	public class RadGridViewSampleData
 	{
 	    public RadGridViewSampleData()
@@ -102,11 +102,11 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-in-memory-date_6}}
+```VB.NET
 	Public Class RadGridViewSampleData
 	    Public Sub New()
 	        Cars = New ObservableCollection(Of Car)()
@@ -126,25 +126,25 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 * Declare the __RadGridViewSampleData__ object as a resource in your application. 
 
 #### __XAML__
 
-{{region xaml-gridview-in-memory-date_9}}
+```XAML
 	<Grid.Resources>
 	    <my:RadGridViewSampleData x:Key="DataSource"/>
 	</Grid.Resources>
-{{endregion}}
+```
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
 #### __XAML__
 
-{{region xaml-gridview-in-memory-date_10}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Cars}"/>
-{{endregion}}
+```
 
 Run your demo, the result can be seen on the next picture:
 

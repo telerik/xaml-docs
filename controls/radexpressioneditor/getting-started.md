@@ -56,10 +56,10 @@ You can find the required assemblies for each control from the suite in the [Con
 
 * Define __RadExpressionEditor__ as demonstrated below:
 
-#### __[XAML] Example 1__
-{{region radexpressioneditor-getting-started_1}}
+__Example 1__
+```XAML
 	  <telerik:RadExpressionEditor x:Name="expressionEditor" />
-{{endregion}}
+```
 
 Now, when running the application, __RadExpressionEditor__ will be displayed:
 
@@ -69,9 +69,9 @@ Now, when running the application, __RadExpressionEditor__ will be displayed:
 
 The scenario we will try to create here would be to implement __RadExpressionEditor__ as an advanced manual filter for __RadGridView__. For that purpose, we will firstly create a new class __Employee__ with a couple of exposed properties and a method creating sample data:
 
-#### __[C#] Example 2__
+__Example 2__
 
-{{region radexpressioneditor-getting-started_3}}
+```C#
 	public class Employee 
 	 {
 	  public string FirstName
@@ -117,11 +117,8 @@ The scenario we will try to create here would be to implement __RadExpressionEdi
 	   return employees;
 	  }
 	 }
-{{endregion}}
-
-#### __[VB.NET] Example 2__
-
-{{region radexpressioneditor-getting-started_4}}
+```
+```VB.NET
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -216,13 +213,13 @@ The scenario we will try to create here would be to implement __RadExpressionEdi
 	  Return employees
 	 End Function
 	End Class
-{{endregion}}
+```
 
 In our case we will create a simple __ViewModel__ taking care for the connection between the model and view. It will be set as __DataContext__ of the application.
 
-#### __[C#] Example 3__
+__Example 3__
 
-{{region radexpressioneditor-getting-started_5}}
+```C#
 	public class MyViewModel
 	 {
 	  private ObservableCollection<Employee> employees;
@@ -238,11 +235,8 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 	   }
 	  }  
 	 }
-	{{endregion}}
-
-#### __[VB.NET] Example 3__
-
-{{region radexpressioneditor-getting-started_6}}
+	```
+```VB.NET
 	Public Class MyViewModel
 	 Private m_employees As ObservableCollection(Of Employee)
 	 Public ReadOnly Property Employees() As ObservableCollection(Of Employee)
@@ -254,13 +248,13 @@ In our case we will create a simple __ViewModel__ taking care for the connection
 	  End Get
 	 End Property
 	End Class
-{{endregion}}
+```
 
 Once we declared the business object and the corresponding __ViewModel__, we can define __RadExpressionEditor__ and bind it appropriately. 
 
-#### __[XAML] Example 4__
+__Example 4__
 
-{{region radexpressioneditor-getting-started_8}}
+```XAML
 	<Window x:Class="RadExpressionEditor_WPF.MainPage"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -284,13 +278,13 @@ Once we declared the business object and the corresponding __ViewModel__, we can
 	                                     ExpressionChanged="ExpressionEditor_ExpressionChanged"/>
 	  </Grid>
 	</Window>
-{{endregion}}
+```
 
 The functionality for defining a filter for __RadGridView__ will be implemented in the handler of __ExpressionChanged__ event:  
 
-#### __[C#] Example 5__
+__Example 5__
 
-{{region radexpressioneditor-getting-started_9}}
+```C#
 	private FilterDescriptor<Employee> genericFilterDescriptor = new FilterDescriptor<Employee>();
 	private void ExpressionEditor_ExpressionChanged(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	  {
@@ -310,11 +304,8 @@ The functionality for defining a filter for __RadGridView__ will be implemented 
 	    }    
 	   }
 	  }
-{{endregion}}
-
-#### __[VB.NET] Example 5__
-
-{{region radexpressioneditor-getting-started_10}}
+```
+```VB.NET
 	    Private genericFilterDescriptor As New FilterDescriptor(Of Employee)()
 	Private Sub ExpressionEditor_ExpressionChanged(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
 	 If Me.ExpressionEditor.Expression IsNot Nothing AndAlso Me.ExpressionEditor.Expression.[GetType]() = GetType(Expression(Of Func(Of Employee, Boolean))) Then
@@ -328,7 +319,7 @@ The functionality for defining a filter for __RadGridView__ will be implemented 
 	  End If
 	 End If
 	End Sub
-{{endregion}}
+```
 
 On running the application and testing the functionality of adding a filter descriptor for __RadGridView__, you should see a similar result:
 
@@ -348,8 +339,8 @@ You can edit the [template of the control]({%slug radexpressioneditor-styles-and
      
 By default pasting in the editor is not supported. This is the behavior as the inner ExpressionTextBox is configured to not accept returns. You can resolve this with the following approach ensuring the pasting will be executed in code:
 
-#### __[C#] Example 7__
-{{region radexpressioneditor-getting-started_11}}
+__Example 7__
+```C#
     void MainWindow_Loaded(object sender, RoutedEventArgs e)
     {
         this.expressionEditor.OnApplyTemplate();
@@ -370,7 +361,7 @@ By default pasting in the editor is not supported. This is the behavior as the i
             radRichTextBox.Insert(Clipboard.GetText());
         }
     }     
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -392,8 +383,8 @@ To change the theme, you can follow the steps below:
 
 __Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 8: Merge the ResourceDictionaries__  
-{{region radexpressionEditor-getting-started_9}}
+__Example 8: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -405,7 +396,7 @@ __Example 8__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf)
 

@@ -12,9 +12,9 @@ position: 6
 
 The __RadRibbonView__'s API allows you to customize the __Title__ bar of your ribbon control. First we are going to use the code in __Example 1__ as a starting point.
 
-#### __[XAML] Example 1: Sample RadRibbonView__
+__Example 1: Sample RadRibbonView__
 
-{{region radribbonview-howto-style-title_0}}
+```XAML
 	<telerik:RadRibbonView Margin="10" Title="Title" ApplicationName="My App" >
 		<telerik:RadRibbonView.Items>
 			<telerik:RadRibbonTab Header="Home">
@@ -24,7 +24,7 @@ The __RadRibbonView__'s API allows you to customize the __Title__ bar of your ri
 			<telerik:RadRibbonTab Header="View" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![Rad Ribbon View How To Style The Title](images/RadRibbonView_HowTo_StyleTheTitle.png)
 
@@ -32,8 +32,8 @@ To customize the foreground of text in the title bar, we can create a custom sty
 
 >You can access the __WindowTitle__ control through an alias pointing to the namespace: __xmlns:ribbonPrimitives="clr-namespace:Telerik.Windows.Controls.RibbonView.Primitives;assembly=Telerik.Windows.Controls.RibbonView"__
 
-#### __[XAML] Example 2: Change Title Foreground__
-{{region radribbonview-howto-style-title_1}}
+__Example 2: Change Title Foreground__
+```XAML
 	<telerik:RadRibbonView Margin="10" Title="Title" ApplicationName="My App" >
 		<telerik:RadRibbonView.WindowTitleStyle>
 			<Style TargetType="ribbonPrimitives:WindowTitle">
@@ -51,14 +51,14 @@ To customize the foreground of text in the title bar, we can create a custom sty
 			<telerik:RadRibbonTab Header="View" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![Rad Ribbon View How To Style The Title 2](images/RadRibbonView_HowTo_StyleTheTitle_2.png)
 
 To change the title bar background, you can set the __TitleBarBackground__ property of the RadRibbonView.
 
-#### __[XAML] Example 3: Change Title Foreground__
-{{region radribbonview-howto-style-title_2}}
+__Example 3: Change Title Foreground__
+```XAML
 	<telerik:RadRibbonView Margin="10" Title="Title" ApplicationName="My App" TitleBarBackground="Bisque">
 		<telerik:RadRibbonView.WindowTitleStyle>
 			<Style TargetType="ribbonPrimitives:WindowTitle">
@@ -74,7 +74,7 @@ To change the title bar background, you can set the __TitleBarBackground__ prope
 			<telerik:RadRibbonTab Header="View" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![Rad Ribbon View How To Style The Title 2](images/RadRibbonView_HowTo_StyleTheTitle_3.png)
 

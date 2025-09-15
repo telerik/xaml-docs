@@ -24,8 +24,8 @@ This article lists the events specific to RadCarouselPanel.
 
 You can use the approach in __Example 1__ to subscrube to the RadCarouselPanel events.
 
-#### __[XAML] Example 1: Subscribe to RadCarouselPanel Events__  
-{{region -xaml-carousel-radcarouselpanel-events_0}}
+__Example 1: Subscribe to RadCarouselPanel Events__  
+```XAML
 	<telerik:RadCarousel x:Name="listView"  ItemsSource="{Binding Employees}"  ItemTemplate="{StaticResource customItemTemplate}">
 		<telerik:RadCarousel.ItemsPanel>
 			<ItemsPanelTemplate>
@@ -35,10 +35,10 @@ You can use the approach in __Example 1__ to subscrube to the RadCarouselPanel e
 			</ItemsPanelTemplate>
 		</telerik:RadCarousel.ItemsPanel>            
 	</telerik:RadCarousel>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Events Handlers__  
-{{region csharp-carousel-radcarouselpanel-events_1}}
+__Example 2: Events Handlers__  
+```C#
 	private void MyCarousel_SelectedIsTopItem(object sender, RoutedEventArgs e)
 	{
 	}
@@ -50,7 +50,7 @@ You can use the approach in __Example 1__ to subscrube to the RadCarouselPanel e
 	private void RadCarouselPanel_IsAnimatingChanged(object sender, RoutedEventArgs e)
 	{
 	}
-{{endregion}}
+```
 	
 ## See Also  
  * [Getting Started]({%slug carousel-getting-started%}) 

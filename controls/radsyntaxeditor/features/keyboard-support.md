@@ -47,8 +47,8 @@ The keyboard combinations supported by the RadSyntaxEditor are listed in the tab
 
 If you need to handle a key combination which is not listed above, you can do so by handling the **PreviewSyntaxEditorKeyDown** event.
 
-#### __[C#] Example 1: Handling the Ctrl+S keyboard combination__
-{{region cs-radsyntaxeditor-keyboard-support-1}}
+__Example 1: Handling the Ctrl+S keyboard combination__
+```C#
     private void SyntaxEditor_PreviewSyntaxEditorKeyDown(object sender, PreviewSyntaxEditorKeyEventArgs e)
     {
         if (e.Key == Key.S && KeyboardModifiers.IsControlDown)
@@ -56,7 +56,7 @@ If you need to handle a key combination which is not listed above, you can do so
             e.OriginalArgs.Handled = true;
         }
     }
-{{endregion}}
+```
 
 ## See Also
 

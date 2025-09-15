@@ -46,7 +46,7 @@ This article will cover the following examples:
 
 #### __C#__
 
-{{region radscheduleview-features-speacialslots_0}}
+```C#
 	var NonWorkingHours = new ObservableCollection<Slot>();
 	DateTime start = new DateTime(2010, 1, 1, 8, 0, 0);
 	DateTime end = new DateTime(2010, 1, 1, 18, 0, 0);
@@ -62,13 +62,13 @@ This article will cover the following examples:
 	        RecurrencePattern = new RecurrencePattern(
 	                    null, RecurrenceDays.Friday, RecurrenceFrequency.Weekly, 1, null, null)
 	    });
-{{endregion}}
+```
 
 * Then create the ScheduleViewStyleSelector class:            
 
 #### __C#__
 
-{{region radscheduleview-features-speacialslots_1}}
+```C#
 	public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
 	{
 	    private Style nonworkingHourStyle;
@@ -88,13 +88,13 @@ This article will cover the following examples:
 	        return this.NonworkingHourStyle;
 	    }
 	}
-{{endregion}}
+```
 
 and define the Style:
 
 #### __XAML__
 
-{{region radscheduleview-features-speacialslots_2}}
+```XAML
 	<local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
 		<local:SpecialSlotStyleSelector.NonworkingHourStyle>
 			<Style TargetType="scheduleView:HighlightItem">
@@ -108,19 +108,19 @@ and define the Style:
 			</Style>
 		</local:SpecialSlotStyleSelector.NonworkingHourStyle>
 	</local:SpecialSlotStyleSelector>
-{{endregion}}
+```
 
 * Finally, bind them to SpecialSlotsSource and SpecialSlotsStyleSelector properties:            
 
 #### __XAML__
 
-{{region radscheduleview-features-speacialslots_3}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView"
 	           SpecialSlotsSource="{Binding NonWorkingHours}"
 	           SpecialSlotStyleSelector="{StaticResource SpecialSlotStyleSelector}">
 			...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Here is the result:
 
@@ -132,7 +132,7 @@ Let's for example have the following Resource Type defined:
 
 #### __XAML__
 
-{{region radscheduleview-features-speacialslots_4}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView">
 	 <telerik:RadScheduleView.ResourceTypesSource>
 	    <telerik:ResourceTypeCollection>
@@ -144,13 +144,13 @@ Let's for example have the following Resource Type defined:
 	  </telerik:RadScheduleView.ResourceTypesSource>
 	  ...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 * You can create the collection of read-only slots for "Team" Resource like this:           
 
 #### __C#__
 
-{{region radscheduleview-features-speacialslots_5}}
+```C#
 	var ReadOnlySlots = new ObservableCollection<Slot>();
 	Slot readOnlyslot = new Slot() { 
 			Start = DateTime.MinValue, 
@@ -159,7 +159,7 @@ Let's for example have the following Resource Type defined:
 			};
 	readOnlyslot.Resources.Add(new Resource("Team", "Calendar"));
 	ReadOnlySlots.Add(readOnlyslot);
-{{endregion}}
+```
 
 > The types of objects added to the Resources collection of the Slot and to the ResourceType object in the ResourceTypesSource need to match. This is important in scenarios where the __IResource__ interface is implemented.
 
@@ -167,11 +167,11 @@ Let's for example have the following Resource Type defined:
 
 #### __XAML__
 
-{{region radscheduleview-features-speacialslots_6}}
+```XAML
 	<telerik:RadScheduleView  x:Name="scheduleView" SpecialSlotsSource="{Binding ReadOnlySlots}">
 	...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 The read-only slots will look like this:
 
@@ -181,15 +181,15 @@ Note that EditAppointmentDialog is shown even for appointments which are visuali
 
 #### __XAML__
 
-{{region radscheduleview-features-speacialslots_7}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" ShowDialog="scheduleView_ShowDialog">
-{{endregion}}
+```
 
 and cancel it in the event handler:       
 
 #### __C#__
 
-{{region radscheduleview-features-speacialslots_8}}
+```C#
 	private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 	{
 	    var appointmentDialog = e.DialogViewModel as AppointmentDialogViewModel;
@@ -198,6 +198,6 @@ and cancel it in the event handler:
 	        e.Cancel = true;
 	    }
 	}
-{{endregion}}
+```
 
 Check out the {% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#ScheduleView/SpecialSlots){% endif %}{% if site.site_name == 'WPF' %}[online demo](https://demos.telerik.com/wpf/?ScheduleView/SpecialSlots){% endif %} to see special slots in action.        

@@ -40,8 +40,8 @@ Create a new `Style` with `TargetType="GridViewRow"` and set the modified Contro
 
 The following example showcases this approach when the [Windows 11 theme]({%slug common-styling-appearance-windows11-theme%}) is applied:
 
-#### __[C#] Creating a sample model and view model__
-{{region kb-gridview-strikeout-row-0}}
+__Creating a sample model and view model__
+```C#
     public enum Position
     {
         Manager,
@@ -108,10 +108,10 @@ The following example showcases this approach when the [Windows 11 theme]({%slug
 
         public ObservableCollection<EmployeeInfo> Employees { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML] Extracting and modifying the default ControlTemplate of the GridViewRow element__
-{{region kb-gridview-strikeout-row-1}}
+__Extracting and modifying the default ControlTemplate of the GridViewRow element__
+```XAML
     <Application x:Class="GridViewStrikeoutRow.App"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -359,17 +359,17 @@ The following example showcases this approach when the [Windows 11 theme]({%slug
             </ResourceDictionary>
         </Application.Resources>
     </Application>
-{{endregion}}
+```
 
-#### __[XAML] Applying the customized ControlTemplate to the GridViewRow element__
-{{region kb-gridview-strikeout-row-2}}
+__Applying the customized ControlTemplate to the GridViewRow element__
+```XAML
     <Style TargetType="grid:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
         <Setter Property="Template" Value="{StaticResource CustomGridViewRowTemplate}"/>
     </Style>
-{{endregion}}
+```
 
-#### __[XAML] Setting up the RadGridView control using the created model and view model__
-{{region kb-gridview-strikeout-row-3}}
+__Setting up the RadGridView control using the created model and view model__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MainViewModel/>
@@ -385,7 +385,7 @@ The following example showcases this approach when the [Windows 11 theme]({%slug
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 __GridViewRow with a strikeout/strikethrough effect__
 

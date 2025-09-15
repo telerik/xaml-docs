@@ -14,15 +14,15 @@ To optimize the performance __RadOutlookBar__ uses a single ContentPresenter whi
 
 To preserve the state you can set the __IsContentPreserved__ property to __True__. 
 
-#### __[XAML] Example 1: Enable content preserving in XAML__
-{{region radoutlookbar-how-to-keep-content-0}}
+__Example 1: Enable content preserving in XAML__
+```XAML
 	<telerik:RadOutlookBar IsContentPreserved="True" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Enable content preserving in code__
-{{region radoutlookbar-how-to-keep-content-1}}
+__Example 2: Enable content preserving in code__
+```C#
 	this.outlookBar.IsContentPreserved = true;
-{{endregion}}
+```
 
 
 ## See Also

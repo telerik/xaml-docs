@@ -18,9 +18,9 @@ __RadGridView__ provides you with a built-in grouping functionality, which allow
 
 You can define grouping either in the XAML or in the code-behind.
 
-#### __[XAML] Example 1: Grouping applied through XAML__
+__Example 1: Grouping applied through XAML__
 
-{{region xaml-gridview-overview-grouping_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                AutoGenerateColumns="False">
 	    <telerik:RadGridView.GroupDescriptors>
@@ -29,32 +29,28 @@ You can define grouping either in the XAML or in the code-behind.
 	        <!--You can add more group descriptors here-->
 	    </telerik:RadGridView.GroupDescriptors>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 You can achieve the same result if you define your grouping in the code-behind like this:
 
-#### __[C#] Example 1: Grouping applied programmatically__
+__Example 1: Grouping applied programmatically__
 
-{{region cs-gridview-overview-grouping_2}}
+```C#
 	GroupDescriptor descriptor = new GroupDescriptor();
 	descriptor.Member = "Country";
 	descriptor.SortDirection = ListSortDirection.Ascending;
 	descriptor.DisplayContent = "Country Group";
 	this.radGridView.GroupDescriptors.Add(descriptor);
 	//You can create and add more descriptors here
-{{endregion}}
-
-
-#### __[VB.NET] Example 1: Grouping applied programmatically__
-
-{{region vb-gridview-overview-grouping_3}}
+```
+```VB.NET
 	Dim descriptor As New GroupDescriptor()
 	descriptor.Member = "Country"
 	descriptor.SortDirection = ListSortDirection.Ascending
 	descriptor.DisplayContent = "Country Group"
 	Me.radGridView.GroupDescriptors.Add(descriptor)
 	'You can create and add more descriptors here
-{{endregion}}
+```
 
 
 >Тhe __GroupDescriptors__ property of RadGridView is a __collection__ so you can add more than one __GroupDescriptor__ to a certain __RadGridView__.

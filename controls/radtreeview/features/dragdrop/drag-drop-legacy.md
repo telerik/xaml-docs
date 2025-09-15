@@ -16,10 +16,10 @@ The RadTreeView's drag drop feature works with the Telerik DragDropManager, but 
 
 The default drag drop execution mode is using the new DragDropManager (since Q2 2014), but this can be changed by setting the  __TreeViewSettings.DragDropExecutionMode__ property to __Legacy__. This is useful in case you upgrade from a very old version of Telerik UI for WPF to a more recent one and you have heavy customization on the drag/drop functionality using the drag/drop events of RadTreeView.
 
-##### __[XAML] Example 1: Setting DragDropExecutionMode__
-{{region radtreeview-features-drag-and-drop-legacy-0}}
+#__Example 1: Setting DragDropExecutionMode__
+```XAML
 	<telerik:RadTreeView treeView:TreeViewSettings.DragDropExecutionMode="Legacy" />
-{{endregion}}
+```
 
 The `treeView` namespace points to `xmlns:treeView="clr-namespace:Telerik.Windows.Controls.TreeView;assembly=Telerik.Windows.Controls.Navigation"`
 
@@ -40,20 +40,18 @@ __RadTreeView__ actually handles the drag/drop events of RadDragAndDropManager w
 
 When RadTreeView detects a valid drag operation, it invokes the __PreviewDragStarted__ and __DragStarted__  events. When a valid drop operation (the selected Item is dropped onto another Item or in between Items) is detected, the __PreviewDragEnded__ and __DragEnded__ events are invoked. Both __PreviewDragStarted__ and __PreviewDragEnded__ events can be cancelled by setting the __Handled__ property of the event argument to __True__ in the event handler.
 
-#### __[C#] Example 2: Cancel drag operation__  
-{{region radtreeview-features-drag-and-drop-legacy-1}}
+__Example 2: Cancel drag operation__  
+```C#
 	private void radTreeView_PreviewDragEnded( object sender, RadTreeViewDragEndedEventArgs e )
 	{
 		e.Handled = true;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Cancel drag operation__  
-{{region radtreeview-features-drag-and-drop-legacy-2}}
+```
+```VB.NET
 	Private Sub radTreeView_PreviewDragEnded(ByVal sender As Object, ByVal e As RadTreeViewDragEndedEventArgs)
 	    e.Handled = True
 	End Sub
-{{endregion}}
+```
 
 >tip Handling the __PreviewDragStarted__ event will cancel the __drag__ operation. This is equivalent to set the __RadTreeView__'s __IsDragDropEnabled__ property to __False__. 'e.Handled = True' - where 'e' is the RadTreeViewDragEventArgs class passed as an argument of the event handler.
 
@@ -61,20 +59,18 @@ When RadTreeView detects a valid drag operation, it invokes the __PreviewDragSta
 
 The type of the event arguments for the __PreviewDragStarted__ and __DragStarted__ events is __RadTreeViewDragEventArgs__. Via the __RadTreeViewDragEventArgs__ you can get access to the items being dragged:
 
-#### __[C#] Example 3: Get current dragged items__  
-{{region radtreeview-features-drag-and-drop-legacy-3}}
+__Example 3: Get current dragged items__  
+```C#
 	private void radTreeView_DragStarted( object sender, RadTreeViewDragEventArgs e )
 	{
 	    Collection<Object> draggedItems = e.DraggedItems;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Get current dragged items__  
-{{region radtreeview-features-drag-and-drop-legacy-4}}
+```
+```VB.NET
 	Private Sub radTreeView_DragStarted(ByVal sender As Object, ByVal e As RadTreeViewDragEventArgs)
 	    Dim draggedItems As Collection(Of [Object]) = e.DraggedItems
 	End Sub
-{{endregion}}
+```
 
 The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ events is __RadTreeViewDragEndedEventArgs__. Via the __RadTreeViewDragEndedEventArgs__ you can get access to the following items and properties:
 
@@ -83,8 +79,8 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 * __TargetDropItem__: The Item being dragged to.
 * __IsCanceled__: A boolean property, indicates whether the drag and drop operation is cancelled or not.
 
-#### __[C#] Example 4: Subscribing to the DragEnded event__  
-{{region radtreeview-features-drag-and-drop-legacy-5}}
+__Example 4: Subscribing to the DragEnded event__  
+```C#
 	private void radTreeView_DragEnded( object sender, RadTreeViewDragEndedEventArgs e )
 	{
 	    // Get the dragged items.
@@ -112,10 +108,8 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 	        // Do something
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Subscribing to the DragEnded event__  
-{{region radtreeview-features-drag-and-drop-legacy-6}}
+```
+```VB.NET
 	Private Sub radTreeView_DragEnded(ByVal sender As Object, ByVal e As RadTreeViewDragEndedEventArgs)
 	    ' Get the dragged items. '
 	    Dim draggedItems As Collection(Of [Object]) = e.DraggedItems
@@ -143,12 +137,12 @@ The type of the event arguments for the __PreviewDragEnded__ and __DragEnded__ e
 	        ' Do something '
 	    End If
 	End Sub
-{{endregion}}
+```
 
 Note that the __TargetDropItem__ property may be null if the drop is in an empty treeview. That's why when you use that property it always has to be checked:
 
-#### __[C#] Example 5: Checking TargetDropItem property__  
-{{region radtreeview-features-drag-and-drop-legacy-7}}
+__Example 5: Checking TargetDropItem property__  
+```C#
 	private void radTreeView_DragEnded(object sender, RadTreeViewDragEndedEventArgs e)
 	{
 	  // Target drop item
@@ -158,7 +152,7 @@ Note that the __TargetDropItem__ property may be null if the drop is in an empty
 		// Do something
 	  }
 	}	
-{{endregion}}
+```
 
 ## See Also
  * [Enable Only Drop Inside]({%slug radtreeview-how-to-enabled-drop-inside-only%})

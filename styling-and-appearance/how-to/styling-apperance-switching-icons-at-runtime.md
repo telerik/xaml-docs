@@ -23,11 +23,11 @@ To help you achieve a consistent look we also provide a way for you to dynamical
 To take advantage of the extension you need to define a resource of type __IconSources__ holding the paths to the sets of icons. __Example 1__ demonstrates how to define a resource in XAML.
 
 
-#### __[XAML] Example 1: Creating IconSources__
+__Example 1: Creating IconSources__
 
-{{region styling-apperance-switching-icons-at-runtime_0}}
+```XAML
     <telerik:IconSources x:Key="IconSources" />
-{{endregion}}
+```
 
 
 >__IconsSources__ resides in the __Telerik.Windows.Controls.dll__, so you need to add a reference to the assembly  to your project first.
@@ -47,21 +47,21 @@ The __LightBasePath__ property represents a path to the default icon set destina
 __Example 2__ shows an example on how to define __IconSources__ and set two of its path properties.
 
 
-#### __[XAML] Example 2: Setting Paths to IconSources__
+__Example 2: Setting Paths to IconSources__
 
-{{region styling-apperance-switching-icons-at-runtime_1}}
+```XAML
     <telerik:IconSources x:Key="IconPaths" LightBasePath="/IconSourceDemo;component/Icons/Light/" DarkBasePath="/IconSourceDemo;component/Icons/Dark/" />
-{{endregion}}
+```
 
 
 Once the paths are set, the __IconResource__ extension can be used to set the source of objects of type __ImageSource__. __Example 3__ shows how to define an __Image__ object in XAML pointing to the *background.png* image in the folder paths from __Example 2__.
 
 
-#### __[XAML] Example 3: Setting ImageSource Using IconResource__
+__Example 3: Setting ImageSource Using IconResource__
 
-{{region styling-apperance-switching-icons-at-runtime_1}}
+```XAML
     <Image Source="{telerik:IconResource IconRelativePath=background.png, IconSources={StaticResource IconPaths}}" Stretch="None" />
-{{endregion}}
+```
 
 
 Presuming there is an image with file name *background.png* in the *Icons/Light/* folder of your application, __Figure 1__ shows the result of __Examples 1 – 3__.
@@ -76,11 +76,11 @@ Changing the image is achieved by calling the static __ChangeIconsSet()__ method
 
 <a name="example4"><a/>
 
-#### __[C#] Example 4: Changing Icon Set__
+__Example 4: Changing Icon Set__
 
-{{region styling-apperance-switching-icons-at-runtime_0}}
+```C#
 	IconSources.ChangeIconsSet(IconsSet.Dark);
-{{endregion}}
+```
 
 
 This will trigger a change in the source of the __Image__ and will show the *background.png* image located in the *Icons/Dark* folder of your application.
@@ -108,22 +108,22 @@ Several of the controls in the Telerik UI for WPF suite come with sets of icons 
 __RadPdfViewer__, for example, comes with two distinct sets of icons located in the __Telerik.Windows.Controls.FixedDocumentViewers__ assembly. Defining an __IconSources__ resource for the viewer is shown on __Example 5__.
 
 
-#### __[XAML] Example 5: Creating IconSources for RadPdfViewer__
+__Example 5: Creating IconSources for RadPdfViewer__
 
-{{region styling-apperance-switching-icons-at-runtime_3}}
+```XAML
     <telerik:IconSources x:Key="PdfViewerIconPaths" LightBasePath="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/Modern/" 
                              DarkBasePath="/Telerik.Windows.Controls.FixedDocumentViewers;component/Images/" />
-{{endregion}}
+```
 
 
 And you can use this resource to define images pointing to one of the base paths location.
 
 
-#### __[XAML] Example 6: ImageSource Set to RadPdfViewer Icon__
+__Example 6: ImageSource Set to RadPdfViewer Icon__
 
-{{region styling-apperance-switching-icons-at-runtime_4}}
+```XAML
     <Image Source="{telerik:IconResource IconRelativePath=open.png,IconSources={StaticResource PdfViewerIconPaths}}" Stretch="None" />
-{{endregion}}
+```
 
 
 Both __IconSource__ resources defined in the article are in the same view pointing to different base paths for images. The result of __Example 6__ is shown on __Figure 3__.

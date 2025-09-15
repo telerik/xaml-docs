@@ -33,7 +33,7 @@ Here is the full code
 
 #### __C#__
 
-{{region cs-gridview-how-to-hide-match-case_2}}
+```C#
 	private void gridView_FieldFilterEditorCreated2(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
 	    //get the StringFilterEditor in your RadGridView
@@ -43,12 +43,12 @@ Here is the full code
 	        stringFilterEditor.MatchCaseVisibility = Visibility.Hidden;
 	    }
 	}
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-gridview-how-to-hide-match-case_3}}
+```VB.NET
 	Private Sub gridView_FieldFilterEditorCreated2(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	    'get the StringFilterEditor in your RadGridView
 	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
@@ -56,7 +56,7 @@ Here is the full code
 	        stringFilterEditor.MatchCaseVisibility = Visibility.Hidden
 	    End If
 	End Sub
-{{endregion}}
+```
 
 Second approach (before Q3 2011)
 
@@ -66,7 +66,7 @@ Here is the full code:
 
 #### __C#__
 
-{{region cs-gridview-how-to-hide-match-case_0}}
+```C#
 	private void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
 	    //get the StringFilterEditor in your RadGridView
@@ -82,11 +82,11 @@ Here is the full code:
 	    //Hide the Match case toogle button in its Loaded event
 	    ((StringFilterEditor)sender).ChildrenOfType<ToggleButton>().FirstOrDefault().Visibility = Visibility.Collapsed;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-how-to-hide-match-case_1}}
+```VB.NET
 	Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	    'get the StringFilterEditor in your RadGridView
 	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)
@@ -99,7 +99,7 @@ Here is the full code:
 	    'Hide the Match case toogle button in its Loaded event
 	    DirectCast(sender, StringFilterEditor).ChildrenOfType(Of ToggleButton)().FirstOrDefault().Visibility = Visibility.Collapsed
 	End Sub
-{{endregion}}
+```
 
 
 

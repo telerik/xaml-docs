@@ -37,9 +37,9 @@ The method expects two parameters:
 
 __Example 1__ shows how to display a "Save File" dialog asking the user to save the file in excel format:
 
-#### __[C#] Example 1: Save RadGridView`s content in Excel file__
+__Example 1: Save RadGridView`s content in Excel file__
 
-{{region cs-gridview-export_0}}
+```C#
 	void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "xls";
@@ -64,12 +64,8 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 	        }
 	    }
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 1: Save RadGridView`s content in Excel file__
-
-{{region vb-gridview-export_1}}
+```
+```VB.NET
 	Private Sub btnExport_Click(sender As Object, e As RoutedEventArgs)
 	    Dim extension As String = "xls"
 	    Dim dialog As New SaveFileDialog() With {
@@ -88,7 +84,7 @@ __Example 1__ shows how to display a "Save File" dialog asking the user to save 
 	        End Using
 	    End If
 	End Sub
-{{endregion}}
+```
         
 In addition, __RadGridView__ provides built-in methods to get the content of your GridView control in different formats:
 
@@ -103,18 +99,14 @@ In addition, __RadGridView__ provides built-in methods to get the content of you
 >The export methods (__ToHtml()__, __ToCsv()__, __ToText()__ and __ToExcelML()__) are implemented in the class __ExportExtension__ as extension methods to the standard __RadGridView__ control. In order to use these methods you have to import the __Telerik.Windows.Controls__ namespace.
 
 
-#### __[C#] Example 2: Save content to String__
+__Example 2: Save content to String__
 
-{{region cs-gridview-export_2}}
+```C#
 	string htmlExport = this.gridViewExport.ToHtml(true);
-{{endregion}}
-
-
-#### __[VB.NET] Example 2: Save content to String__
-
-{{region vb-gridview-export_3}}
+```
+```VB.NET
 	Dim htmlExport As String = Me.gridViewExport.ToHtml(True)
-{{endregion}}
+```
 
         
 ## See Also

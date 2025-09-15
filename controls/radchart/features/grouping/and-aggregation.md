@@ -87,15 +87,15 @@ The following example, considering the sample data above, demonstrates how to us
 
 #### __XAML__
 
-{{region xaml-radchart-features-grouping-and-aggregation_0}}
+```XAML
 	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
-{{endregion}}
+```
 
 
 
 #### __XAML__
 
-{{region xaml-radchart-features-grouping-and-aggregation_1}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -117,13 +117,13 @@ The following example, considering the sample data above, demonstrates how to us
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-grouping-and-aggregation_2}}
+```C#
 	RadChart radChart = new RadChart();
 	//....
 	SeriesMapping seriesMapping = new SeriesMapping();
@@ -134,13 +134,13 @@ The following example, considering the sample data above, demonstrates how to us
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Description", DataPointMember.XCategory ) );
 	//....
 	radChart.SeriesMappings.Add( seriesMapping );
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-grouping-and-aggregation_3}}
+```VB.NET
 	Dim radChart As New RadChart()
 	'....'
 	Dim seriesMapping As New SeriesMapping()
@@ -151,7 +151,7 @@ The following example, considering the sample data above, demonstrates how to us
 	seriesMapping.ItemMappings.Add(New ItemMapping("Description", DataPointMember.XCategory))
 	'....'
 	radChart.SeriesMappings.Add(seriesMapping)
-{{endregion}}
+```
 
 
 
@@ -180,7 +180,7 @@ Based on the example above, imagine that you want to create a chart that shows t
 
 #### __XAML__
 
-{{region xaml-radchart-features-grouping-and-aggregation_4}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -204,13 +204,13 @@ Based on the example above, imagine that you want to create a chart that shows t
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-grouping-and-aggregation_5}}
+```C#
 	RadChart radChart = new RadChart();
 	//....
 	SeriesMapping seriesMapping = new SeriesMapping();
@@ -221,13 +221,13 @@ Based on the example above, imagine that you want to create a chart that shows t
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Region", DataPointMember.XCategory ) );
 	//....
 	radChart.SeriesMappings.Add( seriesMapping );
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-grouping-and-aggregation_6}}
+```VB.NET
 	Dim radChart As New RadChart()
 	'....'
 	Dim seriesMapping As New SeriesMapping()
@@ -238,7 +238,7 @@ Based on the example above, imagine that you want to create a chart that shows t
 	seriesMapping.ItemMappings.Add(New ItemMapping("Region", DataPointMember.XCategory))
 	'....'
 	radChart.SeriesMappings.Add(seriesMapping)
-{{endregion}}
+```
 
 
 

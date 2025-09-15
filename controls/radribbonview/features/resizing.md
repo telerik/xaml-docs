@@ -31,7 +31,7 @@ The resizing of the elements is defined per __RadRibbonTab__. The resizing behav
 The __RadRibbonGroups__ assume the size of their __DefaultVariant__ whenever they can. By default the value of this property is __Large__, but you can easily change it:	
 
 #### __XAML__
-{{region radribbonview-resizing-0}}
+```XAML
 	<telerik:RadRibbonTab Header="Home">
 	    <telerik:RadRibbonGroup DefaultVariant="Small"
 								DialogLauncherVisibility="Visible"
@@ -58,7 +58,7 @@ The __RadRibbonGroups__ assume the size of their __DefaultVariant__ whenever the
 			</telerik:RadCollapsiblePanel>
 		</telerik:RadRibbonGroup>
 	</telerik:RadRibbonTab>			
-{{endregion}}
+```
 
 ![Rad Ribbon View Resizing Default Variant](images/RadRibbonView_Resizing_DefaultVariant.png)
 
@@ -92,7 +92,7 @@ The next example demonstrates how to set the __RadRibbonGroup__'s __Variants__ c
 >A size variant can only be specified once per group.
 
 #### __XAML__
-{{region radribbonview-resizing-1}}
+```XAML
     <telerik:RadRibbonView>
         <telerik:RadRibbonTab Header="Home">
             <telerik:RadRibbonGroup Header="Clipboard" Icon="/Images/RibbonView/FirstLook/paste.png">
@@ -260,7 +260,7 @@ The next example demonstrates how to set the __RadRibbonGroup__'s __Variants__ c
             </telerik:RadRibbonGroup>
         </telerik:RadRibbonTab>
     </telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![Rad Ribbon View Resizing Example Layout](images/RadRibbonView_Resizing_ExampleLayout.png)
 

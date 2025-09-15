@@ -37,40 +37,40 @@ Here is a list of the mouse events exposed by the __RadRibbonView__ object:
 In the example below you can see how to attach to __MouseWheel__ event from XAML.				
 
 #### __XAML__
-{{region radribbonview-mouse-support_0}}
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" MouseWheel="radRibbonView_MouseWheel" />
-{{endregion}}
+```
 
 >tip It is always a good practice to attach your event handlers in the XAML, whenever your application logic allows this.
 
 And also from the code-behind:
 
 #### __C#__
-{{region radribbonview-mouse-support_1}}
+```C#
 	radRibbonView.MouseWheel+=new MouseWheelEventHandler(radRibbonView_MouseWheel);
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radribbonview-mouse-support_2}}
+```VB.NET
 	radRibbonView.MouseWheel += New MouseWheelEventHandler(radRibbonView_MouseWheel)
-{{endregion}}
+```
 
 The implementation of the event handler __radRibbonView_MouseWheel()__ is located in the code-behind file (C# or VB.NET) and looks like this:
 
 #### __C#__
-{{region radribbonview-mouse-support_3}}
+```C#
 	private void radRibbonView_MouseWheel(object sender, MouseWheelEventArgs e)
 	{
 		MessageBox.Show("The mouse wheel has changed: " + e.Delta);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radribbonview-mouse-support_4}}
+```VB.NET
 	Private Sub radRibbonView_MouseWheel(sender As Object, e As MouseWheelEventArgs)
 		MessageBox.Show("The mouse wheel has changed: " & Convert.ToString(e.Delta))
 	End Sub
-{{endregion}}
+```
 
 >You can attach to the other mouse events in the same way.

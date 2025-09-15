@@ -23,7 +23,7 @@ It will return a collection of viewmodels based on the Enum type supplied. Attri
 
 For the purposes of this article, we will use the following enumeration:
 
-#### __[C#] Example 1: The Position enumeration__
+__Example 1: The Position enumeration__
 
 ```C#
 public enum Position
@@ -37,7 +37,7 @@ public enum Position
 }
 ```
 ```VB.NET
-{{region vb-common-enumdatasource-1}}
+```C#
 Public Enum Position
 	<Display(Name := "Goalkeeper", ShortName := "Goalie"), Description("The player responsible for protecting his team's goal.")>
 	GK = 0
@@ -45,15 +45,15 @@ Public Enum Position
 	MF = 2
 	FW = 3
 End Enum
-{{endregion}}
+```
 ```
 
 ## EnumMemberViewModel
 
 Calling the generic **FromType<T>** method will return an **IEnumerable** of **EnumMemberViewModel** - one for each [browsable](https://msdn.microsoft.com/en-us/library/system.componentmodel.browsableattribute.browsable) member of the enumeration.
 
-#### __[C#] Example 2: Calling the FromType method__
-{{region cs-common-enumdatasource-2}}
+__Example 2: Calling the FromType method__
+```C#
 	IEnumerable<Telerik.Windows.Data.EnumMemberViewModel> positions;
     public IEnumerable<Telerik.Windows.Data.EnumMemberViewModel> Positions
     {
@@ -67,11 +67,8 @@ Calling the generic **FromType<T>** method will return an **IEnumerable** of **E
             return positions;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Calling the FromType method__
-
-{{region vb-common-enumdatasource-2}}
+```
+```VB.NET
 	Private _positions As IEnumerable(Of Telerik.Windows.Data.EnumMemberViewModel)
 	Public ReadOnly Property Positions() As IEnumerable(Of Telerik.Windows.Data.EnumMemberViewModel)
 		Get
@@ -82,7 +79,7 @@ Calling the generic **FromType<T>** method will return an **IEnumerable** of **E
 			Return _positions
 		End Get
 	End Property
-{{endregion}}
+```
 
 The following list describes the public properties the EnumMemberViewModel class provides as well as the evaluated values for the **Position.GK** member of the enumeration:
 
@@ -96,14 +93,14 @@ The following list describes the public properties the EnumMemberViewModel class
 
 A typical use case would be to bind the **DisplayMemberPath** of the combo to the viewmodel's **DisplayName** and **SelectedValueMemberPath** to be equal to **Value**, as demonstrated in **Example 3**.
 
-#### __[XAML] Example 3: Defining the GridViewComboBoxColumn__
+__Example 3: Defining the GridViewComboBoxColumn__
 
-{{region xaml-common-enumdatasource-3}}
+```XAML
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding Position}"
 									ItemsSource="{Binding Positions, Source={StaticResource MyViewModel}}"
 									DisplayMemberPath="DisplayName"
 									SelectedValueMemberPath="Value" />
-{{endregion}}
+```
 
 >A practical example of how to use the EnumDataSource utility can be found in the respective demo of the {% if site.site_name == 'WPF'%}[WPF Controls Samples](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/#GridView/EnumDataSource){% endif %}.
 

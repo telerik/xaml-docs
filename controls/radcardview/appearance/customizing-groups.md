@@ -18,10 +18,10 @@ A RadCardView group can be customized in order to match the expected design or f
 
 To change the __visibility__ of the [group panel]({%slug radcardview-visual-structure%})'s text and items, set the __ShowGroupPanel__ property of RadCardView.
 
-#### __[XAML] Example 1: Hiding group panel__
-{{region radcardview-appearance-customizing-groups-0}}
+__Example 1: Hiding group panel__
+```XAML
     <telerik:RadCardView ShowGroupPanel="False"/>
-{{endregion}}
+```
 
 #### Figure 1: Hidden group panel
 ![{{ site.framework_name }} RadCardView Hidden group panel](images/radcardview-appearance-customizing-groups-0.png)
@@ -32,27 +32,27 @@ To change the __text color__ of the group panel, set the __GroupPanelForeground_
 
 To __disable the sorting__ of groups with the [group member button]({%slug radcardview-visual-structure%}), set the __CanUserSortGroups__ property of RadCardView.
 
-#### __[XAML] Example 2: Customizing group panel colors__
-{{region radcardview-appearance-customizing-groups-1}}
+__Example 2: Customizing group panel colors__
+```XAML
     <telerik:RadCardView GroupPanelBackground="#CA5100"
 						 GroupPanelForeground="White"
                          CanUserSortGroups="False"/>
-{{endregion}}
+```
 
 #### Figure 2: Changed group panel background
 ![{{ site.framework_name }} RadCardView Changed group panel background](images/radcardview-appearance-customizing-groups-1.png)
 
 Additionally, the element that represents the group panel can be customized using the __GroupPanelStyle__ property.
 
-#### __[XAML] Example 3: Customizing group panel style__
-{{region radcardview-appearance-customizing-groups-2}}
+__Example 3: Customizing group panel style__
+```XAML
 	<telerik:RadCardView.GroupPanelStyle>
 		<Style TargetType="cardView:CardViewGroupPanel">
 			<Setter Property="Height" Value="50" />
 			<Setter Property="Opacity" Value="0.5" />
 		</Style>
 	</telerik:RadCardView.GroupPanelStyle>
-{{endregion}}
+```
 
 The "cardView:" namespace points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`
 
@@ -61,14 +61,14 @@ The "cardView:" namespace points to `xmlns:cardView="clr-namespace:Telerik.Windo
 
 To customize the [group member button]({%slug radcardview-visual-structure%}) elements in the group panel, set the __GroupPanelItemStyle__ property.
 
-#### __[XAML] Example 4: Customizing group panel items__
-{{region radcardview-appearance-customizing-groups-3}}
+__Example 4: Customizing group panel items__
+```XAML
 	<telerik:RadCardView.GroupPanelItemStyle>
 		<Style TargetType="cardView:CardViewGroupPanelItem">
 			<Setter Property="Height" Value="50" />
 		</Style>
 	</telerik:RadCardView.GroupPanelItemStyle>
-{{endregion}}
+```
 
 #### Figure 4: Customized group panel items
 ![{{ site.framework_name }} RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-3.png)
@@ -77,10 +77,10 @@ To customize the [group member button]({%slug radcardview-visual-structure%}) el
 
 To set the group items horizontal offset (indentation), set the __GroupItemIndentation__ property. 
 
-#### __[XAML] Example 5: Changing group items indentation__
-{{region radcardview-appearance-customizing-groups-4}}
+__Example 5: Changing group items indentation__
+```XAML
 	<telerik:RadCardView GroupItemIndentation="25" />
-{{endregion}}
+```
 
 #### Figure 5: Customized group panel items
 ![{{ site.framework_name }} RadCardView Customized group panel items](images/radcardview-appearance-customizing-groups-4.png)

@@ -45,9 +45,9 @@ __RadTileList__ has __GroupTemplate__ property that control the way the header o
 
 For example:        
 
-#### __[XAML] Example 1: Defining the GroupTemplate__
+__Example 1: Defining the GroupTemplate__
 
-{{region xaml-radtilelist-modifying-tilelist-view-0}}
+```XAML
 			<Grid.Resources>
 			  <DataTemplate x:Key="ItemTemplate">
 			    <TextBlock Text="{Binding FirstName}"/>
@@ -65,7 +65,7 @@ For example:
 			              GroupMember="Occupation"
 			              ItemsSource="{Binding Employees}"
 			              ItemTemplate="{StaticResource ItemTemplate}"/>
-	{{endregion}}
+	```
 
 
 {% if site.site_name == 'Silverlight' %}
@@ -77,12 +77,12 @@ For example:
 __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether the headers of the groups will be visible or not. Thus, once you set it to collapse, your control will be organized in groups, but will not have any text above:
         
 
-#### __[XAML] Example 2: Setting the GroupHeaderVisibility property__
+__Example 2: Setting the GroupHeaderVisibility property__
 
-{{region xaml-radtilelist-modifying-tilelist-view-1}}
+```XAML
 			<telerik:RadTileList x:Name="RadTileList1"
 			                     GroupHeaderVisibility="Collapsed"/>
-	{{endregion}}
+	```
 
 {% if site.site_name == 'Silverlight' %}
 ![Group Header Visibility SL](images/GroupHeaderVisibility_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
@@ -93,15 +93,15 @@ __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether t
 __RadTileList__ gives the opportunity to set the height of the headers with a single property __GroupHeaderHeight__.
         
 
-#### __[XAML] Example 3: Setting the GroupHeaderHeight property__
+__Example 3: Setting the GroupHeaderHeight property__
 
-{{region xaml-radtilelist-modifying-tilelist-view-2}}
+```XAML
 			<telerik:RadTileList x:Name="RadTileList2"
 			                GroupHeaderHeight="100"
 			                GroupTemplate="{StaticResource GroupTemplate}"
 			                ItemsSource="{Binding Source={StaticResource GroupedItems}}"
 			                ItemTemplate="{StaticResource ItemTemplate}"/>
-	{{endregion}}
+	```
 
 {% if site.site_name == 'Silverlight' %}
 ![Group Header Height SL](images/GroupHeaderHeight_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}

@@ -40,25 +40,25 @@ The next code-snippet uses LINQ query syntax to retreive an __IEnumerable__ sequ
 
 #### __C#__
 
-{{region consuming-data-linq-to-sql-classes_0}}
+```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
 	var query = from p in dbContext.Products
 	               where p.Category.CategoryName == "Seafood"
 	               select p;
 	IEnumerable<Product> products = query.ToList();
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-linq-to-sql-classes_1}}
+```VB.NET
 	Dim dbContext As New NortwindDataContext()
 	Dim query = From p In dbContext.Products _
 	    Where p.Category.CategoryName = "Seafood" _
 	    Select p
 	Dim products As IEnumerable(Of Product) = query.ToList()
-	{{endregion}}
+	```
 
 
 
@@ -68,25 +68,25 @@ The code below demonstrates how to grab a single __Product__ object from the dat
 
 #### __C#__
 
-{{region consuming-data-linq-to-sql-classes_2}}
+```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
 	Product product = dbContext.Products.Single( p => p.ProductName == "Aniseed Syrup" );
 	product.UnitPrice = 1000;
 	dbContext.SubmitChanges();
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-linq-to-sql-classes_3}}
+```VB.NET
 	Dim dbContext As New NortwindDataContext()
 	Dim query = From p In dbContext.Products _
 	            Where p.ProductName = "Aniseed Syrup" _
 	            Select p
 	product.UnitPrice = 1000
 	dbContext.SubmitChanges()
-	{{endregion}}
+	```
 
 
 
@@ -96,7 +96,7 @@ The code below shows you how to create a new __Category__ object. Then how to cr
 
 #### __C#__
 
-{{region consuming-data-linq-to-sql-classes_4}}
+```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
 	
 	Category category = new Category();
@@ -113,13 +113,13 @@ The code below shows you how to create a new __Category__ object. Then how to cr
 	
 	dbContext.Categories.InsertOnSubmit( category );
 	dbContext.SubmitChanges();
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-linq-to-sql-classes_5}}
+```VB.NET
 	Dim dbContext As New NortwindDataContext()
 	
 	Dim category As New Category()
@@ -136,7 +136,7 @@ The code below shows you how to create a new __Category__ object. Then how to cr
 	
 	dbContext.Categories.InsertOnSubmit(category)
 	dbContext.SubmitChanges()
-	{{endregion}}
+	```
 
 
 
@@ -146,27 +146,27 @@ The code below demonstrates you how to delete all "Test" products from the datab
 
 #### __C#__
 
-{{region consuming-data-linq-to-sql-classes_6}}
+```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
 	var query = from p in dbContext.Products
 	            where p.ProductName.Contains( "Test" )
 	            select p;
 	dbContext.Products.DeleteAllOnSubmit( query );
 	dbContext.SubmitChanges();
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-linq-to-sql-classes_7}}
+```VB.NET
 	Dim dbContext As New NortwindDataContext()
 	Dim query = From p In dbContext.Products _
 	    Where p.ProductName.Contains("Test") _
 	    Select p
 	dbContext.Products.DeleteAllOnSubmit(query)
 	dbContext.SubmitChanges()
-	{{endregion}}
+	```
 
 
 
@@ -176,25 +176,25 @@ The next example shows you how to implement efficient server-side database pagin
 
 #### __C#__
 
-{{region consuming-data-linq-to-sql-classes_8}}
+```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
 	var query = ( from p in dbContext.Products
 	              where p.Category.CategoryName == "Aniseed Syrup"
 	              select p ).Skip( 300 ).Take( 15 );
 	IEnumerable<Product> products = query.ToList();
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-linq-to-sql-classes_9}}
+```VB.NET
 	NortwindDataContext dbContext = new NortwindDataContext();
 	Dim query = (From p In dbContext.Products _
 	            Where p.ProductName == "Aniseed Syrup" _
 	            Select p).Skip(300).Take(15)
 	Dim products As IEnumerable(Of Product) = query.ToList()
-	{{endregion}}
+	```
 
 
 

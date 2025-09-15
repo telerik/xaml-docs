@@ -18,8 +18,8 @@ The `ThumbStyle` property allows you to control the appearance of the thumb, whi
 
 If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach, base the custom style on the default __RadTickBarStyle__ using the `BasedOn` property.
 
-#### __[XAML] Creating a custom style for the ThumbStyle property when using implicit styles theming approach__
-{{region radslider-styling-overview-0}}
+__Creating a custom style for the ThumbStyle property when using implicit styles theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <Style x:Key="CustomThumbStyle" TargetType="Thumb" BasedOn="{StaticResource ThumbStyle}">
@@ -38,12 +38,12 @@ If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach, merge the generic resource dictionary for the used theme. This resource dictionary is contained in the __Telerik.Windows.Controls__ assembly. Then, base the custom style on the default __TrackStyle__ using the `BasedOn` property. In the following example, the __GenericFluent.xaml__ dictionary of the __Telerik.Windows.Controls__ assembly is merged, because the __Fluent__ theme is used.
 
-#### __[XAML] Creating a custom style for the ThumbStyle property when using StyleManager theming approach__
-{{region radslider-styling-overview-1}}
+__Creating a custom style for the ThumbStyle property when using StyleManager theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
@@ -68,7 +68,7 @@ If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-ove
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
@@ -82,8 +82,8 @@ The `SelectionMiddleThumbStyle` property lets you control the appearance of the 
 
 If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach, base the custom style on the default __SelectionMiddleThumbStyle__ using the `BasedOn` property.
 
-#### __[XAML] Creating a custom style for the SelectionMiddleThumbStyle property using the implicit styles theming approach__
-{{region xaml-radslider-styling-overview-2}}
+__Creating a custom style for the SelectionMiddleThumbStyle property using the implicit styles theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <Style x:Key="CustomSelectionMiddleThumbStyle" TargetType="Thumb" BasedOn="{StaticResource SelectionMiddleThumbStyle}">
@@ -104,12 +104,12 @@ If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach, merge the generic resource dictionary for the used theme. This resource dictionary is contained in the __Telerik.Windows.Controls__ assembly. Then, base the custom style on the default __SelectionMiddleThumbStyle__ using the `BasedOn` property. In the following example, the __GenericFluent.xaml__ dictionary of the __Telerik.Windows.Controls__ assembly is merged, because the __Fluent__ theme is used.
 
-#### __[XAML] Creating a custom style for the SelectionMiddleThumbStyle property using the StyleManager theming approach__
-{{region xaml-radslider-styling-overview-3}}
+__Creating a custom style for the SelectionMiddleThumbStyle property using the StyleManager theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
@@ -135,7 +135,7 @@ If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-ove
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
@@ -149,8 +149,8 @@ The `DecreaseHandleStyle` and `IncreaseHandleStyle` properties allow you to modi
 
 If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach, base the custom styles on the default __DecreaseHandleStyle__ and __IncreaseHandleStyle__ styles using the `BasedOn` property.
 
-#### __[XAML] Creating custom Styles for the DecreaseHandleStyle and IncreaseHandleStyle properties when using the implicit styles theming approach__
-{{region xaml-radslider-styling-overview-4}}
+__Creating custom Styles for the DecreaseHandleStyle and IncreaseHandleStyle properties when using the implicit styles theming approach__
+```XAML
     <Grid>
         <Grid.Resources> 
             <Style x:Key="CustomDecreaseHandleStyle" TargetType="RepeatButton" BasedOn="{StaticResource DecreaseHandleStyle}">
@@ -175,12 +175,12 @@ If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach, merge the generic resource dictionary for the used theme. This resource dictionary is contained in the __Telerik.Windows.Controls__ assembly. Then, base the custom styles on the default __DecreaseHandleStyle__ and __IncreaseHandleStyle__ styles using the `BasedOn` property. In the following example, the __GenericFluent.xaml__ dictionary of the __Telerik.Windows.Controls__ assembly is merged, because the __Fluent__ theme is used.
 
-#### __[XAML] Creating custom Styles for the DecreaseHandleStyle and IncreaseHandleStyle properties when using the StyleManager theming approach__
-{{region xaml-radslider-styling-overview-5}}
+__Creating custom Styles for the DecreaseHandleStyle and IncreaseHandleStyle properties when using the StyleManager theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
@@ -210,7 +210,7 @@ If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-ove
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
@@ -224,8 +224,8 @@ The `TickBarStyle` property allows you to modify the appearance of the bottom an
 
 If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach, base the custom style on the default __RadTickBarStyle__ using the `BasedOn` property as shown in the following example:
 
-#### __[XAML] Creating a custom style for the TickBarStyle property when using the implicit styles theming approach__
-{{region xaml-radslider-styling-overview-6}}
+__Creating a custom style for the TickBarStyle property when using the implicit styles theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <Style x:Key="TickBarStyle" TargetType="telerik:RadTickBar" BasedOn="{StaticResource RadTickBarStyle}">
@@ -245,12 +245,12 @@ If you are using the [implicit styles]({%slug styling-apperance-implicit-styles-
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach, set the `ItemsPanel` property of the `RadTickBar` element to a new instance of the `TickBarPanel` object.
 
-#### __[XAML] Creating a custom style for the TickBarStyle property when using the StyleManager theming approach__
-{{region xaml-radslider-styling-overview-7}}
+__Creating a custom style for the TickBarStyle property when using the StyleManager theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <Style x:Key="CustomTickBarStyle" TargetType="telerik:RadTickBar">
@@ -277,7 +277,7 @@ If you are using the [StyleManager]({%slug styling-apperance-implicit-styles-ove
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 __RadSlider with custom TickBarStyle__
 
@@ -289,8 +289,8 @@ The `TrackStyle` property lets you modify the appearance of the RadSlider's trac
 
 When using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach and __NoXaml__ binaries, base the custom style on the default __TrackStyle__. This style comes from the chosen theme using the `BasedOn` property.
 
-#### __[XAML] Creating a custom style for the TrackStyle property when using the implicit styles theming approach__
-{{region xaml-radslider-styling-overview-8}}
+__Creating a custom style for the TrackStyle property when using the implicit styles theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <Style x:Key="CustomTrackStyle" TargetType="ContentControl" BasedOn="{StaticResource TrackStyle}">
@@ -310,12 +310,12 @@ When using the [implicit styles]({%slug styling-apperance-implicit-styles-overvi
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 When using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) and __Xaml__ binaries, merge the resource dictionary for the used theme. This resource dictionary is contained in the __Telerik.Windows.Controls__ assembly. Then, base the custom style on the default __TrackStyle__ using the `BasedOn` property. In the following example, the __GenericFluent.xaml__ dictionary of the __Telerik.Windows.Controls__ assembly is merged, because the __Fluent__ theme is used.
 
-#### __[XAML] Creating a custom style for the TrackStyle property when using the StyleManager theming approach__
-{{region xaml-radslider-styling-overview-9}}
+__Creating a custom style for the TrackStyle property when using the StyleManager theming approach__
+```XAML
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
@@ -340,7 +340,7 @@ When using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%
             </telerik:RadSlider.TickTemplate>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
@@ -354,8 +354,8 @@ The `TickTemplateSelector` property property of `RadSlider` allows to customize 
 
 >important The `TickTemplate` property needs to be set to `null` for the `TickTemplateSelector` property to get applied.
 
-#### __[C#] Implementing the selector__  
-{{region xaml-radslider-styling-overview-10}}
+__Implementing the selector__  
+```C#
 	public class TickTemplateSelector : DataTemplateSelector
 	{
 	    public DataTemplate EllipseTemplate { get; set; }
@@ -373,10 +373,10 @@ The `TickTemplateSelector` property property of `RadSlider` allows to customize 
 	        }
 	    }
 	}
-{{endregion}}
+```
 
-#### __[XAML] Defining the template selector__  
-{{region xaml-radslider-styling-overview-11}}
+__Defining the template selector__  
+```XAML
 	<local:TickTemplateSelector x:Key="TickTemplateSelector">
 		<local:TickTemplateSelector.EllipseTemplate>
 			<DataTemplate>
@@ -387,10 +387,10 @@ The `TickTemplateSelector` property property of `RadSlider` allows to customize 
 			<DataTemplate/>
 		</local:TickTemplateSelector.EllipseTemplate>
 	</local:TickTemplateSelector>
-{{endregion}}
+```
 
-#### __[XAML] Defining the slider and setting the template selector__  
-{{region xaml-radslider-styling-overview-12}}
+__Defining the slider and setting the template selector__  
+```XAML
 	<telerik:RadSlider HandlesVisibility="Visible"
 	                   IsSnapToTickEnabled="True"
 	                   Maximum="30"
@@ -399,7 +399,7 @@ The `TickTemplateSelector` property property of `RadSlider` allows to customize 
 	                   TickPlacement="TopLeft"
 	                   TickTemplate="{x:Null}"
 	                   TickTemplateSelector="{StaticResource TickTemplateSelector}" />
-{{endregion}}
+```
 
 ![The RadSlider with the custom TickTemplateSelector](images/SliderTickTemplate.png)
 
@@ -407,8 +407,8 @@ The `TickTemplateSelector` property property of `RadSlider` allows to customize 
 
 By default the thumb of the slider is a rectangle visual. To change this and use custom shape or any other visual, you can [re-templated]({%slug styling-apperance-editing-control-templates%}) the `Thumb` element. The custom template can be assigned with the `ThumbStyle` property of `RadSlider`. The following example shows how to replace the default rectangle with an ellipse shape.
 
-#### __[XAML] Custom Thumb ControlTemplate based on the Fluent theme__
-{{region xaml-radslider-styling-overview-13}}
+__Custom Thumb ControlTemplate based on the Fluent theme__
+```XAML
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
@@ -447,7 +447,7 @@ By default the thumb of the slider is a rectangle visual. To change this and use
 			</telerik:RadSlider.ThumbStyle>
 		</telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 ![RadSlider with the custom ControlTemplate](images/radslider-styling-overview-ellipse-thumb.png)
 

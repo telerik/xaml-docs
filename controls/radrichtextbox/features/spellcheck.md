@@ -42,28 +42,23 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 >When adding a __RadDictionary__ or similar object, use the __AddDictionary(IWordDictionary dictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__. You can also associate a dictionary with a specific culture. The method to remove this dictionary is __RemoveDictionary(CultureInfo culture)__.
 
 
-#### __[C#] Example 1: Load a dictionary__
+__Example 1: Load a dictionary__
 
-{{region radrichtextbox-features-spellcheck_0}}
+```C#
 	private void LoadDictionary(Stream tdfFileStream)
 	{
 	    RadDictionary dictionary = new RadDictionary();
 	    dictionary.Load(tdfFileStream);
 	    ((DocumentSpellChecker)this.radRichTextBox.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
 	}
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 1: Load a dictionary__
-
-{{region radrichtextbox-features-spellcheck_1}}
+```
+```VB.NET
 	Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
 	 Dim dictionary As New RadDictionary()
 	 dictionary.Load(tdfFileStream)
 	 CType(Me.radRichTextBox.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
 	End Sub
-{{endregion}}
+```
 
 >The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__.
 
@@ -73,21 +68,21 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 **RadWordsDictionary** implements the __IWordDictionary__ interface and is capable of reading words from text files that contain one word per line. An example of such files are the **.dic** dictionaries. **Example 2** shows you how to create a RadWordsDictionary instance from a stream.
 
 #### **[C#] Example 2: Load stream in RadWordsDictionary**
-{{region radrichtextbox-features-spellcheck_8}}
+```C#
 	RadWordsDictionary dictionary = new RadWordsDictionary();
 	dictionary.Load(stream);
-{{endregion}}
+```
 
 #### **[VB.NET] Example 2: Load stream in RadWordsDictionary**
-{{region radrichtextbox-features-spellcheck_9}}
+```VB.NET
 	Dim dictionary As New RadWordsDictionary()
 	dictionary.Load(stream)
-{{endregion}}
+```
 
 One of the constructor overloads of the RadWordsDictionary class enables you to pass a parameter of type **IEnumerable&lt;string&gt;**, which can help you create your own dictionary with a custom set of words.
 
 #### **[C#] Example 3: Create RadWordsDictionary from strings**
-{{region radrichtextbox-features-spellcheck_10}}
+```C#
 	List<string> words = new List<string>();
 	words.Add("Test");
 	words.Add("Teacher");
@@ -95,10 +90,10 @@ One of the constructor overloads of the RadWordsDictionary class enables you to 
 	
 	RadWordsDictionary dictionary = new RadWordsDictionary();
 	dictionary.Load(words);
-{{endregion}}
+```
 
 #### **[VB.NET] Example 3: Create RadWordsDictionary from strings**
-{{region radrichtextbox-features-spellcheck_11}}
+```VB.NET
     Dim words As New List(Of String)()
     words.Add("Test")
     words.Add("Teacher")
@@ -106,7 +101,7 @@ One of the constructor overloads of the RadWordsDictionary class enables you to 
 
     Dim dictionary As New RadWordsDictionary()
     dictionary.Load(words)
-{{endregion}}
+```
 
 
 ## Custom Dictionaries
@@ -122,28 +117,23 @@ Here is an example of such a dictionary that adds the words in the "CustomDictio
 
 >tipWhen adding a dictionary that implements the __ICustomWordDictionary__ interface object use the __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method of the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__.
 
-#### __[C#] Example 4: Creating a custom dictionary__
+__Example 4: Creating a custom dictionary__
 
-{{region radrichtextbox-features-spellcheck_2}}
+```C#
 	private void CreateCustomDictionary()
 	{
 	    RadIsolatedStorageCustomDictionary dictionary = new RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt");
 	    DocumentSpellChecker spellchecker = new DocumentSpellChecker(dictionary);
 	    this.radRichTextBox.SpellChecker = spellchecker;
 	}
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 4: Creating a custom dictionary__
-
-{{region radrichtextbox-features-spellcheck_3}}
+```
+```VB.NET
 	Private Sub CreateCustomDictionary()
 	 Dim dictionary As New RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt")
 	 Dim spellchecker As New DocumentSpellChecker(dictionary)
 	 Me.radRichTextBox.SpellChecker = spellchecker
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -158,19 +148,14 @@ To add a word to a dictionary you can either use the __AddWord()__ method of the
 Using the __AddWord()__ method of the dictionary itself adds the word only to the respective dictionary.
 
 
-#### __[C#] Example 5: Adding a word to a dictionary__
+__Example 5: Adding a word to a dictionary__
 
-{{region radrichtextbox-features-spellcheck_4}}
+```C#
 	this.radRichTextBox.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture);
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 5: Adding a word to a dictionary__
-
-{{region radrichtextbox-features-spellcheck_5}}
+```
+```VB.NET
 	Me.radRichTextBox.SpellChecker.AddWord("RadRichTextBox", CultureInfo.InvariantCulture)
-{{endregion}}
+```
 
 
 
@@ -182,26 +167,21 @@ Here is an example.
 
 >The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__.
 
-#### __[C#] Example 6: Loading a dictionary and associating it with a culture__
+__Example 6: Loading a dictionary and associating it with a culture__
 
-{{region radrichtextbox-features-spellcheck_6}}
+```C#
     private void LoadDictionaryWithCulture(Stream tdfFileStream)
     {
         RadDictionary dictionary = new RadDictionary();
         dictionary.Load(tdfFileStream);
         ((DocumentSpellChecker)this.radRichTextBox.SpellChecker).AddDictionary(dictionary, new CultureInfo("de-DE"));
     }
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 6: Loading a dictionary and associating it with a culture__
-
-{{region radrichtextbox-features-spellcheck_7}}
+```
+```VB.NET
 	 Private Sub LoadDictionaryWithCulture(ByVal tdfFileStream As Stream)
 	 Dim dictionary As New RadDictionary()
 	 dictionary.Load(tdfFileStream)
 	 CType(Me.radRichTextBox.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, New CultureInfo("de-DE")
-{{endregion}}
+```
 
 

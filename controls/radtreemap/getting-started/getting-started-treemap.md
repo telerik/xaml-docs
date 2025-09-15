@@ -37,8 +37,8 @@ To populate the control with tiles you will need to provide a collection of item
 
 For this example we will use a simple hierarchical structure consisting of teams, managers and employees.
 
-#### __[C#] Defining the models__
-{{region radtreemap-getting-started-treemap-0}}
+__Defining the models__
+```C#
 	public class Team
     {
         public string Name { get; set; }
@@ -64,10 +64,10 @@ For this example we will use a simple hierarchical structure consisting of teams
         public string Name { get; set; }
         public double Salary { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Populating a collection with the data__
-{{region radtreemap-getting-started-treemap-1}}
+__Populating a collection with the data__
+```C#
 	public ObservableCollection<Team> GetData()
 	{
 		Random r = new Random();            
@@ -90,7 +90,7 @@ For this example we will use a simple hierarchical structure consisting of teams
 		
 		return team;
 	}
-{{endregion}}
+```
 
 ## Setting up the RadTreeMap
 
@@ -104,8 +104,8 @@ The __TargetTypeName__ contains the class name of the corresponding object in th
 
 The __ChildrenPath__ is the path to the property that holds the children's collection.
 
-#### __[XAML] Defining RadTreeMap__
-{{region radtreemap-getting-started-treemap-2}}
+__Defining RadTreeMap__
+```XAML
 	<telerik:RadTreeMap x:Name="radTreeMap">
 		<telerik:RadTreeMap.TypeDefinitions>
 			<telerik:TypeDefinition TargetTypeName="Team" ValuePath="ManagersCount" ChildrenPath="Managers" LabelPath="Name" />
@@ -121,17 +121,17 @@ The __ChildrenPath__ is the path to the property that holds the children's colle
 			</telerik:TypeDefinition>               
 		</telerik:RadTreeMap.TypeDefinitions>
 	</telerik:RadTreeMap>
-{{endregion}}
+```
 
-#### __[XAML] Setting the ItemsSource in XAML__
-{{region radtreemap-getting-started-treemap-3}}
+__Setting the ItemsSource in XAML__
+```XAML
 	<telerik:RadTreeMap ItemsSource="{Binding MyDataSourceProperty}" />
-{{endregion}}
+```
 
-#### __[XAML] Setting the ItemsSource in code (see Example 2)__
-{{region radtreemap-getting-started-treemap-4}}
+__Setting the ItemsSource in code (see Example 2)__
+```XAML
 	this.radTreeMap.ItemsSource = GetData();
-{{endregion}}
+```
 
 __RadTreeMap__  
 

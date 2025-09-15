@@ -17,18 +17,18 @@ The control can be populated with business objects via its __ItemsSource__ prope
 
 The following model is defining a string property to serve as the content of the items and a collection for the child data items. An additional string property is used for the icon [glyph]({%slug common-styling-appearance-glyphs-overview%}).
 
-#### __[C#] Example 1: Creating the model__
-{{region radnavigationview-populating-with-data-hierarchical-databinding-0}}
+__Example 1: Creating the model__
+```C#
 	public class NavigationItemModel
     {
         public string Title { get; set; }
         public string IconGlyph { get; set; }
         public ObservableCollection<NavigationItemModel> Children { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 2: Populating the collection with data__
-{{region radnavigationview-populating-with-data-hierarchical-databinding-1}}
+__Example 2: Populating the collection with data__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -61,7 +61,7 @@ The following model is defining a string property to serve as the content of the
 		
 		this.DataContext = source;
 	}
-{{endregion}}
+```
 
 ## Defining the View
 
@@ -71,8 +71,8 @@ To data bind the content of the RadNavigationViewItem elements set the __Display
 
 To customize the appearance of the RadNavigationViewItems and also allow sub-items to be shown, use an implicit style. This allows to set the __ItemsSource__  and __DisplayMemberPath__ properties of the __RadNavigationViewItems__.
 
-#### __[XAML] Example 3: Setting up the view__
-{{region radnavigationview-populating-with-data-hierarchical-databinding-2}}	
+__Example 3: Setting up the view__
+```XAML	
 	<telerik:RadNavigationView x:Name="radNavigationView" 
 							   ItemsSource="{Binding}" 
 							   PaneHeader="Header"
@@ -105,7 +105,7 @@ To customize the appearance of the RadNavigationViewItems and also allow sub-ite
 			</ContentControl>
 		</telerik:RadNavigationView.Content>
 	</telerik:RadNavigationView>
-{{endregion}}
+```
 
 #### Figure 1: RadNavigationView with sub items
 ![{{ site.framework_name }} RadNavigationView RadNavigationView with sub items](images/radnavigationview-populating-with-data-hierarchical-databinding-0.png)

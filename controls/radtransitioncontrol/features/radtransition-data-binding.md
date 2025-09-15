@@ -18,7 +18,7 @@ Here is an example:
 
 #### __XAML__
 
-{{region xaml-radtransition-features-data-binding_0}}
+```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl"
 	                        Content="{Binding MyDataItem}">
 	    <telerik:RadTransitionControl.ContentTemplate>
@@ -27,7 +27,7 @@ Here is an example:
 	        </DataTemplate>
 	    </telerik:RadTransitionControl.ContentTemplate>
 	</telerik:RadTransitionControl>
-{{endregion}}
+```
 
 The object that you have bound to the __Content__ property becomes the __DataContext__ of the __ContentTemplate__ and you can bind your __UIElements__ to its properties. In this example the __TextBlock's Text__ property is bound to the __Text__ property of the __MyDataItem__ object.
 
@@ -37,7 +37,7 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 
 #### __XAML__
 
-{{region xaml-radtransition-features-data-binding_1}}
+```XAML
 	<ListBox x:Name="MyListBox">
 	    ...
 	</ListBox>
@@ -49,7 +49,7 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 	        </DataTemplate>
 	    </telerik:RadTransitionControl.ContentTemplate>
 	</telerik:RadTransitionControl>
-{{endregion}}
+```
 
 In this case the data item representing the __SelectedItem__ is the __DataContext__ of the __ControlTemplate__.
 

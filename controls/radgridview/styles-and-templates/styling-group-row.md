@@ -38,13 +38,13 @@ You have two options:
 
 >To learn how to modify the default GridViewCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Example 1: Targetting GridViewGroupRow__
+__Example 1: Targetting GridViewGroupRow__
 
-	{{region xaml-gridview-styling-group-row-1}}
+	```XAML
 	<Style TargetType="{x:Type telerik:GridViewGroupRow}">
 	    <Setter Property="MinHeight" Value="60" />
 	</Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupRowStyle__.
 
@@ -56,13 +56,13 @@ If you have set your **GroupRenderMode** to **Flat**, your style should target t
 
 ![Telerik {{ site.framework_name }} DataGrid-groupheaderrow-template](images/gridview-groupheaderrow-template.png)
 
-#### __[XAML] Example 2: Targetting GroupHeaderRow__
+__Example 2: Targetting GroupHeaderRow__
 
-	{{region xaml-gridview-styling-group-row-2}}
+	```XAML
 	<Style TargetType="{x:Type telerik:GroupHeaderRow}">
 	    <Setter Property="MinHeight" Value="60" />
 	</Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GroupHeaderRowStyle__.
 
@@ -70,11 +70,11 @@ If you have set your **GroupRenderMode** to **Flat**, your style should target t
 
 The __RadGridView__ exposes the __GroupRowStyle__ property of type __Style__. It is applied to the __GridViewGroupRow__/__GroupHeaderRow__ visual elements inside the __RadGridView__.
 
-#### __[XAML] Example 2: Setting RadGridView's GroupRowStyle__
+__Example 2: Setting RadGridView's GroupRowStyle__
 
-	{{region xaml-gridview-styling-group-row-3}}
+	```XAML
 	<telerik:RadGridView GroupRowStyle="{StaticResource GroupRowStyle}" />
-{{endregion}}
+```
 
 #### __Figure 3: RadGridView with styled group rows__
 

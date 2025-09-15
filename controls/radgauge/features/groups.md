@@ -15,7 +15,7 @@ There are common scenarios when 1 scale can have few group of ranges (some elect
 The gauge control allows creation of the indicator and range groups. To create range group we should add __GaugeRangeGroup__ element to the ranges of the scale object. To create indicators group we should add __IndicatorGroup__ element to the indicators of the scale object. We can specify which group of ranges will be used by group of indicators. To do it we should use the __Ranges__ property of the __IndicatorsGroup__ element. The following XAML creates gauge which implements the functionality described above:      
 
 #### __XAML__
-{{region radgauge-features-groups_0}}
+```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale RelativeX="0.25" 
 	                         StartWidth="0.05" 
@@ -106,7 +106,7 @@ The gauge control allows creation of the indicator and range groups. To create r
 	                         MinorTickLocation="Inside"
 	                         Fill="Transparent" />
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -115,7 +115,7 @@ Here is a snapshot of the result:
 In this example the ranges itself are invisible. In the case when we need to have different groups of ranges visible at the same time we can use __Location__ and __Offset__ properties of the __GaugeRangeGroup__ object to specify position of the ranges. For example:        
 
 #### __XAML__
-{{region radgauge-features-groups_1}}
+```XAML
     <telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
         <telerik:RadialScale Radius="0.99"
                              RangeLocation="Outside">
@@ -159,6 +159,6 @@ In this example the ranges itself are invisible. In the case when we need to hav
             </telerik:RadialScale.Indicators>
         </telerik:RadialScale>
     </telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![Rad Gauge radgauge features groups 02](images/RadGauge_radgauge_features_groups_02.png)

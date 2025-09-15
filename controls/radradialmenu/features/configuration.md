@@ -16,13 +16,13 @@ This help topic describes the basic properties used to configure the way __RadRa
 
 Initially __RadRadialMenu__ is closed, you should click on the __RadialMenuButton__ in order to open it and show its items. __IsOpen__ boolean property of the __RadialMenu__ allows you to make it open by default. __Example 1__ shows how __IsOpen__ can be set.          
 
-#### __[XAML] Example 1: Setting IsOpen property__
+__Example 1: Setting IsOpen property__
 
-{{region xaml-radradialmenu-features-configuration_0}}
+```XAML
 	<telerik:RadRadialMenu IsOpen="True">
 	    <!--...-->
 	</telerik:RadRadialMenu>
-{{endregion}}
+```
 
 ## Automatically Size the MenuItems
 
@@ -30,9 +30,9 @@ Since the __R1 2021__ release, the RadRadialMenu can auto-size its items. This e
 
 > When the items are auto-sized, the start angle of the first item is automatically calculated. If you want the __StartAngle__ property to be respected in that case, you can set the __AutoCalculateStartAngle__ property to __False__.
 
-#### __[XAML] Example 2: Setting the AutoSizeMenuItems property__
+__Example 2: Setting the AutoSizeMenuItems property__
 
-{{region xaml-radradialmenu-features-configuration_1}}
+```XAML
 	<telerik:RadRadialMenu IsOpen="True" AutoSizeMenuItems="True">
 		<telerik:RadRadialMenuItem Header="Item 1">
 			<telerik:RadRadialMenuItem Header="Item 1.1" />
@@ -52,7 +52,7 @@ Since the __R1 2021__ release, the RadRadialMenu can auto-size its items. This e
 		<telerik:RadRadialMenuItem Header="Item 3" />
 		<telerik:RadRadialMenuItem Header="Item 4" />
 	</telerik:RadRadialMenu>
-{{endregion}}
+```
 
 > When the __AutoSizeMenuItems__ property is __True__, menu items on all levels will be auto-sized. If you want to dynamically control this, you can handle the [Navigating]({%slug radradialmenu-events-overview%}#navigating) event and set the __AutoSizeMenuItems__ property of the event arguments.
 
@@ -68,15 +68,15 @@ Since the __R1 2021__ release, the RadRadialMenu can auto-size its items. This e
 
 The size of __RadRadialMenu__ is set through __MinWidth__ and __MinHeight__ properties. Both should be set to the same value which refers to the diameter of the circle representing the menu.
 
-#### __[XAML] Example 3: Setting MinWidth and MinHeight properties__
+__Example 3: Setting MinWidth and MinHeight properties__
 
-{{region xaml-radradialmenu-features-configuration_2}}
+```XAML
 	<telerik:RadRadialMenu IsOpen="True" MinWidth="200" MinHeight="200">
 	    <telerik:RadRadialMenuItem Header="Item 1" />
 	    <telerik:RadRadialMenuItem Header="Item 2" />
 	    <telerik:RadRadialMenuItem Header="Item 3" />
 	</telerik:RadRadialMenu>
-{{endregion}}
+```
 
 __Figure 3__ shows how the __RadialMenu__ looks in smaller size.     
 
@@ -87,15 +87,15 @@ __Figure 3__ shows how the __RadialMenu__ looks in smaller size.
 
 __StartAngle__ property is used to set the angle at which the first __RadRadialMenuItem__ will be positioned.            
 
-#### __[XAML] Example 4: Setting StartAngle property__
+__Example 4: Setting StartAngle property__
 
-{{region xaml-radradialmenu-features-configuration_3}}
+```XAML
 	<telerik:RadRadialMenu IsOpen="True" StartAngle="180" >
 	    <telerik:RadRadialMenuItem Header="Item 1" />
 	    <telerik:RadRadialMenuItem Header="Item 2" />
 	    <telerik:RadRadialMenuItem Header="Item 3" />
 	</telerik:RadRadialMenu>
-{{endregion}}
+```
 
 __Figure 4__ shows how the __RadialMenu__ looks with different settings of the StartAngle property.            
 
@@ -119,10 +119,10 @@ __RadRadialMenu__ provides the following Radius properties:
 
 __RadRadialMenu__ provides a static *double* property that will help you to adjust the speed of the animations as required. The default value of the __AnimationSpeedFactor__ property is {% if site.site_name == 'WPF' %}*1.5d*{% endif %}{% if site.site_name == 'Silverlight' %}*1.6d*{% endif %} and the minimum possible value is *0.1d*. The property can be set as shown below:
  
-#### __[C#] Example 5: Setting AnimationSpeedFactor property__
-{{region cs-radradialmenu-features-configuration_4}}
+__Example 5: Setting AnimationSpeedFactor property__
+```C#
 	RadRadialMenu.AnimationSpeedFactor = 1.2d;
-{{endregion}}
+```
 
 ## See Also
 

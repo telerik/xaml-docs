@@ -20,8 +20,8 @@ For the purposes of this article, you will have to enable the Google Cloud Stora
 
 Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
 
-#### __[XAML] Example 1: Defining the view__
-{{region xaml-cloud-integration-google-cloud-storage-0}}
+__Example 1: Defining the view__
+```XAML
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250" />
@@ -42,7 +42,7 @@ Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({
             <telerik:RadButton Command="{Binding DeleteItemCommand}" Content="Delete item" Grid.Row="2"/>
         </Grid>
     </Grid>
-{{endregion}}
+```
 
 ## Step 2: Install the NuGet package
 
@@ -54,9 +54,9 @@ Open the NuGet Package Manager and install the **Google.Cloud.Storage.V1** packa
 
 The next step is to create the ViewModel. It will need an [StorageClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Storage.V1/api/Google.Cloud.Storage.V1.StorageClient.html) object which will be used for uploading, deleting and listing files. We also need to implement all of the commands that the RadButtons are bound to.
 
-#### __[C#] Example 2: Defining the ViewModel __
+__Example 2: Defining the ViewModel__
 
-{{region cs-cloud-integration-google-cloud-storage-1}}
+```C#
     public class ViewModel
     {
         private StorageClient storageClient;
@@ -148,10 +148,8 @@ The next step is to create the ViewModel. It will need an [StorageClient](https:
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the ViewModel__
-{{region vb-cloud-integration-google-cloud-storage-2}}
+```
+```VB.NET
     Public Class ViewModel
 		Private storageClient As StorageClient
 
@@ -255,7 +253,7 @@ The next step is to create the ViewModel. It will need an [StorageClient](https:
 			Next item
 		End Sub
     End Class
-{{endregion}}
+```
 
 > In order to locate your project id, please read the [Locate the project ID](https://support.google.com/cloud/answer/6158840?hl=en) help article.
 
@@ -263,9 +261,9 @@ The next step is to create the ViewModel. It will need an [StorageClient](https:
 
 The only thing left is to define the interface through which we are opening the [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}). We also need to define the implementation of that interface which will simply open a RadOpenFileDialog and return the path of the opened file.
 
-#### __[C#] Example 3: Defining the OpenFileDialogService and IFileDialogService__
+__Example 3: Defining the OpenFileDialogService and IFileDialogService__
 
-{{region cs-cloud-integration-google-getting-started-3}}
+```C#
     public interface IFileDialogService
     {
         string OpenFileDialog();
@@ -289,11 +287,8 @@ The only thing left is to define the interface through which we are opening the 
             return string.Empty;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Defining the OpenFileDialogService and FileDialogService__
-
-{{region cs-cloud-integration-google-getting-started-4}}
+```
+```VB.NET
     Interface IFileDialogService
         Function OpenFileDialog() As String
     End Interface
@@ -314,30 +309,27 @@ The only thing left is to define the interface through which we are opening the 
             Return String.Empty
         End Function
     End Class
-{{endregion}}
+```
 
 All that is left is to set the DataContext to our ViewModel and pass an instance of the OpenFileDialogService.
 
-#### __[C#] Example 4: Set the DataContext__
+__Example 4: Set the DataContext__
 
-{{region cs-cloud-integration-google-getting-started-5}}
+```C#
     public MainWindow()
     {
         InitializeComponent();
             
         this.DataContext = new ViewModel(new OpenFileDialogService());
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Set the DataContext__
-
-{{region vb-cloud-integration-google-getting-started-6}}
+```
+```VB.NET
     Public Sub New()
 		InitializeComponent()
 
 		Me.DataContext = New ViewModel(New OpenFileDialogService())
     End Sub
-{{endregion}}
+```
 
 #### Figure 1: Example after uploading a file and listing it in the Office2016 theme
 

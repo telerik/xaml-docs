@@ -21,8 +21,8 @@ __Fill__ and __Stroke__ are the most commonly used properties which affect most 
 
 > The AdditionalStroke property, for example, is relevant in the OhlcSeries, where the properties OpenBinding and CloseBinding define two types of sticks, depending on which of these properties has a bigger value. One of these types takes its color from Stroke and the other - from AdditionalStroke. Similarly, the AdditionalFill property affects the CandlestickSeries.     
 
-#### __[XAML] Example 1: Creating a custom palette__
-{{region radchartview-palettes-paletteentry-0}}
+__Example 1: Creating a custom palette__
+```XAML
 	<telerik:RadCartesianChart>
 	    <telerik:RadCartesianChart.Palette>
 	        <telerik:ChartPalette>
@@ -60,7 +60,7 @@ __Fill__ and __Stroke__ are the most commonly used properties which affect most 
 	        </telerik:CandlestickSeries.DataPoints>
 	    </telerik:CandlestickSeries>	
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: OhlcSeries with Custom Palette__
 ![OhlcSeries with Custom Palette](images/RadChartView-palettes-paletteentry-0.png)
@@ -71,17 +71,15 @@ __Fill__ and __Stroke__ are the most commonly used properties which affect most 
 
  > When you are working with BarSeries with its property **PaletteMode** set to **DataPoint** you can also get the PaletteEntry per data point.
 
-#### __[C#] Example 2: Getting the palette entry of a series__
-{{region radchartview-features-pallettes-paletteentry-1}}
+__Example 2: Getting the palette entry of a series__
+```C#
 	int index = chart.Series.IndexOf(series);
 	PaletteEntry? paletteEntry = this.chart.Palette.GetEntry(series, index);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Getting the palette entry of a series__
-{{region radchartview-features-pallettes-paletteentry-2}}
+```
+```VB.NET
 	Dim index As Integer = chart.Series.IndexOf(series)
 	Dim paletteEntry As System.Nullable(Of PaletteEntry) = Me.chart.Palette.GetEntry(series, index)
-{{endregion}}
+```
 
 ## See Also
 * [Palettes]({%slug radchartview-features-palettes-introduction%})

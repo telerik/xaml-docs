@@ -16,8 +16,8 @@ The `RadHighlightTextBlock` control allows you to customize the highlighted text
 
 To style the matches, override the `HighlightTextRange` method. It provides a parameter of the type `HighlightTextInfo`. It stores information about the portion of the RadHighlightTextBlock text that needs to be highlighted. To style it, call the `ApplyPropertyValue` method on the `TextRange` property of the HighlightTextRange's parameter. This method accepts a `DependencyProperty` as a first parameter and as a second-value that will be applied to it.
 
-#### __[C#] Inheriting from the RadHighlightTextBlock class and styling the matches__
-{{region radhighlighttextblock-custom-highlighttextblock-0}}
+__Inheriting from the RadHighlightTextBlock class and styling the matches__
+```C#
     public class CustomHighlightTextBlock : RadHighlightTextBlock
     {
         protected override void HighlightTextRange(HighlightTextInfo info)
@@ -29,10 +29,8 @@ To style the matches, override the `HighlightTextRange` method. It provides a pa
             info.TextRange.ApplyPropertyValue(TextElement.ForegroundProperty, (SolidColorBrush)new BrushConverter().ConvertFrom("#E60000"));
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Inheriting from the RadHighlightTextBlock class and styling the matches__
-{{region radhighlighttextblock-custom-highlighttextblock-1}}
+```
+```VB.NET
     Public Class CustomHighlightTextBlock
         Inherits RadHighlightTextBlock
 
@@ -43,12 +41,12 @@ To style the matches, override the `HighlightTextRange` method. It provides a pa
             info.TextRange.ApplyPropertyValue(TextElement.ForegroundProperty, CType(New BrushConverter().ConvertFrom("#E60000"), SolidColorBrush))
         End Sub
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Using the custom RadHighlightTextBlock custom styled matches__
-{{region radhighlighttextblock-custom-highlighttextblock-2}}
+__Using the custom RadHighlightTextBlock custom styled matches__
+```XAML
     <local:CustomHighlightTextBlock Text="Thank you for choosing Telerik UI for WPF." HighlightText="Telerik UI for WPF"/>
-{{endregion}}
+```
 
 __Custom RadHighlightTextBlock with custom styled matches__
 
@@ -58,8 +56,8 @@ __Custom RadHighlightTextBlock with custom styled matches__
 
 To add or remove a match, override the `GetHighlightInfos` method. It will return a collection of `HighlightTextInfo` instances that the RadHighlightTextBlock control will use to highlight each match. You can modify the entries before returning the collection.
 
-#### __[C#] Inheriting from the RadHighlightTextBlock class and removing a match__
-{{region radhighlighttextblock-custom-highlighttextblock-3}}
+__Inheriting from the RadHighlightTextBlock class and removing a match__
+```C#
     public class CustomHighlightTextBlock : RadHighlightTextBlock
     {
         protected override IEnumerable<HighlightTextInfo> GetHighlightInfos()
@@ -69,10 +67,8 @@ To add or remove a match, override the `GetHighlightInfos` method. It will retur
             return matches;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Inheriting from the RadHighlightTextBlock class and removing a match__
-{{region radhighlighttextblock-custom-highlighttextblock-4}}
+```
+```VB.NET
     Public Class CustomHighlightTextBlock
         Inherits RadHighlightTextBlock
 
@@ -82,14 +78,14 @@ To add or remove a match, override the `GetHighlightInfos` method. It will retur
             Return matches
         End Function
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Using the custom RadHighlightTextBlock where the last item is removed__
-{{region radhighlighttextblock-custom-highlighttextblock-5}}
+__Using the custom RadHighlightTextBlock where the last item is removed__
+```XAML
     <local:CustomHighlightTextBlock HighlightMode="AllMatches"
                                     Text="Thank you for choosing Telerik UI for WPF. To learn mode please visit the Telerik UI for WPF product overview page." 
                                     HighlightText="Telerik UI for WPF"/>
-{{endregion}}
+```
 
 __RadHighlightTextBlock where the last match is omitted__
 

@@ -49,9 +49,9 @@ Here is a list of the most important properties and methods.
 * __GetValueForItem(item)__: A method which returns the content of the cell for the provided item.
 			
 
-#### __[C#] Example 1: Iterating over cells in all visible columns and accessing their values__
+__Example 1: Iterating over cells in all visible columns and accessing their values__
 
-{{region cs-radgridview-columns-column-types-boundcolumnbase_0}}
+```C#
 	var visibleColumns = RadGridView1.Columns.OfType<GridViewBoundColumnBase>()
 	                     .Where(c => c.IsVisible)
 	                     .OrderBy(c => c.DisplayIndex).ToList();
@@ -62,4 +62,4 @@ Here is a list of the most important properties and methods.
 	        var value = visibleColumns[j].GetValueForItem(RadGridView1.Items[i]);
 	    }
 	}
-{{endregion}}
+```

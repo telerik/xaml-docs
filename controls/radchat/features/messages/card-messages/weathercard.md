@@ -18,9 +18,9 @@ __Weather__ card extends __ImageCard__ by adding options to display weather data
 * __Pressure__
 * __Wind__
 
-#### __[C#] Example 1: Defining a WeatherCard__
+__Example 1: Defining a WeatherCard__
 
-{{region radchat-messages-productcard_01}}
+```C#
 	 WeatherCardMessage weatherCardMessage = new WeatherCardMessage(this.currentAuthor);
             weatherCardMessage.ActionResultsOrientation = Orientation.Vertical;
             weatherCardMessage.CardOrientation = CardOrientation.Portrait;
@@ -37,7 +37,7 @@ __Weather__ card extends __ImageCard__ by adding options to display weather data
             weatherCardMessage.Title = "London, UK";
 
             this.chat.AddMessage(weatherCardMessage);
-{{endregion}}
+```
 
 Defining such __WeatherCardMessage__ will look as follows.
 

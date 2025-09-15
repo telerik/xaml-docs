@@ -29,8 +29,8 @@ Adding a given message is done through the __AddMessage__ method of __RadChat__.
 
 When sending a message the __SendMessage__ event will be triggered. Its arguments expose the __Message__ property through which the message that is currently being sent can be customized.
 
-#### __[C#] Example 1: Handling the SendMessage event__ 
-{{region radchat-messages-overview_01}}
+__Example 1: Handling the SendMessage event__ 
+```C#
 	private void Chat_SendMessage_(object sender, SendMessageEventArgs e)
         {
             var author = e.Message.Author;
@@ -42,7 +42,7 @@ When sending a message the __SendMessage__ event will be triggered. Its argument
                 e.Handled = true;
             }
         }
-{{endregion}}
+```
 
 ## Display Position
 

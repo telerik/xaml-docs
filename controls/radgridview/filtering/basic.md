@@ -107,10 +107,10 @@ Each `GridViewColumn` has a property called `FilterMemberPath`. This property ca
 The following example shows how to specify the `FilterMemberPath` for the column to filter it based on the `NameToFilterOn` property of the bound business object.
         
 
-#### __[XAML] Specifying the FilterMemberPath for a column__
-{{region xaml-gridview-filtering-basic_0}}
+__Specifying the FilterMemberPath for a column__
+```XAML
 	  <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" FilterMemberPath="PropertyToFilterOn"/>
-{{endregion}}
+```
 
 ## OptimizeDistinctFilterQuery
 
@@ -128,8 +128,8 @@ The DistinctValuesSearchMode property allows you to change the criteria, by whic
 
 The following example shows how to utilize these properties.
 
-#### __[XAML] Setting EnableDistinctValuesFiltering and DistinctValuesSearchMode properties__
-{{region xaml-gridview-filtering-basic_1}}
+__Setting EnableDistinctValuesFiltering and DistinctValuesSearchMode properties__
+```XAML
 	<telerik:RadGridView DataContext="{StaticResource MyViewModel}"
 	                     ItemsSource="{Binding Clubs}" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -139,7 +139,7 @@ The following example shows how to utilize these properties.
 	                                    DistinctValuesSearchMode="StartsWith"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __Filtering the StadiumCapacity column's distinct values__
 

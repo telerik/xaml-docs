@@ -32,8 +32,8 @@ How to replace the show editor command, executed when the modal editor of the Pr
 
 To replace the default action executed on modal editor button click, override the behavior of the Telerik's `ModalEditor.ShowEditorCommand`.
 
-#### __[C#]__
-{{region kb-propertygrid-override-showeditorcommand-0}}
+
+```C#
 	static MainWindow()
 	{
 		CommandManager.RegisterClassCommandBinding(typeof(RadButton), new CommandBinding(ModalEditor.ShowEditorCommand, ShowEditorExecuted, CanShowEditorExecute));
@@ -65,4 +65,4 @@ To replace the default action executed on modal editor button click, override th
 			window.ShowDialog();
 		}
 	}
-{{endregion}}
+```

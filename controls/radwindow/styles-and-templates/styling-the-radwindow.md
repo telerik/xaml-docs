@@ -16,8 +16,8 @@ You can see how you can extract the styles and templates of a Telerik control in
 
 To re-apply the customized style, you can set the Style property of RadWindow.
 
-#### __[XAML] Example 1: Define a Style with customized ControlTemplate__ 
-{{region radwindow-styles-and-templates-styling-the-radwindow_0}}
+__Example 1: Define a Style with customized ControlTemplate__ 
+```XAML
 	<UserControl.Resources>
 		<!-- If you use NoXaml dlls and implicit styles theming, please set the following property on the Style object: BasedOn="{StaticResource RadWindowStyle}" -->
 		<Style x:Key="CustomRadWindowStyle" TargetType="telerik:RadWindow">	
@@ -30,32 +30,32 @@ To re-apply the customized style, you can set the Style property of RadWindow.
 			</Setter>			
 		</Style>
 	</UserControl.Resources>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the Style property of RadWindow__ 
-{{region radwindow-styles-and-templates-styling-the-radwindow_1}}
+__Example 2: Setting the Style property of RadWindow__ 
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.Style = (Style)this.Resources["CustomRadWindowStyle"];
-{{endregion}}
+```
 
 >tip If you remove the x:Key setting of the style, it will get applied implicitly to all RadWindow controls in the scope where the style is defined. In this case, you don't need to set the Style property explicitly. For RadWindow, it is recommend to define such implicit style in the App.xaml Resources.
 
 You can also use the Template property directly instead of the Style property.
 
-#### __[XAML] Example 3: Define a Style with customized ControlTemplate__ 
-{{region radwindow-styles-and-templates-styling-the-radwindow_2}}
+__Example 3: Define a Style with customized ControlTemplate__ 
+```XAML
 	<UserControl.Resources>	
 		<ControlTemplate x:Key="CustomRadWindowTemplate" TargetType="telerik:RadWindow">
 			<!-- customized template here -->
 		</ControlTemplate>
 	</UserControl.Resources>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting the Style property of RadWindow__ 
-{{region radwindow-styles-and-templates-styling-the-radwindow_3}}
+__Example 4: Setting the Style property of RadWindow__ 
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.Template = (ControlTemplate)this.Resources["CustomRadWindowTemplate"];
-{{endregion}}
+```
 
 ## See Also  
 

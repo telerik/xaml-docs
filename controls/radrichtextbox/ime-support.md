@@ -20,8 +20,8 @@ The RadRichTextBox class exposes the `UsePreviousVersionOfMicrosoftIme` property
 
 >important When using Japanese, the UsePreviousVersionOfMicrosoftIme property needs to be synchronized with the OS settings. To learn more about how to revert to the previous version of the IME, you check this [article](https://support.microsoft.com/en-us/windows/revert-to-a-previous-version-of-an-ime-input-method-editor-adcc9caa-17cb-44d8-b46e-f5b473b4dd77).
 
-#### __[C#] Reverting to the previous version of Microsoft IME__
-{{region radrichtextbox-features-ime-support-0}}
+__Reverting to the previous version of Microsoft IME__
+```C#
 	public partial class MainWindow : Window
 	{
 	    public MainWindow()
@@ -36,10 +36,8 @@ The RadRichTextBox class exposes the `UsePreviousVersionOfMicrosoftIme` property
 	       this.radRichTextBox.UsePreviousVersionOfMicrosoftIme = true;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Reverting to the previous version of Microsoft IME__
-{{region radrichtextbox-features-ime-support-1}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 	    Inherits Window
 
@@ -52,7 +50,7 @@ The RadRichTextBox class exposes the `UsePreviousVersionOfMicrosoftIme` property
 	        Me.radRichTextBox.UsePreviousVersionOfMicrosoftIme = True
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## Caret class
 
@@ -99,8 +97,8 @@ The `ICaretFactory` interface has a `CreateCaret` method which is responsible fo
 
 To achieve a different than the Microsoft IME support, you should implement your own caret which inherits RadRichTextBox’s Caret class and overrides the handlers of the above mentioned events. In these overridden methods you can execute the specific logic for the corresponding input method editor. 
 
-#### __[C#] Extending the Caret class__
-{{region radrichtextbox-ime-support-2}}
+__Extending the Caret class__
+```C#
 	public class SogouCaret : Caret
 	{
 	    protected override void OnTextInputStart(object sender, TextCompositionEventArgs e)
@@ -109,10 +107,8 @@ To achieve a different than the Microsoft IME support, you should implement your
 	
 	    protected override void OnTextInput(TextCompositionEventArgs e)
 	}
-{{endregion}}
-
-#### __[VB.NET] Extending the Caret class__
-{{region radrichtextbox-ime-support-3}}
+```
+```VB.NET
 	Public Class SogouCaret
 	    Inherits Caret
 	
@@ -122,12 +118,12 @@ To achieve a different than the Microsoft IME support, you should implement your
 	
 	    Protected Overloads Sub OnTextInput(ByVal e As TextCompositionEventArgs)
 	End Class
-{{endregion}}
+```
 
 The inherited caret should be created by a factory class, which should implement the `ICaretFactory` interface.
 
-#### __[C#] Implementing a custom caret factory__
-{{region radrichtextbox-ime-support-4}}
+__Implementing a custom caret factory__
+```C#
 	public class SogouCaretFactory : ICaretFactory
 	{
 	    public Caret CreateCaret()
@@ -135,10 +131,8 @@ The inherited caret should be created by a factory class, which should implement
 	        return new SogouCaret();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Implementing a custom caret factory__
-{{region radrichtextbox-ime-support-5}}
+```
+```VB.NET
 	Public Class SogouCaretFactory
 	    Implements ICaretFactory
 	
@@ -147,20 +141,17 @@ The inherited caret should be created by a factory class, which should implement
 	    End Function
 	
 	End Class
-{{endregion}}
+```
 
 The last thing you should do, is to set the RadRichTextBox’ `CaretFactory` property to be your factory class.
 
-#### __[C#] Setting the custom caret factory__
-{{region radrichtextbox-ime-support-6}}
+__Setting the custom caret factory__
+```C#
 	this.radRichTextBox.CaretFactory = new SogouCaretFactory();
-{{endregion}}
-
-#### __[VB.NET] Setting the custom caret factory__
-
-{{region radrichtextbox-ime-support-7}}
+```
+```VB.NET
 	Me.radRichTextBox.CaretFactory = new SogouCaretFactory()
-{{endregion}}
+```
 
 >tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/CustomCaret).
 

@@ -31,9 +31,9 @@ You can then [set a theme]({%slug styling-apperance-implicit-styles-overview%}) 
 
 Once you've set a theme for your application, add the following dictionary to your list of merged dictionaries which will enable you to use the **TelerikWebUI** [font glyphs]({%slug common-styling-appearance-glyphs-reference-sheet%}) for the icons in the project.
 
-#### __[XAML] Example 1: The User Control's Definition__
+__Example 1: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-speech-to-text-1}}
+```XAML
     <Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -42,15 +42,15 @@ Once you've set a theme for your application, add the following dictionary to yo
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 ## Define the User Control's Layout
 
 Now, add a new **UserControl** to your project. You can give it a descriptive name, such as RecordVoiceControl, for example. Next, define the following XAML:
 
-#### __[XAML] Example 2: The User Control's Definition__
+__Example 2: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-speech-to-text-1}}
+```XAML
     <UserControl x:Class="AzureCognitiveServices.RecordVoiceControl"
                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -78,7 +78,7 @@ Now, add a new **UserControl** to your project. You can give it a descriptive na
                                         WatermarkContent="Write your short description here or press the record button to the left..." />
         </Grid>
     </UserControl>
-{{endregion}}
+```
 
 ## Add the Speech Recognition NuGet Package
 
@@ -90,9 +90,9 @@ You now have to add the **Microsoft.ProjectOxford.SpeechRecognition** NuGet pack
 
 All that's left to do is actually handle the button's **Checked** and **Unchecked** events and use the Bing Speech API to pass the recognized text to the **RadWatermarkTextBox**.
 
-#### __[XAML] Example 3: The User Control's Definition__
+__Example 3: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-speech-to-text-2}}
+```XAML
     public partial class RecordVoiceControl : UserControl
 	{
 		private MicrophoneRecognitionClient micClient;
@@ -143,7 +143,7 @@ All that's left to do is actually handle the button's **Checked** and **Unchecke
 			}), DispatcherPriority.Background);
 		}
     }
-{{endregion}}
+```
 
 The Checked handler creates a new instance of the **MicrophoneRecognitionClient** class via the **CreateMicrophoneClient** factory method if one has not already been created. This method requires the type of recognition mode, the language which the client will listen for and the subscription key from the Azure account you've set up. It then calls the speech recognition by invoking the **StartMicAndRecognition** which in turn starts listening for input. Once the button is pressed a second time, the **EndMicAndRecognition** method is invoked and the detected phrases are added to the RadWatermarkTextBox's **Text** property.
 
@@ -151,11 +151,11 @@ The Checked handler creates a new instance of the **MicrophoneRecognitionClient*
 
 That's it. You can now use the control however you find necessary to record you speech.
 
-#### __[XAML] Example 4: Use the User Control__
+__Example 4: Use the User Control__
 
-{{region cloud-integration-cognitive-services-speech-to-text-3}}
+```XAML
     <local:RecordVoiceControl Text="{Binding Text, Mode=TwoWay}" Height="60" />
-{{endregion}}
+```
 
 **Figure 1** shows the final result in the Office2016 theme.
 

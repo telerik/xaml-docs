@@ -38,10 +38,10 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Adding RadVirtualGrid to the Project
 
-#### __[XAML] Defining RadVirtualGrid Declaratively__
-{{region radvirtualgrid-gettingstarted_0}}
+__Defining RadVirtualGrid Declaratively__
+```XAML
 	 <telerik:RadVirtualGrid x:Name="VirtualGrid"/>
-{{endregion}}
+```
 
 ## Populating with Data Manually
 
@@ -52,12 +52,12 @@ RadVirtualGrid needs to be initially defined with a fixed amount of rows and col
 * `InitialRowCount`&mdash;Gets or sets the amount of initially loaded rows
 * `InitialColumnCount`&mdash;Gets or sets the amount of initially loaded columns
 
-#### __[XAML] Setting the InitialRowCount and InitialColumnCount properties__
-{{region radvirtualgrid-gettingstarted_1}}
+__Setting the InitialRowCount and InitialColumnCount properties__
+```XAML
 	<telerik:RadVirtualGrid x:Name="VirtualGrid" 
                                 InitialColumnCount="5" 
                                 InitialRowCount="5"/>
-{{endregion}}
+```
 
 The control populates its data through the CellValueNeeded event. It is raised when the control is initially loaded and when newly data is about to be loaded on demand when the user scrolls horizontally or vertically. The event arguments expose the following properties:
 
@@ -67,14 +67,14 @@ The control populates its data through the CellValueNeeded event. It is raised w
 * `RowIndex`&mdash;Provides information regarding the index of the currently loaded row.
 * `Value`&mdash;Through it the needed value for the respective cell can be set.
 
-#### __[C#] Populating RadVirtualGrid with data through the CellValueNeeded event__
-{{region radvirtualgrid-gettingstarted_2}}
+__Populating RadVirtualGrid with data through the CellValueNeeded event__
+```C#
 	private void virtualGrid_CellValueNeeded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.CellValueEventArgs e)
         {
             e.Value = String.Format("{0}.{1}", e.RowIndex, e.ColumnIndex);
         }
-{{endregion}}
+```
 
 __RadVirtualGrid populated with data__
 
@@ -86,10 +86,10 @@ Instead of using the `CellValueNeeded` event, RadVirtualGrid provides an option 
 
 >important When populating data with a `DataProvider`, it handles most of the operations of RadVirtualGrid out-of-the-box. Thus, the events that are intended to be used for manually populating and manipulating the data of the control will not be raised.
 
-#### __[C#] Applying a DataProvider__
-{{region radvirtualgrid-gettingstarted_3}}
+__Applying a DataProvider__
+```C#
 	this.VirtualGrid.DataProvider = new Telerik.Windows.Controls.VirtualGrid.DataProvider(this.myCollection);
-{{endregion}}
+```
 
 > The DataProvider mechanism is intended to cover basic scenarios for populating the control with data. For extending the default behavior, RadVirtualGrid provides support for [Custom DataProvider]({%slug virtualgrid-custom-dataprovider%})
 
@@ -115,8 +115,8 @@ To change the theme, you can follow the steps below:
 
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__  
-{{region radvirtualgrid-getting-started_08}}
+__Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -126,7 +126,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 	
 __RadVirtualGrid with the Windows8 theme__
 

@@ -27,11 +27,11 @@ You can also activate the __Pan__[ MouseTool]({%slug raddiagrams-features-mouse-
 The __DiagrammingFramework__ also provides a built-in pan animation. By default this animation isn't activated which means that you have to manually activate it in case you need to utilize it in your solution. The animation can be set through the __DiagramAnimations.IsPanAnimationEnabled__ attached property.
                 
 #### __XAML__
-{{region raddiagrams-features-pan-zoom-6}}
+```XAML
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     ...
     <telerik:RadDiagram telerik:DiagramAnimations.IsPanAnimationEnabled="True" />
-{{endregion}}
+```
 
 ## Pan Events
 
@@ -59,17 +59,17 @@ The zoom range is controlled through two __DiagramConstants__:
 
 #### __C#__
 
-{{region raddiagrams-features-pan-zoom-0}}
+```C#
 	DiagramConstants.MinimumZoom = 0.2;
 	DiagramConstants.MaximumZoom = 10;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagrams-features-pan-zoom-0}}
+```VB.NET
 	DiagramConstants.MinimumZoom = 0.2
 	DiagramConstants.MaximumZoom = 10	
-{{endregion}}
+```
 
 The current zoom value in a __RadDiagram__ instance is controlled through the __Zoom__ property. It represents a __double__ value which cannot be null, infinity or NaN. Additionally, this value is coerced to be within the range defined by the __MinimumZoom__ and __MaximumZoom__ constants. The default __Zoom__ value is __1__.                
 
@@ -101,7 +101,7 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 	#### __C#__
 
-	{{region raddiagrams-features-pan-zoom-1}}
+	```C#
 		//zoom in with a factor of 0.67
 		private void CustomZoomIn()
 		{
@@ -112,11 +112,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 		{
 			this.xDiagram.ZoomOut(0.67);
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region raddiagrams-features-pan-zoom-1}}
+	```VB.NET
 		'zoom in with a factor of 0.67'
 		Private Sub CustomZoomIn()
 			Me.xDiagram.ZoomIn(0.67)
@@ -125,7 +125,7 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 		Private Sub CustomZoomOut()
 			Me.xDiagram.ZoomOut(0.67)
 		End Sub
-	{{endregion}}
+	```
 
 	![raddiagram-features-zoom-factor](images/raddiagram-features-zoom-factor.png)
 
@@ -133,7 +133,7 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 	#### __C#__
 
-	{{region raddiagrams-features-pan-zoom-2}}
+	```C#
 		//zoom in around the point with coordinates of (125,200)
 		private void ZoomIn(object sender, RoutedEventArgs e)
 		{
@@ -144,11 +144,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 		{
 			this.xDiagram.ZoomOut(null,new Point(100,125));
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region raddiagrams-features-pan-zoom-2}}
+	```VB.NET
 		'zoom in around the point with coordinates of (125,200)'
 		Private Sub ZoomIn(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomIn(Nothing, New Point(125, 200))
@@ -157,7 +157,7 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 		Private Sub ZoomOut(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomOut(Nothing, New Point(100, 125))
 		End Sub
-	{{endregion}}
+	```
 
 	![raddiagram-features-zoom-point](images/raddiagram-features-zoom-point.png)
 
@@ -165,7 +165,7 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 	#### __C#__
 
-	{{region raddiagrams-features-pan-zoom-3}}
+	```C#
 		//zoom in around the point with coordinates of (125,200) with a zoom factor of 0.67
 		private void ZoomIn(object sender, RoutedEventArgs e)
 		{
@@ -176,11 +176,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 		{
 			this.xDiagram.ZoomOut(0.67,new Point(100,125));
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region raddiagrams-features-pan-zoom-3}}
+	```VB.NET
 		'zoom in around the point with coordinates of (125,200) with a zoom factor of 0.67'
 		Private Sub ZoomIn(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomIn(0.67, New Point(125, 200))
@@ -189,7 +189,7 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 		Private Sub ZoomOut(sender As Object, e As RoutedEventArgs)
 			Me.xDiagram.ZoomOut(0.67, New Point(100, 125))
 		End Sub
-	{{endregion}}
+	```
 
 	![raddiagram-features-zoom-methods](images/raddiagram-features-zoom-methods.png)
 
@@ -198,11 +198,11 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 The __DiagrammingFramework__ also provides a built-in zoom animation. By default this animation is activated, but you can easily deactivate and activate it again through the __DiagramAnimations.IsZoomAnimationEnabled__ attached property.                
 
 #### __XAML__
-{{region raddiagrams-features-pan-zoom-7}}
+```XAML
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     ...
 	<telerik:RadDiagram telerik:DiagramAnimations.IsZoomAnimationEnabled="True" />
-{{endregion}}
+```
 
 ## Zoom Events
 
@@ -242,17 +242,17 @@ If you need to change the default behavior, the best place to plug-in and custom
 
 #### __XAML__
 
-{{region raddiagrams-features-pan-zoom-0}}
+```XAML
 	<telerik:RadDiagram x:Name="xDiagram" Grid.Row="1" PreviewZoom="xDiagram_PreviewZoom">
 		<telerik:RadDiagramShape Width="40" 
 								 Height="40"
 								 Geometry="{telerik:CommonShape ShapeType=Star5Shape}" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region raddiagrams-features-pan-zoom-4}}
+```C#
 	private void xDiagram_PreviewZoom(object sender, DiagramZoomEventArgs e)
 	{
 	    double delta = e.TargetZoom - e.Zoom;
@@ -267,11 +267,11 @@ If you need to change the default behavior, the best place to plug-in and custom
 	        e.Handled = true;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagrams-features-pan-zoom-4}}
+```VB.NET
 	Private Sub xDiagram_PreviewZoom(sender As Object, e As DiagramZoomEventArgs)
 	    Dim delta As Double = e.TargetZoom - e.Zoom
 	    Dim newZoom = If(delta > 0, e.Zoom * 1.5, e.Zoom / 1.5)
@@ -282,23 +282,23 @@ If you need to change the default behavior, the best place to plug-in and custom
 	        e.Handled = True
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ##### 2. Zooming RadDiagram using a custom set of zoom values:
 
 #### __XAML__
 
-{{region raddiagrams-features-pan-zoom-0}}
+```XAML
 	<telerik:RadDiagram x:Name="xDiagram" Grid.Row="1" PreviewZoom="xDiagram_PreviewZoom">
 		<telerik:RadDiagramShape Width="40" 
 								 Height="40"
 								 Geometry="{telerik:CommonShape ShapeType=Star5Shape}" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region raddiagrams-features-pan-zoom-5}}
+```C#
 	private List<double> availableZooms = new List<double>() { .1, .125, .16, .2, .25, .33, .5, .67, 1, 1.5, 2, 3, 4, 5, 6, 8, 10 };
 	private void xDiagram_PreviewZoom(object sender, DiagramZoomEventArgs e)
 	{
@@ -315,11 +315,11 @@ If you need to change the default behavior, the best place to plug-in and custom
 	        e.Handled = true;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region raddiagrams-features-pan-zoom-5}}
+```VB.NET
 	Private availableZooms As New List(Of Double)() From { 0.1, 0.125, 0.16, 0.2, 0.25, 0.33, 0.5, 0.67, 1, 1.5, 2, 3, 4, 5, 6, 8, 10}
 	Private Sub xDiagram_PreviewZoom(sender As Object, e As DiagramZoomEventArgs)
 	    Dim delta As Double = e.TargetZoom - e.Zoom
@@ -333,7 +333,7 @@ If you need to change the default behavior, the best place to plug-in and custom
 	    End If
 	
 	End Sub
-{{endregion}}
+```
 
 ## Zooming RadDiagram with RadSlider
 
@@ -341,7 +341,7 @@ You can use the __RadSlider__ control to visualize the current zoom value of a _
 
 #### __XAML__
 
-{{region raddiagrams-features-pan-zoom-1}}
+```XAML
 	<Grid x:Name="LayoutRoot">
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="Auto" />
@@ -367,7 +367,7 @@ You can use the __RadSlider__ control to visualize the current zoom value of a _
 	                                     Geometry="{telerik:CommonShape ShapeType=Star5Shape}" />
 	        </telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 ![raddiagrams zooming](images/raddiagrams_zooming.png)
 

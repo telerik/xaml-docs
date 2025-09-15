@@ -46,10 +46,10 @@ Here is an example usage of those command descriptors:
 
 #### __XAML__
 
-{{region radpdfviewer-rotation_0}}
+```XAML
 	        <telerik:RadButton Content="Clockwise" Command="{Binding ElementName=radPdfViewer, Path=CommandDescriptors.RotateClockwiseCommandDescriptor.Command}"/>
 	        <telerik:RadButton Content="Counterclockwise" Command="{Binding ElementName=radPdfViewer, Path=CommandDescriptors.RotateCounterClockwiseCommandDescriptor.Command}" />
-{{endregion}}
+```
 
 
 
@@ -63,9 +63,9 @@ __RotationAngle__ is an enumeration that specifies the angle at which the docume
 
 #### __C#__
 
-{{region radpdfviewer-rotation_1}}
+```C#
 	    this.viewer.SetRotationAngle(RotationAngle.Degrees180);
-{{endregion}}
+```
 
 
 
@@ -74,8 +74,8 @@ The current angle at which the pages are rotated can be retrieved using the read
 
 #### __C#__
 
-{{region radpdfviewer-rotation_2}}
+```C#
 	    RotationAngle currentAngle = this.viewer.RotationAngle;
-{{endregion}}
+```
 
 

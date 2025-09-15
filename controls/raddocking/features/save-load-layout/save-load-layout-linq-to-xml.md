@@ -20,7 +20,7 @@ Create a new application and add the following declaration.
                 
 #### __XAML__
 
-{{region xaml-raddocking-features-save-load-layout-linq-to-xml_1}}
+```XAML
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="Auto"/>
@@ -107,7 +107,7 @@ Create a new application and add the following declaration.
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking>
 	</Grid>
-{{endregion}}
+```
 
 ## Save layout’s XML to XElement
 
@@ -123,7 +123,7 @@ Example 1 shows how you can convert the generated XML from the SaveLayout functi
 
 #### __C#__
 
-{{region cs-raddocking-features-save-load-layout-linq-to-xml_1}}
+```C#
 	private XElement dockingLayout;
 	
 	private void OnSaveLayoutButtonClick(object sender, RoutedEventArgs e)
@@ -139,7 +139,7 @@ Example 1 shows how you can convert the generated XML from the SaveLayout functi
 	
 	    return XElement.Load(destinationStream);
 	}
-{{endregion}}
+```
 
 ## Load layout’s from XElement
 
@@ -156,7 +156,7 @@ Example 2 shows how to load a RadDocking control's layout stored as valid XEleme
 
 #### __C#__
 
-{{region cs-raddocking-features-save-load-layout-linq-to-xml_2}}
+```C#
 	private void OnLoadLayoutButtonClick(object sender, RoutedEventArgs e)
 	{
 	    MemoryStream sourceAsStream = new MemoryStream();
@@ -164,4 +164,4 @@ Example 2 shows how to load a RadDocking control's layout stored as valid XEleme
 	    sourceAsStream.Seek(0, SeekOrigin.Begin);
 	    this.radDocking.LoadLayout(sourceAsStream);
 	}
-{{endregion}}
+```

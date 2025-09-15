@@ -16,16 +16,16 @@ This is achieved through the usage of the following three events in conjunction.
 
 * `OverlayBrushesNeeded`&mdash;The event arguments expose a `Brushes` collection which can be populated with the Brushes that will be conditionally applied further. When they are preliminarily known, the respective Geometry can be easily drawn at once, instead of applying a style for each cell individually. Thus, the rendering performance of the control is kept unaffected.
 
-#### __[C#] Adding Brushes through the OverlayBrushesNeeded event__
+__Adding Brushes through the OverlayBrushesNeeded event__
 
-{{region cs-radvirtualgrid-styling_conditionalstyling_0}}
+```C#
 	private void VirtualGrid_OverlayBrushesNeeded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.OverlayBrushesEventArgs e)
         {
             e.Brushes.Add(Brushes.Red);
             e.Brushes.Add(Brushes.Yellow);
         }
-{{endregion}}
+```
 
 * `CellDecorationsNeeded`&mdash;This is the event through which the actual styling of the cells can be applied. The event arguments expose the following properties:
 
@@ -40,9 +40,9 @@ This is achieved through the usage of the following three events in conjunction.
 	- `CellTextAlignment`&mdash;Sets the cell's text alignment.
     - `CellTextPadding`&mdash;Sets the cell's text padding.
 
-#### __[C#] Applying conditional styling through the CellDecorationsNeeded event__
+__Applying conditional styling through the CellDecorationsNeeded event__
 
-{{region cs-radvirtualgrid-styling_conditionalstyling_1}}
+```C#
 	private void VirtualGrid_CellDecorationsNeeded(object sender, 
             Telerik.Windows.Controls.VirtualGrid.CellDecorationEventArgs e)
         {
@@ -57,7 +57,7 @@ This is achieved through the usage of the following three events in conjunction.
                 e.CellTextAlignment = TextAlignment.Right;
             }
         }
-{{endregion}}
+```
 
 >For the effects of the `CellTextAlignment` property to be applied, the control's [MeasureTextOnRender]({%slug virtualgrid-getting-started2%}#measuretextonrender) property has to be set to `True`.
 

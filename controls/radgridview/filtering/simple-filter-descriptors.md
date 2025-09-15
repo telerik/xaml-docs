@@ -16,32 +16,32 @@ And now you can create a descriptor:
 
 #### __XAML__
 
-{{region xaml-radgridview-filtering-simple-filter-descriptors_1}}
+```XAML
 	<telerik:FilterDescriptor Member="Country"
 	              Operator="IsEqualTo"
 	              Value="Germany"
 	              IsCaseSensitive="True" />
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radgridview-filtering-simple-filter-descriptors_2}}
+```C#
 	FilterDescriptor descriptor = new FilterDescriptor();
 	descriptor.Member = "Country";
 	descriptor.Operator = FilterOperator.IsEqualTo;
 	descriptor.Value = "Germany";
 	descriptor.IsCaseSensitive = true;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radgridview-filtering-simple-filter-descriptors_3}}
+```VB.NET
 	Dim descriptor As New FilterDescriptor()
 	descriptor.Member = "Country"
 	descriptor.Operator = FilterOperator.IsEqualTo
 	descriptor.Value = "Germany"
 	descriptor.IsCaseSensitive = True
-{{endregion}}
+```
 
 * The __Member__ property defines the property, which values will be filtered.
 
@@ -55,7 +55,7 @@ To use the created descriptor to filter the data in the __RadGridView__ you have
 
 #### __XAML__
 
-{{region xaml-radgridview-filtering-simple-filter-descriptors_4}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView">
 	    <telerik:RadGridView.FilterDescriptors>
 	        <telerik:FilterDescriptor Member="Country"
@@ -64,21 +64,21 @@ To use the created descriptor to filter the data in the __RadGridView__ you have
 	                              IsCaseSensitive="True" />
 	    </telerik:RadGridView.FilterDescriptors>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 When you add a new descriptor to the collection, the data is automatically filtered according to it.
 
 #### __C#__
 
-{{region cs-radgridview-filtering-simple-filter-descriptors_5}}
+```C#
 	this.radGridView.FilterDescriptors.Add(descriptor);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radgridview-filtering-simple-filter-descriptors_6}}
+```VB.NET
 	Me.radGridView.FilterDescriptors.Add(descriptor)
-{{endregion}}
+```
 
 After running the application with this descriptor defined, the __RadGridView__ data will be filtered by the Country column and the result will be the same as if you have clicked on the filter icon in the Country column header and have selected "Germany" as filtering value. 
 

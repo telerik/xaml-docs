@@ -16,25 +16,25 @@ As of **R1 2017** through the new **ShowToolTipOnTrimmedText** property you can 
 
 The ShowToolTipOnTrimmedText is applied to RadGridView's **GridViewHeaderCell**, **GridViewCell** and **GridViewFooterCell** elements. Setting it to **True** will result in a tooltip being showed if the cell's text is trimmed.
 
-#### __[XAML] Example 1: Setting RadGridView's ShowToolTipOnTrimmedText__  
-{{region xaml-gridview-columns-trimmed-text-tooltips_1}}
+__Example 1: Setting RadGridView's ShowToolTipOnTrimmedText__  
+```XAML
 	<telerik:RadGridView ShowToolTipOnTrimmedText="True" />
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Setting a column's ShowToolTipOnTrimmedText__  
-{{region xaml-gridview-columns-trimmed-text-tooltips_2}}
+__Example 2: Setting a column's ShowToolTipOnTrimmedText__  
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" ShowToolTipOnTrimmedText="True" />
-{{endregion}}
+```
 
 #### __Figure 1: Tooltips for trimmed text__ 
 ![Telerik {{ site.framework_name }} DataGrid trimmed-text-tooltips-1](images/trimmed-text-tooltips-1.png)
 
 The default duration of the trimmed text tooltip is 5000 milliseconds. This can be changed using the __ToolTipOnTrimmedTextShowDuration__ property of RadGridView.
 
-#### __[XAML] Example 3: Setting RadGridView's ToolTipOnTrimmedTextShowDuration to 8 seconds__  
-{{region xaml-gridview-columns-trimmed-text-tooltips_3}}
+__Example 3: Setting RadGridView's ToolTipOnTrimmedTextShowDuration to 8 seconds__  
+```XAML
 	<telerik:RadGridView ShowToolTipOnTrimmedText="True" ToolTipOnTrimmedTextShowDuration="8000" />
-{{endregion}}
+```
 
 Setting the ShowToolTipOnTrimmedText of a column will show tooltips for trimmed text only for the given column. Setting the same property of a RadGridView instance will set the ShowToolTipOnTrimmedText for all of its columns.
 

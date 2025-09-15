@@ -32,8 +32,8 @@ How to bind the Command property of the RadButton element(the left part) inside 
 
 Handle the Loaded event of the RadSplitButton, use the [ChildrenOfType]({%slug common-visual-tree-helpers%}) extension method in order to locate its RadButton child and set its __Command__ property. 
 
-#### __[C#] Example 1: Setting the Command of the RadButton inside the RadSplitButton__
-{{region cs-kb-buttons-splitbutton-howto-bind-command-of-button-part-0}}
+__Example 1: Setting the Command of the RadButton inside the RadSplitButton__
+```C#
 	
     private void RadSplitButton_Loaded(object sender, RoutedEventArgs e)
     {
@@ -55,10 +55,8 @@ Handle the Loaded event of the RadSplitButton, use the [ChildrenOfType]({%slug c
     {
         MessageBox.Show("Button clicked!");
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting the Command of the RadButton inside the RadSplitButton__
-{{region vb-kb-buttons-splitbutton-howto-bind-command-of-button-part-1}}
+```
+```VB.NET
 	
     Private Sub RadSplitButton_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim splitButton = DirectCast(sender, RadSplitButton)
@@ -76,7 +74,7 @@ Handle the Loaded event of the RadSplitButton, use the [ChildrenOfType]({%slug c
 	Private Sub OnExecute(ByVal obj As Object)
 		MessageBox.Show("Button clicked!")
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

@@ -48,7 +48,7 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 
 #### __XAML__
 
-{{region radscheduleview-features-categories_0}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">								
 		<telerik:RadScheduleView.CategoriesSource>
 			<telerik:CategoryCollection>
@@ -73,13 +73,13 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 or
 
 #### __C#__
 
-{{region radscheduleview-features-categories_1}}
+```C#
 	public class MyViewModel : ViewModelBase
 	{
 		public ObservableCollection<Appointment> Appointments { get; set; }
@@ -95,11 +95,11 @@ or
 			};
 		}
 	}
-{{endregion}}
+```
 
 #### __XAML__
 
-{{region radscheduleview-features-categories_3}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" 
 						AppointmentsSource="{Binding Appointments}"
 						CategoriesSource="{Binding Categories}">		
@@ -107,15 +107,15 @@ or
 			<telerik:DayViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>		
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Finally, set the DataContext:
 
 #### __C#__
 
-{{region radscheduleview-features-categories_4}}
+```C#
 	this.DataContext = new MyViewModel();
-{{endregion}}
+```
 
 Here is how the new categories look like:
 

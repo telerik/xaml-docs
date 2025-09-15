@@ -42,19 +42,16 @@ Here is a brief list of all events exposed by __RadNumericUpDown__.
 
 Here is an example of how to use the __ValueChanged__ event that is raised whenever the value of __RadNumericUpDown__ is changed:
 
-#### __[C#] Example 1: Handling the ValueChanged event__
+__Example 1: Handling the ValueChanged event__
 
-{{region cs-radnumericupdown-howto-events_0}}
+```C#
 	private void NumericUpDown_ValueChanged(object sender, RadRangeBaseValueChangedEventArgs e)
 	{
 		MessageBox.Show("New value is: " + e.NewValue + "\nOld value was: " + e.OldValue);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Handling the ValueChanged event__
-
-{{region vb-radnumericupdown-howto-events_1}}
+```
+```VB.NET
 	Private Sub NumericUpDown_ValueChanged(ByVal sender As Object, ByVal e As RadRangeBaseValueChangedEventArgs)
 		MessageBox.Show("New value is: " & e.NewValue & ControlChars.Lf & "Old value was: " & e.OldValue)
 	End Sub
-{{endregion}}
+```

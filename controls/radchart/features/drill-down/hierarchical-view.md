@@ -24,7 +24,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 #### __C#__
 
-{{region cs-radchart-features-drill-down-hierarchical-view_0}}
+```C#
 	public class Company
 	{
 	    public string Name
@@ -38,24 +38,24 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-drill-down-hierarchical-view_1}}
+```VB.NET
 	Public Class Company
 	    Public Property Name() As String
 	    Public Property Sales() As ModelSalesCollection
 	End Class
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-drill-down-hierarchical-view_2}}
+```C#
 	public class ModelSalesCollection : List<ModelSales>
 	{
 	    public double TotalAmount
@@ -66,13 +66,13 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-drill-down-hierarchical-view_3}}
+```VB.NET
 	Public Class ModelSalesCollection
 	    Inherits List(Of ModelSales)
 	    Public ReadOnly Property TotalAmount() As Double
@@ -81,7 +81,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        End Get
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
@@ -89,7 +89,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 #### __C#__
 
-{{region cs-radchart-features-drill-down-hierarchical-view_4}}
+```C#
 	public class ModelSales
 	{
 	    public string Model
@@ -108,13 +108,13 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        this.Amount = amount;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-drill-down-hierarchical-view_5}}
+```VB.NET
 	Public Class ModelSales
 	    Public Property Model() As String
 	    Public Property Amount() As Double
@@ -123,7 +123,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	        Me.Amount = amount
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 
 
@@ -131,7 +131,7 @@ Here is a method that generates some sample data for you.
 
 #### __C#__
 
-{{region cs-radchart-features-drill-down-hierarchical-view_6}}
+```C#
 	private List<Company> GetChartData()
 	{
 	    return new List<Company>() { 
@@ -155,13 +155,13 @@ Here is a method that generates some sample data for you.
 	        }
 	    };
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-drill-down-hierarchical-view_7}}
+```VB.NET
 	Private Function GetChartData() As List(Of Company)
 	    Return New List(Of Company)() From { _
 	        New Company() With { _
@@ -184,7 +184,7 @@ Here is a method that generates some sample data for you.
 	        } _
 	    }
 	End Function
-{{endregion}}
+```
 
 
 
@@ -192,7 +192,7 @@ At the first level of the hierarchy the __RadChart__ should display the value of
 
 #### __XAML__
 
-{{region xaml-radchart-features-drill-down-hierarchical-view_8}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
@@ -205,7 +205,7 @@ At the first level of the hierarchy the __RadChart__ should display the value of
 	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -213,7 +213,7 @@ Upon clicking on the respective company, the __RadChart__ should visualize the _
 
 #### __XAML__
 
-{{region xaml-radchart-features-drill-down-hierarchical-view_9}}
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
@@ -244,7 +244,7 @@ Upon clicking on the respective company, the __RadChart__ should visualize the _
 	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

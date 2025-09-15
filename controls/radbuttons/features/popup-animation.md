@@ -16,10 +16,10 @@ position: 8
 
 To enable the animation you can set the __PopupAnimation__ property of the button. 
 
-#### __[XAML] Example 1: Setting PopupAnimation__  
-{{region xaml-radbuttons-features-popup-animation-0}}
+__Example 1: Setting PopupAnimation__  
+```XAML
 	<telerik:RadDropDownButton PopupAnimation="Scroll" />
-{{endregion}}
+```
 
 The property is an enum of type __System.Windows.Controls.Primitives.PopupAnimation__ and also determines the animation type.
 

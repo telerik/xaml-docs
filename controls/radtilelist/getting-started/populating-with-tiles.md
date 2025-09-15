@@ -24,9 +24,9 @@ This tutorial will walk your through the population of __RadTileList__ and will 
 
 Firstly, for the purpose of this tutorial, we will create a new class __Employee__ with a couple of properties:
 
-#### __[C#] Example 1: Defining the Employee class__
+__Example 1: Defining the Employee class__
 
-{{region cs-radtilelist-getting-started_4}}
+```C#
 	public class Employee
 	{
 	    public string FirstName
@@ -50,13 +50,8 @@ Firstly, for the purpose of this tutorial, we will create a new class __Employee
 	        set;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 1: Defining the Employee class__
-
-{{region vb-radtilelist-getting-started_5}}
+```
+```VB.NET
 	Public Class Employee
 	    Public Property FirstName() As String
 	        Get
@@ -95,7 +90,7 @@ Firstly, for the purpose of this tutorial, we will create a new class __Employee
 	    End Property
 	    Private m_Salary As Integer
 	End Class
-{{endregion}}
+```
 
 
 
@@ -105,9 +100,9 @@ Firstly, for the purpose of this tutorial, we will create a new class __Employee
 Once the class __Employee__ is defined, we will define an __EmployeeService__ class that will return an ObservableCollection, containing several hard-coded employees:
         
 
-#### __[C#] Example 2: Defining the EmployeeService class__
+__Example 2: Defining the EmployeeService class__
 
-{{region cs-radtilelist-getting-started_6}}
+```C#
 	public class EmployeeService
 	{
 	    public EmployeeService()
@@ -123,13 +118,8 @@ Once the class __Employee__ is defined, we will define an __EmployeeService__ cl
 	        return employees;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 2: Defining the EmployeeService class__
-
-{{region vb-radtilelist-getting-started_7}}
+```
+```VB.NET
 	Public Class EmployeeService
 
 	    Public Sub New()
@@ -164,15 +154,15 @@ Once the class __Employee__ is defined, we will define an __EmployeeService__ cl
 	    End Function
 
 	End Class
-{{endregion}}
+```
 
 
 
 Secondly, you must define __RadTileList's ItemTemplate__, like so:
 
-#### __[XAML] Example 3: Defining the ItemTemplate__
+__Example 3: Defining the ItemTemplate__
 
-{{region xaml-radtilelist-getting-started_10}}
+```XAML
 	<telerik:RadTileList x:Name="RadTileList">
 	  <telerik:RadTileList.ItemTemplate>
 	    <DataTemplate>
@@ -199,7 +189,7 @@ Secondly, you must define __RadTileList's ItemTemplate__, like so:
 	    </DataTemplate>
 	  </telerik:RadTileList.ItemTemplate>
 	</telerik:RadTileList>
-{{endregion}}
+```
 
 
 
@@ -208,26 +198,21 @@ Secondly, you must define __RadTileList's ItemTemplate__, like so:
 
 Afterwards, all you need to do is to set the __ItemsSource of__ the RadTileList:
 
-#### __[C#] Example 4: Setting the ItemsSource of RadTileList__
+__Example 4: Setting the ItemsSource of RadTileList__
 
-{{region cs-radtilelist-getting-started_8}}
+```C#
 	public MainPage()
 	{
 	    InitializeComponent();
 	    this.RadTileList.ItemsSource = EmployeeService.GetEmployees();
 	}
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 4: Setting the ItemsSource of RadTileList__
-
-{{region vb-radtilelist-getting-started_9}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.RadTileList.ItemsSource = EmployeeService.GetEmployees()
 	End Sub
-{{endregion}}
+```
 
 
 

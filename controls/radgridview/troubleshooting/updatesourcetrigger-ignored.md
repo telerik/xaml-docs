@@ -22,9 +22,9 @@ __SOLUTION__
 
 You can overcome that by using the __CellEditTemplate__ property of the column and setting the __UpdateSourceTrigger__ of the binding applied to the element in edit mode (for example the editing element for GridViewDataColumn is a TextBox). This approach is demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Setting the UpdateSourceTrigger of a binding to a Property of the element in the CellEditTemplate__
+__Example 1: Setting the UpdateSourceTrigger of a binding to a Property of the element in the CellEditTemplate__
 
-{{region xaml-gridview-troubleshooting-updatesourcetrigger-ignored_0}}
+```XAML
 	<!-- In this example we have a column bound to the Name property of our model-->
     <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
         <telerik:GridViewDataColumn.CellEditTemplate>
@@ -33,7 +33,7 @@ You can overcome that by using the __CellEditTemplate__ property of the column a
             </DataTemplate>
         </telerik:GridViewDataColumn.CellEditTemplate>
     </telerik:GridViewDataColumn>
-{{endregion}}
+```
      
 ## See Also
 

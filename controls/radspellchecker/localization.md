@@ -100,12 +100,12 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 #### __C#__
 
-{{region radspellchecker-localization_3}}
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	   ResourceManager = RadSpellCheckerResources.ResourceManager
 	};
-{{endregion}}
+```
 
 
 
@@ -114,9 +114,9 @@ If you rely on culture settings to load the right resources automatically, you h
 
 #### __XAML__
 
-{{region radspellchecker-localization_0 }}
+```XAML
 	<SupportedCultures>en;nl</SupportedCultures>
-	{{endregion}}
+	```
 
 
 
@@ -127,9 +127,9 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 #### __C#__
 
-{{region radspellchecker-localization_0}}
+```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
-{{endregion}}
+```
 
 
 
@@ -140,7 +140,7 @@ What is left in order to fulfil the localization is to override the method __Get
 
 #### __C#__
 
-{{region radspellchecker-localization_1}}
+```C#
 	public class CustomLocalizationManager : LocalizationManager
 	{
 	   public override string GetStringOverride(string key)
@@ -167,7 +167,7 @@ What is left in order to fulfil the localization is to override the method __Get
 	       return base.GetStringOverride(key);
 	   }
 	}
-{{endregion}}
+```
 
 
 
@@ -176,7 +176,7 @@ Of course, if you don't want to hard-code your translation inside the source cod
 
 #### __C#__
 
-{{region radspellchecker-localization_2}}
+```C#
 	public override string GetStringOverride(string key)
 	{
 	   switch( key )
@@ -188,7 +188,7 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	   }
 	   return base.GetStringOverride(key);
 	}
-{{endregion}}
+```
 
 
 

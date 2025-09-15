@@ -27,7 +27,7 @@ For the next tasks will be used the treeview shown on the next figure.
 
 #### __XAML__
 
-{{region check-box-support_0}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -38,7 +38,7 @@ For the next tasks will be used the treeview shown on the next figure.
 	        <telerik:RadTreeViewItem Header="Cycling"/>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 ## Enable Check Boxes Declaratively 
 
@@ -49,9 +49,9 @@ For example, add the following attribute to the treeview declaration in XAML:
 
 #### __XAML__
 
-{{region check-box-support_1}}
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsOptionElementsEnabled="True">
-	{{endregion}}
+	```
 
 Here is a snapshot of the result. 
 ![{{ site.framework_name }} RadTreeView CheckBoxes via IsOptionElementsEnabled](images/RadTreeView_FeaturesCheckBoxLinesSupport_020.png)
@@ -62,20 +62,20 @@ You might want to enable check boxes in the code-behind. In order to do this, se
 			
 #### __C#__
 
-{{region check-box-support_2}}
+```C#
 	private void EnableCheckBoxes()
 	{
 	    radTreeView.IsOptionElementsEnabled = true;
 	}
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region check-box-support_3}}
+```VB.NET
 	Private Sub EnableCheckBoxes()
 	    radTreeView.IsOptionElementsEnabled = True
 	End Sub
-	{{endregion}}
+	```
 
 ## "Tri-state" Check Boxes 
 
@@ -84,9 +84,9 @@ The Tri-State CheckBox mode of __RadTreeView__ allows for RadTreeViewItems' Chec
 
 #### __XAML__
 
-{{region check-box-support_7}}
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsOptionElementsEnabled="True" IsTriStateMode="True">
-	{{endregion}}
+	```
 
 The result can be seen on the next figure: 
 ![{{ site.framework_name }} RadTreeView CheckBoxes with IsTriStateMode](images/RadTreeView_FeaturesCheckBoxLinesSupport_050.png)
@@ -95,15 +95,15 @@ The "Tri-state" behavior can be activated in the code-behind too. To do so, set 
 
 #### __C#__
 
-{{region check-box-support_8}}
+```C#
 	radTreeView.IsTriStateMode = true;
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region check-box-support_9}}
+```VB.NET
 	radTreeView.IsTriStateMode = True
-	{{endregion}}
+	```
 
 
 
@@ -126,12 +126,12 @@ In order to access the initially checked item when the __RadTreeView.IsTriStateM
 
 #### __C#__
 
-{{region check-box-support_10}}
+```C#
 	private void RadTreeViewItem_Checked(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	{
 	 bool isInitiallyChecked = (e as RadTreeViewCheckEventArgs).IsUserInitiated;
 	}
-	{{endregion}}
+	```
 
 ## Events 
 
@@ -139,32 +139,32 @@ The __RadTreeView__ and __RadTreeViewItem__ classes offer you four events for ma
 
 #### __XAML__
 
-{{region check-box-support_12}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsOptionElementsEnabled="True"
 	        PreviewChecked="radTreeView_PreviewChecked"
 	        Checked="radTreeView_Checked"
 	        PreviewUnchecked="radTreeView_PreviewUnchecked"
 	        Unchecked="radTreeView_Unchecked">
-	{{endregion}}
+	```
 
 The __PreviewChecked__ event occurs when the treeview item is about to be checked. The __Checked__ event is fired when the treeview item is already checked. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__. In the event handlers you can place some code. For example, the following lines of code will set the foreground of the checked node green:
 
 #### __C#__
 
-{{region check-box-support_13}}
+```C#
 	private void radTreeView_Checked( object sender, RadRoutedEventArgs e )
 	{
 	    ( e.Source as RadTreeViewItem ).Foreground = new SolidColorBrush( Colors.Green );
 	}
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region check-box-support_14}}
+```VB.NET
 	Private Sub radTreeView_Checked(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
 	    TryCast(e.Source, RadTreeViewItem).Foreground = New SolidColorBrush(Colors.Green)
 	End Sub
-	{{endregion}}
+	```
 
 And here is the result: 
 ![{{ site.framework_name }} RadTreeView Conditional Foreground on Check](images/RadTreeView_FeaturesCheckBoxLinesSupport_070.png)

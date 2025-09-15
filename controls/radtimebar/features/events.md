@@ -30,7 +30,7 @@ This event will also fire on initial load, when the best current item interval i
 
 #### __C#__
 
-{{region radtimebar-events_0}}
+```C#
 		      public MainPage()
 	        {
 	            InitializeComponent();
@@ -45,13 +45,13 @@ This event will also fire on initial load, when the best current item interval i
 	                radTimeBar1.SelectionEnd = new DateTime(2012, 07, 1);
 	            }
 	        }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtimebar-events_1}}
+```VB.NET
 	   public MainPage()
 	   Public Sub New()
 		InitializeComponent()
@@ -64,7 +64,7 @@ This event will also fire on initial load, when the best current item interval i
 					 radTimeBar1.SelectionEnd = New Date(2012, 07, 1)
 				End If
 	End Sub
-	{{endregion}}
+	```
 
 
 The same approach is applicable for groups - In order to get the current group interval you can use __TimeBar.GroupIntervalChanged__ event and __TimeBar.CurrentGroupInterval__ property respectively.

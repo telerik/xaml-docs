@@ -26,14 +26,14 @@ In __Suggest__ mode after one or more matches are found they are displayed in th
 
 The XAML should look like this:
 
-#### __[XAML] Example 1: Declaring RadAutoCompleteBox with Suggest AutoCompleteMode__
+__Example 1: Declaring RadAutoCompleteBox with Suggest AutoCompleteMode__
 
-{{region xaml-radautocompletebox-features-key-properties-0}}
+```XAML
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
 	                            ItemsSource="{Binding Countries}"
 	                            DisplayMemberPath="Name" 
 	                            AutoCompleteMode="Suggest"/>
-{{endregion}}
+```
 
 The next screenshots show how the control looks in __Suggest__ mode:
 
@@ -51,14 +51,14 @@ In __Append__ mode after one or more matches are found the DropDown portion of t
 
 The XAML should look like this:
 
-#### __[XAML] Example 2: Declaring RadAutoCompleteBox with Append AutoCompleteMode__
+__Example 2: Declaring RadAutoCompleteBox with Append AutoCompleteMode__
 
-{{region xaml-radautocompletebox-features-key-properties-1}}
+```XAML
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
 	                            ItemsSource="{Binding Countries}"
 	                            DisplayMemberPath="Name" 
 	                            AutoCompleteMode="Append"/>
-{{endregion}}
+```
 
 The next screenshots show how the control looks in Append mode:
 
@@ -76,14 +76,14 @@ __SuggestAppend__ mode combines the behavior of the two previous modes.
 
 The XAML should look like this:
 
-#### __[XAML] Example 3: Declaring RadAutoCompleteBox with SuggestAppend AutoCompleteMode__
+__Example 3: Declaring RadAutoCompleteBox with SuggestAppend AutoCompleteMode__
 
-{{region xaml-radautocompletebox-features-key-properties-2}}
+```XAML
 	<telerik:RadAutoCompleteBox x:Name="autoComleteBox"  Width="200"
 	                            ItemsSource="{Binding Countries}"
 	                            DisplayMemberPath="Name"
 	                            AutoCompleteMode="SuggestAppend"/>
-{{endregion}}
+```
 
 The next screenshots show how the control looks in SuggestAppend mode:
 

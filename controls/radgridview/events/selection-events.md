@@ -22,20 +22,17 @@ The events are fired by RadGridView each time there is a modification of the __S
 
 It is fired once a selection is about to be performed and a change in the __SelectedItems__ collection is to be executed. This is the case when a row is to be selected or un-selected and the SelectionUnit is FullRow or Mixed.
 
-#### __[C#] Subscribing to the SelectionChanging event__
+__Subscribing to the SelectionChanging event__
 
-{{region cs-gridview-selection-events_0}}
+```C#
 	private void SelectionChanging(object sender, SelectionChangingEventArgs e)
 	{
 	}
-{{endregion}}
-
-#### __[VB.NET] Subscribing to the SelectionChanging event__
-
-{{region vb-gridview-selection-events_1}}
+```
+```VB.NET
 	Private Sub SelectionChanging(sender As Object, e As SelectionChangingEventArgs)
 	End Sub
-{{endregion}}
+```
 
 __SelectionChangingEventArgs__ exposes the following specific properties:
 
@@ -48,20 +45,17 @@ __SelectionChangingEventArgs__ exposes the following specific properties:
 
 Fires each time there is a change in the __SelectedItems__ collection. This happens when a row has been selected or un-selected and the SelectionUnit is FullRow or Mixed.
 
-#### __[C#] Subscribing to the SelectionChanged event__
+__Subscribing to the SelectionChanged event__
 
-{{region cs-gridview-selection-events_2}}
+```C#
 	private void SelectionChanged(object sender, SelectionChangeEventArgs e)
 	{
 	}
-{{endregion}}
-
-#### __[VB.NET] Subscribing to the SelectionChanged event__
-
-{{region vb-gridview-selection-events_3}}
+```
+```VB.NET
 	Private Sub SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
 	End Sub
-{{endregion}}
+```
 
 The __SelectionChangeEventArgs__ class exposes the following specific properties:
 
@@ -72,20 +66,17 @@ The __SelectionChangeEventArgs__ class exposes the following specific properties
 
 This event is raised when a cell is selected. It fires before the __SelectionChanged__ event.
 
-#### __[C#] Subscribing to the CurrentCellInfoChanged event__
+__Subscribing to the CurrentCellInfoChanged event__
 
-{{region cs-gridview-selection-events_10}}
+```C#
 	private void CurrentCellInfoChanged(object sender, GridViewCurrentCellInfoChangedEventArgs e)
 	{
 	}
-{{endregion}}
-
-#### __[VB.NET] Subscribing to the CurrentCellInfoChanged event__
-
-{{region vb-gridview-selection-events_11}}
+```
+```VB.NET
 	Private Sub CurrentCellInfoChanged(ByVal sender As Object, ByVal e As GridViewCurrentCellInfoChangedEventArgs)
 	End Sub
-{{endregion}}
+```
 
 The __GridViewCurrentCellInfoChangedEventArgs__ class exposes the following specific properties:
 
@@ -96,20 +87,17 @@ The __GridViewCurrentCellInfoChangedEventArgs__ class exposes the following spec
 
 This event is fired when a change in the __SelectedCells__ collection is about to be performed. This happens when a cell is to be selected or un-selected when the SelectionUnit is Cell or Mixed.
 
-#### __[C#] Subscribing to the SelectedCellsChanging event__
+__Subscribing to the SelectedCellsChanging event__
 
-{{region cs-gridview-selection-events_6}}
+```C#
 	private void SelectedCellsChanging(object sender, GridViewSelectedCellsChangingEventArgs e)
 	{
 	}
-{{endregion}}
-
-#### __[VB.NET] Subscribing to the SelectedCellsChanging event__
-
-{{region vb-gridview-selection-events_7}}
+```
+```VB.NET
 	Private Sub SelectedCellsChanging(sender As Object, e As GridViewSelectedCellsChangingEventArgs)
 	End Sub
-{{endregion}}
+```
 
 The __GridViewSelectedCellsChangingEventArgs__ class exposes the following specific properties:
 
@@ -122,20 +110,17 @@ The __GridViewSelectedCellsChangingEventArgs__ class exposes the following speci
 
 Fires each time there is change in the __SelectedCells__ collection. This happens when a cell has been selected or un-selected when the SelectionUnit is Cell.
 
-#### __[C#] Subscribing to the SelectedCellsChanged event__
+__Subscribing to the SelectedCellsChanged event__
 
-{{region cs-gridview-selection-events_8}}
+```C#
 	private void SelectedCellsChanged(object sender, GridViewSelectedCellsChangedEventArgs e)
 	{
 	}
-{{endregion}}
-
-#### __[VB.NET] Subscribing to the SelectedCellsChanged event__
-
-{{region vb-gridview-selection-events_9}}
+```
+```VB.NET
 	Private Sub SelectedCellsChanged(sender As Object, e As GridViewSelectedCellsChangedEventArgs)
 	End Sub
-{{endregion}}
+```
 
 The __GridViewSelectedCellsChangedEventArgs__ class exposes the following specific properties:
 

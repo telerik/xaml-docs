@@ -35,8 +35,8 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 
 1. Create the model and view model:
 
-	#### __[C#] Creating a sample model and view model__
-	{{region kb-gridview-filteringdisplayfunc-0}}
+	__Creating a sample model and view model__
+	```C#
 	    public class Person
 	    {
 	        public string Name { get; set; }
@@ -56,22 +56,22 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 	
 	        public ObservableCollection<Person> People { get; set; }
 	    }
-	{{endregion}}
+	```
 
 2. Extend the column that you will use override the FilteringDisplayFunc property:
 
-	#### __[C#] Creating a custom column and overriding the FilteringDisplayFunc property__
-	{{region kb-gridview-filteringdisplayfunc-1}}
+	__Creating a custom column and overriding the FilteringDisplayFunc property__
+	```C#
 	    public class CustomGridViewDataColumn : GridViewDataColumn
 	    {
 	        protected override Func<object, object> FilteringDisplayFunc => base.FilteringDisplayFunc;
 	    }
-	{{endregion}}
+	```
 
 3. Create a field of the type of `Func<object, object>` and a method that will contain the distinct values modification. After that, set it as a return value for the FilteringDisplayFunc property:
 
-	#### __[C#] Creating a custom function__
-	{{region kb-gridview-filteringdisplayfunc-2}}
+	__Creating a custom function__
+	```C#
 	    public class CustomGridViewDataColumn : GridViewDataColumn
 	    {
 	        private Func<object, object> filteringDisplayFunc;
@@ -91,12 +91,12 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 	            get { return filteringDisplayFunc; }
 	        }
 	    }
-	{{endregion}}
+	```
 
 4. The logic of the custom column will modify the distinct values for the IsEmployed property from the first step. 
 
-	#### __[C#] Implementing the customization logic for the distinct values of the custom column__
-	{{region kb-gridview-filteringdisplayfunc-3}}
+	__Implementing the customization logic for the distinct values of the custom column__
+	```C#
 	    public class CustomGridViewDataColumn : GridViewDataColumn
 	    {
 	        private Func<object, object> filteringDisplayFunc;
@@ -123,12 +123,12 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 	            get { return filteringDisplayFunc; }
 	        }
 	    }
-	{{endregion}}
+	```
 
 5. Add the custom column to the Columns collection of RadGridView and bind it to the intended property. For this example, it will be the IsEmployed property:
 
-#### __[C#] Adding the custom column to the Columns collection of RadGridView__
-	{{region kb-gridview-filteringdisplayfunc-4}}
+__Adding the custom column to the Columns collection of RadGridView__
+	```C#
 	    <Grid>
 	        <Grid.DataContext>
 	            <local:MainViewModel/>
@@ -140,7 +140,7 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 	            </telerik:RadGridView.Columns>
 	        </telerik:RadGridView>
 	    </Grid>
-	{{endregion}}
+	```
 
 The produced result will be as follows:
 

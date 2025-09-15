@@ -55,14 +55,14 @@ The following list provides examples that demonstrate how to use glyphs:
 
    The glyphs are basically text shapes, so they must be hosted in a control with textual content. We recommend the __TextBlock__ as it has no special styling:
 
-	#### __[XAML] Example 1: Using glyphs__
-	{{region common-styling-appearance-glyphs-overview-0}}
+	__Example 1: Using glyphs__
+	```XAML
 		<TextBlock FontFamily=”{x:Static telerik:RadGlyph.TelerikFontFamily}” 
 				FontSize=”16” 
 				Text=”{StaticResource GlyphHeart}” 
 				FontWeight=”Normal” 
 				Foreground=”{telerik:Office2016Resource ResourceKey=IconBrush}”/>
-	{{endregion}}
+	```
 
 	>Prior to the **R2 2022** release you would use the **TelerikWebUI StaticResource** to set the FontFamily, but we now recommend using the **static TelerikFontFamily property**. The former font family is still available but provides a smaller set of available glyphs.
 
@@ -70,14 +70,14 @@ The following list provides examples that demonstrate how to use glyphs:
 
    The content of the text-hosting element is set in a string with format *&#xe[3-digit number];*. Since this string carries no meaning for the glyph it relates to, we provide a dictionary with key-value pairs for all available glyphs. This enables the usage of more meaningful references for the needed glyphs.
 
-	#### __[XAML] Example 2: Setting a glyph__
-	{{region common-styling-appearance-glyphs-overview-1}}
+	__Example 2: Setting a glyph__
+	```XAML
 		<!-- Glyph string -->
 		<TextBlock Text="&#xe101;" /> 
 		
 		<!-- Meaningful reference name -->
 		<TextBlock Text="{StaticResource GlyphRedo}" /> 
-	{{endregion}}
+	```
 
    >tip The dictionary approach allows us to continuously include new glyphs in the __TelerikWebUI__ font. Sometimes, the addition of a glyph shifts the numbers of some existing glyphs. With every change, we update the resource dictionary and ship it with the font in the assembly. This eliminates the need for any changes in the already existing projects.
 
@@ -85,10 +85,10 @@ The following list provides examples that demonstrate how to use glyphs:
 
    To use the glyph references and the font as __StaticResources__ in a project, include the __Telerik.Windows.Controls.dll__ and merge the required dictionary in the application resources:
 
-	#### __[XAML] Example 3: Adding the ResourceDictionary with the fonts__
-	{{region common-styling-appearance-glyphs-overview-2}}
+	__Example 3: Adding the ResourceDictionary with the fonts__
+	```XAML
 		<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
-	{{endregion}}
+	```
 
    >tip The needed resources are available in the UI for WPF controls out-of-the-box. The approach demonstrated in **Example 3** above is required only if you use the font and the glyphs in your custom project.
 
@@ -96,8 +96,8 @@ The following list provides examples that demonstrate how to use glyphs:
 
    To change the glyphs’ color, change the foreground of the holding element in the same manner as the foreground of a regular font. This is extremely useful in scenarios when the background of the control changes in different interaction states (see __Example 4__).
 
-	#### __[XAML] Example 4: Setting glyph foreground__
-	{{region common-styling-appearance-glyphs-overview-3}}
+	__Example 4: Setting glyph foreground__
+	```XAML
 		<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10">
 			<TextBlock Text="{StaticResource GlyphLock}" 
 					FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}" 
@@ -105,7 +105,7 @@ The following list provides examples that demonstrate how to use glyphs:
 					Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, 
 					Path=(TextElement.Foreground)}" />
 		</telerik:RadToggleButton>
-	{{endregion}}
+	```
 
 	#### __Figure 1: Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed__  
 	![{{ site.framework_name }} Updated glyph foreground based on the interaction state of the control - normal, mouse over and pressed](images/common-styling-appearance-glyphs-overview-0.png)
@@ -114,8 +114,8 @@ The following list provides examples that demonstrate how to use glyphs:
 
    __Example 5__ demonstrates how to change the glyph based on a __RadToggleButton__ being checked or unchecked.
 
-	#### __[XAML] Example 5: Dynamic glyph change__
-	{{region common-styling-appearance-glyphs-overview-4}}
+	__Example 5: Dynamic glyph change__
+	```XAML
 		<telerik:RadToggleButton HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10" >
 			<TextBlock FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}" FontSize="16"
 				Foreground="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, Path=(TextElement.Foreground)}" />
@@ -132,7 +132,7 @@ The following list provides examples that demonstrate how to use glyphs:
 				</Style>
 			</telerik:RadToggleButton.Resources>
 		</telerik:RadToggleButton>
-	{{endregion}}
+	```
 
 	#### __Figure 2: Dynamic change of the glyph icon when RadToggleButton is toggled__  
 	![{{ site.framework_name }} Dynamic change of the glyph icon when RadToggleButton is toggled](images/common-styling-appearance-glyphs-overview-1.png)
@@ -143,8 +143,8 @@ To bind glyphs from your view model, you must parse the code of the glyph to a *
 
 **Example 6** demonstrates how to do this with an **IValueConverter**, but you can use the same approach directly in your viewmodel.
 
-#### __[C#] Example 6: Using a converter to parse the glyph hex code__
-{{region cs-common-styling-appearance-glyphs-overview-6}}
+__Example 6: Using a converter to parse the glyph hex code__
+```C#
 	public class StringToGlyphConverter : IValueConverter 
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -163,14 +163,14 @@ To bind glyphs from your view model, you must parse the code of the glyph to a *
             return null;
         }
     }
-{{endregion}}
+```
 
 If, for example, you have a **Glyph** property in your viewmodel which is of type **string** and has the value **"\&#xe11b;"**, you can bind it to the **Text** property of a **TextBlock** as demonstrated in **Example 7** to display the **close** glyph.
 
-#### __[XAML] Example 7: Use the StringToGlyphConverter for the binding__
-{{region xaml-common-styling-appearance-glyphs-overview-7}}
+__Example 7: Use the StringToGlyphConverter for the binding__
+```XAML
 	<TextBlock FontFamily="{x:Static telerik:RadGlyph.TelerikFontFamily}" Text="{Binding Glyph, Converter={StaticResource StringToGlyphConverter}}" />
-{{endregion}}
+```
 
 >tip Since R1 2019 the **StringToGlyphConverter** is built-in the UI for WPF suite so you can access it via the `telerik` namespace in xaml or code-behind. Read more about this in the [Converters]({%slug common-converters%}#stringtoglyphconverter) article.
 

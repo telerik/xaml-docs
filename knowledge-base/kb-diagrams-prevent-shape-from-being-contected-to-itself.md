@@ -34,17 +34,17 @@ To prevent this use one of the following two solutions:
 
 Set the __ReflexiveRouter__ of RadDiagram to null.
 
-#### __[C#]__
-{{region kb-diagrams-prevent-shape-from-being-contected-to-itself-0}}
+
+```C#
 	this.diagram.RoutingService.ReflexiveRouter = null;
-{{endregion}}
+```
 
 ### Solution #2
 
 Handle the __ConnectionManipulationCompleted__ event of RadDiagram, if the connection source is the same as the Shape of the event arguments.
 
-#### __[C#]__
-{{region kb-diagrams-prevent-shape-from-being-contected-to-itself-1}}
+
+```C#
 	private void RadDiagram_ConnectionManipulationCompleted(object sender, Telerik.Windows.Controls.Diagrams.ManipulationRoutedEventArgs e)
 	{
 		if (e.Connection.Source == e.Shape)
@@ -52,7 +52,7 @@ Handle the __ConnectionManipulationCompleted__ event of RadDiagram, if the conne
 			e.Handled = true;
 		}
 	}
-{{endregion}}
+```
 
 ## See Also
 * [Getting Started]({%slug raddiagram-getting-started%})

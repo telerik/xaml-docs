@@ -28,16 +28,16 @@ The paragraph properties dialog allows you to open the __Tab Stops__ dialog via 
 
 The dialog can be shown by executing the `ShowParagraphPropertiesDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-paragraph-properties-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowParagraphPropertiesDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowParagraphPropertiesDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-paragraph-properties-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowParagraphPropertiesDialog();
-{{endregion}}
+```
 
 The __Tab Stops__ dialog can be manually opened with the `ShowTabStopsPropertiesDialogCommand` or with the `ShowTabStopsPropertiesDialog` method of `RadRichTextBox`.

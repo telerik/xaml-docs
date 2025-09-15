@@ -31,8 +31,8 @@ How to listen for tab item re-ordering on drag start.
 
 Subscribe to the __DragDropManager.DragInitialize__ event.
 
-#### __[C#]__
-{{region kb-tabcontrol-listen-for-tab-reorder-on-drag-started-0}}
+
+```C#
 	public void MainWindow()
 	{
 		InitializeComponent();
@@ -43,7 +43,7 @@ Subscribe to the __DragDropManager.DragInitialize__ event.
 	{
 		 
 	}
-{{endregion}}
+```
 
 ## See Also
 * [DragDropManager]({%slug dragdropmanager-overview%})

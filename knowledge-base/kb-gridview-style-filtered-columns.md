@@ -30,17 +30,17 @@ How to highlight the header cells of a filtered column.
 
 To style the header cells of a column after it has been filtered, you can handle the **CollectionChanged** event of RadGridView's **FilterDescriptors** collection.
 
-#### __[C#] Example 1: Subscribe to the CollectionChanged event__
+__Example 1: Subscribe to the CollectionChanged event__
 
-{{region kb-gridview-style-filtered-columns-0}}
+```C#
 	this.GridView.FilterDescriptors.CollectionChanged += OnFilterDescriptorsCollectionChanged;
-{{endregion}}
+```
 
 In the event handler, you can set the [HeaderCellStyle]({%slug gridview-styling-column-headers%}) property of the column which was affected by the filtering and remove the style once the filter is cleared.
 
-#### __[C#] Example 2: Handle the CollectionChanged event__
+__Example 2: Handle the CollectionChanged event__
 
-{{region kb-gridview-style-filtered-columns-1}}
+```C#
 	private void OnFilterDescriptorsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
 	{
 		switch (e.Action)
@@ -69,16 +69,16 @@ In the event handler, you can set the [HeaderCellStyle]({%slug gridview-styling-
 				break;
 		}
 	}
-{{endregion}}
+```
 
 You can then define the **FilteredHeaderCellStyle** in the way you desire to highlight the header cells. **Example 3** demonstrates how to set the **Foreground** of the affected header cell to **Red**.
 
-#### __[XAML] Example 3: Define the style for the affected header cells in App.xaml__
-{{region kb-gridview-style-filtered-columns-2}}
+__Example 3: Define the style for the affected header cells in App.xaml__
+```XAML
 	<Style x:Key="FilteredHeaderCellStyle" TargetType="telerik:GridViewHeaderCell">
 		<Setter Property="Foreground" Value="Red"/>
 	</Style>
-{{endregion}}
+```
 
 #### Figure 1: The highlighted header cell of the filtered column
 

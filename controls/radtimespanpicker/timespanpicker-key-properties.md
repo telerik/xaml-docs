@@ -18,9 +18,9 @@ You can use the __StringFormat__ property for formatting the representation of t
 
 The following example demonstrates how to set the __StringFormat__ property.
 
-#### __[XAML] Example 1: Setting the StringFormat of the RadTimeSpanPicker__
+__Example 1: Setting the StringFormat of the RadTimeSpanPicker__
 
-{{region xaml-radtimespanpicker-features-key-properties_0}}
+```XAML
 	<telerik:RadTimeSpanPicker StringFormat="d' Days, 'h' hours and 'mm' minutes'">
 	    <telerik:RadTimeSpanPicker.TimeSpanComponents>
 	        <telerik:DayTimeSpanComponent/>
@@ -28,7 +28,7 @@ The following example demonstrates how to set the __StringFormat__ property.
 	        <telerik:MinuteTimeSpanComponent/>
 	    </telerik:RadTimeSpanPicker.TimeSpanComponents>
 	</telerik:RadTimeSpanPicker>
-{{endregion}}
+```
 
 #### __Figure 1: The new StringFormat representation of the TimeSpan__
 ![{{ site.framework_name }} RadTimeSpanPicker The new StringFormat representation of the TimeSpan](images/RadTimeSpanPicker_Key_Properties_01.png)

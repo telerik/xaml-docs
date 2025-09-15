@@ -18,15 +18,13 @@ The content of this article is applicable only to the __RadRichTextBox for .NET 
 
 Replacing the RadRichTextBox tools, such as the `SelectionMiniToolBar` using custom attributes is not supported when using the control in a {{ site.minimum_net_core_version }} and above project. Instead, you can use the corresponding properties of the control to apply the customization options.
 
-#### __[C#] Replacing RadRichTextBox tools with custom ones__
-{{region radrichtextbox-mef-0}}
+__Replacing RadRichTextBox tools with custom ones__
+```C#
     this.richTextBox.SelectionMiniToolBar = new MyCustomSelectionMiniToolBar();
-{{endregion}}
-
-#### __[VB.NET] Replacing RadRichTextBox tools with custom ones__
-{{region radrichtextbox-mef-1}}
+```
+```VB.NET
     Me.richTextBox.SelectionMiniToolBar = New MyCustomSelectionMiniToolBar()
-{{endregion}}
+```
 
 ## Customization
 
@@ -36,11 +34,11 @@ MEF allows you to easily customize or even replace the extensible parts.
 
 To plug a custom dialog and replace the default one you need to implement the corresponding interface and mark the class that implements it with an attribute. The following example shows how to replace the default `InsertDateTimeDialog` with a custom one. This will skip the default type and load the custom one. The same approach could be used to override the rest of the dialogs, the selection mini toolbar and the context menu.
 
-#### __[C#] Create Custom Dialog__
-{{region radrichtextbox-mef-2}}
+__Create Custom Dialog__
+```C#
 	[CustomInsertDateTimeDialog]
 	public partial class CustomInsertDateTimeDialog: RadRichTextBoxWindow, IInsertDateTimeDialog 
-{{endregion}}
+```
 
 >tip You could find a complete example showing how to implement a custom InsertDateTimeDialog as well as other implementations of custom dialogs in the [XAML SDK repository on GitHub](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox).
 
@@ -48,11 +46,11 @@ To plug a custom dialog and replace the default one you need to implement the co
 
 New format providers can be easily plugged-in by deriving from the `DocumentFormatProviderBase` class or directly from a concrete existing provider and marking the class with the `CustomDocumentFormatProviderAttribute` 
 
-#### __[C#] Create Custom Format Provider__
-{{region radrichtextbox-mef-3}}
+__Create Custom Format Provider__
+```C#
 	[CustomDocumentFormatProvider]
 	public class DocFormatProvider : DocumentFormatProviderBase
-{{endregion}}
+```
 
 >tip An example showing how to create a custom format provider could be downloaded [here](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/DocFormatProviderDemo).
 
@@ -62,11 +60,11 @@ New format providers can be easily plugged-in by deriving from the `DocumentForm
 
 You can create and plug your custom dictionary by implementing the `IWordDictionary` interface. The next example demonstrates how to create a dictionary for Danish.
 
-#### __[C#] Create Custom Dictionary__
-{{region radrichtextbox-mef-4}}
+__Create Custom Dictionary__
+```C#
     [WordDictionaryMetadata("da-DK")]
     public class CustomDanishDictionary : IWordDictionary
-{{endregion}}
+```
 
 ## Initial Load Performance of RadRichTextBox
 
@@ -78,8 +76,8 @@ You can define a new `TypeCatalog` with the necessary types and pass it to the `
 
 >The code in the next snippet requires a reference to System.ComponentModel.Composition.dll.
 
-#### __[C#] Create TypeCatalog__
-{{region radrichtextbox-mef-5}}
+__Create TypeCatalog__
+```C#
 	RadCompositionInitializer.Catalog = new TypeCatalog(
     // format providers
     typeof(XamlFormatProvider),
@@ -138,10 +136,8 @@ You can define a new `TypeCatalog` with the necessary types and pass it to the `
     typeof(RichTextPropertiesDialog),
     typeof(RepeatingSectionPropertiesDialog),
     typeof(PicturePropertiesDialog));
-{{endregion}}
-
-#### __[VB.NET] Create TypeCatalog__
-{{region radrichtextbox-mef-6}}
+```
+```VB.NET
        UI.Extensibility.RadCompositionInitializer.Catalog = New ComponentModel.Composition.Hosting.TypeCatalog(
             GetType(XamlFormatProvider),
             GetType(RtfFormatProvider),
@@ -191,7 +187,7 @@ You can define a new `TypeCatalog` with the necessary types and pass it to the `
             GetType(RichTextPropertiesDialog),
             GetType(RepeatingSectionPropertiesDialog),
             GetType(PicturePropertiesDialog))
-{{endregion}}
+```
 You could remove all the types you won’t need in your application.
 
 >important The type catalog you set is going to be used from all instances of RadRichTextBox in the application.
@@ -200,21 +196,21 @@ You could remove all the types you won’t need in your application.
 
 By default, RadRichTextBox loads all the format providers in the referenced assemblies. If you don’t need them all, you could turn off the MEF and register only the used providers. The next example demonstrates how to load only DocxFormatProvider, even if other format providers assemblies are added to the project .
 
-#### __[C#] Load Format Provider__
-{{region radrichtextbox-mef-7}}
+__Load Format Provider__
+```C#
 	DocumentFormatProvidersManager.AutomaticallyLoadFormatProviders = false;
 	DocumentFormatProvidersManager.RegisterFormatProvider(new DocxFormatProvider());
-{{endregion}}
+```
 
 
 ### UILayersBuilder Loading
 
 The `UILayersBuilder` class is responsive for loading all the UI layers in RadRichTextBox. The initialization of this type will load the layers without using MEF.
 
-#### __[C#] Initialize UILayersBuilder__
-{{region radrichtextbox-mef-8}}
+__Initialize UILayersBuilder__
+```C#
 	this.radRichTextBox.UILayersBuilder = new UILayersBuilder();
-{{endregion}}
+```
 
 ### Spell Checking
 
@@ -222,21 +218,21 @@ All the dictionaries for the spell checking functionality are loaded with MEF. Y
 
 * If the spell checking is not among the requirements for the application, you could turn it off.
 
-	#### __[C#] Disable Spell Checking__
-		{{region radrichtextbox-mef-9}}
+	__Disable Spell Checking__
+		```C#
 	
 			this.radRichTextBox.IsSpellCheckingEnabled = false;
-		{{endregion}}
+		```
 
 * In case you plan to use the built-in spell checker, you could tell the MEF to not search and load for all the default dictionaries and load manually only the ones which will be used in your application.
 
-	#### __[C#] Use Spell Checking Without MEF__
-		{{region radrichtextbox-mef-10}}
+	__Use Spell Checking Without MEF__
+		```C#
 	
 			this.radRichTextBox.IsSpellCheckingEnabled = true;
 			DocumentSpellChecker documentSpellChecker = this.radRichTextBox.SpellChecker as DocumentSpellChecker;
 			documentSpellChecker.AutomaticallyLoadDefaultDictionaries = false;
-		{{endregion}}
+		```
 
 ## See also  
 *[Performance]({%slug radrichtextbox-performance%})

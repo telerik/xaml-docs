@@ -50,11 +50,11 @@ With the __NoResultsContent__ and __NoResultsContentTemplate__ properties of __R
 
 The following snippet demonstrates how to set __NoResultsContent__ to simple text:
 
-#### __[XAML] Using NoResultsContent__
+__Using NoResultsContent__
 
-{{region xaml-radautocompletebox-features-key-properties-0 }}
+```XAML
 	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" NoResultsContent="No Matches" /> 
-{{endregion}}
+```
 
 And this would be the result:
 
@@ -62,9 +62,9 @@ And this would be the result:
 
 For more complex representation you could use __NoResultsContentTemplate__ in order to apply a DataTemplate containing the desired layout. The following example shows how to display an icon in front of the text:
 
-#### __[XAML] Using NoResultsContentTemplate__
+__Using NoResultsContentTemplate__
 
-{{region xaml-radautocompletebox-features-key-properties-1 }}
+```XAML
 	<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries}" NoResultsContent="No Matches">
 		<telerik:RadAutoCompleteBox.NoResultsContentTemplate>
 			<DataTemplate>
@@ -78,7 +78,7 @@ For more complex representation you could use __NoResultsContentTemplate__ in or
 			</DataTemplate>
 		</telerik:RadAutoCompleteBox.NoResultsContentTemplate>
 	</telerik:RadAutoCompleteBox> 
-{{endregion}}
+```
 
 The result would be the following:
 

@@ -34,16 +34,16 @@ To preserve the collapsed size of a diagram container shape, cache the size when
 
 Use the __CompleteResizing__ event of the RadDiagram's __ResizingService__ to store the collapsed size. And the __IsCollapsedChanged__ event of RadDiagramContainerShape to restore the size.
 
-#### __[XAML]__
-{{region kb-diagram-preserve-collapsed-size-container-shape-0}}
+
+```XAML
 	 <telerik:RadDiagram x:Name="diagram">
 		<telerik:RadDiagramContainerShape Position="300, 300" Width="300" Height="100" IsCollapsible="true"  
 										  IsCollapsedChanged="RadDiagramContainerShape_IsCollapsedChanged"/>
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-diagram-preserve-collapsed-size-container-shape-1}}
+
+```C#
 	public partial class MainWindow : Window
     {
         private Dictionary<RadDiagramContainerShape, double> containerToHeightCache = new Dictionary<RadDiagramContainerShape, double>();
@@ -87,7 +87,7 @@ Use the __CompleteResizing__ event of the RadDiagram's __ResizingService__ to st
             }
         }
     }
-{{endregion}}
+```
 
 ## See Also  
 * [Services]({%slug raddiagram-features-services%})

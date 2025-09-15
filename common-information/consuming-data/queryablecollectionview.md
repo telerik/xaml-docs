@@ -20,17 +20,17 @@ The QCV requires an `IEnumerable` source for the data and it works with three ma
 
 The following example shows a basic QueryableCollectionView definintion without any sorting, filtering, grouping or paging applied.
 
-#### __[C#] Defining a collection item model__
-{{region consuming-data-queryablecollectionview-0}}
+__Defining a collection item model__
+```C#
 	public class DataInfo
     {
         public int Value { get; set; }
         public string GroupKey { get; set; }
     }
-{{endregion}}  
+```  
 
-#### __[C#] Defining QueryableCollectionView and populating it with data__
-{{region consuming-data-queryablecollectionview-1}}
+__Defining QueryableCollectionView and populating it with data__
+```C#
 	public MainWindow()
 	{	  
 		InitializeComponent();
@@ -45,12 +45,12 @@ The following example shows a basic QueryableCollectionView definintion without 
 		var qcv = new QueryableCollectionView(source);
 		this.DataContext = qcv;
 	}
-{{endregion}}  
+```  
 
-#### __[XAML] Defining RadGridView and consuming the collection view__
-{{region consuming-data-queryablecollectionview-2}}
+__Defining RadGridView and consuming the collection view__
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding}"/>
-{{endregion}}  
+```  
 
 __RadGridView populate with QueryableCollectionView__
 
@@ -60,11 +60,11 @@ __RadGridView populate with QueryableCollectionView__
 
 The `SortDescriptors` collection of the view allows you to define a set of [SortDescriptor](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.sortdescriptor) objects. The SortDescriptor class provides `Member` and `SortDirection` properties that are used to define the property name being used as the sorting criteria and the sort direction (ascending or descending).
 
-#### __[C#] Defining a SortDescriptor__
-{{region consuming-data-queryablecollectionview-3}}
+__Defining a SortDescriptor__
+```C#
 	var qcv = new QueryableCollectionView(source);
 	qcv.SortDescriptors.Add(new SortDescriptor() { Member = "Value", SortDirection = ListSortDirection.Descending });            
-{{endregion}}  
+```  
 
 __RadGridView sorted with QueryableCollectionView SortDescriptors__
 
@@ -72,22 +72,22 @@ __RadGridView sorted with QueryableCollectionView SortDescriptors__
 
 Generic sorting is supported too, using the `SortDescriptor<TElement, TKey>` class. 
 
-#### __[C#] Using generic sort descriptor__
-{{region consuming-data-queryablecollectionview-4}}
+__Using generic sort descriptor__
+```C#
 	var qcv = new QueryableCollectionView(source);
 	qcv.SortDescriptors.Add(new SortDescriptor<DataInfo, int>() 
 	{
 		SortingExpression = info => info.Value,
 		SortDirection = ListSortDirection.Descending 
 	});
-{{endregion}}
+```
 
 ## Filtering
 
 The `FilterDescriptors` collection of the view allows you to define a set of [FilterDescriptor](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.filterdescriptor) objects. The FilterDescriptor class provides `Member`, `Operator`, and `Value` properties that are used to define the filtering criteria.
 
-#### __[C#] Defining a FilterDescriptor__
-{{region consuming-data-queryablecollectionview-5}}
+__Defining a FilterDescriptor__
+```C#
 	var qcv = new QueryableCollectionView(source);
 	qcv.FilterDescriptors.Add(new FilterDescriptor()
 	{
@@ -95,7 +95,7 @@ The `FilterDescriptors` collection of the view allows you to define a set of [Fi
 		Operator = FilterOperator.IsLessThanOrEqualTo,
 		Value = 1
 	});
-{{endregion}}  
+```  
 
 __RadGridView filtered with QueryableCollectionView FilterDescriptors__
 
@@ -103,28 +103,28 @@ __RadGridView filtered with QueryableCollectionView FilterDescriptors__
 
 Generic filtering is supported too, using the `FilterDescriptor<Element>` class. 
 
-#### __[C#] Using generic filter descriptor__
-{{region consuming-data-queryablecollectionview-6}}
+__Using generic filter descriptor__
+```C#
 	var qcv = new QueryableCollectionView(source);
 	qcv.FilterDescriptors.Add(new FilterDescriptor<DataInfo>()
 	{
 		FilteringExpression = info => info.Value <= 1
 	});
-{{endregion}}  
+```  
 
 ## Grouping  
 
 The `GroupDescriptors` collection of the view allows you to define a set of [GroupDescriptor](https://docs.telerik.com/devtools/wpf/api/telerik.windows.data.groupdescriptor) objects. The GroupDescriptor class provides `Member` and `SortDirection` properties that are used to define the property name being used as the grouping criteria and the sort direction of the groups (ascending or descending).
 
-#### __[C#] Defining a GroupDescriptor__
-{{region consuming-data-queryablecollectionview-7}}
+__Defining a GroupDescriptor__
+```C#
 	var qcv = new QueryableCollectionView(source);
 	qcv.GroupDescriptors.Add(new GroupDescriptor()
 	{
 		Member = "GroupKey",
 		SortDirection = ListSortDirection.Descending
 	});
-{{endregion}}  
+```  
 
 __RadGridView grouped with QueryableCollectionView GroupDescriptors__
 
@@ -132,15 +132,15 @@ __RadGridView grouped with QueryableCollectionView GroupDescriptors__
 
 Generic grouping is supported too, using the `GroupDescriptor<TElement, TKey, TSortingKey>` class. 
 
-#### __[C#] Using generic group descriptor__
-{{region consuming-data-queryablecollectionview-8}}
+__Using generic group descriptor__
+```C#
 	var qcv = new QueryableCollectionView(source);
 	qcv.GroupDescriptors.Add(new GroupDescriptor<DataInfo, string, string>()
 	{
 		GroupingExpression = info => info.GroupKey,
 		SortDirection = ListSortDirection.Descending
 	});
-{{endregion}}
+```
 
 ## Paging
 
@@ -177,8 +177,8 @@ QueryableCollectionViewSource provides the same descriptor collections like Quer
 
 The following example shows how to setup basic view model and use QueryableCollectionViewSource with RadGridView.
 
-#### __[C#] Defining the view model__
-{{region consuming-data-queryablecollectionview-9}}
+__Defining the view model__
+```C#
 	public class MainViewModel
     {
         public ObservableCollection<DataInfo> Items { get; set; }
@@ -194,27 +194,27 @@ The following example shows how to setup basic view model and use QueryableColle
             }
         }
     }
-{{endregion}}  
+```  
 
 See the first example from the beginning of this article for the definition of the __DataInfo__ class.
 
-#### __[XAML] Defining QueryableCollectionViewSource in XAML__
-{{region consuming-data-queryablecollectionview-10}}
+__Defining QueryableCollectionViewSource in XAML__
+```XAML
 	<Window.Resources>
         <local:MainViewModel x:Key="viewModel" />
         <telerik:QueryableCollectionViewSource x:Key="qcvSource" Source="{Binding Source={StaticResource viewModel}, Path=Items}"/>
     </Window.Resources>
-{{endregion}}  
+```  
 
-#### __[XAML] Consuming the QueryableCollectionViewSource's view in XAML__
-{{region consuming-data-queryablecollectionview-11}}
+__Consuming the QueryableCollectionViewSource's view in XAML__
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource qcvSource}, Path=View}" />
-{{endregion}}  
+```  
 
 To use grouping, sorting, and filtering set the corresponding descriptors of the view source object.
 
-#### __[XAML]  Adding descriptors in XAML__
-{{region consuming-data-queryablecollectionview-12}}
+__Adding descriptors in XAML__
+```XAML
 	<Window.Resources>
         <local:MainViewModel x:Key="viewModel" />
         <telerik:QueryableCollectionViewSource x:Key="qcvSource" Source="{Binding Source={StaticResource viewModel}, Path=Items}">
@@ -229,7 +229,7 @@ To use grouping, sorting, and filtering set the corresponding descriptors of the
             </telerik:QueryableCollectionViewSource.FilterDescriptors>
         </telerik:QueryableCollectionViewSource>
     </Window.Resources>
-{{endregion}} 
+``` 
 
 __RadGridView populated using QueryableCollectionViewSource__
 

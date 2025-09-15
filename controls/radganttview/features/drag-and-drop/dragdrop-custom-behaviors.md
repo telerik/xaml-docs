@@ -28,7 +28,7 @@ The next example shows how to create a custom GanttDragDropBehavior in order to 
 
 #### __C#__
 
-{{region cs-radganttview-dragdrop-custom-behaviors-1}}
+```C#
 	public class CustomDragDropBehavior : Telerik.Windows.Controls.GanttView.GanttDragDropBehavior
 	{
 	    protected override bool CanStartDrag(SchedulingDragDropState state)
@@ -40,19 +40,19 @@ The next example shows how to create a custom GanttDragDropBehavior in order to 
 	        return base.CanStartDrag(state);
 	    }
 	}
-{{endregion}}
+```
 
 * Set the just created class as RadGanttView DragDropBehavior:
 
 #### __XAML__
 
-{{region xaml-radganttview-dragdrop-custom-behaviors-1}}
+```XAML
 	<telerik:RadGanttView  x:Name="ganttView" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.DragDropBehavior>
 	        <local:CustomDragDropBehavior />
 	    </telerik:RadGanttView.DragDropBehavior>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 The dragging of milestone tasks will be disabled.
 
@@ -74,7 +74,7 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 
 #### __C#__
 
-{{region cs-radganttview-dragdrop-custom-behaviors-2}}
+```C#
 	public class SnappingSchedulingResizeBehavior : SchedulingResizeBehavior
 	{
 	    protected override void Resize(SchedulingResizeState state)
@@ -127,19 +127,19 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 	        return result;
 	    }
 	}
-{{endregion}}
+```
 
 * Set the newly created class to the RadGanttView ResizeBehavior:
 
 #### __XAML__
 
-{{region xaml-radganttview-dragdrop-custom-behaviors-2}}
+```XAML
 	<telerik:RadGanttView  x:Name="ganttView1" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.ResizeBehavior>
 	        <local:SnappingSchedulingResizeBehavior />
 	    </telerik:RadGanttView.ResizeBehavior>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 The next figures shows the final result. When the Start or End of a Task is resized by resizing the task object it is snapped to the nearest Day depending on if the Task has been resized above 12:00 PM or not:
 

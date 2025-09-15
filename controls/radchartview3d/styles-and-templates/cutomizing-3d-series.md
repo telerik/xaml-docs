@@ -18,8 +18,8 @@ The 3D series allows you to change the default appearance of their data point vi
 
 The material of a 3D object specifies the brush or the texture that will be applied to it. You can set the material of the series’ data points via the __DefaultVisualMaterial__ property which is of type __System.Windows.Media.Media3D.Material__. You can use any of the material types provided by the WPF framework. 
 
-#### __[XAML] Example 1: Setting default visual material__
-{{region radchartview3d-customizing-cartesian-series-0}}
+__Example 1: Setting default visual material__
+```XAML
 	<telerik:RadCartesianChart3D>          
 		<telerik:RadCartesianChart3D.Series>
 			<telerik:BarSeries3D>
@@ -31,7 +31,7 @@ The material of a 3D object specifies the brush or the texture that will be appl
 				</telerik:BarSeries3D.DefaultVisualMaterial>
 			</telerik:BarSeries3D>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 
 #### __Figure 1: BarSeries3D and PointSeries3D with custom material__
 ![{{ site.framework_name }} RadChartView3D BarSeries3D and PointSeries3D with custom material](images/radchartview-3d-cutomizing-cartesian-series-0.png)
@@ -40,8 +40,8 @@ The material of a 3D object specifies the brush or the texture that will be appl
 
 The geometry of a 3D object describes its shape. You can define a geometry for the series’ data points via the __DefaultVisualGeometry__ property. The property is of type __System.Windows.Media.Media3D.Geometry3D__ and accepts an object of type __MeshGeometry3D__.
 
-#### __[XAML] Example 2: Defining a geometry presenting a cube and applying it to a PointSeries3D__
-{{region radchartview3d-customizing-cartesian-series-1}}
+__Example 2: Defining a geometry presenting a cube and applying it to a PointSeries3D__
+```XAML
 	<telerik:PointSeries3D>                    
 		<telerik:PointSeries3D.DefaultVisualGeometry>                       
 			<MeshGeometry3D Positions="0 0 0  0 0 1  0 1 1  0 1 0 
@@ -54,17 +54,17 @@ The geometry of a 3D object describes its shape. You can define a geometry for t
 											 2 1 6  5 2 6"/>
 		</telerik:PointSeries3D.DefaultVisualGeometry> 
 	</telerik:PointSeries3D> 
-{{endregion}}
+```
 	
-#### __[XAML] Example 3: Defining a geometry presenting a pyramid and applying it to a BarSeries3D__
-{{region radchartview3d-customizing-cartesian-series-2}}
+__Example 3: Defining a geometry presenting a pyramid and applying it to a BarSeries3D__
+```XAML
 	<telerik:BarSeries3D.DefaultVisualGeometry>                      
 		<MeshGeometry3D Positions="0 0 0  0 1 0  1 1 0  1 0 0  0.5 0.5 1"
 						TriangleIndices="2 0 1  0 2 3
 										 2 1 4  0 4 1  
 										 0 3 4  2 4 3"/>
 	</telerik:BarSeries3D.DefaultVisualGeometry>
-{{endregion}}
+```
 	
 > The __Positions__ are defined in relative units between 0 and 1, according to the bounds of the data point visual.
 
@@ -77,8 +77,8 @@ The chart allows you to choose different geometries and materials for each data 
 
 You can use the __DefaultVisualMaterialSelector__ property to set a material selector and choose material dynamically.
 
-#### __[C#] Example 4: Implementing material selector__
-{{region radchartview3d-customizing-cartesian-series-3}}
+__Example 4: Implementing material selector__
+```C#
 	public class MyDefaultVisualMaterialSelector : MaterialSelector
 	{
 		public Material MaterialA { get; set; }
@@ -100,10 +100,10 @@ You can use the __DefaultVisualMaterialSelector__ property to set a material sel
 			}
 		}
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Defining material selector__	
-{{region radchartview3d-customizing-cartesian-series-4}}
+__Example 5: Defining material selector__	
+```XAML
 	<FrameworkElement.Resources>
         <local:MyDefaultVisualMaterialSelector x:Key="materialSelector">
             <local:MyDefaultVisualMaterialSelector.MaterialA>
@@ -114,14 +114,14 @@ You can use the __DefaultVisualMaterialSelector__ property to set a material sel
             </local:MyDefaultVisualMaterialSelector.MaterialB>
         </local:MyDefaultVisualMaterialSelector>
     </FrameworkElement.Resources>
-{{endregion}}
+```
 
 > To improve the chart's performance, it is recommended to cache and reuse the Material objects instead of creating new ones for each model. You can find a runnable project demonstrating how to implement a material selector in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView3D/WPF/DefaultVisualMaterialSelector). The project also demonstrates a simple material caching implementation.
 
 You can use the __DefaultVisualGeometrySelector__ property to choose different geometry for each data point dynamically.	
 
-#### __[C#] Example 6: Implementing geometry selector__
-{{region radchartview3d-customizing-cartesian-series-5}}
+__Example 6: Implementing geometry selector__
+```C#
 	public class MyDefaultGeometry3DSelector : Geometry3DSelector
     {
         public Material GeometryA { get; set; }
@@ -143,10 +143,10 @@ You can use the __DefaultVisualGeometrySelector__ property to choose different g
             }
         }
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 7: Defining geometry selector__	
-{{region radchartview3d-customizing-cartesian-series-6}}
+__Example 7: Defining geometry selector__	
+```XAML
 	<FrameworkElement.Resources>
 		<local:DefaultVisualGeometrySelector  x:Key="geometrySelector">
 			<local:DefaultVisualGeometrySelector.GeometryA >
@@ -159,7 +159,7 @@ You can use the __DefaultVisualGeometrySelector__ property to choose different g
 			</local:DefaultVisualGeometrySelector.GeometryA>
 		</local:DefaultVisualGeometrySelector>
 	</FrameworkElement.Resources>
-{{endregion}}
+```
 	
 ## See Also
 

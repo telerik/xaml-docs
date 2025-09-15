@@ -18,8 +18,8 @@ This relates the UI in the following way – there is simply no separate Style f
 
 For the purpose of this tutorial, we will create a sample chart with LineSeries. Then to customize the horizontal and vertical axes we will create two implicit styles which target the axes correspondingly. __Example 1__ demonstrates the full XAML code.
 
-#### __[XAML] Example 1: Customizing axes by using implicit styles__	
-{{region xaml-radchartview-styles-and-templates-customizing-axes-0}}
+__Example 1: Customizing axes by using implicit styles__	
+```XAML
 	<Window.Resources>
 		<Style TargetType="telerik:CategoricalAxis" BasedOn="{StaticResource AxisStyle}">         
 			<Setter Property="FontSize" Value="16" />
@@ -69,7 +69,7 @@ For the purpose of this tutorial, we will create a sample chart with LineSeries.
 			</telerik:RadCartesianChart.Series>
 		</telerik:RadCartesianChart>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Customizing axes by using implicit styles__
 ![Customizing axes by using implicit styles](images/radchartview-styles-and-templates-customizing-axes-0.png)

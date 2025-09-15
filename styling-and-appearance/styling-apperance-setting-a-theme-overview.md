@@ -56,8 +56,8 @@ To change the theme you will need to take the following few steps.
 		
 	And then merge the dictionaries for the controls in the dlls as shown in __Example 1__.
 	
-	#### __[XAML] Merging .xaml files for the Office_Black theme (from the theme dll)__
-	{{region styling-apperance-implicit-styles-overview-0}}
+	__Merging .xaml files for the Office_Black theme (from the theme dll)__
+	```XAML
 		<Application>
 			<Application.Resources>
 				<ResourceDictionary>
@@ -70,7 +70,7 @@ To change the theme you will need to take the following few steps.
 				</ResourceDictionary>
 			</Application.Resources>
 		</Application>
-	{{endregion}}	
+	```	
 	
 	Note that the `Telerik.Windows.Data.dll` doesn't have any UI (controls) so it doesn't have a ResourceDictionary with styles and templates.
 	
@@ -98,7 +98,7 @@ The default styles and resources for each theme are shipped also in the **/Teler
 ![implicit styles 3](images/implicit-styles-themes-folder.PNG)
 
 #### [XAML] The MergedDictionaries in your application resources:
-{{region styling-apperance-implicit-styles-overview-1}}
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -109,7 +109,7 @@ The default styles and resources for each theme are shipped also in the **/Teler
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >tip If you merge a ResourceDictionary for a dll that is missing from the project's References an error will occur.
 <!-- -->
@@ -132,32 +132,28 @@ To change the theme via the StyleManager you will need to take the following few
 
 3. __Set the StyleManager.Theme attached property__ on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the **InitializeComponent** method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
 
-   	#### __[XAML] Setting the theme on a control level in XAML__
-	{{region styling-apperance-implicit-styles-overview-2}}
+   	__Setting the theme on a control level in XAML__
+	```XAML
 		<telerik:RadGridView telerik:StyleManager.Theme="Windows11" />
-	{{endregion}}
+	```
 
-	#### __[C#] Setting the theme on a control level in code__
-	{{region styling-apperance-implicit-styles-overview-3}}		
+	__Setting the theme on a control level in code__
+	```C#		
 		StyleManager.SetTheme(radControlInstance, new Office2016Theme());
-	{{endregion}}
-	
-	#### __[VB.NET] Setting the theme on a control level in code__
-	{{region styling-apperance-implicit-styles-overview-4}}	
+	```
+```VB.NET	
 		StyleManager.SetTheme(radControlInstance, New Office2016Theme())
-	{{endregion}}
+	```
 	
-	#### __[C#] Setting the theme on application level__
-	{{region styling-apperance-implicit-styles-overview-5}}		
+	__Setting the theme on application level__
+	```C#		
 		StyleManager.ApplicationTheme = new Office2016Theme();
 		InitializeComponent();
-	{{endregion}}
-	
-	#### __[VB.NET] Setting the theme on application level__
-	{{region styling-apperance-implicit-styles-overview-6}}		
+	```
+```VB.NET		
 		StyleManager.ApplicationTheme = New Office2016Theme()
 		InitializeComponent()
-	{{endregion}}
+	```
 
 Read more about this approach in the {% if site.site_name == 'Silverlight' %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% else %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% endif %} help section.
 
@@ -168,16 +164,16 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 Some of the Telerik themes support palettes, which contains resources for the associated theme. Some of the palettes have different color variations, which can be changed with the **LoadPreset** method.
 
 #### [C#] Changing the color variation of the theme  
-{{region styling-appearance-green-theme-7}}
+```C#
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);
-{{endregion}}
+```
 
 #### [VB.NET] Changing the color variation of the theme  
-{{region styling-appearance-green-theme-8}}
+```VB.NET
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
-{{endregion}}
+```
 
 To see which themes support more than one color variation please check the [Available Themes]({%slug common-styling-appearance-available-themes%}) article.
 

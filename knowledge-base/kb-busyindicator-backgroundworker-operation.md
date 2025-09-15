@@ -33,8 +33,8 @@ How to display a busy indicator while executing a heavy operation.
 
 To perform the heavy operation without blocking the UI thread, you can create a **BackgroundWorker** and utilize its **DoWork** and **RunWorkerCompleted** events.
 
-#### __[C#] Example 1: Using the BackgroundWorker in the viewmodel__
-{{region cs-kb-busyindicator-backgroundworker-operation-0}}
+__Example 1: Using the BackgroundWorker in the viewmodel__
+```C#
     public class MainViewModel : ViewModelBase
     {
         private ObservableCollection<string> items;
@@ -115,14 +115,14 @@ To perform the heavy operation without blocking the UI thread, you can create a 
             this.Items = GetData();
         }
     }
-{{endregion}}
+```
 
 In the **BackgroundWorker_DoWork** method we put the thread to sleep for 3 seconds in order to simulate the time-consuming operation but in a real scenario you can make a database call or some heavy computation here.
 
 You can then bind your view to this viewmodel as demonstrated in **Example 2**.
 
-#### __[XAML] Example 2: Defining and binding the RadBusyIndicator__
-{{region xaml-kb-busyindicator-backgroundworker-operation-1}}
+__Example 2: Defining and binding the RadBusyIndicator__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MainViewModel />
@@ -138,7 +138,7 @@ You can then bind your view to this viewmodel as demonstrated in **Example 2**.
 
         <Button Content="Do Work" Command="{Binding DoWorkCommand}" Grid.Row="1" />
     </Grid>
-{{endregion}}
+```
 
 ## See Also
 

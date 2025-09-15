@@ -20,8 +20,8 @@ __Figure 1__ demonstrates the result, after placing a __RadRibbonView__ in the _
 
 You will have two title bars which makes the UI messy. The __RadRibbonWindow__ integrates with the __RadRibbonView__ and prevents this. In order to use the __RadRibbonWindow__ you have to replace the __Window__ control in your __MainWindow__ class with the __RadRibbonWindow__ one.		
 
-#### __[XAML] Example 1: Replacing Window with RadRibbonWindow__
-{{region xaml-radribbonview-ribbon-window-wpf_0}}
+__Example 1: Replacing Window with RadRibbonWindow__
+```XAML
 	<telerik:RadRibbonWindow  x:Class="RibbonWindow.MainWindow"
 	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -31,10 +31,10 @@ You will have two title bars which makes the UI messy. The __RadRibbonWindow__ i
 	        <telerik:RadRibbonView />
 	    </Grid>
 	</telerik:RadRibbonWindow>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Inheriting RadRibbonWindow__
-{{region cs-radribbonview-ribbon-window-wpf_1}}
+__Example 2: Inheriting RadRibbonWindow__
+```C#
 	public partial class MainWindow : RadRibbonWindow
 	{
 		public MainWindow()
@@ -42,17 +42,15 @@ You will have two title bars which makes the UI messy. The __RadRibbonWindow__ i
 			InitializeComponent();
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Inheriting RadRibbonWindow__
-{{region vb-radribbonview-ribbon-window-wpf_2}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 		Inherits RadRibbonWindow
 		Public Sub New()
 			InitializeComponent()
 		End Sub
 	End Class
-{{endregion}}
+```
 
 #### __Figure 2: RadRibbonWindow as MainWindow__
 ![RadRibbonWindow as MainWindow](images/radribbonview-features-controls-window-wpf-1.png)
@@ -63,17 +61,17 @@ By default, when you add a __RadRibbonView__ in a __RadRibbonWindow__, the compo
 
 In order to provide a custom icon for the RadRibbonWindow, you have to set its __Icon__ property as demonstrated in __Example 3__. 
 
-#### __[XAML] Example 3: Providing a custom Icon__
-{{region xaml-radribbonview-ribbon-window-wpf-3}}
+__Example 3: Providing a custom Icon__
+```XAML
 	<telerik:RadRibbonWindow Icon="Images/application-icon.ico">
-{{endregion}}
+```
 
 ## Title Visibility
 
 With __Q1 2014__ we introduced a new property, which you can use to control this behavior. The __IsTitleVisible__ property is of type __bool__ and it defines whether the __RadRibbonWindow Title__ should be displayed. The default value of the property is __false__, but when changed to __true__, it makes the __RibbonWindow__ display its own __Title__. In that case the __RadRibbonView__ title bar - the __QuickAccessToolbar, Title__ and __ApplicationName__ are displayed underneath the window's title.		
 
-#### __[XAML] Example 4: Setting IsTitleVisible__
-{{region xaml-radribbonview-ribbon-window-wpf-4}}
+__Example 4: Setting IsTitleVisible__
+```XAML
 	<telerik:RadRibbonWindow x:Class="Example.MainWindow"
 	                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -109,7 +107,7 @@ With __Q1 2014__ we introduced a new property, which you can use to control this
 	        </telerik:RadRibbonView>
 	    </Grid>
 	</telerik:RadRibbonWindow>
-{{endregion}}
+```
 
 #### __Figure 3: RadRibbonWindow with visible title__
 ![Rad Ribbon View Ribbon Window Visible Title](images/radribbonview-features-controls-window-wpf-2.png)
@@ -118,8 +116,8 @@ With __Q1 2014__ we introduced a new property, which you can use to control this
 
 By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can also apply any of the Telerik predefined themes. In order to do so, you need to set the __RadRibbonWindow.IsWindowsThemeEnabled__ static property to __False__ in the static constructor of the __RadRibbonWindow__ or in the constructor of the __App__ class.		
 
-#### __[C#] Example 5: Setting IsWindowsThemeEnabled__
-{{region cs-radribbonview-ribbon-window-wpf_5}}
+__Example 5: Setting IsWindowsThemeEnabled__
+```C#
 	public partial class MainWindow : RadRibbonWindow
 	{
 		static MainWindow()
@@ -131,10 +129,8 @@ By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can a
 			InitializeComponent();
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting IsWindowsThemeEnabled__
-{{region vb-radribbonview-ribbon-window-wpf_6}}
+```
+```VB.NET
 	Partial Public Class MainWindow
 		Inherits RadRibbonWindow
 		Shared Sub New()
@@ -144,25 +140,25 @@ By default the __RadRibbonWindow__ uses the Windows OS theme. However, you can a
 			InitializeComponent()
 		End Sub
 	End 
-{{endregion}}
+```
 
 In order to apply a Telerik style on the __RadRibbonWindow__, it is best to use the implicit styling mechanism further described in the [Setting a Theme (Using Implicit Styles)](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html) tutorial.
 
 Please note that the default __RadRibbonWindow__ implicit style cannot be applied on derived controls as their __Type__ is different than the one defined as a __TargetType__ in the implicit style. This is why in order to apply a Telerik predefined style on a __Window/UserControl__ deriving from __RadRibbonWindow__ you need to define a __Style__ targeting the __Window/UserControl__ type in the __Resources__ of the application. Make sure to define that style after merging the Telerik __ResourseDictionaries__ so that you can base it on the predefined __"RadRibbonWindowStyle"__.		
 
-#### __[XAML] Example 6: Basing the MainWindow style on the RadRibbonWindowStyle__
+__Example 6: Basing the MainWindow style on the RadRibbonWindowStyle__
 
-{{region xaml-radribbonview-ribbon-window-wpf-7}}
+```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 						xmlns:local="clr-namespace:RibbonWindow_ImplicitStylesDemo">
 		<Style TargetType="local:MainWindow" BasedOn="{StaticResource RadRibbonWindowStyle}" />
 	</ResourceDictionary>
-{{endregion}}
+```
 
-#### __[XAML] Example 7: Merging the needed resources__
+__Example 7: Merging the needed resources__
 
-{{region xaml-radribbonview-ribbon-window-wpf-8}}
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -175,7 +171,7 @@ Please note that the default __RadRibbonWindow__ implicit style cannot be applie
 	        </ResourceDictionary.MergedDictionaries>
 	    </ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 #### __Figure 4: RadRibbonWindow in the Office2016 theme__
 ![Rad Ribbon View Ribbon WindowWPF Office2016 Theme](images/radribbonview-features-controls-window-wpf-3.png)
@@ -184,13 +180,13 @@ Please note that the default __RadRibbonWindow__ implicit style cannot be applie
 
 You can customize the window's appearance by setting its various properties via the appropriate style.
 
-#### __[XAML] Example 8: Adding a CornerRadius to the RadRibbonWindow__
+__Example 8: Adding a CornerRadius to the RadRibbonWindow__
 
-{{region xaml-radribbonview-ribbon-window-wpf-9}}
+```XAML
 	<!-- If you're using the StyleManager approach for styling the controls you need to remove the BasedOn attribute. -->
 	<Style TargetType="local:MainWindow" BasedOn="{StaticResource RadRibbonWindowStyle}"
 		xmlns:shell="clr-namespace:Telerik.Windows.Controls.RibbonView.Shell;assembly=Telerik.Windows.Controls.RibbonView">
 		<Setter Property="CornerRadius" Value="20"/>
 		<Setter Property="shell:WindowChrome.WindowChromeCornerRadius" Value="20"/>
 	</Style>
-{{endregion}}
+```

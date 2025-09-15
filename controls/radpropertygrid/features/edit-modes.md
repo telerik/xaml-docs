@@ -26,11 +26,11 @@ The default option behaves similarly for both __Flat and Hierarchical__ [RenderM
 
 3. When a __validation error occurs, users are not encouraged to fix it, or cancel their change__, by blocking the UI.
 
-#### __[XAML] Example 1: RadPropertyGrid with Default EditMode__
+__Example 1: RadPropertyGrid with Default EditMode__
 
-	{{region xaml-radpropertygrid-edit-modes_0}}
+	```XAML
 	<telerik:RadPropertyGrid RenderMode="Flat" EditMode="Default"/>
-{{endregion}}
+```
 
 __Figure 1__: RadPropertyGrid with Default EditMode
 
@@ -44,11 +44,11 @@ It relies on PropertyDefinition’s Binding property. Setting this mode is not s
 
 >important__Single EditMode__ is supported only when __RenderMode is set to Flat__. For more information on the different rendering modes, please check the [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}) article.
 
-#### __[XAML] Example 2: RadPropertyGrid with EditMode set to Single__
+__Example 2: RadPropertyGrid with EditMode set to Single__
 
-{{region xaml-radpropertygrid-edit-modes_1}}
+```XAML
 	<telerik:RadPropertyGrid RenderMode="Flat" EditMode="Single"/>
-{{endregion}}
+```
 
 __Figure 2__: RadPropertyGrid with Single EditMode
 
@@ -68,24 +68,24 @@ __BeginEditMethod__ has two overloads:
 
 If the edit operation is successfully initiated, RadPropertyGrid’s __BeginningEdit event is raised__ . It is a cancellable event so one can prevent the edit operation there, in accordance to some custom logic:
 
-#### __[C#] Example 3: Canceling the edit as BeginningEdit event is raised__
+__Example 3: Canceling the edit as BeginningEdit event is raised__
 
-{{region cs-radpropertygrid-edit-modes_0}}
+```C#
 	void RpgBeginningEdit(object sender, PropertyGridBeginningEditEventArgs e)
 	{
 	    // Custom logic
 	    e.Cancel = true;
 	}
-{{endregion}}
+```
 
-#### __[VB] Example 3: Canceling the edit as BeginningEdit event is raised__
+__Example 3: Canceling the edit as BeginningEdit event is raised__
 
-{{region vb-radpropertygrid-edit-modes_0}}
+```VB
 	Private Sub RpgBeginningEdit(sender As Object, e As PropertyGridBeginningEditEventArgs)
 	    ' Custom logic
 	    e.Cancel = True
 	End Sub
-{{endregion}}
+```
 
 Then __PropertyGridField__’s display content (TextBlock) is replaced by an editor.
 

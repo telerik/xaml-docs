@@ -27,14 +27,14 @@ Furthermore, the control exposes the following properties and events for handlin
 
 By default, __RadMultiColumnComboBox__ will perform a single selection. In order to enable a multiple selection, the __SelectionMode__ of the control can be set to __Multiple__.
 
-#### __[XAML] Example 1: Setting the SelectionMode to Multiple__
-{{region radmulticolumncombobox-features_selection_0}}
+__Example 1: Setting the SelectionMode to Multiple__
+```XAML
 	<telerik:RadMultiColumnComboBox VerticalAlignment="Top" DisplayMemberPath="Name" SelectionMode="Multiple">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
                 <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}"/>
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 #### Figure 2: Multiple Selection
 ![Multiple Selection](images/MultiColumnComboBox_Selection_02.png)
@@ -43,13 +43,13 @@ By default, __RadMultiColumnComboBox__ will perform a single selection. In order
 
 Each time a select or deselect operation is applied, the __SelectionChanged__ event will be fired.
 
-#### __[XAML] Example 2: Handling the SelectionChanged event__
-{{region radmulticolumncombobox-features_selection_1}}
+__Example 2: Handling the SelectionChanged event__
+```XAML
 		private void RadMultiColumnComboBox_SelectionChanged(object sender, SelectionChangeEventArgs e)
         {
             
         }
-{{endregion}}
+```
 
 The event arguments expose the following collections.
 

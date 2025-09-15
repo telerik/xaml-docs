@@ -20,7 +20,7 @@ The example below shows candlestick chart bound to a collection of __TradeData__
 
 #### __C#__
 
-{{region cs-radchart-features-tooltips_0}}
+```C#
 	public class TradeData
 	{
 	    public string Emission
@@ -92,13 +92,13 @@ The example below shows candlestick chart bound to a collection of __TradeData__
 	        return tradeData;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-tooltips_1}}
+```VB.NET
 	Public Class TradeData
 	    Public Property Emission() As String
 	        Get
@@ -369,7 +369,7 @@ The example below shows candlestick chart bound to a collection of __TradeData__
 	        Return tradeData
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
@@ -379,7 +379,7 @@ You can set the __ShowItemToolTips__ property to __True__ declaratively or in th
 
 #### __XAML__
 
-{{region xaml-radchart-features-tooltips_2}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -395,7 +395,7 @@ You can set the __ShowItemToolTips__ property to __True__ declaratively or in th
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -419,7 +419,7 @@ You can also bind to __DataPoint.Tooltip__ property, using [SeriesMapping/ItemMa
 
 #### __XAML__
 
-{{region xaml-radchart-features-tooltips_3}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -436,7 +436,7 @@ You can also bind to __DataPoint.Tooltip__ property, using [SeriesMapping/ItemMa
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -454,7 +454,7 @@ You can construct more complex tooltips combining several tokens, for example: _
 
 #### __XAML__
 
-{{region xaml-radchart-features-tooltips_4}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping LegendLabel="MSFT">
@@ -471,13 +471,13 @@ You can construct more complex tooltips combining several tokens, for example: _
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-tooltips_5}}
+```C#
 	RadChart radChart = new RadChart();
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.SeriesDefinition = new CandleStickSeriesDefinition();
@@ -488,13 +488,13 @@ You can construct more complex tooltips combining several tokens, for example: _
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Low", DataPointMember.Low) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Close", DataPointMember.Close) );
 	radChart.SeriesMappings.Add( seriesMapping );
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-tooltips_6}}
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.SeriesDefinition = New CandleStickSeriesDefinition()
@@ -505,7 +505,7 @@ You can construct more complex tooltips combining several tokens, for example: _
 	seriesMapping.ItemMappings.Add(New ItemMapping("Low", DataPointMember.Low))
 	seriesMapping.ItemMappings.Add(New ItemMapping("Close", DataPointMember.Close))
 	radChart.SeriesMappings.Add(seriesMapping)
-{{endregion}}
+```
 
 
 
@@ -534,7 +534,7 @@ Now, __StockToolTipControl__ has to be created. It will show additional informat
 
 #### __XAML__
 
-{{region xaml-radchart-features-tooltips_7}}
+```XAML
 	<UserControl>
 	    <UserControl.Resources>
 	        <Style x:Key="textStyle" TargetType="TextBlock">
@@ -621,7 +621,7 @@ Now, __StockToolTipControl__ has to be created. It will show additional informat
 	        </Grid>
 	    </Border>
 	</UserControl>
-{{endregion}}
+```
 
 
 
@@ -629,7 +629,7 @@ In the code-behind, there are a few properties - each one is setting the value o
 
 #### __C#__
 
-{{region cs-radchart-features-tooltips_8}}
+```C#
 	public partial class StockToolTipControl : UserControl
 	{
 	    public StockToolTipControl()
@@ -674,13 +674,13 @@ In the code-behind, there are a few properties - each one is setting the value o
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-tooltips_9}}
+```VB.NET
 	Partial Public Class StockToolTipControl
 	    Inherits UserControl
 	    Public Sub New()
@@ -715,7 +715,7 @@ In the code-behind, there are a few properties - each one is setting the value o
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
@@ -723,7 +723,7 @@ You can play with the colors to give the control a better look and feel.The next
 
 #### __XAML__
 
-{{region xaml-radchart-features-tooltips_10}}
+```XAML
 	<!--  Custom tooltip  -->
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
@@ -747,7 +747,7 @@ You can play with the colors to give the control a better look and feel.The next
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -762,7 +762,7 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 
 #### __C#__
 
-{{region cs-radchart-features-tooltips_11}}
+```C#
 	private void ChartArea_ItemToolTipOpening(ItemToolTip2D tooltip, ItemToolTipEventArgs e)
 	{
 	    TradeData tradeData = e.DataPoint.DataItem as TradeData;
@@ -775,13 +775,13 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	    stockToolTip.ForwardingPE = 17.93;
 	    tooltip.Content = stockToolTip;
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-tooltips_12}}
+```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
 	    Dim tradeData As TradeData = TryCast(e.DataPoint.DataItem, TradeData)
 	    Dim stockToolTip As New StockToolTipControl()
@@ -794,7 +794,7 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	
 	    tooltip.Content = stockToolTip
 	End Sub
-{{endregion}}
+```
 
 
 

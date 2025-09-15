@@ -18,14 +18,14 @@ Via the **AddButtonStyle** property, you can control the appearance of the butto
 
 #### [XAML] Example 1: Specify AddButtonStyle
 
-{{region xaml-radtabbedwindow-styles-and-templates_0}}
+```XAML
     <telerik:RadTabbedWindow.AddButtonStyle>
         <Style TargetType="telerik:RadButton" BasedOn="{StaticResource AddItemsButtonStyle}">
             <Setter Property="MinWidth" Value="36" />
             <Setter Property="MinHeight" Value="36" />
         </Style>
     </telerik:RadTabbedWindow.AddButtonStyle>
-{{endregion}}
+```
 
 >importantIf you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **AddItemsButtonStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
 
@@ -35,7 +35,7 @@ You can use the **ItemContainerStyle** property to style the individual RadTabIt
 
 #### [XAML] Example 2: Specify ItemContainerStyle
 
-{{region xaml-radtabbedwindow-styles-and-templates_1}}
+```XAML
     <telerik:RadTabbedWindow.ItemContainerStyle>
         <Style TargetType="telerik:RadTabItem" BasedOn="{StaticResource RadTabbedWindowTabItemStyle}">
             <Setter Property="MinHeight" Value="40" />
@@ -45,7 +45,7 @@ You can use the **ItemContainerStyle** property to style the individual RadTabIt
 		    <Setter Property="CloseButtonVisibility" Value="Visible"/>
         </Style>
     </telerik:RadTabbedWindow.ItemContainerStyle>
-{{endregion}}
+```
 
 >importantIf you are using the default Office_Black theme (you have not merged a theme assembly) or you've set a different theme with the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}), you should copy the **RadTabbedWindowTabItemStyle** and all the referenced resources from the **Telerik.Windows.Controls.Navigation.xaml** file into your project.
 
@@ -55,7 +55,7 @@ You can also define a **StyleSelector** and conditionally style the tab items vi
 
 #### [C#] Example 3: Create a custom StyleSelector
 
-{{region cs-radtabbedwindow-styles-and-templates_2}}
+```C#
     public class MyTabItemStyleSelector : StyleSelector
     {
         public Style ProgressStyle { get; set; }
@@ -72,11 +72,11 @@ You can also define a **StyleSelector** and conditionally style the tab items vi
             return this.NormalStyle;
         }
     }
-{{endregion}}
+```
 
 #### [VB.NET] Example 3: Create a custom StyleSelector
 
-{{region vb-radtabbedwindow-styles-and-templates_3}}
+```VB.NET
 	Public Class MyTabItemStyleSelector
 		Inherits StyleSelector
 
@@ -92,11 +92,11 @@ You can also define a **StyleSelector** and conditionally style the tab items vi
 			Return Me.NormalStyle
 		End Function
 	End Class
-{{endregion}}
+```
 
 #### [XAML] Example 4: Specify ItemContainerStyleSelector property
 
-{{region xaml-radtabbedwindow-styles-and-templates_4}}
+```XAML
     <telerik:RadTabbedWindow ... ItemContainerStyle="{x:Null}">
         <telerik:RadTabbedWindow.ItemContainerStyleSelector>
             <local:MyTabItemStyleSelector>
@@ -112,7 +112,7 @@ You can also define a **StyleSelector** and conditionally style the tab items vi
             </local:MyTabItemStyleSelector>
         </telerik:RadTabbedWindow.ItemContainerStyleSelector>
     </telerik:RadTabbedWindow>
-{{endregion}}
+```
 
 >importantPlease note that to use the ItemContainerStyleSelector property, you need to clear the ItemContainerStyle by setting it to **null**.
 
@@ -122,7 +122,7 @@ When binding your **RadTabbedWindow** to a collection, you are able to configure
 
 #### [XAML] Example 5: Define a custom ItemTemplate
 
-{{region xaml-radtabbedwindow-styles-and-templates_5}}
+```XAML
     <telerik:RadTabbedWindow.ItemTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
@@ -131,7 +131,7 @@ When binding your **RadTabbedWindow** to a collection, you are able to configure
             </StackPanel>
         </DataTemplate>
     </telerik:RadTabbedWindow.ItemTemplate>
-{{endregion}}
+```
 
 If you wish to return different templates for the tab items, you can use the **ItemTemplateSelector** property and pass a custom **DataTemplateSelector** to it.
 
@@ -141,13 +141,13 @@ Similarly, in a data-binding scenario you can control the appearance of the tabs
 
 #### [XAML] Example 6: Define a custom ContentTemplate
 
-{{region xaml-radtabbedwindow-styles-and-templates_6}}
+```XAML
     <telerik:RadTabbedWindow.ContentTemplate>
         <DataTemplate>
             <TextBlock Text="{Binding Content}" FontWeight="Bold" />
         </DataTemplate>
     </telerik:RadTabbedWindow.ContentTemplate>
-{{endregion}}
+```
 
 If you wish to return different templates for the tab items' content, you can use the **ContentTemplateSelector** property and pass a custom **DataTemplateSelector** to it.
 

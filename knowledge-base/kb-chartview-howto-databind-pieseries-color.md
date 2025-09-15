@@ -36,8 +36,8 @@ You can use the Series **DefaultSliceStyle** and bind the data item's `Brush` pr
 
 1. Define the Data Model
 
-	#### __[C#]__
-	{{region kb-chartview-databind-pieseries-color-0}}
+	
+	```C#
 		public class MyModel
 		{
 		    public string Title { get; set; }
@@ -46,14 +46,14 @@ You can use the Series **DefaultSliceStyle** and bind the data item's `Brush` pr
 
 		    public Brush SliceColor { get; set; }
 		}
-	{{endregion}}
+	```
 
 	> The **SliceColor** property is of type `Brush`. This is what will be used to bind to the **Fill** property of the `Path` element in the style.*
 
 2. Create the data items in the View Model
 
-	#### __[C#]__
-	{{region kb-chartview-databind-pieseries-color-1}}
+	
+	```C#
 		public class ViewModel : ViewModelBase
 		{
 		    public ViewModel() { }
@@ -65,14 +65,14 @@ You can use the Series **DefaultSliceStyle** and bind the data item's `Brush` pr
 			new MyModel { Title = "Three", Amount = 10, SliceColor = new SolidColorBrush(Colors.LightCoral) },
 		    };
 		}
-	{{endregion}}
+	```
 
 	> Note that each item has an explicit **SliceColor** value.*
 
 3. Define the **DefaultSliceStyle** and bind the **SliceColor** property of the slice's **DataContext** to the **Fill** property of the `Style`.
 
-	#### __[C#]__
-	{{region kb-chartview-databind-pieseries-color-2}}
+	
+	```C#
 		<telerik:RadPieChart x:Name="chartView">
 		    <telerik:PieSeries ItemsSource="{Binding PieData}" ValueBinding="Amount" ShowLabels="False">
 			<telerik:PieSeries.DefaultSliceStyle>
@@ -82,7 +82,7 @@ You can use the Series **DefaultSliceStyle** and bind the data item's `Brush` pr
 			</telerik:PieSeries.DefaultSliceStyle>
 		    </telerik:PieSeries>
 		</telerik:RadPieChart>
-	{{endregion}}
+	```
 
 	> The **DataContext** of the `Path` is of type `Telerik.Charting.PieDataPoint`. The instance of `MyModel` is accessed through the `PieDataPoint` **DataItem** property.*
 
@@ -94,8 +94,8 @@ If the data model does not have a `Brush` property that can be directly bound to
 
 2. Add a class that implements `IValueConverter` and returns an instance of `Brush`.
 
-	#### __[C#]__
-	{{region kb-chartview-databind-pieseries-color-3}}
+	
+	```C#
 		public class PieDataPointToBrushConverter : IValueConverter
 		{
 		    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -124,24 +124,24 @@ If the data model does not have a `Brush` property that can be directly bound to
 			throw new NotImplementedException();
 		    }
 		}
-	{{endregion}}
+	```
 
 3. Add an instance of the Converter to the **Resources** of the `RadPieChart`
 
-	#### __[XAML]__
-	{{region kb-chartview-databind-pieseries-color-4}}
+	
+	```XAML
 		<telerik:RadPieChart x:Name="chartView">
 		    <telerik:RadPieChart.Resources>
 			<local:PieDataPointToBrushConverter x:Key="MyBrushConverter"/>
 		    </telerik:RadPieChart.Resources>
 		    ...
 		</telerik:RadPieChart>
-	{{endregion}}
+	```
 
 4. Use the converter on the **DefaultSliceStyle** binding
 
-	#### __[XAML]__
-	{{region kb-chartview-databind-pieseries-color-5}}
+	
+	```XAML
 		<telerik:RadPieChart x:Name="chartView">
 		    <telerik:RadPieChart.Resources>
 			<local:PieDataPointToBrushConverter x:Key="MyBrushConverter"/>
@@ -154,7 +154,7 @@ If the data model does not have a `Brush` property that can be directly bound to
 			</telerik:PieSeries.DefaultSliceStyle>
 		    </telerik:PieSeries>
 		</telerik:RadPieChart>
-	{{endregion}}
+	```
 
 ## See Also  
 * [Chart Series Overview]({%slug radchartview-series-chartseries%})

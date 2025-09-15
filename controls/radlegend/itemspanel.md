@@ -15,7 +15,7 @@ By default the RadLegend uses a StackPanel with Vertical orientation to lay out 
 The example here demonstrates the use of the ItemsPanel property and the RadWrapPanel:        
 
 #### __XAML__
-{{region radlegend-itemspanel_0}}
+```XAML
 	<Border Width="360" Height="100" BorderThickness="1" BorderBrush="Black">
 	    <telerik:RadLegend>
 	        <telerik:RadLegend.ItemsPanel>
@@ -44,7 +44,7 @@ The example here demonstrates the use of the ItemsPanel property and the RadWrap
 	        </telerik:RadLegend.Items>
 	    </telerik:RadLegend>
 	</Border>
-{{endregion}}
+```
 
 Border height is 100  
 ![radlegend-itemspanel-0-H 100](images/radlegend-itemspanel-0-H100.png)

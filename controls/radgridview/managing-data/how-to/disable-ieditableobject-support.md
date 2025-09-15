@@ -13,11 +13,11 @@ As of Q1 2016, we've introduced the **ShouldRespectIEditableObject** property. T
 
 >Setting **ShouldRespectIEditableObject** to **False** will only prevent the IEditableObject methods of the object implementing the interface. RadGridView's **BeginEdit()**, **CancelEdit()** and **EndEdit()** methods will still be executed and the respective [events]({%slug gridview-events-edit%}) will be raised.
 
-#### __[XAML] Example 1: Setting ShouldRespectIEditableObject__
+__Example 1: Setting ShouldRespectIEditableObject__
 
-{{region xaml-gridview-disable-ieditableobject-support_0}}
+```XAML
 	<telerik:RadGridView Name="gridView" ShouldRespectIEditableObject="False" />
-{{endregion}}
+```
 
 ## See Also
 

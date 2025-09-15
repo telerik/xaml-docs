@@ -56,8 +56,8 @@ This property exposes two possible values:
 
 RadMultiComboBox allows you to search in hidden columns. To do so, set the `CanUserSearchInHiddenColumns` property to __True__ of the `GridViewItemsSourceProvider` instance.
 
-#### __[XAML] Enable searching in hidden columns__
-{{region radmulticolumncombobox-search-as-you-type-0}}
+__Enable searching in hidden columns__
+```XAML
     <telerik:RadMultiColumnComboBox>
         <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
             <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs}" 
@@ -71,7 +71,7 @@ RadMultiComboBox allows you to search in hidden columns. To do so, set the `CanU
             </telerik:GridViewItemsSourceProvider>
         </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
     </telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 __RadMultiColumnComboBox search in a hidden column__
 
@@ -93,15 +93,13 @@ The SearchStateManager property is of the type `SearchStateManager` and this cla
     * `SuggestAppend`&mdash;Items are filtered, text is auto-completed. String are filtered by __StartsWith__ operator. This is the default value of the `AutoCompleteMode` property.
     * `Search`&mdash;Items are filtered, text is not auto-completed. String are filtered by __Contains__ operator. Complex clause searches are supported (Like RadGridView search as you type).
 
-#### __[C#] Disabling the highlighting effect on matched items__
-{{region radmulticolumncombobox-search-as-you-type-1}}
+__Disabling the highlighting effect on matched items__
+```C#
     this.radMultiColumnComboBox.SearchStateManager.HighlightMatches = false;
-{{endregion}}
-
-#### __[VB.NET] Disabling the highlighting effect on matched items__
-{{region radmulticolumncombobox-search-as-you-type-2}}
+```
+```VB.NET
     Me.radMultiColumnComboBox.SearchStateManager.HighlightMatches = False
-{{endregion}}
+```
 
 __RadMultiColumnComboBox without highlighting on matched items__
 

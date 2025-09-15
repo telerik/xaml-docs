@@ -27,8 +27,8 @@ When the __DialogType__ is __SaveFile__, a [RadSaveFileDialog]({%slug radfiledia
 
 In order to open a native windows dialog instead of the RadFileDialogs, you can handle the __DialogOpening__ event as demonstrated in __Example 1__.
 
-#### __[C#] Example 1: Defining RadFilePathPicker__
-{{region cs-radfilepathpicker-dialog-types-0}}
+__Example 1: Defining RadFilePathPicker__
+```C#
     private void RadFilePathPicker_DialogOpening(object sender, Telerik.Windows.Controls.FileDialogs.DialogOpeningEventArgs e)
     {
         e.Cancel = true;
@@ -44,7 +44,7 @@ In order to open a native windows dialog instead of the RadFileDialogs, you can 
             }
         }
     }
-{{endregion}}
+```
 
 ## See Also 
 

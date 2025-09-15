@@ -23,7 +23,7 @@ Here is what __CartesianCustomAnnotation__ looks like:
 
 #### __XAML__
 
-{{region radchartview_annotations_custom_0}}
+```XAML
 	<telerik:CartesianCustomAnnotation HorizontalValue="2" VerticalValue="2"
 	                                   HorizontalAlignment="Center" VerticalAlignment="Center"
 	                                   VerticalOffset="-8">
@@ -42,7 +42,7 @@ Here is what __CartesianCustomAnnotation__ looks like:
 	        </StackPanel>
 	    </telerik:CartesianCustomAnnotation.Content>
 	</telerik:CartesianCustomAnnotation>
-	{{endregion}}
+	```
 
 ![Rad Chart View-annotations-cartesian-custom](images/RadChartView-annotations-cartesian-custom.png)
 
@@ -52,7 +52,7 @@ The content of the PolarCustomAnnotation is rendered at the __(RadialValue, Pola
 
 #### __XAML__
 
-{{region radchartview_annotations_custom_1}}
+```XAML
 	<telerik:PolarCustomAnnotation PolarValue="20" RadialValue="300" 
 	                               HorizontalAlignment="Center" VerticalAlignment="Center">
 	    <telerik:PolarCustomAnnotation.Content>
@@ -72,7 +72,7 @@ The content of the PolarCustomAnnotation is rendered at the __(RadialValue, Pola
 	            </Path>
 	    </telerik:PolarCustomAnnotation.Content>
 	</telerik:PolarCustomAnnotation>
-	{{endregion}}
+	```
 
 ![Rad Chart View-annotations-polar-custom](images/RadChartView-annotations-polar-custom.png)
 

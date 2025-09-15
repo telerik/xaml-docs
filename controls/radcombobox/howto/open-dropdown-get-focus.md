@@ -14,9 +14,9 @@ __RadComboBox__'s API gives you the ability to open the __DropDown__ when the co
 
 #### __XAML__
 
-{{region radcombobox-howto-open-dropdown-get-focus_0}}
+```XAML
 	<telerik:RadComboBox x:Name="radComboBox" OpenDropDownOnFocus="True"/>
-{{endregion}}
+```
 
 >tipThe default value of the __RadComboBox__'s __OpenDropDownOnFocus__ property is __False__.
 

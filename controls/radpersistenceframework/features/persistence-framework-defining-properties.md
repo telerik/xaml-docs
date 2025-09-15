@@ -30,8 +30,8 @@ The PropertyNameMetadata class provides the following properties:
 
 * __Expression__: Defines a regular expression as a base for a Regex that is applied over the property names of the object that is being serialized. The Expression property also takes into account the value of the SearchType property. 
 
-	#### __[XAML] Example 1: Using Expression to serialize only the Width property of a RadButton__
-	{{region persistence-framework-defining-properties-0}}
+	__Example 1: Using Expression to serialize only the Width property of a RadButton__
+	```XAML
 		 <telerik:RadButton>
             <telerik:PersistenceManager.SerializationOptions>
                 <telerik:SerializationMetadataCollection>
@@ -39,10 +39,10 @@ The PropertyNameMetadata class provides the following properties:
                 </telerik:SerializationMetadataCollection>
             </telerik:PersistenceManager.SerializationOptions>
         </telerik:RadButton>
-	{{endregion}}
+	```
 	
-	#### __[XAML] Example 2: Using Expression to serialize all properties (of RadButton) containing Width in their name - like Width, MinWidth and MaxWidth__
-	{{region persistence-framework-defining-properties-1}}
+	__Example 2: Using Expression to serialize all properties (of RadButton) containing Width in their name - like Width, MinWidth and MaxWidth__
+	```XAML
 		<telerik:RadButton>
             <telerik:PersistenceManager.SerializationOptions>
                 <telerik:SerializationMetadataCollection>
@@ -50,7 +50,7 @@ The PropertyNameMetadata class provides the following properties:
                 </telerik:SerializationMetadataCollection>
             </telerik:PersistenceManager.SerializationOptions>
         </telerik:RadButton>
-	{{endregion}}
+	```
 	
 * __IsRecursive__: Determines whether the Expression will be evaluated in depth.			
 
@@ -58,8 +58,8 @@ The PropertyNameMetadata class provides the following properties:
 	* __PropertyName__: The Expression value will be evaluated against a property name in the UIElement.
 	* __PropertyPath__: The Expression value will be evaluated against the full path of the property (the path from the serialization root to the property)			.
 
-#### __[XAML] Example 3: Setting up PropertyNameMetadata__
-{{region persistence-framework-defining-properties-2}}
+__Example 3: Setting up PropertyNameMetadata__
+```XAML
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 			<telerik:SerializationMetadataCollection>
@@ -68,7 +68,7 @@ The PropertyNameMetadata class provides the following properties:
 			</telerik:SerializationMetadataCollection>
 		</telerik:PersistenceManager.SerializationOptions>
 	</telerik:RadButton>
-{{endregion}}
+```
 
 ## Serialization by Property Type
 
@@ -90,8 +90,8 @@ The PropertyTypeMetadata class exposes the following properties:
 
 	>tip The __Type__ property has a higher priority than __TypeString__.
 
-#### __[XAML] Example 4: Setting up PropertyTypeMetadata using the Type property__
-{{region persistence-framework-defining-properties-3}}
+__Example 4: Setting up PropertyTypeMetadata using the Type property__
+```XAML
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 			<telerik:SerializationMetadataCollection>
@@ -100,10 +100,10 @@ The PropertyTypeMetadata class exposes the following properties:
 			</telerik:SerializationMetadataCollection>
 		</telerik:PersistenceManager.SerializationOptions>
 	</telerik:RadButton>
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Setting up PropertyTypeMetadata using the TypeString property__
-{{region persistence-framework-defining-properties-4}}
+__Example 5: Setting up PropertyTypeMetadata using the TypeString property__
+```XAML
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 			<telerik:SerializationMetadataCollection>
@@ -112,7 +112,7 @@ The PropertyTypeMetadata class exposes the following properties:
 			</telerik:SerializationMetadataCollection>
 		</telerik:PersistenceManager.SerializationOptions>
 	</telerik:RadButton>
-{{endregion}}
+```
 
 ## Multiple Options
 
@@ -122,8 +122,8 @@ The __SerializationMetadataCollection__ class allows you to define what operator
 
 * __Or__: A property can fulfill only a single of the conditions defined by the items in the SerializationMetadataCollection in order to be persisted. This is the __default operator__.
 
-#### __[XAML] Example 6: Using multiple options with And operator__
-{{region persistence-framework-defining-properties-5}}
+__Example 6: Using multiple options with And operator__
+```XAML
 	<telerik:RadButton>
 		<telerik:PersistenceManager.SerializationOptions>
 				<telerik:SerializationMetadataCollection Operator="And">
@@ -133,18 +133,18 @@ The __SerializationMetadataCollection__ class allows you to define what operator
 				</telerik:SerializationMetadataCollection>
 			</telerik:PersistenceManager.SerializationOptions>
 		</telerik:RadButton>
-{{endregion}}
+```
 	
 ## ShouldSerialize Method
 
 SerializationMetadataCollection and its children (PropertyNameMetadata and PropertyTypeMetadata objects) expose the __ShouldSerialize__ method. The method allows you to check if a property should be serialized based on the applied metadata. 
 
-#### __[XAML] Example 7: Checking if properties containing Width in their names will be serialized based on the settings applied to the PropertyNameMetadata object__
-{{region persistence-framework-defining-properties-6}}
+__Example 7: Checking if properties containing Width in their names will be serialized based on the settings applied to the PropertyNameMetadata object__
+```XAML
 	PropertyNameMetadata propertyNameMetadata = PersistenceManager.GetSerializationOptions(this.radButton)[0];
 	var widthPropertyInfo = typeof(RadButton).GetProperty("Width");
 	MatchResult result = propertyNameMetadata.ShouldSerialize(widthPropertyInfo, "Width");	
-{{endregion}}
+```
 
 The __MatchResult__ is an enum that can have the following values:
 * __Full__: All conditions in the SerializationMetadataCollection are met.

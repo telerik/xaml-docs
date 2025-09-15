@@ -30,13 +30,13 @@ This happens because  the `EventToCommandBehavior` supports only events with arg
 
 To resolve the error, you can avoid using the `EventToCommandBehavior` and execute the command in code-behind. Or you can data bind the `IsEnabled` property of the corresponding element to a property in the view model, and then execute the command's logic in the property setter.
 
-#### __[XAML]__
-{{region kb-eventtocommandbehavior-xamlparseexception-isenabledchanged-0}}
-	<telerik:RadListBox IsEnabled="{Binding IsEnabled, Modet=TwoWay}" />
-{{endregion}}
 
-#### __[C#]__
-{{region kb-eventtocommandbehavior-xamlparseexception-isenabledchanged-1}}
+```XAML
+	<telerik:RadListBox IsEnabled="{Binding IsEnabled, Modet=TwoWay}" />
+```
+
+
+```C#
 	private bool isEnabled;	
 	public bool IsEnabled
 	{
@@ -49,4 +49,4 @@ To resolve the error, you can avoid using the `EventToCommandBehavior` and execu
 			// execute command logic here
 		}
 	}
-{{endregion}}
+```

@@ -68,8 +68,8 @@ In summary, the panel allocates space for the left and right aligned items first
 This section contains the items setup demonstrated in the images in the article.
 
 <span id="example-01" />
-#### __[XAML] Example 1: Left and right aligned items__ 
-{{region layoutcontrol-getting-started-layoutpanel-01}}
+__Example 1: Left and right aligned items__ 
+```XAML
 	<telerik:RadLayoutControl>
 		<Button Content="Left" HorizontalAlignment="Left" />
 		<Button Content="Left" HorizontalAlignment="Left" />
@@ -79,11 +79,11 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Right" HorizontalAlignment="Right" />
 		<Button Content="Right" HorizontalAlignment="Right" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 <span id="example-02" />
-#### __[XAML] Example 2: Stretched items with different sizes__
-{{region layoutcontrol-getting-started-layoutpanel-02}}
+__Example 2: Stretched items with different sizes__
+```XAML
 	<telerik:RadLayoutControl>
 		<Button Content="Stretch" HorizontalAlignment="Stretch" />
 		<Button Content="Stretch" HorizontalAlignment="Stretch" />
@@ -93,11 +93,11 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Stretch - with bigger size" HorizontalAlignment="Stretch" />
 		<Button Content="Stretch" HorizontalAlignment="Stretch" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 <span id="example-03" />
-#### __[XAML] Example 3: Stretched and left/rigth aligned items with different sizes__ 
-{{region layoutcontrol-getting-started-layoutpanel-03}}
+__Example 3: Stretched and left/rigth aligned items with different sizes__ 
+```XAML
 	<telerik:RadLayoutControl>
 		<Button Content="Left" HorizontalAlignment="Left" />
 		<Button Content="Left" HorizontalAlignment="Left" />
@@ -107,22 +107,22 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Right" HorizontalAlignment="Right" />
 		<Button Content="Right" HorizontalAlignment="Right" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 <span id="example-04" />	
-#### __[XAML] Example 4: Centered items__ 
-{{region layoutcontrol-getting-started-layoutpanel-04}}
+__Example 4: Centered items__ 
+```XAML
 	<telerik:RadLayoutControl>
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Center" HorizontalAlignment="Center" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 		
 <span id="example-05" />
-#### __[XAML] Example 5: Centered and left/right aligned items__ 
-{{region layoutcontrol-getting-started-layoutpanel-05}}
+__Example 5: Centered and left/right aligned items__ 
+```XAML
 	<telerik:RadLayoutControl>
 		<Button Content="Left" HorizontalAlignment="Left" />
 		<Button Content="Right" HorizontalAlignment="Right" />
@@ -131,11 +131,11 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Center" HorizontalAlignment="Center" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 <span id="example-06" />	
-#### __[XAML] Example 6: Centered items and a single stretched item inserted at the end of the children collection__ 
-{{region layoutcontrol-getting-started-layoutpanel-06}}
+__Example 6: Centered items and a single stretched item inserted at the end of the children collection__ 
+```XAML
 	<telerik:RadLayoutControl>
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Center" HorizontalAlignment="Center" />
@@ -143,11 +143,11 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Stretch" HorizontalAlignment="Stretch" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 <span id="example-07" />	
-#### __[XAML] Example 7: Centered items and a single stretched item inserted at the beginning of the children collection__ 
-{{region layoutcontrol-getting-started-layoutpanel-07}}
+__Example 7: Centered items and a single stretched item inserted at the beginning of the children collection__ 
+```XAML
 	<telerik:RadLayoutControl>		
 		<Button Content="Stretch" HorizontalAlignment="Stretch" />
 		<Button Content="Center" HorizontalAlignment="Center" />
@@ -155,11 +155,11 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Center" HorizontalAlignment="Center" />		
 		<Button Content="Center" HorizontalAlignment="Center" />
 	</telerik:RadLayoutControl>	
-{{endregion}}
+```
 
 <span id="example-08" />
-#### __[XAML] Example 8: Centered items and a single stretched item inserted in the middle of the children collection__ 
-{{region layoutcontrol-getting-started-layoutpanel-08}}
+__Example 8: Centered items and a single stretched item inserted in the middle of the children collection__ 
+```XAML
 	<telerik:RadLayoutControl>		
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Center" HorizontalAlignment="Center" />
@@ -167,11 +167,11 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Center" HorizontalAlignment="Center" />		
 		<Button Content="Center" HorizontalAlignment="Center" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 <span id="example-09" />	
-#### __[XAML] Example 9: Centered, stretched and left/right aligned items__ 
-{{region layoutcontrol-getting-started-layoutpanel-09}}
+__Example 9: Centered, stretched and left/right aligned items__ 
+```XAML
 	<telerik:RadLayoutControl>
 		<Button Content="Left" HorizontalAlignment="Left" />
 		<Button Content="Left" HorizontalAlignment="Left" />
@@ -184,7 +184,7 @@ This section contains the items setup demonstrated in the images in the article.
 		<Button Content="Center" HorizontalAlignment="Center" />
 		<Button Content="Stretched item with bigger size" HorizontalAlignment="Stretch" />
 	</telerik:RadLayoutControl>
-{{endregion}}
+```
 
 ## See Also
 * [Getting Started]({%slug radlayoutcontrol-getting-started%})

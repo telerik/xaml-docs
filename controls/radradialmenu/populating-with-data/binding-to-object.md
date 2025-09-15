@@ -19,7 +19,7 @@ The following example will demonstrate how to bind __RadRadialMenu__ with a coll
 In order to be able to successfully use the binding feature of the control, the used custom objects need to implement the __IRadialMenuItem__ interface. The interface provides all the required properties for __RadRadialMenuItem__:
 
 #### __C#__
-{{region cs-radradialmenu-populating-with-data-binding-to-object_1}}
+```C#
 	public class CustomMenuItem : IRadialMenuItem
 	{
 	    public bool CanUserSelect { get; set; }
@@ -34,10 +34,10 @@ In order to be able to successfully use the binding feature of the control, the 
 	    public IEnumerable<IRadialMenuItem> ItemsSource { get; set; }
 	    public object ToolTipContent { get; set; }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region vb-radradialmenu-populating-with-data-binding-to-object_1}}
+```VB.NET
 	Public Class CustomMenuItem
 	    Implements IRadialMenuItem
 	    Public Property CanUserSelect As Boolean Implements IRadialMenuItem.CanUserSelect
@@ -52,7 +52,7 @@ In order to be able to successfully use the binding feature of the control, the 
 	    Public Property ItemsSource As IEnumerable(Of IRadialMenuItem) Implements IRadialMenuItem.ItemsSource
 	    Public Property ToolTipContent As Object Implements IRadialMenuItem.ToolTipContent
 	End Class
-{{endregion}}
+```
 
 >Note that if you need to change any of those properties at run time you would need implement also the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx), interface or inherit from the built in [ViewModelBase](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.viewmodelbase) class in order to raise PropertyChanged of required properties.
 
@@ -61,7 +61,7 @@ In order to be able to successfully use the binding feature of the control, the 
 The next thing is to simply define the needed source collection of CustomMenuItems in the ViewModel. Once this is done we will be able to bind it to the __ItemsSource__ property. 
 
 #### __C#__
-{{region cs-radradialmenu-populating-with-data-binding-to-object_2}}
+```C#
 	public class ViewModel : ViewModelBase
 	{
 	    public ObservableCollection<CustomMenuItem> MenuItems { get; set; }
@@ -97,10 +97,10 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 	        return collection;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region vb-radradialmenu-populating-with-data-binding-to-object_2}}
+```VB.NET
 	Public Class ViewModel
 	        Inherits ViewModelBase
 	
@@ -134,16 +134,16 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 	            Return collection
 	        End Function
 	    End Class
-{{endregion}}
+```
 
 ## Binding the Collection in XAML
 
 The final step would be to set the ViewModel as DataContext and bind the already created collection to the __ItemsSource__ property of __RadRadialMenu__ as shown below:
 
 #### __XAML__
-{{region xaml-radradialmenu-populating-with-data-binding-to-object_1}}
+```XAML
 	<telerik:RadRadialMenu ItemsSource="{Binding MenuItems}" />
-{{endregion}}
+```
 
 You can see the final result on __Figure 1__.
 

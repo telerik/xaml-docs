@@ -21,9 +21,9 @@ When the tool is invoked, a crop adorner rectangle is shown over the image. It v
 
 In __Figure 1__ the CropTool is added to the RadImageEditorUI by defining an __ImageToolItem__ and with its CommandParameter set to a new CropTool as demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Adding a CropTool__
+__Example 1: Adding a CropTool__
 
-{{region xaml-radimageeditor-tools-crop_0}}
+```XAML
 	<telerik:RadImageEditorUI x:Name="ImageEditorUI"
 							  xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"
 							  xmlns:commands="clr-namespace:Telerik.Windows.Media.Imaging.ImageEditorCommands.RoutedCommands;assembly=Telerik.Windows.Controls.ImageEditor">
@@ -37,23 +37,20 @@ In __Figure 1__ the CropTool is added to the RadImageEditorUI by defining an __I
 			</telerik:ImageToolsSection>
 		</telerik:RadImageEditorUI.ImageToolsSections>
 	</telerik:RadImageEditorUI>
-{{endregion}}
+```
 
 > The rest of the examples in this article assume that the RadImageEditorUI is set up as demonstrated in __Example 1__.
 
 Alternatively, you can also use __ExecuteTool__ method of the RadImageEditor in order to execute a CropTool.
 
-#### __[C#] Example 2: Executing a CropTool__
+__Example 2: Executing a CropTool__
 
-{{region cs-radimageeditor-tools-crop_1}}
+```C#
 	this.ImageEditorUI.ImageEditor.ExecuteTool(new CropTool());
-{{endregion}}
-
-#### __[VB.NET] Example 2: Executing a CropTool__
-
-{{region cs-radimageeditor-tools-crop_2}}
+```
+```VB.NET
 	Me.ImageEditorUI.ImageEditor.ExecuteTool(New CropTool())
-{{endregion}}
+```
 
 ## InitialSize
 
@@ -61,27 +58,24 @@ The __InitialSize__ property of the CropTool is of type Size and determines the 
 
 __Example 3__ demonstrates how to set the initial size of the tool in XAML and in code.
 
-#### __[XAML] Example 3: Set initial size in XAML__
+__Example 3: Set initial size in XAML__
 
-{{region xaml-radimageeditor-tools-crop_3}}
+```XAML
 	<tools:CropTool InitialSize="150,150" />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Set initial size in code-behind__
+__Example 4: Set initial size in code-behind__
 
-{{region cs-radimageeditor-tools-crop_4}}
+```C#
 	CropTool cropTool = new CropTool();
 	cropTool.InitialSize = new Size(150, 150);
 	this.ImageEditorUI.ImageEditor.ExecuteTool(cropTool);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Set initial size in code-behind__
-
-{{region vb-radimageeditor-tools-crop_5}}
+```
+```VB.NET
 	Dim cropTool As New CropTool()
 	cropTool.InitialSize = New Size(150, 150)
 	Me.ImageEditorUI.ImageEditor.ExecuteTool(cropTool)
-{{endregion}}
+```
 
 ## FixedSize
 
@@ -89,27 +83,24 @@ The __FixedSize__ property is of type Size and specifies the only size that is a
         
 __Example 3__ shows how to set fixed size in XAML and in code.
 
-#### __[XAML] Example 5: Set fixed size in XAML__
+__Example 5: Set fixed size in XAML__
 
-{{region xaml-radimageeditor-tools-crop_6}}
+```XAML
 	<tools:CropTool FixedSize="200,100" />
-{{endregion}}
+```
 
-#### __[C#] Example 6: Set fixed size in code-behind__
+__Example 6: Set fixed size in code-behind__
 
-{{region cs-radimageeditor-tools-crop_7}}
+```C#
 	CropTool cropTool = new CropTool();
 	cropTool.FixedSize = new Size(200, 100);
 	this.ImageEditorUI.ImageEditor.ExecuteTool(cropTool);
-{{endregion}}
-
-#### __[VB.NET] Example 6: Set fixed size in code-behind__
-
-{{region vb-radimageeditor-tools-crop_8}}
+```
+```VB.NET
 	Dim cropTool As New CropTool()
 	cropTool.FixedSize = New Size(200, 100)
 	Me.ImageEditorUI.ImageEditor.ExecuteTool(cropTool)
-{{endregion}}
+```
 
 >If the image shown in RadImageEditor has smaller dimensions than the ones set for the tool's initial or fixed size, the crop adorner gets limited to the boundaries of the image. For example, if the image's size is (200,300) and you set fixed size to the crop tool (300,50), the crop rectangle will be shown with size (200,50).
           
@@ -119,27 +110,24 @@ The __AspectRatio__ property of the crop tool determines whether the width and h
 
 The calculated ratio value corresponds to the width of the adorner divided by its height. This means that if you want a crop rectangle that has a width 2 times smaller than its height, you should set value 0.5 to the AspectRatio. __Example 3__ shows how this can be done in XAML and in code behind.
         
-#### __[XAML] Example 7: Set fixed aspect ratio in XAML__
+__Example 7: Set fixed aspect ratio in XAML__
 
-{{region xaml-radimageeditor-tools-crop_9}}
+```XAML
 	<tools:CropTool AspectRatio="0.5"/>
-{{endregion}}
+```
 
-#### __[C#] Example 8: Set fixed aspect ratio in code-behind__
+__Example 8: Set fixed aspect ratio in code-behind__
 
-{{region cs-radimageeditor-tools-crop_10}}
+```C#
 	CropTool cropTool = new CropTool();
 	cropTool.AspectRatio = 0.5;
 	this.ImageEditorUI.ImageEditor.ExecuteTool(cropTool);
-{{endregion}}
-
-#### __[VB.NET] Example 8: Set fixed aspect ratio in code-behind__
-
-{{region vb-radimageeditor-tools-crop_11}}
+```
+```VB.NET
 	Dim cropTool As New CropTool()
 	cropTool.AspectRatio = 0.5
 	Me.ImageEditorUI.ImageEditor.ExecuteTool(cropTool)
-{{endregion}}
+```
 
 >tipYou can crop an image with fixed ratio between the width and height without setting the FixedRatio property. Just press and hold the __Shift__ key while dragging the crop adorner.
           

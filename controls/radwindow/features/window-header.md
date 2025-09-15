@@ -20,43 +20,43 @@ If you have a window-specific header, use the __Header__ property.
 
 #### __C#__
 
-{{region cs-radwindow-features-window-header_0}}
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.Header = "My RadWindow";
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radwindow-features-window-header_1}}
+```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.Header = "My RadWindow"
-{{endregion}}
+```
 
 If you want to share a common icon layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __HeaderTemplate__ property of the __RadWindow__.
 
 #### __XAML__
 
-{{region xaml-radwindow-features-window-header_2}}
+```XAML
 	<UserControl.Resources>
 	    <DataTemplate x:Key="WindowHeaderTemplate">
 	        <TextBlock Text="My RadWindow" />
 	    </DataTemplate>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radwindow-features-window-header_3}}
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.HeaderTemplate = this.Resources["WindowHeaderTemplate"] as DataTemplate;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radwindow-features-window-header_4}}
+```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.HeaderTemplate = TryCast(Me.Resources("WindowHeaderTemplate"), DataTemplate)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadWindow Custom Header Template](images/RadWindow_Features_Window_Header_01.png)
 

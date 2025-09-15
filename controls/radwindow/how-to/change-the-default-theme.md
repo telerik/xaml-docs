@@ -36,8 +36,8 @@ To change the theme using the implicit styles mechanism you will need to make fe
 	
 	The following example shows how to merge the Windows8 theme resources and open a new window.
 	
-	#### __[XAML] Example 1: Merging the required .xaml files for the Windows8 theme__  
-	{{region xaml-radwindow-how-to-change-the-default-theme_0}}
+	__Example 1: Merging the required .xaml files for the Windows8 theme__  
+	```XAML
 		<Application>
 			<Application.Resources>
 				<ResourceDictionary>
@@ -48,43 +48,41 @@ To change the theme using the implicit styles mechanism you will need to make fe
 				</ResourceDictionary>
 			</Application.Resources>
 		</Application>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 2: Opening a window__  
-	{{region cs-radwindow-how-to-change-the-default-theme_1}}
+	__Example 2: Opening a window__  
+	```C#
 		var window = new RadWindow()
 		{
 			Width = 300,
 			Height = 300
 		};
 		window.Show();
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: Opening a window__  
-	{{region vb-radwindow-how-to-change-the-default-theme_4}}
+	```
+```VB.NET
 		Dim newWindow As New RadWindow() With {
 			.Width = 300,
 			.Height = 300
 		}
 		newWindow.Show()
-	{{endregion}}
+	```
 
 	<h4 id="figure-1"><strong>Figure 1: RadWindow with the Windows8 theme applied</strong></h4>
 	![{{ site.framework_name }} RadWindow RadWindow with the Windows8 theme applied</strong></h4>](images/RadWindow_How_To_Change_the_Default_Theme_01.png)
 
 If you use __RadWindow__ as a custom UserControl as shown in __Example 3__, you will need to apply a new style targeting the custom control and base it on the default RadWindowStyle. Otherwise, the window won't be displayed.
 
-#### __[XAML] Example 3: RadWindow defined as a UserControl__
-{{region xaml-radwindow-how-to-change-the-default-theme_2}}
+__Example 3: RadWindow defined as a UserControl__
+```XAML
 	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
 	   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	</telerik:RadWindow>
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Adding an implicit style targeting the new window control and based on the default window style__
-{{region xaml-radwindow-how-to-change-the-default-theme_3}}
+__Example 4: Adding an implicit style targeting the new window control and based on the default window style__
+```XAML
 	<Application>
 	    <Application.Resources>
 	        <ResourceDictionary>
@@ -97,7 +95,7 @@ If you use __RadWindow__ as a custom UserControl as shown in __Example 3__, you 
 	        </ResourceDictionary>
 	    </Application.Resources>
 	</Application>
-{{endregion}}
+```
 
 The important part is to set the __TargetType__ property to the type of the UserControl.
 
@@ -110,8 +108,8 @@ To change the theme via the StyleManager you will need to make few steps.
 1. Reference the Xaml version of the Telerik UI for WPF dlls. They can be found in the */Telerik UI for WPF installation folder/Binaries/* folder.
 2. Set the StyleManager.Theme attached property on the control you want to theme. Or set the StyleManager.ApplicationTheme static property before calling the InitialComponent method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
 
-	#### __[C#] Example 5: Setting the theme of the window__
-	{{region xaml-radwindow-how-to-change-the-default-theme_4}}
+	__Example 5: Setting the theme of the window__
+	```C#
 		var window = new RadWindow()
 		{
 			Width = 300,
@@ -120,10 +118,8 @@ To change the theme via the StyleManager you will need to make few steps.
 		StyleManager.SetTheme(window, new Window8Theme());
 		
 		window.Show();
-	{{endregion}}
-	
-	#### __[VB.NET] Example 5: Setting the theme of the window__
-	{{region xaml-radwindow-how-to-change-the-default-theme_4}}
+	```
+```VB.NET
 		Dim window As New RadWindow() With {
 			.Width = 300,
 			.Height = 300
@@ -131,19 +127,17 @@ To change the theme via the StyleManager you will need to make few steps.
 		StyleManager.SetTheme(window, New Window8Theme())
 		
 		window.Show()
-	{{endregion}}
+	```
 	
-	#### __[C#] Example 6: Setting the theme globally__
-	{{region xaml-radwindow-how-to-change-the-default-theme_6}}		
+	__Example 6: Setting the theme globally__
+	```C#		
 		StyleManager.ApplicationTheme = new Window8Theme();
 		InitializeComponent();
-	{{endregion}}
-	
-	#### __[VB.NET] Example 6: Setting the theme globally__
-	{{region xaml-radwindow-how-to-change-the-default-theme_6}}		
+	```
+```VB.NET		
 		StyleManager.ApplicationTheme = New Window8Theme()
 		InitializeComponent()
-	{{endregion}}
+	```
 
 The end result is the same as in [Figure 1](#figure-1).
 	

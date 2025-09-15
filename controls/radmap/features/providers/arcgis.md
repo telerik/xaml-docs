@@ -25,28 +25,26 @@ Currently the ArcGIS map provider support six modes which specify the type of ap
 
 The following example of the `ArcGisMapProvider` definition uses the `Physical` mode:
 
-#### __[XAML] Defining the ArcGisMapProvider in XAML__
-{{region xaml-radmap-features-providers-arcgis-0}}
+__Defining the ArcGisMapProvider in XAML__
+```XAML
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:ArcGisMapProvider Mode="Physical" />
 		</telerik:RadMap.Provider>
 	</telerik:RadMap>
-{{endregion}}
+```
 
-#### __[C#] Defining the ArcGisMapProvider in code-behind__
-{{region cs-radmap-features-providers-arcgis-1}}
+__Defining the ArcGisMapProvider in code-behind__
+```C#
 	ArcGisMapProvider provider = new ArcGisMapProvider();
 	provider.Mode = ArcGisMapMode.Physical;
 	this.radMap.Provider = provider;
-{{endregion}}
-
-#### __[VB.NET] Defining the ArcGisMapProvider in code-behind__	
-{{region vb-radmap-features-providers-arcgis-2}}
+```
+```VB.NET
 	Dim provider As New ArcGisMapProvider ()
 	provider.Mode = ArcGisMapMode.Physical
 	Me.radMap.Provider = provider
-{{endregion}}
+```
 
 __ArcGisMapProvider when using the `Physical` mode__
 
@@ -62,17 +60,15 @@ When using the ArcGisMapProvider, you have to display an attribution copyright l
 
 ArcGIS Online services only accept connections using [TLS 1.2](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2). Thus, you need to explicitly set the `ServicePointManager.SecurityProtocol` property if you're using a .NET Framework version prior to __4.7__.
 
-#### __[C#] Setting the ServicePointManager.SecurityProtocol__
-{{region cs-radmap-features-providers-arcgis-3}}
+__Setting the ServicePointManager.SecurityProtocol__
+```C#
 	public App()
 	{
 		// ArcGis rest services require TLS 1.2 protocol.
 		ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
 	}
-{{endregion}}
-
-#### __[VB.NET] Setting the ServicePointManager.SecurityProtocol__
-{{region vb-radmap-features-providers-arcgis-4}}
+```
+```VB.NET
 	Partial Public Class App
 		Inherits Application
 
@@ -81,7 +77,7 @@ ArcGIS Online services only accept connections using [TLS 1.2](https://docs.micr
 			ServicePointManager.SecurityProtocol = CType(3072, SecurityProtocolType)
 		End Sub
 	End Class
-{{endregion}}
+```
 
 For comparison, the following snapshot demonstrates the appearance of the map for the `Street` mode:
 

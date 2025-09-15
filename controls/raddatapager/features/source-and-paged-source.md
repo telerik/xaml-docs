@@ -27,45 +27,45 @@ If you look at the constructors of [PagedCollectionView](http://msdn.microsoft.c
 Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) which is the source for an [ItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemscontrol.aspx). Here is shown how to wrap it in order to enable paging with __RadDataPager__.
 
 #### __C#__
-{{region raddatapager-features-source-and-paged-source_0}}
+```C#
 	IEnumerable itemsSource = Enumerable.Range(0, 1000);
 	var pagedSource = new PagedCollectionView(itemsSource);
 	this.radDataPager.Source = pagedSource;
 	this.itemsControl.ItemsSource = pagedSource;
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region raddatapager-features-source-and-paged-source_1}}
+```VB.NET
 
 	Dim itemsSource As IEnumerable = Enumerable.Range(0, 1000)
 	Dim pagedSource = New PagedCollectionView(itemsSource)
 	Me.radDataPager.Source = pagedSource
 	Me.itemsControl.ItemsSource = pagedSource
-{{endregion}}
+```
 
 #### __C#__
-{{region raddatapager-features-source-and-paged-source_2}}
+```C#
 	IEnumerable itemsSource = Enumerable.Range(0, 1000);
 	var pagedSource = new QueryableCollectionView(itemsSource);
 	this.radDataPager.Source = pagedSource;
 	this.itemsControl.ItemsSource = pagedSource;
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region raddatapager-features-source-and-paged-source_3}}
+```VB.NET
 	Dim itemsSource As IEnumerable = Enumerable.Range(0, 1000)
 	Dim pagedSource = New QueryableCollectionView(itemsSource)
 	Me.radDataPager.Source = pagedSource
 	Me.itemsControl.ItemsSource = pagedSource
-{{endregion}}
+```
 
 >The __QueryableCollectionView__ class is defined in the __Telerik.Windows.Data__ namespace so make sure to include it in your page (via the __Using__ or __Import__ statements).
 
 #### __XAML__
-{{region raddatapager-features-source-and-paged-source_4}}
+```XAML
 	<ListBox Name="itemsControl"/>
 	<telerikGrid:RadDataPager Name="radDataPager" PageSize="10" DisplayMode="All"/>
-{{endregion}}
+```
 
 ## Binding to the PagedSource property of the RadDataPager
 
@@ -74,14 +74,14 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 In case you do not like the first approach there is a better one. When you assign an [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) as the __Source__ of a [RadDataPager]({%slug radgridview-paging-using-telerik-raddatapager%}) it will automatically wrap it in a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and expose it through its __PagedSource__ property. From then on, you can attach any number of __ItemsControls__ to the __PagedSource__ and they will be automatically paged. Here is how to do this entirely in XAML. 
 
 #### __XAML__
-{{region raddatapager-features-source-and-paged-source_5}}
+```XAML
 	<ListBox Name="itemsControl"
 	         ItemsSource="{Binding PagedSource, ElementName=radDataPager}"/>
 	<telerikGrid:RadDataPager Name="radDataPager"
 	               Source="{Binding myItemsSource}"
 	               PageSize="10"
 	               DisplayMode="All"/>
-{{endregion}}
+```
 
 
 ## See Also  

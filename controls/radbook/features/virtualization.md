@@ -18,8 +18,8 @@ The default __ItemsPanel__ for the __RadBook__ is __BookPanel__. The __BookPanel
 
 The following tutorial shows how to bind to a collection of business objects and virtualize the items displayed in a __RadBook__ element using the __IsVirtualizing__ property.
 
-#### __[XAML] Example 1: Defining a RadBook__  
-{{region xaml-radbook-features-virtualization-0}}
+__Example 1: Defining a RadBook__  
+```XAML
 	<Grid.Resources>
 		<sampleData:RadBookSampleData x:Key="DataSource" />
 		<DataTemplate x:Key="PageTemplate">
@@ -42,7 +42,7 @@ The following tutorial shows how to bind to a collection of business objects and
 						 LeftPageTemplate="{StaticResource PageTemplate}"
 						 RightPageTemplate="{StaticResource PageTemplate}" />
 	</Grid>
-{{endregion}}
+```
 
 The __RadBook__ with __Name__ "book1" is bound to a collection with 10000 __Team__ objects. In the above example, the __IsVirtualizing__ property is set to __False__ (by default it is __True__, but for the sake of the example is __False__) which means that it will take few minutes in order the containers to be generated. That will freeze your application.
 
@@ -52,9 +52,9 @@ In this case you need to use the __UI Virtualization__ behavior of the __RadBook
 
 In order to enable the __UI Virtualization__ behavior, you should set the __IsVirtualizing__  property of the __RadBook__ to __True__. See the example below:
 
-#### __[XAML] Example 2: Enabling the UI virtualization__  
-{{region xaml-radbook-features-virtualization-1}}
+__Example 2: Enabling the UI virtualization__  
+```XAML
 	<telerik:RadBook x:Name="book2" IsVirtualizing="True"/>
-{{endregion}}
+```
 
 Now it will take just a second for the necessary containers to be generated.

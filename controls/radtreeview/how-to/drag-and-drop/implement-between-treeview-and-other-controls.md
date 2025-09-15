@@ -33,7 +33,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 
 #### __XAML__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-1}}
+```XAML
 	 <Grid x:Name="LayoutRoot"
 	          Margin="8"
 	          Background="White">
@@ -123,13 +123,13 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 	            </telerik:RadGridView.Resources>
 	        </telerik:RadGridView>
 	    </Grid>
-	{{endregion}}
+	```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-0}}
+```XAML
 	    <Grid x:Name="LayoutRoot"
 	          Margin="8"
 	          Background="White">
@@ -220,7 +220,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 	            </telerik:RadGridView.Resources>
 	        </telerik:RadGridView>
 	    </Grid>
-	{{endregion}}
+	```
 
 {% endif %}
 
@@ -241,11 +241,11 @@ Now that the __RadGridView__ allows drop operations, we need to make sure that t
 
 #### __XAML__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-2}}
+```XAML
 	<Style TargetType="telerik:GridViewRow">
 		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 	</Style>
-	{{endregion}}
+	```
 
 
 
@@ -302,7 +302,7 @@ So we basically need a class that provides:
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-0}}
+```C#
 	 public class GridViewDragDropBehavior
 	    {
 	        private RadGridView _associatedObject;
@@ -393,13 +393,13 @@ So we basically need a class that provides:
 	
 	        }
 	    }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-0}}
+```VB.NET
 	Public Class GridViewDragDropBehavior
 		Private _associatedObject As RadGridView
 		''' <summary>
@@ -471,7 +471,7 @@ So we basically need a class that provides:
 	
 		End Sub
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -480,7 +480,7 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-1}}
+```C#
 	        private void SubscribeToDragDropEvents()
 	        {
 	            DragDropManager.AddDragInitializeHandler(this.AssociatedObject, OnDragInitialize);
@@ -517,13 +517,13 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 	        private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	        {
 	        }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-1}}
+```VB.NET
 	Private Sub SubscribeToDragDropEvents()
 		DragDropManager.AddDragInitializeHandler(Me.AssociatedObject, OnDragInitialize)
 		DragDropManager.AddGiveFeedbackHandler(Me.AssociatedObject, OnGiveFeedback)
@@ -553,7 +553,7 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 	
 	Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -562,7 +562,7 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-2}}
+```C#
 	public class DropIndicationDetails : ViewModelBase
 	{
 	    private object currentDraggedItem;
@@ -619,13 +619,13 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 	        }
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-2}}
+```VB.NET
 	Public Class DropIndicationDetails
 		Inherits ViewModelBase
 		Private m_currentDraggedItem As Object
@@ -678,7 +678,7 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 			End Set
 		End Property
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -687,7 +687,7 @@ We can use this definition to also pass and keep the drag operation details in t
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-3}}
+```C#
 	private void OnDragInitialize(object sender, DragInitializeEventArgs e)
 	{
 	    DropIndicationDetails details = new DropIndicationDetails();
@@ -711,13 +711,13 @@ We can use this definition to also pass and keep the drag operation details in t
 	    e.DragVisualOffset = e.RelativeStartPoint;
 	    e.AllowedEffects = DragDropEffects.All;
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-3}}
+```VB.NET
 	Private Sub OnDragInitialize(sender As Object, e As DragInitializeEventArgs)
 		Dim details As New DropIndicationDetails()
 		Dim row = If(TryCast(e.OriginalSource, GridViewRow), TryCast(e.OriginalSource, FrameworkElement).ParentOfType(Of GridViewRow)())
@@ -739,7 +739,7 @@ We can use this definition to also pass and keep the drag operation details in t
 		e.DragVisualOffset = e.RelativeStartPoint
 		e.AllowedEffects = DragDropEffects.All
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -748,24 +748,24 @@ Then we can implement the __GiveFeedback__ event handler, which is quite straigh
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-4}}
+```C#
 	private void OnGiveFeedback(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs e)
 	{
 	    e.SetCursor(Cursors.Arrow);
 	    e.Handled = true;
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-4}}
+```VB.NET
 	Private Sub OnGiveFeedback(sender As Object, e As Telerik.Windows.DragDrop.GiveFeedbackEventArgs)
 		e.SetCursor(Cursors.Arrow)
 		e.Handled = True
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -780,7 +780,7 @@ As the data object passes by a drag operation started in __RadTreeView__ should 
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-5}}
+```C#
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    TreeViewDragDropOptions options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -806,13 +806,13 @@ As the data object passes by a drag operation started in __RadTreeView__ should 
 	    }
 	    e.Handled = true;
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-5}}
+```VB.NET
 	Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim options As TreeViewDragDropOptions = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 		If options Is Nothing Then
@@ -833,7 +833,7 @@ As the data object passes by a drag operation started in __RadTreeView__ should 
 		End If
 		e.Handled = True
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -842,7 +842,7 @@ Finally we'll have to implement the actual drop logic and we'll also have to upd
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-6}}
+```C#
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	
@@ -874,13 +874,13 @@ Finally we'll have to implement the actual drop logic and we'll also have to upd
 	        collection.Remove(draggedItem);
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-6}}
+```VB.NET
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	
 		Dim options As TreeViewDragDropOptions = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -908,7 +908,7 @@ Finally we'll have to implement the actual drop logic and we'll also have to upd
 			collection.Remove(draggedItem)
 		End If
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -929,17 +929,17 @@ In order to configure the __RadTreeView__ to process the drop of an item coming 
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-7}}
+```C#
 	DragDropManager.AddDropHandler(allProductsView, OnDrop);
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-7}}
+```VB.NET
 	DragDropManager.AddDropHandler(allProductsView, OnDrop)
-	{{endregion}}
+	```
 
 
 
@@ -948,7 +948,7 @@ In the handler you need to get the dragged data, find the position where the ite
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-8}}
+```C#
 	IList destinationItems = null;
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
@@ -966,13 +966,13 @@ In the handler you need to get the dragged data, find the position where the ite
 	        }
 	    }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-8}}
+```VB.NET
 	Dim destinationItems As IList = Nothing
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim data = DragDropPayloadManager.GetDataFromObject(e.Data, "DraggedData")
@@ -989,7 +989,7 @@ In the handler you need to get the dragged data, find the position where the ite
 			End If
 		End If
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -998,7 +998,7 @@ And to make the dragging operation more informative, we can also subscribe to th
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-9}}
+```C#
 	private void OnItemDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    var item = (e.OriginalSource as FrameworkElement).ParentOfType<RadTreeViewItem>();
@@ -1069,13 +1069,13 @@ And to make the dragging operation more informative, we can also subscribe to th
 	
 	    return DropPosition.Inside;
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-other-controls-9}}
+```VB.NET
 		Private Sub OnItemDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim item = TryCast(e.OriginalSource, FrameworkElement).ParentOfType(Of RadTreeViewItem)()
 		If item Is Nothing Then
@@ -1132,7 +1132,7 @@ And to make the dragging operation more informative, we can also subscribe to th
 	
 		Return DropPosition.Inside
 	End Function
-	{{endregion}}
+	```
 
 
 

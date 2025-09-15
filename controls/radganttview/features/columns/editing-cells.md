@@ -22,7 +22,7 @@ The xaml of the GanttView should look like this:
 
 #### __XAML__
 
-{{region xaml-radganttview-features-columns-edit-template-0}}
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" 
 	VerticalAlignment="Top"
 	VisibleRange="{Binding VisibleTime}">
@@ -50,7 +50,7 @@ The xaml of the GanttView should look like this:
 	        </telerik:ColumnDefinition>
 	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/CustomCellTemplates).
 

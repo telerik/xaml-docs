@@ -78,10 +78,10 @@ The default en-US dictionary for SpellChecking is located in:
 
 After adding references to the aforementioned assemblies, you can declare RadRichTextBox manually by writing the XAML code as in the following example or add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.        
 
-#### __[XAML] Adding RadRichTextBox in XAML__
-{{region radrichtextbox-getting-started_0}}
+__Adding RadRichTextBox in XAML__
+```XAML
     <telerik:RadRichTextBox x:Name="radRichTextBox" />
-{{endregion}}
+```
 
 When you run the application, you will see an empty RadRichTextBox.
 
@@ -128,8 +128,8 @@ With the DataProvider classes you can easily bind RTF, HTML or XAML documents re
 The next example shows the implementation of a sample class that will be later used as data context for RadRichTextBox.
 
 <a name="example3"><a/>
-#### __[C#] Sample DataContext class__
-{{region radrichtextbox-getting-started_1}}
+__Sample DataContext class__
+```C#
 
     public class ExampleDataContext : INotifyPropertyChanged
     {
@@ -161,10 +161,8 @@ The next example shows the implementation of a sample class that will be later u
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Sample DataContext class__
-{{region radrichtextbox-getting-started_2}}
+```
+```VB.NET
 
 	Public Class ExampleDataContext
     	Implements INotifyPropertyChanged
@@ -189,7 +187,7 @@ The next example shows the implementation of a sample class that will be later u
     	    RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
     	End Sub
 	End Class
-{{endregion}}
+```
 
 >The ExampleDataContext class implements the `INotifyPropertyChanged` interface and raises the `PropertyChanged` event every time a property value changes, in order to __support two-way binding__.
 
@@ -197,8 +195,8 @@ When you already have prepared the sample data, you can bind it to RadRichTextBo
 
 The following example shows how to bind the XamlData property from [the above example](#example3) to a XamlDataProvider and a RadRichTextBox.
 
-#### __[XAML] Using a DataProvider__
-{{region radrichtextbox-getting-started_3}}
+__Using a DataProvider__
+```XAML
     <Grid>
         <Grid.Resources>
             <local:ExampleDataContext x:Key="ExampleDataContext"/>
@@ -208,7 +206,7 @@ The following example shows how to bind the XamlData property from [the above ex
 								  Xaml="{Binding Path=XamlData, Mode=TwoWay}" />
         <telerik:RadRichTextBox Name="radRichTextBox" />
     </Grid>
-{{endregion}}
+```
 
 >tip More details on using data providers in RadRichTextBox are available [here]({%slug radrichtextbox-features-data-providers%}).
 
@@ -218,8 +216,8 @@ The following example shows how to bind the XamlData property from [the above ex
 
 The RadRichTextBox class exposes the `Document` property of type [`RadDocument`]({%slug radrichtextbox-features-document-elements-raddocument%}) that allows you to assign a document to the control in code-behind. You can import an existing document and show it in RadRichTextBox using a format provider as the next shows.
 
-#### __[C#] Showing an Existing Document in RadRichTextBox__
-{{region radrichtextbox-getting-started_4}}
+__Showing an Existing Document in RadRichTextBox__
+```C#
     RadDocument document;
     Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider provider = new Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider();
 
@@ -229,10 +227,8 @@ The RadRichTextBox class exposes the `Document` property of type [`RadDocument`]
     }
 
     this.radRichTextBox.Document = document;
-{{endregion}}
-
-#### __[VB.NET] Showing an Existing Document in RadRichTextBox__
-{{region radrichtextbox-getting-started_5}}
+```
+```VB.NET
 	Dim document As RadDocument
 	Dim provider As New Telerik.Windows.Documents.FormatProviders.OpenXml.Docx.DocxFormatProvider()
 
@@ -241,7 +237,7 @@ The RadRichTextBox class exposes the `Document` property of type [`RadDocument`]
 	End Using
 
 	Me.radRichTextBox.Document = document
-{{endregion}}
+```
 
 >tip All the supported document formats and the corresponding format providers are described in the [Import/Export section]({%slug radrichtextbox-features-import-export%}). 
 
@@ -271,15 +267,13 @@ The appropriate API, however, should be available in cases when you want to modi
 
 When a RadDocument instance was for some reason created from code – built using the elements hierarchy or imported, it can be passed to a RadDocumentEditor like this:
 
-#### __[C#] Creating a RadDocumentEditor__
-{{region radrichtextbox-getting-started_6}}
+__Creating a RadDocumentEditor__
+```C#
 	RadDocumentEditor documentEditor = new RadDocumentEditor(document);
-{{endregion}}
-
-#### __[VB.NET] Creating a RadDocumentEditor__
-{{region radrichtextbox-getting-started_7}}
+```
+```VB.NET
 	Dim documentEditor As New RadDocumentEditor(document)
-{{endregion}}
+```
 
 The newly created __documentEditor__ instance now provides all capabilities that a RadRichTextBox provides. Moreover, you can group several methods so that they are added to the Undo/Redo stack as a single item. Click [here]({%slug radrichtextbox-features-history%}#undogroup) to learn more about this functionality.
     

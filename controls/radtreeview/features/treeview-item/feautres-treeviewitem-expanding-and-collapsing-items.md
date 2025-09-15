@@ -29,13 +29,13 @@ To expand a treeview item you need to set the __IsExpanded__ attribute to True. 
 
 >tip The default value of the __IsExpanded__ property is __False__.
 
-#### __[XAML] Example 1: Expanding on item in XAML__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_0}}
+__Example 1: Expanding on item in XAML__
+```XAML
 	<telerik:RadTreeViewItem x:Name="radTreeViewItem" Header="Sport Categories" IsExpanded="True">
-{{endregion}}
+```
 
-#### __[C#] Example 2: Expanding on item in code__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_1}}
+__Example 2: Expanding on item in code__
+```C#
 	private void ExpandTreeViewItem()
 	{
 	    radTreeViewItem.IsExpanded = true;
@@ -44,17 +44,15 @@ To expand a treeview item you need to set the __IsExpanded__ attribute to True. 
 	{
 	    radTreeViewItem.IsExpanded = false;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Expanding on item in code__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_2}}
+```
+```VB.NET
 	Private Sub ExpandTreeViewItem()
 	    radTreeViewItem.IsExpanded = True
 	End Sub
 	Private Sub CollapseTreeViewItem()
 	    radTreeViewItem.IsExpanded = False
 	End Sub
-{{endregion}}
+```
 	
 ## Expanding and Collapsing TreeView Items Recursively
 
@@ -62,8 +60,8 @@ The __RadTreeView__ and __RadTreeViewItem__ classes offer two methods for expand
 
 > If you use the __ExpandAll()__ \ __CollapseAll()__ method of the __RadTreeView__ class then the whole tree will be expanded\collapsed.
 
-#### __[C#] Example 3: Expanding and collapsing the whole tree__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_3}}
+__Example 3: Expanding and collapsing the whole tree__
+```C#
 	private void ExpandAllTreeViewItems()
 	{
 	    radTreeView.ExpandAll();
@@ -72,17 +70,15 @@ The __RadTreeView__ and __RadTreeViewItem__ classes offer two methods for expand
 	{
 	    radTreeView.CollapseAll();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Expanding and collapsing the whole tree__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_4}}
+```
+```VB.NET
 	Private Sub ExpandAllTreeViewItems()
 	    radTreeView.ExpandAll()
 	End Sub
 	Private Sub CollapseAllTreeViewItems()
 	    radTreeView.CollapseAll()
 	End Sub
-{{endregion}}
+```
 
 >The __ExpandAll()__ and __CollapseAll()__ methods work only after the first level items have been loaded. This is visible only when the treeview is bound. Therefore it should be called only in or after the __Loaded__ event.
 
@@ -90,20 +86,18 @@ The __RadTreeView__ and __RadTreeViewItem__ classes offer two methods for expand
 
 By default the treeview allows you to have multiple nodes expanded at the same time. You can alter this and allow only a single expanded node by setting the __IsSingleExpandPath__ property of RadTreeView to True. In this case when you expand a node, all of the others already expanded branches will be collapsed automatically.
 
-#### __[XAML] Example 4: Setting IsSingleExpandPath property__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_5}}
+__Example 4: Setting IsSingleExpandPath property__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsSingleExpandPath="True">
-{{endregion}}
+```
 
-#### __[C#] Example 5: Setting IsSingleExpandPath property__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_6}}
+__Example 5: Setting IsSingleExpandPath property__
+```C#
 	radTreeView.IsSingleExpandPath = true;
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting IsSingleExpandPath property__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_7}}
+```
+```VB.NET
 	radTreeView.IsSingleExpandPath = true
-{{endregion}}
+```
 
 ## Expand an Item By Path
 
@@ -111,8 +105,8 @@ RadTreeView offers __ExpandItemByPath__ method that allows you to built a unique
 
 The following example shows how the feature works. For the sake of the demo we will expand the RadTreeViewItem with its Header set to "Indoor Cycling" (see Example 6). 
 
-#### __[XAML] Example 6: Simple TreeView definition__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_8}}
+__Example 6: Simple TreeView definition__
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 		<telerik:RadTreeViewItem Header="Sport Categories">
 			<telerik:RadTreeViewItem Header="Football">
@@ -129,58 +123,54 @@ The following example shows how the feature works. For the sake of the demo we w
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 The ExpandItemByPath method accepts a string representing the path to the item that should be expanded. By default the path is built using the Header of each RadTreeViewItem from the root of the treeview to the searched item. For example, to expand the "Indoor Cycling" note you should use the following path - "Sport Categories\\Cycling\\Indoor Cycling". Here the "\\" string is the default path separator.
 
 The ExpandItemByPath has two overloads - one that accepts the string path and a separator. And another one that accepts only a string path.
 
-#### __[C#] Example 7: Calling ExpandItemByPath with path and a custom separator__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_9}}
+__Example 7: Calling ExpandItemByPath with path and a custom separator__
+```C#
 	private void ExpandItemByPath()
 	{
 	    string path = "Sport Categories|Cycling|Indoor Cycling";
 	    radTreeView.ExpandItemByPath( path, "|" );
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: Calling ExpandItemByPath with path and a custom separator__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_10}}
+```
+```VB.NET
 	Private Sub ExpandItemByPath()
 	    Dim path As String = "Sport Categories|Cycling|Indoor Cycling"
 	    radTreeView.ExpandItemByPath(path, "|")
 	End Sub
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTreeView ExpandItemByPath with Separator](images/RadTreeView_TreeViewItemExpandingCollapsing_020.PNG)
 
 When using the overload that doesn't accept a path separator you can use the default one ("\\") or set the __PathSeparator__ property of RadTreeView to change it. 
 
-#### __[C#] Example 8: Setting the PathSeparator property__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_11}}
+__Example 8: Setting the PathSeparator property__
+```C#
 	private void ExpandItemByPath()
 	{		
 	    string path = "Sport Categories|Cycling|Indoor Cycling";	    
 		radTreeView.PathSeparator = "|";
 	    radTreeView.ExpandItemByPath( path );
 	}
-{{endregion}}
-	
-#### __[VB.NET] Example 8: Setting the PathSeparator property__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_12}}
+```
+```VB.NET
 	Private Sub ExpandItemByPath()
 	    Dim path As String = "Sport Categories|Cycling|Indoor Cycling"
 	    radTreeView.PathSeparator = "|"
 	    radTreeView.ExpandItemByPath( path )
 	End Sub
-{{endregion}}
+```
 
 ## Expand an Item by Using the ItemContainerStyle
 
 This is useful when the treeview is data bound to a collection of business objects and you don't have easy access to the RadTreeViewItems. You can define a Style that targets RadTreeViewItem and set or bound its IsExpanded property. Read more about this in the [ItemContainerStyle]({%slug radtreeview-styling-and-appearance-item-container-style%}) article.
 
-#### __[XAML] Example 9: Setting ItemContainerStyle__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_23}}
+__Example 9: Setting ItemContainerStyle__
+```XAML
 	<FrameworkElement.Resources>
 		<Style x:Key="ItemContainerStyle" TargetType="{x:Type telerik:RadTreeViewItem}">
 			<Setter Property="IsExpanded" Value="True"/>
@@ -188,14 +178,14 @@ This is useful when the treeview is data bound to a collection of business objec
 	</FrameworkElement.Resources>
 	
 	<telerik:RadTreeView ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-{{endregion}}
+```
 
 ## Binding the IsExpanded Property
 
 A very common scenario is to have the RadTreeViewItem IsExpanded property bound to a property of a custom business object. The easiest way to achieve this is to use style binding. __Example 10__ shows how to bind a boolean property (named IsExpanded) of a business object to the IsExpanded property RadTreeViewItem.
 
-#### __[XAML] Example 10: Data bind the IsExpanded property__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_21}}
+__Example 10: Data bind the IsExpanded property__
+```XAML
 	<FrameworkElement.Resources>
 		<Style x:Key="ItemContainerStyle" TargetType="{x:Type telerik:RadTreeViewItem}">
 			<Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}"/>
@@ -203,7 +193,7 @@ A very common scenario is to have the RadTreeViewItem IsExpanded property bound 
 	</FrameworkElement.Resources>
 	
 	<telerik:RadTreeView ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-{{endregion}}
+```
 
 > You can find a runnable example showing this in the [How to Bind RadTreeView to Hierarchical Data and Use Style Binding]({%slug radtreeview-howto-bind-hierarchical-data-style-binding%}) topic.
 
@@ -213,18 +203,18 @@ To improve the user experience, the expand behavior of the nodes can be set to e
 
 If you want to expand the nodes on a single click, then you need to set the __IsExpandOnSingleClickEnabled__ attribute to __True__. 
 
-#### __[XAML] Example 11: Allow expanding items on single click in XAML__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_13}}
+__Example 11: Allow expanding items on single click in XAML__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsExpandOnSingleClickEnabled="True">
-{{endregion}}
+```
 
-#### __[XAML] Example 11: Allow expanding items on double click in XAML__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_14}}
+__Example 11: Allow expanding items on double click in XAML__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsExpandOnDblClickEnabled="True">
-{{endregion}}
+```
 
-#### __[C#] Example 12: Allow expanding items on single and double click in code__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_15}}
+__Example 12: Allow expanding items on single and double click in code__
+```C#
 	private void ExpandOnSingleClick()
 	{
 	    radTreeView.IsExpandOnSingleClickEnabled = true;
@@ -233,16 +223,14 @@ If you want to expand the nodes on a single click, then you need to set the __Is
 	{
 	    radTreeView.IsExpandOnDblClickEnabled = true;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 12: Allow expanding items on single and double click in code__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_16}}
+```
+```VB.NET
 	Private Sub ExpandOnSingleClick()
 	    radTreeView.IsExpandOnSingleClickEnabled = True
 	End Sub Private Sub ExpandOnDoubleClick()
 	    radTreeView.IsExpandOnDblClickEnabled = True
 	End Sub
-{{endregion}}
+```
 
 > The default behavior of the __RadTreeView__ is to expand the items on double click.
 
@@ -250,14 +238,14 @@ If you want to expand the nodes on a single click, then you need to set the __Is
 
 __RadTreeView__ and __RadTreeViewItem__ classes has several events for managing the expanding and collapsing processes. The events are available both on the __RadTreeView__ and on the __RadTreeViewItem__ classes. 
 
-#### __[XAML] Example 13: Subscribing to expanding/collapsing events__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_17}}
+__Example 13: Subscribing to expanding/collapsing events__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView"
 						PreviewExpanded="radTreeView_PreviewExpanded"
 						Expanded="radTreeView_Expanded"
 						PreviewCollapsed="radTreeView_PreviewCollapsed"
 						Collapsed="radTreeView_Collapsed">
-{{endregion}}
+```
 
 The __PreviewExpanded__ event occurs when the treeview item is about to be expanded. The __Expanded__ event is fired when the treeview item is already expanded. The type of the passed event arguments for both of the events is __RadRoutedEventArgs__.
 
@@ -275,8 +263,8 @@ There are several ways to expand the treeview items. In general to do this you c
 	
 You can define a Style object that targets RadTreeViewItem and set the IsExpanded property to True. The style could be applied using the ItemContainerStyle property of RadTreeView or by making it an implicit style (no x:Key set).
 
-#### __[XAML] Example 14: Expanding all items via style (ItemContainerStyle)__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_18}}
+__Example 14: Expanding all items via style (ItemContainerStyle)__
+```XAML
 	<FrameworkElement.Resources>
 		<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
 			<Setter Property="IsExpanded" Value="True"/>
@@ -284,16 +272,16 @@ You can define a Style object that targets RadTreeViewItem and set the IsExpande
 	</FrameworkElement.Resources>
 	
 	<telerik:RadTreeView x:Name="radTreeView" ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-{{endregion}}
+```
 
-#### __[XAML] Example 15: Expanding all items via style (implicit style)__
-{{region radtreeview-feautres-treeviewitem-expanding-and-collapsing-items_20}}
+__Example 15: Expanding all items via style (implicit style)__
+```XAML
 	<FrameworkElement.Resources>
 		<Style TargetType="telerik:RadTreeViewItem">
 			<Setter Property="IsExpanded" Value="True"/>
 		</Style>
 	</FrameworkElement.Resources>		
-{{endregion}}
+```
 
 ## See Also
 

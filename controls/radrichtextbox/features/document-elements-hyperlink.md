@@ -21,8 +21,8 @@ The `HyperlinkInfo` class allows you to easily insert hyperlinks in the current 
 
 * `Target`&mdash;Determines if the link should be opened in another window (when set to `HyperlinkTargets.Blank`) or in the same frame (`HyperlinkTargets.Self`).
 
-#### __[C#] Inserting a hyperlink pointing to a web address__  
-{{region radrichtextbox-features-document-elements-hyperlink_0}}
+__Inserting a hyperlink pointing to a web address__  
+```C#
 	HyperlinkInfo info = new HyperlinkInfo()
 	{
 	    NavigateUri = "https://www.telerik.com/products/wpf/overview.aspx",
@@ -30,12 +30,12 @@ The `HyperlinkInfo` class allows you to easily insert hyperlinks in the current 
 	    IsAnchor = false
 	};
 	this.radRichTextBox.InsertHyperlink(info, "RichTextBox demo");
-{{endregion}}
+```
 
 To insert a hyperlink to a bookmark within the document, specify the bookmark's name as the `NavigateUri` and set the `IsAnchor` to `true`.
 
-#### __[C#] Inserting a hyperlink pointing to a bookmark in the document__  
-{{region radrichtextbox-features-document-elements-hyperlink_1}}  
+__Inserting a hyperlink pointing to a bookmark in the document__  
+```C#  
 	HyperlinkInfo info = new HyperlinkInfo()
 	{
 	   NavigateUri = "bookmark1",
@@ -43,7 +43,7 @@ To insert a hyperlink to a bookmark within the document, specify the bookmark's 
 	   IsAnchor = true
 	};
 	this.radRichTextBox.InsertHyperlink(info, "Link to Bookmark 1");
-{{endregion}}
+```
 
 The `InsertHyperlink` method provides the following overloads:         
 
@@ -53,10 +53,10 @@ The `InsertHyperlink` method provides the following overloads:
 
 To remove hyperlink from the document, position the caret within the hyperlink span and call the `RemoveHyperlink`.
 
-#### __[C#] Removing the hyperlink under the caret position__  
-{{region radrichtextbox-features-document-elements-hyperlink_2}}
+__Removing the hyperlink under the caret position__  
+```C#
 	this.radRichTextBox.RemoveHyperlink();
-{{endregion}}
+```
 
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
@@ -64,8 +64,8 @@ The `HyperlinkRangeStart` and `HyperlinkRangeEnd` are Inline DocumentElements an
 
 To add a hyperlink using this API, add the range start object and then pair it with the range end. The information about the hyperlink is stored in a `HyperlinkInfo` object assigned to the `HyperlinkRangeStart`. Then, the range objects are added to the `Paragraph`'s `Inlines` collection.
 
-#### __[C#] Adding a hyperlink that spans on multiple document elements__  
-{{region radrichtextbox-features-document-elements-hyperlink_3}}
+__Adding a hyperlink that spans on multiple document elements__  
+```C#
 	// creating the hyperlink range	
 	HyperlinkRangeStart hyperlinkStart = new HyperlinkRangeStart();
 	HyperlinkRangeEnd hyperlinkEnd = new HyperlinkRangeEnd();
@@ -95,7 +95,7 @@ To add a hyperlink using this API, add the range start object and then pair it w
 	section.Blocks.Add(anotherParagraph);
 	document.Sections.Add(section);	
 	this.radRichTextBox.Document = document;
-{{endregion}}
+```
 
 __The document created with the hyperlink range setup__  
 
@@ -103,8 +103,8 @@ __The document created with the hyperlink range setup__
 
 The `HyperlinkRangeStart` and `HyperlinkRangeEnd` objects are used also when accessing and modifying the hyperlinks from the document.
 
-#### __[C#] Deleting all hyperlinks in a document and replace them with text__  
-{{region radrichtextbox-features-document-elements-hyperlink_4}}
+__Deleting all hyperlinks in a document and replace them with text__  
+```C#
 	IEnumerable<HyperlinkRangeStart> links = this.radRichTextBox.Document.EnumerateChildrenOfType<HyperlinkRangeStart>();
 	foreach (HyperlinkRangeStart link in links)
 	{
@@ -113,16 +113,16 @@ The `HyperlinkRangeStart` and `HyperlinkRangeEnd` objects are used also when acc
 	    this.radRichTextBox.Delete(false);
 	    this.radRichTextBox.Insert("Removed hyperlink");
 	}
-{{endregion}}
+```
 
 ## Changing the Hyperlink ToolTip
 
 By default the hyperlink tooltip displays the navigation Uri along with the navigation mode (Ctrl+Click or Click only). To change format used to display this information, set the `HyperlinkToolTipFormatString` property of `RadRichTextBox`. This will set the format for all hyperlinks in the document.
 
-#### __[C#] Change the default hyperlink tooltip format__  
-{{region radrichtextbox-features-document-elements-hyperlink_6}}
+__Change the default hyperlink tooltip format__  
+```C#
 	<telerik:RadRichTextBox HyperlinkToolTipFormatString="{}Navigate to '{0}' by pressing {1}"/>
-{{endregion}}
+```
 
 [Showing the custom tooltip format](images/RadRichTextBox_Features_LayoutElements_Hyperlinks_HyperlinkToolTipFormatString.png)
 
@@ -133,10 +133,10 @@ The trigger that navigates to the corresponding Uri is controlled by the `Hyperl
 * `CtrlClick`&mdash;Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
 * `Click`&mdash;Triggers the hyperlink when users click on the hyperlink.
 
-#### __[C#] Change the default hyperlink navigation mode__  
-{{region radrichtextbox-features-document-elements-hyperlink_7}}
+__Change the default hyperlink navigation mode__  
+```C#
 	this.radRichTextBox.HyperlinkNavigationMode = Telerik.Windows.Documents.UI.HyperlinkNavigationMode.Click;
-{{endregion}}
+```
 
 ## Handling the Hyperlink Click Navigation
 
@@ -144,8 +144,8 @@ When a hyperlink is clicked, the `HyperlinkClicked` event of `RadRichTextBox` is
 
 The default hyperlink navigation can be cancelled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`.
 
-#### __[C#] Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
-{{region radrichtextbox-features-document-elements-hyperlink_8}}
+__Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
+```C#
 	private void RadRichTextBox_HyperlinkClicked(object sender, HyperlinkClickedEventArgs e)
 	{
 		var link = e.URL;
@@ -164,7 +164,7 @@ The default hyperlink navigation can be cancelled by setting the `Handled` prope
 			}
 		}
 	}
-{{endregion}}
+```
 
 With the 2024 Q4 release, the default navigation behavior of the hyperlinks is to automatically open only valid web or email addresses.
 

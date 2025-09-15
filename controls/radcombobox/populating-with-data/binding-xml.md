@@ -18,8 +18,8 @@ __The final result__
 
 1. Define the data source as XML content.
 
-	#### __[XML] Defining the XML data source__  
-	{{region radcombobox-populating-with-data-binding-xml_0}}
+	__Defining the XML data source__  
+	```XML
 		<?xml version="1.0" encoding="utf-8" ?>
 		<Items>
 			<XmlNodeItem Team="Barcelona" Country="Spain"/>
@@ -35,19 +35,19 @@ __The final result__
 			<XmlNodeItem Team="Ajax" Country="Holland"/>
 			<XmlNodeItem Team="Olimpic M" Country="France"/>
 		</Items>
-	{{endregion}}
+	```
 
 2. Add a new `RadComboBox` declaration in your XAML.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-xml_1}}
+	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" Width="200"/>
-	{{endregion}}
+	```
 
 3. Create a new class named `XmlNodeItem`. This class is pretty simple and it represents a separate node from the XML document. Its properties are `Team` and `Country`. Both of the properties are of type `string`.
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-xml_2}}
+	```C#
 		public class XmlNodeItem
 		{
 			[XmlAttribute( AttributeName = "Team" )]
@@ -56,10 +56,10 @@ __The final result__
 			[XmlAttribute( AttributeName = "Country" )]
 			public string Country { get; set; }
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-xml_3}}
+	```VB.NET
 		Public Class XmlNodeItem
 		Private _Team As String
 			<XmlAttribute(AttributeName = "Team")> _
@@ -83,12 +83,12 @@ __The final result__
 					End Set
 				End Property
 			End Class
-	{{endregion}}
+	```
 
 4. Create a new class named `XmlNodeItemList`, which derives from `ObservableCollection` of `XmlNodeItem`. This is a collection that will be created from the XML file. 
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-xml_4}}
+	```C#
 		[XmlRoot( ElementName = "Items" )]
 		public class XmlNodeItemList : ObservableCollection<XmlNodeItem>
 		{
@@ -100,10 +100,10 @@ __The final result__
 				}
 			}
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-xml_5}}
+	```VB.NET
 			<XmlRoot(ElementName = "Items")> _
 			Public Class XmlNodeItemList
 				Inherits ObservableCollection(Of XmlNodeItem)
@@ -113,12 +113,12 @@ __The final result__
 					Next
 				End Sub
 			End Class
-	{{endregion}}
+	```
 
 5. Create a new class named `RadComboBoxXmlDataSource`, which derives from `XmlNodeItemList`. The class takes a path to the XML file and deserializes the data in the private method `RetrieveData()`.
 
 	#### __C#__  
-	{{region radcombobox-populating-with-data-binding-xml_6}}
+	```C#
 		public class RadComboBoxXmlDataSource : XmlNodeItemList
 		{
 			private string source;
@@ -144,10 +144,10 @@ __The final result__
 				return list;
 			}
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__  
-	{{region radcombobox-populating-with-data-binding-xml_7}}
+	```VB.NET
 			Public Class RadComboBoxXmlDataSource
 				Inherits XmlNodeItemList
 				Private m_source As String
@@ -169,28 +169,28 @@ __The final result__
 					Return list
 				End Function
 			End Class
-	{{endregion}}
+	```
 
 6. The next step is to declare the `RadComboBoxXmlDataSource` as a resource in your application.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-xml_8}}
+	```XAML
 		<UserControl.Resources>
 			<example:RadComboBoxDataSource x:Key="DataSource"  Source="RadComboBoxBindingToXml.xml"/>
 		</UserControl.Resources>
-	{{endregion}}
+	```
 
 7. Update the `RadComboBox` declaration by setting the `ItemsSource` property.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-xml_9}}
+	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}}"/>
-	{{endregion}}
+	```
 
 8. Create a custom `DateTemplate` and set it to the `RadComboBox`'s `ItemTemplate` property. 
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-xml_10}}
+	```XAML
 		<DataTemplate x:Key="ComboBoxCustomTemplate">
 			<StackPanel Margin="5" Orientation="Horizontal">
 				<TextBlock Text="{Binding Team}" Foreground="Blue"/>
@@ -199,14 +199,14 @@ __The final result__
 				<TextBlock Text=")"/>
 			</StackPanel>
 		</DataTemplate>
-	{{endregion}}
+	```
 
 9. Update the ComboBox declaration by setting the `ItemTemplate` property.
 
 	#### __XAML__  
-	{{region radcombobox-populating-with-data-binding-xml_11}}
+	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}}" ItemTemplate="{StaticResource ComboBoxCustomTemplate}"/>
-	{{endregion}}
+	```
 
 __The final result__  
 

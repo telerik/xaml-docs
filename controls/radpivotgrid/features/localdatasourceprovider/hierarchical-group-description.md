@@ -14,8 +14,8 @@ The default behavior of the `PropertyGroupDescription` in `LocalDataSourceProvid
 
 The `LocalDataSourceProvider` supports also hierarchical (or chained) property paths. To enable this, set the `EnableHierarchy` property of `LocalDataSourceProvider` to `True`.
 
-#### __[C#] Defining a basic model to illustrate how the PropertyName relates to the underlying data item__
-{{region radpivotgrid-features-localdatasourceprovider-hierarchy-0}}
+__Defining a basic model to illustrate how the PropertyName relates to the underlying data item__
+```C#
 	public class Order
     {
         public Customer Customer { get; set; }        
@@ -37,10 +37,10 @@ The `LocalDataSourceProvider` supports also hierarchical (or chained) property p
         public string Name { get; set; }
         public string Industry { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML] Enabling hierarchical property paths and using nested property path__
-{{region radpivotgrid-features-localdatasourceprovider-hierarchy-1}}
+__Enabling hierarchical property paths and using nested property path__
+```XAML
 	<UserControl.Resources>
 		<!-- we can assume that the data source provider in this example is populated with a collection of Order objects -->
 		<pivot:LocalDataSourceProvider x:Key="dataProvider" EnableHierarchy="True">         
@@ -60,7 +60,7 @@ The `LocalDataSourceProvider` supports also hierarchical (or chained) property p
             </pivot:LocalDataSourceProvider.AggregateDescriptions>
 		</pivot:LocalDataSourceProvider>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 When `LocalDataSourceProvider` is linked to a [RadPivotFieldList]({%slug radpivotgrid-fieldlist%}), the corresponding properties hierarchy for the `PropertyGroupDescription` will be displayed in the fields list.
 

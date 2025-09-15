@@ -34,8 +34,8 @@ As the ValuePath property cannot be data bound what we need do instead is use th
 
 1. In the code-behind we need to create a StringToValuePathConverter like so:
 
-	#### __[C#]__
-	{{region  kb-chartview-bind-valuebinding-with-categoricalseriesdescriptor-0}}
+	
+	```C#
 		public class StringToValuePathConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -49,12 +49,12 @@ As the ValuePath property cannot be data bound what we need do instead is use th
             throw new NotImplementedException();
         }
     }
-	{{endregion}}
+	```
 	
 2.  In XAML use a ValueBinding property of a series with an IValueConverter. To do that  use the Style property of the CategoricalSeriesDescriptor like so:
 
-	#### __[C#]__
-	{{region  kb-chartview-bind-valuebinding-with-categoricalseriesdescriptor-1}}
+	
+	```C#
 		 <telerik:ChartSeriesProvider.SeriesDescriptors>
                                     <telerik:CategoricalSeriesDescriptor x:Name="seriesDescriptor" CategoryPath="ArchiveTime"        
                                                                  ItemsSourcePath="ChartItems">
@@ -65,4 +65,4 @@ As the ValuePath property cannot be data bound what we need do instead is use th
                                             </telerik:CategoricalSeriesDescriptor.Style>
                                     </telerik:CategoricalSeriesDescriptor>
 		</telerik:ChartSeriesProvider.SeriesDescriptors>
-	{{endregion}}
+	```

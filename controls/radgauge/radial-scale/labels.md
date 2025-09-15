@@ -14,8 +14,8 @@ Tick labels are shown for major tick marks. You can set label location around sc
 
 For the purpose of this tutorial the code snippet in __Example 1__ will be used.
 
-#### __[XAML] Example 1: RadialScale example__
-{{region radial-scale-labels_0}}
+__Example 1: RadialScale example__
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"
 	            MajorTicks="8"
@@ -23,7 +23,7 @@ For the purpose of this tutorial the code snippet in __Example 1__ will be used.
 	            MinorTicks="3">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ## Label Location
 
@@ -44,8 +44,8 @@ You can use the GaugeRange element on a radial scale to re-color labels automati
 
 ![{{ site.framework_name }} RadGauge RadRadialGauge Label Use Range Color](images/RadialScaleLabelRangeColor.png)
 
-#### __[XAML] Example 2: Set the LabelUseRangeColor property__
-{{region radial-scale-labels_1}}
+__Example 2: Set the LabelUseRangeColor property__
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"
 	                            LabelLocation="Inside"
@@ -63,14 +63,14 @@ You can use the GaugeRange element on a radial scale to re-color labels automati
 	        </telerik:RadialScale.Ranges>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ## Label Format
 
 To change the format of the labels, you can use the __LabelFormat__ property. __Example 3__ demonstrate how you could add a **%** symbol to the labels.
 
-#### __[XAML] Example 3: Set the LabelFormat property__
-{{region radial-scale-labels_1}}
+__Example 3: Set the LabelFormat property__
+```XAML
 	<telerik:RadRadialGauge Margin="20 20 20 10" telerik:StyleManager.Theme="Office2016">
 		<telerik:RadialScale Min="0" Max="100" Loaded="RadialScale_Loaded"
 			MajorTicks="8" 
@@ -78,7 +78,7 @@ To change the format of the labels, you can use the __LabelFormat__ property. __
 			MinorTicks="3"
 			LabelFormat="{}{0}%"/>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge RadRadialGauge Label Format](images/radial-scale-labels-label_format.png)
 
@@ -86,8 +86,8 @@ To change the format of the labels, you can use the __LabelFormat__ property. __
 
 In a scenario where you want to offset the labels in order to avoid overlaps for example, you can set the __LabelOffset__ property.
 
-#### __[XAML] Example 3: Set the LabelOffset property__
-{{region radial-scale-labels_1}}
+__Example 3: Set the LabelOffset property__
+```XAML
 	<telerik:RadRadialGauge Margin="20 20 20 10" telerik:StyleManager.Theme="Office2016">
 		<telerik:RadialScale Min="0" Max="100" Loaded="RadialScale_Loaded"
 							MajorTicks="8" 
@@ -95,7 +95,7 @@ In a scenario where you want to offset the labels in order to avoid overlaps for
 							MinorTicks="3" 
 							LabelOffset="80"/>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge Label Format Label Offset](images/radial-scale-labels-label_offset.png)
 

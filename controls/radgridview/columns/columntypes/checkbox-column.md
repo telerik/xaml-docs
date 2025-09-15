@@ -12,9 +12,9 @@ position: 3
 
 __GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and its content is represented by a __CheckBox__ for each row. The difference between it and __GridViewSelectColumn__ is that this one is meant to be bound. As opposed, __GridViewSelectColumn__ allows you to select the row through the CheckBox that it utilizes.
 
-#### __[XAML] Example 1: Declare a column of type GridViewCheckBoxColumn__
+__Example 1: Declare a column of type GridViewCheckBoxColumn__
 
-{{region xaml-gridview-checkbox-column_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                AutoGenerateColumns="False"
 					ItemsSource="{Binding Items}">
@@ -22,7 +22,7 @@ __GridViewCheckBoxColumn__ derives from __GridViewBoundColumnBase__ class and it
 	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsActive}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 #### __Figure 1: Declared CheckBox Column.__
 ![Rad Grid View Columns Check Box Column 01](images/RadGridView_Columns_CheckBoxColumn_01.png)
@@ -39,9 +39,9 @@ Here are the possible cases:
 
 3. __AutoSelectOnEdit="True"__, __EditTriggers="CellClick"__ - only one click is needed to change the value of the __CheckBox__. 
 
-#### __[XAML] Example 2: Change the value of the CheckBox with one click__
+__Example 2: Change the value of the CheckBox with one click__
 
-{{region xaml-gridview-checkbox-column_1}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                AutoGenerateColumns="False"
 					ItemsSource="{Binding Items}">
@@ -49,7 +49,7 @@ Here are the possible cases:
 	        <telerik:GridViewCheckBoxColumn DataMemberBinding="{Binding IsSelected}" AutoSelectOnEdit="True" EditTriggers="CellClick"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 > Since the __GridViewCheckBoxColumn__ is specially designed to dispay checkboxes, setting its __CellTemplate__, __CellEditTemplate__, __CellTemplateSelector__ and __CellEditTemplateSelector__ is not supported. For such requirements, you can use a [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}). How to style the templates is [described here](https://docs.telerik.com/devtools/wpf/controls/radgridview/styles-and-templates/columns-styling-checkboxcolumn).
 

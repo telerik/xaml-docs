@@ -60,8 +60,8 @@ Additionally, there are two more controls part of the Telerik UI for WPF suite w
 
 To set the theme to all controls in the application, merge the corresponding ResourceDictionary (__System.Windows.xaml__). This will ensure that the native controls used in the Telerik ones will have the correct theme applied. In this case, any instance of the native controls which is separately defined will also get the Telerik theme.		
 
-#### __[XAML] Merging the System.Windows.xaml file__ 
-{{region styling-apperance-themes-mscontrols-0}}
+__Merging the System.Windows.xaml file__ 
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -70,49 +70,49 @@ To set the theme to all controls in the application, merge the corresponding Res
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 To set the theme seprately per control, you can merge the System.Windows.xaml resource in the `Resources` dictionary of the corresponding control.
 
-#### __[XAML] Setting a theme per control using implicit styles__ 
-{{region styling-apperance-themes-mscontrols-1}}
+__Setting a theme per control using implicit styles__ 
+```XAML
 	<CheckBox Content="CheckBox">	
 		<CheckBox.Resources>
 			<ResourceDictionary Source="/Telerik.Windows.Themes.Office2013;component/Themes/System.Windows.xaml"/>
 		</CheckBox.Resources>
 	</CheckBox>
-{{endregion}}
+```
 
 To avoid applying the theme to a specific native control after the global theming setting (in the App.xaml `Resources`), you can set its Style property to an `Style` object without any `Setters`.
 
-#### __[XAML] Disabling the default theming__ 
-{{region styling-apperance-themes-mscontrols-2}}
+__Disabling the default theming__ 
+```XAML
 	<CheckBox Content="CheckBox">	
 		<CheckBox.Style>
 			<Style TargetType="CheckBox"/>
 		</CheckBox.Style>
 	</CheckBox>
-{{endregion}}
+```
 
 ## Setting the Theme Using StyleManager
 
 To set the theme per control, use the `StyleManager.Theme` attached property.
 
-#### __[XAML] Setting a theme per control using StyleManager__ 
-{{region styling-apperance-themes-mscontrols-3}}
+__Setting a theme per control using StyleManager__ 
+```XAML
  	<CheckBox Content="CheckBox" telerik:StyleManager.Theme="Windows11" />
-{{endregion}}
+```
 
 There is no global setting in the __StyleManager__ that will apply the theme to all WPF native controls in the view. But this can be done by defining an implicit Style definitions for the needed types and setting the `StyleManager.Theme` property there. 
 
-#### __[XAML] Setting the Telerik theme globally for all CheckBox controls in the view__ 
-{{region styling-apperance-themes-mscontrols-4}}
+__Setting the Telerik theme globally for all CheckBox controls in the view__ 
+```XAML
 	<Application.Resources>
 	 	<Style TargetType="CheckBox">
 			<Setter Property="telerik:StyleManager.Theme" Value="Windows11" />
 		</Style>
    	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also  
  * [Use StyleManager to Apply Theme on MS Controls]({%slug common-styling-themes-mscontrols%})

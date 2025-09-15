@@ -54,35 +54,35 @@ This help topic will make you familiar with the most important properties, setti
 	* Second
 	* Millisecond
 	
-#### __[XAML] Example 1: Setting the RadTimeline Intervals__
+__Example 1: Setting the RadTimeline Intervals__
 
-{{region xaml-radtimeline-properties_0}}
+```XAML
 	 <telerik:RadTimeline.Intervals>
 	       <telerik:CenturyInterval />
 	       <telerik:DecadeInterval />
 	       <telerik:YearInterval />
 	       <telerik:MonthInterval/>
 	  </telerik:RadTimeline.Intervals>
-{{endregion}}
+```
 
 * __IntervalSpans__:  It is used to group the given interval items together. __Example 2__ shows how you can group the seconds in groups of 10. __Example 3__ demonstrates that you can also set more than one *IntervalSpan* simultaneously by separating them with comma.
         
-#### __[XAML] Example 2: Setting the IntervalSpans__
+__Example 2: Setting the IntervalSpans__
 
-{{region radtimeline-properties_1}}
+```XAML
 	<telerik:RadTimeline.Intervals>
 	   <telerik:YearInterval IntervalSpans="10"/>
 	</telerik:RadTimeline.Intervals>
-{{endregion}}   
+```   
 
-#### __[XAML] Example 3: Setting multiple IntervalSpans__
+__Example 3: Setting multiple IntervalSpans__
 
-{{region radtimeline-properties_2}}
+```XAML
 	<telerik:RadTimeline.Intervals>
 	   <telerik:YearInterval IntervalSpans="1,5" />
 	   <telerik:MonthInterval IntervalSpans="1,6" />
 	</telerik:RadTimeline.Intervals>
-{{endregion}}
+```
 
 * __MinZoomRange__ and __MaxZoomRange__: These properties set the minimum and maximum range that the TimeLine can be zoomed.
 

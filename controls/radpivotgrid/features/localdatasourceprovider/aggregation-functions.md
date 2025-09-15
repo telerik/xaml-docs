@@ -119,25 +119,25 @@ Aggregate Function is defined on PropertyAggregateDescription. There is property
 
 #### __XAML__
 
-{{region radpivotgrid-features-aggregates_1}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="StdDevP" />
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-aggregates_1}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.PropertyName = "Price";
 	aggregate.AggregateFunction = AggregateFunctions.StdDevP;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-aggregates_1}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.PropertyName = "Price"
 	aggregate.AggregateFunction = AggregateFunctions.StdDevP
-{{endregion}}
+```
 
 You can change applied Aggregate Function at runtime by using __RadPivotFieldList__. Just find the aggregate description which you want to modify in the "Values" list and click on it - some of the aggregate functions are listed there, but if you don't see the one you need - click on "More aggregate Options..." item and a new dialog __RadWindow__ will open. In it you will find all predefined Aggregate Functions.
 

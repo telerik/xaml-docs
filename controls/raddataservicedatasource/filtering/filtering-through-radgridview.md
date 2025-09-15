@@ -18,7 +18,7 @@ If you bind __RadGridView.ItemsSource__ to __RadDataServiceDataSource.DataView__
 
 #### __XAML__
 
-{{region raddataservicedatasource-filtering-filtering-through-radgridview_0}}
+```XAML
 
 	<Grid x:Name="LayoutRoot" Background="White">
 	 <telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
@@ -30,7 +30,7 @@ If you bind __RadGridView.ItemsSource__ to __RadDataServiceDataSource.DataView__
 	      IsBusy="{Binding IsBusy, ElementName=customersDataSource}" 
 	    ShowGroupPanel="False"/>  
 	</Grid>
-{{endregion}}
+```
 
 
 

@@ -12,7 +12,7 @@ position: 24
 
 The `RadGridView` control provides the functionality to use a lightweight rendering mode for the cells' text, which boosts the performance. To enable this functionality, set the `EnableLightweightTextRendering` property of `RadGridView` to `true`. This alternative rendering will skip the creation of `TextBlock` elements that are used to display the cells' text. Instead, it will use a faster drawing API, which draws the cells in a separate panel.
 
-#### __[WPF] Enabling the lightweight rendering mode__
+__Enabling the lightweight rendering mode__
 {{region gridview-lightweight-text-rendering-0}}
     <telerik:RadGridView EnableLightweightTextRendering="True"
                          GroupRenderMode="Flat"/>

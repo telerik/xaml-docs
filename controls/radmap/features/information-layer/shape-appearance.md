@@ -29,7 +29,7 @@ In this approach you use the trivial properties provided by the framework such a
 Here is an example:       
 
 #### __XAML__
-{{region radmap-features-shape-appearance_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
 	        <telerik:MapEllipse x:Name="Ellipse"
@@ -42,7 +42,7 @@ Here is an example:
 	        </telerik:MapEllipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -57,7 +57,7 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 >These properties will take precedence over the trivial ones.
 
 #### __XAML__
-{{region radmap-features-shape-appearance_1}}
+```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
 	        <telerik:MapEllipse x:Name="Ellipse"
@@ -77,7 +77,7 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 	        </telerik:MapEllipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -95,7 +95,7 @@ You are also able to define the appearance of the shapes on the Information Laye
 The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object allows you not only to specify the fill color, but to modify the stroke as well. Here is an example:
 
 #### __XAML__
-{{region radmap-features-shape-appearance_2}}
+```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
 	        <telerik:InformationLayer.ShapeFill>
@@ -118,7 +118,7 @@ The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object all
 	        </telerik:MapEllipse>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

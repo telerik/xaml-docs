@@ -35,11 +35,11 @@ You can find the required assemblies for each control from the suite in the [Con
 
 __Example 1__ demonstrates how you can define a RadSyntaxEditor in XAML.
 
-#### __[XAML] Example 1: Defining RadSyntaxEditor__
-{{region xaml-radsyntaxeditor-getting-started-0}}
+__Example 1: Defining RadSyntaxEditor__
+```XAML
 
     <telerik:RadSyntaxEditor x:Name="syntaxEditor" />
-{{endregion}}
+```
 
 #### __Figure 1: Empty RadSyntaxEditor__
 ![Empty RadSyntaxEditor](images/syntaxeditor_getting-started-1.png)
@@ -48,8 +48,8 @@ __Example 1__ demonstrates how you can define a RadSyntaxEditor in XAML.
 
 To load a file in the RadSyntaxEditor you need to use its **Document** property.
 
-#### __[C#] Example 2: Opening a File__
-{{region cs-radsyntaxeditor-getting-started-1}}
+__Example 2: Opening a File__
+```C#
 
     public MainWindow()
     {
@@ -60,7 +60,7 @@ To load a file in the RadSyntaxEditor you need to use its **Document** property.
             this.syntaxEditor.Document = new TextDocument(reader);
         }
     }
-{{endregion}}
+```
 
 #### __Figure 2: RadSyntaxEditor with a loaded C# file__
 ![RadSyntaxEditor with a loaded CS file](images/syntaxeditor_getting-started-2.png)
@@ -69,12 +69,12 @@ To load a file in the RadSyntaxEditor you need to use its **Document** property.
 
 Once you have loaded the code, you need to register an appropriate tagger to enable syntax highlighting for the particular language.
 
-#### __[C#] Example 3: Enable C# code highlighting__
-{{region cs-radsyntaxeditor-getting-started-2}}
+__Example 3: Enable C# code highlighting__
+```C#
 
     var cSharptagger = new CSharpTagger(this.syntaxEditor);
     this.syntaxEditor.TaggersRegistry.RegisterTagger(cSharptagger);
-{{endregion}}
+```
 
 #### __Figure 3: RadSyntaxEditor with C# code highlighting__
 ![RadSyntaxEditor with C# code highlighting](images/syntaxeditor_getting-started-3.png)
@@ -98,8 +98,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region radsyntaxeditor-getting-started_7}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -110,7 +110,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

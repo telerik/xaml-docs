@@ -32,18 +32,18 @@ If you don't want your __RadGridView__ to be filterable, you just have to set th
 
 #### __XAML__
 
-{{region xaml-gridview-basic-filtering2_0}}
+```XAML
 	<telerik:RadGridView IsFilteringAllowed="True">
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 If you want to disable filtering only for a particular column, you can set its __IsFilterable__ property to __False__:
 
 #### __XAML__
 
-{{region xaml-gridview-basic-filtering2_1}}
+```XAML
 	<telerik:GridViewDataColumn IsFilterable="False"/>
-{{endregion}}
+```
 
 ## Events
 
@@ -57,30 +57,30 @@ The third one is the __FieldFilterEditorCreated__ and the forth it the __FilterO
 
 #### __XAML__
 
-{{region xaml-gridview-basic-filtering2_2}}
+```XAML
 	<telerik:RadGridView Filtering="radGridView_Filtering" Filtered="radGridView_Filtered"/>
-{{endregion}}
+```
 
 You are also able to cancel the filtering operation by setting the __Cancel__ property to __True__.
 ![Telerik {{ site.framework_name }} DataGrid Basic Filtering 2](images/RadGridView_BasicFiltering_2.png)     
 
 #### __C#__
 
-{{region cs-gridview-basic-filtering2_3}}
+```C#
 	private void radGridView_Filtering(object sender, GridViewFilteringEventArgs e)
 	{
 	    e.Cancel = true;
 	}
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-gridview-basic-filtering2_4}}
+```VB.NET
 	Private Sub radGridView_Filtering(ByVal sender As Object, ByVal e As GridViewFilteringEventArgs)
 	    e.Cancel = True
 	End Sub
-{{endregion}}
+```
 
 
 * Via the __GridViewFilteredEventArgs__ of the __Filtered__ event you can get the added or removed filter descriptors. Unlike the __Filtering__ event, you cannot cancel the filtering process from here.
@@ -92,7 +92,7 @@ In the event handler you can place some code that has to be executed when the da
 
 #### __C#__
 
-{{region cs-gridview-basic-filtering2_5}}
+```C#
 	private void radGridView_Filtered(object sender, GridViewFilteredEventArgs e)
 	{
 	    foreach (FilterDescriptor descriptor in e.Added)
@@ -106,11 +106,11 @@ In the event handler you can place some code that has to be executed when the da
 	        column.Background = new SolidColorBrush(Colors.Transparent);
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-basic-filtering2_6}}
+```VB.NET
 	Private Sub radGridView_Filtered(ByVal sender As Object, ByVal e As GridViewFilteredEventArgs)
 	    For Each descriptor As FilterDescriptor In e.Added
 	        Dim column As Telerik.Windows.Controls.GridViewColumn = FilteringGrid.Columns(descriptor.Member)
@@ -122,7 +122,7 @@ In the event handler you can place some code that has to be executed when the da
 	        column.Background = New SolidColorBrush(Colors.Transparent)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 Here is a snapshot of the final result.![Telerik {{ site.framework_name }} DataGrid Basic Filtering 4](images/RadGridView_BasicFiltering_4.png)
 
@@ -134,7 +134,7 @@ Here is a snapshot of the final result.![Telerik {{ site.framework_name }} DataG
 
 #### __C#__
 
-{{region cs-gridview-basic-filtering2_7}}
+```C#
 	private void clubsGrid_FilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
 	{
 	    if (e.AvailableOperators.Contains(FilterOperator.Contains))
@@ -142,17 +142,17 @@ Here is a snapshot of the final result.![Telerik {{ site.framework_name }} DataG
 	        e.DefaultOperator1 = FilterOperator.Contains;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-basic-filtering2_8}}
+```VB.NET
 	Private Sub clubsGrid_FilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
 	    If e.AvailableOperators.Contains(FilterOperator.Contains) Then
 	        e.DefaultOperator1 = FilterOperator.Contains
 	    End If
 	End Sub
-{{endregion}}
+```
 
 Here is a snapshot of the changed filter operator:
 

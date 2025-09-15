@@ -18,11 +18,11 @@ In order to enhance the functionality of the __RadMenu__ control, the __RadMenuI
 
 Here is an example of a definition of a checkable __RadMenuItem__:
 
-#### __[XAML] Example 1: Define a checkable menu item__
+__Example 1: Define a checkable menu item__
 
-{{region xaml-radmenu-features-checkable-items_0}}
+```XAML
 	<telerik:RadMenuItem Header="Status Bar" IsCheckable="True" />
-{{endregion}}
+```
 
 Upon clicking on the item it will get checked and the tick will appear as an icon for the item.
 
@@ -36,23 +36,23 @@ Upon clicking on the item it will get checked and the tick will appear as an ico
 
 As of **R1 2022**, the menu items also expose **CheckedIcon** and **CheckedIconTemplate** properties which you can use to replace the default checkmark glyph with your custom icon which is used when the item is checked.
 
-#### __[XAML] Example 2: Using a custom check icon__
+__Example 2: Using a custom check icon__
 
-{{region xaml-radmenu-features-checkable-items_1}}
+```XAML
 	<telerik:RadMenuItem IsCheckable="True" Header="Status Bar" CheckedIconTemplate="{x:Null}">
 		<telerik:RadMenuItem.CheckedIcon>
 			<Image Source="check-icon.png" Width="16" Height="16" Stretch="UniformToFill" />
 		</telerik:RadMenuItem.CheckedIcon>
 	</telerik:RadMenuItem>
-{{endregion}}
+```
 
 >important Note that you also need to set the **CheckedIconTemplate** to **null** to override the default icon.
 
 If you're generating the items [dynamically]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}), you can define the **CheckedIconTemplate** as shown in **Example 3**.
 
-#### __[XAML] Example 3: Setting the checked icon for dynamically generated items__
+__Example 3: Setting the checked icon for dynamically generated items__
 
-{{region xaml-radmenu-features-checkable-items_2}}
+```XAML
     <!-- If you are using the NoXaml binaries, you need to base the style on the default one for the theme like so:  
     <Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource RadMenuItemStyle}"> -->  
  
@@ -67,7 +67,7 @@ If you're generating the items [dynamically]({%slug radmenu-populating-with-data
             </Setter.Value>
         </Setter>
     </Style>
-{{endregion}}
+```
 
 ![Custom Checked Icon](images/RadMenu_Features_Checkable_Items_02.png)
 

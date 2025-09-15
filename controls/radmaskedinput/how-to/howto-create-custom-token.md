@@ -14,8 +14,8 @@ You can find a list of all built-in mask tokens that you can use when defining t
 
 In order to create a custom mask token, you need to define a new class that should implement the {% if site.site_name == 'Silverlight' %}[ ITokenValidationRule](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ ITokenValidationRule](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_itokenvalidationrule.html){% endif %} interface.				
 
-#### __[C#] Example 1: Creating custom class which inherits ITokenValidationRule interface__
-{{region cs-radmaskedinput-howto-create-custom-tokens-0}}
+__Example 1: Creating custom class which inherits ITokenValidationRule interface__
+```C#
 	using System.Linq;
 	using Telerik.Windows.Controls.MaskedInput.Tokens;
 
@@ -46,10 +46,8 @@ In order to create a custom mask token, you need to define a new class that shou
 			get { throw new NotImplementedException(); }
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating custom class which inherits ITokenValidationRule interface__
-{{region vb-radmaskedinput-howto-create-custom-tokens-0}}
+```
+```VB.NET
 	Public Class CustomToken
         Implements ITokenValidationRule
 
@@ -82,7 +80,7 @@ In order to create a custom mask token, you need to define a new class that shou
             End Get
         End Property
     End Class
-{{endregion}}	
+```	
 
 Then you can start configuring the custom token through the following properties:					
 
@@ -98,8 +96,8 @@ Then you can start configuring the custom token through the following properties
 
 * __ValidChars__ - this property is of type __string__ and it holds the string of characters that the mask token will represent.						
 
-#### __[C#] Example 2: Create CustomToken class__
-{{region cs-radmaskedinput-howto-create-custom-tokens-1}}
+__Example 2: Create CustomToken class__
+```C#
 	public class CustomToken : ITokenValidationRule
 	{
 		public bool IsRequired
@@ -124,10 +122,8 @@ Then you can start configuring the custom token through the following properties
 			get { return myValidChars; }
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Create CustomToken class__
-{{region vb-radmaskedinput-howto-create-custom-tokens-1}}
+```
+```VB.NET
 	Public Class CustomToken
 		Implements ITokenValidationRule
 		Public ReadOnly Property IsRequired() As Boolean Implements ITokenValidationRule.IsRequired
@@ -155,28 +151,26 @@ Then you can start configuring the custom token through the following properties
 			End Get
 		End Property
 	End Class
-{{endregion}}	
+```	
 When you define the properties that describe the custom token, you need to implement a logic that controls whether the entered character is valid for that custom token. This logic should be placed in the __IsValid()__ method, that should validate the user input to return a bool value.				
 
-#### __[C#] Example 3: Validating the entered character__
-{{region cs-radmaskedinput-howto-create-custom-tokens-2}}
+__Example 3: Validating the entered character__
+```C#
 	public bool IsValid(char ch)
 	{
 		return ValidChars.Contains(ch);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Validating the entered character__
-{{region vb-radmaskedinput-howto-create-custom-tokens-2}}
+```
+```VB.NET
 	Public Function IsValid(ByVal ch As Char) As Boolean
 		Return ValidChars.Contains(ch)
 	End Function
-{{endregion}}
+```
 
 Finally our custom token will have the following dеfinition: 
 
-#### __[C#] Example 4: Final custom token definition__
-{{region cs-radmaskedinput-howto-create-custom-tokens-3}}
+__Example 4: Final custom token definition__
+```C#
 	public class CustomToken : ITokenValidationRule
 	{
 		public bool IsRequired
@@ -201,10 +195,8 @@ Finally our custom token will have the following dеfinition:
 			get { return myValidChars; }
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Final custom token definition__
-{{region vb-radmaskedinput-howto-create-custom-tokens-3}}
+```
+```VB.NET
 	Public Class CustomToken
 		Implements ITokenValidationRule
 		Public ReadOnly Property IsRequired() As Boolean Implements ITokenValidationRule.IsRequired
@@ -232,14 +224,14 @@ Finally our custom token will have the following dеfinition:
 			End Get
 		End Property
 	End Class
-{{endregion}}	
+```	
 
 In order to use this custom token in the __MaskedInput__ controls, you have to add it in the __MaskedInput.Tokens__ using the {% if site.site_name == 'Silverlight' %}[ TokenLocator](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %}{% if site.site_name == 'WPF' %}[ TokenLocator](http://www.telerik.com/help/wpf/t_telerik_windows_controls_maskedinput_tokens_tokenlocator.html){% endif %} class {% if site.site_name == 'Silverlight' %}[ AddCustomValidationRule()](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %}{% if site.site_name == 'WPF' %}[ AddCustomValidationRule()](http://www.telerik.com/help/wpf/m_telerik_windows_controls_maskedinput_tokens_tokenlocator_addcustomvalidationrule.html){% endif %} method. This method takes as an argument an object of type __ITokenValidationRule__ so you can pass the custom token.				
 
 After the custom token is added in the Tokens collection of the __RadMaskedInput__ controls, you can use it in the __RadMaskedTextInput__ control definition:
 
-#### __[XAML] Example 5:  Defining RadMaskedTextInput control in XAML__
-{{region xaml-radmaskedinput-howto-create-custom-tokens-0}}
+__Example 5:  Defining RadMaskedTextInput control in XAML__
+```XAML
 	<Grid Background="White">
 	    <telerik:RadMaskedTextInput Width="200" 
 	                                Margin="20 20 20 10"
@@ -247,7 +239,7 @@ After the custom token is added in the Tokens collection of the __RadMaskedInput
 	                                VerticalAlignment="Center"
 	                                Mask="$$-$$$$-$$$$" />
 	</Grid>
-{{endregion}}
+```
 
 ![radmaskedinput-howto-create-custom-token](images/radmaskedinput-howto-create-custom-token.png)
 

@@ -29,17 +29,17 @@ RadSpreadsheet exposes several properties that enable you to control the way the
 **Example 1** and **Example 2** demonstrate how you could customize the properties of the selection in XAML and in code respectively to achieve the result shown in **Figure 1**. 
 
 #### **[XAML] Example 1: Customizing selection**
-{{region xaml-radspreadsheet-howto-customize-selection_0}}
+```XAML
 
 	<telerik:RadSpreadsheet x:Name="radSpreadsheet" SelectionStrokeThickness="2" SelectionStroke="Green">
 	    <telerik:RadSpreadsheet.SelectionFill>
 	        <SolidColorBrush Color="GreenYellow" Opacity="0.5" />
 	    </telerik:RadSpreadsheet.SelectionFill>
 	</telerik:RadSpreadsheet>
-{{endregion}}
+```
 
 #### **[C#] Example 2: Customizing selection**
-{{region cs-radspreadsheet-howto-customize-selection_1}}
+```C#
 
 	Brush strokeBrush = new SolidColorBrush(Colors.Green);
 	Brush fillBrush = new SolidColorBrush(Colors.GreenYellow);
@@ -48,10 +48,10 @@ RadSpreadsheet exposes several properties that enable you to control the way the
 	this.radSpreadsheet.SelectionFill = fillBrush;
 	this.radSpreadsheet.SelectionStroke = strokeBrush;
 	this.radSpreadsheet.SelectionStrokeThickness = 2;
-{{endregion}}
+```
 
 #### **[VB.NET] Example 2: Customizing selection**
-{{region vb-radspreadsheet-howto-customize-selection_2}}
+```VB.NET
 
 	Dim strokeBrush As Brush = New SolidColorBrush(Colors.Green)
 	Dim fillBrush As Brush = New SolidColorBrush(Colors.GreenYellow)
@@ -60,7 +60,7 @@ RadSpreadsheet exposes several properties that enable you to control the way the
 	Me.radSpreadsheet.SelectionFill = fillBrush
 	Me.radSpreadsheet.SelectionStroke = strokeBrush
 	Me.radSpreadsheet.SelectionStrokeThickness = 2
-{{endregion}}
+```
 
 
 ## See Also

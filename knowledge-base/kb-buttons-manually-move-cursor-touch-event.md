@@ -33,9 +33,9 @@ Using a device that supports both mouse and touch input, can cause the mouse to 
 
 Subscribe to the __TouchUp__ event of the __RadButton__ control, and use the __Win32 API__ to manually move the cursor away from the button.
 
-#### __[C#]__
 
-{{region kb-buttons-manually-move-cursor-0}}
+
+```C#
 	[DllImport("User32.dll")]
 	private static extern bool SetCursorPos(int X, int Y);
 
@@ -43,15 +43,12 @@ Subscribe to the __TouchUp__ event of the __RadButton__ control, and use the __W
 	{
 	    SetCursorPos(0, 0);
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-
-{{region kb-buttons-manually-move-cursor-1}}
+```
+```VB.NET
 	<DllImport("User32.dll")>
     Private Shared Function SetCursorPos(ByVal X As Integer, ByVal Y As Integer) As Boolean
 
     Private Sub RadNumericUpDown_TouchUp(ByVal sender As Object, ByVal e As TouchEventArgs)
         SetCursorPos(0, 0)
     End Sub
-{{endregion}}
+```

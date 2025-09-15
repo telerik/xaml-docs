@@ -52,9 +52,9 @@ More often than not, this is sufficient to get everything working. RadRichTextBo
 However, there are some cases when MEF cannot find the assemblies and load the types. One example is if you have enabled Library Caching or you are using Prism. In these cases, you can pass the types that RadRichTextBox uses in a TypeCatalog to RadCompositionInitializer as shown below:
         
 
-#### __[C#] Example 1: Defining the catalog of types used by RadRichTextBox__
+__Example 1: Defining the catalog of types used by RadRichTextBox__
 
-{{region radrichtextbox-troubleshooting-troubleshooting-common-problems_0}}
+```C#
 	RadCompositionInitializer.Catalog = new TypeCatalog(
 	    // format providers
 	    typeof(XamlFormatProvider),
@@ -106,7 +106,7 @@ However, there are some cases when MEF cannot find the assemblies and load the t
 	    typeof(UnprotectDocumentDialog),
 	    typeof(WatermarkSettingsDialog)
 	    );
-{{endregion}}
+```
 
 
 
@@ -137,14 +137,14 @@ The exception is reproducible only in scenarios with heavy usage of new threads.
 
 #### **[C#] Example 2: Shut down Dispatcher of a thread**
 
-{{region radrichtextbox-troubleshooting-common-problems_1}}
+```C#
 
     Thread thread = new Thread(() =>
     {
         // Thread logic
         System.Windows.Threading.Dispatcher.CurrentDispatcher.BeginInvokeShutdown(System.Windows.Threading.DispatcherPriority.Normal);
     });
-{{endregion}}
+```
 
 ## See Also
 

@@ -33,8 +33,8 @@ How to display shorthand number values in the axis labels. For example, instead 
 
 To achieve this effect, use the `LabelTemplate` property of the chart axis. This will allow you to implement an `IValueConverter` and use it in the template, to convert from the standard numeric value to the shorthand variation.
 
-#### __[C#]__
-{{region kb-chartview-axis-label-number-suffix-0}}
+
+```C#
 	public class ShorthandNumberConverter : IValueConverter
     {
         private const double OneTrillion = 1000000000000;
@@ -69,23 +69,23 @@ To achieve this effect, use the `LabelTemplate` property of the chart axis. This
             throw new NotImplementedException();
         }
     }
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-chartview-axis-label-number-suffix-1}}
+
+```XAML
 	<Window.Resources>
 		<local:ShorthandNumberConverter x:Key="ShorthandNumberConverter"/>
 		<DataTemplate x:Key="CustomAxisLabelTemplate">
 			<TextBlock Text="{Binding Converter={StaticResource ShorthandNumberConverter}}" />
 		</DataTemplate>
 	</Window.Resources>
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-chartview-axis-label-number-suffix-2}}
+
+```XAML
 	<telerik:RadCartesianChart.VerticalAxis>
 		<telerik:LinearAxis LabelTemplate="{StaticResource CustomAxisLabelTemplate}"/>
 	</telerik:RadCartesianChart.VerticalAxis>
-{{endregion}}
+```
 
 ![Shorthand converted labels](images/kb-chartview-axis-label-number-suffix-0.png)

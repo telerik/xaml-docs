@@ -20,13 +20,13 @@ __RadTreeView__ API gives you the ability to define images for each item state (
 Suppose that your business object has a property of type string, which stores the path to the image. This property will be bound to the DefaultImageSrc property of the RadTreeViewItem. The easiest way to bind the image path property of the business object to the RadTreeViewItem's DefaultImageSrc property is to define the binding in a style. See the code snippet below:
 
 #### __XAML__
-{{region radtreeview-howto-bind-treeview-image-source-property-0}}
+```XAML
 	<Style x:Key="ItemContainerStyle" TargetType="telerik:RadTreeViewItem">
 		<Setter Property="DefaultImageSrc" Value="{Binding Path=ImagePath}"/>
 	</Style>
 	....
 	<telerik:RadTreeView x:Name="radTreeView" ItemContainerStyle="{StaticResource ItemContainerStyle}"/>
-{{endregion}}
+```
 	
 # Using Style Selectors
 

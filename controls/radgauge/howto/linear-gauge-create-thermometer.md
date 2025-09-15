@@ -22,8 +22,8 @@ To get Fahrenheit scale show correspondent temperature we should start it at the
 
 At the beginning we should add simple linear gauge with single scale. Since we would like to show Celsius labels at the left of scale bar and Fahrenheit labels at the right we'll add a TextBlock as custom item.
 
-#### __[XAML] Example 1: Define the Celsius VerticalLinearScale__
-{{region linear-gauge-create-thermometer_0}}
+__Example 1: Define the Celsius VerticalLinearScale__
+```XAML
 	<telerik:RadVerticalLinearGauge Width="24" Height="327" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Name="linearScaleC"
 	            Min="-30"
@@ -55,12 +55,12 @@ At the beginning we should add simple linear gauge with single scale. Since we w
 	        </telerik:VerticalLinearScale.CustomItems>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 We'll need a unified look for our Celsius and Fahrenheit labels and scales:
 
-#### __[XAML] Example 2: Setting the Celsius and Fahrenheit labels and scales__
-{{region linear-gauge-create-thermometer_1}}
+__Example 2: Setting the Celsius and Fahrenheit labels and scales__
+```XAML
 	<telerik:Windows8Colors x:Key="Windows8Colors" />
 	<SolidColorBrush x:Key="AccentBrush" Color="{Binding Source={StaticResource Windows8Colors}, Path=Palette.AccentColor}" />
 	<SolidColorBrush x:Key="StrongBrush" Color="{Binding Source={StaticResource Windows8Colors}, Path=Palette.StrongColor}" />
@@ -74,12 +74,12 @@ We'll need a unified look for our Celsius and Fahrenheit labels and scales:
 	    <Setter Property="Fill" Value="Transparent" />
 	    <Setter Property="Stroke" Value="Transparent" />
 	</Style>
-{{endregion}}
+```
 
 We'll add two Custom Items (for the thermometer bulb) that should give our gauge a look of thermometer:
 
-#### __[XAML] Example 3: Setting the CustomItems property__
-{{region linear-gauge-create-thermometer_2}}
+__Example 3: Setting the CustomItems property__
+```XAML
 	<telerik:VerticalLinearScale.CustomItems>
 	    <Path Data="M5.5,-276.2 L18.5,-276.2 L18.5,25.51 L18.88,25.78 C21.68,27.88 23.5,31.23 23.5,35 C23.5,41.35 18.35,46.5 12,46.5 C5.65,46.5 0.5,41.35 0.5,35 C0.5,31.23 2.32,27.88 5.12,25.78 L5.5,25.51 z" 
 	            Stretch="Fill" Stroke="#FF767676"
@@ -97,7 +97,7 @@ We'll add two Custom Items (for the thermometer bulb) that should give our gauge
 					Text="&#176;C"
 	                Style="{StaticResource CustomLabel}"/>
 	</telerik:VerticalLinearScale.CustomItems>
-{{endregion}}
+```
 
 Now our scale looks as following:
 
@@ -105,8 +105,8 @@ Now our scale looks as following:
 
 The next step is to add the second Fahrenheit linear scale and a linear bar indicator. 
 
-#### __[XAML] Example 4: Define the Fahrenheit VerticalLinearScale__
-{{region linear-gauge-create-thermometer_3}}
+__Example 4: Define the Fahrenheit VerticalLinearScale__
+```XAML
 	<telerik:RadVerticalLinearGauge Width="24" Height="327" telerik:StyleManager.Theme="Windows8">
 		<telerik:VerticalLinearScale Name="linearScaleF"
 								RelativeY="0.05"
@@ -161,12 +161,12 @@ The next step is to add the second Fahrenheit linear scale and a linear bar indi
 				</telerik:VerticalLinearScale.CustomItems>
 		</telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 The final step is to combine the two __VerticalLinearScale (Celsius and Fahrenheit)__ elements. The final code should look like in __Example 5__.
  
-#### __[XAML] Example 5: Final code__
-{{region linear-gauge-create-thermometer_4}}
+__Example 5: Final code__
+```XAML
 	<telerik:RadVerticalLinearGauge Width="24" Height="327" telerik:StyleManager.Theme="Windows8">
 		<telerik:VerticalLinearScale Name="linearScaleC"
 									Min="-30"
@@ -267,7 +267,7 @@ The final step is to combine the two __VerticalLinearScale (Celsius and Fahrenhe
 			</telerik:VerticalLinearScale.CustomItems>
 		</telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Voilà! The thermometer gauge with all styles applied should look like the following: 
 

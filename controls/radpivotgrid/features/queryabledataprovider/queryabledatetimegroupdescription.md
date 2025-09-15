@@ -24,19 +24,19 @@ __QueryableDateTimeGroupDescription__ is used when you want to group your data b
 
 When you have a property of type DateTime (DateTimeOffset), you can create several QueryableDateTimeGroupDescription with different steps. You may also create a QueryablePropertyGroupDescription - this way the DateTime will be treated as a string and grouped as such. All of them can be used simultaneously. You can add the description in RowGroupDescriptions or ColumnGroupDescriptions collections of QueryableDataSourceProvider.
 
-#### __[XAML] Example 1: Adding multiple group descriptions in xaml__
+__Example 1: Adding multiple group descriptions in xaml__
 
-{{region xaml-radpivotgrid-features-queryabledatetimegroupdescription_0}}
+```XAML
 	<pivot:QueryableDataProvider.RowGroupDescriptions>
 	    <pivot:QueryableDateTimeGroupDescription PropertyName="Date" Step="Quarter"/>
 	    <pivot:QueryableDateTimeGroupDescription PropertyName="Date" Step="Month" />
 	    <pivot:QueryablePropertyGroupDescription PropertyName="Date"/>
 	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Adding multiple group descriptions in code__
+__Example 2: Adding multiple group descriptions in code__
 
-{{region cs-radpivotgrid-features-queryabledatetimegroupdescription_1}}
+```C#
 	QueryableDateTimeGroupDescription dateTimeGroupDescription1 = new QueryableDateTimeGroupDescription();
 	dateTimeGroupDescription1.PropertyName = "Date";
 	dateTimeGroupDescription1.Step = DateTimeStep.Quarter;
@@ -50,11 +50,8 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1);
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2);
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Adding multiple group descriptions in code__
-
-{{region vb-radpivotgrid-features-queryabledatetimegroupdescription_2}}
+```
+```VB.NET
 	Dim dateTimeGroupDescription1 As New QueryableDateTimeGroupDescription()
 	dateTimeGroupDescription1.PropertyName = "Date"
 	dateTimeGroupDescription1.Step = DateTimeStep.Quarter
@@ -68,7 +65,7 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1)
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2)
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription)
-{{endregion}}
+```
 
 ## Modify FieldTree of RadPivotFieldList
 
@@ -80,27 +77,25 @@ That said, you can set four more steps in code or xaml - Week, Hour, Minute, Sec
 
 	__Examples 3 and 4__ below demonstrate how the GetDescriptionsDataAsyncCompleted event can be handled in xaml and code respectively. __Example 5__ demonstrate a sample implementation of the event handler that shows the Week, Hour, Minute and Second steps for a property named "Date".
 
-	#### __[XAML] Example 3: Handling the GetDescriptionsDataAsyncCompleted event in xaml__
-	{{region xaml-radpivotgrid-features-queryabledatetimegroupdescription_3}}
+	__Example 3: Handling the GetDescriptionsDataAsyncCompleted event in xaml__
+	```XAML
 		<pivot:QueryableDataProvider>
 				<pivot:QueryableDataProvider.FieldDescriptionsProvider>
 					<pivot:QueryableFieldDescriptionsProvider GetDescriptionsDataAsyncCompleted="FieldDescriptionsProvider_GetDescriptionsDataAsyncCompleted" />
 				</pivot:QueryableDataProvider.FieldDescriptionsProvider>
 		</pivot:QueryableDataProvider>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 4: Handling the GetDescriptionsDataAsyncCompleted event in code__
-	{{region cs-radpivotgrid-features-queryabledatetimegroupdescription_4}}
+	__Example 4: Handling the GetDescriptionsDataAsyncCompleted event in code__
+	```C#
 		(this.PivotGrid.DataProvider as QueryableDataProvider).FieldDescriptionsProvider.GetDescriptionsDataAsyncCompleted += FieldDescriptionsProvider_GetDescriptionsDataAsyncCompleted;
-	{{endregion}}
-
-	#### __[VB.NET] Example 4: Handling the GetDescriptionsDataAsyncCompleted event in code__
-	{{region vb-radpivotgrid-features-queryabledatetimegroupdescription_5}}
+	```
+```VB.NET
 		TryCast(Me.PivotGrid.DataProvider, QueryableDataProvider).FieldDescriptionsProvider.GetDescriptionsDataAsyncCompleted 
-	{{endregion}}
+	```
 
-	#### __[C#] Example 5: Showing the additional steps__
-	{{region cs-radpivotgrid-features-queryabledatetimegroupdescription_6}}
+	__Example 5: Showing the additional steps__
+	```C#
 		private void FieldDescriptionsProvider_GetDescriptionsDataAsyncCompleted(object sender, Telerik.Pivot.Core.Fields.GetDescriptionsDataCompletedEventArgs e)
 			{
 				// The code below assumes that there is a DateTime property called "Date"
@@ -128,10 +123,8 @@ That said, you can set four more steps in code or xaml - Week, Hour, Minute, Sec
 					}
 				}
 			}
-	{{endregion}}
-
-	#### __[VB.NET] Example 5: Showing the additional steps__
-	{{region vb-radpivotgrid-features-queryabledatetimegroupdescription_7}}
+	```
+```VB.NET
 		Private Sub FieldDescriptionsProvider_GetDescriptionsDataAsyncCompleted(ByVal sender As Object, ByVal e As Telerik.Pivot.Core.Fields.GetDescriptionsDataCompletedEventArgs)
 				' The code below assumes that there is a DateTime property called "Date"
 				Dim dateTimeNodes = e.DescriptionsData.RootFieldInfo.Children.Where(Function(n) n.Caption = "Date").FirstOrDefault().Children
@@ -153,14 +146,14 @@ That said, you can set four more steps in code or xaml - Week, Hour, Minute, Sec
 					End If
 				Next dateTimeNode
 		End Sub
-	{{endregion}}
+	```
 
 * Create a custom __QueryableFieldDescriptionsProvider__.
 
 	__Example 6__ demonstrates how to create a custom QueryableFieldDescriptionsProvider and ovveride its __GetFieldDescriptionHierarchy__ method in order to show the additional steps. __Examples 7 and 8__ demonstrate how to use the created class by setting it to the __FieldDescriptionsProvider__ property of the QueryableDataProvider.
 
-	#### __[C#] Example 6: Custom QueryableFieldDescriptionsProvider__
-	{{region cs-radpivotgrid-features-queryabledatetimegroupdescription_8}}
+	__Example 6: Custom QueryableFieldDescriptionsProvider__
+	```C#
 		public class CustomQueryableFieldDescriptionsProvider : QueryableFieldDescriptionsProvider
 		{
 			protected override ContainerNode GetFieldDescriptionHierarchy(IEnumerable<IPivotFieldInfo> fieldInfos)
@@ -194,10 +187,8 @@ That said, you can set four more steps in code or xaml - Week, Hour, Minute, Sec
 				return hierarchy;
 			}
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 6: Custom QueryableFieldDescriptionsProvider__
-	{{region vb-radpivotgrid-features-queryabledatetimegroupdescription_9}}
+	```
+```VB.NET
 		Public Class CustomQueryableFieldDescriptionsProvider
 		Inherits QueryableFieldDescriptionsProvider
 
@@ -226,26 +217,24 @@ That said, you can set four more steps in code or xaml - Week, Hour, Minute, Sec
 				Return hierarchy
 			End Function
 		End Class
-	{{endregion}}
+	```
 
-	#### __[XAML] Example 7: Using the CustomQueryableFieldDescriptionsProvider in xaml__
-	{{region xaml-radpivotgrid-features-queryabledatetimegroupdescription_9}}
+	__Example 7: Using the CustomQueryableFieldDescriptionsProvider in xaml__
+	```XAML
 		<pivot:QueryableDataProvider>
 			<pivot:QueryableDataProvider.FieldDescriptionsProvider>
 				<local:CustomQueryableFieldDescriptionsProvider/>
 			</pivot:QueryableDataProvider.FieldDescriptionsProvider>
 		</pivot:QueryableDataProvider>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 8: Using the CustomQueryableFieldDescriptionsProvider in code__
-	{{region cs-radpivotgrid-features-queryabledatetimegroupdescription_10}}
+	__Example 8: Using the CustomQueryableFieldDescriptionsProvider in code__
+	```C#
 		(this.PivotGrid.DataProvider as QueryableDataProvider).FieldDescriptionsProvider = new CustomQueryableFieldDescriptionsProvider();
-	{{endregion}}
-
-	#### __[VB.NET] Example 8: Using the CustomQueryableFieldDescriptionsProvider in code__
-	{{region vb-radpivotgrid-features-queryabledatetimegroupdescription_11}}
+	```
+```VB.NET
 		TryCast(Me.PivotGrid.DataProvider, QueryableDataProvider).FieldDescriptionsProvider = New CustomQueryableFieldDescriptionsProvider()
-	{{endregion}}
+	```
 
 ## See Also
 

@@ -29,8 +29,8 @@ How to display a tooltip showing a datetime on mouse location in the eventspanel
 3. Create a tooltip and set its PlacementTarget to the EventsPanel. The tooltip will be opened/closed in the MouseEnter/MouseLeave events and its Content and position will changed in the MouseMove event.
 4. Introduce logic that translates the mouse coordinates to a datetime as demonstrated in the following example. Note, that the logic will be different depending on whether the VisibleRange of the RadGanttView is set or not.
 
-#### __[C#]__
-{{region cs-kb-ganttview-show-datetime-tooltip-in-eventspanel-0}}
+
+```C#
 	public partial class MainWindow : Window
     {
         private RadToolTip tooltip = new RadToolTip();
@@ -120,10 +120,10 @@ How to display a tooltip showing a datetime on mouse location in the eventspanel
 
             return gantt.VisibleRange.Start.AddTicks((long)tickOnPoint);
         }
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region xaml-kb-ganttview-show-datetime-tooltip-in-eventspanel-1}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding}">
             <telerik:RadGanttView.Columns>
                 <telerik:TreeColumnDefinition Header="Title" Width="AutoHeaderAndContent"/>
@@ -131,4 +131,4 @@ How to display a tooltip showing a datetime on mouse location in the eventspanel
                 <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
             </telerik:RadGanttView.Columns>
         </telerik:RadGanttView>
-{{endregion}}
+```

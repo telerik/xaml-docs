@@ -16,9 +16,9 @@ RadPropertyGrid now supports editing bit flag enum by exposing a new editor – 
 
 You can define flag enum by setting __FlagsAttribute__ as follows:
 
-#### __[C#] Defining flag enum__
+__Defining flag enum__
 
-	{{region cs-radpropertygrid-flagenumeditor_0}}
+	```C#
 	[Flags]
 	public enum Permissions
 	{
@@ -26,18 +26,15 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 	    Write = 2,
 	    Execute = 4
 	}
-{{endregion}}
-
-#### __[VB.NET] Defining flag enum__
-
-	{{region vb-radpropertygrid-flagenumeditor_0}}
+```
+```VB.NET
 	<Flags()>
 	Public Enum Permissions
 	    Read = 1
 	    Write = 2
 	    Execute = 4
 	End Enum
-{{endregion}}
+```
 
 Each element should contain name and a value (which should be degree of 2 – 1, 2, 4, 8, 16, etc.).
 
@@ -49,9 +46,9 @@ Once you define your flag enum, you can edit it in RadPropertyGrid as follows:
 
 Furthermore, if you define zero and -1 values in your flag enum (meaning no flags are set and all flags are set correspondingly), you can benefit from the built-in functionality for selecting and unselecting the elements of the enum:
 
-#### __[C#] Defining the flag enum__
+__Defining the flag enum__
 
-	{{region cs-radpropertygrid-flagenumeditor_1}}
+	```C#
 	[Flags]
 	public enum PermissionsAllNone
 	{
@@ -61,11 +58,8 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 	    Write = 2,
 	    Execute = 4
 	}
-{{endregion}}
-
-#### __[VB.NET] Defining the flag enum__
-
-	{{region vb-radpropertygrid-flagenumeditor_1}}
+```
+```VB.NET
 	<Flags()>
 	Public Enum PermissionsAllNone
 	    All = -1
@@ -74,15 +68,15 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 	    Write = 2
 	    Execute = 4
 	End Enum
-{{endregion}}
+```
 
 >Do not define values with 0 and -1 values if you do not mean to use them as select no flag and select all flags.
 
 You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 
-#### __[XAML] Defining the FlagEnumEditor__
+__Defining the FlagEnumEditor__
 
-	{{region xaml-radpropertygrid-flagenumeditor_2}}
+	```XAML
 	<telerik:PropertyDefinition Binding="{Binding Permission}">
 	    <telerik:PropertyDefinition.EditorTemplate>
 	        <DataTemplate>
@@ -90,7 +84,7 @@ You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 	        </DataTemplate>
 	    </telerik:PropertyDefinition.EditorTemplate>
 	</telerik:PropertyDefinition>
-{{endregion}}
+```
 
 Thus the __FlagEnumEditor__ will look like this:
 
@@ -102,9 +96,9 @@ Thus the __FlagEnumEditor__ will look like this:
 
 As of **R2 2022 SP1**, the `FlagEnumEditor` control supports the `Display` and `Description` attributes which let you specify user-friendly and/or localizable strings for the enum values used in the user interface.
 
-#### __[C#] Using the Display and Description attributes__
+__Using the Display and Description attributes__
 
-{{region cs-radpropertygrid-flagenumeditor_3}}
+```C#
     [Flags]
     public enum Permissions
     {
@@ -118,11 +112,8 @@ As of **R2 2022 SP1**, the `FlagEnumEditor` control supports the `Display` and `
         [Description("Exe")]
         Execute = 4
     }
-{{endregion}}
-
-#### __[VB.NET] Using the Display and Description attributes__
-
-{{region vb-radpropertygrid-flagenumeditor_3}}
+```
+```VB.NET
 	<Flags>
 	Public Enum Permissions
 		All = -1
@@ -134,7 +125,7 @@ As of **R2 2022 SP1**, the `FlagEnumEditor` control supports the `Display` and `
 		<Display(Name := "Executing")><Description("Exe")>
 		Execute = 4
 	End Enum
-{{endregion}}
+```
 
 ![Enum Values from the Display and Description attributes](images/RadPropertyGrid_FlagEnumEditor_6.png)
 

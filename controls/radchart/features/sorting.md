@@ -36,43 +36,43 @@ Here is an example of implementing sorting.
 
 #### __XAML__
 
-{{region xaml-radchart-features-sorting_0}}
+```XAML
 	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
-{{endregion}}
+```
 
 
 
 #### __XAML__
 
-{{region xaml-radchart-features-sorting_1}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SortDescriptors>
 	        <telerik:ChartSortDescriptor Member="Quantity" SortDirection="Ascending" />
 	    </telerik:RadChart.SortDescriptors>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-sorting_2}}
+```C#
 	ChartSortDescriptor descriptor = new ChartSortDescriptor();
 	descriptor.Member = "Title";
 	descriptor.SortDirection = ListSortDirection.Ascending;
 	this.radChart.SortDescriptors.Add(descriptor);
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-sorting_3}}
+```VB.NET
 	Dim descriptor As New ChartSortDescriptor()
 	descriptor.Member = "Title"
 	descriptor.SortDirection = ListSortDirection.Ascending
 	Me.radChart.SortDescriptors.Add(descriptor)
-{{endregion}}
+```
 
     
 Here is a snapshot of the result.

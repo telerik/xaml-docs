@@ -32,8 +32,8 @@ How to avoid raising validation when the Add button of RadDataForm gets clicked.
 
 Create a custom __DataFormCommandProvider__ and override its __AddNew__ method. In the method call only the __AddNewItem__ method of RadDataForm.
 
-#### __[C#]__
-{{region kb-dataform-avoid-raise-validatingitem-on-add-item-0}}
+
+```C#
 	public class CustomCommandProvider : DataFormCommandProvider
 	{
 		public CustomCommandProvider() : base(null)
@@ -53,14 +53,14 @@ Create a custom __DataFormCommandProvider__ and override its __AddNew__ method. 
 			}
 		}
 	}
-{{endregion}}
+```
 
 Then assign the custom provider to the __CommandProvider__ property of RadDataForm.
 
-#### __[C#]__
-{{region kb-dataform-avoid-raise-validatingitem-on-add-item-2}}
+
+```C#
 	this.radDataForm.CommandProvider = new CustomCommandProvider(this.radDataForm);
-{{endregion}}
+```
 
 ## See Also  
 * [Customizing Commands]({%slug raddataform-customize-commands%})

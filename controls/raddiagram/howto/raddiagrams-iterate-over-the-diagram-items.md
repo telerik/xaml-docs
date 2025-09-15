@@ -27,21 +27,21 @@ Below you can see a description of the 3 collections:
 Here you can see a possible way to iterate the Shapes or Connection of the RadDiagram:
 
 #### __C#__
-{{region raddiagrams-howto-iterate-over-the-diagram-items-0}}
+```C#
 	this.diagram.Shapes.ToList().ForEach(x =>
 	{
 	  //your custom logic goes here
 	  (x as RadDiagramShape).Content = "Shape";
 	});
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region raddiagrams-howto-iterate-over-the-diagram-items-1}}
+```VB.NET
 	Me.diagram.Shapes.ToList().ForEach(Function(x)
 		'your custom logic goes here'
 		TryCast(x, RadDiagramShape).Content = "Shape"
 	End Function)
-{{endregion}}
+```
 
 ## Extension Methods
 
@@ -54,20 +54,20 @@ The __RadDiagram__ exposes two extension methods which you can use to iterate th
 In order to take advatnage of these methods you need to add a using statement for the __Telerik.Windows.Diagrams.Core__ namespace in your code-behind file. Then you'll be able to access both methods through a __RadDiagram__ instance:		
 
 #### __C#__
-{{region raddiagrams-howto-iterate-over-the-diagram-items-2}}
+```C#
     using Telerik.Windows.Diagrams.Core;
     ...
     xDiagram.GetOutgoingConnectionsForShape(shape);
     xDiagram.GetIncomingConnectionsForShape(shape);
-{{endregion}}
+```
 
 #### __VB.NET__	
-{{region raddiagrams-howto-iterate-over-the-diagram-items-3}}
+```VB.NET
     Imports Telerik.Windows.Diagrams.Core
     ...
     xDiagram.GetOutgoingConnectionsForShape(shape)
     xDiagram.GetIncomingConnectionsForShape(shape)		  
-{{endregion}}
+```
 	
 ## See Also
  * [Create Custom Shape]({%slug raddiagram-howto-create-custom-shape%})

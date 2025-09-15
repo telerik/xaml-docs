@@ -16,53 +16,53 @@ RadCardView filtering control can be customized in order to match the expected d
 
 To hide the button that opens the [filtering control popup]({%slug radcardview-visual-structure%}), set the __IsFilteringAllowed__ property to __False__. 
 
-#### __[XAML] Example 1: Setting the IsFilteringAllowed property__
-{{region radcardview-appearance-customizing-filtering-control-0}}
+__Example 1: Setting the IsFilteringAllowed property__
+```XAML
 	<telerik:RadCardView IsFilteringAllowed="False" />
-{{endregion}}
+```
 
 #### Figure 1: Hidden filtering control icon
 ![{{ site.framework_name }} RadCardView Hidden filtering control icon](images/radcardview-appearance-customizing-filtering-control-0.png)
 
 To keep the filtering control popup open when you click outside of it, set the __FilteringDropDownStaysOpen__ property to __True__.
 
-#### __[XAML] Example 2: Setting the FilteringDropDownStaysOpen property__
-{{region radcardview-appearance-customizing-filtering-control-1}}
+__Example 2: Setting the FilteringDropDownStaysOpen property__
+```XAML
 	<telerik:RadCardView FilteringDropDownStaysOpen="True" />
-{{endregion}}
+```
 
 To change the visibility of the __Filter__ button in the popup, set the __ShowFilterButton__ property of the associated [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}).
 
-#### __[XAML] Example 3: Setting the ShowFilterButton property__
-{{region radcardview-appearance-customizing-filtering-control-2}}
+__Example 3: Setting the ShowFilterButton property__
+```XAML
 	<telerik:RadCardView.DataFieldDescriptors>
 		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" ShowFilterButton="False"/>
 	</telerik:RadCardView.DataFieldDescriptors>
-{{endregion}}
+```
 
 #### Figure 2: Hidden filtering button
 ![{{ site.framework_name }} RadCardView Hidden filtering button](images/radcardview-appearance-customizing-filtering-control-1.png)
 
 To change the visibility of the distinct values list from the popup, set the __ShowDistinctFilters__ property of the associated CardDataFieldDescriptor.
 
-#### __[XAML] Example 4: Setting the ShowDistinctFilters property__
-{{region radcardview-appearance-customizing-filtering-control-3}}
+__Example 4: Setting the ShowDistinctFilters property__
+```XAML
 	<telerik:RadCardView.DataFieldDescriptors>
 		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" ShowDistinctFilters="False"/>
 	</telerik:RadCardView.DataFieldDescriptors>
-{{endregion}}
+```
 
 #### Figure 3: Hidden the distinct values list
 ![{{ site.framework_name }} RadCardView Hidden the distinct values list](images/radcardview-appearance-customizing-filtering-control-2.png)
 
 To change the visibility of the field filters in the popup, set the __ShowFieldFilters__ property of the associated CardDataFieldDescriptor.
 
-#### __[XAML] Example 5: Setting the ShowFieldFilters property__
-{{region radcardview-appearance-customizing-filtering-control-4}}
+__Example 5: Setting the ShowFieldFilters property__
+```XAML
 	<telerik:RadCardView.DataFieldDescriptors>
 		<telerik:CardDataFieldDescriptor DataMemberBinding="{Binding Name}" ShowFieldFilters="False"/>
 	</telerik:RadCardView.DataFieldDescriptors>
-{{endregion}}
+```
 
 #### Figure 4: Hidden the field filters
 ![{{ site.framework_name }} RadCardView Hidden the field filters](images/radcardview-appearance-customizing-filtering-control-3.png)
@@ -71,8 +71,8 @@ To change the visibility of the field filters in the popup, set the __ShowFieldF
 
 The UI filters are hosted in a __FilteringControl__ element. To get or replace the control, use the __FilteringControl__ property of the associated [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}). The value assigned to the property should implement the `IFilteringControl` interface or alternatively the `FilteringControl` class can be used as a base for the implementation.
 
-#### __[C#] Example 6: Creating custom FilteringControl and changing few of the default settings__
-{{region radcardview-appearance-customizing-filtering-control-5}}
+__Example 6: Creating custom FilteringControl and changing few of the default settings__
+```C#
 	public class CustomFilteringControl : FilteringControl
     {
         public CustomFilteringControl(CardDataFieldDescriptor cardDataFieldDescriptor)
@@ -90,10 +90,10 @@ The UI filters are hosted in a __FilteringControl__ element. To get or replace t
             viewModel.SelectAll = true;
         }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 7: Setting the custom FilteringControl__
-{{region radcardview-appearance-customizing-filtering-control-6}}
+__Example 7: Setting the custom FilteringControl__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -101,21 +101,21 @@ The UI filters are hosted in a __FilteringControl__ element. To get or replace t
 		var descriptor = this.cardView.DataFieldDescriptors[0];
 		descriptor.FilteringControl = new CustomFilteringControl(descriptor);
 	}
-{{endregion}}
+```
 
 #### Figure 5: Customized FiltertingControl
 ![{{ site.framework_name }} RadCardView Customized FiltertingControl](images/radcardview-appearance-customizing-filtering-control-4.png)
 
 The UI of the __FilteringControl__ can be customized using the __FilteringControlStyle__ property of the CardDataFieldDescriptor.
 
-#### __[C#] Example 8: Setting the custom FilteringControlStyle__
-{{region radcardview-appearance-customizing-filtering-control-7}}
+__Example 8: Setting the custom FilteringControlStyle__
+```C#
 	<telerik:CardDataFieldDescriptor.FilteringControlStyle>		
 		<Style TargetType="cardView:FilteringControl">
 			<Setter Property="Background" Value="LightSeaGreen" />
 		</Style>
 	</telerik:CardDataFieldDescriptor.FilteringControlStyle>
-{{endregion}}
+```
 
 The "cardView:" namespace points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`
 

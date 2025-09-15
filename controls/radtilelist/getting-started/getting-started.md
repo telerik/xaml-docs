@@ -43,23 +43,23 @@ You can find the required assemblies for each control from the suite in the {% i
 * Add RadTileList as demonstrated below:
 {% if site.site_name == 'Silverlight' %}
 
-#### __[XAML] Example 1: Defining RadTileList__
+__Example 1: Defining RadTileList__
 
-{{region xaml-radtilelist-getting-started_0}}
+```XAML
 	<telerik:RadTileList x:Name="TileList1">
 	  <telerik:Tile/>
 	</telerik:RadTileList>
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __[XAML] Example 1: Defining RadTileList__
+__Example 1: Defining RadTileList__
 
-{{region xaml-radtilelist-getting-started_1}}
+```XAML
 	<telerik:RadTileList>
 	  <telerik:Tile/>
 	</telerik:RadTileList>
-{{endregion}}
+```
 
 {% endif %}
 
@@ -67,25 +67,25 @@ Two lines of code are important here:
 
 * The import of the __Telerik schema__:
 
-#### __[XAML] Example 2: Importing the Telerik schema__
+__Example 2: Importing the Telerik schema__
 
-{{region xaml-radtilelist-getting-started_2}}
+```XAML
 	<!--xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"-->
-{{endregion}}
+```
 
 
 
 * The declaration of the __RadTileList__ control inside the Grid:
 
-#### __[XAML] Example 3: Declaring RadTileList inside a Grid container__
+__Example 3: Declaring RadTileList inside a Grid container__
 
-{{region xaml-radtilelist-getting-started_3}}
+```XAML
 	<Grid Background="White">
 	  <telerik:RadTileList >
 	    <telerik:Tile/>
 	  </telerik:RadTileList>
 	</Grid>
-{{endregion}}
+```
 
 
 
@@ -139,8 +139,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radtilelist-getting-started_7}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -149,7 +149,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

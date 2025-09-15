@@ -32,8 +32,8 @@ How to validate the `Value` property of the `RadNumericUpDown` control on custom
 
 To achieve this functionality, you can implement the [IDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-7.0) interface in your view model. 
 
-#### __[C#] Implementing IDataErrorInfo interface__
-{{region kb-numericupdown-validation-idataerrorinfo-0}}
+__Implementing IDataErrorInfo interface__
+```C#
     public class NumericUpDownViewModel : ViewModelBase, IDataErrorInfo
     {
     	private double numericUpDownValue;
@@ -83,10 +83,8 @@ To achieve this functionality, you can implement the [IDataErrorInfo](https://le
             return null;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Implementing IDataErrorInfo interface__
-{{region kb-numericupdown-validation-idataerrorinfo-1}}
+```
+```VB.NET
     Public Class NumericUpDownViewModel
         Inherits ViewModelBase
         Implements IDataErrorInfo
@@ -132,12 +130,12 @@ To achieve this functionality, you can implement the [IDataErrorInfo](https://le
             Return Nothing
         End Function
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Binding the Value property of RadNumericUpDown__
-{{region kb-numericupdown-validation-idataerrorinfo-2}}
+__Binding the Value property of RadNumericUpDown__
+```XAML
     <telerik:RadNumericUpDown Value="{Binding NumericUpDownValue, Mode=TwoWay, ValidatesOnDataErrors=True}" UpdateValueEvent="PropertyChanged"/>
-{{endregion}}
+```
 
 >important In order for the RadNumericUpDown control to show its `Validation.ErrorTemplate` when an error occurs, set the `ValidatesOnDataErrors` property of the `Binding` instance to __True__.
 

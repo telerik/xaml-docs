@@ -26,9 +26,9 @@ We will go through the following sections:
 
 The default Style could be extracted from the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder. Go into the __Themes.Implicit__ folder and select the theme that you have chosen to use. Drill down to find the Telerik.Windows.Controls.Navigation.xaml file in the directory that corresponds to your theme. From this resource dictionary extract the __RadialMenuButtonStyle__ and copy it into your project. __Example 1__ shows the expected result:        
 
-#### __[XAML] Example 1: Extracting the default Style__
+__Example 1: Extracting the default Style__
 
-{{region xaml-radradialmenu-styles-and-templates-styling-radialmenubutton_0}}
+```XAML
 	<UserControl.Resources>
 	    <Style x:Key="RadialMenuButtonStyle" TargetType="telerik:RadialMenuButton">
 	        <Setter Property="BorderThickness" Value="2"/>
@@ -66,7 +66,7 @@ The default Style could be extracted from the UI for {% if site.site_name == 'Si
 	        </Setter>
 	    </Style>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 Note the __ContentTemplate__ and __BackContentTemplate__ properties inside the __RadialMenuButtonStyle__ - they are used depending on the state of the __RadialMenuButton__ - in its normal state the __ContentTemplate__ is used, while in the cases when the __RadialMenuButton__ is used to navigate to parent items, __BackContentTemplate__ is applied.      
 
@@ -76,9 +76,9 @@ In this section we will change the __ContentTemplate__ as well as __BackContentT
 
 We will need to create a new Style based on the default __RadialMenuButtonStyle__ only with the changed properties. __Example 2__ demonstrates the approach.      
 
-#### __[XAML] Example 2: Custom ContentTemplate and BackContentTemplate__
+__Example 2: Custom ContentTemplate and BackContentTemplate__
 
-{{region xaml-radradialmenu-styles-and-templates-styling-radialmenubutton_1}}
+```XAML
 	<Style TargetType="telerik:RadialMenuButton" BasedOn="{StaticResource RadialMenuButtonStyle}">
 	    <Setter Property="Background" Value="#FF00B7E0" />
 	    <Setter Property="ContentTemplate">
@@ -96,7 +96,7 @@ We will need to create a new Style based on the default __RadialMenuButtonStyle_
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 __Figure 1__ shows the final result.      
 

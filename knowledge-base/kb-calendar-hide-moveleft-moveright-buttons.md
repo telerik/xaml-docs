@@ -33,8 +33,8 @@ How to hide the forward and backward buttons in RadCalendar.
 1. Subscribe to the `Loaded` event of RadCalendar.
 2. Use the `ChildrenOfType<T>` extension method to get the RepeatButton controls representing the move-left and move-right buttons. The `ChildrenOfType<T>` method is defined in the `Telerik.Windows.Controls.ChildrenOfTypeExtensions` class.
 
-#### __[C#]__
-{{region kb-calendar-hide-moveleft-moveright-buttons-0}}
+
+```C#
 	private void RadCalendar_Loaded(object sender, RoutedEventArgs e)
 	{
 		var calendar = (RadCalendar)sender;
@@ -44,18 +44,18 @@ How to hide the forward and backward buttons in RadCalendar.
 		moveLeftButton.Visibility = Visibility.Collapsed;
 		moveRightButton.Visibility = Visibility.Collapsed;
 	}
-{{endregion}}
+```
 
 ## Solution 2
 
 After __R3 2019__, you can use the __PreviousButtonVisibility__ and __NextButtonVisibility__ properties of the __RadCalendar__.
 
-#### __[XAML]__
-{{region kb-calendar-hide-moveleft-moveright-buttons-1}}
+
+```XAML
 	<Grid>
         	<telerik:RadCalendar NextButtonVisibility="Hidden"/>
     	</Grid>
-{{endregion}}
+```
 
 
 ## See Also

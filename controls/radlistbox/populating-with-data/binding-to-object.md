@@ -24,17 +24,17 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 
 * Add a new __RadListBox__ declaration in your XAML:    	
 
-#### __[XAML]  Declaring RadListBox__
+__Declaring RadListBox__
 
-{{region xaml-radlistbox-populating-with-data-binding-to-object_0}}
+```XAML
 	<telerik:RadListBox x:Name="radListBox" Width="300" />
-{{endregion}}
+```
 
 * Create a new business object named Customer. Its structure is shown on the next code-snippet:
 
-#### __[C#]  Business object implementation__
+__Business object implementation__
 
-{{region cs-radlistbox-populating-with-data-binding-to-object_1}}
+```C#
 	public class Customer
 	{
 		public string Name { get; set; }
@@ -47,15 +47,15 @@ In order to bind a __RadListBox__ to a collection of business objects, you shoul
 			this.Phone = phone;
 		}
 	}
-{{endregion}}
+```
 
 The __RadListBox__ control will be bound to an ObservableCollection of Customer objects.
 
 * Create a new class named __CustomerViewModel__. In fact, this will be the data source for the listbox. This class has only one purpose - to initialize a collection with sample data.    	
 
-#### __[C#]  ViewModel__
+__ViewModel__
 
-{{region cs-radlistbox-populating-with-data-binding-to-object_2}}
+```C#
 	public class CustomerViewModel
 	{
 		public ObservableCollection<Customer> Customers { get; set; }
@@ -72,34 +72,34 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 			};
 		}
 	}
-{{endregion}}
+```
 
 * Declare the __CustomerViewModel__ as a resource in your XAML:    		
 
-#### __[XAML]  Declaring the ViewModel as resource__
+__Declaring the ViewModel as resource__
 
-{{region xaml-radlistbox-populating-with-data-binding-to-object_3}}
+```XAML
 	  <UserControl.Resources>
 	    <example:CustomerViewModel x:Key="CustomerViewModel" />
 	  </UserControl.Resources>
-{{endregion}}
+```
 
 * Update your __RadListBox__ declaration and its __ItemsSource__ property:    		
 
-#### __[XAML]  Setting the ItemsSource__
+__Setting the ItemsSource__
 
-{{region xaml-radlistbox-populating-with-data-binding-to-object_4}}
+```XAML
 	<telerik:RadListBox x:Name="radListBox1" Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}" />
-{{endregion}}
+```
 
 ## Using Custom ItemTemplate
 
 * The final step is to create a custom __DataTemplate__ and set it to the __RadListBox__'s __ItemTemplate__ property.
 
-#### __[XAML]  Declaring the ItemTemplate__
+__Declaring the ItemTemplate__
 
-{{region xaml-radlistbox-populating-with-data-binding-to-object_5}}
+```XAML
 	<DataTemplate x:Key="ListBoxCustomTemplate">
 	  <Grid Margin="0" Width="300">
 	    <Grid.ColumnDefinitions>
@@ -119,17 +119,17 @@ The __RadListBox__ control will be bound to an ObservableCollection of Customer 
 	                Text="{Binding Phone}" />
 	  </Grid>
 	</DataTemplate>
-{{endregion}}
+```
 
 * Update your __RadListBox__ declaration and set its __ItemTemplate__ property like in the example below:           	
 
-#### __[XAML]  Setting the ItemTemplate__
+__Setting the ItemTemplate__
 
-{{region xaml-radlistbox-populating-with-data-binding-to-object_6}}
+```XAML
 	<telerik:RadListBox Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			ItemTemplate="{StaticResource ListBoxCustomTemplate}"/>
-{{endregion}}
+```
 
 Run your demo, the end result is shown on the snapshot below:
 
@@ -141,13 +141,13 @@ Instead of creating a custom __ItemTemplate__, an alternative approach is to use
 
 For example, instead of setting the __ItemTemplate__, set the __RadListBox__'s __DisplayMemberPath__ property to point the Name property of the Customer object.
 
-#### __[XAML]  Setting the DisplayMemberPath__
+__Setting the DisplayMemberPath__
 
-{{region xaml-radlistbox-populating-with-data-binding-to-object_7}}
+```XAML
 	<telerik:RadListBox Width="300" 
 			ItemsSource="{Binding Customers, Source={StaticResource CustomerViewModel}}"
 			DisplayMemberPath="Name"/>
-{{endregion}}
+```
 
 The end result is shown on the next snapshot:
 

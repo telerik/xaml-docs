@@ -15,8 +15,8 @@ position: 0
 
 You can implement drag and drop functionality by integrating RadGridView with [DragDropManager]({%slug dragdropmanager-overview%}). The following snippet demonstrates how this can be achieved via an [attached behavior]({%slug common-mvvm-attached-behavior%}). The full demo can be reviewed in the [Drag and Drop within RadGridView]({%slug dragdropmanager-howto-draganddrop-within-radgridview%}) article of the **DragDropManager** documentation or in the **Drag And Drop Within RadGridView** demo from the [SDK Samples Browser](https://demos.telerik.com/xaml-sdkbrowser/).
 
-#### __[C#] Example 1: Implementing an Attached Behavior for the Drag and Drop Operations__
-{{region cs-how-to-drag-and-drop-within-radgridview_0}}	
+__Example 1: Implementing an Attached Behavior for the Drag and Drop Operations__
+```C#	
 	public class RowReorderBehavior
 	{
 	    private const string DropPositionFeedbackElementName = "DragBetweenItemsFeedback";
@@ -372,7 +372,7 @@ You can implement drag and drop functionality by integrating RadGridView with [D
 	        return grid;
 	    }
 	}
-{{endregion}}
+```
 
 ## See Also
 

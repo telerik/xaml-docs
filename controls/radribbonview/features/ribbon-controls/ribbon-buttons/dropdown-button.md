@@ -17,12 +17,12 @@ The __RadRibbonDropDownButton__ represents an extension of the __RadDropDownButt
 Here is a sample definition of a __RadRibbonDropDownButton__ without having any drop down content defined:			
 
 #### __XAML__
-{{region radribbonview-dropdown-button_0}}
+```XAML
 	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
 	                                 Size="Large"
 	                                 SmallImage="Icons/16/paste.png"
 	                                 Text="Paste" />
-{{endregion}}
+```
 
 >tip As all buttons in the RadRibbonView's set slightly expose the same functionality, take a look at the [Overview]({%slug radribbonview-buttons-overview%}) topic.			
 
@@ -34,7 +34,7 @@ This button has its initial size set to __Large__ and its text label set to __"P
 To set the popup content you have to simply set the __DropDownContent__ property of the button. Here is an example of a __RadRibbonDropDownButton__ with three menu items inside its drop down.				
 
 #### __XAML__
-{{region radribbonview-dropdown-button_1}}
+```XAML
 	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
 	                                 Size="Large"
 	                                 SmallImage="Icons/16/paste.png"
@@ -59,7 +59,7 @@ To set the popup content you have to simply set the __DropDownContent__ property
 	        </telerik:RadContextMenu>
 	    </telerik:RadRibbonDropDownButton.DropDownContent>
 	</telerik:RadRibbonDropDownButton>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadRibbonView DropDown Button Content](images/RibbonView_Buttons_DropDownButton_DDContent.png)
 
@@ -74,7 +74,7 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 * __DropDownOpened__ - fires after the popup area has been opened.					
 
 #### __XAML__
-{{region radribbonview-dropdown-button_2}}
+```XAML
 	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
 	                                 ...
 	                                 DropDownClosed="RadRibbonDropDownButton_DropDownClosed"
@@ -82,10 +82,10 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	                                 DropDownOpening="RadRibbonDropDownButton_DropDownOpening">
 	 ...
 	</telerik:RadRibbonDropDownButton>
-{{endregion}}
+```
 
 #### __C#__
-{{region radribbonview-dropdown-button_3}}
+```C#
 	private void RadRibbonDropDownButton_DropDownClosed(object sender, RoutedEventArgs e)
 	{
 	}
@@ -95,10 +95,10 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	private void RadRibbonDropDownButton_DropDownOpening(object sender, RoutedEventArgs e)
 	{
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radribbonview-dropdown-button_4}}
+```VB.NET
 	Private Sub RadRibbonDropDownButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
 	End Sub
 	
@@ -107,7 +107,7 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	
 	Private Sub RadRibbonDropDownButton_DropDownOpening(sender As Object, e As RoutedEventArgs)
 	End Sub
-{{endregion}}
+```
 
 ## See Also
  * [Styling the RadRibbonDropDownButton]({%slug radribbonview-styling-ribbondropdownbutton%})

@@ -72,7 +72,7 @@ As it was mentioned above all __RadRibbonButtons__ derive from the base button c
 Here is an example of a __RadRibbonButton__ with the following properties set.		
 
 #### __XAML__
-{{region radribbonview-buttons-overview_0}}
+```XAML
 	<telerik:RadRibbonButton CollapseToMedium="Never" 
 	                         CollapseToSmall="WhenGroupIsMedium"
 	                         IsAutoSize="True"
@@ -80,7 +80,7 @@ Here is an example of a __RadRibbonButton__ with the following properties set.
 	                         Size="Large"
 	                         SmallImage="Icons/16/Equation.png"
 	                         Text="Equation" />
-{{endregion}}
+```
 
 This button has its initial size set to __Large__ and its text label set to __"Equation"__. As the __IsAutoSize__ property is set to __True__, the button will change its size depending on the __RadRibbonGroup's__ size. The button will also never collapse to its __Medium__ size and will collapse to its Small size when the __RadRibbonGroup__ collapses to __Medium__. 
 ![{{ site.framework_name }} RadRibbonView Large Group Buttons](images/RibbonView_Buttons_Overview_LargeGroup.png)
@@ -96,32 +96,32 @@ There are two ways to implement a custom logic upon a button click - via event h
 The first one is the standard way. You have to attach an event handler to the __Click__ event of the button.		
 
 #### __XAML__
-{{region radribbonview-buttons-overview_1}}
+```XAML
 	<telerik:RadRibbonButton CollapseToMedium="Never" 
 	                         ...
 	                         Text="Equation" 
 	                         Click="RadRibbonButton_Click"/>
-{{endregion}}
+```
 
 #### __C#__
-{{region radribbonview-buttons-overview_2}}
+```C#
 	private void RadRibbonButton_Click(object sender, RoutedEventArgs e)
 	{
 	 //place your custom logic here.
 	}
-	{{endregion}}
+	```
 
 #### __VB.NET__
-{{region radribbonview-buttons-overview_3}}
+```VB.NET
 	Private Sub RadRibbonButton_Click(sender As Object, e As RoutedEventArgs)
 		'place your custom logic here.'
 	End Sub
-{{endregion}}
+```
 
 The other way is to set the __Command__ property to a certain command. Here is an example of the command defined in the code-behind file of your UserControl. In order to create a command you have to create a static read-only instance of {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls.RoutedUICommand__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls.RoutedUICommand__{% endif %} and then add execute and you can execute event handlers to the {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls.CommandManager__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls.CommandManager__{% endif %} class.		
 
 #### __C#__
-{{region radribbonview-buttons-overview_4}}
+```C#
 	public partial class RibbonButtonsSample : UserControl
 	{
 	   public static readonly RoutedUICommand EquationCommand = new RoutedUICommand(
@@ -143,10 +143,10 @@ The other way is to set the __Command__ property to a certain command. Here is a
 	       e.CanExecute = true;
 	   }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radribbonview-buttons-overview_5}}
+```VB.NET
 	Public Partial Class RibbonButtonsSample
 		Inherits UserControl
 			Public Shared ReadOnly EquationCommand As New RoutedUICommand("Equation", "EquationCommand", GetType(RibbonButtonsSample))
@@ -164,17 +164,17 @@ The other way is to set the __Command__ property to a certain command. Here is a
 			End Sub
 	
 	End Class
-{{endregion}}
+```
 
 After that set the __Command__ property of the __RadRibbonButton__ to the {% if site.site_name == 'Silverlight' %}full qualified path to the command. {% endif %}{% if site.site_name == 'WPF' %}static command defined in code behind. {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
-{{region radribbonview-buttons-overview_6}}
+```XAML
 	<telerik:RadRibbonButton Text="Equation"
 	                                 ...
 	                        Command="Samples.RibbonButtonsSample.EquationCommand" />
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
@@ -195,7 +195,7 @@ __RadRibbonView__ allows you to additionally organize your buttons with common f
 The next example shows you how to use __RadButtonGroup__.		
 
 #### __XAML__
-{{region radribbonview-buttons-overview_7}}
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonTab Header="Home">
 	        <telerik:RadRibbonGroup Header="Font">
@@ -215,7 +215,7 @@ The next example shows you how to use __RadButtonGroup__.
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadRibbonView Button Group](images/RibbonView_Buttons_Overview_ButtonGroup.png)
 

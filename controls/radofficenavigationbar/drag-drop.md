@@ -12,8 +12,8 @@ position: 7
 
 `RadOfficeNavigationBar` provides you with the ability to reorder its items by dragging and dropping them at a desired position. By default, this functionality is disabled. To turn it on, set the `IsDragReorderEnabled` property of RadOfficeNavigationBar to __True__. Also, set the `DragDropManager.AllowCapturedDrag` attached property on each `RadOfficeNavigationBarItem` element.
 
-#### __[XAML] Enabling the drag and drop functionality__
-{{region radofficenavigationbar-drag-drop-0}}
+__Enabling the drag and drop functionality__
+```XAML
     <telerik:RadOfficeNavigationBar x:Name="radOfficeNavigationBar" IsDragReorderEnabled="True">
         <telerik:RadOfficeNavigationBar.ItemContainerStyle>
             <!--Set BasedOn property if NoXaml assemblies are used: BasedOn="{StaticResource RadOfficeNavigationBarItemStyle}"-->
@@ -27,7 +27,7 @@ position: 7
             <telerik:RadOfficeNavigationBarItem Content="People"/>
         </telerik:RadOfficeNavigationBar.Items>
     </telerik:RadOfficeNavigationBar>
-{{endregion}}
+```
 
 __RadOfficeNavigationBar with enabled drag and drop functionality__
 

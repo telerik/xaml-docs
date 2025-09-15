@@ -25,7 +25,7 @@ Currently __RadMap__ provides 2 colorizers out-of-the-box:
 To use the __ColorMeasureScale__ object in a layer, just set the __Colorizer__ property of the respective layer to a new instance of it. Here is an example.
         
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:EmptyProvider />
@@ -36,7 +36,7 @@ To use the __ColorMeasureScale__ object in a layer, just set the __Colorizer__ p
 			</telerik:VisualizationLayer.Colorizer>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## Extended Data Property
 
@@ -47,7 +47,7 @@ The __ColorMeasureScale__ object colors the __MapShapeData__ objects inside a la
 For purposes of this example we will use __world.shp__ ESRI shape file. The extended data for the shapes from this file contains “SQKM” property which represents area of the country in square kilometers. Here is an example, in which the __MapShapeData__ objects get colored depending on the value of the country area.
         
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_1}}
+```XAML
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:EmptyProvider />
@@ -61,7 +61,7 @@ For purposes of this example we will use __world.shp__ ESRI shape file. The exte
 			</telerik:VisualizationLayer.Reader>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 >The property specified through the __ExtendedPropertyName__ should be of type __Double__.          
 
@@ -84,7 +84,7 @@ The __ColorMeasureScale__ splits the values passed through its __ExtendedPropert
 Here is an example of a __ColorMeasureScale__ with 7 ranges:
         
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_2}}
+```XAML
 	<telerik:RadMap x:Name="radMap" ZoomLevel="1">
 		<telerik:RadMap.Provider>
 			<telerik:EmptyProvider />
@@ -100,12 +100,12 @@ Here is an example of a __ColorMeasureScale__ with 7 ranges:
 			</telerik:VisualizationLayer.Reader>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 The following example shows how to use the ColorMeasureScale with Ranges mode:
 
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_3}}
+```XAML
 	<telerik:VisualizationLayer.Colorizer>
 		<telerik:ColorMeasureScale ExtendedPropertyName="SQKM" Mode="Ranges">
 			<telerik:ColorMeasureScale.RangeCollection>
@@ -119,12 +119,12 @@ The following example shows how to use the ColorMeasureScale with Ranges mode:
 			</telerik:ColorMeasureScale.RangeCollection>
 		</telerik:ColorMeasureScale>
 	</telerik:VisualizationLayer.Colorizer>
-{{endregion}}
+```
 
 And the following demonstrates the __ColorMeasureScale__ with __RangesPredefinedColors__ mode:
         
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_4}}
+```XAML
 	<telerik:VisualizationLayer.Colorizer>
 		<telerik:ColorMeasureScale ExtendedPropertyName="SQKM" Mode="RangesPredefinedColors">
 			<telerik:ColorMeasureScale.RangeCollection>
@@ -166,7 +166,7 @@ And the following demonstrates the __ColorMeasureScale__ with __RangesPredefined
 			</telerik:ColorMeasureScale.RangeCollection>
 		</telerik:ColorMeasureScale>
 	</telerik:VisualizationLayer.Colorizer>
-{{endregion}}
+```
 
 In the snapshots below you can see how the above example will be displayed
 
@@ -185,7 +185,7 @@ The __ColorMeasureScale__ can apply a different color to each range it creates. 
 In case you have more ranges than colors the specified colors will be used as gradient stops along the scale to create filling for all ranges. For example if you want to have the same highlight color for all of the ranges, you just define one entry in the __HighlightFillCollection__ property.
         
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_5}}
+```XAML
     <telerik:RadMap x:Name="radMap" ZoomLevel="1">
         <telerik:RadMap.Provider>
             <telerik:EmptyProvider />
@@ -230,7 +230,7 @@ In case you have more ranges than colors the specified colors will be used as gr
             </telerik:VisualizationLayer.Reader>
         </telerik:VisualizationLayer>
     </telerik:RadMap>
-{{endregion}}
+```
 
 >With the approach shown above any 2 shapes (even if they are neighbors) may be colored equally. To avoid this you should use the [Graph Colorizer]({%slug radmap-visualization-layer-graph-colorizer%}).
 
@@ -239,7 +239,7 @@ In case you have more ranges than colors the specified colors will be used as gr
 The ranges for the __ColorMeasureScale__ can be defined in several different ways. The first one is by only using the __Mode__ and the __TickMarkCount__ or __TickMarkStep__ property. This approach is applicable when using the __VisualizationLayer__ object together with one of the asynchronous shape readers (AsyncShapeFileReader, for example). Here is an example:
         
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_6}}
+```XAML
     <telerik:RadMap x:Name="radMap" ZoomLevel="1">
         <telerik:RadMap.Provider>
             <telerik:EmptyProvider />
@@ -284,12 +284,12 @@ The ranges for the __ColorMeasureScale__ can be defined in several different way
             </telerik:VisualizationLayer.Reader>
         </telerik:VisualizationLayer>
     </telerik:RadMap>
-{{endregion}}
+```
 
 Another approach is to manually define the __Min__ and __Max__ values of the __ColorMeasureScale__ object and to use the __Mode__ property together with the __TickMarkCount__ or __TickMarkStep__ property. This approach is useful, when having __VisualizationLayer__ that displays manually generated shapes.
         
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_7}}
+```XAML
 	
     <telerik:RadMap x:Name="radMap" ZoomLevel="1">
         <telerik:RadMap.Provider>
@@ -334,12 +334,12 @@ Another approach is to manually define the __Min__ and __Max__ values of the __C
             </telerik:VisualizationLayer.Colorizer>
         </telerik:VisualizationLayer>
     </telerik:RadMap>
-{{endregion}}
+```
 
 Additionally with the __Min__ and __Max__ values defined you can directly define the desired ranges at design-time via the __RangeCollection__ property of the __ColorMeasureScale__ object. In this case you can either use the __HighlightFillCollection__ and __ShapeFillCollection__ properties, or specify the desired colors via the __HighlightFill__ and __ShapeFill__ properties of the __MapRange__ object. Here is an example.
 
 #### __XAML__
-{{region radmap-visualization-layer-colorizer_8}}
+```XAML
     <telerik:VisualizationLayer.Colorizer>
         <telerik:ColorMeasureScale ExtendedPropertyName="SQKM" Mode="RangesPredefinedColors">
             <telerik:ColorMeasureScale.RangeCollection>
@@ -381,7 +381,7 @@ Additionally with the __Min__ and __Max__ values defined you can directly define
             </telerik:ColorMeasureScale.RangeCollection>
         </telerik:ColorMeasureScale>
     </telerik:VisualizationLayer.Colorizer>
-{{endregion}}
+```
 
 ## See Also
  * [Map Legend]({%slug radmap-features-map-legend%})

@@ -20,8 +20,8 @@ In such a scenario, the separate class can follow the __singleton pattern__. Thi
 
 The following example showcases a simple scenario with a view model and a separate class that will contains settings that the user can modify.
 
-#### __[C#] Defining the model and view-model to showcase a simple data-binding scenario__
-{{region kb-common-singleton-pattern-binding-to-properties-0}}
+__Defining the model and view-model to showcase a simple data-binding scenario__
+```C#
     public class Item
     {
         public string ItemName { get; set; }
@@ -43,24 +43,24 @@ The following example showcases a simple scenario with a view model and a separa
 
         public ObservableCollection<Item> Items { get; set; }   
     }
-{{endregion}}
+```
 
 The Items collection from the above code snippet will be populating a `RadListBox` control.
 
-#### __[XAML] Defining a RadListBox to display the Items__
-{{region kb-common-singleton-pattern-binding-to-properties-1}}
+__Defining a RadListBox to display the Items__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:ItemsViewModel/>
         </Grid.DataContext>
         <telerik:RadListBox ItemsSource="{Binding Items}" DisplayMemberPath="ItemName"/>
     </Grid>
-{{endregion}}
+```
 
 If the user would like to have the ability to customize the foreground and background colors of the items at runtime, this logic will most commonly be defined in the view model. In this scenario an additional class can be created to hold this customization logic, so it is separated from the logic from the view model. This new class can follow the singleton pattern and expose properties that the user can customize, which can be used in data-binding.
 
-#### __[C#] Defining a separate class that follows the singleton pattern to hold user customizable logic__
-{{region kb-common-singleton-pattern-binding-to-properties-2}}
+__Defining a separate class that follows the singleton pattern to hold user customizable logic__
+```C#
     public class UserSettings : ViewModelBase
     {
         private static UserSettings userSettingsInstance;
@@ -99,12 +99,12 @@ If the user would like to have the ability to customize the foreground and backg
             set { this.itemsBackgroundColor = value; this.OnPropertyChanged(nameof(this.ItemsBackgroundColor)); }
         }
     }
-{{endregion}}
+```
 
 The `ItemsForegroundColor` and `ItemsBackgroundColor` property can be used in data-binding and will raise the property changed event when their value is updated.
 
-#### __[XAML] Binding the ItemsForegroundColor and ItemsBackgroundColor properties__
-{{region kb-common-singleton-pattern-binding-to-properties-3}}
+__Binding the ItemsForegroundColor and ItemsBackgroundColor properties__
+```XAML
     <Grid.Resources>
         <telerik:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
 
@@ -114,19 +114,19 @@ The `ItemsForegroundColor` and `ItemsBackgroundColor` property can be used in da
             <Setter Property="Background" Value="{Binding Source={x:Static local:UserSettings.UserSettingsInstance}, Path=ItemsBackgroundColor, Converter={StaticResource ColorToBrushConverter}}"/>
         </Style>
     </Grid.Resources>
-{{endregion}}
+```
 
 ![WPF RadListBoxItems foreground and background bound to properties from singleton class](images/kb-common-singleton-pattern-binding-to-properties-0.png)
 
 We can further extend this example to provide the option for the user to customize the properties from the UserSettings class. In this case, we can use the RadColorPicker to modify them.
 
-#### __[XAML] Modifying the ItemsForegroundColor and ItemsBackgroundColor__
-{{region kb-common-singleton-pattern-binding-to-properties-4}}
+__Modifying the ItemsForegroundColor and ItemsBackgroundColor__
+```XAML
     <TextBlock Text="Modify ItemsForegroundColor property:"/>
     <telerik:RadColorPicker SelectedColor="{Binding Source={x:Static local:UserSettings.UserSettingsInstance}, Path=ItemsForegroundColor, Mode=TwoWay}"/>
     <TextBlock Text="Modify ItemsBackgroundColor property:"/>
     <telerik:RadColorPicker SelectedColor="{Binding Source={x:Static local:UserSettings.UserSettingsInstance}, Path=ItemsBackgroundColor, Mode=TwoWay}"/>
-{{endregion}}
+```
 
 __RadColorPicker instances modifying the ItemsForegroundColor and ItemsBackgroundColor properties__
 

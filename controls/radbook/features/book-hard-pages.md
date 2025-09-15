@@ -24,8 +24,8 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 
 * __Custom__: Only certain pages have the hard paper feature turned on. It is up to the user to define which pages by setting the __IsHardPaper__ property of the __RadBookItem__.
 
-#### __[XAML] Example 1: Setting the hard pages mode to All__  
-{{region xaml-book-hard-pages_0}}
+__Example 1: Setting the hard pages mode to All__  
+```XAML
 	 <FrameworkElement.Resources>
 	  <DataTemplate x:Key="LeftPageTemplate">
 	   <Grid>
@@ -45,14 +45,14 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 	    RightPageTemplate="{StaticResource RightPageTemplate}" FirstPagePosition="Right"
 	    HardPages="All" />
 	 </Grid>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadBook Hard Paper](images/book_hardPaper.png)
 
 ![{{ site.framework_name }} RadBook Soft Paper](images/book_softPaper.png)
 
-#### __[XAML] Example 2: Setting the hard pages mode to Custom__  
-{{region xaml-book-hard-pages_1}}
+__Example 2: Setting the hard pages mode to Custom__  
+```XAML
 	<telerik:RadBook x:Name="book2" Width="544" Height="444" FirstPagePosition="Right"
 	    RightPageIndex="0" HardPages="Custom">
 	 <telerik:RadBookItem IsHardPaper="True">
@@ -86,7 +86,7 @@ To enable hard paper functionality, you have to set the __HardPages__ property. 
 	  </Grid>
 	 </telerik:RadBookItem>
 	</telerik:RadBook>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadBook Hard Pages Custom 1](images/book_hardPaperCustom1.png)
 

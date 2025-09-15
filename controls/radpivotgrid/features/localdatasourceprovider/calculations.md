@@ -22,31 +22,31 @@ There are several predefined calculations that you can use. To explain each of t
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_1}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
 	        <pivot:DifferenceFrom Axis="Rows" Level="0" GroupName="Pen"></pivot:DifferenceFrom>
 	    </pivot:PropertyAggregateDescription.TotalFormat>
 	</pivot:PropertyAggregateDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_1}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new DifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_1}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New DifferenceFrom() With {.Axis = PivotAxis.Rows, .Level = 0, .GroupName = "Pen"}
-	{{endregion}}
+	```
 
 ![Rad Pivot Grid Features Calculations 02](images/RadPivotGrid_Features_Calculations_02.png)
 
@@ -54,31 +54,31 @@ You can also set Difference From Next or Difference From Previous - this way eac
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_2}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
 	        <pivot:DifferenceFromNext Axis="Rows" Level="0"/>
 	    </pivot:PropertyAggregateDescription.TotalFormat>
 	</pivot:PropertyAggregateDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_2}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new DifferenceFromNext() { Axis = PivotAxis.Rows, Level = 0 };
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_2}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New DifferenceFromNext() With {.Axis = PivotAxis.Rows, .Level = 0}
-{{endregion}}
+```
 
 ![Rad Pivot Grid Features Calculations 03](images/RadPivotGrid_Features_Calculations_03.png)
 
@@ -86,32 +86,32 @@ You can also set Difference From Next or Difference From Previous - this way eac
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_3}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	        <pivot:PropertyAggregateDescription.TotalFormat>
 	            <pivot:PercentDifferenceFrom Axis="Rows" Level="0" GroupName="Pen"/>
 	        </pivot:PropertyAggregateDescription.TotalFormat>
 	    </pivot:PropertyAggregateDescription>
 	</pivot:LocalDataSourceProvider.AggregateDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_3}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new PercentDifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_3}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New PercentDifferenceFrom() With {.Axis = PivotAxis.Rows, .Level = 0, .GroupName = "Pen"}
-{{endregion}}
+```
 
 ![Rad Pivot Grid Features Calculations 05](images/RadPivotGrid_Features_Calculations_05.png)
 
@@ -121,31 +121,31 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_4}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
 	        <pivot:Index/>
 	    </pivot:PropertyAggregateDescription.TotalFormat>
 	</pivot:PropertyAggregateDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_4}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new Index();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_4}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New Index()
-{{endregion}}
+```
 
 ![Rad Pivot Grid Features Calculations 04](images/RadPivotGrid_Features_Calculations_04.png)
 
@@ -161,31 +161,31 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_5}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
 	        <pivot:RunningTotalsIn Axis="Rows" Level="0"/>
 	    </pivot:PropertyAggregateDescription.TotalFormat>
 	</pivot:PropertyAggregateDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_5}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new RunningTotalsIn() { Axis = PivotAxis.Rows, Level = 0 };
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_5}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New RunningTotalsIn() With {.Axis = PivotAxis.Rows, .Level = 0}
-{{endregion}}
+```
 
 ![Rad Pivot Grid Features Calculations 06](images/RadPivotGrid_Features_Calculations_06.png)
 
@@ -193,31 +193,31 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_6}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
 	        <pivot:PercentRunningTotalsIn Axis="Rows" Level="0"/>
 	    </pivot:PropertyAggregateDescription.TotalFormat>
 	</pivot:PropertyAggregateDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_6}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new PercentRunningTotalsIn() { Axis = PivotAxis.Rows, Level = 0};
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_6}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New PercentRunningTotalsIn() With {.Axis = PivotAxis.Rows, .Level = 0}
-{{endregion}}
+```
 
 ![Rad Pivot Grid Features Calculations 07](images/RadPivotGrid_Features_Calculations_07.png)
 
@@ -225,31 +225,31 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_7}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
 	        <pivot:RankTotals Axis="Rows" Level="0"/>
 	    </pivot:PropertyAggregateDescription.TotalFormat>
 	</pivot:PropertyAggregateDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_7}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new RankTotals() { Axis = PivotAxis.Rows, Level = 0};
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_7}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New RankTotals() With {.Axis = PivotAxis.Rows, .Level = 0}
-{{endregion}}
+```
 
 ![Rad Pivot Grid Features Calculations 08](images/RadPivotGrid_Features_Calculations_08.png)
 
@@ -267,31 +267,31 @@ When you set TotalFormat in your code there are several properties that you shou
 
 #### __XAML__
 
-{{region radpivotgrid-features-calculations_1}}
+```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
 	        <pivot:DifferenceFrom Axis="Rows" Level="0" GroupName="Pen"></pivot:DifferenceFrom>
 	    </pivot:PropertyAggregateDescription.TotalFormat>
 	</pivot:PropertyAggregateDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-calculations_1}}
+```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new DifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-calculations_1}}
+```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New DifferenceFrom() With {.Axis = PivotAxis.Rows, .Level = 0, .GroupName = "Pen"}
-{{endregion}}
+```
 
 When you want to apply/change the calculation at runtime you should use __RadPivotFieldList__. Just click on the aggregate description and choose one of the defined calculations or select "More calculation options..." option. This will open a new RadWindow where you will find all predefined calculations and you will be able to set them with just a few clicks.
 

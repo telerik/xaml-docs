@@ -23,7 +23,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 {% if site.site_name == 'Silverlight' %}
 #### __XAML__
 
-{{region radtreeview-populating-with-data-item-edit-template-selector_0}}
+```XAML
 	<UserControl.Resources>
 	
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
@@ -64,14 +64,14 @@ For the purpose of this tutorial will be used the following treeview declaration
 	           ItemTemplate="{StaticResource League}"/>
 	
 	</Grid>
-	{{endregion}}
+	```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
 #### __XAML__
 
-{{region radtreeview-populating-with-data-item-edit-template-selector_10}}
+```XAML
 	<UserControl.Resources>
 	
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
@@ -112,7 +112,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 	           ItemTemplate="{StaticResource League}"/>
 	
 	</Grid>
-	{{endregion}}
+	```
 
 {% endif %}
 
@@ -124,7 +124,7 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-edit-template-selector_1}}
+		```XAML
 			<DataTemplate x:Key="LeagueItemEditTemplate">
 				<Grid>
 					<StackPanel Orientation="Horizontal">
@@ -133,13 +133,13 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 					</StackPanel>
 				</Grid>
 			</DataTemplate>
-		{{endregion}}
+		```
 
 	* __DivisionItemEditTemplate__
 
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-edit-template-selector_2}}
+		```XAML
 			<DataTemplate x:Key="DivisionItemEditTemplate">
 				<Grid>
 					<StackPanel Orientation="Horizontal">
@@ -148,13 +148,13 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 					</StackPanel>
 				</Grid>
 			</DataTemplate>
-		{{endregion}}
+		```
 
 	* __TeamItemEditTemplate__
 
 		#### __XAML__
 
-		{{region radtreeview-populating-with-data-item-edit-template-selector_3}}
+		```XAML
 			<DataTemplate x:Key="TeamItemEditTemplate">
 				<Grid>
 					<StackPanel Orientation="Horizontal">
@@ -164,7 +164,7 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 					</StackPanel>
 				</Grid>
 			</DataTemplate>
-		{{endregion}}
+		```
 
 	>In order to use the Telerik __RadMaskedNumericInput__ you need to add a reference to the __Telerik.Windows.Controls.Input__ assembly in your user control.
 		  
@@ -177,19 +177,19 @@ The next step is to create a selector where the logic about selecting the right 
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-item-edit-template-selector_4}}
+	```C#
 		public class LeagueDataTemplateSelector : DataTemplateSelector
 		{
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-item-edit-template-selector_5}}
+	```VB.NET
 		Public Class LeagueDataTemplateSelector
 			Inherits DataTemplateSelector
 		End Class
-	{{endregion}}
+	```
 
 * Override the __SelectTemplate__ method and implement your custom logic in it. The method accepts as arguments an __object__ and a __DependencyObject__. The object argument is the actual object being bound and the __DependecyObject__ is the container for it.
 			
@@ -200,7 +200,7 @@ The next step is to create a selector where the logic about selecting the right 
 	{% if site.site_name == 'WPF' %}
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-edit-template-selector_10}}
+	```XAML
 		<UserControl.Resources>
 		
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
@@ -241,13 +241,13 @@ The next step is to create a selector where the logic about selecting the right 
 				   ItemTemplate="{StaticResource League}"/>
 		
 		</Grid>
-	{{endregion}}
+	```
 
 	{% endif %}
 
 	#### __C#__
 
-	{{region radtreeview-populating-with-data-item-edit-template-selector_6}}
+	```C#
 		public class LeagueItemEditTemplateSelector : DataTemplateSelector
 		{
 			private DataTemplate leagueTemplate;
@@ -297,11 +297,11 @@ The next step is to create a selector where the logic about selecting the right 
 				}
 			}
 		}
-	{{endregion}}
+	```
 		
 	#### __VB.NET__
 
-	{{region radtreeview-populating-with-data-item-edit-template-selector_7}}
+	```VB.NET
 		Public Class LeagueItemEditTemplateSelector
 			Inherits DataTemplateSelector
 			Private m_leagueTemplate As DataTemplate
@@ -347,13 +347,13 @@ The next step is to create a selector where the logic about selecting the right 
 				End Set
 			End Property
 		End Class
-	{{endregion}}
+	```
 
 * Define the created selector as a resource in your XAML and set it to the __ItemEditTemplateSelector__ property.		  
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-edit-template-selector_8}}
+	```XAML
 		<UserControl.Resources>
 		
 		<sampleData:LeagueItemEditTemplateSelector x:Key="myEditDataTemplateSelector"
@@ -362,18 +362,18 @@ The next step is to create a selector where the logic about selecting the right 
 			TeamTemplate="{StaticResource TeamItemEditTemplate}"/>
 		
 		</UserControl.Resources>
-	{{endregion}}
+	```
 
 	#### __XAML__
 
-	{{region radtreeview-populating-with-data-item-edit-template-selector_9}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView"
 		   IsEditable="True" Margin="8"
 		   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 		   ItemTemplate="{StaticResource League}"
 		   ItemEditTemplate="{x:Null}"
 		   ItemEditTemplateSelector="{StaticResource myEditDataTemplateSelector}"/>
-	{{endregion}}
+	```
 
 >caution The Telerik RadTreeView provides a default ItemEditTemplate which takes precedence. That's why in order to use ItemEditTemplateSelector, you need to null the ItemEditTemplate. In code this is trivial, in XAML can be done with the following: `ItemEditTemplate="{x:Null}"`
 

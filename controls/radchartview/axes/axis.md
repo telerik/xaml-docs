@@ -56,8 +56,8 @@ The chart axes share a set of common features that can be used via the following
 
 The axis supports arbitrary visualization of the ticks and labels through `DataTemplate` objects. Also, it supports a dash array and a stroke color for the visualization of the axis line. For increased flexibility, the label templates can be selected dynamically with a template selector, as shown in the following examples:
 
-#### __[XAML] Setting LabelTemplateSelector of a LinearAxis__
-{{region xaml-radchart-axes-axis_0}}
+__Setting LabelTemplateSelector of a LinearAxis__
+```XAML
 	<Grid.Resources>
 	   <DataTemplate x:Key="GrayTemplate">
 	       <Border BorderThickness="2"
@@ -96,10 +96,10 @@ The axis supports arbitrary visualization of the ticks and labels through `DataT
 	        <telerik:LinearAxis Maximum="100"/>
 	    </telerik:RadCartesianChart.VerticalAxis>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
-#### __[C#] BinaryTemplateSelector Definition__
-{{region cs-radchart-axes-axis_1}}
+__BinaryTemplateSelector Definition__
+```C#
 	public class BinaryTemplateSelector : DataTemplateSelector
 	{
 	    public DataTemplate Template1
@@ -120,10 +120,8 @@ The axis supports arbitrary visualization of the ticks and labels through `DataT
 	        return tmp;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] BinaryTemplateSelector Definition__
-{{region vb-radchart-axes-axis_2}}
+```
+```VB.NET
 	Public Class BinaryTemplateSelector
 	    Inherits DataTemplateSelector
 	    Private _template1 As DataTemplate
@@ -154,7 +152,7 @@ The axis supports arbitrary visualization of the ticks and labels through `DataT
 	        Return tmp
 	    End Function
 	End Class
-{{endregion}}
+```
 
 ![RadChartView Horizontal Axis with LabelTemplateSelector](images/radchartview-chart_axes_axisconfig.png)
 

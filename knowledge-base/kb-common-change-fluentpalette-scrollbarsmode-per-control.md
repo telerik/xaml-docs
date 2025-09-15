@@ -25,8 +25,8 @@ How to change the __ThemeHelper.ScrollBarsMode__ attached property for a specifi
 
 To do this, you can add an implicit style in the Resources of the corresponding ScrollViewer control. The Style can have a single Setter changing the ThemeHelper.ScrollBarsMode attached property.
 
-#### __[XAML]__
-{{region kb-common-change-fluentpalette-scrollbarsmode-per-control-0}}
+
+```XAML
 	 <ScrollViewer MaxHeight="150" Grid.Row="1">
 		<ScrollViewer.Resources>
 			<Style TargetType="ScrollBar" BasedOn="{StaticResource ScrollBarStyle}">
@@ -35,4 +35,4 @@ To do this, you can add an implicit style in the Resources of the corresponding 
 		</ScrollViewer.Resources>
 		<!-- other XAML here -->
 	</ScrollViewer>
-{{endregion}}
+```

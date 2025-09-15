@@ -30,10 +30,10 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Defining the RadVirtualKeyboard
 
-#### __[XAML] Defining RadVirtualKeyboard in XAML__
-{{region radvirtualkeyboard-getting-started-0}}
+__Defining RadVirtualKeyboard in XAML__
+```XAML
 	 <telerik:RadVirtualKeyboard />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadVirtualKeyboard Default Layout](images/radvirtualkeyboard-overview-1.png)
 

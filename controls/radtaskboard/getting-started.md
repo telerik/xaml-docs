@@ -40,7 +40,7 @@ You can find the required assemblies for each control from the suite in the [Con
 First, we can go ahead and create our ViewModel with some tasks. The control API provides a built-in __TaskBoardCardModel__ model class which exposes the most needed properties to start organizing your tasks.
 
 #### __[C#] Example 1: Defining ViewModel
-{{region csharp-radtaskboard-getting-started-1}}
+```C#
     public class MainViewModel
 	{
 		public ObservableCollection<TaskBoardCardModel> Data { get; set; }
@@ -74,25 +74,25 @@ First, we can go ahead and create our ViewModel with some tasks. The control API
 			return tasks;
 		}
 	}
-{{endregion}}
+```
 
 Next we need to define RadTaskBoard in XAML, bind the ItemsSource property of the RadTaskBoard and set the __GroupMemberPath__ property. The __GroupMemberPath__ property indicates which property from your model will be used to group the tasks.
 
 #### __[XAML] Example 2: Binding RadTaskBoard
-{{region xaml-radtaskboard-getting-started-0}}
+```XAML
     <telerik:RadTaskBoard ItemsSource="{Binding Data}" GroupMemberPath="State" />
-{{endregion}}
+```
 
 And finally, we need to set the DataContext of the MainWindow:
 
 #### __[C#] Example 3: Setting DataContext
-{{region csharp-radtaskboard-getting-started-0}}
+```C#
     public MainWindow() 
     { 
         InitializeComponent(); 
         this.DataContext = new MainViewModel(); 
     }
-{{endregion}}
+```
 
 If you run the application now, you should get a structure like in Figure 1:
 #### Figure 1: RadTaskBoard with sample data
@@ -114,8 +114,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radtaskboard-getting-started_7}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -124,7 +124,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

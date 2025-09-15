@@ -26,8 +26,8 @@ You can add custom zoom level through the `MapZoomBar.RegisterSetZoomLevelComman
 
 Here is a sample code snippet that demonstrates zoom level customization:
 
-#### __[XAML]__
-{{region radmap-howto-custom-zoom-levels_0}}
+
+```XAML
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
 	        <DataTemplate x:Key="CustomCommandDataTemplate">
@@ -73,10 +73,10 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	                    GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104">
 	    </telerik:RadMap>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region radmap-howto-custom-zoom-levels_1}}
+
+```C#
 	public class MainWindow : Window
 	{
 		private const string ImagePathFormat = "/Map;component/Silverlight/CustomCommands/Images/{0}.png";
@@ -106,10 +106,10 @@ Here is a sample code snippet that demonstrates zoom level customization:
 		        new Uri(imagePath, UriKind.RelativeOrAbsolute));
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap-howto-custom-zoom-levels_2}}
+```VB.NET
 	Public Partial Class MainWindow
     Inherits Window
 
@@ -138,4 +138,4 @@ Here is a sample code snippet that demonstrates zoom level customization:
     	    Me.RadMap1.MapZoomBar.RegisterSetZoomLevelCommand(zoomLevel, label, TryCast(Me.LayoutRoot.Resources("CustomCommandDataTemplate"), DataTemplate), New Uri(imagePath, UriKind.	RelativeOrAbsolute))
     	End Sub
 	End Class
-{{endregion}}
+```

@@ -22,24 +22,24 @@ The `SelectionOnFocus` property of the RadMaskedInput controls allows you to spe
 
 * `SelectAll`&mdash;once a RadMaskedInput control is focused, it will select its whole text. 						
 
-	#### __[XAML] Example 1: Setting the SelectionOnFocus property to SelectAll__
-	{{region xaml-radmaskedinput-features-selection_0}}
+	__Example 1: Setting the SelectionOnFocus property to SelectAll__
+	```XAML
 		<telerik:RadMaskedTextInput Mask="###-###-###" SelectionOnFocus="SelectAll" />
-	{{endregion}}
+	```
 
 * `CaretToBeginning`&mdash;once a RadMaskedInput control is focused, the cursor will be positioned at its beginning.						
 
-	#### __[XAML] Example 2: Setting the SelectionOnFocus property to CaretToBeginning__
-	{{region xaml-radmaskedinput-features-selection_1}}
+	__Example 2: Setting the SelectionOnFocus property to CaretToBeginning__
+	```XAML
 		<telerik:RadMaskedTextInput Mask="###-###-###" SelectionOnFocus="CaretToBeginning" />
-	{{endregion}}
+	```
 
 * `CaretToEnd`&mdash;once a RadMaskedInput control is focused, the cursor will be positioned at its end.						
 
-	#### __[XAML] Example 3: Setting the SelectionOnFocus property to CaretToEnd__
-	{{region xaml-radmaskedinput-features-selection_2}}
+	__Example 3: Setting the SelectionOnFocus property to CaretToEnd__
+	```XAML
 		<telerik:RadMaskedTextInput Mask="###-###-###" SelectionOnFocus="CaretToEnd" />
-	{{endregion}}
+	```
 
 * `Unchanged`&mdash;when a RadMaskedInput control is focused, the position of the cursor won't be changed.					
 
@@ -53,27 +53,25 @@ The `SelectionOnFocus` property of the RadMaskedInput controls allows you to spe
 
 The `SelectionStart` property gets or sets the starting point of the selected text in the RadMaskedInput, while the `SelectionLength` gets or sets the number of characters selected in the RadMaskedInput. Both of the properties could be used in a combination with the `GotFocus` event, like in the example below:				
 
-#### __[XAML] Example 4: Subscribe to the GotFocus event in XAML__
-{{region xaml-radmaskedinput-features-selection_3}}
+__Example 4: Subscribe to the GotFocus event in XAML__
+```XAML
     <telerik:RadMaskedTextInput Mask="###-###-###" x:Name="radMaskedTextInput" GotFocus="radMaskedTextInput_GotFocus"/>
-{{endregion}}
+```
 
-#### __[C#] Example 5: Setting the SelectionStart and SelectionLength properties__
-{{region cs-radmaskedinput-features-selection_4}}
+__Example 5: Setting the SelectionStart and SelectionLength properties__
+```C#
 	private void radMaskedTextInput_GotFocus(object sender, RoutedEventArgs e)
 	{
 		radMaskedTextInput.SelectionStart = 2;
 		radMaskedTextInput.SelectionLength = 2;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Setting the SelectionStart and SelectionLength properties__
-{{region vb-radmaskedinput-features-selection_5}}
+```
+```VB.NET
 	Private Sub radMaskedTextInput_GotFocus(sender As Object, e As RoutedEventArgs)
 		radMaskedTextInput.SelectionStart = 2
 		radMaskedTextInput.SelectionLength = 2
 	End Sub
-{{endregion}}
+```
 
 ![WPF RadMaskedInput with Selection](images/RadMaskedTextBox_Features_Selection_010.png)
 

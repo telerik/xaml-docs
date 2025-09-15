@@ -44,8 +44,8 @@ The VisualizationLayer allows you to display the following items:
 
 In order to add any framework element to the Visualization Layer you have to put it inside the VisualizationLayer's tag and set its geographical location. This is done by passing a Location object to the `MapLayer.Location` attached property that contains the longitude and the latitude of the position to the element.  Here is an example:        
 
-#### __[XAML] Adding and positioning a framework element to a VisualizationLayer instance__
-{{region radmap_visualization_layer_introduction_0}}
+__Adding and positioning a framework element to a VisualizationLayer instance__
+```XAML
 	<telerik:RadMap x:Name="radMap">
 		<telerik:RadMap.Provider>
 			<telerik:OpenStreetMapProvider />
@@ -60,7 +60,7 @@ In order to add any framework element to the Visualization Layer you have to put
 	                 Fill="Transparent" />
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 You can take advantage of the `UseLayoutRounding` property when it is necessary to have fully readable framework elements (text for example). To take advantage of the layout rounding you should set the UseLayoutRounding property to true as it is false by default.
 
@@ -81,8 +81,8 @@ Additionally you can use these two attached properties provided by the MapLayer 
 
 Here is an example for an Ellipse, positioned above Sofia, Bulgaria and visible only when the zoom level is grater or equal to 5 and less or equal to 12. The Ellipse will also have its normal size (100%) when the zoom level is 8. The maximum scale factor for the element is set to 8:        
 
-#### __[XAML] Limiting the element's visibility based on the zoom level__
-{{region radmap_visualization_layer_introduction_1}}
+__Limiting the element's visibility based on the zoom level__
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
 	                Center="42.6957539183824, 23.3327663758679">
@@ -104,7 +104,7 @@ Here is an example for an Ellipse, positioned above Sofia, Bulgaria and visible 
 	                 Fill="Transparent" />
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -112,8 +112,8 @@ Here is a snapshot of the result:
 
 If you want to add more than one element, you just have to place it after the previous element. Here is an example:        
 
-#### __[XAML] Adding additional elements__
-{{region radmap_visualization_layer_introduction_2}}
+__Adding additional elements__
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
 	                Center="42.6957539183824, 23.3327663758679">
@@ -147,7 +147,7 @@ If you want to add more than one element, you just have to place it after the pr
 	                 Fill="Transparent" />
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## Binding Items      
 

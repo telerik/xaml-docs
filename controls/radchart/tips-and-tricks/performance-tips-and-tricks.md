@@ -28,7 +28,7 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 
 #### __C#__
 
-{{region cs-radchart-performance-tips-and-tricks_0}}
+```C#
 	public class AddRangeObservableCollection<T> : ObservableCollection<T>
 	{
 	    private bool suppressOnCollectionChanged;
@@ -63,10 +63,10 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region vb-radchart-performance-tips-and-tricks_1}}
+```VB.NET
 	Public Class AddRangeObservableCollection(Of T)
 	    Inherits ObservableCollection(Of T)
 	    Private suppressOnCollectionChanged As Boolean
@@ -92,7 +92,7 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	        End If
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## See Also
  * [Overview]({%slug radchart-overview%})

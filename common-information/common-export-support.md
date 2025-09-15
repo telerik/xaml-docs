@@ -91,9 +91,9 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 
 
 {% if site.site_name == 'Silverlight' %}
-#### __[C#] Example 1: Export Control to PNG__
+__Example 1: Export Control to PNG__
 
-{{region common-export-support_0}}
+```C#
 	 private void Button_Click(object sender, RoutedEventArgs e)
 	  {
 		string extension = "png";
@@ -112,11 +112,8 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Export Control to PNG__
-
-{{region common-export-support_1}}
+```
+```VB.NET
 	 Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim extension As String = "png"
 		Dim dialog As New SaveFileDialog() With {.DefaultExt = extension, .Filter = "Png (*.png)|*.png"}
@@ -127,13 +124,13 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 			End Using
 		End If
 	 End Sub
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __[C#] Example 1: Export Control to PNG__
+__Example 1: Export Control to PNG__
 
-{{region common-export-support_2}}
+```C#
 	 private void Button_Click(object sender, RoutedEventArgs e)
 	  {
 		string extension = "png";
@@ -152,11 +149,8 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Export Control to PNG__
-
-{{region common-export-support_0}}
+```
+```VB.NET
 	 Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim extension As String = "png"
 		Dim dialog As New SaveFileDialog() With {.DefaultExt = extension, .Filter = "Png (*.png)|*.png"}
@@ -167,7 +161,7 @@ __Example 1__ demonstrates how to export __RadGauge__ to PNG file format. The ph
 			End Using
 		End If
 	 End Sub
-{{endregion}}
+```
 {% endif %}
 
 >tipExporting a control to an image requires that the control is measured and arranged. Otherwise, unexpected results may occur.

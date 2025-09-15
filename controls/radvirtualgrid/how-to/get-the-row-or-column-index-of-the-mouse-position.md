@@ -12,20 +12,20 @@ position: 0
 
 In a scenario when the row/column index for the mouse position is needed, the __GetRowIndexAtMousePosition__ and __GetColumnIndexAtMousePosition__ methods come in handy. In order to return the needed index, they accept a parameter of type __CanvasInputBorder__. This __Border__ is used internally by __RadVirtualGrid__ to enable mouse interaction with the control. For example, if the row and column indexes for the __MouseRightButtonDown__ event of __RadVirtualGrid__ are needed, its event handler would be similar to the following one.
 
-#### __[C#] Getting the Row and Column Index on MouseRightButtonDown event__
-{{region radvirtualgrid-selection_programmatic-selection_0}}
+__Getting the Row and Column Index on MouseRightButtonDown event__
+```C#
 	private void VirtualGrid_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             var border = e.OriginalSource as Telerik.Windows.Controls.VirtualGrid.CanvasInputBorder;
             var columnIndex = this.VirtualGrid.GetColumnIndexAtMousePosition(border);
             var rowIndex = this.VirtualGrid.GetRowIndexAtMousePosition(border);
         }
-{{endregion}}
+```
 
 If you have defined a [custom CellTemplate]({%slug radvirtualgrid-custom-cell-content%}), you would need to add additional logic to get ahold of the CanvasInputBorder.
 
-#### __[C#] Getting the Row and Column Index when using a custom CellTemplate__
-{{region radvirtualgrid-selection_programmatic-selection_1}}
+__Getting the Row and Column Index when using a custom CellTemplate__
+```C#
 	private void VirtualGrid_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {	
 	    var border = e.OriginalSource as Telerik.Windows.Controls.VirtualGrid.CanvasInputBorder;
@@ -39,7 +39,7 @@ If you have defined a [custom CellTemplate]({%slug radvirtualgrid-custom-cell-co
 	    var columnIndex = this.VirtualGrid.GetColumnIndexAtMousePosition(border);
 	    var rowIndex = this.VirtualGrid.GetRowIndexAtMousePosition(border);
         }
-{{endregion}}
+```
 
 > The previous examples show how to use the `MouseRightButtonDown` event. To subscribe to `MouseLeftButtonDown`, you will need to use the `AddHandler` method with its last parameter set to `true`. `this.virtualGrid.AddHandler(RadVirtualGrid.MouseLeftButtonDownEvent, new MouseButtonEventHandler(virtualGrid_MouseLeftButtonDown), true);`
 

@@ -65,9 +65,9 @@ The general naming convention is: `Windows8Palette.Palette.[name]Color` is respo
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Changing the palette's default colors in code-behind__
+__Changing the palette's default colors in code-behind__
 
-{{region cs-styles-appearance-windows8-and-windows8touch-themes-0}}
+```C#
 	Windows8Palette.Palette.MainColor = Colors.Black;
 	Windows8Palette.Palette.AccentColor = Colors.Orange;
 	Windows8Palette.Palette.BasicColor = Colors.DarkGray;
@@ -82,14 +82,14 @@ Changing the colors can be achieved in code behind.
 	Windows8TouchPalette.Palette.EffectHighColor = Colors.Yellow;
 	Windows8TouchPalette.Palette.EffectLowColor = Colors.Orange;
 	...
-	{{endregion}}
+	```
 
 Figure 1: Some of the possible looks you will be able to easily achieve.
 ![Common Metro Theme Colors](../images/Common_Metro_Theme_Colors.png)
 
-#### __[XAML] Using the brush resources in XAML__
+__Using the brush resources in XAML__
 
-{{region xaml-styles-appearance-windows8-and-windows8touch-themes-0}}
+```XAML
 	<UserControl x:Class="Windows8ThemeColors.MainPage"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"		
@@ -111,7 +111,7 @@ Figure 1: Some of the possible looks you will be able to easily achieve.
 	                Content="This is Another Styled Button"/>
 	    </Grid>
 	</UserControl>
-	{{endregion}}
+	```
 
 __Result of the used resources__
 
@@ -127,9 +127,9 @@ The following example, shown after the note below, shows these resources and the
 {% if site.site_name == 'WPF' %}
 >important When you change these resources, you should ensure that the __Windows8ResourceDictionary__ / __Windows8TouchResourceDictionary__ is merged to App.xaml in the following way:
 
-#### __[XAML]__
 
-{{region xaml-styles-appearance-windows8-and-windows8touch-themes-1}}
+
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -138,13 +138,13 @@ The following example, shown after the note below, shows these resources and the
 	        </ResourceDictionary.MergedDictionaries>
 	    </ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 {% endif %}     
 
-#### __[C#] Setting the FontSize and FontFamily properties of the themes' palettes__
+__Setting the FontSize and FontFamily properties of the themes' palettes__
 
-{{region cs-styles-appearance-windows8-and-windows8touch-themes-1}}
+```C#
 	//Windows8 Resources
 	Windows8Palette.Palette.FontSizeXS = 10;
 	Windows8Palette.Palette.FontSizeS = 11;
@@ -166,13 +166,13 @@ The following example, shown after the note below, shows these resources and the
 	Windows8TouchPalette.Palette.FontFamily = new FontFamily("Segoe UI");
 	Windows8TouchPalette.Palette.FontFamilyLight = new FontFamily("Segoe UI Light");
 	Windows8TouchPalette.Palette.FontFamilyStrong = new FontFamily("Segoe UI Semibold");
-{{endregion}}
+```
 
 This example shows how you can increase the __FontSize__ of a __RadCalendar__ with the click of a button.        
 
-#### __[XAML]__
 
-{{region xaml-styles-appearance-windows8-and-windows8touch-themes-2}}
+
+```XAML
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*"/>
@@ -181,11 +181,11 @@ This example shows how you can increase the __FontSize__ of a __RadCalendar__ wi
 	    <telerik:RadCalendar x:Name="Calendar" Width="300" Height="250"/>
 	    <telerik:RadButton x:Name="BtnChangeFontSize" Grid.Row="1" Height="30" HorizontalAlignment="Center" Content="Change Font" Click="BtnChangeFontSize_Click_1"/>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#]__
 
-{{region cs-styles-appearance-windows8-and-windows8touch-themes-2}}
+
+```C#
 	public MainPage()
 	{
 	    StyleManager.ApplicationTheme = new Windows8Theme();
@@ -197,7 +197,7 @@ This example shows how you can increase the __FontSize__ of a __RadCalendar__ wi
 	    Windows8Palette.Palette.FontSize = 22;
 	    Windows8Palette.Palette.FontFamily = new FontFamily("Calibri");
 	}
-{{endregion}}
+```
         
 __Result of clicking the button__
 
@@ -207,15 +207,13 @@ __Result of clicking the button__
 
 If you need to change the opacity of the disabled elements, you can now easily do so by using the `DisabledOpacity` property of the `Windows8Palette`. Its default value is __0.5__. 
 
-#### __[C#] Changing the opacity__		
-{{region cs-styles-appearance-windows8-and-windows8touch-themes-3}}
+__Changing the opacity__		
+```C#
 	Windows8Palette.Palette.DisabledOpacity = 0.2;
-{{endregion}}
-	
-#### __[VB.NET] Changing the opacity__		
-{{region vb-styles-appearance-windows8-and-windows8touch-themes-0}}
+```
+```VB.NET
 	Windows8Palette.Palette.DisabledOpacity = 0.2
-{{endregion}}
+```
 
 ## See Also
 

@@ -22,13 +22,13 @@ When you assign an [IEnumerable](http://msdn.microsoft.com/en-us/library/system.
 
 #### __XAML__
 
-{{region raddatafilter-features-source-and-filtered-source_0}}
+```XAML
 
 	<telerik:RadDataFilter x:Name="radDataFilter" />
 	<telerik:ListBox x:Name="listBox"
 	                    ItemsSource="{Binding FilteredSource, ElementName=radDataFilter}"
 	                    DisplayMemberPath="Name" />
-	{{endregion}}
+	```
 
 
 

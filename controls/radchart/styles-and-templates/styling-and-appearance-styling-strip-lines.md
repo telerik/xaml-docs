@@ -18,7 +18,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-strip-lines_0}}
+```XAML
 	<Style x:Key="HorizontalAlternateStripLineStyle" TargetType="Rectangle">
 	    <Setter Property="Fill">
 	        <Setter.Value>
@@ -29,17 +29,17 @@ To be able to modify the colors of these lines you should use the following Styl
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
 #### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-strip-lines_1}}
+```XAML
 	<Style x:Key="HorizontalStripLineStyle" TargetType="Rectangle">
 	    <Setter Property="Fill" Value="LightGray" />
 	</Style>
-{{endregion}}
+```
 
 
 
@@ -47,19 +47,19 @@ To be able to modify the colors of these lines you should use the following Styl
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-strip-lines_2}}
+```C#
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = this.Resources["HorizontalAlternateStripLineStyle"] as Style;
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.StripLineStyle = this.Resources["HorizontalStripLineStyle"] as Style;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-strip-lines_3}}
+```VB.NET
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = TryCast(Me.Resources("HorizontalAlternateStripLineStyle"), Style)
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.StripLineStyle = TryCast(Me.Resources("HorizontalStripLineStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -67,17 +67,17 @@ To be able to modify the colors of these lines you should use the following Styl
 
 #### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-strip-lines_4}}
+```C#
 	RadChart1.DefaultView.ChartArea.AxisY.StripLinesVisibility = System.Windows.Visibility.Visible;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-styling-and-appearance-styling-strip-lines_5}}
+```VB.NET
 	RadChart1.DefaultView.ChartArea.AxisY.StripLinesVisibility = System.Windows.Visibility.Visible
-{{endregion}}
+```
 
 
 

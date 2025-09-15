@@ -27,17 +27,17 @@ To resolve this, you will need to manually remove the child items from the `Sele
 
 The exact solution will depend on the exact models strucutre in the application, but the idea is the same. The following example shows how to apply this approach with a very basic model used to populate the TreeView control.
 
-#### __[C#] Creating the data model__
-{{region kb-treeview-selecteditems-contains-irrelevant-items-0}}
+__Creating the data model__
+```C#
 	public class ItemInfo
 	{
 		public string Name { get; set; }
 		public ObservableCollection<ItemInfo> Children { get; set; }
 	}
-{{endregion}}
+```
 
-#### __[C#] Populating with data__
-{{region kb-treeview-selecteditems-contains-irrelevant-items-1}}
+__Populating with data__
+```C#
 	this.radTreeView.ItemsSource = new ObservableCollection<ItemInfo>()
 	{
 		new ItemInfo() 
@@ -68,10 +68,10 @@ The exact solution will depend on the exact models strucutre in the application,
 		new ItemInfo() { Name="Item 3" },
 		new ItemInfo() { Name="Item 4" },
 	};
-{{endregion}}
+```
 
-#### __[XAML] Removing an item along with its children from the ItemsSource__
-{{region kb-treeview-selecteditems-contains-irrelevant-items-2}}
+__Removing an item along with its children from the ItemsSource__
+```XAML
 	private void RemoveItem(ItemInfo itemToRemove)
 	{
 		DetachChildItemFromSelectedItem(itemToRemove);
@@ -107,5 +107,5 @@ The exact solution will depend on the exact models strucutre in the application,
 			}
 		}            
 	}
-{{endregion}}
+```
 

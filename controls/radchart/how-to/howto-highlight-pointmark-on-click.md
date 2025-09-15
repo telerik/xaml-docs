@@ -20,7 +20,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 
 #### __C#__
 
-{{region radchart-howto-highlight-pointmark-on-click_0}}
+```C#
 	public MainPage() //MainWindow() for WPF
 	        {
 	            InitializeComponent();
@@ -58,12 +58,12 @@ It is common scenario that you would like to select a single PointMark of Line S
 	                this.YValue = yValue;
 	            }
 	        }
-	{{endregion}}
+	```
 
 
 #### __VB.NET__
 
-{{region radchart-howto-highlight-pointmark-on-click_1}}
+```VB.NET
 	Public Sub New() 'MainWindow() for WPF
 	                  InitializeComponent()
 	                  Dim r As New Random()
@@ -92,7 +92,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 	                        Me.YValue = yValue
 	                  End Sub
 	            End Class
-	{{endregion}}
+	```
 
 
 
@@ -100,7 +100,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 
 #### __C#__
 
-{{region radchart-howto-highlight-pointmark-on-click_2}}
+```C#
 	void ChartArea_ItemClick(object sender, ChartItemClickEventArgs e)
 	        {
 	            this.ClearPointMarkSelectedState();
@@ -113,7 +113,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 	
 	            this.SetPointMarkSelectedState();
 	        }
-	{{endregion}}
+	```
 
 
 
@@ -121,14 +121,14 @@ It is common scenario that you would like to select a single PointMark of Line S
 
 #### __VB.NET__
 
-{{region radchart-howto-highlight-pointmark-on-click_3}}
+```VB.NET
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
 	Me.ClearPointMarkSelectedState()
 	Dim pointMarks = radChart.DefaultView.ChartArea.ChildrenOfType(Of PointMark)().ToList(Of PointMark)()
 	Me.selectedPointMark = pointMarks.Where(Function(x) x.DataContext = e.DataPoint).SingleOrDefault()
 	Me.SetPointMarkSelectedState()
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -136,7 +136,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 
 #### __C#__
 
-{{region radchart-howto-highlight-pointmark-on-click_4}}
+```C#
 	private void SetPointMarkSelectedState()
 	        {
 	            if (this.selectedPointMark == null)
@@ -155,13 +155,13 @@ It is common scenario that you would like to select a single PointMark of Line S
 	            this.selectedPointMark.Fill = new SolidColorBrush(Colors.White);
 	            this.selectedPointMark.Shape = MarkerShape.Circle;
 	        }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-highlight-pointmark-on-click_5}}
+```VB.NET
 	Private Sub SetPointMarkSelectedState()
 	If Me.selectedPointMark Is Nothing Then
 	Return
@@ -177,7 +177,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 	Me.selectedPointMark.Fill = New SolidColorBrush(Colors.White)
 	Me.selectedPointMark.Shape = MarkerShape.Circle
 	End Sub
-	{{endregion}}
+	```
 
 
 

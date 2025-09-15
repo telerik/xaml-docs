@@ -31,8 +31,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 In order to use __RadToolTip__ you should take advantage of the __RadToolTipService__. You can set the attached property __RadToolTipService.TooltipContent__ on some element in XAML in order to show tooltip over it.
 
-#### __[XAML] Example 1__
-{{region radtooltip-getting-started-0}}
+__Example 1__
+```XAML
      <Grid x:Name="LayoutRoot" Background="White">
         <Ellipse x:Name="ellipse"
                  Width="80"
@@ -65,7 +65,7 @@ In order to use __RadToolTip__ you should take advantage of the __RadToolTipServ
             <Run Text=" Here" />
         </TextBlock>
      </Grid>
-{{endregion}}
+```
 
 Figure 1 demonstrates how the code above is rendered on screen.{% if site.site_name == 'Silverlight' %}
 
@@ -75,24 +75,22 @@ Figure 1 demonstrates how the code above is rendered on screen.{% if site.site_n
 
 The same configuration can be achieved from code like this:
 
-#### __[C#] Example 2__
-{{region radtooltip-getting-started-1}}
+__Example 2__
+```C#
     RadToolTipService.SetToolTipContent(this.ellipse, "RadToolTip enables you to specify&#x0a;tooltips on various UI controls.");
     RadToolTipService.SetPlacement(this.ellipse, System.Windows.Controls.Primitives.PlacementMode.Center);
-{{endregion}}
-
-#### __[VB.NET] Example 2__
-{{region radtooltip-getting-started-2}}
+```
+```VB.NET
     RadToolTipService.SetToolTipContent(Me.ellipse, "RadToolTip enables you to specify&#x0a;tooltips on various UI controls.")
     RadToolTipService.SetPlacement(Me.ellipse, System.Windows.Controls.Primitives.PlacementMode.Center)
-{{endregion}}
+```
 
 The __RadToolTipService__ controls the open/close functionality as well as the visual appearance of a __RadToolTip__ object. Also, the service provides a rich set of properties customizing the visualization of the __RadToolTip__ object.
 
 For example you can change the element next to which a tooltip will be opened. This can be achieved by setting the __RadToolTipService.PlacementTarget__ property
 
-#### __[XAML] Example 3__
-{{region radtooltip-getting-started-3}}
+__Example 3__
+```XAML
     <StackPanel Orientation="Horizontal">
 		<Rectangle Width="30"
 		           Height="30"
@@ -108,7 +106,7 @@ For example you can change the element next to which a tooltip will be opened. T
 		           VerticalAlignment="Center"
 		           Fill="Blue" />
 	</StackPanel>
-{{endregion}}
+```
 
 
 Figure 2 shows how the ToolTip will be visualized with the above defined settings{% if site.site_name == 'Silverlight' %}
@@ -159,8 +157,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radtooltip-getting-started_7}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -169,7 +167,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

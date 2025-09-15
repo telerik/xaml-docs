@@ -23,7 +23,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 
 #### __XAML__
 
-{{region radtreeview-styling-and-appearance-styling-expander_0}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -40,7 +40,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 ![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_010.png)
 
@@ -54,19 +54,19 @@ For  the purpose of the following tutorial I will use the following treeview dec
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_1}}
+	```XAML
 		<Style x:Key="ExpanderStyle" TargetType="ToggleButton">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
 			<Setter Property="Cursor" Value="Hand"/>
 		</Style>
-		{{endregion}}
+		```
 
 * Next, we need to change the __Template__ property of the __ToggleButton__ (Expander). Add the following elements to your Template:
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_2}}
+	```XAML
 		<Style x:Key="ExpanderStyle" TargetType="ToggleButton">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
@@ -91,13 +91,13 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+		```
 
 * Set the __ExpanderStyle__ property of your treeview:
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_3}}
+	```XAML
 		<telerik:RadTreeView Margin="8" x:Name="radTreeView"
 			ExpanderStyle="{StaticResource ExpanderStyle}">
 			<telerik:RadTreeViewItem Header="Sport Categories">
@@ -115,7 +115,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-		{{endregion}}
+		```
 
 * As you can see from the next figure, the expander of the treeview is changed: 
 ![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_020.png)
@@ -124,7 +124,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_4}}
+	```XAML
 		<Style x:Key="ExpanderStyle" TargetType="ToggleButton">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
@@ -174,7 +174,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+		```
 
 	The __ButtonOver__grid will be animated when the mouse is position over the expander.
 
@@ -208,7 +208,7 @@ Here is the result XAML:
 
 #### __XAML__
 
-{{region radtreeview-styling-and-appearance-styling-expander_5}}
+```XAML
 	<Style x:Key="ExpanderStyle" TargetType="ToggleButton">
 	    <Setter Property="IsEnabled" Value="True" />
 	    <Setter Property="IsTabStop" Value="False" />
@@ -294,7 +294,7 @@ Here is the result XAML:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+	```
 
 Here is the result: 
 
@@ -315,7 +315,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 
 #### __XAML__
 
-{{region radtreeview-styling-and-appearance-styling-expander_6}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -332,7 +332,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 ![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_090.png)
 
@@ -346,19 +346,19 @@ For  the purpose of the following tutorial I will use the following treeview dec
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_7}}
+	```XAML
 		<Style x:Key="ExpanderStyle" TargetType="ToggleButton">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
 			<Setter Property="Cursor" Value="Hand"/>
 		</Style>
-	{{endregion}}
+	```
 
 * Next, we need to change the __Template__ property of the __ToggleButton__ (Expander). Add the following elements to your Template:			
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_8}}
+	```XAML
 		<Style x:Key="ExpanderStyle" TargetType="{x:Type ToggleButton}">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
@@ -383,13 +383,13 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Setter.Value>
 			</Setter>
 		</Style>
-	{{endregion}}
+	```
 
 * Set the __ExpanderStyle__ property of your treeview:
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_9}}
+	```XAML
 		<telerik:RadTreeView Margin="8" x:Name="radTreeView"
 			ExpanderStyle="{StaticResource ExpanderStyle}">
 			<telerik:RadTreeViewItem Header="Sport Categories">
@@ -407,7 +407,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 	As you can see from the next figure, the expander of the treeview is changed: 
 	![{{ site.framework_name }} RadTreeView  ](images/RadTreeView_StylingAppearanceStylingExpander_100.png)
@@ -416,7 +416,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_10}}
+	```XAML
 		<Style x:Key="ExpanderStyle" TargetType="{x:Type ToggleButton}">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
@@ -466,7 +466,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Setter.Value>
 			</Setter>
 		</Style>
-	{{endregion}}
+	```
 
 	The __ButtonOver__ grid will be animated when the mouse is position over the expander.
 		  
@@ -475,7 +475,7 @@ For  the purpose of the following tutorial I will use the following treeview dec
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_11}}
+	```XAML
 		<ControlTemplate.Triggers>
 			<Trigger Property="IsMouseOver" Value="True">
 				<Trigger.EnterActions>
@@ -506,14 +506,14 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</Trigger.ExitActions>
 			</Trigger>
 		</ControlTemplate.Triggers>
-	{{endregion}}
+	```
 
 	When the mouse is over the expander the "ButtonOver" element must be visualized (set its Opacity property to 1), while the "Button" element must be hidden (set its Opacity property to 0). Respectively, when the mouse leaves the expander area, then the opposite operations must be performed. Here is how the "EnterActions" and "ExitActions" for the __IsMouseOver__  trigger should look like:
 			  
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_12}}
+	```XAML
 		<Trigger Property="IsMouseOver" Value="True">
 			<Trigger.EnterActions>
 				<BeginStoryboard>
@@ -532,13 +532,13 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</BeginStoryboard>
 			</Trigger.ExitActions>
 		</Trigger>
-	{{endregion}}
+	```
 
 	When the __ToggleButton__ is checked, then the "CollapseVisualOver" and "CollapseVisual" elements must be hidden (set their Opacity property to 0). When the ToggleButton is __checked__, then the both elements must be visualized (set their Opacity property to 1). Here is how the "EnterActions" and "ExitActions" for the __IsChecked__ trigger should look like:
 
 	#### __XAML__
 
-	{{region radtreeview-styling-and-appearance-styling-expander_13}}
+	```XAML
 		<Trigger Property="IsChecked" Value="True">
 			<Trigger.EnterActions>
 				<BeginStoryboard>
@@ -557,13 +557,13 @@ For  the purpose of the following tutorial I will use the following treeview dec
 				</BeginStoryboard>
 			</Trigger.ExitActions>
 		</Trigger>
-	{{endregion}}
+	```
 
 And here is the complete XAML for the "ControlTemplate.Triggers" section:
 
 #### __XAML__
 
-{{region radtreeview-styling-and-appearance-styling-expander_14}}
+```XAML
 	<ControlTemplate.Triggers>
 	    <Trigger Property="IsMouseOver" Value="True">
 	        <Trigger.EnterActions>
@@ -602,7 +602,7 @@ And here is the complete XAML for the "ControlTemplate.Triggers" section:
 	        </Trigger.ExitActions>
 	    </Trigger>
 	</ControlTemplate.Triggers>
-{{endregion}}
+```
 
 > With the same success and effectiveness you could use Expression Blend for adding interactivity. Since the operations in this example are pretty simple I decided to write the triggers by hand.
 

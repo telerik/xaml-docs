@@ -18,8 +18,8 @@ To enable the control panel, use the __ControlPanelItems__ property of RadCardVi
 
 The following example is an extended version of the sample from the [Getting Started]({%slug radcardview-getting-started%}) article.
 
-#### __[XAML] Example 1: Defining GridViewControlPanelItems__
-{{region radcardview-features-control-panel-0}}
+__Example 1: Defining GridViewControlPanelItems__
+```XAML
 	<telerik:RadCardView x:Name="cardView" CardHeaderBinding="{Binding Header}" MinorLength="140">
 		<telerik:RadCardView.ControlPanelItems>
 			<cardView:ControlPanelItemCollection>
@@ -49,7 +49,7 @@ The following example is an extended version of the sample from the [Getting Sta
 			</cardView:ControlPanelItemCollection>               
 		</telerik:RadCardView.ControlPanelItems>
 	</telerik:RadCardView>
-{{endregion}}
+```
 
 >tip `cardView:` points to `xmlns:cardView="clr-namespace:Telerik.Windows.Controls.Data.CardView;assembly=Telerik.Windows.Controls.Data"`. 
 
@@ -72,8 +72,8 @@ CardViewControlPanelItem allows you to provide objects to the __Content__ and __
 
 The following example is an extended version of the sample from the [Getting Started]({%slug radcardview-getting-started%}) article.
 
-#### __[XAML] Example 2: Defining ButtonContentTemplate and ContentTemplate__
-{{region radcardview-features-control-panel-1}}
+__Example 2: Defining ButtonContentTemplate and ContentTemplate__
+```XAML
 	<Grid>
         <Grid.Resources>
             <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />
@@ -100,7 +100,7 @@ The following example is an extended version of the sample from the [Getting Sta
             </telerik:RadCardView.ControlPanelItems>
         </telerik:RadCardView>
     </Grid>
-{{endregion}}
+```
 
 #### Figure 2: CardView Control Panel with Data Templates
 ![{{ site.framework_name }} RadCardView CardView Control Panel with Data Templates](images/radcardview-features-control-panel-1.png)

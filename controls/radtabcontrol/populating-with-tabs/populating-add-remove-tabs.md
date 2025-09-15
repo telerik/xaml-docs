@@ -22,7 +22,7 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 
 #### __C#__
 
-{{region radtabcontrol-populating-add-remove-tabs_0}}
+```C#
 	private void AddTab()
 	{
 	    RadTabItem itemToAdd = new RadTabItem()
@@ -31,19 +31,19 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 	    };
 	    radTabControl.Items.Add(itemToAdd);
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-populating-add-remove-tabs_1}}
+```VB.NET
 	Private Sub AddTab()
 	    Dim itemToAdd As New RadTabItem()
 	    itemToAdd.Header = "New Tab"
 	    radTabControl.Items.Add(itemToAdd)
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -51,22 +51,22 @@ This tutorial will walk you through the common tasks of __adding__ and __removin
 
 #### __C#__
 
-{{region radtabcontrol-populating-add-remove-tabs_2}}
+```C#
 	private void RemoveTab( RadTabItem tabItemToRemove )
 	{
 	    radTabControl.Items.Remove( tabItemToRemove );
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-populating-add-remove-tabs_3}}
+```VB.NET
 	Private Sub RemoveTab( ByVal tabItemToRemove As RadTabItem )
 	    radTabControl.Items.Remove( tabItemToRemove )
 	End Sub
-	{{endregion}}
+	```
 
 
 
@@ -79,14 +79,14 @@ And here is its XAML declaration:
 
 #### __XAML__
 
-{{region radtabcontrol-populating-add-remove-tabs_4}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl">
 	    <telerik:RadTabItem Header="Calendar"/>
 	    <telerik:RadTabItem Header="Colors"/>
 	    <telerik:RadTabItem Header="Quote"/>
 	    <telerik:RadTabItem Header="Web Sites"/>
 	</telerik:RadTabControl>
-	{{endregion}}
+	```
 
 
 

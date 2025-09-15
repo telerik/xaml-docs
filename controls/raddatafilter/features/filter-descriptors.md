@@ -22,30 +22,30 @@ Here is an example of a predefined descriptor.
 
 #### __XAML__
 
-{{region raddatafilter-features-filter-descriptors_0}}
+```XAML
 
 	<telerik:RadDataFilter x:Name="radDataFilter" />
-	{{endregion}}
+	```
 
 
 
 #### __C#__
 
-{{region raddatafilter-features-filter-descriptors_1}}
+```C#
 
 	this.radDataFilter.Source = SampleData.GetEmployees();
 	this.radDataFilter.FilterDescriptors.Add( new FilterDescriptor( "Name", FilterOperator.Contains, "m" ) );
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region raddatafilter-features-filter-descriptors_2}}
+```VB.NET
 
 	Me.radDataFilter.Source = SampleData.GetEmployees()
 	Me.radDataFilter.FilterDescriptors.Add(New FilterDescriptor("Name", FilterOperator.Contains, "m"))
-	{{endregion}}
+	```
 
 
 

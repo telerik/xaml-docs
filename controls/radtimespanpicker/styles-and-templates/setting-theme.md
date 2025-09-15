@@ -31,8 +31,8 @@ __Figure 1:__ Adding the needed references
 
 After that merge the xaml files in the App.xaml as shown in __Example 1__:
 
-#### __[XAML] Example 1: Merging the .xaml files__
-{{region xaml-radtimespanpicker-styles-and-templates-setting-theme_0}}
+__Example 1: Merging the .xaml files__
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -41,7 +41,7 @@ After that merge the xaml files in the App.xaml as shown in __Example 1__:
 	        </ResourceDictionary.MergedDictionaries>
 	    </ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 	
 * The second appraoch that you could use in order to apply the desired theme is to add references to the required assemblies from Binaries.NoXaml folder. For that purpose a folder named Themes needs to be created. That folder should contain the corresponding .xaml files from Themes.Implicit/../Windows8/../Themes/ folder located in the installation folder:
 
@@ -50,9 +50,9 @@ After that merge the xaml files in the App.xaml as shown in __Example 1__:
 	
 	__Example 2__ shows how to merge the copied .xaml files.            
 
-	#### __[XAML] Example 2: Merging the .xaml files__
+	__Example 2: Merging the .xaml files__
 
-	{{region xaml-radtimespanpicker-styles-and-templates-setting-theme_1}}
+	```XAML
 		<Application.Resources>
 		    <ResourceDictionary>
 		        <ResourceDictionary.MergedDictionaries>
@@ -61,7 +61,7 @@ After that merge the xaml files in the App.xaml as shown in __Example 1__:
 		        </ResourceDictionary.MergedDictionaries>
 		    </ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```
 	
 Either way you choose, the end result will be the following:
 

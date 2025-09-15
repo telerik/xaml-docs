@@ -32,9 +32,9 @@ You can then [set a theme]({%slug styling-apperance-implicit-styles-overview%}) 
 
 Once you've set a theme for your application, add the following dictionary to your list of merged dictionaries which will enable you to use the **TelerikWebUI** [font glyphs]({%slug common-styling-appearance-glyphs-reference-sheet%}) for the icons in the project.
 
-#### __[XAML] Example 1: The User Control's Definition__
+__Example 1: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-text-analysis-1}}
+```XAML
     <Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -43,15 +43,15 @@ Once you've set a theme for your application, add the following dictionary to yo
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 ## Define the User Control's Layout
 
 Now, add a new **UserControl** to your project. You can give it a descriptive name, such as TextAnalysisControl, for example. Next, define the following XAML:
 
-#### __[XAML] Example 2: The User Control's Definition__
+__Example 2: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-text-analysis-1}}
+```XAML
 
     <UserControl x:Class="AzureCognitiveServices.TextAnalysisControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -90,7 +90,7 @@ Now, add a new **UserControl** to your project. You can give it a descriptive na
 			</Border>
 		</Grid>
 	</UserControl>
-{{endregion}}
+```
 
 ## Add the Microsoft.Azure.CognitiveServices.Language NuGet Package
 
@@ -104,9 +104,9 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
 
 **Example 3** demonstrates how to handle the button's **Click** event and use the Text Analytics API to analyze the text input in the RadWatermarkBox.
 
-#### __[XAML] Example 3: The User Control's Definition__
+__Example 3: The User Control's Definition__
 
-{{region cloud-integration-cognitive-services-text-analysis-2}}
+```XAML
 
     public partial class TextAnalysisControl : UserControl
     {
@@ -163,7 +163,7 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
             this.Confidence = (double) (result * 100);
         }
     }
-{{endregion}}
+```
 
 The code from **Example 3** first sets up the **TextAnalyticsAPI** by specifying the region and subscription key of the Text Analytics API account you set up earlier. 
 
@@ -175,12 +175,12 @@ Once both results are retrieved, the code calculates their average and passes it
 
 That's it. You can now use the control however you find necessary to analyze user input.
 
-#### __[XAML] Example 4: Use the User Control__
+__Example 4: Use the User Control__
 
-{{region cloud-integration-cognitive-services-text-analysis-4}}
+```XAML
 
 	<local:TextAnalysisControl Height="60" />
-{{endregion}}
+```
 
 **Figure 1** shows the final result in the Office2016 theme.
 

@@ -39,17 +39,17 @@ Before proceeding with adding __RadNumericUpDown__ to your project, make sure th
 
 You can add __RadNumericUpDown__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the **Visual Studio Toolbox** and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadNumericUpDown in XAML__
+__Example 1: Adding RadNumericUpDown in XAML__
 
-{{region xaml-radnumericupdown-drag-and-drop_1}}
+```XAML
 	<telerik:RadNumericUpDown />
-{{endregion}}
+```
 
 >In order to use __RadNumericUpDown__ in XAML you have to add the namespace declaration shown in __Example 2__:
->#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region telerik-schemas}}
+>__Example 2: Declaring Telerik Namespace__
+>```XAML
 >    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
->{{endregion}}
+>```
 
 If you run the application you will see and empty RadNumericUpDown as demonstrated in __Figure 1__. 
 
@@ -63,11 +63,11 @@ If you run the application you will see and empty RadNumericUpDown as demonstrat
 
 You can then bind RadNumericUpDown's **Value** to a property of your view model as well as customize it by setting its [properties]({%slug radnumericupdown-behavior%}) similarly to **Example 3**:
 
-#### __[XAML] Example 3: Binding RadNumericUpDown's Value__
+__Example 3: Binding RadNumericUpDown's Value__
 
-{{region xaml-radnumericupdown-drag-and-drop_2}}
+```XAML
 	<telerik:RadNumericUpDown Value="{Binding Clubs[0].StadiumCapacity}" Minimum="10000" Maximum="100000" SmallChange="1000" />
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -86,8 +86,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radnumericupdown-getting-started_6}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -97,7 +97,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

@@ -33,8 +33,8 @@ How to disable the text selection when a cell enters edit mode by pressing the F
 1. Create a custom RadGridView column and override its `PrepareCellForEdit` method.
 2. In the method override, get the editing element (TextBox) and manually set its `SelectionStart` property.
 
-#### __[C#]__
-{{region kb-gridview-prevent-f2-text-selection-0}}
+
+```C#
 	public class CustomGridViewDataColumn : GridViewDataColumn
 	{
 		protected override object PrepareCellForEdit(FrameworkElement editingElement, RoutedEventArgs editingEventArgs)
@@ -48,14 +48,14 @@ How to disable the text selection when a cell enters edit mode by pressing the F
 			return cell;
 		}
 	}
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-gridview-prevent-f2-text-selection-1}}
+
+```XAML
 	<telerik:RadGridView.Columns>
 		<local:CustomGridViewDataColumn DataMemberBinding="{Binding Name}" />
 	</telerik:RadGridView.Columns>
-{{endregion}}
+```
 
 ## See Also
 * [Keyboard Support]({%slug gridview-overview-keyboard-support%})

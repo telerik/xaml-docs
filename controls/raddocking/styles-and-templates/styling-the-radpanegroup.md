@@ -16,9 +16,9 @@ The [RadPaneGroup]({%slug raddocking-features-pane-groups%}) control groups mult
 
 In order to style all __RadPaneGroups__ in a RadDocking, you should create a style targeting __RadPaneGroup__.
 
-#### __[XAML] Example 1: Creating an implicit style targeting RadPaneGroup__
+__Example 1: Creating an implicit style targeting RadPaneGroup__
 
-{{region xaml-raddocking-styling-the-radpanegroup-0}}
+```XAML
     <Application.Resources>
         <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
         <Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
@@ -41,7 +41,7 @@ In order to style all __RadPaneGroups__ in a RadDocking, you should create a sty
             </telerik:RadSplitContainer>
         </telerik:RadDocking>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Styled RadPaneGroup in the Office2016 theme__
 ![Styled RadPaneGroup in the Office2016 theme](images/RadDocking_RadPaneGroup_Styling.png)

@@ -28,7 +28,7 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 
 #### __C#__
 
-{{region cs-radchart-features-annotations-marked-zone_0}}
+```C#
 	DataSeries series1 = new DataSeries()
 	 {
 	   new DataPoint(145),
@@ -49,13 +49,13 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	series1.Definition.Appearance.Stroke = new SolidColorBrush(Colors.Black);
 	series1.Definition.Appearance.PointMark.Stroke = new SolidColorBrush(Colors.Black);
 	this.radChart.DefaultView.ChartArea.DataSeries.Add(series1);
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-annotations-marked-zone_1}}
+```VB.NET
 	InitializeComponent()
 	Dim series1 As New DataSeries() With
 	{ New DataPoint(145),
@@ -76,13 +76,13 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	series1.Definition.Appearance.Stroke = New SolidColorBrush(Colors.Black)
 	series1.Definition.Appearance.PointMark.Stroke = New SolidColorBrush(Colors.Black)
 	RadChart1.DefaultView.ChartArea.DataSeries.Add(series1)
-	{{endregion}}
+	```
 
 
 
 #### __XAML__
 
-{{region xaml-radchart-features-annotations-marked-zone_2}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -107,13 +107,13 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-annotations-marked-zone_3}}
+```C#
 	MarkedZone redZone = new MarkedZone();
 	redZone.StartY = 110;
 	redZone.EndY = 130;
@@ -129,13 +129,13 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	this.radChart.DefaultView.ChartArea.Annotations.Add(redZone);
 	this.radChart.DefaultView.ChartArea.Annotations.Add(yellowZone);
 	this.radChart.DefaultView.ChartArea.Annotations.Add(greenZone);
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-annotations-marked-zone_4}}
+```VB.NET
 	Dim redZone As New MarkedZone()
 	redZone.StartY = 110
 	redZone.EndY = 130
@@ -151,14 +151,14 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(redZone)
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(yellowZone)
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(greenZone)
-	{{endregion}}
+	```
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Annotations_MarkedZone_01.png)
 
 Here is an example of a marked zone that is limited in both directions.
 
 #### __XAML__
 
-{{region xaml-radchart-features-annotations-marked-zone_5}}
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -177,7 +177,7 @@ Here is an example of a marked zone that is limited in both directions.
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -189,7 +189,7 @@ The Marked Zones can overlap each other. In such case their __Z-Index__ will be 
 
 #### __XAML__
 
-{{region xaml-radchart-features-annotations-marked-zone_6}}
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -212,7 +212,7 @@ The Marked Zones can overlap each other. In such case their __Z-Index__ will be 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	  </telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -224,7 +224,7 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 
 #### __XAML__
 
-{{region xaml-radchart-features-annotations-marked-zone_7}}
+```XAML
 	<FrameworkElement.Resources>
 	    <Style x:Key="MarkedZoneStyle"
 	    TargetType="Rectangle">
@@ -252,7 +252,7 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

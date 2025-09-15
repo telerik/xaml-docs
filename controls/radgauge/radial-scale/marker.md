@@ -13,7 +13,7 @@ position: 3
 The Marker is a scale indicator that points to a value along a scale. It is a small shape that can be located around the scale bar. To add marker to the scale you have to include Marker element to the list of the scale indicators:
 
 #### __XAML__
-{{region radial-scale-marker_0}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale>
 	        <telerik:RadialScale.Indicators>
@@ -21,7 +21,7 @@ The Marker is a scale indicator that points to a value along a scale. It is a sm
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 The Marker supports the following features:
 

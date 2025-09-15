@@ -34,23 +34,23 @@ Such an issue can occur if a custom FilteringControl is defined and its base con
 
 To resolve this, ensure that the constructor of the base FilteringControl class is called:
 
-#### __[C#]__
-{{region cs-kb-gridview-field-filters-not-visible-first-open-0}}
+
+```C#
 	public CustomFilteringControl(GridViewColumn column) : base(column)
 	{
 		// ...
 	}
-{{endregion}}
+```
 
 You can then assign the custom filtering control as follows:
 
-#### __[C#]__
-{{region cs-kb-gridview-field-filters-not-visible-first-open-1}}
+
+```C#
 	foreach (var column in GridView.Columns)
 	{
 		column.FilteringControl = new CustomFilteringControl(column);
 	}
-{{endregion}}
+```
 
 ## See Also
 * [Popup Filtering]({%slug gridview-filtering-basic%}#popup-filtering)

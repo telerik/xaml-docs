@@ -61,9 +61,9 @@ You are now able to work with the entities you chose through the created **DbCon
 
 All the interaction with the Azure SQL Database will be done by the viewmodel. First define the properties which will be used to interact with the view.
 
-#### __[C#] Example 1: Define public properties__
+__Example 1: Define public properties__
 
-{{region cs-cloud-integration-azure-sql-database-1}}
+```C#
 
     public class MainWindowViewModel : ViewModelBase
 	{
@@ -103,15 +103,15 @@ All the interaction with the Azure SQL Database will be done by the viewmodel. F
 			}
 		}
 	}
-{{endregion}}
+```
 
 ## Step 5: Query the Data
 
 Now what's left is to actually make the connection to the database and query the data. For the purpose, create a new **BackgroundWorker** in the viewmodel's constructor and handle the **DoWork** and **RunWorkerCompleted** events as shown in **Example 3**.
 
-#### __[C#] Example 2: Add logic to work with the SQL database__
+__Example 2: Add logic to work with the SQL database__
 
-{{region cs-cloud-integration-azure-sql-database-2}}
+```C#
 
     public class MainWindowViewModel : ViewModelBase
 	{
@@ -143,7 +143,7 @@ Now what's left is to actually make the connection to the database and query the
 			this.IsBusy = false;
 		}
 	}
-{{endregion}}
+```
 
 What the code in **Example 3** does is to set the **IsBusy** property so that some indication is displayed in the UI. It then initializes the **BackgroundWorker**, subscribes to its events and runs it asynchronously. The **DoWork** handler then creates a new instance of the **AdventureWorksEntities** class and gets its **ObjectContext** via the explicit implementation of the **IObjectContextAdapter** interface.
 
@@ -153,9 +153,9 @@ The **RunWorkerCompleted** event handler then creates a new instance of the gene
 
 The final step is to actually save any changes that are made the database as well as obtain the updated data in case any changes on the cloud have occured. **Example 4** demonstrates the code for these two operations.
 
-#### __[C#] Example 3: Save and load changes__
+__Example 3: Save and load changes__
 
-{{region cs-cloud-integration-azure-sql-database-3}}
+```C#
 
     public MainWindowViewModel()
     {
@@ -176,15 +176,15 @@ The final step is to actually save any changes that are made the database as wel
         this.IsBusy = true;
         this.worker.RunWorkerAsync();
     }
-{{endregion}}
+```
 
 ## Step 6: Create the Layout
 
 All that's left is to define the actual user interface clients of this application will use. The layout consists of a RadGridView to display the data, a RadDataPager to page it and two buttons - one to save the changes to the database and one to load newly-updated data from the cloud. Note that the **local** namespace in the example corresponds to the namespace where **MainWindowViewModel** resides.
 
-#### __[XAML] Example 4: The final layout__
+__Example 4: The final layout__
 
-{{region xaml-cloud-integration-azure-sql-database-4}}
+```XAML
 
     <Grid>
 		<Grid.DataContext>
@@ -201,7 +201,7 @@ All that's left is to define the actual user interface clients of this applicati
         <telerik:RadButton Grid.Row="2" Content="Save Changes" Command="{Binding SaveChangesCommand}" />
 		<telerik:RadButton Grid.Row="3" Content="Load Changes" Command="{Binding LoadDataCommand}" />
     </Grid>
-{{endregion}}
+```
 
 **Figure 1** demonstrates the final result in the **Office2016** theme.
 

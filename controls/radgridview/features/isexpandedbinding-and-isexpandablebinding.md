@@ -15,8 +15,8 @@ position: 18
 As of __R1 2018 SP2 RadGridView__ exposes the __IsExpandedBinding__ and __IsExpandableBinding__ properties. Through it the expanded and expandable states of the rows can be synchronized with the view model. For the purpose of demonstrating this functionality, the following business model will be defined.
 
 
-#### __[C#] Example 1: Defining the business model__
-{{region radgridview-isexpanded-and-isexpandablebinding_0}}
+__Example 1: Defining the business model__
+```C#
     public class WarehouseItem 
     {
         private bool isExpanded;
@@ -59,10 +59,10 @@ As of __R1 2018 SP2 RadGridView__ exposes the __IsExpandedBinding__ and __IsExpa
         public ObservableCollection<WarehouseItem> Items { get; set; }
 
     }
-{{endregion}}
+```
 
-#### __[C#] Example 2: Create sample data__
-{{region radgridview-isexpanded-and-isexpandablebinding_1}}
+__Example 2: Create sample data__
+```C#
 	public class MyDataContext
     {
         ObservableCollection<WarehouseItem> warehouseData;
@@ -99,14 +99,14 @@ As of __R1 2018 SP2 RadGridView__ exposes the __IsExpandedBinding__ and __IsExpa
             }
         }
     }
-{{endregion}}
+```
 
 ## IsExpandedBinding
 
 This property controls whether the hierarchy should be expanded or not. Setting the bound property to __true__ will result in expanding the given hierarchy.
 
 #### [XAML] Example 3: Binding the IsExpandedBinding to the business model
-{{region radgridview-isexpanded-and-isexpandablebinding_2}}
+```XAML
 	<telerik:RadGridView x:Name="RadGridView"
 								 ItemsSource="{Binding WarehouseData}"
                                  IsExpandedBinding="{Binding IsExpanded, Mode=TwoWay}"
@@ -121,7 +121,7 @@ This property controls whether the hierarchy should be expanded or not. Setting 
                 </telerik:GridViewTableDefinition>
             </telerik:RadGridView.ChildTableDefinitions>
         </telerik:RadGridView>
-{{endregion}}
+```
 
 #### Figure 1: Expanding hierarchy through the IsExpandedBinding property
 ![Telerik {{ site.framework_name }} DataGrid-isexpandedbinding-isexpandablebinding 1](images/radgridview-isexpandedbinding-isexpandablebinding_1.png)
@@ -131,7 +131,7 @@ This property controls whether the hierarchy should be expanded or not. Setting 
 The visibility of the __GridViewToggleButton__ can be controlled through setting the property value. For example, if there are no items present in the hierarchical collection, the bound property can be set to __false__ thus, the toggle button will be hidden.
 
 #### [XAML] Example 4: Binding the IsExpandableBinding to the business model
-{{region radgridview-isexpanded-and-isexpandablebinding_3}}
+```XAML
 	<telerik:RadGridView x:Name="RadGridView"
 								 ItemsSource="{Binding WarehouseData}"
                                  IsExpandableBinding="{Binding IsExpandable, Mode=TwoWay}"
@@ -146,7 +146,7 @@ The visibility of the __GridViewToggleButton__ can be controlled through setting
                 </telerik:GridViewTableDefinition>
             </telerik:RadGridView.ChildTableDefinitions>
         </telerik:RadGridView>
-{{endregion}}
+```
 
 #### Figure 2: Hiding the GridViewToggleButton through the IsExpandableBinding
 ![Telerik {{ site.framework_name }} DataGrid-isexpandedbinding-isexpandablebinding 2](images/radgridview-isexpandedbinding-isexpandablebinding_2.png)

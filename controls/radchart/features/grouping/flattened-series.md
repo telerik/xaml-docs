@@ -20,7 +20,7 @@ Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ pr
 
 #### __XAML__
 
-{{region xaml-radchart-features-flattened-series_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -41,14 +41,14 @@ Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ pr
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_FlattenedSeries_01.png)
 
 Here is the same __RadChart__ after setting the property to __True__.
 
 #### __XAML__
 
-{{region xaml-radchart-features-flattened-series_1}}
+```XAML
 	<telerik:SeriesMapping.GroupingSettings>
 	    <telerik:GroupingSettings ShouldFlattenSeries="True">
 	        <telerik:GroupingSettings.GroupDescriptors>
@@ -56,30 +56,30 @@ Here is the same __RadChart__ after setting the property to __True__.
 	        </telerik:GroupingSettings.GroupDescriptors>
 	    </telerik:GroupingSettings>
 	</telerik:SeriesMapping.GroupingSettings>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-flattened-series_2}}
+```C#
 	public Sample()
 	{
 	    InitializeComponent();
 	    this.radChart.SeriesMappings[ 0 ].GroupingSettings.ShouldFlattenSeries = true;
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-flattened-series_3}}
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.radChart.SeriesMappings(0).GroupingSettings.ShouldFlattenSeries = True
 	End Sub
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_FlattenedSeries_02.png)
 
@@ -91,15 +91,15 @@ Here is an example of a __CheckBox__ that manages the series flattening of the _
 
 #### __XAML__
 
-{{region xaml-radchart-features-flattened-series_4}}
+```XAML
 	<CheckBox Click="CheckBox_Click" Content="Flatten" />
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-flattened-series_5}}
+```C#
 	private void CheckBox_Click(object sender, RoutedEventArgs e)
 	{
 	    bool? isChecked = (sender as CheckBox).IsChecked;
@@ -108,13 +108,13 @@ Here is an example of a __CheckBox__ that manages the series flattening of the _
 	    this.radChart.SeriesMappings[0].GroupingSettings.ShouldFlattenSeries = (bool)isChecked;
 	    this.radChart.Rebind();
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-flattened-series_6}}
+```VB.NET
 	Private Sub CheckBox_Click(sender As Object, e As RoutedEventArgs)
 	    Dim isChecked As System.Nullable(Of Boolean) = TryCast(sender, CheckBox).IsChecked
 	    If isChecked Is Nothing Then
@@ -123,6 +123,6 @@ Here is an example of a __CheckBox__ that manages the series flattening of the _
 	    Me.radChart.SeriesMappings(0).GroupingSettings.ShouldFlattenSeries = CBool(isChecked)
 	    Me.radChart.Rebind()
 	End Sub
-{{endregion}}
+```
 
 

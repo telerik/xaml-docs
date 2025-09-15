@@ -22,7 +22,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-series-mapping-items-source_0}}
+```C#
 	public class MyDateObject
 	{
 	    public double Value { get; set; }
@@ -47,13 +47,13 @@ The following example will demonstrate how to bind two Line Series - the first o
 	        return result;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-series-mapping-items-source_1}}
+```VB.NET
 	Public Class MyDateObject
 	    Public Property Value() As Double
 	    Public Property Value2() As Double
@@ -74,7 +74,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 	        Return result
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
@@ -82,7 +82,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-series-mapping-items-source_2}}
+```C#
 	public class MyViewModel : ViewModelBase
 	{
 	    private ObservableCollection<MyDateObject> _data;
@@ -125,13 +125,13 @@ The following example will demonstrate how to bind two Line Series - the first o
 	        this.MappingData = MyDateObject.GetData(20);
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-series-mapping-items-source_3}}
+```VB.NET
 	Public Class MyViewModel
 	    Inherits ViewModelBase
 	    Private _data As ObservableCollection(Of MyDateObject)
@@ -165,7 +165,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 	        Me.MappingData = MyDateObject.GetData(20)
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 
 
@@ -173,7 +173,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-series-mapping-items-source_4}}
+```XAML
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding Data}" UseDefaultLayout="False">
 	            <telerik:ChartArea x:Name="ChartArea1" EnableAnimations="False"/>
 	            <telerik:RadChart.SeriesMappings>
@@ -191,7 +191,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 	                </telerik:SeriesMapping>
 	            </telerik:RadChart.SeriesMappings>
 	        </telerik:RadChart>
-{{endregion}}
+```
 
 
 

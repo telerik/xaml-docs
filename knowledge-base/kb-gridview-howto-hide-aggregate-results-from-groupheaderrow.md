@@ -26,20 +26,20 @@ How to hide the aggregate results from the GroupHeaderRow when RadGridView is gr
 
 1. Handle the __Loaded__ event of the __AggregateResultsList__, which shows the aggregate results in the GroupHeaderRow, through an implicit style.
 
-	#### __[XAML]__
-	{{region kb-gridview-howto-hide-aggregate-results-from-groupheaderrow-0}}
+	
+	```XAML
 		<!--If the NoXaml binaries are used, the following style needs to be based on the default one, like so:-->
         <!--<Style TargetType="telerik:AggregateResultsList" BasedOn="{StaticResource AggregateResultsListStyle}">-->
 
         <Style TargetType="telerik:AggregateResultsList">
             <EventSetter Event="Loaded" Handler="AggregateResultsList_Loaded" />
         </Style>
-	{{endregion}}
+	```
 
 2. Obtain a reference to the __AggregateResultsList__ in the Loaded event and remove items from its ItemsSource. 
 
-    #### __[C#]__
-	{{region kb-gridview-howto-hide-aggregate-results-from-groupheaderrow-1}}
+    
+	```C#
 		private void AggregateResultsList_Loaded(object sender, RoutedEventArgs e)
         {
             var aggregateResultsList = sender as Telerik.Windows.Controls.GridView.AggregateResultsList;
@@ -50,7 +50,7 @@ How to hide the aggregate results from the GroupHeaderRow when RadGridView is gr
                 itemsSource.RemoveAt(itemsSource.Count - 1);
             }
         }
-	{{endregion}}
+	```
 
 
 ## See Also

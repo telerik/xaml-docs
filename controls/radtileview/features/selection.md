@@ -16,8 +16,8 @@ This article demonstrates the selection feature of the RadTileView control.
 
 The selection feature is disabled by default. To enable it set the __IsSelectionEnabled__ property of RadTileView to __True__. To select a RadTileViewItem, click on it in the UI, or set the SelectedItem property of the control.
 
-#### __[XAML] Example 1: Enabling selection__
-{{region xaml-radtileview-selection-0}}
+__Example 1: Enabling selection__
+```XAML
 	<telerik:RadTileView IsSelectionEnabled="True">
 		<telerik:RadTileViewItem Header="Item 1"/>
 		<telerik:RadTileViewItem Header="Item 2"/>
@@ -25,7 +25,7 @@ The selection feature is disabled by default. To enable it set the __IsSelection
 		<telerik:RadTileViewItem Header="Item 4"/>
 		<telerik:RadTileViewItem Header="Item 5"/>   
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 #### Figure 1: Selected tile
 ![radtileview-selection-0.png](images/radtileview-selection-0.png)
@@ -40,8 +40,8 @@ The control supports three selection modes. They can be set via the __SelectionM
 
 * __Extended__: This mode allows the user to select multiple items at once by holding down the Ctrl or Shift keys and clicking multiple items with the mouse or by using the keyboard. A second click on a selected item will unselect that item.
 
-#### __[XAML] Example 2: Setting selection mode__
-{{region xaml-radtileview-selection-1}}
+__Example 2: Setting selection mode__
+```XAML
 	<telerik:RadTileView IsSelectionEnabled="True"
 						 SelectionMode="Multiple">
 		<telerik:RadTileViewItem Header="Item 1"/>
@@ -50,7 +50,7 @@ The control supports three selection modes. They can be set via the __SelectionM
 		<telerik:RadTileViewItem Header="Item 4"/>
 		<telerik:RadTileViewItem Header="Item 5"/>   
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 ## Setting and Getting Selected Items Manually
 
@@ -58,41 +58,37 @@ The selected tile is stored in the __SelectedItem__ property of RadTileView and 
 
 Depending on the setup the SelectedItem property can contain different values. If the control is populated directly using RadTileViewItem instances, the property will contain a value of type RadTileViewItem. If the control is populated via its ItemsSource property, the SelectedItem will contain an object from the ItemsSource (the model of the selected RadTileViewItem).
 
-#### __[C#] Example 3: Getting and setting selection manually via the SelectedItem property__
-{{region cs-radtileview-selection-2}}
+__Example 3: Getting and setting selection manually via the SelectedItem property__
+```C#
 	// Getting the selection
 	object selectedItem = this.radTileView.SelectedItem;
 	
 	// Setting the selection. Selecting the first item in the Items collection of the control
 	this.radTileView.SelectedItem = this.radTileView.Items[0]	
-{{endregion}}
-
-#### __[VB.NET] Example 3: Getting and setting selection manually via the SelectedItem property__
-{{region vb-radtileview-selection-2}}
+```
+```VB.NET
 	' Getting the selection
 	Dim selectedItem As Object = Me.radTileView.SelectedItem
 
 	' Setting the selection. Selecting the first item in the Items collection of the control
 	Me.radTileView.SelectedItem = Me.radTileView.Items(0)
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting selection via the SelectedItems collection property__
-{{region cs-radtileview-selection-3}}
+__Example 4: Setting selection via the SelectedItems collection property__
+```C#
 	// Getting the selection
 	object selectedItem = this.radTileView.SelectedItems[0];
 
 	// Setting the selection. Selecting the first item in the Items collection of the control
 	this.radTileView.SelectedItems.Add(this.radTileView.Items[0]);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting selection via the SelectedItems collection property__
-{{region vb-radtileview-selection-3}}
+```
+```VB.NET
 	' Getting the selection
 	Dim selectedItem As Object = Me.radTileView.SelectedItems(0)
 
 	' Setting the selection. Selecting the first item in the Items collection of the control
 	Me.radTileView.SelectedItems.Add(Me.radTileView.Items(0))
-{{endregion}}
+```
 
 ## Events
 
@@ -110,8 +106,8 @@ The RadTileView control exposes several selection events. Please note that these
 
 This section demonstrates how to data bind the SelectedItem property of the control.
 
-#### __[C#] Example 5: Defining the model and populating it with data__
-{{region cs-radtileview-selection-4}}
+__Example 5: Defining the model and populating it with data__
+```C#
 	public class MainViewModel : ViewModelBase
     {
         private TileInfo selectedItem;
@@ -147,10 +143,8 @@ This section demonstrates how to data bind the SelectedItem property of the cont
         public string Header { get; set; }
         public string Content { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 5: Defining the model and populating it with data__
-{{region vb-radtileview-selection-4}}
+```
+```VB.NET
 	Public Class MainViewModel
 		Inherits ViewModelBase
 
@@ -186,10 +180,10 @@ This section demonstrates how to data bind the SelectedItem property of the cont
 		Public Property Header() As String
 		Public Property Content() As String
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 6: Setting the DataContext__
-{{region xaml-radtileview-selection-5}}
+__Example 6: Setting the DataContext__
+```XAML
 	public partial class TileViewUserControl : UserControl
     {
         public TileViewUserControl()
@@ -198,10 +192,10 @@ This section demonstrates how to data bind the SelectedItem property of the cont
             this.DataContext = new MainViewModel();
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 7: Setting up the view and binding the SelectedItem property__
-{{region xaml-radtileview-selection-6}}
+__Example 7: Setting up the view and binding the SelectedItem property__
+```XAML
 	<telerik:RadTileView IsSelectionEnabled="True" 
 						 DisplayMemberPath="Header"
 						 ItemsSource="{Binding Tiles}"
@@ -212,7 +206,7 @@ This section demonstrates how to data bind the SelectedItem property of the cont
 			</DataTemplate>                
 		</telerik:RadTileView.ContentTemplate>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 #### Figure 2: Data binding example
 ![radtileview-selection-1.png](images/radtileview-selection-1.png)

@@ -32,8 +32,8 @@ How to use `RadHighlightTextBlock` in an `RadAutoSuggestBox`.
 
 Define a new `DataTemplate` that contains a `RadHighlightTextBlock` instance and set it to the `ItemTemplate` property of RadAutoSuggestBox. Bind the `Text` property of the RadHighlightTextBlock to the property from the items' model that will be displayed in the RadAutoSuggestBox instance. Bind the `HighlightText` property to the `Text` property of RadAutoSuggestBox.
 
-#### __[C#] Define the items' model and the view model__
-{{region kb-highlighttextblock-integration-with-radautosuggestbox-0}}
+__Define the items' model and the view model__
+```C#
 	public class ItemInfo
 	{
 	    public string Content { get; set; }
@@ -60,10 +60,8 @@ Define a new `DataTemplate` that contains a `RadHighlightTextBlock` instance and
 	        return new ObservableCollection<ItemInfo>(ItemInfos.Where(x => x.Content.ToLowerInvariant().Contains(lowerText)).ToList());
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Define the items' model and the view model__
-{{region kb-highlighttextblock-integration-with-radautosuggestbox-1}}
+```
+```VB.NET
 	Public Class ItemInfo
 	    Public Property Content As String
 	End Class
@@ -91,18 +89,18 @@ Define a new `DataTemplate` that contains a `RadHighlightTextBlock` instance and
 	        Return New ObservableCollection(Of ItemInfo)(ItemInfos.Where(Function(x) x.Content.ToLowerInvariant().Contains(lowerText)).ToList())
 	    End Function
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Creating a DataTemplate with a RadHighlightTextBlock__
-{{region kb-highlighttextblock-integration-with-radautosuggestbox-2}}
+__Creating a DataTemplate with a RadHighlightTextBlock__
+```XAML
 	<DataTemplate x:Key="HighlightTextBlockDataTemplate">
 	    <telerik:RadHighlightTextBlock Text="{Binding Content}"
 	                                   HighlightText="{Binding RelativeSource={RelativeSource 	AncestorType=telerik:RadAutoSuggestBox}, Path=Text}"/>
 	</DataTemplate>
-{{endregion}}
+```
 
-#### __[XAML] Set the custom DataTemplate to the ItemTemplate property of RadAutoSuggestBox__
-{{region kb-highlighttextblock-integration-with-radautosuggestbox-3}}
+__Set the custom DataTemplate to the ItemTemplate property of RadAutoSuggestBox__
+```XAML
 	<telerik:RadAutoSuggestBox
 	                     ItemsSource="{Binding ItemInfos}"
 	                     HorizontalAlignment="Center"
@@ -111,7 +109,7 @@ Define a new `DataTemplate` that contains a `RadHighlightTextBlock` instance and
 	                     VerticalAlignment="Center"
 	                     TextMemberPath="Content"
 	                     ItemTemplate="{StaticResource HighlightTextBlockDataTemplate}"/>
-{{endregion}}
+```
 
 __RadAutoSuggestBox with RadHighlightTextBlock__
 

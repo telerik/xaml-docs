@@ -32,8 +32,8 @@ How to access the search results (row data items) in RadGridView, when search as
 
 You can create a new `SearchFilterDescriptor` object and use it in a new [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) instance. This will allow you to manually filter the original data collection and get the needed results.
 
-#### __[C#]__
-{{region kb-gridview-get-search-results-when-filtering-disabled-0}}
+
+```C#
 	var searchPanel = this.gridView.FindChildByType<GridViewSearchPanel>();
 	if (searchPanel != null)
 	{
@@ -49,6 +49,6 @@ You can create a new `SearchFilterDescriptor` object and use it in a new [Querya
 		
 		var foundItems = qcv.OfType<MyRowItemInfo>();
 	}
-{{endregion}}
+```
 
 

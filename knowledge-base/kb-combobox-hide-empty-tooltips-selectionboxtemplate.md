@@ -32,9 +32,9 @@ How to show SelectionBox tooltip only when the tooltip has content.
 
 To achieve the desired result, you can add a **DataTrigger** to set the **Tooltip** to **null** when the corresponding property is an empty string. For example, you can define the [SelectionBoxTemplate]({%slug radcombobox-populating-with-data-selectionbox%}) as follows:
 
-#### __[XAML]__
 
-{{region xaml-kb-combobox-hide-empty-tooltips-selectionboxtemplate_1}}
+
+```XAML
 	<DataTemplate x:Key="SelectionBoxTemplate">
 		<TextBlock Text="{Binding Name}">
 			<TextBlock.Style>
@@ -49,7 +49,7 @@ To achieve the desired result, you can add a **DataTrigger** to set the **Toolti
 			</TextBlock.Style>                    
 		</TextBlock>
 	</DataTemplate>
-{{endregion}}
+```
 
 ## See Also
 * [Selection Box Template]({%slug radcombobox-populating-with-data-selectionbox%})

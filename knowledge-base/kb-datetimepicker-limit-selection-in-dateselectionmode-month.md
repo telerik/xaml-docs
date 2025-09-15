@@ -29,8 +29,8 @@ How to limit selection when the DateSelectionMode property is Month.
 
 Create a custom StyleSelector and disable the months by setting the __IsEnabled__ property of the __CalendarButtonContent__. After that, set the StyleSelector to the __MonthButtonStyleSelector__ property of the RadDateTimePicker.
 
-#### __[C#]__
-{{region kb-datetimepicker-limit-selection-in-dateselectionmode-month-0}}
+
+```C#
 
     public class MonthSelector : StyleSelector
     {
@@ -48,10 +48,10 @@ Create a custom StyleSelector and disable the months by setting the __IsEnabled_
             return base.SelectStyle(item, container);
         }       
     }
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-datetimepicker-limit-selection-in-dateselectionmode-month-1}}
+
+```XAML
 
     <Grid>
         <Grid.Resources>
@@ -61,4 +61,4 @@ Create a custom StyleSelector and disable the months by setting the __IsEnabled_
                              MonthButtonStyle="{x:Null}"
                              MonthButtonStyleSelector="{StaticResource monthSelector}"/>
     </Grid>
-{{endregion}}
+```

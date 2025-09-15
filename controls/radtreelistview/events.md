@@ -16,13 +16,13 @@ Here is a list of events exposed by the RadTreeListView control:
 
 * **PreviewDragEnded**: Occurs before the drag has ended. The type of the passed event arguments is __RadTreeListViewDragEndedEventHandler__.
 
-	#### __[C#] Example 1: Get the Dragged Items in PreviewDragEnded event handler__
-		{{region cs-radtreelistview-events-events_0}}
+	__Example 1: Get the Dragged Items in PreviewDragEnded event handler__
+		```C#
 			private void RadTreeListView_PreviewDragEnded(object sender, RadTreeListViewDragEndedEventArgs e)
 			{
 				var draggedItems = e.DraggedItems;  
 			}
-		{{endregion}}      
+		```      
 
 ## See Also
 

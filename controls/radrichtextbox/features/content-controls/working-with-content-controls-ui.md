@@ -33,7 +33,7 @@ The following commands related to the content controls functionality are availab
     In order to successfully execute the InsertStructuredDocumentTagCommand you have to pass the wanted content control type (**SdtType**) as a CommandParameter:
 
     #### [XAML] Example 1: Binding the command
-    {{region radrichtextbox-features-commands_0}}
+    ```XAML
 
         <telerik:RadRibbonButton 
                         telerik:ScreenTip.Description="Insert a picture content control."
@@ -42,13 +42,13 @@ The following commands related to the content controls functionality are availab
                         CommandParameter="Picture"
                         Size="Small" telerik:ScreenTip.Title="Picture Content Control">
         </telerik:RadRibbonButton>
-    {{endregion}}
+    ```
 
 * **ShowContentControlPropertiesDialogCommand**
 
     #### [XAML] Example 2: Binding the command
 
-    {{region radrichtextbox-features-commands_1}}
+    ```XAML
 
         <telerik:RadRibbonButton x:Name="propertiesDialogButton"
                         telerik:ScreenTip.Description="View or modify properties for the selected control."
@@ -58,7 +58,7 @@ The following commands related to the content controls functionality are availab
                         Size="Medium" telerik:ScreenTip.Title="Control Properties"
                         Text="Properties">
         </telerik:RadRibbonButton>
-    {{endregion}}
+    ```
 
     >tip In order to learn more about commands and how to use them refer to [Commands]({%slug radrichtextbox-features-commands%}) help article.
 

@@ -29,8 +29,8 @@ Add a style targeting __GridViewRow__ with Triggers that check the __IsSelected_
 
 > __Example 1__ uses the model and viewmodel defined in the [Getting Started]({%slug gridview-getting-started2%}) article of the RadGridView.
  
-#### __[XAML] Example 1: Custom style targeting__
-{{region kb-gridview-modify-foreground-selected-hovered-row-0}}
+__Example 1: Custom style targeting__
+```XAML
 	<Grid>
         <Grid.Resources>
             <!-- If you are using the NoXaml binaries, you should base the style on the default one for the theme like so-->
@@ -54,7 +54,7 @@ Add a style targeting __GridViewRow__ with Triggers that check the __IsSelected_
         <telerik:RadGridView ItemsSource="{Binding Clubs}"
                              GroupRenderMode="Flat" />
     </Grid>
-{{endregion}}
+```
 
 > The demonstrated approach may not be relevant for all UI for WPF themes. 
 

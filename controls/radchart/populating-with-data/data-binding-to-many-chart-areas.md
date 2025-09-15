@@ -26,7 +26,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-data-binding-to-many-chart-areas_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
 	    <Grid Margin="10,10,0,20">
 	        <Grid.RowDefinitions>
@@ -70,13 +70,13 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-to-many-chart-areas_1}}
+```C#
 	//Creating new instance of RadChart control
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	radChart.UseDefaultLayout = false;
@@ -132,13 +132,13 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Description", DataPointMember.Label ) );
 	radChart.SeriesMappings.Add( seriesMapping );
 	//....
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-data-binding-to-many-chart-areas_2}}
+```VB.NET
 	'Creating new instance of RadChart control'
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
@@ -193,7 +193,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	seriesMapping.ItemMappings.Add(New ItemMapping("Description", DataPointMember.Label))
 	radChart.SeriesMappings.Add(seriesMapping)
 	'....'
-{{endregion}}
+```
 
 
 

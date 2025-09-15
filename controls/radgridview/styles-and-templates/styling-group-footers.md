@@ -42,14 +42,14 @@ You have two options:
 
 >To learn how to modify the default GridViewFooterCell style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Example 1: Styling all group footer rows of an application__
+__Example 1: Styling all group footer rows of an application__
 
-	{{region xaml-gridview-styling-group-footers-1}}
+	```XAML
 	<Style TargetType="telerik:GridViewGroupFooterRow">
 	            <Setter Property="Foreground" Value="White"/>
 	            <Setter Property="Background" Value="LightBlue"/>
 	        </Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterRowStyle__.
 
@@ -57,11 +57,11 @@ You have two options:
 
 RadGridView's footer rows can also be styled by creating an appropriate __Style__ for the **GridViewGroupFooterRow** element and setting it as RadGridView's __GroupFooterRowStyle__ property. 
 
-#### __[XAML] Example 2: Setting RadGridView's GroupFooterRowStyle__
+__Example 2: Setting RadGridView's GroupFooterRowStyle__
 
-	{{region xaml-gridview-styling-group-footers-2}}
+	```XAML
 	<telerik:RadGridView GroupFooterRowStyle="{StaticResource GridViewFooterRowStyle}" />
-{{endregion}}
+```
 
 #### __Figure 2: RadGridView with styled group footer rows__
 
@@ -75,14 +75,14 @@ You could also use RadGridView's **GroupFooterRowStyleSelector** property to sty
 
 In order to style all __RadGridView__ cells of an application, you should create an appropriate style targeting the __GridViewGroupFooterCell__ element.
 
-#### __[XAML] Example 6: Styling all group footer cells of an application__
+__Example 6: Styling all group footer cells of an application__
 
-	{{region xaml-gridview-styling-group-footers-8}}
+	```XAML
 	<Style TargetType="telerik:GridViewGroupFooterCell">
 	            <Setter Property="BorderBrush" Value="Red"/>
 	            <Setter Property="Background" Value="Blue"/>
 	        </Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterCellStyle__.
 
@@ -90,13 +90,13 @@ In order to style all __RadGridView__ cells of an application, you should create
 
 RadGridView's footer cells can also be styled by creating an appropriate __Style__ for the **GridViewGroupFooterCell** element and setting it as the __GroupFooterCellStyle__ property of the respective __GridViewColumn__. 
 
-#### __[XAML] Example 7: Setting a column's GroupFooterCellStyle__
+__Example 7: Setting a column's GroupFooterCellStyle__
 
-	{{region xaml-gridview-styling-group-footers-9}}
+	```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
 	                                Header="Name"
 	                                GroupFooterCellStyle="{StaticResource GridViewFooterCellStyle}" />
-{{endregion}}
+```
 
 #### __Figure 2: RadGridView with styled group footer cells__
 

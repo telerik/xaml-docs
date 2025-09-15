@@ -19,7 +19,7 @@ The final result should look like this
 For the purpose of this article we will use the __AdditionalContent__ property of the __RadColorPicker__ control to add a customized button at the bottom of the drop down content. This can be implemented by the following code:		
 
 #### __XAML__
-{{region radcolorpicker-howto-use-isrecentcolorsactive_0}}
+```XAML
 	<telerik:RadColorPicker x:Name="xColorPicker" IsRecentColorsActive="True">
 		<telerik:RadColorPicker.AdditionalContent>
 			<telerik:RadButton Click="RadButton_Click">
@@ -33,14 +33,14 @@ For the purpose of this article we will use the __AdditionalContent__ property o
 			</telerik:RadButton>
 		</telerik:RadColorPicker.AdditionalContent>
 	</telerik:RadColorPicker>
-{{endregion}}
+```
 
 >The __RecentColors__ palette is visible when the __IsRecentColorsActive__ property of the __RadColorPicker__ control is set to __True__ and the selected color does not exist in __MainPalette__, __HeaderPalette__ or __StandartPalette__.		  
 
 In the button's Click event handler we display a __RadExpander__ control which hosts a __RadColorEditor__. This layout will be used to customize colors:		
 
 #### __XAML__
-{{region radcolorpicker-howto-use-isrecentcolorsactive_1}}
+```XAML
 	<StackPanel>
 			<telerik:RadColorPicker x:Name="xColorPicker" IsRecentColorsActive="True">
 				<telerik:RadColorPicker.AdditionalContent>
@@ -72,31 +72,31 @@ In the button's Click event handler we display a __RadExpander__ control which h
 				</StackPanel>
 			</telerik:RadExpander>
 		</StackPanel>
-{{endregion}}
+```
 
 #### __C#__
-{{region radcolorpicker-howto-use-isrecentcolorsactive_2}}	
+```C#	
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		this.xColorPicker.IsDropDownOpen = false;
 		this.xExpander.Opacity = 1;
 		this.xExpander.IsExpanded = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radcolorpicker-howto-use-isrecentcolorsactive_3}}
+```VB.NET
     Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
         Me.xColorPicker.IsDropDownOpen = False
         Me.xExpander.Opacity = 1
         Me.xExpander.IsExpanded = True
     End Sub
-{{endregion}}
+```
 
 Finally in the confirmation's button Click event handler we implement the selection logic of the customized color.	
 
 #### __C#__
-{{region radcolorpicker-howto-use-isrecentcolorsactive_4}}
+```C#
 	private void OK_RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		this.xColorPicker.SelectedColor = this.xColorEditor.SelectedColor;
@@ -104,17 +104,17 @@ Finally in the confirmation's button Click event handler we implement the select
 		this.xExpander.Opacity = 0;
 		this.xColorPicker.IsDropDownOpen = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radcolorpicker-howto-use-isrecentcolorsactive_5}}
+```VB.NET
     Private Sub OK_RadButton_Click(sender As Object, e As RoutedEventArgs)
         Me.xColorPicker.SelectedColor = Me.xColorEditor.SelectedColor
         Me.xExpander.IsExpanded = False
         Me.xExpander.Opacity = 0
         Me.xColorPicker.IsDropDownOpen = True
     End Sub
-{{endregion}}
+```
 
 Now we are able to run the project and select a custom color following these steps:		
 

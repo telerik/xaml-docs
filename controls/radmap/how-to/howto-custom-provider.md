@@ -22,8 +22,8 @@ The **MapProviderBase** is the base class for all map providers. Two widely-used
 
 Once you know the type of provider you require, you can create a custom class to inherit from it. In most cases this will be the __TiledProvider__ class. In addition, you need to override the **SpatialReference** property - it returns the actual projection used by the provider and most often returns an instance of the __MercatorProjection__ class.
 
-#### __[C#] Example 1: Create a custom TiledProvider__
-{{region cs-radmap-howto-custom-provider_0}}
+__Example 1: Create a custom TiledProvider__
+```C#
 	public class MyMapProvider : TiledProvider
 	{
 		/// <summary>
@@ -47,7 +47,7 @@ Once you know the type of provider you require, you can create a custom class to
 			}
 		}
 	}
-{{endregion}}
+```
 
 >The **MyMapSource** class is defined in **Example 2**.
 
@@ -74,8 +74,8 @@ When creating a custom map provider, you can choose one of these sources and ove
 
 **Example 2** demonstrates a possible implementation of a custom TiledMapSource.
 
-#### __[C#] Example 2: Create a custom TiledMapSource__
-{{region radmap-howto-custom-provider_1}}
+__Example 2: Create a custom TiledMapSource__
+```C#
 	public class MyMapSource : TiledMapSource
 	{
 	       /// <summary>
@@ -110,14 +110,14 @@ When creating a custom map provider, you can choose one of these sources and ove
 	             return new Uri(url);
 	       }
 	}
-{{endregion}}
+```
 
 ## Create an OpenStreetProvider Which Uses Https
 
 A common requirement when using the RadMap control is to use the OpenStreetMap service over **https**. **Examples 3-5** demonstrate how this can be achieved by creating a custom map provider.
 
-#### __[C#] Example 3: Create a custom TiledProvider and set up its commands__
-{{region cs-radmap-howto-custom-provider_2}}
+__Example 3: Create a custom TiledProvider and set up its commands__
+```C#
 	public class HttpsOpenStreetProvider : TiledProvider
     {
         /// <summary>
@@ -160,22 +160,22 @@ A common requirement when using the RadMap control is to use the OpenStreetMap s
                 null);
         }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 4: Create a custom OsmTileMapSource which uses an https url__
-{{region cs-radmap-howto-custom-provider_3}}
+__Example 4: Create a custom OsmTileMapSource which uses an https url__
+```C#
     public class HttpsOpenStreetMapnikSource : OsmTileMapSource
     {
         public HttpsOpenStreetMapnikSource() : base(@"https://{prefix}.tile.openstreetmap.org/{zoom}/{x}/{y}.png")
         {
         }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 5: Set the provider via RadMap's Provider property__
-{{region radmap-howto-custom-provider_1}}
+__Example 5: Set the provider via RadMap's Provider property__
+```C#
 	this.map.Provider = new HttpsOpenStreetProvider();
-{{endregion}}
+```
 
 ## See Also
 

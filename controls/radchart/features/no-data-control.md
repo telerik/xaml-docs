@@ -21,25 +21,25 @@ If you don't want to use __No Data__ message, just set __ChartArea.IsNoDataMessa
 
 #### __XAML__
 
-{{region xaml-radchart-features-no-data-control_0}}
+```XAML
 	<telerik:ChartArea NoDataString="Custom 'No Data' message" />
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-no-data-control_1}}
+```C#
 	this.radChart.DefaultView.ChartArea.NoDataString = "Custom 'No Data' message";
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-no-data-control_2}}
+```VB.NET
 	Me.telerikChart.DefaultView.ChartArea.NoDataString = "Custom 'No Data' message"
-{{endregion}}
+```
 
 
 

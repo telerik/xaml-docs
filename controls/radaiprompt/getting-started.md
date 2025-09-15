@@ -35,11 +35,11 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add RadAIPrompt manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Defining the RadAIPrompt in XAML__
-{{region radaiprompt-getting-started-0}}
+__Defining the RadAIPrompt in XAML__
+```XAML
     <telerik:RadAIPrompt x:Name="aiPrompt">
     </telerik:RadAIPrompt>
-{{endregion}}
+```
 
 The RadAIPrompt control has views that you can add to its `Items` collection. 
 
@@ -47,13 +47,13 @@ The RadAIPrompt control has views that you can add to its `Items` collection.
 
 In this example, the input and output views will be added.
 
-#### __[XAML] Adding the input and output views__
-{{region radaiprompt-getting-started-1}}
+__Adding the input and output views__
+```XAML
     <telerik:RadAIPrompt x:Name="aiPrompt">
         <telerik:RadAIPromptInputItem />
         <telerik:RadAIPromptOutputItem />
     </telerik:RadAIPrompt>
-{{endregion}}
+```
 
 __RadAIPrompt with the input and output views__
 
@@ -63,16 +63,16 @@ __RadAIPrompt with the input and output views__
 
 When the input button is clicked, the RadAIPrompt control will raise the `PromptRequest` event. In it, you can contact your AI model with the request. The `PromptRequestEventArgs` event arguments provide information about the input text and if the request is initiated to retry an already generated response. You can create a new `AIPromptOutputItemModel` instance and fill it with returned response from the AI model. Then, add it to the `OutputItems` collection of RadAIPrompt. This will create a new card in the `RadAIPromptOutputItem` view where you can interact with the response.
 
-#### __[C#] Subscribing to the PromptRequest event__
-{{region radaiprompt-getting-started-2}}
+__Subscribing to the PromptRequest event__
+```C#
     <telerik:RadAIPrompt x:Name="aiPrompt" PromptRequest="OnPromptRequested">
         <telerik:RadAIPromptInputItem />
         <telerik:RadAIPromptOutputItem />
     </telerik:RadAIPrompt>
-{{endregion}}
+```
 
-#### __[C#] Handling the PromptRequest event__
-{{region radaiprompt-getting-stared-3}}
+__Handling the PromptRequest event__
+```C#
     private void OnPromptRequested(object sender, PromptRequestEventArgs e)
     {
     	RadAIPrompt radAIPrompt = (RadAIPrompt)sender;
@@ -88,7 +88,7 @@ When the input button is clicked, the RadAIPrompt control will raise the `Prompt
 
     	radAIPrompt.OutputItems.Add(responseAIPromptOutputItemModel);
     }
-{{endregion}}
+```
 
 __RadAIPrompt with a response in the output view__
 
@@ -110,8 +110,8 @@ The controls from our suite support different themes. You can see how to apply a
 
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__
-{{region radaiprompt-getting-started-4}}
+__Merge the ResourceDictionaries__
+```XAML
     <Application.Resources>
     	<ResourceDictionary>
     		<ResourceDictionary.MergedDictionaries>
@@ -123,7 +123,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
     		</ResourceDictionary.MergedDictionaries>
     	</ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 The following image shows a RadAIPrompt with the __Fluent__ theme applied.

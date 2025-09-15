@@ -16,7 +16,7 @@ Copy the created style with all of the resources it uses and place it in the __R
 
 #### __XAML__
 
-{{region xaml-raddocking-theming-radpane-group_0}}
+```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	    <!--Paste the style and all of the resources it uses here. -->
@@ -24,19 +24,19 @@ Copy the created style with all of the resources it uses and place it in the __R
 	        <!--...-->
 	    </Style>
 	</ResourceDictionary>
-{{endregion}}
+```
 
 The next step is to declare the required namespaces in the resource dictionary.
 
 #### __XAML__
 
-{{region xaml-raddocking-theming-radpane-group_1}}
+```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <!--...-->
 	</ResourceDictionary>
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -44,11 +44,11 @@ Finally, in order to make the style default for all of the __RadPaneGroup__ cont
 
 #### __XAML__
 
-{{region xaml-raddocking-theming-radpane-group_2}}
+```XAML
 	<Style TargetType="telerik:RadPaneGroup">
 	    <!--...-->
 	</Style>
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -56,22 +56,22 @@ To apply the theme go to the UserControl that hosts your __RadDocking__ control 
 
 #### __C#__
 
-{{region cs-raddocking-theming-radpane-group_3}}
+```C#
 	public App()
 	{
 	    InitializeComponent();
 	    StyleManager.SetTheme( this.radDocking, new RadDockingTheme());
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-raddocking-theming-radpane-group_4}}
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		StyleManager.SetTheme(Me.radDocking, New Theme())
 	End Sub
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 
@@ -79,12 +79,12 @@ Finally in order to make the style default for all of the __RadPaneGroup__ contr
 
 #### __XAML__
 
-{{region xaml-raddocking-theming-radpane-group_5}}
+```XAML
 	<Style x:Key="{telerik:ThemeResourceKey ThemeType={x:Type local:RadDockingTheme}, ElementType={x:Type telerik:RadPaneGroup}}"
 	TargetType="{x:Type telerik:RadPaneGroup}">
 	    <!--...-->
 	</Style>
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 

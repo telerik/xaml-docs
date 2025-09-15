@@ -33,19 +33,19 @@ In the following solution we are going to demonstrates how to prevent RadPanes f
 
 To achieve this requirement you can handle the __ContextMenuOpening__ event of the element to which you've added the ContextMenu (the TextBlock in this case) and focus its content.
 
-#### __[C#] Example 1: Subscribe to the ContextMenuOpening event__
-    {{region cs-kb-prevent-panes-auto-hide-context-menu-is-opened-1}}
+__Example 1: Subscribe to the ContextMenuOpening event__
+    ```C#
         private void TextBlock_ContextMenuOpening(object sender, ContextMenuEventArgs e)
         {
             var element = sender as FrameworkElement;
             element.Focus();
         }
-    {{endregion}}
+    ```
 
 Please note that in the case of the TextBlock you also need to set its Focusable property to True.
 
-#### __[C#] Example 2: Set Focusable to True__
-    {{region cs-kb-prevent-panes-auto-hide-context-menu-is-opened-2}}
+__Example 2: Set Focusable to True__
+    ```C#
         <TextBlock Focusable="True" Text="Open the Context menu with right klick" ContextMenuOpening="TextBlock_ContextMenuOpening">
 			<TextBlock.ContextMenu>
 				<ContextMenu>
@@ -54,4 +54,4 @@ Please note that in the case of the TextBlock you also need to set its Focusable
 				</ContextMenu>
 			</TextBlock.ContextMenu>
 		</TextBlock>
-    {{endregion}}
+    ```

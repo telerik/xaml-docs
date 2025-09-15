@@ -26,8 +26,8 @@ Create a column with a RadComboBox editor which supports multiple selection.
 
 __1.__ First, we are going to create some sample objects with which to populate the RadGridView. The grid will be populated with a collection of Pilot objects and the RadComboBox will contain Country objects.
 
-#### __[C#]__
-{{region cs-kb-gridview-howto-create-multiselection-combobox-column-0}}
+
+```C#
 	public class MyViewModel : ViewModelBase
     {
         private ObservableCollection<Pilot> pilots;
@@ -151,12 +151,12 @@ __1.__ First, we are going to create some sample objects with which to populate 
             return pilots;
         }
     }
-{{endregion}}
+```
 
 __2.__ Next, we will implement our custom column. We will inherit [GridViewDataColumn]({%slug radgridview-columns-column-types-data-column%}) and override the __CreateCellElement__ and __CreateCellEditElement__ methods. Those are responsible for creating the TextBlock visible in view mode and the RadComboBox editor. We also define two custom properties which will be transferred to the RadComboBox when it is created. 
 
-#### __[C#]__
-{{region cs-kb-gridview-howto-create-multiselection-combobox-column-1}}
+
+```C#
     public class MultiSelectionGridViewComboBoxColumn : GridViewDataColumn
     {
         public static readonly DependencyProperty ItemsSourceProperty =
@@ -259,12 +259,12 @@ __2.__ Next, we will implement our custom column. We will inherit [GridViewDataC
             comboBox.ItemsSource = this.ItemsSource;
         }
     }
-{{endregion}}
+```
 
 __3.__ Finally, we need to define our custom column and set the ItemsSource property to a collection which will be transferred to the RadComboBox.
 
- #### __[XAML]__
-{{region xaml-kb-gridview-howto-create-multiselection-combobox-column-2}}
+ 
+```XAML
     <telerik:RadGridView x:Name="pilotsGrid"
                          ItemsSource="{Binding Pilots}"
                          AutoGenerateColumns="False">
@@ -274,10 +274,10 @@ __3.__ Finally, we need to define our custom column and set the ItemsSource prop
             <telerik:GridViewDataColumn DataMemberBinding="{Binding LastName}"/>
         </telerik:RadGridView.Columns>
     </telerik:RadGridView>
-{{endregion}}
+```
 
- #### __[C#]__
-{{region cs-kb-gridview-howto-create-multiselection-combobox-column-3}}
+ 
+```C#
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -287,7 +287,7 @@ __3.__ Finally, we need to define our custom column and set the ItemsSource prop
             ((MultiSelectionGridViewComboBoxColumn)this.pilotsGrid.Columns["Country"]).ItemsSource = Country.GetCountries();
         }
     }
-{{endregion}}
+```
 
 #### __Figure 1: Result after selecting some countries in the Office2016 theme__
 ![GridView with multi selection combobox column](images/kb-gridview-multiselection-combobox-column.png)

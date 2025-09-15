@@ -18,8 +18,8 @@ This article demonstrates how to data bind the control to a simple business mode
 
 The model will contain few string properties for each content and also a property that holds the current state of the control.
 
-#### __[C#] Example 1: Defining the model__
-{{region radfluidcontentcontrol-data-binding-0}}
+__Example 1: Defining the model__
+```C#
 	public class FluidContentModel : ViewModelBase
     {
         private FluidContentControlState state;        
@@ -38,10 +38,8 @@ The model will contain few string properties for each content and also a propert
         public string NormalContent { get; set; }
         public string LargeContent { get; set; }
     }    
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the model__
-{{region radfluidcontentcontrol-data-binding-1}}
+```
+```VB.NET
 	Public Class FluidContentModel
 		Inherits ViewModelBase
 
@@ -61,7 +59,7 @@ The model will contain few string properties for each content and also a propert
 		Public Property NormalContent As String
 		Public Property LargeContent As String
 	End Class    
-{{endregion}}
+```
 
 > The ViewModelBase class is part of the Telerik.Windows.Controls.dll. Read more about this in the [ViewModelBase]({%slug common-viewmodelbase-class%}) article.
 
@@ -69,8 +67,8 @@ The model will contain few string properties for each content and also a propert
 
 When the model is set up, it can be provided to the RadFluidContentControl via its DataContext property. In the example we will set it explicitly but in the general case the property will be probably inherited from the parent control.
 
-#### __[C#] Example 3: Setting up the model__
-{{region radfluidcontentcontrol-data-binding-2}}
+__Example 3: Setting up the model__
+```C#
 	public partial class MyUserControl : UserControl
     {
         public MyUserControl()
@@ -85,10 +83,8 @@ When the model is set up, it can be provided to the RadFluidContentControl via i
             this.radFluidContentControl.DataContext = model;            
         }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting up the model__
-{{region radfluidcontentcontrol-data-binding-3}}
+```
+```VB.NET
 	Public Partial Class MyUserControl
 		Inherits UserControl
 
@@ -102,10 +98,10 @@ When the model is set up, it can be provided to the RadFluidContentControl via i
 			Me.radFluidContentControl.DataContext = model
 		End Sub
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Setting up the control__
-{{region radfluidcontentcontrol-data-binding-4}}
+__Example 4: Setting up the control__
+```XAML
 	<telerik:RadFluidContentControl x:Name="radFluidContentControl"
 									ContentChangeMode="Manual"
 									State="{Binding State}"
@@ -134,7 +130,7 @@ When the model is set up, it can be provided to the RadFluidContentControl via i
 			</DataTemplate>
 		</telerik:RadFluidContentControl.LargeContentTemplate>
 	</telerik:RadFluidContentControl>
-{{endregion}}
+```
 
 Each content property has a corresponding content template property, so you can define a DataTemplate and bind it's controls to the view model as shown in __Example 4__. 
 
@@ -142,8 +138,8 @@ Each content property has a corresponding content template property, so you can 
 
 This section shows how to link the State property of the RadFluidContentControl to a drop down list via the State property defined in the view model.
 
-#### __[XAML] Example 5: Setting up the control__
-{{region radfluidcontentcontrol-data-binding-5}}
+__Example 5: Setting up the control__
+```XAML
 	<Grid x:Name="gridPanel">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -185,19 +181,17 @@ This section shows how to link the State property of the RadFluidContentControl 
             </telerik:RadFluidContentControl.LargeContentTemplate>
         </telerik:RadFluidContentControl>
     </Grid>
-{{endregion}}
+```
 
 To make the binding in the drop down list work we need to move the data context from the RadFluidContentControl parent control that hosts it. 
 
-#### __[C#] Example 6: Setting up the control__
-{{region radfluidcontentcontrol-data-binding-6}}
+__Example 6: Setting up the control__
+```C#
 	this.gridPanel.DataContext = model;
-{{endregion}}
-
-#### __[VB.NET] Example 6: Setting up the control__
-{{region radfluidcontentcontrol-data-binding-7}}
+```
+```VB.NET
 	Me.gridPanel.DataContext = model
-{{endregion}}
+```
 
 #### Figure 1: Data binding example
 ![fluidcontentcontrol-data-binding-0](images/fluidcontentcontrol-data-binding-0.png)

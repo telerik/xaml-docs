@@ -33,8 +33,8 @@ How to clip the first axis label so that it is within the [plot area clip]({%slu
 
 Manually clip the horizontal axis based on the plot area of the chart. To do this, set the `Clip` property of the axis.
 
-#### __[C#]__
-{{region kb-icontemplate-remove-indenting}}
+
+```C#
 	private void RadCartesianChart_SizeChanged(object sender, SizeChangedEventArgs e)
 	{
 		var chart = (RadCartesianChart)sender;
@@ -42,5 +42,5 @@ Manually clip the horizontal axis based on the plot area of the chart. To do thi
 		var clipGeometry = new RectangleGeometry(new Rect(plotArea.X + 	chart.PanOffset.X, plotArea.Bottom, plotArea.Width, 100));
 		this.hAxis.Clip = clipGeometry;
 	}
-{{endregion}}
+```
 

@@ -16,9 +16,9 @@ The PaneHeader element displays the title of the selected pane in the given RadP
 
 In order to style all __PaneHeader__ elements in a RadDocking, you should create a style targeting __PaneHeader__.
 
-#### __[XAML] Example 1: Creating an implicit style targeting PaneHeader__
+__Example 1: Creating an implicit style targeting PaneHeader__
 
-{{region xaml-raddocking-styling-the-pane-header_0}}
+```XAML
 	<Application.Resources>
 		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 		<Style TargetType="telerik:PaneHeader" BasedOn="{StaticResource PaneHeaderStyle}">-->
@@ -58,7 +58,7 @@ In order to style all __PaneHeader__ elements in a RadDocking, you should create
             </telerik:RadSplitContainer>
         </telerik:RadDocking>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: PaneHeader with Red Background in the Office2016 theme__
 ![PaneHeader with Red Background](images/RadDocking_PaneHeader_Styling.png)

@@ -23,7 +23,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 
 #### __XAML__
 
-{{region radtreeview-features-load-on-demand_0}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football"/>
@@ -31,7 +31,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 	        <telerik:RadTreeViewItem Header="Cycling"/>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTreeView Sample Structure](images/RadTreeView_FeaturesLoadOnDemand_001.PNG)
 
@@ -41,7 +41,7 @@ To enable this feature you can set the __IsLoadOnDemandEnabled__ property to the
 
 #### __XAML__
 
-{{region radtreeview-features-load-on-demand_1}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football" IsLoadOnDemandEnabled="True"/>
@@ -49,7 +49,7 @@ To enable this feature you can set the __IsLoadOnDemandEnabled__ property to the
 	        <telerik:RadTreeViewItem Header="Cycling" IsLoadOnDemandEnabled="True"/>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 ## Enable Load on Demand Programmatically 
 
@@ -57,20 +57,20 @@ The same effect can be achieved if you set the __IsLoadOnDemandEnabled__ propert
 
 #### __C#__
 
-{{region radtreeview-features-load-on-demand_2}}
+```C#
 	private void EnableLoadOnDemand( RadTreeViewItem radTreeViewItem )
 	{
 	    radTreeViewItem.IsLoadOnDemandEnabled = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-features-load-on-demand_3}}
+```VB.NET
 	Private Sub EnableLoadOnDemand(ByVal radTreeViewItem As RadTreeViewItem)
 	    radTreeViewItem.IsLoadOnDemandEnabled = True
 	End Sub
-{{endregion}}
+```
 	
 ![{{ site.framework_name }} RadTreeView Is Load On Demand Enabled](images/RadTreeView_FeaturesLoadOnDemand_010.PNG)
 
@@ -82,7 +82,7 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 
 	#### __XAML__
 
-	{{region radtreeview-features-load-on-demand_4}}
+	```XAML
 		<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 			<telerik:RadTreeViewItem Header="Sport Categories">
 				<telerik:RadTreeViewItem Header="Football" IsLoadOnDemandEnabled="True" LoadOnDemand="RadTreeViewItem_LoadOnDemand"/>
@@ -90,11 +90,11 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 				<telerik:RadTreeViewItem Header="Cycling" IsLoadOnDemandEnabled="True"/>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 	#### __C#__
 
-	{{region radtreeview-features-load-on-demand_5}}
+	```C#
 		private void RadTreeViewItem_LoadOnDemand( object sender, Telerik.Windows.RadRoutedEventArgs e )
 		{
 			// get the clicked Item
@@ -106,11 +106,11 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 			};
 			clickedItem.Items.Add( newItem );
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtreeview-features-load-on-demand_6}}
+	```VB.NET
 		Private Sub RadTreeViewItem_LoadOnDemand(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 			' get the clicked Item '
 			Dim clickedItem As RadTreeViewItem = TryCast(sender, RadTreeViewItem)
@@ -118,7 +118,7 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 			Dim newItem As New RadTreeViewItem()
 			clickedItem.Items.Add(newItem)
 		End Sub
-	{{endregion}}
+	```
 
 * If you want to enable the Load on demand functionality globally for the entire __RadTreeView__ you can set the __IsLoadOnDemandEnabled__ property to the __RadTreeView__. This will make all Items in the __RadTreeView__ to have the expander icon enabled.
 		
@@ -126,7 +126,7 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 
 	#### __XAML__
 
-	{{region radtreeview-features-load-on-demand_7}}
+	```XAML
 		<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsLoadOnDemandEnabled="True" LoadOnDemand="radTreeView_LoadOnDemand">
 			<telerik:RadTreeViewItem Header="Sport Categories">
 				<telerik:RadTreeViewItem Header="Football"/>
@@ -134,11 +134,11 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 				<telerik:RadTreeViewItem Header="Cycling"/>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 	#### __C#__
 
-	{{region radtreeview-features-load-on-demand_8}}
+	```C#
 		private void radTreeView_LoadOnDemand( object sender, RadRoutedEventArgs e )
 		{
 			// get the treeview
@@ -153,11 +153,11 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 			clickedItem.Items.Add( newItem );
 			clickedItem.IsLoadOnDemandEnabled = false;
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtreeview-features-load-on-demand_9}}
+	```VB.NET
 		Private Sub radTreeView_LoadOnDemand(sender As Object, e As RadRoutedEventArgs)
 		 ' get the treeview '
 		 Dim tree As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
@@ -168,7 +168,7 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 		 clickedItem.Items.Add(newItem)
 		 clickedItem.IsLoadOnDemandEnabled = False
 		End Sub
-	{{endregion}}
+	```
 
 >tip The __RadRoutedEventArgs__ expose both the __Source__ and the __OriginalSource__ of the event.{% if site.site_name == 'Silverlight' %} Both properties point to the __RadTreeViewItem__ that was clicked. {% endif %}{% if site.site_name == 'WPF' %}The __Source__ property points to the __RadTreeView__ control that is currently handling the event, but the __OriginalSource__ property points to the __RadTreeViewItem__ that was clicked.{% endif %}
 

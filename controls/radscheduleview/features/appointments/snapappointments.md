@@ -14,11 +14,11 @@ RadScheduleView provides the option to automatically snap the appointments while
 
 #### __XAML__
 
-{{region radscheduleview-features-snapappointments_0}}
+```XAML
 	<telerik:RadScheduleView SnapAppointments="True">
 	...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 This way during drag/resize operation the Start/End times of the appointment will be rounded according to the TimeSlots’ length:
 
@@ -30,13 +30,13 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 
 #### __XAML__
 
-{{region radscheduleview-features-snapappointments_1}}
+```XAML
 	<telerik:RadScheduleView SnapAppointments="True">		
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition MinorTickLength = "15min" />		
 		</telerik:RadScheduleView.ViewDefinitions>	
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 And the result is:
 
@@ -54,17 +54,17 @@ In the next example it is demonstrated how to set the snapping to 5 minutes rega
 
 #### __C#__
 
-{{region radscheduleview-features-snapappointments_2}}
+```C#
 	public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
 	{
 	}
-{{endregion}}
+```
 
 * Override the needed methods:
 
 #### __C#__
 
-{{region radscheduleview-features-snapappointments_3}}
+```C#
 	public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
 	{
 	
@@ -108,20 +108,20 @@ In the next example it is demonstrated how to set the snapping to 5 minutes rega
             		return new CustomSnapBehavior();
         	}
 	}
-{{endregion}}
+```
 
 * Attach the newly created custom behavior to the ScheduleView control:
 
 #### __XAML__
 
-{{region radscheduleview-features-snapappointments_4}}
+```XAML
 	<telerik:RadScheduleView SnapAppointments="True">
 		...
 		<telerik:RadScheduleView.SnapBehavior>
 			<local:CustomSnapBehavior />
 		</telerik:RadScheduleView.SnapBehavior>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 So now the appointments are snapped to 5 minutes:
 

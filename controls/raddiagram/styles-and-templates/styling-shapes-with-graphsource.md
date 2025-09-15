@@ -22,8 +22,8 @@ __Link:__ A class deriving from the LinkViewModelBase ViewModel that represents 
 
 __MyGraphSource:__ A class deriving from the ObservableGraphSourceBase ViewModel that represents the RadDiagram GraphSource.
 
-#### __[C#] Example 1:  Creating the ViewModels__
-	{{region raddiagram-styling-shapes-with-graphsource_0}}
+__Example 1:  Creating the ViewModels__
+	```C#
 		public class ContainerModel : ContainerNodeViewModelBase<object> 
 		{ 
 		} 
@@ -47,12 +47,12 @@ __MyGraphSource:__ A class deriving from the ObservableGraphSourceBase ViewModel
 				this.AddNode(containerModel);			
 			}   
 		}		
-	{{endregion}}
+	```
 	
 Next, we can go ahead and define a RadDiagram control in our view. We can add three buttons to change the ActiveTool property of the RadDiagram at runtime.
 
-#### __[XAML] Example 2: Defining RadDiagram in XAML__
-	{{region raddiagram-styling-shapes-with-graphsource_1}}
+__Example 2: Defining RadDiagram in XAML__
+	```XAML
 		<Grid>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="auto"/>
@@ -67,12 +67,12 @@ Next, we can go ahead and define a RadDiagram control in our view. We can add th
 			</StackPanel>
 			<telerik:RadDiagram x:Name="diagram" Grid.Row="1"/> 
 		</Grid>
-	{{endregion}}
+	```
 
 And finally, we need to set the RadDiagram GraphSource property and subscribe to the Click event of the RadButtons. In the event handler, we are changing the ActiveTool property depending on the button content:
 
-#### __[C#] Example 3: Setting GraphSource property__
-	{{region raddiagram-styling-shapes-with-graphsource_2}}
+__Example 3: Setting GraphSource property__
+	```C#
 		public MainWindow() 
 		{ 
 			InitializeComponent();   
@@ -102,7 +102,7 @@ And finally, we need to set the RadDiagram GraphSource property and subscribe to
 					break;
 			}
 		}
-	{{endregion}}
+	```
 
 If you run the application now, the RadDiagram should display the following structure:
 
@@ -123,8 +123,8 @@ The different active tools correspond to different shapes:
 	
 To overcome this you can create a StyleSelector and apply it to the __ShapeStyleSelector__ of the RadDiagram. __Example 4__ demonstrates the custom __StyleSelector__.
 
-#### __[C#] Example 4: Creating a custom StyleSelector__
-	{{region raddiagram-styling-shapes-with-graphsource_3}}
+__Example 4: Creating a custom StyleSelector__
+	```C#
 		public class ShapeStyleSelector : StyleSelector
 		{
 			public Style ContainerStyle { get; set; }
@@ -149,12 +149,12 @@ To overcome this you can create a StyleSelector and apply it to the __ShapeStyle
 				return base.SelectStyle(item, container);
 			}
 		}
-	{{endregion}}
+	```
 
 Now you need to specify different styles for the different types of shapes. For example, when creating a shape with the TextTool, the TargetType property of the custom style needs to be set to __RadDiagramTextShape__. __Example 4__ shows the final XAML code.  
 
-#### __[XAML] Example 5: Creating custom styles for every shape__
-	{{region raddiagram-styling-shapes-with-graphsource_4}}
+__Example 5: Creating custom styles for every shape__
+	```XAML
 		<Window.Resources>
 			<DataTemplate x:Key="contentTemplate">
 				<TextBlock Text="{Binding Content}" />
@@ -204,7 +204,7 @@ Now you need to specify different styles for the different types of shapes. For 
 				ShapeStyleSelector="{StaticResource shapeStyleSelector}">
 			</telerik:RadDiagram>
 		</Grid>
-	{{endregion}}
+	```
 
 If you run the application now, the custom shapes created by the different tools will be displayed as expected.
 

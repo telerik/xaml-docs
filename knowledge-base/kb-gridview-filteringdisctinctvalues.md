@@ -34,8 +34,8 @@ How to filter Enum values in __GridView__ column and display all of them in the 
 
 You can use the [DistinctValuesLoading]({%slug gridview-filtering-customizing-distinct-values%}) event of `RadGridView`.
 
-#### __[C#]__
-{{region kb-gridview-filtering-disctinctvalues}}
+
+```C#
 	private void RadGridView_DistinctValuesLoading(object sender, 	Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
 	{
 		var dataColumn = e.Column as GridViewBoundColumnBase;
@@ -44,5 +44,5 @@ You can use the [DistinctValuesLoading]({%slug gridview-filtering-customizing-di
 			e.ItemsSource = Enum.GetValues(dataColumn.DataType);
 		}
 	}
-{{endregion}}
+```
 

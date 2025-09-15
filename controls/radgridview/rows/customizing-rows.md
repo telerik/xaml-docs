@@ -16,10 +16,10 @@ By default the first cell of a row represents the row indicator area. The indica
 
 The row indicator visibility is controlled with the __RowIndicatorVisibility__ property of RadGridView.
 
-#### __[XAML] Example 1: Hiding the row indicator__  
-{{region xaml-gridview-customizing-rows_0}}
+__Example 1: Hiding the row indicator__  
+```XAML
 	<telerik:RadGridView RowIndicatorVisibility="Collapsed" />
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid CustomizingRows 2](images/RadGridView_CustomizingRows_2.png)
 
@@ -27,15 +27,15 @@ The row indicator visibility is controlled with the __RowIndicatorVisibility__ p
 
 To limit the height of the rows, set the __RowHeight__ property of RadGridView. The property affects the rows only if their content is measured with a height smaller or equal to the RowHeight value. Otherwise, the measured size takes precedence.
 
-#### __[XAML] Example 2: Setting RowHeight__  
-{{region xaml-gridview-customizing-rows_1}}
+__Example 2: Setting RowHeight__  
+```XAML
 	<telerik:RadGridView RowHeight="50" />
-{{endregion}}
+```
 
 Additionally, the rows content size can be limited via the __MinHeight__ and __MaxHeight__ properties of the GridViewRow control. To set those, you can use the __RowStyle__ property of RadGridView.
 
-#### __[XAML] Example 3: Setting row's MaxHeight__  
-{{region xaml-gridview-customizing-rows_2}}
+__Example 3: Setting row's MaxHeight__  
+```XAML
 	<telerik:RadGridView>
 		<telerik:RadGridView.RowStyle>
 			<!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewRowStyle}" -->
@@ -44,7 +44,7 @@ Additionally, the rows content size can be limited via the __MinHeight__ and __M
 			</Style>
 		</telerik:RadGridView.RowStyle>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 RadGridView allows you to easily customize each of the row types by just assigning a style to it. 
 

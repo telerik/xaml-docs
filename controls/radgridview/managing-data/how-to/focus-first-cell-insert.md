@@ -18,22 +18,22 @@ This article shows how to make always the first column be focused when a new ite
 
 #### __C#__
 
-{{region cs-gridview-how-to-focus-first-cell-insert_0}}
+```C#
 	private void clubsGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
 	{
 	    var grid = e.OwnerGridViewItemsControl;
 	    grid.CurrentColumn = grid.Columns[0];
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-how-to-focus-first-cell-insert_1}}
+```VB.NET
 	Private Sub clubsGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)
 	    Dim grid = e.OwnerGridViewItemsControl
 	    grid.CurrentColumn = grid.Columns(0)
 	End Sub
-{{endregion}}
+```
 
 Now, no matter which is the current column, when you insert a new item - the first cell will always get the focus. 
 

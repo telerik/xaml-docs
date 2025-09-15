@@ -34,8 +34,8 @@ To get the clicked data point, you can use the MouseLeftButtonDown event of RadC
 
 The following example shows this approach with BarSeries, but you can apply this with any series that has its default visual element shown.
 
-#### __[C#]__
-{{region kb-chartview-howto-get-clicked-data-point-0}}
+
+```C#
 	private void RadCartesianChart_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
 	{
 		var chart = (RadCartesianChart)sender;
@@ -59,4 +59,4 @@ The following example shows this approach with BarSeries, but you can apply this
 			var clickedVisual = clickedDataPointSeries.GetDataPointVisual(clickedDataPoint);
 		}        
 	}
-{{endregion}}
+```

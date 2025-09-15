@@ -14,8 +14,8 @@ The __CategoricalAxis__ and the __DateTime axes (DateTimeCategoricalAxis and Dat
 
 __Example 1__ demonstrates that setting the __GapLength__ to __0.90__ value tells the gap to take __90%__ of the available space in the category slot. The other __10%__ will be taken by the bar visuals of the series.
 
-#### __[XAML] Example 1: Setting the GapLength property__
-{{region radchartview-axes-gap-length_1}}
+__Example 1: Setting the GapLength property__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis GapLength="0.90"/>
@@ -37,7 +37,7 @@ __Example 1__ demonstrates that setting the __GapLength__ to __0.90__ value tell
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Gap Length](images/radchartview-axes-gap-length.png)
 	

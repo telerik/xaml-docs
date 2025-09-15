@@ -32,8 +32,8 @@ How to attach to the SelectionChanged event of the RadComboBox elements hosted i
 
 To subscribe to the SelectionChanged event, you can use the `EventManager` class in order to subscribe all RadComboBox instances to the event. Then, in the event handler, you can check if the current `RadComboBox` is hosted in `FilteringControl`. In that case, execute the code in the handler.
 
-#### __[C#]__
-{{region kb-gridview-filter-combo-selectionchanged-0}}
+
+```C#
 	public partial class MainWindow : Window
 	{
         	static MainWindow()
@@ -57,4 +57,4 @@ To subscribe to the SelectionChanged event, you can use the `EventManager` class
 			InitializeComponent();            
 		}
     }
-{{endregion}}
+```

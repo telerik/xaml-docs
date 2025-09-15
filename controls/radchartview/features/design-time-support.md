@@ -28,12 +28,12 @@ To use the feature and generate a sample chart, define an empty chart in XAML or
 
 1. Define an empty RadCartesianChart
 
-	#### __[XAML] Example 1: Defining an empty chart__
-	{{region radchartview-features-design-time-support-0}}
+	__Example 1: Defining an empty chart__
+	```XAML
 		<Grid>
 			<telerik:RadCartesianChart />
 		</Grid>
-	{{endregion}}
+	```
 
 2. Click onto the chart in the Visual Studio designer. This will show a small screen tip on the top right part of the chart.
 
@@ -51,8 +51,8 @@ To use the feature and generate a sample chart, define an empty chart in XAML or
 
 This will generate the following Xaml:
 
-#### __[XAML] Example 2: The auto-generated Xaml__
-{{region radchartview-features-design-time-support-1}}
+__Example 2: The auto-generated Xaml__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.Grid>
 			<telerik:CartesianChartGrid StripLinesVisibility="Y">
@@ -91,7 +91,7 @@ This will generate the following Xaml:
 			</telerik:BarSeries.DefaultVisualStyle>
 		</telerik:BarSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Bar Chart in Designer](images/radchartview-features-design-time-support-4.png)
 

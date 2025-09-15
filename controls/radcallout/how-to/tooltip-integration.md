@@ -12,8 +12,8 @@ position: 1
 
 The RadCallout can be easily used as a tooltip. The code snippet in __Example 1__ shows how we can do this by using RadToolTip control. 
 
-#### __[C#] Example 1: Place RadCallout Inside RadToolTip__
-	{{region cs-radcallout-howto-tooltip-integration}}
+__Example 1: Place RadCallout Inside RadToolTip__
+	```C#
 		<telerik:RadButton VerticalAlignment="Center" HorizontalAlignment="Center" Content="RadToolTip" Width="80"
 							telerik:RadToolTipService.ToolTipContentTemplate="{x:Null}"
 							telerik:RadToolTipService.Placement="Top"
@@ -22,6 +22,6 @@ The RadCallout can be easily used as a tooltip. The code snippet in __Example 1_
 				<telerik:RadCallout Content="Callout in a tooltip" Width="120" Margin="0 0 0 10"/>
 			</telerik:RadToolTipService.ToolTipContent>
 		</telerik:RadButton>	
-	{{endregion}}	
+	```	
 
 

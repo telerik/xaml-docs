@@ -14,8 +14,8 @@ By default, when in **Popup** filtering mode, filtering will be applied to the R
 
 You can set a column's **IsFilteringDeferred** property to **True** to change this behavior so that filtering will be performed only when the end user clicks the **Filter** button. Please note that the **Clear** button will immediately clear the column filter regardless of this setting.
 
-#### __[C#] Example 1: Set the IsFilteringDeferred on all columns__
-{{region cs-gridview-filtering-howto-defer-filtering-until-the-filter-button-is-clicked_1}}
+__Example 1: Set the IsFilteringDeferred on all columns__
+```C#
     private void GridView_Loaded(object sender, RoutedEventArgs e)
     {
         foreach (var column in this.GridView.Columns)
@@ -23,7 +23,7 @@ You can set a column's **IsFilteringDeferred** property to **True** to change th
             column.IsFilteringDeferred = true;
         }
     }
-{{endregion}}
+```
 
 ## See Also
 

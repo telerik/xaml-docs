@@ -37,10 +37,10 @@ __RadNavigationView DisplayModes__
 
 By default, the RadNavigationView handles its `SizeChanged` event in order to change its DisplayMode based on the values of the CompactModeThresholdWidth and ExpandedModeThresholdWidth properties. If you do not want this to be the case, you can set the `AutoChangeDisplayMode` property to __False__ as demonstrated in the next example.
 
-#### __[XAML] Setting the AutoChangeDisplayMode to False in xaml__
-{{region xaml-radnavigationview-display-mode-3}}
+__Setting the AutoChangeDisplayMode to False in xaml__
+```XAML
     <telerik:RadNavigationView x:Name="navigationView" AutoChangeDisplayMode="False" />
-{{endregion}}
+```
 
 ## See Also
 

@@ -21,8 +21,8 @@ __RangeSeries__ displays a range of data by plotting two numeric values per data
 
 You can use the definition from __Example 1__ to display a RangeSeries.
 
-#### __[XAML] Example 1: Declaring a RangeSeries in XAML__
-{{region radchartview-series-rangeseries_0}}
+__Example 1: Declaring a RangeSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -44,7 +44,7 @@ You can use the definition from __Example 1__ to display a RangeSeries.
 			</telerik:RangeSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: RangeSeries visual appearance__  
 ![radchartview-series-rangeseries](images/radchartview-series-rangeseries.png)
@@ -71,9 +71,9 @@ The following list represents the most important properties of the RangeSeries.
 
 You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properties of the RangeSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-rangeseries_1}}
+```C#
 	public class PlotInfo
     {
         public string Category { get; set; }
@@ -87,12 +87,12 @@ You can use the __HighBinding__, __LowBinding__ and __CategoryBinding__ properti
 		new PlotInfo() { Category = "January", HighValue = 5, LowValue = 0},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a RangeSeries in XAML__
-{{region radchartview-series-rangeseries_2}}
+__Example 3: Specify a RangeSeries in XAML__
+```XAML
 	<telerik:RangeSeries ItemsSource="{Binding}" HighBinding="HighValue" LowBinding="LowValue" CategoryBinding="Category"/>
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

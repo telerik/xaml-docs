@@ -35,9 +35,9 @@ The DesktopAlertMenuItem is a class that contains the information for the menu i
 
 So, in order to set the __MenuItemsSource__ a sample date needs to be created as shown below:
 
-#### __[C#]  Preparing the data__
+__Preparing the data__
 
-{{region cs-raddesktopalert-menuitemssource_0}}
+```C#
 	public static ObservableCollection<DesktopAlertMenuItem> GetDesktopAlertMenuItems()
 	{
 	    ObservableCollection<DesktopAlertMenuItem> items = new ObservableCollection<DesktopAlertMenuItem>();
@@ -63,11 +63,11 @@ So, in order to set the __MenuItemsSource__ a sample date needs to be created as
 	    items.Add(cutItem);
 	    return items;
 	}
-{{endregion}}
+```
 
-#### __[VB]  Preparing the data__
+__Preparing the data__
 
-{{region vb-raddesktopalert-menuitemssource_0}}
+```VB
 	Public Function GetDesktopAlertMenuItems() As ObservableCollection(Of DesktopAlertMenuItem)
 	    Dim items As New ObservableCollection(Of DesktopAlertMenuItem)()
 	    Dim copyItem As New DesktopAlertMenuItem() With {.Header = "Copy"}
@@ -80,21 +80,21 @@ So, in order to set the __MenuItemsSource__ a sample date needs to be created as
 	    items.Add(cutItem)
 	    Return items
 	End Function
-{{endregion}}
+```
 
 Finally, you need to pass the generated collection to the __MenuItemsSource__:
 
-#### __[C#]  Setting MenuItemsSource__
+__Setting MenuItemsSource__
 
-{{region cs-raddesktopalert-menuitemssource_1}}
+```C#
 	alert.MenuItemsSource = GetDesktopAlertMenuItems();
-{{endregion}}
+```
 
-#### __[VB]  Setting MenuItemsSource__
+__Setting MenuItemsSource__
 
-{{region vb-raddesktopalert-menuitemssource_1}}
+```VB
 	alert.MenuItemsSource = GetDesktopAlertMenuItems()
-{{endregion}}
+```
 
 __Figure 2:__ RadDesktopAlert with set MenuItemsSource
 ![Rad Desktop Alert Menu Items Siurce 01](images/RadDesktopAlert_MenuItemSource_01.png)
@@ -105,7 +105,7 @@ In order to visualize the data in the menu of __RadDeskotopAlert__ you could als
 
 #### __XAML Setting MenuItemsSource___
 
-{{region xaml-raddesktopalert-menuitemssource_0}}
+```XAML
 	<Style x:Key="DesktopAlertMenuItemContainerStyle" TargetType="telerik:RadMenuItem">
 	    <Setter Property="Header" Value="{Binding Header}"/>
 	    <Setter Property="Command" Value="{Binding Command}" />
@@ -122,27 +122,27 @@ In order to visualize the data in the menu of __RadDeskotopAlert__ you could als
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 In order to use the created style with __RadDeskotopAlert__ , you have to set its __MenuItemContainerStyle__ property.
 
-#### __[C#]  Setting MenuItemContainerStyle__
+__Setting MenuItemContainerStyle__
 
-{{region cs-raddesktopalert-menuitemssource_2}}
+```C#
 	var alert = new RadDesktopAlert();
 	alert.ShowMenuButton = true;
 	alert.MenuItemsSource = GetDesktopAlertMenuItems();
 	alert.MenuItemContainerStyle = this.Resources["DesktopAlertMenuItemContainerStyle"] as Style;
-{{endregion}}
+```
 
-#### __[VB]  Setting MenuItemContainerStyle__
+__Setting MenuItemContainerStyle__
 
-{{region vb-raddesktopalert-menuitemssource_2}}
+```VB
 	Dim alert = New RadDesktopAlert()
 	alert.ShowMenuButton = True
 	alert.MenuItemsSource = GetDesktopAlertMenuItems()
 	alert.MenuItemContainerStyle = TryCast(Me.Resources("DesktopAlertMenuItemContainerStyle"), Style)
-{{endregion}}
+```
 
 ## See Also
 

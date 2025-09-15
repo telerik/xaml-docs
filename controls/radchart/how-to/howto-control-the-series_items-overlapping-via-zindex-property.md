@@ -20,7 +20,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 
 #### __C#__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_0}}
+```C#
 	public class UserDataPoint
 	    {
 	        private double _y;
@@ -97,13 +97,13 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	        }
 	
 	      }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_1}}
+```VB.NET
 	Public Class UserDataPoint
 	            Private _y As Double
 	            Private _bubbleSize As Double
@@ -167,7 +167,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	            End Function
 	
 	      End Class
-	{{endregion}}
+	```
 
 
 
@@ -175,7 +175,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 
 #### __C#__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_2}}
+```C#
 	public class BubbleViewModel
 	    {
 	        private List<UserDataPoint> _bubbleData;
@@ -193,13 +193,13 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	            }
 	        }
 	    }
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_3}}
+```VB.NET
 	Public Class BubbleViewModel
 	Private _bubbleData As List(Of UserDataPoint)
 	Public ReadOnly Property BubbleData() As List(Of UserDataPoint)
@@ -211,7 +211,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	End Get
 	End Property
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -219,7 +219,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 
 #### __XAML__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_4}}
+```XAML
 	<TelerikChart:RadChart x:Name="RadChart1" ItemsSource="{Binding BubbleData}">
 	            <TelerikChart:RadChart.SeriesMappings>
 	                <TelerikCharting:SeriesMapping LegendLabel="Bubble Series 0">
@@ -237,7 +237,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	                </TelerikCharting:SeriesMapping>  
 	            </TelerikChart:RadChart.SeriesMappings>
 	        </TelerikChart:RadChart>
-	{{endregion}}
+	```
 
 
 
@@ -247,7 +247,7 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 
 #### __C#__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_5}}
+```C#
 	public MainPage()
 	        {
 	            InitializeComponent();
@@ -274,13 +274,13 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 	                Canvas.SetZIndex(selectedBubble, 2000);
 	        }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_6}}
+```VB.NET
 	Public Sub New()　
 	InitializeComponent()
 	AddHandler RadChart1.DefaultView.ChartArea.SelectionChanged, AddressOf ChartArea_SelectionChanged
@@ -300,7 +300,7 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 	Canvas.SetZIndex(selectedBubble, 2000)
 	End If
 	End Sub
-	{{endregion}}
+	```
 
 
 

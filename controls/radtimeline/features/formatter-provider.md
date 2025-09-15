@@ -20,7 +20,7 @@ The example below shows how formatter providers can be utilized (once they are i
 
 #### __XAML__
 
-{{region radtimeline_formatter_provider_0}}
+```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
 	                    PeriodEnd="2011-01-05"
 	                    VisiblePeriodStart="2011-01-01"
@@ -37,7 +37,7 @@ The example below shows how formatter providers can be utilized (once they are i
 	        <telerik:HourInterval FormatterProvider="{StaticResource HourFormatterProvider}"/>
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	{{endregion}}
+	```
 
 ## The IIntervalFormatterProvider interface
 
@@ -51,7 +51,7 @@ Here is a sample hour formatter provider implementation:
 
 #### __C#__
 
-{{region radtimeline_formatter_provider_0}}
+```C#
 	using  Telerik.Windows.Controls.TimeBar;
 	
 	public class HourFormatterProvider : IIntervalFormatterProvider
@@ -86,11 +86,11 @@ Here is a sample hour formatter provider implementation:
 	        return this.intervalSpanFormatters;
 	    }
 	}
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region radtimeline_formatter_provider_0}}
+```VB.NET
 	Imports Telerik.Windows.Controls.TimeBar
 	
 	Public Class HourFormatterProvider
@@ -115,7 +115,7 @@ Here is a sample hour formatter provider implementation:
 	        Return Me.intervalSpanFormatters
 	    End Function
 	End Class
-	{{endregion}}
+	```
 
 Below you can find screenshots showing when each format is used.
 

@@ -32,8 +32,8 @@ How to display a context menu for the event container elements of RadGanttView.
 
 Define the context menu on the RadGanttView level and show it only when an EventContainer is clicked. To do this, handle the ContextMenuOpening event.
 
-#### __[XAML]__
-{{region kb-ganttview-add-contextmenu-for-event-containers-0}}
+
+```XAML
 	<telerik:RadGanttView ContextMenuOpening="RadGanttView_ContextMenuOpening">
 		<telerik:RadContextMenu.ContextMenu>
 			<telerik:RadContextMenu>
@@ -41,10 +41,10 @@ Define the context menu on the RadGanttView level and show it only when an Event
 			</telerik:RadContextMenu>
 		</telerik:RadContextMenu.ContextMenu>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-ganttview-add-contextmenu-for-event-containers-1}}
+
+```XAML
 	private void RadGanttView_ContextMenuOpening(object sender, ContextMenuEventArgs e)
 	{
 		var source = (FrameworkElement)e.OriginalSource;
@@ -54,7 +54,7 @@ Define the context menu on the RadGanttView level and show it only when an Event
 			e.Handled = true;
 		}
 	}
-{{endregion}}
+```
 
 Setting `e.Handled = true` will cancel the menu opening.
 

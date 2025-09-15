@@ -16,15 +16,15 @@ To replace the default actions of the commands, you can implement the __ICommand
 
 The following example shows how to setup two DelegateCommand objects which implement ICommand and assign the custom commands to the corresponding properties in order to replace the default search and clear behaviors.
 
-#### __[XAML] Example 1: Setting up the view__
-{{region radautosuggestbox-features-commands-0}}
+__Example 1: Setting up the view__
+```XAML
 	<telerik:RadAutoSuggestBox x:Name="radAutoSuggestBox" />
-{{endregion}}
+```
 
 >tip See how to setup a runnable RadAutoSuggestBox example in the [Getting Started]({%slug radautosuggestbox-getting-started%}) article.
 
-#### __[C#] Example 2: Implementing and assigning the commands__
-{{region radautosuggestbox-features-commands-1}}
+__Example 2: Implementing and assigning the commands__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -49,7 +49,7 @@ The following example shows how to setup two DelegateCommand objects which imple
 		}
 		this.radAutoSuggestBox.IsDropDownOpen = false;
 	}
-{{endregion}}
+```
 
 ## See Also  
 * [Getting Started]({%slug radautosuggestbox-getting-started%})

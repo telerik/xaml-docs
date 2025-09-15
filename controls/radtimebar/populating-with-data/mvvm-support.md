@@ -15,7 +15,7 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 1. Create new ViewModel class that inherits the *ViewModelBase* abstract class:
 
 	#### __C#__
-	{{region radtimebar-mvvm-support_0}}
+	```C#
 		public class ExampleViewModel : ViewModelBase
 			{
 				private DateTime periodStart;
@@ -110,10 +110,10 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 					}
 				}
 			}
-		{{endregion}}
+		```
 
 	#### __VB.NET__
-	{{region radtimebar-mvvm-support_1}}
+	```VB.NET
 		Public Class ExampleViewModel Inherits ViewModelBase
 					Private periodStart_Renamed As Date
 					Private periodEnd_Renamed As Date
@@ -197,7 +197,7 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 						  End Get
 					End Property
 		End Class
-		{{endregion}}
+		```
 
 	The __PeriodStart__ and __PeriodEnd__ properties will specify the time period that the TimeBar will visualize. The __VisiblePeriodStart__ and __VisiblePeriodEnd__ properties will specify the visible time period on the screen. The Data collection will be used as datasource for the SparkLines that will be seen inside the TimeBar control.
 
@@ -207,7 +207,7 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 
 	#### __XAML__
 
-	{{region radtimebar-mvvm-support_2}}
+	```XAML
 		<UserControl.DataContext>
 				<local:ExampleViewModel PeriodStart="01/01/2012" PeriodEnd="01/01/2013" VisiblePeriodStart="01/01/2012" VisiblePeriodEnd="01/01/2013" />
 			</UserControl.DataContext>
@@ -229,7 +229,7 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 					<telerik:RadLinearSparkline ItemsSource="{Binding Data}" />
 				</telerik:RadTimeBar>
 			</Grid>
-		{{endregion}}
+		```
 
 The result can be seen below:
 

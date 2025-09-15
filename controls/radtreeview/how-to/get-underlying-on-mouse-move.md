@@ -20,9 +20,9 @@ If you want to get the underlying item when you move your mouse over the treevie
 
 #### __XAML__
 
-{{region radtreeview-how-to-get-underlying-on-mouse-move_0}}
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" MouseMove="radTreeView_MouseMove">
-	{{endregion}}
+	```
 
 
 
@@ -30,7 +30,7 @@ If you want to get the underlying item when you move your mouse over the treevie
 
 #### __C#__
 
-{{region radtreeview-how-to-get-underlying-on-mouse-move_1}}
+```C#
 	private void radTreeView_MouseMove( object sender, MouseEventArgs e )
 	{
 	     FrameworkElement element = e.OriginalSource as FrameworkElement;
@@ -51,13 +51,13 @@ If you want to get the underlying item when you move your mouse over the treevie
 	         }
 	     }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-get-underlying-on-mouse-move_2}}
+```VB.NET
 	Private Sub radTreeView_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
 	    Dim element As FrameworkElement = TryCast(e.OriginalSource, FrameworkElement)
 	    If element IsNot Nothing Then
@@ -76,7 +76,7 @@ If you want to get the underlying item when you move your mouse over the treevie
 	        End While
 	    End If
 	End Sub
-	{{endregion}}
+	```
 
 
 

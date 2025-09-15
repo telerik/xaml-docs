@@ -22,7 +22,7 @@ The main idea behind this binding is to create an object that implements INotify
 
 #### __XAML__
 
-{{region xaml-radchart-howto-binding-datapointmember-to-a-depenndency-property_0}}
+```XAML
 	<telerik:RadChart x:Name="RadChart1" Margin="0,0,0,48" ItemsSource="{Binding}">
 	     <telerik:RadChart.SeriesMappings>
 	          <telerik:SeriesMapping>
@@ -35,7 +35,7 @@ The main idea behind this binding is to create an object that implements INotify
 	</telerik:RadChart>
 	<TextBox Height="23" HorizontalAlignment="Left" Margin="342,0,0,12" Name="textBox1" VerticalAlignment="Bottom" Width="120" Text="{Binding Path=[0].yValue, Mode=TwoWay}" />
 	<TextBlock Height="23" HorizontalAlignment="Left" Margin="300,0,0,8" Name="textBlock1" Text="Value:" VerticalAlignment="Bottom" />
-{{endregion}}
+```
 
 
 
@@ -43,7 +43,7 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 
 #### __C#__
 
-{{region cs-radchart-howto-binding-datapointmember-to-a-depenndency-property_1}}
+```C#
 	public class MyObject : INotifyPropertyChanged
 	{
 	  private double _yValue = 0;
@@ -68,13 +68,13 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 	     PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	   }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-binding-datapointmember-to-a-depenndency-property_2}}
+```VB.NET
 	Public Class MyObject
 	    Implements INotifyPropertyChanged
 	
@@ -105,7 +105,7 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 	
 	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 
 
@@ -113,19 +113,19 @@ Set the DataContext property to List of MyObject class after the InitializeCompo
 
 #### __C#__
 
-{{region cs-radchart-howto-binding-datapointmember-to-a-depenndency-property_3}}
+```C#
 	this.DataContext = new List<MyObject>() { new MyObject() };
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-binding-datapointmember-to-a-depenndency-property_4}}
+```VB.NET
 	Me.DataContext = New List(Of MyObject)() From { _
 	New MyObject() _
 	}
-{{endregion}}
+```
 
 
 

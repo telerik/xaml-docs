@@ -34,7 +34,7 @@ You can set the __LayoutMode__ from XAML or code-behind like this:
 
 #### __XAML__
 
-{{region xaml-radchart-features-layout-mode_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -48,21 +48,21 @@ You can set the __LayoutMode__ from XAML or code-behind like this:
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-layout-mode_1}}
+```C#
 	this.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-features-layout-mode_2}}
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal
-{{endregion}}
+```
 
 On the snapshots below you can see the differences between the available layout modes.
 

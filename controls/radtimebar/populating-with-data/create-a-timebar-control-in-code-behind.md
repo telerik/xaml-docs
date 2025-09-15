@@ -18,7 +18,7 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 
 	#### __C#__
 
-	{{region radtimebar-create-a-timebar-control-in-code-behind_0}}
+	```C#
 		InitializeComponent();
 		RadAreaSparkline sparkline = new RadAreaSparkline();
 		Random r = new Random();
@@ -29,13 +29,13 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 			 data.Add(r.Next(0, 60));
 		   }
 		sparkline.ItemsSource = data;
-		{{endregion}}
+		```
 
 
 
 	#### __VB.NET__
 
-	{{region radtimebar-create-a-timebar-control-in-code-behind_1}}
+	```VB.NET
 		InitializeComponent()
 		
 		Dim sparkline As New RadAreaSparkline()
@@ -53,12 +53,12 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 		Loop
 		
 		sparkline.ItemsSource = data
-		{{endregion}}
+		```
 
 2. Create new TimeBar and add the SparkLine as Content. 
 
 	#### __C#__
-	{{region radtimebar-create-a-timebar-control-in-code-behind_2}}
+	```C#
 		RadTimeBar timebar = new RadTimeBar();
 		   timebar.BeginInit();
 		   timebar.Width = 950;
@@ -75,10 +75,10 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 		   timebar.EndInit();
 		   timebar.Content = sparkline;
 		   this.Content = timebar;
-		{{endregion}}
+		```
 		
 	#### __VB.NET__
-	{{region radtimebar-create-a-timebar-control-in-code-behind_3}}
+	```VB.NET
 		Dim timebar As New RadTimeBar()
 		   timebar.BeginInit()
 		   timebar.Width = 950
@@ -95,7 +95,7 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 		   timebar.EndInit()
 		   timebar.Content = sparkline
 		   Me.Content = timebar
-		{{endregion}}
+		```
 
 The result:         
 ![{{ site.framework_name }} RadTimeBar Created in Code-Behind](images/radtimeBar_create_programmatically.PNG)

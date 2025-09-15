@@ -15,16 +15,16 @@ Displaying data in the __RadGridView__ depends on the data binding mechanism. Th
 
 #### __C#__
 
-{{region cs-gridview-overview-data-binding_0}}
+```C#
 	this.radGridView.ItemsSource = GetObservableObjectData();
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-gridview-overview-data-binding_1}}
+```VB.NET
 	Me.radGridView.ItemsSource = GetObservableObjectData()
-{{endregion}}
+```
 
 
 The next step is to configure the data bindings for the __RadGridView__ [columns]({%slug gridview-columns-defining-columns%}). To learn more about the data binding in the context of the __RadGridView__ take a look at the [Configuring the Data Bindings]({%slug gridview-configuring-the-databindings%}) topic.

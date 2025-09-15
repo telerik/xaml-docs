@@ -12,16 +12,16 @@ position: 14
 
 When the RadGridView is read-only or bound to a collection that does not implement the __INotifyCollectionChanged__ interface you can use the RadGridView __Items__ collection's __AddNewItem()__ method to add an item and select it if needed. **Example 1** shows how this can be done:
 
-#### __[C#] Example 1: Inser New Row in ReadOnly RadGridView__
+__Example 1: Inser New Row in ReadOnly RadGridView__
 
-	{{region cs-gridview-add-new-row-read-only-grid_0}}
+	```C#
 		private void Button1_Click(object sender, RoutedEventArgs e)
 		{
 			var item = new Club() { Name = "New Club" };
 			this.myGridView.Items.AddNewItem(item);
 			this.myGridView.SelectedItem = item; // select the new row if required
 		}
-	{{endregion}}
+	```
 
 ## See Also
 

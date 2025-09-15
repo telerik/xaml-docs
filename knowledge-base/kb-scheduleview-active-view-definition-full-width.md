@@ -34,14 +34,14 @@ To extend the content size of the RadScheduleView's active view definition, you 
 
 Here is an example code snippet to achieve the desired behavior:
 
-#### __[XAML]__
-{{region scheduleview-dayviewdefinition-full-width-0}}
+
+```XAML
     <telerik:RadScheduleView x:Name="scheduleView" DataContext="{StaticResource MyViewModel}" AppointmentsSource="{Binding MyAppointments}">
         <telerik:RadScheduleView.ViewDefinitions>
             <telerik:DayViewDefinition MinTimeRulerExtent="{Binding ElementName=scheduleView, Path=ActualWidth}"/>
         </telerik:RadScheduleView.ViewDefinitions>
     </telerik:RadScheduleView>
-{{endregion}}
+```
 
 For more details on configuring the TimeRuler, refer to the [WPF ScheduleView - TimeRuler Configuration](https://docs.telerik.com/devtools/wpf/controls/radscheduleview/end-user-capabilities/timerulerconfiguration) documentation.
 

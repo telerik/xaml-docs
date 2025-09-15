@@ -22,14 +22,14 @@ Using the __SetToday__ command the current date of __RadDateTimePicker__ could b
 
 In __Example 1__ a __Button__ is linked to the __RadDateTimePickerCommands.SetToday__ command after whose execution the date will be set to the current day:
 
-#### __[XAML] Example 1: SetToday command__
+__Example 1: SetToday command__
 
-{{region xaml-raddatetimepicker-commands_0}}
+```XAML
 	<telerik:RadDateTimePicker x:Name="dateTimePicker1" />
 	<telerik:RadButton Command="{x:Static telerik:RadDateTimePickerCommands.SetToday}" 
 					   CommandTarget="{Binding ElementName=dateTimePicker1}" 
 					   Content="Set Today"/>
-{{endregion}}
+```
 
 ## Close Command
 
@@ -37,11 +37,11 @@ The __Close__ command closes the drop down part of __RadDateTimePicker__ if it i
 
 __Example 2__ demonstrates how to close the drop down of __RadDateTimePicker__ by executing the __Close__ command:
 
-#### __[C#] Example 2: Close command__
+__Example 2: Close command__
 
-{{region cs-raddatetimepicker-commands_1}}
+```C#
 	RadDateTimePickerCommands.Close.Execute(null, this.dateTimePicker1);
-{{endregion}}
+```
 
 ## See Also
 

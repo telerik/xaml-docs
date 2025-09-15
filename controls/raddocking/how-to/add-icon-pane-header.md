@@ -16,7 +16,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 
 #### __XAML__
 
-{{region xaml-raddocking-how-to-add-icon-pane-header_0}}
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 	
 	    <telerik:RadSplitContainer>
@@ -36,7 +36,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	    </telerik:RadSplitContainer>
 	
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_HowTo_AddPaneHeaderIcon_010.png)
 
@@ -44,7 +44,7 @@ In order to add an icon to the __RadPane's__ header, you should create a custom 
 
 #### __XAML__
 
-{{region xaml-raddocking-how-to-add-icon-pane-header_1}}
+```XAML
 	<UserControl.Resources>
 	
 	    <DataTemplate x:Key="HeaderTemplate">
@@ -55,13 +55,13 @@ In order to add an icon to the __RadPane's__ header, you should create a custom 
 	    </DataTemplate>
 	
 	</UserControl.Resources>
-{{endregion}}
+```
 
 Set the created data template to the __HeaderTemplate__ property of the __RadPane__.
 
 #### __XAML__
 
-{{region xaml-raddocking-how-to-add-icon-pane-header_2}}
+```XAML
 	<telerik:RadDocking x:Name="radDocking1">
 	    <telerik:RadSplitContainer>
 	        <telerik:RadPaneGroup>
@@ -82,7 +82,7 @@ Set the created data template to the __HeaderTemplate__ property of the __RadPan
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 Here is the final result:
 

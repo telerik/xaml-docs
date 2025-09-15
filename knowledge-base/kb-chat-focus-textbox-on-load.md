@@ -31,17 +31,17 @@ How to set focus to RadChat on load.
 
 Access the __RadWatermarkTextBox__ inside the RadChat, using the [ChildrenOfType]({%slug common-visual-tree-helpers%}) extension method and focus it. This can be achieved in the __Loaded__ event of the control.
 
-#### __[XAML]__
-{{region kb-chat-focus-textbox-on-load-0}}
-	<telerik:RadChat x:Name="chat" Loaded="chat_Loaded" />
-{{endregion}}
 
-#### __[C#]__
-{{region kb-chat-focus-textbox-on-load-1}}
+```XAML
+	<telerik:RadChat x:Name="chat" Loaded="chat_Loaded" />
+```
+
+
+```C#
 	private void chat_Loaded(object sender, RoutedEventArgs e)
     {
         var chat = sender as RadChat;
         var watermarkTextBox = chat.ChildrenOfType<RadWatermarkTextBox>().FirstOrDefault(tb => tb.Name == "PART_InputBox");
         watermarkTextBox.Focus();
     }
-{{endregion}}
+```

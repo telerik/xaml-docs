@@ -14,23 +14,20 @@ Aside from the __property level__ validation, RadDataForm supports validation th
 
 In order to enable this kind of validation you first need to include the System.ComponentModel.DataAnnotations namespace:
 
-#### __[C#] Example 1: Including System.ComponentModel.DataAnnotations__
+__Example 1: Including System.ComponentModel.DataAnnotations__
 
-	{{region cs-raddataform-validation-item-level_0}}
+	```C#
 	using System.ComponentModel.DataAnnotations;
-{{endregion}}
-
-#### __[VB.NET] Example 1: Including System.ComponentModel.DataAnnotations__
-
-	{{region vb-raddataform-validation-item-level_0}}
+```
+```VB.NET
 	Imports System.ComponentModel.DataAnnotations
-{{endregion}}
+```
 
 Now, let's define a simple Employee class with validation attributes.
 
-#### __[C#] Example 2: Creating an Employee class with validation attributes__
+__Example 2: Creating an Employee class with validation attributes__
 
-	{{region cs-raddataform-validation-item-level_1}}
+	```C#
 	public class Employee
 	{
 	    [Required]
@@ -42,11 +39,8 @@ Now, let's define a simple Employee class with validation attributes.
 	    [RegularExpression("[a-z]#[0-9]*")]
 	    public string EmployeeID { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Creating an Employee class with validation attributes__
-
-	{{region vb-raddataform-validation-item-level_1}}
+```
+```VB.NET
 	Public Class Employee
 	    <Required()>
 	    Public Property FirstName() As String
@@ -89,7 +83,7 @@ Now, let's define a simple Employee class with validation attributes.
 	    End Property
 	    Private m_EmployeeID As String
 	End Class
-{{endregion}}
+```
 
 **Figure 1** shows RadDataForm's state after validation has been performed.
 
@@ -101,9 +95,9 @@ As seen in the above figure, item level validation errors are not respected by t
 
 In order to notify the UI that validation has failed, you will need to throw a **ValidationException**. **Example 3** shows how to do so through the static **ValidateProperty** method of the **Validator** class.
 
-#### __[C#] Example 3: Set validation through data DataAnnotations__
+__Example 3: Set validation through data DataAnnotations__
 
-{{region cs-raddataform-validation-item-level_2}}
+```C#
 	private string firstName;
 
         [Required]
@@ -122,11 +116,8 @@ In order to notify the UI that validation has failed, you will need to throw a *
                 }
             }
         }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Set validation through data DataAnnotations__
-
-{{region vb-raddataform-validation-item-level_2}}
+```
+```VB.NET
 	Private _firstName As String
 
         <Required>
@@ -144,6 +135,6 @@ In order to notify the UI that validation has failed, you will need to throw a *
                 End If
             End Set
         End Property
-{{endregion}}
+```
 
 Please, have in mind that __those errors are removed from the validation summary__ on the next committing operation, __unlike the property level ones__, which are removed on property change. 

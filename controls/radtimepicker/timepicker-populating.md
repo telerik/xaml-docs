@@ -34,23 +34,20 @@ You can find more info {% if site.site_name == 'Silverlight' %}[here]({%slug ins
 
 The __SelectedTime__ property holds the selected time. Examples 1 and 2 demonstrate how you can set this property in xaml and code behind. For more information, check out the [Selection]({%slug raddatetimepicker-features-selection%}) article of the __RadDateTimePicker__.
 
-#### __[XAML] Example 1: Setting the SelectedTime in xaml__
+__Example 1: Setting the SelectedTime in xaml__
 
-{{region xaml-radtimepicker-timepicker-populating_0}}
+```XAML
  	<telerik:RadTimePicker x:Name="timePicker" SelectedTime="15:00" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the SelectedTime in code__
+__Example 2: Setting the SelectedTime in code__
 
-{{region cs-radtimepicker-timepicker-populating_1}}
+```C#
 	timePicker.SelectedTime = new TimeSpan(15,0,0);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the SelectedTime in code__
-
-{{region vb-radtimepicker-timepicker-populating_2}}
+```
+```VB.NET
 	timePicker.SelectedTime = New TimeSpan(15,0,0)
-{{endregion}}
+```
 
 > In order to take some action when the SelectedTime is changed, you can handle the __SelectionChanged__ event. You can check out all of the available events in the [Events]({%slug raddatetimepicker-events%}) article of the RadDateTimePicker.
 
@@ -58,19 +55,19 @@ The __SelectedTime__ property holds the selected time. Examples 1 and 2 demonstr
 
 You can limit the times that can be selected by setting the __StartTime__ and __EndTime__ properties. The __TimeInterval__ property allows user to specify the interval between time slots available for selection. For more information, check out the [Clock Items]({%slug raddatetimepicker-features-clock-items%}#using-the-starttime-endtime-and-timeinterval-features).
 
-#### __[XAML] Example 2: Setting the StartTime, EndTime and TimeInterval__
+__Example 2: Setting the StartTime, EndTime and TimeInterval__
 
-{{region xaml-radtimepicker-timepicker-populating_3}}
+```XAML
 	<telerik:RadTimePicker x:Name="timePicker" TimeInterval="0:30:0" StartTime="0:0:0" EndTime="7:0:0" />
-{{endregion}}
+```
 
 ## Setting the ClockItemsSource
 
 You can also populate the RadTimePicker from code behind by setting its ClockItemsSource property to a collection of TimeSpan objects. **Example 3** demonstrates how you can achieve this. 
 
-#### __[C#] Example 3: Setting the ClockItemsSource__
+__Example 3: Setting the ClockItemsSource__
 
-{{region cs-radtimepicker-timepicker-populating_4}}
+```C#
 	public DataBinding()
 	{
 	    this.radTimePicker.ClockItemsSource = this.LoadDataObjects();
@@ -86,11 +83,8 @@ You can also populate the RadTimePicker from code behind by setting its ClockIte
 	    };
 	    return times;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the ClockItemsSource__
-
-{{region vb-radtimepicker-timepicker-populating_5}}
+```
+```VB.NET
 	Public Sub New()
 		Me.radTimePicker.ClockItemsSource = Me.LoadDataObjects()
 	End Sub
@@ -103,7 +97,7 @@ You can also populate the RadTimePicker from code behind by setting its ClockIte
 		}
 		Return times
 	End Function
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -122,8 +116,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radtimepicker-getting-started_7}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -133,7 +127,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

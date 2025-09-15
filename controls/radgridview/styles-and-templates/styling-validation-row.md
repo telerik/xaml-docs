@@ -24,8 +24,8 @@ To edit the default invalid row style, you can extract the __ControlTemplate__ o
 
 > To learn how to customize any Telerik theme, see the [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) article.
 
-#### __[XAML] Example 1: Invalid row in the Office_Black theme__
-{{region styling-validation-tooltip-in-gridview-0}}
+__Example 1: Invalid row in the Office_Black theme__
+```XAML
 	 <ControlTemplate x:Key="GridViewRowTemplate" TargetType="grid:GridViewRow">
     . . .
      <Border x:Name="Background_Invalid"
@@ -41,7 +41,7 @@ To edit the default invalid row style, you can extract the __ControlTemplate__ o
 	</Border>
     . . .
 	</ControlTemplate>
-{{endregion}}
+```
 
 ## See Also
 * [Validation]({%slug gridview-managing-data-validation%})

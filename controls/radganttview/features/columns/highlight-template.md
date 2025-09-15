@@ -18,7 +18,7 @@ The xaml of the GanttView should look like this:
 
 #### __XAML__
 
-{{region xaml-radganttview-features-columns-highlight-template-0}}
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"
 	VerticalAlignment="Top"
 	VisibleRange="{Binding VisibleTime}">
@@ -46,7 +46,7 @@ The xaml of the GanttView should look like this:
 	        </telerik:ColumnDefinition>
 	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 >importantWhen creating a custom CellHighlightTemplate for a ColumnDefinition which __MemberBinding__ is set to a custom property or a property that is not the Start, End or Title properties of the GanttTask you should set the binding in the DataTemplate to the built-in __FormattedValue__ property as the above code snippet shows. This is an optimized string value that comes from the built-in virtualization of the control in order to achieve maximum performance.
 

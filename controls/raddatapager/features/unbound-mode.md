@@ -17,7 +17,7 @@ The example in this topic will show you a __ListBox__ bound to a list of integer
 Here is the XAML for the example. In it you can see a __ListBox__ and a __RadDataPager__ with its __PageSize__ property set. The other important thing is the event handler attached to the __PageIndexChanged__ event.
 
 #### __XAML__
-{{region raddatapager-features-unbound-mode_0}}
+```XAML
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
@@ -32,7 +32,7 @@ Here is the XAML for the example. In it you can see a __ListBox__ and a __RadDat
 	                            Margin="0,10,0,0"
 	                            PageIndexChanged="radDataPager_PageIndexChanged" />
 	</Grid>
-{{endregion}}
+```
 
 
 Now take a look at the code-behind. There is a simple list of integers, which will serve as a dummy data. The keypoints here are to set the __ItemCount__ property of the __DataPager__ to the count of your data. In this way the UI will display correct information to the user. The next point is to set the __ItemsSource__ of the __ListBox__ to an appropriate value and the last one is to implement the custom paging logic inside the handler for the __PageIndexChanged__ event.
@@ -40,7 +40,7 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 >tip If you want to implement some logic before the __PageIndex__ gets changed, you can attach an event handler to the __PageIndexChanging__ event.
 
 #### __C#__
-{{region raddatapager-features-unbound-mode_1}}
+```C#
 
 	public partial class UnboundModeSample : UserControl
 	{
@@ -60,11 +60,11 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 
 #### __VB.NET__
-{{region raddatapager-features-unbound-mode_2}}
+```VB.NET
 
 	Public Partial Class UnboundModeSample
 	 Inherits UserControl
@@ -82,7 +82,7 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 	  End If
 	 End Sub
 	End Class
-{{endregion}}
+```
 
 ## See Also  
  * [Source and Paged Source]({%slug raddatapager-features-source-and-paged-source%})

@@ -30,7 +30,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 
 #### __XAML__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-1}}
+```XAML
     <Grid x:Name="LayoutRoot"
               Margin="8"
               Background="White">
@@ -122,13 +122,13 @@ Then you can define the controls in your view. As the purpose of this tutorial i
             </ListBox.Resources>
         </ListBox>
     </Grid>
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
 #### __XAML__
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-0}}
+```XAML
     <Grid x:Name="LayoutRoot"
           Margin="8"
           Background="White">
@@ -220,7 +220,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
             </ListBox.Resources>
         </ListBox>
     </Grid>
-{{endregion}}
+```
 
 {% endif %}
 
@@ -232,12 +232,12 @@ Now that the __ListBox__ allows drop operations, we need to make sure that the _
 
 #### __XAML__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-2}}
+```XAML
 	<!--  Note: With this style we make the ListBoxItems draggable:  -->
 	<Style TargetType="ListBoxItem">
 		<Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True" />
 	</Style>
-{{endregion}}
+```
 
 >tip __telerik__ is alias for the following namespace declaration: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
@@ -270,7 +270,7 @@ So we basically need a class that provides:
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-0}}
+```C#
 	using Telerik.Windows.DragDrop;
 	using Telerik.Windows.Controls;
 	using Telerik.Windows.DragDrop.Behaviors;
@@ -369,11 +369,11 @@ So we basically need a class that provides:
 			
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-0}}
+```VB.NET
 	Imports Telerik.Windows.DragDrop
 	Imports Telerik.Windows.Controls
 	Imports Telerik.Windows.DragDrop.Behaviors
@@ -453,13 +453,13 @@ So we basically need a class that provides:
 
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Now let's attach handlers for the __DragDropManager__ events listed above. We'll do that in the __SubscribeToDragDropEvents()__ method and we'll detach from these handlers in the implementation of the __UnsubscribeFromDragDropEvents()__ method.
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-1}}
+```C#
 	//attaching new DragDropManager event handlers
 	private void SubscribeToDragDropEvents()
 	{
@@ -499,13 +499,13 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-1}}
+```VB.NET
 	'attaching new DragDropManager event handlers'
 	Private Sub SubscribeToDragDropEvents()
 		DragDropManager.AddDragInitializeHandler(Me.AssociatedObject, AddressOf OnDragInitialize)
@@ -538,13 +538,13 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 
 	Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	End Sub
-{{endregion}}
+```
 
 Once we do so, we can start implementing our drag/drop logic. And we'll always have to keep in mind that we need to drag items from the __RadTreeView__ and drop them in the __ListBox__ and vice versa. This means that when we initialize a drag, we need to access the data displayed in the dragged __ListBoxItem__ and add the data to the __DragInitializeEventArgs Data__ object. This will allow us to pass the dragged information during the drag/drop operation. Also, in order to provide the user with elaborate visual information during the drag operation, we can create a helper class that describes the currently dragged item, the item that the drag is passing over, the drop position and the drop index calculated based on the drop position. For instance, we can use the following class definition:
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-2}}
+```C#
 	using Telerik.Windows.Controls;
 	
 	public class DropIndicationDetails : ViewModelBase
@@ -603,11 +603,11 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-2}}
+```VB.NET
 	Imports Telerik.Windows.Controls
 
 	Public Class DropIndicationDetails
@@ -662,13 +662,13 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 We can use this definition to also pass and keep the drag operation details in the __Data__ object provided by the __DragDropManager__. This means that we can implement the following drag initialization:
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-3}}
+```C#
 	private void OnDragInitialize(object sender, DragInitializeEventArgs e)
 	{
 	    DropIndicationDetails details = new DropIndicationDetails();
@@ -693,11 +693,11 @@ We can use this definition to also pass and keep the drag operation details in t
 	    e.AllowedEffects = DragDropEffects.All;
 	    e.Handled = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-3}}
+```VB.NET
 	Private Sub OnDragInitialize(sender As Object, e As DragInitializeEventArgs)
 		Dim details As New DropIndicationDetails()
 		Dim listBoxItem = If(TryCast(e.OriginalSource, System.Windows.Controls.ListBoxItem), TryCast(e.OriginalSource, FrameworkElement).ParentOfType(Of System.Windows.Controls.ListBoxItem)())
@@ -719,28 +719,28 @@ We can use this definition to also pass and keep the drag operation details in t
 		e.DragVisualOffset = e.RelativeStartPoint
 		e.AllowedEffects = DragDropEffects.All
 	End Sub
-{{endregion}}
+```
 
 Then we can implement the __GiveFeedback__ event handler, which is quite straight-forward. As this event enables the drop source to give feedback information to the user, we'll use it to change the appearance of the mouse pointer to indicate the effects allowed by the drop target.		
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-4}}
+```C#
 	private void OnGiveFeedback(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs e)
 	{
 	    e.SetCursor(Cursors.Arrow);
 	    e.Handled = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-4}}
+```VB.NET
 	Private Sub OnGiveFeedback(sender As Object, e As Telerik.Windows.DragDrop.GiveFeedbackEventArgs)
 		e.SetCursor(Cursors.Arrow)
 		e.Handled = True
 	End Sub
-{{endregion}}
+```
 
 Next, we have to handle the DragOver event and implement a logic that decides if the current drag operation is supported over the current drop destination. In this example, we won't allow a drag operation within the __ListBox__, which means that we have to make sure that the drag operation is allowed only if it originates from the __RadTreeView__ control.
 
@@ -750,7 +750,7 @@ As the data object passed by a drag operation started in __RadTreeView__ should 
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-5}}
+```C#
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    TreeViewDragDropOptions options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -776,11 +776,11 @@ As the data object passed by a drag operation started in __RadTreeView__ should 
 	    }
 	    e.Handled = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-5}}
+```VB.NET
 	Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim options As TreeViewDragDropOptions = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 		If options Is Nothing Then
@@ -800,13 +800,13 @@ As the data object passed by a drag operation started in __RadTreeView__ should 
 		End If
 		e.Handled = True
 	End Sub
-{{endregion}}
+```
 
 Finally we'll have to implement the actual drop logic and we'll also have to update the collection displayed in the source of the drag operation accordingly. We'll do that in the handlers of the __Drop__ and __DragDropCompleted__ events.
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-6}}
+```C#
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    TreeViewDragDropOptions options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -837,11 +837,11 @@ Finally we'll have to implement the actual drop logic and we'll also have to upd
 	        collection.Remove(draggedItem);
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-6}}
+```VB.NET
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim options As TreeViewDragDropOptions = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 		If options Is Nothing Then
@@ -869,7 +869,7 @@ Finally we'll have to implement the actual drop logic and we'll also have to upd
 			collection.Remove(draggedItem)
 		End If
 	End Sub
-{{endregion}}
+```
 
 With this the __ListBox__ drag/drop logic is complete. All we have finalize now, is the definition of the control to enable the __ListBoxDragDropBehavior__. So please find the declaration of the __ListBox__ and add the following line:
 'example:ListBoxDragDropBehavior.IsEnabled="True"', where __example__ is an alias pointing to the namespace in which we've defined the __ListBoxDragDropBehavior__ class.		
@@ -883,21 +883,21 @@ In order to configure the __RadTreeView__ to process the drop of an item coming 
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-7}}
+```C#
 	DragDropManager.AddDropHandler(allProductsView, OnDrop);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-7}}
+```VB.NET
 	DragDropManager.AddDropHandler(allProductsView, OnDrop)
-{{endregion}}
+```
 
 In the handler you need to get the dragged data, find the position where the item should be dropped at - before, after or inside a particular __RadTreeViewItem__ and implement the drop by adding the dragged data in the __RadTreeView__ ItemsSource collection:
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-8}}
+```C#
 	IList destinationItems = null;
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
@@ -915,11 +915,11 @@ In the handler you need to get the dragged data, find the position where the ite
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-8}}
+```VB.NET
 	Dim destinationItems As IList = Nothing
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim data = DragDropPayloadManager.GetDataFromObject(e.Data, "DraggedData")
@@ -936,13 +936,13 @@ In the handler you need to get the dragged data, find the position where the ite
 			End If
 		End If
 	End Sub
-{{endregion}}
+```
 
 And to make the dragging operation more informative, we can also subscribe to the __DragDropManager DragOver__ event to update the drag operation information tooltip while dragging over the __RadTreeView__.
 
 #### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-9}}
+```C#
 	private void OnItemDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    var item = (e.OriginalSource as FrameworkElement).ParentOfType<RadTreeViewItem>();
@@ -1011,11 +1011,11 @@ And to make the dragging operation more informative, we can also subscribe to th
 	
 	    return DropPosition.Inside;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-treeview-and-listbox-9}}
+```VB.NET
 	Private Sub OnItemDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim item = TryCast(e.OriginalSource, FrameworkElement).ParentOfType(Of RadTreeViewItem)()
 		If item Is Nothing Then
@@ -1070,7 +1070,7 @@ And to make the dragging operation more informative, we can also subscribe to th
 
 		Return DropPosition.Inside
 	End Function
-{{endregion}}
+```
 
 If you take a closer look at the above code snippet, you'll notice that it basically tracks the current drop destination and position. Then based on its type and value, the code decides if the drag operation is allowed, updating the visual representation of the operation at the same time.
 

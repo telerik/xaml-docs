@@ -29,12 +29,12 @@ In order to create a custom EditAppointmentDialog, use __EditAppointmentDialogSt
 
 #### __XAML__
 
-{{region radscheduleview-features-custom-dialogs_0}}
+```XAML
 	<TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="3"
 	   IsReadOnly="{Binding IsReadOnly}"
 	   Text="{Binding Occurrence.Appointment.Subject, Mode=TwoWay}"
 	   telerik:StyleManager.Theme="{StaticResource Theme}" />
-{{endregion}}
+```
 
 Other important properties of the AppointmentDialogViewModel class include:
 

@@ -30,9 +30,9 @@ RadGridView exposes four different indent cell types:
 
 Similarly to other __RadGridView__ elements, you may alter their appearance by [modifying their default styles]({%slug gridview-modifying-default-styles%}) or by directly [editing their control templates]({%slug styling-apperance-editing-control-templates%}). __Example 1__ demonstrates how to create styles that target those elements.
 
-#### __[XAML] Example 1: Styling Indent Cells__
+__Example 1: Styling Indent Cells__
 
-{{region xaml-radgridview-styling-indent-cells_0}}
+```XAML
 
 	<Application.Resources>
         <Style TargetType="telerik:GridViewIndentCell">
@@ -51,7 +51,7 @@ Similarly to other __RadGridView__ elements, you may alter their appearance by [
             <Setter Property="Background" Value="Yellow" />
         </Style>
     </Application.Resources>
-{{endregion}}
+```
 
 #### __Figure 2: A grouped RadGridView with styled indent cells__
 ![A grouped RadGridView with styled indent cells](images/gridview-styling-indent-cells.png)

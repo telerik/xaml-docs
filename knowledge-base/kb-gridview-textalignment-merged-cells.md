@@ -25,8 +25,8 @@ To do that, use the `MergedCellsStyleSelector` property of `RadGridView`. This w
 
 In the merged cell styles selector, you can get the `MergedCellInfo` object and use it to access the corresponding  column. Based on its alignment setting, you can select the proper `Style`.
 
-#### __[XAML]__
-{{region kb-gridview-textalignment-merged-cells-0}}
+
+```XAML
    	<Window.Resources>
 		<Style x:Key="RightAlignedMergedCellStyle" TargetType="telerik:GridViewMergedCell" BasedOn="{StaticResource GridViewMergedCellStyle}">
 			<Setter Property="HorizontalContentAlignment" Value="Right" />
@@ -54,10 +54,10 @@ In the merged cell styles selector, you can get the `MergedCellInfo` object and 
 			</telerik:RadGridView.Columns>
 		</telerik:RadGridView>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-gridview-textalignment-merged-cells-1}}
+
+```C#
 	public class VerticalMergedCellsStyleSelector : StyleSelector
 	{
 		public Style RightAlignedCellStyle { get; set; }
@@ -82,4 +82,4 @@ In the merged cell styles selector, you can get the `MergedCellInfo` object and 
 			return base.SelectStyle(item, container);
 		}
 	}
-{{endregion}}
+```

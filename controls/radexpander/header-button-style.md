@@ -16,8 +16,8 @@ To change the header button style, assign a new `Style` with `TargetType="RadTog
 
 If the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles) theming approach is used, you can directly base the custom Style on the `ExpanderHeaderButtonStyle` style via the `BasedOn` property.
 
-#### __[XAML] Approach when applying a theme via Implicit Styles__
-{{region radexpander-features-header-button-style-1}}
+__Approach when applying a theme via Implicit Styles__
+```XAML
     <telerik:RadExpander Header="My Expander">
         <telerik:RadExpander.HeaderButtonStyle>
             <Style TargetType="telerik:RadToggleButton" BasedOn="{StaticResource ExpanderHeaderButtonStyle}">
@@ -27,14 +27,14 @@ If the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#set
             </Style>
         </telerik:RadExpander.HeaderButtonStyle>
     </telerik:RadExpander>
-{{endregion}}
+```
 
 If the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach is used, merge the resource dictionary for the used theme, which is contained in the __Telerik.Windows.Controls__ assembly. In the following example, the __GenericFluent.xaml__ dictionary is merged, because the __Fluent__ theme is used. 
 
 >tip If another theme is used, for example, __Office_Black__, change the __GenericFluent.xaml__ to __GenericOfficeBlack.xaml__.
 
-#### __[XAML] Approach when applying a theme via StyleManager__
-{{region radexpander-features-header-button-style-2}}
+__Approach when applying a theme via StyleManager__
+```XAML
     <telerik:RadExpander Header="My Expander">
         <telerik:RadExpander.Resources>
             <ResourceDictionary>
@@ -51,7 +51,7 @@ If the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#settin
             </Style>
         </telerik:RadExpander.HeaderButtonStyle>
     </telerik:RadExpander>
-{{endregion}}
+```
 
 Both of these approaches produce the following result:
 

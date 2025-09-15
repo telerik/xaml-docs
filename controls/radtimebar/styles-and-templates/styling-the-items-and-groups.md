@@ -39,7 +39,7 @@ This topic will show you how to perform the second one.
 
 	#### __XAML__
 
-	{{region radtimebar-styling-the-items-and-groups_0}}
+	```XAML
 		<UserControl.Resources>
 				<telerik:Windows8Theme x:Key="Theme" />
 		
@@ -220,13 +220,13 @@ This topic will show you how to perform the second one.
 					<telerik:RadAreaSparkline x:Name="sparkline"/>
 				</telerik:RadTimeBar>
 			</Grid>
-		{{endregion}}
+		```
 
 
 
 	#### __C#__
 
-	{{region radtimebar-styling-the-items-and-groups_1}}
+	```C#
 			Random r = new Random();
 			List<int> data = new List<int>();
 			for (DateTime currentDate = DateTime.Today; currentDate < DateTime.Today.AddDays(100);
@@ -235,11 +235,11 @@ This topic will show you how to perform the second one.
 				data.Add(r.Next(0, 60));
 			}
 			sparkline.ItemsSource = data;   
-		{{endregion}}
+		```
 
 	#### __VB.NET__
 
-	{{region radtimebar-styling-the-items-and-groups_1}}
+	```VB.NET
 			Dim r As New Random()
 			Dim data As New List(Of Integer)()
 			Dim currentDate As Date = Date.Today
@@ -248,7 +248,7 @@ This topic will show you how to perform the second one.
 				currentDate = currentDate.AddDays(1)
 			Loop
 			sparkline.ItemsSource = data
-		{{endregion}}
+		```
 
 The result can be seen below:
 ![radtimebar styling items and groups](images/radtimebar_styling_items_and_groups.PNG)

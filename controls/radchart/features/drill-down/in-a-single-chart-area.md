@@ -22,7 +22,7 @@ The usage of a single chart area for displaying hierarchical data in a drill dow
 
 #### __XAML__
 
-{{region xaml-radchart-features-drill-down-in-a-single-chart-area_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
@@ -53,7 +53,7 @@ The usage of a single chart area for displaying hierarchical data in a drill dow
 	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

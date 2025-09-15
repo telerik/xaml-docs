@@ -33,29 +33,27 @@ You can find the required assemblies for each control from the suite in the {% i
 
 Here is an example of a __RadButton__ that executes some logic when it is clicked.
 
-#### __[XAML] Example 1: Defining a button in XAML__
-{{region xaml-radbuttons-getting-started_0}}
+__Example 1: Defining a button in XAML__
+```XAML
 	<telerik:RadButton x:Name="radButton" 
 	                    HorizontalAlignment="Left"
 	                    VerticalAlignment="Top"
 	                    Click="radButton_Click"
 	                    Content="Click Me!" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining a Click event handler__
-{{region cs-radbuttons-getting-started_1}}
+__Example 2: Defining a Click event handler__
+```C#
 	private void radButton_Click(object sender, RoutedEventArgs e)
 	{
 	    //implement your logic here.
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a Click event handler__
-{{region vb-radbuttons-getting-started_2}}
+```
+```VB.NET
 	Private Sub radButton_Click(sender As Object, e As RoutedEventArgs)
 	    'implement your logic here. '
 	End Sub
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadButtons Simple Button](images/RadButtons_Getting_Started_01.png)
 
@@ -63,8 +61,8 @@ Here is an example of a __RadButton__ that executes some logic when it is clicke
 
 The greatest advantage of this control is that users can visualize a custom path geometry in the button. Also, the geometry can be positioned relatively to the __Content__ of the button. Here is an example of a __RadPathButton__ that executes some logic when it is clicked.
   
-#### __[XAML] Example 3: Defining a path button in XAML__  
-{{region xaml-radbuttons-getting-started_7}}
+__Example 3: Defining a path button in XAML__  
+```XAML
 	<telerik:RadPathButton x:Name="pathButton"
 	                   Width="100"
 	                   Height="30"
@@ -73,22 +71,20 @@ The greatest advantage of this control is that users can visualize a custom path
 	                   ContentPlacement="Right"
 	                   Content="Click Me!"
 	                   PathGeometry="M3,7L9,7L9,4L13,8L9,12L9,9L3,9z" />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Defining a Click event handler__  
-{{region cs-radbuttons-getting-started_8}}
+__Example 4: Defining a Click event handler__  
+```C#
 	private void pathButton_Click(object sender, RoutedEventArgs e)
 	{
 	    //implement your logic here.
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining a Click event handler__  
-{{region vb-radbuttons-getting-started_9}}
+```
+```VB.NET
 	Private Sub pathButton_Click(sender As Object, e As RoutedEventArgs)
 	    'implement your logic here.'
 	End Sub
-{{endregion}}
+```
 
 ![Rad Path Button 2](images/RadPathButton2.png)
 
@@ -96,8 +92,8 @@ The greatest advantage of this control is that users can visualize a custom path
 
 Here is an example of a __RadDropDownButton__ that contains a list of actions in its DropDown Content.
 
-#### __[XAML] Example 5: Defining a drop down button__  
-{{region xaml-radbuttons-getting-started_3}}
+__Example 5: Defining a drop down button__  
+```XAML
 	<telerik:RadDropDownButton HorizontalAlignment="Left" 
 	                           VerticalAlignment="Top"
 	                           Content="Actions">
@@ -109,7 +105,7 @@ Here is an example of a __RadDropDownButton__ that contains a list of actions in
 	        </telerik:RadContextMenu>
 	    </telerik:RadDropDownButton.DropDownContent>
 	</telerik:RadDropDownButton>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadButtons Dropdown Button](images/RadButtons_Getting_Started_02.png)
 
@@ -117,8 +113,8 @@ Here is an example of a __RadDropDownButton__ that contains a list of actions in
 
 Here is an example of several __RadRadioButtons__ placed in two groups.
 
-#### __[XAML] Example 6: Defining a radio button__  
-{{region xaml-radbuttons-getting-started_4}}
+__Example 6: Defining a radio button__  
+```XAML
 	<StackPanel HorizontalAlignment="Left" 
 	            VerticalAlignment="Top"
 	            Orientation="Horizontal">
@@ -131,7 +127,7 @@ Here is an example of several __RadRadioButtons__ placed in two groups.
 	        <telerik:RadRadioButton Content="Under 18" />
 	    </StackPanel>
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadButtons Radio Buttons](images/RadButtons_Getting_Started_03.png)
 
@@ -139,8 +135,8 @@ Here is an example of several __RadRadioButtons__ placed in two groups.
 
 Here is an example of a __RadSplitButton__ definition, where a __ListBox__ control is used to display a list of items in the __RadSplitButton__ __DropDownContent__. The __Content__ of the __RadSplitButton__ is bound to the __SelectedItem__ of the __ListBox__.
 
-#### __[XAML] Example 7: Defining a split button__
-{{region xaml-radbuttons-getting-started_5}}
+__Example 7: Defining a split button__
+```XAML
 	<telerik:RadSplitButton HorizontalAlignment="Left" 
 	                        VerticalAlignment="Top"
 	                        Content="{Binding Path=SelectedItem.Content, ElementName=FindActions}">
@@ -152,7 +148,7 @@ Here is an example of a __RadSplitButton__ definition, where a __ListBox__ contr
 	        </ListBox>
 	    </telerik:RadSplitButton.DropDownContent>
 	</telerik:RadSplitButton>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadButtons Split Button](images/RadButtons_Getting_Started_04.png)
 
@@ -160,8 +156,8 @@ Here is an example of a __RadSplitButton__ definition, where a __ListBox__ contr
 
 Here is an example of a __RadToggleButton__ that toggles the "Monthly Newsletter" feature of a form.
 
-#### __[XAML] Example 8: Defining a toggle button__
-{{region xaml-radbuttons-getting-started_6}}
+__Example 8: Defining a toggle button__
+```XAML
 	<StackPanel HorizontalAlignment="Left" 
 	            VerticalAlignment="Top"
 	            Orientation="Horizontal">
@@ -172,7 +168,7 @@ Here is an example of a __RadToggleButton__ that toggles the "Monthly Newsletter
 	    </telerik:RadToggleButton>
 	    <TextBlock Text="Send a monthly newsletter" />
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadButtons Toggle Button](images/RadButtons_Getting_Started_05.png)
 
@@ -180,12 +176,12 @@ Here is an example of a __RadToggleButton__ that toggles the "Monthly Newsletter
 
 Here is an example of a __RadToggleSwitchButton__ that switches between __ON__ and __OFF__ state.
 
-#### __[XAML] Example 9: Defining a toggle switch button__
-{{region xaml-radbuttons-getting-started_7}}
+__Example 9: Defining a toggle switch button__
+```XAML
 	<Grid>
 		<telerik:RadToggleSwitchButton ContentPosition="Both" CheckedContent="ON" UncheckedContent="OFF" />
 	</Grid>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadButtons Toggle Switch Button](images/RadButtons_Getting_Started_06.png)
 
@@ -205,8 +201,8 @@ To change the theme, you can follow the steps below:
 
 __Example 10__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 10: Merge the ResourceDictionaries__  
-{{region xaml-radbuttons-getting-started_5}}
+__Example 10: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -215,7 +211,7 @@ __Example 10__ demonstrates how to merge the ResourceDictionaries so that they a
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

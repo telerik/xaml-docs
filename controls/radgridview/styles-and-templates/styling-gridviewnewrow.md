@@ -26,24 +26,24 @@ You have two options:
 
 >To learn how to modify the default GridViewNewRow style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Example 1: Styling the GridViewNewRow implicitly__
+__Example 1: Styling the GridViewNewRow implicitly__
 
-{{region xaml-gridview-styling-gridviewnewrow-0}}
+```XAML
 	<Style TargetType="telerik:GridViewNewRow">
         <Setter Property="Background" Value="Red" />
     </Style>
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Styling the GridViewNewRow explicitly__
+__Example 2: Styling the GridViewNewRow explicitly__
 
-{{region xaml-gridview-styling-gridviewnewrow-1}}
+```XAML
     <Style x:Key="NewRowStyle" TargetType="telerik:GridViewNewRow">
         <Setter Property="Background" Value="Red" />
     </Style>
 
     <telerik:RadGridView NewRowPosition="Top"
                          NewRowStyle="{StaticResource NewRowStyle}">
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewNewRowStyle__.
 

@@ -18,8 +18,8 @@ In order to achieve this you can create a style targeting TreeListViewRow and ad
 
 > __Example 1__ uses the WarehouseViewModel and its dependencies defined in the [Getting Started]({%slug radtreeliestview-getting-started%}) article of the RadTreeListView.
 
-#### __[XAML] Example 1: Custom style targeting TreeListViewRow__
-{{region xaml-radtreelistview-how-to-modify-foreground-row-0}}
+__Example 1: Custom style targeting TreeListViewRow__
+```XAML
 
     <Window.DataContext>
         <my:WarehouseViewModel />
@@ -48,7 +48,7 @@ In order to achieve this you can create a style targeting TreeListViewRow and ad
             <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
         </telerik:RadTreeListView.ChildTableDefinitions>
     </telerik:RadTreeListView>
-{{endregion}}
+```
 
 > The demonstrated approach may not be relevant for all UI for WPF themes. 
 

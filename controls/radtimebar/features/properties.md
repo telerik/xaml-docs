@@ -12,9 +12,9 @@ position: 0
 
 When setting up the RadTimeBar you should keep in mind that the __Start Time__ properties should always be set before the __End Time__ ones. __Example 1__ shows the required precedence of the properties.
 
-#### __[XAML] Example 1: RadTimeBar Properties Precedence__
+__Example 1: RadTimeBar Properties Precedence__
 
-{{region xaml-radtimebar-properties_0}}
+```XAML
 	<telerik:RadTimeBar x:Name="timeBar" Width="950" Height="250"      
 						PeriodStart="01-01-2011"
 						PeriodEnd="01/01/2012"
@@ -29,7 +29,7 @@ When setting up the RadTimeBar you should keep in mind that the __Start Time__ p
 			<telerik:MonthInterval />
 		</telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-{{endregion}} 
+``` 
 
 ## Key Properties
 	
@@ -39,16 +39,16 @@ When setting up the RadTimeBar you should keep in mind that the __Start Time__ p
 * __VisiblePeriodEnd__: Gets or sets the currently visible end date.
 * __Intervals__: Determines the displayed time intervals. The supported intevals are: __Century__, __Decade__, __Year__, __Quarter__, __Month__, __Week__, __Day__, __Hour__, __Minute__, __Second__, __Millisecond__.
 
-#### __[XAML] Example 2: Setting the RadTimeBar Intervals__
+__Example 2: Setting the RadTimeBar Intervals__
 
-{{region xaml-radtimebar-properties_1}}
+```XAML
 	<telerik:RadTimeBar.Intervals>
 	     <telerik:YearInterval />
 	     <telerik:MonthInterval/>
 	     <telerik:WeekInterval/>
 	     <telerik:DayInterval/>
 	 </telerik:RadTimeBar.Intervals>
-{{endregion}}
+```
 
 Every interval has a preset collection of formatting strings that creates the string representation of a given date to match the interval. RadTimeBar automatically chooses the appropriate string formatter according to the control size and visible range. Learn more about that in the [Intervals Formatters]({%slug radtimebar-intervals-formatters%}) article.
 
@@ -62,22 +62,22 @@ Every interval has a preset collection of formatting strings that creates the st
 
 * __IntervalSpans__: This property can be set from each Interval except Decade and Quarter. It is used to group the given interval items together. __Example 3__ shows how you can group the seconds in groups of 10. __Example 4__ demonstrates that you can also set more than one *IntervalSpan* simultaneously by separating them with comma.
 
-#### __[XAML] Example 3: Setting the IntervalSpans__
+__Example 3: Setting the IntervalSpans__
 
-{{region xaml-radtimebar-properties_2}}
+```XAML
 	<telerik:RadTimeBar.Intervals>
 	   <telerik:SecondInterval IntervalSpans="10"/>
 	</telerik:RadTimeBar.Intervals>
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Setting multiple IntervalSpans__
+__Example 4: Setting multiple IntervalSpans__
 
-{{region xaml-radtimebar-properties_3}}
+```XAML
 	<telerik:RadTimeBar.Intervals>
 	   <telerik:SecondInterval IntervalSpans="10,15,30" />
 	   <telerik:MinuteInterval IntervalSpans="1,10,15,30" />
 	</telerik:RadTimeBar.Intervals>
-{{endregion}}
+```
 
 * __CurrentItemInterval__ and __CurrentGroupInterval__: These properties can be used in code-behind to take the current item respectively group interval span set.
 

@@ -53,14 +53,14 @@ The ImageEditor raises the following events:
 
 The `RadImageEditorUI` component exposes the `ImageEditorLoaded` event, that occurs when the underlying `RadImageEditor` control is loaded. The image editor can be accessed using the `ImageEditor` property of `RadImageEditorUI`.
 
-#### __[C#] ImageEditorLoaded event handler__
-{{region radimageeditor-events-0}}
+__ImageEditorLoaded event handler__
+```C#
 	private void RadImageEditorUI_ImageEditorLoaded(object? sender, EventArgs e)
 	{
 		RadImageEditorUI ui = (RadImageEditorUI)sender;
 		RadImageEditor imageEditor = ui.ImageEditor;
 	}
-{{endregion}}
+```
 
 ## See Also  
  * [Commands and Tools]({%slug radimageeditor-features-commands-and-tools%})

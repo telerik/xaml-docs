@@ -35,8 +35,8 @@ This article showcases how to display copyright attribution label for the OpenSt
 
     The following example showcases how to display a copyright attribution label for the OpenStreetMap services when using the `OpenStreetMapProvider`.
 
-    #### __[XAML] Defining the RadMap control with an OpenStreetMapProvider__
-    {{region kb-map-copyright-label-0}}
+    __Defining the RadMap control with an OpenStreetMapProvider__
+    ```XAML
         <Grid>
             <telerik:RadMap x:Name="map">
                 <telerik:RadMap.Provider>
@@ -44,12 +44,12 @@ This article showcases how to display copyright attribution label for the OpenSt
                 </telerik:RadMap.Provider>
             </telerik:RadMap>
         </Grid>
-    {{endregion}}
+    ```
     
     The [OpenStreetMap Attribution Guideline](https://osmfoundation.org/wiki/Licence/Attribution_Guidelines) states that the attribution text needs to note that the data is available under the Open DataBase License. This can be done by making the added element open their [copyright article](https://openstreetmap.org/copyright). 
 
-    #### __[XAML] Defining an element to display the attribution copyright label__
-    {{region kb-map-copyright-label-1}}
+    __Defining an element to display the attribution copyright label__
+    ```XAML
         <Grid>
             <Grid.Resources>
                 <Style TargetType="telerik:MapScale">
@@ -72,7 +72,7 @@ This article showcases how to display copyright attribution label for the OpenSt
                                             HorizontalAlignment="Right"/>
             </Grid>
         </Grid>
-    {{endregion}}
+    ```
 
     __RadMap with displayed copyright attribution label when using OpenStreetMapProvider__
 
@@ -82,8 +82,8 @@ This article showcases how to display copyright attribution label for the OpenSt
 
     The following example showcases how to display a copyright attribution label for the Azure Maps services when using the `AzureMapProvider`.
 
-    #### __[XAML] Defining the RadMap control with an AzureMapProvider__
-    {{region kb-map-copyright-label-2}}
+    __Defining the RadMap control with an AzureMapProvider__
+    ```XAML
         <Grid>
             <Grid.Resources>
                 <Style TargetType="telerik:MapScale">
@@ -105,7 +105,7 @@ This article showcases how to display copyright attribution label for the OpenSt
                                HorizontalAlignment="Right"/>
             </Grid>
         </Grid>
-    {{endregion}}
+    ```
 
     __RadMap with displayed copyright attribution label when using AzureMapProvider__
 

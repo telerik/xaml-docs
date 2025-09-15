@@ -27,7 +27,7 @@ Let's assume you would like to ask your users for confirmation when changing the
 **1.** Create the class that will hold the attached property:
 
 #### **[C#] Example 1: Create the attached property**
-{{region common-mvvm-attached-behavior-0}}
+```C#
 	public class SelectionChangingBehavior
     {
         public static bool GetShouldShowConfirmationDialog(DependencyObject obj)
@@ -43,12 +43,12 @@ Let's assume you would like to ask your users for confirmation when changing the
         public static readonly DependencyProperty ShouldShowConfirmationDialogProperty =
             DependencyProperty.RegisterAttached("ShouldShowConfirmationDialog", typeof(bool), typeof(SelectionChangingBehavior), new PropertyMetadata(OnShouldShowConfirmationDialogChanged));
 	}
-{{endregion}}
+```
 
 **2.** In the callback method passed to the PropertyMetadata of the attached property subscribe to the **SelectionChanging** event by using the **DependencyObject** argument:
 
 #### **[C#] Example 2: Handle the SelectionChangingEvent of RadGridView on activating the behavior**
-{{region common-mvvm-attached-behavior-1}}
+```C#
 	private static void OnShouldShowConfirmationDialogChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
         RadGridView gridView = d as RadGridView;
@@ -66,19 +66,19 @@ Let's assume you would like to ask your users for confirmation when changing the
             e.Cancel = true;
         }
     }
-{{endregion}}
+```
 
 **3.** Activate the attached behavior for the RadGridView instance:
 
 ####  **[XAML] Example 3: Set the attached behavior to the specific RadGridView**
-{{region common-mvvm-attached-behavior-2}}
+```XAML
 		<telerik:RadGridView Grid.Row="0" 
                              Name="clubsGrid" 
                              ItemsSource="{Binding Clubs}"
                              my:SelectionChangingBehavior.ShouldShowConfirmationDialog="True"
                              AutoGenerateColumns="False"
                              Margin="5">
-{{endregion}}
+```
 
 Applying these steps will result in a confirmation dialog through which you can cancel the selection changing in your application, as shown in **Figure 1**.
 
@@ -99,10 +99,10 @@ The built-in behavior of the standard TextBox control can be manipulated through
 * __UpdateTextOnEnter__: Updates the bound property when the user presses Enter key.
 * __UpdateTextOnTextChanged__: Updates the bound property on each user input.
 
-#### __[XAML] Example 4: Applying the TextBoxBehavior__
-{{region common-mvvm-attached-behavior-2}}
+__Example 4: Applying the TextBoxBehavior__
+```XAML
 	<TextBox Text="{Binding Name}" telerik:TextBoxBehavior.SelectAllOnGotFocus="True" />
-{{endregion}}
+```
 
 ## See Also
 

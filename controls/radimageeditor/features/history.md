@@ -18,31 +18,25 @@ __RadImageEditor__ has a history stack, which records each command that is execu
 
 Undoing the effect of a command can be done as follows:
 
-#### __[C#] Example 1: Undo a command__
+__Example 1: Undo a command__
 
-{{region cs-radimageeditor-features-history_0}}
+```C#
 	this.imageEditor.Undo();
-{{endregion}}
-
-#### __[VB.NET] Example 1: Undo a command__
-
-{{region vb-radimageeditor-features-history_1}}
+```
+```VB.NET
 	Me.imageEditor.Undo()
-{{endregion}}
+```
 
 Оr, if you are using __RadImageEditorUI__:
 
-#### __[C#] Example 2: Undo a command__
+__Example 2: Undo a command__
 
-{{region cs-radimageeditor-features-history_2}}
+```C#
 	this.imageEditorUI.ImageEditor.Undo();
-{{endregion}}
-
-#### __[VB.NET] Example 2: Undo a command__
-
-{{region vb-radimageeditor-features-history_3}}
+```
+```VB.NET
 	Me.imageEditorUI.ImageEditor.Undo()
-{{endregion}}
+```
 
 Redo can be executed in the same way.
 
@@ -72,23 +66,20 @@ For example, if you subscribe to the CurrentImageChanged in the following way, y
 
 
 
-#### __[C#] Example 3: Subscribe to CurrentImageChanged__
+__Example 3: Subscribe to CurrentImageChanged__
 
-{{region cs-radimageeditor-features-history_4}}
+```C#
 	this.imageEditorUI.ImageEditor.History.CurrentImageChanged += History_CurrentImageChanged;
-{{endregion}}
-
-#### __[VB.NET] Example 3: Subscribe to CurrentImageChanged__
-
-{{region vb-radimageeditor-features-history_5}}
+```
+```VB.NET
 	AddHandler Me.imageEditorUI.ImageEditor.History.CurrentImageChanged, AddressOf History_CurrentImageChanged
-{{endregion}}
+```
 
 Аnd change the value of some Boolean property in the handler of the event:
 
-#### __[C#] Example 4: Handle CurrentImageChanged__
+__Example 4: Handle CurrentImageChanged__
 
-{{region cs-radimageeditor-features-history_6}}
+```C#
 	private bool hasImageBeenChanged;
 	void History_CurrentImageChanged(object sender, EventArgs e)
 	{
@@ -102,11 +93,8 @@ For example, if you subscribe to the CurrentImageChanged in the following way, y
 	        hasImageBeenChanged = false;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Handle CurrentImageChanged__
-
-{{region vb-radimageeditor-features-history_7}}
+```
+```VB.NET
 	Private hasImageBeenChanged As Boolean
 	Private Sub History_CurrentImageChanged(sender As Object, e As EventArgs)
 	    Dim history As ImageHistory = DirectCast(sender, ImageHistory)
@@ -116,7 +104,7 @@ For example, if you subscribe to the CurrentImageChanged in the following way, y
 	        hasImageBeenChanged = False
 	    End If
 	End Sub
-{{endregion}}
+```
 
 
 

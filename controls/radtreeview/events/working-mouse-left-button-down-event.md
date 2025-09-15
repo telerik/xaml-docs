@@ -18,9 +18,9 @@ Probably the first solution crossing your mind is to attach to the __MouseLeftBu
 
 #### __XAML__
 
-{{region radtreeview-events-working-mouse-left-button-down-event_0}}
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" MouseLeftButtonDown="radTreeView_MouseLeftButtonDown"/>
-	{{endregion}}
+	```
 
 And this is the most straight-forward way to do it. However, if you use the above approach, you __won't be able__ to track the __MouseLeftButtonDown__ event. The reason - by design, the __RadTreeView__ items mark the __MouseLeftButtonDown__ event as __handled__.
 
@@ -28,24 +28,24 @@ Telerik RadControls API allows you to also listen for events that have been alre
 
 #### __C#__
 
-{{region radtreeview-events-working-mouse-left-button-down-event_1}}
+```C#
 	using Telerik.Windows;
 	this.radTreeView.AddHandler(RadTreeViewItem.MouseLeftButtonDownEvent, new MouseButtonEventHandler(this.radTreeView_MouseLeftButtonDown), true);
 	private void radTreeView_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 	{
 	    Telerik.Windows.Controls.RadTreeView treeView = sender as Telerik.Windows.Controls.RadTreeView;
 	}
-	{{endregion}}
+	```
 
 #### __VB.NET__
 
-{{region radtreeview-events-working-mouse-left-button-down-event_2}}
+```VB.NET
 	Imports Telerik.Windows
 	Me.radTreeView.[AddHandler](RadTreeViewItem.MouseLeftButtonDownEvent, New MouseButtonEventHandler(Me.radTreeView_MouseLeftButtonDown), True)
 	Private Sub radTreeView_MouseLeftButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
 	End Sub
-	{{endregion}}
+	```
 
 ## See Also
  * [Events - Overview]({%slug radtreeview-events-overview%})

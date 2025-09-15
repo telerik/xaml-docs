@@ -34,19 +34,19 @@ This behavior happens because the content of the unselected pages is not part of
 
 To achieve the desired result, you can use an **x:Reference** binding instead.
 
-#### __[XAML]__
-{{region kb-wizard-elementname-relativesource-bindings-not-working-1}}
+
+```XAML
     <telerik:WizardPage>
         <telerik:RadButton Content="Submit Password" Command="{Binding SubmitPasswordCommand}" CommandParameter="{x:Reference WizardWindow}" />
     </telerik:WizardPage>
-{{endregion}}
+```
 
 #### Solution #2
 
 Alternatively, you can use the **ContentTemplate** property of the page instead of setting its content directly.
 
-#### __[XAML]__
-{{region kb-wizard-elementname-relativesource-bindings-not-working-2}}
+
+```XAML
     <telerik:WizardPage>
         <telerik:WizardPage.ContentTemplate>
             <DataTemplate>
@@ -55,7 +55,7 @@ Alternatively, you can use the **ContentTemplate** property of the page instead 
             </DataTemplate>
         </telerik:WizardPage.ContentTemplate>
     </telerik:WizardPage>
-{{endregion}}
+```
 
 ## See Also
 * [Wizard Pages]({%slug wizard-pages%})

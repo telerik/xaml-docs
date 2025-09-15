@@ -23,7 +23,7 @@ The custom class responsible for the update of the commands needs to be similar 
 
 #### __C#__
 
-{{region cs-GridView-Commands-KeyboardCommandProvider_0}}
+```C#
 	public class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
 	{
 	    private GridViewDataControl parentGrid;
@@ -49,11 +49,11 @@ The custom class responsible for the update of the commands needs to be similar 
 	        return commandsToExecute;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-GridView-Commands-KeyboardCommandProvider_1}}
+```VB.NET
 	Public Class CustomKeyboardCommandProvider
 	    Inherits DefaultKeyboardCommandProvider
 	    Private parentGrid As GridViewDataControl
@@ -74,7 +74,7 @@ The custom class responsible for the update of the commands needs to be similar 
 	        Return commandsToExecute
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 Following up the code-snippet above, a press of Enter key will result in saving the current changes,
@@ -87,17 +87,17 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 
 #### __C#__
 
-{{region cs-GridView-Commands-KeyboardCommandProvider_2}}
+```C#
 	this.RadGridView1.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.RadGridView1);
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-GridView-Commands-KeyboardCommandProvider_3}}
+```VB.NET
 	Me.RadGridView1.KeyboardCommandProvider = New CustomKeyboardCommandProvider(Me.RadGridView1)
-{{endregion}}
+```
 
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomKeyboardCommandProvider).

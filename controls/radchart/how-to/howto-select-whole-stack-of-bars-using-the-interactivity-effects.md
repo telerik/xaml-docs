@@ -19,7 +19,7 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 
 #### __C#__
 
-{{region cs-radchart-howto-select-whole-stack-of-bars-using-the-interactivity-effects_0}}
+```C#
 	public partial class MainPage : UserControl
 	{
 	    public class Company
@@ -90,13 +90,13 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 	        RadChart1.DefaultView.ChartArea.SelectItems(barsInStack);
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-howto-select-whole-stack-of-bars-using-the-interactivity-effects_1}}
+```VB.NET
 	Partial Public Class MainPage
 	    Inherits UserControl
 	    Public Class Company
@@ -160,7 +160,7 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 	    End Sub
 	
 	End Class
-{{endregion}}
+```
 
 
 

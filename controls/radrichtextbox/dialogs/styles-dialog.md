@@ -22,14 +22,14 @@ The dialog can be opened from the __Change Styles__ button in the __Home__ tab o
 
 The dialog can be shown by executing the `ShowManageStylesDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-styles-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowManageStylesDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowManageStylesDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-styles-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowManageStylesDialog();
-{{endregion}}
+```

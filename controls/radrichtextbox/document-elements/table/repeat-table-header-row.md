@@ -44,36 +44,30 @@ You can set one or more rows as a repeat table header row(s) consecutively. In o
 The __[TableRow class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.tablerow)__ exposes a property called RepeatOnEveryPage of type *bool*. __Example 1__ shows how to set a row to repeat on each page the table appears on.
 
 
-#### __[C#] Example 1: Set a Repeat Table Header Row using the RepeatOnEveryPage property__
+__Example 1: Set a Repeat Table Header Row using the RepeatOnEveryPage property__
 
-{{region radrichtextbox-features-repeat-table-header-row_0}}
+```C#
 	TableRow row = new TableRow();
 	row.RepeatOnEveryPage = true;
-{{endregion}}
-
-#### __[VB.NET] Example 1: Set a Repeat Table Header Row using the RepeatOnEveryPage property__
-
-{{region radrichtextbox-features-repeat-table-header-row_1}}
+```
+```VB.NET
 	Dim row As New TableRow()
 	row.RepeatOnEveryPage = True
-{{endregion}}
+```
 
 
 Another option is to use the ChangeTableRowRepeatOnEveryPage() method of __RadRichTextBox__, which allows you to change whether a row will be repeated or not. __Example 2__ demonstrates how to get the first __TableRow__ in a __[RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})__ and set it as a repeated header row.
 
-#### __[C#] Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage() method__
+__Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage() method__
 
-{{region radrichtextbox-features-repeat-table-header-row_2}}
+```C#
 	TableRow firstRow = this.radRichTextBox.Document.EnumerateChildrenOfType<TableRow>().First();
 	this.radRichTextBox.ChangeTableRowRepeatOnEveryPage(firstRow);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage() method__
-
-{{region radrichtextbox-features-repeat-table-header-row_3}}
+```
+```VB.NET
 	Dim firstRow As TableRow = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of TableRow)().First()
 	Me.radRichTextBox.ChangeTableRowRepeatOnEveryPage(firstRow)
-{{endregion}}
+```
 
 
 

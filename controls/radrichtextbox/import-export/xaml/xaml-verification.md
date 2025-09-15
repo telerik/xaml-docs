@@ -20,47 +20,47 @@ The verification can be disabled or extended with custom assemblies and types th
 
 If you are sure that the imported XAML content can be trusted, you can disable the default verification by handling the `PreProcessingXaml` event of the `ImportSettings` class.
 
-#### __[C#] Disable the default XAML validation__
-{{region c#-radrichtextbox-import-export-xaml-verification_1}}
+__Disable the default XAML validation__
+```C#
 	XamlFormatProvider provider = new XamlFormatProvider();
     provider.ImportSettings.PreProcessingXaml += (s, args) => { 
     
         args.SkipXamlValidation = true;
     };
-{{endregion}}
+```
 
 ## Adding Custom Assemblies to the Allowed Assemblies 
  
 To add custom assemblies to the collection with allowed assemblies, use the `AllowedAssemblies` property of the `XamlFormatProvider.ImportSettings`.
 
-#### __[C#] Add assemblies to the AllowedAssemblies collection__
-{{region c#-radrichtextbox-import-export-xaml-verification_2}}
+__Add assemblies to the AllowedAssemblies collection__
+```C#
 	XamlFormatProvider provider = new XamlFormatProvider();
     provider.ImportSettings.AllowedAssemblies.Add("MyAssemblyName");
 	provider.ImportSettings.AllowedAssemblies.Add("PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35");
 	provider.ImportSettings.AllowedAssemblies.Add("PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35");
-{{endregion}}
+```
 
 The custom assemblies verification can be extended by checking also the public token of the assembly. To enable this, you can add the token in the `AssembliesTokens` dictionary of the `XamlFormatProvider.ImportSettings`.
 
-#### __[C#] Add an assembly public key to the AssembliesTokens collection__
-{{region c#-radrichtextbox-import-export-xaml-verification_3}}
+__Add an assembly public key to the AssembliesTokens collection__
+```C#
 	XamlFormatProvider provider = new XamlFormatProvider();
     provider.ImportSettings.AllowedAssemblies.Add("PresentationFramework");
     provider.ImportSettings.AssembliesTokens["PresentationFramework"] = "31bf3856ad364e35";
-{{endregion}}
+```
 
 ## Adding Custom Types to the Allowed Types
 
 To add custom types to the collection with allowed types, use the `AllowedTypes` property of the `XamlFormatProvider.ImportSettings`.
 
-#### __[C#] Add types to the AllowedTypes collection__
-{{region c#-radrichtextbox-import-export-xaml-verification_4}}
+__Add types to the AllowedTypes collection__
+```C#
 	XamlFormatProvider provider = new XamlFormatProvider();
     provider.ImportSettings.AllowedTypes.Add(typeof(System.Windows.Controls.Label));
 	provider.ImportSettings.AllowedTypes.Add(typeof(ScaleTransform));
 	provider.ImportSettings.AllowedTypes.Add(typeof(NullExtension));
-{{endregion}}
+```
 
 ## See Also
 

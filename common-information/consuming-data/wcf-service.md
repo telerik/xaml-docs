@@ -53,17 +53,17 @@ Creating new instance of the service is a pretty simple process.
 
 #### __C#__
 
-{{region consuming-data-wcf-service_0}}
+```C#
 	WcfService.SampleWcfServiceClient serviceClient = new WcfService.SampleWcfServiceClient();
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-wcf-service_1}}
+```VB.NET
 	Dim serviceClient As New WcfService.SampleWcfServiceClient()
-	{{endregion}}
+	```
 
 
 
@@ -81,19 +81,19 @@ Here is a sample code showing how this can be achieved:
 
 #### __C#__
 
-{{region consuming-data-wcf-service_2}}
+```C#
 	serviceClient.LoadCategoriesCompleted += new EventHandler<LoadCategoriesCompletedEventArgs>( serviceClient_LoadCategoriesCompleted );
 	serviceClient.LoadCategoriesAsync();
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-wcf-service_3}}
+```VB.NET
 	AddHandler serviceClient.LoadCategoriesCompleted, AddressOf serviceClient_LoadCategoriesCompleted
 	serviceClient.LoadCategoriesAsync()
-	{{endregion}}
+	```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
@@ -101,22 +101,22 @@ In order to make a call to your service, you just need to invoke the exposed by 
 
 #### __C#__
 
-{{region consuming-data-wcf-service_4}}
+```C#
 	foreach( Categories c in serviceClient.LoadCategories() )
 	{
 	    this.Categories.Add( c );
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region consuming-data-wcf-service_5}}
+```VB.NET
 	For Each c As Categories In serviceClient.LoadCategories()
 	    Me.Categories.Add(c)
 	Next
-	{{endregion}}
+	```
 
 {% endif %}
 

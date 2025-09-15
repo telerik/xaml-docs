@@ -33,8 +33,8 @@ The content of `RadRibbonView` is not visible when the control is [minimizable](
 
 To host `WindowsFormsHost` content in a WPF Window or Popup, you should disable its transparency, otherwise the `WindowsFormsHost` content won't get displayed.
 
-#### __[C#]__
-{{region kb-windowsformhost-rendering}}
+
+```C#
 	private void RadRibbonView_Loaded(object sender, RoutedEventArgs e)
 	{
 		var ribbonView = (RadRibbonView)sender;
@@ -44,4 +44,4 @@ To host `WindowsFormsHost` content in a WPF Window or Popup, you should disable 
 			popup.AllowsTransparency = false;
 		}
 	}
-{{endregion}}
+```

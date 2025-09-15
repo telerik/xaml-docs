@@ -24,8 +24,8 @@ Assuming that you have already created a WPF application and defined the RadGrid
 
 The sample data is represented by teams divided into divisions. First create the class that will represent a single team.
 
-#### __[C#] The Team class__
-{{region cs-gridview-building-hierarchical-grid-view_0}}
+__The Team class__
+```C#
 	public class Team
 	{
 	    public int Id
@@ -44,10 +44,8 @@ The sample data is represented by teams divided into divisions. First create the
 	        set;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] The Team class__
-{{region vb-gridview-building-hierarchical-grid-view_1}}
+```
+```VB.NET
 	Public Class Team
 	    Private _Id As Integer
 	    Public Property Id() As Integer
@@ -79,12 +77,12 @@ The sample data is represented by teams divided into divisions. First create the
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 The class that represents a single division will contain a collection of Team objects.
 
-#### __[C#] The Division class__
-{{region cs-gridview-building-hierarchical-grid-view_2}}
+__The Division class__
+```C#
 	public class Division
 	{
 	    public int Id
@@ -103,10 +101,8 @@ The class that represents a single division will contain a collection of Team ob
 	        set;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] The Division class__
-{{region vb-gridview-building-hierarchical-grid-view_3}}
+```
+```VB.NET
 	Public Class Division
 	    Private _Id As Integer
 	    Public Property Id() As Integer
@@ -138,14 +134,14 @@ The class that represents a single division will contain a collection of Team ob
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 >Note that if you want to support two way binding your classes should implement the `INotifyPropertyChanged` interface and raise the `PropertyChanged` event every time a property value changes.
 
 Create a `DivisionsService` class and implement a static method `GetDivisions`. For the purpose of this tutorial it will return an observable collection containing several hard-coded divisions.
 
-#### __[C#] The DivisionsService class__
-{{region cs-gridview-building-hierarchical-grid-view_4}}
+__The DivisionsService class__
+```C#
 	public class DivisionsService
 	{
 	    public static ObservableCollection<Division> GetDivisions()
@@ -215,10 +211,8 @@ Create a `DivisionsService` class and implement a static method `GetDivisions`. 
 	        return divisions;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] The DivisionsService class__
-{{region vb-gridview-building-hierarchical-grid-view_5}}
+```
+```VB.NET
 	Public Class DivisionsService
 	    Public Shared Function GetDivisions() As ObservableCollection(Of Division)
 	        Dim divisions As New ObservableCollection(Of Division)()
@@ -289,12 +283,12 @@ Create a `DivisionsService` class and implement a static method `GetDivisions`. 
 	        Return divisions
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Now after the sample data is prepared you are ready to bind it to the RadGridView. To do this set the `ItemsSource` property of the grid to the collection returned by the GetDivisions method. But first define the following columns.
 
-#### __[XAML] Defining the RadGridView__
-{{region xaml-gridview-building-hierarchical-grid-view_6}}
+__Defining the RadGridView__
+```XAML
 	<telerik:RadGridView x:Name="HierarchicalGridView"
 	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -304,21 +298,18 @@ Now after the sample data is prepared you are ready to bind it to the RadGridVie
 	                                Header="Name" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 Set the ItemsSource in the code-behind file of your UserControl.
 
-#### __[C#] Setting the control's ItemsSource__
+__Setting the control's ItemsSource__
 
-{{region cs-gridview-building-hierarchical-grid-view_7}}
+```C#
 	this.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions();
-{{endregion}}
-
-#### __[VB.NET] Setting the control's ItemsSource__
-
-{{region vb-gridview-building-hierarchical-grid-view_8}}
+```
+```VB.NET
 	Me.HierarchicalGridView.ItemsSource = DivisionsService.GetDivisions()
-{{endregion}}
+```
 
 __RadGridView without a hierarchy__
 
@@ -328,8 +319,8 @@ __RadGridView without a hierarchy__
 
 The next step is to make the RadGridView display the collections of teams as children of the respective rows. To do that use the `ChildTableDefinitions` property of the RadGridView and define a new `GridViewTableDefinition` with the following relation.
 
-#### __[XAML] Defining ChildTableDefinitions__
-{{region xaml-gridview-building-hierarchical-grid-view_9}}
+__Defining ChildTableDefinitions__
+```XAML
 	<telerik:RadGridView x:Name="HierarchicalGridView" AutoGenerateColumns="False">
 	    <telerik:RadGridView.ChildTableDefinitions>
 
@@ -347,7 +338,7 @@ The next step is to make the RadGridView display the collections of teams as chi
 	                                Header="Name" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __RadGridView with a hierarchy__
 
@@ -359,8 +350,8 @@ __RadGridView with a hierarchy__
 
 If you need to set properties of the child RadGridView instances, you can use the `HierarchyChildTemplate`.
 
-#### __[XAML] Setting the control's HierarchyChildTemplate__
-{{region xaml-gridview-building-hierarchical-grid-view_10}}
+__Setting the control's HierarchyChildTemplate__
+```XAML
 	<telerik:RadGridView x:Name="HierarchicalGridView" AutoGenerateColumns="False" GroupRenderMode="Flat">
 		<telerik:RadGridView.ChildTableDefinitions>
 			<telerik:GridViewTableDefinition>
@@ -388,7 +379,7 @@ If you need to set properties of the child RadGridView instances, you can use th
 			</DataTemplate>
 		</telerik:RadGridView.HierarchyChildTemplate>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __Customized child grids__
 

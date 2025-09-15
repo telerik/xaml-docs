@@ -29,9 +29,9 @@ You can activate change tracking tgrough the __IsTrackChangesEnabled__ property 
 
 #### __C#__
 
-{{region radrichtextbox-features-track-changes_0}}
+```C#
 	this.radRichTextBox.IsTrackChangesEnabled = true;
-{{endregion}}
+```
 
 
 
@@ -52,7 +52,7 @@ As you can see tracked changes are visualized inside the rich text box with diff
 
 #### __C#__
 
-{{region radrichtextbox-features-track-changes_1}}
+```C#
 	this.radRichTextBox.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly;
 	this.radRichTextBox.TrackChangesOptions.Insert.ColorOptions = new RevisionColor(Colors.Green);
 	
@@ -60,7 +60,7 @@ As you can see tracked changes are visualized inside the rich text box with diff
 	this.radRichTextBox.TrackChangesOptions.Delete.ColorOptions = new RevisionColor(Colors.Orange);
 	
 	this.radRichTextBox.TrackChangesOptions.ChangedLinesDecorationColorOptions.ColorOptions = new RevisionColor(Colors.Red);
-{{endregion}}
+```
 
 
 
@@ -74,9 +74,9 @@ All changes made while track changes are enabled are made on behalf of the curre
 
 #### __C#__
 
-{{region radrichtextbox-features-track-changes_2}}
+```C#
 	this.radRichTextBox.CurrentUser = new UserInfo("Group", "Boby", "Boby", "bobby@telerik.com");
-{{endregion}}
+```
 
 
 Here is the result:
@@ -100,13 +100,13 @@ All revision have a RevisionInfo object associated to them, which contains infor
 
 #### __C#__
 
-{{region radrichtextbox-features-track-changes_3}}
+```C#
 	public Revision GoToPreviousRevision()
 	public Revision GoToNextRevision()
 	public Revision GetCurrentRevision()
 	public Revision GetNextRevision()
 	public Revision GetPreviousRevision()
 	public IEnumerable<Revision> GetAllRevisions()
-{{endregion}}
+```
 
 

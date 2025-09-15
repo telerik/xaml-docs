@@ -30,8 +30,8 @@ Choose which label connectors are visible depending on the datapoint.
 
 Define a custom series and override its __GetLabelConnector__ method. The following examples demonstrate how to create a custom [ScatterLineSeries]({%slug radchartview-series-scatterlineseries%}) and hide the label connector of all points with XValue of 1. 
 
-#### __[C#]__
-{{region cs-kb-chartview-howto-conditionally-hide-label-connectors-0}}
+
+```C#
 	public class CustomScatterLineSeries : ScatterLineSeries
     {
         protected override List<Point> GetLabelConnector(ChartSeriesLabelPositionInfo info)
@@ -48,12 +48,12 @@ Define a custom series and override its __GetLabelConnector__ method. The follow
             return base.GetLabelConnector(info);
         }
     }
-{{endregion}}
+```
 
 
 
-#### __[C#]__
-{{region xaml-kb-chartview-howto-conditionally-hide-label-connectors-1}}
+
+```C#
 	<Grid>
         <Grid.Resources>
             <telerik:ChartSeriesLabelConnectorsSettings x:Key="LabelConnectorSettings" />
@@ -78,7 +78,7 @@ Define a custom series and override its __GetLabelConnector__ method. The follow
 			</local:CustomScatterLineSeries>
 		</telerik:RadCartesianChart>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Custom ScatterLineSeries with one hidden label connector__
 ![Custom ScatterLineSeries with one hidden label connector](images/kb-chartview-hide-label-connector.png)

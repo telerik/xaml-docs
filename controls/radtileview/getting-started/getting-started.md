@@ -31,8 +31,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 ## Adding the RadTileView to the page
 
-#### __[XAML] Example 1__
-{{region radtileview-getting-started_0}}
+__Example 1__
+```XAML
 	<UserControl x:Class="RadTileViewHelpExamples.MainPage"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -51,7 +51,7 @@ You can find the required assemblies for each control from the suite in the {% i
 	        </telerik:RadTileView>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 As you can see from the image below the items are in restored state by default.
 
@@ -59,9 +59,9 @@ As you can see from the image below the items are in restored state by default.
 
 To set an item in maximized state you can use the __TileState__ property and set its value to __Maximized__.				
 
-#### __[XAML] Example 2__
+__Example 2__
 
-{{region radtileview-getting-started_1}}
+```XAML
 	<telerik:RadTileView>
 	    <telerik:RadTileViewItem TileState="Maximized" Header="Item1">
 	        <TextBlock Text="Item1 Content"/>
@@ -73,7 +73,7 @@ To set an item in maximized state you can use the __TileState__ property and set
 	        <TextBlock Text="Item3 Content"/>
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 As you can see from the image below Item1 is now in maximized state.
 
@@ -85,9 +85,9 @@ To set the minimized area positions use the __MinimizedItemsPosition__ property.
 * __Right__
 * __Bottom__
 
-#### __[XAML] Example 3__
+__Example 3__
 
-{{region radtileview-getting-started_2}}
+```XAML
 	<telerik:RadTileView MinimizedItemsPosition="Bottom">
 	    <telerik:RadTileViewItem TileState="Maximized" Header="Item1">
 	        <TextBlock Text="Item1 Content"/>
@@ -99,7 +99,7 @@ To set the minimized area positions use the __MinimizedItemsPosition__ property.
 	        <TextBlock Text="Item3 Content"/>
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 #### __Figure 1__
 ![Tile View - minimized items position](images/tileview_Step3.png)
@@ -121,8 +121,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radtileview-getting-started_7}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -132,7 +132,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

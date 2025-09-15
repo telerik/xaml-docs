@@ -31,23 +31,23 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add RadPipsPager manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Adding RadPipsPager in XAML__
-{{region radpipspager-getting-started-0}}
+__Adding RadPipsPager in XAML__
+```XAML
     <telerik:RadPipsPager/>
-{{endregion}}
+```
 
 ## Adding Items
 
 The RadPipsPager control works with `RadPipsPagerItem` elements that are added to the `Items` collection of the control. These elements can be added both in XAML and in code.
 
-#### __[XAML] Adding RadPipsPagerItems__
-{{region radpipspager-getting-started-1}}
+__Adding RadPipsPagerItems__
+```XAML
     <telerik:RadPipsPager>
         <telerik:RadPipsPagerItem/>
         <telerik:RadPipsPagerItem/>
         <telerik:RadPipsPagerItem/>
     </telerik:RadPipsPager>
-{{endregion}}
+```
 
 __RadPipsPager with manually added items__
 
@@ -59,23 +59,21 @@ The RadPipsPager component allows you to navigate the items of any `ItemsControl
 
 The following example a basic scenario where the RadPipsPager is used together with another control.
 
-#### __[C#] Creating the model__
-{{region radpipspager-getting-started-2}}
+__Creating the model__
+```C#
     public class Person
     {
         public string Name { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Creating the model__
-{{region radpipspager-getting-started-3}}
+```
+```VB.NET
     Public Class Person
         Public Property Name As String
     End Class
-{{endregion}}
+```
 
-#### __[C#] Creating the view model__
-{{region radpipspager-getting-started-4}}
+__Creating the view model__
+```C#
     public class MainViewModel
     {
         public MainViewModel()
@@ -90,10 +88,8 @@ The following example a basic scenario where the RadPipsPager is used together w
 
         public ObservableCollection<Person> People { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Creating the view model__
-{{region radpipspager-getting-started-5}}
+```
+```VB.NET
     Public Class MainViewModel
         Public Sub New()
             Me.People = New ObservableCollection(Of Person) From {
@@ -111,10 +107,10 @@ The following example a basic scenario where the RadPipsPager is used together w
 
         Public Property People As ObservableCollection(Of Person)
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Creating the view__
-{{region radpipspager-getting-started-6}}
+__Creating the view__
+```XAML
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
         <Grid.DataContext>
             <local:MainViewModel/>
@@ -138,7 +134,7 @@ The following example a basic scenario where the RadPipsPager is used together w
                               Grid.Row="1"
                               ButtonVisibility="Visible"/>
     </Grid>
-{{endregion}}
+```
 
 __RadPipsPager and RadSlideView result__
 
@@ -158,8 +154,8 @@ The controls from our suite support different themes. You can see how to apply a
 
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__
-{{region radpipspager-getting-started-7}}
+__Merge the ResourceDictionaries__
+```XAML
     <Application.Resources>
     	<ResourceDictionary>
     		<ResourceDictionary.MergedDictionaries>
@@ -168,7 +164,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
     		</ResourceDictionary.MergedDictionaries>
     	</ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

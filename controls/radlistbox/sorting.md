@@ -18,8 +18,8 @@ An easier approach would be to use `ICollectionView` implementation that works w
 
 1. Create the item model.
 
-	#### __[C#] Defining the item model__
-	{{region radlistbox-sorting-0}}	
+	__Defining the item model__
+	```C#	
 		public class ItemInfo : ViewModelBase
 		{
 			private double number;
@@ -32,12 +32,12 @@ An easier approach would be to use `ICollectionView` implementation that works w
 
 			public string Label { get; set; }
 		}
-	{{endregion}}
+	```
 
 1. Define the data and the QueryableCollectionView. The `SortDescriptor` added in the `SortDescriptors` collection tells which property should be used to sort the data. Multiple descriptors can be added to the collection.
 
-	#### __[C#] Setting up the data__
-	{{region radlistbox-sorting-1}}	
+	__Setting up the data__
+	```C#	
 		public MainWindow()
         	{            
             		InitializeComponent();
@@ -53,12 +53,12 @@ An easier approach would be to use `ICollectionView` implementation that works w
             		qcv.SortDescriptors.Add(new SortDescriptor() { Member = "Number", SortDirection = ListSortDirection.Descending });
             		this.listBox.ItemsSource = qcv;
         	}
-	{{endregion}}
+	```
 
 1. Setup the RadListBox.
 
-	#### __[XAML] Setting up the view__
-	{{region radlistbox-sorting-2}}	
+	__Setting up the view__
+	```XAML	
 		<telerik:RadListBox x:Name="listBox">
 			<telerik:RadListBox.ItemTemplate>
 				<DataTemplate>
@@ -69,7 +69,7 @@ An easier approach would be to use `ICollectionView` implementation that works w
 				</DataTemplate>
 			</telerik:RadListBox.ItemTemplate>
 		</telerik:RadListBox>
-	{{endregion}}
+	```
 
 __Sorted RadListBox__
 
@@ -77,11 +77,11 @@ __Sorted RadListBox__
 
 The `QueryableCollectionView` doesn't support live sorting. This means that the order of the items won't change automatically when a value of the property by which the view is sorted changes. To update the view, the `Reset` method of the sort descriptors should be called.
 
-#### __[C#] Resetting the SortDescriptors__
-{{region radlistbox-sorting-3}}	
+__Resetting the SortDescriptors__
+```C#	
 	source[0].Number = -20;
 	this.queryableCollectionView.SortDescriptors.Reset();
-{{endregion}}
+```
 
 The following section shows how to use live sorting without the need to manually reset any descriptors. This can be done using the [ListCollectionView](https://learn.microsoft.com/en-us/dotnet/api/system.windows.data.listcollectionview?view=windowsdesktop-7.0) class.
 
@@ -91,8 +91,8 @@ To enable live sorting, a collection type that supports such functionality shoul
 
 Compared to the `QueryableCollectionView`, the `ListCollectionView` has a collection named __SortDescriptions__, instead of __SortDescriptors__. This collection view type works with `SortDescription` objects.
 
-#### __[C#] Setting up ListCollectionView to support live sorting__
-{{region radlistbox-sorting-4}}
+__Setting up ListCollectionView to support live sorting__
+```C#
 	public MainWindow()
 	{            
 		InitializeComponent();
@@ -107,7 +107,7 @@ Compared to the `QueryableCollectionView`, the `ListCollectionView` has a collec
 		lcv.SortDescriptions.Add(new SortDescription("Number", ListSortDirection.Descending));
 		this.DataContext = lcv;
 	}
-{{endregion}}
+```
 
 ## See Also  
 * [Grouping]({%slug radlistbox-how-to-group-items%})

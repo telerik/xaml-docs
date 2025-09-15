@@ -29,7 +29,7 @@ Then create a new class __EditableTabHeaderControl__ that derives from __Content
 
 #### __C#__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_0}}
+```C#
 	public class EditableTabHeaderControl : ContentControl
 	{
 	 static EditableTabHeaderControl()
@@ -37,20 +37,20 @@ Then create a new class __EditableTabHeaderControl__ that derives from __Content
 	  DefaultStyleKeyProperty.OverrideMetadata(typeof(EditableTabHeaderControl), new FrameworkPropertyMetadata(typeof(EditableTabHeaderControl)));
 	 }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_1}}
+```VB.NET
 	Public Class EditableTabHeaderControl
 		Inherits ContentControl
 		Shared Sub New()
 			DefaultStyleKeyProperty.OverrideMetadata(GetType(EditableTabHeaderControl), New FrameworkPropertyMetadata(GetType(EditableTabHeaderControl)))
 		End Sub
 	End Class
-	{{endregion}}
+	```
 
 
 
@@ -58,7 +58,7 @@ Create a __new style__for the __EditableTabHeader__ control.
 
 #### __XAML__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_2}}
+```XAML
 	<Style TargetType="{x:Type example:EditableTabHeaderControl}">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -82,7 +82,7 @@ Create a __new style__for the __EditableTabHeader__ control.
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
+	```
 
 
 
@@ -92,7 +92,7 @@ Add the following implementation to the code behind of the __EditableTabHeaderCo
 
 #### __C#__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_3}}
+```C#
 	[TemplatePart(Name = "PART_EditArea", Type = typeof(TextBox))]
 	public class EditableTabHeaderControl : ContentControl
 	{
@@ -133,13 +133,13 @@ Add the following implementation to the code behind of the __EditableTabHeaderCo
 	  }
 	 }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_4}}
+```VB.NET
     <TemplatePart(Name:="PART_EditArea", Type:=GetType(TextBox))>
     Public Class EditableTabHeaderControl
         Inherits ContentControl
@@ -179,7 +179,7 @@ Add the following implementation to the code behind of the __EditableTabHeaderCo
         End Sub
 
     End Class
-	{{endregion}}
+	```
 
 
 
@@ -199,9 +199,9 @@ Add a new __RadTabControl__ declaration.
 
 #### __XAML__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_5}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl"/>
-	{{endregion}}
+	```
 
 
 
@@ -209,7 +209,7 @@ Add a new __RadTabControl__ declaration.
 
 #### __C#__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_6}}
+```C#
 	public partial class MainWindow : Window
 	{
 	 public MainWindow()
@@ -258,13 +258,13 @@ Add a new __RadTabControl__ declaration.
 	  }
 	 }
 	}
-	{{endregion}}
+	```
 
 
 
 #### __VB.NET__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_7}}
+```VB.NET
     Imports Telerik.Windows.Controls
 
     Class MainWindow
@@ -309,7 +309,7 @@ Add a new __RadTabControl__ declaration.
         End Property
 
     End Class
-	{{endregion}}
+	```
 
 
 
@@ -317,7 +317,7 @@ Define the __RadTabControl__ __ItemTemplate__ and __ContentTemplate__ properties
 
 #### __XAML__
 
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_8}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl">
 	    <telerik:RadTabControl.ContentTemplate>
 	        <!--The Content Template:-->
@@ -334,7 +334,7 @@ Define the __RadTabControl__ __ItemTemplate__ and __ContentTemplate__ properties
 	        </DataTemplate>
 	    </telerik:RadTabControl.ItemTemplate>
 	</telerik:RadTabControl>
-	{{endregion}}
+	```
 
 
 

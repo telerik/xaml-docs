@@ -40,17 +40,17 @@ You can extend the parameters passed to the OLAP cube by using *QueryProperties*
 
 #### __XAML__
 
-{{region radpivotgrid-data-xmla_6}}
+```XAML
 	<pivot:XmlaConnectionSettings Cube="LocalizedCube" Database="OrdersCube" ServerAddress="http://localhost/olap/msmdpump.dll">
 	    <pivot:XmlaConnectionSettings.QueryProperties>
 	        <pivot:XmlaQueryProperty Name="LocaleIdentifier" Value="1036"/>
 	    </pivot:XmlaConnectionSettings.QueryProperties>
 	</pivot:XmlaConnectionSettings>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-xmla_6}}
+```C#
 	XmlaConnectionSettings cubeConnectionDetails = new XmlaConnectionSettings();
 	cubeConnectionDetails.Cube = "LocalizedCube";
 	cubeConnectionDetails.Database = "OrdersCube";
@@ -61,11 +61,11 @@ You can extend the parameters passed to the OLAP cube by using *QueryProperties*
 	localization.Value = "1036";
 	
 	cubeConnectionDetails.QueryProperties.Add(localization);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-xmla_6}}
+```VB.NET
 	Dim cubeConnectionDetails As New XmlaConnectionSettings()
 	cubeConnectionDetails.Cube = "LocalizedCube"
 	cubeConnectionDetails.Database = "OrdersCube"
@@ -76,7 +76,7 @@ You can extend the parameters passed to the OLAP cube by using *QueryProperties*
 	localization.Value = "1036"
 	
 	cubeConnectionDetails.QueryProperties.Add(localization)
-{{endregion}}
+```
 
 * __AggregatesLevel__ - set the position where groups for the aggregates should be placed.
 
@@ -92,7 +92,7 @@ __XmlaDataProvider__ can be defined in the __XAML__ as a *StaticResource* and us
 
 #### __XAML__
 
-{{region radpivotgrid-data-xmla_1}}
+```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="3*" />
@@ -104,25 +104,25 @@ __XmlaDataProvider__ can be defined in the __XAML__ as a *StaticResource* and us
 	    <pivot:RadGridView x:Name="radPivotGrid" DataProvider="{StaticResource XMLADataProvider}" />
 	    <pivot:RadGridView x:Name="radPivotFieldList" Grid.Column="1" DataProvider="{StaticResource XMLADataProvider}" />
 	</Grid>
-{{endregion}}
+```
 
 You can also create an object of type __XmlaDataProvider__ in the code behind and set it for your controls:
 
 #### __C#__
 
-{{region radpivotgrid-data-xmla_1}}
+```C#
 	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
 	this.radPivotGrid.DataProvider = xmlaDataProvider;
 	this.radPivotFieldList.DataProvider = xmlaDataProvider;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-xmla_1}}
+```VB.NET
 	Dim xmlaDataProvider As New XmlaDataProvider()
 	Me.radPivotGrid.DataProvider = xmlaDataProvider
 	Me.radPivotFieldList.DataProvider = xmlaDataProvider
-{{endregion}}
+```
 
 ## Connection to OLAP Cube
 
@@ -130,7 +130,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 
 #### __XAML__
 
-{{region radpivotgrid-data-xmla_2}}
+```XAML
 	<pivot:XmlaDataProvider.ConnectionSettings>
 	    <pivot:XmlaConnectionSettings 
 	        Cube="Adventure Works" 
@@ -138,11 +138,11 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	        ServerAddress="https://demos.telerik.com/olap/msmdpump.dll">
 	    </pivot:XmlaConnectionSettings>
 	</pivot:XmlaDataProvider.ConnectionSettings>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-xmla_2}}
+```C#
 	XmlaConnectionSettings cubeConnectionDetails = new XmlaConnectionSettings();
 	cubeConnectionDetails.Cube = "Adventure Works";
 	cubeConnectionDetails.Database = "Adventure Works DW 2008R2";
@@ -150,11 +150,11 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	
 	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
 	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-xmla_2}}
+```VB.NET
 	Dim cubeConnectionDetails As New XmlaConnectionSettings()
 	cubeConnectionDetails.Cube = "Adventure Works"
 	cubeConnectionDetails.Database = "Adventure Works DW 2008R2"
@@ -162,7 +162,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	
 	Dim xmlaDataProvider As New XmlaDataProvider()
 	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails
-{{endregion}}
+```
 
 >You can set credentials if your connection requires username and password. The *Credentials* property of __XmlaDataProvider__ expects object of type *XmlaNetworkCredential* which gives you properties for *UserName*, *Password*, *SecurePassword* and *Domain*.    			
 
@@ -192,7 +192,7 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 
 #### __XAML__
 
-{{region radpivotgrid-data-xmla_3}}
+```XAML
 	<pivot:XmlaDataProvider.RowGroupDescriptions>
 	    <pivot:XmlaGroupDescription MemberName="[Date].[Calendar Year]"/>
 	</pivot:XmlaDataProvider.RowGroupDescriptions>
@@ -204,11 +204,11 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	<pivot:XmlaDataProvider.AggregateDescriptions>
 	    <pivot:XmlaAggregateDescription MemberName="[Measures].[Internet Order Quantity]" />
 	</pivot:XmlaDataProvider.AggregateDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-xmla_3}}
+```C#
 	XmlaGroupDescription rowGroupDescription1 = new XmlaGroupDescription();
 	rowGroupDescription1.MemberName = "[Date].[Calendar Year]";
 	
@@ -224,11 +224,11 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	xmlaDataProvider.ColumnGroupDescriptions.Add(columnGroupDescription1);
 	xmlaDataProvider.AggregateDescriptions.Add(aggregateDescription1);
 	xmlaDataProvider.EndInit();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-xmla_3}}
+```VB.NET
 	Dim rowGroupDescription1 As New XmlaGroupDescription()
 	rowGroupDescription1.MemberName = "[Date].[Calendar Year]"
 	
@@ -244,13 +244,13 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	xmlaDataProvider.ColumnGroupDescriptions.Add(columnGroupDescription1)
 	xmlaDataProvider.AggregateDescriptions.Add(aggregateDescription1)
 	xmlaDataProvider.EndInit()
-{{endregion}}
+```
 
 The __XmlaFilterDescription__ is used to filter the data that will be included in the report. Filtering is applied for a specific member defined in *MemberName* property. *Condition* property defines the way to filter the items. Only the ones that pass the filter will be shown in __RadPivotGrid__. The filtering is based on the Unique Name of the members. For example, if you want to show only data for year 2005, you can define it like this:        
 
 #### __XAML__
 
-{{region radpivotgrid-data-xmla_4}}
+```XAML
 	<pivot:XmlaDataProvider.FilterDescriptions>
 	    <pivot:XmlaFilterDescription MemberName="[Date].[Calendar Year]">
 	        <pivot:XmlaFilterDescription.Condition>
@@ -262,29 +262,29 @@ The __XmlaFilterDescription__ is used to filter the data that will be included i
 	        </pivot:XmlaFilterDescription.Condition>
 	    </pivot:XmlaFilterDescription>
 	</pivot:XmlaDataProvider.FilterDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-xmla_4}}
+```C#
 	XmlaFilterDescription filterDescription = new XmlaFilterDescription();
 	filterDescription.MemberName = "[Date].[Calendar Year]";
 	OlapSetCondition condition = new OlapSetCondition();
 	condition.Comparison = SetComparison.Includes;
 	condition.Items.Add("[Date].[Calendar Year].&[2005]");
 	filterDescription.Condition = condition;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-xmla_4}}
+```VB.NET
 	Dim filterDescription As New XmlaFilterDescription()
 	filterDescription.MemberName = "[Date].[Calendar Year]"
 	Dim condition As New OlapSetCondition()
 	condition.Comparison = SetComparison.Includes
 	condition.Items.Add("[Date].[Calendar Year].&[2005]")
 	filterDescription.Condition = condition
-{{endregion}}
+```
 
 As you can see, __XmlaFilterDescription__ Condition expects object of type *OlapSetCondition*. *Items* property of the *OlapSetCondition* object is a collection of all objects that each item must match. In our case we are using string objects as the member names in OLAP Cubes are strings.        
 
@@ -296,7 +296,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 
 #### __XAML__
 
-{{region radpivotgrid-data-xmla_5}}
+```XAML
 	<pivot:XmlaFilterDescription MemberName="[Date].[Calendar]">
 	    <pivot:XmlaFilterDescription.Levels>
 	        <pivot:XmlaLevelFilterDescription MemberName="[Date].[Calendar].[Calendar Year]">
@@ -319,11 +319,11 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	            </pivot:XmlaLevelFilterDescription>
 	    </pivot:XmlaFilterDescription.Levels>
 	</pivot:XmlaFilterDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-xmla_5}}
+```C#
 	XmlaFilterDescription topFilterDescription = new XmlaFilterDescription();
 	topFilterDescription.MemberName = "[Date].[Calendar]";
 	
@@ -343,11 +343,11 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	
 	topFilterDescription.Levels.Add(levelFilterDescription1);
 	topFilterDescription.Levels.Add(levelFilterDescription2);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-xmla_5}}
+```VB.NET
 	Dim topFilterDescription As New XmlaFilterDescription()
 	topFilterDescription.MemberName = "[Date].[Calendar]"
 	
@@ -367,7 +367,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	
 	topFilterDescription.Levels.Add(levelFilterDescription1)
 	topFilterDescription.Levels.Add(levelFilterDescription2)
-{{endregion}}
+```
 
 ## See Also
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})

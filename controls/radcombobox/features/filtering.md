@@ -18,7 +18,7 @@ The next code snippet shows a regular __RadComboBox__ with static data (defined 
 
 #### __XAML__
 
-{{region radcombobox-features-filtering_0}}
+```XAML
 	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox">
 	    <telerik:RadComboBoxItem Content="Alapattah" />
 	    <telerik:RadComboBoxItem Content="Brickell Avenue" />
@@ -33,7 +33,7 @@ The next code snippet shows a regular __RadComboBox__ with static data (defined 
 	    <telerik:RadComboBoxItem Content="Pinecrest" />
 	    <telerik:RadComboBoxItem Content="Virginia Gardens" />
 	</telerik:RadComboBox>
-{{endregion}}
+```
 
 To control the text filtering you can set the __IsFilteringEnabled__ property. By default the __IsFilteringEnabled__ is set to False. You can see on the snapshot below that in this case the items in the drop-down are not filtered.
 
@@ -43,11 +43,11 @@ Now go back in the initial __RadComboBox__ declaration and set the __TextSearchM
 
 #### __XAML__
 
-{{region radcombobox-features-filtering_1}}
+```XAML
 	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox" TextSearchMode="Contains" IsFilteringEnabled="True">
 	....
 	</telerik:RadComboBox>
-{{endregion}}
+```
 
 Start your demo and write "al" in the __input box__. Now only items containing the "al" text will be displayed.
 
@@ -62,11 +62,11 @@ The final scenario is when you have a __TextSearchMode__ set to __TextSearchMode
 
 #### __XAML__
 
-{{region radcombobox-features-filtering_2}}
+```XAML
 	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox" TextSearchMode="StartsWith" IsFilteringEnabled="True">
 	....
 	</telerik:RadComboBox>
-{{endregion}}
+```
 
 Start your demo and write "al" in the __input box__. Now only items, which text starts with the "al" text, will be shown in the drop-down list.
 

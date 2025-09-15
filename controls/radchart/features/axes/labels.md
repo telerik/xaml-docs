@@ -22,7 +22,7 @@ XCategory is used when the data is not sequential, i.e. values on the X Axis hav
 
 #### __C#__
 
-{{region cs-radchart-features-axes-labels_0}}
+```C#
 	DataSeries lineSeries = new DataSeries();
 	lineSeries.LegendLabel = "Monthly Sales";
 	lineSeries.Definition = new LineSeriesDefinition();
@@ -40,13 +40,13 @@ XCategory is used when the data is not sequential, i.e. values on the X Axis hav
 	{
 	    this.radChart.DefaultView.ChartArea.AxisX.TickPoints[i].Label = months[i];
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-axes-labels_1}}
+```VB.NET
 	Dim lineSeries As New DataSeries()
 	lineSeries.LegendLabel = "Monthly Sales"
 	lineSeries.Definition = New LineSeriesDefinition()
@@ -62,7 +62,7 @@ XCategory is used when the data is not sequential, i.e. values on the X Axis hav
 	For i As Integer = 0 To months.Length - 1
 	    radChart.DefaultView.ChartArea.AxisX.TickPoints(i).Label = months(i)
 	Next
-{{endregion}}
+```
 
 
 

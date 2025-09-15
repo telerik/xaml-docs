@@ -40,8 +40,8 @@ By default the cell has a size which equals the size of tile (256x256) which is 
 
 >important If the requests are performed slowly (for example they use a service which has low performance) you can increase the cell size to lower the number of requests.          
     
-#### __[XAML] Example 1: Virtualization Layer declaration__
-{{region radmap-features-virtualization-layer_0}}
+__Example 1: Virtualization Layer declaration__
+```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:VisualizationLayer x:Name="visualizationLayer">
 			<telerik:VisualizationLayer.ZoomLevelGridList>
@@ -50,7 +50,7 @@ By default the cell has a size which equals the size of tile (256x256) which is 
 			</telerik:VisualizationLayer.ZoomLevelGridList>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## Virtualization Source
 
@@ -64,8 +64,8 @@ In this case only 6 requests will be sent to the virtualization source whenever 
 
 __Example 2__ desmonstrate how to implement simple virtualization source.
 
-#### __[C#] Example 2: Create custom IMapItemsVirtualizationSource__
-{{region radmap-visualization-layer-virtualization_0}}
+__Example 2: Create custom IMapItemsVirtualizationSource__
+```C#
 	public class MyVirtualizationSource : IMapItemsVirtualizationSource
 	{
 		private XmlDocument document;
@@ -183,10 +183,8 @@ __Example 2__ desmonstrate how to implement simple virtualization source.
 			return locations;
 		}
 	}	
-{{endregion}}
-
-#### __[VB.NET] Example 2: Create custom IMapItemsVirtualizationSource__
-{{region radmap-visualization-layer-virtualization_1}}
+```
+```VB.NET
 	Public Class MyVirtualizationSource
 		Implements IMapItemsVirtualizationSource
 		Private document As XmlDocument
@@ -298,12 +296,12 @@ __Example 2__ desmonstrate how to implement simple virtualization source.
 			Return locations
 		End Function
 	End Class
-{{endregion}}
+```
 
 Here is a sample of the __VisualizationLayer__ declaration with UI Virtualization enabled:        
 
-#### __[XAML] Example 3: Setting custom IMapItemsVirtualizationSource in XAML__
-{{region radmap-visualization-layer-virtualization_2}}
+__Example 3: Setting custom IMapItemsVirtualizationSource in XAML__
+```XAML
     <UserControl x:Class="TestMapFeatures.Views.VisualizationLayer.Virtualization.ItemsVirtualization"
          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -368,7 +366,7 @@ Here is a sample of the __VisualizationLayer__ declaration with UI Virtualizatio
 
         </Grid>
     </UserControl>
-{{endregion}}
+```
 
 >When there are no __ZoomLevelGrids__ that satisfy the current zoom level, no request will be made. Also, when the changed value of the zoom level or the region stays in the range of a __ZoomLevelGrid__ or one of its cells, no request is made.          
 

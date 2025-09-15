@@ -21,25 +21,23 @@ The TopLayer property is a flag enumeration and it allows you to specify more th
 * `Foreground`&mdash;The Foreground option displays only a label layer. This option does not have effect when the `Mode` property of the provider is set to `Ariel` or `Road` modes.
 * `TrafficFlow`&mdash;This option shows a traffic flow layer on top of the roads. This option does not have effect when the `Mode` property of the provider is set to `Ariel` or `Road` modes.
 
-#### __[C#] Setting the TopLayer property__
-{{region radmap-features-providers-top-layer-0}}
+__Setting the TopLayer property__
+```C#
     BingRestMapProvider bingRestMapProvider = new BingRestMapProvider();
     bingRestMapProvider.ApplicationId = "Bing_Map_Key";
     bingRestMapProvider.Mode = MapMode.AerialOnDemand;
     bingRestMapProvider.TopLayer = BingTopLayer.TrafficFlow | BingTopLayer.Background;
 
     this.radMap.Provider = bingRestMapProvider;
-{{endregion}}
-
-#### __[VB.NET] Setting the TopLayer property__
-{{region radmap-features-provider-top-layer-1}}
+```
+```VB.NET
     Dim bingRestMapProvider As BingRestMapProvider = New BingRestMapProvider()
     bingRestMapProvider.ApplicationId = "Bing_Map_Key"
     bingRestMapProvider.Mode = MapMode.AerialOnDemand
     bingRestMapProvider.TopLayer = BingTopLayer.TrafficFlow Or BingTopLayer.Background
 
     Me.radMap.Provider = bingRestMapProvider
-{{endregion}}
+```
 
 __RadMap with TopLayer property set to BingTopLayer.TrafficFlow and BingTopLayer.Background__
 

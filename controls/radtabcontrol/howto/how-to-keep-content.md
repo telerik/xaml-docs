@@ -21,7 +21,7 @@ However, if you need to keep each __RadTabItem__'s content you can set the __IsC
 
 #### __XAML__
 
-{{region radtabcontrol-how-to-keep-content_0}}
+```XAML
     <telerik:RadTabControl x:Name="tabControl" 
                            IsContentPreserved="True"
                            ItemsSource="{Binding Tabs}">
@@ -36,7 +36,7 @@ However, if you need to keep each __RadTabItem__'s content you can set the __IsC
             </DataTemplate>
         </telerik:RadTabControl.ContentTemplate>
     </telerik:RadTabControl>
-	{{endregion}}
+	```
 
 ![{{ site.framework_name }} RadTabControl Keep Content Preserved Tab 1](images/RadTabControl_HowTo_TabContentPreserve_15.png)
 ![{{ site.framework_name }} RadTabControl Keep Content Preserved Tab 2](images/RadTabControl_HowTo_TabContentPreserve_16.png)

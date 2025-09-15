@@ -26,8 +26,8 @@ The map source is providing information about the tile that should be downloaded
 
 To create a custom source, implement a class that derives from `UriVectorTileMapSource`.
 
-#### __[C#] Creating custom UriVectorTileMapSource__
-{{region radmap-features-custom-vector-tile-provider-0}}
+__Creating custom UriVectorTileMapSource__
+```C#
 	public class ArcGisVectorMapSource : UriVectorTileMapSource
 	{
 		public ArcGisVectorMapSource(string template)
@@ -46,12 +46,12 @@ To create a custom source, implement a class that derives from `UriVectorTileMap
 			return new Uri(baseUri.ToString());
 		}
 	}
-{{endregion}}
+```
 
 In case the custom provider should get the tiles using a `Stream` instead of a `Uri`, implement the `IMapStreamSource` and use its `GetStream` method.
 
-#### __[C#] Implementing the IMapStreamSource interface__
-{{region radmap-features-custom-vector-tile-provider-1}}
+__Implementing the IMapStreamSource interface__
+```C#
 	public class CustomVectorMapSource : UriVectorTileMapSource, IMapStreamSource
     {
         public CustomVectorMapSource(string template)
@@ -66,7 +66,7 @@ In case the custom provider should get the tiles using a `Stream` instead of a `
             // return the stream object
         }
     }	
-{{endregion}}
+```
 
 The custom map source can be used with a custom vector tile provider.
 
@@ -74,8 +74,8 @@ The custom map source can be used with a custom vector tile provider.
 
 The custom provider allows you to use a custom map source and to make sure that the map features are compatible with it. Additional to this, it allows you to register extra commands that will be shown as buttons in the [Map View Mode]({%slug radmap-visual-structure%}) list in the navigation element `RadMap`.
 
-#### __[C#] Creating custom VectorTileMapProvider__
-{{region radmap-features-custom-vector-tile-provider-2}}
+__Creating custom VectorTileMapProvider__
+```C#
 	public class ArcGisVectorProvider : VectorTileMapProvider
     {
         private const string template = @"https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/{level}/{y}/{x}";
@@ -153,16 +153,16 @@ The custom provider allows you to use a custom map source and to make sure that 
             this.StyleFileSource = new Uri(styleFilePath, UriKind.Relative);
         }
     }	
-{{endregion}}
+```
 
-#### __[XAML] Using the custom map provider__
-{{region radmap-features-custom-vector-tile-provider-3}}
+__Using the custom map provider__
+```XAML
 	<telerik:RadMap>
 		<telerik:RadMap.Provider>
 			<local:ArcGisVectorProvider StyleFileSource="C:\MyWpfApplicationFolder\Styles\ESRI\topographic.json"/>
 		</telerik:RadMap.Provider>
 	</telerik:RadMap>	
-{{endregion}}
+```
 
 ![A RadMap with custom VectorTileMapProvider showing tiles from the ArcGIS vector tile services](images/radmap-features-custom-vector-tile-provider-0.png)
 

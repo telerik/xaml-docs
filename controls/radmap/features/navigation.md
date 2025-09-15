@@ -21,16 +21,16 @@ When working with the __RadMap__ control, the user would likely try to pan or zo
 If you want to hide the navigation control you have to set the __NaviagtionVisibility__ to __Collapsed__.
 
 #### __XAML__
-{{region radmap-features-navigation_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                NavigationVisibility="Collapsed">
 	</telerik:RadMap>
-{{endregion}}
+```
 
 If you want to disable the user from zooming and panning, you have to set the following properties:
 
 #### __XAML__
-{{region radmap-features-navigation_1}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                NavigationVisibility="Collapsed"
 	                IsMouseWheelZoomEnabled="False"
@@ -40,7 +40,7 @@ If you want to disable the user from zooming and panning, you have to set the fo
 	                MouseDragMode="None"
 	                ZoomBarVisibility="Collapsed">
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Additionally as the UI navigation control is represented by the __MapNavigation__ control, you are able to use it outside the __RadMap__ and place it somewhere around it. In this case you have to either hide the original one by using the __NavigationVisibility__ property of the __RadMap__ or the __UseDefaultLayout__ one.
 
@@ -49,7 +49,7 @@ Additionally as the UI navigation control is represented by the __MapNavigation_
 In order to use the __MapNavigation__ outside of the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. Additionally you can handle its __CenterButtonClick__ event and implement your custom logic in the event handler. Here is an example:
 
 #### __XAML__
-{{region radmap-features-navigation_2}}
+```XAML
 	<StackPanel>
 	    <telerik:RadMap x:Name="radMap"
 	                    Width="600"
@@ -59,7 +59,7 @@ In order to use the __MapNavigation__ outside of the __RadMap__ you have to set 
 	    <telerik:MapNavigation MapControl="{Binding ElementName=radMap}"
 	                            Margin="10" />
 	</StackPanel>
-{{endregion}}
+```
 
 Here is a snapshot of the result.
 

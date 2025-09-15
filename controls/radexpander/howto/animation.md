@@ -14,20 +14,18 @@ The RadExpander control has an animation enabled by default.
 
 To disable or enable the animation, set the __AnimationManager.IsAnimationEnabled__ attached property on RadExpander. 
 
-#### __[XAML] Example 1: Disabling animation in XAML__
-{{region radexpander-howto-animation_0}}
+__Example 1: Disabling animation in XAML__
+```XAML
 	<telerik:RadExpander telerik:AnimationManager.IsAnimationEnabled="False" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Disabling animation in code__
-{{region radexpander-howto-animation_1}}        
+__Example 2: Disabling animation in code__
+```C#        
 	AnimationManager.SetIsAnimationEnabled(this.radExpander, false);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Disabling animation in code__
-{{region radexpander-howto-animation_2}}    
+```
+```VB.NET    
 	AnimationManager.SetIsAnimationEnabled(Me.radExpander, False)            
-{{endregion}}
+```
 
 ## Customize Animations
 
@@ -40,8 +38,8 @@ To customize RadExpander animations, use the __AnimationManager.AnimationSelecto
 	* __ExpandDirection is set to Right or Left:__ To modify the animation the AnimationName needs to be set to __ExpandHorizontal or CollapseHorizontal__.
 * __SpeedRatio__: A property of type __double__ that gets or sets the speed of the animation.
 
-#### __[XAML] Example 3: Modify the animations when ExpandDirection is Up or Down__
-{{region radexpander-howto-animation_3}}
+__Example 3: Modify the animations when ExpandDirection is Up or Down__
+```XAML
 	<telerik:RadExpander>
 		<telerik:RadExpander.Content>
 			<Grid>
@@ -68,10 +66,10 @@ To customize RadExpander animations, use the __AnimationManager.AnimationSelecto
 			</telerik:AnimationSelector>
 		</telerik:AnimationManager.AnimationSelector>
 	</telerik:RadExpander>
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Modify the animations when ExpandDirection is Right or Left__
-{{region radexpander-howto-animation_4}}
+__Example 4: Modify the animations when ExpandDirection is Right or Left__
+```XAML
 	<telerik:RadExpander ExpandDirection="Left">
 		<telerik:RadExpander.Content >
 				<Grid>
@@ -98,7 +96,7 @@ To customize RadExpander animations, use the __AnimationManager.AnimationSelecto
 			</telerik:AnimationSelector>
 		</telerik:AnimationManager.AnimationSelector>
 	</telerik:RadExpander>
-{{endregion}}
+```
 
 ## See Also
 * [Getting Started]({%slug expander-getting-started%})

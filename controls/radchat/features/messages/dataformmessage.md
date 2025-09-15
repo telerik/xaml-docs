@@ -17,8 +17,8 @@ The __DataFormMessage__ mimics the [RadDataForm]({%slug raddataform-overview%}) 
 * __IEnumerable<string> propertyNames__: the properties of the __item__ have to be passed as collection of strings.  
 * __DateTime creationDate__: the __creationDate__ parameter is optional.
 
-#### __[C#] Example 1: Defining a DataFormMessage__ 
-{{region radchat-messages-dataformmessage_01}}
+__Example 1: Defining a DataFormMessage__ 
+```C#
 	    Club chelsea = new Club()
             {
                 Name = "Chelsea",
@@ -35,7 +35,7 @@ The __DataFormMessage__ mimics the [RadDataForm]({%slug raddataform-overview%}) 
         DataFormMessage dataFormMessage 
 				= new DataFormMessage(MessageDisplayPosition.Inline, this.currentAuthor, chelsea, listProperties);
  	    this.chat.AddMessage(dataFormMessage);
-{{endregion}}
+```
 
 #### __Figure 1: Defining DataFormMessage__
 ![Defining DataFormMessage](images/RadChat_Messages_DataForm_01.png)

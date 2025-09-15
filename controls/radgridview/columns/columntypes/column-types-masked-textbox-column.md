@@ -14,9 +14,9 @@ __GridViewMaskedTextBoxColumn__ derives from [GridViewBoundColumnBase]({%slug ra
 
 For example add a __GridViewMaskedTextBoxColumn__ that represents the OrderNumber for an Order object. The OrderNumber should not be more than 7 symbols. As it allows both text and digits use the __Standard MaskType__ and set "SO#####" as __Mask__.
 
-#### __[XAML]Example 1: Define GridViewMaskedTextBoxColumn in XAML:__
+__Example 1: Define GridViewMaskedTextBoxColumn in XAML:__
 
-{{region xaml-radgridview-columns-column-types-masked-textbox-column_0}}
+```XAML
 	!--
 	        <telerik:RadGridView x:Name="radGridView"
 	                 AutoGenerateColumns="False">
@@ -29,7 +29,7 @@ For example add a __GridViewMaskedTextBoxColumn__ that represents the OrderNumbe
 	            </telerik:RadGridView.Columns>
 	        </telerik:RadGridView>
 	        -->
-{{endregion}}
+```
 
 ## See Also
 

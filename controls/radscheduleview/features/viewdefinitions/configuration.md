@@ -54,23 +54,23 @@ Gets or sets the date time interval with which the current will be increased or 
 
 The property is of type __DateTimeInterval__. In the following example the __LargeChangeInterval__ property of DayView is set to 2 days and of MonthView is set of 2 months and 4 days.
 
-#### __[XAML] Example 1: Setting the LargeChangeInterval property in XAML__  
-{{region radscheduleview-viewdefinitions-configuration_0}}
+__Example 1: Setting the LargeChangeInterval property in XAML__  
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition LargeChangeInterval="2d"/>
 			<telerik:MonthViewDefinition LargeChangeInterval="2m 4d"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the LargeChangeInterval property in code__  
-{{region radscheduleview-viewdefinition-configuration_1}}
+__Example 2: Setting the LargeChangeInterval property in code__  
+```C#
 	dayDefintion.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(2, 0);
 	monthDefinition.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(4, 2);
-{{endregion}}
+```
 
 ## SmallChangeInterval
 
@@ -84,23 +84,23 @@ Setting the SmallChangeInterval property of a DayViewDefiniton and WeekViewDefin
 
 The following example shows how to set the __SmallChangeInterval__ property of a MonthViewDefinition to 11 days and of a TimelineViewDefinition to 3 days:
 
-#### __[XAML] Example 3: Setting the SmallChangeInterval property in XAML__
-{{region radscheduleview-viewdefinitions-configuration_2}}
+__Example 3: Setting the SmallChangeInterval property in XAML__
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:MonthViewDefinition SmallChangeInterval="11d"/>
 			<telerik:TimelineViewDefinition SmallChangeInterval="3d"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting the SmallChangeInterval property in code__  
-{{region radscheduleview-viewdefinition-configuration_3}}
+__Example 4: Setting the SmallChangeInterval property in code__  
+```C#
 	monthDefintion.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(11, 0);
 	timelineDefinition.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(3, 0);
-{{endregion}}
+```
 
 ## DayStartTime
 
@@ -110,8 +110,8 @@ The DayStartTime is of type TimeSpan. It will not affect the look of the MonthVi
 
 The following example illustrates how to set the DayStartTime for DayView, WeekView and TimelineView:
 
-#### __[XAML] Example 5: Setting the DateStartTime property in XAML__  
-{{region radscheduleview-viewdefinitions-configuration_4}}
+__Example 5: Setting the DateStartTime property in XAML__  
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition DayStartTime="07:30:00"/>
@@ -119,14 +119,14 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
 			<telerik:TimelineViewDefinition DayStartTime="11:30:00"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __[C#] Example 6: Setting the DateStartTime property in code__  
-{{region radscheduleview-viewdefinition-configuration_5}}
+__Example 6: Setting the DateStartTime property in code__  
+```C#
 	dayDefintion.DayStartTime = new TimeSpan(7, 30, 00);
 	weekDefinition.DayStartTime = new TimeSpan(8, 0, 0);
 	timelineDefinition.DayStartTime = new TimeSpan(11, 30, 0);
-{{endregion}}
+```
 
 > MonthViewDefinition and AgendaViewDefinition do not support the __DayStartTime__ property.
 
@@ -144,8 +144,8 @@ The DayEndTime property is of type TimeSpan. The MonthView will be affected in t
 
 The following example illustrates how to set the DayStartTime for DayView, WeekView and TimelineView:      
 
-#### __[XAML] Example 7: Setting the DayEndTime property in XAML__  
-{{region radscheduleview-viewdefinitions-configuration_6}}
+__Example 7: Setting the DayEndTime property in XAML__  
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition DayEndTime="17:30:00"/>
@@ -153,14 +153,14 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
 			<telerik:TimelineViewDefinition DayEndTime="21:30:00"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __[C#] Example 8: Setting the DayEndTime property in code__  
-{{region radscheduleview-viewdefinition-configuration_7}}
+__Example 8: Setting the DayEndTime property in code__  
+```C#
 	dayDefintion.DayEndTime = new TimeSpan(17, 30, 00);
 	weekDefinition.DayEndTime = new TimeSpan(18, 0, 0);
 	timelineDefinition.DayEndTime = new TimeSpan(21, 30, 0);
-{{endregion}}
+```
 
 > MonthViewDefinition and AgendaViewDefinition do not support the __DayEndTime__ property.
 
@@ -178,8 +178,8 @@ Gets or sets the visible dates in the view. It indicates the count of the dates 
 
 The following code-snippet illustrates how to set the VisibleDays property in XAML and in code-behind for all predefined views:      
 
-#### __[XAML] Example 9: Setting the VisibleDays property in XAML__  
-{{region radscheduleview-viewdefinitions-configuration_8}}
+__Example 9: Setting the VisibleDays property in XAML__  
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition VisibleDays="4"/>
@@ -188,15 +188,15 @@ The following code-snippet illustrates how to set the VisibleDays property in XA
 			<telerik:TimelineViewDefinition VisibleDays="9"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __[C#] Example 10: Setting the VisibleDays property in code__  
-{{region radscheduleview-viewdefinition-configuration_9}}
+__Example 10: Setting the VisibleDays property in code__  
+```C#
 	dayDefintion.VisibleDays = 4;
 	weekDefinition.VisibleDays = 11;
 	monthDefintion.VisibleDays = 21;
 	timelineDefinition.VisibleDays = 9;
-{{endregion}}
+```
 
 #### __Figure 1: RadScheduleView with VisibleDays set__  
 ![radschedule View viewdefinitions configuration 01](images/radscheduleView_viewdefinitions_configuration_01.png)
@@ -209,14 +209,14 @@ Gets or sets the first weekday with which the week will start according to the v
 
 If set to True (default value) and there is more available space in the ViewDefintion left, it will be distributed among the groups. 
 
-#### __[XAML] Example 11: Setting the StretchGroupHeaders property__  
-{{region radscheduleview-viewdefinition-configuration_12}}
+__Example 11: Setting the StretchGroupHeaders property__  
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" >		
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition VisibleDays="3" StretchGroupHeaders="False"  />           
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 #### __Figure 2: RadScheduleView with StretchGroupHeaders set__  
 ![{{ site.framework_name }} RadScheduleView RadScheduleView with StretchGroupHeaders set](images/radscheduleView_viewdefinitions_configuration_08.png)
@@ -235,8 +235,8 @@ Values can be Vertical or Horizontal. __Not present in MonthView.__ This is meas
 
 The following code-snippets show how to set the Orientation property in XAML and code-behind:      
 
-#### __[XAML] Example 12: Setting the Orientation property in XAML__  
-{{region radscheduleview-viewdefinitions-configuration_10}}
+__Example 12: Setting the Orientation property in XAML__  
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition Orientation="Horizontal" />
@@ -244,14 +244,14 @@ The following code-snippets show how to set the Orientation property in XAML and
 			<telerik:TimelineViewDefinition Orientation="Vertical"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __[C#] Example 13: Setting the Orientation property in code__  
-{{region radscheduleview-viewdefinition-configuration_11}}
+__Example 13: Setting the Orientation property in code__  
+```C#
 	dayDefintion.Orientation = Orientation.Horizontal;
 	weekDefinition.Orientation = Orientation.Horizontal;
 	timelineDefinition.Orientation = Orientation.Vertical;
-{{endregion}}
+```
 
 The following figures show the how the Orientation property affects the views.
 
@@ -268,8 +268,8 @@ The following figures show the how the Orientation property affects the views.
 
 The __GroupFilter__ property can be used when in a grouped scenario a given group needs to be excluded. It is a predicate that takes a given group as a parameter and returns a boolean value determining whether the group should take part in the grouping operation or not. The following example demonstrates how __RadScheduleView__ can display only weekends or only working days through its __GroupFilter__.
 
-#### __[C#] Example 14: Defining the GroupFilter predicate in the view model__  
-{{region radscheduleview-viewdefinition-configuration_12}}
+__Example 14: Defining the GroupFilter predicate in the view model__  
+```C#
 	public class MyViewModel : ExampleViewModel<Appointment>
     {
          private Func<object, bool> groupFilter;
@@ -305,15 +305,15 @@ The __GroupFilter__ property can be used when in a grouped scenario a given grou
              return true;
          }
     }
-{{endregion}}	
+```	
 
-#### __[XAML] Example 15: Applying the GroupFilter to a WeekView__  
-{{region radscheduleview-viewdefinition-configuration_13}}
+__Example 15: Applying the GroupFilter to a WeekView__  
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:WeekViewDefinition GroupFilter="{Binding GroupFilter}" DayStartTime="08:00" DayEndTime="20:00"/>
             </telerik:RadScheduleView.ViewDefinitions>
-{{endregion}}	
+```	
 
 #### __Figure 6: WeekView with applied GroupFilter__  
 ![radschedule View viewdefinitions configuration 07](images/radscheduleView_viewdefinitions_configuration_09.png)
@@ -322,8 +322,8 @@ The __GroupFilter__ property can be used when in a grouped scenario a given grou
 
 As of __R2 2017__ RadScheduleView exposes the __SubGroupsFilter__ mechanism. It provides the option to control whether a given item should be visible in a particular group or not. The following example demonstrates how RadScheduleView can be populated with some sample Resources and how they can be visualized in a given group and hidden in another.
 
-#### __[C#] Example 16: Defining the SubGroupsFilter in the view model__  
-{{region radscheduleview-viewdefinition-configuration_15}}
+__Example 16: Defining the SubGroupsFilter in the view model__  
+```C#
 	public class MyViewModel : ExampleViewModel<Appointment>
     {
          private Func<IGroupInfo, bool> subGroupsFilter;
@@ -398,10 +398,10 @@ As of __R2 2017__ RadScheduleView exposes the __SubGroupsFilter__ mechanism. It 
             return true;
         }
     }
-{{endregion}}	
+```	
 
-#### __[XAML] Example 17: Populating RadScheduleView with Resources and binding the SubGroupsFilter__  
-{{region radscheduleview-viewdefinition-configuration_15}}
+__Example 17: Populating RadScheduleView with Resources and binding the SubGroupsFilter__  
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:WeekViewDefinition SubGroupsFilter="{Binding SubGroupsFilter}"/>
@@ -430,7 +430,7 @@ As of __R2 2017__ RadScheduleView exposes the __SubGroupsFilter__ mechanism. It 
                 </telerik:GroupDescriptionCollection>
             </telerik:RadScheduleView.GroupDescriptionsSource>
         </telerik:RadScheduleView>
-{{endregion}}	
+```	
 
 #### __Figure 7: WeekView with applied SubGroupsFilter__  
 ![radschedule View viewdefinitions configuration 07](images/radscheduleView_viewdefinitions_configuration_10.png)

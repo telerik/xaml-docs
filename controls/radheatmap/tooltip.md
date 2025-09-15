@@ -12,11 +12,11 @@ position: 5
 
 The RadHeatMap control provides a tooltip behavior which can be used to visualize arbitrary information related to a data point. The ToolTip functionality is disable by default. To enable it, you need to set __ShowToolTips__ property of the RadHeatMap to true. 
 
-#### __[XAML] Example 1: Enabling the ToolTip behavior of the RadHeatMap__
+__Example 1: Enabling the ToolTip behavior of the RadHeatMap__
 
-{{region radheatmap-tooltip_0}}
+```XAML
 	 <telerik:RadHeatMap ShowToolTips="True" />
-{{endregion}}
+```
 
 ## Customizing the Tooltip
 
@@ -26,29 +26,27 @@ To customize the apperance of the tooltip you can use the __HeatMapToolTipSettin
  * __Column:__ А string property which gets or sets the column name of the corresponding cell.
  * __Value:__ Аn integer property which gets or sets the value of the corresponding cell.
 
-#### __[C#] Example 2: Creating the model__
-{{region radheatmap-tooltip-1}}
+__Example 2: Creating the model__
+```C#
 	public class TempInfo
     {
         public int Year { get; set; }
         public string Month { get; set; }
         public double Temperature { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Creating the model__
-{{region radheatmap-tooltip-2}}
+```
+```VB.NET
     Public Class TempInfo
 		Public Property Year As Integer
 		Public Property Month As String
 		Public Property Temperature As Double
 	End Class
-{{endregion}}
+```
 
 To fill the RadHeatMap with sample data we can create a list of *TempInfo* objects and set it as DataContext of the control. 
 
-#### __[C#] Example 3: Populating the RadHeatMap control__
-{{region radheatmap-tooltip-3}}
+__Example 3: Populating the RadHeatMap control__
+```C#
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -76,10 +74,8 @@ To fill the RadHeatMap with sample data we can create a list of *TempInfo* objec
 			this.DataContext = source;
 		}
     } 
-{{endregion}}
-
-#### __[VB.NET] Example 3: Populating the RadHeatMap control__
-{{region radheatmap-tooltip-4}}
+```
+```VB.NET
     Public Partial Class MainWindow
 		Inherits Window
 
@@ -109,12 +105,12 @@ To fill the RadHeatMap with sample data we can create a list of *TempInfo* objec
 			Me.DataContext = source
 		End Sub
 	End Class
-{{endregion}}
+```
 
 After having the sample data ready, we can go in the XAML code and define the RadHeatMap and the __ToolTipSettings__.
 
-#### __[XAML] Example 4: Customizing the ToolTip__
-{{region radheatmap-labels-5}}
+__Example 4: Customizing the ToolTip__
+```XAML
 	<telerik:RadHeatMap ShowToolTips="True" CellBorderColor="Black" CellBorderThickness="1" >
 		<telerik:RadHeatMap.ToolTipSettings>
 			<telerik:HeatMapToolTipSettings>
@@ -135,7 +131,7 @@ After having the sample data ready, we can go in the XAML code and define the Ra
 									ValuePath="Temperature" />
 		</telerik:RadHeatMap.Definition>
 	</telerik:RadHeatMap>
-{{endregion}}
+```
 
 #### __Figure 1: RadHeatMap with customized ToolTip__
 

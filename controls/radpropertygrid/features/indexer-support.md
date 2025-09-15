@@ -24,9 +24,9 @@ In **R2 2016**, Telerik introduced **Indexer Support** for RadPropertyGrid's **P
 
 For the purposes of this article, we will assume the following class hierarchy is present:
 
-#### __[C#] Example 1: The class hierarchy__
+__Example 1: The class hierarchy__
 
-	{{region cs-radpropertygrid-indexer-support_0}}
+	```C#
 	public class League
 	{
 	    public string Name { get; set; }
@@ -50,11 +50,8 @@ For the purposes of this article, we will assume the following class hierarchy i
 	    public int Number { get; set; }
 	    public string Position { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: The class hierarchy__
-
-	{{region vb-radpropertygrid-indexer-support_0}}
+```
+```VB.NET
 	Public Class League
 	    Public Property Name() As String
 	    Public Property Clubs() As ObservableCollection(Of Club)
@@ -76,29 +73,29 @@ For the purposes of this article, we will assume the following class hierarchy i
 	    Public Property Number() As Integer
 	    Public Property Position() As String
 	End Class
-{{endregion}}
+```
 
 ## Binding to an Item of a Collection Through Indexer
 
 A common scenario when using RadPropertyGrid is when we have a collection member of our business object. **Example 2** shows how to bind to an item at a specified index in the collection:
 
-#### __[XAML] Example 2: Binding to a collection__
+__Example 2: Binding to a collection__
 
-	{{region xaml-radpropertygrid-indexer-support_1}}
+	```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}"  AutoGeneratePropertyDefinitions="False">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding Clubs[0]}" DisplayName="Name" />
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 ## Binding of NestedProperties
 
 You can also use indexing in **NestedProperties**, as shown in **Example 3**:
 
-#### __[XAML] Example 3: Binding of NestedProperties__
+__Example 3: Binding of NestedProperties__
 
-	{{region xaml-radpropertygrid-indexer-support_2}}
+	```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGeneratePropertyDefinitions="False" NestedPropertiesVisibility="Visible">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding Clubs[0]}" DisplayName="Club">
@@ -108,15 +105,15 @@ You can also use indexing in **NestedProperties**, as shown in **Example 3**:
 	        </telerik:PropertyDefinition>
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 ## Binding to a Collection Property with a String Key
 
 As our **League** class has a **Dictionary** of clubs, we can access any club by its name, as demonstrated in **Example 4**.
 
-#### __[XAML] Example 4: Binding to item in Dictionary__
+__Example 4: Binding to item in Dictionary__
 
-	{{region xaml-radpropertygrid-indexer-support_3}}
+	```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGeneratePropertyDefinitions="False" NestedPropertiesVisibility="Visible">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding ClubsDictionary[Liverpool]}" DisplayName="Club">
@@ -126,29 +123,29 @@ As our **League** class has a **Dictionary** of clubs, we can access any club by
 	        </telerik:PropertyDefinition>
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 ## Binding to an Item which Implements an Indexer
 
 Since our **Club** class implements an indexer, we can also bind to the **Player**, whose number is 25, for example:
 
-#### __[XAML] Example 5: Indexing a class that implements indexer__
+__Example 5: Indexing a class that implements indexer__
 
-	{{region xaml-radpropertygrid-indexer-support_4}}
+	```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGeneratePropertyDefinitions="False">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding ClubsDictionary[Liverpool][25]}" DisplayName="Player with number 25" />
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 ## Using Unbound Mode
 
 Indexer support also works when **AutoGenerateBindingPaths** is set to **False**.
 
-#### __[XAML] Example 6: Indexing when AutoGenerateBindingPaths is set to False__
+__Example 6: Indexing when AutoGenerateBindingPaths is set to False__
 
-	{{region xaml-radpropertygrid-indexer-support_5}}
+	```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGenerateBindingPaths="False" AutoGeneratePropertyDefinitions="False" NestedPropertiesVisibility="Visible">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding ClubsDictionary[Liverpool]}" DisplayName="Club">
@@ -158,7 +155,7 @@ Indexer support also works when **AutoGenerateBindingPaths** is set to **False**
 	        </telerik:PropertyDefinition>
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 ## See Also
 

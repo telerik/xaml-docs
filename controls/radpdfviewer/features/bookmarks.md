@@ -21,7 +21,7 @@ __Bookmarks in RadPdfViewer__
 In RadPdfViewer, you can show bookmarks using the `RadPdfViewerNavigationPane` element. This is a control that represents an area that can display different navigation panels. This includes the Bookmarks of the PDF document, which serve as a table of contents. RadPdfViewerNavigationPane exposes the `PaneWidth` property, which you can use to specify the width of the panel.
 
 #### [XAML] Define RadPdfViewerNavigationPane
-{{region radpdfviewer-features-bookmarks_0}}
+```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="Auto" />
@@ -30,7 +30,7 @@ In RadPdfViewer, you can show bookmarks using the `RadPdfViewerNavigationPane` e
 	    <telerik:RadPdfViewerNavigationPane RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}" PaneWidth="300" />
 	    <telerik:RadPdfViewer Grid.Column="1" x:Name="pdfViewer" DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}" />
 	</Grid>
-{{endregion}}
+```
 
 The items inside the panel are represented by the [BookmarkItem](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/bookmarks#bookmarkitem-class) class, which can be used to obtain information about the style, text, appearance, action and destination of the bookmark.
 
@@ -47,10 +47,10 @@ The two available options for the PageMode property are as follows:
 
 You have access to the bookmarks in the document through the `Bookmarks` collection exposed by the `Document` property of RadPdfViewer. It is of the type of `BookmarksCollection` and you can use it to iterate the bookmarks and find a specific one.
 
-#### __[C#] Retrieving a bookmark from the Bookmarks collection__
-{{region radpdfviewer-features-bookmarks_1}}
+__Retrieving a bookmark from the Bookmarks collection__
+```C#
 	BookmarkItem lastBookmarkItem = this.pdfViewer.Document.Bookmarks.LastOrDefault();
-{{endregion}}
+```
 
 The Bookmarks collection contains BookmarkItem instances. Each bookmark item has information about its children via its `Children` collection, which is of the type of `BookmarksCollection`. If an inner bookmark is needed, you can traverse the `Children` collection of the parent BookmarkItem instance.
 
@@ -65,15 +65,15 @@ The following commands exposed by the CommandsDescriptors collection are intende
 * `ActivateBookmarkItemCommand`&mdash;This command represents the bookmark activated action (usually a user click event). When executed, RadPdfViewer displays the related Bookmark destination or executes the provided action. The command accepts a parameter of type `BookmarkItem`.
 * `SyncCurrentBookmarkItemCommand`&mdash;This command synchronizes the current location in the document with the related bookmark item. It can be invoked through the UI using the __Find Current Bookmark__ button.
 
-#### __[C#] Invoking the ActivateBookmarkItemCommand command in code__
-{{region radpdfviewer-features-bookmarks_2}}
+__Invoking the ActivateBookmarkItemCommand command in code__
+```C#
 	this.pdfViewer.CommandDescriptors.ActivateBookmarkItemCommandDescriptor.Command.Execute(lastBookmarkItem);
-{{endregion}}
+```
 
-#### __[C#] Invoking the SyncCurrentBookmarkItemCommand command in code__
-{{region radpdfviewer-features-bookmarks_3}}
+__Invoking the SyncCurrentBookmarkItemCommand command in code__
+```C#
 	this.pdfViewer.CommandDescriptors.SyncCurrentBookmarkItemCommandDescriptor.Command.Execute(null);
-{{endregion}}
+```
 
 ## See Also
 * [Showing a File]({%slug radpdfviewer-showing-a-file%})

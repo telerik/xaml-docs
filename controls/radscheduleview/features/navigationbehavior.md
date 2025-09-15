@@ -16,8 +16,8 @@ position: 21
 
  In order to modify the default NavigationBehavior of the control, you can create a class inheriting __DefaultNavigationBehavior__. It exposes a single virtual method - __Navigate__, which is called when one of the navigation keys is pressed. This method receives [NavigationData](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.navigationdata) and [NavigationDirection](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.navigationdirection) parameters. The __NavigationData__ class exposes a property of type [ServiceProvider](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.iserviceprovider) through which you can get information that you might need (such as selected slots and appointments). __Example__ 1 demonstrates how you can prevent the navigation in some scenarios and use the **SlotSelectionService**.
 
-#### __[C#] Example 1: Custom NavigationBehavior__
-{{region cs-radscheduleview-features-navigationbehavior_0}}
+__Example 1: Custom NavigationBehavior__
+```C#
     public class CustomNavigationBehavior : DefaultNavigationBehavior
     {
         public override void Navigate(NavigationData data, NavigationDirection direction)
@@ -48,10 +48,8 @@ position: 21
              base.Navigate(data, direction);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Custom NavigationBehavior__
-{{region vb-radscheduleview-features-navigationbehavior_1}}
+```
+```VB.NET
     Public Class CustomNavigationBehavior
         Inherits DefaultNavigationBehavior
 
@@ -77,18 +75,18 @@ position: 21
                  MyBase.Navigate(data, direction)
             End Sub
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Applying the custom NavigationBehavior__
+__Example 2: Applying the custom NavigationBehavior__
 
- {{region xaml-radscheduleview-features-navigationbehavior_2}}
+ ```XAML
     <telerik:RadScheduleView>
         <telerik:RadScheduleView.NavigationBehavior>
             <!-- The namespace "local" refers to the namespace where the CustomNavigationBehavior is defined -->
             <local:CustomNavigationBehavior />
         </telerik:RadScheduleView.NavigationBehavior>
     </telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## See Also
 

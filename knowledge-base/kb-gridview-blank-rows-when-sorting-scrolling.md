@@ -32,10 +32,10 @@ Rows are blank when sorting or scrolling the RadGridView control. This can also 
 
 Such issues may appear when using the default GroupRenderMode (Nested) of RadGridView. To resolve this, set GroupRenderMode to Flat.
 
-#### __[XAML]__
-{{region kb-gridview-blank-rows-when-sorting-scrolling-0}}
+
+```XAML
 	<telerik:RadGridView GroupRenderMode="Flat" />
-{{endregion}}
+```
 
 ## Solution 2
 

@@ -39,8 +39,8 @@ __To remove the mouse over overlay:__
 
 The following elements are the ones that should be removed from the template:
 
-#### __[XAML]__
-{{region kb-panelbar-remove-mouseover-and-selected-overlay-child-item-0}}
+
+```XAML
 	<VisualState x:Name="MouseOver">
 		<Storyboard>
 			<DoubleAnimation Duration="0:0:0.2" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="MouseOverVisual"/>
@@ -56,7 +56,7 @@ The following elements are the ones that should be removed from the template:
 		</Border.Background>
 		<Border BorderBrush="White" BorderThickness="1" Background="{x:Null}" CornerRadius="0"/>
 	</Border>
-{{endregion}}
+```
 
 __To remove the selected overlay:__
 
@@ -67,8 +67,8 @@ __To remove the selected overlay:__
 
 The following elements are the ones that should be removed from the template:
 
-#### __[XAML]__
-{{region kb-panelbar-remove-mouseover-and-selected-overlay-child-item-1}}
+
+```XAML
 	<VisualState x:Name="Selected">
 		<Storyboard>
 			<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="SelectedVisual"/>
@@ -84,16 +84,16 @@ The following elements are the ones that should be removed from the template:
 		</Border.Background>
 		<Border BorderBrush="White" BorderThickness="1" Background="{x:Null}" CornerRadius="0"/>
 	</Border>
-{{endregion}}
+```
 
 You can apply the custom style using an implicit style. This is a Style without its x:Key set.
 
-#### __[XAML]__
-{{region kb-panelbar-remove-mouseover-and-selected-overlay-child-item-2}}
+
+```XAML
 	<Style TargetType="telerik:RadPanelBarItem">
 		<!-- Some setters here -->
 	</Style>
-{{endregion}}
+```
 
 Or you can apply the style via the __ItemContainerStyle__ property of the RadPanelBar control.
 

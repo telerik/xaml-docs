@@ -23,9 +23,9 @@ Here is a brief list of all attached properties exposed by the class:
 
 **Example 1** demonstrates how to set each of the properties both in XAML and code-behind while **Figure 1**  and **Figure 2** illustrate the final result.
 
-#### __[XAML] Example 1: Set RadWindowInteropHelper attached properties__
+__Example 1: Set RadWindowInteropHelper attached properties__
 
-{{region xaml-radwindow-features-radwindowinterophelper_0}}
+```XAML
 	<telerik:RadWindow x:Class="ProjectNamespace.CustomWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -41,29 +41,26 @@ Here is a brief list of all attached properties exposed by the class:
 		<!-- ... -->
 	    </Grid>
 	</telerik:RadWindow>
-{{endregion}}
+```
 
-#### __[C#] Example 1: Set RadWindowInteropHelper attached properties__
+__Example 1: Set RadWindowInteropHelper attached properties__
 
-{{region vb-radwindow-features-radiwindowmanager_1}}
+```C#
 	RadWindowInteropHelper.SetClipMaskCornerRadius(this, new CornerRadius(0));
 	RadWindowInteropHelper.SetAllowTransparency(this, false);
 	RadWindowInteropHelper.SetOpaqueWindowBackground(this, Brushes.Red);
 	RadWindowInteropHelper.SetTitle(this, "Custom Window");
 	RadWindowInteropHelper.SetIcon(this, new BitmapImage(new Uri("../../icon.png", UriKind.RelativeOrAbsolute)));
 	RadWindowInteropHelper.SetShowInTaskbar(this, true);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Set RadWindowInteropHelper attached properties__
-
-{{region vb-radwindow-features-radiwindowmanager_1}}
+```
+```VB.NET
 	RadWindowInteropHelper.SetClipMaskCornerRadius(Me, New CornerRadius(0))
 	RadWindowInteropHelper.SetAllowTransparency(Me, False)
 	RadWindowInteropHelper.SetOpaqueWindowBackground(Me, Brushes.Red)
 	RadWindowInteropHelper.SetTitle(Me, "Custom Window")
 	RadWindowInteropHelper.SetIcon(Me, New BitmapImage(New Uri("../../icon.png", UriKind.RelativeOrAbsolute)))
 	RadWindowInteropHelper.SetShowInTaskbar(Me, True)
-{{endregion}}
+```
 
 #### __Figure 1: The customized RadWindow__
 

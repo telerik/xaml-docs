@@ -24,7 +24,7 @@ The final result from this tutorial should look like the snapshot below.
 
 #### __C#__
 
-{{region radcombobox-grid-like-dropdown_0}}
+```C#
 	public class Dealer
 	{
 	    public Dealer( string name, string description, string phone )
@@ -49,11 +49,11 @@ The final result from this tutorial should look like the snapshot below.
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radcombobox-grid-like-dropdown_1}}
+```VB.NET
 	Public Class Dealer
 	    Public Sub New(ByVal name As String, ByVal description As String, ByVal phone As String)
 	        Me.Name = name
@@ -88,13 +88,13 @@ The final result from this tutorial should look like the snapshot below.
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 The __Dealer__ class is extremely simple. It has only properties which describe it - __Name__, __Country__, __Phone__.
 
 #### __C#__
 
-{{region radcombobox-grid-like-dropdown_2}}
+```C#
 	public class DealerViewModel
 	{
 	    private ObservableCollection<Dealer> dealers;
@@ -121,11 +121,11 @@ The __Dealer__ class is extremely simple. It has only properties which describe 
 	        this.dealers.Add( new Dealer( "Germany Auto-Osa Ericsson", "Germany", "04-444444" ) );
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radcombobox-grid-like-dropdown_3}}
+```VB.NET
 	Public Class DealerViewModel
 	    Private m_dealers As ObservableCollection(Of Dealer)
 	    Public ReadOnly Property Dealers() As ObservableCollection(Of Dealer)
@@ -149,7 +149,7 @@ The __Dealer__ class is extremely simple. It has only properties which describe 
 	        Me.m_dealers.Add(New Dealer("Germany Auto-Osa Ericsson", "Germany", "04-444444"))
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 The class __DealerViewModel__ is doing nothing special except for initializing on demand a collection of __Dealer__ objects. There is a helper method, doing this work.
 
@@ -157,7 +157,7 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 
 #### __XAML__
 
-{{region radcombobox-grid-like-dropdown_4}}
+```XAML
 	<UserControl.Resources>
 	    <example:DealerViewModel x:Key="DataSource"/>
 	</UserControl.Resources>
@@ -170,13 +170,13 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 	
 	    </StackPanel>
 	</Grid>
-{{endregion}}
+```
 
 * The final step is to declare a custom __DataTemplate__ which defines the grid like drop-down of the __RadComboBox__. Set the just declared __DataTemplate__ to the __RadComboBox__'s __ItemsSource__ property.
 
 #### __XAML__
 
-{{region radcombobox-grid-like-dropdown_5}}
+```XAML
 	<UserControl.Resources>
 	    <example:DealerViewModel x:Key="DataSource"/>	
 	    <DataTemplate x:Key="GridLikeDataTemplate">
@@ -197,7 +197,7 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 	            ItemTemplate="{StaticResource GridLikeDataTemplate}"/>	
 	    </StackPanel>
 	</Grid>
-{{endregion}}
+```
 
 The final result is shown again on the next image.
 

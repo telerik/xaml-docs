@@ -15,13 +15,13 @@ position: 4
 You can define a Style when __InitializingExcelMLStyles__ event is raised.
 For example:
         
-#### __[C#] Example 1: Define a style:__
+__Example 1: Define a style:__
 
-{{region cs-gridview-export-events-initializing-excelml-styles_1}}
+```C#
 	ExcelMLStyle style = new ExcelMLStyle("0");
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
-{{endregion}}
+```
 
 You can find a list of the properties that could be set for __ExcelMLStyle__:
         
@@ -59,9 +59,9 @@ __NumberFormat:__
 - Format
 
 
-#### __[C#] Example 7: Apply a style before exporting:__
+__Example 7: Apply a style before exporting:__
 
-{{region cs-gridview-export-events-initializing-excelml-styles_2}}
+```C#
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("0");
@@ -96,7 +96,7 @@ __NumberFormat:__
 	
 	    e.Styles.Add(style);
 	}
-{{endregion}}
+```
         
 ## See Also
 

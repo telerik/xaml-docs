@@ -18,8 +18,8 @@ This series can be used to create histogram visualization. This can be done by u
 
 The following example shows how to define `ScatterRangeBarSeries` and populate its `DataPoints` collection.
 
-#### __[XAML] Declaring a RangeBarSeries in XAML__
-{{region radchartview-series-barseries-rangebarseries-0}}
+__Declaring a RangeBarSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Fluent">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:LinearAxis />
@@ -41,7 +41,7 @@ The following example shows how to define `ScatterRangeBarSeries` and populate i
 			</telerik:ScatterRangeBarSeries.DataPoints>
 		</telerik:ScatterRangeBarSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 __ScatterRangeBarSeries visual appearance__  
 
@@ -51,8 +51,8 @@ __ScatterRangeBarSeries visual appearance__
 
 To bind the series to a collection of business objects, use its `ItemsSource` property. The series will create a new `ScatterRangeDataPoint` for each data item in the collection. To map the data item properties to the data point, use the `HorizontalLowBinding`, `HorizontalHighBinding`, `VerticalLowBinding` and `VerticalHighBinding` properties of the series.
 
-#### __[C#] Defining the data item model__  
-{{region radchartview-series-barseries-scatterrangebarseries-1}}
+__Defining the data item model__  
+```C#
 	public class ScatterBarInfo
 	{
 		public double HorizontalLow { get; set; }
@@ -68,10 +68,10 @@ To bind the series to a collection of business objects, use its `ItemsSource` pr
 			this.VerticalHigh = verticalHigh;
 		}
 	}
-{{endregion}}		
+```		
 
-#### __[C#] Populating with data__
-{{region radchartview-series-barseries-scatterrangebarseries-2}}
+__Populating with data__
+```C#
 	public MyUserControl() 
 	{ 
 		InitializeComponent();  
@@ -84,17 +84,17 @@ To bind the series to a collection of business objects, use its `ItemsSource` pr
 		source.Add(new ScatterBarInfo(8, 11, 7, 11));
 		this.scatterRangeBarSeries.ItemsSource = source; 
 	} 
-{{endregion}}
+```
 
-#### __[XAML] Specifying ScatterRangeBarSeries in XAML and setting its binding properties__
-{{region radchartview-series-barseries-scatterrangebarseries-3}}
+__Specifying ScatterRangeBarSeries in XAML and setting its binding properties__
+```XAML
 	<telerik:ScatterRangeBarSeries x:Name="scatterRangeBarSeries" 
 				   HorizontalLowBinding="HorizontalLow" 
                                    HorizontalHighBinding="HorizontalHigh"
                                    VerticalLowBinding="VerticalLow"
                                    VerticalHighBinding="VerticalHigh"
 				   ItemsSource="{Binding}" />
-{{endregion}}
+```
 	
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

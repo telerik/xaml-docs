@@ -50,13 +50,13 @@ The effects in __RadImageEditor__ that are implemented using pixel shaders enabl
 
 To execute a tool and display its UI, call the `ExecuteCommand` method of RadImageEditor with an instance of the corresponding tool as parameter. A tool can be excecuted also by using the [ExecuteTool command]({%slug radimageeditor-features-commands-and-tools%}).
 
-#### __[C#] Example 1: Executing a tool in code__
-{{region radimageeditor-features-tools-0}}
+__Example 1: Executing a tool in code__
+```C#
 	this.radImageEditor.ExecuteTool(new BlurTool());
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Executing a tool using the ExecuteTool command__
-{{region radimageeditor-features-tools-1}}
+__Example 2: Executing a tool using the ExecuteTool command__
+```XAML
 	 <Grid>
         <telerik:RadImageEditor x:Name="radImageEditor" />
         <telerik:RadButton Content="Blur Tool"  
@@ -67,7 +67,7 @@ To execute a tool and display its UI, call the `ExecuteCommand` method of RadIma
             </telerik:RadButton.CommandParameter>
         </telerik:RadButton>
     </Grid>
-{{endregion}}
+```
 
 All tools are located in the Telerik.Windows.Media.Imaging.Tools namespace and can be created in XAML. `xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"`
 

@@ -35,8 +35,8 @@ To prevent the error from being raised, you can define the value as a resource a
 
 The following example showcases this approach:
 
-#### __[XAML] Defining the Guid value as a resource__
-{{region kb-notifyicon-design-error-guiditem-property-0}}
+__Defining the Guid value as a resource__
+```XAML
     <Grid>
         <Grid.Resources>
             <local:StringToGuidConverter x:Key="StringToGuidConverter"/>
@@ -44,10 +44,10 @@ The following example showcases this approach:
         </Grid.Resources>
         <telerik:RadNotifyIcon GuidItem="{Binding Source={StaticResource MyGuidString}, Converter={StaticResource StringToGuidConverter}}"/>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Implementing the converter__
-{{region kb-notifyicon-design-error-guiditem-property-1}}
+__Implementing the converter__
+```C#
     public class StringToGuidConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -60,4 +60,4 @@ The following example showcases this approach:
             throw new NotImplementedException();
         }
     }
-{{endregion}}
+```

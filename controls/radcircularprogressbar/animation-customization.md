@@ -14,8 +14,8 @@ The indeterminate state animation of `RadCircularProgressBar` is represented by 
 
 >important The `TargetElementName` property has to be set to __PART\_IndicatorPath__. `PropertyName` property has to be equal to __(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)__.
 
-#### __[XAML] Setting a custom RadDoubleAnimation__
-{{region radcircularprogressbar-animation-customization-0}}
+__Setting a custom RadDoubleAnimation__
+```XAML
     <telerik:RadCircularProgressBar Name="circularProgressBar" 
                                     IsIndeterminate="True"
                                     IndeterminateIndicatorRatio="0.25">
@@ -34,7 +34,7 @@ The indeterminate state animation of `RadCircularProgressBar` is represented by 
             </telerik:AnimationSelector>
         </telerik:AnimationManager.AnimationSelector>
     </telerik:RadCircularProgressBar>
-{{endregion}}
+```
 
 ![RadCircularProgressBar with custom animation](images/radcircularprogressbar-animation-customization-0.gif)
 
@@ -44,8 +44,8 @@ The `RadDoubleAnimation` class supports applying animation easing. To do so, set
 
 The following code snippet shows the above example with a custom `BounceEase` instance:
 
-#### __[XAML] Applying a BounceEase animation easing__
-{{region radcircularprogressbar-animation-customization-1}}
+__Applying a BounceEase animation easing__
+```XAML
     <telerik:RadCircularProgressBar Name="circularProgressBar" 
                                     IsIndeterminate="True"
                                     IndeterminateIndicatorRatio="0.25">
@@ -67,7 +67,7 @@ The following code snippet shows the above example with a custom `BounceEase` in
             </telerik:AnimationSelector>
         </telerik:AnimationManager.AnimationSelector>
     </telerik:RadCircularProgressBar>
-{{endregion}}
+```
 
 ![RadCircularProgressBar with animation easing](images/radcircularprogressbar-animation-customization-1.gif)
 

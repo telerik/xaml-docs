@@ -18,22 +18,22 @@ It is strongly recommended to __avoid setting properties of the containers direc
 
 The following example illustrates what should be avoided:
 
-#### __[C#] Setting properties of GridViewRow directly (not recommended when virtualization is enabled)__
-{{region common-ui-virtualization-0}}
+__Setting properties of GridViewRow directly (not recommended when virtualization is enabled)__
+```C#
 	gridViewRowInstance.DetailsVisibility = Visibility.Visible;
 	gridViewRowInstance.Background = Brushes.Green;
-{{endregion}}
+```
 
-#### __[C#] Setting properties of RadTreeViewItem directly (not recommended when virtualization is enabled)__
-{{region common-ui-virtualization-1}}
+__Setting properties of RadTreeViewItem directly (not recommended when virtualization is enabled)__
+```C#
 	radTreeViewItemInstance.Background = Brushes.Green;
 	radTreeViewItemInstance.Opacity = 0.5;
-{{endregion}}
+```
 
 Instead of setting the properties directly, you can use data bindings via the corresponding style properties. The data binding should point to the underlying item model. The following example shows how to do this with the `GridViewRow` and `RadTreeViewItem` shown above:
 
-#### __[XAML] Binding properties of GridViewRow via RowStyle__
-{{region common-ui-virtualization-2}}
+__Binding properties of GridViewRow via RowStyle__
+```XAML
 	<telerik:RadGridView.RowStyle>
 		<!-- in case you use NoXaml dlls, you should also set the following attribute to the Style object -->
 		<!-- BasedOn="{StaticResource GridViewRowStyle}" -->
@@ -42,10 +42,10 @@ Instead of setting the properties directly, you can use data bindings via the co
 			<Setter Property="Background" Value="{Binding MyBackgroundProperty}" />
 		</Style>
 	</telerik:RadGridView.RowStyle>
-{{endregion}}
+```
 
-#### __[XAML] Binding properties of RadTreeViewItem via the ItemContainerStyle__
-{{region common-ui-virtualization-3}}
+__Binding properties of RadTreeViewItem via the ItemContainerStyle__
+```XAML
 	<telerik:RadTreeView.ItemContainerStyle>
 		<!-- in case you use NoXaml dlls, you should also set the following attribute to the Style object -->
 		<!-- BasedOn="{StaticResource RadTreeViewItemStyle}" -->
@@ -54,14 +54,14 @@ Instead of setting the properties directly, you can use data bindings via the co
 			<Setter Property="Opacity" Value="{Binding MyOpacityProperty}" />
 		</Style>
 	</telerik:RadTreeView.ItemContainerStyle>
-{{endregion}}
+```
 
 To make changes to the corresponding container, you can update the data-bound properties of its underlying data item.
 
 In order for the UI virtualization to work correctly, the virtualizing panel should be aware of the size of its parent items control. This means that __the items control should not be hosted in panels that measure its children with `double.PositiveInfinity`__ (as much space as the children need). Examples of such panels include `StackPanel` and a `RowDefinition`/`ColumnDefinitions` of a `Grid` with its size (`Height`/`Width`) set to `Auto`. __Panels that are good for the virtualization__ are such that measure their children with the available size. For example, a `Grid` with `RowDefinition`/`ColumnDefinitions` which size is set to star-size or to a fixed value, or any other panel that uses the available size. 
 
-#### __[XAML] The infinity measuring panels will disable the UI virtualization unless you set a fixed size to the virtualizing control__
-{{region common-ui-virtualization-4}}	
+__The infinity measuring panels will disable the UI virtualization unless you set a fixed size to the virtualizing control__
+```XAML	
 	<StackPanel>	
 		<telerik:RadGridView />
 	</StackPanel>
@@ -76,10 +76,10 @@ In order for the UI virtualization to work correctly, the virtualizing panel sho
 	
 	<!-- In case the StackPanel or similar panels usage is necessary, you can re-enable the UI virtualization by setting a fixed size to the virtualized control -->
 	<!-- Example: <telerik:RadGridView Height="500" /> -->
-{{endregion}}
+```
 
-#### __[XAML] Host the virtualized controls in panels that measure its children with the available size in order for the virtualization to work__
-{{region common-ui-virtualization-5}}
+__Host the virtualized controls in panels that measure its children with the available size in order for the virtualization to work__
+```XAML
 	<Grid>
 		<telerik:RadGridView />
 	</Grid>
@@ -91,7 +91,7 @@ In order for the UI virtualization to work correctly, the virtualizing panel sho
 		
 		<telerik:RadGridView Grid.Row="0" />
 	</Grid>
-{{endregion}}
+```
 
 The UI virtualization feature is created with a special [Panel](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-a-custom-panel-element?view=netframeworkdesktop-4.8) implementation. In most controls this panel is assined via the `ItemsPanel` property of the control. Replacing the `ItemsPanel` setting will disable the virtualization.
 

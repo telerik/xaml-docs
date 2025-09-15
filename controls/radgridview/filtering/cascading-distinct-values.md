@@ -19,20 +19,20 @@ Here is a small example:
 
 #### __C#__
 
-{{region cs-gridview-filtering-cascading-distinct-values_0}}
+```C#
 	private void radGridView_DistinctValuesLoading(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
 	{
 	    e.ItemsSource = ((RadGridView)sender).GetDistinctValues(e.Column, false);
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-filtering-cascading-distinct-values_1}}
+```VB.NET
 	Private Sub radGridView_DistinctValuesLoading(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs)
 	    e.ItemsSource = DirectCast(sender, RadGridView).GetDistinctValues(e.Column, False)
 	End Sub
-{{endregion}}
+```
 
 Now the listbox in the filtering control will be populated with all the distinct items for the filtered column. 
 

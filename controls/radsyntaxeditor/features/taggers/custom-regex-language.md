@@ -15,8 +15,8 @@ In this article you will learn how to setup a custom tagger which handles the te
 
 We will first define the types of words the tagger will recognize.
 
-#### __[C#] Example 1: Recognized JSON types__
-{{region cs-radsyntaxeditor-features-custom-regex-language-1}}
+__Example 1: Recognized JSON types__
+```C#
     public static class JsonTypes
     {
         static JsonTypes()
@@ -51,14 +51,14 @@ We will first define the types of words the tagger will recognize.
             private set;
         }
     }
-{{endregion}}
+```
 
 As you can observe, the custom tagger we will define will recognize the **keys** of the JSON objects, **numbers**, **strings** and the **true**, **false** and **null** keywords.
 
 Let's us now define the actual tagger class which will be responsible for classifying the words of the opened document.
 
-#### __[C#] Example 2: The custom tagger__
-{{region cs-radsyntaxeditor-features-custom-regex-language-2}}
+__Example 2: The custom tagger__
+```C#
     public class JsonTagger : TaggerBase<ClassificationTag>
     {
         public JsonTagger(ITextDocumentEditor editor)
@@ -150,7 +150,7 @@ Let's us now define the actual tagger class which will be responsible for classi
             return null;
         }
     }
-{{endregion}}
+```
 
 The most important piece of code in **Example 2** is the **GetTags** method. In it, we iterate the collection of spans passed by the RadSyntaxEditor control and check whether each span contains a match with one of the regular expressions defined in the **PrepareRegexString** method. If there are any matches, we check the group of that match and based on it we create the appropriate tag span with the respective **ClassificationTag**.
 
@@ -158,8 +158,8 @@ Generally speaking, the same approach can be used for any language by creating t
 
 Finally, we can register the custom tagger in RadSyntaxEditor's **TaggersRegistry** just as we would with any other tagger. We also add custom **TextFormatDefinitions** with specific foregrounds for the **Key**, **StringLiteral**, **Number** and the **TrueFalseNull** classification types which we created in **Example 1**. In addition, we can create a **BracketFoldingTagger** to handle the folding regions.
 
-#### __[C#] Example 3: Registering the custom tagger__
-{{region cs-radsyntaxeditor-features-custom-regex-language-3}}
+__Example 3: Registering the custom tagger__
+```C#
     JsonTagger jsonTagger = new JsonTagger(this.syntaxEditor);
     this.syntaxEditor.TaggersRegistry.RegisterTagger(jsonTagger);
 
@@ -177,7 +177,7 @@ Finally, we can register the custom tagger in RadSyntaxEditor's **TaggersRegistr
             
     this.foldingTagger = new BracketFoldingTagger(this.syntaxEditor);
     this.syntaxEditor.TaggersRegistry.RegisterTagger(this.foldingTagger);
-{{endregion}}
+```
 
 Upon loading a JSON object in the editor you will observe a result similar to the one illustrated in **Figure 1**.
 

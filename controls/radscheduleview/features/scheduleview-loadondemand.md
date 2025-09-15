@@ -22,9 +22,9 @@ There are two possible approaches to accomplish this:
 
 To accomplish this approach, you only need to handle the VisibleRangeChanged and create a helper method to get the appointments for a particular **DateSpan**. Please note that you need to start with an initial collection of appointments.
 
-#### __[C#] Example 1: Handling the VisibleRangeChanged event__
+__Example 1: Handling the VisibleRangeChanged event__
 
-{{region cs-scheduleview-features-loadondemand_1}}
+```C#
 	private void ScheduleView_Loaded(object sender, RoutedEventArgs e)
 	{
 		this.scheduleView.AppointmentsSource = this.GenerateAppointmentsForRange(new DateSpan(DateTime.Now, DateTime.Now.AddDays(2)));
@@ -53,11 +53,8 @@ To accomplish this approach, you only need to handle the VisibleRangeChanged and
 
 		return newSource;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Handling the VisibleRangeChanged event__
-
-{{region vb-scheduleview-features-loadondemand_1}}
+```
+```VB.NET
 	Private Sub ScheduleView_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Me.scheduleView.AppointmentsSource = Me.GenerateAppointmentsForRange(New DateSpan(DateTime.Now, DateTime.Now.AddDays(2)))
 		Me.scheduleView.VisibleRangeChanged += ScheduleView_VisibleRangeChanged
@@ -82,7 +79,7 @@ To accomplish this approach, you only need to handle the VisibleRangeChanged and
 
 		Return newSource
 	End Function
-{{endregion}}
+```
 
 ## Using the VisibleRangeChangedCommand
 
@@ -90,9 +87,9 @@ Alternatively, if you want to follow the MVVM pattern, you can create an appropr
 
 For example, you can define your viewmodel as shown in **Example 2**.
 
-#### __[C#] Example 2: The ViewModel class__
+__Example 2: The ViewModel class__
 
-{{region cs-scheduleview-features-loadondemand_2}}
+```C#
 	public class ViewModel : ViewModelBase
 	{
 		private ICommand visibleRangeChanged;
@@ -156,11 +153,8 @@ For example, you can define your viewmodel as shown in **Example 2**.
 			this.Appointments = newSource;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: The ViewModel class__
-
-{{region vb-scheduleview-features-loadondemand_2}}
+```
+```VB.NET
 	Public Class ViewModel
 		Inherits ViewModelBase
 
@@ -214,20 +208,20 @@ For example, you can define your viewmodel as shown in **Example 2**.
 			Me.Appointments = newSource
 		End Sub
 	End Class
-{{endregion}}
+```
 
 You can now bind the __VisibleRangeChangedCommand__ and __VisibleRangeChangedCommandParameter__ properties as demonstrated in **Example 3**.
 
-#### __[XAML] Example 3: Binding the VisibleRangeChangedCommand and VisibleRangeChangedCommandParameter properties__
+__Example 3: Binding the VisibleRangeChangedCommand and VisibleRangeChangedCommandParameter properties__
 
-{{region xaml-scheduleview-features-loadondemand_3}}
+```XAML
 	<scheduleView:RadScheduleView x:Name="scheduleView"
 								AppointmentsSource="{Binding Appointments}" 
 								VisibleRangeChangedCommand="{Binding VisibleRangeChanged}"
 								VisibleRangeChangedCommandParameter="{Binding  VisibleRange, RelativeSource={RelativeSource Self}}">
 	...
 	</scheduleView:RadScheduleView>
-{{endregion}}
+```
 
 ## See Also
 

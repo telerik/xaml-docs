@@ -18,15 +18,15 @@ This article shows how to customize the timeline items and keep their visual sta
 
 This section shows how to set up a very basic model that can be used to populate the `RadTimeline` control's `ItemsSource`.
 
-#### __[C#] Example 1: Item model definition__
-{{region radtimeline-custom-items-selection-mouseover-visual-states-0}}
+__Example 1: Item model definition__
+```C#
 	public class ItemModel
 	{
 		public DateTime Start { get; set; }
 		public TimeSpan Duration { get; set; }
 		public string Title { get; set; }
 	}
-{{endregion}}
+```
 
 The `Start` and `Duration` properties define the length of the item in the timeline and `Title` holds text information about the item.
 
@@ -34,8 +34,8 @@ The `Start` and `Duration` properties define the length of the item in the timel
 
 This section shows how to populate a collection of `ItemModel` objects and assign it as the source of the `RadTimeline` control. This is done via the `ItemsSource` property.
 
-#### __[C#] Example 2: Setting up the data__
-{{region radtimeline-custom-items-selection-mouseover-visual-states-1}}
+__Example 2: Setting up the data__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -47,14 +47,14 @@ This section shows how to populate a collection of `ItemModel` objects and assig
 		source.Add(new ItemModel() { Title = "Instant Item", Start = startDate.AddDays(23) });
 		this.timeline.ItemsSource = source;
 	}
-{{endregion}}
+```
 
 ## Modifying the Item Template
 
 This section shows how to create a custom item template and apply it to the control using the `TimelineItemTemplate` property. Then you can add triggers to animate the background of the custom element when the mouse is over and when the item is selected.
 
-#### __[C#] Example 3: Defining timeline control and an item template__
-{{region radtimeline-custom-items-selection-mouseover-visual-states-2}}
+__Example 3: Defining timeline control and an item template__
+```C#
 	<telerik:RadTimeline x:Name="timeline"                             
 						 IsSelectionEnabled="True"
 						 StartPath="Start"
@@ -84,7 +84,7 @@ This section shows how to create a custom item template and apply it to the cont
                 </DataTemplate>
             </telerik:RadTimeline.TimelineItemTemplate>            
         </telerik:RadTimeline>
-{{endregion}}
+```
 
 This example uses the `Triggers` collection of the `DataTemplate` in order to animate the background of the element in the template.
 
@@ -92,8 +92,8 @@ This example uses the `Triggers` collection of the `DataTemplate` in order to an
 
 This section shows how to create a custom instant item template and apply it to the control using the `TimelineInstantItemTemplate` property. Then you can add triggers to animate the background of the custom element when the mouse is over and when the item is selected.
 
-#### __[C#] Example 4: Defining timeline control and an instant item template__
-{{region radtimeline-custom-items-selection-mouseover-visual-states-3}}
+__Example 4: Defining timeline control and an instant item template__
+```C#
 	<telerik:RadTimeline x:Name="timeline"                             
 						 IsSelectionEnabled="True"
 						 StartPath="Start"
@@ -121,7 +121,7 @@ This section shows how to create a custom instant item template and apply it to 
                 </DataTemplate>
             </telerik:RadTimeline.TimelineInstantItemTemplate>            
         </telerik:RadTimeline>
-{{endregion}}
+```
 
 This example uses the `Triggers` collection of the `DataTemplate` in order to animate the elements in the template.
 

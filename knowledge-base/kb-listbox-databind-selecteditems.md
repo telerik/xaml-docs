@@ -23,8 +23,8 @@ How to data bind the `SelectedItems` of `RadListBox` to a collection property in
 
 This can be done via the [ListBoxSelectedItemsBehavior.SelectedItemsSource]({%slug radlistbox-features-selecteditemssource%}) attached property.
 
-#### __[C#] Defining the view model__
-{{region kb-listbox-databind-selecteditems-0}}
+__Defining the view model__
+```C#
 	public class MainViewModel
 	{
 		public MainViewModel()
@@ -38,12 +38,12 @@ This can be done via the [ListBoxSelectedItemsBehavior.SelectedItemsSource]({%sl
 		public ObservableCollection<MyItemType> Items { get; set; }
 		public ObservableCollection<MyItemType> SelectedItems { get; set; }  
 	}
-{{endregion}}
+```
 
-#### __[XAML] Setting the SelectedItemsSource property__
-{{region kb-listbox-databind-selecteditems-1}}
+__Setting the SelectedItemsSource property__
+```XAML
 	<telerik:RadListBox ItemsSource="{Binding Items}"
 						telerik:ListBoxSelectedItemsBehavior.SelectedItemsSource="{Binding SelectedItems}"
 						SelectionMode="Multiple" />
-{{endregion}}
+```
 

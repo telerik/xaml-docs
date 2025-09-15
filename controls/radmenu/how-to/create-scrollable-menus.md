@@ -26,7 +26,7 @@ Here's a simple code that shows how to use the __DropDownHeight__ property:
 
 #### __XAML__
 
-{{region xaml-radmenu-how-to-create-scrollable-menus_0}}
+```XAML
 	<telerik:RadMenu x:Name="Menu">
 	    <telerik:RadMenuItem Header="File" DropDownHeight="200">
 	        <telerik:RadMenuItem Header="Item 1" DropDownHeight="150">
@@ -38,7 +38,7 @@ Here's a simple code that shows how to use the __DropDownHeight__ property:
 	        <!--Define all items -->
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 ## Scrolling in RadMenuGroupItem      
 
@@ -46,7 +46,7 @@ If you are using __RadMenuGroupItem__ you can control the scrolling inside via S
 
 #### __XAML__
 
-{{region xaml-radmenu-how-to-create-scrollable-menus_1}}
+```XAML
 	<telerik:RadMenu>
 	    <telerik:RadMenuItem Header="Colors">
 	        <telerik:RadMenuGroupItem Height="100" Width="150" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible">
@@ -54,7 +54,7 @@ If you are using __RadMenuGroupItem__ you can control the scrolling inside via S
 	        </telerik:RadMenuGroupItem>
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 ![Rad Menu How to Create Scrollable Menus 03](images/RadMenu_How_to_Create_Scrollable_Menus_03.jpg)
 

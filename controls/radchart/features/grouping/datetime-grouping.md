@@ -36,7 +36,7 @@ In order to use properly these descriptors you just have to set the appropriate 
 
 #### __XAML__
 
-{{region xaml-radchart-features-datetime-grouping_0}}
+```XAML
 	<telerik:RadChart x:Name="radPieChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -57,6 +57,6 @@ In order to use properly these descriptors you just have to set the appropriate 
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_DateTimeGrouping_01.png)

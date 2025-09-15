@@ -31,9 +31,9 @@ There are two ways to reference the needed xaml files:
 	
 	Then merge the xaml files in the App.xaml as shown in __Example 1__:
 
-	#### __[XAML] Example 1: Merging the .xaml files__
+	__Example 1: Merging the .xaml files__
 
-	{{region xaml-radradialmenu-styles-and-templates-setting-theme_0}}
+	```XAML
 		<Application.Resources>
 		    <ResourceDictionary>
 		        <ResourceDictionary.MergedDictionaries>
@@ -42,7 +42,7 @@ There are two ways to reference the needed xaml files:
 		        </ResourceDictionary.MergedDictionaries>
 		    </ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```
 
 * Copy the xaml files to a folder in the project: Create a Theme folder and copy the required files from Themes.Implicit/../VisualStudio2013/../Themes/ folder located in the installation folder of UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}:
 
@@ -51,9 +51,9 @@ There are two ways to reference the needed xaml files:
 
 	__Example 2__ shows how to merge the copied .xaml files.            
 
-	#### __[XAML] Example 2: Merging the .xaml files__
+	__Example 2: Merging the .xaml files__
 
-	{{region xaml-radradialmenu-styles-and-templates-setting-theme_1}}
+	```XAML
 		<Application.Resources>
 		    <ResourceDictionary>
 		        <ResourceDictionary.MergedDictionaries>
@@ -62,7 +62,7 @@ There are two ways to reference the needed xaml files:
 		        </ResourceDictionary.MergedDictionaries>
 		    </ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```
 
 Either way you choose, the end result will be the following:
 

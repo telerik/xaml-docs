@@ -14,9 +14,9 @@ This article demonstrates how to bind the RadTabbedWindow control to a collectio
 
 For the purposes of this example the control is bound to a collection of **Tab** objects. Please note that the class inherits from **ViewModelBase** which is the Telerik implementation of the **INotifyPropertyChanged** interface.
 
-#### __[C#] Example 1: The Tab class__
+__Example 1: The Tab class__
 
-{{region cs-radtabbedwindow-data-binding_1}}
+```C#
     public class Tab : ViewModelBase
     {
         private string header;
@@ -48,13 +48,13 @@ For the purposes of this example the control is bound to a collection of **Tab**
             }
         }
     }
-{{endregion}}
+```
 
 The next step is to create an __ObservableCollection__ of Tab objects in your viewmodel.
 
-#### __[C#] Example 2: Create an ObservableCollection in the viewmodel__
+__Example 2: Create an ObservableCollection in the viewmodel__
 
-{{region cs-gridview-configuring-the-databindings_2}}    
+```C#    
 	public class TabbedWindowViewModel : ViewModelBase
     {
         private ObservableCollection<Tab> tabs;
@@ -75,13 +75,13 @@ The next step is to create an __ObservableCollection__ of Tab objects in your vi
             }
         }
     }
-{{endregion}}
+```
 
 All that's left is to bind this collection to the RadTabbedWindow control. You also need to define the **DisplayMemberPath** and **ContentTemplate** properties so that the tabs appear as expected.
 
-#### __[XAML] Example 3: Bind the ItemsSource property__
+__Example 3: Bind the ItemsSource property__
 
-{{region xaml-gridview-configuring-the-databindings_3}}
+```XAML
 	<telerik:RadTabbedWindow x:Class="DataBinding.TabbedWindow"
                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -98,7 +98,7 @@ All that's left is to bind this collection to the RadTabbedWindow control. You a
             </DataTemplate>
         </telerik:RadTabbedWindow.ContentTemplate>
     </telerik:RadTabbedWindow>
-{{endregion}}
+```
 
 >important As of **R2 2019 SP1** the control's **Items** property (populated when setting the control's **ItemsSource**) is of type **IList**. Prior to this version of the controls, it was of type **ObservableCollection<RadTabitem>**.
 

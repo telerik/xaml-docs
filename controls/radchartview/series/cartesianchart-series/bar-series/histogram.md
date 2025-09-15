@@ -14,8 +14,8 @@ The histogram visualization can be created with the ScatterRangeBarSeries.
 
 The ability of the `ScatterRangeBarSeries` to render bars sized on both axis directions - horizontal and vertical - allows you to adjust a histogram visualization. The following example shows how to define a basic histogram chart. 
 
-#### __[XAML] Creating histogram with ScatterRangeBarSeries__
-{{region radchartview-series-barseries-histogram-0}}
+__Creating histogram with ScatterRangeBarSeries__
+```XAML
 	<telerik:RadCartesianChart Palette="Green">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:LinearAxis MajorStep="40" Maximum="240" />
@@ -41,7 +41,7 @@ The ability of the `ScatterRangeBarSeries` to render bars sized on both axis dir
 			</telerik:ScatterRangeBarSeries.DataPoints>
 		</telerik:ScatterRangeBarSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 __Histogram with ScatterRangeBarSeries manually adjusted data__
 
@@ -57,8 +57,8 @@ By default, the source automatically selects the best interval between the bars,
 
 The `ChartHistogramSource` can work with one directional data (a list of `double` values), where you can assign it to the `ItemsSource` property of the `ChartHistogramSource`. The following example shows how to prepare the data and setup the chart.
 
-#### __[C#] Preparing a collection of numbers__
-{{region radchartview-series-barseries-histogram-1}}
+__Preparing a collection of numbers__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent();
@@ -71,10 +71,10 @@ The `ChartHistogramSource` can work with one directional data (a list of `double
 		}
 		this.histogramSource.ItemsSource = source;
 	}
-{{endregion}}
+```
 
-#### __[XAML] Creating histogram with ScatterRangeBarSeries and ChartHistogramSource using collection of numbers__
-{{region radchartview-series-barseries-histogram-2}}
+__Creating histogram with ScatterRangeBarSeries and ChartHistogramSource using collection of numbers__
+```XAML
 	<Grid>
 		<telerik:ChartHistogramSource x:Name="histogramSource"/>
 
@@ -92,7 +92,7 @@ The `ChartHistogramSource` can work with one directional data (a list of `double
 			<telerik:ScatterRangeBarSeries ItemsSource="{Binding ElementName=histogramSource}"/>
 		</telerik:RadCartesianChart>
 	</Grid>
-{{endregion}}
+```
 
 The aggregate function used for the bars in this scenario is `Count`. This is the only supported function for this scenario.
 
@@ -104,17 +104,17 @@ __Histogram with ChartHistogramSource and one dimensional data__
 
 The `ChartHistogramSource` can work with two dimensional data, where you can provide a collection of complex objects to the `ItemsSource`. In that case, the `IntervalValueBinding` and `ValueBinding` properties should be set as well. This is needed in order to map the properties of the data item that should be used in the calculations of the data. The `IntervalValueBinding` points to the property that will be used to determine in which interval the data item will fall. Additionally, the values coming from this binding are used to auto-calculate the interval of the bars. The `ValueBinding` points to the property used to get the values of the data item that determine the bar's height.
 
-#### __[C#] Creating the data model__
-{{region radchartview-series-barseries-histogram-3}}
+__Creating the data model__
+```C#
 	public class HistogramPlotInfo
     	{
         	public double Interval { get; set; }
         	public double Value { get; set; }
     	}
-{{endregion}}
+```
 
-#### __[C#] Preparing a collection of custom objects__
-{{region radchartview-series-barseries-histogram-4}}
+__Preparing a collection of custom objects__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent();
@@ -131,10 +131,10 @@ The `ChartHistogramSource` can work with two dimensional data, where you can pro
 		}
 		this.histogramSource.ItemsSource = source;
 	}
-{{endregion}}
+```
 
-#### __[XAML] Creating histogram with ScatterRangeBarSeries and ChartHistogramSource using custom objects__
-{{region radchartview-series-barseries-histogram-5}}
+__Creating histogram with ScatterRangeBarSeries and ChartHistogramSource using custom objects__
+```XAML
 	<Grid>
         <telerik:ChartHistogramSource x:Name="histogramSource" ValueBinding="Value" IntervalValueBinding="Interval"/>
         
@@ -152,7 +152,7 @@ The `ChartHistogramSource` can work with two dimensional data, where you can pro
             <telerik:ScatterRangeBarSeries ItemsSource="{Binding ElementName=histogramSource}"/>
         </telerik:RadCartesianChart>
 	</Grid>
-{{endregion}}
+```
 
 The default [aggregаte function](#changing-the-aggregate-function) when using a collection of custom objects is `Sum`. 
 
@@ -164,14 +164,14 @@ __Histogram with ChartHistogramSource and collection of custom objects__
 
 The interval between the bars is calculated automatically. To set an explicit interval, use the `Interval` property of `ChartHistogramSource`.
 
-#### __[XAML] Setting custom interval__
-{{region radchartview-series-barseries-histogram-6}}	
+__Setting custom interval__
+```XAML	
 	<telerik:ChartHistogramSource x:Name="histogramSource" 
 				      ValueBinding="Value" 
 				      IntervalValueBinding="Interval"
 				      ItemsSource="{Binding Items}"
 				      Interval="2"/>
-{{endregion}}
+```
 
 __Histogram with manually defined interval__
 
@@ -181,14 +181,14 @@ __Histogram with manually defined interval__
 
 By default the bars start drawing from the value of 0. To change this, set the `OriginValue` property of `ChartHistogramSource`.
 
-#### __[XAML] Setting custom origin value__
-{{region radchartview-series-barseries-histogram-6}}	
+__Setting custom origin value__
+```XAML	
 	<telerik:ChartHistogramSource x:Name="histogramSource" 
 				      ValueBinding="Value" 
 				      IntervalValueBinding="Interval"
 				      ItemsSource="{Binding Items}"
 				      OriginValue="250"/>
-{{endregion}}
+```
 
 __Histogram with custom origin value__
 
@@ -198,14 +198,14 @@ __Histogram with custom origin value__
 
 By default, the bars will be arranged on the horizontal axis of the chart. This can be changed by setting the `Orientation` property of `ChartHistogramSource` to `Vertical`. This will arrange the bars on the vertical axis.
 
-#### __[XAML] Setting the histogram data orientation__
-{{region radchartview-series-barseries-histogram-7}}	
+__Setting the histogram data orientation__
+```XAML	
 	<telerik:ChartHistogramSource x:Name="histogramSource" 
 			     	      ValueBinding="Value" 
 				      IntervalValueBinding="Interval"
 				      ItemsSource="{Binding Items}"
 				      Orientation="Vertical"/>
-{{endregion}}
+```
 
 __Histogram with vertical orientation__
 
@@ -217,8 +217,8 @@ The `ChartHistogramSource` uses `Count` or `Sum` functions to aggregate the bar 
 
 The aggregate function can be changed by overridding the `GetValueAggregateFunction` method of `CustomChartHistogramSource`. The method should return an object of type `ChartAggregateFunction`. 
 
-#### __[C#] Replacing the aggregate function__
-{{region radchartview-series-barseries-histogram-8}}	
+__Replacing the aggregate function__
+```C#	
 	public class CustomChartHistogramSource : ChartHistogramSource
 	{
         	protected override ChartAggregateFunction GetValueAggregateFunction()
@@ -226,15 +226,15 @@ The aggregate function can be changed by overridding the `GetValueAggregateFunct
             		return new ChartCountFunction();
         	}
     }
-{{endregion}}
+```
 
-#### __[XAML] Using the custom histogram source__
-{{region radchartview-series-barseries-histogram-9}}	
+__Using the custom histogram source__
+```XAML	
 	<local:CustomChartHistogramSource x:Name="histogramSource" 
 					  ValueBinding="Value" 
 					  IntervalValueBinding="Interval"
 					  ItemsSource="{Binding Items}"/>
-{{endregion}}
+```
 
 __Histogram with count aggregate function__
 

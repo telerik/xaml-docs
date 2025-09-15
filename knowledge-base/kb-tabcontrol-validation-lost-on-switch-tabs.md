@@ -32,11 +32,11 @@ The red validation border is lost when switching tabs in RadTabControl or Layout
 
 To resolve this, wrap the content of the corresponding tab item (RadTabItem or LayoutControlTabGroupItem) in an AdornerDecorator element.
 
-#### __[XAML]__
-{{region tabcontrol-validation-lost-on-switch-tabs-0}}
+
+```XAML
 	<telerik:RadTabItem Header="Tab 1">
 	   <AdornerDecorator>
 			<TextBox />
 	   </AdornerDecorator>
 	</telerik:RadTabItem>
-{{endregion}}
+```

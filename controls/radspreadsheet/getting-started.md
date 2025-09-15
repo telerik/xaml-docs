@@ -67,10 +67,10 @@ For a bare-bone Spreadsheet control, you only need a declaration of the telerik 
 
 #### __XAML__
 
-{{region radspreadsheet-schemas_0}}
+```XAML
 
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-{{endregion}}
+```
 
 
 
@@ -78,11 +78,11 @@ For the UI that enables the full-featured use of the control, you should also de
 
 #### __XAML__
 
-{{region radspreadsheet-schemas_1}}
+```XAML
 
 	xmlns:spreadsheetControls="clr-namespace:Telerik.Windows.Controls.Spreadsheet.Controls;assembly=Telerik.Windows.Controls.Spreadsheet"
 	xmlns:spreadsheet="clr-namespace:Telerik.Windows.Controls.Spreadsheet;assembly=Telerik.Windows.Controls.Spreadsheet"
-	{{endregion}}
+	```
 
 
 Then, all that is left is to add the __Spreadsheet__ component to the page:
@@ -90,10 +90,10 @@ Then, all that is left is to add the __Spreadsheet__ component to the page:
 
 #### __XAML__
 
-{{region radspreadsheet-getting-started_2}}
+```XAML
 
 	<telerik:RadSpreadsheet x:Name="radSpreadsheet" />
-{{endregion}}
+```
 
 
 

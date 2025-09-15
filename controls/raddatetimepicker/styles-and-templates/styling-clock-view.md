@@ -22,9 +22,9 @@ To style the clock in your __RadDateTimePicker__ you can do the following:
 
 __Example 1__ demonstrates how the flow direction the __RadClock__ in the dropdown of the RadDateTimePicker can be switched:
 
-#### __[XAML] Example 1: RadDateTimePicker with ClockStyle__
+__Example 1: RadDateTimePicker with ClockStyle__
 
-{{region xaml-raddatetimepicker-styling-clock-view-0}}
+```XAML
 	<Window.Resources>
         <!-- If you are using the Xaml binaries, you do not have to set the BasedOn attribute-->
         
@@ -35,7 +35,7 @@ __Example 1__ demonstrates how the flow direction the __RadClock__ in the dropdo
     <Grid>
         <telerik:RadDateTimePicker VerticalAlignment="Center" HorizontalAlignment="Center"  ClockStyle="{StaticResource ClockStyle}" />
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadClock with RightToLeft FlowDirection](images/DateTimePicker_StylingTheClock.png)

@@ -34,68 +34,64 @@ You can find the required assemblies for each control from the suite in the {% i
 
 You can add __RadColorEditor__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadColorEditor in XAML__
-{{region radcoloreditor-getting-started_0}}
+__Example 1: Adding RadColorEditor in XAML__
+```XAML
 	<Grid>
 		<telerik:RadColorEditor x:Name="colorEditor" />
 	</Grid>
-{{endregion}}
+```
 
 ## Selection
 
 The __RadColorEditor__ is a control that displays a custom palette from which users can select a single color. The control exposes a __SelectedColor__ property, which is of type __Color__ and is used to store the selected color value.						
 
-#### __[XAML] Example 2: Setting the SelectedColor property__
-{{region radcoloreditor-getting-started_1}}
+__Example 2: Setting the SelectedColor property__
+```XAML
 	<telerik:RadColorEditor SelectedColor="Red" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the SelectedColor property in code behind__
-{{region radcoloreditor-getting-started_2}}
+__Example 2: Setting the SelectedColor property in code behind__
+```C#
 	RadColorEditor colorEditor = new RadColorEditor();
 	colorEditor.SelectedColor = Colors.Red;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the SelectedColor property in code behind__
-{{region radcoloreditor-getting-started_3}}
+```
+```VB.NET
 	Dim colorEditor As New RadColorEditor()
 	colorEditor.SelectedColor = Colors.Red
-{{endregion}}
+```
 
 Whenever a color is selected the __SelectedColorChanged__ event is raised:						
 
-#### __[XAML] Example 3: Subscribing to SelectedColorChanged event__
-{{region radcoloreditor-getting-started_4}}
+__Example 3: Subscribing to SelectedColorChanged event__
+```XAML
 	<telerik:RadColorEditor x:Name="colorEditor" SelectedColorChanged="colorEditor_SelectedColorChanged " />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Subscribing to SelectedColorChanged event in code behind__
-{{region radcoloreditor-getting-started_5}}
+__Example 4: Subscribing to SelectedColorChanged event in code behind__
+```C#
 	colorEditor.SelectedColorChanged += new EventHandler<ColorChangeEventArgs>(colorEditor_SelectedColorChanged);
 	
 	private void colorEditor1_SelectedColorChanged(object sender, ColorChangeEventArgs e)
 	{
 	   Color selectedColor = e.Color;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Subscribing to SelectedColorChanged event in code behind__
-{{region radcoloreditor-getting-started-6}}
+```
+```VB.NET
 	colorEditor.SelectedColorChanged += New EventHandler(Of ColorChangeEventArgs)(colorEditor_SelectedColorChanged)
 	
 	Private Sub colorEditor1_SelectedColorChanged(ByVal sender As Object, ByVal e As ColorChangeEventArgs)
 		Dim selectedColor As Color = e.Color
 	End Sub
-{{endregion}}
+```
 
 ## Set Color Settings Panel Width
 
 Since the R3 2021 SP1 release, RadColorEditor exposes the __ColorSettingsPanelWidth__ property for setting the width of the color settings panel area.
 
-#### __[XAML] Example 5: Setting the ColorSettingsPanelWidth property__
-{{region radcoloreditor-getting-started_7}}
+__Example 5: Setting the ColorSettingsPanelWidth property__
+```XAML
 	<telerik:RadColorEditor x:Name="colorEditor" ColorSettingsPanelWidth="450" />
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -114,8 +110,8 @@ To change the theme, you can follow the steps below:
 
 __Example 6__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 6: Merge the ResourceDictionaries__  
-{{region radcoloreditor-getting-started_8}}
+__Example 6: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -125,7 +121,7 @@ __Example 6__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

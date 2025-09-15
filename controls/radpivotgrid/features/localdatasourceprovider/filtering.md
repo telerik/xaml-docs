@@ -77,7 +77,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter_1}}
+```XAML
 	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
 	    <pivot:DateTimeGroupDescription.GroupFilter>
 	        <pivot:LabelGroupFilter>
@@ -87,11 +87,11 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	        </pivot:LabelGroupFilter>
 	    </pivot:DateTimeGroupDescription.GroupFilter>
 	</pivot:DateTimeGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter_1}}
+```C#
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.Step = DateTimeStep.Month;
@@ -101,11 +101,11 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	textCondition.Comparison = TextComparison.BeginsWith;
 	labelFilter.Condition = textCondition;
 	dateTimeGroupDescription.GroupFilter = labelFilter;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter_1}}
+```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"
 	dateTimeGroupDescription.Step = DateTimeStep.Month
@@ -115,13 +115,13 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	textCondition.Comparison = TextComparison.BeginsWith
 	labelFilter.Condition = textCondition
 	dateTimeGroupDescription.GroupFilter = labelFilter
-{{endregion}}
+```
 
 And here is how to apply ItemsFilterCondition:              
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter_4}}
+```XAML
 	<pivot:PropertyGroupDescription PropertyName="Name" >
 	    <pivot:PropertyGroupDescription.GroupFilter>
 	        <pivot:LabelGroupFilter>
@@ -143,11 +143,11 @@ And here is how to apply ItemsFilterCondition:
 	        </pivot:LabelGroupFilter>
 	    </pivot:PropertyGroupDescription.GroupFilter>
 	</pivot:PropertyGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter_4}}
+```C#
 	Telerik.Pivot.Core.PropertyGroupDescription propertyGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
 	propertyGroupDescription.PropertyName = "Name";
 	
@@ -167,13 +167,13 @@ And here is how to apply ItemsFilterCondition:
 	
 	labelFilter.Condition = itemsFilterCondition;
 	propertyGroupDescription.GroupFilter = labelFilter;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter_4}}
+```VB.NET
 	Dim propertyGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propertyGroupDescription.PropertyName = "Name"
 	
@@ -193,7 +193,7 @@ And here is how to apply ItemsFilterCondition:
 	
 	labelFilter.Condition = itemsFilterCondition
 	propertyGroupDescription.GroupFilter = labelFilter
-{{endregion}}
+```
 
 This way the only visible item will be Pencil as it is part of the SetCondition and also has "c" in its name which satisfies the text condition.
 
@@ -237,7 +237,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter_2}}
+```XAML
 	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
 	    <pivot:DateTimeGroupDescription.GroupFilter>
 	        <pivot:ValueGroupFilter AggregateIndex="0">
@@ -247,11 +247,11 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	        </pivot:ValueGroupFilter>
 	    </pivot:DateTimeGroupDescription.GroupFilter>
 	</pivot:DateTimeGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter_2}}
+```C#
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.Step = DateTimeStep.Month;
@@ -263,11 +263,11 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter.Condition = intervalCondition;
 	valueGroupFilter.AggregateIndex = 0;
 	dateTimeGroupDescription.GroupFilter = valueGroupFilter;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter_2}}
+```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"
 	dateTimeGroupDescription.Step = DateTimeStep.Month
@@ -279,7 +279,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter.Condition = intervalCondition
 	valueGroupFilter.AggregateIndex = 0
 	dateTimeGroupDescription.GroupFilter = valueGroupFilter
-{{endregion}}
+```
 
 ## Top 10 filter
 
@@ -307,17 +307,17 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter_3}}
+```XAML
 	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
 	    <pivot:DateTimeGroupDescription.GroupFilter>
 	        <pivot:GroupsCountFilter AggregateIndex="0" Count="4" Selection="Top" />
 	    </pivot:DateTimeGroupDescription.GroupFilter>
 	</pivot:DateTimeGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter_3}}
+```C#
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.Step = DateTimeStep.Month;
@@ -326,11 +326,11 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	countFilter.Selection = SortedListSelection.Top;
 	countFilter.AggregateIndex = 0;
 	dateTimeGroupDescription.GroupFilter = countFilter;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter_3}}
+```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"
 	dateTimeGroupDescription.Step = DateTimeStep.Month
@@ -339,7 +339,7 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	countFilter.Selection = SortedListSelection.Top
 	countFilter.AggregateIndex = 0
 	dateTimeGroupDescription.GroupFilter = countFilter
-{{endregion}}
+```
 
 ## Applying filter at runtime
 

@@ -29,8 +29,8 @@ Show or hide the RadRadialMenu control when it is used as a context menu for an 
 
 1. Create a property of type __bool__ inside your view model.
 
-#### __[C#] Creating a view model with a bool property__
-{{region kb-radialmenu-show-hide-mvvm-0}}
+__Creating a view model with a bool property__
+```C#
 	public class MainViewModel : ViewModelBase
 	{
 	    private bool shouldOpenRadialMenu;
@@ -41,10 +41,8 @@ Show or hide the RadRadialMenu control when it is used as a context menu for an 
 	        set { shouldOpenRadialMenu = value; this.OnPropertyChanged(nameof(this.ShouldOpenRadialMenu)); }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Creating a view model with a bool property__
-{{region kb-radialmenu-show-hide-mvvm-1}}
+```
+```VB.NET
 	Public Class MainViewModel
 	    Inherits ViewModelBase
 
@@ -60,12 +58,12 @@ Show or hide the RadRadialMenu control when it is used as a context menu for an 
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 2. Create an [attached property]({%slug common-mvvm-attached-behavior%}) that will be bound to the __bool__ property from the view model.
 
-#### __[C#] Creating an attached property__
-{{region kb-radialmenu-show-hide-mvvm-2}}
+__Creating an attached property__
+```C#
 	public class RadialMenuExtensions
 	{
 	    public static int GetShouldOpenRadialMenu(DependencyObject obj)
@@ -85,10 +83,8 @@ Show or hide the RadRadialMenu control when it is used as a context menu for an 
 	    {
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Creating an attached property__
-{{region kb-radialmenu-show-hide-mvvm-3}}
+```
+```VB.NET
 	Public Class RadialMenuExtensions
 	    Public Shared Function GetShouldOpenRadialMenu(ByVal obj As DependencyObject) As Integer
 	        Return CInt(obj.GetValue(ShouldOpenRadialMenuProperty))
@@ -103,12 +99,12 @@ Show or hide the RadRadialMenu control when it is used as a context menu for an 
 	    Private Shared Sub OnShouldOpenRadialMenuChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 3. Retrieve the RadRadialMenu instance that is set on the element as a context menu in the property callback method. To do so, use the `RadRadialMenu.GetRadialContextMenu` method. Depending on the value of the __bool__ property from the view model, execute the `RadRadialMenuCommands.Show` and `RadRadialMenuCommands.Hide` commands.
 
-#### __[C#] Showing/Hiding the RadRadialMenu in the property callback method__
-{{region kb-radialmenu-show-hide-mvvm-4}}
+__Showing/Hiding the RadRadialMenu in the property callback method__
+```C#
 	private static void OnShouldOpenRadialMenuChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 	{
 	    FrameworkElement frameworkElement = d as FrameworkElement;
@@ -132,10 +128,8 @@ Show or hide the RadRadialMenu control when it is used as a context menu for an 
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Showing/Hiding the RadRadialMenu in the property callback method__
-{{region kb-radialmenu-show-hide-mvvm-5}}
+```
+```VB.NET
 	Private Shared Sub OnShouldOpenRadialMenuChanged(ByVal d As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
 	    Dim frameworkElement As FrameworkElement = TryCast(d, FrameworkElement)
 
@@ -153,14 +147,14 @@ Show or hide the RadRadialMenu control when it is used as a context menu for an 
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 4. Set the attached property on the element that has the RadRadialMenu set as its context menu and bind it to the __bool__ property from the view model.
 
 The following example shows the RadRadialMenu control as a context menu for a TextBox element instance:
 
-#### __[XAML] Binding the attached property__
-{{region kb-radialmenu-show-hide-mvvm-6}}
+__Binding the attached property__
+```XAML
 	<Grid>
 	    <Grid.DataContext>
 	        <local:MainViewModel/>
@@ -175,4 +169,4 @@ The following example shows the RadRadialMenu control as a context menu for a Te
 	        </telerik:RadRadialMenu.RadialContextMenu>
 	    </TextBox>
 	</Grid>
-{{endregion}}
+```

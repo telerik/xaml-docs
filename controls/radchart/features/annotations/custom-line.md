@@ -34,7 +34,7 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 
 #### __XAML__
 
-{{region xaml-radchart-features-annotations-custom-line_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -55,13 +55,13 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-features-annotations-custom-line_1}}
+```C#
 	CustomLine customLine = new CustomLine();
 	customLine.Slope = 2.66;
 	customLine.YIntercept = -3.32;
@@ -72,13 +72,13 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 	customLine.Stroke = new SolidColorBrush(Colors.Red);
 	customLine.StrokeThickness = 2;
 	this.radChart.DefaultView.ChartArea.Annotations.Add(customLine);
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-features-annotations-custom-line_2}}
+```VB.NET
 	Dim _customLine As New CustomLine()
 	_customLine.Slope = 2.66
 	_customLine.YIntercept = -3.32
@@ -89,7 +89,7 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 	_customLine.Stroke = New SolidColorBrush(Colors.Red)
 	_customLine.StrokeThickness = 2
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(_customLine)
-{{endregion}}
+```
 
 
 
@@ -102,11 +102,11 @@ To make your custom line parallel to one of the two Axes you should set the *Slo
 
 #### __XAML__
 
-{{region xaml-radchart-features-annotations-custom-line_3}}
+```XAML
 	<telerik:ChartArea.Annotations>
 	    <telerik:CustomLine Stroke="Green" Slope="Infinity" XIntercept="2" MinY="100" MaxY="200" />
 	</telerik:ChartArea.Annotations>
-{{endregion}}
+```
 
 
 

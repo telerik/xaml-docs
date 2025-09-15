@@ -46,10 +46,10 @@ You can find the required assemblies for each control from the UI for WPF suite 
 
 For demonstration purposes, this tutorial will use the __RadCartesianChart__ component. It uses a Cartesian coordiante system to display different series and it is the most commonly used charting component. __Example 1__ demonstrates how to define the RadCartesianChart in XAML.  
 
-#### __[XAML] Example 1: Chart definition__
-{{region radchart-introduction_1}}
+__Example 1: Chart definition__
+```XAML
 	<telerik:RadCartesianChart></telerik:RadCartesianChart>
-{{endregion}}
+```
 
 > The `telerik` namespace points to the telerik schema. `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
@@ -62,8 +62,8 @@ The Cartesian coordinate system is constructed using horizontal and vertical axe
 
 This example will demonstrate a common scenario with a LinearAxis as the vertical axis of the chart and a CategoricalAxis as horizontal axis. __Example 2__ demonstrates how to define them in XAML.  
 
-#### __[XAML] Example 2: Chart axes definition__
-{{region radchart-introduction_2}}
+__Example 2: Chart axes definition__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -72,7 +72,7 @@ This example will demonstrate a common scenario with a LinearAxis as the vertica
 			<telerik:LinearAxis/>
 		</telerik:RadCartesianChart.VerticalAxis>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 In the cases where no series are defined in the definition of the charting components, a message will be displayed to prompt you to enter a series.
 
@@ -85,8 +85,8 @@ __RadChartView__ exposes a large variety of series that can be used in different
 
 To complete the task of this tutorial, you need to define series with data points that will be rendered inside the charting component. You can do this by manually populating the __Series__ collection of the __RadCartesianChart__ control.         
 
-#### __[XAML] Example 3: Sample BarSeries definition__
-{{region radchart-introduction_3}}
+__Example 3: Sample BarSeries definition__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -106,7 +106,7 @@ To complete the task of this tutorial, you need to define series with data point
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 This chart definition will be rendered on the screen as demonstrated in __Figure 3__.
 
@@ -115,8 +115,8 @@ This chart definition will be rendered on the screen as demonstrated in __Figure
 
 If you feel more confident working with code than with markup, you can achieve the same layout with the snippet from __Example 4__.
 
-#### __[C#] Example 4: Sample chart definition in code__
-{{region radchart-introduction_4}}
+__Example 4: Sample chart definition in code__
+```C#
 	RadCartesianChart chart = new RadCartesianChart();
 	CategoricalAxis catAxis = new CategoricalAxis();
 	LinearAxis lineAxis = new LinearAxis();
@@ -131,10 +131,8 @@ If you feel more confident working with code than with markup, you can achieve t
 	chart.Series.Add(barSeries);
 
 	this.LayoutRoot.Children.Add(chart);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Sample chart definition in code__
-{{region radchart-introduction_4vb}}
+```
+```VB.NET
 	Dim chart As New RadCartesianChart()
 	Dim catAxis As New CategoricalAxis()
 	Dim lineAxis As New LinearAxis()
@@ -149,23 +147,21 @@ If you feel more confident working with code than with markup, you can achieve t
 	chart.Series.Add(barSeries)
 
 	Me.LayoutRoot.Children.Add(chart)
-{{endregion}}
+```
 
 In order to use the chartview components in code, you will need to add the required *using* directives that point to the Telerik namespaces.
 
-#### __[C#] Example 5: Required usings for the chartview components__
-{{region radchart-introduction_5}}
+__Example 5: Required usings for the chartview components__
+```C#
 	using Telerik.Charting;
 	using Telerik.Windows.Controls;
 	using Telerik.Windows.Controls.ChartView;
-{{endregion}}
-
-#### __[VB.NET] Example 5: Required usings for the chartview components__
-{{region radchart-introduction_5vb}}
+```
+```VB.NET
 	Imports Telerik.Charting
 	Imports Telerik.Windows.Controls
 	Imports Telerik.Windows.Controls.ChartView
-{{endregion}}
+```
 
 ## Bind the Chart
 

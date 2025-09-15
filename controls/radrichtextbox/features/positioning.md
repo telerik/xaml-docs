@@ -26,29 +26,25 @@ You can manage the caret position for a specific `RadDocument` by either accessi
 
 This property enables you to manage the position of the caret inside the document and to obtain information about its location and the elements it currently resides at. Here is an example of how to use the CaretPosition property to get the current word.
 
-#### __[C#] Getting the word on the caret position__  
-{{region radrichtextbox-features-positioning-0}}
+__Getting the word on the caret position__  
+```C#
 	string currentSpanText = this.radRichTextBox.Document.CaretPosition.GetCurrentSpan().Text;
-{{endregion}}
-
-#### __[VB.NET] Getting the word on the caret position__  
-{{region radrichtextbox-features-positioning-1}}
+```
+```VB.NET
 	Dim currentSpanText As String = Me.radRichTextBox.Document.CaretPosition.GetCurrentSpan().Text
-{{endregion}}
+```
 
 ## CaretWidthScaleFactor property
 
 The `RadRichTextBox` control exposes the `CaretWidthScaleFactor` property, which will allow you to customize the width of the caret. 
 
-#### __[C#] Setting the CaretWidthScaleFactor property__
-{{region radrichtextbox-features-positioning-2}}
+__Setting the CaretWidthScaleFactor property__
+```C#
 	this.radRichTextBox.CaretWidthScaleFactor = 10;
-{{endregion}}
-
-#### __[VB.NET] Setting the CaretWidthScaleFactor property__
-{{region radrichtextbox-features-positioning-3}}
+```
+```VB.NET
 	Me.radRichTextBox.CaretWidthScaleFactor = 10
-{{endregion}}
+```
 
 ## DocumentPosition Class
 
@@ -56,17 +52,15 @@ An alternative of using the `CaretPosition` property is to create an instance of
 
 >When instantiated in such a way, the position will be at the start of the document, so the result will be the first word in the text. The position of the instance won't be affected by the UI. To change it, you have to use {% if site.site_name == 'Silverlight' %}[the API of the DocumentPosition class](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.documentposition){% endif %}{% if site.site_name == 'WPF' %}[the API of the DocumentPosition class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.documentposition){% endif %}.            
 
-#### __[C#] Getting the word on the caret using the DocumentPosition class__  
-{{region radrichtextbox-features-positioning-4}}
+__Getting the word on the caret using the DocumentPosition class__  
+```C#
 	DocumentPosition position = new DocumentPosition(this.radRichTextBox.Document);
 	string currentSpanText = position.GetCurrentSpan().Text;
-{{endregion}}
-
-#### __[VB.NET] Getting the word on the caret position using the DocumentPosition class__  
-{{region radrichtextbox-features-positioning-5}}
+```
+```VB.NET
 	Dim position As New DocumentPosition(Me.radRichTextBox.Document)
 	Dim currentSpanText As String = position.GetCurrentSpan().Text
-{{endregion}}
+```
 
 > To set selection range in RadRichTextBox, you can use the DocumentPosition class. You can read more about this in the [Selection]({%slug radrichtextbox-features-selection%}#programmatic-selection) help article.
 
@@ -111,44 +105,38 @@ In addition to the above-mentioned methods, DocumentPosition exposes also __GetC
 
 In the different implementations of the LayoutBox class (examples: ParagraphLayoutBox, SectionLayoutBox, etc.) there are also more specific properties that allow you to easily get the associated document element without casting it from the base DocumentElement class. For example, the GetCurrentParagraphBox() method returns an object of type ParagraphLayoutBox which has `AssociatedParagraph` property. And the GetCurrentSectionBox() returns SectionLayoutBox which has `AssociatedSection` property. This rule applies to all LayoutBox elements (also TableLayoutBox, SpanLayoutBox, etc.).
 
-#### __[C#] Getting the Paragraph on the caret position__  
-{{region radrichtextbox-features-positioning-6}}
+__Getting the Paragraph on the caret position__  
+```C#
 	DocumentPosition documentPosition = radRichTextBox.Document.CaretPosition;
 	Paragraph paragraph = documentPosition.GetCurrentParagraph();
 
-{{endregion}}
-
-#### __[VB.NET] Getting the Paragraph on the caret position__  
-{{region radrichtextbox-features-positioning-7}}
+```
+```VB.NET
 	Dim documentPosition As DocumentPosition = radRichTextBox.Document.CaretPosition
 	Dim paragraph As Paragraph = documentPosition.GetCurrentParagraph()
-{{endregion}}
+```
 
-#### __[C#] Getting the Inline on the caret position__  
-{{region radrichtextbox-features-positioning-8}}
+__Getting the Inline on the caret position__  
+```C#
 	DocumentPosition documentPosition = radRichTextBox.Document.CaretPosition;
 	Inline inline = documentPosition.GetCurrentInline();
-{{endregion}}
-
-#### __[VB.NET] Getting the Inline on the caret position__  
-{{region radrichtextbox-features-positioning-9}}
+```
+```VB.NET
 	Dim documentPosition As DocumentPosition = radRichTextBox.Document.CaretPosition
 	Dim inline As Inline = documentPosition.GetCurrentInline()
-{{endregion}}
+```
 
 To get the word on the document position, you can use the `GetCurrentWord()` method.
 
-#### __[C#] Getting the word on the caret position__  
-{{region radrichtextbox-features-positioning-10}}
+__Getting the word on the caret position__  
+```C#
 	DocumentPosition documentPosition = radRichTextBox.Document.CaretPosition;
 	string word = documentPosition.GetCurrentWord();	
-{{endregion}}
-
-#### __[VB.NET] Getting the word on the caret position__  
-{{region radrichtextbox-features-positioning-11}}
+```
+```VB.NET
 	Dim documentPosition As DocumentPosition = radRichTextBox.Document.CaretPosition
 	Dim word As String = documentPosition.GetCurrentWord()
-{{endregion}}
+```
 
 If the searched document element (paragraph, span, table, etc.) cannot be found on the caret position, the corresponding method will return `null`.
 
@@ -158,31 +146,27 @@ You can use the `ActiveDocumentPresenter` of RadRichTextBox to convert a screen 
 
 * `GetDocumentPositionFromViewPoint()`&mdash;The method accepts an argument of type `System.Windows.Point` and returns an instance of type DocumentPosition.
 
-	#### __[C#] Screen position to DocumentPosition conversion__  
-	{{region radrichtextbox-features-positioning-12}}
+	__Screen position to DocumentPosition conversion__  
+	```C#
 		Point position = GetMousePosition();
 		DocumentPosition documentPosition = radRichTextBox.ActiveEditorPresenter.GetDocumentPositionFromViewPoint(position);
-	{{endregion}}
-	
-	#### __[VB.NET] Screen position to DocumentPosition conversion__  
-	{{region radrichtextbox-features-positioning-13}}
+	```
+```VB.NET
 		Dim position As Point = GetMousePosition()
 		Dim documentPosition As DocumentPosition = radRichTextBox.ActiveEditorPresenter.GetDocumentPositionFromViewPoint(position)
-	{{endregion}}
+	```
 
 * `GetViewPointFromDocumentPosition()`&mdash;The method accepts an argument of type DocumentPosition and returns an instance of type `System.Windows.Point`.
 
-	#### __[C#] DocumentPosition to screen position conversion__  
-	{{region radrichtextbox-features-positioning-14}}
+	__DocumentPosition to screen position conversion__  
+	```C#
 		DocumentPosition documentPosition = radRichTextBox.Document.CaretPosition;
 		Point position = radRichTextBox.ActiveEditorPresenter.GetViewPointFromDocumentPosition(documentPosition);
-	{{endregion}}
-	
-	#### __[VB.NET] DocumentPosition to screen position conversion__  
-	{{region radrichtextbox-features-positioning-15}}
+	```
+```VB.NET
 		Dim documentPosition As DocumentPosition = radRichTextBox.Document.CaretPosition
 		Dim position As Point = radRichTextBox.ActiveEditorPresenter.GetViewPointFromDocumentPosition(documentPosition)
-	{{endregion}}
+	```
 
 ## Events
 
@@ -196,8 +180,8 @@ There are several events that you can use to track changes in the position.
 
 The following example shows how you can change the background of a Table object once the caret is positioned inside a Table.
 
-#### __[C#] Using DocumentPosition events__  
-{{region radrichtextbox-features-positioning-16}}
+__Using DocumentPosition events__  
+```C#
 	private void CaretPosition_LocationChanged(object sender, EventArgs e)
 	{
 	    if (this.radRichTextBox.Document.CaretPosition.IsPositionInsideTable)
@@ -206,17 +190,15 @@ The following example shows how you can change the background of a Table object 
 	        table.Background = Colors.Red;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Using DocumentPosition events__  
-{{region radrichtextbox-features-positioning-17}}
+```
+```VB.NET
 	Private Sub CaretPosition_LocationChanged(ByVal sender As Object, ByVal e As EventArgs)
 	    If Me.radRichTextBox.Document.CaretPosition.IsPositionInsideTable Then
 	        Dim table As Table = Me.radRichTextBox.Document.CaretPosition.GetCurrentTable()
 	        table.Background = Colors.Red
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also  
 * [DocumentPosition API Reference](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.documentposition)

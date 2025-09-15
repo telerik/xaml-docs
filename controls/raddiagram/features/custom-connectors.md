@@ -26,22 +26,20 @@ Besides these connectors you can define custom connectors or remove the existing
 
 Adding a custom connector can be done by simply adding a RadDiagramConnector to the Connectors collection of the shape:
 
-#### __[C#] Example 1: Adding a custom Connector__
-{{region cs-raddiagram-features-customconnectors-0}}
+__Example 1: Adding a custom Connector__
+```C#
     var shape = new RadDiagramShape();
     var connector = new RadDiagramConnector(){Offset = new Point(1, 0.67), Name = "CustomConnector1"};
     shape.Connectors.Add(connector);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Adding a custom Connector__
-{{region vb-raddiagram-features-customconnectors-1}}
+```
+```VB.NET
 	Dim shape = New RadDiagramShape()
 	Dim connector = New RadDiagramConnector() With { 
 		 .Offset = New Point(1, 0.67), 
 		 .Name = "CustomConnector1" 
 	}
 	shape.Connectors.Add(connector)
-{{endregion}}
+```
 
 >Please note that __setting the name of the connector is almost mandatory__ if you are going to use it later in your application.
 
@@ -67,8 +65,8 @@ So, in practice you can go outside the actual bounds of the  shape but some mode
 
 Now let's define some shapes and custom connectors and use them. First, we will create 6 shapes with the following template:		
 
-#### __[XAML] Example 2: Creating shapes__
-{{region xaml-raddiagram-features-customconnectors-2}}
+__Example 2: Creating shapes__
+```XAML
 	<telerik:RadDiagramShape x:Name="match1shape" 
 							 Geometry="{telerik:CommonShape ShapeType=EllipseShape}"
 							 Position="100 100">					
@@ -79,12 +77,12 @@ Now let's define some shapes and custom connectors and use them. First, we will 
 		</StackPanel>					
 	</telerik:RadDiagramShape>
 	...
-{{endregion}}
+```
 
 We will define 4 custom connectors for each shape in the diagram. __Naming them is mandatory__:
 		
-#### __[C#] Example 3: Creating custom connectors__
-{{region cs-raddiagram-features-customconnectors-3}}
+__Example 3: Creating custom connectors__
+```C#
 	this.diagram.Shapes.ToList().ForEach(x =>
 	{
 		var connectorUpRight = new RadDiagramConnector() { Offset = new Point(1, 0.25), Name = x.Name + "Connector1" };
@@ -97,10 +95,8 @@ We will define 4 custom connectors for each shape in the diagram. __Naming them 
 		x.Connectors.Add(connectorLeftUp);
 		x.Connectors.Add(connectorLeftDown);
 	});
-{{endregion}}
-
-#### __[VB.NET] Example 3: Creating custom connectors__
-{{region vb-raddiagram-features-customconnectors-4}}
+```
+```VB.NET
 	Me.diagram.Shapes.ToList().ForEach(Function(x) 
 		Dim connectorUpRight = New RadDiagramConnector() With {
 			 .Offset = New Point(1, 0.25),  .Name = x.Name.ToString() & "Connector1"
@@ -121,14 +117,14 @@ We will define 4 custom connectors for each shape in the diagram. __Naming them 
 		x.Connectors.Add(connectorLeftDown)
 	
 	End Function)
-{{endregion}}
+```
 
 Next step is to add some connections between the custom connectors. The first four connections below are created with the RadDiagram.AddConnection() method with the overload that takes 2 shapes and 2 custom connectors given by their names.
 
 The next four connections are attached with the RadDiagramConnection.Attach() method which takes two connectors.
 		
-#### __[C#] Example 4: Attaching connections__
-{{region cs-raddiagram-features-customconnectors-5}}
+__Example 4: Attaching connections__
+```C#
 		var connection = this.diagram.AddConnection(this.diagram.Shapes[0], this.diagram.Shapes[1], "match1shapeConnector1", "match2shapeConnector3");
 		(connection as RadDiagramConnection).Stroke = new SolidColorBrush() { Color = Color.FromArgb(255, 255, 116, 2) };
 	
@@ -157,10 +153,8 @@ The next four connections are attached with the RadDiagramConnection.Attach() me
 		var connection8 = new RadDiagramConnection() { Stroke = new SolidColorBrush() { Color = Color.FromArgb(255, 23, 156, 72) } };
 		connection8.Attach(this.diagram.Shapes[4].Connectors[6], this.diagram.Shapes[2].Connectors[7]);
 		this.diagram.Items.Add(connection8);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Attaching connections__
-{{region vb-raddiagram-features-customconnectors-6}}
+```
+```VB.NET
 	Dim connection = Me.diagram.AddConnection(Me.diagram.Shapes(0), Me.diagram.Shapes(1), "match1shapeConnector1", "match2shapeConnector3")
 	TryCast(connection, RadDiagramConnection).Stroke = New SolidColorBrush() With { .Color = Color.FromArgb(255, 255, 116, 2) }
 	
@@ -189,7 +183,7 @@ The next four connections are attached with the RadDiagramConnection.Attach() me
 	Dim connection8 = New RadDiagramConnection() With { .Stroke = New SolidColorBrush() With { .Color = Color.FromArgb(255, 23, 156, 72) } }
 	connection8.Attach(Me.diagram.Shapes(4).Connectors(6), Me.diagram.Shapes(2).Connectors(7))
 	Me.diagram.Items.Add(connection8)
-{{endregion}}
+```
 
 Below you can see a possible result of the code so far (some additional styling is applied):
 
@@ -203,8 +197,8 @@ Note that the Connectors are made visible on selection or when [ConnectorTool]({
 
 > You can find the ConnectorsAdornerVisible VisualState in the ControlTemplate of the RadDigramShape.
 
-#### __[C#] Example 5: Making a custom shape's connectors always visible__
-{{region cs-raddiagram-features-customconnectors-7}}
+__Example 5: Making a custom shape's connectors always visible__
+```C#
     public class CustomShape : RadDiagramShape
    	{
        static CustomShape()
@@ -218,10 +212,8 @@ Note that the Connectors are made visible on selection or when [ConnectorTool]({
            VisualStateManager.GoToState(this, "ConnectorsAdornerVisible", false);
        }
    	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Making a custom shape's connectors always visible__
-{{region vb-raddiagram-features-customconnectors-8}}
+```
+```VB.NET
 	Public Class CustomShape
 		Inherits RadDiagramShape
 		Shared Sub New()
@@ -233,7 +225,7 @@ Note that the Connectors are made visible on selection or when [ConnectorTool]({
 			VisualStateManager.GoToState(Me, "ConnectorsAdornerVisible", False)
 		End Sub
 	End Class
-{{endregion}}              
+```              
 
 ## See Also
  * [Populating with Data]({%slug raddiagram-data-overview%})

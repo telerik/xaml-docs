@@ -36,8 +36,8 @@ How to change the Background Color of RadColorPicker's palette Headers.
 
 3. Set the Background properties of the Border elements that wrap the TextBlocks.
 
-	#### __[XAML]__
-	{{region kb-colorpicker-change-palette-background-color-0}}
+	
+	```XAML
 		 <!--If you use NoXaml dlls set BasedOn="{StaticResource RadColorSelectorStyle}"-->
 		 <Style x:Key="CustomRadColorSelectorStyle" TargetType="telerik:RadColorSelector">           
 			<Setter Property="Template">
@@ -69,14 +69,14 @@ How to change the Background Color of RadColorPicker's palette Headers.
 				</Setter.Value>
 			</Setter>
 		</Style>
-	{{endregion}}
+	```
 
 4. Apply the customized template using the __ColorSelectorStyle__ property of RadColorPicker.
 
-	#### __[XAML]__
-	{{region kb-colorpicker-change-palette-background-color-0}}
+	
+	```XAML
 		<telerik:RadColorPicker ColorSelectorStyle="{StaticResource CustomRadColorSelectorStyle}" />
-	{{endregion}}
+	```
 	
 ![{{ site.framework_name }} RadColorPicker Change Palette Header Background Color](images/kb-colorpicker-change-palette-background-color-0.png)
 

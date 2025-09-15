@@ -43,20 +43,20 @@ It only takes a few simple steps:
 
 The next examples show how to apply these steps to modify the brushes for the different states of a `RadToggleButton` through the ThemeHelper class:
 
-#### __[XAML] Declare a SolidColorBrush to use as a StaticResource__
-{{region styling-appearance-theme-helper-1}}
+__Declare a SolidColorBrush to use as a StaticResource__
+```XAML
 	<SolidColorBrush x:Key="MyCheckedBrush" Color="#FFFF86B1"/>
-{{endregion}}
+```
 
-#### __[XAML] Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region styling-appearance-theme-helper-2}}
+__Set RadToggleButton's visual appearance through the ThemeHelper class__
+```XAML
 	<telerik:RadToggleButton Content="RadButton" 
 							Margin="10"
 							xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
 							helpers:ThemeHelper.MouseOverBrush="LightGoldenrodYellow"
 							helpers:ThemeHelper.PressedBrush="{telerik:VisualStudio2019Resource ResourceKey=ValidationBrush}"
 							helpers:ThemeHelper.CheckedBrush="{StaticResource MyCheckedBrush}"/>
-{{endregion}}
+```
 
 __Appearance of the RadToggleButton in the different states__
 

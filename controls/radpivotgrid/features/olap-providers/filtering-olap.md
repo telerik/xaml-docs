@@ -52,7 +52,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_1}}
+```XAML
 	<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotion Category]">
 	    <pivot:XmlaGroupDescription.GroupFilter>
 	        <pivot:OlapLabelGroupFilter>
@@ -76,11 +76,11 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	        </pivot:OlapLabelGroupFilter>
 	    </pivot:XmlaGroupDescription.GroupFilter>
 	</pivot:XmlaGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_1}}
+```C#
 	XmlaGroupDescription groupDescription1 = new XmlaGroupDescription();
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]";
 	OlapLabelGroupFilter labelGroupFilter1 = new OlapLabelGroupFilter();
@@ -92,11 +92,11 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	OlapLabelGroupFilter labelGroupFilter2 = new OlapLabelGroupFilter();
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Product].[Category].&[3]" };
 	groupDescription2.GroupFilter = labelGroupFilter2;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_1}}
+```VB.NET
 	Dim groupDescription1 As New XmlaGroupDescription()
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]"
 	Dim labelGroupFilter1 As New OlapLabelGroupFilter()
@@ -108,14 +108,14 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	Dim labelGroupFilter2 As New OlapLabelGroupFilter()
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Product].[Category].&[3]"}
 	groupDescription2.GroupFilter = labelGroupFilter2
-{{endregion}}
+```
 {% if site.site_name == 'WPF' %}
 
 If you use __AdomdDataProvider__:                
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_2}}
+```XAML
 	<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotion Category]">
 	    <pivot:AdomdGroupDescription.GroupFilter>
 	        <pivot:OlapLabelGroupFilter>
@@ -139,11 +139,11 @@ If you use __AdomdDataProvider__:
 	        </pivot:OlapLabelGroupFilter>
 	    </pivot:AdomdGroupDescription.GroupFilter>
 	</pivot:AdomdGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_2}}
+```C#
 	AdomdGroupDescription groupDescription1 = new AdomdGroupDescription();
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]";
 	OlapLabelGroupFilter labelGroupFilter1 = new OlapLabelGroupFilter();
@@ -155,11 +155,11 @@ If you use __AdomdDataProvider__:
 	OlapLabelGroupFilter labelGroupFilter2 = new OlapLabelGroupFilter();
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Product].[Category].&[3]" };
 	groupDescription2.GroupFilter = labelGroupFilter2;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_2}}
+```VB.NET
 	Dim groupDescription1 As New AdomdGroupDescription()
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]"
 	Dim labelGroupFilter1 As New OlapLabelGroupFilter()
@@ -171,7 +171,7 @@ If you use __AdomdDataProvider__:
 	Dim labelGroupFilter2 As New OlapLabelGroupFilter()
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Product].[Category].&[3]"}
 	groupDescription2.GroupFilter = labelGroupFilter2
-{{endregion}}
+```
 {% endif %}
 
 ### Label Filters for user-defined hierarchies
@@ -180,7 +180,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_5}}
+```XAML
 	<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotions]">
 	    <pivot:XmlaGroupDescription.Levels>
 	        <pivot:XmlaLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
@@ -208,11 +208,11 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	        </pivot:XmlaLevelGroupDescription>
 	    </pivot:XmlaGroupDescription.Levels>
 	</pivot:XmlaGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_5}}
+```C#
 	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
 	groupDescription.MemberName = "[Promotion].[Promotions]";
 	
@@ -229,11 +229,11 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]" };
 	levelGroupDescription2.GroupFilter = labelGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_5}}
+```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
 	groupDescription.MemberName = "[Promotion].[Promotions]"
 	
@@ -250,14 +250,14 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]"}
 	levelGroupDescription2.GroupFilter = labelGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 If you use __AdomdDataProvider:__
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_6}}
+```XAML
 	<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotions]">
 	    <pivot:AdomdGroupDescription.Levels>
 	        <pivot:AdomdLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
@@ -285,11 +285,11 @@ If you use __AdomdDataProvider:__
 	        </pivot:AdomdLevelGroupDescription>
 	    </pivot:AdomdGroupDescription.Levels>
 	</pivot:AdomdGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_6}}
+```C#
 	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
 	groupDescription.MemberName = "[Promotion].[Promotions]";
 	
@@ -306,11 +306,11 @@ If you use __AdomdDataProvider:__
 	labelGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.Equals, Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]" };
 	levelGroupDescription2.GroupFilter = labelGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_6}}
+```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
 	groupDescription.MemberName = "[Promotion].[Promotions]"
 	
@@ -327,7 +327,7 @@ If you use __AdomdDataProvider:__
 	labelGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.Equals, .Than = "[Promotion].[Promotions].[Category].&[Reseller].&[Excess Inventory]"}
 	levelGroupDescription2.GroupFilter = labelGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-{{endregion}}
+```
 {% endif %}
 
 >tipThe value of "Than" property is the unique name of the member (defined in OLAP Cube). As you are unable to use & in XAML, you have to use &amp; which will be parsed to &. You have to define *sys* namespace: __xmlns:sys="clr-namespace:System;assembly=mscorlib"__.                
@@ -368,7 +368,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_3}}
+```XAML
 	<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotion Category]">
 	    <pivot:XmlaGroupDescription.GroupFilter>
 	        <pivot:OlapValueGroupFilter AggregateIndex="1">
@@ -387,11 +387,11 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	        </pivot:OlapValueGroupFilter>
 	    </pivot:XmlaGroupDescription.GroupFilter>
 	</pivot:XmlaGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_3}}
+```C#
 	XmlaGroupDescription groupDescription1 = new XmlaGroupDescription();
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]";
 	OlapValueGroupFilter valueGroupFilter1 = new OlapValueGroupFilter();
@@ -405,11 +405,11 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter2.AggregateIndex = 0;
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 50000 };
 	groupDescription2.GroupFilter = valueGroupFilter2;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_3}}
+```VB.NET
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]"
 	Dim valueGroupFilter1 As New OlapValueGroupFilter()
 	valueGroupFilter1.AggregateIndex = 1
@@ -422,14 +422,14 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter2.AggregateIndex = 0
 	valueGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.IsGreaterThan, .Than = 50000}
 	groupDescription2.GroupFilter = valueGroupFilter2
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 If you use __AdomdDataProvider__:                
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_4}}
+```XAML
 	<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotion Category]">
 	    <pivot:AdomdGroupDescription.GroupFilter>
 	        <pivot:OlapValueGroupFilter AggregateIndex="1">
@@ -448,11 +448,11 @@ If you use __AdomdDataProvider__:
 	        </pivot:OlapValueGroupFilter>
 	    </pivot:AdomdGroupDescription.GroupFilter>
 	</pivot:AdomdGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_4}}
+```C#
 	AdomdGroupDescription groupDescription1 = new AdomdGroupDescription();
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]";
 	OlapValueGroupFilter valueGroupFilter1 = new OlapValueGroupFilter();
@@ -466,11 +466,11 @@ If you use __AdomdDataProvider__:
 	valueGroupFilter2.AggregateIndex = 0;
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 50000 };
 	groupDescription2.GroupFilter = valueGroupFilter2;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_4}}
+```VB.NET
 	Dim groupDescription1 As New AdomdGroupDescription()
 	groupDescription1.MemberName = "[Promotion].[Promotion Category]"
 	Dim valueGroupFilter1 As New OlapValueGroupFilter()
@@ -484,7 +484,7 @@ If you use __AdomdDataProvider__:
 	valueGroupFilter2.AggregateIndex = 0
 	valueGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.IsGreaterThan, .Than = 50000}
 	groupDescription2.GroupFilter = valueGroupFilter2
-	{{endregion}}
+	```
 
 {% endif %}
 
@@ -494,7 +494,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_7}}
+```XAML
 	<pivot:XmlaGroupDescription MemberName="[Promotion].[Promotions]">
 	    <pivot:XmlaGroupDescription.Levels>
 	        <pivot:XmlaLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
@@ -518,11 +518,11 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	        </pivot:XmlaLevelGroupDescription>
 	    </pivot:XmlaGroupDescription.Levels>
 	</pivot:XmlaGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_7}}
+```C#
 	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
 	groupDescription.MemberName = "[Promotion].[Promotions]";
 	
@@ -541,11 +541,11 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 300 };
 	levelGroupDescription2.GroupFilter = valueGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_7}}
+```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
 	groupDescription.MemberName = "[Promotion].[Promotions]"
 	
@@ -564,14 +564,14 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	valueGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.IsGreaterThan, .Than = 300}
 	levelGroupDescription2.GroupFilter = valueGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 If you use __AdomdDataProvider:__
 
 #### __XAML__
 
-{{region radpivotgrid-features-filter-olap_8}}
+```XAML
 	<pivot:AdomdGroupDescription MemberName="[Promotion].[Promotions]">
 	    <pivot:AdomdGroupDescription.Levels>
 	        <pivot:AdomdLevelGroupDescription MemberName="[Promotion].[Promotions].[Category]">
@@ -595,11 +595,11 @@ If you use __AdomdDataProvider:__
 	        </pivot:AdomdLevelGroupDescription>
 	    </pivot:AdomdGroupDescription.Levels>
 	</pivot:AdomdGroupDescription>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-features-filter-olap_8}}
+```C#
 	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
 	groupDescription.MemberName = "[Promotion].[Promotions]";
 	
@@ -618,11 +618,11 @@ If you use __AdomdDataProvider:__
 	valueGroupFilter2.Condition = new OlapComparisonCondition() { Condition = Comparison.IsGreaterThan, Than = 300 };
 	levelGroupDescription2.GroupFilter = valueGroupFilter2;
 	groupDescription.Levels.Add(levelGroupDescription2);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-features-filter-olap_8}}
+```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
 	groupDescription.MemberName = "[Promotion].[Promotions]"
 	
@@ -641,7 +641,7 @@ If you use __AdomdDataProvider:__
 	valueGroupFilter2.Condition = New OlapComparisonCondition() With {.Condition = Comparison.IsGreaterThan, .Than = 300}
 	levelGroupDescription2.GroupFilter = valueGroupFilter2
 	groupDescription.Levels.Add(levelGroupDescription2)
-{{endregion}}
+```
 {% endif %}
 
 ## Applying filter at runtime

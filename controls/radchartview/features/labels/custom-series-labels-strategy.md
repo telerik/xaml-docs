@@ -20,8 +20,8 @@ The chart's series label strategy is responsible for the visualization of the se
 
 Those methods will be fired for each data point in the series, but there is a curious specific in the __ChartSeriesLabelStrategy__ class and its methods. The methods won't be fired unless you specify that they should be used via the __Options__ property. The property is a flags enum and it can accept several values. For example, you can specify that you want to use only the __GetLabelContent__ and __GetLayoutSlot__ methods and skip the others. To do so, you can use the following options:
 
-#### __[C#] Example 1: Setting LabelStrategyOptions__
-{{region radchartview-labels-custom-smart-labels-strategy_1}}
+__Example 1: Setting LabelStrategyOptions__
+```C#
 	public override LabelStrategyOptions Options
 	{
 		get
@@ -29,14 +29,14 @@ Those methods will be fired for each data point in the series, but there is a cu
 			return LabelStrategyOptions.Content | LabelStrategyOptions.Arrange;
 		}
 	}
-{{endregion}}}}
+```}}
 
 ## Custom Series Label Strategy
 
 In the following sections we will go through  creating custom __ChartSeriesLabelStrategy__ for the labels. First, we need to create a chart and populated with some points. 
 
-#### __[C#] Example 2: Defining view models__
-{{region radchartview-labels-shart-series-labels-strategy_1}}
+__Example 2: Defining view models__
+```C#
 	public class DataItem
     {
         public string Category { get; set; }
@@ -67,12 +67,12 @@ In the following sections we will go through  creating custom __ChartSeriesLabel
             return result;
         }       
     }	
-{{endregion}}
+```
 
 Next, we can go ahead and declare the chart in __XAML__. For the purpose of this tutorial we are going to use two __BarSeries__ and placed them on top of each other by using the [CombineMode]({%slug radchartview-features-combinemode%}) property of the series set to __Stack__.
 
-#### __[XAML] Example 3: Defining RadCartesianChart in XAML__
-{{region radchartview-labels-shart-series-labels-strategy_2}}
+__Example 3: Defining RadCartesianChart in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Office2016" >
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -100,12 +100,12 @@ Next, we can go ahead and declare the chart in __XAML__. For the purpose of this
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 To populate the chart we need to set the DataContext of the Window that hosts it.
 
-#### __[XAML] Example 4: Setting DataContext of the Window__
-{{region radchartview-labels-shart-series-labels-strategy_2}}
+__Example 4: Setting DataContext of the Window__
+```XAML
 	public partial class MainWindow : Window
 	{		
 		public MainWindow()
@@ -114,7 +114,7 @@ To populate the chart we need to set the DataContext of the Window that hosts it
 			this.DataContext = new MainViewModel();			
 		}
 	}
-{{endregion}}
+```
 
 If you run the application now, you should get a structure like in **Figure 1**. 
 
@@ -123,8 +123,8 @@ If you run the application now, you should get a structure like in **Figure 1**.
 
 Looking at **Figure 1** every bar has its label position in its center. Our task is to shows what percent every bar represent from the sum of every data point in one category. First, we need to create a custom class which inherits __ChartSeriesLabelStrategy__. In our case, we are going to override __GetLabelContent()__ and create custom logic which calculates what percent every value represent.
 
-#### __[C#] Example 5: Creating custom ChartSeriesLabelStrategy__
-{{region radchartview-labels-shart-series-labels-strategy_2}}
+__Example 5: Creating custom ChartSeriesLabelStrategy__
+```C#
 	public class PercentageLabelStrategy : ChartSeriesLabelStrategy
 	{
 		public override LabelStrategyOptions Options
@@ -161,12 +161,12 @@ Looking at **Figure 1** every bar has its label position in its center. Our task
 			return finalContent;
 		}
 	}	
-{{endregion}}
+```
 
 To apply the custom label strategy to the chart, set the __Strategy__ property of the __ChartSeriesLabelDefinition__.
 
-#### __[XAML] Example 6: Setting custom ChartSeriesLabelStrategy__
-{{region radchartview-labels-shart-series-labels-strategy_2}}
+__Example 6: Setting custom ChartSeriesLabelStrategy__
+```XAML
 	<telerik:RadCartesianChart Palette="Office2016" Margin="10" >
 	
 		<telerik:RadCartesianChart.Resources>
@@ -199,7 +199,7 @@ To apply the custom label strategy to the chart, set the __Strategy__ property o
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 2: Labels with Custom Label Strategy
 ![radchartview-labels-shart-series-labels-strategy_WithStrategy](images/radchartview-labels-shart-series-labels-strategy_2.png)

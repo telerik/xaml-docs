@@ -22,22 +22,20 @@ You can instantiate your __RadButton__ in both XAML and code. Here is an example
 
 > The __RadButton__ control is located in the __Telerik.Windows.Controls.dll__ and in order to use it in your project you have to add a reference to the assembly. {% if site.site_name == 'WPF' %} You can find more info [here](http://www.telerik.com/help/wpf/installation-installing-controls-dependencies-wpf.html).{% endif %}{% if site.site_name == 'Silverlight' %} You can find more info [here](http://www.telerik.com/help/silverlight/installation-installing-controls-dependencies.html).{% endif %} <br/> Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 
-#### __[XAML] Example 1: Defining a button in XAML__  
-{{region xaml-radbuttons-features-button_0}}
+__Example 1: Defining a button in XAML__  
+```XAML
 	<telerik:RadButton Content="Click Me!" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining a button in code__  
-{{region cs-radbuttons-features-button_1}}
+__Example 2: Defining a button in code__  
+```C#
 	RadButton radButton = new RadButton(){Content = "Click Me!"};
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a button in code__  
-{{region vb-radbuttons-features-button_2}}
+```
+```VB.NET
 	Dim radButton As New RadButton() With { _
 	    .Content = "Click Me!" _
 	}
-{{endregion}}
+```
 
 #### __Figure 1: The created button__
 ![The created button](images/radbuttons-features-button-0.png)
@@ -56,25 +54,23 @@ or
 		
 Here is an example of handling the __Click__ event of a button.		
 
-#### __[XAML] Example 3: Subscribing to the Click event__  
-{{region xaml-radbuttons-features-button_3}}
+__Example 3: Subscribing to the Click event__  
+```XAML
 	<telerik:RadButton Content="Click Me!" Click="RadButton_Click" />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Defining a Click event handler__  
-{{region cs-radbuttons-features-button_4}}
+__Example 4: Defining a Click event handler__  
+```C#
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 	    //implement your logic here
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining a Click event handler__  
-{{region vb-radbuttons-features-button_5}}
+```
+```VB.NET
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 	    'implement your logic here'
 	End Sub
-{{endregion}}
+```
 
 ## Customizing the RadButton
 

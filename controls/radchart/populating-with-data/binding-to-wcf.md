@@ -24,9 +24,9 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-binding-to-wcf_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8" />
-{{endregion}}
+```
 
 
 
@@ -42,7 +42,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-binding-to-wcf_1}}
+```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping LegendLabel="Products UnitPrice">
@@ -52,7 +52,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -66,7 +66,7 @@ Creating the WCF Service:
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_2}}
+```C#
 	[ServiceContract(Namespace = "")]
 	[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 	public class Service2
@@ -79,13 +79,13 @@ Creating the WCF Service:
 	        return query.Take(10).ToList();
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_3}}
+```VB.NET
 	<ServiceContract(Namespace:=""), AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Allowed)>
 	Public Class Service2
 	    <OperationContract>
@@ -96,7 +96,7 @@ Creating the WCF Service:
 	        Return query.Take(10).ToList()
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
@@ -112,18 +112,18 @@ Now build the project before continuing.
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_4}}
+```C#
 	           
 	MyService.Service2Client client = new MyService.Service2Client();
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_5}}
+```VB.NET
 	Dim client As New MyService.Service2Client()
-{{endregion}}
+```
 
 
 
@@ -131,7 +131,7 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_6}}
+```C#
 	public void SetupService()
 	{
 	    InitializeComponent();
@@ -145,13 +145,13 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 	    this.radChart.ItemsSource = products;
 	    this.radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = -90;
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_7}}
+```VB.NET
 	Public Sub SetupClient()
 	    Dim client As New MyService.Service2Client()
 	    AddHandler client.LoadTop10ProductsCompleted, AddressOf client_LoadTop10ProductsCompleted
@@ -162,23 +162,23 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 	    Me.radChart.ItemsSource = products
 	    Me.radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = -90
 	End Sub
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_8}}
+```C#
 	radChart.ItemsSource = serviceClient.LoadTop10Products();
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_9}}
+```VB.NET
 	radChart.ItemsSource = serviceClient.LoadTop10Products()
-{{endregion}}
+```
 
 
 
@@ -196,20 +196,20 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_10}}
+```C#
 	public class NorthwindDataSource
 	{
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_11}}
+```VB.NET
 	Public Class NorthwindDataSource
 	End Class
-{{endregion}}
+```
 
 
 
@@ -221,7 +221,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_12}}
+```C#
 	public class NorthwindDataSource
 	{
 	    private SampleWcfServiceClient serviceClient;
@@ -236,13 +236,13 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_13}}
+```VB.NET
 	Public Class NorthwindDataSource
 	    Private serviceClient As SampleWcfServiceClient
 	
@@ -261,7 +261,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
@@ -271,40 +271,40 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_14}}
+```C#
 	this.serviceClient.LoadTop10ProductsCompleted += new EventHandler<LoadTop10ProductsCompletedEventArgs>(serviceClient_LoadTop10ProductsCompleted);
 	this.serviceClient.LoadTop10ProductsAsync();
-{{endregion}}
+```
 
 
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_15}}
+```C#
 	foreach ( Products p in serviceClient.LoadTop10Products() )
 	{
 	    this.Products.Add( p );
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_16}}
+```VB.NET
 	AddHandler Me.serviceClient.LoadTop10ProductsCompleted, AddressOf serviceClient_LoadTop10ProductsCompleted
 	Me.serviceClient.LoadTop10ProductsAsync()
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_17}}
+```VB.NET
 	For Each p As Products In serviceClient.LoadTop10Products()
 	    Me.Products.Add(p)
 	Next
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 
@@ -312,7 +312,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 #### __C#__
 
-{{region cs-radchart-populating-with-data-binding-to-wcf_18}}
+```C#
 	private void serviceClient_LoadTop10ProductsCompleted(object sender, LoadTop10ProductsCompletedEventArgs e)
 	{
 	    foreach (Products p in e.Result)
@@ -320,19 +320,19 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 	        this.Products.Add(p);
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-populating-with-data-binding-to-wcf_19}}
+```VB.NET
 	Private Sub serviceClient_LoadTop10ProductsCompleted(ByVal sender As Object, ByVal e As LoadTop10ProductsCompletedEventArgs)
 	    For Each p As Products In e.Result
 	        Me.Products.Add(p)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -340,11 +340,11 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-binding-to-wcf_20}}
+```XAML
 	<UserControl.Resources>
 	    <example:NorthwindDataSource x:Key="DataSource"/>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 
 
@@ -352,7 +352,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-binding-to-wcf_21}}
+```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8"    
 	                  ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}">
 	    <telerik:RadChart.SeriesMappings>
@@ -363,7 +363,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

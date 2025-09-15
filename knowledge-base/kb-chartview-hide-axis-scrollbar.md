@@ -30,8 +30,8 @@ How to hide the horizontal/vertical scrollbar (the PanZoomBar) of RadCartesianCh
 
 Define a Style that targets the PanZoomBar control and set it to the `PanZoomBarStyle` property of the corresponding chart axis.
 
-#### __[XAML]__
-{{region kb-chartview-hide-axis-scrollbar-0}}
+
+```XAML
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:CategoricalAxis>
 			<telerik:CategoricalAxis.PanZoomBarStyle>
@@ -41,7 +41,7 @@ Define a Style that targets the PanZoomBar control and set it to the `PanZoomBar
 			</telerik:CategoricalAxis.PanZoomBarStyle>
 		</telerik:CategoricalAxis>
 	</telerik:RadCartesianChart.HorizontalAxis>
-{{endregion}}
+```
 
 ## See Also
 * [Axis]({%slug radchartview-axes-axis%})

@@ -21,7 +21,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 
 #### __XAML__
 
-{{region xaml-radslider-direction_0}}
+```XAML
 	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="TopLeft" IsDirectionReversed="False">
 	    <telerik:RadSlider.TickTemplate>
 	        <DataTemplate>
@@ -31,13 +31,13 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Normal Direction Horizontal](images/radslider_features_normal_horizontal.png)
 
 #### __XAML__
 
-{{region xaml-radslider-direction_1}}
+```XAML
 	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="TopLeft" IsDirectionReversed="True">
 	    <telerik:RadSlider.TickTemplate>
 	        <DataTemplate>
@@ -47,13 +47,13 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Reversed Direction Horizontal](images/radslider_features_reversed_horizontal.png)
 
 #### __XAML__
 
-{{region xaml-radslider-direction_2}}
+```XAML
 	<telerik:RadSlider Height="250" 
 	           Margin="10"
 	           IsDirectionReversed="False"
@@ -69,13 +69,13 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Normal Direction Vertical](images/radslider_features_normal_vertical.png)
 
 #### __XAML__
 
-{{region xaml-radslider-direction_3}}
+```XAML
 	<telerik:RadSlider Height="250" 
 	           Margin="10"
 	           IsDirectionReversed="True"
@@ -91,6 +91,6 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 	        </DataTemplate>
 	    </telerik:RadSlider.TickTemplate>
 	</telerik:RadSlider>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Reversed Direction Vertical](images/radslider_features_reversed_vertical.png)

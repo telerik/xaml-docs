@@ -17,21 +17,21 @@ The purpose of the __DataContext__ is to hold the data that will be bound (like 
 
 #### __XAML__
 
-{{region radtabcontrol-populating-data-binding_0}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl" DataContext="{Binding MyTabItems}" />
-{{endregion}}
+```
 
 #### __C#__  
-{{region radtabcontrol-populating-data-binding_1}}
+```C#
 	RadTabControl radTabControl= new RadTabControl();
 	radTabControl.DataContext = new Collection<WordDocument>();
-{{endregion}}
+```
 
 #### __VB.NET__  	
-{{region radtabcontrol-populating-data-binding_2}}
+```VB.NET
 	Dim radTabControl As New RadTabControl()
 	radTabControl.DataContext = New Collection(Of WordDocument)()
-{{endregion}}
+```
 
 >The __DataContext__ is inherited in the visual tree, which means that the child controls of the __RadTabControl__ will have the same __DataContext__, if it is not explicitly changed.
 
@@ -54,23 +54,23 @@ The __ItemsSource__ property can be bound to any collection that implements the 
 When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determine which property of the __DataContext__ object to be visualized in the tab content.
 
 #### __XAML__
-{{region radtabcontrol-populating-data-binding_3}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl" ItemsSource="{Binding Persons}" DisplayMemberPath="Name" />
-{{endregion}}
+```
 
 #### __C#__
-{{region radtabcontrol-populating-data-binding_4}}
+```C#
 	RadTabControl radTabControl= new RadTabControl();
 	radTabControl.ItemsSource = new Collection<Person>();
 	radTabControl.DisplayMemberPath = "Name";
-{{endregion}}
+```
 
 #### __VB.NET__  
-{{region radtabcontrol-populating-data-binding_5}}
+```VB.NET
 	Dim radTabControl As New RadTabControl()
 	radTabControl.ItemsSource = New Collection(Of Person)()
 	radTabControl.DisplayMemberPath = "Name"
-{{endregion}}
+```
 
 >If neither the __DisplayMemberPath__ nor the __ItemTemplate__ are set, then the content of the tab would be set to the value returned by the __ToString()__ method.
 

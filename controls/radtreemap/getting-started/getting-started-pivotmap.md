@@ -39,18 +39,18 @@ To populate the control with tiles you will need to provide a collection of item
 
 For this example we will use a simple flat structure consisting of movies gross sales information.
 
-#### __[C#] Defining the models__
-{{region radtreemap-getting-started-pivotmap-0}}
+__Defining the models__
+```C#
 	public class MovieInfo
     {
         public string Genre { get; set; }
         public string Title { get; set; }
         public double GrossSales { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Populating a collection with the data__
-{{region radtreemap-getting-started-pivotmap-1}}
+__Populating a collection with the data__
+```C#
 	public ObservableCollection<MovieInfo> GetData()
 	{
 		var movies = new ObservableCollection<MovieInfo>()
@@ -71,7 +71,7 @@ For this example we will use a simple flat structure consisting of movies gross 
 		};
 		return movies;
 	}
-{{endregion}}
+```
 
 ## Setting up the RadPivotMap
 
@@ -83,8 +83,8 @@ The __Member__ determines the name of the corresponding group.
 
 The __LabelPath__ determines the label that will be displayed over the tile.
 
-#### __[XAML] Defining RadPivotMap__
-{{region radtreemap-getting-started-pivotmap-2}}
+__Defining RadPivotMap__
+```XAML
 	<telerik:RadPivotMap x:Name="radPivotMap" 
 						 ValuePath="GrossSales"
 						 LabelPath="GrossSales" 
@@ -94,17 +94,17 @@ The __LabelPath__ determines the label that will be displayed over the tile.
                 <telerik:GroupDefinition Member="Title" />
             </telerik:RadPivotMap.GroupDefinitions>            
         </telerik:RadPivotMap>
-{{endregion}}
+```
 
-#### __[XAML] Setting the ItemsSource in XAML__
-{{region radtreemap-getting-started-pivotmap-3}}
+__Setting the ItemsSource in XAML__
+```XAML
 	<telerik:RadPivotMap ItemsSource="{Binding MyDataSourceProperty}" />
-{{endregion}}
+```
 
-#### __[XAML] Setting the ItemsSource in code (see Example 2)__
-{{region radtreemap-getting-started-pivotmap-4}}
+__Setting the ItemsSource in code (see Example 2)__
+```XAML
 	this.radPivotMap.ItemsSource = GetData();
-{{endregion}}
+```
 
 __RadPivotMap__  
 

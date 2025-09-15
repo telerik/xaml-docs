@@ -32,8 +32,8 @@ This approach shows how to change the background in the Office2016 theme, but th
 
 To change the background [extract the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of RadWindow and change the Background property of the Border control with x:Name set to Header.
 
-#### __[XAML] Example 1: Extracted default ControlTemplate of RadWindow for Office2016 theme__ 
-{{region kb-window-change-header-background-0}}
+__Example 1: Extracted default ControlTemplate of RadWindow for Office2016 theme__ 
+```XAML
 	<Application.Resources>
 		<SolidColorBrush x:Key="WindowModalBackground" Color="#FFCCE4FC"/>
 		<sys:String x:Key="GlyphClose"></sys:String>
@@ -345,13 +345,13 @@ To change the background [extract the ControlTemplate]({%slug styling-apperance-
 			</Style.Triggers>
 		</Style>
 	</Application.Resources>
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Modification of the Border Background that is applied to the header__ 
-{{region kb-window-change-header-background-1}}
+__Example 2: Modification of the Border Background that is applied to the header__ 
+```XAML
 	<!-- other XAML -->
 	<Border x:Name="Header" Background="Red" CornerRadius="{telerik1:Office2016Resource ResourceKey=CornerRadiusTop}">
 	<!-- other XAML -->
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadWindow Change Header Background](images/kb-window-change-header-background-0.png)

@@ -38,8 +38,8 @@ To show a splash screen, use the __RadSplashScreenManager__ class. This allows y
 
 You can start the splash screen anytime you need to indicate that some work is performed. The following example demonstrates how to show it before the MainWindow is loaded. To do this, call the __RadSplashScreenManager.Show__ method. This displays a window hosting a __RadSplashScreen__ control.
 
-#### __[C#] Example 1: Starting the splash screen on application startup__
-{{region radsplashscreen-getting-started-0}}
+__Example 1: Starting the splash screen on application startup__
+```C#
 	public partial class App : Application
 	{
 		protected override void OnStartup(StartupEventArgs e)
@@ -58,7 +58,7 @@ You can start the splash screen anytime you need to indicate that some work is p
 			base.OnStartup(e);
 		}
 	}	
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSplashScreen Overview](images/radsplashscreen-getting-started-0.png)
 
@@ -74,8 +74,8 @@ To enable the progress bar in RadSplashScreen, set the __IsIndeterminate__ prope
 
 RadSplashScreenManager can be used to display any UI element. This means that you can create a custom UserControl and pass its type to the Show method. You can also replace the `RadSplashScreenManager.SplashScreenDataContext` with a custom object that can be used with the UserControl.
 
-#### __[XAML] Example 2: Creating a UserControl__
-{{region radsplashscreen-getting-started-1}}
+__Example 2: Creating a UserControl__
+```XAML
 	<UserControl x:Class="RadSplashScreenTest.MyUserControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -87,23 +87,23 @@ RadSplashScreenManager can be used to display any UI element. This means that yo
 			<TextBlock Text="{Binding Text}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
 		</Grid>
 	</UserControl>	
-{{endregion}}
+```
 
-#### __[C#] Example 3: Defining custom model__
-{{region radsplashscreen-getting-started-2}}
+__Example 3: Defining custom model__
+```C#
 	public class MyUserControlViewModel
     {
         public string Text { get; set; }
 		public double Width { get; set; }
         public double Height { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 4: Showing a splash screen with custom control__
-{{region radsplashscreen-getting-started-3}}
+__Example 4: Showing a splash screen with custom control__
+```C#
 	RadSplashScreenManager.SplashScreenDataContext = new MyUserControlViewModel() { Text = "Loading applicaiton...", Width = 150, Height = 150 };
 	RadSplashScreenManager.Show<MyUserControl>();
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSplashScreen Custom Control](images/radsplashscreen-getting-started-1.png)
 
@@ -155,8 +155,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region radsplashscreen-getting-started_7}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -166,7 +166,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

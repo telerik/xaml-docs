@@ -16,8 +16,8 @@ The parts that can be customized are the step shape (which is an ellipse by defa
 
 The shape appearance can be changed with the __ShapeGeometry__, __ShapeWidth__, __ShapeHeight__, __ShapeStroke__ and __ShapeStrokeThickness__ properties of __RadStepProgressBarItem__.
 
-#### __[XAML] Customizing step shape with direct property settings__
-{{region stepprogressbar-appearance-step-0}}
+__Customizing step shape with direct property settings__
+```XAML
 	<telerik:RadStepProgressBar TrackThickness="4">            
 		<telerik:RadStepProgressBarItem Content="Step 1"
 										ShapeWidth="40" ShapeHeight="40"
@@ -53,12 +53,12 @@ The shape appearance can be changed with the __ShapeGeometry__, __ShapeWidth__, 
 			</telerik:RadStepProgressBarItem.ShapeGeometry>
 		</telerik:RadStepProgressBarItem>
 	</telerik:RadStepProgressBar>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadStepProgressBar Customized Step Appearance Using Direct Settings](images/stepprogressbar-appearance-step-0.png)
 
-#### __[XAML] Customizing step shapes with an implicit style__
-{{region stepprogressbar-appearance-step-1}}
+__Customizing step shapes with an implicit style__
+```XAML
 	<telerik:RadStepProgressBar TrackThickness="4">
 		<telerik:RadStepProgressBar.Resources>
 			<Style TargetType="telerik:RadStepProgressBarItem">
@@ -82,7 +82,7 @@ The shape appearance can be changed with the __ShapeGeometry__, __ShapeWidth__, 
 		<telerik:RadStepProgressBarItem Content="Step 2" />
 		<telerik:RadStepProgressBarItem Content="Step 3" />
 	</telerik:RadStepProgressBar>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadStepProgressBar Customized Step Appearance Using Implicit Style](images/stepprogressbar-appearance-step-1.png)
 

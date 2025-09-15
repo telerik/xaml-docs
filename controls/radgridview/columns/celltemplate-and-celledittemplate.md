@@ -44,9 +44,9 @@ Sometimes you need to extend the functionality of a column and define a custom e
 
 **Example 1** demonstrates how to use both properties to customize your columns. We set the __RadDateTimePicker__ as a __CellEditTemplate__ for the __DateTime__ column type and the __RadNumericUpDown__ as a __CellTemplate__ for the **Salary** column.
 
-#### __[XAML] Example 1: Setting columns' CellTemplate and CellEditTemplate__
+__Example 1: Setting columns' CellTemplate and CellEditTemplate__
 
-{{region xaml-radgridview-columns-celltemplate-and-celledittemplate_0}}
+```XAML
 	<telerik:RadGridView x:Name="EmployeesGrid" AutoGenerateColumns="False" ItemsSource="{Binding Employees}">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" />
@@ -67,7 +67,7 @@ Sometimes you need to extend the functionality of a column and define a custom e
 	        </telerik:GridViewDataColumn>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 The RadGridView defined above will be displayed as shown in **Figure 1**.
 
@@ -79,9 +79,9 @@ The RadGridView defined above will be displayed as shown in **Figure 1**.
 
 The first example illustrates how to define either a __CellTemplate__ or __CellEditTemplate__. In the next example, we demonstrate how to set them both for the same column.
 
-#### __[XAML] Example 2: Setting the CellTemplate and CellEditTemplate of a single column__
+__Example 2: Setting the CellTemplate and CellEditTemplate of a single column__
 
-{{region xaml-radgridview-columns-celltemplate-and-celledittemplate_1}}
+```XAML
 	<telerik:RadGridView x:Name="EmployeesGrid" AutoGenerateColumns="False" ItemsSource="{Binding Employees}">
 		<telerik:RadGridView.Columns>
 			<telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" />
@@ -104,7 +104,7 @@ The first example illustrates how to define either a __CellTemplate__ or __CellE
 			</telerik:GridViewDataColumn>
 		</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 The RadGridView defined above will be displayed as shown in **Figure 1**.
 

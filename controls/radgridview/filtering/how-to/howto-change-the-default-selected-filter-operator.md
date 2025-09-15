@@ -14,7 +14,7 @@ To change the default selected filter operators, you have to handle the __Filter
 
 #### __C#__
 
-{{region cs-gridview-filtering-howto-change-the-default-selected-filter-operator_0}}
+```C#
 	private void OnRadGridViewFilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
 	{
 	    if (e.Column.UniqueName == "HireDate")
@@ -23,17 +23,17 @@ To change the default selected filter operators, you have to handle the __Filter
 	        e.DefaultOperator2 = Telerik.Windows.Data.FilterOperator.IsLessThan;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-filtering-howto-change-the-default-selected-filter-operator_0}}
+```VB.NET
 	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
 	    If e.Column.UniqueName = "HireDate" Then
 	        e.DefaultOperator1 = Telerik.Windows.Data.FilterOperator.IsGreaterThan
 	        e.DefaultOperator2 = Telerik.Windows.Data.FilterOperator.IsLessThan
 	    End If
 	End Sub
-{{endregion}}
+```
 
 >Please, note that you cannot reorder the available operators.

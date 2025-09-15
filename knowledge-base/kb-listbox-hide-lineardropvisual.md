@@ -32,11 +32,11 @@ How to hide the horizontal line (LinearDropVisual) displayed on drag over elemen
 
 Create an implicit style targeting the LinearDropVisual control and set its Visibility to Collapsed.
 
-#### __[XAML]__
-{{region kb-listbox-hide-lineardropvisual-0}}
+
+```XAML
 	<telerik:RadListBox.Resources>
 		<Style TargetType="telerik:LinearDropVisual">
 			<Setter Property="Visibility" Value="Collapsed" />
 		</Style>
 	</telerik:RadListBox.Resources>
-{{endregion}}
+```

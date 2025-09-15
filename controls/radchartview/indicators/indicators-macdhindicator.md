@@ -14,8 +14,8 @@ MacdhIndicator is a trend following indicator which displays the relationship be
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __ShortPeriod__, __LongPeriod__ and __SignalPeriod__ properties. 
 
-#### __[XAML] Example 1: Defining MacdhIndicator__
-{{region radchartview-indicators-macdhindicator-0}}
+__Example 1: Defining MacdhIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		   <telerik:MacdhIndicator ShortPeriod="9" 
 								   LongPeriod="12"
@@ -24,7 +24,7 @@ To set up the indicator you can set its __CategoryBinding, ValueBinding and Item
 								   ValueBinding="Close"
 								   ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: MacdhIndicator
 <img src="images/radchartview-indicators-macdhindicator-0.png" style="width: 80%;">

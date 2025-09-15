@@ -32,12 +32,12 @@ How to force the zoom operation inside the selection boundaries.
 
 Handle the __PreviewZoom__ event of the RadDiagram and use its __BringIntoView__ method in conjunction with its __Zoom__ property. 
 
-#### __[C#]__
-{{region kb-diagram-howto-zoom-in-selection-0}}
+
+```C#
 	private void diagram_PreviewZoom(object sender, Telerik.Windows.Controls.Diagrams.DiagramZoomEventArgs e)
     {
         e.Handled = true;
         this.diagram.BringIntoView(diagram.SelectionBounds, false);
         this.diagram.Zoom = e.TargetZoom;
     }
-{{endregion}}
+```

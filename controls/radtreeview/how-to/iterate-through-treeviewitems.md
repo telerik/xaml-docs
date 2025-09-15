@@ -25,21 +25,21 @@ The item container may be null if it isn't still generated from the runtime. Tha
 
 #### __C#__
 
-{{region radtreeview-how-to-iterate-through-treeviewitems_0}}
+```C#
 	this.Loaded += new RoutedEventHandler( IterateTreeViewItems_Loaded );
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-iterate-through-treeviewitems_1}}
+```VB.NET
 	AddHandler Me.Loaded, AddressOf IterateTreeViewItems_Loaded
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 
 #### __C#__
 
-{{region radtreeview-how-to-iterate-through-treeviewitems_2}}
+```C#
 	private void IterateTreeViewItems_Loaded( object sender, RoutedEventArgs e )
 	{
 	    this.GetContainers();
@@ -77,11 +77,11 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	    }
 	    return allItems;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-iterate-through-treeviewitems_3}}
+```VB.NET
 	Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.GetContainers()
 		End Sub
@@ -117,7 +117,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 			Next
 			Return allItems
 		End Function
-{{endregion}}
+```
 
 {% endif %}
 
@@ -125,7 +125,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 
 #### __C#__
 
-{{region radtreeview-how-to-iterate-through-treeviewitems_4}}
+```C#
 	private void IterateTreeViewItems_Loaded( object sender, RoutedEventArgs e )
 	{
 	    this.GetContainers();
@@ -163,11 +163,11 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	    }
 	    return allItems;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-how-to-iterate-through-treeviewitems_5}}
+```VB.NET
 		Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Me.GetContainers()
 		End Sub
@@ -203,7 +203,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 			Next
 			Return allItems
 		End Function
-{{endregion}}
+```
 
 {% endif %}
 

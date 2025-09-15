@@ -14,12 +14,12 @@ __RadChartView__ provides zoom and scroll interactivity via the __ChartPanAndZoo
 
 In order to utilize this behavior users simply have to add it to the chart's __Behaviors__ collection.
 
-#### __[XAML] Example 1: Defining pan and zoom behavior__
-{{region radchart-features-panzoom_0}}
+__Example 1: Defining pan and zoom behavior__
+```XAML
 	<telerikChart:RadCartesianChart.Behaviors>
 	   <telerikChart:ChartPanAndZoomBehavior />
 	</telerikChart:RadCartesianChart.Behaviors>
-{{endregion}}
+```
 
 By default only the panning and zooming of the horizontal axis are enabled. You can alter this by setting the __ZoomMode__ and __PanMode__ properties of the __ChartPanAndZoomBehavior__. Both properties are of type __ChartPanZoomMode__ and accept the following values:
 
@@ -30,12 +30,12 @@ By default only the panning and zooming of the horizontal axis are enabled. You 
 
 The __ZoomMode__ and __PanMode__ properties can be used to restrict zooming/panning.
 
-#### __[XAML] Example 2: Setting zoom mode__
-{{region radchart-features-panzoom_1}}
+__Example 2: Setting zoom mode__
+```XAML
 	<telerikChart:RadCartesianChart.Behaviors>
 	   <telerikChart:ChartPanAndZoomBehavior ZoomMode="Both" />
 	</telerikChart:RadCartesianChart.Behaviors>
-{{endregion}}
+```
 
 > The __ChartPanAndZoomBehavior__ works with the default axes. If the RadCartesianChart.HorizontalAxis is null, for example, the user will not be able to zoom or scroll horizontally, even though the individual series have horizontal axis (axes) defined. 
 
@@ -52,45 +52,45 @@ The pan and zoom behavior enables drag-to-zoom and drag-to-pan functionalities. 
 
 You can alter the drag action using the __DragMode__ property of the behavior. Setting it to __Pan__ will start panning, instead of zooming when you drag the mouse over the plot area. To forbid any drag actions you can set the DragMode to __None__.
 
-#### __[XAML] Example 3: Setting drag mode__
-{{region radchart-features-panzoom_2}}
+__Example 3: Setting drag mode__
+```XAML
 	<telerik:ChartPanAndZoomBehavior DragMode="Pan" />
-{{endregion}}
+```
 
 You can also specify the minimum distance between the start and end points of the drag operation that will allow the drag-to-zoom/pan action to be activated. This is controlled by the __DragToZoomThreshold__ property.
 
-#### __[XAML] Example 4: Setting minimum drag-to-zoom distance__
-{{region radchart-features-panzoom_3}}
+__Example 4: Setting minimum drag-to-zoom distance__
+```XAML
 	<telerik:ChartPanAndZoomBehavior DragToZoomThreshold="100" />
-{{endregion}}
+```
 	
 The __ChartPanAndZoomBehavior__ allows you to define custom key combinations that activate the panning and zooming. You can do this using the __DragToZoomKeyCombinations__ and __DragToPanKeyCombinations__ collections.
 
-#### __[C#] Example 5: Setting the left Ctrl key + mouse right button down as a combination that activates the zooming__
-{{region radchart-features-panzoom_4}}
+__Example 5: Setting the left Ctrl key + mouse right button down as a combination that activates the zooming__
+```C#
 	var keyCombo = new ChartKeyCombination();
 	keyCombo.Keys.Add(Key.LeftCtrl);
 	keyCombo.MouseButtons.Add(MouseButton.Right);
 	
 	panAndZoomBehavior.DragToZoomKeyCombinations.Add(keyCombo);
-{{endregion}}
+```
 	
-#### __[C#] Example 6: Setting the mouse right button down as a trigger that activates the panning__
-{{region radchart-features-panzoom_5}}
+__Example 6: Setting the mouse right button down as a trigger that activates the panning__
+```C#
 	var keyCombo = new ChartKeyCombination();
 	keyCombo.MouseButtons.Add(MouseButton.Right);
 	
 	panAndZoomBehavior.DragToPanKeyCombinations.Add(keyCombo);
-{{endregion}}
+```
 
 > The __DragToZoomKeyCombinations__ and __DragToPanKeyCombinations__ properties have higher priority than the __DragMode__ property and if any combination is satisfied, a drag/pan-to-zoom operation is started.
 	
 To cancel the drag to zoom operation you can use the __CancelDragToZoom()__ method of the behavior.	
 
-#### __[C#] Example 7: Canceling drag to zoom__
-{{region radchart-features-panzoom_6}}
+__Example 7: Canceling drag to zoom__
+```C#
 	panAndZoomBehavior.CancelDragToZoom();
-{{endregion}}
+```
 
 ## Manual scroll and zoom
 
@@ -100,8 +100,8 @@ The __Zoom__ property allows you to set the scale level for both axes. For examp
 
 With the __PanOffset__ you can specify the visible area of the chart. Note that PanOffset works with negative absolute values. For example, `PanOffset=new Point(-500,0)` will offset the visible area at 500px.
 
-#### __[XAML] Example 8: Setting zoom__
-{{region radchart-features-scrollandzoom_7}}
+__Example 8: Setting zoom__
+```XAML
 	<telerik:RadCartesianChart Zoom="10,1">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -130,21 +130,21 @@ With the __PanOffset__ you can specify the visible area of the chart. Note that 
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 2: Zoom-in chart__
 ![{{ site.framework_name }} RadChartView Zoom-in chart](images/radchart-features-scrollandzoom-2.png)
 
 Note that the setting the __PanOffset__ in XAML or the constructor of the view that holds the chart won't be respected. This is because the property uses the chart's size which is not yet calculated at this point. In order to apply the offset you can set it after the chart is loaded.
 
-#### __[C#] Example 9: Setting pan offset in code__
-{{region radchart-features-scrollandzoom_8}}
+__Example 9: Setting pan offset in code__
+```C#
 	private void RadCartesianChart_Loaded(object sender, RoutedEventArgs e)
 	{
 		var chart = (RadCartesianChart)sender;
 		chart.PanOffset = new Point(-500, 0);            
 	} 
-{{endregion}}
+```
    
 #### __Figure 3: Offset visible area__
 ![{{ site.framework_name }} RadChartView Offset visible area](images/radchart-features-scrollandzoom-3.png)
@@ -156,8 +156,8 @@ The chart also provides few properties that combines the behaviors of Zoom and P
 
 Those properties controls the visible are of the chart by defining the start and end positions of the scrollbar of the corresponding axis. The properties work in __relative units between 0 and 1__. So if the start of the plot area is at 0, the end it will be at 1, and the center at 0.5. Having this in mind we can construct the same view as the one demonstrated in __Figure 3__ but using the zoom range properties.
 
-#### __[XAML] Example 10: Using zoom range properties__
-{{region radchart-features-scrollandzoom_9}}
+__Example 10: Using zoom range properties__
+```XAML
 	<telerik:RadCartesianChart HorizontalZoomRangeStart="0.1" HorizontalZoomRangeEnd="0.2">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -186,7 +186,7 @@ Those properties controls the visible are of the chart by defining the start and
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ## Mouse wheel mode
 
@@ -198,17 +198,17 @@ You can use the __MouseWheelMode__ property of __ChartPanAndZoomBehavior__ to sp
 * __ZoomHorizontally__ and __ZoomVertically__: The mouse wheel action will zoom the chart horizontally/vertically.
 * __PanHorizontally__ and __PanVertically__: The mouse wheel action will pan the chart horizontally/vertically.
 
-#### __[XAML] Example 11: Settings mouse wheel mode__
-{{region radchart-features-scrollandzoom_10}}
+__Example 11: Settings mouse wheel mode__
+```XAML
 	<telerik:ChartPanAndZoomBehavior MouseWheelMode="Zoom" />
-{{endregion}}
+```
 
 ## Restrict zooming 
 
 To restrict the zooming you can set the __MinZoom__ and __MaxZoom__ properties of the chart. This defines a minimum and maximum scale values for chart axes. For example a __MaxZoom=new Size(50, 15)__ setting specifies that the maximum zoom level on the horizontal axis is 50, and the maximum zoom level on the vertical axis is 15.
 
-#### __[XAML] Example 12: Restrict zooming __
-{{region radchart-features-scrollandzoom_11}}
+__Example 12: Restrict zooming__
+```XAML
 	  <telerik:RadCartesianChart MaxZoom="30, 30" MinZoom="5, 5">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -236,14 +236,14 @@ To restrict the zooming you can set the __MinZoom__ and __MaxZoom__ properties o
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ## Style the PanZoomBar
 
 You can use the __PanZoomBarStyle__ property in order to stylize the __PanZoomBar__. The applied style is individual for each axis.
 
-#### __[XAML] Example 13: Style the PanZoomBar on the VerticalAxis__
-{{region radchart-features-scrollandzoom_12}}
+__Example 13: Style the PanZoomBar on the VerticalAxis__
+```XAML
 	<telerik:RadCartesianChart.VerticalAxis>
         <telerik:LinearAxis>
             <telerik:LinearAxis.PanZoomBarStyle>
@@ -253,7 +253,7 @@ You can use the __PanZoomBarStyle__ property in order to stylize the __PanZoomBa
             </telerik:LinearAxis.PanZoomBarStyle>
         </telerik:LinearAxis>
     </telerik:RadCartesianChart.VerticalAxis>
-{{endregion}}
+```
 
 #### __Figure 4: Stylized PanZoomBar on the VerticalAxis__
 ![{{ site.framework_name }} RadChartView Stylized PanZoomBar on the VerticalAxis](images/radchart-features-scrollandzoom-4.png)
@@ -262,15 +262,15 @@ You can use the __PanZoomBarStyle__ property in order to stylize the __PanZoomBa
 
 You can use the DragZoomBorderStyle property of the RadCartesianChart in order to stylize the DragZoomBorder element. The applied style needs to target the __Border__ element.
 
-#### __[XAML] Example 14: Style the Drag Zoom Border__
-{{region radchart-features-scrollandzoom_13}}
+__Example 14: Style the Drag Zoom Border__
+```XAML
 	<telerik:RadCartesianChart.DragZoomBorderStyle>
 		<Style TargetType="Border">
 			<Setter Property="BorderThickness" Value="3"/>
 			<Setter Property="BorderBrush" Value="Red"/>
 		</Style>
 	</telerik:RadCartesianChart.DragZoomBorderStyle>
-{{endregion}}
+```
 
 #### __Figure 5: Stylized Drag Zoom Border__
 ![{{ site.framework_name }} RadChartView Stylized Drag Zoom Border](images/radchart-features-scrollandzoom-dragzoomborder-5.jpg)
@@ -283,8 +283,8 @@ To display a PanZoomBar for a series axis, set the `AxisPanAndZoomExtensions.Ena
 
 The pan zoom can be adjusted manually using the `Zoom`, `MaxZoom`, `MinZoom`, `MaxZoom`, `ZoomRangeStart` and `ZoomRangeEnd` properties of the `AxisPanAndZoomExtensions` class. These work the same as the chart zoom/pan properties described [previously in this article](#manual-scroll-and-zoom).
 
-#### __[XAML] Example 15: Showing pan zoom bar for the separate series axes__
-{{region radchart-features-scrollandzoom-14}}
+__Example 15: Showing pan zoom bar for the separate series axes__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -322,7 +322,7 @@ The pan zoom can be adjusted manually using the `Zoom`, `MaxZoom`, `MinZoom`, `M
 			</telerik:LineSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>   
-{{endregion}}
+```
 
 #### __Figure 6: Series axes with individual PanZoomBars__
 ![{{ site.framework_name }} RadChartView Series axes with individual PanZoomBars](images/radchart-features-scrollandzoom-individual-zoom-6.png)

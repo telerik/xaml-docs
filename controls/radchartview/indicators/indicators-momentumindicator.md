@@ -14,15 +14,15 @@ MomentumIndicator compares the relation of the current value to where the value 
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
-#### __[XAML] Example 1: MomentumIndicator__
-{{region radchartview-indicators-momentumindicator-0}}
+__Example 1: MomentumIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		<telerik:MomentumIndicator Period="8" 													
 								   CategoryBinding="Date"                                             
 								   ValueBinding="Close"
 								   ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: MomentumIndicator
 <img src="images/radchartview-indicators-momentumindicator-0.png" style="width: 80%;">

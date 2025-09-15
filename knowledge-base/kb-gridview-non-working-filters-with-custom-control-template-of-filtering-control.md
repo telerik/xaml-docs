@@ -32,11 +32,11 @@ This behavior can occur when a custom `ControlTemplate` is applied to the `Templ
 
 To prevent this behavior from occurring, in the `ControlTemplate`, set the `Path` property of the `Binding` instance for the `ItemsSource` property to __FilteredDistinctValues__. The outdated value was __DistinctValues__. The `ListBox` element has an __x:Name="PART_DistinctValuesList"__.
 
-#### __[XAML] Modifying the Path property of the ItemsSource Binding instance__
-{{region kb-gridview-non-working-filters-with-custom-control-template-of-filtering-control-0}}
+__Modifying the Path property of the ItemsSource Binding instance__
+```XAML
     <ListBox x:Name="PART_DistinctValuesList"
             ItemsSource="{Binding FilteredDistinctValues}">
     </ListBox>
-{{endregion}}
+```
 
 To ensure that everything works properly, it is recommended to replace the customized `ControlTemplate` with the original one from the latest Telerik version. Then you can re-apply any customizaions in the new template.

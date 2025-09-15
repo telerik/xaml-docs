@@ -14,8 +14,8 @@ __RadVirtualGrid__ executes a certain set of commands for a given navigation sce
 
 The following code snippet illustrates a possible implementation of such custom KeyboardCommandProvider.
 
-#### __[C#] Example 1: Defining a custom KeyboardCommandProvider__
-{{region radvirtualgrid-commands_keyboardcommandprovider_0}}
+__Example 1: Defining a custom KeyboardCommandProvider__
+```C#
 	public class CustomKeyboardCommandProvider: DefaultKeyboardCommandProvider
     {
         private RadVirtualGrid dataControl;
@@ -40,14 +40,14 @@ The following code snippet illustrates a possible implementation of such custom 
             return commandsToExecute;
         }
     }
-{{endregion}}
+```
 
 The final step is to apply the custom KeyboardCommandProvider to __RadVirtualGrid__ through its __KeyboardCommandProvider__ property.
 
-#### __[C#] Example 2: Applying the custom KeyboardCommandProvider__
-{{region radvirtualgrid-commands_keyboardcommandprovider_1}}
+__Example 2: Applying the custom KeyboardCommandProvider__
+```C#
 	this.VirtualGrid.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.VirtualGrid);
-{{endregion}}
+```
 
 ## See Also
 

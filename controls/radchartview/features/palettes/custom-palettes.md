@@ -22,7 +22,7 @@ You can create a custom palette by instantiating an object of type __ChartPalett
 
 #### __XAML__
 
-{{region radchartview-palettes-custom-palettes_0}}
+```XAML
 	<UserControl.Resources>
 	    <telerik:ChartPalette x:Key="customPalette">
 	        <telerik:ChartPalette.SeriesEntries>
@@ -47,7 +47,7 @@ You can create a custom palette by instantiating an object of type __ChartPalett
 	            
 	    </telerik:ChartPalette>
 	</UserControl.Resources>
-	{{endregion}}
+	```
 
 
 
@@ -59,7 +59,7 @@ Notice the __SeriesFamily__ property, which is available for the collections in 
 
 #### __XAML__
 
-{{region radchartview-palettes-custom-palettes_1}}
+```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="1\*"/>
@@ -115,7 +115,7 @@ Notice the __SeriesFamily__ property, which is available for the collections in 
 	        </telerik:AreaSeries>
 	    </telerik:RadCartesianChart>
 	</Grid>
-{{endregion}}
+```
 
 __Example showing the custom palette__  
 

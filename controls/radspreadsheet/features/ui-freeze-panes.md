@@ -32,10 +32,10 @@ The following code will produce freeze panes like the example below:
 
 #### __C#__
 
-{{region radspreadsheet-ui-freez-panes_01}}	
+```C#	
 	            RadWorksheetEditor worksheetEditor = radSpreadsheet.ActiveWorksheetEditor;
 	            worksheetEditor.FreezePanes(new CellIndex(4, 1));
-	{{endregion}}
+	```
 
 ![Rad Spreadsheet UI Freeze Panes 02](images/RadSpreadsheet_UI_Freeze_Panes_02.png)
 
@@ -65,8 +65,8 @@ To unfreeze panes simply you need to use the __UnfreezePanes()__ method of the _
 
 #### __C#__
 
-{{region radspreadsheet-ui-freez-panes_02}}	
+```C#	
 	            RadWorksheetEditor worksheetEditor = radSpreadsheet.ActiveWorksheetEditor;
 	            worksheetEditor.UnfreezePanes();
-{{endregion}}
+```
 

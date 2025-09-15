@@ -15,7 +15,7 @@ In a scenario where you have explicitly set the cell template of a column within
 **Example 1** shows how to achieve the requirement for a Button element within a column's CellTemplate.
 
 #### **[XAML] Example 1: Enable touch event for a button within a column cell template**
-{{region gridview-how-to-enable-touch-events-celltemplate-0}}
+```XAML
 		<telerik:GridViewColumn>
                     <telerik:GridViewColumn.CellTemplate>
                         <DataTemplate>
@@ -28,15 +28,15 @@ In a scenario where you have explicitly set the cell template of a column within
                         </DataTemplate>
                     </telerik:GridViewColumn.CellTemplate>
                 </telerik:GridViewColumn>
-{{endregion}}
+```
 
 The attached property should be set in case of explicitly defining the element through a **custom column** as well. **Example 2** shows how to set the attached property programmatically:
 	
 #### **[C#] Example 2: Programmatically set TouchManager.TouchMode attached property**
-{{region gridview-how-to-enable-touch-events-celltemplate-1}}
+```C#
 	var someButton = new Button();
 	TouchManager.SetTouchMode(someButton, TouchMode.None);
-{{endregion}}
+```
 
 ## See Also
 * [RadGridView - CellTemplate and CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%})

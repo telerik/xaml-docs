@@ -29,8 +29,8 @@ This will automatically add the new theme dll in the references of the project a
 #### __Figure 1: The added theme assembly reference__
 ![{{ site.framework_name }} The added theme assembly reference](images/styling-apperance-switching-themes-design-time-03.png)
 
-#### __[XAML] Example 1: The merged theme resources__
-{{region styling-apperance-swiching-themes-design-time-0}}
+__Example 1: The merged theme resources__
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -39,7 +39,7 @@ This will automatically add the new theme dll in the references of the project a
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}> You can change the theme also by using the [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).{% endif %}
 
@@ -60,10 +60,10 @@ The following example demonstrates how the feature works in few easy steps.
 2. Click the button and under Appearance, you can select the theme that you want to apply to the control. The __StyleManager.Theme__ attached property will be set to the chosen theme. The result is demonstrated in __Example 2__.
 	![RadButton with the Office2016 theme](images/DynamicSwitchThemesPerControl_01.png)
 
-#### __[XAML] Example 2: RadButton with Office2016 theme applied__
-{{region styling-apperance-swiching-themes-design-time-1}}
+__Example 2: RadButton with Office2016 theme applied__
+```XAML
 	<telerik:RadButton Content="Change theme from designer" telerik:StyleManager.Theme="Office2016"   />
-{{endregion}}
+```
 
 {% endif %}
 	

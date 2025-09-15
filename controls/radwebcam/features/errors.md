@@ -38,8 +38,8 @@ There are few expected errors that could appear using the control.
 	
 To replace the error message use the `CameraError` event of RadWebCam. The `CameraErrorEventArgs` give access to an `ErrorInfo` object, which contains information about the error state and message. Use the event to replace the default message with a custom one.
 
-#### __[C#] Replacing the no-camera error message__
-{{region radwebcam-features-errors-0}}
+__Replacing the no-camera error message__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -54,7 +54,7 @@ To replace the error message use the `CameraError` event of RadWebCam. The `Came
 			args.Error.Message = "Cannot detect a camera device.";
 		}           
 	}
-{{endregion}}
+```
 
 __Customized error message__
 
@@ -64,8 +64,8 @@ __Customized error message__
 
 By default the error message is displayed in a simple content presenter. To customize this, use the `CameraErrorContentTemplate` property of RadWebCam.
 
-#### __[XAML] Customizing the error template__
-{{region radwebcam-features-errors-1}}
+__Customizing the error template__
+```XAML
 	<telerik:RadWebCam>
 		<telerik:RadWebCam.CameraErrorContentTemplate>
 			<DataTemplate>
@@ -76,7 +76,7 @@ By default the error message is displayed in a simple content presenter. To cust
 			</DataTemplate>
 		</telerik:RadWebCam.CameraErrorContentTemplate>
 	</telerik:RadWebCam>
-{{endregion}}
+```
 
 __Custom error template__
 

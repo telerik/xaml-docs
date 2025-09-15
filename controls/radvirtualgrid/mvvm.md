@@ -16,9 +16,9 @@ This topic will go through the approach of using __RadVirtualGrid__ in MVVM scen
 
 Firstly, we need an object model that will be used to populate __RadVirtualGrid__ with data. For this purpose, the following __Club__ object is defined.
 
-#### __[C#] Example 1: Defining the Club object__
+__Example 1: Defining the Club object__
 
-{{region radvirtualgrid-mvvm_0}}
+```C#
 	public class Club : ViewModelBase
     {
         private string name;
@@ -107,15 +107,15 @@ Firstly, we need an object model that will be used to populate __RadVirtualGrid_
             return clubs;
         }
     }
-{{endregion}}
+```
 
 ## Implementing a custom DataProvider
 
 The next step is to define a custom __DataProvider__ that handles some specific scenarios. It demonstrates how the selection of the control can be persisted when sorting or filtering. Note, that by default the selection is being cleared when processing these operations. Also, the example demonstrates how to hide a given column, define a custom editor, set a given column to be readonly and apply a custom header.
 
-#### __[C#] Example 2: Implementing a Custom DataProvider__
+__Example 2: Implementing a Custom DataProvider__
 
-{{region radvirtualgrid-mvvm_1}}
+```C#
 	public class MyDataProvider : DataProvider
 	    {
 	        private List<int> selectedIndexes;
@@ -238,15 +238,15 @@ The next step is to define a custom __DataProvider__ that handles some specific 
 	            }
 	        }
     }
-{{endregion}}
+```
 
 ## Defining the View Model
 
 The following code snippet demonstrates how the custom DataProvider can be exposed by a view model.
 
-#### __[C#] Example 2: Defining the View Model__
+__Example 2: Defining the View Model__
 
-{{region radvirtualgrid-mvvm_1}}
+```C#
 	public class MyViewModel: ViewModelBase
     {
         private MyDataProvider dataProvider;
@@ -264,15 +264,15 @@ The following code snippet demonstrates how the custom DataProvider can be expos
             }
         }
     }
-{{endregion}}
+```
 
 ## Populate RadVirtualGrid
 
 This section shows how the View Model can be set to be the DataContext of __RadVirtualGrid__ and how its __DataProvider__ property can be bound to the custom DataProvider.
 
-#### __[XAML] Example 3: Populating RadVirtualGrid__
+__Example 3: Populating RadVirtualGrid__
 
-{{region radvirtualgrid-mvvm_2}}
+```XAML
 	<Window.Resources>
         <local:MyViewModel x:Key="MyViewModel"/>
     </Window.Resources>
@@ -281,7 +281,7 @@ This section shows how the View Model can be set to be the DataContext of __RadV
                                 Margin="5" >
         </telerik:RadVirtualGrid>
     </Grid>
-{{endregion}}
+```
 
 ## See Also
 

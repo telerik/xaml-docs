@@ -15,15 +15,15 @@ You can configure the tooltip that is displayed when the user hovers over the ic
 
 To display a native tooltip, set the __UseNativeTooltip__ property as demonstrated in __Example 1__. When this property is **True** the ToString() value of the **TooltipContent** will be shown in the tooltip.
 
-#### __[XAML] Example 1: Setting TooltipContent__
-{{region xaml-radnotifyicon-tooltip-0}}
+__Example 1: Setting TooltipContent__
+```XAML
     
     <telerik:RadNotifyIcon
             x:Name="icon"
             TooltipContent="My tooltip"
             UseNativeTooltip="True">
     </telerik:RadNotifyIcon>
-{{endregion}}
+```
 
 #### __Figure 1: RadNotifyIcon with tooltip__
 
@@ -35,8 +35,8 @@ To display a native tooltip, set the __UseNativeTooltip__ property as demonstrat
 
 The RadNotifyIcon provides a default TooltipContentTemplate that will be styled according to your theme. You can also customize it as per your requirements. The DataContext inside the __TooltipContentTemplate__ property will be whatever is set to the __TooltipContent__. 
 
-#### __[XAML] Example 2: Setting TooltipContent and TooltipContentTemplate__
-{{region xaml-radnotifyicon-tooltip-1}}
+__Example 2: Setting TooltipContent and TooltipContentTemplate__
+```XAML
     
     <telerik:RadNotifyIcon
         x:Name="icon"
@@ -49,7 +49,7 @@ The RadNotifyIcon provides a default TooltipContentTemplate that will be styled 
             </DataTemplate>
         </telerik:RadNotifyIcon.TooltipContentTemplate>
     </telerik:RadNotifyIcon>
-{{endregion}}
+```
 
 #### __Figure 2: RadNotifyIcon with customized tooltip__
 
@@ -59,17 +59,15 @@ The RadNotifyIcon provides a default TooltipContentTemplate that will be styled 
 
 The __IsTooltipOpen__ property allows you to check whether a styled tooltip is currently open. 
 
-#### __[C#] Example 3: Using the IsTooltipOpen property__
-{{region cs-radnotifyicon-tooltip-2}}
+__Example 3: Using the IsTooltipOpen property__
+```C#
 
     var isOpen = this.icon.IsTooltipOpen;
-{{endregion}}
-
-#### __[VB.NET] Example 3: Using the IsTooltipOpen property__
-{{region vb-radnotifyicon-tooltip-3}}
+```
+```VB.NET
 
     Dim isOpen = Me.icon.IsTooltipOpen
-{{endregion}}
+```
 
 ## See Also 
 

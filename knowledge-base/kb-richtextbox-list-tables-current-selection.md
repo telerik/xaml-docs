@@ -27,11 +27,11 @@ How to retrieve a list of all tables in the current selection in RadRichTextBox.
 
 Here's an example implementation:
 
-#### __[C#]__
-{{region kb-richtextbox-list-tables-current-selection-0}}
+
+```C#
      public List<Table> GetTablesInSelection()
      {
           var documentFromSelection = this.richTextBox.Document.Selection.CreateDocumentFromSelection();
           return documentFromSelection.EnumerateChildrenOfType<Table>().ToList();
      }
-{{endregion}}
+```

@@ -32,42 +32,38 @@ The snapshot below shows the content of the __RadTimeBarResources.de.resx__ file
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
 
-#### __[C#] Example 1: Setting ResourceManager__
-{{region radtimebar-localization_0}}
+__Example 1: Setting ResourceManager__
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	  ResourceManager = RadTimeBarResource.ResourceManager
 	};
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting ResourceManager__
-{{region radtimebar-localization_1}}
+```
+```VB.NET
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
-{{endregion}}
+```
 
 >tip If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and German languages, you can store the localized strings in Resources.resx and Resources.de.resx files. For the Resources.resx file you can set ResXFileCodeGenerator to Internal or Public and for others - to No code generation. Then, open the project file in a text-mode and insert the code below into the section. In this way you notify the framework about the supported cultures
 
-#### __[XML] Example 2: Adding supported cultures__
-{{region radtimebar-localization-10}}
+__Example 2: Adding supported cultures__
+```XML
 	<SupportedCultures>en;de</SupportedCultures>
-{{endregion}}
+```
 
 To see the __RadTimeBar__ localized in German for example you should set the *CurrentCulture* and *CurrentUICulture* in *App.xaml.cs/ App.xaml.vb* like this:
 
-#### __[C#] Example 3: Setting the application's culture__
-{{region radtimebar-localization_2}}
+__Example 3: Setting the application's culture__
+```C#
 	CultureInfo culture = new CultureInfo("de");
 	System.Threading.Thread.CurrentThread.CurrentCulture = culture;
 	System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the application's culture__
-{{region radtimebar-localization_3}}
+```
+```VB.NET
 	Dim culture As New CultureInfo("de")
 	System.Threading.Thread.CurrentThread.CurrentCulture = culture
 	System.Threading.Thread.CurrentThread.CurrentUICulture = culture
-{{endregion}}
+```
 
 Here is how the localized *RadTimeBar* will look like:
 
@@ -77,8 +73,8 @@ __Localization Using Custom Localization Manager__
 
 The other way to localize your __RadTimeBar__ control is to create a class that derives from the __LocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below for German language:
 
-#### __[C#] Example 4: Creating custom LocalizationManager__
-{{region radtimebar-localization_4}}
+__Example 4: Creating custom LocalizationManager__
+```C#
 	public class CustomLocalizationManager : LocalizationManager
 	{
 		public override string GetStringOverride(string key)
@@ -97,10 +93,8 @@ The other way to localize your __RadTimeBar__ control is to create a class that 
 			return base.GetStringOverride(key);
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Creating custom LocalizationManager__
-{{region radtimebar-localization_5}}
+```
+```VB.NET
 	Friend Class CustomLocalizationManager Inherits LocalizationManager
 	Public Overrides Function GetStringOverride(ByVal key As String) As String
 	   Select Case key
@@ -116,19 +110,17 @@ The other way to localize your __RadTimeBar__ control is to create a class that 
 	Return MyBase.GetStringOverride(key)
 	End Function
 	End Class
-{{endregion}}
+```
 
 To apply custom localization to your controls just instantiate your custom __LocalizationManager__ and set it to the static property __LocalizationManager.Manager__, before the creation of the UI.
 
-#### __[C#] Example 5: Setting the localization manager__
-{{region radtimebar-localization_6}}
+__Example 5: Setting the localization manager__
+```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting the localization manager__
-{{region radtimebar-localization_7}}
+```
+```VB.NET
 	LocalizationManager.Manager = New CustomLocalizationManager()
-{{endregion}}
+```
 
 >Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.
 
@@ -138,8 +130,8 @@ __RadTimeBar__ provides you with built-in resources for several cultures:  Spani
 
 To change the default culture, you should set the __CurrentCulture__ and the __CurrentUICulture__ of the __CurrentThread__. Note that this must happen in the code-behind of your __Application__ (__App.xaml.cs/ App.xaml.vb__) file, right before the UI initialization. The next code-snippet shows you how to change the __CurrentCulture__ to __Dutch__.
 
-#### __[C#] Example 6: Setting the current culture to Dutch__
-{{region radtimebar-localization_8}}
+__Example 6: Setting the current culture to Dutch__
+```C#
 	public App()
 	{
 	  System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de");
@@ -149,10 +141,8 @@ To change the default culture, you should set the __CurrentCulture__ and the __C
 	  this.UnhandledException += this.Application_UnhandledException;
 	  InitializeComponent();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Setting the current culture to Dutch__
-{{region radtimebar-localization_9}}
+```
+```VB.NET
 	Public Sub New()
 	   System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("de")
 	   System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de")
@@ -161,7 +151,7 @@ To change the default culture, you should set the __CurrentCulture__ and the __C
 	   Me.UnhandledException += Me.Application_UnhandledException
 	   InitializeComponent()
 	End Sub
-{{endregion}}
+```
 
 __RadTimeBar Resource Keys__
 

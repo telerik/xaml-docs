@@ -34,9 +34,9 @@ Follow these steps to configure __CellStyleSelector__:
 
    * __SmallStadiumStyle__
 
-#### __[C#] Example 1: The StadiumCapacityStyle class__
+__Example 1: The StadiumCapacityStyle class__
 
-{{region cs-gridview-cell-style-selector_0}}
+```C#
 	public class StadiumCapacityStyle : StyleSelector
 	{
 	    public override Style SelectStyle(object item, DependencyObject container)
@@ -58,11 +58,8 @@ Follow these steps to configure __CellStyleSelector__:
 	    public Style BigStadiumStyle { get; set; }
 	    public Style SmallStadiumStyle { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: The StadiumCapacityStyle class__
-
-{{region vb-gridview-cell-style-selector_1}}
+```
+```VB.NET
 	Public Class StadiumCapacityStyle
 	    Inherits StyleSelector
 	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
@@ -95,13 +92,13 @@ Follow these steps to configure __CellStyleSelector__:
 	    End Property
 	    Private m_SmallStadiumStyle As Style
 	End Class
-{{endregion}}
+```
 
 3. In the XAML file, define the style selector as a resource and set the properties of __BigStadiumStyle__ and __SmallStadiumStyle__:
 
-#### __[XAML] Example 2: Set the different styles for the style selector__
+__Example 2: Set the different styles for the style selector__
 
-{{region gridview-cell-style-selector_2}}
+```XAML
 		<Grid.Resources>
 			<my:StadiumCapacityStyle x:Key="stadiumCapacityStyle">
 				<my:StadiumCapacityStyle.BigStadiumStyle>
@@ -116,28 +113,28 @@ Follow these steps to configure __CellStyleSelector__:
 				</my:StadiumCapacityStyle.SmallStadiumStyle>
 			</my:StadiumCapacityStyle>
 		</Grid.Resources>
-{{endregion}}
+```
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__.
 
 If you use our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), base the conditional style on the style that is defined for the corresponding theme:
 
-#### __[XAML] Example 3: Set the style when using implicit styles__
+__Example 3: Set the style when using implicit styles__
 
-{{region gridview-cell-style-selector_4}}
+```XAML
 
 	<Style TargetType="telerik:GridViewCell" BasedOn="{StaticResource GridViewCellStyle}">
 		<Setter Property="Background" Value="Yellow" />
 	</Style>
-{{endregion}}
+```
 
 >tip The __GridViewCellStyle__ resource is accessible when you use the NoXaml dlls and you merged the associated .xaml files. The Style is defined in the __Telerik.Windows.Controls.GridView.xaml__ file which is why you can access it using the `StaticResource` keyword.
 
 4. Finally, set the __CellStyleSelector__ property of the data column that represents the StadiumCapacity field:
 
-#### __[XAML] Example 4: Set CellStyleSelector for the column__
+__Example 4: Set CellStyleSelector for the column__
 
-{{region gridview-cell-style-selector_3}}
+```XAML
 
 	<telerik:RadGridView ItemsSource="{Binding Clubs}"                   
 	                     AutoGenerateColumns="False">
@@ -152,7 +149,7 @@ If you use our [Implicit Themes]({%slug styling-apperance-implicit-styles-overvi
 	                                    DataFormatString="{}{0:N0}"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 >Since the virtualization of the GridView is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewCell) and their properties. You should not set properties of GridViewCell inside SelectStyle method. [Read more on UI Virtualization]({%slug radgridview-features-ui-virtualization%}).
           

@@ -27,12 +27,12 @@ It is important to not mix the two approaches and always use the **correct assem
 If you wish to simply change a few of the colors or font sizes of your controls, you can [define a new style]({%slug implicit-styles-styling-the-controls%}) for them and override the desired properties. 
 
 #### **[XAML] Example 1: Custom styles for RadListBox**
-{{region getting-started-change-control-appearance-0}}
+```XAML
     <Style TargetType="telerik:RadListBox">
         <Setter Property="Foreground" Value="Green" />
         <Setter Property="FontSize" Value="22" />
     </Style>
-{{endregion}}
+```
 
 If you wish to apply further customizations such as repositioning the building parts of a control, however, you will most probably need to [edit its control template]({%slug styling-apperance-editing-control-templates%}).
 

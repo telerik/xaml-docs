@@ -27,15 +27,15 @@ You can find more info [here](http://www.telerik.com/help/wpf/installation-insta
 
 Here is a simple definition of a __RadMaskedNumericInput__ control:
 
-#### __[XAML] Example 1: Define RadMaskedNumericInput in XAML__
-{{region xaml-radmaskedinput-features-controls-numeric_0}}
+__Example 1: Define RadMaskedNumericInput in XAML__
+```XAML
 	<telerik:RadMaskedNumericInput Culture="en-US"								  
 								   InputBehavior="Replace"
 								   Mask="#9.2"
 								   TextMode="PlainText"
 								   UpdateValueEvent="PropertyChanged"
 								   Value="12345" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Numeric Mask](images/radmaskedinput_numericinput_default.png)
 
@@ -45,8 +45,8 @@ RadMaskedNumericInput's __Value__ property is of type __nullable double (double?
 
 >important Binding to __object__ is not support and may result in unpredictable behavior.
 
-#### __[XAML] Example 2: Define the view model__
-{{region csharp-radmaskedinput-features-controls-numeric_1}}
+__Example 2: Define the view model__
+```XAML
 	public class ViewModel : ViewModelBase
 	{
 		private double? amount;
@@ -69,17 +69,17 @@ RadMaskedNumericInput's __Value__ property is of type __nullable double (double?
             }
         }	
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 3: Binding the Value property__
-{{region csharp-radmaskedinput-features-controls-numeric_3}}
+__Example 3: Binding the Value property__
+```C#
 	<telerik:RadMaskedNumericInput Culture="en-US"
 								   InputBehavior="Replace"
 								   Mask="#9.2"
 								   TextMode="PlainText"
 								   UpdateValueEvent="LostFocus"
 								   Value="{Binding Amount,Mode=TwoWay}" />
-{{endregion}}
+```
 
 ## FormatString property
 
@@ -89,8 +89,8 @@ You can further format the entered value by setting the __FormatString__ propert
 
 When __Mask__ property is set the __FormatString__ property will be applied to the __Text__ property of MaskedNumericInput control. 
 
-#### __[XAML] Example 2: Setting the FormatString property in Mask scenario__
-{{region xaml-radmaskedinput-features-controls-numeric_4}}
+__Example 2: Setting the FormatString property in Mask scenario__
+```XAML
 	<telerik:RadMaskedNumericInput Culture="en-US" x:Name="numericInput" Width="200"
 								   EmptyContent="Enter digits"
 								   FormatString="n3"
@@ -108,7 +108,7 @@ When __Mask__ property is set the __FormatString__ property will be applied to t
 			<TextBlock Text="{Binding Value,ElementName=numericInput}"/>
 		</StackPanel>
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput  ](images/radmaskedinput_numericinput_formatted_mask.png)
 
@@ -116,15 +116,15 @@ When __Mask__ property is set the __FormatString__ property will be applied to t
 
 In __No-Mask__ scenario the __FormatString__ property will be applied to the __Value__ property of MaskedNumericInput control. 
 
-#### __[XAML] Example 3: Setting the FormatString property in No-Mask scenario__
-{{region xaml-radmaskedinput-features-controls-numeric_5}}
+__Example 3: Setting the FormatString property in No-Mask scenario__
+```XAML
 	<telerik:RadMaskedNumericInput Culture="en-US"
 								   FormatString="n3"
 								   Mask=""
 								   TextMode="PlainText"
 								   UpdateValueEvent="PropertyChanged"
 								   Value="0" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput  ](images/radmaskedinput_numericinput_formatted_no_mask.png)
 

@@ -31,7 +31,7 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-use-custom-3d-models_0}}
+```XAML
 	<Viewport3D>
 	    <Viewport3D.Resources>
 	        <MaterialGroup x:Key="StarFace">
@@ -145,7 +145,7 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 	        </ModelVisual3D>
 	    </Viewport3D.Children>
 	</Viewport3D>
-{{endregion}}
+```
 
 
 
@@ -157,7 +157,7 @@ __RadChart__ uses innovative approach to incorporate custom 3D controls and item
 
 #### __C#__
 
-{{region cs-radchart-how-to-use-custom-3d-models_1}}
+```C#
 	private void FillSampleChartData()
 	{
 	    DataSeries barSeries = new DataSeries();
@@ -165,20 +165,20 @@ __RadChart__ uses innovative approach to incorporate custom 3D controls and item
 	    barSeries.Definition.ItemStyle = (Style)this.FindResource("MyStyle");            
 	    this.RadChart1.DefaultView.ChartArea.DataSeries.Add(barSeries);
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-how-to-use-custom-3d-models_2}}
+```VB.NET
 	Private Sub FillSampleChartData()
 	    Dim barSeries As New DataSeries()
 	    barSeries.Definition = New Bar3DSeriesDefinition()
 	    barSeries.Definition.ItemStyle = DirectCast(Me.FindResource("MyStyle"), Style)
 	    Me.RadChart1.DefaultView.ChartArea.DataSeries.Add(barSeries)
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -188,7 +188,7 @@ In effect the control template for the __Bar3D__ class is customized. Note that 
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-use-custom-3d-models_5}}
+```XAML
 	<ControlTemplate TargetType="{x:Type telerik:BarControl3D}">
 	<!-- ... -->
 	<Grid x:Name="PART_Container" />
@@ -205,13 +205,13 @@ In effect the control template for the __Bar3D__ class is customized. Note that 
 			</ContainerUIElement3D>
 		</Viewport3D>
 	</ControlTemplate>
-{{endregion}}
+```
 
 Here is the actual template that follows this pattern:
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-use-custom-3d-models_3}}
+```XAML
 	       
 	<Style x:Key="MyStyle" TargetType="{x:Type telerik:BarControl3D}">
 	  <Setter Property="Template">
@@ -318,7 +318,7 @@ Here is the actual template that follows this pattern:
 	   </Setter.Value>
 	  </Setter>
 	 </Style>
-{{endregion}}
+```
 
 
 
@@ -326,9 +326,9 @@ Here is the actual template that follows this pattern:
 
 #### __XAML__
 
-{{region xaml-radchart-how-to-use-custom-3d-models_4}}
+```XAML
 	ScaleY="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type telerik:Bar3D}}, Path=Height}"
-{{endregion}}
+```
 
 
 

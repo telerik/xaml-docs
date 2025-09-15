@@ -18,8 +18,8 @@ The examples in this article show the `Windows11Palette`, but the same approach 
 
 The palette object can be accessed and modified in code-behind by using the corresponding properties of the palette class (ex: `Windows11Palette`). The settings should happen before the UI is initialized. For example, in the `OnStartup` override of the `App` class or just before the `InitializeComponent` call of the main window.
 
-#### __[C#] Setting palette colors in code__
-{{region styling-apperance-theme-palettes-0}}
+__Setting palette colors in code__
+```C#
 	public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
@@ -34,7 +34,7 @@ The palette object can be accessed and modified in code-behind by using the corr
             base.OnStartup(e);
         }
     }
-{{endregion}}
+```
 
 ## Changing Palette Settings in XAML
  
@@ -44,17 +44,17 @@ To define or modify a theme brush or another theme resource in XAML, use the cor
 
 The name of the markup extension matches the theme name with "ResourceKey" as postfix. For example, to set properties of the `Windows11Palette`, use the `Windows11ResourceKey` markup extension class. For, the `FluentPalette`, use `FluentResourceKey`,  and so on. The property names in the markup extensions matches the ones in the palette class with the sole exception that in the markup extension all color values are of type `Brush` which requires a slight change in the name. For example, `Windows11Palette.AccentColor` becomes `Windows11ResourceKey.AccentBrush`.
 
-#### __[XAML] Replacing a default palette resource in the App.xaml file globally for all Telerik controls that use this resource__
-{{region styling-apperance-theme-palettes-1}}
+__Replacing a default palette resource in the App.xaml file globally for all Telerik controls that use this resource__
+```XAML
 	<Application.Resources>
 		<SolidColorBrush x:Key="{x:Static telerik:Windows11ResourceKey.AccentBrush}" Color="Purple" />
   		<Thickness x:Key="{x:Static telerik:Windows11ResourceKey.FocusVisualMargin  }" Left="10" Top="10" Right="10" Bottom="10"/>
 		<CornerRadius x:Key="{x:Static telerik:Windows11ResourceKey.CornerRadius}">10</CornerRadius>
 	</Application.Resources>
-{{endregion}}
+```
 
-#### __[XAML] Replacing a default palette resource for a single control instance__
-{{region styling-apperance-theme-palettes-2}}
+__Replacing a default palette resource for a single control instance__
+```XAML
 	<telerik:RadButton>
 		<telerik:RadButton.Resources>
 			<!-- Control-specific modification -->
@@ -63,7 +63,7 @@ The name of the markup extension matches the theme name with "ResourceKey" as po
       			<CornerRadius x:Key="{x:Static telerik:Windows11ResourceKey.CornerRadius}">10</CornerRadius>
 		</telerik:RadButton.Resources>
 	</telerik:RadButton>
-{{endregion}}
+```
 
 ## Theme Color Variations
 
@@ -71,8 +71,8 @@ Some of the Telerik themes provide predefined sets of colors (color variations).
 
 To apply a color variation, call the `LoadPreset` method of the corresponding palette clas (ex: `Windows11Palette`). The variations are acessed through the `ColorVariation` enum of the palette.
 
-#### __[C#] Setting color variation__
-{{region styling-apperance-theme-palettes-3}}
+__Setting color variation__
+```C#
 	public partial class App : Application
     {
         protected override void OnStartup(StartupEventArgs e)
@@ -81,17 +81,17 @@ To apply a color variation, call the `LoadPreset` method of the corresponding pa
             base.OnStartup(e);
         }
     }
-{{endregion}}	
+```	
 
 ## Using Palette Resources Stand-Alone
 
 The palette resources can be accessed in XAML and used to style any WPF control using the corresponding markup extension class (ex: `Windows11Resource`). 
 
-#### __[XAML] Using the Windows11Resource markup extension__
-{{region styling-apperance-theme-palettes-4}}
+__Using the Windows11Resource markup extension__
+```XAML
 	<TextBlock Text="A text block colored with the Windows11 AccentBrush" 
 			   Foreground="{telerik:Windows11Resource ResourceKey=AccentBrush}" />
-{{endregion}}
+```
 
 ## Setting a Theme Color Variation in Design Time
 

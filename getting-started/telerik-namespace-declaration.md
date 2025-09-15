@@ -23,8 +23,8 @@ Almost all Telerik controls can be found in the `telerik` URI namespace schema. 
    	
 3. Go to the opening tag of the parent control (like the Window or UserControl) and type in the "telerik" namespace identifier. When you type the "equals" character in the drop down list select the `http://schemas.telerik.com/2008/xaml/presentation` item.    
 	
-	#### __[XAML] Telerik namespace added in XAML__
-	{{region installation-adding-application-namespace-declaration-0}}
+	__Telerik namespace added in XAML__
+	```XAML
 		<Window x:Class="WpfApplication1.MainWindow"
 				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -33,12 +33,12 @@ Almost all Telerik controls can be found in the `telerik` URI namespace schema. 
 			<Grid>
 			</Grid>
 		</Window>
-	{{endregion}}
+	```
 
 4. Now you can declare any controls, existing in the Telerik namespace, which are included in the assemblies added to the project.
 
-	#### __[XAML] Using the Telerik namespace__
-	{{region installation-adding-application-namespace-declaration-1}}
+	__Using the Telerik namespace__
+	```XAML
 		<Window x:Class="WpfApplication1.MainWindow"
 				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -48,6 +48,6 @@ Almost all Telerik controls can be found in the `telerik` URI namespace schema. 
 				<telerik:RadTreeView/>
 			</Grid>
 		</Window>
-	{{endregion}}
+	```
 
 >tip See the Telerik assemblies required by each control in the [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}) article.

@@ -16,28 +16,28 @@ __RadTabControl__ expose few properties that can be used for controlling its [ta
 	
 	The property can be set in the following manners:
 	#### __XAML__
-	{{region radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-RadTabControl_0}}
+	```XAML
 		<telerik:RadTabControl x:Name="radTabControl" TabStripPlacement="Bottom">
 			<telerik:RadTabItem Header="Calendar"/>
 			<telerik:RadTabItem Header="Colors"/>
 			<telerik:RadTabItem Header="Quote"/>
 		</telerik:RadTabControl>
-	{{endregion}}
+	```
 	
 	#### __C#__
-	{{region radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-RadTabControl_1}}
+	```C#
 		private void SetTabStripPlacement()
 		{
 			radTabControl.TabStripPlacement = Telerik.Windows.Controls.Dock.Bottom;
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
-	{{region radtabcontrol-how-to-change-the-position-of-the-tab-strip-of-RadTabControl_2}}
+	```VB.NET
 		Private Sub SetTabStripPlacement()
 			radTabControl.TabStripPlacement = Telerik.Windows.Controls.Dock.Bottom
 		End Sub
-	{{endregion}}
+	```
 	
 	>The tab strip panel is wrapped in a __LayoutTransformControl__ which rotates it around the RadTabControl when the TabStripPlacement property is set. For example, when you set the __TabStripPlacement__ to __Left__ a __LayoutTransformation__ with angle of -90 is applied on the LayoutTransformControl and the tab strip is rotated with -90 degrees (counterclockwise). 
 	

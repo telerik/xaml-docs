@@ -46,7 +46,7 @@ StackTrace:
 
 This can happen in a scenario with multiple gauge controls with animated indicators (like the [Needle]({%slug radgauge-features-indicators-needle%}) element) that are updated very fast at runtime (on a small time interval). To resolve this, disable the animation of the indicators. To do this set their __IsAnimated__ property to False.
 
-#### __[XAML]__
-{{region kb-gauge-dependencyobject-not-context-for-this-freezable-0}}
+
+```XAML
 	<telerik:Needle IsAnimated="False" /> 
-{{endregion}}
+```

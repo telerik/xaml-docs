@@ -14,8 +14,8 @@ Some series in the RadChartView suite have a mechanism which allows for determin
 
 >tip The series which support this property are: **AreaSeries**, **ScatterAreaSeries**, **ScatterSplineAreaSeries**, **SplineAreaSeries**, **StepAreaSeries** and **BarSeries**.
 
-#### __[XAML] Example 1: BarSeries with OriginValue__
-{{region xaml-radchartview-features-originvalue_0}}
+__Example 1: BarSeries with OriginValue__
+```XAML
 		<telerik:RadCartesianChart Palette="Windows8">
 			<telerik:RadCartesianChart.HorizontalAxis>
 				<telerik:CategoricalAxis/>
@@ -37,7 +37,7 @@ Some series in the RadChartView suite have a mechanism which allows for determin
 				</telerik:BarSeries>
 			</telerik:RadCartesianChart.Series>
 		</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 
 #### Figure 1: Result from Example 1 

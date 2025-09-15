@@ -26,7 +26,7 @@ You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML 
 
 #### __XAML__
 
-{{region radpivotgrid-data-queryable_1}}
+```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="*"/>
@@ -40,7 +40,7 @@ You can define the __QueryableDataProvider__ as a *StaticResource* in your XAML 
 	    <pivot:RadPivotGrid Name="radPivotGrid" DataProvider="{StaticResource QueryableDataProvider}">
 	    <pivot:RadPivotFieldList Name="radPivotFieldList" Grid.Column="1"  DataProvider="{StaticResource QueryableDataProvider}"/>
 	</Grid>
-{{endregion}}
+```
 
 >cautionIf you set different DataProviders for __RadPivotGrid__ and __RadPivotFieldList__ you will not be able to see any changes in __RadPivotGrid__ even when you change something in __RadPivotFieldList__. 
 
@@ -48,19 +48,19 @@ You can also create an object of type __QueryableDataProvider__ in the backgroun
 
 #### __C#__
 
-{{region radpivotgrid-data-queryable_1}}
+```C#
 	QueryableDataProvider queryableDataProvider = new QueryableDataProvider();
 	this.radPivotGrid1.DataProvider = queryableDataProvider;
 	this.radPivotFieldList1.DataProvider = queryableDataProvider;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-queryable_1}}
+```VB.NET
 	Dim queryableDataProvider As New QueryableDataProvider()
 	Me.radPivotGrid1.DataProvider = queryableDataProvider
 	Me.radPivotFieldList1.DataProvider = queryableDataProvider
-{{endregion}}
+```
 
 ## Adding Data to QueryableDataProvider
 
@@ -68,21 +68,21 @@ The __QueryableDataProvider__ has *Source* property and it is mandatory to set i
 
 #### __C#__
 
-{{region radpivotgrid-data-queryable_2}}
+```C#
 	QueryableDataProvider queryableDataProvider = new QueryableDataProvider();
 	queryableDataProvider.Source = MyCollection;
 	this.radPivotGrid1.DataProvider = queryableDataProvider;
 	this.radPivotFieldList1.DataProvider = queryableDataProvider;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-queryable_2}}
+```VB.NET
 	Dim queryableDataProvider As New QueryableDataProvider()
 	queryableDataProvider.Source = MyCollection
 	Me.radPivotGrid1.DataProvider = queryableDataProvider
 	Me.radPivotFieldList1.DataProvider = queryableDataProvider
-{{endregion}}
+```
 
 ## Adding Group Descriptions Collections
 
@@ -96,17 +96,17 @@ Here's how to define the __RowGroupDescriptions__ in your application:
 
 #### __XAML__
 
-{{region radpivotgrid-data-queryable_3}}
+```XAML
 	<pivot:QueryableDataProvider.RowGroupDescriptions>
 	    <pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" />
 	    <pivot:QueryableDoubleGroupDescription PropertyName="Freight" />
 	    <pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" />
 	</pivot:QueryableDataProvider.RowGroupDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-queryable_3}}
+```C#
 	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
 	shipCountryGroupDescription.PropertyName = "ShipCountry";
 	
@@ -122,11 +122,11 @@ Here's how to define the __RowGroupDescriptions__ in your application:
 	    queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription);
 	    queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription);
 	};
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-queryable_3}}
+```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
 	
@@ -141,7 +141,7 @@ Here's how to define the __RowGroupDescriptions__ in your application:
 		queryableDataProvider.RowGroupDescriptions.Add(freightCountryGroupDescription)
 		queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription)
 	End Using
-{{endregion}}
+```
 
 * __ColumnGroupDescription__ - the data added to this description will be shown as columns headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as QueryablePropertyGroupDescription, QueryableDateTimeGroupDescription, QueryableDoubleGroupDescription or you can create custom implementation of QueryableGroupDescription class. 
 
@@ -149,27 +149,27 @@ Here's how to define the __ColumnGroupDescriptions__ in your application:
 
 #### __XAML__
 
-{{region radpivotgrid-data-queryable_4}}
+```XAML
 	<pivot:QueryableDataProvider.ColumnGroupDescriptions>
 	    <pivot:QueryableDoubleGroupDescription PropertyName="Freight"/>
 	</pivot:QueryableDataProvider.ColumnGroupDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-queryable_4}}
+```C#
 	QueryableDoubleGroupDescription doubleGroupDescription = new QueryableDoubleGroupDescription();
 	doubleGroupDescription.PropertyName = "Freight";
 	queryableDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-queryable_4}}
+```VB.NET
 	Dim doubleGroupDescription As New DoubleGroupDescription()
 	doubleGroupDescription.PropertyName = "Freight"
 	queryableDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription)
-{{endregion}}
+```
 
 * __AggregateDescriptions__ - the data added to this description will be aggregated and included in __RadPivotGrid__ as Cells. The properties can be defined as QueryablePropertyAggregateDescription or you can create custom implementation of QueryableAggregateDescription class.
 
@@ -177,16 +177,16 @@ Here's how to define the __AggregateDescriptions__ in your application:
 
 #### __XAML__
 
-{{region radpivotgrid-data-queryable_5}}
+```XAML
 	<pivot:QueryableDataProvider.AggregateDescriptions>
 	    <pivot:QueryablePropertyAggregateDescription AggregateFunction="Count" StringFormat="C" PropertyName="Freight"/>
 	    <pivot:QueryablePropertyAggregateDescription PropertyName="ShipVia"/>
 	</pivot:QueryableDataProvider.AggregateDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-queryable_5}}
+```C#
 	var freightAggregateDescription = new QueryablePropertyAggregateDescription();
 	freightAggregateDescription.PropertyName = "Freight";
 	freightAggregateDescription.StringFormat = "C";
@@ -201,11 +201,11 @@ Here's how to define the __AggregateDescriptions__ in your application:
 	    queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription);
 	    queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription);
 	};
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-queryable_5}}
+```VB.NET
 	Dim freightAggregateDescription = New QueryablePropertyAggregateDescription()
 	freightAggregateDescription.PropertyName = "Freight"
 	freightAggregateDescription.StringFormat = "C"
@@ -218,7 +218,7 @@ Here's how to define the __AggregateDescriptions__ in your application:
 		queryableDataProvider.AggregateDescriptions.Add(freightAggregateDescription)
 		queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription)
 	End Using
-{{endregion}}
+```
 
 With R2 2016 of UI for WPF a brand new property __IgnoreNullValues__ was introduced for the __PropertyAggregateDescription__. This property is of type bool and it is used to determine whether a specific __PropertyAggregateDescription__ should ignore the null values when calculating its result. The default value of the property is false, so in order to ignore the null values, you should set the property to __true__.	  	
 
@@ -226,19 +226,19 @@ Here's how to define the __AggregateDescriptions__ in your application with a se
 
 #### __XAML__
 
-{{region radpivotgrid-data-queryable_5}}
+```XAML
 	<pivot:QueryableDataProvider.AggregateDescriptions>
 	    <pivot:QueryablePropertyAggregateDescription AggregateFunction="Count" StringFormat="C" PropertyName="Freight" IgnoreNullValues="true"/>
 	    <pivot:QueryablePropertyAggregateDescription PropertyName="ShipVia"/>
 	</pivot:QueryableDataProvider.AggregateDescriptions>
-{{endregion}}
+```
 
 
 In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDescriptions__ you would add in the __LocalDataSourceProvider__ you should handle the __LocalDataSourceProvider.PrepareDescriptionForField__ event and set IgnoreNullValues in the handler:
 
 #### __C#__
 
-{{region radpivotgrid-data-local_5}}
+```C#
 	private void QueryableDataProvider_PrepareDescriptionForField(object sender, Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs e)
 	{
 		var description = e.Description as QueryablePropertyAggregateDescription;
@@ -247,24 +247,24 @@ In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDesc
 			description.IgnoreNullValues = true;
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-local_5}}
+```VB.NET
 	Private Sub QueryableDataProvider_PrepareDescriptionForField(sender As Object, e As Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs)
 		Dim description = TryCast(e.Description, QueryablePropertyAggregateDescription)
 		If description IsNot Nothing Then
 			description.IgnoreNullValues = True
 		End If
 	End Sub
-{{endregion}}
+```
 
 * __FilterDescriptions__ - the data added to this description will be filtered and after that included in __RadPivotGrid__. The properties can be defined as QueryablePropertyFilterDescription or you can create custom implementation of QueryableFilterDescription class.            
 
 #### __XAML__
 
-{{region radpivotgrid-data-queryable_6}}
+```XAML
 	<pivot:QueryableDataProvider.FilterDescriptions>
 	    <pivot:QueryablePropertyFilterDescription PropertyName="Freight">
 	        <pivot:QueryablePropertyFilterDescription.Condition>
@@ -272,11 +272,11 @@ In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDesc
 	        </pivot:QueryablePropertyFilterDescription.Condition>
 	    </pivot:QueryablePropertyFilterDescription>
 	</pivot:QueryableDataProvider.FilterDescriptions>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radpivotgrid-data-queryable_6}}
+```C#
 	var freightFilterDescription = new QueryablePropertyFilterDescription();
 	freightFilterDescription.PropertyName = "Freight";
 	var intervalCondition = new QueryableIntervalCondition();
@@ -285,11 +285,11 @@ In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDesc
 	freightFilterDescription.Condition = intervalCondition;
 	
 	queryableDataProvider.FilterDescriptions.Add(freightFilterDescription);
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radpivotgrid-data-queryable_6}}
+```VB.NET
 	Dim freightFilterDescription = New QueryablePropertyFilterDescription()
 	freightFilterDescription.PropertyName = "Freight"
 	Dim intervalCondition = New QueryableIntervalCondition()
@@ -298,7 +298,7 @@ In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDesc
 	freightFilterDescription.Condition = intervalCondition
 	
 	queryableDataProvider.FilterDescriptions.Add(freightFilterDescription)
-{{endregion}}
+```
 
 ## Adding Property Descriptions
 

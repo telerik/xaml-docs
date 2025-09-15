@@ -71,9 +71,9 @@ Now let's go to the client side.
 
 **2.** Now add the __RadGridView__ and __RadEntityFrameworkDataSource__ controls to the main window. **Example 1** demonstrates how you can do that.
 
-#### __[XAML] Example 1: Adding RadGridView and RadEntityFrameworkDataSource__
+__Example 1: Adding RadGridView and RadEntityFrameworkDataSource__
 
-{{region xaml-entityframework-getting-started-1}}
+```XAML
 	<Window x:Class="EntityFrameworkGettingStarted.MainWindow"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -92,7 +92,7 @@ Now let's go to the client side.
 			<telerik:RadGridView ItemsSource="{Binding DataView, ElementName=EntityFrameworkDataSource}"/>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 
 >importantSince __Q3 SP1 2012__ we have added the __RadEntityFrameworkDataSource.DbContext__ property which should be set instead of the **ObjectContext** property for versions of Entity Framework newer than version **5.0**. If you are using an older version of Entity Framework, you can set the **RadEntityFrameworkDataSource.ObjectContext** property.
 
@@ -110,8 +110,8 @@ Several important things to notice:
 
 The __RelatedObjects__ property of the RadEntityFrameworkDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders" collection in case you want to get the related Orders for each Customer from the database.
 
-#### __[XAML] Example 2: Using the RelatedObjects__
-{{region xaml-entityframework-getting-started-1}}
+__Example 2: Using the RelatedObjects__
+```XAML
     <telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
         <telerik:RadEntityFrameworkDataSource.RelatedObjects>
             <sys:String>Orders</sys:String>
@@ -120,7 +120,7 @@ The __RelatedObjects__ property of the RadEntityFrameworkDataSource allows you t
 			<local:MyEntityModel/>
 		</telerik:RadEntityFrameworkDataSource.DbContext>
     </telerik:RadEntityFrameworkDataSource>
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

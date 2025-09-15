@@ -17,7 +17,7 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 {% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_0}}
+```XAML
 	        <Grid>
 	            <Grid.Resources>
 	                <telerik:HierarchicalDataTemplate x:Key="treeViewTemplate" ItemsSource="{Binding Children}">
@@ -45,13 +45,13 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 	                <TextBox x:Name="userInput" />
 	            </StackPanel>
 	        </Grid>
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
 #### __XAML__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_22}}
+```XAML
 	        <Grid>
 	            <Grid.Resources>
 	                <HierarchicalDataTemplate x:Key="treeViewTemplate" ItemsSource="{Binding Children}">
@@ -79,14 +79,14 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 	                <TextBox x:Name="userInput" />
 	            </StackPanel>
 	        </Grid>
-{{endregion}}
+```
 
 {% endif %}
 
 The data source for the radtreeview will be consisted of __DataItems__, only.
 
 #### __C#__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_1}}
+```C#
 	public class DataItem : ViewModelBase
 	    {
 	        private string title;
@@ -116,10 +116,10 @@ The data source for the radtreeview will be consisted of __DataItems__, only.
 	            }
 	        }
 	    }
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_2}}
+```VB.NET
 	Public Class DataItem
 	        Inherits ViewModelBase
 	        Private m_title As String
@@ -143,22 +143,22 @@ The data source for the radtreeview will be consisted of __DataItems__, only.
 	            End Get
 	        End Property
 	    End Class
-{{endregion}}
+```
 
 Set a __DataItem__ instance to the __ItemsSource__ property of the __RadTreeView__ and create some simple data like in the code snippet below.        
 
 #### __C#__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_3}}
+```C#
 	this.treeView.ItemsSource = Enumerable.Range(1, 10).Select(i => new DataItem()
 	{
 	    Title = string.Format("Item {0}", i)
 	}).ToList();
-{{endregion}}
+```
 
 The actual loading on demand of the business items can be implemented in the getter of the __Children__ property of the __DataItem__ class. The LoadOnDemand feature of the RadTreeView control is used to visualize the expander icon in the front of each RadTreeViewItem. We do not use the built-in LoadOnDemand event to load the business items into the control. Instead, the HierarchicalDataTemplate will trigger the getter of its ItemsSource property on load. For demonstration purposes, we will load a fixed number of business data every time the getter is triggered and the __children__ field is not yet instantiated.
 
 #### __C#__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_16}}
+```C#
 	public List<DataItem> Children
 	{
 	    get
@@ -175,10 +175,10 @@ The actual loading on demand of the business items can be implemented in the get
 	        return this.children;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_17}}
+```VB.NET
 	Public ReadOnly Property Children() As List(Of DataItem)
 	        Get
 	            If Me.children Is Nothing Then
@@ -193,12 +193,12 @@ The actual loading on demand of the business items can be implemented in the get
 	            Return Me.children
 	        End Get
 	    End Property
-{{endregion}}
+```
 
 The next step is to implement the custom logic for creating the path in order to use the [BringPathIntoView()]({%slug radtreeview-features-treeviewitem-bring-into-view-support%}) method.
 
 #### __C#__
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_18}}
+```C#
 	private void Button_Click_1(object sender, RoutedEventArgs e)
 	{
 	    string[] headerAndIndexes = this.userInput.Text.Split(' ');
@@ -243,11 +243,11 @@ The next step is to implement the custom logic for creating the path in order to
 	    }
 	    return path.TrimEnd('\\');
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radtreeview-howto-exapand-select-item-with-lod-enabled-treeview_19}}
+```VB.NET
 	
 	    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
 	        Dim headerAndIndexes As String() = Me.userInput.Text.Split(" "c)
@@ -286,7 +286,7 @@ The next step is to implement the custom logic for creating the path in order to
 	        Next
 	        Return path.TrimEnd("\"c)
 	    End Function
-{{endregion}}
+```
 
 The final result after bringing *Item 2.3.1.4* should look like this
 ![Rad Tree View How To Expand And Select Item](images/RadTreeView_HowTo_ExpandAndSelectItem.png)

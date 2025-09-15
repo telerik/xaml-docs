@@ -28,7 +28,7 @@ Take a look at the 'Objects and Timeline' pane. Select the __PART_PointMarkPath_
 
 #### __XAML__
 
-{{region xaml-radchart-templating-point-marks_0}}
+```XAML
 	<Style x:Key="PointMarkStyle" TargetType="telerik:PointMark">
 	    <Setter Property="Size" Value="10" />
 	    <Setter Property="Template">
@@ -47,7 +47,7 @@ Take a look at the 'Objects and Timeline' pane. Select the __PART_PointMarkPath_
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
@@ -55,7 +55,7 @@ You can see that the __Data__ property of the __Path__ is not set. Create the da
 
 #### __XAML__
 
-{{region xaml-radchart-templating-point-marks_1}}
+```XAML
 	<Path x:Name="PART_PointMarkPath"
 	      Canvas.Left="{TemplateBinding PointMarkCanvasLeft}"
 	      Canvas.Top="{TemplateBinding PointMarkCanvasTop}"
@@ -64,7 +64,7 @@ You can see that the __Data__ property of the __Path__ is not set. Create the da
 	      Data="F1 M 6.5,3.5 L 3.5,0.5 0.5,3.5 3.5,6.5 0.5,9.5 3.5,12.5 6.5,9.5 9.5,12.5 12.5,9.5 9.5,6.5 12.5,3.5 9.5,0.5 6.5,3.5 Z"
 	      Stretch="Fill"
 	      Style="{TemplateBinding ShapeStyle}" />
-{{endregion}}
+```
 
 
 
@@ -74,19 +74,19 @@ After that set the created __PointMark__ style to the __DefaultSeriesDefinition_
 
 #### __C#__
 
-{{region cs-radchart-templating-point-marks_2}}
+```C#
 	this.radChart.DefaultSeriesDefinition = new LineSeriesDefinition();
 	this.radChart.DefaultSeriesDefinition.PointMarkItemStyle = this.Resources["PointMarkStyle"] as Style;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-radchart-templating-point-marks_3}}
+```VB.NET
 	Me.radChart.DefaultSeriesDefinition = New LineSeriesDefinition()
 	Me.radChart.DefaultSeriesDefinition.PointMarkItemStyle = TryCast(Me.Resources("PointMarkStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -98,7 +98,7 @@ Here is the resulting XAML for the __PointMarkItem's Style__:
 
 #### __XAML__
 
-{{region xaml-radchart-templating-point-marks_4}}
+```XAML
 	<Style x:Key="PointMarkStyle" TargetType="telerik:PointMark">
 	    <Setter Property="Size" Value="10" />
 	    <Setter Property="Template">
@@ -118,4 +118,4 @@ Here is the resulting XAML for the __PointMarkItem's Style__:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```

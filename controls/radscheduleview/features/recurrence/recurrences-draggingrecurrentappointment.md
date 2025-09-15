@@ -16,7 +16,7 @@ First, let’s have the following recurrent appointment added to the Appointment
 
 #### __C#__
 
-{{region radscheduleview-features-recurrences-draggingrecurrentappointment_0}}
+```C#
 	var reviewApp = new Appointment()
 	{
 	     Subject = "Review",
@@ -31,7 +31,7 @@ First, let’s have the following recurrent appointment added to the Appointment
 	        MaxOccurrences = 10
 	      }
 	);
-{{endregion}}
+```
 
 >tipYou could check [here]({%slug radscheduleview-features-recurrences-overview%}) for more details about recurrent appointments.
 

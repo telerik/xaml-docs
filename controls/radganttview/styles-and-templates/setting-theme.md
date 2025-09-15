@@ -34,7 +34,7 @@ There are two ways to reference the needed xaml files:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-styles-and-templates-setting-theme_0}}
+	```XAML
 		<Application.Resources>
 		    <ResourceDictionary>
 		        <ResourceDictionary.MergedDictionaries>
@@ -44,7 +44,7 @@ There are two ways to reference the needed xaml files:
 		        </ResourceDictionary.MergedDictionaries>
 		    </ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```
 
 * Copy the xaml files to a folder in the project:
 
@@ -56,7 +56,7 @@ There are two ways to reference the needed xaml files:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-styles-and-templates-setting-theme_1}}
+	```XAML
 		<Application.Resources>
 		    <ResourceDictionary>
 		        <ResourceDictionary.MergedDictionaries>
@@ -66,7 +66,7 @@ There are two ways to reference the needed xaml files:
 		        </ResourceDictionary.MergedDictionaries>
 		    </ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```
 
 Either way you choose, the end result will be the following:
 

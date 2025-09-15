@@ -17,12 +17,12 @@ Since **R3 2018**, the RadFileDialogs as well as the ExplorerControl provide out
 In order for the RadFileDialogs and ExplorerControl to show the Network drive and all of the available network locations, you can set the **ShowNetworkLocations** property to **True**. This is demonstrated in **Example 1**.
 
 #### [C#] Example 1: Showing Network Locations in RadOpenFileDialog  
-{{region cs-radfiledialogs-features-network-locations_0}} 
+```C# 
     RadOpenFileDialog openFileDialog = new RadOpenFileDialog(); 
     openFileDialog.Owner = theHostWindowInstance; 
     openFileDialog.ShowNetworkLocations = true;  
     openFileDialog.ShowDialog();
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1 in the Office2016 Theme__
 ![RadOpenFileDialog Network Locations](images/FileDialogs_NetworkLocations.png)

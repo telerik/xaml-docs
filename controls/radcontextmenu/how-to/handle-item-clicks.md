@@ -32,7 +32,7 @@ Here is an example of an event handler attached to the __Click__ event and how t
 
 #### __XAML__
 
-{{region xaml-radcontextmenu-how-to-handle-item-clicks_0}}
+```XAML
 	<telerik:RadContextMenu>
 	    <telerik:RadMenuItem Header="Item 1"
 	                         Click="RadMenuItem_Click" />
@@ -41,26 +41,26 @@ Here is an example of an event handler attached to the __Click__ event and how t
 	    <telerik:RadMenuItem Header="Item 3"
 	                         Click="RadMenuItem_Click" />
 	</telerik:RadContextMenu>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radcontextmenu-how-to-handle-item-clicks_1}}
+```C#
 	private void RadMenuItem_Click( object sender, RadRoutedEventArgs e )
 	{
 	    RadMenuItem item = sender as RadMenuItem;
 	    //implement the logic regarding the instance here.
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radcontextmenu-how-to-handle-item-clicks_2}}
+```VB.NET
 	Private Sub RadMenuItem_Click(sender As Object, e As RadRoutedEventArgs)
 	    Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
 	    'implement the logic regarding the instance here.
 	End Sub
-{{endregion}}
+```
 
 ## Handle the ItemClick event of the RadContextMenu
 
@@ -72,32 +72,32 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 
 #### __XAML__
 
-{{region xaml-radcontextmenu-how-to-handle-item-clicks_3}}
+```XAML
 	<telerik:RadContextMenu ItemClick="radContextMenu_ItemClick">
 	    <telerik:RadMenuItem Header="Item 1" />
 	    <telerik:RadMenuItem Header="Item 2" />
 	    <telerik:RadMenuItem Header="Item 3" />
 	</telerik:RadContextMenu>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radcontextmenu-how-to-handle-item-clicks_4}}
+```C#
 	private void radContextMenu_ItemClick(object sender, RadRoutedEventArgs e)
 	{
 	    RadMenuItem item = e.OriginalSource as RadMenuItem;
 	    //implement the logic regarding the instance here.
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radcontextmenu-how-to-handle-item-clicks_5}}
+```VB.NET
 	Private Sub radContextMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
 	    Dim item As RadMenuItem = TryCast(e.OriginalSource, RadMenuItem)
 	    'implement the logic regarding the instance here.
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

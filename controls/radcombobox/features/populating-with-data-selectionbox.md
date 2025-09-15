@@ -16,23 +16,21 @@ The selection box template allows you to define a DataTemplate for the selected 
 
 To set the custom DataTemplate, set the __SelectionBoxTemplate__ property of RadComboBox. The following example shows how to set up a combobox and define a selection box template.
 
-#### __[C#] Example 1: Setting up the model__
-{{region radcombobox-populating-with-data-selectionbox-0}}
+__Example 1: Setting up the model__
+```C#
 	public class DataItem
     {
         public string Name { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting up the model__
-{{region radcombobox-populating-with-data-selectionbox-1}}
+```
+```VB.NET
 	Public Class DataItem
 		Public Property Name As String
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting up the data__
-{{region radcombobox-populating-with-data-selectionbox-2}}
+__Example 2: Setting up the data__
+```C#
 	public MainWindow()
 	{         
 		InitializeComponent();
@@ -45,10 +43,8 @@ To set the custom DataTemplate, set the __SelectionBoxTemplate__ property of Rad
 		};
 		this.DataContext = source;            
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting up the data__
-{{region radcombobox-populating-with-data-selectionbox-3}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Dim source = New ObservableCollection(Of DataItem)() From {
@@ -64,10 +60,10 @@ To set the custom DataTemplate, set the __SelectionBoxTemplate__ property of Rad
 		}
 		Me.DataContext = source
 	End Sub
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting the SelectionBoxTemplate__
-{{region radcombobox-populating-with-data-selectionbox-4}}
+__Example 3: Setting the SelectionBoxTemplate__
+```XAML
 	<telerik:RadComboBox ItemsSource="{Binding}" DisplayMemberPath="Name">
 		<telerik:RadComboBox.SelectionBoxTemplate>
 			<DataTemplate>
@@ -78,7 +74,7 @@ To set the custom DataTemplate, set the __SelectionBoxTemplate__ property of Rad
 			</DataTemplate>
 		</telerik:RadComboBox.SelectionBoxTemplate>
 	</telerik:RadComboBox>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadComboBox with SelectionBoxTemplate](images/radcombobox-populating-with-data-selectionbox-0.png)
 
@@ -92,8 +88,8 @@ To customize the Selection Box part of RadComboBox when multiple selection is en
 
 To customize the Selection Box when there is no selected item, set the __EmptySelectionBoxTemplate__
 
-#### __[XAML] Example 4: Setting the EmptySelectionBoxTemplate__
-{{region radcombobox-populating-with-data-selectionbox-6}}
+__Example 4: Setting the EmptySelectionBoxTemplate__
+```XAML
 	<telerik:RadComboBox ItemsSource="{Binding}" DisplayMemberPath="Name">
 		<telerik:RadComboBox.EmptySelectionBoxTemplate>
 			<DataTemplate>
@@ -101,7 +97,7 @@ To customize the Selection Box when there is no selected item, set the __EmptySe
 			</DataTemplate>
 		</telerik:RadComboBox.EmptySelectionBoxTemplate>
 	</telerik:RadComboBox>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadComboBox with EmptySelectionBoxTemplate](images/radcombobox-populating-with-data-selectionbox-1.png)
 

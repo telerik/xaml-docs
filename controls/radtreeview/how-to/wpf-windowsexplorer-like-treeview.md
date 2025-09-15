@@ -34,16 +34,16 @@ This tutorial will combine in itself the following:
 
 1. Here is a simple __RadTreeView__ declaration:
 
-	#### __[XAML] Example 1: Declare RadTreeView__
+	__Example 1: Declare RadTreeView__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_0}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"/>
-	{{endregion}}
+	```
 
 2. Create three business objects: __File__, __Directory__ and __Drive__. Here is their structure:		
 	
-	#### __[C#] Example 2: File__
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_1}}
+	__Example 2: File__
+	```C#
 		public class File
 		{
 			public File( string fullPath, string name )
@@ -62,10 +62,8 @@ This tutorial will combine in itself the following:
 				set;
 			}
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: File__
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_2}}
+	```
+```VB.NET
 		Public Class File
 			Public Sub New(ByVal fullPath As String, ByVal name As String)
 				Me.FullPath = fullPath
@@ -92,10 +90,10 @@ This tutorial will combine in itself the following:
 				End Set
 			End Property
 		End Class
-	{{endregion}}
+	```
 
-	#### __[C#] Example 3: Directory__
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_3}}
+	__Example 3: Directory__
+	```C#
 		public class Directory
 		{
 			public Directory( string fullPath, string name )
@@ -125,10 +123,8 @@ This tutorial will combine in itself the following:
 				private set;
 			}
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 3: Directory__
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_4}}
+	```
+```VB.NET
 		Public Class Directory
 			Public Sub New(ByVal fullPath As String, ByVal name As String)
 				Me.FullPath = fullPath
@@ -175,11 +171,11 @@ This tutorial will combine in itself the following:
 				End Set
 			End Property
 		End Class
-	{{endregion}}
+	```
 
-	#### __[C#] Example 4: Drive__
+	__Example 4: Drive__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_5}}
+	```C#
 		public class Drive
 		{
 			public Drive( string name, bool isReady )
@@ -204,11 +200,8 @@ This tutorial will combine in itself the following:
 				private set;
 			}
 		}
-	{{endregion}}
-			
-	#### __[VB.NET] Example 4: Drive__
-
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_6}}
+	```
+```VB.NET
 		Public Class Drive
 			Public Sub New(ByVal name As String, ByVal isReady As Boolean)
 				Me.Name = name
@@ -247,7 +240,7 @@ This tutorial will combine in itself the following:
 			End Set
 		End Property
 		End Class
-	{{endregion}}
+	```
 
 	The __Drive__ business object has a reference to an __ObservableCollection__ of objects. These are the child elements. In fact this collection will store all directories and files for the drive.
 
@@ -255,9 +248,9 @@ This tutorial will combine in itself the following:
 
 3. Create a new class named __ServiceFacade__. Add a reference to an __ObservableCollection__ of __Drives__.
 
-	#### __[C#] Example 5: ServiceFacade__
+	__Example 5: ServiceFacade__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_7}}
+	```C#
 		public sealed class ServiceFacade
 		{
 			private static ServiceFacade instance;
@@ -282,11 +275,8 @@ This tutorial will combine in itself the following:
 			{
 			}
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 5: ServiceFacade__
-
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_8}}
+	```
+```VB.NET
 		Public NotInheritable Class ServiceFacade
 			Private Shared m_instance As ServiceFacade
 		
@@ -314,13 +304,13 @@ This tutorial will combine in itself the following:
 			Private Sub Initialize()
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 	For better convenience, the __ServiceFacade__ class is an implementation of the [Singleton](http://en.wikipedia.org/wiki/Singleton_pattern) pattern. When only one instance of the class is created, the __Drives__ collection needs to be populated with all drives on your machine. This will happen in the __Initialize()__ method. __Example 6__ demonstrates how this can be achieved.
 
-	#### __[C#] Example 6: Populate all drives in the Initialize() method__
+	__Example 6: Populate all drives in the Initialize() method__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_9}}
+	```C#
 		private void Initialize()
         {
             this.Drives = new ObservableCollection<Drive>();
@@ -330,11 +320,8 @@ This tutorial will combine in itself the following:
                 this.Drives[0].Children.Add(new Drive(driveInfo.Name, driveInfo.IsReady));
             }
         }
-	{{endregion}}
-
-	#### __[VB.NET] Example 6: Populate all drives in the Initialize() method__
-
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_10}}
+	```
+```VB.NET
 		Private Sub Initialize()
 			Me.Drives = New ObservableCollection(Of Drive)()
 			Me.Drives.Add(New Drive("My Computer", True))
@@ -343,22 +330,22 @@ This tutorial will combine in itself the following:
 				Me.Drives(0).Children.Add(New Drive(driveInfo.Name, driveInfo.IsReady))
 			Next
 		End Sub
-	{{endregion}}
+	```
 
 4. Go back to your treeview declaration and bind the control to the just created model. __Example 7__ shows how this can be done:
 
-	#### __[XAML] Example 7: Bind RadTreeView__
+	__Example 7: Bind RadTreeView__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_11}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8" ItemsSource="{Binding Source={x:Static example:ServiceFacade.Instance}, Path=Drives}"/>
-	{{endregion}}
+	```
 
 	> The "example" alias references the namespace containing the __ServiceFacade__ class.
 
 	So far if you run the demo, the treeview does not "know" how to represent the __Drive__ object. You need to create a __HierachicalDataTemplate__. It is quite simple and just displays the name of the drive.
 
-	#### __[XAML] Example 8: Create HierachicalDataTemplate and DataTemplate for the different treeview node levels__
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_12}}
+	__Example 8: Create HierachicalDataTemplate and DataTemplate for the different treeview node levels__
+	```XAML
 		<DataTemplate DataType="{x:Type example:File}">
             <TextBlock Text="{Binding Name}" />
         </DataTemplate>
@@ -372,7 +359,7 @@ This tutorial will combine in itself the following:
                 <TextBlock Text="{Binding Name}" />
             </Grid>
         </HierarchicalDataTemplate>
-	{{endregion}}
+	```
 
 	Run your demo. The result so far should look like the snapshot below:
 	![{{ site.framework_name }} RadTreeView Drives](images/RadTreeView_HowToWindowsExplorerTree_020_WPF.PNG)
@@ -381,8 +368,8 @@ This tutorial will combine in itself the following:
 
 5. Create a new class named __ItemStyleSelector__, which inherits from __StyleSelector__.
 
-	#### __[C#] Example 9: Create custom StyleSelector__
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_13}}
+	__Example 9: Create custom StyleSelector__
+	```C#
 		public class ItemStyleSelector : StyleSelector
 		{
 			public override System.Windows.Style SelectStyle( object item, System.Windows.DependencyObject container )
@@ -412,11 +399,8 @@ This tutorial will combine in itself the following:
 				set;
 			}
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 9: Create custom StyleSelector____
-
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_14}}
+	```
+```VB.NET
 		Public Class ItemStyleSelector
 			Inherits StyleSelector
 			Public Overloads Overrides Function SelectStyle(ByVal item As Object, ByVal container As System.Windows.DependencyObject) As System.Windows.Style
@@ -461,13 +445,13 @@ This tutorial will combine in itself the following:
 				End Set
 			End Property
 		End Class
-	{{endregion}}
+	```
 
 	Add a new style in your control resources. Here is how the __Style__ for all the drives would look like:
 
-	#### __[XAML] Example 10: Add custom styles__
+	__Example 10: Add custom styles__
 	
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_15}}
+	```XAML
 		<UserControl.Resources>		
 			<Style x:Key="DriveItemStyle" TargetType="{x:Type telerik:RadTreeViewItem}">
 				<Setter Property="IsLoadOnDemandEnabled" Value="{Binding IsReady}"/>
@@ -503,7 +487,7 @@ This tutorial will combine in itself the following:
                 <telerik:EventBinding EventName="ItemPrepared" Command="{Binding ItemPreparedCommand}" PassEventArgsToCommand="True"/>
             </telerik:EventToCommandBehavior.EventBindings>
 		</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 	This style performs the following:
 
@@ -515,9 +499,9 @@ This tutorial will combine in itself the following:
 
 	Next you can go back to the tree view control declaration and set the __ItemContainerStyleSelector__ property.
 
-	#### __[XAML] Example 11: Set ItemContainerStyleSelector property__
+	__Example 11: Set ItemContainerStyleSelector property__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_18}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView"
 							 Margin="8"
 							 IsLoadOnDemandEnabled="True" 
@@ -529,7 +513,7 @@ This tutorial will combine in itself the following:
                 <telerik:EventBinding EventName="ItemPrepared" Command="{Binding ItemPreparedCommand}" PassEventArgsToCommand="True"/>
             </telerik:EventToCommandBehavior.EventBindings>
 		</telerik:RadTreeView>
-	{{endregion}}
+	```
 
 	Now run your demo. After applying the __Style__ you can see the difference. The drives which are not ready are disabled. Try to expand any of the enabled items - the LoadOnDemand event is fired.
 	![{{ site.framework_name }} RadTreeView Expanding Drives](images/RadTreeView_HowToWindowsExplorerTree_030_WPF.PNG)
@@ -538,9 +522,9 @@ This tutorial will combine in itself the following:
 
 6. To avoid doing this in code-behind, you can use __EventToCommandBehavior__ to bind the __LoadOnDemand__ event to a command from your view model. To do that we can create an additional class which will hold the commands. Also, we don't need to load children for the __Files__ objects, and this is why we can set their __IsLoadOnDemandEnabled__ property to __False__. The best way to do this is to bind the __ItemPrepared__ event of the __RadTreeView__ control to a command, and set the __IsLoadOnDemandEnabled__ property to false. __Example 12__ demonstrate this implementation.
 
-	#### __[C#] Example 12: Create MainViewModel class__
+	__Example 12: Create MainViewModel class__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_19}}
+	```C#
 		public class MainViewModel
 		{
 			public MainViewModel()
@@ -590,7 +574,7 @@ This tutorial will combine in itself the following:
 				}
 			}        
 		}
-	{{endregion}}
+	```
 
 	The code just takes the expanded item and makes a call to the __ServiceFacade__ object to load the children.
 
@@ -598,9 +582,9 @@ This tutorial will combine in itself the following:
 
 	After this you can add the following public methods to the __ServiceFacade__ class.
 
-	#### __[C#] Example 13: Add additional methods__
+	__Example 13: Add additional methods__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_21}}
+	```C#
 		public void LoadChildren( Drive d )
 		{
 			foreach ( string directory in System.IO.Directory.GetDirectories( d.Name ) )
@@ -628,11 +612,8 @@ This tutorial will combine in itself the following:
 				d.Children.Add( new File( file, fileInfo.Name ) );
 			}
 		}
-		{{endregion}}
-
-	#### __[VB.NET] Example 13: Add additional methods____
-
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_22}}
+		```
+```VB.NET
 		Public Sub LoadChildren(ByVal d As Drive)
 			For Each directory As String In System.IO.Directory.GetDirectories(d.Name)
 				Dim directoryInfo As New DirectoryInfo(directory)
@@ -654,15 +635,15 @@ This tutorial will combine in itself the following:
 				d.Children.Add(New File(file, fileInfo.Name))
 			Next
 		End Sub
-	{{endregion}}
+	```
 
 	The final step is to add __Styles__ for the __Directory__ object and the __File__ object.  	 
 
 7. Add two additional styles - one for the __Directory__ object and one for the __File__ object. Update your __ItemStyleSelector__ declaration - set the __DirectoryStyle__ and __FileStyle__ properties:
 
-	#### __[XAML] Example 14: Add custom styles__
+	__Example 14: Add custom styles__
 
-	{{region radtreeview-how-to-wpf-windowsexplorer-like-treeview_24}}
+	```XAML
 		<Style x:Key="DirectoryItemStyle" TargetType="{x:Type telerik:RadTreeViewItem}">
 			<Setter Property="Foreground" Value="Black"/>
 			<Setter Property="FontStyle" Value="Normal"/>
@@ -687,7 +668,7 @@ This tutorial will combine in itself the following:
 			DriveStyle="{StaticResource DriveItemStyle}"
 			DirectoryStyle="{StaticResource DirectoryItemStyle}"
 			FileStyle="{StaticResource FileItemStyle}"/>
-	{{endregion}}
+	```
 
 	The directory style is similar to the drive style. However, the style for the file object is a little different. It sets a different image.		
 

@@ -35,8 +35,8 @@ To have this binding work, you can pass the data through the **Content** propert
 
 >The *Name* is a property of the object used as a DataContext for the ToolTip.
 
-#### __[XAML]__
-{{region kb-richtextbox-howto-use-radrichtextbox-in-tooltip}}
+
+```XAML
 
     <Grid.ToolTip>
         <ToolTip Content="{Binding}">
@@ -50,7 +50,7 @@ To have this binding work, you can pass the data through the **Content** propert
             </ToolTip.ContentTemplate>
         </ToolTip>
     </Grid.ToolTip>
-{{endregion}}
+```
 
 ## See Also
 

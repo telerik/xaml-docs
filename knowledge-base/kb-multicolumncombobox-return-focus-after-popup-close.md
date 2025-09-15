@@ -32,8 +32,8 @@ How to return the focus to RadMultiColumnComboBox after the Popup with its drop 
 
 To do this, you can subscribe to the __DropDownClosed__ event of the control and in the event handler manually focus the text input control.
 
-#### __[C#]__
-{{region kb-multicolumncombobox-return-focus-after-popup-close-1}}
+
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -45,12 +45,12 @@ To do this, you can subscribe to the __DropDownClosed__ event of the control and
 		var mccb = (RadMultiColumnComboBox)sender;
 		mccb.ChildrenOfType<RadWatermarkTextBox>().First().Focus();
 	}
-{{endregion}}
+```
 
 If you use the __GridViewMultiColumnComboBoxColumn__, you can use the __PreparedCellForEdit__ event of RadGridView in order to get the RadMultiColumnComboBox instance and attach the DropDownClosed event handler.
 
-#### __[C#]__
-{{region kb-multicolumncombobox-return-focus-after-popup-close-1}}
+
+```C#
 	private void RadGridView_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 		var mccb = e.EditingElement as RadMultiColumnComboBox;
@@ -65,4 +65,4 @@ If you use the __GridViewMultiColumnComboBoxColumn__, you can use the __Prepared
 		var mccb = (RadMultiColumnComboBox)sender;
 		mccb.ChildrenOfType<RadWatermarkTextBox>().First().Focus();
 	}
-{{endregion}}
+```

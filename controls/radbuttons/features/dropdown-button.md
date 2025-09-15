@@ -16,22 +16,20 @@ The `RadDropDownButton` control derives from __[RadButton]({%slug radbuttons-fea
 
 You can instantiate your `RadDropDownButton` in both XAML and code as shown in the following examples.
 
-#### __[XAML] Defining a button in XAML__  
-{{region xaml-radbuttons-features-dropdown-button_0}}
+__Defining a button in XAML__  
+```XAML
 	<telerik:RadDropDownButton Content="Click Me!" />
-{{endregion}}
+```
 
-#### __[C#] Defining a button in code__  
-{{region cs-radbuttons-features-dropdown-button_1}}
+__Defining a button in code__  
+```C#
 	RadDropDownButton radDropDownButton = new RadDropDownButton() { Content = "Click Me!" };
-{{endregion}}
-
-#### __[VB.NET] Defining a button in code__
-{{region vb-radbuttons-features-dropdown-button_2}}
+```
+```VB.NET
 	Dim radDropDownButton As New RadDropDownButton() With { _
 	    .Content = "Click Me!" _
 	}
-{{endregion}}
+```
 
 __Drop-down button__
 
@@ -41,8 +39,8 @@ __Drop-down button__
 
 In order to add content to the drop-down area of the RadDropDownButton you have to use its `DropDownContent` property. It is of type `object` so you can add any control as content of the drop-down. The next example shows how to add a `ListBox` control in the drop-down content of the button.
 
-#### __[XAML] Adding dropdown content to the button__ 
-{{region xaml-radbuttons-features-dropdown-button_3}}
+__Adding dropdown content to the button__ 
+```XAML
 	<telerik:RadDropDownButton AutoOpenDelay="0:0:0.0"
 	                           Content="Choose an Item">
 	    <telerik:RadDropDownButton.DropDownContent>
@@ -53,7 +51,7 @@ In order to add content to the drop-down area of the RadDropDownButton you have 
 	        </ListBox>
 	    </telerik:RadDropDownButton.DropDownContent>
 	</telerik:RadDropDownButton>
-{{endregion}}
+```
 
 __Drop-down content__
 
@@ -65,10 +63,10 @@ __Drop-down content__
 
 You can allow the RadDropDownButton to automatically display its `DropDownContent`, when the mouse hovers over it. This behaviour is controlled via the `AutoOpenDelay` property of the RadDropDownButton, that specifies the time, after which you want to display the RadDropDownButton.DropDownContent. In order to disable the auto opening feature of the control, you can set the AutoOpenDelay to `0`.
 
-#### __[XAML] Setting the AutoOpenDelay__ 
-{{region xaml-radbuttons-features-dropdown-button_4}}
+__Setting the AutoOpenDelay__ 
+```XAML
 	<telerik:RadDropDownButton AutoOpenDelay="0:0:0.5" />
-{{endregion}}
+```
 
 ## Customizing the RadDropDownButton
 

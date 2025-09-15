@@ -24,12 +24,12 @@ To do this kind of check, use the method as follows:
 
 #### __C#__
 
-{{region radspellchecker-spellchecking-modes_0}}
+```C#
 	private void Button_Click( object sender, RoutedEventArgs e )
 	{
 	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.WordByWord);
 	}
-{{endregion}}
+```
 
 
 
@@ -52,12 +52,12 @@ You can trigger this operation using the method below:
 
 #### __C#__
 
-{{region radspellchecker-spellchecking-modes_1}}
+```C#
 	private void Button_Click( object sender, RoutedEventArgs e )
 	{
 	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.AllAtOnce);
 	}
-{{endregion}}
+```
 
 
 
@@ -73,7 +73,7 @@ You are presented with the same options as the WordByWord mode. The difference i
 
 #### __C#__
 
-{{region radspellchecker-spellchecking-modes_2}}
+```C#
 	public MainPage()
 	{
 	    InitializeComponent();
@@ -87,7 +87,7 @@ You are presented with the same options as the WordByWord mode. The difference i
 	    documentSpellChecker.AddDictionary(new RadEn_USDictionary(), new System.Globalization.CultureInfo("en-US"));
 	}
 	
-{{endregion}}
+```
 
 
 

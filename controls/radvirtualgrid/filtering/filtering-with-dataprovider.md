@@ -36,21 +36,21 @@ After applying the needed filtering criteria, the control will appear as follows
 
 The __ColumnFilterDescriptor__ for a given column can be fetched through the __GetFilterDescriptorForColumn__ method. This can be done by providing the index of the needed column.
 
-#### __[C#] Example 1: Getting the ColumnFilterDescriptor of a column__
+__Example 1: Getting the ColumnFilterDescriptor of a column__
 
-{{region radvirtualgrid-filtering-with-data-provider_0}}
+```C#
 	var descriptor = this.VirtualGrid.GetFilterDescriptorForColumn(0);
-{{endregion}}
+```
 
 Then, the data can be filtered by adding/removing __DistinctFilters__ to the __DistinctFilter__ of the __ColumnFilterDescriptor__. 
 
-#### __[C#] Example 2: Adding distinct values__
+__Example 2: Adding distinct values__
 
-{{region radvirtualgrid-filtering-with-data-provider_1}}
+```C#
 	var distinctFilter = this.VirtualGrid.GetFilterDescriptorForColumn(0).DistinctFilter;
         distinctFilter.AddDistinctValue("Liverpool");
         distinctFilter.AddDistinctValue("Chelsea");
-{{endregion}}
+```
 
 #### __Figure 3: Filtering RadVirtualGrid by adding distinct values__
 ![Opening the FilteringControl of RadVirtualGrid](images/RadVirtualGrid_Programmatic_Filtering_01.png)

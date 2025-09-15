@@ -29,24 +29,22 @@ How to override __Escape__ key logic of the `RadRibbonBackstage` element.
 
 To achieve this requirement, create a custom class that derives from the RadRibbonBackstage class.
 
-#### __[C#] Create class that derives from RadRibbonBackstage__
-{{region kb-ribbonview-override-esc-key-logic-in-backstage-0}}
+__Create class that derives from RadRibbonBackstage__
+```C#
     public class CustomBackstage : RadRibbonBackstage
     {
     }
-{{endregion}}
-
-#### __[VB.NET] Create class that derives from RadRibbonBackstage__
-{{region kb-ribbonview-override-esc-key-logic-in-backstage-1}}
+```
+```VB.NET
 Public Class CustomBackstage
     Inherits RadRibbonBackstage
 End Class
-{{endregion}}
+```
 
 Override the `HandleKey` method that comes from the RadRibbonBackstage class and execute your custom logic.
 
-#### __[C#] Override the HandleKey method__
-{{region kb-ribbonview-override-esc-key-logic-in-backstage-2}}
+__Override the HandleKey method__
+```C#
     public class CustomBackstage : RadRibbonBackstage
     {
         protected override void HandleKey(KeyEventArgs e)
@@ -58,10 +56,8 @@ Override the `HandleKey` method that comes from the RadRibbonBackstage class and
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Override the HandleKey method__
-{{region kb-ribbonview-override-esc-key-logic-in-backstage-3}}
+```
+```VB.NET
     Public Class CustomBackstage
         Inherits RadRibbonBackstage
     
@@ -71,4 +67,4 @@ Override the `HandleKey` method that comes from the RadRibbonBackstage class and
             End If
         End Sub
     End Class
-{{endregion}}
+```

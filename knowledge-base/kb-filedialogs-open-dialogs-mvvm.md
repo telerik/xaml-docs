@@ -32,8 +32,8 @@ How to open the RadFileDialogs using an MVVM-friendly approach through the viewm
 
 You can start by creating a service class similar to the one in **Example 1** which will be responsible for opening the window. If needed, you can also introduce an interface with a single **OpenFileDialog** method and have the OpenFileDialogService class implement this interface.
 
-#### __[C#] Example 1: The OpenFileDialogService class__
-{{region cs-kb-filedialogs-open-dialogs-mvvm-0}}
+__Example 1: The OpenFileDialogService class__
+```C#
 	
     public class OpenFileDialogService
     {
@@ -53,12 +53,12 @@ You can start by creating a service class similar to the one in **Example 1** wh
             return string.Empty;
         }
     }
-{{endregion}}
+```
 
 You can now define a command in your view model which uses this service and its method.
 
-#### __[C#] Example 2: Defining the viewmodel__
-{{region cs-kb-filedialogs-open-dialogs-mvvm-1}}
+__Example 2: Defining the viewmodel__
+```C#
 	
     public class MainViewModel : ViewModelBase
     {
@@ -77,12 +77,12 @@ You can now define a command in your view model which uses this service and its 
             var fileName = fileDialogService.OpenFileDialog();
         }
     }
-{{endregion}}
+```
 
 Finally, you need to invoke this command from your view.
 
-#### __[XAML] Example 3: Binding the command in the view__
-{{region cs-kb-filedialogs-open-dialogs-mvvm-1}}
+__Example 3: Binding the command in the view__
+```XAML
 	
     <Grid>
         <Grid.DataContext>
@@ -90,7 +90,7 @@ Finally, you need to invoke this command from your view.
         </Grid.DataContext>
         <telerik:RadButton Command="{Binding OpenFileDialogCommand}" Content="Open Dialog" />
     </Grid>
-{{endregion}}
+```
 
 ## See Also
 * [File Dialogs]({%slug radfiledialogs-getting-started%})

@@ -16,9 +16,9 @@ This article will demonstrate how to create a Style targeting the __RadNumericUp
 
 In order to style the RadNumericUpDown, you can create a Style targeting __RadNumericUpDown__.
 
-#### __[XAML] Example 1: Creating a style targeting the RadNumericUpDown control__
+__Example 1: Creating a style targeting the RadNumericUpDown control__
 
-{{region xaml-styling-the-radnumericupdown_0}}
+```XAML
 	<StackPanel>
         <StackPanel.Resources>
             <!-- If you are using the NoXaml binaries, you should base the style on the default one like so:-->
@@ -30,7 +30,7 @@ In order to style the RadNumericUpDown, you can create a Style targeting __RadNu
         </StackPanel.Resources>
         <telerik:RadNumericUpDown Value="1" />
     </StackPanel>
-{{endregion}}
+```
 
 #### __Figure 1: RadNumericUpDown with custom style in the Office2016 theme__
 ![RadNumericUpDown with custom style in the Office2016 theme](images/RadNumericUpDown_Styling_The_Control.png)

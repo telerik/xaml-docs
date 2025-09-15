@@ -22,8 +22,8 @@ The grid allows you to customize its lines and strips via several properties. To
 
 To __display any lines__ in the grid, set the __MajorLinesVisibility__ property. This is an enumeration that allows you to tell which lines to be displayed - vertical (__X__), horizontal (__Y__), both (__XY__) or __None__.
 
-#### __[XAML] Example 1: Setting up the grid__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-0}}
+__Example 1: Setting up the grid__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis />
@@ -45,51 +45,51 @@ To __display any lines__ in the grid, set the __MajorLinesVisibility__ property.
 			<telerik:CartesianChartGrid MajorLinesVisibility="XY" />
 		</telerik:RadCartesianChart.Grid>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 1: Grid lines example
 ![Rad Chart View-chart majorlines](images/radchartview-features-grid-0.png)
 
 To __display the strip lines__, set the __StripLinesVisibility__ property. This is an enumeration that allows you to tell which strips to be displayed - vertical (__X__), horizontal (__Y__), both (__XY__) or __None__.
 
-#### __[XAML] Example 2: Enabling strip lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-1}}	
+__Example 2: Enabling strip lines__
+```XAML	
 	<telerik:RadCartesianChart.Grid>
 		<telerik:CartesianChartGrid MajorLinesVisibility="XY" StripLinesVisibility="XY" />
 	</telerik:RadCartesianChart.Grid>
-{{endregion}}
+```
 
 #### Figure 2: Strip lines example
 ![Rad Chart View-chart strip lines](images/radchartview-features-grid-1.png)
 
 To __show dashed lines__, set the __MajorXLineDashArray__ and __MajorYLineDashArray__ properties. 
 
-#### __[XAML] Example 3: Dashing the grid lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-2}}	
+__Example 3: Dashing the grid lines__
+```XAML	
 	<telerik:RadCartesianChart.Grid>
 		<telerik:CartesianChartGrid MajorXLineDashArray="5 5" MajorYLineDashArray="5 5" MajorLinesVisibility="XY" />
 	</telerik:RadCartesianChart.Grid>
-{{endregion}}
+```
 
 #### Figure 3: Dash array example
 ![Rad Chart View-chart dash array](images/radchartview-features-grid-2.png)
 
 To __define an interval for the grid lines__ to appear, set the __MajorXLineInterval__ and __MajorYLineInterval__ properties.
 
-#### __[XAML] Example 4: Setting line interval__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-3}}	
+__Example 4: Setting line interval__
+```XAML	
 	<telerik:RadCartesianChart.Grid>
 		<telerik:CartesianChartGrid MajorXLineInterval="2" MajorYLineInterval="3" MajorLinesVisibility="XY" />
 	</telerik:RadCartesianChart.Grid>
-{{endregion}}
+```
 
 #### Figure 4: Line interval example
 ![Rad Chart View-chart lines interval](images/radchartview-features-grid-3.png)
 
 To __change the appearance of the grid lines__, set the __MajorXLineStyle__ and __MajorYLineStyle__ properties.
 
-#### __[XAML] Example 5: Styling the grid lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-4}}	
+__Example 5: Styling the grid lines__
+```XAML	
 	<telerik:RadCartesianChart.Grid>
 		<telerik:CartesianChartGrid MajorLinesVisibility="XY">
 			<telerik:CartesianChartGrid.MajorXLineStyle>
@@ -104,7 +104,7 @@ To __change the appearance of the grid lines__, set the __MajorXLineStyle__ and 
 			</telerik:CartesianChartGrid.MajorYLineStyle>
 		</telerik:CartesianChartGrid>
 	</telerik:RadCartesianChart.Grid>
-{{endregion}}
+```
 
 #### Figure 5: Grid lines with custom colors
 ![Rad Chart View-chart line styles](images/radchartview-features-grid-4.png)
@@ -113,8 +113,8 @@ To __change the appearance of the grid lines__, set the __MajorXLineStyle__ and 
 
 To __change the colors of the strip lines__, set the __XStripeBrushes__ and __YStripeBrushes__ properties.
 
-#### __[XAML] Example 6: Coloring the strip lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-5}}	
+__Example 6: Coloring the strip lines__
+```XAML	
 	<telerik:RadCartesianChart.Grid>
 		<telerik:CartesianChartGrid StripLinesVisibility="XY">
 			<telerik:CartesianChartGrid.XStripeBrushes>
@@ -128,7 +128,7 @@ To __change the colors of the strip lines__, set the __XStripeBrushes__ and __YS
 			</telerik:CartesianChartGrid.YStripeBrushes>                   
 		</telerik:CartesianChartGrid>
 	</telerik:RadCartesianChart.Grid>
-{{endregion}}
+```
 
 #### Figure 6: Strip lines with custom colors
 ![Rad Chart View-chart strip line colors](images/radchartview-features-grid-5.png)
@@ -139,8 +139,8 @@ The X brushes are drawn from left to right. And the Y brushes from bottom to top
 
 To __change the render mode of the grid lines__, set the __MajorXLinesRenderMode__ and __MajorYLinesRenderMode__. This is an enumeration of type __GridLineRenderMode__ and it controls what lines will get rendered. 
 
-#### __[XAML] Example 7: Setting the grid lines render mode__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-6}}	
+__Example 7: Setting the grid lines render mode__
+```XAML	
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis Visibility="Collapsed"/>
@@ -168,7 +168,7 @@ To __change the render mode of the grid lines__, set the __MajorXLinesRenderMode
 			</telerik:CartesianChartGrid>
 		</telerik:RadCartesianChart.Grid>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 The render mode properties allow the following values.
 
@@ -208,8 +208,8 @@ The grid allows you to customize its lines and strips via several properties. To
 
 To __display the lines__ in the grid, set the __GridLineVisibility__ property. This is an enumeration that allows you to tell which lines to be displayed - __Polar__, __Radial__, __Both__ or __None__.
 
-#### __[XAML] Example 8: Setting up the polar grid__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-7}}
+__Example 8: Setting up the polar grid__
+```XAML
 	<telerik:RadPolarChart>
 		<telerik:RadPolarChart.RadialAxis>
 			<telerik:CategoricalRadialAxis />
@@ -231,39 +231,39 @@ To __display the lines__ in the grid, set the __GridLineVisibility__ property. T
 			<telerik:PolarChartGrid GridLineVisibility="Both" />  
 		</telerik:RadPolarChart.Grid>
 	</telerik:RadPolarChart>
-{{endregion}}
+```
 
 #### Figure 7: Polar grid lines example
 ![Rad Chart View-chart polar grid lines](images/radchartview-features-grid-14.png)
 
 To __display the strip lines__, set the __StripesVisibility__ property. This is an enumeration that allows you to tell which strips to be displayed - __Polar__, __Radial__, __Both__ or __None__.
 
-#### __[XAML] Example 9: Enabling polar strip lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-8}}	
+__Example 9: Enabling polar strip lines__
+```XAML	
 	 <telerik:RadPolarChart.Grid>
 		<telerik:PolarChartGrid StripesVisibility="Radial"/>
 	</telerik:RadPolarChart.Grid>
-{{endregion}}
+```
 
 #### Figure 8: Polar strip lines example
 ![Rad Chart View-chart polar strip lines](images/radchartview-features-grid-15.png)
 
 To __show dashed lines__, set the __PolarLineDashArray__ and __RadialLineDashArray__ properties. 
 
-#### __[XAML] Example 10: Dashing the polar grid lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-9}}	
+__Example 10: Dashing the polar grid lines__
+```XAML	
 	 <telerik:RadPolarChart.Grid>
 		<telerik:PolarChartGrid GridLineVisibility="Both" PolarLineDashArray="4 4" RadialLineDashArray="10 5"/>
 	</telerik:RadPolarChart.Grid>
-{{endregion}}
+```
 
 #### Figure 9: Dash array for the polar and radial grid lines example
 ![Rad Chart View-chart dash array](images/radchartview-features-grid-16.png)
 
 To __change the appearance of the polar grid lines__, set the __RadialLineStyle__ and __PolarLineStyle__ properties.
 
-#### __[XAML] Example 11: Styling the polar grid lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-10}}	
+__Example 11: Styling the polar grid lines__
+```XAML	
 	<telerik:RadPolarChart.Grid>
 		<telerik:PolarChartGrid GridLineVisibility="Both">
 			<telerik:PolarChartGrid.PolarLineStyle>
@@ -279,7 +279,7 @@ To __change the appearance of the polar grid lines__, set the __RadialLineStyle_
 			</telerik:PolarChartGrid.RadialLineStyle>
 		</telerik:PolarChartGrid>								
 	</telerik:RadPolarChart.Grid>
-{{endregion}}
+```
 
 #### Figure 10: Polar grid lines with custom colors and thickness
 ![Rad Chart View-chart polar line styles](images/radchartview-features-grid-17.png)
@@ -288,8 +288,8 @@ To __change the appearance of the polar grid lines__, set the __RadialLineStyle_
 
 To __change the colors of the polar strip lines__, set the __PolarStripeBrushes__ and __RadialStripeBrushes__ properties.
 
-#### __[XAML] Example 12: Coloring the strip lines__
-{{region radchartview-cartesianchartgrid-and-polarchartgrid-11}}	
+__Example 12: Coloring the strip lines__
+```XAML	
 	<telerik:RadPolarChart.Grid>
 		<telerik:PolarChartGrid GridLineVisibility="Both" StripesVisibility="Both">
 			<telerik:PolarChartGrid.PolarStripeBrushes>
@@ -302,7 +302,7 @@ To __change the colors of the polar strip lines__, set the __PolarStripeBrushes_
 			</telerik:PolarChartGrid.RadialStripeBrushes>
 		</telerik:PolarChartGrid>									
 	</telerik:RadPolarChart.Grid>
-{{endregion}}
+```
 
 #### Figure 11: Strip lines with custom colors
 ![Rad Chart View-chart strip line colors](images/radchartview-features-grid-18.png)

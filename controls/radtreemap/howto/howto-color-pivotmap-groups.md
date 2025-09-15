@@ -14,20 +14,20 @@ This topic will show you how to change the colors of the PivotMap groups.
 
 For the purpose of this example, we will create the following model.
 
-#### __[C#] Example 1: Create MovieInfo Model__
-{{region radpivotmap-howto-change-color-group-0}}
+__Example 1: Create MovieInfo Model__
+```C#
 	public class MovieInfo
 	{
 		public string Genre { get; set; }
 		public string Title { get; set; }
 		public double GrossSales { get; set; }
 	}
-{{endregion}}
+```
 
 Next, we can go ahead and create sample data.
 
-#### __[C#] Example 2: Create Sample Data__
-{{region radpivotmap-howto-change-color-group-1}}
+__Example 2: Create Sample Data__
+```C#
 	public class MainViewModel
 	{
 		public ObservableCollection<MovieInfo> Data { get; set; }
@@ -57,12 +57,12 @@ Next, we can go ahead and create sample data.
 			return movies;
 		}
 	}
-{{endregion}}
+```
 
 Now, we can declare our RadPivotMap control in XAML. To change the color of the groups, we can use the __ItemStyle__ of the TypeDefinition. This property is of type Style, which targets RadTreeMapItem. In the custom style, we can bind the Background property to the __DataItem__ object. The __DataItem__ is a wrapper for our business object. When we are using RadPivotMap control, the DataItem will hold the group and its items. The groups are represented by a __GroupingImpl<TGroupKey, TItem>()__ collection. Now to apply different colors, we can use __IValueConverter__. The converter will be applied to the binding of Background property. Inside the IValueConverter, we can check the Name of the collection and return different colors.
 
-#### __[XAML] Example 3: Declare our RadTreeMap in XAML__
-{{region radpivotmap-howto-change-color-group-2}}
+__Example 3: Declare our RadTreeMap in XAML__
+```XAML
 	<Window.Resources>
 		<local:MyConverter x:Key="MyConverter"/>        
 	</Window.Resources>
@@ -83,10 +83,10 @@ Now, we can declare our RadPivotMap control in XAML. To change the color of the 
 			</telerik:RadPivotMap.GroupDefinitions>
 		</telerik:RadPivotMap>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Create custom IValueConverter__
-{{region radpivotmap-howto-change-color-group-3}}
+__Example 4: Create custom IValueConverter__
+```C#
 	public class MyConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -120,12 +120,12 @@ Now, we can declare our RadPivotMap control in XAML. To change the color of the 
 			throw new NotImplementedException();
 		}
 	}
-{{endregion}}
+```
 
 And finally, we need to set our DataContext to the MainViewModel.
 
-#### __[C#] Example 4: Setting our DataContext__
-{{region radpivotmap-howto-change-color-group-3}}
+__Example 4: Setting our DataContext__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -134,7 +134,7 @@ And finally, we need to set our DataContext to the MainViewModel.
 			this.DataContext = new MainViewModel();
 		}
 	}
-{{endregion}}
+```
 
 If you run the application now, the RadPivotMap should display the following structure:
 

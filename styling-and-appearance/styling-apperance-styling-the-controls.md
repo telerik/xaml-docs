@@ -21,7 +21,7 @@ When you create a style that targets a specific control, you should base it on t
 We have followed a naming convention where the key for every control's default style consists of **the name of the control followed by a "Style" suffix**. This would mean that the default style applied for the **RadGridView** control is with **x:Key="RadGridViewStyle"**, the default one for the **RadComboBox** with **x:Key="RadComboBoxStyle"**, etc. **Example 1** shows how to create custom styles based on the default one for the **RadComboBox** control:
 
 #### **[XAML] Example 1: Custom styles for RadComboBox**
-{{region implicit-styles-styling-the-controls-0}}
+```XAML
 	<Style x:Key="CustomStyle" TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
     	<Setter Property="Foreground" Value="Green" />
 	</Style>
@@ -29,7 +29,7 @@ We have followed a naming convention where the key for every control's default s
 	<Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
     	<Setter Property="Foreground" Value="Red" />
 	</Style>
-{{endregion}}
+```
 
 > The Telerik themes come also with Styles for some of the [MS native controls]({%slug styling-apperance-themes-mscontrols%}#native-controls-supported-by-the-telerik-theming-mechanism) as TextBox, CheckBox, Button etc. If you want to customize the Style of those controls and keep the Telerik theming you can use the same principle as in __Example1__. For example, the x:Key of the TextBox style is __TextBoxStyle__.
 
@@ -37,8 +37,8 @@ We have followed a naming convention where the key for every control's default s
 
 Note that custom controls will not automatically receive the inherited control's style. You will have to base your custom style on the default style of the control that is inherited.
 
-#### __[XAML] Example 2: Adding Style for styling custom control__
-{{region styling-apperance-implicit-styles-overview_7}}
+__Example 2: Adding Style for styling custom control__
+```XAML
     <Application.Resources>
       <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
@@ -50,12 +50,12 @@ Note that custom controls will not automatically receive the inherited control's
         <Style TargetType="local:MyCustomGrid" BasedOn="{StaticResource RadGridViewStyle}" />
       </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 You will then need to set the control's **DefaultStyleKey**.
 
-#### __[C#] Example 3: Setting the DefaultStyleKey for styling custom control__
-{{region styling_customstyles}}
+__Example 3: Setting the DefaultStyleKey for styling custom control__
+```C#
     public class MyCustomGrid : RadGridView
     {
         public MyCustomGrid()
@@ -63,17 +63,15 @@ You will then need to set the control's **DefaultStyleKey**.
             this.DefaultStyleKey = typeof(MyCustomGrid);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the DefaultStyleKey for styling custom control__
-{{region styling_customstyles-2}}
+```
+```VB.NET
     Public Class MyCustomGrid
         Inherits RadGridView
         Public Sub New()
             Me.DefaultStyleKey = GetType(MyCustomGrid)
         End Sub
     End Class
-{{endregion}}
+```
 
 ## Control Styles Dependencies
 
@@ -81,9 +79,9 @@ You will then need to set the control's **DefaultStyleKey**.
         
 >If you are using **.NET Core**, note that you have to use **Telerik.Windows.Controls.RichTextBox.xaml** instead of **Telerik.Windows.Documents.xaml** and **Telerik.Windows.Controls.RichTextBoxUI.xaml**.
 	
-#### __[XAML] Example 4: All XAML files corresponding to the Telerik assemblies__
+__Example 4: All XAML files corresponding to the Telerik assemblies__
 
-{{region styling-apperance-implicit-styles-overview_3}}
+```XAML
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -129,7 +127,7 @@ You will then need to set the control's **DefaultStyleKey**.
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 
 ## See Also

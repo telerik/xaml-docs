@@ -52,12 +52,12 @@ The three files should keep the same resource keys, whereas the values must be t
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.        
 
 #### __C#__  
-{{region radrichtextbox-localization_3}}
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	   ResourceManager = RadRichTextBoxResources.ResourceManager
 	};
-{{endregion}}
+```
 
 >tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk), the example is listed as __RichTextBox / Localization__.          
 
@@ -66,16 +66,16 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.        
 
 #### __C#__  
-{{region radrichtextbox-localization_0}}
+```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
-{{endregion}}
+```
 
 >Note that if you set the localization manager after the creation of the UI, some parts might remain not-localized.
 
 What is left in order to fulfill the localization is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the FindReplaceDialog:        
 
 #### __C#__  
-{{region radrichtextbox-localization_1}}
+```C#
 	public class CustomLocalizationManager : LocalizationManager
 	{
 	   public override string GetStringOverride(string key)
@@ -102,12 +102,12 @@ What is left in order to fulfill the localization is to override the method __Ge
 	       return base.GetStringOverride(key);
 	   }
 	}
-{{endregion}}
+```
 
 If you don't want to hard-code your translation inside the source code, you can use resource files:        
 
 #### __C#__  
-{{region radrichtextbox-localization_2}}
+```C#
 	public override string GetStringOverride(string key)
 	{
 	   switch( key )
@@ -119,4 +119,4 @@ If you don't want to hard-code your translation inside the source code, you can 
 	   }
 	   return base.GetStringOverride(key);
 	}
-{{endregion}}
+```

@@ -37,7 +37,7 @@ Here is the list of the __RadialScale__ features:
 The Multiplier property of the __Radial Scale__ allows applying a multiplier to the scale range and to the current value of each element which is displayed on the scale.
 
 #### __XAML__
-{{region radgauge-features-radial-scale_multiplier}}
+```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="50" Multiplier="100">
 	        <telerik:RadialScale.Indicators>
@@ -46,7 +46,7 @@ The Multiplier property of the __Radial Scale__ allows applying a multiplier to 
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -59,14 +59,14 @@ The __RadialScale__ allows you to specify towards which point in its parent cont
 >tip To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
 #### __XAML__
-{{region radgauge-features-radial-scale_0}}
+```XAML
 	<telerik:RadRadialGauge OuterBackground="#EEEEEE" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
 	                         Max="12"
 	                         Center="0.3,0.3">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -87,7 +87,7 @@ The __RadialScale__ control allows you to specify the way the labels get rotated
 Here is an example of __RadialScale__ with a __LabelRotationMode__ of __SurroundOut__:
 
 #### __XAML__
-{{region radgauge-features-radial-scale_1}}
+```XAML
 	<telerik:RadRadialGauge OuterBackground="#EEEEEE" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
 	                         Max="12"
@@ -95,7 +95,7 @@ Here is an example of __RadialScale__ with a __LabelRotationMode__ of __Surround
 	                         LabelRotationMode="SurroundOut">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -108,7 +108,7 @@ You can specify the radius of the __RadialScale__. This is done via the __Radius
 >tip To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
 #### __XAML__
-{{region radgauge-features-radial-scale_2}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
 	                         Max="12"
@@ -122,7 +122,7 @@ You can specify the radius of the __RadialScale__. This is done via the __Radius
 	                         Radius="1.2">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -135,14 +135,14 @@ The StartAngle property of the __Graphic Scale__ allows you to specify the angle
 >tip Another ways to control the positioning of the scale values is to use properties like the __MajorTickStep__, which are exposed by the __ScaleBase__ control, from which the __RadialScale__ derives. To learn more about the base features of the different scales, read the [Base Scale]({%slug radgauge-features-linear-and-radial-scales-basics%}) topic.
 
 #### __XAML__
-{{region radgauge-features-radial-scale_3}}
+```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
 	                         Max="12"
 	                         StartAngle="0">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -157,14 +157,14 @@ If you want to specify the sweep angle use the __SweepAngle__ property. For exam
 Here is an example:
 
 #### __XAML__
-{{region radgauge-features-radial-scale_4}}
+```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
 	                         Max="12"
 	                         SweepAngle="360">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

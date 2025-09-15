@@ -17,7 +17,7 @@ The following tutorial will guide you how to bind a __RadTaskBoard__ to a Collec
 First, we will initialize a CollectionViewSource, which is going to be used to populate the RadTaskBoard control. Next, we can create our data and set __PropertyGroupDescription__ to the State property. This property will be used to group the __CollectionViewSource__.
 
 #### __[C#] Example 1:  Creating ViewModel
-{{region xaml-radtaskboard-populating-with-data-data-binding-to-collectionviewsource-0}}
+```C#
     public  class MainViewModel
     {
         public CollectionViewSource CollectionView { get; set; }
@@ -76,26 +76,26 @@ First, we will initialize a CollectionViewSource, which is going to be used to p
             return tasks;
         }        
     }
-{{endregion}}
+```
 
 What's left is to set the DataContext of the Window and declare RadTaskBoard control in XAML.
 
 > You don't need to set the GroupMemberPath property of the RadTaskBoard when the control's ItemsSource is bound to a CollectionViewSource collection. The first PropertyGroupDescription will be used by the RadTaskBoard to group the items.
 
-#### __[XAML] Example 3: Set the ViewModel as DataContext__
-{{region xaml-radtaskboard-populating-with-data-data-binding-to-collectionviewsource-1}}
+__Example 3: Set the ViewModel as DataContext__
+```XAML
     public MainWindow()
 	{
 		InitializeComponent();
 		this.DataContext = new MainViewModel();
 	}
-{{endregion}}
+```
 
 >The CategoryCollection and CategoryModel class can be accessed in XAML through the following namespace:  
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
-#### __[XAML] Example 3: Defining RadTaskBoard in XAML__
-{{region xaml-radtaskboard-populating-with-data-data-binding-to-collectionviewsource-2}}
+__Example 3: Defining RadTaskBoard in XAML__
+```XAML
     <telerik:RadTaskBoard x:Name="taskBoard" ItemsSource="{Binding CollectionView.View}" >   
 		<telerik:RadTaskBoard.Categories>
 			<taskBoard:CategoryCollection>
@@ -105,7 +105,7 @@ What's left is to set the DataContext of the Window and declare RadTaskBoard con
 			</taskBoard:CategoryCollection>
 		</telerik:RadTaskBoard.Categories>
 	</telerik:RadTaskBoard>
-{{endregion}}
+```
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})

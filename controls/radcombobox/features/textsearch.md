@@ -44,17 +44,14 @@ You can set the __TextSearch.TextPath__ in order to control which property of ea
 
 The __TextSearch__ class exposes a static property named __AutoCompleteTimeout__ which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after which the typed text for the autocomplete is reset. Its default value is 800ms.
 
-#### __[C#] Example 1: Setting TextSearch.AutoCompleteTimeout__
+__Example 1: Setting TextSearch.AutoCompleteTimeout__
 
-{{region radcombobox-features-textsearch_0}}
+```C#
 	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting TextSearch.AutoCompleteTimeout__
-
-{{region radcombobox-features-textsearch_1}}
+```
+```VB.NET
 	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
-{{endregion}}
+```
 
 ## See Also
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})

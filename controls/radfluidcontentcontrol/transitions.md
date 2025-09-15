@@ -18,27 +18,25 @@ The transition effect can be replace via the __Transition__ property of the cont
 
 The transition duration is controlled via the __TransitionDuration__ property.
 
-#### __[XAML] Example 1: Setting transition in XAML__
-{{region radfluidcontentcontrol-transitions-0}}
+__Example 1: Setting transition in XAML__
+```XAML
 	<telerik:RadFluidContentControl x:Name="radFluidContentControl" 
 								    TransitionDuration="0:0:0.500"> 
 		<telerik:RadFluidContentControl.Transition>
 			<telerik:MotionBlurredZoomTransition />
 		</telerik:RadFluidContentControl.Transition>
 	</telerik:RadFluidContentControl>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting transition in code__
-{{region radfluidcontentcontrol-transitions-1}}
+__Example 2: Setting transition in code__
+```C#
 	this.radFluidContentControl.Transition = new MotionBlurredZoomTransition();
 	this.radFluidContentControl.TransitionDuration = TimeSpan.FromMilliseconds(500);
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting transition in code__
-{{region radfluidcontentcontrol-transitions-2}}
+```
+```VB.NET
 	Me.radFluidContentControl.Transition = New MotionBlurredZoomTransition()
     Me.radFluidContentControl.TransitionDuration = TimeSpan.FromMilliseconds(500)
-{{endregion}}
+```
 
 ## See Also
 * [Getting Started]({%slug fluidcontentcontrol-getting-started%})

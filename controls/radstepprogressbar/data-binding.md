@@ -14,8 +14,8 @@ The `RadStepProgressBar` control can be used in a data binding scenario.
 
 The component's `ItemsSource` property can be assigned to a collection of any objects. A `RadStepProgressBarItem` will be auto generated for each item in the ItemsSource. The following example shows how to setup the control in this scenario.
 
-#### __[C#] Defining the models__
-{{region stepprogressbar-data-binding-0}}
+__Defining the models__
+```C#
 	public class StepInfo
 	{
 		public string Text { get; set; }
@@ -61,10 +61,8 @@ The component's `ItemsSource` property can be assigned to a collection of any ob
 			StepShapeGeometry = geometry;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Defining the models__
-{{region stepprogressbar-data-binding-1}}
+```
+```VB.NET
 	Public Class StepInfo
 	    Public Property Text As String
 	    Public Property AdditionalText As String
@@ -117,27 +115,25 @@ The component's `ItemsSource` property can be assigned to a collection of any ob
 	        StepShapeGeometry = geometry
 	    End Sub
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Initializing the view model__
-{{region stepprogressbar-data-binding-2}}
+__Initializing the view model__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 		DataContext = new MainViewModel();
 	}
-{{endregion}}
-
-#### __[VB.NET] Initializing the view model__
-{{region stepprogressbar-data-binding-3}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    DataContext = New MainViewModel()
 	End Sub
-{{endregion}}
+```
 
-#### __[XAML] Setting up the XAML__
-{{region stepprogressbar-data-binding-4}}
+__Setting up the XAML__
+```XAML
 	<telerik:RadStepProgressBar ItemsSource="{Binding Steps}"
 								SelectedItem="{Binding SelectedStep, Mode=TwoWay}">
 		<telerik:RadStepProgressBar.ItemContainerStyle>
@@ -157,7 +153,7 @@ The component's `ItemsSource` property can be assigned to a collection of any ob
 			</DataTemplate>
 		</telerik:RadStepProgressBar.ItemAdditionalContentTemplate>
 	</telerik:RadStepProgressBar>
-{{endregion}}
+```
 
 __Data bound StepProgressBar control__  
 

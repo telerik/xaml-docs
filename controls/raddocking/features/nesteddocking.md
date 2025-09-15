@@ -24,7 +24,7 @@ Implementing nested __RadDockings__ is quite intuitive and straightforward. Letâ
 
 #### __C#__
 
-{{region cs-raddocking-features-nested-docking_0}}
+```C#
 	<telerik:RadDocking x:Name="OuterDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -35,13 +35,13 @@ Implementing nested __RadDockings__ is quite intuitive and straightforward. Letâ
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 Afterwards you will only have to add a new instance of __RadDocking__ inside of the first __RadPane__ as shown below:
     
 #### __C#__
 
-{{region cs-raddocking-features-nested-docking_1}}
+```C#
 	<telerik:RadDocking x:Name="OuterDocking">
 	    ...
 	    <telerik:RadPane Header="Outer Pane 1">
@@ -59,7 +59,7 @@ Afterwards you will only have to add a new instance of __RadDocking__ inside of 
 	    </telerik:RadPane>
 	    ...
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 This will be the final result:![Features Nested Docking 02](images/Features_NestedDocking_02.png)
 

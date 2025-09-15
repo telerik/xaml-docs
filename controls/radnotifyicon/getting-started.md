@@ -34,11 +34,11 @@ You can find the required assemblies for each control from the suite in the [Con
 __Example 1__ demonstrates how you can define a RadNotifyIcon in xaml. You have to point the RadNotifyIcon to an ".ico" file that will be shown in the taskbar notification area. 
 You can either set the __TrayIconSource__ property which accepts an __ImageSource__/__string__ pointing to the file, or the __TrayIcon__ property, which accepts a __System.Drawing.Icon__ object. 
 
-#### __[XAML] Example 1: Defining RadNotifyIcon__
-{{region xaml-radnotifyicon-getting-started-0}}
+__Example 1: Defining RadNotifyIcon__
+```XAML
 
     <telerik:RadNotifyIcon x:Name="icon" TrayIconSource="YourIconPath.ico" GuidItem="00000001-0002-0003-0004-000000000005" />
-{{endregion}}
+```
 
 >important You should replace the placeholder __GuidItem__ with your own Guid. Make sure to create two separate Guids for building in __Debug__ and __Release__ mode and use the same ones for a given application. This will allow Windows to recognize the icon each time you show it in the tray. 
 
@@ -48,14 +48,14 @@ You can either set the __TrayIconSource__ property which accepts an __ImageSourc
 
 By default the icon will be displayed in the tray area once the application is started. If you want to manually show the icon, you can initially set its __ShowTrayIcon__ to __False__. __Example 3__ shows two options for showing and hiding the icon in code.
 
-#### __[XAML] Example 2: Hiding the icon by default__
-{{region xaml-radnotifyicon-getting-started-1}}
+__Example 2: Hiding the icon by default__
+```XAML
 
     <telerik:RadNotifyIcon x:Name="icon" ShowTrayIcon="False" />
-{{endregion}}
+```
 
-#### __[C#] Example 3: Show/Hide the icon in code__
-{{region cs-radnotifyicon-getting-started-2}}
+__Example 3: Show/Hide the icon in code__
+```C#
 
     // Options for showing the icon
     this.icon.ShowTrayIcon = true;
@@ -65,10 +65,8 @@ By default the icon will be displayed in the tray area once the application is s
     // Options for hiding the icon
     this.icon.ShowTrayIcon = false;
     this.icon.RemoveIcon();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Show/Hide the icon in code__
-{{region vb-radnotifyicon-getting-started-3}}
+```
+```VB.NET
 
     ' Options for showing the icon
     Me.icon.ShowTrayIcon = True
@@ -78,23 +76,21 @@ By default the icon will be displayed in the tray area once the application is s
     ' Options for hiding the icon
     Me.icon.ShowTrayIcon = False
     Me.icon.RemoveIcon()
-{{endregion}}
+```
 
 ## Refreshing the Icon
 
 The __RadNotifyIcon__ allows for refreshing the icon through the __UpdateIcon__ method.
 
-#### __[C#] Example 4: Updating the icon__
-{{region cs-radnotifyicon-getting-started-4}}
+__Example 4: Updating the icon__
+```C#
 
     this.icon.UpdateIcon();
-{{endregion}}
-
-#### __[VB.NET] Example 4: Updating the icon__
-{{region vb-radnotifyicon-getting-started-5}}
+```
+```VB.NET
 
     Me.icon.UpdateIcon()
-{{endregion}}
+```
 
 ## Interacting with the Icon
 
@@ -109,8 +105,8 @@ The __RadNotifyIcon__ supports displaying a popup, tooltip, context menu and bal
 
 The __RadNotifyIcon__ exposes the __GetUserNotificationState__ static method, which allows you to check the state of the computer for the current user to determine whether sending a notification is appropriate. 
 
-#### __[C#] Example 5: Using the GetUserNotificationState method__
-{{region cs-radnotifyicon-getting-started-6}}
+__Example 5: Using the GetUserNotificationState method__
+```C#
 
     var state = RadNotifyIcon.GetUserNotificationState();
 
@@ -118,17 +114,15 @@ The __RadNotifyIcon__ exposes the __GetUserNotificationState__ static method, wh
     {
         // send notification
     }
-{{endregion}}
-
-#### __[VB.NET] Example 5: Using the GetUserNotificationState method__
-{{region vb-radnotifyicon-getting-started-7}}
+```
+```VB.NET
 
     Dim state = RadNotifyIcon.GetUserNotificationState()
 
 	If state Is UserNotificationState.AcceptsNotifications Then
 		' send notification
 	End If
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -147,8 +141,8 @@ To change the theme, you can follow the steps below:
 
 __Example 6__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 6: Merge the ResourceDictionaries__  
-{{region radnotifyicon--setting-theme-getting-started_8}}
+__Example 6: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -158,7 +152,7 @@ __Example 6__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

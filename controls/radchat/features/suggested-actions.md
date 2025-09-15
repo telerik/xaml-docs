@@ -16,8 +16,8 @@ __Conversational UI__ supports adding suggestions to the user. This can be done 
 
 __Example 1__ demonstrates how to add a TextMessage and populate the __SuggestedActions__ collection of the RadChat. 
 
-#### __[C#] Example 1: Adding SuggestedAction__ 
-{{region cs-radchat-messages-suggestedactions_01}}
+__Example 1: Adding SuggestedAction__ 
+```C#
 
     private Author currentAuthor;
     private Author otherAuthor;
@@ -37,7 +37,7 @@ __Example 1__ demonstrates how to add a TextMessage and populate the __Suggested
 
         this.chat.SuggestedActions.Add(new SuggestedAction("Hi, there!"));
     }
-{{endregion}}
+```
 
 Adding the __SuggestedAction__ will be visualized as shown in __Figure 1__.
 
@@ -54,8 +54,8 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
 * __PostResultInline__: A boolean property that determines whether the suggestion should be posted as an inline text message or not.
 * __Text__: The text result.
 
-#### __[C#] Example 2: Handling the SuggestedActionReported event__ 
-{{region cs-radchat-messages-suggestedactions_02}}
+__Example 2: Handling the SuggestedActionReported event__ 
+```C#
 
     private void Chat_SuggestedActionReported(object sender, SuggestedActionsEventArgs e)
     {
@@ -67,7 +67,7 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
             this.chat.AddMessage(this.otherAuthor, e.Text);
         }
     }
-{{endregion}}
+```
 
 #### __Figure 2: Handling the SuggestedActionReported event__
 ![Handling the SuggestedActionReported event](images/RadChat_Items_SuggestedActions_02.png)
@@ -76,11 +76,11 @@ When the user selects a given suggestion, the __SuggestedActionReported__ is rai
 
 You have the option of setting the orientation in which the suggested actions are displayed. The default orientation is __Horizontal__.
 
-#### __[XAML] Example 3: Setting the SuggestedActionsOrientation__ 
-{{region xaml-radchat-messages-suggestedactions_3}}
+__Example 3: Setting the SuggestedActionsOrientation__ 
+```XAML
 
     <telerik:RadChat x:Name="chat" SuggestedActionsOrientation="Vertical"/>
-{{endregion}}
+```
 
 #### __Figure 3: SuggestedActions with Vertical orientation__
 ![SuggestedActions with Vertical orientation](images/RadChat_Items_SuggestedActions_03.png)

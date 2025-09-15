@@ -16,8 +16,8 @@ By default, when you drag a RadTabItem out of its parent tabbed window, a new Ra
 
 The following example shows how to create a class that derives from RadTabbedWindow and overrides the PrepareNewWindow, where it returns an instance of itself. This is useful when you need the newly created window to be the same type as the custom implementation.
 
-#### __[C#] Example 1: Override the PrepareNewWindow method__  
-{{region radtabbedwindow-getting-started-0}}
+__Example 1: Override the PrepareNewWindow method__  
+```C#
 	public partial class CustomTabbedWindow : RadTabbedWindow
 	{
 		protected override RadTabbedWindow PrepareNewWindow()
@@ -26,7 +26,7 @@ The following example shows how to create a class that derives from RadTabbedWin
 			return window;
 		}
 	}
-{{endregion}}
+```
 
 > Read more about RadTabbedWindow configuration in its [Getting Started]({%slug radtabbedwindow-getting-started%}) article.
 

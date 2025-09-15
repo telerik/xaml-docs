@@ -36,9 +36,9 @@ The __SelectedPage__ property is of type __WizardPage__ and gets or sets the cur
 
 Here's an example of handling the **SelectionChanged** event using the __SelectedPage__ property to jump to a particular page when a condition is met.
 
-#### __[C#] Example 1: Jump to particular page__
+__Example 1: Jump to particular page__
 
-{{region cs-wizard-navigation_0}}
+```C#
     private void RadWizard_SelectionChanged(object sender, SelectedPageChangedEventArgs e)
     {
         if (e.NewPage == this.page2)
@@ -46,39 +46,33 @@ Here's an example of handling the **SelectionChanged** event using the __Selecte
             ((RadWizard)sender).SelectedPage = this.page3;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Jump to particular page__
-
-{{region vb-wizard-navigation_0}}
+```
+```VB.NET
 	Private Sub RadWizard_SelectionChanged(ByVal sender As Object, ByVal e As SelectedPageChangedEventArgs)
 		If e.NewPage = Me.page2 Then
 			DirectCast(sender, RadWizard).SelectedPage = Me.page3
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## SelectedPageIndex
 The __SelectedPageIndex__ property is of type __int__ and gets or sets the index of the currently selected page.
 
 **Example 2** demonstrates how to use the __SelectedPageIndex__ property in the **Finish** event to return to the starting page once the user clicks **Finish**.
 
-#### __[C#] Example 2: Restart the wizard when the Finish button is clicked__
+__Example 2: Restart the wizard when the Finish button is clicked__
 
-{{region cs-wizard-navigation_1}}
+```C#
     private void RadWizard_Finish(object sender, NavigationButtonsEventArgs e)
     {
         ((RadWizard)sender).SelectedPageIndex = 0;
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Restart the wizard when the Finish button is clicked__
-
-{{region vb-wizard-navigation_1}}
+```
+```VB.NET
 	Private Sub RadWizard_Finish(ByVal sender As Object, ByVal e As NavigationButtonsEventArgs)
 		DirectCast(sender, RadWizard).SelectedPageIndex = 0
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

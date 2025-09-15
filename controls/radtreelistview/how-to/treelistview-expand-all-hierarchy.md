@@ -27,19 +27,19 @@ __Option 2:__ You can follow these steps to accomplish the same task:
 
 	#### __C#__
 
-	{{region treelistview-expand-all-hierarchy_0}}
+	```C#
 
 		treeListView.DataLoaded += new EventHandler<EventArgs>(treeListView_DataLoaded);
-{{endregion}}
+```
 
 
 
 	#### __VB.NET__
 
-	{{region treelistview-expand-all-hierarchy_1}}
+	```VB.NET
 
 		AddHandler treeListView.DataLoaded, AddressOf treeListView_DataLoaded
-{{endregion}}
+```
 
 
 
@@ -47,26 +47,26 @@ __Option 2:__ You can follow these steps to accomplish the same task:
 
 	#### __C#__
 
-	{{region treelistview-expand-all-hierarchy_2}}
+	```C#
 
 		void treeListView_DataLoaded(object sender, EventArgs e)
 		{
 	   		treeListView.DataLoaded -= treeListView_DataLoaded;
 	    	treeListView.ExpandAllHierarchyItems();   
 		}
-{{endregion}}
+```
 
 
 
 	#### __VB.NET__
 
-	{{region treelistview-expand-all-hierarchy_3}}
+	```VB.NET
 
 		Private Sub treeListView_DataLoaded(sender As Object, e As EventArgs)
 	   	treeListView.DataLoaded -= treeListView_DataLoaded
 	   	treeListView.ExpandAllHierarchyItems()
 		End Sub
-{{endregion}}
+```
 
 
 

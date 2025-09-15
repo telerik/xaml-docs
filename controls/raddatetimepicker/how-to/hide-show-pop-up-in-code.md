@@ -18,17 +18,17 @@ For example:
 
 #### __C#__
 
-{{region cs-raddatetimepicker-how-to-hide-show-pop-up-in-code_0}}
+```C#
 	this.radDateTimePicker.IsDropDownOpen = true;
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region vb-raddatetimepicker-how-to-hide-show-pop-up-in-code_1}}
+```VB.NET
 	Me.radDateTimePicker.IsDropDownOpen = True
-{{endregion}}
+```
 
 ## See Also
 

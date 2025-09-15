@@ -36,13 +36,13 @@ In your XAML file, add a new __RadChart__ declaration and make a new instance of
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-creating-chart-declaratively_0}}
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView />
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -56,7 +56,7 @@ After declaring the default view, the next step is to add a chart title. Find yo
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-creating-chart-declaratively_1}}
+```XAML
 	<telerik:RadChart VerticalAlignment="Top">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -66,7 +66,7 @@ After declaring the default view, the next step is to add a chart title. Find yo
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
     
      
 ![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_CreatingChartDeclaratively_010.png)
@@ -77,7 +77,7 @@ Add a __ChartLegend__ declaration to your default view declaration. If you want 
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-creating-chart-declaratively_2}}
+```XAML
 	<telerik:RadChart VerticalAlignment="Top">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -93,7 +93,7 @@ Add a __ChartLegend__ declaration to your default view declaration. If you want 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -105,7 +105,7 @@ The third step in the populating a __RadChart__ with data is adding a __ChartAre
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-creating-chart-declaratively_3}}
+```XAML
 	<telerik:RadChart VerticalAlignment="Top">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -121,7 +121,7 @@ The third step in the populating a __RadChart__ with data is adding a __ChartAre
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -137,7 +137,7 @@ The XAML bellow defines __LineSeriesDefinition__, that represents the line chart
 
 #### __XAML__
 
-{{region xaml-radchart-populating-with-data-creating-chart-declaratively_4}}
+```XAML
 	<telerik:RadChart VerticalAlignment="Top">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -197,7 +197,7 @@ The XAML bellow defines __LineSeriesDefinition__, that represents the line chart
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

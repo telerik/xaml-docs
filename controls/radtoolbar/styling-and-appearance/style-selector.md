@@ -12,8 +12,8 @@ position: 2
 
 __RadToolBar__ control uses __StyleSelector__ mechanism to re-style its items. The control has predefined styles for the most commonly used controls as its content. 
 
-#### __[XAML] Example 1: Default predefined styles__
-{{region xaml-radtoolbar-style-selector_0}}
+__Example 1: Default predefined styles__
+```XAML
 	<Style TargetType="telerik:RadToolBar" x:Key="RadToolBarStyle">
 		<Setter Property="ItemContainerStyleSelector">
 			<Setter.Value>
@@ -34,7 +34,7 @@ __RadToolBar__ control uses __StyleSelector__ mechanism to re-style its items. T
 			</Setter.Value>
 		</Setter>
 	</Style>
-{{endregion}}
+```
 
 To change a predefined style of a given control the __TypeName__ property of the Style need to be set.
 
@@ -54,7 +54,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 ## RadToolBarSeparator
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_1}}
+```XAML
 	<Window.Resources>
          <Style x:Key="CustomRadToolBarSeparatorStyle" TargetType="telerik:RadToolBarSeparator">
             <Setter Property="BorderBrush" Value="Red"/>
@@ -78,12 +78,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<telerik:RadToolBarSeparator />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## Button
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_2}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="Red"/>
@@ -95,12 +95,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<Button Content="Button" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
  
 ## RadButton
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_3}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadButtonStyle" TargetType="telerik:RadButton">
             <Setter Property="Background" Value="Red"/>
@@ -112,12 +112,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<telerik:RadButton Content="RadButton" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## ToggleButton
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_4}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomToggleButtonStyle" TargetType="ToggleButton">
             <Setter Property="Background" Value="Red"/>
@@ -129,12 +129,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<ToggleButton Content="ToggleButton" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## RadToggleButton
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_5}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadToggleButtonStyle" TargetType="telerik:RadToggleButton">
             <Setter Property="Background" Value="Red"/>
@@ -146,12 +146,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<telerik:RadToggleButton Content="RadToggleButton" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## RadioButton
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_6}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadioButtonStyle" TargetType="RadioButton">
             <Setter Property="Background" Value="Red"/>
@@ -163,12 +163,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<RadioButton Content="RadioButton" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## RadRadioButton
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_7}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadRadioButtonStyle" TargetType="telerik:RadRadioButton">
             <Setter Property="Background" Value="Red"/>
@@ -180,12 +180,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<telerik:RadRadioButton Content="RadRadioButton" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## RadDropDownButton
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_8}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadDropDownButtonStyle" TargetType="telerik:RadDropDownButton">
             <Setter Property="Background" Value="Red"/>
@@ -197,12 +197,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<telerik:RadDropDownButton Content="RadDropDownButton" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## RadSplitButton
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_9}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadSplitButtonStyle" TargetType="telerik:RadSplitButton">
             <Setter Property="Background" Value="Red"/>
@@ -214,12 +214,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<telerik:RadSplitButton Content="Button" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## CheckBox
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_10}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomCheckBoxStyle" TargetType="CheckBox">
             <Setter Property="Background" Value="Red"/>
@@ -231,12 +231,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<CheckBox Content="CheckBox Text" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## TextBlock
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_11}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomTextBlockStyle" TargetType="TextBlock">
             <Setter Property="Background" Value="Red"/>
@@ -248,12 +248,12 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<TextBlock Text="Custom Text" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## TextBox
 
 #### __XAML__
-{{region xaml-radtoolbar-style-selector_12}}
+```XAML
 	<Window.Resources>
         <Style x:Key="CustomTextBoxStyle" TargetType="TextBox">
             <Setter Property="Background" Value="Red"/>
@@ -265,7 +265,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 	<telerik:RadToolBar ItemContainerStyleSelector="{StaticResource selector}">
 		<TextBox Text="Custom Text" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 ## See Also  
 * [Overview]({%slug radtoolbar-overview%})

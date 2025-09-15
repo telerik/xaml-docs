@@ -59,19 +59,19 @@ If you are not using NuGet packages, you can add a reference to the following as
 After you make sure you have added the needed assembly references, you can either add the control manually by writing the __XAML code (Example 2)__ or you can drag it from the Visual Studio Toolbox and drop it over the XAML view.
 
 >In order to use __RadTreeListView__ in XAML, you have to declare the following namespace:
->#### __[XAML] Example 1: Declaring Telerik Namespace__
->{{region radtreeliestview-getting-started_0}}
+>__Example 1: Declaring Telerik Namespace__
+>```XAML
 >	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
->{{endregion}}
+>```
 
 
-#### __[XAML] Example 2: Adding RadTreeListView in XAML__
+__Example 2: Adding RadTreeListView in XAML__
 
-{{region radtreeliestview-getting-started_1}}
+```XAML
 
 	<telerik:RadTreeListView x:Name="radTreeListView">
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 ## Populating with Data
 
@@ -79,9 +79,9 @@ Populating __RadTreeListView__ with sample data will require a business model an
 
 The example will use a collection that represents the contents of a warehouse. It will contain __WarehouseItem__ objects. Each __WarehouseItem__ will have a __Name__, __Count__ and a collection of __WarehouseItem__ objects. Here is the class definition.
 
-#### __[C#] Example 3: Defining a Sample Business Model__
+__Example 3: Defining a Sample Business Model__
 
-{{region radtreeliestview-getting-started_4}}
+```C#
 
 	public class WarehouseItem: INotifyPropertyChanged
 	{
@@ -158,11 +158,8 @@ The example will use a collection that represents the contents of a warehouse. I
 	    public event PropertyChangedEventHandler PropertyChanged;
 	}
 
-{{endregion}}
-
-#### __[VB.NET] Example 3: Defining a Sample Business Model__
-
-{{region radtreeliestview-getting-started_5}}
+```
+```VB.NET
 
 		Public Class WarehouseItem
 		Implements INotifyPropertyChanged
@@ -223,13 +220,13 @@ The example will use a collection that represents the contents of a warehouse. I
 
 		Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 Here is an example class that dynamically creates the sample data.
 
-#### __[C#] Example 4: Create Sample Data__
+__Example 4: Create Sample Data__
 
-{{region radtreeliestview-getting-started_6}}
+```C#
 
 	public class WarehouseService
 	{
@@ -257,11 +254,8 @@ Here is an example class that dynamically creates the sample data.
 	        return data;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Create Sample Data__
-
-{{region radtreeliestview-getting-started_7}}
+```
+```VB.NET
 
 	Public Class WarehouseService
 	 Public Shared Function GetWarehouseData() As ObservableCollection(Of WarehouseItem)
@@ -287,12 +281,12 @@ Here is an example class that dynamically creates the sample data.
 	  Return data
 	 End Function
 	End Class
-{{endregion}}
+```
 
 Finally, define a view model containing the created sample data.
 
-#### __[C#] Example 5: Define a Sample View Model__
-{{region radtreeliestview-getting-started_12}}
+__Example 5: Define a Sample View Model__
+```C#
 	public class WarehouseViewModel: ViewModelBase
 	{
 	    private ObservableCollection<WarehouseItem> warehouseItems;
@@ -310,10 +304,8 @@ Finally, define a view model containing the created sample data.
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Define a Sample View Model__
-{{region radtreeliestview-getting-started_13}}
+```
+```VB.NET
 	Public Class WarehouseViewModel
 		Inherits ViewModelBase
 	
@@ -329,13 +321,13 @@ Finally, define a view model containing the created sample data.
 	        End Get
 	    End Property
 	End Class
-{{endregion}}
+```
 
 In order to display your data, you need to bind the __ItemsSource__ property of __RadTreeListView__.
 
-#### __[XAML] Example 6: Bind RadTreeListView__
+__Example 6: Bind RadTreeListView__
 
-{{region radtreeliestview-getting-started_8}}
+```XAML
 
 	<Window.Resources>
 		<my:WarehouseViewModel x:Key="MyViewModel"/>
@@ -344,7 +336,7 @@ In order to display your data, you need to bind the __ItemsSource__ property of 
 							 x:Name="radTreeListView"
 							 ItemsSource="{Binding WarehouseItems}"/>
 
-{{endregion}}
+```
 
 At this point, only the first level of the hierarchical data will get displayed and __RadTreeListView__ will look just like a __RadGridView__. 
 
@@ -355,9 +347,9 @@ In order to display the other levels of the hierarchy, you have to define a __Tr
 
 >In the context of __RadTreeListView__ control, you shouldn't use the __GridViewTabelDefinition__ class, but instead use the __TreeListViewTableDefinition__ class because it exposes an __ItemSource__ property that should be bound to the property that represents the next level of hierarchy. This property should have the same name at each level of the hierarchy.
 
-#### __[XAML] Example 7: Define a ChildTableDefinition for RadTreeListView__
+__Example 7: Define a ChildTableDefinition for RadTreeListView__
 
-{{region radtreeliestview-getting-started_10}}
+```XAML
 
 	<telerik:RadTreeListView x:Name="radTreeListView"
 	                            ItemsSource="{Binding WarehouseItems}">
@@ -365,15 +357,15 @@ In order to display the other levels of the hierarchy, you have to define a __Tr
 	        <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
 	    </telerik:RadTreeListView.ChildTableDefinitions>
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 ## Columns
 
 By default, __RadTreeListView__ will auto-generate the columns for its data by creating a column for each property. In order to prevent this, you must set the __AutogenerateColumns__ property to ___False___ and manually add the desired columns to the __Columns__ collection of the control.
 
-#### __[XAML] Example 8: Manually Define the Columns of RadTreeListView__
+__Example 8: Manually Define the Columns of RadTreeListView__
 
-{{region radtreeliestview-getting-started_11}}
+```XAML
 
 	<telerik:RadTreeListView x:Name="radTreeListView"
 	                            AutoGenerateColumns="False"
@@ -388,7 +380,7 @@ By default, __RadTreeListView__ will auto-generate the columns for its data by c
 	                                    Header="Count" />
 	    </telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 >tip __RadTreeListView__ can use the same column types used with __RadGridView__. To learn more about the different types of columns, read [here]({%slug radgridview-columns-column-types-basic-column%}).
         
@@ -416,8 +408,8 @@ To change the theme, you can follow the steps below:
 
 __Example 9__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 9: Merge the ResourceDictionaries__  
-{{region radtreeview-getting-started_08}}
+__Example 9: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -428,7 +420,7 @@ __Example 9__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 3__ shows RadTreeListView with the **Windows8** theme applied.
 	

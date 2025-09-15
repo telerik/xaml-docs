@@ -39,8 +39,8 @@ You can find the required assemblies for each control from the suite in the [Con
 
 The following example shows how to define a RadCloudUpload control and a RadCloudUploadList to show the selected files prepared for upload.
 
-#### __[XAML] Example 1: Defining RadCloudUpload and RadCloudUploadList__
-{{region radcloudupload-getting-started-1}}
+__Example 1: Defining RadCloudUpload and RadCloudUploadList__
+```XAML
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -49,7 +49,7 @@ The following example shows how to define a RadCloudUpload control and a RadClou
         <telerik:RadCloudUpload x:Name="RadCloudUpload" />
         <telerik:RadCloudUploadList Grid.Row="1" ItemsSource="{Binding Items, ElementName=RadCloudUpload}"/>
     </Grid>
-{{endregion}}
+```
 
 > The cloud upload control itself provides only a UI and an interface to execute the upload task. However, the upload process should be implemented with additional custom code. The next section shows how to set up this.
 
@@ -59,8 +59,8 @@ RadCloudUpload uses a provider interface to upload files to the service of your 
 
 This secion will show you how to create a dummy provider that stores the files in a storage in memory. 
 
-#### __[C#] Example 2: Creating a dummy storage and file classes__
-{{region radcloudupload-getting-started-1}}
+__Example 2: Creating a dummy storage and file classes__
+```C#
 	public static class DummyStorage
 	{
 		public static ObservableCollection<StorageFile> StorageFiles { get; private set; }
@@ -82,10 +82,10 @@ This secion will show you how to create a dummy provider that stores the files i
 			this.Size = size;
 		}
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 3: Implementing a dummy ICloudUploadProvider that uploads files to the storage__
-{{region radcloudupload-getting-started-2}}
+__Example 3: Implementing a dummy ICloudUploadProvider that uploads files to the storage__
+```C#
 	public class DummyProvider : ICloudUploadProvider
 	{
 		Random random = new Random();		
@@ -117,16 +117,16 @@ This secion will show you how to create a dummy provider that stores the files i
 			return fileName;
 		}
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Setting the provider__
-{{region radcloudupload-getting-started-3}}
+__Example 4: Setting the provider__
+```XAML
 	<telerik:RadCloudUpload>
 		<telerik:RadCloudUpload.Provider>
 			<local:DummyProvider />
 		</telerik:RadCloudUpload.Provider>
 	</telerik:RadCloudUpload>
-{{endregion}}
+```
 
 > The control doesn't have any built-in providers, but you can see how to implement one that connects to the Azure and Amazon services in the [RadCloudUpload SDK examples](https://github.com/telerik/xaml-sdk/tree/master/CloudUpload).
 

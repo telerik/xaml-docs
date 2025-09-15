@@ -34,15 +34,15 @@ To achieve a sorting functionality in this scenario, implement custom sorting lo
 
 1. Subscribe to the Sorting event:
 
-    #### __[XAML]__
-    {{region kb-gridview-sort-datatable-column-that-has-square-brackets-in-its-name-0}}
+    
+    ```XAML
         <telerik:RadGridView Sorting="OnRadGridViewSorting"/>
-    {{endregion}}
+    ```
 
 2. Retrieve the `DataView` of the DataTable instance that is bound to the `ItemsSource` property of RadGridView. Then, check if the `e.Column` property contains the column that is bound to the DataTable column with square brackets in its name:
 
-    #### __[C#] Handling the Sorting event__
-    {{region kb-gridview-sort-datatable-column-that-has-square-brackets-in-its-name-1}}
+    __Handling the Sorting event__
+    ```C#
         private void OnRadGridViewSorting(object sender, Telerik.Windows.Controls.GridViewSortingEventArgs e)
         {
             var items = e.DataControl.ItemsSource as DataView;
@@ -52,12 +52,12 @@ To achieve a sorting functionality in this scenario, implement custom sorting lo
 
             }
         }
-    {{endregion}}
+    ```
 
 3. Utilize the `Sort` property of the retrieved `DataView` to sort the DataTable column in the direction of the new sorting state. The square brackets of the column will have to be escaped when using the Sort property:
 
-    #### __[C#] Setting the Sort property of the DataView__
-    {{region kb-gridview-sort-datatable-column-that-has-square-brackets-in-its-name-2}}
+    __Setting the Sort property of the DataView__
+    ```C#
         private void OnRadGridViewSorting(object sender, Telerik.Windows.Controls.GridViewSortingEventArgs e)
         {
             var items = e.DataControl.ItemsSource as DataView;
@@ -78,12 +78,12 @@ To achieve a sorting functionality in this scenario, implement custom sorting lo
                 }
             }
         }
-    {{endregion}}
+    ```
 
 4. Set the `SortingState` property of the sorted column to the new sorting direction. Then, to prevent the default sorting logic of RadGridView from occurring, set the `e.Cancel` property to __true__:
 
-    #### __[C#] The complete implementation of the custom sorting logic__
-    {{region kb-gridview-sort-datatable-column-that-has-square-brackets-in-its-name-3}}
+    __The complete implementation of the custom sorting logic__
+    ```C#
         private void OnRadGridViewSorting(object sender, Telerik.Windows.Controls.GridViewSortingEventArgs e)
         {
             var items = e.DataControl.ItemsSource as DataView;
@@ -107,6 +107,6 @@ To achieve a sorting functionality in this scenario, implement custom sorting lo
             e.Column.SortingState = e.NewSortingState;
             e.Cancel = true;
         }
-    {{endregion}}
+    ```
 
 >important The [IsCustomSortingEnabled]({%slug gridview-set-sortingstate-on-column%}) property of the column needes to be set to __true__, when implementing custom sorting logic.

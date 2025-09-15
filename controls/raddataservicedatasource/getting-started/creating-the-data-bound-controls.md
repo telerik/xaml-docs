@@ -30,7 +30,7 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 
 {% if site.site_name == 'WPF' %}
 #### __XAML__
-{{region raddataservicedatasource-getting-started-creating-the-data-bound-controls_0}}
+```XAML
 
 	<Window x:Class="NorthwindExplorer.MainWindow"
 	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -52,13 +52,13 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 	       <telerik:RadDataPager Grid.Row="1" Source="{Binding DataView, ElementName=customersDataSource}" PageSize="10"/>
 	    </Grid>
 	</Window>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 
 #### __XAML__
-{{region raddataservicedatasource-getting-started-creating-the-data-bound-controls_1}}
+```XAML
 
 	<UserControl x:Class="NorthwindExplorer.MainPage"
 	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -83,7 +83,7 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 	      <telerik:RadDataPager Grid.Row="1" Source="{Binding DataView, ElementName=customersDataSource}" PageSize="10"/>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 {% endif %}
 
 

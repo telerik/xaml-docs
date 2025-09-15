@@ -38,28 +38,28 @@ As of **R3 2020**, you can use the new **ClosePane** command to close the curren
 
 If no parameter is passed, the command will close the currently active pane, if there is such.
 
-#### __[XAML] Example 1: Binding the ClosePane to Ctrl+F4 for a single RadDocking instance__
+__Example 1: Binding the ClosePane to Ctrl+F4 for a single RadDocking instance__
 
-{{region xaml-kb-docking-close-active-pane-command_1}}
+```XAML
     <telerik:RadDocking>
 		<!-- ... -->
 		<telerik:RadDocking.InputBindings>
 			<KeyBinding Command="telerik:RadDockingCommands.ClosePane" CommandParameter="DocumentPanes" Key="F4" Modifiers="Ctrl" />
 		</telerik:RadDocking.InputBindings>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 You can also bind the command for all RadDocking controls in your application by using the **CommandManager.RegisterClassInputBinding** method.
 
-#### __[C#] Example 2: Binding the ClosePane to Ctrl+F4 for all RadDocking controls in the application__
+__Example 2: Binding the ClosePane to Ctrl+F4 for all RadDocking controls in the application__
 
-{{region cs-kb-docking-close-active-pane-command_2}}
+```C#
 	public App()
 	{
 		KeyBinding keyBinding = new KeyBinding(RadDockingCommands.ClosePane, new KeyGesture(Key.F4, ModifierKeys.Control)) { CommandParameter = ClosePaneMode.DocumentPanes };
 		CommandManager.RegisterClassInputBinding(typeof(RadDocking), keyBinding);
 	}
-{{endregion}}
+```
 
 ## See Also
 * [Navigator]({%slug raddocking-navigator%})

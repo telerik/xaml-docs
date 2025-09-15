@@ -20,15 +20,15 @@ The customization of the row headers is possible through  the __RowHeaderSetting
 	* __Left__: The row labels will be position on the left side of the RadHeatMap. (Default value)
 	* __Right__: The row labels will be position on the right side of the RadHeatMap.
 
-#### __[XAML] Example 1: Modifying row headers__
+__Example 1: Modifying row headers__
 
-{{region radheatmap-row-column-headers_0}}
+```XAML
 	<telerik:RadHeatMap >            
 		<telerik:RadHeatMap.RowHeaderSettings>
 			<telerik:HeatMapRowHeaderSettings LabelsPanelPosition="Right"/>
 		</telerik:RadHeatMap.RowHeaderSettings>
 	</telerik:RadHeatMap>
-{{endregion}}
+```
 
 ## Column Headers
 
@@ -40,15 +40,15 @@ The customization of the column headers is possible through the __ColumnHeaderSe
 	
  * __LabelRotationAngle__: A property of type double that gets or sets the rotation angle applied to the label. 
 
-#### __[XAML] Example 2: Modifying column headers__
+__Example 2: Modifying column headers__
 
-{{region radheatmap-row-column-headers_1}}
+```XAML
 	 <telerik:RadHeatMap >            
 		<telerik:RadHeatMap.ColumnHeaderSettings>
 			<telerik:HeatMapColumnHeaderSettings LabelsPanelPosition="Bottom" LabelRotationAngle="60"/>
 		</telerik:RadHeatMap.ColumnHeaderSettings>
 	</telerik:RadHeatMap>
-{{endregion}}
+```
 
 
 ### Example
@@ -59,29 +59,27 @@ For demonstration purposes, we will use a simple class that will represent one c
  * __Column:__ А string property which gets or sets the column name of the corresponding cell.
  * __Value:__ Аn integer property which gets or sets the value of the corresponding cell.
 
-#### __[C#] Example 3: Creating the model__
-{{region radheatmap-row-column-headers_2}}
+__Example 3: Creating the model__
+```C#
 	public class TempInfo
     {
         public int Year { get; set; }
         public string Month { get; set; }
         public double Temperature { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Creating the model__
-{{region radheatmap-row-column-headers_3}}
+```
+```VB.NET
     Public Class TempInfo
 		Public Property Year As Integer
 		Public Property Month As String
 		Public Property Temperature As Double
 	End Class
-{{endregion}}
+```
 
 To fill the RadHeatMap with sample data we can create a list of *TempInfo* objects and set it as DataContext of the control. 
 
-#### __[C#] Example 4: Populating the RadHeatMap control__
-{{region radheatmap-row-column-headers_4}}
+__Example 4: Populating the RadHeatMap control__
+```C#
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -109,10 +107,8 @@ To fill the RadHeatMap with sample data we can create a list of *TempInfo* objec
 			this.DataContext = source;
 		}
     } 
-{{endregion}}
-
-#### __[VB.NET] Example 3: Populating the RadHeatMap control__
-{{region radheatmap-row-column-headers_5}}
+```
+```VB.NET
     Public Partial Class MainWindow
 		Inherits Window
 
@@ -142,12 +138,12 @@ To fill the RadHeatMap with sample data we can create a list of *TempInfo* objec
 			Me.DataContext = source
 		End Sub
 	End Class
-{{endregion}}
+```
 
 After having the sample data ready, we can go in the XAML code and modify row/column headers.
 
-#### __[XAML] Example 4: Customizing the Row/Column Headers__
-{{region radheatmap-row-column-headers_6}}
+__Example 4: Customizing the Row/Column Headers__
+```XAML
 	<telerik:RadHeatMap CellBorderColor="Black" CellBorderThickness="1" >		
 		<telerik:RadHeatMap.RowHeaderSettings>
 			<telerik:HeatMapRowHeaderSettings LabelsPanelPosition="Right" LabelVerticalAlignment="Center" LabelInterval="2">
@@ -179,7 +175,7 @@ After having the sample data ready, we can go in the XAML code and modify row/co
 									ValuePath="Temperature" />
 		</telerik:RadHeatMap.Definition>
 	</telerik:RadHeatMap>
-{{endregion}}
+```
 
 #### __Figure 1: RadHeatMap with customized Row/Column Headers__
 

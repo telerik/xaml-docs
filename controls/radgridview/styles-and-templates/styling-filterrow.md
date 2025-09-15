@@ -43,15 +43,15 @@ The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButt
 
 >To learn how to modify the default StringFilterEditor style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Example 1: Styling the StringFilterEditor__
+__Example 1: Styling the StringFilterEditor__
 
-	{{region xaml-gridview-styling-filter-row-1}}
+	```XAML
 	<Style TargetType="Editors:StringFilterEditor">
 	    <Setter Property="Template" Value="{StaticResource StringFilterEditorTemplate}"/>
 	    <Setter Property="IsTabStop" Value="False"/>
 	    <Setter Property="SnapsToDevicePixels" Value="True"/>
 	</Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __StringFilterEditorStyle__.
           
@@ -59,14 +59,14 @@ The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButt
 
 In order to change RadDropDownButton's (the funnel) visual appearance, you should create an appropriate style, targeting the **FieldFilterControl** element.
 
-#### __[XAML] Example 2: Styling the FieldFilterControl__
+__Example 2: Styling the FieldFilterControl__
 
-	{{region xaml-gridview-styling-filter-row-2}}
+	```XAML
 	<Style TargetType="telerik:FieldFilterControl">
 	    <Setter Property="Template" Value="{StaticResource FieldFilterControlTemplate}"/>
 	    <Setter Property="Padding" Value="5"/>
 	</Style>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __FieldFilterControlStyle__.
 
@@ -74,9 +74,9 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 
 Since the created editor will be inserted as the **Content** of __PART_FilterEditorContentControl__, you can attach to a __FieldFilterEditorCreated__ event and apply the respective style to the respective editor. For example, if the editor is a plain __TextBox__, you can change its __Background__ like so:
 
-#### __[C#] Example 3: Setting a background for the filtering row TextBox__
+__Example 3: Setting a background for the filtering row TextBox__
 
-	{{region cs-gridview-styling-filter-row-3}}
+	```C#
 	private void clubsGrid_FieldFilterEditorCreated(object sender, EditorCreatedEventArgs e)
 	{
 	    if (e.Column.UniqueName == "StadiumCapacity")
@@ -88,11 +88,8 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting a background for the filtering row TextBox__
-
-	{{region vb-gridview-styling-filter-row-4}}
+```
+```VB.NET
 	Private Sub clubsGrid_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	    If e.Column.UniqueName = "StadiumCapacity" Then
 	        Dim txtBox As TextBox = TryCast(e.Editor, TextBox)
@@ -101,7 +98,7 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 #### __Figure 2: RadGridView with styled filter row__
 

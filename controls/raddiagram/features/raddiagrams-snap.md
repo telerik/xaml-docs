@@ -22,7 +22,7 @@ Note that the __IsSnapToGridEnabled__ property of the RadDiagram must be set to 
 
 #### __XAML__
 
-{{region raddiagrams-features-snap-0}}
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -40,7 +40,7 @@ Note that the __IsSnapToGridEnabled__ property of the RadDiagram must be set to 
 			<telerik:RadDiagramShape Width="45" Height="45" Geometry="{telerik:CommonShape ShapeType=RectangleShape}" Position="243 150" />
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 ![raddiagram features align and snap to grid](images/raddiagram_features_align_and_snap_to_grid.png)
 
@@ -48,11 +48,11 @@ You can give argument to the Align Command with the __CommandParameter__ propert
 
 #### __XAML__
 
-{{region raddiagrams-features-snap-1}}
+```XAML
 	<StackPanel>
 		<telerik:RadButton Width="125" Command="telerik:DiagramCommands.Align" CommandParameter="Right" CommandTarget="{Binding ElementName=diagram}" Content="Align" />
 	</StackPanel>
-{{endregion}}
+```
 
 >Please keep in mind that you cannot use __HorizontalAlignment__ and __VerticalAlignment__ of the RadDiagramItem because the Diagram is created over a Canvas. In other word, use only the Position property.                    
 
@@ -66,7 +66,7 @@ Once the snapping is enabled, when a __DiagramItem__ is dragged its X and Y coor
 
 #### __XAML__
 
-{{region raddiagrams-features-snap-2}}
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -82,7 +82,7 @@ Once the snapping is enabled, when a __DiagramItem__ is dragged its X and Y coor
 			<telerik:RadDiagramShape Width="45" Height="45" Geometry="{telerik:CommonShape ShapeType=RectangleShape}" Position="125 55" />
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 ![raddiagram features align and snap to grid 2](images/raddiagram_features_align_and_snap_to_grid2.png)
 
@@ -129,7 +129,7 @@ The alignment lines are part of the __AlignmentAdorner__ and therefore their app
 
 #### __XAML__
 
-{{region raddiagrams-features-snap-4}}
+```XAML
 	<telerik:RadDiagram x:Name="xDiagram"
 						primitives:AlignmentAdorner.HorizontalLineStroke="Green"
 						primitives:AlignmentAdorner.HorizontalLineStrokeDashArray="2 1"
@@ -137,7 +137,7 @@ The alignment lines are part of the __AlignmentAdorner__ and therefore their app
 						primitives:AlignmentAdorner.VerticalLineStroke="Green"
 						primitives:AlignmentAdorner.VerticalLineStrokeDashArray="1 2"
 						primitives:AlignmentAdorner.VerticalLineStrokeThickness="2" />
-{{endregion}}
+```
 
 ![raddiagram-features-align-customstyle](images/raddiagram-features-align-customstyle.png)
 

@@ -19,7 +19,7 @@ The __RadRibbonRadioButton__ represents an extension of the __RadRadioButton__. 
 Here is a sample definition of a __RadRibbonRadioButton__:			
 
 #### __XAML__
-{{region radribbonview-radio-button_0}}
+```XAML
 	<telerik:RadRibbonRadioButton CollapseToMedium="Never" 
 	                              CollapseToSmall="WhenGroupIsMedium"
 	                              IsAutoSize="True"
@@ -27,7 +27,7 @@ Here is a sample definition of a __RadRibbonRadioButton__:
 	                              Size="Large"
 	                              SmallImage="Icons/16/Equation.png"
 	                              Text="Equation" />
-{{endregion}}
+```
 
 >tip As all buttons in the RadRibbonView's set slightly expose the same functionality, take a look at the [Overview]({%slug radribbonview-buttons-overview%}) topic.
 
@@ -37,7 +37,7 @@ This button has its initial size set to __Large__ and its text label set to __"E
 Here is an example of a __RadRibbonGroup__ that contains two __RadRibbonRadioButtons__.			
 
 #### __XAML__
-{{region radribbonview-radio-button_1}}
+```XAML
 	<telerik:RadRibbonGroup DialogLauncherVisibility="Visible" Header="Home Group">
 	    <telerik:RadRibbonRadioButton CollapseToMedium="Never" 
 	                                  CollapseToSmall="WhenGroupIsMedium"
@@ -54,7 +54,7 @@ Here is an example of a __RadRibbonGroup__ that contains two __RadRibbonRadioBut
 	                                  SmallImage="Icons/16/Footer.png"
 	                                  Text="Symbol" />
 	</telerik:RadRibbonGroup>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadRibbonView Ribbon Group with Two Radio Buttons](images/RibbonView_Buttons_RadioButtonsGroup.png)
 
@@ -63,7 +63,7 @@ Here is an example of a __RadRibbonGroup__ that contains two __RadRibbonRadioBut
 Besides the __Click__ event, the __RadRibbonRadioButton__ control exposes two additional events - __Checked__ and __Unchecked.__ They are meant to notify for changes in the checked state of the radio button.				
 
 #### __XAML__
-{{region radribbonview-radio-button_2}}
+```XAML
 	<telerik:RadRibbonToggleButton Checked="RadRibbonToggleButton_Checked"
 	                               CollapseToMedium="Never"
 	                               CollapseToSmall="WhenGroupIsMedium"
@@ -73,26 +73,26 @@ Besides the __Click__ event, the __RadRibbonRadioButton__ control exposes two ad
 	                               SmallImage="Icons/16/Equation.png"
 	                               Text="Symbol"
 	                               Unchecked="RadRibbonToggleButton_Unchecked" />
-{{endregion}}
+```
 
 #### __C#__
-{{region radribbonview-radio-button_3}}
+```C#
 	private void RadRibbonToggleButton_Checked(object sender, RoutedEventArgs e)
 	{
 	}
 	private void RadRibbonToggleButton_Unchecked(object sender, RoutedEventArgs e)
 	{
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radribbonview-radio-button_4}}
+```VB.NET
 	Private Sub RadRibbonToggleButton_Checked(sender As Object, e As RoutedEventArgs)
 	End Sub
 	
 	Private Sub RadRibbonToggleButton_Unchecked(sender As Object, e As RoutedEventArgs)
 	End Sub
-{{endregion}}
+```
 
 ## See Also
  * [Styling the RadRibbonRadioButton]({%slug radribbonview-styling-ribbonradiobutton%})

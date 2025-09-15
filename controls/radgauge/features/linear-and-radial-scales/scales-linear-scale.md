@@ -31,26 +31,26 @@ The LinearScale control can have either a horizontal or vertical orientation. Th
 Here is an example of a __LinearScale__ with horizontal orientation:
 
 #### __XAML__
-{{region radgauge-features-scales-linear-scale_hor_0}}
+```XAML
 	<telerik:RadHorizontalLinearGauge Width="300"
 	                                  Height="100"
 	                                  telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0"
 	                         Max="12" />
 	</telerik:RadHorizontalLinearGauge>
-{{endregion}}
+```
 
 Here is an example of a __LinearScale__ with vertical orientation:
 
 #### __XAML__
-{{region radgauge-features-scales-linear-scale_ver_0}}
+```XAML
 	<telerik:RadVerticalLinearGauge Width="100"
 	                                Height="300"
 	                                telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0"
 	                         Max="12" />
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Both results can be seen below:
 
@@ -65,7 +65,7 @@ The __Relative Size__ feature allows you to specify the size of the scale toward
 Here is an example:
 
 #### __XAML__
-{{region radgauge-features-scales-linear-scale_1}}
+```XAML
 	<telerik:RadHorizontalLinearGauge Width="300"
 	                                  Height="100"
 	                                  telerik:StyleManager.Theme="Windows8">
@@ -74,7 +74,7 @@ Here is an example:
 	                         RelativeWidth="1"
 	                         RelativeHeight="1"/>
 	</telerik:RadHorizontalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -87,7 +87,7 @@ The __LinearScale__ exposes the __RelativeX__ and __RelativeY__ properties, whic
 Here is an example:
 
 #### __XAML__
-{{region radgauge-features-scales-linear-scale_2}}
+```XAML
 	<telerik:RadHorizontalLinearGauge Width="250"
 	                                    Height="70"
 	                                    OuterBackground="#F4F4F4"
@@ -102,7 +102,7 @@ Here is an example:
 	                            StartWidth="0"
 	                            EndWidth="0"/>
 	</telerik:RadHorizontalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

@@ -16,8 +16,8 @@ The following tutorial will guide you how to bind a __RadTaskBoard__ to a collec
 
 First, we will specify the following classes, which are going to be used to populate the RadTaskBoard control.
 
-#### __[C#] Example 1: Creating ViewModels__
-{{region cs-radtaskboard-populating-with-data-data-binding-to-object-0}}
+__Example 1: Creating ViewModels__
+```C#
     public class Task
     {
         public Employee Assignee { get; set; }
@@ -97,14 +97,14 @@ First, we will specify the following classes, which are going to be used to popu
             return tasks;
         }
     }
-{{endregion}}
+```
 
 Next, we can go ahead and define the RadTaskBoard in our view:
 
-#### __[XAML] Example 2: Defining RadTaskBoard in XAML__
-{{region xaml-radtaskboard-populating-with-data-data-binding-to-object-1}}
+__Example 2: Defining RadTaskBoard in XAML__
+```XAML
     <telerik:RadTaskBoard ItemsSource="{Binding Tasks}" GroupMemberPath="State" />
-{{endregion}}
+```
 
 Since the control is bound a collection of custom objects, you need to declare the ItemTemplate property. You have two options here. 
 
@@ -113,8 +113,8 @@ Since the control is bound a collection of custom objects, you need to declare t
 >The CategoryCollection and CategoryModel class can be accessed in XAML through the following namespace:  
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
-#### __[XAML] Example 3: Defining RadTaskBoardCard in ItemTemplate__
-{{region xaml-radtaskboard-populating-with-data-data-binding-to-object-2}}
+__Example 3: Defining RadTaskBoardCard in ItemTemplate__
+```XAML
     <telerik:RadTaskBoard x:Name="taskBoard" ItemsSource="{Binding Tasks}" GroupMemberPath="State">
 		<telerik:RadTaskBoard.Categories>
 			<taskBoard:CategoryCollection>
@@ -135,12 +135,12 @@ Since the control is bound a collection of custom objects, you need to declare t
 			</DataTemplate>
 		</telerik:RadTaskBoard.ItemTemplate>
 	</telerik:RadTaskBoard>
-{{endregion}}
+```
 
 * If you want to have your own look. You can place your structure in the DataTemplate applied to the ItemTemplate property of the __RadTaskBoard__.
 
-#### __[XAML] Example 3: Defining RadTaskBoard in XAML__
-{{region xaml-radtaskboard-populating-with-data-data-binding-to-object-3}}
+__Example 3: Defining RadTaskBoard in XAML__
+```XAML
     <telerik:RadTaskBoard x:Name="taskBoard" ItemsSource="{Binding CustomData}" GroupMemberPath="State"  >
 		<telerik:RadTaskBoard.ItemTemplate>
 			<DataTemplate>
@@ -153,7 +153,7 @@ Since the control is bound a collection of custom objects, you need to declare t
 			</DataTemplate>
 		</telerik:RadTaskBoard.ItemTemplate>
 	</telerik:RadTaskBoard>
-{{endregion}}
+```
 
 ## See Also
  * [Getting Started]({%slug radtaskboard-getting-started%})

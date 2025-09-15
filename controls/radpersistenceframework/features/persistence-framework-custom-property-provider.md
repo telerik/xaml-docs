@@ -14,10 +14,10 @@ This tutorial describes how to use a custom property provider to define the prop
 
 The __PersistenceFramework__ exposes an extension method that allows you to register a class to act as a property provider and define which properties of a persisted control should be saved and how. The method has the following syntax:	  
 
-#### __[C#] Example 1: Register Custom Provider__
-{{region persistence-framework-custom-property-provider-0}}
+__Example 1: Register Custom Provider__
+```C#
     ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(System.Type type, Telerik.Windows.Persistence.Services.IPersistenceProvider provider);
-{{endregion}}
+```
 
 You need to pass as arguments the type of the component that will use the custom property provider and an instance of the custom property provider class.  
 
@@ -51,9 +51,9 @@ The __PersistenceFramework__ provides an __ICustomPropertyProvider__ interface w
 
 You can implement the above methods in a custom property provider class as follows:		
 
-#### __[C#] Example 2: Implement ICustomPropertyProvider interface__
+__Example 2: Implement ICustomPropertyProvider interface__
 
-{{region persistence-framework-custom-property-provider-1}}
+```C#
     public class SampleCustomPropertyProvider : ICustomPropertyProvider
     {	
         public CustomPropertyInfo[] GetCustomProperties()
@@ -88,10 +88,8 @@ You can implement the above methods in a custom property provider class as follo
             //Apply these settings on the context object as it represents the persisted component
         }	
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Implement ICustomPropertyProvider interface__
-{{region persistence-framework-custom-property-provider-1}}
+```
+```VB.NET
     Public Class SampleCustomPropertyProvider
         Implements ICustomPropertyProvider
 
@@ -119,19 +117,17 @@ You can implement the above methods in a custom property provider class as follo
             'Apply these settings on the context object as it represents the persisted component '
         End Sub
     End Class
-{{endregion}}
+```
 
 Next, you need to register the __SampleCustomPropertyProvider__ in the application.		
 
-#### __[C#] Example 3: Register the SampleCustomPropertyProvider class__
-{{region persistence-framework-custom-property-provider-2}}
+__Example 3: Register the SampleCustomPropertyProvider class__
+```C#
     ServiceProvider.RegisterPersistenceProvider<ICustomPropertyProvider>(typeof(SampleControl), new SampleCustomPropertyProvider());
-{{endregion}}
-
-#### __[VB.NET] Example 3: Register the SampleCustomPropertyProvider class__
-{{region persistence-framework-custom-property-provider-2}}
+```
+```VB.NET
     ServiceProvider.RegisterPersistenceProvider(Of ICustomPropertyProvider)(GetType(SampleControl), New SampleCustomPropertyProvider())
-{{endregion}}
+```
 
 >Please note that the __SampleControl__ type is simply an example and instead you need to define the type of the component for which the __SampleCustomPropertyProvider__ is built.
 
@@ -153,8 +149,8 @@ This __IAttachedPropertyProvider__ interface should be implement when you want t
 
 * __GetAttachedPropertyTypeProviders():__ This method should return an array of Type objects to represent the list of attached properties that have to be persisted by the __PersistenceFramework__.
 
-#### __[C#] Example 4: Implement IAttachedPropertyProvider interface__
-{{region persistence-framework-custom-property-provider-2}}   
+__Example 4: Implement IAttachedPropertyProvider interface__
+```C#   
 	public class CustomAttachedProvider : IAttachedPropertyProvider
     {
         public Type[] GetAttachedPropertyTypeProviders()
@@ -164,7 +160,7 @@ This __IAttachedPropertyProvider__ interface should be implement when you want t
 			};
         }
     }
-{{endregion}}
+```
 
 ## IPropertyProvider
 
@@ -172,8 +168,8 @@ This __IPropertyProvider__ interface should be implement when you want to contro
 
 * __GetProperties():__ this method should return an array of __PropertyInfo__ objects to represent the list of properties that have to be persisted by the __PersistenceFramework__.
 
-#### __[C#] Example 5: Implement IPropertyProvider interface__
-{{region persistence-framework-custom-property-provider-2}}   
+__Example 5: Implement IPropertyProvider interface__
+```C#   
 	public class CustomPropertyProvider : IPropertyProvider
     {
         public PropertyInfo[] GetProperties()
@@ -190,7 +186,7 @@ This __IPropertyProvider__ interface should be implement when you want to contro
 		return properties.ToArray();
 	}
     }
-{{endregion}}
+```
 
 ## IPropertyValidatorProvider
 
@@ -198,8 +194,8 @@ By implementing this interface you can validate if a property should be saved or
 
 * __IsValid():__ This method return true or false if a property should be persist.
 
-#### __[C#] Example 6: Implement IPropertyValidatorProvider interface__
-{{region persistence-framework-custom-property-provider-2}}   
+__Example 6: Implement IPropertyValidatorProvider interface__
+```C#   
 	public class PropertyValidatorProvider : IPropertyValidatorProvider
     {
         public bool IsValid(string propertyName, Type propertyType, object context, object value)
@@ -207,7 +203,7 @@ By implementing this interface you can validate if a property should be saved or
            return true;
         }
     }
-{{endregion}}
+```
 
 >Only one validator for given type should be register.
 
@@ -217,8 +213,8 @@ The __ITypeConverterProvider__ interface should be implement in order to convert
 
 * __GetTypeConverterType():__ This method return the type of the __TypeConverter__.
 
-#### __[C#] Example 7: Implement ITypeConverterProvider interface__
-{{region persistence-framework-custom-property-provider-2}}   
+__Example 7: Implement ITypeConverterProvider interface__
+```C#   
 	public class TypeProvider : ITypeConverterProvider
     {
         public Type GetTypeConverterType()
@@ -245,7 +241,7 @@ The __ITypeConverterProvider__ interface should be implement in order to convert
             return base.ConvertTo(context, culture, value, destinationType);
         }
     }
-{{endregion}}
+```
 
 ## See Also
  * [Isolated Storage]({%slug persistence-framework-isolated-storage%})

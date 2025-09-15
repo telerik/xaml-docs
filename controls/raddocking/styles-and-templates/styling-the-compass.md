@@ -16,9 +16,9 @@ The compasses that you see, when rearranging the containers in the __RadDocking_
 
 In order to style all __Compass__ elements in a RadDocking, you should create a style targeting __Compass__ and set it to the __CompassStyle__ property of the RadDocking.
 
-#### __[XAML] Example 1: Setting the CompassStyle property__
+__Example 1: Setting the CompassStyle property__
 
-{{region xaml-raddocking-styling-the-compass_0}}
+```XAML
 	<Application.Resources>
 		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 		<Style x:Key="CustomCompassStyle" TargetType="telerik:Compass" BasedOn="{StaticResource CompassStyle}">-->
@@ -43,7 +43,7 @@ In order to style all __Compass__ elements in a RadDocking, you should create a 
             </telerik:RadDocking.DocumentHost>
         </telerik:RadDocking>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Compass without left and right indicator in the Office2016 theme__
 ![Compass without left and right indicator](images/RadDocking_Compass_CompassStyle.png)

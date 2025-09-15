@@ -30,8 +30,8 @@ How to preserve groups' collapsed/expanded state when new items are added to the
 
 Save the names of the TimelineItemGroupControl elements.
 
-#### __[C#]__
-{{region kb-timeline-preserve-groups-expand-state-0}}
+
+```C#
 	public partial class MainWindow : Window
     {
         private ObservableCollection<MyPlotInfo> source;        
@@ -81,7 +81,7 @@ Save the names of the TimelineItemGroupControl elements.
             }
         }
     }
-{{endregion}}
+```
 
 Note that the code snippet is not fully functional. You will need to add a logic that populates the source and also that calls the AddNewDataItem method.
 

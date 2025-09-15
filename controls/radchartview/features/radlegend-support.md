@@ -28,8 +28,8 @@ Each [chart series]({%slug radchartview-series-chartseries%}) expose a __LegendS
 
 	The settings allow you to bind the title to a property from the data point model. You can do that via the __TitleBinding__ property. The property expects a string value that corresponds to the name of a property in the [DataPoint]({%slug radchartview-getting-started-data-point%}) object.
 	
-	#### __[XAML] Example 1: Binding legend items title to the Category property of the CategoricalDataPoint object__
-	{{region radchartview-features-radlegend-support_0}}
+	__Example 1: Binding legend items title to the Category property of the CategoricalDataPoint object__
+	```XAML
 		<Grid>
 			<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
 				<telerik:RadCartesianChart.HorizontalAxis>
@@ -58,7 +58,7 @@ Each [chart series]({%slug radchartview-series-chartseries%}) expose a __LegendS
 							   HorizontalAlignment="Right" 
 							   VerticalAlignment="Top" />
 		</Grid>
-	{{endregion}}
+	```
 	
 	![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-0.png)
 
@@ -68,8 +68,8 @@ Both legend settings allow you to set the geometry of the legend item's marker. 
 
 The example below demonstrates the cooperation between the RadLegend and RadCartesianChart. In this example the chart uses a palette to color its series and it uses the same palette to color the legend items. Note that no legend item is present for the last series as the LegendSettings property has not been set. The BarSeries is set up to use DataPointLegendSettings and this is why a legend item is created for each DataPoint.If a SeriesLegendSettings was used instead - only a single item would have been generated for the BarSeries.
 
-#### __[XAML] Example 2: Legend Settings Code Example__  
-{{region radchartview-features-radlegend-support_1}}
+__Example 2: Legend Settings Code Example__  
+```XAML
 	<Grid>
 	    <telerik:RadCartesianChart x:Name="chart1" Palette="Summer">
 	        <telerik:RadCartesianChart.HorizontalAxis>
@@ -116,7 +116,7 @@ The example below demonstrates the cooperation between the RadLegend and RadCart
 	                       HorizontalAlignment="Right" 
 	                       VerticalAlignment="Top" />
 	</Grid>
-{{endregion}}
+```
 
 ![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-1.png)
 
@@ -126,8 +126,8 @@ The example below demonstrates the cooperation between the RadLegend and RadCart
 
 When using SeriesProvider, you can define the legend settings object via the Style of the series or the [SeriesCreated]({%slug radchartview-features-chartseriesprovider%}#events) event. The following example shows how to set up a SeriesProvider and add SeriesLegendSettings for each series.
 
-#### __[XAML] Example 3: Defining the view__  
-{{region radchartview-features-radlegend-support_2}}
+__Example 3: Defining the view__  
+```XAML
 	<Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition />
@@ -161,10 +161,10 @@ When using SeriesProvider, you can define the legend settings object via the Sty
 
 		<telerik:RadLegend Items="{Binding ElementName=chart, Path=LegendItems}" Grid.Column="1"/>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Defining the models__  
-{{region radchartview-features-radlegend-support_3}}
+__Example 4: Defining the models__  
+```C#
 	public class SeriesInfo
     {
         public string SeriesName { get; set; }
@@ -176,10 +176,10 @@ When using SeriesProvider, you can define the legend settings object via the Sty
         public double Value { get; set; }
         public string Category { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 5: Populating with data__  
-{{region radchartview-features-radlegend-support_4}}
+__Example 5: Populating with data__  
+```C#
 	private static Random r = new Random();
 	private ObservableCollection<SeriesInfo> GetData()
 	{
@@ -196,11 +196,11 @@ When using SeriesProvider, you can define the legend settings object via the Sty
 
 		return source;
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 6: Setting the SeriesProvider Source__  
-{{region radchartview-features-radlegend-support_5}}
+__Example 6: Setting the SeriesProvider Source__  
+```C#
 	this.seriesProvider.Source = GetData();
-{{endregion}}
+```
 
 ![Rad Chart View-features-radlegend-support-0](images/radchartview-features-radlegend-support-2.png)

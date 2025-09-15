@@ -14,9 +14,9 @@ The __RadTreeView__ allows you to enable connected lines between the nodes of a 
 
 #### __XAML__
 
-{{region radtreeview-features-lines-support_0}}
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsLineEnabled="True">
-	{{endregion}}
+	```
 
 ![Rad Tree View Features Lines Support 001](images/RadTreeView_Features_LinesSupport_001.png)
 
@@ -24,9 +24,9 @@ You can also control the visibility of the lines between the root items (the ite
 
 #### __XAML__
 
-{{region radtreeview-features-lines-support_1}}
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsLineEnabled="True" IsRootLinesEnabled="False">
-	{{endregion}}
+	```
 
 ![Rad Tree View Features Lines Support 002](images/RadTreeView_Features_LinesSupport_002.png)
 

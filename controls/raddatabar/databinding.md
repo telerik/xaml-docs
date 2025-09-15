@@ -36,8 +36,8 @@ Find a runnable sample in the [Code Example](#code-example) section of this arti
 
 This example shows how to data bind the RadDataBar controls to a view model.
 
-#### __[C#] Example 1: Creating a sample model containing information about the data bars__  
-{{region raddatabar-databinding-0}}
+__Example 1: Creating a sample model containing information about the data bars__  
+```C#
 	public class Product
 	{
 		public int Value1 { get; set; }
@@ -52,10 +52,8 @@ This example shows how to data bind the RadDataBar controls to a view model.
 		public double Val { get; set; }
 		public string Name { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating a sample model containing information about the data bars__  
-{{region raddatabar-databinding-1}}
+```
+```VB.NET
 	Public Class Product
 			Public Property Value1() As Integer
 			Public Property Value2() As Integer
@@ -68,10 +66,10 @@ This example shows how to data bind the RadDataBar controls to a view model.
 			Public Property Val() As Double
 			Public Property Name() As String
 		End Class
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting up the model__  
-{{region raddatabar-databinding-2}}
+__Example 2: Setting up the model__  
+```C#
 	var items = new List<Item>() 
 	{
 		new Item{ Val = 9, Name = "nine", },
@@ -89,10 +87,8 @@ This example shows how to data bind the RadDataBar controls to a view model.
 	};
 	
 	this.DataContext = new Product() { Value1 = 20, Value2 = 30, Ints = new List<int>() {5, 6, 7, 8, 9, }, Items = items };
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting up the model__  
-{{region raddatabar-databinding-3}}
+```
+```VB.NET
 	Dim items = New List(Of Item)() From {
 		 New Item With {.Val = 9, .Name = "nine"},
 		 New Item With {.Val = 10, .Name = "ten"},
@@ -108,17 +104,17 @@ This example shows how to data bind the RadDataBar controls to a view model.
 	
 	Dim TempProduct As Product = New Product() With {.Value1 = 20, .Value2 = 30, .Ints = New List(Of Integer)() From {5, 6, 7, 8, 9}, .Items = items}
 	Me.DataContext = New Product() With {.Value1 = 20, .Value2 = 30, .Ints = New List(Of Integer)() From {5, 6, 7, 8, 9}, .Items			
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Define the RadDataBars components__  
-{{region raddatabar-databinding-4}}
+__Example 3: Define the RadDataBars components__  
+```XAML
 	<telerik:RadDataBar Height="20" Value="{Binding Value1}" BorderBrush="Gray" BorderThickness="1" Margin="2" />
 	<telerik:RadDataBar Height="20" Value="{Binding Value2}" BorderBrush="Gray" BorderThickness="1" Margin="2" />
 	
 	<telerik:RadStackedDataBar Height="20" BorderBrush="Gray" BorderThickness="1" Margin="2" ItemsSource="{Binding Ints}" ShowToolTips="True" />
 	<telerik:RadStackedDataBar Height="20" BorderBrush="Gray" BorderThickness="1" Margin="2" AxisVisibility="Visible"
 								ItemsSource="{Binding Items}" ValuePath="Val" ToolTipPath="Name" ShowToolTips="True" Minimum="-100" Maximum="100"/>
-{{endregion}}
+```
 
 #### __Figure 1: The different data bars__
 ![The different data bars](images/raddatabar-databinding.PNG)

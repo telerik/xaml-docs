@@ -32,8 +32,8 @@ How to set a tooltip on the cells of a column.
 
 The `ToolTip` property of each column type of RadGridView is inherited from the `FrameworkContentElement` class, which is the base class of all of them. There is no implementation for this property in the context of the columns. Instead, you can use the `ToolTipTemplate` property.
 
-#### __[XAML] Setting the ToolTipTemplate property of a GridViewImageColumn__
-{{region kb-gridview-set-tooltip-on-column-cells-0}}
+__Setting the ToolTipTemplate property of a GridViewImageColumn__
+```XAML
     <telerik:RadGridView ItemsSource="{Binding MyCollection}"
                          AutoGenerateColumns="False">
         <telerik:RadGridView.Columns>
@@ -46,14 +46,14 @@ The `ToolTip` property of each column type of RadGridView is inherited from the 
             </telerik:GridViewImageColumn>
         </telerik:RadGridView.Columns>
     </telerik:RadGridView>
-{{endregion}}
+```
 
 You can bind the elements inside the DataTemplate for the ToolTipTemplate property to properties of the underlying data model.
 
 The following example showcases this scenario:
 
-#### __[C#] Defining the model and view model__
-{{region kb-gridview-set-tooltip-on-column-cells-1}}
+__Defining the model and view model__
+```C#
     public class Person
     {
         public string Name { get; set; }
@@ -76,10 +76,10 @@ The following example showcases this scenario:
 
         public ObservableCollection<Person> People { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML] Binding the Name property to the element inside the DataTemplate for the ToolTipTemplate property__
-{{region kb-gridview-set-tooltip-on-column-cells-2}}
+__Binding the Name property to the element inside the DataTemplate for the ToolTipTemplate property__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:MainViewModel/>
@@ -98,7 +98,7 @@ The following example showcases this scenario:
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 __Tooltip of GridViewImageColumn bound to a property of the underlying data model__
 

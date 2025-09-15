@@ -17,8 +17,8 @@ __RadNavigationView__ can be bound to a collection of objects through its ItemsS
 
 For the purposes of this article, we will create a simple object and a view model which will hold a collection of our models. The IconGlyph property of the NavigationItemModel holds the string which will be set to the Icon property of the RadNavigationViewItem. For more information about it, check out the [Icon and IconTemplate]({%slug radnavigationview-icon-and-icontemplate%}#radnavigationviewitem-icontemplate) article in our documentation.
 
-#### __[C#] Example 1: Creating the model and viewmodel__
-{{region cs-radnavigationview-populating-with-data-databinding-0}}
+__Example 1: Creating the model and viewmodel__
+```C#
     public class NavigationItemModel
     {
         public string Title { get; set; }
@@ -43,10 +43,8 @@ For the purposes of this article, we will create a simple object and a view mode
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the model and viewmodel__
-{{region vb-radnavigationview-populating-with-data-databinding-1}}
+```
+```VB.NET
     Public Class NavigationItemModel
 		Public Property Title() As String
 		Public Property IconGlyph() As String
@@ -70,15 +68,15 @@ For the purposes of this article, we will create a simple object and a view mode
 			Next i
 		End Sub
     End Class
-{{endregion}}
+```
 
 
 ## Defining the RadNavigationView
 
 After we have created the viewmodel, the next step is to create an instance and set it to the DataContext of a RadNavigationView. This is demonstrated in __Example 2__. Note, that the change of the RadNavigationView Content is animated by a [RadTransitionControl]({%slug radtransition-getting-started%}), which is bound to its SelectedItem. Additionally, a ContentTemplate is specified for the RadTransitionControl.
 
-#### __[XAML] Example 2: Defining the control and the necessary styles__
-{{region xaml-radnavigationview-populating-with-data-databinding-2}}
+__Example 2: Defining the control and the necessary styles__
+```XAML
     <Window.Resources>
 
         <local:MainViewModel x:Key="ViewModel" />
@@ -115,7 +113,7 @@ After we have created the viewmodel, the next step is to create an instance and 
             </telerik:RadNavigationView.Content>
         </telerik:RadNavigationView>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 2 in the Office2016 theme__
 ![DataBound RadNavigationView](images/RadNavigationView_DataBinding.gif)

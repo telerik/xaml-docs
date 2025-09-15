@@ -34,10 +34,10 @@ As result you can see the __RadChart__ with some demo data displayed. The underl
 
 #### __XAML__
 
-{{region xaml-radchart-getting-started-create-data-bound-chart_0}}
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  Content="RadChart"/>
-{{endregion}}
+```
 
 There are two things you should pay attention to: First is the declaration of the __Telerik.Windows.Controls__ namespace from __Telerik.Windows.Controls.Charting__ assembly and the second is the declaration of the __RadChart__ control itself.
 
@@ -47,7 +47,7 @@ There are two things you should pay attention to: First is the declaration of th
 
 #### __C#__
 
-{{region cs-radchart-getting-started-create-data-bound-chart_1}}
+```C#
 	public class ProductSales
 	{
 		public ProductSales( int quantity, int month, string monthName )
@@ -72,11 +72,11 @@ There are two things you should pay attention to: First is the declaration of th
 			set;
 		}
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-getting-started-create-data-bound-chart_2}}
+```VB.NET
 	Public Class ProductSales
 	    Public Sub New(ByVal quantity As Integer, ByVal month As Integer, ByVal monthName As String)
 	        Me.Quantity = quantity
@@ -111,7 +111,7 @@ There are two things you should pay attention to: First is the declaration of th
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
@@ -119,7 +119,7 @@ There are two things you should pay attention to: First is the declaration of th
 
 #### __C#__
 
-{{region cs-radchart-getting-started-create-data-bound-chart_3}}
+```C#
 	private List<ProductSales> CreateData()
 	{
 	    List<ProductSales> persons = new List<ProductSales>();
@@ -137,11 +137,11 @@ There are two things you should pay attention to: First is the declaration of th
 	    persons.Add( new ProductSales( 212, 12, "December" ) );
 	    return persons;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-getting-started-create-data-bound-chart_4}}
+```VB.NET
 	Private Function CreateData() As List(Of ProductSales)
 	    Dim persons As New List(Of ProductSales)()
 	
@@ -160,7 +160,7 @@ There are two things you should pay attention to: First is the declaration of th
 	
 	    Return persons
 	End Function
-{{endregion}}
+```
 
 ## Binding the RadChart
 
@@ -168,7 +168,7 @@ There are two things you should pay attention to: First is the declaration of th
 
 #### __XAML__
 
-{{region xaml-radchart-getting-started-create-data-bound-chart_5}}
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping LegendLabel="Product Sales">
@@ -182,11 +182,11 @@ There are two things you should pay attention to: First is the declaration of th
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radchart-getting-started-create-data-bound-chart_6}}
+```C#
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.LegendLabel = "Product Sales";
 	seriesMapping.SeriesDefinition = new SplineSeriesDefinition();
@@ -194,11 +194,11 @@ There are two things you should pay attention to: First is the declaration of th
 	seriesMapping.ItemMappings.Add( new ItemMapping("Quantity", DataPointMember.YValue));
 	radChart.SeriesMappings.Add( seriesMapping );
 	this.radChart.ItemsSource = this.CreateData();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-getting-started-create-data-bound-chart_7}}
+```VB.NET
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.LegendLabel = "Product Sales"
 	seriesMapping.SeriesDefinition = New SplineSeriesDefinition()
@@ -206,7 +206,7 @@ There are two things you should pay attention to: First is the declaration of th
 	seriesMapping.ItemMappings.Add(New ItemMapping("Quantity", DataPointMember.YValue))
 	radChart.SeriesMappings.Add(seriesMapping)
 	Me.radChart.ItemsSource = Me.CreateData()
-{{endregion}}
+```
 
 In the source code above one instance of the class __SeriesMapping__ is created with two __ItemMappings__, one for __X-axis__ and one for __Y-axis__. __X-axis__ is bound to the __ProductSales.Month__ property, while __Y-axis__ is bound to __ProductSales.Quantity__ property. Both properties are numeric, that's why their __DataPointMember__ property is set to __XValue__ and __YValue__ respectively. If you want to bind your __X-axis__ to string values read [Categorical Charts]({%slug radchart-features-categorical-charts%}) or read below.
 
@@ -214,15 +214,15 @@ In the source code above one instance of the class __SeriesMapping__ is created 
 
 #### __C#__
 
-{{region cs-radchart-getting-started-create-data-bound-chart_8}}
+```C#
 	this.radChart.ItemsSource = this.CreateData();
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-getting-started-create-data-bound-chart_9}}
+```VB.NET
 	Me.radChart.ItemsSource = Me.CreateData()
-{{endregion}}
+```
 
 Now if you run your application, the result should be similar to the below snapshot. Note that:
 
@@ -247,21 +247,21 @@ The __X-axis__ can be further customized by replacing the month numbers (1, 2, 3
 
 #### __XAML__
 
-{{region xaml-radchart-getting-started-create-data-bound-chart_10}}
+```XAML
 	<telerik:ItemMapping DataPointMember="XCategory" FieldName="MonthName" />
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-radchart-getting-started-create-data-bound-chart_11}}
+```C#
 	seriesMapping.ItemMappings.Add(new ItemMapping("MonthName", DataPointMember.XCategory));
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radchart-getting-started-create-data-bound-chart_12}}
+```VB.NET
 	seriesMapping.ItemMappings.Add(New ItemMapping("MonthName", DataPointMember.XCategory))
-{{endregion}}
+```
 
 
 And here is the same chart but this time showing month names as categories for the __X-axis__ instead of the month numbers.

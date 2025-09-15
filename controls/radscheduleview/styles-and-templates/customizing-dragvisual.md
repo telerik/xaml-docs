@@ -28,7 +28,7 @@ Here is the default DragVisualTemplate:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_0}}
+```XAML
 	<DataTemplate x:Key="DragVisualContentTemplate">
 		<TextBlock Text="{Binding Converter={StaticResource DraggedAppointmentsToLocalizedStringConverter}}" 
 			TextWrapping="Wrap" 
@@ -36,7 +36,7 @@ Here is the default DragVisualTemplate:
 			MaxHeight="66" 
 			TextTrimming="WordEllipsis" />
 	</DataTemplate>  
-{{endregion}}
+```
 
 Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed to cover  the cases when multiple appointments are dragged:
 
@@ -46,7 +46,7 @@ Let’s for example, change the DataTemplate  as following:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_1}}
+```XAML
 	<DataTemplate x:Key="DragVisualContentTemplate">
 		<StackPanel Orientation="Horizontal">
 			<TextBlock Text="Dragging..." />
@@ -57,26 +57,26 @@ Let’s for example, change the DataTemplate  as following:
 					TextTrimming="WordEllipsis" />
 		</StackPanel>
 	</DataTemplate>
-{{endregion}}
+```
 
 >If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you will be able to reference DraggedAppointmentsToLocalizedStringConverter directly.  In other case you should manually add it as a resource before the DragVisualContentTemplate declaration: 
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_8}}
+```XAML
     <telerik:DraggedAppointmentsToLocalizedStringConverter x:Key="DraggedAppointmentsToLocalizedStringConverter" />
-{{endregion}}
+```
 
 Then set the newly created template to the DragVisualTemplate property of the ScheduleView:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_2}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 							DragVisualTemplate="{StaticResource DragVisualContentTemplate}">
 		...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Here is the result:
 
@@ -92,7 +92,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_4}}
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -105,7 +105,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 		    <Setter Property="BorderThickness" Value="2" />
 	    </Style>
 	</Application.Resources>
-{{endregion}}
+```
 
 >The complete definition of the DragVisualStyle can be found in UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} installation folder in Themes.Impicit folder.  Select the theme that you’re using and open Telerik.Windows.Controls.ScheduleView.xaml. Then search for “DragVisualStyle” in this XAML file.
 
@@ -115,7 +115,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_5}}
+```XAML
 	<SolidColorBrush x:Key="RadScheduleForeground" Color="Black" />
 	<SolidColorBrush x:Key="DragVisualBorder" Color="#FF848484" />
 	...
@@ -137,15 +137,15 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 			</Setter.Value>
 		</Setter>
 	</Style>
-{{endregion}}
+```
 
 Where *local* is:
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_6}}
+```XAML
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView”
-{{endregion}}
+```
 
 >The custom __DragVisualStyle__ must be always created in the App.xaml file as the __DragVisualProvider__ is placed inside of another visual tree and cannot be targeted from the {% if site.site_name == 'Silverlight' %}Page{% endif %}/{% if site.site_name == 'WPF' %}Window{% endif %} where RadScheduleView is placed.            
 
@@ -153,12 +153,12 @@ Either approach you’ve selected, the final step is to set the custom DragVisua
 
 #### __XAML__
 
-{{region radscheduleview-styles-and-templates-customizing-dragvisual_7}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 							 DragVisualStyle="{StaticResource CustomDragVisualStyle}">
 		...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 The result is:
 

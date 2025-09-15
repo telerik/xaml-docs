@@ -27,31 +27,31 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 
 #### __XAML__
 
-{{region radscheduleview-howto-prevent-dialogs-from-opening_0}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowDialog="RadScheduleView_ShowDialog">
 		…
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region radscheduleview-howto-prevent-dialogs-from-opening_1}}
+```C#
 	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 	{
 	    if (e.DialogViewModel is AppointmentDialogViewModel)
 	        e.Cancel = true;
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radscheduleview-howto-prevent-dialogs-from-opening_2}}
+```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
 	    If TypeOf e.DialogViewModel Is AppointmentDialogViewModel Then
 	       e.Cancel = True
 	    End If
 	End Sub
-{{endregion}}
+```
 
 >To learn more about __RadScheduleView__ events, check [here]({%slug radscheduleview-events-overview%}).
 
@@ -61,7 +61,7 @@ In this case __DefaultDialogResult__ property of the event args should be set in
 
 #### __C#__
 
-{{region radscheduleview-howto-prevent-dialogs-from-opening_3}}
+```C#
 	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 	{
 	    if (e.DialogViewModel is ConfirmDialogViewModel)
@@ -70,18 +70,18 @@ In this case __DefaultDialogResult__ property of the event args should be set in
 	        e.Cancel = true;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radscheduleview-howto-prevent-dialogs-from-opening_4}}
+```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
 	    If TypeOf e.DialogViewModel Is ConfirmDialogViewModel Then
 	        e.DefaultDialogResult = True
 	        e.Cancel = True
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## How to preselect  a certain option in RecurrenceChoiceDialog
 
@@ -89,7 +89,7 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 
 #### __C#__
 
-{{region radscheduleview-howto-prevent-dialogs-from-opening_5}}
+```C#
 	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 	{
 	    var dialogViewModel = e.DialogViewModel as RecurrenceChoiceDialogViewModel;
@@ -98,17 +98,17 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	        dialogViewModel.IsSeriesModeSelected = true;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region radscheduleview-howto-prevent-dialogs-from-opening_6}}
+```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
 	   Dim dialogViewModel = TryCast(e.DialogViewModel, RecurrenceChoiceDialogViewModel)
 	   If dialogViewModel IsNot Nothing Then
 	       dialogViewModel.IsSeriesModeSelected = True
 	   End If
 	End Sub
-{{endregion}}
+```
 
 >tipCheck [here]({%slug radscheduleview-features-custom-dialogs%}) for more information about RadScheduleView dialogs.

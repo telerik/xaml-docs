@@ -40,13 +40,13 @@ You have two options:
 
 > To learn how to modify the default `GridViewCell` style, please refer to the [Modifying Default Styles]({%slug gridview-modifying-default-styles%}) article.
 
-#### __[XAML] Styling all rows of an application__
-{{region xaml-gridview-styling-row-1}}
+__Styling all rows of an application__
+```XAML
 	<Style TargetType="telerik:GridViewRow">
 	    <Setter Property="Background" Value="Red"/>
 	    <Setter Property="Foreground" Value="White"/>
 	</Style>
-{{endregion}}
+```
 
 > If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewRowStyle__.
 
@@ -56,8 +56,8 @@ You have two options:
 
 > In order to use the `AlternateRowStyle`, you should first set the `AlternationCount` property of your RadGridView. For example, if you want to alternate each second row, you have to set its value to 2.
 
-#### __[XAML] Creating styles for the RowStyle and AlternativeRowStyle properties__
-{{region xaml-gridview-styling-row-2}}
+__Creating styles for the RowStyle and AlternativeRowStyle properties__
+```XAML
 	<Application.Resources>
 		 <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewRowStyle}" -->
 		<Style x:Key="GridViewRowStyle" TargetType="telerik:GridViewRow">
@@ -70,14 +70,14 @@ You have two options:
             <Setter Property="Foreground" Value="White"/>
 		</Style>
 	</Application.Resources>
-{{endregion}}
+```
 
-#### __[XAML] Applying styles to the RowStyle and AlternateRowStyle properties__
-{{region xaml-gridview-styling-row-3}}
+__Applying styles to the RowStyle and AlternateRowStyle properties__
+```XAML
 	<telerik:RadGridView RowStyle="{StaticResource GridViewRowStyle}"
 			     AlternationCount="2"
 			     AlternateRowStyle="{StaticResource GridViewAlternateRowStyle}" />
-{{endregion}}
+```
 
 #### __RadGridView with styled rows__
 

@@ -18,8 +18,8 @@ The period header zone can be customized by using __PeriodHeaderStyle__ property
 
 You can use a custom Style to customize the period header. The following example demonstrates this approach. First we are going to declare our RadTimeline control.
  
-#### __[XAML] Example 1: Declare RadTimeline control__
-{{region radtimeline-howto-change-size-periodheader-0}}
+__Example 1: Declare RadTimeline control__
+```XAML
 	<telerik:RadTimeline PeriodStart="2019-2-24" PeriodEnd="2020-2-24" Height="200">
 		<telerik:RadTimeline.Intervals>
 			<telerik:YearInterval />
@@ -29,12 +29,12 @@ You can use a custom Style to customize the period header. The following example
 			<telerik:DayInterval />
 		</telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 
 Now to increase the size of the period header, we can create custom style targeting Border element and set its Height property to custom value.	
 	
-#### __[XAML] Example 2: Customize the Period Header__
-{{region radtimeline-howto-change-striplines-background-1}}
+__Example 2: Customize the Period Header__
+```XAML
 	<telerik:RadTimeline PeriodStart="2019-2-24"
 						PeriodEnd="2020-2-24" 
 						Height="200">
@@ -54,7 +54,7 @@ Now to increase the size of the period header, we can create custom style target
 			<telerik:DayInterval />
 		</telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 
 ![RadTimeline - How to change the size of the period header 2](images/radtimeline-howto-change-size-periodheader-02.png)
 
@@ -62,8 +62,8 @@ Now to increase the size of the period header, we can create custom style target
 
 To update the padding of the __TimelineItemGroupsPanel__ element, we can create a custom implicit style. __Example 2__ demonstrates this:
 
-#### __[XAML] Example 3: Update Padding of the TimelineItemGroupsPanel__
-{{region radtimeline-howto-change-striplines-background-1}}
+__Example 3: Update Padding of the TimelineItemGroupsPanel__
+```XAML
 	<Window.Resources>
 		<Style TargetType="telerik:TimelineItemContainer" >
 			<Setter Property="ItemsPanel">
@@ -75,7 +75,7 @@ To update the padding of the __TimelineItemGroupsPanel__ element, we can create 
 			</Setter>
 		</Style>
 	</Window.Resources>
-{{endregion}}
+```
 
 
 ## See Also

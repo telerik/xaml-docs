@@ -14,17 +14,17 @@ With its default settings, the __RadWindow__ can be dragged off the screen by th
 
 #### __C#__
 
-{{region cs-radwindow-how-to-prevent-dragging-off-the-screen_0}}
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.IsRestricted = true;
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-radwindow-how-to-prevent-dragging-off-the-screen_1}}
+```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.IsRestricted = True
-{{endregion}}
+```
 
 ## See Also
 

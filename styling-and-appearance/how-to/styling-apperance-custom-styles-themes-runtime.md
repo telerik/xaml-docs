@@ -28,9 +28,9 @@ As an example, you can follow the steps bellow:
 
 **2.** Add the respective resource dictionaries for the default theme in **App.xaml**:
 
-#### __[XAML] Example 1: Merge resource dictionaries__
+__Example 1: Merge resource dictionaries__
 
-{{region xaml-styling-apperance-custom-styles-themes-runtime_1}}
+```XAML
 	<ResourceDictionary>
 		<ResourceDictionary.MergedDictionaries>
 			<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
@@ -40,15 +40,15 @@ As an example, you can follow the steps bellow:
 		</ResourceDictionary.MergedDictionaries>
 	</ResourceDictionary>
 	
-	{{endregion}}
+	```
 
 >Initially we merge the resource dictionaries for the **Office_Black** theme.
 
 **3.** Add a few controls of your choice to the layout root of your application. And also two buttons which will be used to switch between the themes. 
 
-#### __[XAML] Example 2: Add buttons to switch between the themes__
+__Example 2: Add buttons to switch between the themes__
 
-{{region xaml-styling-apperance-custom-styles-themes-runtime_2}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="\*"/>
@@ -60,13 +60,13 @@ As an example, you can follow the steps bellow:
             <Button x:Name="Office2016" Margin="5" Content="Office2016" Click="Office2016_Click"/>
 		</StackPanel>
 	</Grid>
-{{endregion}}
+```
 
 **4.** Now add your custom styles in separate resource dictionaries for the different themes called **CustomStyles_Office_Black.xaml** and **CustomStyles_Office2016.xaml**, respectively, contained in the **Themes** folder of your project. These custom resource dictionaries will have the following content:
 
-#### __[XAML] Example 3: Add custom styles in separate resource dictionary__
+__Example 3: Add custom styles in separate resource dictionary__
 
-{{region xaml-styling-apperance-custom-styles-themes-runtime_3}}
+```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 			    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
@@ -75,15 +75,15 @@ As an example, you can follow the steps bellow:
             <Setter Property="Foreground" Value="White"/>
 		</Style>
 	</ResourceDictionary>
-{{endregion}}
+```
 
 >Creating separate resource dictionaries for the different themes allows for easy customization on a per-theme basis. You can, however, use a single dictionary and merge only this dictionary when switching the themes, provided you do not have any theme-specific changes in it. Such changes would include any [modified control templates]({%slug styling-apperance-editing-control-templates%}) as these differ from theme to theme and may result in errors when switching.
 
 **5.** Add the resource dictionary to the application's MergedDictionaries collection:
 
-#### __[XAML] Example 4: Add dictionary to MergedDictionaries__
+__Example 4: Add dictionary to MergedDictionaries__
 
-{{region xaml-styling-apperance-custom-styles-themes-runtime_5}}
+```XAML
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
         <ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.xaml"/>
@@ -91,15 +91,15 @@ As an example, you can follow the steps bellow:
         <!-- ... -->
         <ResourceDictionary Source="/ProjectName;component/Themes/CustomStyles_Office_Black.xaml"/>
     </ResourceDictionary.MergedDictionaries>
-{{endregion}}
+```
 
 >Note that you should replace **ProjectName** with the actual name of your project.
 
 **6.** Then, in the buttons' **Click** handlers, we will clear the merged dictionaries from the application resources and merge the new resource dictionaries from the theme assemblies along with our custom styles contained in the custom resource dictionaries:
 
-#### __[C#] Example 5: Clear and merge dictionaries upon button click__
+__Example 5: Clear and merge dictionaries upon button click__
 
-{{region cs-styling-apperance-custom-styles-themes-runtime_4}}
+```C#
 	private void Office_Black_Click(object sender, RoutedEventArgs e)
     {
         this.MergeDictionaries("Office_Black");
@@ -130,7 +130,7 @@ As an example, you can follow the steps bellow:
             Source = new Uri("/ProjectName;component/Themes/CustomStyles_" + theme + ".xaml", UriKind.RelativeOrAbsolute)
         });
     }
-{{endregion}}
+```
 
 >Please note that the theme provided in the MergeDictionaries should match the name of the respecitve theme assembly, for example - **Expression_Dark**, **Office2016Touch**, **Material**. Using this approach you can switch to any of the [themes]({%slug common-styling-appearance-available-themes%}) provided by the UI for {{ site.framework_name }} suite.
 

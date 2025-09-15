@@ -18,7 +18,7 @@ The __RadTabControl__ exposes an __AdditionalContent__ property of type object. 
 
 #### __XAML__
 
-{{region radtabcontrol-features-additional-content_0}}
+```XAML
 	        <telerik:RadTabControl>
 	            <telerik:RadTabControl.AdditionalContent>
 	                <StackPanel Orientation="Horizontal">
@@ -29,7 +29,7 @@ The __RadTabControl__ exposes an __AdditionalContent__ property of type object. 
 	            <telerik:RadTabItem Header="Colors" IsBreak="True" />
 	            <telerik:RadTabItem Header="Quote" />
 	        </telerik:RadTabControl>
-	{{endregion}}
+	```
 
 
 

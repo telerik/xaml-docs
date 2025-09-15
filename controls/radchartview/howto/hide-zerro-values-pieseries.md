@@ -12,8 +12,8 @@ position: 0
 
 There are different ways to hide/remove the labels of the zero segments inside __PieChart__. This article will describe how to hide them by setting the __Opacity__ property of the TextBlock which holds the label. __Example 1__ demonstrate a basic scenario where the label of the zero segments will appear. 
 
-#### __[XAML] Example 1: Declaring PieSeries in XAML__
-{{region radchartview-troubleshooting-hide-zero-segments-labels_0}}	
+__Example 1: Declaring PieSeries in XAML__
+```XAML	
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:PieSeries ValueBinding="Value" >
 			<telerik:PieSeries.DataPoints>
@@ -37,14 +37,14 @@ There are different ways to hide/remove the labels of the zero segments inside _
 			</telerik:PieSeries.LabelDefinitions>
 		</telerik:PieSeries>
 	</telerik:RadPieChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Pie Chart Default Zero Label](images/chartview-howto-pieseries-hide-zero-labels.png)
 
 The next step is to bind the __Opacity__ property to the slice value and apply custom __IValueConverter__ class. In the __Convert()__ method you can get the current value. If the value is zero you can return 0 to hide the label.
 
-#### __[XAML] Example 2: Custom IValueConverter__
-{{region radchartview-troubleshooting-hide-zero-segments-labels_1}}	
+__Example 2: Custom IValueConverter__
+```XAML	
 	public class OpacityConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -62,10 +62,10 @@ The next step is to bind the __Opacity__ property to the slice value and apply c
 			throw new NotImplementedException();
 		}
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 3: Apply the IValueConverter to the Opacity property binding__
-{{region radchartview-troubleshooting-hide-zero-segments-labels_2}}	
+__Example 3: Apply the IValueConverter to the Opacity property binding__
+```C#	
 	<Window.Resources>
 		<local:OpacityConverter x:Key="OpacityConverter"/>
 	</Window.Resources>
@@ -94,14 +94,14 @@ The next step is to bind the __Opacity__ property to the slice value and apply c
 			</telerik:PieSeries>
 		</telerik:RadPieChart>
 	</Grid>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Pie Chart No Zero Label](images/chartview-howto-pieseries-hide-zero-no-labels.png)
 
 The label is now hidden but the label connector is still visible. To remove the connector you can create a custom class which derives from PieSeries and override the GetLabelConnector() method (as demonstrated in [this article]({%slug radchartview-features-label-connectors%}))
 
-#### __[C#] Example 4: Override the GetLabelConnector method of PieSeries__
-{{region radchartview-troubleshooting-hide-zero-segments-labels_3}}	
+__Example 4: Override the GetLabelConnector method of PieSeries__
+```C#	
 	public class CustomPieSeries : PieSeries
 	{
 		protected override List<Point> GetLabelConnector(ChartSeriesLabelPositionInfo info)
@@ -114,12 +114,12 @@ The label is now hidden but the label connector is still visible. To remove the 
 			return base.GetLabelConnector(info);
 		}
 	}
-{{endregion}}
+```
 
 Now you can just replace the PieSeries in __Example 3__  with your custom class.
 
-#### __[XAML] Example 5: Replace the PieSeries with the custom class__
-{{region radchartview-troubleshooting-hide-zero-segments-labels_4}}	
+__Example 5: Replace the PieSeries with the custom class__
+```XAML	
 	<Window.Resources>
 		<local:OpacityConverter x:Key="OpacityConverter"/>
 	</Window.Resources>
@@ -148,7 +148,7 @@ Now you can just replace the PieSeries in __Example 3__  with your custom class.
 			</local:CustomPieSeries>
 		</telerik:RadPieChart>
 	</Grid>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Pie Chart No Zero Label or Connector](images/chartview-howto-pieseries-hide-zero-no-labels-no-connectors.png)
 

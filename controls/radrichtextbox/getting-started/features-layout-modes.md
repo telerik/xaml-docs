@@ -47,23 +47,23 @@ The __FlowNoWrap__ layout mode is similar to the __Flow__ layout mode, but it do
 
 #### **[XAML] Example 1: Setting the layout mode**
 
-{{region radrichtextbox-features-layout-modes_0}}
+```XAML
 	<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged"/>
-{{endregion}}
+```
 
 
 #### **[C#] Example 1: Setting the layout mode**
 
-{{region radrichtextbox-features-layout-modes_1}}
+```C#
 	this.radRichTextBox.LayoutMode = DocumentLayoutMode.Paged;
-{{endregion}}
+```
 
 
 #### **[VB.NET] Example 1: Setting the layout mode**
 
-{{region radrichtextbox-features-layout-modes_2}}
+```VB.NET
 	Me.radRichTextBox.LayoutMode = DocumentLayoutMode.Paged
-{{endregion}}
+```
 
 ## See Also
 

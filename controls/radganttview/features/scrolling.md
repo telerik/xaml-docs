@@ -40,11 +40,11 @@ You can modify how a __RadGanttView__ scrolls using its __ScrollingService__ pro
 
 This method is used to scroll the view horizontally and vertically so that a particular GanttTask is in the currently visible area. __Example 1__ shows how you can use the ScrollIntoView method.
 
-#### __[C#] Example 1: Calling the ScrollIntoView method__
+__Example 1: Calling the ScrollIntoView method__
 
-{{region cs-radganttview-scrolling_0}}
+```C#
 	GanttView.ScrollingService.ScrollIntoView(task4);
-{{endregion}}
+```
 
 __Figure 1__ illustrates how the view is scrolled vertically and TimeRuler part - horizontally when the code from __Example 1__ is executed for “task 4”. 
 
@@ -64,12 +64,12 @@ The __ScrollSettings__ object helps configure the alignment of the scrollbars th
 
 __Example 2__ demonstrates how the ScrollIntoView method could be used with __ScrollSettings__ applied for “task 4”.
 
-#### __[C#] Example 2: Calling ScrollIntoView method with ScrollSettings__
+__Example 2: Calling ScrollIntoView method with ScrollSettings__
 
-{{region cs-radganttview-scrolling_1}}
+```C#
 	var settings = new ScrollSettings() { HorizontalScrollPosition = HorizontalScrollPosition.Right, VerticalScrollPosition = VerticalScrollPosition.Anywhere };
 	GanttView.ScrollingService.ScrollIntoView(task4, settings);
-{{endregion}}
+```
 
 __Figure 2__ shows the result.
 
@@ -80,11 +80,11 @@ __Figure 2__ shows the result.
 
 You can use the ScrollToDateTime method to horizontally scroll the TimeRuler part so that a specific time from the current VisibleRange is inside the visible area. __Example 3__ shows how to use the ScrollToDateTime method in order to move the TimeRuler with 3 days.
 
-#### __[C#] Example 3: Calling ScrollToDateTime method__
+__Example 3: Calling ScrollToDateTime method__
 
-{{region cs-radganttview-scrolling_2}}
+```C#
 	GanttView.ScrollingService.ScrollToDateTime(DateTime.Today.AddDays(3));
-{{endregion}}
+```
 
 You can see the result in __Figure 3__.
 
@@ -95,11 +95,11 @@ You can see the result in __Figure 3__.
 
 Both methods are used to scroll the Grid part of RadGanttView horizontally so that a specific column is visible. __Example 4__ demonstrates how you could use ScrollToColumn to scroll to the third column inside the Grid.
 
-#### __[C#] Example 4: Calling ScrollToColumn method__
+__Example 4: Calling ScrollToColumn method__
 
-{{region cs-radganttview-scrolling_3}}
+```C#
 	GanttView.ScrollingService.ScrollToColumn(2);
-{{endregion}}
+```
 
 #### __Figure 4: GanttView before and after calling ScrollToColumn method__
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollToColumn method](images/ganttview_scrolling_04.png)
@@ -108,11 +108,11 @@ Both methods are used to scroll the Grid part of RadGanttView horizontally so th
 
 Use the ScrollToRow method to scroll the view vertically so that the specified Row is visible. __Example 5__ illustrates how to scroll to the third row.
 
-#### __[C#] Example 5: Calling ScrollToRow method__
+__Example 5: Calling ScrollToRow method__
 
-{{region cs-radganttview-scrolling_4}}
+```C#
 	GanttView.ScrollingService.ScrollToRow(2);
-{{endregion}}
+```
 
 #### __Figure 5: GanttView before and after calling ScrollToRow method__
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollToRow method](images/ganttview_scrolling_05.png)
@@ -121,11 +121,11 @@ Use the ScrollToRow method to scroll the view vertically so that the specified R
 
 This method is used to scroll either the Grid or TimeLine area (set as a second parameter) horizontally with a specified offset (in pixels). __Example 6__ demonstrates how you could scroll the TimeLine area with a 100px offset.
 
-#### __[C#] Example 6: Calling ScrollHorizontalTo method__
+__Example 6: Calling ScrollHorizontalTo method__
 
-{{region cs-radganttview-scrolling_5}}
+```C#
 	GanttView.ScrollingService.ScrollHorizontalTo(100, GanttScrollArea.TimeLineArea);
-{{endregion}}
+```
 
 #### __Figure 6: GanttView before and after calling ScrollHorizontalTo method__
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollHorizontalTo method](images/ganttview_scrolling_06.png)
@@ -134,11 +134,11 @@ This method is used to scroll either the Grid or TimeLine area (set as a second 
 
 Both methods are used to vertically scroll the view with the specified offset (in pixels). ScrollVerticalTo scrolls from the initial Scroll position; ScrollVerticalWith scrolls from the current Scroll position. __Example 7__ shows how you could scroll the view with 50px offset from the initial scroll position.
 
-#### __[C#] Example 7: Calling ScrollVerticalTo method__
+__Example 7: Calling ScrollVerticalTo method__
 
-{{region cs-radganttview-scrolling_6}}
+```C#
 	GanttView.ScrollingService.ScrollVerticalTo(50);
-{{endregion}}
+```
 
 #### __Figure 7: GanttView before and after calling ScrollVerticalTo method__
 ![{{ site.framework_name }} RadGanttView GanttView before and after calling ScrollVerticalTo method](images/ganttview_scrolling_07.png)
@@ -147,12 +147,12 @@ Both methods are used to vertically scroll the view with the specified offset (i
 
 By default, when a GanttTask is selected inside the Grid part of the GanttView, the TimeRuler part is auto-scrolled to bring the representation of the Task into view. You could customize this behavior by setting the __ScrollSettings__ of the __ScrollingService__ as shown in __Example 8__.
 
-#### __[C#] Example 8: Setting ScrollSettings__
+__Example 8: Setting ScrollSettings__
 
-{{region cs-radganttview-scrolling_7}}
+```C#
 	GanttView.ScrollingService.ScrollSettings.HorizontalScrollPosition = HorizontalScrollPosition.Right;
 	GanttView.ScrollingService.ScrollSettings.VerticalScrollPosition = VerticalScrollPosition.Anywhere;
-{{endregion}}
+```
 
 __Figure 8__ shows the result when selecting “task 4”.
 
@@ -161,10 +161,10 @@ __Figure 8__ shows the result when selecting “task 4”.
 
 >tip In order to disable the auto-scrolling behavior, you will need to set the HorizontalScrollPosition and VerticalScrollPosition properties of the ScrollSettings to “None” as shown in __Example 9__.
 
-#### __[C#] Example 9: Disable auto-scrolling__
+__Example 9: Disable auto-scrolling__
 
-{{region cs-radganttview-scrolling_8}}
+```C#
 	GanttView.ScrollingService.ScrollSettings.HorizontalScrollPosition = HorizontalScrollPosition.None;
 	GanttView.ScrollingService.ScrollSettings.VerticalScrollPosition = VerticalScrollPosition.None;
-{{endregion}}
+```
 

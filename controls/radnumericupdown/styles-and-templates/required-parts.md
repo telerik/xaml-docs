@@ -19,11 +19,11 @@ Here is an image that describes the required items from the code-behind:
 
 #### __XAML__
 
-{{region xaml-radnumericupdown-required-parts_0}}
+```XAML
 	<!--1. Textbox control for text input-->
 	<TextBox x:Name="textbox" />
 	<!--2. Button control for increasing the value-->
 	<RepeatButton x:Name="increase" />
 	<!--3. Button control for decreasing the value-->
 	<RepeatButton x:Name="decrease" />
-{{endregion}}
+```

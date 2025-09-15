@@ -66,10 +66,10 @@ The table dialogs can be shown by executing the following commands:
 
 See how to bind the commands to external buttons in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-tables-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowTablePropertiesDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, you can call the associated `RadRichTextBox` methods.
 
@@ -77,7 +77,7 @@ Alternatively, you can call the associated `RadRichTextBox` methods.
 * `ShowTableBordersDialog`
 * `ShowTablePropertiesDialog`
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-tables-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowInsertTableDialog();
-{{endregion}}
+```

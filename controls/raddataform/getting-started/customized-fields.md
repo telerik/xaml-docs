@@ -36,31 +36,28 @@ All of them are of type **DataTemplate** and there is no limitation on the types
 
 Once you set the **AutoGenerateFields** property of the RadDataForm to **False**, the implicit generation of the fields will be turned off:
 
-#### __[C#] Example 1: Disabling the autogeneration of fields__
+__Example 1: Disabling the autogeneration of fields__
 
-	{{region cs-raddataform-customized-fields_0}}
+	```C#
 	this.DataForm1.AutoGenerateFields = false;
-{{endregion}}
-
-#### __[VB.NET] Example 1: Disabling the autogeneration of fields__
-
-	{{region vb-raddataform-customized-fields_0}}
+```
+```VB.NET
 	Me.DataForm1.AutoGenerateFields = False
-{{endregion}}
+```
 
-#### __[XAML] Example 1: Disabling the autogeneration of fields__
+__Example 1: Disabling the autogeneration of fields__
 
-	{{region xaml-raddataform-customized-fields_1}}
+	```XAML
 	<telerik:RadDataForm x:Name="DataForm1" AutoGenerateFields="False" />
-{{endregion}}
+```
 
 The three data templates - ReadOnlyTemplate, NewItemTemplate and EditTemplate - correspond to the relevant modes of RadDataForm. So, when the form is in read-only mode, the ReadOnlyTemplate is displayed, when in edit-mode - the EditTemplate and when a new item is added - the NewItemTemplate.
 
 Lets say you have defined the following DataTemplate:
 
-#### __[XAML] Example 2: Definition of a DataTemplate__
+__Example 2: Definition of a DataTemplate__
 
-	{{region xaml-raddataform-customized-fields_2}}
+	```XAML
 	<Grid.Resources>
 	    <DataTemplate x:Key="MyTemplate">
 	        <Grid>
@@ -78,17 +75,17 @@ Lets say you have defined the following DataTemplate:
 	        </Grid>
 	    </DataTemplate>
 	</Grid.Resources>
-{{endregion}}
+```
 
 Then you can assign the ReadOnlyTemplate like so:
 
-#### __[XAML] Example 3: Assigning a ReadOnlyTemplate__
+__Example 3: Assigning a ReadOnlyTemplate__
 
-	{{region xaml-raddataform-customized-fields_3}}
+	```XAML
 	<telerik:RadDataForm AutoGenerateFields="False" 
 	                ReadOnlyTemplate="{StaticResource MyTemplate}">
 	</telerik:RadDataForm>
-{{endregion}}
+```
 
 **Figure 3** shows the result:
 
@@ -98,13 +95,13 @@ Then you can assign the ReadOnlyTemplate like so:
 
 Similarly you can assign the EditTemplate:
 
-#### __[XAML] Example 3: Assigning an EditTemplate__
+__Example 3: Assigning an EditTemplate__
 
-	{{region xaml-raddataform-customized-fields_4}}
+	```XAML
 	<telerik:RadDataForm AutoGenerateFields="False" 
 	                ReadOnlyTemplate="{StaticResource MyTemplate}">
 	</telerik:RadDataForm>
-{{endregion}}
+```
 
 The result can bee seen in **Figure 4**:
 
@@ -118,9 +115,9 @@ For each different state, you will need to define another template. It could be 
 
 On the other hand, if you make your mind on displaying quite different controls instead of the standard ones, you may place them in the data templates as well. For example, for editing number values, you may use the RadNumericUpDown control:
 
-#### __[XAML] Example 4: Using a RadNumericUpDown for editing number values__
+__Example 4: Using a RadNumericUpDown for editing number values__
 
-	{{region xaml-raddataform-customized-fields_5}}
+	```XAML
 	<Grid>
 	    <Grid.Resources>
 	        <DataTemplate x:Key="MyTemplate">
@@ -134,7 +131,7 @@ On the other hand, if you make your mind on displaying quite different controls 
 	                    EditTemplate="{StaticResource MyTemplate}">
 	    </telerik:RadDataForm>
 	</Grid>
-{{endregion}}
+```
 
 The result is displayed in **Figure 5**:
 
@@ -146,9 +143,9 @@ Furthermore, you may customize the data fields as well. For example, a regular *
 
 {% if site.site_name == 'WPF' %}
 
-#### __[XAML] Example 5: Replacing the default field content__
+__Example 5: Replacing the default field content__
 
-	{{region xaml-raddataform-customized-fields_6}}
+	```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.Resources>
 	        <DataTemplate x:Key="MyTemplate">
@@ -166,13 +163,13 @@ Furthermore, you may customize the data fields as well. For example, a regular *
 	                   EditTemplate="{StaticResource MyTemplate}">
 	    </telerik:RadDataForm>
 	</Grid>
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __[XAML] Example 5: Replacing the default field content__
+__Example 5: Replacing the default field content__
 
-	{{region xaml-raddataform-customized-fields_7}}
+	```XAML
 	<Grid Background="White">
 	    <Grid.Resources>
 	        <DataTemplate x:Key="MyTemplate">
@@ -194,7 +191,7 @@ Furthermore, you may customize the data fields as well. For example, a regular *
 	                   EditTemplate="{StaticResource MyTemplate}">
 	    </telerik:RadDataForm>
 	</Grid>
-{{endregion}}
+```
 
 {% endif %}
 

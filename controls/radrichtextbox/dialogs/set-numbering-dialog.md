@@ -22,14 +22,14 @@ The dialog can be opened using the __Set Numbering Value__ option in the right-c
 
 The dialog can be shown by executing the `ShowSetNumberingValueDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-list-numbering-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowSetNumberingValueDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowSetNumberingValueDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-list-numbering-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowSetNumberingValueDialog();
-{{endregion}}
+```

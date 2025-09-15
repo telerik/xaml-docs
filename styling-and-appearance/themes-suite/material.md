@@ -279,23 +279,23 @@ The general naming convention is: `MaterialPalette.Palette.[name]Color` is respo
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-material-theme-0}}
+__Setting palette colors__
+```C#
 	MaterialPalette.Palette.AccentNormalColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Theme Variation
 
 Since the __R2 2021__ release of the __UI for WPF__ suite the Material theme offers two color variations. Both variations correspond to the [Material Design color palettes](https://material.io/design/color/the-color-system.html#tools-for-picking-colors). The `Light` variation is the default one and is based on the Indigo and Amber colors, and the `Dark` - based on the Indigo and Cyan colors. The following example demonstrates the ability to switch between the supported Light and Dark color palettes by calling the `LoadPreset` method as shown below:
 
-#### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-material-theme-1}}
+__Changing the color variation of the theme__
+```C#
 	//default color variation 
 	MaterialPalette.LoadPreset(MaterialPalette.ColorVariation.Light);   
 
 	//Dark color variation 
 	MaterialPalette.LoadPreset(MaterialPalette.ColorVariation.Dark); 
-{{endregion}}
+```
 
 __Material theme color variations__
 
@@ -315,29 +315,29 @@ The default font used in the theme is [Roboto](https://fonts.google.com/specimen
 
 __Example 2__ shows the default font sizes and families.
 
-#### __[C#] Default FontSize and FontFamily properties:__
-{{region cs-styling-appearance-material-theme-2}}
+__Default FontSize and FontFamily properties:__
+```C#
 	MaterialPalette.Palette.FontSizeS = 12;
 	MaterialPalette.Palette.FontSize = 14;
 	MaterialPalette.Palette.FontSizeL = 18;
 	MaterialPalette.Palette.FontFamily = new FontFamily("Roboto");
-{{endregion}}
+```
 
-#### __[XAML] Example view definition__
-{{region xaml-styling-appearance-material-theme-0}}
+__Example view definition__
+```XAML
 	<telerik:RadCalendar HorizontalAlignment="Center" />
 	<telerik:RadButton Content="Change Font" Click="OnButtonChangeFontSizeClick" 
 		     HorizontalAlignment="Center" VerticalAlignment="Center"/>
-{{endregion}}
+```
 	
-#### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-material-theme-3}}
+__Changing the theme's FontSize and FontFamily__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		MaterialPalette.Palette.FontSize = 12;
 		MaterialPalette.Palette.FontFamily = new FontFamily("Calibri");
 	}
-{{endregion}}
+```
 
 __Setting FontSize and FontFamily__
 
@@ -349,28 +349,28 @@ The Material Theme uses and supports the same approach for adding icons and icon
 
 > You can read more about the usage and range of the new glyphs in the [Font Glyphs Overview article]({%slug common-styling-appearance-glyphs-overview%}).
 
-#### __[XAML] Adding the ResourceDictionary with the glyphs__
-{{region xaml-styling-appearance-material-theme-1}}
+__Adding the ResourceDictionary with the glyphs__
+```XAML
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
-{{endregion}}
+```
  
 ## Changing Corner Radius
 
 The Material Theme exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the `CornerRadius` value is __2__. 
 
-#### __[C#] Default corner radius values__
-{{region cs-styling-appearance-material-theme-4}}
+__Default corner radius values__
+```C#
 	  MaterialPalette.Palette.CornerRadius = new CornerRadius(2);
       MaterialPalette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
       MaterialPalette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 2, 2);
       MaterialPalette.Palette.CornerRadiusLeft = new CornerRadius(2, 0, 0, 2);
       MaterialPalette.Palette.CornerRadiusRight = new CornerRadius(0, 2, 2, 0);
-{{endregion}}
+```
 
-#### __[C#] Changing the default corner radius__
-{{region cs-styling-appearance-material-theme-5}}
+__Changing the default corner radius__
+```C#
 	MaterialPalette.Palette.CornerRadius = new CornerRadius(10); 	
-{{endregion}}
+```
 
 __Appearance of a RadButton control after changing the default corner radius__
 
@@ -389,21 +389,21 @@ The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the
 
 The following examples show a `RadToggleButton` control with modified brushes for its different states through the above helper classes:
 
-#### __[XAML] Declare the namespace for the helpers__
-{{region xaml-styling-appearance-material-theme-2}}
+__Declare the namespace for the helpers__
+```XAML
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
 	xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
-#### __[XAML] Set RadToggleButton's visual appearance through the helpers__
-{{region xaml-styling-appearance-material-theme-3}}
+__Set RadToggleButton's visual appearance through the helpers__
+```XAML
 	  <telerik:RadToggleButton Content="RadButton" 
                                Margin="10"
                                helpers:ThemeHelper.MouseOverBrush="{telerik:MaterialResource ResourceKey=AccentHoverBrush}"
                                helpers:ThemeHelper.PressedBrush="{telerik:MaterialResource ResourceKey=AccentPressedBrush}"
 							   helpers:ThemeHelper.CheckedBrush="{telerik:MaterialResource ResourceKey=ValidationBrush}" 
 							   helpers:ThemeHelper.FocusBrush="{telerik:MaterialResource ResourceKey=PrimaryNormalBrush}"/>
-{{endregion}}
+```
 
 __Appearance of the RadToggleButton in the different states__
 
@@ -417,15 +417,15 @@ The `Shadow` is one of the newly introduced elements designed specifically for t
 
 If you would like to use it separately in your application, you should work with its Width/Height properties so that it appears around the desired element as shown in the following example.
 
-#### __[XAML] Using a Shadow component separately__
-{{region xaml-styling-appearance-material-theme-4}}
+__Using a Shadow component separately__
+```XAML
 	 <Grid>
                 <mat:Shadow Background="White" Width="150" Height="30" ShadowDepth="Depth5"/>
                 <TextBlock Text="Some Text"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"/>
      </Grid>
-{{endregion}}
+```
 
 >important The Shadow element should have a background set for the effect to appear.
 
@@ -449,17 +449,17 @@ __Ripple effect on RadDropDownButton__
 
 ![ripple effect](images/RadDropDownButton.gif)
 
-#### __[XAML] Declaration of the Button element with a glyph as text__
-{{region xaml-styling-appearance-material-theme-5}}
+__Declaration of the Button element with a glyph as text__
+```XAML
 		 <Button VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource RoundRadButtonStyle}">
                 <TextBlock FontFamily="{StaticResource TelerikWebUI}"
                            FontSize="32" FontWeight="Normal" FontStyle="Normal"
                            Text="{StaticResource GlyphEdit}" VerticalAlignment="Center" HorizontalAlignment="Center" />
          </Button>
-{{endregion}}
+```
   					
-#### __[XAML] Button's Style declaration__
-{{region xaml-styling-appearance-material-theme-6}}
+__Button's Style declaration__
+```XAML
 	 <Style x:Key="RoundRadButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="#FF2196F3" />
             <Setter Property="Foreground" Value="{telerik:MaterialResource ResourceKey=MarkerInvertedBrush}" />
@@ -491,7 +491,7 @@ __Ripple effect on RadDropDownButton__
                 </Setter.Value>
             </Setter>
       </Style>
-{{endregion}}
+```
 
 __Material Control used within a custom template applied to a Button__
 
@@ -501,8 +501,8 @@ __Material Control used within a custom template applied to a Button__
 
 It is possible to disable the ripple effect of the MaterialControl through a style. The following example demonstrates how this can be achieved. The style can be included in the scope of the Telerik control(s) whose ripple effect needs to be disabled. 
 
-#### __[XAML] Disabling the Ripple effect__
-{{region xaml-styling-appearance-material-theme-7}}
+__Disabling the Ripple effect__
+```XAML
 	 <!--If you are using the NoXaml binaries you should base the style on the default one for the theme like so
         <Style TargetType="mat:MaterialControl" BasedOn="{StaticResource MaterialControlStyle}" > 
         -->
@@ -510,30 +510,28 @@ It is possible to disable the ripple effect of the MaterialControl through a sty
 	<Style TargetType="mat:MaterialControl" >
 		<Setter Property="IsRippleEnabled" Value="False" />
 	</Style>
-{{endregion}}
+```
 
 ## Changing Opacity 
 
 If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the `MaterialPalette`. The default values are __0.26__ and __1__ respectively. 
 
-#### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-material-theme-8}}
+__Changing the opacity__		
+```C#
 	MaterialPalette.Palette.DisabledOpacity = 0.5;
 	MaterialPalette.Palette.ReadOnlyOpacity = 0.5;
-{{endregion}}
-	
-#### __[VB.NET] Changing the opacity__		
-{{region vb-styling-appearance-material-theme-0}}
+```
+```VB.NET
 	MaterialPalette.Palette.DisabledOpacity = 0.5
 	MaterialPalette.Palette.ReadOnlyOpacity = 0.5
-{{endregion}}
+```
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `MaterialPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-material-theme-8}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -541,7 +539,7 @@ When modifying fonts, colors, or other resources from the `MaterialPalette` and 
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also
 

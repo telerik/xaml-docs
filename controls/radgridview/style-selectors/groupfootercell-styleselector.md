@@ -16,9 +16,9 @@ The **GroupFooterCellStyleSelector** property of RadGridView can be used to styl
 
 To do so, first create a new class that inherits the **StyleSelector** class and override its **SelectStyle** method:
 
-#### __[C#] Example 1: The GroupFooterCellStyleSelector class__
+__Example 1: The GroupFooterCellStyleSelector class__
 
-	{{region gridview-groupfootercell-styleselector_1}}
+	```C#
     public class GroupFooterCellStyleSelector : StyleSelector
     {
         public override Style SelectStyle(object item, DependencyObject container)
@@ -40,11 +40,8 @@ To do so, first create a new class that inherits the **StyleSelector** class and
         public Style BigGroupStyle { get; set; }
         public Style SmallGroupStyle { get; set; }
     }
-	{{endregion}}
-
-#### __[VB.NET] Example 1: The GroupFooterCellStyleSelector class__
-	
-	{{region gridview-groupfootercell-styleselector_2}}
+	```
+```VB.NET
 	Public Class GroupFooterCellStyleSelector
 		Inherits StyleSelector
 
@@ -63,13 +60,13 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 		Public Property BigGroupStyle() As Style
 		Public Property SmallGroupStyle() As Style
 	End Class
-	{{endregion}}
+	```
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigGroupStyle** and **SmallGroupStyle**:
 
-#### __[XAML] Example 2: Setting the BigGroupStyle and SmallGroupStyle__
+__Example 2: Setting the BigGroupStyle and SmallGroupStyle__
 
-	{{region gridview-groupfootercell-styleselector_3}}
+	```XAML
 	<Grid.Resources>
         <my:GroupFooterCellStyleSelector x:Key="GroupFooterCellStyleSelector">
             <my:GroupFooterCellStyleSelector.BigGroupStyle>
@@ -84,17 +81,17 @@ In the XAML file, define the style selector as a resource and set the properties
             </my:GroupFooterCellStyleSelector.SmallGroupStyle>
         </my:GroupFooterCellStyleSelector>
 	</Grid.Resources>
-	{{endregion}}
+	```
 
 >The **"my:"** prefix before **GroupFooterCellStyleSelector** specifies the mapping for the namespace of the project: **xmlns:my="..."**
 
 Finally, set the **GroupFooterCellStyleSelector** property of the chosen column:
 
-#### __[XAML] Example 3: Setting the GroupFooterCellStyleSelector property__
+__Example 3: Setting the GroupFooterCellStyleSelector property__
 
-	{{region gridview-groupfootercell-styleselector_4}}
+	```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" GroupFooterCellStyleSelector="{StaticResource GroupFooterCellStyleSelector}" />
-	{{endregion}}
+	```
 
 **Figure 1** shows the final result:
 

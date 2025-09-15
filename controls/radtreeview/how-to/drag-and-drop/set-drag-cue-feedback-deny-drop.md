@@ -18,7 +18,7 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 	#### __XAML__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-2}}
+	```XAML
 		<Grid>
 			<Grid.Resources>
 				<sampleData:RadTreeViewSampleData x:Key="DataSource" />
@@ -44,14 +44,14 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 									ItemsSource="{Binding Source={StaticResource DataSource},
 														Path=LeaguesDataSource}" />
 		</Grid>       
-		{{endregion}}
+		```
 
 	{% endif %}
 	{% if site.site_name == 'WPF' %}
 
 	#### __XAML__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-1}}
+	```XAML
 		<Grid>
 			<Grid.Resources>
 				<sampleData:RadTreeViewSampleData x:Key="DataSource" />
@@ -77,7 +77,7 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 									ItemsSource="{Binding Source={StaticResource DataSource},
 														Path=LeaguesDataSource}" />
 		</Grid>       
-	{{endregion}}
+	```
 
 	{% endif %}
 
@@ -85,15 +85,15 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 	#### __C#__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-0}}
+	```C#
 		DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, true);
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-0}}
+	```VB.NET
 		DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, True)
-	{{endregion}}
+	```
 
 	>tip __RadTreeView__ handles internally the __DragDropManager__ events and in order to invoke a custom handler, you need to explicitly specify that you're adding a handler that should be invoked even for already handled events. This is done through the last - __bool__ argument of the __DragDropManager.AddDragOverHandler__ extension method.			  
 
@@ -101,7 +101,7 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 	#### __C#__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-1}}
+	```C#
 		private void OnDragOverTree(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 		{
 			var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -110,18 +110,18 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 				options.DropAction = DropAction.None;
 			}
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-1}}
+	```VB.NET
 		Private Sub OnDragOverTree(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 			Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 			If options IsNot Nothing AndAlso options.DropPosition = Telerik.Windows.Controls.DropPosition.Inside AndAlso options.DropTargetItem IsNot Nothing AndAlso TypeOf options.DropTargetItem.Item Is Division Then
 				options.DropAction = DropAction.None
 			End If
 		End Sub
-	{{endregion}}
+	```
 
 	>tip Please note that in order to disable the drop operation, we've set the __DropAction__ propety to __None__. This way if we drop an item over a __Division__ element, the __RadTreeView__ will know not to process the operation and will disregard the drop.			  
 
@@ -132,7 +132,7 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 	#### __C#__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-2}}
+	```C#
 		private void OnDragOverTree(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 		{
 			var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -148,11 +148,11 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 		
 			}
 		}
-	{{endregion}}
+	```
 
 	#### __VB.NET__
 
-	{{region radtreeview-how-to-set-drag-cue-feedback-deny-drop-2}}
+	```VB.NET
 		Private Sub OnDragOverTree(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 			Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 			If options IsNot Nothing AndAlso options.DropPosition = Telerik.Windows.Controls.DropPosition.Inside AndAlso options.DropTargetItem IsNot Nothing AndAlso TypeOf options.DropTargetItem.Item Is Division Then
@@ -164,7 +164,7 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 				End If
 			End If
 		End Sub
-	{{endregion}}
+	```
 
 5. The end result should be similar to the snapshot below: 
 

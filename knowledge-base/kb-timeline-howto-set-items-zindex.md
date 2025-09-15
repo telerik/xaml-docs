@@ -26,8 +26,8 @@ How to manipulate the ZIndex of items that are shown in the same row in a RadTim
 
 Set the __Panel.ZIndex__ attached property of the ContentPresenter elements that hold the TimelineItemControl and TimelineInstantItemControl. To demonstrate this we are going to define a class that will hold sample data.
 
-#### __[C#] Example 1: Defining a model__
-{{region cs-kb-timeline-howto-set-items-zindex-0}}
+__Example 1: Defining a model__
+```C#
 
 	public class TimelineData
     {
@@ -36,12 +36,12 @@ Set the __Panel.ZIndex__ attached property of the ContentPresenter elements that
         public Brush Background { get; set; }
         public int ZIndex { get; set; }
     }
-{{endregion}}
+```
 
 We will also define a custom RowIndexGenerator to show all items in the same row. 
 
-#### __[C#] Example 2: Defining a RowIndexGenerator__
-{{region cs-kb-timeline-howto-set-items-zindex-1}}
+__Example 2: Defining a RowIndexGenerator__
+```C#
 
 	public class RowIndexGenerator : IItemRowIndexGenerator
     {
@@ -53,12 +53,12 @@ We will also define a custom RowIndexGenerator to show all items in the same row
             }
         }
     }
-{{endregion}}
+```
 
 The custom logic for setting the __Panel.ZIndex__ to the ZIndex property of the model will be in a separate class.
 
-#### __[C#] Example 3: Defining a RowIndexGenerator__
-{{region cs-kb-timeline-howto-set-items-zindex-2}}
+__Example 3: Defining a RowIndexGenerator__
+```C#
 
     public class TimelineUtilities
     {
@@ -89,12 +89,12 @@ The custom logic for setting the __Panel.ZIndex__ to the ZIndex property of the 
             }
         }
     }
-{{endregion}}
+```
 
 What is left to setup up the code behind and xaml of our MainWindow.
 
-#### __[C#] Example 4: Creating a collection of TimelineData objects and setting their ZIndex__
-{{region cs-kb-timeline-howto-set-items-zindex-3}}
+__Example 4: Creating a collection of TimelineData objects and setting their ZIndex__
+```C#
 
     public MainWindow()
     {
@@ -109,12 +109,12 @@ What is left to setup up the code behind and xaml of our MainWindow.
         };
         this.DataContext = source;
     }
-{{endregion}}
+```
 
 The attached behavior will be added to the items through styles targeting the TimelineItemControl and TimelineInstantItemControl.
 
-#### __[XAML] Example 5: Defining the RadTimeLine__
-{{region xaml-kb-timeline-howto-set-items-zindex-4}}
+__Example 5: Defining the RadTimeLine__
+```XAML
 
     <telerik:RadTimeline PeriodStart="2020-01-01"
                             PeriodEnd="2021-01-01"
@@ -140,7 +140,7 @@ The attached behavior will be added to the items through styles targeting the Ti
             <telerik:YearInterval />
         </telerik:RadTimeline.Intervals>
     </telerik:RadTimeline>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 5__
 ![RadTimeLine items with customized ZIndex](images/kb-timeline-how-to-set-item-zindex.png)

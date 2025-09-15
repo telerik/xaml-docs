@@ -32,18 +32,18 @@ How to cancel changes in invalid GridViewCell and exit edit mode when another co
 
 To do this, you can subscribe for the GotFocus event of the control that should steal the focus from RadGridView and in the event handler, call the __CancelEdit__ method of RadGridView.
 
-#### __[XAML]__
-{{region kb-gridview-cancel-edit-on-lostfocus-0}}
+
+```XAML
 	<Grid>
 		<telerik:RadGridView x:Name="radGridView" />
 		<telerik:RadButton x:Name="cancelEditButton" GotFocus="cancelEditButton_GotFocus"/>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-gridview-cancel-edit-on-lostfocus-1}}
+
+```C#
 	private void cancelEditButton_GotFocus(object sender, RoutedEventArgs e)
 	{
 		this.radGridView.CancelEdit();
 	}
-{{endregion}}
+```

@@ -15,7 +15,7 @@ position: 10
 The purpose of this tutorial is to show you how to integrate a __RadCalendar__ with a __RadRibbonView__. The solution is to set the __RadCalendar__ as a drop down content of a __RadRibbonSplitButton__. The next example demonstrates how to do that.		
 
 #### __XAML__
-{{region radribbonview-howto-use-ribbonview-other-controls_0}}
+```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">
 			<telerik:RadRibbonGroup>
@@ -29,7 +29,7 @@ The purpose of this tutorial is to show you how to integrate a __RadCalendar__ w
 			</telerik:RadRibbonGroup>
 		</telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 Here is the result:
 ![Rad Ribbon View How To Use Rad Calendar 01](images/RadRibbonView_HowTo_Use_RadCalendar_01.png)
@@ -39,7 +39,7 @@ Here is the result:
 Except the controls associated with the __RadRibbonView__, like RadRibbonButton, RadRibbonGallery, RadRibbonComboBox, you can place other controls in the __RadRibbonGroups__. Here is an example of adding a __RadDatePicker__ control inside a __RadRibbonGroup__.		
 
 #### __XAML__
-{{region radribbonview-howto-use-ribbonview-other-controls_1}}
+```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">
 			<telerik:RadRibbonGroup>
@@ -48,7 +48,7 @@ Except the controls associated with the __RadRibbonView__, like RadRibbonButton,
 			</telerik:RadRibbonGroup>
 		</telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 The result is the following:
 ![Rad Ribbon View How To Use Rad Calendar 02](images/RadRibbonView_HowTo_Use_RadCalendar_02.png)
@@ -58,7 +58,7 @@ The result is the following:
 The next example demonstrates how to integrate a __RadColorPicker__ directly into a __Ribbon Group__.		
 
 #### __XAML__
-{{region radribbonview-howto-use-ribbonview-color-picker_0}}
+```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">
 			<telerik:RadRibbonGroup>
@@ -66,7 +66,7 @@ The next example demonstrates how to integrate a __RadColorPicker__ directly int
 			</telerik:RadRibbonGroup>
 		</telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 And the result is:
 ![Rad Ribbon View How To Use Color Picker 01](images/RadRibbonView_HowTo_Use_ColorPicker_01.png)
@@ -76,7 +76,7 @@ And the result is:
 Integrating a __RadColorSelector__ with a __RadRibbonDropDownButton__ is a simple task. See the next code-snippet.		
 
 #### __XAML__
-{{region radribbonview-howto-use-ribbonview-color-picker_1}}
+```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">
 			<telerik:RadRibbonGroup>
@@ -88,7 +88,7 @@ Integrating a __RadColorSelector__ with a __RadRibbonDropDownButton__ is a simpl
 			</telerik:RadRibbonGroup>
 		</telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 The __RadColorSelector__ is set as a __DropDownContent__ of the __RadRibbonDropDownButton__.
 ![Rad Ribbon View How To Use Color Picker 02](images/RadRibbonView_HowTo_Use_ColorPicker_02.png)

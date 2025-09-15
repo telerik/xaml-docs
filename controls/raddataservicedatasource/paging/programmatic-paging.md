@@ -12,9 +12,9 @@ position: 1
 
 Programmatic paging could be done with the help of the public paging API that __RadDataServiceDataSource.DataView__ provides. The __DataView__ property implements the __IPagedCollectionView__ interface which contains all paging methods and properties.
 
-#### __[C#] Example 1: The IPagedCollectionView interface__
+__Example 1: The IPagedCollectionView interface__
 
-{{region cs-raddataservicedatasource-paging-programmatic-paging_0}}
+```C#
     public interface IPagedCollectionView
     {
         bool CanChangePage { get; }
@@ -33,11 +33,8 @@ Programmatic paging could be done with the help of the public paging API that __
         bool MoveToPage(int pageIndex);
         bool MoveToPreviousPage();
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: The IPagedCollectionView interface__
-
-{{region vb-raddataservicedatasource-paging-programmatic-paging_1}}
+```
+```VB.NET
 	Public Interface IPagedCollectionView
 		ReadOnly Property CanChangePage() As Boolean
 		ReadOnly Property IsPageChanging() As Boolean
@@ -55,26 +52,23 @@ Programmatic paging could be done with the help of the public paging API that __
 		Function MoveToPage(ByVal pageIndex As Integer) As Boolean
 		Function MoveToPreviousPage() As Boolean
 	End Interface
-{{endregion}}
+```
 
 __Example 2__ shows how to use the **DataView** in order to set the last page as the current page.
 
-#### __[C#] Example 2: Moving to the last page__
+__Example 2: Moving to the last page__
 
-{{region cs-raddataservicedatasource-paging-programmatic-paging_2}}
+```C#
     private void MoveToLastPage(RadDataServiceDataSource dataSource)
     {
         dataSource.DataView.MoveToLastPage();
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Moving to the last page__
-
-{{region vb-raddataservicedatasource-paging-programmatic-paging_3}}
+```
+```VB.NET
 	Private Sub MoveToLastPage(ByVal dataSource As RadDataServiceDataSource)
 		dataSource.DataView.MoveToLastPage()
 	End Sub
-{{endregion}}
+```
 
 When a page change is requested, a trip to the server will be made regardless of the __AutoLoad__ setting. When filtering, sorting or grouping occurs, a trip to the server is made, the __DataView__ is re-created and always returns to the first page.  
 

@@ -26,7 +26,7 @@ In order to customize the __ResizeHighlightStyle__ using Implicit Styles you wil
 
 	#### __XAML__
 
-	{{region radscheduleview-styles-and-templates-customizing-resize-drag-highlight-0}}
+	```XAML
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/System.Windows.xaml"/>
@@ -36,30 +36,30 @@ In order to customize the __ResizeHighlightStyle__ using Implicit Styles you wil
 				<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.ScheduleView.xaml"/>
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
-	{{endregion}}
+	```
 
 3. Create a Style that targets the __HighlightItem__, base it on the StaticResource ResizeHighlightStyle and set the Background property:
 
 	#### __XAML__
 
-	{{region radscheduleview-styles-and-templates-customizing-resize-drag-highlight-1}}
+	```XAML
 		<Style x:Key="MyResizeHighlightStyle" TargetType="telerik:HighlightItem" BasedOn="{StaticResource ResizeHighlightStyle}">
 			<Setter Property="Background" Value="LightBlue"/>
 		</Style>
-	{{endregion}}
+	```
 
 4. Next we will need to set the newly created Style to the ResizeHighlightStyle of the ScheduleView control:
 
 	#### __XAML__
 
-	{{region radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2}}
+	```XAML
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 							ResizeHighlightStyle="{StaticResource MyResizeHighlightStyle}">
 			<telerik:RadScheduleView.ViewDefinitions>
 				<telerik:DayViewDefinition/>
 			</telerik:RadScheduleView.ViewDefinitions>
 		</telerik:RadScheduleView>
-	{{endregion}}
+	```
 
 	The next screenshot shows the final result when resizing an appointment:
 
@@ -73,24 +73,24 @@ In order to customize the __DragDropHighlightStyle__ using Implicit Styles you w
 
 	#### __XAML__
 
-	{{region radscheduleview-styles-and-templates-customizing-resize-drag-highlight-3}}
+	```XAML
 		<Style x:Key="MyHighlightItemStyle" TargetType="telerik:HighlightItem" BasedOn="{StaticResource DragDropHighlightStyle}">
 			<Setter Property="Background" Value="Green"/>
 		</Style>
-	{{endregion}}
+	```
 
 2. Next we will need to set the newly created Style to the DragDropHighlightStyle of the ScheduleView control:
 
 	#### __XAML__
 
-	{{region radscheduleview-styles-and-templates-customizing-resize-drag-highlight-4}}
+	```XAML
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 							DragDropHighlightStyle="{StaticResource MyHighlightItemStyle}">
 			<telerik:RadScheduleView.ViewDefinitions>
 				<telerik:DayViewDefinition/>
 			</telerik:RadScheduleView.ViewDefinitions>
 		</telerik:RadScheduleView>
-	{{endregion}}
+	```
 
 	The next screenshot shows the final result when dragging an appointment:
 

@@ -48,8 +48,8 @@ If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls and the [implicit styles themi
 
 After you create the WPF project and install the NuGets, add any UI and related code-behind, models, and styles. This example will show a very basic setup which includes a RadTabControl with few tabs defined in XAML.
 
-#### __[XAML] Example 1: Adding Telerik control in the UI__
-{{region msi-or-zip-setup-lifecycle-0}}
+__Example 1: Adding Telerik control in the UI__
+```XAML
 	<Window x:Class="TelerikWpfApplication.MainWindow"
 		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -66,7 +66,7 @@ After you create the WPF project and install the NuGets, add any UI and related 
 			</telerik:RadTabControl>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} Project with Added Tab Control](images/msi-or-zip-setup-lifecyle-6.png)
 

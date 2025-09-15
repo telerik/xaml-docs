@@ -14,11 +14,11 @@ Along with the context, you need to specify the name of the query that will be e
 
 #### __XAML__
 
-{{region raddataservicedatasource-loading-the-DataServiceQuery_0}}
+```XAML
 
 	<telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
 	   <telerik:RadDataServiceDataSource.DataServiceContext>
 	      <local:MyNorthwindContext/>
 	   </telerik:RadDataServiceDataSource.DataServiceContext>
 	</telerik:RadDataServiceDataSource>
-{{endregion}}
+```

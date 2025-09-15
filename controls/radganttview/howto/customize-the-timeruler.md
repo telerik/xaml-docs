@@ -36,7 +36,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 
 	#### __C#__
 
-	{{region cs-radganttview-howto-customize-the-timeruler-0}}
+	```C#
 			public class MyViewModel : ViewModelBase
 			{
 				private ObservableCollection<GanttTask> tasks;
@@ -124,13 +124,13 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 					}
 				}
 			}
-	{{endregion}}
+	```
 
 1. Create a __TimeRulerDeadlineTickInfo__ class that implements IEventInfo and ICellCoordinates interfaces. This class will hold the information for the container that needs to be rendered in the TimeRuler portion of the GanttView control:
 
 	#### __C#__
 
-	{{region cs-radganttview-howto-customize-the-timeruler-1}}
+	```C#
 			public class TimeRulerDeadlineTickInfo : IEventInfo, ICellCoordinates
 			{
 				private Range<long> timeRange;
@@ -150,13 +150,13 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 					get { return new Range<int>(0, 2); }
 				}
 			}
-	{{endregion}}
+	```
 
 1. Create __TimeRulerDeadlineBehavior__ class that inherits DefaultTimeRulerVisualizationBehavior class, override its GetVisibleItems () method and add a ProjectDeadline property of type DateTime:
 
 	#### __C#__
 
-	{{region cs-radganttview-howto-customize-the-timeruler-2}}
+	```C#
 			public class TimeRulerDeadlineBehavior : DefaultTimeRulerVisualizationBehavior
 			{
 				private DateTime projectDeadline;
@@ -183,7 +183,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 					yield return new TimeRulerDeadlineTickInfo(this.projectDeadline.Ticks);
 				}
 			}
-	{{endregion}}
+	```
 
 	>The DefaultTimeRulerVisualizationBehavior is responsible for rendering the time ticks in the TimeRuler portion of the control.
 
@@ -191,7 +191,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 
 	#### __C#__
 
-	{{region cs-radganttview-howto-customize-the-timeruler-3}}
+	```C#
 			public class MyViewModel : ViewModelBase
 			{
 			       //...
@@ -242,13 +242,13 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 					}
 				}
 			}
-	{{endregion}}
+	```
 
 1. Create a custom __TimeRulerDeadlineContainer__ that inherits Control class and implements IDataContainer interface:
 
 	#### __C#__
 
-	{{region cs-radganttview-howto-customize-the-timeruler-4}}
+	```C#
 			public class TimeRulerDeadlineContainer : Control, IDataContainer
 			{
 				public TimeRulerDeadlineContainer()
@@ -258,13 +258,13 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 			
 				public object DataItem { get; set; }
 			}
-	{{endregion}}
+	```
 
 1. Create a __Style__ that targets the newly created __TimeRulerDeadlineContainer__ and set its properties:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-howto-customize-the-timeruler-0}}
+	```XAML
 		<Style TargetType="local:TimeRulerDeadlineContainer">
 		    <Setter Property="Canvas.ZIndex" Value="100"/>
 		    <Setter Property="BorderBrush" Value="Red"/>
@@ -280,13 +280,13 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 		        </Setter.Value>
 		    </Setter>
 		</Style>
-	{{endregion}}
+	```
 
 1. Next you will need to create a custom TimeRulerDeadlineContainerSelector that inherits DefaultTimeRulerContainerSelector and override its GetContainerType() method in order to return the custom container.
 
 	#### __C#__
 
-	{{region cs-radganttview-howto-customize-the-timeruler-5}}
+	```C#
 			public class TimeRulerDeadlineContainerSelector : DefaultTimeRulerContainerSelector
 			{
 				private static readonly ContainerTypeIdentifier timeRulerDeadlineContainerType = ContainerTypeIdentifier.FromType<TimeRulerDeadlineContainer>();
@@ -300,13 +300,13 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 					return base.GetContainerType(item);
 				}
 			}
-	{{endregion}}
+	```
 
 1. Finally you will need to set the GanttView control in the XAML by setting its TasksSource, TimeLineVisualizationBehavior, VisibleRange and TimeRulerContainerSelector. The XAML for the GanttView should look like this:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-howto-customize-the-timeruler-1}}
+	```XAML
 		<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="5"
 		                      TimeRulerVisualizationBehavior="{Binding TimeRulerDeadlineBehavior}"
 		                      VisibleRange="{Binding VisibleTime}"
@@ -321,7 +321,7 @@ The next steps go through on how to create a custom TimeRulerVisualizationBehavi
 		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 The next screenshot shows the final result (the red line represents the ProjectDeadline):
 

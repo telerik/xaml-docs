@@ -23,8 +23,8 @@ This series is visualized on the screen as separate rectangles representing each
 
 You can use the definition from __Example 1__ to display a BarSeries.
 
-#### __[XAML] Example 1: Declaring a BarSeries in XAML__
-{{region radchartview-series-barseries_0}}
+__Example 1: Declaring a BarSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -46,7 +46,7 @@ You can use the definition from __Example 1__ to display a BarSeries.
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: BarSeries visual appearance__  
 ![radchartview-series-barseries](images/radchartview-series-barseries.png)
@@ -65,9 +65,9 @@ You can use the definition from __Example 1__ to display a BarSeries.
 
 You can use the ValueBinding and CategoryBinding properties of the BarSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-barseries_1}}
+```C#
 	public class PlotInfo
     {
         public string Category { get; set; }
@@ -80,12 +80,12 @@ You can use the ValueBinding and CategoryBinding properties of the BarSeries to 
 		new PlotInfo() { Category = "January", Value = 2},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a BarSeries in XAML__
-{{region radchartview-series-barseries_2}}	
+__Example 3: Specify a BarSeries in XAML__
+```XAML	
 	<telerik:BarSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value" />
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -95,12 +95,12 @@ The series supports all standard features exposed by all other categorical serie
 
 * __DataPointLegendSettings__: The series supports two types of legend settings, the first one is the common SeriesLegendSettings which can be used with all types of series and it maps each legend item to a series. The series supports an additional DataPointLegendSettings which maps the legend items per data point.
 
-#### __[XAML] Example 4: Specify LegendSettings of the BarSeries__
-{{region radchartview-series-barseries_3}}	
+__Example 4: Specify LegendSettings of the BarSeries__
+```XAML	
 	<telerik:BarSeries.LegendSettings>
 		<telerik:DataPointLegendSettings/>
 	</telerik:BarSeries.LegendSettings>
-{{endregion}}
+```
 
 #### __Figure 2: Setting BarSeries legend settings__
 ![radchartview-series-barseries](images/radchartview-series-barseries-legendsettings.PNG)	
@@ -114,10 +114,10 @@ Setting the PaletteMode to __Series__ will apply different color for each series
 
 * __Hover interactivity__: RadCartesianChart exposes a property called HoverMode. This property can be used only by the bar and bubble series. If it is set to “FadeOtherSeries”, when you mouse over a data point, the bar from all other series will fade out. The default value of the property is “None”.
 
-#### __[XAML] Example 8: Setting the HoverMode of the RadCartesianChart__
-{{region radchartview-series-barseries_4}}	
+__Example 8: Setting the HoverMode of the RadCartesianChart__
+```XAML	
 	<telerik:RadCartesianChart HoverMode="FadeOtherSeries">
-{{endregion}}
+```
 
 #### __Figure 4: Hover interactivity in BarSeries__ 
 ![radchartview-series-barseries](images/radchartview-series-barseries-hovermode.PNG)

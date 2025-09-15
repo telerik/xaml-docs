@@ -24,16 +24,16 @@ The __DateSelectionMode__ specifies whether the calendar in the __RadDateTimePic
 
 You can change the value of the __DateSelectionMode__ property in XAML as shown in __Example 1__:
 
-#### __[XAML] Example 1: Setting the DateSelectionMode property__
+__Example 1: Setting the DateSelectionMode property__
 
-{{region xaml-raddatetimepicker-features-date-selection-modes_0}}
+```XAML
 	<telerik:RadDateTimePicker x:Name="dateTimePicker" InputMode="DatePicker" DateSelectionMode="Month"/>
-{{endregion}}
+```
 
 __Example 2__ demonstrates how you can change it in code.
 
-#### __[C#] Example 2: Setting the DateSelectionMode property programmatically__
-{{region raddatetimepicker-features-date-selection-modes-1}}
+__Example 2: Setting the DateSelectionMode property programmatically__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -43,10 +43,8 @@ __Example 2__ demonstrates how you can change it in code.
 		}
 	   
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the DateSelectionMode property programmatically__
-{{region raddatetimepicker-features-date-selection-modes-1}}
+```
+```VB.NET
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -56,7 +54,7 @@ __Example 2__ demonstrates how you can change it in code.
 		}
 	   
 	}
-{{endregion}}
+```
 
 This example will achieve the following:
 

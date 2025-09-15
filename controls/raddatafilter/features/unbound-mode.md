@@ -18,7 +18,7 @@ Here is the XAML for the example. In it you can see a __RadGridView__ and a __Ra
 
 #### __XAML__
 
-{{region raddatafilter-features-unbound-mode_0}}
+```XAML
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
@@ -38,7 +38,7 @@ Here is the XAML for the example. In it you can see a __RadGridView__ and a __Ra
 	        </telerik:RadGridView.Columns>
 	    </telerik:RadGridView>
 	</Grid>
-{{endregion}}
+```
 
 
 When in __Unbound Mode__, __RadDataFilter__ has no __Source__. The developer instructs it what properties to show in its drop-downs by assigning its __ItemPropertyDefinitions__ property. This is a collection of __ItemPropertyDefinition objects__ that contains all the information regarding the properties, their type, their attributes, etc. 
@@ -49,7 +49,7 @@ Here is the code-behind for the example. In it you should take notice at the ins
 
 #### __C#__
 
-{{region raddatafilter-features-unbound-mode_1}}
+```C#
 
 	    public UnboundModeSample()
 	    {
@@ -73,13 +73,13 @@ Here is the code-behind for the example. In it you should take notice at the ins
 	            }
 	        }
 	    }
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region raddatafilter-features-unbound-mode_2}}
+```VB.NET
 
 	    Public Sub New()
 	        InitializeComponent()
@@ -97,7 +97,7 @@ Here is the code-behind for the example. In it you should take notice at the ins
 	            Next item
 	        End If
 	    End Sub
-{{endregion}}
+```
 
 
 
@@ -105,7 +105,7 @@ Here is also the code for the __Employee__ class, used in the example.
 
 #### __C#__
 
-{{region raddatafilter-features-unbound-mode_3}}
+```C#
 
 	public class Employee
 	{
@@ -131,13 +131,13 @@ Here is also the code for the __Employee__ class, used in the example.
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
 
 
 #### __VB.NET__
 
-{{region raddatafilter-features-unbound-mode_4}}
+```VB.NET
 
 	Public Class Employee
 	    Public Sub New(name As String, companyName As String, title As String)
@@ -173,7 +173,7 @@ Here is also the code for the __Employee__ class, used in the example.
 	    End Property
 	    Private m_Title As String
 	End Class
-{{endregion}}
+```
 
 
 

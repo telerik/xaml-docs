@@ -12,9 +12,9 @@ position: 1
 
 In a logarithmic axis the value of each consecutive tick is *X* times higher than the previous value. You can control how much higher each value is with the __LogarithmBase__ property. Another important property that the logarithmic axis exposes in addition to the common properties for all [axes]({%slug radchartview-axes-axis%}) is the __ExponentStep__. The default value for the ExponentStep is __1__ and the default value for the LogarithmBase is __10__.
 
-#### __[XAML] Example 1: Setting the LogarithmBase property__
+__Example 1: Setting the LogarithmBase property__
 
-{{region xaml-radchart-axes-logarithmicaxis_0}}
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:LogarithmicAxis LogarithmBase="2" />
@@ -39,13 +39,13 @@ In a logarithmic axis the value of each consecutive tick is *X* times higher tha
 			</telerik:ScatterLineSeries.DataPoints>
 		</telerik:ScatterLineSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 1: Result from Example 1
 ![LogarithmicAxis with LogarithmBase](images/radchartview-features-axis-logarithmicaxis-logarithmbase.png)
 
-#### __[XAML] Example 2: Setting the ExponentStep property__
-{{region xaml-radchart-axes-logarithmicaxis_1}}
+__Example 2: Setting the ExponentStep property__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:LogarithmicAxis ExponentStep="2" />
@@ -70,7 +70,7 @@ In a logarithmic axis the value of each consecutive tick is *X* times higher tha
 			</telerik:ScatterLineSeries.DataPoints>
 		</telerik:ScatterLineSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 2: Result from Example 2
 ![LogarithmicAxis with ExponentStep](images/radchartview-features-axis-logarithmicaxis-exponentstep.png)

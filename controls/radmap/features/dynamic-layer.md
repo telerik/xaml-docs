@@ -29,7 +29,7 @@ The __DynamicLayer__ requires a division of the map space in regions. The divisi
 Here is an example of a __DynamicLayer__ with a set of two __ZoomGrids__:        
 
 #### __XAML__
-{{region radmap-features-dynamic-layer_0}}
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -44,7 +44,7 @@ Here is an example of a __DynamicLayer__ with a set of two __ZoomGrids__:
 	        </telerik:DynamicLayer.ZoomGridList>
 	    </telerik:DynamicLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 There are two grid lists - the one goes from zoom 3 to 6, and the other from zoom 6 to the maximum zoom. Also, the first grid has a 2 by 2 latitude/longitude division. This means that map is divided in 4 regions, and the layer only requests data for the current visible regions. The second slice is divided into 16 regions - higher zoom values require more divisions to perform well.        
 
@@ -69,7 +69,7 @@ In this method you have to implement your logic for getting the desired items. T
 >If you want to deliver your data via a WebService you can follow our [demo](https://demos.telerik.com/silverlight/#Map/DynamicLayer) with full source code.          
 
 #### __C#__
-{{region radmap-features-dynamic-layer_1}}
+```C#
 	public class MapDynamicSource : IMapDynamicSource
     {
         public void ItemsRequest(object sender, ItemsRequestEventArgs e)
@@ -114,10 +114,10 @@ In this method you have to implement your logic for getting the desired items. T
             e.CompleteItemsRequest(items);
         }
     }
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap-features-dynamic-layer_2}}
+```VB.NET
 	Public Class MapDynamicSource
     Implements IMapDynamicSource
       Public Sub ItemsRequest(ByVal sender As Object, ByVal e As ItemsRequestEventArgs)
@@ -157,28 +157,28 @@ In this method you have to implement your logic for getting the desired items. T
             e.CompleteItemsRequest(items)
       End Sub
 	End Class
-{{endregion}}
+```
 
 You can set the dynamic source to a new instance of the MapDynamicSource and create a new definition for the AzureMapProvider:        
 
 #### __C#__
-{{region radmap-features-dynamic-layer_3}}
+```C#
 	public MainPage()
 	{
 	    InitializeComponent();
         this.radMap.Provider = new AzureMapProvider() { SubscriptionKey = "Your Subscription Key" };
         this.dynamicLayer.DynamicSource = new MapDynamicSource();
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
-{{region radmap-features-dynamic-layer_4}}
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
         this.radMap.Provider = new AzureMapProvider() { SubscriptionKey = "Your Subscription Key" };
         this.dynamicLayer.DynamicSource = new MapDynamicSource();
 	End Sub
-{{endregion}}
+```
 
 The result:
 

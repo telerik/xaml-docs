@@ -28,8 +28,8 @@ For the sake of the example, each template will will have the following structur
 
 This how the four templates look like in XAML code:
 
-#### __[XAML] Example 1: Setting up the page templates__  
-{{region xaml-radbook-cover-template_0}}
+__Example 1: Setting up the page templates__  
+```XAML
 	<!--  Front Cover Template  -->
 	<DataTemplate x:Key="FrontCoverTemplate">
 	    <Border BorderBrush="Black" BorderThickness="1">
@@ -129,12 +129,12 @@ This how the four templates look like in XAML code:
 	        </Grid>
 	    </Border>
 	</DataTemplate>
-{{endregion}}
+```
 
 The next step is to create two __DataTemplateSelectors__, that will take care of picking the right template out. The first __DataTemplateSelector__ will provide template for the front cover page and every consecutive right page, while the second __DataTemplateSelector__ will provide template for the back cover page and every consecutive left page.
 
-#### __[C#] Example 2: Defining the template selectors__  
-{{region cs-radbook-cover-template_1}}
+__Example 2: Defining the template selectors__  
+```C#
 	/// <summary>
 	 /// DataTemplateSelector responsible for picking template for the back cover page and every consecutive left page.
 	 /// </summary>
@@ -195,10 +195,8 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 	   }
 	  }
 	 }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the template selectors__  
-{{region vb-radbook-cover-template_2}}
+```
+```VB.NET
 	''' <summary> '''
 	''' DataTemplateSelector responsible for picking template for the back cover page and every consecutive left page. '''
 	''' </summary> '''
@@ -283,34 +281,34 @@ The next step is to create two __DataTemplateSelectors__, that will take care of
 			End If
 		End Function
 	End Class
-{{endregion}}
+```
 
 Next, we can instantiate the two template selectors in XAML...
 
-#### __[XAML] Example 3: Adding the template selectors in XAML__ 
-{{region xaml-radbook-cover-template_3}}
+__Example 3: Adding the template selectors in XAML__ 
+```XAML
 	<local:LeftPageTemplateSelector x:Key="LeftPageTemplateSelector"
 			BackCoverTemplate="{StaticResource BackCoverTemplate}" LeftPageTemplate="{StaticResource LeftPageTemplate}" />
 	<local:RightPageTemplateSelector x:Key="RightPageTemplateSelector"
 			FrontCoverTemplate="{StaticResource FrontCoverTemplate}"
 			RightPageTemplate="{StaticResource RightPageTemplate}" />
-{{endregion}}
+```
 
 ... and pass them to the book:
 
-#### __[XAML] Example 4: Passing the template selectors to the RadBook control__ 
-{{region xaml-radbook-cover-template_4}}
+__Example 4: Passing the template selectors to the RadBook control__ 
+```XAML
 	<telerik:RadBook x:Name="book1" 
 					 FirstPagePosition="Right"
 					 LeftPageTemplateSelector="{StaticResource LeftPageTemplateSelector}"
 					 RightPageIndex="0"
 					 RightPageTemplateSelector="{StaticResource RightPageTemplateSelector}" />
-{{endregion}}
+```
 
 Finally, all we have to do is populate the book with items. In this example, the book will be bound to an array of numbers.
 
-#### __[C#] Example 5: Setting the ItemsSource of the RadBook control__ 
-{{region cs-radbook-cover-template_5}}
+__Example 5: Setting the ItemsSource of the RadBook control__ 
+```C#
 	public partial class MainPage : UserControl
 	 {
 	  public MainPage()
@@ -319,10 +317,8 @@ Finally, all we have to do is populate the book with items. In this example, the
 	   this.book1.ItemsSource = Enumerable.Range(0, 10);
 	  }
 	 }
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting the ItemsSource of the RadBook control__ 
-{{region vb-radbook-cover-template_6}}
+```
+```VB.NET
 	Partial Public Class MainPage
 		Inherits UserControl
 		Public Sub New()
@@ -330,7 +326,7 @@ Finally, all we have to do is populate the book with items. In this example, the
 			book1.ItemsSource = Enumerable.Range(0, 10)
 		End Sub
 	End Class
-{{endregion}}
+```
 
 This is how the final result looks like:
 

@@ -24,9 +24,9 @@ The string set to the __Filter__ property is parsed in a strict way. So when par
 
 To set a filter for the __RadOpenFileDialog__ dialog you can set the __Filter__ property. When this property __is not set__ the combo box __will not__ appear.
 
-#### __[C#] Example 1: Set Filter property of RadOpenFileDialog__
+__Example 1: Set Filter property of RadOpenFileDialog__
 
-{{region radfiledialogs-features-filtering-0}}
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.FileName = "Document";
 	openFileDialog.Filter = "Word Documents|\*.doc|Excel Worksheets|\*.xls;\*.xlsx|" +
@@ -38,7 +38,7 @@ To set a filter for the __RadOpenFileDialog__ dialog you can set the __Filter__ 
 							"|All Files|\*.\*";
 	openFileDialog.FilterIndex = 2;
 	openFileDialog.ShowDialog();
-{{endregion}}
+```
 
 #### __Figure 1: Filter combo box visualization in RadOpenFileDialog__
 
@@ -50,9 +50,9 @@ To set a filter for the __RadSaveFileDialog__ dialog you can set the __Filter__ 
 
 > Note that the filter property does not only filter the files in the main pane but also determines the type of the file which will be saved.
 
-#### __[C#] Example 2: Set Filter property of RadSaveFileDialog__
+__Example 2: Set Filter property of RadSaveFileDialog__
 
-{{region radfiledialogs-features-filtering-1}}
+```C#
 	RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
 	saveFileDialog.FileName = "Document";
 	saveFileDialog.Filter = "Word Documents|\*.doc|Excel Worksheets|\*.xls;\*.xlsx|" +
@@ -64,7 +64,7 @@ To set a filter for the __RadSaveFileDialog__ dialog you can set the __Filter__ 
 							"|All Files|\*.\*";
 	saveFileDialog.FilterIndex = 2;
 	saveFileDialog.ShowDialog();
-{{endregion}}
+```
 
 #### __Figure 2: Filter combo box visualization in RadSaveFileDialog__
 

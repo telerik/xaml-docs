@@ -210,23 +210,23 @@ The general naming convention is: `FluentPalette.Palette.[name]Color` is respons
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-fluent-theme-0}}
+__Setting palette colors__
+```C#
 	FluentPalette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Theme Variation
 
 You can switch between the color palettes by calling the LoadPreset method as shown below:
 
-#### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-fluent-theme-1}}	
+__Changing the color variation of the theme__
+```C#	
 	//default color variation
 	FluentPalette.LoadPreset(FluentPalette.ColorVariation.Light);  
 
 	//dark color variation
 	FluentPalette.LoadPreset(FluentPalette.ColorVariation.Dark);
-{{endregion}}
+```
 
 >important The `Dark` variation of the theme is designed with a dark background in mind and it is recommended to use such a background in your application when working with it.
 
@@ -240,23 +240,23 @@ The default font used in the theme is [Segoe UI](https://www.microsoft.com/typog
 
 >important For complex scenarios we strongly recommend setting the `FontSize` properties only __before the application is initialized__. 
 
-#### __[C#] Default FontSize and FontFamily__
-{{region cs-styling-appearance-fluent-theme-2}}
+__Default FontSize and FontFamily__
+```C#
 	FluentPalette.Palette.FontSizeS = 10;
 	FluentPalette.Palette.FontSize = 12;
 	FluentPalette.Palette.FontSizeL = 13;
 	FluentPalette.Palette.FontSizeXL = 14;
 	FluentPalette.Palette.FontFamily = new FontFamily("Segoe UI");
-{{endregion}}
+```
 
-#### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-fluent-theme-3}}
+__Changing the theme's FontSize and FontFamily__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		FluentPalette.Palette.FontSize = 13;
 		FluentPalette.Palette.FontFamily = new FontFamily("Calibri Italic");
 	}
-{{endregion}}
+```
 
 __Setting FontSize and FontFamily__
 
@@ -273,10 +273,10 @@ The `Fluent` theme also uses the `Telerik Web UI` [font glyphs]({%slug common-st
 
 The Fluent Theme exposes an easy way to modify the corner radius of many elements in your application. You can directly use the corner radius property of the palette. By default the `CornerRadius` value is __0__.
 
-#### __[C#] Changing the default corner radius__
-{{region cs-styling-appearance-fluent-theme-4}}
+__Changing the default corner radius__
+```C#
 	FluentPalette.Palette.CornerRadius = new CornerRadius(10); 	
-{{endregion}}
+```
 
 __Apperance of a RadButton control after changing the default corner radius__
 
@@ -308,20 +308,20 @@ The `MaterialAssist` static class comes from the Material theme and it is reused
 
 The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the Windows11 theme. It exposes a set of attached properties and can be used to directly modify the appearance of a specific basic control without the need to alter its control template.
 
-#### __[XAML] Declare the namespace for the helpers__
-{{region xaml-styling-appearance-fluent-theme-0}}
+__Declare the namespace for the helpers__
+```XAML
 	xmlns:mat="clr-namespace:Telerik.Windows.Controls.MaterialControls;assembly=Telerik.Windows.Controls"
 	xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
-#### __[XAML] Set RadToggleButton's visual appearance through the helpers__
-{{region xaml-styling-appearance-fluent-theme-1}}
+__Set RadToggleButton's visual appearance through the helpers__
+```XAML
     <telerik:RadToggleButton Content="RadButton" 
                              Margin="10"
                              helpers:ThemeHelper.MouseOverBrush="{telerik:FluentResource ResourceKey=AccentMouseOverBrush}"
                              helpers:ThemeHelper.PressedBrush="{telerik:FluentResource ResourceKey=AccentPressedBrush}"
                              helpers:ThemeHelper.CheckedBrush="{telerik:FluentResource ResourceKey=ValidationBrush}"/>
-{{endregion}}
+```
 
 __Appearance of the RadToggleButton in the different states__
 
@@ -345,8 +345,8 @@ __Ripple effect оn RadDropDownButton__
 
 The following code snippets show how you can integrate the FluentControl with a RadButton  
   					
-#### __[XAML] RadButton's Style declaration__
-{{region xaml-styling-appearance-fluent-theme-5}}
+__RadButton's Style declaration__
+```XAML
 	 <Style TargetType="telerik:RadButton" x:Key="custom">
         <Setter Property="Foreground" Value="{telerik:FluentResource ResourceKey=MarkerBrush}" />
         <Setter Property="Background" Value="{telerik:FluentResource ResourceKey=MainBrush}" />
@@ -382,10 +382,10 @@ The following code snippets show how you can integrate the FluentControl with a 
             </Setter.Value>
         </Setter>
     </Style>
-{{endregion}} 
+``` 
 
-#### __[XAML] RadButton's instancing__
-{{region xaml-styling-appearance-fluent-theme-6}}
+__RadButton's instancing__
+```XAML
      <StackPanel VerticalAlignment="Center">
         <telerik:RadButton VerticalAlignment="Center" Content="Ripple"
                            Tag="{x:Static mat:FluentControlEffectMode.Ripple}"
@@ -394,14 +394,14 @@ The following code snippets show how you can integrate the FluentControl with a 
                            Tag="{x:Static mat:FluentControlEffectMode.Glow}"
                            Style="{StaticResource custom}" />
     </StackPanel>
-{{endregion}}
+```
 
 __FluentControl used within a custom template applied to a RadButton__
 
 ![FluentControl used within a custom template applied to a RadButton](images/fluent-theme-light-effect.gif)![FluentControl used within a custom template applied to a RadButton in Dark variation](images/fluent-theme-dark-effect.gif)
 
-#### __[XAML] Disabling the Ripple effect__
-{{region xaml-styling-appearance-fluent-theme-7}}
+__Disabling the Ripple effect__
+```XAML
 	 <!--If you are using the NoXaml binaries you should base the style on the default one for the theme like so
         <Style TargetType="mat:FluentControl" BasedOn="{StaticResource FluentControlStyle}" > 
         -->
@@ -409,7 +409,7 @@ __FluentControl used within a custom template applied to a RadButton__
 	<Style TargetType="mat:FluentControl" >
 		<Setter Property="IsRippleEnabled" Value="False" />
 	</Style>
-{{endregion}}
+```
 
 ## Changing ScrollBarsMode
 
@@ -425,33 +425,31 @@ __ScrollBar behavior in Auto, Compact and Normal ScrollBarsMode__
 
 ![ScrollBar in Auto, Compact and Normal ScrollBarsMode](images/fluent-light-scrollbarmode.gif)
 
-#### __[C#] Setting the ScrollBarsMode property of the palette to Compact__
-{{region cs-styling-appearance-fluent-theme-5}}	
+__Setting the ScrollBarsMode property of the palette to Compact__
+```C#	
 	FluentPalette.Palette.ScrollBarsMode = Telerik.Windows.Controls.Theming.ScrollViewerScrollBarsMode.Compact;
-{{endregion}}
+```
 
 ## Changing Opacity 
 
 If you need to change the opacity of the disabled and read-only elements, you can now easily do so by using the `DisabledOpacity` and __ReadOnlyOpacity__ properties of the FluentPalette. The default values are __0.3__ and __0.5__ respectively. 
 
-#### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-fluent-theme-6}}
+__Changing the opacity__		
+```C#
 	FluentPalette.Palette.DisabledOpacity = 0.5;
 	FluentPalette.Palette.ReadOnlyOpacity = 0.4;
-{{endregion}}
-	
-#### __[VB.NET] Changing the opacity__		
-{{region vb-styling-appearance-material-theme-0}}
+```
+```VB.NET
 	FluentPalette.Palette.DisabledOpacity = 0.5
 	FluentPalette.Palette.ReadOnlyOpacity = 0.4
-{{endregion}}
+```
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `FluentPalette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region styling-appearance-material-theme-15}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -459,7 +457,7 @@ When modifying fonts, colors, or other resources from the `FluentPalette` and `S
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

@@ -33,8 +33,8 @@ The default behavior of the RadListBox control, when scrolling, is to scroll per
 
 Set the [ScrollViewer.CanContentScroll](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.scrollviewer.cancontentscroll?view=windowsdesktop-6.0) attached property, onto the __RadListBox__ control, to __False__. This will allow the user to scroll per pixels rather than per items.
 
-#### __[XAML]__
 
-{{region kb-listbox-scroll-per-pixel}}
+
+```XAML
     <telerik:RadListBox ScrollViewer.CanContentScroll="False"/>
-{{endregion}}
+```

@@ -28,18 +28,18 @@ You can use the commands outside of the RadWebCam control or modify their defaul
 
 The RadWebCamCommands can be attached to a button or another element supporting commands which is defined outside of the RadWebCam control.
 
-#### __[XAML] Use RadWebCamCommands__
-{{region radwebcam-features-commands-0}}
+__Use RadWebCamCommands__
+```XAML
 	<telerik:RadWebCam x:Name="radWebCam" />
 	<telerik:RadButton Command="telerik:RadWebCamCommands.TakeSnapshot"  CommandTarget="{Binding ElementName=radWebCam}"/>
-{{endregion}}
+```
 
 ## Modifying Command Behavior
 
 The RadWebCamCommands uses RoutedUICommands, which means that you can override their behavior as any other [RoutedUICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.routeduicommand?view=netframework-4.7.2).
 
-#### __[C#] Override the ToggleRecording command__
-{{region radwebcam-features-commands-1}}
+__Override the ToggleRecording command__
+```C#
 	public void RegisterCommand()
 	{
 		CommandBinding commandBinding = new CommandBinding(RadWebCamCommands.ToggleRecording, OnToggleRecordingExecuted, OnToggleRecordingCanExecute);
@@ -65,7 +65,7 @@ The RadWebCamCommands uses RoutedUICommands, which means that you can override t
 		}); 
 		webCam.IsRecording ^= true;
 	}
-{{endregion}}
+```
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

@@ -29,8 +29,8 @@ This article explains how to keep the selected item in the viewport when the col
 
 To keep the position of the selected item, you can handle the `CollectionChanged` event of its `Items` collection and offset the `GridViewScrollViewer` by the amount of items added/removed multiplied by the `RowHeight`.
 
-#### __[C#] Handle CollectionChanged event to keep item in viewport__
-{{region cs-kb-gridview-howto-keep-selected-item-in-view-0}}
+__Handle CollectionChanged event to keep item in viewport__
+```C#
     gridView.Items.CollectionChanged += (s, a) =>
     {
         var selectedItem = gridView.SelectedItem;
@@ -64,10 +64,8 @@ To keep the position of the selected item, you can handle the `CollectionChanged
         scrollViewer.ScrollToVerticalOffset(scrollViewer.VerticalOffset + offset);
         scrollViewer.UpdateLayout(); // required so that the value of the VerticalOffset property is updated
     };
-{{endregion}}
-
-#### __[VB.NET] Handle CollectionChanged event to keep item in viewport__
-{{region vb-kb-gridview-howto-add-context-menu-to-filteringcontrol-1}}
+```
+```VB.NET
     AddHandler gridView.Items.CollectionChanged, Sub(s, a)
 		Dim selectedItem = gridView.SelectedItem
 		Dim selectedItemIndex = gridView.Items.IndexOf(selectedItem)
@@ -95,7 +93,7 @@ To keep the position of the selected item, you can handle the `CollectionChanged
 		scrollViewer.UpdateLayout() ' required so that the value of the VerticalOffset property is updated
 	End Sub
 
-{{endregion}}
+```
 
 > A working example of this approach can be found in our [SDK Samples Browser]({%slug sdk-samples-browser%}). It is titled [Preserve Selected Item Scroll Position](https://github.com/telerik/xaml-sdk/tree/master/GridView/PreserveScrollPosition).
 

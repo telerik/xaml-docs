@@ -16,8 +16,8 @@ This article will show you how to execute an undoable action. By default the dia
 
 The constructor of the command expects a name and two actions to execute - the original action and the undo action.
 
-#### __[C#] Example 1: Executing command__
-{{region raddiagram-howto-execute-undoable-action-0}}
+__Example 1: Executing command__
+```C#
 	UndoRedoService service = radDiagram.ServiceLocator.GetService<IUndoRedoService>() as UndoRedoService;
 	UndoableDelegateCommand undoableCommand = new UndoableDelegateCommand("MyUndoableCommand",
 		(o) => {
@@ -27,7 +27,7 @@ The constructor of the command expects a name and two actions to execute - the o
 			// set the previous status
 		});
 	service.ExecuteCommand(undoableCommand);
-{{endregion}}
+```
 
 If you press __Ctrl+Z__ after the command is executed the undo action will kick in.
 	
@@ -37,8 +37,8 @@ If you press __Ctrl+Z__ after the command is executed the undo action will kick 
 
 This section contains a runnable code which demonstrates how to create an undoable action for setting a RadDiagramShape property in code-behind. After the ExecuteCommand is called you can use Ctrl+Z to call the undo action and revert the command effect.
 
-#### __[XAML] Example 2: Defining the view__
-{{region raddiagram-howto-execute-undoable-action-1}}
+__Example 2: Defining the view__
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition />
@@ -49,10 +49,10 @@ This section contains a runnable code which demonstrates how to create an undoab
 		</telerik:RadDiagram>
 		<Button Content="Rotate the shape" Grid.Row="1" Click="Button_Click" />
 	</Grid>    
-{{endregion}}
+```
 	
-#### __[C#] Example 3: Setting a property of RadDiagramShape using a command__
-{{region raddiagram-howto-execute-undoable-action-2}}
+__Example 3: Setting a property of RadDiagramShape using a command__
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 		UndoRedoService service = diagram.ServiceLocator.GetService<IUndoRedoService>() as UndoRedoService;
@@ -65,7 +65,7 @@ This section contains a runnable code which demonstrates how to create an undoab
 			});
 		service.ExecuteCommand(undoableCommand);            
 	}
-{{endregion}}
+```
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

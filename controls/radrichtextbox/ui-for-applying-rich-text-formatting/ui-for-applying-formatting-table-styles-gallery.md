@@ -43,11 +43,11 @@ The below snippet is an example of TableStylesGallery:
 
 #### __XAML__
 
-{{region radrichtextbox-radrichtextbox-ui-for-applying-formatting-table-styles-gallery_0}}
+```XAML
     <telerik:TableStylesGallery
         AssociatedRichTextBox="{Binding ElementName=radRichTextBox, Mode=OneWay}"
         BuiltInStylesVersion="Office2013"/>
-{{endregion}}
+```
 
 
 

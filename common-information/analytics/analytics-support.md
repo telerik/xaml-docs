@@ -27,8 +27,8 @@ The `ITraceMonitor` interface provides the following set of methods.
 
 The methods are invoked automatically by some of the Telerik controls (the ones supporting the trace monitor). A different method will be called based on the executed action. For all other cases (where Telerik doesn't automatically call the methods), you can call the methods manually on the corresponding action. 
 
-#### __[C#] Implementing the ITraceMonitor__
-{{region application-analytics-0}}
+__Implementing the ITraceMonitor__
+```C#
 	public class ApplicationTraceMonitor : ITraceMonitor
 	{
 		 public void TrackAtomicFeature(string feature)
@@ -63,28 +63,26 @@ The methods are invoked automatically by some of the Telerik controls (the ones 
 			 // Send the feature information to the analytics service you are using (example: Google Analytics or similar)
 		 }
 	}
-{{endregion}}
+```
 
 To enable the implemented trace monitor, set the static `TraceMonitor.AnalyticsMonitor` property.
 
-#### __[C#] Setting the TraceMonitor.AnalyticsMonitor__  
-{{region application-analytics-1}}
+__Setting the TraceMonitor.AnalyticsMonitor__  
+```C#
 	public MainWindow()
 	{
 		TraceMonitor.AnalyticsMonitor = new ApplicationTraceMonitor();
 		InitializeComponent();
 	}
-{{endregion}}
-
-#### __[VB.NET] Setting the TraceMonitor.AnalyticsMonitor__  
-{{region vb-application-analytics-2}}
+```
+```VB.NET
 	TraceMonitor.AnalyticsMonitor = New MyMonitor()
-{{endregion}}
+```
 
 To __include a control in the analytics tracking__, set the `Analytics.Name` attached property on it.
 
-#### __[XAML] Setting Analytics.Name property__
-{{region application-analytics-3}}
+__Setting Analytics.Name property__
+```XAML
 	<StackPanel Orientation="Horizontal"> 
 	    <telerik:RadComboBox Width="200" telerik:Analytics.Name="ComboBoxSelection"> 
 	        <telerik:RadComboBoxItem Content="WinUI" /> 
@@ -94,15 +92,15 @@ To __include a control in the analytics tracking__, set the `Analytics.Name` att
 	    </telerik:RadComboBox> 
 	    <telerik:RadButton telerik:Analytics.Name="SelectButton" Content="Select" /> 
 	</StackPanel>
-{{endregion}}
+```
 
 In the example above, if you click on the `RadButton` the `TrackAtomicFeature` method of the `ITraceMonitor` will be invoked. The `feature` string will be "SelectButton.Click". Opening and closing the `RadComboBox` will call the `TrackAtomicFeature` method with the `feature` set to "ComboBoxSelection.DropDownOpened" and "ComboBoxSelection.DropDownClosed". 
 The different Telerik controls will report different actions and may use the other methods of the monitor.
 
 To add a feature tracking outside of the features tracked by default, you can manually call the methods of the `ITraceMonitor`.
 
-#### __[C#] Tracking features manually__
-{{region application-analytics-4}}
+__Tracking features manually__
+```C#
 	private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
 	{
 		string featureContent = "WPFApplication.Exception";
@@ -114,7 +112,7 @@ To add a feature tracking outside of the features tracked by default, you can ma
 		string featureContent = "LoginPasswordBox.PasswordChanged";
 		TraceMonitor.AnalyticsMonitor.TrackAtomicFeature(featureContent);
 	}
-{{endregion}}
+```
 
 ## Traceable Features in Telerik Controls
 

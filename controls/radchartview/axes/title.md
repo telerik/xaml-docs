@@ -14,8 +14,8 @@ The chart axes allows you to display a title aligned next to the axis line.
 
 To show the title, set the `Title` property of the axis element (`LinearAxis`, `CategoricalAxis`, etc.).
 
-#### __[XAML] Setting the axis title to a string value__
-{{region radchartview-axes-title-0}}
+__Setting the axis title to a string value__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>		 
 			<telerik:CategoricalAxis Title="Month"/>
@@ -33,12 +33,12 @@ To show the title, set the `Title` property of the axis element (`LinearAxis`, `
 			 </telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![RadCartesianChart with axis Title assigned to a string value](images/radchartview-axes-title-0.png)
 
-#### __[XAML] Setting the axis title to a visual element__
-{{region radchartview-axes-title-1}}
+__Setting the axis title to a visual element__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>		 
 			<telerik:CategoricalAxis>
@@ -68,14 +68,14 @@ To show the title, set the `Title` property of the axis element (`LinearAxis`, `
 			 </telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![RadCartesianChart with axis Title assigned to visual elements](images/radchartview-axes-title-1.png)
 
 The axis can be customized also through the `TitleTemplate` property. 
 
-#### __[XAML] Setting Axis TitleTemplate__
-{{region radchartview-axes-title-2}}
+__Setting Axis TitleTemplate__
+```XAML
 	<telerik:RadCartesianChart >
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis Title="Month">
@@ -109,7 +109,7 @@ The axis can be customized also through the `TitleTemplate` property.
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 The data context in the `DataTemplate` will be the value of the `Title` property.
 

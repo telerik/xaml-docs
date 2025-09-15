@@ -29,10 +29,10 @@ The purpose of this help article is to show you the key properties of the `RadCa
 
 The `DisplayDate` property allows you to set the current visible date. This is the date which will be displayed when you show the calendar.
 
-#### __[XAML] Setting DisplayDate__
-{{region xaml-radcalendar-keyproperties-0}}
+__Setting DisplayDate__
+```XAML
 	<telerik:RadCalendar DisplayDate="4/1/2018"/>
-{{endregion}}
+```
 
 > DisplayDate is different from SelectedDate. The DisplayDate points out just the default month and year visible when the calendar first pops up.
 
@@ -54,10 +54,10 @@ You can apply a string format to the header of the different views through the f
 * `YearViewHeaderFormat`&mdash;Gets or sets the format for the header of the year view of the calendar.
 * `CenturyViewHeaderFormat`&mdash;Gets or sets the format for the header of the century view of the calendar.
 
-#### __[XAML] Setting MonthViewHeaderFormat__
-{{region xaml-radcalendar-keyproperties-1}}
+__Setting MonthViewHeaderFormat__
+```XAML
 	<telerik:RadCalendar MonthViewHeaderFormat="MMMM" />
-{{endregion}}
+```
 
 > Check out the [Custom date and time format strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) article to learn about the possible format strings. 
 
@@ -70,10 +70,10 @@ You can apply a string format to the header of the different views through the f
 
 The `IsTodayHighlighted` property allows you to control if the today's date is highlighted. Its default value is __true__. Setting this property to __false__ will remove the highlight border that is displayed on today's date.
 
-#### __[XAML] Removing the highlight of today's date__
-{{region xaml-radcalendar-keyproperties-2}}
+__Removing the highlight of today's date__
+```XAML
 	<telerik:RadCalendar IsTodayHighlighted="False"/>
-{{endregion}}
+```
 
 ## See Also
 * [Selection Modes]({%slug radcalendar-selection-modes%})

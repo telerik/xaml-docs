@@ -33,8 +33,8 @@ How to close a RadWindow Confirm dialog in MVVM scenario using custom button.
 3. Bind the command property of the button to your custom command using RelativeSource binding. 
 4. To close the dialog in the executed method you need to pass the RadWindow to the CommandParameter using the same approach with RelativeSource binding. 
 
-#### __[XAML]__
-{{region kb-window-close-radwindow-dialog-in-mvvm-0}}
+
+```XAML
 	<Style TargetType="telerik:RadConfirm">
 	    <Setter Property="IsTabStop" Value="False"/>
 	    <Setter Property="MinWidth" Value="275"/>
@@ -49,12 +49,12 @@ How to close a RadWindow Confirm dialog in MVVM scenario using custom button.
 		</Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 The final step is to call the executed method of the window.
 
-#### __[C#]__
-{{region kb-window-close-radwindow-dialog-in-mvvm-1}}
+
+```C#
 	public class MainViewModel
 	{
 		public ICommand MyCommand { get; set; }
@@ -69,4 +69,4 @@ The final step is to call the executed method of the window.
 			window.Close();
 		}
 	}
-{{endregion}}
+```

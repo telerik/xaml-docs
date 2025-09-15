@@ -14,7 +14,7 @@ If you bind __RadDataPager.Source__ to __RadDataServiceDataSource.DataView__, yo
 
 #### __XAML__
 
-{{region raddataservicedatasource-paging-paging-through-raddatapager_0}}
+```XAML
 
 	<Grid x:Name="LayoutRoot" Background="White">
 	 <Grid.RowDefinitions>
@@ -31,7 +31,7 @@ If you bind __RadDataPager.Source__ to __RadDataServiceDataSource.DataView__, yo
 	     ShowGroupPanel="False"/>  
 	 <telerik:RadDataPager Grid.Row="1" Source="{Binding DataView, ElementName=customersDataSource}" PageSize="10"/>
 	</Grid>
-{{endregion}}
+```
 
 In this case on running the application the following will be visualized:
 

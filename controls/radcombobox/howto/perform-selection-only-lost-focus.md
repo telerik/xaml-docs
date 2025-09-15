@@ -14,15 +14,15 @@ By default, when an item is matched by the text entered in an editable RadComboB
 
 >important The property affects only an editable RadComboBox with single selection.
 
-#### __[XAML] Example 1: Set the UpdateSelectionOnLostFocus property__
+__Example 1: Set the UpdateSelectionOnLostFocus property__
 
-{{region xaml-radcombobox-how-to-perform-selection-only-lost-focus_0}}
+```XAML
 	<telerik:RadComboBox IsEditable="True" UpdateSelectionOnLostFocus="True">
 		<telerik:RadComboBoxItem Content="Item 1" />
 		<telerik:RadComboBoxItem Content="Item 2" />
 		<telerik:RadComboBoxItem Content="Item 3" />
 	</telerik:RadComboBox>
-{{endregion}}
+```
 
 When the __UpdateSelectionOnLostFocus__ property is set to true, you have to take into account the following scenarios when the control loses focus or the __Enter__ key is pressed:
 

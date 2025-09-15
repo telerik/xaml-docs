@@ -23,7 +23,7 @@ Tick marks allow displaying value intervals along the gauge scale. There are 3 t
 There are 2 alternative ways to set number of the major ticks along the scale. This first one is using MajorTicks property. It sets number of the of the value intervals along the entire length of the scale bar:
 
 #### __XAML__
-{{region radial-scale-tick-marks_0}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100" MajorTicks="10">
 	        <telerik:RadialScale.Indicators>
@@ -32,14 +32,14 @@ There are 2 alternative ways to set number of the major ticks along the scale. T
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge RadialScale Number of Ticks](images/RadialScale10MajorTicks.png)
 
 The second one uses MajorTickStep property. It sets length of the single tick interval in the scale units:
 
 #### __XAML__
-{{region radial-scale-tick-marks_1}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100" MajorTickStep="20">
 	        <telerik:RadialScale.Indicators>
@@ -47,7 +47,7 @@ The second one uses MajorTickStep property. It sets length of the single tick in
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge RadialScale Tick Step](images/RadialScale20MajorTickStep.png)
 
@@ -58,7 +58,7 @@ Sometimes desirable length of the major tick (MajorTickStep) creates situations 
 In this situation we can use ShowLastLabel property to indicate whether the tick mark at the end position should be shown:
 
 #### __XAML__
-{{region radial-scale-tick-marks_2}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="102"
 	                         MajorTickStep="10" ShowLastLabel="False">
@@ -67,7 +67,7 @@ In this situation we can use ShowLastLabel property to indicate whether the tick
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge RadialScale Hide Last Tick](images/RadialScaleNoEndTickMark.png)
 
@@ -76,7 +76,7 @@ By default, the major tick marks start from the minimum scale value and move clo
 To change the layout of the tick marks you may use their correspondent properties:
 
 #### __XAML__
-{{region radial-scale-tick-marks_3}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"
 	                     StartTickOffset="10" EndTickOffset="-10"
@@ -89,7 +89,7 @@ To change the layout of the tick marks you may use their correspondent propertie
 	                     MinorTickRelativeHeight="0.05*">
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge RadialScale Tick Mark Offset](images/RadiaScaleTickMarkOffset.png)
 
@@ -98,7 +98,7 @@ The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it
 ![{{ site.framework_name }} RadGauge RadialScale Use Range Color](images/RadialScaleTickRangeColor.png)
 
 #### __XAML__
-{{region radial-scale-tick-marks_4}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
 	                MajorTickLocation="OverCenter"
@@ -118,7 +118,7 @@ The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it
 	        </telerik:RadialScale.Ranges>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ## Custom Tick Marks
 
@@ -127,7 +127,7 @@ The RadGauge control provides very flexible standard tick marks and labels, but 
 The additional tick marks are defined in the CustomItems collection of the RadialScale:
 
 #### __XAML__
-{{region radial-scale-tick-marks_5}}
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 		<telerik:RadRadialGauge.Resources> 
 			<Style x:Key="CustomTick" TargetType="Ellipse">
@@ -160,7 +160,7 @@ The additional tick marks are defined in the CustomItems collection of the Radia
 			</telerik:RadialScale.CustomItems>
 		</telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 ![Radial Scale Custom Tick Marks.png](images/RadialScaleCustomTickMarks.png)
 

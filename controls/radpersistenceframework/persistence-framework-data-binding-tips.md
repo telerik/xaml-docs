@@ -26,8 +26,8 @@ In some situations, the serialized data bound properties could get overridden by
 
 To avoid this, make sure that the load method is called after the data bindings are evaluated. For example, you can do this in the **Loaded** event handler of the view.
 
-#### __[C#] Example 1: Load the persisted UI in the Loaded event handler__
-{{region persistence-framework-data-binding-tips}}
+__Example 1: Load the persisted UI in the Loaded event handler__
+```C#
 	public class MyUserControl : UserControl
 	{
 		public MyUserControl()
@@ -42,7 +42,7 @@ To avoid this, make sure that the load method is called after the data bindings 
 			manager.Load(myControl, mySavedStream);
 		}
 	}
-{{endregion}}
+```
 
 ## See Also
 * [Getting Started]({%slug persistence-framework-getting-started%})

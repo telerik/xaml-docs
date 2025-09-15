@@ -16,8 +16,8 @@ To style the RadDateTimePicker's calendar, define a __Style__ object __targeting
 
 If you use the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls, you will need to extract the whole style (including the ControlTemplate) of the RadCalendar control used in RadDateTimePicker. The original style can be found in the [Telerik.Windows.Controls.Input.xaml]({%slug styling-apperance-editing-control-templates%}) file. In the NoXaml scenario, you do not need this. Instead, you should base the custom Style on the default __RadCalendarStyle__ resource.
 
-#### __[XAML] Example 1: Hiding the week names from the calendar using the CalendarStyle property__  
-{{region xaml-raddatetimepicker-styling-calendar-0}}
+__Example 1: Hiding the week names from the calendar using the CalendarStyle property__  
+```XAML
 	<Window.Resources>
         <!-- If you are using the Xaml binaries, you do not have to set the BasedOn attribute-->
         <Style x:Key="CalendarStyle" TargetType="telerik:RadCalendar" BasedOn="{StaticResource RadCalendarStyle}">
@@ -27,15 +27,15 @@ If you use the [Xaml]({%slug xaml-vs-noxaml%}) version of the Telerik dlls, you 
     <Grid>
         <telerik:RadDateTimePicker VerticalAlignment="Center" HorizontalAlignment="Center" CalendarStyle="{StaticResource CalendarStyle}" />
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadCalendar with week names removed](images/DateTimePicker_StylingTheCalendar.png)
 
 The RadCalendar control consists of CalendarButton controls representing the days, months, weeks, etc. Those can be customized via the __DayButtonStyle__, __MonthButtonStyle__, __YearButtonStyle__ and __DecadeButtonStyle__ properties of RadCalendar. The data context passed to the CalendarButton controls is an object of type [CalendarButtonContent](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.calendar.calendarbuttoncontent) which contains information about the button type (day, week, month, etc.), date, selection state, and others.
 
-#### __[XAML] Example 2: Setting a tooltip for the days in the calendar__  
-{{region xaml-raddatetimepicker-styling-calendar-1}}
+__Example 2: Setting a tooltip for the days in the calendar__  
+```XAML
 	<telerik:RadDatePicker>
 		<telerik:RadDatePicker.CalendarStyle>
 			<Style TargetType="telerik:RadCalendar">
@@ -49,7 +49,7 @@ The RadCalendar control consists of CalendarButton controls representing the day
 			</Style>
 		</telerik:RadDatePicker.CalendarStyle>
 	</telerik:RadDatePicker>
-{{endregion}}
+```
 
 ## See Also  
  * [Styles and Templates - Overview]({%slug raddatetimepicker-styling-overview%})  

@@ -16,8 +16,8 @@ This article will demonstrate how to create a style targeting the RadDataForm co
 
 In order to style a __RadDataForm__, you can create an implicit style targeting __RadDataForm__. Alternatively, you can create an explicit style by giving it an "x:Key" and set it to the __Style__ property of the control. 
 
-#### __[XAML] Example 1: Creating an implicit style targeting RadDataForm__
-{{region xaml-raddatafor-styles-and-templates-styling-raddataform_0}}
+__Example 1: Creating an implicit style targeting RadDataForm__
+```XAML
 	<Window.Resources>
         <!-- If you are using the NoXaml binaries, you should base the style on the default one like so:-->
         <!--<Style TargetType="telerik:RadDataForm" BasedOn="{StaticResource RadDataFormStyle}">-->
@@ -30,7 +30,7 @@ In order to style a __RadDataForm__, you can create an implicit style targeting 
     <Grid>              
         <telerik:RadDataForm AutoGenerateFields="True" />
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadDataForm with custom style in the Office2016 theme__
 ![RadDataForm with custom style in the Office2016 theme](images/RadDataForm_Style.png)

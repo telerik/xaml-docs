@@ -22,14 +22,14 @@ The dialog can be opened from the dialog launcher button at the bottom right cor
 
 The dialog can be shown by executing the `ShowNotesDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-footnotes-endnotes-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowNotesDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowNotesDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-footnotes-endnotes-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowNotesDialog();
-{{endregion}}
+```

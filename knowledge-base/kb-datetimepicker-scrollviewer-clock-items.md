@@ -33,8 +33,8 @@ How to show a vertical scrollbar in the time section of the drop down.
 3. Create a Style targeting RadClock and define a Setter that sets the Template property to the customized ControlTemplate.
 4. Apply the Style via the __ClockStyle property__ of RadDateTimePicker.
 
-#### __[XAML]__
-{{region kb-datetimepicker-show-scrollviewer-for-the-clock-items-0}}
+
+```XAML
 	<Window.Resources>
 		<ControlTemplate TargetType="{x:Type telerik:RadClock}" x:Key="CustomClockTemplate">	  
 			<Grid>
@@ -76,7 +76,7 @@ How to show a vertical scrollbar in the time section of the drop down.
             </telerik:RadDateTimePicker.ClockStyle>
         </telerik:RadDateTimePicker>
     </Grid>    
-{{endregion}}
+```
 
 > This template is extracted from the OfficeBlack [theme]({%slug common-styling-appearance-available-themes%}).
 

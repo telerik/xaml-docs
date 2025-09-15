@@ -20,8 +20,8 @@ This article explains how you can modify the default header and footer templates
 
 The following examples demonstrates how to set the `GroupHeaderTemplate` for a `GridViewDataColumn`.
 
-#### __[XAML] Setting the GridViewDataColumn GroupHeaderTemplate__
-{{region xaml-gridview-grouping-how-to-modify-grouptemplates_0}}
+__Setting the GridViewDataColumn GroupHeaderTemplate__
+```XAML
 	<telerik:GridViewDataColumn.GroupHeaderTemplate>
 	    <DataTemplate>
 	        <StackPanel>
@@ -31,12 +31,12 @@ The following examples demonstrates how to set the `GroupHeaderTemplate` for a `
 	        </StackPanel>
 	    </DataTemplate>
 	</telerik:GridViewDataColumn.GroupHeaderTemplate>
-{{endregion}}
+```
 
 You could do the same for all the columns by defining a `GroupHeaderTemplate` for the `RadGridView`.
 
-#### __[XAML] Setting the RadGridView GroupHeaderTemplate__
-{{region xaml-gridview-grouping-how-to-modify-grouptemplates_1}}
+__Setting the RadGridView GroupHeaderTemplate__
+```XAML
 	<telerik:RadGridView.GroupHeaderTemplate>
 	    <DataTemplate>
 	        <StackPanel>
@@ -46,18 +46,18 @@ You could do the same for all the columns by defining a `GroupHeaderTemplate` fo
 	        </StackPanel>
 	    </DataTemplate>
 	</telerik:RadGridView.GroupHeaderTemplate>
-{{endregion}}
+```
 
 If you have any AggregateFunctions defined and you do not want the default aggregate reasults to show after predefining the GroupHeaderTemplate, you can hide them as demonstrated below.
 
-#### __[XAML] Hiding the aggregates in the group row__
-{{region xaml-gridview-grouping-how-to-modify-grouptemplates_2}}
+__Hiding the aggregates in the group row__
+```XAML
 	<!--If you are using the NoXaml binaries, you should based the style on the default one like so-->
 	<!-- <Style TargetType="telerik:GroupHeaderRow" BasedOn="{StaticResource GroupHeaderRowStyle}">-->
 	<Style TargetType="telerik:GroupHeaderRow">
 		<Setter Property="ShowHeaderAggregates" Value="False" />
 	</Style>
-{{endregion}}
+```
 
 >The `GroupHeaderRow` element is the default grouping visual element when the `GroupRenderMode` of the `RadGridView` is set to __Flat__. You can learn more about this in the [Grouping Modes]({%slug gridview-grouping-groupingmodes%}) article.
 
@@ -65,8 +65,8 @@ If you have any AggregateFunctions defined and you do not want the default aggre
 
 You can override the visual representation of the group footers by setting the `GroupFooterTemplate` of the GridViewDataColumn.
 
-#### __[XAML] Setting the GridViewDataColumn GroupFooterTemplate__
-{{region xaml-gridview-grouping-how-to-modify-grouptemplates_3}}
+__Setting the GridViewDataColumn GroupFooterTemplate__
+```XAML
     <telerik:GridViewDataColumn.GroupFooterTemplate>
        <DataTemplate>
           <telerik:AggregateResultsList ItemsSource="{Binding}">
@@ -82,7 +82,7 @@ You can override the visual representation of the group footers by setting the `
           </telerik:AggregateResultsList>
       </DataTemplate>
     </telerik:GridViewDataColumn.GroupFooterTemplate>
-{{endregion}}
+```
 
 >tip You can check the implementation of {% if site.site_name == 'Silverlight' %}the [Totals demo](https://demos.telerik.com/silverlight/#GridView/Totals){% endif %}{% if site.site_name == 'WPF' %}__Totals__ RadGridView example from the [WPF Demos](https://demos.telerik.com/wpf/){% endif %}. 
 
@@ -90,9 +90,9 @@ You can override the visual representation of the group footers by setting the `
 
 RadGridView exposes the `GroupHeaderRowMinHeight` property that allows you to specify the minimum height for the `GroupHeaderRow` element. This property will be taken into account only when the `GroupRenderMode` property of RadGridView is set to __Flat__.
 
-#### __[XAML] Setting the GroupHeaderRowMinHeight property__
-{{region xaml-gridview-grouping-how-to-modify-grouptemplates_4}}
+__Setting the GroupHeaderRowMinHeight property__
+```XAML
 	<telerik:RadGridView GroupHeaderRowMinHeight="20"/>
-{{endregion}}
+```
 
 >If you want to style the GroupHeaderRow further, you can check out [this article]({%slug gridview-styling-group-row%}).

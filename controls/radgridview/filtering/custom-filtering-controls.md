@@ -22,7 +22,7 @@ In order to be able to communicate with RadGridView, your custom filtering contr
 
 #### __C#__
 
-{{region cs-gridview-filtering-custom-filtering-controls_0}}
+```C#
 	/// <summary>
 	/// Provides functionality required by all filtering components.
 	/// </summary>
@@ -39,12 +39,12 @@ In order to be able to communicate with RadGridView, your custom filtering contr
 	    /// </summary>
 	    bool IsActive { get; set; }
 	}
-{{endregion}}
+```
 
 
 #### __VB.NET__
 
-{{region vb-gridview-filtering-custom-filtering-controls_0}}
+```VB.NET
 	''' <summary>
 	''' Provides functionality required by all filtering components.
 	''' </summary>
@@ -60,7 +60,7 @@ In order to be able to communicate with RadGridView, your custom filtering contr
 	    ''' </summary>
 	    Property IsActive() As Boolean
 	End Interface
-{{endregion}}
+```
 
 
 The Prepare method is called each time the control is about to be shown (when the user clicks the funnel in the header cell). If you do not need to change anything between two consecutive times when the filtering UI is shown, there wouldn’t be much inside this method’s body. The IsActive property provides means of “filling up” the funnel when the column is filtered. Along with the IsActive CLR property that is part of the interface, you will need to add an IsActive DependencyProperty to back the CLR property.
@@ -71,7 +71,7 @@ Here is an example of a custom filtering control that displays two date time pic
 
 #### __XAML__
 
-{{region xaml-gridview-filtering-custom-filtering-controls_1}}
+```XAML
 	<Border x:Name="LayoutRoot" BorderThickness="1" BorderBrush="#FF8A929E" Padding="5" Background="#FFDFE2E5">
 	  <Grid>
 	    <Grid.ColumnDefinitions>
@@ -93,11 +93,11 @@ Here is an example of a custom filtering control that displays two date time pic
 	    </StackPanel>
 	  </Grid>
 	</Border>
-{{endregion}}
+```
 
 #### __C#__
 
-{{region cs-gridview-filtering-custom-filtering-controls_1}}
+```C#
 	/// <summary>
 	/// FromDateToDateFilterControl
 	/// </summary>
@@ -216,11 +216,11 @@ Here is an example of a custom filtering control that displays two date time pic
 	        this.IsActive = false;
 	    }
 	}
-{{endregion}}
+```
 
 #### __VB.NET__
 
-{{region vb-gridview-filtering-custom-filtering-controls_1}}
+```VB.NET
 	''' <summary>
 	''' FromDateToDateFilterControl
 	''' </summary>
@@ -334,13 +334,13 @@ Here is an example of a custom filtering control that displays two date time pic
 	        Me.IsActive = False
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 Finally, you have to tell the column to use this custom filtering control like this:
 
 #### __XAML__
 
-{{region xaml-gridview-filtering-custom-filtering-controls_2}}
+```XAML
 	<telerik:RadGridView Name="radGridView" AutoGenerateColumns="False">
 	  <telerik:RadGridView.Columns>	    
 	    <telerik:GridViewDataColumn DataMemberBinding="{Binding Id}"/>
@@ -351,7 +351,7 @@ Finally, you have to tell the column to use this custom filtering control like t
 	    </telerik:GridViewDataColumn>
 	  </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 >In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), please refer to the [Styling custom controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) section.
 

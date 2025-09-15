@@ -32,7 +32,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __C#__
 
-	{{region cs-radganttview-exportingsupport-0}}
+	```C#
 		public class GanttPaginator : DocumentPaginator
 		{
 		    private IList<BitmapSource> exportImages;
@@ -80,13 +80,13 @@ The next example will demonstrate how to export the contents of the RadGanttView
 		        get { return null; }
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Next we need to create a __PrintingService__ class that will handle the printing functionality with the use of a PrintDialog:
 
 	#### __C#__
 
-	{{region cs-radganttview-exportingsupport-1}}
+	```C#
 		public static class PrintingService
 		{
 		    public static void Print(RadGanttView ganttView)
@@ -106,13 +106,13 @@ The next example will demonstrate how to export the contents of the RadGanttView
 		        }
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Finally we need to create a button that will make use of the newly created __PrintingService__ class:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-exportingsupport-0}}
+	```XAML
 		<Grid DataContext="{StaticResource ViewModel}">
 		
 		    <!--...-->
@@ -123,16 +123,16 @@ The next example will demonstrate how to export the contents of the RadGanttView
 		        <!--...-->
 		    </telerik:RadGanttView>
 		</Grid>
-	{{endregion}}
+	```
 
 	#### __C#__
 
-	{{region cs-radganttview-exportingsupport-2}}
+	```C#
 		private void PrintButtonClick(object sender, RoutedEventArgs e)
 		{
 		    PrintingService.Print(this.GanttView);
 		}
-	{{endregion}}
+	```
 
 {% endif %}
 {% if site.site_name == 'Silverlight' %}
@@ -145,7 +145,7 @@ The next example will demonstrate how to export the contents of the RadGanttView
 
 	#### __C#__
 
-	{{region cs-radganttview-exportingsupport-3}}
+	```C#
 		public static class PrintingService
 		{
 		    public static void Print(RadGanttView ganttView)
@@ -189,13 +189,13 @@ The next example will demonstrate how to export the contents of the RadGanttView
 		        return image;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Finally we need to create a button that will make use of the newly created PrintingService class:
 
 	#### __XAML__
 
-	{{region xaml-radganttview-exportingsupport-0}}
+	```XAML
 		<Grid DataContext="{StaticResource ViewModel}">
 		
 		    <!--...-->
@@ -206,16 +206,16 @@ The next example will demonstrate how to export the contents of the RadGanttView
 		        <!--...-->
 		    </telerik:RadGanttView>
 		</Grid>
-	{{endregion}}
+	```
 
 	#### __C#__
 
-	{{region cs-radganttview-exportingsupport-2}}
+	```C#
 		private void PrintButtonClick(object sender, RoutedEventArgs e)
 		{
 		    PrintingService.Print(this.GanttView);
 		}
-	{{endregion}}
+	```
 
 {% endif %}
 

@@ -1,0 +1,4 @@
+apiRules:
+- exclude:
+    type: Method
+    uidRegex: ^System\.Object\..*$

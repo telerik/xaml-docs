@@ -25,6 +25,10 @@ liquid-output-delimiter-right: "}}"
 liquid:
   framework_name: "WPF"
   site_name: "WPF"
+  
+excluded-files:
+- "**/README.md"
+- "**/copyright.md"
 
 meta:
     ai-assistant:
@@ -32,6 +36,9 @@ meta:
         position: 7
     knowledge-base:
         position: 10
+        res_type: kb
+        relativeUrl: /knowledge-base
+        hideChildren: true
     controls/radaiprompt:
         title: RadAIPrompt
     controls/radsvgimage:
@@ -1062,6 +1069,10 @@ meta:
         position: 11
         
 redirects:
+-
+    from: "^/?$"
+    to: "/introduction"
+    type: Permanent
 -
     from: "^/devtools/(.*)/api/html/(.*)XamlGeneratedNamespace_([a-zA-Z]*)$"
     to: "/devtools/$1/api/xamlgeneratednamespace.$3"

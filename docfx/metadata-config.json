@@ -1,0 +1,62 @@
+{
+  "metadata": [{
+            "src": [
+                {
+                    "files": [
+						"src/Telerik.Pivot.Core.dll",
+						"src/Telerik.Pivot.DataProviders.Adomd.dll",
+						"src/Telerik.Pivot.DataProviders.Queryable.dll",
+						"src/Telerik.Pivot.DataProviders.Xmla.dll",
+						"src/Telerik.Windows.Cloud.Controls.dll",
+						"src/Telerik.Windows.Cloud.dll",
+						"src/Telerik.Windows.Controls.Chart.Direct2D.dll",
+						"src/Telerik.Windows.Controls.Chart.dll",
+						"src/Telerik.Windows.Controls.Chart.Skia.dll",
+						"src/Telerik.Windows.Controls.Charting.dll",
+						"src/Telerik.Windows.Controls.ConversationalUI.dll",
+						"src/Telerik.Windows.Controls.Data.dll",
+						"src/Telerik.Windows.Controls.DataServices.dll",
+						"src/Telerik.Windows.Controls.DataVisualization.dll",
+						"src/Telerik.Windows.Controls.Diagrams.dll",
+						"src/Telerik.Windows.Controls.Diagrams.Extensions.dll",
+						"src/Telerik.Windows.Controls.Diagrams.Ribbon.dll",
+						"src/Telerik.Windows.Controls.dll",
+						"src/Telerik.Windows.Controls.Docking.dll",
+						"src/Telerik.Windows.Controls.EntityFrameworkCore.dll",
+						"src/Telerik.Windows.Controls.Expressions.dll",
+						"src/Telerik.Windows.Controls.FileDialogs.dll",
+						"src/Telerik.Windows.Controls.FixedDocumentViewers.dll",
+						"src/Telerik.Windows.Controls.FixedDocumentViewersUI.dll",
+						"src/Telerik.Windows.Controls.GanttView.dll",
+						"src/Telerik.Windows.Controls.GridView.dll",
+						"src/Telerik.Windows.Controls.GridView.Export.dll",
+						"src/Telerik.Windows.Controls.GridView.SpreadsheetStreamingExport.dll",
+						"src/Telerik.Windows.Controls.ImageEditor.dll",
+						"src/Telerik.Windows.Controls.Input.dll",
+						"src/Telerik.Windows.Controls.Media.dll",
+						"src/Telerik.Windows.Controls.Navigation.dll",
+						"src/Telerik.Windows.Controls.Pivot.dll",
+						"src/Telerik.Windows.Controls.PivotFieldList.dll",
+						"src/Telerik.Windows.Controls.RibbonView.dll",
+						"src/Telerik.Windows.Controls.RichTextBox.dll",
+						"src/Telerik.Windows.Controls.ScheduleView.dll",
+						"src/Telerik.Windows.Controls.Spreadsheet.dll",
+						"src/Telerik.Windows.Controls.SpreadsheetUI.dll",
+						"src/Telerik.Windows.Controls.SyntaxEditor.dll",
+						"src/Telerik.Windows.Controls.VirtualGrid.dll",
+						"src/Telerik.Windows.Data.dll",
+						"src/Telerik.Windows.Diagrams.Core.dll",
+						"src/Telerik.Windows.Documents.Proofing.DataGrid.dll",
+						"src/Telerik.Windows.Documents.Proofing.dll",
+						"src/Telerik.Windows.Documents.Proofing.RadGridView.dll",
+						"src/Telerik.Windows.MediaFoundation.dll",
+						"src/Telerik.Windows.PersistenceFramework.dll",
+						"src/Telerik.Windows.Scheduling.Core.dll",
+						"src/Telerik.Windows.SyntaxEditor.Core.dll"						
+                    ]
+                }
+            ],
+            "dest": "metadata",
+            "filter": "filterConfig.yml"
+  }]
+}

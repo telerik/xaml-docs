@@ -12,7 +12,7 @@ position: 11
 
 The `RadComboBox` control provides the ability to define additional content that can be positioned relative to the [clear selection button]({%slug radcombobox-features-clearselectionbutton%}) and the drop-down items.
 
-## AdditionalContent And AdditionalContentTemplate
+## Setting Additional Content
 
 To utilize this functionality, you can set the `AdditionalContent` property of RadComboBox, which is of the type of `object` and you can assign a value of any type. To further customize it, you can use the `AdditionalContentTemplate` property and specify a `DataTemplate` for it.
 
@@ -39,7 +39,7 @@ __RadComboBox with additional content__
 
 ![WPF RadComboBox with additional content](images/radcombobox-additional-content-0.png)
 
-## AdditionalContentPosition
+## Setting the Position of the Additional Content
 
 You can position the additional content area relevant to the clear selection button and the drop-down items. To do so, you can utilize the `AdditionalContentPosition` property. It is an enumeration of the type of `AdditionalContentPosition` and provides the following options:
 

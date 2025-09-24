@@ -20,7 +20,7 @@ When a solution containing a Telerik UI for WPF project is loaded in Visual Stud
 
 Clicking the __Update Now__ button starts the Latest Version Acquirer tool, prompting for your Telerik credentials and the type of license you own in its first page. If you do not have a [www.telerik.com](http://www.telerik.com/) account, you can create one through the __Create an account for free__ link.
 
-![extensions acquirertool wpf 2](images/extensions_acquirertool_wpf_2.png){% endif %}
+![extensions acquirertool wpf 2](images/extensions_acquirertool_wpf_2.png)
 
 You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistance is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
 

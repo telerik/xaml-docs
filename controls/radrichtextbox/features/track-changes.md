@@ -27,7 +27,7 @@ __Track Changes__ is a way for __RadRichTextBox__ to keep track of the changes y
 You can activate change tracking tgrough the __IsTrackChangesEnabled__ property of __RadRichTextBox__:
         
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.IsTrackChangesEnabled = true;
@@ -50,7 +50,7 @@ When change tracking is enabled all changes made in the document will be tracked
 As you can see tracked changes are visualized inside the rich text box with different colors. You can modify these colors by using the __TrackChangesOptions__ property of __RadRichTextBox__. Here is for example how to customize the look of the tracked changes so that insertions are shown in green, deletions are shown in underlined orange and the vertical line indicating changes is red:
         
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.TrackChangesOptions.Insert.Decoration = RevisionDecoration.ColorOnly;
@@ -72,7 +72,7 @@ The result is:
 
 All changes made while track changes are enabled are made on behalf of the current user. The current user can be changed by setting the CurrentUser property of the RadRichTextBox:
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.CurrentUser = new UserInfo("Group", "Boby", "Boby", "bobby@telerik.com");
@@ -98,7 +98,7 @@ RadDocument provides a set of methods for navigating and getting revisions – a
 
 All revision have a RevisionInfo object associated to them, which contains information about the user who made the change and the date and time it was made. Revisions in the document can be accessed and selected with the following methods of the RadDocument:
 
-#### __C#__
+
 
 ```C#
 	public Revision GoToPreviousRevision()

@@ -24,14 +24,14 @@ A class that derives from the __DataServiceContext__ class will be automatically
 
 A typical auto-generated __DataServiceContext__ class will look like this:
 
-#### __C#__
+
 
 ```C#
 
 	public partial class NorthwindEntities : global::System.Data.Services.Client.DataServiceContext
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -42,7 +42,7 @@ A typical auto-generated __DataServiceContext__ class will look like this:
 
 In order to create an instance of the DataServiceContext class, you need to specify the WCF Data Service Uri in its constructor. The simply assign to the respective property on RadDataServiceDataSource:
 
-#### __C#__
+
 
 ```C#
 
@@ -53,7 +53,7 @@ In order to create an instance of the DataServiceContext class, you need to spec
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -66,7 +66,7 @@ In order to create an instance of the DataServiceContext class, you need to spec
 
 Since the __DataServiceContext__ class does not have a parameterless constructor, it cannot be directly instantiated in XAML. This can be worked around by creating another class with a parameterless constructor that derives from it and then hard-coding the __Uri__ in the call to the base constructor:
 
-#### __C#__
+
 
 ```C#
 
@@ -76,7 +76,7 @@ Since the __DataServiceContext__ class does not have a parameterless constructor
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -90,7 +90,7 @@ Since the __DataServiceContext__ class does not have a parameterless constructor
 
 Once you have a context class with a parameterless constructor, you can easily instantiate it in XAML:
 
-#### __XAML__
+
 
 ```XAML
 

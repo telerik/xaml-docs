@@ -18,7 +18,7 @@ For the purpose we'll need a timeline, which is bound to a collection of custom 
 
 We create a sample class with two properties - Duration of TimeSpan type and Date of DateTime type. Then set values for the properties and create a method that returns a collection of business objects. This way the Timeline will be able to display information about the currently hovered data point via the ToolTipTemplate.
 
-#### __C#__
+
 
 ```C#
 	public class Product
@@ -51,7 +51,7 @@ We create a sample class with two properties - Duration of TimeSpan type and Dat
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Product
@@ -81,7 +81,7 @@ We create a sample class with two properties - Duration of TimeSpan type and Dat
 
 Our *ViewModel* class consists of a single property - the collection of business objects that will be used as itemssource for the Timeline. In the constructor of the class call the GetData method we previously created in our Product class with as many items as you want to generate for your Timeline.
 
-#### __C#__
+
 
 ```C#
 	public class ExampleViewModel : ViewModelBase
@@ -110,7 +110,7 @@ Our *ViewModel* class consists of a single property - the collection of business
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	   Public Class ExampleViewModel
@@ -136,7 +136,7 @@ Our *ViewModel* class consists of a single property - the collection of business
 
 Now we need to define our tooltip behavior and set its tooltip template. It will display the value of the hovered Timeline item.
 
-#### __XAML__
+
 
 ```XAML
 	 <UserControl.DataContext>
@@ -183,7 +183,7 @@ Now we need to define our tooltip behavior and set its tooltip template. It will
 
 Aside from binding the Timeline, we added a binding converter. Its purpose is to show you how you may set custom foreground for the tooltip information based on condition. You may find the DurationToBrushConverter implementations in the code snippet below:        
 
-#### __C#__
+
 
 ```C#
 	public class DurationToBrushConverter : IValueConverter
@@ -209,7 +209,7 @@ Aside from binding the Timeline, we added a binding converter. Its purpose is to
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	 Public Class DurationToBrushConverter

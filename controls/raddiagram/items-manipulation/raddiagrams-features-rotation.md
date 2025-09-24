@@ -18,7 +18,7 @@ __RadDiagram__ gives you the ability to rotate shapes by dragging their __Rotati
 
 By default the __RadDiagram__ is enabled for rotation manipulation. In order to disable this functionality, you can set __IsRotationEnabled__ to __False__
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram IsRotationEnabled="False">
 		<telerik:RadDiagramShape Geometry="{telerik:CommonShape ShapeType=CloudShape}" Position="100 80" />
@@ -31,7 +31,7 @@ By default the __RadDiagram__ is enabled for rotation manipulation. In order to 
 
 You can rotate shapes by using their __RotationAngle__ property:		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape Geometry="{telerik:CommonShape ShapeType=CloudShape}"

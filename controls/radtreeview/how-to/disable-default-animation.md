@@ -12,7 +12,7 @@ position: 14
 
 By default the __RadTreeView__ control's items are __expanded__ and __collapsed__ with an animation. However, there are cases when you might want to disable these animations, e.g. when you have a large number of subitems and it takes a longer time for the animations to complete. To disable the default animations, all you have to do is to set the following attached property to the __RadTreeView__ control:  
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeView telerik:AnimationManager.IsAnimationEnabled="False"/>
@@ -20,7 +20,7 @@ By default the __RadTreeView__ control's items are __expanded__ and __collapsed_
 
 The referenced namespace is defined as follows: 
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation

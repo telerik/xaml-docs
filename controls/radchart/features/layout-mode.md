@@ -32,7 +32,7 @@ Each __LayoutMode__ is best to be used with certain chart types:
 
 You can set the __LayoutMode__ from XAML or code-behind like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -52,13 +52,13 @@ You can set the __LayoutMode__ from XAML or code-behind like this:
 
 
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal

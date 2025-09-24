@@ -18,7 +18,7 @@ The behavior also displays two labels (one for each line) which, by default, are
 
 You can add the crosshair behavior in the RadCartesianChart’s __Behaviors__ collection. The following code snippet demonstrates a simple chart definition that includes ChartCrosshairBehavior and it recreates the visualization shown in the image above.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>

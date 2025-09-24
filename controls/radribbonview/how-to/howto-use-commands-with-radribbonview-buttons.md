@@ -22,7 +22,7 @@ All __RadRibbonView__ buttons provide a standard __ICommandSource__ implementati
 
 Here is an example of a command usage in a MVVM scenario. The command is located in the __ButtonViewModel__ class.		
 
-#### __C#__
+
 ```C#
 	public class ButtonViewModel
     {
@@ -52,7 +52,7 @@ Here is an example of a command usage in a MVVM scenario. The command is located
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Public Class ButtonViewModel
         Public Sub New()
@@ -85,7 +85,7 @@ Here is an example of a command usage in a MVVM scenario. The command is located
 
 Set the __ButtonViewModel__ as the __DataContext__ of your __UserControl__.	  
 
-#### __C#__
+
 ```C#
 	public Example()
 	{
@@ -94,7 +94,7 @@ Set the __ButtonViewModel__ as the __DataContext__ of your __UserControl__.
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Public Sub New()
         InitializeComponent()
@@ -106,7 +106,7 @@ In the XAML provide the bindings for the command and set the command parameter.
 
 >tip This can be applied to each of the __RadRibbonButtons__. To learn more about them read [here]({%slug radribbonview-buttons-overview%}). Commands can be used with any control, placed in the __RadRibbonView__, that implements the __ICommandSource__ interface.		  
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="xRibbonView">
         <telerik:RadRibbonTab Header="Home">

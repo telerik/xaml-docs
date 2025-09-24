@@ -54,7 +54,7 @@ The __Diagram Extensions__ provide a __HierarchicalGalleryItemsCollection__ whic
 
 You can use it directly in XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -122,7 +122,7 @@ You can use it directly in XAML:
 
 or define a property of type __HierarchicalGalleryItemsCollection__ in your ViewModel:                
 
-#### __C#__
+
 
 ```C#
 	public class MainViewModel
@@ -136,7 +136,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MainViewModel
@@ -156,7 +156,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	End Class	
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -228,7 +228,7 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 
 The __HierarchicalGalleryItemsCollection__ is populated based on the items in the __Telerik.Windows.Controls.Diagrams.Extensions.GalleryItemsCollection__ grouped by the name of each gallery. This is why you can easily recreate it in your ViewModel:
 
-#### __C#__
+
 
 ```C#
 	public class MainViewModel
@@ -258,7 +258,7 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 	}	
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MainViewModel
@@ -293,7 +293,7 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 
 Next, you can customize your *GalleryItems* collection to display only the Basic Shapes gallery like so:
 
-#### __C#__
+
 
 ```C#
 	public class MainViewModel
@@ -323,7 +323,7 @@ Next, you can customize your *GalleryItems* collection to display only the Basic
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MainViewModel
@@ -364,7 +364,7 @@ In case you need to populate a __RadDiagramToolbox__ instance with a custom coll
 
 For the purpose of this tutorial we will create a class describing our shapes and a custom gallery class that defines a collection of shapes:
 
-#### __C#__
+
 
 ```C#
 	public class MyShape
@@ -448,7 +448,7 @@ For the purpose of this tutorial we will create a class describing our shapes an
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyShape
@@ -489,7 +489,7 @@ For the purpose of this tutorial we will create a class describing our shapes an
 
 Once the ViewModels are all in place, you can use the *MainViewModel* as the __DataContext__ of the __RadDiagramToolbox__ and bind its __ItemsSource__ to the *Items* collection. You will also need to define __DataTemplates__ to visualize the *MyShape* and *MyGallery* items properly.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>

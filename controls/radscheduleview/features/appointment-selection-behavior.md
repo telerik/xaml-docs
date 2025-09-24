@@ -45,7 +45,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 * Create CustomAppointmentSelectionBehavior class that inherits AppointmentSelectionBehavior class:
 
-#### __C#__
+
 
 ```C#
 	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
@@ -55,7 +55,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 * Override the GetSelectedAppointments method:
 
-#### __C#__
+
 
 ```C#
 	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
@@ -84,7 +84,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 * All that is left is to attach the newly created custom behavior to the ScheduleView:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView ...>
@@ -98,7 +98,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 Finally the ScheduleView control in the XAML should look like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView ...>

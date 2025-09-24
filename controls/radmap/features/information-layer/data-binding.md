@@ -40,7 +40,7 @@ In order to provide the needed data to your __RadMap__ control, you have to crea
 
 The next step is to define the __ItemTemplate__ for the information layer and set the desired bindings in it. In the current example, the marker will be represented by an ellipse marked as a Hot Spot.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -77,7 +77,7 @@ The last thing to do is to set the __ItemsSource__ property of the __Information
 
 >tip The code for the __GetMapData()__ method can be found at the [end of the topic](#sample_code).
 
-#### __C#__
+
 ```C#
 	public DataBindingSample()
 	{
@@ -90,7 +90,7 @@ The last thing to do is to set the __ItemsSource__ property of the __Information
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 	 InitializeComponent()
@@ -117,7 +117,7 @@ The code for the business object and for the sample data can be found at the [en
 
 To learn how and when to set the __ItemsSource__ of the __InformationLayer__, please read [the previous section](#using-data-binding-in-the-datatemplate).
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -158,7 +158,7 @@ To learn how and when to set the __ItemsSource__ of the __InformationLayer__, pl
 
 Finally here is the code for the business object and the __GetMapData()__ method.
 
-#### __C#__
+
 ```C#
 	public class MapItem
 	{
@@ -192,7 +192,7 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class MapItem
 	 Public Sub New(caption As String, location As Location, baseZoomLevel As Double, zoomRange As ZoomRange)
@@ -240,7 +240,7 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	End Class
 ```
 
-#### __C#__
+
 ```C#
 	private ObservableCollection<MapItem> GetMapData()
 	{
@@ -253,7 +253,7 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Function GetMapData() As ObservableCollection(Of MapItem)
 	 Dim data As New ObservableCollection(Of MapItem)()

@@ -53,7 +53,7 @@ The enumeration has the following values:
 
 Here is an example of a __RadDataPager__ that displays the previous, next and numeric buttons.
 
-#### __XAML__
+
 
 ```XAML
 
@@ -66,7 +66,7 @@ Here is an example of a __RadDataPager__ that displays the previous, next and nu
 
 If the combination of visual elements doesn't exist in the enumeration, you can combine one or more enumeration values. This is done by separating the values with a coma. Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 

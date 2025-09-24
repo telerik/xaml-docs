@@ -16,7 +16,7 @@ To do this you need to alter the default __CellEditTemplate__ in your __RadGridV
 
 For the purpose of this example the first thing you have to do is to define the __RadGridView__ and populate it with sample data. Below are the custom business object definitions, as well as the __RadGridView__ declaration.
 
-#### __C#__
+
 
 ```C#
 	public class Club
@@ -56,7 +56,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Club
@@ -103,7 +103,7 @@ For the purpose of this example the first thing you have to do is to define the 
 	End Class
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Name="radGridView"
@@ -120,13 +120,13 @@ For the purpose of this example the first thing you have to do is to define the 
 	</telerik:RadGridView>
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.ItemsSource = Club.GetClubs();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radGridView.ItemsSource = Club.GetClubs()
@@ -134,7 +134,7 @@ For the purpose of this example the first thing you have to do is to define the 
 
 The next and final step in the example is to define the actual __CellTemplate__ used for the DateTime column. Here is the complete XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Name="radGridView1"

@@ -14,7 +14,7 @@ This tutorial describes how to display the RadDiagram built-in ScrollViewer.
 
 For the purpose of this tutorial we'll examine the following simple Diagramming structure:
 
-#### __XAML__
+
 ```XAML
     <Grid Height="350" Width="525">
         <telerik:RadDiagram x:Name="xDiagram">
@@ -34,7 +34,7 @@ In such scenarios it's useful to use the __RadDiagram__ built-in __ScrollViewer_
 
 In order to enable the horizontal and/or vertical __ScrollBar__ you need to add the following attribute(s) to the __RadDiagram__ declaration:		
 
-#### __XAML__
+
 ```XAML
     <telerik:RadDiagram Grid.Row="1" x:Name="xDiagram" 
                         ScrollViewer.HorizontalScrollBarVisibility="Visible" 
@@ -45,7 +45,7 @@ In order to enable the horizontal and/or vertical __ScrollBar__ you need to add 
 
 The same operation can be done in code-behind as well:
 
-#### __C#__
+
 ```C#
     private void EnableScrollBars()
     {
@@ -54,7 +54,7 @@ The same operation can be done in code-behind as well:
     }		  
 ```
 		  
-#### __VB.NET__
+
 ```VB.NET
     Private Sub EnableScrollBars()
         ScrollViewer.SetHorizontalScrollBarVisibility(xDiagram, ScrollBarVisibility.Visible)

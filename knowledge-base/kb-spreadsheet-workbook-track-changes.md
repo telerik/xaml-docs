@@ -35,7 +35,7 @@ You need to track whether the content of a Workbook has been modified.
 
 Use the **WorkbookContentChanged** event.
 
-#### __C#__
+
 
 ```C#
 

@@ -14,7 +14,7 @@ The cursor displayed on dragging with DragDropManager is derived from the DragDr
 
 An example for such an implementation is illustrated below:
 
-#### __C#__
+
 
 ```C#
 	//Subscribing to the GiveFeedback event
@@ -27,7 +27,7 @@ An example for such an implementation is illustrated below:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	DragDropManager.AddGiveFeedbackHandler(Me, New GiveFeedbackEventHandler(AddressOf OnGiveFeedBack))

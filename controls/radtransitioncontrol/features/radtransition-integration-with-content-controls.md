@@ -21,7 +21,7 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 >In order to use the __HeaderedContentControl__ you have to add the following namespace to your __UserControl__:
 >	*xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"*
 
-#### __XAML__
+
 
 ```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate1" TargetType="controlsToolkit:HeaderedContentControl">
@@ -42,7 +42,7 @@ Here is an example with the __HeaderedContentControl__. Take a look at the defau
 	</ControlTemplate>
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate2" TargetType="HeaderedContentControl">
@@ -67,13 +67,13 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 
 >In order to use the __RadTransitionControl__ you have to add the following namespace to your __UserControl__:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate3" TargetType="controlsToolkit:HeaderedContentControl">
@@ -96,7 +96,7 @@ The first __ContentPresenter__ is responsible for the header and the second one 
 	</ControlTemplate>
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<ControlTemplate x:Key="HeaderedContentControlTemplate" TargetType="HeaderedContentControl">
@@ -126,7 +126,7 @@ Next, configure the __RadTransitionControl__ to match your needs. For example, d
 >In order to use the built-in __transition effects__ you have to add the following namespace to your __UserControl__:
 >	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl Cursor="{TemplateBinding Cursor}"

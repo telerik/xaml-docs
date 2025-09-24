@@ -44,7 +44,7 @@ For example you may have a list of items and keep the currently selected item as
 
 Such converter would look like:
 
-#### __C#__
+
 
 ```C#
 	public class BooleanToTransitionConverter : IValueConverter
@@ -73,7 +73,7 @@ Such converter would look like:
 
 And could be used in XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl Content="{Binding SelectedImageSource}">
@@ -106,7 +106,7 @@ If you need some additional data for the comparison this approach won’t work a
 
 In general implementing a custom TransitionProvider would use quite a few lines of code:	
 
-#### __C#__
+
 
 ```C#
 	public class WizzardPageTransition : TransitionProvider
@@ -135,7 +135,7 @@ In general implementing a custom TransitionProvider would use quite a few lines 
 
 And in XAML you could use it like:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=SelectedContent}" >

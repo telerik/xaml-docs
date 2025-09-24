@@ -51,7 +51,7 @@ The three files should keep the same resource keys, whereas the values must be t
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.        
 
-#### __C#__  
+  
 ```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
@@ -65,7 +65,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.        
 
-#### __C#__  
+  
 ```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
 ```
@@ -74,7 +74,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 What is left in order to fulfill the localization is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize some of the strings in the FindReplaceDialog:        
 
-#### __C#__  
+  
 ```C#
 	public class CustomLocalizationManager : LocalizationManager
 	{
@@ -106,7 +106,7 @@ What is left in order to fulfill the localization is to override the method __Ge
 
 If you don't want to hard-code your translation inside the source code, you can use resource files:        
 
-#### __C#__  
+  
 ```C#
 	public override string GetStringOverride(string key)
 	{

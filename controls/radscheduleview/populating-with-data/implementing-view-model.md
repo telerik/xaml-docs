@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 * Add a new __RadScheduleView__ declaration in your XAML
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView />
@@ -24,7 +24,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 * Create a new class named __MyViewModel__.
 
-#### __C#__
+
 
 ```C#
 	public class MyViewModel
@@ -32,7 +32,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyViewModel
@@ -45,7 +45,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 1. __ResourcesTypes__ - we will bind the __ResourceTypesSource__ property of the __RadScheduleView__ to this property.
 
-#### __C#__
+
 
 ```C#
 	private ObservableCollection<Appointment> appointments;
@@ -74,7 +74,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private m_Appointments As ObservableCollection(Of Appointment)
@@ -101,7 +101,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 * Let's create a method in the ViewModel that generates some Resources:            
 
-#### __C#__
+
 
 ```C#
 	private ObservableCollection<ResourceType> GenerateResourceTypes()
@@ -128,7 +128,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function GenerateResourceTypes() As ObservableCollection(Of ResourceType)
@@ -153,7 +153,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 * All we have to do is to initialize the __resourceTypes__ and __appointments__ fields:            
 
-#### __C#__
+
 
 ```C#
 	public MyViewModel()
@@ -163,7 +163,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -174,7 +174,7 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 * The ViewModel is complete. Now, let's return to the View. Add some __ViewDefinitions__, __GroupDescriptionsSource__ and bind the __AppointmentsSource__ and __ResourceTypes__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
@@ -196,13 +196,13 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 * Finally, set the DataContext:            
 
-#### __C#__
+
 
 ```C#
 	this.DataContext = new MyViewModel();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.DataContext = New MyViewModel()

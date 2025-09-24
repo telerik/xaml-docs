@@ -43,7 +43,7 @@ To use the EllipseData in your visualization layer you have to set the following
           
 Here it is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -65,7 +65,7 @@ Here it is an example:
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	EllipseData ellipse = new EllipseData()
 	{
@@ -83,7 +83,7 @@ Here it is an example:
 	this.visualizationLayer.Items.Add(ellipse);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim ellipse As New EllipseData() With { _
 		.Location = New Location(43.4457539183824, 23.2927663758679), _
@@ -107,7 +107,7 @@ The `LineData` class represents a line given in geographical coordinates.
 
 The most important properties of the `LineData` class are the `Point1` and `Point2` properties, which are of type `Location`. They define the start and the end points of the line. Here is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -127,7 +127,7 @@ The most important properties of the `LineData` class are the `Point1` and `Poin
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	LineData line = new LineData()
 	{
@@ -143,7 +143,7 @@ The most important properties of the `LineData` class are the `Point1` and `Poin
 	this.visualizationLayer.Items.Add(line);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim line As New LineData() With { _
 		.Point1 = New Location(42.6957539183824, 23.3327663758679), _
@@ -165,7 +165,7 @@ The `PathData` provides equivalents of the standard `Geometry` and `Segment` cla
 
 Here is an example that uses a `PathGeometryData` which in turn holds a `PathFigureData` figure composed of `LineSegmentData` segments:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="7"
@@ -209,7 +209,7 @@ Here is an example that uses a `PathGeometryData` which in turn holds a `PathFig
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	PathData path = new PathData()
 	{
@@ -259,7 +259,7 @@ Here is an example that uses a `PathGeometryData` which in turn holds a `PathFig
 	this.visualizationLayer.Items.Add(path);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim path As New PathData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -311,7 +311,7 @@ As of **R2 2022 SP1** you can also use an instance of `CombinedGeometryData` as 
 * **Xor**: The two regions are combined by taking the area that exists in the first region but not the second and the area that exists in the second region but not the first. The new region consists of (A-B) + (B-A), where A and B are geometries.
 * **Exclude**: The second region is excluded from the first. Given two geometries, A and B, the area of geometry B is removed from the area of geometry A, producing a region that is A-B.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="7"
@@ -341,7 +341,7 @@ As of **R2 2022 SP1** you can also use an instance of `CombinedGeometryData` as 
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	CombinedGeometryData combinedData = new CombinedGeometryData() { CombineMode = GeometryCombineMode.Xor };
 	combinedData.Geometry1 = new EllipseGeometryData()
@@ -370,7 +370,7 @@ As of **R2 2022 SP1** you can also use an instance of `CombinedGeometryData` as 
 	this.visualizationLayer.Items.Add(path);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim combinedData As New CombinedGeometryData() With {.CombineMode = GeometryCombineMode.Xor}
 	combinedData.Geometry1 = New EllipseGeometryData() With {
@@ -404,7 +404,7 @@ The `PolygonData` class represents polygon data in geographical coordinates.
 
 The difference between the standard Polygon and the PolygonData is that the `Points` property of the `PolygonData` is a set of Locations. Here is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="5"
@@ -424,7 +424,7 @@ The difference between the standard Polygon and the PolygonData is that the `Poi
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	PolygonData polygon = new PolygonData()
 	{
@@ -447,7 +447,7 @@ The difference between the standard Polygon and the PolygonData is that the `Poi
 	this.visualizationLayer.Items.Add(polygon);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim polygon As New PolygonData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -476,7 +476,7 @@ The `PolylineData` class represents polyline data in geographical coordinates.
 
 The difference between the standard Polyline and the PolylineData is that the `Points` property of the `PolylineData` is a set of Locations. Here is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="7"
@@ -495,7 +495,7 @@ The difference between the standard Polyline and the PolylineData is that the `P
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	PolylineData polyline = new PolylineData()
 	{
@@ -517,7 +517,7 @@ The difference between the standard Polyline and the PolylineData is that the `P
 	this.visualizationLayer.Items.Add(polyline);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim polyline As New PolylineData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -555,7 +555,7 @@ To use the RectangleData in your visualization layer you have to set the followi
 
 Here it is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -579,7 +579,7 @@ Here it is an example:
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	RectangleData rect = new RectangleData()
 	{
@@ -599,7 +599,7 @@ Here it is an example:
 	this.visualizationLayer.Items.Add(rect);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim rect As New RectangleData() With { _
 		.Location = New Location(43.4457539183824, 23.2927663758679), _

@@ -14,7 +14,7 @@ The purpose of this tutorial is to show you how to add an icon to the __RadPane'
 
 For the purpose of this tutorial the following __RadDocking__ declaration will be used:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking">
@@ -42,7 +42,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 
 In order to add an icon to the __RadPane's__ header, you should create a custom data template and set it to the __HeaderTemplate__ property of the __RadPane__. Consider the following example.
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -59,7 +59,7 @@ In order to add an icon to the __RadPane's__ header, you should create a custom 
 
 Set the created data template to the __HeaderTemplate__ property of the __RadPane__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking1">

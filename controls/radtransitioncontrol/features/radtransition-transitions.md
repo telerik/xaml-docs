@@ -36,7 +36,7 @@ The built-in transition effects are:
 
 The short syntax to set the transition in XAML is:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl Transition="Fade" />
@@ -59,7 +59,7 @@ Below you can find information for each of them, together with a sample snapshot
 
 The __FadeTransition__ fades out the old content and fades in the new one. It has no properties for additional customization.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl1">
@@ -75,7 +75,7 @@ The __FadeTransition__ fades out the old content and fades in the new one. It ha
 
 The __FlipWarpTransition__ is a transition effect that makes zoom and slide transition. It has no properties for additional customization.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl1">
@@ -97,7 +97,7 @@ The __LinearFadeTransition__ is a fade transition which follows a linear pattern
 
 * __Thickness__ - represents the thickness of the line. The default value is __0.5__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl2">
@@ -125,7 +125,7 @@ The __MotionBlurredZoomTransition__ is basically a fade transition with motion b
 
 * __Samples__ - for each pixel in point __P__ it creates a line that contains that point and the __Center__ point. Then __Samples__ count of points are selected from the new content and Samples count of points of the old content are selected forming two sets of points for the old and the new values. The distance of the selected points to the __P__ depends on __InBlurRatio__ and __OutBlurRatio__ and the __progress__ inverting the values for example from 0.3, -0.3 to -0.3, 0.3 will make the image to go zoom out instead of zoom in. The colors in the two sets of points are summed up and the average values of these two groups are selected as the old and the new color. The final pixel color for __P__ is the sum of these two values get with different weight depending on the __progress__. The default value is __7__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl3">
@@ -158,7 +158,7 @@ The __RollTransition__ rolls out the new content above the old one. You can also
 
 * __RollSize__ - specifies the size of the roll relatively to the content. The default value is __0.15__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl4">
@@ -188,7 +188,7 @@ The __SlideAndZoomTransition__ zooms out the old content and decreases its opaci
 
 * __StartSlideAt__ - specifies the start time for the slide and is relative to the transition duration. The time before the slide starts will be used for animating the zoom. The default value is __0.25__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl5">
@@ -213,7 +213,7 @@ The __WaveTransition__ creates a wave effect over the old content. When the wave
 
 * __Fade__ - specifies the rate of the fade between the new and the old content. A value of __1__ will cause a complete fade between the change and a value of __0__ will cause no fade at all. The default value is __0.7__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl6">

@@ -16,7 +16,7 @@ The appearance of characters in the numeric indicator could be specified with a 
 
 To add a numeric indicator to the scale you have to include NumericIndicator element to the list of the scale indicators:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge Width="150" Height="50" telerik:StyleManager.Theme="Windows8">
 	    <telerik:NumericScale Min="0">

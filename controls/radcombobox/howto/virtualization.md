@@ -17,7 +17,7 @@ The Telerik UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %
 
 In some scenarios it is required to load thousands of items in a __RadComboBox__. By default the control creates __RadComboBoxItem__ containers for each data item, so it might take some time to open the drop-down. To resolve the problem you just have to change the __RadComboBox__'s __ItemsPanel__ with __VirtualizingStackPanel__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox x:Name="radComboBox">

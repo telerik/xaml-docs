@@ -44,7 +44,7 @@ This article will cover the following examples:
 
 * First you should create the collection of Slot objects and set their RecurrencePattern property:            
 
-#### __C#__
+
 
 ```C#
 	var NonWorkingHours = new ObservableCollection<Slot>();
@@ -66,7 +66,7 @@ This article will cover the following examples:
 
 * Then create the ScheduleViewStyleSelector class:            
 
-#### __C#__
+
 
 ```C#
 	public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
@@ -92,7 +92,7 @@ This article will cover the following examples:
 
 and define the Style:
 
-#### __XAML__
+
 
 ```XAML
 	<local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
@@ -112,7 +112,7 @@ and define the Style:
 
 * Finally, bind them to SpecialSlotsSource and SpecialSlotsStyleSelector properties:            
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView x:Name="scheduleView"
@@ -130,7 +130,7 @@ Here is the result:
 
 Let's for example have the following Resource Type defined:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView x:Name="scheduleView">
@@ -148,7 +148,7 @@ Let's for example have the following Resource Type defined:
 
 * You can create the collection of read-only slots for "Team" Resource like this:           
 
-#### __C#__
+
 
 ```C#
 	var ReadOnlySlots = new ObservableCollection<Slot>();
@@ -165,7 +165,7 @@ Let's for example have the following Resource Type defined:
 
 * And assign it to the ScheduleView's SpecialSlotsSource property:            
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView  x:Name="scheduleView" SpecialSlotsSource="{Binding ReadOnlySlots}">
@@ -179,7 +179,7 @@ The read-only slots will look like this:
 
 Note that EditAppointmentDialog is shown even for appointments which are visualized in the read-only slots. In order to prevent it, susbscribe to ShowDialog event of the RadScheduleView:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" ShowDialog="scheduleView_ShowDialog">
@@ -187,7 +187,7 @@ Note that EditAppointmentDialog is shown even for appointments which are visuali
 
 and cancel it in the event handler:       
 
-#### __C#__
+
 
 ```C#
 	private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)

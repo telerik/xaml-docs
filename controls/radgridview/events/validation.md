@@ -57,17 +57,17 @@ The parameters passed to the validating event handler are two:
 
 You can subscribe to the __CellValidating__ event declaratively or in code-behind like this:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadGridView CellValidating="radGridView_CellValidating"/>
 ```
 
-#### __C#__
+
 ```C#
 	this.radGridView.CellValidating += radGridView_CellValidating;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	AddHandler Me.radGridView.CellValidating, AddressOf radGridView_CellValidating
 ```
@@ -76,7 +76,7 @@ You can subscribe to the __CellValidating__ event declaratively or in code-behin
 
 The code snippet below checks whether the value entered in the "CountryId" column falls between 0 and 12. If the rule is not satisfied then the commit process is cancelled.
 
-#### __C#__  
+  
 ```C#
 	private void radGridView_CellValidating(object sender, GridViewCellValidatingEventArgs e)
 	{
@@ -92,7 +92,7 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 	}
 ```
 
-#### __VB.NET__ 
+ 
 ```VB.NET
 	Private Sub radGridView_CellValidating(ByVal sender As Object, ByVal e As GridViewCellValidatingEventArgs)
 	    If e.Cell.Column.UniqueName = "CountryId" Then
@@ -121,17 +121,17 @@ The parameters passed to the validated event handler are two:
 
 You can subscribe to the __CellValidated__ event declaratively or in code-behind like this:        
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadGridView CellValidated="radGridView_CellValidated"/>
 ```
 
-#### __C#__
+
 ```C#
 	this.radGridView.CellValidated += radGridView_CellValidated;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	AddHandler Me.radGridView.CellValidated, AddressOf radGridView_CellValidated
 ```
@@ -163,24 +163,24 @@ The parameters passed to the validating event handler are two:
 
 You can subscribe to the __RowValidating__ event declaratively or in code-behind like this:        
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadGridView RowValidating="radGridView_RowValidating"/>
 ```
 
-#### __C#__  
+  
 ```C#
 	this.radGridView.RowValidating += radGridView_RowValidating;
 ```
 
-#### __VB.NET__  
+  
 ```VB.NET
 	AddHandler Me.radGridView.RowValidating, AddressOf radGridView_RowValidating
 ```
 
 To stop the commit process just set the __IsValid__ property of the __GridViewRowValidatingEventArgs__ to __False__, like this:
         
-#### __C#__ 
+ 
 ```C#
 	private void radGridView_RowValidating(object sender, GridViewRowValidatingEventArgs e)
 	{
@@ -188,7 +188,7 @@ To stop the commit process just set the __IsValid__ property of the __GridViewRo
 	}
 ```
 
-#### __VB.NET__ 
+ 
 ```VB.NET
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
 	    e.IsValid = False
@@ -197,7 +197,7 @@ To stop the commit process just set the __IsValid__ property of the __GridViewRo
 
 In versions prior to R1 2020, the event was firing only when a new row was inserted or edited. In later versions, the event fires each time a GridViewRow gets loaded. This can happen on loaded of RadGridView and also when scrolling the rows. In those situations, you can avoid executing your code defined in the RowValidating event, by setting the __EditOperationType__ property of the event arguments to __None__.
 
-#### __C#__ 
+ 
 ```C#
 	private void radGridView_RowValidating(object sender, GridViewRowValidatingEventArgs e)
 	{
@@ -212,7 +212,7 @@ In versions prior to R1 2020, the event was firing only when a new row was inser
 	}
 ```
 
-#### __VB.NET__ 
+ 
 ```VB.NET
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
 	    If e.EditOperationType = Telerik.Windows.Controls.GridView.GridViewEditOperationType.None Then
@@ -235,17 +235,17 @@ The parameters passed to the validated event handler are two:
 
 You can subscribe to the __RowValidated__ event declaratively or in code-behind like this:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadGridView RowValidated="radGridView_RowValidated"/>
 ```
 
-#### __C#__
+
 ```C#
 	this.radGridView.RowValidated += radGridView_RowValidated;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	AddHandler Me.radGridView.RowValidated, AddressOf radGridView_RowValidated
 ```

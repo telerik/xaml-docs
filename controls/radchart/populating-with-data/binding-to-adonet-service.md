@@ -22,7 +22,7 @@ The purpose of this tutorial is to show you how to populate a __RadChart__ with 
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadChart__ declaration in your XAML: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8" />
@@ -40,7 +40,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 * __DataPointMember__ to __YValue__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8">
@@ -58,7 +58,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 * Create new __Business Object__ and name it __ProductDetail__:
 
-#### __C#__
+
 
 ```C#
 	public class ProductDetail
@@ -76,7 +76,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ProductDetail
@@ -97,7 +97,7 @@ Add a reference to your ADO.NET Data Service.
 
 * Switch to the code-behind and add a reference to the{% if site.site_name == 'WPF' %} __NorthWindEntities__ object{% endif %}__DataServiceContext__.
 
-#### __C#__
+
 
 ```C#
 	dbContext = new DataServiceContext(new Uri("SampleAdoNetDataService.svc", UriKind.Relative));
@@ -105,7 +105,7 @@ Add a reference to your ADO.NET Data Service.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dbContext As New DataServiceContext(New Uri("SampleAdoNetDataService.svc", UriKind.Relative))
@@ -113,7 +113,7 @@ Add a reference to your ADO.NET Data Service.
 
 
 
-#### __C#__
+
 
 ```C#
 	NorthwindEntities dbContext = new NorthwindEntities(new Uri("Enter your service address here"));
@@ -121,7 +121,7 @@ Add a reference to your ADO.NET Data Service.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dbContext As New NorthwindEntities(New Uri("Enter your service address here"))
@@ -133,7 +133,7 @@ Add a reference to your ADO.NET Data Service.
 
 Add the following code which will make the initial load of the objects.
 
-#### __C#__
+
 
 ```C#
 	private void BeginRequest()
@@ -157,7 +157,7 @@ Add the following code which will make the initial load of the objects.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub BeginRequest()
@@ -179,7 +179,7 @@ Add the following code which will make the initial load of the objects.
 
 
 
-#### __C#__
+
 
 ```C#
 	this.radChart.ItemsSource = dbContext.Products.Execute().Take(10).ToList();
@@ -187,7 +187,7 @@ Add the following code which will make the initial load of the objects.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.ItemsSource = dbContext.Products.Execute().Take(10).ToList()
@@ -205,7 +205,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 * Create a new class named __NorthwindDataSource__. 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -215,7 +215,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -230,7 +230,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 * In the __NorthwindDataSource__ class add a reference to the __NorthwindEntities__ object.
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -251,7 +251,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -278,7 +278,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Categories__ from the database: 
 
-#### __C#__
+
 
 ```C#
 	var query = ( from p in northwindEntity.Products
@@ -294,7 +294,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim query = (From p In northwindEntity.Products _
@@ -308,7 +308,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 {% if site.site_name == 'Silverlight' %}And here is the code for the __EntitiesLoaded__ method: {% endif %}
 
-#### __C#__
+
 
 ```C#
 	private static void EntitiesLoaded<T>(IAsyncResult result, Collection<T> entities)
@@ -323,7 +323,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
@@ -338,7 +338,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -349,7 +349,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 *  Update your chart declaration - set the __ItemsSource__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8" 

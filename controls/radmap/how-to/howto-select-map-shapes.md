@@ -12,7 +12,7 @@ position: 8
 
 RadMap provides a rich set of [geocoordinate-enabled shapes]({%slug radmap-features-map-shapes%}) that can be defined and displayed onto the map surface. There are scenarios, however, where you would like to do more than just position a shape onto the map. This help topic will demonstrate how to manipulate each individual segment of line/polyline/polygon shape based on mouse input from the user. For example we will select (highlight) a Line segment of the Polyline and set a green color for it. The Polyline itself will be colored blue and on click it will become red. All these customizations will be made through styles:
 
-#### __XAML__
+
 ```XAML
 	<Style x:Key="defaultLineStyle" TargetType="telerik:MapShape">
 		<Setter Property="StrokeThickness" Value="3" />
@@ -34,7 +34,7 @@ RadMap provides a rich set of [geocoordinate-enabled shapes]({%slug radmap-featu
 
 First of all we’ll need two Information layers – one for the polyline and the other one for the points that we will use for the shape manipulation.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 						InitializeCompleted="radMap_InitializeCompleted"
@@ -52,7 +52,7 @@ First of all we’ll need two Information layers – one for the polyline and th
 
 Now we will create a sample polyline and add it to the first information layer. Note that it is better to do this after the map provider has been initialized in order to prevent your items from appearing in the upper left corner before the map is initialized and loaded:
 
-#### __C#__
+
 ```C#
     private bool initialized;
 
@@ -93,7 +93,7 @@ Now we will create a sample polyline and add it to the first information layer. 
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 Private initialized As Boolean
 
@@ -132,7 +132,7 @@ Private initialized As Boolean
 
 And now to the essential part of our scenario. Add a Line over each segment of the polyline. This is easy since the polyline itself was created from a set of predefined points(locations). To be able to change the appearance of the polyline or its segments on click we’ll attach a __MouseLeftButtonDown__ event on the line:
 
-#### __C#__
+
 ```C#
 	private void BuildLines(MapPolyline polyline)
 	{
@@ -179,7 +179,7 @@ And now to the essential part of our scenario. Add a Line over each segment of t
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub BuildLines(ByVal polyline As MapPolyline)
 		For i As Integer = 0 To polyline.Points.Count - 2
@@ -218,7 +218,7 @@ And now to the essential part of our scenario. Add a Line over each segment of t
 
 In event's body you check whether the selected shape is line or the whole polyline and apply the style for it.
 
-#### __C#__
+
 ```C#
     private void SetDefaultStyle(MapShape shape)
     {
@@ -245,7 +245,7 @@ In event's body you check whether the selected shape is line or the whole polyli
     } 
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub SetDefaultStyle(ByVal shape As MapShape)
 				If TypeOf shape Is MapLine Then

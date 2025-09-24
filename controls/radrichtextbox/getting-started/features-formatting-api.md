@@ -29,7 +29,7 @@ The __RadRichTextBox__ exposes methods that change the style of the selected tex
 Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of the __RadToggleButton__, the __ToggleBold()__ method of __RadRichTextBox__ is called.
         
 
-#### __XAML__
+
 
 ```XAML
     <StackPanel>
@@ -40,7 +40,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 
 
-#### __C#__
+
 
 ```C#
     private void BoldButton_Click(object sender, RoutedEventArgs e)
@@ -51,7 +51,7 @@ Here is an example of a toggle button that upon checking should make the selecti
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Private Sub BoldButton_Click(sender As Object, e As RoutedEventArgs)
@@ -71,7 +71,7 @@ __RadRichTextBox__ supports headers and footers. They are represented through se
 
 The following example inserts the word "text" at the CaretPosition.
 
-#### __C#__
+
 
 ```C#
     this.radRichTextBox.ActiveDocumentEditor.Insert("text");
@@ -79,7 +79,7 @@ The following example inserts the word "text" at the CaretPosition.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radRichTextBox.ActiveDocumentEditor.Insert("text")
@@ -101,7 +101,7 @@ One of the common uses of the API is creating and inserting a __DocumentFragment
 Both approaches can be used to insert content at the caret position with the __InsertFragment__ method:
         
 
-#### __C#__
+
 
 ```C#
     this.radRichTextBox.InsertFragment(fragment);
@@ -111,7 +111,7 @@ Both approaches can be used to insert content at the caret position with the __I
 
 If you create a fragment in this way, it will end with a new paragraph. This is convenient when you want to separate the inserted fragment and end it with a new line. Furthermore, in this way if the last paragraph is in a list, it will appear properly in the new document.
 
-#### __C#__
+
 
 ```C#
     DocumentFragment fragmentFromDocument = new DocumentFragment(radDocument);
@@ -119,7 +119,7 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim fragment As New DocumentFragment(radDocument)
@@ -134,7 +134,7 @@ This is also the suggested approach when merging several documents into one.
 If you choose to use the document selection when creating a __DocumentFragment__, there will be no additional paragraph after the fragment.
             
 
-#### __C#__
+
 
 ```C#
     DocumentFragment fragmentFromSelection = radDocument.Selection.CopySelectedDocumentElements();
@@ -142,7 +142,7 @@ If you choose to use the document selection when creating a __DocumentFragment__
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim fragment As DocumentFragment = document.Selection.CopySelectedDocumentElements()

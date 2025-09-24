@@ -14,7 +14,7 @@ Project plans normally require tasks to be performed in a certain order. To achi
 
 The relation is set through __Dependencies__ property of the __GanttTask__ class:
 
-#### __C#__
+
 
 ```C#
 	var task1 = new GanttTask(date, date.AddDays(1), "task 1");

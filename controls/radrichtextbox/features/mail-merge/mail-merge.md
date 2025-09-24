@@ -16,7 +16,7 @@ The general use of mail merge is the creation of a document serving as a templat
 
 The first thing you need to do is assign a value to the ItemsSource property of the MailMergeDataSource of the document. For example, if you will be writing letters to Employees of a company, you can have a context which keeps a list of Employees, each Employee having a FirstName, LastName and JobTitle.
 
-#### __C#__   
+   
 ```C#
 	public class ExamplesDataContext
     {
@@ -57,7 +57,7 @@ The first thing you need to do is assign a value to the ItemsSource property of 
 
 All that is left is to add the following line:
 
-#### __C#__  
+  
 ```C#
 	this.radRichTextBox.Document.MailMergeDataSource.ItemsSource = new ExamplesDataContext().Employees;
 ```
@@ -88,7 +88,7 @@ This same scenario can be carried out programmatically just as easily. The metho
 
 ### Creating a MergeField
 
-#### __C#__  
+  
 ```C#
 	MergeField field = new MergeField() { PropertyPath = "FirstName" };
 ```
@@ -97,7 +97,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 ### Changing the display mode of merge fields
 
-#### __C#__  
+  
 ```C#
 	field.DisplayMode = FieldDisplayMode.Result; 	
 	this.radRichTextBox.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result); 
@@ -107,7 +107,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 ### Inserting a MergeField at the current position of the caret
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.InsertField(field); 	
@@ -116,7 +116,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 ### Previewing the results of Mail Merge:
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.PreviewFirstMailMergeDataRecord();
@@ -132,7 +132,7 @@ This fields will look for the value of the FirstName property of the Employee ob
 
 ### Performing MailMerge
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.MailMergeCurrentRecord(); // returns a RadDocument that is the result of substituting the merge fields with the data from the current record. The current record can be specified through the MailMergeSource API:</para>

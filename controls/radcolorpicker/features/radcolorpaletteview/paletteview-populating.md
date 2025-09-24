@@ -14,19 +14,19 @@ This article demonstrates how you can declare a __RadColorPaletteView__ and popu
 
 ## XAML Declaration
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadColorPaletteView />
 ```
 
 ## Dynamic creation
 
-#### __C#__
+
 ```C#
 	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim colorPaletteView As New RadColorPaletteView()
 ```
@@ -35,7 +35,7 @@ This article demonstrates how you can declare a __RadColorPaletteView__ and popu
 
 The __SelectedItem__ property holds the selected color:				
 
-#### __XAML__
+
 ```XAML
 	colorPaletteView.SelectedItem = Colors.Red;
 ```
@@ -44,18 +44,18 @@ The __SelectedItem__ property holds the selected color:
 
 You can use the __Palette__ property of __RadColorPaletteView__ to populate the paletteview with one of the built-in palettes.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadColorPaletteView Palette="ColorPreset.Office" />
 ```
 
-#### __C#__
+
 ```C#
 	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
 	colorPaletteView.Palette = ColorPreset.Office;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim colorPaletteView As New RadColorPaletteView()
 	colorPaletteView.Palette = ColorPreset.Office
@@ -63,12 +63,12 @@ You can use the __Palette__ property of __RadColorPaletteView__ to populate the 
     
 __RadColorPaletteView__  also allows binding to various data source types through the __ItemSource__ property.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadColorPaletteView ItemsSource="{Binding Source={StaticResource MyColorList}}" />
 ```
 
-#### __C#__
+
 ```C#
 	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
 	Collection<Color> colors = new Collection<Color>();
@@ -78,7 +78,7 @@ __RadColorPaletteView__  also allows binding to various data source types throug
 	colorPaletteView.ItemsSource = colors;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim colorPaletteView As New RadColorPaletteView()
 	Dim colors1 As New Collection(Of Color)()

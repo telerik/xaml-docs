@@ -18,7 +18,7 @@ In this tutorial we will examine a solution that allows the user to dynamically 
 
 First we will create a sample __RadDiagram__ definition that has two __RadDiagramShape__ objects:				
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDiagram x:Name="diagram">
@@ -29,7 +29,7 @@ First we will create a sample __RadDiagram__ definition that has two __RadDiagra
 
 Next, we will add two __RadToggleButtons__ to provide the user with the option to turn on and off the vertical and horizontal resizing of a shape.			
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel Width="200" HorizontalAlignment="Left">
@@ -51,7 +51,7 @@ Next, we will add two __RadToggleButtons__ to provide the user with the option t
 
 Now that we've defined the content of our view, we can start describing the custom resizing implementation. And as we need to disable a resizing operation based on dynamically set values, we will have to customize the default resizing mechanism. This mechanism is controlled by the __ResizingService__ class which exposes a virtual method that calculates how to change the current size of a shape. Therefore we will start by creating a custom resizing service that derives from the __RadDiagram ResizingService__ and we will override the __CalculateNewDelta()__ method.
 
-#### __C#__
+
 
 ```C#
 	public class MyResizing : ResizingService
@@ -68,7 +68,7 @@ Now that we've defined the content of our view, we can start describing the cust
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyResizing
@@ -87,7 +87,7 @@ Now that we've defined the content of our view, we can start describing the cust
 
 Since we added two __RadToggleButtons__ in our view, we need to define two __boolean__ properties to track the checked state of these buttons and use them to control the result of the resizing operation.
 
-#### __C#__
+
 
 ```C#
 	public class MyResizing : ResizingService, INotifyPropertyChanged
@@ -154,7 +154,7 @@ Since we added two __RadToggleButtons__ in our view, we need to define two __boo
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyResizing
@@ -215,7 +215,7 @@ If you take a look at the custom __CalculateNewDelta()__ method implementation, 
 
 Finally, we need to configure the __RadDiagram__ instance to use our custom resizing service instead of the default __ResizingService__. This is why we need to create a new instance of the __MyResizing__ class in the code-behind file of our view. Then we need to make sure that the __CanResizeWidth__ and __CanResizeHeight__ properties are used as binding paths for the __IsChecked__ properties of the two __RadToggleButtons__ we defined to control the user ability to resize a shape:				
 
-#### __C#__
+
 
 ```C#
 	private MyResizing newResizingService;
@@ -249,7 +249,7 @@ Finally, we need to configure the __RadDiagram__ instance to use our custom resi
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private newResizingService As MyResizing
@@ -283,7 +283,7 @@ Finally, we need to configure the __RadDiagram__ instance to use our custom resi
 
 And now we can use the __newResizingService__ instance and register it through the __ServiceLocator__:
 
-#### __C#__
+
 
 ```C#
 	public Example()
@@ -295,7 +295,7 @@ And now we can use the __newResizingService__ instance and register it through t
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()

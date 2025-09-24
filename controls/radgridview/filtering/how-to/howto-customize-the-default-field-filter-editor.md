@@ -14,7 +14,7 @@ In case you need to slightly modify the default field filter editor that we have
 
 Depending on the column DataType the editor will be different. For String columns you will get the StringFilterEditor, for DateTime columns you will get a RadDateTimePicker, for Enum columns you will get a RadComboBox, and for all other types you will get a plain TextBox. Here is an example of how to achieve that:
 
-#### __C#__
+
 
 ```C#
 	private void OnRadGridViewFieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
@@ -32,7 +32,7 @@ Depending on the column DataType the editor will be different. For String column
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnRadGridViewFieldFilterEditorCreated(sender As System.Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
@@ -52,7 +52,7 @@ You can adjust anything on the stock field filter editor like this. If the defau
 
 In case you need the filtering to be re-applied on every character entered, you may consider using the following approach:
 
-#### __C#__
+
 
 ```C#
 	private void OnRadGridViewFieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
@@ -73,7 +73,7 @@ In case you need the filtering to be re-applied on every character entered, you 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnRadGridViewFieldFilterEditorCreated(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)

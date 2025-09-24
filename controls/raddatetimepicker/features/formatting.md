@@ -30,7 +30,7 @@ Here is a brief description of each value in the __DisplayFormat__ enumerator pr
 
 For example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker DisplayFormat="Long"/>
@@ -44,19 +44,19 @@ You can change the __RadDateTimePicker__ control's culture via the __Culture__ p
 
 Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" Culture="de"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo( "de" );
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("de")
@@ -72,7 +72,7 @@ You can easily customize the date format in the __RadDateTimePicker__ through it
 
 Here is an example of defining a custom format for the __RadDateTimePicker's__ items:
 
-#### __C#__
+
 
 ```C#
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo("en-US");
@@ -82,7 +82,7 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__ i
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("en-US")

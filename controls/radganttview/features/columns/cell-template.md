@@ -16,7 +16,7 @@ The __CellTemplate__ is the Template that is displayed in the cell of each roll.
 
 The next example demonstrates how to customize the CellTemplate of the Title columns in order to change the __FontWeight__ and __Foreground__ of the text. All that you need to do is set the Template to the wanted DataTemplate in the xaml of the control. The next code snippet shows how the GanttView control should look like:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"

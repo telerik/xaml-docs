@@ -36,7 +36,7 @@ You can also set custom colors for the Children of the __RadTreeMap__ item by us
 
 Sets the properties for the nodes of the __RadTreeMap__ and __RadPivotMap__ control depending on a custom business logic.
 
-#### __C#__
+
 
 ```C#
 	public class FileCustomMapping : CustomMapping
@@ -61,7 +61,7 @@ Sets the properties for the nodes of the __RadTreeMap__ and __RadPivotMap__ cont
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class FileCustomMapping

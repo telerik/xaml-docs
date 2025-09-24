@@ -39,7 +39,7 @@ Note that the __ApplicationMenu__ can be used as a stand-alone control, independ
 
 In order to add an application menu to your __RadRibbonView__ control you need to set the __RadRibbonView__'s __ApplicationMenu__ property. The next several code-snippets show you how to do that in XAML, as well as in the code-behind.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonView.ApplicationMenu>
@@ -49,13 +49,13 @@ In order to add an application menu to your __RadRibbonView__ control you need t
 	</telerik:RadRibbonView>
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radRibbonView.ApplicationMenu = new ApplicationMenu();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radRibbonView.ApplicationMenu = New ApplicationMenu()
@@ -69,7 +69,7 @@ When you want to add menu items to your __RadRibbonView__'s application menu, yo
 
 The next example demonstrates how to add several buttons as menu items to your application menu.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView.ApplicationMenu>
 	    <telerik:ApplicationMenu telerik:KeyTipService.AccessText="F">
@@ -267,7 +267,7 @@ The second element you may want to initialize when building an application menu 
 
 The next example shows you how to set the __ApplicationMenu__'s __Content__ property. Note that in this example the [initialization](#adding-menu-items) of the menu items is skipped.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView.ApplicationMenu>
 	    <telerik:ApplicationMenu telerik:KeyTipService.AccessText="F">
@@ -298,7 +298,7 @@ The next example shows you how to set the __ApplicationMenu__'s __Content__ prop
 
 The last element of the application menu is the __Footer Content__. This is the bottom pane of the application menu. Here are usually placed application options and exit buttons. In order to initialize it you need to set the __ApplicationMenu__'s __FooterContent__ property like in the example below.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView.ApplicationMenu>
 	    <telerik:ApplicationMenu telerik:KeyTipService.AccessText="F">
@@ -359,7 +359,7 @@ In order to learn how to customize the application menu button, disable it or hi
 
 The __RadRibbonView__ class exposes the __ApplicationButtonDoubleClick__ event, which is fired when the __RibbonView__'s __ApplicationButton__ is __double-clicked__.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView ApplicationButtonDoubleClick="RadRibbonView_ApplicationButtonDoubleClick"/>
 ```
@@ -368,7 +368,7 @@ The __ApplicationButtonDoubleClick__ event handler receives two arguments:
 	* The sender argument contains the __RadRibbonView__. This argument is of type __object__, but can be cast to the __RadRibbonView__ type.
 	* The second argument is a __RadRoutedEventArgs__ object.
 
-#### __C#__
+
 ```C#
 	private void RadRibbonView_ApplicationButtonDoubleClick(object sender, RadRoutedEventArgs e)
 	{
@@ -377,7 +377,7 @@ The __ApplicationButtonDoubleClick__ event handler receives two arguments:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub RadRibbonView_ApplicationButtonDoubleClick(sender As Object, e As RadRoutedEventArgs)
 		Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)

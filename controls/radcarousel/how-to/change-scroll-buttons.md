@@ -21,7 +21,7 @@ RadCarousel does provide a built-in scroll bar that enables you to move the item
 
 Finally, the implementation should be as follows:
 
-#### __XAML__
+
 
 ```XAML
 	<Grid.Resources>
@@ -50,7 +50,7 @@ Finally, the implementation should be as follows:
 	</Grid>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void pageDownButton_Click(object sender, RoutedEventArgs e)

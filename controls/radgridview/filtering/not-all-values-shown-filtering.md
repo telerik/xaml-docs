@@ -24,7 +24,7 @@ You can manually set the ItemsSource of the distinct values listbox. Just subscr
 
 Here is a small example:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_DistinctValuesLoading(object sender, GridViewDistinctValuesLoadingEventArgs e)

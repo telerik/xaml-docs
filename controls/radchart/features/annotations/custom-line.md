@@ -32,7 +32,7 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 
 >Note that this line will cross the entire __ChartArea__. If you want only a specific part of it to appear, you have to define the __clipping points__ by setting the __MinX__, __MinY__, __MaxX__, __MaxY__properties of the __CustomLine__. Their values should represent values somewhere on the respective axis.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -59,7 +59,7 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 
 
 
-#### __C#__
+
 
 ```C#
 	CustomLine customLine = new CustomLine();
@@ -76,7 +76,7 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim _customLine As New CustomLine()
@@ -100,7 +100,7 @@ Here is a snapshot of the final result.
 
 To make your custom line parallel to one of the two Axes you should set the *Slope* to __Infinity__ and specify the *MinY* and *MaxY* properties in order to get it clipped properly. For example the following code snippet will draw a custom line parallel to the YAxis which intercepts the XAxis in X = 2:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:ChartArea.Annotations>

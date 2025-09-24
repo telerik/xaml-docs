@@ -93,7 +93,7 @@ CaretMovementType.MoveToEndOfDocument</td></tr></table>
 
 The key bindings of the viewer can be retrieved using the __KeyBindings__ property. After that, you can proceed to modify the collection using the public API of the class:
 
-#### __C#__
+
 
 ```C#
 	public void Clear()                                                //Clears the collection
@@ -109,7 +109,7 @@ The key bindings of the viewer can be retrieved using the __KeyBindings__ proper
 
 Here is an example that shows how the default input bindings can be cleared and two ways of registering new key bindings:
 
-#### __C#__
+
 
 ```C#
 	this.pdfViewer.Clear();

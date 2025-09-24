@@ -36,7 +36,7 @@ The __MapShape__ class gives you the ability to specify caption for your Shapes 
 
 The most important things when using the __MapLine__ object are the __Point1__ and __Point2__ properties, which are of type __Location__. They define the start and the end points of the line. Here is an example.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
@@ -72,7 +72,7 @@ Additionally you can use the following properties:
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
@@ -108,7 +108,7 @@ To use the __MapEllipse__ in your __RadMap__ you have to set the following of it
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
@@ -130,7 +130,7 @@ Here is an example:
 
 The only difference between the standard __Polyline__ and the __MapPolyline__ is that the __Points__ property of the __MapPolyline__ is a set of __Locations__. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
@@ -149,7 +149,7 @@ The only difference between the standard __Polyline__ and the __MapPolyline__ is
 
 The only difference between the standard __Polygon__ and the __MapPolygon__ is that the __Points__ property of the __MapPolygon__ is a set of __Locations__. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap" Width="600" Height="480">
 		<telerik:InformationLayer>
@@ -174,7 +174,7 @@ The only difference between the standard __Polygon__ and the __MapPolygon__ is t
 
 Except the __MapPath__ class you also have an analog for each standard __Geometry__ or __Segment__ class. Here is an example of an __MapPath__ that uses __MapArcSegments.__
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"

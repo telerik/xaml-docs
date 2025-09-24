@@ -27,7 +27,7 @@ The __RadDiagramThumbnail__ control provides a preview of the overall layout of 
 
 You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In both cases, in order to synchronize it with your diagram, you need to set its __Diagram__ property accordingly.	  
 
-#### __XAML__
+
 ```XAML
     <Grid x:Name="LyoutRoot">
         <Grid.RowDefinitions>
@@ -50,14 +50,14 @@ You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In bo
     </Grid>
 ```
 
-#### __C#__	
+	
 ```C#
     RadDiagramThumbnail xDiagramThumbnail= new RadDiagramThumbnail() { Diagram = this.xDiagram };
     ...
     this.LayoutRoot.Children.Add(xDiagramThumbnail);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Dim xDiagramThumbnail As New RadDiagramThumbnail() With { .Diagram = Me.xDiagram }
     ...
@@ -74,7 +74,7 @@ If you need to update the __RadDiagramThumbnail__ viewport, you can take advanta
 
 The __RadDiagramThumbnail__ indicates the current viewport of the __RadDiagram__ through a __Red Rectangle__ element. You can change the style of this rectangle by applying a custom style on it. The __RadDiagramThumbnail__ control exposes a __ViewportStyle__ property which you can use to change the __Stroke__ and the __StrokeThickness__ of the Viewport rectangle.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagramThumbnail x:Name="xThumbnail"
 								 Grid.Row="1"

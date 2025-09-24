@@ -44,7 +44,7 @@ The only possible Time format is:
 
 So, let's have the following RadDateTimePicker:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" Width="200" />
@@ -52,7 +52,7 @@ So, let's have the following RadDateTimePicker:
 
 Here is how the military parsing can be set:
 
-#### __C#__
+
 
 ```C#
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo("en-US");

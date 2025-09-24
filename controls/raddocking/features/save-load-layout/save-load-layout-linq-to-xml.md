@@ -18,7 +18,7 @@ In many scenarios when creating an application that requires a more complex and 
                     
 Create a new application and add the following declaration.
                 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -121,7 +121,7 @@ Example 1 shows how you can convert the generated XML from the SaveLayout functi
 
 * Use the static __Load__ method of the XElement class with the temporary MemoryStream object in order to convert it to XElement
 
-#### __C#__
+
 
 ```C#
 	private XElement dockingLayout;
@@ -154,7 +154,7 @@ Example 2 shows how to load a RadDocking control's layout stored as valid XEleme
 
 * Call the __LoadLayout__ method of the control with the temporary MemoryStream object.
 
-#### __C#__
+
 
 ```C#
 	private void OnLoadLayoutButtonClick(object sender, RoutedEventArgs e)

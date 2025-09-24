@@ -30,7 +30,7 @@ You can change this default value of __TimeSpan.FromTicks(1)__ in order to influ
 
 2. Item 1: StartDate = new DateTime(2011, 1, 24), Duration = TimeSpan.FromDays(20)
 
-#### __XAML__
+
 
 ```XAML
 	 <telerik:RadTimeline PeriodStart="2011-01-01"
@@ -59,7 +59,7 @@ The first item in the __ItemsSource__ of the __RadTimeline__ control is placed i
 
 The code sample below demonstrates how you can set the __AutoSort__ property of a __RadTimeline__ control:
 
-#### __XAML__
+
 
 ```XAML
 	  <telerik:RadTimeline PeriodStart="2011-01-01"
@@ -93,7 +93,7 @@ Using the __ItemRowIndexGenerator__ property of the __RadTimeline__ control you 
 
 The example below shows how you can specify a custom item __RowIndex__ generator for a __RadTimeline__ control:
 
-#### __XAML__
+
 
 ```XAML
 	 <telerik:RadTimeline PeriodStart="2011-01-01"
@@ -119,7 +119,7 @@ An item __RowIndex__ generator is a class that implements the __IItemRowIndexGen
 
 Below you can find an implementation of a sample generator that positions every item in a new row:
 
-#### __C#__
+
 
 ```C#
 		using System.Collections.Generic;
@@ -144,7 +144,7 @@ Below you can find an implementation of a sample generator that positions every 
 		}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 		Public Class TimelineData

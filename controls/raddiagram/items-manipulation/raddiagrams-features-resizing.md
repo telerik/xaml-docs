@@ -18,7 +18,7 @@ __RadDiagram__ gives you the ability to resize shapes by dragging their __Resizi
 
 By default the __RadDiagram__ is enabled for resizing manipulation. In order to disable this functionality, you can set __IsResizingEnabled__ to __False__
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram IsResizingEnabled="False">
 		<telerik:RadDiagramShape 
@@ -33,7 +33,7 @@ By default the __RadDiagram__ is enabled for resizing manipulation. In order to 
 
 You can resize shapes by using their __Width__ and __Height__ properties:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape Width="300" 

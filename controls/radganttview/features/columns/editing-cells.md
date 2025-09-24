@@ -20,7 +20,7 @@ The next example will demonstrate how to customize the CellEditTemplate of the _
 
 The xaml of the GanttView should look like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" 

@@ -22,7 +22,7 @@ This topic will show you how to enable and disable menu items. There are several
 
 Disabling all menu items can be easily done by just setting the __IsEnabled__ property of the __RadMenu__ parent control to __False__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu VerticalAlignment="Top" IsEnabled="False">
@@ -37,7 +37,7 @@ This will disable the top-level menu items and they won't be expandable.
 
 To disable a static menu item you just have to set its __IsEnabled__ property to __False__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenuItem Header="Save as ..." IsEnabled="False" />
@@ -53,7 +53,7 @@ To disable a static menu item you just have to set its __IsEnabled__ property to
 
 In order to disable a dynamic menu item you have to bind its __IsEnabled__ property to the appropriate boolean property of your data item. To do this you can set the ItemContainerStyle property of RadMenu.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMenu>
 	    <telerik:RadMenu.ItemContainerStyle>

@@ -75,7 +75,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 
 * __ItemsFilterCondition__ - used when you want to apply to conditions simultaneously (it is mandatory one of them to be SetCondition). *ItemsFilterCondition* has property Condition where you can set an instance of Comparison, Interval or Text condtions. The property DistinctCondition needs an instance of SetCondition.                  
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
@@ -89,7 +89,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	</pivot:DateTimeGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
@@ -103,7 +103,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	dateTimeGroupDescription.GroupFilter = labelFilter;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
@@ -119,7 +119,7 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 
 And here is how to apply ItemsFilterCondition:              
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:PropertyGroupDescription PropertyName="Name" >
@@ -145,7 +145,7 @@ And here is how to apply ItemsFilterCondition:
 	</pivot:PropertyGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	Telerik.Pivot.Core.PropertyGroupDescription propertyGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
@@ -171,7 +171,7 @@ And here is how to apply ItemsFilterCondition:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim propertyGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
@@ -235,7 +235,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 
 * __IntervalCondition__ - used when you want to show only data that is (not) between two values set in the *From* and *To* properties based on the *Condition* property.
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
@@ -249,7 +249,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	</pivot:DateTimeGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
@@ -265,7 +265,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	dateTimeGroupDescription.GroupFilter = valueGroupFilter;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
@@ -305,7 +305,7 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 
 * __GroupsSumFilter__ - selects from the groups until sum of their GrandTotals reaches a given number. It is important to define the *Sum* property which indicates the Sum of GrandTotal that selected groups should reach, *Selection* property, which defines if the Top or Bottom groups will be shown and *AggregateIndex* property which defines which Aggregate Description will be used for the filter.
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month">
@@ -315,7 +315,7 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	</pivot:DateTimeGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	DateTimeGroupDescription dateTimeGroupDescription = new DateTimeGroupDescription();
@@ -328,7 +328,7 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	dateTimeGroupDescription.GroupFilter = countFilter;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()

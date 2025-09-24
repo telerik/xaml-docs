@@ -24,7 +24,7 @@ Having this in mind, you can control the behavior and enable/disable different p
           
 You can __disable whole column__ by changing the __IsEnabled__ property of each one of __its cells__. This property gets or sets a value indicating whether this element is enabled in the user interface (UI). This is a dependency property inherited from [UIElement](http://msdn.microsoft.com/en-us/library/system.windows.uielement).
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="disabledStyle" TargetType="telerik:GridViewCell">
@@ -32,7 +32,7 @@ You can __disable whole column__ by changing the __IsEnabled__ property of each 
 	</Style>
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding CompanyName}" CellStyle="{StaticResource disabledStyle}"/>
@@ -44,7 +44,7 @@ The screenshot below illustrates RadGridView control with a few disabled cells a
 
 To __disable all the rows__ you need to apply a Style targeting the __GridViewRow__ element.
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="telerik:GridViewRow">

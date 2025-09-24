@@ -25,7 +25,7 @@ The __Marker__ control is represented by a triangle shape. The appearance and th
 
 Here is an example of a __Marker__ definition:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="12">

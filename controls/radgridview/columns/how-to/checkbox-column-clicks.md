@@ -30,7 +30,7 @@ In addition to __EditTriggers="CellClick"__ property, you can set the __AutoSele
 
 This could be done in __XAML__ or in __code behind__ when the columns are auto generated:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewCheckBoxColumn Name="CheckBoxColumn"
@@ -40,7 +40,7 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 ```
 
 
-#### __C#__
+
 
 ```C#
 	private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
@@ -64,7 +64,7 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub gridView_AutoGeneratingColumn(sender As Object, e As GridViewAutoGeneratingColumnEventArgs)
@@ -88,7 +88,7 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 
 Another approach would be to leverage the __CellTemplate__ of GridViewDataColumn and put a checkbox in it:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding IsActive}" 

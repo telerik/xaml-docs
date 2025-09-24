@@ -43,14 +43,14 @@ FIGURE 1: Programmatically sorted RadGridView:
       
 Another approach is to add the new __SortDescriptor__ object (instead of __ColumnSortDescriptor__) to the RadGridView.SortDescriptors collection:
 
-#### __C#__
+
 ```C#
 	SortDescriptor descriptor = new SortDescriptor();
 	descriptor.Member = "Title";
 	descriptor.SortDirection = ListSortDirection.Ascending;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "Title"
@@ -65,7 +65,7 @@ The __SortDirection__ property allows you to define the sorting direction.
 You can easily create a sort descriptor in XAML and then add it to the SortDescriptors collection.
 For example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	             AutoGenerateColumns="False">
@@ -80,7 +80,7 @@ For example:
 As of __Q3 2011__, you can create a ColumnSortDescriptor in XAML and then add it to the SortDescriptors collection.
       
 For example:
-#### __XAML__
+
 ```XAML
 	<telerik:RadGridView x:Name="clubsGrid" 
 	                AutoGenerateColumns="False">

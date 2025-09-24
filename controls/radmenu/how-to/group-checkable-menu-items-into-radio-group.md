@@ -16,7 +16,7 @@ This tutorial will show you how to group your checkable menu items into a radio 
 
 Here is a sample __RadMenu__ and one of its items has two radio groups. Notice that the __Tag__ property of the __RadMenuItem__ is used to store the name of the Radio Group. In this case the groups are named "1" and "2".        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu x:Name="radMenu">
@@ -57,7 +57,7 @@ Here is a sample __RadMenu__ and one of its items has two radio groups. Notice t
 
 The next step is to handle the __ItemClick__ event of the __RadMenu.__ It gets fired each time an item gets clicked __.__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu x:Name="radMenu1" ItemClick="radMenu_ItemClick">
@@ -67,7 +67,7 @@ The next step is to handle the __ItemClick__ event of the __RadMenu.__ It gets f
 
 In the event handler you get the item that has been clicked and check if it is checkable or is placed in a group.
 
-#### __C#__
+
 
 ```C#
 	private void radMenu_ItemClick(object sender, RadRoutedEventArgs e)
@@ -80,7 +80,7 @@ In the event handler you get the item that has been clicked and check if it is c
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
@@ -97,7 +97,7 @@ The next step is to get the sibling items of the clicked one, which are from the
 
 In order the uncheck the other items from the same group, you have to get them first. Here is a method that takes as a parameter the clicked item and returns the sibling items which are from the same group.
 
-#### __C#__
+
 
 ```C#
 	private List<RadMenuItem> GetSiblingGroupItems(RadMenuItem currentItem)
@@ -124,7 +124,7 @@ In order the uncheck the other items from the same group, you have to get them f
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function GetSiblingGroupItems(currentItem As RadMenuItem) As List(Of RadMenuItem)
@@ -152,7 +152,7 @@ First you get the parent item of the clicked one and then you iterate through it
 
 Now as the sibling items from the same group are available, the only things that's left is to unmark those of them which are different from the clicked one as unchecked.
 
-#### __C#__
+
 
 ```C#
 	private void radMenu_ItemClick(object sender, Telerik.Windows.RadRoutedEventArgs e)
@@ -175,7 +175,7 @@ Now as the sibling items from the same group are available, the only things that
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radMenu_ItemClick(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
@@ -211,7 +211,7 @@ When having __RadMenu__ with dynamic data in it, the logic remains the same, but
 
 * __SubMenuItems__ - represents a collection with the sub menu items of the item. It will be bound to the __ItemsSource__ property of the __RadMenuItem__.
 
-#### __C#__
+
 
 ```C#
 	public class MenuItem
@@ -224,7 +224,7 @@ When having __RadMenu__ with dynamic data in it, the logic remains the same, but
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MenuItem
@@ -238,7 +238,7 @@ When having __RadMenu__ with dynamic data in it, the logic remains the same, but
 
 These properties should be bound in the __Style__ for the __RadMenuItem__ container to its respective properties:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="MenuItemStyle" TargetType="telerik:RadMenuItem">
@@ -255,7 +255,7 @@ Next step will be to initialize the collection with the MenuItem objects which w
 
 The ViewModel should look as shown below:        
 
-#### __C#__
+
 
 ```C#
 	public class ViewModel
@@ -285,7 +285,7 @@ The ViewModel should look as shown below:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ViewModel
@@ -310,7 +310,7 @@ The ViewModel should look as shown below:
 
 Finally you need to set the created style to the __ItemContainerStyle__ property and bind the collection to the __ItemsSource__ property of the __RadMenu__.      
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu x:Name="radMenu2" 

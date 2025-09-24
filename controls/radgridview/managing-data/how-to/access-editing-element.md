@@ -18,7 +18,7 @@ First, let's start with a real world scenario - you have a cell which shows a lo
 
 To make the editing textbox wraps the text as well you need to subscribe to the PreparingCellForEdit event, find the editing element and set its property:
 
-#### __C#__
+
 
 ```C#
 	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
@@ -31,7 +31,7 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
@@ -48,7 +48,7 @@ Now it is better:
 
 Ok, what if I do not want have this text selected, but want to have the cursor positioned at the end of it? Here comes the other useful event - PreparedCellForEdit which fires when the cell is already prepared for editing:
 
-#### __C#__
+
 
 ```C#
 	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
@@ -62,7 +62,7 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)

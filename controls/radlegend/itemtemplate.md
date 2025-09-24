@@ -19,7 +19,7 @@ Note that a GeometryCloneConverter is used in the Path.Data Binding. This is to 
 A simple demonstration how to use the ItemTemplate property is given below:
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 ```XAML
 	<telerik:RadLegend HorizontalAlignment="Center" UseLayoutRounding="True">
 	    <telerik:RadLegend.ItemTemplate>
@@ -53,7 +53,7 @@ A simple demonstration how to use the ItemTemplate property is given below:
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 ```XAML
 	<telerik:RadLegend HorizontalAlignment="Center" UseLayoutRounding="True">
 	    <telerik:RadLegend.ItemTemplate>

@@ -44,7 +44,7 @@ The constructor of __CodeFormattingSettings__ requires a code language to be spe
 Additionally, you can enable the display of line numbers and the alternating lines options.
         
 
-#### __C#__
+
 
 ```C#
 	string code = "this.IsCodeBlock = true;\nthis.IsCodeBlock = false;\nthis.IsCodeBlock = true;";
@@ -65,7 +65,7 @@ The inner representation of the code block in the document is achieved by surrou
 To remove the code block you can use the __DeleteCodeBlock()__ method of __RadRichTextBox__ accepting __CodeAnnotationRangeStart__ as parameter:
         
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.DeleteCodeBlock(codeBlockRangeStart);
@@ -89,7 +89,7 @@ The default taggers are based on regular expressions, which come particularly ha
 You can also register or change which style will be used for which classification types in which language in the __CodeFormatter__ class. Here is how to change the color for all comments when formatting JavaScript:
         
 
-#### __C#__
+
 
 ```C#
 	StyleDefinition commentJS = new StyleDefinition("CommentJS", StyleType.Character);

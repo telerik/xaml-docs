@@ -12,7 +12,7 @@ position: 1
 
 By default all __TileViewItems__ are ordered automatically like in the screenshot below:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView>
@@ -43,7 +43,7 @@ By default all __TileViewItems__ are ordered automatically like in the screensho
 
 To set the number of columns you can use the __ColumnsCount__ property:		
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView ColumnsCount="2">
@@ -72,7 +72,7 @@ To set the number of columns you can use the __ColumnsCount__ property:
 
 To set the maximum number of columns you can use the __MaxColumns__ property:		
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView MaxColumns="2">
@@ -104,7 +104,7 @@ The result from the above code is displayed below. As you can see now the items 
 
 To set the number of rows you can use the __RowsCount__ property.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView RowsCount="1">
@@ -133,7 +133,7 @@ To set the number of rows you can use the __RowsCount__ property.
 
 To set the maximum number of rows you can use the __MaxRows__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView MaxRows="1">
@@ -163,7 +163,7 @@ As you can see now the items are ordered in one row only:
 
 When both __ColumnsCount/MaxColumns__ and __RowsCount/MaxRows__ properties are set, the value of __ColumnsCount/MaxColumns__ will have a priority.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView ColumnsCount="2" RowsCount="1">

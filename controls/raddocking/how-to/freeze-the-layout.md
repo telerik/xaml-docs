@@ -20,7 +20,7 @@ The purpose of this tutorial is to show you how to __freeze__ the entire layout 
 
 For the purpose of this tutorial the following __RadDocking__ declaration will be used:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking">
@@ -66,7 +66,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 
 In order to disable the close button, you need to set the __CanUserClose__ property of the __RadPane__ to __False__. So find the __RadPane__ declarations and set the __CanUserClose__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<!--...-->
@@ -87,7 +87,7 @@ Here is the result:
 
 In order to disable the pin/unpin button, you need to set the __CanUserPin__ property of the __RadPane__ to __False__. So find the __RadPane__ declarations and set the __CanUserPane__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<!--...-->
@@ -108,7 +108,7 @@ Here is the result:
 
 In order to disable the float behavior, you need to set the __CanFloat__ property of the __RadPane__ to __False__. Which means that the user will not be able to drag and drop the panes. So find the __RadPane__ declarations and set the __CanFloat__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<!--...-->
@@ -127,7 +127,7 @@ In order to remove the menu from the __RadPane__, you need to remove all the men
 
 Switch to the code-behind and clear the __MenuCommands__ collection of each __RadPane__.
 
-#### __C#__
+
 
 ```C#
 	private void DisableMenu()
@@ -139,7 +139,7 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub DisableMenu()

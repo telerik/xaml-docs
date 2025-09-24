@@ -28,7 +28,7 @@ For demonstration purposes we will use a simple class that will represent one ce
 * __Column__: А string property which gets or sets the column name of the corresponding cell.
 * __Value__: Аn integer property which gets or sets the value of the corresponding cell.
 
-#### __C#__
+
 ```C#
 	public class PlotInfo
 	{
@@ -42,7 +42,7 @@ For demonstration purposes we will use a simple class that will represent one ce
 
 To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objects and set it as DataContext of the control. 
 	
-#### __C#__
+
 ```C#
 	public partial class MainWindow : Window
     {
@@ -73,7 +73,7 @@ To fill the RadHeatMap with sample data we can create a list of *PlotInfo* objec
 
 After having the sample data ready we can go in the XAML code and define the RadHeatMap and the CellLabelSettings.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadHeatMap x:Name="heatMap"
 						CellBorderColor="Black"

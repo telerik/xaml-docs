@@ -32,7 +32,7 @@ The following example will demonstrate how to implement a custom __FilteringBeha
 
 Firstly you need to create a custom class that inherits the default __ComboBoxFilteringBehavior__:
 
-#### __C#__
+
 
 ```C#
 	public class StringLengthFilteringBehavior : ComboBoxFilteringBehavior
@@ -51,7 +51,7 @@ Firstly you need to create a custom class that inherits the default __ComboBoxFi
 
 Next thing you have to do is to override the __FindMatchingIndexes()__ method that should return a collection of integer objects representing the indexes of the items whose length is smaller than the typed one. The charLength field is used in this concrete scenario to preserve the currently typed length:
 
-#### __C#__
+
 
 ```C#
 	private int charLength;
@@ -79,7 +79,7 @@ Next thing you have to do is to override the __FindMatchingIndexes()__ method th
 
 The __FindFullMatchIndex()__ method also needs to be overridden. It should return the index of the first item that fully matches the typed length and that item will be highlighted. However, if there is no match, the method should return -1 – thus the first item will be highlighted:
 
-#### __C#__
+
 
 ```C#
 	public override int FindFullMatchIndex(ReadOnlyCollection<int> matchIndexes)
@@ -116,7 +116,7 @@ The __FindFullMatchIndex()__ method also needs to be overridden. It should retur
 
 Finally all you need to do is to set the newly created behavior to the FilteringBehavior of RadComboBox:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadComboBox  IsEditable="True" 
 						  OpenDropDownOnFocus="True"

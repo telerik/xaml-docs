@@ -14,7 +14,7 @@ This article will guide you through  the steps that you need to take to customiz
 
 The __RadDiagram__ uses the __ItemInformationAdorner Control__ to visualize information regarding the position, size and rotation angle of its shapes. This control switches tree predefined __DataTemplates__ at runtime depending on the user’s actions. To do this the __ItemInformationAdorner__ exposes the __InformationTipTemplateSelector__ property. It is of type __DataTemplateSelector__ and can be used to get or set an instance of custom data template selector. For your convenience we ship ready to use selector in our suite and the __RadDiagram__ uses it by default. In order to customize how the information is presented, you only need to define the __SizeChangedTemplate__, __PositionChangedTemplate__ and __RotationChangedTemplate__ properties of the built-in __InformationTipTemplateSelector__ and assign it to the __ItemInformationAdorner.InformationTipTemplateSelector__ property. In order to change the predefined __DataTemplateSelector__ you can use the following __Style__
 	
-#### __XAML__
+
 ```XAML
 	<Style TargetType="primitives:ItemInformationAdorner">
 		<Setter Property="InformationTipTemplateSelector" Value="{StaticResource informationTemplateSelector}" />
@@ -23,14 +23,14 @@ The __RadDiagram__ uses the __ItemInformationAdorner Control__ to visualize info
 
 Where the *primitives* namespace is defined like this:
 
-#### __XAML__
+
 ```XAML
 	xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
 ```
 
 And the __StaticResource__ is defined like this:
 
-#### __XAML__	
+	
 ```XAML
 	<primitives:InformationTipTemplateSelector x:Key="informationTemplateSelector" 
 											   PositionChangedTemplate="{StaticResource PositionTipTemplate}" 
@@ -45,7 +45,7 @@ As the names of the properties imply the __PositionChangedTemplate__ will be sel
 
 In order to customize all three templates you can first extract the default ones and use them as starting point. You can find more information about extracting default __ControlTemplates__ in {% if site.site_name == 'WPF' %}[this article](http://www.telerik.com/help/wpf/styling-apperance-editing-control-templates.html){% endif %}{% if site.site_name == 'Silverlight' %}[this article](http://www.telerik.com/help/silverlight/styling-apperance-editing-control-templates.html){% endif %} Below you can find the default __Styles__ and __DataTemplates__ used by the __RadDiagram__.        
 
-#### __XAML__	
+	
 ```XAML
 	<Style x:Key="infoTipPanel" TargetType="StackPanel">
 		<Setter Property="Orientation" Value="Horizontal" />
@@ -101,7 +101,7 @@ These __Styles__ and __DataTemplates__ can be used as starting point for your cu
 
 Another way to implement the same customizations is to create a new __TemplateSelector__ and use it instead of the provided one. In that custom selector you will be able to implement custom template selecting logic.
 
-#### __C#__
+
 ```C#
 	  public class MyTemplateSelector:DataTemplateSelector
 	  {
@@ -131,7 +131,7 @@ Another way to implement the same customizations is to create a new __TemplateSe
 	  }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	  Public Class MyTemplateSelector
 		Inherits DataTemplateSelector
@@ -179,7 +179,7 @@ Another way to implement the same customizations is to create a new __TemplateSe
 
 Once defined, you will be able to use this custom TemplateSelector in XAML. You will be able to assign custom __DataTemplates__ to the exposed properties thus selecting your custom templates.
 
-#### __XAML__
+
 ```XAML
 	<local:MyTemplateSelector x:Key="MyTemplateSelector"
 							  PositionTemplate="{StaticResource MyPositionTemplate}"

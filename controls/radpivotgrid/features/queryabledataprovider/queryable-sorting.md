@@ -39,7 +39,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 
 * Sorting based on the GroupName (header) can be *Ascending (from A to Z)* or *Descending (from Z to A*). The default value is *Ascending*, but you can change it by using __SortOrder__ property:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="Ascending"/>
@@ -47,7 +47,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="Ascending"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
@@ -63,7 +63,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
@@ -81,7 +81,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 
 * If you need to avoid the data to be sorted anyhow, you can set the __SortOrder__ property to __None__. This way the data will appear the way it is was received from the data source:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="None"/>
@@ -89,7 +89,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	<pivot:QueryableDateTimeGroupDescription PropertyName="OrderDate" SortOrder="None"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
@@ -105,7 +105,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
@@ -125,7 +125,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 
 * Sorting based on the GrandTotals can be *Ascending* or *Descending*. To set such sort mechanism you have to use the __SortOrder__ and __GroupComparer__ properties:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry" SortOrder="Ascending">
@@ -145,7 +145,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	</pivot:QueryableDateTimeGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
@@ -164,7 +164,7 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	orderDateCountryGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()

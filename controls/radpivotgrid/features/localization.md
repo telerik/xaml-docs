@@ -32,14 +32,14 @@ More information on how to achieve this you can find in the [Localization Using 
 
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls just instantiate your custom LocalizationManager and set it to the static property LocalizationManager.Manager, before the creation of the UI:        
 
-#### __C#__
+
 
 ```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
 	InitializeComponent();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	LocalizationManager.Manager = New CustomLocalizationManager()
@@ -48,7 +48,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 
 *CustomLocalizationManager* must inherit __LocalizationManager__ and override its *GetStringOverride* method. Here is an implementation of a custom localization:        
 
-#### __C#__
+
 
 ```C#
 	public class CustomLocalizationManager : LocalizationManager
@@ -218,7 +218,7 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class CustomLocalizationManager

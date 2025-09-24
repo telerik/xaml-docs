@@ -16,7 +16,7 @@ If you want to filter a column that is __data-bound to a custom type__, you need
 
 Add one or more sections with content
 
-#### __C#__
+
 
 ```C#
 	public class Person
@@ -47,7 +47,7 @@ Add one or more sections with content
 
 The first thing that you need to do is implement the IEquatable interface. It has a single method called Equals.
 
-#### __C#__
+
 
 ```C#
 	public class Person : IEquatable<Person>
@@ -86,7 +86,7 @@ The first thing that you need to do is implement the IEquatable interface. It ha
 
 Next, you need to override Object.Equals(Object) and Object.GetHashCode. MSDN states that if you implement IEquatable, you should also override the base class implementations of Object.Equals(Object) and Object.GetHashCode so that their behavior is consistent with that of the IEquatable.Equals method. If you do override Object.Equals(Object), your overridden implementation is also called in calls to the static Equals(System.Object, System.Object) method on your class. This ensures that all invocations of the Equals method return consistent results. Furthermore, the GetHashCode method will be used by the framework when the distinct values need to be discovered.
 
-#### __C#__
+
 
 ```C#
 	public override bool Equals(object obj)
@@ -104,7 +104,7 @@ Next, you need to override Object.Equals(Object) and Object.GetHashCode. MSDN st
 
 You need to override the ToString method of your type so that distinct values and grid cells display a friendly representation of your class.
 
-#### __C#__
+
 
 ```C#
 	public override string ToString()
@@ -117,7 +117,7 @@ You need to override the ToString method of your type so that distinct values an
 
 When RadGridView encounters a custom type it will use a plain TextBox for the field filter editors. The strings that user enters have to be converted to your custom type and vice versa. This can be achieved by specifying a TypeConverter on your class.
         
-#### __C#__
+
 
 ```C#
 	public class PersonConverter : TypeConverter
@@ -170,7 +170,7 @@ When RadGridView encounters a custom type it will use a plain TextBox for the fi
 
 If the plain TextBox does not suit your needs, you can provide your own field filter editor by overriding the GridViewColumn.CreateFieldFilterEditor method. You will no longer need a TypeConverter if your custom field filter editor is able to produce instances of your custom type. You only need to data-bind your editor’s significant property to a property called Value residing on its DataContext. The UnsetValue singleton is used for deactivating a filter. Here is what a custom field filter editor may look like:
         
-#### __C#__
+
 
 ```C#
 	public class MyDateTimeColumn : GridViewColumn
@@ -223,7 +223,7 @@ Of course, you don’t need to do that for a DateTime column, since RadGridView 
 
 If you want to see the comparison filter operators (Is Less Than, etc.) you should override your custom type’s comparison operators.
 
-#### __C#__
+
 
 ```C#
 	public static bool operator <(Person left, Person right)

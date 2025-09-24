@@ -18,7 +18,7 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 
 For the purpose of this tutorial, let's define the following __RadTreeView__ control:		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadTreeView x:Name="treeView">
 	    <telerik:RadTreeViewItem Header="Beverages">
@@ -48,7 +48,7 @@ For the purpose of this tutorial, let's define the following __RadTreeView__ con
 
 In order to persist the __RadTreeView__'s properties in a stream, you need to create an instance of the __PersistenceManager__:		
 
-#### __C#__
+
 ```C#
 	private Stream stream;
 	private void Save(object sender, RoutedEventArgs e)
@@ -58,7 +58,7 @@ In order to persist the __RadTreeView__'s properties in a stream, you need to cr
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private stream As Stream
 	
@@ -70,7 +70,7 @@ In order to persist the __RadTreeView__'s properties in a stream, you need to cr
 
 The persisted visual state of the __RadTreeView__ control can be restored using the __PersistencaManager__.__Load__ method:		
 
-#### __C#__
+
 ```C#
 	private void Load(object sender, RoutedEventArgs e)
 	{
@@ -80,7 +80,7 @@ The persisted visual state of the __RadTreeView__ control can be restored using 
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub Load(sender As Object, e As RoutedEventArgs)
 		Dim manager As New PersistenceManager()

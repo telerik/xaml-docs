@@ -36,7 +36,7 @@ For example if you have named your custom theme __MyTheme__, the names of the st
 
 Here is a code snippet containing all the storyboards named for the __MyTheme__.
 
-#### __XAML__
+
 
 ```XAML
 	<!-- Custom Theme Animation BEGIN -->

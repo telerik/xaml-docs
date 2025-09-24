@@ -32,7 +32,7 @@ If you go to the 'Resources' pane you will see that two additional __Styles__ ha
 
 After finishing with the changes it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TitleStyle = this.Resources["AxisTitleStyle"] as Style;
@@ -41,7 +41,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TitleStyle = TryCast(Me.Resources("AxisTitleStyle"), Style)
@@ -56,7 +56,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 Here is the final XAML for the __Style__:
 
-#### __XAML__
+
 
 ```XAML
 	<Thickness x:Key="AxisTitleMargin">10,3,10,3</Thickness>

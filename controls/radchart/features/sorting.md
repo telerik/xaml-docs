@@ -34,7 +34,7 @@ Here is an example of implementing sorting.
 
 >tipTo use the __ChartSortDescriptors__ in XAML you have to declare the following namespace:
 
-#### __XAML__
+
 
 ```XAML
 	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
@@ -42,7 +42,7 @@ Here is an example of implementing sorting.
 
 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -54,7 +54,7 @@ Here is an example of implementing sorting.
 
 
 
-#### __C#__
+
 
 ```C#
 	ChartSortDescriptor descriptor = new ChartSortDescriptor();
@@ -65,7 +65,7 @@ Here is an example of implementing sorting.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim descriptor As New ChartSortDescriptor()

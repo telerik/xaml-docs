@@ -28,7 +28,7 @@ The DocumentSource property of RadPdfViewer exposes an OnException event. The ev
 This is an example how to subscribe the event and handle the exception if there is an unsupported filter:
         
 
-#### __C#__
+
 
 ```C#
 	        private void LoadFromUri(object sender, System.Windows.RoutedEventArgs e)

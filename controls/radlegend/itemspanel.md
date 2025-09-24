@@ -14,7 +14,7 @@ By default the RadLegend uses a StackPanel with Vertical orientation to lay out 
 
 The example here demonstrates the use of the ItemsPanel property and the RadWrapPanel:        
 
-#### __XAML__
+
 ```XAML
 	<Border Width="360" Height="100" BorderThickness="1" BorderBrush="Black">
 	    <telerik:RadLegend>

@@ -28,7 +28,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 		
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 
 ```XAML
     <Grid x:Name="LayoutRoot"
@@ -127,7 +127,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+
 ```XAML
     <Grid x:Name="LayoutRoot"
           Margin="8"
@@ -230,7 +230,7 @@ Find the __ListBox__ declaration and set its __AllowDrop__ property to __True__.
 
 Now that the __ListBox__ allows drop operations, we need to make sure that the __ListItems__ are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowCapturedDrag__ attached property to __True__ on every __ListItem__:		
 
-#### __XAML__
+
 
 ```XAML
 	<!--  Note: With this style we make the ListBoxItems draggable:  -->
@@ -268,7 +268,7 @@ So we basically need a class that provides:
 
 * methods that attach and detach the __DragDropManager__ event handlers.
 
-#### __C#__
+
 
 ```C#
 	using Telerik.Windows.DragDrop;
@@ -371,7 +371,7 @@ So we basically need a class that provides:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Imports Telerik.Windows.DragDrop
@@ -457,7 +457,7 @@ So we basically need a class that provides:
 
 Now let's attach handlers for the __DragDropManager__ events listed above. We'll do that in the __SubscribeToDragDropEvents()__ method and we'll detach from these handlers in the implementation of the __UnsubscribeFromDragDropEvents()__ method.
 
-#### __C#__
+
 
 ```C#
 	//attaching new DragDropManager event handlers
@@ -503,7 +503,7 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'attaching new DragDropManager event handlers'
@@ -542,7 +542,7 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 
 Once we do so, we can start implementing our drag/drop logic. And we'll always have to keep in mind that we need to drag items from the __RadTreeView__ and drop them in the __ListBox__ and vice versa. This means that when we initialize a drag, we need to access the data displayed in the dragged __ListBoxItem__ and add the data to the __DragInitializeEventArgs Data__ object. This will allow us to pass the dragged information during the drag/drop operation. Also, in order to provide the user with elaborate visual information during the drag operation, we can create a helper class that describes the currently dragged item, the item that the drag is passing over, the drop position and the drop index calculated based on the drop position. For instance, we can use the following class definition:
 
-#### __C#__
+
 
 ```C#
 	using Telerik.Windows.Controls;
@@ -605,7 +605,7 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Imports Telerik.Windows.Controls
@@ -666,7 +666,7 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 
 We can use this definition to also pass and keep the drag operation details in the __Data__ object provided by the __DragDropManager__. This means that we can implement the following drag initialization:
 
-#### __C#__
+
 
 ```C#
 	private void OnDragInitialize(object sender, DragInitializeEventArgs e)
@@ -695,7 +695,7 @@ We can use this definition to also pass and keep the drag operation details in t
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnDragInitialize(sender As Object, e As DragInitializeEventArgs)
@@ -723,7 +723,7 @@ We can use this definition to also pass and keep the drag operation details in t
 
 Then we can implement the __GiveFeedback__ event handler, which is quite straight-forward. As this event enables the drop source to give feedback information to the user, we'll use it to change the appearance of the mouse pointer to indicate the effects allowed by the drop target.		
 
-#### __C#__
+
 
 ```C#
 	private void OnGiveFeedback(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs e)
@@ -733,7 +733,7 @@ Then we can implement the __GiveFeedback__ event handler, which is quite straigh
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnGiveFeedback(sender As Object, e As Telerik.Windows.DragDrop.GiveFeedbackEventArgs)
@@ -748,7 +748,7 @@ Next, we have to handle the DragOver event and implement a logic that decides if
 
 As the data object passed by a drag operation started in __RadTreeView__ should be of type __TreeViewDragDropOptions__, this means that you can try to extract this object and if the operation is unsuccessful, then the drag doesn't originate from a __RadTreeView__. Furthermore, we'll have to make sure that the dragged data type matches the data type displayed in the __ListBox__ - in our example this means that we'll make sure we're dragging products. So finally, we can create the following __OnDragOver()__ implementation:
 
-#### __C#__
+
 
 ```C#
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -778,7 +778,7 @@ As the data object passed by a drag operation started in __RadTreeView__ should 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
@@ -804,7 +804,7 @@ As the data object passed by a drag operation started in __RadTreeView__ should 
 
 Finally we'll have to implement the actual drop logic and we'll also have to update the collection displayed in the source of the drag operation accordingly. We'll do that in the handlers of the __Drop__ and __DragDropCompleted__ events.
 
-#### __C#__
+
 
 ```C#
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -839,7 +839,7 @@ Finally we'll have to implement the actual drop logic and we'll also have to upd
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
@@ -881,13 +881,13 @@ And if you start dragging an item from the __ListBox__, you'll be able to get th
 
 In order to configure the __RadTreeView__ to process the drop of an item coming from another control, you need to attach a handler for the __DragDropManager Drop__ event.
 
-#### __C#__
+
 
 ```C#
 	DragDropManager.AddDropHandler(allProductsView, OnDrop);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	DragDropManager.AddDropHandler(allProductsView, OnDrop)
@@ -895,7 +895,7 @@ In order to configure the __RadTreeView__ to process the drop of an item coming 
 
 In the handler you need to get the dragged data, find the position where the item should be dropped at - before, after or inside a particular __RadTreeViewItem__ and implement the drop by adding the dragged data in the __RadTreeView__ ItemsSource collection:
 
-#### __C#__
+
 
 ```C#
 	IList destinationItems = null;
@@ -917,7 +917,7 @@ In the handler you need to get the dragged data, find the position where the ite
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim destinationItems As IList = Nothing
@@ -940,7 +940,7 @@ In the handler you need to get the dragged data, find the position where the ite
 
 And to make the dragging operation more informative, we can also subscribe to the __DragDropManager DragOver__ event to update the drag operation information tooltip while dragging over the __RadTreeView__.
 
-#### __C#__
+
 
 ```C#
 	private void OnItemDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -1013,7 +1013,7 @@ And to make the dragging operation more informative, we can also subscribe to th
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnItemDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)

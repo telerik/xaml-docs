@@ -28,7 +28,7 @@ This topic contains the following sections:
 
 In order to make your __RadComboBox__ editable, you should set its __IsEditable__ property to __True__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True"/>

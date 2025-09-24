@@ -30,7 +30,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 
 * Third, for the second series mapping, __SeriesMapping.SeriesDefinition.AxisName__ is set to the name of the additionally added Y axis - "AxisY_South".
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -75,7 +75,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 
 
 
-#### __C#__
+
 
 ```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
@@ -108,7 +108,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()

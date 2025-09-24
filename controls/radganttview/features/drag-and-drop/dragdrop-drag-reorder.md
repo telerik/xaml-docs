@@ -59,7 +59,7 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 * First you will need to create a custom GanttTask and add a Boolean field that will represent the drag reorder state of the task:
 
-#### __C#__
+
 
 ```C#
 	public class CustomGanttTask : GanttTask
@@ -87,7 +87,7 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 * After that you will need to create the custom DragDropBehavior with one of the previously mentioned approaches. In the __CanStartDrag__ method you can use the __SchedulingDragDropState__ to determine if the drag and drop operation is in the GridView or the Timeline part of the control with the use of the Boolean __IsReorderOperation__ property. If the value of that property is true the drag drop operation is triggered in the [GridView part]({%slug radganttview-visual-structure%}) of the control:
 
-#### __C#__
+
 
 ```C#
 	public class CustomGanttDragDropBehavior : GanttDragDropBehavior
@@ -106,7 +106,7 @@ The next example will demonstrate how to create a custom GanttDragDropBehavior t
 
 * After populating the control with some sample data the declared in the xaml control should look like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="20"

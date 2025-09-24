@@ -22,7 +22,7 @@ All Calculated Fields that you have added to your QueryableDataProvider will be 
 
 The first task is to decide what is the calculation formula that you want to use. For example, you can show the commission that will be paid to all salespeople. Commission will be paid only to those who have more sold for more than $15 000. The price of the sold items is kept by the ExtendedPrice property from the source. So the new class will look like this:        
 
-#### __C#__
+
 
 ```C#
 	public class CommissionCalculatedField : CalculatedField
@@ -59,7 +59,7 @@ The first task is to decide what is the calculation formula that you want to use
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class CommissionCalculatedField
@@ -93,7 +93,7 @@ The first task is to decide what is the calculation formula that you want to use
 
 Now it is time to add a new instance of this class to the CalculatedFields collection of QueryableDataProvider:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:QueryableDataProvider.CalculatedFields>
@@ -101,7 +101,7 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 	</pivot:QueryableDataProvider.CalculatedFields>
 ```
 
-#### __C#__
+
 
 ```C#
 	var queryableCalculatedField = new CommissionCalculatedField();
@@ -109,7 +109,7 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 	dataProvider.CalculatedFields.Add(queryableCalculatedField);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim queryableCalculatedField = New CommissionCalculatedField()
@@ -125,7 +125,7 @@ This way the Commission field will be visible in a special folder inside __RadPi
 
 In order to use the calculated field in the generated report, you have to add it to QueryableDataProvider's AggregateDescriptions collection:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:QueryableDataProvider.AggregateDescriptions>
@@ -133,7 +133,7 @@ In order to use the calculated field in the generated report, you have to add it
 	</pivot:QueryableDataProvider.AggregateDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	var queryableCalculatedAggregate = new QueryableCalculatedAggregateDescription();
@@ -141,7 +141,7 @@ In order to use the calculated field in the generated report, you have to add it
 	dataProvider.AggregateDescriptions.Add(queryableCalculatedAggregate);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim queryableCalculatedAggregate = New QueryableCalculatedAggregateDescription()

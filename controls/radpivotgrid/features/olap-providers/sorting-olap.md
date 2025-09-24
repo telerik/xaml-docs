@@ -38,14 +38,14 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 * Sorting based on the GroupName (header) can be *Ascending (from A to Z)* or *Descending (from Z to A)*. The default value is *Ascending*, but you can change it by using __SortOrder__ property:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Ascending">
 	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
@@ -53,7 +53,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
@@ -62,14 +62,14 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 ```
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Ascending"/>
 	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Descending"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
@@ -77,7 +77,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
@@ -88,13 +88,13 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 * If you need to avoid the data to be sorted anyhow, you can set the __SortOrder__ property to __None__. This way the data will appear the way it is was received from the data source:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="None">
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
@@ -102,7 +102,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
@@ -111,13 +111,13 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 ```
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="None"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
@@ -125,7 +125,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
@@ -138,7 +138,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 * Sorting based on the GrandTotals (measures) can be *Ascending* or *Descending*. To set such sort mechanism you have to use the __SortOrder__ and __GroupComparer__ properties:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
@@ -148,7 +148,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	</pivot:XmlaGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
@@ -157,7 +157,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 1 };
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
@@ -167,7 +167,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 ```
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
@@ -177,7 +177,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	</pivot:AdomdGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
@@ -186,7 +186,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 1 };
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
@@ -200,7 +200,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 * Sorting based on the Olap SortKeys can be *Ascending* or *Descending*. To set such sort mechanism you have to use the __SortOrder__ and __GroupComparer__ properties:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
@@ -210,7 +210,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	</pivot:XmlaGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaGroupDescription groupDescription = new XmlaGroupDescription();
@@ -219,7 +219,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.GroupComparer = new OlapGroupComparer();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
@@ -229,7 +229,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 ```
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdGroupDescription MemberName="[Product].[Category]" SortOrder="Descending">
@@ -239,7 +239,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	</pivot:AdomdGroupDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdGroupDescription groupDescription = new AdomdGroupDescription();
@@ -248,7 +248,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.GroupComparer = new OlapGroupComparer();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
@@ -264,7 +264,7 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 
 OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. User-defined hierarchies have different levels and with __RadPivotGrid__ you can sort each of the levels. To do this you should use *Levels* property of __XmlaGroupDescription__{% if site.site_name == 'WPF' %} / __AdomdGroupDescription__{% endif %}. *Levels* property is collection of __XmlaLevelGroupDescriptions__{% if site.site_name == 'WPF' %} / __AdomdGroupDescription__{% endif %}. Each of the LevelGroupDescriptions has its own *MemberName* and SortOrder properties:             
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaDataProvider.RowGroupDescriptions>
@@ -276,7 +276,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	</pivot:XmlaDataProvider.RowGroupDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaGroupDescription topGroupDescription = new XmlaGroupDescription();
@@ -287,7 +287,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	topGroupDescription.Levels.Add(levelGroupDescription1);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim topGroupDescription As New XmlaGroupDescription()
@@ -299,7 +299,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 ```
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdDataProvider.RowGroupDescriptions>
@@ -311,7 +311,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	</pivot:AdomdDataProvider.RowGroupDescriptions>            
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdGroupDescription topGroupDescription = new AdomdGroupDescription();
@@ -322,7 +322,7 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	topGroupDescription.Levels.Add(levelGroupDescription1);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim topGroupDescription As New AdomdGroupDescription()

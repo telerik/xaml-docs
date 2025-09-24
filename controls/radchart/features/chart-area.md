@@ -38,7 +38,7 @@ __RadChart__ also allows you to specify how to format the labels by specifying _
 
 When you set the label format behavior, all the labels (axes, series item labels, tooltips) will be formatted using the logic shown above. However, if you set [Format Expressions]({%slug radchart-features-format-expressions%}) to an element, then this expression will override the selected __LabelFormatBehavior__. For example, set the format behavior to __Scientific__, but for __X-Axis__ set __DefaultLabelFormat__ to "__MMM__":
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -62,7 +62,7 @@ When you set the label format behavior, all the labels (axes, series item labels
 	</telerik:RadChart>
 ```
 
-#### __C#__
+
 
 ```C#
 	RadChart radChart = new RadChart();
@@ -74,7 +74,7 @@ When you set the label format behavior, all the labels (axes, series item labels
 	//...
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()

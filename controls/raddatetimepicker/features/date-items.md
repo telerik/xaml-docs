@@ -20,7 +20,7 @@ If you specify these properties you will be able to select a date only in the ra
 
 Here is an example of setting these properties in XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker DisplayDateStart="1/1/2010" DisplayDateEnd="11/15/2010"/>
@@ -42,7 +42,7 @@ You can also set the default date visible when the calendar appears. The propert
 
 For example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker DisplayDate="4/1/2010"/>

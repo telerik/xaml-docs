@@ -12,7 +12,7 @@ position: 0
 
 The __RadRibbonView__ class exposes the __ApplicationButtonDoubleClick__ event, which is fired when the RibbonView's __ApplicationButton__ is double-clicked.
 
-#### __XAML__
+
 
 ```XAML
     <telerik:RadRibbonView x:Name="radRibbonView" ApplicationButtonDoubleClick="radRibbonView_ApplicationButtonDoubleClick">

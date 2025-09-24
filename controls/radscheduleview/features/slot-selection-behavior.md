@@ -22,7 +22,7 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 * Create a custom SlotSelectionBehavior class that inherits SlotSelectionBehavior class:
 
-#### __C#__
+
 
 ```C#
 	public class CustomSlotSelectionBehavior : SlotSelectionBehavior
@@ -32,7 +32,7 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 * Override the GetSelectionOverride method:
 
-#### __C#__
+
 
 ```C#
 	public class CustomSlotSelectionBehavior : SlotSelectionBehavior
@@ -48,7 +48,7 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 * All that is left is to attach the newly create custom behavior to the ScheduleView control:
 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>
@@ -62,7 +62,7 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 Finally the ScheduleView control in the XAML should look like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>

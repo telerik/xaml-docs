@@ -14,7 +14,7 @@ The __MajorTickLength__ and __MinorTicklength__ properties of the RadScheduleVie
 
 Let’s have the RadScheduleView defined like this:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
 		<telerik:RadScheduleView.ViewDefinitions>
@@ -63,7 +63,7 @@ The ticklength properties can be set in the XAML and in code-behind:
 
 Here are some examples:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:DayViewDefinition MinorTickLength="5min" MajorTickLength="1h" />				
@@ -74,7 +74,7 @@ Here are some examples:
 
 	The same can be set in code-behind like this:
 
-#### __C#__
+
 
 ```C#
 	var dayView = new DayViewDefinition()

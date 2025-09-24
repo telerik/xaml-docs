@@ -14,7 +14,7 @@ The __RadContextMenu__ allows you to specify a delay for the closing and opening
 
 Here is an example of a __RadContextMenu__ with a delay before opening a sub menu equal to one second and a delay before closing a sub menu also equal to one second.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu VerticalAlignment="Top"

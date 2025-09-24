@@ -18,7 +18,7 @@ This article shows how you can wrap the text of the column header, i.e. to have 
 
 As of __R2 2016__, the columns expose a **HeaderTextWrapping** property which can be used to set the wrapping of the column header cells.
 
-#### __XAML__
+
 ```XAML
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}" 
@@ -34,7 +34,7 @@ As of __R2 2016__, the columns expose a **HeaderTextWrapping** property which ca
 
 We will take advantage of the fact that the __Header__ property of the GridView column is of type Object so we can put everything in it. In this case this would be a TextBlock which has a convenient property __TextWrapping__
 
-#### __XAML__
+
 ```XAML
 
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Established}" 

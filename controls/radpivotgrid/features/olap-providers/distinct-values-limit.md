@@ -12,7 +12,7 @@ position: 7
 
 The providers that derives from OlapDataProvider (XmlaDataProvider{% if site.site_name == 'WPF' %} and AdomdDataProvider{% endif %}) has a default limit of 1000 distinct values that will be fetched from the database. This limit is set on purpose to avoid accidental performance hits. You can alter this limit by setting the __DistinctValuesLimit__ property of the provider. 
 
-#### __XAML__
+
 ```XAML
 	<pivot:XmlaDataProvider DistinctValuesLimit="5000">
 ```

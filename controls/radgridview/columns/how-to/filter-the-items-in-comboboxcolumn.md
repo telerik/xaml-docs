@@ -20,7 +20,7 @@ __SOLUTION__
 
 To resolve the problem you just have to change __RadComboBox's ItemsPanel with StackPanel__:
       
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"

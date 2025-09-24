@@ -12,7 +12,7 @@ position: 18
 
 To save and load column filters, you would have to create a simple property bag class that will hold all relevant information. 
 
-#### __C#__
+
 
 ```C#
 	public class FilterDescriptorProxy
@@ -33,7 +33,7 @@ To save and load column filters, you would have to create a simple property bag 
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class FilterDescriptorProxy
@@ -109,7 +109,7 @@ To save and load column filters, you would have to create a simple property bag 
 
 To save the settings you need to read the current filtering information from RadGridView and store it in a collection of these property bag objects. You can then take this collection and serialize it to a medium of your choice a database or an XML file, for example, by using RadPersistenceFramework.
 
-#### __C#__
+
 
 ```C#
 	public static IEnumerable<FilterSetting> SaveColumnFilters(Telerik.Windows.Controls.GridView.GridViewDataControl grid)
@@ -189,7 +189,7 @@ To save the settings you need to read the current filtering information from Rad
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Shared Function SaveColumnFilters(grid As Telerik.Windows.Controls.GridView.GridViewDataControl) As IEnumerable(Of FilterSetting)
@@ -262,7 +262,7 @@ To save the settings you need to read the current filtering information from Rad
 
 When you deserialize the filter settings, you only need to find the respective column and apply the information stored in the property bag to the column filter.
 
-#### __C#__
+
 
 ```C#
 	private IEnumerable<FilterSetting> serializedSettings;
@@ -284,7 +284,7 @@ When you deserialize the filter settings, you only need to find the respective c
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private serializedSettings As IEnumerable(Of FilterSetting)

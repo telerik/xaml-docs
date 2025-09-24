@@ -20,7 +20,7 @@ This article will show how to access and set different properties, in code behin
 
 1. Subscribe to the __DataLoading__ event of the parent gridview 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Name="employeeRadGridView" 
@@ -32,7 +32,7 @@ This article will show how to access and set different properties, in code behin
 
 2. In the event handler of the DataLoading event check the __ParentRow__ property of the sender object:
 
-#### __C#__
+
 
 ```C#
 	private void employeeRadGridView_DataLoading(object sender, GridViewDataLoadingEventArgs e)
@@ -58,7 +58,7 @@ This article will show how to access and set different properties, in code behin
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub employeeRadGridView_DataLoading(sender As Object, e As GridViewDataLoadingEventArgs)
@@ -84,7 +84,7 @@ This article will show how to access and set different properties, in code behin
 
 As an alternative, you can use the __HierarchyChildTemplate__ and put RadGridView in its DataTemplate - this way you can set the properties directly to the gridview:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Name="gridView" ItemsSource="{Binding Person}">

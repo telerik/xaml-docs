@@ -41,12 +41,12 @@ The `RadDiagram.Print()` method allows you to print the content of the Diagrammi
 
 * `PageVerticalCount`&mdash;this property gets the value that indicates the rows' count of the printed pages.
 
-#### __C#__
+
 ```C#
     xDiagram.Print(new RadDiagramPrintSettings("My Diagramming Solution",new Thickness(22,15,22,15)));		  
 ```
 	
-#### __VB.NET__
+
 ```VB.NET
     xDiagram.Print(New RadDiagramPrintSettings("My Diagramming Solution", New Thickness(22, 15, 22, 15)))		  
 ```
@@ -55,12 +55,12 @@ If you don't define any `RadDiagramPrintSettings` when invoking the `Print()` me
 
 The `RadDiagramPrintSettings`'s constructor have an optional parameter that defines the resolution (`DPI`) used during printing. The default DPI is 96. If you need better quality of the print result you can pass bigger value in the settings' constructor.
 
-#### __C#__
+
 ```C#
 	xDiagram.Print(new RadDiagramPrintSettings("My Diagramming Solution",new Thickness(22,15,22,15), 300));
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	xDiagram.Print(New RadDiagramPrintSettings("My Diagramming Solution", New Thickness(22, 15, 22, 15), 300))
 ```
@@ -75,7 +75,7 @@ For the purpose of this tutorial we will try to print the sample Diagramming sol
 
 Now let's add a Print `RadButton` in our layout and handle its `Click` event to invoke the RadDiagram.Print() method:
 			
-#### __XAML__
+
 ```XAML
     <Grid x:Name="LayoutRoot">
         <Grid.Resources>
@@ -92,7 +92,7 @@ Now let's add a Print `RadButton` in our layout and handle its `Click` event to 
     </Grid>
 ```
 
-#### __C#__
+
 ```C#
     private void Print(object sender, RoutedEventArgs e)
     {
@@ -100,7 +100,7 @@ Now let's add a Print `RadButton` in our layout and handle its `Click` event to 
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Private Sub Print(sender As Object, e As RoutedEventArgs)
         Me.diagram.Print()
@@ -118,7 +118,7 @@ A PrintDialog will be opened, allowing you to set up the printing operation:
 
 Telerik Diagramming Framework provides a `Print` command as well. It is part of the `DiagramExtensionCommands` class implementation defined in the `Telerik.Windows.Controls.Diagrams.Extensions` namespace and  you can apply it on your buttons and use it to invoke the print dialog:			
 
-#### __XAML__
+
 ```XAML
     <telerik:RadButton xmlns:extensions="clr-namespace:Telerik.Windows.Controls.Diagrams.Extensions;assembly=Telerik.Windows.Controls.Diagrams.Extensions"
 					Content="Print" 
@@ -153,7 +153,7 @@ The PagesPreview canvas in a zoomed RadDiagram
 
 And in order to modify it, you can change some or all of the previously described properties: 
 
-#### __XAML__
+
 ```XAML
     <telerik:RadDiagram primitives:BackgroundPageGrid.LineStroke="Red"
                         primitives:BackgroundPageGrid.LineStrokeDashArray="2 2"
@@ -178,7 +178,7 @@ With the official release of the `RadDiagrams`, Telerik an Extensions assembly t
 
 The `RadDiagramPrintPreview` is a stand-alone control which you can use to preview your `RadDiagram` print document before printing it. You can also use it to choose the printer and the settings of the pages. Usually the control is used in a `Window` dialog and this is why the next example illustrates how to wrap the control in a `RadWindow` dialog.
 
-#### __XAML__
+
 ```XAML
 	<Grid x:Name="LayoutRoot" 
 		  xmlns:extensions="clr-namespace:Telerik.Windows.Controls.Diagrams.Extensions;assembly=Telerik.Windows.Controls.Diagrams.Extensions">
@@ -200,7 +200,7 @@ The `RadDiagramPrintPreview` is a stand-alone control which you can use to previ
 	</Grid>
 ```
 
-#### __C#__
+
 ```C#
 	private void OpenPrintPreview(object sender, RoutedEventArgs e)
 	{
@@ -214,7 +214,7 @@ The `RadDiagramPrintPreview` is a stand-alone control which you can use to previ
 	}	
 ```
 	
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub OpenPrintPreview(sender As Object, e As RoutedEventArgs)
 		Dim printPreviewWindow = New Telerik.Windows.Controls.RadWindow()

@@ -26,7 +26,7 @@ __RadComboBox__ responses to the mouse wheel scrolling. There are two possible c
 
 In order to disable the mouse wheel scrolling, you should set the __RadComboBox__'s __IsMouseWheelEnabled__ property to __False__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox x:Name="radComboBox" IsMouseWheelEnabled="False"/>

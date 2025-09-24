@@ -14,7 +14,7 @@ This article demonstrates how to find a control which is placed in the DataTempl
 
 Let assume that you have a control (RadComboBox) in the RowDetailsTemplate which you need to set some properties at __runtime__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView.RowDetailsTemplate>
@@ -29,7 +29,7 @@ Let assume that you have a control (RadComboBox) in the RowDetailsTemplate which
 
 The best way to do this is to subscribe to the [LoadingRowDetails]({%slug radgridview-row-details-programming%}) event and find the control there:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Name="gridView" 
@@ -40,7 +40,7 @@ The best way to do this is to subscribe to the [LoadingRowDetails]({%slug radgri
 
 In the [LoadingRowDetails]({%slug radgridview-row-details-programming%}) event handler use the [FindName](http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.findname.aspx) method of the __e.DetailsElement__:
 
-#### __C#__
+
 
 ```C#
 	private void gridView_LoadingRowDetails(object sender, GridViewRowDetailsEventArgs e)
@@ -50,7 +50,7 @@ In the [LoadingRowDetails]({%slug radgridview-row-details-programming%}) event h
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub gridView_LoadingRowDetails(sender As Object, e As GridViewRowDetailsEventArgs)

@@ -18,7 +18,7 @@ In this tutorial we will examine a solution that takes a user-defined value and 
 
 First, let's create a sample __RadDiagram__ definition that has two __RadDiagramShape__ objects.				
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDiagram x:Name="diagram" IsSnapToGridEnabled="False">
@@ -33,7 +33,7 @@ First, let's create a sample __RadDiagram__ definition that has two __RadDiagram
 
 Next we can add a __TextBox__ control to let the user define the rotation step:				
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel Width="200" HorizontalAlignment="Left">
@@ -50,7 +50,7 @@ Now that our view is ready, we can configure the default rotation mechanism to t
 
 The first step is to define a new class, let's call it __MyRotation__, that derives from the __RotationService__. As the __RotationService__ has a virtual method that calculates the angle of each rotation operation, we will override this method and implement logic that takes a user-defined value and uses it to calculate the rotation angle. This means that we need to define an __int__ property and use it in the __CalculateRotationAngle__ method implementation:
 
-#### __C#__
+
 
 ```C#
 	public class MyRotation : RotationService
@@ -86,7 +86,7 @@ The first step is to define a new class, let's call it __MyRotation__, that deri
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyRotation
@@ -118,7 +118,7 @@ The first step is to define a new class, let's call it __MyRotation__, that deri
 
 Finally, we need to configure the diagram to use our custom rotation implementation instead of the default __RotationService__. This is why we need to create a new instance of the __MyRotation__ class in the code-behind file of our view. Then we need to make sure that the __RotationStep__ property is used as a binding path for the __Text__ property of the __rotationStep__:
 
-#### __C#__
+
 
 ```C#
 	private MyRotation newRotationService;
@@ -136,7 +136,7 @@ Finally, we need to configure the diagram to use our custom rotation implementat
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private newRotationService As MyRotation
@@ -158,7 +158,7 @@ Finally, we need to configure the diagram to use our custom rotation implementat
 
 And now we can use the __newRotationService__ instance and register it through the __ServiceLocator__:
 
-#### __C#__
+
 
 ```C#
 	private MyRotation newRotationService;
@@ -171,7 +171,7 @@ And now we can use the __newRotationService__ instance and register it through t
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private newRotationService As MyRotation

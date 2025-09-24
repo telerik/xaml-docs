@@ -26,7 +26,7 @@ This topic will explain you how to:
 
 The __Paragraph__ can be used only in the context of a [Section]({%slug radrichtextbox-features-document-elements-section%}) or a TableCell element. The section exposes a collection of Blocks, to which the paragraphs can be added. This can also be done directly in XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRichTextBox x:Name="radRichTextBox">
@@ -41,7 +41,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	</telerik:RadRichTextBox>
 ```
 
-#### __C#__
+
 
 ```C#
 	Section section = new Section();
@@ -53,7 +53,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	this.radRichTextBox.Document = document;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim section As New Section()
@@ -69,7 +69,7 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 
 To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage you have to use the Inlines collection of the Paragraph. In XAML you can directly wrap the inline elements inside the paragraph element.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRichTextBox x:Name="radRichTextBox">
 	    <telerik:RadDocument>
@@ -82,7 +82,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	</telerik:RadRichTextBox>
 ```
 
-#### __C#__
+
 ```C#
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
@@ -95,7 +95,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	this.radRichTextBox.Document = document;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()

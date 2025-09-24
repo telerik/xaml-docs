@@ -16,7 +16,7 @@ This help topic will provide an overview of the methods for collapsing and expan
 
 You can expand all groups of items in the RadTimeline control, using an implicit Style Setter. For example:
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
@@ -28,7 +28,7 @@ You can expand all groups of items in the RadTimeline control, using an implicit
 
 In case you want to expand a specific group initially, you can use a Converter. For example:        
 
-#### __XAML__
+
 
 ```XAML
 	<local:GroupKeyToIsExpandedConverter x:Key="groupKeyToIsExpandedConverter" />
@@ -39,7 +39,7 @@ In case you want to expand a specific group initially, you can use a Converter. 
 	</Style>
 ```
 
-#### __C#__
+
 
 ```C#
 	public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -59,7 +59,7 @@ In case you want to expand a specific group initially, you can use a Converter. 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
@@ -80,7 +80,7 @@ In case you want to expand a specific group initially, you can use a Converter. 
 
 There are scenarios, in which the expanded and collapsed state of the groups of timeline items depends on a certain condition In this case, you can use an attached behavior.
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
@@ -89,7 +89,7 @@ There are scenarios, in which the expanded and collapsed state of the groups of 
 	</Style>
 ```
 
-#### __C#__
+
 
 ```C#
 	public static readonly DependencyProperty ExpandedGroupKeyProperty = DependencyProperty.RegisterAttached("ExpandedGroupKey",
@@ -115,7 +115,7 @@ There are scenarios, in which the expanded and collapsed state of the groups of 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Shared ReadOnly ExpandedGroupKeyProperty As DependencyProperty = DependencyProperty.RegisterAttached("ExpandedGroupKey", GetType(String), GetType(TimelineItemGroupControlBehavior), New PropertyMetadata(OnExpandedGroupKeyChanged))

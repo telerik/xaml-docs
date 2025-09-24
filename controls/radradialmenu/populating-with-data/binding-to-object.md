@@ -18,7 +18,7 @@ The following example will demonstrate how to bind __RadRadialMenu__ with a coll
 
 In order to be able to successfully use the binding feature of the control, the used custom objects need to implement the __IRadialMenuItem__ interface. The interface provides all the required properties for __RadRadialMenuItem__:
 
-#### __C#__
+
 ```C#
 	public class CustomMenuItem : IRadialMenuItem
 	{
@@ -36,7 +36,7 @@ In order to be able to successfully use the binding feature of the control, the 
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class CustomMenuItem
 	    Implements IRadialMenuItem
@@ -60,7 +60,7 @@ In order to be able to successfully use the binding feature of the control, the 
 
 The next thing is to simply define the needed source collection of CustomMenuItems in the ViewModel. Once this is done we will be able to bind it to the __ItemsSource__ property. 
 
-#### __C#__
+
 ```C#
 	public class ViewModel : ViewModelBase
 	{
@@ -99,7 +99,7 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class ViewModel
 	        Inherits ViewModelBase
@@ -140,7 +140,7 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 
 The final step would be to set the ViewModel as DataContext and bind the already created collection to the __ItemsSource__ property of __RadRadialMenu__ as shown below:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialMenu ItemsSource="{Binding MenuItems}" />
 ```

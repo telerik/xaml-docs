@@ -19,7 +19,7 @@ The content controls can be retrieved by using the __GetAnnotationMarkersOfType_
 
 #### Example 1: Get all content controls
 
-#### __C#__
+
 
 ```C#
 
@@ -36,7 +36,7 @@ This example show how one can iterate the items and add an item to to a existing
 
 #### Example 2: Adding items to a ComboBox or a DropDownList
 
-#### __C#__
+
 
 ```C#
 
@@ -60,7 +60,7 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 #### Example 3: Inserting a content control
 
-#### __C#__
+
 
 ```C#
 
@@ -72,7 +72,7 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 #### Example 4: Inserting a content control using content control type
 
-#### __C#__
+
 
 ```C#
 
@@ -84,7 +84,7 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 #### Example 5: Inserting a content control using content control properties
 
-#### __C#__
+
 
 ```C#
 

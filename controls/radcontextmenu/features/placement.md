@@ -30,7 +30,7 @@ The placement property allows you to specify the position of the __RadContextMen
 
 Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<TextBox x:Name="InputBox"
@@ -53,7 +53,7 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 
 >tipProperties of type __Rect__ cannot be declared in-line because this is not supported. Set the property as attribute by passing the x, y, width and height parameters. The type converter will handle them from there.          
 
-#### __XAML__
+
 
 ```XAML
 	<TextBox x:Name="InputBox1"
@@ -77,7 +77,7 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 
 >If you are using the same __RadContextMenu__ for multiple elements and you want to open it from the code behind, it is mandatory to set the __PlacementTarget__.          
 
-#### __C#__
+
 
 ```C#
 	public Default_Cs()
@@ -120,7 +120,7 @@ If there are any sub-menus in the __RadContextMenu__ their dropdown position can
 
 Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<TextBox x:Name="InputBox2"

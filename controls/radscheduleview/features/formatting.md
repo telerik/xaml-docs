@@ -44,7 +44,7 @@ This article covers the following topics:
 
 Let’s for example set the formatting properties of DayViewDefinition:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
@@ -64,7 +64,7 @@ Let’s for example set the formatting properties of DayViewDefinition:
 
 Setting these properties to WeekViewDefinition will lead to similar result:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
@@ -85,7 +85,7 @@ Setting these properties to WeekViewDefinition will lead to similar result:
 
 In MonthViewDefinition you can set the following formatting properties:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
@@ -108,7 +108,7 @@ And the result is:
 
 Setting the formatting properties in TimelineViewDefinition like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">

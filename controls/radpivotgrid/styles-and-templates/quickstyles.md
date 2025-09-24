@@ -41,7 +41,7 @@ Figure 1: QuickStyle styling options
 
 __RadPivotGrid__ relays on the __QuickStyle__ in order to get visualized correctly. When applying a custom __QuickStyle__ it is highly recommended that the default one is extracted from the theme, modified as desired and applied afterwards. For example, you can see below the default __QuickStyle__ of __RadPivotGrid__ for Office Black Theme:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:QuickStyle x:Key="PivotGridQuickStyle">
@@ -133,7 +133,7 @@ __RadPivotGrid__ relays on the __QuickStyle__ in order to get visualized correct
 
 Afterwards the custom __QuickStyle__ should be applied the following way:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:RadPivotGrid x:Name="pivot" QuickStyle="{StaticResource PivotGridQuickStyle}" />

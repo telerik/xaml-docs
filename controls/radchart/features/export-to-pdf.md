@@ -28,7 +28,7 @@ Basically, all you need to do is construct a document model based on the content
 
 The following code creates the Chart part of the PDF document:
 
-#### __C#__
+
 
 ```C#
 	Telerik.Windows.Documents.Model.Section section = new Telerik.Windows.Documents.Model.Section();
@@ -53,7 +53,7 @@ The following code creates the Chart part of the PDF document:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim section As New Telerik.Windows.Documents.Model.Section()
@@ -82,7 +82,7 @@ As for the grid part of the constructed document – all you need to do is creat
 
 Now that the document model is ready, you can add a Button that will function as exporter and call the __PdfFormatProvider.Export(...)__ method from the *Click* event's body like this:
 
-#### __C#__
+
 
 ```C#
 	private void Export_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -113,7 +113,7 @@ Now that the document model is ready, you can add a Button that will function as
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Export_Click(sender As Object, e As System.Windows.RoutedEventArgs)

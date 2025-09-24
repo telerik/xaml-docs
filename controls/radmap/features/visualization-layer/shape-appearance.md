@@ -25,7 +25,7 @@ The three properties are of type MapShapeFill. The MapShapeFill object allows yo
 
 In the following example, the MouseLeftButtonDown event on the shape visualization is used to switch between regular and highlighted fill.        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -56,7 +56,7 @@ In the following example, the MouseLeftButtonDown event on the shape visualizati
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	public partial class HighlightShapeOnMouseClick : UserControl
 	{
@@ -104,7 +104,7 @@ In the following example, the MouseLeftButtonDown event on the shape visualizati
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Partial Public Class HighlightShapeOnMouseClick
 		Inherits UserControl
@@ -157,7 +157,7 @@ The three properties are of type MapShapeFill. The MapShapeFill object allows yo
 
 Here is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"

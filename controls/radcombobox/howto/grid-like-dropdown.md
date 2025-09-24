@@ -22,7 +22,7 @@ The final result from this tutorial should look like the snapshot below.
 
 * For the purpose of this tutorial you need to create two additional classes named __Dealer__ and __DealerViewModel__. Their structure is shown on the code-snippets below.
 
-#### __C#__
+
 
 ```C#
 	public class Dealer
@@ -51,7 +51,7 @@ The final result from this tutorial should look like the snapshot below.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Dealer
@@ -92,7 +92,7 @@ The final result from this tutorial should look like the snapshot below.
 
 The __Dealer__ class is extremely simple. It has only properties which describe it - __Name__, __Country__, __Phone__.
 
-#### __C#__
+
 
 ```C#
 	public class DealerViewModel
@@ -123,7 +123,7 @@ The __Dealer__ class is extremely simple. It has only properties which describe 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class DealerViewModel
@@ -155,7 +155,7 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 
 * The next step is to declare the __DealerViewModel__ as a data source in your XAML resources and to set it to the __RadComboBox__'s __ItemsSource__ property.
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -174,7 +174,7 @@ The class __DealerViewModel__ is doing nothing special except for initializing o
 
 * The final step is to declare a custom __DataTemplate__ which defines the grid like drop-down of the __RadComboBox__. Set the just declared __DataTemplate__ to the __RadComboBox__'s __ItemsSource__ property.
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>

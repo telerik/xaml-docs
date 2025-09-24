@@ -20,7 +20,7 @@ We've added the DataContract attribute to all classes used by LocalDataSourcePro
 
 So lets create a simple class that we'll use to save (when serializing) and load (when deserializing) DataProviderSettings. You have to add the DataContract attribute to the new class and DataMember attribute for its properties.        
 
-#### __C#__
+
 
 ```C#
 	[DataContract]
@@ -46,7 +46,7 @@ So lets create a simple class that we'll use to save (when serializing) and load
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	<DataContract> _
@@ -75,7 +75,7 @@ So lets create a simple class that we'll use to save (when serializing) and load
 
 The next step is to implement the serializer. When serializing the provider, you have to create an instance of *DataProviderSettings* class and set all of the properties. After that you can serialize the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new __PivotSerializationHelper__ class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize LocalDataSourceProvider. Here's an example how to implement your own serializer:        
 
-#### __C#__
+
 
 ```C#
 	public abstract class DataProviderSerializer
@@ -169,7 +169,7 @@ The next step is to implement the serializer. When serializing the provider, you
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public MustInherit Class DataProviderSerializer
@@ -247,7 +247,7 @@ The next step is to implement the serializer. When serializing the provider, you
 
 So the last step is to serialize the provider and deserialize it:        
 
-#### __C#__
+
 
 ```C#
 	string lastSerializadProvider;
@@ -261,7 +261,7 @@ So the last step is to serialize the provider and deserialize it:
 	provider.Deserialize(this.pivotGrid.DataProvider, this.lastSerializadProvider);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim lastSerializadProvider As String
@@ -287,7 +287,7 @@ If you have implemented your own custom types, for example CustomGroupDescriptio
 
 So if you have implemented a custom group description, it should be similar to this:        
 
-#### __C#__
+
 
 ```C#
 	[DataContract]
@@ -308,7 +308,7 @@ So if you have implemented a custom group description, it should be similar to t
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	<DataContract> _
@@ -330,7 +330,7 @@ So if you have implemented a custom group description, it should be similar to t
 
 And here's the change in *LocalDataSourceSerializer* class:        
 
-#### __C#__
+
 
 ```C#
 	public class LocalDataSourceSerializer : DataProviderSerializer
@@ -347,7 +347,7 @@ And here's the change in *LocalDataSourceSerializer* class:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class LocalDataSourceSerializer

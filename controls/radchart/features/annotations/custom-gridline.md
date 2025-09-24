@@ -26,7 +26,7 @@ In order to customize the appearance of the __CustomGridLine__ you can simply se
 
 Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -49,7 +49,7 @@ Here is an example:
 
 
 
-#### __C#__
+
 
 ```C#
 	CustomGridLine gridline = new CustomGridLine();
@@ -61,7 +61,7 @@ Here is an example:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim gridline As New CustomGridLine()
@@ -75,7 +75,7 @@ Here is an example:
 
 Additional customizations can be done via the __ElementStyle__ property. It gets applied to the __Line__ element that visually represents the __CustomGridLine__. Via this style you can set the __StrokeDashArray__ property for example.
 
-#### __XAML__
+
 
 ```XAML
 	<FrameworkElement.Resources>

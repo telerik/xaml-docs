@@ -16,7 +16,7 @@ __RadExpressionEditor__ always generates a __LambdaExpression__ with one paramet
 
 Once the Expression is available, you can also compile it manually like so:
 
-#### __C#__
+
 ```C#
 	var expr = (LambdaExpression)ExpressionEditor.Expression;
     if (expr != null)

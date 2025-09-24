@@ -42,7 +42,7 @@ RadScheduleView has different definitions for each view. It has four types of pr
 
 In order to include each one of the views in the RadScheduleView, they have to be defined as follows:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" x:Name="scheduleView">
 		<telerik:RadScheduleView.ViewDefinitions>
@@ -55,7 +55,7 @@ In order to include each one of the views in the RadScheduleView, they have to b
 	</telerik:RadScheduleView>
 ```
 
-#### __C#__
+
 ```C#
 	MonthViewDefinition monthDefintion = new MonthViewDefinition();
 	DayViewDefinition dayDefintion = new DayViewDefinition();

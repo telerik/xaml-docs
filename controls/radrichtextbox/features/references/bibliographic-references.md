@@ -64,7 +64,7 @@ Everything that we can do using UI, we can do in code behind too. All sources re
 
 This is how you can add a new source:
 
-#### __C#__
+
 
 ```C#
 	BibliographicSource bibliographicSource = new BibliographicSource("test");
@@ -79,7 +79,7 @@ This is how you can add a new source:
 
 To create a custom __BibliographicStyle__ you have to derive from __BibliographicReferenceStyleBase__ and add the style to the document so it can be usable. All styles are kept in a dictionary that matches a string to a __BibliographicReferenceStyleBase__ object. Usually the string is the key of the particular style. Adding style is as easy as:
 
-#### __C#__
+
 
 ```C#
 	APAFifthEditionStyle APAFifthEdition = new APAFifthEditionStyle();
@@ -98,7 +98,7 @@ Insert Citation Field using code behind
 
 The Citation field is a field not different from every other field. You can use the __InsertFIeld()__ method of __RadDocument__ to insert a citation:
 
-#### __C#__
+
 
 ```C#
 	CitationField citationField = new CitationField();
@@ -110,7 +110,7 @@ Insert Bibliography Field using code behind
 
 The Bibliography field is a field not different from every other field. You can use the __InsertFIeld()__ method of __RadDocument__ to insert a citation:
 
-#### __C#__
+
 
 ```C#
 	BibliographyField bibliographyField = new BibliographyField();
@@ -121,7 +121,7 @@ Changing Bibliographic Style using code behind
 
 There is a method called __ChangeBibliographicStyle()__ on __RadRichTextBox__. It accepts one argument of type __BibliographicReferenceStyleBase__. Changing the current style is as simple as:
 
-#### __C#__
+
 
 ```C#
 	this.editor.ChangeBibliographicStyle(new HarvardAnglia2008Style());

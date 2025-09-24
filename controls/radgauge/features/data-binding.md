@@ -24,7 +24,7 @@ Additionally the indicators expose an API which allows you to control the displa
 
 Here is the __RadGauge__ instance and the sample value collection, which will be used throughout the examples in this topic:      
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
@@ -38,7 +38,7 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	</telerik:RadRadialGauge>
 ```
 
-#### __C#__
+
 ```C#
 	public DataBindingSample()
 	{
@@ -51,7 +51,7 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 	 InitializeComponent()
@@ -68,7 +68,7 @@ If you want to automatically display the values one after another with some pred
    
 Here is an example:   
 
-#### __C#__
+
 ```C#
 	private void StartPlayback()
 	{
@@ -76,7 +76,7 @@ Here is an example:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub StartPlayback()
 	 Me.radialBar.StartPlayback()
@@ -91,7 +91,7 @@ To stop the automatic playback of the values you have simply to call the __StopP
 			
 Here is an example:          
 
-#### __C#__
+
 ```C#
 	private void StopPlayback()
 	{
@@ -99,7 +99,7 @@ Here is an example:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub StopPlayback()
@@ -111,7 +111,7 @@ Here is an example:
 
 The indicator's API also allows you to manually navigate through the values collection. On of the methods exposed is the __MoveNext()__ one. It changes the displayed value to the next value in the collection, if present. Here is an example.        
 
-#### __C#__
+
 ```C#
 	private void MoveNext()
 	{
@@ -119,7 +119,7 @@ The indicator's API also allows you to manually navigate through the values coll
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub MoveNext()
 	 Me.radialBar.MoveNext()
@@ -130,7 +130,7 @@ The indicator's API also allows you to manually navigate through the values coll
 
 The __MovePrevious()__ method is the other one used for manual navigation through the values collection. It displays the value previous to the current one. Here is an example.        
 
-#### __C#__
+
 ```C#
 	private void MovePrevious()
 	{
@@ -138,7 +138,7 @@ The __MovePrevious()__ method is the other one used for manual navigation throug
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub MovePrevious()
 	 Me.radialBar.MovePrevious()
@@ -151,7 +151,7 @@ If you want every one of the values to be displayed a specific period of time yo
 
 Here is an example (a slight modification of the previous one):        
 
-#### __C#__
+
 ```C#
 	public DataBindingSample()
 	{
@@ -180,7 +180,7 @@ Here is an example (a slight modification of the previous one):
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

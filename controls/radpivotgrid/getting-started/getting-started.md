@@ -42,7 +42,7 @@ There are two ways to add __RadPivotGrid__ to your application:
 
 * Create it in the __XAML__ directly:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:RadPivotGrid Name="radPivotGrid1">            
@@ -55,7 +55,7 @@ There are two ways to add __RadPivotGrid__ to your application:
 
 In our application we will show data for some office materials - their quantity, price through the year, etc. So our first task is to create a class that will present one product.        
 
-#### __C#__
+
 
 ```C#
 	public class Product
@@ -67,7 +67,7 @@ In our application we will show data for some office materials - their quantity,
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Product
@@ -112,7 +112,7 @@ In our application we will show data for some office materials - their quantity,
 
 Now we'll add a method that will create a sample data for our application:
 
-#### __C#__
+
 
 ```C#
 	private static IList<Product> GeneratePivotData()
@@ -161,7 +161,7 @@ Now we'll add a method that will create a sample data for our application:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Shared Function GeneratePivotData() As IList(Of Product)
@@ -392,7 +392,7 @@ Now we'll add a method that will create a sample data for our application:
 
 It is time to define the DataSource for our __RadPivotGrid__. We'll do it in the resources in our __XAML__. The idea of the DataSourceProvider is to define which properties will be shown as a Columns, Rows and Aggregates. For our example we'll use *Name* as a Row, *Date* as a Column, *Price* and *Quantity* as Aggregates.    		
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:LocalDataSourceProvider x:Key="LocalDataProvider" AggregatesPosition="Rows">
@@ -411,7 +411,7 @@ It is time to define the DataSource for our __RadPivotGrid__. We'll do it in the
 
 In the definition of the __RadPivotGrid__ you'll have to set the DataProvider property to the LocalDataSourceProvider we've just created.    		
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:RadPivotGrid Name="radPivotGrid1" DataProvider="{StaticResource LocalDataProvider}" >            
@@ -420,14 +420,14 @@ In the definition of the __RadPivotGrid__ you'll have to set the DataProvider pr
 
 The DataProvider is set, but it still doesn't have any data in it. It's time to use our *GenerateData* method. Add the following code to your code behind:    		
 
-#### __C#__
+
 
 ```C#
 	InitializeComponent();
 	(this.Resources["LocalDataProvider"] as LocalDataSourceProvider).ItemsSource = GeneratePivotData();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	InitializeComponent()
@@ -443,7 +443,7 @@ Let's start our application. Here's the result:
 Here's the full implementation of our project:
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<Window x:Class="RadPivotGrid_GettingStarted.MainWindow"
@@ -474,7 +474,7 @@ Here's the full implementation of our project:
 	</Window>
 ```
 
-#### __C#__
+
 
 ```C#
 	using System;
@@ -549,7 +549,7 @@ Here's the full implementation of our project:
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Imports System
@@ -829,7 +829,7 @@ Here's the full implementation of our project:
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 
 ```XAML
 	<UserControl x:Class="RadPivotGrid_GettingStarted.MainPage"
@@ -861,7 +861,7 @@ Here's the full implementation of our project:
 	</UserControl>
 ```
 
-#### __C#__
+
 
 ```C#
 	using System;
@@ -936,7 +936,7 @@ Here's the full implementation of our project:
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Imports System

@@ -24,7 +24,7 @@ Thе hover and selection interactivity effects greatly enhance the data presenta
 
 In the following example a new __RadChart__ control is declared along with two series definitions - __SplineAreaSeriesDefinition__ and __BarSeriesDefintion__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="RadChart">
@@ -68,7 +68,7 @@ In the following example a new __RadChart__ control is declared along with two s
 
 Take a look at the way the __InteractivitySettings__ are declared for a specific definition:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:BarSeriesDefinition>
@@ -96,7 +96,7 @@ There is one additional setting related to hover effects that can be set on glob
 
 The following code snippets represent the complete source code used in the topic.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="RadChart">
@@ -138,7 +138,7 @@ The following code snippets represent the complete source code used in the topic
 
 
 
-#### __C#__
+
 
 ```C#
 	public class DataObject
@@ -236,7 +236,7 @@ The following code snippets represent the complete source code used in the topic
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class DataObject
@@ -307,7 +307,7 @@ The following code snippets represent the complete source code used in the topic
 
 
 
-#### __C#__
+
 
 ```C#
 	this.RadChart.ItemsSource = DataObject.GetData();
@@ -315,7 +315,7 @@ The following code snippets represent the complete source code used in the topic
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.RadChart.ItemsSource = DataObject.GetData()

@@ -30,7 +30,7 @@ In order to set the content of the __RadTransitionControl__ you have to use its 
 
 >Note that if you want to set multiple __UIElements__ as content of the __RadTransitionControl__ you have to wrap them in a layout control such as __Grid__, __StackPanel__, __Canvas__ etc.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl">
@@ -49,13 +49,13 @@ When the content of the __RadTransitionControl__ gets changed, the control can a
 
 >tipThere are several built-in transition effects, which are located in the __Telerik.Windows.Control.TransitionEffects__ namespace of the __Telerik.Windows.Controls__ assembly. In order to use them you have to add the following namespace declaration:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl>
@@ -71,7 +71,7 @@ To learn more about the different built-in transition effects or how to create y
 
 The duration of the transition effect is determined by the __Duration__ property of the __RadTransitionControl__. It's of type __TimeSpan__ and its default value is __1 second__. Here is an example of a __RadTransitionControl__ with a transition duration of __3 seconds__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTransitionControl" Duration="00:00:03" />
@@ -90,7 +90,7 @@ The __RadTransitionControl__ allows you to apply an easing function to the trans
 
 By default there is no easing function specified for the __RadTransitionControl__. To specify one you have to set the __Easing__ property to the desired function.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTransitionControl1">

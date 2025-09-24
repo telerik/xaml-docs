@@ -20,7 +20,7 @@ The following small practical samples will show you how to use this properties t
 
 There could be cases in __RadPivotMap__ when the text per rectangle is chopped due to the size of the rectangles calculated, it is not adjustable by just tuning the text length and size because the rectangle size is recalculated every time when window size is changed. To have a fully readable labels you may wrap your TextBlock in a control like ViewBox for example which resizes itself based on the size of its content and put it in the header of your rectangle using __LeafTemplate__ like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPivotMap x:Name="pivotMap" LayoutStrategy="Squarified" ValuePath="Gdp" LabelPath="City">
@@ -39,7 +39,7 @@ There could be cases in __RadPivotMap__ when the text per rectangle is chopped d
 
 This is the full source code of the sample:
 
-#### __C#__
+
 
 ```C#
     public MainPage()
@@ -80,7 +80,7 @@ This is the full source code of the sample:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	  Public Sub New()
@@ -124,7 +124,7 @@ You can customize the way __RadTreeMap__ Items look like per *TypeDefinition*. T
 
 >Please refer to the [Populating With Data RadTreeMap]({%slug radtreemap-populating-with-data-radtreemap%}) for the full source code of the sample.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeMap Name="treeMap1">

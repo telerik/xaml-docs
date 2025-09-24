@@ -28,7 +28,7 @@ This article covers the following topics:
 
 By default the auto scrolling functionality is enabled. In order to disable it you need to set the __ScrollingSettingsBehavior.IsEnabled__ attached property to false:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView telerik:ScrollingSettingsBehavior.IsEnabled="False">
@@ -46,7 +46,7 @@ The default value that is set to the __ScrollStep__ property is equal to 5px. Th
 
 The next code snippet demonstrates how to change the scrolling step in order to make the auto scrolling speed two times faster than its default value:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadScheduleView ScrollStep="10">
 		…
@@ -59,7 +59,7 @@ __ScrollStepTime__ sets the time interval between the scroll steps of the auto s
 
 The next code snippet demonstrates how to set the scroll time interval to half a second:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadScheduleView telerik:ScrollingSettingsBehavior.ScrollStepTime="00:00:00.5">
 		…
@@ -72,7 +72,7 @@ By setting __ScrollAreaPadding__ you can customize at which point the auto scrol
 
 The next example shows how to set the ScrollAreaPadding in order to achieve top/bottom padding of 50px and right/left padding of 100px:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadScheduleView ScrollAreaPadding=" 100, 50, 100, 50">
 		…

@@ -26,7 +26,7 @@ This topic will show you how to perform the second one.
 
 >The __ChartTitle__ control is located in the __Telerik.Windows.Controls.Charting__ namespace of the __Telerik.Windows.Controls.Charting__ assembly. In order to use it you have to declare it in XAML:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerikCharting=&quot;clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting&quot;
@@ -68,7 +68,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 To apply the style to the real control, set it to the __TitleStyle__ property of the __RadChart__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" TitleStyle="{StaticResource ChartTitleStyle}" />
@@ -86,7 +86,7 @@ And here is the snapshot of the result.{% endif %}{% if site.site_name == 'Silve
 
 Here is the final XAML for the __Style__ after the modifications:
 
-#### __XAML__
+
 
 ```XAML
 	<LinearGradientBrush x:Key="ChartTitleBackground" StartPoint="0.5,0" EndPoint="0.5,1">

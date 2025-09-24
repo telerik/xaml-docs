@@ -16,7 +16,7 @@ In order to do this you have to use the __RadDateTimePicker's IsDropDownOpen__ b
 
 For example:
 
-#### __C#__
+
 
 ```C#
 	this.radDateTimePicker.IsDropDownOpen = true;
@@ -24,7 +24,7 @@ For example:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radDateTimePicker.IsDropDownOpen = True

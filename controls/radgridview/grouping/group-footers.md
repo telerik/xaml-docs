@@ -26,7 +26,7 @@ This tutorial will walk you through the common tasks of:
 
 For the purpose of this tutorial the following declaration will be used:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadGridView AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -45,7 +45,7 @@ For the purpose of this tutorial the following declaration will be used:
 
 In order to enable the group footers functionality, merely set __ShowGroupFooters__ property of __RadGridView__ to __True__.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadGridView ShowGroupFooters="True" />
 ```
@@ -56,7 +56,7 @@ In order to enable the group footers functionality, merely set __ShowGroupFooter
 
 The same operation can be done in the code-behind.
 
-#### __C#__
+
 ```C#
 	private void EnableGroupFooters()
 	{
@@ -64,7 +64,7 @@ The same operation can be done in the code-behind.
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub EnableGroupFooters()
 	    Me.radGridView.ShowGroupFooters = True
@@ -77,7 +77,7 @@ The same operation can be done in the code-behind.
 
 If you want your group footers to have a static content, simply configure __GroupFootersTemplate__ property.
 
-#### __XAML__
+
 ```XAML
 	<Grid.Resources>
 	    <DataTemplate x:Key="GroupFooterTemplate">
@@ -101,7 +101,7 @@ If you want your group footers to have a static content, simply configure __Grou
 
 The group footers are most commonly used to visualize calculations from aggregate functions within the scope of the current group. Consider the following example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadGridView AutoGenerateColumns="False" ShowGroupFooters="True">
 	    <telerik:RadGridView.Columns>
@@ -138,7 +138,7 @@ Check out the following topics which explain in great details __RadGridView__'s 
 
 You can modify the default template of displaying group aggregates by applying a new __GroupFooterTemplate__ configured it per specific requirements.
 
-#### __XAML__
+
 ```XAML
 	<telerik:GridViewDataColumn.GroupFooterTemplate>
 	    <DataTemplate>

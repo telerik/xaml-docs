@@ -16,7 +16,7 @@ Since the official __Q1 2014__ release all series exposed by the __RadCartesianC
 
 In order to enable a smart label strategy in a __RadCartesianChart__ you can utilize the __ChartSmartLabelsStrategy__.
 
-#### __XAML__
+
 
 ```XAML
      <telerik:RadCartesianChart.SmartLabelsStrategy>
@@ -36,7 +36,7 @@ You can find this feature demonstrated in our {% if site.site_name == 'Silverlig
 
 In order to enable a smart label strategy in a __RadPieChart__ you can utilize the __PieChartSmartLabelsStrategy__.
 
-#### __XAML__
+
 
 ```XAML
     <telerik:RadPieChart.SmartLabelsStrategy>

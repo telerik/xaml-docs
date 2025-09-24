@@ -24,7 +24,7 @@ RadRichTextBox's predefined UI – [RadRichTextBoxRibbonUI]({%slug radrichtextbo
 
 In order to successfully execute the __PrintCommand__ you have to pass the wanted print mode as a __CommandParameter__:        
 
-#### __XAML__  
+  
 ```XAML
     <telerik:RadRibbonButton Content="Print" DataContext="{Binding Commands, ElementName=radRichTextBox}" 
 	  CommandParameter="Native" telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding PrintCommand}" />
@@ -38,7 +38,7 @@ RadRichTextBox also provides a `Print(PrintDialog printDialog, PrintSettings pri
 
 >important You can download a runnable project of this from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/), the example is listed as __RichTextBox/CustomizePrinting__.
 
-#### __C#__  
+  
 ```C#
     this.radRichTextBox.Print("My document", PrintMode.Native);
 ```
@@ -55,7 +55,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 * __PageRange__ - allows you to specify a single page or a range of pages which to be printed.
 
-#### __C#__  
+  
 ```C#
     PrintSettings settings = new PrintSettings()
     {

@@ -43,7 +43,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 1 . Create a new business object and name it __TradeData__.
 
-#### __C#__
+
 
 ```C#
 	public class TradeData
@@ -120,7 +120,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class TradeData
@@ -397,7 +397,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 2 . Add a new __RadChart__ declaration.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot"
@@ -420,7 +420,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 >tipYou can find a full list of supported chart types [here]({%slug radchart-features-chart-types-2d-charts%}).
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -442,7 +442,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 6 . __FieldName__ - specifies from where the data should be taken.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -477,7 +477,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 7 . Set the ItemsSource property of the __RadChart__ control.
 
-#### __C#__
+
 
 ```C#
 	//Gets trading data
@@ -486,7 +486,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'Gets trading data'
@@ -500,7 +500,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 9 . The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 
-#### __C#__
+
 
 ```C#
 	SeriesMapping seriesMapping = new SeriesMapping();
@@ -527,7 +527,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim seriesMapping As New SeriesMapping()

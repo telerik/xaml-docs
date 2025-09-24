@@ -12,7 +12,7 @@ position: 6
 
 In order to remove the __DocumentHost__ from your __RadDocking__ control you have to set the __RadDocking__'s __HasDocumentHost__ property to __False__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking" HasDocumentHost="False">

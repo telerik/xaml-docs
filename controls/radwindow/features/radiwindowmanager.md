@@ -26,13 +26,13 @@ Here is a brief list of all static methods exposed by __RadWindowManager__:
 
 Here is an example of how to use __RadWindowManager__ to close all active __RadWindows__:
 
-#### __C#__
+
 
 ```C#
 	RadWindowManager.Current.CloseAllWindows();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	RadWindowManager.Current.CloseAllWindows()

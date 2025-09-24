@@ -78,7 +78,7 @@ Here the __Below selected item__ position is chosen, __:__ for separator and __A
 
 Using Telerik’s rich text editor’s API is pretty straight forward. There is a method called __InsertCaption()__ on __RadRichTextBox__ which you can use to insert a new __Caption__ into the document with a custom label. The method has the following signature:
 
-#### __C#__
+
 
 ```C#
 	public void InsertCaption(CaptionDefinition definition, string caption, bool includeLabel, bool insertBelow)
@@ -88,7 +88,7 @@ Using Telerik’s rich text editor’s API is pretty straight forward. There is 
 
 The __CaptionDefinition__ class contains viable information for the creation of the caption like __Label__, __NumberingFormat__ and __SeparatorType__. The “caption” parameter is of type string and represents the text in the caption that will be inserted after the number (also known as caption text). The “includeLabel” parameter is of type Boolean and if true will include the label text to the caption. The “insertBelow” parameter is of type Boolean as well and if true will insert the caption below the table or figure. So, in order to insert a caption using this method you would do something like: 
 
-#### __C#__
+
 
 ```C#
 	CaptionDefinition captionDefinition = new CaptionDefinition();
@@ -102,7 +102,7 @@ The __CaptionDefinition__ class contains viable information for the creation of 
 
 The __RadDocument__ contains the two default __CaptionDefinitions__ by default. They reside in a collection called “CaptionDefinitions” which is of type Dictionary<string, CaptionDefinition>. If you want to insert a caption of a default type, you can do as follow: 
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox1.InsertCaption(this.editor.Document.CaptionDefinitions["Table"], "captionText", true, true);

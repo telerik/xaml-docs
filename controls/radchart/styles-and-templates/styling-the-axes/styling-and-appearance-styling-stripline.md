@@ -20,7 +20,7 @@ To create a style for them in Expression Blend use a dummy control and after mod
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __Rectangle__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View* from the menu. Declare a __Rectangle__ control in your XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
@@ -39,7 +39,7 @@ After clicking the OK button, a style with target type __Rectangle__ will be cre
 
 After finishing with the changes it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
+
 
 ```C#
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = this.Resources["HorizontalAlternateStripLineStyle"] as Style;
@@ -48,7 +48,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = TryCast(Me.Resources("HorizontalAlternateStripLineStyle"), Style)
@@ -64,7 +64,7 @@ Here is a snapshot of the sample result:
 
 Here is the final XAML for the __Styles__ used:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="HorizontalAlternateStripLineStyle" TargetType="Rectangle">
@@ -79,7 +79,7 @@ Here is the final XAML for the __Styles__ used:
 	</Style>
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="HorizontalStripLineStyle" TargetType="Rectangle">

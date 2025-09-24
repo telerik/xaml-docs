@@ -38,7 +38,7 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 
 * ChartLegendItem - __Path__
 
-#### __C#__
+
 
 ```C#
 	public Sample()
@@ -56,7 +56,7 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -74,7 +74,7 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 
 The following sample demonstrates a more complex logic inside the delegate - how to color the bars in a specific color, depending on their value. If the Bar's YValue is greater than 300 the Bar will be colored red, otherwise it should be green. Since changing the colors of the Bars won't affect their Labels (they will remain with the default color) another CustomItemStyle is used to color them accordingly. Finally the LegendItem's color is changed so that it corresponds to the Bar's colors.
 
-#### __C#__
+
 
 ```C#
 	public partial class MainPage : UserControl
@@ -155,7 +155,7 @@ The following sample demonstrates a more complex logic inside the delegate - how
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Partial Public Class MainPage
@@ -217,7 +217,7 @@ The following sample demonstrates a more complex logic inside the delegate - how
 
 The *LegendItemStyle* used :
 
-#### __XAML__
+
 
 ```XAML
 	<LinearGradientBrush x:Key="LegendItemStyle" EndPoint="1,1" StartPoint="0,0">

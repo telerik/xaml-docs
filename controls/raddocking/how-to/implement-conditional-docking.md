@@ -26,7 +26,7 @@ You could use the __PreviewShowCompass__ event of the __RadDocking__ control in 
 
 For the purpose of this tutorial, the following __RadDocking__ declaration will be used:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking">
@@ -51,7 +51,7 @@ In order to implement conditional docking, you need to perform the following ins
 
 Attach to the __PreviewShowCompass__ event of the __RadDocking__ control.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking1" PreviewShowCompass="radDocking_PreviewShowCompass">
@@ -61,7 +61,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 * __IsLeftIndicatorVisible__ - If you want to disable the left compass indicator, then set the __IsLeftIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
+
 
 ```C#
 	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
@@ -70,7 +70,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(sender As Object, e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
@@ -82,7 +82,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 * __IsTopIndicatorVisible__ - If you want to disable the top compass indicator, then set the __IsTopIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
+
 
 ```C#
 	private void radDocking_PreviewShowCompass1(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
@@ -94,7 +94,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
@@ -107,7 +107,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 * __IsRightIndicatorVisible__ - If you want to disable the right compass indicator, then set the __IsRightIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
+
 
 ```C#
 	private void radDocking_PreviewShowCompass2(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
@@ -118,7 +118,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
@@ -132,7 +132,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 * __IsBottomIndicatorVisible__ - If you want to disable the bottom compass indicator, then set the __IsBottomIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
+
 
 ```C#
 	private void radDocking_PreviewShowCompass3(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
@@ -144,7 +144,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
@@ -159,7 +159,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 
 * __IsCenterIndicatorVisible__ - If you want to disable the center compass indicator, then set the __IsCenterIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
+
 
 ```C#
 	private void radDocking_PreviewShowCompass4(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
@@ -172,7 +172,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)

@@ -20,7 +20,7 @@ There are two ways you can change the template for the __RadTimeline__ items. Yo
 
 The following example demonstrates how you can add custom Framework Element (Rectangle in this case) to present the instant and duration items. The customizations are made via DataTemplate and applied to the corresponding TimelineItemTemplate/TimelineInstantItemTemplate property in XAML. There is nothing special in code-behind, it is added for completeness of the sample.
 
-#### __XAML__
+
 
 ```XAML
 	 <UserControl.Resources>
@@ -64,7 +64,7 @@ The following example demonstrates how you can add custom Framework Element (Rec
 	    </Grid>
 ```
 
-#### __C#__
+
 
 ```C#
 		List<Item> dataSource = new List<Item>();
@@ -90,7 +90,7 @@ The following example demonstrates how you can add custom Framework Element (Rec
 		}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	    Dim dataSource As New List(Of Item)()
@@ -126,7 +126,7 @@ We'll get started with creating a __CustomItemTemplateSelector__ class. It shoul
 
 >We are using the Product class from the previous section as datasource for our Timeline.
 
-#### __C#__
+
 
 ```C#
 	 public class CustomItemTemplateSelector : DataTemplateSelector
@@ -155,7 +155,7 @@ We'll get started with creating a __CustomItemTemplateSelector__ class. It shoul
 	    }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	 Public Class CustomItemTemplateSelector
@@ -188,7 +188,7 @@ We'll get started with creating a __CustomItemTemplateSelector__ class. It shoul
 
 We'll extend the View Model we previously created with __CustomItemTemplateSelector__  property and field as shown below:
 
-#### __C#__
+
 
 ```C#
 	private DataTemplateSelector customItemTemplateSelector;
@@ -205,7 +205,7 @@ We'll extend the View Model we previously created with __CustomItemTemplateSelec
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private customItemTemplateSelector_Renamed As DataTemplateSelector
@@ -221,7 +221,7 @@ We'll extend the View Model we previously created with __CustomItemTemplateSelec
 
 Now in XAML you may create an instance of the CustomItemTemplateSelector class, set the DataTemplates and provide it to the __ItemTemplateSelector__ property:
 
-#### __XAML__
+
 
 ```XAML
 	  <UserControl.Resources>

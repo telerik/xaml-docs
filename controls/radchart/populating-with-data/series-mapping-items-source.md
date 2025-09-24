@@ -20,7 +20,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 1 . Create new *Business Object*:
 
-#### __C#__
+
 
 ```C#
 	public class MyDateObject
@@ -51,7 +51,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyDateObject
@@ -80,7 +80,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 2 . Create a new class named __MyViewModel__, which implements the __ViewModelBase__ interface. It's property *Data* will be used as ItemsSource for the Chart (to bind the First Line using [Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) approach) and the *MappingData* will be ItemsSource for the second Line.
 
-#### __C#__
+
 
 ```C#
 	public class MyViewModel : ViewModelBase
@@ -129,7 +129,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyViewModel
@@ -171,7 +171,7 @@ The following example will demonstrate how to bind two Line Series - the first o
 
 3 . Add new RadChart declaration.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding Data}" UseDefaultLayout="False">

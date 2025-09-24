@@ -16,7 +16,7 @@ This tutorial will walk you through the common task of populating __RadDiagram__
 
 Here is a regular __RadDiagram__ declaration without any Diagramming items:	  
 
-#### __XAML__
+
 ```XAML
     <Grid>
         <telerik:RadDiagram />
@@ -29,7 +29,7 @@ Once you declare the __RadDiagram__ your Diagramming drawing canvas is ready and
 
 When you create your Diagramming structure in XAML, it is important to keep in mind that by default the __RadDiagramShape__ is positioned at the top left corner of the __RadDiagram__. This is why you'll need to set the __Position__ property of each shape based on your layout requirements. The __Position__ property gets or sets the coordinates of the top left point of the shape. You can find more information about the __RadDiagramShape__ properties in the [Diagram Shapes]({%slug raddiagrams-features-shapes%}) tutorial.
 
-#### __XAML__
+
 ```XAML
     <Grid>
         <telerik:RadDiagram>
@@ -51,7 +51,7 @@ When you create your Diagramming structure in XAML, it is important to keep in m
 
 When you define the __RadDiagramConenctions__ you will need to define the start and end points of the connection. Otherwise the connection will be displayed as a small point at the top left corner of the drawing canvas. You can define the start point either by setting the __Source__ of the connection or by setting its __StartPoint__ property. Alternatively the end point is defined through the __Target__ or __EndPoint__ properties. For more information about the __RadDiagramConnection__ properties, please refer to the [Diagram Connections]({%slug raddiagrams-features-connections%}) tutorial.		  
 
-#### __XAML__
+
 ```XAML
     <Grid>
         <telerik:RadDiagram>

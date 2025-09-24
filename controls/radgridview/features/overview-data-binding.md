@@ -13,14 +13,14 @@ position: 0
 
 Displaying data in the __RadGridView__ depends on the data binding mechanism. The entry point for the data to be bound is the __ItemsSource__ property, which you must set in order to display data in your __RadGridView__ control.
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.ItemsSource = GetObservableObjectData();
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radGridView.ItemsSource = GetObservableObjectData()

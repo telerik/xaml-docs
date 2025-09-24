@@ -24,7 +24,7 @@ It is possible to set the MaxLength property of the InputArea using the followin
 
 As of Q2 2014 release __RadComboBox__ provides [TextBoxStyle property]({%slug radcombobox-features-textboxstyle%}) which makes it easy to customize the TextBox part of the control. Just create a custom Style with TargetType set to TextBox and set the MaxLength to the needed value as shown below:
 
-#### __XAML__
+
  
 ```XAML
 	<UserControl.Resources>
@@ -36,7 +36,7 @@ As of Q2 2014 release __RadComboBox__ provides [TextBoxStyle property]({%slug ra
 
 If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default __TextBoxStyle__ of __RadComboBox__ named _ComboBoxTextBoxStyle_.
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="TextBox" x:Key="CustomComboTextBoxStyle" BasedOn="{StaticResource ComboBoxTextBoxStyle}">
@@ -46,7 +46,7 @@ If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-over
 
 Then, set the created Style as __TextBoxStyle__ of __RadComboBox__:
 
-#### __XAML__
+
  
 ```XAML
 	<telerik:RadComboBox 		
@@ -60,7 +60,7 @@ By accessing the ComboBox resources it is possible to modify the Style of the Te
 
 The next code snippet shows how to set the MaxLength property of the TextBox in the control using its resources:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox IsEditable="True">
@@ -76,7 +76,7 @@ The next code snippet shows how to set the MaxLength property of the TextBox in 
 
 The idea in this case is to create a new __Attached Property__ in a helper class.
 
-#### __C#__
+
 
 ```C#
 	public class EditableComboBox
@@ -100,7 +100,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class EditableComboBox
@@ -127,7 +127,7 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 
 * The __PART_EditableTextBox__ is a __TextBox__ and you can easily set its __MaxLength__ property.
 
-#### __C#__
+
 
 ```C#
 	public class EditableComboBox
@@ -165,7 +165,7 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class EditableComboBox
@@ -194,7 +194,7 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 
 Finally set the property in XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.MaxLength="20"/>

@@ -21,7 +21,7 @@ The final result should look like the snapshots below:
 
 * Here is the initial staging: 
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
@@ -47,7 +47,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 
 * Populate the __RadGridView__ control with all products from the Northwind database. Here is a sample code how to do that:
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -86,7 +86,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 
 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -113,7 +113,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -151,7 +151,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -181,7 +181,7 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 
 Declare the __NorthwindDataSource__ class as a resource in your application and set it as an __ItemsSource__ for the gridview. 
 
-#### __XAML__
+
 
 ```XAML
 	<FrameworkElement.Resources>
@@ -191,7 +191,7 @@ Declare the __NorthwindDataSource__ class as a resource in your application and 
 
 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Margin="8" 
@@ -210,7 +210,7 @@ Here is the result so far:
 
 * Attach to the __SelectionChanged__ event of the __RadGridView__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView" Margin="8" 
@@ -224,7 +224,7 @@ Here is the result so far:
 
 * Switch to the code-behind and add the following code in the event handler. It aims to get all the selected products and to build the chart. 
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_SelectionChanged(object sender, SelectionChangeEventArgs e)
@@ -244,7 +244,7 @@ Here is the result so far:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
@@ -264,7 +264,7 @@ Here is the result so far:
 
 * Here is the code for the __CreateSeriesMapping__ method. It builds the __RadChart__ control based on the selected products. If there is only one product that is selected, then the result will be a __BarChart__ comparing the __UnitPrice__ and the __UnitsInStock__ parameters. If there are two or more products that are selected, then the result will be a __LineChart__. 
 
-#### __C#__
+
 
 ```C#
 	private void CreateSeriesMappings( Collection<Products> invoicesList )
@@ -296,7 +296,7 @@ Here is the result so far:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub CreateSeriesMappings(ByVal invoicesList As Collection(Of Products))
@@ -329,7 +329,7 @@ Here is the result so far:
 
 * The __SetChartItemsSource__ method does only one thing - it sets the __ItemsSource__ of the chart. 
 
-#### __C#__
+
 
 ```C#
 	private void SetChartItemsSource( Collection<Products> invoicesList )
@@ -340,7 +340,7 @@ Here is the result so far:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub SetChartItemsSource(ByVal invoicesList As Collection(Of Products))

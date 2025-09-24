@@ -17,7 +17,7 @@ Here is an image that describes the required items from the code-behind:
 
 ![{{ site.framework_name }} RadNumericUpDown Required Parts](images/RadNumericUpDown_required_parts.png)
 
-#### __XAML__
+
 
 ```XAML
 	<!--1. Textbox control for text input-->

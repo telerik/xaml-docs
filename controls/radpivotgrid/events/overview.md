@@ -18,7 +18,7 @@ This topic covers the specific events exposed by DataProviders of __RadPivotGrid
 
 For example you can use the event in order to replace a __DoubleGroupDescription__ (__RadPivotGrid__  automatically creates DoubleGroupDescription for each numeric property) with a __PropertyGroupDescription__ as shown below:            
 
-#### __C#__
+
 
 ```C#
 	private void OnPrepareDescriptionForField(object sender, Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs e)
@@ -54,7 +54,7 @@ For example you can use the event in order to replace a __DoubleGroupDescription
 
 You can find an example below that demonstrates how to get the current status of the DataProvider:            
 
-#### __C#__
+
 
 ```C#
 	private void OnDataProviderStatusChanged(object sender, DataProviderStatusChangedEventArgs e)
@@ -89,7 +89,7 @@ You can find an example below that demonstrates how to get the current status of
 
 * __GetDescriptionsDataAsyncCompleted__ - raised when FieldTree at the top part of __RadPivotFieldList__ is generated. You can use the event in order to modify the FieldTree - you can add folders, reorder and modify the nodes. For example if you would need to group some of the nodes in folders you can use the following sample code:            
 
-#### __C#__
+
 
 ```C#
 	private void OnGetDescriptionsDataAsyncCompleted(object sender, GetDescriptionsDataCompletedEventArgs e)

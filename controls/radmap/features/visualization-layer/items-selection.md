@@ -20,7 +20,7 @@ Many applications require the ability to select items shown over the map. The __
 
 By default items selection feature is disabled in favor of the panning by mouse click and zooming using rectangle selection operations. To enable it you should set values of the __MouseClickMode__ and __MouseSelectionMode__ properties of the __RadMap__ control:
       
-#### __XAML__
+
 ```XAML
     <telerik:RadMap x:Name="radMap"
                     Center="40,-95"
@@ -38,7 +38,7 @@ By default items selection feature is disabled in favor of the panning by mouse 
 
 In this section we demonstrate how the items selection can be implemented for the point-type objects (i.e. objects which represent single location on the map). In order to provide the needed data to the visualization layer, you have to create a collection of business __MapItem__ objects. For example:        
 
-#### __C#__
+
 ```C#
 	public class MapItem : INotifyPropertyChanged
 	{
@@ -129,7 +129,7 @@ In this section we demonstrate how the items selection can be implemented for th
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Public Class MapItem
         Implements INotifyPropertyChanged
@@ -203,7 +203,7 @@ In this section we demonstrate how the items selection can be implemented for th
 
 The next step is to define the __ItemTemplate__ for the information layer and set the desired bindings in it. In the current example, the marker will be represented by a __MapPinPoint__ object:
         
-#### __XAML__
+
 ```XAML
     <DataTemplate x:Key="PinPointTemplate">
         <telerik:MapPinPoint Background="{Binding Background}"
@@ -233,7 +233,7 @@ The next step is to define the __ItemTemplate__ for the information layer and se
 
 We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order to change selection state of the business data objects.
         
-#### __C#__
+
 ```C#
 	public partial class SelectLocations : UserControl
 	{
@@ -297,7 +297,7 @@ We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order 
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Partial Public Class SelectLocations
         Inherits UserControl
@@ -370,7 +370,7 @@ Here are the steps that you need to take in order to select items using rectangl
 
 In this section we demonstrate how the items selection feature can be implemented for the map shape objects. The __VisualizationLayer__ handles selection state of the map shape objects automatically so we do not need to do anything specific. You just have to set filling for the different states of the shape objects: __ShapeFill__, __HighlightFill__ and __SelectedFill__:
         
-#### __XAML__
+
 ```XAML
     <telerik:RadMap x:Name="radMap"
                     Center="52, 20"
@@ -434,7 +434,7 @@ Here are the steps that you need to take in order to select items using rectangl
 
 The __VisualizationLayer__ class provides several methods which can be used to select or unselect items programmatically. In this section we demonstrate how the items selection can be used to select map shapes using extended data. For demonstration purposes the __world.shp__ and __world.dbf__ files are used. Both files are available in our QSF demo application. The world.shp file contains shapes which represents countries around the world. The world.dbf file contains extended data for these shapes. The extended property with *SQKM* name represents area of the country in the square kilometers. We will use this property to select countries with area which is greater than a given value.
         
-#### __XAML__
+
 ```XAML
     <UserControl x:Class="TestMapFeatures.Views.VisualizationLayer.Selection.SelectItems"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -497,7 +497,7 @@ The __VisualizationLayer__ class provides several methods which can be used to s
     </UserControl>	
 ```
 
-#### __C#__
+
 ```C#
 	    private void ShowSelectedItems(object sender, RoutedEventArgs e)
 	{
@@ -518,7 +518,7 @@ The __VisualizationLayer__ class provides several methods which can be used to s
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	    Private Sub ShowSelectedItems(sender As Object, e As RoutedEventArgs)
 	        Dim condition As String = Me.filter.Text.Trim()

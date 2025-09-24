@@ -42,7 +42,7 @@ In order to create __RadChartView__ you need data source. In our case we need th
 
 Our first task is to create an instance of __PivotChartViewModel__ and set its *DataProvider*. We will use this instance as a DataContext of our application:        
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.DataContext>
@@ -50,7 +50,7 @@ Our first task is to create an instance of __PivotChartViewModel__ and set its *
 	</UserControl.DataContext>
 ```
 
-#### __C#__
+
 
 ```C#
 	public PivotChartUserControl()
@@ -62,7 +62,7 @@ Our first task is to create an instance of __PivotChartViewModel__ and set its *
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -75,7 +75,7 @@ Our first task is to create an instance of __PivotChartViewModel__ and set its *
 
 Now we will create a new __RadCartesianChart__ and set its *HorizontalAxis*, *VerticalAxis* and *SeriesProvider* properties. We will use *ChartSeriesProvider* and bind its Source to the *SeriesSource* of __PivotChartViewModel__.        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadCartesianChart x:Name="chart"  Grid.Row="1" Palette="Windows8">
@@ -107,7 +107,7 @@ You can change the chart type by setting a Style on your __CategoricalSeriesDesc
 
 First lets create the Style. We'll use BarSeries and we'll set its *CombineMode* and *LegendSettings* properties:         
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:CategoricalSeriesDescriptor  x:Name="seriesDescriptor"  ItemsSourcePath="Items" ValuePath="Value" CategoryPath="NameX">
@@ -122,7 +122,7 @@ First lets create the Style. We'll use BarSeries and we'll set its *CombineMode*
 
 The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our application:        
 
-#### __C#__
+
 
 ```C#
 	public class SeriesSourceNameToSeriesLegendSettigsConverter : IValueConverter
@@ -142,7 +142,7 @@ The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our applicati
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class SeriesSourceNameToSeriesLegendSettigsConverter
@@ -160,7 +160,7 @@ The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our applicati
 
 Now we just have to add __RadLegend__ to our application:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadLegend x:Name="legend" Grid.Row="1" Grid.Column="1" Margin="10 10 0 0" Items="{Binding ElementName=chart, Path=LegendItems, Mode=OneWay}"/>

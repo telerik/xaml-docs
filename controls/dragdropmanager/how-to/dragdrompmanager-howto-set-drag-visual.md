@@ -53,7 +53,7 @@ We will demonstrate this functionality implemented within a simple ListBox. For 
 
 3. Set suitable drag visual that will be displayed while dragging is performed:
 
-	#### __C#__
+	
 
 	```C#
 		private void OnDragInitialize(object sender, DragInitializeEventArgs args)

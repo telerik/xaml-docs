@@ -19,7 +19,7 @@ The __IsDirectionReversed__ property determines whether the direction of increas
 
 For a __vertical Slider the values increase from bottom to top__. When you set the __IsDirectionReversed__ property to __true__, the direction of increasing value reverses.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="TopLeft" IsDirectionReversed="False">
@@ -35,7 +35,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 
 ![{{ site.framework_name }} RadSlider Normal Direction Horizontal](images/radslider_features_normal_horizontal.png)
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="TopLeft" IsDirectionReversed="True">
@@ -51,7 +51,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 
 ![{{ site.framework_name }} RadSlider Reversed Direction Horizontal](images/radslider_features_reversed_horizontal.png)
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Height="250" 
@@ -73,7 +73,7 @@ For a __vertical Slider the values increase from bottom to top__. When you set t
 
 ![{{ site.framework_name }} RadSlider Normal Direction Vertical](images/radslider_features_normal_vertical.png)
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Height="250" 

@@ -26,7 +26,7 @@ Since *Q2 2011* two new attachable properties were added that allow you to confi
 
 Here is an example of a __Border__ that holds a __TextBlock__ with some information about the location:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"

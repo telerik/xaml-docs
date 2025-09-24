@@ -23,7 +23,7 @@ The main __ChartArea__ events that you can use to implement some kind of interac
 
 The example below shows a text box with some details when a candle is clicked. __ItemClick__ event is also used to implement [drill-down charts]({%slug radchart-how-to-drill-down-chart%}).
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:ChartDefaultView.ChartArea>
@@ -33,7 +33,7 @@ The example below shows a text box with some details when a candle is clicked. _
 
 
 
-#### __C#__
+
 
 ```C#
 	public Sample()
@@ -53,7 +53,7 @@ The example below shows a text box with some details when a candle is clicked. _
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	      
@@ -74,7 +74,7 @@ On the snapshot below you can see the __MessageBox__ shown when the user has cli
 
 The latest version of the Chart control includes an enhancement of the Selection mechanism. It allows the developer to programmatically select items in the control. The following code snippet demonstrates one such scenario:
 
-#### __C#__
+
 
 ```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
@@ -89,7 +89,7 @@ The latest version of the Chart control includes an enhancement of the Selection
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)

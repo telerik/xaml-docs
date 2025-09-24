@@ -51,20 +51,20 @@ The __BeginningEdit__ event occurs when the cell is about to enter into __EditMo
 
 You can subscribe to the __BeginningEdit__ event declaratively or runtime like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView" BeginningEdit="radGridView_BeginningEdit"/>
 ```
 
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.BeginningEdit += radGridView_BeginningEdit;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler Me.radGridView.BeginningEdit, AddressOf radGridView_BeginningEdit
@@ -72,7 +72,7 @@ You can subscribe to the __BeginningEdit__ event declaratively or runtime like t
 
 The __BeginningEdit__ event is cancelable:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_CancelBeginningEdit(object sender, Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs e)
@@ -82,7 +82,7 @@ The __BeginningEdit__ event is cancelable:
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_CancelBeginningEdit(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs)
@@ -93,7 +93,7 @@ The __BeginningEdit__ event is cancelable:
 
 The example below uses the __BeginningEdit__ event to show a tool tip when the user tries to edit a cell from a certain column:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_BeginningEdit(object sender, Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs e)
@@ -106,7 +106,7 @@ The example below uses the __BeginningEdit__ event to show a tool tip when the u
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs)
@@ -135,7 +135,7 @@ The PreparingCellForEdit event fires after the __BeginningEdit__ event. It allow
 
 The example below uses the __PreparingCellForEdit__ event to access the underlying TextBox editing element and set its TextWrapping property to Wrap:
 
-#### __C#__
+
 
 ```C#
 	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
@@ -148,7 +148,7 @@ The example below uses the __PreparingCellForEdit__ event to access the underlyi
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
@@ -177,7 +177,7 @@ The event handler receives two arguments:
 
 The example below uses the __PreparedCellForEdit__ event to prevent the selection of the text inside the editing element:
 
-#### __C#__
+
 
 ```C#
 	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
@@ -192,7 +192,7 @@ The example below uses the __PreparedCellForEdit__ event to prevent the selectio
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
@@ -233,21 +233,21 @@ The __EditAction__ property is a __GridViewEditAction__ enumeration, which expos
 
 You can subscribe to the __CellEditEnded__ event declaratively or runtime like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView" CellEditEnded="radGridView_CellEditEnded"/>
 ```
 
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.CellEditEnded += radGridView_CellEditEnded;
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler Me.radGridView.CellEditEnded, AddressOf radGridView_CellEditEnded
@@ -256,7 +256,7 @@ You can subscribe to the __CellEditEnded__ event declaratively or runtime like t
 
 The example below uses the __CellEditEnded__ event to show a message box containing details of the cell being edited - like column's __Unique name__ and the __new value__ of the cell:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_CellEditEnded(object sender, Telerik.Windows.Controls.GridViewCellEditEndedEventArgs e)
@@ -267,7 +267,7 @@ The example below uses the __CellEditEnded__ event to show a message box contain
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_CellEditEnded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewCellEditEndedEventArgs)
@@ -301,19 +301,19 @@ The __RowEditEnded__ event occurs when row validation passed successfully and ne
 
 You can subscribe to the __RowEditEnded__ event declaratively or runtime like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView" RowEditEnded="radGridView_RowEditEnded"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.RowEditEnded += radGridView_RowEditEnded;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler Me.radGridView.RowEditEnded, AddressOf radGridView_RowEditEnded
@@ -321,7 +321,7 @@ You can subscribe to the __RowEditEnded__ event declaratively or runtime like th
 
 The example below uses the __RowEditEnded__ to display the new data of the edited row in a text block. It also assumes that the grid is bound to List of __Employee__ objects:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_RowEditEnded(object sender, Telerik.Windows.Controls.GridViewRowEditEndedEventArgs e)
@@ -334,7 +334,7 @@ The example below uses the __RowEditEnded__ to display the new data of the edite
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewRowEditEndedEventArgs)

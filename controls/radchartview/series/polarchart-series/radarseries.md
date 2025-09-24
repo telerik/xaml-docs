@@ -14,7 +14,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 
 Below is an example of RadPolarChart with *RadarLineSeries:*
 
-#### __XAML__
+
 
 ```XAML
    <telerik:RadPolarChart>

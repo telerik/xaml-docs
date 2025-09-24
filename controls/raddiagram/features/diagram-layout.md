@@ -22,7 +22,7 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 
 * use the __RadDiagram Layout()__ method:
 			  
-#### __XAML__
+
 ```XAML
     <Grid>
         <Grid.RowDefinitions>
@@ -40,7 +40,7 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
     </Grid>		
 ```
 
-#### __C#__
+
 ```C#
     private void Layout(object sender, RoutedEventArgs e)
     {
@@ -48,7 +48,7 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
     }		  
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Private Sub Layout(sender As Object, e As RoutedEventArgs)
         diagram.Layout()
@@ -57,7 +57,7 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 
 * use the __DiagramCommands Layout__ command:
 			  
-#### __XAML__
+
 ```XAML
     <Grid>
         <Grid.RowDefinitions>
@@ -78,7 +78,7 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 
 The __Layout()__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings):
 
-#### __C#__
+
 ```C#
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
@@ -94,7 +94,7 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New SugiyamaSettings() With { 
@@ -151,7 +151,7 @@ Below you can see a snapshots of random diagrams laid out with Tree Layout types
 
 Here is how this could be achieved in code behind.	
 
-#### __C#__
+
 ```C#
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
@@ -165,7 +165,7 @@ Here is how this could be achieved in code behind.
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New TreeLayoutSettings() With { 

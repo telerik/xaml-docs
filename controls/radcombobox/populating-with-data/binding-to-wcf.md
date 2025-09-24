@@ -20,7 +20,7 @@ The purpose of this tutorial is to show you how to populate a __RadComboBox__ wi
 
 Before proceeding further with this tutorial, you need to create a new application and a __RadComboBox__ declaration in your XAML.
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadComboBox x:Name="radComboBox"/>
 ```
@@ -31,12 +31,12 @@ Before proceeding further with this tutorial, you need to create a new applicati
 
 2. Switch to the code-behind and create a new instance of your WCF Service client.
 
-	#### __C#__  
+	  
 	```C#
 		ComboBoxWcfServiceClient serviceClient = new ComboBoxWcfServiceClient();
 	```
 
-	#### __VB.NET__  
+	  
 	```VB.NET
 		Dim serviceClient As New ComboBoxWcfServiceClient()
 	```

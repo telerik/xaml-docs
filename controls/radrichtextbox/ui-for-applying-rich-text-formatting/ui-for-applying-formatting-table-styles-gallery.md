@@ -41,7 +41,7 @@ In order to take advantage of the TableStylesGallery you have to add references 
 The below snippet is an example of TableStylesGallery:
         
 
-#### __XAML__
+
 
 ```XAML
     <telerik:TableStylesGallery

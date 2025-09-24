@@ -22,7 +22,7 @@ In __RadMenu__ basically there are three types of menu items which provide diffe
 
 __RadMenuItem__ is the main menu item in __RadMenu__. It is used for the top-level menu and each __RadMenuItem__ can have other RadMenuItems as children in order to create sub-menus. Its __Header__ property accepts plain text as well as other objects, it can be set the following ways:       
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu>
@@ -56,7 +56,7 @@ You can also set an Icon of __RadMenuItem__ which is done by its __Icon__ proper
 
 __RadMenuGroupItem__ inherits from __RadMenuItem__ class and it is used as container of a __RadMenuItem__ dropdown. In other words any UI element can be placed inside of __RadMenuGroupItem__. By default the background color of __RadMenuGroupItem__ is White and there is no Icon area with different color unlike __RadMenuItem__, so you can easily use different sized Icons in the dropdown. In addition to this __RadMenuGroupItem__ also has a __Header__ property which is displayed on the top of all the group items.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu VerticalAlignment="Top">
@@ -79,7 +79,7 @@ And this is the result:
 
 __RadMenuSeparatorItem__ also inherits from __RadMenuItem__. It is a menu item used to separate __RadMenuItems__/__RadMenuGroupItems__. Its orientation can be horizontal and vertical and it is automatically set depending on the menu orientation.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu>

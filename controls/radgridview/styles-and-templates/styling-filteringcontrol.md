@@ -44,7 +44,7 @@ __GridViewColumn__ exposes the __FilteringControlStyle__ property of type __Styl
 
 You can modify it similarly to the FilteringDropDown style and set it as follows:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn FilteringControlStyle="{StaticResource FilteringControlStyle}" />

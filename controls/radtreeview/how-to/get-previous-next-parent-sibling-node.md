@@ -21,7 +21,7 @@ The __RadTreeViewItem__ class exposes properties which allow you to access:
 
 Here is a simple treeview declaration: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
@@ -46,13 +46,13 @@ Here is a simple treeview declaration:
 
 For example, you should attach to the __SelectionChanged__ event and in the event handler get the selected items. Find the treeview declaration and add the following attribute: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView" SelectionChanged="radTreeView_SelectionChanged">
 ```
 
-#### __C#__
+
 
 ```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
@@ -65,7 +65,7 @@ For example, you should attach to the __SelectionChanged__ event and in the even
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
@@ -87,7 +87,7 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 
 * If you select the treeview item with header "Indoor Cycling", then both of the properties will return you the treeview item with header "Road Cycling". 
 
-#### __C#__
+
 
 ```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
@@ -104,7 +104,7 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
@@ -130,7 +130,7 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 
 * If you select the treeview item with header "Futsal", then both of the properties will return you the treeview item with header "Soccer". 
 
-#### __C#__
+
 
 ```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
@@ -150,7 +150,7 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 	}
 ```
 
-#### __XAML__
+
 
 ```XAML
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
@@ -180,7 +180,7 @@ If you want to get the parent item of the currently selected item, you should us
 
 * If you select the treeview item with header "Sport Categories", then the __ParentItem__ property will return you null, while the __RootItem__ property will return you the same treeview item (with header "Sport Categories"). 
 
-#### __C#__
+
 
 ```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
@@ -204,7 +204,7 @@ If you want to get the parent item of the currently selected item, you should us
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)

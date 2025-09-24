@@ -22,7 +22,7 @@ The RadTreeView class allows you to change this default behavior by overriding i
 
 The following code snippet demonstrates how to override the method and replace the default __Content__ of the __DragPreview__ with a single TextBlock element:
 
-#### __C#__
+
 ```C#
 	public class CustomTreeView : RadTreeView
 	{
@@ -42,7 +42,7 @@ The DragPreview of the drag visual is presented by a ContentControl which gets t
 
 Here is a possible scenario in which we prepare a list of strings and return it as a Content of the drag visual:
 
-#### __C#__
+
 ```C#
 	public class CustomTreeView : RadTreeView
     {
@@ -68,7 +68,7 @@ Here is a possible scenario in which we prepare a list of strings and return it 
 
 You can set the ContentTemplate of the __TreeViewDragVisual__ with Style like so:
 
-#### __XAML__
+
 ```XAML
 	<Application.Resources>
         <Style TargetType="telerik:TreeViewDragVisual">

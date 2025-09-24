@@ -14,7 +14,7 @@ Programmatic sorting is performed by adding a __SortDescriptor__ object to the _
 
 For example: 
 
-#### __C#__
+
 
 ```C#
 
@@ -24,7 +24,7 @@ For example:
 	this.customersDataSource.SortDescriptors.Add(sd);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 

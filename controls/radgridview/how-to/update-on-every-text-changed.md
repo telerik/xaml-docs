@@ -18,7 +18,7 @@ The TextBoxBehavior is available within Telerik.Windows.Controls assembly and yo
 
 For example you can update the source of the binding on every text change. You could apply the behaviour like so:
         
-#### __XAML__
+
 
 ```XAML
 	<TextBox Text="{Binding Name}" telerik:TextBoxBehavior.UpdateTextOnTextChanged="True" />

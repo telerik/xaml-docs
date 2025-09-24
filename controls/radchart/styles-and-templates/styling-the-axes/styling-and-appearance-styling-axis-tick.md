@@ -20,7 +20,7 @@ The axis tick lines are part of the chart axis and are represented by the __Line
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View *from the menu. Declare a __Line__ control in your XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot"
@@ -41,7 +41,7 @@ After clicking the OK button, a style with target type __Line__ will be created 
 
 After finishing with the changes, it is time to set the style to the __TickLineStyle__ property. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TickLineStyle = this.Resources["AxisXTickStyle"] as Style;
@@ -49,7 +49,7 @@ After finishing with the changes, it is time to set the style to the __TickLineS
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.RadChart.DefaultView.ChartArea.AxisX.AxisStyles.TickLineStyle = TryCast(Me.Resources("AxisXTickStyle"), Style)
@@ -65,7 +65,7 @@ After finishing with the changes, it is time to set the style to the __TickLineS
 
 Here is the final XAML for the __Styles__:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="AxisXTickStyle" TargetType="Line">

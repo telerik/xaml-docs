@@ -20,7 +20,7 @@ To disable the `Del` key deletion set the `CanUserDeleteRows` property of `RadGr
 
 The following examples show how to manually remove items from the `ItemsSource`.
 
-#### __XAML__  
+  
 ```XAML
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Delete"
@@ -34,7 +34,7 @@ The following examples show how to manually remove items from the `ItemsSource`.
 
 To determine which items are to be removed, use the __SelectedItems__ collection of the __RadGridView__. You can also use the __SelectedItem__ or the __CurrentItem__ objects, but the __SelectedItems__ collection is more flexible and allows your deleting logic to function even by [multiple selection]({%slug gridview-multiple-selection%}).
 
-#### __C#__
+
 
 ```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
@@ -52,7 +52,7 @@ To determine which items are to be removed, use the __SelectedItems__ collection
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -71,7 +71,7 @@ When an item is removed from the __ItemsSource__ collection it is also removed f
 
 Here is an example of a sample deleting logic implemented in the event handler for a Button's Click event.
 
-#### __C#__
+
 
 ```C#
 	private void Button2_Click(object sender, RoutedEventArgs e)
@@ -95,7 +95,7 @@ Here is an example of a sample deleting logic implemented in the event handler f
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Button2_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)

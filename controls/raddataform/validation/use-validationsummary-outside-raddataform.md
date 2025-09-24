@@ -20,7 +20,7 @@ As of __R2 2016 SP1__, __DataFormValidationSummary__ is exposed to be used outsi
 
 In order to use RadGridView in XAML, you have to add the following namespace declaration:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerikDataForm="clr-namespace:Telerik.Windows.Controls.Data.DataForm;assembly=Telerik.Windows.Controls.Data"

@@ -24,7 +24,7 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
 
 * __Redo()__ - this method reapplies the last operation that was undone in the __RadDiagram__.				  
 
-#### __XAML__
+
 ```XAML
 	<Grid>
 		<Grid.RowDefinitions>
@@ -65,7 +65,7 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
 	</Grid>
 ```
 
-#### __C#__	
+	
 ```C#
     private void Undo(object sender, RoutedEventArgs e)
     {
@@ -78,7 +78,7 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
     }				  
 ```
 
-#### __VB.NET__	
+	
 ```VB.NET
     Private Sub Undo(sender As Object, e As RoutedEventArgs)
         diagram.Undo()
@@ -97,7 +97,7 @@ __Telerik Diagramming Framework__ exposes a set of commands that allow you to ea
 
 >For a full list of the Telerik __DiagramCommands__, please refer to the [Commands]({%slug raddiagrams-features-commands%}) tutorial.			  
 
-#### __XAML__
+
 ```XAML
     <Grid Margin="20">
         <Grid.RowDefinitions>

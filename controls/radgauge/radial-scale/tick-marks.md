@@ -22,7 +22,7 @@ Tick marks allow displaying value intervals along the gauge scale. There are 3 t
 
 There are 2 alternative ways to set number of the major ticks along the scale. This first one is using MajorTicks property. It sets number of the of the value intervals along the entire length of the scale bar:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100" MajorTicks="10">
@@ -38,7 +38,7 @@ There are 2 alternative ways to set number of the major ticks along the scale. T
 
 The second one uses MajorTickStep property. It sets length of the single tick interval in the scale units:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100" MajorTickStep="20">
@@ -57,7 +57,7 @@ Sometimes desirable length of the major tick (MajorTickStep) creates situations 
 
 In this situation we can use ShowLastLabel property to indicate whether the tick mark at the end position should be shown:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="102"
@@ -75,7 +75,7 @@ By default, the major tick marks start from the minimum scale value and move clo
 
 To change the layout of the tick marks you may use their correspondent properties:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"
@@ -97,7 +97,7 @@ The Major, Middle and Minor ticks have the boolean UseRangeColor property. If it
 
 ![{{ site.framework_name }} RadGauge RadialScale Use Range Color](images/RadialScaleTickRangeColor.png)
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
@@ -126,7 +126,7 @@ The RadGauge control provides very flexible standard tick marks and labels, but 
 
 The additional tick marks are defined in the CustomItems collection of the RadialScale:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 		<telerik:RadRadialGauge.Resources> 

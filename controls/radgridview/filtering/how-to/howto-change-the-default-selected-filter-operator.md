@@ -12,7 +12,7 @@ position: 5
 
 To change the default selected filter operators, you have to handle the __FilterOperatorsLoading__ event of RadGridView and set them in the event arguments. When the [FilteringMode]({%slug gridview-filtering-howto-configure-the-filtering-mode%}) is __FilterRow__, you only need to set the first operator.
 
-#### __C#__
+
 
 ```C#
 	private void OnRadGridViewFilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
@@ -25,7 +25,7 @@ To change the default selected filter operators, you have to handle the __Filter
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)

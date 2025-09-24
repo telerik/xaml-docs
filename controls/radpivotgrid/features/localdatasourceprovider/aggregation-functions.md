@@ -117,13 +117,13 @@ You can define Aggregate function in the __XAML__, in code behind or even at run
 
 Aggregate Function is defined on PropertyAggregateDescription. There is property AggregateFunction which should be set in one of the following ways:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="StdDevP" />
 ```
 
-#### __C#__
+
 
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
@@ -131,7 +131,7 @@ Aggregate Function is defined on PropertyAggregateDescription. There is property
 	aggregate.AggregateFunction = AggregateFunctions.StdDevP;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()

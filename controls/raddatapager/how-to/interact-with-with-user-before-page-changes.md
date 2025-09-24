@@ -14,7 +14,7 @@ While developing an UI, which contains paging, you might want to ensure that the
 
 Here is an example of a __RadDataPager__ that shows a __MessageBox__ before changing the page when a condition is met.
 
-#### __XAML__
+
 ```XAML
 
 	<telerik:RadDataPager x:Name="radDataPager"
@@ -25,7 +25,7 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 	                        Margin="0,10,0,0" PageIndexChanging="radDataPager_PageIndexChanging" />
 ```
 
-#### __C#__
+
 ```C#
 
 	private bool myCondition;
@@ -43,7 +43,7 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 ```
 
 
-#### __VB.NET__
+
 ```VB.NET
 
 	Private myCondition As Boolean

@@ -38,7 +38,7 @@ __XmlaDataProvider__ has several important properties that have to be defined:
 
 You can extend the parameters passed to the OLAP cube by using *QueryProperties* property of __XmlaConnectionSettings__. *QueryProperties* is a collection of *XmlaQueryProperty* items. Each *XmlaQueryProperty* must have Name and Value set. Name is the parameter which you want to pass to the cube, while value is its current value. This can be used if you want to take localized data from your cube, for which you have to pass LocalIdentifier parameter and as value you have to set the value of the language:            
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaConnectionSettings Cube="LocalizedCube" Database="OrdersCube" ServerAddress="http://localhost/olap/msmdpump.dll">
@@ -48,7 +48,7 @@ You can extend the parameters passed to the OLAP cube by using *QueryProperties*
 	</pivot:XmlaConnectionSettings>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaConnectionSettings cubeConnectionDetails = new XmlaConnectionSettings();
@@ -63,7 +63,7 @@ You can extend the parameters passed to the OLAP cube by using *QueryProperties*
 	cubeConnectionDetails.QueryProperties.Add(localization);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim cubeConnectionDetails As New XmlaConnectionSettings()
@@ -90,7 +90,7 @@ __XmlaDataProvider__ can be defined in the __XAML__ as a *StaticResource* and us
 
 >importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __XmlaDataProvider__ in your XAML.				
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -108,7 +108,7 @@ __XmlaDataProvider__ can be defined in the __XAML__ as a *StaticResource* and us
 
 You can also create an object of type __XmlaDataProvider__ in the code behind and set it for your controls:
 
-#### __C#__
+
 
 ```C#
 	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
@@ -116,7 +116,7 @@ You can also create an object of type __XmlaDataProvider__ in the code behind an
 	this.radPivotFieldList.DataProvider = xmlaDataProvider;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim xmlaDataProvider As New XmlaDataProvider()
@@ -128,7 +128,7 @@ You can also create an object of type __XmlaDataProvider__ in the code behind an
 
 To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to OLAP Cube. For this purpose we will set the *ConnectionSettings* property of the __XmlaDataProvider__. This can be done directly in the __XAML__ or in the code behind:    		
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaDataProvider.ConnectionSettings>
@@ -140,7 +140,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	</pivot:XmlaDataProvider.ConnectionSettings>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaConnectionSettings cubeConnectionDetails = new XmlaConnectionSettings();
@@ -152,7 +152,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim cubeConnectionDetails As New XmlaConnectionSettings()
@@ -190,7 +190,7 @@ The __XmlaAggregateDescription__ is used to define data that has to be aggregate
 
 Here is how to define row, column group descriptions and aggregate descriptions:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaDataProvider.RowGroupDescriptions>
@@ -206,7 +206,7 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	</pivot:XmlaDataProvider.AggregateDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaGroupDescription rowGroupDescription1 = new XmlaGroupDescription();
@@ -226,7 +226,7 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	xmlaDataProvider.EndInit();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim rowGroupDescription1 As New XmlaGroupDescription()
@@ -248,7 +248,7 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 
 The __XmlaFilterDescription__ is used to filter the data that will be included in the report. Filtering is applied for a specific member defined in *MemberName* property. *Condition* property defines the way to filter the items. Only the ones that pass the filter will be shown in __RadPivotGrid__. The filtering is based on the Unique Name of the members. For example, if you want to show only data for year 2005, you can define it like this:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaDataProvider.FilterDescriptions>
@@ -264,7 +264,7 @@ The __XmlaFilterDescription__ is used to filter the data that will be included i
 	</pivot:XmlaDataProvider.FilterDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaFilterDescription filterDescription = new XmlaFilterDescription();
@@ -275,7 +275,7 @@ The __XmlaFilterDescription__ is used to filter the data that will be included i
 	filterDescription.Condition = condition;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim filterDescription As New XmlaFilterDescription()
@@ -294,7 +294,7 @@ As OLAP dimensions are hierarchical, you can use filters for each of the levels 
 
 In the blue rectangle are all attribute hierarchies - you can use them as a filter by adding them as a new __FilterGroupDescription__. In the red rectangle you can see the user-defined hierarchy of Date.Calendar dimension. You can filter your data by each of the members by adding it to the *Levels* property of __XmlaFilterDescription__:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:XmlaFilterDescription MemberName="[Date].[Calendar]">
@@ -321,7 +321,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	</pivot:XmlaFilterDescription>
 ```
 
-#### __C#__
+
 
 ```C#
 	XmlaFilterDescription topFilterDescription = new XmlaFilterDescription();
@@ -345,7 +345,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	topFilterDescription.Levels.Add(levelFilterDescription2);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim topFilterDescription As New XmlaFilterDescription()

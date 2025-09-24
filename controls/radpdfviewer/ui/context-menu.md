@@ -30,7 +30,7 @@ Every __RadMenuItem__ in the RadContextMenu is bound to a RadPdfViewer command t
 The __Visibility__ of each RadMenuItem, on the other hand, is bound to the __IsEnabled__ property of the CommandDescriptor. In order to convert the *Boolean* value to *Visibility*  value, the __BoolToVisibility__ converter is used. The following XAML creates the context menu:
         
 
-#### __XAML__
+
 
 This is how the context menu looks:
 ![Rad Pdf Viewer Context Menu 03](images/RadPdfViewer_Context_Menu_03.png)

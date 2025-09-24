@@ -107,7 +107,7 @@ All types of __Cross-References__ can be inserted using methods of __RadRichText
 
 Every bookmark has a unique name. So in order to insert a reference to a bookmark, you need its name. __RadRichTextBox__ has the following method:
 
-#### __C#__
+
 
 ```C#
 	public void InsertCrossReferenceToBookmark(string bookmarkName, ReferenceContentType contentType, bool insertAsHyperlink)
@@ -121,7 +121,7 @@ __ReferenceContentType__ is an enumeration that has five values – __EntireCont
 
 You have to pass the paragraph (with heading style applied, of course) that you want to create a Reference to. The method signature is as follows:
 
-#### __C#__
+
 
 ```C#
 	public void InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink)
@@ -132,7 +132,7 @@ The parameters are almost the same, except the first one. It represents the para
 
 The method signature is:
 
-#### __C#__
+
 
 ```C#
 	public void InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink)

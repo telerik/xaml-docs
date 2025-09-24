@@ -16,7 +16,7 @@ __RadGridView__ provides you with a built-in sorting functionality, which allows
 
 You can define sorting criteria either in the XAML or in the code-behind.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView"
@@ -32,7 +32,7 @@ You can define sorting criteria either in the XAML or in the code-behind.
 
 You can achieve the same result if you define your sorting criteria in the code-behind like this:
 
-#### __C#__
+
 
 ```C#
 	SortDescriptor descriptor = new SortDescriptor();
@@ -42,7 +42,7 @@ You can achieve the same result if you define your sorting criteria in the code-
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim descriptor As New SortDescriptor()

@@ -14,13 +14,13 @@ Using the __RadGridView__, you can edit the data displayed in it. The data is ed
 
 There are three ways for the row to enter edit mode. The first one is when the user presses __F2 (or double clicks the cell),__ the second is when the __BeginEdit()__ method of the __RadGridView__ is called and the third is when the user starts typing over the cell. This behavior is controled by the __EditTriggers__ enumeration either on gridview or column level.
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.BeginEdit();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radGridView.BeginEdit()
@@ -28,7 +28,7 @@ There are three ways for the row to enter edit mode. The first one is when the u
 
 For example, you can use a button to call this method.
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel x:Name="LayoutRoot">
@@ -42,7 +42,7 @@ For example, you can use a button to call this method.
 
 And in the event handler call the method for the Click event.
 
-#### __C#__
+
 
 ```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
@@ -51,7 +51,7 @@ And in the event handler call the method for the Click event.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -67,7 +67,7 @@ And in the event handler call the method for the Click event.
 
 The next step in implementing the adding functionality is to attach event handlers to the __BeginningEdit__ and the __RowEditEnded__ events.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView BeginningEdit="radGridView_BeginningEdit"
@@ -79,7 +79,7 @@ The next step in implementing the adding functionality is to attach event handle
 
 The __BeginningEdit__ event is raised before the row enters edit mode. In the event handler you can cancel the operation or modify the cell being edited via the __Cancel__ and __Cell__ properties of the __GridViewBeginningEditRoutedEvenArgs__.
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_BeginningEdit(object sender, GridViewBeginningEditRoutedEventArgs e)
@@ -87,7 +87,7 @@ The __BeginningEdit__ event is raised before the row enters edit mode. In the ev
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As GridViewBeginningEditRoutedEventArgs)
@@ -98,7 +98,7 @@ There are several ways to commit the edited data and all of them will raise the 
 
 Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction__ (__Commit__ or __Cancel__) and the __GridViewEditOperationType__ (__Insert__ or __Edit__) . The event arguments class also allows you to access the updated data via the __NewData__ property. On the other hand the __OldValues__ property contains the old data. To be sure that the appropriate data will be submitted (as this handler will be used by the add operations too), you have to assure that the action is __Commit__ and the operation type is __Edit__.
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
@@ -114,7 +114,7 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)

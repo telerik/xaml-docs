@@ -12,7 +12,7 @@ position: 4
 
 In case you want to hide some of the available filter operators, you have to attach to the __FilterOperatorsLoading__ event of RadGridView. In the event arguments there is a property called AvailableOperators. The data engine will fill this collection with all operators supported for the respective column data type. You can only remove existing operators from this collection. You cannot add new ones. Trying to do so will result in an exception because the data engine will not be able to handle them. If you remove the default filter operator from the list, it might be a good idea to specify what should be selected by default by using the __DefaultFilterOperator1__ and __DefaultFilterOperator2__ properties.
 
-#### __C#__
+
 
 ```C#
 	private void OnRadGridViewFilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
@@ -34,7 +34,7 @@ In case you want to hide some of the available filter operators, you have to att
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)

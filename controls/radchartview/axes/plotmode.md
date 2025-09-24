@@ -16,7 +16,7 @@ RadChartView allows you to modify the layout of the Categorical and Date Time ax
 
 You can set the PlotMode from XAML like this:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadCartesianChart x:Name="telerik">

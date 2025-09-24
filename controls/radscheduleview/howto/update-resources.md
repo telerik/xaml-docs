@@ -24,7 +24,7 @@ We will use __GroupFilter__ predicate of the ViewDefinition to specify which res
 
 Let’s have the following ScheduleView grouped by “Location” resource type:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}"  ...>		
@@ -41,7 +41,7 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 
 We will add checkboxes for each resource in order to allow the user to change their Visibility:
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel>
@@ -53,7 +53,7 @@ We will add checkboxes for each resource in order to allow the user to change th
 
 Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the GroupFilter predicate to the ViewModel:
 
-#### __C#__
+
 
 ```C#
 	public class ViewModel : ViewModelBase
@@ -129,7 +129,7 @@ Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the G
 
 Add the UpdateGroupFilter() method:
 
-#### __C#__
+
 
 ```C#
 	private bool GroupFilterFunc(object groupName)
@@ -175,7 +175,7 @@ For example, if we have the RadScheduleView grouped again by “Location” Reso
 
 Calling the following code will add an additional “Room4” resource:
 
-#### __C#__
+
 
 ```C#
 	locationResType.Resources.Add(new Resource("Room4"));
@@ -185,7 +185,7 @@ Calling the following code will add an additional “Room4” resource:
 
 where __ResourceTypes__ is the collection to which ResourceTypesSource property of the ScheduleView is bound:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}" … />

@@ -20,7 +20,7 @@ __The example in this article produces the following result__
 
 In order to be able to communicate with RadGridView, your custom filtering control will have to implement the IFilteringControl interface. This interface allows RadGridView to communicate with your control.  Let’s take a look at the interface:
 
-#### __C#__
+
 
 ```C#
 	/// <summary>
@@ -42,7 +42,7 @@ In order to be able to communicate with RadGridView, your custom filtering contr
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	''' <summary>
@@ -69,7 +69,7 @@ Next, you will have to decide what UI elements your custom filtering control wil
 
 Here is an example of a custom filtering control that displays two date time pickers:
 
-#### __XAML__
+
 
 ```XAML
 	<Border x:Name="LayoutRoot" BorderThickness="1" BorderBrush="#FF8A929E" Padding="5" Background="#FFDFE2E5">
@@ -95,7 +95,7 @@ Here is an example of a custom filtering control that displays two date time pic
 	</Border>
 ```
 
-#### __C#__
+
 
 ```C#
 	/// <summary>
@@ -218,7 +218,7 @@ Here is an example of a custom filtering control that displays two date time pic
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	''' <summary>
@@ -338,7 +338,7 @@ Here is an example of a custom filtering control that displays two date time pic
 
 Finally, you have to tell the column to use this custom filtering control like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Name="radGridView" AutoGenerateColumns="False">

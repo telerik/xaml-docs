@@ -30,7 +30,7 @@ In order to use the `SkiaRenderOptions`, you will need to reference the followin
 
 After that you can set the `RenderOptions` property of the series.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadCartesianChart.Series>
 		<telerik:LineSeries>
@@ -65,7 +65,7 @@ In order to use the Direct2DRenderOptions, you will need to reference the follow
 
 After referencing those binaries, you will be able to set the RenderOptions property of the series like this:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadCartesianChart.Series>
 	  <telerik:LineSeries>
@@ -104,7 +104,7 @@ Using this rendering mode, the __RadChartView__ will create one Bitmap image and
 
 You can enable this rendering mode with the following code:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadCartesianChart.Series>
 		<telerik:LineSeries>

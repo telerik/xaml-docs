@@ -17,7 +17,7 @@ With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{%
 
 In order to be able to display appointments with different heights in the MonthViewDefinition you will first need to set the new __AllowCustomAppointmentSize__ property of MonthViewDefinition to __True__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
@@ -33,7 +33,7 @@ In order to be able to display appointments with different heights in the MonthV
 
 Now since you are able to display appointments with different heights you should apply the desired sizes by implementing a custom AppointmentStyleSelector. For example if you need to have three different heights depending on the duration of the appointments you would need to define the corresponding Styles in the StyleSelector. When the Appointment has duration equals or less an hour you should return the Style for the small appointments, if the Appointment has duration between an hour and two you should return the Style for the regular appointments and at last if the Appointment has duration higher than two hours you would need to return the Style for big appointments. The complete implementation of the custom AppointmentStyleSelector should look as shown below:
         
-#### __C#__
+
 
 ```C#
 	public class AppointmentStyleSelector : OrientedAppointmentItemStyleSelector
@@ -97,7 +97,7 @@ Now since you are able to display appointments with different heights you should
 
 Afterwards you will have declare the custom AppointmentStyleSelector as resource in XAML. Here you can set the desired heights and background colors of the different Appointment types:        
 
-#### __XAML__
+
 
 ```XAML
 	<local:AppointmentStyleSelector x:Key="AppointmentStyleSelector">
@@ -127,7 +127,7 @@ Afterwards you will have declare the custom AppointmentStyleSelector as resource
 
 And the final step would be to assign it to __RadScheduleView__:       
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"

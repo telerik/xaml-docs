@@ -38,7 +38,7 @@ Using the LINQ to SQL designer you can easily create a representation of the sam
 
 The next code-snippet uses LINQ query syntax to retreive an __IEnumerable__ sequence of __Product__ objects.
 
-#### __C#__
+
 
 ```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
@@ -48,7 +48,7 @@ The next code-snippet uses LINQ query syntax to retreive an __IEnumerable__ sequ
 	IEnumerable<Product> products = query.ToList();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dbContext As New NortwindDataContext()
@@ -62,7 +62,7 @@ The next code-snippet uses LINQ query syntax to retreive an __IEnumerable__ sequ
 
 The code below demonstrates how to grab a single __Product__ object from the database, update its price, and then save the changes back to the database.
 
-#### __C#__
+
 
 ```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
@@ -83,7 +83,7 @@ The code below demonstrates how to grab a single __Product__ object from the dat
 
 The code below shows you how to create a new __Category__ object. Then how to create two new __Products__ and associate them with the __Category__. Finally, all three objects are saved in the database.
 
-#### __C#__
+
 
 ```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
@@ -126,7 +126,7 @@ The code below shows you how to create a new __Category__ object. Then how to cr
 
 The code below demonstrates you how to delete all "Test" products from the database.
 
-#### __C#__
+
 
 ```C#
 	NortwindDataContext dbContext = new NortwindDataContext();
@@ -149,7 +149,7 @@ The code below demonstrates you how to delete all "Test" products from the datab
 
 The next example shows you how to implement efficient server-side database paging. By using the __Skip()__ and __Take()__ methods, you will return 15 rows from the database - starting with row 300.
 
-#### __C#__
+
 
 ```C#
 	NortwindDataContext dbContext = new NortwindDataContext();

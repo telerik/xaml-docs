@@ -14,7 +14,7 @@ The __RadRibbonToggleButton__ represents an extension of the __RadToggleButton__
 
 >tip To learn more about the __RadToggleButtonButton__ control read its documentation. __RadRibbonToggleButton__
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonToggleButton CollapseToMedium="Never"
 	                               CollapseToSmall="WhenGroupIsMedium"
@@ -32,7 +32,7 @@ This button has its initial size set to __Large__ and its text label set to __"S
 
 Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two additional events - __Checked__ and __Unchecked.__ They are meant to notify for changes in the checked state of the toggle button.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonToggleButton Checked="RadRibbonToggleButton_Checked"
 	                               CollapseToMedium="Never"
@@ -45,7 +45,7 @@ Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two a
 	                               Unchecked="RadRibbonToggleButton_Unchecked" />
 ```
 
-#### __C#__
+
 ```C#
 	private void RadRibbonToggleButton_Checked(object sender, RoutedEventArgs e)
 	{
@@ -57,7 +57,7 @@ Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two a
 
 
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub RadRibbonToggleButton_Checked(sender As Object, e As RoutedEventArgs)
 	

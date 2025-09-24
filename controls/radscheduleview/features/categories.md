@@ -46,7 +46,7 @@ Each category has three important characteristics:
 
 The categories available in the RadScheduleView are defined in the CategoriesSource property (IEnumarable). Just add or remove categories to that collection in order to add or remove categories to the RadScheduleView itself.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">								
@@ -77,7 +77,7 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 
 or
 
-#### __C#__
+
 
 ```C#
 	public class MyViewModel : ViewModelBase
@@ -97,7 +97,7 @@ or
 	}
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" 
@@ -111,7 +111,7 @@ or
 
 Finally, set the DataContext:
 
-#### __C#__
+
 
 ```C#
 	this.DataContext = new MyViewModel();

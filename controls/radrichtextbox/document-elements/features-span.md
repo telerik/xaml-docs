@@ -26,7 +26,7 @@ This topic will explain you how to:
 
 The __Spans__ can be used only in the context of the [Paragraph]({%slug radrichtextbox-features-document-elements-paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added. This can also be done directly in XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRichTextBox x:Name="radRichTextBox">
@@ -40,7 +40,7 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 	</telerik:RadRichTextBox>
 ```
 
-#### __C#__
+
 
 ```C#
 	Section section = new Section();
@@ -51,7 +51,7 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 	this.radRichTextBox.Document.Sections.Add( section );
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim section As New Section()
@@ -66,20 +66,20 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 
 To specify the text in the __Span__ you can use its __Text__ property.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:Span Text="Thank you for choosing Telerik RadRichTextBox!" />
 ```
 
-#### __C#__
+
 
 ```C#
 	Span span = new Span();
 	span.Text = "Thank you for choosing Telerik RadRichTextBox!";
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim span As New Span()

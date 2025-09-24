@@ -16,7 +16,7 @@ This series is visualized on the screen as separate points representing each of 
 
 You can use the following definition to display a simple RadarPointSeries
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadPolarChart Palette="Windows8">
 		<telerik:RadPolarChart.PolarAxis>

@@ -34,7 +34,7 @@ To read your data you have to use the __MapShapeReader__ class. To learn more ab
 
 To pass the desired KML file you have to use the __Source__ property of the __MapShapeReader__ and pass the __Uri__ to the desired .kml file to it. This will automatically generate shapes according to the data inside the file.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -45,13 +45,13 @@ To pass the desired KML file you have to use the __Source__ property of the __Ma
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	this.informationLayer.Reader = new MapShapeReader();
 	this.informationLayer.Reader.Source = new Uri( "/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute );
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.informationLayer.Reader = New MapShapeReader()
 	Me.informationLayer.Reader.Source = New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute)
@@ -63,7 +63,7 @@ The __RadMap__ allows you to manually read the file, by which you are able to ge
 
 First of all read the Shapefile as a resource stream. Note that the file must have its __BuildAction__ set to __Resource__. After that call the static __Read()__ method of the __KMLReader__ class and pass the resource stream to it. It returns a list of __FrameworkElement__ objects, which you can directly add to the __InformationLayer__ of the __RadMap__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMap x:Name="radMap">
@@ -71,7 +71,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	private void LoadKMLData()
 	{
@@ -84,7 +84,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub LoadKMLData()
 	 Dim streamResource As StreamResourceInfo = Application.GetResourceStream(New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute))

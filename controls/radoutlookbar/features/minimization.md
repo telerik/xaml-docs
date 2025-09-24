@@ -28,7 +28,7 @@ You can use the __Minimization__ feature of the __RadOutlookBar__ to create more
 
 The default value of the __IsMinimizable__ property is __True__:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadOutlookBar Width="250"
 	                       Height="390">
@@ -50,7 +50,7 @@ The default value of the __IsMinimizable__ property is __True__:
 
 Setting the __IsMinimizable__ property to __False__ will disable the __Minimization__ feature of the __RadOutlookBar__:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadOutlookBar Width="250"
 	                       Height="390"
@@ -75,7 +75,7 @@ Setting the __IsMinimizable__ property to __False__ will disable the __Minimizat
 
 The __IsMinimized__ property allows you to manually control the state of the __RadOutlookBar__. When set to the __RadOutlookBar__ is minimized:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadOutlookBar Width="250"
 	                       Height="390"
@@ -100,7 +100,7 @@ The __IsMinimized__ property allows you to manually control the state of the __R
 
 The default value of the __MinimizedWidth__ property is 30. However, you can change that size to better fit your scenario:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadOutlookBar Width="250"
 	                       Height="390"

@@ -44,13 +44,13 @@ The RadScheduleView exposes a property __IsInlineEditingEnabled__ which allows y
 
 If you want to disable the inline editing behavior, you should set the __IsInlineEditingEnabled__ property to False.      	
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" IsInlineEditingEnabled="False"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	scheduleView.IsInlineEditingEnabled = false;

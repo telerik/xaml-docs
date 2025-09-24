@@ -48,7 +48,7 @@ __AxisX.Step__ and __AxisX.LabelStep__ are related:
 
 Here is an example for a __RadChart__ that makes use of the __Step__, __LabelStep__, __StepLableLevelCount__, __StepLabelLevelHeight__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -85,7 +85,7 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 
 
 
-#### __C#__
+
 
 ```C#
 	//....
@@ -101,7 +101,7 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
@@ -130,7 +130,7 @@ When __AutoRange__ is __False__, __TickDistance__ is omitted, because in this ca
 
 The following example demonstrates how to customize the __X-Axis__. The chart is bound (see [Data Binding Support Overview]({%slug radchart-populating-with-data-data-binding-support-overview%}) or [Data Binding with Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) for more about data binding) to a list of business objects with two properties: __Date__ and __Value__ - of type __DateTime__ and __decimal__ respectively. The list contains data for a three months period.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -165,7 +165,7 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 
 
 
-#### __C#__
+
 
 ```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
@@ -183,7 +183,7 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
@@ -209,7 +209,7 @@ When __AutoRange__ is __True__, __RadChart__ calculates the __MinValue__, __MaxV
 
 However, the chart above could be improved if a bit more ticks are shown. When __AutoRange__ is __True__, then you can control the number of the ticks by playing with the __TickDistance__ property. This property allows you to specify at least how many pixels you want to have between two ticks. Thus, decreasing the tick distance, more ticks could be placed on the axis. If the axis looks overcrowded, increase __TickDistance__ value to reduce the number.
 
-#### __XAML__
+
 
 ```XAML
 	<!--  ....  -->
@@ -225,7 +225,7 @@ However, the chart above could be improved if a bit more ticks are shown. When _
 
 
 
-#### __C#__
+
 
 ```C#
 	//....
@@ -235,7 +235,7 @@ However, the chart above could be improved if a bit more ticks are shown. When _
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'....'
@@ -249,7 +249,7 @@ As you can see, the number of the ticks is increased and the chart looks much be
 
 The same results you can achieve by setting the __AutoRange__ to __False__ and define __MinValue__, __MaxValue__ and __Step.__
 
-#### __XAML__
+
 
 ```XAML
 	<!--  ...  -->
@@ -268,7 +268,7 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 
 
 
-#### __C#__
+
 
 ```C#
 	//....
@@ -284,7 +284,7 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = False

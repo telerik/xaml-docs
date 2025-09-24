@@ -24,7 +24,7 @@ When you want to turn (serialize) a recurrence pattern into a string, then you n
 
 For example, consider the following __RecurrencePattern__ declaration:
 
-#### __C#__
+
 
 ```C#
 	var pattern = new RecurrencePattern()
@@ -36,7 +36,7 @@ For example, consider the following __RecurrencePattern__ declaration:
 	};
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim pattern = New RecurrencePattern() With {
@@ -51,13 +51,13 @@ A new daily recurrence pattern is created that occurs only in the week days. The
 
 The next code snippet demonstrates you how to use the __RecurrencePatternToString()__ static method.        
 
-#### __C#__
+
 
 ```C#
 	var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern)
@@ -75,7 +75,7 @@ When you want to produce (deserialize) a recurrence pattern from a string, then 
 
 Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR__. If you want to produce a recurrence pattern from that string, invoke the __TryParseRecurrencePattern__ method like in the example below.
 
-#### __C#__
+
 
 ```C#
 	var serializedPattern = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR";
@@ -83,7 +83,7 @@ Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;
 	RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim serializedPattern As String = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR"

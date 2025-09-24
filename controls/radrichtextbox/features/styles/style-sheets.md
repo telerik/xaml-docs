@@ -32,7 +32,7 @@ __XamlFormatProvider__ has been extended to import and export style sheets to ba
 Here is an example of how to load a style sheet from a file using the __LoadStylesheet__ method of __XamlFormatProvider__:
 
 {% if site.site_name == 'WPF' %}
-#### __C#__
+
 
 ```C#
     OpenFileDialog ofd = new OpenFileDialog();
@@ -49,7 +49,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim ofd As New OpenFileDialog()
@@ -64,7 +64,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __C#__
+
 
 ```C#
     OpenFileDialog ofd = new OpenFileDialog();
@@ -81,7 +81,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim ofd As New OpenFileDialog()
@@ -98,7 +98,7 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 This is how you can save a style sheet with the __SaveStyleSheet__ method of __XamlFormatProvider__:
         
 
-#### __C#__
+
 
 ```C#
     SaveFileDialog sfd = new SaveFileDialog();
@@ -116,7 +116,7 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim sfd As New SaveFileDialog()

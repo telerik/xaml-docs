@@ -16,7 +16,7 @@ The advanced filtering mechanism of the __RadComboBox__ control allows the users
 
 The next code snippet shows a regular __RadComboBox__ with static data (defined in XAML).
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox">
@@ -41,7 +41,7 @@ To control the text filtering you can set the __IsFilteringEnabled__ property. B
 
 Now go back in the initial __RadComboBox__ declaration and set the __TextSearchMode__ property to __Contains__. To enable the text filtering you will also have to set the __IsFilteringEnabled__ property to __True__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox" TextSearchMode="Contains" IsFilteringEnabled="True">
@@ -60,7 +60,7 @@ Start your demo and write "al" in the __input box__. Now only items containing t
 The final scenario is when you have a __TextSearchMode__ set to __TextSearchMode.StartsWith__.
         
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox IsEditable="True" x:Name="radComboBox" TextSearchMode="StartsWith" IsFilteringEnabled="True">

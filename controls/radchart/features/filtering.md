@@ -34,7 +34,7 @@ Here is an example of implementing filtering.
 
 >tipTo use the __ChartFilterDescriptors__ in XAML you have to declare the following namespace:
 
-#### __XAML__
+
 
 ```XAML
 	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
@@ -42,7 +42,7 @@ Here is an example of implementing filtering.
 
 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -56,7 +56,7 @@ Here is an example of implementing filtering.
 
 
 
-#### __C#__
+
 
 ```C#
 	ChartFilterDescriptor descriptor = new ChartFilterDescriptor();
@@ -68,7 +68,7 @@ Here is an example of implementing filtering.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim descriptor As New ChartFilterDescriptor()

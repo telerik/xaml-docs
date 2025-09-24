@@ -15,7 +15,7 @@ The __InputGestureText__ property of __RadMenuItem__ is used to display an input
 
 The following example demonstrates the use of the __InputGestureText__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu>

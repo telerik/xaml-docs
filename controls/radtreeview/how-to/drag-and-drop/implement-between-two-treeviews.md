@@ -21,7 +21,7 @@ First you can define the controls in your view. As the purpose of this tutorial 
         
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 
 ```XAML
 		<Grid>
@@ -95,7 +95,7 @@ First you can define the controls in your view. As the purpose of this tutorial 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+
 
 ```XAML
 		<Grid>
@@ -172,7 +172,7 @@ First you can define the controls in your view. As the purpose of this tutorial 
 
 For the first __RadTreeView__ we can create a business class called __MediaFile__ that will hold information about images.
 
-#### __C#__
+
 
 ```C#
 	public class MediaFile
@@ -182,7 +182,7 @@ For the first __RadTreeView__ we can create a business class called __MediaFile_
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MediaFile
@@ -193,7 +193,7 @@ For the first __RadTreeView__ we can create a business class called __MediaFile_
 
 Then we can define a business class called __PartitionViewModel__ which will hold a collection of __MediaFiles__ and the name of a partition in the RadTreeView that represents the local machine tree.
 
-#### __C#__
+
 
 ```C#
 	public class PartitionViewModel
@@ -208,7 +208,7 @@ Then we can define a business class called __PartitionViewModel__ which will hol
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class PartitionViewModel
@@ -239,7 +239,7 @@ Then we can define a business class called __PartitionViewModel__ which will hol
 
 For our second RadTreeView we can create a class called __Resource__ that will hold the information about the images in it.
 
-#### __C#__
+
 
 ```C#
 	public class Resource
@@ -249,7 +249,7 @@ For our second RadTreeView we can create a class called __Resource__ that will h
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Resource
@@ -260,7 +260,7 @@ For our second RadTreeView we can create a class called __Resource__ that will h
 
 Then we can define a class called __ApplicationViewModel__ which will hold a collection of __Resources__ and the name of an application.
 
-#### __C#__
+
 
 ```C#
 	public class ApplicationViewModel
@@ -276,7 +276,7 @@ Then we can define a class called __ApplicationViewModel__ which will hold a col
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ApplicationViewModel
@@ -292,7 +292,7 @@ Then we can define a class called __ApplicationViewModel__ which will hold a col
 
 Next we can define a __MainViewModel__ class that contains the collections which we will use to populate the __ItemsSource__ property of both __RadTreeViews__ For the first __RadTreeView__ will be populated with collection of __PartitionViewModel__ objects, whereas the second __RadTreeView__ will use a collection of __ApplicationViewModel__ objects.
 
-#### __C#__
+
 
 ```C#
 	public class MainViewModel
@@ -346,7 +346,7 @@ Next we can define a __MainViewModel__ class that contains the collections which
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MainViewModel
@@ -428,7 +428,7 @@ As was mentioned in the beginning of this article, the drop will be forbidden in
 
 Now let’s add the handlers for the __DragDropManager__ events listed above. We’ll do that in the code-behind.        
 
-#### __C#__
+
 
 ```C#
 	public MainPage()
@@ -446,7 +446,7 @@ Now let’s add the handlers for the __DragDropManager__ events listed above. We
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -469,7 +469,7 @@ Once we do so, we can start implementing the drag/drop handlers. For the purpose
 
 Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we drop an item in the second __RadTreeView__ we create a new item of *Resource* type.
 
-#### __C#__
+
 
 ```C#
 	private void OnApplicationTreeDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -530,7 +530,7 @@ Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we d
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnApplicationTreeDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
@@ -590,7 +590,7 @@ Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we d
 
 In order to deny the nesting of __Resource__ files and update the visual representation of the __DropAction__ in the application tree, we can subscribe for the __DragOver__ event of the __DragDropManager__.
 
-#### __C#__
+
 
 ```C#
 	private void OnApplicationTreeDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -615,7 +615,7 @@ In order to deny the nesting of __Resource__ files and update the visual represe
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnApplicationTreeDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
@@ -637,7 +637,7 @@ In order to deny the nesting of __Resource__ files and update the visual represe
 
 To ensure that we cannot drop in the local machine tree, we can subscribe for the __DragOver__ event.
 
-#### __C#__
+
 
 ```C#
 	private void OnLocalMachineTreeDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -653,7 +653,7 @@ To ensure that we cannot drop in the local machine tree, we can subscribe for th
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnLocalMachineTreeDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)

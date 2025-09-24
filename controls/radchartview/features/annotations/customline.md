@@ -32,7 +32,7 @@ Besides the __HorizontalFrom/To__ and __VerticalFrom/To__ properties that are us
 
 A __CartesianCustomLineAnnotation__ is defined like this:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:CartesianCustomLineAnnotation HorizontalFrom="0.5" VerticalFrom="1.5" 

@@ -22,7 +22,7 @@ The purpose of this tutorial is to show you how to read data from XML document a
 
 The most straight-forward way to read data from XML document is to deserialize it using the __XmlSerializer__ class. Here is a sample code showing how this can be achieved: 
 
-#### __C#__
+
 
 ```C#
 	private XmlNodeItemList RetrieveData()
@@ -60,7 +60,7 @@ The most straight-forward way to read data from XML document is to deserialize i
 
 Before reading you should load your XML file to an __XElement__ or __XDocument__ object. This can be done with the __Load()__ method. You can input from string, from __TextReader__, from __XMLReader__ and of course from file: 
 
-#### __C#__
+
 
 ```C#
 	XDocument myXML = XDocument.Load( "MyXML.xml" );
@@ -71,7 +71,7 @@ Before reading you should load your XML file to an __XElement__ or __XDocument__
 
 On the next step you can use standard query operators to read the XML. Here is a sample code: 
 
-#### __C#__
+
 
 ```C#
 	List<Person> personsList =   
@@ -98,7 +98,7 @@ On the next step you can use standard query operators to read the XML. Here is a
 
 The following example navigates through a stream to determine the current node type, and then uses  __XmlWriter__ to output the  __XmlReader__ content. 
 
-#### __C#__
+
 
 ```C#
 	using (XmlReader reader = XmlReader.Create(new StringReader(xmlString)))

@@ -18,7 +18,7 @@ Programmatic filtering is performed by adding a __FilterDescriptor__ object to t
 
 For example: 
 
-#### __C#__
+
 
 ```C#
 
@@ -28,7 +28,7 @@ For example:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -46,7 +46,7 @@ On running the application, the following grid will be displayed:
 
 You can build infinitely nested hierarchies of filters by using the __CompositeFilterDescriptor__ class. The following code will return all people that were born in the 1980’s, but you could easily replace __f1__ or __f2__ with another composite filter to achieve logical nesting:
 
-#### __C#__
+
 
 ```C#
 
@@ -61,7 +61,7 @@ You can build infinitely nested hierarchies of filters by using the __CompositeF
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 

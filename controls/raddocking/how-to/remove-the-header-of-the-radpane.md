@@ -18,7 +18,7 @@ For more information about the RadPane and its visual elements, read [here]({%sl
 
 In order to remove the __Header__ of the __RadPane__ you have to set the __PaneHeaderVisibility__ property to __Collapsed__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking Grid.Row="1">
@@ -43,7 +43,7 @@ This is commonly misinterpreted as the RadPane’s Header, but here the __PaneHe
 
 So to remove it and to leave only the border of the DocumentPane in the DocumentHost you will have to set its its __Visibility__ property to __Collapsed__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking>

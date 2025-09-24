@@ -20,7 +20,7 @@ You can populate your chart with __DateTime__ values by using __SeriesMapping__ 
 
 On the example below, __RadChart.ItemSource__ is set to a collection of __TradeData__ object. __TradeData__ has the following definition:
 
-#### __C#__
+
 
 ```C#
 	public class TradeData
@@ -34,7 +34,7 @@ On the example below, __RadChart.ItemSource__ is set to a collection of __TradeD
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class TradeData
@@ -64,7 +64,7 @@ On the example below, __RadChart.ItemSource__ is set to a collection of __TradeD
 
 Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-support-overview%}) the __TradeData.FromDate__ to __DataPointMember.XValue__ and __TradeDate.Close__ to __DataPointMember.YValue__ using [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}) mechanism. Additionally, the [X-Axis]({%slug radchart-features-axes-x-axis%}) is customized: the values are formatted (__radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat__ = "dd-MMM") and rotated on 45 degree (__radChart.DefaultView.ChartArea.AxisX.LabelRotatingAngle__ = 45):
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -101,7 +101,7 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 
 
 
-#### __C#__
+
 
 ```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
@@ -117,7 +117,7 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
@@ -145,7 +145,7 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 
 * The __AxisX.IsDateTime__ should be set to __True__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart Width="511"
@@ -193,7 +193,7 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	</telerik:RadChart>
 ```
 
-#### __C#__
+
 
 ```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
@@ -220,7 +220,7 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	radChart.DefaultView.ChartArea.DataSeries.Add( lineSeries );
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()

@@ -43,7 +43,7 @@ __RadRibbonView__ supports single __RadRibbonTab__ selection. You can select it 
 
 This code snippet shows you how to attach to the selection events:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" PreviewSelectionChanged="radRibbonView_PreviewSelectionChanged" SelectionChanged="radRibbonView_SelectionChanged">
 	...
@@ -52,7 +52,7 @@ This code snippet shows you how to attach to the selection events:
 
 Below is a sample implementation of both of the event handlers:
 
-#### __C#__
+
 ```C#
 	private void radRibbonView_PreviewSelectionChanged(object sender, RadSelectionChangedEventArgs e)
 	{
@@ -76,7 +76,7 @@ Below is a sample implementation of both of the event handlers:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub radRibbonView_PreviewSelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
 	 ' Get the ribbonView'

@@ -60,7 +60,7 @@ You can define your __AdomdDataProvider__ as a *StaticResource* in the __XAML__ 
 
 >importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __AdomdDataProvider__ in your XAML.				
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -79,7 +79,7 @@ You can define your __AdomdDataProvider__ as a *StaticResource* in the __XAML__ 
 
 You can also create an object of type __AdomdDataProvider__ in the code behind and set it for your controls:
 
-#### __C#__
+
 
 ```C#
 	AdomdDataProvider adomdDataProvider = new AdomdDataProvider();
@@ -88,7 +88,7 @@ You can also create an object of type __AdomdDataProvider__ in the code behind a
 	this.radPivotFieldList.DataProvider = adomdDataProvider;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim adomdDataProvider As New AdomdDataProvider()
@@ -101,7 +101,7 @@ You can also create an object of type __AdomdDataProvider__ in the code behind a
 
 To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to OLAP Cube. For this purpose we will set the ConnectionSettings property of the __AdomdDataProvider__. This can be done directly in the __XAML__ or in the code behind:      		
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdDataProvider x:Key="ADOMDDataProvider" >
@@ -115,7 +115,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	</pivot:AdomdDataProvider>
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdConnectionSettings connectionSettings = new AdomdConnectionSettings();
@@ -127,7 +127,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	adomdDataProvider.ConnectionSettings = connectionSettings;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim connectionSettings As New AdomdConnectionSettings()
@@ -163,7 +163,7 @@ The __AdomdAggregateDescription__ is used to define data that has to be aggregat
 
 Here is how to define row, column group descriptions and aggregate descriptions:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdDataProvider.RowGroupDescriptions>
@@ -179,7 +179,7 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	</pivot:AdomdDataProvider.AggregateDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdGroupDescription rowGroupDescription1 = new AdomdGroupDescription();
@@ -197,7 +197,7 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	adomdDataProvider.EndInit();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim rowGroupDescription1 As New AdomdGroupDescription()
@@ -217,7 +217,7 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 
 The __AdomdFilterDescription__ is used to filter the data that will be included in the report. Filtering is applied for a specific member defined in *MemberName* property. *Condition* property defines the way to filter the items. Only the ones that pass the filter will be shown in __RadPivotGrid__. The filtering is based on the Unique Name of the members. For example, if you want to show only data for year 2005, you can define it like this:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdDataProvider.FilterDescriptions>
@@ -233,7 +233,7 @@ The __AdomdFilterDescription__ is used to filter the data that will be included 
 	</pivot:AdomdDataProvider.FilterDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	OlapSetCondition condition = new OlapSetCondition();
@@ -244,7 +244,7 @@ The __AdomdFilterDescription__ is used to filter the data that will be included 
 	filterDescription.Condition = condition;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim condition As New OlapSetCondition()
@@ -263,7 +263,7 @@ As OLAP dimensions are hierarchical, you can use filters for each of the levels 
 
 In the blue rectangle are all attribute hierarchies - you can use them as a filter by adding them as a new __FilterGroupDescription__. In the red rectangle you can see the user-defined hierarchy of Date.Calendar dimension. You can filter your data by each of the members by adding it to the *Levels* property of __AdomdFilterDescription__:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:AdomdDataProvider.FilterDescriptions>
@@ -292,7 +292,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	</pivot:AdomdDataProvider.FilterDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	AdomdFilterDescription topFilterDescription = new AdomdFilterDescription();
@@ -315,7 +315,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	topFilterDescription.Levels.Add(levelFilterDescription2);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim topFilterDescription As New AdomdFilterDescription()

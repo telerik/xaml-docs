@@ -18,7 +18,7 @@ The final result should look like the snapshot below:
 
 * Below is a simple XML declaration, used in this tutorial: 
 
-#### __XAML__
+
 
 ```XAML
 	<Items>
@@ -39,7 +39,7 @@ The final result should look like the snapshot below:
 
 * Create a new class named __XmlNodeItem__. The class is pretty simple and it represents a separate node from the XML document. Its properties are __Team__ and __Country__. Both of the properties are of type string. Here is the source code: 
 
-#### __C#__
+
 
 ```C#
 	public class XmlNodeItem
@@ -59,7 +59,7 @@ The final result should look like the snapshot below:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class XmlNodeItem
@@ -89,7 +89,7 @@ The final result should look like the snapshot below:
 
 * Create a new class named __XmlNodeItemList__, which derives from __ObservableCollection__ of __XmlNodeItem__. This is a collection that will be created from the XML file. __RadGridView__ will be bound to this collection. 
 
-#### __C#__
+
 
 ```C#
 	[XmlRoot(ElementName = "Items")]
@@ -105,7 +105,7 @@ The final result should look like the snapshot below:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	<XmlRoot(ElementName := "Items")>
@@ -121,7 +121,7 @@ The final result should look like the snapshot below:
 
 * Create a new class named __RadGridViewXmlDataSource__, which derives from __XmlNodeItemList__. Practically, this will be the data source (the model) for the __RadGridView__. The class takes a path to the XML file and deserialize the data in the private method __RetrieveData__. 
 
-#### __C#__
+
 
 ```C#
 	public class RadGridViewXmlDataSource : XmlNodeItemList
@@ -150,7 +150,7 @@ The final result should look like the snapshot below:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class RadGridViewXmlDataSource
@@ -178,7 +178,7 @@ The final result should look like the snapshot below:
 
 * The next step is to declare the __RadGridViewXmlDataSource__ as a resource in your application. 
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -204,7 +204,7 @@ The final result should look like the snapshot below:
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Source={StaticResource DataSource}}"/>

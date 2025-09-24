@@ -14,7 +14,7 @@ This help article will show you how to set a custom Appointment ToolTip by using
 
 If you have for example __RadScheduleView__ set up the following way:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
@@ -40,7 +40,7 @@ If you have for example __RadScheduleView__ set up the following way:
 
 And you want to replace the default ToolTip with custom one which shows the full information of the Appointment including the location of the Appoinment. In this case you can use the ToolTipTemplate property of the __RadScheduleView__. Firstly you need to define appropriate DataTemplate as a resource like shown below:       
 
-#### __XAML__
+
 
 ```XAML
 	<DataTemplate x:Key="ToolTipTemplate">
@@ -81,7 +81,7 @@ And you want to replace the default ToolTip with custom one which shows the full
 
 Aftewards you just need to set the DataTemplate as a __ToolTipTemplate__ the following way:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView ToolTipTemplate="{StaticResource ToolTipTemplate}" ... >

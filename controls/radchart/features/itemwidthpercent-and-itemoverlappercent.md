@@ -24,14 +24,14 @@ The width of the Bars depends on the mechanism of calculating the ItemWidthPerce
 
 You can set values for the properties like this:
 
-#### __C#__
+
 
 ```C#
 	radChart.DefaultView.ChartArea.ItemOverlapPercent = 0;
 	radChart.DefaultView.ChartArea.ItemWidthPercent = 50;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	RadChart1.DefaultView.ChartArea.ItemOverlapPercent = 0

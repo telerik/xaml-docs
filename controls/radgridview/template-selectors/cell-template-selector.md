@@ -24,7 +24,7 @@ To do so follow these steps:
 
 **2**. Override its __SelectTemplate__ method. Based on your conditions - you return the proper DataTemplate that will be applied to the framework element (cell in our case).
 
-#### __C#__
+
 
 ```C#
 	public class MyCellTemplateSelector : DataTemplateSelector
@@ -50,7 +50,7 @@ To do so follow these steps:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyCellTemplateSelector
@@ -91,7 +91,7 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 **3**. In the XAML file define the template selector as a resource and set the properties of the bigStadium and smallStadium:
 
-#### __XAML__
+
 
 ```XAML
 	<my:MyCellTemplateSelector x:Key="myCellTemplateSelector">
@@ -116,7 +116,7 @@ In this case we have two different DataTemplates that could be applied - bigStad
 
 **4**. Finally, set the __CellTemplateSelector__ property of the data column which represents the StadiumCapacity field:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 

@@ -35,7 +35,7 @@ After getting your .ps shader effect file, the next step is to create a __Transi
 
 The class that wraps the shader effect should inherit the __BaseTransitionEffect__ class and you should override its __LoadShader()__ method. Here is a sample code:
 
-#### __C#__
+
 
 ```C#
 	public class CircleRevealTransitionEffect : BaseTransitionEffect
@@ -51,7 +51,7 @@ In the override for the __LoadShader()__ method you have to create a __PixelShad
 
 >Note the __PackUri<T>()__ method of the __TransitionEffect__ class. It builds an absolute path to the __Shader Effect__ file based on the parameter __T__ that you've passed and the relative path passed as an argument. The first part of the absolute path is the assembly in which the shader effect file is placed. This is the assembly, in which the __T__ type is located. For example, if the class __CircleRevealTransitionEffect__ is placed in the __CustomTransitions__ assembly, the first part of the Uri will be __"/CustomTransitions;component/"__. The relative path passed to the method will be then concatenated to it - __"/CustomTransitions;component/CustomTransitions/CircleRevealTransitionEffect.ps"__.
 
-#### __C#__
+
 
 ```C#
 	public class CircleRevealTransitionEffect : BaseTransitionEffect
@@ -69,7 +69,7 @@ In the override for the __LoadShader()__ method you have to create a __PixelShad
 
 As the Transition is of type __TransitionProvider__, you have to wrap your __Transition Effect__ class inside a class that inherits the __Transition Provider__.
 
-#### __C#__
+
 
 ```C#
 	public class CircleRevealTransition : ShaderTransitionProvider
@@ -79,7 +79,7 @@ As the Transition is of type __TransitionProvider__, you have to wrap your __Tra
 
 In it you have to override the __CreateTransitionEffect()__ method and return an instance of your __Transition Effect__ class.
 
-#### __C#__
+
 
 ```C#
 	public class CircleRevealTransition : ShaderTransitionProvider
@@ -99,7 +99,7 @@ The __Shader Effect__ can also have some constants that can be passed through th
 
 In order to pass the fuzzy amount constant create an appropriate __DependencyProperty__ in your __CircleRevealTransitionEffect__ class.
 
-#### __C#__
+
 
 ```C#
 	public static readonly DependencyProperty FuzzyAmountProperty =
@@ -124,7 +124,7 @@ In order to link the __DependencyProperty__ with the appropriate __Shader Effect
 
 You also have to force an update of the __Shader Effect__ constant, when your __TransitionEffect__ class is instantiated. This ensures that the effect's constant has evaluated the default value of the dependency property, in case the __FuzzyAmountProperty__ doesn't get set. This can be done in the constructor via the __UpadteShaderValue()__ method of the base __BaseTransitionEffect__ class.
 
-#### __C#__
+
 
 ```C#
 	public CircleRevealTransitionEffect()
@@ -135,7 +135,7 @@ You also have to force an update of the __Shader Effect__ constant, when your __
 
 The next step is to add a __FuzzyAmount__ property in the __CircleRevealTransition__ class, so you can pass the constants via the __Transition__ instance.
 
-#### __C#__
+
 
 ```C#
 	public double FuzzyAmount
@@ -147,7 +147,7 @@ The next step is to add a __FuzzyAmount__ property in the __CircleRevealTransiti
 
 In order to pass the value of the __FuzzyAmount__ to the __CircleRevealTransitionEffect__ use the override for the __CreateTransitionEffect__() method.
 
-#### __C#__
+
 
 ```C#
 	protected override ShaderEffect CreateTransitionEffect()
@@ -162,7 +162,7 @@ In order to pass the value of the __FuzzyAmount__ to the __CircleRevealTransitio
 
 In order to use the custom transition that you have just created, you have to declare the namespace in which the __CircleRevealTransition__ class is located. For example:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:customTransitions="clr-namespace:Controls.CustomTransitions;assembly=CustomTransitions"
@@ -170,7 +170,7 @@ In order to use the custom transition that you have just created, you have to de
 
 Now you can use it as any of the built-in transition effects.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTransitionControl">

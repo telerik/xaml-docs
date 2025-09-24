@@ -40,7 +40,7 @@ However, there are some specific properties for each of the axes: check [X-Axis]
 
 The following example demonstrates how to use the common properties in XAML and code-behind:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -66,7 +66,7 @@ The following example demonstrates how to use the common properties in XAML and 
 
 
 
-#### __C#__
+
 
 ```C#
 	RadChart radChart = new RadChart();
@@ -83,7 +83,7 @@ The following example demonstrates how to use the common properties in XAML and 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
@@ -100,13 +100,13 @@ The following example demonstrates how to use the common properties in XAML and 
 
 >tip Instead of setting the __MaxValue__, __MinValue__ and __Step__ properties you can call the __AddRange()__ method. This is more performant, because setting each the properties will trigger recalculations of the axis' values.
 
-#### __C#__
+
 
 ```C#
 	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5)
 ```

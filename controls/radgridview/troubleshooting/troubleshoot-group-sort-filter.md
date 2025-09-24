@@ -20,7 +20,7 @@ __CAUSE__
 
 Probably you are using a __CellTemplate__ for that particular column and you have not specified the __DataMemberBinding__ property of it like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn Header="FirstName" >
@@ -36,7 +36,7 @@ __SOLUTION__
 
 Set the __DataMemberBinding__ property of the column to the field that you want the gridview to sort, group and filter on.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn Header="FirstName" DataMemberBinding="{Binding FirstName}" >

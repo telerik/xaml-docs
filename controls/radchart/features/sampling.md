@@ -16,7 +16,7 @@ When the chart is populated by thousands of items, the visual representation mig
 
 Determining the number of __DataPoints__ to be displayed is done by setting the __SamplingTh reshold__ property of the __SamplingSettings__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -50,7 +50,7 @@ The __SamplingFunction__ property has the following values.
 
 Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -85,7 +85,7 @@ The standard deviation is calculated as follows:
 
 These steps are made by the static class Statistics:
 
-#### __C#__
+
 
 ```C#
 	public static class Statistics
@@ -128,7 +128,7 @@ These steps are made by the static class Statistics:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public NotInheritable Class Statistics
@@ -169,7 +169,7 @@ These steps are made by the static class Statistics:
 
 The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSelectorAggregateFunction* class that uses aggregate extension methods provided in *System.Linq.Enumerable*:
 
-#### __C#__
+
 
 ```C#
 	public class StandardDeviationFunction : EnumerableSelectorAggregateFunction
@@ -194,7 +194,7 @@ The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSe
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class StandardDeviationFunction
@@ -217,7 +217,7 @@ The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSe
 
 The Chart itself is populated by [List of Business Object]({%slug radchart-populating-with-data-data-binding-with-automatic-series-binding%}):
 
-#### __C#__
+
 
 ```C#
 	public Sample ()
@@ -245,7 +245,7 @@ The Chart itself is populated by [List of Business Object]({%slug radchart-popul
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub New()
@@ -269,7 +269,7 @@ The LabelStep of the AxisX is set to 4 for better readability.
 
 Finally the XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart Name="RadChar1">

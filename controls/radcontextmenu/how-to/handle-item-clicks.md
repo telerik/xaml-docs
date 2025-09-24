@@ -30,7 +30,7 @@ Handling the __Click__ event of each item is the straight-forward way. But it ha
 
 Here is an example of an event handler attached to the __Click__ event and how to get the instance of the clicked item.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadContextMenu>
@@ -43,7 +43,7 @@ Here is an example of an event handler attached to the __Click__ event and how t
 	</telerik:RadContextMenu>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void RadMenuItem_Click( object sender, RadRoutedEventArgs e )
@@ -53,7 +53,7 @@ Here is an example of an event handler attached to the __Click__ event and how t
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadMenuItem_Click(sender As Object, e As RadRoutedEventArgs)
@@ -70,7 +70,7 @@ Handling the __ItemClick__ event of the __RadContextMenu__ gives you more flexib
 
 Here is an example of an event handler attached to the __ItemClick__ event and how to get the instance of the clicked item.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadContextMenu ItemClick="radContextMenu_ItemClick">
@@ -80,7 +80,7 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 	</telerik:RadContextMenu>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void radContextMenu_ItemClick(object sender, RadRoutedEventArgs e)
@@ -90,7 +90,7 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radContextMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)

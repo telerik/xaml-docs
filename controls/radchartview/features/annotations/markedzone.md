@@ -34,7 +34,7 @@ Besides the __HorizontalFrom/To__ and __VerticalFrom/To__ properties that are us
 
 A __CartesianMarkedZoneAnnotation__ is defined like this:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:CartesianMarkedZoneAnnotation HorizontalFrom="0.0" HorizontalTo="0.5"
@@ -80,7 +80,7 @@ The last example in the above code snippet shows that you can use the __ZIndex__
 The flexible design of the MarkedZone annotation allows the user to omit one (or more) of the four Horizontal/VerticalFrom/To properties. The following table details relationship between the specified properties and the occupied interval on the axis: 
 ![Rad Chart View-annotations-cartesian-markedzone-2](images/RadChartView-annotations-cartesian-markedzone-2.png)
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:CartesianMarkedZoneAnnotation HorizontalTo="2.75"
@@ -94,7 +94,7 @@ In this example the MarkedZone takes the space between 0.5 and 1 on the vertical
 In addition to the possibility of not specifying one (or more) the four properties, the annotation also supports inverse axes. The combination of these factors produces 64 possible scenarios!
         
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadCartesianChart x:Name="chart">

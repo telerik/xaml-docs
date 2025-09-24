@@ -18,7 +18,7 @@ __RadDiagram__ gives you the ability to edit the Content of its items. You can d
 
 By default, the __RadDiagramItems__ are enabled for editing. In order to disable this functionality, you can use the __IsEditable__ property:		
 
-#### __XAML__	
+	
 ```XAML
 	<telerik:RadDiagram IsEditable="False">
 ```
@@ -46,7 +46,7 @@ __RadDiagramItem__ also provides four editing events:
 __RadDiagram__ provides three predefined commands for editing the selected item - __BeginEdit__, __CommitEdit__ and __CancelEdit__.		
 
 Consider the following code: 
-#### __XAML__
+
 ```XAML
 	 <Grid>
 	        <Grid.RowDefinitions>
@@ -97,7 +97,7 @@ __RadDiagram__ provides the following EditTemplates and EditTemplateSelectors:
 
 Below you can find example of basic EditTemplate of a Shape. Suppose we have a sample business object called DataItem:
 
-#### __C#__
+
 ```C#
 	public class DataItem : ViewModelBase
 	{
@@ -114,7 +114,7 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class DataItem
 		Inherits ViewModelBase
@@ -131,19 +131,19 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 	End Class
 ```
 
-#### __C#__
+
 ```C#
 	this.shape.DataContext = new DataItem() { IpAddress = "5.5.5.5" };
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.shape.DataContext = New DataItem() With { .IpAddress = "5.5.5.5" }
 ```
 
 Now you can define __ContentTemplate__ and __EditTemplate__ like so:
 		
-#### __XAML__
+
 ```XAML
 	 <Grid>
 	        <Grid.Resources>

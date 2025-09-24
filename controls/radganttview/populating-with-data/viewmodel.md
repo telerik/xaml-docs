@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 * Add a new __RadGanttView__ declaration in your XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView" />
@@ -24,7 +24,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 * Create a new class named __MyViewModel__:
 
-#### __C#__
+
 
 ```C#
 	public class MyViewModel
@@ -34,7 +34,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 * In the __MyViewModel__ class add Tasks property. We will bind the __TasksSource__ property of the __RadGanttView__ to this property. 
 
-#### __C#__
+
 
 ```C#
 	public class MyViewModel : PropertyChangedBase
@@ -58,7 +58,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 * All we have to do is to initialize the tasks field: 
 
-#### __C#__
+
 
 ```C#
 	public MyViewModel()
@@ -86,7 +86,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 * The ViewModel is complete. Now, let's return to the View. Add TasksSource property to the definition of the __GanttView__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}"  />
@@ -94,7 +94,7 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 * Finally, set the DataContext: 	
 
-#### __C#__
+
 
 ```C#
 	this.DataContext = new MyViewModel();

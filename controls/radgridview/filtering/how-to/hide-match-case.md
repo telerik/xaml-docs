@@ -31,7 +31,7 @@ Since __Q3 2011__ version of {% if site.site_name == 'Silverlight' %}Telerik UI 
 
 Here is the full code
 
-#### __C#__
+
 
 ```C#
 	private void gridView_FieldFilterEditorCreated2(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
@@ -46,7 +46,7 @@ Here is the full code
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub gridView_FieldFilterEditorCreated2(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
@@ -64,7 +64,7 @@ Second approach (before Q3 2011)
 
 Here is the full code:
 
-#### __C#__
+
 
 ```C#
 	private void gridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
@@ -84,7 +84,7 @@ Here is the full code:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)

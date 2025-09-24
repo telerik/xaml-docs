@@ -22,7 +22,7 @@ The purpose of this tutorial is to show you how to populate a __RadChart__ with 
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadChart__ declaration in your XAML: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8" />
@@ -40,7 +40,7 @@ The chart control will be populated with the top 10 products from the Northwind 
 
 * __DataPointMember__ to __YValue__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8">
@@ -64,7 +64,7 @@ Creating the WCF Service:
 
 * Then add a new item "Silverlight-enabled WCF Service" to the server project. In the *.svc.cs* file add the following Linq query to get the first 10 Products from the table:
 
-#### __C#__
+
 
 ```C#
 	[ServiceContract(Namespace = "")]
@@ -83,7 +83,7 @@ Creating the WCF Service:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	<ServiceContract(Namespace:=""), AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Allowed)>
@@ -110,7 +110,7 @@ Now build the project before continuing.
 
 * Switch to the code-behind and create a new instance of your WCF Service client.
 
-#### __C#__
+
 
 ```C#
 	           
@@ -119,7 +119,7 @@ Now build the project before continuing.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim client As New MyService.Service2Client()
@@ -129,7 +129,7 @@ Now build the project before continuing.
 
 Add the following code in your __xaml.cs__ which will make the initial load of the objects.
 
-#### __C#__
+
 
 ```C#
 	public void SetupService()
@@ -149,7 +149,7 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub SetupClient()
@@ -166,7 +166,7 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 
 
 
-#### __C#__
+
 
 ```C#
 	radChart.ItemsSource = serviceClient.LoadTop10Products();
@@ -174,7 +174,7 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radChart.ItemsSource = serviceClient.LoadTop10Products()
@@ -194,7 +194,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 * Create a new class named __NorthwindDataSource__. 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -204,7 +204,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -219,7 +219,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 * In the __NorthwindDataSource__ class add a reference to your WCF Service client.
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -240,7 +240,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -269,7 +269,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Products__ from the database:
 
-#### __C#__
+
 
 ```C#
 	this.serviceClient.LoadTop10ProductsCompleted += new EventHandler<LoadTop10ProductsCompletedEventArgs>(serviceClient_LoadTop10ProductsCompleted);
@@ -278,7 +278,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __C#__
+
 
 ```C#
 	foreach ( Products p in serviceClient.LoadTop10Products() )
@@ -289,7 +289,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler Me.serviceClient.LoadTop10ProductsCompleted, AddressOf serviceClient_LoadTop10ProductsCompleted
@@ -298,7 +298,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	For Each p As Products In serviceClient.LoadTop10Products()
@@ -310,7 +310,7 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 
 And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif %}
 
-#### __C#__
+
 
 ```C#
 	private void serviceClient_LoadTop10ProductsCompleted(object sender, LoadTop10ProductsCompletedEventArgs e)
@@ -324,7 +324,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub serviceClient_LoadTop10ProductsCompleted(ByVal sender As Object, ByVal e As LoadTop10ProductsCompletedEventArgs)
@@ -338,7 +338,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -350,7 +350,7 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 
 * Update your chart declaration - set the __ItemsSource__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8"    

@@ -12,14 +12,14 @@ position: 5
 
 In order to bring a location point into view, you simply have to set the __Center__ property of the __RadMap__ property. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480" />
 ```
 
-#### __C#__
+
 ```C#
 	private void BringLocationIntoView( Location desiredLocation )
 	{
@@ -27,7 +27,7 @@ In order to bring a location point into view, you simply have to set the __Cente
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub BringLocationIntoView(ByVal desiredLocation As Location)
 		Me.radMap.Center = desiredLocation

@@ -22,7 +22,7 @@ This behavior can be controlled via the __InputMode__ property. The default valu
 
 You can change the value of this property in XAML as shown in this snippet:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker InputMode="DatePicker"/>
@@ -34,7 +34,7 @@ Here is the result:
 
 Similarly if you decide to have only the time picker you can choose the TimePicker input mode:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker InputMode="TimePicker"/>

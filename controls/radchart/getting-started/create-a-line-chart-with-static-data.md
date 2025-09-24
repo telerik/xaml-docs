@@ -37,7 +37,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 As result you can see the __RadChart__ with some demo data displayed. The underlaying XAML is pretty simple and looks like this:
 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -52,7 +52,7 @@ There are two things you should pay attention to: First is the declaration of th
 In this sample you are going to create and visualize your data using simple line chart. This line chart will be based on some predefined static data declared in the XAML or code-behind.
 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -106,7 +106,7 @@ In this sample you are going to create and visualize your data using simple line
 	</telerik:RadChart>
 ```
 
-#### __C#__
+
 
 ```C#
 	radChart.DefaultView.ChartTitle.Content = "Year 2009";
@@ -139,7 +139,7 @@ In this sample you are going to create and visualize your data using simple line
 	radChart.DefaultView.ChartArea.DataSeries.Add(series);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radChart.DefaultView.ChartTitle.Content = "Year 2009"

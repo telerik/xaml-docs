@@ -16,7 +16,7 @@ The NumericScale is a container to display numeric and/or state indicator when n
 
 To add a numeric scale to any container (including RadialGauge and LinearGauge containers) you have to include NumericScale element as child to the contained element. Then you can put NumericIndicator and/or StateIndicator to the list of the numeric scale indicators:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge Width="150" Height="50" telerik:StyleManager.Theme="Windows8">
 	    <telerik:NumericScale Min="0">

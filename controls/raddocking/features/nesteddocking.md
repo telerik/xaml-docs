@@ -22,7 +22,7 @@ With the Q1 2014 release of UI for {% if site.site_name == 'WPF' %}WPF {% endif 
 
 Implementing nested __RadDockings__ is quite intuitive and straightforward. Letâ€™s start from the scratch here and achieve the already mentioned __RadPane__ with tabs inside. At the beginning you will need a __RadDocking__ control, with __DocumentHost__ and two __RadPanes__ inside:
 
-#### __C#__
+
 
 ```C#
 	<telerik:RadDocking x:Name="OuterDocking">
@@ -39,7 +39,7 @@ Implementing nested __RadDockings__ is quite intuitive and straightforward. Letâ
 
 Afterwards you will only have to add a new instance of __RadDocking__ inside of the first __RadPane__ as shown below:
     
-#### __C#__
+
 
 ```C#
 	<telerik:RadDocking x:Name="OuterDocking">

@@ -16,7 +16,7 @@ If the default layout provided by the __RadChart.DefaultView__ does not fit your
 
 If, for example, you want to show the monthly sales of cars for the year 2009 on one chart and next to it, as a second chart to display the sales per car manufacturer with a legend, then you have to set __UseDefaultLayout__ to __False__ and to define your own. In this example, you have __Grid__ with two rows and three columns. On the first row two __ChartTitle__ elements are placed in the first and the second columns where the chart areas will be placed. On the second row will be added two __ChartArea__ controls in the first two columns and a __ChartLegend__ in the third column.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart UseDefaultLayout="False" Height="362" Width="1042" VerticalAlignment="Bottom">

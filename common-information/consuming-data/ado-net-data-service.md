@@ -74,7 +74,7 @@ __NorthwindEntities__ represents the runtime context of a given data service. Wh
 
 Making a call to an ADO.NET Data Service is a simple process. Here is a sample code, demonstrating how to load all categories from the Categories table in the Northwind database: 
 
-#### __C#__
+
 
 ```C#
 	public partial class MainWindow : Window
@@ -92,7 +92,7 @@ Making a call to an ADO.NET Data Service is a simple process. Here is a sample c
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Partial Class MainWindow

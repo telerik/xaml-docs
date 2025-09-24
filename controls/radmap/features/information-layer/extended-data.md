@@ -34,14 +34,14 @@ When generating shapes automatically from the various data formats via __MapShap
 
 In case you are manually generating the shapes inside a layer, you have to manually wrap and pass the data to the ExtendedData property. This one by using the __ExtendedData__ and the __ExtendedPropertySet__ classes. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer" />
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	// Create extended property set.
 	// It can be shared between the number
@@ -73,7 +73,7 @@ In case you are manually generating the shapes inside a layer, you have to manua
 	this.informationLayer.Items.Add( sofiaEllipse );
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	' Create extended property set.'
 	' It can be shared between the number'
@@ -99,14 +99,14 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 
 >tip You can pass a string to the ConvertParameter that combines the values of two or more properties from the Extended Data. To learn how to compose your format string read the [following topic](#ToolTipFormat).
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer" />
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	ExtendedPropertySet propertySet = new ExtendedPropertySet();
 	propertySet.RegisterProperty( "Name", "City Name", typeof( string ), String.Empty );
@@ -140,7 +140,7 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 	this.informationLayer.Items.Add( sofiaEllipse );
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim propertySet As New ExtendedPropertySet()
 	propertySet.RegisterProperty("Name", "City Name", GetType(String), String.Empty)

@@ -16,7 +16,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 * Create a new class named __Car__ and add two properties - __Name__ and __Description__. Both of the properties are of type string. Here is the source code: 
 
-#### __C#__
+
 
 ```C#
 	public class Car
@@ -45,7 +45,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Car
@@ -82,7 +82,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 * Create a new class named __RadGridViewSampleData__. 
 
-#### __C#__
+
 
 ```C#
 	public class RadGridViewSampleData
@@ -104,7 +104,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class RadGridViewSampleData
@@ -130,7 +130,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 * Declare the __RadGridViewSampleData__ object as a resource in your application. 
 
-#### __XAML__
+
 
 ```XAML
 	<Grid.Resources>
@@ -140,7 +140,7 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding Source={StaticResource DataSource}, Path=Cars}"/>

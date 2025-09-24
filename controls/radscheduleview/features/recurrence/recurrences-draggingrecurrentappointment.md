@@ -14,7 +14,7 @@ Using the drag-drop functionality of __RadScheduleView__, you can drag an occurr
 
 First, let’s have the following recurrent appointment added to the AppointmentsSource of __RadScheduleView__ (a recurrent appointment which occurs on every Monday and Wednesday):
 
-#### __C#__
+
 
 ```C#
 	var reviewApp = new Appointment()

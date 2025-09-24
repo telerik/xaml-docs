@@ -14,7 +14,7 @@ __PROBLEM__
 
 You declare an aggregate SumFunction for a column:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
@@ -39,7 +39,7 @@ You can also specify some custom aggregate expressions. Then add the defined fun
 For example you can define a generic AggregateFunction which calculates the Sum of the Numbers for all the Players populated in RadGridView. You can refer to the sample code below:
         
 
-#### __C#__
+
 
 ```C#
 	var aggregate = new AggregateFunction<Player, int>()

@@ -18,7 +18,7 @@ __TextPosition__ is a position in the text of a __RadFixedDocument__. They enabl
 
 One can create a __TextPostion__ for a particular document, page and index using one of the constructors:
 
-#### __C#__
+
 
 ```C#
 	public TextPosition(RadFixedDocument document) 
@@ -48,7 +48,7 @@ The members that the __TextPosition__ class exposes are:
     * __TextPosition__ overrides the equality operator, so that you can compare positions in the document depending on their position using <, > and =.
     * The other methods of the class provide the means for navigation in the document and have self-explanatory names and arguments:
 
-#### __C#__
+
 
 ```C#
 	public bool MoveToNextPosition()
@@ -74,7 +74,7 @@ The members that the __TextPosition__ class exposes are:
 
 The caret position of __RadFixedDocument__ is also a __TextPosition__ and all methods and properties listed above could be used with it as well. Here is an example:
 
-#### __C#__
+
 
 ```C#
 	this.pdfViewer.Document.CaretPosition.MoveToEndOfDocument();

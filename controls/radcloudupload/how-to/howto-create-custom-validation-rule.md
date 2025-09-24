@@ -12,7 +12,7 @@ position: 0
 
 If the built-in validation rule does not cover your requirements, you can create your custom validation rule. In order to do this you need to create a class deriving from the native [ValidationRule](http://msdn.microsoft.com/en-us/library/system.windows.controls.validationrule.aspx) and override its __Validate()__ method. In that method you can implement custom logic validating the selected file. Since, you might have troubles with some cloud providers while uploading files containing underscores in their name, it might be reasonable to validate their name like this:        
 
-#### __C#__
+
 ```C#
     public class MyValidationRule:ValidationRule
     {
@@ -28,7 +28,7 @@ If the built-in validation rule does not cover your requirements, you can create
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Public Class MyValidationRule
         Inherits ValidationRule
@@ -44,7 +44,7 @@ If the built-in validation rule does not cover your requirements, you can create
 
 Once this class is creted, you need to include it into the ValidationRules of the RadCloudUpload control. This can be done in XAML like this:
 
-#### __XAML__
+
 ```XAML
     <telerik:RadCloudUpload>
       <telerik:RadCloudUpload.ValidationRules>

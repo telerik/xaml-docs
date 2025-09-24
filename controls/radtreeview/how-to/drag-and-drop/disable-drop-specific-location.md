@@ -12,13 +12,13 @@ position: 4
 
 In order to disable the drop operation on a specific treeview item, you need to set the boolean __RadTreeViewItem__ property __IsDropAllowed__ to __False__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeViewItem Header="Tennis" IsDropAllowed="False">
 ```
 
-#### __C#__
+
 
 ```C#
 	private void DisableDropOnSpecificItem()
@@ -27,7 +27,7 @@ In order to disable the drop operation on a specific treeview item, you need to 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub DisableDropOnSpecificItem()

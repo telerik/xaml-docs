@@ -20,7 +20,7 @@ Since __Q2 2011__ Inverse Axis feature was released. It allows the axes values o
 
 The following sample code will show you how this can be achieved:
 
-#### __C#__
+
 
 ```C#
 	           
@@ -174,7 +174,7 @@ Note the __IsInverse__ property of the YAxis which is __false__ by default. Turn
 
 Optionally you may inverse the XAxis too - it will display the categories from Dec to Jan:
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.IsInverse = true;

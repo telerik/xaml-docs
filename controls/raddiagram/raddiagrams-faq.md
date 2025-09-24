@@ -40,7 +40,7 @@ If you want to display galleries with __DiagramShapes__ in different panels, you
 
 The __Diagramming Framework__ provides a built-in __SettingsPane__ that allows the users to examine and modify the settings of the diagramming items. It can be displayed through the __ItemInformationAdorner.AdditionalContent__ attached property:		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram x:Name="xDiagram">
 		<primitives:ItemInformationAdorner.AdditionalContent>

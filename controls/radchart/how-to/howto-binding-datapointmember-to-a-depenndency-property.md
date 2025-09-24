@@ -20,7 +20,7 @@ This help topic will show you how to change the bar height (assuming that RadCha
 
 The main idea behind this binding is to create an object that implements INotifyPropertyChanged and setting it to both RadChart and Text Box:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="RadChart1" Margin="0,0,0,48" ItemsSource="{Binding}">
@@ -41,7 +41,7 @@ The main idea behind this binding is to create an object that implements INotify
 
 Here is how to create object that implements INotifyPropertyChanged in code-behind: 
 
-#### __C#__
+
 
 ```C#
 	public class MyObject : INotifyPropertyChanged
@@ -72,7 +72,7 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyObject
@@ -111,7 +111,7 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 
 Set the DataContext property to List of MyObject class after the InitializeComponent method:
 
-#### __C#__
+
 
 ```C#
 	this.DataContext = new List<MyObject>() { new MyObject() };
@@ -119,7 +119,7 @@ Set the DataContext property to List of MyObject class after the InitializeCompo
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.DataContext = New List(Of MyObject)() From { _

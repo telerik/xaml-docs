@@ -26,7 +26,7 @@ The next example shows how to create a custom GanttDragDropBehavior in order to 
 
 * Create a CustomDragDragDropBehavior class and override its CanStartDrag method:
 
-#### __C#__
+
 
 ```C#
 	public class CustomDragDropBehavior : Telerik.Windows.Controls.GanttView.GanttDragDropBehavior
@@ -44,7 +44,7 @@ The next example shows how to create a custom GanttDragDropBehavior in order to 
 
 * Set the just created class as RadGanttView DragDropBehavior:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView  x:Name="ganttView" TasksSource="{Binding Tasks}" >
@@ -72,7 +72,7 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 
 * Create a custom SchedulingResizeBehavior class and override its Resize method:
 
-#### __C#__
+
 
 ```C#
 	public class SnappingSchedulingResizeBehavior : SchedulingResizeBehavior
@@ -131,7 +131,7 @@ The next example will demonstrate how to create custom __SchedulingResizeBehavio
 
 * Set the newly created class to the RadGanttView ResizeBehavior:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView  x:Name="ganttView1" TasksSource="{Binding Tasks}" >

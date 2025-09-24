@@ -15,7 +15,7 @@ The purpose of this tutorial is to show you how to set the __CharacterCasing__ p
 
 The idea in this case is to create a new __Attached Property__ in a helper class.
 
-#### __C#__
+
 
 ```C#
 	public class EditableComboBox
@@ -39,7 +39,7 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class EditableComboBox
@@ -63,7 +63,7 @@ In the __OnCharacterCasingChanged()__ event handler you should perform the follo
 
 * The __PART_EditableTextBox__ is a __TextBox__ and you can easily set its __CharacterCasing__ property.
 
-#### __C#__
+
 
 ```C#
 	public class EditableComboBox
@@ -105,7 +105,7 @@ In the __OnCharacterCasingChanged()__ event handler you should perform the follo
 
 Finally set the property in XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadComboBox IsEditable="True" example:EditableComboBox.CharacterCasingProperty="1"/>

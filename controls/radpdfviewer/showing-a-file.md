@@ -50,7 +50,7 @@ In __Example 2__, a file named "Sample.pdf" embedded in a "Sample Data" folder i
 {% if site.site_name == 'Silverlight' %}
 You can also load files that are not on the client machine. For example, if you embed a Sample.pdf file in the Web project, you can load it like this: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPdfViewer x:Name="pdfViewer" DocumentSource="/Sample.pdf"/>

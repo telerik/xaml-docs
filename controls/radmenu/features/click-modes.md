@@ -14,7 +14,7 @@ By default if an item in the __RadMenu__ control is clicked, the menu gets close
 
 If you set this property to __True__, the menu won't get closed upon a click on the item.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenuItem Header="Sidebar"

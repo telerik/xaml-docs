@@ -23,7 +23,7 @@ The root level container is the __RadRibbonView__ itself. It is separated in two
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
@@ -47,7 +47,7 @@ The Backstage control is basically an ItemsControl that can be used to display c
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRibbonView.Backstage>
@@ -265,7 +265,7 @@ Currently you can only add or remove buttons to the toolbar but cannot modify it
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRibbonView.QuickAccessToolBar>
@@ -291,7 +291,7 @@ You never add your controls to the __RadRibbonTab__ directly. Instead they shoul
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRibbonTab Header="Home">
@@ -321,7 +321,7 @@ As you can see two __RadRibbonGroups__ - "Text" and "Page", have been declared. 
 
 Here you can see how the whole XAML declaration of the __RadRibbonView__ looks like:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">

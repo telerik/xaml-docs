@@ -16,7 +16,7 @@ This series is visualized on the screen as a straight line connecting each of th
 
 You can use the following definition to display a simple PolarAreaSeries
 
-#### __XAML__	
+	
 ```XAML
 	<telerik:RadPolarChart Palette="Windows8">
 		<telerik:RadPolarChart.PolarAxis>

@@ -18,7 +18,7 @@ There are four __Calendar modes__ that specify what is visible in the Calendar v
 
 ![{{ site.framework_name }} RadCalendar Display Modes](images/calendar_displayModes.png)
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadCalendar DisplayMode="YearView" x:Name="calendar"/>
@@ -30,7 +30,7 @@ There are four __Calendar modes__ that specify what is visible in the Calendar v
 
 The __SelectedDate__ property holds the selected date, __null__ means that __no date is selected__. The following code will select tomorrow's date in a calendar:
 
-#### __C#__
+
 
 ```C#
 	calendar.SelectedDate = DateTime.Today.AddDays(1);
@@ -42,7 +42,7 @@ If you add dates in the Selected dates collection, they should be valid with reg
 
 The following example selects all the work days (Monday to Friday) of the current month:
 
-#### __C#__
+
 
 ```C#
 	//Make sure that more than one date can be selected:

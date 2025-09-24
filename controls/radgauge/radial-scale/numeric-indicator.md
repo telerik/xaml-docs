@@ -14,7 +14,7 @@ Numeric Indicator is an indicator that displays its Value property as digital in
 
 To add numeric indicator to the scale you have to include NumericIndicator element to the list of the scale indicators:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale>

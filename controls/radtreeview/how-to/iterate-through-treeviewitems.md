@@ -23,13 +23,13 @@ So here is an example about how to get access to all of the Containers in the __
 
 The item container may be null if it isn't still generated from the runtime. That's why you should access the containers when your control is generated and added to the visual tree. 
 
-#### __C#__
+
 
 ```C#
 	this.Loaded += new RoutedEventHandler( IterateTreeViewItems_Loaded );
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler Me.Loaded, AddressOf IterateTreeViewItems_Loaded
@@ -37,7 +37,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __C#__
+
 
 ```C#
 	private void IterateTreeViewItems_Loaded( object sender, RoutedEventArgs e )
@@ -79,7 +79,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -123,7 +123,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 
 {% if site.site_name == 'WPF' %}
 
-#### __C#__
+
 
 ```C#
 	private void IterateTreeViewItems_Loaded( object sender, RoutedEventArgs e )
@@ -165,7 +165,7 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 		Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)

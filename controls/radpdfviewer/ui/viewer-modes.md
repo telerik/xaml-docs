@@ -30,7 +30,7 @@ The viewer mode can be changed using the "default" UI that RadPdfViewer uses (as
 The code of the buttons can be declared as follows:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
@@ -56,7 +56,7 @@ The code of the buttons can be declared as follows:
 ```
 {% endif %}
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
@@ -86,7 +86,7 @@ Note that the RadToolBar control is bound to the CommandDescriptorss property of
 
 The declarations of the namespaces used in the snippet above are:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -99,7 +99,7 @@ The declarations of the namespaces used in the snippet above are:
 
 The mode of the viewer is set using the Mode property, e.g.:
 
-#### __C#__
+
 
 ```C#
 	  this.pdfViewer.Mode = Telerik.Windows.Documents.Fixed.UI.FixedDocumentViewerMode.TextSelection;

@@ -52,7 +52,7 @@ The __InformationLayer__ allows you to display the following items:
 
 In order to add an item to the __InformationLayer__, the only thing you have to do is to put it inside the __InformationLayer__'s tag. Here is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -70,7 +70,7 @@ In order to add an item to the __InformationLayer__, the only thing you have to 
 
 If you want to add more than one element, you just have to place it after the previous element. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -111,7 +111,7 @@ Here is an example for an __Ellipse__, positioned above Sofia, Bulgaria and visi
 <!-- -->
 >Note that the location of the element on the map coincides with its top left corner, not with its center. To change the position of the element towards the location you can use its __HorizontalAlignment__ or __VerticalAlignment__ properties or use the __HotSpot__ feature. To learn how read [here]({%slug radmap-features-hot-spots%}).          
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"

@@ -59,7 +59,7 @@ As it is described in the [Fundamentals](#ribbon-group---fundamentals) section, 
 
 Adding __RadRibbonGroups__ is done through the __RadRibbonTab__'s __Items__ property. The next example shows how to add several __RadRibbonGroups__ and how to set their __Header__ property.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -83,7 +83,7 @@ Adding __RadRibbonGroups__ is done through the __RadRibbonTab__'s __Items__ prop
 
 Any group can have a dialog launcher button which appears in the bottom right corner of the group. By default the dialog launcher is not visible. In order to enable it you should set the __RadRibbonGroup__'s __DialogLauncherVisibility__ property to __Visibility.Visible__.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -109,7 +109,7 @@ Any group can have a dialog launcher button which appears in the bottom right co
 
 The __RadRibbonGroup__ is a [HeaderedItemsControl](http://msdn.microsoft.com/en-us/library/system.windows.controls.headereditemscontrol.aspx). Which means that the __RadRibbonGroup__ contains a heading (or title) and multiple items. You already learned how to [set](#adding-ribbon-groups-to-a-radribbonview-control) the __Header__ property. Now it's time to add some content to the __RadRibbonGroup__. You should do this using the __RadRibbonGroup__'s __Items__ property. The next example shows you how to build the "Clipboard" __RadRibbonGroup__.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -187,7 +187,7 @@ The collapsed state icon is displayed inside an __Image__ element with Width/Hei
 
 Any group can have a dialog launcher button. When you want to handle the click over this button you should attach to the __RadRibbonGroup__'s __LaunchDialog__ event.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonGroup DialogLauncherVisibility="Visible" Header="Clipboard" LaunchDialog="RadRibbonGroup_LaunchDialog">
 	 ...

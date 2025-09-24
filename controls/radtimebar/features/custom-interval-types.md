@@ -18,7 +18,7 @@ The __Intervals__ collection contains items of type __IntervalBase__. That is wh
 
 The example below shows how you can add a custom interval type to the Intervals collection of a RadTimeBar control:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadTimeBar PeriodStart="2011-01-01"
                      PeriodEnd="2012-01-01">
@@ -39,7 +39,7 @@ A custom interval is a class that inherits the __IntervalBase__ class and implem
 
 Below you can find a sample custom interval implementation:
 
-#### __C#__
+
 ```C#
 	using Telerik.Windows.Controls.TimeBar;
 	public class CustomInterval : IntervalBase
@@ -98,7 +98,7 @@ Below you can find a sample custom interval implementation:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Imports Telerik.Windows.Controls.TimeBar
 	Public Class CustomInterval

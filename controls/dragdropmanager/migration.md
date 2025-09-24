@@ -18,7 +18,7 @@ The event that was fired when the drag Starts was __DragQuery__ for the RadDragA
 
 Bellow is the code for the DragQuery event is its corresponding code for the OnDragInitialize event:
 
-#### __C#__
+
 ```C#
 	private void OnDragQuery( object sender, DragDropQueryEventArgs e )
 	{
@@ -37,7 +37,7 @@ Bellow is the code for the DragQuery event is its corresponding code for the OnD
 	}
 ```
 
-#### __C#__
+
 ```C#
 	private void OnDragInitialize(object sender, DragInitializeEventArgs args)
 	{
@@ -55,7 +55,7 @@ Bellow is the code for the DragQuery event is its corresponding code for the OnD
 
 The event corresponding to the __DragInfo__ event in RadDragAndDropManager is now __DragDropComplete__. The __DragDropComplete__ event is the equivalent of the __DragQuery with status DropComplete__.
 
-#### __C#__
+
 ```C#	
 	private void OnDragInfo( object sender, DragDropEventArgs e )
 	{
@@ -73,7 +73,7 @@ The event corresponding to the __DragInfo__ event in RadDragAndDropManager is no
 	}	
 ```
 
-#### __C#__
+
 ```C#
 	public void OnDragCompleted(object sender, Telerik.Windows.DragDrop.DragDropCompletedEventArgs args)
 	{
@@ -93,7 +93,7 @@ The event corresponding to the __DragInfo__ event in RadDragAndDropManager is no
 
 The __Drop__ event in DragDropManager corresponds to the __DropInfo event with status DropCompleted__.
 
-#### __C#__
+
 
 ```C#
 	private void OnDropInfo( object sender, DragDropEventArgs e )
@@ -107,7 +107,7 @@ The __Drop__ event in DragDropManager corresponds to the __DropInfo event with s
 	}
 ```
 
-#### __C#__
+
 ```C#
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs args)
 	{
@@ -126,7 +126,7 @@ The __DragInfo__ event corresponds to the __GiveFeedback__ event. Basically the 
 
 The __DropInfo__ event corresponds to the __DragOver__ event of DradDropManager. The __DragOver__ event can be used as a replacement for the __DropQuery/Info__ events for various purposes, one of which is to __update the AllowedEffects__ for the drag drop operation.  Works both on Source and Destination.
 
-#### __C#__
+
 ```C#
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
@@ -142,7 +142,7 @@ The __CancelDrag__ event corresponds to the __QueryContinueDrag__ event. The Can
 
 The control cursor can be set in the GiveFeedbackEventArgs.
 
-#### __C#__
+
 ```C#	
 	private void OnGiveFeedback(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs args)
 	{

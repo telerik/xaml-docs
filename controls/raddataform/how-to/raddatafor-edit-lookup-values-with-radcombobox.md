@@ -246,7 +246,7 @@ In this case the Countries and Persons collections used for the ItemsSources of 
 
 __Example 6: Defining the Countries and Persons Collections in the ViewModel__
 
-	```C#
+```C#
 	public class MyViewModel
 	{
 	    private List<Country> countries;

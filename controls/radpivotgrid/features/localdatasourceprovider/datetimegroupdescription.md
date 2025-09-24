@@ -24,7 +24,7 @@ __DateTimeGroupDescription__ is used when you want to group your data by propert
 
 When you have a property of type DateTime (DateTimeOffset), you can create several DateTimeGroupDescriptions with different steps. You may also create a PropertyGroupDescription - this way the DateTime will be treated as a string and grouped as such. All of them can be used simultaneously. You can add the description in RowGroupDescriptions or ColumnGroupDescriptions collections of LocalDataSourceProvider.        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:LocalDataSourceProvider.RowGroupDescriptions>
@@ -34,7 +34,7 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	DateTimeGroupDescription dateTimeGroupDescription1 = new DateTimeGroupDescription();
@@ -52,7 +52,7 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dateTimeGroupDescription1 As New DateTimeGroupDescription()
@@ -84,7 +84,7 @@ By default __RadPivotFieldList__ will show the following steps in its FieldTree 
 
 The solution of this problem is to use AddingContainerNode event of LocalDataSourceFieldDescriptionsProvider. In this event you will receive all items from the FieldTree and you will be able to modify which of them to be visible. In order to use this event you have to create a new instance of LocalDataSourceFieldDescriptionsProvider and set LocalDataSourceProvider's FieldDescriptionProvider to this instance. You can do this in XAML or in code behind:        
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:LocalDataSourceProvider x:Key="dataProvider" ItemsSource="{StaticResource source}">
@@ -94,7 +94,7 @@ The solution of this problem is to use AddingContainerNode event of LocalDataSou
 	</pivot:LocalDataSourceProvider>
 ```
 
-#### __C#__
+
 
 ```C#
 	var dataProvider = new LocalDataSourceProvider();
@@ -104,7 +104,7 @@ The solution of this problem is to use AddingContainerNode event of LocalDataSou
 	dataProvider.FieldDescriptionsProvider = descriptionProvider;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dataProvider = New LocalDataSourceProvider()
@@ -118,7 +118,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 
 * __Add children to the container node (folder)__ - for example you may add Hour Step to the FieldTree:            
 
-#### __C#__
+
 
 ```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
@@ -139,7 +139,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
@@ -158,7 +158,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 
 * __Remove children from the container node (folder)__ - for example you may remove Year Step to the FieldTree:            
 
-#### __C#__
+
 
 ```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
@@ -179,7 +179,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
@@ -198,7 +198,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 
 * __Remove the whole container node (folder) from the FieldTree__:            
 
-#### __C#__
+
 
 ```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
@@ -211,7 +211,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
@@ -224,7 +224,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 
 * __Remove the whole container node (folder) from the FieldTree and show a single DateTime with chosen Step:__:            
 
-#### __C#__
+
 
 ```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
@@ -239,7 +239,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)

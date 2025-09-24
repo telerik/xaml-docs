@@ -15,7 +15,7 @@ The __RadPanelBar__ control needs a set of two control templates - one for the o
 Below you can see the default template:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 ```XAML
 	<ControlTemplate x:Key="PanelBarControlTemplate" TargetType="telerik:RadPanelBar">
 	    <Grid>
@@ -72,7 +72,7 @@ Below you can see the default template:
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 ```XAML
 	<ControlTemplate x:Key="PanelBarControlTemplate" TargetType="{x:Type telerik:RadPanelBar}">
 	    <Grid>
@@ -117,7 +117,7 @@ We will now briefly describe the purpose of the main elements:
 The other control template required by the __RadPanelBar__ control is the one for the panelbar items. Below you can see the default template:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 ```XAML
 	<ControlTemplate x:Key="PanelBarItemTopLevelTemplate" TargetType="telerik:RadPanelBarItem">
 	    <Grid x:Name="RootElement">
@@ -297,7 +297,7 @@ The other control template required by the __RadPanelBar__ control is the one fo
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 ```XAML
 	<ControlTemplate x:Key="PanelBarItemTopLevelTemplate" TargetType="{x:Type telerik:RadPanelBarItem}">
 	    <Grid x:Name="RootElement" SnapsToDevicePixels="True">
@@ -470,7 +470,7 @@ Following is a short description of the major elements in the template:
 And the default ControlTemplate of the RadPanelBarItem.Items is:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 ```XAML
 	<ControlTemplate x:Key="PanelBarItemSecondLevelTemplate" TargetType="telerik:RadPanelBarItem">
 	    <Grid x:Name="RootElement">
@@ -611,7 +611,7 @@ And the default ControlTemplate of the RadPanelBarItem.Items is:
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 ```XAML
 	<ControlTemplate x:Key="PanelBarItemSecondLevelTemplate" TargetType="{x:Type telerik:RadPanelBarItem}">
 	    <Grid x:Name="RootElement">

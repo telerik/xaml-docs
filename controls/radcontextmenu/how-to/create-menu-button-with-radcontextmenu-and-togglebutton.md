@@ -18,7 +18,7 @@ In some scenarios you need to have a button that displays additional options upo
 
 Here is the final code snippet.
 
-#### __XAML__
+
 
 ```XAML
 	<ToggleButton Content="Click me"

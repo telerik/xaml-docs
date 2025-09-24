@@ -42,7 +42,7 @@ By default the __Numeric Indicator__ won't display its values. You have to defin
 
 For example, if you want to display three digit number with two additional fractional digits, you have to define six number positions. Note that one of the position will be used by the decimal point.        
 
-#### __XAML__
+
 ```XAML
 	<Grid x:Name="LayoutRoot" Width="150" Height="50">
 	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
@@ -104,7 +104,7 @@ To manipulate the indicator's size, simply use the __ScaleObject.RelativeHeight_
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<Grid Background="#EEEEEE" Width="150" Height="50">
 	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
@@ -144,7 +144,7 @@ The __ScaleObject.RelativeX__ and __ScaleObject.RelativeY__ attachable propertie
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<Grid Background="#EEEEEE" Width="150" Height="50">
 	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
@@ -176,7 +176,7 @@ Here is a snapshot of the result:
 
 The __CornerRadius__ property allows you to specify the radius of the indicator's corners. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<Grid x:Name="LayoutRoot" Width="150" Height="50">
 	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">
@@ -222,7 +222,7 @@ The Format property allows you to specify a format string for the indicator's va
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<Grid Background="#EEEEEE" Width="175" Height="60">
 	    <telerik:NumericScale Min="0" Max="999" telerik:StyleManager.Theme="Windows8">

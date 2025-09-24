@@ -28,7 +28,7 @@ __RadChart__ allows you to export the chart in several file formats:
 
 The following example demonstrates how to export __RadChart__ to ExcelML file format.
 
-#### __C#__
+
 
 ```C#
 	SaveFileDialog dialog = new SaveFileDialog();
@@ -43,7 +43,7 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dialog As New SaveFileDialog()
@@ -59,7 +59,7 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 
 
 
-#### __C#__
+
 
 ```C#
 	SaveFileDialog dialog = new SaveFileDialog();
@@ -73,7 +73,7 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dialog As New SaveFileDialog()

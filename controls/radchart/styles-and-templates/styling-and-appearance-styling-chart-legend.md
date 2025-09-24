@@ -75,7 +75,7 @@ Here are the resources generated with the __ChartLegendItemStyle__:{% endif %}{%
 
 To apply the styles to the real controls, set the __ChartLegendItemStyle__ in the Style for the __ChartLegend__.
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="ChartLegendStyle" TargetType="telerik:ChartLegend">
@@ -89,7 +89,7 @@ To apply the styles to the real controls, set the __ChartLegendItemStyle__ in th
 
 After that set the __ChartLegendStyle__ to the __RadChart__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" LegendStyle="{StaticResource ChartLegendStyle}" />
@@ -101,7 +101,7 @@ After that set the __ChartLegendStyle__ to the __RadChart__.
 
 Here is the XAML, generated for the __Styles__:
 
-#### __XAML__
+
 
 ```XAML
 	<SolidColorBrush x:Key="LegendForeground" Color="#FF000000" />

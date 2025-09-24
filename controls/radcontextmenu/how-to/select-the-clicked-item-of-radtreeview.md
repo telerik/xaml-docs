@@ -20,7 +20,7 @@ This tutorial will show you how to select the item that was clicked, while openi
 
 Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu__ attached.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView">
@@ -49,7 +49,7 @@ Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu
 
 To handle the __Opened__ event attach an event handler to it.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadContextMenu x:Name="radContextMenu1" 
@@ -60,7 +60,7 @@ To handle the __Opened__ event attach an event handler to it.
 	</telerik:RadContextMenu>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
@@ -68,7 +68,7 @@ To handle the __Opened__ event attach an event handler to it.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
@@ -77,7 +77,7 @@ To handle the __Opened__ event attach an event handler to it.
 
 In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetClickedElement\<T\>()__ method of the __RadContextMenu__.
 
-#### __C#__
+
 
 ```C#
 	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
@@ -86,7 +86,7 @@ In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetCl
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
@@ -98,7 +98,7 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 
 >If you are having a dynamic data scenario, where the __RadTreeView__ is bound to a collection, you have to set the __SelectedItem__ property to the __DataContext__ of the clicked __RadTreeViewItem__.
 
-#### __C#__
+
 
 ```C#
 	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
@@ -111,7 +111,7 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)

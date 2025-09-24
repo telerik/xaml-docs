@@ -24,7 +24,7 @@ In order to configure the behavior for the single click you have to set the __Mo
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                MouseClickMode="Center"
@@ -35,7 +35,7 @@ If you want to implement a custom behavior for one or both of them, just set the
 
 >tip Also you can set these properties to __None__ in order to prevent the users from zooming. Additionally setting the __MouseDragMode__ property to __None__ will disable them from panning.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                MouseClickMode="None"
@@ -44,7 +44,7 @@ If you want to implement a custom behavior for one or both of them, just set the
 	                MapMouseDoubleClick="radMap_MapMouseDoubleClick" />
 ```
 
-#### __C#__
+
 ```C#
 	private void radMap_MapMouseClick( object sender, MapMouseRoutedEventArgs e )
 	{
@@ -56,7 +56,7 @@ If you want to implement a custom behavior for one or both of them, just set the
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub radMap_MapMouseClick(sender As Object, e As MapMouseRoutedEventArgs)
 	 'implement logic regarding single click here'

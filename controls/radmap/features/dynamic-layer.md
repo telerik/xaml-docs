@@ -28,7 +28,7 @@ The __DynamicLayer__ requires a division of the map space in regions. The divisi
 
 Here is an example of a __DynamicLayer__ with a set of two __ZoomGrids__:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -68,7 +68,7 @@ In this method you have to implement your logic for getting the desired items. T
 
 >If you want to deliver your data via a WebService you can follow our [demo](https://demos.telerik.com/silverlight/#Map/DynamicLayer) with full source code.          
 
-#### __C#__
+
 ```C#
 	public class MapDynamicSource : IMapDynamicSource
     {
@@ -116,7 +116,7 @@ In this method you have to implement your logic for getting the desired items. T
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class MapDynamicSource
     Implements IMapDynamicSource
@@ -161,7 +161,7 @@ In this method you have to implement your logic for getting the desired items. T
 
 You can set the dynamic source to a new instance of the MapDynamicSource and create a new definition for the AzureMapProvider:        
 
-#### __C#__
+
 ```C#
 	public MainPage()
 	{
@@ -171,7 +171,7 @@ You can set the dynamic source to a new instance of the MapDynamicSource and cre
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

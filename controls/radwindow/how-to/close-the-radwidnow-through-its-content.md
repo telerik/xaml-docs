@@ -22,7 +22,7 @@ To close the __RadWindow__ through its content you have to get the instance of t
 
 Here is a sample __RadWindow__, used as user control, with a button in it:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
@@ -37,7 +37,7 @@ Here is a sample __RadWindow__, used as user control, with a button in it:
 
 As the button is in the same control like the __RadWindow__, you can get the __RadWindow__ instance in the code-behind. In order to close the window through the button you have to attach to its __Click__ event and call the __Close()__ method of the __RadWindow__.
 
-#### __XAML__
+
 
 ```XAML
 	<Button Content="Close me!"
@@ -46,7 +46,7 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 	        VerticalAlignment="Center" />
 ```
 
-#### __C#__
+
 
 ```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
@@ -55,7 +55,7 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
@@ -65,7 +65,7 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 
 >tipInstead of event handler you can use a __RadButton__ with the __Close__ command for the __RadWindow__. Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadButton Content="Close me!"
@@ -80,7 +80,7 @@ In this scenario the __Button__ is placed inside a __UserControl__, which is pas
 
 >tipThe __ParentOfType\<T\>()__ is available when you use the __Telerik.Windows.Controls__ namespace from the __Telerik.Windows.Controls__. It returns the first element of this type up in the __Visual Tree__.
 
-#### __C#__
+
 
 ```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
@@ -90,7 +90,7 @@ In this scenario the __Button__ is placed inside a __UserControl__, which is pas
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)

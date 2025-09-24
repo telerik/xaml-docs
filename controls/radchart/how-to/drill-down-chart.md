@@ -26,7 +26,7 @@ Also in the following examples the charts will be populated with a various data 
 
 * Here is the initial __RadChart__ declaration. 
 
-#### __XAML__
+
 
 ```XAML
 	<FrameworkElement.Resources>            
@@ -86,7 +86,7 @@ Also in the following examples the charts will be populated with a various data 
 
 When the application (the user control) is loaded, the __RadChart__ is populated with the first eight products from the Products table in the Northwind database. On the __Y Axis__ is displayed the products __UnitPrice__. On the __X Axis__ is displayed the __ProductName__ property. This is done through the __ItemsMapping__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart.SeriesMappings>
@@ -108,7 +108,7 @@ When the application (the user control) is loaded, the __RadChart__ is populated
 
 Also the products' names are rotated on 45 degrees. In order to do that you should use the __LabelRotationAngle__ property of the __XAxis__. Here is the XAML which does it: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -135,7 +135,7 @@ Also the products' names are rotated on 45 degrees. In order to do that you shou
 
 * The __NorthwindDataSource__ class is used for __ItemsSource__ of the __RadChart__. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -152,7 +152,7 @@ It has two properties of type __ObservableCollection__:
 
 * __OrderDetails__- displayed as a tooltip for a specific product in the chart. More detailed information about the order details is displayed when the user clicks on a chart item. 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -184,7 +184,7 @@ It has two properties of type __ObservableCollection__:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -221,7 +221,7 @@ It has two properties of type __ObservableCollection__:
 
 Here is the initial loading of the products. The code is placed in the __NorthwindDataSource__ constructor:
 
-#### __C#__
+
 
 ```C#
 	public NorthwindDataSource()
@@ -238,7 +238,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 
 
 
-#### __C#__
+
 
 ```C#
 	public NorthwindDataSource()
@@ -254,7 +254,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 ```
 
     
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -279,7 +279,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 ```
 
     
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -296,7 +296,7 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 
 And the __EntitiesLoaded__ method:{% endif %}
 
-#### __C#__
+
 
 ```C#
 	private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
@@ -311,7 +311,7 @@ And the __EntitiesLoaded__ method:{% endif %}
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
@@ -326,7 +326,7 @@ And the __EntitiesLoaded__ method:{% endif %}
 
 The __NorthwindDataSource__ class contains one more method. It is used to load order details per a specific product:
 
-#### __C#__
+
 
 ```C#
 	public static void BeginLoadingOrderDetails(Products p, int rowCount )
@@ -344,7 +344,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 
 
-#### __C#__
+
 
 ```C#
 	public static void LoadOrderDetails( Products p, int rowCount )
@@ -363,7 +363,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Shared Sub BeginLoadingOrderDetails(ByVal p As Products, ByVal rowCount As Integer)
@@ -381,7 +381,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Shared Sub LoadOrderDetails(ByVal p As Products, ByVal rowCount As Integer)
@@ -402,7 +402,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 * Enable __ToolTip__. In order to do that use the __ShowItemToolTips__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:SeriesMapping.SeriesDefinition>
@@ -414,7 +414,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 * Attach to the __ItemToolTipOpening__ event. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:ChartArea ItemToolTipOpening="ChartArea_ItemToolTipOpening" LegendName="chartLegend">
@@ -445,7 +445,7 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 
 Switch in the code-behind. Here is the code for the event handler:
 
-#### __C#__
+
 
 ```C#
 	private void ChartArea_ItemToolTipOpening( ItemToolTip2D tooltip, ItemToolTipEventArgs e )
@@ -461,7 +461,7 @@ Switch in the code-behind. Here is the code for the event handler:
 
 
 
-#### __C#__
+
 
 ```C#
 	private void ChartArea_ItemToolTipOpening(ItemToolTip2D tooltip, ItemToolTipEventArgs e)
@@ -477,7 +477,7 @@ Switch in the code-behind. Here is the code for the event handler:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
@@ -493,7 +493,7 @@ Switch in the code-behind. Here is the code for the event handler:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
@@ -511,7 +511,7 @@ Switch in the code-behind. Here is the code for the event handler:
 
 When the tooltip is opened, the underlying product is extracted first: 
 
-#### __C#__
+
 
 ```C#
 	           
@@ -520,7 +520,7 @@ When the tooltip is opened, the underlying product is extracted first:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim p As Products = TryCast(e.DataPoint.DataItem, Products)
@@ -536,7 +536,7 @@ You can see the result on the snapshot below:
 
 Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is used as a tooltip content: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -563,7 +563,7 @@ Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is 
 
 * The final step is to add the drill down behavior. To do that, attach to the __ItemClick__ event. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:ChartArea ItemClick="ChartArea_ItemClick"
@@ -582,7 +582,7 @@ Here is the XAML declaration of the __DrillDownChartToolTip__ control, which is 
 
 Switch in the code-behind. Add the code for handling the event. Here is a sample how this can be done:
 
-#### __C#__
+
 
 ```C#
 	private void ChartArea_ItemClick( object sender, ChartItemClickEventArgs e )
@@ -609,7 +609,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 
 
-#### __C#__
+
 
 ```C#
 	private void ChartArea_ItemClick(object sender, ChartItemClickEventArgs e)
@@ -639,7 +639,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
@@ -666,7 +666,7 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)

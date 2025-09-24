@@ -12,7 +12,7 @@ position: 21
 
 For example, you may have the following treeview: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView">
@@ -31,7 +31,7 @@ For example, you may have the following treeview:
 
 In order to enable horizontal and/or vertical scrollbar you need to add the following attribute(s) to the __RadTreeView__ declaration: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible">
@@ -42,7 +42,7 @@ And here is the result:
 
 The same operation can be done in the code-behind: 
 
-#### __C#__
+
 
 ```C#
 	private void EnableScrollBars()
@@ -52,7 +52,7 @@ The same operation can be done in the code-behind:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub EnableScrollBars()
@@ -63,12 +63,12 @@ The same operation can be done in the code-behind:
 
 If you want to enable the scrollbars __on demand__, you need to set the scrollbars visibility to __Auto__:
 	
-#### __XAML__
+
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
 ```
 	
-#### __C#__
+
 ```C#
 	private void EnableScrollBars()
 	{
@@ -77,7 +77,7 @@ If you want to enable the scrollbars __on demand__, you need to set the scrollba
 	}
 ```
 
-#### __VB.NET__	
+	
 ```VB.NET
 	Private Sub EnableScrollBars()
 		ScrollViewer.SetHorizontalScrollBarVisibility(radTreeView, ScrollBarVisibility.Auto)

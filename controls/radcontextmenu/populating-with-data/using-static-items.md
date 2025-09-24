@@ -15,7 +15,7 @@ This tutorial will walk you through the common task of populating the __RadConte
 Here is a regular __RadContextMenu__ declaration without items attached to a __TextBox__:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 
 ```XAML
 	<TextBox Width="200" VerticalAlignment="Top">
@@ -29,7 +29,7 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<TextBox Width="200" VerticalAlignment="Top"
@@ -46,7 +46,7 @@ Here is a regular __RadContextMenu__ declaration without items attached to a __T
 In order to add items you need to use the __RadContextMenu's Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadMenuItems__. For example, take a look at the following lines.
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 
 ```XAML
 	<TextBox Width="200" VerticalAlignment="Top">
@@ -63,7 +63,7 @@ In order to add items you need to use the __RadContextMenu's Items__ property. T
 ```
 {% endif %}
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">
@@ -89,7 +89,7 @@ Here is a snapshot of the current result.
 The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an icon for it. Here is an example.
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
+
 
 ```XAML
 	<TextBox Width="200" VerticalAlignment="Top">
@@ -122,7 +122,7 @@ The __RadMenuItem__ exposes an __Icon__ property, which allows you to specify an
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML
 	<TextBox Width="200" VerticalAlignment="Top" ContextMenu="{x:Null}">

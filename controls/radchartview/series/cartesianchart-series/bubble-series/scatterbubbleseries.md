@@ -16,7 +16,7 @@ The scatter bubble series is used to visualize three dimensional data. Each enti
 
 You can use the following definition to display a simple ScatterBubbleSeries:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>

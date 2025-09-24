@@ -46,7 +46,7 @@ The Mini Map control can also be used as a separate control like other map contr
 
 Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadExpander* as its wrapper and change the size of the Mini Map by respecting the size of the RadMap:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap1"
 	                MiniMapExpanderVisibility="Collapsed"
@@ -72,7 +72,7 @@ Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadE
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	private const double MiniMapWidthScaleFactor = 0.15;
 	private const double MiniMapHeightScaleFactor = 0.2;
@@ -84,7 +84,7 @@ Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadE
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Const MiniMapWidthScaleFactor As Double = 0.15
 	Private Const MiniMapHeightScaleFactor As Double = 0.2

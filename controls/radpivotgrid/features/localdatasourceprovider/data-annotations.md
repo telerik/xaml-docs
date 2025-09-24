@@ -16,7 +16,7 @@ In this article we will show you how to use Data Annotations with __RadPivotGrid
 
 Let's create a simple application that will show data for different orders. Each order has the following descriptions: Date, Product, Quantity, Net, Promotion and Advertisement. So the class that will represent one Order will look this way:        
 
-#### __C#__
+
 
 ```C#
 	public class Order
@@ -30,7 +30,7 @@ Let's create a simple application that will show data for different orders. Each
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Order
@@ -62,7 +62,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 {% if site.site_name == 'WPF' %}
 * __Display__ - this is recommended attribute type to use. You can use two properties - Name and AutoGenerateField. The value of Name will be used in __RadPivotGrid__ and __RadPivotFieldList__ instead of the PropertyName. When you set AutoGenerateField to false, the property will not show up in __RadPivotFieldList__ and you will not be able to use it in your __RadPivotGrid__. Here is a sample how to set DataAnnotation with Display attribute:              
 
-#### __C#__
+
 
 ```C#
 	//Rename the Date property to Month in the UI
@@ -74,7 +74,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 	public string Product { get; set; }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	<Display(Name:="Month")> _
@@ -87,7 +87,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 * __Browsable__ - with this attribute you can define whether an item should be visible or not. There's no difference between setting browsable value to false or AutoGenerateField of Display attribute to false.             
 
-#### __C#__
+
 
 ```C#
 	//Hide Product from the UI
@@ -95,7 +95,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 	public string Product { get; set; }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'Hide Product from the UI
@@ -105,7 +105,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 * __DisplayName__ - the value of the attribute will be shown in __RadPivotGrid__ and __RadPivotFieldList__ instead of PropertyName. There is no difference in the final result when you use DisplayName and Display attribute (setting Name property). This is an oboslete attribute and we suggest you to use Display instead of it.
 
-#### __C#__
+
 
 ```C#
 	//Rename the Date property to Month in the UI
@@ -113,7 +113,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 	public DateTime Date { get; set; }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'Rename the Date property to Month in the UI
@@ -125,7 +125,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 {% if site.site_name == 'Silverlight' %}
 * __Display__ - this is recommended attribute type to use. You can use two properties - Name and AutoGenerateField. The value of Name will be used in __RadPivotGrid__ and __RadPivotFieldList__ instead of the PropertyName. When you set AutoGenerateField to false, the property will not show up in __RadPivotFieldList__. Here is a sample how to set DataAnnotation with Display attribute:              
 
-#### __C#__
+
 
 ```C#
 	//Rename the Date property to Month in the UI
@@ -137,7 +137,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 	public string Product { get; set; }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	<Display(Name:="Month")> _
@@ -150,7 +150,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 * __Browsable__ - with this attribute you can define wheather a property will be visible or not. There's no difference between setting browsable value to false or AutoGenerateField of Display attribute to false.             
 
-#### __C#__
+
 
 ```C#
 	//Hide Product from the UI
@@ -158,7 +158,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 	public string Product { get; set; }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'Hide Product from the UI
@@ -169,7 +169,7 @@ With Data Annotations you can apply attributes to the members of the class that 
 
 So let's modify our simple Order class and see the result in __RadPivotGrid__ and __RadPivotFieldList__.        
 
-#### __C#__
+
 
 ```C#
 	public class Order
@@ -194,7 +194,7 @@ So let's modify our simple Order class and see the result in __RadPivotGrid__ an
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Order

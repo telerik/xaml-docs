@@ -93,7 +93,7 @@ In this section you will find how to create a list, customize its properties and
 
 Step 1: Define new instance of RadDocument and add Section in it:
 
-#### __C#__
+
 
 ```C#
 	RadDocument document = new RadDocument();
@@ -101,7 +101,7 @@ Step 1: Define new instance of RadDocument and add Section in it:
 	document.Sections.Add(section);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim document = New RadDocument();
@@ -112,13 +112,13 @@ Step 1: Define new instance of RadDocument and add Section in it:
 
 Step 2: Create list
 
-#### __C#__
+
 
 ```C#
 	ListStyle list = new ListStyle();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim list = new ListStyle()
@@ -128,7 +128,7 @@ Step 3: Add the list levels to the list
 
 Initially, the list doesn’t have any associated list levels. The possible list levels in a list are 9.
 
-#### __C#__
+
 
 ```C#
 	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
@@ -138,7 +138,7 @@ Initially, the list doesn’t have any associated list levels. The possible list
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	For i As Integer = 0 To 8
@@ -149,7 +149,7 @@ Initially, the list doesn’t have any associated list levels. The possible list
 
 Step 4: Customize list level. 
 
-#### __C#__
+
 
 ```C#
 	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
@@ -162,7 +162,7 @@ Step 4: Customize list level.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	For levelIndex As Integer = 0 To 8
@@ -184,13 +184,13 @@ You can insert two types of lists: Simple and Custom. Creating Custom lists,will
 
 Here is how to add simple list to the document:
 
-#### __C#__
+
 
 ```C#
 	DocumentList documentList = new DocumentList(list, document);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim documentList = New DocumentList(list, document)
@@ -198,14 +198,14 @@ Here is how to add simple list to the document:
 
 And how to add custom list:
 
-#### __C#__
+
 
 ```C#
 	ListStyle newList = document.AddCustomListStyle(list);
 	DocumentList documentList = new DocumentList(newList, document);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim newList = document.AddCustomListStyle(list)
@@ -218,7 +218,7 @@ Once the list is created it can be applied over set of paragraphs by setting the
 
 Approach 1: Apply the required paragraph properties on your own.
 
-#### __C#__
+
 
 ```C#
     for (int levelIndex = 0; levelIndex < list.Levels.Count; levelIndex++)
@@ -231,7 +231,7 @@ Approach 1: Apply the required paragraph properties on your own.
     }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	For levelIndex As Integer = 0 To (list.Levels.Count - 1)
@@ -245,7 +245,7 @@ Approach 1: Apply the required paragraph properties on your own.
 
 Approach 2: Pass the level Index and the paragraph to the DocumentList.AddParagraph method. By doing that the document list will automatically apply the required properties over the paragraph.
 
-#### __C#__
+
 
 ```C#
 	for (int levelIndex = 0; levelIndex < list.Levels.Count; levelIndex++)
@@ -257,7 +257,7 @@ Approach 2: Pass the level Index and the paragraph to the DocumentList.AddParagr
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	For levelIndex As Integer = 0 To list.Levels.Count

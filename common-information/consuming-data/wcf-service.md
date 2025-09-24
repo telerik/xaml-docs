@@ -51,7 +51,7 @@ Once the WCF service is added all needed assemblies and configuration files will
 
 Creating new instance of the service is a pretty simple process.
 
-#### __C#__
+
 
 ```C#
 	WcfService.SampleWcfServiceClient serviceClient = new WcfService.SampleWcfServiceClient();
@@ -66,7 +66,7 @@ Creating new instance of the service is a pretty simple process.
 
 In order to make a call to your service, you just need to invoke the exposed by the service method:
 
-#### __C#__
+
 
 ```C#
 	foreach( Categories c in serviceClient.LoadCategories() )

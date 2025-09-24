@@ -52,7 +52,7 @@ What is worth noting is that the sum of the column spans of all cells in a row m
 
 the correct way to create it is as follows:
 
-#### __C#__
+
 
 ```C#
 	Table table = new Table();
@@ -85,7 +85,7 @@ When a table's __LayoutMode__ is set to __TableLayoutModes.Fixed__, the table us
 Here is how you can set the PreferredWidth of the columns in __Fixed TableLayoutMode__:
         
 
-#### __C#__
+
 
 ```C#
 	cell.PreferredWidth = new TableWidthUnit(TableWidthUnitType.Fixed, width);
@@ -101,7 +101,7 @@ What should be mentioned here is that the cells in one column cannot have differ
 Customization of the __TableCells__ is possible with regard to their Padding. This is done using the __Padding__ property:
         
 
-#### __C#__
+
 
 ```C#
 	TableCell cell11 = new TableCell() { Padding = new Padding(20) };
@@ -112,7 +112,7 @@ Customization of the __TableCells__ is possible with regard to their Padding. Th
 TableCells are BlockContainers like Sections. That is why it is possible to embed both Paragraphs and new Tables in a table cell. Again, the first and last blocks in a TableCell must be Paragraphs. Here is how content can be added to a TableCell:
         
 
-#### __C#__
+
 
 ```C#
 	private void AddContentToCell(TableCell cell)
@@ -137,7 +137,7 @@ As you can see from the example above, you can add both empty Paragraphs and Par
 Paragraphs can be added to BlockContainers – Sections and TableCells. Here is how they are added to Sections:
         
 
-#### __C#__
+
 
 ```C#
 	Paragraph paragraph = new Paragraph();

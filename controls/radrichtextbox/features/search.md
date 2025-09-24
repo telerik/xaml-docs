@@ -19,7 +19,7 @@ __RadRichTextBox__ supports searching the contents of the document along with pr
 
 The simplest scenario – finding a string in the content of the document can be implemented with the following code:
 
-#### __C#__
+
 
 ```C#
 	private void SelectAllMatches(string toSearch)
@@ -36,7 +36,7 @@ The simplest scenario – finding a string in the content of the document can be
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub SelectAllMatches(ByVal toSearch As String)
@@ -55,7 +55,7 @@ Note that the __FindAll()__ method of the DocumentTextSearch class takes a strin
 
 You can use all kind of regular expressions, such as __“(asp|silverlight)\s*control(s)?”__ (which would match both “ASP Controls” and “SilverlightControl”), __[a-z]*(.)\1[a-z]*__ (which finds all words that have a doubled letter), and basically everything else you can come up with. Make sure to use correct expressions if you want to utilize this functionality, or escape the string in case you want a simple search for a word that can contain special symbols like “?”, “+”, “{“ etc. This can be automatically done by invoking the following code before proceeding with the search.
 
-#### __C#__
+
 
 ```C#
 	toSearch = Regex.Escape(toSearch);
@@ -63,7 +63,7 @@ You can use all kind of regular expressions, such as __“(asp|silverlight)\s*co
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	toSearch = Regex.Escape(toSearch)
@@ -74,7 +74,7 @@ You can use all kind of regular expressions, such as __“(asp|silverlight)\s*co
 
 Selecting the results of the search is particularly useful, as most formatting commands that are executed on __RadRichTextBox__ (or its document) are selection-based, i.e. they operate on the currently selected parts of the document. You can use that fact by invoking one of these commands after having selected the words in the document. Here is an example.
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray);  // will highlight all selected words in LightGray
@@ -84,7 +84,7 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray) \' will highlight all selected words in LightGray
@@ -96,7 +96,7 @@ Selecting the results of the search is particularly useful, as most formatting c
 
 Most of the time, you would like to remove the selection at the end of the operations, which is done by calling the __Clear()__ method of the  __DocumentSelection__ object.
 
-#### __C#__
+
 
 ```C#
 	this.radRichTextBox.Document.Selection.Clear();
@@ -104,7 +104,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radRichTextBox.Document.Selection.Clear()
@@ -114,7 +114,7 @@ Most of the time, you would like to remove the selection at the end of the opera
 
 On a side note, the find and select functionality can be extended in order to implement a replace of all occurrences matching the searched string with another string. Here is a sample code:
 
-#### __C#__
+
 
 ```C#
 	private void ReplaceAllMatches(string toSearch, string toReplaceWith)
@@ -140,7 +140,7 @@ On a side note, the find and select functionality can be extended in order to im
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)

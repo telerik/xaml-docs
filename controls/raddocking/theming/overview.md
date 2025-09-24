@@ -42,7 +42,7 @@ In the __Generic.xaml__ you should place the styles and the resources for your t
 
 The theme can be easily set to your __RadDocking__ control in the following way.
 
-#### __C#__
+
 
 ```C#
 	public StylingPaneHeader()
@@ -52,7 +52,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -61,7 +61,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	End Sub
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -74,7 +74,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	        </Grid>
 ```
 
-#### __C#__
+
 
 ```C#
 	public StylingPaneHeader1()
@@ -84,7 +84,7 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()

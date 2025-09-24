@@ -24,7 +24,7 @@ You can examine the full power of this feature in the {% if site.site_name == 'S
 
 In order to use the Path Tool or Pencil Tool in the RadDiagram, you have to set the __ActiveTool__ property. Its default value is PointerTool.
 		
-#### __C#__	
+	
 ```C#
         private void Button_Click_PathTool(object sender, RoutedEventArgs e)
 		{
@@ -37,7 +37,7 @@ In order to use the Path Tool or Pencil Tool in the RadDiagram, you have to set 
 		}
 ```
 
-#### __VB.NET__	
+	
 ```VB.NET
        Private Sub Button_Click_PathTool(sender As Object, e As RoutedEventArgs)
 	      Me.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PathTool
@@ -54,12 +54,12 @@ When the __Path Tool__ is active you click on the RadDiagram and this way you cr
 
 You are able to set the __Fill__, __Stroke__, __StrokeThickness__ of the shapes you draw via the following attached properties:
 
-#### __XAML__
+
 ```XAML
 	xmlns:primitives="clr-namespace:Telerik.Windows.Controls.Diagrams.Primitives;assembly=Telerik.Windows.Controls.Diagrams"
 ```
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram x:Name="diagram" primitives:DrawingAdorner.Fill="Blue"
 	   								     primitives:DrawingAdorner.Stroke="Orange"
@@ -70,14 +70,14 @@ When you use __Path Tool__ you can choose the way the polylines are intersected 
 
 FillRule takes one of the following values: __EvenOdd__ or __NonZero__. For more information about the FillRule you can visit [this MSDN article](http://msdn.microsoft.com/en-us/library/system.windows.media.pathgeometry.fillrule.aspx).		
 
-#### __XAML__
+
 ```XAML
 	primitives:DrawingAdorner.FillRule="EvenOdd"
 ```	
 
 The IsShapeFilled and IsShapeClosed properties determine whether the shapes will have Fill and whether the first and last editing points of the shape you draw will be automatically linked.		
 
-#### __XAML__
+
 ```XAML
 	primitives:DrawingAdorner.IsShapeClosed="False"
 	primitives:DrawingAdorner.IsShapeFilled="False"		

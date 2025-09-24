@@ -16,7 +16,7 @@ position: 5
 
 When the __IsMoveToPointEnabled__ property is set to __true__ and you click somewhere on the track, the thumb will move directly to the point of click, ignoring the __LargeChange__ property.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Maximum="10" IsMoveToPointEnabled="True"/>
@@ -24,7 +24,7 @@ When the __IsMoveToPointEnabled__ property is set to __true__ and you click some
 
 ![{{ site.framework_name }} RadSlider Move To Point Enabled](images/moveToPoint.png)
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider IsMoveToPointEnabled="True" 

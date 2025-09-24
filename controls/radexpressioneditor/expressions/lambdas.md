@@ -20,7 +20,7 @@ The __Result preview__ displays the result of the expression.
 
 Furthermore, you may also define __nested Lambdas__. For example the __LINQ expression__:
 
-#### __C#__
+
 
 ```C#
 
@@ -30,7 +30,7 @@ Furthermore, you may also define __nested Lambdas__. For example the __LINQ expr
 
 is equivalent to:
 
-#### __XAML__
+
 
 ```XAML
 

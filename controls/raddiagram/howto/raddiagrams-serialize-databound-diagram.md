@@ -20,7 +20,7 @@ This article shows how to serialize and deserialize the __RadDiagram__ in MVVM s
 
 When you need to serialize / deserialize a data-bound __RadDiagram__, you have to use a __GraphSource__ which implements the __ISerializableGraphSource__ interface from the __Telerik.Windows.Diagrams.Core__ namespace.		
 
-#### __C#__
+
 
 ```C#
 	public interface ISerializableGraphSource : IObservableGraphSource
@@ -37,7 +37,7 @@ When you need to serialize / deserialize a data-bound __RadDiagram__, you have t
 
 Similarly, the [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%}) class extends the __ObservableGraphSourceBase__.
 
-#### __C#__
+
 
 ```C#
 	namespace Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
@@ -58,7 +58,7 @@ The following section will show you how to save and load properties from your Vi
 
 Let's first create a proper ViewModels. Do not forget to create parameterless constructors and unique ID properties:
 
-#### __C#__
+
 
 ```C#
 	public class OrgItem : HierarchicalNodeViewModel
@@ -104,7 +104,7 @@ Let's first create a proper ViewModels. Do not forget to create parameterless co
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class OrgItem
@@ -163,7 +163,7 @@ Let's first create a proper ViewModels. Do not forget to create parameterless co
 
 Then our GraphSource should look like this:		
 
-#### __C#__
+
 
 ```C#
 	public class GraphSource : SerializableGraphSourceBase<OrgItem, OrgLink>
@@ -191,7 +191,7 @@ Then our GraphSource should look like this:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class GraphSource
@@ -220,7 +220,7 @@ Then our GraphSource should look like this:
 
 Now let's create a __RadDiagram__ and bind it to our __GraphSource__:		
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -280,7 +280,7 @@ Now let's create a __RadDiagram__ and bind it to our __GraphSource__:
 
 In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter to make sure each Node has a unique ID:		
 
-#### __C#__
+
 
 ```C#
 	public MainWindow()
@@ -307,7 +307,7 @@ In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter t
 	}	
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -350,7 +350,7 @@ In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter t
 
 Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 
-#### __C#__
+
 
 ```C#
 	private string diagramXMLString;
@@ -373,7 +373,7 @@ Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private diagramXMLString As String

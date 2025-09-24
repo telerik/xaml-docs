@@ -18,7 +18,7 @@ The final result should look like this
 
 For the purpose of this article we will use the __AdditionalContent__ property of the __RadColorPicker__ control to add a customized button at the bottom of the drop down content. This can be implemented by the following code:		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadColorPicker x:Name="xColorPicker" IsRecentColorsActive="True">
 		<telerik:RadColorPicker.AdditionalContent>
@@ -39,7 +39,7 @@ For the purpose of this article we will use the __AdditionalContent__ property o
 
 In the button's Click event handler we display a __RadExpander__ control which hosts a __RadColorEditor__. This layout will be used to customize colors:		
 
-#### __XAML__
+
 ```XAML
 	<StackPanel>
 			<telerik:RadColorPicker x:Name="xColorPicker" IsRecentColorsActive="True">
@@ -74,7 +74,7 @@ In the button's Click event handler we display a __RadExpander__ control which h
 		</StackPanel>
 ```
 
-#### __C#__
+
 ```C#	
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
@@ -84,7 +84,7 @@ In the button's Click event handler we display a __RadExpander__ control which h
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
         Me.xColorPicker.IsDropDownOpen = False
@@ -95,7 +95,7 @@ In the button's Click event handler we display a __RadExpander__ control which h
 
 Finally in the confirmation's button Click event handler we implement the selection logic of the customized color.	
 
-#### __C#__
+
 ```C#
 	private void OK_RadButton_Click(object sender, RoutedEventArgs e)
 	{
@@ -106,7 +106,7 @@ Finally in the confirmation's button Click event handler we implement the select
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Private Sub OK_RadButton_Click(sender As Object, e As RoutedEventArgs)
         Me.xColorPicker.SelectedColor = Me.xColorEditor.SelectedColor

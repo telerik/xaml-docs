@@ -16,7 +16,7 @@ The __RadColorEditor__ control enables you to keep track of the previously selec
 
 * __ColorHistory__: This property exposes a collection of all previously selected colors.						
 
-	#### __XAML__
+	
 	```XAML
 		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 			<StackPanel.Resources>

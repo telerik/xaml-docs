@@ -51,7 +51,7 @@ Ribbon gallery can be always rendered in two ways - inside a [RadRibbonDropDownB
 
 When you want to declare a __Ribbon Gallery__ as popup inside a [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%})/[RadRibbonSplitButton]({%slug radribbonview-split-button%}), you should use the __RadGallery__ class. The next example demonstrates how to do that.			
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -91,7 +91,7 @@ When you press the popup launch button, the gallery is shown.
 
 When you want to declare a __Ribbon Gallery__ directly into a [Ribbon Group]({%slug radribbonview-ribbon-group%}), you should use the __RadRibbonGallery__ class. Consider again the previous example, add an additional __RadRibbonGroup__ and declare a __RadRibbonGallery__ like in the example below.			
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -170,7 +170,7 @@ The __RadGallery__ allows you to place in the popup additional menu options rega
 
 The next code snippet demonstrates how to add additional menu items.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -215,7 +215,7 @@ You could also associate additional menu options with the __RadRibbonGallery__ p
 
 In the next example several __RadMenuItem__ objects are added to the __RadRibbonGallery__'s __PopupMenuItems__ collection.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
@@ -260,7 +260,7 @@ You can visually group the __RadRibbonGallery__ items when the gallery is in ope
 
 However, in order to properly display header items in the __RadRibbonGallery__, you need to change its default __ItemsPanel__ to a __RibbonGalleryPanel__:		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonGallery>
 	    <telerik:RadRibbonGallery.ItemsPanel>
@@ -291,7 +291,7 @@ However, in order to properly display header items in the __RadRibbonGallery__, 
 
 The __RadRibbonGallery__ class allows you to set the visibility of the launch popup button. The next example shows you how to set the __RadRibbonGallery__'s __PopupLaunchButtonVisibility__ property to __Visibility.Collapsed__.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56" PopupLaunchButtonVisibility="Collapsed">
 	 ...
@@ -334,7 +334,7 @@ The __DeactivatePreview__ event is raised when the mouse cursor leaves the galle
 
 >tip Since the __RadRibbonGallery__ inherits the __RadGallery__ class, you can handle the __ActivatePreview__ and __DeactivatePreview__ events in the __RadRibbonGallery__ control as well.		  
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonGallery Title="Quick Styles" x:Name="QuickStyles" ItemWidth="72" ItemHeight="56" 
 	                          ActivatePreview="QuickStyles_ActivatePreview" 
@@ -343,7 +343,7 @@ The __DeactivatePreview__ event is raised when the mouse cursor leaves the galle
 	</telerik:RadRibbonGallery>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void QuickStyles_ActivatePreview(object sender, Telerik.Windows.RadRoutedEventArgs e)
@@ -362,7 +362,7 @@ The __DeactivatePreview__ event is raised when the mouse cursor leaves the galle
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub QuickStyles_ActivatePreview(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)

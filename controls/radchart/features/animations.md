@@ -48,7 +48,7 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 
 * To make the second bar series show its item one after the other, but the total series to be shown again for 3 seconds.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -111,7 +111,7 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 
 
 
-#### __C#__
+
 
 ```C#
 	RadChart radChart= new RadChart();
@@ -154,7 +154,7 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	radChart.DefaultView.ChartArea.DataSeries.Add( barSeries );
 ```
     
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
@@ -203,7 +203,7 @@ __AnimationSettings__ are a simple and easy way to control your animations. Howe
 
 To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __ChartArea.EnableStripLinesAnimation__ properties to __False:__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -222,7 +222,7 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 
 
 
-#### __C#__
+
 
 ```C#
 	//....
@@ -233,7 +233,7 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radChart.DefaultView.ChartArea.EnableAnimations = False

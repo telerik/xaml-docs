@@ -18,7 +18,7 @@ The purpose of the following tutorial is to show how to disable certain dates in
 
 * Add a property for the blackout dates in your view model:
 
-#### __C#__
+
 
 ```C#
 	public ObservableCollection<DateTime> BlackoutDates { get; set; }
@@ -26,7 +26,7 @@ The purpose of the following tutorial is to show how to disable certain dates in
 
 * Populate the property with some sample data:
 
-#### __C#__
+
 
 ```C#
 	public MyViewModel()
@@ -53,7 +53,7 @@ The purpose of the following tutorial is to show how to disable certain dates in
 
 * Bind the collection to the BlackoutDates property of the Calendar control:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadCalendar BlackoutDates="{Binding BlackoutDates}"/>

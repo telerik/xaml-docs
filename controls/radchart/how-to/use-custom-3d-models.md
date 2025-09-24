@@ -29,7 +29,7 @@ Here is a sample xaml export obtained by processing a custom 3D star model (prod
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_How_To_Use_Custom_3D_Models_01.png)
 
-#### __XAML__
+
 
 ```XAML
 	<Viewport3D>
@@ -155,7 +155,7 @@ __RadChart__ uses innovative approach to incorporate custom 3D controls and item
 
 >Note that by setting the __ItemStyle__ property, you are overriding the default appearance for all 3D controls within the series and they will not use the default style applied otherwise to __3D Bar__ controls.
 
-#### __C#__
+
 
 ```C#
 	private void FillSampleChartData()
@@ -169,7 +169,7 @@ __RadChart__ uses innovative approach to incorporate custom 3D controls and item
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub FillSampleChartData()
@@ -186,7 +186,7 @@ Now you have to create the actual style resource labeled "__MyStyle__" and in or
 
 In effect the control template for the __Bar3D__ class is customized. Note that when customizing the template for a 3D control there are some required elements / element names that should be present or otherwise the control will not work correctly:
 
-#### __XAML__
+
 
 ```XAML
 	<ControlTemplate TargetType="{x:Type telerik:BarControl3D}">
@@ -209,7 +209,7 @@ In effect the control template for the __Bar3D__ class is customized. Note that 
 
 Here is the actual template that follows this pattern:
 
-#### __XAML__
+
 
 ```XAML
 	       
@@ -324,7 +324,7 @@ Here is the actual template that follows this pattern:
 
 >Note that in order to display the stars with correct height (like the default __3D Bars__), a __ScaleTransform3D__ has been applied that binds the __ScaleY__ property like this:
 
-#### __XAML__
+
 
 ```XAML
 	ScaleY="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type telerik:Bar3D}}, Path=Height}"

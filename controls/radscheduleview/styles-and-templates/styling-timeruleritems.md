@@ -88,7 +88,7 @@ Generate the RadScheduleView template from Expression Blend by right clicking th
 
 After choosing one of the two approaches the end result should include the following:
 
-#### __XAML__
+
 
 ```XAML
 	<!-- Brushes -->
@@ -159,7 +159,7 @@ After choosing one of the two approaches the end result should include the follo
 
 Note the use of the __local__ namespace from the raw source:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
@@ -167,7 +167,7 @@ Note the use of the __local__ namespace from the raw source:
 
 The selector is applied to our instance of RadScheduleView:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView TimeRulerItemStyleSelector="{StaticResource TimeRulerItemStyleSelector}" AppointmentsSource="{Binding Appointments}" />
@@ -175,7 +175,7 @@ The selector is applied to our instance of RadScheduleView:
 
 Now that all TimeRulerItem styles are in place, we can apply any desired customizations and watch the TimeRulerItems change. Let’s modify the __TimeRulerGroupItemStyle__, for example – make the item bold and with a different font color:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="TimeRulerGroupItemStyle" TargetType="telerik:TimeRulerGroupItem">
@@ -219,7 +219,7 @@ Because both lines share one and the same __TimeRulerLineStyle__, in order to st
 
 To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerItemStyleSelector__ and override the __SelectStyle__ method. Also, prepare two properties of type Style that will hold the new styles:
 
-#### __C#__
+
 
 ```C#
 	public class CustomTimeRulerItemStyleSelector : OrientedTimeRulerItemStyleSelector
@@ -244,7 +244,7 @@ To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerIt
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class CustomTimeRulerItemStyleSelector
@@ -292,7 +292,7 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 
 ```XAML
 	<local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>
@@ -335,7 +335,7 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 
 ```XAML	
 	<local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>

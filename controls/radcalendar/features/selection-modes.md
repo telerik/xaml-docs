@@ -14,7 +14,7 @@ The Calendar supports three selection modes: __Single, Multiple and Extended__, 
 
 The following snippet creates a Calendar with Extended selection mode:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadCalendar SelectionMode="Extended" />

@@ -22,7 +22,7 @@ There are three interfaces in the extensible object pattern: [IExtensibleObject]
 
 The __IExtensibleObject__ interface is implemented by types that allow __IExtension__ objects to customize their functionality. __Extensible__ objects allow dynamic aggregation of IExtension objects. __IExtension__ objects are characterized by the following interface:
 
-#### __C#__
+
 
 ```C#
 	public interface IExtension<T>
@@ -35,7 +35,7 @@ The __IExtensibleObject__ interface is implemented by types that allow __IExtens
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Interface IExtension(Of T As IExtensibleObject(Of T))
@@ -60,7 +60,7 @@ In order to plug your custom tool into the extensibility infrastructure supporte
 
 In order to utilize the already defined custom tool you need to add it to the __Extensions__ collection property of the respective __ChartArea__ which functionality you would like to extend. Here is a sample code snippet that demonstrates adding / removing the __CameraExtension__ on __UserControl.Loaded__ / __Unloaded__ events:
 
-#### __C#__
+
 
 ```C#
 	private void UserControl_Loaded(object sender, RoutedEventArgs e)
@@ -76,7 +76,7 @@ In order to utilize the already defined custom tool you need to add it to the __
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub UserControl_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)

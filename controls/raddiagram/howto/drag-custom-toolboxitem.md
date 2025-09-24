@@ -16,7 +16,7 @@ This tutorial describes how to implement a drag/drop operation between a custom 
 
 For the purpose of this tutorial we will create e sample __Grid__ with two columns - the first one holding a __RadDiagramToolbox__ and the second one - a __RadDiagram__.                
 
-#### __XAML__
+
 
 ```XAML
 	  <Grid>
@@ -58,7 +58,7 @@ However, please note that the dragged shapes don't keep their original __Geometr
 
 For that purpose, we need to first attach an event handler for the default __SerializationService ItemSerializing__ event. The default __SerializationService__ is the one internally handling the serialization of the dragged toolbox shapes and once you attach a handler for the __ItemSerializing__ event, you will be able to plug into that serialization and serialize more properties of the __RadDiagram(Container)Shapes__.
 
-#### __C#__
+
 
 ```C#
 	public ToolboxDragDropExample()
@@ -76,7 +76,7 @@ For that purpose, we need to first attach an event handler for the default __Ser
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -93,13 +93,13 @@ For that purpose, we need to first attach an event handler for the default __Ser
 
 Next we need to deserialize the __Geometry__ property after the end of the drop operation. As the __RadDiagram__ receives a __DiagramDropInfo__ object, it knows that there is a serialization information that has to be processed. This is why a drop operation originating from a __RadDiagramToolbox__ fires the __RadDiagram ShapeDeserialized__ event. And you can attach a handler for it in the __RadDiagram__ definition and deserialize any set of custom properties that you have manually serialized.
 
-#### __XAML__
+
 
 ```XAML
 	 <telerik:RadDiagram Grid.Column="1" ShapeDeserialized="RadDiagram_ShapeDeserialized"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void RadDiagram_ShapeDeserialized(object sender, ShapeSerializationRoutedEventArgs e)
@@ -111,7 +111,7 @@ Next we need to deserialize the __Geometry__ property after the end of the drop 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadDiagram_ShapeDeserialized(sender As Object, e As ShapeSerializationRoutedEventArgs)
@@ -125,7 +125,7 @@ Next we need to deserialize the __Geometry__ property after the end of the drop 
 
 Now that we have configured the __Geometry__ property serialization, we can go ahead and serialize more properties of the dragged shapes. For instance, in this example, the __RadDiagramToolbox__ is populated with __MyShape__ business items. The __Header__ of these items is displayed underneath each shape in the toolbox and we can serialize it to use it as a __Content__ of the dropped shape on the diagramming surface.                
 
-#### __C#__
+
 
 ```C#
 	void Default_ItemSerializing(object sender, SerializationEventArgs<IDiagramItem> e)
@@ -148,7 +148,7 @@ Now that we have configured the __Geometry__ property serialization, we can go a
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Default_ItemSerializing(sender As Object, e As SerializationEventArgs(Of IDiagramItem))

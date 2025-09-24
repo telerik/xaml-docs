@@ -18,7 +18,7 @@ By default the __DragReorder__ feature is disabled. In order to enable it you wi
 
 The next code snippet shows how to enable the DragReorder feature:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking AllowDragReorder="True">

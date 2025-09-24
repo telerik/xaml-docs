@@ -30,7 +30,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
 First of all, let's set a __ResourceTypesSource__:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>
@@ -43,7 +43,7 @@ First of all, let's set a __ResourceTypesSource__:
 
 After this, we need to create a __ResourceTypeCollection__, where we can assign the __ResourceType__:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>
@@ -60,7 +60,7 @@ After this, we need to create a __ResourceTypeCollection__, where we can assign 
 
 After we have created a __ResourceTypeCollection__, we can add our __ResourceType__. Here is an example of creating __ResourceType__ with name "Location":
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>
@@ -79,7 +79,7 @@ After we have created a __ResourceTypeCollection__, we can add our __ResourceTyp
 
 Once we've created the __ResourceType__, we should create and assign __Resources__ to this group (__ResourceType__):
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>
@@ -106,7 +106,7 @@ Once we've created the __ResourceType__, we should create and assign __Resources
 
 Now if you want to group the appointments by Location, you can use __GroupDescriptionsSource__ property:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>
@@ -125,7 +125,7 @@ The code above will group RadScheduleView by resource type named Location. Day v
 
 If you want to change the group order you could use the following syntax:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>
@@ -147,7 +147,7 @@ The result will be the following (note the changed group order):
 
 The whole example above can be also set up in the code behind:
 
-#### __C#__
+
 
 ```C#
 	ResourceType locationResource = new ResourceType("Location");

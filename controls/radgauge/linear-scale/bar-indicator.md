@@ -12,7 +12,7 @@ position: 3
 
 The Bar indicator is a colored bar that is drawn around scale bar. One of ends of this bar points to the scale value. To add bar indicator to the scale you have to include LinearBar element to the list of the scale indicators:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge Width="100" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="100">
@@ -57,7 +57,7 @@ This can be achieved by having several gauge ranges in the linear scale - every 
 
 There are several modes which can be used to colorize the bar indicator. Here is the default one:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge Width="100" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale IsInteractive="True"
@@ -91,7 +91,7 @@ There are several modes which can be used to colorize the bar indicator. Here is
 
 If you'd like to have a bar indicator with background that has all range colors, then you should set the __RangeColorMode__ property to "ProportionalBrush":
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge Width="100" Height="250" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale IsInteractive="True"
@@ -129,7 +129,7 @@ Here are the Default and the ProportionalBrush modes:
 
 If you need smooth gradients between the colors then use the __GradientBrush__ mode and set the __RangeColorSmoothing__ property:
 
-#### __XAML__
+
 ```XAML
 	<telerik:VerticalLinearScale.Indicators>
 	    <telerik:BarIndicator UseRangeColor="True" 

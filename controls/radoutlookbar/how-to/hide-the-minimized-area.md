@@ -14,7 +14,7 @@ To hide the minimize area you can use the __MinimizedAreaVisibility__ property a
 
 ![{{ site.framework_name }} RadOutlookBar Hide the Minimized Area](images/outlook_minimizedareavisibility.png)
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadOutlookBar x:Name="RadOutlookBar1" MinimizedAreaVisibility="Collapsed">
 	    <telerik:RadOutlookBarItem Header="Item 1">

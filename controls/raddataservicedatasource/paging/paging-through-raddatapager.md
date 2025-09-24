@@ -12,7 +12,7 @@ position: 0
 
 If you bind __RadDataPager.Source__ to __RadDataServiceDataSource.DataView__, you will get automatic server-side paging. The two controls will automatically communicate with each other thanks to the __IPagedCollectionView__ interface which both respect:
 
-#### __XAML__
+
 
 ```XAML
 

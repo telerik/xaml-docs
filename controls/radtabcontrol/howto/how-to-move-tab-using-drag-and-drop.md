@@ -12,7 +12,7 @@ position: 0
 
 Set the __RadTabControl__'s property __AllowDragReorder__ to __True__ or __False__ to allow/disallow the user to reorder the tab items of your tab control using __Drag & Drop__.
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadTabControl x:Name="radTabControl" AllowDragReorder="True">
 	    <telerik:RadTabItem Header="Calendar"/>
@@ -24,7 +24,7 @@ Set the __RadTabControl__'s property __AllowDragReorder__ to __True__ or __False
 
 The same behavior can be enabled/disabled in the code-behind.
 
-#### __C#__  
+  
 ```C#
 	private void EnableReordering()
 	{
@@ -32,7 +32,7 @@ The same behavior can be enabled/disabled in the code-behind.
 	}
 ```
 
-#### __VB.NET__  
+  
 ```VB.NET
     Private Sub EnableReordering()
         radTabControl.AllowDragReorder = True

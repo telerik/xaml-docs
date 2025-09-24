@@ -18,7 +18,7 @@ __RadDiagram__ gives you the ability to control the __Z-Order__ of shapes and co
 
 Consider the following code:
 		
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram x:Name="diagram" Grid.Row="1">
 		<telerik:RadDiagramShape x:Name="shape1" 
@@ -67,7 +67,7 @@ We have reversed the natural ZOrder of the 3 Shapes. On the other hand, the conn
 
 __RadDiagram__ provides a set of predefined commands for manipulating the selected items' ZIndices. __"BringForward"__ and __"SendBackward"__ allow you to increase/decrease the Z-Indices of the selected RadDiagramItems. If you need to bring the selected item(s) on top of all other items or below them, you can use __"BringToFront"__ and __"SentToback"__:
 		
-#### __XAML__
+
 ```XAML
 	<Grid>
 		<Grid.RowDefinitions>

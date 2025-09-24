@@ -51,7 +51,7 @@ As most features of the editor, the image editing capabilities can be easily dis
 To remove the image adorner from your application you can create a new __UILayersBuilder__ as shown [here]({%slug radrichtextbox-features-custom-ui-layers%}) and remove the __AdornerLayer__.
         
 
-#### __C#__
+
 
 ```C#
     public class CustomLayersBuilder : UILayersBuilder
@@ -68,7 +68,7 @@ To remove the image adorner from your application you can create a new __UILayer
 Alternatively, you can disable the capabilities of the image adorner by accessing it though RadRichTextBox's  __ImageSelectionAdornerSettings__ property. This allows you to set the bolean properties __CanDrag__, __CanResize__ and __CanRotate__ which disable/enable respectively dragging of the image, resizing it or rotating it.
         
 
-#### __C#__
+
 
 ```C#
     this.radRichTextBox.ImageSelectionAdornerSettings.CanDrag = false;
@@ -81,7 +81,7 @@ Alternatively, you can disable the capabilities of the image adorner by accessin
 In order to prevent the __ImageMiniToolBar__ from showing you should set the __IsImageMiniToolbarEnabled__ property to false either in XAML or in code-behind.
         
 
-#### __XAML__
+
 
 ```XAML
     <telerik:RadRichTextBox Name="radRichTextBox" IsImageMiniToolBarEnabled="False" />
@@ -89,7 +89,7 @@ In order to prevent the __ImageMiniToolBar__ from showing you should set the __I
 
 
 
-#### __C#__
+
 
 ```C#
     this.radRichTextBox.IsImageMiniToolBarEnabled = false;
@@ -100,7 +100,7 @@ In order to prevent the __ImageMiniToolBar__ from showing you should set the __I
 As for removing the image editing option from the context menu, you can do that by creating a custom menu builder, which derives from __ContextMenuContentBuilder__ and override the __CreateImageCommands()__ method.
         
 
-#### __C#__
+
 
 ```C#
     public class CustomMenuBuilder : ContextMenuContentBuilder
@@ -158,7 +158,7 @@ As for removing the image editing option from the context menu, you can do that 
 What is left to do is assign an instance of your class to the __ContentBuilder__ property of the context menu:
         
 
-#### __C#__
+
 
 ```C#
     Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;

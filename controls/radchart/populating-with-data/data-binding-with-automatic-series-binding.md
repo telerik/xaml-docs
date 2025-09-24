@@ -28,7 +28,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Autom
 
 Take a look at this simple array declaration:
 
-#### __C#__
+
 
 ```C#
 	int[] dataArray = new int[] { 12, 56, 23, 89, 12, 56, 34, 78, 32, 56 };
@@ -36,7 +36,7 @@ Take a look at this simple array declaration:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dataArray As Integer() = New Integer() {12, 56, 23, 89, 12, 56, 34, 78, 32, 56}
@@ -48,7 +48,7 @@ If you set it to the __ItemsSource__ property of the __RadChart__ control, you w
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_01.png)
 
-#### __C#__
+
 
 ```C#
 	radChart.ItemsSource = dataArray;
@@ -56,7 +56,7 @@ If you set it to the __ItemsSource__ property of the __RadChart__ control, you w
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radChart.ItemsSource = dataArray
@@ -68,7 +68,7 @@ If you set it to the __ItemsSource__ property of the __RadChart__ control, you w
 
 If you have a list of business objects and you set it to the __ItemsSource__ property of the __RadChart__ control, the result will be one chart series per numeric property:
 
-#### __C#__
+
 
 ```C#
 	List<Manufacturer> data = new List<Manufacturer>();
@@ -86,7 +86,7 @@ If you have a list of business objects and you set it to the __ItemsSource__ pro
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim data As New List(Of Manufacturer)()
@@ -106,7 +106,7 @@ If you have a list of business objects and you set it to the __ItemsSource__ pro
 
 Where the structure of the __Manufacturer__ class is:
 
-#### __C#__
+
 
 ```C#
 	public class Manufacturer
@@ -137,7 +137,7 @@ Where the structure of the __Manufacturer__ class is:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Manufacturer

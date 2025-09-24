@@ -16,7 +16,7 @@ The example in this topic will show you a __RadGridView__ bound to a list of __E
 
 Here is the XAML for the example. In it you can see a __RadGridView__ and a __RadDataFilter__.
 
-#### __XAML__
+
 
 ```XAML
 
@@ -47,7 +47,7 @@ Here is the code-behind for the example. In it you should take notice at the ins
 
 >At the end of the topic you can find the code for the __Employee__ class, used in the example.
 
-#### __C#__
+
 
 ```C#
 
@@ -77,7 +77,7 @@ Here is the code-behind for the example. In it you should take notice at the ins
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -103,7 +103,7 @@ Here is the code-behind for the example. In it you should take notice at the ins
 
 Here is also the code for the __Employee__ class, used in the example.
 
-#### __C#__
+
 
 ```C#
 
@@ -135,7 +135,7 @@ Here is also the code for the __Employee__ class, used in the example.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 

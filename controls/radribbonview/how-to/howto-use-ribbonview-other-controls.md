@@ -14,7 +14,7 @@ position: 10
 
 The purpose of this tutorial is to show you how to integrate a __RadCalendar__ with a __RadRibbonView__. The solution is to set the __RadCalendar__ as a drop down content of a __RadRibbonSplitButton__. The next example demonstrates how to do that.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">
@@ -38,7 +38,7 @@ Here is the result:
 
 Except the controls associated with the __RadRibbonView__, like RadRibbonButton, RadRibbonGallery, RadRibbonComboBox, you can place other controls in the __RadRibbonGroups__. Here is an example of adding a __RadDatePicker__ control inside a __RadRibbonGroup__.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">
@@ -57,7 +57,7 @@ The result is the following:
 
 The next example demonstrates how to integrate a __RadColorPicker__ directly into a __Ribbon Group__.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">
@@ -75,7 +75,7 @@ And the result is:
 
 Integrating a __RadColorSelector__ with a __RadRibbonDropDownButton__ is a simple task. See the next code-snippet.		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView Name="xRibbonView">
 		<telerik:RadRibbonTab Header="Home">

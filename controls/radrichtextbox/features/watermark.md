@@ -37,7 +37,7 @@ There are two types of watermarks - text and image. Both of them are shown behin
 
 There is also a set of predefined textual watermarks - the most commonly used ones like ASAP, Urgent, Confidential, etc., that can be easily set in the following way:
 
-#### __C#__
+
 
 ```C#
 	this.editor.SetWatermark(Telerik.Windows.Documents.Model.PredefinedWatermarkType.Confidential);
@@ -49,7 +49,7 @@ You can create custom watermarks using the __WatermarkTextSettings__ and __Water
 
 The following example demonstrates how to crate a text watermark and apply it to the document in the editor:
 
-#### __C#__
+
 
 ```C#
 	WatermarkTextSettings textSettings = new WatermarkTextSettings();
@@ -65,7 +65,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 
 And this is how you create an image watermark and apply it:
 
-#### __C#__
+
 
 ```C#
 	WatermarkImageSettings imageSettings = new WatermarkImageSettings();

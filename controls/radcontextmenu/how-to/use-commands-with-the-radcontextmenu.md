@@ -30,7 +30,7 @@ As the __RadMenuItem__ implements the __ICommandSource__ interface, you are able
 Before getting to the commands, you have to prepare the UI on which they will get executed. In this tutorial a __ListBox__ and a __RadContextMenu__ are used.
         
 
-#### __XAML__
+
 
 ```XAML
 	<ListBox x:Name="listBox">
@@ -47,7 +47,7 @@ Having the UI prepared, you have to add some data to it.
 
 As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for your __UserControl__, which will control its behavior. In it you will store the data which the __View__ is using. Here is the declaration of the ViewModel class. It has a constructor, a method that initializes the items for the __ListBox__ and an __Items__ property, that stores them. Additionally create a __SelectedItem__ property that will hold the selected item of the __ListBox__.        
 
-#### __C#__
+
 
 ```C#
 	public class ExampleViewModel : INotifyPropertyChanged
@@ -96,7 +96,7 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ExampleViewModel
@@ -142,7 +142,7 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 
 In the constructor of the __UserControl__ you have to create an instance of the __ViewModel__, store it in a field and pass it as a __DataContext__ of the entire __UserControl__.        
 
-#### __C#__
+
 
 ```C#
 	private ExampleViewModel viewModel;
@@ -154,7 +154,7 @@ In the constructor of the __UserControl__ you have to create an instance of the 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private viewModel As ExampleViewModel
@@ -167,7 +167,7 @@ In the constructor of the __UserControl__ you have to create an instance of the 
 
 In the XAML you have to set the __SelectedItem__, the __DisplayMemberPath__ and the __ItemsSource__ properties of the __ListBox__ in order to visualize the data.        
 
-#### __XAML__
+
 
 ```XAML
 	<ListBox x:Name="listBox1"
@@ -185,7 +185,7 @@ In the XAML you have to set the __SelectedItem__, the __DisplayMemberPath__ and 
 
 Before continuing, there is one more thing to be done. When right-clicking to open the __RadContextMenu__, the clicked item should get selected, or if no item was clicked, the selection should be removed. This is done by handling the __Opened__ event of the __RadContextMenu__.        
 
-#### __XAML__
+
 
 ```XAML
 	<ListBox x:Name="listBox2"
@@ -201,7 +201,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 ```
 
 
-#### __C#__
+
 
 ```C#
 	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
@@ -218,7 +218,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
@@ -235,7 +235,7 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 
 The next step is to create your commands. They will be host by the __ViewModel__.        
 
-#### __C#__
+
 
 ```C#
 	public RoutedUICommand MoveUpCommand
@@ -250,7 +250,7 @@ The next step is to create your commands. They will be host by the __ViewModel__
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Property MoveUpCommand() As RoutedUICommand
@@ -269,7 +269,7 @@ The next step is to create your commands. They will be host by the __ViewModel__
 
 Initialize them in the constructor of the __ViewModel__:        
 
-#### __C#__
+
 
 ```C#
 	public ExampleViewModel()
@@ -280,7 +280,7 @@ Initialize them in the constructor of the __ViewModel__:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -293,7 +293,7 @@ Initialize them in the constructor of the __ViewModel__:
 Bind them in the __View__.
         
 
-#### __XAML__
+
 
 ```XAML
 	<ListBox x:Name="listBox3"
@@ -314,7 +314,7 @@ Bind them in the __View__.
 
 You will also need methods that will get called when the command is executed. In the next section is explained how to connect the methods to the command. Here are sample methods for the two commands.
 
-#### __C#__
+
 
 ```C#
 	public void MoveUp(object sender, ExecutedRoutedEventArgs e)
@@ -343,7 +343,7 @@ You will also need methods that will get called when the command is executed. In
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub MoveUp(sender As Object, e As ExecutedRoutedEventArgs)
@@ -373,7 +373,7 @@ You will also need methods that will get called when the command is executed. In
 In order to use the commands in the UI you have to provide a __CommandBinding__ for each of the commands. The __CommandBinding__ binds the command to a method that is called when the command gets executed. The __CommandBidnings__ get set via the __CommandManager__. As the __CommandManager__ is called by the __View__ you have to expose a method in your __ViewModel__ that returns a collection of its __CommandBindings__.
         
 
-#### __C#__
+
 
 ```C#
 	public CommandBindingCollection GetCommandBindings()
@@ -385,7 +385,7 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Function GetCommandBindings() As CommandBindingCollection
@@ -401,7 +401,7 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 In the __View__ get the __CommandBindingsCollection__ and set it through the __CommandManager__.
 
 {% if site.site_name == 'Silverlight' %}
-#### __C#__
+
 
 ```C#
 	public Default_Cs()
@@ -413,7 +413,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -426,7 +426,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __C#__
+
 
 ```C#
 	public Default_Cs()
@@ -443,7 +443,7 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()

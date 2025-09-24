@@ -16,7 +16,7 @@ When you are setting the theme to your derived control using StyleManager, you h
 
 Lets say you have a custom control that inherits from **ScrollViewer**. The snippet below demonstrates how to set any Telerik theme to it:
 
-#### __C#__
+
 
 ```C#
     public class ExtendedScrollViewer : ScrollViewer

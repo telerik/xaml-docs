@@ -30,7 +30,7 @@ The appropriate API, however, should be available in cases when you want to modi
 When a __RadDocument__ instance was for some reason created from code – built using the elements hierarchy or imported, it can be passed to a __RadDocumentEditor__ like this:
         
 
-#### __C#__
+
 
 ```C#
 	RadDocumentEditor documentEditor = new RadDocumentEditor(document);
@@ -38,7 +38,7 @@ When a __RadDocument__ instance was for some reason created from code – built 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim documentEditor As New RadDocumentEditor(document)
@@ -49,7 +49,7 @@ When a __RadDocument__ instance was for some reason created from code – built 
 The newly created *documentEditor* instance now provides all capabilities that a __RadRichTextBox__ provides. Moreover, you can group several methods so that they are added to the Undo/Redo stack as a single item. This can be achieved like this:
         
 
-#### __C#__
+
 
 ```C#
 	documentEditor.BeginUndoGroup();
@@ -67,7 +67,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	documentEditor.BeginUndoGroup()
@@ -86,7 +86,7 @@ The newly created *documentEditor* instance now provides all capabilities that a
 
 You can also cancel the execution of the undo group, and it won't be recorded in the history:
 
-#### __C#__
+
 
 ```C#
 	documentEditor.BeginUndoGroup();
@@ -104,7 +104,7 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	documentEditor.BeginUndoGroup()

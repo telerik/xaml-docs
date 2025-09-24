@@ -34,7 +34,7 @@ Specifying the size of cell for the zoom level affects to a number of requests t
 
 Here is a sample Virtualization Layer declaration:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:VirtualizationLayer x:Name="virtualizationLayer">
@@ -68,7 +68,7 @@ In the __BackgroundItemsRequest()__ method you have to implement your logic for 
 
 Here is an example of how to implement simple static functionality in the __BackgroundItemsRequest()__ method:
 
-#### __C#__
+
 ```C#
 	public class MapVirtualizationSource : IMapVirtualizationSource
 	{
@@ -122,7 +122,7 @@ Here is an example of how to implement simple static functionality in the __Back
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class MapVirtualizationSource Implements IMapVirtualizationSource
 		Shared ReadOnly bulgariaLocation As New Location(42.7669999748468, 25.2819999307394)
@@ -187,7 +187,7 @@ Here is an example of how to implement simple static functionality in the __Back
 
 You can set the virtualization source to a new instance of the *MapVirtualizationSource* and create a new definition for the __OpenStreetMap__ provider:        
 
-#### __C#__
+
 ```C#
 	public MainWindow()
 	{
@@ -197,7 +197,7 @@ You can set the virtualization source to a new instance of the *MapVirtualizatio
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

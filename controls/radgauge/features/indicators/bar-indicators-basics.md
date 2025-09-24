@@ -32,7 +32,7 @@ The __Empty__ __Fill__ feature allows you to specify a color for the empty part 
 
 Here is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="200" >
@@ -65,7 +65,7 @@ The __Bar Indicators__ allow you to specify their end and start width. This way 
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="200" >
@@ -109,7 +109,7 @@ As the __Bar Indicators__ cover the range from the start of the scale to the sel
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="30"

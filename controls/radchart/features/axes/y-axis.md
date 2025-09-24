@@ -49,7 +49,7 @@ __AxisY.ExtendDirection__ is of type __AxisExtendDirection__ and has the followi
 
 In the example below you can see how changing the __ExtensionDirection__ properties reflects the charts. Also, notice the result when __MinorTickPointMultiplier__ is set to 5.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -73,7 +73,7 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 
 
 
-#### __C#__
+
 
 ```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
@@ -88,7 +88,7 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()

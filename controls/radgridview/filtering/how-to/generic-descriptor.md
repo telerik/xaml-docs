@@ -19,7 +19,7 @@ The new FilterDescriptor<T> allows you to directly plug a predicate that determi
 
 __Example 3: Create a generic FilterDescriptor<T>.__
 
-#### __C#__
+
 
 ```C#
 	var descriptor = new FilterDescriptor<Employee> { FilteringExpression = e => prospects.Contains(e) };

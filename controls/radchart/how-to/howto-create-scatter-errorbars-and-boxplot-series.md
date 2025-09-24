@@ -73,7 +73,7 @@ The BoxPlot have five number summaries: the smallest observation (sample minimum
 
 The following code snippet demonstrates the steps in action:
 
-#### __C#__
+
 
 ```C#
 	public partial class MainPage : UserControl 
@@ -250,7 +250,7 @@ The first one is Vertical and the second one is Horizontal Line (with X1 and X2 
 
 The following code snippet demonstrates the steps above in action:
 
-#### __C#__
+
 
 ```C#
 	public partial class MainPage : UserControl

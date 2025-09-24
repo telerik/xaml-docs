@@ -20,7 +20,7 @@ When working with the __RadMap__ control, the user would likely try to pan or zo
 
 If you want to hide the navigation control you have to set the __NaviagtionVisibility__ to __Collapsed__.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                NavigationVisibility="Collapsed">
@@ -29,7 +29,7 @@ If you want to hide the navigation control you have to set the __NaviagtionVisib
 
 If you want to disable the user from zooming and panning, you have to set the following properties:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                NavigationVisibility="Collapsed"
@@ -48,7 +48,7 @@ Additionally as the UI navigation control is represented by the __MapNavigation_
 
 In order to use the __MapNavigation__ outside of the __RadMap__ you have to set its __MapControl__ property to the respective __RadMap__ instance. Additionally you can handle its __CenterButtonClick__ event and implement your custom logic in the event handler. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<StackPanel>
 	    <telerik:RadMap x:Name="radMap"

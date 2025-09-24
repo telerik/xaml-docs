@@ -14,7 +14,7 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 
 ##### 1. Create a class of Business Objects that will be used to populate the Chart:
 
-#### __C#__
+
 
 ```C#
 	public class UserDataPoint

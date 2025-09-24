@@ -16,7 +16,7 @@ This help topic will demonstrate how to create a GridView and draw a Chart with 
 
 ##### 1. Create a List of Business objects that will be used to populate the Chart and the GridView.
 
-#### __C#__
+
 
 ```C#
 	public class MyDateObject
@@ -80,7 +80,7 @@ This help topic will demonstrate how to create a GridView and draw a Chart with 
 
 ##### 2. Create the GridView and the Chart in *XAML*:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding List}">

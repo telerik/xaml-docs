@@ -12,7 +12,7 @@ position: 1
 
 For example, you may have the following __RadTileView__ declaration:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView ColumnsCount="2">
@@ -50,7 +50,7 @@ For example, you may have the following __RadTileView__ declaration:
 
 In order to enable the horizontal and/or vertical scrollbar for the restored tiles you need to set the rows and columns size large enough to exceed the viewport of the __RadTileView__ control.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView ColumnsCount="2" RowHeight="150" ColumnWidth="150">
@@ -90,7 +90,7 @@ In order to enable the horizontal and/or vertical scrollbar for the restored til
 
 In order to enable the minimized items __ScrollBar__, you need to set the __MinimizedRowHeight__ or __MinimizedColumnWidth__ properties thus limiting the size of the minimized tiles:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView ColumnsCount="2" MinimizedRowHeight="150">
@@ -130,7 +130,7 @@ In order to enable the minimized items __ScrollBar__, you need to set the __Mini
 
 In order to allow automatic scrolling while dragging a __RadTileViewItem__, you need to set the __RadTileView IsAutoScrollingEnabled__ property to __True.__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView ColumnsCount="2" RowHeight="150" IsAutoScrollingEnabled="True">

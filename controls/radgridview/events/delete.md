@@ -45,21 +45,21 @@ The __Deleting__ event occurs when the row/rows is about to be deleted. It fires
 
 You can subscribe to the __Deleting__ event declaratively or runtime like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="gridView" Deleting="gridView_Deleting" />
 ```
 
 
-#### __C#__
+
 
 ```C#
 	this.gridView.Deleting += gridView_Deleting;
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler Me.gridView.Deleting, AddressOf gridView_Deleting
@@ -72,7 +72,7 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 
 The Deleting event is cancelable. The example below uses the __Deleting__ event to ask the user for confirmation before the deletion is performed.
 
-#### __C#__
+
 
 ```C#
 	protected IEnumerable<Object> itemsToBeDeleted;
@@ -105,7 +105,7 @@ The Deleting event is cancelable. The example below uses the __Deleting__ event 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Protected itemsToBeDeleted As IEnumerable(Of Object)
@@ -141,20 +141,20 @@ A __GridViewDeletedEventArgs__ object. This object has the following properties:
 
 You can subscribe to the __Deleted__ event declaratively or runtime like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="gridView" Deleted="gridView_Deleted" />
 ```
 
-#### __C#__
+
 
 ```C#
 	this.gridView.Deleted += gridView_Deleted;
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler Me.gridView.Deleted, AddressOf gridView_Deleted

@@ -25,7 +25,7 @@ The example will represent a __ListBox and RadGridView__. The ListBox will list 
 
 Here are the definitions of the controls.
 
-#### __XAML__
+
 ```XAML
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
@@ -40,7 +40,7 @@ Here are the definitions of the controls.
 
 Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via Element Binding.
 
-#### __XAML__
+
 ```XAML
 	<Grid Background="White">
 	    <Grid.ColumnDefinitions>
@@ -56,7 +56,7 @@ Next bind the __ListBox.ItemsSource__ to __RadGridView.Columns__ collection via 
 
 After that define __DataTemplate__ for __ItemTemplate__ property of the ListBox. It should include a __CheckBox__ and you can bind its __IsChecked__ property to __column.IsVisible__ property using __TwoWay__ Data Binding.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid Background="White">

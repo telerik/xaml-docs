@@ -81,7 +81,7 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 
 1. Replace the class declaration with the following code:
 
-#### __C#__
+
 
 ```C#
 
@@ -93,7 +93,7 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 

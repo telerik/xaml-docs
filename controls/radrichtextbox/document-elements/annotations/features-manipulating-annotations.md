@@ -32,7 +32,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 * RadDocument and DocumentSelection expose the following general methods for retrieving annotation markers or checking if such exist in the document/selection at all:
 
-#### __C#__
+
 
 ```C#
 	/// <summary>
@@ -50,7 +50,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 * Methods for retrieving the containing annotations around a particular inline. This is particularly convenient if you would like to perform checks against the caret position. First, you can obtain the current inline like this:
 
-#### __C#__
+
 
 ```C#
 	Inline currentInline = this.editor.Document.CaretPosition.GetCurrentInline();
@@ -58,7 +58,7 @@ By default all annotations are markup-only in the sense that they do not have an
 
 and then, check if this inline is contained in a range using one of the methods below:
 
-#### __C#__
+
 
 ```C#
 	/// <summary>
@@ -80,7 +80,7 @@ and then, check if this inline is contained in a range using one of the methods 
 
 * More finely tuned methods that filter the annotation ranges at the time of their retrieval include:
 
-#### __C#__
+
 
 ```C#
 	/// <summary>
@@ -106,7 +106,7 @@ and then, check if this inline is contained in a range using one of the methods 
 
 Annotations can be inserted in the document using the following method of [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}).        
 
-#### __C#__
+
 
 ```C#
 	/// <summary>
@@ -123,7 +123,7 @@ There are also some methods that insert specific types of annotations for the co
 
 In order to delete an annotation, you need to obtain a reference to its range start first. After that, you can use the following method of [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) to remove it.
 
-#### __C#__
+
 
 ```C#
 	/// <summary>
@@ -135,7 +135,7 @@ In order to delete an annotation, you need to obtain a reference to its range st
 
 Note that this method will remove the annotation, but will keep its contents. In order to delete the contents as well, you can select it and use the Delete method of the editor:
 
-#### __C#__
+
 
 ```C#
 	editor.Document.Selection.SelectAnnotationRange(start);
@@ -148,7 +148,7 @@ There are also some methods that that remove specific types of annotations for t
 
 Some user scenarios require that there would be an easy way to split annotation ranges. In such cases, one can use the following methods:        
 
-#### __C#__
+
 
 ```C#
 	/// <summary>

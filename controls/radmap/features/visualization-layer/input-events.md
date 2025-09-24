@@ -20,7 +20,7 @@ The VisualizationLayer class provides 2 events:
 
 Here it is an example which attaches MouseEnter and MouseLeave events to the map shape visualization object:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                ZoomLevel="8"
@@ -51,7 +51,7 @@ Here it is an example which attaches MouseEnter and MouseLeave events to the map
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	private void MapShapeVisualizationCreated(object sender, MapShapeOperationEventArgs e)
 	{
@@ -96,7 +96,7 @@ Here it is an example which attaches MouseEnter and MouseLeave events to the map
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub MapShapeVisualizationCreated(sender As Object, e As MapShapeOperationEventArgs)

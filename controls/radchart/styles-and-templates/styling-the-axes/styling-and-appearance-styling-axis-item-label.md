@@ -20,7 +20,7 @@ The axis item labels are part of the chart axis and are represented by the __Tex
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __TextBlock__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View* from the menu. Declare a __TextBlock__ control in your XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot"
@@ -40,7 +40,7 @@ After clicking the OK button, a style with target type __TextBlock__ will be cre
 
 After finishing with the changes it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = this.Resources["ItemLabelStyle"] as Style;
@@ -49,7 +49,7 @@ After finishing with the changes it is time to set the style. It can be set only
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radchart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = TryCast(Me.Resources("ItemLabelStyle"), Style)
@@ -64,7 +64,7 @@ Here is a snapshot of the sample result.
 
 Here is the final XAML for the __Style__:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="ItemLabelStyle" TargetType="TextBlock">

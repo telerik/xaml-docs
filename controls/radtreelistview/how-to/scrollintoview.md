@@ -38,7 +38,7 @@ For the purpose of this example, you will need to create an empty application pr
 Then you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement the __ScrollIntoView__ methods, we won't focus on the definitions of the controls in xaml.
 		
 
-#### __XAML__
+
 
 ```XAML
 
@@ -96,7 +96,7 @@ Then you can define the controls in your view. As the purpose of this tutorial i
 The next step is to define the business object.
 		
 
-#### __C#__
+
 
 ```C#
 
@@ -146,7 +146,7 @@ The next step is to define the business object.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -193,7 +193,7 @@ The next step is to define the business object.
 What comes next, is to populate with data.
 		
 
-#### __C#__
+
 
 ```C#
 
@@ -223,7 +223,7 @@ What comes next, is to populate with data.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -256,7 +256,7 @@ What comes next, is to populate with data.
 Clicking the first button will bring an item which is 20 levels deep with updating the UI on every level expansion. For this purpose we will use the {% if site.site_name == 'Silverlight' %}[ScrollIntoViewAsync (Object dataItem, Action(FrameworkElement) scrollFinishedCallback, bool expandItem)](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_radtreelistview_scrollintoviewasync_1.html){% endif %}{% if site.site_name == 'WPF' %}[ScrollIntoViewAsync (Object dataItem, Action(FrameworkElement) scrollFinishedCallback, bool expandItem)](http://www.telerik.com/help/wpf/m_telerik_windows_controls_radtreelistview_scrollintoviewasync_1.html){% endif %} method, which scrolls the row containing the data item into view in an asynchronous manner.
 		
 
-#### __C#__
+
 
 ```C#
 
@@ -280,7 +280,7 @@ Clicking the first button will bring an item which is 20 levels deep with updati
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -309,7 +309,7 @@ Clicking the first button will bring an item which is 20 levels deep with updati
 Clicking the second button will update the UI only when the bring operation is finished. Here we are using the {% if site.site_name == 'Silverlight' %}[ScrollIntoView(Object dataItem, bool expandItem)](http://www.telerik.com/help/silverlight/m_telerik_windows_controls_radtreelistview_scrollintoview.html){% endif %}{% if site.site_name == 'WPF' %}[ScrollIntoView(Object dataItem, bool expandItem)](http://www.telerik.com/help/wpf/m_telerik_windows_controls_radtreelistview_scrollintoview.html){% endif %} method, which scrolls the row containing the data item into view.
 		
 
-#### __C#__
+
 
 ```C#
 
@@ -332,7 +332,7 @@ Clicking the second button will update the UI only when the bring operation is f
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 

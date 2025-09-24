@@ -16,7 +16,7 @@ The next example will demonstrate how to customize the CellSelectionTemplate of 
 
 The xaml of the GanttView should look like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}"

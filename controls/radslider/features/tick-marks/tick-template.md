@@ -12,7 +12,7 @@ position: 2
 
 Changing the look of the tick marks can be done by setting the __TickTemplate__ property, which is of type __DataTemplate__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Maximum="10" TickFrequency="2" TickPlacement="BottomRight">
@@ -30,7 +30,7 @@ Changing the look of the tick marks can be done by setting the __TickTemplate__ 
 
 If you want to display the numeric value of each tick, you have to add a __TextBlock__ to the template and bind its __Text__ property as shown in the example bellow:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Maximum="10" TickFrequency="1" TickPlacement="Both">

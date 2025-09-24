@@ -12,7 +12,7 @@ position: 5
 
 __RadTileView__ support nesting. You can nest different __TileViews__ in order to achieve complex layouts. Check the example below:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView x:Name="RadTileView1" MinimizedItemsPosition="Bottom">

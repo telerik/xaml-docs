@@ -70,13 +70,13 @@ You can see how the items in red and blue rectangles have changed their position
 
 As you can see we have two PropertyGroupDescriptions defined as RowGroupDescriptions and the first one is for property Name. Each group in __RadPivotGrid__ has totals, but the groups on the BottomLevel (which do not have children) show their totals right next to them("Direct Mail" and "Extra Discount" totals are on the same row), while the TopLevelGroups("Pen" and "Pencil") can show their totals at the Top, Bottom, Inline position or even can hide them. The position depends on the used Layout and the value of SubTotalsPosition property. You can find examples demonstrating how to set the __AggregatesLevel__ and __AggregatesPosition__ properties below:
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:LocalDataSourceProvider AggregatesLevel="0" AggregatesPosition="Rows" />
 ```
 
-#### __C#__
+
 
 ```C#
 	var dataProvider = new LocalDataSourceProvider();
@@ -84,7 +84,7 @@ As you can see we have two PropertyGroupDescriptions defined as RowGroupDescript
 	dataProvider.AggregatesPosition = PivotAxis.Rows;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dataProvider = New LocalDataSourceProvider()

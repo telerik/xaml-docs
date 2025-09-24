@@ -22,7 +22,7 @@ For charts that have many data points or data points with values close to one an
 
 The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnabled__ of the __ChartArea__ property.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -38,7 +38,7 @@ The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnable
 
 
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
@@ -46,7 +46,7 @@ The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnable
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
@@ -66,7 +66,7 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 
 * __ShowConnectors__ - indicates whether lines should be visualized between the points and the labels.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -89,7 +89,7 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 
 
 
-#### __C#__
+
 
 ```C#
 	LabelSettings settings = new LabelSettings();
@@ -103,7 +103,7 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim settings As New LabelSettings()
@@ -131,7 +131,7 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 
 * __Outside__ - the labels are placed over the bar (or below it for negative values).
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -156,7 +156,7 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 
 
 
-#### __C#__
+
 
 ```C#
 	BarLabelSettings barSettings = new BarLabelSettings();
@@ -171,7 +171,7 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim barSettings As New BarLabelSettings()
@@ -195,7 +195,7 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 
 * __SpirderModeEnabled__ - indicates whether the Spider mode is enabled or not. In this mode the labels are ordered around the Pie/Doughnut as spider legs. Combine it with __ShowConnectors__ for a greater effect.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -217,7 +217,7 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 ```
 
 
-#### __C#__
+
 
 ```C#
 	RadialLabelSettings radialSettings = new RadialLabelSettings();
@@ -230,7 +230,7 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radialSettings As New RadialLabelSettings()

@@ -22,7 +22,7 @@ Using the __RetainPaneSizeMode__ property you could choose between the following
 
 The following snippets show how the __RetainPaneSizeMode__ property could be set in XAML and in code behind:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking" RetainPaneSizeMode="Floating">
@@ -30,7 +30,7 @@ The following snippets show how the __RetainPaneSizeMode__ property could be set
 	</telerik:RadDocking>
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radDocking.RetainPaneSizeMode = RetainSizeMode.Floating;
@@ -42,7 +42,7 @@ If the __RetainPaneSizeMode__ is set to __None__ and the Pane or Panes has set _
 
 If a whole __PaneGroup__ (with multiple panes inside) is floated the __FloatingSize__ of the currently __SelectedPane__ of the __PaneGroup__ will be used.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPane telerik:RadDocking.FloatingSize="200 200">

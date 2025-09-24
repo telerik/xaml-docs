@@ -16,7 +16,7 @@ The __RadRibbonDropDownButton__ represents an extension of the __RadDropDownButt
 
 Here is a sample definition of a __RadRibbonDropDownButton__ without having any drop down content defined:			
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
 	                                 Size="Large"
@@ -33,7 +33,7 @@ This button has its initial size set to __Large__ and its text label set to __"P
 
 To set the popup content you have to simply set the __DropDownContent__ property of the button. Here is an example of a __RadRibbonDropDownButton__ with three menu items inside its drop down.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
 	                                 Size="Large"
@@ -73,7 +73,7 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 
 * __DropDownOpened__ - fires after the popup area has been opened.					
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonDropDownButton LargeImage="Icons/32/paste.png" 
 	                                 ...
@@ -84,7 +84,7 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	</telerik:RadRibbonDropDownButton>
 ```
 
-#### __C#__
+
 ```C#
 	private void RadRibbonDropDownButton_DropDownClosed(object sender, RoutedEventArgs e)
 	{
@@ -97,7 +97,7 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub RadRibbonDropDownButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
 	End Sub

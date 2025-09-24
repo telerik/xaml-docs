@@ -47,7 +47,7 @@ The following example demonstrates how to specify a label format expression to c
 
 The created chart is bound to a collection of __TradeData__ objects via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}), where the __TradeData__ object has the following structure:
 
-#### __C#__
+
 
 ```C#
 	public class TradeData
@@ -102,7 +102,7 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class TradeData
@@ -200,7 +200,7 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 
 Take a look at the code snippet below and see how to define custom label format strings for your __RadChart__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -239,7 +239,7 @@ Take a look at the code snippet below and see how to define custom label format 
 
 
 
-#### __C#__
+
 
 ```C#
 	RadChart radChart = new RadChart();
@@ -258,7 +258,7 @@ Take a look at the code snippet below and see how to define custom label format 
 	radChart.SeriesMappings.Add( seriesMapping );
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()

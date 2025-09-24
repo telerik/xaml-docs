@@ -26,7 +26,7 @@ __DragVisualTemplate__ property is of type DataTemplate and is used to define th
 
 Here is the default DragVisualTemplate:
 
-#### __XAML__
+
 
 ```XAML
 	<DataTemplate x:Key="DragVisualContentTemplate">
@@ -44,7 +44,7 @@ Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed t
 
 Let’s for example, change the DataTemplate  as following:
 
-#### __XAML__
+
 
 ```XAML
 	<DataTemplate x:Key="DragVisualContentTemplate">
@@ -61,7 +61,7 @@ Let’s for example, change the DataTemplate  as following:
 
 >If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you will be able to reference DraggedAppointmentsToLocalizedStringConverter directly.  In other case you should manually add it as a resource before the DragVisualContentTemplate declaration: 
 
-#### __XAML__
+
 
 ```XAML
     <telerik:DraggedAppointmentsToLocalizedStringConverter x:Key="DraggedAppointmentsToLocalizedStringConverter" />
@@ -69,7 +69,7 @@ Let’s for example, change the DataTemplate  as following:
 
 Then set the newly created template to the DragVisualTemplate property of the ScheduleView:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
@@ -90,7 +90,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 
 * If you’re using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) and merge the needed XAML files as ResourceDictionaries in App.xaml, then you could create there a new Style for DragVisual element based on the default style. This way you will be able to modify only certain properties of the default style. Here is a simple example below:           
 
-#### __XAML__
+
 
 ```XAML
 	<Application.Resources>
@@ -113,7 +113,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 
 * In case you’re using the default OfficeBlack theme or you've set a different theme with StyleManager:You should extract the complete DragVisualStyle from the RadScheduleView XAML file. The needed XAML file can be found in the UI for {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}s installation folder. Go into the Themes folder and select the theme that you have chosen to use. Drill down to find the Telerik.Windows.Controls.ScheduleView.xaml file in the directory that corresponds to your theme.  From this resource dictionary extract the DragVisualStyle and all the resources it uses, such as brushes and styles, into your own project.  Then you will be able to make the needed customizations, for example:
 
-#### __XAML__
+
 
 ```XAML
 	<SolidColorBrush x:Key="RadScheduleForeground" Color="Black" />
@@ -141,7 +141,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 
 Where *local* is:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView”
@@ -151,7 +151,7 @@ Where *local* is:
 
 Either approach you’ve selected, the final step is to set the custom DragVisual style to DragVisualStyle property of the ScheduleView:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"

@@ -24,7 +24,7 @@ The property can be set to any nested submenu __RadMenuItem__ in order to contro
 
 Here's a simple code that shows how to use the __DropDownHeight__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu x:Name="Menu">
@@ -44,7 +44,7 @@ Here's a simple code that shows how to use the __DropDownHeight__ property:
 
 If you are using __RadMenuGroupItem__ you can control the scrolling inside via ScrollViewer's attached properties - VerticalScrollBarVisibility and HorizontalScrollBarVisibility.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadMenu>

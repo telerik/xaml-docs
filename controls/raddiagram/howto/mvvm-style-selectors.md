@@ -18,7 +18,7 @@ For the purpose of this tutorial, we will populate the __RadDiagram__ control wi
 
 Let's start by creating __RectangleNode, EllipseNode__ and __DecisionNode__ classes to describe the __RadDiagramShapes__:		
 
-#### __C#__
+
 ```C#
 	using Telerik.Windows.Controls.Diagrams.Extensions;
 	
@@ -44,7 +44,7 @@ Let's start by creating __RectangleNode, EllipseNode__ and __DecisionNode__ clas
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
 	
@@ -73,7 +73,7 @@ Let's start by creating __RectangleNode, EllipseNode__ and __DecisionNode__ clas
 
 Next, we need to define the ViewModel that will represent the __RadDiagramConnections__ in our diagramming solution. For simplicity, we will create only one class but we will define a __Type__ property to describe each link.		
 
-#### __C#__
+
 ```C#
 	using Telerik.Windows.Controls.Diagrams.Extensions.ViewModels;
 	
@@ -99,7 +99,7 @@ Next, we need to define the ViewModel that will represent the __RadDiagramConnec
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
 	
@@ -133,14 +133,14 @@ Now that our items' ViewModels are defined, we have to create a collection of it
 
 In this example we will use the __ObservableGraphSourceBase<TNode,TLink>__ class to create a custom __GraphSource__ implementation as this will allow us to take advantage of the predefined __AddNode(), AddLink(), CreateNode(), CreateLink(), RemoveNode()__ and __RemoveLink()__ methods. This way we won't have to explicitly define a custom add/create/remove logic for our business items.		
 
-#### __C#__
+
 ```C#
     public class GraphSource : ObservableGraphSourceBase<NodeViewModelBase, Link>
     {
     }	
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class GraphSource
 		Inherits ObservableGraphSourceBase(Of NodeViewModelBase, Link)
@@ -150,7 +150,7 @@ In this example we will use the __ObservableGraphSourceBase<TNode,TLink>__ class
 Let's define the items in the __GraphSource__ to describe the following process workflow:
 ![Rad Diagram How To Style Selectors Goal](images/RadDiagram_HowTo_StyleSelectors_Goal.png)
 
-#### __C#__
+
 ```C#
 	public class GraphSource : ObservableGraphSourceBase<NodeViewModelBase, Link>
 	{
@@ -237,7 +237,7 @@ Let's define the items in the __GraphSource__ to describe the following process 
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class GraphSource
 		Inherits ObservableGraphSourceBase(Of NodeViewModelBase, Link)
@@ -285,14 +285,14 @@ Let's define the items in the __GraphSource__ to describe the following process 
 
 Now we can set-up our __RadDiagram__ control to display these items. For that purpose we can define a __RadDiagram__ instance in our view and set its __GraphSource__ property in the code-behind file:		
 
-#### __XAML__
+
 ```XAML
 	<Grid>
 		<telerik:RadDiagram x:Name="xDiagram" />
 	</Grid>
 ```
 
-#### __C#__
+
 ```C#
 	public MainView()
 	{
@@ -304,7 +304,7 @@ Now we can set-up our __RadDiagram__ control to display these items. For that pu
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Partial Public Class MainWindow
 		Inherits Window
@@ -322,7 +322,7 @@ This operation will place all __DiagramItems__ at a position of __(0,0)__ on top
 
 As our example defines three different business nodes, we can create a __StyleSelector__ that applies a style based on the type of the business class. Moreover, as the __EllipseNode__ class exposes a *Type* property, we can also use its value to apply different styles for the start and end points of our process workflow.	  
 
-#### __C#__
+
 ```C#
 	public class NodeStyleSelector : StyleSelector
 	{
@@ -354,7 +354,7 @@ As our example defines three different business nodes, we can create a __StyleSe
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class NodeStyleSelector
 		Inherits StyleSelector
@@ -386,7 +386,7 @@ As our example defines three different business nodes, we can create a __StyleSe
 
 Now, let's declare this selector in the resources of our view and prepare the custom styles for each node type: 
 
-#### __XAML__
+
 ```XAML
 	    <Grid>
 	        <Grid.Resources>
@@ -455,7 +455,7 @@ If we run the solution at this point, we should get the following result:![Rad D
 
 Now the __RadDiagramShapes__ are properly styled and arranged, but the connections don't look all that good. This is due to the fact that they try to display their content and as we haven't declared a __ConnectionTemplate__, the *Link* class __ToSting()__ method is used to display it. In this example we won't need to visualize any labels or descriptions near the connections, so we can define an empty __Grid__ as a __ContentTemplate__ of each __RadDiagramConnection__. Also, as we created a *Type* property in the __Link__ class implementation and we added different types of links in the __GraphSource__ collection, we can apply different styles for the connections based on their type. For that purpose, we will need another custom __StyleSelector__ - this time we will use it with the __RadDiagram.ConnectionStyleSelector__ property.	  
 
-#### __C#__
+
 ```C#
 	public class LinkStyleSelector : StyleSelector
 	{
@@ -483,7 +483,7 @@ Now the __RadDiagramShapes__ are properly styled and arranged, but the connectio
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class LinkStyleSelector
 		Inherits StyleSelector
@@ -513,7 +513,7 @@ Now the __RadDiagramShapes__ are properly styled and arranged, but the connectio
 
 And finally we need to define the connection styles and the *LinkStyleSelector* in the resources of our view:
 
-#### __XAML__
+
 ```XAML
 	<Grid>
 		<Grid.Resources>

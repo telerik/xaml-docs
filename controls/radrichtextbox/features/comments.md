@@ -44,7 +44,7 @@ The following commands related to the commenting functionality are available in 
 Here is an example usage of these commands:
         
 
-#### __XAML__
+
 
 ```XAML
     <telerik:RadButton Content="New Comment" 
@@ -102,7 +102,7 @@ There are also __GoToNextComment()__ and __GoToPreviousComment()__ methods avail
 You can customize the looks of the comments by attaching to the __CommentShowing__ event of __RadRichTextBox__. Inside the event handler you can access the __Comment__ and modify the __AppearanceSettings__ that are used to visualize the comment. Here is an example:
         
 
-#### __C#__
+
 
 ```C#
     private void RadRichTexBox_CommentShowing(object sender, CommentShowingEventArgs e)

@@ -37,7 +37,7 @@ The snapshot below shows the content of the DiagramResources.de.resx file. The r
 
 The last step is to instantiate the `LocalizationManager` class and set its `ResourceManager` to the resources that have been just created (you can do this in the default constructor of the `Application` class).		
 
-#### __C#__
+
 ```C#
     LocalizationManager.Manager = new LocalizationManager()
     {
@@ -45,7 +45,7 @@ The last step is to instantiate the `LocalizationManager` class and set its `Res
     };
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     LocalizationManager.Manager = New LocalizationManager()
     LocalizationManager.Manager.ResourceManager = DiagramResources.ResourceManager  
@@ -53,7 +53,7 @@ The last step is to instantiate the `LocalizationManager` class and set its `Res
 
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and German languages, you can store the localized strings in `Resources.resx` and `Resources.de.resx` files. For the Resources.resx file you can set `ResXFileCodeGenerator` to `Internal` or `Public` and for the others - to `No code generation`. Then, open the project file in a text-mode and insert the code below into the <PropertyGroup> section. In this way you notify the framework about the supported cultures.
 
-#### __XAML__
+
 ```XAML
 	<SupportedCultures>en;de</SupportedCultures>			
 ```
@@ -62,7 +62,7 @@ The last step is to instantiate the `LocalizationManager` class and set its `Res
 
 The other way to localize your `RadDiagram` is to create a class that derives from the `LocalizationManager` object and to override its method `GetStringOverride()`. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below: 
 		
-#### __C#__
+
 ```C#
     public class CustomLocalizationManager : LocalizationManager
     {
@@ -93,7 +93,7 @@ The other way to localize your `RadDiagram` is to create a class that derives fr
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET	
 	Public Class CustomLocalizationManager
 		Inherits LocalizationManager
@@ -124,7 +124,7 @@ The other way to localize your `RadDiagram` is to create a class that derives fr
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 		
-#### __C#__
+
 ```C#	
     public override string GetStringOverride(string key)
     {
@@ -139,7 +139,7 @@ Of course, if you don't want to hard-code your translation inside your source co
     }	    
 ```
 	
-#### __VB.NET__
+
 ```VB.NET	
 	Public Overrides Function GetStringOverride(key As String) As String
 		Select Case key

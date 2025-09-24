@@ -24,7 +24,7 @@ It is common scenario that you would like to customize the appearance of the Poi
 
 - __PointMarkFill__ - will be applied to the PointMark Style to set the Fill for the PointMark.
 
-#### __C#__
+
 
 ```C#
 	public class Data : INotifyPropertyChanged
@@ -98,7 +98,7 @@ It is common scenario that you would like to customize the appearance of the Poi
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Data
@@ -168,7 +168,7 @@ It is common scenario that you would like to customize the appearance of the Poi
 
 Note that the check for setting the *PointMarkFill's* value is added in the end of the code snippet above.Add the RadChart declaration:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart Name="chart"/>
@@ -178,7 +178,7 @@ Note that the check for setting the *PointMarkFill's* value is added in the end 
 
 Retemplate the default PointMark Style - Add *Fill *Property databound to *DataItem.PointMarkFill* property of the class. Add the Style between the starting and ending tags of the UserControl:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="MyPointMark_Style" TargetType="telerik:PointMark">
@@ -208,7 +208,7 @@ Retemplate the default PointMark Style - Add *Fill *Property databound to *DataI
 
  Retemplate the default *SeriesItemLabel *Style so that the appropriate color will be set for each Label too:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="MySeriesItemLabel_Style" TargetType="telerik:SeriesItemLabel">
@@ -261,7 +261,7 @@ Retemplate the default PointMark Style - Add *Fill *Property databound to *DataI
 
 The chart is populated with data in code-behind using [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}). The last line in the code snippet demonstrates how the Style for the PointMarks can be set.
 
-#### __C#__
+
 
 ```C#
 	List<Data> exportData = new List<Data>();
@@ -289,7 +289,7 @@ The chart is populated with data in code-behind using [Manual Series Mappings]({
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim exportData As New List(Of Data)()

@@ -26,7 +26,7 @@ The __ModifierKey__ property allows you to use a modifier key, which in combinat
 
 Here is an example of a __RadContextMenu__ that requires the Control button to be pressed in order to open.
 
-#### __XAML__
+
 
 ```XAML
 	<TextBox Width="200"

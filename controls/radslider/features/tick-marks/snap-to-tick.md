@@ -19,7 +19,7 @@ When the __IsSnapToTickEnabled__ property is set to __True__ and you drag the th
 * When the __IsSnapToTickEnabled__ property is set to __True__, draging the thumb or clicking on the track will move the thumb to the nearest tick 
         
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider IsSnapToTickEnabled="True" 
@@ -32,7 +32,7 @@ When the __IsSnapToTickEnabled__ property is set to __True__ and you drag the th
 
 * If the __RadSlider__ handles are displayed, clicking on them will move the thumb to the nearest tick as long as the __IsSnapToTickEnabled__ property is set to __True__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider HandlesVisibility="Visible" 

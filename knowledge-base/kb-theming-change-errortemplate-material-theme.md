@@ -36,14 +36,14 @@ You can find the default data validation error template in the [Telerik.Windows.
 
 If you use [NoXaml dlls]({%slug xaml-vs-noxaml%}) you can directly access the "ValidationTooltipTemplate" ControlTemplate element using the StaticResource keyword and assign it to the `Validation.ErrorTemplate` property.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadComboBox Validation.ErrorTemplate="{StaticResource ValidationTooltipTemplate}" />
 ```
 
 In case you use the __Xaml dlls__ you can copy the "ValidationTooltipTemplate" ControlTemplate from the *Telerik.Windows.Controls.Input.xaml* file and assign it to the `Validation.ErrorTemplate` property.
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
 		<Geometry x:Key="ArrowTopRight8x8">M0,0 L8,0 8,8 z</Geometry>
@@ -114,7 +114,7 @@ In case you use the __Xaml dlls__ you can copy the "ValidationTooltipTemplate" C
 	</Window.Resources>
 ```
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadComboBox Validation.ErrorTemplate="{StaticResource ValidationTooltipTemplate}" />
 ```

@@ -22,7 +22,7 @@ The purpose of this tutorial is to show how to use the Save/Load layout mechanis
 
 Create a new application and add the following initial __RadDocking__ declaration.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking">
@@ -101,7 +101,7 @@ Perform the following steps:
 
 Set the __RadDocking.SerializationTag__ attached property for each one of the panes in your xaml declaration. If the SerializationTag is not set the Panes will be removed and new components will be created when the layout is loaded. If you want to preserve not only the Panes and load the same instances when the layout is loading you need to set the SerializationTag to all other components of RadDocking you want to preserve as well (RadPaneGroups, RadSplitContainers, RadPanes).
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPane x:Name="LayoutXml1" Header="Layout Xml"
@@ -127,7 +127,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 {% if site.site_name == 'Silverlight' %}
 		
-#### __C#__
+
 
 ```C#
 	private string SaveLayout()
@@ -149,7 +149,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function SaveLayout() As String
@@ -170,7 +170,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __C#__
+
 
 ```C#
 	private string SaveLayout()
@@ -192,7 +192,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function SaveLayout() As String
@@ -283,7 +283,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __C#__
+
 
 ```C#
 	private void LoadLayout()
@@ -299,7 +299,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub LoadLayout()
@@ -314,7 +314,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __C#__
+
 
 ```C#
 	private void LoadLayout()
@@ -330,7 +330,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub LoadLayout()
@@ -387,7 +387,7 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 
 >You have the ability to "say" whether these event to be fired or not, when the __SerializationTag__ is __not specified__. You should use the second overload of the __LoadLayout__ and __SaveLayout__ methods.
 
-#### __C#__
+
 
 ```C#
 	public void SaveLayout(Stream destination, bool raiseEventsIfNoSerializationTag)
@@ -396,7 +396,7 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub SaveLayout(ByVal destination As Stream, ByVal raiseEventsIfNoSerializationTag As Boolean)

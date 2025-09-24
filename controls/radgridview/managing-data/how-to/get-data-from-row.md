@@ -16,7 +16,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 
 * The __SelectedItem__ property of RadGridView returns an object which can be cast to your business object. So, it is very easy to get the underlying data from the selected item:
 
-#### __C#__
+
 
 ```C#
 	private void Button1_Click(object sender, RoutedEventArgs e)
@@ -29,7 +29,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub Button2_Click(sender As Object, e As RoutedEventArgs)
@@ -41,7 +41,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 
 * Getting the data from an __arbitrary GridViewRow__ is almost the same - you just need to cast its __DataContext__ or __Item__ property to your business object:
 
-#### __C#__
+
 
 ```C#
 	void clubsGrid_RowActivated(object sender, Telerik.Windows.Controls.GridView.RowEventArgs e)
@@ -55,7 +55,7 @@ We will consider two scenarios - getting the data from the selected row and gett
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub clubsGrid_RowActivated(sender As Object, e As Telerik.Windows.Controls.GridView.RowEventArgs)

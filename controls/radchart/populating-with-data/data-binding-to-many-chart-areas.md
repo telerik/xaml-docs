@@ -24,7 +24,7 @@ The example below demonstrates how to bind two series to two different __ChartAr
 
 The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}). For each series, set the __ChartAreaName__ to the name of the previously defined __ChartArea__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
@@ -74,7 +74,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 
 
 
-#### __C#__
+
 
 ```C#
 	//Creating new instance of RadChart control
@@ -136,7 +136,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'Creating new instance of RadChart control'

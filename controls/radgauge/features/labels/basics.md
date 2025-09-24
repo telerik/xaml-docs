@@ -36,7 +36,7 @@ The scales, derived from the [GraphicScale]({%slug radgauge-features-linear-and-
 
 The [GraphicScale]({%slug radgauge-features-linear-and-radial-scales-basics%}) class exposes a __LabelLocation__ property, which allows you to specify the location of the labels towards the scale. This property is an enumeration of type ScaleObjectLocation. Here is an example.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
@@ -57,7 +57,7 @@ Besides using the __LabelLocation__ property, you can also use the __LabelOffset
 
 >To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
@@ -78,7 +78,7 @@ In order to allow you to format the value, that the labels display, The GraphicS
 
 >Defining format strings in XAML can be done in the following way - `{} {0:your format string}`. To learn more about formatting visit the [Formatting Overview](http://msdn.microsoft.com/en-us/library/26etazsy.aspx) chapter in MSDN.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
@@ -107,7 +107,7 @@ The RadialScale and LinearScale objects which inherit the GraphicScale class pro
 
 To modify the labels foreground, simply set the Foreground property of the GraphicScale object (RadialScale or LinearScale) to the desired color. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
@@ -126,7 +126,7 @@ Here is a snapshot of the result:
 
 The other way of specifying the appearance of the label is by defining an entire LabelTemplate for it, which will get applied to each of the labels. In it you can define the visual appearance of the label as you desire and bind the used elements to the data context of the template, where needed. The data context of the template would be an object of type TickLabel. You can bind to its properties as desired, but the most important of them is the FormattedValue property. It stores the display value for the label according to the label format which is specified in the scale.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="10"

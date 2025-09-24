@@ -18,7 +18,7 @@ The final result should look like the one on the snapshot below:
 
 * Create a new business object named __MessageViewModel__. It will be used to populate the __RadGridView__ with sample data.          
 
-#### __C#__
+
 
 ```C#
 	public class MessageViewModel
@@ -65,7 +65,7 @@ The final result should look like the one on the snapshot below:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MessageViewModel
@@ -122,7 +122,7 @@ The final result should look like the one on the snapshot below:
 
 * The XAML should look like the code snippet below.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView   AutoGenerateColumns="True"
@@ -166,7 +166,7 @@ The final result should look like the one on the snapshot below:
           
 * Create a new class named __DropIndicationDetails__.           
 
-#### __C#__
+
 
 ```C#
 	public class DropIndicationDetails : ViewModelBase
@@ -227,7 +227,7 @@ The final result should look like the one on the snapshot below:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class DropIndicationDetails
@@ -288,7 +288,7 @@ The final result should look like the one on the snapshot below:
 
 * Finally, the complete code for the __RowReorderBehavior__ is shown on the code snippet below.            
 
-#### __C#__
+
 
 ```C#
 	public class RowReorderBehavior
@@ -660,7 +660,7 @@ The final result should look like the one on the snapshot below:
 
 Finally, you should populate your  __RadGridView__ with sample data and attach the attached behavior:
 
-#### __C#__
+
 
 ```C#
 	public MainWindow()
@@ -672,7 +672,7 @@ Finally, you should populate your  __RadGridView__ with sample data and attach t
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

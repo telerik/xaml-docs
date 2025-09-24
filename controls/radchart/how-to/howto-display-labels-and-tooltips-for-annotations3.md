@@ -16,7 +16,7 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 
 ##### 1. To be able to see the Tooltips for MarkedZones you should re-template the Chart Area and put the Annotations Layer within the Zoom Layer. Then by using *TooltipService.ToolTip* property of the MarkedZone you can set custom tooltip:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="ChartAreaStyle" TargetType="telerik:ChartArea">

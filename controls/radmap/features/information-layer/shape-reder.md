@@ -30,7 +30,7 @@ This topic will explain the following:
 
 The __RadMap__ control supports the visualization of __ESRI Shapefiles__ and KML Data. It reads the data via the __MapShapeReader__ class implemented in the __Information Layer__.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -41,12 +41,12 @@ The __RadMap__ control supports the visualization of __ESRI Shapefiles__ and KML
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	this.informationLayer.Reader = new MapShapeReader();
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.informationLayer.Reader = New MapShapeReader()
 ```
@@ -85,7 +85,7 @@ Here is an examples for different __ToolTipFormat__ values.
 
 ## Single property value 
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -98,12 +98,12 @@ Here is an examples for different __ToolTipFormat__ values.
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	this.informationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.informationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
 ```
@@ -116,7 +116,7 @@ Here is a snapshot of the result:
 
 >Note that in this case the format string begins with "__{}__". This escapes the following __{PropertyName}__ expressions. In code behind you mustn't add it to the actual format string.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -129,12 +129,12 @@ Here is a snapshot of the result:
 	</telerik:RadMap>
 ```
     
-#### __C#__
+
 ```C#
 	this.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
 ```
     
-#### __VB.NET__
+
 ```VB.NET
 	Me.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
 ```
@@ -147,7 +147,7 @@ Here is a snapshot of the result:
 
 >Note that in this case the format string begins with "__{}__". This escapes the following __{PropertyName}__ expressions. In code behind you mustn't add it to the actual format string.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -160,12 +160,12 @@ Here is a snapshot of the result:
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	this.informationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|F2} sq.km.";
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.informationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|F2} sq.km."
 ```
@@ -180,7 +180,7 @@ The __ToolTipStyle__ property allows you to specify a Style of the tooltip that 
 
 >tip To learn how to modify the color of the shapes like on the snapshot below, you have to read the [Styling the Shapes](#styling-the-shapes) section.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -216,7 +216,7 @@ In this case the __DataTemplate__ takes as __DataContext__ the entire Extended D
 
 >The __ToolTipTemplate__ property will take precedence over the __ToolTipFormat__ one.
 
-#### __XAML__
+
 ```XAML
 	<UserControl.Resources>
 	    <telerik:ExtendedDataConverter x:Key="ExtendedDataConverter" />

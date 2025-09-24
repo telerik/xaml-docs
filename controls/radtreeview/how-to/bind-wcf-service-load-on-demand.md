@@ -16,7 +16,7 @@ Here is a simple treeview declaration:
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -42,7 +42,7 @@ Here is a simple treeview declaration:
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -69,7 +69,7 @@ Here is a simple treeview declaration:
 
 The web service will return an observable collection with objects of type __TableItem__. Here is the __TableItem__ structure: 
 
-#### __C#__
+
 
 ```C#
 	public class TableItem
@@ -101,7 +101,7 @@ The web service will return an observable collection with objects of type __Tabl
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class TableItem
@@ -153,7 +153,7 @@ The web service will return an observable collection with objects of type __Tabl
 
 Now that you have the basis set up, it's time to go on. First you should create your data source object. Add a new class named __HierarchicalDataSource__ which derives from __ObservableCollection__ of __TableItem__. 
 
-#### __C#__
+
 
 ```C#
 	public class HierarchicalDataSource : ObservableCollection<TableItem>
@@ -164,7 +164,7 @@ Now that you have the basis set up, it's time to go on. First you should create 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class HierarchicalDataSource
@@ -176,7 +176,7 @@ Now that you have the basis set up, it's time to go on. First you should create 
 
 Next, you need to add a reference to the WCF service and load the data{% if site.site_name == 'Silverlight' %} asynchronously{% endif %}. You also need a list that holds all items that come from the web service result. 
 
-#### __C#__
+
 
 ```C#
 	public class HierarchicalDataSource : ObservableCollection<TableItem>
@@ -215,7 +215,7 @@ Next, you need to add a reference to the WCF service and load the data{% if site
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class HierarchicalDataSource
@@ -251,7 +251,7 @@ Next, you need to add a reference to the WCF service and load the data{% if site
 
 Add the __FindChildren()__ method to the __HierarchicalDataSource__ file. It will find all child nodes by a given item. 
 
-#### __C#__
+
 
 ```C#
 	private void FindChildren( TableItem item )
@@ -269,7 +269,7 @@ Add the __FindChildren()__ method to the __HierarchicalDataSource__ file. It wil
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub FindChildren(ByVal item As TableItem)
@@ -288,7 +288,7 @@ Add the __FindChildren()__ method to the __HierarchicalDataSource__ file. It wil
 
 Add a public method named __LoadItemChildren()__. This method visits all current items and adds their direct children to the data source, if there are any. 
 
-#### __C#__
+
 
 ```C#
 	public void LoadItemChildren( TableItem item )
@@ -300,7 +300,7 @@ Add a public method named __LoadItemChildren()__. This method visits all current
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub LoadItemChildren(ByVal item As TableItem)
@@ -312,7 +312,7 @@ Add a public method named __LoadItemChildren()__. This method visits all current
 
 Finally add an event handler in your treeview declaration for the __Expanded__ event. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" Margin="8"
@@ -323,7 +323,7 @@ Finally add an event handler in your treeview declaration for the __Expanded__ e
 
 Switch to the code-behind and the following code to handle the event. 
 
-#### __C#__
+
 
 ```C#
 	private void radTreeView_Expanded( object sender, Telerik.Windows.RadRoutedEventArgs e )
@@ -343,7 +343,7 @@ Switch to the code-behind and the following code to handle the event.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radTreeView_Expanded(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)

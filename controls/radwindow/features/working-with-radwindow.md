@@ -18,7 +18,7 @@ In order to use the __RadWindow__ in your application you have to add a referenc
 
 After the reference is available, you can declare a __RadWindow__. Here is an example.
 
-#### __C#__
+
 
 ```C#
 	RadWindow radWindow = new RadWindow();
@@ -26,7 +26,7 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 	radWindow.Height = 300;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radWindow As New RadWindow()
@@ -42,13 +42,13 @@ When you want to display the __RadWindow__ you have two options - to display it 
 
 Call the __Show()__ method of the __RadWindow__ instance to open it as a __normal window__.
 
-#### __C#__
+
 
 ```C#
 	radWindow.Show();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radWindow.Show()
@@ -56,13 +56,13 @@ Call the __Show()__ method of the __RadWindow__ instance to open it as a __norma
 
 Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a __modal dialog window__.
 
-#### __C#__
+
 
 ```C#
 	radWindow.ShowDialog();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radWindow.ShowDialog()
@@ -82,7 +82,7 @@ If you have a window-specific content, use the __Content__ property.
 
 >The only scenario, where you can add content to the __RadWindow__ at design-time, is when the __RadWindow__ represents an entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __C#__
+
 
 ```C#
 	Grid grid = new Grid();
@@ -90,7 +90,7 @@ If you have a window-specific content, use the __Content__ property.
 	radWindow.Content = grid;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim grid As New Grid()
@@ -100,7 +100,7 @@ If you have a window-specific content, use the __Content__ property.
 
 If you want to share a common layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __ContentTemplate__ property of the __RadWindow__.
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -110,13 +110,13 @@ If you want to share a common layout structure for the content of multiple windo
 	</UserControl.Resources>
 ```
 
-#### __C#__
+
 
 ```C#
 	radWindow.ContentTemplate = this.Resources["WindowContentTemplate"] as DataTemplate;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	radWindow.ContentTemplate = TryCast(Me.Resources("WindowContentTemplate"), DataTemplate)

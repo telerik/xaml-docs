@@ -12,7 +12,7 @@ position: 3
 
 You can change the default Geometry of the default Path in the legend item. This is easy to do by setting the DefaultMarkerGeometry property. If the LegendItem object that was given to the RadLegend has its MarkerGeometry property set (as is the third item in the example below) then this is the Geometry that is used. This happens because the MarkerGeometry has a higher priority than the DefaultMarkerGeometry. This is done in order to be possible for different legend items to be presented with different geometries.        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadLegend>
 	    <telerik:RadLegend.Resources>

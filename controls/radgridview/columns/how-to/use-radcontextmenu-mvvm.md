@@ -27,7 +27,7 @@ It will show you how to do the following:
 First you need to define the context menu with menu items.
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+
 
 ```XAML
 	<local:ObjectToStringConverter x:Key="ObjectToStringConverter" />
@@ -83,7 +83,7 @@ First you need to define the context menu with menu items.
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 
 ```XAML
 	<local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
@@ -137,7 +137,7 @@ First you need to define the context menu with menu items.
 
 You need to attach the defined context menu to the column headers. 
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="telerik:GridViewHeaderCell">
@@ -150,7 +150,7 @@ You need to attach the defined context menu to the column headers.
 
 The style targeting GridViewHeaderCell will be automatically applied for the RadGridView
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource ViewModel}">
@@ -162,7 +162,7 @@ The style targeting GridViewHeaderCell will be automatically applied for the Rad
 
 The RadContextMenuXamlHolder class is defined in code behind like so:
 
-#### __C#__
+
 
 ```C#
 	[ContentProperty("ContextMenu")]
@@ -204,7 +204,7 @@ The RadContextMenuXamlHolder class is defined in code behind like so:
 The RadContextMenuXamlHolder class is defined as follows:
             
 
-#### __C#__
+
 
 ```C#
 	public class ObjectToStringConverter : IValueConverter
@@ -226,7 +226,7 @@ The RadContextMenuXamlHolder class is defined as follows:
 The implementation of the ViewModel is below:
           
 
-#### __C#__
+
 
 ```C#
 	public ViewModel()

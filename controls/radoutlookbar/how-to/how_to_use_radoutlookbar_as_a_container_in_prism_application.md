@@ -44,7 +44,7 @@ __Delete MainPage.xaml__(*along with MainPage.xaml.cs*), add a __new folder__ ca
 
 Open __ShellView.xaml__ and __add__ a __RadOutlookBar__ control. __Register__ the __RadOutlookBar__ control with __Prism’s RegionManager__ by giving it a __RegionName__. In this case, registration can happen in XAML by annotating a UIElement with a RegionName attached property.
 
-#### __XAML__
+
 ```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
@@ -70,7 +70,7 @@ The __Bootstrapper__ inherits __UnityBootstrapper__ and is the __starting point_
 
 For the moment we will do just step 1.
 
-#### __C#__
+
 ```C#
 	public void Initialize()
 	{
@@ -82,7 +82,7 @@ For the moment we will do just step 1.
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub Initialize()
 	    Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
@@ -93,7 +93,7 @@ For the moment we will do just step 1.
 
 Now we have to actually run the bootstrapper. Go to __App.xaml.cs__ and modify the __Application_Startup__ event handler.				
 
-#### __C#__
+
 ```C#
 	private void Application_Startup(object sender, StartupEventArgs e)
 	{
@@ -102,7 +102,7 @@ Now we have to actually run the bootstrapper. Go to __App.xaml.cs__ and modify t
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub Application_Startup(sender As Object, e As StartupEventArgs)
 	    Dim bootstrapper As New Bootstrapper()
@@ -128,7 +128,7 @@ Make __ModuleA__ class implement the __IModule__ interface. The __IModule__ inte
 
 ![{{ site.framework_name }} RadOutlookBar Module Prism References](images/RadOutlookBar_Prism_08.png)
 
-#### __C#__
+
 ```C#
 	public class ModuleA : IModule
 	{
@@ -148,7 +148,7 @@ Make __ModuleA__ class implement the __IModule__ interface. The __IModule__ inte
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class ModuleA
 	    Implements IModule
@@ -169,7 +169,7 @@ We will be back shortly with the implementation of the Initialize method.
 
 Now, __add a new folder__ to the __ModuleA__ class library and __call it Views__. __Add a new UserControl__ to the __Views__ folder and __call it ModuleAView__. __ModuleAView__ will contain a __RadTreeView__. Therefore, we need to add references to __Telerik.Windows.Controls.dll__ and __Telerik.Windows.Controls.Navigation.dll__ to __ModuleA__ class library. This is how __ModuleAView__ might look like:				
 
-#### __XAML__
+
 ```XAML
 	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -189,7 +189,7 @@ Now, __add a new folder__ to the __ModuleA__ class library and __call it Views__
 
 Now that we have our first view defined, we need to register it in the Initialize method.				
 
-#### __C#__
+
 ```C#
 	public void Initialized()
 	{
@@ -201,7 +201,7 @@ Now that we have our first view defined, we need to register it in the Initializ
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub Initialized()
 	    ' Register views here.'
@@ -225,7 +225,7 @@ Since we have added a module, let’s create a module catalog. First of all, add
 
 Then __open__ the __Bootstrapper__ class and __override__ the __GetModuleCatalog()__ method.				
 
-#### __C#__
+
 ```C#
 	protected override IModuleCatalog GetModuleCatalog()
 	{
@@ -235,7 +235,7 @@ Then __open__ the __Bootstrapper__ class and __override__ the __GetModuleCatalog
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Protected Overrides Function GetModuleCatalog() As IModuleCatalog
 	    Dim catalog As New ModuleCatalog()
@@ -250,7 +250,7 @@ So far, if you run the project you should get result similar to the one bellow:
 
 Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString() representation of the __ModuleAView__ class. To fix that we can add an __ItemHeader__ property to the __ModuleAView__ user control.				
 
-#### __C#__
+
 ```C#
 	public ModuleAView()
 	{
@@ -261,7 +261,7 @@ Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString(
 	public string ItemHeader { get; set; }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -281,7 +281,7 @@ Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString(
 
 Then, go to the __RadOutlookBar__’s definition in __ShellView.xaml__ and add a __DisplayMemberPath__ property pointing to __Header__.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadOutlookBar prism:RegionManager.RegionName="OutlookBarRegion" DisplayMemberPath="ItemHeader" />
 ```
@@ -292,7 +292,7 @@ Now, if you run the project, you will see that the __RadOutlookBarItem__ has a h
 
 The last thing that needs to be done is to make the __Title__ area display __ModuleA__ as well. The fastest way to do this is to use the __TextSearch__ class that is located in the __Telerik.Windows.Controls__ namespace in __Telerik.Windows.Controls.dll__.
 
-#### __C#__
+
 ```C#
 	public ModuleaView()
 	{
@@ -302,7 +302,7 @@ The last thing that needs to be done is to make the __Title__ area display __Mod
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 	    Me.InitializeComponent()
@@ -317,7 +317,7 @@ Now if you run the project, the output should be similar to the one bellow.
 
 Another approach to this scenario is to insert an actual __RadOutlookBarItem__. What I mean by that is instead of having in __ModuleAView.xaml__:				
 
-#### __XAML__
+
 ```XAML
 	<Grid Background="White">
 	    <telerik:RadTreeView>
@@ -333,7 +333,7 @@ Another approach to this scenario is to insert an actual __RadOutlookBarItem__. 
 
 You can add the __RadTreeView__ as a content to a __RadOutlookBarItem__:				
 
-#### __XAML__
+
 ```XAML
 	<Grid Background="White">
 	    <telerik:RadOutlookBarItem x:Name="outlookBarItem1" 
@@ -353,7 +353,7 @@ You can add the __RadTreeView__ as a content to a __RadOutlookBarItem__:
 
 Now, instead of having an __ItemHeader__ property, you can create a property of type __RadOutlookBarItem__ and return a reference to __outlookBarItem1__:
 
-#### __C#__
+
 ```C#
 	public ModuleAView()
 	{
@@ -368,7 +368,7 @@ Now, instead of having an __ItemHeader__ property, you can create a property of 
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -382,7 +382,7 @@ Now, instead of having an __ItemHeader__ property, you can create a property of 
 
 In the __Initialize()__ method of __ModuleA__.cs we will use the previously created __OutlookBarItem__ property:
 
-#### __C#__
+
 ```C#
 	public void Initialize()
 	{
@@ -394,7 +394,7 @@ In the __Initialize()__ method of __ModuleA__.cs we will use the previously crea
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub Initialize()
 	    Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
@@ -409,7 +409,7 @@ Remove __DisplayMemeberPath__ from __RadOutlookBar’s__ definition in __ShellVi
 
 The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView.xaml__ is a child of __ModuleAView__, but we are adding it to __RadOutlookBar__ as well. Thus the problem, one and the same visual element cannot appear on more than one place in the visual tree of the application. To overcome this issue, in the constructor of __ModuleAView__ we need to remove whatever is in __LayoutRoot__.				
 
-#### __C#__
+
 ```C#
 	public ModuleAView()
 	{
@@ -426,7 +426,7 @@ The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()

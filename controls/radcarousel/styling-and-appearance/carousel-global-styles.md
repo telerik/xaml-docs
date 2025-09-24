@@ -20,7 +20,7 @@ In order to override the default style of the container item we have to create a
 >Namespace mapping:
 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
-#### __XAML__
+
 
 ```XAML
 	  <Style TargetType="{x:Type telerik:CarouselItem}">
@@ -47,7 +47,7 @@ One very important thing to note here is the __ContentPresenter__ that we have i
 
 Now that we have styled the __CarouselItem__ we need to create a new style for the __CarouselDataRecordPresenter__ – the class that will actually display our data.
 
-#### __XAML__
+
 
 ```XAML
 	  <Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">

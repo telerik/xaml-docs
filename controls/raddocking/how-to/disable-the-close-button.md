@@ -26,7 +26,7 @@ The first way to disable the close button is to simply __hide__ it. In order to 
 
 Here is a simple __RadDocking__ declaration with a single pane.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking">
@@ -48,7 +48,7 @@ As you can see, by default the close button is enabled and you can close the pan
 
 So, find your __RadPane__ declaration and set the following attribute:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPane CanUserClose="False"/>
@@ -60,7 +60,7 @@ Now, if you run your application, the close button will be no longer visible.
 
 The same operation can be done in the code-behind. In order to do that, set the __CanUserClose__ property on an instance of the __RadPane__ class to __false__.
 
-#### __C#__
+
 
 ```C#
 	private void HideTheCloseButton()
@@ -69,7 +69,7 @@ The same operation can be done in the code-behind. In order to do that, set the 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub HideTheCloseButton()
@@ -85,7 +85,7 @@ The same operation can be done in the code-behind. In order to do that, set the 
 
 The second way to disable the close button is to handle the __PreviewClose__ event. So if you take a look again at the initial RadDocking declaration, attach to the __PreviewClose__ event of the __RadDocking__ class.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking1" PreviewClose="radDocking_PreviewClose">
@@ -93,7 +93,7 @@ The second way to disable the close button is to handle the __PreviewClose__ eve
 
 Switch to the code-behind and add the following code in the event handler:
 
-#### __C#__
+
 
 ```C#
 	private void radDocking_PreviewClose(object sender, Telerik.Windows.Controls.Docking.StateChangeEventArgs e)
@@ -102,7 +102,7 @@ Switch to the code-behind and add the following code in the event handler:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radDocking_PreviewClose(ByVal sender As Object, ByVal e As StateChangeEventArgs)

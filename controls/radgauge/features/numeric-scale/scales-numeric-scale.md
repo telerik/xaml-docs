@@ -26,7 +26,7 @@ Here is the list of the __NumericScale__ features:
 
 To specify maximum and minimum values for the scale use the __Min__ and __Max__ properties. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:NumericScale Min="0" Max="1000">
 	</telerik:NumericScale>
@@ -36,7 +36,7 @@ To specify maximum and minimum values for the scale use the __Min__ and __Max__ 
 
 The __Multiplier__ property of the __NumericScale__ allows you to apply a multiplier to the current value displayed by the scale. Here is an example of a __NumericScale__ which multiplies its value by 10.
 
-#### __XAML__
+
 ```XAML
 	<telerik:NumericScale Min="0"
 	                      Max="1000"
@@ -52,7 +52,7 @@ The __NumericScale__ typically uses a __NumericIndicator__ control to display it
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0" Max="100"/>

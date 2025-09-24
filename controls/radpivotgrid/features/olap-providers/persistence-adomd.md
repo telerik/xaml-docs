@@ -25,7 +25,7 @@ We've added the DataContract attribute to all classes used by AdomdDataProvider.
 
 So lets create a simple class that we'll use to save and load DataProviderSettings. You have to add the DataContract attribute to the new class and DataMember attribute for its properties.        
 
-#### __C#__
+
 
 ```C#
 	[DataContract]
@@ -51,7 +51,7 @@ So lets create a simple class that we'll use to save and load DataProviderSettin
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	<DataContract> _
@@ -78,7 +78,7 @@ So lets create a simple class that we'll use to save and load DataProviderSettin
 
 The next step is to create a new class, which implements __Telerik.Windows.Persistence.Services.IValueProvider__. *IValueProvider* has two methods that you will have to implement - *ProvideValue* and *RestoreValue*. The first one is used when the data is saved. The second one is used when the data is restored from a previously saved state. When saving the provider, you have to create an instance of *DataProviderSettings* class and set all of the properties. After that you can save the instance to a file or a stream. When using DataContractSerializer you have to give a collection of KnownTypes to the serializer. That's why we've created a new __PivotSerializationHelper__ class which has a static member - KnownTypes. It consits of all types you'll need in order to serialize AdomdDataProvider. Here's an example how to implement it:        
 
-#### __C#__
+
 
 ```C#
 	public abstract class DataProviderValueProvider : IValueProvider
@@ -172,7 +172,7 @@ The next step is to create a new class, which implements __Telerik.Windows.Persi
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public MustInherit Class DataProviderValueProvider
@@ -252,7 +252,7 @@ The next step is to create a new class, which implements __Telerik.Windows.Persi
 
 So the last step is to register a persistence provider and implement the logic to save and load the state of AdomdDataProvider:        
 
-#### __C#__
+
 
 ```C#
 	Stream stream = new MemoryStream();
@@ -268,7 +268,7 @@ So the last step is to register a persistence provider and implement the logic t
 	manager.Load(this.pivotGrid.DataProvider, this.stream);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim stream As Stream = New MemoryStream()

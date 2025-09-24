@@ -14,7 +14,7 @@ The current version of Silverlight does not support direct XML binding but __LIN
 
 The __DataSource.xml__ file has the following content:
 
-#### __XAML__
+
 
 ```XAML
 	<ChosenDates>
@@ -31,7 +31,7 @@ The __DataSource.xml__ file has the following content:
 
 The following code snippet loads the file and extracts the Date nodes out of it, then assigns the respective dates as selection:
 
-#### __C#__
+
 
 ```C#
 	// Make sure that more than one date can be selected:

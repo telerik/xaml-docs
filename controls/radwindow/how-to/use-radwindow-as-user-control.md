@@ -14,7 +14,7 @@ If you want to prepare the __RadWindow__ at design-time or use it as the {% if s
 
 First open the XAML file and replace the generated declaration with a __RadWindow__ declaration. Here is a sample code:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadWindow x:Class="RadWindowSamples.MainWindow"
@@ -29,7 +29,7 @@ First open the XAML file and replace the generated declaration with a __RadWindo
 
 Also in the code behind your user control should inherit the __RadWindow__ instead of the __UserControl__ class.
 
-#### __C#__
+
 
 ```C#
 	public partial class MainWindow : RadWindow
@@ -41,7 +41,7 @@ Also in the code behind your user control should inherit the __RadWindow__ inste
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Partial Public Class MainWindow
@@ -58,13 +58,13 @@ In the XAML you can declare the content of the __RadWindow__ directly in XAML an
 
 As this is an user control of type __RadWindow__ you can use any of the features that are provided by the __RadWindow__. So if you want to show it, you have to call the __Show()__ method.
 
-#### __C#__  
+  
 ```C#
 	MainWindow window = new MainWindow();
 	window.Show();
 ```
 
-#### __VB.NET__  
+  
 ```VB.NET
 	Dim window As New MainWindow()
 	window.Show()
@@ -72,7 +72,7 @@ As this is an user control of type __RadWindow__ you can use any of the features
 
 If you want to use RadWindow as the main window of the application, remove the __StartupUri__ setting in the App.xaml file.
 
-#### __XAML__  
+  
 ```XAML
 	<Application x:Class="RadWindowSamples.App"
 				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -86,7 +86,7 @@ If you want to use RadWindow as the main window of the application, remove the _
 
 Then create a new instance of the custom RadWindow and show it in the __OnStartup__ method override of the __App__ class.
 
-#### __C#__  
+  
 ```C#
 	public partial class App : Application
 	{
@@ -98,7 +98,7 @@ Then create a new instance of the custom RadWindow and show it in the __OnStartu
 	}
 ```
 
-#### __VB.NET__  
+  
 ```VB.NET
 	Public Partial Class App
 	    Inherits Application
@@ -111,7 +111,7 @@ Then create a new instance of the custom RadWindow and show it in the __OnStartu
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, note that the newly created user control will not receive automatically the Window style. You should add the following style after the merged dictionaries to fix this:
 
-#### __XAML__  
+  
 ```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
@@ -129,7 +129,7 @@ The important part is setting __TargetType__ property to the type of the user co
 
 >In addition, due to a change in the XAML Designer in Visual Studio version 16.9 (and newer), if the RadWindow is used as Main Window or UserControl, it will __not__ be displayed in design time. To display it, you need to apply the following explicit style:
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadWindow (namespaces omitted) ... Style="{StaticResource RadWindowStyle}"/>
 ```

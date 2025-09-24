@@ -50,7 +50,7 @@ Here is a list of the common mouse events exposed by __RadGridView__, __GridView
 
 In the example below you can see how to attach to __MouseWheel__ event from XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView" MouseWheel="radGridView_MouseWheel" />
@@ -61,7 +61,7 @@ In the example below you can see how to attach to __MouseWheel__ event from XAML
 
 The implementation of the event handler __radGridView_MouseWheel__ is located in the code-behind file (C# or VB.NET) and looks like this:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_MouseWheel(object sender, MouseWheelEventArgs e)
@@ -70,7 +70,7 @@ The implementation of the event handler __radGridView_MouseWheel__ is located in
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_MouseWheel(ByVal sender As Object, ByVal e As MouseWheelEventArgs)
@@ -81,14 +81,14 @@ The implementation of the event handler __radGridView_MouseWheel__ is located in
 The RadGridView actually uses and handles many of the mouse events. If you would like to handle them yourself, you should use the AddHandler() method of the GridView and set True for the __HandledEventsToo__ input parameter.
         
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.AddHandler(RadGridView.MouseWheelEvent, new MouseWheelEventHandler(radGridView_MouseWheel), true);
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radGridView.AddHandler(RadGridView.MouseWheelEvent, New MouseWheelEventHandler(AddressOf radGridView_MouseWheel), True)

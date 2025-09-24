@@ -22,7 +22,7 @@ In the following example the Calendar has DisplayDateStart set to 6 Aug, while t
 
 The __RadCalendar__ has several static methods (__IsDisplayDateValid__, __IsDisplayDateStartValid__, __IsDisplayDateEndValid__, __IsSelectableDateStartValid__, __IsSelectableDateEndValid__) that can check whether the desired values are valid for the given calendar, for example:
 
-#### __C#__
+
 
 ```C#
 	if (RadCalendar.IsDisplayDateValid(calendar, DateTime.Today))

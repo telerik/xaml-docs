@@ -33,7 +33,7 @@ To modify the base of the logarithmic scale, set the __LogarithmicBase__ propert
 
 The scale elements like tick mark, label or indicator can have dynamically changed tooltip associated with it. This behavior is controlled by TootipFormat property which can be set at the correspondent property element:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadHorizontalLinearGauge Grid.Column="2" Width="250" Height="100" telerik:StyleManager.Theme="Windows8">
 	    <telerik:HorizontalLinearScale Min="0" Max="100"

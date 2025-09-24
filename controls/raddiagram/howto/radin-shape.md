@@ -16,7 +16,7 @@ As the __RadDiagramShape__ essentially derives from a __ContentControl__, its __
 
 Let's start by defining a __RadDiagram__ instance in our view:
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
@@ -38,7 +38,7 @@ Let's start by defining a __RadDiagram__ instance in our view:
 
 Next, we can add a __RadDiagramShape__ that contains a __RadGridView__ component. We will define these controls in our XAML view:
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
@@ -80,7 +80,7 @@ If you run the solution at this point, you should get the following diagramming 
 
 And as our __RadGridView__ is currently empty, we can go ahead and populate it with sample data. For that purpose, we first need to define a custom data class - let's name it *ProductSales*:
 
-#### __C#__
+
 
 ```C#
 	public class ProductSales
@@ -98,7 +98,7 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ProductSales
@@ -140,7 +140,7 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 
 Next in our code-behind we can create a method that returns a list of __ProductSales__ and use its result as a __DataContext__ of the view:        
 
-#### __C#__
+
 
 ```C#
 	private static List<ProductSales> GetProductSales()
@@ -169,7 +169,7 @@ Next in our code-behind we can create a method that returns a list of __ProductS
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Shared Function GetProductSales() As List(Of ProductSales)
@@ -200,7 +200,7 @@ Now if we run the solution we will have a populated __RadGridView__ control insi
 
 We can also define a shape in the code-behind file and set its content to any RadControl. Please have a look at the example below as it demonstrates how to create a __RadDiagramShape__ and use a __RadCalendar__ in its __Content__:
 
-#### __C#__
+
 
 ```C#
 	public Example()
@@ -229,7 +229,7 @@ We can also define a shape in the code-behind file and set its content to any Ra
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -264,7 +264,7 @@ Running the project now should display two shapes within the __RadDiagram__ inst
 
 Finally, we can connect these shapes using a single connection. Let's set it up in the __OnLoaded()__ method implementation:
 
-#### __C#__
+
 
 ```C#
 	private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
@@ -284,7 +284,7 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnLoaded(sender As Object, routedEventArgs As RoutedEventArgs) '

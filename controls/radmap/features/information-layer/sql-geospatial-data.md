@@ -32,7 +32,7 @@ The __SqlGeospatialDataReader__ supports the following geometry types:
 
 The coordinates for geometries may be 2D (x, y), 3D (x, y, z), 4D (x, y, z, m) with an m value that is part of a linear referencing system or 2D with an m value (x, y, m). However the __SqlGeospatialDataReader__ uses the x and y coordinates only, so that the z and m coordinates will be ignored. The __SqlGeospatialDataReader__ can be used in the InformationLayer.Reader property the same way as the MapShapeReader. The sample code is below:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:InformationLayer x:Name="informationLayer">
 	    <telerik:InformationLayer.Reader>
@@ -72,7 +72,7 @@ Also the __SqlGeospatialDataReader__ can use any custom data class which impleme
 If you use *Entity Data Model*, *Linq to SQL* or *Telerik OpenAccess Domain Model* in your WPF application, then you can use the following sample XAML code to display your geospatial data: 
 {% endif %}
 
-#### __XAML__
+
 ```XAML
 	<Window x:Class="EntityDataModelTest.MainWindow"
 	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -108,7 +108,7 @@ If you use *Entity Data Model*, *Linq to SQL* or *Telerik OpenAccess Domain Mode
 If you use *Wcf Data Service* or *Domain Service* in your Silverlight application, then their instances cannot be used directly to get the geospatial table data for the __SqlGeospatialDataReader__. Source property. In this case the geospatial data is retrieved asynchronously. So, you should use the __Completed__ event to set the *SqlGeospatialDataReader.Source*. It will be useful to use the small proxy class like to the following sample class for *Domain Service*:
 {% endif %}
 
-#### __C#__
+
 ```C#
 	public class DomainServiceContext : INotifyPropertyChanged
 	{
@@ -153,7 +153,7 @@ If you use *Wcf Data Service* or *Domain Service* in your Silverlight applicatio
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class DataBaseContext
 	      Inherits Database1Entities1

@@ -36,7 +36,7 @@ You can do this by:
 
 First you have to define your __RadDateTimePicker__ control and point out that you want to implement the __ParseDateTimeValue__ event.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" 
@@ -45,7 +45,7 @@ First you have to define your __RadDateTimePicker__ control and point out that y
 
 Then in the event handler you can provide the parsing logic. For the current example you have to get the entered text and check if it represents a valid month's name.
 
-#### __C#__
+
 
 ```C#
 	private void radDateTimePicker_ParseDateTimeValue(object sender, Telerik.Windows.Controls.ParseDateTimeEventArgs args)
@@ -70,7 +70,7 @@ Then in the event handler you can provide the parsing logic. For the current exa
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radDateTimePicker_ParseDateTimeValue(sender As Object, args As Telerik.Windows.Controls.ParseDateTimeEventArgs)

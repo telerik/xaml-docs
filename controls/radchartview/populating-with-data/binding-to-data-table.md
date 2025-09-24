@@ -14,7 +14,7 @@ In this section we will demonstrated how to bind a ChartView to a DataTable.
 
 For the basis of this article we will declare a Bar Chart which is represented by the RadCartesianChart class. Here is the XAML declaration:        
 
-#### __XAML__
+
 ```XAML
 	<Grid>
 	    <Grid.RowDefinitions>
@@ -48,7 +48,7 @@ For the basis of this article we will declare a Bar Chart which is represented b
 
 Next we will decalare a sample DataTable, containing 3 columns - actual (of type double), expected(of type double), month(of type DateTime). The "Actual" column will be the value source for the barSeries1 and the "Expected" - respectively for barSeries2. The values of the "Month" column will serve as the categories for both of these series.        
 
-#### __C#__
+
 ```C#
 	DataTable dt = new DataTable();
 	dt.Columns.Add("Expected", typeof(double));
@@ -65,7 +65,7 @@ Next we will decalare a sample DataTable, containing 3 columns - actual (of type
 	this.DataContext = dt.Rows;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim dt As New DataTable()
 	dt.Columns.Add("Expected", GetType(Double))
@@ -92,7 +92,7 @@ The ChartView will automatically traverse the the DataRowsCollection of the Data
 
 Using lambda syntax (as shown below) we set the path to the values in the DataTable for the bar series to use.        
 
-#### __C#__
+
 ```C#
 	this.barSeries1.ValueBinding = new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, double>() 
 	{
@@ -115,7 +115,7 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 	};
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.barSeries1.ValueBinding = New Telerik.Windows.Controls.ChartView.GenericDataPointBinding(Of DataRow, Double)() With { _
 		.ValueSelector = Function(row) CDbl(row("Actual")) _

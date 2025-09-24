@@ -16,7 +16,7 @@ This article describes how you can create a custom SpecialSlot, add custom prope
 
 Let's for example have the following RadScheduleView grouped by "Calendar" ResourceType:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
@@ -44,7 +44,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 * First, create a class which inherits __Telerik.Windows.Controls.ScheduleView.Slot__ class:
 
-#### __C#__
+
 
 ```C#
 	public class BreakSlot : Slot
@@ -81,7 +81,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 * Then you should create the collection of __BreakSlot__ objects and set their additional properties:
 
-#### __C#__
+
 
 ```C#
 	this.SpecialSlots = new ObservableCollection<Slot>()
@@ -101,7 +101,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 * The next step is to create the __ScheduleViewStyleSelector__ class:
 
-#### __C#__
+
 
 ```C#
 	public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
@@ -134,7 +134,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 * and to define the Style:
 
-#### __XAML__
+
 
 ```XAML
 	<local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
@@ -161,7 +161,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 
 * Finally, bind them to __SpecialSlotsSource__ and __SpecialSlotsStyleSelector__ properties:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"

@@ -18,7 +18,7 @@ There are scenarios in which you have too much Items in the Chart Legend. Since 
 One possible solution is to decrease FontSize value of text and retemplate the LegendItemMarker to decreaze it's size too. This help topic will demonstrate another approach - how to add *ScrollViewer* (horizontal or/and vertical) in order to be able to show large number of chart legend items in a limited space.
 For the purpose you should retemplate the default Legend Style and add ScrollViewer in it:
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -113,7 +113,7 @@ For the purpose you should retemplate the default Legend Style and add ScrollVie
 
 The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help/silverlight/radchart-features-chart-legend.html) set to DataPointLabel so that all Items in the Chart has LegendLabels:
 
-#### __C#__
+
 
 ```C#
 	public MainPage()
@@ -134,7 +134,7 @@ The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()

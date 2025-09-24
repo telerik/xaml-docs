@@ -17,7 +17,7 @@ position: 0
 The __Ticks__ property allows you to place marks(ticks) along the track in a __non-uniform__ manner, unlike the __TickFrequency__ property which places the ticks on equal intervals. The __Ticks__ property is of type __DoubleCollection__ and its default value is null. This property has to be combined with setting __TickPlacement__ to something different than __None__.
         
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Maximum="10" Ticks="3,5,7" TickPlacement="TopLeft" />
@@ -25,7 +25,7 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 
 
 
-#### __C#__
+
 
 ```C#
 	RadSlider radSlider1 = new RadSlider();
@@ -41,7 +41,7 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radSlider1 As New RadSlider()
@@ -59,7 +59,7 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 
 The __TickFrequency__ property on the other hand allows you to place marks(ticks) along the track in a __uniform__ manner. On the example bellow, since the __Maximum__ is 10 and the __TickFrequency__ is 2, this means that there will be tick marks at 0, 2, 4, 6, 8 and 10.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadSlider Maximum="10" TickFrequency="2" TickPlacement="BottomRight" />

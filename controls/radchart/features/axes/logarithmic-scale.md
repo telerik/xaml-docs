@@ -18,7 +18,7 @@ If you have a very large range of values on the Y-Axis, the points with the smal
 
 Here is an example of a __RadChart__ that visualizes the following values - 10, 100, 1000, 10000, 100000, 1000000.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" />
@@ -26,7 +26,7 @@ Here is an example of a __RadChart__ that visualizes the following values - 10, 
 
 
 
-#### __C#__
+
 
 ```C#
 	this.radChart.ItemsSource = new int[] { 10, 100, 1000, 10000, 100000, 1000000 };
@@ -34,7 +34,7 @@ Here is an example of a __RadChart__ that visualizes the following values - 10, 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.ItemsSource = New Integer() {10, 100, 1000, 10000, 100000, 1000000}
@@ -44,7 +44,7 @@ Here is an example of a __RadChart__ that visualizes the following values - 10, 
 
 Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -64,7 +64,7 @@ Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
 
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = true;
@@ -72,7 +72,7 @@ Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = True

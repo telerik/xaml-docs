@@ -71,7 +71,7 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
 
 #### Example 1: Setting CheckBox properties
 
-#### __C#__
+
 
 ```C#
 
@@ -100,7 +100,7 @@ The __ComboBox__ and __DropDownList__ provide the user with options to choose fr
 
 #### Example 2: Setting ComboBox properties
 
-#### __C#__
+
 
 ```C#
 
@@ -124,7 +124,7 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 
 #### Example 3: Setting Date properties
 
-#### __C#__
+
 
 ```C#
 
@@ -143,7 +143,7 @@ The __Text__ content control allows you to enter plain text. The text content co
 
 #### Example 4: Setting Text properties
 
-#### __C#__
+
 
 ```C#
 
@@ -158,7 +158,7 @@ The __Text__ content control allows you to enter plain text. The text content co
 
 #### Example 5: Setting RepeatingSection properties
 
-#### __C#__
+
 
 ```C#
 

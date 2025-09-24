@@ -18,14 +18,14 @@ The user can move the window by clicking on the __RadWindow__'s header and then 
 
 To disable the moving of the __RadWindow__ via the UI you have to set the __CanMove__ property to __False__.
 
-#### __C#__
+
 
 ```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.CanMove = false;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radWindow As New RadWindow()

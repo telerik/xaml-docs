@@ -15,19 +15,19 @@ The purpose of this topic is to show you how to change the __RadRibbonView__'s _
 
 The RadRibbonView exposes a string property named __Title__, which should be used in such cases.		
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadRibbonView x:Name="xRibbonView" Title="RadRibbonView Demo" />
 ```
 
-#### __C#__
+
 
 ```C#
 	xRibbonView.Title = "RadRibbonView Demo";
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	xRibbonView.Title = "RadRibbonView Demo";

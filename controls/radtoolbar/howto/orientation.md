@@ -24,7 +24,7 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 <!-- -->
 > Sometime it is necessary to adjust the horizontal and vertical alignments when you have changed the orientation - all this depends on the container that holds the __ToolBar__ or the tray control.					
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -32,7 +32,7 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 	<telerik:RadToolBarTray Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" />
 ```
 
-#### __C#__
+
 
 ```C#
 	using Telerik.Windows.Controls;
@@ -60,7 +60,7 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Imports Telerik.Windows.Controls

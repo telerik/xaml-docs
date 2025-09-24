@@ -32,7 +32,7 @@ We will go through each of them separately.
 
 SingleRangeGenerator allows you view the whole TimeRuler specified by the visible range of RadGanttView. It can be set like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}">
@@ -58,7 +58,7 @@ WeekDaysGenerator allows you to filter the TimeRuler on certain week days. It pr
 
 So it can be used to mark the working days, for example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}">
@@ -78,7 +78,7 @@ And here is the end result:
 
 In RadGanttView it is possible to implement a custom IRangeGenerator. You just need to create a custom class which implements IRangeGenerator interface and implement GetRanges method which receives as a parameter the current VisibleRange of the GanttView. The code snipped represents a sample Custom IRangeGenerator:
 
-#### __C#__
+
 
 ```C#
 	public class CustomRangeGenerator : ViewModelBase, IRangeGenerator
@@ -100,7 +100,7 @@ In RadGanttView it is possible to implement a custom IRangeGenerator. You just n
 
 All that's left is to set the newly created class to the TimeLineFilteringBehavior property:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}">

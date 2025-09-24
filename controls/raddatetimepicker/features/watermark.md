@@ -22,7 +22,7 @@ The Watermark is represented by a regular __RadWatermarkTextBox__ control. You c
 
 The __DateTimeWatermarkContent__ is the simplest way to change the watermark's content. For example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker DateTimeWatermarkContent="Enter departure date"/>
@@ -32,7 +32,7 @@ The __DateTimeWatermarkContent__ is the simplest way to change the watermark's c
 
 If you want to further customize the watermark you need to set the __DateTimeWatermarkTemplate__. This property is of type __DataTemplate__ and lets you take full control of the watermark representation. For example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker Width="200">

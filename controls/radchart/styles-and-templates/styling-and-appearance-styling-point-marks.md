@@ -28,7 +28,7 @@ The easiest approach that you can use in order to style the point marks is to us
 
 For example, you can change the appearance of the point marks for a __LineSeries__ in the following way.
 
-#### __C#__
+
 
 ```C#
 	LineSeriesDefinition l = new LineSeriesDefinition();
@@ -41,7 +41,7 @@ For example, you can change the appearance of the point marks for a __LineSeries
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim l As New LineSeriesDefinition()
@@ -66,7 +66,7 @@ __Customize Scatter/Bubble Series__
 
 Changing the shape of the pointmark can be done by retemplating the Scatter/Point control (the class that represents 1 point on the screen). You can create a custom style for your scatter points as shown below and apply it to the series via __ItemStyle__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="CustomPoint" TargetType="telerik:PointMark">

@@ -38,7 +38,7 @@ This section covers the following properties:
 
 Here is a small sample, demonstrating the usage of some of the above properties.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView GridLinesVisibility="Vertical"
@@ -65,7 +65,7 @@ This section covers the following properties:
 
 Here is a small sample, demonstrating the usage of some of the above properties.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
@@ -91,7 +91,7 @@ This section covers the following properties:
 
 Here is a small sample, demonstrating the usage of some of the above properties.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView RowIndicatorVisibility="Collapsed"
@@ -125,7 +125,7 @@ This section covers the following properties:
 
 Here is a small sample, demonstrating the usage of some of the above properties.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView ShowGroupFooters="True" ShowGroupPanel="False">

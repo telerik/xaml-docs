@@ -14,7 +14,7 @@ position: 2
 
 And now you can create a descriptor:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:FilterDescriptor Member="Country"
@@ -23,7 +23,7 @@ And now you can create a descriptor:
 	              IsCaseSensitive="True" />
 ```
 
-#### __C#__
+
 
 ```C#
 	FilterDescriptor descriptor = new FilterDescriptor();
@@ -33,7 +33,7 @@ And now you can create a descriptor:
 	descriptor.IsCaseSensitive = true;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim descriptor As New FilterDescriptor()
@@ -53,7 +53,7 @@ And now you can create a descriptor:
 
 To use the created descriptor to filter the data in the __RadGridView__ you have to add it to the __FilterDescriptors__ collection. You can declare as many filter descriptors as needed.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView">
@@ -68,13 +68,13 @@ To use the created descriptor to filter the data in the __RadGridView__ you have
 
 When you add a new descriptor to the collection, the data is automatically filtered according to it.
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.FilterDescriptors.Add(descriptor);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radGridView.FilterDescriptors.Add(descriptor)

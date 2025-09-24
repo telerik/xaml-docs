@@ -16,7 +16,7 @@ Assuming that you want to visualize a sample Windows Explorer structure - severa
 
 Create new interface that will represent the basic information for the files/folders:
 
-#### __C#__
+
 
 ```C#
 	public interface IDiskItem
@@ -27,7 +27,7 @@ Create new interface that will represent the basic information for the files/fol
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Interface IDiskItem
@@ -47,7 +47,7 @@ The Children collection can be substituted with any source that implements one o
 
 Add two new classes -> *File* and *Folder* that implement the above interface:		
 
-#### __C#__
+
 
 ```C#
 	public class Folder : IDiskItem
@@ -120,7 +120,7 @@ Add two new classes -> *File* and *Folder* that implement the above interface:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Folder
@@ -215,7 +215,7 @@ Add two new classes -> *File* and *Folder* that implement the above interface:
 
 In *XAML* add two __TypeDefinitions__ using the *__TypeDefinitions__* collection - one for the File and one for the Folder. The __ValuePath__ property specifies from where the data for the values should be taken. You may also control the Labels that are to be displayed for each tile using the __LabelPath__ property. Note how the __ChildrenPath__ property specifies the children of the Folder TypeDefinition:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeMap Name="treeMap1">
@@ -228,7 +228,7 @@ In *XAML* add two __TypeDefinitions__ using the *__TypeDefinitions__* collection
 
 Here is a sample datasource:
 
-#### __C#__
+
 
 ```C#
 	public MainPage() // MainWindow in WPF
@@ -247,7 +247,7 @@ Here is a sample datasource:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New() ' MainWindow in WPF '

@@ -14,7 +14,7 @@ To hide the header row you can use the __HeaderVisibility__ property and set the
 
 ![{{ site.framework_name }} RadOutlookBar Hide the Header Row](images/ob_headervisibility.png)
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadOutlookBar x:Name="RadOutlookBar1" HeaderVisibility="Collapsed">
 	    <telerik:RadOutlookBarItem Header="Item 1">

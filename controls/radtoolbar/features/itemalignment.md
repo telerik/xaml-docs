@@ -16,7 +16,7 @@ Since our __Q3 2014__ official release the __RadToolBar__ provides a mechanism t
 
 The code that produces this layout is the following:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadToolBar>
 		<telerik:RadButton Content="FILE" />
@@ -32,7 +32,7 @@ There are numerous scenarios where an element is needed to be aligned on the opp
 
 ![radtoolbar-alignment 2](images/radtoolbar-alignment2.png)
 
-#### __XAML__	
+	
 ```XAML
 	<telerik:RadToolBar>
 		<telerik:RadButton Content="FILE" />
@@ -48,7 +48,7 @@ In case that there are several elements aligned to the right, the first defined 
 
 This code will produce the result in Figure 3.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadToolBar>
 		<telerik:RadButton Content="FILE"/>
@@ -64,7 +64,7 @@ This code will produce the result in Figure 3.
 
 If you configure the __RadToolBar__ to be vertical, the __Left__ setting of the __ItemAlignment__ property will act as __Top__ and the __Right__ - as __Bottom__. The result of the following code is visualized on Figure 4.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadToolBar Orientation="Vertical">
 		<telerik:RadButton Content="FILE"/>

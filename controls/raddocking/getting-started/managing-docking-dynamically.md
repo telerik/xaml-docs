@@ -40,7 +40,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 
 For the purpose of this tutorial the following __RadDocking__ declaration will be used:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking">
@@ -62,7 +62,7 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 
 * Using the __MakeFloatingDockable()__ method 
 
-#### __C#__
+
 
 ```C#
 	private void MakeFloatingDockable()
@@ -71,7 +71,7 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub MakeFloatingDockable()
@@ -81,7 +81,7 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 
 * Using the __MakeFloatingOnly()__ method 
 
-#### __C#__
+
 
 ```C#
 	private void MakeFloatingOnly()
@@ -90,7 +90,7 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub MakeFloatingOnly()
@@ -112,7 +112,7 @@ In order to make a pane floatable during design-time, you need to set the __Init
 
 * Using the __FloatingDockable__ initial position 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking1">
@@ -128,7 +128,7 @@ In order to make a pane floatable during design-time, you need to set the __Init
 
 * Using the __FloatingOnly__ initial position 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking2">
@@ -148,7 +148,7 @@ In order to make a pane floatable during design-time, you need to set the __Init
 
 In order to make a pane dockable, you need to invoke the __MakeDockable()__ method of an instance of the __RadPane__ class.
 
-#### __C#__
+
 
 ```C#
 	private void MakeDockable()
@@ -157,7 +157,7 @@ In order to make a pane dockable, you need to invoke the __MakeDockable()__ meth
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub MakeDockable()
@@ -173,7 +173,7 @@ In order to make a pane dockable, you need to invoke the __MakeDockable()__ meth
 
 In order to make a pane dockable during design-time, you need to set the __InitialPosition__ property of the respective [RadSplitContainer]({%slug raddocking-features-split-container%}) to __FloatingDockable__, like it is shown in the code below.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking3">
@@ -193,13 +193,13 @@ In order to make a pane dockable during design-time, you need to set the __Initi
 
 In order to dock a pane in the code-behind, you need to use the __AddItem__ method of the [RadGroupPane]({%slug raddocking-features-pane-groups%}) class.
 
-#### __C#__
+
 
 ```C#
 	public void AddItem(RadPane item, DockPosition dockPosition) { }
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub AddItem(ByVal item As RadPane, ByVal dockPosition As DockPosition)
@@ -212,7 +212,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 
 * __DockedLeft__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking4">
@@ -230,7 +230,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 
 * __DockedTop__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking5">
@@ -248,7 +248,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 
 * __DockedRight__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking6">
@@ -266,7 +266,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 
 * __DockedBottom__
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking7">
@@ -286,7 +286,7 @@ In order to dock a pane during design-time, you need to set the __InitialPositio
 
 In order to __pin__ a pane in the code-behind, you need to set the __IsPinned__ property of the __RadPane__ class to __True__.
 
-#### __C#__
+
 
 ```C#
 	private void PinPane()
@@ -295,7 +295,7 @@ In order to __pin__ a pane in the code-behind, you need to set the __IsPinned__ 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub PinPane()
@@ -305,7 +305,7 @@ In order to __pin__ a pane in the code-behind, you need to set the __IsPinned__ 
 
 Respectively, in order to __unpin__ a pane in the code-behind, you need to set the __IsPinned__ property of the __RadPane__ class to __False__.
 
-#### __C#__
+
 
 ```C#
 	private void UnpinPane()
@@ -314,7 +314,7 @@ Respectively, in order to __unpin__ a pane in the code-behind, you need to set t
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub UnpinPane()
@@ -330,7 +330,7 @@ In order to __pin__ a pane in XAML, you need to set the __IsPinned__ attribute o
 
 Respectively, in order to __unpin__ a pane in XAML, you need to set the __IsPinned__ attribute of the RadPane to __False__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking8">
@@ -348,7 +348,7 @@ Respectively, in order to __unpin__ a pane in XAML, you need to set the __IsPinn
 
 If you want to close a pane in the code-behind, then you need to set the __IsHidden__ property of the __RadPane__ class to __True__.
 
-#### __C#__
+
 
 ```C#
 	private void ClosePane()
@@ -357,7 +357,7 @@ If you want to close a pane in the code-behind, then you need to set the __IsHid
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub ClosePane()

@@ -25,7 +25,7 @@ TimelineViewDefinition	|	CurrentDate	|	7
 
 For advanced customization of the VisibleRange the ViewDefinitionBase class provides two virtual methods:				
 
-#### __C#__
+
 
 ```C#
 	protected virtual DateTime GetVisibleRangeStart (DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
@@ -35,7 +35,7 @@ For advanced customization of the VisibleRange the ViewDefinitionBase class prov
 
 For example, the following class represents a MonthViewDefinition that starts from the first week of CurrentDate:   				
 
-#### __C#__
+
 
 ```C#
 	public class CustomMonthViewDefinition : MonthViewDefinition
@@ -51,7 +51,7 @@ Since VisibleDays is 42 by default, this CustomMonthViewDefinition will display 
 
 Here is how to use the CustomMonthViewDefinition:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView>

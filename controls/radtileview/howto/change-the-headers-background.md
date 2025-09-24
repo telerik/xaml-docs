@@ -17,7 +17,7 @@ The final result should look like this:
 
 The __Header__ of the __RadTileViewItem__ is designed as a separate __ContentControl__ and you can apply a custom style to it. In order to do this you have to add the following namespace into your application:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:tileView="clr-namespace:Telerik.Windows.Controls.TileView;assembly=Telerik.Windows.Controls.Navigation"
@@ -25,7 +25,7 @@ The __Header__ of the __RadTileViewItem__ is designed as a separate __ContentCon
 
 Next, you can define a custom style targeting the __TileViewItemHeader__ control and bind its __Background__ property to a property defined in your business model like this:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="TileViewItemHeaderStyle" TargetType="tileView:TileViewItemHeader">
@@ -38,7 +38,7 @@ Next, you can define a custom style targeting the __TileViewItemHeader__ control
 
 Also, in order to visualize your items you can create one more __Style__ targeting the __RadTileViewItem__. In that style you can bind the __Header__ property to a property defined in your business model. By doing so you will be able to set the text of the header. You can use the following code:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="TileViewItemCustomStyle" TargetType="telerik:RadTileViewItem">
@@ -48,7 +48,7 @@ Also, in order to visualize your items you can create one more __Style__ targeti
 
 In order to track the state of each __RadTileViewItem__ you can define a property in your business model and bind it to the __TileState__ property of the item. This can be done by adding one more __Setter__ to the last Style and it will look like this:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="TileViewItemCustomStyle" TargetType="telerik:RadTileViewItem">
@@ -59,7 +59,7 @@ In order to track the state of each __RadTileViewItem__ you can define a propert
 
 To finalize the XAML code you can define the following __RadTileView__ control:		
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTileView HeaderStyle="{StaticResource TileViewItemHeaderStyle}"
@@ -69,7 +69,7 @@ To finalize the XAML code you can define the following __RadTileView__ control:
 
 Next step is to set up your business model. First you can create an __ItemViewModel__ class which derives from Telerik's __ViewModelBase__. This class can expose properties that will hold the text of the __Header__, the color of the __Background__ and the __CurrentState__ of the item. Furthermore, the item has to know which color to apply to its header in each state. This is why the constructor of the item can receive three colors - one for each state. Also, this class can expose a private method which changes the color of the header and it will be called whenever the state of the corresponding item is changed. Below is the implementation of that class.
 
-#### __C#__
+
 
 ```C#
 	public class ItemViewModel : ViewModelBase
@@ -142,7 +142,7 @@ Next step is to set up your business model. First you can create an __ItemViewMo
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ItemViewModel
@@ -210,7 +210,7 @@ Next step is to set up your business model. First you can create an __ItemViewMo
 
 After your __ItemViewModel__ is ready, you can define a collection of items. Create a __MainViewModel__ class which exposes one property of type __ObservableCollection<ItemViewModel>__ and a private method which populates the collection. This can be done like this:		
 
-#### __C#__
+
 
 ```C#
 	public class MainViewModel
@@ -254,7 +254,7 @@ After your __ItemViewModel__ is ready, you can define a collection of items. Cre
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MainViewModel
@@ -300,13 +300,13 @@ After your __ItemViewModel__ is ready, you can define a collection of items. Cre
 
 Finally, you can set the __MainViewModel__ as __DataContext__ of your application. This can be done just after the __InitializeComponent()__ method like this:
 
-#### __C#__
+
 
 ```C#
 	this.DataContext = new MainViewModel();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.DataContext = New MainViewModel()

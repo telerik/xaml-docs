@@ -18,7 +18,7 @@ RadCarousel tries to mimic the familiar API of a standard WPF __ItemsControl__. 
 
 Using the fact that all data items are automatically wrapped inside a __CarouselItem__ you can change an item's appearance by using WPF styles targeting __CarouselItem__ controls. Here is how to do that and present your carousel items inside two nested Border elements:
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="{x:Type telerik:CarouselItem}">
@@ -63,7 +63,7 @@ Using the fact that all data items are automatically wrapped inside a __Carousel
 
 The above style will make all carousel items look identical. If you need selection logic in your RadCarousel control, you will most certainly want selected items to appear different than the rest. To implement that, you need to use a trigger in your __CarouselItem__ style and modify your appearance according to the __IsSelected__ property value. The example below adds a trigger to the __CarouselItem__ control template to change the two Border elements' background color when the respective __CarouselItem__ has been selected:
 
-#### __XAML__
+
 
 ```XAML
 	<ControlTemplate.Triggers>
@@ -96,7 +96,7 @@ The above style will make all carousel items look identical. If you need selecti
 
 Remember the __ContentPresenter__ control that we used in our __CarouselItem__ control template? It will not display the data items directly, but will use a __CarouselDataRecordPresenter__ control to do its job. The data record presenter works closely with the RadCarousel data engine and wraps a data item object. You Here is how you can create a custom style to modify the __CarouselDataRecordPresenter__ template and customize the way your data is presented:
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="{x:Type telerik:CarouselDataRecordPresenter}">

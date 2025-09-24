@@ -30,7 +30,7 @@ You could subscribe for the __AddingNewDataItem__ event of RadGridView and speci
 
 For example if you have a collection of Orders when you want to add a new Order you could use the following approach:
         
-#### __C#__
+
 
 ```C#
 	private void ordersGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
@@ -39,7 +39,7 @@ For example if you have a collection of Orders when you want to add a new Order 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub ordersGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)

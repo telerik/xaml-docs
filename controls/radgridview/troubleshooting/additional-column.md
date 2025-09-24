@@ -26,7 +26,7 @@ You can use either of the following methods:
 
 * Set the __ColumnWidth__ property of RadGridView to "__*__"
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView ItemsSource="{Binding Clubs}" ColumnWidth="*" />
@@ -38,7 +38,7 @@ The result would be:
 
 * Set the __Width__ of any of the columns to "__*__"
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 

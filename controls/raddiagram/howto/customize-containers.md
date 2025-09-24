@@ -16,7 +16,7 @@ This tutorial describes how to customize the default look and feel of the RadDia
 
 In order to customize the content of the header part of the __RadDiagramContainerShape__, you can use the __Content__ property. For instance, if you wish to display an icon in the header you can define the following layout:		
 
-#### __XAML__
+
 ```XAML
     <telerik:RadDiagram>
         <telerik:RadDiagramContainerShape Width="264" Position="120,120">
@@ -79,7 +79,7 @@ If you want to change the __ControlTemplate__ elements of the __RadDiagramContai
 
 The final definition of the __ConnectorsControl__ should look like this:		
 
-#### __XAML__
+
 ```XAML
     <Telerik_Windows_Controls_Diagrams_Primitives:ConnectorsControl x:Name="ConnectorsControl"
                                                                 Grid.RowSpan="2"
@@ -92,7 +92,7 @@ The various things which apply to __ControlTemplates__ in general and customizat
 
 For example, let's change the default __Background__ color of the container in the style we extracted:	  
 
-#### __XAML__	
+	
 ```XAML
     <Style x:Key="RadDiagramContainerShapeStyle" TargetType="{x:Type telerik:RadDiagramContainerShape}">
 		<Setter Property="Background" Value="#FFE4C4"/>

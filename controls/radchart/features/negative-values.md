@@ -26,7 +26,7 @@ In order to control the visibility of the plot area's axes you can use the __Plo
 
 Here is an example with hiding the y-axis of the plot area.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">

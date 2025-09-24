@@ -29,7 +29,7 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 **2.**	Now add the __RadDataServiceDataSource__, __RadGridView__ and __RadDataPager__ controls to the __MainWindow__. You can add them by dragging them from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below: 
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
+
 ```XAML
 
 	<Window x:Class="NorthwindExplorer.MainWindow"
@@ -57,7 +57,7 @@ Now that we are ready with the service reference and the __DataServiceContext__,
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 ```XAML
 
 	<UserControl x:Class="NorthwindExplorer.MainPage"

@@ -20,7 +20,7 @@ The purpose of this tutorial is to show you how to populate __RadGridView__ with
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__ declaration in your XAML: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView />
@@ -32,13 +32,13 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 * Switch to the code-behind and create a new instance of your WCF Service client.
 
-#### __C#__
+
 
 ```C#
 	WcfServiceClient serviceClient = new WcfServiceClient();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private serviceClient As New WcfServiceClient()
@@ -48,7 +48,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 * The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects.
 
-#### __C#__
+
 
 ```C#
 	private void BeginRequest()
@@ -64,7 +64,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub BeginRequest()
@@ -78,13 +78,13 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	End Sub
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radGridView.ItemsSource = serviceClient.LoadCustomers()
@@ -100,7 +100,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * Create a new class named __NorthwindDataSource__. 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -108,7 +108,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -121,7 +121,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * In the __NorthwindDataSource__ class add a reference to your WCF Service client: 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -140,7 +140,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -158,14 +158,14 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Customers__ from the database: 
 
-#### __C#__
+
 
 ```C#
 	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
 	serviceClient.LoadCustomersAsync();
 ```
 
-#### __C#__
+
 
 ```C#
 	foreach (Customer c in serviceClient.LoadCustomers())
@@ -174,14 +174,14 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	serviceClient.LoadCustomersAsync()
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	For Each c As Customer In serviceClient.LoadCustomers()
@@ -193,7 +193,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
-#### __C#__
+
 
 ```C#
 	if (e.Error == null && e.Result != null)
@@ -205,7 +205,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	If e.Error Is Nothing AndAlso e.Result IsNot Nothing Then
@@ -217,7 +217,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -227,7 +227,7 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>

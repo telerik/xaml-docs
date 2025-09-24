@@ -25,7 +25,7 @@ In order to prevent a specific dialog from appearing , the ShowDialog event of t
 
 For example the view model for the __EditAppointmentDialog__ is __AppointmentDialogViewModel__. The following code snippet shows how it can be cancelled:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowDialog="RadScheduleView_ShowDialog">
@@ -33,7 +33,7 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 	</telerik:RadScheduleView>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -43,7 +43,7 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
@@ -59,7 +59,7 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 
 In this case __DefaultDialogResult__ property of the event args should be set in order to stimulate pressing OK/Cancel in the dialog. If __DefaultDialogResult__ is set to “true”, the appointment will be directly deleted:
 
-#### __C#__
+
 
 ```C#
 	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -72,7 +72,7 @@ In this case __DefaultDialogResult__ property of the event args should be set in
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
@@ -87,7 +87,7 @@ In this case __DefaultDialogResult__ property of the event args should be set in
 
 By default  “Open/Delete the occurrence” option is selected in RecurrenceChoiceDialog.  This can be changed in ShowDialog event by setting __IsSeriesModeSelected__ property of the RecurrenceChoiceDialogViewModel:
 
-#### __C#__
+
 
 ```C#
 	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -100,7 +100,7 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)

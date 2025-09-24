@@ -16,7 +16,7 @@ __RadGridView__ provides you with a built-in filtering functionality, which allo
 
 You can define filtering either in the XAML or in the code-behind.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView">
@@ -30,7 +30,7 @@ You can define filtering either in the XAML or in the code-behind.
 
 You can achieve the same result if you define your filtering in your code-behind like this.
 
-#### __C#__
+
 
 ```C#
 	FilterDescriptor descriptor = new FilterDescriptor();
@@ -40,7 +40,7 @@ You can achieve the same result if you define your filtering in your code-behind
 	this.radGridView.FilterDescriptors.Add(descriptor);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim descriptor As New FilterDescriptor()

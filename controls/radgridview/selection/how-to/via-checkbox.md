@@ -14,7 +14,7 @@ The __RadGridView__'s API offers you a __GridViewSelectColumn__, with the help o
 
 Here is a __RadGridView__ declaration, which is populated with some sample data.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView"
@@ -48,7 +48,7 @@ In order to enable the selection via checkbox behavior, you need to perform the 
 
 1. Enable __multiple selection__ for the __RadGridView__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView SelectionMode="Extended">
@@ -56,7 +56,7 @@ In order to enable the selection via checkbox behavior, you need to perform the 
 
 2. Add an additional __GridViewColumn__ of type __GridViewSelectColumn__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView.Columns>

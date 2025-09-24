@@ -46,7 +46,7 @@ To apply the __ZoomScrollingSettings__ you have to set them to the __ZoomScrolli
 
 Here is an example.
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.MinZoomRange = 0.1;
@@ -57,7 +57,7 @@ Here is an example.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.MinZoomRange = 0.1

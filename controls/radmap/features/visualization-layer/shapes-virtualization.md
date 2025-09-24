@@ -58,7 +58,7 @@ The following example demonstrates how to use the __UI Virtualization__ feature 
 
 When you will try to load this file using the shape-file reader directly like the code below then the performance of zooming and panning will be very low.
 
-#### __XAML__
+
 ```XAML	
 	<telerik:VisualizationLayer x:Name="visualizationLayer" UseBitmapCache="False">
 		<telerik:VisualizationLayer.Reader>
@@ -71,7 +71,7 @@ Such performance is a reason to use the __Map Shapes Virtualization__ to improve
 
 If it is acceptable for your application just to restrict the zoom level, then it is possible to use built-in __MapShapeDataVirtualizationSource__. First you need to configure the __ZoomLevelGridList__ property. It can be configured to show counties from the zoom level 8 when the rendering is quite fast. It could be done with the following XAML code:
         
-#### __XAML__
+
 ```XAML
     <UserControl x:Class="ShapeVirtualization.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -113,7 +113,7 @@ If it is acceptable for your application just to restrict the zoom level, then i
 
 To start loading the shape-file you should invoke the __MapShapeDataVirtualizationSource.ReadAsync__ method:
         
-#### __C#__
+
 ```C#
 	using System.Windows;
 	using System.Windows.Controls;
@@ -138,7 +138,7 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET	
 	Partial Public Class MainPage
 		Inherits UserControl
@@ -157,7 +157,7 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 
 If your application cannot limit zoom level and it requires that some data still be visible on the low zoom levels (1 – 7) then you can use approach which show different sets of shapes for different zoom levels. For example, you can show the map of USA states for lower zoom levels (1-7). In this case you should design your own custom virtualization source class which will show data depend on the zoom level. The sample code below uses the “usa_states” shape-file which is also used in the [United States](https://demos.telerik.com/silverlight/#Map/Shapefile/UnitedStates) demo.
         
-#### __C#__
+
 ```C#
 	using System;
 	using System.Collections.Generic;
@@ -296,7 +296,7 @@ If your application cannot limit zoom level and it requires that some data still
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET	
 	Public Class ShapeDataVirtualizer
 		Implements IMapItemsVirtualizationSource
@@ -399,7 +399,7 @@ If your application cannot limit zoom level and it requires that some data still
 The sample code of the custom virtualization source class is below.
 
 This class can be used in the XAML code like the following way:
-#### __XAML__
+
 ```XAML
     <UserControl x:Class="ShapeVirtualization.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

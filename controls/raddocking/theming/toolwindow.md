@@ -14,7 +14,7 @@ To modify the appearance of the ToolWindow you __have__ to create a custom theme
 
 Copy the created style with all of the resources it uses and place it in the __ResourceDictionary__ that represents the theme for your __RadDocking__ control.
 
-#### __XAML__
+
 
 ```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -28,7 +28,7 @@ Copy the created style with all of the resources it uses and place it in the __R
 
 The next step is to declare the required namespaces in the resource dictionary.
 
-#### __XAML__
+
 
 ```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -42,7 +42,7 @@ The next step is to declare the required namespaces in the resource dictionary.
 
 Finally, in order to make the style default for all of the __ToolWindow__ controls you have to leave it without a key. Remove the key from the style.{% endif %}
 
-#### __XAML__
+
 
 ```XAML
 	<Style TargetType="telerik:ToolWindow">
@@ -54,7 +54,7 @@ Finally, in order to make the style default for all of the __ToolWindow__ contro
 
 To apply the theme go to the UserControl that hosts your __RadDocking__ control and set it through the code-behind.{% endif %}
 
-#### __C#__
+
 
 ```C#
 	public App()
@@ -64,7 +64,7 @@ To apply the theme go to the UserControl that hosts your __RadDocking__ control 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -77,7 +77,7 @@ To apply the theme go to the UserControl that hosts your __RadDocking__ control 
 
 Finally in order to make the style default for all of the __ToolWindow__ controls you have to set it to the following value.{% endif %}
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="{telerik:ThemeResourceKey ThemeType={x:Type local:RadDockingTheme}, ElementType={x:Type telerik:ToolWindow}}"

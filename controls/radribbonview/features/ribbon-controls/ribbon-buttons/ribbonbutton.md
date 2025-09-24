@@ -16,7 +16,7 @@ The __RadRibbonButton__ represents the basic button in the set of the __RadRibbo
 
 Here is a sample definition of a __RadRibbonButton__:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonButton CollapseToMedium="Never" 
 	                         CollapseToSmall="WhenGroupIsMedium"

@@ -52,7 +52,7 @@ You can also add Bookmarks in a document you are creating manually. As both __Bo
 
 For example, you can keep a Dictionary<string, string> mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:
 
-#### __C#__
+
 
 ```C#
 	private void ReplaceContentOfBookmark(string bookmarkName)
@@ -68,7 +68,7 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 
 If you want to preserve the bookmarks in the document and only change the text between the BookmarkRangeStart and BookmarkRangeEnd document elements, you can do so like this:
 
-#### __C#__
+
 
 ```C#
 	private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)

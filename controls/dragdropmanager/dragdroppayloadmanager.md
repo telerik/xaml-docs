@@ -20,7 +20,7 @@ Along with the option to easily create a valid drag payload, the __DragDropPaylo
 
 Let's start by creating a simple drag drop application with two __RadListBoxes__ with ItemsSources of different types. You have the following ViewModel with one collection that contains custom objects of type Customer and another with an empty collection of strings:        
 
-#### __C#__
+
 
 ```C#
 	public class ViewModel : ViewModelBase
@@ -46,7 +46,7 @@ Let's start by creating a simple drag drop application with two __RadListBoxes__
 
 The __RadListBoxes__ are defined in XAML the following way:        
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -80,7 +80,7 @@ Figure 1: ListBox1 is on the left and ListBox2 is on the right.
 
 Next you will need to enable the drag and drop by adding a __DragInitializeHandler__ for the first __RadListBox__, so you can drag from the first __RadListBox__ and drop afterwards on the second one.        
 
-#### __C#__
+
 
 ```C#
 	DragDropManager.AddDragInitializeHandler(this.ListBox1, OnDragInitialize);            
@@ -88,7 +88,7 @@ Next you will need to enable the drag and drop by adding a __DragInitializeHandl
 
 In the handler method where the payload is generated you will need to attach a DataConverter that will be used to convert the dragged item from object of type Customer to a simple string. That is why before implementing the handler you will need to create the following DataConverter:        
 
-#### __C#__
+
 
 ```C#
 	public class CustomerToStringConverter : DataConverter
@@ -116,7 +116,7 @@ In the handler method where the payload is generated you will need to attach a D
 
 In the __DragInitialize__ handler itself you will need to pass to the DragDropPayloadManager an instance of the converter that will be carried by the payload within the events and used when needed:
 
-#### __C#__
+
 
 ```C#
 	private void OnDragInitialize(object sender, DragInitializeEventArgs e)
@@ -132,7 +132,7 @@ In the __DragInitialize__ handler itself you will need to pass to the DragDropPa
 
 Now you can add the __DropHandler__ for the second __RadListBox__ inside of which the dragged data will be converted using the converter.        
 
-#### __C#__
+
 
 ```C#
 	DragDropManager.AddDropHandler(this.ListBox2, OnDrop);
@@ -140,7 +140,7 @@ Now you can add the __DropHandler__ for the second __RadListBox__ inside of whic
 
 Inside of the handler you can also add another DataObject to the payload that indicates whether the drop was successful or not. Let's add an object named __IsDropSuccessful__ and set its value to __true__. This way you will know afterwards in the __DragDropCompletedHandler__ of the first __RadListBox__ if the drop on the second one was successful (or data has been dropped elsewhere):       
 
-#### __C#__
+
 
 ```C#
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -154,13 +154,13 @@ Inside of the handler you can also add another DataObject to the payload that in
 
 After that, you should handle the __DragDropCompleted__ of the first list box and check if the drop was successful:        
 
-#### __C#__
+
 
 ```C#
 	DragDropManager.AddDragDropCompletedHandler(this.ListBox2, OnDragDropCompleted);
 ```
 
-#### __C#__
+
 
 ```C#
 	private void OnDragDropCompleted(object sender, DragDropCompletedEventArgs e)
@@ -179,13 +179,13 @@ After that, you should handle the __DragDropCompleted__ of the first list box an
 
 In addition to this, you can use the __DragDropPayloadManager__ in order to check whether the dragged data can be converted to a type that is required from the ItemsSource. This is done by using the __GetFormats__ method, which returns a collection of the supported types. If the required type is not present, you can easily prevent the drop by setting the __Effects__ property of the drag arguments to __DragDropEffects.None__:        
 
-#### __C#__
+
 
 ```C#
 	DragDropManager.AddDragOverHandler(this.ListBox2, OnDragOver);         
 ```
 
-#### __C#__
+
 
 ```C#
 	private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)

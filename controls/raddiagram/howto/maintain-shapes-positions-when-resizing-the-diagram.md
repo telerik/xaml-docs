@@ -22,7 +22,7 @@ Below you can see this in action. The Window or UserControl is resized and the S
 ![raddiagrams howto preserverpositions 1](images/raddiagrams_howto_preserverpositions1.png)
 ![raddiagrams howto preserverpositions 2](images/raddiagrams_howto_preserverpositions2.png)
 
-#### __C#__
+
 ```C#
     private void RadDiagram_SizeChanged(object sender, SizeChangedEventArgs e) 
     { 
@@ -41,7 +41,7 @@ Below you can see this in action. The Window or UserControl is resized and the S
     }   
 ```
     
-#### __VB.NET__
+
 ```VB.NET
     Private Sub RadDiagram_SizeChanged(sender As Object, e As SizeChangedEventArgs)
         If e.PreviousSize IsNot Nothing AndAlso e.PreviousSize.Width <> 0 AndAlso e.PreviousSize.Height <> 0 Then

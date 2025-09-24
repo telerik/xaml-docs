@@ -37,14 +37,14 @@ __RadDocument__ has two states - measured and non-measured. Depending on the sta
 When the document is measured (for example, shown in a __RadRichTextBox__), you can select the part of the document which you want to make read-only and use the __InsertReadOnly()__ method of __RadRichTextBox__ or [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) respectively:
             
 
-#### __C#__
+
 
 ```C#
     this.radRichTextBox.InsertReadOnlyRange();
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Me.radRichTextBox.InsertReadOnlyRange()
@@ -58,7 +58,7 @@ When the document is measured (for example, shown in a __RadRichTextBox__), you 
 As opposed to when inserting with one of the methods of __RadRichTextBox__, when building a document from code you have to make sure that the annotations in it are explicitly paired. This can be achieved with the __PairWithStart()__ method of __AnnotationRangeEnd__. Here is an example which builds a __RadDocument__ with a read only range in it.
             
 
-#### __C#__
+
 
 ```C#
     RadDocument document = new RadDocument();
@@ -84,7 +84,7 @@ As opposed to when inserting with one of the methods of __RadRichTextBox__, when
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim document As New RadDocument()
@@ -115,7 +115,7 @@ As opposed to when inserting with one of the methods of __RadRichTextBox__, when
 In order to remove a read only range, you should simply call the __DeleteReadOnlyRange()__ method of __RadRichTextBox__ or __RadDocumentEditor__:
         
 
-#### __C#__
+
 
 ```C#
     this.radRichTextBox.DeleteReadOnlyRange();
@@ -123,7 +123,7 @@ In order to remove a read only range, you should simply call the __DeleteReadOnl
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Me.radRichTextBox.DeleteReadOnlyRange()
@@ -137,7 +137,7 @@ The above-demonstrated method will delete the read only range the caret is curre
 Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart__ element in the document, you can delete it with the __DeleteReadOnlyRange(ReadOnlyRangeStart start)__ method. For example, if you want to delete a particular range based on its __Tag__, you can do it as follows:
         
 
-#### __C#__
+
 
 ```C#
     ReadOnlyRangeStart start = this.radRichTextBox.Document.EnumerateChildrenOfType<ReadOnlyRangeStart>().Where(x => x.Tag == "ReadOnly").FirstOrDefault();
@@ -149,7 +149,7 @@ Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
     Dim start As ReadOnlyRangeStart = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()

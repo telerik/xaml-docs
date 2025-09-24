@@ -12,7 +12,7 @@ position: 4
 
 The Bar indicator is a colored bar that is drawn around scale bar. One of ends of this bar points to the scale value. To add bar indicator to the scale you have to include RadialBar element to the list of the scale indicators:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale>
@@ -77,7 +77,7 @@ or
 
 To do it you need add few ranges to your scale and specify background of the indicator for every range. Then you should set UseRangeColor property of the bar indicator to true:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale>
@@ -123,7 +123,7 @@ To do it you need add few ranges to your scale and specify background of the ind
 
 There several modes which can be used to colorize bar indicator. Example above uses default mode. If you'd like to have bar indicator with background consists of the stack of the range colors, then you should set RangeColorMode property to ProportionalBrush:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadialScale.Indicators telerik:StyleManager.Theme="Windows8">
 		<telerik:BarIndicator Name="radialBar" 

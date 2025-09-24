@@ -22,7 +22,7 @@ On the snapshot below, the Turnover is represented by line chart, while the Expe
 
 Here is the sample XAML source code used to create this chart declaratively:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:ChartArea.DataSeries>

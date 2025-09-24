@@ -36,7 +36,7 @@ RadSpellChecker matches every type it supports to an instance of a class derivin
 To retrieve the corresponding __IControlSpellChecker__ for your control (in our case TextBox) you can use the static class __ControlSpellCheckersManager__. Here is the code to set the spellchecking culture of RadSpellChecker for the TextBox Control to Spanish:
         
 
-#### __C#__
+
 
 ```C#
 	//Here we take the IControlSpellChecker instance for the TextBox Control
@@ -63,7 +63,7 @@ There is another way to load a dictionary explicitly (without MEF). To achieve t
 
 In fact the code here is pretty much the same as the code above:
 
-#### __C#__
+
 
 ```C#
 	//Here we take the IControlSpellChecker instance for the TextBoxControl
@@ -79,7 +79,7 @@ In fact the code here is pretty much the same as the code above:
 In this case the RadEs_ESDictionary class is located in another assembly and inherits RadDictionary:
         
 
-#### __C#__
+
 
 ```C#
 	public class RadEs_ESDictionary : RadDictionary

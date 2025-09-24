@@ -22,7 +22,7 @@ __RadPdfViewer__'s sample UI allows you to print the currently shown PDF documen
 The button shown in the above picture is actually bound to the __PrintPdfDocumentCommand__ with the help of the __PrintCommandDescriptor__, so you can modify the UI to fit your needs.
         
 
-#### __XAML__
+
 
 ```XAML
 	      <telerik:RadButton Command="{Binding PrintCommandDescriptor.Command}" Visibility="{Binding PrintCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
@@ -57,7 +57,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 * __OpacityThreshold__: Gets or sets the opacity value of visual elements at which Silverlight 5 will round the opacity to 1.0 to support vector printing on PostScript printers or drivers.
           
 
-#### __C#__
+
 
 ```C#
 	    PrintSettings settings = new PrintSettings()
@@ -81,7 +81,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 * __UseDefaultPrinter__: Forces silent printing to the default printer. 
 
-#### __C#__
+
 
 ```C#
 	    PrintSettings settings = new PrintSettings()

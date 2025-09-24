@@ -34,7 +34,7 @@ This is the easiest approach that you can use in order to style the chart series
 
 For example, you can change the appearance of a __BarSeries__ in the following way.
 
-#### __C#__
+
 
 ```C#
 	BarSeriesDefinition barDefinition = new BarSeriesDefinition();
@@ -44,7 +44,7 @@ For example, you can change the appearance of a __BarSeries__ in the following w
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim barDefinition As New BarSeriesDefinition()
@@ -69,7 +69,7 @@ The second way is to define a style and set it through the __SeriesStyles__ comp
 
 
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="SelfDrawingSeriesStyle" TargetType="telerik:SelfDrawingSeries" />
@@ -78,7 +78,7 @@ The second way is to define a style and set it through the __SeriesStyles__ comp
 The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyle__. The __BorderLineStyle__ is __obligatory__, as it defines the main chart contour. The __BackgroundStyle must be__ set when your chart represents an area. Here is an example:
 
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="SplineAreaStyle" TargetType="telerik:SelfDrawingSeries">
@@ -103,7 +103,7 @@ The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyl
 
 
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = this.Resources[ "SplineAreaStyle" ] as Style;
@@ -111,7 +111,7 @@ The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyl
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = TryCast(Me.Resources("SplineAreaStyle"), Style)
@@ -125,7 +125,7 @@ Here is an example:
 
 
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="BarStyle" TargetType="Shape">
@@ -133,14 +133,14 @@ Here is an example:
 	</Style>
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = this.Resources[ "BarStyle" ] as Style;
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = TryCast(Me.Resources("BarStyle"), Style)
@@ -167,7 +167,7 @@ The __RadChart__ exposes two __BrushCollections__:
 
 The __PaletteBrushes__ is read-only and allows you to specify a set of brushes that will be applied to the series displayed in the __RadChart__. The pattern of applying is as follows: first series - first brush, second series - second brush.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
@@ -184,7 +184,7 @@ The __PaletteBrushes__ is read-only and allows you to specify a set of brushes t
 
 or
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
@@ -209,7 +209,7 @@ There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartAr
 
 >For example if you use the __ChartArea__ __PaletteBrush__ collection with __PaletteBrushesRepeat__ set to __False__, when all of the brushes get used, the next series will fallback to the __RadChart__ __PaletteBrushes__ and after them to the theme resources.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -226,7 +226,7 @@ There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartAr
 
 or
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -263,7 +263,7 @@ If you want to see a double line when you create new LineSeriesDefinition the on
 
 Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="MyDoubleLineStyle" TargetType="telerik:Line">
@@ -303,7 +303,7 @@ Here is an example:
 
 
 
-#### __C#__
+
 
 ```C#
 	RadChart1.DefaultSeriesDefinition = line;
@@ -315,7 +315,7 @@ Here is an example:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	RadChart1.DefaultSeriesDefinition = line

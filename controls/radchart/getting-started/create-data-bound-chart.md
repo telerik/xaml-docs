@@ -32,7 +32,7 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 
 As result you can see the __RadChart__ with some demo data displayed. The underlaying XAML is pretty simple and looks like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -45,7 +45,7 @@ There are two things you should pay attention to: First is the declaration of th
 
 * In order to bind your __RadChart__ you will need custom data object. Let's create one and name it __ProductSales__, add the properties as shown below:
 
-#### __C#__
+
 
 ```C#
 	public class ProductSales
@@ -74,7 +74,7 @@ There are two things you should pay attention to: First is the declaration of th
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ProductSales
@@ -117,7 +117,7 @@ There are two things you should pay attention to: First is the declaration of th
 
 * Now create custom method that returns collection populated with several __ProductSales__ objects.
 
-#### __C#__
+
 
 ```C#
 	private List<ProductSales> CreateData()
@@ -139,7 +139,7 @@ There are two things you should pay attention to: First is the declaration of th
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function CreateData() As List(Of ProductSales)
@@ -166,7 +166,7 @@ There are two things you should pay attention to: First is the declaration of th
 
 * Now after you have the needed data object it is time to configure and bind the __RadChart__ to the appropriate properties of the __ProductSales__ class. It can be done using __SeriesMapping/ItemMapping__ from XAML or code-behind, but in most cases it is better to do it declaratively.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -184,7 +184,7 @@ There are two things you should pay attention to: First is the declaration of th
 	</telerik:RadChart>
 ```
 
-#### __C#__
+
 
 ```C#
 	SeriesMapping seriesMapping = new SeriesMapping();
@@ -196,7 +196,7 @@ There are two things you should pay attention to: First is the declaration of th
 	this.radChart.ItemsSource = this.CreateData();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim seriesMapping As New SeriesMapping()
@@ -212,13 +212,13 @@ In the source code above one instance of the class __SeriesMapping__ is created 
 
 * And the last step is to set the __ItemSource__ of the __RadChart__ control to the collection returned by the __GetData__ method. You can insert this call inside your Constructor right after the __InitializeComponent()__ method call.
 
-#### __C#__
+
 
 ```C#
 	this.radChart.ItemsSource = this.CreateData();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.ItemsSource = Me.CreateData()
@@ -245,19 +245,19 @@ Now if you run your application, the result should be similar to the below snaps
 
 The __X-axis__ can be further customized by replacing the month numbers (1, 2, 3...) with the respective month names (January, February, March...). To achieve this we have to set the __ItemMapping.DataPointMember__ property for the __X-axis__ to __XCategory__ and the __ItemMapping.FieldName__ to "__MonthName__", as shown in the samples below.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:ItemMapping DataPointMember="XCategory" FieldName="MonthName" />
 ```
 
-#### __C#__
+
 
 ```C#
 	seriesMapping.ItemMappings.Add(new ItemMapping("MonthName", DataPointMember.XCategory));
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	seriesMapping.ItemMappings.Add(New ItemMapping("MonthName", DataPointMember.XCategory))

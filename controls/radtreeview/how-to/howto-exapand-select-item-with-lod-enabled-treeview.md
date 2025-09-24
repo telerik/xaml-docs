@@ -16,7 +16,7 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 ```XAML
 	        <Grid>
 	            <Grid.Resources>
@@ -50,7 +50,7 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+
 ```XAML
 	        <Grid>
 	            <Grid.Resources>
@@ -85,7 +85,7 @@ For the purpose of this topic a __RadTreeView__ which is data bound to a busines
 
 The data source for the radtreeview will be consisted of __DataItems__, only.
 
-#### __C#__
+
 ```C#
 	public class DataItem : ViewModelBase
 	    {
@@ -118,7 +118,7 @@ The data source for the radtreeview will be consisted of __DataItems__, only.
 	    }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Class DataItem
 	        Inherits ViewModelBase
@@ -147,7 +147,7 @@ The data source for the radtreeview will be consisted of __DataItems__, only.
 
 Set a __DataItem__ instance to the __ItemsSource__ property of the __RadTreeView__ and create some simple data like in the code snippet below.        
 
-#### __C#__
+
 ```C#
 	this.treeView.ItemsSource = Enumerable.Range(1, 10).Select(i => new DataItem()
 	{
@@ -157,7 +157,7 @@ Set a __DataItem__ instance to the __ItemsSource__ property of the __RadTreeView
 
 The actual loading on demand of the business items can be implemented in the getter of the __Children__ property of the __DataItem__ class. The LoadOnDemand feature of the RadTreeView control is used to visualize the expander icon in the front of each RadTreeViewItem. We do not use the built-in LoadOnDemand event to load the business items into the control. Instead, the HierarchicalDataTemplate will trigger the getter of its ItemsSource property on load. For demonstration purposes, we will load a fixed number of business data every time the getter is triggered and the __children__ field is not yet instantiated.
 
-#### __C#__
+
 ```C#
 	public List<DataItem> Children
 	{
@@ -177,7 +177,7 @@ The actual loading on demand of the business items can be implemented in the get
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public ReadOnly Property Children() As List(Of DataItem)
 	        Get
@@ -197,7 +197,7 @@ The actual loading on demand of the business items can be implemented in the get
 
 The next step is to implement the custom logic for creating the path in order to use the [BringPathIntoView()]({%slug radtreeview-features-treeviewitem-bring-into-view-support%}) method.
 
-#### __C#__
+
 ```C#
 	private void Button_Click_1(object sender, RoutedEventArgs e)
 	{
@@ -245,7 +245,7 @@ The next step is to implement the custom logic for creating the path in order to
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	

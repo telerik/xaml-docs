@@ -26,7 +26,7 @@ This topic will show you how to perform the second one.
 
 >The __NoDataControl__ control is located in the __Telerik.Windows.Controls.Charting__ namespace of the __Telerik.Windows.Controls.Charting__ assembly. In order to use it you have to declare it in XAML:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerikCharting=&quot;clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting&quot;
@@ -48,7 +48,7 @@ If you go to the 'Resources' pane, you will see an editable list of resources ge
 
 To apply the style to the real control, set it to the __NoDataControl__ property of the __ChartArea__.
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultView.ChartArea.NoDataControlStyle = this.Resources["NoDataControlStyle"] as Style;
@@ -56,7 +56,7 @@ To apply the style to the real control, set it to the __NoDataControl__ property
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.NoDataControlStyle = TryCast(Me.Resources("NoDataControlStyle"), Style)
@@ -75,7 +75,7 @@ And here is the snapshot of the result.{% endif %}{% if site.site_name == 'Silve
 
 Here is the final XAML for the __Style__after the modifications:
 
-#### __XAML__
+
 
 ```XAML
 	<System:Double x:Key="NoDataFontSize">16</System:Double>

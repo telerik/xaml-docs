@@ -20,7 +20,7 @@ The DataContext of the defined DataTemplate that we will be set to __Appointment
 
 Let's for example have a [Custom Appointment]({%slug radscheduleview-features-appointments-custom-appointment%}) with IsDone custom property:
 
-#### __C#__
+
 
 ```C#
 	public class Task : Appointment
@@ -48,7 +48,7 @@ Let's for example have a [Custom Appointment]({%slug radscheduleview-features-ap
 
 We will create the following DataTemplate in order to show some additional information about the appointment:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
@@ -65,7 +65,7 @@ We will create the following DataTemplate in order to show some additional infor
 
 Then the DataTemplate should be set to __AppointmentContentTemplate__ property of the ScheduleView control:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView 
@@ -87,7 +87,7 @@ Let's, for example create separate appointment templates for the different ViewD
 
 First, we will have to create a custom class which inherits from Telerik.Windows.Controls.ScheduleViewDataTemplateSelector, define the needed DataTemplates in it and override SelectTemplate method:
 
-#### __C#__
+
 
 ```C#
 	public class CustomAppointmentTemplateSelector : Telerik.Windows.Controls.ScheduleViewDataTemplateSelector
@@ -111,7 +111,7 @@ First, we will have to create a custom class which inherits from Telerik.Windows
 
 Then define the CustomAppointmentTemplateSelector and the DataTemplates in XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<local:CustomAppointmentTemplateSelector x:Key="CustomAppointmentTemplateSelector">
@@ -134,7 +134,7 @@ Then define the CustomAppointmentTemplateSelector and the DataTemplates in XAML:
 
 And apply it to the ScheduleView:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView 

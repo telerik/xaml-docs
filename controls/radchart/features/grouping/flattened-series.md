@@ -18,7 +18,7 @@ Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ pr
 
 >tipTo learn more about __DateTime Grouping__ read [here]({%slug radchart-features-datetime-grouping%}).
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -46,7 +46,7 @@ Here is a __RadChart__ declaration before setting the __ShouldFlattenSeries__ pr
 
 Here is the same __RadChart__ after setting the property to __True__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:SeriesMapping.GroupingSettings>
@@ -60,7 +60,7 @@ Here is the same __RadChart__ after setting the property to __True__.
 
 
 
-#### __C#__
+
 
 ```C#
 	public Sample()
@@ -72,7 +72,7 @@ Here is the same __RadChart__ after setting the property to __True__.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -89,7 +89,7 @@ If you want to allow the series to get flattened through the UI at run time, you
 
 Here is an example of a __CheckBox__ that manages the series flattening of the __RadChart__ used above.
 
-#### __XAML__
+
 
 ```XAML
 	<CheckBox Click="CheckBox_Click" Content="Flatten" />
@@ -97,7 +97,7 @@ Here is an example of a __CheckBox__ that manages the series flattening of the _
 
 
 
-#### __C#__
+
 
 ```C#
 	private void CheckBox_Click(object sender, RoutedEventArgs e)
@@ -112,7 +112,7 @@ Here is an example of a __CheckBox__ that manages the series flattening of the _
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub CheckBox_Click(sender As Object, e As RoutedEventArgs)

@@ -18,7 +18,7 @@ In the scenario of Horizontal/Vertical Definition, the colorizer is defined in t
 
 Here is our sample RadHeatMap:
 
-#### __C#__
+
 ```C#
 	public partial class MainPage : UserControl
 	{
@@ -63,7 +63,7 @@ Here is our sample RadHeatMap:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Partial Public Class MainPage
 		Inherits UserControl
@@ -104,7 +104,7 @@ Here is our sample RadHeatMap:
 	End Class
 ```
 
-#### __XAML__
+
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White" Width="800" Height="600">
 	    <Grid.RowDefinitions>
@@ -163,7 +163,7 @@ A colorizer, which contains a set of GradientStops. It chooses a color to be app
 
 Now, this is how a HeatMapValueGradientColorizer is defined:
 
-#### __C#__
+
 ```C#
 	HeatMapValueGradientColorizer ValueGradientColorizer1 = new HeatMapValueGradientColorizer();
 	ValueGradientColorizer1.GradientStops.Add(new GradientStop() { Color = new Color() {R = 217, G = 231, B = 241, A = 255 }, Offset = 0 });
@@ -171,7 +171,7 @@ Now, this is how a HeatMapValueGradientColorizer is defined:
 	memberMapping1.Colorizer = ValueGradientColorizer1;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim ValueGradientColorizer1 As New HeatMapValueGradientColorizer()
 	ValueGradientColorizer1.GradientStops.Add(New GradientStop() With { _
@@ -197,7 +197,7 @@ Now, this is how a HeatMapValueGradientColorizer is defined:
 
 The same code in XAML will look like this:
 
-#### __XAML__
+
 ```XAML
 	<telerik:HeatMapValueGradientColorizer x:Key="ValueGradientColorizer1">
 	    <GradientStop Offset="0" Color="#D9E7F1" />
@@ -209,7 +209,7 @@ The same code in XAML will look like this:
 
 Let’s apply a colorizer to the already defined MemberMappings:
 
-#### __XAML__
+
 ```XAML
 	<telerik:MemberMapping Header="Horse Power" ValuePath="HorsePower" Colorizer="{StaticResource ValueGradientColorizer1}"/>
 ```
@@ -225,7 +225,7 @@ A colorizer, which uses a set of colors, where each of them corresponds to a ran
 
 Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallon column.
 
-#### __C#__
+
 ```C#
 	HeatMapRangeColorizer RangeColorizer1 = new HeatMapRangeColorizer() { IsAbsolute = true };
 	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 217, G = 231, B = 241, A = 255 }, From = 19, To = 22 });
@@ -236,7 +236,7 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 	memberMapping2.Colorizer = RangeColorizer1;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim RangeColorizer1 As New HeatMapRangeColorizer() With { _
 		Key .IsAbsolute = True _
@@ -296,7 +296,7 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 
 The same code in XAML would look like this:
 
-#### __XAML__
+
 ```XAML
 	<telerik:HeatMapRangeColorizer x:Key="RangeColorizer1" IsAbsolute="True">
 	    <telerik:HeatMapRangeColor From="19" To="22" Color="#D9E7F1"/>
@@ -318,7 +318,7 @@ It reduces the level of saturation of a given StartColor depending on the RadHea
 
 This is how HeatMapDesaturationColorizer is defined and applied:
 
-#### __C#__
+
 ```C#
 	HeatMapDesaturationColorizer DesaturationColorizer1 = new HeatMapDesaturationColorizer()
 	{
@@ -328,7 +328,7 @@ This is how HeatMapDesaturationColorizer is defined and applied:
 	memberMapping3.Colorizer = DesaturationColorizer1;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim DesaturationColorizer1 As New HeatMapDesaturationColorizer() With { _
 		Key .StartColor = New Color() With { _
@@ -342,7 +342,7 @@ This is how HeatMapDesaturationColorizer is defined and applied:
 	memberMapping3.Colorizer = DesaturationColorizer1
 ```
 
-#### __XAML__
+
 ```XAML
 	<telerik:HeatMapDesaturationColorizer x:Key="DesaturationColorizer1" To="0.1" StartColor="#01518C"/>
 	<telerik:MemberMapping Header="Price" ValuePath="Price" Colorizer="{StaticResource DesaturationColorizer1}"/>
@@ -354,7 +354,7 @@ The result, where there is no complete white, nor green.
 
 The complete code of the example:        
 
-#### __C#__
+
 ```C#
 	public partial class MainPage : UserControl
 	{
@@ -400,7 +400,7 @@ The complete code of the example:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Partial Public Class MainPage
 		Inherits UserControl
@@ -441,7 +441,7 @@ The complete code of the example:
 	End Class
 ```
 
-#### __XAML__
+
 ```XAML
 	<UserControl.Resources>
 	    <telerik:HeatMapValueGradientColorizer x:Key="ValueGradientColorizer1">
@@ -510,7 +510,7 @@ The complete code of the example:
 The only difference between the Categorical and the Horizontal/Vertical definition is that in the Categorical only one colorizer at a time can be applied. Besides this, the colorizers behave in the same way. 
 Here is a little demonstration:        
 
-#### __C#__
+
 ```C#
 	public MainPage()
 	{
@@ -562,7 +562,7 @@ Here is a little demonstration:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Function CreateWeatherData() As List(Of MonthlyTemp)
 		Dim time = New Date(2004, 1, 1)
@@ -591,7 +591,7 @@ Here is a little demonstration:
 	End Function
 ```
 
-#### __XAML__
+
 ```XAML
 	<UserControl.Resources>
 	    <telerik:HeatMapValueGradientColorizer x:Key="ValueGradientColorizer3">

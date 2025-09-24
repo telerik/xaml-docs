@@ -18,7 +18,7 @@ This article will demonstrate how to define __RadDiagram__, __Shapes__ and __Con
 
 Below you can find a code snippet which creates a __RadDiagram__ and adds two Shapes and a Connection in it:
 		
-#### __C#__
+
 ```C#
 	private void GenerateRadDiagram()
 	{
@@ -61,7 +61,7 @@ Below you can find a code snippet which creates a __RadDiagram__ and adds two Sh
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub GenerateRadDiagram()
 	    Dim diagram As New RadDiagram()
@@ -111,7 +111,7 @@ Below you can find a code snippet which creates a __RadDiagram__ and adds two Sh
 
 In the code above, we use the static class __ShapeFactory__ from the __Telerik.Windows.Controls.Diagrams__ assembly. Below you can find the list of its static methods for creating an EllipseShape, RectangleShape or Geometry:
 		  
-#### __C#__		
+		
 ```C#
 	public static RadDiagramShape CreateCircle(double radiusX, double radiusY, Point center)
 	public static RadDiagramShape CreateRectangle(Rect rect)
@@ -120,7 +120,7 @@ In the code above, we use the static class __ShapeFactory__ from the __Telerik.W
 	public static Geometry GetShapeGeometry(FlowChartShapeType shapeType)
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Shared Function CreateCircle(ByVal radiusX As Double, ByVal radiusY As Double, ByVal center As Point) As RadDiagramShape
 	Public Shared Function CreateRectangle(ByVal rect_Renamed As Rect) As RadDiagramShape

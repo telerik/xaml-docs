@@ -18,7 +18,7 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 * First, define a property in the ViewModel which should hold the highlighted tasks:
 
-#### __C#__
+
 
 ```C#
 	public class MyViewModel : PropertyChangedBase
@@ -52,7 +52,7 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 * Then add the needed tasks to the HighlightedTasks:
 
-#### __C#__
+
 
 ```C#
 	public MyViewModel()
@@ -64,7 +64,7 @@ In this topic we will explain how you can define a collection of highlighted tas
 
 * Finally, bind the HighlightedTasks to __HighlightedItemsSource__ property:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView" 

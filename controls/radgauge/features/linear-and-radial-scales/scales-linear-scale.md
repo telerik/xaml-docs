@@ -30,7 +30,7 @@ The LinearScale control can have either a horizontal or vertical orientation. Th
 
 Here is an example of a __LinearScale__ with horizontal orientation:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadHorizontalLinearGauge Width="300"
 	                                  Height="100"
@@ -42,7 +42,7 @@ Here is an example of a __LinearScale__ with horizontal orientation:
 
 Here is an example of a __LinearScale__ with vertical orientation:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadVerticalLinearGauge Width="100"
 	                                Height="300"
@@ -64,7 +64,7 @@ The __Relative Size__ feature allows you to specify the size of the scale toward
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadHorizontalLinearGauge Width="300"
 	                                  Height="100"
@@ -86,7 +86,7 @@ The __LinearScale__ exposes the __RelativeX__ and __RelativeY__ properties, whic
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadHorizontalLinearGauge Width="250"
 	                                    Height="70"

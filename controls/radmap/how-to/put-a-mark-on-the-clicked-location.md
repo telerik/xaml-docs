@@ -20,7 +20,7 @@ The following example will use a __RadMap__ with one __InformationLayer__. The _
 
 Here is the code for the example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -46,7 +46,7 @@ Here is the code for the example:
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	private void radMap_MapMouseClick( object sender, MapMouseRoutedEventArgs eventArgs )
 	{
@@ -55,7 +55,7 @@ Here is the code for the example:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub radMap_MapMouseClick(ByVal sender As Object, ByVal eventArgs As MapMouseRoutedEventArgs)
 		Me.informationLayer.Items.Clear()

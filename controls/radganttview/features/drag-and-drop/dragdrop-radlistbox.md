@@ -24,7 +24,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 
 	and the ViewModel should look like this:
 
-	#### __C#__
+	
 
 	```C#
 		public class ViewModel : ViewModelBase

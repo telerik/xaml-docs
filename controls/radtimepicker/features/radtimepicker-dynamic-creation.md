@@ -12,13 +12,13 @@ position: 1
 
 The following snippet creates a TimePicker in XAML and code-behind:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTimePicker />
 ```
 
-#### __C#__
+
 
 ```C#
 	RadTimePicker timePicker = new RadTimePicker();
@@ -26,7 +26,7 @@ The following snippet creates a TimePicker in XAML and code-behind:
 
 RadTimePicker exposes  SelectedTime event that can be handled: __SelectedTimeChanged.__ The event can be handled as demonstrated in the next example.
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel>
@@ -37,7 +37,7 @@ RadTimePicker exposes  SelectedTime event that can be handled: __SelectedTimeCha
 
 or you can use only code-behind.
 
-#### __C#__
+
 
 ```C#
 	public partial class Page : UserControl
@@ -64,13 +64,13 @@ TimeInterval = "1:0:0";
 
 In the next example you can see how to set this properties in XAML and code-behind:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTimePicker x:Name="timePicker" EndTime="2:0:0"/>
 ```
 
-#### __C#__
+
 
 ```C#
 	public partial class Page : UserControl
@@ -85,7 +85,7 @@ In the next example you can see how to set this properties in XAML and code-behi
 
 You may switch between different data sources at runtime as demonstrated in the next example:
 
-#### __C#__
+
 
 ```C#
 	public partial class Page : UserControl

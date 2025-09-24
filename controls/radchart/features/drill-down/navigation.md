@@ -18,7 +18,7 @@ The __RadChart__ provides you with an __API__ for navigating between the hierarc
 
 Here is an example of two buttons, which call the respective methods.
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel>
@@ -33,7 +33,7 @@ Here is an example of two buttons, which call the respective methods.
 
 
 
-#### __C#__
+
 
 ```C#
 	private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -48,7 +48,7 @@ Here is an example of two buttons, which call the respective methods.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub BackButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)

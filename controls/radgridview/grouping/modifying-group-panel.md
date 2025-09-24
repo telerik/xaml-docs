@@ -20,7 +20,7 @@ __RadGridView__ exposes two properties - __GroupPanelBackground__ and __GroupPan
 
 In the following example the group panel background is set to YellowGreen.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView GroupPanelBackground="Coral" />
@@ -32,7 +32,7 @@ In the following example the group panel background is set to YellowGreen.
 
 Similarly to group panel's background you may also change the group panel's foreground. Consider the following example.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView GroupPanelBackground="Coral" GroupPanelForeground="AntiqueWhite" />

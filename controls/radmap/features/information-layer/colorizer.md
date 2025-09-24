@@ -28,7 +28,7 @@ In order to allow you to color the shapes depending on a condition, the __Inform
 
 To use the __ColorMeasureScale__ object in a layer, just set the __Colorizer__ property of the respective layer to a new instance of it. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -53,7 +53,7 @@ In order to specify the desired property from the __Extended Data__, you have to
 
 Here is an example, in which the __MapShapes__ get colored depending on the value of their area:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -84,7 +84,7 @@ The __ColorMeasureScale__ splits the values passed through its __ExtendedPropert
 
 Here is an example of a __ColorMeasureScale__ with __7__ ranges:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -108,7 +108,7 @@ When you are using the __Count__ mode you can extend the __ColorMeasureScale__ w
 
 The following example shows how to use the __ColorMeasureScale__ with __Ranges__ mode:
 
-#### __XAML__
+
 ```XAML
 	<telerik:InformationLayer.Colorizer>
 		<telerik:ColorMeasureScale ExtendedPropertyName="Population" MinValue="0" MaxValue="40000000" Mode="Ranges" TickMarkStep="5000000">
@@ -140,7 +140,7 @@ The following example shows how to use the __ColorMeasureScale__ with __Ranges__
 
 And the following demonstrates the __ColorMeasureScale__ with __RangesPredefinedColors__ mode:
 
-#### __XAML__
+
 ```XAML
 	<telerik:InformationLayer.Colorizer>
 		<telerik:ColorMeasureScale ExtendedPropertyName="Population" MinValue="0" MaxValue="40000000" Mode="RangesPredefinedColors" TickMarkStep="5000000">
@@ -175,7 +175,7 @@ In case you have more ranges than colors, after reaching the last color in the c
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -227,7 +227,7 @@ The ranges for the __ColorMeasureScale__ can be defined in several different way
 
 >tip To learn more about the __Mode__ property read the [Mode](#mode) section.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -273,7 +273,7 @@ The ranges for the __ColorMeasureScale__ can be defined in several different way
 
 Another approach that extends the previous one is to handle the __PrepareCompleted__ event of the __ColorMeasureScale__ object in addition. This will allow you to modify the collection containing the ranges after the __ColorMeasureScale__ object has been prepared. In the event handler you can modify the __Min and Max Values__ of the existing ranges. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -317,7 +317,7 @@ Another approach that extends the previous one is to handle the __PrepareComplet
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	private void ColorMeasureScale_PrepareCompleted( object sender, Telerik.Windows.Controls.Map.ShapeColorizerEventArgs e )
 	{
@@ -331,7 +331,7 @@ Another approach that extends the previous one is to handle the __PrepareComplet
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub ColorMeasureScale_PrepareCompleted(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Map.ShapeColorizerEventArgs)
 	 Dim scale As ColorMeasureScale = TryCast(sender, ColorMeasureScale)
@@ -347,7 +347,7 @@ The next approach is to manually define the __Min__ and __Max Values__ of the __
 
 >Note that setting the __Min__ and __Max Values__ will make the __ColorMeasureScale__ behave as if it works with __MapShapeReader__. This means that you can still use the __HightlightFillCollection__ and __ShapeFillCollection__ properties.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -395,7 +395,7 @@ The next approach is to manually define the __Min__ and __Max Values__ of the __
 
 In addition to the previous approach you can again use the __PrepareCompleted__ event. Additionally with the __Min__ and __Max Values__ defined you can directly define the desired ranges at design-time via the __RangeCollection__ property of the __ColorMeasureScale__ object. In this case you shouldn't use the __HighlightFillCollection__ and __ShapeFillCollection__ properties, as they are used only when the ranges are automatically generated. You have to specify the desired colors via the __HighlightFill__ and __ShapeFill__ properties of the __MapRange__ object. Here is an example.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"

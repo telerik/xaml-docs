@@ -26,7 +26,7 @@ Below you can see a description of the 3 collections:
 
 Here you can see a possible way to iterate the Shapes or Connection of the RadDiagram:
 
-#### __C#__
+
 ```C#
 	this.diagram.Shapes.ToList().ForEach(x =>
 	{
@@ -35,7 +35,7 @@ Here you can see a possible way to iterate the Shapes or Connection of the RadDi
 	});
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.diagram.Shapes.ToList().ForEach(Function(x)
 		'your custom logic goes here'
@@ -53,7 +53,7 @@ The __RadDiagram__ exposes two extension methods which you can use to iterate th
 
 In order to take advatnage of these methods you need to add a using statement for the __Telerik.Windows.Diagrams.Core__ namespace in your code-behind file. Then you'll be able to access both methods through a __RadDiagram__ instance:		
 
-#### __C#__
+
 ```C#
     using Telerik.Windows.Diagrams.Core;
     ...
@@ -61,7 +61,7 @@ In order to take advatnage of these methods you need to add a using statement fo
     xDiagram.GetIncomingConnectionsForShape(shape);
 ```
 
-#### __VB.NET__	
+	
 ```VB.NET
     Imports Telerik.Windows.Diagrams.Core
     ...

@@ -18,7 +18,7 @@ See this [article]({%slug radgridview-paging-using-telerik-raddatapager%}) for m
 When you insert new row, it is added to the last page of RadDataPager. If you want to page to the new row when the BeginInsert command is called, you will have to handle GridView's AddingNewDataItem event and execute the following code:
         
 
-#### __C#__
+
 
 ```C#
 	private void clubsGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)

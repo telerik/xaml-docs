@@ -20,7 +20,7 @@ The __Align__ DiagramCommand makes the Selected Items align to Top, Bottom, Left
 
 Note that the __IsSnapToGridEnabled__ property of the RadDiagram must be set to True (default). Below you can see an example code of how to use the Align Command:                
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -46,7 +46,7 @@ Note that the __IsSnapToGridEnabled__ property of the RadDiagram must be set to 
 
 You can give argument to the Align Command with the __CommandParameter__ property. You can set Top, Bottom, Left, Right, Middle or Center Alignment like so:
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel>
@@ -64,7 +64,7 @@ In the __RadDiagram__ the snapping is enabled by default and in order to disable
 
 Once the snapping is enabled, when a __DiagramItem__ is dragged its X and Y coordinates increase or decrease with the __SnapX__ and __SnapY__ value. Below you can see the selected item being snapped with the [Snap Command]({%slug raddiagrams-features-commands%}).                
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -127,7 +127,7 @@ The alignment lines are part of the __AlignmentAdorner__ and therefore their app
 >`...`
 >`<telerik:RadDiagram primitives:AlignmentAdorner.VerticalLineStroke="Green"/>`
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDiagram x:Name="xDiagram"

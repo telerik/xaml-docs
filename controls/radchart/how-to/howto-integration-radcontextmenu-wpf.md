@@ -26,7 +26,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 * Create a new class named __MenuItem__. This class represents a single item in the __RadContextMenu__. Note that the class has absolutely the same properties as the __RadMenuItem__ used in the context menu. The idea here is to bind the different properties of the __MenuItem__ business object to the corresponding properties of the __RadMenuItem__ using __style binding__.
 
-#### __C#__
+
 
 ```C#
 	public class MenuItem : INotifyPropertyChanged
@@ -207,7 +207,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MenuItem
@@ -361,7 +361,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 * Create a new class named __MenuItemCollection__. This class is pretty simple and self-explanatory.
 
-#### __C#__
+
 
 ```C#
 	public class MenuItemsCollection : ObservableCollection<MenuItem>
@@ -396,7 +396,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MenuItemsCollection
@@ -431,7 +431,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 * Create a new class named __ChartDataItem__. The __ChartDataItem__ is used to populate the __RadChart__ with sample data.
 
-#### __C#__
+
 
 ```C#
 	public class ChartDataItem : INotifyPropertyChanged
@@ -477,7 +477,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ChartDataItem
@@ -519,7 +519,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 * Create a new class named __ChartDataCollection__ - this is an observable collection of __ChartDataItem__ objects.
 
-#### __C#__
+
 
 ```C#
 	public class ChartDataCollection : ObservableCollection<ChartDataItem>
@@ -529,7 +529,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ChartDataCollection
@@ -541,7 +541,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 * And the final prerequisite is the __ChartViewModel__ - the data source for your __RadChart__.
 
-#### __C#__
+
 
 ```C#
 	public class ChartViewModel
@@ -580,7 +580,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ChartViewModel
@@ -618,7 +618,7 @@ You will need several helper classes that will be used for the __RadChart__ and 
 
 * Now you need to re-template the desired chart series type in order to place a __RadContextMenu__ instance as attached property in its template.
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="CustomStyle"
@@ -690,7 +690,7 @@ You should note several things in the above code snippet:
 
 The code snippet below shows you the full XAML code:
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -794,7 +794,7 @@ The code snippet below shows you the full XAML code:
 
 * What is left is to add the chart control declaration, bind it to a property of the __ViewModel__ set as a __DataContext__ for the respective user control, and instruct the control to use the custom bar style declared earlier:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart"
@@ -815,7 +815,7 @@ The code snippet below shows you the full XAML code:
 
 
 
-#### __C#__
+
 
 ```C#
 	public void SetDataContex()
@@ -835,7 +835,7 @@ The code snippet below shows you the full XAML code:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim menu As RadContextMenu = CType(sender, RadContextMenu)

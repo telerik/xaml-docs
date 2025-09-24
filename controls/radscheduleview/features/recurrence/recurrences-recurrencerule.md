@@ -48,7 +48,7 @@ The __RecurrenceRule__ class has only one public constructor, which accepts a __
 
 >tipThe __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.        
 
-#### __C#__
+
 
 ```C#
 	var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
@@ -67,7 +67,7 @@ The __RecurrenceRule__ class has only one public constructor, which accepts a __
 	fitnessAppointment.RecurrenceRule = new RecurrenceRule(recurrencePattern);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
@@ -104,7 +104,7 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 * Create a new appointment. 
 
-#### __C#__
+
 
 ```C#
 	var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
@@ -116,7 +116,7 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 	};
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
@@ -129,7 +129,7 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 * Create a [RecurrencePattern]({%slug radscheduleview-features-recurrences-recurrencepattern%}).
 
-#### __C#__
+
 
 ```C#
 	var recurrencePattern = new RecurrencePattern()
@@ -140,7 +140,7 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 	};
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim recurrencePattern = New RecurrencePattern() With {
@@ -153,13 +153,13 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 * [Create](#how-to-create-a-recurrence-rule-and-associate-it-with-an-appointment) a __RecurrenceRule__ and associate the create recurrence pattern with it.
           
 
-#### __C#__
+
 
 ```C#
 	var rule = new RecurrenceRule(recurrencePattern);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim rule = New RecurrenceRule(recurrencePattern)
@@ -167,7 +167,7 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 * Add an exception occurrence to the recurrence rule. 
 
-#### __C#__
+
 
 ```C#
 	var exceptionDate = fitnessAppointment.Copy()
@@ -176,7 +176,7 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 	rule.AddException(startDate, exceptionDate);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim exceptionDate = fitnessAppointment.Copy()
@@ -187,13 +187,13 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 * Associate the create recurrence rule with the appointment. 
 
-#### __C#__
+
 
 ```C#
 	fitnessAppointment.RecurrenceRule = rule;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	fitnessAppointment.RecurrenceRule = rule

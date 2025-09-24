@@ -15,19 +15,19 @@ position: 1
 The purpose of the __DataContext__ is to hold the data that will be bound (like a data source). If the __DataContext__ is empty no binding will be applied. The __DataContext__ can be set from both XAML and managed code:
 				
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTabControl x:Name="radTabControl" DataContext="{Binding MyTabItems}" />
 ```
 
-#### __C#__  
+  
 ```C#
 	RadTabControl radTabControl= new RadTabControl();
 	radTabControl.DataContext = new Collection<WordDocument>();
 ```
 
-#### __VB.NET__  	
+  	
 ```VB.NET
 	Dim radTabControl As New RadTabControl()
 	radTabControl.DataContext = New Collection(Of WordDocument)()
@@ -53,19 +53,19 @@ The __ItemsSource__ property can be bound to any collection that implements the 
 
 When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determine which property of the __DataContext__ object to be visualized in the tab content.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadTabControl x:Name="radTabControl" ItemsSource="{Binding Persons}" DisplayMemberPath="Name" />
 ```
 
-#### __C#__
+
 ```C#
 	RadTabControl radTabControl= new RadTabControl();
 	radTabControl.ItemsSource = new Collection<Person>();
 	radTabControl.DisplayMemberPath = "Name";
 ```
 
-#### __VB.NET__  
+  
 ```VB.NET
 	Dim radTabControl As New RadTabControl()
 	radTabControl.ItemsSource = New Collection(Of Person)()

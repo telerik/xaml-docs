@@ -17,7 +17,7 @@ This article will demonstrate how to implement the View and the ViewModel.
 
 When the models are defined, we need to create the __ViewModel__ (refer to __ScheduleViewViewModel__ class) and bind the ScheduleView control in the xaml:
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
@@ -55,7 +55,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 
 When "Save data" button is clicked, we save the data to the server.
 
-#### __C#__
+
 
 ```C#
 	private void OnSaveExecuted(object param) 
@@ -79,7 +79,7 @@ Load the SqlTimeMarkers and the SqlCategories and add them to the TimeMarkers an
 
 Here is the code:
 
-#### __C#__
+
 
 ```C#
 	private void LoadData()
@@ -94,7 +94,7 @@ Here is the code:
 
 Also, we need to handle the Appointments.CollectionChanged event and in the handler we add or remove the items from the ObjectSets:
 
-#### __C#__
+
 
 ```C#
 	private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)

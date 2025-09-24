@@ -22,7 +22,7 @@ The __Graph Colorizer__ has two major properties:
 
 The following example will demonstrate how you can color the RadMap using the Graph Colorizer
 
-#### __XAML__
+
 ```XAML	
 	<telerik:RadMap x:Name="radMap">
 		<telerik:RadMap.Provider>
@@ -50,7 +50,7 @@ The following example will demonstrate how you can color the RadMap using the Gr
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#	
 	GraphColoriser colorizer = new GraphColoriser();
 	colorizer.ShapeFillCollection.Add(new MapShapeFill()

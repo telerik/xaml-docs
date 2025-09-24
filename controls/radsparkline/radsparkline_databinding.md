@@ -54,14 +54,14 @@ The following code snippets demonstrate how to databind RadSparkLine to generic 
 
 Create new *RadLinearSparkline* in XAML and turn on visibility for Indicators as follows:
 
-#### __XAML__
+
 ```XAML
     <telerik:RadLinearSparkline Width="150" Height="50" x:Name="myLinearSparkline" ShowFirstPointIndicator="True" ShowLastPointIndicator="True" ShowHighPointIndicators="True" ShowLowPointIndicators="True"/>
 ```
 
 Set the List as datasource for the SparkLine using the *ItemsSource *property of the RadLinearSparkline:
 
-#### __C#__
+
 ```C#
 	Random r = new Random();
 	List<double> myData = new List<double>();
@@ -72,7 +72,7 @@ Set the List as datasource for the SparkLine using the *ItemsSource *property of
 	myLinearSparkline.ItemsSource = myData;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Dim myLinearSparkline As New RadLinearSparkline()
     Dim r As New Random()
@@ -88,7 +88,7 @@ __2.Binding To a List of Business Objects__
 
 If you have a list of business objects and you want to bind it to the RadSparkLine control here is how to do it:
 
-#### __XAML__
+
 ```XAML
     <telerik:RadColumnSparkline x:Name="PART_SparkbarControl" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="400"
                                 ShowAxis="False"
@@ -106,7 +106,7 @@ If you have a list of business objects and you want to bind it to the RadSparkLi
                                 ShowLowPointIndicators="True" />
 ```
 
-#### __C#__
+
 ```C#
     public partial class MainPage : UserControl 
     {
@@ -135,7 +135,7 @@ If you have a list of business objects and you want to bind it to the RadSparkLi
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Partial Public Class MainPage
         Inherits UserControl

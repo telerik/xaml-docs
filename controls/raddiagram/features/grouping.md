@@ -58,7 +58,7 @@ In the next example we will create 20 shapes with contents - "1", "2",... "20" a
 
 Let's first create some random shapes:
 
-#### __C#__
+
 ```C#
 	private void RadButton_Click_1(object sender, RoutedEventArgs e)
 	{
@@ -72,7 +72,7 @@ Let's first create some random shapes:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub RadButton_Click_1(sender As Object, e As RoutedEventArgs)
 		For i As Integer = 1 To 20
@@ -90,7 +90,7 @@ Let's first create some random shapes:
 
 Now let's implement some grouping logic on Button's Click:
 
-#### __C#__
+
 ```C#
 	private void RadButton_Click_3(object sender, RoutedEventArgs e)
 	{
@@ -101,7 +101,7 @@ Now let's implement some grouping logic on Button's Click:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Private Sub RadButton_Click_3(sender As Object, e As RoutedEventArgs)
 		Dim evenShapes As IShape() = Me.diagram.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 0).ToArray(Of IShape)()
@@ -117,13 +117,13 @@ Below you can see how the grouping works:
 
 Now let's play with grouping and upgrouping. Below are some code examples and the result of the code execution:
 
-#### __C#__
+
 ```C#
     this.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
     this.diagram.Group("345", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Me.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
     Me.diagram.Group("345", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
@@ -135,13 +135,13 @@ The creation of the second group excludes Shapes[3] from group "123".
 
 Alternatively if we use one name in the method:
 
-#### __C#__
+
 ```C#
 	this.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
 	this.diagram.Group("123", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
 	Me.diagram.Group("123", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
@@ -155,14 +155,14 @@ __Subgrouping__ must be done from subgroups to parentgroups. __In other words, c
 
 Below is an example of creating a subgroups and a parent group.
 
-#### __C#__
+
 ```C#
     var groupA = this.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
     var groupB = this.diagram.Group("3-4", this.diagram.Shapes[3], this.diagram.Shapes[4]);
     var parentGroup = this.diagram.Group("1-2-3-4",groupA,groupB);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Dim groupA = Me.diagram.Group("1-2", Me.diagram.Shapes(1), Me.diagram.Shapes(2))
     Dim groupB = Me.diagram.Group("3-4", Me.diagram.Shapes(3), Me.diagram.Shapes(4))
@@ -179,13 +179,13 @@ First click selects the outermost (the biggest group), second click selects the 
 
 What will happen if we try to create parent group then create subgroups?
 
-#### __C#__
+
 ```C#
     this.diagram.Group("1-2-3-4", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3], this.diagram.Shapes[4]);
     this.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Me.diagram.Group("1-2-3-4", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3], this.diagram.Shapes[4]);
     Me.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
@@ -199,13 +199,13 @@ __Ungrouping__
 
 You can Ungroup one or several groups with the __Ungroup__ method of RadDiagram:		
 
-#### __C#__
+
 ```C#
 	this.diagram.Ungroup(groupA, groupB, groupC);
 	this.diagram.Ungroup(this.diagram.Groups.ToArray());		  
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.diagram.Ungroup(groupA, groupB, groupC);
 	Me.diagram.Ungroup(this.diagram.Groups.ToArray());		  
@@ -215,7 +215,7 @@ You can Ungroup one or several groups with the __Ungroup__ method of RadDiagram:
 
 Using the DiagramCommands Group and Ungroup is straightforward. Group applies to the selected IGroupables and Ungroup applies to the selected IGroups.
 
-#### __XAML__
+
 ```XAML
     <telerik:RadDiagram IsSnapToItemsEnabled="False" x:Name="diagram" HorizontalAlignment="Stretch" Height="200" Width="800"
     IsBackgroundSurfaceVisible="True"  />

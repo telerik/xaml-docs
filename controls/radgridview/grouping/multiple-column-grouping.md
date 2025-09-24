@@ -28,7 +28,7 @@ It is also possible to group the data by multiple columns programmatically by us
 
 If you want to implement multi-column grouping you just have to define __GroupDescriptor__ or __ColumnGroupDescriptor__ objects for the desired grouping criteria and add them to the __GroupDescriptors__ collection. It can be done at design time:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView"
@@ -44,7 +44,7 @@ If you want to implement multi-column grouping you just have to define __GroupDe
 
 This can be done at run time via managed code too:
 
-#### __C#__
+
 
 ```C#
 	GroupDescriptor countryDescriptor = new GroupDescriptor();
@@ -57,7 +57,7 @@ This can be done at run time via managed code too:
 	this.radGridView.GroupDescriptors.Add(titleDescriptor);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim countryDescriptor As New GroupDescriptor()

@@ -24,12 +24,12 @@ You can export the chart to an image using the __Telerik.Windows.Media.Imaging.E
 
 The following code snippets demonstrate how to use the ExportToImage() method.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadCartesianChart x:Name="chart" />
 ```
 
-#### __C#__
+
 ```C#
 	string filename = "ExportedChart.png"; 
 	using (Stream fileStream = File.Open(filename, FileMode.OpenOrCreate))

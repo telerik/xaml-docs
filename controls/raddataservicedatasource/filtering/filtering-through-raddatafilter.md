@@ -16,7 +16,7 @@ position: 2
 
 If you bind __RadDataFilter.Source__ to __RadDataServiceDataSource.DataView__, you will get automatic server-side filtering. When the user defines his filtering criteria through __RadDataFilter’s__ UI, __RadDataFilter__ will automatically transfer the resulting __FilterDescriptors__ to __RadDataServiceDataSource__. If __RadDataServiceDataSource.AutoLoad__ is ___true___, the control will automatically go to the server and get the data that matches these __FilterDescriptors__. 
 
-#### __XAML__
+
 
 ```XAML
 

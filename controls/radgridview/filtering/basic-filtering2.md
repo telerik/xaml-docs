@@ -30,7 +30,7 @@ The user can enter a filter criterion in the filter box. A drop-down list allows
 
 If you don't want your __RadGridView__ to be filterable, you just have to set the __IsFilteringAllowed__ to __False__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView IsFilteringAllowed="True">
@@ -39,7 +39,7 @@ If you don't want your __RadGridView__ to be filterable, you just have to set th
 
 If you want to disable filtering only for a particular column, you can set its __IsFilterable__ property to __False__:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn IsFilterable="False"/>
@@ -55,7 +55,7 @@ The third one is the __FieldFilterEditorCreated__ and the forth it the __FilterO
 * Via the __GridViewFilteringEventArgs__ of the __Filtering__ event you can get the added or removed filter descriptors.
             
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView Filtering="radGridView_Filtering" Filtered="radGridView_Filtered"/>
@@ -64,7 +64,7 @@ The third one is the __FieldFilterEditorCreated__ and the forth it the __FilterO
 You are also able to cancel the filtering operation by setting the __Cancel__ property to __True__.
 ![Telerik {{ site.framework_name }} DataGrid Basic Filtering 2](images/RadGridView_BasicFiltering_2.png)     
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_Filtering(object sender, GridViewFilteringEventArgs e)
@@ -74,7 +74,7 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 ```
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_Filtering(ByVal sender As Object, ByVal e As GridViewFilteringEventArgs)
@@ -90,7 +90,7 @@ You are also able to cancel the filtering operation by setting the __Cancel__ pr
 In the event handler you can place some code that has to be executed when the data in the __RadGridView__ gets filtered. For example, try to change the background color of the filtered columns:
             
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_Filtered(object sender, GridViewFilteredEventArgs e)
@@ -108,7 +108,7 @@ In the event handler you can place some code that has to be executed when the da
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_Filtered(ByVal sender As Object, ByVal e As GridViewFilteredEventArgs)
@@ -132,7 +132,7 @@ Here is a snapshot of the final result.![Telerik {{ site.framework_name }} DataG
 * The __FilterOperatorsLoading__ event (Added Q3 2011) allows you to both remove unwanted operators and define a defaultly selected operator in a proper way. 
             
 
-#### __C#__
+
 
 ```C#
 	private void clubsGrid_FilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
@@ -144,7 +144,7 @@ Here is a snapshot of the final result.![Telerik {{ site.framework_name }} DataG
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub clubsGrid_FilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)

@@ -18,7 +18,7 @@ To enable __TwoWay__ binding, the object that the Calendar is bound to should im
 
 Here is the Xaml for the example:
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
@@ -39,7 +39,7 @@ Here is the Xaml for the example:
 
 And the code-behind:
 
-#### __C#__
+
 
 ```C#
 	public partial class Default_Cs : UserControl

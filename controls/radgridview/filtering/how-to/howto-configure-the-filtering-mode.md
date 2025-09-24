@@ -16,7 +16,7 @@ RadGridView has three filtering modes as described in the [Filtering Basics]({%s
 
 To enable the popup filtering mode, set RadGridView’s `FilteringMode` property to `Popup` or do not set anything, since this is the standard default filtering mode.
 
-#### __XAML__ 
+ 
 ```XAML
 	<telerik:RadGridView FilteringMode="Popup" />
 ```
@@ -29,7 +29,7 @@ __Popup Filtering Mode__
 
 To enable the filter row mode, set RadGridView’s `FilteringMode` property to `FilterRow`.
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadGridView FilteringMode="FilterRow" />
 ```
@@ -42,7 +42,7 @@ __FilterRow Filtering Mode__
 
 To enable the filter editor mode, set RadGridView’s `FilteringMode` property to `FilterEditor`.
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadGridView FilteringMode="FilterEditor" />
 ```

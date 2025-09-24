@@ -20,7 +20,7 @@ Setting the __Deadline__ property of the GanttTask visualizes a vertical line sh
 
 __Example 1__ shows how the Deadline can be set.
 
-#### __C#__
+
 
 ```C#
 	var task = new GanttTask()
@@ -57,7 +57,7 @@ In order to change this behavior, you will need to create a custom GanttTask and
 
 __Example 2__ shows how to override CheckIsExpired method.
 
-#### __C#__
+
 
 ```C#
 	public class CustomGanttTask : GanttTask

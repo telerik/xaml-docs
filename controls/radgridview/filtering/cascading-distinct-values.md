@@ -17,7 +17,7 @@ You need to subscribe to the __DistinctValuesLoading__ event of the __RadGridVie
         
 Here is a small example:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_DistinctValuesLoading(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
@@ -26,7 +26,7 @@ Here is a small example:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_DistinctValuesLoading(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs)

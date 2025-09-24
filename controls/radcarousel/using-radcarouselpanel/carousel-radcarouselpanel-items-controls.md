@@ -21,7 +21,7 @@ The most common occasion where we can see that in action are the WPF ItemsContro
 
 All ItemsControl-derived classes expose a public property, ItemsPanel, that allows you to plug a panel different than the default one. In the example below we replace a ListBox's default vertically-oriented panel with a horizontally-oriented one:
 
-#### __XAML__
+
 
 ```XAML
 	<ListBox x:Name="HorizontalListBox">
@@ -39,7 +39,7 @@ All ItemsControl-derived classes expose a public property, ItemsPanel, that allo
 
 RadCarouselPanel, being a normal Panel can be used in a similar fashion thus allowing designers and developers to completely change the appearance of a control while preserving its functionality. Here is how to change a WPF ListView and make it look like a carousel control:
 
-#### __XAML__
+
 
 ```XAML
 	<ListView x:Name="ListView">

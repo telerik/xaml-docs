@@ -24,7 +24,7 @@ But if any of your __RadMenuItems__ has submenu items, they will be placed insid
 
 Here's a simple code that shows how to use Height and DropDownHeight properties:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadContextMenu.ContextMenu>
@@ -44,7 +44,7 @@ Here's a simple code that shows how to use Height and DropDownHeight properties:
 
 If you are using __RadMenuGroupItem__ you can control scrolling inside it via ScrollViewer's attached properties - VerticalScrollBarVisibility and HorizontalScrollBarVisibility.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadContextMenu x:Name="ContextMenu1">

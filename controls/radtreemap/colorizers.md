@@ -18,7 +18,7 @@ Let's get started with creating a sample TreeMap, bound to collection of busines
 
 Here's our sample TreeMap:
 
-#### __C#__
+
 ```C#
 	public MainPage()
 	{
@@ -60,7 +60,7 @@ Here's our sample TreeMap:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()
@@ -97,7 +97,7 @@ Here's our sample TreeMap:
 	End Class
 ```
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadTreeMap x:Name="treeMap1" LayoutStrategy="Squarified" BorderThickness="1" BorderBrush="#FF5F031C">
 		<telerik:RadTreeMap.TypeDefinitions>
@@ -118,7 +118,7 @@ The result si shown bellow:
 
 A colorizer, which contains a set of GradientStops. It chooses the brush to be applied according to the RadTreeMapItem's value and colorizer's gradient stops. Each GradientStop.Offset value can be absolute or relative (between 0 and 1) depending on the IsAbsolute property value. Note that the RangeMinimum and RangeMaximum properties are set the same as the min and max values of the RadTreeMapItem-s.
 
-#### __XAML__
+
 
 ```XAML
 	  <telerik:TypeDefinition.Mappings>
@@ -136,7 +136,7 @@ A colorizer, which contains a set of GradientStops. It chooses the brush to be a
 
 This colorizer contains a set of RangeBrush objects. It chooses the brush to be applied according to the RadTreeMapItem value, set by the *ValuePath* property of the TreeMap and the From and To values of each RangeBrush. The values of each RangeBrush can be absolute or relative (between 0 and 1) depending on the IsAbsolute property value.
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -166,7 +166,7 @@ This colorizer contains a set of RangeBrush objects. It chooses the brush to be 
 
 Here's an example of the same colorizer with relative colors (IsAbsolute property is turned off):
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -195,7 +195,7 @@ Here's an example of the same colorizer with relative colors (IsAbsolute propert
 
 It reduces the level of saturation of a given StartColor depending on the RadTreeMapItem value. The level of desaturation can be controlled using From and To properties.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:TypeDefinition.Mappings>
@@ -209,7 +209,7 @@ It reduces the level of saturation of a given StartColor depending on the RadTre
 
 Colorizes RadTreeMap per predefined collection of Brush objects. 
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -234,7 +234,7 @@ Colorizes RadTreeMap per predefined collection of Brush objects.
 
 Paints RadTreeMapItem by the color set via brush. You may control the target of the coloring by *TargetPropertyName* property as shown below.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:TypeDefinition.Mappings>

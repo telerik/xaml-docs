@@ -30,7 +30,7 @@ To insert a pin point on your map you have to add a __MapPinPoint__ object to yo
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -46,7 +46,7 @@ Here is an example:
 
 In order to configure the position of the __MapPinPoint__ you have to set the __Location__ attached property of the __MapLayer__ class. Here is an example:        
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -62,7 +62,7 @@ In order to position the pin point more precisely you can use the __MapLayer.Hot
 
 >tip To learn more about the __HotSpot__ functionality read [here]({%slug radmap-features-hot-spots%}).          
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -86,7 +86,7 @@ By default the __MapPinPoint__ exposes two properties that allow you to set its 
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -122,7 +122,7 @@ As you can see in the previous section the __MapPinPoint__ doesn't look very goo
 
 Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"

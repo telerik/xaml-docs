@@ -669,7 +669,7 @@ __In order to bind RadChart to nested collections:__
 ##### 6. The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 
 
-#### __C#__
+
 
 ```C#
 	List<ObservableCollection<TradeData>> sampleData = new List<ObservableCollection<TradeData>>();

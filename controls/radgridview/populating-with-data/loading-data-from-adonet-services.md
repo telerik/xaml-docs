@@ -20,7 +20,7 @@ The purpose of this tutorial is to show you how to populate a __RadGridView__ wi
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__ declaration in your XAML: 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView x:Name="radGridView"/>
@@ -32,25 +32,25 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 * Switch to the code-behind and add a reference to the __NorthwindEntities__ object.
 
-#### __C#__
+
 
 ```C#
 	NorthwindEntities dbContext = new NorthwindEntities(new Uri("GridViewDataService.svc", UriKind.Relative));
 ```
 
-#### __C#__
+
 
 ```C#
 	NorthwindEntities dbContext2 = new NorthwindEntities(new Uri("Enter your service address here"));
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private dbContext As New NorthwindEntities(New Uri("GridViewDataService.svc", UriKind.Relative))
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private dbContext2 As New NorthwindEntities(New Uri("Enter your service address here"))
@@ -59,7 +59,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 >tipFor more information about how to add a reference to an ADO.NET Data Service and how to create a new instance of the exposed entity, take a look at the 
 {% if site.site_name == 'Silverlight' %}[Consuming ADO.NET Data Service](http://www.telerik.com/help/silverlight/consuming-data-ado-net-data-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming ADO.NET Data Service](http://www.telerik.com/help/wpf/consuming-data-ado-net-data-service.html){% endif %} topic.The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects. 
 
-#### __C#__
+
 
 ```C#
 	private void BeginRequest()
@@ -76,7 +76,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub BeginRequest()
@@ -91,13 +91,13 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	End Sub
 ```
 
-#### __C#__
+
 
 ```C#
 	this.radGridView.ItemsSource = dbContext.Customers.Execute().ToList();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radGridView.ItemsSource = dbContext.Customers.Execute().ToList()
@@ -114,7 +114,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * Create a new class named __NorthwindDataSource__. 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -122,7 +122,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -135,7 +135,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * In the __NorthwindDataSource__ class add a reference to the __NorthwindEntities__ object: 
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -154,7 +154,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -167,7 +167,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	End Class
 ```
 
-#### __C#__
+
 
 ```C#
 	public class NorthwindDataSource
@@ -186,7 +186,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class NorthwindDataSource
@@ -201,7 +201,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Customers__ from the database: 
 
-#### __C#__
+
 
 ```C#
 	northwindEntity.Customers.BeginExecute(
@@ -209,7 +209,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    northwindEntity.Customers);
 ```
 
-#### __C#__
+
 
 ```C#
 	foreach (Customer c in northwindEntity.Customers.Execute())
@@ -218,13 +218,13 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	northwindEntity.Customers.BeginExecute(Function(result As IAsyncResult) EntitiesLoaded(Of Customer)(result, Me.Customers), northwindEntity.Customers)
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	For Each c As Customer In northwindEntity.Customers.Execute()
@@ -236,7 +236,7 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 
 And here is the code for the __EntitiesLoaded__method:{% endif %}
 
-#### __C#__
+
 
 ```C#
 	private static void EntitiesLoaded<T>(IAsyncResult result, Collection<T> entities)
@@ -249,7 +249,7 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
@@ -262,7 +262,7 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>
@@ -272,7 +272,7 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 
 * Update your __RadGridView__ declaration - set the __ItemsSource__ property. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGridView ItemsSource="{Binding Source={StaticResource DataSource}, Path=Customers}"/>

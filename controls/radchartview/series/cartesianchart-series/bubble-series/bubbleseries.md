@@ -16,7 +16,7 @@ The bubble series is used to visualize three dimensional data. Each entity in th
 
 You can use the following definition to display a simple BubbleSeries:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>

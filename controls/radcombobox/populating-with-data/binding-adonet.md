@@ -19,7 +19,7 @@ The purpose of this tutorial is to show you how to populate a `RadComboBox` with
 
 Before proceeding further with this tutorial you need to create a new application and a `RadComboBox` declaration in your XAML.
 
-#### __XAML__  
+  
 ```XAML
 	<telerik:RadComboBox x:Name="radComboBox"/>
 ```
@@ -92,7 +92,7 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 5. Find your __RadComboBox__ declaration and set the just declared __DataTemplate__ to its __ItemTemplate__ property.
 
-	#### __XAML__  
+	  
 	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" ItemTemplate="{StaticResource CustomItemTemplate}"/>
 	```

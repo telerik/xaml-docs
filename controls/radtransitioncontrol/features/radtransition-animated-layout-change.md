@@ -59,7 +59,7 @@ The ActualWidth and ActualHeight of the RadTransitionControl would have values s
 
 This transition provider has only one option – to set its Orientation to Horizontal or Vertical. To take affect the RadTransitionControl should be Left or Right aligned if the Orientation is Horizontal and Top or Right if the Orientation is Vertical. It will animate the layout so it looks like the RadTransitionControl is getting smaller clipping the content until it gets its ActualWidth or ActualHeight based on the Orientation to zero so nothing is visible, swap the old with the new content and start to grow in size revealing the new Content until it is fully visible.      	
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl VerticalAlignment="Top" Content="{Binding ElementName=ImageSelector, Path=SelectedItem}">

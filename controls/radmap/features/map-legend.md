@@ -20,7 +20,7 @@ The __RadMap__ control introduces the __MapLegend__ object. It allows you to dis
 
 The __MapLegend__ object shouldn't be defined in the context of the __RadMap__ control. It can be defined in any part of the __UserControl__. Here is an example of a __RadMap__ that doesn't uses its default layout and a __MapLegend__ that appears in the bottom right corner of the map.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -37,7 +37,7 @@ At this point the __MapLegend__ is not connected to the __RadMap__ and the __Rad
 
 >The __MapLegend__ creates the items in the legend on the basis of the __ColorMeasureScale__ object set to the __Colorizer__ property of the __Information Layer__.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
@@ -91,12 +91,12 @@ At this point the __MapLegend__ is not connected to the __RadMap__ and the __Rad
 	</telerik:MapLegend>
 ```
 
-#### __C#__
+
 ```C#
 	this.radMap.Provider = new EmptyProvider();
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.radMap.Provider = New EmptyProvider()
 ```
@@ -135,7 +135,7 @@ Here is an example of a __MapLegend__ configured via these properties:
 
 >tip Defining format strings in XAML can be done in the following way - __{}:{0:your format string}.__ To learn more about formatting visit the [Formatting Overview](http://msdn.microsoft.com/en-us/library/26etazsy.aspx) chapter in MSDN.
 
-#### __XAML__
+
 ```XAML
 	<telerik:MapLegend x:Name="mapLegend"
 	                    Layer="{Binding ElementName=informationLayer}"

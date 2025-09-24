@@ -19,7 +19,7 @@ This help topic will demonstrate how to add location crosshair for RadChart as w
 
 To achieve the crosshair functionality you will add two [custom gridlines]({%slug radchart-features-annotations-custom-gridline%}) to the ChartArea (each of them parallel to one of the axes). Also, you will need three events – MouseEnter, MouseLeave and MouseMove to track the mouse cursor position and “move” the gridlines across the plot area (represented by ClipPanel element in the ChartArea template). First you need to hook up to the chart's Loaded event. When the chart is loaded you can easily get hold of the panel via the ChildrenOfType<T> extension method (add reference to the __Telerik.Windows.Controls__ namespace) like this:
 
-#### __C#__
+
 
 ```C#
 	private void OnChartLoaded(object sender, RoutedEventArgs e)
@@ -33,7 +33,7 @@ To achieve the crosshair functionality you will add two [custom gridlines]({%slu
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnChartLoaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -52,7 +52,7 @@ By handling the MouseEnter and MouseLeave events you can add and remove the grid
 
 Knowing the current X and Y data values of the mouse cursor you can bind the pair of lines to the X and Y properties of their DataContext, ensuring that the two lines will intersect at the current mouse location. 
 
-#### __C#__
+
 
 ```C#
 	private void OnPlotAreaPanelMouseEnter(object sender, MouseEventArgs e)
@@ -85,7 +85,7 @@ Knowing the current X and Y data values of the mouse cursor you can bind the pai
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnPlotAreaPanelMouseEnter(sender As Object, e As MouseEventArgs)
@@ -117,7 +117,7 @@ Knowing the current X and Y data values of the mouse cursor you can bind the pai
 
 The Location Indicator consists of two textblocks. We modify their values in code behind, but you can easily modify the code in an MVVM friendly way.
 
-#### __XAML__
+
 
 ```XAML
 	<StackPanel Orientation="Horizontal" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top">

@@ -14,7 +14,7 @@ position: 0
 
 Items in the __RadCarouselPanel__ can be moved programmatically by using the public __MoveBy__ method that takes item displacement as its argument. The displacement variable can be any integer value. The __MoveBy__ method takes into account the path direction thus for positive displacement values it moves the items towards the end of the path and vice versa. For values of zero no items are moved. 
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>
@@ -30,13 +30,13 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 
 ![{{ site.framework_name }} RadCarousel RadCarouselPanel Item Movement](images/CarouselPanelMovement_01.png)
 
-#### __C#__
+
 
 ```C#
 	this.Panel.MoveBy(2);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.Panel.MoveBy(2)
@@ -48,7 +48,7 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 
 __RadCarouselPanel__ is a scrollable panel that can use __ScrollViewer__ to move its children around the path. This is done by wrapping the panel in a __ScrollViewer__. Moving the __ScrollBars__ will automatically trigger item displacement.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid>

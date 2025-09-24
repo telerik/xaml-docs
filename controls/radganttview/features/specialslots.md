@@ -26,7 +26,7 @@ We will go through each of them separately.
 
 SingleRangeGenerator applies a single special slot to the whole visible range of RadGanttView. It can be set like this:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
@@ -50,7 +50,7 @@ WeekDaysGenerator allows you to set special slots on certain week days. It provi
 
 So it can be used to mark the working days, for example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}" >
@@ -66,7 +66,7 @@ So it can be used to mark the working days, for example:
 
 You just need to create a custom class which implements __IRangeGenerator__ interface and implement GetRanges method which receives as a parameter the current VisibleRange of the GanttView:
 
-#### __C#__
+
 
 ```C#
 	public class CustomRangeGenerator : ViewModelBase, IRangeGenerator
@@ -88,7 +88,7 @@ You just need to create a custom class which implements __IRangeGenerator__ inte
 
 Set the newly created class to the SpecialSlotsGenerator property:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}" >

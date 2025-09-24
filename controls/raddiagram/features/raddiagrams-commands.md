@@ -65,7 +65,7 @@ The static `DiagramCommands` class is located in __Telerik.Windows.Controls.Diag
 
 In the __Telerik.Windows.Controls.Diagrams.Extensions__ namespace you can find another set of commands described in the `ExtensionsCommands` class. This class describes the `Print` command that allows you to print a diagramming structure. You can use this command in XAML to print the content of a RadDiagram instance as follows:		
 
-#### __XAML__
+
 ```XAML
     <telerik:RadButton xmlns:extensions="clr-namespace:Telerik.Windows.Controls.Diagrams.Extensions;assembly=Telerik.Windows.Controls.Diagrams.Extensions"
 					Content="Print" 
@@ -81,7 +81,7 @@ A possible way to use `DiagramCommands` in __XAML__ is to bind the `Command` pro
 
 Below is shown how you can use some of the Diagram Commands in an application Note that this syntax is common for every Diagram Command.
 
-#### __XAML__
+
 ```XAML
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="buttonsStack">
             <telerik:RadGeometryButton Height="55" Width="55" Command="telerik:DiagramCommands.AutoFit"

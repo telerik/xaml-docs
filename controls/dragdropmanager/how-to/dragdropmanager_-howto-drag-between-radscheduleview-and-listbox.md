@@ -16,7 +16,7 @@ We need to add the logic that will allow drag and drop from ListBox.
 
 Firstly, we define ListBox and bind it to sample data. We also allow dropping to it and dragging to its ListBoxItems:
 
-#### __XAML__
+
 
 ```XAML
 	<ListBox Grid.Column="1" x:Name="SampleListBox" AllowDrop="True" Background="WhiteSmoke">
@@ -28,13 +28,13 @@ Firstly, we define ListBox and bind it to sample data. We also allow dropping to
 	</ListBox>
 ```
 
-#### __C#__
+
 
 ```C#
 	SampleListBox.ItemsSource = new ObservableCollection<Appointment>();
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	SampleListBox.ItemsSource = New ObservableCollection(Of Appointment)()
@@ -42,7 +42,7 @@ Firstly, we define ListBox and bind it to sample data. We also allow dropping to
 
 Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handlers to initialize and perform the drag and drop process in the ListBox. We need DragDropCompleted to handle removing the items when item is dragged from ListBox. Also we use DragOver handler to disable drop over the ListBox when drag has started from the same LisBox:
 
-#### __C#__
+
 
 ```C#
 	DragDropManager.AddDragInitializeHandler(SampleListBox, OnDragInitialize);
@@ -94,7 +94,7 @@ Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handl
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	DragDropManager.AddDragInitializeHandler(Me, New DragInitializeEventHandler(AddressOf OnDragInitialized))           
@@ -142,7 +142,7 @@ Then we attach the DragInitialize, Drop and DragDropCompleted and DragOver handl
 
 Finally, we add a ScheduleView and bind it to a sample data:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadScheduleView x:Name="ScheduleView">
@@ -152,7 +152,7 @@ Finally, we add a ScheduleView and bind it to a sample data:
 	</telerik:RadScheduleView>
 ```
 
-#### __C#__
+
 
 ```C#
 	ScheduleView.AppointmentsSource = new ObservableCollection<Appointment>(
@@ -160,7 +160,7 @@ Finally, we add a ScheduleView and bind it to a sample data:
 	                select new Appointment { Start = DateTime.Now.AddDays(c % 5), End = DateTime.Now.AddDays(c % 5).AddHours(2), Subject = "Event " + c });
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	ScheduleView.AppointmentsSource = New ObservableCollection(Of Appointment)(From c In Enumerable.Range(0, 10)New Appointment() With { _

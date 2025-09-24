@@ -28,7 +28,7 @@ In this approach you use the trivial properties provided by the framework such a
 
 Here is an example:       
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -56,7 +56,7 @@ The two properties are of  type __MapShapeFill__. The __MapShapeFill__ object al
 
 >These properties will take precedence over the trivial ones.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -94,7 +94,7 @@ You are also able to define the appearance of the shapes on the Information Laye
 
 The two properties are of __MapShapeFill__ type. The __MapShapeFill__ object allows you not only to specify the fill color, but to modify the stroke as well. Here is an example:
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">

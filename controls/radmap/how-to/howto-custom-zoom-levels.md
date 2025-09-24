@@ -108,7 +108,7 @@ Here is a sample code snippet that demonstrates zoom level customization:
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Public Partial Class MainWindow
     Inherits Window

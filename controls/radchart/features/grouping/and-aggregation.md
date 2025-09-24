@@ -85,7 +85,7 @@ The following example, considering the sample data above, demonstrates how to us
 
 >tipIn order to use the grouping feature, you have to declare the following namespace:
 
-#### __XAML__
+
 
 ```XAML
 	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
@@ -93,7 +93,7 @@ The following example, considering the sample data above, demonstrates how to us
 
 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -121,7 +121,7 @@ The following example, considering the sample data above, demonstrates how to us
 
 
 
-#### __C#__
+
 
 ```C#
 	RadChart radChart = new RadChart();
@@ -138,7 +138,7 @@ The following example, considering the sample data above, demonstrates how to us
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New RadChart()
@@ -178,7 +178,7 @@ The example above shows how to use the grouping feature. However, grouping is of
 
 Based on the example above, imagine that you want to create a chart that shows the total fruit consumption per year and region:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -208,7 +208,7 @@ Based on the example above, imagine that you want to create a chart that shows t
 
 
 
-#### __C#__
+
 
 ```C#
 	RadChart radChart = new RadChart();
@@ -225,7 +225,7 @@ Based on the example above, imagine that you want to create a chart that shows t
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim radChart As New RadChart()

@@ -29,7 +29,7 @@ This help article will show you how to show PointMarks and Labels for specific p
 
 
 
-#### __C#__
+
 
 ```C#
 	public class Data : INotifyPropertyChanged
@@ -103,7 +103,7 @@ This help article will show you how to show PointMarks and Labels for specific p
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Data
@@ -175,7 +175,7 @@ Note the *UpdatePointMarkVisibility *method called in the constructor of the cla
 
 Add a new chart declaration to your XAML:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="chart"/>
@@ -185,7 +185,7 @@ Add a new chart declaration to your XAML:
 
 * Add the PointMark Style between the UserControl starting and ending tag. Add *Visibility *Property databound to *DataItem.PointMarksVisibility* property of the class. Here is how the Style should look like:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="MyPointMark_Style" TargetType="telerik:PointMark">
@@ -216,7 +216,7 @@ Add a new chart declaration to your XAML:
 
 * The chart will be built in the code-behind and White Space String will be assigned to every point's Label if it's Day is not dividable by 5:
 
-#### __C#__
+
 
 ```C#
 	List<Data> exportData = new List<Data>();
@@ -261,7 +261,7 @@ Add a new chart declaration to your XAML:
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim exportData As New List(Of Data)()

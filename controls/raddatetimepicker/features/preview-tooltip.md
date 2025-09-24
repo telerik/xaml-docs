@@ -29,7 +29,7 @@ Concerning the preview tooltip the __RadDateTimePicker__ gives you the following
 
 Here is an example of using these properties:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" ErrorTooltipContent="Enter a valid date and time!">

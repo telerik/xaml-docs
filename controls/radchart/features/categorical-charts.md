@@ -26,7 +26,7 @@ To create categorical charts, you have to map the category values to the __XCate
 
 >The only difference between categorical charts and a normal chart is the way the data is bound. Categorical charts use __XCategory__ data point member while the other charts use __XValue__.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:DataPoint XCategory="Apples" YValue="41" />
@@ -34,7 +34,7 @@ To create categorical charts, you have to map the category values to the __XCate
 	<telerik:DataPoint XCategory="Grapes" YValue="25" />
 ```
 
-#### __C#__
+
 
 ```C#
 	DataSeries dataSeries = new DataSeries();
@@ -45,7 +45,7 @@ To create categorical charts, you have to map the category values to the __XCate
 	radChart.DefaultView.ChartArea.DataSeries.Add( dataSeries );
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim dataSeries As New DataSeries()
@@ -67,7 +67,7 @@ To create categorical charts, you have to map the category values to the __XCate
 
 If you want to use data binding, then you have to set the __DataPointMember__ to __XCategory__ instead of __XValue__.
 
-#### __C#__
+
 
 ```C#
 	SeriesMapping seriesMapping = new SeriesMapping();
@@ -83,7 +83,7 @@ If you want to use data binding, then you have to set the __DataPointMember__ to
 	radChart.SeriesMappings.Add(seriesMapping);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim seriesMapping As New SeriesMapping()

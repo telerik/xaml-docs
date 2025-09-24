@@ -30,7 +30,7 @@ In the SqlRecurrenceRule.CreateNew() method we create a new instance of SqlExept
 
 We need to generate a brush value from the string stored in the database. What we suggest is to use the SolidColorBrushHelper.FromNameString method that returns a SolidColorBrush if the string in hex format, and Brush if the string is Color Name like "Red". But you could change this logic as well. Here is the __SolidColorBrushHelper__ class:
 
-#### __C#__
+
 
 ```C#
 		internal static class SolidColorBrushHelper

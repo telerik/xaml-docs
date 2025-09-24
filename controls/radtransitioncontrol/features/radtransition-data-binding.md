@@ -16,7 +16,7 @@ In case of using data binding, you have to combine the __Content__ property with
 
 Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTransitionControl x:Name="radTRansitionControl"
@@ -35,7 +35,7 @@ You can also bind the __RadTransitionControl__ to another __Control__ in your __
 
 >Note that when the __ItemsControl__ works with a dynamic data via its __ItemsControl__ property, the __SelectedItem__ will return the respective data item object. When the __ItemsControl__ works with static container items (e.g. __ListBoxItem__, __ComboBoxItem__ etc.), the __SelectedItem__ will return the container itself.
 
-#### __XAML__
+
 
 ```XAML
 	<ListBox x:Name="MyListBox">

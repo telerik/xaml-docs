@@ -36,7 +36,7 @@ RadDiagramNavigationPane is consisted of:
 
 In order to use with the DiagramNavigationPane you have to bind its Diagram property to a RadDiagram:		
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadDiagram x:Name="diagram" />
 	<telerik:RadDiagramNavigationPane Diagram="{Binding ElementName=diagram}"

@@ -21,7 +21,7 @@ You can use this property to get or set the current page of the __RadDataPager__
 
 Before getting to the XAML code for the example you'll have to first create a converter for the __PageIndex__. Its purpose is to synchronize the index with the logical page number.
 
-#### __C#__
+
 ```C#
 
 	public class IndexToNumberConverter : IValueConverter
@@ -39,7 +39,7 @@ Before getting to the XAML code for the example you'll have to first create a co
 
 
 
-#### __VB.NET__
+
 ```VB.NET
 
 	Public Class IndexToNumberConverter
@@ -57,7 +57,7 @@ Before getting to the XAML code for the example you'll have to first create a co
 
 Here is the XAML for the example.
 
-#### __XAML__
+
 ```XAML
 
 	<Grid x:Name="LayoutRoot"

@@ -14,7 +14,7 @@ The __RadTimePicker__  is style able control that support all kinds of Panel lay
 
 First, we need to define new ItemsPanel and set it in the ClockStyle.
 
-#### __XAML__
+
 
 ```XAML
 	<!--Layout 1-->
@@ -55,7 +55,7 @@ First, we need to define new ItemsPanel and set it in the ClockStyle.
 
 Then, set the ClockStyle property to the TimePicker.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White">

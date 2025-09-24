@@ -16,7 +16,7 @@ position: 1
 
 In order to add new item to __RadGanttView__, first you have to create an instance of the class __Telerik.Windows.Controls.GanttView.GanttTask__, set its properties like Start, End, Title etc, and then add it to the __TasksSource__ collection of the control. 
 
-#### __C#__
+
 
 ```C#
 	var summaryTask = new GanttTask()
@@ -32,7 +32,7 @@ In order to add new item to __RadGanttView__, first you have to create an instan
 
 In case you need to add a child to a __summary task__, you should add it to its Children collection:
 
-#### __C#__
+
 
 ```C#
 	var task1 = new GanttTask()
@@ -56,7 +56,7 @@ In case you need to add a child to a __summary task__, you should add it to its 
 
 In order to remove a task you have to remove it from the __TasksSource__ collection of the control or __Children__ collection of a summary task:
 
-#### __C#__
+
 
 ```C#
 	summaryTask.Children.Remove(task1);

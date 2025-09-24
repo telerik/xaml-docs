@@ -22,7 +22,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 
 >tipTo learn more about how to use the __RadWindow__ as user control read [this topic]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
@@ -51,7 +51,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	</telerik:RadWindow>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void OnButtonAcceptClicked(object sender, RoutedEventArgs e)
@@ -66,7 +66,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub OnButtonAcceptClicked(sender As Object, e As RoutedEventArgs)

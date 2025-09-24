@@ -16,7 +16,7 @@ When you insert a new item (via the Insert key or the insert row) RadGridView wi
 
 This article shows how to make always the first column be focused when a new item is about to be inserted. You need to subscribe to the __AddingNewDataItem__ event of the RadGridView and set the current column in its event handler:
 
-#### __C#__
+
 
 ```C#
 	private void clubsGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
@@ -26,7 +26,7 @@ This article shows how to make always the first column be focused when a new ite
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub clubsGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)

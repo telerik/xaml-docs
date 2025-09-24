@@ -36,7 +36,7 @@ In the __CreateTargetCapGeometry()__ method the parameters serve for the very sa
 
 The next code snippet will create custom connection caps as shown in the beggining of this article.
 
-#### __C#__
+
 ```C#
     public class CustomConnection : RadDiagramConnection
     {
@@ -82,7 +82,7 @@ The next code snippet will create custom connection caps as shown in the beggini
     }
 ```
 
-#### __VB.NET__
+
 ```VB.NET
     Public Class CustomConnection
         Inherits RadDiagramConnection
@@ -155,7 +155,7 @@ The next code snippet will create custom connection caps as shown in the beggini
 
 After utilising this code you can go in XAML and use your custom connection like this:
 
-#### __XAML__
+
 ```XAML
     <telerik:RadDiagram x:Name="diagram">
 			<telerik:RadDiagramShape x:Name="shape1" Position="100 100" ZIndex="1"/>

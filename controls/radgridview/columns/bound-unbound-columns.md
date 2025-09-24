@@ -14,7 +14,7 @@ When populating __RadGridView__ with data two logical types of columns can be us
 
 __Bound columns__ represent the data from __RadGridView's__ ItemsSource. They support data related functionality such as [sorting]({%slug gridview-sorting-basics%}), [filtering]({%slug gridview-filtering-basic%}), [grouping]({%slug gridview-grouping-basics%}), [aggregates]({%slug gridview-grouping-aggregates%}), etc. Typically the bound columns are of type __GridViewDataColumn__ with its __DataMemberBinding__ property set.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
@@ -27,7 +27,7 @@ __Unbound__ columns are used for displaying a custom content. Such custom conten
 
 Here is an example for unbound column:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewColumn Header="Name">
@@ -53,7 +53,7 @@ Using __GridViewDataColumn__, however, can give you the advantages of both the b
 
 Here is the above sample of an unbound column transformed into a template column.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name (Unbound)">

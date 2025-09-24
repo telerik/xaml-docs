@@ -30,7 +30,7 @@ The resizing of the elements is defined per __RadRibbonTab__. The resizing behav
 
 The __RadRibbonGroups__ assume the size of their __DefaultVariant__ whenever they can. By default the value of this property is __Large__, but you can easily change it:	
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonTab Header="Home">
 	    <telerik:RadRibbonGroup DefaultVariant="Small"
@@ -91,7 +91,7 @@ The next example demonstrates how to set the __RadRibbonGroup__'s __Variants__ c
 
 >A size variant can only be specified once per group.
 
-#### __XAML__
+
 ```XAML
     <telerik:RadRibbonView>
         <telerik:RadRibbonTab Header="Home">

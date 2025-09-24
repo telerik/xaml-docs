@@ -18,7 +18,7 @@ The __RadDateTimePicker__ control uses that Culture in order to parse the input 
 
 The next code snippet demonstrates how to set the CurrentCulture and CurrentUICulture to US culture:
 
-#### __C#__
+
 
 ```C#
 	InitializeComponent();
@@ -51,7 +51,7 @@ The next code snippet shows how to set the date pattern in order to change the d
 {% if site.site_name == 'WPF' %}
 >In order for the parsing of the input date to be correct you need to make sure that the __DateSeparator__ is set to the desired symbol in the ShortDatePattern.
 
-#### __C#__
+
 
 ```C#
 	InitializeComponent();
@@ -70,7 +70,7 @@ The next code snippet shows how to set the date pattern in order to change the d
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-#### __C#__
+
 
 ```C#
 	InitializeComponent();

@@ -42,7 +42,7 @@ You can show three different ToolTips for the three different styles.
 
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
+
 
 ```XAML
 	<Window.Resources>
@@ -89,7 +89,7 @@ You can show three different ToolTips for the three different styles.
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl.Resources>

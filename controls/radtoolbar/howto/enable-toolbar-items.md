@@ -20,7 +20,7 @@ RadToolBar with disabled items:
 
 You can disable an item placed inside the __RadToolBar__ by changing its __IsEnabled__ property:
 
-#### __XAML__
+
 ```XAML
     <telerik:RadToolBar x:Name="toolbar">
         <Button IsEnabled="False">
@@ -31,7 +31,7 @@ You can disable an item placed inside the __RadToolBar__ by changing its __IsEna
 
 If you want to disable all __RadToolBar__ items in code behind, you can traverse the Items collection of the control and change the enable state of each item:
 
-#### __C#__
+
 ```C#
 	foreach (object o in toolbar.Items)
 	{
@@ -43,7 +43,7 @@ If you want to disable all __RadToolBar__ items in code behind, you can traverse
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	For Each o As Object In toolbar.Items
 		Dim control As Control = TryCast(o, Control)

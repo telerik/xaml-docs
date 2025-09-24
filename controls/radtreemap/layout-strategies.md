@@ -29,7 +29,7 @@ The default one is Slice and Dice.
 
 For __Slice and Dice__ algorithm you can specify __Orientation__ (*Horizontal*, *Vertical* or *Smart*) and __SortDirection__ (*Ascending* or *Descending*):
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeMap>
@@ -43,7 +43,7 @@ Setting the __Orientation__ to *Smart* means that the algorithm will automatical
 
 You can instantiate a layout strategy in XAML by using the layout strategy name:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadTreeMap Background="#57391A" BorderThickness="0"
@@ -52,7 +52,7 @@ You can instantiate a layout strategy in XAML by using the layout strategy name:
 
 You can also use a TypeConverter that converts strings in *LayoutStrategy *using default settings:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPivotMap>
@@ -64,7 +64,7 @@ You can also use a TypeConverter that converts strings in *LayoutStrategy *using
 
 Have in mind that the LayoutStrategy may be different for each __TypeDefinition__ of __RadTreeMap__ or __GroupDefinition__ of __RadPivotMap.__ You can also set a layout strategy for the topmost level. If you set Squarified for example for the topmost level and you don't specify a strategy for its children - all will inherit the top-most level strategy which in this case is Squarified.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:GroupDefinition Member="Genre" LayoutStrategy="Squarified" />

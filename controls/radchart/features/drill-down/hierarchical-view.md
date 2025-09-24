@@ -22,7 +22,7 @@ In order to use a selector you simply have to create an instance of it. If it is
 
 Here is an example of a data with two levels of hierarchy. The data contains the following classes:
 
-#### __C#__
+
 
 ```C#
 	public class Company
@@ -42,7 +42,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class Company
@@ -53,7 +53,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 
 
-#### __C#__
+
 
 ```C#
 	public class ModelSalesCollection : List<ModelSales>
@@ -70,7 +70,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ModelSalesCollection
@@ -87,7 +87,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 >tipThe __Sum()__ extension method is available via the __System.Linq__ namespace.
 
-#### __C#__
+
 
 ```C#
 	public class ModelSales
@@ -112,7 +112,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class ModelSales
@@ -129,7 +129,7 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 
 Here is a method that generates some sample data for you.
 
-#### __C#__
+
 
 ```C#
 	private List<Company> GetChartData()
@@ -159,7 +159,7 @@ Here is a method that generates some sample data for you.
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function GetChartData() As List(Of Company)
@@ -190,7 +190,7 @@ Here is a method that generates some sample data for you.
 
 At the first level of the hierarchy the __RadChart__ should display the value of the __TotalAmount__ for each company. 
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -211,7 +211,7 @@ At the first level of the hierarchy the __RadChart__ should display the value of
 
 Upon clicking on the respective company, the __RadChart__ should visualize the __Amount__for each model. The next __ChartHierarchicalViewDescriptor__ should be related to the __Sales__ property of the clicked parent item.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>

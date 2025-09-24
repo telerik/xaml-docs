@@ -22,7 +22,7 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 
 * __Step__ - defines the grouping interval. It is a double property with default value 100.
 
-#### __XAML__
+
 
 ```XAML
 	<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
@@ -31,7 +31,7 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
 ```
 
-#### __C#__
+
 
 ```C#
 	DoubleGroupDescription doubleGroupDescription1 = new DoubleGroupDescription();
@@ -46,7 +46,7 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription2);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim doubleGroupDescription1 As New DoubleGroupDescription()

@@ -16,7 +16,7 @@ When working in unbound mode, the polar series are filled with PolarDataPoint ob
 
 Below is an example of RadPolarChart with PolarAreaSeries:
 
-#### __XAML__
+
 ```XAML
 	<telerikChart:RadPolarChart>
 	    <telerikChart:RadPolarChart.PolarAxis>

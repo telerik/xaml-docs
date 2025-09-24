@@ -17,7 +17,7 @@ You can also group objects by the result of an equally complex operation:
 
 __Example 1: Create a generic GroupDescriptor<T>.__
 
-#### __C#__
+
 
 ```C#
 	var descriptor = new GroupDescriptor<Employee, int, int>

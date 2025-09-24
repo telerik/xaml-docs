@@ -20,7 +20,7 @@ This behavior can be turned on with the new __DragDropMode__ property which is o
 
 The following snippets show how __DragDropMode__ property can be set in XAML and in code-behind:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking" DragDropMode="Deferred">
@@ -28,7 +28,7 @@ The following snippets show how __DragDropMode__ property can be set in XAML and
 	</telerik:RadDocking>
 ```
 
-#### __C#__
+
 
 ```C#
 	radDocking.DragDropMode = DockingDragDropMode.Deferred;
@@ -36,7 +36,7 @@ The following snippets show how __DragDropMode__ property can be set in XAML and
 
 Let's, for example, have the following RadDocking definition:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDocking x:Name="radDocking1">

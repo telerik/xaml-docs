@@ -137,7 +137,7 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 
 Here is an example of a marked zone that is limited in both directions.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -168,7 +168,7 @@ Here is an example of a marked zone that is limited in both directions.
 
 The Marked Zones can overlap each other. In such case their __Z-Index__ will be used to determine which will appear above. Here is an example.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadChart>
@@ -203,7 +203,7 @@ The Marked Zones can overlap each other. In such case their __Z-Index__ will be 
 
 Additional customizations can be done via the __ElementStyle__ property. It gets applied to the __Rectangle__ element that visually represents the __MarkedZone__. Via this style you can set the __StrokeDashArray__ property for example.
 
-#### __XAML__
+
 
 ```XAML
 	<FrameworkElement.Resources>

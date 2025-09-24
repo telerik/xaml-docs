@@ -26,7 +26,7 @@ The scenario described below will provide the user with the following options:
 
 * Take into account the rotated bounds of a shape when dragging it in a predefined draggable area.
 
-#### __XAML__
+
 
 ```XAML
 	<Grid Background="White">
@@ -66,7 +66,7 @@ The scenario described below will provide the user with the following options:
 
 In order to restrict the __RadDiagramShapes__ dragging area, you need to create a custom dragging service. This means that you have to start this implementation by creating a new class that derives from the __DiagrammingFramework DraggingService__ class.
 
-#### __C#__
+
 
 ```C#
 	public class MyDragging : DraggingService
@@ -79,7 +79,7 @@ In order to restrict the __RadDiagramShapes__ dragging area, you need to create 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyDragging
@@ -102,7 +102,7 @@ Next, we need to add properties that will configure the dragging service from th
 
 * __DragAllowedArea__ - a __Rect__ property that gets or sets a value representing the draggable area.						
 
-#### __C#__
+
 
 ```C#
 	public class MyDragging : DraggingService, INotifyPropertyChanged
@@ -179,7 +179,7 @@ Next, we need to add properties that will configure the dragging service from th
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class MyDragging
@@ -244,7 +244,7 @@ The __DraggingService__ exposes a virtual method - __Drag__, which can be overri
 
 First, if we need to only restrict the position of the mouse while dragging a shape, then we have to simply track that position and check whether it falls within the bounds of the draggable area. If it doesn't we have to create a property to hold an updated and most importantly - allowed mouse position. Please note that all position calculations will be based on the coordinate system of the diagramming instance: 
 
-#### __C#__
+
 
 ```C#
 	public override void Drag(Point newPoint)
@@ -271,7 +271,7 @@ First, if we need to only restrict the position of the mouse while dragging a sh
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Overrides Sub Drag(ByVal newPoint As Point)
@@ -303,7 +303,7 @@ With the above code we calculate a new drag position only in the cases when the 
 
 However, if the user wants to configure the shapes to be entirely moved only within a draggable area, we will have to get the __RadDiagram SelectionBounds__. And in order to handle the case that takes into account the rotation of the selected shapes when calculating the __SelectionBounds__, it is best to create a separate method:
 
-#### __C#__
+
 
 ```C#
 	 private readonly RadDiagram diagram;
@@ -334,7 +334,7 @@ However, if the user wants to configure the shapes to be entirely moved only wit
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private ReadOnly diagram As RadDiagram
@@ -363,7 +363,7 @@ However, if the user wants to configure the shapes to be entirely moved only wit
 
 In the above implementation we added a __diagram__ field which gets the __RadDiagram__ instance currently using the dragging service. This is why we also have to initialize this field in the constructor of the service:				
 
-#### __C#__
+
 
 ```C#
 	public MyDragging(RadDiagram graph)
@@ -377,7 +377,7 @@ In the above implementation we added a __diagram__ field which gets the __RadDia
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New(ByVal graph As RadDiagram)
@@ -392,7 +392,7 @@ In the above implementation we added a __diagram__ field which gets the __RadDia
 
 Then we can use the __GetSelectionBounds()__ method in the logic that customizes the drag of shapes which bounds need to always be within the predefined draggable area:			
 
-#### __C#__
+
 
 ```C#
 	public override void Drag(Point newPoint)
@@ -432,7 +432,7 @@ Then we can use the __GetSelectionBounds()__ method in the logic that customizes
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Overrides Sub Drag(ByVal newPoint As Point)
@@ -475,7 +475,7 @@ Then we can use the __GetSelectionBounds()__ method in the logic that customizes
 
 No matter which restriction approach we implement (restricting the drag based on the mouse position or the shapes bounds), we always end up recalculating the __dragPoint__ coordinates. This is why as soon as we calculate a valid drag value, we need to invoke the base implementation of the __DraggingService Drag()__ method with the new __dragPoint__. You can find the complete implementation of the overridden __Drag()__ method below:
 
-#### __C#__
+
 
 ```C#
 	public override void Drag(Point newPoint)
@@ -545,7 +545,7 @@ No matter which restriction approach we implement (restricting the drag based on
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Overrides Sub Drag(ByVal newPoint As Point)
@@ -614,7 +614,7 @@ No matter which restriction approach we implement (restricting the drag based on
 
 We also need to make sure that the __lastPoint__ property has the coordinates of the position where the drag was initiated. For that purpose we will also override the __DraggingService InitializeDrag()__ method:
 
-#### __C#__
+
 
 ```C#
 	//override this method to get the coordinates of the point where the drag started
@@ -625,7 +625,7 @@ We also need to make sure that the __lastPoint__ property has the coordinates of
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'override this method to get the coordinates of the point where the drag started'
@@ -637,7 +637,7 @@ We also need to make sure that the __lastPoint__ property has the coordinates of
 
 Finally, we need to configure the diagram to use our custom dragging implementation instead of the default __DraggingService__. This is why we need to create a new instance of the __MyDragging__ class in the code-behind file of our view. Then we need to bind the properties defined within the custom dragging service to the view elements that control them:
 
-#### __C#__
+
 
 ```C#
 	private MyDragging newDraggingService;
@@ -679,7 +679,7 @@ Finally, we need to configure the diagram to use our custom dragging implementat
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private newDraggingService As MyDragging
@@ -721,7 +721,7 @@ Finally, we need to configure the diagram to use our custom dragging implementat
 
 And now we can use the __newDraggingService__ instance and register it through the __ServiceLocator__:
 
-#### __C#__
+
 
 ```C#
 	public Example()
@@ -732,7 +732,7 @@ And now we can use the __newDraggingService__ instance and register it through t
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Sub New()
@@ -747,7 +747,7 @@ If you run the solution now, you should see the __On__ button as checked which m
 
 You can further extend this example by updating the designated draggable area during pan and zoom operations. In order to do so, you can handle the __RadDiagram ViewportChanged__ event:				
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadDiagram x:Name="diagram" ViewportChanged="OnDiagramViewportChanged">
@@ -756,7 +756,7 @@ You can further extend this example by updating the designated draggable area du
 	</telerik:RadDiagram>
 ```
 
-#### __C#__
+
 
 ```C#
 	private void SetRestrictRect(Rect rect)
@@ -773,7 +773,7 @@ You can further extend this example by updating the designated draggable area du
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub SetRestrictRect(ByVal rect As Rect)

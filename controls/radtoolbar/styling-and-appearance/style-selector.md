@@ -53,7 +53,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## RadToolBarSeparator
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
          <Style x:Key="CustomRadToolBarSeparatorStyle" TargetType="telerik:RadToolBarSeparator">
@@ -82,7 +82,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## Button
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomButtonStyle" TargetType="Button">
@@ -99,7 +99,7 @@ To change a predefined style of a given control the __TypeName__ property of the
  
 ## RadButton
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadButtonStyle" TargetType="telerik:RadButton">
@@ -116,7 +116,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## ToggleButton
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomToggleButtonStyle" TargetType="ToggleButton">
@@ -133,7 +133,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## RadToggleButton
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadToggleButtonStyle" TargetType="telerik:RadToggleButton">
@@ -150,7 +150,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## RadioButton
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadioButtonStyle" TargetType="RadioButton">
@@ -167,7 +167,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## RadRadioButton
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadRadioButtonStyle" TargetType="telerik:RadRadioButton">
@@ -184,7 +184,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## RadDropDownButton
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadDropDownButtonStyle" TargetType="telerik:RadDropDownButton">
@@ -201,7 +201,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## RadSplitButton
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomRadSplitButtonStyle" TargetType="telerik:RadSplitButton">
@@ -218,7 +218,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## CheckBox
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomCheckBoxStyle" TargetType="CheckBox">
@@ -235,7 +235,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## TextBlock
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomTextBlockStyle" TargetType="TextBlock">
@@ -252,7 +252,7 @@ To change a predefined style of a given control the __TypeName__ property of the
 
 ## TextBox
 
-#### __XAML__
+
 ```XAML
 	<Window.Resources>
         <Style x:Key="CustomTextBoxStyle" TargetType="TextBox">

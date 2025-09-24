@@ -26,7 +26,7 @@ To read your data you have to use the __MapShapeReader__ class. To learn more ab
 
 To pass the desired shapefile you have to use the __Source__ property of the __MapShapeReader__ and pass the __Uri__ to the desired .shp file to it. The shape file can be accompanied by additional files containing information which is related to the shapes. Example for such file is the .dbf, which holds attribute related to the shapes in the main file. The __RadMap__ allows you to use these types of files. To pass one to the reader use the __DataSource__ property and set it to the respective __Uri__.
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer">
@@ -38,14 +38,14 @@ To pass the desired shapefile you have to use the __Source__ property of the __M
 	</telerik:RadMap>
 ```
 
-#### __C#__
+
 ```C#
 	this.informationLayer.Reader = new MapShapeReader();
 	this.informationLayer.Reader.Source = new Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.shp", UriKind.RelativeOrAbsolute );
 	this.informationLayer.Reader.DataSource = new Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.dbf", UriKind.RelativeOrAbsolute );
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.informationLayer.Reader = New MapShapeReader()
 	Me.informationLayer.Reader.Source = New Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.shp", UriKind.RelativeOrAbsolute )
@@ -58,7 +58,7 @@ The __RadMap__ allows you to manually read the file, by which you are able to ge
 
 First of all read the Shapefile as a resource stream. Note that the file must have its __BuildAction__ set to __Resource__. After that call the static __Read()__ method of the __ShapefileReader__ class and pass the resource stream to it. It returns a list of __FrameworkElement__ objects, which you can directly add to the __InformationLayer__ of the __RadMap__.
 
-#### __C#__
+
 ```C#
 	StreamResourceInfo shapeResourceInfo = Application.GetResourceStream( new Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.shp", UriKind.RelativeOrAbsolute ) );
 	StreamResourceInfo dbfResourceInfo = Application.GetResourceStream( new Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.dbf", UriKind.RelativeOrAbsolute ) );
@@ -69,7 +69,7 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	}
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Dim shapeResourceInfo As StreamResourceInfo = Application.GetResourceStream(New Uri("/Silverlight.Help.RadMapSamples;component/Data/world.shp", UriKind.RelativeOrAbsolute))
 	Dim dbfResourceInfo As StreamResourceInfo = Application.GetResourceStream(New Uri("/Silverlight.Help.RadMapSamples;component/Data/world.dbf", UriKind.RelativeOrAbsolute))

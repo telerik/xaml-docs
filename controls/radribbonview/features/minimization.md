@@ -40,17 +40,17 @@ The following properties are related to the minimize feature:
 
 To disable the minimization functionality of the __RadRibbonView__ just set the __IsMinimizable__ property to __False__. This feature is enabled by default.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" IsMinimizable="False" />
 ```
 
-#### __C#__
+
 ```C#
 	radRibbonView.IsMinimizable = false;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	radRibbonView.IsMinimizable = False
 ```

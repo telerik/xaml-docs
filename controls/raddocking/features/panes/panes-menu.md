@@ -26,7 +26,7 @@ Each __RadPane__ has a menu, which allow you to perform certain actions against 
 
 You can modify the menu by using the __ContextMenuTemplate__ property of the __RadPane__. It is of type __DataTemplate__ and is expected to contain a __RadContextMenu__. Here is an example:
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPane x:Name="radPane"
@@ -64,13 +64,13 @@ Here is the final code:
 
 >The __RadDockingCommands__ class is located in the __Telerik.Windows.Controls__ namespace of the __Telerik.Windows.Controls__ assembly. To use it in XAML you have to declare the following namespace:
 
-#### __XAML__
+
 
 ```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadPane x:Name="radPane1"

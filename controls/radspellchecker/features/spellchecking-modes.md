@@ -22,7 +22,7 @@ __RadSpellChecker__ allows you to choose between two spellchecking modes when us
 
 To do this kind of check, use the method as follows:
 
-#### __C#__
+
 
 ```C#
 	private void Button_Click( object sender, RoutedEventArgs e )
@@ -50,7 +50,7 @@ You are presented with a list of all possible suggestions, from which you can ch
 
 You can trigger this operation using the method below:
 
-#### __C#__
+
 
 ```C#
 	private void Button_Click( object sender, RoutedEventArgs e )
@@ -71,7 +71,7 @@ You are presented with the same options as the WordByWord mode. The difference i
 
 >In this mode, the type of the spellchecker used is that of RadRichTextBox. Therefore, if you need to get a reference to the spellchecker in order to register the SpellChecker manually or load a dictionary when MEF is disabled, you can do it like this:
 
-#### __C#__
+
 
 ```C#
 	public MainPage()

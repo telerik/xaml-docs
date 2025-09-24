@@ -40,13 +40,13 @@ You can also change the sorting algorithm through applying a [Generic Sort Descr
 
 To do so you can use the __Sorting__ event. As a start you need to attach an event handler to it:
        
-#### __C#__
+
 
 ```C#
 	this.radGridView.Sorting += this.radGridView_Sorting;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	  
@@ -71,7 +71,7 @@ For the example you have to sort the __ItemsSource of RadGridView__ on __Sorting
 
 The first thing to do is to get the value of __RadGridView.ItemsSource__ and assure that it is not null. In the __Sorting__ event handler you can add the following lines of code:
 
-#### __C#__
+
 
 ```C#
 	private void radGridView_Sorting(object sender, GridViewSortingEventArgs e)
@@ -87,7 +87,7 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
@@ -104,7 +104,7 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 
 Next you have to check the value of the current sorting direction. To do that use __OldSortingState__ property of __GridViewSortingEventArgs__, adding the following lines of code to the sorting event handler:
         
-#### __C#__
+
 
 ```C#
 	//If the sorting state is none, sort the items ascending.
@@ -124,7 +124,7 @@ Next you have to check the value of the current sorting direction. To do that us
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'If the sorting state is none, sort the items ascending.
@@ -143,7 +143,7 @@ You can see that after determining the sorting state, __NewSortingState__ proper
 
 To sort the employees collection use __OrderBy__ and __OrderByDescending__ extension methods provided by __System.Linq__ namespace. The extension methods work with lambda expressions.
         
-#### __C#__
+
 
 ```C#
 	//Via the SortPropertyName value get 
@@ -153,7 +153,7 @@ To sort the employees collection use __OrderBy__ and __OrderByDescending__ exten
 	                                                  .GetValue(employee, null));
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	'Via the SortPropertyName value get 
@@ -168,14 +168,14 @@ To sort the employees collection use __OrderBy__ and __OrderByDescending__ exten
 
 Do the same with __OrderByDescending__ extension method. In the end, set __RadGridView.ItemsSource__ to the sorted employees collection and set the __Cancel__ property of the __RadGridViewEventArgs__ to __True__ , so the built-in sorting functionality would be bypassed.
 
-#### __C#__
+
 
 ```C#
 	e.DataControl.ItemsSource = employees.ToList();
 	e.Cancel = true;
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	e.DataControl.ItemsSource = employees.ToList()
@@ -184,7 +184,7 @@ Do the same with __OrderByDescending__ extension method. In the end, set __RadGr
 
 Here is the final code that should represent __Sorting__ event handler.
 
-#### __C#__
+
 
 ```C#
 	private void CustomSortingGrid_Sorting(object sender, GridViewSortingEventArgs e)
@@ -225,7 +225,7 @@ Here is the final code that should represent __Sorting__ event handler.
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub CustomSortingGrid_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)

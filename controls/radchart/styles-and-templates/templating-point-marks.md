@@ -26,7 +26,7 @@ After clicking the OK button, a style with target type __PointMark__ will be cre
 
 Take a look at the 'Objects and Timeline' pane. Select the __PART_PointMarkPath__. This path defines the shape of the point mark. If you want to change its shape, you have to set its __Data__ property to an appropriate value. Take a look at the generated XAML.
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="PointMarkStyle" TargetType="telerik:PointMark">
@@ -53,7 +53,7 @@ Take a look at the 'Objects and Timeline' pane. Select the __PART_PointMarkPath_
 
 You can see that the __Data__ property of the __Path__ is not set. Create the data for your custom shape and set it. Here is a sample data for the path.
 
-#### __XAML__
+
 
 ```XAML
 	<Path x:Name="PART_PointMarkPath"
@@ -72,7 +72,7 @@ You can see that the __Data__ property of the __Path__ is not set. Create the da
 
 After that set the created __PointMark__ style to the __DefaultSeriesDefinition__ of your __RadChart__ and delete the dummy controls.
 
-#### __C#__
+
 
 ```C#
 	this.radChart.DefaultSeriesDefinition = new LineSeriesDefinition();
@@ -81,7 +81,7 @@ After that set the created __PointMark__ style to the __DefaultSeriesDefinition_
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.radChart.DefaultSeriesDefinition = New LineSeriesDefinition()
@@ -96,7 +96,7 @@ Here is a snapshot of the result.
 
 Here is the resulting XAML for the __PointMarkItem's Style__:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="PointMarkStyle" TargetType="telerik:PointMark">

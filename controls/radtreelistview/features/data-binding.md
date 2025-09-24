@@ -20,7 +20,7 @@ Displaying data in the __RadGridView__ depends on the data binding mechanism. Th
 
 As a typical data control the __RadGridView__ displays data by binding to a source and generating visual elements for each item in it. The first thing that you have to do is to set the __ItemsSource__ property of the __RadGridView__.
 
-#### __C#__
+
 
 ```C#
 
@@ -29,7 +29,7 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 
@@ -50,7 +50,7 @@ Introduced to the __System.ComponentModel__ namespace collection views are fully
 
 The data in the __RadGridView__ is separated in columns. There are different types of columns, displaying different types of data. Usually the data is displayed in __GridViewDataColumns__, which can be manually generated, too. In order to display the data in it you can bind its __DataMemberBinding__ property. Here is an example of a manually defined column.
 
-#### __XAML__
+
 
 ```XAML
 
@@ -73,7 +73,7 @@ In order to display the hierarchical data the __RadTreeListView__ uses child tab
 
 >Note that a table definition will be generated for each row and it will have the same __DataContext__ as the row. So you have to bind to the property, marking the collection that contains the next level of the hierarchy. This property should have the same name at each level of the hierarchy. 
 
-#### __XAML__
+
 
 ```XAML
 

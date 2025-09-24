@@ -36,7 +36,7 @@ Here is a list of the mouse events exposed by the __RadRibbonView__ object:
 
 In the example below you can see how to attach to __MouseWheel__ event from XAML.				
 
-#### __XAML__
+
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" MouseWheel="radRibbonView_MouseWheel" />
 ```
@@ -45,19 +45,19 @@ In the example below you can see how to attach to __MouseWheel__ event from XAML
 
 And also from the code-behind:
 
-#### __C#__
+
 ```C#
 	radRibbonView.MouseWheel+=new MouseWheelEventHandler(radRibbonView_MouseWheel);
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	radRibbonView.MouseWheel += New MouseWheelEventHandler(radRibbonView_MouseWheel)
 ```
 
 The implementation of the event handler __radRibbonView_MouseWheel()__ is located in the code-behind file (C# or VB.NET) and looks like this:
 
-#### __C#__
+
 ```C#
 	private void radRibbonView_MouseWheel(object sender, MouseWheelEventArgs e)
 	{
@@ -65,7 +65,7 @@ The implementation of the event handler __radRibbonView_MouseWheel()__ is locate
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Sub radRibbonView_MouseWheel(sender As Object, e As MouseWheelEventArgs)

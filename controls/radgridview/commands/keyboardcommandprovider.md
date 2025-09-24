@@ -21,7 +21,7 @@ Another approach for accomplishing the purpose will be to create a separate clas
 The custom class responsible for the update of the commands needs to be similar to the one below:
         
 
-#### __C#__
+
 
 ```C#
 	public class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
@@ -51,7 +51,7 @@ The custom class responsible for the update of the commands needs to be similar 
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Public Class CustomKeyboardCommandProvider
@@ -85,7 +85,7 @@ commands for that particular key by calling the __Clear()__ method.
 The last thing to be done is to set __KeyboardCommandProvider__ Property of the __RadGridView__ to be the newly-created __CustomKeyboardCommandProvider__ class:
         
 
-#### __C#__
+
 
 ```C#
 	this.RadGridView1.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.RadGridView1);
@@ -93,7 +93,7 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Me.RadGridView1.KeyboardCommandProvider = New CustomKeyboardCommandProvider(Me.RadGridView1)

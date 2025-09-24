@@ -16,7 +16,7 @@ The strip lines are part of the axes items and are represented by the __StripLin
 
 To be able to modify the colors of these lines you should use the following Styles:
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="HorizontalAlternateStripLineStyle" TargetType="Rectangle">
@@ -33,7 +33,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 
 
-#### __XAML__
+
 
 ```XAML
 	<Style x:Key="HorizontalStripLineStyle" TargetType="Rectangle">
@@ -45,7 +45,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 >Set the created Styles to the __AxisY.AxisStyles__ (for modifying the color of the __Horizontal__ striplines) or __AxisX.AxisStyles__ (for __Vertical__ striplines) property of your RadChart like this:
 
-#### __C#__
+
 
 ```C#
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = this.Resources["HorizontalAlternateStripLineStyle"] as Style;
@@ -54,7 +54,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	RadChart1.DefaultView.ChartArea.AxisY.AxisStyles.AlternateStripLineStyle = TryCast(Me.Resources("HorizontalAlternateStripLineStyle"), Style)
@@ -65,7 +65,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 >tipYou should turn StripLines visibility on so that you will be able to see them.
 
-#### __C#__
+
 
 ```C#
 	RadChart1.DefaultView.ChartArea.AxisY.StripLinesVisibility = System.Windows.Visibility.Visible;
@@ -73,7 +73,7 @@ To be able to modify the colors of these lines you should use the following Styl
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	RadChart1.DefaultView.ChartArea.AxisY.StripLinesVisibility = System.Windows.Visibility.Visible

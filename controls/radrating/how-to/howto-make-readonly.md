@@ -31,7 +31,7 @@ __Example 3 Make the RadRating readonly in code__
 	this.radRating.IsReadOnly = true;
 ```
 
-#### __VB.NET__
+
 ```VB.NET
 	Me.radRating.IsReadOnly = true
 ```

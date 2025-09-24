@@ -32,7 +32,7 @@ The following section demonstrates how you can create a custom command along wit
 This example creates a custom command by inheriting from the __FixedDocumentViewerCommandBase__ class.
         
 
-#### __C#__
+
 
 ```C#
 	    public class FitToWidthCommand : FixedDocumentViewerCommandBase
@@ -88,7 +88,7 @@ Further, you can create a respective command descriptor with the custom command 
 The below snippet demosntrates how you can use the first of the mentioned methods of creating a command descriptor.
         
 
-#### __C#__
+
 
 ```C#
 	    public class CustomCommandDescriptors : DefaultCommandDescriptors
@@ -137,7 +137,7 @@ The below snippet demosntrates how you can use the first of the mentioned method
 Once the custom command descriptors are implemented you just need to set __RadPdfViewer__'s __CommandDescriptors__ property.
         
 
-#### __C#__
+
 
 ```C#
 	      this.customCommandDescriptors = new CustomCommandDescriptors(this.viewer);

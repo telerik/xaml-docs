@@ -14,7 +14,7 @@ Setting the __EventName__ property will make __RadContextMenu__ to listen for a 
 
 >tip__RadContextMenu__ can listen for any of the events of the control to which it is attached.
 
-#### __XAML__
+
 
 ```XAML
 	<Button Width="100"

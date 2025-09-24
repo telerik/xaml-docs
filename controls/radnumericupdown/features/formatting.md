@@ -28,7 +28,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 * __ValueFormat set to Numeric__
 
-#### __C#__
+
 
 ```C#
 	private RadNumericUpDown TestMethod()
@@ -42,7 +42,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
@@ -58,7 +58,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	End Function
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -75,7 +75,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 * __ValueFormat set to Currency__
 
-#### __C#__
+
 
 ```C#
 	private RadNumericUpDown TestMethod()
@@ -89,7 +89,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
@@ -105,7 +105,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	End Function
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -122,7 +122,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 
 * __ValueFormat set to Percentage__
 
-#### __C#__
+
 
 ```C#
 	private RadNumericUpDown TestMethod()
@@ -136,7 +136,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
@@ -152,7 +152,7 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	End Function
 ```
 
-#### __XAML__
+
 
 ```XAML
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -171,7 +171,7 @@ For custom formatting __RadNumericUpDown__ exposes additional property that is o
 
 Here is a simple example of how to use __CustomUnit__ property:        
 
-#### __C#__
+
 
 ```C#
 	private RadNumericUpDown TestMethod()
@@ -186,7 +186,7 @@ Here is a simple example of how to use __CustomUnit__ property:
 	}
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
@@ -214,7 +214,7 @@ Input	|	Parsed value
 The above parsing is correct and useful when using the value of the RadNumericUpDown to solve percentage of other values. In many other cases the desired parsing would be to show the input value directly as percentages. Meaning that entering 1 would lead to 1% not 100%. In order to achieve this parsing all that is needed is to set the __Minimum__, __Maximum__ and __CustomUnit__ properties of the control as follows:
         
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadNumericUpDown Minimum="0"
@@ -235,7 +235,7 @@ Input	|	Parsed value
 
 __RadNumericUpDown__ provides property named __HideTrailingZeros__ which removes the digits after the decimal separator when they are all zeros. For example if you have the following __RadNumericUpDown__ with two decimal digits and value set to 42:        
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" />
@@ -247,7 +247,7 @@ It will look the following way:
 
 If you set the __HideTrailingZeros__ property to True as shown below:       
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:RadNumericUpDown NumberDecimalDigits="2" Value="42" HideTrailingZeros="True" />

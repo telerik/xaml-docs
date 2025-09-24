@@ -14,7 +14,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 
 ##### 1.  Create Line Chart Series. The following code snippet demonstrates LineSeries created using [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}).
 
-#### __C#__
+
 
 ```C#
 	public MainPage() //MainWindow() for WPF
@@ -88,7 +88,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 
 ##### 2. Subscribe to the *ItemClick* event of the ChartArea and get a list of all PointMarks in the ChartArea using the ChildrenOfType<T> extension method. The next step is to figure out which PointMark is selected. Find the SingleOrDefault PointMark from the eventargs (e.DataPoint) which matches the datacontext of a pointmark in the collection of pointmarks:
 
-#### __C#__
+
 
 ```C#
 	void ChartArea_ItemClick(object sender, ChartItemClickEventArgs e)

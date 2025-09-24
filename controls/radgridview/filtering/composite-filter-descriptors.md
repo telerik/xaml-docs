@@ -15,7 +15,7 @@ position: 3
 
 To filter a single data field by multiple values, you have to use the __CompositeFilterDescriptor__ object. It contains a collection of filter descriptors objects and the logical operator for that filters. Check out the code snippets below to see how to use and declare this filter descriptor in XAML and code-behind.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:CompositeFilterDescriptor LogicalOperator="Or">
@@ -33,7 +33,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 ```
 
 
-#### __C#__
+
 
 ```C#
 	CompositeFilterDescriptor compositeDescriptor = new CompositeFilterDescriptor();
@@ -43,7 +43,7 @@ To filter a single data field by multiple values, you have to use the __Composit
 	this.radGridView.FilterDescriptors.Add(compositeDescriptor);
 ```
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim compositeDescriptor As New CompositeFilterDescriptor()
@@ -67,7 +67,7 @@ As you can see, this filter returns all records that have their City field set e
 
 The composite filters allow you to create more complex filtering expressions. Such a complex filtering expression might include filters for multiple fields combined with different logical operators, like __(Country = "Germany" AND (City = "Berlin" OR City = "Aachen"))__. Check out the code snippets below to see how to declare such complex filter descriptors in XAML and code-behind.
 
-#### __XAML__
+
 
 ```XAML
 	<telerik:CompositeFilterDescriptor LogicalOperator="And">
@@ -91,7 +91,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 	</telerik:CompositeFilterDescriptor>
 ```
 
-#### __C#__
+
 
 ```C#
 	CompositeFilterDescriptor compositeDescriptor2 = new CompositeFilterDescriptor();
@@ -111,7 +111,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 
 
-#### __VB.NET__
+
 
 ```VB.NET
 	Dim compositeDescriptor2 As New CompositeFilterDescriptor()

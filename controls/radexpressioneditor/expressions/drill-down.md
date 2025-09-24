@@ -31,7 +31,7 @@ __Example 2: Enabling drill-down in code-behind__
 
 __Drill-down functionality__
 
-![](images/drill-down.png.png)
+![](images/drill-down.png)
 
 ## See Also
 

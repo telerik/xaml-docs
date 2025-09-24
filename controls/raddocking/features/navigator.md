@@ -161,7 +161,7 @@ The DockingNavigator class exposes several useful events, which can be used to a
             navigatorViewModel.ItemModels.Remove(itemToRemove);
         }
     ```
-```VB.NET
+	```VB.NET
         Private Sub DockingNavigator_Opening(ByVal sender As Object, ByVal e As NavigatorOpeningEventArgs)
 			Dim navigatorViewModel = TryCast((TryCast(sender, DockingNavigator)).DataContext, NavigatorViewModel)
 

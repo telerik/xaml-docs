@@ -14,7 +14,7 @@ Progress Telerik UI for {{ site.framework_name }} Extension supports Visual Stud
 
 The __Toolbox Configurator__ can be launched from the Telerik menu.
 
-{% if site.site_name == 'Silverlight' %}![VSExtentions SL Toolbox Configurator](images/VSExtentions_SL_ToolboxConfigurator.png){% else %}![VSExtentions WPF Toolbox Configurator](images/VSExtentions_WPF_ToolboxConfigurator.png){% endif %}
+![VSExtentions WPF Toolbox Configurator](images/VSExtentions_WPF_ToolboxConfigurator.png)
 
 After running the Toolbox Configurator it shows the version of the currently installed distribution (if available). The user can make a selection using the dropdown menu which lists all versions discovered on the machine. 
 

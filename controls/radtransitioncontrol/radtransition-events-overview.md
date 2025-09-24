@@ -26,7 +26,7 @@ The RadTransitionControl raises the following specific events:
             e.Cancel = true;
         }
     ```
-```VB.NET
+	```VB.NET
         Private Sub RadTransitionControl_TriggeringTransition(ByVal sender As Object, ByVal e As TriggeringTransitionEventArgs)
 			' you can specify a condition for cancelling here
 			e.Cancel = True
@@ -59,7 +59,7 @@ The RadTransitionControl raises the following specific events:
             }
         }
     ```
-```VB.NET
+	```VB.NET
         Private Sub RadTransitionControl_TransitionStatusChanged(ByVal sender As Object, ByVal e As TransitionStatusChangedEventArgs)
             Select Case e.Status
                 Case TransitionStatus.Started

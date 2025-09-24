@@ -127,7 +127,7 @@ The following example demonstrates how to create a hierarchical data source and 
 			    Next
 			    Return result
 			End Function
-	```	
+		```	
 		
 1. Declare a __HierarchicalDataTemplate__ 
 	

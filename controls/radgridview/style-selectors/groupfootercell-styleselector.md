@@ -40,7 +40,7 @@ __Example 1: The GroupFooterCellStyleSelector class__
         public Style BigGroupStyle { get; set; }
         public Style SmallGroupStyle { get; set; }
     }
-	```
+```
 ```VB.NET
 	Public Class GroupFooterCellStyleSelector
 		Inherits StyleSelector

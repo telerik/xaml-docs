@@ -87,7 +87,7 @@ In order to change the default layout mode, there are two options. Switch the la
 
         RibbonCommands.ToggleLayoutModeCommand.Execute(null, this.ribbonView);
     ```
-```VB.NET
+	```VB.NET
         Me.ribbonView.LayoutMode = RibbonLayout.Simplified
 
         'or

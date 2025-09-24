@@ -104,7 +104,7 @@ In this case the columns will be visualized in the following order - Name, Count
 The default scrolling behavior of __RadGridView__ while dragging its columns can be modified by configuring the __ScrollingSettingsBehavior__.
 
 __Example 7: Using the ScrollingSettingsBehavior__
- ```XAML
+```XAML
 	<telerik:RadGridView x:Name="radGridView" 
                      ScrollViewer.HorizontalScrollBarVisibility="Visible"
                      telerik:ScrollingSettingsBehavior.IsEnabled="True"
@@ -114,7 +114,7 @@ __Example 7: Using the ScrollingSettingsBehavior__
 ```
 
 __Example 8: Using the ScrollingSettingsBehavior in code__
- ```C#
+```C#
 	ScrollViewer.SetHorizontalScrollBarVisibility(this.radGridView, ScrollBarVisibility.Visible);
 	ScrollingSettingsBehavior.SetIsEnabled(this.radGridView, true);
 	ScrollingSettingsBehavior.SetScrollAreaPadding(this.radGridView, new Thickness(5, 20, 5, 20));

@@ -23,8 +23,8 @@ __Adding new rows with BeginInsert()__
 	this.radGridView.BeginInsert();
 ```
 ```VB.NET
-		Me.radGridView.BeginInsert()
-	```
+	Me.radGridView.BeginInsert()
+```
 
 When a user adds a new item, an empty row is created in which the user can input data.
 

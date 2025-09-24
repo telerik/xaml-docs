@@ -133,7 +133,7 @@ __Example 2: Overriding the CreateCellElement method__
 		Return cellElement
 	    End Function
 	End Class
-	```
+```
 
 You should note two things here: first, a border with bound background to the color from data item is created and second, a custom converter is used. The next code snippet shows you the code for the __ColorToBrushConverter__.
 

@@ -65,13 +65,13 @@ Here are the overloads exposed by the ShowBallonTip method:
 
 * **void ShowBalloonTip(string title, string text, BalloonTipIcon icon, bool doNotPlaySound = false, int timeout = 10)**&mdash;This overload allows for passing a title, text, and choosing an icon from the set of standardized icons. Optionally you can specify whether sound should be played and the amount of seconds to wait before the balloon auto hides (The system minimum and maximum are 10 and 30 seconds). 
 
-    __Showing a warning notification__
-    ```C#
-        this.icon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, false, 15);
-    ```
-```VB.NET
-        Me.icon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, False, 15)
-    ```
+	__Showing a warning notification__
+	```C#
+		this.icon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, false, 15);
+	```
+	```VB.NET
+			Me.icon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, False, 15)
+	```
 
     __Warning Notification__
 
@@ -84,7 +84,7 @@ Here are the overloads exposed by the ShowBallonTip method:
         var icon = new System.Drawing.Icon("YourIconPath.ico");
         this.icon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, true, false, 15);
     ```
-```VB.NET
+	```VB.NET
         Dim icon = New System.Drawing.Icon("YourIconPath.ico")
         Me.icon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, True, False, 15)
     ```

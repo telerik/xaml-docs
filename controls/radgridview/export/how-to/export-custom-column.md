@@ -28,7 +28,7 @@ In order to automatically export a custom column, without handling some of the e
 		var columnProperty = item.GetType().GetProperty(this.DataMemberBinding.Path.Path);
 		return string.Format("@ {0} @", columnProperty.GetValue(item, null) as string);
 	}
- ```
+```
 
 #### **[C#]Example 2: Overriden GetExportCellContent method**
 

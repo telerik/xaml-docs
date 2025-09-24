@@ -25,7 +25,6 @@ The **Find** method has two overloads:
 __Example 1: Find specified text using specified options__
 
 ```C#
-
     string sampleText = "sample text";
     TextSearchOptions textSearchOptions = 
         new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: true);
@@ -33,7 +32,6 @@ __Example 1: Find specified text using specified options__
     SearchResult searchResult = this.pdfViewer.Find(sampleText, textSearchOptions);
 ```
 ```VB.NET
-
     Dim sampleText As String = "sample text"
     Dim textSearchOptions As TextSearchOptions = 
         New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=True)
@@ -48,11 +46,9 @@ The **FindAll** method has two overloads:
 __Example 2: Find all matches for the specified text using specified options__
 
 ```C#
-
     IEnumerable<SearchResult> searchResult = this.pdfViewer.FindAll(sampleText, textSearchOptions);
 ```
 ```VB.NET
-
     Dim searchResult As IEnumerable(Of SearchResult) = Me.pdfViewer.FindAll(sampleText, textSearchOptions)
 ```
 
@@ -63,11 +59,9 @@ The **FindPrevious** method has two overloads:
 __Example 3: Finds the previous text in the current document using specified options__
 
 ```C#
-
     SearchResult searchResult = this.pdfViewer.FindPrevious(sampleText, textSearchOptions);
 ```
 ```VB.NET
-
     Dim searchResult As SearchResult = Me.pdfViewer.FindPrevious(sampleText, textSearchOptions)
 ```
 
@@ -82,7 +76,6 @@ The **SearchResult** class holds the result from a specific search command. This
 __Example 4: Check if a match was found__
 
 ```C#
-
     if (searchResult != SearchResult.NotFound)
     {
         TextRange searchResultRange = searchResult.Range;
@@ -90,7 +83,6 @@ __Example 4: Check if a match was found__
     }
 ```
 ```VB.NET
-
     If searchResult <> SearchResult.NotFound Then
         Dim searchResultRange As TextRange = searchResult.Range
         Dim searchResultAsText As String = searchResult.Result
@@ -108,13 +100,11 @@ This class exposes a static property:
 * **Default**: Gets the default text search options.
 
     __Example 5: The default search options__
-    ```C#
-    
+    ```C#    
         TextSearchOptions textSearchOptions = 
             new TextSearchOptions(caseSensitive: false, useRegularExpression: false, wholeWordsOnly: false);
     ```
-```VB.NET
-    
+	```VB.NET    
         Dim textSearchOptions As TextSearchOptions = 
             New TextSearchOptions(caseSensitive:=False, useRegularExpression:=False, wholeWordsOnly:=False)
     ```

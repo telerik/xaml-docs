@@ -148,7 +148,6 @@ This article will show you how to clear the search value every time the clear bu
 
 The full implementation of this solution is as follows:
 
-
 ```C#
 	public partial class MainWindow : Window
 	{

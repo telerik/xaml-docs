@@ -31,7 +31,7 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
             this.InitializeComponent();
         }
     ```
-```VB.NET
+	```VB.NET
 		Public Sub New()
 			AutomationManager.AutomationMode = AutomationMode.Disabled
 			Me.InitializeComponent()
@@ -49,7 +49,7 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
             this.InitializeComponent();
         }
     ```
-```VB.NET
+	```VB.NET
 		Public Sub New()
 			TouchManager.IsEnabled = False
 			Me.InitializeComponent()
@@ -72,7 +72,7 @@ RadPropertyGrid’s API allows you to tweak your application for optimal perform
         }
         this.propertyGrid.PropertyDefinitions.ResumeNotifications();
     ```
-```VB.NET
+	```VB.NET
 		Me.propertyGrid.PropertyDefinitions.SuspendNotifications()
 		For Each propertyDefinition As PropertyDefinition In largeCollectionOfPropertyDefinitions
 			Me.propertyGrid.PropertyDefinitions.Add(propertyDefinition)

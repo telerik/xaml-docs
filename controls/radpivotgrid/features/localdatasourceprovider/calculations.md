@@ -39,7 +39,7 @@ There are several predefined calculations that you can use. To explain each of t
 	aggregate.AggregateFunction = AggregateFunctions.Sum
 	aggregate.PropertyName = "Price"
 	aggregate.TotalFormat = New DifferenceFrom() With {.Axis = PivotAxis.Rows, .Level = 0, .GroupName = "Pen"}
-	```
+```
 
 ![Rad Pivot Grid Features Calculations 02](images/RadPivotGrid_Features_Calculations_02.png)
 

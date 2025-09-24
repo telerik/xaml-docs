@@ -53,7 +53,7 @@ __Defining the RadSpreadsheet and the buttons for protecting and uprotecting the
             </telerik:RadSpreadsheet.FormatProviders>
         </telerik:RadSpreadsheet>
     </Grid>
-    ```
+```
 
 __Adding logic to the buttons__
 ```C#

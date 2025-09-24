@@ -16,8 +16,7 @@ The __RadNotifyIcon__ allows for displaying a popup upon interacting with the ic
 The __PopupContent__ and __PopupContentTemplate__ properties allow for setting the popup's content and changing its default look. Whatever is set to the __PopupContent__ will be the DataContext inside the __PopupContentTemplate__. __Example 1__ demonstrates how you can setup those properties. 
 
 __Example 1: Setting PopupContent and PopupContentTemplate__
-```XAML
-    
+```XAML    
     <telerik:RadNotifyIcon
         x:Name="icon"
         PopupContent="Hello, world!"
@@ -41,8 +40,7 @@ __Example 1: Setting PopupContent and PopupContentTemplate__
 The __PopupActivationMouseEvent__ property determines when the popup will be shown. The default value is __LeftClick__.
 
 __Example 2: Setting PopupActivationMouseEvent__
-```XAML
-    
+```XAML    
     <telerik:RadNotifyIcon PopupActivationMouseEvent="LeftDoubleClick" />
 ```
 
@@ -51,8 +49,7 @@ __Example 2: Setting PopupActivationMouseEvent__
 The __PopupShowDuration__ specifies the amount of time in __milliseconds__ after which the popup will begin to close automatically. The default value is __5000__ milliseconds (5s). 
 
 __Example 3: Setting PopupShowDuration__
-```XAML
-    
+```XAML    
     <telerik:RadNotifyIcon PopupShowDuration="10000" />
 ```
 
@@ -65,8 +62,7 @@ The __PopupCloseMode__ is a bitwise enumeration, which controls the actions that
 * **Timeout**: The popup will be closed after the time specified by the __PopupShowDuration__ runs out. This is the default value.
 
 __Example 4: Closing the popup on deactivation or timeout__
-```XAML
-    
+```XAML    
     <telerik:RadNotifyIcon PopupCloseMode="Deactivate, TimeOut"  />
 ```
 
@@ -82,7 +78,7 @@ The RadNotifyIcon allows for programmatically showing a popup through the __Show
 
         this.icon.ShowPopup();
     ```
-```VB.NET
+	```VB.NET
 
         Me.icon.ShowPopup()
     ```
@@ -107,7 +103,6 @@ You can control the opening and closing animation with the __PopupShowAnimation_
 
 __Example 7: Setting PopupShowAnimation and PopupHideAnimation__
 ```XAML
-
     <Grid>
         <Grid.Resources>
             <telerik:ScaleAnimation x:Key="showAnimation" MinScale="0.1" MaxScale="0.9" Duration="00:00:02" />
@@ -136,11 +131,9 @@ The __IsPopupOpen__ property allows you to check whether a popup is currently op
 
 __Example 8: Using IsPopupOpen__
 ```C#
-
     var isOpen = this.icon.IsPopupOpen;
 ```
 ```VB.NET
-
     Dim isOpen = Me.icon.IsPopupOpen
 ```
 

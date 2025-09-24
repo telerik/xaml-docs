@@ -98,7 +98,7 @@ This article lists the events specific for the __RadTabControl__ control.
 				dropDownItems.Add("New DropDown Item.")
 				e.DropDownItemsSource = dropDownItems
 			End Sub
-	```
+		```
 
 * __DropDownClosed__: This event is raised when the Telerik.Windows.Controls.TabControl.DropDownMenu is closed.	This is a RoutedEvent. The event arguments are of type __DropDownEventArgs__.
 

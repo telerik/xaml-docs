@@ -79,7 +79,7 @@ __Example 1: Custom NavigationBehavior__
 
 __Example 2: Applying the custom NavigationBehavior__
 
- ```XAML
+```XAML
     <telerik:RadScheduleView>
         <telerik:RadScheduleView.NavigationBehavior>
             <!-- The namespace "local" refers to the namespace where the CustomNavigationBehavior is defined -->

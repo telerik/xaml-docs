@@ -36,7 +36,7 @@ How to save the layout of the RadDocking control when its unloaded.
     ```C#
         EventManager.RegisterClassHandler(typeof(RadDocking), RadDocking.   UnloadedEvent, new RoutedEventHandler(OnUnloaded));
     ```
-```VB.NET
+	```VB.NET
         EventManager.RegisterClassHandler(GetType(RadDocking), RadDocking.  UnloadedEvent, New RoutedEventHandler(OnUnloaded))
     ```
 
@@ -55,7 +55,7 @@ How to save the layout of the RadDocking control when its unloaded.
             }
         }
     ```
-```VB.NET
+	```VB.NET
         Private Sub OnUnloaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
             Using storage As IsolatedStorageFile = IsolatedStorageFile. GetUserStoreForAssembly()
                 Using isoStream = storage.OpenFile("RadDocking_Layout.xml",     FileMode.Create)

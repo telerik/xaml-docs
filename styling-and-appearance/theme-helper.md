@@ -60,7 +60,7 @@ __Set RadToggleButton's visual appearance through the ThemeHelper class__
 
 __Appearance of the RadToggleButton in the different states__
 
-![RadToggleButton States](/styling-and-appearance/images/styling-appearance-theme-helper-toggle-button-states.png)
+![RadToggleButton States](/images/styling-appearance-theme-helper-toggle-button-states.png)
 
 ## See Also
 

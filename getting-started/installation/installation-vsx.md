@@ -180,7 +180,7 @@ __Define RadGridView in XAML__
 
 Run the project and you should see something like this:
 
-![Main window with RadGridView](images/main-window-with-radgridview.png "Main window with RadGridView")
+![Main window with RadGridView](images/main-window-with-radgridview.png)
 
 ## Next Steps
 

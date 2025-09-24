@@ -60,8 +60,6 @@ Below you can find a code snippet which creates a __RadDiagram__ and adds two Sh
 	    this.LayoutRoot.Children.Add(diagram);
 	}
 ```
-
-
 ```VB.NET
 	Private Sub GenerateRadDiagram()
 	    Dim diagram As New RadDiagram()
@@ -119,8 +117,6 @@ In the code above, we use the static class __ShapeFactory__ from the __Telerik.W
 	public static Geometry GetShapeGeometry(CommonShapeType shapeType)
 	public static Geometry GetShapeGeometry(FlowChartShapeType shapeType)
 ```
-
-
 ```VB.NET
 	Public Shared Function CreateCircle(ByVal radiusX As Double, ByVal radiusY As Double, ByVal center As Point) As RadDiagramShape
 	Public Shared Function CreateRectangle(ByVal rect_Renamed As Rect) As RadDiagramShape

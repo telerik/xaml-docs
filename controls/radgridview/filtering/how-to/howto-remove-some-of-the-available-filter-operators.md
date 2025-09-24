@@ -33,9 +33,6 @@ In case you want to hide some of the available filter operators, you have to att
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
 	    If e.Column.UniqueName = "HireDate" Then

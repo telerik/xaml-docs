@@ -81,8 +81,6 @@ The next code snippet will create custom connection caps as shown in the beggini
         }
     }
 ```
-
-
 ```VB.NET
     Public Class CustomConnection
         Inherits RadDiagramConnection

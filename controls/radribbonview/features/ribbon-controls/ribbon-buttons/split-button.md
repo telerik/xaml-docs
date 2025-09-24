@@ -99,8 +99,6 @@ Besides the __Click__ event, the __RadRibbonSplitButton__ exposes several drop d
 	{
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadRibbonSplitButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
 	End Sub

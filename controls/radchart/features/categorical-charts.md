@@ -44,9 +44,6 @@ To create categorical charts, you have to map the category values to the __XCate
 	dataSeries.Add( new DataPoint() { YValue = 25, XCategory = "Grapes" } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( dataSeries );
 ```
-
-
-
 ```VB.NET
 	Dim dataSeries As New DataSeries()
 	dataSeries.Definition = New BarSeriesDefinition()
@@ -82,9 +79,6 @@ If you want to use data binding, then you have to set the __DataPointMember__ to
 	seriesMapping.ItemMappings.Add(itemMapping);
 	radChart.SeriesMappings.Add(seriesMapping);
 ```
-
-
-
 ```VB.NET
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.SeriesDefinition = New BarSeriesDefinition()

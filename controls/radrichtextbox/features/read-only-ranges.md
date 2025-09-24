@@ -42,10 +42,6 @@ When the document is measured (for example, shown in a __RadRichTextBox__), you 
 ```C#
     this.radRichTextBox.InsertReadOnlyRange();
 ```
-
-
-
-
 ```VB.NET
     Me.radRichTextBox.InsertReadOnlyRange()
 ```
@@ -81,11 +77,6 @@ As opposed to when inserting with one of the methods of __RadRichTextBox__, when
     section.Blocks.Add(paragraph);
     document.Sections.Add(section);
 ```
-
-
-
-
-
 ```VB.NET
     Dim document As New RadDocument()
     Dim section As New Section()
@@ -120,11 +111,6 @@ In order to remove a read only range, you should simply call the __DeleteReadOnl
 ```C#
     this.radRichTextBox.DeleteReadOnlyRange();
 ```
-
-
-
-
-
 ```VB.NET
     Me.radRichTextBox.DeleteReadOnlyRange()
 ```
@@ -146,11 +132,6 @@ Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart
         this.radRichTextBox.DeleteReadOnlyRange(start);
     }
 ```
-
-
-
-
-
 ```VB.NET
     Dim start As ReadOnlyRangeStart = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
     If start IsNot Nothing Then

@@ -47,8 +47,6 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
         diagram.Layout();
     }		  
 ```
-
-
 ```VB.NET
     Private Sub Layout(sender As Object, e As RoutedEventArgs)
         diagram.Layout()
@@ -93,8 +91,6 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 		this.diagram.Layout(LayoutType.Sugiyama, settings);
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New SugiyamaSettings() With { 
@@ -164,8 +160,6 @@ Here is how this could be achieved in code behind.
 		this.diagram.Layout(LayoutType.Tree, settings);
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New TreeLayoutSettings() With { 

@@ -30,11 +30,6 @@ To achieve the crosshair functionality you will add two [custom gridlines]({%slu
 	    plotAreaPanel.MouseLeave += this.OnPlotAreaPanelMouseLeave;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub OnChartLoaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim plotAreaPanel = Me.chart.DefaultView.ChartArea.ChildrenOfType(Of ClipPanel)().FirstOrDefault()
@@ -82,11 +77,6 @@ Knowing the current X and Y data values of the mouse cursor you can bind the pai
 	    this.chart.DefaultView.ChartArea.Annotations.Remove(yGridLine);
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub OnPlotAreaPanelMouseEnter(sender As Object, e As MouseEventArgs)
 	    Me.chart.DefaultView.ChartArea.Annotations.Add(xGridLine)

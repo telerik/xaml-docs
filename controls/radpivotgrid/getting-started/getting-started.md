@@ -66,9 +66,6 @@ In our application we will show data for some office materials - their quantity,
 	    public DateTime Date { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Product
 	    Public Property Name() As String
@@ -160,9 +157,6 @@ Now we'll add a method that will create a sample data for our application:
 	    return PivotData;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Shared Function GeneratePivotData() As IList(Of Product)
 	    Dim PivotData As IList(Of Product) = New List(Of Product)() From { _
@@ -426,9 +420,6 @@ The DataProvider is set, but it still doesn't have any data in it. It's time to 
 	InitializeComponent();
 	(this.Resources["LocalDataProvider"] as LocalDataSourceProvider).ItemsSource = GeneratePivotData();
 ```
-
-
-
 ```VB.NET
 	InitializeComponent()
 	TryCast(Me.Resources("LocalDataProvider"), LocalDataSourceProvider).ItemsSource = GeneratePivotData()
@@ -547,10 +538,6 @@ Here's the full implementation of our project:
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 	Imports System
 	Imports System.Collections.Generic
@@ -934,10 +921,6 @@ Here's the full implementation of our project:
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 	Imports System
 	Imports System.Collections.Generic

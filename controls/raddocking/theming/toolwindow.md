@@ -63,9 +63,6 @@ To apply the theme go to the UserControl that hosts your __RadDocking__ control 
 	    StyleManager.SetTheme( this.radDocking, new RadDockingTheme());
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

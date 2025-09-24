@@ -41,9 +41,6 @@ Here is an example of a __RadDataPager__ that shows a __MessageBox__ before chan
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 
 	Private myCondition As Boolean

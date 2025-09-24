@@ -113,8 +113,6 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 		}
 	}
 ```
-
-
 ```VB.NET
 	Public Class DataItem
 		Inherits ViewModelBase
@@ -135,8 +133,6 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 ```C#
 	this.shape.DataContext = new DataItem() { IpAddress = "5.5.5.5" };
 ```
-
-
 ```VB.NET
 	Me.shape.DataContext = New DataItem() With { .IpAddress = "5.5.5.5" }
 ```

@@ -59,8 +59,6 @@ For example if you want to create a custom key combination that triggers the __D
 ```C#
     diagram.InputBindings.Add(new KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control));		  
 ```
-		  
- 
 ```VB.NET
     diagram.InputBindings.Add(New KeyBinding(DiagramCommands.Layout, Key.L, ModifierKeys.Control))		  
 ```

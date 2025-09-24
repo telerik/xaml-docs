@@ -61,9 +61,6 @@ Our first task is to create an instance of __PivotChartViewModel__ and set its *
 	    this.DataContext = chartViewModel;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()
@@ -141,9 +138,6 @@ The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our applicati
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class SeriesSourceNameToSeriesLegendSettigsConverter
 		Implements IValueConverter

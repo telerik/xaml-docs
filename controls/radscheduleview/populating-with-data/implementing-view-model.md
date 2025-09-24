@@ -31,9 +31,6 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	{
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyViewModel
 	End Class
@@ -73,9 +70,6 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private m_Appointments As ObservableCollection(Of Appointment)
 	Private m_ResourceTypes As ObservableCollection(Of ResourceType)
@@ -127,9 +121,6 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	    return result;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function GenerateResourceTypes() As ObservableCollection(Of ResourceType)
 	 Dim result As New ObservableCollection(Of ResourceType)()
@@ -162,9 +153,6 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 	    this.appointments = new ObservableCollection<Appointment>();
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	 Me.resourceTypes = Me.GenerateResourceTypes()
@@ -201,9 +189,6 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 ```C#
 	this.DataContext = new MyViewModel();
 ```
-
-
-
 ```VB.NET
 	Me.DataContext = New MyViewModel()
 ```

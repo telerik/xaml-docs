@@ -44,8 +44,6 @@ To pass the desired shapefile you have to use the __Source__ property of the __M
 	this.informationLayer.Reader.Source = new Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.shp", UriKind.RelativeOrAbsolute );
 	this.informationLayer.Reader.DataSource = new Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.dbf", UriKind.RelativeOrAbsolute );
 ```
-
-
 ```VB.NET
 	Me.informationLayer.Reader = New MapShapeReader()
 	Me.informationLayer.Reader.Source = New Uri( "/Silverlight.Help.RadMapSamples;component/Data/world.shp", UriKind.RelativeOrAbsolute )
@@ -68,8 +66,6 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	    this.informationLayer.Items.Add( shape );
 	}
 ```
-
-
 ```VB.NET
 	Dim shapeResourceInfo As StreamResourceInfo = Application.GetResourceStream(New Uri("/Silverlight.Help.RadMapSamples;component/Data/world.shp", UriKind.RelativeOrAbsolute))
 	Dim dbfResourceInfo As StreamResourceInfo = Application.GetResourceStream(New Uri("/Silverlight.Help.RadMapSamples;component/Data/world.dbf", UriKind.RelativeOrAbsolute))

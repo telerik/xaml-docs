@@ -69,9 +69,6 @@ The implementation of the event handler __radGridView_MouseWheel__ is located in
 	    MessageBox.Show("The mouse wheel has changed: " + e.Delta);
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radGridView_MouseWheel(ByVal sender As Object, ByVal e As MouseWheelEventArgs)
 	    MessageBox.Show("The mouse wheel has changed: " & e.Delta)
@@ -86,10 +83,6 @@ The RadGridView actually uses and handles many of the mouse events. If you would
 ```C#
 	this.radGridView.AddHandler(RadGridView.MouseWheelEvent, new MouseWheelEventHandler(radGridView_MouseWheel), true);
 ```
-
-
-
-
 ```VB.NET
 	Me.radGridView.AddHandler(RadGridView.MouseWheelEvent, New MouseWheelEventHandler(AddressOf radGridView_MouseWheel), True)
 ```

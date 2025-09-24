@@ -89,8 +89,6 @@ The last thing to do is to set the __ItemsSource__ property of the __Information
 	    this.informationLayer.ItemsSource = this.GetMapData();
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 	 InitializeComponent()
@@ -191,8 +189,6 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Class MapItem
 	 Public Sub New(caption As String, location As Location, baseZoomLevel As Double, zoomRange As ZoomRange)
@@ -252,8 +248,6 @@ Finally here is the code for the business object and the __GetMapData()__ method
 	    return data;
 	}
 ```
-
-
 ```VB.NET
 	Private Function GetMapData() As ObservableCollection(Of MapItem)
 	 Dim data As New ObservableCollection(Of MapItem)()

@@ -54,9 +54,6 @@ As the button is in the same control like the __RadWindow__, you can get the __R
 	    this.Close();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 	    Me.Close()
@@ -89,9 +86,6 @@ In this scenario the __Button__ is placed inside a __UserControl__, which is pas
 	    window.Close();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 	    Dim window As RadWindow = Me.ParentOfType(Of RadWindow)()

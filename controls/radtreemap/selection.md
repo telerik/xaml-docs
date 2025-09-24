@@ -23,8 +23,6 @@ __RadTreeMap__ and __RadPivotMap__ support selection functionality which is disa
 ```C#
 	treeMap.IsSelectionEnabled = true;
 ```
-
-
 ```VB.NET
 	treeMap.IsSelectionEnabled = True
 ```
@@ -45,8 +43,6 @@ The selection feature supports several modes which you can set through the __Sel
 ```C#
 	treeMap.SelectionMode = System.Windows.Controls.SelectionMode.Extended;
 ```
-
-
 ```VB.NET
 	treeMap.SelectionMode = System.Windows.Controls.SelectionMode.Extended
 ```

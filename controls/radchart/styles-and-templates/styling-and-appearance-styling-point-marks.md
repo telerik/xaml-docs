@@ -38,11 +38,6 @@ For example, you can change the appearance of the point marks for a __LineSeries
 	l.Appearance.PointMark.Shape = MarkerShape.Diamond;
 	this.radChart.DefaultSeriesDefinition = l;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim l As New LineSeriesDefinition()
 	l.Appearance.PointMark.Stroke = New SolidColorBrush(Colors.White)

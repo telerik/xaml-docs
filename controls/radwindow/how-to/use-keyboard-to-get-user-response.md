@@ -65,9 +65,6 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	    this.Close();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnButtonAcceptClicked(sender As Object, e As RoutedEventArgs)
 	    Me.DialogResult = True

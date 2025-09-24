@@ -30,9 +30,6 @@ A typical auto-generated __DataServiceContext__ class will look like this:
 
 	public partial class NorthwindEntities : global::System.Data.Services.Client.DataServiceContext
 ```
-
-
-
 ```VB.NET
 
 	Partial Public Class NorthwindEntities Inherits Global.System.Data.Services.Client.DataServiceContext
@@ -50,11 +47,6 @@ In order to create an instance of the DataServiceContext class, you need to spec
 	NorthwindEntities northwindContext = new NorthwindEntities(serviceUri);
 	this.radDataServiceDataSource.DataServiceContext = northwindContext;
 ```
-
-
-
-
-
 ```VB.NET
 
 	Dim serviceUri As New Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)
@@ -75,9 +67,6 @@ Since the __DataServiceContext__ class does not have a parameterless constructor
 	    public MyNorthwindContext() : base(new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)){}
 	}
 ```
-
-
-
 ```VB.NET
 
 	Public Class MyNorthwindContext

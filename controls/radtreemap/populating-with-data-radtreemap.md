@@ -26,9 +26,6 @@ Create new interface that will represent the basic information for the files/fol
 		IEnumerable<IDiskItem> Children { get; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Interface IDiskItem
 		ReadOnly Property Name() As String
@@ -119,9 +116,6 @@ Add two new classes -> *File* and *Folder* that implement the above interface:
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Folder
 		Implements IDiskItem
@@ -246,9 +240,6 @@ Here is a sample datasource:
 		treeMap1.ItemsSource = datasource;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New() ' MainWindow in WPF '
 		InitializeComponent()

@@ -78,9 +78,6 @@ In order to restrict the __RadDiagramShapes__ dragging area, you need to create 
 	    }	
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyDragging
 	    Inherits DraggingService
@@ -178,9 +175,6 @@ Next, we need to add properties that will configure the dragging service from th
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyDragging
 	    Inherits DraggingService
@@ -270,9 +264,6 @@ First, if we need to only restrict the position of the mouse while dragging a sh
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Overrides Sub Drag(ByVal newPoint As Point)
 	    Dim dragPoint As Point = newPoint
@@ -333,9 +324,6 @@ However, if the user wants to configure the shapes to be entirely moved only wit
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Private ReadOnly diagram As RadDiagram
 	'this method gets the bounds of the selected DiagramItems '
@@ -376,9 +364,6 @@ In the above implementation we added a __diagram__ field which gets the __RadDia
 		this.UseRotaitonBounds = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New(ByVal graph As RadDiagram)
 	    MyBase.New(TryCast(graph, IGraphInternal))
@@ -431,9 +416,6 @@ Then we can use the __GetSelectionBounds()__ method in the logic that customizes
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Overrides Sub Drag(ByVal newPoint As Point)
 	    Dim dragPoint As Point = newPoint
@@ -544,9 +526,6 @@ No matter which restriction approach we implement (restricting the drag based on
 		this.lastPoint = dragPoint;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Overrides Sub Drag(ByVal newPoint As Point)
 	    Dim dragPoint As Point = newPoint
@@ -624,9 +603,6 @@ We also need to make sure that the __lastPoint__ property has the coordinates of
 		base.InitializeDrag(point);
 	}
 ```
-
-
-
 ```VB.NET
 	'override this method to get the coordinates of the point where the drag started'
 	Public Overrides Sub InitializeDrag(ByVal point As Point)
@@ -678,9 +654,6 @@ Finally, we need to configure the diagram to use our custom dragging implementat
 	    this.useRotaitonBounds.SetBinding(RadToggleButton.IsCheckedProperty, binding);
 	}
 ```
-
-
-
 ```VB.NET
 	Private newDraggingService As MyDragging
 	
@@ -731,9 +704,6 @@ And now we can use the __newDraggingService__ instance and register it through t
 	    this.diagram.ServiceLocator.Register<IDraggingService>(this.newDraggingService);
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -772,9 +742,6 @@ You can further extend this example by updating the designated draggable area du
 	    this.border.Height = (e.NewValue.Height / 2) * this.diagram.Zoom;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub SetRestrictRect(ByVal rect As Rect)
 	    If Me.newDraggingService IsNot Nothing Then

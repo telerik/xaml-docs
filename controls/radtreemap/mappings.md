@@ -60,9 +60,6 @@ Sets the properties for the nodes of the __RadTreeMap__ and __RadPivotMap__ cont
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class FileCustomMapping
 		Inherits CustomMapping

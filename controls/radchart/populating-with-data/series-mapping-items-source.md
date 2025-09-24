@@ -48,11 +48,6 @@ The following example will demonstrate how to bind two Line Series - the first o
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class MyDateObject
 	    Public Property Value() As Double
@@ -126,11 +121,6 @@ The following example will demonstrate how to bind two Line Series - the first o
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class MyViewModel
 	    Inherits ViewModelBase

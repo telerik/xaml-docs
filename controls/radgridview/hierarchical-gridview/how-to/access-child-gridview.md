@@ -57,9 +57,6 @@ This article will show how to access and set different properties, in code behin
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub employeeRadGridView_DataLoading(sender As Object, e As GridViewDataLoadingEventArgs)
 	    Dim dataControl As GridViewDataControl = DirectCast(sender, GridViewDataControl)

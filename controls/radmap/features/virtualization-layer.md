@@ -121,8 +121,6 @@ Here is an example of how to implement simple static functionality in the __Back
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Class MapVirtualizationSource Implements IMapVirtualizationSource
 		Shared ReadOnly bulgariaLocation As New Location(42.7669999748468, 25.2819999307394)
@@ -196,8 +194,6 @@ You can set the virtualization source to a new instance of the *MapVirtualizatio
 	    this.virtualizationLayer.VirtualizationSource = new MapVirtualizationSource();
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

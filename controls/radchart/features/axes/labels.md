@@ -41,11 +41,6 @@ XCategory is used when the data is not sequential, i.e. values on the X Axis hav
 	    this.radChart.DefaultView.ChartArea.AxisX.TickPoints[i].Label = months[i];
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Dim lineSeries As New DataSeries()
 	lineSeries.LegendLabel = "Monthly Sales"

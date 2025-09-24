@@ -35,11 +35,6 @@ When a __RadDocument__ instance was for some reason created from code – built 
 ```C#
 	RadDocumentEditor documentEditor = new RadDocumentEditor(document);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim documentEditor As New RadDocumentEditor(document)
 ```
@@ -64,11 +59,6 @@ The newly created *documentEditor* instance now provides all capabilities that a
 	
 	documentEditor.EndUndoGroup("Insert three table rows");
 ```
-
-
-
-
-
 ```VB.NET
 	documentEditor.BeginUndoGroup()
 	
@@ -101,11 +91,6 @@ You can also cancel the execution of the undo group, and it won't be recorded in
 	
 	documentEditor.CancelUndoGroup();
 ```
-
-
-
-
-
 ```VB.NET
 	documentEditor.BeginUndoGroup()
 	

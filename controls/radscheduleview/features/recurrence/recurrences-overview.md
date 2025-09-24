@@ -36,9 +36,6 @@ Consider the following example:
 	    Subject = "Daily appointment"
 	};
 ```
-
-
-
 ```VB.NET
 	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 	Dim appointment = New Appointment() With {
@@ -59,9 +56,6 @@ Consider the following example:
 	    MaxOccurrences = 4
 	};
 ```
-
-
-
 ```VB.NET
 	Dim pattern = New RecurrencePattern() With {
 	    .Frequency = RecurrenceFrequency.Daily,
@@ -77,9 +71,6 @@ Consider the following example:
 ```C#
 	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
-
-
-
 ```VB.NET
 	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 ```
@@ -91,9 +82,6 @@ Consider the following example:
 ```C#
 	appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 14, 10, 0, 0));
 ```
-
-
-
 ```VB.NET
 	appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
 ```
@@ -108,9 +96,6 @@ Consider the following example:
 	exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45);
 	appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 15, 10, 0, 0), exceptionAppointment);
 ```
-
-
-
 ```VB.NET
 	Dim exceptionAppointment As Appointment = DirectCast(appointment.Copy(), Appointment)
 	exceptionAppointment.Start = New DateTime(2011, 5, 15, 11, 0, 0)

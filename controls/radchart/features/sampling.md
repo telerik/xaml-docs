@@ -125,11 +125,6 @@ These steps are made by the static class Statistics:
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public NotInheritable Class Statistics
 	    Private Sub New()
@@ -191,11 +186,6 @@ The real standard deviation function inherits *Telerik.Windows.Data.EnumerableSe
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class StandardDeviationFunction
 	    Inherits EnumerableSelectorAggregateFunction
@@ -242,11 +232,6 @@ The Chart itself is populated by [List of Business Object]({%slug radchart-popul
 	    public double Y { get; set; }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub New()
 	    InitializeComponent()

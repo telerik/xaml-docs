@@ -143,11 +143,6 @@ The next step is to define the business object.
 	        }
 	    }
 ```
-
-
-
-
-
 ```VB.NET
 
 	Public Class DataItem
@@ -220,11 +215,6 @@ What comes next, is to populate with data.
 		}
 	}
 ```
-
-
-
-
-
 ```VB.NET
 
 	Partial Public Class Example
@@ -277,11 +267,6 @@ Clicking the first button will bring an item which is 20 levels deep with updati
 		this.treeList.ScrollIntoViewAsync(item, (f) => { ScrollIntoViewRecursive(++level, newItem); }, true);
 	}
 ```
-
-
-
-
-
 ```VB.NET
 
 	Private Sub RadButton_Click_1(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -329,11 +314,6 @@ Clicking the second button will update the UI only when the bring operation is f
 		MessageBox.Show(end.Subtract(startTime).TotalSeconds.ToString() + " sec.");
 	}
 ```
-
-
-
-
-
 ```VB.NET
 
 	Private Sub RadButton_Click_2(ByVal sender As Object, ByVal e As RoutedEventArgs)

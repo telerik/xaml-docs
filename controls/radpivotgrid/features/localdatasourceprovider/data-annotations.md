@@ -29,9 +29,6 @@ Let's create a simple application that will show data for different orders. Each
 	    public string Advertisement { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Order
 		Public Property [Date]() As Date
@@ -73,9 +70,6 @@ With Data Annotations you can apply attributes to the members of the class that 
 	[Display (AutoGenerateField=false)]
 	public string Product { get; set; }
 ```
-
-
-
 ```VB.NET
 	<Display(Name:="Month")> _
 	Public Property [Date]() As Date
@@ -94,9 +88,6 @@ With Data Annotations you can apply attributes to the members of the class that 
 	[Browsable (false) ]
 	public string Product { get; set; }
 ```
-
-
-
 ```VB.NET
 	'Hide Product from the UI
 	<Browsable(False)> _
@@ -112,9 +103,6 @@ With Data Annotations you can apply attributes to the members of the class that 
 	[DisplayName ("Month")]
 	public DateTime Date { get; set; }
 ```
-
-
-
 ```VB.NET
 	'Rename the Date property to Month in the UI
 	<DisplayName("Month")> _
@@ -136,9 +124,6 @@ With Data Annotations you can apply attributes to the members of the class that 
 	[Display (AutoGenerateField=false)]
 	public string Product { get; set; }
 ```
-
-
-
 ```VB.NET
 	<Display(Name:="Month")> _
 	Public Property [Date]() As Date
@@ -157,9 +142,6 @@ With Data Annotations you can apply attributes to the members of the class that 
 	[Browsable (false) ]
 	public string Product { get; set; }
 ```
-
-
-
 ```VB.NET
 	'Hide Product from the UI
 	<Browsable(False)> _
@@ -193,9 +175,6 @@ So let's modify our simple Order class and see the result in __RadPivotGrid__ an
 	    public string Advertisement { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Order
 		'Rename the Date property to Month in the UI

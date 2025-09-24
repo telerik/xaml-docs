@@ -43,11 +43,6 @@ The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnable
 ```C#
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
 ```
@@ -100,11 +95,6 @@ The __LabelSettings__ class is used for all of the __RadChart__ series definitio
 	this.radChart.DefaultSeriesDefinition = new LineSeriesDefinition();
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim settings As New LabelSettings()
 	settings.Distance = 10
@@ -168,11 +158,6 @@ The __BarLabelSettings__ class inherits the __LabelSettings__ class. The additio
 	this.radChart.DefaultSeriesDefinition = barSeries;
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim barSettings As New BarLabelSettings()
 	barSettings.Distance = 10
@@ -228,10 +213,6 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 	this.radChart.DefaultSeriesDefinition = pieSeries;
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
 ```
-
-
-
-
 ```VB.NET
 	Dim radialSettings As New RadialLabelSettings()
 	radialSettings.SpiderModeEnabled = True

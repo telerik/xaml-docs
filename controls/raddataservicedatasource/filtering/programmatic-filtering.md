@@ -25,11 +25,6 @@ For example:
 	FilterDescriptor fd = new FilterDescriptor("PostalCode", FilterOperator.IsEqualTo, 1010);
 	this.radDataServiceDataSource.FilterDescriptors.Add(fd);
 ```
-
-
-
-
-
 ```VB.NET
 
 	Dim fd As New FilterDescriptor("PostalCode", FilterOperator.IsEqualTo, 1010)
@@ -58,11 +53,6 @@ You can build infinitely nested hierarchies of filters by using the __CompositeF
 	cfd.FilterDescriptors.Add(f2);
 	this.radDataServiceDataSource.FilterDescriptors.Add(cfd);
 ```
-
-
-
-
-
 ```VB.NET
 
 	Dim cfd As New CompositeFilterDescriptor()

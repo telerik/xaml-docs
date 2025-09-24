@@ -83,9 +83,6 @@ As you can see we have two PropertyGroupDescriptions defined as RowGroupDescript
 	dataProvider.AggregatesLevel = 0;
 	dataProvider.AggregatesPosition = PivotAxis.Rows;
 ```
-
-
-
 ```VB.NET
 	Dim dataProvider = New LocalDataSourceProvider()
 	dataProvider.AggregatesLevel = 0

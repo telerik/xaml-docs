@@ -24,9 +24,6 @@ To change the default selected filter operators, you have to handle the __Filter
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
 	    If e.Column.UniqueName = "HireDate" Then

@@ -64,8 +64,6 @@ Next we will decalare a sample DataTable, containing 3 columns - actual (of type
 	
 	this.DataContext = dt.Rows;
 ```
-
-
 ```VB.NET
 	Dim dt As New DataTable()
 	dt.Columns.Add("Expected", GetType(Double))
@@ -114,8 +112,6 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 	    ValueSelector = row => (DateTime)row["Month"]
 	};
 ```
-
-
 ```VB.NET
 	Me.barSeries1.ValueBinding = New Telerik.Windows.Controls.ChartView.GenericDataPointBinding(Of DataRow, Double)() With { _
 		.ValueSelector = Function(row) CDbl(row("Actual")) _

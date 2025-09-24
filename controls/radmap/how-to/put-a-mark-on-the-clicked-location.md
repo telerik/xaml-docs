@@ -54,8 +54,6 @@ Here is the code for the example:
 	    this.informationLayer.Items.Add( eventArgs.Location );
 	}
 ```
-
-
 ```VB.NET
 	Private Sub radMap_MapMouseClick(ByVal sender As Object, ByVal eventArgs As MapMouseRoutedEventArgs)
 		Me.informationLayer.Items.Clear()

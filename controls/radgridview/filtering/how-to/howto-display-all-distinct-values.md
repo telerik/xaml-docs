@@ -23,9 +23,6 @@ __Example 1:__ The __GetDistinctValues(GridViewColumn, Boolean)__ method returns
 	    e.ItemsSource = ((Telerik.Windows.Controls.RadGridView)sender).GetDistinctValues(e.Column, false);
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnRadGridViewDistinctValuesLoading(sender As System.Object, e As Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs)
 	    e.ItemsSource = DirectCast(sender, Telerik.Windows.Controls.RadGridView).GetDistinctValues(e.Column, False)
@@ -44,9 +41,6 @@ __Example 2:__ The __GetDistinctValues(GridViewColumn, Boolean, Nullable(Int32))
 	    e.ItemsSource = ((Telerik.Windows.Controls.RadGridView)sender).GetDistinctValues(e.Column, true, 15);
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnRadGridViewDistinctValuesLoading2(sender As System.Object, e As Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs)
 	    e.ItemsSource = DirectCast(sender, Telerik.Windows.Controls.RadGridView).GetDistinctValues(e.Column, True, 15)
@@ -77,8 +71,6 @@ __Example 3:__ Displaying case insensitive distinct values.
 	    e.ItemsSource = ((Telerik.Windows.Controls.RadGridView)sender).GetDistinctValues(e.Column, false).OfType<string>().Select(x => x.ToLower()).Distinct();
 	}
 ```
-
-
 ```VB.NET
 	Private Sub OnRadGridViewFiltered(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewFilteredEventArgs)
 	    For Each item In e.ColumnFilterDescriptor.DistinctFilter.FilterDescriptors

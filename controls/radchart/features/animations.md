@@ -153,9 +153,6 @@ The example below demonstrates how to specify __AnimationSettings__ for __ChartA
 	barSeries.Add( new DataPoint(){ YValue = 80 } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( barSeries );
 ```
-    
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AnimationSettings = New AnimationSettings()
@@ -230,11 +227,6 @@ To suspend any animations on a chart set __ChartArea.EnableAnimations__ and __Ch
 	radChart.DefaultView.ChartArea.EnableStripLinesAnimation = false;
 	//....
 ```
-
-
-
-
-
 ```VB.NET
 	radChart.DefaultView.ChartArea.EnableAnimations = False
 	radChart.DefaultView.ChartArea.EnableStripLinesAnimation = False

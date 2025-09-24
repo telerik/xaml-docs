@@ -26,11 +26,6 @@ As a typical data control the __RadGridView__ displays data by binding to a sour
 
 	this.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData();
 ```
-
-
-
-
-
 ```VB.NET
 
 	Me.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData()

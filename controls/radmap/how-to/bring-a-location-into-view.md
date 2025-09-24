@@ -26,8 +26,6 @@ In order to bring a location point into view, you simply have to set the __Cente
 	    this.radMap.Center = desiredLocation;
 	}
 ```
-
-
 ```VB.NET
 	Private Sub BringLocationIntoView(ByVal desiredLocation As Location)
 		Me.radMap.Center = desiredLocation

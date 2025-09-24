@@ -56,8 +56,6 @@ You can define the __RadDiagramThumbnail__ in xaml or in your code-behind. In bo
     ...
     this.LayoutRoot.Children.Add(xDiagramThumbnail);
 ```
-
-
 ```VB.NET
     Dim xDiagramThumbnail As New RadDiagramThumbnail() With { .Diagram = Me.xDiagram }
     ...

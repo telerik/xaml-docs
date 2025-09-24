@@ -42,9 +42,6 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 	        e.Cancel = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
 	    If TypeOf e.DialogViewModel Is AppointmentDialogViewModel Then
@@ -71,9 +68,6 @@ In this case __DefaultDialogResult__ property of the event args should be set in
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
 	    If TypeOf e.DialogViewModel Is ConfirmDialogViewModel Then
@@ -99,9 +93,6 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
 	   Dim dialogViewModel = TryCast(e.DialogViewModel, RecurrenceChoiceDialogViewModel)

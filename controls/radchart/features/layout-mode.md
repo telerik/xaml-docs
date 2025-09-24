@@ -57,9 +57,6 @@ You can set the __LayoutMode__ from XAML or code-behind like this:
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal;
 ```
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Normal
 ```

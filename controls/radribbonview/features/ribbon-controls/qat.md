@@ -53,8 +53,6 @@ In order to add a quick access toolbar to your __RadRibbonView__ control you nee
 ```C#
 	this.radRibbonView.QuickAccessToolBar = new QuickAccessToolBar();
 ```
-
-
 ```VB.NET
 	Me.radRibbonView.QuickAccessToolBar = New QuickAccessToolBar()
 ```
@@ -110,8 +108,6 @@ The next example demonstrates how to set the __QuickAccessToolBarPosition__ prop
 ```C#
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.BelowRibbon;
 ```
-
-
 ```VB.NET
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.BelowRibbon
 ```
@@ -139,8 +135,6 @@ When you want to hide the __QuickAccessToolbar__, you should set the __RadRibbon
 ```C#
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.NotHosted;
 ```
-
-
 ```VB.NET
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.NotHosted
 ```
@@ -170,9 +164,6 @@ The __ToolBarPositionChanged__ event handler receives two arguments:
 	// Do some logic here.
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radRibbonView_ToolBarPositionChanged(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
 	Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)

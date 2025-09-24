@@ -57,10 +57,6 @@ You can subscribe to the __Deleting__ event declaratively or runtime like this:
 ```C#
 	this.gridView.Deleting += gridView_Deleting;
 ```
-
-
-
-
 ```VB.NET
 	AddHandler Me.gridView.Deleting, AddressOf gridView_Deleting
 	' #endregion
@@ -102,11 +98,6 @@ The Deleting event is cancelable. The example below uses the __Deleting__ event 
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Protected itemsToBeDeleted As IEnumerable(Of Object)
 	
@@ -152,10 +143,6 @@ You can subscribe to the __Deleted__ event declaratively or runtime like this:
 ```C#
 	this.gridView.Deleted += gridView_Deleted;
 ```
-
-
-
-
 ```VB.NET
 	AddHandler Me.gridView.Deleted, AddressOf gridView_Deleted
 ```

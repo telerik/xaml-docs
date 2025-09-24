@@ -45,8 +45,6 @@ To handle changes in the selection you can use the __SelectionChanged__ event:
 		//use the Handled property to prevent the selection           
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadOutlookBar1_SelectionChanged(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim newSelectedItem As RadOutlookBarItem = TryCast(TryCast(sender, RadOutlookBar).SelectedItem, RadOutlookBarItem)

@@ -71,8 +71,6 @@ Let's first create some random shapes:
 			}
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadButton_Click_1(sender As Object, e As RoutedEventArgs)
 		For i As Integer = 1 To 20
@@ -100,8 +98,6 @@ Now let's implement some grouping logic on Button's Click:
 		this.diagram.Group("Odd", oddShapes);
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadButton_Click_3(sender As Object, e As RoutedEventArgs)
 		Dim evenShapes As IShape() = Me.diagram.Shapes.Where(Function(x) Integer.Parse(x.Content.ToString()) Mod 2 = 0).ToArray(Of IShape)()
@@ -122,8 +118,6 @@ Now let's play with grouping and upgrouping. Below are some code examples and th
     this.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
     this.diagram.Group("345", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
 ```
-
-
 ```VB.NET
     Me.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
     Me.diagram.Group("345", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
@@ -140,8 +134,6 @@ Alternatively if we use one name in the method:
 	this.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
 	this.diagram.Group("123", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
 ```
-
-
 ```VB.NET
 	Me.diagram.Group("123", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3]);
 	Me.diagram.Group("123", this.diagram.Shapes[3], this.diagram.Shapes[4], this.diagram.Shapes[5]);
@@ -161,8 +153,6 @@ Below is an example of creating a subgroups and a parent group.
     var groupB = this.diagram.Group("3-4", this.diagram.Shapes[3], this.diagram.Shapes[4]);
     var parentGroup = this.diagram.Group("1-2-3-4",groupA,groupB);
 ```
-
-
 ```VB.NET
     Dim groupA = Me.diagram.Group("1-2", Me.diagram.Shapes(1), Me.diagram.Shapes(2))
     Dim groupB = Me.diagram.Group("3-4", Me.diagram.Shapes(3), Me.diagram.Shapes(4))
@@ -184,8 +174,6 @@ What will happen if we try to create parent group then create subgroups?
     this.diagram.Group("1-2-3-4", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3], this.diagram.Shapes[4]);
     this.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
 ```
-
-
 ```VB.NET
     Me.diagram.Group("1-2-3-4", this.diagram.Shapes[1], this.diagram.Shapes[2], this.diagram.Shapes[3], this.diagram.Shapes[4]);
     Me.diagram.Group("1-2", this.diagram.Shapes[1], this.diagram.Shapes[2]);
@@ -204,8 +192,6 @@ You can Ungroup one or several groups with the __Ungroup__ method of RadDiagram:
 	this.diagram.Ungroup(groupA, groupB, groupC);
 	this.diagram.Ungroup(this.diagram.Groups.ToArray());		  
 ```
-
-
 ```VB.NET
 	Me.diagram.Ungroup(groupA, groupB, groupC);
 	Me.diagram.Ungroup(this.diagram.Groups.ToArray());		  

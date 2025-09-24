@@ -95,9 +95,6 @@ Here it is an example which attaches MouseEnter and MouseLeave events to the map
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub MapShapeVisualizationCreated(sender As Object, e As MapShapeOperationEventArgs)
 		If e.Visualization IsNot Nothing Then

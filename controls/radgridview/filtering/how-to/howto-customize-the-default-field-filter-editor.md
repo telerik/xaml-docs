@@ -29,11 +29,6 @@ Depending on the column DataType the editor will be different. For String column
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub OnRadGridViewFieldFilterEditorCreated(sender As System.Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	    If e.Column.UniqueName = "HireDate" Then
@@ -72,9 +67,6 @@ In case you need the filtering to be re-applied on every character entered, you 
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnRadGridViewFieldFilterEditorCreated(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	    Dim stringFilterEditor = TryCast(e.Editor, StringFilterEditor)

@@ -79,9 +79,6 @@ In the event handler you get the item that has been clicked and check if it is c
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
 	    Dim currentItem = TryCast(e.OriginalSource, RadMenuItem)
@@ -123,9 +120,6 @@ In order the uncheck the other items from the same group, you have to get them f
 	    return items;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function GetSiblingGroupItems(currentItem As RadMenuItem) As List(Of RadMenuItem)
 	    Dim parentItem = currentItem.ParentOfType(Of RadMenuItem)()
@@ -174,9 +168,6 @@ Now as the sibling items from the same group are available, the only things that
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radMenu_ItemClick(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 	    Dim currentItem = TryCast(e.OriginalSource, RadMenuItem)
@@ -223,9 +214,6 @@ When having __RadMenu__ with dynamic data in it, the logic remains the same, but
 	    public ObservableCollection<MenuItem> SubMenuItems { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MenuItem
 	    Public Property Header() As String
@@ -284,9 +272,6 @@ The ViewModel should look as shown below:
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ViewModel
 	    Public Property MenuItems() As ObservableCollection(Of MenuItem)

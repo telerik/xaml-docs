@@ -39,9 +39,6 @@ To apply custom localization to your controls just instantiate your custom __Loc
 ```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
 ```
-
-
-
 ```VB.NET
 	LocalizationManager.Manager = New CustomLocalizationManager()
 ```
@@ -88,9 +85,6 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 	   ResourceManager = ScheduleViewResources.ResourceManager
 	};
 ```
-
-
-
 ```VB.NET
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
@@ -137,9 +131,6 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 	   }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class CustomLocalizationManager
 	    Inherits ScheduleViewLocalizationManager
@@ -184,9 +175,6 @@ Of course, if you don't want to hard-code your translation inside your source co
 	   return base.GetStringOverride( key );
 	}
 ```
-
-
-
 ```VB.NET
 	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	    Select Case key

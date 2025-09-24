@@ -130,8 +130,6 @@ Another way to implement the same customizations is to create a new __TemplateSe
 		  }
 	  }
 ```
-
-
 ```VB.NET
 	  Public Class MyTemplateSelector
 		Inherits DataTemplateSelector

@@ -45,9 +45,6 @@ So lets create a simple class that we'll use to save (when serializing) and load
 	    public PivotAxis AggregatesPosition { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	<DataContract> _
 	Public Class DataProviderSettings
@@ -168,9 +165,6 @@ The next step is to implement the serializer. When serializing the provider, you
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public MustInherit Class DataProviderSerializer
 		Public MustOverride ReadOnly Property KnownTypes() As IEnumerable(Of Type)
@@ -260,9 +254,6 @@ So the last step is to serialize the provider and deserialize it:
 	LocalDataSourceSerializer provider = new LocalDataSourceSerializer();
 	provider.Deserialize(this.pivotGrid.DataProvider, this.lastSerializadProvider);
 ```
-
-
-
 ```VB.NET
 	Dim lastSerializadProvider As String
 	
@@ -307,9 +298,6 @@ So if you have implemented a custom group description, it should be similar to t
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	<DataContract> _
 	Public Class CustomGroupDescription
@@ -346,9 +334,6 @@ And here's the change in *LocalDataSourceSerializer* class:
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class LocalDataSourceSerializer
 		Inherits DataProviderSerializer

@@ -95,8 +95,6 @@ At this point the __MapLegend__ is not connected to the __RadMap__ and the __Rad
 ```C#
 	this.radMap.Provider = new EmptyProvider();
 ```
-
-
 ```VB.NET
 	Me.radMap.Provider = New EmptyProvider()
 ```

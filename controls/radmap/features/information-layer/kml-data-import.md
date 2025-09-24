@@ -50,8 +50,6 @@ To pass the desired KML file you have to use the __Source__ property of the __Ma
 	this.informationLayer.Reader = new MapShapeReader();
 	this.informationLayer.Reader.Source = new Uri( "/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute );
 ```
-
-
 ```VB.NET
 	Me.informationLayer.Reader = New MapShapeReader()
 	Me.informationLayer.Reader.Source = New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute)
@@ -83,8 +81,6 @@ First of all read the Shapefile as a resource stream. Note that the file must ha
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Private Sub LoadKMLData()
 	 Dim streamResource As StreamResourceInfo = Application.GetResourceStream(New Uri("/MyApp;component/Data/bulgaria.kml", UriKind.RelativeOrAbsolute))

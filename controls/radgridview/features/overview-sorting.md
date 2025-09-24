@@ -40,10 +40,6 @@ You can achieve the same result if you define your sorting criteria in the code-
 	descriptor.SortDirection = ListSortDirection.Ascending;
 	this.radGridView.SortDescriptors.Add(descriptor);
 ```
-
-
-
-
 ```VB.NET
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "EmployeeID"

@@ -69,11 +69,6 @@ Here is the same __RadChart__ after setting the property to __True__.
 	    this.radChart.SeriesMappings[ 0 ].GroupingSettings.ShouldFlattenSeries = true;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -109,11 +104,6 @@ Here is an example of a __CheckBox__ that manages the series flattening of the _
 	    this.radChart.Rebind();
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub CheckBox_Click(sender As Object, e As RoutedEventArgs)
 	    Dim isChecked As System.Nullable(Of Boolean) = TryCast(sender, CheckBox).IsChecked

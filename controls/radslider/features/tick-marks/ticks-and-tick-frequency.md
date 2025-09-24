@@ -38,11 +38,6 @@ The __Ticks__ property allows you to place marks(ticks) along the track in a __n
 	radSlider1.TickPlacement = TickPlacement.TopLeft;
 	LayoutRoot.Children.Add(radSlider1);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radSlider1 As New RadSlider()
 	radSlider1.Maximum = 10

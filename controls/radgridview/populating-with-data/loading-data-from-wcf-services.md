@@ -37,9 +37,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 ```C#
 	WcfServiceClient serviceClient = new WcfServiceClient();
 ```
-
-
-
 ```VB.NET
 	Private serviceClient As New WcfServiceClient()
 ```
@@ -63,9 +60,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	    this.radGridView.ItemsSource = customers;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub BeginRequest()
 	    AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
@@ -83,9 +77,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 ```C#
 	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
 ```
-
-
-
 ```VB.NET
 	Me.radGridView.ItemsSource = serviceClient.LoadCustomers()
 ```
@@ -107,9 +98,6 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	{
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	End Class
@@ -139,9 +127,6 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	    Private serviceClient As SampleWcfServiceClient
@@ -173,15 +158,10 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    this.Customers.Add(c);
 	}
 ```
-
-
-
 ```VB.NET
 	AddHandler serviceClient.LoadCustomersCompleted, AddressOf serviceClient_LoadCustomersCompleted
 	serviceClient.LoadCustomersAsync()
 ```
-
-
 
 ```VB.NET
 	For Each c As Customer In serviceClient.LoadCustomers()
@@ -204,9 +184,6 @@ And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	If e.Error Is Nothing AndAlso e.Result IsNot Nothing Then
 	    For Each c As Customer In e.Result

@@ -59,8 +59,6 @@ Here's our sample TreeMap:
 		public double Gdp { get; set; }
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

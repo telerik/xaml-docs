@@ -44,11 +44,6 @@ After finishing with the changes, it is time to set the style. It can be set onl
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.GridLineStyle = this.Resources["GridLineStyle"] as Style;
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.GridLineStyle = this.Resources["GridLineStyle"] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.GridLineStyle = TryCast(Me.Resources("GridLineStyle"), Style)
 	Me.radChart.DefaultView.ChartArea.AxisY.AxisStyles.GridLineStyle = TryCast(Me.Resources("GridLineStyle"), Style)

@@ -52,9 +52,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.MemberName = "[Product].[Category]";
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -76,9 +73,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.MemberName = "[Product].[Category]";
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -101,9 +95,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.MemberName = "[Product].[Category]";
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -124,9 +115,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.MemberName = "[Product].[Category]";
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -156,9 +144,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
 	groupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 1 };
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -185,9 +170,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 	groupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 1 };
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -218,9 +200,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
 	groupDescription.GroupComparer = new OlapGroupComparer();
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New XmlaGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -247,9 +226,6 @@ The sorting can be applied in the __XAML__, in code behind or even at runtime wi
 	groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 	groupDescription.GroupComparer = new OlapGroupComparer();
 ```
-
-
-
 ```VB.NET
 	Dim groupDescription As New AdomdGroupDescription()
 	groupDescription.MemberName = "[Product].[Category]"
@@ -286,9 +262,6 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	levelGroupDescription1.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 	topGroupDescription.Levels.Add(levelGroupDescription1);
 ```
-
-
-
 ```VB.NET
 	Dim topGroupDescription As New XmlaGroupDescription()
 	topGroupDescription.MemberName = "[Date].[Calendar]"
@@ -321,9 +294,6 @@ OLAP dimensions consist of attribute hierarchies and user-defined hierarchies. U
 	levelGroupDescription1.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
 	topGroupDescription.Levels.Add(levelGroupDescription1);
 ```
-
-
-
 ```VB.NET
 	Dim topGroupDescription As New AdomdGroupDescription()
 	topGroupDescription.MemberName = "[Date].[Calendar]"

@@ -204,11 +204,6 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class MenuItem
 	    Implements INotifyPropertyChanged
@@ -393,11 +388,6 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class MenuItemsCollection
 	    Inherits ObservableCollection(Of MenuItem)
@@ -474,11 +464,6 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class ChartDataItem
 	    Implements INotifyPropertyChanged
@@ -526,11 +511,6 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	{
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class ChartDataCollection
 	    Inherits ObservableCollection(Of ChartDataItem)
@@ -577,11 +557,6 @@ You will need several helper classes that will be used for the __RadChart__ and 
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class ChartViewModel
 	    Private rand As New Random(DateTime.Now.Millisecond)
@@ -832,11 +807,6 @@ The code snippet below shows you the full XAML code:
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Dim menu As RadContextMenu = CType(sender, RadContextMenu)
 	Dim clickedBar As Bar = menu.GetClickedElement(Of Bar)()

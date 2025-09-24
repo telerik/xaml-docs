@@ -45,9 +45,6 @@ To do so you can use the __Sorting__ event. As a start you need to attach an eve
 ```C#
 	this.radGridView.Sorting += this.radGridView_Sorting;
 ```
-
-
-
 ```VB.NET
 	  
 	AddHandler Me.radGridView.Sorting, AddressOf Me.radGridView_Sorting
@@ -86,9 +83,6 @@ The first thing to do is to get the value of __RadGridView.ItemsSource__ and ass
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radGridView_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
 	    'Gets the value of the ItemsSource property as IEnumerable.
@@ -123,9 +117,6 @@ Next you have to check the value of the current sorting direction. To do that us
 	    e.NewSortingState = SortingState.None;
 	}
 ```
-
-
-
 ```VB.NET
 	'If the sorting state is none, sort the items ascending.
 	If e.OldSortingState = SortingState.None Then
@@ -152,9 +143,6 @@ To sort the employees collection use __OrderBy__ and __OrderByDescending__ exten
 	                                                  .GetProperty((e.Column as GridViewDataColumn).GetDataMemberName())
 	                                                  .GetValue(employee, null));
 ```
-
-
-
 ```VB.NET
 	'Via the SortPropertyName value get 
 	'the value of the property to sort your data by.
@@ -174,9 +162,6 @@ Do the same with __OrderByDescending__ extension method. In the end, set __RadGr
 	e.DataControl.ItemsSource = employees.ToList();
 	e.Cancel = true;
 ```
-
-
-
 ```VB.NET
 	e.DataControl.ItemsSource = employees.ToList()
 	e.Cancel = True
@@ -224,9 +209,6 @@ Here is the final code that should represent __Sorting__ event handler.
 	    e.Cancel = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub CustomSortingGrid_Sorting(ByVal sender As Object, ByVal e As GridViewSortingEventArgs)
 	    'Gets the value of the ItemsSource property as IEnumerable.

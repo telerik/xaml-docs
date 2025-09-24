@@ -44,8 +44,6 @@ The last step is to instantiate the `LocalizationManager` class and set its `Res
         ResourceManager = DiagramResources.ResourceManager
     };
 ```
-
-
 ```VB.NET
     LocalizationManager.Manager = New LocalizationManager()
     LocalizationManager.Manager.ResourceManager = DiagramResources.ResourceManager  
@@ -92,8 +90,6 @@ The other way to localize your `RadDiagram` is to create a class that derives fr
         }
     }
 ```
-
-
 ```VB.NET	
 	Public Class CustomLocalizationManager
 		Inherits LocalizationManager
@@ -138,8 +134,6 @@ Of course, if you don't want to hard-code your translation inside your source co
         return base.GetStringOverride(key);
     }	    
 ```
-	
-
 ```VB.NET	
 	Public Overrides Function GetStringOverride(key As String) As String
 		Select Case key

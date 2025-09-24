@@ -38,9 +38,6 @@ For example if you have a collection of Orders when you want to add a new Order 
 	    e.NewObject = new Order() { CustomerID = myCustomerID };
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub ordersGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)
 	    e.NewObject = New Order() With {

@@ -34,8 +34,6 @@ Here you can see a possible way to iterate the Shapes or Connection of the RadDi
 	  (x as RadDiagramShape).Content = "Shape";
 	});
 ```
-
-
 ```VB.NET
 	Me.diagram.Shapes.ToList().ForEach(Function(x)
 		'your custom logic goes here'
@@ -60,8 +58,6 @@ In order to take advatnage of these methods you need to add a using statement fo
     xDiagram.GetOutgoingConnectionsForShape(shape);
     xDiagram.GetIncomingConnectionsForShape(shape);
 ```
-
-	
 ```VB.NET
     Imports Telerik.Windows.Diagrams.Core
     ...

@@ -96,8 +96,6 @@ Besides the __Click__ event, the __RadRibbonDropDownButton__ exposes several dro
 	{
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadRibbonDropDownButton_DropDownClosed(sender As Object, e As RoutedEventArgs)
 	End Sub

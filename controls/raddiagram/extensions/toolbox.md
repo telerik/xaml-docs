@@ -135,9 +135,6 @@ or define a property of type __HierarchicalGalleryItemsCollection__ in your View
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MainViewModel
 		Public Property GalleryItems() As HierarchicalGalleryItemsCollection
@@ -257,9 +254,6 @@ The __HierarchicalGalleryItemsCollection__ is populated based on the items in th
 	    }
 	}	
 ```
-
-
-
 ```VB.NET
 	Public Class MainViewModel
 		Public Property GalleryItems() As ObservableCollection(Of Gallery)
@@ -322,9 +316,6 @@ Next, you can customize your *GalleryItems* collection to display only the Basic
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MainViewModel
 		Public Property GalleryItems() As ObservableCollection(Of Gallery)
@@ -447,9 +438,6 @@ For the purpose of this tutorial we will create a class describing our shapes an
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyShape
 		Public Property Geometry() As Geometry

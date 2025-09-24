@@ -70,9 +70,6 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 	    radPane1.MakeFloatingDockable();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub MakeFloatingDockable()
 		radPane1.MakeFloatingDockable()
@@ -89,9 +86,6 @@ You can programmatically make a pane floatable by either calling __MakeFloatingD
 	    radPane1.MakeFloatingOnly();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub MakeFloatingOnly()
 		radPane1.MakeFloatingOnly()
@@ -156,9 +150,6 @@ In order to make a pane dockable, you need to invoke the __MakeDockable()__ meth
 	    radPane1.MakeDockable();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub MakeDockable()
 		radPane1.MakeDockable()
@@ -198,9 +189,6 @@ In order to dock a pane in the code-behind, you need to use the __AddItem__ meth
 ```C#
 	public void AddItem(RadPane item, DockPosition dockPosition) { }
 ```
-
-
-
 ```VB.NET
 	Public Sub AddItem(ByVal item As RadPane, ByVal dockPosition As DockPosition)
 	End Sub
@@ -294,9 +282,6 @@ In order to __pin__ a pane in the code-behind, you need to set the __IsPinned__ 
 	    radPane1.IsPinned = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub PinPane()
 		radPane1.IsPinned = True
@@ -313,9 +298,6 @@ Respectively, in order to __unpin__ a pane in the code-behind, you need to set t
 	    radPane1.IsPinned = false;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub UnpinPane()
 		radPane1.IsPinned = False
@@ -356,9 +338,6 @@ If you want to close a pane in the code-behind, then you need to set the __IsHid
 	    radPane1.IsHidden = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub ClosePane()
 		radPane1.IsHidden = true

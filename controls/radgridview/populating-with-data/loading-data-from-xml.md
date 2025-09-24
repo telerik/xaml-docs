@@ -58,9 +58,6 @@ The final result should look like the snapshot below:
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class XmlNodeItem
 	    Private _Team As String
@@ -104,9 +101,6 @@ The final result should look like the snapshot below:
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	<XmlRoot(ElementName := "Items")>
 	Public Class XmlNodeItemList
@@ -149,9 +143,6 @@ The final result should look like the snapshot below:
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class RadGridViewXmlDataSource
 	    Inherits XmlNodeItemList

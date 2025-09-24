@@ -50,8 +50,6 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	    this.radialBar.ValueSource = values;
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 	 InitializeComponent()
@@ -75,8 +73,6 @@ Here is an example:
 	    this.radialBar.StartPlayback();
 	}
 ```
-
-
 ```VB.NET
 	Private Sub StartPlayback()
 	 Me.radialBar.StartPlayback()
@@ -98,9 +94,6 @@ Here is an example:
 	    this.radialBar.StopPlayback();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub StopPlayback()
 	 Me.radialBar.StopPlayback()
@@ -118,8 +111,6 @@ The indicator's API also allows you to manually navigate through the values coll
 	    this.radialBar.MoveNext();
 	}
 ```
-
-
 ```VB.NET
 	Private Sub MoveNext()
 	 Me.radialBar.MoveNext()
@@ -137,8 +128,6 @@ The __MovePrevious()__ method is the other one used for manual navigation throug
 	    this.radialBar.MovePrevious();
 	}
 ```
-
-
 ```VB.NET
 	Private Sub MovePrevious()
 	 Me.radialBar.MovePrevious()
@@ -179,8 +168,6 @@ Here is an example (a slight modification of the previous one):
 	    this.radialBar.ValueSource = values;
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

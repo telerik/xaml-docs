@@ -79,9 +79,6 @@ This is the full source code of the sample:
 	    return data;
 	}
 ```
-
-
-
 ```VB.NET
 	  Public Sub New()
 		InitializeComponent()

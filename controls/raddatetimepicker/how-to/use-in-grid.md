@@ -53,11 +53,6 @@ For the purpose of this example the first thing you have to do is to define the 
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class Club
 	    Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
@@ -125,9 +120,6 @@ For the purpose of this example the first thing you have to do is to define the 
 ```C#
 	this.radGridView.ItemsSource = Club.GetClubs();
 ```
-
-
-
 ```VB.NET
 	Me.radGridView.ItemsSource = Club.GetClubs()
 ```

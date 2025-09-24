@@ -110,11 +110,6 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
@@ -148,8 +143,6 @@ On the left side you have a __RadGridView__, where the __UnitPrice__ and __Units
 	    End Sub
 	End Class
 ```
-
-
 
 
 
@@ -241,11 +234,6 @@ Here is the result so far:
 	    SetChartItemsSource(selectedList);
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub radGridView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangeEventArgs)
 	    Dim selectedList As New Collection(Of Products)()
@@ -293,11 +281,6 @@ Here is the result so far:
 	    radChart.SeriesMappings.Add( seriesMapping1 );
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub CreateSeriesMappings(ByVal invoicesList As Collection(Of Products))
 	    radChart.SeriesMappings.Clear()
@@ -337,11 +320,6 @@ Here is the result so far:
 	    radChart.ItemsSource = invoicesList;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub SetChartItemsSource(ByVal invoicesList As Collection(Of Products))
 	    radChart.ItemsSource = invoicesList

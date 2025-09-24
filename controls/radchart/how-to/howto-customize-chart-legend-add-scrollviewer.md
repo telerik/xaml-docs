@@ -132,10 +132,6 @@ The sample Chart shown below has [LegendDisplayMode](http://www.telerik.com/help
 	            RadChart1.DefaultView.ChartLegend.Style = (Style)this.Resources["ChartLegendStyle"];
 	        }
 ```
-
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()

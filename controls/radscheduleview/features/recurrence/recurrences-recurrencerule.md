@@ -66,9 +66,6 @@ The __RecurrenceRule__ class has only one public constructor, which accepts a __
 	};        
 	fitnessAppointment.RecurrenceRule = new RecurrenceRule(recurrencePattern);
 ```
-
-
-
 ```VB.NET
 	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 	Dim fitnessAppointment = New Appointment() With {
@@ -115,9 +112,6 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 	    Subject = "Fitness"
 	};
 ```
-
-
-
 ```VB.NET
 	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 	Dim fitnessAppointment = New Appointment() With {
@@ -139,9 +133,6 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 	    MaxOccurrences = 10
 	};
 ```
-
-
-
 ```VB.NET
 	Dim recurrencePattern = New RecurrencePattern() With {
 	    .Frequency = RecurrenceFrequency.Daily,
@@ -158,9 +149,6 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 ```C#
 	var rule = new RecurrenceRule(recurrencePattern);
 ```
-
-
-
 ```VB.NET
 	Dim rule = New RecurrenceRule(recurrencePattern)
 ```
@@ -175,9 +163,6 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 	exceptionDate.End = fitnessAppointment.End.AddDays(-1);          
 	rule.AddException(startDate, exceptionDate);
 ```
-
-
-
 ```VB.NET
 	Dim exceptionDate = fitnessAppointment.Copy()
 	exceptionDate.Start = fitnessAppointment.Start.AddDays(-1)
@@ -192,9 +177,6 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 ```C#
 	fitnessAppointment.RecurrenceRule = rule;
 ```
-
-
-
 ```VB.NET
 	fitnessAppointment.RecurrenceRule = rule
 ```

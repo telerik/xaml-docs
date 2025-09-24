@@ -42,9 +42,6 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MenAverageSales
 		Inherits CalculatedItem
@@ -88,9 +85,6 @@ As you can see the Calculated Item will show the average sales of four people. N
 	propertyGroupDescription.CalculatedItems.Add(calculatedItem);
 	dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription);
 ```
-
-
-
 ```VB.NET
 	Dim propertyGroupDescription = New Telerik.Pivot.Core.PropertyGroupDescription()
 	propertyGroupDescription.PropertyName = "Salesperson"
@@ -136,9 +130,6 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub LocalDataSourceProvider_PrepareDescriptionForField(ByVal sender As Object, ByVal e As PrepareDescriptionForFieldEventArgs)
 		If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
@@ -197,9 +188,6 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
 	dataProvider.RowGroupDescriptions.Add(countryGroupDescription);
 ```
-
-
-
 ```VB.NET
 	Dim salesPersonGroupDescription = New Telerik.Pivot.Core.PropertyGroupDescription()
 	salesPersonGroupDescription.PropertyName = "Salesperson"

@@ -135,11 +135,6 @@ The following example, considering the sample data above, demonstrates how to us
 	//....
 	radChart.SeriesMappings.Add( seriesMapping );
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New RadChart()
 	'....'
@@ -222,11 +217,6 @@ Based on the example above, imagine that you want to create a chart that shows t
 	//....
 	radChart.SeriesMappings.Add( seriesMapping );
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New RadChart()
 	'....'

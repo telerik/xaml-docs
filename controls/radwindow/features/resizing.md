@@ -30,9 +30,6 @@ Here is an example of a __RadWindow__ that can be resized, minimized or maximize
 	RadWindow radWindow = new RadWindow();
 	radWindow.ResizeMode = ResizeMode.NoResize;
 ```
-
-
-
 ```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.ResizeMode = ResizeMode.NoResize

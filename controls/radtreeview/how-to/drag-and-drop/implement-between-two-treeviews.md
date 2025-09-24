@@ -181,9 +181,6 @@ For the first __RadTreeView__ we can create a business class called __MediaFile_
 		public string ImageFilePath { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MediaFile
 	    Public Property ImageTitle() As String
@@ -207,9 +204,6 @@ Then we can define a business class called __PartitionViewModel__ which will hol
 	    public ObservableCollection<MediaFile> MediaFiles { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class PartitionViewModel
 	    Public Sub New()
@@ -248,9 +242,6 @@ For our second RadTreeView we can create a class called __Resource__ that will h
 		public string Title { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Resource
 	    Public Property ImageFilePath() As BitmapImage
@@ -275,9 +266,6 @@ Then we can define a class called __ApplicationViewModel__ which will hold a col
 		public ObservableCollection<Resource> Resources { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ApplicationViewModel
 	    Public Sub New()
@@ -345,9 +333,6 @@ Next we can define a __MainViewModel__ class that contains the collections which
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MainViewModel
 	    Public Sub New()
@@ -445,9 +430,6 @@ Now let’s add the handlers for the __DragDropManager__ events listed above. We
 	    DragDropManager.AddDropHandler(this.xApplicationTree, OnApplicationTreeDrop, true);
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -529,9 +511,6 @@ Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we d
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnApplicationTreeDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	    Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -614,9 +593,6 @@ In order to deny the nesting of __Resource__ files and update the visual represe
 	    options.UpdateDragVisual();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnApplicationTreeDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	    Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -652,9 +628,6 @@ To ensure that we cannot drop in the local machine tree, we can subscribe for th
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnLocalMachineTreeDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	    Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)

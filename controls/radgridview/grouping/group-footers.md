@@ -63,8 +63,6 @@ The same operation can be done in the code-behind.
 	    this.radGridView.ShowGroupFooters = true;
 	}
 ```
-
-
 ```VB.NET
 	Private Sub EnableGroupFooters()
 	    Me.radGridView.ShowGroupFooters = True

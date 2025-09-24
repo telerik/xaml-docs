@@ -52,9 +52,6 @@ Here is an example of an event handler attached to the __Click__ event and how t
 	    //implement the logic regarding the instance here.
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadMenuItem_Click(sender As Object, e As RadRoutedEventArgs)
 	    Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
@@ -89,9 +86,6 @@ Here is an example of an event handler attached to the __ItemClick__ event and h
 	    //implement the logic regarding the instance here.
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radContextMenu_ItemClick(sender As Object, e As RadRoutedEventArgs)
 	    Dim item As RadMenuItem = TryCast(e.OriginalSource, RadMenuItem)

@@ -98,11 +98,6 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
 	//....
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = True
@@ -180,11 +175,6 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 	sm.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
 	radChart.SeriesMappings.Add( sm );
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = True
@@ -232,11 +222,6 @@ However, the chart above could be improved if a bit more ticks are shown. When _
 	radChart.DefaultView.ChartArea.AxisX.TicksDistance = 15;
 	//....
 ```
-
-
-
-
-
 ```VB.NET
 	'....'
 	radChart.DefaultView.ChartArea.AxisX.TicksDistance = 15
@@ -281,11 +266,6 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
 	//....
 ```
-
-
-
-
-
 ```VB.NET
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = False
 	radChart.DefaultView.ChartArea.AxisX.MinValue = New DateTime(2009, 1, 1).ToOADate()

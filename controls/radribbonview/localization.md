@@ -41,8 +41,6 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 	ResourceManager = RibbonResources.ResourceManager
 	};
 ```
-
-
 ```VB.NET
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = RibbonResources.ResourceManager
@@ -75,8 +73,6 @@ The other way to localize your __RadRibbonView__ control is to create a class th
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Class CustomLocalizationManager
 	    Inherits LocalizationManager
@@ -109,8 +105,6 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	    return base.GetStringOverride( key );
 	}
 ```
-
-
 ```VB.NET
 	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	    Select Case key

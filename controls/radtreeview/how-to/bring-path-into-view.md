@@ -51,8 +51,6 @@ Let's start by setting up the business models that will define the hierarchy dis
 		}
 	}
 ```
-
-
 ```VB.NET
 	Public Class BusinessItem
 		Public Sub New(ByVal parent As BusinessItem)
@@ -123,8 +121,6 @@ In order to complete the __BusinessItem__ class implementation, we'll only add a
 		}
 	}
 ```
-
-
 ```VB.NET
 	Public Class BusinessItem
 		Implements INotifyPropertyChanged
@@ -205,8 +201,6 @@ Next, we need a __ViewModel__ describing the collection of __BusinessItems__. Fo
 		}
 	}
 ```
-
-	
 ```VB.NET
 	Public Class SampleViewModel
 		Inherits ObservableCollection(Of BusinessItem)
@@ -277,8 +271,6 @@ Finally, in order to make this example a bit more user-friendly, we will allow o
 		}
 	}
 ```
-	
-	
 ```VB.NET
 	Public Class SampleViewModel
 		Inherits ObservableCollection(Of BusinessItem)
@@ -416,8 +408,6 @@ First, we'll set the __ItemsSource__ of the __RadTreeView__ and immediately brin
 		}
 	}		  
 ```
-
-	
 ```VB.NET
 	Partial Public Class Example
 		Inherits UserControl
@@ -457,8 +447,6 @@ Next, we will need to implement the __Click__ event handler of the *Bring Item* 
         }
     }
 ```
-	
-	
 ```VB.NET
 	Private Sub BringItem(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim item As BusinessItem = Me.sampleVM.GetItemByName(Me.textBox.Text)
@@ -493,8 +481,6 @@ Finally, we have to implement a logic that adds a new item when the *Add Item* b
         }
     }
 ```
-
-		
 ```VB.NET
 	Private Sub AddItem(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim parent As BusinessItem = Me.sampleVM.GetItemByName(Me.parentBox.Text)

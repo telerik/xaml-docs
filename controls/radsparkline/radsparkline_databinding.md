@@ -71,8 +71,6 @@ Set the List as datasource for the SparkLine using the *ItemsSource *property of
 	}
 	myLinearSparkline.ItemsSource = myData;
 ```
-
-
 ```VB.NET
     Dim myLinearSparkline As New RadLinearSparkline()
     Dim r As New Random()
@@ -134,8 +132,6 @@ If you have a list of business objects and you want to bind it to the RadSparkLi
         public DateTime MyDate { get; set; }
     }
 ```
-
-
 ```VB.NET
     Partial Public Class MainPage
         Inherits UserControl

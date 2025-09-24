@@ -54,11 +54,6 @@ Here is an example.
 	this.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.RangeStart = 0.2;
 	this.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.ScrollMode = ScrollMode.ScrollAndZoom;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.MinZoomRange = 0.1
 	Me.radChart.DefaultView.ChartArea.ZoomScrollSettingsX.RangeEnd = 0.3

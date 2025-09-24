@@ -36,8 +36,6 @@ In order to use the Path Tool or Pencil Tool in the RadDiagram, you have to set 
 			this.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PencilTool;
 		}
 ```
-
-	
 ```VB.NET
        Private Sub Button_Click_PathTool(sender As Object, e As RoutedEventArgs)
 	      Me.diagram.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.PathTool

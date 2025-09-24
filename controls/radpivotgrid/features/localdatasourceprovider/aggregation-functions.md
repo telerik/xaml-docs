@@ -130,9 +130,6 @@ Aggregate Function is defined on PropertyAggregateDescription. There is property
 	aggregate.PropertyName = "Price";
 	aggregate.AggregateFunction = AggregateFunctions.StdDevP;
 ```
-
-
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.PropertyName = "Price"

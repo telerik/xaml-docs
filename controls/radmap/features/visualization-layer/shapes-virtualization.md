@@ -137,8 +137,6 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 	    }
 	}
 ```
-
-
 ```VB.NET	
 	Partial Public Class MainPage
 		Inherits UserControl
@@ -295,8 +293,6 @@ If your application cannot limit zoom level and it requires that some data still
 	    }
 	}
 ```
-
-
 ```VB.NET	
 	Public Class ShapeDataVirtualizer
 		Implements IMapItemsVirtualizationSource

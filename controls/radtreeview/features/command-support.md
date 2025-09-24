@@ -75,9 +75,6 @@ In this section we will demonstrate how you can trigger custom logic implemented
 		public ObservableCollection<ItemModel> Children { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ItemModel
 		Inherits ViewModelBase
@@ -177,9 +174,6 @@ Furthermore, we can create a __ViewModel__ class which will fill and expose an _
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ViewModel
 		Public Sub New()

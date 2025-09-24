@@ -28,9 +28,6 @@ The item container may be null if it isn't still generated from the runtime. Tha
 ```C#
 	this.Loaded += new RoutedEventHandler( IterateTreeViewItems_Loaded );
 ```
-
-
-
 ```VB.NET
 	AddHandler Me.Loaded, AddressOf IterateTreeViewItems_Loaded
 ```
@@ -78,9 +75,6 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	    return allItems;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.GetContainers()
@@ -164,9 +158,6 @@ The item container may be null if it isn't still generated from the runtime. Tha
 	    return allItems;
 	}
 ```
-
-
-
 ```VB.NET
 		Private Sub IterateTreeViewItems_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Me.GetContainers()

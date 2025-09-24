@@ -41,9 +41,6 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	    return numeric;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
 	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
@@ -88,9 +85,6 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	    return numeric;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
 	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
@@ -135,9 +129,6 @@ The following examples shows how to use ValueFormat and __NumberFormatInfo__ pro
 	    return numeric;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
 	    Dim numeric As RadNumericUpDown = New RadNumericUpDown
@@ -185,9 +176,6 @@ Here is a simple example of how to use __CustomUnit__ property:
 	    return numeric;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function TestMethod() As RadNumericUpDown
 	    Dim numeric As RadNumericUpDown = New RadNumericUpDown

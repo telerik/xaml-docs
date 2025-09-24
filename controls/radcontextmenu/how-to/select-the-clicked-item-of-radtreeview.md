@@ -67,9 +67,6 @@ To handle the __Opened__ event attach an event handler to it.
 	{
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	End Sub
@@ -85,9 +82,6 @@ In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetCl
 	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
@@ -110,9 +104,6 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()

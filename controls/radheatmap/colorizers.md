@@ -62,8 +62,6 @@ Here is our sample RadHeatMap:
 		public int HorsePower { get; set; }
 	}
 ```
-
-
 ```VB.NET
 	Partial Public Class MainPage
 		Inherits UserControl
@@ -170,8 +168,6 @@ Now, this is how a HeatMapValueGradientColorizer is defined:
 	ValueGradientColorizer1.GradientStops.Add(new GradientStop() { Color = new Color() { R = 1, G = 81, B = 140, A = 255 }, Offset = 1 });
 	memberMapping1.Colorizer = ValueGradientColorizer1;
 ```
-
-
 ```VB.NET
 	Dim ValueGradientColorizer1 As New HeatMapValueGradientColorizer()
 	ValueGradientColorizer1.GradientStops.Add(New GradientStop() With { _
@@ -235,8 +231,6 @@ Let’s define an absolute HeatMapRangeColorizer and apply it to Miles per Gallo
 	RangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = new Color() { R = 1, G = 81, B = 140, A = 255 }, From = 35, To = 40 });
 	memberMapping2.Colorizer = RangeColorizer1;
 ```
-
-
 ```VB.NET
 	Dim RangeColorizer1 As New HeatMapRangeColorizer() With { _
 		Key .IsAbsolute = True _
@@ -327,8 +321,6 @@ This is how HeatMapDesaturationColorizer is defined and applied:
 	};
 	memberMapping3.Colorizer = DesaturationColorizer1;
 ```
-
-
 ```VB.NET
 	Dim DesaturationColorizer1 As New HeatMapDesaturationColorizer() With { _
 		Key .StartColor = New Color() With { _
@@ -399,8 +391,6 @@ The complete code of the example:
 	    public int HorsePower { get; set; }
 	}
 ```
-
-
 ```VB.NET
 	Partial Public Class MainPage
 		Inherits UserControl
@@ -561,8 +551,6 @@ Here is a little demonstration:
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Function CreateWeatherData() As List(Of MonthlyTemp)
 		Dim time = New Date(2004, 1, 1)

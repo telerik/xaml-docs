@@ -58,9 +58,6 @@ In case you want to expand a specific group initially, you can use a Converter. 
 	    return false;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
 		If value IsNot Nothing AndAlso TypeOf value Is String Then
@@ -114,9 +111,6 @@ There are scenarios, in which the expanded and collapsed state of the groups of 
 	    timelineGroup.IsExpanded = string.Equals(timelineGroup.Header, (string)e.NewValue);
 	}
 ```
-
-
-
 ```VB.NET
 	Public Shared ReadOnly ExpandedGroupKeyProperty As DependencyProperty = DependencyProperty.RegisterAttached("ExpandedGroupKey", GetType(String), GetType(TimelineItemGroupControlBehavior), New PropertyMetadata(OnExpandedGroupKeyChanged))
 	

@@ -89,9 +89,6 @@ The following example demonstrates how you can add custom Framework Element (Rec
 			public DateTime Date { get; set; }
 		}
 ```
-
-
-
 ```VB.NET
 	    Dim dataSource As New List(Of Item)()
 		Dim startDate = New Date(2011, 1, 1)
@@ -154,9 +151,6 @@ We'll get started with creating a __CustomItemTemplateSelector__ class. It shoul
 	        }
 	    }
 ```
-
-
-
 ```VB.NET
 	 Public Class CustomItemTemplateSelector
 	 Inherits DataTemplateSelector
@@ -204,9 +198,6 @@ We'll extend the View Model we previously created with __CustomItemTemplateSelec
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Private customItemTemplateSelector_Renamed As DataTemplateSelector
 	Public Property CustomItemTemplateSelector() As DataTemplateSelector

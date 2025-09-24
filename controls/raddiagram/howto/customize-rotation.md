@@ -85,9 +85,6 @@ The first step is to define a new class, let's call it __MyRotation__, that deri
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyRotation
 	    Inherits RotationService
@@ -135,9 +132,6 @@ Finally, we need to configure the diagram to use our custom rotation implementat
 	    this.rotationStep.SetBinding(TextBox.TextProperty, binding);
 	}
 ```
-
-
-
 ```VB.NET
 	Private newRotationService As MyRotation
 	Private Sub InitializeNewServices()
@@ -170,9 +164,6 @@ And now we can use the __newRotationService__ instance and register it through t
 	    this.diagram.ServiceLocator.Register<IRotationService>(this.newRotationService);
 	}
 ```
-
-
-
 ```VB.NET
 	Private newRotationService As MyRotation
 	

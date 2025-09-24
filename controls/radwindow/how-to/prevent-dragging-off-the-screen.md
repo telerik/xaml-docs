@@ -18,9 +18,6 @@ With its default settings, the __RadWindow__ can be dragged off the screen by th
 	RadWindow radWindow = new RadWindow();
 	radWindow.IsRestricted = true;
 ```
-
-
-
 ```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.IsRestricted = True

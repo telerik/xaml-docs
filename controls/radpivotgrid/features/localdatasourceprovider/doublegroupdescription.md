@@ -45,9 +45,6 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription1);
 	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription2);
 ```
-
-
-
 ```VB.NET
 	Dim doubleGroupDescription1 As New DoubleGroupDescription()
 	doubleGroupDescription1.PropertyName = "Quantity"

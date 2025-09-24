@@ -166,11 +166,6 @@ __RadChart__ uses innovative approach to incorporate custom 3D controls and item
 	    this.RadChart1.DefaultView.ChartArea.DataSeries.Add(barSeries);
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub FillSampleChartData()
 	    Dim barSeries As New DataSeries()

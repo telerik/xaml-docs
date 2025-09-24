@@ -69,9 +69,6 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	    e.Compass.IsLeftIndicatorVisible = false;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(sender As Object, e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
@@ -91,11 +88,6 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	    e.Compass.IsTopIndicatorVisible = false;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
@@ -117,9 +109,6 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	    e.Compass.IsRightIndicatorVisible = false;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
@@ -143,9 +132,6 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	    e.Compass.IsBottomIndicatorVisible = false;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
@@ -171,9 +157,6 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	    e.Compass.IsCenterIndicatorVisible = false;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False

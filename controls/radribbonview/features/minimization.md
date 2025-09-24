@@ -49,8 +49,6 @@ To disable the minimization functionality of the __RadRibbonView__ just set the 
 ```C#
 	radRibbonView.IsMinimizable = false;
 ```
-
-
 ```VB.NET
 	radRibbonView.IsMinimizable = False
 ```

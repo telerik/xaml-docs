@@ -40,10 +40,6 @@ In order to be able to communicate with RadGridView, your custom filtering contr
 	    bool IsActive { get; set; }
 	}
 ```
-
-
-
-
 ```VB.NET
 	''' <summary>
 	''' Provides functionality required by all filtering components.
@@ -217,9 +213,6 @@ Here is an example of a custom filtering control that displays two date time pic
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	''' <summary>
 	''' FromDateToDateFilterControl

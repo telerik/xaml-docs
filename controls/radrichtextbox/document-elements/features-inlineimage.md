@@ -66,9 +66,6 @@ Here is an example of how to add an __ImageInline__ element in the code behind.
 	section.Children.Add(paragraph);
 	this.radRichTextBox.Document.Sections.Add(section);
 ```
-
-
-
 ```VB.NET
 
 	Dim section As New Section()
@@ -110,9 +107,6 @@ Here is an example of how to allow the user to select an image and add it to the
         }
     }
 ```
-
-
-
 ```VB.NET
 	Private Sub ImageButton_Click(sender As Object, e As RoutedEventArgs)
 	 Dim openDialog As New OpenFileDialog()

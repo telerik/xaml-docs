@@ -65,11 +65,6 @@ Here is an example of implementing filtering.
 	descriptor.Value = 150;
 	this.radChart.FilterDescriptors.Add(descriptor);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim descriptor As New ChartFilterDescriptor()
 	descriptor.Member = "Quantity"

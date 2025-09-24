@@ -75,9 +75,6 @@ For that purpose, we need to first attach an event handler for the default __Ser
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -110,9 +107,6 @@ Next we need to deserialize the __Geometry__ property after the end of the drop 
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadDiagram_ShapeDeserialized(sender As Object, e As ShapeSerializationRoutedEventArgs)
 	    If TryCast(e.Shape, RadDiagramShape) IsNot Nothing Then
@@ -147,9 +141,6 @@ Now that we have configured the __Geometry__ property serialization, we can go a
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub Default_ItemSerializing(sender As Object, e As SerializationEventArgs(Of IDiagramItem))
 	    If TypeOf e.Entity Is RadDiagramShape Then

@@ -103,8 +103,6 @@ In the following example, the MouseLeftButtonDown event on the shape visualizati
 		}
 	}
 ```
-
-
 ```VB.NET
 	Partial Public Class HighlightShapeOnMouseClick
 		Inherits UserControl

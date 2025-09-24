@@ -141,9 +141,6 @@ Next step is to set up your business model. First you can create an __ItemViewMo
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ItemViewModel
 		Inherits ViewModelBase
@@ -253,9 +250,6 @@ After your __ItemViewModel__ is ready, you can define a collection of items. Cre
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MainViewModel
 		Public Sub New()
@@ -305,9 +299,6 @@ Finally, you can set the __MainViewModel__ as __DataContext__ of your applicatio
 ```C#
 	this.DataContext = new MainViewModel();
 ```
-
-
-
 ```VB.NET
 	Me.DataContext = New MainViewModel()
 ```

@@ -49,9 +49,6 @@ In the [LoadingRowDetails]({%slug radgridview-row-details-programming%}) event h
 	    countries.ItemsSource = GetCountries();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub gridView_LoadingRowDetails(sender As Object, e As GridViewRowDetailsEventArgs)
 	    Dim countries As RadComboBox = TryCast(e.DetailsElement.FindName("rcbCountries"), RadComboBox)

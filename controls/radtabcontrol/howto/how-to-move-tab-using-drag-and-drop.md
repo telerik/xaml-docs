@@ -31,8 +31,6 @@ The same behavior can be enabled/disabled in the code-behind.
 	    radTabControl.AllowDragReorder = true;
 	}
 ```
-
-  
 ```VB.NET
     Private Sub EnableReordering()
         radTabControl.AllowDragReorder = True

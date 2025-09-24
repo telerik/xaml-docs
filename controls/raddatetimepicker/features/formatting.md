@@ -55,9 +55,6 @@ Here is an example:
 ```C#
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo( "de" );
 ```
-
-
-
 ```VB.NET
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("de")
 ```
@@ -79,11 +76,6 @@ Here is an example of defining a custom format for the __RadDateTimePicker's__ i
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM";
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "h tt";
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("en-US")
 	Me.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM"

@@ -32,11 +32,6 @@ The __IExtensibleObject__ interface is implemented by types that allow __IExtens
 	   void Detach(T owner);
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Interface IExtension(Of T As IExtensibleObject(Of T))
 	    Sub Attach(ByVal owner As T)
@@ -73,11 +68,6 @@ In order to utilize the already defined custom tool you need to add it to the __
 	    radChart.DefaultView.ChartArea.Extensions.Clear();
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub UserControl_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim cameraExtension As New CameraExtension()

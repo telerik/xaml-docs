@@ -51,9 +51,6 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	    StyleManager.SetTheme( this.radDocking, new Theme());
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()
@@ -83,9 +80,6 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	    StyleManager.SetTheme(this.radDocking, new RadDockingTheme());
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

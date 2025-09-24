@@ -100,9 +100,6 @@ Step 1: Define new instance of RadDocument and add Section in it:
 	Section section = new Section();
 	document.Sections.Add(section);
 ```
-
-
-
 ```VB.NET
 	Dim document = New RadDocument();
 	Dim section = New Section()
@@ -117,9 +114,6 @@ Step 2: Create list
 ```C#
 	ListStyle list = new ListStyle();
 ```
-
-
-
 ```VB.NET
 	Dim list = new ListStyle()
 ```
@@ -137,9 +131,6 @@ Initially, the list doesn’t have any associated list levels. The possible list
 	    list.Levels.Add(listLevel);
 	}
 ```
-
-
-
 ```VB.NET
 	For i As Integer = 0 To 8
 	    Dim listLevel = New ListLevelStyle()
@@ -161,9 +152,6 @@ Step 4: Customize list level.
 	    list.Levels[levelIndex].Indent = 48 + (levelIndex * 24);
 	}
 ```
-
-
-
 ```VB.NET
 	For levelIndex As Integer = 0 To 8
 	    Dim isEven As Boolean = (levelIndex Mod 2) = 0
@@ -189,9 +177,6 @@ Here is how to add simple list to the document:
 ```C#
 	DocumentList documentList = new DocumentList(list, document);
 ```
-
-
-
 ```VB.NET
 	Dim documentList = New DocumentList(list, document)
 ```
@@ -204,9 +189,6 @@ And how to add custom list:
 	ListStyle newList = document.AddCustomListStyle(list);
 	DocumentList documentList = new DocumentList(newList, document);
 ```
-
-
-
 ```VB.NET
     Dim newList = document.AddCustomListStyle(list)
     Dim documentList = New DocumentList(newList, document)
@@ -230,9 +212,6 @@ Approach 1: Apply the required paragraph properties on your own.
         paragraph.ListLevel = levelIndex;
     }
 ```
-
-
-
 ```VB.NET
 	For levelIndex As Integer = 0 To (list.Levels.Count - 1)
 	    Dim paragraph = New Paragraph()
@@ -256,9 +235,6 @@ Approach 2: Pass the level Index and the paragraph to the DocumentList.AddParagr
 	    documentList.AddParagraph(paragraph, levelIndex);
 	}
 ```
-
-
-
 ```VB.NET
 	For levelIndex As Integer = 0 To list.Levels.Count
 	    Dim paragraph = New Paragraph()

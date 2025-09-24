@@ -31,11 +31,6 @@ On the example below, __RadChart.ItemSource__ is set to a collection of __TradeD
 	    //...
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class TradeData
 	    '....'
@@ -114,11 +109,6 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	Dim seriesMapping As New SeriesMapping()
@@ -219,9 +209,6 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	lineSeries.Add( new DataPoint() { YValue = 176, XValue = new DateTime( 2009, 12, 31 ).ToOADate() } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( lineSeries );
 ```
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'

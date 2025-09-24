@@ -37,9 +37,6 @@ The following properties hold the information about the selection in the __RadDa
 ```C#
 	this.radDateTimePicker.SelectedValue = new DateTime(2010, 1, 5, 10, 0, 0);
 ```
-
-
-
 ```VB.NET
 	Me.radDateTimePicker.SelectedValue = New DateTime(2010, 1, 5, 10, 0, 0)
 ```

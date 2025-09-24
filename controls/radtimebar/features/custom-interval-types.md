@@ -97,8 +97,6 @@ Below you can find a sample custom interval implementation:
 		}
 	}
 ```
-
-
 ```VB.NET
 	Imports Telerik.Windows.Controls.TimeBar
 	Public Class CustomInterval

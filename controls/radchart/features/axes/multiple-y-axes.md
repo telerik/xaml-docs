@@ -105,11 +105,6 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	radChart.SeriesMappings.Add( seriesMapping );
 	radChart.ItemsSource = this.DataContext;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'

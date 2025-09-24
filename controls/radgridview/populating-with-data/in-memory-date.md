@@ -44,9 +44,6 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Car
 	
@@ -103,9 +100,6 @@ The control will be bound to an __ObservableCollection__ of __Car__ objects. Eac
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class RadGridViewSampleData
 	    Public Sub New()

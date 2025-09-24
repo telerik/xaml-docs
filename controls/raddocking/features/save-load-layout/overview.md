@@ -148,9 +148,6 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 	    return xml;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function SaveLayout() As String
 		Dim xml As String
@@ -191,9 +188,6 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 	    return xml;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function SaveLayout() As String
 		Dim xml As String
@@ -298,9 +292,6 @@ In order to load the docking layout you need to do absolutely the same things bu
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub LoadLayout()
 		' Load your layout from the isolated storage.
@@ -329,9 +320,6 @@ In order to load the docking layout you need to do absolutely the same things bu
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub LoadLayout()
 		' Load your layout from the isolated storage.
@@ -395,9 +383,6 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 	
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub SaveLayout(ByVal destination As Stream, ByVal raiseEventsIfNoSerializationTag As Boolean)
 	End Sub

@@ -117,11 +117,6 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class TradeData
 	    Public Property Emission() As String
@@ -483,11 +478,6 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	//Gets trading data
 	this.radChart.ItemsSource = TradeData.GetWeeklyData("MSFT");
 ```
-
-
-
-
-
 ```VB.NET
 	'Gets trading data'
 	Me.radChart.ItemsSource = TradeData.GetWeeklyData("MSFT")
@@ -524,11 +514,6 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	seriesMapping.ItemMappings.Add(itemMapping);
 	this.radChart.SeriesMappings.Add(seriesMapping);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.LegendLabel = "MSFT (Microsoft)"

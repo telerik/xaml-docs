@@ -61,9 +61,6 @@ Now take a look at the code-behind. There is a simple list of integers, which wi
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 
 	Public Partial Class UnboundModeSample

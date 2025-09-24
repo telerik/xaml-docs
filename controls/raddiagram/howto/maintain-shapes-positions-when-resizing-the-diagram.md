@@ -40,8 +40,6 @@ Below you can see this in action. The Window or UserControl is resized and the S
         } 
     }   
 ```
-    
-
 ```VB.NET
     Private Sub RadDiagram_SizeChanged(sender As Object, e As SizeChangedEventArgs)
         If e.PreviousSize IsNot Nothing AndAlso e.PreviousSize.Width <> 0 AndAlso e.PreviousSize.Height <> 0 Then

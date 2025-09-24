@@ -27,9 +27,6 @@ In order to do this, you need to set the __RadRibbonView__'s __TitleBarVisibilit
 ```C#
 	xRibbonView.TitleBarVisibility = Visibility.Collapsed;
 ```
-
-
-
 ```VB.NET
 	xRibbonView.TitleBarVisibility = Visibility.Collapsed;
 ```

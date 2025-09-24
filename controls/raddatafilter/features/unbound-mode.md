@@ -74,11 +74,6 @@ Here is the code-behind for the example. In it you should take notice at the ins
 	        }
 	    }
 ```
-
-
-
-
-
 ```VB.NET
 
 	    Public Sub New()
@@ -132,11 +127,6 @@ Here is also the code for the __Employee__ class, used in the example.
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 
 	Public Class Employee

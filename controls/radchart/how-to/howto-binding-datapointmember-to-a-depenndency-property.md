@@ -69,11 +69,6 @@ Here is how to create object that implements INotifyPropertyChanged in code-behi
 	   }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class MyObject
 	    Implements INotifyPropertyChanged
@@ -116,11 +111,6 @@ Set the DataContext property to List of MyObject class after the InitializeCompo
 ```C#
 	this.DataContext = new List<MyObject>() { new MyObject() };
 ```
-
-
-
-
-
 ```VB.NET
 	Me.DataContext = New List(Of MyObject)() From { _
 	New MyObject() _

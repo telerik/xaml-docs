@@ -99,11 +99,6 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class TradeData
 	    Private _Emission As String
@@ -257,9 +252,6 @@ Take a look at the code snippet below and see how to define custom label format 
 	seriesMapping.ItemMappings.Add( new ItemMapping( "FromDate", DataPointMember.XValue ) );
 	radChart.SeriesMappings.Add( seriesMapping );
 ```
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'

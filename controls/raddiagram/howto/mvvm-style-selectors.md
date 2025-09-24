@@ -43,8 +43,6 @@ Let's start by creating __RectangleNode, EllipseNode__ and __DecisionNode__ clas
 	    public string Content { get; set; }
 	}
 ```
-
-
 ```VB.NET
 	Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
 	
@@ -98,8 +96,6 @@ Next, we need to define the ViewModel that will represent the __RadDiagramConnec
 	    Normal
 	}
 ```
-
-
 ```VB.NET
 	Imports Telerik.Windows.Controls.Diagrams.Extensions.ViewModels
 	
@@ -139,8 +135,6 @@ In this example we will use the __ObservableGraphSourceBase<TNode,TLink>__ class
     {
     }	
 ```
-
-
 ```VB.NET
 	Public Class GraphSource
 		Inherits ObservableGraphSourceBase(Of NodeViewModelBase, Link)
@@ -236,8 +230,6 @@ Let's define the items in the __GraphSource__ to describe the following process 
 		}
 	}
 ```
-
-
 ```VB.NET
 	Public Class GraphSource
 		Inherits ObservableGraphSourceBase(Of NodeViewModelBase, Link)
@@ -303,8 +295,6 @@ Now we can set-up our __RadDiagram__ control to display these items. For that pu
 	    this.xDiagram.GraphSource = DiagramSource;
 	}
 ```
-
-
 ```VB.NET
 	Partial Public Class MainWindow
 		Inherits Window
@@ -353,8 +343,6 @@ As our example defines three different business nodes, we can create a __StyleSe
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Class NodeStyleSelector
 		Inherits StyleSelector
@@ -482,8 +470,6 @@ Now the __RadDiagramShapes__ are properly styled and arranged, but the connectio
 		}
 	}
 ```
-
-
 ```VB.NET
 	Public Class LinkStyleSelector
 		Inherits StyleSelector

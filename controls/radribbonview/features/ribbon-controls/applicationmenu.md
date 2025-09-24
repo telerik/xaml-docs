@@ -54,9 +54,6 @@ In order to add an application menu to your __RadRibbonView__ control you need t
 ```C#
 	this.radRibbonView.ApplicationMenu = new ApplicationMenu();
 ```
-
-
-
 ```VB.NET
 	Me.radRibbonView.ApplicationMenu = New ApplicationMenu()
 ```
@@ -376,8 +373,6 @@ The __ApplicationButtonDoubleClick__ event handler receives two arguments:
 	 	// Do some custom logic here.
 	}
 ```
-
-
 ```VB.NET
 	Private Sub RadRibbonView_ApplicationButtonDoubleClick(sender As Object, e As RadRoutedEventArgs)
 		Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)

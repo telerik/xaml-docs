@@ -44,11 +44,6 @@ After finishing with the changes, it is time to set the style. It can be set onl
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.AxisLineStyle = this.Resources[ "AxisLineStyle" ] as Style;
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.AxisLineStyle = this.Resources[ "AxisLineStyle" ] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.AxisLineStyle = TryCast(Me.Resources("AxisLineStyle"), Style)
 	Me.radChart.DefaultView.ChartArea.AxisY.AxisStyles.AxisLineStyle = TryCast(Me.Resources("AxisLineStyle"), Style)
@@ -117,11 +112,6 @@ The first step is to select a suitable event, where to handle this logic. One po
 ```C#
 	RadChart1.AddHandler(MouseLeftButtonDownEvent, new MouseButtonEventHandler(MouseLeftButtonDownEventHandler), true);
 ```
-
-
-
-
-
 ```VB.NET
 	RadChart1.[AddHandler](MouseLeftButtonDownEvent, New MouseButtonEventHandler(AddressOf MouseLeftButtonDownEventHandler), True)
 ```
@@ -146,10 +136,6 @@ The code, essential to the functionality at hand is listed below:
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 	Public Sub MouseLeftButtonDownEventHandler(sender As Object, e As MouseButtonEventArgs)
 		Dim txtBlock As TextBlock = TryCast(e.OriginalSource, TextBlock)

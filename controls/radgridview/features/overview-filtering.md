@@ -39,9 +39,6 @@ You can achieve the same result if you define your filtering in your code-behind
 	descriptor.Value = "Germany";
 	this.radGridView.FilterDescriptors.Add(descriptor);
 ```
-
-
-
 ```VB.NET
 	Dim descriptor As New FilterDescriptor()
 	descriptor.Member = "Country"

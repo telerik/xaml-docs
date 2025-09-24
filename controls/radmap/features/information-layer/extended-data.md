@@ -72,8 +72,6 @@ In case you are manually generating the shapes inside a layer, you have to manua
 	sofiaEllipse.ExtendedData = sofiaData;
 	this.informationLayer.Items.Add( sofiaEllipse );
 ```
-
-
 ```VB.NET
 	' Create extended property set.'
 	' It can be shared between the number'
@@ -139,8 +137,6 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 	ToolTipService.SetToolTip( sofiaEllipse, tooltip );
 	this.informationLayer.Items.Add( sofiaEllipse );
 ```
-
-
 ```VB.NET
 	Dim propertySet As New ExtendedPropertySet()
 	propertySet.RegisterProperty("Name", "City Name", GetType(String), String.Empty)

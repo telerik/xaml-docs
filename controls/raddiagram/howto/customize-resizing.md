@@ -67,9 +67,6 @@ Now that we've defined the content of our view, we can start describing the cust
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyResizing
 	    Inherits ResizingService
@@ -153,9 +150,6 @@ Since we added two __RadToggleButtons__ in our view, we need to define two __boo
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyResizing
 	    Inherits ResizingService
@@ -248,9 +242,6 @@ Finally, we need to configure the __RadDiagram__ instance to use our custom resi
 	    this.resizeHeight.SetBinding(RadToggleButton.IsCheckedProperty, binding);
 	}
 ```
-
-
-
 ```VB.NET
 	Private newResizingService As MyResizing
 	
@@ -294,9 +285,6 @@ And now we can use the __newResizingService__ instance and register it through t
 	    this.diagram.ServiceLocator.Register<IResizingService>(this.newResizingService);
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()

@@ -143,9 +143,6 @@ Below you can find an implementation of a sample generator that positions every 
 			}
 		}
 ```
-
-
-
 ```VB.NET
 		Public Class TimelineData
 			Public Property [Date]() As DateTime

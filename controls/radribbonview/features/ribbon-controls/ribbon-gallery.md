@@ -361,9 +361,6 @@ The __DeactivatePreview__ event is raised when the mouse cursor leaves the galle
 	 RadGalleryItem selectedItem = gallery.SelectedItem as RadGalleryItem;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub QuickStyles_ActivatePreview(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
 		' Grab the RadRibbonGallery object'

@@ -22,8 +22,6 @@ In case you have a set of elements displayed by the __InformationLayer__, you mi
 	    this.radMap.ZoomLevel = rect.ZoomLevel;
 	}
 ```
-
-
 ```VB.NET
 	Private Sub SetBestView()
 		Dim rect As LocationRect = Me.informationLayer.GetBestView(Me.informationLayer.Items.Cast(Of Object)())

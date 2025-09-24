@@ -242,10 +242,6 @@ To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerIt
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 	Public Class CustomTimeRulerItemStyleSelector
 	 Inherits OrientedTimeRulerItemStyleSelector

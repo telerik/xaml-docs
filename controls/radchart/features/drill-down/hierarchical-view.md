@@ -39,11 +39,6 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class Company
 	    Public Property Name() As String
@@ -67,11 +62,6 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class ModelSalesCollection
 	    Inherits List(Of ModelSales)
@@ -109,11 +99,6 @@ Here is an example of a data with two levels of hierarchy. The data contains the
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class ModelSales
 	    Public Property Model() As String
@@ -156,11 +141,6 @@ Here is a method that generates some sample data for you.
 	    };
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Function GetChartData() As List(Of Company)
 	    Return New List(Of Company)() From { _

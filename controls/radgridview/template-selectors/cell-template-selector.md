@@ -49,9 +49,6 @@ To do so follow these steps:
 	    public DataTemplate smallStadium { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MyCellTemplateSelector
 	    Inherits DataTemplateSelector

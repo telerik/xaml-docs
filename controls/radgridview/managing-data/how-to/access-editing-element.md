@@ -30,9 +30,6 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	    If DirectCast(e.Column.Header, String) = "Name" Then
@@ -61,9 +58,6 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	    If DirectCast(e.Column.Header, String) = "Name" Then

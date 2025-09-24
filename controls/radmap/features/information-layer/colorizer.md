@@ -330,8 +330,6 @@ Another approach that extends the previous one is to handle the __PrepareComplet
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Private Sub ColorMeasureScale_PrepareCompleted(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Map.ShapeColorizerEventArgs)
 	 Dim scale As ColorMeasureScale = TryCast(sender, ColorMeasureScale)

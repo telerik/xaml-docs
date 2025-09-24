@@ -62,11 +62,6 @@ Here is an example of implementing sorting.
 	descriptor.SortDirection = ListSortDirection.Ascending;
 	this.radChart.SortDescriptors.Add(descriptor);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim descriptor As New ChartSortDescriptor()
 	descriptor.Member = "Title"

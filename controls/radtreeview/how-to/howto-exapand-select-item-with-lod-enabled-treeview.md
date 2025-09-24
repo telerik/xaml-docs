@@ -117,8 +117,6 @@ The data source for the radtreeview will be consisted of __DataItems__, only.
 	        }
 	    }
 ```
-
-
 ```VB.NET
 	Public Class DataItem
 	        Inherits ViewModelBase
@@ -176,8 +174,6 @@ The actual loading on demand of the business items can be implemented in the get
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public ReadOnly Property Children() As List(Of DataItem)
 	        Get
@@ -244,9 +240,6 @@ The next step is to implement the custom logic for creating the path in order to
 	    return path.TrimEnd('\\');
 	}
 ```
-
-
-
 ```VB.NET
 	
 	    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)

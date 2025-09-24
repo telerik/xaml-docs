@@ -370,9 +370,6 @@ So we basically need a class that provides:
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Imports Telerik.Windows.DragDrop
 	Imports Telerik.Windows.Controls
@@ -500,11 +497,6 @@ Now let's attach handlers for the __DragDropManager__ events listed above. We'll
 	{
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	'attaching new DragDropManager event handlers'
 	Private Sub SubscribeToDragDropEvents()
@@ -604,9 +596,6 @@ Once we do so, we can start implementing our drag/drop logic. And we'll always h
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Imports Telerik.Windows.Controls
 
@@ -694,9 +683,6 @@ We can use this definition to also pass and keep the drag operation details in t
 	    e.Handled = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnDragInitialize(sender As Object, e As DragInitializeEventArgs)
 		Dim details As New DropIndicationDetails()
@@ -732,9 +718,6 @@ Then we can implement the __GiveFeedback__ event handler, which is quite straigh
 	    e.Handled = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnGiveFeedback(sender As Object, e As Telerik.Windows.DragDrop.GiveFeedbackEventArgs)
 		e.SetCursor(Cursors.Arrow)
@@ -777,9 +760,6 @@ As the data object passed by a drag operation started in __RadTreeView__ should 
 	    e.Handled = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim options As TreeViewDragDropOptions = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -838,9 +818,6 @@ Finally we'll have to implement the actual drop logic and we'll also have to upd
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim options As TreeViewDragDropOptions = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -886,9 +863,6 @@ In order to configure the __RadTreeView__ to process the drop of an item coming 
 ```C#
 	DragDropManager.AddDropHandler(allProductsView, OnDrop);
 ```
-
-
-
 ```VB.NET
 	DragDropManager.AddDropHandler(allProductsView, OnDrop)
 ```
@@ -916,9 +890,6 @@ In the handler you need to get the dragged data, find the position where the ite
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Dim destinationItems As IList = Nothing
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
@@ -1012,9 +983,6 @@ And to make the dragging operation more informative, we can also subscribe to th
 	    return DropPosition.Inside;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnItemDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim item = TryCast(e.OriginalSource, FrameworkElement).ParentOfType(Of RadTreeViewItem)()

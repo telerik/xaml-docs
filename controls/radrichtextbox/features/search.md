@@ -33,11 +33,6 @@ The simplest scenario – finding a string in the content of the document can be
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub SelectAllMatches(ByVal toSearch As String)
 	 Me.radRichTextBox.Document.Selection.Clear() ' this clears the selection before processing
@@ -60,11 +55,6 @@ You can use all kind of regular expressions, such as __“(asp|silverlight)\s*co
 ```C#
 	toSearch = Regex.Escape(toSearch);
 ```
-
-
-
-
-
 ```VB.NET
 	toSearch = Regex.Escape(toSearch)
 ```
@@ -81,11 +71,6 @@ Selecting the results of the search is particularly useful, as most formatting c
 	this.radRichTextBox.ChangeFontSize(Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
 	this.radRichTextBox.ChangeFontFamily(new FontFamily("Comic Sans MS")); // will change the font family of the spans, containing these words.
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray) \' will highlight all selected words in LightGray
 	Me.radRichTextBox.ChangeFontSize(Unit.PointToDip(32)) \' will increase the font size of the words to 30 DIP
@@ -101,11 +86,6 @@ Most of the time, you would like to remove the selection at the end of the opera
 ```C#
 	this.radRichTextBox.Document.Selection.Clear();
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radRichTextBox.Document.Selection.Clear()
 ```
@@ -137,11 +117,6 @@ On a side note, the find and select functionality can be extended in order to im
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
 	 Me.radRichTextBox.Document.Selection.Clear() \' this clears the selection before processing

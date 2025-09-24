@@ -64,9 +64,6 @@ For example, you should attach to the __SelectionChanged__ event and in the even
 	    RadTreeViewItem item = selectedItems[ 0 ] as RadTreeViewItem;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
 	    ' Get a reference to the treeview '
@@ -103,9 +100,6 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 	    RadTreeViewItem previousSiblingItem = item.PreviousSiblingItem;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
 	    ' Get a reference to the treeview '
@@ -203,9 +197,6 @@ If you want to get the parent item of the currently selected item, you should us
 	    RadTreeViewItem rootItem = item.RootItem;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
 	    ' Get a reference to the treeview '

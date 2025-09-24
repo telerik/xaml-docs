@@ -100,11 +100,6 @@ This help article will show you how to show PointMarks and Labels for specific p
 	   }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class Data
 	    Implements INotifyPropertyChanged
@@ -258,11 +253,6 @@ Add a new chart declaration to your XAML:
 	    }
 	};
 ```
-
-
-
-
-
 ```VB.NET
 	Dim exportData As New List(Of Data)()
 	Dim baseDate As New Date(2011, 1, 1)

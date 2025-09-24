@@ -45,8 +45,6 @@ The `RadDiagram.Print()` method allows you to print the content of the Diagrammi
 ```C#
     xDiagram.Print(new RadDiagramPrintSettings("My Diagramming Solution",new Thickness(22,15,22,15)));		  
 ```
-	
-
 ```VB.NET
     xDiagram.Print(New RadDiagramPrintSettings("My Diagramming Solution", New Thickness(22, 15, 22, 15)))		  
 ```
@@ -59,8 +57,6 @@ The `RadDiagramPrintSettings`'s constructor have an optional parameter that defi
 ```C#
 	xDiagram.Print(new RadDiagramPrintSettings("My Diagramming Solution",new Thickness(22,15,22,15), 300));
 ```
-
-
 ```VB.NET
 	xDiagram.Print(New RadDiagramPrintSettings("My Diagramming Solution", New Thickness(22, 15, 22, 15), 300))
 ```
@@ -99,8 +95,6 @@ Now let's add a Print `RadButton` in our layout and handle its `Click` event to 
         this.diagram.Print();
     }
 ```
-
-
 ```VB.NET
     Private Sub Print(sender As Object, e As RoutedEventArgs)
         Me.diagram.Print()
@@ -213,8 +207,6 @@ The `RadDiagramPrintPreview` is a stand-alone control which you can use to previ
 		printPreviewWindow.ShowDialog();
 	}	
 ```
-	
-
 ```VB.NET
 	Private Sub OpenPrintPreview(sender As Object, e As RoutedEventArgs)
 		Dim printPreviewWindow = New Telerik.Windows.Controls.RadWindow()

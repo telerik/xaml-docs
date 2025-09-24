@@ -41,11 +41,6 @@ For example, you can change the appearance of a __BarSeries__ in the following w
 	barDefinition.Appearance.Fill = new SolidColorBrush( Colors.Orange );
 	this.radChart.DefaultSeriesDefinition = barDefinition;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim barDefinition As New BarSeriesDefinition()
 	barDefinition.Appearance.Fill = New SolidColorBrush(Colors.Orange)
@@ -108,11 +103,6 @@ The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyl
 ```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = this.Resources[ "SplineAreaStyle" ] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = TryCast(Me.Resources("SplineAreaStyle"), Style)
 ```
@@ -138,10 +128,6 @@ Here is an example:
 ```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = this.Resources[ "BarStyle" ] as Style;
 ```
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = TryCast(Me.Resources("BarStyle"), Style)
 ```
@@ -312,11 +298,6 @@ Here is an example:
 	line.Appearance.StrokeThickness = 1;
 	line.ItemStyle = this.Resources["MyDoubleLineStyle"] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	RadChart1.DefaultSeriesDefinition = line
 	line.Appearance.Stroke = New SolidColorBrush(System.Windows.Media.Colors.Blue)

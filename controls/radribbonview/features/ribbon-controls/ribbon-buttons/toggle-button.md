@@ -54,10 +54,6 @@ Besides the __Click__ event, the __RadRibbonToggleButton__ control exposes two a
 	{
 	}
 ```
-
-
-
-
 ```VB.NET
 	Private Sub RadRibbonToggleButton_Checked(sender As Object, e As RoutedEventArgs)
 	

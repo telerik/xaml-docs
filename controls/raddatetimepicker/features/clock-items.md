@@ -64,8 +64,6 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 	    return times;
 	}
 ```
-
-  
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()

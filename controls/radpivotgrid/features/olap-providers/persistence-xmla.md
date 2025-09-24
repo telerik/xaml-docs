@@ -49,9 +49,6 @@ So lets create a simple class that we'll use to save and load DataProviderSettin
 	    public PivotAxis AggregatesPosition { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	<DataContract> _
 	Public Class DataProviderSettings
@@ -170,9 +167,6 @@ The next step is to create a new class, which implements __Telerik.Windows.Persi
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public MustInherit Class DataProviderValueProvider
 		Implements IValueProvider
@@ -265,9 +259,6 @@ So the last step is to register a persistence provider and implement the logic t
 	PersistenceManager manager = new PersistenceManager();
 	manager.Load(this.pivotGrid.DataProvider, this.stream);
 ```
-
-
-
 ```VB.NET
 	Dim stream As Stream = New MemoryStream()
 	

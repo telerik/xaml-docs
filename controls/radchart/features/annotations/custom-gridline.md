@@ -58,11 +58,6 @@ Here is an example:
 	gridline.StrokeThickness = 2;
 	this.radChart.DefaultView.ChartArea.Annotations.Add(gridline);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim gridline As New CustomGridLine()
 	gridline.YIntercept = 150

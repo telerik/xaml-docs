@@ -51,9 +51,6 @@ To determine which items are to be removed, use the __SelectedItems__ collection
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim itemsToRemove As New ObservableCollection(Of Employee)()
@@ -94,9 +91,6 @@ Here is an example of a sample deleting logic implemented in the event handler f
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub Button2_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    If Me.radGridView.SelectedItems.Count = 0 Then

@@ -90,11 +90,6 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 	 public MyNorthwindContext() : base(new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)){}
 	}
 ```
-
-
-
-
-
 ```VB.NET
 
 	Public Class MyNorthwindContext

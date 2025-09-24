@@ -80,11 +80,6 @@ The following example demonstrates how to use the common properties in XAML and 
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0";
 	radChart.DefaultView.ChartArea.AxisY.Title = "Ampere [A]";
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = True
@@ -105,8 +100,6 @@ The following example demonstrates how to use the common properties in XAML and 
 ```C#
 	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5);
 ```
-
-
 ```VB.NET
 	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5)
 ```

@@ -61,9 +61,6 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.SortOrder = SortOrder.Descending;
 ```
-
-
-
 ```VB.NET
 	Dim propGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propGroupDescription.PropertyName = "Name"
@@ -103,9 +100,6 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	dateTimeGroupDescription.PropertyName = "Date";
 	dateTimeGroupDescription.SortOrder = SortOrder.None;
 ```
-
-
-
 ```VB.NET
 	Dim propGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propGroupDescription.PropertyName = "Name"
@@ -164,9 +158,6 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	dateTimeGroupDescription.SortOrder = SortOrder.Descending;
 	dateTimeGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
 ```
-
-
-
 ```VB.NET
 	Dim propGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propGroupDescription.PropertyName = "Name"

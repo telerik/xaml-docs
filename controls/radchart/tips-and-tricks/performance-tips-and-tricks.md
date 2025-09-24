@@ -64,8 +64,6 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Class AddRangeObservableCollection(Of T)
 	    Inherits ObservableCollection(Of T)

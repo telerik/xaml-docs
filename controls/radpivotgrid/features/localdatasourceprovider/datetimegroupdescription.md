@@ -51,9 +51,6 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2);
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription);
 ```
-
-
-
 ```VB.NET
 	Dim dateTimeGroupDescription1 As New DateTimeGroupDescription()
 	dateTimeGroupDescription1.PropertyName = "Date"
@@ -103,9 +100,6 @@ The solution of this problem is to use AddingContainerNode event of LocalDataSou
 	descriptionProvider.AddingContainerNode += LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded;
 	dataProvider.FieldDescriptionsProvider = descriptionProvider;
 ```
-
-
-
 ```VB.NET
 	Dim dataProvider = New LocalDataSourceProvider()
 	dataProvider.ItemsSource = New Source()
@@ -138,9 +132,6 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date
@@ -178,9 +169,6 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date
@@ -210,9 +198,6 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date
@@ -238,9 +223,6 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date

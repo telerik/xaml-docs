@@ -53,11 +53,6 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 	    return newStyle;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -152,11 +147,6 @@ The following sample demonstrates a more complex logic inside the delegate - how
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Partial Public Class MainPage
 	    Inherits UserControl

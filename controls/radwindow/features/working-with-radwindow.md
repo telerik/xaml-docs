@@ -25,9 +25,6 @@ After the reference is available, you can declare a __RadWindow__. Here is an ex
 	radWindow.Width = 400;
 	radWindow.Height = 300;
 ```
-
-
-
 ```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.Width = 400
@@ -47,9 +44,6 @@ Call the __Show()__ method of the __RadWindow__ instance to open it as a __norma
 ```C#
 	radWindow.Show();
 ```
-
-
-
 ```VB.NET
 	radWindow.Show()
 ```
@@ -61,9 +55,6 @@ Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a _
 ```C#
 	radWindow.ShowDialog();
 ```
-
-
-
 ```VB.NET
 	radWindow.ShowDialog()
 ```
@@ -89,9 +80,6 @@ If you have a window-specific content, use the __Content__ property.
 	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
 	radWindow.Content = grid;
 ```
-
-
-
 ```VB.NET
 	Dim grid As New Grid()
 	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
@@ -115,9 +103,6 @@ If you want to share a common layout structure for the content of multiple windo
 ```C#
 	radWindow.ContentTemplate = this.Resources["WindowContentTemplate"] as DataTemplate;
 ```
-
-
-
 ```VB.NET
 	radWindow.ContentTemplate = TryCast(Me.Resources("WindowContentTemplate"), DataTemplate)
 ```

@@ -61,8 +61,6 @@ You can use it to set  the __Palette__ property of RadColorPaletteView or __Head
 	RadColorSelector colorSelector = new RadColorSelector();
 	colorSelector.MainPalette = ColorPreset.Office;
 ```
-
-
 ```VB.NET
 		Dim colorPaletteView As New RadColorPaletteView()
 		colorPaletteView.Palette = ColorPreset.Office

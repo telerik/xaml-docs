@@ -34,8 +34,6 @@ Below you can find a sample weekends generator implementation:
 	  }
 	}
 ```
-
-		
 ```VB.NET
 	Imports Telerik.Windows.Controls
 	Imports Telerik.Windows.Controls.TimeBar

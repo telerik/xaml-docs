@@ -35,9 +35,6 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 ```C#
 	this.Panel.MoveBy(2);
 ```
-
-
-
 ```VB.NET
 	Me.Panel.MoveBy(2)
 ```

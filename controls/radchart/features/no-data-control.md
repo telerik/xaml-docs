@@ -32,11 +32,6 @@ If you don't want to use __No Data__ message, just set __ChartArea.IsNoDataMessa
 ```C#
 	this.radChart.DefaultView.ChartArea.NoDataString = "Custom 'No Data' message";
 ```
-
-
-
-
-
 ```VB.NET
 	Me.telerikChart.DefaultView.ChartArea.NoDataString = "Custom 'No Data' message"
 ```

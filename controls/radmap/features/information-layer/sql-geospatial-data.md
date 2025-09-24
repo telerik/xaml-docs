@@ -152,8 +152,6 @@ If you use *Wcf Data Service* or *Domain Service* in your Silverlight applicatio
 	  }
 	}
 ```
-
-
 ```VB.NET
 	Public Class DataBaseContext
 	      Inherits Database1Entities1

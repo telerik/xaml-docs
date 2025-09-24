@@ -49,10 +49,6 @@ The code snippets below show how to subscribe for those events:
 	clubsGrid.GroupRowIsExpandedChanged += clubsGrid_GroupRowIsExpandedChanged;
 	clubsGrid.GroupRowIsExpandedChanging += clubsGrid_GroupRowIsExpandedChanging;
 ```
-
-
-
-
 ```VB.NET
 	AddHandler clubsGrid.Grouping, AddressOf clubsGrid_Grouping
 	AddHandler clubsGrid.Grouped, AddressOf clubsGrid_Grouped
@@ -102,10 +98,6 @@ For example, you can use the __Grouping__ event to prevent the user from adding 
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_Grouping(sender As Object, e As GridViewGroupingEventArgs)
 	    If e.Action = GroupingEventAction.Place AndAlso e.Index > 0 Then
@@ -158,9 +150,6 @@ For example, you can use the __Grouped__ event to get the column that is grouped
 	    MessageBox.Show("The GridView was grouped by column: " + column.Header.ToString());
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_Grouped(sender As Object, e As GridViewGroupedEventArgs)
 	    Dim column As GridViewDataColumn = TryCast(DirectCast(e.GroupDescriptor, Telerik.Windows.Controls.GridView.ColumnGroupDescriptor).Column, GridViewDataColumn)
@@ -188,10 +177,6 @@ For example, you can use the __GroupRowIsExpandedChanging__ event like so.
 	    e.Cancel = true;
 	}
 ```
-
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_GroupRowIsExpandedChanging(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowCancelEventArgs)
 	    e.Cancel = True
@@ -226,10 +211,6 @@ For example, you can use the __GroupRowIsExpandedChanged__ event to get the expa
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_GroupRowIsExpandedChanged(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowEventArgs)
 	    Dim expandedGroup As GridViewGroupRow = TryCast(e.Row, GridViewGroupRow)

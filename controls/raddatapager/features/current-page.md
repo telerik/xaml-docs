@@ -36,10 +36,6 @@ Before getting to the XAML code for the example you'll have to first create a co
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 
 	Public Class IndexToNumberConverter

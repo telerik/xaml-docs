@@ -59,9 +59,6 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Imports Telerik.Windows.Controls
 

@@ -43,14 +43,9 @@ Before proceeding further with this tutorial you need to create a new applicatio
 ```C#
 	NorthwindEntities dbContext2 = new NorthwindEntities(new Uri("Enter your service address here"));
 ```
-
-
-
 ```VB.NET
 	Private dbContext As New NorthwindEntities(New Uri("GridViewDataService.svc", UriKind.Relative))
 ```
-
-
 
 ```VB.NET
 	Private dbContext2 As New NorthwindEntities(New Uri("Enter your service address here"))
@@ -75,9 +70,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	    this.radGridView.ItemsSource = customers;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub BeginRequest()
 	    Dim query As DataServiceQuery(Of Customer) = dbContext.CreateQuery(Of Customer)("Customers")
@@ -96,9 +88,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 ```C#
 	this.radGridView.ItemsSource = dbContext.Customers.Execute().ToList();
 ```
-
-
-
 ```VB.NET
 	Me.radGridView.ItemsSource = dbContext.Customers.Execute().ToList()
 	'
@@ -121,9 +110,6 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	{
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	End Class
@@ -153,9 +139,6 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
@@ -185,9 +168,6 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
@@ -217,14 +197,9 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    this.Customers.Add(c);
 	}
 ```
-
-
-
 ```VB.NET
 	northwindEntity.Customers.BeginExecute(Function(result As IAsyncResult) EntitiesLoaded(Of Customer)(result, Me.Customers), northwindEntity.Customers)
 ```
-
-
 
 ```VB.NET
 	For Each c As Customer In northwindEntity.Customers.Execute()
@@ -248,9 +223,6 @@ And here is the code for the __EntitiesLoaded__method:{% endif %}
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 	    Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))

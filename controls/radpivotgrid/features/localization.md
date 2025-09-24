@@ -38,9 +38,6 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 	LocalizationManager.Manager = new CustomLocalizationManager();
 	InitializeComponent();
 ```
-
-
-
 ```VB.NET
 	LocalizationManager.Manager = New CustomLocalizationManager()
 	InitializeComponent()
@@ -217,9 +214,6 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class CustomLocalizationManager
 		Inherits LocalizationManager

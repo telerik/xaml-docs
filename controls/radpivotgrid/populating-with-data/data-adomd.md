@@ -87,9 +87,6 @@ You can also create an object of type __AdomdDataProvider__ in the code behind a
 	this.radPivotGrid.DataProvider = adomdDataProvider;
 	this.radPivotFieldList.DataProvider = adomdDataProvider;
 ```
-
-
-
 ```VB.NET
 	Dim adomdDataProvider As New AdomdDataProvider()
 	
@@ -126,9 +123,6 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	AdomdDataProvider adomdDataProvider = new AdomdDataProvider();
 	adomdDataProvider.ConnectionSettings = connectionSettings;
 ```
-
-
-
 ```VB.NET
 	Dim connectionSettings As New AdomdConnectionSettings()
 	connectionSettings.Cube = "Adventure Works"
@@ -196,9 +190,6 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	adomdDataProvider.AggregateDescriptions.Add(aggregateDescription1);
 	adomdDataProvider.EndInit();
 ```
-
-
-
 ```VB.NET
 	Dim rowGroupDescription1 As New AdomdGroupDescription()
 	rowGroupDescription1.MemberName = "[Date].[Calendar Year]"
@@ -243,9 +234,6 @@ The __AdomdFilterDescription__ is used to filter the data that will be included 
 	filterDescription.MemberName = "[Date].[Calendar Year]";
 	filterDescription.Condition = condition;
 ```
-
-
-
 ```VB.NET
 	Dim condition As New OlapSetCondition()
 	condition.Comparison = SetComparison.Includes
@@ -314,9 +302,6 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	topFilterDescription.Levels.Add(levelFilterDescription1);
 	topFilterDescription.Levels.Add(levelFilterDescription2);
 ```
-
-
-
 ```VB.NET
 	Dim topFilterDescription As New AdomdFilterDescription()
 	topFilterDescription.MemberName = "[Date].[Calendar]"

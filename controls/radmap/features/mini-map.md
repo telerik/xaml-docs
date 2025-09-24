@@ -83,8 +83,6 @@ Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadE
 	    this.MiniMap1.Height = e.NewSize.Height * MiniMapHeightScaleFactor;
 	}
 ```
-
-
 ```VB.NET
 	Private Const MiniMapWidthScaleFactor As Double = 0.15
 	Private Const MiniMapHeightScaleFactor As Double = 0.2

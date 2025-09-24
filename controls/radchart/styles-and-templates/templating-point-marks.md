@@ -78,11 +78,6 @@ After that set the created __PointMark__ style to the __DefaultSeriesDefinition_
 	this.radChart.DefaultSeriesDefinition = new LineSeriesDefinition();
 	this.radChart.DefaultSeriesDefinition.PointMarkItemStyle = this.Resources["PointMarkStyle"] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultSeriesDefinition = New LineSeriesDefinition()
 	Me.radChart.DefaultSeriesDefinition.PointMarkItemStyle = TryCast(Me.Resources("PointMarkStyle"), Style)

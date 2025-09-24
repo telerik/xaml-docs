@@ -92,8 +92,6 @@ Now we will create a sample polyline and add it to the first information layer. 
         this.BuildLines(polyline);
     }
 ```
-
-
 ```VB.NET
 Private initialized As Boolean
 
@@ -178,8 +176,6 @@ And now to the essential part of our scenario. Add a Line over each segment of t
 		}
 	}
 ```
-
-
 ```VB.NET
 	Private Sub BuildLines(ByVal polyline As MapPolyline)
 		For i As Integer = 0 To polyline.Points.Count - 2
@@ -244,8 +240,6 @@ In event's body you check whether the selected shape is line or the whole polyli
         }
     } 
 ```
-
-
 ```VB.NET
 	Private Sub SetDefaultStyle(ByVal shape As MapShape)
 				If TypeOf shape Is MapLine Then

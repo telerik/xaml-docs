@@ -53,9 +53,6 @@ You can also create an object of type __QueryableDataProvider__ in the backgroun
 	this.radPivotGrid1.DataProvider = queryableDataProvider;
 	this.radPivotFieldList1.DataProvider = queryableDataProvider;
 ```
-
-
-
 ```VB.NET
 	Dim queryableDataProvider As New QueryableDataProvider()
 	Me.radPivotGrid1.DataProvider = queryableDataProvider
@@ -74,9 +71,6 @@ The __QueryableDataProvider__ has *Source* property and it is mandatory to set i
 	this.radPivotGrid1.DataProvider = queryableDataProvider;
 	this.radPivotFieldList1.DataProvider = queryableDataProvider;
 ```
-
-
-
 ```VB.NET
 	Dim queryableDataProvider As New QueryableDataProvider()
 	queryableDataProvider.Source = MyCollection
@@ -123,9 +117,6 @@ Here's how to define the __RowGroupDescriptions__ in your application:
 	    queryableDataProvider.RowGroupDescriptions.Add(orderDateCountryGroupDescription);
 	};
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
@@ -162,9 +153,6 @@ Here's how to define the __ColumnGroupDescriptions__ in your application:
 	doubleGroupDescription.PropertyName = "Freight";
 	queryableDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription);
 ```
-
-
-
 ```VB.NET
 	Dim doubleGroupDescription As New DoubleGroupDescription()
 	doubleGroupDescription.PropertyName = "Freight"
@@ -202,9 +190,6 @@ Here's how to define the __AggregateDescriptions__ in your application:
 	    queryableDataProvider.AggregateDescriptions.Add(shipViaAggregateDescription);
 	};
 ```
-
-
-
 ```VB.NET
 	Dim freightAggregateDescription = New QueryablePropertyAggregateDescription()
 	freightAggregateDescription.PropertyName = "Freight"
@@ -248,9 +233,6 @@ In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDesc
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub QueryableDataProvider_PrepareDescriptionForField(sender As Object, e As Telerik.Pivot.Core.PrepareDescriptionForFieldEventArgs)
 		Dim description = TryCast(e.Description, QueryablePropertyAggregateDescription)
@@ -286,9 +268,6 @@ In order to set the __IgnoreNullValues__ to true for all __PropertyAggregateDesc
 	
 	queryableDataProvider.FilterDescriptions.Add(freightFilterDescription);
 ```
-
-
-
 ```VB.NET
 	Dim freightFilterDescription = New QueryablePropertyFilterDescription()
 	freightFilterDescription.PropertyName = "Freight"

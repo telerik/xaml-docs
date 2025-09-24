@@ -50,11 +50,6 @@ The following code creates the Chart part of the PDF document:
 	   section.Blocks.Add(paragraph);
 	   document.Sections.Add(section);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim section As New Telerik.Windows.Documents.Model.Section()
 	Dim paragraph As New Telerik.Windows.Documents.Model.Paragraph()
@@ -110,11 +105,6 @@ Now that the document model is ready, you can add a Button that will function as
 	            }
 	        }
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub Export_Click(sender As Object, e As System.Windows.RoutedEventArgs)
 	    Dim dialog As New SaveFileDialog()

@@ -46,11 +46,6 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
         }
     }
 ```
-
-
-
-
-
 ```VB.NET
     Dim ofd As New OpenFileDialog()
     ofd.Filter = "Xaml Files|*.xaml"
@@ -78,11 +73,6 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
         }
     }
 ```
-
-
-
-
-
 ```VB.NET
     Dim ofd As New OpenFileDialog()
     ofd.Filter = "Xaml Files|*.xaml"
@@ -113,11 +103,6 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
         }
     }
 ```
-
-
-
-
-
 ```VB.NET
     Dim sfd As New SaveFileDialog()
     sfd.Filter = "Xaml Files|\*.xaml"

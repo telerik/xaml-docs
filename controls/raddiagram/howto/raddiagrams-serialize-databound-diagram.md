@@ -103,9 +103,6 @@ Let's first create a proper ViewModels. Do not forget to create parameterless co
 	    public string Id { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class OrgItem
 	    Inherits HierarchicalNodeViewModel
@@ -190,9 +187,6 @@ Then our GraphSource should look like this:
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class GraphSource
 	    Inherits SerializableGraphSourceBase(Of OrgItem, OrgLink)
@@ -306,9 +300,6 @@ In code-behid we can populate the __RadDiagram.GraphSource__ and use a counter t
 		this.xDiagram.GraphSource = source;
 	}	
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -372,9 +363,6 @@ Fianlly, we have to define the __RadDiagram CommandBindings__ execution methods:
 	    e.CanExecute = this.xDiagram.Items.Count > 0;
 	}
 ```
-
-
-
 ```VB.NET
 	Private diagramXMLString As String
 	Private Sub CommandBinding_Executed_Save(sender As Object, e As ExecutedRoutedEventArgs)

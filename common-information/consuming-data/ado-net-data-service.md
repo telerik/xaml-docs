@@ -91,9 +91,6 @@ Making a call to an ADO.NET Data Service is a simple process. Here is a sample c
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Partial Class MainWindow
 		Inherits Window

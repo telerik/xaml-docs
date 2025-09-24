@@ -28,8 +28,6 @@ The __IsIndeterminate__ property specifies whether the control is in __InDetermi
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.IsIndeterminate = false;
 ```
-
-
 ```VB.NET
 	Dim progressBar As New RadProgressBar()
 	progressBar.IsIndeterminate = False
@@ -47,8 +45,6 @@ The __IsIndeterminate__ property specifies whether the control is in __InDetermi
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.IsIndeterminate = true;
 ```
-
-
 ```VB.NET
 	Dim progressBar As New RadProgressBar()
 	progressBar.IsIndeterminate = True

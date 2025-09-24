@@ -85,11 +85,6 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 	radChart.DefaultView.ChartArea.AxisY.Title="Ampere [A]";
 	//....
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'

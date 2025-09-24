@@ -24,9 +24,6 @@ If you have a window-specific header, use the __Header__ property.
 	RadWindow radWindow = new RadWindow();
 	radWindow.Header = "My RadWindow";
 ```
-
-
-
 ```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.Header = "My RadWindow"
@@ -50,9 +47,6 @@ If you want to share a common icon layout structure for the content of multiple 
 	RadWindow radWindow = new RadWindow();
 	radWindow.HeaderTemplate = this.Resources["WindowHeaderTemplate"] as DataTemplate;
 ```
-
-
-
 ```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.HeaderTemplate = TryCast(Me.Resources("WindowHeaderTemplate"), DataTemplate)

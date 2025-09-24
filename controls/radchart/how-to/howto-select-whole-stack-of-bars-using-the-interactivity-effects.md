@@ -91,11 +91,6 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Partial Public Class MainPage
 	    Inherits UserControl

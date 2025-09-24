@@ -49,8 +49,6 @@ Another approach is to add the new __SortDescriptor__ object (instead of __Colum
 	descriptor.Member = "Title";
 	descriptor.SortDirection = ListSortDirection.Ascending;
 ```
-
-
 ```VB.NET
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "Title"

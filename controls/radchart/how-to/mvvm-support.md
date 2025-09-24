@@ -61,11 +61,6 @@ The Telerik __RadChart__ control can be used with great success with the __Model
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class Person
 	    Implements INotifyPropertyChanged
@@ -200,11 +195,6 @@ Create a new class named __PersonViewModel__, which implements the __INotifyProp
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class PersonViewModel
 	    Implements INotifyPropertyChanged
@@ -338,11 +328,6 @@ There are a few helper methods. The __UpdateGradeColor__ method is used to retur
 	    radChart.ItemsSource = this.GetData();
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub MVVM_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    radChart.DefaultView.ChartArea.AxisY.AutoRange = False
@@ -381,11 +366,6 @@ Here is the code for the __GetData()__ method, which creates the mockup data:
 	    return modelList;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Function GetData() As List(Of PersonViewModel)
         Dim rand As Random = New Random(DateTime.Now.Millisecond)
@@ -432,11 +412,6 @@ Here is the method that will be passed to the delegate.
 	    return newStyle;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Function BuildCustomItemStyle(item As Control, style As Style, point As DataPoint, dataSeries As DataSeries) As Style
 	    If TryCast(item, BaseChartItem) Is Nothing Then
@@ -460,11 +435,6 @@ To pass this method to the __RadChart__ use its __CustomItemStyleDelegate__ prop
 ```C#
 	this.radChart.CreateItemStyleDelegate = this.BuildCustomItemStyle;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.CreateItemStyleDelegate = Me.BuildCustomItemStyle
 ```
@@ -537,11 +507,6 @@ Don't forget to apply the Style to the SeriesItemLabelStyle property of the Seri
 ```C#
 	radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["MySeriesItemLabel_Style"] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = TryCast(Me.Resources("MySeriesItemLabel_Style"), Style)
 ```

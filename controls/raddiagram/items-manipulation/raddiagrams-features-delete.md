@@ -29,8 +29,6 @@ You can remove RadDiagramItems in code behind by using the __RadDiagram.Items__ 
 	this.diagram.Items.RemoveAt(3);
 	this.diagram.Items.Remove(this.diagram.SelectedItems);
 ```
-
-
 ```VB.NET
 	Me.diagram.Items.RemoveAt(3)
 	Me.diagram.Items.Remove(Me.diagram.SelectedItems)

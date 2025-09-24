@@ -82,8 +82,6 @@ Here it is an example:
 	
 	this.visualizationLayer.Items.Add(ellipse);
 ```
-
-
 ```VB.NET
 	Dim ellipse As New EllipseData() With { _
 		.Location = New Location(43.4457539183824, 23.2927663758679), _
@@ -142,8 +140,6 @@ The most important properties of the `LineData` class are the `Point1` and `Poin
 	
 	this.visualizationLayer.Items.Add(line);
 ```
-
-
 ```VB.NET
 	Dim line As New LineData() With { _
 		.Point1 = New Location(42.6957539183824, 23.3327663758679), _
@@ -258,8 +254,6 @@ Here is an example that uses a `PathGeometryData` which in turn holds a `PathFig
 	
 	this.visualizationLayer.Items.Add(path);
 ```
-
-
 ```VB.NET
 	Dim path As New PathData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -369,8 +363,6 @@ As of **R2 2022 SP1** you can also use an instance of `CombinedGeometryData` as 
 
 	this.visualizationLayer.Items.Add(path);
 ```
-
-
 ```VB.NET
 	Dim combinedData As New CombinedGeometryData() With {.CombineMode = GeometryCombineMode.Xor}
 	combinedData.Geometry1 = New EllipseGeometryData() With {
@@ -446,8 +438,6 @@ The difference between the standard Polygon and the PolygonData is that the `Poi
 	
 	this.visualizationLayer.Items.Add(polygon);
 ```
-
-
 ```VB.NET
 	Dim polygon As New PolygonData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -516,8 +506,6 @@ The difference between the standard Polyline and the PolylineData is that the `P
 	
 	this.visualizationLayer.Items.Add(polyline);
 ```
-
-
 ```VB.NET
 	Dim polyline As New PolylineData() With { _
 		.ShapeFill = New MapShapeFill() With { _
@@ -598,8 +586,6 @@ Here it is an example:
 	
 	this.visualizationLayer.Items.Add(rect);
 ```
-
-
 ```VB.NET
 	Dim rect As New RectangleData() With { _
 		.Location = New Location(43.4457539183824, 23.2927663758679), _

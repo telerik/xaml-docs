@@ -26,9 +26,6 @@ In order to disable the drop operation on a specific treeview item, you need to 
 	    radTreeViewItemTennis.IsDropAllowed = false;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub DisableDropOnSpecificItem()
 	    radTreeViewItemTennis.IsDropAllowed = False

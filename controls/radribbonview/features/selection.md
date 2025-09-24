@@ -75,8 +75,6 @@ Below is a sample implementation of both of the event handlers:
 	 IList unselectedItems = e.RemovedItems;
 	}
 ```
-
-
 ```VB.NET
 	Private Sub radRibbonView_PreviewSelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
 	 ' Get the ribbonView'

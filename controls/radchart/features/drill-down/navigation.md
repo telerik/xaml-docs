@@ -45,11 +45,6 @@ Here is an example of two buttons, which call the respective methods.
 	    this.radChart.HierarchyManager.Forward();
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub BackButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.radChart.HierarchyManager.Back()

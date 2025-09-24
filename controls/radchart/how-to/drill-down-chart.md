@@ -181,11 +181,6 @@ It has two properties of type __ObservableCollection__:
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
@@ -252,10 +247,6 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 	    }
 	}
 ```
-
-    
-
-
 ```VB.NET
 	Public Sub New()
 	    northwindEntity = New NorthwindEntities(New Uri("http://localhost:52981/Services/SampleAdoNetDataService.svc/"))
@@ -279,8 +270,6 @@ Here is the initial loading of the products. The code is placed in the __Northwi
 ```
 
     
-
-
 ```VB.NET
 	Public Sub New()
 	    northwindEntity = New NorthwindEntities(New Uri("http://localhost:52981/Services/SampleAdoNetDataService.svc/"))
@@ -308,11 +297,6 @@ And the __EntitiesLoaded__ method:{% endif %}
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 	    Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
@@ -360,11 +344,6 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Shared Sub BeginLoadingOrderDetails(ByVal p As Products, ByVal rowCount As Integer)
 	    Dim query = (From od In northwindEntity.Order_Details.Expand("Orders") _
@@ -378,8 +357,6 @@ The __NorthwindDataSource__ class contains one more method. It is used to load o
 	    orderDetails.BeginExecute(Sub(result As IAsyncResult) EntitiesLoaded(Of Order_Details)(result, p.Order_Details), orderDetails)
 	End Sub
 ```
-
-
 
 
 
@@ -474,11 +451,6 @@ Switch in the code-behind. Here is the code for the event handler:
 	    tooltip.Content = toolTipControl;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
 	    Dim p As Products = TryCast(e.DataPoint.DataItem, Products)
@@ -490,8 +462,6 @@ Switch in the code-behind. Here is the code for the event handler:
 	    tooltip.Content = toolTipControl
 	End Sub
 ```
-
-
 
 
 
@@ -517,11 +487,6 @@ When the tooltip is opened, the underlying product is extracted first:
 	           
 	Products p = e.DataPoint.DataItem as Products;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim p As Products = TryCast(e.DataPoint.DataItem, Products)
 ```
@@ -634,13 +599,6 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 	    radChart.SeriesMappings.Add(newSeriesMapping);
 	}
 ```
-
-
-
-
-
-
-
 ```VB.NET
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
 	    ' Get the product and load all order details
@@ -663,8 +621,6 @@ Switch in the code-behind. Add the code for handling the event. Here is a sample
 	    radChart.SeriesMappings.Add(newSeriesMapping)
 	End Sub
 ```
-
-
 
 
 

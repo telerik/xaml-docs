@@ -53,8 +53,6 @@ The same operation can be done in code-behind as well:
         ScrollViewer.SetVerticalScrollBarVisibility(xDiagram, ScrollBarVisibility.Visible);
     }		  
 ```
-		  
-
 ```VB.NET
     Private Sub EnableScrollBars()
         ScrollViewer.SetHorizontalScrollBarVisibility(xDiagram, ScrollBarVisibility.Visible)

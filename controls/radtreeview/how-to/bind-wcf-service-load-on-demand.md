@@ -100,9 +100,6 @@ The web service will return an observable collection with objects of type __Tabl
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class TableItem
 	    Public Sub New()
@@ -163,9 +160,6 @@ Now that you have the basis set up, it's time to go on. First you should create 
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class HierarchicalDataSource
 	    Inherits ObservableCollection(Of TableItem)
@@ -214,9 +208,6 @@ Next, you need to add a reference to the WCF service and load the data{% if site
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class HierarchicalDataSource
 	    Inherits ObservableCollection(Of TableItem)
@@ -268,9 +259,6 @@ Add the __FindChildren()__ method to the __HierarchicalDataSource__ file. It wil
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub FindChildren(ByVal item As TableItem)
 	    ' find all the children of the item'
@@ -299,9 +287,6 @@ Add a public method named __LoadItemChildren()__. This method visits all current
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub LoadItemChildren(ByVal item As TableItem)
 	    For Each i As TableItem In item.Children
@@ -342,9 +327,6 @@ Switch to the code-behind and the following code to handle the event.
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radTreeView_Expanded(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 	    Dim tree As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)

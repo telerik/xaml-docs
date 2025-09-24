@@ -102,9 +102,6 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	labelFilter.Condition = textCondition;
 	dateTimeGroupDescription.GroupFilter = labelFilter;
 ```
-
-
-
 ```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"
@@ -168,11 +165,6 @@ And here is how to apply ItemsFilterCondition:
 	labelFilter.Condition = itemsFilterCondition;
 	propertyGroupDescription.GroupFilter = labelFilter;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim propertyGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propertyGroupDescription.PropertyName = "Name"
@@ -264,9 +256,6 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter.AggregateIndex = 0;
 	dateTimeGroupDescription.GroupFilter = valueGroupFilter;
 ```
-
-
-
 ```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"
@@ -327,9 +316,6 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	countFilter.AggregateIndex = 0;
 	dateTimeGroupDescription.GroupFilter = countFilter;
 ```
-
-
-
 ```VB.NET
 	Dim dateTimeGroupDescription As New DateTimeGroupDescription()
 	dateTimeGroupDescription.PropertyName = "Date"

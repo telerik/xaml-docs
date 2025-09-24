@@ -95,11 +95,6 @@ It is common scenario that you would like to customize the appearance of the Poi
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class Data
 	    Implements INotifyPropertyChanged
@@ -286,11 +281,6 @@ The chart is populated with data in code-behind using [Manual Series Mappings]({
 	chart.DefaultSeriesDefinition.PointMarkItemStyle = this.Resources["MyPointMark_Style"] as Style;
 	chart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["MySeriesItemLabel_Style"] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim exportData As New List(Of Data)()
 	Dim baseDate As Date = Date.Today

@@ -62,9 +62,6 @@ You can extend the parameters passed to the OLAP cube by using *QueryProperties*
 	
 	cubeConnectionDetails.QueryProperties.Add(localization);
 ```
-
-
-
 ```VB.NET
 	Dim cubeConnectionDetails As New XmlaConnectionSettings()
 	cubeConnectionDetails.Cube = "LocalizedCube"
@@ -115,9 +112,6 @@ You can also create an object of type __XmlaDataProvider__ in the code behind an
 	this.radPivotGrid.DataProvider = xmlaDataProvider;
 	this.radPivotFieldList.DataProvider = xmlaDataProvider;
 ```
-
-
-
 ```VB.NET
 	Dim xmlaDataProvider As New XmlaDataProvider()
 	Me.radPivotGrid.DataProvider = xmlaDataProvider
@@ -151,9 +145,6 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	XmlaDataProvider xmlaDataProvider = new XmlaDataProvider();
 	xmlaDataProvider.ConnectionSettings = cubeConnectionDetails;
 ```
-
-
-
 ```VB.NET
 	Dim cubeConnectionDetails As New XmlaConnectionSettings()
 	cubeConnectionDetails.Cube = "Adventure Works"
@@ -225,9 +216,6 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	xmlaDataProvider.AggregateDescriptions.Add(aggregateDescription1);
 	xmlaDataProvider.EndInit();
 ```
-
-
-
 ```VB.NET
 	Dim rowGroupDescription1 As New XmlaGroupDescription()
 	rowGroupDescription1.MemberName = "[Date].[Calendar Year]"
@@ -274,9 +262,6 @@ The __XmlaFilterDescription__ is used to filter the data that will be included i
 	condition.Items.Add("[Date].[Calendar Year].&[2005]");
 	filterDescription.Condition = condition;
 ```
-
-
-
 ```VB.NET
 	Dim filterDescription As New XmlaFilterDescription()
 	filterDescription.MemberName = "[Date].[Calendar Year]"
@@ -344,9 +329,6 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	topFilterDescription.Levels.Add(levelFilterDescription1);
 	topFilterDescription.Levels.Add(levelFilterDescription2);
 ```
-
-
-
 ```VB.NET
 	Dim topFilterDescription As New XmlaFilterDescription()
 	topFilterDescription.MemberName = "[Date].[Calendar]"

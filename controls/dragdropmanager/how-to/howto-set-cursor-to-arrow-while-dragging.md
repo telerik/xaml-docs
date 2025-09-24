@@ -26,9 +26,6 @@ An example for such an implementation is illustrated below:
 	      args.Handled = true;
 	}
 ```
-
-
-
 ```VB.NET
 	DragDropManager.AddGiveFeedbackHandler(Me, New GiveFeedbackEventHandler(AddressOf OnGiveFeedBack))
 	Private Sub OnGiveFeedBack(sender As Object, e As Telerik.Windows.DragDrop.GiveFeedbackEventArgs) 

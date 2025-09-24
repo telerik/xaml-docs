@@ -37,9 +37,6 @@ You can specify the content of the default __ChartTitle__ control from XAML or c
 ```C#
 	this.radChart.DefaultView.ChartTitle.Content = "Monthly Sales for 2009";
 ```
-
-
-
 ```VB.NET
 	radChart.DefaultView.ChartTitle.Content = "Monthly Sales for 2009"
 ```
@@ -80,9 +77,6 @@ Since __ChartTitle__ is a content control, you can set as its content not only t
 	border.Child = new TextBlock(){ Text = "Monthly Sales for 2009" };
 	radChart.DefaultView.ChartTitle.Content = border;
 ```
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'

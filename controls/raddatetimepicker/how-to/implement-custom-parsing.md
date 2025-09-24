@@ -69,9 +69,6 @@ Then in the event handler you can provide the parsing logic. For the current exa
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radDateTimePicker_ParseDateTimeValue(sender As Object, args As Telerik.Windows.Controls.ParseDateTimeEventArgs)
 	    Dim input As String = args.TextToParse.ToLower()

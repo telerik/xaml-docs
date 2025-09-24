@@ -30,9 +30,6 @@ You can set values for the properties like this:
 	radChart.DefaultView.ChartArea.ItemOverlapPercent = 0;
 	radChart.DefaultView.ChartArea.ItemWidthPercent = 50;
 ```
-
-
-
 ```VB.NET
 	RadChart1.DefaultView.ChartArea.ItemOverlapPercent = 0
 	RadChart1.DefaultView.ChartArea.ItemWidthPercent = 50

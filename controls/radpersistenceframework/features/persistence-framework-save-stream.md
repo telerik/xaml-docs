@@ -57,8 +57,6 @@ In order to persist the __RadTreeView__'s properties in a stream, you need to cr
 	 stream = manager.Save(treeView);
 	}
 ```
-
-
 ```VB.NET
 	Private stream As Stream
 	
@@ -79,8 +77,6 @@ The persisted visual state of the __RadTreeView__ control can be restored using 
 	 manager.Load(treeView, stream);
 	}
 ```
-
-
 ```VB.NET
 	Private Sub Load(sender As Object, e As RoutedEventArgs)
 		Dim manager As New PersistenceManager()

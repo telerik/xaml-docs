@@ -128,8 +128,6 @@ In this section we demonstrate how the items selection can be implemented for th
 		}
 	}
 ```
-
-
 ```VB.NET
     Public Class MapItem
         Implements INotifyPropertyChanged
@@ -296,8 +294,6 @@ We will subscribe to the __VisualizationLayer.SelectionChanged__ event in order 
 	    }
 	}
 ```
-
-
 ```VB.NET
     Partial Public Class SelectLocations
         Inherits UserControl
@@ -517,8 +513,6 @@ The __VisualizationLayer__ class provides several methods which can be used to s
 	this.visualizationLayer.ReverseSelection(this.visualizationLayer.Items);
 	}
 ```
-
-
 ```VB.NET
 	    Private Sub ShowSelectedItems(sender As Object, e As RoutedEventArgs)
 	        Dim condition As String = Me.filter.Text.Trim()

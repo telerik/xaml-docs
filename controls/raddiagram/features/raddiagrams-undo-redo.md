@@ -77,8 +77,6 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
         diagram.Redo();
     }				  
 ```
-
-	
 ```VB.NET
     Private Sub Undo(sender As Object, e As RoutedEventArgs)
         diagram.Undo()

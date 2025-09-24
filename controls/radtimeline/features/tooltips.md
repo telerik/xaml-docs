@@ -50,9 +50,6 @@ We create a sample class with two properties - Duration of TimeSpan type and Dat
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Product
 		Public Property Duration() As TimeSpan
@@ -109,9 +106,6 @@ Our *ViewModel* class consists of a single property - the collection of business
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	   Public Class ExampleViewModel
 		   Inherits ViewModelBase
@@ -208,9 +202,6 @@ Aside from binding the Timeline, we added a binding converter. Its purpose is to
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	 Public Class DurationToBrushConverter
 		 Implements IValueConverter

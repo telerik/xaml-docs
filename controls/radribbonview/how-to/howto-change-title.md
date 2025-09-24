@@ -26,9 +26,6 @@ The RadRibbonView exposes a string property named __Title__, which should be use
 ```C#
 	xRibbonView.Title = "RadRibbonView Demo";
 ```
-
-
-
 ```VB.NET
 	xRibbonView.Title = "RadRibbonView Demo";
 ```

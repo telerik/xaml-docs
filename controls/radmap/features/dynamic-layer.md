@@ -115,8 +115,6 @@ In this method you have to implement your logic for getting the desired items. T
         }
     }
 ```
-
-
 ```VB.NET
 	Public Class MapDynamicSource
     Implements IMapDynamicSource
@@ -170,8 +168,6 @@ You can set the dynamic source to a new instance of the MapDynamicSource and cre
         this.dynamicLayer.DynamicSource = new MapDynamicSource();
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

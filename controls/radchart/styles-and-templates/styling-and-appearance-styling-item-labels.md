@@ -31,11 +31,6 @@ You can modify every one of the properties available for the styles. After that 
 ```C#
 	this.radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["SeriesItemLabelStyle"] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = TryCast(Me.Resources("SeriesItemLabelStyle"), Style)
 ```

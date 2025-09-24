@@ -52,9 +52,6 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	
 	this.radRichTextBox.Document = document;
 ```
-
-
-
 ```VB.NET
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()
@@ -94,8 +91,6 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	
 	this.radRichTextBox.Document = document;
 ```
-
-
 ```VB.NET
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()

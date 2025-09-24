@@ -51,9 +51,6 @@ The same operation can be done in the code-behind:
 	    ScrollViewer.SetVerticalScrollBarVisibility( radTreeView, ScrollBarVisibility.Visible );
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub EnableScrollBars()
 	    ScrollViewer.SetHorizontalScrollBarVisibility(radTreeView, ScrollBarVisibility.Visible)
@@ -76,8 +73,6 @@ If you want to enable the scrollbars __on demand__, you need to set the scrollba
 		ScrollViewer.SetVerticalScrollBarVisibility( radTreeView, ScrollBarVisibility.Auto );
 	}
 ```
-
-	
 ```VB.NET
 	Private Sub EnableScrollBars()
 		ScrollViewer.SetHorizontalScrollBarVisibility(radTreeView, ScrollBarVisibility.Auto)

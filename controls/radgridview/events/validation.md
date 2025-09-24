@@ -66,8 +66,6 @@ You can subscribe to the __CellValidating__ event declaratively or in code-behin
 ```C#
 	this.radGridView.CellValidating += radGridView_CellValidating;
 ```
-
-
 ```VB.NET
 	AddHandler Me.radGridView.CellValidating, AddressOf radGridView_CellValidating
 ```
@@ -91,8 +89,6 @@ The code snippet below checks whether the value entered in the "CountryId" colum
 	    }
 	}
 ```
-
- 
 ```VB.NET
 	Private Sub radGridView_CellValidating(ByVal sender As Object, ByVal e As GridViewCellValidatingEventArgs)
 	    If e.Cell.Column.UniqueName = "CountryId" Then
@@ -130,8 +126,6 @@ You can subscribe to the __CellValidated__ event declaratively or in code-behind
 ```C#
 	this.radGridView.CellValidated += radGridView_CellValidated;
 ```
-
-
 ```VB.NET
 	AddHandler Me.radGridView.CellValidated, AddressOf radGridView_CellValidated
 ```
@@ -172,8 +166,6 @@ You can subscribe to the __RowValidating__ event declaratively or in code-behind
 ```C#
 	this.radGridView.RowValidating += radGridView_RowValidating;
 ```
-
-  
 ```VB.NET
 	AddHandler Me.radGridView.RowValidating, AddressOf radGridView_RowValidating
 ```
@@ -187,8 +179,6 @@ To stop the commit process just set the __IsValid__ property of the __GridViewRo
 	    e.IsValid = false;
 	}
 ```
-
- 
 ```VB.NET
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
 	    e.IsValid = False
@@ -211,8 +201,6 @@ In versions prior to R1 2020, the event was firing only when a new row was inser
 		}   
 	}
 ```
-
- 
 ```VB.NET
 	Private Sub radGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
 	    If e.EditOperationType = Telerik.Windows.Controls.GridView.GridViewEditOperationType.None Then
@@ -244,8 +232,6 @@ You can subscribe to the __RowValidated__ event declaratively or in code-behind 
 ```C#
 	this.radGridView.RowValidated += radGridView_RowValidated;
 ```
-
-
 ```VB.NET
 	AddHandler Me.radGridView.RowValidated, AddressOf radGridView_RowValidated
 ```

@@ -138,9 +138,6 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 	    radPane4.ContextMenuTemplate = null;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub DisableMenu()
 		radPane1.ContextMenuTemplate = Nothing

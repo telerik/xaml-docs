@@ -68,9 +68,6 @@ The same operation can be done in the code-behind. In order to do that, set the 
 	    radPane.CanUserClose = false;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub HideTheCloseButton()
 		radPane.CanUserClose = False
@@ -101,9 +98,6 @@ Switch to the code-behind and add the following code in the event handler:
 	    e.Handled = true;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radDocking_PreviewClose(ByVal sender As Object, ByVal e As StateChangeEventArgs)
 		e.Handled = True

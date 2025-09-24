@@ -73,9 +73,6 @@ When you set the label format behavior, all the labels (axes, series item labels
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Between;
 	//...
 ```
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'

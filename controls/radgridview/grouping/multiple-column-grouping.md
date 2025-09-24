@@ -56,9 +56,6 @@ This can be done at run time via managed code too:
 	titleDescriptor.SortDirection = ListSortDirection.Ascending;
 	this.radGridView.GroupDescriptors.Add(titleDescriptor);
 ```
-
-
-
 ```VB.NET
 	Dim countryDescriptor As New GroupDescriptor()
 	countryDescriptor.Member = "Country"

@@ -100,9 +100,6 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	labelGroupFilter.Condition = textCondition;
 	shipCountryGroupDescription.GroupFilter = labelGroupFilter;
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryableDoubleGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
@@ -167,9 +164,6 @@ And here is how to apply ItemsFilterCondition:
 	labelGroupFilter.Condition = itemsFilterCondition;
 	shipCountryGroupDescription.GroupFilter = labelGroupFilter;
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
@@ -260,9 +254,6 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter.Condition = intervalCondition;
 	shipCountryGroupDescription.GroupFilter = valueGroupFilter;
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
@@ -320,9 +311,6 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	countFilter.Selection = SortedListSelection.Top;
 	shipCountryGroupDescription.GroupFilter = countFilter;
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"

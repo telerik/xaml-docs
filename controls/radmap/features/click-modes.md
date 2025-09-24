@@ -55,8 +55,6 @@ If you want to implement a custom behavior for one or both of them, just set the
 	    //implement logic regarding double click here
 	}
 ```
-
-
 ```VB.NET
 	Private Sub radMap_MapMouseClick(sender As Object, e As MapMouseRoutedEventArgs)
 	 'implement logic regarding single click here'

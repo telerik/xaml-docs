@@ -71,13 +71,6 @@ The chart control will be populated with the top 10 products from the Northwind 
 	        }
 	    }
 ```
-
-
-
-
-
-
-
 ```VB.NET
 	Public Class ProductDetail
 	    Public Property UnitPrice() As Decimal?
@@ -102,11 +95,6 @@ Add a reference to your ADO.NET Data Service.
 ```C#
 	dbContext = new DataServiceContext(new Uri("SampleAdoNetDataService.svc", UriKind.Relative));
 ```
-
-
-
-
-
 ```VB.NET
 	Dim dbContext As New DataServiceContext(New Uri("SampleAdoNetDataService.svc", UriKind.Relative))
 ```
@@ -118,11 +106,6 @@ Add a reference to your ADO.NET Data Service.
 ```C#
 	NorthwindEntities dbContext = new NorthwindEntities(new Uri("Enter your service address here"));
 ```
-
-
-
-
-
 ```VB.NET
 	Dim dbContext As New NorthwindEntities(New Uri("Enter your service address here"))
 ```
@@ -154,11 +137,6 @@ Add the following code which will make the initial load of the objects.
 	   RadChart1.ItemsSource = result;
 	 }
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub BeginRequest()
 	    Dim query As DataServiceQuery(Of Products) = dbContext.CreateQuery(Of Products)("Products")
@@ -184,11 +162,6 @@ Add the following code which will make the initial load of the objects.
 ```C#
 	this.radChart.ItemsSource = dbContext.Products.Execute().Take(10).ToList();
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.ItemsSource = dbContext.Products.Execute().Take(10).ToList()
 ```
@@ -212,11 +185,6 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	{
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	End Class
@@ -248,11 +216,6 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	    Private Shared northwindEntity As NorthwindEntities
@@ -291,11 +254,6 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	    this.Products.Add( p );
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Dim query = (From p In northwindEntity.Products _
 	    Select p).Take(10)
@@ -320,11 +278,6 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 	    Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))

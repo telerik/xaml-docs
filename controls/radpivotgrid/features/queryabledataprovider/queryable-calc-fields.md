@@ -58,9 +58,6 @@ The first task is to decide what is the calculation formula that you want to use
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class CommissionCalculatedField
 	    Inherits CalculatedField
@@ -108,9 +105,6 @@ Now it is time to add a new instance of this class to the CalculatedFields colle
 	queryableCalculatedField.Name = "Commission";
 	dataProvider.CalculatedFields.Add(queryableCalculatedField);
 ```
-
-
-
 ```VB.NET
 	Dim queryableCalculatedField = New CommissionCalculatedField()
 	queryableCalculatedField.Name = "Commission"
@@ -140,9 +134,6 @@ In order to use the calculated field in the generated report, you have to add it
 	queryableCalculatedAggregate.CalculatedFieldName = "Commission";
 	dataProvider.AggregateDescriptions.Add(queryableCalculatedAggregate);
 ```
-
-
-
 ```VB.NET
 	Dim queryableCalculatedAggregate = New QueryableCalculatedAggregateDescription()
 	queryableCalculatedAggregate.CalculatedFieldName = "Commission"

@@ -26,8 +26,6 @@ The purpose of the __DataContext__ is to hold the data that will be bound (like 
 	RadTabControl radTabControl= new RadTabControl();
 	radTabControl.DataContext = new Collection<WordDocument>();
 ```
-
-  	
 ```VB.NET
 	Dim radTabControl As New RadTabControl()
 	radTabControl.DataContext = New Collection(Of WordDocument)()
@@ -64,8 +62,6 @@ When no __ItemTemplate__ is defined the __DisplayMemberPath__ is used to determi
 	radTabControl.ItemsSource = new Collection<Person>();
 	radTabControl.DisplayMemberPath = "Name";
 ```
-
-  
 ```VB.NET
 	Dim radTabControl As New RadTabControl()
 	radTabControl.ItemsSource = New Collection(Of Person)()

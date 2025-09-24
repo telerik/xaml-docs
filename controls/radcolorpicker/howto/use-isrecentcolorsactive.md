@@ -83,8 +83,6 @@ In the button's Click event handler we display a __RadExpander__ control which h
 		this.xExpander.IsExpanded = true;
 	}
 ```
-
-
 ```VB.NET
     Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
         Me.xColorPicker.IsDropDownOpen = False
@@ -105,8 +103,6 @@ Finally in the confirmation's button Click event handler we implement the select
 		this.xColorPicker.IsDropDownOpen = true;
 	}
 ```
-
-
 ```VB.NET
     Private Sub OK_RadButton_Click(sender As Object, e As RoutedEventArgs)
         Me.xColorPicker.SelectedColor = Me.xColorEditor.SelectedColor

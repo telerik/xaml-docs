@@ -31,11 +31,6 @@ Here is an example of a __RadChart__ that visualizes the following values - 10, 
 ```C#
 	this.radChart.ItemsSource = new int[] { 10, 100, 1000, 10000, 100000, 1000000 };
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.ItemsSource = New Integer() {10, 100, 1000, 10000, 100000, 1000000}
 ```
@@ -69,11 +64,6 @@ Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = true;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = True
 ```

@@ -33,8 +33,6 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 	this.radDataPager.Source = pagedSource;
 	this.itemsControl.ItemsSource = pagedSource;
 ```
-
-
 ```VB.NET
 
 	Dim itemsSource As IEnumerable = Enumerable.Range(0, 1000)
@@ -50,8 +48,6 @@ Imagine that you have a simple [IEnumerable](http://msdn.microsoft.com/en-us/lib
 	this.radDataPager.Source = pagedSource;
 	this.itemsControl.ItemsSource = pagedSource;
 ```
-
-
 ```VB.NET
 	Dim itemsSource As IEnumerable = Enumerable.Range(0, 1000)
 	Dim pagedSource = New QueryableCollectionView(itemsSource)

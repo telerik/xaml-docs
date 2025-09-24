@@ -20,15 +20,6 @@ The __RadDiagram.ExportToImage()__ method allows you to export the diagram to an
 
 * __Stream__ *stream* - this is a __required__ attribute that represents the stream of the file where the diagram should be exported to.			
 
-{% if site.site_name == 'Silverlight' %}
-
-__Telerik.Windows.Media.Imaging.BitmapEncoderhttp://www.telerik.com/help/silverlight/t_telerik_windows_media_imaging_bitmapencoder.html *encoder* - this attribute defines the image format. You can use any of the following encoders to create the file:			  
-
-* [BmpBitmapEncoder](http://www.telerik.com/help/silverlight/t_telerik_windows_media_imaging_bmpbitmapencoder.html)
-
-* [PngBitmapEncoder](http://www.telerik.com/help/silverlight/t_telerik_windows_media_imaging_pngbitmapencoder.html) - this is the default encoder used by the __ExportToImage()__ method.				  
-{% endif %}
-{% if site.site_name == 'WPF' %}
 * [BitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bitmapencoder.aspx) *encoder* - this attribute defines the image format. You can use any of the following encoders to create the file:
 	* [BmpBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.bmpbitmapencoder.aspx)
 	* [GifBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.gifbitmapencoder.aspx)
@@ -36,7 +27,7 @@ __Telerik.Windows.Media.Imaging.BitmapEncoderhttp://www.telerik.com/help/silverl
 	* [PngBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.pngbitmapencoder.aspx)
 	* [TiffBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.tiffbitmapencoder.aspx)
 	* [WmpBitmapEncoder](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.wmpbitmapencoder.aspx)
-{% endif %}
+
 * __Nullable<Rect>__ *enclosingBounds* - this attribute determines the portion of the diagram surface which should be exported
 
 * __Size__ *returnImageSize* - this attribute determines the size of the created image file			
@@ -76,7 +67,6 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 ```
 
 * Define only the stream of the file:
-	{% if site.site_name == 'WPF' %}
 	
 	```C#
 		private void ExportToImage(object sender, RoutedEventArgs e)
@@ -87,8 +77,6 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			}
 		}
 	```
-	
-		
 	```VB.NET
 		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
 			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
@@ -96,45 +84,13 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			End Using
 		End Sub			  			  
 	```	
-	{% endif %}
-	{% if site.site_name == 'Silverlight' %}
-	
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			SaveFileDialog dialog = new SaveFileDialog() { DefaultFileName = "xDiagram.png"};
-			bool? result = dialog.ShowDialog();
-			if (result == true)
-			{
-				using (var stream = dialog.OpenFile())
-				{
-					xDiagram.ExportToImage(stream);
-				}
-			}
-		}			 
-	```
-	
-	 	
-	```VB.NET	
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Dim dialog As New SaveFileDialog() With { .DefaultFileName = "xDiagram.png"}
-			Dim result As System.Nullable(Of Boolean) = dialog.ShowDialog()
-			If result = True Then
-				Using stream = dialog.OpenFile()
-					xDiagram.ExportToImage(stream)
-				End Using
-			End If
-		End Sub
-	```
-	{% endif %}
 	
 	This operation will result in the creating of a file named xDiagram.png and it will have the following content:
 
 	![Rad Diagram Features Export Stream](images/RadDiagram_Features_Export_Stream.png)
 
 * Define the portion of the diagram to be exported and the size of the image file:
-	{% if site.site_name == 'WPF' %}
-	 
+	
 	```C#
 		private void ExportToImage(object sender, RoutedEventArgs e)
 		{
@@ -144,8 +100,6 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			}
 		}			 
 	```
-	
-		
 	```VB.NET
 		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
 			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
@@ -153,46 +107,12 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			End Using
 		End Sub			  			  
 	```
-	{% endif %}
-	{% if site.site_name == 'Silverlight' %}
-	
-	
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			SaveFileDialog dialog = new SaveFileDialog() { DefaultFileName = "xDiagram.png"};
-			bool? result = dialog.ShowDialog();
-			if (result == true)
-			{
-				using (var stream = dialog.OpenFile())
-				{
-					xDiagram.ExportToImage(stream,null,new Rect(10,10,150,150),new Size(200,600));
-				}
-			}
-		}		
-	```
-	
-	
-	```VB.NET
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Dim dialog As New SaveFileDialog() With { .DefaultFileName = "xDiagram.png"}
-			Dim result As System.Nullable(Of Boolean) = dialog.ShowDialog()
-			If result = True Then
-				Using stream = dialog.OpenFile()
-					xDiagram.ExportToImage(stream, Nothing, New Rect(10, 10, 150, 150), New Size(200, 600))
-				End Using
-			End If
-		End Sub		
-	```
-	{% endif %}
 	
 	This operation will result in the creating of a file named xDiagram.png with a size of 200x200 and it will contain the portion of the __RadDiagram__ defined by the rectangle *(10, 10, 150, 150)*. This is why the image file will contain only a part of the diagram and it will stretch it to fit the required size: 
 
 	![Rad Diagram Features Export Size Bounds](images/RadDiagram_Features_Export_SizeBounds.png)
 
 * Define only the stream and the portion of the diagram to be exported:
-	
-	{% if site.site_name == 'WPF' %}
 	
 	```C#
 		private void ExportToImage(object sender, RoutedEventArgs e)
@@ -203,8 +123,6 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			}
     }			 
 	```
-	
-	
 	```VB.NET
 		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
 			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
@@ -212,46 +130,12 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			End Using
 		End Sub	
 	```	
-	{% endif %}
-	{% if site.site_name == 'Silverlight' %}
-
-	
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			SaveFileDialog dialog = new SaveFileDialog() { DefaultFileName = "xDiagram.png"};
-			bool? result = dialog.ShowDialog();
-			if (result == true)
-			{
-				using (var stream = dialog.OpenFile())
-				{
-					xDiagram.ExportToImage(stream,null,new Rect(10,10,150,150));
-				}
-			}
-		}			 			 
-	```
-	
-	
-	```VB.NET
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Dim dialog As New SaveFileDialog() With { .DefaultFileName = "xDiagram.png"}
-			Dim result As System.Nullable(Of Boolean) = dialog.ShowDialog()
-			If result = True Then
-				Using stream = dialog.OpenFile()
-					xDiagram.ExportToImage(stream, Nothing, New Rect(10, 10, 150, 150))
-				End Using
-			End If
-		End Sub	
-	```
-	{% endif %}
 	
 	This operation will result in the creating of a file named xDiagram.png that contains only the portion of the __RadDiagram__ defined by the rectangle *(10, 10, 150, 150)*:
 	![Rad Diagram Features Export Bounds](images/RadDiagram_Features_Export_Bounds.png)
 
 * Define the stream and the margin of the diagram to be exported:
 
-	{% if site.site_name == 'WPF' %}
-	
 	```C#
 		private void ExportToImage(object sender, RoutedEventArgs e)
 		{
@@ -261,8 +145,6 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			}
 		}			 
 	```
-	
-	
 	```VB.NET
 		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
 			Using stream = File.Open("c:\temp\xDiagram.png", FileMode.Create)
@@ -270,37 +152,6 @@ We will also create a __RadButton__ control and we will handle its __Click__ eve
 			End Using
 		End Sub		
 	```
-	{% endif %}	
-	{% if site.site_name == 'Silverlight' %}	
-	
-	```C#
-		private void ExportToImage(object sender, RoutedEventArgs e)
-		{
-			SaveFileDialog dialog = new SaveFileDialog() { DefaultFileName = "xDiagram.png"};
-			bool? result = dialog.ShowDialog();
-			if (result == true)
-			{
-				using (var stream = dialog.OpenFile())
-				{
-				   xDiagram.ExportToImage(stream, backgroundBrush: new SolidColorBrush(Colors.BlanchedAlmond));
-				}
-			}
-		}	
-	```		
-
-	
-	```VB.NET
-		Private Sub ExportToImage(sender As Object, e As RoutedEventArgs)
-			Dim dialog As New SaveFileDialog() With { .DefaultFileName = "xDiagram.png"}
-			Dim result As System.Nullable(Of Boolean) = dialog.ShowDialog()
-			If result = True Then
-				Using stream = dialog.OpenFile()
-					xDiagram.ExportToImage(stream, backgroundBrush := New SolidColorBrush(Colors.BlanchedAlmond))
-				End Using
-			End If
-		End Sub			  
-	```
-	{% endif %}
 	
 	This operation will result in the creating of a file named xDiagram.png that contains the __RadDiagram__ displayed on a BlanchedAlmond background:
 	![Rad Diagram Features Export Background](images/RadDiagram_Features_Export_Background.png)
@@ -311,8 +162,6 @@ Now if we set the *margin* attribute of the method to *20*
 ```C#
     xDiagram.ExportToImage(stream, backgroundBrush: new SolidColorBrush(Colors.BlanchedAlmond), margin: new Thickness(20));		 
 ```
-
-
 ```VB.NET
     xDiagram.ExportToImage(stream, backgroundBrush := New SolidColorBrush(Colors.BlanchedAlmond), margin := New Thickness(20))
 ```
@@ -346,8 +195,6 @@ __RadDiagram__ also exposes an __Export(string exportFormat)__ method that takes
       //export to PNG
       //xDiagram.Export("png");
 ```
-
-
 ```VB.NET
       'export to BMP'
       xDiagram.Export("bmp")
@@ -376,8 +223,6 @@ You can also invoke the execution method of the command from code-behind:
 ```C#
     Telerik.Windows.Controls.Diagrams.DiagramCommands.Export.Execute("bmp", null);		  
 ```
-		
-
 ```VB.NET
 	Telerik.Windows.Controls.Diagrams.DiagramCommands.Export.Execute("bmp", Nothing)		  
 ```

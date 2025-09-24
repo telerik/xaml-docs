@@ -51,8 +51,6 @@ Here is an example of a command usage in a MVVM scenario. The command is located
         }
     }
 ```
-
-
 ```VB.NET
     Public Class ButtonViewModel
         Public Sub New()
@@ -93,8 +91,6 @@ Set the __ButtonViewModel__ as the __DataContext__ of your __UserControl__.
 	    this.DataContext = new ButtonViewModel();
 	}
 ```
-
-
 ```VB.NET
     Public Sub New()
         InitializeComponent()

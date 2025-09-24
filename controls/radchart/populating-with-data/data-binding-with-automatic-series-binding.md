@@ -33,11 +33,6 @@ Take a look at this simple array declaration:
 ```C#
 	int[] dataArray = new int[] { 12, 56, 23, 89, 12, 56, 34, 78, 32, 56 };
 ```
-
-
-
-
-
 ```VB.NET
 	Dim dataArray As Integer() = New Integer() {12, 56, 23, 89, 12, 56, 34, 78, 32, 56}
 ```
@@ -53,11 +48,6 @@ If you set it to the __ItemsSource__ property of the __RadChart__ control, you w
 ```C#
 	radChart.ItemsSource = dataArray;
 ```
-
-
-
-
-
 ```VB.NET
 	radChart.ItemsSource = dataArray
 ```
@@ -83,11 +73,6 @@ If you have a list of business objects and you set it to the __ItemsSource__ pro
 	
 	this.telerkChart.ItemsSource = data;
 ```
-
-
-
-
-
 ```VB.NET
 	Dim data As New List(Of Manufacturer)()
 	data.Add(New Manufacturer("Toyota", 215, 462))
@@ -134,11 +119,6 @@ Where the structure of the __Manufacturer__ class is:
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class Manufacturer
 	    Public Sub New(ByVal name As String, ByVal sales As Integer, ByVal turnover As Integer)

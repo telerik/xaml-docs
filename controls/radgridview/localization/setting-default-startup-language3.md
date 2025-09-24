@@ -41,9 +41,6 @@ The thing that you must do for defining the language settings of the application
 	Thread.CurrentThread.CurrentCulture = new CultureInfo("es");
 	Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
 ```
-
-
-
 ```VB.NET
 	Thread.CurrentThread.CurrentCulture = New CultureInfo("es")
 	Thread.CurrentThread.CurrentUICulture = New CultureInfo("es")

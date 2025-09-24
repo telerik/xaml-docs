@@ -35,9 +35,6 @@ This article will demonstrate the binding of both. Let's start with our business
 		public DateTime Date { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class Product
 		Public Property Data() As IEnumerable(Of Item)
@@ -82,9 +79,6 @@ Now we'll need to set values to the newly created properties and assign an insta
 		this.DataContext = new Product() { Data = items, StartDate = startDate, EndDate = endDate, };
 	}	
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

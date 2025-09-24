@@ -21,8 +21,6 @@ The __RadTreeView__ exposes a property __DropExpandDelay__, which sets the delay
 ```C#
 	radTreeView.DropExpandDelay = TimeSpan.FromSeconds(5);
 ```
-
-	
 ```VB.NET
 	radTreeView.DropExpandDelay = TimeSpan.FromSeconds(5)
 ```
@@ -42,8 +40,6 @@ You can also set the value from code-behind:
 ```C#
 	radTreeView.DropExpandDelay = TimeSpan.FromMinutes(60);		
 ```
-
-
 ```VB.NET
 	radTreeView.DropExpandDelay = TimeSpan.FromMinutes(60)
 ```

@@ -21,11 +21,6 @@ For example:
 ```C#
 	this.radDateTimePicker.IsDropDownOpen = true;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radDateTimePicker.IsDropDownOpen = True
 ```

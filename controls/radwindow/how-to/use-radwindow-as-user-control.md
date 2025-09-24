@@ -40,9 +40,6 @@ Also in the code behind your user control should inherit the __RadWindow__ inste
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Partial Public Class MainWindow
 	    Inherits RadWindow
@@ -63,8 +60,6 @@ As this is an user control of type __RadWindow__ you can use any of the features
 	MainWindow window = new MainWindow();
 	window.Show();
 ```
-
-  
 ```VB.NET
 	Dim window As New MainWindow()
 	window.Show()
@@ -97,8 +92,6 @@ Then create a new instance of the custom RadWindow and show it in the __OnStartu
 		}
 	}
 ```
-
-  
 ```VB.NET
 	Public Partial Class App
 	    Inherits Application

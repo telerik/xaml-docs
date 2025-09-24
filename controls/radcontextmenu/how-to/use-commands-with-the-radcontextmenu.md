@@ -95,9 +95,6 @@ As the __MVVM__ pattern should be used, you have to create a __ViewModel__ for y
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ExampleViewModel
 	    Implements INotifyPropertyChanged
@@ -153,9 +150,6 @@ In the constructor of the __UserControl__ you have to create an instance of the 
 	    this.DataContext = viewModel;
 	}
 ```
-
-
-
 ```VB.NET
 	Private viewModel As ExampleViewModel
 	Public Sub New()
@@ -217,9 +211,6 @@ Before continuing, there is one more thing to be done. When right-clicking to op
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	    Dim item As System.Windows.Controls.ListBoxItem = Me.radContextMenu.GetClickedElement(Of System.Windows.Controls.ListBoxItem)()
@@ -249,9 +240,6 @@ The next step is to create your commands. They will be host by the __ViewModel__
 	    private set;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Property MoveUpCommand() As RoutedUICommand
 	    Get
@@ -279,9 +267,6 @@ Initialize them in the constructor of the __ViewModel__:
 	    this.InitItems();
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    Me.MoveUpCommand = New RoutedUICommand("Move Up", "MoveUp", GetType(ExampleViewModel))
@@ -342,9 +327,6 @@ You will also need methods that will get called when the command is executed. In
 	    this.SelectedItem = item;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub MoveUp(sender As Object, e As ExecutedRoutedEventArgs)
 	    If Me.SelectedItem Is Nothing OrElse Me.Items.IndexOf(TryCast(Me.SelectedItem, DataItem)) = 0 Then
@@ -384,9 +366,6 @@ In order to use the commands in the UI you have to provide a __CommandBinding__ 
 	    return bindings;
 	}
 ```
-
-
-
 ```VB.NET
 	Public Function GetCommandBindings() As CommandBindingCollection
 	    Dim bindings As New CommandBindingCollection()
@@ -412,9 +391,6 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 	    CommandManager.SetCommandBindings(this, this.viewModel.GetCommandBindings());
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -442,9 +418,6 @@ In the __View__ get the __CommandBindingsCollection__ and set it through the __C
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()

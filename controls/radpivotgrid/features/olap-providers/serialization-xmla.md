@@ -45,9 +45,6 @@ So lets create a simple class that we'll use to save (when serializing) and load
 	    public PivotAxis AggregatesPosition { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	<DataContract> _
 	Public Class DataProviderSettings
@@ -165,9 +162,6 @@ The next step is to implement the serializer. When serializing the provider, you
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public MustInherit Class DataProviderSerializer
 		Public MustOverride ReadOnly Property KnownTypes() As IEnumerable(Of Type)
@@ -256,9 +250,6 @@ So the last step is to serialize the provider and deserialize it:
 	XmlaProviderSerializer provider = new XmlaProviderSerializer();
 	provider.Deserialize(this.pivot.DataProvider, this.lastSerializedProvider);
 ```
-
-
-
 ```VB.NET
 	Dim lastSerializadProvider As String
 	

@@ -233,11 +233,6 @@ The following code snippets represent the complete source code used in the topic
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class DataObject
 	    Private Shared rand As New Random(Environment.TickCount)
@@ -312,11 +307,6 @@ The following code snippets represent the complete source code used in the topic
 ```C#
 	this.RadChart.ItemsSource = DataObject.GetData();
 ```
-
-
-
-
-
 ```VB.NET
 	Me.RadChart.ItemsSource = DataObject.GetData()
 ```

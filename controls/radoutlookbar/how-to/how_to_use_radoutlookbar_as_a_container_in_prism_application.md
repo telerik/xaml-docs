@@ -81,8 +81,6 @@ For the moment we will do just step 1.
 	    });
 	}
 ```
-
-
 ```VB.NET
 	Public Sub Initialize()
 	    Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
@@ -101,8 +99,6 @@ Now we have to actually run the bootstrapper. Go to __App.xaml.cs__ and modify t
 	    bootstrapper.Run();
 	}
 ```
-
-
 ```VB.NET
 	Private Sub Application_Startup(sender As Object, e As StartupEventArgs)
 	    Dim bootstrapper As New Bootstrapper()
@@ -147,8 +143,6 @@ Make __ModuleA__ class implement the __IModule__ interface. The __IModule__ inte
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Class ModuleA
 	    Implements IModule
@@ -200,8 +194,6 @@ Now that we have our first view defined, we need to register it in the Initializ
 	    });
 	}
 ```
-
-
 ```VB.NET
 	Public Sub Initialized()
 	    ' Register views here.'
@@ -234,8 +226,6 @@ Then __open__ the __Bootstrapper__ class and __override__ the __GetModuleCatalog
 	    return catalog;
 	}
 ```
-
-
 ```VB.NET
 	Protected Overrides Function GetModuleCatalog() As IModuleCatalog
 	    Dim catalog As New ModuleCatalog()
@@ -260,8 +250,6 @@ Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString(
 	
 	public string ItemHeader { get; set; }
 ```
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -301,8 +289,6 @@ The last thing that needs to be done is to make the __Title__ area display __Mod
 	    Telerik.Windows.Controls.TextSearch.SetText(this, "ModuleA");
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 	    Me.InitializeComponent()
@@ -367,8 +353,6 @@ Now, instead of having an __ItemHeader__ property, you can create a property of 
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -393,8 +377,6 @@ In the __Initialize()__ method of __ModuleA__.cs we will use the previously crea
 	    });
 	}
 ```
-
-
 ```VB.NET
 	Public Sub Initialize()
 	    Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
@@ -425,8 +407,6 @@ The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()

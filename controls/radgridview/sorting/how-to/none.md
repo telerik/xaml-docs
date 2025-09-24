@@ -25,9 +25,6 @@ To accomplish this you need to subscribe to the __Sorting__ event and define its
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_Sorting(sender As Object, e As GridViewSortingEventArgs)
 	    If e.NewSortingState = SortingState.None Then

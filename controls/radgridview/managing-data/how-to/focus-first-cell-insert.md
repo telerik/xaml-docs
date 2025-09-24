@@ -25,9 +25,6 @@ This article shows how to make always the first column be focused when a new ite
 	    grid.CurrentColumn = grid.Columns[0];
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)
 	    Dim grid = e.OwnerGridViewItemsControl

@@ -44,10 +44,6 @@ Here is the full code
 	    }
 	}
 ```
-
-
-
-
 ```VB.NET
 	Private Sub gridView_FieldFilterEditorCreated2(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	    'get the StringFilterEditor in your RadGridView
@@ -83,9 +79,6 @@ Here is the full code:
 	    ((StringFilterEditor)sender).ChildrenOfType<ToggleButton>().FirstOrDefault().Visibility = Visibility.Collapsed;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub gridView_FieldFilterEditorCreated(sender As Object, e As Telerik.Windows.Controls.GridView.EditorCreatedEventArgs)
 	    'get the StringFilterEditor in your RadGridView

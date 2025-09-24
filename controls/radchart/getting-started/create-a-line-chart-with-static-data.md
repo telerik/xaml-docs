@@ -138,9 +138,6 @@ In this sample you are going to create and visualize your data using simple line
 	series.Add(new DataPoint(12, 212));
 	radChart.DefaultView.ChartArea.DataSeries.Add(series);
 ```
-
-
-
 ```VB.NET
 	radChart.DefaultView.ChartTitle.Content = "Year 2009"
 	radChart.DefaultView.ChartLegend.Header = "Legend"

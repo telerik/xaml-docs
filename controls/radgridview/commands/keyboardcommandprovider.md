@@ -50,9 +50,6 @@ The custom class responsible for the update of the commands needs to be similar 
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class CustomKeyboardCommandProvider
 	    Inherits DefaultKeyboardCommandProvider
@@ -90,11 +87,6 @@ The last thing to be done is to set __KeyboardCommandProvider__ Property of the 
 ```C#
 	this.RadGridView1.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.RadGridView1);
 ```
-
-
-
-
-
 ```VB.NET
 	Me.RadGridView1.KeyboardCommandProvider = New CustomKeyboardCommandProvider(Me.RadGridView1)
 ```

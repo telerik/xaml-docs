@@ -38,9 +38,6 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class EditableComboBox
 	    Public Shared Function GetCharacterCasing(ByVal obj As DependencyObject) As Integer

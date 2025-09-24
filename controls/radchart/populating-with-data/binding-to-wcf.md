@@ -80,11 +80,6 @@ Creating the WCF Service:
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	<ServiceContract(Namespace:=""), AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Allowed)>
 	Public Class Service2
@@ -116,11 +111,6 @@ Now build the project before continuing.
 	           
 	MyService.Service2Client client = new MyService.Service2Client();
 ```
-
-
-
-
-
 ```VB.NET
 	Dim client As New MyService.Service2Client()
 ```
@@ -146,11 +136,6 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 	    this.radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = -90;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Sub SetupClient()
 	    Dim client As New MyService.Service2Client()
@@ -171,11 +156,6 @@ Add the following code in your __xaml.cs__ which will make the initial load of t
 ```C#
 	radChart.ItemsSource = serviceClient.LoadTop10Products();
 ```
-
-
-
-
-
 ```VB.NET
 	radChart.ItemsSource = serviceClient.LoadTop10Products()
 ```
@@ -201,11 +181,6 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	{
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	End Class
@@ -237,11 +212,6 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class NorthwindDataSource
 	    Private serviceClient As SampleWcfServiceClient
@@ -286,17 +256,10 @@ This section will show you how to populate your __RadChart__ control in a MVVM m
 	    this.Products.Add( p );
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	AddHandler Me.serviceClient.LoadTop10ProductsCompleted, AddressOf serviceClient_LoadTop10ProductsCompleted
 	Me.serviceClient.LoadTop10ProductsAsync()
 ```
-
-
 
 
 
@@ -321,11 +284,6 @@ And here is the code handling the __LoadTop10ProductsCompleted__ event:{% endif 
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub serviceClient_LoadTop10ProductsCompleted(ByVal sender As Object, ByVal e As LoadTop10ProductsCompletedEventArgs)
 	    For Each p As Products In e.Result

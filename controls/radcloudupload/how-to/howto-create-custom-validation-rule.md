@@ -27,8 +27,6 @@ If the built-in validation rule does not cover your requirements, you can create
       }
     }
 ```
-
-
 ```VB.NET
     Public Class MyValidationRule
         Inherits ValidationRule

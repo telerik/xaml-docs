@@ -64,9 +64,6 @@ The final result should look like the one on the snapshot below:
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class MessageViewModel
 		Public Shared Function Generate() As IList
@@ -226,9 +223,6 @@ The final result should look like the one on the snapshot below:
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class DropIndicationDetails
 		Inherits ViewModelBase
@@ -671,8 +665,6 @@ Finally, you should populate your  __RadGridView__ with sample data and attach t
 		RowReorderBehavior.SetIsEnabled(this.radGridView, true);
 	}
 ```
-
-
 ```VB.NET
 	Public Sub New()
 		InitializeComponent()

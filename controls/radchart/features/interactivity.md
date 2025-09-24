@@ -50,11 +50,6 @@ The example below shows a text box with some details when a candle is clicked. _
 	        td.FromDate, td.Open, td.High, td.Low, td.Close, td.Volume ), td.Emission, MessageBoxButton.OK );
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	      
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
@@ -86,11 +81,6 @@ The latest version of the Chart control includes an enhancement of the Selection
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 	    For Each dataPoint1 As DataPoint In Chart1.DefaultView.ChartArea.DataSeries(0)

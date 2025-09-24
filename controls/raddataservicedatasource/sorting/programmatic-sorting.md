@@ -23,9 +23,6 @@ For example:
 	sd.SortDirection = ListSortDirection.Descending;
 	this.customersDataSource.SortDescriptors.Add(sd);
 ```
-
-
-
 ```VB.NET
 
 	Dim sd As New SortDescriptor()

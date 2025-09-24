@@ -48,11 +48,6 @@ Here is an example of a toggle button that upon checking should make the selecti
         this.radRichTextBox.ToggleBold();
     }
 ```
-
-
-
-
-
 ```VB.NET
     Private Sub BoldButton_Click(sender As Object, e As RoutedEventArgs)
         Me.radRichTextBox.ToggleBold()
@@ -76,11 +71,6 @@ The following example inserts the word "text" at the CaretPosition.
 ```C#
     this.radRichTextBox.ActiveDocumentEditor.Insert("text");
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radRichTextBox.ActiveDocumentEditor.Insert("text")
 ```
@@ -116,11 +106,6 @@ If you create a fragment in this way, it will end with a new paragraph. This is 
 ```C#
     DocumentFragment fragmentFromDocument = new DocumentFragment(radDocument);
 ```
-
-
-
-
-
 ```VB.NET
     Dim fragment As New DocumentFragment(radDocument)
 ```
@@ -139,11 +124,6 @@ If you choose to use the document selection when creating a __DocumentFragment__
 ```C#
     DocumentFragment fragmentFromSelection = radDocument.Selection.CopySelectedDocumentElements();
 ```
-
-
-
-
-
 ```VB.NET
     Dim fragment As DocumentFragment = document.Selection.CopySelectedDocumentElements()
 ```

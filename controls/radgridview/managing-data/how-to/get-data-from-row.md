@@ -28,9 +28,6 @@ We will consider two scenarios - getting the data from the selected row and gett
 	    MessageBox.Show(message);
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub Button2_Click(sender As Object, e As RoutedEventArgs)
 	    Dim club As Club = TryCast(Me.clubsGrid.SelectedItem, Club)
@@ -54,9 +51,6 @@ We will consider two scenarios - getting the data from the selected row and gett
 	    MessageBox.Show(message);
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub clubsGrid_RowActivated(sender As Object, e As Telerik.Windows.Controls.GridView.RowEventArgs)
 	    Dim row = TryCast(e.Row, GridViewRow)

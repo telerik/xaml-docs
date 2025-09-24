@@ -99,9 +99,6 @@ The idea in this case is to create a new __Attached Property__ in a helper class
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class EditableComboBox
 	    Public Shared ReadOnly MaxLengthProperty As DependencyProperty = DependencyProperty.RegisterAttached("MaxLength", GetType(Integer), GetType(EditableComboBox), New PropertyMetadata(OnMaxLengthChanged))
@@ -162,11 +159,6 @@ In the __OnMaxLengthChanged()__ event handler you should perform the following s
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class EditableComboBox
 	    Public Shared ReadOnly MaxLengthProperty As DependencyProperty = DependencyProperty.RegisterAttached("MaxLength", GetType(Integer), GetType(EditableComboBox), New PropertyMetadata(OnMaxLengthChanged))

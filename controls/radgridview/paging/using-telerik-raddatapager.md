@@ -39,9 +39,6 @@ Here is a list of the most important features of the __RadDataPager__:
 	RadDataPager radDataPager = new RadDataPager();
 	radDataPager.Source = data;
 ```
-
-
-
 ```VB.NET
 	Dim data As IEnumerable = New List(Of Integer)()
 	Dim radDataPager As New RadDataPager()

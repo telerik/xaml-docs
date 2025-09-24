@@ -25,8 +25,6 @@ This article demonstrates how you can declare a __RadColorPaletteView__ and popu
 ```C#
 	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
 ```
-
-
 ```VB.NET
 	Dim colorPaletteView As New RadColorPaletteView()
 ```
@@ -54,8 +52,6 @@ You can use the __Palette__ property of __RadColorPaletteView__ to populate the 
 	RadColorPaletteView colorPaletteView = new RadColorPaletteView();
 	colorPaletteView.Palette = ColorPreset.Office;
 ```
-
-
 ```VB.NET
 	Dim colorPaletteView As New RadColorPaletteView()
 	colorPaletteView.Palette = ColorPreset.Office
@@ -77,8 +73,6 @@ __RadColorPaletteView__  also allows binding to various data source types throug
 	colors.Add(Colors.Blue);
 	colorPaletteView.ItemsSource = colors;
 ```
-
-
 ```VB.NET
 	Dim colorPaletteView As New RadColorPaletteView()
 	Dim colors1 As New Collection(Of Color)()

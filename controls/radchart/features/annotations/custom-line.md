@@ -73,11 +73,6 @@ After solving it you will get the following values __2.66__ for the __Slope__ (m
 	customLine.StrokeThickness = 2;
 	this.radChart.DefaultView.ChartArea.Annotations.Add(customLine);
 ```
-
-
-
-
-
 ```VB.NET
 	Dim _customLine As New CustomLine()
 	_customLine.Slope = 2.66

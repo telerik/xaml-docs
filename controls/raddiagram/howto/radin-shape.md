@@ -97,9 +97,6 @@ And as our __RadGridView__ is currently empty, we can go ahead and populate it w
 	    public string MonthName { get; set; }
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ProductSales
 	    Public Sub New(quantity As Integer, month As Integer, monthName As String)
@@ -168,9 +165,6 @@ Next in our code-behind we can create a method that returns a list of __ProductS
 	    this.DataContext = GetProductSales();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Shared Function GetProductSales() As List(Of ProductSales)
 	    Dim persons = New List(Of ProductSales)() From {
@@ -228,9 +222,6 @@ We can also define a shape in the code-behind file and set its content to any Ra
 	    this.diagram.AddShape(calendar);
 	}
 ```
-
-
-
 ```VB.NET
 	Public Sub New()
 	    InitializeComponent()
@@ -283,9 +274,6 @@ Finally, we can connect these shapes using a single connection. Let's set it up 
 	    con.TargetCapType = CapType.Arrow2Filled;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub OnLoaded(sender As Object, routedEventArgs As RoutedEventArgs) '
 	    ' the alternative to this code-approach is to set the ContentTemplate in XAML '

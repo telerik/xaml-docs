@@ -50,9 +50,6 @@ The __Spans__ can be used only in the context of the [Paragraph]({%slug radricht
 	section.Blocks.Add( paragraph );
 	this.radRichTextBox.Document.Sections.Add( section );
 ```
-
-
-
 ```VB.NET
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()
@@ -78,9 +75,6 @@ To specify the text in the __Span__ you can use its __Text__ property.
 	Span span = new Span();
 	span.Text = "Thank you for choosing Telerik RadRichTextBox!";
 ```
-
-
-
 ```VB.NET
 	Dim span As New Span()
 	span.Text = "Thank you for choosing Telerik RadRichTextBox!"

@@ -35,8 +35,6 @@ In order to be able to successfully use the binding feature of the control, the 
 	    public object ToolTipContent { get; set; }
 	}
 ```
-
-
 ```VB.NET
 	Public Class CustomMenuItem
 	    Implements IRadialMenuItem
@@ -98,8 +96,6 @@ The next thing is to simply define the needed source collection of CustomMenuIte
 	    }
 	}
 ```
-
-
 ```VB.NET
 	Public Class ViewModel
 	        Inherits ViewModelBase

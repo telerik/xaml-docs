@@ -45,8 +45,6 @@ The __RadMap__ control supports the visualization of __ESRI Shapefiles__ and KML
 ```C#
 	this.informationLayer.Reader = new MapShapeReader();
 ```
-
-
 ```VB.NET
 	Me.informationLayer.Reader = New MapShapeReader()
 ```
@@ -102,8 +100,6 @@ Here is an examples for different __ToolTipFormat__ values.
 ```C#
 	this.informationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
 ```
-
-
 ```VB.NET
 	Me.informationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
 ```
@@ -133,8 +129,6 @@ Here is a snapshot of the result:
 ```C#
 	this.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
 ```
-    
-
 ```VB.NET
 	Me.informationLayer.Reader.ToolTipFormat = "{SQKM|F2} sq.km.";
 ```
@@ -164,8 +158,6 @@ Here is a snapshot of the result:
 ```C#
 	this.informationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|F2} sq.km.";
 ```
-
-
 ```VB.NET
 	Me.informationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|F2} sq.km."
 ```

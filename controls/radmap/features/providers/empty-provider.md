@@ -28,8 +28,6 @@ Here is an example of creating an __EmptyProivder__ and setting it to the __RadM
 	EmptyProvider provider = new EmptyProvider();
 	this.radMap.Provider = provider;
 ```
-
-
 ```VB.NET
 	Dim provider As New EmptyProvider()
 	Me.radMap.Provider = provider

@@ -53,11 +53,6 @@ To apply the style to the real control, set it to the __NoDataControl__ property
 ```C#
 	this.radChart.DefaultView.ChartArea.NoDataControlStyle = this.Resources["NoDataControlStyle"] as Style;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.NoDataControlStyle = TryCast(Me.Resources("NoDataControlStyle"), Style)
 ```

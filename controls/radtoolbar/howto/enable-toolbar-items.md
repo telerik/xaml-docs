@@ -42,8 +42,6 @@ If you want to disable all __RadToolBar__ items in code behind, you can traverse
 		}
 	}
 ```
-
-
 ```VB.NET
 	For Each o As Object In toolbar.Items
 		Dim control As Control = TryCast(o, Control)

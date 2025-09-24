@@ -62,9 +62,6 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	orderDateCountryGroupDescription.PropertyName = "OrderDate";
 	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
@@ -104,9 +101,6 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	orderDateCountryGroupDescription.PropertyName = "OrderDate";
 	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.None;
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
@@ -163,9 +157,6 @@ The sorting can be applied in the __XAML__, in the code behind or even at runtim
 	orderDateCountryGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending;
 	orderDateCountryGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
 ```
-
-
-
 ```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"

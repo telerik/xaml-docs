@@ -59,11 +59,6 @@ You can do this in code-behind too.
 	this.radChart.DefaultView.ChartArea.AxisX.MinorTickPointMultiplier = 3;
 	this.radChart.DefaultView.ChartArea.AxisX.MinorTicksVisibility = System.Windows.Visibility.Visible;
 ```
-
-
-
-
-
 ```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.MajorTicksVisibility = System.Windows.Visibility.Collapsed
 	Me.radChart.DefaultView.ChartArea.AxisX.MinorTickPointMultiplier = 3

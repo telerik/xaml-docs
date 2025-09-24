@@ -40,11 +40,6 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 	radChart.ExportToExcelML( fileStream );
 	fileStream.Close();
 ```
-
-
-
-
-
 ```VB.NET
 	Dim dialog As New SaveFileDialog()
 	dialog.DefaultExt = "*.xls"
@@ -70,11 +65,6 @@ The following example demonstrates how to export __RadChart__ to ExcelML file fo
 	radChart.ExportToExcelML(dialog.FileName);
 	fileStream.Close();
 ```
-
-
-
-
-
 ```VB.NET
 	Dim dialog As New SaveFileDialog()
 	dialog.DefaultExt = "*.xls"

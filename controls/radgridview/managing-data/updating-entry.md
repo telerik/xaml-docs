@@ -19,9 +19,6 @@ There are three ways for the row to enter edit mode. The first one is when the u
 ```C#
 	this.radGridView.BeginEdit();
 ```
-
-
-
 ```VB.NET
 	Me.radGridView.BeginEdit()
 ```
@@ -50,9 +47,6 @@ And in the event handler call the method for the Click event.
 	    this.radGridView.BeginEdit();
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.radGridView.BeginEdit()
@@ -86,9 +80,6 @@ The __BeginningEdit__ event is raised before the row enters edit mode. In the ev
 	{
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As GridViewBeginningEditRoutedEventArgs)
 	End Sub
@@ -113,9 +104,6 @@ Via the __GridViewRowEditEndedEventArgs__ class you can access the __EditAction_
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 	    If e.EditAction = GridViewEditAction.Cancel Then

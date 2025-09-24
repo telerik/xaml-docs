@@ -63,9 +63,6 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 	    }
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub gridView_AutoGeneratingColumn(sender As Object, e As GridViewAutoGeneratingColumnEventArgs)
 	    Dim dataColumn = TryCast(e.Column, GridViewDataColumn)

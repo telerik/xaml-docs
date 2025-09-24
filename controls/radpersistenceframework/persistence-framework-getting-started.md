@@ -83,8 +83,6 @@ The above definition will prepare the __RadTreeView__ control and all its UI rel
 	IsolatedStorageProvider isoProvider = new IsolatedStorageProvider();
 	isoProvider.SaveToStorage();
 ```
-
-
 ```VB.NET
 	Dim isoProvider As New IsolatedStorageProvider()
 	isoProvider.SaveToStorage()
@@ -135,8 +133,6 @@ you can save the __treeView__ properties in a stream like so:
 	 stream = manager.Save(treeView); 
 	}
 ```
-
-
 ```VB.NET
 	Private stream As Stream
 	
@@ -157,8 +153,6 @@ Later the layout of the __RadTreeView__ can be restored through the __Load()__ m
 	 manager.Load(treeView, stream);
 	}
 ```
-
-
 ```VB.NET
 	Private Sub Load(sender As Object, e As RoutedEventArgs)
 		stream.Position = 0L

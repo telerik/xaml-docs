@@ -73,9 +73,6 @@ There are two things you should pay attention to: First is the declaration of th
 		}
 	}
 ```
-
-
-
 ```VB.NET
 	Public Class ProductSales
 	    Public Sub New(ByVal quantity As Integer, ByVal month As Integer, ByVal monthName As String)
@@ -138,9 +135,6 @@ There are two things you should pay attention to: First is the declaration of th
 	    return persons;
 	}
 ```
-
-
-
 ```VB.NET
 	Private Function CreateData() As List(Of ProductSales)
 	    Dim persons As New List(Of ProductSales)()
@@ -195,9 +189,6 @@ There are two things you should pay attention to: First is the declaration of th
 	radChart.SeriesMappings.Add( seriesMapping );
 	this.radChart.ItemsSource = this.CreateData();
 ```
-
-
-
 ```VB.NET
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.LegendLabel = "Product Sales"
@@ -217,9 +208,6 @@ In the source code above one instance of the class __SeriesMapping__ is created 
 ```C#
 	this.radChart.ItemsSource = this.CreateData();
 ```
-
-
-
 ```VB.NET
 	Me.radChart.ItemsSource = Me.CreateData()
 ```
@@ -256,9 +244,6 @@ The __X-axis__ can be further customized by replacing the month numbers (1, 2, 3
 ```C#
 	seriesMapping.ItemMappings.Add(new ItemMapping("MonthName", DataPointMember.XCategory));
 ```
-
-
-
 ```VB.NET
 	seriesMapping.ItemMappings.Add(New ItemMapping("MonthName", DataPointMember.XCategory))
 ```

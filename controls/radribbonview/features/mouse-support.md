@@ -49,8 +49,6 @@ And also from the code-behind:
 ```C#
 	radRibbonView.MouseWheel+=new MouseWheelEventHandler(radRibbonView_MouseWheel);
 ```
-
-
 ```VB.NET
 	radRibbonView.MouseWheel += New MouseWheelEventHandler(radRibbonView_MouseWheel)
 ```
@@ -64,9 +62,6 @@ The implementation of the event handler __radRibbonView_MouseWheel()__ is locate
 		MessageBox.Show("The mouse wheel has changed: " + e.Delta);
 	}
 ```
-
-
-
 ```VB.NET
 	Private Sub radRibbonView_MouseWheel(sender As Object, e As MouseWheelEventArgs)
 		MessageBox.Show("The mouse wheel has changed: " & Convert.ToString(e.Delta))

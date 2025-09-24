@@ -93,11 +93,6 @@ The example below shows candlestick chart bound to a collection of __TradeData__
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Public Class TradeData
 	    Public Property Emission() As String
@@ -489,11 +484,6 @@ You can construct more complex tooltips combining several tokens, for example: _
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Close", DataPointMember.Close) );
 	radChart.SeriesMappings.Add( seriesMapping );
 ```
-
-
-
-
-
 ```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	Dim seriesMapping As New SeriesMapping()
@@ -675,11 +665,6 @@ In the code-behind, there are a few properties - each one is setting the value o
 	    }
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Partial Public Class StockToolTipControl
 	    Inherits UserControl
@@ -776,11 +761,6 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	    tooltip.Content = stockToolTip;
 	}
 ```
-
-
-
-
-
 ```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
 	    Dim tradeData As TradeData = TryCast(e.DataPoint.DataItem, TradeData)

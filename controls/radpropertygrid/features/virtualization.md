@@ -22,7 +22,7 @@ Here is a simple RadPropertyGrid declaration.
 
 __Example 1: Defining RadPropertyGrid__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
 ```
 
@@ -30,7 +30,7 @@ RadPropertyGrid is populated with 10 000 rows.
 
 __Example 2: Populating RadPropertyGrid__
 
-	```C#
+```C#
 	this.propertyGrid1.Item = this.GetVeryLargeDataSource();
 ```
 ```VB.NET
@@ -42,7 +42,7 @@ Finally, in order to enable the __UI Virtualization__ behavior, you should set t
 
 __Example 3: Setting IsVirtualizing property__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid IsVirtualizing="True" />
 ```
 

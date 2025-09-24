@@ -31,7 +31,9 @@ __Example 2: Enable column resizing in code-behind__
     Me.pivotGrid.CanUserResizeColumns = True
 ```
 
-{% figure 1, "Resizing RadPivotGrid's columns", "column-resizing.gif" %}
+__Resizing RadPivotGrid's columns__
+
+![](images/column-resizing.gif)
 
 As can be observed in **Figure 1**, when the content of a header is wider than that of its parent column, it will be trimmed and continued with an ellipsis at the character closest to the trimming edge. Double-clicking the column divider will in turn resize the column to autofit the content.
 

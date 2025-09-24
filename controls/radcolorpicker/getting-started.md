@@ -90,7 +90,7 @@ You can populate the __RadColorSelector__  with any of the built-in palettes usi
 		RadColorPicker colorPicker = new RadColorPicker();
 		colorPicker.MainPalette = ColorPreset.Grayscale;
 	```
-```VB.NET
+	```VB.NET
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.MainPalette = ColorPreset.Grayscale
 	```
@@ -107,7 +107,7 @@ You can populate the __RadColorSelector__  with any of the built-in palettes usi
 		RadColorPicker colorPicker = new RadColorPicker();
 		colorPicker.HeaderPalette = ColorPreset.Office;
 	```
-```VB.NET
+	```VB.NET
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.HeaderPalette = ColorPreset.Office
 	```
@@ -124,7 +124,7 @@ You can populate the __RadColorSelector__  with any of the built-in palettes usi
 		RadColorPicker colorPicker = new RadColorPicker();
 		colorPicker.StandardPalette = ColorPreset.Standard;
 	```
-```VB.NET
+	```VB.NET
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.StandardPalette = ColorPreset.Standard
 	```
@@ -148,7 +148,7 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 		colors.Add(Colors.Blue);
 		colorPicker.StandardPaletteItemsSource = colors;
 	```
-```VB.NET
+	```VB.NET
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.StandardPaletteVisibility = Visibility.Visible
 		Dim colors1 As New Collection(Of Color)()
@@ -175,7 +175,7 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 		colors.Add(Colors.Blue);
 		colorPicker.HeaderPaletteItemsSource = colors;
 	```
-```VB.NET
+	```VB.NET
 		Dim colorPicker As New RadColorPicker()
 		colorPicker.HeaderPaletteVisibility = Visibility.Visible
 		Dim colors1 As New Collection(Of Color)()
@@ -201,7 +201,7 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 		colors.Add(Colors.Blue);
 		colorPicker.MainPaletteItemsSource = colors;
 	```
-```VB.NET
+	```VB.NET
 		Dim colorPicker As New RadColorPicker()
 		Dim colors1 As New Collection(Of Color)()
 		colors1.Add(Colors.Red)
@@ -239,44 +239,6 @@ If you prefer to use your own collection of Colors you can always use __HeaderPa
 * __IsRecentColorsActive__ - defines wether a customized color, not existing in the MainPalette, HeaderPalette, StandartPalette or RecentPalette should be added in the RecentColorsPaletteView. If there is such a color this palette will be visible.			
 
 * __AdditionalContent__ - can be used to add customized content under RadColorPicker control.
-
-## Setting a Theme
-
-The controls from our suite support different themes. You can see how to apply a theme different than the default one in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) help article.
-
->important Changing the theme using implicit styles will affect all controls that have styles defined in the merged resource dictionaries. This is applicable only for the controls in the scope in which the resources are merged. 
-
-To change the theme, you can follow the steps below:
-
-* Choose between the themes and add reference to the corresponding theme assembly (ex: **Telerik.Windows.Themes.Windows8.dll**). You can see the different themes applied in the **Theming** examples from our {% if site.site_name == 'WPF' %}[WPF Controls Examples](https://demos.telerik.com/wpf/){% else %}[Silverlight Controls Examples](https://demos.telerik.com/silverlight/#ColorPicker/Theming){% endif %} application.
-
-* Merge the ResourceDictionaries with the namespace required for the controls that you are using from the theme assembly. For the __RadColorPicker__, you will need to merge the following resources:
-
-	* __Telerik.Windows.Controls__
-	* __Telerik.Windows.Controls.Input__
-
-__Example 16__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
-
-__Example 16: Merge the ResourceDictionaries__  
-```XAML
-	<Application.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/System.Windows.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.xaml"/>
-				<ResourceDictionary Source="/Telerik.Windows.Themes.Windows8;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Application.Resources>
-```
-
->Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
-
-__Figure 1__ shows a __RadColorPicker__ with the **Windows8** theme applied.
-	
-#### __Figure 1: RadColorPicker with the Windows8 theme__
-![RadColorPicker with Windows8 theme](radcolorpicker-setting-theme.png)
-
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

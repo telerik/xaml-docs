@@ -16,8 +16,6 @@ We will demonstrate this functionality implemented within a simple ListBox. For 
 
 1. Create a ListBox with ItemTemplate and implicit Style for the ListBox Items:
 
-	#### __XAML__
-
 	```XAML
 		<Grid x:Name="LayoutRoot" Background="White">
 			 <Grid.Resources>
@@ -37,8 +35,6 @@ We will demonstrate this functionality implemented within a simple ListBox. For 
 
 2. Bind ListBox to simple data and subscribe to DragInitialize event:
 
-	#### __C#__
-
 	```C#
 		public MainPage()
 		{
@@ -47,9 +43,6 @@ We will demonstrate this functionality implemented within a simple ListBox. For 
 			  DragDropManager.AddDragInitializeHandler(SampleListBox, OnDragInitialize);
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Public Sub New()
 		 InitializeComponent()
@@ -71,9 +64,6 @@ We will demonstrate this functionality implemented within a simple ListBox. For 
 			args.Handled = true;
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Sub OnDragInitialize(ByVal sender As Object, ByVal args As DragInitializeEventArgs)
 			args.Data = DirectCast(args.OriginalSource, FrameworkElement).DataContext

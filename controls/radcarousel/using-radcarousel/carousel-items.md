@@ -59,8 +59,6 @@ Using the fact that all data items are automatically wrapped inside a __Carousel
 	</Style>
 ```
 
-
-
 ## Displaying Visual Cues for Selected Items
 
 The above style will make all carousel items look identical. If you need selection logic in your RadCarousel control, you will most certainly want selected items to appear different than the rest. To implement that, you need to use a trigger in your __CarouselItem__ style and modify your appearance according to the __IsSelected__ property value. The example below adds a trigger to the __CarouselItem__ control template to change the two Border elements' background color when the respective __CarouselItem__ has been selected:
@@ -93,8 +91,6 @@ The above style will make all carousel items look identical. If you need selecti
 	  </Trigger>
 	</ControlTemplate.Triggers>
 ```
-
-
 
 ##  Data Record Presenters
 
@@ -132,5 +128,3 @@ Remember the __ContentPresenter__ control that we used in our __CarouselItem__ c
 	  </Setter>
 	</Style>
 ```
-
-

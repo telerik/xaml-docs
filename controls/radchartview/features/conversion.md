@@ -22,9 +22,6 @@ The DataTuple class has two properties: FirstValue and SecondValue, both of type
         
 
 Here is a RadCartesianChart example:
-        
-
-#### __C#__
 
 ```C#
 	private void UIElement_MouseMove(object sender, MouseEventArgs e)
@@ -36,12 +33,7 @@ Here is a RadCartesianChart example:
 	    double Value = (double)tuple.SecondValue;
 	    //...
 	}
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Private Sub UIElement_MouseMove(sender As Object, e As MouseEventArgs)
 		Dim mousePosition As Point = e.GetPosition(radCartesianChart1)
@@ -51,9 +43,7 @@ Here is a RadCartesianChart example:
 		Dim Value As Double = CDbl(tuple.SecondValue)
 		'...
 	End Sub
-	```
-
-
+```
 
 The RadCartesianChart provides an overloaded version of the __ConvertPointToData__ method, which besides a System.Windows.Point, takes a two other arguments - references to a Horizontal and a Vertical axes. This allows the user to get information relative to the specified axes (often different then the default ones), enabling the use of additional axes.
         

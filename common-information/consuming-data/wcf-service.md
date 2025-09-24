@@ -55,47 +55,14 @@ Creating new instance of the service is a pretty simple process.
 
 ```C#
 	WcfService.SampleWcfServiceClient serviceClient = new WcfService.SampleWcfServiceClient();
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim serviceClient As New WcfService.SampleWcfServiceClient()
-	```
-
-
+```
 
 >tipDon't forget to give a meaningful name for your WCF Service namespace. In the previous example the namespace is "WcfService".
 
-## Making Asynchronous Call to the Service{% if site.site_name == 'Silverlight' %}
-
-In Silverlight all service calls are performed asynchronously. In order to make an asynchronous call to your service you need to do the following steps:
-
-* Attach to the event fired when the executed method completes.
-
-* Execute the method asynchronously.{% endif %}{% if site.site_name == 'Silverlight' %}
-
-Here is a sample code showing how this can be achieved:
-
-#### __C#__
-
-```C#
-	serviceClient.LoadCategoriesCompleted += new EventHandler<LoadCategoriesCompletedEventArgs>( serviceClient_LoadCategoriesCompleted );
-	serviceClient.LoadCategoriesAsync();
-	```
-
-
-
-#### __VB.NET__
-
-```VB.NET
-	AddHandler serviceClient.LoadCategoriesCompleted, AddressOf serviceClient_LoadCategoriesCompleted
-	serviceClient.LoadCategoriesAsync()
-	```
-
-{% endif %}{% if site.site_name == 'WPF' %}
+## Making Asynchronous Call to the Service
 
 In order to make a call to your service, you just need to invoke the exposed by the service method:
 
@@ -106,28 +73,12 @@ In order to make a call to your service, you just need to invoke the exposed by 
 	{
 	    this.Categories.Add( c );
 	}
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	For Each c As Categories In serviceClient.LoadCategories()
 	    Me.Categories.Add(c)
 	Next
-	```
+```
 
-{% endif %}
-
-## See Also
-
+## See Also  
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})
-
- {% if site.site_name == 'Silverlight' %} 
- * [Consuming Web (asmx) Service]({%slug consuming-data-web-asmx-service%})
-{% endif %}
-
- {% if site.site_name == 'Silverlight' %} 
- * [Consuming .NET RIA Service]({%slug consuming-data-net-ria-service%})
- {% endif %}

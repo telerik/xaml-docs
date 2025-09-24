@@ -16,7 +16,6 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 
 * __North-West__ - the RadRadialGauge control has a template which represents north-west oriented quadrant circle.          
 
-	#### __XAML__
 	```XAML
 		<telerik:RadQuadrantNWGauge Width="120" Height="120" telerik:StyleManager.Theme="Windows8">
 			<telerik:QuadrantNWScale Min="0" Max="50" MajorTickStep="10">
@@ -32,7 +31,6 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 
 * __North-East__ - the RadRadialGauge control has a template which represents north-east oriented quadrant circle.          
 
-	#### __XAML__
 	```XAML
 		<telerik:RadQuadrantNEGauge Width="120" Height="120" telerik:StyleManager.Theme="Windows8">
 			<telerik:QuadrantNEScale Min="0" Max="50" MajorTickStep="10">
@@ -48,7 +46,6 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 
 * __South-East__ - the RadRadialGauge control has a template which represents south-east oriented quadrant circle.
 
-	#### __XAML__
 	```XAML
 		<telerik:RadQuadrantSEGauge Width="120" Height="120" telerik:StyleManager.Theme="Windows8">
 			<telerik:QuadrantSEScale Min="0" Max="50" MajorTickStep="10">
@@ -64,7 +61,6 @@ For the purpose the RadRadialGauge object exposes an enumerable with 4 orientati
 
 * __South-West__ - the RadRadialGauge control has a template which represents south-west oriented quadrant circle.          
 
-	#### __XAML__
 	```XAML
 		<telerik:RadQuadrantSWGauge Width="120" Height="120" telerik:StyleManager.Theme="Windows8">
 			<telerik:QuadrantSWScale Min="0" Max="50" MajorTickStep="10" >

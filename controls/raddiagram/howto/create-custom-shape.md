@@ -26,36 +26,6 @@ Let's take this step by step:
 
 	Name the new control *CustomShape* and click OK. This action will create two new files in your application - a class file and a Generic.xaml file with the default style of your custom control.
 	
-	{% if site.site_name == 'Silverlight' %}
-	#### __C#__	
-	```C#
-		public class CustomShape : Control
-		{
-			public CustomShape()
-			{
-				this.DefaultStyleKey = typeof(CustomShape);
-			}
-		}
-	```
-	
-	#### __XAML__
-	```XAML
-		<Style TargetType="{x:Type local:CustomShape}">
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="{x:Type local:CustomShape}">
-						<Border Background="{TemplateBinding Background}"
-								BorderBrush="{TemplateBinding BorderBrush}"
-								BorderThickness="{TemplateBinding BorderThickness}">
-						</Border>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>				
-	```
-	{% endif %}
-	{% if site.site_name == 'WPF' %}	
-	#### __C#__	
 	```C#
 		public class CustomShape : Control
 		{
@@ -65,8 +35,7 @@ Let's take this step by step:
 			}
 		}	
 	```
-
-	#### __XAML__
+	
 	```XAML
 		<Style TargetType="{x:Type local:CustomShape}">
 			<Setter Property="Template">
@@ -81,11 +50,9 @@ Let's take this step by step:
 			</Setter>
 		</Style>
 	```
-	{% endif %}
 
 * Change the type of the __CustomShape__ class to derive from __RadDiagramShapeBase__:			
 
-	#### __C#__
 	```C#
 		public class CustomShape : Telerik.Windows.Controls.Diagrams.RadDiagramShapeBase
 		{
@@ -95,7 +62,6 @@ Let's take this step by step:
 	
 * Modify the default __ControlTemplate__ of the __CustomShape__ to better fit your needs. In this tutorial we will create a radio station loading shape which displays the name and frequency of a radio station. It also indicates the current loading process and the rating of the station. Below you can find the custom __Style__ for that shape:			
 
-	#### __XAML__
 	```XAML
 		<Style TargetType="local:CustomShape">
 			<Setter Property="BorderThickness" Value="4" />
@@ -208,7 +174,6 @@ Let's take this step by step:
 		
 * Now that your custom control is defined and its __ControlTemplate__ is customized, you can use it as a shape in your Diagramming drawing canvas:			
 
-	#### __XAML__
 	```XAML
         <telerik:RadDiagram>
             <local:CustomShape />
@@ -224,7 +189,6 @@ Please note that in case you need to bind the __RadDiagram__ control to a collec
 
 > In scenarios where you want to create custom container shapes, you can override the GetShapeContainerForItemOverridem method of the RadDiagram. Inside the method, you can return your custom container shape.
 
-#### __C#__
 ```C#
 	public class CustomDiagram : RadDiagram
 	{
@@ -239,8 +203,6 @@ Please note that in case you need to bind the __RadDiagram__ control to a collec
 		}
 	}			  
 ```
-			  
-#### __VB.NET__	
 ```VB.NET
 	Public Class CustomDiagram
 		Inherits RadDiagram

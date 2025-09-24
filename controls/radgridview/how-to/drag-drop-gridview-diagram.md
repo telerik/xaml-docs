@@ -21,47 +21,47 @@ First we will specify the following ViewModels which are going to be used to pop
 * __MainViewModel:__ The main ViewModel class of the application.
 	
 __Example 1: Creating ViewModels__
-	```C#	
-		public class Employee
+```C#	
+	public class Employee
+	{
+		public Employee(string firstName, string lastName)
 		{
-			public Employee(string firstName, string lastName)
-			{
-				this.FirstName = firstName;
-				this.LastName = lastName;
-			}
-			public string FirstName { get; set; }
-			public string LastName { get; set; }
-		}		
-		public class EmployeeGraphSource : ObservableGraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
-		{
+			this.FirstName = firstName;
+			this.LastName = lastName;
 		}
-		public class MainViewModel
+		public string FirstName { get; set; }
+		public string LastName { get; set; }
+	}		
+	public class EmployeeGraphSource : ObservableGraphSourceBase<NodeViewModelBase, LinkViewModelBase<NodeViewModelBase>>
+	{
+	}
+	public class MainViewModel
+	{
+		public EmployeeGraphSource EmployeeGraphSource { get; set; }
+		public ObservableCollection<Employee> EmployeeData { get; set; }
+
+		public MainViewModel()
 		{
-			public EmployeeGraphSource EmployeeGraphSource { get; set; }
-			public ObservableCollection<Employee> EmployeeData { get; set; }
-
-			public MainViewModel()
-			{
-				EmployeeData = GetEmployee();
-				EmployeeGraphSource = new EmployeeGraphSource();
-			}
-
-			private ObservableCollection<Employee> GetEmployee()
-			{
-				var data = new ObservableCollection<Employee>();
-				data.Add(new Employee("Nancy", "Davolio"));
-				data.Add(new Employee("Andrew", "Fuller"));
-				data.Add(new Employee("Janet", "Leverling"));
-				data.Add(new Employee("Margaret", "Peacock"));
-				data.Add(new Employee("Steven", "Buchanan"));
-				data.Add(new Employee("Michael", "Suyama"));
-				data.Add(new Employee("Robert", "King"));
-				data.Add(new Employee("Laura", "Callahan"));
-				data.Add(new Employee("Anne", "Dodsworth"));
-				return data;
-			}
+			EmployeeData = GetEmployee();
+			EmployeeGraphSource = new EmployeeGraphSource();
 		}
-	```
+
+		private ObservableCollection<Employee> GetEmployee()
+		{
+			var data = new ObservableCollection<Employee>();
+			data.Add(new Employee("Nancy", "Davolio"));
+			data.Add(new Employee("Andrew", "Fuller"));
+			data.Add(new Employee("Janet", "Leverling"));
+			data.Add(new Employee("Margaret", "Peacock"));
+			data.Add(new Employee("Steven", "Buchanan"));
+			data.Add(new Employee("Michael", "Suyama"));
+			data.Add(new Employee("Robert", "King"));
+			data.Add(new Employee("Laura", "Callahan"));
+			data.Add(new Employee("Anne", "Dodsworth"));
+			return data;
+		}
+	}
+```
 
 Next, we can go ahead and define the __RadDiagram__ and __RadGridView__ controls in our view:
 
@@ -115,13 +115,13 @@ __Example 2: Defining RadDiagram and RadGridView in XAML__
 And finally, we need to set the DataContext of the MainWindow:
 
 __Example 3: Setting DataContext__
-	```C#	
-		public MainWindow()
-        {
-            InitializeComponent();
-            this.DataContext = new MainViewModel();
-        }
-	```	
+```C#	
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.DataContext = new MainViewModel();
+	}
+```	
 
 If you run the application now, you should get a structure like in **Figure 1**:
 

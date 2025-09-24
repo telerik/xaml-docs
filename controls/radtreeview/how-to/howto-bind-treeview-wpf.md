@@ -22,8 +22,6 @@ This tutorial will show you two of them:
 
 1. Define a XML source:
 
-	#### __XAML__
-
 	```XAML
 		<?xml version="1.0" encoding="UTF-8"?>
 		<Artists>
@@ -157,8 +155,6 @@ This tutorial will show you two of them:
 
 2. Define __HierarchicalDataTemplates__, which will "tell" the __RadTreeView__ how to display the XML data.
 
-	#### __XAML__
-
 	```XAML
 		<HierarchicalDataTemplate DataType="Artist"    
 			ItemsSource="{Binding XPath=Albums/Album}">
@@ -179,16 +175,12 @@ This tutorial will show you two of them:
 
 3. To define the XML data you should use a __XMLDataProvider__. You need to point the __Source__ property to the XML file and set the __XPath__ property to the root element of the XML.
 
-	#### __XAML__
-
 	```XAML
 		<XmlDataProvider x:Key="XmlDataProvider"
 			XPath="/Artists" Source="Artists.xml"/>
 	```
 
 4. Set the __ItemsSource__ property of the __RadTreeView__.
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
@@ -208,8 +200,6 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 1. Define your data.
 
 	* Create a class named __Animal__, which have two properties - __Name__ and __Category__.			
-
-		#### __C#__
 
 		```C#
 				public class Animal
@@ -231,9 +221,6 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 					}
 				}
 		```
-
-		#### __VB.NET__
-
 		```VB.NET
 				Public Class Animal
 					Public Sub New(ByVal name As String, ByVal category As Category)
@@ -265,22 +252,17 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 
 		The __Category__ property is of type __Category__ which is an enumeration.
 
-		#### __C#__
-
 		```C#
-				public enum Category
-				{
-					Amphibians,
-					Bears,
-					Canines,
-					Spiders,
-					Primates,
-					BigCats
-				}
+			public enum Category
+			{
+				Amphibians,
+				Bears,
+				Canines,
+				Spiders,
+				Primates,
+				BigCats
+			}
 		```
-
-		#### __VB.NET__
-
 		```VB.NET
 				Public Enum Category
 					Amphibians
@@ -294,59 +276,54 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 
 	* Create some sample data					
 
-		#### __C#__
-
 		```C#
-				public class Animal
+			public class Animal
+			{
+				public Animal(string name, Category category)
 				{
-					public Animal(string name, Category category)
+					this.Name = name;
+					this.Category = category;
+				}
+				public string Name
+				{
+					get;
+					set;
+				}
+				public Category Category
+				{
+					get;
+					set;
+				}
+				public IEnumerable<Animal> AnimalList
+				{
+					get
 					{
-						this.Name = name;
-						this.Category = category;
-					}
-					public string Name
-					{
-						get;
-						set;
-					}
-					public Category Category
-					{
-						get;
-						set;
-					}
-					public IEnumerable<Animal> AnimalList
-					{
-						get
-						{
-							List<Animal> animalList = new List<Animal>();
-							animalList.Add(new Animal("California Newt", Category.Amphibians));
-							animalList.Add(new Animal("Giant Panda", Category.Bears));
-							animalList.Add(new Animal("Coyote", Category.Canines));
-							animalList.Add(new Animal("Golden Silk Spader", Category.Spiders));
-							animalList.Add(new Animal("Mandrill", Category.Primates));
-							animalList.Add(new Animal("Black Bear", Category.Bears));
-							animalList.Add(new Animal("Jaguar", Category.BigCats));
-							animalList.Add(new Animal("Bornean Gibbon", Category.Primates));
-							animalList.Add(new Animal("African Wildcat", Category.BigCats));
-							animalList.Add(new Animal("Artic Fox", Category.Canines));
-							animalList.Add(new Animal("Tomato Frog", Category.Amphibians));
-							animalList.Add(new Animal("Grizzly Bear", Category.Bears));
-							animalList.Add(new Animal("Dingo", Category.Canines));
-							animalList.Add(new Animal("Gorilla", Category.Primates));
-							animalList.Add(new Animal("Green Tree Frog", Category.Amphibians));
-							animalList.Add(new Animal("Bald Vakari", Category.Primates));
-							animalList.Add(new Animal("Polar Bear", Category.Bears));
-							animalList.Add(new Animal("Black Widow Spider", Category.Spiders));
-							animalList.Add(new Animal("Bat-Eared Fox", Category.Canines));
-							animalList.Add(new Animal("Cheetah", Category.BigCats));
-							return animalList.AsEnumerable();
-						}
+						List<Animal> animalList = new List<Animal>();
+						animalList.Add(new Animal("California Newt", Category.Amphibians));
+						animalList.Add(new Animal("Giant Panda", Category.Bears));
+						animalList.Add(new Animal("Coyote", Category.Canines));
+						animalList.Add(new Animal("Golden Silk Spader", Category.Spiders));
+						animalList.Add(new Animal("Mandrill", Category.Primates));
+						animalList.Add(new Animal("Black Bear", Category.Bears));
+						animalList.Add(new Animal("Jaguar", Category.BigCats));
+						animalList.Add(new Animal("Bornean Gibbon", Category.Primates));
+						animalList.Add(new Animal("African Wildcat", Category.BigCats));
+						animalList.Add(new Animal("Artic Fox", Category.Canines));
+						animalList.Add(new Animal("Tomato Frog", Category.Amphibians));
+						animalList.Add(new Animal("Grizzly Bear", Category.Bears));
+						animalList.Add(new Animal("Dingo", Category.Canines));
+						animalList.Add(new Animal("Gorilla", Category.Primates));
+						animalList.Add(new Animal("Green Tree Frog", Category.Amphibians));
+						animalList.Add(new Animal("Bald Vakari", Category.Primates));
+						animalList.Add(new Animal("Polar Bear", Category.Bears));
+						animalList.Add(new Animal("Black Widow Spider", Category.Spiders));
+						animalList.Add(new Animal("Bat-Eared Fox", Category.Canines));
+						animalList.Add(new Animal("Cheetah", Category.BigCats));
+						return animalList.AsEnumerable();
 					}
 				}
+			}
 		```
-
-		#### __VB.NET__
-
 		```VB.NET
 				Public Class Animal
 					Public Sub New(ByVal name As String, ByVal category As Category)
@@ -409,8 +386,6 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 	* Set the __Source__ property to point to our collection.
 	* Set the grouping using the __GroupDescriptions__.			
 
-		#### __XAML__
-
 		```XAML
 			<sampleData:Animal x:Key="AnimalCollection"/>
 			
@@ -423,8 +398,6 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 		```  
 
 3. Create data templates.  
-
-	#### __XAML__
 
 	```XAML
 		<DataTemplate x:Key="AnimalTemplate">
@@ -439,8 +412,6 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 	```  
 
 4. Set the __RadTreeView__ to point to the __CollectionViewSource__.  
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"

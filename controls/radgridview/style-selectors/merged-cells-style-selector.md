@@ -18,7 +18,7 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 
 __Example 1: The StadiumCapacityStyleSelector class__
 
-	```C#
+```C#
 	public class StadiumCapacityStyleSelector : StyleSelector
     {
         public override Style SelectStyle(object item, DependencyObject container)
@@ -42,7 +42,7 @@ __Example 1: The StadiumCapacityStyleSelector class__
         public Style BigStadiumStyle { get; set; }
         public Style SmallStadiumStyle { get; set; }
     }
-	```
+```
 ```VB.NET
 	Public Class StadiumCapacityStyleSelector
 		Inherits StyleSelector
@@ -78,13 +78,13 @@ __Example 1: The StadiumCapacityStyleSelector class__
 		End Property
 		Private m_SmallStadiumStyle As Style
 	End Class
-	```
+```
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigStadiumStyle** and **SmallStadiumStyle**:
 
 __Example 2: Setting the BigStadiumStyle and SmallStadiumStyle__
 
-	```XAML
+```XAML
 	<Grid.Resources>
         <my:StadiumCapacityStyleSelector x:Key="StadiumCapacityStyleSelector">
             <my:StadiumCapacityStyleSelector.BigStadiumStyle>
@@ -99,7 +99,7 @@ __Example 2: Setting the BigStadiumStyle and SmallStadiumStyle__
             </my:StadiumCapacityStyleSelector.SmallStadiumStyle>
         </my:StadiumCapacityStyleSelector>
 	</Grid.Resources>
-	```
+```
 
 >The **"my:"** prefix before **StadiumCapacityStyleSelector** specifies the mapping for the namespace of the project: **xmlns:my="..."**
 
@@ -107,9 +107,9 @@ Finally, set the **MergedCellsStyleSelector** property:
 
 __Example 3: Setting the MergedCellsStyleSelector property__
 
-	```XAML
+```XAML
 	<telerik:RadGridView MergedCellsDirection="Vertical" MergedCellsStyleSelector="{StaticResource StadiumCapacityStyleSelector}" />
-	```
+```
 
 And here is the final result:
 

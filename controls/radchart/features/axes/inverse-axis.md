@@ -60,9 +60,6 @@ The following sample code will show you how this can be achieved:
 	barSeries.Add(new DataPoint() { YValue = 80, XCategory = "Dec" });
 	this.radChart.DefaultView.ChartArea.DataSeries.Add(barSeries);
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	InitializeComponent()
 	Dim lineSeries As New DataSeries()
@@ -170,14 +167,10 @@ The following sample code will show you how this can be achieved:
 	    dataPoint.XCategory = "Dec"
 	    barSeries.Add(dataPoint)
 	    telerikChart.DefaultView.ChartArea.DataSeries.Add(barSeries)
-	```
-
-
+```
 
 Note the __IsInverse__ property of the YAxis which is __false__ by default. Turned on it will reverse the axis. The picture shows it in action:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_InverseAxis.PNG)
-
-For a sample with databound Chart - take a look at our Inverse Axis [demo](https://demos.telerik.com/silverlight/#Chart/InverseAxis).
 
 Optionally you may inverse the XAxis too - it will display the categories from Dec to Jan:
 
@@ -186,14 +179,9 @@ Optionally you may inverse the XAxis too - it will display the categories from D
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.IsInverse = true;
 ```
-
-
-
-#### __VB.NET__
-
 ```VB.NET
 	telerikChart.DefaultView.ChartArea.AxisX.IsInverse = true
-	```
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_InverseXAxis.PNG)
 

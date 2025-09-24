@@ -18,8 +18,6 @@ The __RadDiagram__ framework supports drag/drop operations out-of-the-box for a 
 
 To allow drag and drop functionality in the __RadDiagram__, set the __AllowDrop__ attribute to __True__.                
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadDiagram x:Name="xDiagram" AllowDrop="True">
 	    
@@ -28,13 +26,9 @@ To allow drag and drop functionality in the __RadDiagram__, set the __AllowDrop_
 
 The drag and drop behavior can be enabled in the code-behind as well. In order to do that you need to set the __AllowDrop__ property of an instance of the __RadDiagram__ class to __True__.                
 
-#### __C#__
-
 ```C#
 	xDiagram.AllowDrop = true;
 ```
-
-#### __VB.NET__
 ```VB.NET
     xDiagram.AllowDrop = True
 ```
@@ -71,8 +65,6 @@ By default, the __RadDiagram__ can handle drop operations out-of-the-box as long
 
 Let's examine a scenario where you create a __ListBox__ populated with __RadDiagramShapes__ and a __RadDiagram__ component next to it:                        
 
-#### __XAML__
-
 ```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
@@ -102,8 +94,6 @@ Let's examine a scenario where you create a __ListBox__ populated with __RadDiag
 
 In order to allow a drag of a __ListBoxItem__, you need to apply a style that makes the __ListBoxItems__ draggable:                        
 
-#### __XAML__
-
 ```XAML
 	<Style TargetType="ListBoxItem">
 	    <Setter Property="telerik:DragDropManager.AllowCapturedDrag" Value="True"/>
@@ -113,8 +103,6 @@ In order to allow a drag of a __ListBoxItem__, you need to apply a style that ma
 ![Rad Diagram Features DnD Shapes](images/RadDiagram_Features_DnD_Shapes.png)
 
 In this scenario, the __RadDiagram__ instance can automatically handle the drop of the __RadDiagramShapes__ as long as they are serialized. In order to serialize them you need to create a handler for the __ListBox DragDropManager.DragInitialized__ event:                        
-
-#### __C#__
 
 ```C#
 	
@@ -135,8 +123,6 @@ In this scenario, the __RadDiagram__ instance can automatically handle the drop 
 	    args.Data = serializaedInfo;
 	}
 ```
-
-#### __VB.NET__
 ```VB.NET
     Public Sub New()
         InitializeComponent()
@@ -157,8 +143,6 @@ In this scenario, the __RadDiagram__ instance can automatically handle the drop 
 ![Rad Diagram Features DnD Shapes Drag](images/RadDiagram_Features_DnD_Shapes_Drag.png)
 
 In the above example you can drag an entire __ListBoxItem__ but you may need to only drag the __RadDiagramShape__ contained within the item. In that case, you will have to create a custom style targeting the __RadDiagramShapes__ within the __ListBox__ control. Please note that you have to apply this style only on those shapes defined within the __ListBox__ control.                        
-
-#### __XAML__
 
 ```XAML
 	<ListBox x:Name="xListBox">
@@ -191,8 +175,6 @@ In the above example you can drag an entire __ListBoxItem__ but you may need to 
 
 And you will also have to slightly modify the __OnDragInitialize()__ implementation as it now looks for a __ListBoxItem__ as its __OriginalSource__. Once the __ListBoxItems__ aren't marked as draggable and only the shapes are defined as such, the __OriginalSource__ of the event will be a shape instance.                        
 
-#### __C#__
-
 ```C#
 	public DragDropExample()
 	{
@@ -211,8 +193,6 @@ And you will also have to slightly modify the __OnDragInitialize()__ implementat
 	    args.Data = serializaedInfo;
 	}
 ```
-
-#### __VB.NET__
 ```VB.NET
     Public Sub New()
         InitializeComponent()
@@ -238,7 +218,6 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 
 * First, let's create a sample data source for the __ListBox__:                                
 
-	#### __C#__
 	```C#
 		public class ApplicationInfo
 		{
@@ -320,8 +299,6 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 			}
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Public Class ApplicationInfo
 			Public Property Price() As [Double]
@@ -415,30 +392,16 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 	```
 * Now that we have defined our __MainViewModel__ class, we can use it as a __DataContext__ of our main view:
 
-	{% if site.site_name == 'WPF' %}
-
-	#### __XAML__
 	```XAML	
 		<Window.DataContext>
 			<local:MainViewModel />
 		</Window.DataContext>			  			  
 	```
-	{% endif %}
-	{% if site.site_name == 'Silverlight' %}
-
-	#### __XAML__
-	```XAML
-		<UserControl.DataContext>
-			<local:MainViewModel />
-		</UserControl.DataContext>
-	```
-	{% endif %}
 
 	>The *local* alias points to the namespace where the __MainViewModel__ class is defined.                                    
 
 * Next we can set up our layout. We will need a __ListBox__ definition and a __RadDiagram__ definition. Also, as we have to allow drag/drop operations between them, we need to apply the __DragDropManager.AllowCapturedDrag__ attached property on the __ListBoxItems__ and we can set the __AllowDrop__ property to __True__ in the __RadDiagram__ definition.                                
 
-	#### __XAML__
 	```XAML
 		 <Grid>
 				<Grid.ColumnDefinitions>
@@ -491,7 +454,6 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 
 * As the layout is all in place, we can go ahead and start implementing our dragging logic. For that purpose, we need to decide how to interpret the dragged items and what to pass as the __Data__ of the drag operation. We can implement this logic in the __DragInitialize__ event handler:                                
 
-	#### __C#__
 	```C#
 		public DragDropExample()
 		{
@@ -507,8 +469,6 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 			args.DragVisual = new ContentControl { Content = args.Data, ContentTemplate = this.Resources["ApplicationTemplate"] as DataTemplate };
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Public Sub New()
 			InitializeComponent()
@@ -526,10 +486,7 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 		End Sub
 	```
 	And the __ApplicationTemplate__ definition should be in the __Resources__ section of our view:
-                                
-	{% if site.site_name == 'WPF' %}
 
-	#### __XAML__
 	```XAML
 		<Window.Resources>
 			<DataTemplate x:Key="ApplicationTemplate">
@@ -543,74 +500,13 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 		</Window.Resources>	
 	```
 
-	{% endif %}{% if site.site_name == 'Silverlight' %}
-
-	#### __XAML__
-	```XAML
-		<UserControl.Resources>
-			<DataTemplate x:Key="ApplicationTemplate">
-				<StackPanel Orientation="Horizontal">
-					<Image Source="{Binding IconPath}" Stretch="None" />
-					<TextBlock Margin="5"
-							   VerticalAlignment="Center"
-							   Text="{Binding Name}" />
-				</StackPanel>
-			</DataTemplate>
-		</UserControl.Resources>
-	```
-
-	{% endif %}
-
 	>tip You can find more information about the features and events of the __DragDropManager__ in {% if site.site_name == 'WPF' %}[its documentation](http://www.telerik.com/help/wpf/dragdropmanager-getting-started.html){% endif %}{% if site.site_name == 'Silverlight' %}[its documentation](http://www.telerik.com/help/silverlight/dragdropmanager-getting-started.html){% endif %}.                                    
 
 * Finally, we need to customize the __RadDiagram__ drop logic to create a __RadDiagramShape__ to wrap the dragged data. We can also apply a __Position__ property on the __RadDiagramShape__ to reflect the exact position of the mouse during the drop.                                
 
 	>tip The easiest way to get the position of the mouse in the __Drop__ event handler is through the __DragEventsArgs GetPosition()__ method. However, as __RadDiagram__ supports different scaling operations (pan, zoom), you need to get the coordinates of the drop target point in the context of the __RadDiagram__. For that purpose you can use the __RadDiagram GetTransformedPoint__ extension method. It takes a point, applies any pan and/or zoom settings defined by the __RadDiagram__ current state and returns a point, transformed in the context of the diagram. This allows you to correctly position a __RadDiagramItem__ in a panned or zoomed diagramming surface.
 	Please note that the __GetTransformedPoint()__ extension method is defined in the __Telerik.Windows.Controls.Diagrams__ namespace so you need to include this namespace in your class definition before getting advantage of the method.
-
-	{% if site.site_name == 'Silverlight' %}
-
-	#### __C#__
-	```C#
-		public DragDropExample()
-		{
-			InitializeComponent();
-			DragDropManager.AddDropHandler(this.xDiagram, OnDiagramDrop);
-		}
-		
-		private void OnDiagramDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
-		{
-			e.Handled = true;
-			RadDiagramShape shape = new RadDiagramShape();
-			shape.Content = e.Data is ApplicationInfo ? (e.Data as ApplicationInfo).Name : e.Data.ToString();
-			var currentPosition = xDiagram.GetTransformedPoint(e.GetPosition(xDiagram));
-			shape.Position = new Point(currentPosition.X, currentPosition.Y);
-		
-			this.xDiagram.AddShape(shape);
-		}
-	```
-
-	#### __VB.NET__
-	```VB.NET
-		Public Sub New()
-			InitializeComponent()
-			DragDropManager.AddDropHandler(Me.xDiagram, AddressOf OnDiagramDrop)
-		End Sub
-
-		Private Sub OnDiagramDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
-			e.Handled = True
-			Dim shape As New RadDiagramShape()
-			shape.Content = If(TypeOf e.Data Is ApplicationInfo, TryCast(e.Data, ApplicationInfo).Name, e.Data.ToString())
-			Dim currentPosition = xDiagram.GetTransformedPoint(e.GetPosition(xDiagram))
-			shape.Position = New Point(currentPosition.X, currentPosition.Y)
-
-			Me.xDiagram.AddShape(shape)
-		End Sub
-	```
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-
-	#### __C#__
+	
 	```C#
 		public DragDropExample()
 		{
@@ -630,8 +526,6 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 			this.xDiagram.AddShape(shape);
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Public Sub New()
 			InitializeComponent()
@@ -649,7 +543,6 @@ For the purpose of this tutorial, we will examine a sample scenario describing h
 			Me.xDiagram.AddShape(shape)
 		End Sub
 	```
-	{% endif %}
 	
 	Please note that we've set the __Position__ property of the __RadDiagramShape__
 

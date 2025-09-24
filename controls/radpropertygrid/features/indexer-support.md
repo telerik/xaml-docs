@@ -26,7 +26,7 @@ For the purposes of this article, we will assume the following class hierarchy i
 
 __Example 1: The class hierarchy__
 
-	```C#
+```C#
 	public class League
 	{
 	    public string Name { get; set; }
@@ -81,7 +81,7 @@ A common scenario when using RadPropertyGrid is when we have a collection member
 
 __Example 2: Binding to a collection__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}"  AutoGeneratePropertyDefinitions="False">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding Clubs[0]}" DisplayName="Name" />
@@ -95,7 +95,7 @@ You can also use indexing in **NestedProperties**, as shown in **Example 3**:
 
 __Example 3: Binding of NestedProperties__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGeneratePropertyDefinitions="False" NestedPropertiesVisibility="Visible">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding Clubs[0]}" DisplayName="Club">
@@ -113,7 +113,7 @@ As our **League** class has a **Dictionary** of clubs, we can access any club by
 
 __Example 4: Binding to item in Dictionary__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGeneratePropertyDefinitions="False" NestedPropertiesVisibility="Visible">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding ClubsDictionary[Liverpool]}" DisplayName="Club">
@@ -131,7 +131,7 @@ Since our **Club** class implements an indexer, we can also bind to the **Player
 
 __Example 5: Indexing a class that implements indexer__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGeneratePropertyDefinitions="False">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding ClubsDictionary[Liverpool][25]}" DisplayName="Player with number 25" />
@@ -145,7 +145,7 @@ Indexer support also works when **AutoGenerateBindingPaths** is set to **False**
 
 __Example 6: Indexing when AutoGenerateBindingPaths is set to False__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid Item="{Binding League}" AutoGenerateBindingPaths="False" AutoGeneratePropertyDefinitions="False" NestedPropertiesVisibility="Visible">
 	    <telerik:RadPropertyGrid.PropertyDefinitions>
 	        <telerik:PropertyDefinition Binding="{Binding ClubsDictionary[Liverpool]}" DisplayName="Club">

@@ -28,13 +28,13 @@ You can subscribe to these events declaratively or at runtime. **Example 1** sho
 
 __Example 1: Subscribing to column events__
 
-	```XAML
+```XAML
 	<telerik:RadGridView Name="gridView" AutoGeneratingColumn="gridView_AutoGeneratingColumn"/>
 ```
 
 __Example 1: Subscribing to column events__
 
-	```C#
+```C#
 	gridView.AutoGeneratingColumn += gridView_AutoGeneratingColumn;
 ```
 ```VB.NET
@@ -57,7 +57,7 @@ You can use the following properties of the **GridViewAutoGeneratingColumnEventA
 
 __Example 2: Cancelling the creation of DateTime columns__
 
-	```C#
+```C#
 	private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
 	{
 	    if (e.ItemPropertyInfo.PropertyType == typeof(DateTime))
@@ -124,7 +124,7 @@ The following example shows you how to allow the user to widen a column, but not
 
 __Example 3: Disable decreasing the column width__
 
-	```C#
+```C#
 	void gridView_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
 	{
 	    if (e.HorizontalChangeWidth.Value < 0)

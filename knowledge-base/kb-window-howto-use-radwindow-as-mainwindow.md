@@ -31,27 +31,25 @@ res_type: kb
 
 	
 	```XAML
-	  <telerik:RadWindow x:Class="RadWindowAsMainWindow.MainWindow"
-		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		  xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-		  Header="MainWindow" Height="350" Width="525">
-	  ...
-	  </telerik:RadWindow>
+		  <telerik:RadWindow x:Class="RadWindowAsMainWindow.MainWindow"
+			  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			  xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+			  Header="MainWindow" Height="350" Width="525">
+		  ...
+		  </telerik:RadWindow>
 	```
 
 	and in code-behind:
 
 	
 	```C#
-	  public partial class MainWindow : RadWindow
-	  {
-	   ...
-	  }
+		public partial class MainWindow : RadWindow
+		{
+		}
 	```
 
 **2.** Remove **StartupUri** from the Application definition inside App.xaml:
-
 	
 	```XAML
 	  <Application x:Class="RadWindowAsMainWindow.App"

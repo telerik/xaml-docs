@@ -31,7 +31,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 	* `Content`&mdash;Gets or sets the content of the message.
 	* `NotificationType`&mdash;Gets or sets the type of the notification. The property is of type [MessageBoxNotificationType](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.spreadsheet.dialogs.messageboxnotificationtype).
 
-	#### **[C#] Disable messages related to protection using the MessageShowing event**
+	**Disable messages related to protection using the MessageShowing event**
+	
 	```C#
 
 		public void AttachToMessageShowingEvent()
@@ -46,9 +47,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		        e.IsHandled = true;
 		    }
 		}
-	``` 
-
-	#### **[VB.NET] Disable messages related to protection using the MessageShowing event**
+	```
 	```VB.NET
 	    Public Sub AttachToMessageShowingEvent()
 	        AddHandler Me.radSpreadsheet.MessageShowing, AddressOf radSpreadsheet_MessageShowing
@@ -69,7 +68,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 * `WorkbookCommandExecuting`&mdash;Occurs when workbook command starts executing. The arguments are of type [CommandExecutingEventArgs](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.spreadsheet.commands.commandexecutingeventargs) and allow you to cancel the execution of the command.  
 
-	#### **[C#] Cancel a command through WorkbookCommandExecuting**  	
+	**Cancel a command through WorkbookCommandExecuting**  	
+	
 	```C#	
 		private void radSpreadsheet_WorkbookCommandExecuting(object sender, Telerik.Windows.Documents.Spreadsheet.Commands.CommandExecutingEventArgs e)
 		{
@@ -79,8 +79,6 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		    }
 		}
 	```
-
-	#### **[VB.NET] Cancel a command through WorkbookCommandExecuting**  	
 	```VB.NET	
 	    Public Sub AttachToWorkbookCommandExecutingEvent()
 	        AddHandler Me.radSpreadsheet.WorkbookCommandExecuting, AddressOf radSpreadsheet_WorkbookCommandExecuting
@@ -141,7 +139,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 * `HyperlinkClicked`&mdash;Occurs when a hyperlink in the document gets clicked. The event allows you to cancel or replace the navigation logic. 
 
-	#### **[C#] Using the HyperlinkClicked to implement extra confirmation for the links in the document**
+	__Using the HyperlinkClicked to implement extra confirmation for the links in the document__
+	
 	```C#
 		private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
 		{ 
@@ -186,7 +185,8 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 
 * `CellPropertyChanged`&mdash;Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range.
 
-	#### **[C#] Using the CellPropertyChangedEvent to show a notification when the users change the fill of a cell**
+	**Using the CellPropertyChangedEvent to show a notification when the users change the fill of a cell**
+	
 	```C#		
 		public void AttachToCellPropertyChangedEvent()
 		{
@@ -201,8 +201,6 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 		    }
 		}
 	```
-
-	#### **[VB.NET] Using the CellPropertyChangedEvent**
 	```VB.NET		
 	    Public Sub AttachToCellPropertyChangedEvent()
 	        AddHandler Me.radSpreadsheet.ActiveWorksheet.Cells.CellPropertyChanged, AddressOf Cells_CellPropertyChanged

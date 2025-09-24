@@ -17,7 +17,7 @@ __RadCarousel__ tries to provide an API similar to that of standard WPF __ItemsC
 
 __Example 1: Setting RadCarousel's ItemsSource__
 
-	```C#
+```C#
 	var dataTable = GetDataTable();
 	this.RadCarousel1.ItemsSource = dataTable;
 ```
@@ -30,7 +30,7 @@ Unlike a standard items control, __RadCarousel's ItemsSource__ property is decla
 
 __Example 2: Providing a DataSet as an ItemsSource__
 
-	```C#
+```C#
 	var dataSet = dataTable.DataSet;
 	this.RadCarousel1.ItemsSource = dataSet;
 ```
@@ -49,7 +49,7 @@ The __ItemsSource__ property is visible and modifiable through XAML. Typical usa
        
 __Example 3: Setting ItemsSource through XAML__
 
-	```XAML
+```XAML
 	<Grid>
 	  <Grid.Resources>
 	    <ObjectDataProvider x:Key="objectDataProvider" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />
@@ -64,7 +64,7 @@ __Example 3: Setting ItemsSource through XAML__
 
 __Example 4: Incorrectly setting ItemsSource through XAML__
 
-	```XAML
+```XAML
 	<Grid>
 	  <Grid.Resources>
 	    <ObjectDataProvider x:Key="objectDataProviderIncorrect" ObjectType="{x:Type e:ExamplesDB}" MethodName="GetCustomersView" />

@@ -16,7 +16,7 @@ For the purpose of this tutorial we will create two quite simple classes - Perso
 
 __Example 1: Creating the Person and Country Classes__
 
-	```C#
+```C#
 	public class Person
 	{
 	    public string FirstName { get; set; }
@@ -85,7 +85,7 @@ Afterwards, we may add the source of the RadDataForm:
 
 __Example 2: Set the ItemsSource__
 
-	```C#
+```C#
 	InitializeComponent();
 	List<Person> persons = new List<Person>();
 	// A sample list of source objects for the RadDataForm. 
@@ -122,7 +122,7 @@ Now, in order to edit the lookup values we have to do two things:
 
 __Example 3: Creating a CountriesService Class with a Static GetCountries() Method__
 
-	```C#
+```C#
 	public class CountriesService
 	{
 	    public static List<Country> GetCountries()
@@ -167,7 +167,7 @@ __Example 3: Creating a CountriesService Class with a Static GetCountries() Meth
 
 __Example 4: Handling the AutoGeneratingField Event__
 
-	```C#
+```C#
 	private void RadDataForm_AutoGeneratingField(object sender, Telerik.Windows.Controls.Data.DataForm.AutoGeneratingFieldEventArgs e)
 	{
 	    if (e.PropertyName == "CountryID")
@@ -207,7 +207,7 @@ Figure 1 shows the resulting RadDataForm:
 
 __Example 5: Defining the Template for ReadOnlyTemplate, EditTemplate and NewItemTemplate__
 
-	```XAML
+```XAML
 	<UserControl.Resources>
 	    <my:MyViewModel x:Key="MyViewModel" />
 	</UserControl.Resources>

@@ -24,7 +24,7 @@ You can define RadPropertyGrid similar to:
 
 __Example 1: Defining RadPropertyGrid with manually defined PropertyDefinitions__
 
-	```XAML
+```XAML
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="*"/>
@@ -60,7 +60,7 @@ Then, click on __Scroll field into view__ button and execute the following code:
 
 __Example 2: Scrolling to a particular PropertyDefinition and selecting it__
 
-	```C#
+```C#
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
 	    var propertyDefinition = this.PropertyGrid1.PropertyDefinitions.Where(x => x.DisplayName == "IsMarried").FirstOrDefault();
@@ -70,10 +70,7 @@ __Example 2: Scrolling to a particular PropertyDefinition and selecting it__
 	    }
 	}
 ```
-
-__Example 2: Scrolling to a particular PropertyDefinition and selecting it__
-
-	```VB
+```VB
 	Private Sub Button1_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim propertyDefinition = Me.PropertyGrid1.PropertyDefinitions.Where(Function(x) x.DisplayName = "IsMarried").FirstOrDefault()
 	    If propertyDefinition IsNot Nothing Then

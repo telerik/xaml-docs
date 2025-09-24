@@ -88,18 +88,18 @@ This article will list the key properties provided by the RadBadge control.
 By default, the RadBadge control is load and change with an animation. The load\change animations are FadeAnimation by default. If you want to change/modify the animations of the RadBadge control you can use the __AnimationManager.AnimationSelector__ attached property. The AnimationName property needs to be specified to either LoadAnimation or ChangeAnimation depending on which animation you want to change/modify.
 
 __Example 2: Modify Badge Animations__
-	```C#
-		<telerik:RadButton Width="100" Height="40" Content="Oval" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center">
-			<telerik:RadBadge.Badge>
-				<telerik:RadBadge Content="99"  BadgeType="ContentOnly" FontSize="16" Foreground="Black"  Background="#FFFFC000" Geometry="{telerik:Geometry Type=Oval}" >
-					<telerik:AnimationManager.AnimationSelector>
-						<telerik:AnimationSelector>
-							<telerik:FadeAnimation AnimationName="LoadAnimation" Direction="In" SpeedRatio="0.25"  />
-							<telerik:FadeAnimation AnimationName="ChangeAnimation" Direction="Out" SpeedRatio="0.25"/>
-						</telerik:AnimationSelector>
-					</telerik:AnimationManager.AnimationSelector>
-				</telerik:RadBadge>
-			</telerik:RadBadge.Badge>
-		</telerik:RadButton>
-	```
+```C#
+	<telerik:RadButton Width="100" Height="40" Content="Oval" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center">
+		<telerik:RadBadge.Badge>
+			<telerik:RadBadge Content="99"  BadgeType="ContentOnly" FontSize="16" Foreground="Black"  Background="#FFFFC000" Geometry="{telerik:Geometry Type=Oval}" >
+				<telerik:AnimationManager.AnimationSelector>
+					<telerik:AnimationSelector>
+						<telerik:FadeAnimation AnimationName="LoadAnimation" Direction="In" SpeedRatio="0.25"  />
+						<telerik:FadeAnimation AnimationName="ChangeAnimation" Direction="Out" SpeedRatio="0.25"/>
+					</telerik:AnimationSelector>
+				</telerik:AnimationManager.AnimationSelector>
+			</telerik:RadBadge>
+		</telerik:RadBadge.Badge>
+	</telerik:RadButton>
+```
 

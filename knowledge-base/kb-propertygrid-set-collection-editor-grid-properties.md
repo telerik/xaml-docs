@@ -28,7 +28,6 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 ## Solution
 
 1. Handle the **Loaded** event of the parent **RadRropertyGrid**.
-
 	
 	```C#
 		private void RadPropertyGrid_Loaded(object sender, RoutedEventArgs e)
@@ -38,7 +37,7 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 			collectionEditor.Loaded += CollectionEditor_Loaded;
 		}
 	```
-```VB.NET
+	```VB.NET
 		Private Sub RadPropertyGrid_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Dim editorPicker = rpg.ChildrenOfType(Of CollectionEditorPicker)().First()
 			Dim collectionEditor = editorPicker.CollectionEditor
@@ -47,7 +46,6 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 	```
 	
 2. Handle the **Loaded** event of the **CollectionEditor**.
-
 	
 	```C#
 		private void CollectionEditor_Loaded(object sender, RoutedEventArgs e)
@@ -58,7 +56,7 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
       			// set any other properties
 		}
 	```
-```VB.NET
+	```VB.NET
 		Private Sub CollectionEditor_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Dim collectionEditor = TryCast(sender, CollectionEditor)
 			Dim propertyGrid = collectionEditor.ChildrenOfType(Of RadPropertyGrid)().First()

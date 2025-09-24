@@ -42,7 +42,7 @@ The class responsible for customizing the keyboard navigation should be similar 
 
 __Example 1: Creating custom command provider__
 
-	```C#
+```C#
 	public class CustomKeyboardCommandProvider : PropertyGridCommandProvider
 	{
 	    public CustomKeyboardCommandProvider()
@@ -116,7 +116,7 @@ The last thing to be done is to set CommandProvider Property of the RadPropertyG
 
 __Example 2: Defining the custom command provider in XAML__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid">
 	    <telerik:RadPropertyGrid.CommandProvider>
 	        <my:CustomKeyboardCommandProvider PropertyGrid="{Binding ElementName=PropertyGrid1}" />
@@ -126,7 +126,7 @@ __Example 2: Defining the custom command provider in XAML__
 
 __Example 3: Set the custom command provider to RadPropertyGrid__
 
-	```C#
+```C#
 	this.RadPropertyGrid.CommandProvider = new CustomKeyboardCommandProvider(this.RadPropertyGrid);
 ```
 ```VB.NET
@@ -141,7 +141,7 @@ With the __R2 2020__ release, the __RadPropertyGrid__ allows you to navigate to 
 
 __Example 4: Enabling keyboard search navigation__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True"/>
 ```
 
@@ -151,7 +151,7 @@ When the user searches for a property by pressing a letter from the keyboard, th
 
 __Example 5: Contains Text Search Mode__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True" TextSearchMode="Contains"/>
 ```
 
@@ -161,7 +161,7 @@ By default, text search navigation is case-insensitive. You can make your search
 
 __Example 6: Search with Case-Sensitive__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True" TextSearchMode="Contains" IsTextSearchCaseSensitive="True"/>
 ```
 
@@ -171,7 +171,7 @@ In a scenario with a larger text for a property name, you may need to increase t
 
 __Example 8: Increase the timeout for resetting the typed text__
 
-	```XAML
+```XAML
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -185,7 +185,7 @@ As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBu
 
 __Example 10: Disabling navigation__
 
-	```C#
+```C#
 	public class CustomKeyboardCommandProviderWithoutNavigation : PropertyGridCommandProvider
 	{
 	    public CustomKeyboardCommandProviderWithoutNavigation()

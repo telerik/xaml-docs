@@ -45,7 +45,7 @@ After you've acquired your data, you have to set it as the __ItemsSource__ of yo
 
 __Example 1: Setting RadGridView's ItemsSource__
 
-	```C#
+```C#
 	this.RadGridView.ItemsSource = SampleData.GetData();
 ```
 ```VB.NET

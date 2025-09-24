@@ -26,7 +26,6 @@ Some ViewDefinitions have specific properties. Here is a list of specific proper
 
 	The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __WeekGroupHeaderStringFormat__ property in WeekView:        
 
-	#### __XAML__
 	```XAML
 		<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 			<telerik:RadScheduleView.ViewDefinitions>
@@ -35,13 +34,10 @@ Some ViewDefinitions have specific properties. Here is a list of specific proper
 		</telerik:RadScheduleView>
 	```
 
-	#### __C#__
 	```C#
 		weekDefinition.ShowWeekGroupHeaders = true;
 		weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
 	```
-
-	Here is the end result:
 
 	![RadScheduleView with Week Headers](images/scheduleview_features_specific_properties_1.png)
 
@@ -73,8 +69,6 @@ Here is a list of the properties that are specific for TimelineView:
 
 It sets whether the appointments will be stretched to fill all available space in the TimeSlot - by default it is set to __False__.
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
@@ -91,8 +85,6 @@ When the __DayStartTime__ and __DayEndTime__ properties are set to the TimelineV
 
 The following example illustrates how to set the DayStartTime, DayEndTime and ApplyStartEndTimeToEachDay for the TimelineView:
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
@@ -101,16 +93,11 @@ The following example illustrates how to set the DayStartTime, DayEndTime and Ap
 	</telerik:RadScheduleView>
 ```
 
-#### __C#__
-
 ```C#
 	timelineDefinition.DayStartTime = new TimeSpan(13, 00, 0);
 	timelineDefinition.DayEndTime = new TimeSpan(14, 30, 0);
 	timelineDefinition.ApplyStartEndTimeToEachDay = true;
 ```
-
-#### __VB__
-
 ```VB
 	timelineDefinition.DayStartTime = New TimeSpan(13, 0, 0)
 	timelineDefinition.DayEndTime = New TimeSpan(14, 30, 0)

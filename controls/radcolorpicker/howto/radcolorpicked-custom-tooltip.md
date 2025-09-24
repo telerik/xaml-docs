@@ -18,7 +18,6 @@ For the purpose of this article we will use:
 
 * a custom class __ColorModel__ that exposes two properties of type Color and string				
 
-	#### __C#__
 	```C#
 		public class ColorModel : ViewModelBase
 		{
@@ -39,8 +38,6 @@ For the purpose of this article we will use:
 			public string ToolTipString { get; set; }
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Public Class ColorModel
 			Inherits ViewModelBase
@@ -73,7 +70,6 @@ For the purpose of this article we will use:
 
 * a ViewModel that wraps these collections and creates some sample data				
 
-	#### __C#__
 	```C#
 		public class MainViewModel : ViewModelBase
 		{
@@ -82,8 +78,6 @@ For the purpose of this article we will use:
 			private ObservableCollection<ColorModel> standardPaletteColors;
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Public Class MainViewModel
 			Inherits ViewModelBase
@@ -94,7 +88,6 @@ For the purpose of this article we will use:
 
 Then you have to set the MainViewModel as __DataContext__ of the RadColorPicker control. In order to set the customized string as a tool tip you can use the __PaletteItemsTemplate__ property to set a customized DataTemplate. In this template you can use the __ToolTipService__ and bind the __ToolTip__ property to your customized string.			
 
-#### __XAML__
 ```XAML
 	<Grid>
 	<Grid.Resources>

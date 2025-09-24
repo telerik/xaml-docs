@@ -126,7 +126,7 @@ __Example 3: Creating the businesses object__
 	        set;
 	    }
 	}
-	```
+```
 ```VB.NET
 	Public Class ChartDataObject
 	    Dim _date As Date
@@ -182,7 +182,7 @@ __Example 4: Setting the DateTimeCategoricalAxis axes__
 	
 	   </telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-	```
+```
 
 ![{{ site.framework_name }} RadChartView with Horizontal DateTime Categorical Axis](images/radchartview-chart_datetime_categorical_axis.png)
 

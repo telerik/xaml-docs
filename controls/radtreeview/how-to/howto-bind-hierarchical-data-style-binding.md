@@ -23,8 +23,6 @@ It is not that difficult to create a data source reflecting the above structure.
 
 	![{{ site.framework_name }} RadTreeView Person Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_010.png)
 
-	#### __C#__
-
 	```C#
 		public class Person
 		{
@@ -43,9 +41,6 @@ It is not that difficult to create a data source reflecting the above structure.
 			}
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Public Class Person
 			Public Sub New()
@@ -77,8 +72,6 @@ It is not that difficult to create a data source reflecting the above structure.
 
 	![{{ site.framework_name }} RadTreeView Department Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_020.png)
 
-	#### __C#__
-
 	```C#
 		public class Department
 		{
@@ -108,9 +101,6 @@ It is not that difficult to create a data source reflecting the above structure.
 			}
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Public Class Department
 			Public Sub New()
@@ -164,8 +154,6 @@ It is not that difficult to create a data source reflecting the above structure.
 
 	![{{ site.framework_name }} RadTreeView Organization Class Diagram](images/RadTreeView_HowToHierarchicalDataTemplateStyleBinding_030.png)
 
-	#### __C#__
-
 	```C#
 		public class Organization
 		{
@@ -195,9 +183,6 @@ It is not that difficult to create a data source reflecting the above structure.
 			}
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Public Class Organization
 			Public Sub New()
@@ -250,8 +235,6 @@ As you can see, an __Organization__ has a __Name__ and a list of __Departments__
 
 Having the above three classes set up, it is time to create and populate a data source, which will be passed to the __RadTreeView's ItemsSource__ property.		
 
-#### __C#__
-
 ```C#
 	public class DataSource : List<Organization>
 	{
@@ -299,9 +282,6 @@ Having the above three classes set up, it is time to create and populate a data 
 	    } 
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Public Class DataSource
 	    Inherits List(Of Organization)
@@ -328,15 +308,11 @@ Having the above three classes set up, it is time to create and populate a data 
 
 And setting __RadTreeView's ItemsSource__ property in XAML:
 
-#### __XAML__
-
 ```XAML
 	<UserControl.Resources>
 	    <example:DataSource x:Key="TreeViewDataSource"/>
 	</UserControl.Resources>
 ```
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTreeView  Margin="8"
@@ -345,36 +321,7 @@ And setting __RadTreeView's ItemsSource__ property in XAML:
 ```
 
 Now it is time to define how each level of the __RadTreeView__ will look like. You should use __HierarchicalDataTemplate__.
-		
-{% if site.site_name == 'Silverlight' %}
-
-#### __XAML__
-
-```XAML
-	<!--Data template for the Person object-->
-	<DataTemplate x:Key="PersonTemplate">
-	    <TextBlock Text="{Binding Name}" Foreground="Red" FontSize="16" FontFamily="Verdana" />
-	</DataTemplate>
-	<!--Data template for the Department object-->
-	<telerik:HierarchicalDataTemplate  
-	    x:Key="DepartmentTemplate"  
-	    ItemTemplate="{StaticResource PersonTemplate}" 
-	    ItemsSource="{Binding Employees}">
-	    <TextBlock Text="{Binding Name}" Foreground="Blue" FontSize="22" FontFamily="Verdana" />
-	</telerik:HierarchicalDataTemplate>
-	<!--Data template for the Organization object-->
-	<telerik:HierarchicalDataTemplate  
-	    x:Key="OrganizationTemplate"  
-	    ItemTemplate="{StaticResource DepartmentTemplate}" 
-	    ItemsSource="{Binding Departments}">
-	    <TextBlock Text="{Binding Name}" Foreground="Green" FontSize="28" FontFamily="Verdana" />
-	</telerik:HierarchicalDataTemplate>
-```
-
-{% endif %}
-
-#### __XAML__
-
+	
 ```XAML
 	<!--Data template for the Person object-->
 	<DataTemplate  DataType="{x:Type sampleData:Person}">  
@@ -398,21 +345,6 @@ But what if you want to expand only the "Silverlight" node and to select the "Jo
 
 Define a new style with __RadTreeViewItem__ for target type.
 		
-{% if site.site_name == 'Silverlight' %}
-
-#### __XAML__
-
-```XAML
-	<Style x:Key="ItemContainerStyle" TargetType="{telerik:RadTreeViewItem}">
-	    <Setter Property="IsSelected" Value="{Binding Path=Selected}"/>
-	    <Setter Property="IsExpanded" Value="{Binding Path=Expanded}"/>
-	</Style>
-```
-
-{% endif %}
-
-#### __XAML__
-
 ```XAML
 	<Style x:Key="ItemContainerStyle" TargetType="{x:Type telerik:RadTreeViewItem}">
 	    <Setter Property="IsSelected" Value="{Binding Path=Selected}"/>
@@ -422,8 +354,6 @@ Define a new style with __RadTreeViewItem__ for target type.
 
 Find your treeview declaration and set the __ItemContainerStyle__ property.
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView  Margin="8"
 	    SelectionMode="Multiple"      
@@ -432,8 +362,6 @@ Find your treeview declaration and set the __ItemContainerStyle__ property.
 ```
 
 As you can see, the __IsSelected__ property of each __RadTreeViewItem__ is bound to the __Selected__ property in the data source. The same is with the __IsExpanded__ property. That's why now you have to update your data source.
-
-#### __C#__
 
 ```C#
 	public DataSource()
@@ -491,9 +419,6 @@ As you can see, the __IsSelected__ property of each __RadTreeViewItem__ is bound
 	    this.Add( telerik );
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Public Class DataSource
 	    Inherits List(Of Organization)

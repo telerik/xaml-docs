@@ -20,28 +20,21 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 	* __IsLoadOnDemandEnabled__
 	* __IsExpandOnSingleClickEnabled__
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 			IsLoadOnDemandEnabled="True" IsExpandOnSingleClickEnabled="True"
 			LoadOnDemand="radTreeView_LoadOnDemand"/>
-		```
+	```
 
 	The __RadTreeView__ will be bound to a data source object, that has a property __Categories__. When the __LoadOnDemand__ event of __RadTreeView__ is fired, the selected category asynchronously loads its related products. 
 
 * Create a new class named __NorthwindDataSource__. 
-
-	#### __C#__
 
 	```C#
 		public class NorthwindDataSource
 		{
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Public Class NorthwindDataSource
 		End Class
@@ -52,8 +45,6 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 * In the __NorthwindDataSource__ class add a reference to an __ObservableCollection__ of __Categories__.
 
 * In the __NorthwindDataSource__ class add a reference to the __NorthwindEntities__ object: 
-
-	#### __C#__
 
 	```C#
 		private NorthwindEntities northwindEntity;
@@ -69,10 +60,7 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 			get;
 			set;
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Private northwindEntity As NorthwindEntities
 		
@@ -91,47 +79,31 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 				_Categories = value
 			End Set
 		End Property
-		```
+	```
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Categories__ from the database: 
-
-	#### __C#__
 
 	```C#
 		northwindEntity.Categories.BeginExecute(
 			( IAsyncResult result ) => EntitiesLoaded<Categories>( result, this.Categories ),
 			northwindEntity.Categories );
-		```
+	```
+	```VB.NET
+		northwindEntity.Categories.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Categories)(result, Me.Categories), northwindEntity.Categories)
+	```
 		
-	#### __C#__
-
 	```C#
 		foreach ( Categories c in northwindEntity.Categories.Execute() )
 		{
 			this.Categories.Add( c );
 		}
-		```
-
-	#### __VB.NET__
-
-	```VB.NET
-		northwindEntity.Categories.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Categories)(result, Me.Categories), northwindEntity.Categories)
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		For Each c As Categories In northwindEntity.Categories.Execute()
 			Me.Categories.Add(c)
 		Next
-		```
-
-	{% if site.site_name == 'Silverlight' %}
-	And here is the code for the __EntitiesLoaded()__ method:
-	{% endif %}
-
-	#### __C#__
-
+	```
+	
 	```C#
 		private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
 		{
@@ -141,10 +113,7 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 				entities.Add( entity );
 			}
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 			Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
@@ -152,38 +121,19 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 				entities.Add(entity)
 			Next
 		End Sub
-		```
+	```
 
 	> Since the first load of the categories is also asynchronous, it takes some time to display the treeview for the first time. You may consider adding some loading animation in your application.
 
 * Declare the __NorthwindDataSource__ object as a resource in your application. 
 
-	#### __XAML__
-
 	```XAML
 		<UserControl.Resources>
 			<example:NorthwindDataSource x:Key="DataSource"/>
 		</UserControl.Resources>
-		```
+	```
 
 * Declare [HierarchicalDataTemplates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}) which will describe the __RadTreeView__ structure. 
-
-	{% if site.site_name == 'Silverlight' %}
-	#### __XAML__
-
-	```XAML
-		<DataTemplate x:Key="ProductTemplate">
-			<TextBlock Text="{Binding ProductName}" />
-		</DataTemplate>
-		<telerik:HierarchicalDataTemplate x:Key="CategoryTemplate" ItemsSource="{Binding Products}"
-		  ItemTemplate="{StaticResource ProductTemplate}">
-			<TextBlock Text="{Binding CategoryName}" />
-		</telerik:HierarchicalDataTemplate>
-		```
-
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-	#### __XAML__
 
 	```XAML
 		<DataTemplate x:Key="ProductTemplate">
@@ -193,13 +143,9 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 			ItemTemplate="{StaticResource ProductTemplate}">
 			<TextBlock Text="{Binding CategoryName}" />
 		</HierarchicalDataTemplate>
-		```
-
-	{% endif %}
+	```
 
 * Update your RadTreeView declaration - set the ItemsSource and __ItemTemplate__ properties. 
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
@@ -207,7 +153,7 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 			LoadOnDemand="radTreeView_LoadOnDemand"
 			ItemTemplate="{StaticResource CategoryTemplate}"
 			ItemsSource="{Binding Source={StaticResource DataSource}, Path=Categories}"/>
-		```
+	```
 		
 	Run your demo, the result can be seen on the next picture:
 	![{{ site.framework_name }} RadTreeView Binding to ADO NET Data](images/RadTreeView_PopulatingWithBindingToAdoNetService_010.PNG)
@@ -218,8 +164,6 @@ Here will be also examined "best practice" for using __RadTreeView__ with load o
 The next step is to handle the load on demand event. 
 
 * Add the following method to the __NorthwindDataSource__ class, which aims to load the products for the expanded category: 
-
-	#### __C#__
 
 	```C#
 		public static void BeginLoadingProducts( Categories category )
@@ -232,10 +176,15 @@ The next step is to handle the load on demand event.
 				( IAsyncResult result ) => EntitiesLoaded<Products>( result, category.Products ),
 				categoryProducts );
 		}
-		```
-
-	#### __C#__
-
+	```
+	```VB.NET
+		Public Shared Sub BeginLoadingProducts(ByVal category As Categories)
+			Dim categoryProducts As DataServiceQuery(Of Products) = northwindEntity.CreateQuery(Of Products)(String.Format("Categories({0})/Products", category.CategoryID)).Expand("Suppliers").Expand("Categories")
+		
+			categoryProducts.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Products)(result, category.Products), categoryProducts)
+		End Sub
+	```
+	
 	```C#
 		public static void LoadProducts( Categories category )
 		{
@@ -249,20 +198,7 @@ The next step is to handle the load on demand event.
 				category.Products.Add( p );
 			}
 		}
-		```
-
-	#### __VB.NET__
-
-	```VB.NET
-		Public Shared Sub BeginLoadingProducts(ByVal category As Categories)
-			Dim categoryProducts As DataServiceQuery(Of Products) = northwindEntity.CreateQuery(Of Products)(String.Format("Categories({0})/Products", category.CategoryID)).Expand("Suppliers").Expand("Categories")
-		
-			categoryProducts.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Products)(result, category.Products), categoryProducts)
-		End Sub
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Shared Sub LoadProducts(ByVal category As Categories)
 			Dim categoryProducts As DataServiceQuery(Of Products) = northwindEntity.CreateQuery(Of Products)(String.Format("Categories({0})/Products", category.CategoryID)).Expand("Suppliers").Expand("Categories")
@@ -272,11 +208,9 @@ The next step is to handle the load on demand event.
 				category.Products.Add(p)
 			Next
 		End Sub
-		```
+	```
 
 * Add the following code to the load on demand event handler, which you declared on step 1. 
-
-	#### __C#__
 
 	```C#
 		private void radTreeView_LoadOnDemand( object sender, Telerik.Windows.RadRoutedEventArgs e )
@@ -292,10 +226,7 @@ The next step is to handle the load on demand event.
 				item.IsLoadOnDemandEnabled = false;
 			}
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Private Sub radTreeView_LoadOnDemand(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 			Dim item As RadTreeViewItem = TryCast(e.OriginalSource, RadTreeViewItem)
@@ -307,7 +238,7 @@ The next step is to handle the load on demand event.
 				item.IsLoadOnDemandEnabled = False
 			End If
 		End Sub
-		```
+	```
 
 	> When there are no items to add, and you want to prevent the __LoadOnDemand__ event to fire again, set the __IsLoadOnDemandEnabled__ property to __False__ to the __RadTreeViewItem__ that has fired the __LoadOnDemand__ event.
 

@@ -46,7 +46,6 @@ The following image demonstrates the end result:
 
 You can use the __ValueBinding__, __CategoryBinding__ and the __BubbleSizeBinding__ properties of the BubbleSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __C#__
 ```C#
 	public class PlotInfo
 	{
@@ -63,7 +62,6 @@ You can use the __ValueBinding__, __CategoryBinding__ and the __BubbleSizeBindin
 	};
 ```
 	
-#### __XAML__
 ```XAML
 	<telerik:BubbleSeries ValueBinding="YVal"  CategoryBinding="XCat" BubbleSizeBinding="Size" ItemsSource="{Binding}"/>
 ```
@@ -76,7 +74,6 @@ The series supports all standard features exposed by all other categorical serie
 
 * __DataPointLegendSettings__ - the series supports two types of legend settings, the first one is the common SeriesLegendSettings which can be used with all types of series and it maps each legend item to a series. The series supports an additional DataPointLegendSettings which maps the legend items per data point. 
 
-	#### __XAML__
 	```XAML
 		<telerik:BubbleSeries.LegendSettings>
 			<telerik:DataPointLegendSettings/>
@@ -94,7 +91,6 @@ The series supports all standard features exposed by all other categorical serie
 
 * __Hover interactivity__ – RadCartesianChart exposes a property called HoverMode. This property can be used only by the bubble and bar series. If it is set to “FadeOtherSeries”, when you mouse over a data point, the bubbles from all other series will fade out. The default value of the property is “None”.
 
-	#### __XAML__
 	```XAML
 		<telerik:RadCartesianChart HoverMode="FadeOtherSeries">
 	```
@@ -113,7 +109,6 @@ You can customize the BubbleSize of each DataPoint by creating a custom bubble s
 
 The following code snippet demonstrates an example implementation of a bubble size selector:
 
-#### __C#__
 ```C#
     public class CustomBubbleSizeSelector : ChartBubbleSizeSelector
     {
@@ -130,7 +125,6 @@ The following code snippet demonstrates an example implementation of a bubble si
     }
 ```
 
-#### __XAML__
 ```XAML
 	<FrameworkElement.Resources>
 		<local:CustomBubbleSizeSelector x:Key="CustomBubbleSizeSelector" />

@@ -33,7 +33,6 @@ If you cannot migrate to .NET, you can still improve your .NET Framework project
 The following guide describes how to update your project .NET Framework project to use the newer project template. This approach is applicable for .NET Framework 4.6.2 to 4.8 projects.
 
 1. Open the `.csproj` file of the project and replace its contents with the following XML.
-
 	
 	```XML
 		<Project Sdk="Microsoft.NET.Sdk">
@@ -48,7 +47,6 @@ The following guide describes how to update your project .NET Framework project 
 	If you have settings specific to your build you may want to re-apply them in the new .csproj file definition.
 	
 1. Go to the __Properties__ folder of the project and remove the following assembly attributes from the `AssemblyInfo.cs` file.
-
 	
 	```C#
 		//[assembly: AssemblyConfiguration("")]

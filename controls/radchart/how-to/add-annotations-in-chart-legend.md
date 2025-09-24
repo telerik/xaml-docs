@@ -10,15 +10,10 @@ position: 9
 
 # Add Annotations in Chart Legend
 
-
-
-## 
-
 The following help article will demonstrate how to customize the Chart Legend so that Annotations - in this case a Custom GridLine can be added as Chart Legend Item.
 
 ##### 1. Create CustomGridLine Style that has Line as *TargetType*. Currently the GridLine will be presented as dashed line by using the [StrokeDashArray](http://msdn.microsoft.com/en-us/library/bb980148(v=vs.95).aspx) as Setter:
 
-#### __XAML__
 
 ```XAML
 	<Style x:Key="CustomGridLineStyle" TargetType="Line">
@@ -26,54 +21,48 @@ The following help article will demonstrate how to customize the Chart Legend so
 	<Setter Property="Stroke" Value="DarkBlue" />
 	<Setter Property="StrokeThickness" Value="2" />
 	</Style>
-	```
-
-
+```
 
 ##### 2. Customize the *ChartLegendItem *Style so that it will draw a Dashed Line as Legend Item Marker:
-
-#### __XAML__
 
 ```XAML
 	<controls:Office_BlackTheme x:Key="Theme" /> 
 	
 	<Style x:Key="DashedLegendItem2" TargetType="charting:ChartLegendItem" controls:StyleManager.BasedOn="{StaticResource Theme}">
-	            <Setter Property="Template" >
-	                <Setter.Value>
-	                    <ControlTemplate TargetType="charting:ChartLegendItem">
-	                        <Grid x:Name="PART_MainContainer" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-	                            <Grid.ColumnDefinitions>
-	                                <ColumnDefinition Width="Auto" />
-	                                <ColumnDefinition />
-	                            </Grid.ColumnDefinitions>
-	                            <Line Width="16"
-	                                  Margin="{TemplateBinding Margin}" 
-	                                  Stroke="Gray"
-	                                  StrokeThickness="2" 
-	                                  StrokeDashArray="3 1"
-	                                  X1 = "0" Y1 = "0"
-	                                  X2 = "10" Y2 = "0" 
-	                                  Stretch="Fill" />
-	
-	                            <TextBlock Grid.Column="1"
-	                             Padding="{TemplateBinding Padding}"
-	                             Margin="{TemplateBinding Margin}"
-	                             Foreground="{TemplateBinding Foreground}"
-	                             Text="{TemplateBinding Label}" />
-	                        </Grid>
-	                    </ControlTemplate>
-	                </Setter.Value>
-	            </Setter>
-	        </Style>
-	```
+		<Setter Property="Template" >
+			<Setter.Value>
+				<ControlTemplate TargetType="charting:ChartLegendItem">
+					<Grid x:Name="PART_MainContainer" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition />
+						</Grid.ColumnDefinitions>
+						<Line Width="16"
+							  Margin="{TemplateBinding Margin}" 
+							  Stroke="Gray"
+							  StrokeThickness="2" 
+							  StrokeDashArray="3 1"
+							  X1 = "0" Y1 = "0"
+							  X2 = "10" Y2 = "0" 
+							  Stretch="Fill" />
+
+						<TextBlock Grid.Column="1"
+						 Padding="{TemplateBinding Padding}"
+						 Margin="{TemplateBinding Margin}"
+						 Foreground="{TemplateBinding Foreground}"
+						 Text="{TemplateBinding Label}" />
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+```
 
 
 
 >tipThe ChartLegendItem style may be different for the older versions of the RadChart
 
 ##### 3. Create a sample Chart and add CustomGridLine by applying the CustomGridLine Style:
-
-#### __C#__
 
 ```C#
 	InitializeComponent();
@@ -103,12 +92,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 	            RadChart1.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Inside;
 	            RadChart1.DefaultView.ChartArea.DataSeries.Add(series1);
 	            RadChart1.DefaultView.ChartArea.DataSeries.Add(series2);
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	InitializeComponent()
 	Dim series1 As New DataSeries() With { New DataPoint(40), New DataPoint(40), New DataPoint(40) }
@@ -127,9 +111,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 	RadChart1.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Inside
 	RadChart1.DefaultView.ChartArea.DataSeries.Add(series1)
 	RadChart1.DefaultView.ChartArea.DataSeries.Add(series2)
-	```
-
-
+```
 
 ##### 4. Add the Chart Legend Items explicitly as shown in this [help topic]({%slug radchart-features-chart-legend%}). The recently created LegendItemStyle is added for the ChartLegendItem that will show the CustomGridLine:
 
@@ -149,12 +131,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 	item2.Label = "My CustomGridLine";
 	item2.Style = this.Resources["DashedLegendItem2"] as Style;
 	RadChart1.DefaultView.ChartLegend.Items.Add(item2);
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	RadChart1.DefaultView.ChartLegend.UseAutoGeneratedItems = False
 	                  Dim item01 As New ChartLegendItem()
@@ -169,9 +146,7 @@ The following help article will demonstrate how to customize the Chart Legend so
 	                  item2.Label = "My CustomGridLine"
 	                  item2.Style = TryCast(Me.Resources("DashedLegendItem2"), Style)
 	                  RadChart1.DefaultView.ChartLegend.Items.Add(item2)
-	```
-
-
+```
 
 The result is shown below:
 

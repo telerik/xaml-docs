@@ -18,7 +18,6 @@ The following example demonstrates how to create a hierarchical data source and 
 
 1. Create a new class and name it __MyViewModel__:					  
 
-	#### __C#__
 	```C#
 		public class MyViewModel
 		{
@@ -32,8 +31,6 @@ The following example demonstrates how to create a hierarchical data source and 
 		    public IList<object> RelatedItems { get; set; }
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Public Class MyViewModel
 		    Public Sub New()
@@ -87,8 +84,7 @@ The following example demonstrates how to create a hierarchical data source and 
 	* Property __Title__ which is of type string.
 
 	* Property __RelatedItems__ which is a collection of objects. These are the child items. Add a static method to the class which aims to create some mock-up data:
-
-		#### __C#__
+		
 		```C#
 			public static IList<object> GenerateItems()
 			{
@@ -111,9 +107,7 @@ The following example demonstrates how to create a hierarchical data source and 
 			    }
 			    return result;
 			}
-	```
-		
-		#### __VB.NET__
+		```
 		```VB.NET
 			Public Shared Function GenerateItems() As IList(Of Object)
 			    Dim result = New ObservableCollection(Of Object)()
@@ -136,30 +130,7 @@ The following example demonstrates how to create a hierarchical data source and 
 	```	
 		
 1. Declare a __HierarchicalDataTemplate__ 
-
-	{% if site.site_name == 'Silverlight' %}
-	#### __XAML__
-	```XAML
-		<UserControl.Resources>
-		    <DataTemplate x:Key="PanelBarItemTemplate">
-		        <StackPanel>
-		            <TextBlock Text="{Binding Title}"/>
-		            <TextBlock Text="{Binding DateCreated}"/>
-		            <TextBlock Text="{Binding Price}"/>
-		        </StackPanel>
-		    </DataTemplate>
-		
-		    <HierarchicalDataTemplate x:Key="PanelBarHeaderTemplate"
-		                               ItemsSource="{Binding RelatedItems}"
-		                               ItemTemplate="{StaticResource PanelBarItemTemplate}">
-		        <TextBlock Text="{Binding Title}" />
-		    </HierarchicalDataTemplate>
-		</UserControl.Resources>
-	```
-	{% endif %}
-
-	{% if site.site_name == 'WPF' %}
-	#### __XAML__
+	
 	```XAML
 		<Window.Resources>
 		    <DataTemplate x:Key="PanelBarItemTemplate">
@@ -177,11 +148,9 @@ The following example demonstrates how to create a hierarchical data source and 
 		    </HierarchicalDataTemplate>
 		</Window.Resources>
 	```
-	{% endif %}
 
 1. Define the __RadPanelBar__ and set its __ItemTemplate__ property					  
 
-	#### __XAML__
 	```XAML
 		<telerik:RadPanelBar x:Name="radPanelBar" Width="200" 
 		               HorizontalAlignment="Center" VerticalAlignment="Top"
@@ -191,14 +160,11 @@ The following example demonstrates how to create a hierarchical data source and 
 
 1. Set the __ItemsSource__ property of the __RadPanelBar__
 
-	#### __C#__
 	```C#
 		this.radPanelBar.ItemsSource = MyViewModel.GenerateItems();
 	```
-
-	#### __VB.NET__
 	```VB.NET
-	Me.radPanelBar.ItemsSource = MyViewModel.GenerateItems()
-```
+		Me.radPanelBar.ItemsSource = MyViewModel.GenerateItems()
+	```
 
 	![{{ site.framework_name }} RadPanelBar Hierarchical Data](images/PanelBar_HierarchicalData.png)

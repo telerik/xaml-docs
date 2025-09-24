@@ -18,9 +18,7 @@ This article will show you how to assign a common style for all the groups of th
 
 __1.__ First we declare an Employee class, an instance of which we will set as the RadPropertyGrid`s item: 
 
-#### [C#] Example 1: Create the Employee class
-	
-	```C#
+```C#
 	public class Employee
 	{
 	    public string FirstName { get; set; }
@@ -29,10 +27,7 @@ __1.__ First we declare an Employee class, an instance of which we will set as t
 	    public string HomePhone { get; set; }
 	}
 ```
-
-#### [VB.NET] Example 1: Create the Employee class
-	
-	```VB.NET
+```VB.NET
 	Public Class Employee
 	    Public Property FirstName() As String
 	    Public Property LastName() As String
@@ -43,9 +38,7 @@ __1.__ First we declare an Employee class, an instance of which we will set as t
 
 __2.__ Declare the RadPropertyGrid in XAML:
 
-#### [XAML] Example 2: Create the RadPropertyGrid
-
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="PropertyGrid" 
 	                 RenderMode="Flat"   
 	                 IsGrouped="True"
@@ -61,9 +54,7 @@ __2.__ Declare the RadPropertyGrid in XAML:
 
 __3.__ Instantiate the Employee object and set it as the item of the PropertyGrid control:
 
-#### [C#] Example 3: Instantiate Employee object
-
-	```C#
+```C#
 	Employee employee = new Employee()
 	{
 	    FirstName = "Nancy",
@@ -73,10 +64,7 @@ __3.__ Instantiate the Employee object and set it as the item of the PropertyGri
 	};
 	PropertyGrid.Item = employee;
 ```
-
-#### [VB.NET] Example 3: Instantiate Employee object
-
-	```VB.NET
+```VB.NET
 	Dim employee As New Employee() With {
 	    .FirstName = "Nancy",
 	    .LastName = "Porter",
@@ -93,10 +81,8 @@ At this point we have the following appearance:
 You then need to proceed with creating the specific style and assign it to the control.
 
 __4.__ Create the common style as a static resource:
-
-#### [XAML] Example 4: Create the style
 	
-	```XAML
+```XAML
 	<Style x:Key="commonGroupStyle" TargetType="telerik:RadToggleButton">
 	    <Setter Property="Foreground" Value="Blue" />
 	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -107,9 +93,7 @@ __4.__ Create the common style as a static resource:
 
 __5.__ Set the __Group Style__ property of the RadPropertyGrid:
 
-#### [XAML] Example 5: Set the GroupStyle property
-
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid RenderMode="Flat"   
 	                 IsGrouped="True"
 	                 AutoGeneratePropertyDefinitions="False"

@@ -20,7 +20,7 @@ For example, lets have the following declaration of the RadPropertyGrid control:
 
 __Example 1: Declaring RadPropertyGrid__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid Grid.Row="0" x:Name="PropertyGrid1"
 	                          RenderMode="Flat"
 	                          AutoGeneratePropertyDefinitions="False"
@@ -38,7 +38,7 @@ Its Item is set like so:
 
 __Example 2: Setting RadPropertyGrid Item__
 
-	```C#
+```C#
 	Employee Employee = new Employee()
 	{
 	    FirstName = "Nancy",
@@ -72,7 +72,7 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 __Example 3: Expanding RadPropertyGrid Group__
 
-	```C#
+```C#
 	this.PropertyGrid1.ExpandGroup("Group Name");
 ```
 ```VB.NET
@@ -83,7 +83,7 @@ __Example 3: Expanding RadPropertyGrid Group__
 
 __Example 4: Collapsing RadPropertyGrid Group__
 
-	```C#
+```C#
 	this.PropertyGrid1.CollapseGroup("Group Name");
 ```
 ```VB.NET
@@ -94,7 +94,7 @@ __Example 4: Collapsing RadPropertyGrid Group__
 
 __Example 5: Expanding all RadPropertyGrid Groups__
 
-	```C#
+```C#
 	this.PropertyGrid1.ExpandAllGroups();
 ```
 ```VB.NET
@@ -105,7 +105,7 @@ __Example 5: Expanding all RadPropertyGrid Groups__
 
 __Example 6: Collapsing all RadPropertyGrid Groups__
 
-	```C#
+```C#
 	this.PropertyGrid1.CollapseAllGroups();
 ```
 ```VB.NET
@@ -126,7 +126,7 @@ It has two methods:
 
 __Example 7: Suspending and Resuming notifications__
 
-	```C#
+```C#
 	this.PropertyGrid1.GroupDefinitions.SuspendNotifications();
 	// Execute additional logic
 	this.PropertyGrid1.GroupDefinitions.ResumeNotifications();

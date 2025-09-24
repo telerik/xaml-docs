@@ -10,9 +10,9 @@ position: 15
 
 # ReadOnlyEditorState
 
-As of __Q1 2014__ release we have introduced a new property of RadPropertyGrid - __ReadOnlyEditorState__.
+RadPropertyGrid provides the __ReadOnlyEditorState__ property, which controls the read-only behavior of the control. 
 
-It represents RadPropertyGrid's read only behavior and has three options:
+The property supports three options:
 
 * __Default__: This is the current behavior of RadPropertyGrid when __IsReadOnly="True"__ is set.  When this is the chosen option the __IsReadOnly__ property of the __TextBox and CollectionEditorPicker__ is respected. For all other controls the __IsEnabled__ property is set.
 
@@ -26,7 +26,7 @@ The following examples show how RadPropertyGrid will look like when the ReadOnly
 
 __Example 1: Setting ReadOnlyEditorState property to Disabled__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid 
 	    Item="{Binding Employee}"
 	    IsReadOnly="True"
@@ -39,7 +39,7 @@ __Example 1: Setting ReadOnlyEditorState property to Disabled__
 
 __Example 2: Setting ReadOnlyEditorState to ReadOnly__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid
 	    Item="{Binding Employee}"
 	    IsReadOnly="True"

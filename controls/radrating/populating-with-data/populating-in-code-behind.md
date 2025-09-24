@@ -12,9 +12,6 @@ position: 3
 
 This tutorial will walk you through the common tasks of [adding](#Adding_RadRatingItems) and [removing](#Removing_RadRatingItems) __RadRatingItems__ programmatically.			
 
-Example 1 demonstrates a regular __RadRating__ declaration:
-
-__Example 1: Declare a RadRating__
 ```XAML
 	<telerik:RadRating x:Name="radRating"/>
 ```
@@ -32,12 +29,11 @@ In order to add new rating items to a __RadRating__ control, you have to perform
 
 * Add it to the __RadRating__'s __Items__ collection					
 
-	__Example 2: Adding RadRatingItems__
 	```C#
 		RadRatingItem ratingItem = new RadRatingItem();
 		this.radRating.Items.Add(ratingItem);
 	```
-```VB.NET
+	```VB.NET
 		Dim ratingItem As New RadRatingItem()
 		Me.radRating.Items.Add(ratingItem)
 	```
@@ -55,7 +51,6 @@ In order to clear the default rating items and add new you have to add one addit
 
 * Add it to the __RadRating__'s __Items__ collection					
 
-__Example 3: Clearing the Items collection__
 ```C#
 	this.radRating.Items.Clear(); 
 	RadRatingItem ratingItem = new RadRatingItem();
@@ -84,7 +79,6 @@ __Example 3: Clearing the Items collection__
 
 In order to remove a specific __RadRatingItem__, you should remove it from the __RadRating__'s __Items__ collection.				
 
-__Example 4: Removing RadRatingItems__
 ```C#
 	private void RemoveRatingItem( RadRatingItem itemToRemove )
 	{

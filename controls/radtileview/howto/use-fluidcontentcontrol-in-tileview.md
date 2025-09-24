@@ -14,7 +14,6 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 
 1. Create the model that will be used to describe each separate TileViewItem.
 
-	#### __C#__  
 	```C#
 		public class TileInfo : ViewModelBase
 		{	
@@ -180,7 +179,6 @@ This article will show you a step-by-step tutorial on how to use `RadFluidConten
 	
 4. To populate the TileView with data, set its `ItemsSource` property.
 
-	#### __C#__  
 	```C#
 		public partial class TileViewContainer : UserControl
 		{

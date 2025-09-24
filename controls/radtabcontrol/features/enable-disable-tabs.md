@@ -10,23 +10,13 @@ position: 3
 
 # Enable and Disable Tabs
 
-
-
-## 
-
 If you want to enable or disable specific tab item(s) you have to use the __Boolean__ property __IsEnabled__ of the class __RadTabItem__. You can set it from your code-behind, XAML or in Blend.
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTabControl x:Name="radTabControl">
 	    <telerik:RadTabItem Header="Calendar" IsEnabled="False"/>
 	</telerik:RadTabControl>
-	```
-
-
-
-#### __C#__
+```
 
 ```C#
 	RadTabItem newTabItem = new RadTabItem();
@@ -36,12 +26,7 @@ If you want to enable or disable specific tab item(s) you have to use the __Bool
 	radTabControl.Items.Add( newTabItem );
 	// Disable the newly created tab item
 	newTabItem.IsEnabled = false;
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim newTabItem As New RadTabItem()
 	newTabItem.Header = "Disabled Item"
@@ -50,9 +35,7 @@ If you want to enable or disable specific tab item(s) you have to use the __Bool
 	radTabControl.Items.Add(newTabItem)
 	' Disable the newly created tab item'
 	newTabItem.IsEnabled = False
-	```
-
-
+```
 
 ## See Also
 

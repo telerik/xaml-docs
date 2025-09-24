@@ -18,7 +18,7 @@ In order to achieve the desired behavior, you should create a [custom KeyboardCo
 
 __Example 1: Handling the Tab key__
 
-	```C#
+```C#
 	public override IEnumerable<ICommand> ProvideCommandsForKey(Key key)
 	{
 	    List<ICommand> commandsToExecute = base.ProvideCommandsForKey(key).ToList();

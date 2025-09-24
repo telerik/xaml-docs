@@ -36,7 +36,7 @@ You have two options:
 
 __Example 1: Styling all header rows of an application__
 
-	```XAML
+```XAML
 	<Style TargetType="telerik:GridViewHeaderRow">
 	    <Setter Property="Background" Value="Red"/>
 	</Style>
@@ -50,7 +50,7 @@ __RadGridView's header row__ can also be styled by creating an appropriate __Sty
 
 __Example 2: Setting RadGridView's HeaderRowStyle__
 
-	```XAML
+```XAML
 	<telerik:RadGridView HeaderRowStyle="{StaticResource HeaderRowStyle}" />
 ```
 

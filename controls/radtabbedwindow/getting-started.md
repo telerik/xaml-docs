@@ -33,7 +33,9 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 Start by creating a new WPF window using Visual Studio's item template.
 
-{% figure 1, "Add new WPF Window", "add-new-window.png" %}
+__Add new WPF Window__
+
+![](images/add-new-window.png)
 
 After this, replace the generated Window declaration with the following XAML code:
 
@@ -105,7 +107,9 @@ __Example 3: Open RadTabbedWindow on application startup__
 
 If you run the application, you will see the RadTabbedWindow control illustrated in __Figure 2__. 
 
-{% figure 2, "Empty RadTabbedWindow", "tabbedwindow-getting-started-1.png" %}
+__Empty RadTabbedWindow__
+
+![](images/tabbedwindow-getting-started-1.png)
 
 >important If you're using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) theming mechanism with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), note that the newly created window will not automatically receive the default style. In order for this to happen, you should add the following style after the merged dictionaries:
 
@@ -149,7 +153,9 @@ __Example 5: Adding Tabs to RadTabbedWindow in XAML__
 
 Upon running the application, your RadTabbedWindow should now be populated with tabs as shown on **Figure 3**.
 
-{% figure 3, "RadTabbedWindow with tabs", "tabbedwindow-getting-started-2.png" %}
+__RadTabbedWindow with tabs__
+
+![](images/tabbedwindow-getting-started-2.png)
 
 Alternatively, you can set the **ItemsSource** property of the control or bind it to a collection in your viewmodel. You can find an example of how to do this in the [Data Binding]({%slug radtabbedwindow-data-binding%}) article.
 
@@ -186,7 +192,9 @@ __Example 6: Merge the ResourceDictionaries__
 
 __Figure 4__ shows __RadTabbedWindow__ with the **Windows8** theme applied.
 	
-{% figure 4, "RadTabbedWindow with the Windows8 theme", "tabbedwindow-getting-started-3.png" %}
+__RadTabbedWindow with the Windows8 theme__
+
+![](images/tabbedwindow-getting-started-3.png)
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

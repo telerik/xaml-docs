@@ -27,7 +27,7 @@ This article describes how to data bind business objects to __RadTileView__.
 			public string Description { get; set; }
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class CustomerAccount
 			Private _Name As String
 				Public Property Name() As String
@@ -92,7 +92,7 @@ This article describes how to data bind business objects to __RadTileView__.
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class BankViewModel
 			Public Property Customers() As ObservableCollection(Of CustomerAccount)
 				Get
@@ -136,7 +136,7 @@ This article describes how to data bind business objects to __RadTileView__.
 			this.DataContext = new BankViewModel();
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Sub New()
 			InitializeComponent()
 			Me.DataContext = New BankViewModel()

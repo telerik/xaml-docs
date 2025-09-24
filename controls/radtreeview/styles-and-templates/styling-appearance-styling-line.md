@@ -33,8 +33,6 @@ After clicking OK, a style for your __RadTreeViewItem__ control will be created.
 
 * Finally, go back to your XAML and set the __ItemContainerStyle__ property to the just created style. 
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" IsLineEnabled="True"
 			ItemContainerStyle="{StaticResource RadTreeViewItemStyle}"

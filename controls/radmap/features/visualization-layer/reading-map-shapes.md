@@ -194,7 +194,7 @@ The events described in this section are available for the AsyncShapeFileReader,
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Private Sub AsyncShapeFileReader_PreviewReadShapeData(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Map.PreviewReadShapeDataCompletedEventArgs)
 			If e.Items.Count > 0 Then
 				Dim shape = e.Items(0)
@@ -244,7 +244,7 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 	```C#
 		this.visualizationLayer.Reader.ToolTipFormat = "CNTRY_NAME";
 	```
-```VB.NET
+	```VB.NET
 		Me.visualizationLayer.Reader.ToolTipFormat = "CNTRY_NAME"
 	```
 
@@ -276,7 +276,7 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 	```C#
 		this.visualizationLayer.Reader.ToolTipFormat = "{SQKM|F2}";
 	```
-```VB.NET
+	```VB.NET
 		Me.visualizationLayer.Reader.ToolTipFormat = "{SQKM|F2}"
 	```
 
@@ -305,7 +305,7 @@ Using the ToolTipFormat property is the simplest way to create a single-line too
 	```C#
 		this.visualizationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|#,#.0} sq. km.";
 	```
-```VB.NET
+	```VB.NET
 		Me.visualizationLayer.Reader.ToolTipFormat = "{CNTRY_NAME} - {SQKM|#,#.0} sq. km."
 	```
 

@@ -14,43 +14,6 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 1. Let's start with the __RadTreeView__ definition. For the purpose of this tutorial we will use a __RadTreeView__ that is data bound to a collection of business objects as demonstrated in the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) topic:
 			
-	{% if site.site_name == 'Silverlight' %}
-
-	#### __XAML__
-
-	```XAML
-		<Grid>
-			<Grid.Resources>
-				<sampleData:RadTreeViewSampleData x:Key="DataSource" />
-		
-				<DataTemplate x:Key="Team">
-					<TextBlock Text="{Binding Name}" />
-				</DataTemplate>
-				<telerik:HierarchicalDataTemplate x:Key="Division"
-											ItemTemplate="{StaticResource Team}"
-											ItemsSource="{Binding Teams}">
-					<TextBlock Text="{Binding Name}" />
-				</telerik:HierarchicalDataTemplate>
-				<telerik:HierarchicalDataTemplate x:Key="League"
-											ItemTemplate="{StaticResource Division}"
-											ItemsSource="{Binding Divisions}">
-					<TextBlock Text="{Binding Name}" />
-				</telerik:HierarchicalDataTemplate>
-			</Grid.Resources>
-			<telerik:RadTreeView x:Name="xTreeView"
-									Margin="8"
-									IsDragDropEnabled="True"
-									ItemTemplate="{StaticResource League}"
-									ItemsSource="{Binding Source={StaticResource DataSource},
-														Path=LeaguesDataSource}" />
-		</Grid>       
-		```
-
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-
-	#### __XAML__
-
 	```XAML
 		<Grid>
 			<Grid.Resources>
@@ -79,18 +42,11 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 		</Grid>       
 	```
 
-	{% endif %}
-
 2. Next, switch to the code-behind and attach to the __DragDropManager's DragOver__ routed event in the following manner:			
-
-	#### __C#__
 
 	```C#
 		DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, true);
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, True)
 	```
@@ -98,8 +54,6 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 	>tip __RadTreeView__ handles internally the __DragDropManager__ events and in order to invoke a custom handler, you need to explicitly specify that you're adding a handler that should be invoked even for already handled events. This is done through the last - __bool__ argument of the __DragDropManager.AddDragOverHandler__ extension method.			  
 
 3. In the handler, you need to get the dragged data and as we're working in the context of a single __RadTreeView__, we can safely assume that the dragged data type is __TreeViewDragDropOptions__. Once we have the options of the drag operation, we can configure them accordingly to the requirements of the application. In this example, we will implement a drag/drop operation that denies the drop inside any __Division__ object. In order to do so, we need to deny the drop operation when the __DropOperation__ is __Inside__ and the __DropTargetItem__ business item is of type __Division__:			
-
-	#### __C#__
 
 	```C#
 		private void OnDragOverTree(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -111,9 +65,6 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 			}
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Sub OnDragOverTree(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 			Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -129,8 +80,6 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 
 	* In order to display a DropImpossible indicator in the __DragVisual__, you need to set the __IsDropPossible__ property to __False__.
 	* In order to change the string describing the drop action, you need to set the __DropActionText__.
-
-	#### __C#__
 
 	```C#
 		private void OnDragOverTree(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -149,9 +98,6 @@ This topic demonstrates how to deny a drop operation over a specific item and sp
 			}
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Sub OnDragOverTree(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 			Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)

@@ -20,8 +20,6 @@ NumericRadialAxis does not define any properties specific to it.
 
 Below is an example of RadPolarChart that demonstrates the properties of its polar axis:
 
-#### __XAML__
-
 ```XAML
 	<telerikChart:RadPolarChart>
 	    <telerikChart:RadPolarChart.Grid>
@@ -38,10 +36,6 @@ Below is an example of RadPolarChart that demonstrates the properties of its pol
 	        <telerikChart:NumericRadialAxis/>
 	    </telerikChart:RadPolarChart.RadialAxis>
 	</telerikChart:RadPolarChart>
-	```
-
-
-
-
+```
 
 ![Rad Chart View-chart axes polaraxis](images/RadChartView-chart_axes_polaraxis.PNG)

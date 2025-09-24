@@ -23,8 +23,6 @@ The final result should look like the snapshot below:
 
 * Create a new class named __Team__. The class has a single string property.
 
-	#### __C#__
-
 	```C#
 		public class Team
 		{
@@ -38,10 +36,7 @@ The final result should look like the snapshot below:
 				set;
 			}
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class Team
 			Public Sub New(ByVal name As String)
@@ -58,11 +53,9 @@ The final result should look like the snapshot below:
 				End Set
 			End Property
 		End Class
-		```
+	```
 		
 * Create a new class named __Division__. The class has a single string property - __Name__ and a collection with teams.
-
-	#### __C#__
 
 	```C#
 		public class Division
@@ -83,10 +76,7 @@ The final result should look like the snapshot below:
 				set;
 			}
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class Division
 			Public Sub New(ByVal name As String)
@@ -114,11 +104,9 @@ The final result should look like the snapshot below:
 				End Set
 			End Property
 		End Class
-		```
+	```
 
 * Create a new class named __League__. The class has a single string property and a collection with divisions objects. Practically, a collection of __League__ objects will be the data source for the treeview.
-
-	#### __C#__
 
 	```C#
 		public class League
@@ -139,10 +127,7 @@ The final result should look like the snapshot below:
 				set;
 			}
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class League
 			Public Sub New(ByVal name As String)
@@ -170,11 +155,9 @@ The final result should look like the snapshot below:
 				End Set
 			End Property
 		End Class
-		```
+	```
 
 * Create a new class named __RadTreeViewSampleData__. This will be the data source (the model) for the __RadTreeView__. The class has a reference to an __ObservableCollection__ of __League__ objects and a single method which initializes the data.
-
-	#### __C#__
 
 	```C#
 		public class RadTreeViewSampleData
@@ -231,10 +214,7 @@ The final result should look like the snapshot below:
 				d.Teams.Add( new Team( "Team Epsilon" ) );
 			}
 		}
-		```
-		
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class RadTreeViewSampleData
 			Public Sub New()
@@ -298,65 +278,21 @@ The final result should look like the snapshot below:
 				Return value
 			End Function
 		End Class
-		```
+	```
 
 * The next step is to declare the __RadTreeViewSampleData__ as a resource in your application.
-			
-	{% if site.site_name == 'Silverlight' %}
-
-	#### __XAML__
-
-	```XAML
-		<UserControl.Resources>
-			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-		</UserControl.Resources>
-		```
-
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-
-	#### __XAML__
-
+		
 	```XAML
 		<Window.Resources>
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 		</Window.Resources>
-		```
-
-	{% endif %}
+	```
 
 	>The __sampleData__ alias points to the assembly where your data source is located.
 		  
 
 * Since the data is hierarchical, you need to declare a __HierarchicalDataTemplate__. If you want to learn about the hierarchical data template, read the topic about [Hierarchical Data Templates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}).
 			
-	{% if site.site_name == 'Silverlight' %}
-
-	#### __XAML__
-
-	```XAML
-		<UserControl.Resources>
-			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-		
-			<DataTemplate x:Key="Team">
-				<TextBlock Text="{Binding Name}" />
-			</DataTemplate>    
-			<telerik:HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-				   ItemsSource="{Binding Teams}">
-				<TextBlock Text="{Binding Name}" />
-			</telerik:HierarchicalDataTemplate>
-			<telerik:HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-				   ItemsSource="{Binding Divisions}">
-				<TextBlock Text="{Binding Name}" />
-			</telerik:HierarchicalDataTemplate>
-		</UserControl.Resources>
-		```
-
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-
-	#### __XAML__
-
 	```XAML
 		<Window.Resources>
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
@@ -374,19 +310,15 @@ The final result should look like the snapshot below:
 			</HierarchicalDataTemplate>
 		
 		</Window.Resources>
-		```
-
-	{% endif %}
+	```
 
 * Finally, here is the treeview declaration. For __ItemsSource__ is used the __DataSource__ resource. For __ItemTemplate__ is set the created in the previous step hierarchical data template.
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadTreeView
 			   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 			   ItemTemplate="{StaticResource League}" />
-		```
+	```
 
 * If you run the demo, the final result should look like the snapshot below. 
 ![{{ site.framework_name }} RadTreeView Binding to ObservableCollection](images/RadTreeView_PopulatingWithDataBindingToObject_010.PNG)

@@ -36,6 +36,7 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 1. Create the model and view model:
 
 	__Creating a sample model and view model__
+	
 	```C#
 	    public class Person
 	    {
@@ -61,6 +62,7 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 2. Extend the column that you will use override the FilteringDisplayFunc property:
 
 	__Creating a custom column and overriding the FilteringDisplayFunc property__
+	
 	```C#
 	    public class CustomGridViewDataColumn : GridViewDataColumn
 	    {
@@ -71,6 +73,7 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 3. Create a field of the type of `Func<object, object>` and a method that will contain the distinct values modification. After that, set it as a return value for the FilteringDisplayFunc property:
 
 	__Creating a custom function__
+	
 	```C#
 	    public class CustomGridViewDataColumn : GridViewDataColumn
 	    {
@@ -96,6 +99,7 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 4. The logic of the custom column will modify the distinct values for the IsEmployed property from the first step. 
 
 	__Implementing the customization logic for the distinct values of the custom column__
+	
 	```C#
 	    public class CustomGridViewDataColumn : GridViewDataColumn
 	    {
@@ -127,7 +131,8 @@ The following example shows how to utilize the FilteringDisplayFunc property. It
 
 5. Add the custom column to the Columns collection of RadGridView and bind it to the intended property. For this example, it will be the IsEmployed property:
 
-__Adding the custom column to the Columns collection of RadGridView__
+	__Adding the custom column to the Columns collection of RadGridView__
+	
 	```C#
 	    <Grid>
 	        <Grid.DataContext>

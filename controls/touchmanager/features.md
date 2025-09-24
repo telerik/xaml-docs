@@ -33,7 +33,7 @@ TouchManager exposes the following public properties:
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Partial Class App
 			Inherits Application
 
@@ -67,7 +67,7 @@ TouchManager exposes the following public properties:
 	```C#
 		TouchManager.SetScrollViewerSwipeMode(this.element, ScrollViewerSwipeMode.Parent);
 	```
-```VB.NET
+	```VB.NET
 		TouchManager.SetScrollViewerSwipeMode(Me.element, ScrollViewerSwipeMode.Parent);
 	```
 
@@ -105,7 +105,7 @@ TouchManager exposes the following public properties:
 	```C#
 		TouchManager.SetDragStartTrigger(this.element, TouchDragStartTrigger.TapHoldAndMove);
 	```
-```VB.NET
+	```VB.NET
 		TouchManager.SetDragStartTrigger(Me.element, TouchDragStartTrigger.TapHoldAndMove);
 	```
 

@@ -26,8 +26,6 @@ In order to customize the appearance of the __MarkedZone__ you can simply set it
 
 The following code snippet demonstrates a RadChart with LineSeries that will be used as base for adding MarkedZones over:
 
-#### __C#__
-
 ```C#
 	DataSeries series1 = new DataSeries()
 	 {
@@ -50,11 +48,6 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	series1.Definition.Appearance.PointMark.Stroke = new SolidColorBrush(Colors.Black);
 	this.radChart.DefaultView.ChartArea.DataSeries.Add(series1);
 ```
-
-
-
-#### __VB.NET__
-
 ```VB.NET
 	InitializeComponent()
 	Dim series1 As New DataSeries() With
@@ -76,11 +69,7 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	series1.Definition.Appearance.Stroke = New SolidColorBrush(Colors.Black)
 	series1.Definition.Appearance.PointMark.Stroke = New SolidColorBrush(Colors.Black)
 	RadChart1.DefaultView.ChartArea.DataSeries.Add(series1)
-	```
-
-
-
-#### __XAML__
+```
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -109,10 +98,6 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	</telerik:RadChart>
 ```
 
-
-
-#### __C#__
-
 ```C#
 	MarkedZone redZone = new MarkedZone();
 	redZone.StartY = 110;
@@ -130,11 +115,6 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	this.radChart.DefaultView.ChartArea.Annotations.Add(yellowZone);
 	this.radChart.DefaultView.ChartArea.Annotations.Add(greenZone);
 ```
-
-
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim redZone As New MarkedZone()
 	redZone.StartY = 110
@@ -151,7 +131,8 @@ The following code snippet demonstrates a RadChart with LineSeries that will be 
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(redZone)
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(yellowZone)
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(greenZone)
-	```
+```
+
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Annotations_MarkedZone_01.png)
 
 Here is an example of a marked zone that is limited in both directions.

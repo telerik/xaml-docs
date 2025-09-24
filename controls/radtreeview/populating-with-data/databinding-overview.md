@@ -16,66 +16,48 @@ __Data binding__ is a process of connecting the application User Interface and b
 
 One very important aspect of the data binding is the __DataContext__. It is the data object, which is assigned to the specific framework element. You can assign __DataContext__ both through code-behind and XAML: 
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView DataContext="{StaticResource Categories}" />
-	```
-
-#### __C#__
+```
 
 ```C#
 	radTreeView.DataContext = new CategoryList();
-	```
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	radTreeView.DataContext = New CategoryList()
-	```
+```
 
 The __DataContext__ property is inherited, e.g. if you assign a __DataContext__ to an element, all of its children will automatically have the same data context, unless you assign them a different data context. For example, if you have the following control structure: 
-
-#### __XAML__
 
 ```XAML
 	<Grid x:Name="LayoutRoot">
 	    <telerik:RadTreeView x:Name="radTreeView1"/>
 	    <telerik:RadTreeView x:Name="radTreeView2"/>      
 	</Grid>
-	```
+```
 	
 You can simply assign the __DataContext__ to the __Grid__ control and both tree views will inherit it.
 
-#### __XAML__
-
 ```XAML
 	<Grid x:Name="LayoutRoot"DataContext="{StaticResource categories}">
-	```
+```
 	
 Where the static resource __categories__ is defined in XAML as follows: 
-
-#### __XAML__
 
 ```XAML
 	<UserControl.Resources>
 	  <local:CategoryList x:Key="categories" />
 	</UserControl.Resources>
-	```
+```
 	
 Or in code-behind: 
 
-#### __C#__
-
 ```C#
 	LayoutRoot.DataContext = new CategoryList();
-	```
-	
-#### __VB.NET__
-
+```
 ```VB.NET
 	LayoutRoot.DataContext = New CategoryList()
-	```
+```
 
 ## See Also
  * [Populating with Data - Declaratively]({%slug radtreeview-populating-with-data-declaratively%})

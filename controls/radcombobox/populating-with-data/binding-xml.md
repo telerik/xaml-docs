@@ -39,14 +39,12 @@ __The final result__
 
 2. Add a new `RadComboBox` declaration in your XAML.
 
-	#### __XAML__  
 	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" Width="200"/>
 	```
 
 3. Create a new class named `XmlNodeItem`. This class is pretty simple and it represents a separate node from the XML document. Its properties are `Team` and `Country`. Both of the properties are of type `string`.
 
-	#### __C#__  
 	```C#
 		public class XmlNodeItem
 		{
@@ -57,8 +55,6 @@ __The final result__
 			public string Country { get; set; }
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Public Class XmlNodeItem
 		Private _Team As String
@@ -87,7 +83,6 @@ __The final result__
 
 4. Create a new class named `XmlNodeItemList`, which derives from `ObservableCollection` of `XmlNodeItem`. This is a collection that will be created from the XML file. 
 
-	#### __C#__  
 	```C#
 		[XmlRoot( ElementName = "Items" )]
 		public class XmlNodeItemList : ObservableCollection<XmlNodeItem>
@@ -101,8 +96,6 @@ __The final result__
 			}
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 			<XmlRoot(ElementName = "Items")> _
 			Public Class XmlNodeItemList
@@ -117,7 +110,6 @@ __The final result__
 
 5. Create a new class named `RadComboBoxXmlDataSource`, which derives from `XmlNodeItemList`. The class takes a path to the XML file and deserializes the data in the private method `RetrieveData()`.
 
-	#### __C#__  
 	```C#
 		public class RadComboBoxXmlDataSource : XmlNodeItemList
 		{
@@ -145,8 +137,6 @@ __The final result__
 			}
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 			Public Class RadComboBoxXmlDataSource
 				Inherits XmlNodeItemList
@@ -173,7 +163,6 @@ __The final result__
 
 6. The next step is to declare the `RadComboBoxXmlDataSource` as a resource in your application.
 
-	#### __XAML__  
 	```XAML
 		<UserControl.Resources>
 			<example:RadComboBoxDataSource x:Key="DataSource"  Source="RadComboBoxBindingToXml.xml"/>
@@ -182,14 +171,12 @@ __The final result__
 
 7. Update the `RadComboBox` declaration by setting the `ItemsSource` property.
 
-	#### __XAML__  
 	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}}"/>
 	```
 
 8. Create a custom `DateTemplate` and set it to the `RadComboBox`'s `ItemTemplate` property. 
 
-	#### __XAML__  
 	```XAML
 		<DataTemplate x:Key="ComboBoxCustomTemplate">
 			<StackPanel Margin="5" Orientation="Horizontal">
@@ -203,7 +190,6 @@ __The final result__
 
 9. Update the ComboBox declaration by setting the `ItemTemplate` property.
 
-	#### __XAML__  
 	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" Width="200" ItemsSource="{Binding Source={StaticResource DataSource}}" ItemTemplate="{StaticResource ComboBoxCustomTemplate}"/>
 	```

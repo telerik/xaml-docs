@@ -15,7 +15,6 @@ RadMap provides a rich set of [geocoordinate-enabled shapes]({%slug radmap-featu
 
 First of all we’ll need two Information layers – one for the polyline and the other one for the points that we will use for the shape manipulation. We will disable the default pan / drag actions of the Map as we will attach our own mouse events on the pinpoints only:
 
-#### __XAML__
 ```XAML
 	<telerik:RadMap x:Name="radMap"
 	                        InitializeCompleted="radMap_InitializeCompleted"
@@ -36,7 +35,6 @@ First of all we’ll need two Information layers – one for the polyline and th
 
 Now we will create a sample polyline and add it to the first information layer. Note that it is better to do this after the map provider has been initialized in order to prevent your items from appearing in the upper left corner before the map is initialized and loaded:
 
-#### __C#__
 ```C#
 	private void radMap_InitializeCompleted(object sender, EventArgs e)
 	{
@@ -63,8 +61,6 @@ Now we will create a sample polyline and add it to the first information layer. 
 		this.polylineLayer.Items.Add(polyline);
 	}
 ```
-
-#### __VB.NET__
 ```VB.NET
 	Private Sub radMap_InitializeCompleted(ByVal sender As Object, ByVal e As EventArgs)
 				If Not initialized Then
@@ -97,7 +93,6 @@ And now to the essential part of our scenario – the pinpoints. Add a MapPinPoi
 
 * __MouseMove__ - gets the coordinates of the clicked pinpoint relative to the map control screen coordinates. Then redraw the polyline respecting the new location of its vertex.  Both actions are easily achieved via the static SetLocation() and GetLocation() methods of the MapLayer helper class:
 
-	#### __C#__
 	```C#
 		private void pinPoint_MouseMove(object sender, MouseEventArgs e)
 		{
@@ -123,8 +118,6 @@ And now to the essential part of our scenario – the pinpoints. Add a MapPinPoi
 
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Private Sub pinPoint_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
 				If Not Me.isDragging Then

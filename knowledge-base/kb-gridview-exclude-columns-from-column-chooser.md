@@ -48,8 +48,7 @@ How to exclude columns from the [column chooser in the control panel]({%slug gri
 		}
 	```
 
-2. Use the converter in the binding to the **Columns** property.
-	
+2. Use the converter in the binding to the **Columns** property.	
 	
 	```XAML
 		<telerik:ControlPanelItem ButtonTooltip="Column chooser">

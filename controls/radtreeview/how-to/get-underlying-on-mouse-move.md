@@ -10,25 +10,15 @@ position: 6
 
 # Get the Underlying TreeView Item on MouseMove
 
-
-
-## 
-
 If you want to get the underlying item when you move your mouse over the treeview, you need to do the following steps:
 
 1. First, you need to attach to the __MouseMove__event of the __RadTreeView__: 
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" MouseMove="radTreeView_MouseMove">
-	```
-
-
+```
 
 2. Second, in the code-behind you need to add the following code: 
-
-#### __C#__
 
 ```C#
 	private void radTreeView_MouseMove( object sender, MouseEventArgs e )
@@ -51,12 +41,7 @@ If you want to get the underlying item when you move your mouse over the treevie
 	         }
 	     }
 	}
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Private Sub radTreeView_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
 	    Dim element As FrameworkElement = TryCast(e.OriginalSource, FrameworkElement)
@@ -76,9 +61,7 @@ If you want to get the underlying item when you move your mouse over the treevie
 	        End While
 	    End If
 	End Sub
-	```
-
-
+```
 
 >When you perform your custom logic, you have to return from the method because otherwise the method will traverse the whole visual tree on every mouse move and there will be performance implications.
 

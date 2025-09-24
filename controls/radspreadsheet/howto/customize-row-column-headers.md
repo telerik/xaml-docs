@@ -23,7 +23,6 @@ It will be useful if you can set the column heading name when the first row is n
 ## Change the Row and Column Headings
 
 Each worksheet has a property called __RenderNameConverter__, which provides a mechanism for changing the row and column headings for UI purposes, including PDF export and [Printing]({%slug radspreadsheet-ui-printing%}). All you need to do is create a custom name converter and assign an instance of it to the RenderNameConverter property. The converter class must inherit from __HeaderNameRenderingConverterBase__.
-        
 
 __Example 1__ shows a simple implementation for the converter class used for creating the snapshots above.
         
@@ -31,19 +30,19 @@ __Example 1__ shows a simple implementation for the converter class used for cre
 __Example 1: Create a custom name converter__
 
 ```C#
-	    public class CustomNameConverter : HeaderNameRenderingConverterBase
-	    {
-	        protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
-	        {
-	            if (columnIndex == 0 &&
-	                context.VisibleRange.FromIndex.RowIndex >= 1 && context.VisibleRange.FromIndex.RowIndex <= 5)
-	            {
-	                return "First Name";
-	            }
-	
-	            return base.ConvertColumnIndexToNameOverride(context, columnIndex);
-	        }
-	    }
+	public class CustomNameConverter : HeaderNameRenderingConverterBase
+	{
+		protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
+		{
+			if (columnIndex == 0 &&
+				context.VisibleRange.FromIndex.RowIndex >= 1 && context.VisibleRange.FromIndex.RowIndex <= 5)
+			{
+				return "First Name";
+			}
+
+			return base.ConvertColumnIndexToNameOverride(context, columnIndex);
+		}
+	}
 ```
 
 
@@ -54,19 +53,10 @@ After implementing your custom name converter you need to instantiate it and ass
 __Example 2: Instantiate and assign a custom converter__
 
 ```C#
-	            this.radSpreadsheet.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
-	```
+	this.radSpreadsheet.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
+```
 
-
-
-That's it. The column heading is changed.
-        
-{% if site.site_name == 'Silverlight' %}
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/SL/CustomRowAndColumnHeadings).
-{% endif %} 
-{% if site.site_name == 'WPF' %}
->tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/CustomRowAndColumnHeadings).
-{% endif %} 
+>tip You can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/Spreadsheet/WPF/CustomRowAndColumnHeadings).
 
 ## States of the Row and Column Headings
 

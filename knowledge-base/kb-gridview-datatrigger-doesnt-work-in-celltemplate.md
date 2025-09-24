@@ -83,7 +83,6 @@ Instead, use one of the following ideas:
 * __Using the `ContentTemplate` of `GridViewCell` instead of the `CellTemplate`.__
 
 	To utilize this idea, use the `CellStyle` property of the column.
-
 	
 	```XAML
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding PersonName}"> 

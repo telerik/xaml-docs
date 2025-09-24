@@ -94,7 +94,9 @@ To add custom categories as well as remove certain predefined categories, you ne
 
 **Example 3** adds a **Favorites** category with two subcategories - **Math** and **DateTime**. Each of the categories contains some static methods of the respective class. The results before and after respectively can be observed in **Figure 1**.
 
-{% figure 1, "Custom category", "custom-category.png" %}
+__Custom category__
+
+![](images/custom-category.png)
 
 ## Custom Functions
 
@@ -149,7 +151,9 @@ You can then add these functions in the **GetFunctionsItemModels** override as w
 
 **Example 6** adds the two custom functions defined in Example 4 to the **Other** subcategory. The results before and after respectively are illustrated in **Figure 2**. 
 
-{% figure 2, "Custom functions", "custom-functions.png" %}
+__Custom functions__
+
+![](images/custom-functions.png)
 
 ## Further Customizations
 

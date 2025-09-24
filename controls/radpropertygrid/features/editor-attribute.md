@@ -54,7 +54,7 @@ For the purposes of this example, the definition of __RadPropertyGrid__ is:
 
 __Example 1: Defining RadPropertyGrid__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="propertyGrid" Item="{Binding Captain}" />
 ```
 
@@ -102,7 +102,7 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 
 __Example 3: Specifying the type of the editor__
 
-	```C#
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl))]
 	public PhoneNumber PhoneNumber
@@ -141,7 +141,7 @@ __Example 3: Specifying the type of the editor__
 
 __Example 4: Specifying the type of the editor as string and passing the absolute file path of the assembly__
 	
-	```C#
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", @"..\..\bin\Debug\PhoneEditor.dll")]
 	public PhoneNumber PhoneNumber
@@ -187,7 +187,7 @@ __Figure 1__: EditorAtrribute with editorType specified
 
 __Example 5: Specifying the type of the editor and the style of the containing host__
 
-	```C#
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
 	public PhoneNumber PhoneNumber
@@ -226,7 +226,7 @@ __Example 5: Specifying the type of the editor and the style of the containing h
 
 __Example 6: Specifying the type of the editor and the absolute file path of the assembly as string, as well the style of the containing host__
 
-	```C#
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", @"..\..\bin\Debug\PhoneEditor.dll",
 	Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
@@ -309,7 +309,7 @@ __Example 7: Specifying the type of the editor and the target property__
 
 __Example 8: Specifying the type of the editor and the absolute file path of the assembly as string, as well the target property__
 
-	```C#
+```C#
 	private int number;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("Telerik.Windows.Controls.RadNumericUpDown"
 	    , @"..\..\bin\Debug\Telerik.Windows.Controls.Input.dll", "Value")]
@@ -356,7 +356,7 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 
 __Example 9: Specifying the type of the editor, the target property and style of the containing host__
 
-	```C#
+```C#
 	private string name;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", EditorStyle.Modal)]
 	public string Name
@@ -392,7 +392,7 @@ __Example 9: Specifying the type of the editor, the target property and style of
 
 __Example 10: Specifying the type of the editor and the absolute file path of the assembly as string, the target property and the style for the containing host__
 
-	```C#
+```C#
 	private string name;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("System.Windows.Controls.TextBox",
 	gram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationFramework.dll",
@@ -440,7 +440,7 @@ The definition of the Custom editor __PhoneEditorControl__ is:
 
 __Example 11: Defining the custom editor__
 
-	```XAML
+```XAML
 	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -468,7 +468,7 @@ The definition of the __PhoneNumber__ class is:
 
 __Example 12: Defining PhoneNumber object__
 
-	```C#
+```C#
 	public class PhoneNumber : INotifyPropertyChanged
 	{
 	    private string countryCode;
@@ -586,7 +586,7 @@ The definition of the __Player business object__ used for the example is:
 
 __Example 13: Defining Player object__
 	
-	```C#
+```C#
 	public class Player : INotifyPropertyChanged
 	{
 	    public event PropertyChangedEventHandler PropertyChanged;

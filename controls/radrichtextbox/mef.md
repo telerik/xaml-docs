@@ -218,21 +218,18 @@ All the dictionaries for the spell checking functionality are loaded with MEF. Y
 
 * If the spell checking is not among the requirements for the application, you could turn it off.
 
-	__Disable Spell Checking__
-		```C#
-	
-			this.radRichTextBox.IsSpellCheckingEnabled = false;
-		```
+	```C#
+		this.radRichTextBox.IsSpellCheckingEnabled = false;
+	```
 
 * In case you plan to use the built-in spell checker, you could tell the MEF to not search and load for all the default dictionaries and load manually only the ones which will be used in your application.
 
-	__Use Spell Checking Without MEF__
-		```C#
-	
-			this.radRichTextBox.IsSpellCheckingEnabled = true;
-			DocumentSpellChecker documentSpellChecker = this.radRichTextBox.SpellChecker as DocumentSpellChecker;
-			documentSpellChecker.AutomaticallyLoadDefaultDictionaries = false;
-		```
+	```C#
+
+		this.radRichTextBox.IsSpellCheckingEnabled = true;
+		DocumentSpellChecker documentSpellChecker = this.radRichTextBox.SpellChecker as DocumentSpellChecker;
+		documentSpellChecker.AutomaticallyLoadDefaultDictionaries = false;
+	```
 
 ## See also  
 *[Performance]({%slug radrichtextbox-performance%})

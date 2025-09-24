@@ -50,7 +50,7 @@ Another way to select a treeview item programmatically is to add it in the __Sel
 	```C#
 		radTreeView.SelectedItems.Add( radTreeViewItem );
 	```
-```VB.NET
+	```VB.NET
 		radTreeView.SelectedItems.Add(radTreeViewItem)
 	```
 
@@ -60,7 +60,7 @@ Another way to select a treeview item programmatically is to add it in the __Sel
 	```C#
 		radTreeView.SelectedItems.Add( myViewModel );
 	```
-```VB.NET
+	```VB.NET
 		radTreeView.SelectedItems.Add(myViewModel)
 	```
 
@@ -251,21 +251,6 @@ __Example 10: Defining business object's model__
 	End Class
 ```
 
-{% if site.site_name == 'Silverlight' %}
-__Example 11: Setting SelectedValuePath__ 
-```XAML
-	<telerik:RadTreeView x:Name="radTreeView" SelectedValuePath="Price">
-	    <telerik:RadTreeView.ItemTemplate>
-	        <telerik:HierarchicalDataTemplate ItemsSource="{Binding RelatedItems}">
-	            <TextBlock Text="{Binding Title}" />
-	        </telerik:HierarchicalDataTemplate>
-	    </telerik:RadTreeView.ItemTemplate>
-	</telerik:RadTreeView>
-```
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
-
 __Example 11: Setting SelectedValuePath__  
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" SelectedValuePath="Price">
@@ -276,8 +261,6 @@ __Example 11: Setting SelectedValuePath__
 	    </telerik:RadTreeView.ItemTemplate>
 	</telerik:RadTreeView>
 ```
-
-{% endif %}
 
 When you select a __MyViewModel.Title__ from the __RadTreeView__, the __SelectedItem__ property returns the	 __MyViewModel__ data item that corresponds to the selected __Title__. However, because the __SelectedValuePath__ of this __RadTreeView__ is set to the __MyViewModel__'s __Price__ property, the __SelectedValue__ will return the __Price__ property of the __MyViewModel__ business object (e.g. 101.56$).		
 

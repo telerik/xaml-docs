@@ -227,7 +227,7 @@ __Changing the default corner radius__
 
 __Setting corner radius__ 
 
-![Setting corner radius](images/common-styling-appearance-office2016touch-theme-theme-5.png)	
+![Setting corner radius](images/common-styling-appearance-office2016touch-theme-5.png)	
 
 ## Using Glyphs
 
@@ -244,7 +244,7 @@ __Changing the disabled opacity__
 
 __Setting the disabled opacity__ 
 
-![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-theme-6.png)	
+![Setting the disabled opacity](images/common-styling-appearance-office2016touch-theme-6.png)	
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 

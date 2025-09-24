@@ -37,7 +37,6 @@ public enum Position
 }
 ```
 ```VB.NET
-```C#
 Public Enum Position
 	<Display(Name := "Goalkeeper", ShortName := "Goalie"), Description("The player responsible for protecting his team's goal.")>
 	GK = 0
@@ -45,7 +44,6 @@ Public Enum Position
 	MF = 2
 	FW = 3
 End Enum
-```
 ```
 
 ## EnumMemberViewModel
@@ -102,7 +100,7 @@ __Example 3: Defining the GridViewComboBoxColumn__
 									SelectedValueMemberPath="Value" />
 ```
 
->A practical example of how to use the EnumDataSource utility can be found in the respective demo of the {% if site.site_name == 'WPF'%}[WPF Controls Samples](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[Silverlight Controls Samples](https://demos.telerik.com/silverlight/#GridView/EnumDataSource){% endif %}.
+>A practical example of how to use the EnumDataSource utility can be found in the respective demo of the [WPF Controls Samples](https://demos.telerik.com/wpf/)
 
 ## See Also
 

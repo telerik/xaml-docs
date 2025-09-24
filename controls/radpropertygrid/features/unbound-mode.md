@@ -20,7 +20,7 @@ The following examples illustrate two possible hierarchies based on the followin
 
 __Example 1: Prepare sample objects__
 
-	```C#
+```C#
 	public class Employee
 	{
 	    public string Name { get; set; }
@@ -49,7 +49,7 @@ And the sample data:
 
 __Example 2: Prepare sample data__
 
-	```C#
+```C#
 	InitializeComponent();
 	this.rpg.Item = new Employee()
 	{
@@ -78,7 +78,7 @@ __Example 2: Prepare sample data__
 
 __Example 3: RadPropertyGrid UnboundMode first example__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="rpg" 
 	                         AutoGenerateBindingPaths="False" 
 	                         AutoGeneratePropertyDefinitions="False" 
@@ -104,7 +104,7 @@ __Example 3: RadPropertyGrid UnboundMode first example__
 
 __Example 4: RadPropertyGrid UnboundMode second example__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="rpg1" 
 	                         AutoGenerateBindingPaths="False" 
 	                         AutoGeneratePropertyDefinitions="False" 

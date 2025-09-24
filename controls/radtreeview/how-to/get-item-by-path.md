@@ -11,32 +11,29 @@ position: 1
 # Get Item by Path
 
 The __RadTreeView__ API offers you the ability to get an item by path programmatically. This tutorial will show you how to do that.
-	  
 
 ## Using GetItemByPath in static RadTreeView
 
 Here is an ordinary treeview declaration: 
 
-#### __XAML__
-
 ```XAML
-	        <telerik:RadTreeView TextSearch.TextPath="Header">
-	            <telerik:RadTreeViewItem Header="Sport Categories">
-	                <telerik:RadTreeViewItem Header="Football">
-	                    <telerik:RadTreeViewItem Header="Futsal" />
-	                    <telerik:RadTreeViewItem Header="Soccer" />
-	                </telerik:RadTreeViewItem>
-	                <telerik:RadTreeViewItem Header="Tennis">
-	                    <telerik:RadTreeViewItem Header="Court" />
-	                    <telerik:RadTreeViewItem Header="Table" />
-	                </telerik:RadTreeViewItem>
-	                <telerik:RadTreeViewItem Header="Cycling">
-	                    <telerik:RadTreeViewItem Header="Road" />
-	                    <telerik:RadTreeViewItem Header="Mountain" />
-	                </telerik:RadTreeViewItem>
-	            </telerik:RadTreeViewItem>
-	        </telerik:RadTreeView>
-	```
+	<telerik:RadTreeView TextSearch.TextPath="Header">
+		<telerik:RadTreeViewItem Header="Sport Categories">
+			<telerik:RadTreeViewItem Header="Football">
+				<telerik:RadTreeViewItem Header="Futsal" />
+				<telerik:RadTreeViewItem Header="Soccer" />
+			</telerik:RadTreeViewItem>
+			<telerik:RadTreeViewItem Header="Tennis">
+				<telerik:RadTreeViewItem Header="Court" />
+				<telerik:RadTreeViewItem Header="Table" />
+			</telerik:RadTreeViewItem>
+			<telerik:RadTreeViewItem Header="Cycling">
+				<telerik:RadTreeViewItem Header="Road" />
+				<telerik:RadTreeViewItem Header="Mountain" />
+			</telerik:RadTreeViewItem>
+		</telerik:RadTreeViewItem>
+	</telerik:RadTreeView>
+```
 
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_HowToGetItemByPath_001.PNG)
 
@@ -45,14 +42,12 @@ For example, see the following situation - you want to retrieve the treeview ite
 1. Create a path, including only the treeview items' header and using some separator.
 
 2. Set the __telerik:TextSearch.TextPath__ attached property to indicate which property to be used as a path segment.
-	#### __XAML__
 
 	```XAML
 		<telerik:RadTreeView TextSearch.TextPath="Header" />
 	```
 
 3. Invoke the __GetItemByPath()__ method of the __RadTreeView__ class. 
-	#### __C#__
 
 	```C#
 		private void GetTreeViewItemByPath()
@@ -61,9 +56,6 @@ For example, see the following situation - you want to retrieve the treeview ite
 			RadTreeViewItem targetItem = radTreeView.GetItemByPath( path, "|" );
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Sub GetTreeViewItemByPath()
 			Dim path As String = "Sport Categories|Football|Soccer"
@@ -73,7 +65,6 @@ For example, see the following situation - you want to retrieve the treeview ite
 
 	The __GetItemByPath()__ method will work only __after__ the treeview has __loaded__. It will not work before that.
 	
-	#### __C#__
 	```C#
 		this.radTreeView.Loaded += new RoutedEventHandler( radTreeView_Loaded );
 		private void radTreeView_Loaded( object sender, RoutedEventArgs e )
@@ -82,8 +73,6 @@ For example, see the following situation - you want to retrieve the treeview ite
 			// GetItemByPath method here - when the treeview has already loaded.
 		}
 	```
-	
-	#### __VB.NET__
 	```VB.NET
 		AddHandler Me.radTreeView.Loaded, AddressOf radTreeView_Loaded
 		Private Sub radTreeView_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -96,8 +85,6 @@ For example, see the following situation - you want to retrieve the treeview ite
 
 The __RadTreeView__ class supports __PathSeparator__ property, which represents the default separator. The default separator for the __RadTreeView__ is "__\\__", but it can be changed. Here you can see how the previous example will look like if you set the __PathSeparator__ property. 
 
-#### __C#__
-
 ```C#
 	private void GetTreeViewItemByPath()
 	{
@@ -106,9 +93,6 @@ The __RadTreeView__ class supports __PathSeparator__ property, which represents 
 	    RadTreeViewItem targetItem = radTreeView.GetItemByPath( path );
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Private Sub GetTreeViewItemByPath()
 	    Dim path As String = "Sport Categories|Football|Soccer"

@@ -16,7 +16,7 @@ This tutorial will guide you through the common task of creating a custom column
 			
 __Example 1: Business object definition__
 
-	```C#
+```C#
 	public class Club : INotifyPropertyChanged
 	{
 	    private string name;
@@ -212,7 +212,7 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 
 __Example 2: Initial declaration of RadGridView__
 
-	```XAML
+```XAML
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ItemsSource="{Binding Clubs}">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
@@ -226,7 +226,7 @@ __Example 2: Initial declaration of RadGridView__
 
 __Example 3: Populating RadGridView__
 
-	```C#
+```C#
 	this.radGridView.ItemsSource = Club.GetClubs();
 ```
 ```VB.NET
@@ -237,7 +237,7 @@ __Example 3: Populating RadGridView__
 			
 __Example 4: Declaration of CustomCaptainEditor  UserControl__
 
-	```XAML
+```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition />
@@ -252,7 +252,7 @@ __Example 4: Declaration of CustomCaptainEditor  UserControl__
 
 __Example 5: Code-behind definition of the CustomCaptainEditor UserControl__
 
-	```C#
+```C#
 	public partial class CustomCaptainEditor : UserControl
 	{
 	    public static readonly DependencyProperty CaptainNameProperty =
@@ -354,7 +354,7 @@ Take a look at the code-behind of the control. Two additional dependency propert
 
 __Example 6: Definition of CustomColumn class__
 
-	```C#
+```C#
 	public class CustomColumn : GridViewBoundColumnBase
 	{
 	   public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -430,7 +430,7 @@ Here is the code of the custom converter we have used:
 
 __Example 7: The MyConverter class__
 
-	```C#
+```C#
 	public class MyConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

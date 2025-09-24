@@ -14,7 +14,6 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 
 1. Create new ViewModel class that inherits the *ViewModelBase* abstract class:
 
-	#### __C#__
 	```C#
 		public class ExampleViewModel : ViewModelBase
 			{
@@ -110,9 +109,7 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 					}
 				}
 			}
-		```
-
-	#### __VB.NET__
+	```
 	```VB.NET
 		Public Class ExampleViewModel Inherits ViewModelBase
 					Private periodStart_Renamed As Date
@@ -197,7 +194,7 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 						  End Get
 					End Property
 		End Class
-		```
+	```
 
 	The __PeriodStart__ and __PeriodEnd__ properties will specify the time period that the TimeBar will visualize. The __VisiblePeriodStart__ and __VisiblePeriodEnd__ properties will specify the visible time period on the screen. The Data collection will be used as datasource for the SparkLines that will be seen inside the TimeBar control.
 
@@ -205,31 +202,29 @@ The Telerik __RadTimeBar__ control can be used with great success with the __Mod
 
 	>The properties should be bound using TwoWay binding. This is required because of the coercing of the values that happens when a binding is executed.
 
-	#### __XAML__
-
 	```XAML
 		<UserControl.DataContext>
-				<local:ExampleViewModel PeriodStart="01/01/2012" PeriodEnd="01/01/2013" VisiblePeriodStart="01/01/2012" VisiblePeriodEnd="01/01/2013" />
-			</UserControl.DataContext>
-		
-			<Grid x:Name="LayoutRoot" Background="White">
-				<telerik:RadTimeBar Margin="8,8,8,0" Height="150" VerticalAlignment="Top"
-									PeriodStart="{Binding PeriodStart, Mode=TwoWay}"
-									PeriodEnd="{Binding PeriodEnd, Mode=TwoWay}"
-									VisiblePeriodStart="{Binding VisiblePeriodStart, Mode=TwoWay}"
-									VisiblePeriodEnd="{Binding VisiblePeriodEnd, Mode=TwoWay}">
-					<telerik:RadTimeBar.Intervals>
-						<telerik:YearInterval/>
-						<telerik:QuarterInterval/>
-						<telerik:MonthInterval/>
-						<telerik:WeekInterval />
-						<telerik:DayInterval />
-					</telerik:RadTimeBar.Intervals>
-		
-					<telerik:RadLinearSparkline ItemsSource="{Binding Data}" />
-				</telerik:RadTimeBar>
-			</Grid>
-		```
+			<local:ExampleViewModel PeriodStart="01/01/2012" PeriodEnd="01/01/2013" VisiblePeriodStart="01/01/2012" VisiblePeriodEnd="01/01/2013" />
+		</UserControl.DataContext>
+	
+		<Grid x:Name="LayoutRoot" Background="White">
+			<telerik:RadTimeBar Margin="8,8,8,0" Height="150" VerticalAlignment="Top"
+								PeriodStart="{Binding PeriodStart, Mode=TwoWay}"
+								PeriodEnd="{Binding PeriodEnd, Mode=TwoWay}"
+								VisiblePeriodStart="{Binding VisiblePeriodStart, Mode=TwoWay}"
+								VisiblePeriodEnd="{Binding VisiblePeriodEnd, Mode=TwoWay}">
+				<telerik:RadTimeBar.Intervals>
+					<telerik:YearInterval/>
+					<telerik:QuarterInterval/>
+					<telerik:MonthInterval/>
+					<telerik:WeekInterval />
+					<telerik:DayInterval />
+				</telerik:RadTimeBar.Intervals>
+	
+				<telerik:RadLinearSparkline ItemsSource="{Binding Data}" />
+			</telerik:RadTimeBar>
+		</Grid>
+	```
 
 The result can be seen below:
 

@@ -16,77 +16,31 @@ If you have different items and/or you prefer to display items with different st
 
 For the purpose of this tutorial will be used the following treeview declaration:
 
-{% if site.site_name == 'Silverlight' %}
-
-#### __XAML__
-
-	```XAML
-		<UserControl.Resources>
-		
-			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-		
-			<DataTemplate x:Key="Team">
-				<TextBlock Text="{Binding Name}" />
-			</DataTemplate>
-		
-			<telerik:HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-				ItemsSource="{Binding Teams}">
-				<TextBlock Text="{Binding Name}" />
-			</telerik:HierarchicalDataTemplate>
-		
-			<telerik:HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-				ItemsSource="{Binding Divisions}">
-				<TextBlock Text="{Binding Name}" />
-			</telerik:HierarchicalDataTemplate>
-		
-		</UserControl.Resources>
-		
-		<Grid x:Name="LayoutRoot" Background="White">
-		
-			<telerik:RadTreeView x:Name="radTreeView"
-			   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-			   ItemTemplate="{StaticResource League}"/>
-		
-		</Grid>
-		```
-
-{% endif %}
+```XAML
+	<UserControl.Resources>	
+		<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 	
-{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-
-	```XAML
-		<UserControl.Resources>
-		
-			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-		
-			<DataTemplate x:Key="Team">
-				<TextBlock Text="{Binding Name}" />
-			</DataTemplate>
-		
-			<HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-				ItemsSource="{Binding Teams}">
-				<TextBlock Text="{Binding Name}" />
-			</HierarchicalDataTemplate>
-		
-			<HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-				ItemsSource="{Binding Divisions}">
-				<TextBlock Text="{Binding Name}" />
-			</HierarchicalDataTemplate>
-		
-		</UserControl.Resources>
-		
-		<Grid x:Name="LayoutRoot" Background="White">
-		
-			<telerik:RadTreeView x:Name="radTreeView"
-			   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-			   ItemTemplate="{StaticResource League}"/>
-		
-		</Grid>
-		```
-
-	{% endif %}
+		<DataTemplate x:Key="Team">
+			<TextBlock Text="{Binding Name}" />
+		</DataTemplate>
+	
+		<HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
+			ItemsSource="{Binding Teams}">
+			<TextBlock Text="{Binding Name}" />
+		</HierarchicalDataTemplate>
+	
+		<HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
+			ItemsSource="{Binding Divisions}">
+			<TextBlock Text="{Binding Name}" />
+		</HierarchicalDataTemplate>	
+	</UserControl.Resources>
+	
+	<Grid x:Name="LayoutRoot" Background="White">	
+		<telerik:RadTreeView x:Name="radTreeView"
+		   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
+		   ItemTemplate="{StaticResource League}"/>	
+	</Grid>
+```
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_TemplatingItemContainerStyleSelector_001.PNG)
@@ -100,36 +54,30 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 * Create three __styles__ in the resources of your application{% if site.site_name == 'Silverlight' %} (user control){% endif %}.
 	* __LeagueItemContainerStyle__
 
-		#### __XAML__
-
 		```XAML
 			<Style x:Key="LeagueItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
 				<Setter Property="Foreground" Value="Red"/>
 				<Setter Property="IsExpanded" Value="True"/>
 			</Style>
-			```
+		```
 
 	* __DivisionItemContainerStyle__
-
-		#### __XAML__
 
 		```XAML
 			<Style x:Key="DivisionItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
 				<Setter Property="Foreground" Value="Green"/>
 				<Setter Property="IsExpanded" Value="True"/>
 			</Style>
-			```
+		```
 
 	* __TeamItemContainerStyle__
-
-		#### __XAML__
 
 		```XAML
 			<Style x:Key="TeamItemContainerStyle" TargetType="telerik:RadTreeViewItem{x:Type telerik:RadTreeViewItem}">
 				<Setter Property="Foreground" Value="Purple"/>
 				<Setter Property="FontSize" Value="16"/>
 			</Style>
-			```
+		```
 
 	>The style defined for the __ItemContainerStyle__ property should have as __TargetType__  the __RadTreeViewItem__ class.
 
@@ -141,25 +89,18 @@ The next step is to create a selector where the logic about selecting the right 
 
 	>If you create an __ItemTemplateSelector__ or __ItemEditTemplateSelector__, you must derive from the __DataTemplateSelector__ class. But if you want to create __ItemContainerStyleSelector__, you must derive from the __StyleSelector__ class.
 
-	#### __C#__
-
 	```C#
 		public class LeagueItemContainerStyleSelector : StyleSelector
 		{
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class LeagueItemContainerStyleSelector
 			Inherits StyleSelector
 		End Class
-		```
+	```
 
 * Override the __SelectStyle__ method and implement your custom logic in it. The method accepts as arguments an __object__ and a __DependencyObject__. The object argument is the actual object being bound and the __DependecyObject__ is the container for it. 
-
-	#### __C#__
 
 	```C#
 		public class LeagueItemContainerStyleSelector : StyleSelector
@@ -211,10 +152,7 @@ The next step is to create a selector where the logic about selecting the right 
 				}
 			}
 		}
-		```
-		
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class LeagueItemContainerStyleSelector
 			Inherits StyleSelector
@@ -261,27 +199,23 @@ The next step is to create a selector where the logic about selecting the right 
 				End Set
 			End Property
 		End Class
-		```
+	```
 
 * Define the created selector as a resource in your XAML and set it to the __ItemContainerStyleSelector__ property. 
-
-	#### __XAML__
 
 	```XAML
 		<example:LeagueItemContainerStyleSelector x:Key="myContainerStyleSelector"
 			LeagueStyle="{StaticResource LeagueItemContainerStyle}"
 			DivisionStyle="{StaticResource DivisionItemContainerStyle}"
 			TeamStyle="{StaticResource TeamItemContainerStyle}"/>
-		```
-
-	#### __XAML__
+	```
 
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView"
 			ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 			ItemTemplate="{StaticResource League}"
 			ItemContainerStyleSelector="{StaticResource myContainerStyleSelector}"/>
-		```
+	```
 
 ![{{ site.framework_name }} RadTreeView Item Container Style Selector](images/RadTreeView_TemplatingItemContainerStyleSelector_010.PNG)
 

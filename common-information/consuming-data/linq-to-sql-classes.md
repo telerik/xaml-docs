@@ -46,9 +46,7 @@ The next code-snippet uses LINQ query syntax to retreive an __IEnumerable__ sequ
 	               where p.Category.CategoryName == "Seafood"
 	               select p;
 	IEnumerable<Product> products = query.ToList();
-	```
-
-
+```
 
 #### __VB.NET__
 
@@ -58,9 +56,7 @@ The next code-snippet uses LINQ query syntax to retreive an __IEnumerable__ sequ
 	    Where p.Category.CategoryName = "Seafood" _
 	    Select p
 	Dim products As IEnumerable(Of Product) = query.ToList()
-	```
-
-
+```
 
 ## Update an Entity in the Database
 
@@ -73,12 +69,7 @@ The code below demonstrates how to grab a single __Product__ object from the dat
 	Product product = dbContext.Products.Single( p => p.ProductName == "Aniseed Syrup" );
 	product.UnitPrice = 1000;
 	dbContext.SubmitChanges();
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim dbContext As New NortwindDataContext()
 	Dim query = From p In dbContext.Products _
@@ -86,9 +77,7 @@ The code below demonstrates how to grab a single __Product__ object from the dat
 	            Select p
 	product.UnitPrice = 1000
 	dbContext.SubmitChanges()
-	```
-
-
+```
 
 ## Insert a New Record(s) in the Database
 
@@ -113,12 +102,7 @@ The code below shows you how to create a new __Category__ object. Then how to cr
 	
 	dbContext.Categories.InsertOnSubmit( category );
 	dbContext.SubmitChanges();
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim dbContext As New NortwindDataContext()
 	
@@ -136,9 +120,7 @@ The code below shows you how to create a new __Category__ object. Then how to cr
 	
 	dbContext.Categories.InsertOnSubmit(category)
 	dbContext.SubmitChanges()
-	```
-
-
+```
 
 ## Delete a Record from the Database
 
@@ -153,12 +135,7 @@ The code below demonstrates you how to delete all "Test" products from the datab
 	            select p;
 	dbContext.Products.DeleteAllOnSubmit( query );
 	dbContext.SubmitChanges();
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim dbContext As New NortwindDataContext()
 	Dim query = From p In dbContext.Products _
@@ -166,9 +143,7 @@ The code below demonstrates you how to delete all "Test" products from the datab
 	    Select p
 	dbContext.Products.DeleteAllOnSubmit(query)
 	dbContext.SubmitChanges()
-	```
-
-
+```
 
 ## Retreive a Record with Server Side Paging
 
@@ -182,21 +157,14 @@ The next example shows you how to implement efficient server-side database pagin
 	              where p.Category.CategoryName == "Aniseed Syrup"
 	              select p ).Skip( 300 ).Take( 15 );
 	IEnumerable<Product> products = query.ToList();
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	NortwindDataContext dbContext = new NortwindDataContext();
 	Dim query = (From p In dbContext.Products _
 	            Where p.ProductName == "Aniseed Syrup" _
 	            Select p).Skip(300).Take(15)
 	Dim products As IEnumerable(Of Product) = query.ToList()
-	```
-
-
+```
 
 ## See Also
 

@@ -88,7 +88,7 @@ When you use `VirtualizationMode.Standard`, then items that are out of view and 
 __Setting Standard virtualization mode__
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" telerikTreeView:TreeViewPanel.IsVirtualizing="True" telerikTreeView:TreeViewPanel.TreeVirtualizationMode="Standard">
-	```
+```
 
 ## TreeVirtualizationMode.Recycling
 

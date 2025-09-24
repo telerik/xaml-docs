@@ -20,24 +20,18 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 
 * __RegisterDefaultServices()__ - this method registers the default Diagramming services. However, please note that the __RadDiagram__ constructor internally calls this method during initialization. This is why the method is usefull mostly in scenarios where custom services are registered within a __RadDiagram__ instance and you need to dynamically revert back to the default services.			
 
-	#### __C#__
 	```C#
 		xDiagram.ServiceLocator.RegisterDefaultServices();
 	```
-		
-	#### __VB.NET__
 	```VB.NET
 		xDiagram.ServiceLocator.RegisterDefaultServices()
 	```
 		
 * __GetService<T>()__ where __T__ represents a service interface - this method returns a service instance used by a __RadDiagram__. The type parameter allows you to specify the interface of the service you need to access. For example, if you want to get the resizing service currently used in a RadDiagram instance, you need to ask for the service implementing the __IResizingService__ interface:
 
-	#### __C#__
 	```C#
 		xDiagram.ServiceLocator.GetService<IResizingService>();
 	```
-		
-	#### __VB.NET__
 	```VB.NET
 		xDiagram.ServiceLocator.GetService(Of IResizingService)()
 	```
@@ -45,7 +39,6 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 * __Register<T>(T service)__ - this method allows you to register a new service in a __RadDiagram__. Please note that the type parameter __T__ represents the service interface type, while the method argument allows you to provide a new service class.
 	For instance, if you create a custom resizing service, you can register it in a __RadDiagram__ instance:
 	
-	#### __C#__	
 	```C#
 		public class CustomResizingService : ResizingService
 		{
@@ -66,8 +59,6 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 			}
 		}
 	```
-	
-	#### __VB.NET__		
 	```VB.NET
 		Public Class CustomResizingService
 			Inherits ResizingService
@@ -88,13 +79,10 @@ In order to manipulate, change or access a __Diagramming Service__, you have to 
 
 	When registering a new [SerializationService](#serializationservice), you also have to recreate and register the [DataTransferService](#datatransferservice) in the service locator:
 
-	#### __C#__	
 	```C#
 		xDiagram.ServiceLocator.Register<ISerializationService>(new CustomSerializationService(this.xDiagram));
 		xDiagram.ServiceLocator.Register<IDataTransferService>(new DataTransferService(this.xDiagram));
 	```
-	
-	#### __VB.NET__		
 	```VB.NET
 		xDiagram.ServiceLocator.Register(Of ISerializationService)(New CustomSerializationService(Me.xDiagram))
     		xDiagram.ServiceLocator.Register(Of IDataTransferService)(New DataTransferService(Me.xDiagram))

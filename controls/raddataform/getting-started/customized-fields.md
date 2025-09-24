@@ -38,7 +38,7 @@ Once you set the **AutoGenerateFields** property of the RadDataForm to **False**
 
 __Example 1: Disabling the autogeneration of fields__
 
-	```C#
+```C#
 	this.DataForm1.AutoGenerateFields = false;
 ```
 ```VB.NET
@@ -47,7 +47,7 @@ __Example 1: Disabling the autogeneration of fields__
 
 __Example 1: Disabling the autogeneration of fields__
 
-	```XAML
+```XAML
 	<telerik:RadDataForm x:Name="DataForm1" AutoGenerateFields="False" />
 ```
 
@@ -57,7 +57,7 @@ Lets say you have defined the following DataTemplate:
 
 __Example 2: Definition of a DataTemplate__
 
-	```XAML
+```XAML
 	<Grid.Resources>
 	    <DataTemplate x:Key="MyTemplate">
 	        <Grid>
@@ -81,7 +81,7 @@ Then you can assign the ReadOnlyTemplate like so:
 
 __Example 3: Assigning a ReadOnlyTemplate__
 
-	```XAML
+```XAML
 	<telerik:RadDataForm AutoGenerateFields="False" 
 	                ReadOnlyTemplate="{StaticResource MyTemplate}">
 	</telerik:RadDataForm>
@@ -97,7 +97,7 @@ Similarly you can assign the EditTemplate:
 
 __Example 3: Assigning an EditTemplate__
 
-	```XAML
+```XAML
 	<telerik:RadDataForm AutoGenerateFields="False" 
 	                ReadOnlyTemplate="{StaticResource MyTemplate}">
 	</telerik:RadDataForm>
@@ -117,7 +117,7 @@ On the other hand, if you make your mind on displaying quite different controls 
 
 __Example 4: Using a RadNumericUpDown for editing number values__
 
-	```XAML
+```XAML
 	<Grid>
 	    <Grid.Resources>
 	        <DataTemplate x:Key="MyTemplate">
@@ -141,11 +141,9 @@ The result is displayed in **Figure 5**:
 
 Furthermore, you may customize the data fields as well. For example, a regular **DataFormDataField** may be defined in a custom template and the default content may be replaced:
 
-{% if site.site_name == 'WPF' %}
-
 __Example 5: Replacing the default field content__
 
-	```XAML
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.Resources>
 	        <DataTemplate x:Key="MyTemplate">
@@ -164,36 +162,6 @@ __Example 5: Replacing the default field content__
 	    </telerik:RadDataForm>
 	</Grid>
 ```
-
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
-__Example 5: Replacing the default field content__
-
-	```XAML
-	<Grid Background="White">
-	    <Grid.Resources>
-	        <DataTemplate x:Key="MyTemplate">
-	            <StackPanel Orientation="Horizontal" >
-	                <telerik:DataFormDataField>
-	                    <telerik:DataFormDataField.ContentTemplate>
-	                        <DataTemplate>
-	                            <StackPanel Orientation="Horizontal">
-	                                <TextBox Text="{Binding Age,Mode=TwoWay}" Margin="0,0,10,0" />
-	                                <TextBlock Text="years" Foreground="Green"  VerticalAlignment="Bottom" />
-	                            </StackPanel>
-	                        </DataTemplate>
-	                    </telerik:DataFormDataField.ContentTemplate>
-	                </telerik:DataFormDataField>
-	            </StackPanel>
-	        </DataTemplate>
-	    </Grid.Resources>
-	    <telerik:RadDataForm AutoGenerateFields="False" 
-	                   EditTemplate="{StaticResource MyTemplate}">
-	    </telerik:RadDataForm>
-	</Grid>
-```
-
-{% endif %}
 
 #### __Figure 6: Replacing the default field content__
 

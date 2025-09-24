@@ -16,7 +16,7 @@ For the purpose of this tutorial we will first create a class - Employee. In ord
 
 __Example 1: Creating an Employee class that implements INotifyPropertyChanged__
 
-	```C#
+```C#
 	public class Employee : INotifyPropertyChanged
 	{
 	    public event PropertyChangedEventHandler PropertyChanged;
@@ -253,7 +253,7 @@ The definition of the of the RadGridView may be as follows:
 
 __Example 2: Defining the RadGridView__
 
-	```XAML
+```XAML
 	<telerik:RadGridView x:Name="RadGridView1" IsReadOnly="True" ItemsSource="{Binding Employees}" 
 	                     CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" 
 	                     Height="500"  Width="700"
@@ -270,7 +270,7 @@ Afterwards, all you have to do is to set the ItemsSource of the grid:
 
 __Example 3: Setting the RadGridView's ItemsSource__
 
-	```C#
+```C#
 	this.RadGridView1.ItemsSource = Employee.GetEmployees();
 ```
 ```VB.NET

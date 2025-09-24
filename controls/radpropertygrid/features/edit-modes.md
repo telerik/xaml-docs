@@ -28,7 +28,7 @@ The default option behaves similarly for both __Flat and Hierarchical__ [RenderM
 
 __Example 1: RadPropertyGrid with Default EditMode__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid RenderMode="Flat" EditMode="Default"/>
 ```
 
@@ -77,9 +77,6 @@ __Example 3: Canceling the edit as BeginningEdit event is raised__
 	    e.Cancel = true;
 	}
 ```
-
-__Example 3: Canceling the edit as BeginningEdit event is raised__
-
 ```VB
 	Private Sub RpgBeginningEdit(sender As Object, e As PropertyGridBeginningEditEventArgs)
 	    ' Custom logic

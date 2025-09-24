@@ -42,7 +42,7 @@ The following example demonstrates how to use commands in an MVVM scenario.
 		} 
 	}
 	```
-```VB.NET
+	```VB.NET
 		Public Class SampleViewModel
 			Public Sub New()
 				MyCommand = New DelegateCommand(AddressOf OnCommandExecuted)
@@ -66,7 +66,7 @@ The following example demonstrates how to use commands in an MVVM scenario.
 			this.DataContext = new SampleViewModel();
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Sub New()
 			InitializeComponent()
 			Me.DataContext = New SampleViewModel()
@@ -82,7 +82,7 @@ The following example demonstrates how to use commands in an MVVM scenario.
 						CommandParameter="ParameterValue" />
 	```
 
-   >__RadButtons__ are located in the __Telerik.Windows.Controls.dll__ assembly. To use them in your project, add a reference to the assembly.{% if site.site_name == 'WPF' %} For more information, see the [Controls Dependencies](https://docs.telerik.com/devtools/wpf/common-information/installation-installing-dependencies-wpf) article.{% endif %}{% if site.site_name == 'Silverlight' %} For more information, see the [Controls Dependencies](https://docs.telerik.com/devtools/silverlight/common-information/installation-installing-dependencies) article.{% endif %}
+   >__RadButtons__ are located in the __Telerik.Windows.Controls.dll__ assembly. To use them in your project, add a reference to the assembly. For more information, see the [Controls Dependencies](https://docs.telerik.com/devtools/wpf/common-information/installation-installing-dependencies-wpf) article.
 
    >Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 

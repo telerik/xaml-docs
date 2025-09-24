@@ -20,57 +20,6 @@ The most common use of the "selectors" is to display different kind of data (dif
 
 For the purpose of this tutorial will be used the following treeview declaration: 
 
-{% if site.site_name == 'Silverlight' %}
-#### __XAML__
-
-```XAML
-	<UserControl.Resources>
-	
-	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-	
-	    <DataTemplate x:Key="Team">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding TeamName}" Foreground="{Binding TeamColor}"/>
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </DataTemplate>
-	
-	    <telerik:HierarchicalDataTemplate x:Key="Division" ItemTemplate="{StaticResource Team}"
-	        ItemsSource="{Binding Teams}">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding DivisionName}" Foreground="{Binding DivisionColor}"/>
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </telerik:HierarchicalDataTemplate>
-	
-	    <telerik:HierarchicalDataTemplate x:Key="League" ItemTemplate="{StaticResource Division}"
-	        ItemsSource="{Binding Divisions}">
-	        <StackPanel Orientation="Horizontal">
-	            <TextBlock Text="{Binding LeagueName}" Foreground="{Binding LeagueColor}"/>
-	            <TextBlock Text=" | Count#"/>
-	            <TextBlock Text="{Binding Count}"/>
-	        </StackPanel>
-	    </telerik:HierarchicalDataTemplate>
-	
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot" Background="White">
-	
-	    <telerik:RadTreeView x:Name="radTreeView"
-	           IsEditable="True" Margin="8"
-	           ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-	           ItemTemplate="{StaticResource League}"/>
-	
-	</Grid>
-	```
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-
 ```XAML
 	<UserControl.Resources>
 	
@@ -112,17 +61,13 @@ For the purpose of this tutorial will be used the following treeview declaration
 	           ItemTemplate="{StaticResource League}"/>
 	
 	</Grid>
-	```
-
-{% endif %}
+```
 
 If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__, see the main topics about [HierarchicalDataTemplate]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}) and [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).		
 
 * Create three __DataTemplates__ in the resources of your application{% if site.site_name == 'Silverlight' %} (user control){% endif %}. These templates will be used by the selector as edit templates.		  
 
 	* __LeagueItemEditTemplate__
-
-		#### __XAML__
 
 		```XAML
 			<DataTemplate x:Key="LeagueItemEditTemplate">
@@ -137,8 +82,6 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 
 	* __DivisionItemEditTemplate__
 
-		#### __XAML__
-
 		```XAML
 			<DataTemplate x:Key="DivisionItemEditTemplate">
 				<Grid>
@@ -151,8 +94,6 @@ If you want to read more about __HierarchicalDataTemplate__ and __DataBinding__,
 		```
 
 	* __TeamItemEditTemplate__
-
-		#### __XAML__
 
 		```XAML
 			<DataTemplate x:Key="TeamItemEditTemplate">
@@ -175,16 +116,11 @@ The next step is to create a selector where the logic about selecting the right 
 
 * Create a new class, named __LeagueItemEditTemplateSelector__, which derives from __DataTemplateSelector__.		  
 
-	#### __C#__
-
 	```C#
 		public class LeagueDataTemplateSelector : DataTemplateSelector
 		{
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Public Class LeagueDataTemplateSelector
 			Inherits DataTemplateSelector
@@ -192,14 +128,7 @@ The next step is to create a selector where the logic about selecting the right 
 	```
 
 * Override the __SelectTemplate__ method and implement your custom logic in it. The method accepts as arguments an __object__ and a __DependencyObject__. The object argument is the actual object being bound and the __DependecyObject__ is the container for it.
-			
-	{% if site.site_name == 'Silverlight' %}
-	>Please note that in order to use the HierarchicalDataTemplate class, you need to add a using statement for the Telerik.Windows.Controls namespace
-	{% endif %}
 	
-	{% if site.site_name == 'WPF' %}
-	#### __XAML__
-
 	```XAML
 		<UserControl.Resources>
 		
@@ -242,11 +171,7 @@ The next step is to create a selector where the logic about selecting the right 
 		
 		</Grid>
 	```
-
-	{% endif %}
-
-	#### __C#__
-
+	
 	```C#
 		public class LeagueItemEditTemplateSelector : DataTemplateSelector
 		{
@@ -297,10 +222,7 @@ The next step is to create a selector where the logic about selecting the right 
 				}
 			}
 		}
-	```
-		
-	#### __VB.NET__
-
+	```		
 	```VB.NET
 		Public Class LeagueItemEditTemplateSelector
 			Inherits DataTemplateSelector
@@ -351,8 +273,6 @@ The next step is to create a selector where the logic about selecting the right 
 
 * Define the created selector as a resource in your XAML and set it to the __ItemEditTemplateSelector__ property.		  
 
-	#### __XAML__
-
 	```XAML
 		<UserControl.Resources>
 		
@@ -363,8 +283,6 @@ The next step is to create a selector where the logic about selecting the right 
 		
 		</UserControl.Resources>
 	```
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView"

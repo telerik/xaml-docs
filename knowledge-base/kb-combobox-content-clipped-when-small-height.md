@@ -35,7 +35,7 @@ Note that only the content gets clipped and not the control itself. The expected
 Set the MinHeight property of the child RadToggleButton to the same MinHeight as RadComboBox.
 
 
-	```C#
+```C#
 	private void RadComboBox_Loaded(object sender, RoutedEventArgs e)
 	{
 		var comboBox = (RadComboBox)sender;

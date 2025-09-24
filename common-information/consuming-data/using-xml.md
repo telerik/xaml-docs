@@ -14,9 +14,7 @@ The purpose of this tutorial is to show you how to read data from XML document a
 
 * Deserializing data. 
 
-
 * Reading data with Linq to XML. 
-
 
 * Reading data with __XMLReader__. 
 
@@ -41,12 +39,7 @@ The most straight-forward way to read data from XML document is to deserialize i
 	    // 4. Deserialize the data
 	    XmlNodeItemList list = (XmlNodeItemList)serializer.Deserialize( reader );
 	}
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Private Function RetrieveData() As XmlNodeItemList
 	    Dim xmlDocument As String = "/DataSource/XmlData.xml"
@@ -61,9 +54,7 @@ The most straight-forward way to read data from XML document is to deserialize i
 	    ' 4. Deserialize the data'
 	    Dim list As XmlNodeItemList = DirectCast(serializer.Deserialize(reader), XmlNodeItemList)
 	End Function
-	```
-
-
+```
 
 ## Reading Data With Linq to XML 
 
@@ -73,17 +64,10 @@ Before reading you should load your XML file to an __XElement__ or __XDocument__
 
 ```C#
 	XDocument myXML = XDocument.Load( "MyXML.xml" );
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim myXML As XDocument = XDocument.Load("MyXML.xml")
-	```
-
-
+```
 
 On the next step you can use standard query operators to read the XML. Here is a sample code: 
 
@@ -103,19 +87,12 @@ On the next step you can use standard query operators to read the XML. Here is a
               Country = person.Element( "address" ).Attribute( "country" ).Value
           }  
       } ).ToList();
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim personsList As List(Of Person) = (From person In myXml.Descendants("person") _
 	    Where DirectCast(person.Element("address").Attribute("country"), String).Equals("Bulgaria") _
 	    Select New Person()).ToList()
-	```
-
-
+```
 
 ## Reading Data with XMLReader 
 
@@ -155,12 +132,7 @@ The following example navigates through a stream to determine the current node t
 	        }
 	    }
 	}
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Using reader As XmlReader = XmlReader.Create(New StringReader(xmlString))
 	    Dim ws As New XmlWriterSettings()
@@ -190,9 +162,7 @@ The following example navigates through a stream to determine the current node t
 	        End While
 	    End Using
 	End Using
-	```
-
-
+```
 
 ## See Also
 

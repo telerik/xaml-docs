@@ -32,18 +32,18 @@ Before:
 __Example 1: RadTileList before Q3 2014__
 
 ```XAML
-			<Grid.Resources>
-			   <telerik:TileGroup Header="Continent" x:Key="Group1" />
-			   <telerik:TileGroup Header="Country" x:Key="Group2" />
-			</Grid.Resources>
-			<!--<telerik:RadTileList x:Name="RadTileList"
-			         GroupTemplate="{StaticResource GroupTemplate}">
-			<telerik:Tile Group="{StaticResource Group1}" Content="Europe" />
-			<telerik:Tile Group="{StaticResource Group2}" Content="Germany" />
-			<telerik:Tile Group="{StaticResource Group1}" Content="Asia" />
-			<telerik:Tile Group="{StaticResource Group2}" Content="Italy" />
-			</telerik:RadTileList>-->
-	```
+	<Grid.Resources>
+	   <telerik:TileGroup Header="Continent" x:Key="Group1" />
+	   <telerik:TileGroup Header="Country" x:Key="Group2" />
+	</Grid.Resources>
+	<!--<telerik:RadTileList x:Name="RadTileList"
+			 GroupTemplate="{StaticResource GroupTemplate}">
+	<telerik:Tile Group="{StaticResource Group1}" Content="Europe" />
+	<telerik:Tile Group="{StaticResource Group2}" Content="Germany" />
+	<telerik:Tile Group="{StaticResource Group1}" Content="Asia" />
+	<telerik:Tile Group="{StaticResource Group2}" Content="Italy" />
+	</telerik:RadTileList>-->
+```
 
 
 
@@ -52,23 +52,23 @@ After __Q3 2014__
 __Example 2: RadTileList after Q3 2014__
 
 ```XAML
-			<telerik:RadTileList x:Name="RadTileList">
-				<telerik:RadTileList.Groups>
-					<telerik:TileGroup Header="Continent">
-			                  <telerik:TileGroup.Items>
-							<telerik:Tile Content="Asia"/>
-							<telerik:Tile Content="Europe"/>
-						</telerik:TileGroup.Items>
-					</telerik:TileGroup>
-					<telerik:TileGroup Header="Country">
-						<telerik:TileGroup.Items>
-							<telerik:Tile Content="Italy"/>
-							<telerik:Tile Content="Germany"/>
-						</telerik:TileGroup.Items>
-					</telerik:TileGroup>
-				</telerik:RadTileList.Groups>
-			</telerik:RadTileList>
-	```
+	<telerik:RadTileList x:Name="RadTileList">
+		<telerik:RadTileList.Groups>
+			<telerik:TileGroup Header="Continent">
+					  <telerik:TileGroup.Items>
+					<telerik:Tile Content="Asia"/>
+					<telerik:Tile Content="Europe"/>
+				</telerik:TileGroup.Items>
+			</telerik:TileGroup>
+			<telerik:TileGroup Header="Country">
+				<telerik:TileGroup.Items>
+					<telerik:Tile Content="Italy"/>
+					<telerik:Tile Content="Germany"/>
+				</telerik:TileGroup.Items>
+			</telerik:TileGroup>
+		</telerik:RadTileList.Groups>
+	</telerik:RadTileList>
+```
 
 
 
@@ -81,36 +81,36 @@ __Example 2: RadTileList after Q3 2014__
 __Example 3: Setting a Style for TileGroupContainer__
 
 ```XAML
-			<DataTemplate x:Key="GroupTemplate">
-			  <ContentPresenter Content="{Binding Header}"/>
-			</DataTemplate>
-			<ItemsPanelTemplate x:Key="GroupPanelTemplate">
-			  <telerik:TileListPanel x:Name="groupPanelTemplatePanel" VerticalAlignment="{Binding VerticalTilesAlignment, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}"/>
-			</ItemsPanelTemplate>
-			<ControlTemplate x:Key="TileGroupContainerTemplate" TargetType="telerik:TileGroupContainer">
-			  <Grid>
-			    <Grid.RowDefinitions>
-			      <RowDefinition Height="{Binding GroupHeaderHeight, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}"/>
-			      <RowDefinition />
-			    </Grid.RowDefinitions>
-			    <ContentPresenter Content="{Binding Header}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-			              Visibility="{Binding GroupHeaderVisibility, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}"
-			              ContentTemplate="{TemplateBinding HeaderTemplate}"/>
-			    <ItemsPresenter Grid.Row="1" />
-			  </Grid>
-			</ControlTemplate>
-			<Style x:Key="TileGroupContainerStyle" TargetType="telerik:TileGroupContainer">
-			  <Setter Property="Template" Value="{StaticResource TileGroupContainerTemplate}" />
-			  <Setter Property="HeaderTemplate" Value="{Binding GroupTemplate, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}" />
-			  <Setter Property="ItemsPanel" Value="{StaticResource GroupPanelTemplate}" />
-			  <Setter Property="ItemsSource" Value="{Binding Items}" />
-			  <Setter Property="Padding" Value="5,0,0,0"/>
-			  <Setter Property="Header" Value="{Binding Header}" />
-			  <Setter Property="VerticalContentAlignment" Value="Center"/>
-			  <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-			  <Setter Property="UseLayoutRounding" Value="True"/>
-			</Style>
-	```
+	<DataTemplate x:Key="GroupTemplate">
+	  <ContentPresenter Content="{Binding Header}"/>
+	</DataTemplate>
+	<ItemsPanelTemplate x:Key="GroupPanelTemplate">
+	  <telerik:TileListPanel x:Name="groupPanelTemplatePanel" VerticalAlignment="{Binding VerticalTilesAlignment, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}"/>
+	</ItemsPanelTemplate>
+	<ControlTemplate x:Key="TileGroupContainerTemplate" TargetType="telerik:TileGroupContainer">
+	  <Grid>
+		<Grid.RowDefinitions>
+		  <RowDefinition Height="{Binding GroupHeaderHeight, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}"/>
+		  <RowDefinition />
+		</Grid.RowDefinitions>
+		<ContentPresenter Content="{Binding Header}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+				  Visibility="{Binding GroupHeaderVisibility, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}"
+				  ContentTemplate="{TemplateBinding HeaderTemplate}"/>
+		<ItemsPresenter Grid.Row="1" />
+	  </Grid>
+	</ControlTemplate>
+	<Style x:Key="TileGroupContainerStyle" TargetType="telerik:TileGroupContainer">
+	  <Setter Property="Template" Value="{StaticResource TileGroupContainerTemplate}" />
+	  <Setter Property="HeaderTemplate" Value="{Binding GroupTemplate, RelativeSource={RelativeSource AncestorType=telerik:RadTileList}}" />
+	  <Setter Property="ItemsPanel" Value="{StaticResource GroupPanelTemplate}" />
+	  <Setter Property="ItemsSource" Value="{Binding Items}" />
+	  <Setter Property="Padding" Value="5,0,0,0"/>
+	  <Setter Property="Header" Value="{Binding Header}" />
+	  <Setter Property="VerticalContentAlignment" Value="Center"/>
+	  <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+	  <Setter Property="UseLayoutRounding" Value="True"/>
+	</Style>
+```
 
 
 
@@ -120,10 +120,10 @@ __Example 3: Setting a Style for TileGroupContainer__
 __Example 4: Updating the panel of RadTileList__
 
 ```XAML
-			<ItemsPanelTemplate x:Key="RadTileListItemsPanelTemplate">
-			  <telerik:TileListGroupPanel/>
-			</ItemsPanelTemplate>
-	```
+	<ItemsPanelTemplate x:Key="RadTileListItemsPanelTemplate">
+	  <telerik:TileListGroupPanel/>
+	</ItemsPanelTemplate>
+```
 
 
 

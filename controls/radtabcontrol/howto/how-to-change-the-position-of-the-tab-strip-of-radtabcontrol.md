@@ -15,7 +15,7 @@ __RadTabControl__ expose few properties that can be used for controlling its [ta
 	![{{ site.framework_name }} RadTabControl Different TabStrip Positions](images/RadTabControl_HowTo_TabStripPosition_02.png)
 	
 	The property can be set in the following manners:
-	#### __XAML__
+	
 	```XAML
 		<telerik:RadTabControl x:Name="radTabControl" TabStripPlacement="Bottom">
 			<telerik:RadTabItem Header="Calendar"/>
@@ -23,16 +23,13 @@ __RadTabControl__ expose few properties that can be used for controlling its [ta
 			<telerik:RadTabItem Header="Quote"/>
 		</telerik:RadTabControl>
 	```
-	
-	#### __C#__
+		
 	```C#
 		private void SetTabStripPlacement()
 		{
 			radTabControl.TabStripPlacement = Telerik.Windows.Controls.Dock.Bottom;
 		}
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Private Sub SetTabStripPlacement()
 			radTabControl.TabStripPlacement = Telerik.Windows.Controls.Dock.Bottom
@@ -51,9 +48,8 @@ __RadTabControl__ expose few properties that can be used for controlling its [ta
 
 * __TabOrientation__ - gets or sets the orientation of the tab items. The property is an enumeration of type __System.Windows.Controls.Orientation__. Setting the property's value to Vertical will rotate the tabs content to 90 degrees (clockwise). The orientation is set to __Horizontal__.
 	The following image demonstrates the TabOrientation set to Vertical without any other changes in the tab strip position applied:
-	
-	{% if site.site_name == 'Silverlight' %}![{{ site.framework_name }} RadTabControl TabOrientation Vertical](images/RadTabControl_HowTo_TabStripPosition_01.png){% endif %}
-	{% if site.site_name == 'WPF' %}![{{ site.framework_name }} RadTabControl TabOrientation Vertical](images/RadTabControl_HowTo_TabStripPosition_01-wpf.png){% endif %}		
+
+	![{{ site.framework_name }} RadTabControl TabOrientation Vertical](images/RadTabControl_HowTo_TabStripPosition_01-wpf.png)		
 
 ## See Also
  * [How to Select Control in Expression Blend]({%slug radtabcontrol-how-to-select-control-in-expression-blend%})

@@ -19,9 +19,6 @@ The Cartesian Custom Annotation renders its __Content__ starting at the specifie
         
 
 Here is what __CartesianCustomAnnotation__ looks like:
-        
-
-#### __XAML__
 
 ```XAML
 	<telerik:CartesianCustomAnnotation HorizontalValue="2" VerticalValue="2"
@@ -42,15 +39,13 @@ Here is what __CartesianCustomAnnotation__ looks like:
 	        </StackPanel>
 	    </telerik:CartesianCustomAnnotation.Content>
 	</telerik:CartesianCustomAnnotation>
-	```
+```
 
 ![Rad Chart View-annotations-cartesian-custom](images/RadChartView-annotations-cartesian-custom.png)
 
 ## Polar Custom Annotation
 
 The content of the PolarCustomAnnotation is rendered at the __(RadialValue, PolarValue)__ position.        
-
-#### __XAML__
 
 ```XAML
 	<telerik:PolarCustomAnnotation PolarValue="20" RadialValue="300" 
@@ -72,7 +67,7 @@ The content of the PolarCustomAnnotation is rendered at the __(RadialValue, Pola
 	            </Path>
 	    </telerik:PolarCustomAnnotation.Content>
 	</telerik:PolarCustomAnnotation>
-	```
+```
 
 ![Rad Chart View-annotations-polar-custom](images/RadChartView-annotations-polar-custom.png)
 

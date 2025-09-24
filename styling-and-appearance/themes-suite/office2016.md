@@ -308,7 +308,7 @@ __Setting the disabled opacity__
 
 __Setting the disabled opacity__
 
-![{{ site.framework_name }} Office2016 Setting the Disabled Opacity](../images/common-styling-appearance-office2016-theme-theme-5.png)	
+![{{ site.framework_name }} Office2016 Setting the Disabled Opacity](../images/common-styling-appearance-office2016-theme-5.png)	
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 

@@ -151,7 +151,7 @@ You can use the `ActiveDocumentPresenter` of RadRichTextBox to convert a screen 
 		Point position = GetMousePosition();
 		DocumentPosition documentPosition = radRichTextBox.ActiveEditorPresenter.GetDocumentPositionFromViewPoint(position);
 	```
-```VB.NET
+	```VB.NET
 		Dim position As Point = GetMousePosition()
 		Dim documentPosition As DocumentPosition = radRichTextBox.ActiveEditorPresenter.GetDocumentPositionFromViewPoint(position)
 	```
@@ -163,7 +163,7 @@ You can use the `ActiveDocumentPresenter` of RadRichTextBox to convert a screen 
 		DocumentPosition documentPosition = radRichTextBox.Document.CaretPosition;
 		Point position = radRichTextBox.ActiveEditorPresenter.GetViewPointFromDocumentPosition(documentPosition);
 	```
-```VB.NET
+	```VB.NET
 		Dim documentPosition As DocumentPosition = radRichTextBox.Document.CaretPosition
 		Dim position As Point = radRichTextBox.ActiveEditorPresenter.GetViewPointFromDocumentPosition(documentPosition)
 	```

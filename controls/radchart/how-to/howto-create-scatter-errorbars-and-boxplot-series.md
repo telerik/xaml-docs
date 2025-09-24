@@ -10,8 +10,6 @@ position: 12
 
 # Create Scatter ErrorBars and BoxPlot Series
 
-
-
 Currently RadChart provides 27 2D Chart types for SL/WPF. You can easily customise the existing chart types to create a more complex series like the [box plot](http://en.wikipedia.org/wiki/Box_plot)(also known as box-and-whisker diagram and widely spread in [descriptive statistics](http://en.wikipedia.org/wiki/Descriptive_statistics)).
 
 This help topic will demonstrate how to create BoxPlot and Scatter ErrorBars by reusing the default Styles of the *CandleStick *and *Scatter *series and adding custom CandleStick / CandleStickSeriesDefinition (ScatterPoint/ ScatterSeriesDefinition) pair of classes.
@@ -23,8 +21,6 @@ The BoxPlot have five number summaries: the smallest observation (sample minimum
 ##### 1. Add the additional Line visual(s) in the default template of the CandleStick Chart type: 
 
 - A new part with Name “*PART_CustomLine*” is added for the Median Line (percentile) that is to be shown:
-
-#### __XAML__
 
 ```XAML
 	<Style x:Key="CustomCandleStickStyle" TargetType="telerik:CandleStick">
@@ -62,7 +58,7 @@ The BoxPlot have five number summaries: the smallest observation (sample minimum
 	                    </Setter.Value>
 	                </Setter>
 	            </Style>
-	```
+```
 
 
 ##### 2. Create new *CustomCandleStick* class that inherits the *CandleStick* class and set the CustomLine as set in the template as Parametric Line. A few more methods are added in order to calculate the necessary coordinates for the additional Line visual, so that it can be positioned on the Plot Area:
@@ -150,12 +146,7 @@ The following code snippet demonstrates the steps in action:
 	            return new CustomCandleStick();
 	        }
 	    }
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Partial Public Class MainPage
 	Inherits UserControl
@@ -209,9 +200,7 @@ The following code snippet demonstrates the steps in action:
 	Return New CustomCandleStick()
 	End Function
 	End Class
-	```
-
-
+```
 
 The result is shown below:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToBoxPlot.png)
@@ -220,33 +209,31 @@ The result is shown below:
 
 Since we will need two crossing Lines to achieve the Error Bar Chart we can add them in the default Scatter Series Style like this:
 
-#### __XAML__
-
 ```XAML
 	<Style x:Key="CustomScatterPointStyle" 
 	              TargetType="demo:ScatterErrorBar"> 
-	              <Setter Property="Template" > 
-	                  <Setter.Value> 
-	                      <ControlTemplate TargetType="demo:ScatterErrorBar"> 
-	                          <Canvas> 
-	                              <Line Stroke="Black" 
-	                                    Y1="{TemplateBinding MinValueY}" 
-	                                    Y2="{TemplateBinding MaxValueY}" /> 
-	                              <Line Stroke="Black" 
-	                                    X1="-15" X2="15" 
-	                                    Y1="{TemplateBinding StartPointY}" 
-	                                    Y2="{TemplateBinding StartPointY}" /> 
-	
-	                              <telerik:PointMark x:Name="PART_PointMark" 
-	                                                 Canvas.Top="{TemplateBinding StartPointY}" 
-	                                                 ShapeStyle="{TemplateBinding PointMarkShapeStyle}" 
-	                                                 Size="{TemplateBinding PointSize}" /> 
-	                          </Canvas> 
-	                      </ControlTemplate> 
-	                  </Setter.Value> 
-	              </Setter> 
-	          </Style>
-	```
+		  <Setter Property="Template" > 
+			  <Setter.Value> 
+				  <ControlTemplate TargetType="demo:ScatterErrorBar"> 
+					  <Canvas> 
+						  <Line Stroke="Black" 
+								Y1="{TemplateBinding MinValueY}" 
+								Y2="{TemplateBinding MaxValueY}" /> 
+						  <Line Stroke="Black" 
+								X1="-15" X2="15" 
+								Y1="{TemplateBinding StartPointY}" 
+								Y2="{TemplateBinding StartPointY}" /> 
+
+						  <telerik:PointMark x:Name="PART_PointMark" 
+											 Canvas.Top="{TemplateBinding StartPointY}" 
+											 ShapeStyle="{TemplateBinding PointMarkShapeStyle}" 
+											 Size="{TemplateBinding PointSize}" /> 
+					  </Canvas> 
+				  </ControlTemplate> 
+			  </Setter.Value> 
+		  </Setter> 
+	  </Style>
+```
 
 
 
@@ -423,12 +410,7 @@ The following code snippet demonstrates the steps above in action:
 	            set;
 	        }
 	    }
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Partial Public Class MainPage
 	Inherits UserControl
@@ -529,9 +511,7 @@ The following code snippet demonstrates the steps above in action:
 	Public Property MinValue() As Double
 	Public Property MaxValue() As Double
 	End Class
-	```
-
-
+```
 
 The result is shown below:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToScatterErrorBar.png)

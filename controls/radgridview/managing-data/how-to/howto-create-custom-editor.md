@@ -25,7 +25,7 @@ This tutorial will demonstrate you the second approach by creating a column with
 
 __Example 1: Creating the RadColorPickerColumn class__
 
-	```C#
+```C#
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	}
@@ -89,7 +89,7 @@ There are several methods you should override:
 
 __Example 2: Overriding the CreateCellElement method__
 
-	```C#
+```C#
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -139,7 +139,7 @@ You should note two things here: first, a border with bound background to the co
 
 __Example 3: The ColorToBrushConverter class__
 
-	```C#
+```C#
 	public class ColorToBrushConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -178,7 +178,7 @@ __Example 3: The ColorToBrushConverter class__
 
 __Example 4: Overriding the CreateCellEditElement method__
 
-	```C#
+```C#
 	public override FrameworkElement CreateCellEditElement(GridViewCell cell, object dataItem)
 	{
 	    var cellEditElement = new RadColorPicker();
@@ -214,7 +214,7 @@ In this method an instance of a __RadColorPicker__ control is created and return
 
 __Example 5: The CreateValueBinding() method__
 
-	```C#
+```C#
 	private Binding CreateValueBinding()
 	{
 	    Binding valueBinding = new Binding();
@@ -247,7 +247,7 @@ Another interesting line of the __CreateCellEditElement()__ method is: __cellEdi
 
 __Example 6: Overriding the CopyPropertiesFrom method__
 
-	```C#
+```C#
 	public override void CopyPropertiesFrom(Telerik.Windows.Controls.GridViewColumn source)
 	{
 	    base.CopyPropertiesFrom(source);
@@ -300,7 +300,7 @@ Here is the full code for the __RadColorPickerColumn__ class:
 
 __Example 7: The final RadColorPickerColumn class__
 
-	```C#
+```C#
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -418,7 +418,7 @@ __Example 7: The final RadColorPickerColumn class__
 
 __Example 8: Defining a RadColorPickerColumn in XAML__
 
-	```XAML
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	
 	    <Grid.Resources>
@@ -454,7 +454,7 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 
 __Example 9: Overriding the UpdateSourceWithEditorValue method__
 
-	```C#
+```C#
 	public override IList<string> UpdateSourceWithEditorValue(GridViewCell gridViewCell)
 	{
 	    List<String> errors = new List<String>();
@@ -490,7 +490,7 @@ __Example 9: Overriding the UpdateSourceWithEditorValue method__
 
 __Example 10: Overriding the GetNewValueFromEditor method__
 
-	```C#
+```C#
 	public override object GetNewValueFromEditor(object editor)
 	{
 	    RadColorPicker colorPicker = editor as RadColorPicker;

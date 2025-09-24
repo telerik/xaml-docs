@@ -10,12 +10,7 @@ position: 2
 
 # Create a Custom Tool
 
-
-
 You can create your own custom tool for __RadImageEditor__ quite easily. You have to implement the __ITool__ interface, which will give you the ability to setup your own preview, settings UI and attach to any events of __RadImageEditor__ that are relevant to your tool.
-      
-
-## 
 
 This allows you to implement virtually any behavior you want within your tool and is the highlight of an SDK example: [Custom Watermark Tool](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/CustomWatermarkTool), where a custom tool for watermarking is available. The next tutorial will get you through the steps you need to execute to create one yourself.
         

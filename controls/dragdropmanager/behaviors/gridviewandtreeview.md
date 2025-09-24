@@ -10,8 +10,6 @@ position: 4
 
 # Drag-drop between GridView and TreeView
 
-{% if site.site_name == 'WPF' %}
-
 The purpose of this tutorial is to show you how to implement drag and drop between RadGridView and RadTreeView, giving the user feedback where the dragged item will be dropped.
 
 >Please note that the examples in this tutorial are showcasing the Telerik [Fluent theme]({%slug common-styling-appearance-fluent-theme%}). In the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article, you can find more information on how to set an application-wide theme.
@@ -24,115 +22,116 @@ First, we will specify the following classes, which are going to be used to popu
 * __DropIndicationDetails__: A helper class that will hold information for the current dragged item, current drag over item and current drop position.
 
 __Example 1: Creating ViewModels__
-	```C#	
-		public class Product
+
+```C#	
+	public class Product
+	{
+		public string Name { get; set; }
+		public string Description { get; set; }
+		public decimal UnitPrice { get; set; }
+	}
+	public class Category
+	{
+		public Category()
 		{
-			public string Name { get; set; }
-			public string Description { get; set; }
-			public decimal UnitPrice { get; set; }
+			Items = new ObservableCollection<Product>();
 		}
-		public class Category
+		public string Name { get; set; }
+		public IList Items { get; set; }
+	}
+	public class MainViewModel
+	{
+		Random rnd = new Random();
+		public ObservableCollection<Product> Products { get; set; }
+		public ObservableCollection<Category> Categories { get; set; }
+		
+		public MainViewModel()
 		{
-			public Category()
-			{
-				Items = new ObservableCollection<Product>();
-			}
-			public string Name { get; set; }
-			public IList Items { get; set; }
+			Categories = new ObservableCollection<Category>();
+			Products = new ObservableCollection<Product>();
+			GetData();
 		}
-		public class MainViewModel
+
+		private void GetData()
 		{
-			Random rnd = new Random();
-			public ObservableCollection<Product> Products { get; set; }
-			public ObservableCollection<Category> Categories { get; set; }
-			
-			public MainViewModel()
+			Category latest = new Category();
+			latest.Name = "Latest Additions";
+			latest.Items.Add(new Product() { Name="Latest Product 1", Description="Desc 1",  UnitPrice=999 });
+			latest.Items.Add(new Product() { Name="Latest Product 2", Description="Desc 2",  UnitPrice=666 }); 
+
+			Category highestRated = new Category();
+			highestRated.Name = "Highest Rated";
+			highestRated.Items.Add(new Product() { Name = "Highest Rated 1", Description = "Desc 1", UnitPrice = 2000 });
+			highestRated.Items.Add(new Product() { Name = "Highest Rated 2", Description = "Desc 2", UnitPrice = 1999 });
+
+			Categories.Add(latest);
+			Categories.Add(highestRated);
+
+			for (int i = 0; i < 10; i++)
 			{
-				Categories = new ObservableCollection<Category>();
-				Products = new ObservableCollection<Product>();
-				GetData();
-			}
-
-			private void GetData()
-			{
-				Category latest = new Category();
-				latest.Name = "Latest Additions";
-				latest.Items.Add(new Product() { Name="Latest Product 1", Description="Desc 1",  UnitPrice=999 });
-				latest.Items.Add(new Product() { Name="Latest Product 2", Description="Desc 2",  UnitPrice=666 }); 
-
-				Category highestRated = new Category();
-				highestRated.Name = "Highest Rated";
-				highestRated.Items.Add(new Product() { Name = "Highest Rated 1", Description = "Desc 1", UnitPrice = 2000 });
-				highestRated.Items.Add(new Product() { Name = "Highest Rated 2", Description = "Desc 2", UnitPrice = 1999 });
-
-				Categories.Add(latest);
-				Categories.Add(highestRated);
-
-				for (int i = 0; i < 10; i++)
-				{
-					Product product = new Product();
-					product.Name = "Product "+i;
-					product.Description = "Some Desc";
-					product.UnitPrice = rnd.Next(10,99);                
-					Products.Add(product);
-				}
+				Product product = new Product();
+				product.Name = "Product "+i;
+				product.Description = "Some Desc";
+				product.UnitPrice = rnd.Next(10,99);                
+				Products.Add(product);
 			}
 		}
-		public class DropIndicationDetails : ViewModelBase
+	}
+	public class DropIndicationDetails : ViewModelBase
+	{
+		private object currentDraggedItem;
+		private DropPosition currentDropPosition;
+		private object currentDraggedOverItem;
+
+		public object CurrentDraggedOverItem
 		{
-			private object currentDraggedItem;
-			private DropPosition currentDropPosition;
-			private object currentDraggedOverItem;
-
-			public object CurrentDraggedOverItem
+			get
 			{
-				get
-				{
-					return currentDraggedOverItem;
-				}
-				set
-				{
-					if (this.currentDraggedOverItem != value)
-					{
-						currentDraggedOverItem = value;
-						OnPropertyChanged("CurrentDraggedOverItem");
-					}
-				}
+				return currentDraggedOverItem;
 			}
-			public int DropIndex { get; set; }
-			public DropPosition CurrentDropPosition
+			set
 			{
-				get
+				if (this.currentDraggedOverItem != value)
 				{
-					return this.currentDropPosition;
-				}
-				set
-				{
-					if (this.currentDropPosition != value)
-					{
-						this.currentDropPosition = value;
-						OnPropertyChanged("CurrentDropPosition");
-					}
-				}
-			}
-
-			public object CurrentDraggedItem
-			{
-				get
-				{
-					return this.currentDraggedItem;
-				}
-				set
-				{
-					if (this.currentDraggedItem != value)
-					{
-						this.currentDraggedItem = value;
-						OnPropertyChanged("CurrentDraggedItem");
-					}
+					currentDraggedOverItem = value;
+					OnPropertyChanged("CurrentDraggedOverItem");
 				}
 			}
 		}
-	```
+		public int DropIndex { get; set; }
+		public DropPosition CurrentDropPosition
+		{
+			get
+			{
+				return this.currentDropPosition;
+			}
+			set
+			{
+				if (this.currentDropPosition != value)
+				{
+					this.currentDropPosition = value;
+					OnPropertyChanged("CurrentDropPosition");
+				}
+			}
+		}
+
+		public object CurrentDraggedItem
+		{
+			get
+			{
+				return this.currentDraggedItem;
+			}
+			set
+			{
+				if (this.currentDraggedItem != value)
+				{
+					this.currentDraggedItem = value;
+					OnPropertyChanged("CurrentDraggedItem");
+				}
+			}
+		}
+	}
+```
 	
 Next, we can go ahead and define the __RadGridView__ and __RadTreeView__ controls in our view:
 
@@ -167,13 +166,13 @@ __Example 2: Defining RadTreeView and RadGridView in XAML__
 And finally, we need to set the DataContext of the MainWindow:
 
 __Example 3: Setting DataContext__
-	```C#	
-		public MainWindow()
-        {
-            InitializeComponent();
-            this.DataContext = new MainViewModel();
-        }
-	```	
+```C#	
+	public MainWindow()
+	{
+		InitializeComponent();
+		this.DataContext = new MainViewModel();
+	}
+```	
 
 If you run the application now, you should get a structure like in **Figure 1**:
 
@@ -572,7 +571,6 @@ __Example 5: Creating custom attached property for RadGridView__
     }
 ```
 
-
 __Example 6: Creating custom attached property for RadTreeView__
 ```C#	
 	public class TreeViewDragDropBehavior
@@ -894,9 +892,7 @@ __Example 7: Final XAML__
     </Grid>
 ```
 
-{% endif %}
-
-You can find a runnable example showing drag and drop between RadGridView and RadTreeView in the {% if site.site_name == 'WPF' %}[Tree to Grid Drag](https://demos.telerik.com/wpf){% else %}[Tree to Grid Drag](https://demos.telerik.com/silverlight/#DragAndDrop/TreeToGrid){% endif %} demo.
+You can find a runnable example showing drag and drop between RadGridView and RadTreeView in the [Tree to Grid Drag](https://demos.telerik.com/wpf) demo.
 
 ## See Also
 * [DragDropManager]({%slug dragdropmanager-getting-started%})

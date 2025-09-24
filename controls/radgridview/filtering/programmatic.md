@@ -35,7 +35,7 @@ If you want to adjust many properties at once without triggering a data engine u
 
 __Example 1: Filtering single column programmatically__
 
-	```C#
+```C#
 	Telerik.Windows.Controls.GridViewColumn countryColumn = this.radGridView.Columns["Country"];
 	Telerik.Windows.Controls.GridView.IColumnFilterDescriptor countryFilter = countryColumn.ColumnFilterDescriptor;
 	
@@ -120,7 +120,7 @@ In case you want to pre-filter multiple columns at once without triggering a dat
 
 __Example 2: Filtering multiple columns programmatically__
 
-	```C#
+```C#
 	this.radGridView.FilterDescriptors.SuspendNotifications();
 	// ... filter as many columns as you wish here...
 	this.radGridView.FilterDescriptors.ResumeNotifications();
@@ -137,7 +137,7 @@ Clearing multiple column filters is again done by using the Suspend/Resume patte
 
 __Example 3: Clearing multiple column filters__
 
-	```C#
+```C#
 	this.radGridView.FilterDescriptors.SuspendNotifications();
 	foreach (Telerik.Windows.Controls.GridViewColumn column in this.radGridView.Columns)
 	{
@@ -181,7 +181,7 @@ So a typical FilterDescriptor might look something like this:
 
 __Example 4: A custom FilterDescriptor__
 
-	```C#
+```C#
 	// Give me all people that are named John.
 	Telerik.Windows.Data.FilterDescriptor fd = new Telerik.Windows.Data.FilterDescriptor();
 	fd.Member = "FirstName";
@@ -219,7 +219,7 @@ To help you understand how this FilterDescriptor is used by the data engine, let
 
 __Example 5: The generated LINQ expression__
 	
-	```C#
+```C#
 	people.Where(person => person.FirstName == "John");
 ```
 ```VB.NET
@@ -253,7 +253,7 @@ Imagine that we would like to get only people between the ages of 18 and 60 who 
 
 __Example 7: Creating a CompositeFilterDescriptor__
 
-	```C#
+```C#
 	Telerik.Windows.Data.FilterDescriptor olderThan18Filter = new Telerik.Windows.Data.FilterDescriptor("Age", Telerik.Windows.Data.FilterOperator.IsGreaterThanOrEqualTo, 18);
 	Telerik.Windows.Data.FilterDescriptor youngerThan60Filter = new Telerik.Windows.Data.FilterDescriptor("Age", Telerik.Windows.Data.FilterOperator.IsLessThan, 60);
 	
@@ -301,7 +301,7 @@ The data engine will generate something similar in pseudo-code:
 
 __Example 8: The generated LINQ expression__
 
-	```C#
+```C#
 	people.Where(person => (person.Country == "Spain" && (person.Age >= 18 && person.Age < 60)));
 ```
 ```VB.NET

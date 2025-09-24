@@ -25,8 +25,6 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 1. First you will need to create a DayButtonStyleSelector that inherits StyleSelector class:
 
-	#### __C#__
-
 	```C#
 		public class DayButtonStyleSelector : StyleSelector
 		{
@@ -34,8 +32,6 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 	```
 
 2. Create a property of type __Style__:
-
-	#### __C#__
 
 	```C#
 		public class DayButtonStyleSelector : StyleSelector
@@ -45,8 +41,6 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 	```
 
 3. Override the __SelectStyle()__ method:
-
-	#### __C#__
 
 	```C#
 		public class DayButtonStyleSelector : StyleSelector
@@ -70,8 +64,6 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 4. Add the following namespaces in the xaml:
 
-	#### __XAML__
-
 	```XAML
 		<UserControl xmlns:local="clr-namespace:WpfApplication1"
 		             xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input">
@@ -79,8 +71,6 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 	```
 
 5. Create a StaticResource for the DayButtonStyleSelector and the SpecialStyleMonday Style:
-
-	#### __XAML__
 
 	```XAML
 		<local:DayButtonStyleSelector x:Key="CustomStyleSelector">
@@ -98,15 +88,11 @@ The next example shows how to create a custom __DayButtonStyleSelector__ in orde
 
 6. Set the __DayButtonStyleSelector__ property of the control:
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadCalendar DayButtonStyleSelector="{StaticResource CustomStyleSelector}"/>
 	```
 
 7. The last step is to set the __DayButtonStyle__ to null in order for the custom DayButtonStyleSelector to be used:
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadCalendar DayButtonStyleSelector="{StaticResource CustomStyleSelector}"

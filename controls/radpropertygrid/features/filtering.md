@@ -22,12 +22,11 @@ __RadPropertyGrid__ supports filtering through its built-in search TextBox. The 
 
 ## Custom Filtering
 
-As of **Q3 2014**, RadPropertyGrid exposes an **EnableCustomFiltering** property which indicates whether RadPropertyGrid should allow custom filtering. Its default value is **False**.
+RadPropertyGrid exposes an **EnableCustomFiltering** property which indicates whether RadPropertyGrid should allow custom filtering. Its default value is **False**.
 
 __Example 1: Set EnableCustomFiltering__
 
 ```XAML
-
 	<telerik:RadPropertyGrid EnableCustomFiltering="True" />
 ```
 
@@ -38,7 +37,6 @@ For example, you may want to filter on the PropertyDefinition's **DisplayName** 
 __Example 2: Creating a custom class which inherits from PropertyDefinition__
 
 ```C#
-
     public class MyPropertyDefinition : PropertyDefinition
     {
         public override bool IsFiltered
@@ -79,7 +77,6 @@ You can then use this new class in XAML.
 __Example 3: Use the custom property definition__
 
 ```XAML
-
     <telerik:RadPropertyGrid.PropertyDefinitions>
         <my:MyPropertyDefinition Binding="{Binding Name}" DisplayName="Name" />
         <my:MyPropertyDefinition Binding="{Binding Established}" DisplayName="Established" />
@@ -91,13 +88,13 @@ Now, typing in the search TextBox will result in a case-sensitive search in both
 
 ## Deferred Filtering
 
-As of __Q3 2015__, RadPropertyGrid exposes a new property – __EnableDeferredFiltering__. Its default value is __False__, and it determines whether the filtering through the search text box will be performed dynamically. 
+RadPropertyGrid exposes the __EnableDeferredFiltering__ property, which determines whether the filtering through the search text box will be performed dynamically. Its default value is __False__.
 
 When __EnableDeferredFiltering__ is set to __True__, the filtering will be executed when the editor commits its value either on __lost focus__ or when the users presses the __Enter__ or __Tab__ key. 
 
 __Example 1: Enabling Deferred Filtering__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="propertyGrid" 
 	                  EnableDeferredFiltering="True">
 	</telerik:RadPropertyGrid>

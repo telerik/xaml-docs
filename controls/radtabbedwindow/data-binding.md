@@ -108,7 +108,9 @@ __Example 3: Bind the ItemsSource property__
 
 Upon running the application, your RadTabbedWindow will now be populated with tabs as shown on **Figure 1**.
 
-{% figure 1, "DataBound RadTabbedWindow", "tabbedwindow-getting-started-2.png" %}
+__DataBound RadTabbedWindow__
+
+![](images/tabbedwindow-getting-started-2.png)
 
 ## See Also
 

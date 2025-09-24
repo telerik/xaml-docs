@@ -63,7 +63,7 @@ This tutorial will combine in itself the following:
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class File
 			Public Sub New(ByVal fullPath As String, ByVal name As String)
 				Me.FullPath = fullPath
@@ -124,7 +124,7 @@ This tutorial will combine in itself the following:
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class Directory
 			Public Sub New(ByVal fullPath As String, ByVal name As String)
 				Me.FullPath = fullPath
@@ -201,7 +201,7 @@ This tutorial will combine in itself the following:
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class Drive
 			Public Sub New(ByVal name As String, ByVal isReady As Boolean)
 				Me.Name = name
@@ -276,7 +276,7 @@ This tutorial will combine in itself the following:
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public NotInheritable Class ServiceFacade
 			Private Shared m_instance As ServiceFacade
 		
@@ -321,7 +321,7 @@ This tutorial will combine in itself the following:
             }
         }
 	```
-```VB.NET
+	```VB.NET
 		Private Sub Initialize()
 			Me.Drives = New ObservableCollection(Of Drive)()
 			Me.Drives.Add(New Drive("My Computer", True))
@@ -400,7 +400,7 @@ This tutorial will combine in itself the following:
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class ItemStyleSelector
 			Inherits StyleSelector
 			Public Overloads Overrides Function SelectStyle(ByVal item As Object, ByVal container As System.Windows.DependencyObject) As System.Windows.Style
@@ -612,8 +612,8 @@ This tutorial will combine in itself the following:
 				d.Children.Add( new File( file, fileInfo.Name ) );
 			}
 		}
-		```
-```VB.NET
+	```
+	```VB.NET
 		Public Sub LoadChildren(ByVal d As Drive)
 			For Each directory As String In System.IO.Directory.GetDirectories(d.Name)
 				Dim directoryInfo As New DirectoryInfo(directory)

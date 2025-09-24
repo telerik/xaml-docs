@@ -40,13 +40,13 @@ You can find the required assemblies for each control from the suite in the {% i
 
 ## Adding RadDataForm to the Project
 
-* Create a new {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} project;
+* Create a new WPF project;
 
 * Add the RadDataForm to the Grid:
 
 __Example 1: Adding RadDataForm in XAML__
 
-	```XAML
+```XAML
 	  <UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid x:Name="LayoutRoot" Background="White">
 	      <telerik:RadDataForm x:Name="RadDataForm1" />
@@ -66,7 +66,7 @@ Firstly, for the purpose of this tutorial, we will create a new **Employee** cla
 
 __Example 2: Creating an Employee Class with Some Exposed Properties__
 
-	```C#
+```C#
 	public class Employee
 	{
 	    public string FirstName
@@ -178,7 +178,7 @@ In the example above **Gender** is of type enum:
 
 __Example 3: Create Gender Enumeration__
 
-	```C#
+```C#
 	public enum Gender
 	{
 	    Female,
@@ -198,7 +198,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 __Example 4: Binding a Single Item to RadDataForm__
 
-	```C#
+```C#
 	Employee employee = new Employee()
 	{
 	    FirstName = "Sarah",
@@ -236,7 +236,7 @@ We will create a simple **EmployeeService** class with a single static method - 
 
 __Example 5: Creating an EmployeeService class with a static GetEmployees() method__
 
-	```C#
+```C#
 	public class EmployeeService
 	{
 	    public static ObservableCollection<Employee> GetEmployees()
@@ -333,7 +333,7 @@ Afterwards, all you need to do is to set the **ItemsSource** of RadDataForm:
 
 __Example 6: Set the ItemsSource of the RadDataForm to the Observable Collection__
 
-	```C#
+```C#
 	this.RadDataForm1.ItemsSource = EmployeeService.GetEmployees();
 ```
 ```VB.NET

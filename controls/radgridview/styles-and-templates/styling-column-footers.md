@@ -34,7 +34,7 @@ You have two options:
 
 __Example 1: Styling all footer rows of an application__
 
-	```XAML
+```XAML
 	<Style TargetType="telerik:GridViewFooterRow">
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Background" Value="LightBlue"/>
@@ -49,7 +49,7 @@ RadGridView's footer rows can also be styled by creating an appropriate __Style_
 
 __Example 2: Setting RadGridView's FooterRowStyle__
 
-	```XAML
+```XAML
 	<telerik:RadGridView FooterRowStyle="{StaticResource GridViewFooterRowStyle}" />
 ```
 
@@ -63,7 +63,7 @@ In order to style all RadGridView cells of an application, you should create an 
 
 __Example 3: Styling all footer cells of an application__
 
-	```XAML
+```XAML
 	<Style TargetType="telerik:GridViewFooterCell">
 	    <Setter Property="BorderBrush" Value="Red"/>
 	    <Setter Property="Background" Value="Blue"/>
@@ -78,7 +78,7 @@ RadGridView's footer cells can also be styled by creating an appropriate __Style
 
 __Example 4: Setting a column's CellStyle__
 
-	```XAML
+```XAML
 	<telerik:GridViewDataColumn Header="ID"
 	                DataMemberBinding="{Binding EmployeeID}"
 	                Footer="ID"

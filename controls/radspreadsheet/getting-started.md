@@ -59,43 +59,28 @@ Note that in order to import/export in XLSX or export to PDF, the format provide
 If you want to use the sample UI provided in our demos you should add this reference as well:        
 
 * __Telerik.Windows.Controls.RibbonView.dll__
-{% if site.site_name == 'WPF' %}* __Telerik.Windows.Controls.SpreadsheetUI.dll__{% endif%}
+* __Telerik.Windows.Controls.SpreadsheetUI.dll__
 
 ## Namespaces
 
 For a bare-bone Spreadsheet control, you only need a declaration of the telerik schema:
 
-#### __XAML__
-
 ```XAML
-
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
 ```
 
-
-
 For the UI that enables the full-featured use of the control, you should also declare:
 
-#### __XAML__
-
 ```XAML
-
 	xmlns:spreadsheetControls="clr-namespace:Telerik.Windows.Controls.Spreadsheet.Controls;assembly=Telerik.Windows.Controls.Spreadsheet"
 	xmlns:spreadsheet="clr-namespace:Telerik.Windows.Controls.Spreadsheet;assembly=Telerik.Windows.Controls.Spreadsheet"
-	```
-
-
-Then, all that is left is to add the __Spreadsheet__ component to the page:
-      
-
-#### __XAML__
-
-```XAML
-
-	<telerik:RadSpreadsheet x:Name="radSpreadsheet" />
 ```
 
+Then, all that is left is to add the __Spreadsheet__ component to the page:
 
+```XAML
+	<telerik:RadSpreadsheet x:Name="radSpreadsheet" />
+```
 
 ## Spreadsheet and RibbonView
 

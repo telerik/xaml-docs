@@ -18,7 +18,7 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 
 __Example 1: The GroupFooterCellStyleSelector class__
 
-	```C#
+```C#
     public class GroupFooterCellStyleSelector : StyleSelector
     {
         public override Style SelectStyle(object item, DependencyObject container)
@@ -60,13 +60,13 @@ __Example 1: The GroupFooterCellStyleSelector class__
 		Public Property BigGroupStyle() As Style
 		Public Property SmallGroupStyle() As Style
 	End Class
-	```
+```
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigGroupStyle** and **SmallGroupStyle**:
 
 __Example 2: Setting the BigGroupStyle and SmallGroupStyle__
 
-	```XAML
+```XAML
 	<Grid.Resources>
         <my:GroupFooterCellStyleSelector x:Key="GroupFooterCellStyleSelector">
             <my:GroupFooterCellStyleSelector.BigGroupStyle>
@@ -81,7 +81,7 @@ __Example 2: Setting the BigGroupStyle and SmallGroupStyle__
             </my:GroupFooterCellStyleSelector.SmallGroupStyle>
         </my:GroupFooterCellStyleSelector>
 	</Grid.Resources>
-	```
+```
 
 >The **"my:"** prefix before **GroupFooterCellStyleSelector** specifies the mapping for the namespace of the project: **xmlns:my="..."**
 
@@ -89,9 +89,9 @@ Finally, set the **GroupFooterCellStyleSelector** property of the chosen column:
 
 __Example 3: Setting the GroupFooterCellStyleSelector property__
 
-	```XAML
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" GroupFooterCellStyleSelector="{StaticResource GroupFooterCellStyleSelector}" />
-	```
+```
 
 **Figure 1** shows the final result:
 

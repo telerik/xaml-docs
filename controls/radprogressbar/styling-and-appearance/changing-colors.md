@@ -41,7 +41,7 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myStyle.Setters.Add(new Setter(RadProgressBar.BackgroundProperty, new SolidColorBrush(Colors.Yellow)));
 		myProgressBar.Style = myStyle;
 	```
-```VB.NET
+	```VB.NET
 		Dim myProgressBar As New RadProgressBar()
 		' Set Background directly '
 		myProgressBar.Background = New SolidColorBrush(Colors.Yellow)
@@ -84,7 +84,7 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myProgressBar.Value = 50;
 		myProgressBar.Style = myStyle2;
 	```
-```VB.NET
+	```VB.NET
 		' Set Foreground directly'
 		myProgressBar.Foreground = New SolidColorBrush(Colors.Yellow)
 		' Set Foreground using a Style'
@@ -127,7 +127,7 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myProgressBar.Value = 50;
 		myProgressBar.Style = myStyle3;
 	```
-```VB.NET
+	```VB.NET
 		' Set BorderBrush  directly'
 		myProgressBar.BorderBrush = New SolidColorBrush(Colors.Red)
 		' Set BorderBrush using a Style'
@@ -137,12 +137,12 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myProgressBar.Style = myStyle3
 	```
 	
-	Here is how the control looks before and after the change of the __BorderBrush__ property:
-	
-	*Before:*
-	
-	![Rad Progress Bar default](images/RadProgressBar_default.png)
-	
-	*After:*
-	
-	![Rad Progress Bar red border](images/RadProgressBar_red_border.png)
+Here is how the control looks before and after the change of the __BorderBrush__ property:
+
+*Before:*
+
+![Rad Progress Bar default](images/RadProgressBar_default.png)
+
+*After:*
+
+![Rad Progress Bar red border](images/RadProgressBar_red_border.png)

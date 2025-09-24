@@ -60,9 +60,7 @@ __Example 2: Subscribing to an event in code__
         }
 	```
 
-{% if site.site_name == 'WPF' %}
 >The __SelectionChanged__ event is inherited from the [Selector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.selector?view=net-5.0) class. 
-{% endif %}
 
 ## See Also
  * [Visual Structure]({%slug radcombobox-general-information-visual-structure%})

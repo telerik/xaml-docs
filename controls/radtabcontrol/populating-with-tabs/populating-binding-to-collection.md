@@ -29,7 +29,7 @@ When you want the tabs of the __RadTabControl__ to be automatically generated on
 			public int Age { get; set; }
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class Person
 			Public Sub New(ByVal name As String, ByVal age As Integer)
 				Me.Name = name
@@ -75,7 +75,7 @@ When you want the tabs of the __RadTabControl__ to be automatically generated on
 			public ObservableCollection<Person> Persons { get; set; }
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class ViewModel
 			Public Sub New()
 				Me.Persons = New ObservableCollection(Of Person)()

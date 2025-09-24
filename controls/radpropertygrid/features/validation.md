@@ -24,7 +24,7 @@ In order to have the validation rules defined through the [IDataErrorInfo](https
 
 __Example 1: Setting ValidatesOnDataErrors and NotifyOnValidationError of the Binding__
 
-	```C#
+```C#
 	private void rpg_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    (e.PropertyDefinition.Binding as Binding).ValidatesOnDataErrors = true;
@@ -42,7 +42,7 @@ You can define the validation rules like so:
 
 __Example 2: Defining validation rules__
 
-	```C#
+```C#
 	public string this[string columnName]
 	{
 	    get
@@ -86,64 +86,64 @@ Provided your business objects correctly implement the [INotifyDataErrorInfo](ht
 
 __Example 3: Defining the validation method__
 
-	```C#
-		private void ValidateName()
-        {
-            var error = "Name must be at least 5 characters!";
+```C#
+	private void ValidateName()
+	{
+		var error = "Name must be at least 5 characters!";
 
-            if (this.Name == null || this.Name.Length < 5)
-            {
-                this.AddError("Name", error);
-            }
-            else
-            {
-                this.RemoveError("Name", error);
-            }
-        }
-	```
+		if (this.Name == null || this.Name.Length < 5)
+		{
+			this.AddError("Name", error);
+		}
+		else
+		{
+			this.RemoveError("Name", error);
+		}
+	}
+```
 ```VB.NET
-		Private Sub ValidateName()
-            Dim [error] = "Name must be at least 5 characters!"
+	Private Sub ValidateName()
+		Dim [error] = "Name must be at least 5 characters!"
 
-            If Me.Name Is Nothing OrElse Me.Name.Length < 5 Then
-                Me.AddError("Name", [error])
-            Else
-                Me.RemoveError("Name", [error])
-            End If
-        End Sub
-	```
+		If Me.Name Is Nothing OrElse Me.Name.Length < 5 Then
+			Me.AddError("Name", [error])
+		Else
+			Me.RemoveError("Name", [error])
+		End If
+	End Sub
+```
 
 __Example 4: Calling the ValidateName method__
 
-	```C#
-		public string Name
-        {
-            get { return this.name; }
-            set
-            {
-                if (value != this.name || value == null)
-                {
-                    this.name = value;
-                    this.OnPropertyChanged("Name");
-                    this.ValidateName();
-                }
-            }
-        }
-	```
+```C#
+	public string Name
+	{
+		get { return this.name; }
+		set
+		{
+			if (value != this.name || value == null)
+			{
+				this.name = value;
+				this.OnPropertyChanged("Name");
+				this.ValidateName();
+			}
+		}
+	}
+```
 ```VB.NET
-		Public Property Name() As String
-            Get
-                Return Me._name
-            End Get
-            Set(ByVal value As String)
-                If value <> Me._name OrElse value Is Nothing Then
-                    Me._name = value
-                    Me.OnPropertyChanged("Name")
-                    Me.ValidateName()
-                End If
-            End Set
-        End Property
-	```
+	Public Property Name() As String
+		Get
+			Return Me._name
+		End Get
+		Set(ByVal value As String)
+			If value <> Me._name OrElse value Is Nothing Then
+				Me._name = value
+				Me.OnPropertyChanged("Name")
+				Me.ValidateName()
+			End If
+		End Set
+	End Property
+```
 
 ## Validating through DataAnnotations
 
@@ -151,7 +151,7 @@ In order to have the validation rules defined through [DataAnnotations](https://
 
 __Example 5: Setting ValidatesOnExceptions of Binding__
 
-	```C#
+```C#
 	private void rpg1_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    (e.PropertyDefinition.Binding as Binding).ValidatesOnExceptions = true;
@@ -167,7 +167,7 @@ For example you can define the Required DataAnnotations attribute like so:
 
 __Example 6: Defining DataAnnotations Attribute__
 
-	```C#
+```C#
 	private string requiredField;
 	[Required(ErrorMessage = "This field is Required.")]
 	public string RequiredField
@@ -200,7 +200,7 @@ You may notice that there is a call to a ValidateProperty method. You will have 
 
 __Example 7: Defining ValidateProperty method__
 
-	```C#
+```C#
 	public void ValidateProperty(string propName, object value)
 	{
 	    var result = new List<System.ComponentModel.DataAnnotations.ValidationResult>();
@@ -229,7 +229,7 @@ In order to enable validation for the fields that represent property sets, you n
 
 __Example 8: Setting the PropertySetsValidationFunction__
 
-	```C#
+```C#
 	this.rpg.PropertySetsValidationFunction = new Func<string, object, string>((s, t) => 
 	{
 	    if (s == "Name" && t != null && t.ToString().Length < 5)

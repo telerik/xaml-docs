@@ -23,7 +23,7 @@ Finally, the implementation should be as follows:
 
 #### __XAML__
 
-	```XAML
+```XAML
 	<Grid.Resources>
 	  <ResourceDictionary>
 	    <ResourceDictionary.MergedDictionaries>
@@ -52,7 +52,7 @@ Finally, the implementation should be as follows:
 
 #### __C#__
 
-	```C#
+```C#
 	private void pageDownButton_Click(object sender, RoutedEventArgs e)
 	{
 	    this.RadCarousel1.FindCarouselPanel().PageDown();
@@ -70,10 +70,7 @@ Finally, the implementation should be as follows:
 	    this.RadCarousel1.FindCarouselPanel().PageUp();
 	}
 ```
-
-#### __VB.NET__
-
-	```VB.NET
+```VB.NET
 	Private Sub pageDownButton_Click(sender As Object, e As RoutedEventArgs)
 	    Me.RadCarousel1.FindCarouselPanel().PageDown()
 	End Sub
@@ -95,5 +92,3 @@ Once you are done, the RadCarousel should be visualized as the image below:
 ![{{ site.framework_name }} RadCarousel Customized Buttons](images/RadCarousel_ChangeScrollButtons.png)
 
 Still, you are free to change the style of the buttons just as you want them to be. 
-
-

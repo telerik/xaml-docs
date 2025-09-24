@@ -16,17 +16,13 @@ Here is a snapshot of a regular treeview without treeview items:
 
 ![{{ site.framework_name }} RadTreeView Without Items](images/RadTreeView_PopulatingWithDataCodeBehind___001.PNG)
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8"/>
-	```
+```
 
 ## Adding TreeView Items 
 
 In order to add new treeview items to a treeview control, first you have to create an instance of the __RadTreeViewItem__ class, set its properties like __Header__, __Foreground__, etc., and then add it to the treeview items collection. 
-
-#### __C#__
 
 ```C#
 	private void AddTreeViewItems()
@@ -40,10 +36,7 @@ In order to add new treeview items to a treeview control, first you have to crea
 	    category.Foreground = new SolidColorBrush( Colors.Purple );
 	    radTreeView.Items.Add( category );
 	}
-	```
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Private Sub AddTreeViewItems()
 	    Dim category As New RadTreeViewItem()
@@ -58,11 +51,9 @@ In order to add new treeview items to a treeview control, first you have to crea
 	
 	    radTreeView.Items.Add(category)
 	End Sub
-	```
+```
 
 In order to create your hierarchical structure deeper, you just need to add __RadTreeViewItem__ child nodes to any of the previously declared items. For example, here is the same __AddTreeViewItems()__ method, but this time a little more extended: 
-
-#### __C#__
 
 ```C#
 	private void AddTreeViewItems()
@@ -93,10 +84,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	    product.Header = "Product2.2";
 	    category.Items.Add( product );
 	}
-	```
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Private Sub AddTreeViewItems()
 	    Dim category As New RadTreeViewItem()
@@ -133,7 +121,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	
 	    category.Items.Add(product)
 	End Sub
-	```
+```
 
 This will be the result if you execute the __AddTreeViewItems()__ method: 
 ![{{ site.framework_name }} RadTreeView Populated from Code-Behind](images/RadTreeView_PopulatingWithDataCodeBehind___010.PNG)
@@ -144,22 +132,17 @@ This will be the result if you execute the __AddTreeViewItems()__ method:
 
 In order to remove a treeview item you have to remove it from the treeview items collection.
 
-#### __C#__
-
 ```C#
 	private void RemoveTreeViewItem( RadTreeViewItem itemToRemove )
 	{
 	    radTreeView.Items.Remove( itemToRemove );
 	}
-	```
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Private Sub RemoveTreeViewItem(ByVal itemToRemove As RadTreeViewItem)
 	    radTreeView.Items.Remove(itemToRemove)
 	End Sub
-	```
+```
 
 ## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

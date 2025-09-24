@@ -38,7 +38,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 			 public ImageSource IconPath { get; set;} 
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class ExplorerItem
 				Public Property Header() As String
 						Get
@@ -144,7 +144,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		 }
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class MainViewModel
 			Public Property Items() As ObservableCollection(Of ExplorerItem)
 				Get
@@ -264,7 +264,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		 }
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class ExplorerItem
 			Public Property Header() As String
 				Get
@@ -481,7 +481,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 		 }
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class MainViewModel
 			Public Property Items() As ObservableCollection(Of ExplorerItem)
 				Get
@@ -737,40 +737,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 
 * Display the hierarchical data collection in the __RadBreadcrumb__ control using:			
 
-	* __HierarchicalDataTemplates__:
-		{% if site.site_name == 'Silverlight' %}
-		__Example 6: Using HierarchicalDataTemplates__  
-		```XAML
-			<FrameworkElement.DataContext>
-			    <vm:MainViewModel />
-			</FrameworkElement.DataContext>
-			<Grid Background="White">
-			    <telerik:RadBreadcrumb VerticalAlignment="Top" 
-			                            Header="{Binding Root}"
-			                            ImagePath="IconPath"
-			                            IsIconVisible="True"
-			                            ItemsSource="{Binding Root.Children}"
-			                            TextModePath="Path">
-			        <telerik:RadBreadcrumb.HeaderTemplate>
-			            <DataTemplate>
-			                <TextBlock Text="{Binding Header}" />
-			            </DataTemplate>
-			        </telerik:RadBreadcrumb.HeaderTemplate>
-			        <telerik:RadBreadcrumb.ItemTemplate>
-			            <telerik:HierarchicalDataTemplate ItemsSource="{Binding Children}">
-			                <telerik:HierarchicalDataTemplate.ItemTemplate>
-			                    <DataTemplate>
-			                        <TextBlock Text="{Binding Header}" />
-			                    </DataTemplate>
-			                </telerik:HierarchicalDataTemplate.ItemTemplate>
-			                <TextBlock Text="{Binding Header}" />
-			            </telerik:HierarchicalDataTemplate>
-			        </telerik:RadBreadcrumb.ItemTemplate>
-			    </telerik:RadBreadcrumb>
-			</Grid>
-	```
-		{% else %}
-
+	* __HierarchicalDataTemplates__:		
 		__Example 6: Using HierarchicalDataTemplates__  
 		```XAML
 			<FrameworkElement.DataContext>
@@ -800,8 +767,7 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 			        </telerik:RadBreadcrumb.ItemTemplate>
 			    </telerik:RadBreadcrumb>
 			</Grid>
-	```
-	{% endif %}
+		```
 
 	* the __Breadcrumb__ properties exposed to facilitate your efforts in populating the control with hierarchical data:
 		* __HeaderMemberPath__ - Gets or sets a path to a value on the source object to serve as the __BreadcrumbItem.Header__.							
@@ -826,8 +792,6 @@ The following example will show you how to bind a __Breadcrumb__ control to a fl
 In both approaches the final result should look like this:
 
 ![{{ site.framework_name }} RadBreadcrumb Hierarchical Data](images/breadcrumb_features_hierarchical_data.png)
-
-{% if site.site_name == 'Silverlight' %}You can download the sample project [here](http://www.telerik.com/community/code-library/silverlight/general/breadcrumb-hierarchical-data-binding.aspx){% endif %}
 
 ## See Also
  * [Visual Structure]({%slug radbreadcrumb-visual-structure%})

@@ -47,7 +47,7 @@ The class responsible for customizing the keyboard navigation should to be simil
 
 __Example 1: Creating a custom KeyboardCommandProvider__
 
-	```C#
+```C#
 	public class CustomKeyboardCommandProvider : DataFormCommandProvider
 	{
 	    public CustomKeyboardCommandProvider()
@@ -122,7 +122,7 @@ The last thing to be done is to set the CommandProvider property of the RadDataF
 
 __Example 2: Set the CommandProvider property__
 
-	```XAML
+```XAML
 	<Grid.Resources>
 	    <my:CustomKeyboardCommandProvider x:Key="CustomProvider"/>
 	</Grid.Resources>
@@ -134,7 +134,7 @@ __Example 2: Set the CommandProvider property__
 
 __Example 2: Set the CommandProvider property__
 
-	```C#
+```C#
 	this.RadDataForm1.CommandProvider = new CustomKeyboardCommandProvider(this.RadDataForm1);
 ```
 ```VB.NET
@@ -147,7 +147,7 @@ As of Q1 2015, __DataFormCommandProvider__ exposed the __EnableBuiltInNavigation
 
 __Example 3: Setting the EnableBuiltInNavigation property to False__ 
 
-	```C#
+```C#
 	public class NoBuiltInNavigationKeyboardCommandProvider : DataFormCommandProvider
 	{
 	    public NoBuiltInNavigationKeyboardCommandProvider()
@@ -182,7 +182,7 @@ As of Q1 2015, the new boolean property __ShouldProcessHandledEvents__ of __Data
 
 __Example 4: Setting the ShouldProcessHandledEvents to False__
 
-	```C#
+```C#
 	public class ProcessHandledEventsKeyboardCommandProvider : DataFormCommandProvider
 	{
 	    public ProcessHandledEventsKeyboardCommandProvider()

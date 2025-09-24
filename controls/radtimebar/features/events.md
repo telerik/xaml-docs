@@ -26,31 +26,23 @@ You can handle the following events when using the __RadTimeBar__ for a very ric
 
 For example you can get the current item interval using the __TimeBar.ItemIntervalChanged__ event via the __TimeBar.CurrentItemInterval__ property.
 This event will also fire on initial load, when the best current item interval is set.
-        
-
-#### __C#__
 
 ```C#
-		      public MainPage()
-	        {
-	            InitializeComponent();
-	            radTimeBar1.ItemIntervalChanged += new EventHandler<DrillEventArgs>(radTimeBar1_ItemIntervalChanged);
-	        }
-	
-	        void radTimeBar1_ItemIntervalChanged(object sender, DrillEventArgs e)
-	        {
-	            if (radTimeBar1.CurrentItemInterval is MonthInterval)
-	            {
-	                radTimeBar1.SelectionStart = new DateTime(2012, 05, 1);
-	                radTimeBar1.SelectionEnd = new DateTime(2012, 07, 1);
-	            }
-	        }
-	```
+	public MainPage()
+	{
+		InitializeComponent();
+		radTimeBar1.ItemIntervalChanged += new EventHandler<DrillEventArgs>(radTimeBar1_ItemIntervalChanged);
+	}
 
-
-
-#### __VB.NET__
-
+	void radTimeBar1_ItemIntervalChanged(object sender, DrillEventArgs e)
+	{
+		if (radTimeBar1.CurrentItemInterval is MonthInterval)
+		{
+			radTimeBar1.SelectionStart = new DateTime(2012, 05, 1);
+			radTimeBar1.SelectionEnd = new DateTime(2012, 07, 1);
+		}
+	}
+```
 ```VB.NET
 	   public MainPage()
 	   Public Sub New()
@@ -64,7 +56,7 @@ This event will also fire on initial load, when the best current item interval i
 					 radTimeBar1.SelectionEnd = New Date(2012, 07, 1)
 				End If
 	End Sub
-	```
+```
 
 
 The same approach is applicable for groups - In order to get the current group interval you can use __TimeBar.GroupIntervalChanged__ event and __TimeBar.CurrentGroupInterval__ property respectively.

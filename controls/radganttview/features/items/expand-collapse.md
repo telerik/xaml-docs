@@ -22,8 +22,6 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 1. Create a class that implements the __IInitialExpandBehavior__ interface:
 
-	#### __C#__
-
 	```C#
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
 		{
@@ -31,8 +29,6 @@ The next example demonstrates how to create a behavior that will collapsed only 
 	```
 
 1. Implement its __ShouldExpandItemByDefault()__ method by creating a condition that returns true if the __HierarchicalItem’s__ Level is above 0:
-
-	#### __C#__
 
 	```C#
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
@@ -48,8 +44,6 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 1. Declare the control in the xaml and set its __Columns__. The RadGanttView control should look like this:
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
 		                      VisibleRange="{Binding VisibleTime}">
@@ -62,8 +56,6 @@ The next example demonstrates how to create a behavior that will collapsed only 
 	```
 
 1. Finally you will need to set the __InitialExpandBehavior__ of the RadGanttView control to the newly created CustomInitialExpandBehavior:
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
@@ -93,8 +85,6 @@ The next example will enhance the previous example by adding two button one for 
 
 * Add two buttons and declare their Click events:
 
-#### __XAML__
-
 ```XAML
 	<StackPanel Orientation="Horizontal">
 	    <TextBlock Text="Expand/Collapse Tasks with the use of the code behind:" Margin="10 0 0 20" VerticalAlignment="Center"/>
@@ -104,8 +94,6 @@ The next example will enhance the previous example by adding two button one for 
 ```
 
 * In the Click events of the two buttons call the __ExpandItem()__ and __CollapseItem()__ methods of the built-in __ExpandCollapseService__ to expand and collapse the first task (the Big Iteration task).
-
-#### __C#__
 
 ```C#
 	private void ExpandButton_Click(object sender, RoutedEventArgs e)

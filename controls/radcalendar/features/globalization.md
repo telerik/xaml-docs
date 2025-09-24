@@ -10,7 +10,7 @@ position: 1
 
 # Globalization
 
-As of **R1 2017** RadCalendar supports the following .NET Framework calendar implementations:
+RadCalendar supports the following .NET Framework calendar implementations:
 
 * **ChineseLunisolarCalendar**, which represents the **Chinese lunisolar** calendar.
 
@@ -50,7 +50,7 @@ __Example 1: Setting the default calendar application-wide__
         Thread.CurrentThread.CurrentUICulture = arSA;
         arSA.DateTimeFormat.Calendar = new HijriCalendar();
 	```
-```VB.NET
+	```VB.NET
 		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
 		Thread.CurrentThread.CurrentCulture = arSA
 		Thread.CurrentThread.CurrentUICulture = arSA
@@ -64,7 +64,7 @@ __Example 2: Setting the calendar for a specific RadCalendar instance__
         arSA.DateTimeFormat.Calendar = new HijriCalendar();
         calendar.Culture = arSA;
 	```
-```VB.NET
+	```VB.NET
 		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
 		arSA.DateTimeFormat.Calendar = New HijriCalendar()
 		calendar.Culture = arSA

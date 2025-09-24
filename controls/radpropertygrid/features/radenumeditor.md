@@ -18,7 +18,7 @@ You can define flag enum by setting __FlagsAttribute__ as follows:
 
 __Defining flag enum__
 
-	```C#
+```C#
 	[Flags]
 	public enum Permissions
 	{
@@ -48,7 +48,7 @@ Furthermore, if you define zero and -1 values in your flag enum (meaning no flag
 
 __Defining the flag enum__
 
-	```C#
+```C#
 	[Flags]
 	public enum PermissionsAllNone
 	{
@@ -76,7 +76,7 @@ You can manually define your __FlagEnumEditor__ in __XAML__, like so:
 
 __Defining the FlagEnumEditor__
 
-	```XAML
+```XAML
 	<telerik:PropertyDefinition Binding="{Binding Permission}">
 	    <telerik:PropertyDefinition.EditorTemplate>
 	        <DataTemplate>

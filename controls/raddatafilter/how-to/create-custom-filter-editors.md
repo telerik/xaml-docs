@@ -34,11 +34,8 @@ In XAML you have to create an instance of the selector, define its rules collect
 >In order to make the filtering possible, you have to bind the value property of the control that you are using to the __Value__ property of the __DataTemplate's DataContext__ by using a __TwoWay__ binding mode. In this case this is the __SelectedValue__ property.
 
 >In order to set the case sensitivity, you have to bind the __IsCaseSensitive__ property of the DateTemplate’s DataContext, also using a two-way binding.
-          
-#### __XAML__
 
 ```XAML
-
 	<UserControl.Resources>
 	    <DataTemplate x:Key="ComboBoxEditor">
 	        <telerik:RadComboBox SelectedValue="{Binding Value, Mode=TwoWay}"
@@ -77,8 +74,6 @@ Here is the code behind of the example. The most important thing in it is the ev
 
 As you can see by using the switch statement you can extend the logic for additional custom editors by adding more cases.
 
-#### __C#__
-
 ```C#
 
 	public partial class CustomFilterEditorsSample : UserControl
@@ -102,12 +97,7 @@ As you can see by using the switch statement you can extend the logic for additi
 	        return new List<string>() { "Owner", "Sales Representative", "Sales Associate", "Sales Agent", "Marketing Assistent" };
 	    }
 	}
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 
 	Public Partial Class CustomFilterEditorsSample
@@ -133,9 +123,7 @@ As you can see by using the switch statement you can extend the logic for additi
 	  }
 	 End Function
 	End Class
-	```
-
-
+```
 
 Here is a snapshot of the final result:
 
@@ -143,10 +131,7 @@ Here is a snapshot of the final result:
 
 Here is the code for the Employee object and the sample data.
 
-#### __C#__
-
 ```C#
-
 	public class Employee
 	{
 	    public Employee( string name, string companyName, string title )
@@ -171,12 +156,7 @@ Here is the code for the Employee object and the sample data.
 	        set;
 	    }
 	}
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 
 	Public Class Employee
@@ -213,14 +193,9 @@ Here is the code for the Employee object and the sample data.
 	 End Property
 	 Private m_Title As String
 	End Class
-	```
-
-
-
-#### __C#__
+```
 
 ```C#
-
 	ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 	employees.Add( new Employee( "Maria Anders", "Alfreds Futterkiste", "Sales Representative" ) );
 	employees.Add( new Employee( "Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner" ) );
@@ -232,14 +207,8 @@ Here is the code for the Employee object and the sample data.
 	employees.Add( new Employee( "Laurence Lebihan", "Bon app'", "Owner" ) );
 	employees.Add( new Employee( "Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager" ) );
 	employees.Add( new Employee( "Victoria Ashworth", "B's Beverages", "Sales representative" ) );
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
-
 	Dim employees As New ObservableCollection(Of Employee)()
 	employees.Add(New Employee("Maria Anders", "Alfreds Futterkiste", "Sales Representative"))
 	employees.Add(New Employee("Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner"))

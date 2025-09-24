@@ -43,7 +43,7 @@ You have two options:
 
 __Example 1: Styling all instances of RadGridView in an application__
 
-	```XAML
+```XAML
 	<Style TargetType="telerik:RadGridView">
 	    <Setter Property="Foreground" Value="Red"/>
 	</Style>
@@ -57,7 +57,7 @@ __RadGridView__ exposes a **Style** property that allows you to apply a style to
 
 __Example 1: Setting RadGridView Style__
 
-	```XAML
+```XAML
 	<telerik:RadGridView Style="{StaticResource RadGridViewStyle}" />
 ```
 
@@ -93,7 +93,7 @@ Here is a small sample, demonstrating the usage of some of the above properties.
 
 __Example 2: Usage of General properties__
 
-	```XAML
+```XAML
 	<telerik:RadGridView GridLinesVisibility="Vertical"
 	                 ShowColumnFooters="True"
 	                 ShowColumnHeaders="False"
@@ -122,7 +122,7 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 __Example 3: Usage of Columns properties__
 
-	```XAML
+```XAML
 	<telerik:RadGridView MinColumnWidth="20" MaxColumnWidth="100" ColumnWidth="80"/>
 ```
 
@@ -148,7 +148,7 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 __Example 4: Usage of Rows properties__
 
-	```XAML
+```XAML
 	<telerik:RadGridView RowIndicatorVisibility="Collapsed"
 	                 RowDetailsVisibilityMode="VisibleWhenSelected"
 	                 AlternationCount="2">
@@ -184,7 +184,7 @@ Here is a small example that demonstrates the usage of some of the above propert
 
 __Example 5: Usage of Groups properties__
 
-	```XAML
+```XAML
 	<telerik:RadGridView ShowGroupFooters="True"
 	                 ShowGroupPanel="False">
 	    <telerik:RadGridView.GroupDescriptors>

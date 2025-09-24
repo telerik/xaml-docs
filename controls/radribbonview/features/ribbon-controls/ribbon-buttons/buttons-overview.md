@@ -71,7 +71,6 @@ As it was mentioned above all __RadRibbonButtons__ derive from the base button c
 
 Here is an example of a __RadRibbonButton__ with the following properties set.		
 
-#### __XAML__
 ```XAML
 	<telerik:RadRibbonButton CollapseToMedium="Never" 
 	                         CollapseToSmall="WhenGroupIsMedium"
@@ -95,7 +94,6 @@ There are two ways to implement a custom logic upon a button click - via event h
 
 The first one is the standard way. You have to attach an event handler to the __Click__ event of the button.		
 
-#### __XAML__
 ```XAML
 	<telerik:RadRibbonButton CollapseToMedium="Never" 
 	                         ...
@@ -103,15 +101,12 @@ The first one is the standard way. You have to attach an event handler to the __
 	                         Click="RadRibbonButton_Click"/>
 ```
 
-#### __C#__
 ```C#
 	private void RadRibbonButton_Click(object sender, RoutedEventArgs e)
 	{
 	 //place your custom logic here.
 	}
-	```
-
-#### __VB.NET__
+```
 ```VB.NET
 	Private Sub RadRibbonButton_Click(sender As Object, e As RoutedEventArgs)
 		'place your custom logic here.'
@@ -120,7 +115,6 @@ The first one is the standard way. You have to attach an event handler to the __
 
 The other way is to set the __Command__ property to a certain command. Here is an example of the command defined in the code-behind file of your UserControl. In order to create a command you have to create a static read-only instance of {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls.RoutedUICommand__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls.RoutedUICommand__{% endif %} and then add execute and you can execute event handlers to the {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls.CommandManager__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls.CommandManager__{% endif %} class.		
 
-#### __C#__
 ```C#
 	public partial class RibbonButtonsSample : UserControl
 	{
@@ -144,8 +138,6 @@ The other way is to set the __Command__ property to a certain command. Here is a
 	   }
 	}
 ```
-
-#### __VB.NET__
 ```VB.NET
 	Public Partial Class RibbonButtonsSample
 		Inherits UserControl
@@ -168,20 +160,10 @@ The other way is to set the __Command__ property to a certain command. Here is a
 
 After that set the __Command__ property of the __RadRibbonButton__ to the {% if site.site_name == 'Silverlight' %}full qualified path to the command. {% endif %}{% if site.site_name == 'WPF' %}static command defined in code behind. {% endif %}
 
-{% if site.site_name == 'Silverlight' %}
-#### __XAML__
-```XAML
+```XAML	
 	<telerik:RadRibbonButton Text="Equation"
-	                                 ...
-	                        Command="Samples.RibbonButtonsSample.EquationCommand" />
-```
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-	<telerik:RadRibbonButton Text="Equation"
-			...
 			Command="{x:Static local:RibbonButtonsSample.EquationCommand}" />
-{% endif %}
+```
 
 And now if you run your application and hit the 'Equation' button, the background of the user control will be changed to Blue as it is shown on the snapshot below.
 ![{{ site.framework_name }} RadRibbonView Change Background on Click of Button](images/RibbonView_Buttons_Overview_Command.png)
@@ -194,7 +176,6 @@ __RadRibbonView__ allows you to additionally organize your buttons with common f
 
 The next example shows you how to use __RadButtonGroup__.		
 
-#### __XAML__
 ```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonTab Header="Home">

@@ -15,19 +15,15 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 ##### 1. You can set the __NoColorVisibility__ property to __Visibility.Visible__ to view the __NoColorField__, otherwise you should set it to false:						
 
-#### __XAML__
 ```XAML
 	<telerik:RadColorSelector NoColorVisibility="Visible" />
 ```
 
-#### __C#__
 ```C#
 	RadColorSelector selector = new RadColorSelector();
 	selector.NoColorVisibility = Visibility.Visible;
 	// selector.NoColorVisibility= Visibility.Collapsed;
 ```
-
-#### __VB.NET__
 ```VB.NET
 	Dim selector As New RadColorSelector()
 	selector.NoColorVisibility = Visibility.Visible
@@ -40,19 +36,15 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 * __StandardPaletteVisibility__
 
-	#### __XAML__
 	```XAML
 		<telerik:RadColorSelector StandardPaletteVisibility="Visible" />
 	```
 
-	#### __C#__
 	```C#
 		RadColorSelector selector = new RadColorSelector();
 		selector.StandardPaletteVisibility = Visibility.Visible;
 		// selector.StandardPaletteVisibility = Visibility.Collapsed;
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Dim selector As New RadColorSelector()
 		selector.StandardPaletteVisibility = Visibility.Visible
@@ -61,44 +53,36 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 * __HeaderPaletteVisibility__
 
-	#### __XAML__
 	```XAML
 		<telerik:RadColorSelector HeaderPaletteVisibility="Visible" />
 	```
-
-	#### __C#__
+	
 	```C#
 		RadColorSelector selector = new RadColorSelector();
 		selector.HeaderPaletteVisibility = Visibility.Visible;
 		// selector.HeaderPaletteVisibility = Visibility.Collapsed;
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Dim selector As New RadColorSelector()
 		selector.HeaderPaletteVisibility = Visibility.Visible
 		' selector.HeaderPaletteVisibility =Visibility.Collapsed '
 	```
 		
-{% if site.site_name == 'Silverlight' %}![Color Picker StructureSL](images/ColorPickerStructureSL.png){% endif %}
-{% if site.site_name == 'WPF' %}![Color Picker StructureWPF](images/ColorPickerStructureWPF.png){% endif %}
+
+![Color Picker StructureWPF](images/ColorPickerStructureWPF.png)
 
 ##### 3. You can set different text for __StandardPalette__ header text , __MainPalette__ header text and __NoColorText__.
 
 * StandardPaletteHeaderText
 	
-	#### __XAML__
 	```XAML
 		<telerik:RadColorSelector StandardPaletteHeaderText="Header" />
 	```
-		
-	#### __C#__
+	
 	```C#
 		RadColorSelector selector = new RadColorSelector();
 		selector.StandardPaletteHeaderText = "header";
 	```
-		
-	#### __VB.NET__
 	```VB.NET
 		Dim selector As New RadColorSelector()
 		selector.StandardPaletteHeaderText = "header"
@@ -106,18 +90,14 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 	
 * MainPaletteHeaderText
 	
-	#### __XAML__
 	```XAML
 		<telerik:RadColorSelector MainPaletteHeaderText="Header" />
 	```
-	 
-	#### __C#__
+	
 	```C#
 		RadColorSelector selector = new RadColorSelector();
 		selector.MainPaletteHeaderText = "header";
 	```
-		
-	#### __VB.NET__
 	```VB.NET
 		Dim selector As New RadColorSelector()
 		selector.MainPaletteHeaderText = "header"
@@ -125,18 +105,14 @@ You can customize the appearance of a RadColorSelector by choosing which of the 
 
 * NoColorText
 	
-	#### __XAML__
 	```XAML
 		<telerik:RadColorSelector NoColorText="No Color Text" />
 	```
-		
-	#### __C#__
+	
 	```C#
 		RadColorSelector selector = new RadColorSelector();
 		selector.NoColorText = "No Color Text";
 	```
-		
-	#### __VB.NET__
 	```VB.NET
 		Dim selector As New RadColorSelector()
 		selector.NoColorText = "No Color Text"

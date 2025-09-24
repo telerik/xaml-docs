@@ -18,10 +18,10 @@ There are three ways to insert a new row in RadGridView:
 * By clicking on the row which is shown in the control when the `NewRowPosition` property is set to either __Top__ or __Bottom__. To learn more about this approach, check this [article]({%slug gridview-new-row%}).
 * By calling the `BeginInsert` method
 
-	__Adding new rows with BeginInsert()__
-	```C#
-		this.radGridView.BeginInsert();
-	```
+__Adding new rows with BeginInsert()__
+```C#
+	this.radGridView.BeginInsert();
+```
 ```VB.NET
 		Me.radGridView.BeginInsert()
 	```

@@ -16,7 +16,7 @@ In order to enable this kind of validation you first need to include the System.
 
 __Example 1: Including System.ComponentModel.DataAnnotations__
 
-	```C#
+```C#
 	using System.ComponentModel.DataAnnotations;
 ```
 ```VB.NET
@@ -27,7 +27,7 @@ Now, let's define a simple Employee class with validation attributes.
 
 __Example 2: Creating an Employee class with validation attributes__
 
-	```C#
+```C#
 	public class Employee
 	{
 	    [Required]

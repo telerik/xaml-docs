@@ -336,7 +336,7 @@ For example, if you have a binding to the Position property you can use the foll
 			   base.SerializeNode(node, info);
 		}	
 	```
-```VB.NET
+	```VB.NET
 		public Overrides Sub SerializeNode(node As NodeViewModelBase, info As SerializationInfo)
 			Dim position = info("Position")
 			info("Position") = Nothing
@@ -359,7 +359,7 @@ For example, if you have a binding to the Position property you can use the foll
 			return node;
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Overrides Function DeserializeNode(shape As IShape, info As Telerik.Windows.Diagrams.Core.SerializationInfo) As NodeViewModelBase
 			Dim node = MyBase.DeserializeNode(shape, info)
 			If info("MyPosition") IsNot Nothing Then

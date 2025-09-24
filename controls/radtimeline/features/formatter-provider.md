@@ -18,8 +18,6 @@ RadTimeline provides means for customizing the interval formats through the __Fo
 
 The example below shows how formatter providers can be utilized (once they are implemented):
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
 	                    PeriodEnd="2011-01-05"
@@ -37,7 +35,7 @@ The example below shows how formatter providers can be utilized (once they are i
 	        <telerik:HourInterval FormatterProvider="{StaticResource HourFormatterProvider}"/>
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	```
+```
 
 ## The IIntervalFormatterProvider interface
 
@@ -48,8 +46,6 @@ A formatter provider is a class that implements the __IIntervalFormatterProvider
 * __GetIntervalSpanFormatters__ - used when one period control corresponds to a couple of interval items. E.g. an HourInterval with CurrentIntervalSpan = 12 interval span will create two hour intervals per each day - (0:00 - 12:00) and (12:00 - 0:00). An appropriate format would be String.Format("{0} - {1}", currentIntevalString, nextIntervalString).
             
 Here is a sample hour formatter provider implementation:
-
-#### __C#__
 
 ```C#
 	using  Telerik.Windows.Controls.TimeBar;
@@ -86,10 +82,7 @@ Here is a sample hour formatter provider implementation:
 	        return this.intervalSpanFormatters;
 	    }
 	}
-	```
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Imports Telerik.Windows.Controls.TimeBar
 	
@@ -115,7 +108,7 @@ Here is a sample hour formatter provider implementation:
 	        Return Me.intervalSpanFormatters
 	    End Function
 	End Class
-	```
+```
 
 Below you can find screenshots showing when each format is used.
 

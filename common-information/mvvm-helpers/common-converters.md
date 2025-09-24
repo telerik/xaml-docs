@@ -122,9 +122,10 @@ __Setting the view model__
 ```
 
 __Setting the converter to the Visibility property__
-	```XAML
-		<telerik:RadRadioButton Visibility="{Binding MyGender, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Male}"/>
-	```
+
+```XAML
+	<telerik:RadRadioButton Visibility="{Binding MyGender, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Male}"/>
+```
 
 ### ColorToBrushConverter
 
@@ -193,26 +194,25 @@ __Setting the converter to the Background property__
 The converter applies __Thickness__ to a property of type `Thickness` based on the parameter. The parameter expects string value which represents on which side you want to place border __(LeftTopRightBottom)__. You can specify only two sides for example (LeftTop).  __The parameter is required.__
 
 __Setting the ViewModel__
-	```C#
-		public class MainWindow
+```C#
+	public class MainWindow
+	{
+		 public MainWindow()
 		{
-			 public MainWindow()
-			{
-				InitializeComponent();
+			InitializeComponent();
 
-				this.DataContext = this;
-				Value = new Thickness(2, 3, 4, 5);				
-			}
-			public Thickness Value { get; set; }
+			this.DataContext = this;
+			Value = new Thickness(2, 3, 4, 5);				
 		}
-	```
+		public Thickness Value { get; set; }
+	}
+```
 
 __Setting the converter to the BorderThickness property__
-	```XAML
-		<Border BorderThickness="{Binding Value,Converter={StaticResource ThicknessToOrientedThicknessConverter},ConverterParameter=LeftTop}" BorderBrush="Red" Width="200" Height="200" Background="Bisque"/>
-	```	
+```XAML
+	<Border BorderThickness="{Binding Value,Converter={StaticResource ThicknessToOrientedThicknessConverter},ConverterParameter=LeftTop}" BorderBrush="Red" Width="200" Height="200" Background="Bisque"/>
+```	
 
-{% if site.framework_name == 'WPF' %}
 ### StringToGlyphConverter
 
 The converter accepts a glyph string value (ex: &amp;#xe501&#59;) and converts it to the corresponding `char` representation. The converter is useful when you store the glyph string value in your model and want to data bind it to the UI.
@@ -237,7 +237,6 @@ __Using the StringToGlyphConverter converter__
 ```
 
 > StringToGlyphConverter is available since R1 2019. If you use a previous version you can implement the converter on your own. See its implementation in the [Font Glyphs Overview]({%slug common-styling-appearance-glyphs-overview%}#binding-glyphs) article.
-{% endif %}
 
 ### BrushToColorConverter
 

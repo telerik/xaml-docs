@@ -50,7 +50,7 @@ You have two options:
 
 __Example 1: Styling all group panels of an application__
 
-	```XAML
+```XAML
 	<Style TargetType="{x:Type telerik:GridViewGroupPanel}">
 	    <Setter Property="MinHeight" Value="50"/>
 	    <Setter Property="BorderThickness" Value="3"/>
@@ -65,7 +65,7 @@ You could also style all group panel items by creating a style, targeting the __
 
 __Example 2: Styling all group panel items of an application__
 
-	```XAML
+```XAML
 	<Style TargetType="{x:Type telerik:GridViewGroupPanelItem}">
 	    <Setter Property="Padding" Value="10"/>
 	    <Setter Property="FontSize" Value="20" />
@@ -80,7 +80,7 @@ The __GridViewGroupPanelItem__ wraps the __GridViewGroupPanelCell__ control, whi
 
 __Example 3: Styling the GridViewGroupPanelCell element__
 
-	```XAML
+```XAML
 	<Style TargetType="{x:Type telerik:GridViewGroupPanelCell}">
 	    <Setter Property="Background" Value="Red" />
 	    <Setter Property="BorderBrush" Value="Yellow" />
@@ -96,7 +96,7 @@ __RadGridView__ exposes two properties of type __Style__ - __GroupPanelStyle__ a
 
 __Example 4: Setting RadGridView's GroupPanelStyle and GroupPanelItemStyle__
 
-	```XAML
+```XAML
 	<telerik:RadGridView GroupPanelStyle="{StaticResource GroupPanelStyle}"
 	GroupPanelItemStyle="{StaticResource GroupPanelItemStyle}" />
 ```
@@ -111,7 +111,7 @@ A simple way to change the group panel's foreground and background is through Ra
 
 __Example 5: Setting RadGridView's GroupPanelForeground and GroupPanelBackground__
 
-	```XAML
+```XAML
 	<telerik:RadGridView GroupPanelForeground="White"
 	GroupPanelBackground="Blue" />
 ```

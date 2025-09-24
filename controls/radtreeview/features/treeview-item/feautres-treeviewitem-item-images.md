@@ -20,8 +20,6 @@ __RadTreeView__ gives you the ability to define images for each item state. This
 
 For the purpose of this tutorial, the treeview defined in the next XAML snippet will be used: 
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
@@ -39,7 +37,7 @@ For the purpose of this tutorial, the treeview defined in the next XAML snippet 
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	```
+```
 
 ![{{ site.framework_name }} RadTreeView Sample Structure](images/RadTreeView_TreeViewItemImages_001.PNG)
 
@@ -54,8 +52,6 @@ __RadTreeView__ gives you the ability to define images for each item state. The 
 * __Selected__ - use the __SelectedImageSrc__ property of the __RadTreeViewItem__ to set the image that will be displayed for the selected state. 
 
 When you store all your images for the TreeView into a single folder you can use the __ImagesBaseDir__ property of the __RadTreeView__ to set the location of this folder. Then when settings the __DefaultImagesSrc__, __ExpandedImageSrc__, __SelectedImageSrc__ properties of the __RadTreeViewItem__ you will need to set only the image name, not the entire path to the image. See the example below:
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView"
@@ -75,7 +71,7 @@ When you store all your images for the TreeView into a single folder you can use
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	```
+```
 
 The result is: 
 
@@ -91,13 +87,9 @@ When you collapse the treeview item "Cycling", then its default image will also 
 
 ## Setting DefaultImagesSrc, ExpandedImageSrc and SelectedImageSrc Properties from Code Behind
 
-
-
 When setting the __DefaultImageSrc__, __ExpandedImageSrc__ and __SelectedImageSrc__ properties from code behind you can either
 
 * set the path to the image as a string 
-
-	#### __C#__
 
 	```C#
 		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
@@ -106,23 +98,18 @@ When setting the __DefaultImageSrc__, __ExpandedImageSrc__ and __SelectedImageSr
 		 e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png";
 		 e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"; 
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
 			e.PreparedItem.DefaultImageSrc = "/Examples/Common/Images/Vista Icons/Icon1.png"
 			e.PreparedItem.ExpandedImageSrc = "/Examples/Common/Images/Vista Icons/Icon2.png"
 			e.PreparedItem.SelectedImageSrc = "/Examples/Common/Images/Vista Icons/Icon3.png"
 		End Sub
-		```
+	```
 
 or
 
 * set the path using an object of type __BitmapImage__
-
-	#### __C#__
 
 	```C#
 		private void radTreeView_ItemPrepared(object sender, RadTreeViewItemPreparedEventArgs e)
@@ -134,14 +121,7 @@ or
 		 BitmapImage selectedImage = new BitmapImage(new Uri("Icon3.png", UriKind.Relative));
 		 e.PreparedItem.SelectedImageSrc = selectedImage;
 		}
-		```
-
-
-
-
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Private Sub radTreeView_ItemPrepared(sender As Object, e As RadTreeViewItemPreparedEventArgs)
 			Dim defaultImage As New BitmapImage(New Uri("Icon1.png", UriKind.Relative))
@@ -151,7 +131,7 @@ or
 			Dim selectedImage As New BitmapImage(New Uri("Icon3.png", UriKind.Relative))
 			e.PreparedItem.SelectedImageSrc = selectedImage
 		End Sub
-		```
+	```
 
 ## Using Images from the Client Bin Directory or a Relative Directory
 
@@ -163,11 +143,9 @@ For example, see these cases:
 
 * The images are placed in a relative directory. In this case you need to specify a relative path in the __ImagesBaseDir__ property. In the previous example the __ImagesBaseDir__ property was set to: 
 
-#### __XAML__
-
 ```XAML
 	ImagesBaseDir="/Examples/Common/Images/Vista Icons/"
-	```
+```
 
 Which means that the "Examples" directory is located in the same directory where the .XAP file is placed and the images are located in the "Vista Icons" directory. 
 

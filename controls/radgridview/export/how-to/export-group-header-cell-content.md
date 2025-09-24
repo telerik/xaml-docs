@@ -44,7 +44,9 @@ __Example 1: Custom Group Header Cell Export Content__
 	End Sub
 ```
 
-{% figure 1, "Custom Group Header Cell Export Content", "format-groupheadercell-result.png" %}
+__Custom Group Header Cell Export Content__
+
+![](images/format-groupheadercell-result.png)
 
 ## See Also
 

@@ -44,12 +44,11 @@ Enabling the keytip service also activates the __arrow keys navigation__. Pressi
 ## KeyTipService Class Properties
 
 The __KeyTipsService__ class allows you to enable/disable key tips for the __RadRibbonView__ control. It exposes the following properties that allow you to customize the keyboard navigation:
-{% if site.site_name == 'WPF' %}
+
 * __ActivationMode__: Gets/sets the the predefined event on which the KeyTips and KeyboardNavigation are executed. The property is of type __Telerik.Windows.Controls.RibbonView.KeyTips.ActivationMode__ enum and exposes the following options:
 	* __PreviewKeyDown__: The keyboard navigation is activated when the PreviewKeyDown event of RadRibbonView is fired
 	* __KeyDown__: The keyboard navigation is activated when the KeyDown event is fired
 	* __KeyUp__ (default value): The keyboard navigation is activated when the KeyUp event is fired
-{% endif %}
 
 * __AccessText:__ Gets/sets the key tip activation text  
 
@@ -66,8 +65,6 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 			...
 		</telerik:RadRibbonView>
 	```
-
-{% if site.site_name == 'Silverlight' %}{% endif %}
 
 * __AccessKeys:__ Property of type __IEnumerable<KeyGesture>__ and it gets/sets a collection of __KeyGestures__ that can be used to trigger the KeyTips display. Please note that the __AccessKeys__ property can only be set in code either in code-behind or in a __ViewModel__. This is because a __KeyGesture__ cannot be defined in XAML.
 
@@ -104,7 +101,7 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 			MessageBox.Show((sender as RadRibbonButton).Text.ToString() + "was clicked.");
 		}
 	```
-```VB.NET
+	```VB.NET
 		Private Sub KeyTipActivation_Activated(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
 			MessageBox.Show("The key tip of the " & TryCast(e.OriginalSource, RadRibbonButton).Text.ToString() & "was activated.")
 		End Sub
@@ -115,8 +112,6 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 	```
 
 	In the example above, the __KeyTipActivation.Activated()__ event handler will fire as soon as the __HomeButton1__ key tip is activated. This means that you can implement custom logic that will be executed before the button's __Click()__ event is fired.
-
-{% if site.site_name == 'WPF' %}
 
 * __IsKeyboardNavigationEnabled__: Gets or sets whether keyboard navigation is enabled for a particular control. Setting this property to false on a UIElement will lead to the element being skipped while navigating using the keyboard's Up/Down/Right/Left keys. 
 
@@ -135,7 +130,6 @@ The __KeyTipsService__ class allows you to enable/disable key tips for the __Rad
 			</telerik:RadRibbonTab>
 		</telerik:RadRibbonView>		
 	```
-	{% endif %}
 
  >Specific behaviors of IsKeyboardNavigationEnabled property when set to false:
  >* When set on __RadRibbonView__: The attached property will not work for this control.
@@ -189,11 +183,7 @@ __Example 5: Activating key tips behavior__
     </telerik:RadRibbonView>
 ```
 
-{% if site.site_name == 'WPF' %}
 ![{{ site.framework_name }} RadRibbonView Key Tips](images/RibbonView_KeyTips_Sample_updated.png)
-{% else %}
-![{{ site.framework_name }} RadRibbonView Key Tips](images/RibbonView_KeyTips_Sample.png)
-{% endif %}
 
 When a control's keytip is activated, the action associated with the control will be executed:
 * Using a keytip of a __RibbonTab__ will select the tab
@@ -261,8 +251,8 @@ __Example 7: Customizing KeyTipControl__
     </Style>
 ```
 
-{% if site.site_name == 'WPF' %}>important Each RadRibbonView control (as RadRibbonButton, RadRibbonTab, etc.) implements a [VisualStateGroup](https://msdn.microsoft.com/en-us/library/system.windows.visualstategroup(v=vs.110).aspx) with x:Name set to *"KeyboardNavigationStates"* in its ControlTemplate. When an element should be highlighted by the arrow navigation, it goes into this state group. All controls that do not implement that VisualState go into *"MouseOver"* state. If you want to use the default highlighting on non-ribbonview controls you can customize their template by adding the "KeyboardNavigationStates" visual state group and the "KeyboardFocused" and "KeyboardUnfocused" [VisualStates](https://msdn.microsoft.com/en-us/library/system.windows.visualstatemanager(v=vs.110).aspx).
-{% endif %}
+>important Each RadRibbonView control (as RadRibbonButton, RadRibbonTab, etc.) implements a [VisualStateGroup](https://msdn.microsoft.com/en-us/library/system.windows.visualstategroup(v=vs.110).aspx) with x:Name set to *"KeyboardNavigationStates"* in its ControlTemplate. When an element should be highlighted by the arrow navigation, it goes into this state group. All controls that do not implement that VisualState go into *"MouseOver"* state. If you want to use the default highlighting on non-ribbonview controls you can customize their template by adding the "KeyboardNavigationStates" visual state group and the "KeyboardFocused" and "KeyboardUnfocused" [VisualStates](https://msdn.microsoft.com/en-us/library/system.windows.visualstatemanager(v=vs.110).aspx).
+
 >The __Telerik_Windows_Controls_RibbonView_KeyTips__ namespace definition is: 
 >`xmlns:Telerik_Windows_Controls_RibbonView_KeyTips="clr-namespace:Telerik.Windows.Controls.RibbonView.KeyTips;assembly=Telerik.Windows.Controls.RibbonView"`
 

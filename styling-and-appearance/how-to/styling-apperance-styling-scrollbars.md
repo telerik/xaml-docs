@@ -12,7 +12,9 @@ position: 12
 
 Each of the themes from the UI for {{ site.framework_name }} provides a custom default style for the **ScrollBars** in your application.
 
-{% figure 1, "Scrollbar in Windows8 theme", "windows8-scrollbar.png" %}
+__Scrollbar in Windows8 theme__
+
+![](images/windows8-scrollbar.png)
 
 The article will show you how to modify these styles to suit your requirements.
 
@@ -101,7 +103,9 @@ __Example 3: Increase scrollbar width__
     </Style>
 ```
 
-{% figure 2, "Scrollbars with increased size", "windows8-scrollbar-modified-size.png" %}
+__Scrollbars with increased size__
+
+![](images/windows8-scrollbar-modified-size.png)
 
 ## Styling the Arrows
 
@@ -136,7 +140,10 @@ __Example 4: Apply the templates__
 
 You now need to do the same for the **RepeatButtonLineUpTemplate** and **RepeatButtonLineUpStyle** to style the other arrow.
     
-{% figure 3, "Scrollbars with increased arrow size", "windows8-scrollbar-modified-arrow-size.png" %}
+__Scrollbars with increased arrow size__
+
+![](images/windows8-scrollbar-modified-arrow-size.png)
+
     
 ## Styling the Thumbs
 
@@ -173,7 +180,9 @@ __Example 5: Change thumb color__
     </Style>
 ```
     
-{% figure 4, "Scrollbars with colored thumb", "windows8-scrollbar-modified-thumb.png" %}
+__Scrollbars with colored thumb__
+
+![](images/windows8-scrollbar-modified-thumb.png)
 
 ## See Also
 

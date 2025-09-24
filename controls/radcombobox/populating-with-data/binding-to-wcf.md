@@ -45,7 +45,6 @@ Before proceeding further with this tutorial, you need to create a new applicati
 
 3. The __ComboBox__ control will be populated with all __Products__ from the __Northwind__ database. In the drop-down list the __ProductName__ and the __UnitPrice__ properties will be displayed. Add the following code which will make the initial load of the objects.
 
-	#### __C#__  
 	```C#
 		private void BeginRequest()
 		{
@@ -57,8 +56,6 @@ Before proceeding further with this tutorial, you need to create a new applicati
 			radComboBox.ItemsSource = e.Result;
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Private Sub BeginRequest()
 			AddHandler serviceClient.GetProductsCompleted, AddressOf serviceClient_GetProductsCompleted
@@ -69,15 +66,12 @@ Before proceeding further with this tutorial, you need to create a new applicati
 		End Sub
 	```
 
-	#### __C#__  
 	```C#
 		private void BeginRequest()
 		{
 			this.radComboBox.ItemsSource = serviceClient.GetProducts();
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Private Sub BeginRequest()
 			Me.radComboBox.ItemsSource = serviceClient.GetProducts()
@@ -86,7 +80,6 @@ Before proceeding further with this tutorial, you need to create a new applicati
 
 4. You need to declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
 
-	#### __XAML__  
 	```XAML
 		<UserControl.Resources>
 			<DataTemplate x:Key="CustomItemTemplate">
@@ -102,7 +95,6 @@ Before proceeding further with this tutorial, you need to create a new applicati
 
 5. Find your __RadComboBox__ declaration and set the declared __DataTemplate__ to its __ItemTemplate__ property.
 
-	#### __XAML__  
 	```XAML
 		<telerik:RadComboBox x:Name="radComboBox" ItemTemplate="{StaticResource CustomItemTemplate}"/>
 	```
@@ -118,14 +110,11 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 
 1. Create a new class named __NorthwindDataSource__.
 
-	#### __C#__  
 	```C#
 		public class NorthwindDataSource
 		{
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Public Class NorthwindDataSource
 		End Class
@@ -137,7 +126,6 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 
 4. In the __NorthwindDataSource__ class add a reference to your WCF Service client:
 
-	#### __C#__  
 	```C#
 		public class NorthwindDataSource
 		{
@@ -156,8 +144,6 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 			}
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Public Class NorthwindDataSource
 			Private serviceClient As ComboBoxWcfServiceClient
@@ -183,23 +169,15 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 
 5. Add the following code in the __constructor__ of the __NorthwindDataSource__. It will make the initial load of all __Products__ from the database:
 
-	#### __C#__  
 	```C#
 		this.serviceClient.GetProductsCompleted += new EventHandler<GetProductsCompletedEventArgs>( serviceClient_GetProductsCompleted );
 		this.serviceClient.GetProductsAsync();
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		AddHandler Me.serviceClient.GetProductsCompleted, AddressOf serviceClient_GetProductsCompleted
 		Me.serviceClient.GetProductsAsync()
 	```
 
-	{% if site.site_name == 'Silverlight' %}
-	And here is the code handling the __GetProductsCompleted__ event:
-	{% endif %}
-
-	#### __C#__  
 	```C#
 		private void serviceClient_GetProductsCompleted( object sender, GetProductsCompletedEventArgs e )
 		{
@@ -209,8 +187,6 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 			}
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Private Sub serviceClient_GetProductsCompleted(ByVal sender As Object, ByVal e As GetProductsCompletedEventArgs)
 			For Each p As Products In e.Result
@@ -219,15 +195,12 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 		End Sub
 	```
 
-	#### __C#__  
 	```C#
 		foreach ( Products p in serviceClient.GetProducts() )
 		{
 			this.Products.Add( p );
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		For Each p As Products In serviceClient.GetProducts()
 			Me.Products.Add(p)
@@ -236,7 +209,6 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 
 6. Declare the __NorthwindDataSource__ object as a resource in your application.
 
-	#### __XAML__  
 	```XAML
 		<UserControl.Resources>
 			<example:NorthwindDataSource x:Key="DataSource"/>   
@@ -245,7 +217,6 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 
 7. Declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
 
-	#### __XAML__  
 	```XAML
 		<UserControl.Resources>
 			<DataTemplate x:Key="CustomItemTemplate">
@@ -263,7 +234,6 @@ This section will show you how to populate your __RadComboBox__ control in a MVV
 
 8. Update your __RadComboBox__ declaration - set the __ItemsSource__ and __ItemTemplate__ properties.
 
-	#### __XAML__  
 	```XAML
 		<telerik:RadComboBox x:Name="radComboBox"
 			ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"

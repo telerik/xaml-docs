@@ -20,34 +20,20 @@ If you want to predefine descriptors, you have to create the desired ones and ad
 
 Here is an example of a predefined descriptor.
 
-#### __XAML__
-
 ```XAML
-
 	<telerik:RadDataFilter x:Name="radDataFilter" />
-	```
-
-
-
-#### __C#__
+```
 
 ```C#
 
 	this.radDataFilter.Source = SampleData.GetEmployees();
 	this.radDataFilter.FilterDescriptors.Add( new FilterDescriptor( "Name", FilterOperator.Contains, "m" ) );
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 
 	Me.radDataFilter.Source = SampleData.GetEmployees()
 	Me.radDataFilter.FilterDescriptors.Add(New FilterDescriptor("Name", FilterOperator.Contains, "m"))
-	```
-
-
+```
 
 ## See Also
 

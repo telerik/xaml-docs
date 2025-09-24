@@ -20,8 +20,6 @@ There are several predefined calculations that you can use. To explain each of t
 
 * __DifferenceFrom__ - instead of showing Totals in the cells you can show how items differentiate from a particular group. In the example below we have set DifferenceFrom "Pen":            
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
@@ -30,17 +28,12 @@ There are several predefined calculations that you can use. To explain each of t
 	</pivot:PropertyAggregateDescription>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new DifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
@@ -52,8 +45,6 @@ There are several predefined calculations that you can use. To explain each of t
 
 You can also set Difference From Next or Difference From Previous - this way each cell will show how the value in it differentiate from the value in next/previous cell. For example we can set DifferenceFromNext for our Rows and here is the result:            
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
@@ -62,17 +53,12 @@ You can also set Difference From Next or Difference From Previous - this way eac
 	</pivot:PropertyAggregateDescription>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new DifferenceFromNext() { Axis = PivotAxis.Rows, Level = 0 };
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
@@ -84,8 +70,6 @@ You can also set Difference From Next or Difference From Previous - this way eac
 
 * __PercentDifferenceFrom__ - the logic behind this calculation is the same as DifferenceFrom, but instead the difference is calculated in percents.
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	        <pivot:PropertyAggregateDescription.TotalFormat>
@@ -95,17 +79,12 @@ You can also set Difference From Next or Difference From Previous - this way eac
 	</pivot:LocalDataSourceProvider.AggregateDescriptions>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new PercentDifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
@@ -119,8 +98,6 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 * __Index__ - calculates a weighted average by using the following formula: ((value in cell) x (Grand Total)) / ((Grand Row Total) x (Grand Column Total)). If we apply Index calculation on our example here is the result:            
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
@@ -129,17 +106,12 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 	</pivot:PropertyAggregateDescription>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new Index();
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
@@ -159,8 +131,6 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 * __RunningTotalIn__ - the value in the cell is aggregation of the value in the previous cell and the total in the current one. Last item in the collection holds the GrandTotal values. For example in the image below the value which stands for "Pen" in promotion "Extra Discount" is a sum of its own total (32.67) and the value of "Notebook" in promotion "Extra Discount" (69.10).            
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
@@ -169,17 +139,12 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 	</pivot:PropertyAggregateDescription>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new RunningTotalsIn() { Axis = PivotAxis.Rows, Level = 0 };
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
@@ -191,8 +156,6 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 * __PercentRunningTotalsIn__ - the value in each cell is accumulated from the total in it and the value in the previous cell. The result is presented as percent of the GrandTotal. GrandTotal is present in the last item in the collection with the value 100 percents.            
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
@@ -201,17 +164,12 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 	</pivot:PropertyAggregateDescription>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new PercentRunningTotalsIn() { Axis = PivotAxis.Rows, Level = 0};
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
@@ -223,8 +181,6 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 
 * __RankTotals__ - the value in the cell is integer representing the rank of the current total in the current collection of totals. You can set ranking to be from smallest to largest or from largest to smallest.            
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
@@ -233,17 +189,12 @@ You can also set "Percent Difference From Next" or "Percent Difference From Prev
 	</pivot:PropertyAggregateDescription>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new RankTotals() { Axis = PivotAxis.Rows, Level = 0};
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum
@@ -265,8 +216,6 @@ When you set TotalFormat in your code there are several properties that you shou
 
 1. __GroupName__ - this is the exact name of the group based on which the calculation will be applied. Note that this is a particular header in the rows or columns. For the above example we have defined "Name" as PropertyGroupDescription in RowGroupDescriptions collection. But the GroupName that has to be set when the Axis is Rows is one of the RowHeaders: "Pen", "Pencil" or "Notebook".            
 
-#### __XAML__
-
 ```XAML
 	<pivot:PropertyAggregateDescription PropertyName="Price" AggregateFunction="Sum">
 	    <pivot:PropertyAggregateDescription.TotalFormat>
@@ -275,17 +224,12 @@ When you set TotalFormat in your code there are several properties that you shou
 	</pivot:PropertyAggregateDescription>
 ```
 
-#### __C#__
-
 ```C#
 	PropertyAggregateDescription aggregate = new PropertyAggregateDescription();
 	aggregate.AggregateFunction = AggregateFunctions.Sum;
 	aggregate.PropertyName = "Price";
 	aggregate.TotalFormat = new DifferenceFrom() { Axis = PivotAxis.Rows, Level = 0, GroupName = "Pen" };
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim aggregate As New PropertyAggregateDescription()
 	aggregate.AggregateFunction = AggregateFunctions.Sum

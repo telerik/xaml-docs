@@ -28,7 +28,7 @@ First, for the purpose of this article, we will create a new **Employee** class 
 
 __Example 1: Creating the Employee class__
 
-	```C#
+```C#
 	public class Employee
 	{
 	    public string FirstName { get; set; }
@@ -54,7 +54,7 @@ The declaration of RadPropertyGrid control inside the Grid:
 
 __Example 2: Declaring RadPropertyGrid__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
 ```
 
@@ -62,7 +62,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 
 __Example 3: Binding Employee instance to RadPropertyGrid__
 
-	```C#
+```C#
 	this.propertyGrid1.Item = new Employee()
 	{
 	    FirstName = "Sarah",
@@ -107,7 +107,7 @@ The **Display** attribute specifies localizable strings for data types and membe
 
 __Example 4: Setting Display attribute__
 
-	```C#
+```C#
 	//Rename the StartingDate property to Year in the UI
 	[Display(Name = "Year")]
 	public DateTime StartingDate { get; set; }
@@ -136,7 +136,7 @@ The **Browsable** attribute specifies whether a property should be displayed or 
 
 __Example 5: Setting Browsable attribute__
 
-	```C#
+```C#
 	//Hide StartingDate from the UI
 	[Browsable(false)]
 	public DateTime StartingDate { get; set; }
@@ -153,7 +153,7 @@ The **ReadOnly** attribute specifies whether the property this attribute is boun
 
 __Example 6: Setting ReadOnly attribute__
 
-	```C#
+```C#
 	//Set StartingDate as Read-Only
 	[ReadOnly(true)]
 	public DateTime StartingDate { get; set; }
@@ -168,7 +168,7 @@ To see these attributes in action, let's modify the Employee class and see the r
 
 __Example 7: Modifying sample data__
 
-	```C#
+```C#
 	[Display(Description = "Employee's first name.", GroupName = "Personal Information")]
 	public string FirstName { get; set; }
 	[Display(Description = "Employee's last name.", GroupName = "Personal Information")]

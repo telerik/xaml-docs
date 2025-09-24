@@ -36,8 +36,6 @@ __Example 2: Define chart's axes__
 	</telerik:RadCartesianChart>
 ```
 
-
-
 Now we have a chart with two axes but no data. In order to visualize data we will need to have some visualization for it. The presentation of the data itself is achieved by declaring chart series inside our chart and filling these series with data points. Each chart series visualizes its data point collection in a different way. RadChart supports a few series out of the box the simplest of which is the line series. See __Example 3__.        
 
 __Example 3: Define LineSeries__
@@ -124,7 +122,7 @@ __Example 5: Declare a chart in code-behind__
 		line.DataPoints.Add(New CategoricalDataPoint() With {.Value = 50})
 		chart.Series.Add(line)
 		Me.LayoutRoot.Children.Add(chart)
-	```
+```
 
 This is all we need - a chart object with axes specifically chosen to provide an intuitive coordinate system. Then we add a series object to visualize our set of data points and finally we fill the series with data. Check __Figure 1__.
 
@@ -171,5 +169,5 @@ __Example 7: Stylize the grid lines__
  * [Introduction] ({%slug radchartview-introduction%})
  * [Create Data-Bound Chart]({%slug radchartview-series-databinding%})
  * [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%})
- {% if site.site_name == 'WPF' %}* [Binding to a DataTable] ({%slug radchartview-populating-with-data-binding-to-data-table%}){% endif %}
+ * [Binding to a DataTable] ({%slug radchartview-populating-with-data-binding-to-data-table%})
  * [Binding the Color of Series Items] ({%slug radchartview-populating-with-data-binding-the-color-of-series-items%})

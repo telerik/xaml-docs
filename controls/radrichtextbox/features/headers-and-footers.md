@@ -37,8 +37,7 @@ The following example demonstrates how you can create a Header.
 
 __Create Header__
 ```C#
-	Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument represents the content of a Header, 
-	                                                                                 //typically contains a few paragraphs
+	Header header = new Header() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument represents the content of a Header, typically contains a few paragraphs
 ```
 
 When it comes to using a Header created in this manner, this depends on the state of the document - if it has been measured or not.
@@ -72,7 +71,6 @@ Setting the Footers can be done in the same way. Here is the respective code for
 
 	__Create Footer__
 	```C#
-
 		Footer footer = new Footer() { Body = radDocument, IsLinkedToPrevious = false }; //radDocument is an instance of RadDocument, representing the content of the footer.
 	```
 

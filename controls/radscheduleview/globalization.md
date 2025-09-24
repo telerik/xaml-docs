@@ -10,7 +10,7 @@ position: 7
 
 # Globalization
 
-As of **R2 2017** RadScheduleView supports the following .NET Framework calendar implementations:
+RadScheduleView supports the following .NET Framework calendar implementations:
 
 * **ChineseLunisolarCalendar**, which represents the **Chinese lunisolar** calendar.
 
@@ -44,18 +44,18 @@ You can set the default calendar as demonstrated in **Example 1**.
 
 __Example 1: Setting the default calendar__
 
-	```C#
-		CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-        Thread.CurrentThread.CurrentCulture = arSA;
-        Thread.CurrentThread.CurrentUICulture = arSA;
-        arSA.DateTimeFormat.Calendar = new HijriCalendar();
-	```
+```C#
+	CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
+	Thread.CurrentThread.CurrentCulture = arSA;
+	Thread.CurrentThread.CurrentUICulture = arSA;
+	arSA.DateTimeFormat.Calendar = new HijriCalendar();
+```
 ```VB.NET
-		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
-		Thread.CurrentThread.CurrentCulture = arSA
-		Thread.CurrentThread.CurrentUICulture = arSA
-		arSA.DateTimeFormat.Calendar = New HijriCalendar()
-	```
+	Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
+	Thread.CurrentThread.CurrentCulture = arSA
+	Thread.CurrentThread.CurrentUICulture = arSA
+	arSA.DateTimeFormat.Calendar = New HijriCalendar()
+```
 
 **Figure 1** demonstrates the final result:
 

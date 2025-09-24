@@ -31,14 +31,12 @@ How to close RadRadialMenu on a click outside the element.
 ## Solution
 
 1. Subscribe to the MouseLeftButtonDown event of the MainWindow.
-
 	
 	```C#
 		this.MouseLeftButtonDown += MainWindow_MouseLeftButtonDown;
 	```
 	
 2. Execute the RadialMenuCommands.Hide command in the MouseLeftButtonDown event handler.
-
 	
 	```C#
 		private void MainWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -46,7 +44,6 @@ How to close RadRadialMenu on a click outside the element.
 			RadialMenuCommands.Hide.Execute(null, null);
 		}
 	```
-
 
 ## See Also  
 * [Getting Started]({%slug radradialmenu-getting-started%})

@@ -11,12 +11,10 @@ position: 9
 # Setting a Theme on MS Controls
 
 The __Telerik themes__ are designed to work mainly with our controls and some native {{ site.framework_name }} controls. Our theming mechanism cannot cover the full control list included in {{ site.framework_name }}.
-	
 
 ## Native controls supported by the Telerik theming mechanism
 
 Below is the full control list of native {{ site.framework_name }} controls supported by the Telerik theming mechanism:
-		
 
 * System.Windows.Button
 
@@ -48,10 +46,7 @@ For all of those controls you may __specify a Theme for them__ as you may for an
 >Before proceeding with this tutorial, please check the [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%}) topic.
 		  
 
-If you want to style those native controls based on the current application theme using [Implicit Styles and NoXaml Binaries]({%slug styling-apperance-implicit-styles-overview%}), you should also merge the __System.Windows.xaml__ resource dictionary. For example:
-		
-
-#### __XAML__
+If you want to style those native controls based on the current application theme using [Implicit Styles and NoXaml Binaries]({%slug styling-apperance-implicit-styles-overview%}), you should also merge the __System.Windows.xaml__ resource dictionary. 
 
 ```XAML
 	<Application.Resources>
@@ -62,7 +57,7 @@ If you want to style those native controls based on the current application them
 	    </ResourceDictionary.MergedDictionaries>
 	  </ResourceDictionary>
 	</Application.Resources>
-	```
+```
 
 > If you want to customize the style of the native controls and keep the Telerik theming you should base your custom styles on the default style that the theme provides as explained in the [Styling the Controls article]({%slug implicit-styles-styling-the-controls%}). For example, the x:Key of the TextBox style is __TextBoxStyle__.
 

@@ -47,7 +47,7 @@ So, for example, let us decide on defining a Description for the Background prop
 
 __Example 1: AutoGeneratingPropertyDefinition event__
 
-	```C#
+```C#
 	private void PropertyGrid1_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    if (e.PropertyDefinition.DisplayName == "Background")

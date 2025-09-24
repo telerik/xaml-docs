@@ -59,7 +59,7 @@ To change the theme using the implicit styles mechanism you will need to make fe
 		};
 		window.Show();
 	```
-```VB.NET
+	```VB.NET
 		Dim newWindow As New RadWindow() With {
 			.Width = 300,
 			.Height = 300
@@ -119,7 +119,7 @@ To change the theme via the StyleManager you will need to make few steps.
 		
 		window.Show();
 	```
-```VB.NET
+	```VB.NET
 		Dim window As New RadWindow() With {
 			.Width = 300,
 			.Height = 300
@@ -134,7 +134,7 @@ To change the theme via the StyleManager you will need to make few steps.
 		StyleManager.ApplicationTheme = new Window8Theme();
 		InitializeComponent();
 	```
-```VB.NET		
+	```VB.NET		
 		StyleManager.ApplicationTheme = New Window8Theme()
 		InitializeComponent()
 	```

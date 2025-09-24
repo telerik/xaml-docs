@@ -22,7 +22,7 @@ For the means of illustrating the separate mode values, the following types will
 
 __Example 1: Preparing sample data__
 
-	```C#
+```C#
 	public class Ellipse
 	{
 	    public Color FillColor { get; set; }
@@ -104,7 +104,7 @@ __Example 1: Preparing sample data__
 
 __Example 2: Defining RadPropertyGrid__
 
-	```XAML
+```XAML
 	<Grid>
 	    <Grid.Resources>
 	        <local:ViewModel x:Key="ViewModel" />
@@ -149,18 +149,18 @@ In this case, only the **Center** and **FillColor** properties which are common 
 
 ## PropertySet Property
 
-As of **R3 2017**, RadPropertyGrid exposes a **PropertySet** property of type PropertySet which is a basic implementation of the **DynamicObject** class. Thus, you can access and modify each of the properties of the set through its indexer.
+RadPropertyGrid exposes a **PropertySet** property of type PropertySet which is a basic implementation of the **DynamicObject** class. Thus, you can access and modify each of the properties of the set through its indexer.
 
 > More information about the DynamicObject class can be found in [this MSDN article](https://msdn.microsoft.com/en-us/library/system.dynamic.dynamicobject).
 
 __Example 3: Update PropertySet value__
 
-	```C#
-		this.RadPropertyGrid.PropertySet["FillColor"] = Colors.Blue;
-	```
+```C#
+	this.RadPropertyGrid.PropertySet["FillColor"] = Colors.Blue;
+```
 ```VB.NET
-		Me.RadPropertyGrid.PropertySet("FillColor") = Colors.Blue
-	```
+	Me.RadPropertyGrid.PropertySet("FillColor") = Colors.Blue
+```
 
 The control also provides an **UpdatePropertySetValue** which accepts three arguments:
 
@@ -172,12 +172,12 @@ The control also provides an **UpdatePropertySetValue** which accepts three argu
 
 __Example 4: Update PropertySet value without notifying underlying models__
 
-	```C#
-		this.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, false);
-	```
+```C#
+	this.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, false);
+```
 ```VB.NET
-		Me.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, False)
-	```
+	Me.RadPropertyGrid.UpdatePropertySetValue("FillColor", Colors.Blue, False)
+```
 
 >You can check the __Validating Property Sets__ section from the control's [Validation]({%slug radpropertygrid-features-validation%}) article for information on how to apply validation for property sets.
 
@@ -189,7 +189,7 @@ When RadPropertyGrid's PropertySetMode is set to Union or Intersection, the Data
 
 __Example 5: Defining editor template__
 
-	```XAML
+```XAML
 	<Grid x:Name="LayoutRoot">
 	    <Grid.Resources>
 	        <local:ViewModel x:Key="vm" />
@@ -207,7 +207,7 @@ __Example 5: Defining editor template__
 
 __Example 6: Setting EditorTemplate of a PropertyDefinition__
 
-	```C#
+```C#
 	private void RadPropertyGrid_AutoGeneratingPropertyDefinition(object sender, Telerik.Windows.Controls.Data.PropertyGrid.AutoGeneratingPropertyDefinitionEventArgs e)
 	{
 	    if (e.PropertyDefinition.DisplayName == "CornersCount")
@@ -226,7 +226,7 @@ __Example 6: Setting EditorTemplate of a PropertyDefinition__
 	
 __Example 7: Defining IValueConverter__
 
-	```C#
+```C#
 	public class MyConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -261,12 +261,11 @@ By default, __RadPropertyGrid__ will create an object instance for a property of
 
 __Example 8: Setting the ShouldAddNullForNonMatchingValues property to True__
 
-	```XAML
-
-	      <telerik:RadPropertyGrid DataContext="{StaticResource vm}"
-	                                 Item="{Binding Shapes}"
-	                                 PropertySetMode="Union"
-	                                 telerik:PropertySet.ShouldAddNullForNonMatchingValues="True"/>
+```XAML
+	  <telerik:RadPropertyGrid DataContext="{StaticResource vm}"
+								 Item="{Binding Shapes}"
+								 PropertySetMode="Union"
+								 telerik:PropertySet.ShouldAddNullForNonMatchingValues="True"/>
 ```
 
 ## See Also

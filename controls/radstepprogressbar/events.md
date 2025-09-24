@@ -12,7 +12,6 @@ position: 3
 This article lists the events specific for the __RadStepProgressBar__ control.
 
 * __StepClicked__: Occurs when a __RadStepProgressBarItem__ is clicked. The event arguments are of type __StepClickedEventArgs__ and provide information about the clicked step, the new progress and whether the selection should be canceled or not.
-
 	
 	```C#
 		private void RadStepProgressBar_StepClicked(object sender, Telerik.Windows.Controls.StepProgressBar.StepClickedEventArgs e)
@@ -24,7 +23,6 @@ This article lists the events specific for the __RadStepProgressBar__ control.
 	```
 
 * __SelectionChanged__: Occurs after a __RadStepProgressBarItem__ is clicked (if the selection is not canceled) or after updating the SelectedIndex property of the control. The event arguments are of type __StepSelectionChangedEventArgs__ and provide information about the new progress and the clicked step.
-
 	
 	```C#
 		private void RadStepProgressBar_SelectionChanged(object sender, Telerik.Windows.Controls.StepProgressBar.StepSelectionChangedEventArgs e)

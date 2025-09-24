@@ -22,8 +22,6 @@ You can define the __LocalDataSourceProvider__	as a *StaticResource* in your XAM
 
 * Defined as a *StaticResource* and used in __RadPivotGrid__ and __RadPivotFieldList__:
 
-#### __XAML__
-
 ```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
@@ -44,16 +42,11 @@ You can define the __LocalDataSourceProvider__	as a *StaticResource* in your XAM
 
 You can also create an object of type __LocalDataSourceProvider__ in the background and after that, you can use it for your controls:		
 
-#### __C#__
-
 ```C#
 	LocalDataSourceProvider localDataProvider = new LocalDataSourceProvider();
 	this.radPivotGrid1.DataProvider = localDataProvider;
 	this.radPivotFieldList1.DataProvider = localDataProvider;
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim localDataProvider As New LocalDataSourceProvider()
 	Me.radPivotGrid1.DataProvider = localDataProvider
@@ -64,17 +57,12 @@ You can also create an object of type __LocalDataSourceProvider__ in the backgro
 
 The __LocalDataSourceProvider__ has an *ItemsSource* and it is mandatory to set it if you want to display any data. *ItemsSource* is a dependency property and you are able to use binding for it, but we recommend setting it in code:    		
 
-#### __C#__
-
 ```C#
 	LocalDataSourceProvider localDataProvider = new LocalDataSourceProvider();
 	localDataProvider.ItemsSource = MyCollection;
 	this.radPivotGrid1.DataProvider = localDataProvider;
 	this.radPivotFieldList1.DataProvider = localDataProvider;
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim localDataProvider As New LocalDataSourceProvider()
 	localDataProvider.ItemsSource = MyCollection
@@ -92,16 +80,12 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 
 * __RowGroupDescription__ - The data added to this description will be shown as row headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as PropertyGroupDescription, DateTimeGroupDescription, DoubleGroupDescription or you can create custom implementation of PropertyGroupDescriptionBase class. Here's how to define the __RowGroupDescriptions__ in your application:   				
 
-#### __XAML__
-
 ```XAML
 	<pivot:LocalDataSourceProvider.RowGroupDescriptions>
 	    <pivot:PropertyGroupDescription PropertyName="Name" />
 	    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
 	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
 ```
-
-#### __C#__
 
 ```C#
 	Telerik.Pivot.Core.PropertyGroupDescription propertyGroupDescription = new Telerik.Pivot.Core.PropertyGroupDescription();
@@ -116,9 +100,6 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 	    localDataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription);
 	};
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim propertyGroupDescription As New Telerik.Pivot.Core.PropertyGroupDescription()
 	propertyGroupDescription.PropertyName = "Name"
@@ -133,24 +114,17 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 
 * __ColumnGroupDescription__ - The data added to this description will be shown as column headers in __RadPivotGrid__ and __RadPivotFieldList__. The properties can be defined as PropertyGroupDescription, DateTimeGroupDescription, DoubleGroupDescription or you can create a custom implementation of the PropertyGroupDescriptionBase class. Here's how to define the __ColumnGroupDescriptions__ in your application:    				
 
-#### __XAML__
-
 ```XAML
 	<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
 	    <pivot:DoubleGroupDescription PropertyName="Price"/>
 	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
 ```
 
-#### __C#__
-
 ```C#
 	DoubleGroupDescription doubleGroupDescription = new DoubleGroupDescription();
 	doubleGroupDescription.PropertyName = "Price";
 	localDataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription);
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim doubleGroupDescription As New DoubleGroupDescription()
 	doubleGroupDescription.PropertyName = "Price"
@@ -158,8 +132,6 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 ```
 
 * __AggregateDescriptions__ - The data added to this description will be aggregated and included in a __RadPivotGrid__ as cells. The properties can be defined as PropertyAggregateDescription or you can create a custom implementation of the PropertyAggregateDescriptionBase class. 
-	
-#### __XAML__
 
 ```XAML
 	<pivot:LocalDataSourceProvider.AggregateDescriptions>
@@ -167,8 +139,6 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 	    <pivot:PropertyAggregateDescription PropertyName="Quantity"/>
 	</pivot:LocalDataSourceProvider.AggregateDescriptions>
 ```
-
-#### __C#__
 
 ```C#
 	PropertyAggregateDescription propertyAggregateDescription1 = new PropertyAggregateDescription();
@@ -185,9 +155,6 @@ The __LocalDataSourceProvider__ is using four different collections for the data
 	    localDataProvider.AggregateDescriptions.Add(propertyAggregateDescription2);
 	};
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Dim propertyAggregateDescription1 As New PropertyAggregateDescription()
 	propertyAggregateDescription1.PropertyName = "Price"
@@ -207,8 +174,6 @@ With the R2 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %
 
 Here's how to define the __AggregateDescriptions__ in your application with a set __IgnoreNullValues__ property:
 	
-#### __XAML__
-
 ```XAML
 	<pivot:LocalDataSourceProvider.AggregateDescriptions>
 	    <pivot:PropertyAggregateDescription PropertyName="Price" StringFormat="C" AggregateFunction="Average" IgnoreNullValues="true"/>
@@ -217,8 +182,6 @@ Here's how to define the __AggregateDescriptions__ in your application with a se
 ```
 
 In order to set the __IgnoreNullValues__ to __true__ for all __PropertyAggregateDescriptions__ that you want to add in the __LocalDataSourceProvider__, you should handle the __LocalDataSourceProvider.PrepareDescriptionForField__ event and set __IgnoreNullValues__ in the handler:
-
-#### __C#__
 
 ```C#
 	private void LocalDataSourceProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
@@ -230,9 +193,6 @@ In order to set the __IgnoreNullValues__ to __true__ for all __PropertyAggregate
 		}
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Private Sub LocalDataSourceProvider_PrepareDescriptionForField(sender As Object, e As PrepareDescriptionForFieldEventArgs)
 		Dim description = TryCast(e.Description, PropertyAggregateDescription)
@@ -244,8 +204,6 @@ In order to set the __IgnoreNullValues__ to __true__ for all __PropertyAggregate
 
 * __FilterDescriptions__ - The data added to this description will be filtered and after that, included in __RadPivotGrid__. The properties can be defined as PropertyFilterDescription or you can create a custom implementation of the PropertyFilterDescriptionBase class.    				
 
-#### __XAML__
-
 ```XAML
 	<pivot:LocalDataSourceProvider.FilterDescriptions>
 	    <pivot:PropertyFilterDescription PropertyName="Name">
@@ -256,8 +214,6 @@ In order to set the __IgnoreNullValues__ to __true__ for all __PropertyAggregate
 	</pivot:LocalDataSourceProvider.FilterDescriptions>
 ```
 
-#### __C#__
-
 ```C#
 	TextCondition txtCondition = new TextCondition();
 	txtCondition.Comparison = TextComparison.BeginsWith;
@@ -267,12 +223,7 @@ In order to set the __IgnoreNullValues__ to __true__ for all __PropertyAggregate
 	filterDescription.PropertyName = "Name";
 	filterDescription.Condition = txtCondition;
 	localDataProvider.FilterDescriptions.Add(filterDescription);
-	```
-
-
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Dim txtCondition As New TextCondition()
 	txtCondition.Comparison = TextComparison.BeginsWith

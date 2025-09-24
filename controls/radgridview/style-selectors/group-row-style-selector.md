@@ -18,7 +18,7 @@ To achieve this, first create a new class that inherits from the **StyleSelector
 
 __Example 1: The GroupRowStyleSelector class__
 
-	```C#
+```C#
 	public class GroupRowStyleSelector : StyleSelector
 	{
 	    public override Style SelectStyle(object item, DependencyObject container)
@@ -81,7 +81,7 @@ In the XAML file, define the style selector as a resource and set the properties
 
 __Example 2: Setting the BigGroupStyle and SmallGroupStyle__
 
-	```XAML
+```XAML
 	<Window.Resources>
 	    <my:GroupRowStyleSelector x:Key="GroupRowStyleSelector">
 	        <my:GroupRowStyleSelector.BigGroupStyle>
@@ -106,7 +106,7 @@ Finally, set the **GroupRowStyleSelector** property:
 
 __Example 3: Setting the GroupRowStyleSelector property__
 
-	```XAML
+```XAML
 	<telerik:RadGridView GroupRowStyleSelector="{StaticResource GroupRowStyleSelector}" />
 ```
 

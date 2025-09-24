@@ -64,7 +64,7 @@ __Example 1: Create ViewModels__
             tabItem.Dispose();
         }
     }
-	```
+```
 ```VB.NET
     Public Class MainViewModel
         Public Sub New()
@@ -100,9 +100,7 @@ __Example 1: Create ViewModels__
             tabItem.Dispose()
         End Sub
     End Class
-	```
-
-
+```
 
 * After that we can go ahead and create a __MainViewModel__ to define the collection of *TabViewModel* items which we will use to populate the __RadTabControl.ItemsSource__. Please note that as the add/close logic will change the __RadTabControl.ItemsSource__ collection, it's best to implement the commands execution methods in this ViewModel as well:
 			
@@ -188,7 +186,7 @@ __Example 2: Creating TabViewModel__
             }
         }
     }
-	```
+```
 ```VB.NET
     Public Class TabViewModel
         Implements INotifyPropertyChanged
@@ -265,13 +263,13 @@ __Example 2: Creating TabViewModel__
             RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
         End Sub
     End Class
-	```
+```
 
 
 * Now that our ViewModels are all in place, we can proceed with the definition of our view. In order to take full advantage of the implemented commands we have to bind the Add/Close __Buttons Command__ properties to the appropriate __DelegateCommands__ definitions.
 			
 
-* Here is how the __Resources__ section of our view looks like: {% if site.site_name == 'WPF' %}
+* Here is how the __Resources__ section of our view looks like:
 
 __Example 3: Binding buttons Command property__
 
@@ -382,174 +380,7 @@ __Example 3: Binding buttons Command property__
                 Value="{Binding IsSelected, Mode=TwoWay}" />
       </Style>
 	
-	```
-
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
-__Example 3: Binding buttons Command property__
-
-```XAML
-    <Style x:Key="CloseButton" TargetType="Button">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Grid Width="14"
-                          Height="14"
-                          Background="Transparent">
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal" />
-                                <VisualState x:Name="MouseOver">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusEllipse" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Visible</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="FocusEllipse"
-                                                        Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
-                                                        To="#FFDC3030" />
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="path"
-                                                        Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
-                                                        To="White" />
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Pressed">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusEllipse" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Visible</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="FocusEllipse"
-                                                        Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
-                                                        To="Black" />
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="path"
-                                                        Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
-                                                        To="White" />
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Disabled" />
-                            </VisualStateGroup>
-                            <VisualStateGroup x:Name="FocusStates">
-                                <VisualState x:Name="Focused" />
-                                <VisualState x:Name="Unfocused" />
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
-                        <Ellipse x:Name="FocusEllipse"
-                                 Fill="#FFF13535"
-                                 Visibility="Collapsed" />
-                        <Path x:Name="path"
-                              HorizontalAlignment="Center"
-                              VerticalAlignment="Center"
-                              Data="{TemplateBinding Content}"
-                              Stroke="#FF898888"
-                              StrokeThickness="1" />
-                    </Grid>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <Style x:Key="AddButton" TargetType="Button">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Grid Width="14"
-                          Height="14"
-                          Background="Transparent">
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal" />
-                                <VisualState x:Name="MouseOver">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusEllipse" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Visible</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="FocusEllipse"
-                                                        Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
-                                                        To="#FF1CC81F" />
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="path"
-                                                        Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
-                                                        To="White" />
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Pressed">
-                                    <Storyboard>
-                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusEllipse" Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            <DiscreteObjectKeyFrame KeyTime="0">
-                                                <DiscreteObjectKeyFrame.Value>
-                                                    <Visibility>Visible</Visibility>
-                                                </DiscreteObjectKeyFrame.Value>
-                                            </DiscreteObjectKeyFrame>
-                                        </ObjectAnimationUsingKeyFrames>
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="FocusEllipse"
-                                                        Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
-                                                        To="Black" />
-                                        <ColorAnimation Duration="0"
-                                                        Storyboard.TargetName="path"
-                                                        Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
-                                                        To="White" />
-                                    </Storyboard>
-                                </VisualState>
-                                <VisualState x:Name="Disabled" />
-                            </VisualStateGroup>
-                            <VisualStateGroup x:Name="FocusStates">
-                                <VisualState x:Name="Focused" />
-                                <VisualState x:Name="Unfocused" />
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
-                        <Ellipse x:Name="FocusEllipse"
-                                 Fill="#FFF13535"
-                                 Visibility="Collapsed" />
-                        <Path x:Name="path"
-                              HorizontalAlignment="Center"
-                              VerticalAlignment="Center"
-                              Data="{TemplateBinding Content}"
-                              Stroke="#FF898888"
-                              StrokeThickness="1" />
-                    </Grid>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <DataTemplate x:Key="TabItemTemplate">
-        <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
-            <TextBlock Text="{Binding Header}" />
-            <Button Margin="10,0,0,0"
-                    Command="{Binding RemoveItemCommand}"
-                    Content="M0,0 L6,6 M6, 0 L0,6"
-                    Style="{StaticResource CloseButton}"
-                    ToolTipService.ToolTip="Remove item" />
-            <Button Command="{Binding AddItemCommand}"
-                    Content="M4,0 L4,8 M0, 4 L8,4"
-                    Style="{StaticResource AddButton}"
-                    ToolTipService.ToolTip="Add new item" />
-        </StackPanel>
-    </DataTemplate>
-    <DataTemplate x:Key="ContentTemplate">
-        <Grid />
-    </DataTemplate>
-    <Style TargetType="telerik:RadTabItem">
-        <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
-    </Style>
-	```
-
-{% endif %}
+```
 
 * And here is the __RadTabControl__ definition:			
 
@@ -563,7 +394,7 @@ __Example 4: Defining RadTabControl__
                          ItemTemplate="{StaticResource TabItemTemplate}"
                          ItemsSource="{Binding Tabs}"
                          OverflowMode="Wrap" />
-	```
+```
 
 
 >Please note that in the above sample we have defined custom styles for the __Button__ controls which you can remove or modify accordignly to your requirements.

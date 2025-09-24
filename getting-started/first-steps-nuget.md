@@ -16,15 +16,15 @@ This article describes the lifecycle of a Telerik application when using NuGet p
 
 To use the NuGet packages, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
 
-![{{ site.framework_name }} Create WPF Application](images/msi-or-zip-setup-lifecyle-0.png)
+![{{ site.framework_name }} Create WPF Application](installation/images/msi-or-zip-setup-lifecyle-0.png)
 
 Set a __Project name__ and __Location__ for the project. For this example, we will use `TelerikWPFApplication` for the project's name.
 
-![{{ site.framework_name }} Setup Project Name and Location](images/msi-or-zip-setup-lifecyle-1.png)
+![{{ site.framework_name }} Setup Project Name and Location](installation/images/msi-or-zip-setup-lifecyle-1.png)
 
 This will create an empty WPF project where you can install the NuGet packages.
 
-![{{ site.framework_name }} Empty Project Visual Studio](images/msi-or-zip-setup-lifecyle-2.png)
+![{{ site.framework_name }} Empty Project Visual Studio](installation/images/msi-or-zip-setup-lifecyle-2.png)
 
 ## Installing Nugets
 
@@ -68,7 +68,7 @@ __Example 1: Adding Telerik control in the UI__
 	</Window>
 ```
 
-![{{ site.framework_name }} Project with Added Tab Control](images/msi-or-zip-setup-lifecyle-6.png)
+![{{ site.framework_name }} Project with Added Tab Control](installation/images/msi-or-zip-setup-lifecyle-6.png)
 
 ## Deploying the Application
 
@@ -86,13 +86,13 @@ To upgrade the project, open the Nuget package manager in Visual Studio and repe
 
 At this point, double-check if all the Telerik assemblies have the same version (for example, 2020.3.102) and if all or of the same type ([Xaml or NoXaml]({%slug xaml-vs-noxaml%})). To check this, right-click the .dll file (for example, Telerik.Windows.Controls.dll) and choose the __Properties__ option. 
 
-![{{ site.framework_name }} Telerik Assembly Properties Menu Option](images/msi-or-zip-setup-lifecyle-8.png)
-![{{ site.framework_name }} Telerik Assembly No Xaml File Description](images/msi-or-zip-setup-lifecyle-9.png)
+![{{ site.framework_name }} Telerik Assembly Properties Menu Option](installation/images/msi-or-zip-setup-lifecyle-8.png)
+![{{ site.framework_name }} Telerik Assembly No Xaml File Description](installation/images/msi-or-zip-setup-lifecyle-9.png)
 
 Delete the __bin__ and __obj__ folders of the projects that reference Telerik dlls in the solution and then __Clean__, and __Rebuild__ them. This will ensure that no older Telerik dlls are cached and used during the compilation.
 
-![{{ site.framework_name }} Delete bin and obj Folders](images/msi-or-zip-setup-lifecyle-7.png)
-![{{ site.framework_name }} Clean and Rebuild Solution](images/msi-or-zip-setup-lifecyle-10.png)
+![{{ site.framework_name }} Delete bin and obj Folders](installation/images/msi-or-zip-setup-lifecyle-7.png)
+![{{ site.framework_name }} Clean and Rebuild Solution](installation/images/msi-or-zip-setup-lifecyle-10.png)
 
 ## See Also  
 * [System Requirements]({%slug installation-system-requirements-wpf%})

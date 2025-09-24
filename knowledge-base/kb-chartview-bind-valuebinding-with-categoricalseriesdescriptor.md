@@ -37,18 +37,18 @@ As the ValuePath property cannot be data bound what we need do instead is use th
 	
 	```C#
 		public class StringToValuePathConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            var valuePath = value.ToString();
-            return new PropertyNameDataPointBinding(valuePath);
-        }
+		{
+			public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+			{
+				var valuePath = value.ToString();
+				return new PropertyNameDataPointBinding(valuePath);
+			}
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-    }
+			public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+			{
+				throw new NotImplementedException();
+			}
+		}
 	```
 	
 2.  In XAML use a ValueBinding property of a series with an IValueConverter. To do that  use the Style property of the CategoricalSeriesDescriptor like so:

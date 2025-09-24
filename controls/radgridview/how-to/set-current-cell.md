@@ -34,7 +34,9 @@ __Example 1: Setting the current cell via an item and a column__
 
 **Figure 1** demonstrates that the current cell is set and at this point if you hit **F2** that cell will go in edit mode.
 
-{% figure 1, "RadGridView with changed current cell", "gridview_set_current_cell.png" %}
+__RadGridView with changed current cell__
+
+![](images/gridview_set_current_cell.png)
 
 ## See Also
 

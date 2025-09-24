@@ -32,8 +32,6 @@ There are two ways to reference the needed xaml files:
 
 	Then merge the xaml files in the App.xaml like this:
 
-	#### __XAML__
-
 	```XAML
 		<Application.Resources>
 		    <ResourceDictionary>
@@ -53,8 +51,6 @@ There are two ways to reference the needed xaml files:
 	![ganttview setting theme 2](images/ganttview_setting_theme_2.png)
 	
 	Then merge the xaml files in the App.xaml like this:
-
-	#### __XAML__
 
 	```XAML
 		<Application.Resources>

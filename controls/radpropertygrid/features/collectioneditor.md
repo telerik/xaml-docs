@@ -14,7 +14,7 @@ __CollectionEditor__ and __CollectionEditorPicker__ are editor controls that pro
 
 __Example 1: Defining CollectionEditor__
 
-	```XAML
+```XAML
 	<Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <telerik:CollectionEditor Source="{Binding Players}" 
 	                          Header="Players" />

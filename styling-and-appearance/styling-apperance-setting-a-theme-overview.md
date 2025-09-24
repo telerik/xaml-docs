@@ -41,8 +41,8 @@ To change the theme you will need to take the following few steps.
 	There are two options to get the .xaml files.	
 	
 	<ul>
-		<li>{% mdslug %}[Reference the theme dll](#reference-theme-dll){% endmdslug %} from the <em>/Binaries.NoXaml/</em> folder - for example Telerik.Windows.Themes.Office_Black.dll. The theme dll contains ResourceDictionary files with the styles for the controls.</li>
-		<li>{% mdslug %}[Copy the XAML files in a dedicated folder in your application](#copy-the-xaml-files-in-a-dedicated-folder-in-your-application){% endmdslug %}. You can get the files from the <em>/Telerik UI for {{ site.framework_name }} installation folder/Themes.Implicit/</em> folder.</li>
+		<li>[Reference the theme dll](#reference-theme-dll) from the <em>/Binaries.NoXaml/</em> folder - for example Telerik.Windows.Themes.Office_Black.dll. The theme dll contains ResourceDictionary files with the styles for the controls.</li>
+		<li>[Copy the XAML files in a dedicated folder in your application](#copy-the-xaml-files-in-a-dedicated-folder-in-your-application). You can get the files from the <em>/Telerik UI for {{ site.framework_name }} installation folder/Themes.Implicit/</em> folder.</li>
 	</ul>
 	
 3. __Merge the required .xaml files__ in the App.xaml file. 
@@ -97,7 +97,8 @@ The default styles and resources for each theme are shipped also in the **/Teler
 #### Figure 1: Copy the needed XAML files in a separate folder in your application
 ![implicit styles 3](images/implicit-styles-themes-folder.PNG)
 
-#### [XAML] The MergedDictionaries in your application resources:
+__The MergedDictionaries in your application resources__
+
 ```XAML
 	<Application.Resources>
 		<ResourceDictionary>
@@ -128,8 +129,6 @@ To change the theme via the StyleManager you will need to take the following few
 
 1. __Reference the Xaml version__ of the Telerik UI for {{ site.framework_name }} dlls. They can be found in the */Telerik UI for {{ site.framework_name }} installation folder/Binaries/* folder.
 
-{% if site.site_name == 'Silverlight' %}2. __Add a reference__ to the dll with the theme (example: Telerik.Windows.Themes.Office_Black.dll).{% endif %}
-
 3. __Set the StyleManager.Theme attached property__ on the control you want to theme. Or set the __StyleManager.ApplicationTheme__ static property before calling the **InitializeComponent** method of the view or the App.xaml.cs file. This will set the theme globally for all Telerik controls.
 
    	__Setting the theme on a control level in XAML__
@@ -141,7 +140,7 @@ To change the theme via the StyleManager you will need to take the following few
 	```C#		
 		StyleManager.SetTheme(radControlInstance, new Office2016Theme());
 	```
-```VB.NET	
+	```VB.NET	
 		StyleManager.SetTheme(radControlInstance, New Office2016Theme())
 	```
 	
@@ -150,7 +149,7 @@ To change the theme via the StyleManager you will need to take the following few
 		StyleManager.ApplicationTheme = new Office2016Theme();
 		InitializeComponent();
 	```
-```VB.NET		
+	```VB.NET		
 		StyleManager.ApplicationTheme = New Office2016Theme()
 		InitializeComponent()
 	```
@@ -163,13 +162,12 @@ Read more about this approach in the {% if site.site_name == 'Silverlight' %}[St
 
 Some of the Telerik themes support palettes, which contains resources for the associated theme. Some of the palettes have different color variations, which can be changed with the **LoadPreset** method.
 
-#### [C#] Changing the color variation of the theme  
+__Changing the color variation of the theme__
+
 ```C#
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark);
 ```
-
-#### [VB.NET] Changing the color variation of the theme  
 ```VB.NET
 	//default color variation
 	GreenPalette.LoadPreset(GreenPalette.ColorVariation.Dark)
@@ -187,4 +185,4 @@ All Themes are specifically designed to style **Telerik** controls. However, the
 * [Switching Custom Styles with Themes at Runtime]({%slug styling-apperance-custom-styles-themes-runtime%})
 * [Switching Themes at Design-Time]({%slug styling-apperance-swiching-themes-design-time%})
 * [Xaml vs. NoXaml]({%slug xaml-vs-noxaml%})
-{% if site.site_name == 'WPF' %}* [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%}){% endif %}
+* [Controls Dependencies]({%slug installation-installing-controls-dependencies-wpf%})

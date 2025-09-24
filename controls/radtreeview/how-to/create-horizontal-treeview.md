@@ -14,8 +14,6 @@ This tutorial will show you how to create a __RadTreeView__ with horizontal orie
 
 Here is an ordinary treeview declaration: 
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView>
 	    <telerik:RadTreeViewItem Header="Sport Categories">
@@ -33,15 +31,13 @@ Here is an ordinary treeview declaration:
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	```
+```
 
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_HowToCreateHorizontalTreeView_001.PNG)
 
 In order to create a horizontal treeview you need to set the __ItemContainerStyle__ property of the __RadTreeView__ and the __RadTreeViewItem__.
 
 Declare the following style in the resources of your application. It will set the __ItemsPanel__ to a __StackPanel__ with __Horizontal__ orientation: 
-
-#### __XAML__
 
 ```XAML
 	<Style TargetType="telerik:RadTreeViewItem" x:Key="TreeViewItemStyle">
@@ -53,11 +49,9 @@ Declare the following style in the resources of your application. It will set th
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	```
+```
 
 Apply this style to the __ItemContainerStyle__ of the treeview and each treeview item. 
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTreeView ItemContainerStyle="{StaticResource TreeViewItemStyle}">

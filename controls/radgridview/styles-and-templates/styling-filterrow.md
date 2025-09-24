@@ -45,7 +45,7 @@ The __StringFilterEditor__ is nothing more than a __TextBox__ and a __ToggleButt
 
 __Example 1: Styling the StringFilterEditor__
 
-	```XAML
+```XAML
 	<Style TargetType="Editors:StringFilterEditor">
 	    <Setter Property="Template" Value="{StaticResource StringFilterEditorTemplate}"/>
 	    <Setter Property="IsTabStop" Value="False"/>
@@ -61,7 +61,7 @@ In order to change RadDropDownButton's (the funnel) visual appearance, you shoul
 
 __Example 2: Styling the FieldFilterControl__
 
-	```XAML
+```XAML
 	<Style TargetType="telerik:FieldFilterControl">
 	    <Setter Property="Template" Value="{StaticResource FieldFilterControlTemplate}"/>
 	    <Setter Property="Padding" Value="5"/>
@@ -76,7 +76,7 @@ Since the created editor will be inserted as the **Content** of __PART_FilterEdi
 
 __Example 3: Setting a background for the filtering row TextBox__
 
-	```C#
+```C#
 	private void clubsGrid_FieldFilterEditorCreated(object sender, EditorCreatedEventArgs e)
 	{
 	    if (e.Column.UniqueName == "StadiumCapacity")

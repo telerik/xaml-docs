@@ -23,36 +23,26 @@ Here are several small demos for __RadGridView__:
 
 * Get all grid rows:
 
-#### __C#__
 ```C#
-
 	var rows = RadGridView1.ChildrenOfType<GridViewRow>();
 ```
 
 * Get all grid cells:
 
-#### __C#__
 ```C#
-
 	var cells= RadGridView1.ChildrenOfType<GridViewCell>();
 ```
 
 * Get all grid header cells:
 
-#### __C#__
-
 ```C#
-
 	var headerCells = RadGridView1.ChildrenOfType<GridViewHeaderCell>();
 ```
 
 
 * Get (and show) new row:
 
-#### __C#__
-
 ```C#
-
 	var newRow = RadGridView1.ChildrenOfType<GridViewNewRow>().First();
 	newRow.Visibility = Visibility.Visible;
 ```
@@ -60,17 +50,12 @@ Here are several small demos for __RadGridView__:
 
 * Find the grid vertical scrollbar and scroll the grid to bottom:
 
-#### __C#__
-
 ```C#
-
 	var verticalScrollBar = RadGridView1.ChildrenOfType<ScrollBar>().Where(s=>s.Orientation == Orientation.Vertical).First();
 	verticalScrollBar.Value = verticalScrollBar.Maximum;
 ```
 
 * Select specific row(s):
-
-#### __C#__
 
 ```C#
 
@@ -80,7 +65,6 @@ Here are several small demos for __RadGridView__:
 
 * Change specific cell(s) content:
 
-#### __C#__
 
 ```C#
 
@@ -90,16 +74,14 @@ Here are several small demos for __RadGridView__:
 
 * Put specific cell in edit mode:
 
-#### __C#__
 
 ```C#
 	var cell = RadGridView1.ChildrenOfType<GridViewCell>().Where(c => c.Content.ToString() == "ALFKI").First();
 	cell.IsInEditMode = true;
-	```
+```
 
 * Get visible rows count on scroll or size change:
     
-#### __C#__
 
 ```C#
 
@@ -121,7 +103,6 @@ Here are several small demos for __RadGridView__:
 
 * Perform conditional row(s) formatting:
     
-#### __C#__
 
 ```C#
 
@@ -131,7 +112,6 @@ Here are several small demos for __RadGridView__:
 
 * Expand first row in case of hierarchy:
 
-#### __C#__
 
 ```C#
 
@@ -142,7 +122,6 @@ Here are several small demos for __RadGridView__:
 
 * Collapse first group header row:
 
-#### __C#__
 
 ```C#
 
@@ -152,7 +131,6 @@ Here are several small demos for __RadGridView__:
 
 * Modify background for all cells in specific column:   
 
-#### __C#__
 
 ```C#
 
@@ -162,7 +140,6 @@ Here are several small demos for __RadGridView__:
 
 * Increase header row Height:   
 
-#### __C#__
 
 ```C#
 	var headerRow = RadGridView1.ChildrenOfType<GridViewHeaderRow>().First();
@@ -171,7 +148,6 @@ Here are several small demos for __RadGridView__:
 
 * Check all CheckBox controls in specific column:
 
-#### __C#__
 
 ```C#
 

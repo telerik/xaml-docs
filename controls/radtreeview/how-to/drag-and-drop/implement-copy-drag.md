@@ -23,56 +23,6 @@ There are two treeviews populated with some hierarchical data. On the left side 
 
 >tip Both __RadTreeViews__ are data bound to a collection of business objects. For more information, read the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) topic.		  
 
-Here is the initial XAML: 
-
-{% if site.site_name == 'Silverlight' %}
-#### __XAML__
-
-```XAML
-	<Grid>
-	    <Grid.Resources>
-	        <sampleData:RadTreeViewSampleData x:Key="DataSource" />
-	        <sampleData:RadTreeViewSecondSampleData x:Key="SecondDataSource" />
-	
-	        <DataTemplate x:Key="Team">
-	            <TextBlock Text="{Binding Name}" />
-	        </DataTemplate>
-	        <telerik:HierarchicalDataTemplate x:Key="Division"
-	                                    ItemTemplate="{StaticResource Team}"
-	                                    ItemsSource="{Binding Teams}">
-	            <TextBlock Text="{Binding Name}" />
-	        </telerik:HierarchicalDataTemplate>
-	        <telerik:HierarchicalDataTemplate x:Key="League"
-	                                    ItemTemplate="{StaticResource Division}"
-	                                    ItemsSource="{Binding Divisions}">
-	            <TextBlock Text="{Binding Name}" />
-	        </telerik:HierarchicalDataTemplate>
-	    </Grid.Resources>
-	    <Grid.ColumnDefinitions>
-	        <ColumnDefinition />
-	        <ColumnDefinition />
-	    </Grid.ColumnDefinitions>
-	    <telerik:RadTreeView x:Name="xTreeView"
-	                            Margin="8"
-	                            IsDragDropEnabled="True"
-	                            ItemTemplate="{StaticResource League}"
-	                            ItemsSource="{Binding Source={StaticResource DataSource},
-	                                                Path=LeaguesDataSource}" />
-	    <telerik:RadTreeView x:Name="radTreeView2"
-	                            Grid.Column="1"
-	                            Margin="8"
-	                            IsDragDropEnabled="True"
-	                            ItemTemplate="{StaticResource League}"
-	                            ItemsSource="{Binding Source={StaticResource SecondDataSource},
-	                                                Path=DataSource}" />
-	</Grid>
-```
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-
 ```XAML
 	<Grid>
 	    <Grid.Resources>
@@ -113,20 +63,13 @@ Here is the initial XAML:
 	</Grid>
 ```
 
-{% endif %}
-
 In the current situation if you try to drag and drop from the left treeview to the right, the items will be moved (not copied). The same is valid if you try to drag and drop from the right treeview to the left. And in order to change that logic and implement a copy drag operation from the left to the right __RadTreeView__ you need to:
 
 * Attach a __DragDropManager DragOver__ event handler for the right __RadTreeView__:
 
-	#### __C#__
-
 	```C#
 		DragDropManager.AddDragOverHandler(radTreeView2, OnDragOver, true);
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 			DragDropManager.AddDragOverHandler(radTreeView2, OnDragOver, True)
 	```
@@ -134,8 +77,6 @@ In the current situation if you try to drag and drop from the left treeview to t
 	>tip __RadTreeView__ handles internally the __DragDropManager__ events and in order to invoke a custom handler, you need to explicitly specify that you're adding a handler that should be invoked even for already handled events. This is done through the last - __bool__ argument of the __DragDropManager.AddDragOverHandler__ extension method.			  
 
 * In the event handler you should use the following code:
-
-	#### __C#__
 
 	```C#
 		private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -147,9 +88,6 @@ In the current situation if you try to drag and drop from the left treeview to t
 			}
 		}
 	```
-		
-	#### __VB.NET__
-
 	```VB.NET
 			Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 				Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -164,14 +102,9 @@ Here is the final result:
 
 Now if you try to drag an item from the right __RadTreeView__ and drop it in the left tree, the item will be moved. This is due to the fact that we changed the __DropAction__ only while dragging over items of the right __RadTreeView__. If you need to implement a copy operation when dropping into the left __RadTreeView__, you'll have to attach an event handler for its __DragDropManager DragOver__ event as well:
 
-#### __C#__
-
 ```C#
 	DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, true)
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 		DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, True)
 ```
@@ -184,43 +117,6 @@ In this section you will see how to implement copy drag, when dragging items wit
 ![{{ site.framework_name }} RadTreeView Copy Item When Dragging Within the Same TreeView](images/RadTreeView_HowToImplementCopyDrag_040.png)
 
 Here is a treeview populated with some hierarchical data. This is the initial XAML declaration: 
-
-{% if site.site_name == 'Silverlight' %}
-#### __XAML__
-
-```XAML
-	<Grid>
-		<Grid.Resources>
-			<sampleData:RadTreeViewSampleData x:Key="DataSource" />
-	
-			<DataTemplate x:Key="Team">
-				<TextBlock Text="{Binding Name}" />
-			</DataTemplate>
-			<telerik:HierarchicalDataTemplate x:Key="Division"
-									  ItemTemplate="{StaticResource Team}"
-									  ItemsSource="{Binding Teams}">
-				<TextBlock Text="{Binding Name}" />
-			</telerik:HierarchicalDataTemplate>
-			<telerik:HierarchicalDataTemplate x:Key="League"
-									  ItemTemplate="{StaticResource Division}"
-									  ItemsSource="{Binding Divisions}">
-				<TextBlock Text="{Binding Name}" />
-			</telerik:HierarchicalDataTemplate>
-		</Grid.Resources>
-		
-		<telerik:RadTreeView x:Name="xTreeView"
-							 Margin="8"
-							 IsDragDropEnabled="True"
-							 ItemTemplate="{StaticResource League}"
-							 ItemsSource="{Binding Source={StaticResource DataSource},
-												   Path=LeaguesDataSource}" />
-	</Grid>
-```
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
-#### __XAML__
 
 ```XAML
 	<Grid>
@@ -251,8 +147,6 @@ Here is a treeview populated with some hierarchical data. This is the initial XA
 	</Grid>
 ```
 
-{% endif %}
-
 >tip The __RadTreeView__ is data bound to a collection of business objects. For more information, read the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) topic.
 
 Before setting a copy __DropAction__ within one __RadTreeView__, you need to consider the fact that in the __RadTreeView__ once you add the same instance of an object, all item manipulation operations will be applied on every instance of the object found within the __RadTreeView__ control. This basically means that if you follow the approach described in the previous section of the article, you will get multiple __RadTreeViewItems__ wrapping the same object instance. Once you do so, you'll have to work with all items as one as the __RadTreeView__ can't differentiate them. If this is something you;d like to avoid, then you'll have to reconfigure the default __RadTreeView__ drag/drop operation to make a __real copy__ of the dragged item and drop the copy.
@@ -261,15 +155,10 @@ In order to implement a __real copy__ drag operation, you need to perform the fo
 
 * Attach __DragDropManager Drop and DragDropCompleted__ handlers on the __RadTreeView__:
 
-	#### __C#__
-
 	```C#
 		DragDropManager.AddDropHandler(xTreeView, OnDrop, true);
 		DragDropManager.AddDragDropCompletedHandler(xTreeView, OnDragDropCompleted, true);
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 			DragDropManager.AddDropHandler(xTreeView, OnDrop, True)
 			DragDropManager.AddDragDropCompletedHandler(xTreeView, OnDragDropCompleted, True)
@@ -279,8 +168,6 @@ In order to implement a __real copy__ drag operation, you need to perform the fo
 			  
 
 * In the __OnDrop__ event handler you should stop the drop operation. You can do so by setting the __DropAction__ to __None__:			
-
-	#### __C#__
 
 	```C#
 		private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
@@ -292,9 +179,6 @@ In order to implement a __real copy__ drag operation, you need to perform the fo
 			}
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 			Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -305,8 +189,6 @@ In order to implement a __real copy__ drag operation, you need to perform the fo
 	```
 
 * In the __OnDragDropCompleted__ event handler you should implement a custom drop operation. However, as this drop operation will have to create a __real copy__ of the dragged item, you will need to create methods to copy your objects. For example, here are sample methods which copy respectively the __Team__, the __Division__ and the __League__ objects:
-
-	#### __C#__
 
 	```C#
 		private Team CopyTeam(Team team)
@@ -334,9 +216,6 @@ In order to implement a __real copy__ drag operation, you need to perform the fo
 			return copyLeague;
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Function CopyTeam(team As Team) As Team
 			Return New Team(team.Name)
@@ -360,8 +239,6 @@ In order to implement a __real copy__ drag operation, you need to perform the fo
 	```
 
 * Next, you need to implement a custom drop operation in the __OnDragDropCompleted__ event handler. This means that you need to define a logic that tracks the type of the dragged item as well as the type of the drop destination to make sure that the drop is actually allowed. This logic will also have to track the __DropPosition__ to decide where to insert the __real copy__ of the dragged item.
-
-	#### __C#__
 
 	```C#
 		private void OnDragDropCompleted(object sender, DragDropCompletedEventArgs e)
@@ -437,9 +314,6 @@ In order to implement a __real copy__ drag operation, you need to perform the fo
 			}
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 			Private Sub OnDragDropCompleted(sender As Object, e As DragDropCompletedEventArgs)
 			Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
@@ -508,8 +382,6 @@ Copy League:
 
 You can further customize this solution by applying a logic that determines the __DropAction__ based on the type of the item the drag operation is currently over:		
 
-#### __C#__
-
 ```C#
 	private void OnDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
@@ -520,9 +392,6 @@ You can further customize this solution by applying a logic that determines the 
 	    }
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Private Sub OnDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 		Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)

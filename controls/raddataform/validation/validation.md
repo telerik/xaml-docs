@@ -24,7 +24,7 @@ For example:
 
 __Example 1: Handling the ValidatingItem Event__
 
-	```C#
+```C#
 	private void DataForm1_ValidatingItem(object sender, System.ComponentModel.CancelEventArgs e)
 	{
 	    var employer = this.DataForm1.CurrentItem as Employee;
@@ -53,7 +53,7 @@ Yet another approach applicable when defining custom fields is to specify the va
 
 __Example 2: Perform the Validation inside the Property Setter__
 
-	```C#
+```C#
 	public DateTime StartingDate
 	{
 	    get
@@ -99,7 +99,7 @@ The definition of the DataFormDataField should be like follows:
 
 __Example 3: Defining the DataFormDataField__
 
-	```XAML
+```XAML
 	<telerik:DataFormDateField Label="Starting date" DataMemberBinding="{Binding StartingDate, Mode=TwoWay, ValidatesOnExceptions=True, NotifyOnValidationError=True}"/>
 ```
 

@@ -31,7 +31,6 @@ How to remove or change the background of a matching cell when you search as you
 1. [Extract the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of the GridViewCell element.
 2. In the ControlTemplate, find the VisualState with x:Name set to "Highlighted".
 	
-	
 	```XAML
 		<VisualState x:Name="Highlighted">
 			<Storyboard>

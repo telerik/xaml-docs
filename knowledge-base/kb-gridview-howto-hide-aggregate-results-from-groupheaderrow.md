@@ -25,7 +25,6 @@ How to hide the aggregate results from the GroupHeaderRow when RadGridView is gr
 ## Solution
 
 1. Handle the __Loaded__ event of the __AggregateResultsList__, which shows the aggregate results in the GroupHeaderRow, through an implicit style.
-
 	
 	```XAML
 		<!--If the NoXaml binaries are used, the following style needs to be based on the default one, like so:-->
@@ -37,7 +36,6 @@ How to hide the aggregate results from the GroupHeaderRow when RadGridView is gr
 	```
 
 2. Obtain a reference to the __AggregateResultsList__ in the Loaded event and remove items from its ItemsSource. 
-
     
 	```C#
 		private void AggregateResultsList_Loaded(object sender, RoutedEventArgs e)

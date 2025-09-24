@@ -239,7 +239,7 @@ __Example 6: The view model describing treeview and its business objects__
 			Me.Children = New ObservableCollection(Of DataItem)()
 		End Sub
 	End Class		  
-	```
+```
 	
 #### __Figure 3: Default positioned of the brought item__
 ![{{ site.framework_name }} RadTreeView Default positioned of the brought item](images/RadTreeView-BringPathIntoView-TreeViewDef.png)
@@ -255,7 +255,7 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 		string path = "Item 10\\Item 10.1";
 		myTreeView.BringPathIntoView(path);
 	```
-```VB.NET		
+	```VB.NET		
 		Dim path As String = "Item 10\Item 10.1"
 		myTreeView.BringPathIntoView(path)
 	```
@@ -272,7 +272,7 @@ __BringPathIntoView__ method has two overloads that you can use to bring an item
 		string path = "Item 10\\Item 10.1";
 		myTreeView.BringPathIntoView(path,new Point(0,100));
 	```
-```VB.NET	
+	```VB.NET	
 		Dim path As String = "Item 10\Item 10.1"
 		myTreeView.BringPathIntoView(path,New Point(0,100))
 	```

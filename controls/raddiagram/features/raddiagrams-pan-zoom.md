@@ -25,8 +25,7 @@ You can also activate the __Pan__[ MouseTool]({%slug raddiagrams-features-mouse-
 ## Pan Animation            
 
 The __DiagrammingFramework__ also provides a built-in pan animation. By default this animation isn't activated which means that you have to manually activate it in case you need to utilize it in your solution. The animation can be set through the __DiagramAnimations.IsPanAnimationEnabled__ attached property.
-                
-#### __XAML__
+             
 ```XAML
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     ...
@@ -57,15 +56,10 @@ The zoom range is controlled through two __DiagramConstants__:
 
 * __MaximumZoom__ - a __double__ value which indicates the maximum zoom level. Its default value is __5__.                        
 
-#### __C#__
-
 ```C#
 	DiagramConstants.MinimumZoom = 0.2;
 	DiagramConstants.MaximumZoom = 10;
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	DiagramConstants.MinimumZoom = 0.2
 	DiagramConstants.MaximumZoom = 10	
@@ -99,8 +93,6 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 * __Zooming in and out with a custom factor:__
 
-	#### __C#__
-
 	```C#
 		//zoom in with a factor of 0.67
 		private void CustomZoomIn()
@@ -113,9 +105,6 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 			this.xDiagram.ZoomOut(0.67);
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		'zoom in with a factor of 0.67'
 		Private Sub CustomZoomIn()
@@ -131,8 +120,6 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 * __Zooming in and out around a center point:__
 
-	#### __C#__
-
 	```C#
 		//zoom in around the point with coordinates of (125,200)
 		private void ZoomIn(object sender, RoutedEventArgs e)
@@ -145,9 +132,6 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 			this.xDiagram.ZoomOut(null,new Point(100,125));
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		'zoom in around the point with coordinates of (125,200)'
 		Private Sub ZoomIn(sender As Object, e As RoutedEventArgs)
@@ -163,8 +147,6 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 * __Zooming in and out around a center point with a customized zoom factor:__
 
-	#### __C#__
-
 	```C#
 		//zoom in around the point with coordinates of (125,200) with a zoom factor of 0.67
 		private void ZoomIn(object sender, RoutedEventArgs e)
@@ -177,9 +159,6 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 			this.xDiagram.ZoomOut(0.67,new Point(100,125));
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		'zoom in around the point with coordinates of (125,200) with a zoom factor of 0.67'
 		Private Sub ZoomIn(sender As Object, e As RoutedEventArgs)
@@ -195,9 +174,8 @@ Below you can find a few examples demonstrating how you can use __RadDiagram Zoo
 
 ## Zoom Animation
 
-The __DiagrammingFramework__ also provides a built-in zoom animation. By default this animation is activated, but you can easily deactivate and activate it again through the __DiagramAnimations.IsZoomAnimationEnabled__ attached property.                
+The __DiagrammingFramework__ also provides a built-in zoom animation. By default this animation is activated, but you can easily deactivate and activate it again through the __DiagramAnimations.IsZoomAnimationEnabled__ attached property.
 
-#### __XAML__
 ```XAML
     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     ...
@@ -240,8 +218,6 @@ If you need to change the default behavior, the best place to plug-in and custom
 
 ##### 1. Zooming RadDiagram using a geometric progression so that the __Zoom__ value changes in the following manner: 1->1.5->2.25->3.75... This means that we need to use a common ratio of 1.5:                        
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadDiagram x:Name="xDiagram" Grid.Row="1" PreviewZoom="xDiagram_PreviewZoom">
 		<telerik:RadDiagramShape Width="40" 
@@ -249,8 +225,6 @@ If you need to change the default behavior, the best place to plug-in and custom
 								 Geometry="{telerik:CommonShape ShapeType=Star5Shape}" />
 	</telerik:RadDiagram>
 ```
-
-#### __C#__
 
 ```C#
 	private void xDiagram_PreviewZoom(object sender, DiagramZoomEventArgs e)
@@ -268,9 +242,6 @@ If you need to change the default behavior, the best place to plug-in and custom
 	    }
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Private Sub xDiagram_PreviewZoom(sender As Object, e As DiagramZoomEventArgs)
 	    Dim delta As Double = e.TargetZoom - e.Zoom
@@ -286,8 +257,6 @@ If you need to change the default behavior, the best place to plug-in and custom
 
 ##### 2. Zooming RadDiagram using a custom set of zoom values:
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadDiagram x:Name="xDiagram" Grid.Row="1" PreviewZoom="xDiagram_PreviewZoom">
 		<telerik:RadDiagramShape Width="40" 
@@ -295,8 +264,6 @@ If you need to change the default behavior, the best place to plug-in and custom
 								 Geometry="{telerik:CommonShape ShapeType=Star5Shape}" />
 	</telerik:RadDiagram>
 ```
-
-#### __C#__
 
 ```C#
 	private List<double> availableZooms = new List<double>() { .1, .125, .16, .2, .25, .33, .5, .67, 1, 1.5, 2, 3, 4, 5, 6, 8, 10 };
@@ -316,9 +283,6 @@ If you need to change the default behavior, the best place to plug-in and custom
 	    }
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Private availableZooms As New List(Of Double)() From { 0.1, 0.125, 0.16, 0.2, 0.25, 0.33, 0.5, 0.67, 1, 1.5, 2, 3, 4, 5, 6, 8, 10}
 	Private Sub xDiagram_PreviewZoom(sender As Object, e As DiagramZoomEventArgs)
@@ -338,8 +302,6 @@ If you need to change the default behavior, the best place to plug-in and custom
 ## Zooming RadDiagram with RadSlider
 
 You can use the __RadSlider__ control to visualize the current zoom value of a __RadDiagram__ instance. You can easily bind the __RadSlider Value__ property to the __RadDiagram Zoom__ property as demonstrated below:
-
-#### __XAML__
 
 ```XAML
 	<Grid x:Name="LayoutRoot">

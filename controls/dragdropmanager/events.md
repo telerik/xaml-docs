@@ -227,19 +227,20 @@ __Setting AllowDrag and AllowDrop__
 All the drop target events share the same event arguments - `DragEventArgs` - therefore the same handler signature. The following example shows an event handler that can be used with all the previous events.
 
 __DragOver PreviewDragEnter event handler__  
-	```C#	
-		private void OnDragOver(object sender, DragEventArgs e)
-		{
-			// gets the effects allowed by the originator of the drag/drop operation in DragInitialize
-			DragDropEffects allowedEffects = e.AllowedEffects;
-			
-			// sets the drag/drop effects for the hovered element
-			e.Effects = DragDropEffects.All;
-			
-			// gets the dragged data object
-			object draggedData = e.Data;	
-		}
-	```
+
+```C#	
+	private void OnDragOver(object sender, DragEventArgs e)
+	{
+		// gets the effects allowed by the originator of the drag/drop operation in DragInitialize
+		DragDropEffects allowedEffects = e.AllowedEffects;
+		
+		// sets the drag/drop effects for the hovered element
+		e.Effects = DragDropEffects.All;
+		
+		// gets the dragged data object
+		object draggedData = e.Data;	
+	}
+```
 
 ## See Also
 

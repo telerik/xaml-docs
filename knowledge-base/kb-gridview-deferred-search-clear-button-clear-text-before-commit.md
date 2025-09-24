@@ -61,7 +61,7 @@ This article will show you how to clear the search value every time the clear bu
 		    }
 		}
     ```
-```VB.NET
+	```VB.NET
 		Public Partial Class MainWindow
 		    Inherits Window
 		    Private searchTextBox As TextBox
@@ -98,7 +98,7 @@ This article will show you how to clear the search value every time the clear bu
         	((SearchViewModel)this.searchTextBox.DataContext).SearchText = "";
     	}
 	```
-```VB.NET
+	```VB.NET
 		clearButton.Command = Nothing
         clearButton.Click += AddressOf ClearButton_Click
 
@@ -125,7 +125,7 @@ This article will show you how to clear the search value every time the clear bu
     	    }
     	}
 	```
-```VB.NET
+	```VB.NET
 		Me.searchTextBox.LostKeyboardFocus += AddressOf SearchTextBox_LostKeyboardFocus
 
 		Private Sub SearchTextBox_LostKeyboardFocus(ByVal sender As Object, ByVal e As KeyboardFocusChangedEventArgs)

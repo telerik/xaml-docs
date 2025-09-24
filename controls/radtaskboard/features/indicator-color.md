@@ -66,19 +66,21 @@ The next step is to declare our colors. The __Categories__ collection property o
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
 __Example 2: Specifying custom colors__
-	```XAML
-	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State">
-			<telerik:RadTaskBoard.Categories>
-				<taskBoard:CategoryCollection>
-					<taskBoard:CategoryModel CategoryName="Low" CategoryBrush="Green"/>
-					<taskBoard:CategoryModel CategoryName="Medium" CategoryBrush="Yellow"/>
-					<taskBoard:CategoryModel CategoryName="High" CategoryBrush="Red"/>
-				</taskBoard:CategoryCollection>
-			</telerik:RadTaskBoard.Categories>
-		</telerik:RadTaskBoard>
-	```
+
+```XAML
+   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State">
+		<telerik:RadTaskBoard.Categories>
+			<taskBoard:CategoryCollection>
+				<taskBoard:CategoryModel CategoryName="Low" CategoryBrush="Green"/>
+				<taskBoard:CategoryModel CategoryName="Medium" CategoryBrush="Yellow"/>
+				<taskBoard:CategoryModel CategoryName="High" CategoryBrush="Red"/>
+			</taskBoard:CategoryCollection>
+		</telerik:RadTaskBoard.Categories>
+	</telerik:RadTaskBoard>
+```
 
 If you run the application now, you should get a structure like in Figure 1:
+
 #### Figure 1: Tasks with different categories Color
 ![Telerik TaskBoard Category Indicator 0](images/taskboard_indicator_color_0.png)
 
@@ -87,6 +89,7 @@ If you run the application now, you should get a structure like in Figure 1:
 When you don't want a given task to have a color, you can set the __ShowCategoryIndicator__ property of the TaskBoardCardModel to false. We are going to set this property to false to the second TaskBoardCardModel element from __Example 1__. 
 
 __Example 3: Hide Category Indicator on the second item__
+
 ```C#
     public MainWindow()
 	{

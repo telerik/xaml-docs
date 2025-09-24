@@ -16,8 +16,6 @@ Following is an example demonstrating how to convert appointments between a List
 
 * Create the DataConverter:
 
-	#### __C#__
-
 	```C#
 		public class ScheduleViewToAppointmentConverter : DataConverter
 		{		
@@ -44,8 +42,6 @@ Following is an example demonstrating how to convert appointments between a List
 
 * Add CustomScheduleViewDragDropBehavior class which inherits ScheduleViewDragDropBehavior:      	
 
-	#### __C#__
-
 	```C#
 		public class CustomScheduleViewDragDropBehavior : ScheduleViewDragDropBehavior
 		{
@@ -66,8 +62,6 @@ Following is an example demonstrating how to convert appointments between a List
 	```
 
 * The final configuration of the two controls in XAML should look like:
-
-	#### __XAML__
 
 	```XAML	
 		<telerik:RadScheduleView ...>

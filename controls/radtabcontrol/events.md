@@ -19,6 +19,7 @@ This article lists the events specific for the __RadTabControl__ control.
 	* __DataContext__: The __DataContext__ of the changed __RadTabItem__.
 	
 		__Example 1: PreviewTabClosed Event Handler__
+		
 		```C#
 			private void TabControl_PreviewTabClosed(object sender, Telerik.Windows.Controls.PreviewTabChangedEventArgs e)
 			{
@@ -28,7 +29,7 @@ This article lists the events specific for the __RadTabControl__ control.
 				}
 			}
 		```
-```VB.NET
+		```VB.NET
 			Private Sub TabControl_PreviewTabClosed(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.PreviewTabChangedEventArgs)
 				If e.TabItem.Header.ToString() = "Tab 1" Then
 					e.Cancel = True
@@ -51,7 +52,7 @@ This article lists the events specific for the __RadTabControl__ control.
 			MessageBox.Show($"{e.TabItem.Header} is about to be unpinned.");
 		}
 	```
-```VB.NET
+	```VB.NET
 		Private Sub RadTabControl_PreviewTabUnpinned(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.PreviewTabChangedEventArgs)
 			MessageBox.Show($"{e.TabItem.Header} is about to be unpinned.")
 		End Sub
@@ -68,7 +69,7 @@ This article lists the events specific for the __RadTabControl__ control.
 			e.Cancel = true;
 		}
 	```
-```VB.NET
+	```VB.NET
 		Private Sub RadTabControl_PreviewTabPinned(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.PreviewTabChangedEventArgs)
 			e.Cancel = True
 		End Sub
@@ -91,13 +92,13 @@ This article lists the events specific for the __RadTabControl__ control.
 				e.DropDownItemsSource = dropDownItems;
 			}
 		```
-```VB.NET
+		```VB.NET
 			Private Sub RadTabControl_DropDownOpened(ByVal sender As Object, ByVal e As DropDownEventArgs)
 				Dim dropDownItems As List(Of String) = e.DropDownItemsSource.Cast(Of String)().ToList(Of String)()
 				dropDownItems.Add("New DropDown Item.")
 				e.DropDownItemsSource = dropDownItems
 			End Sub
-		```
+	```
 
 * __DropDownClosed__: This event is raised when the Telerik.Windows.Controls.TabControl.DropDownMenu is closed.	This is a RoutedEvent. The event arguments are of type __DropDownEventArgs__.
 

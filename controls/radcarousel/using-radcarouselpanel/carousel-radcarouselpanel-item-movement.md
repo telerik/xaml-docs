@@ -16,7 +16,7 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 
 #### __XAML__
 
-	```XAML
+```XAML
 	<Grid>
 	  <telerik:RadCarouselPanel x:Name="Panel" ItemsPerPage="7" PathPadding="50, 0, 50, 0">
 	    <Image Source="Carousel\1.jpg" VerticalAlignment="Top" HorizontalAlignment="Left"/>
@@ -32,13 +32,13 @@ Items in the __RadCarouselPanel__ can be moved programmatically by using the pub
 
 #### __C#__
 
-	```C#
+```C#
 	this.Panel.MoveBy(2);
 ```
 
 #### __VB.NET__
 
-	```VB.NET
+```VB.NET
 	Me.Panel.MoveBy(2)
 ```
 
@@ -50,7 +50,7 @@ __RadCarouselPanel__ is a scrollable panel that can use __ScrollViewer__ to move
 
 #### __XAML__
 
-	```XAML
+```XAML
 	<Grid>
 	  <ScrollViewer CanContentScroll="True">
 	    <telerik:RadCarouselPanel x:Name="Panel2" ItemsPerPage="7" PathPadding="50, 0, 50, 0">

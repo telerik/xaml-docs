@@ -95,10 +95,8 @@ When extracting the control template with MS Blend some dependency properties of
 You can find instructions on how to fix the missing Bindings bellow:
               
 *  Under __FlatRenderingTemplate__:
-                   
-#### __XAML__: FlatRenderingTemplate
 
-	```XAML
+```XAML
 	<ItemsControl IsTabStop="False" VirtualizingStackPanel.VirtualizationMode="Standard">
 	    <ItemsControl.Style>
 	        <Style TargetType="{x:Type ItemsControl}">
@@ -130,8 +128,7 @@ You can find instructions on how to fix the missing Bindings bellow:
 
 *   Under __FlatTemplate__:
 
-#### __XAML__: FlatTemplate
-	```XAML
+```XAML
 	<ItemsControl IsTabStop="False">
 	    <ItemsControl.ItemTemplate>
 	        <DataTemplate>
@@ -156,9 +153,7 @@ You can find instructions on how to fix the missing Bindings bellow:
 
 *  Under __GroupTemplate__:
 
-#### __XAML__: GroupTemplate
-
-	```XAML
+```XAML
 	<ItemsControl>
 	    <ItemsControl.ItemTemplate>
 	        <DataTemplate>
@@ -284,9 +279,7 @@ You can find instructions on how to fix the missing Bindings bellow:
 
 *  Under __VirtualizedFlatTemplate__:
 
-#### __XAML__: VirtualizedFlatTemplate
-
-	```XAML
+```XAML
 	<ItemsControl IsTabStop="False">
 	    <ItemsControl.ItemTemplate>
 	        <DataTemplate>

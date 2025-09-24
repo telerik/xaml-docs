@@ -38,9 +38,8 @@ __Example 1: Merge resource dictionaries__
 	 		<ResourceDictionary Source="/Telerik.Windows.Themes.Office_Black;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
 	    	<!-- ... -->
 		</ResourceDictionary.MergedDictionaries>
-	</ResourceDictionary>
-	
-	```
+	</ResourceDictionary>	
+```
 
 >Initially we merge the resource dictionaries for the **Office_Black** theme.
 

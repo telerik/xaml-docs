@@ -41,7 +41,7 @@ You can apply a style to the merged cells, similar to:
 
 __Example 1: Styling all merged cells of an application__
 
-	```XAML
+```XAML
 	<Style TargetType="telerik:GridViewMergedCell">
 	            <Setter Property="VerticalContentAlignment" Value="Top"/>
 	            <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -61,7 +61,7 @@ If instead you would like to set a style only for a specific __RadGridView__, yo
 
 __Example 2: Styling merged cells of a specific RadGridView__
 
-	```XAML
+```XAML
 	<Grid.Resources>
 	                <Style TargetType="telerik:GridViewMergedCell" x:Key="GridViewMergedCellsStyle">
 	                    <Setter Property="VerticalContentAlignment" Value="Top"/>

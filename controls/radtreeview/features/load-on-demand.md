@@ -11,7 +11,6 @@ position: 8
 # Load on Demand
 
 The performance of the Telerik __RadTreeView__ control when operating with huge amount of items is significantly optimized through its load on demand feature. This mechanism lets the nodes load their child nodes as the user expands the parent by clicking on the expander icon.
-	  
 
 This tutorial will walk you through the following common tasks:
 
@@ -20,8 +19,6 @@ This tutorial will walk you through the following common tasks:
 * Using the __IsLoadingOnDemand__ property.
 
 For the purpose of this tutorial will be used the following treeview declaration: 
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
@@ -39,8 +36,6 @@ For the purpose of this tutorial will be used the following treeview declaration
 
 To enable this feature you can set the __IsLoadOnDemandEnabled__ property to the __RadTreeViewItem__ to __True__.
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
@@ -55,17 +50,12 @@ To enable this feature you can set the __IsLoadOnDemandEnabled__ property to the
 
 The same effect can be achieved if you set the __IsLoadOnDemandEnabled__ property of an instance of the __RadTreeViewItem__ class in the code-behind:
 
-#### __C#__
-
 ```C#
 	private void EnableLoadOnDemand( RadTreeViewItem radTreeViewItem )
 	{
 	    radTreeViewItem.IsLoadOnDemandEnabled = true;
 	}
 ```
-
-#### __VB.NET__
-
 ```VB.NET
 	Private Sub EnableLoadOnDemand(ByVal radTreeViewItem As RadTreeViewItem)
 	    radTreeViewItem.IsLoadOnDemandEnabled = True
@@ -80,8 +70,6 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 
 * Here is an example of how to handle the __LoadOnDemand__ event when attached to a __RadTreeViewItem__:
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 			<telerik:RadTreeViewItem Header="Sport Categories">
@@ -91,9 +79,7 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
 	```
-
-	#### __C#__
-
+	
 	```C#
 		private void RadTreeViewItem_LoadOnDemand( object sender, Telerik.Windows.RadRoutedEventArgs e )
 		{
@@ -107,9 +93,6 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 			clickedItem.Items.Add( newItem );
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Sub RadTreeViewItem_LoadOnDemand(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 			' get the clicked Item '
@@ -124,8 +107,6 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 		
 	Here is an example of how to handle the __LoadOnDemand__ event when attached to the __RadTreeView__:
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsLoadOnDemandEnabled="True" LoadOnDemand="radTreeView_LoadOnDemand">
 			<telerik:RadTreeViewItem Header="Sport Categories">
@@ -135,8 +116,6 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
 	```
-
-	#### __C#__
 
 	```C#
 		private void radTreeView_LoadOnDemand( object sender, RadRoutedEventArgs e )
@@ -154,9 +133,6 @@ When the expand icon is clicked the __LoadOnDemand__ event is fired. This event 
 			clickedItem.IsLoadOnDemandEnabled = false;
 		}
 	```
-
-	#### __VB.NET__
-
 	```VB.NET
 		Private Sub radTreeView_LoadOnDemand(sender As Object, e As RadRoutedEventArgs)
 		 ' get the treeview '

@@ -101,7 +101,6 @@ __Example 3: Defining the Employee class__
 	}
 ```
 ```VB.NET
-
 	Public Class Employee
 	 Public Sub New(name As String, companyName As String, title As String)
 	  Me.Name = name
@@ -148,7 +147,6 @@ Prepare a simple collection of employees and pass it to the __Source__ property 
 __Example 5: Creating a collection of Employees__
 
 ```C#
-
 	ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
 	employees.Add( new Employee( "Maria Anders", "Alfreds Futterkiste", "Sales Representative" ) );
 	employees.Add( new Employee( "Ana Trujillo", "Ana Trujillo Emparedados y helados", "Owner" ) );
@@ -161,7 +159,7 @@ __Example 5: Creating a collection of Employees__
 	employees.Add( new Employee( "Elizabeth Lincoln", "Bottom-Dollar Markets", "Accounting manager" ) );
 	employees.Add( new Employee( "Victoria Ashworth", "B's Beverages", "Sales representative" ) );
 	this.radDataFilter.Source = employees;
-	```
+```
 ```VB.NET
 
 	Dim employees As New ObservableCollection(Of Employee)()
@@ -263,7 +261,7 @@ __Example 8: Merge the ResourceDictionaries__
 	</Application.Resources>
 ```
 
->Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
+>Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 
 __Figure 2__ shows a __RadDataFilter__ with the **Windows8** theme applied.
 	

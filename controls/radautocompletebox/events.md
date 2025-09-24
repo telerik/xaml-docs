@@ -24,32 +24,32 @@ The __RadAutoCompleteBox__ exposes almost all of the **TextBox** events. Additio
 
 __Example 1: Modify the collection with the found results from the event arguments__
 
-	```C#
-		public MainWindow()
-        {
-            InitializeComponent();
+```C#
+	public MainWindow()
+	{
+		InitializeComponent();
 
-            var source = new List<ItemInfo>();
-            for (int i = 0; i < 100000; i++)
-            {
-                source.Add(new ItemInfo() { Id = i });
-            }
-            this.autoCompleteBox.ItemsSource = source;
-            var behavior = new AsyncFilteringBehavior();
-            behavior.ItemsFound += Behavior_ItemsFound;
-            this.autoCompleteBox.FilteringBehavior = behavior;
-        }
+		var source = new List<ItemInfo>();
+		for (int i = 0; i < 100000; i++)
+		{
+			source.Add(new ItemInfo() { Id = i });
+		}
+		this.autoCompleteBox.ItemsSource = source;
+		var behavior = new AsyncFilteringBehavior();
+		behavior.ItemsFound += Behavior_ItemsFound;
+		this.autoCompleteBox.FilteringBehavior = behavior;
+	}
 
-        private void Behavior_ItemsFound(object sender, Telerik.Windows.Controls.Primitives.AsyncItemSearchEventArgs e)
-        {
-            var result = (List<object>)e.Result;
-            var orderedResult = result.OfType<ItemInfo>().OrderByDescending(x => x.Id).ToList();
-            result.Clear();
-            foreach (var item in orderedResult)
-            {
-                result.Add(item);
-            }
-        }
-	```
+	private void Behavior_ItemsFound(object sender, Telerik.Windows.Controls.Primitives.AsyncItemSearchEventArgs e)
+	{
+		var result = (List<object>)e.Result;
+		var orderedResult = result.OfType<ItemInfo>().OrderByDescending(x => x.Id).ToList();
+		result.Clear();
+		foreach (var item in orderedResult)
+		{
+			result.Add(item);
+		}
+	}
+```
 
 >tipYou can remove and add items from the e.Results collection or sort and filter them.

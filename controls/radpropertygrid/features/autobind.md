@@ -10,16 +10,13 @@ position: 2
 
 # AutoBind Attached Behavior
 
-The need of reusable DataTemplates is a common scenario with quite few universal viable solutions. The AutoBind attached behavior enables RadPropertyGrid to use a single DataTemplate resource as an EditorTemplate value for multiple PropertyDefinitions without any additional effort on the users’ side.
-
-{% if site.site_name == 'Silverlight' %}[Here](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %}{% if site.site_name == 'WPF' %}[Here](http://www.telerik.com/help/wpf/t_telerik_windows_controls_data_propertygrid_autobindbehavior.html){% endif %} is the API reference for the AutoBindBehaviour.
-        
+The need of reusable DataTemplates is a common scenario with quite few universal viable solutions. The [AutoBind attached behavior](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.data.propertygrid.autobindbehavior) enables RadPropertyGrid to use a single DataTemplate resource as an EditorTemplate value for multiple PropertyDefinitions without any additional effort on the users’ side.
 
 Here is an example with RadPropertyGrid that has its Item property bound to a Button:
 
 __Example 1: Using AutoBindBehavior__
 
-	```XAML
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	  <Grid.Resources>
 	    <DataTemplate x:Key="editorTemplate">
@@ -87,11 +84,12 @@ In most cases when a custom __DataTemplate__ is defined, the element within it w
 >The AutoBind behavior is designed to function exclusively in the context of RadPropertyGrid.
           
 ## Set the BindingMode of Custom Data Type
+
 By default, the __AutoBindBehavior__ supports __TwoWay Binding__ only for the data types listed in the previous section. For a __custom data type__, the __BindingMode__ is __OneWay__. This behavior can be altered through the __BindingModeOverride__ property. 
 
 __Example 2: Setting the BindingModeOverride property to TwoWay__
 
-	```XAML
+```XAML
 	<Grid.Resources>
 	  <DataTemplate x:Key="editorTemplate1">
 	    <TextBox Foreground="Red" FontWeight="Bold"
@@ -99,7 +97,6 @@ __Example 2: Setting the BindingModeOverride property to TwoWay__
 	  </DataTemplate>
 	</Grid.Resources>
 ```
-          
 
 ## See Also
 

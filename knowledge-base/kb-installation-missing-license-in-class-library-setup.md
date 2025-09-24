@@ -36,7 +36,7 @@ This is an expected behavior that comes from the nature of the Telerik licensing
 
 * (recommended) Make sure to install the [Telerik.Licensing](https://www.nuget.org/packages/Telerik.Licensing) NuGet package also in the main project.
 
-	```xml
+	```XML
 		<!-- this is in the main project's .csproj file -->
 		<ItemGroup>
 			<PackageReference Include="Telerik.Licensing" Version="1.6.*" />
@@ -45,7 +45,7 @@ This is an expected behavior that comes from the nature of the Telerik licensing
 
 * Or alternatively, add the `IncludeAssets` and `PrivateAssets` attributes to the `PackageReference` tag in the `.csproj` file of the class library.
 
-	```xml
+	```XML
 		<!-- this is in the class library project's .csproj file -->
 		<ItemGroup>
 			<PackageReference Include="Telerik.Windows.Controls.for.Wpf.Xaml" IncludeAssets="all" PrivateAssets="none" Version="2025.2.521" />

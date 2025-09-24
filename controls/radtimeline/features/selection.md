@@ -30,16 +30,11 @@ __SelectionChanged event__ - occurs when the SelectedItem in single selection mo
 
 The following example demonstrates how you can use the SelectionChanged event:
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTimeline SelectionMode="Single"
 	                     IsSelectionEnabled="True"
-	                     SelectionChanged="RadTimeline_SelectionChanged"/>
-	
-	```
-
-#### __C#__
+	                     SelectionChanged="RadTimeline_SelectionChanged"/>	
+```
 
 ```C#
 	private void RadTimeline_SelectionChanged(object sender, SelectionChangeEventArgs e)
@@ -51,10 +46,7 @@ The following example demonstrates how you can use the SelectionChanged event:
 	        //Do something with the selected item.
 	    }
 	}
-	```
-	
-#### __VB.NET__
-
+```
 ```VB.NET
 	Private Sub RadTimeline_SelectionChanged(sender As Object, e As SelectionChangeEventArgs)
 		Dim selectedItem = TryCast(sender, RadTimeline).SelectedItem			
@@ -62,7 +54,7 @@ The following example demonstrates how you can use the SelectionChanged event:
 		'Do something with the selected item.
 		End If
 	End Sub
-	```
+```
 
 ## Selection Modes
 
@@ -71,8 +63,6 @@ __Single SelectionMode (Default)__
 In Single selection mode, the user can select only one timeline item at a time. Selecting another item first unselects the currently selected one and then selects the new timeline item. Clicking the empty space between timeline items clears the selection.        
 
 The following example demonstrates how to enable the __Single__ selection mode for a timeline control:
-        
-#### __XAML__
 
 ```XAML
 	<telerik:RadTimeline SelectionMode="Single"
@@ -91,7 +81,7 @@ The following example demonstrates how to enable the __Single__ selection mode f
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	```
+```
 
 ![Rad Timeline-features-selection-0-Selection Mode Single](images/RadTimeline-features-selection-0-SelectionMode_Single.jpg)
 
@@ -100,8 +90,6 @@ __Multiple SelectionMode__
 The Multiple selection mode value indicates that the user can select multiple timeline items by selecting them one after the other. Clicking a timeline item in this mode toggles the selected state of the item.
 
 The following example demonstrates how to enable the __Multiple__ selection mode for a timeline control:
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTimeline SelectionMode="Multiple"
@@ -120,7 +108,7 @@ The following example demonstrates how to enable the __Multiple__ selection mode
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	```
+```
 
 ![Rad Timeline-features-selection-1-Selection Mode Multiple](images/RadTimeline-features-selection-1-SelectionMode_Multiple.jpg)
 
@@ -139,8 +127,6 @@ In the Extended selection mode case, the user can select timeline items in the f
 
 The following example demonstrates how to enable the __Extended__ selection mode for a timeline control:
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTimeline SelectionMode="Extended"
 	                     IsSelectionEnabled="True"
@@ -158,6 +144,6 @@ The following example demonstrates how to enable the __Extended__ selection mode
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-	```
+```
 
 ![Rad Timeline-features-selection-2-Selection Mode Extended](images/RadTimeline-features-selection-2-SelectionMode_Extended.jpg)

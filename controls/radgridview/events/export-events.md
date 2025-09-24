@@ -89,7 +89,7 @@ You can use the __ElementExported__ event if you want to write additional data t
 
 __Example 3: Add row details to the exported data__
 
-	```C#
+```C#
 	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
 	{
 	    if (e.Element == ExportElement.Row)
@@ -160,7 +160,7 @@ You can define a style when the __InitializingExcelMLStyles__ event is raised, a
         
 __Example 4: Define a style__
 
-	```C#
+```C#
 	ExcelMLStyle style = new ExcelMLStyle("0");
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
@@ -210,7 +210,7 @@ __Example 5__ shows how to use __ExcelMLStyle__.
 
 __Example 5: Modify the style before exporting__
 
-	```C#
+```C#
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("0");

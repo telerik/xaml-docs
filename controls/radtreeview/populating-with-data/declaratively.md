@@ -14,16 +14,12 @@ This tutorial will walk you through the common task of populating __RadTreeView_
 
 Here is a regular treeview declaration without items: 
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8">
 	</telerik:RadTreeView>
-	```
+```
 
 In order to add treeview items you need to use the __Items__ property. The __Items__ property is an __ItemCollection__ which contains your treeview items. For example, insert the following lines to the declaration of your treeview and new items will be added to the treeview. 
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8">
@@ -35,26 +31,27 @@ In order to add treeview items you need to use the __Items__ property. The __Ite
 	        <telerik:RadTreeViewItem Header="Category5"/>
 	    </telerik:RadTreeView.Items>
 	</telerik:RadTreeView>
-	```
+```
 
 Here is the result: 
 ![{{ site.framework_name }} RadTreeView Declarative Binding Top Level](images/RadTreeView_PopulatingWithDataDeclaratively_010.PNG)
 
 >Consider adding __RadTreeViewItems__ directly, without specifying __<telerik:RadTreeView.Items>__
 explicitly. The effect will be the same, but your XAML will be more readable:
-`<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8">
-    <telerik:RadTreeViewItem Header="Category1"/>
-    <telerik:RadTreeViewItem Header="Category2"/>
-    <telerik:RadTreeViewItem Header="Category3"/>
-    <telerik:RadTreeViewItem Header="Category4"/>
-    <telerik:RadTreeViewItem Header="Category5"/>
-</telerik:RadTreeView>`
+
+```XAML
+	<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8">
+		<telerik:RadTreeViewItem Header="Category1"/>
+		<telerik:RadTreeViewItem Header="Category2"/>
+		<telerik:RadTreeViewItem Header="Category3"/>
+		<telerik:RadTreeViewItem Header="Category4"/>
+		<telerik:RadTreeViewItem Header="Category5"/>
+	</telerik:RadTreeView>
+```
 
 Each one of the __RadTreeViewItem__ nodes `<telerik:RadTreeViewItem Header="Category1"/>` in the example above represents declaration of a single treeview item that will be created and added to your treeview control at run-time. Just insert or delete __RadTreeViewItem__ child nodes to/from your treeview declaration and see how the treeview structure changes.
 
 In order to create your hierarchical structure deeper, you just need to add __RadTreeViewItem__ child nodes to any of the previously declared items. For example: 
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" Background="Bisque" Margin="8">
@@ -72,7 +69,7 @@ In order to create your hierarchical structure deeper, you just need to add __Ra
 	    </telerik:RadTreeViewItem>
 	    <telerik:RadTreeViewItem Header="Category5"/>
 	</telerik:RadTreeView>
-	```
+```
 
 ![{{ site.framework_name }} RadTreeView Declarative Binding Sub Levels](images/RadTreeView_PopulatingWithDataDeclaratively_020.PNG)
 

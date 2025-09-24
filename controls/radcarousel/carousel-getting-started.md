@@ -44,7 +44,7 @@ For the purpose of this tutorial we will create a new **Employee** class with a 
 
 __Example 2: The Employee class__
 
-	```C#
+```C#
 	public class Employee
 	{
 	    public string FirstName
@@ -114,7 +114,7 @@ Furthermore, as some data will be needed, we will create **EmployeeService** cla
 
 __Example 3: The EmployeeService class__
 
-	```C#
+```C#
 	public class EmployeeService
 	{
 	    public static ObservableCollection<Employee> GetEmployees()
@@ -210,7 +210,7 @@ Once all the data is prepared, we may set the RadCarousel's **ItemsSource**:
 
 __Example 4: Setting RadCarousel's ItemsSource__
 
-	```C#
+```C#
 	this.MyCarousel.ItemsSource = EmployeeService.GetEmployees();
 ```
 ```VB.NET
@@ -229,7 +229,7 @@ Generally, RadCarousel may be easily used for displaying images and navigating t
 
 __Example 5: Setting RadCarousel's ItemsSource to a list of images__
 
-	```C#
+```C#
 	List<Image> myImages = new List<Image>();
 	Image myImage = new Image();
 	myImage.Source = new BitmapImage(new Uri("/Images/nature1.jpg", UriKind.Relative));

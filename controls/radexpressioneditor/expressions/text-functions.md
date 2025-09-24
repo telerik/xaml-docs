@@ -12,7 +12,9 @@ position: 5
 
 As of R1 2019, the RadExpression control also provides a number of functions for **string** manipulation. They can be found in the new **Text** subcategory illustrated in **Figure 1**.
  
-{% figure 1, "The Text functions subcategory", "text-functions.png" %}
+ __The Text functions subcategory__
+
+![](images/text-functions.png)
 
 Here is a full list of the available functions:
 
@@ -39,7 +41,9 @@ Here is a full list of the available functions:
 
 **Figure 2** demonstrates a possible use of the text functions for filtering a RadGridView control similarly to the example in the [Getting Started article]({%slug radexpressioneditor-getting-started%}).
 
-{% figure 2, "Filtering RadGridView via the text functions", "text-functions-example1.png" %}
+__Filtering RadGridView via the text functions__
+
+![](images/text-functions-example1.png)
 
 The same can be achieved via code-behind as well by using the code from **Example 1**.
 

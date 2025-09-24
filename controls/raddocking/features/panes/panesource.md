@@ -24,8 +24,6 @@ The next example demonstrates the described approach:
 
 1. Create a ViewModel and add a collection of RadPane object property to it:
 
-	#### __C#__
-
 	```C#
 		public class ViewModel : ViewModelBase
 		{
@@ -56,8 +54,6 @@ The next example demonstrates the described approach:
 	```
 
 1. Populate the collection with some sample data:
-                        
-	#### __C#__
 
 	```C#
 		public class ViewModel : ViewModelBase
@@ -95,8 +91,6 @@ The next example demonstrates the described approach:
 
 1. Finally bind the Panes collection to the __PanesSource__ property of the RadDocking control:
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadDocking PanesSource="{Binding Panes}">
 		    <telerik:RadDocking.DockingPanesFactory>
@@ -132,8 +126,6 @@ RemovePane	|	Removes the Pane from the RadDocking layout. By default clears the 
 The next example demonstrates a common scenario when using the PaneSource property of the control. When populating a docking manager control with collection of panes you would have a predefined layout of PaneGroups which should be populated with the Panes from that collection. In order to achieve the desired behavior you can take advantage of the DockingPanesFactory:
 
 1. Create a Collection of RadPanes in the ViewModel and populate it with some sample data (the “__Tag__” will be used to determine in which predefined RadPaneGroup the Pane should be added):
-
-	#### __C#__
 
 	```C#
 		public class ViewModel : ViewModelBase
@@ -171,8 +163,6 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 1. Set the basic layout of the RadDocking by adding empty RadPaneGroups. Make sure to set their Names to as they will be used to determine if a Pane should be added to that group:
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadDocking PanesSource="{Binding Panes}">
 		    <telerik:RadSplitContainer InitialPosition="DockedLeft">
@@ -188,8 +178,6 @@ The next example demonstrates a common scenario when using the PaneSource proper
 
 1. Create a class that inherits DockingPanesFactory:
 
-	#### __C#__
-
 	```C#
 		public class CustomDockingPanesFactory : DockingPanesFactory
 		{
@@ -198,8 +186,6 @@ The next example demonstrates a common scenario when using the PaneSource proper
 	```
 
 1. Override the AddPane method of the factory and add a custom logic that will add the pane to the correct PaneGroup. You can use the SplitItems property of the RadDocking control to get all of the RadSplitcontainers and RadPAneGroups:
-
-	#### __C#__
 
 	```C#
 		public class CustomDockingPanesFactory : DockingPanesFactory
@@ -222,8 +208,6 @@ The next example demonstrates a common scenario when using the PaneSource proper
 	```
 
 1. Set newly created DockingPanesFactory to the RadDocking control:
-   
-	#### __XAML__
 
 	```XAML
 		<telerik:RadDocking PanesSource="{Binding Panes}">

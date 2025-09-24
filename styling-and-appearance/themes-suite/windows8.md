@@ -82,7 +82,7 @@ __Changing the palette's default colors in code-behind__
 	Windows8TouchPalette.Palette.EffectHighColor = Colors.Yellow;
 	Windows8TouchPalette.Palette.EffectLowColor = Colors.Orange;
 	...
-	```
+```
 
 Figure 1: Some of the possible looks you will be able to easily achieve.
 ![Common Metro Theme Colors](../images/Common_Metro_Theme_Colors.png)
@@ -111,7 +111,7 @@ __Using the brush resources in XAML__
 	                Content="This is Another Styled Button"/>
 	    </Grid>
 	</UserControl>
-	```
+```
 
 __Result of the used resources__
 

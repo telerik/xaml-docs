@@ -72,7 +72,7 @@ In the following examples, we will demonstrate how to find a specific location b
 			MessageBox.Show(e.Error.ToString());
 		}	
 	```
-```VB.NET
+	```VB.NET
 		Private Sub myMap_MapMouseClick(sender As Object, eventArgs As MapMouseRoutedEventArgs)
 			GetSearchData(eventArgs.Location)
 		End Sub
@@ -152,7 +152,7 @@ In the following examples, we will demonstrate how to find a specific location b
 			}
 		}	
 	```
-```VB.NET
+	```VB.NET
 		Class MainWindow
 			Public Sub New()
 				InitializeComponent()
@@ -194,13 +194,13 @@ With the __R1 2018 SP2__ version of our controls, you can now change the type of
 Setting one of these URLs depends on how you have structured your query. To search for a location you can type it in structured form, for example, '1 Microsoft way, Redmond WA 98052'. In such a scenario you can use a __Structured URL__. On the other hand, if you type an unstructured address (or free form query) you should choose the unstructured Bing URL to get better results from the service.	
 
 __Example 4: Get a location by specific address__
-	```C#	
-		BingRestMapProvider provider = new BingRestMapProvider(MapMode.Aerial, true, "Your Bing Map Key");
-		BingRestSearchLocationRequest request = new BingRestSearchLocationRequest();
-		request.SearchLocationOptions.UseUnstructuredQuery = true;
-		request.Query = "Your query";
-		this.provider.SearchLocationAsync(request);		
-	```
+```C#	
+	BingRestMapProvider provider = new BingRestMapProvider(MapMode.Aerial, true, "Your Bing Map Key");
+	BingRestSearchLocationRequest request = new BingRestSearchLocationRequest();
+	request.SearchLocationOptions.UseUnstructuredQuery = true;
+	request.Query = "Your query";
+	this.provider.SearchLocationAsync(request);		
+```
 	
 ## See Also
  * [Providers Overview] ({%slug radmap-features-providers%})

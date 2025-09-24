@@ -52,13 +52,13 @@ You could do that using one of the following approaches:
 	__Example 2: Merging the .xaml files__
 
 	```XAML
-	<ResourceDictionary>
-	    <ResourceDictionary.MergedDictionaries>
-	        <ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
-	        <ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
-	    </ResourceDictionary.MergedDictionaries>
-	</ResourceDictionary>
-```
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="Themes/Telerik.Windows.Controls.xaml" />
+				<ResourceDictionary Source="Themes/Telerik.Windows.Controls.Navigation.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	```
 	
 Either way you choose, the end result will be the following:
 

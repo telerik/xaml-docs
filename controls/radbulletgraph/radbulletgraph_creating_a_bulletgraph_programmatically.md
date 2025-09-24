@@ -19,7 +19,7 @@ The following article will demonstrate how to create a simple Horizontal Bullet 
 		RadHorizontalBulletGraph horizontalBulletGraph = new RadHorizontalBulletGraph();
 		this.LayoutRoot.Children.Add(horizontalBulletGraph);
 	```
-```VB.NET
+	```VB.NET
 		Dim horizontalBulletGraph As New RadHorizontalBulletGraph()
 		Me.LayoutRoot.Children.Add(horizontalBulletGraph)
 	```
@@ -48,7 +48,7 @@ The following article will demonstrate how to create a simple Horizontal Bullet 
 		range2.Brush = CombineAlphaAndColorInSolidColorBrush(1, "#E8E8E8");
 		horizontalBulletGraph.QualitativeRanges.Add(range2);
 	```
-```VB.NET
+	```VB.NET
 		horizontalBulletGraph.AutoRange = False
 		horizontalBulletGraph.Width = 300
 		horizontalBulletGraph.Height = 60

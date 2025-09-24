@@ -123,7 +123,7 @@ You can control the connection type through the __ConnectionType__ property. As 
 		xConnection.ConnectionPoints.Add(new Point(420, 200));
 		xConnection.ConnectionPoints.Add(new Point(440, 300));	
 	```
-```VB.NET
+	```VB.NET
 		xConnection.ConnectionPoints.Add(New Point(300, 140))
 		xConnection.ConnectionPoints.Add(New Point(420, 200))
 		xConnection.ConnectionPoints.Add(New Point(440, 300))	
@@ -210,7 +210,7 @@ You can control the connection type through the __ConnectionType__ property. As 
 	```C#
 		DiagramConstants.BezierAutoOffset = 40;			  
 	```
-```VB.NET
+	```VB.NET
 		DiagramConstants.BezierAutoOffset = 40 
 	```
 	
@@ -222,7 +222,7 @@ You can control the connection type through the __ConnectionType__ property. As 
 		this.xDiagram.Connections[0].ConnectionPoints[1] = new Point(220, 200);
 		this.xDiagram.Connections[0].IsModified = true;			  
 	```
-```VB.NET
+	```VB.NET
 		Me.xDiagram.Connections(0).ConnectionPoints(0) = New Point(100, 100)
 		Me.xDiagram.Connections(0).ConnectionPoints(1) = New Point(220, 200)
 		Me.xDiagram.Connections(0).IsModified = True	
@@ -234,7 +234,7 @@ You can control the connection type through the __ConnectionType__ property. As 
 	```C#
 		(this.xDiagram.Connections[0] as RadDiagramConnection).SetBezierHandles(new Point(100, 100), new Point(220, 200));	  
 	```
-```VB.NET
+	```VB.NET
 		TryCast(Me.xDiagram.Connections(0), RadDiagramConnection).SetBezierHandles(New Point(100, 100), New Point(220, 200))
 	```
 	
@@ -276,7 +276,7 @@ You can control the connection type through the __ConnectionType__ property. As 
 		this.xDiagram.Connections[0].ConnectionPoints.Add(new Point(250, 150));
 		this.xDiagram.Connections[0].ConnectionPoints.Add(new Point(350, 50));			  			  
 	```
-```VB.NET
+	```VB.NET
 		Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(140, 20))
 		Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(250, 150))
 		Me.xDiagram.Connections(0).ConnectionPoints.Add(New Point(350, 50))							  
@@ -546,7 +546,7 @@ You can label a connection by setting its __Content__ property. The __Content__ 
 			....
 		this.DataContext = new DataItem() { IpAddress = "192.168.92.0" };
 	```
-```VB.NET
+	```VB.NET
 		Public Class DataItem
 			Inherits ViewModelBase
 			Private m_ipAddress As String

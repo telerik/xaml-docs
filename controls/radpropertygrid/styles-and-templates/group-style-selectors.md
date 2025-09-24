@@ -24,7 +24,7 @@ What we would like to achieve is to apply one style to the Group Name row and di
 
 __Example 1: The GroupStyleSelector class__
 
-	```C#
+```C#
 	public class GroupStyleSelector : StyleSelector
 	{
 	    public override Style SelectStyle(object item, DependencyObject container)
@@ -81,7 +81,7 @@ Depending on the underlying data you can select which style to apply.
 
 __Example 2: Defining the different style for the GroupStyleSelector__
 
-	```XAML
+```XAML
 	<my:GroupStyleSelector x:Key="groupStyleSelector">
 	    <my:GroupStyleSelector.NameGroupStyle>
 	        <Style TargetType="telerik:RadToggleButton">
@@ -107,7 +107,7 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 __Example 3: Basing the style on the default for the control__
 
-	```XAML
+```XAML
 	<Style TargetType="telerik:RadToggleButton" BasedOn="{StaticResource RadToggleButtonStyle}">
 	    <Setter Property="Foreground" Value="Green"/>
 	</Style>
@@ -117,7 +117,7 @@ __Example 3: Basing the style on the default for the control__
 
 __Example 4: Setting RadPropertyGrid's GroupStyleSelector property__
 
-	```XAML
+```XAML
 	<telerik:RadPropertyGrid x:Name="PropertyGrid" 
 	                     RenderMode="Flat"   
 	                     IsGrouped="True"

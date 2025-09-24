@@ -92,7 +92,7 @@ We will specify the following classes, which are going to be used to the RadTree
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class MyItem
 			Public Property Title As String
 
@@ -137,44 +137,8 @@ We will specify the following classes, which are going to be used to the RadTree
 	```
 
 
-	Now consider both of the background notes at the beginning of the topic and take a look at the following code snippet. It declares a __HierarchicalDataTemplate__ and uses the __ItemContainerStyle__ property of both the __RadTreeView__ and the __HierarchicalDataTemplate__.{% if site.site_name == 'Silverlight' %}
-
-	__Example 2: Defining RadTreeView in XAML__
-
-	```XAML
-		<Window.Resources>
-		
-			<Style TargetType="telerik:RadTreeViewItem" x:Key="redStyle">
-				<Setter Property="Background" Value="Red" />
-				<Setter Property="ItemContainerStyle">
-					<Setter.Value>
-						<Style TargetType="telerik:RadTreeViewItem">
-							<Setter Property="Background" Value="Orange" />
-						</Style>
-					</Setter.Value>
-				</Setter>
-			</Style>
-		
-			<Style TargetType="telerik:RadTreeViewItem" x:Key="greenStyle">
-				<Setter Property="Background" Value="Green" />
-			</Style>
-		
-		</Window.Resources>
-		<Grid x:Name="LayoutRoot" Background="White">
-		
-			<telerik:RadTreeView Margin="8" ItemsSource="{Binding Data}" ItemContainerStyle="{StaticResource redStyle}">
-				<telerik:RadTreeView.ItemTemplate>		
-					<telerik:HierarchicalDataTemplate ItemsSource="{Binding SubItems}" ItemContainerStyle="{StaticResource greenStyle}">
-						<TextBlock Text="{Binding Title}" />
-					</telerik:HierarchicalDataTemplate>		
-				</telerik:RadTreeView.ItemTemplate>
-			</telerik:RadTreeView>		
-		</Grid>
-	```
-
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-
+	Now consider both of the background notes at the beginning of the topic and take a look at the following code snippet. It declares a __HierarchicalDataTemplate__ and uses the __ItemContainerStyle__ property of both the __RadTreeView__ and the __HierarchicalDataTemplate__.
+	
 	__Example 2: Defining RadTreeView in XAML__
 
 	```XAML
@@ -210,7 +174,6 @@ We will specify the following classes, which are going to be used to the RadTree
 		
 		</Grid>
 	```
-	{% endif %}
 
 And finally, we need to set the DataContext of the MainWindow:
 

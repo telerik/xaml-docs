@@ -16,8 +16,6 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 
 	>tip You can use *RadChart*, *RadSparkline* or any other custom control as Content for the RadTimeBar.
 
-	#### __C#__
-
 	```C#
 		InitializeComponent();
 		RadAreaSparkline sparkline = new RadAreaSparkline();
@@ -29,12 +27,7 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 			 data.Add(r.Next(0, 60));
 		   }
 		sparkline.ItemsSource = data;
-		```
-
-
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		InitializeComponent()
 		
@@ -53,11 +46,10 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 		Loop
 		
 		sparkline.ItemsSource = data
-		```
+	```
 
 2. Create new TimeBar and add the SparkLine as Content. 
 
-	#### __C#__
 	```C#
 		RadTimeBar timebar = new RadTimeBar();
 		   timebar.BeginInit();
@@ -75,9 +67,7 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 		   timebar.EndInit();
 		   timebar.Content = sparkline;
 		   this.Content = timebar;
-		```
-		
-	#### __VB.NET__
+	```
 	```VB.NET
 		Dim timebar As New RadTimeBar()
 		   timebar.BeginInit()
@@ -95,7 +85,7 @@ RadTimeBar supports lightweight batch initialization through the [ISupportInitia
 		   timebar.EndInit()
 		   timebar.Content = sparkline
 		   Me.Content = timebar
-		```
+	```
 
 The result:         
 ![{{ site.framework_name }} RadTimeBar Created in Code-Behind](images/radtimeBar_create_programmatically.PNG)

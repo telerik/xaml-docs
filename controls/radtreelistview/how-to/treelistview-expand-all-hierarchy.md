@@ -10,10 +10,6 @@ position: 0
 
 # Expand all rows
 
-
-
-## 
-
 This article shows how to expand all rows of __RadTreeListView__.
 
 There are two options:
@@ -25,52 +21,29 @@ __Option 2:__ You can follow these steps to accomplish the same task:
 
 1. Subscribe to the __DataLoaded__ event of the __RadTreeListView__:
 
-	#### __C#__
-
 	```C#
-
 		treeListView.DataLoaded += new EventHandler<EventArgs>(treeListView_DataLoaded);
-```
-
-
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
-
 		AddHandler treeListView.DataLoaded, AddressOf treeListView_DataLoaded
-```
-
-
+	```
 
 2. Define the __DataLoaded__ handler as follows:
 
-	#### __C#__
-
 	```C#
-
 		void treeListView_DataLoaded(object sender, EventArgs e)
 		{
 	   		treeListView.DataLoaded -= treeListView_DataLoaded;
 	    	treeListView.ExpandAllHierarchyItems();   
 		}
-```
-
-
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 
 		Private Sub treeListView_DataLoaded(sender As Object, e As EventArgs)
 	   	treeListView.DataLoaded -= treeListView_DataLoaded
 	   	treeListView.ExpandAllHierarchyItems()
 		End Sub
-```
-
-
-
-
+	```
 
 >Note that we unsubscribe for that event on the first line, so it is not called for each child table. Calling the __ExpandAllHierarchyItems__ will expand all parent rows.
 

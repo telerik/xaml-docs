@@ -16,20 +16,16 @@ Here is a list of the properties which can be used to change the colors of the _
 
 * __Background__ – changes the background of the whole control or just the background of the item if it is set locally to an item.			
 
-	#### __XAML__
 	```XAML
 		<telerik:RadPanelBar Background="#BADD27" />
 	```
 
-	#### __C#__
 	```C#
 		RadPanelBar myPanelBar = new RadPanelBar()
 		{
 		    Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xBA, 0xDD, 0x27))
 		};
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		Dim myPanelBar As New RadPanelBar() With {
 		.Background = New SolidColorBrush(Color.FromArgb(&HFF, &HBA, &HDD, &H27))
@@ -37,18 +33,14 @@ Here is a list of the properties which can be used to change the colors of the _
 	```
 
 * __Foreground__ - changes the foreground of the whole control or just the foreground of the item if it is set locally to an item.			
-
-	#### __XAML__
+	
 	```XAML
 		<telerik:RadPanelBar Foreground="Red" />
 	```
-
-	#### __C#__
+	
 	```C#
 		myPanelBar.Foreground = new SolidColorBrush(Colors.Red);
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		myPanelBar.Foreground = New SolidColorBrush(Colors.Red)
 	```
@@ -60,18 +52,14 @@ Here is a list of the properties which can be used to change the colors of the _
 
 * __BorderBrush__ - changes the border brush of the control if its border thickness is set to a value greater than 0 i.e. the border is visible.			
 
-	#### __XAML__
 	```XAML
 		<telerik:RadPanelBar BorderBrush="Red" BorderThickness="2" />
 	```
 
-	#### __C#__
 	```C#
 		myPanelBar.BorderThickness = new Thickness(2);
 		myPanelBar.BorderBrush = new SolidColorBrush(Colors.Red);
 	```
-
-	#### __VB.NET__
 	```VB.NET
 		myPanelBar.BorderThickness = New Thickness(2)
 		myPanelBar.BorderBrush = New SolidColorBrush(Colors.Red)
@@ -90,7 +78,6 @@ We will continue with an example showing how to change the colors of the differe
 
 To change the color of the __MouseOver__ state, find in the template the element named *MouseOverVisual* and change the brushes it uses. Below you can see the default brushes:		
 
-#### __XAML__
 ```XAML
 	<SolidColorBrush x:Key="RadPanelBar_MouseOverBorder" Color="#FFdbdbdb" />
 	<LinearGradientBrush x:Key="RadPanelBar_SubMouseOver" EndPoint="0,1">
@@ -101,7 +88,6 @@ To change the color of the __MouseOver__ state, find in the template the element
 
 To change the color of the __Selected__ visual state, find in the template the element named *SelectionVisual* and change the brushes it uses. Below you can see the default brushes (same as above):		
 
-#### __XAML__
 ```XAML
 	<!-- Selection -->
 	<SolidColorBrush x:Key="RadPanelBar_MouseOverBorder" Color="#FFdbdbdb" />
@@ -113,7 +99,6 @@ To change the color of the __Selected__ visual state, find in the template the e
 
 To change the color of the __Disabled__ state, find in the template the element named *DisabledVisual* and change the brush it uses. Below you can see the default brush:		
 
-#### __XAML__
 ```XAML
 	<!-- Disabled -->
 	<SolidColorBrush x:Key="DisabledBrush" Color="#99FFFFFF"></SolidColorBrush>
@@ -121,7 +106,6 @@ To change the color of the __Disabled__ state, find in the template the element 
 
 Besides the visual states colors, you can also modify the appearance of the __RadPanelBarItem__ header. You can do so by finding the following code in __RadPanelBarItem's__ control template and applying your desired changes:		
 
-#### __XAML__
 ```XAML
 	<Grid x:Name="HeaderRow" Background="Transparent">
 ```

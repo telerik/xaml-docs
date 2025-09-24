@@ -32,6 +32,7 @@ This is a bug in the WPF framework that is [reported here](https://github.com/do
 
 The important part of the exception stacktrace is the following:
 
+```
 	System.ArithmeticException: Overflow or underflow in the arithmetic operation.
 	--- End of inner exception stack trace ---
 	at System.Windows.Media.Imaging.ColorConvertedBitmap.FinalizeCreation()
@@ -44,6 +45,7 @@ The important part of the exception stacktrace is the following:
 	at System.Windows.Media.Imaging.BitmapFrame.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy)
 	at System.Windows.Media.ImageSourceConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
 	at System.Windows.Baml2006.TypeConverterMarkupExtension.ProvideValue(IServiceProvider serviceProvider)
+```
 
 ## Solution 1
 
@@ -250,7 +252,6 @@ The FileDialogs are using this type of image settings only in its `LayoutTypeToI
 	```
 
 7. Merge the resource dictionary in App.xaml.
-
 	
 	```XAML
 		<Application.Resources>

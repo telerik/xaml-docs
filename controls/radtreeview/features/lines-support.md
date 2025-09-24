@@ -12,21 +12,17 @@ position: 4
 
 The __RadTreeView__ allows you to enable connected lines between the nodes of a treeview. By default the connecting lines between the nodes are not enabled (they are not visible). You should use a single property to do so - __IsLineEnabled__ and set it to __True__.
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsLineEnabled="True">
-	```
+```
 
 ![Rad Tree View Features Lines Support 001](images/RadTreeView_Features_LinesSupport_001.png)
 
 You can also control the visibility of the lines between the root items (the items on the first level) of the treeview. This can be done with the __IsRootLinesEnabled__ property of the treeview. The default value of this property is __True__
 
-#### __XAML__
-
 ```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsLineEnabled="True" IsRootLinesEnabled="False">
-	```
+```
 
 ![Rad Tree View Features Lines Support 002](images/RadTreeView_Features_LinesSupport_002.png)
 

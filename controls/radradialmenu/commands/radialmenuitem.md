@@ -18,8 +18,6 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 1. First, create a class that implements the __ICommand__ interface. __Example 1__ shows a sample implementation.          
 
-	__Example 1: Creating a command__
-
 	```C#
 		public class CustomItemCommand : ICommand
 		{
@@ -48,8 +46,6 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 1. Add an instance of the custom command class to the Resources of the UserControl.
 
-	__Example 2: Adding the command to the Resources__
-
 	```XAML
 		<UserControl.Resources>
 		    <local:CustomItemCommand x:Key="CustomItemCommand"/>
@@ -57,8 +53,6 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 	```
 
 1. Bind the __Command__ property of the RadialMenuItem to the instance of the custom command as shown in __Example 3__.          
-
-	__Example 3: Bind the command__
 
 	```XAML
 		<telerik:RadRadialMenu>

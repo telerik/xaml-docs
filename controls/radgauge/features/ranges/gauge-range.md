@@ -34,7 +34,6 @@ Each range should have a start and and end points. They are defined via the Min 
 
 >tip Typically each range should be colored in a specific color. To set the desired color to the range use its Background property. To learn more about the appearance of the range read the [Range Appearance](#Range_Appearance) section.
 
-#### __XAML__
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
@@ -62,7 +61,6 @@ You can control the width of a range at its start and at its end point. This is 
 
 >tip To learn more about the cell size term, read the [Relative Measurements]({%slug radgauge-features-relative-measurements%}) topic.
 
-#### __XAML__
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
@@ -100,9 +98,6 @@ To control the appearance of a range you can use the following properties:
 
 * __StrokeThickness__ - specifies the thickness of the range's stroke.
 
-Here is an example:
-
-#### __XAML__
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
@@ -147,7 +142,6 @@ You can specify an appearance for the scale's indicator, when it enters inside t
 
 It specifies the background color for the indicator's background when it is in the range. Here is an example:
 
-#### __XAML__
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
@@ -196,7 +190,6 @@ This property is applicable when RangeColorMode property of the indicator is set
 
 This sample demonstrates how the indicator changes its background in this case:        
 
-#### __XAML__
 ```XAML
 	<telerik:RadVerticalLinearGauge Name="gauge" Width="100" Height="300" telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale x:Name="scale" MajorTickStep="10" IsInteractive="True">
@@ -233,9 +226,7 @@ Here are snapshots for different values of the bar indicator:
 The appearance of the labels in the range can be controlled via the following properties:
 
 * __LabelForeground__ - specifies the foreground color for the labels that belong to the range.
-	Here is an example:
 
-	#### __XAML__
 	```XAML
 		<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 			<telerik:VerticalLinearScale Min="0" Max="30"
@@ -266,8 +257,6 @@ The appearance of the labels in the range can be controlled via the following pr
 		</telerik:RadVerticalLinearGauge>
 	```
 	
-	Here is a snapshot of the result:
-
 	![{{ site.framework_name }} RadGauge Range Label Appearance](images/RadGauge_Features_Ranges_Basics_06.png)
 
 ## Ticks Appearance
@@ -280,7 +269,6 @@ The appearance of the ticks in the range can be controlled via the following pro
 
 	Here is an example, where only the major ticks use the range's color for them:
 
-	#### __XAML__
 	```XAML
 		<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 			<telerik:VerticalLinearScale Min="0" Max="30"

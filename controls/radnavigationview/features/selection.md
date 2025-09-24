@@ -21,7 +21,7 @@ The SelectedItem property is used for getting or setting the currently selected 
 	```C#
 		var selectedItem = this.navigationView.SelectedItem as RadNavigationViewItem;
 	```
-```VB.NET
+	```VB.NET
 		Dim selectedItem = TryCast(Me.navigationView.SelectedItem, RadNavigationViewItem)
 	```
 
@@ -30,7 +30,7 @@ The SelectedItem property is used for getting or setting the currently selected 
 	```C#
 		var navigationModel = this.navigationView.SelectedItem as NavigationItemModel;
 	```
-```VB.NET
+	```VB.NET
 		Dim navigationModel = TryCast(Me.navigationView.SelectedItem, NavigationItemModel)
 	```
 

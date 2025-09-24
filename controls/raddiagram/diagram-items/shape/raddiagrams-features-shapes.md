@@ -27,7 +27,6 @@ This tutorial will walk you through the functionality and the main features of t
 
 The __RadDiagramShape__ is an object that describes the nodes of the diagram. You can configure its form using the __Geometry__ property as it allows you to define a custom geometry:		
 
-#### __XAML__
 ```XAML
     <telerik:RadDiagramShape Width="80"
                              Height="80"
@@ -39,7 +38,6 @@ The __RadDiagramShape__ is an object that describes the nodes of the diagram. Yo
 
 or to use one of the predefined shape geometries:		
 
-#### __XAML__
 ```XAML
     <telerik:RadDiagramShape x:Name="ConditionShape"
                     Width="80"
@@ -50,13 +48,10 @@ or to use one of the predefined shape geometries:
                     Position="160,80" />
 ```
 
-#### __C#__
 ```C#
     RadDiagramShape shape = new RadDiagramShape();
     shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape);
 ```
-	
-#### __VB.NET__
 ```VB.NET
     Dim shape As New RadDiagramShape()
     shape.Geometry = ShapeFactory.GetShapeGeometry(FlowChartShapeType.PredefinedShape)
@@ -79,7 +74,6 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 
 * Define a sample string value for the __RadDiagramShape.Content__ property:			
 
-	#### __XAML__
 	```XAML
 		<Grid>
 			<telerik:RadDiagram x:Name="MyDiagram">
@@ -92,7 +86,6 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 
 * Define __UIElements__ in the __Content__ of the shape:
 
-	#### __XAML__
 	```XAML
 		<Grid>
 			<telerik:RadDiagram x:Name="MyDiagram">
@@ -118,7 +111,6 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 
 * Bind the __Content__ to a business property: For the purpose of this tutorial, let's define a sample business class and set it as the __DataContext__ of the {% if site.site_name == 'Silverlight' %}UserControl{% endif %}{% if site.site_name == 'WPF' %}Window{% endif %}.
 
-	#### __C#__
 	```C#
 		public class EmployeeViewModel
 		{
@@ -136,8 +128,6 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 			JobPosition = "President Marketing"
 		};
 	```
-	
-	#### __VB.NET__
 	```VB.NET
 		Public Class EmployeeViewModel
 			Public Property ImagePath() As String
@@ -154,7 +144,6 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 		  }
 	```
 
-	#### __XAML__  
 	```XAML
 			<Grid>
 				<telerik:RadDiagram x:Name="MyDiagram">
@@ -169,7 +158,6 @@ You can add content in the __RadDiagramShape__ using its __Content__ property. I
 
 * If you want to customize the visual representation of the bound property, you can take advantage of the __RadDiagramShape ContentTemplate__ property:			
 
-	#### __XAML__  
 	```XAML
 		<Grid>
 			<telerik:RadDiagram x:Name="MyDiagram">
@@ -253,7 +241,6 @@ You can set the __RadDiagramShape__ in edit mode using the __IsInEditMode__ prop
 
 If the __RadDiagramShape.Content__ property is bound to a business item, you can set the connection __EditTemplate__ to define how the business item will be edited. For example if we use the __BusinessItem__ class, defined above, as a __DataContext__ of the __RadDiagram__, we can set up the following connection:			
 
-#### __XAML__  
 ```XAML
     <Grid>
         <telerik:RadDiagram x:Name="MyDiagram">

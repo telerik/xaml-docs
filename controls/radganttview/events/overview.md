@@ -26,7 +26,7 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 			}
         }
 	```
-```VB.NET
+	```VB.NET
 		Private Sub GanttView_TaskEditing(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditingEventArgs)
 			If your condition here Then
 				e.Cancel = True
@@ -56,7 +56,7 @@ __RadGanttView__ raises the following events, when a task is edited through the 
             MessageBox.Show($"The duration after editing is - {durationAfterEditing}");
         }
 	```
-```VB.NET
+	```VB.NET
 		Private Sub GanttView_TaskEdited(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditedEventArgs)
 			Dim durationAfterEditing = e.Task.Duration
 			MessageBox.Show($"The duration after editing is - {durationAfterEditing}")

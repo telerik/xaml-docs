@@ -22,7 +22,6 @@ Every timeline contains an Annotations collection which holds all the TimelineAn
 
 The following example demonstrates how you can add a couple of annotations to the Annotations collection of a RadTimeline control:           
 
-#### __XAML__
 ```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
 	                        PeriodEnd="2012-01-01"
@@ -76,8 +75,6 @@ The AnnotationsSource property specifies a collection, used to generate the anno
 
 The following example demonstrates how you can bind the AnnotationsSource of a RadTimeline control:
 
-#### __XAML__
-
 ```XAML
 	<Grid.Resources>
 	    <DataTemplate x:Key="TimelineAnnotationTemplate">
@@ -109,8 +106,6 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
 ```
-
-#### __C#__
 
 ```C#
 	public class RadTimelineAnnotationsViewModel
@@ -181,10 +176,7 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	
 	    public int ZIndex { get; set; }
 	}
-	```
-
-#### __VB.NET__
-
+```
 ```VB.NET
 	Public Class RadTimelineAnnotationsViewModel
 		Public Sub New()
@@ -333,7 +325,7 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 		End Property
 		Private m_ZIndex As Integer
 	End Class
-	```
+```
 
 ![Rad Timeline-features-annotations-Annotations Source](images/RadTimeline-features-annotations-AnnotationsSource.jpg)
 
@@ -344,8 +336,6 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 * __Content property__ - The data used to generate the child elements. The default is null.
 * __ContentTemplate property__ - A DataTemplate that defines the visualization of the content. The default is null.
 * __Changing the default annotation ZIndex__ - The default ZIndex of a timeline annotation instance is 300. That is, by default, a timeline annotation appears on top of the timeline items (default ZIndex=200) and the period items (default ZIndex=100). You can change the ZIndex of an annotation instance using the attached Canvas.ZIndex property. The following example demonstrates how you can change the default annotation ZIndex value:
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
@@ -384,13 +374,11 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	                                    ContentTemplate="{StaticResource TimelineAnnotationTemplate}" />
 	    </telerik:RadTimeline.Annotations>
 	</telerik:RadTimeline>
-	```
+```
 
 ![Rad Timeline-features-annotations-ZIndex](images/RadTimeline-features-annotations-ZIndex.jpg)
 
 * __Changing the default annotation top margin__  - The default top margin of a timeline annotation instance equals the height of the period items, positioned on top of the timeline line. You can change the default top margin value of an annotation instance using the Margin property. The following example demonstrates how you can change the default annotation top margin value:
-
-#### __XAML__
 
 ```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
@@ -432,6 +420,6 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	                                    ContentTemplate="{StaticResource TimelineAnnotationTemplate}" />
 	    </telerik:RadTimeline.Annotations>
 	</telerik:RadTimeline>
-	```
+```
 
 ![Rad Timeline-features-annotations-Margin](images/RadTimeline-features-annotations-Margin.jpg)

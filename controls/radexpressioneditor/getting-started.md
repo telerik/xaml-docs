@@ -235,7 +235,7 @@ __Example 3__
 	   }
 	  }  
 	 }
-	```
+```
 ```VB.NET
 	Public Class MyViewModel
 	 Private m_employees As ObservableCollection(Of Employee)

@@ -10,7 +10,7 @@ position: 6
 
 # Drill-Down
 
-As of **R1 2019**, the RadExpressionEditor control allows users to expand complex objects and access their sub-properties. This functionality is controlled by the new **IsFieldsDrillDownEnabled** property.
+RadExpressionEditor allows users to expand complex objects and access their sub-properties. This functionality is controlled by the new **IsFieldsDrillDownEnabled** property.
 
 __Example 1: Enabling drill-down in XAML__
 
@@ -23,16 +23,15 @@ __Example 2: Enabling drill-down in code-behind__
 ```C#
     this.radExpressionEditor.IsFieldsDrillDownEnabled = true;
 ```
-
-__Example 2: Enabling drill-down in code-behind__
-
 ```VB
     Me.radExpressionEditor.IsFieldsDrillDownEnabled = True
 ```
 
 **Figure 1** illustrates the difference between the functionality being disabled and enabled.
 
-{% figure 1, "Drill-down functionality", "drill-down.png" %}
+__Drill-down functionality__
+
+![](images/drill-down.png.png)
 
 ## See Also
 

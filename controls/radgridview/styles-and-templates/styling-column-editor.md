@@ -29,7 +29,7 @@ For example, if you want to set the style for the __GridViewDataColumn__'s edito
 
 __Example 1: Styling all text boxes of an application__
 
-	```XAML
+```XAML
 	<Style x:Key="TextBoxStyle" TargetType="TextBox">
 	    <Setter Property="Background" Value="Red"/>
 	    <Setter Property="Foreground" Value="Yellow"/>
@@ -41,7 +41,7 @@ __Example 1: Styling all text boxes of an application__
 
 __Example 2: Setting a column's EditorStyle__
 
-	```XAML
+```XAML
 	<telerik:GridViewDataColumn EditorStyle="{StaticResource TextBoxStyle}" />
 ```
 

@@ -14,14 +14,14 @@ When the RadGridView is read-only or bound to a collection that does not impleme
 
 __Example 1: Inser New Row in ReadOnly RadGridView__
 
-	```C#
-		private void Button1_Click(object sender, RoutedEventArgs e)
-		{
-			var item = new Club() { Name = "New Club" };
-			this.myGridView.Items.AddNewItem(item);
-			this.myGridView.SelectedItem = item; // select the new row if required
-		}
-	```
+```C#
+	private void Button1_Click(object sender, RoutedEventArgs e)
+	{
+		var item = new Club() { Name = "New Club" };
+		this.myGridView.Items.AddNewItem(item);
+		this.myGridView.SelectedItem = item; // select the new row if required
+	}
+```
 
 ## See Also
 

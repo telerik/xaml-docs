@@ -20,8 +20,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 	* __IsLoadOnDemandEnabled__
 	* __IsExpandOnSingleClickEnabled__
 
-	#### __XAML__
-
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 		   IsLoadOnDemandEnabled="True" IsExpandOnSingleClickEnabled="True"
@@ -32,8 +30,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 * Create a new class named __NorthwindDataSource__. 
 
-	#### __C#__
-
 	```C#
 		public class NorthwindDataSource
 		{
@@ -43,8 +39,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 * Add a reference to your WCF Service
 * In the __NorthwindDataSource__ class add a reference to an __ObservableCollection__ of __Categories.__
 * In the __NorthwindDataSource__ class add a reference to your WCF Service client: 
-
-	#### __C#__
 
 	```C#
 		public class NorthwindDataSource
@@ -65,13 +59,11 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Categories__ from the database: 
 
-	#### __C#__  
 	```C#
 		this.serviceClient.LoadCategoriesCompleted += new EventHandler<LoadCategoriesCompletedEventArgs>( serviceClient_LoadCategoriesCompleted );
 		this.serviceClient.LoadCategoriesAsync();
 	```
 
-	#### __C#__  
 	```C#
 		foreach ( Categories c in serviceClient.LoadCategories() )
 		{
@@ -81,7 +73,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 * Update your treeview declaration - set the __ItemsSource__ and __ItemTemplate__ properties. 
 
-	#### __XAML__  
 	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 			IsLoadOnDemandEnabled="True" IsExpandOnSingleClickEnabled="True"
@@ -102,7 +93,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 * Add the following method to the __NorthwindDataSource__ class, which aims to load the products for the expanded category: 
 
-	#### __C#__
 	```C#
 		public void BeginLoadingProducts( Categories category )
 		{
@@ -122,7 +112,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 		}
 	```
 
-	#### __C#__
 	```C#
 		public void LoadProducts( Categories category )
 		{
@@ -136,7 +125,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 	The body of the exposed __LoadProductsByCategoryId()__ method is shown on the code snippet below.
 		
-	#### __C#__
 	```C#
 		[OperationContract]
 		public List<Products> LoadProductsByCategoryId( int categoryId )
@@ -152,7 +140,6 @@ Here will be examined "best practice" for using __RadTreeView__ with load on dem
 
 * Add the following code to the load on demand event handler, which you declared on step 1. 
 
-	#### __C#__  
 	```C#
 		private void radTreeView_LoadOnDemand( object sender, Telerik.Windows.RadRoutedEventArgs e )
 		{

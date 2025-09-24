@@ -24,7 +24,10 @@ __Example 1: Setting the IsBusy property__
 
 You can data bind this property in any way that suits your custom logic. Note that the indicator will be visible only when the __IsBusy__ property is set to __True__.
 
-{% figure 1, "RadGridView with busy indicator", "gridview-features-isbusy.gif" %}
+__RadGridView with busy indicator__
+
+![](images/gridview-features-isbusy.gif)
+
 
 ## Progress Determination
 
@@ -44,7 +47,9 @@ __Example 2: Defining a determined indicator__
 	<telerik:RadGridView BusyIndicatorIsIndeterminate="False" BusyIndicatorProgressValue="67" />
 ```
 
-{% figure 2, "RadGridView with determined busy indicator", "gridview-features-progress-value.png" %}
+__RadGridView with determined busy indicator__
+
+![](images/gridview-features-progress-value.png)
 
 >A good example of how to define and update a determined busy indicator has been demonstrated in the [following article]({%slug radbusyindicator-features-report-progress-value%}).
 
@@ -74,7 +79,9 @@ __Example 4: Setting BusyIndicatorContentTemplate__
 	</telerik:RadGridView>
 ```
 
-{% figure 3, "RadGridView with busy indicator with custom content template", "gridview-features-content-template.png" %}
+__RadGridView with busy indicator with custom content template__
+
+![](images/gridview-features-content-template.png)
 
 ## See Also
 

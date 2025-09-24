@@ -29,14 +29,11 @@ __RadTileList__ also suggests an option to further customize the size. For the p
 
 __RadTileList__ exposes __VerticalTilesAlignment__ property that controls the position of the tiles independently of the group they belong to. It can be set no matter if being in a grouped state or not. Its type is of type __VerticalAlignment__ and the default value is __Center__. Modifying it will result in: 
 
-* Top {% if site.site_name == 'Silverlight' %}
-![Vertical Tiles Alignment Top SL](images/VerticalTilesAlignment_Top_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
+* Top
+![Vertical Tiles Alignment Top WPF](images/VerticalTilesAlignment_Top_WPF.PNG)
 
-![Vertical Tiles Alignment Top WPF](images/VerticalTilesAlignment_Top_WPF.PNG){% endif %}
-
-* Bottom {% if site.site_name == 'Silverlight' %}
-![Vertical Tiles Alignment Bottom SL](images/VerticalTilesAlignment_Bottom_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
-![Vertical Tiles Alignment Bottom WPF](images/VerticalTilesAlignment_Bottom_WPF.PNG){% endif %}
+* Bottom  
+![Vertical Tiles Alignment Bottom WPF](images/VerticalTilesAlignment_Bottom_WPF.PNG)
 
 ## GroupTemplate
 
@@ -48,29 +45,26 @@ For example:
 __Example 1: Defining the GroupTemplate__
 
 ```XAML
-			<Grid.Resources>
-			  <DataTemplate x:Key="ItemTemplate">
-			    <TextBlock Text="{Binding FirstName}"/>
-			  </DataTemplate>
-			  <DataTemplate x:Key="GroupTemplate">
-			    <TextBlock Text="{Binding}" FontWeight="Bold" Foreground="#FF006AC1" FontSize="20"/>
-			  </DataTemplate>
-			  <CollectionViewSource x:Key="GroupedItems" Source="{Binding Employees}">
-			    <CollectionViewSource.GroupDescriptions>
-			      <PropertyGroupDescription PropertyName="Occupation" />
-			    </CollectionViewSource.GroupDescriptions>
-			  </CollectionViewSource>
-			</Grid.Resources>
-			<telerik:RadTileList x:Name="RadTileList"
-			              GroupMember="Occupation"
-			              ItemsSource="{Binding Employees}"
-			              ItemTemplate="{StaticResource ItemTemplate}"/>
-	```
+		<Grid.Resources>
+		  <DataTemplate x:Key="ItemTemplate">
+			<TextBlock Text="{Binding FirstName}"/>
+		  </DataTemplate>
+		  <DataTemplate x:Key="GroupTemplate">
+			<TextBlock Text="{Binding}" FontWeight="Bold" Foreground="#FF006AC1" FontSize="20"/>
+		  </DataTemplate>
+		  <CollectionViewSource x:Key="GroupedItems" Source="{Binding Employees}">
+			<CollectionViewSource.GroupDescriptions>
+			  <PropertyGroupDescription PropertyName="Occupation" />
+			</CollectionViewSource.GroupDescriptions>
+		  </CollectionViewSource>
+		</Grid.Resources>
+		<telerik:RadTileList x:Name="RadTileList"
+					  GroupMember="Occupation"
+					  ItemsSource="{Binding Employees}"
+					  ItemTemplate="{StaticResource ItemTemplate}"/>
+```
 
-
-{% if site.site_name == 'Silverlight' %}
-![Group Template SL](images/GroupTemplate_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
-![Group Template WPF](images/GroupTemplate_WPF.PNG){% endif %}
+![Group Template WPF](images/GroupTemplate_WPF.PNG)
 
 ## GroupHeaderVisibility
 
@@ -80,13 +74,11 @@ __RadTileList__ exposes a __GroupHeaderVisibility__ property that sets whether t
 __Example 2: Setting the GroupHeaderVisibility property__
 
 ```XAML
-			<telerik:RadTileList x:Name="RadTileList1"
-			                     GroupHeaderVisibility="Collapsed"/>
-	```
+	<telerik:RadTileList x:Name="RadTileList1"
+						 GroupHeaderVisibility="Collapsed"/>
+```
 
-{% if site.site_name == 'Silverlight' %}
-![Group Header Visibility SL](images/GroupHeaderVisibility_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
-![Group Header Visibility WPF](images/GroupHeaderVisibility_WPF.PNG){% endif %}
+![Group Header Visibility WPF](images/GroupHeaderVisibility_WPF.PNG)
 
 ## GroupHeaderHeight
 
@@ -96,13 +88,11 @@ __RadTileList__ gives the opportunity to set the height of the headers with a si
 __Example 3: Setting the GroupHeaderHeight property__
 
 ```XAML
-			<telerik:RadTileList x:Name="RadTileList2"
-			                GroupHeaderHeight="100"
-			                GroupTemplate="{StaticResource GroupTemplate}"
-			                ItemsSource="{Binding Source={StaticResource GroupedItems}}"
-			                ItemTemplate="{StaticResource ItemTemplate}"/>
-	```
+	<telerik:RadTileList x:Name="RadTileList2"
+					GroupHeaderHeight="100"
+					GroupTemplate="{StaticResource GroupTemplate}"
+					ItemsSource="{Binding Source={StaticResource GroupedItems}}"
+					ItemTemplate="{StaticResource ItemTemplate}"/>
+```
 
-{% if site.site_name == 'Silverlight' %}
-![Group Header Height SL](images/GroupHeaderHeight_SL.PNG){% endif %}{% if site.site_name == 'WPF' %}
-![Group Header Height WPF](images/GroupHeaderHeight_WPF.PNG){% endif %}
+![Group Header Height WPF](images/GroupHeaderHeight_WPF.PNG)

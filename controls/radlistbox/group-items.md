@@ -26,7 +26,7 @@ The following example demonstrates how to bind the `ItemsSource` property of `Ra
 			public string Name { get; set; }
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Class Item
 			Public Property Group() As String
 			Public Property Name() As String
@@ -59,7 +59,7 @@ The following example demonstrates how to bind the `ItemsSource` property of `Ra
 			CollectionView = view;
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Property Collection() As ObservableCollection(Of Item)
 		Public Property CollectionView() As CollectionViewSource
 		Public Sub New()
@@ -108,6 +108,5 @@ __RadListBox with grouping enabled__
 ![A picture showing RadListBox with its data grouped](images/radlistbox_how_to_group_items_01.png)
 	
 ## See Also  
-{% if site.framework_name == 'WPF' %}
- * [Get Started with UI for WPF]({%slug getting-started-first-steps%})
-{% endif %}
+
+* [Get Started with UI for WPF]({%slug getting-started-first-steps%})

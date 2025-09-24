@@ -30,12 +30,9 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 2. Switch to the code-behind and add a reference to the `NorthwindEntities` object.
 
-	#### __C#__  
 	```C#
 		NorthwindEntities dbContext = new NorthwindEntities( new Uri( "Enter your service address here") );
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Dim dbContext As New NorthwindEntities(New Uri("Enter your service address here"))
 	```
@@ -44,7 +41,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 3. The ComboBoxs control will be populated with all __Products__ from the __Northwind__ database. In the drop-down list the `ProductName` and the `UnitPrice` properties will be displayed. Add the following code which will make the initial load of the objects.
 
-	#### __C#__  
 	```C#
 		private void BeginRequest()
 		{
@@ -59,8 +55,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 			this.radComboBox.ItemsSource = products;
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Private Sub BeginRequest()
 			Dim query As DataServiceQuery(Of Products) = dbContext.CreateQuery(Of Products)("Products")
@@ -74,19 +68,15 @@ Before proceeding further with this tutorial you need to create a new applicatio
 		End Sub
 	```
 
-	#### __C#__  
 	```C#
 		this.radComboBox.ItemsSource = dbContext.Products.Execute();
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Me.radComboBox.ItemsSource = dbContext.Products.Execute()
 	```
 
 4. You need to declare a custom __DataTemplate__ to determine how the items in the drop-down will look like. Add the following __DataTemplate__ declaration in your XAML resources.
-
-	#### __XAML__  
+ 
 	```XAML
 		<UserControl.Resources>
 			<DataTemplate x:Key="CustomItemTemplate">
@@ -117,14 +107,11 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 
 1. Create a new class named `NorthwindDataSource`.
 
-	#### __C#__  
 	```C#
 		public class NorthwindDataSource
 		{
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Public Class NorthwindDataSource
 		End Class
@@ -136,7 +123,6 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 
 4. In the `NorthwindDataSource` class add a reference to the `NorthwindEntities` object:
 
-	#### __C#__  
 	```C#
 		public class NorthwindDataSource
 		{
@@ -155,8 +141,6 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 			}
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Public Class NorthwindDataSource
 			Private Shared northwindEntity As NorthwindEntities
@@ -180,23 +164,15 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 
 5. Add the following code in the constructor of the `NorthwindDataSource`. It will make the initial load of all __Products__ from the database:
 
-	#### __C#__  
 	```C#
 		northwindEntity.Products.BeginExecute(
 		   ( IAsyncResult result ) => EntitiesLoaded<Products>( result, this.Products ),
 		   northwindEntity.Products );
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		northwindEntity.Products.BeginExecute(Function(ByVal result As IAsyncResult) EntitiesLoaded(Of Products)(result, Me.Products), northwindEntity.Products)
 	```
-
-	{% if site.site_name == 'Silverlight' %}
-	And here is the code for the __EntitiesLoaded__ method:
-	{% endif %}
-
-	#### __C#__  
+	
 	```C#
 		private static void EntitiesLoaded<T>( IAsyncResult result, Collection<T> entities )
 		{
@@ -207,8 +183,6 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 		   }
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		Private Shared Sub EntitiesLoaded(Of T)(ByVal result As IAsyncResult, ByVal entities As Collection(Of T))
 			Dim query As DataServiceQuery(Of T) = TryCast(result.AsyncState, DataServiceQuery(Of T))
@@ -218,15 +192,12 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 		End Sub
 	```
 
-	#### __C#__  
 	```C#
 		foreach ( Products p in northwindEntity.Products.Execute() )
 		{
 			this.Products.Add( p );
 		}
 	```
-
-	#### __VB.NET__  
 	```VB.NET
 		For Each p As Products In northwindEntity.Products.Execute()
 			Me.Products.Add(p)
@@ -235,7 +206,6 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 
 6. Declare the `NorthwindDataSource` object as a resource in your application.
 
-	#### __XAML__  
 	```XAML
 		<UserControl.Resources>
 			<example:NorthwindDataSource x:Key="DataSource"/>   
@@ -244,7 +214,6 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 
 7. Declare a custom `DataTemplate` to determine how the items in the drop-down will look like. 
 
-	#### __XAML__  
 	```XAML
 		<UserControl.Resources>
 			<DataTemplate x:Key="CustomItemTemplate">
@@ -262,7 +231,6 @@ This section will show you how to populate your `RadComboBox` control in a MVVM 
 
 8. Update your `RadComboBox` declaration - set the `ItemsSource` and `ItemTemplate` properties.
 
-	#### __XAML__  
 	```XAML
 		<telerik:RadComboBox x:Name="radComboBox"
 			ItemsSource="{Binding Source={StaticResource DataSource}, Path=Products}"

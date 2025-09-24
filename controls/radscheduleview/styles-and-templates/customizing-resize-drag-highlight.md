@@ -24,8 +24,6 @@ In order to customize the __ResizeHighlightStyle__ using Implicit Styles you wil
 
 2. Merge the necessary ResourceDictionary in the App.xaml file (the Office Black theme is used in this example):
 
-	#### __XAML__
-
 	```XAML
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -40,8 +38,6 @@ In order to customize the __ResizeHighlightStyle__ using Implicit Styles you wil
 
 3. Create a Style that targets the __HighlightItem__, base it on the StaticResource ResizeHighlightStyle and set the Background property:
 
-	#### __XAML__
-
 	```XAML
 		<Style x:Key="MyResizeHighlightStyle" TargetType="telerik:HighlightItem" BasedOn="{StaticResource ResizeHighlightStyle}">
 			<Setter Property="Background" Value="LightBlue"/>
@@ -49,8 +45,6 @@ In order to customize the __ResizeHighlightStyle__ using Implicit Styles you wil
 	```
 
 4. Next we will need to set the newly created Style to the ResizeHighlightStyle of the ScheduleView control:
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
@@ -71,8 +65,6 @@ In order to customize the __DragDropHighlightStyle__ using Implicit Styles you w
 
 1. Create a Style that targets the __HighlightItem__, base it on the StaticResource DragDropHighlightStyle and set the Background property:
 
-	#### __XAML__
-
 	```XAML
 		<Style x:Key="MyHighlightItemStyle" TargetType="telerik:HighlightItem" BasedOn="{StaticResource DragDropHighlightStyle}">
 			<Setter Property="Background" Value="Green"/>
@@ -80,8 +72,6 @@ In order to customize the __DragDropHighlightStyle__ using Implicit Styles you w
 	```
 
 2. Next we will need to set the newly created Style to the DragDropHighlightStyle of the ScheduleView control:
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"

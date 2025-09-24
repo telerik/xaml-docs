@@ -14,8 +14,6 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 
 1. We'll get started with a class with two properties - Duration and Date. They will be used to represent the two types of items in the Timeline. We'll also need a method that will set values to the newly created properties and will return a collection of our business objects.            
 
-	#### __C#__
-
 	```C#
 		public class Product
 		{
@@ -45,10 +43,7 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 				return result;
 			}
 		}
-		```
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class Product
 			Public Property Duration() As TimeSpan
@@ -73,13 +68,11 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 				Return result
 			End Function
 		End Class
-		```
+	```
 
 2. Create new class that inherits the ViewModelBase abstract class. This will be your ViewModel. What we'll need to add in it - an ObservableCollection that will be used as data source. In the constructor of the class call the GetData method we created in our Product class. (check Step 1.) The parameter of the method will represent the number of items in the timeline.            
 
 	>ViewModelBase class is part of the Telerik.Windows.Controls.dll
-
-	#### __C#__
 
 	```C#
 		public class ExampleViewModel : ViewModelBase
@@ -106,12 +99,7 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 				this.Data = Product.GetData(15);
 			}
 		}
-		```
-
-
-
-	#### __VB.NET__
-
+	```
 	```VB.NET
 		Public Class ExampleViewModel
 			Inherits ViewModelBase
@@ -132,11 +120,9 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 					Me.Data = Product.GetData(15)
 				End Sub
 		End Class
-		```
+	```
 
 3. Add new RadTimeline declarations in XAML and bind the StartPath and DurationPath properties. To learn more about these properties, please check the [DataBinding]({%slug radtimeline-databinding%}) topic:            
-
-	#### __XAML__
 
 	```XAML
 		<telerik:RadTimeline Height="250" x:Name="RadTimeline1"

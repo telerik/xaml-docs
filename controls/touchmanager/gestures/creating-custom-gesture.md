@@ -127,7 +127,7 @@ When we add the properties we can use them in the overrides of the gesture recog
 			this.isTwoFingerGesture = this.touchIds.Count == MaxTouchCount;
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Overrides Sub OnTouchDown(args As GestureRecognizerEventArgs)
 			Me.touchIds.Add(args.TouchId)
 			If Me.touchIds.Count = 1 Then
@@ -146,7 +146,7 @@ When we add the properties we can use them in the overrides of the gesture recog
             this.touchIds.Remove(args.TouchId);
         }
 	```
-```VB.NET
+	```VB.NET
 		Public Overrides Sub OnTouchLeave(args As GestureRecognizerEventArgs)
 			Me.touchIds.Remove(args.TouchId)
 		End Sub
@@ -172,7 +172,7 @@ When we add the properties we can use them in the overrides of the gesture recog
 			}
 		}
 	```
-```VB.NET
+	```VB.NET
 		Public Overrides Sub OnTouchUp(args As GestureRecognizerEventArgs)
 			Me.touchIds.Remove(args.TouchId)
 			If Me.touchIds.Count = 0 AndAlso Me.isTwoFingerGesture Then

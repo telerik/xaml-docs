@@ -11,8 +11,6 @@ position: 5
 # RowDetailsStyleSelector
 
 This article illustrates how to conditionally style row details through RadGridView's **RowDetailsStyleSelector** property.
-		
->tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
 
 First, create a new class which inherits the __StyleSelector__ class (which resides in the 
  {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls__{% endif %} assembly) and override its __SelectStyle__ method. Based on your conditions you return the proper Style that will be applied to the **DetailsPresenter** element.

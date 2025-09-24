@@ -62,7 +62,7 @@ Regarding the __DropDownIcon__, you can modify the following resources:
 
 * __ButtonIconForeground_Normal__ - is the foreground border brush applied to the CalendarIconBackground path.
 
->tipIf you want to further modify the drop-down button's default appearance you can modify the default template applied to the __ButtonChrome__. Read more [here]({%slug radbuttons-styles-and-templates-styling-buttonchrome%}).
+>tipIf you want to further modify the drop-down button's default appearance you can modify the default template applied to the __ButtonChrome__.
 
 Here is an example of the above resources modified:
 

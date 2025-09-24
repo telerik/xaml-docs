@@ -2,7 +2,7 @@
 title: Overview
 page_title: RichTextBox Dialogs
 description: Check our &quot;RichTextBox Dialogs&quot; documentation article for the RadRichTextBox WPF control.
-slug: radrichtextbox-backward-compatibility
+slug: radrichtextbox-dialogs-overview
 tags: rtb, dialogs
 published: True
 position: 0

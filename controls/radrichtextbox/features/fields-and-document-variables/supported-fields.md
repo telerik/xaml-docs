@@ -22,7 +22,7 @@ In the model of RadDocument, the base class for all fields is __CodeBasedField__
 
 **Class name: AuthorField**
 
-The type of field is related to track changes, specifies the name of the user that has modified the document part. Read more here: {% mdslug %}[Track Changes]({%slug radrichtextbox-features-track-changes%}){% endmdslug %}.
+The type of field is related to track changes, specifies the name of the user that has modified the document part. Read more here: [Track Changes]({%slug radrichtextbox-features-track-changes%}).
 
 
 ### BIBLIOGRAPHY

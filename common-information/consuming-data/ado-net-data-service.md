@@ -10,15 +10,15 @@ position: 2
 
 # Consuming WCF Data Service
 
-The purpose of this tutorial is to show you how to make a call to an ADO.NET Data Service in the context of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
+The purpose of this tutorial is to show you how to make a call to an ADO.NET Data Service in the context of a WPF application. The following common tasks will be examined:
 
->tip You can check the Telerik [RadDataServiceDataSource]({%slug %}) which provides seamless integration between an user interface and data coming from a WCF Data Service.
+>tip You can check the Telerik [RadDataServiceDataSource]({%slug raddataservicedatasource-overview%}) which provides seamless integration between an user interface and data coming from a WCF Data Service.
 
 * Adding a reference.
 
 * Creating a new instance of the exposed entity.
 
-* Making {% if site.site_name == 'Silverlight' %}asynchronous{% endif %} call to the service and consuming the service result.
+* Making call to the service and consuming the service result.
 
 This tutorial will use the __Northwind__ database, which can be accessed from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/v4/Northwind/Northwind.svc)
 
@@ -73,8 +73,6 @@ __NorthwindEntities__ represents the runtime context of a given data service. Wh
 ## Making a Call to the Service and Consuming the Result
 
 Making a call to an ADO.NET Data Service is a simple process. Here is a sample code, demonstrating how to load all categories from the Categories table in the Northwind database: 
-
-
 
 ```C#
 	public partial class MainWindow : Window

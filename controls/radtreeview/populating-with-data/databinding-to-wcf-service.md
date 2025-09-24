@@ -14,7 +14,7 @@ The purpose of this tutorial is to show you how to populate a __RadTreeView__ wi
 
 >This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
-Here will be examined "best practice" for using __RadTreeView__ with load on demand and WCF Service. You can read more information about the load on demand behavior [[!] here](radtreeview-features-load-on-demand.html). 
+Here will be examined "best practice" for using __RadTreeView__ with load on demand and WCF Service.
 
 * Add a new __RadTreeView__ declaration in your XAML and add an event handler for __LoadOnDemand__ event. Also set the following properties to __True__:
 	* __IsLoadOnDemandEnabled__

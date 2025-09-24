@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
->tip This topic will present you with the simple way of creating a theme. It's suitable for themes which contain less XAML. The advanced approach is more performant, especially when creating themes for the larger controls. To learn more about the advanced approach read the [Creating a Custom Theme]({%slug common-styling-apperance-themes-custom-theme-project%}) topic in the common section.
+>tip This topic will present you with the simple way of creating a theme. It's suitable for themes which contain less XAML. The advanced approach is more performant, especially when creating themes for the larger controls.
 
 The __RadDocking__ uses controls such as __PaneHeader__, [RadPaneGroup]({%slug raddocking-features-pane-groups%}), [ToolWindow]({%slug raddocking-features-tool-window%}), [RadSplitContainer]({%slug raddocking-features-split-container%}) that are usually created dynamically depending on the user's actions. Such controls cannot be styled declaratively in XAML. In order to style them you have to apply a theme to your __RadDocking__ control that contains the styles for them. 
 
@@ -18,31 +18,17 @@ The __RadDocking__ uses controls such as __PaneHeader__, [RadPaneGroup]({%slug r
 
 ## Creating the Theme
 
-{% if site.site_name == 'Silverlight' %}
-Before theming the controls involved with the __RadDocking__ control, you have to create a __ResourceDictionary__ that will represent your theme. For example, create the following structure in your project.  
-{% else %}
-![{{ site.framework_name }} RadDocking Custom Theme Silverlight](images/RadDocking_ThemingOverview_01.png)
-{% endif %}
-
-{% if site.site_name == 'Silverlight' %}
-In the __RadDockingTheme.xaml__ you will place the styles and the resources for your theme.  
-{% else %}
 Before theming the controls involved with the __RadDocking__ control, you have to create a Class Library project that will represent your theme. For example create a project with the following name.
-{% endif %}
 
-{% if site.site_name == 'WPF' %}
 ![{{ site.framework_name }} RadDocking Custom Theme WPF](images/RadDocking_ThemingOverview_02.png)
 
 In the __Generic.xaml__ you should place the styles and the resources for your theme.
-{% endif %}
 
 >The __RadDockingTheme__ class should inherit from the Telerik.Windows.Controls.__Theme__ class.
 
 ## Applying a Theme
 
 The theme can be easily set to your __RadDocking__ control in the following way.
-
-
 
 ```C#
 	public StylingPaneHeader()
@@ -58,8 +44,6 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	End Sub
 ```
 
-
-
 ```XAML
 	<UserControl.Resources>
 	    <local:CustomTheme x:Key="MyTheme" />
@@ -70,8 +54,6 @@ The theme can be easily set to your __RadDocking__ control in the following way.
 	            </telerik:RadDocking>
 	        </Grid>
 ```
-
-
 
 ```C#
 	public StylingPaneHeader1()

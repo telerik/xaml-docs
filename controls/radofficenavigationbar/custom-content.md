@@ -14,7 +14,7 @@ position: 4
 
 Each RadOfficeNavigationBarItem supports setting complex structures of elements to its `ContentTemplate` and `CompactContentTemplate` properties. These structures will represent the values set to its `Content` and `CompactContent` properties. 
 
->important The CompactContent, CompactContentTemplate, and CompactContentTemplateSelector properties will be used when the `IsInCompactMode` property is set to __True__. To learn more about this items display mode, check the [View Modes]({%slug radofficenavigationbar-view-modes%}) article.
+>important The CompactContent, CompactContentTemplate, and CompactContentTemplateSelector properties will be used when the `IsInCompactMode` property is set to __True__. To learn more about this items display mode, check the [Display Modes]({%slug radofficenavigationbar-display-modes%}) article.
 
 __Example complex ContentTemplate__
 ```XAML

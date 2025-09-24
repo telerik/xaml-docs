@@ -65,7 +65,8 @@ __Example 1: Adding RadGridView in XAML__
 
 >In order to use __RadGridView__ in XAML, you have to add the following namespace declaration:
 >__Example 2: Declaring Telerik Namespace__
->```XAML
+
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 ```
 

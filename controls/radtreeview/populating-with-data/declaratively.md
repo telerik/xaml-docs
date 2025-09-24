@@ -36,7 +36,7 @@ In order to add treeview items you need to use the __Items__ property. The __Ite
 Here is the result: 
 ![{{ site.framework_name }} RadTreeView Declarative Binding Top Level](images/RadTreeView_PopulatingWithDataDeclaratively_010.PNG)
 
->Consider adding __RadTreeViewItems__ directly, without specifying __<telerik:RadTreeView.Items>__
+>Consider adding __RadTreeViewItems__ directly, without specifying `telerik:RadTreeView.Items`
 explicitly. The effect will be the same, but your XAML will be more readable:
 
 ```XAML

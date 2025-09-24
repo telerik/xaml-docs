@@ -3226,10 +3226,6 @@ redirects:
     to: "/devtools/$1/controls/radcolorpicker/overview"
     type: Permanent
 -
-    from: "^/devtools/(.*)/controls/radcolorpicker/howto/binding-to-object$"
-    to: "/devtools/$1/controls/radcolorpicker/data-binding"
-    type: Permanent
--
     from: "^/devtools/(.*)/controls/radcolorpicker/howto/how-to-set-custom-content$"
     to: "/devtools/$1/controls/radcolorpicker/appearance"
     type: Permanent

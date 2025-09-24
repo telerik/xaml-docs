@@ -17,8 +17,8 @@ The __RadDataPager__ splits the data into separate pages with a certain size. In
 ```XAML
 	<telerik:RadDataPager x:Name="radDataPager" PageSize="5" />
 ```
-         
- ![{{ site.framework_name }} RadDataPager Page Size 5](images/RadDataPager_Features_PageSize_01.png)
+
+![{{ site.framework_name }} RadDataPager Page Size 5](images/RadDataPager_Features_PageSize_01.png)
 
 ## See Also  
  * [Infinite Paging]({%slug raddatapager-features-infinite-paging%})

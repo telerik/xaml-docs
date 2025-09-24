@@ -11,7 +11,7 @@ CTAControlName: ColorPicker
 
 # {{ site.framework_name }} ColorPicker Overview
 
-{% if site.site_name == 'Silverlight' %}![Color PickerSL](images/ColorPickerSL.png){% endif %}{% if site.site_name == 'WPF' %}![Color PickerWPF](images/ColorPickerWPF.png){% endif %}
+![Color PickerWPF](images/ColorPickerWPF.png)
 
 __RadColorPicker__ for {{site.framework_name}} is a lightweight UI component that allows users to select colors from predefined Color Presets or from bound lists of custom colors. It can be used to easily format a Control's text or background.
 

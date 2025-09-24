@@ -96,8 +96,8 @@ __Example 2: Defining a DataTemplateSelector__
 			public DataTemplate BigSalaryTemplate { get; set; }
 			public DataTemplate SmallSalaryTemplate { get; set; }
 		}
-```
-```VB.NET
+	```
+	```VB.NET
 	Public Class EmployeesEditTemplateSelector
 	    Inherits System.Windows.Controls.DataTemplateSelector
 	    Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
@@ -113,7 +113,7 @@ __Example 2: Defining a DataTemplateSelector__
 	    Public Property BigSalaryTemplate() As DataTemplate
 	    Public Property SmallSalaryTemplate() As DataTemplate
 	End Class
-```
+	```
 
 As a result when __RadDataForm__ is in edit mode the background color of the *Salary* __DataFormDataField__ will change to red (__Figure 1__), when the employee's salary is greater than 2500 or blue when it is less.
 

@@ -12,7 +12,6 @@
 						"src/Telerik.Windows.Controls.Chart.Direct2D.dll",
 						"src/Telerik.Windows.Controls.Chart.dll",
 						"src/Telerik.Windows.Controls.Chart.Skia.dll",
-						"src/Telerik.Windows.Controls.Charting.dll",
 						"src/Telerik.Windows.Controls.ConversationalUI.dll",
 						"src/Telerik.Windows.Controls.Data.dll",
 						"src/Telerik.Windows.Controls.DataServices.dll",

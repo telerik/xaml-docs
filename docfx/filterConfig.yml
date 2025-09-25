@@ -2,3 +2,9 @@ apiRules:
 - exclude:
     type: Method
     uidRegex: ^System\.Object\..*$
+- exclude:
+    type: Class
+    uidRegex: ^Telerik\.CallHome(\..*)?$
+- exclude:
+    type: Class
+    uidRegex: ^Telerik\.MachineIdGenerator(\..*)?$

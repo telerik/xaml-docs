@@ -16,15 +16,15 @@ This article describes the lifecycle of a Telerik application when using NuGet p
 
 To use the NuGet packages, create a new WPF project using the Visual Studio project template from the __File --> New --> Project__ menu. 
 
-![{{ site.framework_name }} Create WPF Application](images/msi-or-zip-setup-lifecyle-0.png)
+![{{ site.framework_name }} Create WPF Application](installation/images/msi-or-zip-setup-lifecyle-0.png)
 
 Set a __Project name__ and __Location__ for the project. For this example, we will use `TelerikWPFApplication` for the project's name.
 
-![{{ site.framework_name }} Setup Project Name and Location](images/msi-or-zip-setup-lifecyle-1.png)
+![{{ site.framework_name }} Setup Project Name and Location](installation/images/msi-or-zip-setup-lifecyle-1.png)
 
 This will create an empty WPF project where you can install the NuGet packages.
 
-![{{ site.framework_name }} Empty Project Visual Studio](images/msi-or-zip-setup-lifecyle-2.png)
+![{{ site.framework_name }} Empty Project Visual Studio](installation/images/msi-or-zip-setup-lifecyle-2.png)
 
 ## Installing Nugets
 

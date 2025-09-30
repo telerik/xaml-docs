@@ -23,8 +23,8 @@ apiRules:
 - exclude:
     uidRegex: ^System\.Windows\.Media.Visual(\..*)?$
 - exclude:
-    uidRegex: ^System.Windows.Automation.Peers.FrameworkElementAutomationPeer(\..*)?$
+    uidRegex: ^System\.Windows.Automation\.Peers\.FrameworkElementAutomationPeer(\..*)?$
 - exclude:
-    uidRegex: ^System.Windows.Automation.Peers.UIElementAutomationPeer(\..*)?$
+    uidRegex: ^System\.Windows.Automation\.Peers\.UIElementAutomationPeer(\..*)?$
 - exclude:
-    uidRegex: ^System.Windows.Automation.Peers.AutomationPeer(\..*)?$
+    uidRegex: ^System\.Windows.Automation\.Peers\.AutomationPeer(\..*)?$

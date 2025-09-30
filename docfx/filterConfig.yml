@@ -6,3 +6,25 @@ apiRules:
     uidRegex: ^Telerik\.CallHome(\..*)?$
 - exclude:
     uidRegex: ^Telerik\.MachineIdGenerator(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Configuration\.Assemblies(\..*)?$
+- exclude:
+    uidRegex: ^System\.Windows\.Controls.ContentControl(\..*)?$
+- exclude:
+    uidRegex: ^System\.Windows\.Controls.Control(\..*)?$
+- exclude:
+    uidRegex: ^System\.Windows\.Controls.Label(\..*)?$
+- exclude:
+    uidRegex: ^System\.Windows\.FrameworkElement(\..*)?$
+- exclude:
+    uidRegex: ^System\.Windows\.UIElement(\..*)?$
+- exclude:
+    uidRegex: ^System\.Windows\.FrameworkContentElement(\..*)?$
+- exclude:
+    uidRegex: ^System\.Windows\.Media.Visual(\..*)?$
+- exclude:
+    uidRegex: ^System.Windows.Automation.Peers.FrameworkElementAutomationPeer(\..*)?$
+- exclude:
+    uidRegex: ^System.Windows.Automation.Peers.UIElementAutomationPeer(\..*)?$
+- exclude:
+    uidRegex: ^System.Windows.Automation.Peers.AutomationPeer(\..*)?$

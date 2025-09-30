@@ -44,31 +44,31 @@ You can set the default calendar for the whole application or for a specific Rad
 
 __Example 1: Setting the default calendar application-wide__
 
-	```C#
-		CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-        Thread.CurrentThread.CurrentCulture = arSA;
-        Thread.CurrentThread.CurrentUICulture = arSA;
-        arSA.DateTimeFormat.Calendar = new HijriCalendar();
-	```
-	```VB.NET
-		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
-		Thread.CurrentThread.CurrentCulture = arSA
-		Thread.CurrentThread.CurrentUICulture = arSA
-		arSA.DateTimeFormat.Calendar = New HijriCalendar()
-	```
+```C#
+	CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
+	Thread.CurrentThread.CurrentCulture = arSA;
+	Thread.CurrentThread.CurrentUICulture = arSA;
+	arSA.DateTimeFormat.Calendar = new HijriCalendar();
+```
+```VB.NET
+	Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
+	Thread.CurrentThread.CurrentCulture = arSA
+	Thread.CurrentThread.CurrentUICulture = arSA
+	arSA.DateTimeFormat.Calendar = New HijriCalendar()
+```
 
 __Example 2: Setting the calendar for a specific RadCalendar instance__
 
-	```C#
-		CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-        arSA.DateTimeFormat.Calendar = new HijriCalendar();
-        calendar.Culture = arSA;
-	```
-	```VB.NET
-		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
-		arSA.DateTimeFormat.Calendar = New HijriCalendar()
-		calendar.Culture = arSA
-	```
+```C#
+	CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
+	arSA.DateTimeFormat.Calendar = new HijriCalendar();
+	calendar.Culture = arSA;
+```
+```VB.NET
+	Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
+	arSA.DateTimeFormat.Calendar = New HijriCalendar()
+	calendar.Culture = arSA
+```
 
 **Figure 1** demonstrates the final result:
 

@@ -74,46 +74,46 @@ Here we define a __DataTemplateSelector__(__Example 2__):
 
 __Example 2: Defining a DataTemplateSelector__
 
-	```C#
-		public class EmployeesEditTemplateSelector : Telerik.Windows.Controls.DataTemplateSelector
+```C#
+	public class EmployeesEditTemplateSelector : Telerik.Windows.Controls.DataTemplateSelector
+	{
+		public override DataTemplate SelectTemplate(object item, DependencyObject container)
 		{
-			public override DataTemplate SelectTemplate(object item, DependencyObject container)
+			Employee employee = item as Employee;
+			if (employee == null)
 			{
-				Employee employee = item as Employee;
-				if (employee == null)
-				{
-					return null;
-				}
-				else if (employee.Salary > 2500)
-				{
-					return this.BigSalaryTemplate;
-				}
-				else
-				{
-					return this.SmallSalaryTemplate;
-				}
+				return null;
 			}
-			public DataTemplate BigSalaryTemplate { get; set; }
-			public DataTemplate SmallSalaryTemplate { get; set; }
+			else if (employee.Salary > 2500)
+			{
+				return this.BigSalaryTemplate;
+			}
+			else
+			{
+				return this.SmallSalaryTemplate;
+			}
 		}
-	```
-	```VB.NET
-	Public Class EmployeesEditTemplateSelector
-	    Inherits System.Windows.Controls.DataTemplateSelector
-	    Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
-	        Dim employee As Employee = TryCast(item, Employee)
-	        If employee Is Nothing Then
-	            Return Nothing
-	        ElseIf employee.Salary > 2500 Then
-	            Return Me.BigSalaryTemplate
-	        Else
-	            Return Me.SmallSalaryTemplate
-	        End If
-	    End Function
-	    Public Property BigSalaryTemplate() As DataTemplate
-	    Public Property SmallSalaryTemplate() As DataTemplate
-	End Class
-	```
+		public DataTemplate BigSalaryTemplate { get; set; }
+		public DataTemplate SmallSalaryTemplate { get; set; }
+	}
+```
+```VB.NET
+Public Class EmployeesEditTemplateSelector
+	Inherits System.Windows.Controls.DataTemplateSelector
+	Public Overrides Function SelectTemplate(ByVal item As Object, ByVal container As DependencyObject) As DataTemplate
+		Dim employee As Employee = TryCast(item, Employee)
+		If employee Is Nothing Then
+			Return Nothing
+		ElseIf employee.Salary > 2500 Then
+			Return Me.BigSalaryTemplate
+		Else
+			Return Me.SmallSalaryTemplate
+		End If
+	End Function
+	Public Property BigSalaryTemplate() As DataTemplate
+	Public Property SmallSalaryTemplate() As DataTemplate
+End Class
+```
 
 As a result when __RadDataForm__ is in edit mode the background color of the *Salary* __DataFormDataField__ will change to red (__Figure 1__), when the employee's salary is greater than 2500 or blue when it is less.
 
@@ -125,3 +125,4 @@ As a result when __RadDataForm__ is in edit mode the background color of the *Sa
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DataForm/DataTemplateSelector).
 		  
+

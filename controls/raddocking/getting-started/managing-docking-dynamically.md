@@ -26,9 +26,9 @@ The following operation will be examined:
 
 * [Docking a pane design-time](#docking-a-pane-design-time)
 
-* [Pin\Unpin a pane in the code-behind](#pinunpin-a-pane-in-the-code-behind)
+* [Pin\Unpin a pane in the code-behind](#pin-unpin-a-pane-in-the-code-behind)
 
-* [Pin\Unpin a pane in XAML](#pinunpin-a-pane-in-xaml)
+* [Pin\Unpin a pane in XAML](#pin-unpin-a-pane-in-xaml)
 
 * [Closing a pane in the code-behind](#closing-a-pane-in-the-code-behind)
 

@@ -10,9 +10,6 @@ position: 9
 
 # Styling Column Footers
 
-
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewFooterCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewfootercell).
-
 ## Targeting the GridViewFooterRow Element
 
 If you want to style all footer rows of your application, you should create an appropriate style targeting the __GridViewFooterRow__ element.

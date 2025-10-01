@@ -2443,3 +2443,23 @@ redirects:
     from: "^controls/radgridview/styles-and-templates/templates-structure$"
     to: "/controls/radgridview/overview2"
     type: Permanent 
+-
+    from: "^controls/radtreelistview/styles-and-templates/overview$"
+    to: "/controls/radtreelistview/overview"
+    type: Permanent 
+-
+    from: "^controls/radtreelistview/styles-and-templates/templates-structure$"
+    to: "/controls/radtreelistview/overview"
+    type: Permanent 
+-
+    from: "^controls/radtreelistview/styles-and-templates/styling-validation-tooltips$"
+    to: "/controls/radtreelistview/overview"
+    type: Permanent
+-
+    from: "^controls/radtreelistview/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/radtreelistview/changes-and-backward-compatibility/radtreeliestview-backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent

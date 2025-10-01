@@ -54,6 +54,3 @@ __Example 1: Custom style targeting TreeListViewRow__
 
 #### __Figure 1: Result from Example 1 in the Fluent theme__
 ![Selected and Hovered TreeListViewRows](images/TreeListView_Hovered_MouseOver_Row.png)
-
-## See Also
- * [Templates Structure]({%slug radtreelistview-templates-structure%})

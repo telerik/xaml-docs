@@ -10,8 +10,6 @@ position: 15
 
 # Styling the GridViewNewRow
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewNewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewnewrow).
-
 In this article we will show how you can explicitly or implicitly style the GridViewNewRow.
 
 ## Targeting the GridViewNewRow Element

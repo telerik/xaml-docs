@@ -30,7 +30,7 @@ There are four __TextSearchMode__ types that can work with the RadComboBox:
 
 >The __TextSearch__ class is located in the __Telerik.Windows.Controls.dll__ assembly.
 
-You can set the __TextSearch.TextPath__ in order to control which property of each of the RadComboBox's Items will be targetted by the AutoHighlight feature. This is useful when the RadComboBox is [bound to a collection]({%slug radcombobox-populating-with-data-binding-to-object%}) of complex bussiness objects. The AutoHighlight feature highlights the first item which fits the user input based on the TextSearchMode and TextSearch.TextPath properties. This property is also useful for the [AutoComplete]({%slug radcombobox-features-autocomplete%}#using-textsearchtextpath) feature.
+You can set the __TextSearch.TextPath__ in order to control which property of each of the RadComboBox's Items will be targetted by the AutoHighlight feature. This is useful when the RadComboBox is [bound to a collection]({%slug radcombobox-populating-with-data-binding-to-object%}) of complex bussiness objects. The AutoHighlight feature highlights the first item which fits the user input based on the TextSearchMode and TextSearch.TextPath properties. This property is also useful for the [AutoComplete]({%slug radcombobox-features-autocomplete%}) feature.
 
 >When the __IsEditable__ property of the RadComboBox is set to __False__, pressing the same letter more than once results in the next item which fits the TextSearchMode criteria being highlighted.
 

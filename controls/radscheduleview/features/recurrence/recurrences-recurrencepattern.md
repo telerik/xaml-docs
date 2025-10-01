@@ -153,7 +153,7 @@ When you want to specify on which day of the month the appointment occurs, you n
 
 ## DayOrdinal
 
-When you want to specify the day ordinal (first, second, third, fourth, etc.), you need to set the __DayOrdinal__ property. For example, you may want to create an appointment that occurs on every second Monday of every third month. Check out the solution [here](#how-to-create-an-appointment-that-occurs-on-every-"n"-days?).
+When you want to specify the day ordinal (first, second, third, fourth, etc.), you need to set the __DayOrdinal__ property. For example, you may want to create an appointment that occurs on every second Monday of every third month. 
 
 ## MonthOfYear
 

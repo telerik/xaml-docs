@@ -10,22 +10,6 @@ position: 10
 
 # Styling Group Footers
 
->tipBefore reading this topic, you might find it useful to get familiar with the [GridViewGroupFooterCell and GridViewGroupFooterRow]({%slug radgridview-styles-and-templates-templates-structure%}).
-
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewGroupFooterRow Element](#targeting-the-gridviewgroupfooterrow-element)
-
-* [Setting RadGridView's GroupFooterRowStyle](#setting-radgridview-groupfooterrowstyle)
-
-* [Setting RadGridView's GroupFooterRowStyleSelector](#setting-radgridview-groupfooterrowstyleselector)
-
-* [Targeting the GridViewGroupFooterCell Element](#targeting-the-gridviewgroupfootercell-element)
-
-* [Setting a Column's GroupFooterCellStyle](#setting-a-column-groupfootercellstyle)
-
-* [Setting a Column's GroupFooterCellStyleSelector](#setting-a-column-groupfootercellstyleselector)
-
 ## Targeting the GridViewGroupFooterRow Element
 
 If you want to style all group footer rows of your application, you should create an appropriate style targeting the __GridViewGroupFooterRow__ element.

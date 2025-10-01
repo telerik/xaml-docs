@@ -10,8 +10,6 @@ position: 14
 
 # Styling Rows
 
->tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
-
 > `RadGridView` supports setting the background color of the selected row, as well as setting the mouse-over color of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
 
 #### __GridViewRow template structure__

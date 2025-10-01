@@ -32,7 +32,7 @@ Telerik __RadTreeListView__ combines the powerful data-driven features from __Ra
 
 * __Data Source Updates__: To achieve better testability and loose coupling in your code it may be more convenient to manipulate data in the original data source instead of using the __RadTreeListView__ API. Telerik __RadTreeListView__ supports that scenario by listening to data source collection change events and reflecting those changes in its visual representation.
 
-* __Truly Lookless, Blend Skinnable, Completely Customizable Control__: Telerik __RadTreeListView__ can have its appearance and animations completely customized through __Microsoft Expression Blend__. You can use your own theme or you can use one of the several themes shipped with the control, which will help you deliver a consistent look and feel in your application. Read more about this in the [Overview]({%slug radtreelistview-styles-and-templates-overview%}) article.
+* __Truly Lookless, Blend Skinnable, Completely Customizable Control__: Telerik __RadTreeListView__ can have its appearance and animations completely customized through __Microsoft Expression Blend__. You can use your own theme or you can use one of the several themes shipped with the control, which will help you deliver a consistent look and feel in your application. 
 
 * __Aggregate Functions__: Telerik __RadTreeListView__ control offers a built-in totals row which makes it easy and fast to add a cell which represents the calculated values across a range of data. The summary row with aggregates is available for each column. The user can choose to show in the footer row from a variety of aggregate. Read more about this in the [Aggregates]({%slug radtreelistview-features-aggregates%}) article.
 
@@ -50,7 +50,7 @@ Telerik __RadTreeListView__ combines the powerful data-driven features from __Ra
 
 * __Selection__: __RadTreeListView__ provides a familiar selection API that will make developers feel at home. The control supports single and multiple record selection that can be manipulated both with the mouse and the keyboard. Read more about this in the [Selection]({%slug radtreelistview-features-selection%}) article.
 
-Check out the control's demos at:{% if site.site_name == 'Silverlight' %}[https://demos.telerik.com/silverlight/#TreeListView/FirstLook](https://demos.telerik.com/silverlight/#TreeListView/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/){% endif %}
+Check out the control's demos at: [https://demos.telerik.com/wpf/](https://demos.telerik.com/wpf/)
 
 >tipYou can find more examples on how to implement various scenarios available for download from our online SDK repository [here](https://github.com/telerik/xaml-sdk/), the examples are listed under __TreeListView__.       
 

@@ -58,7 +58,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 	![Adding Panes to Tabbed Documents](images/RadDocking_Features_Drag_and_Drop_030.png)
 
->tipTo dock a pane to a [Tabbed Document]({%slug raddocking-features-pane-groups%}), drag and drop it over the center indicator of the [Compass](#Compass).
+>tipTo dock a pane to a [Tabbed Document]({%slug raddocking-features-pane-groups%}), drag and drop it over the center indicator of the Compass.
 
 ## Undocking Panes
 

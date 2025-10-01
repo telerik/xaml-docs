@@ -14,20 +14,11 @@ The __RadGauge__ control allows you to define ranges for your scales. The range 
 
 The __Gauge__ control allows you to define ranges for your scales. The range is used for wrapping a specific section of the scale that meets a condition. The __Gauge__ control provides you the single __GaugeRange__ class which can be used with any scale type.
 
-The topic will explain the following: 
-
-* [Max and Min Value](#max-and-min-value)
-* [Width](#width)
-* [Range Appearance](#range-appearance)
-* [Indicator Appearance](#indicator-appearance)
-* [Labels Appearance](#labels-appearance)
-* [Ticks Appearance](#ticks-appearance)
-
 ## Max and Min Value
 
 Each range should have a start and and end points. They are defined via the Min and Max properties, where their values represent values from the scale.
 
->tip Typically each range should be colored in a specific color. To set the desired color to the range use its Background property. To learn more about the appearance of the range read the [Range Appearance](#Range_Appearance) section.
+>tip Typically each range should be colored in a specific color. To set the desired color to the range use its Background property. 
 
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
@@ -125,7 +116,7 @@ Here is a snapshot of the result:
 
 ## Indicator Appearance
 
->To modify the appearance of the indicator via the range, the indicator should be in [Use Range Color](#Using_the_Range_Color) mode.
+>To modify the appearance of the indicator via the range, the indicator should be in Use Range Color mode.
 
 You can specify an appearance for the scale's indicator, when it enters inside the range. This is done by using the following of the range object's properties:
 

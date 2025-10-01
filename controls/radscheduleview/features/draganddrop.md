@@ -273,7 +273,7 @@ __Example 10: Setting the ResizeCursor property__
 
 ### CacheConvertedDragData 
 
-As of __R1 2017 SP1__, __ScheduleViewDragDropBehavior__ exposes the __CacheConvertedDragData__ property. Its default value is __False__, meaning that the [ConvertDraggedData](#convertdraggeddataobject-data) method will be called repeatedly. When the property is set to __True__, the method will be called only once and the converted data will be cached. 
+As of __R1 2017 SP1__, __ScheduleViewDragDropBehavior__ exposes the __CacheConvertedDragData__ property. Its default value is __False__, meaning that the ConvertDraggedData method will be called repeatedly. When the property is set to __True__, the method will be called only once and the converted data will be cached. 
 
 
 >Check out the Drag and Drop Example at [WPF online demos](https://demos.telerik.com/wpf/) to see the __RadScheduleView__'s Drag and Drop functionality in action.        

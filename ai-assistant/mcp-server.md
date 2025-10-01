@@ -132,9 +132,9 @@ To increase the likelihood of the Telerik MCP server being used, add custom inst
 
 The following examples demonstrate useful prompts for the Telerik WPF MCP Server:
 
-* "`/telerik` Give me an example of binding an ObservableCollection<Customer> to a RadGridView, including sorting and grouping."
+* "`/telerik` Give me an example of binding an ObservableCollection&lt;Customer&gt; to a RadGridView, including sorting and grouping."
 * "`/telerikWPF` Create a RadComboBox bound to a list of countries in MVVM, displaying country names but binding the SelectedValue to a CountryCode property."
-* "`/telerik` Show XAML and ViewModel code for a RadTreeView bound to a hierarchical ObservableCollection<Category> where each category contains products. Expand all categories by default."
+* "`/telerik` Show XAML and ViewModel code for a RadTreeView bound to a hierarchical ObservableCollection&lt;Category&gt; where each category contains products. Expand all categories by default."
 
 ## Number of Requests
 

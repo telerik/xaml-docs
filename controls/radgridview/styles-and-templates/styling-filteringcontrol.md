@@ -22,8 +22,6 @@ In this topic we will discuss:
 
 ![Telerik {{ site.framework_name }} DataGrid Styles and Templates FilteringControl Template Structure](images/RadGridView_Styles_and_Templates_FilteringControl_Template_Structure.png)
 
->tipThe Template Structure of the controls is also available [here]({%slug radgridview-styles-and-templates-templates-structure%}).
-
 ## Styling FilteringDropDown
 
 The filtering dropdown icon can be styled by creating an appropriate style targeting the **FilteringDropDown** element.
@@ -49,8 +47,6 @@ You can modify it similarly to the FilteringDropDown style and set it as follows
 ```XAML
 	<telerik:GridViewDataColumn FilteringControlStyle="{StaticResource FilteringControlStyle}" />
 ```
-
->You can find the Template Structure of the FilteringControl [here]({%slug radgridview-styles-and-templates-templates-structure%}).
 
 You are also free to create your own [Custom Filtering Control]({%slug gridview-filtering-custom-filtering-controls%}) and craft it as you like.
 

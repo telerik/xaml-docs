@@ -16,7 +16,7 @@ If you need to consume a service which does not have a default provider, you can
 
 The **MapProviderBase** is the base class for all map providers. Two widely-used implementations of the class are the __TiledProvider__ and __ImageProvider__.
 
-* __TiledProvider__ is a base class for map providers that show a map as a sequence of tiles (e.g. [AzureMapProvider]({%slug radmap-features-providers-azuremapprovider%}), [OpenStreetMap]({%slug radmap-features-providers%}#openstreet-maps).
+* __TiledProvider__ is a base class for map providers that show a map as a sequence of tiles (e.g. [AzureMapProvider]({%slug radmap-features-providers-azuremapprovider%}), [OpenStreetMap]({%slug radmap-features-providers%}).
 
 * __ImageProvider__ is a base class for providers that show a map as a single image ([UriImageProvider]({%slug radmap-features-uriimageprovider%})). 
 

@@ -10,8 +10,6 @@ position: 15
 
 # Styling Row Details
 
->tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the DetailsPresenter]({%slug radgridview-styles-and-templates-templates-structure%}#detailspresenter).
-
 ## Targeting the DetailsPresenter Element
 
 In order to style all row details of an application, you should create an appropriate style targeting the __DetailsPresenter__ element.

@@ -10,7 +10,7 @@ position: 4
 
 # Theming the RadSplitContainer
 
-To modify the appearance of the __RadSplitContainer__ you have to create a custom theme and place a style that targets the __RadSplitContainer__ control in it. The topic assumes that you have already created {% if site.site_name == 'WPF' %}a theme with {% endif %}a __ResourceDictionary__ that will host the styles and the resources for your custom theme. If not take a look at the overview section about [creating the theme](#CreatingTheme). The topic also assumes that you have already created the style that will be used for the __RadSplitContainer__ control. To learn how to style it take a look at the [Styling the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%}) topic.
+To modify the appearance of the __RadSplitContainer__ you have to create a custom theme and place a style that targets the __RadSplitContainer__ control in it. The topic assumes that you have already created {% if site.site_name == 'WPF' %}a theme with {% endif %}a __ResourceDictionary__ that will host the styles and the resources for your custom theme. To learn how to style it take a look at the [Styling the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%}) topic.
 
 Copy the created style with all of the resources it uses and place it in the __ResourceDictionary__ that represents the theme for your __RadDocking__ control.
 
@@ -69,8 +69,5 @@ Finally in order to make the style default for all of the __RadSplitContainer__c
 
 ## See Also
 
- * [Theming - Overview]({%slug raddocking-theming-overview%})
-
  * [Styling the RadSplitContainer]({%slug raddocking-styling-the-radsplitcontainer%})
-
  * [Split Container]({%slug raddocking-features-split-container%})

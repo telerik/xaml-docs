@@ -105,13 +105,11 @@ Every bookmark has a unique name. So in order to insert a reference to a bookmar
 
 
 
-__ReferenceContentType__ is an enumeration that has five values – __EntireContent__, __OnlyLabelAndNumber__, __OnlyCaption__, __PageNumber__ and __RelativePosition__. As you can see, those values are the same as in the “Insert reference to:” combo box. You can see what every value means [here](#Type_of_Cross_References/Bookmark). The parameter “insertAsHyperlink” is pretty self-explanatory and also can be read about [in this article](#insert-cross-reference).
+__ReferenceContentType__ is an enumeration that has five values – __EntireContent__, __OnlyLabelAndNumber__, __OnlyCaption__, __PageNumber__ and __RelativePosition__. As you can see, those values are the same as in the “Insert reference to:” combo box. The parameter “insertAsHyperlink” is pretty self-explanatory and also can be read about [in this article](#insert-cross-reference).
 
 ### Inserting Cross-Reference to a Heading
 
 You have to pass the paragraph (with heading style applied, of course) that you want to create a Reference to. The method signature is as follows:
-
-
 
 ```C#
 	public void InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink)

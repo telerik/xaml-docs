@@ -54,9 +54,9 @@ To use the Telerik WPF Copilot extension:
 
 The following examples demonstrate useful prompts for the Telerik WPF extension:
 
-* "`@TelerikWPF` Give me an example of binding an ObservableCollection<Customer> to a RadGridView, including sorting and grouping."
+* "`@TelerikWPF` Give me an example of binding an ObservableCollection&lt;Customer&gt; to a RadGridView, including sorting and grouping."
 * "`@TelerikWPF` Create a RadComboBox bound to a list of countries in MVVM, displaying country names but binding the SelectedValue to a CountryCode property."
-* "`@TelerikWPF` Show XAML and ViewModel code for a RadTreeView bound to a hierarchical ObservableCollection<Category> where each category contains products. Expand all categories by default."
+* "`@TelerikWPF` Show XAML and ViewModel code for a RadTreeView bound to a hierarchical ObservableCollection&lt;Category&gt; where each category contains products. Expand all categories by default."
 
 ![Image showing the TelerikWPF trigger word](images/ai-copilot-extension-0.png)
 

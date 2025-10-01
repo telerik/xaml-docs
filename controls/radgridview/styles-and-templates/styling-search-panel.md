@@ -38,8 +38,6 @@ __Appearance of the control after the style is applied__
 
 ![Telerik {{ site.framework_name }} DataGrid search-panel-styled](images/search-panel-styled.PNG)
 
-You can find the GridViewSearchPanel template structure in the [Templates Structure]({%slug radgridview-styles-and-templates-templates-structure%}) article for RadGridView.
-
 ## Change the Color of the Highlighted Text 
 
 By default, the symbols matching the searching criteria are colored in red. You can easily change the highlighted text value to green by changing the value of the `HightlightBrush` in the `HighlightTextBlock`, as shown in the following example:

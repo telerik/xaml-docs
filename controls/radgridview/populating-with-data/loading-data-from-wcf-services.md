@@ -10,17 +10,11 @@ position: 6
 
 # Loading Data from WCF Services
 
-The purpose of this tutorial is to show you how to populate __RadGridView__ with data from a __WCF Service__ in two ways:
-
-* A straight-forward way - [plain method calls](#Plain_Method_Calls). 
-
-* [Using MVVM approach](#Using_MVVM_Approach)
+The purpose of this tutorial is to show you how to populate __RadGridView__ with data from a __WCF Service__:
 
 >This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadGridView__ declaration in your XAML: 
-
-
 
 ```XAML
 	<telerik:RadGridView />
@@ -32,8 +26,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 
 * Switch to the code-behind and create a new instance of your WCF Service client.
 
-
-
 ```C#
 	WcfServiceClient serviceClient = new WcfServiceClient();
 ```
@@ -44,8 +36,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 >tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the {% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
 
 * The gridview control will be populated with all __Customers__ from the __Northwind__ database. Add the following code which will make the initial load of the objects.
-
-
 
 ```C#
 	private void BeginRequest()
@@ -71,8 +61,6 @@ Before proceeding further with this tutorial you need to create a new applicatio
 	    Me.radGridView.ItemsSource = customers
 	End Sub
 ```
-
-
 
 ```C#
 	this.radGridView.ItemsSource = serviceClient.LoadCustomers();
@@ -138,12 +126,9 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	End Class
 ```
 
->tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the 
-{% if site.site_name == 'Silverlight' %}[Consuming WCF Service](http://www.telerik.com/help/silverlight/consuming-data-wcf-service.html){% endif %}{% if site.site_name == 'WPF' %}[Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html){% endif %} topic.
+>tipFor more information about how to add a reference to a WCF Service and how to create a new instance of a WCF Service client, take a look at the [Consuming WCF Service](http://www.telerik.com/help/wpf/consuming-data-wcf-service.html) topic.
 
 * Add the following code in the constructor of the __NorthwindDataSource__. It will make the initial load of all __Customers__ from the database: 
-
-
 
 ```C#
 	serviceClient.LoadCustomersCompleted += new EventHandler<LoadCustomersCompletedEventArgs>(serviceClient_LoadCustomersCompleted);
@@ -168,12 +153,6 @@ This section will show you how to populate your __RadGridView__ control in a MVV
 	    Me.Customers.Add(c)
 	Next c
 ```
-
-{% if site.site_name == 'Silverlight' %}
-
-And here is the code handling the __LoadCustomersCompleted__ event:{% endif %}
-
-
 
 ```C#
 	if (e.Error == null && e.Result != null)
@@ -224,10 +203,3 @@ Run your demo, the result can be seen on the next picture:
  
  * [Loading Data from ADO.NET Services]({%slug gridview-loading-data-from-adonet-services%})
  
-{% if site.site_name == 'Silverlight' %}
- * [Loading Data from RIA Services]({%slug gridview-loading-data-from-ria-services%})
-
- * [DomainDataSource Support]({%slug gridview-domaindatasource-support%})
-
- * [Loading Data from Web Services]({%slug gridview-loading-data-from-web-services%})
-{% endif %}

@@ -16,7 +16,7 @@ This article lists features that are common between the __RadMaskedInput__ contr
 * [Input Behavior](#input-behavior)
 * [Text and TextMode](#text-and-textmode-properties)
 * [ValueToTextConverter](#valuetotextconverter)
-* [Add/Remove the ClearButton](#addremove-the-clearbutton)
+* [Add/Remove the ClearButton](#add-remove-the-clearbutton)
 * [IsLastPositionEditable](#islastpositioneditable)
 * [TextBoxStyle](#textboxstyle)
 

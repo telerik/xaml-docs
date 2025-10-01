@@ -22,11 +22,6 @@ __Example 1: Defining camera behavior__
 ```
 
 Additionally, you can control the camera manually through the properties of the behavior.
-	
-* [Rotating the camera](#rotation-the-camera)
-* [Changing the camera distance](#changing-the-camera-distance)
-* [Changing the field of view angle](#changing-the-field-of-view-angle)
-* [Restricting the camera](#restricting-the-camera)
 
 ## Rotating the camera
 

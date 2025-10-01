@@ -12,13 +12,7 @@ position: 4
 
 As of **R3 2016** entire columns can be added to RadGridView's selection. This can be done in any of the following ways:
 
-* [Through the UI](#select-columns-through-the-ui)
-
-* [Via a column's IsSelected property](#select-columns-via-a-columns-isselected-property)
-
-* [Using the SelectCellRegion method](#using-the-selectcellregion-method)
-
->importantColumn selection is only available when **SelectionMode** is either **Multiple** or **Extended** and **SelectionUnit** is either **Cell** or **Mixed**.
+>important Column selection is only available when **SelectionMode** is either **Multiple** or **Extended** and **SelectionUnit** is either **Cell** or **Mixed**.
 
 ## Select Columns Through the UI
 

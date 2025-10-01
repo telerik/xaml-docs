@@ -10,10 +10,7 @@ position: 2
 
 # How to Set the First Day of the Week
 
-The purpose of this tutorial is to show you how to modify the default order of the days in the calendar view of your __RadDateTimePicker__ control. There are two ways to do this, respectively:
-
-* [Through the CultureInfo.DateTimeFormat property](#through-the-cultureinfodatetimeformat-property)
-* [Through the CalendarStyle property](#through-the-calendarstyle-property)
+The purpose of this tutorial is to show you how to modify the default order of the days in the calendar view of your __RadDateTimePicker__ control. There are two ways to do this.
 
 ## Through the CultureInfo.DateTimeFormat property
 

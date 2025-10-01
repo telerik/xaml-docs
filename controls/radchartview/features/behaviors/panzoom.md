@@ -39,7 +39,7 @@ __Example 2: Setting zoom mode__
 
 > The __ChartPanAndZoomBehavior__ works with the default axes. If the RadCartesianChart.HorizontalAxis is null, for example, the user will not be able to zoom or scroll horizontally, even though the individual series have horizontal axis (axes) defined. 
 
-* [Drag to zoom/scroll](#drag-to-zoomscroll)
+* [Drag to zoom/scroll](#drag-to-zoom-scroll)
 * [Manual scroll and zoom](#manual-scroll-and-zoom)
 * [Mouse wheel mode](#mouse-wheel-mode)
 

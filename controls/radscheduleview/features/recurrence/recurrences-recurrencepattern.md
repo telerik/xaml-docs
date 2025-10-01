@@ -10,7 +10,7 @@ position: 1
 
 # RecurrencePattern
 
-__RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. [Exceptions](#Exceptions) to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct __RecurrencePattern__.
+__RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. Exceptions to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct __RecurrencePattern__.
 
 The [RecurrenceRule]({%slug radscheduleview-features-recurrences-recurrencerule%}) class is the engine for creating and evaluating recurrence rules. It has a mandatory property __Pattern__ of type __RecurrencePattern__.
 
@@ -36,7 +36,7 @@ The purpose of this tutorial is to show you:
 
 	* [MaxOccurrences](#maxoccurrences)
 
-	* [RepeatUntil](#repeatuntil)
+	* [RecursUntil](#recursuntil)
 
 * The main methods exposed by the __RecurrencePattern__ class:          
 
@@ -60,7 +60,7 @@ The purpose of this tutorial is to show you:
 
 	* [Set](#set-the-maximum-occurrences-of-the-appointment) the maximum occurrences of the appointment.
 
-	* [Set](#set-the-end-date-of-the-appointments-occurrences) the end date of the appointment's occurrences.            
+	* [Set](#set-the-end-date-of-the-appointment-occurrences) the end date of the appointment's occurrences.            
 
 ## RecurrencePattern Class
 
@@ -169,7 +169,7 @@ Gets or sets the day on which the week starts. This property is only meaningful 
 
 ## RecursUntil
 
-When you want to specify the end date of the appointment's occurrences, then you need to set the __RecursUntil__ property. Check out the [example](#set-the-end-date-of-the-appointment's-occurrences) at the end of the topic.
+When you want to specify the end date of the appointment's occurrences, then you need to set the __RecursUntil__ property. Check out the [example](#set-the-end-date-of-the-appointment-occurrences) at the end of the topic.
 
 ## Copy()
 
@@ -294,7 +294,7 @@ The result of the above example will be a __RecurrencePattern__ which will creat
 
 >tipIf you want to create an appointment that occurs every specific week day (Monday, Tuesday, etc.), you need only to set the correct value for the __DaysOfWeekMask__ property. For example, in order to create an appointment that occurs every Friday, set the __DaysOfWeekMask__ property to __RecurrenceDays.Friday__.        
 
-## How to Create an Appointment that Occurs on Every "n" Days?
+## How to Create an Appointment that Occurs on Every n Days?
 
 When you want to create an appointment that occurs on every "n" days, you should set the __Frequency__, __DaysOfWeekMask__ and the __Interval__ properties of the __RecurrencePattern__ object. For example, in order to create an appointment that occurs on every third day (that means the number of days between each recurrence is 3), you should:
 
@@ -443,7 +443,7 @@ When you want to specify a limit of the occurrences for the appointment, then yo
 	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 ```
 
-## Set the End Date of the Appointment's Occurrences
+## Set the End Date of the Appointment Occurrences
 
 When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property.
 

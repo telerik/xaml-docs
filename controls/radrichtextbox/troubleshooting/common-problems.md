@@ -10,22 +10,7 @@ position: 0
 
 # Troubleshooting Common Problems
 
-
-
 This article describes common problems that can be encountered when using __RadRichTextBox__ and their solutions.
-      
-
-It contains the following topics:{% if site.site_name == 'Silverlight' %}
-
-* [Missing Dialogs, Menus, Unable to Save/Load a File, SpellChecker Underlines Correct Words;](#missing-dialogs-and-menus,-unable-to-save/load-a-file,-spellchecker-underlines-correct-words)
-
-* [Missing Images in Lightswitch;](#missing-images-in-lightswitch)
-
-* [Exception when inserting or manipulating images.](#Exception_when_inserting_or_manipulating_images){% endif %}{% if site.site_name == 'WPF' %}
-
-* [Missing Dialogs, Menus, Unable to Save/Load a File, SpellChecker Underlines Correct Words;](#missing-dialogs-and-menus,-unable-to-save/load-a-file,-spellchecker-underlines-correct-words)
-
-* [Exception when inserting or manipulating images.](#Exception_when_inserting_or_manipulating_images){% endif %}
 
 ## Missing Dialogs and Menus, Unable to Save/Load a File, SpellChecker Underlines Correct Words
 
@@ -108,8 +93,6 @@ __Example 1: Defining the catalog of types used by RadRichTextBox__
 	    );
 ```
 
-
-
 This can be done on application start-up or in the constructor of your page, just before InitializeComponent().
 
 >As RadRichTextBox does not have a dependency on RichTextBoxUI, the assemblies are not normally copied to the Shell project by Prism and are not included in the XAP, if the view containing the RichTextBox is in another project. In order to resolve the problem, you can adopt one of the following approaches:
@@ -121,11 +104,7 @@ This can be done on application start-up or in the constructor of your page, jus
 
 ## Exception when inserting or manipulating images
 
-{% if site.site_name == 'Silverlight' %}
-RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.95).aspx). {% endif %}
-
-{% if site.site_name == 'WPF' %}
-RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.100).aspx).{% endif %}
+RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.100).aspx).
 
 Unfortunately, WritableBitmap is not always very efficient when populated with an extremely large image and on some occasions inserting or manipulating (for example, applying an effect to) such image might cause performance diminishment as well as an OutOfMemoryЕxception. At this point there is no workaround for the issue.
     

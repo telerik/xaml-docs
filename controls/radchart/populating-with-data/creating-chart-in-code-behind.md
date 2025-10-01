@@ -16,7 +16,7 @@ __RadChart__ provides you with API, which you can use to build the charts you ne
 
 This tutorial will walk you through the common tasks of:
 
-* [Adding RadChart and setting the DefaultView property in the code-behind](#cadding-radchart-and-setting-the-defaultview-property)
+* [Adding RadChart and setting the DefaultView property in the code-behind](#adding-radchart-and-setting-the-defaultview-property)
 
 * [Adding ChartTitle in the code-behind](#adding-charttitle)
 
@@ -28,8 +28,6 @@ This tutorial will walk you through the common tasks of:
 
 >In order to use __RadChart__ control in your projects you have to add references to __Telerik.Windows.Controls.Charting.dll__ and to add references to the following namespaces:
 
-
-
 ```C#
 	using Telerik.Windows.Controls;
 	using Telerik.Windows.Controls.Charting;
@@ -39,8 +37,6 @@ This tutorial will walk you through the common tasks of:
 	Imports Telerik.Windows.Controls
 	Imports Telerik.Windows.Controls.Charting
 ```
-
-
 
 ## Adding RadChart and Setting the DefaultView Property
 

@@ -24,18 +24,6 @@ The __InformationLayer__ allows you to display additional data on top of the dis
 
 If elements are grouped into several regions on the map then it is recommended to use several information layers (one per region).
 
-This topic will make you familiar with the following:
-
-* [InformationLayer Item Types](#informationlayer-item-types)
-
-* [Adding an Item](#adding-an-item)
-
-* [Positioning an Item](#positioning-an-item)
-
-* [Binding Items](#binding-items)
-
-* [InformationLayer and InitializedCompleted](#InformationLayer_and_InitializedCompleted)
-
 ## InformationLayer Item Types
 
 The __InformationLayer__ allows you to display the following items:        

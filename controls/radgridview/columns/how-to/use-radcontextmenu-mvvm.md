@@ -12,22 +12,9 @@ position: 14
 
 This tutorial will show you how use a RadContextMenu with a RadGridView
 
-It will show you how to do the following:
-
-* [Define RadContextMenu](#define-a-radcontextmenu-with-menuitems)
-
-* [Create Style for GridViewHeaderCell](#create-a-style-for-the-column-headers)
-
-* [Define RadGridView](#define-the-radgridview)
-
-* [Result](#Result)
-
 ## Define a RadContextMenu with MenuItems
 
 First you need to define the context menu with menu items.
-{% if site.site_name == 'WPF' %}
-
-
 
 ```XAML
 	<local:ObjectToStringConverter x:Key="ObjectToStringConverter" />
@@ -81,63 +68,9 @@ First you need to define the context menu with menu items.
 	</local:RadContextMenuXamlHolder>
 ```
 
-{% endif %}{% if site.site_name == 'Silverlight' %}
-
-
-
-```XAML
-	<local:RadContextMenuXamlHolder x:Key="ContextMenuHolder">
-	    <telerik:RadContextMenu InheritDataContext="False" DataContext="{Binding Path=UIElement.Column.DataControl.DataContext, RelativeSource={RelativeSource Self}}">
-	        <telerik:RadMenuItem Command="{Binding SortAscendingCommand}"
-	                    CommandParameter="{Binding Path=Menu.UIElement,
-	                                            RelativeSource={RelativeSource Self}}"
-	                    Header="{Binding Path=Menu.UIElement.Column.Header,
-	                                    RelativeSource={RelativeSource Self},
-	                                    StringFormat='Sort Ascending by &quot;{0}&quot;'}" />
-	        <telerik:RadMenuItem Command="{Binding SortDescendingCommand}"
-	                    CommandParameter="{Binding Path=Menu.UIElement,
-	                                            RelativeSource={RelativeSource Self}}"
-	                    Header="{Binding Path=Menu.UIElement.Column.Header,
-	                                    RelativeSource={RelativeSource Self},
-	                                    StringFormat='Sort Descending by &quot;{0}&quot;'}" />
-	        <telerik:RadMenuItem Command="{Binding ClearSortCommand}"
-	                    CommandParameter="{Binding Path=Menu.UIElement,
-	                                            RelativeSource={RelativeSource Self}}"
-	                    Header="{Binding Path=Menu.UIElement.Column.Header,
-	                                    RelativeSource={RelativeSource Self},
-	                                    StringFormat='Clear Sorting by &quot;{0}&quot;'}" />
-	        <telerik:RadMenuItem Command="{Binding GroupbyCommand}"
-	                    CommandParameter="{Binding Path=Menu.UIElement,
-	                                            RelativeSource={RelativeSource Self}}"
-	                    Header="{Binding Path=Menu.UIElement.Column.Header,
-	                                    RelativeSource={RelativeSource Self},
-	                                    StringFormat='Group by &quot;{0}&quot;'}" />
-	        <telerik:RadMenuItem Command="{Binding UngroupCommand}"
-	                    CommandParameter="{Binding Path=Menu.UIElement,
-	                                            RelativeSource={RelativeSource Self}}"
-	                    Header="{Binding Path=Menu.UIElement.Column.Header,
-	                                    RelativeSource={RelativeSource Self},
-	                                    StringFormat='Ungroup by &quot;{0}&quot;'}" />
-	        <telerik:RadMenuItem Header="Choose Columns:" ItemsSource="{Binding Path=Menu.UIElement.Column.DataControl.Columns, RelativeSource={RelativeSource Self}}">
-	            <telerik:RadMenuItem.ItemContainerStyle>
-	                <Style TargetType="telerik:RadMenuItem">
-	                    <Setter Property="Header" Value="{Binding Header}" />
-	                    <Setter Property="IsChecked" Value="{Binding IsVisible, Mode=TwoWay}" />
-	                    <Setter Property="IsCheckable" Value="True" />
-	                </Style>
-	            </telerik:RadMenuItem.ItemContainerStyle>
-	        </telerik:RadMenuItem>
-	    </telerik:RadContextMenu>
-	</local:RadContextMenuXamlHolder>
-```
-
-{% endif %}
-
 ## Create a style for the column headers
 
 You need to attach the defined context menu to the column headers. 
-
-
 
 ```XAML
 	<Style TargetType="telerik:GridViewHeaderCell">
@@ -145,12 +78,9 @@ You need to attach the defined context menu to the column headers.
 	</Style>
 ```
 
-
 ## Define the RadGridView
 
 The style targeting GridViewHeaderCell will be automatically applied for the RadGridView
-
-
 
 ```XAML
 	<Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource ViewModel}">
@@ -161,8 +91,6 @@ The style targeting GridViewHeaderCell will be automatically applied for the Rad
 ## Implementaions in code behind
 
 The RadContextMenuXamlHolder class is defined in code behind like so:
-
-
 
 ```C#
 	[ContentProperty("ContextMenu")]
@@ -197,15 +125,8 @@ The RadContextMenuXamlHolder class is defined in code behind like so:
 	}
 ```
 
-
-{% if site.site_name == 'WPF' %}
-
-
 The RadContextMenuXamlHolder class is defined as follows:
-            
-
-
-
+   
 ```C#
 	public class ObjectToStringConverter : IValueConverter
 	{
@@ -221,12 +142,7 @@ The RadContextMenuXamlHolder class is defined as follows:
 	}
 ```
 
-{% endif %}
-
 The implementation of the ViewModel is below:
-          
-
-
 
 ```C#
 	public ViewModel()
@@ -426,18 +342,10 @@ The implementation of the ViewModel is below:
 	    }
 ```
 
-
 ## The defined ContextMenu works
 
 ![Defining ContextMenu in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/gridview-how-to-use-radcontextmenu-mvvm_1.png)
 
-{% if site.site_name == 'Silverlight' %}
-A __sample project__ can be downloaded [here](http://www.telerik.com/support/kb/silverlight/contextmenu/radcontextmenu-mvvm.aspx).
-You can also check [Header Context Menu](https://demos.telerik.com/silverlight/#GridView/HeaderContextMenu) and [Row Context Menu](https://demos.telerik.com/silverlight/#GridView/RowContextMenu) demos.
-{% endif %}
-
-{% if site.site_name == 'WPF' %}
-A __sample project__ can be downloaded [here](http://www.telerik.com/support/kb/wpf/contextmenu/radcontextmenu-mvvm.aspx).
 You can also check __Header Context Menu__ and __Row Context Menu__ [WPF Demos](https://demos.telerik.com/wpf/).
-{% endif %}
+
 

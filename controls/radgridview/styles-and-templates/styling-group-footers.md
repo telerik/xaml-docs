@@ -16,15 +16,15 @@ In this article we will discuss the following topics:
 
 * [Targeting the GridViewGroupFooterRow Element](#targeting-the-gridviewgroupfooterrow-element)
 
-* [Setting RadGridView's GroupFooterRowStyle](#setting-radgridviews-groupfooterrowstyle)
+* [Setting RadGridView's GroupFooterRowStyle](#setting-radgridview-groupfooterrowstyle)
 
-* [Setting RadGridView's GroupFooterRowStyleSelector](#setting-radgridviews-groupfooterrowstyleselector)
+* [Setting RadGridView's GroupFooterRowStyleSelector](#setting-radgridview-groupfooterrowstyleselector)
 
 * [Targeting the GridViewGroupFooterCell Element](#targeting-the-gridviewgroupfootercell-element)
 
-* [Setting a Column's GroupFooterCellStyle](#setting-a-columns-groupfootercellstyle)
+* [Setting a Column's GroupFooterCellStyle](#setting-a-column-groupfootercellstyle)
 
-* [Setting a Column's GroupFooterCellStyleSelector](#setting-a-columns-groupfootercellstyleselector)
+* [Setting a Column's GroupFooterCellStyleSelector](#setting-a-column-groupfootercellstyleselector)
 
 ## Targeting the GridViewGroupFooterRow Element
 
@@ -46,14 +46,14 @@ __Example 1: Styling all group footer rows of an application__
 
 ```XAML
 	<Style TargetType="telerik:GridViewGroupFooterRow">
-	            <Setter Property="Foreground" Value="White"/>
-	            <Setter Property="Background" Value="LightBlue"/>
-	        </Style>
+		<Setter Property="Foreground" Value="White"/>
+		<Setter Property="Background" Value="LightBlue"/>
+	</Style>
 ```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterRowStyle__.
 
-## Setting RadGridView's GroupFooterRowStyle
+## Setting RadGridView GroupFooterRowStyle
 
 RadGridView's footer rows can also be styled by creating an appropriate __Style__ for the **GridViewGroupFooterRow** element and setting it as RadGridView's __GroupFooterRowStyle__ property. 
 
@@ -67,7 +67,7 @@ __Example 2: Setting RadGridView's GroupFooterRowStyle__
 
 ![Telerik {{ site.framework_name }} DataGrid-groupfooterrow-styled](images/gridview-groupfooterrow-styled.png)
 
-## Setting RadGridView's GroupFooterRowStyleSelector
+## Setting RadGridView GroupFooterRowStyleSelector
 
 You could also use RadGridView's **GroupFooterRowStyleSelector** property to style group footer rows differently based on a specific condition. More details about how this can be achieved can be found in the [GroupFooterRowStyleSelector article]({%slug gridview-group-footer-row-style-selector%}).
 
@@ -86,7 +86,7 @@ __Example 6: Styling all group footer cells of an application__
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __GridViewGroupFooterCellStyle__.
 
-## Setting a Column's GroupFooterCellStyle
+## Setting a Column GroupFooterCellStyle
 
 RadGridView's footer cells can also be styled by creating an appropriate __Style__ for the **GridViewGroupFooterCell** element and setting it as the __GroupFooterCellStyle__ property of the respective __GridViewColumn__. 
 

@@ -193,7 +193,7 @@ __Sample DataContext class__
 
 When you already have prepared the sample data, you can bind it to RadRichTextBox. This is done through the corresponding DataProvider.
 
-The following example shows how to bind the XamlData property from [the above example](#example3) to a XamlDataProvider and a RadRichTextBox.
+The following example shows how to bind the XamlData property from Example 3 to a XamlDataProvider and a RadRichTextBox.
 
 __Using a DataProvider__
 ```XAML

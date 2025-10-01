@@ -10,21 +10,11 @@ position: 2
 
 # Cross-Reference
 
-
-
 Cross-References represent fields that refer to a part of the document. When that part changes, these fields can be updated to reflect the change. You can have a Cross-Reference to a Caption, Heading or Bookmark. 
 
 You can insert a Cross-Reference from here:
 
 ![Rad Rich Text Box Features Cross Reference 01](images/RadRichTextBox_Features_Cross_Reference_01.png)
-
-This article covers:
-
-* [Insert Cross-Reference](#insert-cross-reference)
-
-* [Type of Cross-References](#types-of-cross-references)
-
-* [Inserting a Cross-Reference using RadRichTextBox’s API](#inserting-a-cross-reference-using-radrichtextbox’s-api)
 
 ## Insert Cross-Reference
 

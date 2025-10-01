@@ -36,7 +36,7 @@ __Initializing of RadDesktopAlertManager__
 
 This article will provide some detailed information about the following properties of __RadDesktopAlertManager__: 
 
-* [Show/Hide Animation](#showhide-animation)
+* [Show/Hide Animation](#show-hide-animation)
 
 * [ScreenPosition](#screenposition)
 

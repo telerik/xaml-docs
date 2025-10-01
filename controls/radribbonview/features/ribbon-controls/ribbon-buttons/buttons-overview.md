@@ -34,7 +34,7 @@ There are three button states:
 * __Small__ - displays the small image defined for the button.
 ![{{ site.framework_name }} RadRibbonView Small Button State](images/RibbonView_Buttons_Overview_Small.png)
 
-The state of the button depends on the state of the __RadRibbonGroup__ and can be controlled via the __CollapseToSmall__, __CollapseToMedium__ and the __IsAutoSize__ properties of the ribbon buttons. To learn more about that take a look at the [Common Functionality](#Common_Functionality) section of this topic.		
+The state of the button depends on the state of the __RadRibbonGroup__ and can be controlled via the __CollapseToSmall__, __CollapseToMedium__ and the __IsAutoSize__ properties of the ribbon buttons. To learn more about that take a look at the [Common Functionality](#Common-Functionality) section of this topic.		
 
 To learn more about the states of the __RadRibbonGroup__ take a look at [this]({%slug radribbonview-ribbon-group%}) topic.		
 

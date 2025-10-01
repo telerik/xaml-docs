@@ -55,7 +55,7 @@ For more information about the layout resizing mechanism, please refer to the [R
 
 ## Adding Ribbon Groups to a RadRibbonView Control
 
-As it is described in the [Fundamentals](#ribbon-group---fundamentals) section, various user commands are organized in logical groups that are collected together under specific __RadRibbonTabs__. So the first step before declaring the __RadRibbonGroups__ is to add __RadRibbonTabs__ to your ribbon control. For more information about how to add ribbon tabs, take a look at the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}) topic.		
+As it is described in the fundamentals section, various user commands are organized in logical groups that are collected together under specific __RadRibbonTabs__. So the first step before declaring the __RadRibbonGroups__ is to add __RadRibbonTabs__ to your ribbon control. For more information about how to add ribbon tabs, take a look at the [Ribbon Tab]({%slug radribbonview-ribbon-tab%}) topic.		
 
 Adding __RadRibbonGroups__ is done through the __RadRibbonTab__'s __Items__ property. The next example shows how to add several __RadRibbonGroups__ and how to set their __Header__ property.		
 

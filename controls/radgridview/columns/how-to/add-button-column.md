@@ -19,7 +19,7 @@ This article demonstrates how to add a column with a delete button for each row.
 There are several ways to achieve this. Let's look at some of them.
 
 * [Create a Custom Column](#create-a-custom-column)
-* [Use the GridViewColumn's CellTemplate Property](#use-the-gridviewcolumns-celltemplate-property)
+* [Use the GridViewColumn's CellTemplate Property](#use-the-gridviewcolumn-celltemplate-property)
 
 ## Create a Custom Column
 
@@ -91,7 +91,7 @@ __Example 3: Define the custom column in code-behind__
 	End Sub
 ```
 
-## Use the GridViewColumn's CellTemplate Property
+## Use the GridViewColumn CellTemplate Property
 
 With this approach we will re-define the template of the cells for that column. In this case, we specify a simple **DataTemplate** which contains our delete button.
 

@@ -10,32 +10,6 @@ position: 11
 
 # Styling Group Panel
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewGroupPanel and GridViewGroupPanelItem]({%slug radgridview-styles-and-templates-templates-structure%}).
-
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewGroupPanel Element](#targeting-the-gridviewgrouppanel-element)
-
-* [Targeting the GridViewGroupPanelItem Element](#targeting-the-gridviewgrouppanelitem-element)
-
-* [Targeting the GridViewGroupPanelCell Element](#targeting-the-gridviewgrouppanelcell-element)
-
-* [Setting RadGridView's GroupPanelStyle and GroupPanelItemStyle](#setting-radgridviews-grouppanelstyle-and-grouppanelitemstyle)
-
-* [GroupPanelForeground and GroupPanelBackground](#grouppanelforeground-and-grouppanelbackground)
-
-#### __Figure 1: GridViewGroupPanel template structure__
-
-![Telerik {{ site.framework_name }} DataGrid-group-panel-template](images/gridview-group-panel-template.png)
-
-#### __Figure 2: GridViewGroupPanelItem template structure__
-
-![Telerik {{ site.framework_name }} DataGrid-group-panel-item-template](images/gridview-group-panel-item-template.png)
-
-#### __Figure 3: GridViewGroupPanelCell template structure__
-
-![Telerik {{ site.framework_name }} DataGrid-group-panel-cell-template](images/gridview-group-panel-cell-template.png)
-
 ## Targeting the GridViewGroupPanel Element
 
 In order to style all __RadGridView__ group panels of an application, you should create an appropriate style targeting the __GridViewGroupPanel__ element.

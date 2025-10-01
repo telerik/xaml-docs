@@ -12,17 +12,6 @@ position: 2
 
 This article explains how to add a __RadSpreadsheet__ control to a page in your application.
 
-It contains the following sections:
-
-* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
-* [Adding Assembly References Manually](#adding-assembly-references-manually)
-
-* [Namespaces](#namespaces)
-
-* [Spreadsheet and RibbonView](#spreadsheet-and-ribbonview)
-
-* [Open/Save Documents](#opensave-documents)
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use __RadSpreadsheet__ when working with NuGet packages, install the `Telerik.Windows.Controls.Spreadsheet.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})

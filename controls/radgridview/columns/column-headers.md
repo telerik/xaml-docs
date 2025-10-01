@@ -117,8 +117,6 @@ To learn more about the grouping functionality take a look at the [Basic Groupin
 
 Columns in RadGridView can be grouped in __column groups__(added with __Q3 2011__). [Read more]({%slug gridview-column-groups%}).
 
-To learn more about the customizing of the headers please refer to the [Customizing the Headers](#Customizing_the_Headers) section above.
-
 ## Text Properties
 
 As of __Q2 2016__, __GridViewHeaderCell__ exposes __TextWrapping__, __TextAlignment__, __TextTrimming__ and __TextDecorations__ properties. These customizations can be also applied on column level through the __HeaderTextWrapping__, __HeaderTextAlignment__, __HeaderTextTrimming__ and __HeaderTextDecorations__ properties. If the same property is set to __both elements__, the value of the one corresponding to __GridViewColumn__ will be respected.

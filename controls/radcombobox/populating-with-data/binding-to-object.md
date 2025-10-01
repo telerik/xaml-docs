@@ -10,10 +10,7 @@ position: 1
 
 # Binding to Collection
 
-This tutorial will guide you through the process of binding a `RadComboBox` to a collection of business objects. It also demonstrates two ways of customizing the visualization of the bound items:
-
-* [Setting the DisplayMemberPath Property](#set-the-displaymemberpath-property)
-* [Defining a Custom ItemTemplate](#define-a-custom-itemtemplate)
+This tutorial will guide you through the process of binding a `RadComboBox` to a collection of business objects. It also demonstrates two ways of customizing the visualization of the bound items.
 
 To bind the ComboBox to a collection of business objects, you should set its `ItemsSource` property. If you want the changes to the collection and the properties of the data items to be automatically reflected in the UI, the collection needs to implement the `INotifyCollectionChanged` interface (such collection is ObservableCollection&lt;T&gt;) and your business objects have to implement the `INotifyPropertyChanged` interface.
 

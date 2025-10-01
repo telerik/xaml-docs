@@ -10,16 +10,6 @@ position: 3
 
 # Styling RadGridView
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of RadGridView]({%slug radgridview-styles-and-templates-templates-structure%}#radgridview).
-
-In this topic we will discuss:
-
-* [Targeting the RadGridView Element](#targeting-the-radgridview-element)
-
-* [Setting RadGridView's Style Property](#setting-radgridviews-style-property)
-
-* [Controlling RadGridView Appearance through Properties](#controlling-radgridview-appearance-through-properties)
-
 #### __Figure 1: The default RadGridView control__
 
 ![Telerik {{ site.framework_name }} DataGrid default style](images/gridview_default_style.png)
@@ -65,13 +55,10 @@ __Example 1: Setting RadGridView Style__
 
 __RadGridView__ also exposes a number of properties with which you can easily customize the control without the need of modifying its default style. They can be separated into the following categories:
 
-* [General](#controlling-radgridview-appearance-through-properties-General)
-
-* [Columns](#controlling-radgridview-appearance-through-properties-Columns)
-
-* [Rows](#controlling-radgridview-appearance-through-properties-Rows)
-
-* [Groups](#controlling-radgridview-appearance-through-properties-Groups)
+* [General](#general)
+* [Columns](#columns)
+* [Rows](#rows)
+* [Groups](#groups)
 
 ### General
 

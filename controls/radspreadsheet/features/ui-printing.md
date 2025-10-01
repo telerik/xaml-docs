@@ -11,18 +11,8 @@ position: 3
 # Printing
 
 Printing in __RadSpreadsheet__ allows you to prepare and display spreadsheet data in the most suitable way depending on your needs. Using different printing options such as defining the print page, the scale factor or whether to print gridlines, you can customize the way to present your data. Additionally, __Print Area__ and __Page Breaks__ allows to print only what you need to print and separate big documents on pages just the way you want your data to be separated. Together with printing on a real printer, __RadSpreadsheet’s__ printing gives you the opportunity to export your spreadsheet data in different file formats with the help of virtual printers.
-      
 
-This article presents the Printing functionality of __RadSpreadsheet__ and demonstrates how to specify what and how to print the document. It contains the following subsections:
-      
-
-* [How to print RadSpreadsheet?](#how-to-print-radspreadsheet?)
-
-* [Worksheet page setup](#worksheet-page-setup)
-
-* [Scaling](#scaling)
-
-* [Print preview](#print-preview)
+This article presents the Printing functionality of __RadSpreadsheet__ and demonstrates how to specify what and how to print the document. 
 
 ## How to print RadSpreadsheet?
 

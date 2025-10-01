@@ -15,7 +15,7 @@ RadGridView provides a rich API that allows you to filter programmatically. Ever
 * [Column Filtering](#column-filtering)
 	* [Filtering Single Column](#filtering-single-column)
 	* [Clearing a Single Column Filter](#clearing-a-single-column-filter)
-	* [Filtering Multiple Column](#filtering-multiple-column)
+	* [Filtering Multiple Column](#filtering-multiple-columns)
 	* [Clearing Multiple Column Filters](#clearing-multiple-column-filters)
 * [Custom Filtering](#custom-filtering)
 	* [IFilterDescriptor](#ifilterdescriptor)

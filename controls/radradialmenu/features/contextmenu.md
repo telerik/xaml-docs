@@ -12,12 +12,6 @@ position: 3
 
 __RadRadialMenu__ can be used as a context menu for another __FrameworkElement__. This can be done by using the __RadialContextMenu__ attached property defined in the __RadRadialMenu__ class. Additionally, you will need to set the events/actions of the target element on which the menu will be displayed and closed.
 
-In this topic we will go through the different ways of setting __RadialMenu__ as a context menu such as:
-
-* [Using ShowEventName/HideEventName properties](#using-showeventnamehideeventname-properties)
-
-* [Using the static RadialMenuCommands class](#using-the-static-radialmenucommands-class)
-
 ## Using ShowEventName/HideEventName properties
 
 When __RadRadialMenu__ is used as a context menu, you can set its __ShowEventName__ / __HideEventName__ to define the events of the target element on which it will be shown / closed.

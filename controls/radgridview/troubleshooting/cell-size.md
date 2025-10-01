@@ -26,7 +26,7 @@ The appearance __now__:
 
 In order to have a different (smaller) Size for the containers, you can define a Style targeting the element you are interested in. Then __set its Height property with the desired value__. In the example with the CellTemplate, you could define a __simple Style targeting the GridViewRow element__ and set a fixed Height.
 
-You can check this [help article]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts) and this
+You can check this [help article]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-font-properties) and this
 [blog post](http://blogs.telerik.com/blogs/13-02-26/dynamic-fontsizes-with-windows8-and-windows8touch-themes) on explaining details about the new dynamic FontSizes.
 
 More information on GridView's Styling could be found [here]({%slug gridview-stylines-and-templates-overview%}). If you use the Implicit Themes, then this [article]({%slug styling-apperance-implicit-styles-overview%}) might be helpful as well.

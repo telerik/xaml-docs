@@ -14,14 +14,6 @@ position: 12
 
 >importantWith R3 2012, Telerik introduced __GroupRenderMode="Flat"__ which uses the **GroupHeaderRow** element as opposed to the **Nested** group render mode that uses the **GridViewGroupRow**. You should target the correct element in order for your styles to be applied. Please look at this [help article]({%slug gridview-grouping-groupingmodes%}) for details.
 
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewGroupRow Element](#targeting-the-gridviewgrouprow-element)
-
-* [Targeting the GroupHeaderRow Element](#targeting-the-groupheaderrow-element)
-
-* [Setting RadGridView's GroupRowStyle](#setting-radgridviews-grouprowstyle)
-
 ## Targeting the GridViewGroupRow Element
 
 In order to style all group rows of __RadGridView__ instances with **GroupRenderMode="Nested"** in your application, you should create an appropriate style targeting the __GridViewGroupRow__ element.

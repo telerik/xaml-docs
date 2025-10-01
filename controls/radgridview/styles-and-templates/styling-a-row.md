@@ -12,17 +12,7 @@ position: 14
 
 >tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewrow).
 
-{% if site.site_name == 'WPF' %}
 > `RadGridView` supports setting the background color of the selected row, as well as setting the mouse-over color of the row. More information can be found in the [SelectedBackground and MouseOverBackground]({%slug radgridview-rows-selected-background%}) article.
-{% endif %}
-
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewRow Element](#targeting-the-gridviewrow-element)
-
-* [Setting RadGridView's RowStyle and AlternateRowsStyle](#setting-radgridviews-rowstyle-and-alternaterowsstyle)
-
-* [Setting RadGridView's RowStyleSelector and AlternateRowsStyleSelector](#setting-radgridviews-rowstyleselector-and-alternaterowsstyleselector)
 
 #### __GridViewRow template structure__
 
@@ -57,6 +47,7 @@ __Styling all rows of an application__
 > In order to use the `AlternateRowStyle`, you should first set the `AlternationCount` property of your RadGridView. For example, if you want to alternate each second row, you have to set its value to 2.
 
 __Creating styles for the RowStyle and AlternativeRowStyle properties__
+
 ```XAML
 	<Application.Resources>
 		 <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewRowStyle}" -->

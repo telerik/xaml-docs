@@ -16,14 +16,6 @@ The __LinearScale__ control allows you to display a scale of linear form. Typica
 
 >tip The scales derived from the __Graphic Scale__ class, can use any of the indicators provided by the __RadGauge__ control. To learn how read the [Base Scale]({%slug radgauge-features-linear-and-radial-scales-basics%}) topic.
 
-Here is the list of the __LinearScale__ features:
-
-* [Orientation](#orientation)
-
-* [Relative Size](#relative_size)
-
-* [Placement](#placement)
-
 ## Orientation
 
 The LinearScale control can have either a horizontal or vertical orientation. The orientation could be defined using the appropriate container: the __RadVerticalLinearGauge__ for vertical scale and the __RadHorizontalLinearGauge__ for horizontal scale respectively.

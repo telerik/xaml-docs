@@ -173,7 +173,7 @@ Jump to the following topics to learn about the specifics of the theme's palette
 * [Changing Font Properties](#changing-font-properties)
 * [Using Glyphs](#using-glyphs)
 * [Changing Corner Radius](#changing-corner-radius)
-* [Visual Helpers](#visual-helpers)
+* [Theme Helper](#theme-helper)
 * [Material Control](#material-control)
 * [Changing Opacity](#changing-opacity)
 

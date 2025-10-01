@@ -22,7 +22,7 @@ Using the keyboard you can perform some of the most common tasks. This section d
 
 	* When the dropdown of the __RadComboBox__ is __opened__, then pressing __Up\Down Arrows__ will change the __highlighted item__ in the list. 
 
-	* When the dropdown of the __RadComboBox__ is __closed__, then pressing __Up\Down Arrows__ will change the [SelectedItem](#Using_the_SelectedItem). 
+	* When the dropdown of the __RadComboBox__ is __closed__, then pressing __Up\Down Arrows__ will change the SelectedItem.
 
 * __Left\Right__ - the __Left__ and __Right Arrow__ keys have the same functions as the __Up__ and __Down__. However, they will affect the selected\highlighted item only when the __RadComboBox__ is __not editable__ (the __IsEditable__ property is set to __False__). 
 

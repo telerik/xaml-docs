@@ -17,85 +17,7 @@ The picture below demonstrates the final result:
 
 ## Setting the RadTreeViews in XAML
 
-First you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement drag and drop operations, we won't focus on the definitions of the controls in xaml. However, please note to set the __RadTreeView IsDragDropEnabled__ property to __true__.
-        
-{% if site.site_name == 'Silverlight' %}
-
-
-
-```XAML
-		<Grid>
-			<Grid.Resources>
-				<DataTemplate x:Key="mediaFilesTemplate">
-					<StackPanel Orientation="Horizontal">
-						<Image Width="16"
-						       Height="16"
-						       Source="Images/DefaultIcons/photos.png"
-						       Stretch="Fill" />
-						<TextBlock Text="{Binding ImageFilePath}" />
-					</StackPanel>
-				</DataTemplate>
-				<telerik:HierarchicalDataTemplate x:Key="localMachineTemplate"
-				                          ItemTemplate="{StaticResource mediaFilesTemplate}"
-				                          ItemsSource="{Binding MediaFiles}">
-					<TextBlock Text="{Binding Name}" />
-				</telerik:HierarchicalDataTemplate>
-	
-				<DataTemplate x:Key="resourceTemplate">
-					<StackPanel Orientation="Horizontal">
-						<Image Width="16"
-						       Height="16"
-						       Source="{Binding ImageFilePath}"
-						       Stretch="Fill" />
-						<TextBlock Text="{Binding Title}" />
-					</StackPanel>
-				</DataTemplate>
-	
-				<telerik:HierarchicalDataTemplate x:Key="applicationTemplate"
-				                          ItemTemplate="{StaticResource resourceTemplate}"
-				                          ItemsSource="{Binding Resources}">
-					<TextBlock Text="{Binding Name}" />
-				</telerik:HierarchicalDataTemplate>
-			</Grid.Resources>
-	
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="*" />
-			</Grid.ColumnDefinitions>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="30" />
-				<RowDefinition />
-			</Grid.RowDefinitions>
-	
-			<TextBlock Grid.Row="0"
-			           Grid.Column="0"
-			           HorizontalAlignment="Center"
-			           VerticalAlignment="Center"
-			           Text="File/Folders" />
-			<telerik:RadTreeView x:Name="xLocalMachineTree"
-			                     Grid.Row="1"
-			                     Grid.Column="0"
-			                     IsDragDropEnabled="True"
-			                     ItemTemplate="{StaticResource localMachineTemplate}" />
-	
-			<TextBlock Grid.Row="0"
-			           Grid.Column="1"
-			           HorizontalAlignment="Center"
-			           VerticalAlignment="Center"
-			           Text="MyApplication" />
-	
-			<telerik:RadTreeView x:Name="xApplicationTree"
-			                     Grid.Row="1"
-			                     Grid.Column="1"
-			                     IsDragDropEnabled="True"
-			                     ItemTemplate="{StaticResource applicationTemplate}"/>
-		</Grid>
-```
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
-
+First you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement drag and drop operations, we won't focus on the definitions of the controls in xaml. However, please note to set the __RadTreeView IsDragDropEnabled__ property to __true__.        
 
 ```XAML
 		<Grid>
@@ -166,13 +88,9 @@ First you can define the controls in your view. As the purpose of this tutorial 
 		</Grid>
 ```
 
-{% endif %}
-
 ## Create the View Models
 
 For the first __RadTreeView__ we can create a business class called __MediaFile__ that will hold information about images.
-
-
 
 ```C#
 	public class MediaFile
@@ -189,8 +107,6 @@ For the first __RadTreeView__ we can create a business class called __MediaFile_
 ```
 
 Then we can define a business class called __PartitionViewModel__ which will hold a collection of __MediaFiles__ and the name of a partition in the RadTreeView that represents the local machine tree.
-
-
 
 ```C#
 	public class PartitionViewModel
@@ -233,8 +149,6 @@ Then we can define a business class called __PartitionViewModel__ which will hol
 
 For our second RadTreeView we can create a class called __Resource__ that will hold the information about the images in it.
 
-
-
 ```C#
 	public class Resource
 	{
@@ -250,8 +164,6 @@ For our second RadTreeView we can create a class called __Resource__ that will h
 ```
 
 Then we can define a class called __ApplicationViewModel__ which will hold a collection of __Resources__ and the name of an application.
-
-
 
 ```C#
 	public class ApplicationViewModel
@@ -279,8 +191,6 @@ Then we can define a class called __ApplicationViewModel__ which will hold a col
 ```
 
 Next we can define a __MainViewModel__ class that contains the collections which we will use to populate the __ItemsSource__ property of both __RadTreeViews__ For the first __RadTreeView__ will be populated with collection of __PartitionViewModel__ objects, whereas the second __RadTreeView__ will use a collection of __ApplicationViewModel__ objects.
-
-
 
 ```C#
 	public class MainViewModel
@@ -413,8 +323,6 @@ As was mentioned in the beginning of this article, the drop will be forbidden in
 
 Now let’s add the handlers for the __DragDropManager__ events listed above. We’ll do that in the code-behind.        
 
-
-
 ```C#
 	public MainPage()
 	{
@@ -447,11 +355,9 @@ Now let’s add the handlers for the __DragDropManager__ events listed above. We
 
 Once we do so, we can start implementing the drag/drop handlers. For the purpose of this example we can only drop items to the __RadTreeView__ with __x:Name__ property set to *xApplicationTree*.        
 
->tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag. You can read more about the properties exposed by the type in the [Drag and Drop](7FC973CF-4B65-4682-99E0-024EE62925C7#TreeViewDragDropOptions) documentation article.
+>tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag.
 
 Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we drop an item in the second __RadTreeView__ we create a new item of *Resource* type.
-
-
 
 ```C#
 	private void OnApplicationTreeDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)

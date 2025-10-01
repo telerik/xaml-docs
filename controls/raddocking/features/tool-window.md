@@ -18,8 +18,6 @@ In the figure below you can see two ToolWindows with a floating pane inside of e
 
 ![{{ site.framework_name }} RadDocking with ToolWindows](images/RadDocking_Features_ToolWindow_010.png)
 
-You can learn how to declare such a floating structure in the [Floating Panes](#Floating_Panes) help article.
-
 ## Setting FloatingSize and FloatingLocation
 
 RadDocking provides the ability to easily set the initial floating size and location of the ToolWindows. To do that, use the `RadDocking.FloatingSize` and `RadDocking.FloatingLocation` attached properties, as shown in the following example:

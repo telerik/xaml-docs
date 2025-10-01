@@ -12,7 +12,7 @@ position: 9
 
 This article demonstrates how to cancel the drop operation. This is useful when you want to forbid the dropping on or the dropping of a particular item when using the RadTreeView control.
 
-To do so, you can subscribe the RadTreeView element to the [DragDropManager.Drop]({%slug dragdropmanager-events%}#drop-target-events) event and set the **DropAction** of the [TreeViewDragDropOptions]({%slug radtreeview-features-drag-and-drop%}#using-the-treeviewdragdropoptions-object) to **DropAction.None**.
+To do so, you can subscribe the RadTreeView element to the [DragDropManager.Drop]({%slug dragdropmanager-events%}#drop-target-events) event and set the **DropAction** of the [TreeViewDragDropOptions]({%slug radtreeview-features-drag-and-drop%}) to **DropAction.None**.
 
 __Example 1: Subscribing the control for the Drop event__
 ```C#

@@ -89,7 +89,7 @@ Data Usage:
 Data Storage:
 * Prompts and context are anonymized and stored only for statistical analysis and troubleshooting.
 * No association between prompts and your Telerik user account.
-* Usage metrics are collected to ensure [license compliance](#number-of-requests).
+* Usage metrics are collected to ensure [license compliance](#usage-limits).
 
 > Make sure also to review the terms and privacy policies of your selected AI model and AI client.
 

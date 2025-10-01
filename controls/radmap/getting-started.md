@@ -51,7 +51,7 @@ __Defining map in XAML__
 The RadMap control doesn't display a map on itself, it needs a map provider from which to consume the required data. Currently the RadMap control supports a few providers out of the box:        
 
 * [Azure Maps]({%slug radmap-features-providers-azuremapprovider%}) 
-* [OpenStreet Maps]({%slug radmap-features-providers%}#openstreet-maps) 
+* [OpenStreet Maps]({%slug radmap-features-providers%}) 
 * [ArcGIS Online]({%slug radmap-features-providers-arcgis%}) 
 * [Empty Provider]({%slug radmap-features-empty-provider%}) 
 * [URI Image provider]({%slug radmap-features-uriimageprovider%}) 

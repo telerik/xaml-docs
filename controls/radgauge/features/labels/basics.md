@@ -78,7 +78,6 @@ In order to allow you to format the value, that the labels display, The GraphicS
 
 >Defining format strings in XAML can be done in the following way - `{} {0:your format string}`. To learn more about formatting visit the [Formatting Overview](http://msdn.microsoft.com/en-us/library/26etazsy.aspx) chapter in MSDN.
 
-
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale
@@ -97,16 +96,11 @@ Here is a snapshot of the result:
 
 ## Appearance
 
-The RadialScale and LinearScale objects which inherit the GraphicScale class provide you with two ways of modifying the labels' appearance:
-
-* [Modifying Label's Foreground](#modifying-labels-foreground)
-
-* [Specifying a LabelTemplate](#specifying-a-labeltemplate)
+The RadialScale and LinearScale objects which inherit the GraphicScale class provide you with two ways of modifying the labels' appearance.
 
 ## Modifying Label's Foreground
 
 To modify the labels foreground, simply set the Foreground property of the GraphicScale object (RadialScale or LinearScale) to the desired color. Here is an example:
-
 
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
@@ -118,14 +112,11 @@ To modify the labels foreground, simply set the Foreground property of the Graph
 	</telerik:RadRadialGauge>
 ```
 
-Here is a snapshot of the result:
-
 ![Rad Gauge Features Labels Basics 04](images/RadGauge_Features_Labels_Basics_04.PNG)
 
 ## Specifying a LabelTemplate
 
 The other way of specifying the appearance of the label is by defining an entire LabelTemplate for it, which will get applied to each of the labels. In it you can define the visual appearance of the label as you desire and bind the used elements to the data context of the template, where needed. The data context of the template would be an object of type TickLabel. You can bind to its properties as desired, but the most important of them is the FormattedValue property. It stores the display value for the label according to the label format which is specified in the scale.
-
 
 ```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">

@@ -23,6 +23,7 @@ The **MapProviderBase** is the base class for all map providers. Two widely-used
 Once you know the type of provider you require, you can create a custom class to inherit from it. In most cases this will be the __TiledProvider__ class. In addition, you need to override the **SpatialReference** property - it returns the actual projection used by the provider and most often returns an instance of the __MercatorProjection__ class.
 
 __Example 1: Create a custom TiledProvider__
+
 ```C#
 	public class MyMapProvider : TiledProvider
 	{
@@ -179,6 +180,6 @@ __Example 5: Set the provider via RadMap's Provider property__
 
 ## See Also
 
-* [OpenStreetMap]({%slug radmap-features-providers%})#openstreet-maps)
+* [OpenStreetMap]({%slug radmap-features-providers%}))
 * [AzureMaps]({%slug radmap-features-providers-azuremapprovider%})
 * [UriImageProvider]({%slug radmap-features-uriimageprovider%})

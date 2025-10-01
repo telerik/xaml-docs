@@ -66,11 +66,11 @@ Here is a snapshot of the result:
 
 The __TickProperties__ objects provide you with two ways of modifying the ticks' appearance:
 
-* [Modifying Tick's Background](#Modifying_Ticks_Background)
+* [Modifying Tick's Background](#Modifying-Ticks-Background)
 
-* [Specifying a DataTemplate](#Specifying_a_DataTemplate)
+* [Specifying a DataTemplate](#Specifying-a-DataTemplate)
 
-### Modifying Tick's Background
+### Modifying Ticks Background
 
 To modify the ticks' background, simply set the __MajorTickBackground__, __MiddleTickBackground__ or the __MinorTickBackground__ property of the respective __Scale__ object to the desired color. Here is an example:
 

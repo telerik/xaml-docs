@@ -19,7 +19,7 @@ The __MaskedInputExtensions__ class allows you to further customize the __Masked
 * [Allow minus sign on zero value](#allow-minus-sign-on-zero-value)
 * [Allow minus on null values](#allow-minus-on-null-values)
 * [Tab navigation](#tab-navigation)
-* [Set the caret position of RadMaskedTextInput](#set-the-caret-position-of-radmaskedtextinput)
+* [Set the caret position of RadMaskedTextInput](#set-the-caret-position-in-a-radmaskedtextinput)
 * [Allow Null Values](#allow-null-values)
 
 >The MaskedInputExtensions class can be accessed in XAML through the following namespace:  

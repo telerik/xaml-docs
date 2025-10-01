@@ -12,13 +12,7 @@ position: 2
 
 The __RadComboBox__ control supports rich text search functionality. The __TextSearch__ class and the __TextSearchMode__ property of the RadComboBox can be used in order to regulate how the control behaves when it receives user input.
 
-The purpose of this article is to show the properties of the TextSearch class and the TextSearchMode property. The following sections are included:
-
-* [TextSearchMode](#textsearchmode)
-
-* [Using TextSearch.TextPath](#using-textsearchtextpath)
-
-* [Using TextSearch.AutoCompleteTimeout](#using-textsearchautocompletetimeout)
+The purpose of this article is to show the properties of the TextSearch class and the TextSearchMode property.
 
 ## TextSearchMode
 

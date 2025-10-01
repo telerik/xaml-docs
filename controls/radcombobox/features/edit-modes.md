@@ -12,28 +12,15 @@ position: 1
 
 __RadComboBox__ can be editable, allowing the user to type in its text box, or non-editable, where the text box is hidden. In addition, you could make the text box read-only, in order to keep the editable look, and in the same time to prevent the user from typing. The __RadComboBox__'s API exposes several properties, allowing you to configure these modes.
 
-This topic contains the following sections:
-
-* [Editable\Non-Editable RadComboBox](#editable\non-editable-radcombobox)
-
-* [Editable and read-only RadComboBox](#editable-and-read-only-radcombobox)
-
-* [StaysOpenOnEdit](#staysopenonedit)
-
-* [Disable the keyboard selection when in edit mode](#disable-the-keyboard-selection-when-in-edit-mode)
-
->tipBefore reading this tutorial you should get familiar with the [Visual Structure]({%slug radcombobox-general-information-visual-structure%}) of the __RadComboBox__ control.
+>tip Before reading this tutorial you should get familiar with the [Visual Structure]({%slug radcombobox-general-information-visual-structure%}) of the __RadComboBox__ control.
 
 ## Editable\Non-Editable RadComboBox
 
 In order to make your __RadComboBox__ editable, you should set its __IsEditable__ property to __True__.
 
-
-
 ```XAML
 	<telerik:RadComboBox x:Name="radComboBox" IsEditable="True"/>
 ```
-
 
 >tipWhen making your __RadComboBox__ editable, you could better distinguish the benefit of the [AutoComplete]({%slug radcombobox-features-autocomplete%}). 
 
@@ -47,9 +34,7 @@ By default, the __RadComboBox__ is non-editable. Which means that its __Input Ar
 
 You have the ability to make your __RadComboBox__ __editable__, but its __text box__ to be __read-only__. Thus you will keep the editable look, but will prevent the user from typing. The only thing you should do is to set both of the properties __IsEditable__ and __IsReadOnly__ to __True__.
 
-{% if site.framework_name == 'WPF' %}
-> The RadComboBox does not have a visual _readonly_ state. In fact, it will have its normal look when the __IsReadOnly__ property is __True__. Additionally, setting the ReadOnlyBackgroundColor and ReadOnlyBorderColor, available in all themes released after [Office2016]({%slug common-styling-appearance-office2016-theme%}#readonlybackgroundbrush-and-readonlyborderbrush), will have no effect on the control.
-{% endif %}
+> The RadComboBox does not have a visual _readonly_ state. In fact, it will have its normal look when the __IsReadOnly__ property is __True__. Additionally, setting the ReadOnlyBackgroundColor and ReadOnlyBorderColor, available in all themes released after [Office2016]({%slug common-styling-appearance-office2016-theme%}), will have no effect on the control.
 
 __Example 1: Setting the IsEditable and IsReadOnly to True__
 

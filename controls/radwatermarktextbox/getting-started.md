@@ -12,10 +12,6 @@ position: 1
 
 This tutorial will walk you through the required steps for using __RadWatermarkTextBox__. 
 
-* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
-* [Adding Assembly References Manually](#adding-assembly-references-manually)
-* [Setting the WatermarkContent](#setting-watermark-content)
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use __RadWatermarkTextBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})

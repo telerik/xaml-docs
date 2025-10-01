@@ -12,9 +12,6 @@ position: 0
 
 This topic will go through the process of styling the common elements of __RadTileList__.
 
-* [Styling the Tiles](#styling-the-tiles)
-* [Styling the TileGroupContainer](#styling-the-tilegroupcontainer)
-
 ## Styling the Tiles
 
 For the purpose of this example, the following definition of __RadTileList__ will be used.

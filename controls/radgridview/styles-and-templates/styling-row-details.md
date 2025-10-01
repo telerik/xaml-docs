@@ -10,15 +10,7 @@ position: 15
 
 # Styling Row Details
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the DetailsPresenter]({%slug radgridview-styles-and-templates-templates-structure%}#detailspresenter).
-
-In this article we will discuss the following topics:
-
-* [Targeting the DetailsPresenter Element](#targeting-the-detailspresenter-element)
-
-* [Setting RadGridView's RowDetailsStyle](#setting-radgridviews-rowdetailsstyle)
-
-* [Setting RadGridView's RowDetailsStyleSelector](#setting-radgridviews-rowdetailsstyleselector)
+>tip Before reading this topic, you might find it useful to get familiar with the [Template Structure of the DetailsPresenter]({%slug radgridview-styles-and-templates-templates-structure%}#detailspresenter).
 
 ## Targeting the DetailsPresenter Element
 

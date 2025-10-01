@@ -56,7 +56,19 @@ __Example 2: Changing the default FontSize and FontFamily in the Office2016 them
 #### __Figure 1: Setting different FontSize and FontFamily__
 ![{{ site.framework_name }} Setting different FontSize and FontFamily](../styling-and-appearance/images/common-styling-appearance-office2016-theme-1.png)	
 
-The approach used in the above code snippets is applicable for the following themes - [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Windows8Touch]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Office2013]({%slug common-styling-appearance-office2013-theme%}#changing-fonts), [VisualStudio2013]({%slug common-styling-appearance-visualstudio2013-theme%}#changing-fonts), [Office2016]({%slug common-styling-appearance-office2016-theme%}#changing-fonts), [Office2016Touch]({%slug common-styling-appearance-office2016touch-theme%}#changing-fonts), [Green]({%slug common-styling-appearance-green-theme%}#changing-fonts), [Fluent]({%slug common-styling-appearance-fluent-theme%}#changing-fonts), [Material]({%slug common-styling-appearance-material-theme%}#changing-fonts), [Crystal]({%slug common-styling-appearance-crystal-theme%}#changing-fonts) and [VisualStudio2019]({%slug common-styling-appearance-visualstudio2019-theme%}#changing-fonts).
+The approach used in the above code snippets is applicable for the following themes:
+
+* [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-font-properties)
+* [Windows8Touch]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-font-properties)
+* [Office2013]({%slug common-styling-appearance-office2013-theme%}#changing-font-properties)
+* [VisualStudio2013]({%slug common-styling-appearance-visualstudio2013-theme%}#changing-font-properties)
+* [Office2016]({%slug common-styling-appearance-office2016-theme%}#changing-font-properties)
+* [Office2016Touch]({%slug common-styling-appearance-office2016touch-theme%}#changing-font-properties)
+* [Green]({%slug common-styling-appearance-green-theme%}#changing-font-properties)
+* [Fluent]({%slug common-styling-appearance-fluent-theme%}#changing-font-properties)
+* [Material]({%slug common-styling-appearance-material-theme%}#changing-font-properties)
+* [Crystal]({%slug common-styling-appearance-crystal-theme%}#changing-font-properties) 
+* [VisualStudio2019]({%slug common-styling-appearance-visualstudio2019-theme%}#changing-font-properties).
 
 >If you are using a different theme, which does not have a palette, you can change the font size of the application through Application.Current.MainWindow.FontSize or apply it directly for the control you wish, e.g. this.dataGrid.FontSize = 20.
 

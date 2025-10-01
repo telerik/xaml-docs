@@ -12,35 +12,21 @@ position: 9
 
 `RadScheduleView` exposes its functionality through various commands that can be executed on its behalf. All commands are placed in the static class `RadScheduleViewCommands`. The purpose of this tutorial is to show you all of the commands exposed by the RadScheduleViewCommands class and how to execute them.
 
-* [CreateAppointment / CreateAppointmentWithDialog Commands](#createappointment--createappointmentwithdialog-commands)
-
-* [CreateInlineAppointment Command](#createinlineappointment-command)
-
-* [EditAppointment Command](#editappointment-command)
-
-* [DeleteAppointment Command](#deleteappointment-command)
-
-* [EditRecurrenceRule Command](#editrecurrencerule-command)
-
-* [DeleteRecurrenceRule Command](#deleterecurrencerule-command)
-
-* [EditParentAppointment Command](#editparentappointment-command)
-
-* [SetDayViewMode Command](#setdayviewmode-command)
-
-* [SetWeekViewMode Command](#setweekviewmode-command)
-
-* [SetMonthViewMode Command](#setmonthviewmode-command)
-
-* [SetTimelineViewMode Command](#settimelineviewmode-command)
-
-* [IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands](#increasevisibledatelarge---decreasevisibledatelarge-commands)
-
-* [SetAppointmentImportance Command](#setappointmentimportance-command)
-
-* [GoToPreviousAppointment / GoToNextAppointment Commands](#gotopreviousappointment--gotonextappointment-commands)
-
-* [SetToday Command](#settoday-command)
+* `CreateAppointment / CreateAppointmentWithDialog Commands`
+* `CreateInlineAppointment Command`
+* `EditAppointment Command`
+* `DeleteAppointment Command`
+* `EditRecurrenceRule Command`
+* `DeleteRecurrenceRule Command`
+* `EditParentAppointment Command`
+* `SetDayViewMode Command`
+* `SetWeekViewMode Command`
+* `SetMonthViewMode Command`
+* `SetTimelineViewMode Command`
+* `IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands`
+* `SetAppointmentImportance Command`
+* `GoToPreviousAppointment / GoToNextAppointment Commands`
+* `SetToday Command`
 
 ## CreateAppointment / CreateAppointmentWithDialog Commands
 

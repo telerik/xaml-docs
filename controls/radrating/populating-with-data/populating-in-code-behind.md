@@ -10,7 +10,7 @@ position: 3
 
 # In Code-Behind
 
-This tutorial will walk you through the common tasks of [adding](#Adding_RadRatingItems) and [removing](#Removing_RadRatingItems) __RadRatingItems__ programmatically.			
+This tutorial will walk you through the common tasks of [adding](#Adding-RadRatingItems) and [removing](#Removing-RadRatingItems) __RadRatingItems__ programmatically.			
 
 ```XAML
 	<telerik:RadRating x:Name="radRating"/>

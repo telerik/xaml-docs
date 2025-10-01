@@ -10,17 +10,13 @@ position: 3
 
 # Customizing Items
 
-There are two ways you can change the template for the __RadTimeline__ items. You can either customize them with the use of ItemTemplateSelector, or with a  __TimelineItemTemplate / TimelineInstantItemTemplate__ property. This help article will walk you through these two approaches:
-* [TimelineItemTemplate / TimelineInstantItemTemplate property](#timelineitemtemplate/timelineinstantitemtemplate-property)
-* [ItemTemplateSelector](#itemtemplateselector)
+There are two ways you can change the template for the __RadTimeline__ items. You can either customize them with the use of ItemTemplateSelector, or with a  __TimelineItemTemplate / TimelineInstantItemTemplate__ property.
 
 ## TimelineItemTemplate and TimelineInstantItemTemplate 
 
 > The items with duration can be customized in the same manner as the instant items. To shed more light on the difference between these two items types, you may check the [DataBinding]({%slug radtimeline-databinding%}) topic.
 
 The following example demonstrates how you can add custom Framework Element (Rectangle in this case) to present the instant and duration items. The customizations are made via DataTemplate and applied to the corresponding TimelineItemTemplate/TimelineInstantItemTemplate property in XAML. There is nothing special in code-behind, it is added for completeness of the sample.
-
-
 
 ```XAML
 	 <UserControl.Resources>
@@ -122,8 +118,6 @@ Using ItemTemplateSelector is another approach for customizing the __RadTimeline
 We'll get started with creating a __CustomItemTemplateSelector__ class. It should inherit the __DataTemplateSelector__ class and override its __SelectTemplate__ method. We'll create two properties with type DataTemplate - these are the InstantItemTemplate and ItemWithDurationTemplate we used in the previous section of this article.            
 
 >We are using the Product class from the previous section as datasource for our Timeline.
-
-
 
 ```C#
 	 public class CustomItemTemplateSelector : DataTemplateSelector

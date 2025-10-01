@@ -22,7 +22,7 @@ This tutorial will walk you through the creation of a __RadChart__ and will show
 
 >Before reading this tutorial you should get familiar with the [Visual Structure]({%slug radchart-general-information-visual-structure%}) of the standard __RadChart__ control and its elements.
 
-For the purpose of this tutorial, you will need to create an empty {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} Application project and open it in Blend.
+For the purpose of this tutorial, you will need to create an empty WPF Application project and open it in Blend.
 
 >In order to use __RadChart__ control in your projects you have to add references to __Telerik.Windows.Controls.Charting.dll__, __Telerik.Windows.Controls.dll__ and __Telerik.Windows.Data.dll.__
 
@@ -36,9 +36,6 @@ For the purpose of this tutorial, you will need to create an empty {% if site.si
 
 As result you can see the __RadChart__ with some demo data displayed. The underlaying XAML is pretty simple and looks like this:
 
-
-
-
 ```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  Content="RadChart"
@@ -50,9 +47,6 @@ There are two things you should pay attention to: First is the declaration of th
 ## Creating Line Chart
 
 In this sample you are going to create and visualize your data using simple line chart. This line chart will be based on some predefined static data declared in the XAML or code-behind.
-
-
-
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -207,8 +201,6 @@ The X-__axis__ can be further customized by replacing the month numbers (1, 2, 3
 * Customize the chart [Animations]({%slug radchart-features-animations%}). 
 
 * Change the [Striplines and Gridlines]({%slug radchart-features-axes-striplines-and-gridlines%}) of both axes. 
-
-* [Creating Chart with Custom Layout](#Creating_Chart_with_Custom_Layout).
 
 If you need to know how to data bind your __RadChart__, take a look at the following topics:
 

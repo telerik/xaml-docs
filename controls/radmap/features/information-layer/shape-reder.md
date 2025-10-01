@@ -243,7 +243,7 @@ When adding the read shapes to the layer, the __MapShapeReader__ is able to clea
 
 ## Styling the Shapes
 
-To modify the appearance of the shapes in terms of __Fill__, __Stroke__ etc. you can either use the [HighlightFill and Shape Fill](#using-the-mapshapefill-object-on-the-layer-level) properties of the __InformationLayer__ or use the [Colorizer]({%slug radmap-features-colorizer%}) property of the __InformationLayer__.
+To modify the appearance of the shapes in terms of __Fill__, __Stroke__ etc. you can either use the HighlightFill and Shape Fill properties of the __InformationLayer__ or use the [Colorizer]({%slug radmap-features-colorizer%}) property of the __InformationLayer__.
 
 ## See Also
  * [Shapefiles Support]({%slug radmap-features-shapefiles-support%})

@@ -95,7 +95,7 @@ In case you are manually generating the shapes inside a layer, you have to manua
 
 To access the data stored in the __ExtendedData__ property simply bind directly to it and use the __ExtendedDataConverter__ class, that comes out of the box with the __RadMap__. To get the desired value you have to also pass the name of the respective property from the set as the __ConverterParameter__. Here is an example, based on the one in the previous section:
 
->tip You can pass a string to the ConvertParameter that combines the values of two or more properties from the Extended Data. To learn how to compose your format string read the [following topic](#ToolTipFormat).
+>tip You can pass a string to the ConvertParameter that combines the values of two or more properties from the Extended Data. 
 
 
 ```XAML

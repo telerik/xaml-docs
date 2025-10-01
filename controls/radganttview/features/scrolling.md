@@ -22,19 +22,13 @@ Additionally, with the R2 2016 release of UI for WPF, __RadGanttView__ provides 
 
 You can modify how a __RadGanttView__ scrolls using its __ScrollingService__ property, which is of type __GanttScrollingService__ and provides multiple methods for scroll navigation:
 
-* [ScrollIntoView (object param)](#scrollintoview-object-item)
-
-* [ScrollIntoView (object item, ScrollSettings settings)](#scrollintoview-object-item-scrollsettings-settings)
-
-* [ScrollToDateTime(DateTime dateTime)](#scrolltodatetimedatetime-datetime)
-
-* [ScrollToColumn(int columnIndex) / ScrollToColumn(ColumnDefinitionBase columnDefinition)](#scrolltocolumnint-columnindex--scrolltocolumncolumndefinitionbase-columndefinition)
-
-* [ScrollToRow(int rowIndex)] (#scrolltorowint-rowindex)
-
-* [ScrollHorizontalTo (double offset, GanttScrollArea ganttArea)] (#scrollhorizontalto-double-offset-ganttscrollarea-ganttarea)
-
-* [ScrollVerticalTo(double offset) / ScrollVerticalWith(double offset)] (#scrollverticaltodouble-offset--scrollverticalwithdouble-offset)
+* `ScrollIntoView (object param)`
+* `ScrollIntoView (object item, ScrollSettings settings)`
+* `ScrollToDateTime(DateTime dateTime)`
+* `ScrollToColumn(int columnIndex) / ScrollToColumn(ColumnDefinitionBase columnDefinition)`
+* `ScrollToRow(int rowIndex)`
+* `ScrollHorizontalTo (double offset, GanttScrollArea ganttArea)`
+* `ScrollVerticalTo(double offset) / ScrollVerticalWith(double offset)`
 
 ### ScrollIntoView (object item)
 

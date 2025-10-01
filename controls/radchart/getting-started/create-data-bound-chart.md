@@ -272,8 +272,6 @@ If you need further customizations of the chart you can take a look at some of t
 
 * Change the [Striplines and Gridlines]({%slug radchart-features-axes-striplines-and-gridlines%}) of both axes. 
 
-* [Creating Chart with Custom Layout](#Creating_Chart_with_Custom_Layout)
-
 If you need to know more about __RadChart__ data binding, take a look at the following topics:
 
 * [Data Binding Support Overview]({%slug radchart-populating-with-data-data-binding-support-overview%})

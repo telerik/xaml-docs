@@ -10,20 +10,7 @@ position: 4
 
 # Sorting
 
-
-
-This article describes what is sorting and how to work with it through the __RadSpreadsheet__ UI. It contains the following sections:
-      
-
-* [What Is Sorting?](#what-is-sorting?)
-
-* [Sorting Dialog](#sorting-dialog)
-
-* [Adding Values Sort Condition](#adding-values-sort-condition)
-
-* [Adding Custom Sort Condition](#adding-custom-sort-condition)
-
-* [Adding Color Sort Condition](#adding-color-sort-condition)
+This article describes what is sorting and how to work with it through the __RadSpreadsheet__ UI.
 
 ## What Is Sorting?
 

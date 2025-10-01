@@ -12,12 +12,6 @@ position: 2
 
 This article will show how you can update the visible resources by which the RadScheduleView is grouped.
 
-There are two approaches you can use:
-
-* [Using Filtering feature of the ScheduleView;](#using-filtering-feature-of-the-scheduleview)
-
-* [Adding/removing resources at run time.](#addingremoving-resources-at-run-time)
-
 ## Using Filtering feature of the ScheduleView
 
 We will use __GroupFilter__ predicate of the ViewDefinition to specify which resources will be visible per some condition.

@@ -134,7 +134,7 @@ Both __IconSource__ resources defined in the article are in the same view pointi
 ![ImageSource Set to RadPdfViewer Icon](images/Switching_Icons_Runtime_03.png)
 
 
-Changing the icon set used in the application with the code from [__Example 4__](#example4) will change it for both images, regardless of the fact that they use separate base paths. The result is demonstrated on __Figure 4__.
+Changing the icon set used in the application with the code from __Example 4__ will change it for both images, regardless of the fact that they use separate base paths. The result is demonstrated on __Figure 4__.
 
 
 #### __Figure 4: Images After Changing the IconSet__

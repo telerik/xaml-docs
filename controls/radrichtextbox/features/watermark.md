@@ -9,17 +9,9 @@ published: True
 
 # Watermark
 
-
-
 Watermarks are text or pictures that appear behind document text. They often add interest or identify the document status. You can see watermarks in Paged layout mode; they can be printed and exported to all rich-text formats, except HTML.
-      
 
->tipMore on the specifics of the format providers you can find [here]({%slug radrichtextbox-features-import-export%}).
-        
-
-* [Using UI](#using-ui)
-
-* [Manipulating Watermarks Programatically](#manipulating-watermarks-programatically)
+>tip More on the specifics of the format providers you can find [here]({%slug radrichtextbox-features-import-export%}).        
 
 ## Using UI
 
@@ -37,19 +29,14 @@ There are two types of watermarks - text and image. Both of them are shown behin
 
 There is also a set of predefined textual watermarks - the most commonly used ones like ASAP, Urgent, Confidential, etc., that can be easily set in the following way:
 
-
-
 ```C#
 	this.editor.SetWatermark(Telerik.Windows.Documents.Model.PredefinedWatermarkType.Confidential);
 ```
-
 
 You can create custom watermarks using the __WatermarkTextSettings__ and __WatermarkImageSettings__ classes and the respective methods of __RadRichTextBox__ - __SetWatermarkText()__ and __SetWatermarkImage()__.
         
 
 The following example demonstrates how to crate a text watermark and apply it to the document in the editor:
-
-
 
 ```C#
 	WatermarkTextSettings textSettings = new WatermarkTextSettings();
@@ -61,11 +48,7 @@ The following example demonstrates how to crate a text watermark and apply it to
 	this.editor.SetWatermarkText(textSettings);
 ```
 
-
-
 And this is how you create an image watermark and apply it:
-
-
 
 ```C#
 	WatermarkImageSettings imageSettings = new WatermarkImageSettings();
@@ -75,10 +58,7 @@ And this is how you create an image watermark and apply it:
 	this.editor.SetWatermarkImage(imageSettings);
 ```
 
-{% if site.site_name == 'Silverlight' %}{% endif %}
-
->tipYou can download a runnable project of the previous example from our online SDK repository: [Watermark SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/Watermark).
-          
+>tip You can download a runnable project of the previous example from our online SDK repository: [Watermark SDK example](https://github.com/telerik/xaml-sdk/tree/master/RichTextBox/Watermark).          
 
 ## See Also
 

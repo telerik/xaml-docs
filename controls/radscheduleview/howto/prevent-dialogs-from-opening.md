@@ -10,30 +10,17 @@ position: 0
 
 # Prevent Dialogs from Opening
 
-This article covers the following topics:
-
-* [How to hide a RadScheduleView dialog](#how-to-hide-a-radscheduleview-dialog)
-
-* [How to skip ConfirmDeleteDialog](#how-to-skip-confirmdeletedialog)
-
-* [How to preselect a certain option in RecurrenceChoiceDialog](#how-to-preselect--a-certain-option-in-recurrencechoicedialog)
-
-
 ## How to hide a RadScheduleView dialog
 
 In order to prevent a specific dialog from appearing , the ShowDialog event of the __RadScheduleView__ should be cancelled. The event args contain a property called __DialogViewModel__ which can be used to determine which dialog is going to be opened.
 
 For example the view model for the __EditAppointmentDialog__ is __AppointmentDialogViewModel__. The following code snippet shows how it can be cancelled:
 
-
-
 ```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowDialog="RadScheduleView_ShowDialog">
 		…
 	</telerik:RadScheduleView>
 ```
-
-
 
 ```C#
 	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -102,4 +89,4 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	End Sub
 ```
 
->tipCheck [here]({%slug radscheduleview-features-custom-dialogs%}) for more information about RadScheduleView dialogs.
+>tip Check [here]({%slug radscheduleview-features-custom-dialogs%}) for more information about RadScheduleView dialogs.

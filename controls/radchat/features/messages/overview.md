@@ -12,12 +12,6 @@ position: 0
 
 __RadChat__ provides a predefined set of message types. They all have some common functionality which is derived from the __MessageBase__ class. All messages have an __Author__ and __CreationDate__. The message value is dependent on the given message type so it is not common for all messages. 
 
-* [Adding the Message](#adding-the-message)
-* [Sending the Message](#sending-the-message)
-* [Display Position](#display-position)
-* [Status](#status)
-* [Cards](#cards)
-
 ## Adding the Message
 
 Adding a given message is done through the __AddMessage__ method of __RadChat__. It has the following two overloads.

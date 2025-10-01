@@ -14,8 +14,6 @@ To modify the appearance of the __RadSplitContainer__ you have to create a custo
 
 Copy the created style with all of the resources it uses and place it in the __ResourceDictionary__ that represents the theme for your __RadDocking__ control.
 
-
-
 ```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
@@ -28,8 +26,6 @@ Copy the created style with all of the resources it uses and place it in the __R
 
 The next step is to declare the required namespaces in the resource dictionary.
 
-
-
 ```XAML
 	<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -38,23 +34,11 @@ The next step is to declare the required namespaces in the resource dictionary.
 	</ResourceDictionary>
 ```
 
-{% if site.site_name == 'Silverlight' %}
-
-Finally, in order to make the style default for all of the __RadSplitContainer__ controls you have to leave it without a key. Remove the key from the style.{% endif %}
-
-
-
 ```XAML
 	<Style TargetType="telerik:RadSplitContainer">
 	    <!--...-->
 	</Style>
 ```
-
-{% if site.site_name == 'Silverlight' %}
-
-To apply the theme got to the UserControl that hosts your __RadDocking__ control and set it through the code-behind.{% endif %}
-
-
 
 ```C#
 	public App()
@@ -72,11 +56,7 @@ To apply the theme got to the UserControl that hosts your __RadDocking__ control
 	Private Property radDocking As DependencyObject
 ```
 
-{% if site.site_name == 'WPF' %}
-
-Finally in order to make the style default for all of the __RadSplitContainer__controls you have to set it to the following value.{% endif %}
-
-
+Finally in order to make the style default for all of the __RadSplitContainer__controls you have to set it to the following value.
 
 ```XAML
 	<Style x:Key="{telerik:ThemeResourceKey ThemeType={x:Type local:RadDockingTheme}, ElementType={x:Type telerik:RadSplitContainer}}"
@@ -84,12 +64,6 @@ Finally in order to make the style default for all of the __RadSplitContainer__c
 	    <!--...-->
 	</Style>
 ```
-
-{% if site.site_name == 'WPF' %}
-
-To see how to apply the theme read [here](#ApplyingTheme).{% endif %}
-
-Here is a snapshot of a sample result.
 
 ![{{ site.framework_name }} RadDocking Themed RadSplitContainer](images/RadDocking_ThemingSplitContainer_01.png)
 

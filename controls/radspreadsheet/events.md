@@ -12,13 +12,6 @@ position: 4
 
 This topic describes the events you can use in RadSpreadsheet so you can get a notification about different actions.
 
-* [RadSpreadsheet Events](#radspreadsheet-events)
-* [Workbook Events](#workbook-events)
-* [Worksheet Events](#worksheet-events)
-* [RadWorksheetEditor Events](#radworksheeteditor-events)
-* [Cells Events](#cells-events)
-* [Row/Column Events](#rowcolumn-events)
-
 ## RadSpreadsheet Events
 
 * `ActiveSheetChanged`&mdash;Occurs when the active sheet is changed.

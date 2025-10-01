@@ -137,7 +137,7 @@ __Save-Load Diagram ViewPort__
 
 By default, not every property of the RadDiagramItem is serialized. Below is the list of the properties that are automatically serialized:		
 
->important These properties are serialized in scenarios where data bindings are __not__ involved. If you are using Binding in styles targeting any of the diagram items, you need to manually serialise and deserialize all the properties that are bound. This is demonstrated in the [Manual Serialization/Deserialization]({%slug raddiagrams-features-serialization%}#manual-serializationdeserialization) section of this article.
+>important These properties are serialized in scenarios where data bindings are __not__ involved. If you are using Binding in styles targeting any of the diagram items, you need to manually serialise and deserialize all the properties that are bound. This is demonstrated in the [Manual Serialization/Deserialization]({%slug raddiagrams-features-serialization%}#manual-shape-serialization-deserialization) section of this article.
 
 * `RadDiagram`
 	* AllowCopy

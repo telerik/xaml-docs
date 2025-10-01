@@ -16,11 +16,7 @@ One of the features of the __RadChart__ is the automatic series mapping. With au
 
 >Note that SeriesDefinition set through the __RadChart.DefaultSeriesDefinition__ property does not support change notifications i.e. if you try to change a __RadChart.DefaultSeriesDefinition__ property after the control is databound, it will not have any effect till the next rebind operation. The recommended approach in this scenario would be to use unique __SeriesMapping.SeriesDefinition__ or alternatively you can access the generated DataSeries directly (i.e. RadChart.DefaultView.ChartArea.DataSeries[i]) and update its __DataSeries.Definition__ properties.
 
-The purpose of this tutorial is to show you how to use __RadChart__ with __Automatic Series Mappings__. The following cases will be examined:
-
-* [Binding to an array of integers](#Binding_to_an_Array_of_Integers)
-
-* [Binding to a list of business objects](#Binding_to_a_List_of_Business_Objects)
+The purpose of this tutorial is to show you how to use __RadChart__ with __Automatic Series Mappings__. 
 
 >The automatic mapping mode will not work for chart series that require multiple data fields for its correct operation (e.g. the __CandleStick__ type).
 

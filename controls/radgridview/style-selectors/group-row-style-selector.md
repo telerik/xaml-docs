@@ -12,7 +12,7 @@ position: 3
 
 You can use RadGridView's **GroupRowStyleSelector** property if you need to style group rows differently based on a specific condition.
 
->importantBear in mind that the [GroupRowStyle]({%slug gridview-styling-group-row%}#setting-radgridviews-grouprowstyle) takes precedence over the **GroupRowStyleSelector** and will overwrite it if both are defined simultaneously.
+>importantBear in mind that the [GroupRowStyle]({%slug gridview-styling-group-row%}) takes precedence over the **GroupRowStyleSelector** and will overwrite it if both are defined simultaneously.
 
 To achieve this, first create a new class that inherits from the **StyleSelector** class and override its **SelectStyle** method:
 

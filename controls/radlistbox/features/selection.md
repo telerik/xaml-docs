@@ -10,19 +10,7 @@ position: 0
 
 # Selection
 
-The purpose of this tutorial is to show you the basic properties exposed by the __RadListBox__ for working with selection. This topic includes the following sections: 
-
-* [Setting SelectionMode](#setting-selectionmode)
-
-* [Using the SelectedItem](#using-the-selecteditem)
-
-* [Using SelectedValue and SelectedValuePath/SelectedValueBinding](#using-selectedvalue-and-selectedvaluepathselectedvaluebinding)
-
-* [Using the SelectedIndex](#using-the-selectedindex)
-
-* [Using the Text and TextPath/TextBinding](#using-the-text-and-textpath--textbinding)
-
-* [Disabling Caching of Selected Items](#disabling-caching-of-selected-items)
+The purpose of this tutorial is to show you the basic properties exposed by the __RadListBox__ for working with selection. 
 
 ## Setting SelectionMode
 

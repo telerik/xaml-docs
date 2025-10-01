@@ -30,7 +30,7 @@ Below you can find several step-by-step tutorials for the most common operations
 
 As you can see you have dragged your pane over the Compass' right indicator which leads to highlighting the respective dropping area inside the underlying container.
 
->Note that the [Compass](#Compass) menu always marks the possible [docking](#Docking_Panes) positions within the container your mouse cursor is currently over.
+>Note that the Compass menu always marks the possible docking positions within the container your mouse cursor is currently over.
 
 ## Docking Panes to the Root Container
 
@@ -44,7 +44,7 @@ As you can see you have dragged your pane over the Compass' right indicator whic
 
 	![Docking Panes to the Root Container](images/RadDocking_Features_Drag_and_Drop_020.png)
 
->Note that the [Root Compass](#Root_Compass) always marks the possible docking positions only for the root container.
+>Note that the Root Compass always marks the possible docking positions only for the root container.
 
 ## Adding Panes to Tabbed Documents
 

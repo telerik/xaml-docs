@@ -12,11 +12,6 @@ position: 1
 
 This series is visualized on the screen as a straight line connecting each of the __DataPoints__.      
 
-* [Declaratively Defined Series](#declaratively-defined-series)
-* [Properties](#properties)
-* [Data Binding](#data-binding)
-* [Styling the Series](#styling-the-series)
-
 ## Declaratively defined series
 
 You can use the following definition to display a simple RadarLineSeries

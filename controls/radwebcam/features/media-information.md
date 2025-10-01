@@ -12,7 +12,7 @@ position: 3
 
 The RadWebCam API allows you to get information about the connected devices (cameras and microphones) and change the control's devices and video format based on this.
 
->tip See how to use the media information in the [Getting Started]({%slug radwebcam-getting-started%}#connect-to-the-webcam-manually) article.
+>tip See how to use the media information in the [Getting Started]({%slug radwebcam-getting-started%}) article.
 
 ## MediaFoundationDeviceInfo
 

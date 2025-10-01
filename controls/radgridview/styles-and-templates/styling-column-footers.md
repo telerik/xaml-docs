@@ -13,13 +13,6 @@ position: 9
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewFooterCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewfootercell).
 
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewFooterRow Element](#targeting-the-gridviewfooterrow-element)
-* [Setting RadGridView's FooterRowStyle](#setting-radgridviews-footerrowstyle)
-* [Targeting the GridViewFooterCell Element](#targeting-the-gridviewfootercell-element)
-* [Setting a Column's FooterCellStyle](#setting-a-columns-footercellstyle)
-
 ## Targeting the GridViewFooterRow Element
 
 If you want to style all footer rows of your application, you should create an appropriate style targeting the __GridViewFooterRow__ element.

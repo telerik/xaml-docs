@@ -12,11 +12,11 @@ position: 6
 
 The purpose of this tutorial is to show you how to enable and disable __RadComboBoxItems__. The following sections are included:
 
-* [Enable\disable RadComboBox with static data](#enabledisable-radcombobox-with-static-data)
+* [Enable\disable RadComboBox with static data](#enable-disable-radcombobox-with-static-data)
 
-* [Enable\disable items using ItemContainerStyle](#enabledisable-items-using-itemcontainerstyle)
+* [Enable\disable items using ItemContainerStyle](#enable-disable-items-using-itemcontainerstyle)
 
-* [Enable\disable items using ItemContainerStyleSelector](#enabledisable-items-using-itemcontainerstyleselector)
+* [Enable\disable items using ItemContainerStyleSelector](#enable-disable-items-using-itemcontainerstyleselector)
 
 * [Using style binding](#using-style-binding)
 

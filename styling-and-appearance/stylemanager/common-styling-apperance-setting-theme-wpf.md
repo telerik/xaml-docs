@@ -11,13 +11,7 @@ site_name: WPF
 
 # Setting a Theme with StyleManager
 
-This help article will show you how to set a built-in theme to Telerik UI for WPF. You will also see code examples for these related topics:      
-
-* [Setting Instance-Specific Built-in Theme in XAML](#setting-instance-specific-built-in-theme-in-xaml)
-
-* [Setting Instance-Specific Built-in Theme in the Code-Behind](#setting-instance-specific-built-in-theme-in-the-code-behind)
-
-* [Setting Application-Wide Built-in Theme in the Code-Behind](#setting-application-wide-built-in-theme-in-the-code-behind)
+This help article will show you how to set a built-in theme to Telerik UI for WPF. 
 
 See the Telerik themes in the [Avilable Themes]({%slug common-styling-appearance-available-themes%}) article.
 

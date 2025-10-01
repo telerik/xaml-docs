@@ -10,25 +10,15 @@ position: 9
 
 # Data Binding to WCF Service
 
-
-
-The purpose of this tutorial is to show you how to populate a __RadChart__ with data from a __WCF Service__ in two ways:
-
-* A straight-forward way - [plain method calls](#Plain_Method_Calls).
-
-* [Using MVVM approach](#Using_MVVM_Approach)
+The purpose of this tutorial is to show you how to populate a __RadChart__ with data from a __WCF Service__.
 
 >This tutorial will use the __Northwind__ database, which can be downloaded from [here](http://www.microsoft.com/downloads/details.aspx?FamilyID=06616212-0356-46A0-8DA2-EEBC53A68034&displaylang=en).
 
 Before proceeding further with this tutorial you need to create a new application and add a __RadChart__ declaration in your XAML: 
 
-
-
 ```XAML
 	<telerik:RadChart x:Name="radChart" Margin="8" />
 ```
-
-
 
 The chart control will be populated with the top 10 products from the Northwind database. On the __Y axis__ the __UnitPrice__ property will be displayed.
 
@@ -54,17 +44,13 @@ The chart control will be populated with the top 10 products from the Northwind 
 	</telerik:RadChart>
 ```
 
-
-
 Creating the WCF Service:
 
 * Add a new item "LINQ to SQL Classes" inside the web server project. Use the .dbml’s designer and drag the *Products *table onto the design surface:
 
-![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithDatabindingToWcf_dbml.PNG)
+![{{ site.framework_name }} RadChart](images/RadChart_PopulatingWithDatabindingToWcf_dbml.PNG)
 
-* Then add a new item "Silverlight-enabled WCF Service" to the server project. In the *.svc.cs* file add the following Linq query to get the first 10 Products from the table:
-
-
+* Then add a new item "WPF-enabled WCF Service" to the server project. In the *.svc.cs* file add the following Linq query to get the first 10 Products from the table:
 
 ```C#
 	[ServiceContract(Namespace = "")]

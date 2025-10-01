@@ -35,7 +35,7 @@ __Example 1: Expand the third item after the control is loaded__
 
 The RadTreeListView also exposes the __IsExpandedBinding__ and __IsExpandableBinding__ properties which you can use to synchronize its expanded and expandable states with your viewmodel.
 
->caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported and that is why we recommend using the [IsExpandedBinding](#use-of-isexpandedbinding) property instead.
+>caution Binding to the __IsExpanded__ property of __TreeListViewRow__ is not fully supported and that is why we recommend using the IsExpandedBinding property instead.
 
 ### IsExpandedBinding
 

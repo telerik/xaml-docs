@@ -10,21 +10,9 @@ position: 10
 
 # Using LINQ to ADO.NET Entity Data Model
 
-The purpose of this article is to show you how to use __LINQ__ against __ADO.NET Entity Data Model__. It will cover how to:
+The purpose of this article is to show you how to use __LINQ__ against __ADO.NET Entity Data Model__. 
 
-* [Create the ADO.NET Entity Data Model](#create-the-adonet-entity-data-model)
-
-* [Query an entity from the database](#query-an-entity-from-the-database)
-
-* [Update an entity in the database](#update-an-entity-in-the-database)
-
-* [Insert a new record(s) in the database](#insert-a-new-records-in-the-database)
-
-* [Delete a record from the database](#delete-a-record-from-the-database)
-
-* [Retrieve a record with Server Side Paging](#retrieve-a-record-with-server-side-paging)
-
->tipThis tutorial uses the __Northwind__ database. You can get a SQL Query for the whole database from [here](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs). You can use __Microsoft SQL Management Studio__ to execute the query.  
+>tip This tutorial uses the __Northwind__ database. You can get a SQL Query for the whole database from [here](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs). You can use __Microsoft SQL Management Studio__ to execute the query.  
 
 ## Create the ADO.NET Entity Data Model
 

@@ -12,16 +12,6 @@ position: 6
 
 The __MapPinPoint__ class is designed to represent __Point__ objects from __KML__ files. However, it can be also used outside the __KML__ context in order to mark points of interest (POIs) or something else.      
 
-This topic will focus on the following:
-
-* [Adding a MapPinPoint](#adding-a-mappinpoint)
-
-* [Configuring the MapPinPoint](#configuring-the-mappinpoint)
-
-* [Setting MapPinPoint's Content](#setting-mappinpoints-content)
-
-* [Modifying the MapPinPoint's appearance](#modifying-the-mappinpoints-appearance)
-
 ## Adding a MapPinPoint
 
 To insert a pin point on your map you have to add a __MapPinPoint__ object to your __InformationLayer__.        

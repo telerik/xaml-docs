@@ -15,9 +15,9 @@ The `RadDocument` class can track the history of any actions taken against its c
 
 This topic will explain you how to:
 
-* [Enable/Disable History](#enabledisable-history)
+* [Enable/Disable History](#enable-disable-history)
 * [Clear History](#clear-history)
-* [Undo/Redo Actions](#undoredo-actions)
+* [Undo/Redo Actions](#undo-redo-actions)
 * [Change History Depth](#change-history-depth)
 * [Preserve History Using RadDocumentEditor](#preserve-history-using-raddocumenteditor)
 * [UndoGroup](#undogroup)

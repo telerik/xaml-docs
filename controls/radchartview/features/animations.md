@@ -12,7 +12,7 @@ position: 1
 
 With the __R2 2018__ version of our controls, you can now animate RadChartView series and their points. The series and the points can be animated using either built-in or custom animation effects. To animate the series or the points first you need to set the __SeriesAnimation__ and/or __PointAnimation__ property with your animation. Depending on which element you want to animate (Series,Points or Both) you can call the __PlaySeriesAnimation()__ and __PlayPointAnimations()__ methods. 
 
-* [Animation Types](#animations-type)
+* [Animation Types](#animation-type)
 	* [Animation Base Class](#animation-base-class)
 	* [Move Animation](#move-animation)
 	* [Reveal Animation](#reveal-animation)

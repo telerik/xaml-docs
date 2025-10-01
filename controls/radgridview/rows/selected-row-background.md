@@ -34,7 +34,7 @@ __Example 1: Setting the SelectedBackground property of GridViewRow__
 
 ![Telerik {{ site.framework_name }} DataGrid SelectedRow Background 02](images/RadGridView_SelectedRow_Background_02.png)
 
-> If you have [alternating rows]({%slug radgridview-rows-alternating-rows%}) and you have explicitly set a style which sets the SelectedBackground of the rows to the __RowStyle__ property of the RadGridView, you will have to set the [AlternateRowStyle]({%slug gridview-styling-a-row%}#setting-radgridviews-rowstyleselector-and-alternaterowsstyleselector) property to the same style (or a style that sets the __SelectedBackground__ property to the same value).
+> If you have [alternating rows]({%slug radgridview-rows-alternating-rows%}) and you have explicitly set a style which sets the SelectedBackground of the rows to the __RowStyle__ property of the RadGridView, you will have to set the [AlternateRowStyle]({%slug gridview-styling-a-row%}) property to the same style (or a style that sets the __SelectedBackground__ property to the same value).
 
 <!-- -->
 

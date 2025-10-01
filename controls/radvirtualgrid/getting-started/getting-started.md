@@ -12,13 +12,6 @@ position: 0
 
 This tutorial will walk you through the required steps for using `RadVirtualGrid`. 
 
-* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
-* [Adding Assembly References Manually](#adding-assembly-references-manually)
-* [Adding RadVirtualGrid to the Project](#adding-radvirtualgrid-to-the-project)
-* [Populating with Data](#populating-with-data-manually)
-* [Populating with Data through DataProvider](#populating-with-data-through-dataprovider)
-* [MeasureTextOnRender](#measuretextonrender)
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use `RadVirtualGrid` when working with NuGet packages, install the `Telerik.Windows.Controls.VirtualGrid.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
@@ -45,7 +38,7 @@ __Defining RadVirtualGrid Declaratively__
 
 ## Populating with Data Manually
 
-> In order the control to be populated with data, its [InitialRowCount and InitialColumnCount](#setting-initial-row-and-column-count) properties need to be set.
+> In order the control to be populated with data, its InitialRowCount and InitialColumnCount properties need to be set.
 
 RadVirtualGrid needs to be initially defined with a fixed amount of rows and columns. The below listed properties are exposed for achieving this. An important note is that when additional rows or columns are added at runtime, the values of these properties remain unmodified, but the capacity of the control increases. More information on inserting rows and columns can be found in the [Insert and Remove Data]({%slug virtualgrid-insert-data-and-remove-data%}) topic.
 
@@ -141,8 +134,6 @@ __RadVirtualGrid with the Windows8 theme__
 * [Pinned Rows and Columns]({%slug virtualgrid-pinned-rows-and-columns%})
 
 * [Custom Data Provider]({%slug virtualgrid-custom-dataprovider%})
-
-
 
 
 {% if site.site_name == 'WPF' %}

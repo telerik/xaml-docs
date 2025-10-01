@@ -13,7 +13,7 @@ site_name: WPF
 
 The following article will demonstrate how to exclude shapes from serialization.
 
->With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-tafe-types-and-assemblies).
+>With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-safe-types-and-assemblies).
 
 For the purpose of this example, we will create the following view models.
 

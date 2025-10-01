@@ -10,17 +10,7 @@ position: 20
 
 # Styling Filter Row
 
-In this topic we will discuss:
-
-* [Type of Editors](#type-of-editors)
-
-* [Modifying the StringFilterEditor's Style](#modifying-the-strinfiltereditors-style)
-
-* [Modifying the FieldFilterControl's Style](#modifying-the-fieldfiltercontrols-style)
-
-* [Modifying other editors](#modifying-other-editors)
-
-#### __Figure 1: RadGridView's filter row__
+This article shows how to style the filter row element in RadGridView.
 
 ![Telerik {{ site.framework_name }} DataGrid Styles and Templates Styling FilterRow 01](images/RadGridView_Styles_and_Templates_Styling_FilterRow_01.PNG)
 

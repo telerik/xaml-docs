@@ -12,17 +12,11 @@ position: 28
 
 
 
-For charts that have many data points or data points with values close to one another, labels tend to collide making readability a problem. The Smart Labels feature automatically re-aligns labels making each labeled value stand out clearly. You are also able to configure the settings for the Smart Labels. This topic will explain how to:
-
-* [Enable/Disable Smart Labels feature](#Enable_Disable_Smart_Labels_feature)
-
-* [Configure the Smart Labels feature](#Configure_the_Smart_Labels_feature)
+For charts that have many data points or data points with values close to one another, labels tend to collide making readability a problem. The Smart Labels feature automatically re-aligns labels making each labeled value stand out clearly. You are also able to configure the settings for the Smart Labels.
 
 ## Enable/Disable Smart Labels feature
 
 The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnabled__ of the __ChartArea__ property.
-
-
 
 ```XAML
 	<telerik:RadChart x:Name="radChart">
@@ -35,10 +29,6 @@ The Smart Labels feature can be enabled/disabled through the __SmartLabelsEnable
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
 ```
-
-
-
-
 
 ```C#
 	this.radChart.DefaultView.ChartArea.SmartLabelsEnabled = true;
@@ -223,5 +213,4 @@ The __RadialLabelSettings__ class inherits the __LabelSettings__ class. In addit
 	Me.radChart.DefaultView.ChartArea.SmartLabelsEnabled = True
 ```
 
-Here is a snapshot of the result.
- ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_SmartLabels_03.png)
+![{{ site.framework_name }} RadChart  ](images/RadChart_Features_SmartLabels_03.png)

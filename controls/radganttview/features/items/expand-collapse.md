@@ -81,7 +81,7 @@ In the RadGanttView control there is a built-in __ExpandCollapseService__ that c
 
 The next example will enhance the previous example by adding two button one for expanding the “Big Iteration” task and one that collapses it.  
 
-* First you will need to declare the RadGanttView control and populate it with some sample data. We are going to use the previously explained in the [“Custom InitialExpandBehavior”](#----------custom-initialexpandbehavior------) section example.
+* First you will need to declare the RadGanttView control and populate it with some sample data. We are going to use the previously explained in the [“Custom InitialExpandBehavior”](#custom-initialexpandbehavior) section example.
 
 * Add two buttons and declare their Click events:
 
@@ -120,6 +120,7 @@ The next screenshots show the final result:
 The expand state of the tasks is held by the `HierarchicalCollectionAdapter` of the `RadGantView`'s `ExpandCollapseService`. The adapter exposes a method named `GetItemWrapperByItemKey` which returns a `HierarchicalItem` object, which has a `IsExpanded` property. 
 
 __Getting the expanded state of GanttTask via the corresponding HierarchicalItem__  
+
 ```C#
 	GanttTask task = myTasksSource[0];
 	HierarchicalItem hierarchicalItem = this.ganttView.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);

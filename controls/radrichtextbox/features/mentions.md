@@ -214,7 +214,7 @@ You can implement your own mention provider that enables you to visualize any ob
     
 1. Implement a custom mention provider
 
-    This is done by inheriting the `MentionProviderBase<T>` class where `T` is the mention item. You should implement the **InsertItem** and **DetermineItemVisibility** methods. For more information about them, check the [Customize the Insert Action](#customize-insert-action) and [Customize the Filtering](#customize-the-filtering) sections.
+    This is done by inheriting the `MentionProviderBase<T>` class where `T` is the mention item. You should implement the **InsertItem** and **DetermineItemVisibility** methods. For more information about them, check the [Customize the Insert Action](#customize-the-insert-action) and [Customize the Filtering](#customize-the-filtering) sections.
 
     #### [C#] Example 3: Custom mention provider
 

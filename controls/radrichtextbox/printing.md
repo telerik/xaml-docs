@@ -47,7 +47,7 @@ The __PrintSettings__ class holds all possible customization options when invoki
 
 * __DocumentName__ - specifies the name of the document.              
 
-* __PrintMode__ - the enumeration allows to select one of the predefined options [PrintModes](#printmodes).              
+* __PrintMode__ - the enumeration allows to select one of the predefined options PrintModes.
 
 * __PrintScaling__ - specifies whether the content of the document should shrink to page size if needed. The option is relevant for Native print mode only and by default content is shrunk to page size.              
 

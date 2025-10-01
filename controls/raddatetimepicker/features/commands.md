@@ -12,9 +12,9 @@ position: 8
 
 This article provides an information about the following commands that __RadDateTimePicker__ exposes through  the __RadDateTimePickerCommands__ static class:
 
-* [SetToday Command](#settoday)
+* `SetToday` Command
 
-* [Close Command](#close)
+* `Close` Command
 
 ## SetToday Command
 
@@ -35,18 +35,13 @@ __Example 1: SetToday command__
 
 The __Close__ command closes the drop down part of __RadDateTimePicker__ if it is opened.
 
-__Example 2__ demonstrates how to close the drop down of __RadDateTimePicker__ by executing the __Close__ command:
-
-__Example 2: Close command__
+The following example shows how to close the drop down of __RadDateTimePicker__ by executing the __Close__ command:
 
 ```C#
 	RadDateTimePickerCommands.Close.Execute(null, this.dateTimePicker1);
 ```
 
-## See Also
-
+## See Also  
  * [Date Selection Modes]({%slug raddatetimepicker-features-date-selection-modes%})
-
- * [Selection]({%slug raddatetimepicker-features-selection%})
- 
+ * [Selection]({%slug raddatetimepicker-features-selection%}) 
  * [TodayButton]({%slug raddatetimepicker-todaybutton%})

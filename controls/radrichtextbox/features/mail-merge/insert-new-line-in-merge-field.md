@@ -12,21 +12,11 @@ position: 1
 
 In RadRichtextBox, you can insert a line break using the [Break element]({%slug radrichtextbox-features-document-elements-break%}). However, when working with mail merge fields, inserting a similar document element is not possible. This is why we introduced support for the vertical tab symbol. This article explains how you can use this symbol to insert a new line in the document content and in a merge field. 
 
-* [What is the Vertical Tab Symbol?](#what-is-the-vertical-tab-symbol)
-
-* [How to Insert a Vertical Tab in RadDocument?](#how-to-insert-a-vertical-tab-in-raddocument)
-
-* [Insert a Line Break Before/After a Merge Field If the Field Result Isn't Empty](#insert-a-line-break-beforeafter-a-merge-field-if-the-field-result-isnt-empty)
-
-* [Using Vertical Tab in a DocumentVariableField](#using-vertical-tab-in-a-documentvariablefield)
-
-
 ## What is the Vertical Tab Symbol?
 
 The vertical tab character is __*"\v"*__. It can be inserted directly into a document as a string or through the merge field switches. The vertical tab character itself won’t be preserved, but it is evaluated to a [Break element]({%slug radrichtextbox-features-document-elements-break%}) of type LineBreak.
 
-## How to Insert a Vertical Tab in RadDocument?
-
+## How to Insert a Vertical Tab in RadDocument
 
 The [RadDocumentEditor class]({%slug radrichtextbox-features-raddocumenteditor%}) exposes the Insert() method that enables you add text to the document. **Example 1** shows you how to insert a vertical tab using this method.
 
@@ -40,7 +30,6 @@ __Example 1: Insert vertical tab through RadDocumentEditor__
 
 	radDocumentEditor.Insert("\v")
 ```
-
 
 Another option is to create a [Span]({%slug radrichtextbox-features-document-elements-span%}) and assign the vertical tab character to it. 
 
@@ -56,6 +45,7 @@ __Example 2: Create vertical tab through document model__
 
 	Dim span As New Span("\v")
 ```
+
 When the vertical tab symbol is inserted in a document, it is replaced with a Break element of type LineBreak.
 
 ## Insert a Line Break Before/After a Merge Field If the Field Result Isn't Empty

@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to:
 
 * Enable check boxes next to each item - declaratively and programmatically.		  
 
-	* Use the "[tri-state](#tri-state-check-boxes)" feature of the check boxes.
+	* Use the "tri-state" feature of the check boxes.
 	* Access the check state property of the __RadTreeViewItem__ class.
 	* Access the initially checked item when using the "[tri-state](#tri-state-check-boxes)" feature of the check boxes.			  
 

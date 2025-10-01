@@ -12,10 +12,6 @@ position: 4
 
 The __TimeBreak__ mechanism of __RadChat__ is intended to encapsulate a group of messages for a given time interval. It can be either added manually or automatically.
 
-* [Adding a TimeBreak Automatically](#adding-a-timebreak-automatically)
-* [Adding a TimeBreak Manually](#adding-a-timebreak-manually)
-* [Handling the AddingTimeBreak](#handling-the-addingtimebreak)
-
 ## Adding a TimeBreak Automatically
 
 __RadChat__ can automatically add a TimeBreak at a given interval. This can achieved by setting the __AutoIncludeTimeBreaks__ boolean property of __RadChat__ to __True__. Also, the needed __TimeSpan__ needs to be set to the __TimeBreakInterval__ property of the control.

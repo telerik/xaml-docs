@@ -14,7 +14,7 @@ The __Colorizer__ feature of the __InformationLayer__ allows you to colorize the
 
 In order to allow you to color the shapes depending on a condition, the __InformationLayer__ class exposes the __Colorizer__ property, which is of type __ColorMeasureScale__. This section will explain the usage of this object and its main features:
 
-* [Using the ColorMeasureScale object](#using-the-colormeasurescale_object)
+* [Using the ColorMeasureScale object](#using-the-colormeasurescale-object)
 
 * [Extended Data Property](#extended-data-property)
 
@@ -165,16 +165,11 @@ The __ColorMeasureScale__ can apply a different color to each range it creates. 
 
 >If you are creating the ranges manually, you can pass the __MapShapeFill__ object directly to the __MapRange__ object. To learn more read the [Ranges](#ranges) section.
 
->tip To learn more about the __MapShapeFill__ object read [here](#using-the-mapshapefill-object-on-the-control-level).
-
 Add the desired colors inside the collections and they will be applied in their respective order.
 
 >The first color will get applied to the lowest layer. 
 
 In case you have more ranges than colors, after reaching the last color in the collection, the others will get reused starting from the beginning. For example if you want to have the same highlight color for all of the ranges, you just define one entry in the __HighlightFillCollection__ property.
-
-Here is an example:
-
 
 ```XAML
 	<telerik:RadMap x:Name="radMap"

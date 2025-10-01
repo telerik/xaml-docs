@@ -64,7 +64,7 @@ __Example 2: Apply the Custom Filter to the column__
 	Me.radGridView.Columns("Name").FilteringControl = New MyFilteringControl(Me.radGridView.Columns("Name"))
 ```
 
->In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should additionally apply a template. Please refer to the [Styling custom controls]({%slug styling-apperance-implicit-styles-overview%}#styling-custom-controls) section.
+>In case you are using [NoXaml Binaries and Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), you should additionally apply a template. Please refer to the [Styling custom controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) section.
 The Style you should apply in XAML then is:
 
 __Example 3: Style targetting the custom control__

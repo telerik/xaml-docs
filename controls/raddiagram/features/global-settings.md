@@ -29,7 +29,7 @@ __Example 1: Setting diagram constants__
 
 * __ConnectorHitTestRadius__: Gets or sets the radius around the connector where connection can attach. The default value of this constant is 5px. Read more about the __RadDiagramShape__ connectors in the [Shapes]({%slug raddiagrams-features-shapes%})  tutorial.			
 
-* __ContainerMargin__: Gets or sets the margin that is applied around the __Items__ collection of the __RadDiagramContainerShape__. The default value of this constant is 10px. [Read More]({%slug raddiagram-features-container-shapes%}#connectors).		  
+* __ContainerMargin__: Gets or sets the margin that is applied around the __Items__ collection of the __RadDiagramContainerShape__. The default value of this constant is 10px. [Read More]({%slug raddiagram-features-container-shapes%}).		  
 
 * __CrossingRadius__: Gets or sets the radius of the connection bridge or gap. This feature is further described in the [Connections]({%slug raddiagrams-features-connections%}) tutorial. The default value of this constant is 5px.			
 

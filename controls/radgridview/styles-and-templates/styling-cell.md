@@ -10,23 +10,7 @@ position: 4
 
 # Styling Cells
 
-In this article, we discuss various approaches to style the RadGridView cells:
-
-* [Styling all RadGridView cells](#styling-all-radgridview-cells)
-
-* [Setting a Column's CellStyle](#setting-a-columns-cellstyle)
-
-* [Setting a Column's CellStyleSelector](#setting-a-columns-cellstyleselector)
-
-* [Setting the SelectedBackground of the Cell](#setting-the-selectedbackground-of-the-cell)
-
-* [Setting the BorderBrush of the CurrentCell](#setting-the-borderbrush-of-the-currentcell)
-
-* [Setting the MouseOverBackground of the Cell](#setting-the-mouseoverbackground-of-the-cell)
-
-* [Setting the HighlightedBackground of the Cell](#setting-the-highlightedbackground-of-the-cell)
-
->tip To get the most of this article, make sure you are already familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
+In this article, we discuss various approaches to style the RadGridView cells.
 
 __GridViewCell template structure__
 

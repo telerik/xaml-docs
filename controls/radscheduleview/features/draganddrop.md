@@ -44,33 +44,21 @@ The following section will provide some detailed information about the following
 
 ### Methods
 
-* [CanDrop](#candropdragdropstate-state)
-
-* [CanStartDrag](#canstartdragdragdropstate-state)
-
-* [Drop](#dropdragdropstate-state)
-
-* [CanResize](#canresizedragdropstate-state)
-
-* [CanStartResize](#canstartresizedragdropstate-state)
-
-* [Resize](#resizedragdropstate-state)
-
-* [ConvertDraggedData](#convertdraggeddataobject-data)
-
-* [CoerceDraggedItems](#coercedraggeditemsdragdropstate-state)
-
-* [DragDropCompleted](#dragdropcompleteddragdropstate-state)
-
-* [DragDropCanceled](#dragdropcanceleddragdropstate-state)
+* `CanDrop`
+* `CanStartDrag`
+* `Drop`
+* `CanResize`
+* `CanStartResize`
+* `Resize`
+* `ConvertDraggedData`
+* `CoerceDraggedItems`
+* `DragDropCompleted`
+* `DragDropCanceled`
 
 ### Properties
 
-* [ResizeCursor](#resizecursor)
-
-* [CacheConvertedDragData](#cacheconverteddragdata)
-
-
+* `ResizeCursor`
+* `CacheConvertedDragData`
 
 ### CanDrop(DragDropState state)      
 
@@ -288,5 +276,4 @@ __Example 10: Setting the ResizeCursor property__
 As of __R1 2017 SP1__, __ScheduleViewDragDropBehavior__ exposes the __CacheConvertedDragData__ property. Its default value is __False__, meaning that the [ConvertDraggedData](#convertdraggeddataobject-data) method will be called repeatedly. When the property is set to __True__, the method will be called only once and the converted data will be cached. 
 
 
-
->Check out the {% if site.site_name == 'WPF' %} Drag and Drop Example at [WPF online demos](https://demos.telerik.com/wpf/){% endif %}{% if site.site_name == 'Silverlight' %}[online demo](https://demos.telerik.com/silverlight/#ScheduleView/DragDrop){% endif %} to see the __RadScheduleView__'s Drag and Drop functionality in action.        
+>Check out the Drag and Drop Example at [WPF online demos](https://demos.telerik.com/wpf/) to see the __RadScheduleView__'s Drag and Drop functionality in action.        

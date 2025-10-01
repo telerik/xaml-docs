@@ -12,12 +12,6 @@ position: 7
 
 >tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewHeaderCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheadercell).
 
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewHeaderCell element](#targeting-the-gridviewheadercell-element)
-
-* [Setting a Column's HeaderCellStyle](#setting-a-columns-headercellstyle)
-
 #### __Figure 1: GridViewHeaderCell template structure__
 
 ![Telerik {{ site.framework_name }} DataGrid Header Cell Template](images/gridviewheadercell-template.png)

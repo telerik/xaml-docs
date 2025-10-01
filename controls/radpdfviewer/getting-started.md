@@ -12,10 +12,6 @@ position: 1
 
 __RadPdfViewer__ is a control that allows you to display PDF files natively in {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. This topic helps you to quickly get started using the control. It focuses on the following:      
 
-* [Adding the Required Assembly References](#assembly-references)
-* [Declaring RadPdfViewer in XAML](#adding-radpdfviewer-to-a-page)
-* [Wiring UI with the Commands of RadPdfViewer](#wiring-the-ui-with-radpdfviewer-commands)
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use RadPdfViewer when working with NuGet packages, install the `Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml` package.

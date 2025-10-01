@@ -286,9 +286,6 @@ meta:
     controls/radchartview/features:
         title: Features
         position: 10
-    controls/radchartview/changes-and-backward-compatibility:
-        title: Changes and Backward Compatibility
-        position: 11
     controls/radchartview/styles-and-templates:
         title: Styles and Templates
         position: 12
@@ -2425,4 +2422,24 @@ redirects:
 -
     from: "^controls/radpivotgrid/radpivotfieldlist$"
     to: "/controls/radpivotgrid/features/pivotfieldlist"
+    type: Permanent    
+-
+    from: "^controls/radchartview/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
     type: Permanent
+-
+    from: "^controls/radchartview/changes-and-backward-compatibility/changes-backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/raddiagram/changes-and-backwards-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/raddiagram/changes-and-backwards-compatibility/backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/radgridview/styles-and-templates/templates-structure$"
+    to: "/controls/radgridview/overview2"
+    type: Permanent 

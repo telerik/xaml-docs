@@ -10,11 +10,7 @@ position: 5
 
 # Styling the Chart Series
 
-
-
-There are four ways to style the chart series. The first and easier one is to [use the shortcut visual properties of the ISeriesDefinition interface](#Styling_the_Series_via_the_SeriesDefinition_classes)
-
-the second is to [use the complex styles property](#Styling_the_Series_via_Styles) provided by the __ChartArea__ of the __RadChart__ , the third is to [use Palette Brushes](#Styling_Series_via_PaletteBrushes) and the forth is to retemplate the default series style.
+There are four ways to style the chart series. The first and easier one is to use the shortcut visual properties of the ISeriesDefinition interface. The second is to use the complex styles property provided by the __ChartArea__ of the __RadChart__ , the third is to use Palette Brushes and the forth is to retemplate the default series style.
 
 ## Styling the Series via the SeriesDefinition classes
 
@@ -34,8 +30,6 @@ This is the easiest approach that you can use in order to style the chart series
 
 For example, you can change the appearance of a __BarSeries__ in the following way.
 
-
-
 ```C#
 	BarSeriesDefinition barDefinition = new BarSeriesDefinition();
 	barDefinition.Appearance.Fill = new SolidColorBrush( Colors.Orange );
@@ -47,9 +41,6 @@ For example, you can change the appearance of a __BarSeries__ in the following w
 	Me.radChart.DefaultSeriesDefinition = barDefinition
 ```
 
-
-
-Here is the result.
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_01.png)
 
 ## Styling the Series via Styles

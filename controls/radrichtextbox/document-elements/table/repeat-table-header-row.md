@@ -12,15 +12,6 @@ position: 4
 
 When working with large tables, they are visualized in more than one page. Header row repetition means that the header row(s) of a table will repeat at the top of each page on which the table spans. This article will show you how to work with this feature.
 
-
-* [Overview](#overview)
-
-* [How to Use Repeat Table Header Row](#how-to-use-repeat-table-header-row)
-
-	* [Programmatically via the RadRichTextBox API](#programmatically-via-the-radrichtextbox-api)
-	* [Via the Built-in UI](#via-the-built-in-ui)
-
-
 ## Overview  
 
 __RadRichTextBox__ allows you to set a repeating header row for a table. You are free to choose whether there will be a single repeating row or multiple consecutive ones. The requirement for this feature to be visible is the table will span on two or more pages.
@@ -69,8 +60,6 @@ __Example 2: Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEvery
 	Me.radRichTextBox.ChangeTableRowRepeatOnEveryPage(firstRow)
 ```
 
-
-
 ### Via the Built-in UI 
 
 Using the UI of __RadRichTextBox__, you have the ability to add or remove header rows.
@@ -91,8 +80,6 @@ Using this approach, header rows can be added consecutively. In other words, if 
 __Figure 3: Repeat Table Header Rows button in the Table Tools contextual menu__
 
 ![RadRichTextBox Features Repeat Table Header Row 1](images/RadRichTextBox_Features_Repeat_Table_Header_Row_1.png)
-
-
 
 ## See Also
 

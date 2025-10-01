@@ -14,15 +14,7 @@ The __Linear__ and the __Radial__ __Bars__ derive from the __BarIndicator__ clas
 
 >tipThe __BarIndicator__ class inherits the __IndicatorBase__ class, which is a base class for all indicators, except the __NumericIndicator__. To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
 
->For the examples in this article a __LinearBar__ indicator will be used, but the examples can be applied to the __RadialBar__ one as well.
-
-It will explain the following:
-
-* [Empty Fill](#empty-fill)
-
-* [Indicator Width](#indicators-width)
-
-* [Range Color Mode](#range-color-mode)
+For the examples in this article a __LinearBar__ indicator will be used, but the examples can be applied to the __RadialBar__ one as well.
 
 ## Empty Fill
 

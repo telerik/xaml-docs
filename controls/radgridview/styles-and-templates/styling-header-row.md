@@ -10,14 +10,6 @@ position: 13
 
 # Styling Header Row
 
->tipBefore reading this topic, you might find it useful to get familiar with the [Template Structure of the GridViewHeaderRow]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewheaderrow).
-
-In this article we will discuss the following topics:
-
-* [Targeting the GridViewHeaderRow Element](#targeting-the-gridviewheaderrow-element)
-
-* [Setting RadGridView's HeaderRowStyle](#setting-radgridviews-headerrowstyle)
-
 #### __Figure 1: GridViewHeaderRow template structure__
 
 ![Telerik {{ site.framework_name }} DataGrid-headerrow-template](images/gridview-headerrow-template.png)

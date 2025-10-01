@@ -14,28 +14,11 @@ The indicator controls, except the __NumericIndicator__, derive from the __Indic
 
 >For the examples in this article a __Marker__ indicator will be used, but the examples can be applied to any other indicator that derives from the __IndicatorBase__ class, as well.
 
-It will explain the following:
-
-* [Animating the Indicator](#animating-the-indicator)
-
-* [Refreshing the Indicator](#refreshing-the-indicator)
-
-* [Snapping the Indicator](#snapping-the-indicator)
-
-* [Indicator's Size](#indicators-size)
-
-* [Indicator's Value](#indicators-value)
-
-* [Using the Range Color](#using-the-range-color)
-
-* [Value's Source](#values-source)
-
 >tip To learn more about the __Numeric Indicator__, read [this topic]({%slug radgauge-features-indicators-numeric-indicator%}).
 
 ## Animating the Indicator
 
 When the value of the indicator gets changed, it will get positioned on the appropriate place on the scale. By default the indicator will directly go to the respective position, but you are able to make this transition smoother by animating it. To do it, just enable the indicators animation by setting the __IsAnimated__ property to __True__ and set the __Duration__ property to the desired value. Here is an example.
-
 
 ```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">

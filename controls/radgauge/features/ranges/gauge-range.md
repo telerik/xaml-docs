@@ -17,16 +17,11 @@ The __Gauge__ control allows you to define ranges for your scales. The range is 
 The topic will explain the following: 
 
 * [Max and Min Value](#max-and-min-value)
-
 * [Width](#width)
-
-* [Range Appearance](#range_appearance)
-
-* [Indicator Appearance](#indicator_appearance)
-
-* [Labels Appearance](#labels_appearance)
-
-* [Ticks Appearance](#ticks_appearance)
+* [Range Appearance](#range-appearance)
+* [Indicator Appearance](#indicator-appearance)
+* [Labels Appearance](#labels-appearance)
+* [Ticks Appearance](#ticks-appearance)
 
 ## Max and Min Value
 

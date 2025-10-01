@@ -12,7 +12,7 @@ position: 4
 
 This article shows how to create a database using the code first approach and display data with the help of RadEntityFrameworkCoreDataSource and RadGridView.
 
->important Before proceeding with this tutorial, you should follow the "Getting Started" article up until the end of the [Adding References]({%slug entityframeworkcore-getting-started%}#adding-references) section. 
+>important Before proceeding with this tutorial, you should follow the [Getting Started]({%slug entityframeworkcore-getting-started%}) article. 
 
 ## Adding the Models and DbContext
 

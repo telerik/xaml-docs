@@ -10,10 +10,7 @@ position: 26
 
 # Bind RadTreeView ImageSource Properties
 
-__RadTreeView__ API gives you the ability to define images for each item state (__default__, __expanded__ and __selected__). For more information, take a look at the [Item Images]({%slug radtreeview-feautres-treeviewitem-item-images%}) topic. This topic will walk you through the common task of binding the __RadTreeViewItem's  DefaultImageSrc__ property to a property of a business object. The following cases will be demonstrated:
-
-* [Using style binding](#Using_Style_Binding)
-* [Using style selectors](#Using_Style_Selectors)
+__RadTreeView__ API gives you the ability to define images for each item state (__default__, __expanded__ and __selected__). For more information, take a look at the [Item Images]({%slug radtreeview-feautres-treeviewitem-item-images%}) topic. This topic will walk you through the common task of binding the __RadTreeViewItem's  DefaultImageSrc__ property to a property of a business object. 
 
 # Using Style Binding
 

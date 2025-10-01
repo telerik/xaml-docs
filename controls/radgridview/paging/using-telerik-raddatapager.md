@@ -14,25 +14,15 @@ position: 0
 
 You can page the data of your __RadGridView__ via the Telerik __RadDataPager__. It provides a lot of features, so you can easily configure and manage the paging of the data. This topic will make you familiar with the following:
 
-* [RadDataPager's Features](#raddatapagers-features)
-
-* [Integrating RadDataPager with RadGridView](#integrating-raddatapager-with-radgridview)
-
-* [Using RadDataPager together with DomainDataSource](#using-raddatapager-together-with-domaindatasource)
-
 ## RadDataPager's Features
 
 Here is a list of the most important features of the __RadDataPager__:
 
 * __Binding to IEnumerable__ - the __RadDataPager__ can bind to any collection that implements the __IEnumerable__ interface, which means that it can page any collection. The __RadDataPager__ wraps the collection internally in an __IPagedCollectionView__ and exposes it through its __PagedSource__ property. In order to page a collection you have to pass it to the __Source__ property of the __RadDataPager__.
 
-
-
 ```XAML
 	<telerik:RadDataPager Source="{Binding MyCollection}" />
 ```
-
-
 
 ```C#
 	IEnumerable data = new List<int>() { 1, 2, 3 };

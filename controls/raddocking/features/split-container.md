@@ -20,26 +20,6 @@ Each split container is painted in a different color.
 
 >The class that represents the split container is __Telerik.Windows.Controls.RadSplitContainer__.
 
-This topic covers the following features of the __RadSplitContainer__:
-
-* [Setting the Orientation property](#setting-the-orientation-property)
-
-* [Setting the InitialPosition of the RadSplitContainer](#setting-the-initialposition-of-the-radsplitcontainer)
-
-* [Setting the InitialSize of the RadSplitContainer](#setting-the-initialsize-of-the-radsplitcontainer)
-
-* [Setting the initial FloatingSize of the RadSplitContainer](#setting-the-initial-floatingsize-of-the-radsplitcontainer)
-
-* [Setting the initial FloatingLocation of the RadSplitContainer](#setting-the-initial-floatinglocation-of-the-radsplitcontainer)
-
-* [Setting the RelativeSize of the RadSplitContainer](#setting-the-relativesize-of-the-radsplitcontainer)
-
-* [Adding PaneGroups/SplitContainers to the RadSplitContainer programmatically](#adding-panegroups/splitcontainers-to-the-radsplitcontainer-programmatically)
-
-* [Other important properties exposed by the RadSplitContainer](#other-important-properties-exposed-by-the-radsplitcontainer)
-
-* [Styling the RadSplitContainer](#styling-the-radsplitcontainer)
-
 ## Setting the Orientation Property
 
 When you want to define the orientation (__Vertical__ or __Horizontal__) in which the panes are ordered inside the container, then you need to set the __Orientation__ property of the __RadSplitContainer__.

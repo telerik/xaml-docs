@@ -26,8 +26,6 @@ __Example 1: Set the IsPinned property on a pane__
 	<telerik:RadPane x:Name="radPane" IsPinned="True"/>
 ```
 
-
-
 ```C#
 	radPane.IsPinned = true;
 ```
@@ -35,7 +33,7 @@ __Example 1: Set the IsPinned property on a pane__
 	radPane.IsPinned = True
 ```
 
-You can also [pin](#Pinning_All_Panes)/[unpin](#Unpining_All_Panes) all of the panes inside of a [RadPaneGroup]({%slug raddocking-features-pane-groups%}) using the methods __group.PinAllPanes()__/__group.UnpinAllPanes()__.
+You can also pin/unpin all of the panes inside of a [RadPaneGroup]({%slug raddocking-features-pane-groups%}) using the __group.PinAllPanes()__ and __group.UnpinAllPanes()__ methods.
 
 ## Pinned Panes
 

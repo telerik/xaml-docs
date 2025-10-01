@@ -36,8 +36,6 @@ When loading your map data dynamically there are several attached properties tha
 
 In order to provide the needed data to your __RadMap__ control, you have to create a collection of business objects, which represent the desired data.
 
->tip The business object and the sample data for this example can be found at the [end of the topic](#sample_code).
-
 The next step is to define the __ItemTemplate__ for the information layer and set the desired bindings in it. In the current example, the marker will be represented by an ellipse marked as a Hot Spot.
 
 
@@ -75,9 +73,6 @@ The next step is to define the __ItemTemplate__ for the information layer and se
 
 The last thing to do is to set the __ItemsSource__ property of the __InformationLayer__. This has to be done after the initialization of the map provider, otherwise the marker elements will appear before the map has loaded. For this purpose you have to use the __InitializationCompleted__ event, which get raised after the initialization of the map provider completes.
 
->tip The code for the __GetMapData()__ method can be found at the [end of the topic](#sample_code).
-
-
 ```C#
 	public DataBindingSample()
 	{
@@ -110,8 +105,6 @@ By using this approach you have to define mappings between the data fields and t
 >tip The __DataMember__ enumeration used for the ValueMember value allows you to map not only the __Location__, __ZoomLevel__ and __ZoomRange__. You can also map __Latitude__, __Longitude__, __ZoomRangeMin__ and __ZoomRangeMax__. Which means that your business object can provide simple double properties for these values instead of the complex __Location__ and __ZoomRange__ ones.
 
 >In this example, the same __ItemTemplate__, business object and sample data will be used as in the example from the previous section of this topic. 
-
-The code for the business object and for the sample data can be found at the [end of the topic](#sample_code).
 
 To learn how and when to set the __ItemsSource__ of the __InformationLayer__, please read [the previous section](#using-data-binding-in-the-datatemplate).
 

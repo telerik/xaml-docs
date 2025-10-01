@@ -12,16 +12,6 @@ position: 8
 
 The user is capable of doing the following actions via the UI provided by the __RadWindow__:
 
-* [Minimize/Maximize](#minimizemaximize)
-
-* [Restore](#restore)
-
-* [Close](#close)
-
-* [Move](#move)
-
-* [Resize](#resize)
-
 ## Minimize/Maximize
 
 The user can maximize or minimize the __RadWindow__ by using the __Minimize__ and __Maximize__ buttons at the top-right corner of the window.

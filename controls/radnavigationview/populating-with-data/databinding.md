@@ -15,7 +15,7 @@ __RadNavigationView__ can be bound to a collection of objects through its ItemsS
 
 ## Creating the Model and View Model
 
-For the purposes of this article, we will create a simple object and a view model which will hold a collection of our models. The IconGlyph property of the NavigationItemModel holds the string which will be set to the Icon property of the RadNavigationViewItem. For more information about it, check out the [Icon and IconTemplate]({%slug radnavigationview-icon-and-icontemplate%}#radnavigationviewitem-icontemplate) article in our documentation.
+For the purposes of this article, we will create a simple object and a view model which will hold a collection of our models. The IconGlyph property of the NavigationItemModel holds the string which will be set to the Icon property of the RadNavigationViewItem. For more information about it, check out the [Icon and IconTemplate]({%slug radnavigationview-icon-and-icontemplate%}) article in our documentation.
 
 __Example 1: Creating the model and viewmodel__
 ```C#

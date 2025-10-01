@@ -12,12 +12,6 @@ position: 11
 
 Many applications operate with collections of items which are placed close to others and it's uncomfortable to use them as separate objects for low zoom levels. The __VisualizationLayer__ supports the __Clustering__ feature. It allows grouping of items according to condition.      
 
-* [Using of the clustering](#using-of-the-clustering)
-* [Clustering Invalidated Event](#clustering-invalidated-event)
-* [Items Grouping Example](#items-grouping-example)
-* [DefaultClusterGenerator class](#defaultclustergenerator-class)
-* [The ClusterData object](#the-clusterdata-object)
-
 ## Using of the clustering
 
 The __VisualizationLayer__ exposes the following properties which are related to the __Clustering__ feature:        

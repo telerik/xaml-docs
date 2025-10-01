@@ -57,7 +57,7 @@ For more details on storing and protecting your NuGet Key, check the [Announcing
 
 There are two popular ways to use the Telerik NuGet server in a build:
 
-* [Using a nuget.config file with your projects](#using-a-nugetconfig-file-with-your-projects)
+* [Using a nuget.config file with your projects](#using-a-nuget-config-file-with-your-projects)
 
 * [Using only CLI commands](#using-only-cli-commands)
 

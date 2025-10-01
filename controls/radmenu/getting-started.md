@@ -10,20 +10,7 @@ position: 3
 
 # Getting Started with {{ site.framework_name }} Menu
 
-This tutorial will walk you through the creation of a `RadMenu` and will show you how to:
-
-* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
-* [Adding Assembly References Manually](#adding-assembly-references-manually)
-
-* [Adding RadMenu](#adding-radmenu)
-
-* [Adding Menu Items](#adding-menu-items)
-
-* [Populating the RadMenu with Data](#populating-the-radmenu-with-data)
-
-* [Styles and Templates](#styles-and-templates)
-
-* [Working with the RadMenu](#work-with-the-radmenu)
+This tutorial will walk you through the creation of a `RadMenu`.
 
 >tip Before reading this tutorial you should get familiar with the [Visual Structure]({%slug radmenu-visual-structure%}) of the `RadMenu` control.
 

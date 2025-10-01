@@ -25,108 +25,6 @@ The first step is to add references to the following assemblies:
 * __Telerik.Windows.Data__
 
 Then you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement drag and drop operations, we won't focus on the definitions of the controls in xaml. However, please note to set the __RadTreeView IsDragDropEnabled__ property to __true__.
-		
-{% if site.site_name == 'Silverlight' %}
-
-
-
-```XAML
-    <Grid x:Name="LayoutRoot"
-              Margin="8"
-              Background="White">
-        <Grid.Resources>
-            <DataTemplate x:Key="WishlistProduct">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Foreground="#FF000000" Text="{Binding Name}" />
-                    <TextBlock Foreground="#FF000000" Text=", (" />
-                    <TextBlock Foreground="#FF000000" Text="{Binding UnitPrice}" />
-                    <TextBlock Foreground="#FF000000" Text=")" />
-                </StackPanel>
-            </DataTemplate>
-            <DataTemplate x:Key="ProductTemplate">
-                <telerik:RadDockPanel MaxWidth="200" Margin="2">
-                    <TextBlock Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
-                               Text="{Binding Name}"
-                               telerik:RadDockPanel.Dock="Top" />
-                    <TextBlock Foreground="{telerik:Windows8Resource ResourceKey=AccentBrush}"
-                               Text="{Binding UnitPrice}"
-                               telerik:RadDockPanel.Dock="Left" />
-                    <TextBlock Margin="2 0 0 0"
-                               Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
-                               Text="{Binding Description}"
-                               TextWrapping="Wrap"
-                               telerik:RadDockPanel.Dock="Left" />
-                </telerik:RadDockPanel>
-            </DataTemplate>
-            <telerik:HierarchicalDataTemplate x:Key="CategoryTemplate"
-                                      ItemTemplate="{StaticResource ProductTemplate}"
-                                      ItemsSource="{Binding Items}">
-                <StackPanel Orientation="Horizontal">
-                    <Image Width="16"
-                           Height="16"
-                           Margin="3"
-                           VerticalAlignment="Center"
-                           Source="Images/folder_icon.png" />
-                    <TextBlock Margin="2"
-                               VerticalAlignment="Center"
-                               Foreground="{telerik:Windows8Resource ResourceKey=MarkerBrush}"
-                               Text="{Binding Name}" />
-                </StackPanel>
-            </telerik:HierarchicalDataTemplate>
-            <Style TargetType="telerik:RadTreeViewItem">
-                <Setter Property="IsExpanded" Value="True" />
-            </Style>
-        </Grid.Resources>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="3*" />
-        </Grid.ColumnDefinitions>
-        <!--  All Products  -->
-        <telerik:RadTreeView x:Name="allProductsView"
-                             Grid.Row="0"
-                             Grid.RowSpan="2"
-                             Grid.Column="0"
-                             Margin="0,0,5,0"
-                             IsDragDropEnabled="True"
-                             ItemTemplate="{StaticResource CategoryTemplate}"
-                             Padding="5" />
-        <!--  Whishlist  -->
-        <ListBox x:Name="wishlistView"
-                 Grid.Row="0"
-                 Grid.Column="1"
-                 FontSize="11"
-                 ItemTemplate="{StaticResource WishlistProduct}"
-                 Padding="5"
-                 SelectionMode="Extended">
-            <ListBox.Resources>
-                <DataTemplate x:Key="DraggedItemTemplate">
-                    <StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Dragging:" />
-                            <TextBlock FontWeight="Bold" Text="{Binding CurrentDraggedItem.Name}" />
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock MinWidth="45"
-                                       FontWeight="Bold"
-                                       Text="{Binding CurrentDropPosition}" />
-                            <TextBlock Foreground="Gray" Text=", (" />
-                            <TextBlock Text="{Binding CurrentDraggedOverItem.Name}" />
-                            <TextBlock Foreground="Gray" Text=")" />
-                        </StackPanel>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.Resources>
-        </ListBox>
-    </Grid>
-```
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
 
 ```XAML
     <Grid x:Name="LayoutRoot"
@@ -222,15 +120,11 @@ Then you can define the controls in your view. As the purpose of this tutorial i
     </Grid>
 ```
 
-{% endif %}
-
 The next step is to use the __DragDropManager__ to enable the __drop__ operation on the __ListBox__ control.		
 
 Find the __ListBox__ declaration and set its __AllowDrop__ property to __True__.
 
 Now that the __ListBox__ allows drop operations, we need to make sure that the __ListItems__ are draggable. We can do so by applying an implicit style that sets the __DragDropManager.AllowCapturedDrag__ attached property to __True__ on every __ListItem__:		
-
-
 
 ```XAML
 	<!--  Note: With this style we make the ListBoxItems draggable:  -->
@@ -727,7 +621,7 @@ Then we can implement the __GiveFeedback__ event handler, which is quite straigh
 
 Next, we have to handle the DragOver event and implement a logic that decides if the current drag operation is supported over the current drop destination. In this example, we won't allow a drag operation within the __ListBox__, which means that we have to make sure that the drag operation is allowed only if it originates from the __RadTreeView__ control.
 
->tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag. You can read more about the properties exposed by the type in the [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}#using-the-treeviewdragdropoptions-object) article.
+>tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag. You can read more about the properties exposed by the type in the [Drag and Drop]({%slug radtreeview-features-drag-and-drop%}) article.
 
 As the data object passed by a drag operation started in __RadTreeView__ should be of type __TreeViewDragDropOptions__, this means that you can try to extract this object and if the operation is unsuccessful, then the drag doesn't originate from a __RadTreeView__. Furthermore, we'll have to make sure that the dragged data type matches the data type displayed in the __ListBox__ - in our example this means that we'll make sure we're dragging products. So finally, we can create the following __OnDragOver()__ implementation:
 

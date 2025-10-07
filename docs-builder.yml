@@ -1766,11 +1766,7 @@ redirects:
 -
     from: "^/getting-started/first-steps$"
     to: "/getting-started/first-steps-nuget"
-    type: Permanent        
--
-    from: "^/controls/.*/sdk-examples$"
-    to: "https://github.com/telerik/xaml-sdk"
-    type: Permanent    
+    type: Permanent
 - 
     from: "^/radpdfprocessing/(?!overview(?:\\.html)?)(.*)$"
     to: "http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/$1"

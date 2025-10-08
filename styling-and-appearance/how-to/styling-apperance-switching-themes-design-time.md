@@ -41,9 +41,7 @@ __Example 1: The merged theme resources__
 	</Application.Resources>
 ```
 
-{% if site.site_name == 'WPF' %}> You can change the theme also by using the [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).{% endif %}
-
-{% if site.site_name == 'WPF' %}
+You can change the theme also by using the [Project Configuration Wizard]({%slug radcontrols-for-wpf-vs-extensions-project-configuration%}).
 
 ## Switching Themes at Design-time per control
 
@@ -54,7 +52,7 @@ With the __R2 2019__ version we introduced the option to change the theme per co
 The following example demonstrates how the feature works in few easy steps.
 
 1. Select a __Rad-control__ in the Visual Studio designer at design-time. This will display a button on the right side of the control.
-<!-- -->
+
 	![RadButton Change Theme at Design Time](images/DynamicSwitchThemesPerControl.png)
 
 2. Click the button and under Appearance, you can select the theme that you want to apply to the control. The __StyleManager.Theme__ attached property will be set to the chosen theme. The result is demonstrated in __Example 2__.
@@ -65,8 +63,6 @@ __Example 2: RadButton with Office2016 theme applied__
 	<telerik:RadButton Content="Change theme from designer" telerik:StyleManager.Theme="Office2016"   />
 ```
 
-{% endif %}
-	
 ## See Also
 * [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%})
 * [Switching Themes at Runtime]({%slug styling-apperance-themes-runtime%})

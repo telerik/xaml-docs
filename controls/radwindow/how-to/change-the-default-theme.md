@@ -10,7 +10,7 @@ position: 1
 
 # Change the Default Theme
 
-You can easily change the theme of __RadWindow__ to one of the predefined themes for UI for {{ site.framework_name }} using the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) or {% if site.site_name == 'WPF' %}[StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}){% else %}[StyleManager]({%slug common-styling-apperance-setting-theme%}){% endif %}.
+You can easily change the theme of __RadWindow__ to one of the predefined themes for UI for {{ site.framework_name }} using the [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) or [StyleManager]({%slug common-styling-apperance-setting-theme-wpf%}).
 
 * [Using Implicit Styles](#using-implicit-styles)
 * [Using StyleManager](#using-stylemanager)
@@ -67,8 +67,9 @@ To change the theme using the implicit styles mechanism you will need to make fe
 		newWindow.Show()
 	```
 
-	<h4 id="figure-1"><strong>Figure 1: RadWindow with the Windows8 theme applied</strong></h4>
-	![{{ site.framework_name }} RadWindow RadWindow with the Windows8 theme applied</strong></h4>](images/RadWindow_How_To_Change_the_Default_Theme_01.png)
+	__Figure 1: RadWindow with the Windows8 theme applied__
+	
+	![WPF RadWindow RadWindow with the Windows8 theme applied](images/RadWindow_How_To_Change_the_Default_Theme_01.png)
 
 If you use __RadWindow__ as a custom UserControl as shown in __Example 3__, you will need to apply a new style targeting the custom control and base it on the default RadWindowStyle. Otherwise, the window won't be displayed.
 

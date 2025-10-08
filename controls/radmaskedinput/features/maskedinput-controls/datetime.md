@@ -10,7 +10,7 @@ position: 3
 
 # MaskedDateTimeInput
 
-The `RadMaskedDateTimeInput`` represents the basic control that can be used to restrict the input of DateTime values.
+The `RadMaskedDateTimeInput` represents the basic control that can be used to restrict the input of DateTime values.
 
 In order to use the RadMaskedDateTimeInput control in your projects you have to add references to the following assemblies:
 

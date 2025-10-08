@@ -29,7 +29,7 @@ __Example 1: Setting LabelStrategyOptions__
 			return LabelStrategyOptions.Content | LabelStrategyOptions.Arrange;
 		}
 	}
-```}}
+```
 
 ## Custom Series Label Strategy
 

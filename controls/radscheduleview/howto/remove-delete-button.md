@@ -14,10 +14,7 @@ This tutorial demonstrates how to remove the Delete button from the Appointments
 
 ## Remove the Delete Button Using the ShowAppointmentDeleteButton Property
 
-With the Q1 2014 version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadScheduleView__ provides built-in property named __ShowAppointmentDeleteButton__ which gives you the ability to easily show or hide the delete button from all of the Appointments. The default value of the __ShowAppointmentDeleteButton__ property is __true__ - the delete button is visible. In order to hide it you need to set the property to __RadScheduleView__ the following way:         
-
-
-
+With the Q1 2014 version of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}, __RadScheduleView__ provides built-in property named __ShowAppointmentDeleteButton__ which gives you the ability to easily show or hide the delete button from all of the Appointments. The default value of the __ShowAppointmentDeleteButton__ property is __true__ - the delete button is visible. In order to hide it you need to set the property to __RadScheduleView__ the following way:       
 ```XAML
 	<telerik:RadScheduleView ShowAppointmentDeleteButton="False">
 	    ...
@@ -131,7 +128,7 @@ Until this moment the Appointments should have the default apperance. Now you ju
 
 And here is the final result:
 
-![radscheduleview how to remove delete button](images/radscheduleview_how to_remove delete button.png)
+![radscheduleview how to remove delete button](images/radscheduleview_how_to_remove_delete_button.png)
 
 ## Disable the Confirm Delete Dialog
 

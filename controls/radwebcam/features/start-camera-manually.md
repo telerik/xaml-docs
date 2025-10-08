@@ -19,7 +19,7 @@ To disable the automatic start of the camera, set the `AutoStart` property to `F
 __Disable auto start__
 ```XAML
 	<telerik:RadWebCam AutoStart="False"/>
-```}
+```
 
 To start the camera at a later moment in time, call the `Start` method of RadWebCam.
 

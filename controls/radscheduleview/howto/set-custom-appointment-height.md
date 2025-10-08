@@ -66,9 +66,6 @@ Now since you are able to display appointments with different heights you should
 	    }
 	}
 ```
-
-#### __VB__
-
 ```VB
 	    Public Class AppointmentStyleSelector
 	        Inherits OrientedAppointmentItemStyleSelector
@@ -141,9 +138,10 @@ And the final step would be to assign it to __RadScheduleView__:
 You can see the final result in __Figure 1__:
 
 Figure 1: Appointments with different heights in MonthViewDefinition
-![radscheduleview how to set custom appointment heights](images/radscheduleview_how to_set_custom_appointment_heights.png)
 
->tip You can find a runnable project demonstrating the approach from the previous example in our online demos {% if site.site_name == 'Silverlight' %}[here](https://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/CustomAppointmentHeight){% endif %}{% if site.site_name == 'WPF' %}[here](https://demos.telerik.com/wpf), the example is listed as __ScheduleView / Custom Appointment Height__{% endif %}.          
+![radscheduleview how to set custom appointment heights](images/radscheduleview_how_to_set_custom_appointment_height.png)
+
+>tip You can find a runnable project demonstrating the approach from the previous example in our online demos [here](https://demos.telerik.com/wpf), the example is listed as __ScheduleView / Custom Appointment Height__.          
 
 > The __AppointmentItem__ in the __Windows8, Windows8Touch and Office2013__ themes has a small line visual container on the bottom or left part of the appointment (based on the currently applied view definition). If you need to remove this, [extract the ControlTemplates]({%slug styling-apperance-editing-control-templates%}) (__AppointmentItemHorizontalControlTemplate__ and __AppointmentItemVerticalControlTemplate__) of the AppointmentItem control and remove the __Border__ control with x:Name set to __LineVisual__. Then set the customized templates to the __Template__ property of AppointmentItem via the Style objects of the __AppointmentStyleSelector__.
 

@@ -115,22 +115,22 @@ __Example 6: Create a Header__
 
 All header/footer types are set identically.
 
-   * In a non-measured document:
+* In a non-measured document:
 
-	__Example 7: Assign the Header to a Section in a Non-Measured Document__
-	
-	```C#	
-		section.Headers.First = header;
-	```
+__Example 7: Assign the Header to a Section in a Non-Measured Document__
 
-   * In a measured document:
+```C#	
+	section.Headers.First = header;
+```
 
-	__Example 8: Update the Header of an Existing Document__
-	
-	```C#
-	
-		this.editor.UpdateHeader(this.editor.Document.Sections.First, HeaderFooterType.First, header);
-	```
+* In a measured document:
+
+__Example 8: Update the Header of an Existing Document__
+
+```C#
+
+	this.editor.UpdateHeader(this.editor.Document.Sections.First, HeaderFooterType.First, header);
+```
 
 Setting the Footers can be done in the same way.
 
@@ -138,23 +138,23 @@ Setting the Footers can be done in the same way.
 
 Paragraphs can be added to a section in the following ways:
 
-   * In a non-measured document:
-	
-	__Example 9: Add a Paragraph to a Section in a Non-Measured Document__
-	
-	```C#
-		Section section = new Section();
-		Paragraph paragraph = new Paragraph();
-		section.Blocks.Add(paragraph);
-	```
+* In a non-measured document:
 
-   * In a measured document:
-	
-	__Example 10: Add a Paragraph to a Section in a Measured Document__
-	
-	```C#
-		this.radRichTextBox.InsertParagraph();
-	```
+__Example 9: Add a Paragraph to a Section in a Non-Measured Document__
+
+```C#
+	Section section = new Section();
+	Paragraph paragraph = new Paragraph();
+	section.Blocks.Add(paragraph);
+```
+
+* In a measured document:
+
+__Example 10: Add a Paragraph to a Section in a Measured Document__
+
+```C#
+	this.radRichTextBox.InsertParagraph();
+```
 
 ## See Also
  * [Elements Hierarchy]({%slug radrichtextbox-features-document-elements-hierarchy%})

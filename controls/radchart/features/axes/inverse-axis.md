@@ -10,20 +10,13 @@ position: 8
 
 # Inverse Axis
 
-
-
-## 
-
 Since __Q2 2011__ Inverse Axis feature was released. It allows the axes values of RadChart to be inverted.
 
 >The __IsInverse__ property can be set independently of the Axis range - it works both with automatic range and custom one(*AutoRange* = false).
 
 The following sample code will show you how this can be achieved:
 
-
-
-```C#
-	           
+```C#	           
 	this.radChart.DefaultView.ChartArea.AxisY.IsInverse = true;
 	//Line Chart
 	DataSeries lineSeries = new DataSeries();
@@ -169,12 +162,9 @@ The following sample code will show you how this can be achieved:
 	    telerikChart.DefaultView.ChartArea.DataSeries.Add(barSeries)
 ```
 
-Note the __IsInverse__ property of the YAxis which is __false__ by default. Turned on it will reverse the axis. The picture shows it in action:
-![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_InverseAxis.PNG)
+Note the __IsInverse__ property of the YAxis which is __false__ by default. Turned on it will reverse the axis. 
 
 Optionally you may inverse the XAxis too - it will display the categories from Dec to Jan:
-
-
 
 ```C#
 	this.radChart.DefaultView.ChartArea.AxisX.IsInverse = true;
@@ -183,6 +173,5 @@ Optionally you may inverse the XAxis too - it will display the categories from D
 	telerikChart.DefaultView.ChartArea.AxisX.IsInverse = true
 ```
 
-![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_InverseXAxis.PNG)
 
 

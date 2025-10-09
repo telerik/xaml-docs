@@ -28,3 +28,6 @@ apiRules:
     uidRegex: ^System\.Windows\.Automation\.Peers\.UIElementAutomationPeer(\..*)?$
 - exclude:
     uidRegex: ^System\.Windows\.Automation\.Peers\.AutomationPeer(\..*)?$
+- exclude:
+    type: Interface
+    uidRegex: ^Telerik\.Pivot\.Core\.IPivotResults$

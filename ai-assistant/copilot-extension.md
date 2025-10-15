@@ -18,6 +18,10 @@ This extension enhances GitHub Copilot with proprietary context about Telerik WP
 * Access best practices and implementation patterns.
 * Speed up development with AI-powered code completion.
 
+> [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
+>
+> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP servers](slug:ai-mcp-server). You can enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
+
 ## Prerequisites
 
 Before using the Telerik WPF GitHub Copilot extension, ensure you have:

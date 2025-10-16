@@ -14,17 +14,17 @@ This tutorial will walk you through the common task of populating __RadMenu__ wi
 
 __Example 1__ shows a regular __RadMenu__ declaration without items.
 
-#### __[XAML] Example 1: RadMenu declaration__
+__Example 1: RadMenu declaration__
 
-{{region xaml-radmenu-populating-with-data-using-static-items_0}}
+```XAML
 	<telerik:RadMenu VerticalAlignment="Top">
-{{endregion}}
+```
 
 In order to add items you need to use the __RadMenu's Items__ property. The __Items__ property is an __ItemCollection__ which contains your __RadMenuItems__. For example, the following lines will add the top-level items of the menu.
 
-#### __[XAML] Example 2: RadMenu with static top-level items__
+__Example 2: RadMenu with static top-level items__
 
-{{region xaml-radmenu-populating-with-data-using-static-items_1}}
+```XAML
 	<telerik:RadMenu VerticalAlignment="Top">
 	    <telerik:RadMenuItem Header="File" />
 	    <telerik:RadMenuItem Header="Edit" />
@@ -33,7 +33,7 @@ In order to add items you need to use the __RadMenu's Items__ property. The __It
 	    <telerik:RadMenuItem Header="Tools" />
 	    <telerik:RadMenuItem Header="Help" />
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 #### __Figure 1: RadMenu with static top-level items__
 
@@ -41,9 +41,9 @@ In order to add items you need to use the __RadMenu's Items__ property. The __It
 
 Each of the __RadMenuItems__ can have child items that are defined in the same way. __Example 3__ illustrates how to add submenu items to one of the top-level items.
 
-#### __[XAML] Example 3: Adding static submenu items__
+__Example 3: Adding static submenu items__
 
-{{region xaml-radmenu-populating-with-data-using-static-items_2}}
+```XAML
 	<telerik:RadMenu VerticalAlignment="Top">
 	    <telerik:RadMenuItem Header="File">
 	        <telerik:RadMenuItem Header="New Tab">
@@ -74,7 +74,7 @@ Each of the __RadMenuItems__ can have child items that are defined in the same w
 	    <telerik:RadMenuItem Header="Tools" />
 	    <telerik:RadMenuItem Header="Help" />
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 #### __Figure 2: RadMenu with static submenu items__
 ![{{ site.framework_name }} RadMenu RadMenu with static submenu items](images/RadMenu_Populating_with_Data_Using_Static_Items_02.png)

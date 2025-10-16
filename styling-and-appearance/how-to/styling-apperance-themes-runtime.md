@@ -14,11 +14,11 @@ position: 1
 
 By utilizing the theming mechanism with implicit styles, you can change the theme of Telerik UI for {{ site.framework_name }} controls at runtime without recreating the UI. All you need to do is remove the current merged dictionaries and then add the merged dictionaries of another theme to your application resources in code-behind:
 
-#### __[C#] Merging resource dictionaries in code__ 
-{{region styling-apperance-themes-runtime_0}}
+__Merging resource dictionaries in code__ 
+```C#
 	Application.Current.Resources.MergedDictionaries.Clear();
 	Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = ......});
-{{endregion}}
+```
 
 This will apply different implicit styles to your control at runtime.
 
@@ -30,8 +30,8 @@ In this help article we'll go through a quick example to demonstrate the approac
 
 2. Add the needed resource dictionaries for the default theme in **App.xaml**.  
 
-	#### __[XAML] Merging ResourceDictionaries in XAML__ 
-	{{region styling-apperance-themes-runtime_1}}
+	__Merging ResourceDictionaries in XAML__ 
+	```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -42,12 +42,12 @@ In this help article we'll go through a quick example to demonstrate the approac
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```
 
 3. Add a few controls of your choice to the page. In this example, we will add a **Grid**, **StackPanel**, **RadComboBox**,  **RadDateTimePicker** and three **RadButtons** to switch between three of the themes.        
 
-	#### __[XAML] Defining the view__  
-	{{region styling-apperance-themes-runtime_2}}
+	__Defining the view__  
+	```XAML
 		<Grid x:Name="LayoutRoot" Background="White">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto" />
@@ -72,12 +72,12 @@ In this help article we'll go through a quick example to demonstrate the approac
 				<telerik:RadDateTimePicker Width="230" Margin="10" IsDropDownOpen="True" />
 			</StackPanel>
 		</Grid>
-	{{endregion}}
+	```
 
 4. The example will use the simplest way to change the theme at runtime – it will use the **Click** event of each of the three buttons. Upon click, we will clear the merged dictionaries from the application resources and merge the new resource dictionaries from the theme assemblies.
 
-	#### __[C#] Merge the theme resources at runtime__  
-	{{region styling-apperance-themes-runtime_3}}
+	__Merge the theme resources at runtime__  
+	```C#
 		private void OfficeBlack_Click(object sender, RoutedEventArgs e)
 		{
 			Application.Current.Resources.MergedDictionaries.Clear();
@@ -110,7 +110,7 @@ In this help article we'll go through a quick example to demonstrate the approac
 			Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { 
 				Source = new Uri("/Telerik.Windows.Themes.Windows7;component/Themes/Telerik.Windows.Controls.Input.xaml", UriKind.RelativeOrAbsolute)});
 		}
-	{{endregion}}
+	```
 
 5. The following pictures show the final result.
 

@@ -11,12 +11,12 @@ published: True
 
 The `DocumentRuler` element allows you to visualize a guide that will assist you in aligning text, tables, graphics, and other elements via the thumbs of the horizontal and vertical rulers. To display the document ruler, wrap it around a `RadRichTextBox` instance.
 
-#### __[XAML] Displaying the DocumentRuler__
-{{region radrichtextbox-features-document-ruler-0}}
+__Displaying the DocumentRuler__
+```XAML
     <telerik:DocumentRuler>
         <telerik:RadRichTextBox Name="radRichTextBox" />
     </telerik:DocumentRuler>
-{{endregion}}
+```
 
 __RadRichTextBox with DocumentRuler__
 
@@ -42,8 +42,8 @@ The DocumentRuler object derives from the `DocumentRulerBase` class, which expos
 * `TableColumnThumbStyle`&mdash;This property allows you to specify a style for the table column thumb.
 * `DefaultRulerThumbType`&mdash;This property provides you with the ability to set a style for the default ruler thumb.
 
-#### __[XAML] Customizing the Appearance of the Document Ruler__
-{{region radrichtextbox-features-document-ruler-1}}
+__Customizing the Appearance of the Document Ruler__
+```XAML
     <telerik:DocumentRuler MarkersBrush="Orange">
         <telerik:DocumentRuler.VerticalThumbStyle>
             <Style TargetType="Thumb">
@@ -69,7 +69,7 @@ The DocumentRuler object derives from the `DocumentRulerBase` class, which expos
         </telerik:DocumentRuler.HorizontalThumbStyle>
         <telerik:RadRichTextBox Name="radRichTextBox" IsSpellCheckingEnabled="False"/>
     </telerik:DocumentRuler>
-{{endregion}}
+```
 
 __Customized appearance of the DocumentRuler element__
 
@@ -79,13 +79,13 @@ __Customized appearance of the DocumentRuler element__
 
 You can change the visibility of the vertical/horizontal ruler of the DocumentRuler control. To do so, you can utilize its `CreateHorizontalRuler` and `CreateVerticalRuler` properties. These properties will be taken into account if the DocumentRuler instance has been loaded.
 
-#### __[C#] Hiding the vertical ruler of the DocumentRuler__
-{{region radrichtextbox-features-document-ruler-2}}
+__Hiding the vertical ruler of the DocumentRuler__
+```C#
     private void DocumentRuler_Loaded(object sender, RoutedEventArgs e)
     {
         this.documentRuler.CreateVerticalRuler = false;   
     }
-{{endregion}}
+```
 
 __DocumentRuler with hidden vertical ruler__
 
@@ -95,13 +95,13 @@ __DocumentRuler with hidden vertical ruler__
 
 The DocumentRuler control exposes the `IsReadOnly` property. You can use it to prevent/allow the user to make changes to the document via the vertical and horizontal rulers. This property will be taken into account if the DocumentRuler control has been loaded.
 
-#### __[C#] Setting the IsReadOnly property__
-{{region radrichtextbox-features-document-ruler-2}}
+__Setting the IsReadOnly property__
+```C#
     private void DocumentRuler_Loaded(object sender, RoutedEventArgs e)
     {
         this.documentRuler.IsReadOnly = true;   
     }
-{{endregion}}
+```
 
 ## Customizing the Behavior of the DocumentRuler
 

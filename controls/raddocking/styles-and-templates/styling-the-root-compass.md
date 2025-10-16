@@ -16,9 +16,9 @@ The compasses that you see, when rearranging the containers in the __RadDocking_
 
 In order to style the __RootCompass__ element in a RadDocking, you should create a style targeting __RootCompass__ and set it to the __RootCompassStyle__ property of the RadDocking.
 
-#### __[XAML] Example 1: Setting the RootCompassStyle property__
+__Example 1: Setting the RootCompassStyle property__
 
-{{region xaml-raddocking-styling-the-root-compass-0}}
+```XAML
 	<Application.Resources>
 		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 		<Style x:Key="CustomRootCompassStyle" TargetType="telerik:RootCompass" BasedOn="{StaticResource RootCompassStyle}">-->
@@ -38,7 +38,7 @@ In order to style the __RootCompass__ element in a RadDocking, you should create
             </telerik:RadSplitContainer>
         </telerik:RadDocking>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RootCompass without left and right indicator in the Office2016 theme__
 ![RootCompass without left and right indicator](images/RadDocking_RootCompass_RootCompassStyle.png)

@@ -22,18 +22,18 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 
 * __Step__ - defines the grouping interval. It is a double property with default value 100.
 
-#### __XAML__
 
-{{region radpivotgrid-features-doublegroupstep_1}}
+
+```XAML
 	<pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
 	    <pivot:DoubleGroupDescription PropertyName="Quantity" />
 		<pivot:DoubleGroupDescription PropertyName="Quantity" Step="200" />
 	</pivot:LocalDataSourceProvider.ColumnGroupDescriptions>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-doublegroupstep_1}}
+
+```C#
 	DoubleGroupDescription doubleGroupDescription1 = new DoubleGroupDescription();
 	doubleGroupDescription1.PropertyName = "Quantity";
 
@@ -44,11 +44,8 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 	var dataProvider = new LocalDataSourceProvider();
 	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription1);
 	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription2);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-doublegroupstep_1}}
+```
+```VB.NET
 	Dim doubleGroupDescription1 As New DoubleGroupDescription()
 	doubleGroupDescription1.PropertyName = "Quantity"
 	
@@ -59,7 +56,7 @@ __DoubleGroupDescription__ is used when you want to group your data by numeric p
 	Dim dataProvider = New LocalDataSourceProvider()
 	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription1)
 	dataProvider.ColumnGroupDescriptions.Add(doubleGroupDescription2)
-{{endregion}}
+```
 
 >You may also create a *PropertyGroupDescription* instead of *DoubleGroupDescription* - this way the numeric data will be treated as a string and will be grouped and sorted as such. However by using *PropertyGroupDescription* you will loose the grouping interval feature of the *DoubleGroupDescription* (the *Step* property).
 

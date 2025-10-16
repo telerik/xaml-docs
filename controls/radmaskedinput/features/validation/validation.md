@@ -16,8 +16,8 @@ This topic will show you how to use __RadMaskedInput__ controls to distinguish b
 
 For the purpose of this tutorial you need to create a new class named __DataValidationViewModel__. It will take care of the validation rules.	  
 
-#### __[C#] Example 1: Custom validation class__
-{{region cs-radmaskedinput-features-validation_0}}
+__Example 1: Custom validation class__
+```C#
 	public class DataValidationViewModel : ViewModelBase
 	{
 		private double doubleValue;
@@ -66,10 +66,8 @@ For the purpose of this tutorial you need to create a new class named __DataVali
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Custom validation class__
-{{region vb-radmaskedinput-features-validation_1}}
+```
+```VB.NET
 	Public Class DataValidationViewModel
 		Inherits ViewModelBase
 		Private m_doubleValue As Double
@@ -125,7 +123,7 @@ For the purpose of this tutorial you need to create a new class named __DataVali
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 Declare several __RadMaskedInput__ controls in XAML for displaying the sample data. Pay attention on the following things:	  
 
@@ -133,8 +131,8 @@ Declare several __RadMaskedInput__ controls in XAML for displaying the sample da
 
 * The __ValidatesOnExceptions__ and __NotifyOnValidationError__ properties of the data binding are set to __True__.		  
 
-#### __[XAML] Example 2: Defining several RadMaskedInput controls in XAML__
-{{region xaml-radmaskedinput-features-validation_2}}
+__Example 2: Defining several RadMaskedInput controls in XAML__
+```XAML
 	<StackPanel x:Name="LayoutRoot" Background="White">
 	    <telerik:RadMaskedNumericInput Width="200"
 	                                    Margin="10, 10, 10, 0"
@@ -155,19 +153,17 @@ Declare several __RadMaskedInput__ controls in XAML for displaying the sample da
 	                                ErrorMessage="{Binding Path=Text, ElementName=customErrorMessage}"
 	                                Value="{Binding Path=StringValue, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnExceptions=True}" />
 	</StackPanel>
-{{endregion}}
+```
 
 Finally, set the DataValidationViewModel to the UserControl's __DataContext__ property.	  
 
-#### __[C#] Example 3: Setting the DataContext to DataValidationViewModel__
-{{region cs-radmaskedinput-features-validation_3}}
+__Example 3: Setting the DataContext to DataValidationViewModel__
+```C#
 	this.DataContext = new DataValidationViewModel();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the DataContext to DataValidationViewModel__
-{{region vb-radmaskedinput-features-validation_4}}
+```
+```VB.NET
 	Me.DataContext = New DataValidationViewModel()
-{{endregion}}
+```
 
 Run the demo and fill all fields with valid data. As you can see no validation errors occur.
 

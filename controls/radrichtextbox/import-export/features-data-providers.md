@@ -81,11 +81,11 @@ The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, H
 >The __DataProviders__ can be accessed via the default Telerik namespace:
         
 
-#### __[XAML] Example 1: Define the namespace__
+__Example 1: Define the namespace__
 
-{{region xaml-radrichtextbox-features-data-providers_0}}
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+```
 
 
 ## Binding the provider to other UI Elements
@@ -93,9 +93,9 @@ The __DataProviders__ can be easily used to bind __RadRichTextBox__ to a XAML, H
 In __Example 2__, two simple UI controls are used - a plain __RadRichTextBox__ and a __TextBox__, which will display the document as a XAML text. The main functionality is contained in the __XamlDataProvider__ class. It's attached to the __RadRichTextBox__ and its __Xaml__ property is data bound to the __TextBox's Text__ property.
         
 
-#### __[XAML] Example 2: Binding the provider to a TextBox__
+__Example 2: Binding the provider to a TextBox__
 
-{{region xaml-radrichtextbox-features-data-providers_2}}
+```XAML
 	<UserControl x:Class="DataProvidersDemo.MainPage"
 	             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid x:Name="LayoutRoot"
@@ -111,41 +111,37 @@ In __Example 2__, two simple UI controls are used - a plain __RadRichTextBox__ a
 	        <TextBox Margin="2" Grid.Row="1" x:Name="textBox" />
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 
 
 At some point, you may want to start customizing the documents' appearance or modify the document after it has been imported but before it is shown. Data providers facilitate this by exposing a __SetupDocument__ event. It's fired every time the data provider instantiates a new document so you can modify the document. The following code-snippet demonstrates how to do that.
         
 
-#### __[XAML] Example 3: Attach to the SetupDocument event__
+__Example 3: Attach to the SetupDocument event__
 
-{{region xaml-radrichtextbox-features-data-providers_3}}
+```XAML
 	<telerik:XamlDataProvider Name="xamlDataProvider"
 	           Xaml="{Binding ElementName=textBox, Path=Text, Mode=TwoWay}"
 	           RichTextBox="{Binding ElementName=radRichTextBox}"
 	           SetupDocument="XamlDataProvider_SetupDocument"/>
-{{endregion}}
+```
 
 
 
-#### __[C#] Example 4: Handle the SetupDocument event__
+__Example 4: Handle the SetupDocument event__
 
-{{region cs-radrichtextbox-features-data-providers_2}}
+```C#
 	private void XamlDataProvider_SetupDocument(object sender, Telerik.Windows.Documents.FormatProviders.SetupDocumentEventArgs e)
 	{
 	    e.Document.LayoutMode = Telerik.Windows.Documents.Model.DocumentLayoutMode.Paged;
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 4: Handle the SetupDocument event__
-
-{{region vb-radrichtextbox-features-data-providers_3}}
+```
+```VB.NET
 	Private Sub XamlDataProvider_SetupDocument(sender As Object, e As Telerik.Windows.Documents.FormatProviders.SetupDocumentEventArgs)
 	 e.Document.LayoutMode = Telerik.Windows.Documents.Model.DocumentLayoutMode.Paged
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -160,9 +156,9 @@ The __DataProviders__ can also be used in __DataTemplates__ to enable __DataCont
 __Example 5__ shows using __RadRichTextBox__ in __ItemsControl__. For each item in the __ItemsSource__ collection an expander is created. The content of the expander is __RadRichTextBox__ control bound to the __Body__ property of the __DataContext__ through __HtmlDataProvider__.
         
 
-#### __[XAML] Example 5: Binding with dynamic data__
+__Example 5: Binding with dynamic data__
 
-{{region xaml-radrichtextbox-features-data-providers_4}}
+```XAML
 	<ItemsControl>
 	    <ItemsControl.ItemTemplate>
 	        <DataTemplate>
@@ -183,7 +179,7 @@ __Example 5__ shows using __RadRichTextBox__ in __ItemsControl__. For each item 
 	        </DataTemplate>
 	    </ItemsControl.ItemTemplate>
 	</ItemsControl>
-{{endregion}}
+```
 
 
 
@@ -195,9 +191,9 @@ Here is a sample snapshot:
 
 The data provider classes expose access to the FormatProvider property that represents the format provider class internally used to import and export content. Through this property you can also change the import/export settings of the respective format provider.
 
-#### __[XAML] Example 6: Change import settings when using data provider__
+__Example 6: Change import settings when using data provider__
 
-{{region radrichtextbox-features-data-providers_5}}
+```XAML
 
     <telerik:HtmlDataProvider x:Name="HtmlProvider" 
     	                        RichTextBox="{Binding ElementName=richTextBox}"
@@ -211,7 +207,7 @@ The data provider classes expose access to the FormatProvider property that repr
         </telerik:HtmlDataProvider.FormatProvider>
     </telerik:HtmlDataProvider>
     <telerik:RadRichTextBox x:Name="richTextBox" />
-{{endregion}}
+```
 
 >Note that dependency properties in **data templates** might fall back to their default value unexpectedly according to the information provided on [MSDN](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms743230(v=vs.100)?redirectedfrom=MSDN). This might lead to inability to customize the format provider settings when using a data template. The solution is to use user control in the data template.
 
@@ -227,7 +223,7 @@ To prevent this error, you will need to load the format provider without using M
 
 - Register the format provider with the **DocumentFormatProvidersManager**:
 
-#### __[C#] Example 7: Using DocumentFormatProvidersManager to manually load format provider__
-{{region cs-radrichtextbox-features-data-providers_4}}
+__Example 7: Using DocumentFormatProvidersManager to manually load format provider__
+```C#
 	DocumentFormatProvidersManager.RegisterFormatProvider(new HtmlFormatProvider());
-{{endregion}}
+```

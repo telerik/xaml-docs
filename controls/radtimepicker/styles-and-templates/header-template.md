@@ -16,25 +16,25 @@ The next example will demonstrate the necessary steps in order to customize the 
 
 > Please note that if you are using [NoXaml]({%slug styling-apperance-implicit-styles-overview%}) dlls, you need to base your style on the default one for the theme. You can read more about that in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}) article.      
 
-#### __[XAML] Example 1: Define Style targeting RadClock__
+__Example 1: Define Style targeting RadClock__
 
-{{region xaml-radtimepicker-header-template_0}}
+```XAML
 	<Style x:Key="RadClockStyle" TargetType="telerik:RadClock" >
 	
 	</Style>
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Set Header property__
+__Example 2: Set Header property__
 
-{{region xaml-radtimepicker-header-template_1}}
+```XAML
 	<Style x:Key="RadClockStyle1" TargetType="telerik:RadClock" >
 		<Setter Property="Header" Value="Custom Header and HeaderTemplate"/>
 	</Style>
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Set HeaderTemplate property__
+__Example 3: Set HeaderTemplate property__
 
-{{region xaml-radtimepicker-header-template_2}}
+```XAML
 	<Style x:Key="RadClockStyle2" TargetType="telerik:RadClock" >
 		<Setter Property="Header" Value="Custom Header and HeaderTemplate"/>
 		<Setter Property="HeaderTemplate">
@@ -47,13 +47,13 @@ The next example will demonstrate the necessary steps in order to customize the 
 			</Setter.Value>
 		</Setter>
 	</Style>
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Set RadTimePicker's ClockStyle property__
+__Example 4: Set RadTimePicker's ClockStyle property__
 
-{{region xaml-radtimepicker-header-template_3}}
+```XAML
 	<telerik:RadTimePicker ClockStyle="{StaticResource RadClockStyle2}"/>
-{{endregion}}
+```
 
 #### __Figure 1: RadTimePicker with styled header__
 

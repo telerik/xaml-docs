@@ -22,14 +22,14 @@ The dialog can be opened from the __Table of Contents__ button in the __Referenc
 
 The dialog can be shown by executing the `ShowInsertTableOfContentsDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-contents-table-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowInsertTableOfContentsDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowInsertTableOfContentsDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-contents-table-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowInsertTableOfContentsDialog();
-{{endregion}}
+```

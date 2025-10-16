@@ -14,27 +14,27 @@ This article demonstrates how to cancel the drag operation before it started. Th
 
 To cancel the dragging you can subscribe the RadTreeView element to the [DragDropManager.DragInitialize]({%slug dragdropmanager-events%}) event and set the Data and DragVisual of its event arguments to null.
 
-#### __[C#] Example 1: Subscribing the control for DragInitialize__
-{{region radtreeview-how-to-cancel-drag-start-0}}
+__Example 1: Subscribing the control for DragInitialize__
+```C#
 	DragDropManager.AddDragInitializeHandler(this.radTreeView, OnTreeViewDragInitialize, true);
-{{endregion}}	
+```	
 
-#### __[C#] Example 2: Canceling the drag__
-{{region radtreeview-how-to-cancel-drag-start-1}}
+__Example 2: Canceling the drag__
+```C#
 	private void OnTreeViewDragInitialize(object sender, DragInitializeEventArgs e)
 	{	
 		// If the drag should be canceled set the data and the visual to null
 		e.Data = null;
 		e.DragVisual = null;
 	}
-{{endregion}}
+```
 
 ## Code Example
 
 This section contains a runnable code example showing how to cancel dragging for a specific item.
 
-#### __[XAML] Example 3: Treeview definition__
-{{region radtreeview-how-to-cancel-drag-start-2}}
+__Example 3: Treeview definition__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsDragDropEnabled="True">
 		<telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
 			<telerik:RadTreeViewItem Header="Football" IsExpanded="True">
@@ -45,15 +45,15 @@ This section contains a runnable code example showing how to cancel dragging for
 			<telerik:RadTreeViewItem Header="Cycling"/>
 		</telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Subscribing the control for DragInitialize__
-{{region radtreeview-how-to-cancel-drag-start-3}}
+__Example 4: Subscribing the control for DragInitialize__
+```C#
 	DragDropManager.AddDragInitializeHandler(this.radTreeView, OnTreeViewDragInitialize, true);
-{{endregion}}
+```
 	
-#### __[C#] Example 5: Defining the DragInitialize handler and implementing logic that checks if the item can be dragged__
-{{region radtreeview-how-to-cancel-drag-start-4}}
+__Example 5: Defining the DragInitialize handler and implementing logic that checks if the item can be dragged__
+```C#
 	private void OnTreeViewDragInitialize(object sender, DragInitializeEventArgs e)
 	{
 		TreeViewDragDropOptions options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -67,7 +67,7 @@ This section contains a runnable code example showing how to cancel dragging for
 			}
 		}
 	}
-{{endregion}}
+```
 
 In this case you cannot drag the "Sport Categories" item which is the root of the treeview.
 

@@ -66,9 +66,9 @@ FloatingImageBlock exposes members enabling you to control the image inside the 
 
 **Example 1** shows how a **FloatingImageBlock** element can be defined in XAML at design time.
 
-#### __[XAML] Example 1: FloatingImageBlock definition__
+__Example 1: FloatingImageBlock definition__
 
-{{region radrichtextbox-features-document-elements-floatingimages_0}}
+```XAML
 
     <telerik:RadRichTextBox x:Name="radRichTextBox" Height="500">
         <telerik:RadDocument>
@@ -87,15 +87,15 @@ FloatingImageBlock exposes members enabling you to control the image inside the 
             </telerik:Section>
         </telerik:RadDocument>
     </telerik:RadRichTextBox>
-{{endregion}}
+```
 
 ## Add in Code Behind
 
 You can work with FloatingImageBlock objects in code-behind as well. 
 
-#### __[C#] Example 2: Define FloatingImageBlock in code-behind__
+__Example 2: Define FloatingImageBlock in code-behind__
 
-{{region radrichtextbox-features-document-elements-floatingimage_1}}
+```C#
 
     private FloatingImageBlock CreateFloatingImageBlock()
     {
@@ -109,11 +109,8 @@ You can work with FloatingImageBlock objects in code-behind as well.
     
         return floatingBlock;
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Define FloatingImageBlock in code-behind__
-
-{{region radrichtextbox-features-document-elements-floatingimage_2}}
+```
+```VB.NET
 
     Private Function CreateFloatingImageBlock() As FloatingImageBlock
         Dim stream As Stream = Application.GetResourceStream(New Uri("/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream
@@ -124,13 +121,13 @@ You can work with FloatingImageBlock objects in code-behind as well.
         floatingBlock.HorizontalPosition = New FloatingBlockHorizontalPosition(HorizontalRelativeFrom.Paragraph, 120)
         Return floatingBlock
     End Function
-{{endregion}}
+```
 
 Once you have defined the image, you will need to insert it in the document. Two approaches are available: using directly the model, appropriate when you are just constructing the document, or through the methods of RadDocumentEditor, when the document is already visualized in RadRichTextBox.
 
-#### __[C#] Example 3: Insert FloatingImageBlock through the model__
+__Example 3: Insert FloatingImageBlock through the model__
 
-{{region radrichtextbox-features-document-elements-floatingimage_3}}
+```C#
 
     Section section = new Section();
     Paragraph paragraph = new Paragraph();
@@ -140,11 +137,8 @@ Once you have defined the image, you will need to insert it in the document. Two
     RadDocument document = new RadDocument();
     document.Sections.Add(section);
     this.radRichTextBox.Document = document;
-{{endregion}}
-
-#### __[VB.NET] Example 3: Insert FloatingImageBlock through the model__
-
-{{region radrichtextbox-features-document-elements-floatingimage_4}}
+```
+```VB.NET
 
     Dim section As Section = New Section()
     Dim paragraph As Paragraph = New Paragraph()
@@ -154,23 +148,21 @@ Once you have defined the image, you will need to insert it in the document. Two
     Dim document As RadDocument = New RadDocument()
     document.Sections.Add(section)
     Me.radRichTextBox.Document = document
-{{endregion}}
+```
 
 In case an existing document should be edited, you can add a floating image to it using the **InsertInline()** method exposed by the **RadRichTextBox** and **RadDocumentEditor** classes.
 
-#### __[C#] Example 4: Insert FloatingImageBlock using IDocumentEditor__
-{{region radrichtextbox-features-document-elements-floatingimage_4}}
+__Example 4: Insert FloatingImageBlock using IDocumentEditor__
+```C#
 
     FloatingImageBlock floatingBlock = this.CreateFloatingImageBlock();
     this.radRichTextBox.InsertInline(floatingBlock);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Insert FloatingImageBlock using IDocumentEditor__
-{{region radrichtextbox-features-document-elements-floatingimage_5}}
+```
+```VB.NET
 
     Dim floatingBlock As FloatingImageBlock = Me.CreateFloatingImageBlock()
     Me.radRichTextBox.InsertInline(floatingBlock)
-{{endregion}}
+```
 
 ## See Also
 

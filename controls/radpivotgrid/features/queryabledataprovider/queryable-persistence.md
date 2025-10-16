@@ -24,9 +24,9 @@ This article will go through the process of persisting the current state of __Qu
 
 The DataContract attribute is added to all classes used by the QueryableDataProvider. This enables easy serialization with the DataContractSerializer. Below is a sample definition of such classes. The __DataContract__ attribute is added on class level and the __DataMember__ one is added for each property.
 
-#### __[C#] Example 1: Using the DataContract attribute__	
+__Example 1: Using the DataContract attribute__	
 
-{{region radpivotgrid-features-queryable-persistence_1}}
+```C#
 	[DataContract]
     public class DataProviderSettings
     {
@@ -48,15 +48,15 @@ The DataContract attribute is added to all classes used by the QueryableDataProv
         [DataMember]
         public PivotAxis AggregatesPosition { get; set; }
     }
-{{endregion}}
+```
 
 ## Defining the IValueProvider
 
 The next step is to create a new class, which implements the __Telerik.Windows.Persistence.Services.IValueProvider__ interface. It provides two methods that need to be implemented - __ProvideValue__ and __RestoreValue__. The first one is used when the data is saved. The second one is used when the data is restored from a previously saved state. When saving the provider, an instance of the *DataProviderSettings* class has to be created with all of its properties set. Then, the instance can be saved to a file or a stream. Below is a sample implementation of the interface.
 
-#### __[C#] Example 2: Implementing the IValueProvider interface__
+__Example 2: Implementing the IValueProvider interface__
 
-{{region radpivotgrid-features-queryable-persistence_2}}
+```C#
     public abstract class DataProviderValueProvider : IValueProvider
     {
         public abstract IEnumerable<Type> KnownTypes { get; }
@@ -134,15 +134,15 @@ The next step is to create a new class, which implements the __Telerik.Windows.P
             }
         }
     }
-{{endregion}}
+```
 
 ## Specifying the KnownTypes
 
 In the previous example a collection of KnownTypes is passed to the __DataContractSerializer__. It consists of all types needed for serializing the QueryableDataProvider. For this purpose we created a new __QueryablePivotSerializationHelper__ class which has a static member - KnownTypes. 
 
-#### __[C#] Example 3: Specifying the KnownTypes__
+__Example 3: Specifying the KnownTypes__
 
-{{region radpivotgrid-features-queryable-persistence_3}}
+```C#
 	 public class QueryableDataSourceValueProvider: DataProviderValueProvider
     {
         public override IEnumerable<Type> KnownTypes
@@ -153,14 +153,14 @@ In the previous example a collection of KnownTypes is passed to the __DataContra
             }
         }
     }
-{{endregion}}
+```
 
 ## Registering the PersistenceProvider
 
 The final step is to register a persistence provider and implement the logic needed for saving and loading the state of the QueryableDataProvider.
 
-#### __[C#] Example 4: Registering the PersistenceProvider__
-{{region radpivotgrid-features-queryable-persistence_4}}
+__Example 4: Registering the PersistenceProvider__
+```C#
 	Stream stream = new MemoryStream();
 
 	ServiceProvider.RegisterPersistenceProvider<IValueProvider>(typeof(QueryableDataProvider), new QueryableDataSourceValueProvider());
@@ -171,7 +171,7 @@ The final step is to register a persistence provider and implement the logic nee
 	this.stream.Position = 0;
     PersistenceManager manager = new PersistenceManager();
     manager.Load(this.PivotGrid.DataProvider, this.stream);
-{{endregion}}
+```
 
 ## See Also
 

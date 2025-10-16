@@ -35,10 +35,10 @@ You can find the required assemblies for each control from the suite in the [Con
 
 To use the __RadDataPager__ in the XAML you have to add the following namespace declaration: __xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"__ 
 
-#### __[XAML] Example 1: Declare a RadDataPager__ 
-{{region raddatapager-getting-started_0}}
+__Example 1: Declare a RadDataPager__ 
+```XAML
 	<telerik:RadDataPager x:Name="radDataPager" />
-{{endregion}}
+```
 
 ## Configuring the RadDataPager
 
@@ -62,13 +62,13 @@ The collection in this example will hold business objects of type Club. You can 
 
 Create your __RadDataPager__ and make some basic configurations to it.
 
-#### __[XAML] Example 2: RadDataPager bound to a collection__
+__Example 2: RadDataPager bound to a collection__
 
-{{region raddatapager-getting-started_2}}
+```XAML
 	<telerik:RadDataPager x:Name="radDataPager"
 	                      PageSize="5" 
 	                      Source="{Binding Clubs}"/>
-{{endregion}}
+```
 
 After the collection is passed to the __Source__ property, it will get split into pages. In order to learn how to access the paged collection, please read the next section.
 
@@ -78,9 +78,9 @@ After the collection is passed to the __Source__ property, it will get split int
 
 The paged collection inside the __RadDataPager__ can be accessed via the __PagedSource__ property. It exposes the set of data belonging to the current page. Here is an example of a __ListBox__ that displays the data paged by the __RadDataPager__.
 
-#### __[XAML] Example 3: ListBox exposing the paged collection__
+__Example 3: ListBox exposing the paged collection__
 
-{{region raddatapager-getting-started_3}}
+```XAML
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">
@@ -97,7 +97,7 @@ The paged collection inside the __RadDataPager__ can be accessed via the __Paged
 	                            Margin="0,10,0,0" 
 	                            Source="{Binding Clubs}"/>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Paged ListBox__
 ![Paged ListBox](images/RadDataPager_GettingStarted_02.PNG)
@@ -108,9 +108,9 @@ Using the **PagedSource** property, you can also apply paging to a RadGridView c
 
 The collection in **Example 4** holds business objects of type __Employee__. You need to pass this collection to the **Source** property of the **RadDataPager**. After that, bind the ItemsSource property to the PagedSource collection using __ElementName__ binding.
 
-#### __[XAML] Example 4: Paging RadGridView__
+__Example 4: Paging RadGridView__
 
-{{region raddatapager-getting-started_4}}
+```XAML
 
 	<Grid x:Name="LayoutRoot"
 	        Background="White">    
@@ -131,7 +131,7 @@ The collection in **Example 4** holds business objects of type __Employee__. You
 	                          Source="{Binding Employees}"
 	                          PageSize="5" />
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 2: Paged RadGridView__
 ![Paged RadGridView](images/RadDataPager_GettingStarted_01.png)
@@ -153,8 +153,8 @@ To change the theme, you can follow the steps below:
 
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 5: Merge the ResourceDictionaries__  
-{{region raddatapager-getting-started_6}}
+__Example 5: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -164,7 +164,7 @@ __Example 5__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 Alternatively, you can use the theme of the control via the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}).
 

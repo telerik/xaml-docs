@@ -32,8 +32,8 @@ Change the foreground of the class names in a C# file displayed in the __RadSynt
 
 1. Create a custom __CSharpTagger__, introduce some logic to collect the names of the types from the needed assemblies and override the __TryGetClassificationType__ method to classify the known types. 
 
-#### __[C#] Example 1: Creating a Custom CSharpTagger__
-{{region cs-kb-syntaxeditor-how-to-classify-class-names-from-assembly-0}}
+__Example 1: Creating a Custom CSharpTagger__
+```C#
 
     public class CustomCSharpTagger : CSharpTagger
     {
@@ -116,12 +116,12 @@ Change the foreground of the class names in a C# file displayed in the __RadSynt
             }
         }
     }
-{{endregion}}
+```
 
 2. Register the custom tagger in the TaggersRegistry of the RadSyntaxEditor and define the TextFormatDefinition. 
 
-#### __[C#] Example 2: Registering the Custom CSharpTagger__
-{{region kb-syntaxeditor-how-to-classify-class-names-from-assembly-1}}
+__Example 2: Registering the Custom CSharpTagger__
+```C#
 
 	public partial class MainWindow : Window
     {
@@ -140,7 +140,7 @@ Change the foreground of the class names in a C# file displayed in the __RadSynt
             this.syntaxEditor.TextFormatDefinitions.AddFirst("KnownType", new TextFormatDefinition(new SolidColorBrush(Color.FromRgb(78, 201, 176))));
         }
     }
-{{endregion}}
+```
 
 #### __Figure 1: Csharp File With Colorized Class Names__
 ![Csharp File With Colorized Class Names](images/kb-syntaxeditor-classify-class-names-from-assembly.png)

@@ -18,8 +18,8 @@ This article will demonstrate how to define __RadDiagram__, __Shapes__ and __Con
 
 Below you can find a code snippet which creates a __RadDiagram__ and adds two Shapes and a Connection in it:
 		
-#### __C#__
-{{region raddiagram-data-code-behind-0}}
+
+```C#
 	private void GenerateRadDiagram()
 	{
 	    RadDiagram diagram = new RadDiagram();
@@ -59,10 +59,8 @@ Below you can find a code snippet which creates a __RadDiagram__ and adds two Sh
 	
 	    this.LayoutRoot.Children.Add(diagram);
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-data-code-behind-1}}
+```
+```VB.NET
 	Private Sub GenerateRadDiagram()
 	    Dim diagram As New RadDiagram()
 	
@@ -107,27 +105,25 @@ Below you can find a code snippet which creates a __RadDiagram__ and adds two Sh
 	
 	    Me.LayoutRoot.Children.Add(diagram)
 	End Sub
-{{endregion}}
+```
 
 In the code above, we use the static class __ShapeFactory__ from the __Telerik.Windows.Controls.Diagrams__ assembly. Below you can find the list of its static methods for creating an EllipseShape, RectangleShape or Geometry:
 		  
-#### __C#__		
-{{region raddiagram-data-code-behind-2}}
+		
+```C#
 	public static RadDiagramShape CreateCircle(double radiusX, double radiusY, Point center)
 	public static RadDiagramShape CreateRectangle(Rect rect)
 	public static Geometry GetShapeGeometry(ArrowShapeType shapeType)
 	public static Geometry GetShapeGeometry(CommonShapeType shapeType)
 	public static Geometry GetShapeGeometry(FlowChartShapeType shapeType)
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-data-code-behind-3}}
+```
+```VB.NET
 	Public Shared Function CreateCircle(ByVal radiusX As Double, ByVal radiusY As Double, ByVal center As Point) As RadDiagramShape
 	Public Shared Function CreateRectangle(ByVal rect_Renamed As Rect) As RadDiagramShape
 	Public Shared Function GetShapeGeometry(ByVal shapeType As ArrowShapeType) As Geometry
 	Public Shared Function GetShapeGeometry(ByVal shapeType As CommonShapeType) As Geometry
 	Public Shared Function GetShapeGeometry(ByVal shapeType As FlowChartShapeType) As Geometry
-{{endregion}}
+```
 
 Here you see a snapshot of the defined __RadDiagram__:
 ![raddiagrams-populating-with-data-in-code-behind](images/raddiagrams-populating-with-data-in-code-behind.png)

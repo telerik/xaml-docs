@@ -32,8 +32,8 @@ How to implement custom logic that expands or collapses all row details in GridV
 
 The row details visibility of the GridView rows is controlled via their `DetailsVisibility` property. To implement logic that expands/collapses all row details, the `DetailsVisibility` property of the `GridViewRow` element can be bound to a property in the row's data item. Then, on button click or another action, the data item property of all items can be changed accordingly to the needed expand state.
 
-#### __[C#] Defining the data item's property__
-{{region kb-gridview-expand-all-rowdetails-0}}
+__Defining the data item's property__
+```C#
 	public class RowInfo : ViewModelBase
     {
         private Visibility detailsVisibility = Visibility.Collapsed;
@@ -46,20 +46,20 @@ The row details visibility of the GridView rows is controlled via their `Details
 
         // other row related properties here
     }
-{{endregion}}
+```
 
-#### __[XAML] Data bind the visibility property__
-{{region kb-gridview-expand-all-rowdetails-1}}
+__Data bind the visibility property__
+```XAML
 	<telerik:RadGridView.RowStyle>
 		<!-- if using the NoXaml Telerik dlls, set the following setting on the Style object: BasedOn="{StaticResource GridViewRowStyle}"-->
 		<Style TargetType="telerik:GridViewRow">
 			<Setter Property="DetailsVisibility" Value="{Binding DetailsVisibility, Mode=TwoWay}"/>
 		</Style>
 	</telerik:RadGridView.RowStyle>
-{{endregion}}
+```
 
-#### __[C#] Expand/Collapse all row details__
-{{region kb-gridview-expand-all-rowdetails-2}}
+__Expand/Collapse all row details__
+```C#
 	private void ToggleRowDetailsVisibility(Visibility visibility)
 	{
 		// this.source is a collection of RowInfo objects assigned to the ItemsSource of RadGridView
@@ -68,7 +68,7 @@ The row details visibility of the GridView rows is controlled via their `Details
 			item.DetailsVisibility = visibility;
 		}
 	}
-{{endregion}}
+```
 
 ## See Also 
 * [Row Details]({%slug radgridview-row-details-overview%})

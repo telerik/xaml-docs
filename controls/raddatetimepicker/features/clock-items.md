@@ -28,10 +28,10 @@ The default value for the __StartTime__ property is equal to 12:00AM and the val
 
 Here is demonstrated how to change these properties in XAML:
 
-#### __XAML__  
-{{region xaml-raddatetimepicker-features-clock-items_0}}
+  
+```XAML
 	<telerik:RadDateTimePicker StartTime="12:00" EndTime="18:00" TimeInterval="0:30"/>
-{{endregion}}
+```
 
 >The __TimeInterval__ property is also of type __TimeSpan__. In this example you set its value to 30 minutes, this is why you need to set the __TimeInterval__ to 0:30, meaning 0 hours and 30 minutes. You can also achieve the same result in code-behind.
          
@@ -43,8 +43,8 @@ If you want to completely change the set of clock items you can use the __ClockI
 
 For the purpose of the next example the __ClockItemsSource__ property is set in the code behind. However, you can also set it through binding.
 
-#### __C#__  
-{{region cs-raddatetimepicker-features-clock-items_1}}
+  
+```C#
 	public ClockItemsSample()
 	{
 	    InitializeComponent();
@@ -63,10 +63,8 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 	    };
 	    return times;
 	}
-{{endregion}}
-
-#### __VB.NET__  
-{{region vb-raddatetimepicker-features-clock-items_2}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.radDateTimePicker.ClockItemsSource = Me.LoadDataObjects()
@@ -81,7 +79,7 @@ For the purpose of the next example the __ClockItemsSource__ property is set in 
 	     }
 	    Return times
 	End Function
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDateTimePicker with Custom ClockItemsSource](images/dateTimePicker_features_clock_items_020.png)
 

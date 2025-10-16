@@ -22,14 +22,14 @@ The dialog can be opened from the __Date & Time__ button in the __Insert__ tab o
 
 The dialog can be shown by executing the `ShowInsertDateTimeDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-insert-date-time-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowInsertDateTimeDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowInsertDateTimeDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-insert-date-time-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowInsertDateTimeDialog();
-{{endregion}}
+```

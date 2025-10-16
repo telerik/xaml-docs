@@ -26,8 +26,8 @@ How to display alert, when a message is sent.
 
 Handle the __SendMessage__ event of the RadChat control, create a [RadDesktopAlert]({%slug raddesktopalert-getting-started%}) and set its Content to a new __MessageGroupViewModel__. We are going to use the __MessageGroup__ control to display the new message in the alert, however it can be replaced by a custom DataTemplate as well.
  
-#### __[XAML]__
-{{region kb-chat-showing-message-desktop-alert-0}}
+
+```XAML
 	<Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
          xmlns:chat="clr-namespace:Telerik.Windows.Controls.ConversationalUI;assembly=Telerik.Windows.Controls.ConversationalUI" 
          x:Name="grid">
@@ -38,10 +38,10 @@ Handle the __SendMessage__ event of the RadChat control, create a [RadDesktopAle
         </Grid.Resources>
         <telerik:RadChat x:Name="chat" SendMessage="chat_SendMessage" />
     </Grid>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-chat-showing-message-desktop-alert-1}}
+
+```C#
     private void chat_SendMessage(object sender, SendMessageEventArgs e)
     {
         RadDesktopAlertManager manager = new RadDesktopAlertManager(AlertScreenPosition.BottomRight, new Point(0, 0), 10);
@@ -59,7 +59,7 @@ Handle the __SendMessage__ event of the RadChat control, create a [RadDesktopAle
 
         manager.ShowAlert(alert);
     }
-{{endregion}}
+```
 
 ## See Also
 

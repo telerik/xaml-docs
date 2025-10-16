@@ -16,9 +16,9 @@ This article demonstrates how to bind a __RadGridView__ to data coming from a **
 
 __Example 1__ demonstrates how you can set up a ViewModel containing a DataSet in order to bind it to the RadGridView.
 
-#### __[C#] Example 1: Setting up the ViewModel__
+__Example 1: Setting up the ViewModel__
 
-{{region cs-gridview-binding-to-dataset-0}}
+```C#
 	public class MainViewModel : ViewModelBase
     {
         private DataSet dataSet;
@@ -87,11 +87,8 @@ __Example 1__ demonstrates how you can set up a ViewModel containing a DataSet i
             return dataSet;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting up the ViewModel__
-
-{{region vb-gridview-binding-to-dataset-1}}
+```
+```VB.NET
     Public Class MainViewModel
 	Inherits ViewModelBase
 
@@ -155,15 +152,15 @@ __Example 1__ demonstrates how you can set up a ViewModel containing a DataSet i
 			Return ds
 		End Function
     End Class
-{{endregion}}
+```
 
 >importantPlease note that the **DataRelation** is required for RadGridView to generate the hierarchy automatically.
 
 __Example 2__ demonstrates how the RadGridView is set up in XAML.
 
-#### __[XAML] Example 2: Setting up the RadGridView__
+__Example 2: Setting up the RadGridView__
 
-{{region xaml-gridview-binding-to-dataset-2}}
+```XAML
 	<Grid>
         <Grid.DataContext>
             <!-- The namespace "local" refers to the namespace where the MainViewModel class is defined-->
@@ -181,7 +178,7 @@ __Example 2__ demonstrates how the RadGridView is set up in XAML.
 		</telerik:RadGridView>
 		
 	</Grid>
-{{endregion}}
+```
 
 >If updates to the hierarchy are required during runtime, you can invoke RadGridView's **BuildHierarchyFromDataSet** method.
 

@@ -45,29 +45,26 @@ You can find the required assemblies for each control from the suite in the {% i
 
 You can add __RadWindow__ manually in XAML as demonstrated if __Example 1__.
 
-#### __[XAML] Example 1: Adding RadWindow in XAML__
+__Example 1: Adding RadWindow in XAML__
 
-{{region xaml-radwindow-getting-started_0}}
+```XAML
 	<telerik:RadWindow Height="300" Width="400"/>
-{{endregion}}
+```
 
 Here is an example of declaring a __RadWindow__ in code.
 
-#### __[C#] Example 2: Adding RadWindow in code__
+__Example 2: Adding RadWindow in code__
 
-{{region cs-radwindow-getting-started_1}}
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.Width = 400;
 	radWindow.Height = 300;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Adding RadWindow in code__
-
-{{region vb-radwindow-getting-started_2}}
+```
+```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.Width = 400
 	radWindow.Height = 300
-{{endregion}}
+```
 
 >It's not a good practice do declare your __RadWindow__ as visual element in XAML. The only scenario, when it is meaningful to use the __RadWindow__ in XAML, is when it represents the entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
@@ -77,17 +74,14 @@ To open the __RadWindow__ you have to call its __Show()__ method.
 
 >tipIn order to make the window modal you have to call the __ShowDialog()__ method. To learn more about modal windows read [here]({%slug radwindow-features-modal-windows%}).
 
-#### __[C#] Example 3: Calling the Show() method__
+__Example 3: Calling the Show() method__
 
-{{region cs-radwindow-getting-started_3}}
+```C#
 	radWindow.Show();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Calling the Show() method__
-
-{{region vb-radwindow-getting-started_4}}
+```
+```VB.NET
 	radWindow.Show()
-{{endregion}}
+```
 
 ![Figure 1: An empty RadWindow](images/RadWindow_GettingStarted_01.png)
 
@@ -101,21 +95,18 @@ To add content to the __RadWindow__ you have to use the __Content__ property or 
 
 >The only scenario, where you can add content to the __RadWindow__ at design-time, is when the __RadWindow__ represents an entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __[C#] Example 4: Setting the Content property__
+__Example 4: Setting the Content property__
 
-{{region cs-radwindow-getting-started_5}}
+```C#
 	Grid grid = new Grid();
 	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
 	radWindow.Content = grid;
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting the Content property__
-
-{{region vb-radwindow-getting-started_6}}
+```
+```VB.NET
 	Dim grid As New Grid()
 	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
 	radWindow.Content = grid
-{{endregion}}
+```
 
 ![Figure 2: RadWindow with a Grid set as its Content](images/RadWindow_GettingStarted_02.png)
 
@@ -127,59 +118,50 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 * __Alert()__ - shows an alert dialog. This method has 3 overloads. To learn more read [here]({%slug radwindow-features-predefined-dialogs%}).
 
-#### __[C#] Example 5: Using the Alert method__
+__Example 5: Using the Alert method__
 
-{{region cs-radwindow-getting-started_7}}
+```C#
 	RadWindow.Alert("Hello!");
-{{endregion}}
-
-#### __[VB.NET] Example 5: Using the Alert method__
-
-{{region vb-radwindow-getting-started_8}}
+```
+```VB.NET
 	RadWindow.Alert("Hello!")
-{{endregion}}
+```
 
 ![Figure 3: Result of Example 5](images/RadWindow_GettingStarted_03.png)
 
 * __Confirm()__ - shows a confirm dialog. This method has 2 overloads. To learn more read [here]({%slug radwindow-features-predefined-dialogs%}).
 
-#### __[C#] Example 6: Using the Confirm method__
+__Example 6: Using the Confirm method__
 
-{{region cs-radwindow-getting-started_9}}
+```C#
 	RadWindow.Confirm(new DialogParameters()
 	{
 	    Content = "Are you sure?"
 	});
-{{endregion}}
-
-#### __[VB.NET] Example 6: Using the Confirm method__
-
-{{region vb-radwindow-getting-started_10}}
+```
+```VB.NET
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Are you sure?"
 	RadWindow.Confirm(parameters)
-{{endregion}}
+```
 
 ![Figure 4: Result of Example 6](images/RadWindow_GettingStarted_04.png)
 
 * __Prompt()__ - shows a prompt dialog. This method has 3 overloads. To learn more read [here]({%slug radwindow-features-predefined-dialogs%}).
 
-#### __[C#] Example 7: Using the Prompt method__
+__Example 7: Using the Prompt method__
 
-{{region cs-radwindow-getting-started_11}}
+```C#
 	RadWindow.Prompt(new DialogParameters()
 	{
 	    Content = "Enter your name:"
 	});
-{{endregion}}
-
-#### __[VB.NET] Example 7: Using the Prompt method__
-
-{{region vb-radwindow-getting-started_12}}
+```
+```VB.NET
 	Dim parameters As New DialogParameters()
 	parameters.Content = "Enter your name:"
 	RadWindow.Confirm(parameters)
-{{endregion}}
+```
 
 ![Figure 5: Result of Example 7](images/RadWindow_GettingStarted_05.png)
 
@@ -187,8 +169,8 @@ There is a set of predefined dialog windows that can be directly used. Such wind
 
 If you are using [Implicit Styles]({%slug implicit-styles-styling-the-controls%}) to style the control, note that the newly created user control will not receive automatically the RadWindow style. The __BasedOn__ property of the custom style need to be set to the default style of RadWindow which is __RadWindowStyle__. You should add the following style after the merged dictionaries to fix this:
 
-#### __[XAML] Example 8: Custom Style targeting your RadWindow control__  
-{{region xaml-radwindow-getting-started_13}}
+__Example 8: Custom Style targeting your RadWindow control__  
+```XAML
 	<Application.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -199,7 +181,7 @@ If you are using [Implicit Styles]({%slug implicit-styles-styling-the-controls%}
 	        <Style TargetType="local:RadWindowControl" BasedOn="{StaticResource RadWindowStyle}" />
 	    </ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

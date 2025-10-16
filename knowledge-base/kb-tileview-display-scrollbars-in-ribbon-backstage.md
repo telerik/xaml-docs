@@ -32,19 +32,19 @@ How to display the scrollbars of a RadTileView in the backstage of a RadRibbonVi
 
 To achieve this requirement, you first need to disable the ScrollViewer's scrollbars of the **RadRibbonBackstage**.
 
-#### __[XAML] Example 1: Disabling the scrollbars of the RadRibbonBackstage__
+__Example 1: Disabling the scrollbars of the RadRibbonBackstage__
 
-{{region xaml-kb-tileview-display-scrollbars-in-ribbon-backstage_1}}
+```XAML
     <telerik:RadRibbonBackstage ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled">
-{{endregion}}
+```
 
 Then you need to enable the scrolling in RadTileView by setting its **ColumnsCount**, **RowHeight** and **ColumnWidth** properties as explained in [this article]({%slug radtileview-howto-enable-scrollbars%}).
 
-#### __[XAML] Example 2: Enabling the scrollbars of the RadTileView__
+__Example 2: Enabling the scrollbars of the RadTileView__
 
-{{region xaml-kb-tileview-display-scrollbars-in-ribbon-backstage_2}}
+```XAML
     <telerik:RadTileView ColumnsCount="3" RowHeight="200" ColumnWidth="150">
-{{endregion}}
+```
 
 ## See Also
 * [Enable the Horizontal and Vertical ScrollBars]({%slug radtileview-howto-enable-scrollbars%})

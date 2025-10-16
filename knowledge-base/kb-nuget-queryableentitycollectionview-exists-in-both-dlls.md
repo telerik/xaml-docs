@@ -31,4 +31,4 @@ An error "The type QueryableEntityCollectionView<T> exists in both Telerik.Windo
 
 ## Solution
 
-This happens because the QueryableEntityCollectionView<T> dll is defined in both the Telerik.Windows.Controls.EntityFramework and Telerik.Windows.Controls.EntityFramework60 dlls. To resolve this you will need to __remove one of the two dlls__ (based on the EntityFramework version you are using - 5 or 6+). If you're using NuGet packages, you need to use [separate nuget packages]({%slug nuget-installation%}#available-packages) to avoid this error.
+This happens because the QueryableEntityCollectionView<T> dll is defined in both the Telerik.Windows.Controls.EntityFramework and Telerik.Windows.Controls.EntityFramework60 dlls. To resolve this you will need to __remove one of the two dlls__ (based on the EntityFramework version you are using - 5 or 6+). If you're using NuGet packages, you need to use [separate nuget packages]({%slug nuget-installation%}) to avoid this error.

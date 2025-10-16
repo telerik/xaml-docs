@@ -14,15 +14,15 @@ TrixIndicator (triple exponential average) is used as a momentum indicator that 
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
-#### __[XAML] Example 1: TrixIndicator__
-{{region radchartview-indicators-trixindicator-0}}
+__Example 1: TrixIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		<telerik:TrixIndicator Period="8"
 							   CategoryBinding="Date"                                             
 							   ValueBinding="Close"
 							   ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: TrixIndicator
 <img src="images/radchartview-indicators-trixindicator-0.png" style="width: 80%;">

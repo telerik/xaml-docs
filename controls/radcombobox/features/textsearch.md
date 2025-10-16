@@ -12,13 +12,7 @@ position: 2
 
 The __RadComboBox__ control supports rich text search functionality. The __TextSearch__ class and the __TextSearchMode__ property of the RadComboBox can be used in order to regulate how the control behaves when it receives user input.
 
-The purpose of this article is to show the properties of the TextSearch class and the TextSearchMode property. The following sections are included:
-
-* [TextSearchMode](#textsearchmode)
-
-* [Using TextSearch.TextPath](#using-textsearchtextpath)
-
-* [Using TextSearch.AutoCompleteTimeout](#using-textsearchautocompletetimeout)
+The purpose of this article is to show the properties of the TextSearch class and the TextSearchMode property.
 
 ## TextSearchMode
 
@@ -36,7 +30,7 @@ There are four __TextSearchMode__ types that can work with the RadComboBox:
 
 >The __TextSearch__ class is located in the __Telerik.Windows.Controls.dll__ assembly.
 
-You can set the __TextSearch.TextPath__ in order to control which property of each of the RadComboBox's Items will be targetted by the AutoHighlight feature. This is useful when the RadComboBox is [bound to a collection]({%slug radcombobox-populating-with-data-binding-to-object%}) of complex bussiness objects. The AutoHighlight feature highlights the first item which fits the user input based on the TextSearchMode and TextSearch.TextPath properties. This property is also useful for the [AutoComplete]({%slug radcombobox-features-autocomplete%}#using-textsearchtextpath) feature.
+You can set the __TextSearch.TextPath__ in order to control which property of each of the RadComboBox's Items will be targetted by the AutoHighlight feature. This is useful when the RadComboBox is [bound to a collection]({%slug radcombobox-populating-with-data-binding-to-object%}) of complex bussiness objects. The AutoHighlight feature highlights the first item which fits the user input based on the TextSearchMode and TextSearch.TextPath properties. This property is also useful for the [AutoComplete]({%slug radcombobox-features-autocomplete%}) feature.
 
 >When the __IsEditable__ property of the RadComboBox is set to __False__, pressing the same letter more than once results in the next item which fits the TextSearchMode criteria being highlighted.
 
@@ -44,17 +38,14 @@ You can set the __TextSearch.TextPath__ in order to control which property of ea
 
 The __TextSearch__ class exposes a static property named __AutoCompleteTimeout__ which allows you to configure the autocomplete timeout. Use this property when you want to set the timeout after which the typed text for the autocomplete is reset. Its default value is 800ms.
 
-#### __[C#] Example 1: Setting TextSearch.AutoCompleteTimeout__
+__Example 1: Setting TextSearch.AutoCompleteTimeout__
 
-{{region radcombobox-features-textsearch_0}}
+```C#
 	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting TextSearch.AutoCompleteTimeout__
-
-{{region radcombobox-features-textsearch_1}}
+```
+```VB.NET
 	Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = TimeSpan.FromSeconds(2)
-{{endregion}}
+```
 
 ## See Also
  * [Edit Modes]({%slug radcombobox-features-edit-modes%})

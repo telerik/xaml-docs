@@ -31,8 +31,8 @@ Since RadGridView is designed to work with collections of business objects, a lo
 
 In order to avoid that, we can create a simple wrapper class around the string data. 
 
-#### __[C#]__
-{{region cs-kb-gridview-howto-bind-itemssource-to-a-collection-of-strings-0}}
+
+```C#
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -50,9 +50,9 @@ In order to avoid that, we can create a simple wrapper class around the string d
     {
         public string Text { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region cs-kb-gridview-howto-bind-itemssource-to-a-collection-of-strings-1}}
+
+```XAML
 	<telerik:RadGridView x:Name="gridView" />
-{{endregion}}
+```

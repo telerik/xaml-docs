@@ -38,9 +38,9 @@ __RadChart__ also allows you to specify how to format the labels by specifying _
 
 When you set the label format behavior, all the labels (axes, series item labels, tooltips) will be formatted using the logic shown above. However, if you set [Format Expressions]({%slug radchart-features-format-expressions%}) to an element, then this expression will override the selected __LabelFormatBehavior__. For example, set the format behavior to __Scientific__, but for __X-Axis__ set __DefaultLabelFormat__ to "__MMM__":
 
-#### __XAML__
 
-{{region xaml-radchart-features-chart-area_0}}
+
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -60,11 +60,11 @@ When you set the label format behavior, all the labels (axes, series item labels
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radchart-features-chart-area_1}}
+
+```C#
 	RadChart radChart = new RadChart();
 	
 	radChart.DefaultView.ChartArea.LabelFormatBehavior = LabelFormatBehavior.HumanReadable;
@@ -72,18 +72,15 @@ When you set the label format behavior, all the labels (axes, series item labels
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "MMM";
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Between;
 	//...
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radchart-features-chart-area_2}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
 	radChart.DefaultView.ChartArea.LabelFormatBehavior = LabelFormatBehavior.HumanReadable
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = True
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "MMM"
 	radChart.DefaultView.ChartArea.AxisX.LayoutMode = AxisLayoutMode.Between
-{{endregion}}
+```
 
 On the image below you can see how the __Y-Axis__ and the series item labels are formatted when __LayoutFormatBehavior__ is set to __HumanReadable__, while the __X-Axis__ is formatted using custom [Format Expressions]({%slug radchart-features-format-expressions%}):
 

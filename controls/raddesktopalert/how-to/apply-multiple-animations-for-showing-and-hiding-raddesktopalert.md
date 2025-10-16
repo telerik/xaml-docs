@@ -34,9 +34,9 @@ Using the __AnimationGroup__ class you could group animations and play them simu
 
 The next code snippet shows how to apply an __AnimationGroup__ to both the __ShowAnimation__ and __HideAnimation__ properties of __DesktopAlertManager__:
 
-#### __[C#] Applying AnimationGroup__
+__Applying AnimationGroup__
 
-{{region cs-raddesktopalert-how-to-apply-animation-group_1}}
+```C#
 	AnimationGroup groupIn = new AnimationGroup();
 	groupIn.Children.Add(new FadeAnimation() { Direction = AnimationDirection.In });
 	groupIn.Children.Add(new ScaleAnimation() { Direction = AnimationDirection.In, MinScale = 0.9 });
@@ -45,11 +45,11 @@ The next code snippet shows how to apply an __AnimationGroup__ to both the __Sho
 	groupOut.Children.Add(new ScaleAnimation() { Direction = AnimationDirection.Out, MinScale = 0.9 });
 	this.AnimationGroupManager.ShowAnimation = groupIn;
 	this.AnimationGroupManager.HideAnimation = groupOut;
-{{endregion}}
+```
 
-#### __[VB] Applying AnimationGroup__
+__Applying AnimationGroup__
 
-{{region vb-raddesktopalert-how-to-apply-animation-group_1}}
+```VB
 	Dim groupIn As New AnimationGroup()
 	groupIn.Children.Add(New FadeAnimation() With {.Direction = AnimationDirection.[In]})
 	groupIn.Children.Add(New ScaleAnimation() With {.Direction = AnimationDirection.[In], .MinScale = 0.9})
@@ -58,7 +58,7 @@ The next code snippet shows how to apply an __AnimationGroup__ to both the __Sho
 	groupOut.Children.Add(New ScaleAnimation() With {.Direction = AnimationDirection.Out, .MinScale = 0.9})
 	Me.AnimationGroupManager.ShowAnimation = groupIn
 	Me.AnimationGroupManager.HideAnimation = groupOut
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/DesktopAlert/ShowingAndHidingUsingAnimationGroup).
 

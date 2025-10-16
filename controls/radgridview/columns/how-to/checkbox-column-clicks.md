@@ -30,19 +30,19 @@ In addition to __EditTriggers="CellClick"__ property, you can set the __AutoSele
 
 This could be done in __XAML__ or in __code behind__ when the columns are auto generated:        
 
-#### __XAML__
 
-{{region xaml-gridview-checkbox-column-clicks_1}}
+
+```XAML
 	<telerik:GridViewCheckBoxColumn Name="CheckBoxColumn"
 	EditTriggers="CellClick"
 	AutoSelectOnEdit="True"
 	DataMemberBinding="{Binding IsChampion}" />
-{{endregion}}
+```
 
 
-#### __C#__
 
-{{region cs-gridview-checkbox-column-clicks_2}}
+
+```C#
 	private void gridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
 	{
 	    var dataColumn = e.Column as GridViewDataColumn;
@@ -62,11 +62,8 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-checkbox-column-clicks_3}}
+```
+```VB.NET
 	Private Sub gridView_AutoGeneratingColumn(sender As Object, e As GridViewAutoGeneratingColumnEventArgs)
 	    Dim dataColumn = TryCast(e.Column, GridViewDataColumn)
 	    If dataColumn IsNot Nothing Then
@@ -82,15 +79,15 @@ This could be done in __XAML__ or in __code behind__ when the columns are auto g
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ##     Second approach
 
 Another approach would be to leverage the __CellTemplate__ of GridViewDataColumn and put a checkbox in it:
 
-#### __XAML__
 
-{{region xaml-gridview-checkbox-column-clicks_0}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding IsActive}" 
 	            IsReadOnly="True">
 	    <telerik:GridViewDataColumn.CellTemplate>
@@ -100,7 +97,7 @@ Another approach would be to leverage the __CellTemplate__ of GridViewDataColumn
 	        </DataTemplate>
 	    </telerik:GridViewDataColumn.CellTemplate>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 
 The CheckBox is two-way bound to the IsActive boolean property so with single click you change it. The benefit here is that the CheckBox looks enabled, because it is in the CellTemplate while in the first approach the CheckBox looks disabled (because the cells are not in edit mode yet). 

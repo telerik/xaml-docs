@@ -23,9 +23,9 @@ The root level container is the __RadRibbonView__ itself. It is separated in two
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
 
-{{region radribbonview-functional-structure_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonView.Backstage>
 	        <telerik:RadRibbonBackstage />
@@ -37,7 +37,7 @@ Here is how a sample XAML declaration of these elements looks like:
 	    <telerik:RadRibbonTab Header="View" />
 	    <telerik:RadRibbonTab Header="Text" />
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 As you can see, the declared structure is pretty staright-forward. You have an empty Backstage menu, an empty Quick Access Toolbar and three empty tabs added as children to the __RadRibbonView__. The title and the application name are defined as attributes of the __RadRibbonView__.				
 
@@ -47,9 +47,9 @@ The Backstage control is basically an ItemsControl that can be used to display c
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
 
-{{region radribbonview-functional-structure_1}}
+
+```XAML
 	<telerik:RadRibbonView.Backstage>
 	    <telerik:RadRibbonBackstage>
 	        <telerik:RadRibbonBackstageItem CloseOnClick="False" Header="Save" Icon="Images/Save.png"
@@ -251,7 +251,7 @@ Here is how a sample XAML declaration of these elements looks like:
 	        <telerik:RadRibbonBackstageItem Header="Exit" Icon="Images/Exit.png" IsSelectable="False" />
 	    </telerik:RadRibbonBackstage>
 	</telerik:RadRibbonView.Backstage>
-{{endregion}}
+```
 
 For more information take a look at the [Backstage]({%slug radribbonview-ribbon-backstage%}) topic.				
 
@@ -265,9 +265,9 @@ Currently you can only add or remove buttons to the toolbar but cannot modify it
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
 
-{{region radribbonview-functional-structure_2}}
+
+```XAML
 	<telerik:RadRibbonView.QuickAccessToolBar>
 	    <telerik:QuickAccessToolBar>
 	        <telerik:RadRibbonButton Content="Save" Foreground="Gray" />
@@ -275,7 +275,7 @@ Here is how a sample XAML declaration of these elements looks like:
 	        <telerik:RadRibbonButton Content="Redo" Foreground="Gray" />
 	    </telerik:QuickAccessToolBar>
 	</telerik:RadRibbonView.QuickAccessToolBar>
-{{endregion}}
+```
 
 As you can see the declaration of the Quick Access Toolbar contains three buttons: "Save", "Undo" and "Redo".
 
@@ -291,9 +291,9 @@ You never add your controls to the __RadRibbonTab__ directly. Instead they shoul
 
 Here is how a sample XAML declaration of these elements looks like:
 
-#### __XAML__
 
-{{region radribbonview-functional-structure_3}}
+
+```XAML
 	<telerik:RadRibbonTab Header="Home">
 	    <telerik:RadRibbonGroup Header="Text">
 	        <telerik:RadButtonGroup>
@@ -315,15 +315,15 @@ Here is how a sample XAML declaration of these elements looks like:
 	        <telerik:RadRibbonRadioButton Size="Large" LargeImage="Images/IconMSOffice/32/PageBreak.png" />
 	    </telerik:RadRibbonGroup>
 	</telerik:RadRibbonTab>
-{{endregion}}
+```
 
 As you can see two __RadRibbonGroups__ - "Text" and "Page", have been declared. The first one - "Text", contains a button group with three buttons inside, plus a __RadRibbonGallery__ with 6 gallery items. The second group - "Page", contains two radio buttons with their size set to __Large__.
 
 Here you can see how the whole XAML declaration of the __RadRibbonView__ looks like:
 
-#### __XAML__
 
-{{region radribbonview-functional-structure_4}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonView.Backstage>
 	        <telerik:RadRibbonBackstage>
@@ -557,7 +557,7 @@ Here you can see how the whole XAML declaration of the __RadRibbonView__ looks l
 	    <telerik:RadRibbonTab Header="View" />
 	    <telerik:RadRibbonTab Header="Text" />
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadRibbonView Example Functional Structure](images/RibbonView_Functional_Structure.png)
 

@@ -59,7 +59,7 @@ The Telerik UI for WPF product provides `.nupkg` files that can be downloaded fr
 	
 ## Telerik NuGet Server Packages
 
-There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-package-files) ones. 
+There is an [online package source]({%slug nuget-package-source-setup%}) that can be used to get Telerik nugets. The packages on the server are almost identical to [local](#nuget-local-packages) ones. 
 
 ### Full Packages (Server)
 

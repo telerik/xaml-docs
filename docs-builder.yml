@@ -1,0 +1,2461 @@
+top-navigation-product: wpf
+path-prefix: /products/wpf/documentation
+default-title-prefix: WPF
+
+primary-color: "#27A306"
+product-id: 601
+product-code: RCWPF
+product-name: Telerik UI for WPF
+product-url: https://www.telerik.com/products/wpf/overview.aspx
+product-trial-url: https://www.telerik.com/try/ui-for-wpf
+contribute-url: https://github.com/telerik/xaml-docs/edit/master
+search-engine-id: 001595215763381649090:jt1stbj813w
+avatar-path: ./images/avatar-ninja.svg
+no-results-image-path: ./images/ninja-no-results.svg
+enable-tabbed-code-blocks: true
+pdf-cover-png-path: ./images/pdf-cover.png
+img-max-width: 100%
+table-layout: fixed
+
+cta-overview: The @Subject is part of @ProductLink, a professional grade UI library with 160+ components for building modern and feature-rich applications. To try it out sign up for a free 30-day trial.
+cta-intro: "@ProductLink is a professional grade UI library with 160+ components for building modern and feature-rich applications. To try it out sign up for a free 30-day trial."
+
+liquid-output-delimiter-left: "{{"
+liquid-output-delimiter-right: "}}"
+liquid:
+  framework_name: "WPF"
+  site_name: "WPF"
+  
+excluded-files:
+- "**/README.md"
+- "**/copyright.md"
+
+meta:
+    ai-assistant:
+        title: AI Coding Assistant
+        position: 7
+    knowledge-base:
+        position: 10
+        res_type: kb
+        relativeUrl: /knowledge-base
+        hideChildren: true
+    controls/radaiprompt:
+        title: RadAIPrompt
+    controls/radsvgimage:
+        title: RadSvgImage
+    controls/radhighlighttextblock:
+        title: RadHighlightTextBlock
+    controls/radslideview:
+        title: RadSlideView
+    controls/radpipspager:
+        title: RadPipsPager
+    controls/radofficenavigationbar:
+        title: RadOfficeNavigationBar
+    controls/radcircularprogressbar:
+        title: RadCircularProgressBar
+    controls/radvirtualkeyboard:
+        title: RadVirtualKeyboard
+    controls/radvirtualkeyboard/appearance:
+        title: Appearance
+        position: 7
+    controls/radautocompletebox:
+        title: RadAutoCompleteBox		
+    controls/radautosuggestbox:
+        title: RadAutoSuggestBox
+    controls/radautosuggestbox/appearance:
+        title: Appearance
+    controls/radpivotgrid:
+        title: RadPivotGrid
+    controls/raddatetimepicker:
+        title: RadDateTimePicker
+    controls/raddaterangepicker:
+        title: RadDateRangePicker
+    controls/radcombobox:
+        title: RadComboBox
+    controls/dragdropmanager:
+        title: DragDropManager
+    controls/radbusyindicator:
+        title: RadBusyIndicator
+    controls/radcalendar:
+        title: RadCalendar
+    controls/radcontextmenu:
+        title: RadContextMenu
+    controls/radcoverflow:
+        title: RadCoverFlow
+    controls/raddocking:
+        title: RadDocking
+    controls/raddesktopalert:
+        title: RadDesktopAlert
+    controls/radganttview:
+        title: RadGanttView
+    controls/radlistbox:
+        title: RadListBox
+    controls/radmenu:
+        title: RadMenu
+    controls/radnavigationview:
+        title: RadNavigationView (HamburgerMenu)
+    controls/radnavigationview/populating-with-data:
+        title: Populating With Data
+        position: 5
+    controls/radnotifyicon:
+        title: RadNotifyIcon
+    controls/radnumericupdown:
+        title: RadNumericUpDown
+    controls/radradialmenu:
+        title: RadRadialMenu
+    controls/radscheduleview:
+        title: RadScheduleView
+    controls/radtimepicker:
+        title: RadTimePicker
+    controls/radpasswordbox:
+        title: RadPasswordBox
+    controls/radsplashscreen:
+        title: RadSplashScreen
+    controls/radtimespanpicker:
+        title: RadTimeSpanPicker
+    controls/radtransitioncontrol:
+        title: RadTransitionControl
+    controls/radwatermarktextbox:
+        title: RadWatermarkTextBox
+    controls/radwindow:
+        title: RadWindow
+    controls/radcombobox/end-user-capabilities:
+        title: End-User Capabilities
+        position: 9      
+    controls/radcombobox/features:
+        title: Features
+        position: 7
+    controls/radcombobox/populating-with-data:
+        title: Populating With Data
+        position: 8
+    controls/radcardview:
+        title: RadCardView
+    controls/radcardview/appearance:
+        title: Appearance
+    controls/radwindow/features:
+        title: Features
+        position: 6
+    controls/radlistbox/drag-and-drop:
+        title: Drag and Drop
+        position: 5
+    controls/radscheduleview/end-user-capabilities:
+        title: End-User Capabilities
+        position: 8
+    controls/radscheduleview/features/appointments:
+        title: Appointments
+        position: 3
+    controls/radscheduleview/features/recurrence:
+        title: Recurrence
+        position: 4
+    controls/radscheduleview/features/viewdefinitions:
+        title: ViewDefinitions
+        position: 5
+    controls/radscheduleview/features/timeruler:
+        title: TimeRuler
+        position: 6
+    controls/radscheduleview/populating-with-data/binding-to-database:
+        title: Binding To Database
+    controls/radcontextmenu/changes-and-backwards-compatibility:
+        title: Changes and Backwards Compatibility
+        position: 5
+    controls/radcontextmenu/features:
+        title: Features
+        position: 6
+    controls/radmenu/changes-and-backwards-compatibility:
+        title: Changes and Backwards Compatibility
+        position: 5
+    controls/radmenu/features:
+        title: Features
+        position: 6
+    controls/dragdropmanager/behaviors:
+        title: Behaviors
+        position: 6
+    controls/dragdropmanager/howto:
+        title: How To
+        position: 7
+    controls/radradialmenu/commands:
+        title: Commands
+        position: 5
+    controls/raddocking/features/panes:
+        title: Panes
+        position: 0
+    controls/raddocking/theming:
+        title: Theming
+        position: 95
+    controls/raddocking/features/save-load-layout:
+        title: Save/Load Layout
+        position: 4
+    controls/radganttview/features/columns:
+        title: Columns
+        position: 0	
+    controls/radganttview/features/drag-and-drop:
+        title: Drag and Drop
+        position: 3
+    controls/radganttview/features/items:
+        title: Items
+        position: 1			
+    controls/radganttview/features/timeruler:
+        title: TimeRuler
+        position: 2        
+    controls/radpivotgrid/features/localdatasourceprovider:
+        title: LocalDataSourceProvider
+    controls/radpivotgrid/features/olap-providers:
+        title: OLAP Providers
+    controls/radpivotgrid/features/queryabledataprovider:
+        title: QueryableDataProvider
+        position: 3
+    controls/radbadge:
+        title: RadBadge
+    controls/radbarcode:
+        title: RadBarcode
+    controls/radbarcode/supported-types/1d-barcodes:
+        title: 1D Barcodes
+    controls/radbarcode/supported-types/2d-barcodes:
+        title: 2D Barcodes 
+    controls/radbarcode/supported-types/2d-barcodes/DataMatrix:
+        title: DataMatrix
+    controls/radbarcode/supported-types/2d-barcodes/PDF417:
+        title: PDF417
+    controls/radbarcode/supported-types/2d-barcodes/QRCode:
+        title: QRCode
+    controls/radbarcode/supported-types/2d-barcodes/SwissQRCode:
+        title: SwissQRCode
+    controls/radbarcode/supported-types:
+        title: Supported Types
+        position: 5
+    controls/radbarcode/oldbarcode:
+        title: Old Barcode
+        position: 6
+    controls/radbarcode/oldbarcode/supported-types:
+        title: Supported Types
+    controls/radbarcode/oldbarcode/1d-barcode:
+        title: 1D Barcode
+    controls/radbarcode/oldbarcode/2d-barcodes:
+        title: 2D Barcodes
+    controls/radbarcode/oldbarcode/2d-barcodes/radbarcodepdf417:
+        title: RadBarcodePDF417
+    controls/radbarcode/oldbarcode/2d-barcodes/radbarcodeqr:
+        title: RadBarcodeQR
+    controls/radbook:
+        title: RadBook
+    controls/radbreadcrumb:
+        title: RadBreadcrumb
+    controls/radbulletgraph:
+        title: RadBulletGraph
+    controls/radbuttons:
+        title: RadButtons
+    controls/radchart:
+        title: RadChart
+        hidden: true
+    controls/radchart/features/axes:
+        title: Axis
+    controls/radchart/features/drill-down:
+        title: Drill Down
+    controls/radchart/features/grouping:
+        title: Grouping
+    controls/radchart/features/chart-types:
+        title: Chart types
+    controls/radchart/features/annotations:
+        title: Annotations
+    controls/radchart/styles-and-templates/styling-the-axes:
+        title: Styling the Asix
+    controls/radchart/tips-and-tricks:
+        title: Tips and Tricks
+    controls/radchartview:
+        title: RadChartView
+    controls/radchartview/features/annotations:
+        title: Annotations
+    controls/radchartview/features/behaviors:
+        title: Behaviors
+    controls/radchartview/features/labels:
+        title: Labels
+    controls/radchartview/features/palettes:
+        title: Palettes
+    controls/radchartview/getting-started:
+        title: Getting Started
+        position: 6
+    controls/radchartview/populating-with-data:
+        title: Populating with Data
+        position: 7
+    controls/radchartview/series:
+        title: Series
+        position: 8   
+    controls/radchartview/axes:
+        title: Axis
+        position: 9    
+    controls/radchartview/features:
+        title: Features
+        position: 10
+    controls/radchartview/styles-and-templates:
+        title: Styles and Templates
+        position: 12
+    controls/radchartview/series/cartesianchart-series:
+        title: CartesianChart Series            
+    controls/radchartview/series/piechart-series:
+        title: PieChart Series
+    controls/radchartview/series/polarchart-series:
+        title: PolarChart Series    
+    controls/radchartview3d:
+        title: RadChartView3D
+    controls/radchartview3d/populating-data:
+        title: Populating with Data
+        position: 6
+    controls/radchartview3d/features:
+        title: Features
+        position: 7
+    controls/radchartview3d/series:
+        title: Series
+        position: 8
+    controls/radchartview3d/styles-and-templates:
+        title: Styles and Templates
+        position: 9
+    controls/radchartview3d/features/behaviors:
+        title: Behaviors  
+    controls/radchartview/howto:
+        title: How To 
+    "*area-series":
+        title: Area Series
+    "*line-series":
+        title: Line Series
+    "*point-series":
+        title: Point Series
+    "*bar-series":
+        title: Bar Series
+    "*bubble-series":
+        title: Bubble Series
+    "*financial-series":
+        title: Financial Series
+    "*scatter-series":
+        title: Scatter Series
+    controls/radfluidcontentcontrol:
+        title: RadFluidContentControl
+    controls/radcloudupload:
+        title: RadCloudUpload
+    controls/radcloudupload/features:
+        title: Features
+        position: 5
+    controls/radcloudupload/styles-and-templates:
+        title: Styles and Templates
+        position: 6
+    controls/radcloudupload/how-to:
+        title: How To
+        position: 7
+    controls/radcoloreditor:
+        title: RadColorEditor
+    controls/radcoloreditor/overview:
+        title: General Information
+        position: 2
+    controls/radcolorpicker:
+        title: RadColorPicker
+    controls/radcolorpicker/overview:
+        title: General Information
+    controls/radcolorpicker/features/radcolorpaletteview:
+        title: RadColorPaletteView
+    controls/radcolorpicker/features/radcolorselector:
+        title: RadColorSelector
+    controls/radcolorpicker/styling-and-appearance:
+        title: Appearance
+    controls/raddatabar:
+        title: RadDataBar
+    controls/raddiagram:
+        title: RadDiagram
+    controls/raddiagram/diagram-items:
+        title: Diagram Items
+    controls/raddiagram/diagram-items/shape:
+        title: Shapes
+    controls/raddiagram/diagram-tools:
+        title: Diagram Tools
+    controls/raddiagram/diagramextensions-viewmodels:
+        title: DiagramExtensions ViewModels
+    controls/raddiagram/extensions:
+        title: Extensions
+    controls/raddiagram/items-manipulation:
+        title: Items Manipulation
+    controls/raddiagram/extensions/diagramribbon:
+        title: "Diagram Ribbon"
+    controls/radexpander:
+        title: RadExpander
+    controls/radgauge:
+        title: RadGauge
+    controls/radgauge/getting-started:
+        title: Getting Started
+        position: 2
+    controls/radgauge/features:
+        title: Features
+        position: 3
+    controls/radgauge/linear-scale:
+        title: Linear Scale
+        position: 4
+    controls/radgauge/radial-scale:
+        title: Radial Scale
+        position: 5
+    controls/radgauge/numeric-scale:
+        title: Numeric Scale
+        position: 6
+    controls/radgauge/breaking-changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 7
+    controls/radgauge/styles-and-templates:
+        title: Styles and Templates
+        position: 8
+    controls/radgauge/how-to:
+        position: 9
+    controls/radgauge/features/indicators:
+        title: Indicators
+        position: 3    
+    controls/radgauge/features/numeric-indicator:
+        title: Numeric Indicator
+        position: 4
+    controls/radgauge/features/linear-and-radial-scales:
+        title: Linear and Radial Scales
+        position: 5
+    controls/radgauge/features/numeric-scale:
+        title: Numeric Scale
+        position: 6
+    controls/radgauge/features/labels:
+        title: Labels
+        position: 7
+    controls/radgauge/features/ranges:
+        title: Ranges
+        position: 8
+    controls/radgauge/features/ticks:
+        title: Ticks
+        position: 9
+    controls/radheatmap:
+        title: RadHeatMap
+    controls/radhtmlplaceholder:
+        title: RadHtmlPlaceHolder
+    controls/radlayoutcontrol:
+        title: RadLayoutControl
+    controls/radlayoutcontrol/getting-started:
+        title: Getting Started	
+        position: 3
+    controls/radlayoutcontrol/features:
+        title: Features
+        position: 4
+    controls/radlayoutcontrol/features/toolbox:
+        title: ToolBox
+    controls/radlayoutcontrol/features/layoutgroups:
+        title: Layout Groups
+    controls/radlegend:
+        title: RadLegend
+    controls/radmap:
+        title: RadMap
+    controls/radmap/features/visualization-layer:
+        title: Visualization Layer
+        position: 100
+    controls/radmap/features/providers:
+        title: Providers
+        position: 101
+    controls/radmap/features/information-layer:
+        title: Information Layer
+        position: 102
+    controls/radmaskedinput:
+        title: RadMaskedInput
+    controls/radmaskedinput/features/maskedinput-controls:
+        title: MaskedInput Controls
+    controls/radmaskedinput/features/validation:
+        title: Validation
+    controls/radmediaplayer:
+        title: RadMediaPlayer
+    controls/radmulticolumncombobox:
+        title: RadMultiColumnComboBox
+    controls/radoutlookbar:
+        title: RadOutlookBar
+    controls/radpanelbar:
+        title: RadPanelBar
+    controls/radpanelbar/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radprogressbar:
+        title: RadProgressBar
+    controls/radprogressbar/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radpersistenceframework:
+        title: RadPersistenceFramework
+    controls/radrating:
+        title: RadRating
+    controls/radribbonview:
+        title: RadRibbonView
+    controls/radribbonview/features:
+        title: Features
+        position: 4
+    controls/radribbonview/general-information:
+        title: General Information
+        position: 5
+    controls/radribbonview/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 6
+    controls/radribbonview/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radribbonview/features/layout-controls:
+        title: Layout Controls
+    controls/radribbonview/features/ribbon-controls:
+        title: Ribbon Controls
+    controls/radribbonview/features/ribbon-controls/ribbon-buttons:
+        title: Ribbon Buttons
+    controls/radslider:
+        title: RadSlider
+    controls/radslider/features/tick-marks:		
+        title: Tick Marks
+    controls/radslider/howto:		
+        title: How To		
+        position: 9
+    controls/radsparkline:
+        title: RadSparkLine
+    controls/radtabbedwindow:
+        title: RadTabbedWindow
+    controls/radtabcontrol:
+        title: RadTabControl
+    controls/radtabcontrol/features/tab-item:
+        title: Tab Item
+    controls/radtabcontrol/populating-with-tabs:
+        title: Populating with Tabs
+    controls/radtabcontrol/appearance:
+        title: Appearance
+    controls/radtileview:
+        title: RadTileView
+    controls/radtoolbar:
+        title: RadToolBar
+    controls/radtoolbar/styling-and-appearance:		
+        title: Styling and Appearance
+    controls/radtooltip:
+        title: RadToolTip
+    controls/radtimebar:
+        title: RadTimeBar
+    controls/radtimeline:
+        title: RadTimeline
+    controls/radtreemap:
+        title: RadTreeMap
+    controls/radtreeview:
+        title: RadTreeView
+    controls/radtreeview/features/dragdrop:
+        title: Drag and Drop
+    controls/radtreeview/how-to/drag-and-drop:
+        title: Drag and Drop
+        position: 0
+    controls/radtreeview/features/treeview-item:
+        title: RadTreeViewItem
+        position: 50
+    controls/radupload:
+        title: RadUpload
+    controls/radupload/features:
+        title: Features
+        position: 6
+    controls/radupload/events:
+        title: Events
+        position: 7
+    controls/radupload/changes-and-backwards-compatibility:
+        title: Changes and Backward Compatibility
+        position: 8
+    controls/radupload/styles-and-templates:
+        title: Styles and templates
+        position: 9
+    controls/radupload/how-to:
+        title: How To
+        position: 10
+    controls/touchmanager:
+        title: "TouchManager"
+    controls/touchmanager/gestures:
+        title: "Gestures"
+        position: 5
+    controls/radmap/features/providers/bing-rest-map-provider:
+        title: "Bing Rest Map Provider"
+        position: 2
+    controls/radchartview/indicators:
+        title: Financial Indicators
+        position: 12
+    controls/radchartview/features/combinemode:
+        title: Combine Mode
+    controls/radchartview/series/funnelchart-series:
+        title: FunnelChart Series
+    controls/radchartview/troubleshooting:
+        title: Troubleshooting 
+        position: 13
+    controls/raddiagram/performance:
+        title: Performance
+    controls/raddiagram/extensions/settingspane:
+        title: SettingsPane
+    "*radimageeditor":
+        title: RadImageEditor
+    controls/radimageeditor/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2	
+    controls/radimageeditor/features:
+        title: Features
+        position: 4
+    controls/radimageeditor/tools:
+        title: Tools
+        position: 5
+    controls/radimageeditor/how-to:
+        title: How To
+        position: 6
+    "*radspreadsheet":
+        title: RadSpreadsheet
+    controls/radspreadsheet/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2		
+    controls/radspreadsheet/howto:
+        title: How To
+        position: 6		
+    "*radspellchecker":
+        title: RadSpellChecker		
+    controls/radspellchecker/styles-and-templates:
+        title: Styles and Templates
+        position: 4
+    "*radpdfviewer":
+        title: RadPdfViewer
+    controls/radpdfviewer/document-model:
+        title: Document Model
+        position: 5
+    controls/radpdfviewer/ui:
+        title: UI
+        position: 6
+    controls/radpdfviewer/features:
+        title: Features
+        position: 7
+    controls/radpdfviewer/customization-and-extensibility:
+        title: Customization and Extensibility
+        position: 8
+    controls/radpdfviewer/document-model/text:
+        title: Text
+    "*radrichtextbox":
+        title: RadRichTextBox		
+    controls/radrichtextbox/getting-started:
+        title: Getting Started
+        position: 1
+    controls/radrichtextbox/changes-and-backward-compatibility:
+        title: Changes and Backward Compatibility
+        position: 2
+    controls/radrichtextbox/document-elements:
+        title: Document Model
+        position: 5
+    controls/radrichtextbox/document-elements/table:
+        title: Table
+        position: 13
+    controls/radrichtextbox/features:
+        title: Features
+        position: 6
+    controls/radrichtextbox/dialogs:
+        title: Dialogs
+        position: 6
+    controls/radrichtextbox/features/shapes:
+        title: Shapes
+    controls/radrichtextbox/features/content-controls:
+        title: Content Controls
+    controls/radrichtextbox/import-export:
+        title: Import/Export
+        position: 7    
+    controls/radrichtextbox/import-export/docx:
+        title: Docx	
+        position: 3
+    controls/radrichtextbox/import-export/html:
+        title: Html	
+        position: 4
+    controls/radrichtextbox/import-export/pdf:
+        title: Pdf
+        position: 5		
+    controls/radrichtextbox/import-export/rtf:
+        title: Rtf	
+        position: 6
+    controls/radrichtextbox/import-export/xaml:
+        title: Xaml	 
+        position: 7
+    controls/radrichtextbox/import-export/plain-text:
+        title: Plain Text	
+        position: 7
+    controls/radrichtextbox/ui-for-applying-rich-text-formatting:
+        title: UI for Applying Rich Text Formatting
+        position: 8
+    controls/radrichtextbox/troubleshooting:
+        title: Troubleshooting
+    controls/radrichtextbox/document-elements/annotations:
+        title: Annotations
+    controls/radrichtextbox/features/styles:
+        title: Styles
+    controls/radrichtextbox/features/mail-merge:
+        title: Mail Merge
+    controls/radrichtextbox/features/fields-and-document-variables:
+        title: Fields and Document Variables
+        position: 18
+    controls/radrichtextbox/features/references:
+        title: References
+        position: 19	
+    controls/radrichtextbox/features/merge-documents:
+        title: Merge Documents
+    controls/radcalculator:
+        title: RadCalculator
+    controls/radcalculator/style-and-templates:
+        title: Style and Templates
+    controls/radcarousel:
+        title: RadCarousel
+    controls/radcarousel/changes-and-backward-compability:
+        title: Changes and Backward Compability 
+    controls/radcarousel/using-radcarousel:
+        title: Using RadCarousel
+    controls/radcarousel/using-radcarouselpanel:
+        title: Using RadCarouselPanel 
+    controls/radcarousel/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radcollectionnavigator:
+        title: RadCollectionNavigator
+    controls/radcollectionnavigator/changes-and-backward-compability:
+        title: Changes and Backward Compability 
+    controls/raddatafilter:
+        title: RadDataFilter
+    controls/raddataform:
+        title: RadDataForm
+    controls/raddataform/localization:
+        title: Localization
+    controls/raddataform/validation:
+        title: Validation
+    controls/raddatapager:
+        title: RadDataPager
+    controls/raddatapager/changes-and-backward-compability:
+        title: Changes and Backward Compability
+    controls/radfiledialogs:
+        title: RadFileDialogs
+    controls/radfiledialogs/features:
+        title: Features
+        position: 6
+    controls/radfiledialogs/features/drag-drop:
+        title: Drag and Drop
+        position: 4
+    controls/radfiledialogs/dialog-controls:
+        title: Dialog Controls
+        position: 4
+    controls/radfilepathpicker:
+        title: RadFilePathPicker    
+    controls/radgridview:
+        title: RadGridView
+    controls/radgridview/changes-and-backward-compability:
+        title: Changes and Backward Compability
+        position: 1
+    controls/radgridview/general-information:
+        title: General Information
+        position: 2
+    controls/radgridview/getting-started:
+        title: Getting Started
+        position: 3
+    controls/radgridview/clipboard:
+        title: Clipboard
+        position: 4
+    controls/radgridview/columns:
+        title: Columns
+        position: 5		
+    controls/radgridview/columns/columntypes:
+        title: Column Types
+        position: 1
+    controls/radgridview/commands:
+        title: Commands
+        position: 7
+    controls/radgridview/features:
+        title: Features
+        position: 8
+    controls/radgridview/events:
+        title: Events
+        position: 9
+    controls/radgridview/export:
+        title: Export
+        position: 10
+    controls/radgridview/export/excel:
+        title: Excel
+        position: 1
+    controls/radgridview/export/pdf:
+        title: PDF
+        position: 2
+    controls/radgridview/export/generic:
+        title: Other Formats
+        position: 3
+    controls/radgridview/export/events:
+        title: Events
+        position: 4
+    controls/radgridview/export/how-to:
+        title: How To
+        position: 8
+    controls/radgridview/filtering:
+        title: Filtering
+        position: 11
+    controls/radgridview/filtering/faq:
+        title: FAQ
+    controls/radgridview/grouping:
+        title: Grouping
+        position: 12
+    controls/radgridview/hierarchical-gridview:
+        title: Hierarchical GridView
+        position: 13
+    controls/radgridview/localization:
+        title: Localization
+        position: 14
+    controls/radgridview/managing-data:
+        title: Managing Data
+        position: 15
+    controls/radgridview/paging:
+        title: Paging
+        position: 16
+    controls/radgridview/populating-with-data:
+        title: Populating with data
+        position: 18
+    controls/radgridview/row-details:
+        title: Row Details
+        position: 19
+    controls/radgridview/rows:
+        title: Rows
+        position: 20
+    controls/radgridview/selection:
+        title: Selection
+        position: 21
+    controls/radgridview/sorting:
+        title: Sorting
+        position: 21
+    controls/radgridview/styles-and-templates:
+        title: Styles and Templates
+        position: 22
+    controls/radgridview/style-selectors:
+        title: Style Selectors
+        position: 23
+    controls/radgridview/template-selectors:
+        title: Template Selectors
+        position: 24
+    controls/radgridview/troubleshooting:
+        title: Troubleshooting
+        position: 25
+    controls/radgridview/how-to:
+        title: How To
+        position: 26
+    controls/raddataservicedatasource:
+        title: RadDataServiceDataSource
+    controls/raddataservicedatasource/getting-started:
+        title: Getting Started
+        position: 1
+    controls/raddataservicedatasource/filtering:
+        title: Filtering
+        position: 7
+    controls/raddataservicedatasource/sorting:
+        title: Sorting
+        position: 8
+    controls/raddataservicedatasource/paging:
+        title: Paging
+        position: 9
+    controls/raddataservicedatasource/loading:
+        title: Loading
+        position: 10
+    controls/raddataservicedatasource/faq:
+        title: FAQ
+        position: 11
+    controls/raddataservicedatasource/how-to:		
+        title: How To
+        position: 12
+    controls/radentityframeworkcoredatasource:
+        title: RadEntityFrameworkCoreDataSource
+    controls/radentityframeworkdatasource:
+        title: RadEntityFrameworkDataSource
+    controls/radexpressioneditor:
+        title: RadExpressionEditor 
+    controls/radexpressioneditor/expressions:
+        title: Expressions   
+    controls/radpropertygrid:
+        title: RadPropertyGrid
+    controls/radpropertygrid/localization:
+        title: Localization
+    controls/radtilelist:
+        title: RadTileList
+    controls/radtreelistview:
+        title: RadTreeListView
+    controls/raddomaindatasource:
+        title: RadDomainDataSource
+    controls/radwizard:
+        title: RadWizard
+    controls/radwizard/features:
+        title: Features
+    controls/radvirtualgrid:
+        title: RadVirtualGrid
+    controls/radvirtualgrid/styling-and-appearance:
+        title: Styling and Appearance
+    controls/radvirtualgrid/selection:
+        title: Selection
+        position: 5
+    controls/radvirtualgrid/filtering:
+        title: Filtering
+        position: 6
+    controls/radvirtualgrid/sorting:
+        title: Sorting
+        position: 7
+    controls/radvirtualgrid/commands:
+        title: Commands
+        position: 8
+    controls/radvirtualgrid/how-to:
+        title: How to
+        position: 9
+    controls/radchat:
+        title: RadChat (Conversational UI)
+    controls/radchat/features:
+        title: Features
+    controls/radchat/features/messages:
+        title: Messages
+    controls/radchat/features/messages/card-messages:
+        title: Cards
+    controls/radwebcam:
+        title: RadWebCam
+    controls/radsyntaxeditor:
+        title: RadSyntaxEditor
+    controls/radsyntaxeditor/features:
+        title: Features
+        position: 7
+    controls/radsyntaxeditor/features/taggers:
+        title: Taggers
+        position: 9
+    controls/radtaskboard:
+        title: RadTaskBoard
+    controls/radcallout:
+        title: RadCallout
+    controls/radcallout/features/popupusage:
+        title: PopupUsage
+    controls/radwatermarktextbox/validation:
+        title: Validation
+    controls/radstepprogressbar:
+        title: RadStepProgressBar
+    controls/radstepprogressbar/appearance:
+        title: Appearance
+    "*overview":
+        title: Overview
+        position: 1
+    "*getting-started":
+        title: Getting Started
+        position: 2
+    "*general-information":
+        title: General Information
+        position: 2
+    "*changes-and-backward-compatibility":
+        title: Changes and Backward Compatibility
+        position: 3    
+    "*changes-and-backwards-compatibility":
+        title: Changes and Backward Compatibility
+        position: 3    
+    "*features":
+        title: Features
+        position: 4
+    "*populating-with-data":
+        title: Populating with Data
+        position: 5
+    "*styles-and-templates":
+        title: "Styles and Templates"	
+        position: 90
+    "*styling-and-templates":
+        title: "Styles and Templates"	
+        position: 90
+    "*how-to":
+        title: How To
+        position: 100
+    "*howto":
+        title: How To
+        position: 100
+    "*events":
+        title: Events
+        position: 80
+    "security":
+        title: Security
+        position: 9
+    "breaking-changes":
+        title: Breaking Changes
+        position: 8
+    "netcore":
+        title: .NET Core Support
+        position: 8
+    "api-reference":
+        title: "Api Reference"
+        position: 23
+    "common-information/analytics":
+        title: "Analytics"
+        position: 2
+    "common-information/consuming-data":
+        title: "Consuming Data"
+        position: 0
+    "common-information/mvvm-helpers":
+        title: "MVVM Helpers"
+        position: 1
+    "common-information/troubleshooting":
+        title: "Troubleshooting"
+        position: 14
+    "common-information/winforms-integration":
+        title: "WinForms Integration"
+    "cloud-integration/amazon-web-services":
+        title: "Amazon Web Services"
+        position: 2
+    "cloud-integration/amazon-web-services/connect-to-data-in-the-cloud":
+        title: "Connect to Data in the Cloud"
+        position: 5
+    "cloud-integration/azure":
+        title: "Azure"
+        position: 2
+    "cloud-integration/azure/cognitive-services":
+        title: "Cognitive Services"
+        position: 5
+    "cloud-integration/azure/connect-to-data-in-the-cloud":
+        title: "Connect to Data in the Cloud"
+        position: 6
+    "cloud-integration/google-cloud":
+        title: "Google Cloud"
+        position: 4
+    "cloud-integration/google-cloud/cognitive-services":
+        title: "Cognitive Services"
+        position: 4
+    "cloud-integration/google-cloud/connect-to-data-in-the-cloud":
+        title: "Connect to Data in the Cloud"
+        position: 5
+    "integration/visual-studio-extensions":
+        title: "Visual Studio Extensions"
+        position: 0
+    "getting-started/installation":
+        title: "Installation"
+        position: 8
+    "getting-started/installation/nuget":
+        title: "NuGet Installation"   
+    "getting-started/licensing":
+        title: "Activating Your License"
+        position: 0        
+    "getting-started/adding-telerik-ui-to-an-application":
+        title: "Adding Telerik UI to an Application"
+        position: 9
+    "styling-and-appearance/stylemanager":
+        title: "StyleManager"
+        position: 10
+    "styling-and-appearance/troubleshooting":
+        title: "Troubleshooting"
+        position: 11
+    "styling-and-appearance/glyphs":
+        title: "Font Glyphs"
+        position: 8
+    "styling-and-appearance/themes-suite":
+        title: "Themes Suite"
+        position: 7
+    "styling-and-appearance/how-to":
+        title: "How To"
+        position: 9
+    "testing/justmock":
+        title: "JustMock"
+    "testing/appium":
+        title: "Appium"
+    "getting-started":
+        title: "Getting Started"
+        position: 1
+    "controls":
+        title: Controls
+        position: 3    
+    "styling-and-appearance":
+        title: "Style and Appearance"
+        position: 4
+    "licensing":
+        title: "Redistribution"
+        position: 5
+    "wpflab":  
+        title: "WPF Labs"
+        position: 0
+    "common-information":
+        title: "Common Information"
+        position: 7
+    "integration":
+        title: "Integration"
+        position: 8
+    "cloud-integration":
+        title: "Cloud Integration"
+        position: 9
+    "testing":
+        title: "Testing"
+        position: 10
+    "developer-focused-examples":
+        title: "Developer Focused Examples"    
+        position: 11
+        
+redirects:
+-
+    from: "^/?$"
+    to: "/introduction"
+    type: Permanent
+-
+    from: "^/api/html/.*$"
+    to: "/api/"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-overview$"
+    to: "/getting-started/video-onboarding"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-radbarcode$"
+    to: "/controls/radbarcode/radbarcode-getting-started"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-chartview$"
+    to: "/controls/radchartview/getting-started/introduction"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-databars$"
+    to: "/controls/raddatabar/getting-started"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-diagram$"
+    to: "/controls/raddiagram/getting-started"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-ganttview$"
+    to: "/controls/radganttview/getting-started"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-gridview$"
+    to: "/controls/radgridview/getting-started/getting-started2"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-listbox$"
+    to: "/controls/radlistbox/getting-started"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-scheduleview$"
+    to: "/controls/radscheduleview/getting-started/getting-started"
+    type: Permanent
+-
+    from: "^/xamlflix-step-by-step-guide/xamlflix-tree_pivot_maps$"
+    to: "/controls/radtreemap/overview"
+    type: Permanent
+-
+    from: "^/controls/raddocking/changes-and-backwards-compatibility/changes$"
+    to: "/controls/raddocking/changes"
+    type: Permanent
+-
+    from: "^/controls/radexpander/changes-and-backwards-compatibility/changes$"
+    to: "/controls/radexpander/changes"
+    type: Permanent
+-
+    from: "^/controls/raddatapager/how-to/page-radgridview$"
+    to: "/controls/raddatapager/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radtoolbar/features/radtoolbartray-programming$"
+    to: "/controls/radtoolbar/features/radtoolbartray-overview"
+    type: Permanent
+-
+    from: "^/controls/radtoolbar/features/radtoolbartray-structure$"
+    to: "/controls/radtoolbar/features/radtoolbartray-overview"
+    type: Permanent
+-
+    from: "^/controls/radtoolbar/howto/create-simple-toolbar$"
+    to: "/controls/radtoolbar/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radtoolbar/styling-and-appearance/template-parts$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/radtabcontrol/howto/how-to-take-advantage-of-the-tag-property$"
+    to: "https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.tag?redirectedfrom=MSDN%26view=netframework-4.7.2%23System_Windows_FrameworkElement_Tag"
+    type: Permanent
+-
+    from: "^/controls/radgridview/clipboard/overview$"
+    to: "/controls/radgridview/clipboard/copying"
+    type: Permanent
+-
+    from: "^/controls/radtabcontrol/howto/how-to-create-multi-line-tabs$"
+    to: "/controls/radtabcontrol/features/tab-item/multiline-tabs"
+    type: Permanent
+-
+    from: "^/controls/radprogressbar/changes-and-backwards-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^/common-information/consuming-data/wcf-service.html$"
+    to: "/common-information/consuming-data/ado-net-data-service"
+    type: Permanent
+-
+    from: "^/controls/radgridview/columns/how-to/styling-checkboxcolumn$"
+    to: "/controls/radgridview/styles-and-templates/columns-styling-checkboxcolumn"
+    type: Permanent
+-
+    from: "^/controls/radchartview/getting-started/cartesianchartgrid-and-polarchartgrid$"
+    to: "/controls/radchartview/features/cartesianchartgrid-and-polarchartgrid"
+    type: Permanent
+-
+    from: "^/controls/radsyntaxeditor/features/taggers$$"
+    to: "/controls/radsyntaxeditor/features/taggers/overview"
+    type: Permanent
+-
+    from: "^/controls/radribbonview/how-to/hide-the-application-menu$"
+    to: "/controls/radribbonview/how-to/howto-style-app-button#hide-the-application-button"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/stylemanager/common-styling-appearance-edit-control-templates-blend$"
+    to: "/styling-and-appearance/styling-apperance-modifying-default-styles"
+    type: Permanent
+-
+    from: "^/controls/radtabcontrol/howto/how-to-add-new-tab-item$"
+    to: "/controls/radtabcontrol/populating-with-tabs/populating-add-remove-tabs"
+    type: Permanent
+-
+    from: "^/controls/radgridview/style-selectors/overview$"
+    to: "https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.styleselector?redirectedfrom=MSDN%26view=netframework-4.8"
+    type: Permanent
+-
+    from: "^/controls/radcontextmenu/populating-with-data/overview$"
+    to: "/controls/radcontextmenu/populating-with-data/data-binding-support-overview"
+    type: Permanent
+-
+    from: "^/controls/radcombobox/howto/grid-like-dropdown$"
+    to: "/controls/radmulticolumncombobox/overview"
+    type: Permanent
+-
+    from: "^/controls/radgridview/columns/overview$"
+    to: "/controls/radgridview/columns/defining-columns"
+    type: Permanent
+-
+    from: "^/controls/radtreeview/features/hierarchical-data-templates$"
+    to: "/controls/radtreeview/populating-with-data/hierarchical-data-templates"
+    type: Permanent
+-
+    from: "^/controls/raddataservicedatasource/paging/paging-through-raddatapager$"
+    to: "/controls/raddataservicedatasource/getting-started/creating-the-data-bound-controls"
+    type: Permanent
+-
+    from: "^/controls/radgridview/features/overview-data-binding$"
+    to: "/controls/radgridview/populating-with-data/configuring-the-databindings"
+    type: Permanent
+-
+    from: "^/controls/radnumericupdown/howto/events$"
+    to: "/controls/radnumericupdown/events"
+    type: Permanent
+-
+    from: "^/controls/radgridview/how-to/modify-foreground-row$"
+    to: "/knowledge-base/kb-gridview-modify-foreground-selected-hovered-row"
+    type: Permanent
+-
+    from: "^/controls/raddatetimepicker/styles-and-templates/styling-template-structure$"
+    to: "/controls/raddatetimepicker/styles-and-templates/styling-overview"
+    type: Permanent
+-
+    from: "^/controls/radtreeview/styles-and-templates/tesmplates-structure$"
+    to: "/controls/radtreeview/styles-and-templates/styling-and-appearance-overview2"
+    type: Permanent
+-
+    from: "^/controls/radcombobox/styles-and-templates/combobox-styling-and-appearance-overview$"
+    to: "/controls/radcombobox/styles-and-templates/combobox-styles-templates-overview"
+    type: Permanent
+-
+    from: "^/controls/radcombobox/styles-and-templates/styles-templates-modifying-brushes$"
+    to: "/controls/radcombobox/radcombobox-getting-started"
+    type: Permanent
+-
+    from: "^/controls/radcombobox/styles-and-templates/styles-templates-controlling-appearance$"
+    to: "/controls/radcombobox/radcombobox-getting-started"
+    type: Permanent
+-
+    from: "^/controls/radgridview/troubleshooting/performance$"
+    to: "/controls/radgridview/performance-tips-tricks"
+    type: Permanent
+-
+    from: "^/controls/radtoolbar/howto/toolbar-databinding$"
+    to: "/controls/radtoolbar/howto/use-mvvm-in-radtoolbar"
+    type: Permanent
+-
+    from: "^/integration/visual-studio-extensions/for-silverlight-vs-extensions-overview$"
+    to: "/integration/visual-studio-extensions/vs-extensions-overview"
+    type: Permanent
+-
+    from: "^/integration/visual-studio-extensions/for-wpf-vs-extensions-overview-wpf$"
+    to: "/integration/visual-studio-extensions/vs-extensions-overview"
+    type: Permanent
+-
+    from: "^/controls/radmenu/styles-and-templates/templates-structure$"
+    to: "/controls/radmenu/styles-and-templates/overview"
+    type: Permanent
+-
+    from: "^/controls/radupload/features/working-with-radupload$"
+    to: "/controls/radupload/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radupload/changes-and-backwards-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/silverlight/release-history"
+    type: Permanent
+-
+    from: "^/controls/radupload/changes-and-backwards-compatibility/changes-backward-compatibility$"
+    to: "/controls/radupload/overview"
+    type: Permanent
+-
+    from: "^/controls/radwindow/styles-and-templates/overview$"
+    to: "/controls/radwindow/styles-and-templates/styling-the-radwindow"
+    type: Permanent
+-
+    from: "^/controls/radwindow/styles-and-templates/template-structure$"
+    to: "/controls/radwindow/styles-and-templates/styling-the-radwindow"
+    type: Permanent
+-
+    from: "^/controls/radwindow/styles-and-templates/howto-change-header-background$"
+    to: "/knowledge-base/kb-window-change-header-background"
+    type: Permanent
+-
+    from: "^/controls/radchartview/series/cartesianchart-series/scatter-series/scatterseries$"
+    to: "/controls/radchartview/series/cartesianchart-series/point-series/scatterpointseries"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styles-appearance-colorizing-metro-theme$"
+    to: "/styling-and-appearance/themes-suite/windows8"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-crystal-theme$"
+    to: "/styling-and-appearance/themes-suite/crystal"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-fluent-theme$"
+    to: "/styling-and-appearance/themes-suite/fluent"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-green-theme$"
+    to: "/styling-and-appearance/themes-suite/green"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-list-of-themes$"
+    to: "/styling-and-appearance/themes-suite/available-themes"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-material-theme$"
+    to: "/styling-and-appearance/themes-suite/material"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-office2013-theme$"
+    to: "/styling-and-appearance/themes-suite/office2013"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-office2016-theme$"
+    to: "/styling-and-appearance/themes-suite/office2016"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-office2016touch-theme$"
+    to: "/styling-and-appearance/themes-suite/office2016touch"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-office2019-theme$"
+    to: "/styling-and-appearance/themes-suite/office2019"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-visualstudio2013-theme$"
+    to: "/styling-and-appearance/themes-suite/visualstudio2013"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-appearance-visualstudio2019-theme$"
+    to: "/styling-and-appearance/themes-suite/visualstudio2019"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/common-styling-color-theme-generator$"
+    to: "/styling-and-appearance/themes-suite/color-theme-generator"
+    type: Permanent
+-
+    from: "^/controls/radtooltip/how-to/callout-tooltip$"
+    to: "/controls/radcallout/how-to/tooltip-integration"
+    type: Permanent
+-
+    from: "^/controls/radlistbox/features/listboxdragdropbehavior$"
+    to: "/controls/dragdropmanager/behaviors/listboxdragdropbehavior"
+    type: Permanent
+-
+    from: "^/controls/radgridview/commands/implementation$"
+    to: "/controls/radgridview/commands/overview"
+    type: Permanent
+-
+    from: "^/controls/radexpander/styles-and-templates/styles-templates-template-structure$"
+    to: "/controls/radexpander/expander-getting-started"
+    type: Permanent
+-
+    from: "^/controls/radgridview/troubleshooting/nested-grouping$"
+    to: "/controls/radgridview/performance-tips-tricks"
+    type: Permanent
+-
+    from: "^/controls/radimageeditor/features/commands-and-tools$"
+    to: "/controls/radimageeditor/features/commands"
+    type: Permanent
+-
+    from: "^/controls/radtreeview/features/drag-and-drop$"
+    to: "/controls/radtreeview/features/dragdrop/drag-and-drop"
+    type: Permanent
+-
+    from: "^/controls/radtabcontrol/styling-and-appearance$"
+    to: "/controls/radtabcontrol/appearance/customizing-tabitems"
+    type: Permanent
+-
+    from: "^/controls/radtabcontrol/templating$"
+    to: "/controls/radtabcontrol/appearance/customizing-tabitems"
+    type: Permanent
+-
+    from: "^/controls/raddataservicedatasource/crud/crud$"
+    to: "/controls/raddataservicedatasource/crud"
+    type: Permanent
+-
+    from: "^/controls/radfluidcontentcontrol/fluidcontentcontrol-data-binding$"
+    to: "/controls/radfluidcontentcontrol/data-binding"
+    type: Permanent
+-
+    from: "^/controls/radfluidcontentcontrol/fluidcontentcontrol-events$"
+    to: "/controls/radfluidcontentcontrol/events"
+    type: Permanent
+-
+    from: "^/controls/radfluidcontentcontrol/fluidcontentcontrol-getting-started$"
+    to: "/controls/radfluidcontentcontrol/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radfluidcontentcontrol/fluidcontentcontrol-integration-examples$"
+    to: "/controls/radfluidcontentcontrol/integration-examples"
+    type: Permanent
+-
+    from: "^/controls/radfluidcontentcontrol/fluidcontentcontrol-overview$"
+    to: "/controls/radfluidcontentcontrol/overview"
+    type: Permanent
+-
+    from: "^/controls/radfluidcontentcontrol/fluidcontentcontrol-transitions$"
+    to: "/controls/radfluidcontentcontrol/transitions"
+    type: Permanent
+-
+    from: "^/devtools/silverlight/controls/radbarcode/(.*)$"
+    to: "/devtools/silverlight/controls/radbarcodelegacy/$1"
+    type: Permanent
+-
+    from: "^/controls/radgridview/filtering/how-to/howto-filter-on-a-property-different-from-the-displayed-one$"
+    to: "/controls/radgridview/filtering/basic#filtermemberpath"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/themes-suite/color-theme-generator$"
+    to: "/styling-and-appearance/color-theme-generator"
+    type: Permanent
+-
+    from: "^/controls/raddatapager/styles-and-templates/(.*)$"
+    to: "/controls/raddatapager/appearance/customizing-appearance"
+    type: Permanent
+-
+    from: "^/controls/radscheduleview/changes-and-backwards-compatibility/(.*)$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radscheduleview/general-information/key-features$"
+    to: "/controls/radscheduleview/key-features"
+    type: Permanent
+-
+    from: "^/controls/radlistbox/changes-and-backwards-compatibility/changes$"
+    to: "/controls/radlistbox/overview"
+    type: Permanent
+-
+    from: "^/controls/radlistbox/styles-and-templates/customize-the-dragvisualprovider$"
+    to: "/controls/radlistbox/drag-and-drop/customize-the-dragvisualprovider"
+    type: Permanent
+-
+    from: "^/controls/radlistbox/how-to/group-items$"
+    to: "/controls/radlistbox/group-items"
+    type: Permanent
+-
+    from: "^/controls/radcalculator/style-and-templates/(.*)$"
+    to: "/controls/radcalculator/overview"
+    type: Permanent
+-
+    from: "^/controls/radcalculator/changes-and-backward-compatibility/(.*)$"
+    to: "/controls/radcalculator/overview"
+    type: Permanent
+-
+    from: "^/controls/radcalculator/features/radcalculator_memoryfunctionality$"
+    to: "/controls/radcalculator/memoryfunctionality"
+    type: Permanent
+-
+    from: "^/controls/radcalculator/features/clearfunctionality$"
+    to: "/controls/radcalculator/clearfunctionality"
+    type: Permanent
+-
+    from: "^/controls/radcalculator/features/keyboardsupport$"
+    to: "/controls/radcalculator/keyboardsupport"
+    type: Permanent
+-
+    from: "^/controls/radcalculator/getting-started/gettingstarted$"
+    to: "/controls/radcalculator/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radcalculator/getting-started/radcalculatorpicker-gettingstarted$"
+    to: "/controls/radcalculator/calculatorpicker"
+    type: Permanent
+-
+    from: "^/controls/radcolorpicker/changes-and-backwards-compatibility/(.*)$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radcolorpicker/overview/structure$"
+    to: "/controls/radcolorpicker/structure"
+    type: Permanent
+-
+    from: "^/controls/radcolorpicker/overview/getting-started$"
+    to: "/controls/radcolorpicker/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radcolorpicker/styling-and-appearance/overview$"
+    to: "/controls/radcolorpicker/overview"
+    type: Permanent
+-
+    from: "^/controls/radcolorpicker/howto/how-to-set-custom-content$"
+    to: "/controls/radcolorpicker/appearance"
+    type: Permanent
+-
+    from: "^/controls/radcolorpicker/styling-and-appearance/appearance$"
+    to: "/controls/radcolorpicker/appearance"
+    type: Permanent
+-
+    from: "^/controls/radcolorpicker/howto/binding-to-object$"
+    to: "/controls/radcolorpicker/data-binding"
+    type: Permanent
+-
+    from: "^/controls/radbreadcrumb/changes-and-backward-compatibility/(.*)$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radbreadcrumb/events/overview$"
+    to: "/controls/radbreadcrumb/events"
+    type: Permanent
+-
+    from: "^/controls/radbreadcrumb/styling-and-templates/(.*)$"
+    to: "/controls/radbreadcrumb/overview"
+    type: Permanent
+-
+    from: "^/getting-started/installation/installation-installing-lib$"
+    to: "/getting-started/installation/preview-releases"
+    type: Permanent
+-
+    from: "^/controls/radgridview/columns/how-to/exclude-column-from-search$"
+    to: "/controls/radgridview/features/search-as-you-type"
+    type: Permanent
+-
+    from: "^/common-information/consuming-data/wcf-service$"
+    to: "/common-information/consuming-data/ado-net-data-service"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/troubleshooting/common-styles-appearance-known-issues$"
+    to: "/knowledge-base"
+    type: Permanent
+-
+    from: "^/styling-and-appearance/troubleshooting/common-styles-appearance-metro-theme$"
+    to: "/knowledge-base/kb-common-windows8-brushes"
+    type: Permanent
+-
+    from: "^/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-vs$"
+    to: "https://learn.microsoft.com/en-us/visualstudio/ide/using-intellisense?view=vs-2022"
+    type: Permanent
+-
+    from: "^/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration$"
+    to: "/getting-started/telerik-namespace-declaration"
+    type: Permanent
+-
+    from: "^/getting-started/installation/for-wpf-vs-extensions-releases$"
+    to: "/getting-started/installation/distributions"
+    type: Permanent
+-
+    from: "^/controls/radentityframeworkdatasource/entityframework-changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radpdfprocessing/overview$"
+    to: "/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/controls/radspreadprocessing/overview$"
+    to: "/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/controls/radspreadstreamprocessing/overview$"
+    to: "/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/controls/radwordsprocessing/overview$"
+    to: "/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/controls/radziplibrary/overview$"
+    to: "/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/controls/radgridview/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radgridview/changes-and-backward-compatibility/backward-compatibility$"
+    to: "/controls/radgridview/breaking-changes"
+    type: Permanent
+-
+    from: "^/controls/raddocking/styles-and-templates/templates-structure$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/raddocking/styles-and-templates/templating-the-raddocking$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/raddocking/styles-and-templates/styling-overview$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/controls/raddocking/styles-and-templates/styling-controlling-appearance$"
+    to: "/controls/raddocking/styles-and-templates/styling-the-radpane"
+    type: Permanent
+-
+    from: "^/getting-started/telerik-application-lifecycle/vsx-setup-lifecyle$"
+    to: "/getting-started/first-steps-nuget"
+    type: Permanent
+-
+    from: "^/getting-started/telerik-application-lifecycle/msi-or-zip-setup-lifecyle$"
+    to: "/getting-started/first-steps-msi-or-zip"
+    type: Permanent
+-
+    from: "^/getting-started/telerik-application-lifecycle/nuget-application-lifecyle$"
+    to: "/getting-started/first-steps-nuget"
+    type: Permanent
+-
+    from: "^/getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control$"
+    to: "/getting-started/first-steps-nuget"
+    type: Permanent
+-
+    from: "^/controls/radcombobox/populating-with-data/binding-support-overview$"
+    to: "/controls/radcombobox/populating-with-data/binding-to-object"
+    type: Permanent
+-
+    from: "^/controls/radcombobox/populating-with-data/in-code-behind$"
+    to: "/controls/radcombobox/populating-with-data/declaratively"
+    type: Permanent
+-
+    from: "^/controls/radcombobox/populating-with-data/overview$"
+    to: "/controls/radcombobox/populating-with-data/declaratively"
+    type: Permanent
+-
+    from: "^/controls/radtreeview/changes-and-backwards-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radtreeview/changes-and-backwards-compatibility/backward-compatibility$"
+    to: "/controls/radtreeview/breaking-changes"
+    type: Permanent
+-
+    from: "^/controls/radbuttons/changes-and-backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radbuttons/styles-and-templates$"
+    to: "/controls/radbuttons/customizing-buttons-appearance"
+    type: Permanent
+-
+    from: "^/controls/radribbonview/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/netcore/project-converter$"
+    to: "/netcore/overview"
+    type: Permanent
+-
+    from: "^/controls/radgridview/performance/grouped$"
+    to: "/controls/radgridview/performance-tips-tricks"
+    type: Permanent
+-
+    from: "^/controls/radgridview/performance/tips-tricks$"
+    to: "/controls/radgridview/performance-tips-tricks"
+    type: Permanent
+-
+    from: "^/controls/radgridview/performance/useful-links$"
+    to: "/controls/radgridview/performance-tips-tricks"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/getting-started/getting-started$"
+    to: "/controls/radspreadsheet/getting-started"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/getting-started/spreadsheet-ui$"
+    to: "/controls/radspreadsheet/spreadsheet-ui"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/getting-started/visual-structure$"
+    to: "/controls/radspreadsheet/visual-structure"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radspreadsheet/changes-and-backward-compatibility/backward-compatibility$"
+    to: "/controls/radspreadsheet/breaking-changes"
+    type: Permanent
+-
+    from: "^/controls/radslider/changes-and-backwards-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radslider/styling-and-appearance/styling-overview$"
+    to: "/controls/radslider/customizing-styles"
+    type: Permanent
+-
+    from: "^/controls/radslider/styling-and-appearance/template-structure$"
+    to: "/controls/radslider/customizing-styles"
+    type: Permanent
+-
+    from: "^/controls/radslider/events/overview$"
+    to: "/controls/radslider/events"
+    type: Permanent
+-
+    from: "^/controls/radslider/howto/customize-control-template$"
+    to: "/controls/radslider/customizing-styles"
+    type: Permanent
+-
+    from: "^/controls/radslider/howto/tick-templateselector$"
+    to: "/controls/radslider/customizing-styles"
+    type: Permanent
+-
+    from: "^/controls/radslider/callout-tooltip$"
+    to: "/controls/radcallout/how-to/slider-tooltip-integration"
+    type: Permanent
+-
+    from: "^/controls/raddatapager/features/raddapager-paging-essentials$"
+    to: "/controls/raddatapager/datapager-overview"
+    type: Permanent
+-
+    from: "^/controls/radtoolbar/changes-and-backwards-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radbarcode/oldbarcode/(.*)$"
+    to: "/controls/radbarcode/barcode-overview"
+    type: Permanent
+-
+    from: "^/controls/radpersistenceframework/changes-and-backward-compatibility/(.*)$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/controls/radrichtextbox/changes-and-backward-compatibility/backward-compatibility$"
+    to: "/controls/radrichtextbox/breaking-changes"
+    type: Permanent
+-
+    from: "^/controls/radrichtextbox/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^/licensing/license-file$"
+    to: "/knowledge-base/kb-installation-license-licx-file"
+    type: Permanent
+-
+    from: "^/licensing/personal-data-collection$"
+    to: "https://www.progress.com/legal/privacy-policy"
+    type: Permanent
+-
+    from: "^/licensing/license-agreement$"
+    to: "https://www.telerik.com/purchase/license-agreement/wpf-dlw-s"
+    type: Permanent
+-
+    from: "^/controls/radrichtextbox/styles-and-templates/(.*)$"
+    to: "/styling-and-appearance/styling-apperance-editing-control-templates"
+    type: Permanent
+-
+    from: "^/getting-started/first-steps-msi-or-zip$"
+    to: "/getting-started/first-steps-nuget"
+    type: Permanent
+-
+    from: "^/upgrade/installation-upgrading-from-trial-to-developer-license-wpf$"
+    to: "/getting-started/licensing/installing-license-key"
+    type: Permanent
+-
+    from: "^/upgrade/upgrade-migrate-to-net$"
+    to: "/getting-started/upgrade-migrate-to-net"
+    type: Permanent
+-
+    from: "^/controls/radgridview/how-to/enable-horiz-vertic-scrollbar$"
+    to: "/controls/radgridview/overview2"
+    type: Permanent
+-
+    from: "^/controls/radmaskedinput/migrating$"
+    to: "/controls/radmaskedinput/overview"
+    type: Permanent
+-
+    from: "^/getting-started/first-steps$"
+    to: "/getting-started/first-steps-nuget"
+    type: Permanent
+- 
+    from: "^/radpdfprocessing/(?!overview(?:\\.html)?)(.*)$"
+    to: "http://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/$1"
+    type: Permanent
+- 
+    from: "^/radwordsprocessing/(?!overview(?:\\.html)?)(.*)$"
+    to: "http://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/$1"
+    type: Permanent
+- 
+    from: "^/radspreadprocessing/(?!overview(?:\\.html)?)(.*)$"
+    to: "http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/$1"
+    type: Permanent
+- 
+    from: "^/radziplibrary/(?!overview(?:\\.html)?)(.*)$"
+    to: "http://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/$1"
+    type: Permanent
+-
+    from: "^/controls/raddocking/features/save-load-layout$"
+    to: "/controls/raddocking/features/save-load-layout/overview"
+    type: Permanent
+- 
+    from: "^/controls/raddocking/features/save-load-layout\\.html$"
+    to: "/controls/raddocking/features/save-load-layout/overview"
+    type: Permanent    
+-
+    from: "^controls/radtreeview/populating-with-data/radtreeview-features-load-on-demand$"
+    to: "/controls/radtreeview/features/load-on-demand"
+    type: Permanent
+-
+    from: "^data-binding/common-overview$"
+    to: "/introduction"
+    type: Permanent
+-
+    from: "^patterns-and-practices/event-to-command/eventtocommand-blend$"
+    to: "/common-event-to-command-behavior"
+    type: Permanent
+-
+    from: "^styling-and-appearance/stylemanager/creating-a-custom-theme/common-styling-apperance-themes-custom-theme-project-telerik-approach$"
+    to: "/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf"
+    type: Permanent
+-
+    from: "^controls/radexpander/overview/expander-getting-started$"
+    to: "/controls/radexpander/expander-getting-started"
+    type: Permanent
+-
+    from: "^controls/radgridview/clipboard/gridview-copying$"
+    to: "/controls/radgridview/clipboard/copying"
+    type: Permanent
+-
+    from: "^controls/radgridview/clipboard/gridview-pasting$"
+    to: "/controls/radgridview/clipboard/pasting"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/composite-filter-descriptors$"
+    to: "/controls/radgridview/filtering/programmatic#compositefilterdescriptor"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/faq/gridview-dataformatstring-and-filtering$"
+    to: "/controls/radgridview/filtering/faq/dataformatstring-and-filtering"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/faq/gridview-datetime-filtering$"
+    to: "/controls/radgridview/filtering/faq/datetime-filtering"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/faq/gridview-ivalueconverter-and-filtering$"
+    to: "/controls/radgridview/filtering/faq/ivalueconverter-and-filtering"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/faq/gridview-stackoverflow-exception$"
+    to: "/controls/radgridview/filtering/faq/stackoverflow-exception"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/basic-filtering2$"
+    to: "/controls/radgridview/filtering/basic"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/gridview-not-all-values-shown-filtering$"
+    to: "/controls/radgridview/filtering/how-to/howto-display-all-distinct-values"
+    type: Permanent
+-
+    from: "^controls/radgridview/grouping/how-to/gridview-generic-descriptor$"
+    to: "/controls/radgridview/grouping/how-to/generic-descriptor"
+    type: Permanent
+-
+    from: "^controls/radgridview/grouping/how-to/gridview-modify-grouptemplates$"
+    to: "/controls/radgridview/grouping/how-to/modify-grouptemplates"
+    type: Permanent
+-
+    from: "^controls/radgridview/row-details/how-to/gridview-display-window$"
+    to: "/controls/radgridview/row-details/how-to/display-window"
+    type: Permanent
+-
+    from: "^controls/radgridview/row-details/how-to/gridview-find-control-row-details$"
+    to: "/controls/radgridview/row-details/how-to/find-control-row-details"
+    type: Permanent
+-
+    from: "^controls/radgridview/selection/how-to/gridview-unfocused-state$"
+    to: "/controls/radgridview/selection/how-to/unfocused-state"
+    type: Permanent
+-
+    from: "^controls/radgridview/sorting/how-to/gridview-generic-descriptor$"
+    to: "/controls/radgridview/sorting/how-to/generic-descriptor"
+    type: Permanent
+-
+    from: "^controls/radgridview/troubleshooting/gridview-styling-custom-header$"
+    to: "/controls/radgridview/troubleshooting/styling-custom-header"
+    type: Permanent
+-
+    from: "^controls/radoutlookbar/general-information/visual-structure$"
+    to: "/controls/radoutlookbar/visual-structure"
+    type: Permanent
+-
+    from: "^controls/radoutlookbar/getting-started/getting-started$"
+    to: "/controls/radoutlookbar/getting-started"
+    type: Permanent
+-
+    from: "^controls/radspreadsheet/getting-started/ui-what-is-radspreadsheet$"
+    to: "/controls/radspreadsheet/overview"
+    type: Permanent
+-
+    from: "^controls/radcolorpicker/features/colorselector-getting-started$"
+    to: "/controls/radcolorpicker/features/radcolorselector/colorselector-populating"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/how-to/howto-clear-all-filters$"
+    to: "/controls/radgridview/filtering/programmatic#clearing-multiple-column-filters"
+    type: Permanent
+-
+    from: "^controls/radtilelist/howto/modifying-tilelist-view$"
+    to: "/controls/radtilelist/howto/modifying-view"
+    type: Permanent
+-
+    from: "^controls/radtimeline/features/howto-control-vertical-position-of-timeline-items$"
+    to: "/controls/radtimeline/features/howto-control-vertical-position-of-items"
+    type: Permanent
+-
+    from: "^controls/radrichtextbox/import-export/radrichtextbox-features-import-export-settings$"
+    to: "/controls/radrichtextbox/import-export/features-import-export"
+    type: Permanent
+-
+    from: "^controls/radmap/features/geocode$"
+    to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
+    type: Permanent
+-
+    from: "^controls/radmap/features/search$"
+    to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
+    type: Permanent
+-
+    from: "^controls/radmap/features/routing$"
+    to: "/controls/radmap/changes-and-backward-compatibility/changes#r2-2017"
+    type: Permanent
+-
+    from: "^controls/radmap/features/providers/bing-map$"
+    to: "/controls/radmap/features/providers/bing-rest-map-provider/bing-map-rest"
+    type: Permanent
+-
+    from: "^controls/radchart/features/796308db-6789-4f88-8c96-7d29a8f49e8b$"
+    to: "/controls/radchart/overview"
+    type: Permanent
+-
+    from: "^controls/radchart/styles-and-templates/b3d82ec6-5928-4f61-a4ee-7a58bce31bca$"
+    to: "/controls/radchart/overview"
+    type: Permanent
+-
+    from: "^controls/radchart/features/bf9585df-c6c5-440b-9445-9c321ea345a8$"
+    to: "/controls/radchart/overview"
+    type: Permanent
+-
+    from: "^controls/raddiagram/diagramextensions-viewmodels/5a2d6cbf-4f5c-466c-baec-19360d30803d$"
+    to: "/controls/raddiagram/diagramextensions-viewmodels/overview"
+    type: Permanent
+-
+    from: "^controls/raddiagram/extensions/settingspane$$"
+    to: "/controls/raddiagram/extensions/settingspane/settingspane_overview"
+    type: Permanent
+-
+    from: "^controls/raddiagram/raddiagram/styles-and-templates/a0973f36-f74e-44df-ac8f-d124c3e948aa$"
+    to: "/controls/raddiagram/styles-and-templates/raddiagrams-styling-overview"
+    type: Permanent
+-
+    from: "^controls/radgridview/changes-and-backward-compatibility/74308197-b2e6-4a20-9390-04937f1d845e$"
+    to: "/controls/radgridview/changes-and-backward-compatibility/backward-compatibility"
+    type: Permanent
+-
+    from: "^api/html/gridview-data-editors.htm$"
+    to: "/controls/radgridview/overview"
+    type: Permanent
+-
+    from: "^controls/radribbonview/how-to/f2af28eb-a2e2-4e27-b5cf-419888d9e25e$"
+    to: "/controls/radribbonview/overview"
+    type: Permanent
+-
+    from: "^controls/radfiledialogs/radopenfiledialog$"
+    to: "/controls/radfiledialogs/dialog-controls/radopenfiledialog"
+    type: Permanent
+-
+    from: "^controls/radfiledialogs/radopenfolderdialog$"
+    to: "/controls/radfiledialogs/dialog-controls/radopenfolderdialog"
+    type: Permanent
+-
+    from: "^controls/radfiledialogs/radsavefiledialog$"
+    to: "/controls/radfiledialogs/dialog-controls/radsavefiledialog"
+    type: Permanent
+-
+    from: "^controls/radtransitioncontrol/overview$"
+    to: "/controls/radtransitioncontrol/radtransition-overview"
+    type: Permanent
+-
+    from: "^controls/radbreadcrumb/overview$"
+    to: "/controls/radbreadcrumb/overvew"
+    type: Permanent
+-
+    from: "^controls/raddocking/overview$$"
+    to: "/controls/raddocking/overview2"
+    type: Permanent
+-
+    from: "^controls/radcarousel/overview$$"
+    to: "/controls/radcarousel/carousel-overview"
+    type: Permanent
+-
+    from: "^controls/radcontextmenu/overview$"
+    to: "/controls/radcontextmenu/contextmenu-overview1"
+    type: Permanent
+-
+    from: "^controls/radtabcontrol/overview$$"
+    to: "/controls/radtabcontrol/overview2"
+    type: Permanent
+-
+    from: "^controls/radtreeview/overview$$"
+    to: "/controls/radtreeview/overview2"
+    type: Permanent
+-
+    from: "^controls/raddatafilter/overview$"
+    to: "/controls/raddatafilter/datafilter-overview"
+    type: Permanent
+-
+    from: "^controls/raddatapager/overview$"
+    to: "/controls/raddatapager/datapager-overview"
+    type: Permanent
+-
+    from: "^controls/raddomaindatasource/overview$"
+    to: "/controls/raddomaindatasource/dds-overview"
+    type: Permanent
+-
+    from: "^controls/radentityframeworkdatasource/overview$"
+    to: "/controls/radentityframeworkdatasource/entityframework-overview"
+    type: Permanent
+-
+    from: "^controls/radgridview/overview$$"
+    to: "/controls/radgridview/overview2"
+    type: Permanent
+-
+    from: "^controls/raddiagram/diagram-items/raddiagrams-features-shapes$"
+    to: "/controls/raddiagram/diagram-items/shape/raddiagrams-features-shapes"
+    type: Permanent
+-
+    from: "^styling-and-appearance/styling-apperance-themes-runtime$"
+    to: "/styling-and-appearance/how-to/styling-apperance-themes-runtime"
+    type: Permanent
+-
+    from: "^styling-and-appearance/styling-apperance-switching-themes-design-time$"
+    to: "/styling-and-appearance/how-to/styling-apperance-switching-themes-design-time"
+    type: Permanent
+-
+    from: "^styling-and-appearance/styling-apperance-custom-styles-themes-runtime$"
+    to: "/styling-and-appearance/how-to/styling-apperance-custom-styles-themes-runtime"
+    type: Permanent
+-
+    from: "^styling-and-appearance/styling-apperance-switching-icons-at-runtime$"
+    to: "/styling-and-appearance/how-to/styling-apperance-switching-icons-at-runtime"
+    type: Permanent
+-
+    from: "^styling-and-appearance/common-styling-appearance-office2016-theme$"
+    to: "/styling-and-appearance/themes-suite/common-styling-appearance-office2016-theme"
+    type: Permanent
+-
+    from: "^styling-and-appearance/common-styles-appearance-colorizing-metro-theme$"
+    to: "/styling-and-appearance/themes-suite/common-styles-appearance-colorizing-metro-theme"
+    type: Permanent
+-
+    from: "^styling-and-appearance/common-styling-appearance-green-theme$"
+    to: "/styling-and-appearance/themes-suite/common-styling-appearance-green-theme"
+    type: Permanent
+-
+    from: "^styling-and-appearance/common-styling-appearance-office2013-theme$"
+    to: "/styling-and-appearance/themes-suite/common-styling-appearance-office2013-theme"
+    type: Permanent
+-
+    from: "^styling-and-appearance/common-styling-appearance-visualstudio2013-theme$"
+    to: "/styling-and-appearance/themes-suite/common-styling-appearance-visualstudio2013-theme"
+    type: Permanent
+-
+    from: "^styling-and-appearance/styling-apperance-themes-mscontrols$"
+    to: "/styling-and-appearance/how-to/styling-apperance-themes-mscontrols"
+    type: Permanent
+-
+    from: "^styling-and-appearance/styling-apperance-implicit-styles-overview$"
+    to: "/styling-and-appearance/styling-apperance-setting-a-theme-overview"
+    type: Permanent
+-
+    from: "^controls/radgridview/commands/eventtocommandbehavior$"
+    to: "/common-event-to-command-behavior"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/how-to/howto-clear-a-specific-column-filter$"
+    to: "/controls/radgridview/filtering/programmatic#clearing-a-single-column-filter"
+    type: Permanent
+-
+    from: "^controls/radcarousel/overview/carousel-overview$"
+    to: "/controls/radcarousel/carousel-overview"
+    type: Permanent
+-
+    from: "^controls/radcarousel/getting-started/carousel-getting-started$"
+    to: "/controls/radcarousel/carousel-getting-started"
+    type: Permanent
+-
+    from: "^controls/radbulletgraph/overview$"
+    to: "/controls/radbulletgraph/radbulletgraph_overview"
+    type: Permanent
+-
+    from: "^controls/radsparkline/overview$"
+    to: "/controls/radsparkline/radsparkline_overview"
+    type: Permanent
+-
+    from: "^controls/radsparkline/radsparkline_most_important_properties,_settings_and_elements$"
+    to: "/controls/radsparkline/features/radsparkline-features-indicators"
+    type: Permanent
+-
+    from: "^common-event-to-command-behavior$"
+    to: "/mvvm-helpers/common-event-to-command-behavior"
+    type: Permanent
+-
+    from: "^controls/raddatafilter/how-to/filter-radgridview$"
+    to: "/controls/raddatafilter/datafilter-getting-started#filter-radgridview"
+    type: Permanent
+-
+    from: "^common-blend-support$"
+    to: "/styling-and-appearance/stylemanager/common-styling-appearance-edit-control-templates-blend"
+    type: Permanent
+-
+    from: "^controls/radgridview/hierarchical-gridview/custom-hierarchies$"
+    to: "/controls/radgridview/row-details/overview"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/icolumn-filter-descriptors$"
+    to: "/controls/radgridview/filtering/programmatic"
+    type: Permanent
+-
+    from: "^controls/radgridview/filtering/how-to/howto-replace-the-default-filtering-control-with-your-own$"
+    to: "/controls/radgridview/filtering/custom-filtering-controls"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/export-xlsx$"
+    to: "/controls/radgridview/export/export-formats/export-xlsx"
+    type: Permanent
+-
+    from: "^controls/radpersistenceframework/overview$"
+    to: "/controls/radpersistenceframework/persistence-framework-overview"
+    type: Permanent
+-
+    from: "^controls/raddatavirtualization/overview$"
+    to: "/consuming-data/using-data-virtualization"
+    type: Permanent
+-
+    from: "^eqatec-analytics-application-integration$"
+    to: "/analytics/analytics-support"
+    type: Permanent
+-
+    from: "^xaml-vs-noxaml$"
+    to: "/styling-and-appearance/xaml-vs-noxaml"
+    type: Permanent
+-
+    from: "^what-is-new$"
+    to: "/https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^common-faq$"
+    to: "/getting-started/common-faq"
+    type: Permanent
+-
+    from: "^licensing/copyright$"
+    to: "/copyright"
+    type: Permanent
+-
+    from: "^analytics/(.*)$"
+    to: "/common-information/analytics/{R:1}"
+    type: Permanent
+-
+    from: "^consuming-data/(.*)$"
+    to: "/common-information/consuming-data/{R:1}"
+    type: Permanent
+-
+    from: "^mvvm-helpers/(.*)$"
+    to: "/common-information/mvvm-helpers/{R:1}"
+    type: Permanent
+-
+    from: "^troubleshooting/(.*)$"
+    to: "/common-information/troubleshooting/{R:1}"
+    type: Permanent
+-
+    from: "^visual-studio-extensions/(.*)$"
+    to: "/integration/visual-studio-extensions/{R:1}"
+    type: Permanent
+-
+    from: "^installation-and-deployment/installing-telerik-ui-on-your-computer/(.*)$"
+    to: "/getting-started/installation/{R:1}"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-an-application/(.*)$"
+    to: "/getting-started/adding-telerik-ui-to-an-application/{R:1}"
+    type: Permanent
+-
+    from: "^common-information/?$$"
+    to: "/common-information/coded-ui-support"
+    type: Permanent
+-
+    from: "^coded-ui-support$"
+    to: "/common-information/coded-ui-support"
+    type: Permanent
+-
+    from: "^personal-data-collection$"
+    to: "/licensing/personal-data-collection"
+    type: Permanent
+-
+    from: "^common-command-support$"
+    to: "/common-information/common-command-support"
+    type: Permanent
+-
+    from: "^common-export-support$"
+    to: "/common-information/common-export-support"
+    type: Permanent
+-
+    from: "^common-localization$"
+    to: "/common-information/common-localization"
+    type: Permanent
+-
+    from: "^common-partial-trust$"
+    to: "/common-information/common-partial-trust"
+    type: Permanent
+-
+    from: "^common-routed-events-support$"
+    to: "/common-information/common-routed-events-support"
+    type: Permanent
+-
+    from: "^common-ui-automation$"
+    to: "/common-information/common-ui-automation"
+    type: Permanent
+-
+    from: "^common-visual-tree-helpers$"
+    to: "/common-information/common-visual-tree-helpers"
+    type: Permanent
+-
+    from: "^section_508_compliance$"
+    to: "/common-information/section_508_compliance"
+    type: Permanent
+-
+    from: "^smarttags-overview$"
+    to: "/common-information/smarttags-overview"
+    type: Permanent
+-
+    from: "^touch-support$"
+    to: "/common-information/touch-support"
+    type: Permanent
+-
+    from: "^upgrade-api-analyzer$"
+    to: "/common-information/upgrade-api-analyzer"
+    type: Permanent
+-
+    from: "^upgrade-api-analyzer-sl$"
+    to: "/common-information/upgrade-api-analyzer-sl"
+    type: Permanent
+-
+    from: "^installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies$"
+    to: "/common-information/installation-installing-dependencies"
+    type: Permanent
+-
+    from: "^installation-and-deployment/deploying-telerik-ui/installation-installing-dependencies-wpf$"
+    to: "/common-information/installation-installing-dependencies-wpf"
+    type: Permanent
+-
+    from: "^installation-and-deployment/deploying-telerik-ui/protecting-telerik-assembly$"
+    to: "/licensing/protecting-telerik-assembly"
+    type: Permanent
+-
+    from: "^installation-and-deployment/installation-system-requirements$"
+    to: "/getting-started/installation/installation-system-requirements"
+    type: Permanent
+-
+    from: "^installation-and-deployment/installation-system-requirements-wpf$"
+    to: "/getting-started/installation/installation-system-requirements-wpf"
+    type: Permanent
+-
+    from: "^installation-and-deployment/download-product-files-wpf$"
+    to: "/getting-started/installation/download-product-files-wpf"
+    type: Permanent
+-
+    from: "^installation-and-deployment/download-product-files$"
+    to: "/getting-started/installation/download-product-files"
+    type: Permanent
+-
+    from: "^installation-and-deployment/installing-wpf-demos$"
+    to: "/getting-started/installation/installing-wpf-demos"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox-wpf$"
+    to: "/integration/installation-adding-to-vs-toolbox"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2008-toolbox$"
+    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox-wpf$"
+    to: "/integration/installation-adding-to-vs-toolbox"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2010-toolbox$"
+    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox-wpf$"
+    to: "/integration/installation-adding-to-vs-toolbox"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2012-toolbox$"
+    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox-wpf$"
+    to: "/integration/installation-adding-to-vs-toolbox"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2013-toolbox$"
+    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox-silverlight$"
+    to: "/integration/installation-adding-to-vs-toolbox-silverlight"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2015-toolbox$"
+    to: "/integration/installation-adding-to-vs-toolbox"
+    type: Permanent
+-
+    from: "^installation-and-deployment/adding-telerik-ui-to-visual-studio-toolbox/installation-adding-to-vs-2017-toolbox$"
+    to: "/integration/installation-adding-to-vs-toolbox"
+    type: Permanent
+-
+    from: "^for-more-help$"
+    to: "/introduction"
+    type: Permanent
+-
+    from: "^installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license$"
+    to: "/upgrade/installation-upgrading-from-trial-to-developer-license"
+    type: Permanent
+-
+    from: "^installation-and-deployment/upgrading-instructions/installation-upgrading-from-trial-to-developer-license-wpf$"
+    to: "/upgrade/installation-upgrading-from-trial-to-developer-license-wpf"
+    type: Permanent
+-
+    from: "^visual-studio-templates$"
+    to: "/integration/visual-studio-templates"
+    type: Permanent
+-
+    from: "^sdk-examples$"
+    to: "/developer-focused-examples/sdk-examples"
+    type: Permanent
+-
+    from: "^sdk-samples-browser$"
+    to: "/developer-focused-examples/sdk-samples-browser"
+    type: Permanent
+-
+    from: "^controls/radbulletgraph/radbulletgraph_properties$"
+    to: "/controls/radbulletgraph/getting-started"
+    type: Permanent
+-
+    from: "^getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS-wpf$"
+    to: "/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-using-intellisense-VS"
+    type: Permanent
+-
+    from: "^getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration-wpf$"
+    to: "/getting-started/adding-telerik-ui-to-an-application/installation-adding-application-namespace-declaration"
+    type: Permanent
+-
+    from: "^getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control-wpf$"
+    to: "/getting-started/adding-telerik-ui-to-an-application/installation-adding-to-application-create-application-and-adding-control"
+    type: Permanent
+-
+    from: "^controls/radgridview/how-to/drag-drop-scenario$"
+    to: "/controls/dragdropmanager/how-to/howto-draganddrop-within-radgridview"
+    type: Permanent
+-
+    from: "^controls/radgridview/how-to/row-reorder$"
+    to: "/controls/dragdropmanager/how-to/howto-draganddrop-within-radgridview"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/export$"
+    to: "/controls/radgridview/export/generic/export"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/async$"
+    to: "/controls/radgridview/export/generic/async"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/export-events$"
+    to: "/controls/radgridview/export/events/elementexporting-elementexported-todocument"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/export-formats/export-xlsx$"
+    to: "/controls/radgridview/export/excel/export-xlsx"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/export-formats/export-pdf$"
+    to: "/controls/radgridview/export/pdf/export-pdf"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/export-formats/excelml$"
+    to: "/controls/radgridview/export/how-to/style-exported-excelml-documents"
+    type: Permanent
+-
+    from: "^controls/radgridview/export/export-formats/html$"
+    to: "/controls/radgridview/export/how-to/style-exported-html-documents"
+    type: Permanent
+-
+    from: "^getting-started/installation/installation-installing-hotfix-wpf$"
+    to: "/getting-started/installation/installation-installing-lib"
+    type: Permanent
+-
+    from: "^getting-started/installation/installation-installing-hotfix$"
+    to: "/getting-started/installation/installation-installing-lib"
+    type: Permanent
+-
+    from: "^getting-started/installation/installation-installing-from-zip$$"
+    to: "/getting-started/installation/installation-installing-from-zip-wpf"
+    type: Permanent
+-
+    from: "^controls/radgridview/columns/how-to/styling-checkboxcolumn$$"
+    to: "/controls/radgridview/styles-and-templates/columns-styling-checkboxcolumn"
+    type: Permanent
+-
+    from: "^controls/radrichtextbox/document-elements/features-tables$$"
+    to: "/controls/radrichtextbox/document-elements/table/table-overview"
+    type: Permanent
+-
+    from: "^controls/radrichtextbox/features/repeat-table-header-row$$"
+    to: "/controls/radrichtextbox/document-elements/table/repeat-table-header-row"
+    type: Permanent
+-
+    from: "^controls/radpivotgrid/radpivotfieldlist$"
+    to: "/controls/radpivotgrid/features/pivotfieldlist"
+    type: Permanent    
+-
+    from: "^controls/radchartview/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/radchartview/changes-and-backward-compatibility/changes-backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/raddiagram/changes-and-backwards-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/raddiagram/changes-and-backwards-compatibility/backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/radgridview/styles-and-templates/templates-structure$"
+    to: "/controls/radgridview/overview2"
+    type: Permanent 
+-
+    from: "^controls/radtreelistview/styles-and-templates/overview$"
+    to: "/controls/radtreelistview/overview"
+    type: Permanent 
+-
+    from: "^controls/radtreelistview/styles-and-templates/templates-structure$"
+    to: "/controls/radtreelistview/overview"
+    type: Permanent 
+-
+    from: "^controls/radtreelistview/styles-and-templates/styling-validation-tooltips$"
+    to: "/controls/radtreelistview/overview"
+    type: Permanent
+-
+    from: "^controls/radtreelistview/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent
+-
+    from: "^controls/radtreelistview/changes-and-backward-compatibility/radtreeliestview-backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    type: Permanent

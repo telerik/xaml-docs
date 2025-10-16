@@ -36,9 +36,9 @@ Once you've extracted the respective template for the required theme(s), you nee
 
 Here's an example of how to apply such a modification in the Fluent theme:
 
-#### __[XAML]__
 
-{{region xaml-kb-treeview-remove-selection-background-items_1}}
+
+```XAML
 	<!-- IsSelected general setters -->
 	<Trigger Property="IsSelected" Value="True">
 		<Setter TargetName="Header" Property="Foreground" Value="Red"/>
@@ -50,7 +50,7 @@ Here's an example of how to apply such a modification in the Fluent theme:
 	<Trigger Property="IsMouseOver" Value="True" SourceName="HeaderRow">
 		<Setter TargetName="BorderVisual" Property="Background" Value="Salmon"/>
 	</Trigger>
-{{endregion}}
+```
 
 Note that we've changed the **Background** of the **BorderVisual** element to **Transparent** for the selected state and to **Salmon** for the hovered state. The **Foreground** of the **Header** is also changed to **Red** for the selected state.
 

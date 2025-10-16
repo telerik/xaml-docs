@@ -23,10 +23,10 @@ You can either have an Index-based or DateTime sampling.
 
 The sampling engine does not detect/determine whether the datapoints will be on similar pixel coordinates. Instead, it visualizes a subset of the original data. Determining the number of DataPoints to be displayed is done by setting the __SamplingThreshold__ property of the ChartDataSource. For example, if you have 1000 points, 95% of which are clustered together, and you choose a sampling threshold of 300 points, 95% of these 300 points will be clustered as well.                
 
-#### __[XAML] Example 1: Defining ChartDataSource__
-{{region radchart-chartdatasource_0}}
+__Example 1: Defining ChartDataSource__
+```XAML
 	<telerik:ChartDataSource x:Name="ChartDataSource1" ItemsSource="{Binding Data}" SamplingThreshold="300"/>
-{{endregion}}
+```
 
 ## DateTime sampling
 
@@ -36,8 +36,8 @@ The following example demonstrates both properties in action.
 
 We'll create BarSeries and SplineSeries with DateTimeCategorical Horizontal Axis, bound via the ChartDataSource control:
 
-#### __[XAML] Example 2: Defining the chart and binding the sampling source__
-{{region radchart-chartdatasource_1}}
+__Example 2: Defining the chart and binding the sampling source__
+```XAML
 	<telerik:ChartDataSource x:Name="ChartDataSource1"
 								ItemsSource="{Binding Data}"
 								SamplingUnit="Day" 
@@ -58,14 +58,14 @@ We'll create BarSeries and SplineSeries with DateTimeCategorical Horizontal Axis
 		</telerik:BarSeries>
 		<telerik:SplineSeries CategoryBinding="Time" ValueBinding="Value"  ItemsSource="{Binding ElementName=ChartDataSource1}" />
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 Note how the ItemsSource property of the series is bound to the ChartDataSource and not to the collection of business objects so called Data directly. 
 
 In code-behind create the collection of business objects and register it as DependencyProperty by inheriting the DependencyObject class:
 
-#### __[C#] Example 3: Creating the models__
-{{region radchart-chartdatasource_2}}
+__Example 3: Creating the models__
+```C#
 	 public class SimpleViewModel : DependencyObject
 	{
 		   Random r = new Random();
@@ -109,10 +109,8 @@ In code-behind create the collection of business objects and register it as Depe
 		public DateTime Time { get; set; }
 		public int Value { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Creating the models__
-{{region radchart-chartdatasource_3}}
+```
+```VB.NET
 	Public Class SimpleViewModel
 	 Inherits DependencyObject
 		   Private r As New Random()
@@ -165,7 +163,7 @@ In code-behind create the collection of business objects and register it as Depe
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 By setting the SamplingUnit to Day and the SamplingUnitInterval to 5 you'll see 4 categories, where each category represents a period of 5 days. The result is shown on the image below:
 ![Rad Chart View-chart chartdatasource](images/RadChartView-chart_chartdatasource.PNG)
@@ -188,8 +186,8 @@ For that purpose you should inherit from the specific ChartSeries class that you
 
 Below you'll find a sample where this is demonstrated. Note that the datasource is the same as the one used in the previous example.                
 
-#### __[XAML] Example 4: Defining the chart and binding the sampling source__
-{{region radchart-chartdatasource_4}}
+__Example 4: Defining the chart and binding the sampling source__
+```XAML
 	<telerik:ChartDataSource x:Name="ChartDataSource1"
 								ItemsSource="{Binding Data}"
 								SamplingUnit="Day" 
@@ -209,10 +207,10 @@ Below you'll find a sample where this is demonstrated. Note that the datasource 
 							ItemsSource="{Binding ElementName=ChartDataSource1}">
 	    </local:MyBarSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
-#### __[C#] Example 5: Create custom series and override its aggregate function__
-{{region radchart-chartdatasource_5}}
+__Example 5: Create custom series and override its aggregate function__
+```C#
 	public class MyBarSeries : BarSeries
 	{
 	    protected override ChartAggregateFunction GetValueAggregateFunction()
@@ -220,17 +218,15 @@ Below you'll find a sample where this is demonstrated. Note that the datasource 
 	        return new ChartMinFunction();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Create custom series and override its aggregate function__
-{{region radchart-chartdatasource_6}}
+```
+```VB.NET
 	Public Class MyBarSeries
 		Inherits BarSeries
 		Protected Overrides Function GetValueAggregateFunction() As ChartAggregateFunction
 			Return New ChartMinFunction()
 		End Function
 	End Class
-{{endregion}}
+```
 
 > If you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls, you should base the style of the custom series on the default one like so `<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />`, otherwise a "No data to plot" message will be shown.
 
@@ -243,11 +239,11 @@ The chart's [DataPoint]({%slug radchartview-getting-started-data-point%}) models
 
 __DataPointSamplingInfo__ is IEnumerable and you can get the aggregated data items using its indexer.
 
-#### __[C#] Example 6: Getting data item from the sampling result__
-{{region radchart-chartdatasource_7}}
+__Example 6: Getting data item from the sampling result__
+```C#
 	DataPointSamplingInfo samplingInfo = (DataPointSamplingInfo)dataPoint.DataItem;
 	object dataItem = samplingInfo[0];
-{{endregion}}
+```
 
 You can also get the aggregated values of the DataPoint for each axis using the __AggregateResultCollection__ property of DataPointSamplingInfo. 
 

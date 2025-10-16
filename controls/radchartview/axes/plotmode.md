@@ -16,9 +16,9 @@ RadChartView allows you to modify the layout of the Categorical and Date Time ax
 
 You can set the PlotMode from XAML like this:        
 
-#### __XAML__
 
-{{region radchart-axes-plotmode_0}}
+
+```XAML
 	<telerik:RadCartesianChart x:Name="telerik">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis PlotMode="BetweenTicks"/>
@@ -40,7 +40,7 @@ You can set the PlotMode from XAML like this:
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 The PlotMode property can be used with the following predefined values:        
 

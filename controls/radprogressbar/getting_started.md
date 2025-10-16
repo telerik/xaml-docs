@@ -33,26 +33,24 @@ You can find the required assemblies for each control from the suite in the {% i
 
 To set up a RadProgressBar, set its __Minimum__, __Maximum__ and __Value__ properties. They control the value range of the control and the current position of the [progress indicator]({%slug radprogressbar-structure%}).
 
-#### __[XAML] Example 1: Defining RadProgressBar in XAML__
-{{region radprogressbar-getting-started-0}}
+__Example 1: Defining RadProgressBar in XAML__
+```XAML
 	<telerik:RadProgressBar Minimum="-50" Maximum="50" Value="10"/>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining RadProgressBar in code__
-{{region radprogressbar-getting-started-1}}
+__Example 2: Defining RadProgressBar in code__
+```C#
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.Minimum = -50;
 	progressBar.Maximum = 50;
 	progressBar.Value = 10;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining RadProgressBar in code__
-{{region radprogressbar-getting-started-2}}
+```
+```VB.NET
 	Dim progressBar = New RadProgressBar()
 	progressBar.Minimum = -50
 	progressBar.Maximum = 50
 	progressBar.Value = 10
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadProgressBar Minimum Maximum and Value Setup](images/radprogressbar-getting-started-0.png)
 
@@ -60,15 +58,15 @@ To set up a RadProgressBar, set its __Minimum__, __Maximum__ and __Value__ prope
 
 The default orientation of RadProgressBar is horizontal. To change this, set the __Orientation__ property to __Vertical__.
 
-#### __[XAML] Example 3: Setting orientation in XAML__
-{{region radprogressbar-getting-started-3}}
+__Example 3: Setting orientation in XAML__
+```XAML
 	<telerik:RadProgressBar Minimum="-50" Maximum="50" Value="10" 
 							Width="8" Height="200"
 							Orientation="Vertical"/>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting orientation in code__
-{{region radprogressbar-getting-started-4}}
+__Example 4: Setting orientation in code__
+```C#
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.Minimum = -50;
 	progressBar.Maximum = 50;
@@ -76,10 +74,8 @@ The default orientation of RadProgressBar is horizontal. To change this, set the
 	progressBar.Width = 8;
 	progressBar.Height = 200;
 	progressBar.Orientation = Orientation.Vertical;
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting orientation in code__
-{{region radprogressbar-getting-started-5}}
+```
+```VB.NET
 	Dim progressBar = New RadProgressBar()
 	progressBar.Minimum = -50
 	progressBar.Maximum = 50
@@ -87,7 +83,7 @@ The default orientation of RadProgressBar is horizontal. To change this, set the
 	progressBar.Width = 8
 	progressBar.Height = 200
 	progressBar.Orientation = Orientation.Vertical
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadProgressBar with Vertical Orientation](images/radprogressbar-getting-started-1.png)
 
@@ -95,22 +91,20 @@ The default orientation of RadProgressBar is horizontal. To change this, set the
 
 This state presents a visualization of an unspecified waiting time. To enable it, set the the __IsIndeterminate__ property of RadProgressBar to __True__.
 
-#### __[XAML] Example 5: Enabling intereminate state in XAML__
-{{region radprogressbar-getting-started-6}}
+__Example 5: Enabling intereminate state in XAML__
+```XAML
 	<telerik:RadProgressBar IsIndeterminate="True" />
-{{endregion}}
+```
 
-#### __[C#] Example 6: Enabling intereminate state in code__
-{{region radprogressbar-getting-started-7}}
+__Example 6: Enabling intereminate state in code__
+```C#
 	RadProgressBar progressBar = new RadProgressBar();
 	progressBar.IsIndeterminate = true;
-{{endregion}}
-
-#### __[VB.NET] Example 6: Enabling intereminate state in code__
-{{region radprogressbar-getting-started-8}}
+```
+```VB.NET
 	Dim progressBar = New RadProgressBar()
 	progressBar.IsIndeterminate = True
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadProgressBar Indeterminate](images/radprogressbar-getting-started-2.gif)
 
@@ -130,8 +124,8 @@ To change the theme, you can follow the steps below:
 
 __Example 7__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 7: Merge the ResourceDictionaries__  
-{{region RadPivotGrid-getting-started_7}}
+__Example 7: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -140,7 +134,7 @@ __Example 7__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

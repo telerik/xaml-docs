@@ -12,8 +12,8 @@ position: 0
 
 The __PersistenceFramework__ allows you to save the layout of __UIElements__ in [Isolated Storage](https://docs.microsoft.com/en-us/dotnet/standard/io/isolated-storage). For that purpose the __telerik:PersistenceManager.StorageId__ attached property has to be set for each __UIElement__ that needs to be persisted. The property is used to create a file in the isolated storage for each persisted control, where the control's properties will be kept.
 
-#### __[XAML] Example 1: Setting the PersistenceManager.StorageId property__
-{{region persistence-framework-isolated-storage_0}}
+__Example 1: Setting the PersistenceManager.StorageId property__
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="\*" />
@@ -71,10 +71,10 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 	        </ContentControl>
 	    </Border>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Using the IsolatedStorageProvider methods__
-{{region persistence-framework-isolated-storage_1}}
+__Example 2: Using the IsolatedStorageProvider methods__
+```C#
 	private void Save(object sender, RoutedEventArgs e)
 	{
 		var manager = new PersistenceManager() 
@@ -96,10 +96,8 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 		IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager);
 		isoProvider.LoadFromStorage();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Using the IsolatedStorageProvider methods__
-{{region persistence-framework-isolated-storage_2}}
+```
+```VB.NET
 	Private Sub Save(sender As Object, e As RoutedEventArgs)
 		Dim isoProvider As New IsolatedStorageProvider()
 		isoProvider.SaveToStorage()
@@ -108,7 +106,7 @@ The __PersistenceFramework__ allows you to save the layout of __UIElements__ in 
 		Dim isoProvider As New IsolatedStorageProvider()
 		isoProvider.LoadFromStorage()
 	End Sub
-{{endregion}}
+```
 
 The __IsolatedStorageProvider.SaveToStorage()__ method will save the properties of all controls for which the __telerik:PersistenceManager.StorageId__ attached property is set. In __Example 2__ all properties of the __RadTreeView__ and the __ContentControl__ will be saved:
 

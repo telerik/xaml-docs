@@ -29,10 +29,10 @@ The data items can be grouped by dragging a data field descriptor from the [data
 
 The RadCardView groups support sorting by clicking onto the associated [group member button]({%slug radcardview-visual-structure%}). To disable this, set the __CanUserSortGroups__ property to __False__.
 
-#### __[XAML] Example 1: Setting the CanUserSortGroups property__
-{{region radcardview-features-grouping-0}}
+__Example 1: Setting the CanUserSortGroups property__
+```XAML
 	<telerik:RadCardView CanUserSortGroups="False" />
-{{endregion}}
+```
 
 Additionally, the grouping can be disabled per [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) by setting its __AllowGrouping__ property.
 
@@ -40,8 +40,8 @@ Additionally, the grouping can be disabled per [CardDataFieldDescriptor]({%slug 
 
 The following example shows how to setup RadCardView, populate it a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add GroupDescriptors in code.
 
-#### __[C#] Example 2: Defining the model__
-{{region radcardview-features-grouping-1}}
+__Example 2: Defining the model__
+```C#
 	public class CardInfo
     {
         public string Header { get; set; }
@@ -78,23 +78,23 @@ The following example shows how to setup RadCardView, populate it a [QueryableCo
             CollectionView.GroupDescriptors.Add(new GroupDescriptor() { Member = "Category" });
         }
     }
-{{endregion}} 
+``` 
 
 >tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#grouping) to see how to use the GroupDescriptors collection of the QueryableCollectionView.
 
-#### __[C#] Example 3: Setting the DataContext__
-{{region radcardview-features-grouping-2}}
+__Example 3: Setting the DataContext__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.DataContext = new MainViewModel();
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Setting up the view__
-{{region radcardview-features-grouping-3}}
+__Example 4: Setting up the view__
+```XAML
 	<telerik:RadCardView ItemsSource="{Binding CollectionView}" CardHeaderBinding="{Binding Header}" />
-{{endregion}}
+```
 
 ## Events
 
@@ -104,10 +104,10 @@ The grouping operations invoke several events that can be used to customize the 
 
 The [group panel area]({%slug radcardview-visual-structure%}) can be customized using several public properties. To hide the area, set the __ShowGroupPanel__ property to __False__. Read more in the [Customizing Groups]({%slug radcardview-appearance-customizing-groups%}) article.
 
-#### __[XAML] Example 5: Setting the ShowGroupPanel property__
-{{region radcardview-features-grouping-4}}
+__Example 5: Setting the ShowGroupPanel property__
+```XAML
 	<telerik:RadCardView ShowGroupPanel="False" />
-{{endregion}}
+```
 
 ## See Also
 * [Getting Started]({%slug radcardview-getting-started%})

@@ -28,8 +28,8 @@ How to make sure that the virtualization of a RadGridView inside the [RowDetails
 
 Set the __Height__ property of the RadGridView in the RowDetails. This will ensure that it is not measured with infinity and enable the virtualization. Since the element that hosts the RowDetails is inside a RowDefinition with its Height set to Auto, by default the [UI Virtualization]({%slug radgridview-features-ui-virtualization%}) will be disabled.
 
-#### __[C#]__
-{{region kb-gridview-howto-rowdetails-virtualization-0}}
+
+```C#
     <Grid> 
         <Grid.Resources> 
             <my:MyViewModel x:Key="MyViewModel"/> 
@@ -65,4 +65,4 @@ Set the __Height__ property of the RadGridView in the RowDetails. This will ensu
             </telerik:RadGridView.Columns> 
         </telerik:RadGridView> 
     </Grid> 
-{{endregion}}
+```

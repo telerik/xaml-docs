@@ -25,8 +25,8 @@ How to display the header vertically when the ExpandDirection is Right or Left.
 
 To achieve this requirement you can set use a LayoutTransformControl and place it inside the Header of the RadExpander as demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Change Header Orientation__
-{{region xaml-kb-expander-howto-orient-header-content-0}}
+__Example 1: Change Header Orientation__
+```XAML
 
     <Grid x:Name="LayoutRoot" ShowGridLines="True">
         <Grid.ColumnDefinitions>
@@ -66,7 +66,7 @@ To achieve this requirement you can set use a LayoutTransformControl and place i
             </telerik:RadExpander.Content>
         </telerik:RadExpander>
     </Grid>
-{{endregion}}
+```
 
 ## See Also
 * [Expand Direction]({%slug radexpander-features-expand_direction%})

@@ -21,8 +21,8 @@ The `RadDateRangePicker` control has the following built-in ranges, that can be 
 
 ![Picture showing the pre-defined custom date ranges of WPF RadDateRangePicker](images/raddaterangepicker-custom-date-ranges-0.png)
 
-#### __[C#] Adding and removing ranges in the CustomRangesLoadingEventArgs event handler__
-{{region raddaterangepicker-custom-date-ranges-0}}
+__Adding and removing ranges in the CustomRangesLoadingEventArgs event handler__
+```C#
 	private void RadDateRangePicker_CustomRangesLoading(object sender, CustomRangesLoadingEventArgs e)
 	{
 		// removes the first predefined range
@@ -36,7 +36,7 @@ The `RadDateRangePicker` control has the following built-in ranges, that can be 
 		};
 		e.CustomRanges.Add(newRange);
 	}
-{{endregion}}
+```
 
 ![Picture showing a new custom date range added to WPF RadDateRangePicker](images/raddaterangepicker-custom-date-ranges-1.png)
 
@@ -44,10 +44,10 @@ The `RadDateRangePicker` control has the following built-in ranges, that can be 
 
 To hide the date ranges from the UI, set the `IsDefaultRangesPanelVisible` property of `RadDateRangePicker` to `false`.
 
-#### __[C#] Hiding the date ranges panel__
-{{region raddaterangepicker-custom-date-ranges-1}}
+__Hiding the date ranges panel__
+```C#
 	<telerik:RadDateRangePicker IsDefaultRangesPanelVisible="False" />
-{{endregion}}
+```
 
 ![Picture showing WPF RadDateRangePicker without the data ranges panel](images/raddaterangepicker-custom-date-ranges-2.png)
 

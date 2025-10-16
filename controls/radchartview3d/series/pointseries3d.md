@@ -16,8 +16,8 @@ The point series visualizes three dimensional data represented by ellipsoid shap
 
 You can use the code from __Example 1__ to create a __PointSeries3D__. 
 
-#### __[XAML] Example 1: Defining series in XAML__	
-{{region radchartview3d-series-pointseries3d-0}}
+__Example 1: Defining series in XAML__	
+```XAML
 	<telerik:RadCartesianChart3D>
 		<telerik:RadCartesianChart3D.XAxis>
 			<telerik:CategoricalAxis3D />
@@ -47,7 +47,7 @@ You can use the code from __Example 1__ to create a __PointSeries3D__.
 			<telerik:CartesianChart3DGrid />
 		</telerik:RadCartesianChart3D.Grid>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 	
 #### __Figure 1: PointSeries3D__
 ![{{ site.framework_name }} RadChartView3D PointSeries3D](images/radchartview-3d-pointseries3d-0.png)
@@ -56,8 +56,8 @@ You can use the code from __Example 1__ to create a __PointSeries3D__.
 
 You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ properties of __PointSeries3D__ to bind the __XyzDataPoints__’ properties to the properties of the view models. The __ItemsSource__ property is used to pass the data collection to the series.
 
-#### __[C#] Example 2: Defining a model for the data points and setting up the data context__
-{{region radchartview3d-series-pointseries3d-1}}
+__Example 2: Defining a model for the data points and setting up the data context__
+```C#
 	public class PlotInfo
 	{
 		public double XValue { get; set; }
@@ -71,26 +71,26 @@ You can use the __XValueBinding__, __YValueBinding__ and __ZValueBinding__ prope
 		new PlotInfo { XValue = 10, YValue = 20, ZValue = 150, },
 		//....
 	};
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting up the series__
-{{region radchartview3d-series-pointseries3d-2}}
+__Example 3: Setting up the series__
+```XAML
 	<telerik:PointSeries3D XValueBinding="XValue"  YValueBinding="YValue" ZValueBinding=”ZValue” ItemsSource="{Binding}"/>
-{{endregion}}
+```
 
 ## Customizing the data point visuals
 
 You can change the size of the data points using the __PointSize__ property.
 
-#### __[XAML] Example 4: Setting point size in XAML__  
-{{region radchartview3d-series-pointseries3d-3}}
+__Example 4: Setting point size in XAML__  
+```XAML
 	<telerik:PointSeries3D PointSize="60 60 60">
-{{endregion}}
+```
 
-#### __[C#] Example 5: Setting point size in code__  
-{{region radchartview3d-series-pointseries3d-4}}
+__Example 5: Setting point size in code__  
+```C#
 	pointSeries.PointSize = new Size3D(60, 60, 60);
-{{endregion}}
+```
 
 The visual elements that represent the __PointSeries3D__ data points can be customized through the __DefaultVisualMaterial__ and __DefaultVisualGeometry__ properties of the series. Additionally, you can use the __DefaultVisualMaterialSelector__ and __DefaultVisualGeometrySelector__ to choose different materials and geometries based on a specific condition.
  

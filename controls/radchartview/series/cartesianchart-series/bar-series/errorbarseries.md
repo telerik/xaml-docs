@@ -16,8 +16,8 @@ The error bar shape allows you to display a error or uncertainty in the plotted 
 
 To start using the series, add it in the `Series` collection of the chart and populate its `DataPoints` collection (or the [ItemsSource](#data-binding)).
 
-#### __[XAML] Defining ErrorBarSeries in XAML__
-{{region radchartview-series-errorbarseries-0}}
+__Defining ErrorBarSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis />
@@ -37,7 +37,7 @@ To start using the series, add it in the `Series` collection of the chart and po
 			</telerik:ErrorBarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 __ErrorBarSeries example__  
 
@@ -49,8 +49,8 @@ __ErrorBarSeries example__
 
 The series allows you to display an additional marker that shows the expected measure of the data point. To enable this, set the `ShowMarker` property of the `ErrorBarShape` element and the Value property of the `ErrorBarDataPoint` (or `ValueBinding` when using the [ItemsSource](#data-binding).
 
-#### __[XAML] Showing ErrorBarSeries markers__
-{{region radchartview-series-errorbarseries-1}}
+__Showing ErrorBarSeries markers__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis />
@@ -78,7 +78,7 @@ The series allows you to display an additional marker that shows the expected me
 			</telerik:ErrorBarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 __ErrorBar markers__  
 
@@ -95,8 +95,8 @@ The ErrorBarSeries works with data point objects of type ErrorBarDataPoint. In a
 
 The following example shows how to create a simple object describing the error bar and populate the series with a sample collection.
 
-#### __[C#] Defining the model__
-{{region radchartview-series-errorbarseries-1}}
+__Defining the model__
+```C#
 	public class ErrorBarInfo
     {
         public string Category { get; set; }
@@ -104,10 +104,10 @@ The following example shows how to create a simple object describing the error b
         public double High { get; set; }
         public double Value { get; set; }
     }
-{{endregion}}	
+```	
 
-#### __[C#] Populating the data__
-{{region radchartview-series-errorbarseries-2}}
+__Populating the data__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent(); 
@@ -125,10 +125,10 @@ The following example shows how to create a simple object describing the error b
 		};
 		this.errorBarSeries.ItemsSource = source;
 	}
-{{endregion}}	
+```	
 
-#### __[XAML] Defining ErrorBarSeries in data binding scenario__
-{{region radchartview-series-errorbarseries-3}}	
+__Defining ErrorBarSeries in data binding scenario__
+```XAML	
 	<telerik:RadCartesianChart Palette="Fluent">
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis />
@@ -151,7 +151,7 @@ The following example shows how to create a simple object describing the error b
 			</telerik:ErrorBarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 __ErrorBarSeries data binding example__  
 

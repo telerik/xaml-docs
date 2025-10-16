@@ -20,30 +20,24 @@ The next example will demonstrate how to add an additional description property 
 
 1. First you will need to create a class and inherits __GanttTask__ class:
 
-	#### __C#__
-
-	{{region cs-radganttview-features-items-custom-gantttask_0}}
+	```C#
 		public class MyGanttTask : GanttTask
 		{
 		}
-	{{endregion}}
+	```
 
 1. Define a field of type string that will be the custom description property:
 
-	#### __C#__
-
-	{{region cs-radganttview-features-items-custom-gantttask_1}}
+	```C#
 		public class MyGanttTask : GanttTask
 		{
 		    public string CustomDescription { get; set; }
 		}
-	{{endregion}}
+	```
 
 1. Next you will need to create a collection of __MyGanttTask__ objects in your __ViewModel__ and populate it with some sample data:
 
-	#### __C#__
-
-	{{region cs-radganttview-features-items-custom-gantttask_2}}
+	```C#
 		public class ViewModel : ViewModelBase
 		{
 		    private ObservableCollection<MyGanttTask> tasks;
@@ -129,13 +123,11 @@ The next example will demonstrate how to add an additional description property 
 		        }
 		    }
 		}
-	{{endregion}}
+	```
 
 The xaml of the GanttView control should look like this:
 
-#### __XAML__
-
-{{region xaml-radganttview-features-items-custom-gantttask_0}}
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" Margin="5"
 	VisibleRange="{Binding VisibleTime}">
 	    <telerik:RadGanttView.Columns>
@@ -145,7 +137,7 @@ The xaml of the GanttView control should look like this:
 	        <telerik:ColumnDefinition MemberBinding="{Binding CustomDescription}" Header="Custom Description" Width="AutoHeaderAndContent"/>
 	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 The next screenshot show the final result (the Custom Description column shows the CustomDescription values):
 
@@ -159,9 +151,7 @@ This approach is more appropriate when customizing the existing properties of th
 
 The next code snippet shows a sample implementation of __IDependant__ interface:
 
-#### __C#__
-
-{{region cs-radganttview-features-items-custom-gantttask_3}}
+```C#
 	IEnumerable IDependant.Dependencies
 	{
 	    get { return this.Dependencies; }
@@ -184,7 +174,7 @@ The next code snippet shows a sample implementation of __IDependant__ interface:
 	{
 	    return false;
 	}
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/GanttView/CustomGanttTaskWithStatus).
 

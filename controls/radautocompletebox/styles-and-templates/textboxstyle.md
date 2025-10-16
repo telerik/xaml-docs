@@ -15,17 +15,17 @@ The __TextBoxStyle__ property makes it easy to customize the __RadAutoCompleteBo
 
 The first thing is to create a __RadAutoCompleteBox__ with an ItemsSource bound to a collection of countries.
 
-#### __[C#] Example 1: Create an objects class__
-{{region radautocompletebox-styles-and-templates-textboxstyle-items_0}}
+__Example 1: Create an objects class__
+```C#
 	public class Country
 	{
 		public string Name { get; set; }
 		public string Capital { get; set; }
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 2: Create the ViewModel__
-{{region radautocompletebox-styles-and-templates-textboxstyle-items_1}}
+__Example 2: Create the ViewModel__
+```C#
 	public class MyViewModel : ViewModelBase
     {
         private ObservableCollection<Country> countries;
@@ -54,10 +54,10 @@ The first thing is to create a __RadAutoCompleteBox__ with an ItemsSource bound 
             }
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Create the RadAutoCompleteBox and sets its ItemsSource__
-{{region radautocompletebox-styles-and-templates-textboxstyle_2}}
+__Example 3: Create the RadAutoCompleteBox and sets its ItemsSource__
+```XAML
 	<Window.DataContext>
         <local:MyViewModel/>
     </Window.DataContext>
@@ -69,15 +69,15 @@ The first thing is to create a __RadAutoCompleteBox__ with an ItemsSource bound 
                                     AutoCompleteMode="Suggest"
                                     WatermarkContent="Select a country..."/>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadAutoCompleteBox without custom TextBoxStyle applied__
 ![Rad Auto Complete Box Features Text Box Style 01](images/RadAutoCompleteBox_StylesAndTemplates_TextBoxStyle_01.png)
 
 You have to create a custom __Style__ with __TargetType__ __RadAutoCompleteBox__ or __RadAutoCompleteBoxItem__:
 
-#### __[XAML] Example 4: Create the custom Style__
-{{region radautocompletebox-styles-and-templates-textboxstyle_3}}
+__Example 4: Create the custom Style__
+```XAML
 	<Grid.Resources>
         <Style x:Key="textBoxStyle" TargetType="telerik:RadWatermarkTextBox">
             <Setter Property="BorderThickness" Value="0"/>
@@ -89,14 +89,14 @@ You have to create a custom __Style__ with __TargetType__ __RadAutoCompleteBox__
             <Setter Property="Foreground" Value="Red" />
         </Style>
     </Grid.Resources>
-{{endregion}}
+```
 
 >If you are using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) to style the controls, you would need to base that Style to the default TextBoxStyle of RadAutoCompleteBox named **RadAutoCompleteTextBoxStyle**.
 
 The last step would be to simply set the custom style as __TextBoxStyle__ of __RadAutoCompleteBox__:
 
-#### __[XAML] Example 5: Apply the custom Style__
-{{region radautocompletebox-styles-and-templates-textboxstyle_4}}
+__Example 5: Apply the custom Style__
+```XAML
 	<Grid>
 		<telerik:RadAutoCompleteBox Name="autoCompleteBox"
 									Width="200" Height="25"
@@ -106,7 +106,7 @@ The last step would be to simply set the custom style as __TextBoxStyle__ of __R
 									WatermarkContent="Select a country..."
                                     TextBoxStyle="{StaticResource textBoxStyle}"/>
     </Grid>
-{{endregion}}
+```
 
 You can see the final result on __Figure 2__.
 

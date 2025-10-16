@@ -32,8 +32,8 @@ The header of the RadGanttView's ColumnDefinition class is represented by a Colu
 
 Create a new `Style` with `TargetType="ColumnHeaderContainer"` and add a new `Setter` for the `ContentTemplate` property. Then, set it to a new `DataTemplate` with a `ContentPresenter` instance in it.
 
-#### __[XAML] Creatring a new Style that targets the ColumnHeaderContainer and sets a custom DataTemplate to its ContentTemplate property__
-{{region kb-ganttview-customize-column-header-0}}
+__Creatring a new Style that targets the ColumnHeaderContainer and sets a custom DataTemplate to its ContentTemplate property__
+```XAML
     <!--If NoXaml is used base the Style on the default one: BasedOn="{StaticResource ColumnHeaderContainerStyle}"-->
     <Style TargetType="telerik:ColumnHeaderContainer">
         <Setter Property="ContentTemplate">
@@ -44,10 +44,10 @@ Create a new `Style` with `TargetType="ColumnHeaderContainer"` and add a new `Se
             </Setter.Value>
         </Setter>
     </Style>
-{{endregion}}
+```
 
-#### __[XAML] Setting a complex structure to the Header property of a ColumnDefinition instance__
-{{region kb-ganttview-customize-column-header-1}}
+__Setting a complex structure to the Header property of a ColumnDefinition instance__
+```XAML
     <telerik:ColumnDefinition MemberBinding="{Binding DurationDays}" Width="100">
         <telerik:ColumnDefinition.Header>
             <StackPanel Orientation="Vertical">
@@ -56,7 +56,7 @@ Create a new `Style` with `TargetType="ColumnHeaderContainer"` and add a new `Se
             </StackPanel>
         </telerik:ColumnDefinition.Header>
     </telerik:ColumnDefinition>
-{{endregion}}
+```
 
 __GanttView ColumnDefinition with complex structure set to its Header property__
 

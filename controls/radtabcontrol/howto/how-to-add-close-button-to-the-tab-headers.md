@@ -24,11 +24,8 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 * The first step is to add references to the assemblies __Telerik.Windows.Controls__ and __Telerik.Windows.Controls.Navigation.__
 
 * In order to create closable tab control, we are going to make use of the routed events mechanism. That is why you will create a helper class named __RoutedEventHelper__. It will contain the declarations of both the close tab routed event and the attached property for enabling the routed event for the close button. Here is how this class looks like:
-		  
 
-#### __C#__
-
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_0}}
+```C#
 	public class RoutedEventHelper
 	{
 	    //Create the routed event:
@@ -71,13 +68,8 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 	        }
 	    }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_1}}
+```
+```VB.NET
 	Public Class RoutedEventHelper
 	    'Create the routed event:'
 			Public Shared ReadOnly CloseTabEvent As RoutedEvent = EventManager.RegisterRoutedEvent("CloseTab", RoutingStrategy.Bubble, GetType(RoutedEventHandler), GetType(RoutedEventHelper))
@@ -107,9 +99,7 @@ For the purpose of this example, you will need to create an empty {% if site.sit
 	        End If
 	    End Sub
 	End Class
-	{{endregion}}
-
-
+```
 
 As you can see, you have declared a new routed event called __CloseTabEvent__ of type __Telerik.Windows.RoutedEvent__. For its creation you have used the static method __DeclareRoutedEvent__ from the class __Telerik.Windows.EventManager__. This routed event will be raised when the close button of the tab control is clicked by the user.
 		
@@ -119,9 +109,7 @@ Another thing that is worth mentioning is the declaration of the attached proper
 
 * Change the XAML of MainPage.xaml to:
 
-#### __XAML__
-
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_2}}
+```XAML
 	<UserControl.Resources>
 	    <Style x:Key="ClosableStyle" TargetType="telerik:RadTabItem">
 	        <Setter Property="HeaderTemplate">
@@ -161,8 +149,7 @@ Another thing that is worth mentioning is the declaration of the attached proper
 	    <telerik:RadTabControl x:Name="tabControl" ItemContainerStyle="{StaticResource ClosableStyle}">
 	    </telerik:RadTabControl>
 	</Grid>
-	{{endregion}}
-
+```
 
 
 In the beginning of the XAML you have imported two namespaces - __example__ and __telerik__. The __example__ namespace imports all types from the current test project like __RoutedEventHelper__. The second namespace is __telerik__ and it imports all telerik navigation controls like __RadTabControl__ from the assembly __Telerik.Windows.Controls.Navigation.__
@@ -175,11 +162,8 @@ Later in the __UserControl.Resources__ section you declare a custom item contain
 * Bind the tab control to an observable collection containing items of the custom type __TabItemModel__
 
 * Register the __RadTabItem__ class handler for the routed event __CloseTabEvent__.
-		  
 
-#### __C#__
-
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_3}}
+```C#
 	public partial class MainPage : UserControl
 	{
 	    ObservableCollection<TabItemModel> tabItemsModel = new ObservableCollection<TabItemModel>();
@@ -223,13 +207,8 @@ Later in the __UserControl.Resources__ section you declare a custom item contain
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtabcontrol-how-to-add-close-button-to-the-tab-headers_4}}
+```
+```VB.NET
 	Partial Public Class Page
 	    Inherits UserControl
 	    Private tabItemsModel As New ObservableCollection(Of TabItemModel)()
@@ -275,9 +254,7 @@ Later in the __UserControl.Resources__ section you declare a custom item contain
 	        End Set
 	    End Property
 	End Class
-	{{endregion}}
-
-
+```
 
 ## See Also
 

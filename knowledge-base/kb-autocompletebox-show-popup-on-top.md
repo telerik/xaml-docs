@@ -34,14 +34,14 @@ How to align the popup with the search results of RadAutoCompleteBox to the Top 
 2. Use the [FindChildByType<T>]({%slug common-visual-tree-helpers%}) method to get the Popup control.
 3. Set the Placement property of the Popup.
 
-#### __[C#]__
-{{region kb-autocompletebox-show-popup-on-top-0}}
+
+```C#
 	private void RadAutoCompleteBox_Loaded(object sender, RoutedEventArgs e)
 	{
 		var autoCompleteBox = (RadAutoCompleteBox)sender;
 		var popup = autoCompleteBox.FindChildByType<Popup>();
 		popup.Placement = System.Windows.Controls.Primitives.PlacementMode.Top;
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadAutoCompleteBox Show Popup on Top](images/kb-autocompletebox-show-popup-on-top-0.png)

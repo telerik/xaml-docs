@@ -26,19 +26,14 @@ After clicking the OK button, a style with target type __SeriesItemLabel__ will 
 
 You can modify every one of the properties available for the styles. After that set the created style to the __DefaultSeriesDefinition__ of your __RadChart__ and delete the dummy control.
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-item-labels_0}}
+
+```C#
 	this.radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["SeriesItemLabelStyle"] as Style;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-item-labels_1}}
+```
+```VB.NET
 	Me.radChart.DefaultSeriesDefinition.SeriesItemLabelStyle = TryCast(Me.Resources("SeriesItemLabelStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -48,9 +43,9 @@ Here is a snapshot of the result.
 
 Here is the final XAML for the __Style__:
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-item-labels_2}}
+
+```XAML
 	<Style x:Key="SeriesItemLabelStyle" TargetType="telerik:SeriesItemLabel">
 	    <Setter Property="HorizontalContentAlignment" Value="Center" />
 	    <Setter Property="Padding" Value="2,0" />
@@ -130,7 +125,7 @@ Here is the final XAML for the __Style__:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 

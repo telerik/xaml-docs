@@ -37,8 +37,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 __RadBook__ is an __ItemsControl__. The pages of the book are represented by the __RadBookItem__ control. __RadBookItem__ is a __ContentControl__. Below is a basic declaration of __RadBook__ with several pages:
 
-#### __[XAML] Example 1: Defining a RadBook__  
-{{region xaml-radbook-getting-started_0}}
+__Example 1: Defining a RadBook__  
+```XAML
 	<telerik:RadBook Margin="50">
 		<telerik:RadBookItem Background="Red">
 			<TextBlock Text="Page 1" FontSize="36"/>
@@ -53,7 +53,7 @@ __RadBook__ is an __ItemsControl__. The pages of the book are represented by the
 			<TextBlock Text="Page 4" HorizontalAlignment="Right" FontSize="36"/>
 		</telerik:RadBookItem>
 	</telerik:RadBook>
-{{endregion}}
+```
 
 This is the result of the above code:
 
@@ -63,8 +63,8 @@ This is the result of the above code:
 
 You can add any UIElement as a content of the pages. RadBookItem has a Content property which you can populate with a single root panel which contains the page content.
 
-#### __[XAML] Example 2: Adding RadBookItems__  
-{{region xaml-radbook-getting-started_1}}
+__Example 2: Adding RadBookItems__  
+```XAML
 	<telerik:RadBook Margin="50">
 		<telerik:RadBookItem Background="Red">
 			<StackPanel>
@@ -85,7 +85,7 @@ You can add any UIElement as a content of the pages. RadBookItem has a Content p
 			<TextBlock Text="Page 4" HorizontalAlignment="Right" FontSize="36"/>
 		</telerik:RadBookItem>
 	</telerik:RadBook>
-{{endregion}}
+```
 
 ![RadBook Getting Started - Step2](images/book_step2.png)
 
@@ -93,8 +93,8 @@ You can add any UIElement as a content of the pages. RadBookItem has a Content p
 
 To set the initial page that will be displayed - set the __RightPageIndex__ property:
 
-#### __[XAML] Example 3: Setting the intially displayed page__  
-{{region xaml-radbook-getting-started_2}}
+__Example 3: Setting the intially displayed page__  
+```XAML
 	<telerik:RadBook Margin="50" x:Name="RadBook1" RightPageIndex="3">
 		<telerik:RadBookItem Background="Red">
 			<StackPanel>
@@ -115,7 +115,7 @@ To set the initial page that will be displayed - set the __RightPageIndex__ prop
 			<TextBlock Text="Page 4" HorizontalAlignment="Right" FontSize="36"/>
 		</telerik:RadBookItem>
 	</telerik:RadBook>
-{{endregion}}
+```
 
 ![RadBook Getting Started - Step3](images/book_step3.png)
 

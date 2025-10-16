@@ -33,10 +33,10 @@ Each of these types has a specified **TextFormatDefinition** which is used to di
 
 For example, you can highlight keywords in red and have the text appear bold and italic by adding the following definition:
 
-#### __[C#] Custom TextFormatDefinition__
-{{region cs-radsyntaxeditor-features-word-taggers-1}}
+__Custom TextFormatDefinition__
+```C#
     this.syntaxEditor.TextFormatDefinitions.AddLast(ClassificationTypes.Keyword, new TextFormatDefinition(new SolidColorBrush(Colors.Red), FontWeights.Bold, FontStyle = FontStyles.Italic));
-{{endregion}}
+```
 
 ## WordTaggerBase API
 

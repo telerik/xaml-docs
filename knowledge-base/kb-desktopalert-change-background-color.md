@@ -32,19 +32,16 @@ How to change the __RadDesktopAlert__ control's background color.
 
 When creating a new __RadDesktopAlert__ instance, set the __Background__ property to be the desired color.
 
-#### __[C#] __
 
-{{region kb-desktop-alert-change-background-color-0}}
+
+```C#
 	var alert = new RadDesktopAlert
 	{
 		Background = Brushes.Red
 	};
-{{endregion}}
-
-#### __[VB.NET]__
-
-{{region kb-desktop-alert-change-background-color-1}}
+```
+```VB.NET
 	Dim alert = New RadDesktopAlert With {
 		.Background = Brushes.Red
 	}
-{{endregion}}
+```

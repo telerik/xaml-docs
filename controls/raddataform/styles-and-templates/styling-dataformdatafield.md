@@ -16,8 +16,8 @@ The __DataFormDataField__ is the base class for the elements that represent the 
 
 In order to style the fields in a RadDataForm, you can create a style targeting __DataFormDataField__ and set it to the __DataFieldStyle__ property of the RadDataForm. 
 
-#### __[XAML] Example 1: Creating a style targeting DataFormDataField__
-{{region xaml-raddataform-styles-and-templates-styling-dataformdatafield-0}}
+__Example 1: Creating a style targeting DataFormDataField__
+```XAML
 	<Window.Resources>
         <!-- If you are using the NoXaml binaries, you should base the style on the default one like so:-->
         <!--<Style x:Key="DataFormDataFieldStyle" TargetType="telerik:DataFormDataField" BasedOn="{StaticResource DataFormDataFieldStyle}">-->
@@ -29,7 +29,7 @@ In order to style the fields in a RadDataForm, you can create a style targeting 
     <Grid>
         <telerik:RadDataForm AutoGenerateFields="True" DataFieldStyle="{StaticResource DataFormDataFieldStyle}" />
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadDataForm with custom DataFieldStyle in the Office2016 theme__
 ![RadDataForm with custom DataFieldStyle in the Office2016 theme](images/RadDataForm_DataFieldStyle.png)

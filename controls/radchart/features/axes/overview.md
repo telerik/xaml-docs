@@ -40,9 +40,9 @@ However, there are some specific properties for each of the axes: check [X-Axis]
 
 The following example demonstrates how to use the common properties in XAML and code-behind:
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-overview_0}}
+
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -62,13 +62,13 @@ The following example demonstrates how to use the common properties in XAML and 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-overview_1}}
+
+```C#
 	RadChart radChart = new RadChart();
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = true;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "0.0";
@@ -79,13 +79,8 @@ The following example demonstrates how to use the common properties in XAML and 
 	radChart.DefaultView.ChartArea.AxisY.Step = 5;
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0";
 	radChart.DefaultView.ChartArea.AxisY.Title = "Ampere [A]";
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-overview_2}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = True
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "0.0"
@@ -96,20 +91,18 @@ The following example demonstrates how to use the common properties in XAML and 
 	radChart.DefaultView.ChartArea.AxisY.[Step] = 5
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0"
 	radChart.DefaultView.ChartArea.AxisY.Title = "Ampere [A]"
-{{endregion}}
+```
 
 >tip Instead of setting the __MaxValue__, __MinValue__ and __Step__ properties you can call the __AddRange()__ method. This is more performant, because setting each the properties will trigger recalculations of the axis' values.
 
-#### __C#__
 
-{{region cs-radchart-features-axes-overview_3}}
+
+```C#
 	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5);
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-radchart-features-axes-overview_4}}
+```
+```VB.NET
 	radChart.DefaultView.ChartArea.AxisX.AddRange(100, 200, 5)
-{{endregion}}
+```
 
 In the code snippet above, both the X and the Y axes are customized. The changes done for the __Y-axis__ are several, but probably the most important of them is that the range auto generation (__AutoRange = False__) for that axis is stopped and this is done manually by defining values for __MinValue__, __MaxValue__ and __Step.__ The result is __Y-axis__ with values starting from 100, ending at 200 with tick placed on each 5 units.
 

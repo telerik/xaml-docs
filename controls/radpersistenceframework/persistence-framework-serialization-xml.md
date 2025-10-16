@@ -38,8 +38,8 @@ The following list describes the tags used by the persistence manager.
 			
 				* __&lt;APD&gt; (AttachedPropertyData)__:  This tag holds information about a serialized attached property. The APD tag has the same attributes as the PropertyData object.
 				
-#### __[XML] Example 1: XML serialization string produced from saving a RadButton__
-{{region persistence-framework-serialization-xml-0}}
+__Example 1: XML serialization string produced from saving a RadButton__
+```XML
 	<?xml version="1.0"?>
 	<RawData
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -166,7 +166,7 @@ The following list describes the tags used by the persistence manager.
 			<string>System.Windows.Visibility, PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</string>
 		</ValueTypes>
 	</RawData>
-{{endregion}}
+```
 
 > All the brackets (lower-than and greater-than) in the XML are stored using the corresponding entity name - &amp;lt; and &amp;gt;
 

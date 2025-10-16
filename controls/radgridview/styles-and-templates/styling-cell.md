@@ -10,23 +10,7 @@ position: 4
 
 # Styling Cells
 
-In this article, we discuss various approaches to style the RadGridView cells:
-
-* [Styling all RadGridView cells](#styling-all-radgridview-cells)
-
-* [Setting a Column's CellStyle](#setting-a-columns-cellstyle)
-
-* [Setting a Column's CellStyleSelector](#setting-a-columns-cellstyleselector)
-
-* [Setting the SelectedBackground of the Cell](#setting-the-selectedbackground-of-the-cell)
-
-* [Setting the BorderBrush of the CurrentCell](#setting-the-borderbrush-of-the-currentcell)
-
-* [Setting the MouseOverBackground of the Cell](#setting-the-mouseoverbackground-of-the-cell)
-
-* [Setting the HighlightedBackground of the Cell](#setting-the-highlightedbackground-of-the-cell)
-
->tip To get the most of this article, make sure you are already familiar with the [Template Structure of the GridViewCell]({%slug radgridview-styles-and-templates-templates-structure%}#gridviewcell).
+In this article, we discuss various approaches to style the RadGridView cells.
 
 __GridViewCell template structure__
 
@@ -44,9 +28,9 @@ You have two options:
 
 * To copy the default style of the control and [modify it]({%slug gridview-modifying-default-styles%}).
 
-#### __[XAML] Styling all cells of an application__
+__Styling all cells of an application__
 
-{{region xaml-gridview-styling-cell_0}}
+```XAML
 	<Application.Resources>
         <ResourceDictionary>
             <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
@@ -57,7 +41,7 @@ You have two options:
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}), base your style on the `GridViewCellStyle` that is defined for the corresponding theme.
 
@@ -69,8 +53,8 @@ __RadGridView with styled cells in the Office2016 theme__
 
 You can also style __RadGridView Cells__ by creating an appropriate `Style` for the `GridViewCell` element and setting it as the `CellStyle` property of the respective __GridView Column__. 
 
-#### __[XAML] Setting a column's CellStyle__
-{{region xaml-gridview-styling-cell_1}}
+__Setting a column's CellStyle__
+```XAML
 	<Grid>
         <Grid.Resources>
             <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
@@ -91,7 +75,7 @@ You can also style __RadGridView Cells__ by creating an appropriate `Style` for 
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 ## Setting a Column's CellStyleSelector
 
@@ -101,8 +85,8 @@ You could also use a column's `CellStyleSelector` property to style cells differ
 
 You can set the Background of the selected cell by setting the `SelectedBackground` property of the GridViewCell element.
 
-#### __[XAML] Setting the SelectedBackground of the GridViewCell__
-{{region xaml-gridview-styling-cell_2}}
+__Setting the SelectedBackground of the GridViewCell__
+```XAML
 	<Application.Resources>
         <ResourceDictionary>
             <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
@@ -111,7 +95,7 @@ You can set the Background of the selected cell by setting the `SelectedBackgrou
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 __Result when setting the SelectedBackground property in the Office2016 theme__
 
@@ -123,8 +107,8 @@ You can set the BorderBrush of the current cell, by setting the `CurrentBorderBr
 
 The following example demonstrates how to set the BorderBrush of the current cell to transparent.
 
-#### __[XAML] Setting the CurrentBorderBrush of the GridViewCell__
-{{region xaml-gridview-styling-cell_3}}
+__Setting the CurrentBorderBrush of the GridViewCell__
+```XAML
 	<Application.Resources>
         <ResourceDictionary>
             <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
@@ -133,7 +117,7 @@ The following example demonstrates how to set the BorderBrush of the current cel
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 __Result when setting the CurrentBorderBrush property in the Office2016 theme__
 
@@ -145,8 +129,8 @@ __Result when setting the CurrentBorderBrush property in the Office2016 theme__
 
 You can change the MouseOver Background of the cells through the `MouseOverBackground` property of the GridViewCell. This is demonstrated in the following example.
 
-#### __[XAML] Setting the MouseOverBackground of the GridViewCell__
-{{region xaml-gridview-styling-cell_4}}
+__Setting the MouseOverBackground of the GridViewCell__
+```XAML
 	<Application.Resources>
         <ResourceDictionary>
             <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
@@ -155,7 +139,7 @@ You can change the MouseOver Background of the cells through the `MouseOverBackg
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 __Result when setting the MouseOverBackground property in the Office2016 theme__
 
@@ -167,8 +151,8 @@ __Result when setting the MouseOverBackground property in the Office2016 theme__
 
 You can change the highlighted background color of a matched `GridViewCell` element when search as you type is performed. This color can be modified through the `HighlightedBackground` property.
 
-#### __[XAML] Setting the HighlightedBackground of the GridViewCell__
-{{region xaml-gridview-styling-cell-5}}
+__Setting the HighlightedBackground of the GridViewCell__
+```XAML
     <Application.Resources>
         <ResourceDictionary>
             <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
@@ -177,7 +161,7 @@ You can change the highlighted background color of a matched `GridViewCell` elem
             </Style>
         </ResourceDictionary>
     </Application.Resources>
-{{endregion}}
+```
 
 __Result when setting the HighlightedBackground property in the Office2016 theme__
 

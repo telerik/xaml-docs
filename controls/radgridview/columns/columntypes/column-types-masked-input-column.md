@@ -25,9 +25,9 @@ This is a list with short descriptions of the editors which will be created base
 For example add a __GridViewMaskedInputColumn__ that represents the OrderNumber for an Order object. The OrderNumber should not be more than 7 symbols. As it allows both text and digits use __Standard MaskType__ and set "SO#####" as __Mask__.
         
 
-#### __[XAML]Example 1: Define GridViewMaskedInputColumn in XAML:__
+__Example 1: Define GridViewMaskedInputColumn in XAML:__
 
-{{region xaml-radgridview-columns-column-types-masked-input-column_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	         AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -38,7 +38,7 @@ For example add a __GridViewMaskedInputColumn__ that represents the OrderNumber 
 	                           Mask="SO#####"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 ## See Also
 * [RadMaskedInput Overview]({%slug radmaskedinput-overview%})

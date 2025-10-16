@@ -10,11 +10,7 @@ position: 5
 
 # Styling the Chart Series
 
-
-
-There are four ways to style the chart series. The first and easier one is to [use the shortcut visual properties of the ISeriesDefinition interface](#Styling_the_Series_via_the_SeriesDefinition_classes)
-
-the second is to [use the complex styles property](#Styling_the_Series_via_Styles) provided by the __ChartArea__ of the __RadChart__ , the third is to [use Palette Brushes](#Styling_Series_via_PaletteBrushes) and the forth is to retemplate the default series style.
+There are four ways to style the chart series. The first and easier one is to use the shortcut visual properties of the ISeriesDefinition interface. The second is to use the complex styles property provided by the __ChartArea__ of the __RadChart__ , the third is to use Palette Brushes and the forth is to retemplate the default series style.
 
 ## Styling the Series via the SeriesDefinition classes
 
@@ -34,27 +30,17 @@ This is the easiest approach that you can use in order to style the chart series
 
 For example, you can change the appearance of a __BarSeries__ in the following way.
 
-#### __C#__
-
-{{region cs-radchart-styling-and-appearance-styling-chart-series_0}}
+```C#
 	BarSeriesDefinition barDefinition = new BarSeriesDefinition();
 	barDefinition.Appearance.Fill = new SolidColorBrush( Colors.Orange );
 	this.radChart.DefaultSeriesDefinition = barDefinition;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-chart-series_1}}
+```
+```VB.NET
 	Dim barDefinition As New BarSeriesDefinition()
 	barDefinition.Appearance.Fill = New SolidColorBrush(Colors.Orange)
 	Me.radChart.DefaultSeriesDefinition = barDefinition
-{{endregion}}
+```
 
-
-
-Here is the result.
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_01.png)
 
 ## Styling the Series via Styles
@@ -69,18 +55,18 @@ The second way is to define a style and set it through the __SeriesStyles__ comp
 
 
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_2}}
+
+```XAML
 	<Style x:Key="SelfDrawingSeriesStyle" TargetType="telerik:SelfDrawingSeries" />
-{{endregion}}
+```
 
 The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyle__. The __BorderLineStyle__ is __obligatory__, as it defines the main chart contour. The __BackgroundStyle must be__ set when your chart represents an area. Here is an example:
 
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_3}}
+
+```XAML
 	<Style x:Key="SplineAreaStyle" TargetType="telerik:SelfDrawingSeries">
 	    <Setter Property="BorderLineStyle">
 	        <Setter.Value>
@@ -99,23 +85,18 @@ The type exposes two style properties - __BorderLineStyle__ and __BackgroundStyl
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-chart-series_4}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = this.Resources[ "SplineAreaStyle" ] as Style;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-chart-series_5}}
+```
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.SplineAreaSeriesStyle = TryCast(Me.Resources("SplineAreaStyle"), Style)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_02.png)
 
@@ -125,26 +106,22 @@ Here is an example:
 
 
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_6}}
+
+```XAML
 	<Style x:Key="BarStyle" TargetType="Shape">
 	    <Setter Property="Fill" Value="Orange" />
 	</Style>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-chart-series_7}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = this.Resources[ "BarStyle" ] as Style;
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-chart-series_8}}
+```
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.SeriesStyles.BarSeriesStyle = TryCast(Me.Resources("BarStyle"), Style)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_03.png)
 
@@ -167,16 +144,16 @@ The __RadChart__ exposes two __BrushCollections__:
 
 The __PaletteBrushes__ is read-only and allows you to specify a set of brushes that will be applied to the series displayed in the __RadChart__. The pattern of applying is as follows: first series - first brush, second series - second brush.
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_9}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
 	    <telerik:RadChart.PaletteBrushes>
 	        <SolidColorBrush Color="Green" />
 	        <SolidColorBrush Color="Orange" />
 	    </telerik:RadChart.PaletteBrushes>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -184,9 +161,9 @@ The __PaletteBrushes__ is read-only and allows you to specify a set of brushes t
 
 or
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_10}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart" VerticalAlignment="Top">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -201,7 +178,7 @@ or
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_04.png)
 
@@ -209,9 +186,9 @@ There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartAr
 
 >For example if you use the __ChartArea__ __PaletteBrush__ collection with __PaletteBrushesRepeat__ set to __False__, when all of the brushes get used, the next series will fallback to the __RadChart__ __PaletteBrushes__ and after them to the theme resources.
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_11}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  VerticalAlignment="Top"
 	                  PaletteBrushesRepeat="True">
@@ -220,15 +197,15 @@ There are __PaletteBrushesRepeat__ properties in both __RadChart__ and __ChartAr
 	        <SolidColorBrush Color="Orange" />
 	    </telerik:RadChart.PaletteBrushes>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 or
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_12}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  VerticalAlignment="Top"
 	                  PaletteBrushesRepeat="True">
@@ -245,7 +222,7 @@ or
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_05.png)
 
@@ -263,9 +240,9 @@ If you want to see a double line when you create new LineSeriesDefinition the on
 
 Here is an example:
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-series_13}}
+
+```XAML
 	<Style x:Key="MyDoubleLineStyle" TargetType="telerik:Line">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -295,7 +272,7 @@ Here is an example:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
@@ -303,27 +280,22 @@ Here is an example:
 
 
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-chart-series_14}}
+
+```C#
 	RadChart1.DefaultSeriesDefinition = line;
 	line.Appearance.Stroke = new SolidColorBrush(System.Windows.Media.Colors.Blue);
 	line.Appearance.Fill = new SolidColorBrush(System.Windows.Media.Colors.Blue);
 	line.Appearance.StrokeThickness = 1;
 	line.ItemStyle = this.Resources["MyDoubleLineStyle"] as Style;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-chart-series_15}}
+```
+```VB.NET
 	RadChart1.DefaultSeriesDefinition = line
 	line.Appearance.Stroke = New SolidColorBrush(System.Windows.Media.Colors.Blue)
 	line.Appearance.Fill = New SolidColorBrush(System.Windows.Media.Colors.Blue)
 	line.Appearance.StrokeThickness = 1
 	line.ItemStyle = TryCast(Me.Resources("MyDoubleLineStyle"), Style)
-{{endregion}}
+```
 
     
 ![{{ site.framework_name }} RadChart  ](images/RadChart_StylingChartSeries_06.PNG)

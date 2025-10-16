@@ -20,7 +20,6 @@ res_type: kb
     </tbody>
 </table>
 
-
 ## Description
 
 How to show [clustering]({%slug radmap-heatures-visualization-layer-clustering%}) bubble for single item in RadMap.
@@ -29,8 +28,7 @@ How to show [clustering]({%slug radmap-heatures-visualization-layer-clustering%}
 
 1. Create a class inheriting __DefaultClusterGenerator__ and set its __AutoExpandWhenSingle__ property to __False__.
 
-	#### __[C#]__
-	{{region kb-map-howto-show-clustering-bubble-for-single-item-0}}
+	```C#
 		public class CustomClusterGenerator : DefaultClusterGenerator
         {
             public CustomClusterGenerator()
@@ -38,12 +36,11 @@ How to show [clustering]({%slug radmap-heatures-visualization-layer-clustering%}
                 this.AutoExpandWhenSingle = false;
             }
         }
-	{{endregion}}
+	```
 
 2. Set the CustomClusterGenerator to the __ClusterGenerator__ property of the RadMap.
 
-    #### __[XAML]__
-	{{region kb-map-howto-show-clustering-bubble-for-single-item-1}}
+	```XAML
 		<telerik:RadMap >
             <telerik:RadMap.Resources>
                 <local:CustomClusterGenerator x:Key="CustomClusterGenerator" />
@@ -52,7 +49,7 @@ How to show [clustering]({%slug radmap-heatures-visualization-layer-clustering%}
                                         ClusterGenerator="{StaticResource CustomClusterGenerator}">
             </telerik:VisualizationLayer>
         </telerik:RadMap>
-	{{endregion}}
+	```
 
 > The namespace "local" refers to the namespace, where the "CustomClusterGenerator" class is defined.
 

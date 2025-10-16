@@ -15,8 +15,8 @@ The __RadPanelBar__ control needs a set of two control templates - one for the o
 Below you can see the default template:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
-{{region xaml-radpanelbar-required-template-parts_0}}
+
+```XAML
 	<ControlTemplate x:Key="PanelBarControlTemplate" TargetType="telerik:RadPanelBar">
 	    <Grid>
 	        <VisualStateManager.VisualStateGroups>
@@ -68,12 +68,12 @@ Below you can see the default template:
 	        </telerik:LayoutTransformControl>
 	    </Grid>
 	</ControlTemplate>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
-{{region xaml-radpanelbar-required-template-parts_1}}
+
+```XAML
 	<ControlTemplate x:Key="PanelBarControlTemplate" TargetType="{x:Type telerik:RadPanelBar}">
 	    <Grid>
 	        <telerik:LayoutTransformControl x:Name="transformationRoot" IsTabStop="False">
@@ -105,7 +105,7 @@ Below you can see the default template:
 	        </Trigger>
 	    </ControlTemplate.Triggers>
 	</ControlTemplate>
-{{endregion}}
+```
 {% endif %}
 
 We will now briefly describe the purpose of the main elements:
@@ -117,8 +117,8 @@ We will now briefly describe the purpose of the main elements:
 The other control template required by the __RadPanelBar__ control is the one for the panelbar items. Below you can see the default template:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
-{{region xaml-radpanelbar-required-template-parts_2}}
+
+```XAML
 	<ControlTemplate x:Key="PanelBarItemTopLevelTemplate" TargetType="telerik:RadPanelBarItem">
 	    <Grid x:Name="RootElement">
 	        <Grid.RowDefinitions>
@@ -293,12 +293,12 @@ The other control template required by the __RadPanelBar__ control is the one fo
 	        </Grid>
 	    </Grid>
 	</ControlTemplate>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
-{{region xaml-radpanelbar-required-template-parts_3}}
+
+```XAML
 	<ControlTemplate x:Key="PanelBarItemTopLevelTemplate" TargetType="{x:Type telerik:RadPanelBarItem}">
 	    <Grid x:Name="RootElement" SnapsToDevicePixels="True">
 	        <Grid.RowDefinitions>
@@ -440,7 +440,7 @@ The other control template required by the __RadPanelBar__ control is the one fo
 	        </Trigger>
 	    </ControlTemplate.Triggers>
 	</ControlTemplate>
-{{endregion}}
+```
 {% endif %}
 
 Following is a short description of the major elements in the template:
@@ -470,8 +470,8 @@ Following is a short description of the major elements in the template:
 And the default ControlTemplate of the RadPanelBarItem.Items is:
 
 {% if site.site_name == 'Silverlight' %}
-#### __XAML__
-{{region xaml-radpanelbar-required-template-parts_4}}
+
+```XAML
 	<ControlTemplate x:Key="PanelBarItemSecondLevelTemplate" TargetType="telerik:RadPanelBarItem">
 	    <Grid x:Name="RootElement">
 	        <Grid.RowDefinitions>
@@ -607,12 +607,12 @@ And the default ControlTemplate of the RadPanelBarItem.Items is:
 	        </Grid>
 	    </Grid>
 	</ControlTemplate>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __XAML__
-{{region xaml-radpanelbar-required-template-parts_5}}
+
+```XAML
 	<ControlTemplate x:Key="PanelBarItemSecondLevelTemplate" TargetType="{x:Type telerik:RadPanelBarItem}">
 	    <Grid x:Name="RootElement">
 	        <Grid.RowDefinitions>
@@ -718,5 +718,5 @@ And the default ControlTemplate of the RadPanelBarItem.Items is:
 	        </EventTrigger>
 	    </ControlTemplate.Triggers>
 	</ControlTemplate>
-{{endregion}}
+```
 {% endif %}

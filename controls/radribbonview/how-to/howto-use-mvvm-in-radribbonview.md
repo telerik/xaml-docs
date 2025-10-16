@@ -16,8 +16,8 @@ This example shows how to use a __RadRibbonView__ control with the Model-View-Vi
 
 In order to demonstrate how the RadRibbonView can be used in an MVVM scenario, we will setup up a small example. First, we will define a MainViewModel containing a collection of TabViewModels. Each TabViewModel will hold a collection of GroupViewModels, which will hold a collection of ButtonViewModels.
 
-#### __[C#] Example 1: Defining the ViewModels__
-{{region cs-howto-use-mvvm-in-radribbonview-0}}
+__Example 1: Defining the ViewModels__
+```C#
     public class MainViewModel : ViewModelBase
     {
         public ObservableCollection<TabViewModel> Tabs
@@ -79,11 +79,8 @@ In order to demonstrate how the RadRibbonView can be used in an MVVM scenario, w
     {
         public string Text { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the ViewModels__
-
-{{region vb-howto-use-mvvm-in-radribbonview-1}}
+```
+```VB.NET
     Public Class MainViewModel
         Inherits ViewModelBase
 
@@ -133,14 +130,14 @@ In order to demonstrate how the RadRibbonView can be used in an MVVM scenario, w
 	Public Class ButtonViewModel
 		Public Property Text() As String
 	End Class
-{{endregion}}
+```
 
 ### 2. __Define the RadRibbonView__
 
 Next we will define a RadRibbonView and set the DataContext to an instance of our MainViewModel. Then we can bind its __ItemsSource__ property to the __Tabs__ collection and wire up the hierarchy using [HierarchicalDataTemplates](https://docs.microsoft.com/en-us/dotnet/api/system.windows.hierarchicaldatatemplate?view=netframework-4.7.2) and a [DataTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.datatemplate?view=netframework-4.7.2).
 
-#### __[XAML] Example 3: Defining the RadRibbonView__
-{{region xaml-howto-use-mvvm-in-radribbonview-2}}
+__Example 3: Defining the RadRibbonView__
+```XAML
     <Grid>
         <Grid.Resources>
             <DataTemplate x:Key="ButtonTemplate">
@@ -164,7 +161,7 @@ Next we will define a RadRibbonView and set the DataContext to an instance of ou
         
         <telerik:RadRibbonView ApplicationName="MVVM Example" Title="RibbonView" ItemsSource="{Binding Tabs}" ItemTemplate="{StaticResource TabTemplate}" />
     </Grid>
-{{endregion}}
+```
 
 
 #### __Figure 1: MVVM RadRibbonView in the Office2016 theme__
@@ -178,10 +175,10 @@ Next we will define a RadRibbonView and set the DataContext to an instance of ou
 
 Using MVVM in a [SimplifiedRibbon]({%slug radribbonview-simplified-ribbon%}) scenario is as simple as setting the __SimplifiedItemTemplate__ property (along with the __ItemTemplate__) to the corresponding DataTemplate and setting the __LayoutMode__ property to __Simplified__. 
 
-#### __[XAML] Example 4: SimplifiedRibbon MVVM__
-{{region xaml-howto-use-mvvm-in-radribbonview-3}}
+__Example 4: SimplifiedRibbon MVVM__
+```XAML
       <telerik:RadRibbonView ApplicationName="MVVM Example"  Title="SimplifiedRibbon" ItemsSource="{Binding Tabs}" ItemTemplate="{StaticResource TabTemplate}" SimplifiedItemTemplate="{StaticResource TabTemplate}" LayoutMode="Simplified"/>
-{{endregion}}
+```
 
 #### __Figure 2: SimplifiedRibbon MVVM in the Office2016 theme__
 ![SimplifiedRibbon MVVM in the Office2016 theme](images/RadRibbonView_HowTo_Use_In_MVVM_SimplifiedRibbon.png)

@@ -16,9 +16,9 @@ When the `RadGridView` and `RadTreeListView` controls lost the focus, their sele
 
 To disable this and keep the selection color that is displayed when the control is focused, set the `EnableLostFocusSelectedState` property to `False`.
 
-#### __[XAML]__
-{{region gridview-selection-unfocused-state-0}}
+
+```XAML
     <telerik:RadGridView EnableLostFocusSelectedState="False"/>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Selection UnfocusedState 02](images/RadGridView_Selection_UnfocusedState_02.PNG)

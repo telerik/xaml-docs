@@ -40,8 +40,8 @@ This example shows how to change the colors of the scroll to match the Expressio
 4. Change the __Background__ property of the SelectionMiddleThumbStyle.
 5. Define a Style that targets PanZoomBarStyle and set its __ThumbStyle__, __AlternateThumbStyle__ and __SelectionMiddleThumbStyle__ properties to the previously extracted and modified Style objects.
 
-	#### __[XAML]__
-	{{region kb-chartview-change-panzoombar-colors-0}}
+	
+	```XAML
 		<Window.Resources>
 			<Style x:Key="CustomThumbStyle" TargetType="Thumb">
 				<Setter Property="Width" Value="8"/>
@@ -102,15 +102,15 @@ This example shows how to change the colors of the scroll to match the Expressio
 				<Setter Property="AlternateThumbStyle" Value="{StaticResource CustomAlternateThumbStyle}"/>
 			</Style>
 		</Window.Resources>   
-	{{endregion}}
+	```
 
 6. Set the PanZoomBarStyle of the chart's axis.
 
-	#### __[XAML]__
-	{{region kb-chartview-change-panzoombar-colors-1}}
+	
+	```XAML
 		 <telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis PanZoomBarStyle="{StaticResource CustomPanZoomBarStyle}"/>
 		</telerik:RadCartesianChart.HorizontalAxis>  
-	{{endregion}}
+	```
 
 ![{{ site.framework_name }} RadChartView Change PanZoomBar Colors](images/kb-chartview-change-panzoombar-colors-0.png)

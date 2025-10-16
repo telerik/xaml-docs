@@ -14,8 +14,8 @@ __RadTabControl__ exposes the __ScrollMode__ property which allows you to contro
 
 >The default value of the ScrollMode is __Pixel__.
 
-#### __[XAML] Example 1: Setting the ScrollMode property__
-{{region radtabcontrol-features-tabs-scrollmode_0}}
+__Example 1: Setting the ScrollMode property__
+```XAML
 	<telerik:RadTabControl ScrollMode="Viewport" >
 		<telerik:RadTabControl.Resources>
 			<Style TargetType="telerik:RadTabItem">
@@ -33,7 +33,7 @@ __RadTabControl__ exposes the __ScrollMode__ property which allows you to contro
 		<telerik:RadTabItem Header="Tab Item 8"/>
 		<telerik:RadTabItem Header="Tab Item 9"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 ### __Pixel__
 

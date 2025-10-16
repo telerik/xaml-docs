@@ -31,9 +31,8 @@ How to show a readonly schedule in RadScheduleView.
 Create a class inheriting [ReadOnlyBehavior](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.scheduleview.readonlybehavior) and set an instance of it to the __ReadOnlyBehavior__ property of the RadScheduleView. Override the virtual methods in order to disable deleting, dragging, editing, resizing, saving an appoitment and editing a slot by simply returning __false__ in all of them.
 
 1. Define the ViewModel
-
-	#### __[C#]__
-	{{region kb-scheduleview-howto-make-readonly-0}}
+	
+	```C#
 		public class ViewModel : ViewModelBase
         {
             public ObservableCollection<Appointment> Appointments { get; private set; }
@@ -51,12 +50,11 @@ Create a class inheriting [ReadOnlyBehavior](https://docs.telerik.com/devtools/w
                 };
             }
         }
-	{{endregion}}
+	```
 
 2. Create the custom ReadOnlyBehavior
-
-	#### __[C#]__
-	{{region kb-scheduleview-howto-make-readonly-1}}
+	
+	```C#
 		public class CustomReadOnlyBehavior : ReadOnlyBehavior
         {
             public override bool CanSaveAppointment(IReadOnlySettings readOnlySettings, IOccurrence occurrence)
@@ -89,12 +87,11 @@ Create a class inheriting [ReadOnlyBehavior](https://docs.telerik.com/devtools/w
                 return false;
             }
         }
-	{{endregion}}
+	```
 
 3. Define a RadScheduleView and set its __ReadOnlyBehavior__ property.
-
-	#### __[XAML]__
-	{{region kb-scheduleview-howto-make-readonly-2}}
+	
+	```XAML
 		<Grid>
             <Grid.DataContext>
                 <local:ViewModel />
@@ -109,7 +106,7 @@ Create a class inheriting [ReadOnlyBehavior](https://docs.telerik.com/devtools/w
                 </telerik:RadScheduleView.ReadOnlyBehavior>
             </telerik:RadScheduleView>
         </Grid>
-	{{endregion}}
+	```
 
     > Note that the namespace "local" refers to the namespace where the CustomReadOnlyBehavior class is defined.
 

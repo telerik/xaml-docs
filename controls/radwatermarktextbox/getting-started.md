@@ -12,10 +12,6 @@ position: 1
 
 This tutorial will walk you through the required steps for using __RadWatermarkTextBox__. 
 
-* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
-* [Adding Assembly References Manually](#adding-assembly-references-manually)
-* [Setting the WatermarkContent](#setting-watermark-content)
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use __RadWatermarkTextBox__ when working with NuGet packages, install the `Telerik.Windows.Controls.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
@@ -33,10 +29,10 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 ## Adding RadWatermarkTextBox to the Project 
 
-#### __[XAML] Example 1: Defining RadWatermarkTextBox__
-{{region radwatermarktextbox-gettingstarted_0}}
+__Example 1: Defining RadWatermarkTextBox__
+```XAML
 	<telerik:RadWatermarkTextBox/>
-{{endregion}}
+```
 
 #### __Figure 1: Defining RadWatermarkTextBox__
 ![Defining RadWatermarkTextBox](images/RadWatermarkTextBox_GettingStarted_01.png)
@@ -45,10 +41,10 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 > __RadWatermarkTextBox__ supports setting its __WatermarkContent__ or __WatermarkTemplate__ for visualizing the needed information. These mechanisms are covered in details in the [Features]({%slug radwatermarktextbox-features%}) topic.
 
-#### __[XAML] Example 2: Setting the WatermarkContent__
-{{region radwatermarktextbox-gettingstarted_1}}
+__Example 2: Setting the WatermarkContent__
+```XAML
 	<telerik:RadWatermarkTextBox WatermarkContent="Please enter your name"/>
-{{endregion}}
+```
 
 #### __Figure 2: Setting the WatermarkContent__
 
@@ -69,8 +65,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region radwatermarktextbox-getting-started_08}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -79,7 +75,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 3__ shows RadWatermarkTextBox with the **Windows8** theme applied.
 	

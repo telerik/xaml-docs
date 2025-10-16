@@ -19,10 +19,10 @@ The default content template of the buttons contains a [RadGlyph]({%slug common-
 
 >tip See the default buttons appearance in the [Visual Structure]({%slug radautosuggestbox-visual-structure%}) article.
 
-#### __[XAML] Example 1: Changing the default glyphs__
-{{region radautosuggestbox-appearance-customize-buttons-0}}
+__Example 1: Changing the default glyphs__
+```XAML
 	  <telerik:RadAutoSuggestBox QueryButtonContent="&#xe019;" ClearButtonContent="&#xe10c;" />
-{{endregion}}
+```
 
 #### Figure 1: Query and clear buttons with changed glyph icons
 ![{{ site.framework_name }} RadAutoSuggestBox Query and clear buttons with changed glyph icons](images/radautosuggestbox-appearance-customize-buttons-0.png)
@@ -31,8 +31,8 @@ The default content template of the buttons contains a [RadGlyph]({%slug common-
 
 To replace the default RadGlyph element used to display the buttons' content, set the __QueryButtonContentTemplate__ and __ClearButtonContentTemplate__ properties of RadAutoSuggestBox.
 
-#### __[XAML] Example 2: Changing the default content template__
-{{region radautosuggestbox-appearance-customize-buttons-1}}
+__Example 2: Changing the default content template__
+```XAML
 	<telerik:RadAutoSuggestBox QueryButtonContent="Search" ClearButtonContent="X">
 		<telerik:RadAutoSuggestBox.QueryButtonContentTemplate>
 			<DataTemplate>
@@ -45,7 +45,7 @@ To replace the default RadGlyph element used to display the buttons' content, se
 			</DataTemplate>
 		</telerik:RadAutoSuggestBox.ClearButtonContentTemplate>
 	</telerik:RadAutoSuggestBox>
-{{endregion}}
+```
 
 #### Figure 2: Query and clear buttons with changed content template
 ![{{ site.framework_name }} RadAutoSuggestBox Query and clear buttons with changed content template](images/radautosuggestbox-appearance-customize-buttons-1.png)
@@ -54,10 +54,10 @@ To replace the default RadGlyph element used to display the buttons' content, se
 
 To control the visibility of the query and clear buttons, set the __QueryButtonVisibility__ and __ClearButtonVisibility__ properties of RadAutoSuggestBox.
 
-#### __[XAML] Example 3: Hiding the query button__
-{{region radautosuggestbox-appearance-customize-buttons-2}}
+__Example 3: Hiding the query button__
+```XAML
 	<telerik:RadAutoSuggestBox QueryButtonVisibility="Collapsed" />
-{{endregion}}
+```
 
 #### Figure 3: Hidden query button
 ![{{ site.framework_name }} RadAutoSuggestBox Hidden query button](images/radautosuggestbox-appearance-customize-buttons-2.png)

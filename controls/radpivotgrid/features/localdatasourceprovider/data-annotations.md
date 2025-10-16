@@ -16,9 +16,9 @@ In this article we will show you how to use Data Annotations with __RadPivotGrid
 
 Let's create a simple application that will show data for different orders. Each order has the following descriptions: Date, Product, Quantity, Net, Promotion and Advertisement. So the class that will represent one Order will look this way:        
 
-#### __C#__
 
-{{region radpivotgrid-features-annotations_1}}
+
+```C#
 	public class Order
 	{
 	    public DateTime Date { get; set; }
@@ -28,11 +28,8 @@ Let's create a simple application that will show data for different orders. Each
 	    public string Promotion { get; set; }
 	    public string Advertisement { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-annotations_1}}
+```
+```VB.NET
 	Public Class Order
 		Public Property [Date]() As Date
 		Public Property Product() As String
@@ -41,7 +38,7 @@ Let's create a simple application that will show data for different orders. Each
 		Public Property Promotion() As String
 		Public Property Advertisement() As String
 	End Class
-{{endregion}}
+```
 
 And here is how __RadPivotGrid__ and __RadPivotFieldList__ will look like after we have added some sample data and group descriptions:
 
@@ -62,9 +59,9 @@ With Data Annotations you can apply attributes to the members of the class that 
 {% if site.site_name == 'WPF' %}
 * __Display__ - this is recommended attribute type to use. You can use two properties - Name and AutoGenerateField. The value of Name will be used in __RadPivotGrid__ and __RadPivotFieldList__ instead of the PropertyName. When you set AutoGenerateField to false, the property will not show up in __RadPivotFieldList__ and you will not be able to use it in your __RadPivotGrid__. Here is a sample how to set DataAnnotation with Display attribute:              
 
-#### __C#__
 
-{{region radpivotgrid-features-annotations_2}}
+
+```C#
 	//Rename the Date property to Month in the UI
 	[Display (Name="Month")]
 	public DateTime Date { get; set; }
@@ -72,62 +69,53 @@ With Data Annotations you can apply attributes to the members of the class that 
 	//Hide Product from the UI
 	[Display (AutoGenerateField=false)]
 	public string Product { get; set; }
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-annotations_2}}
+```
+```VB.NET
 	<Display(Name:="Month")> _
 	Public Property [Date]() As Date
 	
 	'Hide Product from the UI
 	<Display(AutoGenerateField:=False)> _
 	Public Property Product() As String
-{{endregion}}
+```
 
 * __Browsable__ - with this attribute you can define whether an item should be visible or not. There's no difference between setting browsable value to false or AutoGenerateField of Display attribute to false.             
 
-#### __C#__
 
-{{region radpivotgrid-features-annotations_3}}
+
+```C#
 	//Hide Product from the UI
 	[Browsable (false) ]
 	public string Product { get; set; }
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-annotations_3}}
+```
+```VB.NET
 	'Hide Product from the UI
 	<Browsable(False)> _
 	Public Property Product() As String
-{{endregion}}
+```
 
 * __DisplayName__ - the value of the attribute will be shown in __RadPivotGrid__ and __RadPivotFieldList__ instead of PropertyName. There is no difference in the final result when you use DisplayName and Display attribute (setting Name property). This is an oboslete attribute and we suggest you to use Display instead of it.
 
-#### __C#__
 
-{{region radpivotgrid-features-annotations_4}}
+
+```C#
 	//Rename the Date property to Month in the UI
 	[DisplayName ("Month")]
 	public DateTime Date { get; set; }
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-annotations_4}}
+```
+```VB.NET
 	'Rename the Date property to Month in the UI
 	<DisplayName("Month")> _
 	Public Property [Date]() As Date
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 * __Display__ - this is recommended attribute type to use. You can use two properties - Name and AutoGenerateField. The value of Name will be used in __RadPivotGrid__ and __RadPivotFieldList__ instead of the PropertyName. When you set AutoGenerateField to false, the property will not show up in __RadPivotFieldList__. Here is a sample how to set DataAnnotation with Display attribute:              
 
-#### __C#__
 
-{{region radpivotgrid-features-annotations_2}}
+
+```C#
 	//Rename the Date property to Month in the UI
 	[Display (Name="Month")]
 	public DateTime Date { get; set; }
@@ -135,43 +123,37 @@ With Data Annotations you can apply attributes to the members of the class that 
 	//Hide Product from the UI
 	[Display (AutoGenerateField=false)]
 	public string Product { get; set; }
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-annotations_2}}
+```
+```VB.NET
 	<Display(Name:="Month")> _
 	Public Property [Date]() As Date
 	
 	'Hide Product from the UI
 	<Display(AutoGenerateField:=False)> _
 	Public Property Product() As String
-{{endregion}}
+```
 
 * __Browsable__ - with this attribute you can define wheather a property will be visible or not. There's no difference between setting browsable value to false or AutoGenerateField of Display attribute to false.             
 
-#### __C#__
 
-{{region radpivotgrid-features-annotations_3}}
+
+```C#
 	//Hide Product from the UI
 	[Browsable (false) ]
 	public string Product { get; set; }
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-annotations_3}}
+```
+```VB.NET
 	'Hide Product from the UI
 	<Browsable(False)> _
 	Public Property Product() As String
-{{endregion}}
+```
 {% endif %}
 
 So let's modify our simple Order class and see the result in __RadPivotGrid__ and __RadPivotFieldList__.        
 
-#### __C#__
 
-{{region radpivotgrid-features-annotations_5}}
+
+```C#
 	public class Order
 	{
 	    //Rename the Date property to Month in the UI
@@ -192,11 +174,8 @@ So let's modify our simple Order class and see the result in __RadPivotGrid__ an
 	    [Browsable(false)]
 	    public string Advertisement { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-annotations_5}}
+```
+```VB.NET
 	Public Class Order
 		'Rename the Date property to Month in the UI
 		<Display(Name:="Month")> _
@@ -216,7 +195,7 @@ So let's modify our simple Order class and see the result in __RadPivotGrid__ an
 		<Browsable(False)> _
 		Public Property Advertisement() As String
 	End Class
-{{endregion}}
+```
 
 And here is the new result:
 

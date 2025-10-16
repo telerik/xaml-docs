@@ -37,18 +37,14 @@ __RadDocument__ has two states - measured and non-measured. Depending on the sta
 When the document is measured (for example, shown in a __RadRichTextBox__), you can select the part of the document which you want to make read-only and use the __InsertReadOnly()__ method of __RadRichTextBox__ or [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) respectively:
             
 
-#### __C#__
 
-{{region radrichtextbox-features-read-only-ranges_0}}
+
+```C#
     this.radRichTextBox.InsertReadOnlyRange();
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-read-only-ranges_0}}
+```
+```VB.NET
     Me.radRichTextBox.InsertReadOnlyRange()
-{{endregion}}
+```
 
 
 >tipGenerally, editing the content of a read only range is not possible through the UI and through __RadRichtextBox__'s API. However, when manipulating a document using __RadDocumentEditor__ you can set the __RespectReadOnlyRanges__ property of __RadDocumentEditor__ to *false* and read only ranges will be ignored.
@@ -58,9 +54,9 @@ When the document is measured (for example, shown in a __RadRichTextBox__), you 
 As opposed to when inserting with one of the methods of __RadRichTextBox__, when building a document from code you have to make sure that the annotations in it are explicitly paired. This can be achieved with the __PairWithStart()__ method of __AnnotationRangeEnd__. Here is an example which builds a __RadDocument__ with a read only range in it.
             
 
-#### __C#__
 
-{{region radrichtextbox-features-read-only-ranges_1}}
+
+```C#
     RadDocument document = new RadDocument();
     Section section = new Section();
     Paragraph paragraph = new Paragraph();
@@ -80,13 +76,8 @@ As opposed to when inserting with one of the methods of __RadRichTextBox__, when
 
     section.Blocks.Add(paragraph);
     document.Sections.Add(section);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-read-only-ranges_1}}
+```
+```VB.NET
     Dim document As New RadDocument()
     Dim section As New Section()
     Dim paragraph As New Paragraph()
@@ -106,7 +97,7 @@ As opposed to when inserting with one of the methods of __RadRichTextBox__, when
 
     section.Blocks.Add(paragraph)
     document.Sections.Add(section)
-{{endregion}}
+```
 
 
 
@@ -115,19 +106,14 @@ As opposed to when inserting with one of the methods of __RadRichTextBox__, when
 In order to remove a read only range, you should simply call the __DeleteReadOnlyRange()__ method of __RadRichTextBox__ or __RadDocumentEditor__:
         
 
-#### __C#__
 
-{{region radrichtextbox-features-read-only-ranges_2}}
+
+```C#
     this.radRichTextBox.DeleteReadOnlyRange();
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-read-only-ranges_2}}
+```
+```VB.NET
     Me.radRichTextBox.DeleteReadOnlyRange()
-{{endregion}}
+```
 
 
 
@@ -137,26 +123,21 @@ The above-demonstrated method will delete the read only range the caret is curre
 Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart__ element in the document, you can delete it with the __DeleteReadOnlyRange(ReadOnlyRangeStart start)__ method. For example, if you want to delete a particular range based on its __Tag__, you can do it as follows:
         
 
-#### __C#__
 
-{{region radrichtextbox-features-read-only-ranges_3}}
+
+```C#
     ReadOnlyRangeStart start = this.radRichTextBox.Document.EnumerateChildrenOfType<ReadOnlyRangeStart>().Where(x => x.Tag == "ReadOnly").FirstOrDefault();
     if (start != null)
     {
         this.radRichTextBox.DeleteReadOnlyRange(start);
     }
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-read-only-ranges_3}}
+```
+```VB.NET
     Dim start As ReadOnlyRangeStart = Me.radRichTextBox.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
     If start IsNot Nothing Then
 	    Me.radRichTextBox.DeleteReadOnlyRange(start)
     End If
-{{endregion}}
+```
 
 
 

@@ -34,8 +34,8 @@ Visual Studio will run code for designer use if you have enabled the __Project C
 
 To change the color variation of the theme at design-time, create a new UserControl that will contain the controls or a custom control. In in its static constructor, call the `LoadPreset` method of the palette of the chosen theme.
 
-#### __[XAML] MainWindow displaying a custom UserControl__
-{{region kb-themes-set-color-variation-design-time-0}}
+__MainWindow displaying a custom UserControl__
+```XAML
 	<Window x:Class="MyApplication.MainWindow"
 	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -48,10 +48,10 @@ To change the color variation of the theme at design-time, create a new UserCont
 	        <local:MyUserControl/>
 	    </Grid>
 	</Window>
-{{endregion}}
+```
 
-#### __[XAML] Custom UserControl__
-{{region kb-themes-set-color-variation-design-time-1}}
+__Custom UserControl__
+```XAML
 	<UserControl x:Class="MyApplication.MyUserControl"
 	             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -64,10 +64,10 @@ To change the color variation of the theme at design-time, create a new UserCont
 	        <telerik:RadButton HorizontalAlignment="Center" VerticalAlignment="Center" 	Content="RadButton"/>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
-#### __[C#] Setting the theme's color variation in the static constructor of the custom UserControl__
-{{region kb-themes-set-color-variation-design-time-2}}
+__Setting the theme's color variation in the static constructor of the custom UserControl__
+```C#
 	public partial class MyUserControl : UserControl
 	{
 	    static MyUserControl()
@@ -80,10 +80,8 @@ To change the color variation of the theme at design-time, create a new UserCont
 	        InitializeComponent();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Setting the theme's color variation in the static constructor of the custom UserControl__
-{{region kb-themes-set-color-variation-design-time-3}}
+```
+```VB.NET
 	Public Partial Class MyUserControl
 	    Inherits UserControl
 
@@ -95,7 +93,7 @@ To change the color variation of the theme at design-time, create a new UserCont
 	        InitializeComponent()
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 __Designer with the Dark color variation of the Fluent theme__
 

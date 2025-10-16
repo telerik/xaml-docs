@@ -21,14 +21,14 @@ To customize the FileBrowserDragVisual you will need to define an implicit Style
 
 > The FileBrowserDragVisual element can be found in the following namespace: `xmlns:fileDialogs="clr-namespace:Telerik.Windows.Controls.FileDialogs.DragDrop;assembly=Telerik.Windows.Controls.FileDialogs"`
 
-#### __[XAML] Example 1: Setting the drag visual properties__ 
-{{region radfiledialogs-features-dragdrop-customize-drag-visual-0}}
+__Example 1: Setting the drag visual properties__ 
+```XAML
 	<Application.Resources>
         <Style TargetType="fileDialogs:FileBrowserDragVisual">
             <Setter Property="DragVisualOffset" Value="50, 0" />
         </Style>
     </Application.Resources>
-{{endregion}}
+```
 
 > It is important to define the style in the application's Resources. Otherwise, it won't be applied.
 
@@ -48,8 +48,8 @@ You can use the IconTemplate property of the FileBrowserDragVisual control to de
 
 The following example shows how to define a custom template containing an image and some additional text showing the name of the drop target folder.
 
-#### __[XAML] Example 2: Setting the icon template__ 
-{{region radfiledialogs-features-dragdrop-customize-drag-visual-1}}
+__Example 2: Setting the icon template__ 
+```XAML
     <Application.Resources>
         <Style TargetType="fileDialogs:FileBrowserDragVisual">
             <Setter Property="IconTemplate">
@@ -67,7 +67,7 @@ The following example shows how to define a custom template containing an image 
             </Setter>
         </Style>
     </Application.Resources>
-{{endregion}}
+```
 
 #### __Figure 3: Custom icon template__
 ![{{ site.framework_name }} RadFileDialogs Custom icon template](images/filedialogs-drag-drop-customize-drag-visual-2.png)
@@ -78,8 +78,8 @@ You can use the ContentTemplate property of the FileBrowserDragVisual control to
 
 The following example shows how to define a custom template containing a list of the dragged files.
 
-#### __[XAML] Example 3: Setting the content template__ 
-{{region radfiledialogs-features-dragdrop-customize-drag-visual-2}}
+__Example 3: Setting the content template__ 
+```XAML
      <Application.Resources>
         <Style TargetType="fileDialogs:FileBrowserDragVisual">
             <Setter Property="ContentTemplate">
@@ -105,7 +105,7 @@ The following example shows how to define a custom template containing a list of
             </Setter>
         </Style>
     </Application.Resources>
-{{endregion}}
+```
 
 #### __Figure 4: Custom content template__
 ![{{ site.framework_name }} RadFileDialogs Custom content template](images/filedialogs-drag-drop-customize-drag-visual-3.png)

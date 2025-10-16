@@ -16,7 +16,7 @@ This article lists features that are common between the __RadMaskedInput__ contr
 * [Input Behavior](#input-behavior)
 * [Text and TextMode](#text-and-textmode-properties)
 * [ValueToTextConverter](#valuetotextconverter)
-* [Add/Remove the ClearButton](#addremove-the-clearbutton)
+* [Add/Remove the ClearButton](#add-remove-the-clearbutton)
 * [IsLastPositionEditable](#islastpositioneditable)
 * [TextBoxStyle](#textboxstyle)
 
@@ -24,13 +24,13 @@ This article lists features that are common between the __RadMaskedInput__ contr
 
 You can take advantage of the 'no-mask' functionality of the __RadMaskedTextInput,RadMaskedNumericInput__ and the __RadMaskedCurrenyInput__ controls by setting the __Mask__ property to __""__ like so:		
 
-#### __[XAML] Example 1: Setting no-mask functionality__
-{{region xaml-radmaskedinput-features-common_0}}
+__Example 1: Setting no-mask functionality__
+```XAML
 	<telerik:RadMaskedTextInput  Mask=""/>
 	<telerik:RadMaskedCurrencyInput  Mask=""/>
 	<telerik:RadMaskedDateTimeInput  Mask=""/>
 	<telerik:RadMaskedNumericInput Mask=""/>
-{{endregion}}
+```
 
 This feature creates __RadMaskedInput__ controls that allow unlimited input. And as the __Mask__ property is empty, the controls won't expect a certain number of characters and this is why they will automatically update to fit the user input.	  
 
@@ -54,8 +54,8 @@ The __RadMaskedInput__ controls expose a __Text__ property that gets the value d
 
 * __PlainText__: When this mode is enabled the __Text__ property value represents the formatted __Value__ without the placeholder characters.
 
-#### __[XAML] Example 2: Setting TextMode property in XAML__
-{{region xaml-radmaskedinput-features-common_1}}
+__Example 2: Setting TextMode property in XAML__
+```XAML
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 		<TextBlock Margin="10, 10, 10, 0" 
 				   FontWeight="Bold"
@@ -72,7 +72,7 @@ The __RadMaskedInput__ controls expose a __Text__ property that gets the value d
 									   TextMode="PlainText"
 									   Value="123" />
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Different Text Modes](images/radmaskedinput_features_text_mode.png)
 
@@ -82,8 +82,8 @@ The __RadMaskedInput__ controls allow you to set an __IValueConverter__ to chang
 
 Let's start by defining an __IValueConverter__:		
 
-#### __[C#] Example 3: Implementing IValueConverter interface__
-{{region cs-radmaskedinput-features-common_2}}
+__Example 3: Implementing IValueConverter interface__
+```C#
 	public class NumericValueToTextConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -112,10 +112,8 @@ Let's start by defining an __IValueConverter__:
 			throw new NotImplementedException();
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Implementing IValueConverter interface__
-{{region vb-radmaskedinput-features-common_3}}
+```
+```VB.NET
 	Public Class NumericValueToTextConverter
 		Implements IValueConverter
 		Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As System.Globalization.CultureInfo) As Object Implements IValueConverter.Convert
@@ -138,12 +136,12 @@ Let's start by defining an __IValueConverter__:
 			'Throw New NotImplementedException()
 		End Function
 	End Class
-{{endregion}}
+```
 
 Now we can define the __NumericValueToTextConverter__ as a resource in our application and apply it to the __RadMaskedNumericInput__ properties.		
 
-#### __[XAML] Example 5: Setting the IValueConverter to the ValueToTextConverter property in XAML__
-{{region xaml-radmaskedinput-features-common_4}}
+__Example 5: Setting the IValueConverter to the ValueToTextConverter property in XAML__
+```XAML
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 		<StackPanel.Resources>
 		  <local:NumericValueToTextConverter x:Key="numericValueToTextConverter" />  
@@ -156,7 +154,7 @@ Now we can define the __NumericValueToTextConverter__ as a resource in our appli
 									   ValueToTextConverter="{StaticResource numericValueToTextConverter}"
 									   Value="123.45" />
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput ValueToTextConverter](images/radmaskedinput_features_converter.png)
 
@@ -164,8 +162,8 @@ Now we can define the __NumericValueToTextConverter__ as a resource in our appli
 
 The default __Template__ of the __RadMaskedInput__ controls defines a __ClearButton__ that allows the user to clear the input. You can hide this button by setting the __IsClearButtonVisible__ property to __False__.
 
-#### __[XAML] Example 6: Setting the IsClearButtonVisible property__
-{{region xaml-radmaskedinput-features-common_5}}
+__Example 6: Setting the IsClearButtonVisible property__
+```XAML
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 		<TextBlock FontWeight="Bold" Text="IsClearButtonVisible='True'" />
 		<telerik:RadMaskedTextInput Margin="10" 
@@ -177,7 +175,7 @@ The default __Template__ of the __RadMaskedInput__ controls defines a __ClearBut
 									Mask="llll"
 									Value="abcd" />
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Clear Button Hidden](images/radmaskedinput_features_clear_button.png)
 
@@ -189,8 +187,8 @@ The __IsLastPositionEditable__ property indicates whether the last position in t
 
 The __RadMaskedInput__ controls have a `TextBoxStyle` property which allows you to modify the style of the underlying text box element representing the input. The property is of type `Style` which targets `PreviewInputTextBox`.
 
-#### __[XAML] Example 7: Setting TextBoxStyle__
-{{region xaml-radmaskedinput-features-common_6}}
+__Example 7: Setting TextBoxStyle__
+```XAML
 	<telerik:RadMaskedTextInput>
  		   <!-- This ResourceDictionary is not required if you use the NoXaml version of the Telerik dlls -->
       		   <!-- It is used to access the MaskedInputTextBoxStyle resource used with the BasedOn setting -->
@@ -208,7 +206,7 @@ The __RadMaskedInput__ controls have a `TextBoxStyle` property which allows you 
 			</Style>
 		</telerik:RadMaskedTextInput.TextBoxStyle>
 	</telerik:RadMaskedTextInput>
-{{endregion}}
+```
 
 ## See Also
  * [MaskedNumericInput]({%slug radmaskedinput-features-controls-numeric%})

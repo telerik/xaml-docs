@@ -16,10 +16,10 @@ The DateRangePicker control provides a variety of settings that can be used to c
 
 To format the string value that shows the start and end dates, you can use the `FormatString` property of `RadDateRangePicker`.
 
-#### __[XAML] Setting the FormatString property__
-{{region raddaterangepicker-text-input-formatting-0}}
+__Setting the FormatString property__
+```XAML
 	<telerik:RadDateRangePicker FormatString="{}Dates range: {0}" />
-{{endregion}}
+```
 
 ![Picture showing WPF RadDateRangePicker with custom format string](images/raddaterangepicker-text-input-formatting-0.png)
 
@@ -33,10 +33,10 @@ __Default placeholder symbol__
 
 To change the symbol, set the `Placeholder` property of `RadDateRangePicker`.
 
-#### __[XAML] Setting the Placeholder property__
-{{region raddaterangepicker-text-input-formatting-1}}
+__Setting the Placeholder property__
+```XAML
 	<telerik:RadDateRangePicker Placeholder="t"/>
-{{endregion}}
+```
 
 __Custom placeholder symbol__  
 ![Picture showing WPF RadDateRangePicker with custom placeholder](images/raddaterangepicker-text-input-formatting-2.png)
@@ -45,10 +45,10 @@ __Custom placeholder symbol__
 
 The default separator between the date texts is the `:` symbol. To change this, set the `Separator` property of `RadDateRangePicker`.
 
-#### __[XAML] Setting the Separator property__
-{{region raddaterangepicker-text-input-formatting-2}}
+__Setting the Separator property__
+```XAML
 	<telerik:RadDateRangePicker Separator="to"/>
-{{endregion}}
+```
 
 __Custom separator__  
 ![Picture showing WPF RadDateRangePicker with custom separator](images/raddaterangepicker-text-input-formatting-3.png)
@@ -57,11 +57,11 @@ __Custom separator__
 
 The date pattern allows you to set the formatting of the date parts of the text. To apply a custom pattern, set the `DatePattern` property of `RadDateRangePicker`.
 
-#### __[XAML] Setting the Separator property__
-{{region raddaterangepicker-text-input-formatting-2}}
+__Setting the Separator property__
+```XAML
 	<telerik:RadDateRangePicker DatePattern="d-M-yyyy"/>
 	<telerik:RadDateRangePicker DatePattern="yyyy/MM/dd"/>
-{{endregion}}
+```
 
 __Custom date patterns__   
   

@@ -40,8 +40,8 @@ You can find the required assemblies for each control from the Telerik UI for WP
 
 There are few dialogs that you can use in a similar way. __Example 1__ shows how to show a __RadOpenFileDialog__. You can use this code to also show the __open folder__ and __save file__ dialogs.
 
-#### __[C#] Example 1: Opening a dialog__ 
-{{region radfiledialogs-getting-started-0}}
+__Example 1: Opening a dialog__ 
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();	
 	openFileDialog.Owner = theHostWindowInstance;	
 	openFileDialog.ShowDialog();
@@ -49,7 +49,7 @@ There are few dialogs that you can use in a similar way. __Example 1__ shows how
 	{
 		string selectedFileName = openFileDialog.FileName;
 	}
-{{endregion}}
+```
 
 You can see how to define and show the different dialogs in the corresponding articles.
 
@@ -78,8 +78,8 @@ To change the theme, you can follow the steps below:
 
 	__Example 2__ demonstrates where you can merge the ResourceDictionaries so they are applied globally in the application.
 	
-	#### __[XAML] Example 2: Merging the ResourceDictionaries__  
-	{{region radfiledialogs-getting-started-1}}
+	__Example 2: Merging the ResourceDictionaries__  
+	```XAML
 		<Application x:Class="MyTestApplication.App"
 				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -96,7 +96,7 @@ To change the theme, you can follow the steps below:
 				</ResourceDictionary>
 			</Application.Resources>
 		</Application>
-	{{endregion}}
+	```
 
 #### __Figure 1: File dialog with VisualStudio2013 theme applied__
 ![File dialog with VisualStudio2013 theme applied](images/radfiledialogs-getting-started-01.png)

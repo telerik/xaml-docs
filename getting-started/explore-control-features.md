@@ -28,7 +28,7 @@ In addition to that, the **documentation** provides a section for each control t
 
 __Typical control documentation structure__  
 
-![Typical control documentation structure](images/typical-control-docs-structure.png "Typical control documentation structure")
+![Typical control documentation structure](images/typical-control-docs-structure.png)
 
 ## Design-time
 
@@ -36,7 +36,7 @@ Some of the most common tasks and configuration options are available in the con
 
 __Smart Tag features__  
 
-![Smart Tag features](images/smart-tag-features.png "Smart Tag features")
+![Smart Tag features](images/smart-tag-features.png)
 
 ## SDK Examples
 

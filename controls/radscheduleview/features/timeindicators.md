@@ -22,8 +22,8 @@ The TimeIndicator class allows you to set __Offset__ and __Location__.
 	* __AppointmentsArea__: The indicator is drawn only in the AppointmentsArea.
 	* __WholeArea__: The indicator is drawn in both areas - TimeRulerArea and AppointmentsArea.
 	
-#### __[XAML] Example 1: Adding time indicators in XAML__
-{{region radscheduleview-features-timeindicator-0}}
+__Example 1: Adding time indicators in XAML__
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition />
@@ -35,15 +35,15 @@ The TimeIndicator class allows you to set __Offset__ and __Location__.
 			</telerik:TimeIndicatorsCollection>
 		</telerik:RadScheduleView.TimeIndicatorsCollection>
 	</telerik:RadScheduleView>	
-{{endregion}}
+```
 
-#### __[C#] Example 2: Adding time indicators in code__
-{{region radscheduleview-features-timeindicator-1}}
+__Example 2: Adding time indicators in code__
+```C#
 	var collection = new TimeIndicatorsCollection();
 	collection.Add(new TimeIndicator() { Location = CurrentTimeIndicatorLocation.WholeArea });
 	collection.Add(new TimeIndicator() { Location = CurrentTimeIndicatorLocation.WholeArea, Offset = new TimeSpan(-2, -15, 0) });
 	this.radScheduleView.TimeIndicatorsCollection = collection;
-{{endregion}}
+```
 
 #### Figure 1: RadScheduleView with two time indicators
 ![{{ site.framework_name }} RadScheduleView RadScheduleView with two time indicators](images/radscheduleview-features-timeindicator-0.png)
@@ -64,8 +64,8 @@ This a special time indicator that is not in the TimeIndicatorsCollection, but i
 
 The following example shows how to inherit the TimeIndicator class and override its __GetDateTime__ method. This allows creating an indicator with a concrete date, instead of using an offset.
 
-#### __[C#] Example 3: Creating a custom TimeIndicator__
-{{region radscheduleview-features-timeindicator-2}}
+__Example 3: Creating a custom TimeIndicator__
+```C#
 	public class CustomTimeIndicator : TimeIndicator
     {
         public DateTime DateTime { get; set; }
@@ -75,16 +75,16 @@ The following example shows how to inherit the TimeIndicator class and override 
             return this.DateTime;
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Using the custom TimeIndicator__
-{{region radscheduleview-features-timeindicator-3}}	
+__Example 4: Using the custom TimeIndicator__
+```XAML	
 	<telerik:RadScheduleView.TimeIndicatorsCollection>
 		<telerik:TimeIndicatorsCollection>
 			<local:CustomTimeIndicator DateTime="5/7/2020 16:15" />
 		</telerik:TimeIndicatorsCollection>
 	</telerik:RadScheduleView.TimeIndicatorsCollection>
-{{endregion}}
+```
 
 ## See Also  
 * [Getting Started]({%slug radscheduleview-getting-started%})

@@ -43,9 +43,9 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 1 . Create a new business object and name it __TradeData__.
 
-#### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-with-manual-series-mapping_0}}
+
+```C#
 	public class TradeData
 	{
 	    public string Emission
@@ -116,13 +116,8 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	        return tradeData;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-with-manual-series-mapping_1}}
+```
+```VB.NET
 	Public Class TradeData
 	    Public Property Emission() As String
 	        Get
@@ -392,14 +387,14 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	        Return tradeData
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 2 . Add a new __RadChart__ declaration.
 
-#### __XAML__
 
-{{region xaml-radchart-populating-with-data-data-binding-with-manual-series-mapping_2}}
+
+```XAML
 	<Grid x:Name="LayoutRoot"
 	Background="White">
 	    <telerik:RadChart x:Name="radChart">
@@ -412,7 +407,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	        </telerik:RadChart.DefaultView>
 	    </telerik:RadChart>
 	</Grid>
-{{endregion}}
+```
 
 
 
@@ -420,9 +415,9 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 >tipYou can find a full list of supported chart types [here]({%slug radchart-features-chart-types-2d-charts%}).
 
-#### __XAML__
 
-{{region xaml-radchart-populating-with-data-data-binding-with-manual-series-mapping_3}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping LegendLabel="MSFT">
@@ -432,7 +427,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -442,9 +437,9 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 6 . __FieldName__ - specifies from where the data should be taken.
 
-#### __XAML__
 
-{{region xaml-radchart-populating-with-data-data-binding-with-manual-series-mapping_4}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -471,27 +466,22 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 7 . Set the ItemsSource property of the __RadChart__ control.
 
-#### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-with-manual-series-mapping_5}}
+
+```C#
 	//Gets trading data
 	this.radChart.ItemsSource = TradeData.GetWeeklyData("MSFT");
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-with-manual-series-mapping_6}}
+```
+```VB.NET
 	'Gets trading data'
 	Me.radChart.ItemsSource = TradeData.GetWeeklyData("MSFT")
-{{endregion}}
+```
 
 
 
@@ -500,9 +490,9 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 
 9 . The same functionality can be achieved with code-behind as well. Below is listed the equivalent procedural code.
 
-#### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-with-manual-series-mapping_7}}
+
+```C#
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.LegendLabel = "MSFT (Microsoft)";
 	seriesMapping.SeriesDefinition = new CandleStickSeriesDefinition();
@@ -523,13 +513,8 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	itemMapping.FieldName = "Close";
 	seriesMapping.ItemMappings.Add(itemMapping);
 	this.radChart.SeriesMappings.Add(seriesMapping);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-with-manual-series-mapping_8}}
+```
+```VB.NET
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.LegendLabel = "MSFT (Microsoft)"
 	seriesMapping.SeriesDefinition = New CandleStickSeriesDefinition()
@@ -550,7 +535,7 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Manua
 	itemMapping.FieldName = "Close"
 	seriesMapping.ItemMappings.Add(itemMapping)
 	Me.radChart.SeriesMappings.Add(seriesMapping)
-{{endregion}}
+```
 
 
 

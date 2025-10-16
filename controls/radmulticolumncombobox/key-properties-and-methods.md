@@ -24,15 +24,15 @@ With all settings for its __AutoCompleteMode, RadMultiColumnComboBox__ will high
 
 When there is no selection applied, the control will display an empty AutoCompleteBox. In case a custom text needs to be displayed in it, the __NullText__ property comes in handy.
 
-#### __[XAML] Example 1: Setting the NullText property__
-{{region radmulticolumncombobox-key_properties_0}}
+__Example 1: Setting the NullText property__
+```XAML
 	<telerik:RadMultiColumnComboBox VerticalAlignment="Top" DisplayMemberPath="Name" 
                                          NullText="Please enter input">
             <telerik:RadMultiColumnComboBox.ItemsSourceProvider>
                 <telerik:GridViewItemsSourceProvider ItemsSource="{Binding Clubs, Source={StaticResource MyViewModel}}"/>
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 #### __Figure 1: MultiColumnComboBox with NullText set__
 ![MultiColumnComboBox with NullText set](images/MultiColumnComboBox_KeyProperties_01.png)

@@ -35,9 +35,9 @@ __AutomationMode__ property is of enum type and accepts the following values:
 
 The next code snippet shows how the AutomationMode property can be set:
 
-#### __[C#] Example 1: Setting AutomationMode__
+__Example 1: Setting AutomationMode__
 
-{{region common-ui-automation_0}}
+```C#
 	using Telerik.Windows.Automation.Peers; 
 	
 	public partial class App : Application
@@ -48,7 +48,7 @@ The next code snippet shows how the AutomationMode property can be set:
 	        this.InitializeComponent();
 	    }
 	}
-{{endregion}}
+```
 
 ## UseDefaultHelpText
 
@@ -60,9 +60,9 @@ The default value is **true** - the class name of the control will be returned a
 
 The UseDefaultHelpText can be set similarly to the **AutomationMode** as demonstrated in **Example 2**.
 
-#### __[C#] Example 2: Setting UseDefaultHelpText__
+__Example 2: Setting UseDefaultHelpText__
 
-{{region common-ui-automation_1}}
+```C#
 	using Telerik.Windows.Automation.Peers; 
 	
 	public partial class App : Application
@@ -73,7 +73,7 @@ The UseDefaultHelpText can be set similarly to the **AutomationMode** as demonst
 	        this.InitializeComponent();
 	    }
 	}
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %} 
 

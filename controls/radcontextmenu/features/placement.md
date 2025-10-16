@@ -30,9 +30,9 @@ The placement property allows you to specify the position of the __RadContextMen
 
 Here is an example:
 
-#### __XAML__
 
-{{region xaml-radcontextmenu-features-placement_0}}
+
+```XAML
 	<TextBox x:Name="InputBox"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -43,7 +43,7 @@ Here is an example:
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadContextMenu with Placement Bottom](images/RadContextMenu_Features_Placement_01.png)
 
@@ -53,9 +53,9 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 
 >tipProperties of type __Rect__ cannot be declared in-line because this is not supported. Set the property as attribute by passing the x, y, width and height parameters. The type converter will handle them from there.          
 
-#### __XAML__
 
-{{region xaml-radcontextmenu-features-placement_1}}
+
+```XAML
 	<TextBox x:Name="InputBox1"
 	 Width="200"
 	 VerticalAlignment="Top">
@@ -67,7 +67,7 @@ The __PlacementRectangle__ is of type __Rect__ and specifies the position of the
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadContextMenu with Placement Rectangle](images/RadContextMenu_Features_Placement_02.png)
 
@@ -77,16 +77,16 @@ The __PlacementTarget__ property is used when the __RadContextMenu__ should be d
 
 >If you are using the same __RadContextMenu__ for multiple elements and you want to open it from the code behind, it is mandatory to set the __PlacementTarget__.          
 
-#### __C#__
 
-{{region cs-radcontextmenu-features-placement-01}}
+
+```C#
 	public Default_Cs()
 	{
 	    InitializeComponent();
 	    this.radContextMenu.PlacementTarget = this.InputBox;
 	    this.radContextMenu.IsOpen = true;
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadContextMenu with Placement Target](images/RadContextMenu_Features_Placement_01.png)
 
@@ -120,9 +120,9 @@ If there are any sub-menus in the __RadContextMenu__ their dropdown position can
 
 Here is an example:
 
-#### __XAML__
 
-{{region xaml-radcontextmenu-features-placement_2}}
+
+```XAML
 	<TextBox x:Name="InputBox2"
 	         Width="200"
 	         VerticalAlignment="Top">
@@ -137,7 +137,7 @@ Here is an example:
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadContextMenu with Menu Item DropDownPlacement](images/RadContextMenu_Features_Placement_03.png)
 

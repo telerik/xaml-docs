@@ -39,8 +39,8 @@ The default property accessor uses the following set of rules:
             
 If your business class satisfies these requirements you can use the default property accessor without any additional set-up. For example:        
 
-#### __[C#]__
-{{region radmap_visualization_layer_property_accessor_0}}
+
+```C#
 	public class MapItem : INotifyPropertyChanged, INotifyLocationChanged
 	{
 		private double baseZoomLevel = double.NaN;
@@ -137,10 +137,8 @@ If your business class satisfies these requirements you can use the default prop
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-{{region radmap_visualization_layer_property_accessor_0}}
+```
+```VB.NET
 	Public Class MapItem
 		Implements INotifyPropertyChanged, INotifyLocationChanged
 		Private m_baseZoomLevel As Double = Double.NaN
@@ -227,7 +225,7 @@ If your business class satisfies these requirements you can use the default prop
 			RaiseEvent LocationChanged(Me, New LocationChangedEventArgs(oldLocation, newLocation))
 		End Sub
 	End Class
-{{endregion}}
+```
 
 If your data item is represented by this class then the default property accessor can be used. It will use properties as following:        
 
@@ -243,8 +241,8 @@ Sometimes the default property accessor is not applicable because of the data so
 
 First you should create a new class which implements the IMapPropertyAccessor interface. For example:        
 
-#### __[C#]__
-{{region radmap_visualization_layer_property_accessor_1}}
+
+```C#
 	public class CustomPropertyAccessor : IMapPropertyAccessor
 	{
 		public double GetDouble(object item, DataMember dataMember)
@@ -309,10 +307,8 @@ First you should create a new class which implements the IMapPropertyAccessor in
 			return zoomRange;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-{{region radmap_visualization_layer_property_accessor_1}}
+```
+```VB.NET
 	Public Class CustomPropertyAccessor
 		Implements IMapPropertyAccessor
 		Public Function GetDouble(item As Object, member As DataMember) As Double _
@@ -367,12 +363,12 @@ First you should create a new class which implements the IMapPropertyAccessor in
 			Return range
 		End Function
 	End Class
-{{endregion}}
+```
 
 Now you should assign to the `PropertyAccessor` property of the VisualizationLayer to an instance of the CustomPropertyAccessor type and set the `UseDefaultPropertyAccessor` property to false:        
 
-#### __[C#]__
-{{region radmap_visualization_layer_property_accessor_2}}
+
+```C#
 	public Example()
 	{
 		InitializeComponent();
@@ -381,10 +377,8 @@ Now you should assign to the `PropertyAccessor` property of the VisualizationLay
 		this.visualizationLayer.UseDefaultPropertyAccessor = false;
 		this.visualizationLayer.ItemsSource = this.GetMapData();
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-{{region radmap_visualization_layer_property_accessor_2}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 	
@@ -392,4 +386,4 @@ Now you should assign to the `PropertyAccessor` property of the VisualizationLay
 		Me.visualizationLayer.UseDefaultPropertyAccessor = False
 		Me.visualizationLayer.ItemsSource = Me.GetMapData()
 	End Sub
-{{endregion}}
+```

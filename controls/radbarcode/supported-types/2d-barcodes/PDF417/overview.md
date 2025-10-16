@@ -22,7 +22,7 @@ The PDF417 barcode has the following structure:
 
 #### Figure 2: PDF417 RadBarcode's structure
 
-![barcode-2d-barcodes-pdf417-overview 002](../../../../radbarcodenew/supported-types/2d-barcodes/PDF417/images/barcode-2d-barcodes-pdf417-overview002.png)
+![barcode-2d-barcodes-pdf417-overview 002](/images/barcode-2d-barcodes-pdf417-overview002.png)
 
 The Data codewords are located in the middle section of the barcode and include the following sections:
 

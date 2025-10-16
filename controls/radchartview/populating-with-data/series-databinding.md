@@ -23,9 +23,9 @@ The following examples will demonstrate how to bind the [BarSeries]({%slug radch
 
 The series in a chart can be bound through XAML assuming the DataContext of our series is the data source. First we are going to create a ViewModel class which will hold our collection of Product. We will use the Product class define in the __Example 1__.
 
-#### __[C#] Example 1: Creating ViewModel class__
+__Example 1: Creating ViewModel class__
 
-{{region radchartview-series-databinding_0}}
+```C#
 	public class Product
     {
         public string Name { get; set; }
@@ -51,11 +51,8 @@ The series in a chart can be bound through XAML assuming the DataContext of our 
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating ViewModel class__
-
-{{region radchartview-series-databinding_1}}
+```
+```VB.NET
 	Public Class ViewModel
 		Public Property Data As ObservableCollection(Of Product)
 		Private rnd As Random = New Random()
@@ -72,31 +69,28 @@ The series in a chart can be bound through XAML assuming the DataContext of our 
 			Next
 		End Sub
 	End Class
-{{endregion}}
+```
 
 The next step is to set the DataContext of the MainWindow to our ViewModel class.
 
-#### __[C#] Example 2: Specifying DataContext of the MainWindow__
+__Example 2: Specifying DataContext of the MainWindow__
 
-{{region radchartview-series-databinding_2}}
+```C#
 	public MainWindow()
 	{
 	    InitializeComponent();
 	    this.DataContext = new ViewModel();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Specifying DataContext of the MainWindow__
-
-{{region radchartview-series-databinding_3}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Me.DataContext = New ViewModel()
 	End Sub
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Binding BarSeries in XAML__
-{{region radchartview-series-databinding_4}}
+__Example 3: Binding BarSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 
 		<telerik:RadCartesianChart.HorizontalAxis>
@@ -111,7 +105,7 @@ The next step is to set the DataContext of the MainWindow to our ViewModel class
 			<telerik:BarSeries x:Name="barSeries" CategoryBinding="Name" ValueBinding="QuantitySold" ItemsSource="{Binding Data}"/>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 1: Binding BarSeries in XAML 
 
@@ -121,8 +115,8 @@ The next step is to set the DataContext of the MainWindow to our ViewModel class
 
 For any series object the data source can be set to an enumerable of primitive numerical types. In this case the data points' values will the values in the enumerable themselves. For example for any series object the following code binds it:
 
-#### __[XAML] Example 3: Binding BarSeries in XAML__
-{{region radchartview-series-databinding_4}}
+__Example 3: Binding BarSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 
 		<telerik:RadCartesianChart.HorizontalAxis>
@@ -137,26 +131,23 @@ For any series object the data source can be set to an enumerable of primitive n
 			<telerik:BarSeries x:Name="barSeries" />
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 
-#### __[C#] Example 4: Binding BarSeries to primitive types__
-{{region radchartview-series-databinding_5}}	
+__Example 4: Binding BarSeries to primitive types__
+```C#	
 	public MainWindow()
 	{
 		InitializeComponent();
 		barSeries.ItemsSource = new double[] { 20, 30, 50, 10, 60, 40, 20, 80 };
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Binding BarSeries to primitive types__
-
-{{region radchartview-series-databinding_6}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		barSeries.ItemsSource = New Double() { 20, 30, 50, 10, 60, 40, 20, 80 }
 	End Sub	
-{{endregion}}
+```
 
 #### Figure 2: Binding BarSeries to primitive types
 ![Binding BarSeries to primitive types](images/series-databinding_2.png)
@@ -165,9 +156,9 @@ For any series object the data source can be set to an enumerable of primitive n
 
 Let's assume that we need to visualize how many products of certain types are sold for the last month. First we will create a product class and then we can bind a bar series to a collection of our products.
 
-#### __[C#] Example 5: Creating Product class__
+__Example 5: Creating Product class__
 
-{{region radchartview-series-databinding_7}}
+```C#
 	public class Product
 	{
 	    public string Name
@@ -181,11 +172,8 @@ Let's assume that we need to visualize how many products of certain types are so
 	        set;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Creating Product class__
-
-{{region radchartview-series-databinding_8}}
+```
+```VB.NET
 	Public Class Product
 	    Private _name As String
 	    Private _quantitySold As Double
@@ -207,11 +195,11 @@ Let's assume that we need to visualize how many products of certain types are so
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Example 6: Binding BarSeries in code behind__
+__Example 6: Binding BarSeries in code behind__
 
-{{region radchartview-series-databinding_9}}
+```C#
 	List<Product> dataSource = new List<Product>();
 	dataSource.Add(new Product() { Name = "Product 1", QuantitySold = 5  });
 	dataSource.Add(new Product() { Name = "Product 2", QuantitySold = 50  });
@@ -219,11 +207,8 @@ Let's assume that we need to visualize how many products of certain types are so
 	barSeries.CategoryBinding = new PropertyNameDataPointBinding() { PropertyName = "Name" };
 	barSeries.ValueBinding = new GenericDataPointBinding<Product, double>() { ValueSelector = product => product.QuantitySold };
 	barSeries.ItemsSource = dataSource;
-{{endregion}}
-
-#### __[VB.NET] Example 6: Binding BarSeries to a custom collection__
-
-{{region radchartview-series-databinding_5}}
+```
+```VB.NET
 	Dim dataSource As List(Of Product) = New List(Of Product)()
 	Dim nameBinding As PropertyNameDataPointBinding = New PropertyNameDataPointBinding
 	nameBinding.PropertyName = "Name"
@@ -232,7 +217,7 @@ Let's assume that we need to visualize how many products of certain types are so
 	barSeries.CategoryBinding = nameBinding
 	barSeries.ValueBinding = genericBinding
 	barSeries.ItemsSource = dataSource
-{{endregion}}
+```
 
 The two binding classes, __ValueBinding__ and __CategoryBinding__ are set so that the series knows which property to bind to the value of a data point and which property to bind
 to the category of a data point. RadChart supports two types of binding objects out of the box and these are __PropertyNameDataPointBinding__ and __GenericDataPointBinding__.
@@ -242,19 +227,16 @@ Also if binding is done through XAML, the PropertyNameDataPointBinding is the on
 If a series is bound to an observable collection, the series will update as soon as a property of a data item changes. If we needed to track the selling of our products in real-time, we can simply put the product types in an observable collection and whenever we update a product's sold quantity, the chart will be updated. For example:
 
 
-#### __[C#] Example 7: Binding BarSeries to ObservableCollection__
+__Example 7: Binding BarSeries to ObservableCollection__
 
-{{region radchartview-series-databinding_6}}
+```C#
 	ObservableCollection<Product> products = new ObservableCollection<Product>();
 	// fill collection
 	barSeries.CategoryBinding = new PropertyNameDataPointBinding() { PropertyName = "Name" };
 	barSeries.ValueBinding = new GenericDataPointBinding<Product, double>() { ValueSelector = product => product.QuantitySold };
 	barSeries.ItemsSource = products;
-{{endregion}}
-
-#### __[VB.NET] Example 7: Binding BarSeries to ObservableCollection__
-
-{{region radchartview-series-databinding_7}}
+```
+```VB.NET
 	Dim products As ObservableCollection(Of Product) = New ObservableCollection(Of Product)
 	' fill collection '
 	Dim nameBinding As PropertyNameDataPointBinding = New PropertyNameDataPointBinding
@@ -264,12 +246,12 @@ If a series is bound to an observable collection, the series will update as soon
 	barSeries.CategoryBinding = nameBinding
 	barSeries.ValueBinding = genericBinding
 	barSeries.ItemsSource = dataSource
-{{endregion}}
+```
 	
 The only requirement left for the code above to work is that our Product class needs to implement __INotifyPropertyChanged__ and raise the PropertyChanged event when its QuantitySold property changes. In __Example 8__ we will inherit ViewModelBase class which implement __INotifyPropertyChanged__ interface.
 
-#### __[C#] Example 8: Creating Product class__
-{{region radchartview-series-databinding_7}}
+__Example 8: Creating Product class__
+```C#
 	public class Product : ViewModelBase
 	{
 		public string Name { get; set; }
@@ -284,7 +266,7 @@ The only requirement left for the code above to work is that our Product class n
 			}
 		}
 	}
-{{endregion}}
+```
 
 
 ## See Also

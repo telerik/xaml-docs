@@ -10,22 +10,15 @@ position: 1
 
 # Getting Started
 
-
-
 Both RadCartesianChart and RadPolarChart contain an __Annotations__ collection which holds all the annotations plotted against the chart.
-      
 
->The RadChartView will visualize annotations only if it populated with data.
-        
+>The RadChartView will visualize annotations only if it populated with data.        
 
 ## Adding Cartesian Annotations
 
 When adding GridLine or PlotBand annotations to RadCartesianChart, you have to explicitly set their __Axis__ property to either the vertical or the horizontal axis. That way the annotation knows what its orientation is, and also, the exact coordinates on which it has to be rendered.
-        
 
-#### __XAML__
-
-{{region radchartview_annotations_getting_started_0}}
+```XAML
 	<telerik:RadCartesianChart x:Name="cartesianChart">
 	            
 	    <telerik:RadCartesianChart.Annotations>
@@ -43,13 +36,9 @@ When adding GridLine or PlotBand annotations to RadCartesianChart, you have to e
 	        <telerik:LinearAxis x:Name="horizontalAxis"/>
 	    </telerik:RadCartesianChart.HorizontalAxis>
 	</telerik:RadCartesianChart>	
-	{{endregion}}
+```
 
-
-
-#### __C#__
-
-{{region radchartview_annotations_getting_started_0}}
+```C#
 	cartesianChart.Annotations.Add(
 	    new CartesianGridLineAnnotation 
 	    { 
@@ -64,13 +53,8 @@ When adding GridLine or PlotBand annotations to RadCartesianChart, you have to e
 	        Value = 2.8, Stroke = new SolidColorBrush(Colors.Blue), 
 	        StrokeThickness = 1
 	    });
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchartview_annotations_getting_started_0}}
+```
+```VB.NET
 	cartesianChart.Annotations.Add(New CartesianGridLineAnnotation() With { _
 		.Axis = cartesianChart.VerticalAxis, _
 		.Value = 6, _
@@ -83,18 +67,13 @@ When adding GridLine or PlotBand annotations to RadCartesianChart, you have to e
 		.Stroke = New SolidColorBrush(Colors.Blue), _
 		.StrokeThickness = 1 _
 	})
-	{{endregion}}
-
-
+```
 
 ## Adding Polar Annotations
 
 When adding GridLine or PlotBand annotations to RadPolarChart, you do not need to set their axis association as it is implicitly resolved by their respective type. For example, PolarAxisGridLineAnnotation is implicitly associated with the polar axis, while RadialAxisPlotBandAnnotation is implicitly associated with the radial axis.
-        
 
-#### __XAML__
-
-{{region radchartview_annotations_getting_started_1}}
+```XAML
 	<telerik:RadPolarChart>
 	            
 	    <telerik:RadPolarChart.Annotations>
@@ -112,26 +91,17 @@ When adding GridLine or PlotBand annotations to RadPolarChart, you do not need t
 	    </telerik:RadPolarChart.PolarAxis>
 	            
 	</telerik:RadPolarChart>
-	{{endregion}}
+```
 
-
-
-#### __C#__
-
-{{region radchartview_annotations_getting_started_1}}
+```C#
 	polarChart.Annotations.Add(
 	    new PolarAxisGridLineAnnotation { Value = 2, Stroke = new SolidColorBrush(Colors.Red) });
 	polarChart.Annotations.Add(
 	    new PolarAxisGridLineAnnotation { Value = 7, Stroke = new SolidColorBrush(Colors.LightGreen) });
 	polarChart.Annotations.Add(
 	    new PolarAxisGridLineAnnotation { Value = 8, Stroke = new SolidColorBrush(Colors.LightBlue) });
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchartview_annotations_getting_started_1}}
+```
+```VB.NET
 	polarChart.Annotations.Add(New PolarAxisGridLineAnnotation() With { _
 		.Value = 2, _
 		.Stroke = New SolidColorBrush(Colors.Red) _
@@ -144,5 +114,4 @@ When adding GridLine or PlotBand annotations to RadPolarChart, you do not need t
 		.Value = 8, _
 		.Stroke = New SolidColorBrush(Colors.LightBlue) _
 	})
-	{{endregion}}
-
+```

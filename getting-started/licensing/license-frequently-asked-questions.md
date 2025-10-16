@@ -56,7 +56,7 @@ This depends on your license type.
 
 The most likely cause is that the newly installed Telerik UI for WPF components were released after the expiration date of your current license. To fix this issue:
 
-1. [Download a new license key]({%slug installing-license-key%}#downloading-the-license-key).
+1. [Download a new license key]({%slug installing-license-key%}).
 
 1. [Activate the new license key]({%slug installing-license-key%}) in your project.
 

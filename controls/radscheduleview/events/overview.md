@@ -165,9 +165,9 @@ __RadScheduleView__ exposes the following events regarding the data manipulation
 			1. ConfirmDialogViewModel
 	* __Cancel__ - set this boolean property to __True__, when you want to cancel the event.
 
-#### __C#__
 
-{{region radscheduleview-events-overview_0}}
+
+```C#
 	private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
 	{
 	    // cast to CloseDialogEventArgs
@@ -179,7 +179,7 @@ __RadScheduleView__ exposes the following events regarding the data manipulation
 	    // you can also cancel the event
 	    eventArgs.Cancel = true;
 	}
-{{endregion}}
+```
 
 ## See Also
 

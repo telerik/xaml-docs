@@ -26,8 +26,8 @@ How to add text in the center of a doughnut series.
 
 You can define the chart and position a TextBlock with the corresponding label on top of it as shown in __Example 1__.
 
-#### __[XAML] Example 1: Adding a TextBlock label__
-{{region xaml-kb-chartview-howto-place-text-in-center-of-doughnutseries-0}}
+__Example 1: Adding a TextBlock label__
+```XAML
 	
     <Grid>
         <telerik:RadPieChart>
@@ -35,7 +35,7 @@ You can define the chart and position a TextBlock with the corresponding label o
         </telerik:RadPieChart>
         <TextBlock Text="Label Text" VerticalAlignment="Center" HorizontalAlignment="Center" />
     </Grid>
-{{endregion}}
+```
 
 ## See Also
 

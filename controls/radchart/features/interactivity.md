@@ -23,19 +23,19 @@ The main __ChartArea__ events that you can use to implement some kind of interac
 
 The example below shows a text box with some details when a candle is clicked. __ItemClick__ event is also used to implement [drill-down charts]({%slug radchart-how-to-drill-down-chart%}).
 
-#### __XAML__
 
-{{region xaml-radchart-features-interactivity_0}}
+
+```XAML
 	<telerik:ChartDefaultView.ChartArea>
 	    <telerik:ChartArea ItemClick="ChartArea_ItemClick" />
 	</telerik:ChartDefaultView.ChartArea>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-interactivity_1}}
+
+```C#
 	public Sample()
 	{       
 	    InitializeComponent();
@@ -49,20 +49,15 @@ The example below shows a text box with some details when a candle is clicked. _
 	        "Trading details for {0:d}:\n\nOpen\t: {1:c}\nHigh\t: {2:c}\nLow\t: {3:c}\nClose\t: {4:c}\n\nVolume\t: {5}",
 	        td.FromDate, td.Open, td.High, td.Low, td.Close, td.Volume ), td.Emission, MessageBoxButton.OK );
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-interactivity_2}}
+```
+```VB.NET
 	      
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
 	    Dim td As TradeData = TryCast(e.DataPoint.DataItem, TradeData)
 	    MessageBox.Show(String.Format("Trading details for {0:d}:" & vbLf & vbLf & "Open" & vbTab & ": {1:c}" & vbLf & "High" & vbTab & ": {2:c}" & vbLf & "Low" & vbTab & ": {3:c}" & vbLf & "Close" & vbTab & ": {4:c}" & vbLf & vbLf & "Volume" & vbTab & ": {5}", td.FromDate, td.Open, td.High, td.Low, td.Close, _
 	     td.Volume), td.Emission, MessageBoxButton.OK)
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -74,9 +69,9 @@ On the snapshot below you can see the __MessageBox__ shown when the user has cli
 
 The latest version of the Chart control includes an enhancement of the Selection mechanism. It allows the developer to programmatically select items in the control. The following code snippet demonstrates one such scenario:
 
-#### __C#__
 
-{{region cs-radchart-features-interactivity_3}}
+
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    foreach (DataPoint dataPoint1 in this.radChart.DefaultView.ChartArea.DataSeries[0])
@@ -85,13 +80,8 @@ The latest version of the Chart control includes an enhancement of the Selection
 	            this.radChart.DefaultView.ChartArea.SelectItem(dataPoint1);
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-interactivity_4}}
+```
+```VB.NET
 	Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 	    For Each dataPoint1 As DataPoint In Chart1.DefaultView.ChartArea.DataSeries(0)
 	        If dataPoint1.YValue = 154.0 Then
@@ -99,7 +89,7 @@ The latest version of the Chart control includes an enhancement of the Selection
 	        End If
 	    Next
 	End Sub
-{{endregion}}
+```
 
 
 

@@ -67,8 +67,8 @@ The type of the passed event arguments is __ValueEditingEventArgs__ and expose t
 
 If you want to increase or decrease the TimeSpan section with a specific interval when the spin operation is performed, you can create custom code to specify the step for each section. In the event handler of the ValueEditing event, we can check the current section and modify the step of our needs. __Example 1__ demonstrates how we can change the spin step for Days (5 days) and Hours (2 hours).
 
-#### __[XAML] Example 1: Custom spin steps__
-{{region radtimespanpicker-features-text-input-behavior_1}}
+__Example 1: Custom spin steps__
+```XAML
 	private void RadTimeSpanPicker_ValueEditing(object sender, ValueEditingEventArgs e)
 	{
 		if (e.NewValue.HasValue)
@@ -90,14 +90,14 @@ If you want to increase or decrease the TimeSpan section with a specific interva
 			}
 		}
 	}
-{{endregion}}
+```
 
 ### Set Minimum and Maximum TimeSpan values
 
 To set minimum and maximum TimeSpan, we can again achieve this using custom code. In the __ValueEditing__ event handler, we can use the NewValue property from the event arguments to check if the value falls inside a specific TimeSpan range. __Example 2__ demonstrates how we can achieve this.
 
-#### __[XAML] Example 2: Set Minimum and Maximum TimeSpan__
-{{region radtimespanpicker-features-text-input-behavior_2}}
+__Example 2: Set Minimum and Maximum TimeSpan__
+```XAML
 	private void RadTimeSpanPicker_ValueEditing(object sender, ValueEditingEventArgs e)
 	{
 		if (e.NewValue.HasValue)
@@ -121,7 +121,7 @@ To set minimum and maximum TimeSpan, we can again achieve this using custom code
 		}
 		return newTimeSpan;
 	}
-{{endregion}}
+```
 
 ## Pasting new TimeSpan value
 

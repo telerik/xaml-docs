@@ -18,9 +18,9 @@ First, let's start with a real world scenario - you have a cell which shows a lo
 
 To make the editing textbox wraps the text as well you need to subscribe to the PreparingCellForEdit event, find the editing element and set its property:
 
-#### __C#__
 
-{{region cs-gridview-access-editing-element_0}}
+
+```C#
 	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 	    if ((string)e.Column.Header == "Name")
@@ -29,18 +29,15 @@ To make the editing textbox wraps the text as well you need to subscribe to the 
 	        tb.TextWrapping = TextWrapping.Wrap;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-access-editing-element_1}}
+```
+```VB.NET
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	    If DirectCast(e.Column.Header, String) = "Name" Then
 	        Dim tb = TryCast(e.EditingElement, TextBox)
 	        tb.TextWrapping = TextWrapping.Wrap
 	    End If
 	End Sub
-{{endregion}}
+```
 
 Now it is better:
 
@@ -48,9 +45,9 @@ Now it is better:
 
 Ok, what if I do not want have this text selected, but want to have the cursor positioned at the end of it? Here comes the other useful event - PreparedCellForEdit which fires when the cell is already prepared for editing:
 
-#### __C#__
 
-{{region cs-gridview-access-editing-element_2}}
+
+```C#
 	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 	    if ((string)e.Column.Header == "Name")
@@ -60,11 +57,8 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 	        tb.SelectionStart = tb.Text.Length;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-access-editing-element_3}}
+```
+```VB.NET
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	    If DirectCast(e.Column.Header, String) = "Name" Then
 	        Dim tb = TryCast(e.EditingElement, TextBox)
@@ -72,7 +66,7 @@ Ok, what if I do not want have this text selected, but want to have the cursor p
 	        tb.SelectionStart = tb.Text.Length
 	    End If
 	End Sub
-{{endregion}}
+```
 
 
 

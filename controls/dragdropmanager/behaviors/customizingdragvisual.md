@@ -22,8 +22,8 @@ The interface exposes the following members.
 
 This section shows how to create a custom drag visual provider that allows you to define a custom DataTemplate and use it with any DragDropBehavior implementation.
 
-#### __[C#] Example 1: Creating a custom drag visual provider__
-{{region dragdropmanager-behaviors-customizingdragvisual_0}}
+__Example 1: Creating a custom drag visual provider__
+```C#
 	public class CustomDragVisualProvider : DependencyObject, IDragVisualProvider
     {        
         public static readonly DependencyProperty DraggedItemTemplateProperty =
@@ -54,7 +54,7 @@ This section shows how to create a custom drag visual provider that allows you t
 
         public bool UseDefaultCursors { get; set; }
     }
-{{endregion}}
+```
 
 >important This approach is applicable for all controls that use a DragDropBehavior. For example, ScheduleViewDragDropBehavior, or a custom implementation of the DragDropBehavior class.
 
@@ -62,8 +62,8 @@ This section shows how to create a custom drag visual provider that allows you t
 
 This section shows how to setup a ListBoxDragDropBehavior that will use the custom drag visual provider implemented in the previous section.
 
-#### __[XAML] Example 2: Using the custom drag visual provider__
-{{region dragdropmanager-behaviors-customizingdragvisual_1}}
+__Example 2: Using the custom drag visual provider__
+```XAML
 	<ListBox ItemsSource="{Binding MyItems}" DisplayMemberPath="Name">
 		<ListBox.ItemContainerStyle>
 			<Style TargetType="ListBoxItem">
@@ -83,7 +83,7 @@ This section shows how to setup a ListBoxDragDropBehavior that will use the cust
 			</local:CustomDragVisualProvider>
 		</telerik:ListBoxDragDrop.DragVisualProvider>
 	</ListBox>
-{{endregion}}
+```
 
 #### Figure 1: Custom drag visual provider 
 ![dragdropmanager customizingdragvisual](images/dragdropmanager-customizingdragvisual-0.png)

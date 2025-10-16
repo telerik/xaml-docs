@@ -22,8 +22,8 @@ Below you can see this in action. The Window or UserControl is resized and the S
 ![raddiagrams howto preserverpositions 1](images/raddiagrams_howto_preserverpositions1.png)
 ![raddiagrams howto preserverpositions 2](images/raddiagrams_howto_preserverpositions2.png)
 
-#### __C#__
-{{region raddiagram-howto-maintain-shapes-positions-when-resizing-the-diagram-0}}
+
+```C#
     private void RadDiagram_SizeChanged(object sender, SizeChangedEventArgs e) 
     { 
         if(e.PreviousSize != null && e.PreviousSize.Width != 0 && e.PreviousSize.Height != 0) 
@@ -39,10 +39,8 @@ Below you can see this in action. The Window or UserControl is resized and the S
                 }); 
         } 
     }   
-{{endregion}}
-    
-#### __VB.NET__
-{{region raddiagram-howto-maintain-shapes-positions-when-resizing-the-diagram-1}}
+```
+```VB.NET
     Private Sub RadDiagram_SizeChanged(sender As Object, e As SizeChangedEventArgs)
         If e.PreviousSize IsNot Nothing AndAlso e.PreviousSize.Width <> 0 AndAlso e.PreviousSize.Height <> 0 Then
             Dim deltaX As Double = (e.NewSize.Width / e.PreviousSize.Width)
@@ -56,7 +54,7 @@ Below you can see this in action. The Window or UserControl is resized and the S
 			End Function)
         End If
     End Sub
-{{endregion}}
+```
 
 ## See Also
  * [Resizing]({%slug raddiagrams-features-resizing%})

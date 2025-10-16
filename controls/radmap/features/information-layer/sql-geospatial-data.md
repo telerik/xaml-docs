@@ -32,8 +32,8 @@ The __SqlGeospatialDataReader__ supports the following geometry types:
 
 The coordinates for geometries may be 2D (x, y), 3D (x, y, z), 4D (x, y, z, m) with an m value that is part of a linear referencing system or 2D with an m value (x, y, m). However the __SqlGeospatialDataReader__ uses the x and y coordinates only, so that the z and m coordinates will be ignored. The __SqlGeospatialDataReader__ can be used in the InformationLayer.Reader property the same way as the MapShapeReader. The sample code is below:        
 
-#### __XAML__
-{{region radmap-features-sql-geospatial-data_0}}
+
+```XAML
 	<telerik:InformationLayer x:Name="informationLayer">
 	    <telerik:InformationLayer.Reader>
 	        <telerik:SqlGeospatialDataReader x:Name="sqlGeospatialDataReader" 
@@ -42,7 +42,7 @@ The coordinates for geometries may be 2D (x, y), 3D (x, y, z), 4D (x, y, z, m) w
 	                   GeospatialPropertyName="Point" ToolTipFormat="Area" PreviewReadCompleted="reader_PreviewReadCompleted" />
 	    </telerik:InformationLayer.Reader>
 	</telerik:InformationLayer>
-{{endregion}}
+```
 
 It allows using the __ClearLayer__, __ExtendedPropertySet__, __ToolTipFormat__, __ToolTipTemplate__, __ToolTipStyle__ and __CoordinateConverter__ properties the same way they are used in MapShapeReader. Also it supports the PreviewReadCompleted and ReadCompleted events which are used in MapShapeReader.        
 
@@ -63,17 +63,17 @@ The __SqlGeospatialDataReader__ class allows using the following data sources:
 Also the __SqlGeospatialDataReader__ can use any custom data class which implements the IEnumerable interface and contains a property with geospatial data in __Wkt__ (Well known text) or __Wkb__ (Well known binary) format. In this case the geospatial property should be a string, byte array or any other type which allows to get geospatial data in Wkt using the ToString() method. Note, the data models in __Visual Studio 2010__ (except the Telerik OpenAccess Domain Model) do not allow to use native SQL geospatial field types. You will need to create for example appropriate views on the SQL server which converts the native geospatial field to WKT or WKB formatted field. It could be done using the __STAsText__ and __STAsBinary__ stored procedures. A sample view definition is shown:        
 
 #### __SQL__
-{{region radmap-features-sql-geospatial-data_1}}
+```SQL
 	SELECT        id, Area, Latitude, Longitude, GeoLocation.STAsBinary() AS Point
 	FROM            dbo.Locations
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 If you use *Entity Data Model*, *Linq to SQL* or *Telerik OpenAccess Domain Model* in your WPF application, then you can use the following sample XAML code to display your geospatial data: 
 {% endif %}
 
-#### __XAML__
-{{region radmap-features-sql-geospatial-data_2}}
+
+```XAML
 	<Window x:Class="EntityDataModelTest.MainWindow"
 	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -102,14 +102,14 @@ If you use *Entity Data Model*, *Linq to SQL* or *Telerik OpenAccess Domain Mode
 			</telerik:RadMap>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 If you use *Wcf Data Service* or *Domain Service* in your Silverlight application, then their instances cannot be used directly to get the geospatial table data for the __SqlGeospatialDataReader__. Source property. In this case the geospatial data is retrieved asynchronously. So, you should use the __Completed__ event to set the *SqlGeospatialDataReader.Source*. It will be useful to use the small proxy class like to the following sample class for *Domain Service*:
 {% endif %}
 
-#### __C#__
-{{region radmap-features-sql-geospatial-data_3}}
+
+```C#
 	public class DomainServiceContext : INotifyPropertyChanged
 	{
 	  private DomainService1 domainService1Context = new DomainService1();
@@ -151,10 +151,8 @@ If you use *Wcf Data Service* or *Domain Service* in your Silverlight applicatio
 	    }
 	  }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-features-sql-geospatial-data_4}}
+```
+```VB.NET
 	Public Class DataBaseContext
 	      Inherits Database1Entities1
 	      Implements INotifyPropertyChanged
@@ -198,6 +196,6 @@ If you use *Wcf Data Service* or *Domain Service* in your Silverlight applicatio
 			  End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 >tip In our {% if site.site_name == 'Silverlight' %}[SDK examples repository](https://github.com/telerik/xaml-sdk/tree/master/Map/Silverlight/SQLGeospatialData){% else %}[SDK examples repository](https://github.com/telerik/xaml-sdk/tree/master/Map/WPF/SQLGeospatialData){% endif %} you can find a runnable example showing how to define a Wkt reader that loads sample data from a collection of Wkt based objects. 

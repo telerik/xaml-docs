@@ -14,9 +14,9 @@ This tutorial will show you how to display a __RadTreeView__ with flat, self-ref
 
 Consider the following very simple data object:
 
-#### __[C#] Example 1: Defining the DataItem class__
+__Example 1: Defining the DataItem class__
 
-{{region cs-radtreeview-how-to-bind-to-self-referencing-data_0}}
+```C#
 	public class DataItem
     {
         public int Id
@@ -46,11 +46,8 @@ Consider the following very simple data object:
             this.OwnerCollection = collection;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the DataItem class__
-
-{{region vb-radtreeview-how-to-bind-to-self-referencing-data_1}}
+```
+```VB.NET
 	Public Class DataItem
     Inherits ViewModelBase
 
@@ -66,13 +63,13 @@ Consider the following very simple data object:
         Me.OwnerCollection = collection
     End Sub
 End Class
-{{endregion}}
+```
 
 Those data objects are added into a special __DataItemCollection__ class, that inherits __ObservableCollection<T>__ and implements an AssociatedItem property that holds the root of each node.
 
-#### __[C#] Example 2: Defining DataItemCollection__
+__Example 2: Defining DataItemCollection__
 
-{{region cs-radtreeview-how-to-bind-to-self-referencing-data_2}}
+```C#
 	 public class DataItemCollection : ObservableCollection<DataItem>
     {
         public DataItemCollection()
@@ -111,11 +108,8 @@ Those data objects are added into a special __DataItemCollection__ class, that i
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining DataItemCollection__
-
-{{region vb-radtreeview-how-to-bind-to-self-referencing-data_3}}
+```
+```VB.NET
 		Public Class DataItemCollection
 			Inherits ObservableCollection(Of DataItem)
 
@@ -142,7 +136,7 @@ Those data objects are added into a special __DataItemCollection__ class, that i
 				End If
 		End Sub
 End Class
-{{endregion}}
+```
 
 Normally when you load your data objects from a service in your application, you will have auto-generated partial classes, that are relatively easy to extend. 
 
@@ -150,46 +144,46 @@ Now we are ready to data-bind our __RadTreeView__:
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __[XAML] Example 3: Defining the resources__
+__Example 3: Defining the resources__
 
-{{region xaml-radtreeview-how-to-bind-to-self-referencing-data_4}}
+```XAML
 	<example:HierarchyConverter x:Key="HierarchyConverter" />
 	
 	<telerik:HierarchicalDataTemplate x:Key="ItemTemplate"
 	  ItemsSource="{Binding Converter={StaticResource HierarchyConverter}}">
 	    <TextBlock Text="{Binding Text}" />
 	</telerik:HierarchicalDataTemplate>
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __[XAML] Example 3: Defining the resources__
+__Example 3: Defining the resources__
 
-{{region xaml-radtreeview-how-to-bind-to-self-referencing-data_466}}
+```XAML
 	<example:HierarchyConverter x:Key="HierarchyConverter" />
 	
 	<HierarchicalDataTemplate x:Key="ItemTemplate"
 	  ItemsSource="{Binding Converter={StaticResource HierarchyConverter}}">
 	    <TextBlock Text="{Binding Text}" />
 	</HierarchicalDataTemplate>
-{{endregion}}
+```
 
 {% endif %}
 
-#### __[XAML] Example 4: Defining the RadTreeView__
+__Example 4: Defining the RadTreeView__
 
-{{region xaml-radtreeview-how-to-bind-to-self-referencing-data_5}}
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView"
 	 ItemTemplate="{StaticResource ItemTemplate}"
 	 ItemsSource="{Binding Converter={StaticResource HierarchyConverter}}"/>
-{{endregion}}
+```
 
 There is one non-standard thing: all __ItemsSource__ bindings are made through a __ValueConverter__. This __ValueConverter__ will create the "real" hierarchy for us: 
 
-#### __[C#] Example 5: Defining the HierarchyConverter__
+__Example 5: Defining the HierarchyConverter__
 
-{{region cs-radtreeview-how-to-bind-to-self-referencing-data_6}}
+```C#
 	public class HierarchyConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -219,11 +213,8 @@ There is one non-standard thing: all __ItemsSource__ bindings are made through a
             throw new NotImplementedException();
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 5: Defining the HierarchyConverter__
-
-{{region vb-radtreeview-how-to-bind-to-self-referencing-data_7}}
+```
+```VB.NET
 		Public Class HierarchyConverter
 			Inherits IValueConverter
 
@@ -249,13 +240,13 @@ There is one non-standard thing: all __ItemsSource__ bindings are made through a
 				Throw New NotImplementedException()
 		End Function
 End Class
-{{endregion}}
+```
 
 When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__, so the __Convert()__ method will return all __DataItem__ objects from the __Owner__ collection that have __ParentID__ equal to the __ID__ of the passed __DataItem__. When a __DataItemCollection__ is passed, we are binding the RadTreeView, so the __Convert()__ method will return the root-level __DataItem__ objects, that have __ParentID=0__. Of course, it is up to you to decide whether you want a single, or separate converters for both of the cases. It is done in this way for simplicity, but if you want, you could split the code into two classes.
 
-#### __[C#] Example 6: Populating the RadTreeView__
+__Example 6: Populating the RadTreeView__
 
-{{region cs-radtreeview-how-to-bind-to-self-referencing-data_8}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -283,11 +274,8 @@ When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__
 
 		this.DataContext = source;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Populating the RadTreeView__
-
-{{region vb-radtreeview-how-to-bind-to-self-referencing-data_9}}
+```
+```VB.NET
 	Public Sub MainWindow()
 		InitializeComponent()
 		Dim source = New DataItemCollection() From {
@@ -310,7 +298,7 @@ When a __DataItem__ object is passed as value, we are binding a __TreeViewItem__
 
 		Me.DataContext = source
 	End Sub
-{{endregion}}
+```
 
 #### __Image 1: Self-Referencing RadTreeView__ 
 ![Self referencing RadTreeView](images/RadTreeView_HowToBindToSelfReferencingData_010.PNG)

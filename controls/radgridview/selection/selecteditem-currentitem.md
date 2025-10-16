@@ -16,15 +16,15 @@ This article explains the usage of the [SelectedItem](#selecteditem), [CurrentIt
 
 The **SelectedItem** property of RadGridView is used to access the data item of the selected row. It changes its value every time the selected row changes and exposes the object to which the row is bound. As it is a dependency property, you can easily bind it to a value in your viewmodel as demonstrated in **Example 1** & **Example 2**.
 
-#### __[XAML] Example 1: Binding to SelectedItem__
+__Example 1: Binding to SelectedItem__
 
-{{region xaml-gridview-selection-selecteditem-currentitem-1}}
+```XAML
 	<telerik:RadGridView SelectedItem="{Binding SelectedItem}" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: The viewmodel's SelectedItem property__
+__Example 2: The viewmodel's SelectedItem property__
 
-{{region cs-gridview-selection-selecteditem-currentitem-1}}
+```C#
 	public class MainViewModel : ViewModelBase
 	{
 		private object selectedItem;
@@ -42,11 +42,8 @@ The **SelectedItem** property of RadGridView is used to access the data item of 
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: The viewmodel's SelectedItem property__
-
-{{region vb-gridview-selection-selecteditem-currentitem-1}}
+```
+```VB.NET
 	Public Class MainViewModel
 	Inherits ViewModelBase
 
@@ -64,7 +61,7 @@ The **SelectedItem** property of RadGridView is used to access the data item of 
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 ## CurrentItem
 

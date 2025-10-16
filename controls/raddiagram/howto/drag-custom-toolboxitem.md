@@ -16,9 +16,9 @@ This tutorial describes how to implement a drag/drop operation between a custom 
 
 For the purpose of this tutorial we will create e sample __Grid__ with two columns - the first one holding a __RadDiagramToolbox__ and the second one - a __RadDiagram__.                
 
-#### __XAML__
 
-{{region raddiagram-howto-drag-custom-toolboxitem-0}}
+
+```XAML
 	  <Grid>
 	    <Grid.DataContext>
 	        ...
@@ -45,7 +45,7 @@ For the purpose of this tutorial we will create e sample __Grid__ with two colum
 	                                                    Converter={StaticResource BooleanToVisibilityConverter}}" />
 	    <telerik:RadDiagram Grid.Column="1" />
 	</Grid>
-{{endregion}}
+```
 
 >tip You can find the __DataContext__ implementation and the __Resources__ section of the __Grid__ in the [DiagramToolbox - How to Populate RadDiagramToolbox with Custom Data Items]({%slug raddiagram-extensions-toolbox%}#how-to-populate-raddiagramtoolbox-with-custom-data-items) section.                    
 
@@ -58,9 +58,9 @@ However, please note that the dragged shapes don't keep their original __Geometr
 
 For that purpose, we need to first attach an event handler for the default __SerializationService ItemSerializing__ event. The default __SerializationService__ is the one internally handling the serialization of the dragged toolbox shapes and once you attach a handler for the __ItemSerializing__ event, you will be able to plug into that serialization and serialize more properties of the __RadDiagram(Container)Shapes__.
 
-#### __C#__
 
-{{region raddiagram-howto-drag-custom-toolboxitem-0}}
+
+```C#
 	public ToolboxDragDropExample()
 	{
 	    InitializeComponent();
@@ -74,11 +74,8 @@ For that purpose, we need to first attach an event handler for the default __Ser
 	        e.SerializationInfo["MyGeometry"] = (e.Entity as RadDiagramShape).Geometry.ToString(CultureInfo.InvariantCulture);
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region raddiagram-howto-drag-custom-toolboxitem-0}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    AddHandler SerializationService.[Default].ItemSerializing, AddressOf Default_ItemSerializing
@@ -89,19 +86,19 @@ For that purpose, we need to first attach an event handler for the default __Ser
 	        e.SerializationInfo("MyGeometry") = TryCast(e.Entity, RadDiagramShape).Geometry.ToString(CultureInfo.InvariantCulture)
 	    End If
 	End Sub
-{{endregion}}
+```
 
 Next we need to deserialize the __Geometry__ property after the end of the drop operation. As the __RadDiagram__ receives a __DiagramDropInfo__ object, it knows that there is a serialization information that has to be processed. This is why a drop operation originating from a __RadDiagramToolbox__ fires the __RadDiagram ShapeDeserialized__ event. And you can attach a handler for it in the __RadDiagram__ definition and deserialize any set of custom properties that you have manually serialized.
 
-#### __XAML__
 
-{{region raddiagram-howto-drag-custom-toolboxitem-1}}
+
+```XAML
 	 <telerik:RadDiagram Grid.Column="1" ShapeDeserialized="RadDiagram_ShapeDeserialized"/>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region raddiagram-howto-drag-custom-toolboxitem-1}}
+
+```C#
 	private void RadDiagram_ShapeDeserialized(object sender, ShapeSerializationRoutedEventArgs e)
 	{
 	    if (e.Shape as RadDiagramShape != null)
@@ -109,25 +106,22 @@ Next we need to deserialize the __Geometry__ property after the end of the drop 
 	        (e.Shape as RadDiagramShape).Geometry = GeometryParser.GetGeometry(e.SerializationInfo["MyGeometry"].ToString());
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region raddiagram-howto-drag-custom-toolboxitem-1}}
+```
+```VB.NET
 	Private Sub RadDiagram_ShapeDeserialized(sender As Object, e As ShapeSerializationRoutedEventArgs)
 	    If TryCast(e.Shape, RadDiagramShape) IsNot Nothing Then
 	        TryCast(e.Shape, RadDiagramShape).Geometry = GeometryParser.GetGeometry(e.SerializationInfo("MyGeometry").ToString())
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ![raddiagram-howto-customtoolboxdrop-geometry](images/raddiagram-howto-customtoolboxdrop-geometry.png)
 
 Now that we have configured the __Geometry__ property serialization, we can go ahead and serialize more properties of the dragged shapes. For instance, in this example, the __RadDiagramToolbox__ is populated with __MyShape__ business items. The __Header__ of these items is displayed underneath each shape in the toolbox and we can serialize it to use it as a __Content__ of the dropped shape on the diagramming surface.                
 
-#### __C#__
 
-{{region raddiagram-howto-drag-custom-toolboxitem-2}}
+
+```C#
 	void Default_ItemSerializing(object sender, SerializationEventArgs<IDiagramItem> e)
 	{
 	    if (e.Entity is RadDiagramShape)
@@ -146,11 +140,8 @@ Now that we have configured the __Geometry__ property serialization, we can go a
 	        (e.Shape as RadDiagramShape).Content = e.SerializationInfo["DataContent"].ToString();
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region raddiagram-howto-drag-custom-toolboxitem-2}}
+```
+```VB.NET
 	Private Sub Default_ItemSerializing(sender As Object, e As SerializationEventArgs(Of IDiagramItem))
 	    If TypeOf e.Entity Is RadDiagramShape Then
 	        e.SerializationInfo("MyGeometry") = TryCast(e.Entity, RadDiagramShape).Geometry.ToString(CultureInfo.InvariantCulture)
@@ -166,7 +157,7 @@ Now that we have configured the __Geometry__ property serialization, we can go a
 	        TryCast(e.Shape, RadDiagramShape).Content = e.SerializationInfo("DataContent").ToString()
 	    End If
 	End Sub
-{{endregion}}
+```
 
 If you run the project now, you will be able to drag shapes from the toolbox and drop them in the diagram. The shapes will keep their __Geometry__ and they will display the original __Header__ data property as their __Content__.
 ![raddiagram-howto-customtoolboxdrop-content](images/raddiagram-howto-customtoolboxdrop-content.png)

@@ -12,8 +12,8 @@ position: 7
 
 Scale interactivity refers to the ability for the end-user to interact with the scale object. This ability is governed by the Boolean IsInteractive property. When this Boolean value is set to True, the end-user can click on the scale or drag the indicator along the values of its scale.
 
-#### __XAML__
-{{region radial-scale-interactivity_0}}
+
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	        <telerik:RadialScale IsInteractive="True">
 	        <telerik:RadialScale.Indicators>
@@ -24,7 +24,7 @@ Scale interactivity refers to the ability for the end-user to interact with the 
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 When end-user click on a scale at an approximate value all indicators move, or snap, to a value on the scale which is closest to where the end-user clicked.
 
@@ -32,8 +32,8 @@ The end-user can click and drag the indicator along the values of its scale.
 
 Using interactivity features of the scale you can create two-way binding between indicator’s value and value of any other control (RadNumericIndicator, for example).
 
-#### __XAML__
-{{region radial-scale-interactivity_1}}
+
+```XAML
 	<Grid Margin="20">
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="Auto" />
@@ -69,7 +69,7 @@ Using interactivity features of the scale you can create two-way binding between
 	                                    telerik:StyleManager.Theme="Windows8"/>
 	    </Grid>
 	</Grid>
-{{endregion}}
+```
 
 When end-user click on the scale or drag indicator along the scale values the value of the RadNumericIndicator will be changed correspondently.
 

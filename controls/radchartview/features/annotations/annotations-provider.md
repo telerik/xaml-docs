@@ -14,12 +14,12 @@ RadChartView supports an annotations provider that is used for creating chart an
 
 The provider is set through the __AnnotationsProvider__ property of the chart (see __Example 1__) and it can be populated with a collection of models through its __Source__ property.
 
-#### __[XAML] Example 1: Setting the AnnotationsProvider__  
-{{region radchartview_annotations_annotationsprovider_01}}  
+__Example 1: Setting the AnnotationsProvider__  
+```XAML  
 	<telerik:RadCartesianChart.AnnotationsProvider>
 		<telerik:ChartAnnotationsProvider Source="{Binding AnnotationModelsCollection}" />
 	</telerik:RadCartesianChart.AnnotationsProvider/>
-{{endregion}}
+```
 	
 You can choose from a few approaches to determine the type and set up the annotations:
 * [Defining a Descriptor](#defining-a-descriptor)
@@ -32,8 +32,8 @@ You can find an example of the provider in the [How to Use AnnotationsProvider](
 
 You can define an object of type __ChartAnnotationDescriptor__ for the provider (__Example 2__). The descriptor exposes a single property of type Style that determines the type of the annotation. You can use the style to set up the annotation - set its position and visual appearance.
 
-#### __[XAML] Example 2: Setting a ChartAnnotationDescriptor__  
-{{region radchartview_annotations_annotationsprovider_02}}  
+__Example 2: Setting a ChartAnnotationDescriptor__  
+```XAML  
 	<telerik:RadCartesianChart.AnnotationsProvider>
 		<telerik:ChartAnnotationsProvider Source="{Binding AnnotationModelsCollection}">
 			<telerik:ChartAnnotationDescriptor>
@@ -47,7 +47,7 @@ You can define an object of type __ChartAnnotationDescriptor__ for the provider 
 			</telerik:ChartAnnotationDescriptor>
 		</telerik:ChartAnnotationsProvider>
 	</telerik:RadCartesianChart.AnnotationsProvider>
-{{endregion}}
+```
 	
 The annotation descriptor in *Example 2* will create a CartesianGridLineAnnotation for each item in the Source collection of the provider.
 
@@ -57,8 +57,8 @@ The annotation descriptor in *Example 2* will create a CartesianGridLineAnnotati
 
 The annotations provider allows you to decide what type of annotation to create at runtime. You can do that using a descriptor selector. You can create a custom class that derives from __ChartAnnotationDescriptorSelector__ and override its __SelectDescriptor()__ method (__Example 3__). Based on a condition, you can return different styles for each item from the Source collection.
 
-#### __[C#] Example 3: Creating ChartAnnotationDescriptorSelector__  
-{{region radchartview_annotations_annotationsprovider_03}}  
+__Example 3: Creating ChartAnnotationDescriptorSelector__  
+```C#  
 	public class MyAnnotationDescriptorSelector : ChartAnnotationDescriptorSelector
     {
         public ChartAnnotationDescriptor MarkedZoneAnnotationDescriptor { get; set; }
@@ -81,10 +81,10 @@ The annotations provider allows you to decide what type of annotation to create 
 			}            
         }
     }
-{{endregion}}
+```
 	
-#### __[XAML] Example 4: Setting the descriptor selector__  
-{{region radchartview_annotations_annotationsprovider_04}}  
+__Example 4: Setting the descriptor selector__  
+```XAML  
 	<telerik:RadCartesianChart.AnnotationsProvider>
 		<telerik:ChartAnnotationsProvider Source="{Binding AnnotationModelsCollection}">
 			<telerik:ChartAnnotationsProvider.AnnotationDescriptorSelector>
@@ -92,7 +92,7 @@ The annotations provider allows you to decide what type of annotation to create 
 			</telerik:ChartAnnotationsProvider.AnnotationDescriptorSelector>
 		</telerik:ChartAnnotationsProvider>
 	</telerik:RadCartesianChart.AnnotationsProvider>
-{{endregion}}
+```
 
 You can find a runnable code example that demonstrates the descriptor selector in the [How to use AnnotationsProvider](#how-to-use-annotationsprovider) section of this article.
 	
@@ -106,13 +106,13 @@ The event arguments are of type __ChartAnnotationCreatedEventArgs__ and expose t
 * __Annotation__: A property of type __ChartAnnotation__ that holds the created annotation.
 * __Context__: A property of type __object__ that holds the model of the annotation.
 
-#### __[XAML] Example 5: Subscribing for the AnnotationCreated event__  
-{{region radchartview_annotations_annotationsprovider_05}}  
+__Example 5: Subscribing for the AnnotationCreated event__  
+```XAML  
 	<telerik:ChartAnnotationsProvider AnnotationCreated="ChartAnnotationsProvider_AnnotationCreated">
-{{endregion}}
+```
 	
-#### __[C#] Example 6: Defining the AnnotationCreated event handler__  
-{{region radchartview_annotations_annotationsprovider_06}}  
+__Example 6: Defining the AnnotationCreated event handler__  
+```C#  
 	private void ChartAnnotationsProvider_AnnotationCreated(object sender, ChartAnnotationCreatedEventArgs e)
 	{
 		object annotationViewModel = e.Context;
@@ -120,7 +120,7 @@ The event arguments are of type __ChartAnnotationCreatedEventArgs__ and expose t
 		// set up the annotation
 		e.Annotation = annotation;
 	}
-{{endregion}}
+```
 
 ## How to Use AnnotationsProvider
 
@@ -128,8 +128,8 @@ The following example demonstrates how to use __AnnotationsProvider__ and __Anno
 
 > You can find all of the described features of the provider demonstrated in our {% if site.site_name == 'Silverlight' %}[AnnotationsProvider](https://github.com/telerik/xaml-sdk/tree/master/ChartView/SL/AnnotationsProvider){% endif %}{% if site.site_name == 'WPF' %}[AnnotationsProvider](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/AnnotationsProvider){% endif %} SDK example.
 
-#### __[XAML] Example 7: Setting up the view__  
-{{region radchartview_annotations_annotationsprovider_07}}  
+__Example 7: Setting up the view__  
+```XAML  
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis x:Name="verticalAxis" />
@@ -150,7 +150,7 @@ The following example demonstrates how to use __AnnotationsProvider__ and __Anno
 			</telerik:LineSeries.DataPoints>
 		</telerik:LineSeries>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 *Example 7* will generate the visual result shown in *Figure 1*.
 
@@ -159,8 +159,8 @@ The following example demonstrates how to use __AnnotationsProvider__ and __Anno
 
 The classes defined in *Example 8* will be used as models for the annotations. 
 
-#### __[C#] Example 8: Defining the annotation models__  
-{{region radchartview_annotations_annotationsprovider_08}}  
+__Example 8: Defining the annotation models__  
+```C#  
 	public class GridLineAnnotationModel
     {
         public double Value { get; set; }
@@ -175,12 +175,12 @@ The classes defined in *Example 8* will be used as models for the annotations.
         public string HorizontalTo { get; set; }
         public Brush Fill { get; set; }
     }
-{{endregion}}
+```
 
 You can create a class that will expose a collection of objects that holds the annotation models.
 
-#### __[C#] Example 9: Defining a main view model class__  
-{{region radchartview_annotations_annotationsprovider_09}}  
+__Example 9: Defining a main view model class__  
+```C#  
 	public class MainViewModel
 	{
 		public ObservableCollection<object> AnnotationModelsCollection { get; set; }
@@ -200,12 +200,12 @@ You can create a class that will expose a collection of objects that holds the a
 			};
 		}
 	}
-{{endregion}}
+```
 	
 *Example 10* demonstrates a custom __AnnotationDescriptorSelector__ that returns a different descriptor based on the type of the model.
 
-#### __[C#] Example 10: Creating the descriptor selector__  
-{{region radchartview_annotations_annotationsprovider_10}}  
+__Example 10: Creating the descriptor selector__  
+```C#  
 	public class MyAnnotationsDescriptorSelector : ChartAnnotationDescriptorSelector
     {
         public ChartAnnotationDescriptor MarkedZoneAnnotationDescriptor { get; set; }
@@ -225,12 +225,12 @@ You can create a class that will expose a collection of objects that holds the a
             return base.SelectDescriptor(provider, context);
         }
     }
-{{endregion}}
+```
 	
 *Example 11* demonsrates how to define the AnnotationProvider and set its AnnotationDescriptorSelector.
 
-#### __[XAML] Example 11: Setting the annotation descriptor__  
-{{region radchartview_annotations_annotationsprovider_11}}  
+__Example 11: Setting the annotation descriptor__  
+```XAML  
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis x:Name="verticalAxis" />
@@ -285,7 +285,7 @@ You can create a class that will expose a collection of objects that holds the a
 			</telerik:ChartAnnotationsProvider>
 		</telerik:RadCartesianChart.AnnotationsProvider>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 	
 #### __Figure 2: The final result that shows the generated annotations__
 ![RadChartView AnnotationsProvider 02](images/RadChartView-annotations-annotationsprovider-02.png)

@@ -20,14 +20,14 @@ Using the __ReorderTabRows__ property you can control how the tab item rows are 
 
 The default value for the __ReorderTabRows__ property is __True__.
 
-#### __[XAML] ReorderTabRows__	
-{{region xaml-radtabcontrol-features-controlling-behavior_0}}		
+__ReorderTabRows__	
+```XAML		
 	<telerik:RadTabControl x:Name="radTabControl" ReorderTabRows="True">
 		<telerik:RadTabItem Header="Calendar"/>
 		<telerik:RadTabItem Header="Colors" IsBreak="True"/>
 		<telerik:RadTabItem Header="Quote"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 __ReorderTabRows set to True__  
 
@@ -43,28 +43,28 @@ You can allow/disallow the user to reorder the tab items of your control through
 
 >tip The default value for the __AllowDragReorder__ property is __False__.
 
-#### __[XAML] Allow reordering the tab items__	
-{{region xaml-radtabcontrol-features-controlling-behavior_1}}		
+__Allow reordering the tab items__	
+```XAML		
 	<telerik:RadTabControl x:Name="radTabControl" AllowDragReorder="True">
 		<telerik:RadTabItem Header="Calendar"/>
 		<telerik:RadTabItem Header="Colors"/>
 		<telerik:RadTabItem Header="Quote"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 ## Enable or Disable Tab Items
 
 You can set the  __IsEnabled__ property to prevent the user from interacting with the whole tab control or with certain tab items. You can find this property in both __RadTabControl__ and __RadTabItem__.
 
-#### __[XAML] Disable tab item__	
-{{region xaml-radtabcontrol-features-controlling-behavior_2}}		
+__Disable tab item__	
+```XAML		
 	<telerik:RadTabControl x:Name="radTabControl">
 		<telerik:RadTabItem Header="Calendar"/>
 		<telerik:RadTabItem Header="Colors" />
 		<telerik:RadTabItem Header="Disabled Item" IsEnabled="False"/>
 		<telerik:RadTabItem Header="Quote"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 __Disable tab item__  
 
@@ -80,21 +80,21 @@ The overflow mode determines how the tab items will be handled in case there isn
 
 When the overflow mode is `Scroll`, the mouse wheel can be used to scroll as well. In that case, scrolling the wheel up will move the items from right to left, and scrolling it down will move them from left ro right. To change the scroll direction on mouse wheel, set the `InvertMouseWheelScrollDirection` property of `RadTabControl` to `true`.
 
-#### __[XAML] Invert the mouse wheel scroll direction__	
-{{region xaml-radtabcontrol-features-controlling-behavior_8}}		
+__Invert the mouse wheel scroll direction__	
+```XAML		
 	<telerik:RadTabControl InvertMouseWheelScrollDirection="True">
 		<!-- large number of items -->
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 The other overflow mode is `Wrap`. In that case, if no space is available for all tab items, they will be split into multiple rows.
 
-#### __[XAML] Show all tab items in the viewport__	
-{{region xaml-radtabcontrol-features-controlling-behavior_3}}		
+__Show all tab items in the viewport__	
+```XAML		
 	<telerik:RadTabControl OverflowMode="Wrap">
 		<!-- large number of items -->
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 __Show all items in the viewport__  
 
@@ -106,10 +106,10 @@ This property indicates whether dragging objects over a tab item will select thi
 
 >tip The DragOverTab feature will work only if the Telerik.Windows.Controls.DragDrop.RadDragAndDropManager is used.
 
-#### __[XAML] Setting AllowDragOverTab to true__	
-{{region xaml-radtabcontrol-features-controlling-behavior_4}}		
+__Setting AllowDragOverTab to true__	
+```XAML		
 	<telerik:RadTabControl x:Name="radTabControl" OverflowMode="Wrap"/>
-{{endregion}}
+```
 
 ## Align
 
@@ -119,14 +119,14 @@ The RadTabControl allows you to control the alignment of the tab items in the ro
 
 RadTabControl allows you to control whether to display the tabs horizontally or vertically. You can do that through the Orientation property of the tab control. Its default value is Horizontal and therefore the items are positioned horizontally. Setting the property to Vertical will rotate the headers of the tab items at 90 degrees.
 
-#### __[XAML] Change orientation of the tab items__	
-{{region xaml-radtabcontrol-features-controlling-behavior_5}}		
+__Change orientation of the tab items__	
+```XAML		
 	<telerik:RadTabControl x:Name="radTabControl" TabOrientation="Vertical" >
 		<telerik:RadTabItem Header="Calendar" />
 		<telerik:RadTabItem Header="Colors" />
 		<telerik:RadTabItem Header="Quote"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 __TabOrientation set to Vertical__  
 
@@ -136,8 +136,8 @@ __TabOrientation set to Vertical__
 
 The __RadTabControl__ control exposes a property, which allows you to display additional content on its right side of the control.
 
-#### __[XAML] Add AdditionalContent__	
-{{region xaml-radtabcontrol-features-controlling-behavior_6}}		
+__Add AdditionalContent__	
+```XAML		
 	<telerik:RadTabControl x:Name="radTabControl" >
 		<telerik:RadTabControl.AdditionalContent>
 			<TextBlock Text="Sample Text" VerticalAlignment="Center"/>
@@ -146,7 +146,7 @@ The __RadTabControl__ control exposes a property, which allows you to display ad
 		<telerik:RadTabItem Header="Colors" />
 		<telerik:RadTabItem Header="Quote"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 __Add AdditionalContent__  
 
@@ -175,12 +175,12 @@ The __DropDownDisplayMode__ property could be set to any of the following values
 	* __Visible__: The drop down will always be visible.
 	* __WhenNeeded__: The drop down will be shown only when there is not enough space the Tabs to be arranged. 
 
-#### __[XAML] Show DropDownMenu button__	
-{{region xaml-radtabcontrol-features-controlling-behavior_7}}		
+__Show DropDownMenu button__	
+```XAML		
 	<telerik:RadTabControl x:Name="radTabControl" DropDownDisplayMode="Visible">
 		<!-- large number of items -->
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 __Show DropDownMenu button__  
 

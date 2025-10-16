@@ -35,41 +35,41 @@ You can find the required assemblies for each control from the suite in the {% i
 
 You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create __RadDesktopAlert__ in code behind:
 
-#### __[C#]  Creating RadDesktopAlert__
+__Creating RadDesktopAlert__
 
-{{region cs-raddesktopalert-getting-started_0}}
+```C#
 	var alert = new RadDesktopAlert();
 	alert.Header = "MAIL NOTIFICATION";
 	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting.";
 	alert.ShowDuration = 3000;
-{{endregion}}
+```
 
-#### __[VB]  Creating RadDesktopAlert__
+__Creating RadDesktopAlert__
 
-{{region vb-raddesktopalert-getting-started_0}}
+```VB
 	Dim alert = New RadDesktopAlert()
 	alert.Header = "MAIL NOTIFICATION"
 	alert.Content = "Hello, Here are two things that we noticed today on our daily meeting."
 	alert.ShowDuration = 3000
-{{endregion}}
+```
 
 >__RadDesktopAlert__ is designed to work with [__RadDesktopAlertManager__]({%slug raddesktopalert-desktop-alert-manager%}). If just placed in XAML it won't be completely functional.
 
 In order to visualize it, a new instance of __RadDesktopAlertManager__ should be created and the already declared above __RadDesktopAlert__ should be passed as a parameter to its __ShowAlert__ method:
 
-#### __[C#]  Showing RadDesktopAlert__
+__Showing RadDesktopAlert__
 
-{{region cs-raddesktopalert-getting-started_1}}
+```C#
 	RadDesktopAlertManager manager = new RadDesktopAlertManager();
 	manager.ShowAlert(alert);
-{{endregion}}
+```
 
-#### __[VB]  Showing RadDesktopAlert__
+__Showing RadDesktopAlert__
 
-{{region vb-raddesktopalert-getting-started_1}}
+```VB
 	Dim manager As New RadDesktopAlertManager()
 	manager.ShowAlert(alert)
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -88,8 +88,8 @@ To change the theme, you can follow the steps below:
 
 __Example 1__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 1: Merge the ResourceDictionaries__  
-{{region raddesktopalert-getting-started_6}}
+__Example 1: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -99,7 +99,7 @@ __Example 1__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

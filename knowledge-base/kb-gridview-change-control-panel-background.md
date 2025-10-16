@@ -36,14 +36,14 @@ How to change the Background color of RadGridView's ControlPanel.
 
 3. Set the Background property of the Control Panel.
 
-#### __[C#]__
-{{region kb-gridview-change-control-panel-background}}
+
+```C#
 	private void RadGridView_Loaded(object sender, RoutedEventArgs e)
 	{
 		var controlPanel = this.radGridView.ChildrenOfType<ItemsControl>().FirstOrDefault(x => x.Name == "PART_ControlPanelItemsControl");
 		controlPanel.Background = Brushes.OrangeRed;
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGridView Change ControlPanel Background Color](images/kb-gridview-change-control-panel-background-0.png)
 

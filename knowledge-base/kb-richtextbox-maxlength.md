@@ -33,8 +33,8 @@ In this article, you will find how to restrict the input size of RadRichTextBox 
 
 The described behavior can be achieved using the [DocumentStatisticsInfo](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.model.documentstatisticsinfo) class. To obtain the current number of characters after modification, you would need to subscribe to the **DocumentContentChanged** event of RadRichTextBox. Once you get the current amount of characters in the document, you can compare it with the limit to find whether the content exceeds the allowed characters count. If so, invoke the **Undo()** method to cancel the last change. 
 
-#### __[C#]__
-{{region kb-richtextbox-maxlength}}
+
+```C#
     
     private void RadRichTextBox_DocumentContentChanged(object sender, EventArgs e)
     {
@@ -44,7 +44,7 @@ The described behavior can be achieved using the [DocumentStatisticsInfo](https:
             this.radRichTextBox.Undo();
         }
     }
-{{endregion}}
+```
 
 ## See Also
 

@@ -32,8 +32,8 @@ How to manually check options in the distinct values list of the FilteringContro
 
 The following example shows how to pre-select options from the list of the distinct values of a column on loading of RadGridView. One way to do this is to subscribe to the Loaded event of RadGridView and get the ColumnFilterDescriptor of the column where the distinct values should be checked. Then use the `AddDistinctValue` method of the DistinctFilter as shown in the [Programmatic Filtering]({%slug gridview-filtering-programmatic%}#filtering-single-column) article.
 
-#### __[C#]__
-{{region kb-gridview-preselect-distinct-values-0}}
+
+```C#
 	private void RadGridView_Loaded(object sender, RoutedEventArgs e)
 	{
 		GridViewColumn column = this.gridView.Columns["City"];
@@ -42,4 +42,4 @@ The following example shows how to pre-select options from the list of the disti
 		filterDescriptor.DistinctFilter.AddDistinctValue("London");
 		filterDescriptor.DistinctFilter.AddDistinctValue("Seattle");
 	}
-{{endregion}}
+```

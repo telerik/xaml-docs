@@ -12,34 +12,34 @@ position: 1
 
 The following snippet creates a TimePicker in XAML and code-behind:
 
-#### __XAML__
 
-{{region xaml-radtimepicker-radtimepicker-dynamic-creation_0}}
+
+```XAML
 	<telerik:RadTimePicker />
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radtimepicker-radtimepicker-dynamic-creation_1}}
+
+```C#
 	RadTimePicker timePicker = new RadTimePicker();
-{{endregion}}
+```
 
 RadTimePicker exposes  SelectedTime event that can be handled: __SelectedTimeChanged.__ The event can be handled as demonstrated in the next example.
 
-#### __XAML__
 
-{{region xaml-radtimepicker-radtimepicker-dynamic-creation_2}}
+
+```XAML
 	<StackPanel>
 	    <telerik:RadTimePicker SelectionChanged="timePicker_SelectedTimeChanged"/>
 	    <TextBlock x:Name="message" />
 	</StackPanel>
-{{endregion}}
+```
 
 or you can use only code-behind.
 
-#### __C#__
 
-{{region cs-radtimepicker-radtimepicker-dynamic-creation_3}}
+
+```C#
 	public partial class Page : UserControl
 	{
 	    public Page()
@@ -52,7 +52,7 @@ or you can use only code-behind.
 	    {
 	        this.text.Text = timePicker.SelectedTime.ToString();
 	    }
-{{endregion}}
+```
 
 RadTimePickers times can be set using binding to data object or through __StartTime,EndTime and TimeInterval__ properties. If you do not want to set anything RadTimePicker has default values:
 
@@ -64,15 +64,15 @@ TimeInterval = "1:0:0";
 
 In the next example you can see how to set this properties in XAML and code-behind:
 
-#### __XAML__
 
-{{region xaml-radtimepicker-radtimepicker-dynamic-creation_4}}
+
+```XAML
 	<telerik:RadTimePicker x:Name="timePicker" EndTime="2:0:0"/>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radtimepicker-radtimepicker-dynamic-creation_5}}
+
+```C#
 	public partial class Page : UserControl
 	{
 	    public Page()
@@ -81,13 +81,13 @@ In the next example you can see how to set this properties in XAML and code-behi
 	        this.timePicker.TimeInterval = new TimeSpan(0, 25, 0);
 	        this.timePicker.StartTime = new TimeSpan(2, 0, 0);
 	    }
-{{endregion}}
+```
 
 You may switch between different data sources at runtime as demonstrated in the next example:
 
-#### __C#__
 
-{{region cs-radtimepicker-radtimepicker-dynamic-creation_6}}
+
+```C#
 	public partial class Page : UserControl
 	{
 	    public Page()
@@ -114,7 +114,7 @@ You may switch between different data sources at runtime as demonstrated in the 
 	        };
 	        return times;
 	    }
-{{endregion}}
+```
 
 Instead of selecting the time from the clock you can also type the time you want in the TextBox. RadTime picker has KeyEvents support and Parser that validate entered time as soon as the enter key is pressed.
 

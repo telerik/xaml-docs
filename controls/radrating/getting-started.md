@@ -40,20 +40,18 @@ You can include the control in your page by either dragging it from the toolbox 
 
 > In order to use the RadRating control, you need to declare the following namespace: xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 
-#### __[XAML] Example 1: Instantiating a RadRating control in Xaml__
-{{region radrating-getting-started_0}}
+__Example 1: Instantiating a RadRating control in Xaml__
+```XAML
 	<telerik:RadRating />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Instantiating a RadRating control in code__
-{{region radrating-getting-started_1}}
+__Example 2: Instantiating a RadRating control in code__
+```C#
 	RadRating ratingControl = new RadRating();
-{{endregion}}
-
-#### __[VB.NET] Example 2: Instantiating a RadRating control__
-{{region radrating-getting-started_2}}
+```
+```VB.NET
 	Dim ratingControl As New RadRating()
-{{endregion}}
+```
 
 #### Figure 1: RadRating
 ![RadRating](images/rating_default.png)
@@ -88,8 +86,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region RadPivotGrid-getting-started_7}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -99,7 +97,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

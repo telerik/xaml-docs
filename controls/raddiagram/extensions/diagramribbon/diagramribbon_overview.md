@@ -26,8 +26,8 @@ The control is a configured [RadRibbonView]({%slug radribbonview-overview%}) whi
 
 __RadDiagramRibbon__ exposes a __Diagram__ property which is used to associate the ribbon with a particular diagram instance.
 
-#### __[XAML] Example 1: Specify RadDiagramRibbon in XAML__
-{{region xaml-raddiagram-extensions-diagramribbon-overview-0}}
+__Example 1: Specify RadDiagramRibbon in XAML__
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
@@ -38,7 +38,7 @@ __RadDiagramRibbon__ exposes a __Diagram__ property which is used to associate t
 			<telerik:RadDiagramShape Content="Shape 1"/>
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: DiagramRibbon Overview__ 
 ![Diagram Ribbon Overview](images/RadDiagram_DiagramRibbon_Overview.png)
@@ -53,18 +53,18 @@ __RadDiagramRibbon__ by design contains three build-in __RibbonTabs__ which hold
 
 To add a new tab you can just call the __Add()__ method of the __AdditionalTabs__ collection or declare it dirrectly in __XAML__. The new tab will be placed at the last position.
 
-#### __[XAML] Example 2: Add RadRibbonTab in XAML__
-{{region xaml-raddiagram-extensions-diagramribbon-overview-1}}
+__Example 2: Add RadRibbonTab in XAML__
+```XAML
 	<telerik:RadDiagramRibbon x:Name="diagramRibbon"
 							  Diagram="{Binding ElementName=diagram}" >
 		<telerik:RadRibbonTab Header="New Tab">
 			<telerik:RadRibbonGroup Header="New Group"/>
 		</telerik:RadRibbonTab>		
 	</telerik:RadDiagramRibbon>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Add RadRibbonTab programmatically__
-{{region cs-raddiagram-extensions-diagramribbon-overview-2}}
+__Example 3: Add RadRibbonTab programmatically__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -73,7 +73,7 @@ To add a new tab you can just call the __Add()__ method of the __AdditionalTabs_
 		newTab.Items.Add(new RadRibbonGroup() { Header="New Group" });
 		diagramRibbon.AdditionalTabs.Add(newTab);
 	}
-{{endregion}}
+```
 
 #### __Figure 2: Add new tab__ 
 ![Diagram Ribbon Overview New Tab](images/RadDiagram_DiagramRibbon_Overview_NewTab.png)
@@ -82,8 +82,8 @@ To add a new tab you can just call the __Add()__ method of the __AdditionalTabs_
 
 To add a new group to __Home__ tab for example first you can create a new __RadRibbonGroup__ and add a RadRibbonButton to that group. Then you need to specify to which tab you want to add the group. To do that you can set the __DiagramRibbonExtensions.RibbonTabHeader__ attached property. The last step is to add the new group to the __AdditionalGroups__ collection.
 
-#### __[XAML] Example 4: Add RadRibbonGroup in XAML__
-{{region xaml-raddiagram-extensions-diagramribbon-overview-3}}
+__Example 4: Add RadRibbonGroup in XAML__
+```XAML
 	<telerik:RadDiagramRibbon x:Name="diagramRibbon"
 							  Diagram="{Binding ElementName=diagram}" >
 		<telerik:RadDiagramRibbon.AdditionalGroups>
@@ -92,10 +92,10 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 			</telerik:RadRibbonGroup>
 		</telerik:RadDiagramRibbon.AdditionalGroups>	
 	</telerik:RadDiagramRibbon>
-{{endregion}}
+```
 
-#### __[C#] Example 5: Add RadRibbonGroup programmatically__
-{{region cs-raddiagram-extensions-diagramribbon-overview-4}}
+__Example 5: Add RadRibbonGroup programmatically__
+```C#
 	public void AddNewGroup()
 	{
 		RadRibbonButton button = new RadRibbonButton();
@@ -112,7 +112,7 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 	
 		this.diagramRibbon.AdditionalGroups.Add(newGroup);
 	}
-{{endregion}}
+```
 
 #### __Figure 3: Add new group__ 
 ![Diagram Ribbon Overview New Group](images/RadDiagram_DiagramRibbon_Overview_NewGroup.png)
@@ -121,10 +121,10 @@ To add a new group to __Home__ tab for example first you can create a new __RadR
 
 __RadDiagramRibbon__ provides a keyboard navigation mechanism using key tips and the arrow keys. The key tips are enabled by default. This feature can be disabled by setting the __KeyTipService.IsKeyTipsEnabled__ attached property on the __RadDiagramRibbon__ to __False__.
 
-#### __[XAML] Example 6: Disable DiagramRibbon KeyTips__
-{{region xaml-raddiagram-extensions-diagramribbon-overview-5}}
+__Example 6: Disable DiagramRibbon KeyTips__
+```XAML
 	<telerik:RadDiagramRibbon telerik:KeyTipService.IsKeyTipsEnabled="False" />
-{{endregion}}
+```
 
 ## DiagramRibbon Commands
 
@@ -151,10 +151,10 @@ Since the __R2 2019 SP1__ version, you have the option of changing the default l
 
 * __LayoutModeButtonContent__: Gets or sets the content of the LayoutMode button.
 
-#### __[XAML] Example 7: Setting the ShowLayoutModeButton property__
-{{region xaml-raddiagram-extensions-diagramribbon-overview-6}}
+__Example 7: Setting the ShowLayoutModeButton property__
+```XAML
 	<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}" ShowLayoutModeButton="True" />
-{{endregion}}
+```
 
 #### __Figure 4: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
 ![RadDiagramRibbon Simplified LayoutMode](images/RadDiagram_DiagramRibbon_SimplifiedLayoutMode.gif)
@@ -163,10 +163,10 @@ Since the __R2 2019 SP1__ version, you have the option of changing the default l
 
 The RadDiagramRibbon control allows you to set the currently active tool in the corresponding RadDiagram control. You can do this via the __Tools__ group in the ribbon's UI, or the __ActiveToolType__ property of RadDiagramRibbon.
 
-#### __[XAML] Example 8: Setting ActiveToolType to Text tool__
-{{region xaml-raddiagram-extensions-diagramribbon-overview-7}}
+__Example 8: Setting ActiveToolType to Text tool__
+```XAML
 	<telerik:RadDiagramRibbon Diagram="{Binding ElementName=diagram}" ActiveToolType="Text" />
-{{endregion}}
+```
 
 #### __Figure 5: RadDiagramRibbon Simplified LayoutMode in the Fluent Theme__ 
 ![RadDiagramRibbon ActiveToolType](images/RadDiagram_DiagramRibbon_ActiveToolType.png)

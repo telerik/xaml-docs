@@ -20,8 +20,8 @@ As the ranges can be described also as the states a RadGauge can go through, the
 
 As the indicator should display the state of the current value, you can bind it to one of the other indicator types. Here is an example where a __Marker__ is used to point the value and a __StateIndicator__ is used to display its state.
 
-#### __XAML__
-{{region radgauge-features-indicators-state-indicator_0}}
+
+```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8" Width="100" Height="250">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
 	                         MajorTicks="3"
@@ -60,7 +60,7 @@ As the indicator should display the state of the current value, you can bind it 
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

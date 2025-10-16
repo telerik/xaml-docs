@@ -62,22 +62,20 @@ Or you should install the corresponding NuGet package. For example `Telerik.Wind
 
 The next step for defining the language settings of the application is changing the __Current Culture__ of the application:
          
-#### __[C#] Setting the current culture of the application__  
-{{region common-localization_9}}
+__Setting the current culture of the application__  
+```C#
 	public App()
 	{
 	    Thread.CurrentThread.CurrentCulture = new CultureInfo("de");
 	    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
 	}
-{{endregion}}
-
-#### __[VB.NET] Setting the current culture of the application__  
-{{region common-localization_10}}
+```
+```VB.NET
 	Public Sub New()
 	    Thread.CurrentThread.CurrentCulture = New CultureInfo("de")
 	    Thread.CurrentThread.CurrentUICulture = New CultureInfo("de")
 	End Sub
-{{endregion}}
+```
 
 That's it. Your controls should now be localized in the preferred language.
 
@@ -129,19 +127,17 @@ Figure 5 shows the content of the __GridViewResources.de.resx__ file. The resour
 
 The last step is to instantiate the __LocalizationManager__ class, which allows you to easily localize any Telerik UI controls, by going through all resource keys and returning the appropriate translation. You then set its __ResourceManager__ to the resources that have just  been created (you can do this in the default constructor of the Application class).
 
-#### __[C#] Setting the LocalizationManager's ResourceManager__
-{{region common-localization_2}}
+__Setting the LocalizationManager's ResourceManager__
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	   ResourceManager = GridViewResources.ResourceManager
 	};
-{{endregion}}
-
-#### __[VB.NET] Setting the LocalizationManager's ResourceManager__
-{{region common-localization_3}}
+```
+```VB.NET
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = GridViewResources.ResourceManager
-{{endregion}}
+```
 
 
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the __Resources.resx__ file, you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others, to __No code generation__.         
@@ -150,8 +146,8 @@ The last step is to instantiate the __LocalizationManager__ class, which allows 
 
 If you want to translate your controls to a language different from the default available ones, you will need to create a custom **LocalizationManager**. To do so, create a class that derives from __LocalizationManager__ and override its __GetStringOverride()__ method. The logic is pretty simple - you just have to create a switch statement and return the correct translation for each resource key, as shown below:        
 
-#### __[C#] Overriding the LocalizationManager's GetStringOverride() method__
-{{region common-localization_5}}
+__Overriding the LocalizationManager's GetStringOverride() method__
+```C#
 	public class CustomLocalizationManager : LocalizationManager
 	{
 	  public override string GetStringOverride(string key)
@@ -194,10 +190,8 @@ If you want to translate your controls to a language different from the default 
 	      }
 	      return base.GetStringOverride(key);
 	  }
-{{endregion}}
-
-#### __[VB.NET] Overriding the LocalizationManager's GetStringOverride() method__
-{{region common-localization_6}}
+```
+```VB.NET
 	Public Class CustomLocalizationManager
 	 Inherits LocalizationManager
 	 Public Overrides Function GetStringOverride(key As String) As String
@@ -239,12 +233,12 @@ If you want to translate your controls to a language different from the default 
 	  Return MyBase.GetStringOverride(key)
 	 End Function
 	End Class
-{{endregion}} 
+``` 
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 
-#### __[C#] Using resource files in the GetStringOverride() method__
-{{region common-localization_7}}
+__Using resource files in the GetStringOverride() method__
+```C#
 	public override string GetStringOverride(string key)
 	{
 	   switch( key )
@@ -256,10 +250,8 @@ Of course, if you don't want to hard-code your translation inside your source co
 	   }
 	   return base.GetStringOverride(key);
 	}
-{{endregion}}
-
-#### __[VB.NET] Using resource files in the GetStringOverride() method__
-{{region common-localization_8}}
+```
+```VB.NET
 	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	    Select Case key
 	        '----------------------'
@@ -269,63 +261,57 @@ Of course, if you don't want to hard-code your translation inside your source co
 	    End Select
 	    Return MyBase.GetStringOverride(key)
 	End Function
-{{endregion}}
+```
 
 All that's left to do is to set our CustomLocalizationManager to the static Manager property of the LocalizationManager. Please note that you need to do this assingnment prior to invoking the InitializeComponent method of the affected controls.
 
-#### __[C#] Applying the custom LocalizationManager__
-{{region common-localization_0}}
+__Applying the custom LocalizationManager__
+```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
     InitializeComponent();
-{{endregion}}
-
-#### __[VB.NET] Applying the custom LocalizationManager__
-{{region common-localization_1}}
+```
+```VB.NET
 	LocalizationManager.Manager = New CustomLocalizationManager()
 	InitializeComponent()
-{{endregion}}
+```
 
 ## LocalizableResourceExtension
 
 The LocalizableResourceExtension is a handy markup extension that returns a localization string based on a given key.
 
-#### __[XAML] Using the LocalizableResourceExtension__
-{{region common-localization_12}}
+__Using the LocalizableResourceExtension__
+```XAML
 	<telerik:RadButton Content="{telerik:LocalizableResource Key=GridViewClearFilter}" Click="GridView_ClearFilter" />
-{{endregion}}
+```
 
 In the example above, it uses the GridViewClearFilter key provided by the default ResourceManager of the LocalizationManager, however, you can easily use your own keys by specifying a [custom ResourceManager](#localization-using-resourcemanager).
 
-#### __[XAML] Get custom localization string__
-{{region common-localization_13}}
+__Get custom localization string__
+```XAML
 	<telerik:Label Content="{telerik:LocalizableResource Key=EmployeeString}" />
-{{endregion}}
+```
 
 ## Dynamic Localization
 
 The LocalizationManager class also exposes a static boolean **UseDynamicLocalization** property which you can set to **True** to update your controls if a culture change occurs during runtime.
 
-#### __[C#] Get custom localization string__
-{{region common-localization_14}}
+__Get custom localization string__
+```C#
     LocalizationManager.UseDynamicLocalization = true;
-{{endregion}}
-
-#### __[VB.NET] Applying the custom LocalizationManager__
-{{region common-localization_14}}
+```
+```VB.NET
     LocalizationManager.UseDynamicLocalization = True
-{{endregion}}
+```
 
 With this setting, changing the **Culture** of the LocalizationManager will update any strings localized using the LocalizableResource extension.
 
-#### __[C#] Applying the custom LocalizationManager__
-{{region common-localization_15}}
+__Applying the custom LocalizationManager__
+```C#
     LocalizationManager.Manager.Culture = new CultureInfo("de");
-{{endregion}}
-
-#### __[VB.NET] Applying the custom LocalizationManager__
-{{region common-localization_15}}
+```
+```VB.NET
     LocalizationManager.Manager.Culture = New CultureInfo("de")
-{{endregion}}
+```
 
 >Please note that not all controls from the UI for {{ site.framework_name }} suite support dynamic localization out-of-the box. You can, however, [edit the control templates]({%slug styling-apperance-editing-control-templates%}) of unsupported controls and use the LocalizableResourceExtension wherever possible.
 

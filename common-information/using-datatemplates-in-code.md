@@ -15,17 +15,17 @@ This article shows how to get or create a DataTemplate in code using few differe
 
 The most conveninent approach is to define the DataTemplate in XAML and get it in code when needed.
 
-#### __[XAML] Example 1: Defining the DataTemplate in XAML__
-{{region using-datatemplate-in-code-0}}
+__Example 1: Defining the DataTemplate in XAML__
+```XAML
 	<UserControl.Resources>
 		<DataTemplate x:Key="MyDataTemplate">
 			<TextBlock Text="{Binding MyProperty}" />
 		</DataTemplate>
 	</UserControl.Resources>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Getting the DataTemplate in code__
-{{region using-datatemplate-in-code-1}}
+__Example 2: Getting the DataTemplate in code__
+```C#
 	public partial class MyUserControl : UserControl
 	{
 		public MyUserControl()
@@ -35,7 +35,7 @@ The most conveninent approach is to define the DataTemplate in XAML and get it i
 			DataTemplate template = (DataTemplate)this.Resources["MyDataTemplate"];
 		}
 	}
-{{endregion}}
+```
 
 ## Defining the Template in Code as a String
 
@@ -43,8 +43,8 @@ If you don't have access to XAML you can define the DataTemplate as a string and
 
 > When using this approach you need to add all the namespaces required by the elements in the DataTemplate manually in the string or the parser context.
 
-#### __[C#] Example 3: Parsing a string containing a DataTemplate__
-{{region using-datatemplate-in-code-2}}
+__Example 3: Parsing a string containing a DataTemplate__
+```C#
 	var dataTemplateString = 
 		@"<DataTemplate>" +
 			@"<StackPanel>" +
@@ -64,7 +64,7 @@ If you don't have access to XAML you can define the DataTemplate as a string and
 	parserContext.XmlnsDictionary.Add("local", "clr-namespace:MyNamespace;assembly=MyAssemblyName");
 
 	DataTemplate template = (DataTemplate)XamlReader.Parse(dataTemplateString, parserContext);
-{{endregion}}
+```
 
 ## Using FrameworkElementFactory 
 

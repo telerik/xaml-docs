@@ -74,14 +74,14 @@ but not to the arrow. This way it is very easy to keep a fixed size of the main 
 
 If none of the build-in callout types satisfy your needs, the control allows you to set a custom one. For example, using the Geometry property, you can set your own look for the control. In this case, don't forget to set the __CalloutType__ property to __Custom__ to force the engine to use your geometry.
 
-#### __[C#] Example 1: Setting Custom Type__
-{{region cs-radcallout-key-properties_0}}
+__Example 1: Setting Custom Type__
+```C#
 	<telerik:RadCallout Margin="20" VerticalAlignment="Top" Content="Callout" x:Name="callout" 
                     Width="120" Height="80"
                     Geometry="M14.248657,39.417725C14.248657,39.417725 14,29.667244 21.3302,24.000578 28.663574,18.333912 39.328003,20.250563 39.328003,20.250563 39.328003,20.250563 43.494385,0.5 63.741943,0.5 82.739746,0.5 87.655762,19.750601 87.655762,19.750601 87.655762,19.750601 100.32007,16.000544 108.31909,24.750582 114.66797,31.695599 112.90283,40.4174 112.90283,40.4174 112.90283,40.4174 123.16272,45.471794 120.81873,58.500729 117.81824,75.179268 98.904663,74.25106 98.904663,74.25106L18.581177,74.25106C18.581177,74.25106 0.5,73.084129 0.5,57.750725 0.5,42.417324 14.248657,39.417725 14.248657,39.417725z" 
 		CalloutType="Custom">
 	</telerik:RadCallout>
-{{endregion}}
+```
 
 #### Figure 3: Custom Geometry
 ![Telerik Callout Key Properties 3](images/radcallout-key-properties-custom.PNG)

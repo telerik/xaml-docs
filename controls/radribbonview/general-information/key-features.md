@@ -32,7 +32,7 @@ This is a list with short descriptions of the top-of-the-line features of Teleri
 
 * __Styling and Appearance__ - Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} __RibbonView__ is a fully customizable control, which lets you easily modify all its visual elements. The control comes with several predefined skins that can be customized if needed. [Read more]({%slug radribbonview-styling-overview%})
 
-* __Commands Support__ - make your code more clear and reusable using the command support provided by such controls as [RadRibbonButton]({%slug radribbonview-ribbonbutton%}), [RadRibbonSplitButton]({%slug radribbonview-split-button%}), [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%}), [RadRibbonRadioButton]({%slug radribbonview-radio-button%}) and [RadToggleButton]({%slug radribbonview-toggle-button%}). [Read more](#HandlingButtonClicks)
+* __Commands Support__ - make your code more clear and reusable using the command support provided by such controls as [RadRibbonButton]({%slug radribbonview-ribbonbutton%}), [RadRibbonSplitButton]({%slug radribbonview-split-button%}), [RadRibbonDropDownButton]({%slug radribbonview-dropdown-button%}), [RadRibbonRadioButton]({%slug radribbonview-radio-button%}) and [RadToggleButton]({%slug radribbonview-toggle-button%}). 
 
 * __Localization Support__ - the Telerik {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF {% endif %} __RibbonView__ can be easily globalized. The localization mechanism of __RadRibbonView__ lets you adjust the control to any culture.[Read more]({%slug radribbonview-localization%})
 

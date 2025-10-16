@@ -47,8 +47,8 @@ You can customize the __BingRestElevationRequest__ object by setting the followi
 
 When the __ElevationType__ enumeration is set to __List__ the ElevationRequest gets elevations for given list of latitude and longitude coordinates. Elevations are returned for each set of coordinates.
 
-#### __[XAML] Example 1: Defining BingRestMapProvider in XAML__
-{{region xaml-radmap-features-providers-bing-rest-map-provider-elevation_0}}	
+__Example 1: Defining BingRestMapProvider in XAML__
+```XAML	
 	 <Grid>
         <Grid.Resources>
             <DataTemplate x:Key="pushTemplate">
@@ -78,10 +78,10 @@ When the __ElevationType__ enumeration is set to __List__ the ElevationRequest g
             <telerik:VisualizationLayer x:Name="vizLayer" ItemTemplate="{StaticResource pushTemplate}"/>
         </telerik:RadMap>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting list of locations__
-{{region cs-radmap-features-providers-bing-rest-map-provider-elevation_1}}	
+__Example 2: Setting list of locations__
+```C#	
 	public partial class MainWindow : Window
     {
         private ObservableCollection<ElevationModel> models = new ObservableCollection<ElevationModel>();
@@ -122,10 +122,8 @@ When the __ElevationType__ enumeration is set to __List__ the ElevationRequest g
         public Location ModelLocation { get; set; }
         public double ElevationHeight { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting list of locations__
-{{region cs-radmap-features-providers-bing-rest-map-provider-elevation_2}}	
+```
+```VB.NET	
 	Class MainWindow
 		Private models As New ObservableCollection(Of ElevationModel)()
 		Public Sub New()
@@ -184,7 +182,7 @@ When the __ElevationType__ enumeration is set to __List__ the ElevationRequest g
 		End Property
 		Private m_ElevationHeight As Double
 	End Class
-{{endregion}}
+```
 
 ## See Also
  * [Providers Overview]({%slug radmap-features-providers%})

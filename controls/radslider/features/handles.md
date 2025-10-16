@@ -16,19 +16,19 @@ position: 3
 
 RadSlider provides an increase and decrease handles, which provide an alternative way of moving the thumb along the track. To enable the handles you have to set the __HandlesVisibility__ property to __Visible__.
 
-#### __XAML__
 
-{{region xaml-radslider-handles_0}}
+
+```XAML
 	<telerik:RadSlider HandlesVisibility="Visible" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Increase Decreease Handles Visible](images/radslider_features_handles.png)
 
 In case you enable the handles when __RadSlider__ is in selection range mode, then by default clicking for example the __increase(right)__ handle will __increase__ the value of __SelectionEnd__, while clicking the __decrease(left)__ handle will __decrease__ the value of __SelectionStart__.
 
-#### __XAML__
 
-{{region xaml-radslider-handles_1}}
+
+```XAML
 	<telerik:RadSlider x:Name="slider" 
 	               HandlesVisibility="Visible"
 	               IsSelectionRangeEnabled="True"
@@ -36,7 +36,7 @@ In case you enable the handles when __RadSlider__ is in selection range mode, th
 	               Minimum="0"
 	               SelectionEnd="8"
 	               SelectionStart="5" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Range Handles](images/radslider_features_handles_range.png)
 

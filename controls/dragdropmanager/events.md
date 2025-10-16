@@ -18,8 +18,8 @@ The event handler subscription in DragDropManager can happen only in the code. T
 
 To subscribe to an event, use the Add&lt;event name&gt;Handler methods. The following code snippet shows how to do this.
 
-#### __[C#] Subscribing and unsubscribing to DragDropManager events__  
-{{region dragdropmanager-events_0}}	
+__Subscribing and unsubscribing to DragDropManager events__  
+```C#	
 
 	public MainWindow()
 	{
@@ -66,10 +66,8 @@ To subscribe to an event, use the Add&lt;event name&gt;Handler methods. The foll
 	private void OnElementDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	}	
-{{endregion}}
-
-#### __[VB.NET] Subscribing to DragDropManager events__ 
-{{region dragdropmanager-events-1}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		
@@ -102,25 +100,25 @@ To subscribe to an event, use the Add&lt;event name&gt;Handler methods. The foll
 	
 	Private Sub OnElementDragLeave(sender As Object, e As DragEventArgs)
 	End Sub	
-{{endregion}}
+```
 
 In order for the `DragInitialize` event and the other [drag source events](#drag-source-events) to occur, the `DragDropManager.AllowDrag` or `DragDropManager.AllowCapturedDrag` attached property has to be set to `True` on the source element.
 
 In order for the `Drop` and the other drop [Target Events](#drop-target-events) to occur, the [AllowDrop](https://learn.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop?view=windowsdesktop-8.0) property of the drop target element has to be set to `True`.
 
-#### __[XAML] Setting AllowDrag and AllowDrop__  
-{{region dragdropmanager-events-2}}	
+__Setting AllowDrag and AllowDrop__  
+```XAML	
 	<Border x:Name="dragSource" telerik:DragDropManager.AllowDrag="True" />
 	
 	<Border x:Name="dropTarget" AllowDrop="True" />
-{{endregion}}
+```
 
 ## Drag Source Events
 
 * `DragInitialize`&mdash;The DragInitialize event occurs when an object is about to be dragged. This is a bubbling event. All needed information about the drag should be passed to the event arguments. Drag start can be stopped by setting `Cancel=true`. 
 	
-	#### __[C#] DragDropManager DragInitialize event handler__  
-	{{region dragdropmanager-events-3}}	
+	__DragDropManager DragInitialize event handler__  
+	```C#	
 		private void OnDragInitialized(object sender, DragInitializeEventArgs e)
 		{
 		 // sets the allowed effects of the drag/drop operation
@@ -138,12 +136,12 @@ In order for the `Drop` and the other drop [Target Events](#drop-target-events) 
 		 // set e.Cancel if the drag operation shouldn't start
 		 //e.Cancel = true;
 		}
-	{{endregion}}
+	```
 
 * `GiveFeedback`&mdash;This event occurs continuously during a drag-and-drop operation and enables the drop source to give feedback information to the user. This is a bubbling event. This feedback is commonly given by changing the appearance of the mouse pointer to indicate the effects allowed by the drop target.
 
-	#### __[C#] DragDropManager GiveFeedback event handler__  
-	{{region dragdropmanager-events-4}}	
+	__DragDropManager GiveFeedback event handler__  
+	```C#	
 		private void OnGiveFeedBack(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs args)
 		{
 			DragDropEffects effects = e.Effects;
@@ -154,12 +152,12 @@ In order for the `Drop` and the other drop [Target Events](#drop-target-events) 
 			// use this method to set a custom cursor
 			e.SetCursor(Cursors.Wait);
 		}
-	{{endregion}}	
+	```	
  
 * `QueryContinueDrag`&mdash;This event occurs when there is a change in the keyboard or mouse button states during a drag-and-drop operation and enables the drop source to cancel the drag-and-drop operation depending on the key/button states. This is a bubbling event.
 	
-	#### __[C#] DragDropManager QueryContinueDrag event handler__  
-	{{region dragdropmanager-events-5}}	
+	__DragDropManager QueryContinueDrag event handler__  
+	```C#	
 		private void OnQueryContinue(object sender, Telerik.Windows.DragDrop.QueryContinueDragEventArgs args)
 		{
 			bool isEscapePressed = e.EscapePressed;
@@ -170,12 +168,12 @@ In order for the `Drop` and the other drop [Target Events](#drop-target-events) 
 			// holds information about the state of the modifier keys on the keyboard and the mouse buttons
 			DragDropKeyStates keyStates = e.KeyStates;
 		}
-	{{endregion}}		
+	```		
 
 * `PreviewGiveFeedback`&mdash;Tunneling version of GiveFeedback.
 
-	#### __[C#] DragDropManager PreviewGiveFeedback event handler__  
-	{{region dragdropmanager-events-6}}	
+	__DragDropManager PreviewGiveFeedback event handler__  
+	```C#	
 		private void OnPreviewGiveFeedBack(object sender, Telerik.Windows.DragDrop.GiveFeedbackEventArgs args)
 		{
 			DragDropEffects effects = e.Effects;
@@ -186,12 +184,12 @@ In order for the `Drop` and the other drop [Target Events](#drop-target-events) 
 			// use this method to set a custom cursor
 			e.SetCursor(Cursors.Wait);
 		}
-	{{endregion}}	
+	```	
 
 * `PreviewQueryContinueDrag`&mdash;Tunneling version of `QueryContinueDrag`.
 
-	#### __[C#] DragDropManager PreviewQueryContinueDrag event handler__  
-	{{region dragdropmanager-events-7}}	
+	__DragDropManager PreviewQueryContinueDrag event handler__  
+	```C#	
 		private void OnPreviewQueryContinue(object sender, Telerik.Windows.DragDrop.QueryContinueDragEventArgs args)
 		{
 			bool isEscapePressed = e.EscapePressed;
@@ -202,18 +200,18 @@ In order for the `Drop` and the other drop [Target Events](#drop-target-events) 
 			// holds information about the state of the modifier keys on the keyboard and the mouse buttons
 			DragDropKeyStates keyStates = e.KeyStates;
 		}
-	{{endregion}}	
+	```	
 	
 * `DragDropCompleted`&mdash;This event occurs when an object is dropped on the drop target and is used to notify source for end of the drag operation. This is a bubbling event.
 
-	#### __[C#] DragDropManager DragDropCompleted event handler__  
-	{{region dragdropmanager-events-8}}	
+	__DragDropManager DragDropCompleted event handler__  
+	```C#	
 		private void OnDragDropCompleted(object sender, DragDropCompletedEventArgs e)
 		{
 			DragDropEffects effects = e.Effects;
 			object draggedData = e.Data;
 		}
-	{{endregion}}	
+	```	
 
 ## Drop Target Events
 
@@ -228,20 +226,21 @@ In order for the `Drop` and the other drop [Target Events](#drop-target-events) 
 
 All the drop target events share the same event arguments - `DragEventArgs` - therefore the same handler signature. The following example shows an event handler that can be used with all the previous events.
 
-#### __[C#] DragOver PreviewDragEnter event handler__  
-	{{region dragdropmanager-events-12}}	
-		private void OnDragOver(object sender, DragEventArgs e)
-		{
-			// gets the effects allowed by the originator of the drag/drop operation in DragInitialize
-			DragDropEffects allowedEffects = e.AllowedEffects;
-			
-			// sets the drag/drop effects for the hovered element
-			e.Effects = DragDropEffects.All;
-			
-			// gets the dragged data object
-			object draggedData = e.Data;	
-		}
-	{{endregion}}
+__DragOver PreviewDragEnter event handler__  
+
+```C#	
+	private void OnDragOver(object sender, DragEventArgs e)
+	{
+		// gets the effects allowed by the originator of the drag/drop operation in DragInitialize
+		DragDropEffects allowedEffects = e.AllowedEffects;
+		
+		// sets the drag/drop effects for the hovered element
+		e.Effects = DragDropEffects.All;
+		
+		// gets the dragged data object
+		object draggedData = e.Data;	
+	}
+```
 
 ## See Also
 

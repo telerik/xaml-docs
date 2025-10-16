@@ -32,16 +32,16 @@ How to display relations over event containers.
 
 To have the relations appear over the GanttView tasks, you need to set the **ZIndexManager.ZIndex** attached property of the **RelationContainer** to a value larger than **40**.
 
-#### __[XAML]__
 
-{{region kb-ganttview-how-to-display-relations-over-event-containers_1}}
+
+```XAML
 	<!-- If you're using the NoXaml binaries, you need to also add the following attribute to the style:
 	BasedOn="{StaticResource RelationContainerStyle}" -->
 	<Style TargetType="telerik:RelationContainer">
 		<Setter Property="telerik:ZIndexManager.ZIndex" Value="50"/>
 					<!-- ... -->
 	</Style>
-{{endregion}}
+```
 
 ## See Also
 * [GanttView Styles]({%slug radganttview-styles-and-templates-overview%})

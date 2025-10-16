@@ -53,27 +53,27 @@ The enumeration has the following values:
 
 Here is an example of a __RadDataPager__ that displays the previous, next and numeric buttons.
 
-#### __XAML__
 
-{{region raddatapager-features-display-modes_0}}
+
+```XAML
 
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="5"
 	                        DisplayMode="PreviousNextNumeric" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDataPager DisplayMode PreviousNextNumeric](images/RadDataPager_Features_DisplayModes_01.png)
 
 If the combination of visual elements doesn't exist in the enumeration, you can combine one or more enumeration values. This is done by separating the values with a coma. Here is an example:
 
-#### __XAML__
 
-{{region raddatapager-features-display-modes_1}}
+
+```XAML
 
 	<telerik:RadDataPager x:Name="radDataPager"
 	                        PageSize="5"
 	                        DisplayMode="PreviousNext,Text" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDataPager DisplayMode PreviousNext and Text](images/RadDataPager_Features_DisplayModes_02.png)
 

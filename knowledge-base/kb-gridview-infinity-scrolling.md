@@ -32,8 +32,8 @@ How to implement endless/infinity scrolling in RadGridView, where new data items
 
 To do this, you can get the `GridViewScrollViewer` of `RadGridView` and subscribe to its `ScrollChanged` event. When the user reaches the `ExtentHeight` of the scroll viewer, add the new portion of items.
 
-#### __[C#] Implement infinity scrolling__
-{{region kb-gridview-infinity-scrolling-0}}
+__Implement infinity scrolling__
+```C#
 	public partial class MainWindow : Window
 	{
 		private ObservableCollection<RowInfo> allData = new ObservableCollection<RowInfo>();
@@ -78,5 +78,5 @@ To do this, you can get the `GridViewScrollViewer` of `RadGridView` and subscrib
 			}
 		}
 	}
-{{endregion}}
+```
 

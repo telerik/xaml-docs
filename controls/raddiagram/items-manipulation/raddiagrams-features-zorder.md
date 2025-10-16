@@ -18,8 +18,8 @@ __RadDiagram__ gives you the ability to control the __Z-Order__ of shapes and co
 
 Consider the following code:
 		
-#### __XAML__
-{{region raddiagrams-features-zorder-1}}
+
+```XAML
 	<telerik:RadDiagram x:Name="diagram" Grid.Row="1">
 		<telerik:RadDiagramShape x:Name="shape1" 
 								 Width="150"
@@ -58,7 +58,7 @@ Consider the following code:
 									  TargetConnectorPosition="Left"
 									  ZIndex="0" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 We have reversed the natural ZOrder of the 3 Shapes. On the other hand, the connection on the right is on top of the shapes and connection on the left is below them: 
 ![Rad Diagrams-Features-ZIndex](images/RadDiagrams-Features-ZIndex.png)
@@ -67,8 +67,8 @@ We have reversed the natural ZOrder of the 3 Shapes. On the other hand, the conn
 
 __RadDiagram__ provides a set of predefined commands for manipulating the selected items' ZIndices. __"BringForward"__ and __"SendBackward"__ allow you to increase/decrease the Z-Indices of the selected RadDiagramItems. If you need to bring the selected item(s) on top of all other items or below them, you can use __"BringToFront"__ and __"SentToback"__:
 		
-#### __XAML__
-{{region raddiagrams-features-zorder-0}}
+
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -125,7 +125,7 @@ __RadDiagram__ provides a set of predefined commands for manipulating the select
 										  ZIndex="0" />
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 This way configured, the two buttons are ready to bring to front or sent to back the selected items of the __RadDiagram__: 
 ![raddiagrams-features-zindex-bringup 1](images/raddiagrams-features-zindex-bringup1.png)

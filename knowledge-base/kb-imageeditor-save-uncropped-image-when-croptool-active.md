@@ -32,8 +32,7 @@ How to save an image without cropping it while the CropTool is active.
 
 1. Create a custom SaveImage command and override its ExecuteOverride method. If the executing tool is CropTool avoid commiting the tool, thus cropping the picture.
 
-	#### __[C#]__
-	{{region kb-imageeditor-save-uncropped-image-when-croptool-active-0}}
+	```C#
 		public class CustomSaveImageCommand : SaveImageCommand
 		{
 			public CustomSaveImageCommand(RadImageEditor owner) : base(owner)
@@ -106,11 +105,10 @@ How to save an image without cropping it while the CropTool is active.
 					string.Join(";", formatProvider.SupportedExtensions.Select(ext => "*" + ext).ToArray());
 			}
 		}
-	{{endregion}}
+	```
 
 2. Set the custom command to the RadImageEditorUI via its SaveCommand property.
-
-	#### __[C#]__
-	{{region kb-imageeditor-save-uncropped-image-when-croptool-active-1}}
+	
+	```C#
 		this.radImageEditorUI.SaveCommand = new CustomSaveImageCommand(this.ImageEditorUI.ImageEditor);
-	{{endregion}}
+	```

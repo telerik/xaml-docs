@@ -24,8 +24,9 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
 
 	If the RadTabbedWindow control is __populated directly with RadTabItem elements__, the Item property contains an object of type RadTabItem which you can customize or completely replace. 
 	
-	#### [C#] Example 1: Handle the AddingNewTab event in data binding scenario  
-	{{region cs-radtabbedwindow-events_1}}
+	__Handle the AddingNewTab event in data binding scenario__
+	
+	```C#
 		private void RadTabbedWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
 		{
 			if (this.TotalTabCount > this.MaxTabCount) // replace with your cancel condition
@@ -37,10 +38,8 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
 				e.Item = new Person("P " + this.Items.Count);
 			}
 		}
-	{{endregion}}
-
-	#### [VB.NET] Example 1: Handle the AddingNewTab event  
-	{{region vb-radtabbedwindow-events_1}}
+	```
+	```VB.NET
 		Private Sub RadTabbedWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
 			If Me.TotalTabCount > Me.MaxTabCount Then ' replace with your cancel condition
 				e.Cancel = True
@@ -48,12 +47,13 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
 				e.Item = New Person("P " & Me.Items.Count)
 			End If
 		End Sub
-	{{endregion}}
+	```
 	
 	If the __ItemsSource of the control is populated (data binding scenario)__, the Item property will be empty (*null*) and you should manually set it to an object of your business type. Otherwise, no tab will added.
 	
-	#### [C#] Example 2: Handle the AddingNewTab event
-	{{region cs-radtabbedwindow-events_2}}
+	__Handle the AddingNewTab event__
+	
+	```C#
 		private void RadTabbedWindow_AddingNewTab(object sender, TabControlAddingNewTabEventArgs e)
 		{
 			RadTabItem tabItem = e.Item as RadTabItem;
@@ -63,10 +63,8 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
                 tabItem.Content = "Empty tab";
             } 
 		}
-	{{endregion}}
-
-	#### [VB.NET] Example 2: Handle the AddingNewTab event
-	{{region vb-radtabbedwindow-events_2}}
+	```
+	```VB.NET
 		Private Sub RadTabbedWindow_AddingNewTab(ByVal sender As Object, ByVal e As TabControlAddingNewTabEventArgs)
 			Dim tabItem As RadTabItem = TryCast(e.Item, RadTabItem)
 
@@ -75,7 +73,7 @@ Occurs when a RadTabItem is being added via the 'Add' button in the UI. Its **Ad
 				tabItem.Content = "Empty tab"
 			End If
 		End Sub
-	{{endregion}}
+	```
 	
 	>tip If the Item property is left empty (*null*), no tab will be added.
 
@@ -91,10 +89,11 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 * **DraggedTab**: The dragged RadTabItem from the source RadTabbedWindow. As of **R2 2019 SP1**, this property is **obsolete** and the **DraggedItem** property needs to be used instead.
 * **DraggedItem**: The dragged RadTabItem in an unbound scenario or the dragged item (viewmodel) in a databinding scenario.
 
-**Example 3** demonstrates how you can cancel the creation of the new window or attach the same handler to its **AddingNewTab** event as that of the source window in an **unbound scenario**.
+The following example demonstrates how you can cancel the creation of the new window or attach the same handler to its **AddingNewTab** event as that of the source window in an **unbound scenario**.
 
-#### [C#] Example 3: Handle the TabbedWindowCreating event in an unbound scenario
-{{region cs-radtabbedwindow-events_3}}
+__Handle the TabbedWindowCreating event in an unbound scenario__
+
+```C#
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
 		var tab = e.DraggedItem as RadTabItem;
@@ -107,10 +106,8 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
             e.NewWindow.AddingNewTab += this.MainWindow_AddingNewTab; // the AddingNewTab handler of the main RadTabbedWindow
         }
     }
-{{endregion}}
-
-#### [VB.NET] Example 3: Handle the TabbedWindowCreating event in an unbound scenario
-{{region vb-radtabbedwindow-events_3}}
+```
+```VB.NET
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
 		Dim tab = TryCast(e.DraggedItem, RadTabItem)
 		If tab IsNot Nothing AndAlso tab.Header.ToString() = "Progress" Then ' replace with your cancel condition
@@ -119,12 +116,13 @@ Occurs when a new RadTabbedWindow is created via drag and drop and is about to b
 			e.NewWindow.AddingNewTab += Me.MainWindow_AddingNewTab ' the AddingNewTab handler of the main RadTabbedWindow
 		End If
 	End Sub
-{{endregion}}
+```
 
-You can also use the TabbedWindowCreating event to clear, update or replace the ItemsSource of the new window. **Example 4** demonstrates how to do so in a **databound scenario**.
+You can also use the TabbedWindowCreating event to clear, update or replace the ItemsSource of the new window. The following example demonstrates how to do so in a **databound scenario**.
 
-#### [C#] Example 4: Change the ItemsSource of the new window in a databinding scenario
-{{region cs-radtabbedwindow-events_4}}
+__Change the ItemsSource of the new window in a databinding scenario__
+
+```C#
     private void MainWindow_TabbedWindowCreating(object sender, TabbedWindowCreatingEventArgs e)
     {
 		var tabItem = e.DraggedItem as MyTabItem;
@@ -149,10 +147,8 @@ You can also use the TabbedWindowCreating event to clear, update or replace the 
             e.NewWindow.DisplayMemberPath = "Name";
         }
     }
-{{endregion}}
-
-#### [VB.NET] Example 4: Change the ItemsSource of the new window in a databinding scenario
-{{region vb-radtabbedwindow-events_4}}
+```
+```VB.NET
 	Private Sub MainWindow_TabbedWindowCreating(ByVal sender As Object, ByVal e As TabbedWindowCreatingEventArgs)
 		Dim tabItem = TryCast(e.DraggedItem, MyTabItem)
 		If tabItem IsNot Nothing AndAlso tabItem.Header = "Progress" Then
@@ -173,7 +169,7 @@ You can also use the TabbedWindowCreating event to clear, update or replace the 
 			e.NewWindow.DisplayMemberPath = "Name"
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## PreviewTabClosed
 

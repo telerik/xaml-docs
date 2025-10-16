@@ -15,8 +15,8 @@ The `RadSpreadSheet` control uses the [SpreadProcessing library](https://docs.te
 
 The following example showcases how to protect and unprotect the current worksheet:
 
-#### __[XAML] Defining the RadSpreadsheet and the buttons for protecting and uprotecting the current worksheet__
-{{region radspreadsheet-protection-0}}
+__Defining the RadSpreadsheet and the buttons for protecting and uprotecting the current worksheet__
+```XAML
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -53,10 +53,10 @@ The following example showcases how to protect and unprotect the current workshe
             </telerik:RadSpreadsheet.FormatProviders>
         </telerik:RadSpreadsheet>
     </Grid>
-    {{endregion}}
+```
 
-#### __[C#] Adding logic to the buttons__
-{{region radspreadsheet-protection-1}}
+__Adding logic to the buttons__
+```C#
     private void OnProtectButtonClicked(object sender, RoutedEventArgs e)
     {
         this.radSpreadsheet.ActiveWorksheet.Protect("Telerik", WorksheetProtectionOptions.Default);
@@ -66,7 +66,7 @@ The following example showcases how to protect and unprotect the current workshe
     {
         this.radSpreadsheet.ActiveWorksheet.Unprotect("Telerik");
     }
-{{endregion}}
+```
 
 __RadSpreadsheet with protected/unprotected worksheet__
 

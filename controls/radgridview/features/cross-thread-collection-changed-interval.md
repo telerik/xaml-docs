@@ -16,20 +16,18 @@ The __CrossThreadCollectionChangedInterval__ property allows you to control the 
 
 The CrossThreadCollectionChangedInterval was introduced with version R2 2020 of Telerik UI for WPF.
 
-#### __[XAML] Example 1: Setting CrossThreadCollectionChangedInterval to 3 seconds in XAML__
-{{region radgridview-features-ui-virtualization-0}}
+__Example 1: Setting CrossThreadCollectionChangedInterval to 3 seconds in XAML__
+```XAML
 	<telerik:RadGridView CrossThreadCollectionChangedInterval="00:00:03.000" />
-{{endregion}} 
+``` 
 
-#### __[C#] Example 2: Setting CrossThreadCollectionChangedInterval to 3 seconds in code__
-{{region radgridview-features-ui-virtualization-1}}
+__Example 2: Setting CrossThreadCollectionChangedInterval to 3 seconds in code__
+```C#
 	radGridView.CrossThreadCollectionChangedInterval = TimeSpan.FromSeconds(3);
-{{endregion}} 
-
-#### __[VB.NET] Example 2: Setting CrossThreadCollectionChangedInterval to 3 seconds in code__
-{{region radgridview-features-ui-virtualization-2}}
+```
+```VB.NET
 	_radGridView.CrossThreadCollectionChangedInterval = TimeSpan.FromSeconds(3)
-{{endregion}} 
+``` 
 
 >tip Setting the CrossThreadCollectionChangedInterval property to a bigger interval improves the performance in scenarios with multiple updates in the ItemsSource that happen often on a background thread. 
        

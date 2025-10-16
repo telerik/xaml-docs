@@ -18,9 +18,7 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 
 1. First, create a class that implements the __ICommand__ interface. __Example 1__ shows a sample implementation.          
 
-	#### __[C#] Example 1: Creating a command__
-
-	{{region cs-radradialmenu-commands-radialmenuitem_0}}
+	```C#
 		public class CustomItemCommand : ICommand
 		{
 		    public bool CanExecute(object parameter)
@@ -44,23 +42,19 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 		
 		    public event EventHandler CanExecuteChanged;
 		}
-	{{endregion}}
+	```
 
 1. Add an instance of the custom command class to the Resources of the UserControl.
 
-	#### __[XAML] Example 2: Adding the command to the Resources__
-
-	{{region xaml-radradialmenu-commands-radialmenuitem_1}}
+	```XAML
 		<UserControl.Resources>
 		    <local:CustomItemCommand x:Key="CustomItemCommand"/>
 		</UserControl.Resources>
-	{{endregion}}
+	```
 
 1. Bind the __Command__ property of the RadialMenuItem to the instance of the custom command as shown in __Example 3__.          
 
-	#### __[XAML] Example 3: Bind the command__
-
-	{{region xaml-radradialmenu-commands-radialmenuitem_2}}
+	```XAML
 		<telerik:RadRadialMenu>
 		    <telerik:RadRadialMenuItem Header="Item 1" Command="{StaticResource CustomItemCommand}" 
 		    CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
@@ -69,7 +63,7 @@ Here is an example demonstrating how to add a command to a RadialMenuItem.
 		    <telerik:RadRadialMenuItem Header="Item 3" Command="{StaticResource CustomItemCommand}" 
 		    CommandParameter="{Binding RelativeSource={RelativeSource Self}}" />
 		</telerik:RadRadialMenu>
-	{{endregion}}
+	```
 
 ## See Also
 

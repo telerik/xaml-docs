@@ -31,13 +31,13 @@ FilteringControl changes its width when scrolling the DistinctValuesList to an i
 
 Such behavior can be observed only when there are elements with greater width than the default one of the RadGridView's FilteringControl. To resolve this, create a Style like the following:
 
-#### __[XAML]__
-{{region kb-gridview-filteringcontrol-changes-its-width-while-scrolling-0}}	
+
+```XAML	
 	<Style TargetType="telerik:FilteringControl"> <!--Add BasedOn="{StaticResource FilteringControlStyle}" when using the NoXaml assemblies-->
 		<Setter Property="MinWidth" Value="0"/>
 		<Setter Property="Width" Value="500"/>
 	</Style>
-{{endregion}}
+```
 
 > The recommended Width value in the above style depends on the application theme that you use, plus the default **Culture** and the default **FontSize** of the RadGridView.
 

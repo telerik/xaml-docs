@@ -56,14 +56,14 @@ The three files should keep the same resource keys, whereas the values must be t
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
         
 
-#### __C#__
 
-{{region radpdfviewer-localization_3}}
+
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	    ResourceManager = RadPdfViewerResources.ResourceManager
 	};
-{{endregion}}
+```
 
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/Localization).
@@ -74,11 +74,11 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize any of the Telerik controls. To apply custom localization to your controls, just instantiate your custom __LocalizationManager__ deriving from the LocalizationManager object and set it to the static property __LocalizationManager.Manager__ before the creation of the UI.
         
 
-#### __C#__
 
-{{region radpdfviewer-localization_0}}
+
+```C#
 	            LocalizationManager.Manager = new CustomLocalizationManager();
-{{endregion}}
+```
 
 
 
@@ -87,9 +87,9 @@ __Telerik.Windows.Controls.LocalizationManager__ allows you to easily localize a
 What is left in order to fulfil the localization is to override the method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key. Here is an example of how you can localize the strings in the FindDialog:
         
 
-#### __C#__
 
-{{region radpdfviewer-localization_1}}
+
+```C#
 	    public class CustomLocalizationManager : LocalizationManager
 	    {
 	        public override string GetStringOverride(string key)
@@ -128,16 +128,16 @@ What is left in order to fulfil the localization is to override the method __Get
 	            return base.GetStringOverride(key);
 	        }
 	    }
-{{endregion}}
+```
 
 
 
 Of course, if you don't want to hard-code your translation inside the source code, you can always use resource files:
         
 
-#### __C#__
 
-{{region radpdfviewer-localization_2}}
+
+```C#
 	    public class CustomLocalizationManager : LocalizationManager
 	    {
 	        public override string GetStringOverride(string key)
@@ -152,4 +152,4 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	            return base.GetStringOverride(key);
 	        }
 	    }
-{{endregion}}
+```

@@ -95,10 +95,8 @@ When extracting the control template with MS Blend some dependency properties of
 You can find instructions on how to fix the missing Bindings bellow:
               
 *  Under __FlatRenderingTemplate__:
-                   
-#### __XAML__: FlatRenderingTemplate
 
-	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_0}}
+```XAML
 	<ItemsControl IsTabStop="False" VirtualizingStackPanel.VirtualizationMode="Standard">
 	    <ItemsControl.Style>
 	        <Style TargetType="{x:Type ItemsControl}">
@@ -126,12 +124,11 @@ You can find instructions on how to fix the missing Bindings bellow:
 	        </Style>
 	    </ItemsControl.Style>
 	</ItemsControl>
-{{endregion}}
+```
 
 *   Under __FlatTemplate__:
 
-#### __XAML__: FlatTemplate
-	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_1}}
+```XAML
 	<ItemsControl IsTabStop="False">
 	    <ItemsControl.ItemTemplate>
 	        <DataTemplate>
@@ -152,13 +149,11 @@ You can find instructions on how to fix the missing Bindings bellow:
 	        </Style>
 	    </ItemsControl.Style>
 	</ItemsControl>
-{{endregion}}
+```
 
 *  Under __GroupTemplate__:
 
-#### __XAML__: GroupTemplate
-
-	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_2}}
+```XAML
 	<ItemsControl>
 	    <ItemsControl.ItemTemplate>
 	        <DataTemplate>
@@ -280,13 +275,11 @@ You can find instructions on how to fix the missing Bindings bellow:
 	        </Style>
 	    </ItemsControl.Style>
 	</ItemsControl>
-{{endregion}}
+```
 
 *  Under __VirtualizedFlatTemplate__:
 
-#### __XAML__: VirtualizedFlatTemplate
-
-	{{region xaml-radpropertygrid-styles-and-templates-templates-structure_3}}
+```XAML
 	<ItemsControl IsTabStop="False">
 	    <ItemsControl.ItemTemplate>
 	        <DataTemplate>
@@ -319,6 +312,6 @@ You can find instructions on how to fix the missing Bindings bellow:
 	        </Style>
 	    </ItemsControl.Style>
 	</ItemsControl>
-{{endregion}}
+```
 
 Using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) gives you the ability to easily extract and edit the default ControlTemplates of the controls. You can follow [this article]({%slug styling-apperance-editing-control-templates%}) on two different approaches on how to extract the ControlTemplates.

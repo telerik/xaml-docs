@@ -24,14 +24,14 @@ The dialog can be opened from the dialog launcher button at the bottom right cor
 
 The dialog can be shown by executing the `ShowFontPropertiesDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-font-properties-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowFontPropertiesDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowFontPropertiesDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-font-properties-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowFontPropertiesDialog();
-{{endregion}}
+```

@@ -28,9 +28,9 @@ __Example 1__ will show you how you could decrease the GroupHeaders width by cus
 
 First, we will [generate the default GroupHeaderContentTemplateSelector]({%slug radscheduleview-styles-and-templates-templating-groupheaders%}#how-to-generate-and-use-groupheadercontenttemplateselector) and will set Width to the ContentPresenters in both the HorizontalTemplate and VerticalTemplate (which template is used depends on the active ViewDefinition Orientation) as shown in __Example 1__.
 
-#### __[XAML] Example 1: Modified GroupHeaderContentTemplateSelector__
+__Example 1: Modified GroupHeaderContentTemplateSelector__
 
-{{region radscheduleview-howto-set-groupheaders-width_0}}
+```XAML
 	<telerik:GroupHeaderTemplateSelector x:Key="GroupHeaderContentTemplateSelector">
 		<telerik:GroupHeaderTemplateSelector.HorizontalTemplate>
 			<DataTemplate>
@@ -48,15 +48,15 @@ First, we will [generate the default GroupHeaderContentTemplateSelector]({%slug 
 			</DataTemplate>
 		</telerik:GroupHeaderTemplateSelector.VerticalTemplate>
 	</telerik:GroupHeaderTemplateSelector>
-{{endregion}}
+```
 
 Then, we will apply the created GroupHeaderContentTemplateSelector to the ScheduleView, as shown in __Example 2__.
 
 Additionally, we will change the format of the dates inside the GroupHeaders as explained in the [Formatting]({%slug radscheduleview-features-formatting%}) topic and will set the __MinAppointmentWidth__ property of the ScheduleView to a smaller value.
 
-#### __[XAML] Example 2: Apply GroupHeaderContentTemplateSelector__
+__Example 2: Apply GroupHeaderContentTemplateSelector__
 
-{{region radscheduleview-howto-set-groupheaders-width_1}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
             GroupHeaderContentTemplateSelector="{StaticResource GroupHeaderContentTemplateSelector}"
 			MinAppointmentWidth="10">		
@@ -64,7 +64,7 @@ Additionally, we will change the format of the dates inside the GroupHeaders as 
                 <telerik:WeekViewDefinition  GroupHeaderDateStringFormat="{}{0:MM/dd}" />           
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 __Figure 1__ shows the RadScheduleView before and after applying the previously explained properties.
 

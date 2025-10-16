@@ -15,8 +15,8 @@ The `RadSpreadSheet` control uses the [SpreadProcessing library](https://docs.te
 
 The following example showcases how to implement custom undo/redo buttons:
 
-#### __[XAML] Adding buttons in the UI for the Undo and Redo methods__
-{{region radspreadsheet-history-0}}
+__Adding buttons in the UI for the Undo and Redo methods__
+```XAML
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -53,10 +53,10 @@ The following example showcases how to implement custom undo/redo buttons:
             </telerik:RadSpreadsheet.FormatProviders>
         </telerik:RadSpreadsheet>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Adding the logic for the buttons to execute the Undo and Redo methods__
-{{region radspreadsheet-history-1}}
+__Adding the logic for the buttons to execute the Undo and Redo methods__
+```C#
     private void OnUndoButtonClicked(object sender, RoutedEventArgs e)
     {
         this.radSpreadsheet.Workbook.History.Undo();
@@ -66,7 +66,7 @@ The following example showcases how to implement custom undo/redo buttons:
     {
         this.radSpreadsheet.Workbook.History.Redo();
     }
-{{endregion}}
+```
 
 __RadSpreadsheet with custom redo/undo buttons__
 

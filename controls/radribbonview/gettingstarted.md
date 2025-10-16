@@ -49,10 +49,10 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add a RadRibbonView manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Adding a RadRibbonView in XAML__
-{{region radribbonview-gettingstarted-0}}
+__Adding a RadRibbonView in XAML__
+```XAML
 	<telerik:RadRibbonView />
-{{endregion}}
+```
 	
 At this state, the ribbonview is empty - there are not tabs, backstage or any other ribbon components. You can learn about the controls that the RadRibbonView can contain from the [Features]({%slug radribbonview-ribbon-tab%}) section of the documentation.
 
@@ -70,8 +70,8 @@ The tabs can be added in the `Items` collection of RadRibbonView. The RadRibbonT
 
 The next examples demonstrate how to do this in XAML and code-behind:
 
-#### __[XAML] Adding RadRibbonTabs in XAML__  
-{{region radribbonview-gettingstarted-01}}
+__Adding RadRibbonTabs in XAML__  
+```XAML
     <telerik:RadRibbonView>
 		<telerik:RadRibbonView.Items>
 			<telerik:RadRibbonTab Header="Home" />
@@ -80,19 +80,17 @@ The next examples demonstrate how to do this in XAML and code-behind:
 			<telerik:RadRibbonTab Header="References" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 	
-#### __[C#] Adding RadRibbonTabs in code__
-{{region radribbonview-gettingstarted-02}}
+__Adding RadRibbonTabs in code__
+```C#
 	RadRibbonView ribbonView = new RadRibbonView();
 	ribbonView.Items.Add(new RadRibbonTab() { Header = "Home" });
 	ribbonView.Items.Add(new RadRibbonTab() { Header = "View" });
 	ribbonView.Items.Add(new RadRibbonTab() { Header = "Insert" });
 	ribbonView.Items.Add(new RadRibbonTab() { Header = "References" });
-{{endregion}}
-			
-#### __[VB.NET] Adding RadRibbonTabs in code__
-{{region radribbonview-gettingstarted-03}}
+```
+```VB.NET
 	Dim ribbonView As New RadRibbonView()
 	ribbonView.Items.Add(New RadRibbonTab() With { _
 		.Header = "Home" _
@@ -106,7 +104,7 @@ The next examples demonstrate how to do this in XAML and code-behind:
 	ribbonView.Items.Add(New RadRibbonTab() With { _
 		.Header = "References" _
 	})
-{{endregion}}
+```
 
 __RadRibbonView with several RadRibbonTabs defined in its Items collection__
 
@@ -116,8 +114,8 @@ __RadRibbonView with several RadRibbonTabs defined in its Items collection__
 
 RadRibbonTab is a `HeaderedItemsControl`, which means that it can contain a collection of items. The children of the ribbon tab should be objects of type `RadRibbonGroup`. They expose a Header property that is used to define the content of their header.
 
-#### __[XAML] Adding RadRibbonGroups__
-{{region radribbonview-gettingstarted-04}}
+__Adding RadRibbonGroups__
+```XAML
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonView.Items>
 			<telerik:RadRibbonTab Header="Home">
@@ -129,7 +127,7 @@ RadRibbonTab is a `HeaderedItemsControl`, which means that it can contain a coll
 			<telerik:RadRibbonTab Header="View" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 #### __A RadRibbonTab with a couple RadRibbonGroups defined in its Items collection__
 
@@ -137,8 +135,8 @@ RadRibbonTab is a `HeaderedItemsControl`, which means that it can contain a coll
 
 The RadRibbonGroup element is also a HeaderedItemsControl and it can have child elements on its own.
 
-#### __[XAML] Adding RadRibbonGroup content__
-{{region radribbonview-gettingstarted-05}}
+__Adding RadRibbonGroup content__
+```XAML
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonView.Items>
 			<telerik:RadRibbonTab Header="Home">
@@ -159,7 +157,7 @@ The RadRibbonGroup element is also a HeaderedItemsControl and it can have child 
 			<telerik:RadRibbonTab Header="View" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 __A RadRibbonGroup with a couple ribbon buttons defined in its Items collection__
 
@@ -183,22 +181,20 @@ Check out the following topics, which are tightly connected to the resizing beha
 
 You can se the icon of the ribbonview's application button through the `ApplicationButtonImageSource` property, which is of type `ImageSource`.
 
-#### __[XAML] Setting the RadRibbonView application button image source in XAML__
-{{region radribbonview-gettingstarted-06}}
+__Setting the RadRibbonView application button image source in XAML__
+```XAML
 	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png" />
-{{endregion}}
+```
 	
-#### __[C#] Setting the RadRibbonView application button image source in code__
-{{region radribbonview-gettingstarted-07}}
+__Setting the RadRibbonView application button image source in code__
+```C#
 	RadRibbonView ribbonView = new RadRibbonView();
 	ribbonView.ApplicationButtonImageSource = new BitmapImage(new Uri(appIconStringPath));
-{{endregion}}
-	
-#### __[VB.NET] Setting the RadRibbonView application button image source in code__
-{{region radribbonview-gettingstarted-08}}
+```
+```VB.NET
 	Dim ribbonView As New RadRibbonView()
 	ribbonView.ApplicationButtonImageSource = New BitmapImage(New Uri(appIconStringPath))
-{{endregion}}
+```
 
 __RadRibbonView application button image__
 
@@ -208,10 +204,10 @@ __RadRibbonView application button image__
 
 The header displayed at the title bar of RadRibbonView is constructed by its `Title` and `ApplicationName` properties with a dash separator between them. You can take a peek at the [Visual Structure]({%slug radribbonview-visual-structure%}) article to see how it looks.
 
-#### __[XAML] Setting the RadRibbonView application title and name__
-{{region radribbonview-gettingstarted-09}}
+__Setting the RadRibbonView application title and name__
+```XAML
 	<telerik:RadRibbonView ApplicationName="RadRibbonView" Title="Document 1" />
-{{endregion}}
+```
 
 __Title and ApplicationName properties reflected in the UI__
 
@@ -223,8 +219,8 @@ __Title and ApplicationName properties reflected in the UI__
 
 The RadRibbonView control exposes the `TitleBarBackground` property that will allow you to customize the color of the control's title.
 
-#### __[XAML] Setting the color of the RadRibbonView's title__
-{{region radribbonview-gettingstarted-10}}
+__Setting the color of the RadRibbonView's title__
+```XAML
 	<telerik:RadRibbonView TitleBarBackground="Red">
 		<telerik:RadRibbonView.Items>
 			<telerik:RadRibbonTab Header="Home">
@@ -245,7 +241,7 @@ The RadRibbonView control exposes the `TitleBarBackground` property that will al
 			<telerik:RadRibbonTab Header="View" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 __RadRibbonView with a different color set to the title__
 
@@ -257,8 +253,8 @@ The __backstage menu__ is equivalent to the __File__ menu of the traditional men
 
 To declare a backstage menu in RadRibbonView you can set its `Backstage` property to an object of type `RadRibbonBackstage`. 
 
-#### __[XAML] Sample backstage definition with several child RadRibbonBackstageItems in its Items collection.__
-{{region radribbonview-gettingstarted-11}}
+__Sample backstage definition with several child RadRibbonBackstageItems in its Items collection.__
+```XAML
 	<telerik:RadRibbonView>
 		<telerik:RadRibbonView.Backstage>                
 			<telerik:RadRibbonBackstage>
@@ -278,7 +274,7 @@ To declare a backstage menu in RadRibbonView you can set its `Backstage` propert
 			</telerik:RadRibbonBackstage>
 		</telerik:RadRibbonView.Backstage>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 __RadRibbon Backstage example__
 
@@ -290,8 +286,8 @@ __RadRibbon Backstage example__
 
 The Quick Access Toolbar is used to render a set of RadRibbonView controls (commands) that are most commonly used in the application. It is rendered right above the ApplicationButton to make it easily accessible to users. To declare the Quick Access ToolBar, you need to set the `QuickAccessToolBar` property. 
 
-#### __[XAML] Sample setup of QuickAccessToolBar__
-{{region radribbonview-gettingstarted-12}}
+__Sample setup of QuickAccessToolBar__
+```XAML
 	 <telerik:RadRibbonView>
 		<telerik:RadRibbonView.QuickAccessToolBar>
 			<telerik:QuickAccessToolBar>
@@ -301,7 +297,7 @@ The Quick Access Toolbar is used to render a set of RadRibbonView controls (comm
 			</telerik:QuickAccessToolBar>
 		</telerik:RadRibbonView.QuickAccessToolBar>		
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 __QuickAccessToolBar visualization with one of its buttons hovered__  
 
@@ -313,8 +309,8 @@ __QuickAccessToolBar visualization with one of its buttons hovered__
 
 This section contains all features demonstrated in the article assembled into a single example.
 
-#### __[XAML] Complete code example__
-{{region radribbonview-gettingstarted-13}}
+__Complete code example__
+```XAML
 	<telerik:RadRibbonView ApplicationButtonImageSource="images/appIcon.png"
 						   ApplicationName="RadRibbonView"
 						   Title="Document 1">
@@ -361,7 +357,7 @@ This section contains all features demonstrated in the article assembled into a 
 			<telerik:RadRibbonTab Header="View" />
 		</telerik:RadRibbonView.Items>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 __RadRibbonView example__  
 
@@ -386,8 +382,8 @@ To change the theme, you can follow the steps below:
 
 The following example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__  
-{{region radribbonview-getting-started_14}}
+__Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -399,7 +395,7 @@ The following example demonstrates how to merge the ResourceDictionaries so that
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) theming approach.
 

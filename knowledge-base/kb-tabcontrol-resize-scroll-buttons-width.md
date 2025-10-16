@@ -32,8 +32,8 @@ How to change the width of the scroll buttons that are shown when the OverflowMo
 
 Get the RepeatButton controls representing the scroll buttons. Then set their Width. To do this, subscribe to the Loaded event of RadTabControl and use the [ChildrenOfType<T>()]({%slug common-visual-tree-helpers%}) method to get the buttons.
 
-#### __[C#]__
-{{region kb-tabcontrol-resize-scroll-buttons-width-0}}
+
+```C#
 	private void RadTabControl_Loaded(object sender, RoutedEventArgs e)
 	{
 		var tabControl = (RadTabControl)sender;
@@ -44,6 +44,6 @@ Get the RepeatButton controls representing the scroll buttons. Then set their Wi
 		leftButton.Width = 30;
 		rightButton.Width = 30;
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTabControl Resize Scroll Button Width](images/kb-tabcontrol-resize-scroll-buttons-width-0.png)

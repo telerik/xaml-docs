@@ -42,12 +42,12 @@ Raised when the selected indexes of __RadVirtualGrid__ are about to be deleted. 
 
 * __Indexes__: The selected indexes that are about to be deleted.
 
-#### __[C#] Example 1: Subscribing to the Deleting event__
-{{region cs-radvirtualgrid-features_insert-and-remove-data_0}}
+__Example 1: Subscribing to the Deleting event__
+```C#
 	private void VirtualGrid_Deleting(object sender, VirtualGridDeletingEventArgs e) 
 	{ 
 	}
-{{endregion}}
+```
 
 ### Deleted
 
@@ -55,12 +55,12 @@ This event is raised when the selected indexes of the control have been deleted.
 
 * __Indexes__: The selected indexes that have been deleted.
 
-#### __[C#] Example 2: Subscribing to the Deleted event__
-{{region cs-radvirtualgrid-features_insert-and-remove-data_1}}
+__Example 2: Subscribing to the Deleted event__
+```C#
 	private void VirtualGrid_Deleted(object sender, VirtualGridDeletedEventArgs e) 
 	{ 
 	}
-{{endregion}}
+```
 
 ## See Also
 

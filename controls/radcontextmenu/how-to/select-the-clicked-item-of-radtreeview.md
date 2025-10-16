@@ -20,9 +20,9 @@ This tutorial will show you how to select the item that was clicked, while openi
 
 Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu__ attached.
 
-#### __XAML__
 
-{{region xaml-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_0}}
+
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu x:Name="radContextMenu">
@@ -45,62 +45,56 @@ Before starting, here is a sample __RadTreeView__ with a sample __RadContextMenu
 	    </telerik:RadTreeViewItem>
 	    <telerik:RadTreeViewItem Header="Category5" />
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 To handle the __Opened__ event attach an event handler to it.
 
-#### __XAML__
 
-{{region xaml-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_1}}
+
+```XAML
 	<telerik:RadContextMenu x:Name="radContextMenu1" 
 	                        Opened="RadContextMenu_Opened">
 	    <telerik:RadMenuItem Header="Menu Option 1" />
 	    <telerik:RadMenuItem Header="Menu Option 2" />
 	    <telerik:RadMenuItem Header="Menu Option 3" />
 	</telerik:RadContextMenu>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_2}}
+
+```C#
 	private void RadContextMenu_Opened( object sender, RoutedEventArgs e )
 	{
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_3}}
+```
+```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	End Sub
-{{endregion}}
+```
 
 In it get the instance of the clicked __RadTreeViewItem__ by calling the __GetClickedElement\<T\>()__ method of the __RadContextMenu__.
 
-#### __C#__
 
-{{region cs-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_4}}
+
+```C#
 	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
 	{
 	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_5}}
+```
+```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
 	End Sub
-{{endregion}}
+```
 
 The last thing to do is to set the __SelectedItem__ property of the __RadTreeView__ to the __instance__ of the __RadTreeView__ item that has been clicked.
 
 >If you are having a dynamic data scenario, where the __RadTreeView__ is bound to a collection, you have to set the __SelectedItem__ property to the __DataContext__ of the clicked __RadTreeViewItem__.
 
-#### __C#__
 
-{{region cs-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_6}}
+
+```C#
 	private void RadContextMenu_Opened(object sender, RoutedEventArgs e)
 	{
 	    RadTreeViewItem item = this.radContextMenu.GetClickedElement<RadTreeViewItem>();
@@ -109,18 +103,15 @@ The last thing to do is to set the __SelectedItem__ property of the __RadTreeVie
 	        this.radTreeView.SelectedItem = item;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radcontextmenu-how-to-select-the-clicked-item-of-radtreeview_7}}
+```
+```VB.NET
 	Private Sub RadContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	    Dim item As RadTreeViewItem = Me.radContextMenu.GetClickedElement(Of RadTreeViewItem)()
 	    If item Is Nothing Then
 	        Me.radTreeView.SelectedItem = item
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

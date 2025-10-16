@@ -74,9 +74,9 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 
 * __ItemsFilterCondition__ - used when you want to apply to conditions simultaneously (it is mandatory one of them to be SetCondition). *ItemsFilterCondition* has property Condition where you can set an instance of Comparison, Interval or Text conditions. The property DistinctCondition needs an instance of SetCondition.                  
 
-#### __XAML__
 
-{{region radpivotgrid-features-queryable-group-filter_1}}
+
+```XAML
 	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
 	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
 	        <pivot:LabelGroupFilter>
@@ -86,11 +86,11 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	        </pivot:LabelGroupFilter>
 	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
 	</pivot:QueryablePropertyGroupDescription>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-group-filter_1}}
+
+```C#
 	var shipCountryGroupDescription = new QueryableDoubleGroupDescription();
 	shipCountryGroupDescription.PropertyName = "ShipCountry";
 	var labelGroupFilter = new LabelGroupFilter();
@@ -99,11 +99,8 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	textCondition.Pattern = "C";
 	labelGroupFilter.Condition = textCondition;
 	shipCountryGroupDescription.GroupFilter = labelGroupFilter;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-group-filter_1}}
+```
+```VB.NET
 	Dim shipCountryGroupDescription = New QueryableDoubleGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
 	Dim labelGroupFilter = New LabelGroupFilter()
@@ -112,13 +109,13 @@ __Label Filter__ can be defined in the __XAML__, code behind or even at runtime 
 	textCondition.Pattern = "C"
 	labelGroupFilter.Condition = textCondition
 	shipCountryGroupDescription.GroupFilter = labelGroupFilter
-{{endregion}}
+```
 
 And here is how to apply ItemsFilterCondition:             
 
-#### __XAML__
 
-{{region radpivotgrid-features-queryable-group-filter_4}}
+
+```XAML
 	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
 	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
 	        <pivot:LabelGroupFilter>
@@ -141,11 +138,11 @@ And here is how to apply ItemsFilterCondition:
 	        </pivot:LabelGroupFilter>
 	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
 	</pivot:QueryablePropertyGroupDescription>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-group-filter_4}}
+
+```C#
 	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
 	shipCountryGroupDescription.PropertyName = "ShipCountry";
 	
@@ -166,11 +163,8 @@ And here is how to apply ItemsFilterCondition:
 	var labelGroupFilter = new LabelGroupFilter();
 	labelGroupFilter.Condition = itemsFilterCondition;
 	shipCountryGroupDescription.GroupFilter = labelGroupFilter;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-group-filter_4}}
+```
+```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
 	
@@ -191,7 +185,7 @@ And here is how to apply ItemsFilterCondition:
 	Dim labelGroupFilter = New LabelGroupFilter()
 	labelGroupFilter.Condition = itemsFilterCondition
 	shipCountryGroupDescription.GroupFilter = labelGroupFilter
-{{endregion}}
+```
 
 This way the only visible items will be Canada and Denmark as they are part of the SetCondition and also have "n" in their names which satisfies the text condition.
 
@@ -231,9 +225,9 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 
 * __IntervalCondition__ - used when you want to show only data that is (not) between two values set in the *From* and *To* properties based on the *Condition* property.                  
 
-#### __XAML__
 
-{{region radpivotgrid-features-queryable-group-filter_2}}
+
+```XAML
 	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
 	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
 	        <pivot:ValueGroupFilter AggregateIndex="0">
@@ -243,11 +237,11 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	        </pivot:ValueGroupFilter>
 	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
 	</pivot:QueryablePropertyGroupDescription>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-group-filter_2}}
+
+```C#
 	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
 	shipCountryGroupDescription.PropertyName = "ShipCountry";
 	var intervalCondition = new IntervalCondition();
@@ -259,11 +253,8 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter.AggregateIndex = 0;
 	valueGroupFilter.Condition = intervalCondition;
 	shipCountryGroupDescription.GroupFilter = valueGroupFilter;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-group-filter_2}}
+```
+```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
 	Dim intervalCondition = New IntervalCondition()
@@ -275,7 +266,7 @@ __Value Filter__ can be defined in __XAML__, code behind or at runtime by using 
 	valueGroupFilter.AggregateIndex = 0
 	valueGroupFilter.Condition = intervalCondition
 	shipCountryGroupDescription.GroupFilter = valueGroupFilter
-{{endregion}}
+```
 
 ## Top 10 filter
 
@@ -299,19 +290,19 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 
 * __GroupsSumFilter__ - selects from the groups until sum of their GrandTotals reaches a given number. It is important to define the *Sum* property which indicates the Sum of GrandTotal that selected groups should reach, *Selection* property, which defines if the Top or Bottom groups will be shown and *AggregateIndex* property which defines which Aggregate Description will be used for the filter.                  
 
-#### __XAML__
 
-{{region radpivotgrid-features-queryable-group-filter_3}}
+
+```XAML
 	<pivot:QueryablePropertyGroupDescription PropertyName="ShipCountry">
 	    <pivot:QueryablePropertyGroupDescription.GroupFilter>
 	        <pivot:GroupsCountFilter AggregateIndex="0" Count="4" Selection="Top"/>
 	    </pivot:QueryablePropertyGroupDescription.GroupFilter>
 	</pivot:QueryablePropertyGroupDescription>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-group-filter_3}}
+
+```C#
 	var shipCountryGroupDescription = new QueryablePropertyGroupDescription();
 	shipCountryGroupDescription.PropertyName = "ShipCountry";
 	var countFilter = new GroupsCountFilter();
@@ -319,11 +310,8 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	countFilter.Count = 4;
 	countFilter.Selection = SortedListSelection.Top;
 	shipCountryGroupDescription.GroupFilter = countFilter;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-group-filter_3}}
+```
+```VB.NET
 	Dim shipCountryGroupDescription = New QueryablePropertyGroupDescription()
 	shipCountryGroupDescription.PropertyName = "ShipCountry"
 	Dim countFilter = New GroupsCountFilter()
@@ -331,7 +319,7 @@ You can define *Top 10 filter* in the __XAML__, in the code behind or at runtime
 	countFilter.Count = 4
 	countFilter.Selection = SortedListSelection.Top
 	shipCountryGroupDescription.GroupFilter = countFilter
-{{endregion}}
+```
 
 ## Applying filter at runtime
 

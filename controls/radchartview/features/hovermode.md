@@ -19,8 +19,8 @@ The different charts from the `RadChartView` suite expose the `HoverMode` proper
 
 The following example demonstrates how to set up a RadCartesianChart and set its HoverMode.
         
-#### __[XAML] Define the RadCartesianChart with HoverMode__
-{{region radchartview-features-hovermode-0}}
+__Define the RadCartesianChart with HoverMode__
+```XAML
 	 <telerik:RadCartesianChart x:Name="chart" HoverMode="FadeOtherSeries">
             <telerik:RadCartesianChart.VerticalAxis>
                 <telerik:LinearAxis />
@@ -79,7 +79,7 @@ The following example demonstrates how to set up a RadCartesianChart and set its
                 </telerik:ScatterLineSeries>
             </telerik:RadCartesianChart.Series>
         </telerik:RadCartesianChart>
-{{endregion}}
+```
 
 __Result from the above example comparing hovering over different series__
 

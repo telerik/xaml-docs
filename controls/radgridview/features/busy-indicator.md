@@ -16,15 +16,18 @@ RadGridView enables you to display a notification whenever a longer-running proc
 
 To activate the indicator you have to set RadGridView's __IsBusy__ boolean property to __True__. 
 
-#### __[XAML] Example 1: Setting the IsBusy property__
+__Example 1: Setting the IsBusy property__
 
-{{region xaml-gridview-busy-indicator_0}}
+```XAML
 	<telerik:RadGridView IsBusy="True"/>
-{{endregion}}
+```
 
 You can data bind this property in any way that suits your custom logic. Note that the indicator will be visible only when the __IsBusy__ property is set to __True__.
 
-{% figure 1, "RadGridView with busy indicator", "gridview-features-isbusy.gif" %}
+__RadGridView with busy indicator__
+
+![](images/gridview-features-isbusy.gif)
+
 
 ## Progress Determination
 
@@ -38,13 +41,15 @@ The default the indicator is indetermined. If you need a determined __RadBusyInd
 
 In this case you also need to specify the __BusyIndicatorProgressValue__ property, which will indicate how much of the predefined time has already elapsed. You can set its value through XAML or code-behind. However, to get the most out of it, you have to bind it to a percentage value (between 0 and 100) indicating the state of the ongoing process. If it is less or equal to 0 the donut will be empty and when it is grater or equal to 100 the donut will be filled.
 
-#### __[XAML] Example 2: Defining a determined indicator__
+__Example 2: Defining a determined indicator__
 
-{{region xaml-gridview-busy-indicator_1}}
+```XAML
 	<telerik:RadGridView BusyIndicatorIsIndeterminate="False" BusyIndicatorProgressValue="67" />
-{{endregion}}
+```
 
-{% figure 2, "RadGridView with determined busy indicator", "gridview-features-progress-value.png" %}
+__RadGridView with determined busy indicator__
+
+![](images/gridview-features-progress-value.png)
 
 >A good example of how to define and update a determined busy indicator has been demonstrated in the [following article]({%slug radbusyindicator-features-report-progress-value%}).
 
@@ -52,15 +57,15 @@ In this case you also need to specify the __BusyIndicatorProgressValue__ propert
 
 RadGridView also provides the option to customize what's shown as the indicator's content while it is active through the __BusyIndicatorContent__ and __BusyIndicatorContentTemplate__ properties.
 
-#### __[XAML] Example 3: Setting BusyIndicatorContent__
+__Example 3: Setting BusyIndicatorContent__
 
-{{region xaml-gridview-busy-indicator_2}}
+```XAML
 	<telerik:RadGridView BusyIndicatorContent="Loading data..." />
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Setting BusyIndicatorContentTemplate__
+__Example 4: Setting BusyIndicatorContentTemplate__
 
-{{region xaml-gridview-busy-indicator_3}}
+```XAML
 	<telerik:RadGridView>
         <telerik:RadGridView.BusyIndicatorContentTemplate>
             <DataTemplate>
@@ -72,9 +77,11 @@ RadGridView also provides the option to customize what's shown as the indicator'
             </DataTemplate>
         </telerik:RadGridView.BusyIndicatorContentTemplate>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
-{% figure 3, "RadGridView with busy indicator with custom content template", "gridview-features-content-template.png" %}
+__RadGridView with busy indicator with custom content template__
+
+![](images/gridview-features-content-template.png)
 
 ## See Also
 

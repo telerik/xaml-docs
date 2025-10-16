@@ -43,17 +43,17 @@ __RadRibbonView__ supports single __RadRibbonTab__ selection. You can select it 
 
 This code snippet shows you how to attach to the selection events:
 
-#### __XAML__
-{{region radribbonview-selection_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" PreviewSelectionChanged="radRibbonView_PreviewSelectionChanged" SelectionChanged="radRibbonView_SelectionChanged">
 	...
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 Below is a sample implementation of both of the event handlers:
 
-#### __C#__
-{{region radribbonview-selection_1}}
+
+```C#
 	private void radRibbonView_PreviewSelectionChanged(object sender, RadSelectionChangedEventArgs e)
 	{
 	 // Get the ribbonView
@@ -74,10 +74,8 @@ Below is a sample implementation of both of the event handlers:
 	 //Get the unselected items
 	 IList unselectedItems = e.RemovedItems;
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-selection_2}}
+```
+```VB.NET
 	Private Sub radRibbonView_PreviewSelectionChanged(sender As Object, e As RadSelectionChangedEventArgs)
 	 ' Get the ribbonView'
 	 Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
@@ -96,6 +94,6 @@ Below is a sample implementation of both of the event handlers:
 	 'Get the unselected items'
 	 Dim unselectedItems As IList = e.RemovedItems
 	End Sub
-{{endregion}}
+```
 
 For a full list of the exposed by the __RadRibbonView__ events, take a look at the [Events - Overview]({%slug radribbonview-events-overview%}) topic.

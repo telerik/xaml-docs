@@ -14,8 +14,8 @@ This topic will show you how to bind the color of the TreeMapItems.
 
 For the purpose of this example, we will create the following model.
 
-#### __[C#] Example 1: Create ItemInfo Model__
-{{region radtreemap-howto-bind-color-0}}
+__Example 1: Create ItemInfo Model__
+```C#
 	public class ItemInfo
 	{
 		public Brush Fill { get; set; }
@@ -29,12 +29,12 @@ For the purpose of this example, we will create the following model.
 			this.Children = new ObservableCollection<ItemInfo>();
 		}
 	}
-{{endregion}}
+```
 
 Next, we can go ahead and create sample data.
 
-#### __[C#] Example 2: Create Sample Data__
-{{region radtreemap-howto-bind-color-1}}
+__Example 2: Create Sample Data__
+```C#
 	public class ViewModel
     {
         Random rnd = new Random();
@@ -80,12 +80,12 @@ Next, we can go ahead and create sample data.
             return source;
         }
     }
-{{endregion}}
+```
 
 Now, we can declare our RadTreeMap control in XAML. To bind the color of the items, we can use the __ItemStyle__ of the TypeDefinition. This property is of type Style which targets RadTreeMapItem.
 
-#### __[XAML] Example 3: Declare our RadTreeMap in XAML__
-{{region radtreemap-howto-bind-color-2}}
+__Example 3: Declare our RadTreeMap in XAML__
+```XAML
 	<telerik:RadTreeMap ItemsSource="{Binding Data}">
 		<telerik:RadTreeMap.TypeDefinitions>
 			<telerik:TypeDefinition TargetTypeName="ItemInfo" ValuePath="Value" ChildrenPath="Children" LabelPath="Label">
@@ -97,12 +97,12 @@ Now, we can declare our RadTreeMap control in XAML. To bind the color of the ite
 			</telerik:TypeDefinition>
 		</telerik:RadTreeMap.TypeDefinitions>
 	</telerik:RadTreeMap>
-{{endregion}}
+```
 
 And finally, we need to set our DataContext to the ViewModel.
 
-#### __[C#] Example 4: Setting our DataContext__
-{{region radtreemap-howto-bind-color-3}}
+__Example 4: Setting our DataContext__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -111,7 +111,7 @@ And finally, we need to set our DataContext to the ViewModel.
 			this.DataContext = new ViewModel();
 		}
 	}
-{{endregion}}
+```
 
 If you run the application now, the RadTreeMap should display the following structure:
 

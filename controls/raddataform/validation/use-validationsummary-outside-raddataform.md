@@ -20,27 +20,27 @@ As of __R2 2016 SP1__, __DataFormValidationSummary__ is exposed to be used outsi
 
 In order to use RadGridView in XAML, you have to add the following namespace declaration:
 
-#### __XAML__
 
-{{region xaml-validationsummary-outside-raddataform_0}}
+
+```XAML
 	xmlns:telerikDataForm="clr-namespace:Telerik.Windows.Controls.Data.DataForm;assembly=Telerik.Windows.Controls.Data"
-{{endregion}}
+```
 
 You can then define the control as demonstrated in **Example 1**:
 
-#### __[XAML] Example 1: Defining the DataFormValidationSummary Control__
+__Example 1: Defining the DataFormValidationSummary Control__
 
-{{region xaml-validationsummary-outside-raddataform_1}}
+```XAML
 	<telerikDataForm:DataFormValidationSummary x:Name="ValidationSummary" />
-{{endregion}} 
+``` 
 
 ## Integration with RadGridView
 
 A good example of how to use the DataFormValidationSummary outside RadDataForm would be to integrate it with the **RadGridView** control. One way to achieve this is to handle RadGridView's [RowValidating]({%slug gridview-events-validation%}#rowvalidating-event) event as shown in **Example 2**.
 
-#### __[C#] Example 2: Handling RadGridView's RowValidating Event__
+__Example 2: Handling RadGridView's RowValidating Event__
 
-{{region cs-validationsummary-outside-raddataform_2}}
+```C#
 	private void RadGridView_RowValidating(object sender, GridViewRowValidatingEventArgs e)
 	{
 		this.ValidationSummary.Errors.Clear();
@@ -66,11 +66,8 @@ A good example of how to use the DataFormValidationSummary outside RadDataForm w
 			e.IsValid = false;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Handling RadGridView's RowValidating Event__
-
-{{region vb-validationsummary-outside-raddataform_2}}
+```
+```VB.NET
 	Private Sub RadGridView_RowValidating(ByVal sender As Object, ByVal e As GridViewRowValidatingEventArgs)
 		Me.ValidationSummary.Errors.Clear()
 
@@ -91,7 +88,7 @@ A good example of how to use the DataFormValidationSummary outside RadDataForm w
 			e.IsValid = False
 		End If
 	End Sub
-{{endregion}}
+```
 
 #### __Figure 1: Showing RadGridView validation results in DataFormValidationSummary__
 

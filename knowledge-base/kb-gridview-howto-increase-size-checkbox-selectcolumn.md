@@ -33,8 +33,8 @@ How to increase the CheckBox size of the GridViewSelectColumn.
 
 1. Define the following style targetting the **CheckBox** control.
 
-  #### __[XAML]__
-  {{region xaml-kb-gridview-howto-increase-size-checkbox-selectcolumn-1}}
+  
+  ```XAML
     <Style x:Key="LargeCheckBoxStyle" TargetType="CheckBox" BasedOn="{StaticResource CheckBoxStyle}">
         <Setter Property="LayoutTransform">
             <Setter.Value>
@@ -42,16 +42,16 @@ How to increase the CheckBox size of the GridViewSelectColumn.
             </Setter.Value>
         </Setter>
     </Style>
-  {{endregion}}
+  ```
   
 >importantIf you're not using the [implicit styles]({%slug styling-apperance-implicit-styles-overview%}) mechanism for theming the controls with the [NoXaml binaries]({%slug xaml-vs-noxaml%}), you need to omit the BasedOn attribute.
 
 2. Set the style as the **CheckBoxStyle** of the [GridViewSelectColumn]({%slug radgridview-columns-column-types-select-column%}).
 
-  #### __[XAML]__
-  {{region xaml-kb-gridview-howto-increase-size-checkbox-selectcolumn-2}}
+  
+  ```XAML
     <telerik:GridViewSelectColumn CheckBoxStyle="{StaticResource LargeCheckBoxStyle}" />
-  {{endregion}}
+  ```
 
 >Alternatively you can [edit the default control template]({%slug styling-apperance-editing-control-templates%}) of the checkbox and increase the sizes of its composing elements.
 

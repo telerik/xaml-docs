@@ -16,17 +16,17 @@ The `RadWebCam` control automatically connects to the first camera and recording
 
 To disable the automatic start of the camera, set the `AutoStart` property to `False`. The default value is `True`.
 
-#### __[XAML] Disable auto start__
-{{region radwebcam-radwebcam-features-initialize-camera-0}}
+__Disable auto start__
+```XAML
 	<telerik:RadWebCam AutoStart="False"/>
-{{endregion}}}
+```
 
 To start the camera at a later moment in time, call the `Start` method of RadWebCam.
 
-#### __[C#] Starting the camera__
-{{region radwebcam-radwebcam-features-initialize-camera-1}}
+__Starting the camera__
+```C#
 	this.radWebCam.Start();
-{{endregion}}
+```
 
 ## Start Camera Manually
 
@@ -37,24 +37,24 @@ To start the camera manually, select a camera device, video format and recording
 3. __Initialize the camera__ control using the collected settings. To do this, call the Initialize method of RadWebCam.
 4. __Start the webcam__ control by calling the `Start` method.
 
-#### __[C#] Starting the camera with manually set device and video format__
-{{region radwebcam-radwebcam-features-initialize-camera-2}}
+__Starting the camera with manually set device and video format__
+```C#
 	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();            
 	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]);
 	this.radWebCam.Initialize(videoDevices[0], videoFormats[0]);
 	this.radWebCam.Start();
-{{endregion}}
+```
 
 Optionally, you can select a different recording device by passing a new device to the Initialize method.
 
-#### __[C#] Starting the camera with manually set device, video format and audio format__
-{{region radwebcam-radwebcam-features-initialize-camera-3}}
+__Starting the camera with manually set device, video format and audio format__
+```C#
 	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();            
 	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]);
 	ReadOnlyCollection<MediaFoundationDeviceInfo> recordingDevices = RadWebCam.GetAudioCaptureDevices();
 	this.radWebCam.Initialize(videoDevices[0], videoFormats[0], recordingDevices[0]);
 	this.radWebCam.Start();
-{{endregion}}
+```
 
 Passing an empty recording device (`null`) to the `Initialize` method will disable the audio recording.
 
@@ -68,15 +68,15 @@ To stop the camera manually call the `Stop` method of RadWebCam.
 
 To disconnect from the camera, call the `ShutDown` method.
 
-#### __[C#] Stopping the camera__
-{{region radwebcam-radwebcam-features-initialize-camera-4}}
+__Stopping the camera__
+```C#
 	this.radWebCam.Stop();
-{{endregion}}
+```
 	
-#### __[C#] Shutdown the camera__
-{{region radwebcam-radwebcam-features-initialize-camera-5}}
+__Shutdown the camera__
+```C#
 	this.radWebCam.ShutDown();
-{{endregion}}
+```
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

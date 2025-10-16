@@ -14,15 +14,15 @@ RateOfChangeIndicator measures the relative (percent) change in the values from 
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
-#### __[XAML] Example 1: RateOfChangeIndicator__
-{{region radchartview-indicators-rateofchangeindicator-0}}
+__Example 1: RateOfChangeIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		<telerik:RateOfChangeIndicator Period="8" 													
 									   CategoryBinding="Date"                                             
 									   ValueBinding="Close"
 									   ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: RateOfChangeIndicator
 <img src="images/radchartview-indicators-rateofchangeindicator-0.png" style="width: 80%;">

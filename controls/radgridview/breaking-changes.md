@@ -30,8 +30,8 @@ This article lists and describes the breaking changes introduced in the RadGridV
 	
 	As of Q3 2013 `GridViewElementExportingEventArgs` exposes a new property called `VisualParameters`. The value of the property depends on the export format. You can use this to style the exported element.
 	
-	#### __[C#] Replacing the GridViewExportEventArgs styling with the GridViewElementExportingEventArgs__
-	{{region gridview-breaking-changes-0}}
+	__Replacing the GridViewExportEventArgs styling with the GridViewElementExportingEventArgs__
+	```C#
 		// before
 		private void radGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e) 
 		{ 
@@ -62,7 +62,7 @@ This article lists and describes the breaking changes introduced in the RadGridV
 				param.Width = 500; 
 			} 
 		}
-	{{endregion}}	
+	```	
 
 * Removed obsoleted property `DefaultOperator` of `FilterOperatorsLoadingEventArgs`. Use the `DefaultOperator1` and `DefaultOperator2` properties instead.
 
@@ -98,10 +98,10 @@ The filtering enablement in the `GridViewExpressionColumn` required to write to 
 
 * You can't directly instantiate a `ColumnFilterDescriptor` anymore since the class has been made internal. When you access the `GridViewColumn.ColumnFilterDescriptor` property, it will be automatically created on demand by the column and you will be given an `IColumnFilterDescriptor` to work with. 
 
-	#### __[C#] Accessing the ColumnFilterDescriptor of a column__
-	{{region gridview-breaking-changes-1}}
+	__Accessing the ColumnFilterDescriptor of a column__
+	```C#
 		IColumnFilterDescriptor cfd = myColumnInstance.ColumnFilterDescriptor;
-	{{endregion}}	
+	```	
 
 * The `IColumnFilterDescriptor.Column` property is now of type `GridViewColumn` instead of `IDataFieldDescriptor`.          
 
@@ -115,8 +115,8 @@ The filtering enablement in the `GridViewExpressionColumn` required to write to 
 
 The following examples show some of the changes.
 
-#### __[C#] Filtering a Column__
-{{region gridview-breaking-changes-2}}
+__Filtering a Column__
+```C#
 	// before	
 	GridViewColumn ageColumn = this.radGridView.Columns["Age"];
 	ColumnFilterDescriptor ageColumnFilter = new ColumnFilterDescriptor(ageColumn);	
@@ -133,10 +133,10 @@ The following examples show some of the changes.
 	ageColumnFilter.FieldFilter.Filter1.Operator = FilterOperator.IsLessThan;
 	ageColumnFilter.FieldFilter.Filter1.Value = 10;
 	ageColumnFilter.ResumeNotifications()
-{{endregion}}
+```
 
-#### __[C#] Clearing All RadGridView Filters__  
-{{region gridview-breaking-changes-3}}
+__Clearing All RadGridView Filters__  
+```C#
 	// before
 	this.radGridView.FilterDescriptors.Clear();
 	
@@ -147,7 +147,7 @@ The following examples show some of the changes.
 	    column.ClearFilters();
 	}
 	this.radGridView.FilterDescriptors.ResumeNotifications();
-{{endregion}}
+```
 
 ## See Also  
  * [Getting Started]({%slug gridview-getting-started2%})

@@ -26,8 +26,8 @@ You will need to format the exported string column appropriately so that the Exc
 
 Here is a small sample code:        
 
-#### __[C#]Example 1: Handling the ElementExporting event:__  
-{{region cs-gridview-export-troubleshooting-export-string_0}}
+__Example 1: Handling the ElementExporting event:__  
+```C#
 	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -39,10 +39,8 @@ Here is a small sample code:
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET]Example 2: Handling the ElementExporting event:__  
-{{region vb-gridview-export-troubleshooting-export-string_1}}
+```
+```VB.NET
 	Private Sub clubsGrid_ElementExporting(sender As Object, e As GridViewElementExportingEventArgs)
 	    Dim column = TryCast(e.Context, GridViewDataColumn)
 	    If e.Element = ExportElement.Cell Then
@@ -51,4 +49,4 @@ Here is a small sample code:
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```

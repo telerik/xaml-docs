@@ -38,9 +38,9 @@ The __VisualParameters__ property for this format is of type __GridViewExcelMLVi
 
 For example:
 
-#### __[C#] Example 1: Set the style of the exported element__
+__Example 1: Set the style of the exported element__
 
-{{region cs-gridview-export-excelml_1}}
+```C#
 	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -52,14 +52,14 @@ For example:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 You can define the Style when __InitializingExcelMLStyles__ event is raised. For example:
           
 
-#### __[C#] Example 2: Define a style:__
+__Example 2: Define a style:__
 
-{{region cs-gridview-export-excelml_2}}
+```C#
 	private void clubsGrid_InitializingExcelMLStyles(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("someStyle");
@@ -68,7 +68,7 @@ You can define the Style when __InitializingExcelMLStyles__ event is raised. For
 	    style.Font.Italic = true;
 	    e.Styles.Add(style);
 	}
-{{endregion}}
+```
 
 You can check the [Export Events]({%slug gridview-export-events%}) article for more information on how to define an ExcelMLStyle.
 

@@ -16,8 +16,8 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 
 * __TaskEditing__: Occurs when the task editing is initiated through the UI. __Example 1__ demonstrates how you can handle the event in order to cancel the editing based on a specific condition.
 
-	#### __[C#] Example 1: Canceling the editing of a task__
-	{{region cs-radganttview-events-overview-0}}
+	__Example 1: Canceling the editing of a task__
+	```C#
 		private void GanttView_TaskEditing(object sender, Telerik.Windows.Controls.GanttView.TaskEditingEventArgs e)
         {
             if (your condition here)
@@ -25,16 +25,14 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 				e.Cancel = true;
 			}
         }
-	{{endregion}}
-
-	#### __[VB.NET] Example 1: Canceling the editing of a task__
-	{{region vb-radganttview-events-overview-1}}
+	```
+	```VB.NET
 		Private Sub GanttView_TaskEditing(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditingEventArgs)
 			If your condition here Then
 				e.Cancel = True
 			End If
 		End Sub
-	{{endregion}}
+	```
 
 * __TaskSaving__: Occurs when an edit operation is being committed through the UI. Please, note that you can handle this event to cancel the editing similarly to __Example 1__.
 
@@ -50,22 +48,20 @@ __RadGanttView__ raises the following events, when a task is edited through the 
 
 	* A __TaskEditedEventArgs__ object. It contains the task that has been edited.
 
-	#### __[C#] Example 2: Show Task duration after it has been edited__
-	{{region cs-radganttview-events-overview-2}}
+	__Example 2: Show Task duration after it has been edited__
+	```C#
 		private void GanttView_TaskEdited(object sender, Telerik.Windows.Controls.GanttView.TaskEditedEventArgs e)
         {
             var durationAfterEditing = e.Task.Duration;
             MessageBox.Show($"The duration after editing is - {durationAfterEditing}");
         }
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: Show Task duration after it has been edited__
-	{{region vb-radganttview-events-overview-3}}
+	```
+	```VB.NET
 		Private Sub GanttView_TaskEdited(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GanttView.TaskEditedEventArgs)
 			Dim durationAfterEditing = e.Task.Duration
 			MessageBox.Show($"The duration after editing is - {durationAfterEditing}")
 		End Sub
-	{{endregion}}
+	```
 
 ## See Also
 

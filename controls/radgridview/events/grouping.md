@@ -30,35 +30,31 @@ There are two events that are raised, when a user __expands/collapses a group ro
 
 The code snippets below show how to subscribe for those events:
 
-#### __XAML__
 
-{{region xaml-gridview-events-grouping_0}}
+
+```XAML
 	<telerik:RadGridView Name="clubsGrid" 
 	            ItemsSource="{Binding Clubs}"
 	            Grouping="clubsGrid_Grouping"
 	            Grouped="clubsGrid_Grouped"
 	            GroupRowIsExpandedChanged="clubsGrid_GroupRowIsExpandedChanged"
 	            GroupRowIsExpandedChanging="clubsGrid_GroupRowIsExpandedChanging" />
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-gridview-events-grouping_5}}
+
+```C#
 	clubsGrid.Grouping += clubsGrid_Grouping;
 	clubsGrid.Grouped += clubsGrid_Grouped;
 	clubsGrid.GroupRowIsExpandedChanged += clubsGrid_GroupRowIsExpandedChanged;
 	clubsGrid.GroupRowIsExpandedChanging += clubsGrid_GroupRowIsExpandedChanging;
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-grouping_6}}
+```
+```VB.NET
 	AddHandler clubsGrid.Grouping, AddressOf clubsGrid_Grouping
 	AddHandler clubsGrid.Grouped, AddressOf clubsGrid_Grouped
 	AddHandler clubsGrid.GroupRowIsExpandedChanged, AddressOf clubsGrid_GroupRowIsExpandedChanged
 	AddHandler clubsGrid.GroupRowIsExpandedChanging, AddressOf clubsGrid_GroupRowIsExpandedChanging
-{{endregion}}
+```
 
 
 ## Grouping event
@@ -91,9 +87,9 @@ Via the __Telerik.Windows.Controls.GridViewGroupingEventArgs__ of the __Grouping
 
 For example, you can use the __Grouping__ event to prevent the user from adding more than one group.
 
-#### __C#__
 
-{{region cs-gridview-events-grouping_1}}
+
+```C#
 	private void clubsGrid_Grouping(object sender, GridViewGroupingEventArgs e)
 	{
 	    if (e.Action == GroupingEventAction.Place && e.Index > 0)
@@ -101,18 +97,14 @@ For example, you can use the __Grouping__ event to prevent the user from adding 
 	        e.Cancel = true;
 	    }
 	}
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-grouping_2}}
+```
+```VB.NET
 	Private Sub clubsGrid_Grouping(sender As Object, e As GridViewGroupingEventArgs)
 	    If e.Action = GroupingEventAction.Place AndAlso e.Index > 0 Then
 	        e.Cancel = True
 	    End If
 	End Sub
-{{endregion}}
+```
 
 
 ## Grouped event
@@ -149,24 +141,21 @@ Via the __GridViewGroupedEventArgs__ arguments you can get the:
 For example, you can use the __Grouped__ event to get the column that is grouped by.
         
 
-#### __C#__
 
-{{region cs-gridview-events-grouping_3}}
+
+```C#
 	private void clubsGrid_Grouped(object sender, GridViewGroupedEventArgs e)
 	{
 	    GridViewDataColumn column = ((Telerik.Windows.Controls.GridView.ColumnGroupDescriptor)(e.GroupDescriptor)).Column as GridViewDataColumn;
 	    MessageBox.Show("The GridView was grouped by column: " + column.Header.ToString());
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-events-grouping_4}}
+```
+```VB.NET
 	Private Sub clubsGrid_Grouped(sender As Object, e As GridViewGroupedEventArgs)
 	    Dim column As GridViewDataColumn = TryCast(DirectCast(e.GroupDescriptor, Telerik.Windows.Controls.GridView.ColumnGroupDescriptor).Column, GridViewDataColumn)
 	    MessageBox.Show("The GridView was grouped by column: " + column.Header.ToString())
 	End Sub
-{{endregion}}
+```
 
 
 ## GroupRowIsExpandedChanging event
@@ -180,23 +169,19 @@ Via the __GroupRowCancelEventArgs__ arguments you can __Cancel__ the action of e
 For example, you can use the __GroupRowIsExpandedChanging__ event like so.
         
 
-#### __C#__
 
-{{region cs-gridview-events-grouping_7}}
+
+```C#
 	private void clubsGrid_GroupRowIsExpandedChanging(object sender, Telerik.Windows.Controls.GridView.GroupRowCancelEventArgs e)
 	{
 	    e.Cancel = true;
 	}
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-grouping_8}}
+```
+```VB.NET
 	Private Sub clubsGrid_GroupRowIsExpandedChanging(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowCancelEventArgs)
 	    e.Cancel = True
 	End Sub
-{{endregion}}
+```
 
 
 ## GroupRowIsExpandedChanged event
@@ -210,9 +195,9 @@ Via the __GroupRowEventArgs__ arguments you can get the __GridViewGroupRow (e.Ro
 For example, you can use the __GroupRowIsExpandedChanged__ event to get the expanded group row and set a different Background for it.
         
 
-#### __C#__
 
-{{region cs-gridview-events-grouping_9}}
+
+```C#
 	private void clubsGrid_GroupRowIsExpandedChanged(object sender, Telerik.Windows.Controls.GridView.GroupRowEventArgs e)
 	{
 	    GridViewGroupRow expandedGroup = e.Row as GridViewGroupRow;
@@ -225,12 +210,8 @@ For example, you can use the __GroupRowIsExpandedChanged__ event to get the expa
 	        expandedGroup.Background = new SolidColorBrush(Colors.Green);
 	    }
 	}
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-grouping_10}}
+```
+```VB.NET
 	Private Sub clubsGrid_GroupRowIsExpandedChanged(sender As Object, e As Telerik.Windows.Controls.GridView.GroupRowEventArgs)
 	    Dim expandedGroup As GridViewGroupRow = TryCast(e.Row, GridViewGroupRow)
 	    If expandedGroup.IsExpanded Then
@@ -239,7 +220,7 @@ For example, you can use the __GroupRowIsExpandedChanged__ event to get the expa
 	        expandedGroup.Background = New SolidColorBrush(Colors.Green)
 	    End If
 	End Sub
-{{endregion}}
+```
 
 
 ## See Also

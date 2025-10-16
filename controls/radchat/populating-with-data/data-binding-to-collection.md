@@ -20,18 +20,18 @@ The __MessageConverter__ allows you to use an implementation of the [IMessageCon
 
 The following example shows how to define custom models and use the converter.
 
-#### __[C#] Example 1: Defining the messages view model__
-{{region chat-populating-with-data-binding-to-collection-0}}
+__Example 1: Defining the messages view model__
+```C#
 	public class TextMessageModel
 	{
 		public string Text { get; set; }
 		public Author Author { get; set; }
 		public DateTime CreationDate { get; set; }
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining the main view model and populating the data source with data__
-{{region chat-populating-with-data-binding-to-collection-1}}
+__Example 2: Defining the main view model and populating the data source with data__
+```C#
 	public class MainViewModel
     {
         public ObservableCollection<TextMessageModel> Messages { get; set; }
@@ -51,10 +51,10 @@ The following example shows how to define custom models and use the converter.
             this.Messages.Add(new TextMessageModel() { Text = "Show me the weather for this week", Author = this.CurrentAuthor, CreationDate = DateTime.Now.AddMinutes(5) });
         }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 3: Implementing message converter__
-{{region chat-populating-with-data-binding-to-collection-2}}
+__Example 3: Implementing message converter__
+```C#
 	public class MessageConverter : IMessageConverter
     {
 		public MessageBase ConvertItem(object item)
@@ -74,10 +74,10 @@ The following example shows how to define custom models and use the converter.
             };
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Setting up the RadChat control__
-{{region chat-populating-with-data-binding-to-collection-3}}
+__Example 4: Setting up the RadChat control__
+```XAML
 	  <telerik:RadChat CurrentAuthor="{Binding CurrentAuthor}" DataSource="{Binding Messages}">
             <telerik:RadChat.DataContext>
                 <local:MainViewModel />
@@ -86,7 +86,7 @@ The following example shows how to define custom models and use the converter.
                 <local:MessageConverter />
             </telerik:RadChat.MessageConverter>
         </telerik:RadChat>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChat with Data-Bound Messages](images/chat-populating-with-data-binding-to-collection-0.png)
 

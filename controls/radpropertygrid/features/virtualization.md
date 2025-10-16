@@ -20,33 +20,30 @@ The following tutorial shows how to bind to a collection of business objects and
 
 Here is a simple RadPropertyGrid declaration.
 
-#### __[XAML] Example 1: Defining RadPropertyGrid__
+__Example 1: Defining RadPropertyGrid__
 
-	{{region xaml-radpropertygrid-virtualization_0}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
-{{endregion}}
+```
 
 RadPropertyGrid is populated with 10 000 rows.
 
-#### __[C#] Example 2: Populating RadPropertyGrid__
+__Example 2: Populating RadPropertyGrid__
 
-	{{region cs-radpropertygrid-virtualization_1}}
+```C#
 	this.propertyGrid1.Item = this.GetVeryLargeDataSource();
-{{endregion}}
-
-#### __[VB.NET] Example 2: Populating RadPropertyGrid__
-
-	{{region vb-radpropertygrid-virtualization_1}}
+```
+```VB.NET
 	Me.propertyGrid1.Item = Me.GetVeryLargeDataSource()
-{{endregion}}
+```
 
 Finally, in order to enable the __UI Virtualization__ behavior, you should set the __IsVirtualizing__ property of RadPropertyGrid to __True__. See the example below:
       
 
-#### __[XAML] Example 3: Setting IsVirtualizing property__
+__Example 3: Setting IsVirtualizing property__
 
-	{{region xaml-radpropertygrid-virtualization_2}}
+```XAML
 	<telerik:RadPropertyGrid IsVirtualizing="True" />
-{{endregion}}
+```
 
 >tipA complete example of RadPropertyGrid UI Virtualization is available in {% if site.site_name == 'Silverlight' %}[this online demo](https://demos.telerik.com/silverlight/#PropertyGrid/Virtualization){% endif %}{% if site.site_name == 'WPF' %}[this online demo](https://demos.telerik.com/wpf/#PropertyGrid/Virtualization){% endif %}.

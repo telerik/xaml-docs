@@ -26,9 +26,9 @@ They allow you to categorize different properties into separate groups, set some
 
 First, for the purpose of this article, we will create a new **Employee** class with a couple of properties:
 
-#### __[C#] Example 1: Creating the Employee class__
+__Example 1: Creating the Employee class__
 
-	{{region cs-radpropertygrid-data-annotations_1}}
+```C#
 	public class Employee
 	{
 	    public string FirstName { get; set; }
@@ -38,11 +38,8 @@ First, for the purpose of this article, we will create a new **Employee** class 
 	    public string Occupation { get; set; }
 	    public DateTime StartingDate { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the Employee class__
-
-	{{region vb-radpropertygrid-data-annotations_1}}
+```
+```VB.NET
 	Public Class Employee
 	    Public Property FirstName() As String
 	    Public Property LastName() As String
@@ -51,21 +48,21 @@ First, for the purpose of this article, we will create a new **Employee** class 
 	    Public Property Occupation() As String
 	    Public Property StartingDate() As Date
 	End Class
-{{endregion}}
+```
 
 The declaration of RadPropertyGrid control inside the Grid:        
 
-#### __[XAML] Example 2: Declaring RadPropertyGrid__
+__Example 2: Declaring RadPropertyGrid__
 
-	{{region xaml-radpropertygrid-data-annotations_0}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="propertyGrid1" />
-{{endregion}}
+```
 
 Once the class Employee is defined, you may use it for creating an object of this type and bind it to RadPropertyGrid:
 
-#### __[C#] Example 3: Binding Employee instance to RadPropertyGrid__
+__Example 3: Binding Employee instance to RadPropertyGrid__
 
-	{{region cs-radpropertygrid-data-annotations_2}}
+```C#
 	this.propertyGrid1.Item = new Employee()
 	{
 	    FirstName = "Sarah",
@@ -75,11 +72,8 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	    Salary = 3500,
 	    StartingDate = new DateTime(2005, 12, 4)
 	};
-{{endregion}}
-
-#### __[VB.NET] Example 3: Binding Employee instance to RadPropertyGrid__
-
-	{{region vb-radpropertygrid-data-annotations_2}}
+```
+```VB.NET
 	Me.propertyGrid1.Item = New Employee() With {
 	  .FirstName = "Sarah",
 	  .LastName = "Blake",
@@ -87,7 +81,7 @@ Once the class Employee is defined, you may use it for creating an object of thi
 	  .StartingDate = New DateTime(2005, 4, 12),
 	  .Salary = 3500
 	}
-{{endregion}}
+```
 
 After you run the application you should see the following:
 
@@ -111,9 +105,9 @@ The **Display** attribute specifies localizable strings for data types and membe
               
 **Example 4** demonstrates how you can specify a Display attribute for a property:
 
-#### __[C#] Example 4: Setting Display attribute__
+__Example 4: Setting Display attribute__
 
-	{{region cs-radpropertygrid-data-annotations_3}}
+```C#
 	//Rename the StartingDate property to Year in the UI
 	[Display(Name = "Year")]
 	public DateTime StartingDate { get; set; }
@@ -123,11 +117,8 @@ The **Display** attribute specifies localizable strings for data types and membe
 	//Set a description to the LastName property and categorize it to be from the group "Personal Information"
 	[Display(Description = "Employee's last name.", GroupName = "Personal Information")]
 	public string LastName { get; set; }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting Display attribute__
-
-	{{region vb-radpropertygrid-data-annotations_3}}
+```
+```VB.NET
 	'Rename the StartingDate property to Year in the UI
 	<Display(Name:="Year")>
 	Public Property StartingDate() As Date
@@ -137,53 +128,47 @@ The **Display** attribute specifies localizable strings for data types and membe
 	'Set a description to the LastName property and categorize it to be from the group "Personal Information"
 	<Display(Description:="Employee's last name.", GroupName:="Personal Information")>
 	Public Property LastName() As String
-{{endregion}}
+```
 
 ## Browsable
 
 The **Browsable** attribute specifies whether a property should be displayed or not.
 
-#### __[C#] Example 5: Setting Browsable attribute__
+__Example 5: Setting Browsable attribute__
 
-	{{region cs-radpropertygrid-data-annotations_4}}
+```C#
 	//Hide StartingDate from the UI
 	[Browsable(false)]
 	public DateTime StartingDate { get; set; }
-{{endregion}}
-
-#### __[VB.NET] Example 5: Setting Browsable attribute__
-
-	{{region vb-radpropertygrid-data-annotations_4}}
+```
+```VB.NET
 	'Hide StartingDate from the UI
 	<Browsable(False)>
 	Public Property StartingDate() As Date
-{{endregion}}
+```
 
 ## ReadOnly
 
 The **ReadOnly** attribute specifies whether the property this attribute is bound to is read-only or read/write.
 
-#### __[C#] Example 6: Setting ReadOnly attribute__
+__Example 6: Setting ReadOnly attribute__
 
-	{{region cs-radpropertygrid-data-annotations_5}}
+```C#
 	//Set StartingDate as Read-Only
 	[ReadOnly(true)]
 	public DateTime StartingDate { get; set; }
-{{endregion}}
-
-#### __[VB.NET] Example 6: Setting ReadOnly attribute__
-
-	{{region vb-radpropertygrid-data-annotations_5}}
+```
+```VB.NET
 	'Set StartingDate as Read-Only
 	<[ReadOnly](True)>
 	Public Property StartingDate() As Date
-{{endregion}}
+```
 
 To see these attributes in action, let's modify the Employee class and see the result in RadPropertGrid.
 
-#### __[C#] Example 7: Modifying sample data__
+__Example 7: Modifying sample data__
 
-	{{region cs-radpropertygrid-data-annotations_6}}
+```C#
 	[Display(Description = "Employee's first name.", GroupName = "Personal Information")]
 	public string FirstName { get; set; }
 	[Display(Description = "Employee's last name.", GroupName = "Personal Information")]
@@ -196,11 +181,8 @@ To see these attributes in action, let's modify the Employee class and see the r
 	public string PhoneNum { get; set; }
 	[ReadOnly(true)]
 	public DateTime StartingDate { get; set; }
-{{endregion}}
-
-#### __[VB.NET] Example 7: Modifying sample data__
-
-	{{region vb-radpropertygrid-data-annotations_6}}
+```
+```VB.NET
 	<Display(Description:="Employee's first name.", GroupName:="Personal Information")>
 	Public Property FirstName() As String
 	<Display(Description:="Employee's last name.", GroupName:="Personal Information")>
@@ -213,7 +195,7 @@ To see these attributes in action, let's modify the Employee class and see the r
 	Public Property PhoneNum() As String
 	<[ReadOnly](True)>
 	Public Property StartingDate() As Date
-{{endregion}}
+```
 
 Here's the resulting RadPropertyGrid sorted alphabetically and in grouped mode:
 

@@ -25,8 +25,8 @@ These layers are responsible for drawing different elements on the canvas of the
 
 We will now create a custom layer which will be responsible for highlighting any keywords when they are hovered with the mouse. For the purpose, we need to override the **GetLinePartUIElement** method and return a **FrameworkElement** to be drawn on the layer - a semi-transparent rectangle in this case. 
 
-#### __[C#] Example 1: Creating a custom layer__
-{{region cs-radsyntaxeditor-features-layers-1}}
+__Example 1: Creating a custom layer__
+```C#
     
 	public class HighlightOnMouseOverUILayer : LineBasedUILayer<ClassificationTag>
 	{
@@ -73,12 +73,12 @@ We will now create a custom layer which will be responsible for highlighting any
 			rectangle.MouseMove -= this.Rectangle_MouseMove;
         }
 	}
-{{endregion}}
+```
 
 For our custom layer to be recognized by the RadSyntaxEditor we need to add it to the **UILayerStack**. We can do so by creating a custom **UILayersBuilder** and overriding its **BuildUILayers** method.
 
-#### __[C#] Example 2: Using the custom layer in a custom layers builder__
-{{region cs-radsyntaxeditor-features-layers-2}}
+__Example 2: Using the custom layer in a custom layers builder__
+```C#
 
     public class CustomUILayersBuilder : UILayersBuilder
 	{
@@ -99,15 +99,15 @@ For our custom layer to be recognized by the RadSyntaxEditor we need to add it t
            } 
         }
     }
-{{endregion}}
+```
 
 Finally, we need to set the **UILayersBuilder** to an instance of the custom layers builder class.
 
-#### __[C#] Example 3: Using the custom layers builder__
-{{region cs-radsyntaxeditor-features-layers-3}}
+__Example 3: Using the custom layers builder__
+```C#
 
     this.syntaxEditor.UILayersBuilder = new CustomUILayersBuilder();
-{{endregion}}
+```
 
 Now, when users mouse over any of the keywords, they will be highlighted with a semi-transparent red rectangle.
 

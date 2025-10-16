@@ -28,9 +28,8 @@ res_type: kb
  ## Solution
 
  **1.** First open the **MainWindow.xaml** file and replace the Window declaration with a RadWindow declaration:
-
-	#### __[XAML]__
-	{{region kb-window-howto-use-radwindow-as-mainwindow-0}}
+	
+```XAML
 	  <telerik:RadWindow x:Class="RadWindowAsMainWindow.MainWindow"
 		  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -38,41 +37,37 @@ res_type: kb
 		  Header="MainWindow" Height="350" Width="525">
 	  ...
 	  </telerik:RadWindow>
-	{{endregion}}
+```
 
-	and in code-behind:
-
-	#### __[C#]__
-	{{region kb-window-howto-use-radwindow-as-mainwindow-1}}
-	  public partial class MainWindow : RadWindow
-	  {
-	   ...
-	  }
-	{{endregion}}
+and in code-behind:
+	
+```C#
+	public partial class MainWindow : RadWindow
+	{
+	}
+```
 
 **2.** Remove **StartupUri** from the Application definition inside App.xaml:
-
-	#### __[XAML]__
-	{{region kb-window-howto-use-radwindow-as-mainwindow-2}}
-	  <Application x:Class="RadWindowAsMainWindow.App"
-	      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	  ...
-	{{endregion}}
+	
+```XAML
+  <Application x:Class="RadWindowAsMainWindow.App"
+	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  ...
+```
 
 **3.** Then override the **OnStartup** method of the Application class to show the RadWindow:
-
-	#### __[C#]__
-	{{region kb-window-howto-use-radwindow-as-mainwindow-3}}
-	  public partial class App : Application
+	
+```C#
+  public partial class App : Application
+  {
+	  protected override void OnStartup(StartupEventArgs e)
 	  {
-	      protected override void OnStartup(StartupEventArgs e)
-	      {
-		  new MainWindow().Show();
-		  base.OnStartup(e);
-	      }
+	  new MainWindow().Show();
+	  base.OnStartup(e);
 	  }
-	{{endregion}}
+  }
+```
 
  ## See Also
 

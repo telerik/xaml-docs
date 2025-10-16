@@ -14,15 +14,15 @@ RelativeStrengthIndexIndicator counts up and down periods from the current close
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__ property.
 
-#### __[XAML] Example 1: RelativeStrengthIndexIndicator__
-{{region radchartview-indicators-relativestrengthindexindicator-0}}
+__Example 1: RelativeStrengthIndexIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		<telerik:RelativeStrengthIndexIndicator Period="8"
 												CategoryBinding="Date"                                             
 												ValueBinding="Close"
 												ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: RelativeStrengthIndexIndicator
 <img src="images/radchartview-indicators-relativestrengthindexindicator-0.png" style="width: 80%;">

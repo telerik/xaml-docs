@@ -45,15 +45,15 @@ __PdfFormatProvider__ exposes __ExportSettings__, which allow you to control ima
 	* __None__: The inline UI containers will not be exported.
 	* __Image__: Default mode. All the __InlineUIContainers__ are added as images to the PDF document. 
 
-#### __[C#] Example 1: Setting the ExportSettings of the PdfFormatProvider__
-{{region c#-radrichtextbox-import-export-pdf-settings_0}}
+__Example 1: Setting the ExportSettings of the PdfFormatProvider__
+```C#
 	PdfExportSettings pdfExportSettings = new PdfExportSettings();
 	pdfExportSettings.ContentsDeflaterCompressionLevel = 9;
 	pdfExportSettings.DrawPageBodyBackground = false;
 	
 	PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
 	pdfFormatProvider.ExportSettings = pdfExportSettings;
-{{endregion}}
+```
 
 >__PDF import__ is currently __not__ supported, so there are no import settings.
 

@@ -12,11 +12,11 @@ position: 3
 
 __RadDateTimePicker__'s API gives you the ability to open the __DropDown__ when the control gets focus. In order to enable this behavior, you should set the __RadDateTimePicker__'s  __OpenDropDownOnFocus__ property to __True__.
 
-#### __[XAML] Example 1: Set the OpenDropDownOnFocus property__
+__Example 1: Set the OpenDropDownOnFocus property__
 
-{{region raddatetimepicker-howto-open-dropdown-get-focus_0}}
+```XAML
 	<telerik:RadDateTimePicker OpenDropDownOnFocus="True"/>
-{{endregion}}
+```
 
 >tipThe default value of the __RadDateTimePicker__'s __OpenDropDownOnFocus__ property is __False__.
 

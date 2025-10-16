@@ -18,8 +18,8 @@ The following steps describe how to override the __DiagramCommands.Delete__ comm
 
 1. Define a new __CommandBinding__ object and register it using the __CommandManager__. The binding will be used to replace the default behavior of the command. You can do that in the static constructor of the window, UserControl or the application which uses the RadDiagram control.
 	
-	#### __[C#] Example 1: Defining CommandBinding__  
-	{{region raddiagrams-howto-override-command-0}}
+	__Example 1: Defining CommandBinding__  
+	```C#
 		static MainPage()
 		{
 			var commandBinding = new CommandBinding(
@@ -28,24 +28,24 @@ The following steps describe how to override the __DiagramCommands.Delete__ comm
                 OnDiagramDeleteCommandCanExecute);
             CommandManager.RegisterClassCommandBinding(typeof(RadDiagram), commandBinding);
 		}
-	{{endregion}}
+	```
 	
 2. Implement the __OnCanExecute__ handler of the command. Here you can decide whether the command can be executed or not.
 	
-	#### __[C#] Example 2: Implementing OnCanExecute__  
-	{{region raddiagrams-howto-override-command-1}}
+	__Example 2: Implementing OnCanExecute__  
+	```C#
 		static void OnDiagramDeleteCommandCanExecute(object sender, CanExecuteRoutedEventArgs e)
 		{
 			// Here you can implement additional logic that decides whether the command should be executed or not
 			e.CanExecute = true;
 			e.Handled = true;
 		}
-	{{endregion}}
+	```
 	
 3. Implement the __OnExecute__ handle of the command. Here is implemented the behavior of the command. The following code shows how to create very basic delete operation.
 		
-	#### __[C#] Example 3: Implementing OnExecute__  
-	{{region raddiagrams-howto-override-command-2}}	
+	__Example 3: Implementing OnExecute__  
+	```C#	
 		static void OnDiagramDeleteCommandExecute(object sender, ExecutedRoutedEventArgs e)
         {
             var diagram = (RadDiagram)sender;             
@@ -67,14 +67,14 @@ The following steps describe how to override the __DiagramCommands.Delete__ comm
                 diagram.Items.Remove(container.Items[container.Items.Count - 1]);
             }         
         }
-	{{endregion}}
+	```
 	
 ## Extend Diagram Command Action
 
 You can use the __CommandExecuted__ event of RadDiagram to implement an additional action which will get invoked after the execution of a built-in command. The event arguments allows you to get the execute action and the command itself via the __Command__ and __ExecuteAction__ properties.
 
-#### __[C#] Example 4: Implementing command execute handler__  
-{{region raddiagrams-howto-override-command-3}}	
+__Example 4: Implementing command execute handler__  
+```C#	
 	private void RadDiagram_CommandExecuted(object sender, Telerik.Windows.Controls.Diagrams.CommandRoutedEventArgs e)
 	{            
 		if (e.ExecuteAction == ExecuteAction.Execute && e.Command.Name == "Cut Items")
@@ -82,7 +82,7 @@ You can use the __CommandExecuted__ event of RadDiagram to implement an addition
 		   // Execute any additional logic when the Cut action is performed. For example, show a message that tells the shape is added to the clipboard.
 		}
 	}
-{{endregion}}
+```
 
 ## See Also
  * [Getting Started]({%slug raddiagram-getting-started%})

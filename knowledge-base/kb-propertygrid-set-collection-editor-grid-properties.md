@@ -28,30 +28,26 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
 ## Solution
 
 1. Handle the **Loaded** event of the parent **RadRropertyGrid**.
-
-	#### __[C#]__
-	{{region cs-kb-propertygrid-set-collection-editor-grid-properties-0}}
+	
+	```C#
 		private void RadPropertyGrid_Loaded(object sender, RoutedEventArgs e)
 		{
 			var editorPicker = rpg.ChildrenOfType<CollectionEditorPicker>().First();
 			var collectionEditor = editorPicker.CollectionEditor;
 			collectionEditor.Loaded += CollectionEditor_Loaded;
 		}
-	{{endregion}}
-  
-	#### __[VB.NET]__
-	{{region vb-kb-propertygrid-set-collection-editor-grid-properties-0}}
+	```
+	```VB.NET
 		Private Sub RadPropertyGrid_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Dim editorPicker = rpg.ChildrenOfType(Of CollectionEditorPicker)().First()
 			Dim collectionEditor = editorPicker.CollectionEditor
 			collectionEditor.Loaded += CollectionEditor_Loaded
 		End Sub
-	{{endregion}}
+	```
 	
 2. Handle the **Loaded** event of the **CollectionEditor**.
-
-	#### __[C#]__
-	{{region kb-propertygrid-set-collection-editor-grid-properties-1}}
+	
+	```C#
 		private void CollectionEditor_Loaded(object sender, RoutedEventArgs e)
 		{
 			var collectionEditor = sender as CollectionEditor;
@@ -59,17 +55,15 @@ How to set properties on the RadPropertyGrid inside the [CollectionEditor]({%slu
       			propertyGrid.LabelColumnWidth = new GridLength(50);
       			// set any other properties
 		}
-	{{endregion}}
-  
-  	#### __[VB.NET]__
-	{{region vb-kb-propertygrid-set-collection-editor-grid-properties-1}}
+	```
+	```VB.NET
 		Private Sub CollectionEditor_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 			Dim collectionEditor = TryCast(sender, CollectionEditor)
 			Dim propertyGrid = collectionEditor.ChildrenOfType(Of RadPropertyGrid)().First()
 	    propertyGrid.LabelColumnWidth = New GridLength(50)
 	    ' set any other properties
 		End Sub
-	{{endregion}}
+	```
   
 ## See Also
 * [CollectionEditor]({%slug radpropertygrid-collectioneditor%})

@@ -22,27 +22,22 @@ There are three interfaces in the extensible object pattern: [IExtensibleObject]
 
 The __IExtensibleObject__ interface is implemented by types that allow __IExtension__ objects to customize their functionality. __Extensible__ objects allow dynamic aggregation of IExtension objects. __IExtension__ objects are characterized by the following interface:
 
-#### __C#__
 
-{{region cs-radchart-features-chart-extensions_0}}
+
+```C#
 	public interface IExtension<T>
 	    where T : IExtensibleObject<T>
 	{
 	   void Attach(T owner);
 	   void Detach(T owner);
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-chart-extensions_1}}
+```
+```VB.NET
 	Public Interface IExtension(Of T As IExtensibleObject(Of T))
 	    Sub Attach(ByVal owner As T)
 	    Sub Detach(ByVal owner As T)
 	End Interface
-{{endregion}}
+```
 
 
 
@@ -60,9 +55,9 @@ In order to plug your custom tool into the extensibility infrastructure supporte
 
 In order to utilize the already defined custom tool you need to add it to the __Extensions__ collection property of the respective __ChartArea__ which functionality you would like to extend. Here is a sample code snippet that demonstrates adding / removing the __CameraExtension__ on __UserControl.Loaded__ / __Unloaded__ events:
 
-#### __C#__
 
-{{region cs-radchart-features-chart-extensions_2}}
+
+```C#
 	private void UserControl_Loaded(object sender, RoutedEventArgs e)
 	{
 	    CameraExtension cameraExtension = new CameraExtension();
@@ -72,13 +67,8 @@ In order to utilize the already defined custom tool you need to add it to the __
 	{
 	    radChart.DefaultView.ChartArea.Extensions.Clear();
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-chart-extensions_3}}
+```
+```VB.NET
 	Private Sub UserControl_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim cameraExtension As New CameraExtension()
 	    radChart.DefaultView.ChartArea.Extensions.Add(cameraExtension)
@@ -86,7 +76,7 @@ In order to utilize the already defined custom tool you need to add it to the __
 	Private Sub UserControl_Unloaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    radChart.DefaultView.ChartArea.Extensions.Clear()
 	End Sub
-{{endregion}}
+```
 
 
 

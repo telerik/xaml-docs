@@ -18,8 +18,8 @@ To apply an animation to the displayed SVG image, you can utilize the `animate`,
 
 >tip To learn more about the above-mentioned elements, check the [animate](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate), [animateMotion](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion), and [animateTransform](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform) articles.
 
-#### __[XML] Sample SVG file with animations__
-{{region radsvgimage-animations-0}}
+__Sample SVG file with animations__
+```XML
     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-128 -128 345 345" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
             <clipPath id="circle">
@@ -65,12 +65,12 @@ To apply an animation to the displayed SVG image, you can utilize the `animate`,
             <use xlink:href="#dot" />
         </g>
     </svg>
-{{endregion}}
+```
 
-#### __[XAML] RadSvgImage instance using an SVG file with animations__
-{{region radsvgimage-animations-1}}
+__RadSvgImage instance using an SVG file with animations__
+```XAML
     <telerik:RadSvgImage Width="256" Height="256" UriSource="MySvgWithAnimations.svg"/>
-{{endregion}}
+```
 
 __RadSvgImage displaying an SVG file with animations__
 

@@ -23,85 +23,67 @@ Here are several small demos for __RadGridView__:
 
 * Get all grid rows:
 
-#### __C#__
-{{region gridview-how-to-customize-ui-programmatically_0}}
-
+```C#
 	var rows = RadGridView1.ChildrenOfType<GridViewRow>();
-{{endregion}}
+```
 
 * Get all grid cells:
 
-#### __C#__
-{{region gridview-how-to-customize-ui-programmatically_1}}
-
+```C#
 	var cells= RadGridView1.ChildrenOfType<GridViewCell>();
-{{endregion}}
+```
 
 * Get all grid header cells:
 
-#### __C#__
-
-{{region gridview-how-to-customize-ui-programmatically_2}}
-
+```C#
 	var headerCells = RadGridView1.ChildrenOfType<GridViewHeaderCell>();
-{{endregion}}
+```
 
 
 * Get (and show) new row:
 
-#### __C#__
-
-{{region gridview-how-to-customize-ui-programmatically_3}}
-
+```C#
 	var newRow = RadGridView1.ChildrenOfType<GridViewNewRow>().First();
 	newRow.Visibility = Visibility.Visible;
-{{endregion}}
+```
 
 
 * Find the grid vertical scrollbar and scroll the grid to bottom:
 
-#### __C#__
-
-{{region gridview-how-to-customize-ui-programmatically_4}}
-
+```C#
 	var verticalScrollBar = RadGridView1.ChildrenOfType<ScrollBar>().Where(s=>s.Orientation == Orientation.Vertical).First();
 	verticalScrollBar.Value = verticalScrollBar.Maximum;
-{{endregion}}
+```
 
 * Select specific row(s):
 
-#### __C#__
-
-{{region gridview-how-to-customize-ui-programmatically_5}}
+```C#
 
 	var row = RadGridView1.ChildrenOfType<GridViewRow>().Where(r => r.ChildrenOfType<GridViewCell>().Where(c => c.Content.ToString() == "ALFKI").Any()).First();
 	row.IsSelected = true;
-{{endregion}}
+```
 
 * Change specific cell(s) content:
 
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_6}}
+```C#
 
 	var cell = RadGridView1.ChildrenOfType<GridViewCell>().Where(c => c.Content.ToString() == "ALFKI").First();
 	cell.Content = "Changed!";
-{{endregion}}
+```
 
 * Put specific cell in edit mode:
 
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_7}}
+```C#
 	var cell = RadGridView1.ChildrenOfType<GridViewCell>().Where(c => c.Content.ToString() == "ALFKI").First();
 	cell.IsInEditMode = true;
-	{{endregion}}
+```
 
 * Get visible rows count on scroll or size change:
     
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_8}}
+```C#
 
 	void Window1_Loaded(object sender, RoutedEventArgs e)
 	{
@@ -117,67 +99,61 @@ Here are several small demos for __RadGridView__:
 	{
 	    var visibleRowsCount = RadGridView1.ChildrenOfType<GridViewRow>().Where(r => r.Visibility == Visibility.Visible).Count();
 	}
-{{endregion}}
+```
 
 * Perform conditional row(s) formatting:
     
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_9}}
+```C#
 
 	var rows = RadGridView1.ChildrenOfType<GridViewRow>().Where(r => r.ChildrenOfType<GridViewCell>().Where(c => c.Content.ToString() == "ALFKI"|| c.Content.ToString() == "AROUT").Any()).ToList();
 	rows.ForEach(r => r.Background = Brushes.Red);
-{{endregion}}
+```
 
 * Expand first row in case of hierarchy:
 
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_10}}
+```C#
 
 	var expandableRow = RadGridView1.ChildrenOfType<GridViewExpandableRow>().First();
 	expandableRow.IsExpanded = true;
-{{endregion}}
+```
 
 
 * Collapse first group header row:
 
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_11}}
+```C#
 
 	var groupHeader = RadGridView1.ChildrenOfType<GridViewGroupRow>().First();
 	groupHeader.ChildrenOfType<Expander>().First().IsExpanded = false;
-{{endregion}}
+```
 
 * Modify background for all cells in specific column:   
 
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_12}}
+```C#
 
 	var unitPriceCells = RadGridView1.ChildrenOfType<GridViewCell>().Where(c => c.Column.UniqueName == "UnitPrice").ToList();
 	unitPriceCells.ForEach(c => c.Background = Brushes.Orange);
-{{endregion}}
+```
 
 * Increase header row Height:   
 
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_13}}
+```C#
 	var headerRow = RadGridView1.ChildrenOfType<GridViewHeaderRow>().First();
 	headerRow.Height = 100;
-{{endregion}}
+```
 
 * Check all CheckBox controls in specific column:
 
-#### __C#__
 
-{{region gridview-how-to-customize-ui-programmatically_14}}
+```C#
 
 	var cells = RadGridView1.ChildrenOfType<GridViewCell>().Where(c => c.Column.UniqueName == "Test").ToList();
 	cells.ForEach(c => c.ChildrenOfType<CheckBox>().First().IsChecked = true);
-{{endregion}}
+```
 
 ## See Also
 

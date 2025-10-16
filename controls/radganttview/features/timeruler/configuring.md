@@ -24,36 +24,36 @@ The combination between PixelLength and [VisibleRange]({%slug radganttview-getti
 
 __AutoSizeTimeline__ determines if the PixelLength will be automatically calculated based on the available size of the control, thus stretching the TimeRuler.
 
-#### __[XAML] Example 1: Default settings without auto-sizing or PixelLength settings__  
-{{region xaml-radganttview-features-timeruler-configuring_0}}
+__Example 1: Default settings without auto-sizing or PixelLength settings__  
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" BorderBrush="Black" BorderThickness="1"/>
-{{endregion}}
+```
 
 #### Figure 1: Default behavior without auto-sizing or PixelLength settings
 ![Default behavior without auto-sizing or PixelLength settings](images/radganttview-features-timeruler-configuring-0.png)
 
 Figure 1 and the following sizing examples show the RadGanttView with a thin border in order to illustrate how the sizing behaves in the different scenarios.
 
-#### __[XAML] Example 2: Setting PixelLength to 15 minutes__
-{{region xaml-radganttview-features-timeruler-configuring_1}}
+__Example 2: Setting PixelLength to 15 minutes__
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" PixelLength="00:15:00" BorderBrush="Black" BorderThickness="1"/>
-{{endregion}}
+```
 
 #### Figure 2: PixelLength set to 15 minutes
 ![PixelLength set to 15 minutes](images/radganttview-features-timeruler-configuring-1.png)
 
-#### __[XAML] Example 3: Setting PixelLength to 1 hour__
-{{region xaml-radganttview-features-timeruler-configuring_2}}
+__Example 3: Setting PixelLength to 1 hour__
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" PixelLength="01:00:00" BorderBrush="Black" BorderThickness="1"/>
-{{endregion}}
+```
 
 #### Figure 3: PixelLength set to 1 hour
 ![PixelLength set to 1 hour](images/radganttview-features-timeruler-configuring-2.png)
 
-#### __[XAML] Example 4: Setting AutoSizeTimeline__
-{{region xaml-radganttview-features-timeruler-configuring_3}}
+__Example 4: Setting AutoSizeTimeline__
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" AutoSizeTimeline="True" BorderBrush="Black" BorderThickness="1"/>
-{{endregion}}
+```
 
 #### Figure 4: Auto-sized timeline
 ![Auto-sized timeline](images/radganttview-features-timeruler-configuring-3.png)
@@ -64,8 +64,8 @@ The timeline of the TimeRuler area provides three types of interval lines - grou
 
 Each tick line object added in the TimeRulerLines collection will generate a new row with ticks in the UI of the timeline.
 
-#### __[XAML] Example 5: Setting TimeRulerLines__
-{{region xaml-radganttview-features-timeruler-configuring_4}}
+__Example 5: Setting TimeRulerLines__
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}">
 	    <telerik:RadGanttView.TimeRulerLines>
 	        <telerik:GroupTickLine>
@@ -79,7 +79,7 @@ Each tick line object added in the TimeRulerLines collection will generate a new
 	        </telerik:MinorTickLine>
 	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 #### Figure 5: Custom TimeRulerLines
 ![Custom TimeRulerLines](images/radganttview-features-timeruler-configuring-4.png)
@@ -114,8 +114,8 @@ The __FormatString__ property sets the format of the text for the tick interval.
 
 The __MinLength__ property sets the minimum length needed for the tick to be displayed. This is the minimum pixel length between two adjacent ticks.
 
-#### __[XAML] Example 6: Customizing intervals__  
-{{region xaml-radganttview-features-timeruler-configuring_5}}
+__Example 6: Customizing intervals__  
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.TimeRulerLines>
 	        <telerik:GroupTickLine>
@@ -126,15 +126,15 @@ The __MinLength__ property sets the minimum length needed for the tick to be dis
 	        </telerik:MajorTickLine>
 	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 #### Figure 6: Custom intervals and formatting
 ![Custom intervals and formatting](images/radganttview-features-timeruler-configuring-5.png)
 
 In case you define more than one TickInterval in the TimeIntervals collection of the tick line object, RadGanttView will select the most suitable according to each TickInterval’s Interval and MinLength properties as well as PixelLength property of the control. The following two examples illustrate this.
 
-#### __[XAML] Example 7: Adding multiple TickInterval objects - 20 minutes pixel length__  
-{{region xaml-radganttview-features-timeruler-configuring_6}}
+__Example 7: Adding multiple TickInterval objects - 20 minutes pixel length__  
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" PixelLength="00:20:00">
 	    <telerik:RadGanttView.TimeRulerLines>
 	        <telerik:GroupTickLine>
@@ -146,7 +146,7 @@ In case you define more than one TickInterval in the TimeIntervals collection of
 	        </telerik:MajorTickLine>
 	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 In Example 7 the PixelLength is set to 20 minutes which selects the TickInterval with Interval set to OneDay. 
 
@@ -155,8 +155,8 @@ In Example 7 the PixelLength is set to 20 minutes which selects the TickInterval
 
 In Example 8, the PixelLength is set to 40 minutes which selects the other TickInterval (with Interval set to OneWeek). This happens because the length of the day slot that occur between two adjacent ticks becomes smaller than 45 pixels. In this case, the TickInterval is changed, if suitable one is available.
 
-#### __[XAML] Example 8: Adding multiple TickInterval objects - 40 minutes pixel length__  
-{{region xaml-radganttview-features-timeruler-configuring_7}}
+__Example 8: Adding multiple TickInterval objects - 40 minutes pixel length__  
+```XAML
 	<telerik:RadGanttView TasksSource="{Binding Tasks}" PixelLength="00:40:00">
 	    <telerik:RadGanttView.TimeRulerLines>
 	        <telerik:GroupTickLine>
@@ -168,7 +168,7 @@ In Example 8, the PixelLength is set to 40 minutes which selects the other TickI
 	        </telerik:MajorTickLine>
 	    </telerik:RadGanttView.TimeRulerLines>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 #### Figure 8: Multiple TickIntervals - OneWeek interval
 ![Multiple TickIntervals - OneWeek interval](images/radganttview-features-timeruler-configuring-7.png)

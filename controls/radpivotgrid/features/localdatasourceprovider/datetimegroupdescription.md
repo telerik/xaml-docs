@@ -24,19 +24,19 @@ __DateTimeGroupDescription__ is used when you want to group your data by propert
 
 When you have a property of type DateTime (DateTimeOffset), you can create several DateTimeGroupDescriptions with different steps. You may also create a PropertyGroupDescription - this way the DateTime will be treated as a string and grouped as such. All of them can be used simultaneously. You can add the description in RowGroupDescriptions or ColumnGroupDescriptions collections of LocalDataSourceProvider.        
 
-#### __XAML__
 
-{{region radpivotgrid-features-datetimegroup_1}}
+
+```XAML
 	<pivot:LocalDataSourceProvider.RowGroupDescriptions>
 	    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Quarter"/>
 	    <pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" />
 	    <pivot:PropertyGroupDescription PropertyName="Date"/>
 	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-datetimegroup_1}}
+
+```C#
 	DateTimeGroupDescription dateTimeGroupDescription1 = new DateTimeGroupDescription();
 	dateTimeGroupDescription1.PropertyName = "Date";
 	dateTimeGroupDescription1.Step = DateTimeStep.Quarter;
@@ -50,11 +50,8 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1);
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2);
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-datetimegroup_1}}
+```
+```VB.NET
 	Dim dateTimeGroupDescription1 As New DateTimeGroupDescription()
 	dateTimeGroupDescription1.PropertyName = "Date"
 	dateTimeGroupDescription1.Step = DateTimeStep.Quarter
@@ -68,7 +65,7 @@ When you have a property of type DateTime (DateTimeOffset), you can create sever
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription1)
 	dataProvider.RowGroupDescriptions.Add(dateTimeGroupDescription2)
 	dataProvider.RowGroupDescriptions.Add(propertyGroupDescription)
-{{endregion}}
+```
 
 
 
@@ -84,43 +81,40 @@ By default __RadPivotFieldList__ will show the following steps in its FieldTree 
 
 The solution of this problem is to use AddingContainerNode event of LocalDataSourceFieldDescriptionsProvider. In this event you will receive all items from the FieldTree and you will be able to modify which of them to be visible. In order to use this event you have to create a new instance of LocalDataSourceFieldDescriptionsProvider and set LocalDataSourceProvider's FieldDescriptionProvider to this instance. You can do this in XAML or in code behind:        
 
-#### __XAML__
 
-{{region radpivotgrid-features-datetimegroup_2}}
+
+```XAML
 	<pivot:LocalDataSourceProvider x:Key="dataProvider" ItemsSource="{StaticResource source}">
 	    <pivot:LocalDataSourceProvider.FieldDescriptionsProvider>
 	        <pivot:LocalDataSourceFieldDescriptionsProvider AddingContainerNode="LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded_1"/>
 	    </pivot:LocalDataSourceProvider.FieldDescriptionsProvider>
 	</pivot:LocalDataSourceProvider>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-datetimegroup_2}}
+
+```C#
 	var dataProvider = new LocalDataSourceProvider();
 	dataProvider.ItemsSource = new Source();
 	var descriptionProvider = new LocalDataSourceFieldDescriptionsProvider();
 	descriptionProvider.AddingContainerNode += LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded;
 	dataProvider.FieldDescriptionsProvider = descriptionProvider;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-datetimegroup_2}}
+```
+```VB.NET
 	Dim dataProvider = New LocalDataSourceProvider()
 	dataProvider.ItemsSource = New Source()
 	Dim descriptionProvider = New LocalDataSourceFieldDescriptionsProvider()
 	descriptionProvider.AddingContainerNode += LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded
 	dataProvider.FieldDescriptionsProvider = descriptionProvider
-{{endregion}}
+```
 
 By using the ContainerNodeEventArgs you are able to access the information foreach ContainerNode in the FieldTree, its children. You can decide whether to include each of the children by using AutoGenerateField property. If you want you can remove the whole container (the folder) from the UI, by setting e.Cancel = true:       
 
 * __Add children to the container node (folder)__ - for example you may add Hour Step to the FieldTree:            
 
-#### __C#__
 
-{{region radpivotgrid-features-datetimegroup_3}}
+
+```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
 	{
 	    //Use the name of the DateTime property, in our case it is Date
@@ -137,11 +131,8 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-datetimegroup_3}}
+```
+```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date
 		If e.ContainerNode.Name = "Date" Then
@@ -154,13 +145,13 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 			Next containerNode
 		End If
 	End Sub
-{{endregion}}
+```
 
 * __Remove children from the container node (folder)__ - for example you may remove Year Step to the FieldTree:            
 
-#### __C#__
 
-{{region radpivotgrid-features-datetimegroup_4}}
+
+```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
 	{
 	    //Use the name of the DateTime property, in our case it is Date
@@ -177,11 +168,8 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-datetimegroup_4}}
+```
+```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date
 		If e.ContainerNode.Name = "Date" Then
@@ -194,13 +182,13 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 			Next containerNode
 		End If
 	End Sub
-{{endregion}}
+```
 
 * __Remove the whole container node (folder) from the FieldTree__:            
 
-#### __C#__
 
-{{region radpivotgrid-features-datetimegroup_5}}
+
+```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
 	{
 	    //Use the name of the DateTime property, in our case it is Date
@@ -209,24 +197,21 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        e.Cancel = true;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-datetimegroup_5}}
+```
+```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date
 		If e.ContainerNode.Name = "Date" Then
 			e.Cancel = True
 		End If
 	End Sub
-{{endregion}}
+```
 
 * __Remove the whole container node (folder) from the FieldTree and show a single DateTime with chosen Step:__:            
 
-#### __C#__
 
-{{region radpivotgrid-features-datetimegroup_6}}
+
+```C#
 	void LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(object sender, ContainerNodeEventArgs e)
 	{
 	    //Use the name of the DateTime property, in our case it is Date
@@ -237,11 +222,8 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 	        e.ContainerNode = fin;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-datetimegroup_6}}
+```
+```VB.NET
 	Private Sub LocalDataSourceFieldDescriptionsProvider_ContainerNodeAdded(ByVal sender As Object, ByVal e As ContainerNodeEventArgs)
 		'Use the name of the DateTime property, in our case it is Date
 		If e.ContainerNode.Name = "Date" Then
@@ -250,7 +232,7 @@ By using the ContainerNodeEventArgs you are able to access the information forea
 			e.ContainerNode = fin
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

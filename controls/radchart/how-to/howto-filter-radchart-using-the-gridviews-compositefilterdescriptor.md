@@ -10,19 +10,15 @@ position: 16
 
 # Filter RadChart Using The GridView's CompositeFilterDescriptor
 
-
-
-## 
-
 The __RadChart__ allows you to programmatically filter its data as demonstrated in our [help topic]({%slug radchart-features-filtering%}). However there are scenarios where you would like to have more complex filtering like the one presented by the GridView's [ComplexFilterDescriptor](http://www.telerik.com/help/wpf/radgridview-filtering-composite-filter-descriptors.html) object. It contains a collection of filter descriptors objects and the logical operator for that filters.
 
 This help topic will demonstrate how to create a GridView and draw a Chart with the filtered data from the GridView.
 
 ##### 1. Create a List of Business objects that will be used to populate the Chart and the GridView.
 
-#### __C#__
 
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_0}}
+
+```C#
 	public class MyDateObject
 	    {
 	        public double Value1 { get; set; }
@@ -53,13 +49,8 @@ This help topic will demonstrate how to create a GridView and draw a Chart with 
 	            }
 	        }
 	    }
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_1}}
+```
+```VB.NET
 	Public Class MyDateObject
 	            Public Property Value1() As Double
 	            Public Property Value2() As Double
@@ -85,15 +76,13 @@ This help topic will demonstrate how to create a GridView and draw a Chart with 
 	                  Next i
 	            End Sub
 	      End Class
-	{{endregion}}
-
-
+```
 
 ##### 2. Create the GridView and the Chart in *XAML*:
 
-#### __XAML__
 
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_2}}
+
+```XAML
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding List}">
 	            <telerik:RadChart.SeriesMappings>
 	                <telerik:SeriesMapping LegendLabel="Lee Young">
@@ -147,17 +136,13 @@ This help topic will demonstrate how to create a GridView and draw a Chart with 
 	                             CanUserSelect="False"
 	                             RowIndicatorVisibility="Collapsed">
 	        </telerik:RadGridView>
-	{{endregion}}
-
-
+```
 
 The Chart has 3 Bar Series and is populated using [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}). On the other side the GridView is bound by the ItemsSource property. Several properties are turned off so that we gain the needed filtering functionality only and nothing more (no grouping, selecting or sorting).
 
 Note the Filtered event in the GridView's declaration:
 
-#### __C#__
-
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_3}}
+```C#
 	CompositeFilterDescriptor chartFilterDescriptorCol = new CompositeFilterDescriptor();
 	private void GridView1_Filtered(object sender, Telerik.Windows.Controls.GridView.GridViewFilteredEventArgs e)
 	        {
@@ -173,13 +158,8 @@ Note the Filtered event in the GridView's declaration:
 	            }
 	                this.RadChart1.FilterDescriptors.Add(chartFilterDescriptorCol);                
 	        }
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_4}}
+```
+```VB.NET
 	Dim chartFilterDescriptorCol As New CompositeFilterDescriptor()
 	Private Sub GridView1_Filtered(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridView.GridViewFilteredEventArgs)
 	If e.Added.Count() > 0 Then
@@ -191,17 +171,13 @@ Note the Filtered event in the GridView's declaration:
 	End If
 	Me.RadChart1.FilterDescriptors.Add(chartFilterDescriptorCol)
 	End Sub
-	{{endregion}}
-
-
+```
 
 The RadChart's FilterDescriptors collection is populated with GridView's CompositeFilterDescriptor as shown above. The LogicalOperator chosen is "Or".
 
 The full source code for the sample can be found here:
 
-#### __XAML__
-
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_5}}
+```XAML
 	<Grid x:Name="LayoutRoot">
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="2*"/>
@@ -261,15 +237,11 @@ The full source code for the sample can be found here:
 	                             RowIndicatorVisibility="Collapsed">
 	        </telerik:RadGridView>
 	    </Grid>
-	{{endregion}}
-
-
+```
 
 The code-behind:
 
-#### __C#__
-
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_6}}
+```C#
 	CompositeFilterDescriptor chartFilterDescriptorCol = new CompositeFilterDescriptor();
 	        public MainPage()
 	        {
@@ -327,13 +299,8 @@ The code-behind:
 	            }
 	        }
 	    }
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-filter-radchart-using-the-gridviews-compositefilterdescriptor_7}}
+```
+```VB.NET
 	Imports Microsoft.VisualBasic
 	
 	Private chartFilterDescriptorCol As New CompositeFilterDescriptor()
@@ -385,16 +352,12 @@ The code-behind:
 	                  Next i
 	            End Sub
 	      End Class
-	{{endregion}}
-
-
+```
 
 >tipThe code snippets above were taken from a Silverlight project but are absolutely applicable for WPF scenarios.
 
 The bound non-filtered data looks like this:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToOriginal.PNG)
-
-
 
 Filter the data by Value1 column:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowTo_Filter.PNG)

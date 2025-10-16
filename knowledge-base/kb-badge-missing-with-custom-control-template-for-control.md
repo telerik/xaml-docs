@@ -32,8 +32,8 @@ res_type: kb
 
 The RadBadge control requires an `AdornerLayer`, in order to be displayed. When creating a custom ControlTemplate for a control, you could wrap the root element with an `AdornerDecorator` instance to apply an AdornerLayer onto its child elements in the visual tree. 
 
-#### __[XAML] Wrapping the root element of a ControlTemplate with an AdornerDecorator__
-{{region kb-badge-missing-with-custom-control-template-for-control-0}}
+__Wrapping the root element of a ControlTemplate with an AdornerDecorator__
+```XAML
     <Window.Template>
         <ControlTemplate TargetType="{x:Type Window}">
             <AdornerDecorator>
@@ -43,4 +43,4 @@ The RadBadge control requires an `AdornerLayer`, in order to be displayed. When 
             </AdornerDecorator>
         </ControlTemplate>
     </Window.Template>
-{{endregion}}
+```

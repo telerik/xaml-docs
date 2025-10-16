@@ -20,8 +20,8 @@ You can add any element that derives from the UIElement class inside the __Inlin
 
 >In order to utilize the __InlineUIContainer__, you have to set its __Height__ and __Width__ explicitly (or use the constructor that takes a __Size__ as a parameter). Otherwise, they will not be shown in the document.          
 
-#### __[XAML] Example 1: Add UI Element to an InlineUIContainer__  
-{{region radrichtextbox-features-document-elements-inlineuicontainer_0}}
+__Example 1: Add UI Element to an InlineUIContainer__  
+```XAML
 	<telerik:RadRichTextBox Name="radRichTextBox">
 	    <telerik:RadDocument>
 	        <telerik:Section>
@@ -33,10 +33,10 @@ You can add any element that derives from the UIElement class inside the __Inlin
 	        </telerik:Section>
 	    </telerik:RadDocument>
 	</telerik:RadRichTextBox>
-{{endregion}}
+```
 
-#### __[C#] Example 1: Add UI Element to an InlineUIContainer__  
-{{region radrichtextbox-features-document-elements-inlineuicontainer_1}}
+__Example 1: Add UI Element to an InlineUIContainer__  
+```C#
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
 	InlineUIContainer container = new InlineUIContainer();
@@ -46,10 +46,8 @@ You can add any element that derives from the UIElement class inside the __Inlin
 	paragraph.Inlines.Add(container);
 	section.Blocks.Add(paragraph);
 	this.radRichTextBox.Document.Sections.Add(section);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Add UI Element to an InlineUIContainer__
-{{region radrichtextbox-features-document-elements-inlineuicontainer_2}}
+```
+```VB.NET
 	Dim _section As New Section()
 	Dim _paragraph As New Paragraph()
 	Dim container As New InlineUIContainer()
@@ -59,12 +57,12 @@ You can add any element that derives from the UIElement class inside the __Inlin
 	_paragraph.Inlines.Add(container)
 	_section.Blocks.Add(_paragraph)
 	Me.radRichTextBox.Document.Sections.Add(_section)
-{{endregion}}
+```
 
 __Example 2__ is a more complex example, which demonstrates how to implement a Button that inserts a MediaElement inside the __RadRichTextBox__'s document.
 
-#### __[C#] Example 2: Add MediaElement on Button Click__ 
-{{region radrichtextbox-features-document-elements-inlineuicontainer_3}}
+__Example 2: Add MediaElement on Button Click__ 
+```C#
 	private static Size defaultSize = new Size(900, 400);
 	private void InsertMedia(Size size)
 	{
@@ -95,11 +93,8 @@ __Example 2__ is a more complex example, which demonstrates how to implement a B
 	{
 	    InsertMedia(Size.Empty);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Add MediaElement on Button Click__
-
-{{region radrichtextbox-features-document-elements-inlineuicontainer_4}}
+```
+```VB.NET
 
 	Private Shared defaultSize As New Size(900, 400)
 	Private Sub InsertMedia(ByVal _size As Size)
@@ -123,7 +118,7 @@ __Example 2__ is a more complex example, which demonstrates how to implement a B
 	Private Sub buttonInsertAudio_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	 InsertMedia(Size.Empty)
 	End Sub
-{{endregion}}
+```
 
 ## Specifics
 
@@ -140,8 +135,8 @@ The reason is that copying InlineUIContainer involves cloning of the internal UI
 
 To enable copying of InlineUIContainers in your application, you can create a custom object, which can copy the UIElement inside the container. What you need to do is to inherit the InlineUIContainer class and override IsCopyable, CreateNewElementInstance(), CopyPropertiesFromOverride(). The container and its parts are copied in the CopyPropertiesFromOverride() method, so you should ensure that the override copies the UIElement inside the container as well.
 
-#### __[C#] Example 3: Implement CopyableInlineUIContainer for a Button as underlying UIElement__
-{{region radrichtextbox-features-document-elements-inlineuicontainer_5}}
+__Example 3: Implement CopyableInlineUIContainer for a Button as underlying UIElement__
+```C#
 	public class CopyableInlineUIContainer : InlineUIContainer
 	{
 		internal CopyableInlineUIContainer()
@@ -183,10 +178,8 @@ To enable copying of InlineUIContainers in your application, you can create a cu
 			};
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Implement CopyableInlineUIContainer for a Button as underlying UIElement__
-{{region radrichtextbox-features-document-elements-inlineuicontainer_6}}
+```
+```VB.NET
 	
 	Public Class CopyableInlineUIContainer
 	    Inherits InlineUIContainer
@@ -220,12 +213,12 @@ To enable copying of InlineUIContainers in your application, you can create a cu
 	        }
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 There is a very generic option for copying UIElement objects, which might help in most of the cases. However, have in mind that depending on the UI elements on which it will be invoked, **the implementation might differ**.
 
-#### __[C#] Example 4: Copy UI Element__
-{{region radrichtextbox-features-document-elements-inlineuicontainer_7}}
+__Example 4: Copy UI Element__
+```C#
 	public static UIElement Clone(this UIElement elementToClone)
 	{
 	    if (elementToClone != null)
@@ -239,10 +232,8 @@ There is a very generic option for copying UIElement objects, which might help i
 	
 	    return null;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Copy UI Element__  
-{{region radrichtextbox-features-document-elements-inlineuicontainer_8}}
+```
+```VB.NET
     <Extension()>
     Public Shared Function Clone(ByVal elementToClone As UIElement) As UIElement
         If elementToClone IsNot Nothing Then
@@ -254,7 +245,7 @@ There is a very generic option for copying UIElement objects, which might help i
 
         Return Nothing
     End Function
-{{endregion}}
+```
 
 ## Import/Export InlineUIContainers
 

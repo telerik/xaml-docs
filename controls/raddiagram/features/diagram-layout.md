@@ -22,8 +22,8 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 
 * use the __RadDiagram Layout()__ method:
 			  
-#### __XAML__
-{{region raddiagram-features-layout-4}}
+
+```XAML
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -38,27 +38,25 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
                             Grid.Row="1"
                             Margin="5" />
     </Grid>		
-{{endregion}}
+```
 
-#### __C#__
-{{region raddiagram-features-layout-5}}
+
+```C#
     private void Layout(object sender, RoutedEventArgs e)
     {
         diagram.Layout();
     }		  
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-features-layout-6}}
+```
+```VB.NET
     Private Sub Layout(sender As Object, e As RoutedEventArgs)
         diagram.Layout()
     End Sub			  
-{{endregion}}
+```
 
 * use the __DiagramCommands Layout__ command:
 			  
-#### __XAML__
-{{region raddiagram-features-layout-7}}
+
+```XAML
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -74,12 +72,12 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
                             Grid.Row="1"
                             Margin="5" />
     </Grid>		
-{{endregion}}	
+```	
 
 The __Layout()__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings):
 
-#### __C#__
-{{region raddiagram-features-layout-0}}
+
+```C#
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		SugiyamaSettings settings = new SugiyamaSettings()
@@ -92,10 +90,8 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 		};
 		this.diagram.Layout(LayoutType.Sugiyama, settings);
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-features-layout-1}}
+```
+```VB.NET
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New SugiyamaSettings() With { 
 			 .HorizontalDistance = 50, 
@@ -106,7 +102,7 @@ The __Layout()__ method provides two optional parameters - the type of the Layou
 		}
 		Me.diagram.Layout(LayoutType.Sugiyama, settings)
 	End Sub
-{{endregion}}
+```
 
 Below you can see how random shapes and connections are being arranged with the given layout configuration:
 ![raddiagram-features-layout-Sugiyama](images/raddiagram-features-layout-Sugiyama.png)
@@ -151,8 +147,8 @@ Below you can see a snapshots of random diagrams laid out with Tree Layout types
 
 Here is how this could be achieved in code behind.	
 
-#### __C#__
-{{region raddiagram-features-layout-2}}
+
+```C#
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		TreeLayoutSettings settings = new TreeLayoutSettings()
@@ -163,10 +159,8 @@ Here is how this could be achieved in code behind.
 		settings.Roots.Add(this.diagram.Shapes[0]);
 		this.diagram.Layout(LayoutType.Tree, settings);
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-features-layout-3}}
+```
+```VB.NET
 	Private Sub RadButton_Click(sender As Object, e As RoutedEventArgs)
 		Dim settings As New TreeLayoutSettings() With { 
 			 .TreeLayoutType = TreeLayoutType.TreeDown, 
@@ -175,7 +169,7 @@ Here is how this could be achieved in code behind.
 		settings.Roots.Add(Me.diagram.Shapes(0))
 		Me.diagram.Layout(LayoutType.Tree, settings)
 	End Sub
-{{endregion}}
+```
 
 ## Layout Settings
 

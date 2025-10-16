@@ -29,8 +29,8 @@ Check out the rest of the topic, which is entirely dedicated to the __RadRibbonC
 
 Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple process. The next example demonstrates how to do that.				
 
-#### __XAML__
-{{region radribbonview-ribbon-combobox_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonTab Header="Home">
 	        <telerik:RadRibbonGroup Header="Font">
@@ -57,7 +57,7 @@ Adding a __RadRibbonComboBox__ to a __RadRibbonGroup__ is an extremely simple pr
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadRibbonView RibbonComboBox in Ribbon Group](images/RadRibbonView_ComboBox_Sample.png)
 

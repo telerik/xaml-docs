@@ -15,16 +15,16 @@ The RadSyntaxEditor control contains several panels inside its ControlTemplate, 
 
 __Example 1__ demonstrates how you can add some custom elements around the RadSyntaxEditor and provides a visualization of the default locations for all panels. It also demonstrates the line numbers and [folding tagger]({%slug radsyntaxeditor-features-folding-taggers%}) features, which are implemented with the help of the left scrollable margin.
 
-#### __[XAML] Example 1: Defining the RadSyntaxEditor__
-{{region xaml-radsyntaxeditor-features-margins-0}}
+__Example 1: Defining the RadSyntaxEditor__
+```XAML
 
 	<Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
         <telerik:RadSyntaxEditor x:Name="syntaxEditor" />
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 1: Defining the RadSyntaxEditor__
-{{region cs-radsyntaxeditor-features-margins-1}}
+__Example 1: Defining the RadSyntaxEditor__
+```C#
 
 	public partial class MainWindow : Window
     {
@@ -50,7 +50,7 @@ __Example 1__ demonstrates how you can add some custom elements around the RadSy
             this.syntaxEditor.Margins.ScrollableBottom.Add(new Rectangle() { Fill = Brushes.Black, Height = 20 });
         }
     }
-{{endregion}}
+```
 
 #### __Figure 1: RadSyntaxEditor Margins__
 ![RadSyntaxEditor Margins](images/syntaxeditor-margins.png)
@@ -67,7 +67,7 @@ The class inherits from the abstract **IndicatorsMarginBase** class which define
 
 #### [C#] Example 2: Creating a bookmarks margin
 
-{{region cs-radsyntaxeditor-features-margins-2}}
+```C#
     /// <summary>
     /// A margin holding a collection of bookmarks to highlight lines of the RadSyntaxEditor control.
     /// </summary>
@@ -130,16 +130,16 @@ The class inherits from the abstract **IndicatorsMarginBase** class which define
             }
         }
     }
-{{endregion}}
+```
 
 You can then add the margin to the RadSyntaxEditor as shown in **Example 3**.
 
 #### [C#] Example 3: Adding the BookmarksMargin
 
-{{region cs-radsyntaxeditor-features-margins-3}}
+```C#
     this.bookmarksMargin = new BookmarksMargin(this.syntaxEditor);
     this.syntaxEditor.Margins.ScrollableLeft.Insert(0, this.bookmarksMargin);
-{{endregion}}
+```
 
 **Figure 2** shows the final result after some bookmarks have been added.
 
@@ -153,14 +153,14 @@ You can then add the margin to the RadSyntaxEditor as shown in **Example 3**.
 To remove the line numbers panel, you can clear the `ScrollableLeft` margins collection.
 
 #### [C#] Removing the line numbers
-{{region cs-radsyntaxeditor-features-margins-4}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 	      	this.syntaxEditor.Document = new Telerik.Windows.SyntaxEditor.Core.Text.TextDocument();
 	      	this.syntaxEditor.Margins.ScrollableLeft.Clear();
 	}
-{{endregion}}
+```
 
 ## See Also
 

@@ -18,10 +18,10 @@ __RadDiagram__ gives you the ability to edit the Content of its items. You can d
 
 By default, the __RadDiagramItems__ are enabled for editing. In order to disable this functionality, you can use the __IsEditable__ property:		
 
-#### __XAML__	
-{{region radiagram-features-edit-0}}
+	
+```XAML
 	<telerik:RadDiagram IsEditable="False">
-{{endregion}}
+```
 
 ## Start Editing by Using Keyboard
 
@@ -46,8 +46,8 @@ __RadDiagramItem__ also provides four editing events:
 __RadDiagram__ provides three predefined commands for editing the selected item - __BeginEdit__, __CommitEdit__ and __CancelEdit__.		
 
 Consider the following code: 
-#### __XAML__
-{{region radiagram-features-edit-1}}
+
+```XAML
 	 <Grid>
 	        <Grid.RowDefinitions>
 	            <RowDefinition Height="Auto" />
@@ -78,7 +78,7 @@ Consider the following code:
 	                                     Geometry="{telerik:ArrowShape ShapeType=Arrow3}" />
 	        </telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 In the picture below you can see a shape being edited:
 ![raddiagrams-features-editing 1](images/raddiagrams-features-editing1.png)
@@ -97,8 +97,8 @@ __RadDiagram__ provides the following EditTemplates and EditTemplateSelectors:
 
 Below you can find example of basic EditTemplate of a Shape. Suppose we have a sample business object called DataItem:
 
-#### __C#__
-{{region radiagram-features-edit-2}}
+
+```C#
 	public class DataItem : ViewModelBase
 	{
 		private string ipAddress;
@@ -112,10 +112,8 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 			}
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radiagram-features-edit-3}}
+```
+```VB.NET
 	Public Class DataItem
 		Inherits ViewModelBase
 		Private m_ipAddress As String
@@ -129,22 +127,20 @@ Below you can find example of basic EditTemplate of a Shape. Suppose we have a s
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
-#### __C#__
-{{region radiagram-features-edit-4}}
+
+```C#
 	this.shape.DataContext = new DataItem() { IpAddress = "5.5.5.5" };
-{{endregion}}
-
-#### __VB.NET__
-{{region radiagram-features-edit-5}}
+```
+```VB.NET
 	Me.shape.DataContext = New DataItem() With { .IpAddress = "5.5.5.5" }
-{{endregion}}
+```
 
 Now you can define __ContentTemplate__ and __EditTemplate__ like so:
 		
-#### __XAML__
-{{region radiagram-features-edit-6}}
+
+```XAML
 	 <Grid>
 	        <Grid.Resources>
 	            <DataTemplate x:Key="editTemplate">
@@ -174,7 +170,7 @@ Now you can define __ContentTemplate__ and __EditTemplate__ like so:
 	                                     Geometry="{telerik:CommonShape ShapeType=CloudShape}" />
 	        </telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 In the picture below you can see the result of successful edit of the shape:
 ![Rad Diagrams-Features-Edit Template](images/RadDiagrams-Features-EditTemplate.png)

@@ -27,38 +27,35 @@ Here is a small sample code:
 
 * Define a custom header with a TextBlock
         
-#### __[XAML]Example 1: Define a custom header:__
+__Example 1: Define a custom header:__
 
-{{region xaml-gridview-export-troubleshooting-export-header_0}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}">
 	    <telerik:GridViewDataColumn.Header>
 	        <TextBlock Text="Stadium capacity (seats)"
 	        TextWrapping="Wrap"/>
 	    </telerik:GridViewDataColumn.Header>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 * Handle the ElementExporting event for the exported RadGridView
         
-#### __[C#]Example 2: Handle the ElementExporting event:__
+__Example 2: Handle the ElementExporting event:__
 
-{{region cs-gridview-export-troubleshooting-export-header_1}}
+```C#
 	private void clubsGrid_ElementExporting(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.Value != null && e.Value.GetType() == typeof(TextBlock))
 	        e.Value = (e.Value as TextBlock).Text;
 	}
-{{endregion}}
-
-#### __[VB.NET]Example 2:Handle the ElementExporting event:__
-
-{{region vb-gridview-export-troubleshooting-export-header_2}}
+```
+```VB.NET
 	Private Sub clubsGrid_ElementExporting(sender As Object, e As GridViewElementExportingEventArgs)
 	    If e.Value IsNot Nothing AndAlso e.Value.[GetType]() = GetType(TextBlock) Then
 	        e.Value = TryCast(e.Value, TextBlock).Text
 	    End If
 	End Sub
-{{endregion}}
+```
 
 When you set the __Value__ in the GridViewElementExportingEventArgs object to the correct header text, the headers will be exported as expected.
         

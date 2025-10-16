@@ -51,8 +51,8 @@ The __DockingNavigator__ exposes several attached properties which can be set on
 
 __Example 1__ demonstrates how you can set the __Navigator__ property of the RadDocking to an instance of the __DockingNavigator__. It also demonstrates how you can set the DockingNavigator attached properties on the RadPanes/RadDocumentPanes in order to display additional information for a pane while navigating.
 
-#### __[XAML] Example 1: RadDocking with Navigator property set__
-{{region xaml-raddocking-navigator-0}}
+__Example 1: RadDocking with Navigator property set__
+```XAML
 
 	<Grid>
         <Grid.Resources>
@@ -135,7 +135,7 @@ __Example 1__ demonstrates how you can set the __Navigator__ property of the Rad
             </telerik:RadSplitContainer>
         </telerik:RadDocking>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result from showing the navigator in Example 1__
 ![DockingNavigator in Fluent theme](images/docking_navigator.png)
@@ -150,8 +150,8 @@ The DockingNavigator class exposes several useful events, which can be used to a
 
     * A __NavigatorOpeningEventArgs__ object. It exposes a __Cancel__ property, which allows for preventing the opening. 
 
-    #### __[C#] Example 2: Handling the Opening event__
-    {{region cs-raddocking-navigator-1}}
+    __Example 2: Handling the Opening event__
+    ```C#
         private void DockingNavigator_Opening(object sender, NavigatorOpeningEventArgs e)
         {
             var navigatorViewModel = (sender as DockingNavigator).DataContext as NavigatorViewModel;
@@ -160,10 +160,8 @@ The DockingNavigator class exposes several useful events, which can be used to a
             var itemToRemove = navigatorViewModel.ItemModels.FirstOrDefault(m => m.Header.ToString() == "Pane 1");
             navigatorViewModel.ItemModels.Remove(itemToRemove);
         }
-    {{endregion}}
-
-    #### __[VB.NET] Example 2: Handling the Opening event__
-    {{region vb-raddocking-navigator-2}}
+    ```
+	```VB.NET
         Private Sub DockingNavigator_Opening(ByVal sender As Object, ByVal e As NavigatorOpeningEventArgs)
 			Dim navigatorViewModel = TryCast((TryCast(sender, DockingNavigator)).DataContext, NavigatorViewModel)
 
@@ -171,7 +169,7 @@ The DockingNavigator class exposes several useful events, which can be used to a
 			Dim itemToRemove = navigatorViewModel.ItemModels.FirstOrDefault(Function(m) m.Header.ToString() = "Pane 1")
 			navigatorViewModel.ItemModels.Remove(itemToRemove)
         End Sub
-    {{endregion}}
+    ```
 
 * __Closed__: Raised after the DockingNavigator is closed. The event handler receives two arguments:
 

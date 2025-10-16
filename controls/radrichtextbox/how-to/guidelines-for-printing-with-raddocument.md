@@ -52,9 +52,9 @@ What is worth noting is that the sum of the column spans of all cells in a row m
 
 the correct way to create it is as follows:
 
-#### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_0}}
+
+```C#
 	Table table = new Table();
 	TableRow row1 = new TableRow();
 	TableRow row2 = new TableRow();
@@ -70,7 +70,7 @@ the correct way to create it is as follows:
 	
 	table.Rows.Add(row1);
 	table.Rows.Add(row2);
-{{endregion}}
+```
 
 
 
@@ -85,11 +85,11 @@ When a table's __LayoutMode__ is set to __TableLayoutModes.Fixed__, the table us
 Here is how you can set the PreferredWidth of the columns in __Fixed TableLayoutMode__:
         
 
-#### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_1}}
+
+```C#
 	cell.PreferredWidth = new TableWidthUnit(TableWidthUnitType.Fixed, width);
-{{endregion}}
+```
 
 
 
@@ -101,20 +101,20 @@ What should be mentioned here is that the cells in one column cannot have differ
 Customization of the __TableCells__ is possible with regard to their Padding. This is done using the __Padding__ property:
         
 
-#### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_2}}
+
+```C#
 	TableCell cell11 = new TableCell() { Padding = new Padding(20) };
-{{endregion}}
+```
 
 
 
 TableCells are BlockContainers like Sections. That is why it is possible to embed both Paragraphs and new Tables in a table cell. Again, the first and last blocks in a TableCell must be Paragraphs. Here is how content can be added to a TableCell:
         
 
-#### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_3}}
+
+```C#
 	private void AddContentToCell(TableCell cell)
 	{
 	    Paragraph paragraph1 = new Paragraph();
@@ -125,7 +125,7 @@ TableCells are BlockContainers like Sections. That is why it is possible to embe
 	    cell.Blocks.Add(paragraph1);
 	    cell.Blocks.Add(paragraph2);            
 	}
-{{endregion}}
+```
 
 
 
@@ -137,9 +137,9 @@ As you can see from the example above, you can add both empty Paragraphs and Par
 Paragraphs can be added to BlockContainers – Sections and TableCells. Here is how they are added to Sections:
         
 
-#### __C#__
 
-{{region radrichtextbox-guidelines-for-printing-with-raddocument_4}}
+
+```C#
 	Paragraph paragraph = new Paragraph();
 	Span span = new Span("Text in the first paragraph");
 	paragraph.Inlines.Add(span);
@@ -147,7 +147,7 @@ Paragraphs can be added to BlockContainers – Sections and TableCells. Here is 
 	
 	section.Blocks.Add(paragraph);
 	section.Blocks.Add(emptyParagraph);
-{{endregion}}
+```
 
 
 

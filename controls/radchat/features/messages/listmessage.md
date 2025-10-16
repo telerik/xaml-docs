@@ -18,8 +18,8 @@ Specific for the __ListMessage__ is that it has to be populated with a source co
 * __SelectionMode selectionMode__
 * __DateTime creationDate__
 
-#### __[C#] Example 1: Defining an ListMessage__
-{{region radchat-messages-listmessage_01}}
+__Example 1: Defining an ListMessage__
+```C#
 	   List<string> coffee = new List<string>();
             coffee.Add("Caffe Latte");
             coffee.Add("Cafe mocha");
@@ -31,7 +31,7 @@ Specific for the __ListMessage__ is that it has to be populated with a source co
             ListMessage listMessageInline = new ListMessage(MessageDisplayPosition.Inline, this.currentAuthor, coffee, SelectionMode.Single);
 
             this.chat.AddMessage(listMessageInline);
-{{endregion}}
+```
 
 #### __Figure 1: Defining ListMessage__
 ![Defining ListMessage](images/RadChat_Messages_List_01.png)

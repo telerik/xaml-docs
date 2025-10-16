@@ -26,8 +26,8 @@ Keyboard input doesn't work in RadPane if hosted in WinForms application and und
 
 Subscribe to the PaneStateChanged event of RadDocking and enable modeless keyboard interoperability for the Window hosting the floating pane.
 
-#### __[C#]__
-{{region kb-docking-undock-pane-input-doesnt-work-in-winforms-0}}
+
+```C#
 	private void RadDocking_PaneStateChange(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	{
 		var pane = e.OriginalSource as RadPane;
@@ -37,4 +37,4 @@ Subscribe to the PaneStateChanged event of RadDocking and enable modeless keyboa
 			System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop(window);
 		}
 	}
-{{endregion}}
+```

@@ -32,8 +32,8 @@ How to display an image from a byte array in RadGridView when auto generated col
 
 1. Implement an [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=netframework-4.8) that converts the byte array to an ImageSource object.
 
-	#### __[C#]__
-	{{region kb-gridview-display-byte-array-image-0}}
+	
+	```C#
 		public class ByteArrayToImageSourceConverter : IValueConverter
 		{       
 			public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -56,24 +56,24 @@ How to display an image from a byte array in RadGridView when auto generated col
 				throw new NotImplementedException();
 			}
 		}
-	{{endregion}}
+	```
 
 2. Define a DataTemplate in XAML that contains an Image element bound to the byte array. And use the converter to convert the array to an ImageSource.
 
-	#### __[XAML]__
-	{{region kb-gridview-display-byte-array-image-1}}
+	
+	```XAML
 		<Window.Resources>
 			<local:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
 			<DataTemplate x:Name="ImageCellTemplate">
 				<Image Source="{Binding MyImageByteArray, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
 			</DataTemplate>
 		</Window.Resources>
-	{{endregion}}
+	```
 
 3. Subscribe to the AutoGeneratingColumn event of RadGridView and in the event handler check if the column is the one showing the byte array. In this case, set the column's CellTemplate property.
 
-	#### __[C#]__
-	{{region kb-gridview-display-byte-array-image-2}}
+	
+	```C#
 		private void RadGridView_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
 		{
 			if (e.Column.UniqueName == "MyImageByteArray")
@@ -82,4 +82,4 @@ How to display an image from a byte array in RadGridView when auto generated col
 				dataColumn.CellTemplate = (DataTemplate)this.Resources["ImageCellTemplate"];
 			}
 		}
-	{{endregion}}
+	```

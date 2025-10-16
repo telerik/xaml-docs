@@ -17,9 +17,9 @@ position: 15
 By using the [Interactivity Effects]({%slug radchart-features-interactivity-effects%}) you can select/hover Items or whole Series of the RadChart. This help topic will demonstrate the Interactivity Effects applied for Stacked Bar Series. The main goal is to select the whole stack of Bars by clicking on a single Bar in the Stack.
 For the purpose 3 StackedBar series are created using the [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) approach as follows:
 
-#### __C#__
 
-{{region cs-radchart-howto-select-whole-stack-of-bars-using-the-interactivity-effects_0}}
+
+```C#
 	public partial class MainPage : UserControl
 	{
 	    public class Company
@@ -90,13 +90,8 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 	        RadChart1.DefaultView.ChartArea.SelectItems(barsInStack);
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-howto-select-whole-stack-of-bars-using-the-interactivity-effects_1}}
+```
+```VB.NET
 	Partial Public Class MainPage
 	    Inherits UserControl
 	    Public Class Company
@@ -160,7 +155,7 @@ For the purpose 3 StackedBar series are created using the [Manual Series Mapping
 	    End Sub
 	
 	End Class
-{{endregion}}
+```
 
 
 

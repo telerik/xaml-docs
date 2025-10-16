@@ -21,8 +21,8 @@ It will guids you through the implementation of two common __RadTreeView__ scena
 
 Let's start by setting up the business models that will define the hierarchy displayed inside the __RadTreeView__ control. First we'll need a __ViewModel__ describing the items in the tree. Please have in mind that in order to use the __BringPathIntoView()__ method, we need to have the path to each item. This is why we will build a method inside each business item that constructs its full path. However, in order to do so, we'll have to keep a reference to the parent of each item.
 	
-#### __C#__
-{{region radtreeview-how-to-bring-path-into-view-0}}
+
+```C#
 	public class BusinessItem 
 	{
 		public BusinessItem(BusinessItem parent)
@@ -50,10 +50,8 @@ Let's start by setting up the business models that will define the hierarchy dis
 			return path;
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radtreeview-how-to-bring-path-into-view-1}}
+```
+```VB.NET
 	Public Class BusinessItem
 		Public Sub New(ByVal parent As BusinessItem)
 			Me.Items = New ObservableCollection(Of BusinessItem)()
@@ -85,12 +83,12 @@ Let's start by setting up the business models that will define the hierarchy dis
 			Return path
 		End Function
 	End Class
-{{endregion}}
+```
 
 In order to complete the __BusinessItem__ class implementation, we'll only add an __IsSelected__ property so that we can easily control the selected state of each __RadTreeViewItem__. We'll also have to implement the __INotifyPropertyChanged__ interface in order to notify the view (respectively the __RadTreeView__) for any changes in the value of the __IsSelected__ property.
 	
-#### __C#__	
-{{region radtreeview-how-to-bring-path-into-view-2}}
+	
+```C#
 	public class BusinessItem : INotifyPropertyChanged
 	{
 		...
@@ -122,10 +120,8 @@ In order to complete the __BusinessItem__ class implementation, we'll only add a
 			}
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radtreeview-how-to-bring-path-into-view-3}}
+```
+```VB.NET
 	Public Class BusinessItem
 		Implements INotifyPropertyChanged
 		
@@ -151,12 +147,12 @@ In order to complete the __BusinessItem__ class implementation, we'll only add a
 		End Sub
 		
 	End Class
-{{endregion}}
+```
 
 Next, we need a __ViewModel__ describing the collection of __BusinessItems__. For the purpose of this tutorial, we'll create a __SampleViewModel__ inheriting an __ObservableCollection__ of __BusinessItems__ and we will populate it with items:
 
-#### __C#__	
-{{region radtreeview-how-to-bring-path-into-view-4}}
+	
+```C#
 	public class SampleViewModel : ObservableCollection<BusinessItem>
 	{
 		public SampleViewModel()
@@ -204,10 +200,8 @@ Next, we need a __ViewModel__ describing the collection of __BusinessItems__. Fo
 			}
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__	
-{{region radtreeview-how-to-bring-path-into-view-5}}
+```
+```VB.NET
 	Public Class SampleViewModel
 		Inherits ObservableCollection(Of BusinessItem)
 
@@ -235,12 +229,12 @@ Next, we need a __ViewModel__ describing the collection of __BusinessItems__. Fo
 			Next i
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Finally, in order to make this example a bit more user-friendly, we will allow our users to bring an item into view, just by entering its header in a TextBox and hitting a *BringIntoView* button. In order to implement this functionality, we'll need a method that finds a __BusinessItem__ based on its __Header__. This is why, we will extend the __SampleViewModel__ definition by implementing a *GetItemByName()* method:
 	
-#### __C#__
-{{region radtreeview-how-to-bring-path-into-view-6}}
+
+```C#
 	public class SampleViewModel : ObservableCollection<BusinessItem>
 	{
 		public BusinessItem GetItemByName(string name)
@@ -276,10 +270,8 @@ Finally, in order to make this example a bit more user-friendly, we will allow o
 		
 		}
 	}
-{{endregion}}
-	
-#### __VB.NET__	
-{{region radtreeview-how-to-bring-path-into-view-7}}
+```
+```VB.NET
 	Public Class SampleViewModel
 		Inherits ObservableCollection(Of BusinessItem)
 		Public Function GetItemByName(ByVal name As String) As BusinessItem
@@ -305,7 +297,7 @@ Finally, in order to make this example a bit more user-friendly, we will allow o
 
 		...
 	End Class		  
-{{endregion}}
+```
 
 Now that our __ViewModels__ are all in place, we can define our view and the __RadTreeView__ control.
 
@@ -313,8 +305,8 @@ Now that our __ViewModels__ are all in place, we can define our view and the __R
 
 We can start by adding a sample __RadTreeView__ definition. As we will be displaying a large collection of items, it's best to virtualize the control:
 	
-#### __XAML__	
-{{region radtreeview-how-to-bring-path-into-view-8}}
+	
+```XAML
 	<telerik:RadTreeView x:Name="myTreeView" Width="300" IsVirtualizing="True">
 		<telerik:RadTreeView.ItemTemplate>
 			<HierarchicalDataTemplate ItemsSource="{Binding Items}">
@@ -322,14 +314,14 @@ We can start by adding a sample __RadTreeView__ definition. As we will be displa
 			</HierarchicalDataTemplate>
 		</telerik:RadTreeView.ItemTemplate>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 >important Please keep in mind that the __BringPathIntoView()__ method will work properly only if you set the __TextSearch.TextPath__ attached property. This is due to the fact that the method internally uses the __TextPath__ value to match the path of each business item to its corresponding container of type __RadTreeViewItem__. Therefore the value of the property has to be the name of the business property that is used to create a path to each node.
 
 As the __BusinessItem__ class defines the __Path__ through the __Name__ property, we need to extend the __RadTreeView__ definition by setting the __TextSearch.TextPath__ property to *Name*. As our scenario requires us to keep track of the selection in the __RadTreeView__ control, we'll also add a __RadTreeViewItem Style__ to bind the __IsSelected__ property to the appropriate data object.
 
-#### __XAML__	
-{{region radtreeview-how-to-bring-path-into-view-9}}
+	
+```XAML
 	<telerik:RadTreeView x:Name="myTreeView" Width="300" IsVirtualizing="True" telerik:TextSearch.TextPath="Name">
 		<telerik:RadTreeView.ItemTemplate>
 			<HierarchicalDataTemplate ItemsSource="{Binding Items}">
@@ -342,12 +334,12 @@ As the __BusinessItem__ class defines the __Path__ through the __Name__ property
 			</Style>
 		</telerik:RadTreeView.ItemContainerStyle>
 	</telerik:RadTreeView>		
-{{endregion}}
+```
 
 Next, we'll extend our UI by adding a few __TextBoxes__ and __Buttons__ to allow our users to enter a header of an item and bring it into view. We'll also allow the users to add new items in the __RadTreeView__ by entering the __Header__ of their parent. 
 	
-#### __XAML__
-{{region radtreeview-how-to-bring-path-into-view-10}}
+
+```XAML
     <StackPanel Orientation="Horizontal">
         <telerik:RadTreeView x:Name="myTreeView"
                              Width="300"
@@ -382,7 +374,7 @@ Next, we'll extend our UI by adding a few __TextBoxes__ and __Buttons__ to allow
                     Content="Add Item" />
         </StackPanel>
     </StackPanel>  		  
-{{endregion}}
+```
 	
 ![Rad Tree View-How To-BPIV-UI](images/RadTreeView-HowTo-BPIV-UI.png)
 
@@ -392,8 +384,8 @@ Now that we've defined both our viewmodels and our view, all we have left is to 
 
 First, we'll set the __ItemsSource__ of the __RadTreeView__ and immediately bring the *90.3.3.3* item into view.
 	
-#### __C#__
-{{region radtreeview-how-to-bring-path-into-view-11}}
+
+```C#
 	public partial class Example : UserControl
 	{
 		private SampleViewModel sampleVM;
@@ -415,10 +407,8 @@ First, we'll set the __ItemsSource__ of the __RadTreeView__ and immediately brin
 			}
 		}
 	}		  
-{{endregion}}
-
-#### __VB.NET__	
-{{region radtreeview-how-to-bring-path-into-view-12}}
+```
+```VB.NET
 	Partial Public Class Example
 		Inherits UserControl
 		Private sampleVM As SampleViewModel
@@ -438,14 +428,14 @@ First, we'll set the __ItemsSource__ of the __RadTreeView__ and immediately brin
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 The above logic will build the __RadTreeView Items__ collection, and as soon as the __RadTreeView__ is properly loaded, the __BringPathIntoView()__ method will find and bring the item with __Header__ of *90.3.3.3* into view.
 
 Next, we will need to implement the __Click__ event handler of the *Bring Item* button. It has to use the header entered by the user to find the __BusienssItem__ that has to be brought into view and this is why we'll call the __SampleViewModel.GetItemByName()__ method. Then as soon as we find the item, we will set its __IsSelected__ property to __True__ and find its path. Then we can use the __RadTreeView.BringPathIntoView()__ method to bring it into view:
 	
-#### __C#__	
-{{region radtreeview-how-to-bring-path-into-view-13}}
+	
+```C#
     private void BringItem(object sender, RoutedEventArgs e)
     {
         BusinessItem item = this.sampleVM.GetItemByName(this.textBox.Text);
@@ -456,10 +446,8 @@ Next, we will need to implement the __Click__ event handler of the *Bring Item* 
             myTreeView.BringPathIntoView(path);
         }
     }
-{{endregion}}
-	
-#### __VB.NET__	
-{{region radtreeview-how-to-bring-path-into-view-14}}
+```
+```VB.NET
 	Private Sub BringItem(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim item As BusinessItem = Me.sampleVM.GetItemByName(Me.textBox.Text)
 		If item IsNot Nothing Then
@@ -468,12 +456,12 @@ Next, we will need to implement the __Click__ event handler of the *Bring Item* 
 			myTreeView.BringPathIntoView(path)
 		End If
 	End Sub
-{{endregion}}
+```
 
 Finally, we have to implement a logic that adds a new item when the *Add Item* button is clicked. As this button should create a new item in the __ItemsSource__ collection of an item defined by the user, we again have to use the __SampleViewModel.GetItemByName()__ method to find the business object that will parent the new item. Then we can add and bring the new item into view:
 	
-#### __C#__
-{{region radtreeview-how-to-bring-path-into-view-15}}
+
+```C#
     private void AddItem(object sender, RoutedEventArgs e)
     {
         BusinessItem parent = this.sampleVM.GetItemByName(this.parentBox.Text);
@@ -492,10 +480,8 @@ Finally, we have to implement a logic that adds a new item when the *Add Item* b
             this.myTreeView.BringPathIntoView(path);
         }
     }
-{{endregion}}
-
-#### __VB.NET__		
-{{region radtreeview-how-to-bring-path-into-view-16}}
+```
+```VB.NET
 	Private Sub AddItem(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim parent As BusinessItem = Me.sampleVM.GetItemByName(Me.parentBox.Text)
 
@@ -508,6 +494,6 @@ Finally, we have to implement a logic that adds a new item when the *Add Item* b
 			Me.myTreeView.BringPathIntoView(path)
 		End If
 	End Sub
-{{endregion}}
+```
 
 >tip Find a complete solution showing this approach in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/BringIntoView)

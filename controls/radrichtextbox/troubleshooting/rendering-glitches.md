@@ -26,10 +26,10 @@ There are two options allowing you to control the rendering mode of RadRichTextB
 
 #### **[C#] Example 1: Change the rendering mode for the current instance of RadRichTextBox**
 
-{{region radrichtextbox-troubleshooting-rendering-glitches_0}}
+```C#
 
     this.radRichTextBox.TextRenderingMode = TextBlockRenderingMode.TextBlockWithPropertyCaching;
-{{endregion}}
+```
 
 
 ## See Also

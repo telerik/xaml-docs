@@ -26,9 +26,9 @@ In order to style RadMenuItem elements, you can set the __ItemContainerStyle__ p
 
 In order to style all __RadMenuItem__ elements in the application, you can create an implicit style targeting __RadMenuItem__ as demonstrated in the __Example 1__.
 
-#### __[XAML] Example 1: Styling RadMenuItem__
+__Example 1: Styling RadMenuItem__
 
-{{region xaml-radmenu-styling-and-appearance-styling-radmenuitem_0}}
+```XAML
 	<Grid>
         <Grid.Resources>
              <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
@@ -47,7 +47,7 @@ In order to style all __RadMenuItem__ elements in the application, you can creat
             <telerik:RadMenuItem Header="Edit" />
         </telerik:RadMenu>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadMenuItems with red Background in the Fluent theme__
 ![RadMenuItems with red Background in the Fluent theme](images/RadMenuItem_Styling.png)

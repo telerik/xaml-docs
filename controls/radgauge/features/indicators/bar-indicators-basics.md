@@ -14,15 +14,7 @@ The __Linear__ and the __Radial__ __Bars__ derive from the __BarIndicator__ clas
 
 >tipThe __BarIndicator__ class inherits the __IndicatorBase__ class, which is a base class for all indicators, except the __NumericIndicator__. To learn more about the base features of the indicators read [this topic]({%slug radgauge-features-indicators-basics%}).
 
->For the examples in this article a __LinearBar__ indicator will be used, but the examples can be applied to the __RadialBar__ one as well.
-
-It will explain the following:
-
-* [Empty Fill](#empty-fill)
-
-* [Indicator Width](#indicators-width)
-
-* [Range Color Mode](#range-color-mode)
+For the examples in this article a __LinearBar__ indicator will be used, but the examples can be applied to the __RadialBar__ one as well.
 
 ## Empty Fill
 
@@ -32,8 +24,8 @@ The __Empty__ __Fill__ feature allows you to specify a color for the empty part 
 
 Here is an example:        
 
-#### __XAML__
-{{region radgauge-features-indicators-bar-indicators-basics_0}}
+
+```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="200" >
 	        <telerik:VerticalLinearScale.Indicators>
@@ -51,7 +43,7 @@ Here is an example:
 	        </telerik:VerticalLinearScale.CustomItems>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -65,8 +57,8 @@ The __Bar Indicators__ allow you to specify their end and start width. This way 
 
 Here is an example:
 
-#### __XAML__
-{{region radgauge-features-indicators-bar-indicators-basics_1}}
+
+```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="200" >
 	        <telerik:VerticalLinearScale.Indicators>
@@ -77,7 +69,7 @@ Here is an example:
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 
@@ -109,8 +101,8 @@ As the __Bar Indicators__ cover the range from the start of the scale to the sel
 
 Here is an example:
 
-#### __XAML__
-{{region radgauge-features-indicators-bar-indicators-basics_2}}
+
+```XAML
 	<telerik:RadVerticalLinearGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:VerticalLinearScale Min="0" Max="30"
 	                         IsInteractive="True"
@@ -143,7 +135,7 @@ Here is an example:
 	        </telerik:VerticalLinearScale.Indicators>
 	    </telerik:VerticalLinearScale>
 	</telerik:RadVerticalLinearGauge>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

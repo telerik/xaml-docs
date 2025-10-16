@@ -20,13 +20,13 @@ __RadBusyIndicator__ provides the option to customize what's shown in the __RadB
 
 __BusyContent__ property sets the loading message while the indicator is active as shown in the following example:
 
-#### __[XAML] Setting BusyContent__
+__Setting BusyContent__
 
-{{region xaml-radbusyindicator-features-custom-busy-content_0}}
+```XAML
 	<telerik:RadBusyIndicator BusyContent="The report is currently loading..." >
         <!-- the content here -->
     </telerik:RadBusyIndicator>
-{{endregion}}
+```
 
 Here is the result:
 
@@ -40,9 +40,9 @@ In this section we will show you how to create and apply a simple __BusyContentT
 
 To do this, first you have to define your __RadBusyIndicator__ control:
 
-#### __[XAML] Defining RadBusyIndicator__
+__Defining RadBusyIndicator__
 
-{{region xaml-radbusyindicator-features-custom-busy-content_4}}
+```XAML
 	<telerik:RadBusyIndicator x:Name="radBusyIndicator"
 	                          Background="Transparent"
 	                          BusyContentTemplate="{StaticResource BusyContentDataTemplate}">
@@ -55,15 +55,15 @@ To do this, first you have to define your __RadBusyIndicator__ control:
 	                 Width="150" />
 	    </Grid>
 	</telerik:RadBusyIndicator>
-{{endregion}}
+```
 
 >Notice that the __RadBusyIndicator's Background__ property is set to __Transparent__. This will be the background applied to the indicator's content and the __Grid__ hosting the __RadBusyIndicator's__ progress bar and content elements.
 
 In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTemplate__, that's why you have to define this __DataTemplate__ as well. Here is an example:
 
-#### __[XAML] Defining DataTemplate__
+__Defining DataTemplate__
 
-{{region xaml-radbusyindicator-features-custom-busy-content_1}}
+```XAML
 	<DataTemplate x:Key="BusyContentDataTemplate">
 	    <StackPanel Orientation="Horizontal"
 	                DataContext="{Binding DataContext, ElementName=radBusyIndicator}">
@@ -75,7 +75,7 @@ In the __RadBusyIndicator's__ definition you have indicated the __BusyContentTem
 	                   FontWeight="Bold" />
 	    </StackPanel>
 	</DataTemplate>
-{{endregion}}
+```
 
 In the code behind you have to:
 
@@ -99,9 +99,9 @@ In the code behind you have to:
 >* __System.ComponentModel__
 >* __System.Windows.Threading__
 
-#### __[C#] BusyContentTemplateSample class implementation__
+__BusyContentTemplateSample class implementation__
 
-{{region cs-radbusyindicator-features-custom-busy-content_2}}
+```C#
 	public partial class BusyContentTemplateSample : UserControl, INotifyPropertyChanged
 	{
 	    private int progressValue;
@@ -147,11 +147,11 @@ In the code behind you have to:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
-#### __[VB] BusyContentTemplateSample class implementation__
+__BusyContentTemplateSample class implementation__
 
-{{region vb-radbusyindicator-features-custom-busy-content_3}}
+```VB
 	Public Partial Class BusyContentTemplateSample
 	 Inherits UserControl
 	 Implements INotifyPropertyChanged
@@ -190,7 +190,7 @@ In the code behind you have to:
 	  End If
 	 End Sub
 	End Class
-{{endregion}}
+```
 
 Here is the final result:
 

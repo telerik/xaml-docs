@@ -30,8 +30,8 @@ The [Selection Box]({%slug radcombobox-general-information-visual-structure%}) p
 
 When the RadComboBox control has no selected item, a text will appear. The empty text string can be changed through the __EmptyText__ and __EmptySelectionBoxTemplate__ properties of the __RadComboBox__ control. The __EmptyText__ property is of type string, and you can set a custom string. If you want to customize the empty text style further, you can use the __EmptySelectionBoxTemplate__ property by applying a custom __DataTemplate__.
 
-#### __[XAML] Example 1: Customize Empty Text__  
-{{region radribbonview-gettingstarted-01}}
+__Example 1: Customize Empty Text__  
+```XAML
     <Grid>
 		<Grid.Resources>
 			<DataTemplate x:Key="EmptyTemplate">
@@ -44,7 +44,7 @@ When the RadComboBox control has no selected item, a text will appear. The empty
 								EmptySelectionBoxTemplate="{StaticResource EmptyTemplate}">
 		</telerik:RadComboBox>
 	</Grid>
-{{endregion}}
+```
 
 ## Editing the Control Template
 

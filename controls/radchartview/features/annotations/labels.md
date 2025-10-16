@@ -18,8 +18,8 @@ The CartesianStrokedAnnotation class provides infrastructure for annotation labe
 
 To show the annotation's label, set its __Label__ property.
 
-#### __[XAML] Example 1: Setting annotation label__
-{{region radchartview-annotations-labels-0}}
+__Example 1: Setting annotation label__
+```XAML
 	<telerik:RadCartesianChart>          
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis x:Name="verticalAxis"/>
@@ -41,7 +41,7 @@ To show the annotation's label, set its __Label__ property.
 												 Label="Average Value" />
 		</telerik:RadCartesianChart.Annotations>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 1: Annotation Label
 ![radchartview-annotations-labels-0.png](images/radchartview-annotations-labels-0.png)
@@ -50,8 +50,8 @@ To show the annotation's label, set its __Label__ property.
 
 The chart annotation labels are adjusted using the __LabelDefinition__ property. The property accepts a value of type __ChartAnnotationLabelDefinition__ that allows you to style and position the label.
 
-#### __[XAML] Example 2: Setting LabelDefinition__
-{{region radchartview-annotations-labels-1}}
+__Example 2: Setting LabelDefinition__
+```XAML
 	<telerik:RadCartesianChart>          
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis x:Name="verticalAxis"/>
@@ -80,7 +80,7 @@ The chart annotation labels are adjusted using the __LabelDefinition__ property.
 			</telerik:CartesianGridLineAnnotation>
 		</telerik:RadCartesianChart.Annotations>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 2: Centered Label
 ![radchartview-annotations-labels-1.png](images/radchartview-annotations-labels-1.png)
@@ -101,8 +101,8 @@ Annotations provide a mechanism for label positioning that consists of three lay
 
 * __Horizontal / Vertical Offset__ property: Besides the Location, HorizontalAlignment and Vertical Alignment, you can use the __HorizontalOffset__ and __VerticalOffset__ properties to specify an offset in pixels. This offset is applied after the aforementioned properties.
 
-#### __[XAML] Example 3: Custom positioned label__
-{{region radchartview-annotations-labels-2}}
+__Example 3: Custom positioned label__
+```XAML
 	<telerik:RadCartesianChart>          
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis x:Name="verticalAxis"/>
@@ -134,7 +134,7 @@ Annotations provide a mechanism for label positioning that consists of three lay
 			</telerik:CartesianGridLineAnnotation>
 		</telerik:RadCartesianChart.Annotations>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 5: Custom positioned label
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-2.png)
@@ -143,8 +143,8 @@ Annotations provide a mechanism for label positioning that consists of three lay
 
 The default visual element of the label is a native TextBlock. To customize it you can use the __DefaultVisualStyle__ property of the ChartAnnotationLabelDefinition.
 
-#### __[XAML] Example 4: Setting DefaultVisualStyle__
-{{region radchartview-annotations-labels-3}}
+__Example 4: Setting DefaultVisualStyle__
+```XAML
 	<telerik:RadCartesianChart>          
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis x:Name="verticalAxis"/>
@@ -180,7 +180,7 @@ The default visual element of the label is a native TextBlock. To customize it y
 			</telerik:CartesianGridLineAnnotation>
 		</telerik:RadCartesianChart.Annotations>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 6: Customized Label Style
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-3.png)
@@ -189,8 +189,8 @@ The default visual element of the label is a native TextBlock. To customize it y
 
 To replace the default label visual element with an entirely custom UI you can use the __Template__ property of the ChartAnnotationLabelDefinition.
 
-#### __[XAML] Example 5: Setting custom label template__
-{{region radchartview-annotations-labels-4}}
+__Example 5: Setting custom label template__
+```XAML
 	<telerik:RadCartesianChart>          
 		 <telerik:RadCartesianChart.VerticalAxis>
                 <telerik:LinearAxis x:Name="verticalAxis"/>
@@ -229,7 +229,7 @@ To replace the default label visual element with an entirely custom UI you can u
             </telerik:RadCartesianChart.Annotations>
 		</telerik:RadCartesianChart.Annotations>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### Figure 7: Customized Label Template
 ![radchartview-annotations-labels-3.png](images/radchartview-annotations-labels-4.png)

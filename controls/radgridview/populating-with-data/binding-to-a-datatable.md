@@ -16,9 +16,9 @@ This article will demonstrate how to bind a __RadGridView__ to the DataView of a
 
 __Example 1__ demonstrates how you can set up a ViewModel containing a DataTable in order to bind it to the RadGridView.
 
-#### __[C#] Example 1: Setting up the ViewModel__
+__Example 1: Setting up the ViewModel__
 
-{{region cs-gridview-binding-to-the-dataview-of-a-datatable-0}}
+```C#
 	public class MyViewModel : ViewModelBase
     {
         private DataTable datatable;
@@ -55,11 +55,8 @@ __Example 1__ demonstrates how you can set up a ViewModel containing a DataTable
             return dataTable;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting up the ViewModel__
-
-{{region vb-gridview-binding-to-the-dataview-of-a-datatable-1}}
+```
+```VB.NET
     Public Class MyViewModel
         Inherits ViewModelBase
 
@@ -93,13 +90,13 @@ __Example 1__ demonstrates how you can set up a ViewModel containing a DataTable
             End Function
     End Class
 
-{{endregion}}
+```
 
 __Example 2__ demonstrates how the RadGridView is set up in XAML. Please, pay attention to the fact that the __ItemsSource__ is bound to the __DefaultView__ property of the DataTable.
 
-#### __[XAML] Example 2: Setting up the RadGridView__
+__Example 2: Setting up the RadGridView__
 
-{{region xaml-gridview-binding-to-the-dataview-of-a-datatable-2}}
+```XAML
 	<Grid>
         <Grid.DataContext>
             <!-- The namespace "my" refers to the namespace where the MyViewModel class is defined-->
@@ -117,7 +114,7 @@ __Example 2__ demonstrates how the RadGridView is set up in XAML. Please, pay at
 		</telerik:RadGridView>
 		
 	</Grid>
-{{endregion}}
+```
 
 ## See Also
 

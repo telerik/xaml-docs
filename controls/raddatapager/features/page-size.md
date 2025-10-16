@@ -14,12 +14,11 @@ position: 3
 
 The __RadDataPager__ splits the data into separate pages with a certain size. In order to specify the size of the page you have to use the __PageSize__ property. By default it's set to __0__ and all the data gets displayed in one and only page. Here is an example of a __RadDataPager__ with a page size of __5__ and __20__ items.
 
-#### __XAML__
-{{region raddatapager-features-page-size_0}}
+```XAML
 	<telerik:RadDataPager x:Name="radDataPager" PageSize="5" />
-{{endregion}}
-         
- ![{{ site.framework_name }} RadDataPager Page Size 5](images/RadDataPager_Features_PageSize_01.png)
+```
+
+![{{ site.framework_name }} RadDataPager Page Size 5](images/RadDataPager_Features_PageSize_01.png)
 
 ## See Also  
  * [Infinite Paging]({%slug raddatapager-features-infinite-paging%})

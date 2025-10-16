@@ -22,9 +22,7 @@ This tutorial will show you two of them:
 
 1. Define a XML source:
 
-	#### __XAML__
-
-	{{region radtreeview-howto-bind-treeview-wpf_0}}
+	```XAML
 		<?xml version="1.0" encoding="UTF-8"?>
 		<Artists>
 			<Artist>
@@ -153,13 +151,11 @@ This tutorial will show you two of them:
 				</Albums>
 			</Artist>
 		</Artists>
-	{{endregion}}
+	```
 
 2. Define __HierarchicalDataTemplates__, which will "tell" the __RadTreeView__ how to display the XML data.
 
-	#### __XAML__
-
-	{{region radtreeview-howto-bind-treeview-wpf_1}}
+	```XAML
 		<HierarchicalDataTemplate DataType="Artist"    
 			ItemsSource="{Binding XPath=Albums/Album}">
 			<TextBlock FontWeight="Bold" Text="{Binding XPath=ArtistName}" />
@@ -173,27 +169,23 @@ This tutorial will show you two of them:
 		<DataTemplate DataType="Song">
 			<TextBlock FontStyle="Italic" Text="{Binding XPath=SongName}" />
 		</DataTemplate>
-	{{endregion}}
+	```
 
 	>For more information about __HierarchicalDataTemplates__ read [here]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}).		  
 
 3. To define the XML data you should use a __XMLDataProvider__. You need to point the __Source__ property to the XML file and set the __XPath__ property to the root element of the XML.
 
-	#### __XAML__
-
-	{{region radtreeview-howto-bind-treeview-wpf_2}}
+	```XAML
 		<XmlDataProvider x:Key="XmlDataProvider"
 			XPath="/Artists" Source="Artists.xml"/>
-	{{endregion}}
+	```
 
 4. Set the __ItemsSource__ property of the __RadTreeView__.
 
-	#### __XAML__
-
-	{{region radtreeview-howto-bind-treeview-wpf_3}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 			ItemsSource="{Binding Source={StaticResource XmlDataProvider}, XPath=Artist}"/>
-	{{endregion}}  
+	```  
 
 5. Run your demo. Here is the final result:
 
@@ -209,9 +201,7 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 
 	* Create a class named __Animal__, which have two properties - __Name__ and __Category__.			
 
-		#### __C#__
-
-		{{region radtreeview-howto-bind-treeview-wpf_4}}
+		```C#
 				public class Animal
 				{
 					public Animal(string name, Category category)
@@ -230,11 +220,8 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 						set;
 					}
 				}
-		{{endregion}}
-
-		#### __VB.NET__
-
-		{{region radtreeview-howto-bind-treeview-wpf_5}}
+		```
+		```VB.NET
 				Public Class Animal
 					Public Sub New(ByVal name As String, ByVal category As Category)
 						Me.Name = name
@@ -261,27 +248,22 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 						End Set
 					End Property
 				End Class
-		{{endregion}}
+		```
 
 		The __Category__ property is of type __Category__ which is an enumeration.
 
-		#### __C#__
-
-		{{region radtreeview-howto-bind-treeview-wpf_6}}
-				public enum Category
-				{
-					Amphibians,
-					Bears,
-					Canines,
-					Spiders,
-					Primates,
-					BigCats
-				}
-		{{endregion}}
-
-		#### __VB.NET__
-
-		{{region radtreeview-howto-bind-treeview-wpf_7}}
+		```C#
+			public enum Category
+			{
+				Amphibians,
+				Bears,
+				Canines,
+				Spiders,
+				Primates,
+				BigCats
+			}
+		```
+		```VB.NET
 				Public Enum Category
 					Amphibians
 					Bears
@@ -290,64 +272,59 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 					Primates
 					BigCats
 				End Enum
-		{{endregion}}
+		```
 
 	* Create some sample data					
 
-		#### __C#__
-
-		{{region radtreeview-howto-bind-treeview-wpf_8}}
-				public class Animal
+		```C#
+			public class Animal
+			{
+				public Animal(string name, Category category)
 				{
-					public Animal(string name, Category category)
+					this.Name = name;
+					this.Category = category;
+				}
+				public string Name
+				{
+					get;
+					set;
+				}
+				public Category Category
+				{
+					get;
+					set;
+				}
+				public IEnumerable<Animal> AnimalList
+				{
+					get
 					{
-						this.Name = name;
-						this.Category = category;
-					}
-					public string Name
-					{
-						get;
-						set;
-					}
-					public Category Category
-					{
-						get;
-						set;
-					}
-					public IEnumerable<Animal> AnimalList
-					{
-						get
-						{
-							List<Animal> animalList = new List<Animal>();
-							animalList.Add(new Animal("California Newt", Category.Amphibians));
-							animalList.Add(new Animal("Giant Panda", Category.Bears));
-							animalList.Add(new Animal("Coyote", Category.Canines));
-							animalList.Add(new Animal("Golden Silk Spader", Category.Spiders));
-							animalList.Add(new Animal("Mandrill", Category.Primates));
-							animalList.Add(new Animal("Black Bear", Category.Bears));
-							animalList.Add(new Animal("Jaguar", Category.BigCats));
-							animalList.Add(new Animal("Bornean Gibbon", Category.Primates));
-							animalList.Add(new Animal("African Wildcat", Category.BigCats));
-							animalList.Add(new Animal("Artic Fox", Category.Canines));
-							animalList.Add(new Animal("Tomato Frog", Category.Amphibians));
-							animalList.Add(new Animal("Grizzly Bear", Category.Bears));
-							animalList.Add(new Animal("Dingo", Category.Canines));
-							animalList.Add(new Animal("Gorilla", Category.Primates));
-							animalList.Add(new Animal("Green Tree Frog", Category.Amphibians));
-							animalList.Add(new Animal("Bald Vakari", Category.Primates));
-							animalList.Add(new Animal("Polar Bear", Category.Bears));
-							animalList.Add(new Animal("Black Widow Spider", Category.Spiders));
-							animalList.Add(new Animal("Bat-Eared Fox", Category.Canines));
-							animalList.Add(new Animal("Cheetah", Category.BigCats));
-							return animalList.AsEnumerable();
-						}
+						List<Animal> animalList = new List<Animal>();
+						animalList.Add(new Animal("California Newt", Category.Amphibians));
+						animalList.Add(new Animal("Giant Panda", Category.Bears));
+						animalList.Add(new Animal("Coyote", Category.Canines));
+						animalList.Add(new Animal("Golden Silk Spader", Category.Spiders));
+						animalList.Add(new Animal("Mandrill", Category.Primates));
+						animalList.Add(new Animal("Black Bear", Category.Bears));
+						animalList.Add(new Animal("Jaguar", Category.BigCats));
+						animalList.Add(new Animal("Bornean Gibbon", Category.Primates));
+						animalList.Add(new Animal("African Wildcat", Category.BigCats));
+						animalList.Add(new Animal("Artic Fox", Category.Canines));
+						animalList.Add(new Animal("Tomato Frog", Category.Amphibians));
+						animalList.Add(new Animal("Grizzly Bear", Category.Bears));
+						animalList.Add(new Animal("Dingo", Category.Canines));
+						animalList.Add(new Animal("Gorilla", Category.Primates));
+						animalList.Add(new Animal("Green Tree Frog", Category.Amphibians));
+						animalList.Add(new Animal("Bald Vakari", Category.Primates));
+						animalList.Add(new Animal("Polar Bear", Category.Bears));
+						animalList.Add(new Animal("Black Widow Spider", Category.Spiders));
+						animalList.Add(new Animal("Bat-Eared Fox", Category.Canines));
+						animalList.Add(new Animal("Cheetah", Category.BigCats));
+						return animalList.AsEnumerable();
 					}
 				}
-		{{endregion}}
-
-		#### __VB.NET__
-
-		{{region radtreeview-howto-bind-treeview-wpf_9}}
+			}
+		```
+		```VB.NET
 				Public Class Animal
 					Public Sub New(ByVal name As String, ByVal category As Category)
 						Me.Name = name
@@ -402,16 +379,14 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 						End Get
 					End Property
 				End Class
-		{{endregion}}  
+		```  
 
 2. Configure the __CollectionViewSource__.
 
 	* Set the __Source__ property to point to our collection.
 	* Set the grouping using the __GroupDescriptions__.			
 
-		#### __XAML__
-
-		{{region radtreeview-howto-bind-treeview-wpf_10}}
+		```XAML
 			<sampleData:Animal x:Key="AnimalCollection"/>
 			
 			<CollectionViewSource x:Key="CSV"
@@ -420,13 +395,11 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 					<PropertyGroupDescription PropertyName="Category"/>
 				</CollectionViewSource.GroupDescriptions>
 			</CollectionViewSource>
-		{{endregion}}  
+		```  
 
 3. Create data templates.  
 
-	#### __XAML__
-
-	{{region radtreeview-howto-bind-treeview-wpf_11}}
+	```XAML
 		<DataTemplate x:Key="AnimalTemplate">
 			<TextBlock Text="{Binding Path=Name}"/>
 		</DataTemplate>
@@ -436,17 +409,15 @@ This is a bit more advanced example. Say you have a flat collection of objects a
 				ItemTemplate="{StaticResource AnimalTemplate}">
 			<TextBlock Text="{Binding Path=Name}" FontWeight="Bold"/>
 		</HierarchicalDataTemplate>
-	{{endregion}}  
+	```  
 
 4. Set the __RadTreeView__ to point to the __CollectionViewSource__.  
 
-	#### __XAML__
-
-	{{region radtreeview-howto-bind-treeview-wpf_12}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 			ItemsSource="{Binding Source={StaticResource CSV}, Path=Groups}"
 			ItemTemplate="{StaticResource CategoryTemplate}"/>
-	{{endregion}}
+	```
 
 The final result may be seen on the snapshot below:
 ![{{ site.framework_name }} RadTreeView CollectionViewSource](images/RadTreeView_HowToBindTreeViewWPF_020.PNG)

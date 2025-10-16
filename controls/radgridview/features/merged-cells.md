@@ -34,14 +34,14 @@ When the RadGridView is setup, you can configure it to display the merged cells 
           
 >Currently, frozen columns are not supported while having merged cells enabled. An exception will be thrown: "Cell merging is not supported when frozen columns are enabled.”.
       
-#### __[XAML] Example 1: Configure RadGridView to merge cells vertically__
+__Example 1: Configure RadGridView to merge cells vertically__
 
-{{region xaml-gridview-merged-cells_2}}
+```XAML
 	<telerik:RadGridView ColumnWidth="*"
 	                    MergedCellsDirection="Vertical"
 	                    CanUserFreezeColumns="False"
 	                    GroupRenderMode="Flat"/>
-{{endregion}}
+```
 
 __Figure 1: RadGridView with vertically merged cells__
 
@@ -49,14 +49,14 @@ __Figure 1: RadGridView with vertically merged cells__
 
 Similarly, you can set the cells to be merged horizontally configuring RadGridView with __MergedCellsDirection.Horizontal__.
 
-#### __[XAML] Example 2: Configure RadGridView to merge cells horizontally__
+__Example 2: Configure RadGridView to merge cells horizontally__
 
-{{region xaml-gridview-merged-cells_3}}
+```XAML
 	<telerik:RadGridView ColumnWidth="*"
 	                    MergedCellsDirection="Horizontal"
 	                    CanUserFreezeColumns="False"
 	                    GroupRenderMode="Flat"/>
-{{endregion}}
+```
 
 
 __Figure 2: RadGridView with horizontally merged cells__
@@ -67,9 +67,9 @@ __Figure 2: RadGridView with horizontally merged cells__
 
 You can also configure merging for GridViewDataColumn through setting its __IsCellMergingEnabled__ property. For example:
         
-#### __[XAML] Example 3: Configure cell merging per column__
+__Example 3: Configure cell merging per column__
 
-{{region xaml-gridview-merged-cells_4}}
+```XAML
 	<telerik:RadGridView ColumnWidth="*"
 	                      MergedCellsDirection="Vertical"
 	                      CanUserFreezeColumns="False"
@@ -78,7 +78,7 @@ You can also configure merging for GridViewDataColumn through setting its __IsCe
 	        <telerik:GridViewDataColumn IsCellMergingEnabled="False"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 >Please note RadGridView's definition in __Example 3__ is specific to illustrate it
 
@@ -90,9 +90,9 @@ __Figure 3: RadGridView with configured cell merging per column__
 
 Merged cells are also supported when there are [RowDetails]({%slug radgridview-row-details-overview%})/[Hierarchy]({%slug gridview-hierachy-overview%}) defined for RadGridView.
    
-#### __[XAML] Example 4: Define RowDetailsTemplate__
+__Example 4: Define RowDetailsTemplate__
 
-{{region gridview-merged-cells_5}}
+```XAML
 
 	<DataTemplate x:Key="RowDetailsTemplate">
 	  <StackPanel>
@@ -102,11 +102,11 @@ Merged cells are also supported when there are [RowDetails]({%slug radgridview-r
 	    <TextBlock Text="{Binding LastName}" />
 	  </StackPanel>
 	</DataTemplate>
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Specify RowDetailsTemplate for RadGridView__
+__Example 5: Specify RowDetailsTemplate for RadGridView__
 
-{{region gridview-merged-cells_6}}
+```XAML
 
 	<telerik:RadGridView
 	  Name="radGridView"
@@ -119,7 +119,7 @@ Merged cells are also supported when there are [RowDetails]({%slug radgridview-r
 	    <telerik:GridViewToggleRowDetailsColumn/>
 	  </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __Figure 4: RadGridView with merged cells and RowDetails defined__
 

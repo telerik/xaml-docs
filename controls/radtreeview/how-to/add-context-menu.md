@@ -16,9 +16,9 @@ In this article you will see how to attach a [RadContextMenu]({%slug contextmenu
 
 For the purposes of the article, the ItemsSource of the RadTreeView will contain League objects. Each league will contain division objects, thus achiving a hierarchical structure. With the help of the __RadContextMenu__ we will give the option of adding a new child, adding a new sibling or deleting an item. In order to do that we will implement a base class with three commands: DeleteCommand, NewSiblingCommand and NewChildCommand. The first two commands will raise an event with custom command arguments. The parent item will listen for it and perform the necessary update. The class structure is demonstrated in __Example 1__.
 
-#### __[C#] Example 1: Defining the ViewModels__
+__Example 1: Defining the ViewModels__
 
-{{region cs-radtreeview-how-to-add-context-menu_0}}
+```C#
 	public enum ActionToTake
     {
         CreateSibling,
@@ -202,11 +202,8 @@ For the purposes of the article, the ItemsSource of the RadTreeView will contain
             }
         }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the ViewModels__
-
-{{region vb-radtreeview-how-to-add-context-menu_1}}
+```
+```VB.NET
 	Public Enum ActionToTake
 			CreateSibling
 			Delete
@@ -382,14 +379,14 @@ For the purposes of the article, the ItemsSource of the RadTreeView will contain
 			End Select
 		End Sub
 	End Class
-{{endregion}}
+```
 
 ## Defining the view
 
 Next, we will define the RadTreeView in xaml. We will create the DataTemplates which will display our hierarchical data and a RadContextMenu which will invoke the corresponding commands from the model.
 
-#### __[XAML] Example 2: Defining the view__
-{{region xaml-radtreeview-how-to-add-context-menu_2}}
+__Example 2: Defining the view__
+```XAML
 	<Grid>
         <Grid.Resources>
 			<Style TargetType="telerik:RadTreeViewItem">
@@ -418,14 +415,14 @@ Next, we will define the RadTreeView in xaml. We will create the DataTemplates w
                              ItemsSource="{Binding Path=Leagues}" />
 
     </Grid>
-{{endregion}}
+```
 
 ## Creating the ViewModel
 
 Finally all we need to do is create some sample data and set an instance of our ViewModel as the DataContext. 
 
-#### __[C#] Example 3: Creating the ViewModel__
-{{region cs-radtreeview-how-to-add-context-menu_3}}
+__Example 3: Creating the ViewModel__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -453,10 +450,8 @@ Finally all we need to do is create some sample data and set an instance of our 
             return new ViewModel(leagues);
         }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Creating the ViewModel__
-{{region vb-radtreeview-how-to-add-context-menu_4}}
+```
+```VB.NET
 	Partial Public Class MainWindow
 	Inherits Window
 
@@ -481,7 +476,7 @@ Finally all we need to do is create some sample data and set an instance of our 
 			Return New ViewModel(leagues)
 		End Function
 	End Class
-{{endregion}}
+```
 
 #### __Figure 1: Result from the Example in the Office2016 theme__
 ![RadTreeView with custom ContextMenu](images/RadTreeView_HowToAddContextMenu_001.png)

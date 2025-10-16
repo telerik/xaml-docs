@@ -20,13 +20,13 @@ The **RadDocument** class exposes numerous properties and methods enabling you t
 
 * __SectionDefaultPageSize__: This property is of type __Size__ and represents the default page size of the document. **Example 1** shows how to use it.
 
-	#### __[XAML] Example 1: Setting SectionDefaultPageSize__
+	__Example 1: Setting SectionDefaultPageSize__
 	
-	{{region radrichtextbox-features-document-elements-raddocument_0}}
+	```XAML
 		<telerik:RadRichTextBox x:Name="radRichTextBox" LayoutMode="Paged">
 		    <telerik:RadDocument SectionDefaultPageSize="500,1000" />
 		</telerik:RadRichTextBox>
-	{{endregion}}
+	```
 	
 	>The __SectionDefault~__ settings get applied only when Paged layout mode is used.                  
 
@@ -84,34 +84,27 @@ For example, you can build a RadDocument from scratch and add Sections to it as 
 
 >tip You can also merge RadDocument instances. For more information, see the [Merge Documents section]({%slug radrichtextbox-features-merge-raddocumentmerger%}).
 
-#### __[C#] Example 2: Add a section to a not measured document__
+__Example 2: Add a section to a not measured document__
 
-{{region radrichtextbox-features-document-elements-raddocument_1}}
+```C#
 	Section section = new Section();
 	this.radRichTextBox.Document.Sections.Add(section);
-{{endregion}}
-
-
-#### __[VB.NET] Example 2: Add a section to a not measured document__
-
-{{region radrichtextbox-features-document-elements-raddocument_2}}
+```
+```VB.NET
 	Dim section As New Section()
 	Me.radRichTextBox.Document.Sections.Add(section)
-{{endregion}}
+```
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break.
 
-#### __[C#] Example 3: Insert a Section break in a measured document__
+__Example 3: Insert a Section break in a measured document__
 
-{{region radrichtextbox-features-document-elements-raddocument_3}}
+```C#
 	this.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage);
-{{endregion}}
-
-#### __[VB.NET] Example 3: Insert a Section break in a measured document__
-
-{{region radrichtextbox-features-document-elements-raddocument_4}}
+```
+```VB.NET
 	Me.radRichTextBox.InsertSectionBreak(SectionBreakType.NextPage)
-{{endregion}}
+```
 
 >More details about the Section element and the section break types is available [here]({%slug radrichtextbox-features-document-elements-section%}).
 
@@ -132,9 +125,9 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
 
 **Example 4** shows a sample code that creates a new **RadDocument** instance and assigns it to **RadRichTextBox**. 
 
-#### __[C#] Example 4: Create a document in code-behind__
+__Example 4: Create a document in code-behind__
 
-{{region radrichtextbox-features-document-elements-raddocument_5}}
+```C#
     RadDocument document = new RadDocument();
     Section section = new Section();
 
@@ -168,11 +161,8 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
     document.Sections.Add(section);
 
     this.radRichTextBox.Document = document;
-{{endregion}}
-
-#### __[VB.NET] Example 4: Create a document in code-behind__
-
-{{region radrichtextbox-features-document-elements-raddocument_6}}
+```
+```VB.NET
 
     Dim document As New RadDocument()
     Dim section As New Section()
@@ -207,7 +197,7 @@ One of the common uses of __RadRichTextBox__ is to create a document programmati
     document.Sections.Add(section)
 
     Me.radRichTextBox.Document = document
-{{endregion}}
+```
 
 __The document created at run time__
 

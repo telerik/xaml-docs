@@ -37,9 +37,9 @@ Pasting is controlled similarly to [Copying]({%slug gridview-copying%}). The __C
 The __Pasting__ event allows you to cancel a paste operation, whereas the __PastingCellClipboardContent__ allows you to cancel pasting for the cell or replace the Clipboard value with your own. __Example 1__ shows how these events can be utilized.
          
 
-#### __[C#]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
+__Example 1: Utilizing Pasting and PastingCellClipboardContent events__
 
-{{region cs-gridview-pasting_0}}
+```C#
 	private void radGridView1_Pasting(object sender, GridViewClipboardEventArgs e)
 	{
 	    e.Cancel = true;
@@ -61,11 +61,8 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET]Example 1: Utilizing Pasting and PastingCellClipboardContent events__
-
-{{region vb-gridview-pasting_1}}
+```
+```VB.NET
 	Private Sub radGridView1_Pasting(sender As Object, e As GridViewClipboardEventArgs)
 	    e.Cancel = True
 	End Sub
@@ -81,7 +78,7 @@ The __Pasting__ event allows you to cancel a paste operation, whereas the __Past
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 As of version __R2 2013__:
         

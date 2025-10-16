@@ -26,15 +26,15 @@ First, you need to check:
 
 If you do not encounter any of the above-mentioned problems, then you probably use ElementName binding for that column, e.g.
 
-#### __[XAML] Example 1: Binding with ElementName__
+__Example 1: Binding with ElementName__
 
-{{region xaml-gridview-troubleshooting-blank-cells_0}}
+```XAML
 	<telerik:GridViewComboBoxColumn Header="Category"
 	DataMemberBinding="{Binding CategoryID}"
 	ItemsSource="{Binding Path=DataContext.Categories, ElementName=RootElement}"
 	DisplayMemberPath="CategoryName"
 	SelectedValueMemberPath="CategoryID" />
-{{endregion}}
+```
 
 This will not work, as the DataContext of the cell would not be the ViewModel, but the business object related to the row instead. We do not recommend such approach.
 
@@ -46,42 +46,39 @@ There are two ways of solving the issue :
 
 * Expose the ViewModel as a static resource on the page so that it can be easily accessible by the binding:
 
-#### __[XAML] Example 2: Exposing the ViewModel as a Static Resource__
+__Example 2: Exposing the ViewModel as a Static Resource__
 
-{{region xaml-gridview-troubleshooting-blank-cells_1}}
+```XAML
 	<UserControl.Resources>
 	    <local:MyViewModel x:Key="MyViewModel" />
 	</UserControl.Resources>
-{{endregion}}
+```
 
 * Set the ItemsSource of the ComboBox column:
 
-#### __[XAML] Example 3: Setting the ItemsSource of GridViewComboBox declaratively__
+__Example 3: Setting the ItemsSource of GridViewComboBox declaratively__
 
-{{region xaml-gridview-troubleshooting-blank-cells_2}}
+```XAML
 	<telerik:GridViewComboBoxColumn Header="Category"
 	DataMemberBinding="{Binding CategoryID}"
 	ItemsSource="{Binding Path=Categories, Source={StaticResource MyViewModel}}"
 	DisplayMemberPath="CategoryName"
 	SelectedValueMemberPath="CategoryID" />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting the ItemsSource of GridViewComboBoxColumn programmatically__
+__Example 4: Setting the ItemsSource of GridViewComboBoxColumn programmatically__
 
-{{region cs-gridview-troubleshooting-blank-cells_3}}
+```C#
 	private void gridView_DataLoaded(object sender, EventArgs e)
 	{
 	    (this.radGridView.Columns["Category"] as GridViewComboBoxColumn).ItemsSource = GetCategories();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting the ItemsSource of GridViewComboBoxColumn programmatically__
-
-{{region vb-gridview-troubleshooting-blank-cells_3}}
+```
+```VB.NET
 	Private Sub gridView_DataLoaded(ByVal sender As Object, ByVal e As EventArgs)
 	    TryCast(Me.radGridView.Columns("Category"), GridViewComboBoxColumn).ItemsSource = GetCategories()
 	End Sub
-{{endregion}}
+```
 
 ## Setting the IsLightWeightModeEnabled property
 

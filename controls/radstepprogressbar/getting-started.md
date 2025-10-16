@@ -37,14 +37,14 @@ You can find the required assemblies for each control from the suite in the [Con
 
 To start using the RadStepProgressBar control, you can just populate its __Items__ collection with RadStepProgressBarItem objects. Each __RadStepProgressBar__ will produce a step visual element with track bar rendered between the steps. The following example shows how to add 3 steps along with text to each step added via the __Content__ property of the RadStepProgressBarItem elements. In the example, the second step is selected.
 
-#### __[XAML]__
-{{region stepprogressbar-getting-started-0}}
+
+```XAML
 	<telerik:RadStepProgressBar SelectedIndex="1">
 		<telerik:RadStepProgressBarItem Content="Step 1" />
 		<telerik:RadStepProgressBarItem Content="Step 2" />
 		<telerik:RadStepProgressBarItem Content="Step 3" />
 	</telerik:RadStepProgressBar>
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

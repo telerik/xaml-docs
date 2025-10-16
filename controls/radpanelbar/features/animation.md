@@ -17,9 +17,9 @@ By default the RadPanelBar control's items are expanded and collapsed without an
 The animation is enabled by setting the **telerik:AnimationManager.IsAnimationEnabled** property to **True**.
 
 #### **[XAML] Example 1: Enable expand\collapse animation**
-{{region radpanelbar-features-animation_0}}
+```XAML
 	<telerik:RadPanelBar telerik:AnimationManager.IsAnimationEnabled="True">
-{{endregion}}
+```
 
 ## Change Animation Direction
 
@@ -27,7 +27,7 @@ The animation direction is controlled by the **Direction** property of the **Pan
 
 #### **[XAML] Example 2: Set expand\collapse directions**
 
-{{region radpanelbar-features-animation_1}}
+```XAML
 	<telerik:RadPanelBar xmlns:animationNavigation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls.Navigation"> 
 		<telerik:AnimationManager.AnimationSelector>
 			<telerik:AnimationSelector>
@@ -36,7 +36,7 @@ The animation direction is controlled by the **Direction** property of the **Pan
 			</telerik:AnimationSelector>
 		</telerik:AnimationManager.AnimationSelector>
 	</telerik:RadPanelBar> 
-{{endregion}}
+```
 
 ## Change Animation Speed
 
@@ -44,7 +44,7 @@ The speed of the expand\collapse is also customizable via the **AnimationManager
 
 #### **[XAML] Example 3: Change animation speed**
 
-{{region rad-panelbar-features-animation_2}}
+```XAML
 	<telerik:RadPanelBar xmlns:animationNavigation="clr-namespace:Telerik.Windows.Controls.Animation;assembly=Telerik.Windows.Controls.Navigation"> 
 		<telerik:AnimationManager.AnimationSelector>
 			<telerik:AnimationSelector>
@@ -53,6 +53,6 @@ The speed of the expand\collapse is also customizable via the **AnimationManager
 			</telerik:AnimationSelector>
 		</telerik:AnimationManager.AnimationSelector>
 	</telerik:RadPanelBar>
-{{endregion}}
+```
 
 The **SpeedRatio** property controls the duration. A value of 0.25 means that the animation will play a quarter (25%) of the default animation duration (for example, 15 of 60 seconds). A value of 1, means that the default time will be used. A value of 1.33 means that the animation will be played 33% faster than the default time.

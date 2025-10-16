@@ -30,24 +30,21 @@ You could subscribe for the __AddingNewDataItem__ event of RadGridView and speci
 
 For example if you have a collection of Orders when you want to add a new Order you could use the following approach:
         
-#### __C#__
 
-{{region cs-gridview-troubleshooting-cannot-insert-new-row_0}}
+
+```C#
 	private void ordersGrid_AddingNewDataItem(object sender, Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs e)
 	{
 	    e.NewObject = new Order() { CustomerID = myCustomerID };
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-troubleshooting-cannot-insert-new-row_1}}
+```
+```VB.NET
 	Private Sub ordersGrid_AddingNewDataItem(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewAddingNewEventArgs)
 	    e.NewObject = New Order() With {
 	     .CustomerID = myCustomerID
 	    }
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

@@ -26,14 +26,14 @@ res_type: kb
 
 The control (like RadDiagram, RadButton, etc.) is missing when referencing the following NuGet packages in the project.
 
-#### __[XML]__
-{{region kb-diagram-missing-when-referencing-telerik-nuget-dlls-0}}
+
+```XML
 	<packages>
 	  <package id="Telerik.Windows.Controls.Diagrams.for.Wpf" version="2019.1.220" targetFramework="net45" />
 	  <package id="Telerik.Windows.Controls.for.Wpf" version="2019.1.220" targetFramework="net45" />
 	  <package id="Telerik.Windows.Diagrams.Core.for.Wpf" version="2019.1.220" targetFramework="net45" />
 	</packages>
-{{endregion}}
+```
 
 > The *version* and the *targetFramework* are not relevant in this case. 
 
@@ -51,18 +51,18 @@ The NuGet packages with the Xaml dlls are named with ".Xaml" at the end of the p
 
 Reference the theme dll package. Below you can find the name of the package for the Fluent theme.
 
-#### __[XML]__
-{{region kb-diagram-missing-when-referencing-telerik-nuget-dlls-1}}
+
+```XML
 	<packages>
 		<!-- other packages here -->
 		<package id="Telerik.Windows.themes.Fluent.for.Wpf" version="2019.1.220" targetFramework="net45" />
 	</packages>
-{{endregion}}
+```
 
 Merge the corresponding resources as shown in the [Setting a Theme]({%slug styling-apperance-implicit-styles-overview%}) article. For example, to show RadDiagram, merge the following resources:
 
-#### __[XAML]__
-{{region kb-diagram-missing-when-referencing-telerik-nuget-dlls-2}}
+
+```XAML
 	<ResourceDictionary> 
 		<ResourceDictionary.MergedDictionaries> 
 			<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml"/> 
@@ -70,7 +70,7 @@ Merge the corresponding resources as shown in the [Setting a Theme]({%slug styli
 			<ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.Diagrams.xaml"/> 			
 		</ResourceDictionary.MergedDictionaries> 
 	</ResourceDictionary> 
-{{endregion}}
+```
 
 ## See Also
 * [Available Themes]({%slug common-styling-appearance-available-themes%})

@@ -14,9 +14,7 @@ The purpose of this tutorial is to show you how to read data from XML document a
 
 * Deserializing data. 
 
-
 * Reading data with Linq to XML. 
-
 
 * Reading data with __XMLReader__. 
 
@@ -24,9 +22,9 @@ The purpose of this tutorial is to show you how to read data from XML document a
 
 The most straight-forward way to read data from XML document is to deserialize it using the __XmlSerializer__ class. Here is a sample code showing how this can be achieved: 
 
-#### __C#__
 
-{{region consuming-data-using-xml_0}}
+
+```C#
 	private XmlNodeItemList RetrieveData()
 	{
 	    string xmlDocument = "/DataSource/XmlData.xml";
@@ -41,13 +39,8 @@ The most straight-forward way to read data from XML document is to deserialize i
 	    // 4. Deserialize the data
 	    XmlNodeItemList list = (XmlNodeItemList)serializer.Deserialize( reader );
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region consuming-data-using-xml_1}}
+```
+```VB.NET
 	Private Function RetrieveData() As XmlNodeItemList
 	    Dim xmlDocument As String = "/DataSource/XmlData.xml"
 	    ' 1. Get the resource stream for the file located in the application package.'
@@ -61,35 +54,26 @@ The most straight-forward way to read data from XML document is to deserialize i
 	    ' 4. Deserialize the data'
 	    Dim list As XmlNodeItemList = DirectCast(serializer.Deserialize(reader), XmlNodeItemList)
 	End Function
-	{{endregion}}
-
-
+```
 
 ## Reading Data With Linq to XML 
 
 Before reading you should load your XML file to an __XElement__ or __XDocument__ object. This can be done with the __Load()__ method. You can input from string, from __TextReader__, from __XMLReader__ and of course from file: 
 
-#### __C#__
 
-{{region consuming-data-using-xml_2}}
+
+```C#
 	XDocument myXML = XDocument.Load( "MyXML.xml" );
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region consuming-data-using-xml_3}}
+```
+```VB.NET
 	Dim myXML As XDocument = XDocument.Load("MyXML.xml")
-	{{endregion}}
-
-
+```
 
 On the next step you can use standard query operators to read the XML. Here is a sample code: 
 
-#### __C#__
 
-{{region consuming-data-using-xml_4}}
+
+```C#
 	List<Person> personsList =   
     ( from person in myXml.Descendants( "person" )   
       where (( string )person.Element( "address" ).Attribute( "country" )).Equals( "Bulgaria" )
@@ -103,27 +87,20 @@ On the next step you can use standard query operators to read the XML. Here is a
               Country = person.Element( "address" ).Attribute( "country" ).Value
           }  
       } ).ToList();
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region consuming-data-using-xml_5}}
+```
+```VB.NET
 	Dim personsList As List(Of Person) = (From person In myXml.Descendants("person") _
 	    Where DirectCast(person.Element("address").Attribute("country"), String).Equals("Bulgaria") _
 	    Select New Person()).ToList()
-	{{endregion}}
-
-
+```
 
 ## Reading Data with XMLReader 
 
 The following example navigates through a stream to determine the current node type, and then uses  __XmlWriter__ to output the  __XmlReader__ content. 
 
-#### __C#__
 
-{{region consuming-data-using-xml_6}}
+
+```C#
 	using (XmlReader reader = XmlReader.Create(new StringReader(xmlString)))
 	{
 	    XmlWriterSettings ws = new XmlWriterSettings();
@@ -155,13 +132,8 @@ The following example navigates through a stream to determine the current node t
 	        }
 	    }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region consuming-data-using-xml_7}}
+```
+```VB.NET
 	Using reader As XmlReader = XmlReader.Create(New StringReader(xmlString))
 	    Dim ws As New XmlWriterSettings()
 	    ws.Indent = True
@@ -190,9 +162,7 @@ The following example navigates through a stream to determine the current node t
 	        End While
 	    End Using
 	End Using
-	{{endregion}}
-
-
+```
 
 ## See Also
 

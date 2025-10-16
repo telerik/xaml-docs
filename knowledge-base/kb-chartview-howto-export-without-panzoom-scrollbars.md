@@ -26,8 +26,8 @@ How to remove the pan and zoom scrollbars when exporting the RadChartView.
 
 Set the __PanMode__ and __ZoomMode__ properties of the ChartPanAndZoomBehavior to __None__ and make sure the chart is redrawn. 
 
-#### __[C#] Example 1: Exporting the chart without scrollbars__
-{{region cs-kb-chartview-howto-export-without-panzoom-scrollbars-0}}
+__Example 1: Exporting the chart without scrollbars__
+```C#
 
 	var zoomModeCache = this.panZoomBehavior.ZoomMode;
 	var panModeCache = this.panZoomBehavior.PanMode;
@@ -49,7 +49,7 @@ Set the __PanMode__ and __ZoomMode__ properties of the ChartPanAndZoomBehavior t
 
 	this.panZoomBehavior.ZoomMode = zoomModeCache;
 	this.panZoomBehavior.PanMode = panModeCache;
-{{endregion}}
+```
 
 ## See Also
 

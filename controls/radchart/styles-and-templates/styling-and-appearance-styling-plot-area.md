@@ -24,19 +24,19 @@ After clicking the "OK" button, a style with target type __ClipPanel__ will be c
 
 Your next step is to set the created style to the PlotAreaStyle property of the ChartArea and delete the dummy control.
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-plot-area_0}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.PlotAreaStyle = this.Resources["ClipPanelStyle"] as Style;
-{{endregion}}
+```
 
 
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-plot-area_1}}
+
+```XAML
 	Me.radChart.DefaultView.ChartArea.PlotAreaStyle = TryCast(Me.Resources(&quot;ClipPanelStyle&quot;), Style)
-{{endregion}}
+```
 
 
 
@@ -46,9 +46,9 @@ Here is a snapshot of the sample result.
 
 Here is the final XAML for the __Style__:
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-plot-area_2}}
+
+```XAML
 	<Style x:Key="ClipPanelStyle" TargetType="telerik:ClipPanel">
 	    <Setter Property="Background">
 	        <Setter.Value>
@@ -59,7 +59,7 @@ Here is the final XAML for the __Style__:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 

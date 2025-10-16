@@ -34,10 +34,10 @@ Subscribe to the `MouseWheel` event of the `RadCartesianChart` instance. In the 
 
 >important Do not handle the `PreviewMouseWheel` event as it will disable the zoom functionality of the control.
 
-#### __[C#] Subscribing to the MouseWheel event and setting the e.Handled property to True__
-{{region kb-chartview-mousewheel-scrollviewer-0}}
+__Subscribing to the MouseWheel event and setting the e.Handled property to True__
+```C#
     private void RadCartesianChart_MouseWheel(object sender, MouseWheelEventArgs e)
     {
         e.Handled = true;
     }
-{{endregion}}
+```

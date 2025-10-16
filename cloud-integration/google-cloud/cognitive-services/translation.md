@@ -16,8 +16,8 @@ In this article we are going to show you how to use Google's Translation API. Th
 
 Create a standard {{ site.framework_name }} application and add 2 [RadComboBoxes]({%slug radcombobox-getting-started%}), 2 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}). The RadComboBoxes will provide a choice for source and target language of the translation, the RadWaterMarkTextBoxes will hold the text that has to be translated and its translation in the chosen language. The RadButton will make a call to Google's Translation API through a Command.
 
-#### __[XAML] Example 1: Defining the view__
-{{region xaml-cloud-integration-cognitive-services-google-translation-0}}
+__Example 1: Defining the view__
+```XAML
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -43,7 +43,7 @@ Create a standard {{ site.framework_name }} application and add 2 [RadComboBoxes
 
         <telerik:RadButton Grid.Row="1" Grid.ColumnSpan="2" Content="Translate" Command="{Binding TranslateTextCommand}"  VerticalAlignment="Top" HorizontalAlignment="Center"/>
     </Grid>
-{{endregion}}
+```
 
 ## Step 2: Install the NuGet package
 
@@ -55,8 +55,8 @@ Open the NuGet Package Manager and install the **Google.Cloud.Translation.V2** p
 
 The next step is to create the ViewModel. It will need a [TranslationClient](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Translation.V2/api/Google.Cloud.Translation.V2.TranslationClient.html) object which will be used for calling the Translation API. We also need to implement the command that will call the Translation API via the TranslationClient. 
 
-#### __[C#] Example 2: Defining the ViewModel__
-{{region cs-cloud-integration-cognitive-services-google-translation-1}}
+__Example 2: Defining the ViewModel__
+```C#
     public class ViewModel : ViewModelBase
     {
         TranslationClient client = null;
@@ -154,10 +154,8 @@ The next step is to create the ViewModel. It will need a [TranslationClient](htt
             this.TranslatedLanguageText = client.TranslateText(this.SourceLanguageText, this.TargetLanguageCode, sourceLanguage : this.SourceLanguageCode).TranslatedText;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the ViewModel__
-{{region vb-cloud-integration-cognitive-services-google-translation-2}}
+```
+```VB.NET
     Public Class ViewModel
 	Inherits ViewModelBase
 
@@ -248,7 +246,7 @@ The next step is to create the ViewModel. It will need a [TranslationClient](htt
 			Me.TranslatedLanguageText = client.TranslateText(Me.SourceLanguageText, Me.TargetLanguageCode, sourceLanguage :=Me.SourceLanguageCode).TranslatedText
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Note that the ItemsSource of the RadComboBoxes is a list of [Language](https://googlecloudplatform.github.io/google-cloud-dotnet/docs/Google.Cloud.Translation.V2/api/Google.Cloud.Translation.V2.Language.html) objects returned from the **ListLanguages** method of the TranslationClient. The Language objects have two important properties: Name and Code. The Name property is used as the value for the **DisplayMemberPath** property of the RadComboBoxes. The Code property on the other hand is stored in the SourceLanguageCode and TargetLanguageCode properties which are passed as parameters to the TranslateText method of the TranslationClient.
 
@@ -256,26 +254,23 @@ Note that the ItemsSource of the RadComboBoxes is a list of [Language](https://g
 
 All that is left is to set the DataContext to the ViewModel.
 
-#### __[C#] Example 3: Set the DataContext__
+__Example 3: Set the DataContext__
 
-{{region cs-cloud-integration-cognitive-services-google-translation-3}}
+```C#
     public MainWindow()
 	{
 		InitializeComponent();
 
 		this.DataContext = new ViewModel();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Set the DataContext__
-
-{{region vb-cloud-integration-cognitive-services-google-translation-4}}
+```
+```VB.NET
     Public Sub New()
 		InitializeComponent()
 
 		Me.DataContext = New ViewModel()
 	End Sub
-{{endregion}}
+```
 
 #### Figure 1: Result from example after translation in the Office2016 theme
 

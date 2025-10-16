@@ -16,8 +16,8 @@ To populate the __RadDiagramShape__ with custom connectors in MVVM scenario you 
 
 To implement this scenario you can create a collection which holds the custom connectors in your view model.
 
-#### __[C#] Example 1: Creating collection with custom connectors__
-{{region raddiagram-using-custom-connectors-in-mvvm-0}}
+__Example 1: Creating collection with custom connectors__
+```C#
 	public class ConnectorProxy
 	{
 		public string Name { get; set; }
@@ -54,12 +54,12 @@ To implement this scenario you can create a collection which holds the custom co
 			this.AddNode(shape1);
 		}
 	}
-{{endregion}}
+```
 
 The next step is to create the attached property.
 
-#### __[C#] Example 2: Creating attached property__
-{{region raddiagram-using-custom-connectors-in-mvvm-1}}
+__Example 2: Creating attached property__
+```C#
 	public static class AttachedProperties
 	{
 		public static IEnumerable<ConnectorProxy> GetConnectors(DependencyObject obj)
@@ -91,13 +91,13 @@ The next step is to create the attached property.
 			}
 		}
 	}
-{{endregion}}
+```
 
 Finally, you can create an implicit style and bind the attached property to the custom collection and define a RadDiagram control in the view.
 
-#### __[C#] Example 3: Setting the attached property in XAML__
+__Example 3: Setting the attached property in XAML__
 
-{{region raddiagram-using-custom-connectors-in-mvvm-2}}
+```C#
 	<Window.Resources>
 		<local:MyGraphSource x:Key="Source"/>
 		<DataTemplate x:Key="contentTemplate">
@@ -114,7 +114,7 @@ Finally, you can create an implicit style and bind the attached property to the 
 								ConnectionTemplate="{StaticResource contentTemplate}">          
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Custom connectors in RadDiagramShape__
 ![Custom Connectos](images/raddiagram-howto-custom-connectors.PNG)

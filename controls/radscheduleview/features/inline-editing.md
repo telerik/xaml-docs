@@ -10,11 +10,7 @@ position: 10
 
 # Inline Editing
 
-RadScheduleView supports inline editing of the displayed appointment's subject. The purpose of this tutorial is to show you:	
-
-* [How to start, commit and cancel the inline process run-time](#how-to-start-commit-and-cancel-the-inline-process-run-time)
-
-* [How to enable\disable the inline editing behavior](#how-to-enabledisable-the-inline-editing-behavior)
+RadScheduleView supports inline editing of the displayed appointment's subject.
 
 ## How to start, commit and cancel the inline process run-time.
 
@@ -44,14 +40,10 @@ The RadScheduleView exposes a property __IsInlineEditingEnabled__ which allows y
 
 If you want to disable the inline editing behavior, you should set the __IsInlineEditingEnabled__ property to False.      	
 
-#### __XAML__
-
-{{region radscheduleview-features-inline-editing_0}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" IsInlineEditingEnabled="False"/>
-{{endregion}}
+```
 
-#### __C#__
-
-{{region radscheduleview-features-inline-editing_1}}
+```C#
 	scheduleView.IsInlineEditingEnabled = false;
-{{endregion}}
+```

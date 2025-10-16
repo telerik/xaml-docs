@@ -31,21 +31,21 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add `RadSvgImage` manually in XAML as demonstrated in the following example:
 
-#### __[XAML] Adding RadSvgImage in XAML__
-{{region radsvgimage-getting-started-0}}
+__Adding RadSvgImage in XAML__
+```XAML
     <telerik:RadSvgImage/>
-{{endregion}}
+```
 
 ## Displaying an SVG image
 
 To display an SVG image in the `RadSvgImage` control, you can set the `UriSource` property.
 
-#### __[XAML] Displaying an SVG image using the UriSource property__
-{{region radsvgimage-getting-started-1}}
+__Displaying an SVG image using the UriSource property__
+```XAML
     <telerik:RadSvgImage UriSource="MySVGImage.svg"
                          Width="128"
                          Height="128"/>
-{{endregion}}
+```
 
 __RadSvgImage with an SVG image__
 
@@ -57,12 +57,12 @@ __RadSvgImage with an SVG image__
 
 The `RadSvgImage` control provides the ability to use it as a markup extension, instead of defining it as a stand-alone component.
 
-#### __[XAML] RadSvgImage as a markup extension__
-{{region radsvgimage-getting-started-2}}
+__RadSvgImage as a markup extension__
+```XAML
     <Image Source="{telerik:RadSvgImageSource Source='MySVGImage.svg'}"
            Width="128"
            Height="128"/>
-{{endregion}}
+```
 
 __RadSvgImage as a markup extension__
 
@@ -72,15 +72,13 @@ __RadSvgImage as a markup extension__
 
 The `RadSvgImage` control provides the `XmlSource` property that allows you to set an xml-based string and display it.
 
-#### __[C#] Setting the XmlSource property__
-{{region radsvgimage-getting-started-3}}
+__Setting the XmlSource property__
+```C#
     this.svgImage.XmlSource = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg height=\"100\" width=\"100\">\r\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"black\" stroke-width=\"3\" fill=\"red\" />\r\n</svg>";
-{{endregion}}
-
-#### __[VB.NET] Setting the XmlSource property__
-{{region radsvgimage-getting-started-4}}
+```
+```VB.NET
     Me.svgImage.XmlSource = "<?xml version=""1.0"" encoding=""UTF-8"" standalone=""no""?>" & vbCrLf & "<svg height=""100"" width=""100"">" & vbCrLf & "  <circle cx=""50"" cy=""50"" r=""40"" stroke=""black"" stroke-width=""3"" fill=""red"" />" & vbCrLf & "</svg>"
-{{endregion}}
+```
 
 __RadSvgImage displaying an xml-based string__
 
@@ -90,13 +88,13 @@ __RadSvgImage displaying an xml-based string__
 
 The `RadSVGImage` component allows you to replace the fill color of the geometry that displays the SVG image. To do so, set the `OverrideColor` property.
 
-#### __[XAML] Setting the OverrideColor property__
-{{region radsvgimage-getting-started-5}}
+__Setting the OverrideColor property__
+```XAML
     <telerik:RadSvgImage UriSource="MySVGImage.svg"
                          OverrideColor="Red"
                          Width="128"
                          Height="128"/>
-{{endregion}}
+```
 
 __RadSvgImage with set OverrideColor__
 

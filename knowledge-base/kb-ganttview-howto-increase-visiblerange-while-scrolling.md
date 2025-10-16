@@ -28,8 +28,8 @@ How to achieve infinite horizontal scrolling in the TimeRuler part.
 
 Handle the __Loaded__ event of the RadGanttView and obtain a reference to the ScrollBar in the EventsPanel inside the RadGanttView. Then you can handle its __Scroll__ event and increase the __VisibleRange__ of the RadGanttView, if the __Value__ of the ScrollBar is approaching the __ExtentWidth__ of the EventsPanel. 
 
-#### __[C#]__
-{{region kb-ganttview-howto-increase-visiblerange-while-scrolling-0}}
+
+```C#
 	private LogicalCanvasPanel eventsPanel;
 
     private void RadGanttView_Loaded(object sender, RoutedEventArgs e)
@@ -51,7 +51,7 @@ Handle the __Loaded__ event of the RadGanttView and obtain a reference to the Sc
             this.ganttView.VisibleRange = new DateRange(currentVisibleRange.Start, currentVisibleRange.End.AddDays(50));
         }
     }
-{{endregion}}
+```
 
 ## See also
 

@@ -31,8 +31,8 @@ The series provider uses descriptor objects to define the type and visual appear
 
 The base __ChartSeriesDescriptor__ class is a generic descriptor that provides more flexibility because you can use it with all chart series. The descriptor doesn't expose value properties and it does not expect a specific type of series, so you can define all you need in its style.
 
-#### __[XAML] Example 1: A ChartSeriesDescriptor that describes a RangeSeries__
-{{region radchartview-features-chartseriesprovider_01}}
+__Example 1: A ChartSeriesDescriptor that describes a RangeSeries__
+```XAML
 	<telerik:ChartSeriesDescriptor ItemsSourcePath="MyDataPointsCollection">
 		<telerik:ChartSeriesDescriptor.Style>
 			<Style TargetType="telerik:RangeSeries">
@@ -42,7 +42,7 @@ The base __ChartSeriesDescriptor__ class is a generic descriptor that provides m
 			</Style>
 		</telerik:ChartSeriesDescriptor.Style>
 	</telerik:ChartSeriesDescriptor>
-{{endregion}}
+```
 
 The __TargetType__ of the descriptor determines the type of the series that will be created.
 
@@ -66,8 +66,8 @@ The following list describes the most important properties of __ChartSeriesDescr
 
 * __ChartDataSourceStyle__: A property of type __Style__ that gets or sets the style of the [ChartDataSource]({%slug radchartview-populating-with-data-chartdatasource%}) objects that are set as the ItemsSource of the created series. Through that style, you can set the properties of the ChartDataSource, which control the sampling logic as demonstrated in __Example 2__.
 
-#### __[XAML] Example 2: Setting the ChartDataSourceStyle property__
-{{region xaml-radchartview-features-chartseriesprovider_2}}
+__Example 2: Setting the ChartDataSourceStyle property__
+```XAML
 
     <telerik:CategoricalSeriesDescriptor>
 		<telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
@@ -76,7 +76,7 @@ The following list describes the most important properties of __ChartSeriesDescr
 			</Style>
 		</telerik:CategoricalSeriesDescriptor.ChartDataSourceStyle>
 	</telerik:CategoricalSeriesDescriptor>
-{{endregion}}
+```
 
 ### Type-Specific Properties
 
@@ -114,8 +114,8 @@ The event arguments are of type __ChartSeriesCreatedEventArgs__ and expose the f
 
 In the following example, the chart is populated by a collection of 3 items, thus creating 3 series. There is a CategoricalSeriesDescriptor with CollectionIndex=2 and a style with TargetType="LineSeries". This effectively means that there will be a LineSeries, populated by the third item in the collection. There is another CategoricalSeriesDescriptor, which is responsible for creating BarSeries for the rest of the items in the collection.        
 
-#### __[XAML] Example 3: A sample chart definition with its SeriesProvider set__
-{{region xaml-radchartview-features-chartseriesprovider_3}}
+__Example 3: A sample chart definition with its SeriesProvider set__
+```XAML
 	<telerik:RadCartesianChart Palette="Flower">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -144,10 +144,10 @@ In the following example, the chart is populated by a collection of 3 items, thu
 			</telerik:ChartSeriesProvider>
 		</telerik:RadCartesianChart.SeriesProvider>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
-#### __[C#] Example 4: The chart's view models set up__
-{{region cs-radchartview-features-chartseriesprovider_4}}
+__Example 4: The chart's view models set up__
+```C#
 	public class DataItem
     {
         public string Category { get; set; }
@@ -205,10 +205,8 @@ In the following example, the chart is populated by a collection of 3 items, thu
             };
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: A sample chart definition with its SeriesProvider set__
-{{region vb-radchartview-features-chartseriesprovider_04}}
+```
+```VB.NET
 	Public Class DataItem
 		Public Property Category() As String
 
@@ -291,7 +289,7 @@ In the following example, the chart is populated by a collection of 3 items, thu
 				}
 		End Sub
 	End Class
-{{endregion}}
+```
 
 #### __Figure 1: Dynamic number of series generated using SeriesProvider__
 ![Rad Chart View-chartseriesprovider-0](images/RadChartView-chartseriesprovider-0.png)

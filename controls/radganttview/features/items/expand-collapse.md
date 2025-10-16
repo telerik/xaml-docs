@@ -22,19 +22,15 @@ The next example demonstrates how to create a behavior that will collapsed only 
 
 1. Create a class that implements the __IInitialExpandBehavior__ interface:
 
-	#### __C#__
-
-	{{region cs-radganttview-features-items-expand-collapse-1}}
+	```C#
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
 		{
 		    //...
-	{{endregion}}
+	```
 
 1. Implement its __ShouldExpandItemByDefault()__ method by creating a condition that returns true if the __HierarchicalItem’s__ Level is above 0:
 
-	#### __C#__
-
-	{{region cs-radganttview-features-items-expand-collapse-2}}
+	```C#
 		public class CustomInitialExpandBehavior : IInitialExpandBehavior
 		{
 		    public bool ShouldExpandItemByDefault(Telerik.Windows.Core.HierarchicalItem item)
@@ -44,13 +40,11 @@ The next example demonstrates how to create a behavior that will collapsed only 
 		        return shouldExpand;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Declare the control in the xaml and set its __Columns__. The RadGanttView control should look like this:
 
-	#### __XAML__
-
-	{{region xaml-radganttview-features-items-expand-collapse-1}}
+	```XAML
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
 		                      VisibleRange="{Binding VisibleTime}">
 		    <telerik:RadGanttView.Columns>
@@ -59,13 +53,11 @@ The next example demonstrates how to create a behavior that will collapsed only 
 		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="130"/>
 		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 1. Finally you will need to set the __InitialExpandBehavior__ of the RadGanttView control to the newly created CustomInitialExpandBehavior:
 
-	#### __XAML__
-
-	{{region xaml-radganttview-features-items-expand-collapse-2}}
+	```XAML
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
 		  VisibleRange="{Binding VisibleTime}"
 		  InitialExpandBehavior="{StaticResource CustomInitialExpandBehavior}">
@@ -75,7 +67,7 @@ The next example demonstrates how to create a behavior that will collapsed only 
 		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="130"/>
 		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 The next screenshots show the final result. At startup the lowers level (Big Iteration) task is collapsed while all of its inner tasks (Iteration 1, Iteration 2) are expanded:
 
@@ -89,25 +81,21 @@ In the RadGanttView control there is a built-in __ExpandCollapseService__ that c
 
 The next example will enhance the previous example by adding two button one for expanding the “Big Iteration” task and one that collapses it.  
 
-* First you will need to declare the RadGanttView control and populate it with some sample data. We are going to use the previously explained in the [“Custom InitialExpandBehavior”](#----------custom-initialexpandbehavior------) section example.
+* First you will need to declare the RadGanttView control and populate it with some sample data. We are going to use the previously explained in the [“Custom InitialExpandBehavior”](#custom-initialexpandbehavior) section example.
 
 * Add two buttons and declare their Click events:
 
-#### __XAML__
-
-{{region xaml-radganttview-features-items-expand-collapse-3}}
+```XAML
 	<StackPanel Orientation="Horizontal">
 	    <TextBlock Text="Expand/Collapse Tasks with the use of the code behind:" Margin="10 0 0 20" VerticalAlignment="Center"/>
 	    <Button Content="Expand Big Iteration Task" x:Name="ExpandButton" Click="ExpandButton_Click" Margin="10 0 10 20"/>
 	    <Button Content="Collapse Big Iteration Task" x:Name="CollapseButton" Click="CollapseButton_Click" Margin="10 0 10 20"/>
 	</StackPanel>
-{{endregion}}
+```
 
 * In the Click events of the two buttons call the __ExpandItem()__ and __CollapseItem()__ methods of the built-in __ExpandCollapseService__ to expand and collapse the first task (the Big Iteration task).
 
-#### __C#__
-
-{{region cs-radganttview-features-items-expand-collapse-3}}
+```C#
 	private void ExpandButton_Click(object sender, RoutedEventArgs e)
 	{
 	    var firstTask = (this.GanttView.TasksSource as IList<GanttTask>)[0];
@@ -119,7 +107,7 @@ The next example will enhance the previous example by adding two button one for 
 	    var firstTask = (this.GanttView.TasksSource as IList<GanttTask>)[0];
 	    this.GanttView.ExpandCollapseService.CollapseItem(firstTask);
 	}
-{{endregion}}
+```
 
 The next screenshots show the final result:
 
@@ -131,10 +119,11 @@ The next screenshots show the final result:
 
 The expand state of the tasks is held by the `HierarchicalCollectionAdapter` of the `RadGantView`'s `ExpandCollapseService`. The adapter exposes a method named `GetItemWrapperByItemKey` which returns a `HierarchicalItem` object, which has a `IsExpanded` property. 
 
-#### __[C#] Getting the expanded state of GanttTask via the corresponding HierarchicalItem__  
-{{region cs-radganttview-features-items-expand-collapse-4}}
+__Getting the expanded state of GanttTask via the corresponding HierarchicalItem__  
+
+```C#
 	GanttTask task = myTasksSource[0];
 	HierarchicalItem hierarchicalItem = this.ganttView.ExpandCollapseService.HierarchicalCollectionAdapter.GetItemWrapperByItemKey(task);
  	bool isTaskExpanded = hierarchicalItem.IsExpanded;
-{{endregion}}
+```
 

@@ -12,11 +12,11 @@ position: 0
 
 To activate the __RadBusyIndicator__ control you have to set its __IsBusy__ boolean property to __True__. 
 
-#### __[XAML] Setting the IsBusy property__
+__Setting the IsBusy property__
 
-{{region xaml-radbusyindicator-features-enabling-the-indicator_0}}
+```XAML
 	<telerik:RadBusyIndicator IsBusy="True"/>
-{{endregion}}
+```
 
 You can data bind this property in any way that suits your custom logic. The __RadBusyIndicator__ control will be visible only when the __IsBusy__ property is set to __True__.
 

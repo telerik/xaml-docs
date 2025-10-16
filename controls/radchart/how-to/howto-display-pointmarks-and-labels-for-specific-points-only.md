@@ -29,9 +29,9 @@ This help article will show you how to show PointMarks and Labels for specific p
 
 
 
-#### __C#__
 
-{{region cs-radchart-howto-pointmarks-and-labels-for-specific-points-only_0}}
+
+```C#
 	public class Data : INotifyPropertyChanged
 	{
 	  private DateTime _date;
@@ -99,13 +99,8 @@ This help article will show you how to show PointMarks and Labels for specific p
 	     this.PointMarkVisibility = Visibility.Visible;
 	   }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-howto-pointmarks-and-labels-for-specific-points-only_1}}
+```
+```VB.NET
 	Public Class Data
 	    Implements INotifyPropertyChanged
 	    Private _date As Date
@@ -167,7 +162,7 @@ This help article will show you how to show PointMarks and Labels for specific p
 	
 	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 
 
@@ -175,19 +170,19 @@ Note the *UpdatePointMarkVisibility *method called in the constructor of the cla
 
 Add a new chart declaration to your XAML:
 
-#### __XAML__
 
-{{region xaml-radchart-howto-pointmarks-and-labels-for-specific-points-only_4}}
+
+```XAML
 	<telerik:RadChart x:Name="chart"/>
-{{endregion}}
+```
 
 
 
 * Add the PointMark Style between the UserControl starting and ending tag. Add *Visibility *Property databound to *DataItem.PointMarksVisibility* property of the class. Here is how the Style should look like:
 
-#### __XAML__
 
-{{region xaml-radchart-howto-pointmarks-and-labels-for-specific-points-only_5}}
+
+```XAML
 	<Style x:Key="MyPointMark_Style" TargetType="telerik:PointMark">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -210,15 +205,15 @@ Add a new chart declaration to your XAML:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
 * The chart will be built in the code-behind and White Space String will be assigned to every point's Label if it's Day is not dividable by 5:
 
-#### __C#__
 
-{{region cs-radchart-howto-pointmarks-and-labels-for-specific-points-only_2}}
+
+```C#
 	List<Data> exportData = new List<Data>();
 	DateTime baseDate = new DateTime(2011, 1, 1);
 	Random r = new Random();
@@ -257,13 +252,8 @@ Add a new chart declaration to your XAML:
 	        }
 	    }
 	};
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-howto-pointmarks-and-labels-for-specific-points-only_3}}
+```
+```VB.NET
 	Dim exportData As New List(Of Data)()
 	Dim baseDate As New Date(2011, 1, 1)
 	Dim r As New Random()
@@ -297,7 +287,7 @@ Add a new chart declaration to your XAML:
 	                                    Next point
 	                                End If
 	                            End Sub
-{{endregion}}
+```
 
 
 

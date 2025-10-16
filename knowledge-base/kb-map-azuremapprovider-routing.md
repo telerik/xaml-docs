@@ -30,8 +30,8 @@ Implementing routing functionality using the Azure Maps services.
 
 To achieve routing functionality using the Azure Maps services, you can create a new helper class. It will create a URL request for the Microsoft's routing and geocoding APIs and use the response to display the route on the RadMap control. In order to receive valid responses from the routing and geocoding APIs, you will need to pass a valid location and subscription key to the request URL string.
 
-#### __[C#] Implementing a helper class for retrieving the route__
-{{region kb-map-azuremapprovider-routing-0}}
+__Implementing a helper class for retrieving the route__
+```C#
     internal class AzureRoutingHelper
     {
         private static HttpClient httpClient = new HttpClient();
@@ -127,10 +127,8 @@ To achieve routing functionality using the Azure Maps services, you can create a
         public double Latitude { get; set; }
         public double Longitude { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Implementing a helper class for retrieving the route__
-{{region kb-map-azuremapprovider-routing-1}}
+```
+```VB.NET
     Friend Class AzureRoutingHelper
         Private Shared httpClient As HttpClient = New HttpClient()
 
@@ -204,12 +202,12 @@ To achieve routing functionality using the Azure Maps services, you can create a
         Public Property Latitude As Double
         Public Property Longitude As Double
     End Class
-{{endregion}}
+```
 
 Additionally, you can follow the next example, which showcases how to utilize the created `AzureRoutingHelper` class and its logic.
 
-#### __[XAML] Defining the RadMap and the UI elements for the routing logic__
-{{region kb-map-azuremapprovider-routing-2}}
+__Defining the RadMap and the UI elements for the routing logic__
+```XAML
 <Grid x:Name="LayoutRoot" Margin="8">
     <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
@@ -245,10 +243,10 @@ Additionally, you can follow the next example, which showcases how to utilize th
         <telerik:VisualizationLayer x:Name="RouteLayer" />
     </telerik:RadMap>
 </Grid>
-{{endregion}}
+```
 
-#### __[C#] Utilizing the AzureRoutingHelper class__
-{{region kb-map-azuremapprovider-routing-3}}
+__Utilizing the AzureRoutingHelper class__
+```C#
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -316,10 +314,8 @@ Additionally, you can follow the next example, which showcases how to utilize th
             return routeLine;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Utilizing the AzureRoutingHelper class__
-{{region kb-map-azuremapprovider-routing-4}}
+```
+```VB.NET
     Public Partial Class MainWindow
         Inherits Window
 
@@ -373,7 +369,7 @@ Additionally, you can follow the next example, which showcases how to utilize th
             Return routeLine
         End Function
     End Class
-{{endregion}}
+```
 
 __RadMap with AzureMapProvider and routing functionality__
 

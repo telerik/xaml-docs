@@ -14,10 +14,10 @@ __RadColorEditor’s UnifiedColor__ property represents an entity that exposes a
 
 If the __RadColorEditor SelectedColor__ is set to __Magenta__, the __UnifiedColor__ property will expose the value of the __Magenta__ color in each color model. 
 
-#### __XAML__
-{{region radcoloreditor-features-unified-color-0}}
+
+```XAML
 	<telerik:RadColorEditor x:Name="colorEditor1" SelectedColor="Magenta" />
-{{endregion}}
+```
 
 ![radcoloreditor-features-unified-color](images/radcoloreditor-features-unified-color.png)
 

@@ -10,20 +10,7 @@ position: 3
 
 # Getting Started with {{ site.framework_name }} Menu
 
-This tutorial will walk you through the creation of a `RadMenu` and will show you how to:
-
-* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
-* [Adding Assembly References Manually](#adding-assembly-references-manually)
-
-* [Adding RadMenu](#adding-radmenu)
-
-* [Adding Menu Items](#adding-menu-items)
-
-* [Populating the RadMenu with Data](#populating-the-radmenu-with-data)
-
-* [Styles and Templates](#styles-and-templates)
-
-* [Working with the RadMenu](#work-with-the-radmenu)
+This tutorial will walk you through the creation of a `RadMenu`.
 
 >tip Before reading this tutorial you should get familiar with the [Visual Structure]({%slug radmenu-visual-structure%}) of the `RadMenu` control.
 
@@ -47,13 +34,13 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can include the control in your application by either dragging it from the toolbox in Visual Studio, or by manually declaring it. Below is an example of how to include the RadMenu control in XAML code:
 
-#### __[XAML] Adding RadMenu__
+__Adding RadMenu__
 
-{{region xaml-radmenu-getting-started_0}}
+```XAML
 	<Grid>
 	    <telerik:RadMenu/>
 	</Grid>
-{{endregion}}
+```
 
 If you run your application now you will see an empty RadMenu that contains no items.
 
@@ -61,16 +48,16 @@ If you run your application now you will see an empty RadMenu that contains no i
 
 You can populate the control by either adding the RadMenuItems to its `Items` collection, or by utilizing its data binding support.
 
-#### __[XAML] Adding RadMenuItems__
+__Adding RadMenuItems__
 
-{{region xaml-radmenu-getting-started_1}}
+```XAML
 	<telerik:RadMenu>
 	    <telerik:RadMenuItem Header="Item 1">
 	        <telerik:RadMenuItem Header="SubItem 1" />
 	        <telerik:RadMenuItem Header="SubItem 2" />
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 __RadMenu with added items__
 
@@ -137,8 +124,8 @@ To change the theme, you can follow the steps below:
 
 The next example demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Merge the ResourceDictionaries__  
-{{region radmenu-getting-started_6}}
+__Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -148,7 +135,7 @@ The next example demonstrates how to merge the ResourceDictionaries so that they
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

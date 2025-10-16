@@ -14,8 +14,8 @@ This article will go through the customization of the RadTreeListView to look a 
 
 Those of you who are already familiar with the visual structure of the __RadTreeListView__ control may say that it is much more than a hierarchical control. They would be right, this control derives from our __RadGridView__ and inherits some of its functionalities along with its column generation algorithms. Of course, you may not need all that information and functionality, this is why the __RadTreeListView__ exposes properties that can be used to customize the control. You can practically hide everything that makes it look like __RadGridView__. The following style changes the look of the control and styles it like our __RadTreeView__ control.
 	
-#### __[XAML] Example 1: Setting RadTreeListView properties__	
-{{region xaml-radtreeview-howto-cutomize-radtreelistview_0}}
+__Example 1: Setting RadTreeListView properties__	
+```XAML
 	<Style TargetType="telerik:RadTreeListView" BasedOn="{StaticResource RadTreeListViewStyle}">
 		<Setter Property="VerticalGridLinesBrush" Value="{x:Null}"/>
 		<Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -34,7 +34,7 @@ Those of you who are already familiar with the visual structure of the __RadTree
 		<Setter Property="BorderBrush" Value="{x:Null}"/>
 		<Setter Property="IsSynchronizedWithCurrentItem" Value="False" />
 	 </Style>
-{{endregion}}
+```
 
 > NoXaml binaries in combination with implicit styles are used for the example in this article. More on the topic is available {% if site.site_name == 'WPF' %}[here](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html){% endif %}{% if site.site_name == 'Silverlight' %}[here](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html){% endif %}
 
@@ -46,8 +46,8 @@ Now, when you have the initial look, you can proceed with visualizing some data.
 
 The League has a collection of teams. Each Team has a collection of players that is called __Items__ which does not have any further collections. __Example 2__ demonstrates the data structure.
 
-#### __[C#] Example 2: Setting data structure__
-{{region csharp-radtreeview-howto-cutomize-radtreelistview_1}}
+__Example 2: Setting data structure__
+```C#
 	public class League
 	{
 		public string Name { get; set; }
@@ -72,12 +72,12 @@ The League has a collection of teams. Each Team has a collection of players that
 	{
 		public string Name { get; set; }
 	}	
-{{endregion}}
+```
 
 Now we can go ahead and create our hierarchical data.
 
-#### __[C#] Example 3: Creating hierarchical data__
-{{region csharp-radtreeview-howto-cutomize-radtreelistview_2}}
+__Example 3: Creating hierarchical data__
+```C#
 	public partial class MainWindow : Window
 	{
 		public ObservableCollection<League> Data { get; set; }
@@ -109,13 +109,13 @@ Now we can go ahead and create our hierarchical data.
 			return result;
 		}
 	}
-{{endregion}}
+```
 
 The __RadTreeListView__ control is designed to use __TreeListViewTableDefinition__ to visualize its items. You can use the __TreeListViewTableDefinition.ItemsSource__ property to recreate the requested 
 hierarchy.   
     
-#### __[XAML] Example 2: Setting TreeListViewTableDefinition__
-{{region xaml-radtreeview-howto-cutomize-radtreelistview_3}}
+__Example 2: Setting TreeListViewTableDefinition__
+```XAML
 	<telerik:RadTreeListView ItemsSource="{Binding Data}" AutoGenerateColumns="False">            
 		<telerik:RadTreeListView.ChildTableDefinitions>
 			<telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}"/>
@@ -124,7 +124,7 @@ hierarchy.
 			<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
 		</telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 >You should keep in mind that the __RadTreeListView__ expects that the collection holding the children of each level is always named the same way.
 

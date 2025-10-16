@@ -53,7 +53,7 @@ To manually download and install a license key for Telerik UI for WPF:
 
 Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
 
-When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the product. If your project doesn’t use NuGet packages, see [Adding a License Key to Projects without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
+When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the product. If your project doesn’t use NuGet packages, see the next section in this article.
 
 > When using the Telerik UI for WPF components in a __class library__, the `Telerik.Licensing` package should be installed also in the project that consumes the class library (the main project).
 
@@ -71,19 +71,19 @@ If you add the Telerik components to your project by referencing the Telerik ass
 
 1. Add the `TelerikLicense.cs` file to your project.
 
-#### __[C#] TelerikLicense.cs file content example__
-{{region installing-license-key-0}}
+__TelerikLicense.cs file content example__
+```C#
 	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-wpf-script-key-here")]
-{{endregion}}
+```
 
 In case you use multiple Telerik products in the same application (e.g. Wpf, WinForms, Reporting), you will need to add the license script keys for all products.
 
-#### __[C#] TelerikLicense.cs file content with multiple script keys__
-{{region installing-license-key-1}}
+__TelerikLicense.cs file content with multiple script keys__
+```C#
 	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WPF-script-key-here")]
  	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")]
   	[assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")]
-{{endregion}}
+```
 
 >Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
 

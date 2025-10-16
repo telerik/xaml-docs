@@ -27,9 +27,7 @@ First add references to the assemblies __Telerik.Windows.Controls__, __Telerik.W
 
 Then create a new class __EditableTabHeaderControl__ that derives from __ContentControl__ and leave it empty for now.
 
-#### __C#__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_0}}
+```C#
 	public class EditableTabHeaderControl : ContentControl
 	{
 	 static EditableTabHeaderControl()
@@ -37,28 +35,19 @@ Then create a new class __EditableTabHeaderControl__ that derives from __Content
 	  DefaultStyleKeyProperty.OverrideMetadata(typeof(EditableTabHeaderControl), new FrameworkPropertyMetadata(typeof(EditableTabHeaderControl)));
 	 }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_1}}
+```
+```VB.NET
 	Public Class EditableTabHeaderControl
 		Inherits ContentControl
 		Shared Sub New()
 			DefaultStyleKeyProperty.OverrideMetadata(GetType(EditableTabHeaderControl), New FrameworkPropertyMetadata(GetType(EditableTabHeaderControl)))
 		End Sub
 	End Class
-	{{endregion}}
-
-
+```
 
 Create a __new style__for the __EditableTabHeader__ control.
 
-#### __XAML__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_2}}
+```XAML
 	<Style TargetType="{x:Type example:EditableTabHeaderControl}">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -82,17 +71,13 @@ Create a __new style__for the __EditableTabHeader__ control.
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-	{{endregion}}
-
-
+```
 
 In the XAML code above a new style is created for the __EditableTabHeaderControl__ and this style will be the default template for that control. The template is made of __ContentPresenter__, __TextBox__ and a trigger for __EditMode__. When the control is in __EditMode__ the content presenter control is hidden and the text box is made visible, while in the __ViewMode__ the control will have its default appearance.
 
 Add the following implementation to the code behind of the __EditableTabHeaderControl__ class.
 
-#### __C#__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_3}}
+```C#
 	[TemplatePart(Name = "PART_EditArea", Type = typeof(TextBox))]
 	public class EditableTabHeaderControl : ContentControl
 	{
@@ -133,13 +118,8 @@ Add the following implementation to the code behind of the __EditableTabHeaderCo
 	  }
 	 }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_4}}
+```
+```VB.NET
     <TemplatePart(Name:="PART_EditArea", Type:=GetType(TextBox))>
     Public Class EditableTabHeaderControl
         Inherits ContentControl
@@ -179,9 +159,7 @@ Add the following implementation to the code behind of the __EditableTabHeaderCo
         End Sub
 
     End Class
-	{{endregion}}
-
-
+```
 
 The major changes in the implementation of the __EditableTabHeaderControl__ are:
 
@@ -197,19 +175,13 @@ The major changes in the implementation of the __EditableTabHeaderControl__ are:
 
 Add a new __RadTabControl__ declaration.
 
-#### __XAML__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_5}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl"/>
-	{{endregion}}
-
-
+```
 
 [Populate]({%slug radtabcontrol-populating-binding-to-collection%}) the RadTabControl with some data (tabs):
 
-#### __C#__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_6}}
+```C#
 	public partial class MainWindow : Window
 	{
 	 public MainWindow()
@@ -258,13 +230,8 @@ Add a new __RadTabControl__ declaration.
 	  }
 	 }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_7}}
+```
+```VB.NET
     Imports Telerik.Windows.Controls
 
     Class MainWindow
@@ -309,15 +276,11 @@ Add a new __RadTabControl__ declaration.
         End Property
 
     End Class
-	{{endregion}}
-
-
+```
 
 Define the __RadTabControl__ __ItemTemplate__ and __ContentTemplate__ properties:
 
-#### __XAML__
-
-{{region radtabcontrol-how-to-make-the-tab-headers-editable-wpf_8}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl">
 	    <telerik:RadTabControl.ContentTemplate>
 	        <!--The Content Template:-->
@@ -334,9 +297,6 @@ Define the __RadTabControl__ __ItemTemplate__ and __ContentTemplate__ properties
 	        </DataTemplate>
 	    </telerik:RadTabControl.ItemTemplate>
 	</telerik:RadTabControl>
-	{{endregion}}
-
-
+```
 
 Run your demo. Double click on the Tab's __Header__ will switch them in __Edit__ __Mode__. Loosing the focus (pressing the "tab" key) will switch the Tab's Header in its default (__ViewMode__) appearance.
-        

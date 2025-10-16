@@ -32,8 +32,8 @@ Allow entering only numeric input in the DataPagerTextBox that shows the current
 
 Subscribe to the __Loaded__ event of RadDataPager in order to get the DataPagerTextBox control representing the page index input. Then subscribe to the __PreviewTextInput__ event of DataPagerTextBox. In the handler, you can check the current Text and if there is a non-numeric value, set the __Handled__ property of the event arguments to True. This will cancel the input.
 
-#### __[C#]__
-{{region kb-allow-only-numbers-in-datapagertextbox-0}}
+
+```C#
 	private void RadDataPager_Loaded(object sender, RoutedEventArgs e)
 	{
 		var dataPagerTextBox = this.radDataPager.FindChildByType<DataPagerTextBox>();
@@ -45,4 +45,4 @@ Subscribe to the __Loaded__ event of RadDataPager in order to get the DataPagerT
 		Regex regex = new Regex("[^0-9]+");
 		e.Handled = regex.IsMatch(e.Text);
 	}
-{{endregion}}
+```

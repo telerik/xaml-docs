@@ -79,7 +79,7 @@ The cod from **Example 1** shows the members that should be implemented when inh
 
 #### **[C#] Example 1: Members of IPdfFilter**
 
-{{region radpdfviewer-customize-pdf-rendering_0}}
+```C#
 	public class CustomFilter : IPdfFilter
 	{
 	    public byte[] Encode(PdfObject encodedObject, byte[] inputData)
@@ -94,14 +94,14 @@ The cod from **Example 1** shows the members that should be implemented when inh
 	
 	    public string Name { get { return PdfFilterNames.CCITTFaxDecode; } }
 	}
-{{endregion}}
+```
 
 
 You should also register the filter as demonstrated in **Example 2**:{% if site.site_name == 'Silverlight' %}
 
 #### **[C#] Example 2: Register a custom filter**
 
-{{region radpdfviewer-customize-pdf-rendering_1}}
+```C#
 	private PDFAndTiffFilter _filter;
 	
 	public MainPage()
@@ -110,13 +110,13 @@ You should also register the filter as demonstrated in **Example 2**:{% if site.
 	    FiltersManager.RegisterFilter(_filter);
 	    InitializeComponent();
 	}
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
 #### **[C#] Example 2: Register a custom filter**
 
-{{region radpdfviewer-customize-pdf-rendering_2}}
+```C#
 	private PDFAndTiffFilter _filter;
 	
 	public MainWindow()
@@ -125,7 +125,7 @@ You should also register the filter as demonstrated in **Example 2**:{% if site.
 	    FiltersManager.RegisterFilter(_filter);
 	    InitializeComponent();
 	}
-{{endregion}}
+```
 
 {% endif %}
 

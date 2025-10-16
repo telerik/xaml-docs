@@ -34,8 +34,8 @@ This article will show you how to clear the search value every time the clear bu
 
 1. Subscribe to the `Loaded` event of RadGridView and retrieve the search-as-you-type TextBox element and cache it. Then, retrieve the RadButton control used for clearing the input. This can be done using the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) extension method.
 
-    #### __[C#] Retrieve the search-as-you-type TextBox and clear RadButton elements__
-    {{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-0}}
+    __Retrieve the search-as-you-type TextBox and clear RadButton elements__
+    ```C#
 		public partial class MainWindow : Window
 		{
 		    private TextBox searchTextBox;
@@ -60,10 +60,8 @@ This article will show you how to clear the search value every time the clear bu
 		        }
 		    }
 		}
-    {{endregion}}
-
-    #### __[VB.NET] Retrieve the search-as-you-type TextBox and clear RadButton elements__
-    {{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-1}}
+    ```
+	```VB.NET
 		Public Partial Class MainWindow
 		    Inherits Window
 		    Private searchTextBox As TextBox
@@ -85,12 +83,12 @@ This article will show you how to clear the search value every time the clear bu
 		        End If
 		    End Sub
 		End Class
-    {{endregion}}
+    ```
 
 2.	Set the `Command` property of the RadButton element to __null__ and subscribe to its `Click` event. In the added event handler, clear the Text property of the cached `TextBox`, as well as the `SearchText` property of its `DataContext`. Its DataContext will be of the type `SearchViewModel`.
 
-	#### __[C#] Subscribe to the Click event of the clear RadButton__
-	{{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-2}}
+	__Subscribe to the Click event of the clear RadButton__
+	```C#
 		clearButton.Command = null;
         clearButton.Click += ClearButton_Click;
 
@@ -99,10 +97,8 @@ This article will show you how to clear the search value every time the clear bu
         	this.searchTextBox.Text = "";
         	((SearchViewModel)this.searchTextBox.DataContext).SearchText = "";
     	}
-	{{endregion}}
-
-	#### __[VB.NET] Subscribe to the Click event of the clear RadButton__
-	{{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-3}}
+	```
+	```VB.NET
 		clearButton.Command = Nothing
         clearButton.Click += AddressOf ClearButton_Click
 
@@ -110,12 +106,12 @@ This article will show you how to clear the search value every time the clear bu
         	searchTextBox.Text = ""
         	CType(searchTextBox.DataContext, SearchViewModel).SearchText = ""
     	End Sub
-	{{endregion}}
+	```
 
 3. Subscribe to the `LostKeyboardFocus` event of the search-as-you-type `TextBox`. In the added event handler, if clear RadButton is the new element that receives the focus, raise its Click event. 
 
-	#### __[C#] Subscribe to the LostKeyboardFocus event of the search-as-you-type TextBox__
-	{{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-4}}
+	__Subscribe to the LostKeyboardFocus event of the search-as-you-type TextBox__
+	```C#
 		this.searchTextBox.LostKeyboardFocus += SearchTextBox_LostKeyboardFocus;
 
 		private void SearchTextBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
@@ -128,10 +124,8 @@ This article will show you how to clear the search value every time the clear bu
     	        }
     	    }
     	}
-	{{endregion}}
-
-	#### __[VB.NET] Subscribe to the LostKeyboardFocus event of the search-as-you-type TextBox__
-	{{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-5}}
+	```
+	```VB.NET
 		Me.searchTextBox.LostKeyboardFocus += AddressOf SearchTextBox_LostKeyboardFocus
 
 		Private Sub SearchTextBox_LostKeyboardFocus(ByVal sender As Object, ByVal e As KeyboardFocusChangedEventArgs)
@@ -150,12 +144,11 @@ This article will show you how to clear the search value every time the clear bu
         	    Return value
         	End Function
     	End Class
-	{{endregion}}
+	```
 
 The full implementation of this solution is as follows:
 
-#### __[C#]__
-{{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-6}}
+```C#
 	public partial class MainWindow : Window
 	{
 	    private TextBox searchTextBox;
@@ -199,10 +192,8 @@ The full implementation of this solution is as follows:
 	        ((SearchViewModel)this.searchTextBox.DataContext).SearchText = "";
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-{{region kb-gridview-deferred-search-clear-button-clear-text-before-commit-7}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 	    Inherits Window
 
@@ -248,4 +239,4 @@ The full implementation of this solution is as follows:
 	        End Function
 	    End Class
 	End Class
-{{endregion}}
+```

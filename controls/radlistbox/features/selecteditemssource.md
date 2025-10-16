@@ -20,9 +20,9 @@ The following example will demonstrate how to bind the __SelectedItemsSource__ p
 
 First, you need to create a new business object named for example Item. Its structure is shown in the code-snippet below:
 
-#### __[C#]  Business object Item__
+__Business object Item__
 
-{{region cs-radlistbox-features-selecteditemssource-0}}
+```C#
 	public class Item
 	{
 		public Item(string name)
@@ -31,24 +31,24 @@ First, you need to create a new business object named for example Item. Its stru
 		}
 		public string Name { get; set; }
 	}
-{{endregion}}
+```
 
-#### __[VB]  Business object Item__
+__Business object Item__
 
-{{region vb-radlistbox-features-selecteditemssource-0}}
+```VB
 	Public Class Item
 	    Public Sub New(ByVal name As String)
 	        Me.Name = name
 	    End Sub
 	    Public Property Name() As String
 	End Class
-{{endregion}}
+```
 
 Next thing you have to do is to create a new class named ViewModel that inherits the Telerik __ViewModelBase__ abstract class – inside it initialize two collections with sample data. The first one will be for the __ItemsSource__ of __RadListBox__ while the second one will be the data source for the __SelectedItemsSource__ property:
 
-#### __[C#]  Creating the ViewModel__
+__Creating the ViewModel__
 
-{{region cs-radlistbox-features-selecteditemssource-1}}
+```C#
 	private ObservableCollection<Item> items;
 	private ObservableCollection<Item> selectedItemsSource;
 	public ViewModel()
@@ -95,11 +95,11 @@ Next thing you have to do is to create a new class named ViewModel that inherits
 		}
 		return result;
 	}
-{{endregion}}
+```
 
-#### __[VB]  Creating the ViewModel__
+__Creating the ViewModel__
 
-{{region vb-radlistbox-features-selecteditemssource-1}}
+```VB
 	Private items_Renamed As ObservableCollection(Of Item)
 	Private selectedItemsSource_Renamed As ObservableCollection(Of Item)
 	Public Sub New()
@@ -135,31 +135,31 @@ Next thing you have to do is to create a new class named ViewModel that inherits
 	    Next i
 	    Return result
 	End Function
-{{endregion}}
+```
 
 >important The __SelectedItemsSource__ and the __ItemsSource__ should be bound to collections of the same type of items.
 
 Next you should declare the ViewModel as DataContext in your XAML:
 
-#### __[XAML]  Set the ViewModel as DataContext__
+__Set the ViewModel as DataContext__
 
-{{region xaml-radlistbox-features-selecteditemssource-0}}
+```XAML
 	>
 	<UserControl.DataContext>
 	    <local:ViewModel/>
 	</UserControl.DataContext>
-{{endregion}}
+```
 
 Finally, all you need to do is to set both created collection of items to the __ItemsSource__ and __ListBoxSelectedItemsBehavior. SelectedItemsSource__:
 
-#### __[XAML]  Set the ItemsSource and SelectedItemsSource__
+__Set the ItemsSource and SelectedItemsSource__
 
-{{region xaml-radlistbox-features-selecteditemssource-1}}
+```XAML
 	<telerik:RadListBox x:Name="radListBox" ItemsSource="{Binding Items}"
 	                    DisplayMemberPath="Name"
 	                    SelectionMode="Multiple"
 	                    telerik:ListBoxSelectedItemsBehavior.SelectedItemsSource="{Binding SelectedItemsSource}"/>
-{{endregion}}
+```
 
 The final result is shown on the snapshot below:
 

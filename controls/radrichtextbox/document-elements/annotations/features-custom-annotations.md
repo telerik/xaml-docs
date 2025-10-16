@@ -31,8 +31,8 @@ The most common scenarios for the use of custom annotations is for associating s
 
 * Override the CreateNewElementInstance method and have it return an instance of your annotation range start/end in both classes. Override the required CopyContentFromOverride method as well. In most cases, it should be left empty.
 
-#### __[C#]__
-{{region radrichtextbox-features-document-elements-custom-annotations_0}}
+
+```C#
 	protected override DocumentElement CreateNewElementInstance()
 	{
 	    return new CustomRangeStart();
@@ -41,17 +41,17 @@ The most common scenarios for the use of custom annotations is for associating s
 	protected override void CopyContentFromOverride(DocumentElement fromElement)
 	{
 	}
-{{endregion}}
+```
 
 * Override the CreateRangeStartInstance in the RangeEnd class.
 
-#### __[C#]__
-{{region radrichtextbox-features-document-elements-custom-annotations_1}}
+
+```C#
 	protected override AnnotationRangeStart CreateRangeStartInstance()
 	{
 	    return new CustomRangeStart();
 	}
-{{endregion}}
+```
 
 At this point, you will have the basic functionality working and can continue to customize the behavior of the ranges, i.e. if it will be possible to edit the content in them, what will be the behavior when you hit backspace or delete, if it will be possible to copy the ranges, etc. 
 
@@ -62,14 +62,14 @@ The behavior of the annotations when edited, copied and deleted is determined by
 * `IsCopyable`&mdash;Specifies if the inline can be copied and pasted somewhere else in the document. The start and end must have the same value in order to have proper behavior. For example, BookmarkRangeStart and End are not copyable, while CommentRangeStart and End are copyable.
 * `CopyPropertiesFromOverride`&mdash;This method should be used when you have custom properties you would like to have copied. This should be done as follows:
 
-#### __[C#]__
-{{region radrichtextbox-features-document-elements-custom-annotations_2}}
+
+```C#
 	protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
 	{
 	    base.CopyPropertiesFromOverride(fromElement);
 	    this.Name = ((CustomRangeStart)fromElement).Name;
 	}
-{{endregion}}
+```
 
 * `IsWordSeparator`&mdash;This property determines whether the annotation should be used as a separator between words or not.
 * `SkipPositionBefore`&mdash;Specifies where text will appear if you position the caret next to the range start/end. For example, if it returns true in the range start and false in the range end, the text you enter when you position the caret next to the start/end, will appear in the range.
@@ -98,8 +98,8 @@ For example hyperlinks keep the default settings in FieldRangeStart and FieldRan
 
 HyperlinkRangeStart: 
 
-#### __[C#]__
-{{region radrichtextbox-features-document-elements-custom-annotations_3}}
+
+```C#
 	public override AnnotationMarkerDeleteBehavior DeleteBehavior
 	{
 	    get { return AnnotationMarkerDeleteBehavior.SelectAnnotation; }
@@ -114,12 +114,12 @@ HyperlinkRangeStart:
 	{
 	    get { return AnnotationMarkerDeleteBehavior.RemoveAnnotation; }
 	}
-{{endregion}}
+```
 
 HyperlinkRangeEnd:
 
-#### __[C#]__
-{{region radrichtextbox-features-document-elements-custom-annotations_4}}
+
+```C#
 	public override AnnotationMarkerDeleteBehavior DeleteBehavior
 	{
 	    get { return AnnotationMarkerDeleteBehavior.PreserveAnnotation; }
@@ -134,15 +134,15 @@ HyperlinkRangeEnd:
 	{
 	    get { return AnnotationMarkerDeleteBehavior.RemoveAnnotation; }
 	}
-{{endregion}}
+```
 
 * You can also define custom properties in your annotation range start/end. If you want to be able to serialize them, you can just mark them with the `XamlSerializable` attribute:
 
-#### __[C#]__
-{{region radrichtextbox-features-document-elements-custom-annotations_5}}
+
+```C#
 	[XamlSerializable]
 	public string Name { get; set; } 
-{{endregion}}
+```
 
 For additional reading, you can refer to [this blog post](http://blogs.telerik.com/xamlteam/posts/12-03-06/structured-content-editing-with-richtextbox-for-silverlight-wpf.aspx) or play with the *RichTextBox | Structured Content Editing* demo from our [official examples](https://demos.telerik.com/wpf/). 
 

@@ -29,9 +29,9 @@ Choose one of the following approaches to obtain the source code of GroupHeaderC
 
 The end result should include the following XAML code:
 
-#### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_0}}
+
+```XAML
 	<local:GroupHeaderTemplateSelector x:Key="GroupHeaderContentTemplateSelector">
 		<local:GroupHeaderTemplateSelector.HorizontalTemplate>
 			<DataTemplate>
@@ -51,46 +51,46 @@ The end result should include the following XAML code:
 			</DataTemplate>
 		</local:GroupHeaderTemplateSelector.VerticalTemplate>
 	</local:GroupHeaderTemplateSelector>
-{{endregion}}
+```
 
 Note the use of the local  and telerikPrimitives namespaces from the raw source:
 
-#### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_1}}
+
+```XAML
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
 	xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls.Primitives;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
 The selector is applied to our instance of RadScheduleView:
 
-#### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_2}}
+
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" 
 	        AppointmentsSource="{Binding Appointments}" 
 	        GroupHeaderContentTemplateSelector="{StaticResource GroupHeaderContentTemplateSelector }">
-{{endregion}}
+```
 
 ## How to create a custom GroupHeaderContentTemplateSelector
 
 Let’s, for example, create a custom Resource like this:
 
-#### __C#__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_3}}
+
+```C#
 	public class EmployeeResource : Resource
 	{
 		public string Photo { get; set; }
 		public Brush Brush { get; set; }
 	}
-{{endregion}}
+```
 
 And add the EmployeeResource to “Employee” ResourceType. Note that the RadScheduleView is grouped by this resource type.       
 
-#### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_4}}
+
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:DayViewDefinition />		
@@ -111,13 +111,13 @@ And add the EmployeeResource to “Employee” ResourceType. Note that the RadSc
 			</telerik:ResourceTypeCollection>
 		</telerik:RadScheduleView.ResourceTypesSource>
 	</telerik:RadScheduleView>   
-{{endregion}}
+```
 
 In order to set different templates  to the GroupHeaders , we should create a custom class which inherits ScheduleViewDataTemplateSelector  and overrides its SelectTemplate method. Also we need to add the DataTemplates  for resource  and date GroupHeaders and return the corresponding template:       
 
-#### __C#__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_5}}
+
+```C#
 	public class CustomGroupHeaderContentTemplateSelector : ScheduleViewDataTemplateSelector
 	{
 		public DataTemplate HorizontalTemplate { set; get; }
@@ -160,13 +160,13 @@ In order to set different templates  to the GroupHeaders , we should create a cu
 			return base.SelectTemplate(item, container, activeViewDeifinition);
 		}
 	}
-{{endregion}}
+```
 
 Add the DataTemplates to the XAML:
 
-#### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_6}}
+
+```XAML
 	<local:CustomGroupHeaderContentTemplateSelector x:Key="CustomGroupHeaderContentTemplateSelector">
 		<local:CustomGroupHeaderContentTemplateSelector.HorizontalTemplate>
 			<DataTemplate>
@@ -204,26 +204,26 @@ Add the DataTemplates to the XAML:
 			</DataTemplate>
 		</local:CustomGroupHeaderContentTemplateSelector.VerticalResourceTemplate>
 	</local:CustomGroupHeaderContentTemplateSelector>
-{{endregion}}
+```
 
 >Note how the properties of the custom resource are bound using Name property:
 
-#### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_8}}
+
+```XAML
 	Source="{Binding Name.Photo}"
-{{endregion}}
+```
 
 Finally, set the GroupHeaderContentTemplateSelector property of the ScheduleView:
 
-#### __XAML__
 
-{{region radscheduleview-styles-and-templates-templating-groupheaders_7}}
+
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
 			GroupHeaderContentTemplateSelector="{StaticResource CustomGroupHeaderContentTemplateSelector}">
 		...	
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Here is the result:
 

@@ -26,9 +26,9 @@ You could use the __PreviewShowCompass__ event of the __RadDocking__ control in 
 
 For the purpose of this tutorial, the following __RadDocking__ declaration will be used:
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-implement-conditional-docking_0}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadSplitContainer>
 	        <telerik:RadPaneGroup>
@@ -41,7 +41,7 @@ For the purpose of this tutorial, the following __RadDocking__ declaration will 
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 When you try to drag and dock the "Pane 2", then all [compass indicators]({%slug raddocking-features-compass%}) are available.
 
@@ -51,90 +51,79 @@ In order to implement conditional docking, you need to perform the following ins
 
 Attach to the __PreviewShowCompass__ event of the __RadDocking__ control.
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-implement-conditional-docking_1}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking1" PreviewShowCompass="radDocking_PreviewShowCompass">
-{{endregion}}
+```
 
 Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compass__ property. You need to use the __Is<*>IndicatorVisible__ series of properties of the __Compass__ class in order to disable any of the compass indicators.
 
 * __IsLeftIndicatorVisible__ - If you want to disable the left compass indicator, then set the __IsLeftIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
 
-{{region cs-raddocking-how-to-implement-conditional-docking_2}}
+
+```C#
 	private void radDocking_PreviewShowCompass(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-implement-conditional-docking_3}}
+```
+```VB.NET
 	Private Sub radDocking_PreviewShowCompass(sender As Object, e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
 	End Sub
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking without Left Compass](images/RadDocking_HowTo_ConditionalDocking_020.png)
 
 * __IsTopIndicatorVisible__ - If you want to disable the top compass indicator, then set the __IsTopIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
 
-{{region cs-raddocking-how-to-implement-conditional-docking_4}}
+
+```C#
 	private void radDocking_PreviewShowCompass1(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	    e.Compass.IsTopIndicatorVisible = false;
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-implement-conditional-docking_5}}
+```
+```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
 		e.Compass.IsTopIndicatorVisible = False
 	End Sub
-{{endregion}}
+```
 
  ![{{ site.framework_name }} RadDocking without Top and Left Compasses](images/RadDocking_HowTo_ConditionalDocking_030.png)
 
 * __IsRightIndicatorVisible__ - If you want to disable the right compass indicator, then set the __IsRightIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
 
-{{region cs-raddocking-how-to-implement-conditional-docking_6}}
+
+```C#
 	private void radDocking_PreviewShowCompass2(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
 	    e.Compass.IsTopIndicatorVisible = false;
 	    e.Compass.IsRightIndicatorVisible = false;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-implement-conditional-docking_7}}
+```
+```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
 		e.Compass.IsTopIndicatorVisible = False
 		e.Compass.IsRightIndicatorVisible = False
 	End Sub
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking with Only Bottom Compass](images/RadDocking_HowTo_ConditionalDocking_040.png)
 
 * __IsBottomIndicatorVisible__ - If you want to disable the bottom compass indicator, then set the __IsBottomIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
 
-{{region cs-raddocking-how-to-implement-conditional-docking_8}}
+
+```C#
 	private void radDocking_PreviewShowCompass3(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
@@ -142,26 +131,23 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	    e.Compass.IsRightIndicatorVisible = false;
 	    e.Compass.IsBottomIndicatorVisible = false;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-implement-conditional-docking_9}}
+```
+```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
 		e.Compass.IsTopIndicatorVisible = False
 		e.Compass.IsRightIndicatorVisible = False
 		e.Compass.IsBottomIndicatorVisible = False
 	End Sub
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking without Any Compasses](images/RadDocking_HowTo_ConditionalDocking_050.png)
 
 * __IsCenterIndicatorVisible__ - If you want to disable the center compass indicator, then set the __IsCenterIndicatorVisible__ property of the passed event arguments to __False__. 
 
-#### __C#__
 
-{{region cs-raddocking-how-to-implement-conditional-docking_10}}
+
+```C#
 	private void radDocking_PreviewShowCompass4(object sender, Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs e)
 	{
 	    e.Compass.IsLeftIndicatorVisible = false;
@@ -170,11 +156,8 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 	    e.Compass.IsBottomIndicatorVisible = false;
 	    e.Compass.IsCenterIndicatorVisible = false;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-implement-conditional-docking_11}}
+```
+```VB.NET
 	Private Sub radDocking_PreviewShowCompass(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Docking.PreviewShowCompassEventArgs)
 		e.Compass.IsLeftIndicatorVisible = False
 		e.Compass.IsTopIndicatorVisible = False
@@ -182,7 +165,7 @@ Switch to the code-behind. The __PreviewShowCompassEventArgs__ exposes a __Compa
 		e.Compass.IsBottomIndicatorVisible = False
 		e.Compass.IsCenterIndicatorVisible = False
 	End Sub
-{{endregion}}
+```
 
 In the last case, all compass indicators are disabled.
 

@@ -31,8 +31,8 @@ The highlighting of the series can be implemented either in the mouse event hand
 
 The following example shows how to combine these suggestions.
 
-#### __[XAML] Defining the chart and setting up the highlighting__
-{{region kb-chartview-line-series-selection-0}}
+__Defining the chart and setting up the highlighting__
+```XAML
 	<telerik:RadCartesianChart MouseLeftButtonDown="RadCartesianChart_MouseLeftButtonDown">
 		<telerik:RadCartesianChart.Resources>
 			<!-- in case the NoXaml dlls are used, add the following setting to the Style object -->
@@ -80,10 +80,10 @@ The following example shows how to combine these suggestions.
 			</telerik:LineSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
-#### __[C#] Implementing the MouseLeftButtonDown handler__
-{{region kb-chartview-line-series-selection-1}}
+__Implementing the MouseLeftButtonDown handler__
+```C#
 	private void RadCartesianChart_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 	{
 		var chart = (RadCartesianChart)sender;
@@ -97,4 +97,4 @@ The following example shows how to combine these suggestions.
 			}
 		}		
 	}
-{{endregion}}
+```

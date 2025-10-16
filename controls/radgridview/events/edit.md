@@ -51,51 +51,44 @@ The __BeginningEdit__ event occurs when the cell is about to enter into __EditMo
 
 You can subscribe to the __BeginningEdit__ event declaratively or runtime like this:
 
-#### __XAML__
 
-{{region xaml-gridview-events-edit_0}}
+
+```XAML
 	<telerik:RadGridView x:Name="radGridView" BeginningEdit="radGridView_BeginningEdit"/>
-{{endregion}}
+```
 
 
-#### __C#__
 
-{{region cs-gridview-events-edit_1}}
+
+```C#
 	this.radGridView.BeginningEdit += radGridView_BeginningEdit;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_2}}
+```
+```VB.NET
 	AddHandler Me.radGridView.BeginningEdit, AddressOf radGridView_BeginningEdit
-{{endregion}}
+```
 
 The __BeginningEdit__ event is cancelable:
 
-#### __C#__
 
-{{region cs-gridview-events-edit_3}}
+
+```C#
 	private void radGridView_CancelBeginningEdit(object sender, Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs e)
 	{
 	    e.Cancel = true;
 	}
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_4}}
+```
+```VB.NET
 	Private Sub radGridView_CancelBeginningEdit(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs)
 	    e.Cancel = True
 	End Sub
-{{endregion}}
+```
 
 
 The example below uses the __BeginningEdit__ event to show a tool tip when the user tries to edit a cell from a certain column:
 
-#### __C#__
 
-{{region cs-gridview-events-edit_5}}
+
+```C#
 	private void radGridView_BeginningEdit(object sender, Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs e)
 	{
 	    if (e.Cell.Column.UniqueName == "CustomerID")
@@ -103,18 +96,14 @@ The example below uses the __BeginningEdit__ event to show a tool tip when the u
 	        ToolTipService.SetToolTip(e.Cell, "Editing the ID may result in inconsistency in the database");
 	    }
 	}
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_6}}
+```
+```VB.NET
 	Private Sub radGridView_BeginningEdit(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewBeginningEditRoutedEventArgs)
 	    If e.Cell.Column.UniqueName = "CustomerID" Then
 	        ToolTipService.SetToolTip(e.Cell, "Editing the ID may result in inconsistency in the database")
 	    End If
 	End Sub
-{{endregion}}
+```
 
 
 ## PreparingCellForEdit Event
@@ -135,9 +124,9 @@ The PreparingCellForEdit event fires after the __BeginningEdit__ event. It allow
 
 The example below uses the __PreparingCellForEdit__ event to access the underlying TextBox editing element and set its TextWrapping property to Wrap:
 
-#### __C#__
 
-{{region cs-gridview-events-edit_7}}
+
+```C#
 	private void clubsGrid_PreparingCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 	    if ((string)e.Column.Header == "Name")
@@ -146,18 +135,15 @@ The example below uses the __PreparingCellForEdit__ event to access the underlyi
 	        tb.TextWrapping = TextWrapping.Wrap;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_8}}
+```
+```VB.NET
 	Private Sub clubsGrid_PreparingCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	    If DirectCast(e.Column.Header, String) = "Name" Then
 	        Dim tb = TryCast(e.EditingElement, TextBox)
 	        tb.TextWrapping = TextWrapping.Wrap
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## PreparedCellForEdit Event
 
@@ -177,9 +163,9 @@ The event handler receives two arguments:
 
 The example below uses the __PreparedCellForEdit__ event to prevent the selection of the text inside the editing element:
 
-#### __C#__
 
-{{region cs-gridview-events-edit_9}}
+
+```C#
 	private void clubsGrid_PreparedCellForEdit(object sender, GridViewPreparingCellForEditEventArgs e)
 	{
 	    if ((string)e.Column.Header == "Name")
@@ -189,12 +175,8 @@ The example below uses the __PreparedCellForEdit__ event to prevent the selectio
 	        tb.SelectionLength = 0;
 	    }
 	}
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_10}}
+```
+```VB.NET
 	Private Sub clubsGrid_PreparedCellForEdit(sender As Object, e As GridViewPreparingCellForEditEventArgs)
 	    If DirectCast(e.Column.Header, String) = "Name" Then
 	        Dim tb = TryCast(e.EditingElement, TextBox)
@@ -202,7 +184,7 @@ The example below uses the __PreparedCellForEdit__ event to prevent the selectio
 	        tb.SelectionLength = 0
 	    End If
 	End Sub
-{{endregion}}
+```
 
 
 ## CellEditEnded Event
@@ -233,49 +215,42 @@ The __EditAction__ property is a __GridViewEditAction__ enumeration, which expos
 
 You can subscribe to the __CellEditEnded__ event declaratively or runtime like this:
 
-#### __XAML__
 
-{{region xaml-gridview-events-edit_11}}
+
+```XAML
 	<telerik:RadGridView x:Name="radGridView" CellEditEnded="radGridView_CellEditEnded"/>
-{{endregion}}
+```
 
 
-#### __C#__
 
-{{region cs-gridview-events-edit_12}}
+
+```C#
 	this.radGridView.CellEditEnded += radGridView_CellEditEnded;
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_13}}
+```
+```VB.NET
 	AddHandler Me.radGridView.CellEditEnded, AddressOf radGridView_CellEditEnded
-{{endregion}}
+```
 
 
 The example below uses the __CellEditEnded__ event to show a message box containing details of the cell being edited - like column's __Unique name__ and the __new value__ of the cell:
 
-#### __C#__
 
-{{region cs-gridview-events-edit_14}}
+
+```C#
 	private void radGridView_CellEditEnded(object sender, Telerik.Windows.Controls.GridViewCellEditEndedEventArgs e)
 	{
 	    Employee editedEmployee = e.Cell.DataContext as Employee;
 	    string propertyName = e.Cell.Column.UniqueName;
 	    MessageBox.Show(string.Format("Property {0} is edited and newValue is {1}", propertyName, e.NewData));
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_15}}
+```
+```VB.NET
 	Private Sub radGridView_CellEditEnded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewCellEditEndedEventArgs)
 	    Dim editedEmployee As Employee = TryCast(e.Cell.DataContext, Employee)
 	    Dim propertyName As String = e.Cell.Column.UniqueName
 	    MessageBox.Show(String.Format("Property {0} is edited and newValue is {1}", propertyName, e.NewData))
 	End Sub
-{{endregion}}
+```
 
 ## RowEditEnded Event
 
@@ -301,29 +276,26 @@ The __RowEditEnded__ event occurs when row validation passed successfully and ne
 
 You can subscribe to the __RowEditEnded__ event declaratively or runtime like this:
 
-#### __XAML__
 
-{{region xaml-gridview-events-edit_16}}
+
+```XAML
 	<telerik:RadGridView x:Name="radGridView" RowEditEnded="radGridView_RowEditEnded"/>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-gridview-events-edit_17}}
+
+```C#
 	this.radGridView.RowEditEnded += radGridView_RowEditEnded;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_18}}
+```
+```VB.NET
 	AddHandler Me.radGridView.RowEditEnded, AddressOf radGridView_RowEditEnded
-{{endregion}}
+```
 
 The example below uses the __RowEditEnded__ to display the new data of the edited row in a text block. It also assumes that the grid is bound to List of __Employee__ objects:
 
-#### __C#__
 
-{{region cs-gridview-events-edit_19}}
+
+```C#
 	private void radGridView_RowEditEnded(object sender, Telerik.Windows.Controls.GridViewRowEditEndedEventArgs e)
 	{
 	    Employee newEmployee = e.NewData as Employee;
@@ -332,18 +304,15 @@ The example below uses the __RowEditEnded__ to display the new data of the edite
 	        textBlock1.Text = "e.NewData contains: " + newEmployee.ToString();
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-events-edit_20}}
+```
+```VB.NET
 	Private Sub radGridView_RowEditEnded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.GridViewRowEditEndedEventArgs)
 	    Dim newEmployee As Employee = TryCast(e.NewData, Employee)
 	    If newEmployee IsNot Nothing Then
 	        textBlock1.Text = "e.NewData contains: " & newEmployee.ToString()
 	    End If
 	End Sub
-{{endregion}}
+```
 
 >tipThe __CellEditEnded__ event is always fired before __RowEditEnded__ event.
 

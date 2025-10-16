@@ -34,9 +34,9 @@ Besides the __HorizontalFrom/To__ and __VerticalFrom/To__ properties that are us
 
 A __CartesianMarkedZoneAnnotation__ is defined like this:        
 
-#### __XAML__
 
-{{region radchartview_annotations_markedzone_0}}
+
+```XAML
 	<telerik:CartesianMarkedZoneAnnotation HorizontalFrom="0.0" HorizontalTo="0.5"
 	                                       VerticalFrom="3.5" VerticalTo="4"/>
 	                
@@ -67,7 +67,7 @@ A __CartesianMarkedZoneAnnotation__ is defined like this:
 	        </LinearGradientBrush>
 	    </telerik:CartesianMarkedZoneAnnotation.Fill>
 	</telerik:CartesianMarkedZoneAnnotation>
-{{endregion}}
+```
 
 By default, the __Fill__ of the MarkedZone is *#598EC441* and the __Stroke__ is not set. You can see this in the first CartesianMarkedZoneAnnotation declaration.        
 
@@ -80,12 +80,12 @@ The last example in the above code snippet shows that you can use the __ZIndex__
 The flexible design of the MarkedZone annotation allows the user to omit one (or more) of the four Horizontal/VerticalFrom/To properties. The following table details relationship between the specified properties and the occupied interval on the axis: 
 ![Rad Chart View-annotations-cartesian-markedzone-2](images/RadChartView-annotations-cartesian-markedzone-2.png)
 
-#### __XAML__
 
-{{region radchartview_annotations_markedzone_1}}
+
+```XAML
 	<telerik:CartesianMarkedZoneAnnotation HorizontalTo="2.75"
 	                                       VerticalFrom="0.5" VerticalTo="1"/>
-{{endregion}}
+```
 
 In this example the MarkedZone takes the space between 0.5 and 1 on the vertical axis and between -infinity and 2.75 on the horizontal axis.
 
@@ -94,9 +94,9 @@ In this example the MarkedZone takes the space between 0.5 and 1 on the vertical
 In addition to the possibility of not specifying one (or more) the four properties, the annotation also supports inverse axes. The combination of these factors produces 64 possible scenarios!
         
 
-#### __XAML__
 
-{{region radchartview_annotations_markedzone_2}}
+
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 	    <telerik:RadCartesianChart.VerticalAxis>
 	        <telerik:LinearAxis/>
@@ -131,7 +131,7 @@ In addition to the possibility of not specifying one (or more) the four properti
 	        <telerik:CartesianChartGrid MajorLinesVisibility="XY"/>
 	    </telerik:RadCartesianChart.Grid>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 In this example last you can see that Cateogrical axes are also supported, adding to the versatile feature set of __CartesianMarkedzoneAnnotation__.
 ![Rad Chart View-annotations-cartesian-markedzone-4](images/RadChartView-annotations-cartesian-markedzone-4.png)  

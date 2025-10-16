@@ -31,12 +31,12 @@ How to set the background color for each individual task by databinding a proper
 
 To achieve the desired result, you need to bind the Color property through the **OriginalEvent** property of the **EventProxy** class which is the **DataContext** of the **EventContainer**.
 
-#### __[XAML]__
-{{region kb-ganttview-bind-custom-task-properties-0}}
+
+```XAML
 	<telerik:ColorToBrushConverter x:Key="ColorToBrushConverter" />
 	<Style TargetType="telerik:EventContainer">
 		<Setter Property="Background" Value="{Binding OriginalEvent.Color, Converter={StaticResource ColorToBrushConverter}}" />
 	</Style>
-{{endregion}}
+```
 		
 >If your **Color** property is not of the **Brush** type, you will also need to use an adequate converter.

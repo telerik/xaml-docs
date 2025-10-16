@@ -12,7 +12,7 @@ position: 3
 
 The RadWebCam API allows you to get information about the connected devices (cameras and microphones) and change the control's devices and video format based on this.
 
->tip See how to use the media information in the [Getting Started]({%slug radwebcam-getting-started%}#connect-to-the-webcam-manually) article.
+>tip See how to use the media information in the [Getting Started]({%slug radwebcam-getting-started%}) article.
 
 ## MediaFoundationDeviceInfo
 
@@ -26,29 +26,29 @@ The `MediaFoundationVideoFormatInfo` object provides information about the video
 
 To get the available audio capture devices (microphones), use the `RadWebCam.GetAudioCaptureDevices` static method.
 
-#### __[C#] Getting the available microphones__
-{{region radwebcam-features-get-media-information-0}}
+__Getting the available microphones__
+```C#
 	ReadOnlyCollection<MediaFoundationDeviceInfo> recordingDevices = RadWebCam.GetAudioCaptureDevices();
-{{endregion}}
+```
 
 ## Get Video Capture Devices
 
 To get the available video capture devices (cameras), use the `RadWebCam.GetVideoCaptureDevices` static method.
 
-#### __[C#] Getting the available cameras__
-{{region radwebcam-features-get-media-information-1}}
+__Getting the available cameras__
+```C#
 	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();
-{{endregion}}
+```
 
 ## Get Video Formats
 
 To get the available video file formats for the connected device, you can use the `RadWebCam.GetVideoFormats` static method.
 
-#### __[C#] Getting the available video formats__
-{{region radwebcam-features-get-media-information-2}}
+__Getting the available video formats__
+```C#
 	ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();
 	ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]);
-{{endregion}}
+```
 
 > The RadWebCam.GetVideoCaptureDevices call will throw an `UnauthorizedAccessException` if the access to the camera device is forbidden by the OS settings or any third party software.
 

@@ -20,15 +20,15 @@ The axis item labels are part of the chart axis and are represented by the __Tex
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __TextBlock__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View* from the menu. Declare a __TextBlock__ control in your XAML.
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-axis-item-label_0}}
+
+```XAML
 	<Grid x:Name="LayoutRoot"
 	      Background="White">
 	    <!--...-->
 	    <TextBlock/>
 	</Grid>
-{{endregion}}
+```
 
 
 
@@ -40,21 +40,16 @@ After clicking the OK button, a style with target type __TextBlock__ will be cre
 
 After finishing with the changes it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-axis-item-label_1}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = this.Resources["ItemLabelStyle"] as Style;
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.ItemLabelStyle = this.Resources["ItemLabelStyle"] as Style;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-axis-item-label_2}}
+```
+```VB.NET
 	Me.radchart.DefaultView.ChartArea.AxisX.AxisStyles.ItemLabelStyle = TryCast(Me.Resources("ItemLabelStyle"), Style)
 	Me.radchart.DefaultView.ChartArea.AxisY.AxisStyles.ItemLabelStyle = TryCast(Me.Resources("ItemLabelStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -64,15 +59,15 @@ Here is a snapshot of the sample result.
 
 Here is the final XAML for the __Style__:
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-axis-item-label_3}}
+
+```XAML
 	<Style x:Key="ItemLabelStyle" TargetType="TextBlock">
 	    <Setter Property="Foreground" Value="Orange" />
 	    <Setter Property="FontSize" Value="13.333" />
 	    <Setter Property="FontStyle" Value="Italic" />
 	</Style>
-{{endregion}}
+```
 
 
 

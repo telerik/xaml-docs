@@ -31,23 +31,20 @@ __VirtualQueryableCollectionView__ provides you with the following important mem
 
 When using __VirtualQueryableCollectionView__ for WPF, you may easily benefit from the built-in sorting, grouping, filtering, etc. functionality if you provide **IQueryable** as a source and just set **LoadSize** property to desired value. For example:
 
-#### __[C#]Example 1: Wrap a query in a VirtualQueryableCollectionView__
+__Example 1: Wrap a query in a VirtualQueryableCollectionView__
 
-{{region cs-GridView-Populating-DataVirtualization_0}}
+```C#
 	var context = new NorthwindEntities();
 	var query = context.Order_Details.OrderBy(o => o.OrderID);
 	var view = new VirtualQueryableCollectionView(query) { LoadSize = 10 };
 	DataContext = view;
-{{endregion}}
-
-#### __[VB.NET]Example 1: Wrap a query in a VirtualQueryableCollectionView__
-
-{{region vb-GridView-Populating-DataVirtualization_1}}
+```
+```VB.NET
 	Dim context = New NorthwindEntities()
 	Dim query = context.Order_Details.OrderBy(Function(o) o.OrderID)
 	Dim view = New VirtualQueryableCollectionView(query) With {.LoadSize = 10}
 	DataContext = view
-{{endregion}}
+```
 
 In the example above Entity Framework is used. However, you may use Linq to SQL, OpenAccess or any other Linq provider in the same manner.
 
@@ -59,9 +56,9 @@ In the example above Entity Framework is used. However, you may use Linq to SQL,
 
 In order to utilize the VirtualQueryableCollectionView class, you may take the following approach (the example below demonstrates the case when utilizing WCF RIA Services):
 
-#### __[C#]Example 1: Using data virtualization with WCF RIA Services__
+__Example 1: Using data virtualization with WCF RIA Services__
 
-{{region cs-GridView-Populating-DataVirtualization_3}}
+```C#
 	var context = new NorthwindDomainContext();
 	var query = context.GetOrder_DetailsQuery().OrderBy(o => o.OrderID);
 	query.IncludeTotalCount = true;
@@ -79,15 +76,15 @@ In order to utilize the VirtualQueryableCollectionView class, you may take the f
 	    };
 	};
 	DataContext = view;
-{{endregion}}
+```
 
 {% endif %}
 
-#### __[XAML]Example 2: Binding RadGridView__
+__Example 2: Binding RadGridView__
 
-{{region xaml-GridView-Populating-DataVirtualization_5}}
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding}" />
-{{endregion}}
+```
 
 **Example 2** suggests using a RadGridView, however data virtualization can be used with other controls as well. The controls that currently support data virtualization are __RadGridView__, __RadComboBox__, __RadTreeView__{% if site.site_name == 'WPF' %}, __RadCarousel__{% endif %}, {% if site.site_name == 'Silverlight' %}__RadCoverFlow__{% endif %} and __RadBook__.
 

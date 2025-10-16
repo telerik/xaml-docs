@@ -22,13 +22,13 @@ This behavior of the __RadMenu__ control can be controlled via the __ClickToOpen
 
 Setting the property to __True__ will make the child items appear upon a mouse click on their parent. Note that the children do not automatically hide,  but they will wait for a mouse click again.
 
-#### __XAML__
 
-{{region xaml-radmenu-features-opening-modes_0}}
+
+```XAML
 	<telerik:RadMenu ClickToOpen="True">
 	    ...
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 To illustrate this case here is a snapshot of the menu upon a hover:
 

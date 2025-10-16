@@ -30,19 +30,17 @@ The following list contains all of the supported commands provided by the `RadTi
 
 As the commands provided by RadTimeBarCommands class are [__ICommands__](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=net-6.0) at their core, they do provide methods for both checking if they can be invoked - `CanExecute` and for invoking them - `Execute`.
 
-#### __[C#] Command execution__
-{{region timebar-commands-0}}
+__Command execution__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
     {
         RoutedUICommand centerSelection = RadTimeBarCommands.CenterSelection as RoutedUICommand;
         centerSelection.Execute(null, this.radTimeBar);
     }
-{{endregion}}
-
-#### __[VB.NET]Command execution__
-{{region timebar-commands-1}}
+```
+```VB.NET
     Private Sub RadButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
         Dim centerSelection As RoutedUICommand = TryCast(RadTimeBarCommands.CenterSelection, RoutedUICommand)
         centerSelection.Execute(Nothing, Me.radTimeBar)
     End Sub
-{{endregion}}
+```

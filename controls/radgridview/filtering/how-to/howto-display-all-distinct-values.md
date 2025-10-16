@@ -16,42 +16,36 @@ If possible, you should always use __RadGridView’s__ public method GetDistinct
 
 __Example 1:__ The __GetDistinctValues(GridViewColumn, Boolean)__ method returns the first 1000 distinct values for the given column.The Boolean('filter') parameter specifies whether distinct values should be filtered according to other columns' active filters.
 		
-#### __C#__
-{{region cs-gridview-filtering-howto-display-all-distinct-values_0}}
+
+```C#
 	private void OnRadGridViewDistinctValuesLoading(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
 	{
 	    e.ItemsSource = ((Telerik.Windows.Controls.RadGridView)sender).GetDistinctValues(e.Column, false);
 	}
-{{endregion}}
-
-
-#### __VB.NET__
-{{region vb-gridview-filtering-howto-display-all-distinct-values_0}}
+```
+```VB.NET
 	Private Sub OnRadGridViewDistinctValuesLoading(sender As System.Object, e As Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs)
 	    e.ItemsSource = DirectCast(sender, Telerik.Windows.Controls.RadGridView).GetDistinctValues(e.Column, False)
 	End Sub
-{{endregion}}
+```
 
 To control the maximum amount of distinct values displayed by the column you can use the second overload of the __GetDistinctValues__ method which has one additional argument of type nullable integer called __maximumValueCount__. The value you provide will be used to limit the amount of distinct values returned(__Example 2__). If you supply a null value you will get absolutely all distinct values. Have in mind that displaying absolutely all distinct values may lead to performance issues.
 		
 
 __Example 2:__ The __GetDistinctValues(GridViewColumn, Boolean, Nullable(Int32))__ method will force the column to display only the first 15 visible distinct values.The maximum amount of distinct values to return. If you specify null for the __Nullable(Int32)__ parameter, then all distinct values will be returned.
 		
-#### __C#__
-{{region cs-gridview-filtering-howto-display-all-distinct-values_1}}
+
+```C#
 	private void OnRadGridViewDistinctValuesLoading2(object sender, Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs e)
 	{
 	    e.ItemsSource = ((Telerik.Windows.Controls.RadGridView)sender).GetDistinctValues(e.Column, true, 15);
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-filtering-howto-display-all-distinct-values_1}}
+```
+```VB.NET
 	Private Sub OnRadGridViewDistinctValuesLoading2(sender As System.Object, e As Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs)
 	    e.ItemsSource = DirectCast(sender, Telerik.Windows.Controls.RadGridView).GetDistinctValues(e.Column, True, 15)
 	End Sub
-{{endregion}}
+```
 
 The column instance provided by the event arguments can help make adjustments for specific columns only.
 
@@ -62,8 +56,8 @@ By default, the distinct values are case sensitive. In order to populate them ca
 
 __Example 3:__ Displaying case insensitive distinct values.
 		
-#### __C#__
-{{region cs-gridview-filtering-howto-display-all-distinct-values_2}}
+
+```C#
 	private void OnRadGridViewFiltered(object sender, Telerik.Windows.Controls.GridView.GridViewFilteredEventArgs e)
 	{
 	    foreach (var item in e.ColumnFilterDescriptor.DistinctFilter.FilterDescriptors)
@@ -76,10 +70,8 @@ __Example 3:__ Displaying case insensitive distinct values.
 	{
 	    e.ItemsSource = ((Telerik.Windows.Controls.RadGridView)sender).GetDistinctValues(e.Column, false).OfType<string>().Select(x => x.ToLower()).Distinct();
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-gridview-filtering-howto-display-all-distinct-values_2}}
+```
+```VB.NET
 	Private Sub OnRadGridViewFiltered(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewFilteredEventArgs)
 	    For Each item In e.ColumnFilterDescriptor.DistinctFilter.FilterDescriptors
 	        item.IsCaseSensitive = False
@@ -89,4 +81,4 @@ __Example 3:__ Displaying case insensitive distinct values.
 	Private Sub OnRadGridViewDistinctValuesLoading3(sender As Object, e As Telerik.Windows.Controls.GridView.GridViewDistinctValuesLoadingEventArgs)
 	    e.ItemsSource = DirectCast(sender, Telerik.Windows.Controls.RadGridView).GetDistinctValues(e.Column, False).OfType(Of String)().[Select](Function(x) x.ToLower()).Distinct()
 	End Sub
-{{endregion}}
+```

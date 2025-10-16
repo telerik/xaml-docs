@@ -78,35 +78,35 @@ Here the __Below selected item__ position is chosen, __:__ for separator and __A
 
 Using Telerik’s rich text editor’s API is pretty straight forward. There is a method called __InsertCaption()__ on __RadRichTextBox__ which you can use to insert a new __Caption__ into the document with a custom label. The method has the following signature:
 
-#### __C#__
 
-{{region radrichtextbox-features-captions-for-tables-and-figures_1}}
+
+```C#
 	public void InsertCaption(CaptionDefinition definition, string caption, bool includeLabel, bool insertBelow)
-{{endregion}}
+```
 
 
 
 The __CaptionDefinition__ class contains viable information for the creation of the caption like __Label__, __NumberingFormat__ and __SeparatorType__. The “caption” parameter is of type string and represents the text in the caption that will be inserted after the number (also known as caption text). The “includeLabel” parameter is of type Boolean and if true will include the label text to the caption. The “insertBelow” parameter is of type Boolean as well and if true will insert the caption below the table or figure. So, in order to insert a caption using this method you would do something like: 
 
-#### __C#__
 
-{{region radrichtextbox-features-captions-for-tables-and-figures_2}}
+
+```C#
 	CaptionDefinition captionDefinition = new CaptionDefinition();
 	captionDefinition.Label = "testLabel";
 	captionDefinition.NumberingFormat = Documents.Model.Fields.NumberingFormat.Arabic;
 	captionDefinition.SeparatorType = Documents.Model.Fields.CaptionSeparatorType.Colon;
 	this.radRichTextBox1.InsertCaption(captionDefinition, "captionText", true, true);
-{{endregion}}
+```
 
 
 
 The __RadDocument__ contains the two default __CaptionDefinitions__ by default. They reside in a collection called “CaptionDefinitions” which is of type Dictionary<string, CaptionDefinition>. If you want to insert a caption of a default type, you can do as follow: 
 
-#### __C#__
 
-{{region radrichtextbox-features-captions-for-tables-and-figures_3}}
+
+```C#
 	this.radRichTextBox1.InsertCaption(this.editor.Document.CaptionDefinitions["Table"], "captionText", true, true);
-{{endregion}}
+```
 
 
 This code will insert a default caption with label __Table__.

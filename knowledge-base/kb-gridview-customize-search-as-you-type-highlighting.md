@@ -35,8 +35,8 @@ How to remove the default cell background highlighting when search as you type a
 3. Replace the default `HighlightTextBlock` element with a `TextBlock`.
 4. Populate the new TextBlock with customized `Run` elements in order to reflect the search result in the cell.
 
-#### __[C#]__
-{{region kb-gridview-customize-search-as-you-type-highlighting-0}}
+
+```C#
 	public class CustomDataColumn : GridViewDataColumn
 	{
 		public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -68,14 +68,14 @@ How to remove the default cell background highlighting when search as you type a
 			return element;
 		}        
 	}
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-gridview-customize-search-as-you-type-highlighting-1}}
+
+```XAML
 	<telerik:RadGridView.Columns>
 		<local:CustomDataColumn DataMemberBinding="{Binding Address}" />
 	</telerik:RadGridView.Columns>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGridView Remove Cell Background Highlighting When Searching as you Type](images/kb-gridview-customize-search-as-you-type-highlighting-0.png)
 

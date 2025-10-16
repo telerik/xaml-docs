@@ -30,22 +30,22 @@ You can check how the column headers will look like after the user has sorted on
 
 RadGridView provides the option to specify the modifier keys when performing multi-column sorting. This is done via the `MultipleColumnSortModifiers` property of RadGridView and it is of the type of [ModifierKeys](https://learn.microsoft.com/en-us/dotnet/api/system.windows.input.modifierkeys?view=windowsdesktop-8.0). The default value of the MultipleColumnSortModifiers property is `ModifierKeys.Shift`.
 
-#### __[XAML] Setting the modifier key to the Ctrl key for the multi-column sorting__
-{{region gridview-multiple-column-sorting-0}}
+__Setting the modifier key to the Ctrl key for the multi-column sorting__
+```XAML
     <telerik:RadGridView ItemsSource="{Binding Clubs}" MultipleColumnSortModifiers="Ctrl"/>
-{{endregion}}
+```
 
 You can specify multiple modifier keys that will have to be held when clicking on the column headers, in order to execute the multi-column sorting. To specify them, separate them with the __+__ sign when setting the MultipleColumnSortModifiers property.
 
-#### __[XAML] Setting multiple modifier keys to the MultipleColumnSortModifiers property__
-{{region gridview-multiple-column-sorting-1}}
+__Setting multiple modifier keys to the MultipleColumnSortModifiers property__
+```XAML
     <telerik:RadGridView ItemsSource="{Binding Clubs}" MultipleColumnSortModifiers="Ctrl+Shift"/>
-{{endregion}}
+```
 
-#### __[C#] Setting multiple modifier keys to the MultipleColumnSortModifiers property__
-{{region gridview-multiple-column-sorting-2}}
+__Setting multiple modifier keys to the MultipleColumnSortModifiers property__
+```C#
     this.gridView.MultipleColumnSortModifiers = ModifierKeys.Control | ModifierKeys.Shift;
-{{endregion}}
+```
 
 >tip Setting the MultipleColumnSortModifiers property to an empty value will allow you to sort multiple columns without holding a modifier key.
 

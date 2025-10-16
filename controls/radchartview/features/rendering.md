@@ -30,8 +30,8 @@ In order to use the `SkiaRenderOptions`, you will need to reference the followin
 
 After that you can set the `RenderOptions` property of the series.
 
-#### __XAML__
-{{region radchartview-features-rendering-0}}
+
+```XAML
 	<telerik:RadCartesianChart.Series>
 		<telerik:LineSeries>
 			<telerik:LineSeries.RenderOptions>
@@ -39,7 +39,7 @@ After that you can set the `RenderOptions` property of the series.
 			</telerik:LineSeries.RenderOptions>
 		</telerik:LineSeries>
 	</telerik:RadCartesianChart.Series>
-{{endregion}}
+```
 
 The Skia rendering supports anti-aliasing feature which is enabled by default. If you need to disable this, you can set the set the `IsAntialias` property of the `SkiaRenderOptions` to `false`.
 
@@ -65,8 +65,8 @@ In order to use the Direct2DRenderOptions, you will need to reference the follow
 
 After referencing those binaries, you will be able to set the RenderOptions property of the series like this:
 
-#### __XAML__
-{{region radchartview-features-rendering-1}}
+
+```XAML
 	<telerik:RadCartesianChart.Series>
 	  <telerik:LineSeries>
 		  <telerik:LineSeries.RenderOptions>
@@ -74,7 +74,7 @@ After referencing those binaries, you will be able to set the RenderOptions prop
 		  </telerik:LineSeries.RenderOptions>
 	  </telerik:LineSeries>
 	</telerik:RadCartesianChart.Series>
-{{endregion}}
+```
 
 The Direct2DRenderOptions class exposes the following properties:
 
@@ -104,8 +104,8 @@ Using this rendering mode, the __RadChartView__ will create one Bitmap image and
 
 You can enable this rendering mode with the following code:
 
-#### __XAML__
-{{region radchartview-features-rendering-2}}
+
+```XAML
 	<telerik:RadCartesianChart.Series>
 		<telerik:LineSeries>
 			<telerik:LineSeries.RenderOptions>
@@ -113,7 +113,7 @@ You can enable this rendering mode with the following code:
 			</telerik:LineSeries.RenderOptions>
 		</telerik:LineSeries>
 	</telerik:RadCartesianChart.Series>
-{{endregion}}
+```
 	
 You can control the number of components created to visualize the data points in this rendering mode through the __DefaultVisualsRenderMode__ property. As an enumeration of style __DefaultVisualsRenderModeand__ it provides the following options:
 

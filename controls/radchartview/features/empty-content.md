@@ -27,8 +27,8 @@ When the axes are properly set but there is no series defined all charting compo
 
 > You can receive a "No data to plot" message, if you are using the [NoXaml]({%slug xaml-vs-noxaml%}) dlls and you have created a custom series or custom style. In that case, you should make sure to base the style of the custom series on the default one. For example, if you have defined a class named MyBarSeries, which inherits BarSeries, you can add the following style `<Style TargetType="local:MyBarSeries" BasedOn="{StaticResource BarSeriesStyle}" />`.
 
-#### __[XAML] Setting up chart without series__
-{{region radchartview-empty-content-0}}
+__Setting up chart without series__
+```XAML
 	<telerik:RadCartesianChart Background="#F6F6F6">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -37,7 +37,7 @@ When the axes are properly set but there is no series defined all charting compo
 			<telerik:LinearAxis />
 		</telerik:RadCartesianChart.VerticalAxis>            
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Empty Content](images/radchartview-features-empty-content-0.png)
 
@@ -49,8 +49,8 @@ The user defined empty content will be displayed in all of the above mentioned c
 
 The `EmptyContent` property is of type `object` and it allows to set the content that will be visualized when the charting component cannot display anything on the screen. 
 
-#### __[XAML] Setting the empty content__
-{{region radchartview-empty-content-1}}
+__Setting the empty content__
+```XAML
 	<telerik:RadCartesianChart EmptyContent="This is a custom empty content." Background="#F6F6F6">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -59,14 +59,14 @@ The `EmptyContent` property is of type `object` and it allows to set the content
 			<telerik:LinearAxis />
 		</telerik:RadCartesianChart.VerticalAxis>            
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Custom Empty Content](images/radchartview-features-empty-content-1.png)
 
 The `EmptyContentTemplate` property is of type `DataTemplate` and it allows setting a template that will be applied to the empty content presenter. The data context in the template is the object assigned to the `EmptyContent` property.
 
-#### __[XAML] Setting the empty content template__
-{{region radchartview-empty-content-2}}
+__Setting the empty content template__
+```XAML
 	<telerik:RadCartesianChart EmptyContent="Missing part of the chart setup.&#13;&#10;Make sure to add axes, series and data points." 
 							   Background="#F6F6F6">
 		<telerik:RadCartesianChart.EmptyContentTemplate>
@@ -84,7 +84,7 @@ The `EmptyContentTemplate` property is of type `DataTemplate` and it allows sett
 			<telerik:LinearAxis />
 		</telerik:RadCartesianChart.VerticalAxis>            
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Empty Content Template](images/radchartview-features-empty-content-2.png)
 
@@ -92,8 +92,8 @@ The `EmptyContentTemplate` property is of type `DataTemplate` and it allows sett
 
 To hide the empty content message, set the `ShowEmptyContent` property of the chart to `false`. This is useful when the chart axes should be displayed even if no data or no series are included.
 
-#### __[XAML] Setting the ShowEmptyContent property__
-{{region radchartview-empty-content-3}}
+__Setting the ShowEmptyContent property__
+```XAML
 	<telerik:RadCartesianChart ShowEmptyContent="False">            
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:LogarithmicAxis Minimum="1" Maximum="1000" />
@@ -105,6 +105,6 @@ To hide the empty content message, set the `ShowEmptyContent` property of the ch
 			<telerik:CartesianChartGrid MajorLinesVisibility="XY" />
 		</telerik:RadCartesianChart.Grid>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Hiding Empty Content Message](images/radchartview-features-empty-content-3.png)

@@ -16,8 +16,8 @@ First, we will set-up our RadMap control. We will create a collection of busines
 
 So let's define the business class that represents our objects: 
 
-#### __[C#] Example 1: Set-up our map object__
-{{region csharp_radcallout-howto-map-integration_0}}
+__Example 1: Set-up our map object__
+```C#
 	public class MapItem : ViewModelBase
 	{
 		private string caption = string.Empty;
@@ -51,12 +51,12 @@ So let's define the business class that represents our objects:
 			}
 		}        
 	}
-{{endregion}}
+```
 
 The next step is to define how we want to visualize our data items through the ItemTemplate property of the VisualizationLayer and set the desired bindings in it. In the current example, the marker will be represented by a __PushPin__:   
 
-#### __[XAML] Example 2: Declare RadMap in XAML__
-{{region xaml_radcallout-howto-map-integration_0}}
+__Example 2: Declare RadMap in XAML__
+```XAML
 	<telerik:RadMap x:Name="radMap" MouseClickMode="SelectItem" 
 		MouseSelectionMode="RaiseEvent" 
 		ZoomLevel="7" 
@@ -75,12 +75,12 @@ The next step is to define how we want to visualize our data items through the I
 			</telerik:VisualizationLayer.ItemTemplate>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 The last thing to do is to create your ViewModel, which holds the data and set it as the DataContext of the MainWindow.
 
-#### __[C#] Example 3: Create map items__
-{{region csharp_radcallout-howto-map-integration_0}}
+__Example 3: Create map items__
+```C#
 	public class ViewModel
     {
         public ObservableCollection<MapItem> Data { get; set; }
@@ -102,16 +102,16 @@ The last thing to do is to create your ViewModel, which holds the data and set i
             return data;
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Set DataContext of the MainWindow__
-{{region xaml_radcallout-howto-map-integration_0}}
+__Example 4: Set DataContext of the MainWindow__
+```XAML
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.DataContext = new ViewModel();
 	}   
-{{endregion}}
+```
 
 If you run the application now, the RadMap should display the following structure:
 
@@ -120,8 +120,8 @@ If you run the application now, the RadMap should display the following structur
 
 Now to show the RadCallout when the PushPin map element is clicked, we can subscribe to the SelectionChanged event of the VisualizationLayer. In the event handler, we can get the FrameworkElement container that holds the map element and use it as a placement target element for the RadCallout.
 
-#### __[XAML] Example 5:__
-{{region xaml_radcallout-howto-map-integration_0}}
+__Example 5:__
+```XAML
 	public partial class MainWindow : Window
 	{      
 		public MainWindow()
@@ -174,12 +174,12 @@ Now to show the RadCallout when the PushPin map element is clicked, we can subsc
 			}
 		}
 	}
-{{endregion}}
+```
 
 We also need to specify the content of the RadCallout. This way, we can visualize relevant information for the clicked element.
 
-#### __[XAML] Example 6:__
-{{region xaml_radcallout-howto-map-integration_0}}
+__Example 6:__
+```XAML
 	<Window.Resources>        
 		<DataTemplate x:Key="CalloutContentTemplate">
 			<StackPanel>
@@ -191,7 +191,7 @@ We also need to specify the content of the RadCallout. This way, we can visualiz
 			</StackPanel>
 		</DataTemplate>        
 	</Window.Resources>  
-{{endregion}}
+```
 
 And we are ready. When you run the example, click on one of the visible PushPin elements on the map to see the name of the city and its location.
 

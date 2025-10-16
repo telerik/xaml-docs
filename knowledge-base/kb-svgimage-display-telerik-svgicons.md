@@ -36,15 +36,15 @@ How to display SVG icons from the __Telerik.SvgIcons__ NuGet package in `RadSvgI
 
 2. You can utilize the `XmlSource` property of RadSvgImage to display the Content property of the chosen SVG icon.
 
-#### __[XAML] RadSvgImage declaration__
-{{region kb-radsvgimage-display-telerik-svgicons-0}}
+__RadSvgImage declaration__
+```XAML
     <Grid xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
         <telerik:RadSvgImage x:Name="svgImage" Width="128" Height="128"/>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Setting the XmlSource property__
-{{region kb-radsvgimage-display-telerik-svgicons-1}}
+__Setting the XmlSource property__
+```C#
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -56,10 +56,8 @@ How to display SVG icons from the __Telerik.SvgIcons__ NuGet package in `RadSvgI
             this.svgImage.XmlSource = string.Format(baseSvgBody, Telerik.SvgIcons.SvgIcon.ChartScatter.Content);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Setting the XmlSource property__
-{{region kb-radsvgimage-display-telerik-svgicons-2}}
+```
+```VB.NET
     Public Partial Class MainWindow
         Inherits Window
 
@@ -69,7 +67,7 @@ How to display SVG icons from the __Telerik.SvgIcons__ NuGet package in `RadSvgI
             Me.svgImage.XmlSource = String.Format(baseSvgBody, Telerik.SvgIcons.SvgIcon.ChartScatter.Content)
         End Sub
     End Class
-{{endregion}}
+```
 
 __RadSvgImage displaying SVG icon from the Telerik.SvgIcons NuGet package__
 

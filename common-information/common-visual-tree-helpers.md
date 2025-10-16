@@ -24,25 +24,25 @@ This class exposes several methods that you can use to get the children of an el
 
 * __ChildrenOfType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for elements of the concrete type.
 	
-	#### __[C#] Example 1: Getting all children of type RadToggleButton from a RadExpander control__
-	{{region common-visual-tree-helpers-0}}
+	__Example 1: Getting all children of type RadToggleButton from a RadExpander control__
+	```C#
 		// Using the extension method via the DependencyObject
 		IEnumerable<RadToggleButton> toggleButtons = radExpander.ChildrenOfType<RadToggleButton>();
 		
 		// Using the method via the static class 
 		IEnumerable<RadToggleButton> toggleButtons = ChildrenOfTypeExtensions.ChildrenOfType<RadToggleButton>(radExpander);
-	{{endregion}}
+	```
 	
 * __FindChildByType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the control for an element of the concrete type. The methods returns the first element it founds.
 	
-	#### __[C#] Example 2: Getting a child type RadToggleButton from a RadExpander control__
-	{{region common-visual-tree-helpers-1}}	
+	__Example 2: Getting a child type RadToggleButton from a RadExpander control__
+	```C#	
 		// Using the extension method via the DependencyObject
 		RadToggleButton toggleButton = radExpander.FindChildByType<RadToggleButton>();
 		
 		// Using the method via the static class 
 		RadToggleButton toggleButton = ChildrenOfTypeExtensions.FindChildByType<RadToggleButton>(radExpander);
-	{{endregion}}	
+	```	
 
 ## ParentOfTypeExtensions
 
@@ -50,14 +50,14 @@ This class exposes several methods that you can use to get the parents of an ele
 
 * __ParentOfType&lt;T&gt;()__&mdash;A generic method that expects a type that derives from DependencyObject, and it searches the visual tree of the application for parent elements of the concrete type. The method returns the first parent if founds.
 	
-	#### __[C#] Example 3: Getting the parent of type RadExpander from a RadToggleButton control__
-	{{region common-visual-tree-helpers-2}}
+	__Example 3: Getting the parent of type RadExpander from a RadToggleButton control__
+	```C#
 		// Using the extension method via the DependencyObject
 		RadExpander expander = radToggleButton.ParentOfType<RadExpander>();
 		
 		// Using the method via the static class 
 		RadExpander expander = ParentOfTypeExtensions.ParentOfType<RadExpander>(radToggleButton);
-	{{endregion}}
+	```
 	
 * __GetParents()__&mdash;This method get all visual parents of the element. The method can be used the same way as in __Example 3__. 
 

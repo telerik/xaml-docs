@@ -20,21 +20,21 @@ This article will show how to access and set different properties, in code behin
 
 1. Subscribe to the __DataLoading__ event of the parent gridview 
 
-#### __XAML__
 
-{{region xaml-gridview-how-to-access-child-gridview_0}}
+
+```XAML
 	<telerik:RadGridView Name="employeeRadGridView" 
 	             ItemsSource="{Binding Employees}" 
 	             DataLoading="employeeRadGridView_DataLoading">
 	    <!-- ... -->
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 2. In the event handler of the DataLoading event check the __ParentRow__ property of the sender object:
 
-#### __C#__
 
-{{region cs-gridview-how-to-access-child-gridview_1}}
+
+```C#
 	private void employeeRadGridView_DataLoading(object sender, GridViewDataLoadingEventArgs e)
 	{
 	    GridViewDataControl dataControl = (GridViewDataControl)sender;
@@ -56,11 +56,8 @@ This article will show how to access and set different properties, in code behin
 	        dataControl.Columns.Add(column);
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-how-to-access-child-gridview_2}}
+```
+```VB.NET
 	Private Sub employeeRadGridView_DataLoading(sender As Object, e As GridViewDataLoadingEventArgs)
 	    Dim dataControl As GridViewDataControl = DirectCast(sender, GridViewDataControl)
 	    If dataControl.ParentRow IsNot Nothing Then
@@ -80,13 +77,13 @@ This article will show how to access and set different properties, in code behin
 	        dataControl.Columns.Add(column)
 	    End If
 	End Sub
-{{endregion}}
+```
 
 As an alternative, you can use the __HierarchyChildTemplate__ and put RadGridView in its DataTemplate - this way you can set the properties directly to the gridview:
 
-#### __XAML__
 
-{{region xaml-gridview-how-to-access-child-gridview_3}}
+
+```XAML
 	<telerik:RadGridView Name="gridView" ItemsSource="{Binding Person}">
 	    <telerik:RadGridView.ChildTableDefinitions>
 	        <telerik:GridViewTableDefinition />
@@ -97,7 +94,7 @@ As an alternative, you can use the __HierarchyChildTemplate__ and put RadGridVie
 	        </DataTemplate>
 	    </telerik:RadGridView.HierarchyChildTemplate>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 ## See Also
 

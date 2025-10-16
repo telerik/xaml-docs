@@ -32,20 +32,18 @@ RadGridView column resizes, when a double-click is performed between the header 
 
 1. Add a new event handler for the `PreviewMouseDoubleClick` event of the `GridViewHeaderCell` element via the `AddHandler` method.
 
-#### __[C#] Add a new event handler for the PreviewMouseDoubleClick of the GridViewHeaderCell element__
-{{region kb-gridview-prevent-column-resize-on-mouse-double-click-0}}
+__Add a new event handler for the PreviewMouseDoubleClick of the GridViewHeaderCell element__
+```C#
     this.AddHandler(GridViewHeaderCell.PreviewMouseDoubleClickEvent, new MouseButtonEventHandler(OnPreviewMouseDoubleClick));
-{{endregion}}
-
-#### __[VB.NET] Add a new event handler for the PreviewMouseDoubleClick of the GridViewHeaderCell element__
-{{region kb-gridview-prevent-column-resize-on-mouse-double-click-1}}
+```
+```VB.NET
     Me.AddHandler(GridViewHeaderCell.PreviewMouseDoubleClickEvent, New MouseButtonEventHandler(OnPreviewMouseDoubleClick))
-{{endregion}}
+```
 
 2. In the new event handler, set the `e.Handled` property to `true`, if the `e.OriginalSource` is of type` Border`.
 
-#### __[C#] Prevent the PreviewMouseDoubleClick event from bubbling if the OriginalSource is of type Border__
-{{region kb-gridview-prevent-column-resize-on-mouse-double-click-2}}
+__Prevent the PreviewMouseDoubleClick event from bubbling if the OriginalSource is of type Border__
+```C#
     private void OnPreviewMouseDoubleClick(object sender, MouseButtonEventArgs e)
     {
         if (e.OriginalSource is Border)
@@ -53,13 +51,11 @@ RadGridView column resizes, when a double-click is performed between the header 
             e.Handled = true;
         } 
     }
-{{endregion}}
-
-#### __[VB.NET] Prevent the PreviewMouseDoubleClick event from bubbling if the OriginalSource is of type Border__
-{{region kb-gridview-prevent-column-resize-on-mouse-double-click-3}}
+```
+```VB.NET
     Private Sub OnPreviewMouseDoubleClick(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
         If TypeOf e.OriginalSource Is Border Then
             e.Handled = True
         End If
     End Sub
-{{endregion}}
+```

@@ -14,14 +14,14 @@ This topic covers the specific events exposed by the `RadBreadcrumb` control.
 
 * `CurrentItemChanged`&mdash;Occurs after the value of the `CurrentItem` property of `RadBreadcrumb` is changed.
 
-#### __[C#] CurrentItemChanged event handler__
-{{region radbreadcrumb-events-0}}
+__CurrentItemChanged event handler__
+```C#
 	private void RadBreadcrumb_CurrentItemChanged(object sender, Telerik.Windows.RadRoutedEventArgs e)
         {
 		var breadcrumb = (RadBreadcrumb)sender;
 		object currentItem = breadcrumb.CurrentItem;
         }
-{{endregion}}    
+```    
 
 ## See Also  
  * [Getting Started]({%slug radbreadcrumb-getting-started%})

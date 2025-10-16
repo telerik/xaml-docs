@@ -12,16 +12,16 @@ position: 16
 
 When in **Popup** filtering mode, you can set **GridViewColumn.ShowFilterButton** to **False** if you want to hide the **Filter button**. This is useful when you are in immediate filtering mode, i.e. **GridViewColumn.IsFilteringDeferred** is **False**.
 
-#### __[XAML] Example 1: Hide filter button in XAML__
+__Example 1: Hide filter button in XAML__
 
-{{region xaml-gridview-filtering-howto-hide-the-filter-button-1}}
+```XAML
 
     <telerik:GridViewDataColumn ShowFilterButton="False" IsFilteringDeferred="False" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Hide filter button in code-behind__
+__Example 2: Hide filter button in code-behind__
 
-{{region cs-gridview-filtering-howto-hide-the-filter-button-2}}
+```C#
 
     private void Grid_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
     {
@@ -31,11 +31,11 @@ When in **Popup** filtering mode, you can set **GridViewColumn.ShowFilterButton*
             e.Column.ShowFilterButton = false;
         }
     };
-{{endregion}}
+```
 
-#### __[VB] Example 2: Hide filter button in code-behind__
+__Example 2: Hide filter button in code-behind__
 
-{{region vb-gridview-filtering-howto-hide-the-filter-button-3}}
+```VB
 
     Private Sub Grid_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
 		If e.ItemPropertyInfo.PropertyType Is GetType(String) Then
@@ -43,7 +43,7 @@ When in **Popup** filtering mode, you can set **GridViewColumn.ShowFilterButton*
 			e.Column.ShowFilterButton = False
 		End If
     End Sub
-{{endregion}}
+```
 
 **Figure 1** and **Figure 2** demonstrate the two setups.
 

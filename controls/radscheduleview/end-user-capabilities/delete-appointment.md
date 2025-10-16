@@ -34,17 +34,17 @@ Select the option you wish and click 'OK' to confirm the deletion or 'Cancel' to
 
 You can delete an appointment using the code. Just Call __Remove()__ method of the __RadScheduleView__ control. It returns whether or not  the appointment or the occurrence can be removed. This method has 2 overloads:
 
-#### __C#__
 
-{{region radscheduleview-end-user-capabilities-delete-appointment_0}}
+
+```C#
 	this.radScheduleView.Remove(appointment);
-{{endregion}}
+```
 
-#### __XAML__
 
-{{region radscheduleview-end-user-capabilities-delete-appointment_1}}
+
+```XAML
 	Me.radScheduleView.Remove(appointment)
-{{endregion}}
+```
 
 ## See Also
 

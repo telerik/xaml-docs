@@ -19,9 +19,9 @@ This article will demonstrate how one can use this service from a {{ site.framew
 
 Create a standard {{ site.framework_name }} application and add 3 [RadWaterMarkTextBoxes]({%slug radwatermarktextbox-overview%}) and a [RadButton]({%slug radbuttons-getting-started%}) to it. The watermarktextboxes will contain the sender and receiver emails and the subject. The button will be responsible for sending the email.
 
-#### __[XAML] Example 1: Defining the view __
+__Example 1: Defining the view__
 
-{{region xaml-cloud-services-aws-ses-0}}
+```XAML
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition  />
@@ -37,7 +37,7 @@ Create a standard {{ site.framework_name }} application and add 3 [RadWaterMarkT
         <TextBox Text="{Binding Content}" Grid.Row="3" />
         <telerik:RadButton Command="{Binding SendEmailCommand}" Content="Send Email" Grid.Row="4"  HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Grid>
-{{endregion}}
+```
 
 
 ## Step 2: Add the SES assemblies
@@ -48,8 +48,8 @@ Open the NuGet Package Manager and install the **AWSSDK Simple Email** package.
 
 In addition you need to add the following to your **App.config** file:
 
-#### __[XAML] Example 2: Adding the AWS Profile in App.config__
-{{region xaml-cloud-services-aws-ses-1}}
+__Example 2: Adding the AWS Profile in App.config__
+```XAML
     <?xml version="1.0" encoding="utf-8" ?>
         <configuration>
             <appSettings>
@@ -57,7 +57,7 @@ In addition you need to add the following to your **App.config** file:
                 <add key="AWSRegion" value="eu-west-3" />
             </appSettings>
         </configuration>
-{{endregion}}
+```
 
 > If you do not have an AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
@@ -65,9 +65,9 @@ In addition you need to add the following to your **App.config** file:
 
 The Next step is to create the ViewModel. It will need an [IAmazonSimpleEmailService](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/SimpleEmail/TISimpleEmailService.html) instance which will be used for sending the emails. We also need to implement the command that the RadButton is bound to.
 
-#### __[C#] Example 3: Defining the ViewModel __
+__Example 3: Defining the ViewModel__
 
-{{region cs-cloud-services-aws-ses-2}}
+```C#
     public class ViewModel
     {
         private IAmazonSimpleEmailService emailServiceClient;
@@ -102,12 +102,8 @@ The Next step is to create the ViewModel. It will need an [IAmazonSimpleEmailSer
             }
         }
     }
-{{endregion}}
-
-
-#### __[VB.NET] Example 3: Defining the ViewModel__
-
-{{region vb-cloud-services-aws-ses-3}}
+```
+```VB.NET
     Public Class ViewModel
 
         Private emailServiceClient As IAmazonSimpleEmailService
@@ -140,28 +136,25 @@ The Next step is to create the ViewModel. It will need an [IAmazonSimpleEmailSer
             Dim response = Me.emailServiceClient.SendEmail(sendRequest)
         End Sub
     End Class
-{{endregion}}
+```
 
 All that is left now is to set the DataContext to our ViewModel as demonstrated in **Example 4**.
 
-#### __[C#] Example 4: Defining the ViewModel__
+__Example 4: Defining the ViewModel__
 
-{{region cs-cloud-services-aws-ses-4}}
+```C#
     public MainWindow()
         {
             InitializeComponent();
             this.DataContext = new ViewModel();
         }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining the ViewModel__
-
-{{region cs-cloud-services-aws-ses-4}}
+```
+```VB.NET
     Public Sub New()
         InitializeComponent()
         Me.DataContext = New ViewModel()
     End Sub
-{{endregion}}
+```
 
 #### Figure 1: Result from the example in the Office2016 theme
 

@@ -33,8 +33,8 @@ How to get the image cooridnates of the clicked point in the RadImageEditor cont
 
 To do this, you can subscribe to the MouseLeftButtonDown event of RadImageEditor and calculate the coordinates based on the mouse position, the image size and the control's size.
 
-#### __[C#]__
-{{region kb-imageeditor-get-clicked-image-point-0}}
+
+```C#
 	 public MainWindow()
 	 {
      		InitializeComponent();
@@ -57,5 +57,5 @@ To do this, you can subscribe to the MouseLeftButtonDown event of RadImageEditor
 			var pixelYPosition = originalImageHeight * relativeHeight;
 		}
 	}
-{{endregion}}
+```
 

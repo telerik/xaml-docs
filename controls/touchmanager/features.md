@@ -22,8 +22,8 @@ TouchManager exposes the following public properties:
 
 * __IsEnabled__: A static property of type __bool__ that indicates whether the TouchManager subscribes to any input events. The property has to be set at the startup of the application. Note that changing its value run-time after setting it to **False** is not supported. 
 
-	#### __[C#] Example 1: Setting IsEnabled__
-	{{region touchmanager-features-0}}
+	__Example 1: Setting IsEnabled__
+	```C#
 		public partial class App : Application
 		{
 			protected override void OnStartup(StartupEventArgs e)
@@ -32,10 +32,8 @@ TouchManager exposes the following public properties:
 				base.OnStartup(e);
 			}
 		}
-	{{endregion}}
-	
-	#### __[VB.NET] Example 1: Setting IsEnabled__
-	{{region touchmanager-features-1}}
+	```
+	```VB.NET
 		Public Partial Class App
 			Inherits Application
 
@@ -44,7 +42,7 @@ TouchManager exposes the following public properties:
 				MyBase.OnStartup(e)
 			End Sub
 		End Class
-	{{endregion}}
+	```
 	
 	The property can be set also before the **InitializeComponent** call of the main window.
 	
@@ -60,20 +58,18 @@ TouchManager exposes the following public properties:
 		> The element on which this value is set should be a ScrollViewer. Otherwise, an exception will be thrown.
 	* __Parent__: If an unhandled swipe gesture occurs for this element, the first ScrollViewer parent will get panned.
 	
-	#### __[XAML] Example 2: Setting ScrollViewerSwipeMode in XAML__
-	{{region touchmanager-features-2}}
+	__Example 2: Setting ScrollViewerSwipeMode in XAML__
+	```XAML
 		<ListBox x:Name="element" telerik:TouchManager.ScrollViewerSwipeMode="Parent">
-	{{endregion}}
+	```
 		
-	#### __[C#] Example 3: Setting ScrollViewerSwipeMode in code__
-	{{region touchmanager-features-3}}
+	__Example 3: Setting ScrollViewerSwipeMode in code__
+	```C#
 		TouchManager.SetScrollViewerSwipeMode(this.element, ScrollViewerSwipeMode.Parent);
-	{{endregion}}
-		
-	#### __[VB.NET] Example 3: Setting ScrollViewerSwipeMode in code__
-	{{region touchmanager-features-4}}
+	```
+	```VB.NET
 		TouchManager.SetScrollViewerSwipeMode(Me.element, ScrollViewerSwipeMode.Parent);
-	{{endregion}}
+	```
 
 * __ShouldSuspendMousePromotion__: An attached property of type __bool__ that indicates whether mouse events should be suspended during touch input. The default value is __false__.
 		
@@ -100,20 +96,18 @@ TouchManager exposes the following public properties:
 	* __TouchMove__: The drag operation will be triggered during a TouchMove, regardless of whether a TapAndHold event has occured or not.
 	* __TapAndHold__ (default): The drag operation will be triggered during a TapAndHold event.
 
-	#### __[XAML] Example 4: Setting DragStartTrigger in XAML__
-	{{region touchmanager-features-5}}
+	__Example 4: Setting DragStartTrigger in XAML__
+	```XAML
 		<Border x:Name="element" telerik:TouchManager.DragStartTrigger="TapHoldAndMove">
-	{{endregion}}
+	```
 		
-	#### __[C#] Example 5: Setting DragStartTrigger in code__
-	{{region touchmanager-features-6}}
+	__Example 5: Setting DragStartTrigger in code__
+	```C#
 		TouchManager.SetDragStartTrigger(this.element, TouchDragStartTrigger.TapHoldAndMove);
-	{{endregion}}
-		
-	#### __[VB.NET] Example 5: Setting DragStartTrigger in code__
-	{{region touchmanager-features-7}}
+	```
+	```VB.NET
 		TouchManager.SetDragStartTrigger(Me.element, TouchDragStartTrigger.TapHoldAndMove);
-	{{endregion}}
+	```
 
 >important The __IsTouchHitTestVisibility__ property is __obsolete__ and __replaced__ by the __TouchMode__ property.
 

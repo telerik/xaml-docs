@@ -27,9 +27,9 @@ The searching functionality is triggered when the *Search* button is pressed. Ba
 
 For more details examine the following code:
 
-#### __[C#]: Example 1: Implement Searching__
+__: Example 1: Implement Searching__
 
-{{region radtreeview-howto-implement-search-filter-sort_0}}
+```C#
 			//the RadTreeView.ItemsSource collection is traversed to find an item by a provided name 
 			string searchText = null;
 			private void Search(object sender, RoutedEventArgs e)
@@ -60,11 +60,8 @@ For more details examine the following code:
 				}
 				isFiltered = false;
 			}  
-{{endregion}}
-
-#### __[VB.NET] Example 1: Implement Searching__
-
-{{region radtreeview-howto-implement-search-filter-sort_1}}
+```
+```VB.NET
 		'the RadTreeView.ItemsSource collection is traversed to find an item by a provided name'
 		Dim searchText As String = Nothing
 		Private Sub Search(sender As Object, e As RoutedEventArgs)
@@ -89,7 +86,7 @@ For more details examine the following code:
 			End If
 			isFiltered = False
 		End Sub
-{{endregion}}
+```
 
 ## Filtering
 
@@ -97,9 +94,9 @@ The filtering functionality is triggered immediately when the text of the second
 
 Below you can examine the implementation of these two methods:
 
-#### __[C#] Example 2: Implement Filtering__
+__Example 2: Implement Filtering__
 
-{{region radtreeview-howto-implement-search-filter-sort_2}}
+```C#
 			//the SampleDataSource collection is dynamically filtered to display only those items matching the filter criteria   
 			string filterText = null;
 			private void filterTextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -126,11 +123,8 @@ Below you can examine the implementation of these two methods:
 				}
 				return new ObservableCollection<Category>(collection.Where(cat => (cat.Name.ToLower().Contains(filterText) && cat.Products.Count == 0) || cat.Products.Count > 0));
 			}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Implement Filtering__
-
-{{region radtreeview-howto-implement-search-filter-sort_3}}
+```
+```VB.NET
 		'the SampleDataSource collection is dynamically filtered to display only those items matching the filter criteria'
 		Dim filterText As String = Nothing
 		Private Sub filterTextBox_TextChanged(sender As Object, e As TextChangedEventArgs)
@@ -151,15 +145,15 @@ Below you can examine the implementation of these two methods:
 			Next
 			Return New ObservableCollection(Of Category)(collection.Where(Function(cat) (cat.Name.ToLower().Contains(filterText) AndAlso cat.Products.Count = 0) OrElse cat.Products.Count > 0))
 		End Function
-{{endregion}}
+```
 
 ## Sorting
 
 The sort functionality is triggered when the selection of the __ComboBox__ is changed. When the __SelectionChanged__ event occurs we check the __SelectedItem.__ and based on its __Value__, we sort the __RadTreeView.__ collection.
 
-#### __[C#] Example 3: Implement Sorting__
+__Example 3: Implement Sorting__
 
-{{region radtreeview-howto-implement-search-filter-sort_4}}
+```C#
 			//When the Sorting ComboBox selection is changed, the SampleDataSource collection is sorted accordingly        
 			private void sortingComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 			{
@@ -187,11 +181,8 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 				}
 				isFiltered = false;
 			}     
-{{endregion}}
-
-#### __[VB.NET] Example 3: Implement Sorting__
-
-{{region radtreeview-howto-implement-search-filter-sort_5}}
+```
+```VB.NET
 		'When the Sorting ComboBox selection is changed, the SampleDataSource collection is sorted accordingly'     
 		Private Sub sortingComboBox_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
 			If TryCast(sortingComboBox.SelectedItem, RadComboBoxItem).Content.Equals("Category name") Then
@@ -209,7 +200,7 @@ The sort functionality is triggered when the selection of the __ComboBox__ is ch
 			End If
 			isFiltered = False
 		End Sub	
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/FilterSearchSort).
 

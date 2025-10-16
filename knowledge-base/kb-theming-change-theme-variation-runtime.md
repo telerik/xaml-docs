@@ -32,9 +32,9 @@ How to change a theme's variation during runtime.
 
 To change a theme's variation during runtime and reflect this change in the UI, you need to call the **LoadPreset** method and reload the required resource dictionaries.
 
-#### __[C#]__
 
-{{region cs-kb-theming-change-theme-variation-runtime_1}}
+
+```C#
 	private void ThemeVariationsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 	{
 		var selectedItem = (RadComboBoxItem)e.AddedItems[0];
@@ -62,7 +62,7 @@ To change a theme's variation during runtime and reflect this change in the UI, 
 
 		// add any other required dictionaries
 	}
-{{endregion}}
+```
 
 ## See Also
 * [Available Themes]({%slug common-styling-appearance-available-themes%})

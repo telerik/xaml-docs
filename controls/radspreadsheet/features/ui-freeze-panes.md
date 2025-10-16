@@ -29,13 +29,10 @@ You can achieve this behavior using the __FreezePanes()__ method of the active w
 
 The following code will produce freeze panes like the example below:
         
-
-#### __C#__
-
-{{region radspreadsheet-ui-freez-panes_01}}	
-	            RadWorksheetEditor worksheetEditor = radSpreadsheet.ActiveWorksheetEditor;
-	            worksheetEditor.FreezePanes(new CellIndex(4, 1));
-	{{endregion}}
+```C#	
+	RadWorksheetEditor worksheetEditor = radSpreadsheet.ActiveWorksheetEditor;
+	worksheetEditor.FreezePanes(new CellIndex(4, 1));
+```
 
 ![Rad Spreadsheet UI Freeze Panes 02](images/RadSpreadsheet_UI_Freeze_Panes_02.png)
 
@@ -61,12 +58,9 @@ Here is the same scenario but when scrolled with one cell to the right:
 ## Unfreeze Panes
 
 To unfreeze panes simply you need to use the __UnfreezePanes()__ method of the __RadWorksheetEditor__:
-        
 
-#### __C#__
-
-{{region radspreadsheet-ui-freez-panes_02}}	
-	            RadWorksheetEditor worksheetEditor = radSpreadsheet.ActiveWorksheetEditor;
-	            worksheetEditor.UnfreezePanes();
-{{endregion}}
+```C#	
+	RadWorksheetEditor worksheetEditor = radSpreadsheet.ActiveWorksheetEditor;
+	worksheetEditor.UnfreezePanes();
+```
 

@@ -20,25 +20,25 @@ This behavior can be turned on with the new __DragDropMode__ property which is o
 
 The following snippets show how __DragDropMode__ property can be set in XAML and in code-behind:
 
-#### __XAML__
 
-{{region xaml-raddocking-features-dragdropmode_0}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking" DragDropMode="Deferred">
 	    ...
 	</telerik:RadDocking>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-raddocking-features-dragdropmode_1}}
+
+```C#
 	radDocking.DragDropMode = DockingDragDropMode.Deferred;
-{{endregion}}
+```
 
 Let's, for example, have the following RadDocking definition:
 
-#### __XAML__
 
-{{region xaml-raddocking-features-dragdropmode_2}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking1">
 	    <telerik:RadSplitContainer>
 	        <telerik:RadPaneGroup>
@@ -48,7 +48,7 @@ Let's, for example, have the following RadDocking definition:
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 Note how the dragging of "Pane1" looks in both DragDropModes:
 

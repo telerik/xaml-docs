@@ -26,8 +26,8 @@ How to save and restore the selection in a RadGridView when a RadDataPager is us
 
 Handle the __PageIndexChanging__ event in order to save the selection for the current page and the __PageIndexChanged__ event in order to restore it. __Example 1__ demonstrates some sample logic for how this can be achieved.
 
-#### __[C#] Example 1: Custom Behavior with logic for persisting the RadGridView selection__
-{{region cs-kb-gridview-howto-datapager-persist-selection-0}}
+__Example 1: Custom Behavior with logic for persisting the RadGridView selection__
+```C#
 
     public class PersistSelectionBehavior : Behavior<RadDataPager>
     {
@@ -95,12 +95,12 @@ Handle the __PageIndexChanging__ event in order to save the selection for the cu
             }
         }
     }
-{{endregion}}
+```
 
 > In order to utilize the __Behavior__ class, you should add a reference to the "System.Windows.Interactivity" dll.
 
-#### __[XAML] Example 2: RadGridView and RadDataPager setup in xaml__
-{{region xaml-kb-gridview-howto-datapager-persist-selection-1}}
+__Example 2: RadGridView and RadDataPager setup in xaml__
+```XAML
 
     <Grid xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
         <Grid.DataContext>
@@ -136,7 +136,7 @@ Handle the __PageIndexChanging__ event in order to save the selection for the cu
             </i:Interaction.Behaviors>
         </telerik:RadDataPager>
     </Grid>
-{{endregion}}
+```
 
 > The "my" namespace refers to the namespace where the "PersistSelectionBehavior" class is defined. 
 

@@ -14,10 +14,10 @@ The UI for WPF controls use [Themes]({%slug styling-apperance-implicit-styles-ov
 
 There are two mechanisms that can be used to set a theme:
 
-* [Using Implicit Styles](#setting-a-theme-using-implicit-styles)
+* [Using Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-implicit-styles)
 	In this case use NoXaml dlls.
 	
-* [Using StyleManager](#setting-a-theme-using-stylemanager)
+* [Using StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager)
 	In this case use Xaml dlls.
 
 It is important to not mix the two approaches and always use the **correct assemblies** for the respective mechanism.
@@ -26,13 +26,14 @@ It is important to not mix the two approaches and always use the **correct assem
 
 If you wish to simply change a few of the colors or font sizes of your controls, you can [define a new style]({%slug implicit-styles-styling-the-controls%}) for them and override the desired properties. 
 
-#### **[XAML] Example 1: Custom styles for RadListBox**
-{{region getting-started-change-control-appearance-0}}
+__Custom styles for RadListBox__
+
+```XAML
     <Style TargetType="telerik:RadListBox">
         <Setter Property="Foreground" Value="Green" />
         <Setter Property="FontSize" Value="22" />
     </Style>
-{{endregion}}
+```
 
 If you wish to apply further customizations such as repositioning the building parts of a control, however, you will most probably need to [edit its control template]({%slug styling-apperance-editing-control-templates%}).
 
@@ -42,14 +43,9 @@ All Telerik themes starting from [Windows8` and later]({%slug common-styling-app
 
 For seamless color customization and faster palette creation that looks great and matches all controls, we created the [Color Theme Generator]({%slug common-styling-color-theme-generator%}).
 
-## Next Steps
-
+## Next Steps 
 * [More Learning Resources]({%slug getting-started-next-steps%})
-{% if site.site_name == 'WPF' %}
 * [Start from the First Steps]({%slug getting-started-first-steps%})
-{% else %}
-* [Start from the First Steps]({%slug getting-started-first-steps-sl%})
-{% endif %}
 
 ## See Also
 

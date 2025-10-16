@@ -30,8 +30,8 @@ In order to change the value without clicking on the repeat buttons of the contr
 
 __TabNavigationExtensions.IsTabStop__ attached property indicates whether RadNumericUpDown is included in the tab navigation cycle. __Example 1__ illustrates how to set that property in order to exclude the control from the tab navigation. The property is available since R3 2016.
 
-#### __[XAML] Example 1: RadNumericUpDown with TabNavigationExtensions.IsTabStop__
+__Example 1: RadNumericUpDown with TabNavigationExtensions.IsTabStop__
 
-{{region xaml-radnumericupdown-features-navigation-0}}
+```XAML
 	<telerik:RadNumericUpDown telerik:TabNavigationExtensions.IsTabStop="False" />
-{{endregion}}
+```

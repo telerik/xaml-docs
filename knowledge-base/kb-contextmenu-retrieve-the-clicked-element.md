@@ -30,8 +30,8 @@ Retrieve the clicked item when the RadContextMenu is opened.
 
 You can derive from the `RadContextMenu` class and add an additional dependency property.
 
-#### __[C#] Deriving from the RadContextMenu class and adding an additional dependency property__
-{{region kb-contextmenu-retrieve-clicked-item-when-opening-0}}
+__Deriving from the RadContextMenu class and adding an additional dependency property__
+```C#
 	public class ExtendedContextMenu : RadContextMenu
 	{
 	    public static readonly DependencyProperty ClickedItemProperty =
@@ -43,10 +43,8 @@ You can derive from the `RadContextMenu` class and add an additional dependency 
 	        set { SetValue(ClickedItemProperty, value); }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Deriving from the RadContextMenu class and adding an additional dependency property__
-{{region kb-contextmenu-retrieve-clicked-item-when-opening-1}}
+```
+```VB.NET
 	Public Class ExtendedContextMenu
 	    Inherits RadContextMenu
 
@@ -61,14 +59,14 @@ You can derive from the `RadContextMenu` class and add an additional dependency 
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 To assign a value to the dependency property, override the `OnOpened` method and call the `GetClickedElement` method. This method will allow you to retrieve the first element of the given type at the click point coordinates. 
 
 In the following example, the custom RadContextMenu is used in the `RadTreeListView` control and a reference to the clicked `TreeListViewRow` instance is retrieved in the OnOpened method.
 
-#### __[C#] Retrieving the clicked TreeListViewRow instance inside the OnOpened method of the custom RadContextMenu__
-{{region kb-contextmenu-retrieve-clicked-item-when-opening-2}}
+__Retrieving the clicked TreeListViewRow instance inside the OnOpened method of the custom RadContextMenu__
+```C#
 	public class ExtendedContextMenu : RadContextMenu
 	{
 	    public static readonly DependencyProperty ClickedItemProperty =
@@ -88,10 +86,8 @@ In the following example, the custom RadContextMenu is used in the `RadTreeListV
 	        this.ClickedItem = this.GetClickedElement<TreeListViewRow>();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Retrieving the clicked TreeListViewRow instance inside the OnOpened method of the custom RadContextMenu__
-{{region kb-contextmenu-retrieve-clicked-item-when-opening-3}}
+```
+```VB.NET
 	Public Class ExtendedContextMenu
 	    Inherits RadContextMenu
 
@@ -112,4 +108,4 @@ In the following example, the custom RadContextMenu is used in the `RadTreeListV
 	        Me.ClickedItem = Me.GetClickedElement(Of TreeListViewRow)()
 	    End Sub
 	End Class
-{{endregion}}
+```

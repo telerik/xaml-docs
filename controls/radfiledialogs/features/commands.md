@@ -16,14 +16,14 @@ If you use the __ExplorerControl__ it might be useful to execute the commands ma
 
 > All commands in the FileDialogsCommands class are objects of type [RoutedUICommand](https://msdn.microsoft.com/en-us/library/system.windows.input.routeduicommand(v=vs.110).aspx).
 
-#### __[C#] Example 1: Executing a command in code__
-{{region radfiledialogs-features-commands-0}}
+__Example 1: Executing a command in code__
+```C#
 	RoutedUICommand command = (RoutedUICommand)FileDialogsCommands.Delete;
 	command.Execute(this.explorerControl, this.explorerControl);
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Assigning a command to a Button in XAML__
-{{region radfiledialogs-features-commands-1}}
+__Example 2: Assigning a command to a Button in XAML__
+```XAML
 	<Grid>
         <fileDialogs:ExplorerControl x:Name="explorerControl"/>
         <Button Command="fileDialogs:FileDialogsCommands.Delete"
@@ -31,7 +31,7 @@ If you use the __ExplorerControl__ it might be useful to execute the commands ma
                 CommandTarget="{Binding ElementName=explorerControl}"
                 Content="Delete"/>
     </Grid>
-{{endregion}}
+```
 
 ## List of Commands
 
@@ -53,8 +53,8 @@ If you use the __ExplorerControl__ it might be useful to execute the commands ma
 
 To cancel the command executed for a specific key or a keycombo you can handle the __PreviewKeyDown event__ of the dialog control.
 
-#### __[C#] Example 3: Canceling Delete command in ExplorerControl__
-{{region radfiledialogs-features-commands-2}}
+__Example 3: Canceling Delete command in ExplorerControl__
+```C#
 	private void ExplorerControl_PreviewKeyDown(object sender, KeyEventArgs args)
 	{
 		if (args.Key == Key.Delete)
@@ -62,10 +62,10 @@ To cancel the command executed for a specific key or a keycombo you can handle t
 			args.Handled = true;
 		}
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Canceling Delete command in a dialog control__
-{{region radfiledialogs-features-commands-3}}
+__Example 4: Canceling Delete command in a dialog control__
+```XAML
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.Owner = this;
 	openFileDialog.PreviewKeyDown += (s, args) =>
@@ -76,7 +76,7 @@ To cancel the command executed for a specific key or a keycombo you can handle t
 		}
 	};
 	openFileDialog.ShowDialog();
-{{endregion}}
+```
 
 ## See Also
 

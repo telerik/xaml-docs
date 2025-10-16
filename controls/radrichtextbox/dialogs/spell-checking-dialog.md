@@ -24,14 +24,14 @@ The dialog can be opened from the __Spell Check__ button in the __Review__ tab o
 
 The dialog can be shown by executing the `ShowSpellCheckingDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-spell-checking-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowSpellCheckingDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowSpellCheckingDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-spell-checking-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowSpellCheckingDialog();
-{{endregion}}
+```

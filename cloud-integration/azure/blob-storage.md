@@ -20,8 +20,8 @@ For the purposes of this article, you will have to create an [Azure Blob Storage
 
 Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({%slug radbuttons-getting-started%}) and a [RadListBox]({%slug radlistbox-getting-started%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file in the RadListBox.
 
-#### __[XAML] Example 1: Defining the view__
-{{region xaml-cloud-integration-azure-blob-storage-0}}
+__Example 1: Defining the view__
+```XAML
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250" />
@@ -42,7 +42,7 @@ Create a standard {{ site.framework_name }} application and add 3 [RadButtons]({
             <telerik:RadButton Command="{Binding DeleteItemCommand}" Content="Delete item" Grid.Row="2"/>
         </Grid>
     </Grid>
-{{endregion}}
+```
 
 ## Step 2: Install the NuGet package
 
@@ -54,9 +54,9 @@ Open the NuGet Package Manager and install the **WindowsAzure.Storage** package.
 
 The next step is to create the ViewModel. It will need an [CloudStorageAccount](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.cloudstorageaccount?view=azure-dotnet), [CloudBlobContainer](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobcontainer?view=azure-dotnet) and a [CloudBlobClient](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windowsazure.storage.blob.cloudblobclient?view=azure-dotnet) which will be used for connecting to your storage account and for managing the data. We also need to implement all of the commands that the RadButtons are bound to.
 
-#### __[C#] Example 2: Defining the ViewModel __
+__Example 2: Defining the ViewModel__
 
-{{region cs-cloud-integration-azure-blob-storage-1}}
+```C#
     public class ViewModel
     {
         private string connectionString;
@@ -160,10 +160,8 @@ The next step is to create the ViewModel. It will need an [CloudStorageAccount](
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the ViewModel__
-{{region vb-cloud-integration-azure-blob-storage-2}}
+```
+```VB.NET
     Public Class ViewModel
 		Private connectionString As String
 		Private storageAccount As CloudStorageAccount
@@ -275,15 +273,15 @@ The next step is to create the ViewModel. It will need an [CloudStorageAccount](
 			Next blob
 		End Sub
 End Class
-{{endregion}}
+```
 
 ## Step 4: Define the OpenFileDialogService
 
 The only thing left is to define the interface through which we are opening the [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}). We also need to define the implementation of that interface which will simply open a RadOpenFileDialog and return the path of the opened file.
 
-#### __[C#] Example 3: Defining the OpenFileDialogService and IFileDialogService__
+__Example 3: Defining the OpenFileDialogService and IFileDialogService__
 
-{{region cs-cloud-integration-azure-blob-storage-3}}
+```C#
     public interface IFileDialogService
     {
         string OpenFileDialog();
@@ -307,11 +305,8 @@ The only thing left is to define the interface through which we are opening the 
             return string.Empty;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Defining the OpenFileDialogService and FileDialogService__
-
-{{region cs-cloud-integration-azure-blob-storage-4}}
+```
+```VB.NET
     Interface IFileDialogService
         Function OpenFileDialog() As String
     End Interface
@@ -332,30 +327,27 @@ The only thing left is to define the interface through which we are opening the 
             Return String.Empty
         End Function
     End Class
-{{endregion}}
+```
 
 All that is left is to set the DataContext to our ViewModel and pass an instance of the OpenFileDialogService and the connection string of the storage account.
 
-#### __[C#] Example 4: Set the DataContext__
+__Example 4: Set the DataContext__
 
-{{region cs-cloud-integration-azure-blob-storage-5}}
+```C#
     public MainWindow()
     {
         InitializeComponent();
         var connectionString = "myConnectionString";
         this.DataContext = new ViewModel(connectionString, new OpenFileDialogService());
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Set the DataContext__
-
-{{region vb-cloud-integration-azure-blob-storage-6}}
+```
+```VB.NET
     Public Sub New()
 		InitializeComponent()
 		Dim connectionString = "myConnectionString"
 		Me.DataContext = New ViewModel(connectionString, New OpenFileDialogService())
     End Sub
-{{endregion}}
+```
 
 > You can find the connection string in the **All settings** of your storage account in the **Access keys** section.
 

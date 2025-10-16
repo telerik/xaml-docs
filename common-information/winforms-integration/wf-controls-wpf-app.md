@@ -69,17 +69,17 @@ You also need to add references to the DLL that contains UserControl1 and other 
 
 Define the following XAML in the MainWindow.xaml file:
 
-#### __[XAML] Example 1: The XAML layout in UserControl1.xaml__
-{{region xaml-wf-controls-wpf-app_0}}
+__Example 1: The XAML layout in UserControl1.xaml__
+```XAML
 	<WindowsFormsHost>
 		<wfcontrols:UserControl1 />
 	</WindowsFormsHost>
-{{endregion}}
+```
 
-#### __[XAML] Example 2: The wfcontrols namespace__
-{{region xaml-wf-controls-wpf-app_1}}
+__Example 2: The wfcontrols namespace__
+```XAML
 	xmlns:wfcontrols="clr-namespace:TelerikWinFormsControls;assembly=TelerikWinFormsControls"
-{{endregion}}
+```
 
 WindowsFormsHost represents the [WindowsFormsHost](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.integration.windowsformshost) element that enables you to host a Windows Forms control in a WPF application. The UserControl1 is then added to the WindowsFormsHost element's child collection.
 

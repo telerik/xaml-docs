@@ -38,9 +38,9 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 
 * ChartLegendItem - __Path__
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-custom-item-style_0}}
+
+```C#
 	public Sample()
 	{
 	    InitializeComponent();
@@ -52,13 +52,8 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 	    newStyle.BasedOn = style;
 	    return newStyle;
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-custom-item-style_1}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.radChart.CreateItemStyleDelegate = AddressOf Me.BuildCustomItemStyle
@@ -68,15 +63,15 @@ To set the delegate you have to use the __CreateItemStyleDelegate__ property. He
 	    newStyle.BasedOn = Style
 	    Return Style
 	End Function
-{{endregion}}
+```
 
 
 
 The following sample demonstrates a more complex logic inside the delegate - how to color the bars in a specific color, depending on their value. If the Bar's YValue is greater than 300 the Bar will be colored red, otherwise it should be green. Since changing the colors of the Bars won't affect their Labels (they will remain with the default color) another CustomItemStyle is used to color them accordingly. Finally the LegendItem's color is changed so that it corresponds to the Bar's colors.
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-custom-item-style_2}}
+
+```C#
 	public partial class MainPage : UserControl
 	{
 	    public MainPage()
@@ -151,13 +146,8 @@ The following sample demonstrates a more complex logic inside the delegate - how
 	        return newStyle;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-custom-item-style_3}}
+```
+```VB.NET
 	Partial Public Class MainPage
 	    Inherits UserControl
 	    Public Sub New()
@@ -211,22 +201,22 @@ The following sample demonstrates a more complex logic inside the delegate - how
 	        Return newStyle
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
 The *LegendItemStyle* used :
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-custom-item-style_4}}
+
+```XAML
 	<LinearGradientBrush x:Key="LegendItemStyle" EndPoint="1,1" StartPoint="0,0">
 	<GradientStop Color="Red" Offset="0"/>
 	<GradientStop Color="Red" Offset="0.5"/>
 	<GradientStop Color="Green" Offset="0.51"/>
 	<GradientStop Color="Green" Offset="1"/>
 	</LinearGradientBrush>
-{{endregion}}
+```
 
 
 

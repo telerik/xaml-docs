@@ -31,8 +31,8 @@ How to change the switch animation speed of `RadToggleSwitchButton` by modifying
 
 To cange the animation speed, you can set the `SpeedRatio` property of the associated `AnimationSelector` attached to the control. To do this in XAML, you need to replace the default selector with a custom one.
 
-#### __[XAML]__
-{{region kb-buttons-toggleswitchbutton-change-animation-speed-0}}
+
+```XAML
 	<Application.Resources>
 		<!--BasedOn is needed for NoXaml binaries only-->
 		<Style TargetType="telerik:RadToggleSwitchButton" BasedOn="{StaticResource RadToggleSwitchButtonStyle}">
@@ -78,12 +78,12 @@ To cange the animation speed, you can set the `SpeedRatio` property of the assoc
 			</Setter>
 		</Style>
 	<Application.Resources>
-{{endregion}}
+```
 
 An alternative solution is to subscribe to the `Loaded` event of each `RadToggleSwitchButton` in the view and set the `SpeedRatio` in code-behind.
 
-#### __[C#]__
-{{region kb-buttons-toggleswitchbutton-change-animation-speed-1}}
+
+```C#
 	private void RadToggleSwitch_Loaded(object sender, RoutedEventArgs e)
 	{
 		AnimationSelector animationSelector = AnimationManager.GetAnimationSelector(sender as RadToggleSwitchButton) as AnimationSelector;
@@ -92,4 +92,4 @@ An alternative solution is to subscribe to the `Loaded` event of each `RadToggle
 			animation.SpeedRatio = 2.0;
 		}
 	}
-{{endregion}}
+```

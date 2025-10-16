@@ -40,24 +40,22 @@ Check out the rest of this topic, which is entirely dedicated to the __QuickAcce
 
 In order to add a quick access toolbar to your __RadRibbonView__ control you need to set the __RadRibbonView__'s __QuickAccessToolbar__ property. The next several code-snippets show you how to do that in XAML, as well as in the code-behind.        
 
-#### __XAML__
-{{region radribbonview-QAT_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonView.QuickAccessToolBar>
 	        <telerik:QuickAccessToolBar />
 	    </telerik:RadRibbonView.QuickAccessToolBar>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
-#### __C#__
-{{region radribbonview-QAT_1}}
+
+```C#
 	this.radRibbonView.QuickAccessToolBar = new QuickAccessToolBar();
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-QAT_2}}
+```
+```VB.NET
 	Me.radRibbonView.QuickAccessToolBar = New QuickAccessToolBar()
-{{endregion}}
+```
 
 ## Adding QuickAccessToolbar Items
 
@@ -67,8 +65,8 @@ When you want to add toolbar items to your __RadRibbonView__'s Quick Access Tool
 
 The next example demonstrates how to add several buttons as toolbar items to your Quick Access Toolbar.
 
-#### __XAML__
-{{region radribbonview-QAT_3}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView">
 	    <telerik:RadRibbonView.QuickAccessToolBar>
 	        <telerik:QuickAccessToolBar>
@@ -84,7 +82,7 @@ The next example demonstrates how to add several buttons as toolbar items to you
 	        </telerik:QuickAccessToolBar>
 	    </telerik:RadRibbonView.QuickAccessToolBar>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 The result can be seen on the snapshot below.
 ![{{ site.framework_name }} RadRibbonView Quick Access ToolBar Buttons](images/RibbonView_QAT_Sample.png)
@@ -101,20 +99,18 @@ The default position of the __QuickAccessToolbar__ is right next to the [Applica
 
 The next example demonstrates how to set the __QuickAccessToolBarPosition__ property.        
 
-#### __XAML__
-{{region radribbonview-QAT_4}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" QuickAccessToolBarPosition="BelowRibbon">
-{{endregion}}
+```
 
-#### __C#__
-{{region radribbonview-QAT_5}}
+
+```C#
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.BelowRibbon;
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-QAT_6}}
+```
+```VB.NET
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.BelowRibbon
-{{endregion}}
+```
 
 The result from the previous example is that when you run your application, the __QuickAccessToolbar__ will be positioned below the ribbon.
 
@@ -130,56 +126,51 @@ __RadRibbonView__ has a built-in feature, which allows you to change the __Quick
 
 When you want to hide the __QuickAccessToolbar__, you should set the __RadRibbonView__'s __QuickAccessToolBarPosition__ property to __QuickAccessToolBarPosition.NotHosted__.        
 
-#### __XAML__
-{{region radribbonview-QAT_7}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" QuickAccessToolBarPosition="NotHosted">
-{{endregion}}
+```
 
-#### __C#__
-{{region radribbonview-QAT_8}}
+
+```C#
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.NotHosted;
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-QAT_9}}
+```
+```VB.NET
 	radRibbonView.QuickAccessToolBarPosition = QuickAccessToolBarPosition.NotHosted
-{{endregion}}
+```
 
 ## Events
 
 The __RadRibbonView__ class exposes the __ToolBarPositionChanged__ event, which is fired when the __QuickAccessToolbar__ position is changed.        
 
-#### __XAML__
 
-{{region radribbonview-QAT_10}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" ToolBarPositionChanged="radRibbonView_ToolBarPositionChanged">
-{{endregion}}
+```
 
 The __ToolBarPositionChanged__ event handler receives two arguments:        
 
 * The sender argument contains the __RadRibbonView__. This argument is of type __object__, but can be cast to the __RadRibbonView__ type.            
 * The second argument is a __RadRoutedEventArgs__ object.            
 
-#### __C#__
 
-{{region radribbonview-QAT_11}}
+
+```C#
 	private void radRibbonView_ToolBarPositionChanged( object sender, RadRoutedEventArgs e )
 	{
 	RadRibbonView ribbonView = sender as RadRibbonView ;
 	QuickAccessToolBarPosition newPosition = ribbonView.QuickAccessToolBarPosition;
 	// Do some logic here.
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radribbonview-QAT_12}}
+```
+```VB.NET
 	Private Sub radRibbonView_ToolBarPositionChanged(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
 	Dim ribbonView As RadRibbonView = TryCast(sender, RadRibbonView)
 	' Do some logic here.'
 	Dim newPosition As QuickAccessToolBarPosition = ribbonView.QuickAccessToolBarPosition
 	End Sub
-{{endregion}}
+```
 
 >tip You can handle the __ToolBarPositionChanged__ event to get notified when the user changes the ToolBar position.          
 

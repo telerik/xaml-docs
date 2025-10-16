@@ -34,8 +34,8 @@ Specifying the size of cell for the zoom level affects to a number of requests t
 
 Here is a sample Virtualization Layer declaration:        
 
-#### __XAML__
-{{region radmap-features-virtualization-layer_0}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:VirtualizationLayer x:Name="virtualizationLayer">
 	        <telerik:VirtualizationLayer.ZoomLevelGridList>
@@ -44,7 +44,7 @@ Here is a sample Virtualization Layer declaration:
 	        </telerik:VirtualizationLayer.ZoomLevelGridList>
 	    </telerik:VirtualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## Virtualization Source
 
@@ -68,8 +68,8 @@ In the __BackgroundItemsRequest()__ method you have to implement your logic for 
 
 Here is an example of how to implement simple static functionality in the __BackgroundItemsRequest()__ method:
 
-#### __C#__
-{{region radmap-features-virtualization-layer_1}}
+
+```C#
 	public class MapVirtualizationSource : IMapVirtualizationSource
 	{
 	    static readonly Location bulgariaLocation = new Location(42.7669999748468, 25.2819999307394);
@@ -120,10 +120,8 @@ Here is an example of how to implement simple static functionality in the __Back
 	        e.CompleteItemsRequest(visibleItems);
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-features-virtualization-layer_2}}
+```
+```VB.NET
 	Public Class MapVirtualizationSource Implements IMapVirtualizationSource
 		Shared ReadOnly bulgariaLocation As New Location(42.7669999748468, 25.2819999307394)
 		Shared ReadOnly sofiaLocation As New Location(42.6957539183824, 23.3327663758679)
@@ -183,28 +181,26 @@ Here is an example of how to implement simple static functionality in the __Back
 			e.CompleteItemsRequest(visibleItems)
 		End Sub
 	End Class	
-{{endregion}}
+```
 
 You can set the virtualization source to a new instance of the *MapVirtualizationSource* and create a new definition for the __OpenStreetMap__ provider:        
 
-#### __C#__
-{{region radmap-features-virtualization-layer_3}}
+
+```C#
 	public MainWindow()
 	{
 	    InitializeComponent();
 	    this.radMap.Provider = new OpenStreetMapProvider();
 	    this.virtualizationLayer.VirtualizationSource = new MapVirtualizationSource();
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-features-virtualization-layer_4}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Me.radMap.Provider = New OpenStreetMapProvider()
 		Me.virtualizationLayer.VirtualizationSource = New MapVirtualizationSource()
 	End Sub
-{{endregion}}
+```
 
 The result:
 

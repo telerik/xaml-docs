@@ -30,8 +30,8 @@ How to show only the month of the selected date in the calendar's header of RadD
 
 Set the MonthViewHeaderFormat property of the RadCalendar control. You can do this via the CalendarStyle property of RadDateTimePicker.
 
-#### __[XAML]__
-{{region kb-datetimepicker-show-only-month-in-calendar-header-0}}
+
+```XAML
 	<telerik:RadDateTimePicker>
 		<telerik:RadDateTimePicker.CalendarStyle>
 			<Style TargetType="telerik:RadCalendar">
@@ -39,7 +39,7 @@ Set the MonthViewHeaderFormat property of the RadCalendar control. You can do th
 			</Style>
 		</telerik:RadDateTimePicker.CalendarStyle>
 	</telerik:RadDatePicker>
-{{endregion}}
+```
 
 ![Before and after the style](images/kb-datetimepicker-show-only-month-in-calendar-header-0.png)
 	

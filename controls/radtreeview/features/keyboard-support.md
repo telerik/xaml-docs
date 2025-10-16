@@ -53,15 +53,15 @@ The __TabIndex__ property defines the index of the control in the tab navigation
 
 In the example below you can see how to attach to __KeyDown__ and __KeyUp__ events and how to specify a value for the __TabNavigation__ property from your XAML. 
 
-#### __[XAML] Example 1: Subscribing to the KeyDown and KeyUp events__  
-{{region radtreeview-features-keyboard-support_0}}
+__Example 1: Subscribing to the KeyDown and KeyUp events__  
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" KeyDown="radTreeView_KeyDown" KeyUp="radTreeView_KeyUp"/>
-{{endregion}}
+```
 
 The implementation of both of the event handlers `radTreeView_KeyDown` and `radTreeView_KeyUp` is located in the code-behind file (C# or VB.NET) and looks like in __Example 2__. 
 
-#### __[C#] Example 2: Handling the KeyDown and KeyUp events__  	
-{{region radtreeview-features-keyboard-support_1}}
+__Example 2: Handling the KeyDown and KeyUp events__  	
+```C#
 	private void radTreeView_KeyDown( object sender, KeyEventArgs e )
 	{
 	    MessageBox.Show( "The pressed key is: " + e.Key.ToString() );
@@ -70,17 +70,15 @@ The implementation of both of the event handlers `radTreeView_KeyDown` and `radT
 	{
 	    MessageBox.Show( "The released key is: " + e.Key.ToString() );
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Handling the KeyDown and KeyUp events__  
-{{region radtreeview-features-keyboard-support_2}}
+```
+```VB.NET
 	Private Sub radTreeView_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 	    MessageBox.Show("The pressed key is: " & e.Key.ToString())
 	End Sub
 	Private Sub radTreeView_KeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
 	    MessageBox.Show("The released key is: " & e.Key.ToString())
 	End Sub
-{{endregion}}
+```
 
 ## Keyboard Selection
 
@@ -113,30 +111,30 @@ To change the search mode that is used to match the results, set the __TextSearc
 You can also utilize the __IsTextSearchCaseSensitive__ property of RadTreeView in order to determinne if the search is case sensitive. 
 {% endif %}
 
-#### __[XAML] Example 3: Setting up text search navigation__  
-{{region radtreeview-features-keyboard-support_3}}
+__Example 3: Setting up text search navigation__  
+```XAML
 	<telerik:RadTreeView IsTextSearchEnabled="True" TextSearchMode="Contains" />
-{{endregion}}
+```
 
 When data binding the RadTreeView's ItemsSource property to a collection of business objects, you should set the __TextSearch.TextPath__ attached property in order to tell what property should be used for the text search. 
 
-#### __[XAML] Example 4: Setting TextPath__  
-{{region radtreeview-features-keyboard-support_4}}
+__Example 4: Setting TextPath__  
+```XAML
 	<telerik:RadTreeView IsTextSearchEnabled="True" telerik:TextSearch.TextPath="MyProperty" />
-{{endregion}}
+```
 
 In __Example 4__ `MyProperty` points to a property defined in the view model of the treeview items. If the type text matches the value of this property, the corresponding item will get selected.
 
 To increase the time interval for typing before the text is reset, set the __TextSearch.AutoCompleteTimeout__ static property.
 
-#### __[XAML] Example 5: Setting search text reset timeout__  
-{{region radtreeview-features-keyboard-support_5}}
+__Example 5: Setting search text reset timeout__  
+```XAML
 	public MyUserControl() 
 	{  
 		Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = new TimeSpan(1500); 
 		InitializeComponent();
 	} 
-{{endregion}}
+```
 
 Note that this property is used in several other Telerik controls and setting it will affect them as well.
 

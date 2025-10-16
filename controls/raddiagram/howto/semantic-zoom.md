@@ -16,8 +16,7 @@ For the purpose of the tutorial we will use DataBinding and bind the __RadDiagra
 
 Let's start with the ViewModels definitions. As the purpose of this example is to demonstrate a sample approach for implementing semantic zoom using the __RadFluidContentControl__, we will need one custom data class to describe the content of each shape. And as we need to change the information displayed in each shape along with the zoom factor applied in the __RadDiagram__, we will define a variety of properties in that class:		
 
-#### __C#__
-{{region raddiagram-howto-semantic-zoom-0}}
+```C#
 	public class CustomNode : HierarchicalNodeViewModel
 	{
 	    private ItemDisplayMode currentDisplayMode;
@@ -65,10 +64,8 @@ Let's start with the ViewModels definitions. As the purpose of this example is t
 	    Large,
 	    Small
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-howto-semantic-zoom-0}}
+```
+```VB.NET
 	Public Class CustomNode
 		Inherits HierarchicalNodeViewModel
 		Private m_currentDisplayMode As ItemDisplayMode
@@ -174,12 +171,11 @@ Let's start with the ViewModels definitions. As the purpose of this example is t
 		Large
 		Small
 	End Enum
-{{endregion}}
+```
 
 Next, let's build a sample collection of items to populate the __RadDiagram.GraphSource__:		
 
-#### __C#__
-{{region raddiagram-howto-semantic-zoom-1}}
+```C#
 	public class MainViewModel : ViewModelBase
 	{
 	    public ObservableGraphSourceBase<CustomNode, LinkViewModelBase<CustomNode>> Employees { get; set; }
@@ -200,10 +196,8 @@ Next, let's build a sample collection of items to populate the __RadDiagram.Grap
 	        });
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-howto-semantic-zoom-1}}
+```
+```VB.NET
 	Public Class MainViewModel
 		Inherits ViewModelBase
 	
@@ -231,12 +225,11 @@ Next, let's build a sample collection of items to populate the __RadDiagram.Grap
 														})
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Now that our ViewModels are defined, we can start describing the View where the __RadDiagram__ will be displayed. What we need is a __RadDiagram__ instance which __GraphSource__ property is data bound to the *Employees* collection. And in order to visualize the nodes in the diagram, we have to declare a __DataTemplate__. In this example, we will use a __RadFluidContentControl__ to visualize the business data representing each node of our diagramming structure. And we will define the __RadDiagramShape.ContentTemplate__ using the __RadDiagram ShapeStyle__ property:		
 
-#### __XAML__
-{{region raddiagram-howto-semantic-zoom-0}}
+```XAML
 	<Grid>
 		<telerik:RadDiagram x:Name="xDiagram"
 							GraphSource="{Binding Employees}"
@@ -478,12 +471,11 @@ Now that our ViewModels are defined, we can start describing the View where the 
 			</telerik:RadDiagram.ShapeStyle>
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
 In order to customize the appearance of each __Content__ of the __RadFluidContentControl__, we can create a few custom styles. Please add the following in the __Resources__ section of your View:
 
-#### __XAML__
-{{region raddiagram-howto-semantic-zoom-1}}
+```XAML
 	<Grid.Resources>
 	    <SolidColorBrush x:Key="MetroGray" Color="#FFD0D0D0" />
 	    <Style x:Key="NameTextBlockStyle" TargetType="TextBlock">
@@ -509,17 +501,14 @@ In order to customize the appearance of each __Content__ of the __RadFluidConten
 	        <Setter Property="FontWeight" Value="Normal" />
 	    </Style>
 	</Grid.Resources>
-{{endregion}}
+```
 
 Now that we have all prerequisites in place, we can start working on the semantic zoom logic. We need to bind the __RadFluidContentControl State__ property to a business property in order to manually control it based on the __RadDiagram Zoom__. Now if you go back to the *CustomNode* class definition, you can see that we've defined a *CurrentDisplayMode* property and an __ItemDisplayMode Enum__ to describe the current state of a __RadDiagramShape__. But in a real-life application, we will need to synchronize the state of all items so that they can change together. This is why we can create a business property in our *MainViewModel* that reflects the __ItemDisplayMode__ of all __RadDiagramShapes__.		
 
-#### __C#__
-{{region raddiagram-howto-semantic-zoom-3}}
+```C#
 	public ItemDisplayMode ItemsCurrentDisplayMode { get; set; }	
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-howto-semantic-zoom-4}}
+```
+```VB.NET
 	Private m_ItemsCurrentDisplayMode As ItemDisplayMode
 	Public Property ItemsCurrentDisplayMode() As ItemDisplayMode
 		Get
@@ -529,12 +518,11 @@ Now that we have all prerequisites in place, we can start working on the semanti
 			m_ItemsCurrentDisplayMode = Value
 		End Set
 	End Property
-{{endregion}}
+```
 	
 The essence of the semantic zoom discussed in this article, is to change the visual representation of the nodes based on the __RadDiagram__ zoom. This is why we also need to define a business property to reflect the zoom factor in the *MainViewModels*. In the setter of the property, we will call a method that changes the *ItemsCurrentDisplayMode* value accordingly. In order to implement this logic we will also describe two static properties to act as thresholds - basically their values will determine the relation between the zoom factor and the __ItemDisplayMode__ of our custom nodes. Please find below the complete definition of the __MainViewModel__ class:
 
-#### __C#__
-{{region raddiagram-howto-semantic-zoom-2}}
+```C#
 	public class MainViewModel : ViewModelBase
 	{
 	    private static double SmallToNormalTemplateThreshHold = 1.2d;
@@ -605,10 +593,8 @@ The essence of the semantic zoom discussed in this article, is to change the vis
 	        }
 	    }
 	}
-	{{endregion}}
-
-#### __VB.NET__
-{{region raddiagram-howto-semantic-zoom-2}}
+```
+```VB.NET
 	Public Class MainViewModel
 		Inherits ViewModelBase
 		Private Shared SmallToNormalTemplateThreshHold As Double = 1.2
@@ -689,12 +675,11 @@ The essence of the semantic zoom discussed in this article, is to change the vis
 			Next
 		End Sub
 	End Class
-{{endregion}}
+```
 
 Finally, we need to change the __RadDiagram__ and __RadFluidContentControl__ definitions to reflect the new properties. We will bind the __RadDiagram.Zoom__ property to the *MainViewModel ZoomFactor* and the __RadFluidContentControl State__ property to the *CustomNode CurrentDisplayMode* property. We can also apply a __Transition__ on the __RadFluidContentControl__ to animate the changes in the __RadDiagramShape__ content.
 
-#### __XAML__
-{{region raddiagram-howto-semantic-zoom-2}}
+```XAML
 	<telerik:RadDiagram x:Name="xDiagram"
 						GraphSource="{Binding Employees}"
 						Zoom="{Binding ZoomFactor,
@@ -733,7 +718,7 @@ Finally, we need to change the __RadDiagram__ and __RadFluidContentControl__ def
 			</Style>
 		</telerik:RadDiagram.ShapeStyle>
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 If you run the application now, you should be able to dynamically change the content of the sample __RadDiagramShape__ while zooming in or out of the __RadDiagram__.
 ![Rad Diagram Semantic Zoom Fluid Content](images/RadDiagram_SemanticZoom_FluidContent.png)

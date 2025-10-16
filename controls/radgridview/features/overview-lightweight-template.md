@@ -34,8 +34,8 @@ They are represented by several additional __simplified styles, which you can me
 
 The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__ including basic еffects and funcionalities such as __hover, selection, currency, grouping__ for these elements. These core styles are included within the themes of RadGridView and you may reference them in your project as shown below:        
 
-#### __[XAML] Example 1: Applying the Lightweight Templates__
-{{region xaml-gridview-overview-lightweight-template_0}}
+__Example 1: Applying the Lightweight Templates__
+```XAML
 	<Grid.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -49,7 +49,7 @@ The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewR
 	        <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreStyle}"/>
 	    </ResourceDictionary>
 	</Grid.Resources>
-{{endregion}}
+```
 
 #### __Figure 1: RadGridView with Lightweight templates applied__
 
@@ -63,8 +63,8 @@ The CoreStyles are a basic alternative of the standard __GridViewCell, GridViewR
 
 The CoreValidationStyles are an alternative of the standard __GridViewCell, GridViewRow, TreeListViewRow__. They include basic еffects and funcionalities such as __hover, selection, currency, grouping, validation__ for these elements. These core styles are included within the themes of RadGridView and you may reference it in your project as shown below.        
 
-#### __[XAML] Example 2: Applying Lightweight Templates with Validation__
-{{region xaml-gridview-overview-lightweight-template_1}}
+__Example 2: Applying Lightweight Templates with Validation__
+```XAML
 	<Grid.Resources>
 	    <ResourceDictionary>
 	        <ResourceDictionary.MergedDictionaries>
@@ -78,7 +78,7 @@ The CoreValidationStyles are an alternative of the standard __GridViewCell, Grid
 	        <Style TargetType="telerik:TreeListViewRow" BasedOn="{StaticResource TreeListViewRowCoreValidationStyle}"/>
 	    </ResourceDictionary>
 	</Grid.Resources>
-{{endregion}}
+```
 
 #### __Figure 2: RadGridView with Lightweight templates with validation applied__
 
@@ -93,8 +93,8 @@ The CoreValidationStyles are an alternative of the standard __GridViewCell, Grid
 
 For such requirement, you need to predefine the __ControlTemplate__ applied to __GridViewCell__ when __Lightweight templates__ are used. Within the __ControlTemplate__ you need to search for the __IsCurrent Property Trigger__ and delete it.
 
-#### __[XAML] Example 3: Deleting the IsCurrent Property Trigger__
-{{region xaml-gridview-overview-lightweight-template_2}}
+__Example 3: Deleting the IsCurrent Property Trigger__
+```XAML
 	<ControlTemplate x:Key="GridViewCellCoreTemplate" TargetType="grid:GridViewCell">
         <Grid>
             ...
@@ -107,7 +107,7 @@ For such requirement, you need to predefine the __ControlTemplate__ applied to _
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-{{endregion}}
+```
 
 #### __Figure 3: RadGridView with Lightweight templates and removed Current Cell Border__
 
@@ -117,8 +117,8 @@ For such requirement, you need to predefine the __ControlTemplate__ applied to _
 
 A similar approach as from the previous section needs to be used. The difference is that the same __Property Trigger__ has to be __deleted__ from the __ControlTemplate__ applied to __GridViewCell__ when __Lightweight templates with validation__ are used.
 
-#### __[XAML] Example 4: Deleting the IsCurrent Property Trigger when Lightweight Templates with Validation are applied__
-{{region xaml-gridview-overview-lightweight-template_3}}
+__Example 4: Deleting the IsCurrent Property Trigger when Lightweight Templates with Validation are applied__
+```XAML
 	<ControlTemplate x:Key="GridViewCellCoreValidationTemplate" TargetType="grid:GridViewCell">
         <Grid>
             ...
@@ -133,7 +133,7 @@ A similar approach as from the previous section needs to be used. The difference
             ...
         </ControlTemplate.Triggers>
     </ControlTemplate>
-{{endregion}}
+```
 
 #### __Figure 4: RadGridView with Lightweight templates including validation and removed Current Cell Border__
 

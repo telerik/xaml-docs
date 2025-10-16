@@ -24,8 +24,8 @@ The method will bring the item into the viewport, but because of the UI virtuali
 
 To make this work with a specific offset, you can manually scroll the ScrollViewer to the required position.
 
-#### __[C#]__
-{{region kb-treeview-bringpathintoview-offset-virtualization-0}}
+
+```C#
 	private void OnBringItemIntoView(MyTreeItem item, string path, double offsetY)
 	{   
 		this.radTreeView.BringPathIntoView(path);
@@ -47,4 +47,4 @@ To make this work with a specific offset, you can manually scroll the ScrollView
 		GeneralTransform gt = child.TransformToAncestor(parent);
 		return gt.TransformBounds(new Rect(0, 0, child.ActualWidth, child.ActualHeight));
 	}
-{{endregion}}
+```

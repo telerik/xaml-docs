@@ -34,9 +34,9 @@ The error message is: "Specified value of type 'System.Windows.Media.DoubleColle
 
 Instead of the StrokeDashArray property of the Line element, set the __MajorXLineDashArray__ and __MajorYLineDashArray__ properties of the CartesianChartGrid element.
 
-#### __[XAML]__
-{{region kb-chartview-invalid-operation-exception-strokedasharray-0}}
+
+```XAML
 	<telerik:RadCartesianChart.Grid>
 		<telerik:CartesianChartGrid MajorXLineDashArray="4,2" MajorYLineDashArray="4,2" >
 	</telerik:RadCartesianChart.Grid>
-{{endregion}}
+```

@@ -16,9 +16,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 
 * Let's start with defining a sample view model for the __RadTreeViewItems__. It only contains a name, collection of children items and a checked property:
 
-	#### __C#__
-
-	{{region radtreeview-how-to-tri-state-0}}
+	```C#
 		using System;
 		using System.Collections.ObjectModel;
 		using Telerik.Windows.Controls;
@@ -73,11 +71,8 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-	{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-how-to-tri-state-0}}
+	```
+	```VB.NET
 		Imports System.Collections.ObjectModel
 		Imports Telerik.Windows.Controls
 		
@@ -119,28 +114,24 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End Property
 			End Class
 		End Namespace
-	{{endregion}}
+	```
 
 	> Please note that the CategoryViewModel class inherits from the {% if site.site_name == 'Silverlight' %}[Telerik.Windows.Controls.ViewModelBase](http://www.telerik.com/help/silverlight/t_telerik_windows_controls_viewmodelbase.html){% endif %}{% if site.site_name == 'WPF' %}[Telerik.Windows.Controls.ViewModelBase](http://www.telerik.com/help/wpf/t_telerik_windows_controls_viewmodelbase.html){% endif %} class. It provides support for property change notifications and we need to notify the __RadTreeViewItems__ when the __IsChecked__ property is changed. 			  
 
 * Now let's extend that sample model to include our 'tri-state' logic. Firstly, in order to update the checked state of the parent items, each item will have to keep a reference of its parent item.
 	
-	#### __C#__
-	{{region radtreeview-how-to-tri-state-5}}
+	```C#
 		private CategoryViewModel parentItem;
-	{{endregion}}
-		
-	#### __VB.NET__	
-	{{region radtreeview-how-to-tri-state-6}}
+	```
+	```VB.NET
 		Private parentItem As CategoryViewModel
-	{{endregion}}
+	```
 
 * Then we need to implement the logic that determines the checked state of each item. For that purpose we have to traverse the children colleciton of a checked item as well as to find the checked state in which its parent item should be set.
 
 	* Let's create a method traversing the children collection of an item:
 
-		#### __C#__
-		{{region radtreeview-how-to-tri-state-7}}
+		```C#
 			private void UpdateChildrenCheckState()
 			{
 				foreach (var item in this.SubCategories)
@@ -151,10 +142,8 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 					}
 				}
 			}
-		{{endregion}}
-
-		#### __VB.NET__	
-		{{region radtreeview-how-to-tri-state-8}}
+		```
+		```VB.NET
 			Private Sub UpdateChildrenCheckState()
 				For Each item In Me.SubCategories
 					If Me.IsChecked IsNot Nothing Then
@@ -162,12 +151,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 					End If
 				Next item
 			End Sub
-		{{endregion}}
+		```
 
 	* We can also create a method that updates the checked state of the parent item. In order to simplify the code, we can use a lambda function to count the number of the checked children of the parent item. If this number indicates that all its children are checked, we can set the parent item checked state to checked, if the count of its checked children is 0, then we need to uncheck it. In all other cases, its state should stay indeterminate.
 	
-		#### __C#__
-		{{region radtreeview-how-to-tri-state-9}}
+		```C#
 			private bool? DetermineCheckState()
 			{
 				bool allChildrenChecked = this.SubCategories.Count(x => x.IsChecked == true) == this.SubCategories.Count;
@@ -184,10 +172,8 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 
 				return null;
 			}				
-		{{endregion}}
-			
-		#### __VB.NET__	
-		{{region radtreeview-how-to-tri-state-10}}
+		```
+		```VB.NET
 			Private Function DetermineCheckState() As Boolean?
 				Dim allChildrenChecked As Boolean = Me.SubCategories.LongCount(Function(x) x.IsChecked.Equals(True)) = Me.SubCategories.Count
 				If allChildrenChecked Then
@@ -201,13 +187,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 
 				Return Nothing
 			End Function
-		{{endregion}}
+		```
 
 * We need to call both methods when the checked state of each item is changed. That basically means that we need to call them when the __IsChecked__ property value is changed:
 
-	#### __C#__
-
-	{{region radtreeview-how-to-tri-state-1}}
+	```C#
 		public bool? IsChecked
 		{
 			get
@@ -239,11 +223,8 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				this.parentItem.IsChecked = parentIsChecked;
 			}
 		}
-	{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-how-to-tri-state-1}}
+	```
+	```VB.NET
 		Public Property IsChecked() As Boolean?
 			Get
 				Return Me._isChecked
@@ -268,13 +249,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 		
 			End If
 		End Sub
-	{{endregion}}
+	```
 
 * Now our __CategoryViewModel__ logic is almost complete. However, if you take a closer look at the __IsChecked__ property setter implementation, you will notice that the __UpdateCheckState()__ method will cause the setter to be executed multiple times for the same item. This is why we'll have to implement a reentrancy check:
 
-	#### __C#__
-
-	{{region radtreeview-how-to-tri-state-2}}
+	```C#
 		private bool reentrancyCheck = false;
 		public bool? IsChecked
 		{
@@ -296,11 +275,8 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-	{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-how-to-tri-state-2}}
+	```
+	```VB.NET
 		Private reentrancyCheck As Boolean = False
 		Public Property IsChecked() As Boolean?
 			Get
@@ -319,13 +295,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End If
 			End Set
 		End Property
-	{{endregion}}
+	```
 
 * So finally the __CategoryViewModel__ looks like that:
 
-	#### __C#__
-
-	{{region radtreeview-how-to-tri-state-3}}
+	```C#
 		using System;
 		using System.Collections.ObjectModel;
 		using Telerik.Windows.Controls;
@@ -436,11 +410,8 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-	{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-how-to-tri-state-3}}
+	```
+	```VB.NET
 		Imports System.Collections.ObjectModel
 		Imports Telerik.Windows.Controls
 		
@@ -529,13 +500,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End Function
 			End Class
 		End Namespace
-	{{endregion}}
+	```
 
 * As the items ViewModel is ready, we can create a __MainViewModel__ to define a collection of __CategoryViewModel__ objects that will be used as the __RadTreeView.ItemsSource__.
 
-	#### __C#__
-
-	{{region radtreeview-how-to-tri-state-4}}
+	```C#
 		using System;
 		using System.Collections.ObjectModel;
 		
@@ -599,11 +568,8 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				}
 			}
 		}
-	{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-how-to-tri-state-4}}
+	```
+	```VB.NET
 		Imports System.Collections.ObjectModel
 		
 		Namespace TreeViewMVVMCheckBoxSample.ViewModels
@@ -644,38 +610,11 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				End Sub
 			End Class
 		End Namespace
-	{{endregion}}
+	```
 
 * Finally we need to set up the __RadTreeView__ control and its __ItemTemplate__. Please note that we won't use the __RadTreeView__ check-box support, but instead we will define a __CheckBox__ in the __ItemTemplate__ of the control. 
 			
-	{% if site.site_name == 'Silverlight' %}
-
-	#### __XAML__
-
-	{{region radtreeview-how-to-tri-state-0}}
-		<UserControl.DataContext>
-			<vm:MainViewModel />
-		</UserControl.DataContext>
-		<Grid x:Name="LayoutRoot">
-			<telerik:RadTreeView Margin="5" ItemsSource="{Binding Categories}" Padding="5">
-				<telerik:RadTreeView.ItemTemplate>
-					<telerik:HierarchicalDataTemplate ItemsSource="{Binding SubCategories}">
-						<StackPanel Orientation="Horizontal">
-							<CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" telerik:StyleManager.Theme="Office_Black" />
-							<TextBlock VerticalAlignment="Center" Text="{Binding Name}" />
-						</StackPanel>
-					</telerik:HierarchicalDataTemplate>
-				</telerik:RadTreeView.ItemTemplate>
-			</telerik:RadTreeView>
-		</Grid>
-	{{endregion}}
-
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-
-	#### __XAML__
-
-	{{region radtreeview-how-to-tri-state-1}}
+	```XAML
 		<Window.DataContext>
 			<vm:MainViewModel />
 		</Window.DataContext>
@@ -691,9 +630,7 @@ The __RadTreeView__ control supports check boxes/radio buttons elements next to 
 				</telerik:RadTreeView.ItemTemplate>
 			</telerik:RadTreeView>
 		</Grid>
-	{{endregion}}
-
-	{% endif %}
+	```
 
 	> The __telerik__ alias represents the telerik namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 	> The __vm__ alias represents the viewmodels local namespace. For example: `xmlns:vm="clr-namespace:TreeViewMVVMCheckBoxSample.ViewModels"`

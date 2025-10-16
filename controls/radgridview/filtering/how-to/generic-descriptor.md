@@ -19,11 +19,11 @@ The new FilterDescriptor<T> allows you to directly plug a predicate that determi
 
 __Example 3: Create a generic FilterDescriptor<T>.__
 
-#### __C#__
 
-{{region cs-gridview-howto-use-expression-descriptors_2}}
+
+```C#
 	var descriptor = new FilterDescriptor<Employee> { FilteringExpression = e => prospects.Contains(e) };
-{{endregion}}
+```
 
 
 Then, you should add the defined FilterDescriptor to the __FilterDescriptors collection__ of __RadGridView__.

@@ -98,32 +98,7 @@ It is time to configure our Internet Information Service (IIS). To do it start I
 
 	>importantIn the General Tab above you can set database permissions for this role. Your users will need at least Read permissions.                
 
-	After applying this you should be able to use XmlaDataProvider in your __RadPivotGrid__ to access the data from your Cube.
-
-	{% if site.site_name == 'Silverlight' %}
-
-	To enable a Silverlight control to access a service in another domain, the service must explicitly opt-in to allow cross-domain access. By opting-in, a service states that the operations it exposes can safely be invoked by a Silverlight control, without potentially damaging consequences to the data that the service stores. That's why you have to place a clientaccesspolicy.xml file at the root of the domain where the service is hosted to configure the service to allow cross-domain access. The following configuration allows access from any other domain to all resources on the current domain.          
-
-	#### __XAML__
-
-	{{region radpivotgrid-howto-httpaccess_1}}
-		<?xml version="1.0" encoding="utf-8"?>
-		<access-policy>
-		  <cross-domain-access>
-			<policy>
-			  <allow-from http-request-headers="SOAPAction">
-				<domain uri="*"/>
-			  </allow-from>
-			  <grant-to>
-				<resource path="/" include-subpaths="true"/>
-			  </grant-to>
-			</policy>
-		  </cross-domain-access>
-		</access-policy>
-	{{endregion}}
-
-	If you use Authentication for your service, you should add Authorization in the http-request-headers:  __http-request-headers="SOAPAction,Authorization"__. More information about clientaccespolicy can be found [here](http://msdn.microsoft.com/en-us/library/cc197955(v=vs.95).aspx).
-	{% endif %}
+	After applying this you should be able to use XmlaDataProvider in your __RadPivotGrid__ to access the data from your Cube.	
 
 ## See Also
 

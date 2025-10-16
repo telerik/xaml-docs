@@ -12,9 +12,9 @@ position: 4
 
 In case you want to hide some of the available filter operators, you have to attach to the __FilterOperatorsLoading__ event of RadGridView. In the event arguments there is a property called AvailableOperators. The data engine will fill this collection with all operators supported for the respective column data type. You can only remove existing operators from this collection. You cannot add new ones. Trying to do so will result in an exception because the data engine will not be able to handle them. If you remove the default filter operator from the list, it might be a good idea to specify what should be selected by default by using the __DefaultFilterOperator1__ and __DefaultFilterOperator2__ properties.
 
-#### __C#__
 
-{{region cs-gridview-filtering-howto-remove-some-of-the-available-filter-operators_0}}
+
+```C#
 	private void OnRadGridViewFilterOperatorsLoading(object sender, Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs e)
 	{
 	    if (e.Column.UniqueName == "HireDate")
@@ -32,11 +32,8 @@ In case you want to hide some of the available filter operators, you have to att
 	        e.DefaultOperator2 = Telerik.Windows.Data.FilterOperator.IsLessThan;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-filtering-howto-remove-some-of-the-available-filter-operators_0}}
+```
+```VB.NET
 	Private Sub OnRadGridViewFilterOperatorsLoading(sender As Object, e As Telerik.Windows.Controls.GridView.FilterOperatorsLoadingEventArgs)
 	    If e.Column.UniqueName = "HireDate" Then
 	        e.AvailableOperators.Remove(Telerik.Windows.Data.FilterOperator.IsEqualTo)
@@ -52,7 +49,7 @@ In case you want to hide some of the available filter operators, you have to att
 	        e.DefaultOperator2 = Telerik.Windows.Data.FilterOperator.IsLessThan
 	    End If
 	End Sub
-{{endregion}}
+```
 
 >Please note that you cannot reorder the available operators.
 

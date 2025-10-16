@@ -14,13 +14,13 @@ __PROBLEM__
 
 You declare a custom header for a column (__Example 1__):
 
-#### __[XAML] Example 1: Initial declaration of a custom header__
+__Example 1: Initial declaration of a custom header__
 
-{{region xaml-gridview-troubleshooting-styling-custom-header_0}}
+```XAML
 	<telerik:GridViewDataColumn.Header>
 	    <TextBlock Text="My Custom Header" TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
-{{endregion}}
+```
 
 As a result, the __Foreground__ color of the custom header does not change on mouse hover (__Figure 1__ ), sorting, etc.		
 
@@ -38,8 +38,8 @@ You can bind the __Foreground__ property of the custom header (in this example t
 
 For this to also work when the [UI virtualization]({%slug radgridview-features-ui-virtualization%}) mechanism of the control is enabled, however, you need to ensure that the TextBlock has been loaded when the binding is performed. For the purpose, you can create the following attached behavior.
 
-#### __[C#] Example 2: The custom attached behavior__
-{{region cs-gridview-troubleshooting-styling-custom-header_2}}
+__Example 2: The custom attached behavior__
+```C#
     public static class HeaderInheritForegroundBehavior
     {
         public static bool GetIsEnabled(DependencyObject obj)
@@ -67,14 +67,14 @@ For this to also work when the [UI virtualization]({%slug radgridview-features-u
             };
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Final declaration of a custom header__
-{{region xaml-gridview-troubleshooting-styling-custom-header_1}}
+__Example 3: Final declaration of a custom header__
+```XAML
 	<telerik:GridViewDataColumn.Header>
 	    <TextBlock Text="My Custom Header" local:HeaderInheritForegroundBehavior.IsEnabled="True" TextWrapping="Wrap" />
 	</telerik:GridViewDataColumn.Header>
-{{endregion}}
+```
 
 >Please note that the "local" namespace needs to point to the namespace where the HeaderInheritForegroundBehavior is defined.
 

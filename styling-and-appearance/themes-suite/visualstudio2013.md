@@ -104,10 +104,10 @@ The general naming convention is: `VisualStudio2013Palette.Palette.[name]Color` 
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-visualstudio2013-0}}
+__Setting palette colors__
+```C#
 	VisualStudio2013Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Theme Variation
 
@@ -119,8 +119,8 @@ The next screenshot displays RadCalendar in the three color variations:
 
 You can switch the three color palettes by calling the `LoadPreset` method as shown below:        
 
-#### __[C#]__
-{{region cs-styling-appearance-visualstudio2013-theme-1}}	
+
+```C#	
 	//default color variation
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Light);
 	
@@ -129,7 +129,7 @@ You can switch the three color palettes by calling the `LoadPreset` method as sh
 	
 	//dark color variation
 	VisualStudio2013Palette.LoadPreset(VisualStudio2013Palette.ColorVariation.Dark); 
-{{endregion}}
+```
 
 >important The `Dark` variation of the theme is designed with a dark background in mind. It is recommended to use such a background in your application when choosing it.
 
@@ -143,8 +143,8 @@ These properties are public so you can easily modify the theme resources at one 
 
 All the available `FontSizes` and `FontFamily` as well as their __default values__:
 
-#### __[C#]__
-{{region cs-styling-appearance-visualstudio2013-theme-2}}
+
+```C#
 	VisualStudio2013Palette.Palette.FontSizeXXS = 9; 
 	VisualStudio2013Palette.Palette.FontSizeXS = 10;
 	VisualStudio2013Palette.Palette.FontSizeS = 11; 
@@ -153,7 +153,7 @@ All the available `FontSizes` and `FontFamily` as well as their __default values
 	VisualStudio2013Palette.Palette.FontSizeXL = 20;
 	VisualStudio2013Palette.Palette.FontSizeXXL = 22;
 	VisualStudio2013Palette.Palette.FontFamily = new FontFamily("Segoe UI");
-{{endregion}}
+```
 
 More details regarding the usage of the rarely used font sizes inside the different controls can be found below:
 
@@ -180,8 +180,8 @@ More details regarding the usage of the rarely used font sizes inside the differ
 	
 As the following example shows, you can change the default FontFamily from "Segoe UI" to "Calibri" and the FontSize from __12__ to __16__ on a click of a button:
 
-#### __[XAML]__
-{{region xaml-styling-appearance-visualstudio2013-theme-0}}
+
+```XAML
 	<StackPanel>
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 			<telerik:RadCalendar x:Name="Calendar" Width="250" Height="250" Margin="4 10"/>
@@ -192,16 +192,16 @@ As the following example shows, you can change the default FontFamily from "Sego
 						   Click="OnButtonChangeFontSizeClick" />
 	</StackPanel>
 </StackPanel>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region cs-styling-appearance-visualstudio2013-theme-3}}
+
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 	   VisualStudio2013Palette.Palette.FontSize = 16;
 	   VisualStudio2013Palette.Palette.FontFamily = new FontFamily("Calibri");
 	}
-{{endregion}}
+```
 
 This will be the final result:
 
@@ -215,18 +215,18 @@ Also, to control the background and border color in the read-only state, you can
 * `ReadOnlyBackgroundBrush`&mdash;Used as a background of elements that are in a read-only state.
 * `ReadOnlyBorderBrush`&mdash;Used in borders inside elements that are in a read-only state.
 
-#### __[C#] Changing the read-only and disabled opacity__
-{{region cs-styling-appearance-visualstudio2013-theme-4}}
+__Changing the read-only and disabled opacity__
+```C#
 	VisualStudio2013Palette.Palette.ReadOnlyOpacity = 0.5;
 	VisualStudio2013Palette.Palette.DisabledOpacity = 0.5;
-{{endregion}}
+```
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `VisualStudio2013Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-visualstudio2013-theme-1}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -234,7 +234,7 @@ When modifying fonts, colors, or other resources from the `VisualStudio2013Palet
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

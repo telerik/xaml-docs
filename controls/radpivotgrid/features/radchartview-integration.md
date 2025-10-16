@@ -42,17 +42,17 @@ In order to create __RadChartView__ you need data source. In our case we need th
 
 Our first task is to create an instance of __PivotChartViewModel__ and set its *DataProvider*. We will use this instance as a DataContext of our application:        
 
-#### __XAML__
 
-{{region radpivotgrid-features-chartview_1}}
+
+```XAML
 	<UserControl.DataContext>
 	    <pivot:PivotChartViewModel DataProvider="{StaticResource DataProvider}"/>
 	</UserControl.DataContext>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-chartview_1}}
+
+```C#
 	public PivotChartUserControl()
 	{
 	    InitializeComponent();
@@ -60,24 +60,21 @@ Our first task is to create an instance of __PivotChartViewModel__ and set its *
 	    chartViewModel.DataProvider = this.DataProvider;
 	    this.DataContext = chartViewModel;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-chartview_1}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Dim chartViewModel = New PivotChartViewModel()
 		chartViewModel.DataProvider = Me.DataProvider
 		Me.DataContext = chartViewModel
 	End Sub
-{{endregion}}
+```
 
 Now we will create a new __RadCartesianChart__ and set its *HorizontalAxis*, *VerticalAxis* and *SeriesProvider* properties. We will use *ChartSeriesProvider* and bind its Source to the *SeriesSource* of __PivotChartViewModel__.        
 
-#### __XAML__
 
-{{region radpivotgrid-features-chartview_2}}
+
+```XAML
 	<telerik:RadCartesianChart x:Name="chart"  Grid.Row="1" Palette="Windows8">
 	    <telerik:RadCartesianChart.HorizontalAxis>
 	        <telerik:CategoricalAxis LabelFitMode="Rotate" />
@@ -94,7 +91,7 @@ Now we will create a new __RadCartesianChart__ and set its *HorizontalAxis*, *Ve
 	        </telerik:ChartSeriesProvider>
 	    </telerik:RadCartesianChart.SeriesProvider>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 Note the binginds for *ItemsSourcePath*, *ValuePath* and *CategoryPath* properties. *Items* is a property of __Telerik.Pivot.Core.PivotChartItemsCollection__. *Values* and *NameX* are properties of __Telerik.Pivot.Core.PivotChartItem__.      
 
@@ -107,9 +104,9 @@ You can change the chart type by setting a Style on your __CategoricalSeriesDesc
 
 First lets create the Style. We'll use BarSeries and we'll set its *CombineMode* and *LegendSettings* properties:         
 
-#### __XAML__
 
-{{region radpivotgrid-features-chartview_3}}
+
+```XAML
 	<telerik:CategoricalSeriesDescriptor  x:Name="seriesDescriptor"  ItemsSourcePath="Items" ValuePath="Value" CategoryPath="NameX">
 	    <telerik:CategoricalSeriesDescriptor.Style>
 	        <Style TargetType="telerik:BarSeries">
@@ -118,13 +115,13 @@ First lets create the Style. We'll use BarSeries and we'll set its *CombineMode*
 	        </Style>
 	    </telerik:CategoricalSeriesDescriptor.Style>
 	</telerik:CategoricalSeriesDescriptor>
-{{endregion}}
+```
 
 The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our application:        
 
-#### __C#__
 
-{{region radpivotgrid-features-chartview_4}}
+
+```C#
 	public class SeriesSourceNameToSeriesLegendSettigsConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -140,11 +137,8 @@ The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our applicati
 	        throw new NotImplementedException();
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-chartview_4}}
+```
+```VB.NET
 	Public Class SeriesSourceNameToSeriesLegendSettigsConverter
 		Implements IValueConverter
 	
@@ -156,15 +150,15 @@ The *SeriesSourceNameToSeriesLegendSettigsConverter* is a class in our applicati
 			Throw New NotImplementedException()
 		End Function
 	End Class
-{{endregion}}
+```
 
 Now we just have to add __RadLegend__ to our application:        
 
-#### __XAML__
 
-{{region radpivotgrid-features-chartview_5}}
+
+```XAML
 	<telerik:RadLegend x:Name="legend" Grid.Row="1" Grid.Column="1" Margin="10 10 0 0" Items="{Binding ElementName=chart, Path=LegendItems, Mode=OneWay}"/>
-{{endregion}}
+```
 
 And here is the result:
 ![Rad Pivot Grid Features Chart View Integration 02](images/RadPivotGrid_Features_ChartViewIntegration_02.png)

@@ -43,10 +43,10 @@ Methods:
 This method is used to scroll to horizontal offset.
 
 #### [C#] Example 1: Scroll to horizontal offset
-{{region radpdfviewer-scrolling_0}}
+```C#
 
     this.pdfViewer.ScrollToHorizontalOffset(50);
-{{endregion}}
+```
 
 The value is in device independent pixels (DIP) (1/96 inch).
 
@@ -55,10 +55,10 @@ The value is in device independent pixels (DIP) (1/96 inch).
 This method is used to scroll to vertical offset. 
 
 #### [C#] Example 2: Scroll to vertical offset.
-{{region radpdfviewer-scrolling_1}}
+```C#
 
     this.pdfViewer.ScrollToVerticalOffset(50);
-{{endregion}}
+```
 
 The value is in device independent pixels (DIP) (1/96 inch).
 
@@ -67,7 +67,7 @@ The value is in device independent pixels (DIP) (1/96 inch).
 Specific points can be defined as [Destination](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.model.navigation.destination) objects and can be used to scroll to them. The _GoToDestination()_ method of **RadPdfViewer** will scroll the document to the destination passed.
 
 #### [C#] Example 3: Scroll to destination
-{{region radpdfviewer-scrolling_2}}
+```C#
 
     string search = "word";
     RadFixedDocument document = this.pdfViewer.Document;
@@ -106,7 +106,7 @@ Specific points can be defined as [Destination](https://docs.telerik.com/devtool
     };
 
     this.pdfViewer.GoToDestination(location);
-{{endregion}}
+```
 
 More information about the **Destination** objects and the usage of the _GoToDestination()_ method is available in the [Annotations]({%slug radpdfviewer-document-model-annotations%}) help article.
 
@@ -115,7 +115,7 @@ More information about the **Destination** objects and the usage of the _GoToDes
 The scroll bars are of type [ScrollBar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.scrollbar?view=netcore-3.1) which inherits from the [FrameworkElement](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement?view=netcore-3.1) class some properties that lets you change its visualization.
 
 #### [C#] Example 4: Changing the size of the scrollbars
-{{region radpdfviewer-scrolling_3}}
+```C#
 
     this.pdfViewer.VerticalScrollBar.Width = 20;
     this.pdfViewer.VerticalScrollBar.MinHeight = 20;
@@ -124,6 +124,6 @@ The scroll bars are of type [ScrollBar](https://docs.microsoft.com/en-us/dotnet/
     this.pdfViewer.HorizontalScrollBar.Height = 30;
     this.pdfViewer.HorizontalScrollBar.MinWidth = 100;
     this.pdfViewer.HorizontalScrollBar.MaxWidth = 400;
-{{endregion}}
+```
 
 >note Disabling the scrolling functionality of RadPdfViewer: Go to [Disable scrolling in the RadPdfViewer]({%slug kb-pdfviewer-disable-scrolling%}) knowledge base article. 

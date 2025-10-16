@@ -22,8 +22,7 @@ Every timeline contains an Annotations collection which holds all the TimelineAn
 
 The following example demonstrates how you can add a couple of annotations to the Annotations collection of a RadTimeline control:           
 
-#### __XAML__
-{{region radtimeline-features-annotations_0}}
+```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
 	                        PeriodEnd="2012-01-01"
 	                        VisiblePeriodStart="2011-01-01"
@@ -61,7 +60,7 @@ The following example demonstrates how you can add a couple of annotations to th
 	                                    ContentTemplate="{StaticResource TimelineAnnotationTemplate}" />
 	    </telerik:RadTimeline.Annotations>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 
 ![Rad Timeline-features-annotations-Annotations Collection](images/RadTimeline-features-annotations-AnnotationsCollection.jpg)
 
@@ -76,9 +75,7 @@ The AnnotationsSource property specifies a collection, used to generate the anno
 
 The following example demonstrates how you can bind the AnnotationsSource of a RadTimeline control:
 
-#### __XAML__
-
-{{region radtimeline-features-annotations_1}}
+```XAML
 	<Grid.Resources>
 	    <DataTemplate x:Key="TimelineAnnotationTemplate">
 	        <Border Background="#FF25A0DA">
@@ -108,11 +105,9 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	        <telerik:DayInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 
-#### __C#__
-
-{{region radtimeline-features-annotations_0}}
+```C#
 	public class RadTimelineAnnotationsViewModel
 	{
 	    public RadTimelineAnnotationsViewModel()
@@ -181,11 +176,8 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	
 	    public int ZIndex { get; set; }
 	}
-	{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-features-annotations_0}}
+```
+```VB.NET
 	Public Class RadTimelineAnnotationsViewModel
 		Public Sub New()
 			Me.PeriodStart = New DateTime(2011, 1, 1)
@@ -333,7 +325,7 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 		End Property
 		Private m_ZIndex As Integer
 	End Class
-	{{endregion}}
+```
 
 ![Rad Timeline-features-annotations-Annotations Source](images/RadTimeline-features-annotations-AnnotationsSource.jpg)
 
@@ -345,9 +337,7 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 * __ContentTemplate property__ - A DataTemplate that defines the visualization of the content. The default is null.
 * __Changing the default annotation ZIndex__ - The default ZIndex of a timeline annotation instance is 300. That is, by default, a timeline annotation appears on top of the timeline items (default ZIndex=200) and the period items (default ZIndex=100). You can change the ZIndex of an annotation instance using the attached Canvas.ZIndex property. The following example demonstrates how you can change the default annotation ZIndex value:
 
-#### __XAML__
-
-{{region radtimeline-features-annotations_2}}
+```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
 	                        PeriodEnd="2012-01-01"
 	                        VisiblePeriodStart="2011-01-01"
@@ -384,15 +374,13 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	                                    ContentTemplate="{StaticResource TimelineAnnotationTemplate}" />
 	    </telerik:RadTimeline.Annotations>
 	</telerik:RadTimeline>
-	{{endregion}}
+```
 
 ![Rad Timeline-features-annotations-ZIndex](images/RadTimeline-features-annotations-ZIndex.jpg)
 
 * __Changing the default annotation top margin__  - The default top margin of a timeline annotation instance equals the height of the period items, positioned on top of the timeline line. You can change the default top margin value of an annotation instance using the Margin property. The following example demonstrates how you can change the default annotation top margin value:
 
-#### __XAML__
-
-{{region radtimeline-features-annotations_3}}
+```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
 	                        PeriodEnd="2012-01-01"
 	                        VisiblePeriodStart="2011-01-01"
@@ -432,6 +420,6 @@ The following example demonstrates how you can bind the AnnotationsSource of a R
 	                                    ContentTemplate="{StaticResource TimelineAnnotationTemplate}" />
 	    </telerik:RadTimeline.Annotations>
 	</telerik:RadTimeline>
-	{{endregion}}
+```
 
 ![Rad Timeline-features-annotations-Margin](images/RadTimeline-features-annotations-Margin.jpg)

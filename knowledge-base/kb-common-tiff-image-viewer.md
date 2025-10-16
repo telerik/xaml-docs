@@ -29,8 +29,8 @@ At the moment of writing this article (2024), the `RadImageEditor` displays the 
 
 If `RadImageEditor` is not suitable and you need to change between the multiple images in the .tiff file, then you can implement custom tiff image viewer control.
 
-#### __[C#] Custom Tiff Viewer Code-Behind Definition__
-{{region kb-common-tiff-image-viewer-1}}
+__Custom Tiff Viewer Code-Behind Definition__
+```C#
 	public partial class TiffImageViewer : UserControl
 	{
 		private const double zoomStep = 0.1;
@@ -162,15 +162,15 @@ If `RadImageEditor` is not suitable and you need to change between the multiple 
 			}            
 		}
 	}
-{{endregion}}
+```
 
-#### __[XAML] Using the Custom Tiff Viewer__
-{{region kb-common-tiff-image-viewer-2}}
+__Using the Custom Tiff Viewer__
+```XAML
 	<local:TiffImageViewer>
 		<local:TiffImageViewer.Source>
 			<BitmapImage UriSource="sample.tiff" />
 		</local:TiffImageViewer.Source>
 	</local:TiffImageViewer>
-{{endregion}}
+```
 
 

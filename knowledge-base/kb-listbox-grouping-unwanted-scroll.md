@@ -32,8 +32,8 @@ Selecting an item when [grouping]({%slug radlistbox-how-to-group-items%}) is app
 
 To disable this behavior, set the `IsScrollIntoViewEnabled` property of the RadListBox control to __False__. This will disable the automatic scroll into view logic when selecting a new item.
 
-#### __[XAML] Setting the IsScrollIntoViewEnabled property of RadListBox to False__
-{{region kb-listbox-grouping-unwanted-scroll-0}}
+__Setting the IsScrollIntoViewEnabled property of RadListBox to False__
+```XAML
     <telerik:RadListBox
         DisplayMemberPath="MyPropertyName"
         IsScrollIntoViewEnabled="False"
@@ -43,4 +43,4 @@ To disable this behavior, set the `IsScrollIntoViewEnabled` property of the RadL
             <GroupStyle />
         </telerik:RadListBox.GroupStyle>
     </telerik:RadListBox>
-{{endregion}}
+```

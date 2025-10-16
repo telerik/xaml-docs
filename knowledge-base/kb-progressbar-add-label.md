@@ -32,8 +32,8 @@ How to add label on top of the `RadProgressBar` indicating the current progress.
 
 Add `TextBlock` element in a `Canvas` panel placed on top of the ProgressBar.
 
-#### __[XAML]__
-{{region kb-progressbar-add-label-0}}
+
+```XAML
 	<Grid Width="250" Height="30">
 		<telerik:RadProgressBar x:Name="progressBar" Minimum="0" Maximum="100" 
 								Value="40" ValueChanged="RadProgressBar_ValueChanged"
@@ -42,12 +42,12 @@ Add `TextBlock` element in a `Canvas` panel placed on top of the ProgressBar.
 			<TextBlock x:Name="progressBarLabel" VerticalAlignment="Center" Canvas.Top="6"/>
 		</Canvas>
 	</Grid>
-{{endregion}}
+```
 
 In code-behind update the `Text` and the left position of the `TextBlock` in the canvas.
 
-#### __[C#]__
-{{region kb-progressbar-add-label-1}}
+
+```C#
 	private void UpdateLabel()
 	{
 		double delta = progressBar.Maximum - this.progressBar.Minimum;
@@ -71,6 +71,6 @@ In code-behind update the `Text` and the left position of the `TextBlock` in the
 	{
 		this.UpdateLabel();
 	}
-{{endregion}}
+```
 
 ![Custom ProgressBar Label](images/kb-progressbar-add-label-0.png)

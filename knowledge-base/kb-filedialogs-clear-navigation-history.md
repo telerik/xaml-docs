@@ -23,8 +23,8 @@ How to clear the navigation history of the RadFileDialogs' ExplorerControl.
 
 To clear the navigation history, you can subscribe to the `Loaded` event of the RadFileDialog or the ExplorerControl in order to access the `HistoryNavigationPaneControl`. Then, you can get the `DirectoryHistory` object and call its `Clear` method.
 
-#### __[C#]__
-{{region kb-filedialogs-clear-navigation-history-0}}
+
+```C#
 	 private HistoryNavigationPaneControl historyNavigationPane;
 
 	 private void ExplorerControl_Loaded(object sender, RoutedEventArgs e)
@@ -36,4 +36,4 @@ To clear the navigation history, you can subscribe to the `Loaded` event of the 
 	 {
 		 this.historyNavigationPane.DirectoryHistory.Clear();
 	 }
-{{endregion}}
+```

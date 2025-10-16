@@ -20,9 +20,7 @@ In few words, the approaches that you should follow are:
 
 	For the purpose of this example the following business objects will be used:
 
-	#### __C#__
-
-	{{region radtreeview-events-working-with-item-prepared-event_0}}
+	```C#
 		public class DataItem
 		{
 			public DataItem()
@@ -48,11 +46,8 @@ In few words, the approaches that you should follow are:
 				set;
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-events-working-with-item-prepared-event_1}}
+	```
+	```VB.NET
 		Public Class DataItem
 			Public Sub New()
 				Me.Items = New List(Of DataItem)()
@@ -88,13 +83,11 @@ In few words, the approaches that you should follow are:
 				End Set
 			End Property
 		End Class
-		{{endregion}}
+	```
 
 	The __CheckState__ property of the __DataItem__ class will be bound to the __CheckState__ property of the __RadTreeViewItem__.
 
-	#### __C#__
-
-	{{region radtreeview-events-working-with-item-prepared-event_2}}
+	```C#
 		public class RawDataSource : List<DataItem>
 		{
 			public RawDataSource()
@@ -135,11 +128,8 @@ In few words, the approaches that you should follow are:
 				}
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-events-working-with-item-prepared-event_3}}
+	```
+	```VB.NET
 		Public Class RawDataSource
 			Inherits List(Of DataItem)
 			Public Sub New()
@@ -169,7 +159,7 @@ In few words, the approaches that you should follow are:
 				End Select
 			End Function
 		End Class
-		{{endregion}}
+	```
 
 	The __RawDataSource__ does nothing special, except for initializing the sample data for the __RadTreeView__. This is the data source for the treeview.
 
@@ -177,19 +167,15 @@ In few words, the approaches that you should follow are:
 	* __IsOptionElementsEnabled__
 	* __IsTriStateMode__
 
-	#### __XAML__
-
-	{{region radtreeview-events-working-with-item-prepared-event_4}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView" IsOptionElementsEnabled="True" IsTriStateMode="True"/>
-		{{endregion}}
+	```
 
 
 
 * Declare a __RawDataSource__ object as a resource in your XAML and set the __RadTreeView__'s __ItemsSource__ property.
 
-	#### __XAML__
-
-	{{region radtreeview-events-working-with-item-prepared-event_5}}
+	```XAML
 		<UserControl.Resources>
 			<example:RawDataSource x:Key="DataSource"/>
 		</UserControl.Resources>
@@ -198,34 +184,11 @@ In few words, the approaches that you should follow are:
 							 IsOptionElementsEnabled="True" 
 							 IsTriStateMode="True" 
 							 ItemsSource="{StaticResource DataSource}"/>
-		{{endregion}}
+	```
 
-* Declare a new [HierarchicalDataTemplate]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}) in your XAML resources and set the __RadTreeView__'s __ItemTemplate__ property.{% if site.site_name == 'Silverlight' %}
+* Declare a new [HierarchicalDataTemplate]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}) in your XAML resources and set the __RadTreeView__'s __ItemTemplate__ property.
 
-	#### __XAML__
-
-	{{region radtreeview-events-working-with-item-prepared-event_6}}
-		<UserControl.Resources>
-			<example:RawDataSource x:Key="DataSource"/>
-			<telerik:HierarchicalDataTemplate x:Key="ItemTemplate" ItemsSource="{Binding Items}">
-				<StackPanel Orientation="Horizontal">
-					<TextBlock Text="{Binding Name}" />
-				</StackPanel>
-			</telerik:HierarchicalDataTemplate>
-		</UserControl.Resources>
-		....
-		<telerik:RadTreeView x:Name="radTreeView" 
-							 IsOptionElementsEnabled="True"
-							 IsTriStateMode="True"
-							 ItemsSource="{StaticResource DataSource}" 
-							 ItemTemplate="{StaticResource ItemTemplate}"/>
-		{{endregion}}
-
-	{% endif %}{% if site.site_name == 'WPF' %}
-
-	#### __XAML__
-
-	{{region radtreeview-events-working-with-item-prepared-event_8}}
+	```XAML
 		<Window.Resources>
 			<example:RawDataSource x:Key="DataSource"/>
 			<HierarchicalDataTemplate x:Key="ItemTemplate" ItemsSource="{Binding Items}">
@@ -240,49 +203,36 @@ In few words, the approaches that you should follow are:
 							 IsTriStateMode="True"
 							 ItemsSource="{StaticResource DataSource}" 
 							 ItemTemplate="{StaticResource ItemTemplate}"/>
-		{{endregion}}
-
-	{% endif %}
+	```
 
 * The final and most important step is to attach to the __ItemPrepared__ event of the __RadTreeView__.
 
-	#### __XAML__
-
-	{{region radtreeview-events-working-with-item-prepared-event_7}}
+	```XAML
 		<telerik:RadTreeView x:Name="radTreeView"
 								   IsOptionElementsEnabled="True"
 								   IsTriStateMode="True"
 								   ItemsSource="{StaticResource DataSource}"
 								   ItemTemplate="{StaticResource ItemTemplate}"
 								   ItemPrepared="radTreeView_ItemPrepared"/>
-		{{endregion}}
+	```
 
 	Switch to the code-behind and in the event handler add a code, synchronizing the __CheckState__ property of the __RadTreeViewItem__ object with the __CheckState__ property of the __DataItem__ object.
 
-	#### __C#__
-
-	{{region radtreeview-events-working-with-item-prepared-event_8}}
+	```C#
 		private void radTreeView_ItemPrepared( object sender, Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs e )
 		{
 			e.PreparedItem.CheckState = ( e.PreparedItem.Item as DataItem ).CheckState;
 		}
-		{{endregion}}
-
-
-
-	#### __VB.NET__
-
-	{{region radtreeview-events-working-with-item-prepared-event_9}}
+	```
+	```VB.NET
 		Private Sub radTreeView_ItemPrepared(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs)
 			e.PreparedItem.CheckState = TryCast(e.PreparedItem.Item, DataItem).CheckState
 		End Sub
-		{{endregion}}
+	```
 		
 * The example so far is almost complete. However, there are some drawbacks. The __RadTreeViewItem__'s __CheckState__ property is synchronized just once. If the user checks\unchecks a specific treeview item, the source object will not be updated. In order to solve this problem you should attach to the __RadTreeViewItem__'s __Checked__ and __Unchecked__ events.
 
-	#### __C#__
-
-	{{region radtreeview-events-working-with-item-prepared-event_10}}
+	```C#
 		private void radTreeView_ItemPrepared( object sender, Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs e )
 		{
 			e.PreparedItem.CheckState = ( e.PreparedItem.Item as DataItem ).CheckState;
@@ -307,11 +257,8 @@ In few words, the approaches that you should follow are:
 				( item.Item as DataItem ).CheckState = System.Windows.Automation.ToggleState.On;
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-events-working-with-item-prepared-event_11}}
+	```
+	```VB.NET
 		Private Sub radTreeView_ItemPrepared(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.RadTreeViewItemPreparedEventArgs)
 			e.PreparedItem.CheckState = TryCast(e.PreparedItem.Item, DataItem).CheckState
 			AddHandler e.PreparedItem.Checked, AddressOf PreparedItem_Checked
@@ -331,7 +278,7 @@ In few words, the approaches that you should follow are:
 				TryCast(item.Item, DataItem).CheckState = System.Windows.Automation.ToggleState.[On]
 			End If
 		End Sub
-		{{endregion}}
+	```
 
 ## See Also
  * [Events-Overview]({%slug radtreeview-events-overview%})

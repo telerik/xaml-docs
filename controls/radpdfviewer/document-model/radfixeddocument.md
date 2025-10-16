@@ -19,7 +19,7 @@ __RadFixedDocument__ is the class representing a PDF document inside __RadPdfVie
 You can create a PDF document with the API of PdfProcessing and directly assing it to RadPdfViewer.
 
 #### [C#] Example 1: Create a PDF document and show it  
-{{region radpdfviewer-document-model-radfixeddocument_1}}
+```C#
     RadFixedDocument document = new RadFixedDocument();
     using (RadFixedDocumentEditor editor = new RadFixedDocumentEditor(document))
     {
@@ -27,13 +27,13 @@ You can create a PDF document with the API of PdfProcessing and directly assing 
     }
     
     this.pdfViewer.Document = document;
-{{endregion}}
+```
 
 For an existing PDF document, an instance of __RadFixedDocument__ can be created using __PdfFormatProvider__  and assigned to __RadPdfViewer__ in the following way:
 
 #### [C#] Example 2: Import a PDF document
 
-{{region radpdfviewer-document-model-radfixeddocument_1}}
+```C#
 
     Stream stream = System.Windows.Application.GetResourceStream(new Uri("PdfViewerDemo;component/SampleData/test.pdf", UriKind.Relative)).Stream;
     
@@ -42,7 +42,7 @@ For an existing PDF document, an instance of __RadFixedDocument__ can be created
     
     RadFixedDocument document = pdfFormatProvider.Import(stream, null);
     this.pdfViewer.Document = document;
-{{endregion}}
+```
 
 >The __PdfFormatProvider__ of __RadPdfViewer__ must not be confused with that of __RadRichTextBox__. Telerik.Windows.Documents.__Fixed__.FormatProviders.Pdf.PdfFormatProvider is the provider that __RadPdfViewer__ uses to import files. It is located in the __Telerik.Windows.Documents.Fixed__ assembly.For reference, the Telerik.Windows.Documents.FormatProviders.Pdf.PdfFormatProvider of __RadRichTextBox__ is included in the __Telerik.Windows.Documents.FormatProviders.Pdf__ assembly, in a namespace with the same name. The latter can be used only to export __RadDocument__ to PDF.
 

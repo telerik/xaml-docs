@@ -16,9 +16,9 @@ The [RadSplitContainer]({%slug raddocking-features-split-container%}) allows you
 
 In order to style all __RadSplitContainers__ in a RadDocking, you should create a style targeting __RadSplitContainer__.
 
-#### __[XAML] Example 1: Creating an implicit style targetting RadSplitContainer__
+__Example 1: Creating an implicit style targetting RadSplitContainer__
 
-{{region xaml-raddocking-styling-the-radsplitcontainer-0}}
+```XAML
     <Application.Resources>
         <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
         <Style TargetType="telerik:RadSplitContainer" BasedOn="{StaticResource RadSplitContainerStyle}">-->
@@ -41,7 +41,7 @@ In order to style all __RadSplitContainers__ in a RadDocking, you should create 
             </telerik:RadSplitContainer>
         </telerik:RadDocking>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Styled RadSplitContainer in the Office2016 theme__
 ![Styled RadSplitContainer in the Office2016 theme](images/RadDocking_SplitContainer_Style.png)

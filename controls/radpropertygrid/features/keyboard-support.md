@@ -40,9 +40,9 @@ The approach for accomplishing the purpose is to create a separate class, inheri
 
 The class responsible for customizing the keyboard navigation should be similar to the one below:
 
-#### __[C#] Example 1: Creating custom command provider__
+__Example 1: Creating custom command provider__
 
-	{{region cs-radpropertygrid-features-keyboard-support_0}}
+```C#
 	public class CustomKeyboardCommandProvider : PropertyGridCommandProvider
 	{
 	    public CustomKeyboardCommandProvider()
@@ -78,11 +78,8 @@ The class responsible for customizing the keyboard navigation should be similar 
 	        return actionsToExecute;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating custom command provider__
-
-	{{region vb-radpropertygrid-features-keyboard-support_1}}
+```
+```VB.NET
 	Public Class CustomKeyboardCommandProvider
 	    Inherits PropertyGridCommandProvider
 	    Public Sub New()
@@ -111,33 +108,30 @@ The class responsible for customizing the keyboard navigation should be similar 
 	        Return actionsToExecute
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Following up the code-snippet above, a press of Tab/ Shift + Tab keys will result in moving the focus to the property field above/ below and expanding it if possible. However, do not forget to remove the predefined commands for that particular key by calling the Clear() method.
 
 The last thing to be done is to set CommandProvider Property of the RadPropertyGrid to be the newly-created CustomKeyboardCommandProvider class:
 
-#### __[XAML]Example 2: Defining the custom command provider in XAML__
+__Example 2: Defining the custom command provider in XAML__
 
-	{{region xaml-radpropertygrid-features-keyboard-support_2}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid">
 	    <telerik:RadPropertyGrid.CommandProvider>
 	        <my:CustomKeyboardCommandProvider PropertyGrid="{Binding ElementName=PropertyGrid1}" />
 	    </telerik:RadPropertyGrid.CommandProvider>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Set the custom command provider to RadPropertyGrid__
+__Example 3: Set the custom command provider to RadPropertyGrid__
 
-	{{region cs-radpropertygrid-features-keyboard-support_3}}
+```C#
 	this.RadPropertyGrid.CommandProvider = new CustomKeyboardCommandProvider(this.RadPropertyGrid);
-{{endregion}}
-
-#### __[VB.NET] Example 3: Set the custom command provider to RadPropertyGrid__
-
-	{{region vb-radpropertygrid-features-keyboard-support_4}}
+```
+```VB.NET
 	Me.RadPropertyGrid.CommandProvider = New CustomKeyboardCommandProvider
-{{endregion}}
+```
 
 ## Text Search Navigation
 
@@ -145,53 +139,53 @@ With the __R2 2020__ release, the __RadPropertyGrid__ allows you to navigate to 
 
 > Searching for a property by typing its first letter requires the __RadPropertyGrid control to be focused__.
 
-#### __[XAML]Example 4: Enabling keyboard search navigation__
+__Example 4: Enabling keyboard search navigation__
 
-	{{region xaml-radpropertygrid-features-keyboard-support_5}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True"/>
-{{endregion}}
+```
 
 ### Text Search Mode
 
 When the user searches for a property by pressing a letter from the keyboard, the control will select the first property, which starts with the typed letter. This is the default behavior of the text search functionality. This behavior is controlled from the __TextSearchMode__ property of the RadPropertyGrid. The supported modes of this enumeration property are: __StartsWith and Contains__.
 
-#### __[XAML]Example 5: Contains Text Search Mode__
+__Example 5: Contains Text Search Mode__
 
-	{{region xaml-radpropertygrid-features-keyboard-support_6}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True" TextSearchMode="Contains"/>
-{{endregion}}
+```
 
 ### Text Searh With Case Sensitive
 
 By default, text search navigation is case-insensitive. You can make your search case-sensitive by using the __IsTextSearchCaseSensitive__ property.
 
-#### __[XAML]Example 6: Search with Case-Sensitive__
+__Example 6: Search with Case-Sensitive__
 
-	{{region xaml-radpropertygrid-features-keyboard-support_7}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="RadPropertyGrid" IsTextSearchEnabled="True" TextSearchMode="Contains" IsTextSearchCaseSensitive="True"/>
-{{endregion}}
+```
 
 ### Text Search Timeout
 
 In a scenario with a larger text for a property name, you may need to increase the time for typing more letters. The keyboard search text navigation functionality allows you to increase the timeout for resetting the typed text. This can be done through the __TextSearch.AutoCompleteTimeout__ static property of the RadPropertyGrid. This property is of type __TimeSpan__.
 
-#### __[XAML]Example 8: Increase the timeout for resetting the typed text__
+__Example 8: Increase the timeout for resetting the typed text__
 
-	{{region xaml-radpropertygrid-features-keyboard-support_9}}
+```XAML
 	public MainWindow()
 	{
 		InitializeComponent();
 		Telerik.Windows.Controls.TextSearch.AutoCompleteTimeout = new TimeSpan(1500);
 	}
-{{endregion}}
+```
 
 ## Disabling Navigation
 
 As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBuiltInNavigation__. By default its value is set to "True". In order to disable the navigation which comes from "Flat" RenderMode, you can set its value to "False".
 
-#### __[C#] Example 10: Disabling navigation__
+__Example 10: Disabling navigation__
 
-	{{region cs-radpropertygrid-features-keyboard-support_11}}
+```C#
 	public class CustomKeyboardCommandProviderWithoutNavigation : PropertyGridCommandProvider
 	{
 	    public CustomKeyboardCommandProviderWithoutNavigation()
@@ -205,11 +199,8 @@ As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBu
 	        this.EnableBuiltInNavigation = false;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 10: Disabling navigation__
-
-	{{region vb-radpropertygrid-features-keyboard-support_12}}
+```
+```VB.NET
 	Public Class CustomKeyboardCommandProviderWithoutNavigation
 	    Inherits PropertyGridCommandProvider
 	    Public Sub New()
@@ -221,7 +212,7 @@ As of __Q1 2015__ PropertyGridCommandProvider exposes a new property: __EnableBu
 	        Me.EnableBuiltInNavigation = False
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## See Also
 

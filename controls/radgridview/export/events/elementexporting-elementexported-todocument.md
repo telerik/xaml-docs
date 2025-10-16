@@ -22,28 +22,24 @@ The __ElementExportingToDocument__ event can be cancelled for a particular row o
 
 You can subscribe to the events either declaratively or from the code-behind like this:
 
-#### __[XAML]Example 1: Subscribe to events declaratively:__
+__Example 1: Subscribe to events declaratively:__
 
-{{region xaml-gridview-export-events_0}}
+```XAML
 	<telerik:RadGridView x:Name="RadGridView1"
 	             ElementExportingToDocument="RadGridView1_ElementExportingToDocument"
 	             ElementExportedToDocument="RadGridView1_ElementExportedToDocument" />
-{{endregion}}
+```
 
-#### __[C#]Example 2: Subscribe to events from the code-behind:__
+__Example 2: Subscribe to events from the code-behind:__
 
-{{region cs-gridview-export-events_1}}
+```C#
 	RadGridView1.ElementExportingToDocument += RadGridView1_ElementExportingToDocument;
 	RadGridView1.ElementExportedToDocument += RadGridView1_ElementExportedToDocument;
-{{endregion}}
-
-
-#### __[VB.NET]Example 3: Subscribe to events from the code-behind:__
-
-{{region vb-gridview-export-events_2}}
+```
+```VB.NET
 	AddHandler RadGridView1.ElementExportingToDocument, AddressOf RadGridView1_ElementExportingToDocument
 	AddHandler RadGridView1.ElementExportedToDocument, AddressOf RadGridView1_ElementExportedToDocument
-{{endregion}}
+```
 
 ## ElementExportingToDocument
 
@@ -69,13 +65,13 @@ The event handler expects __GridViewElementExportedToDocumentEventArgs__ argumen
 You can define a Style when __InitializingExcelMLStyles__ event is raised.
 For example:
         
-#### __[C#] Example 6: Define a style:__
+__Example 6: Define a style:__
 
-{{region cs-gridview-export-events_7}}
+```C#
 	ExcelMLStyle style = new ExcelMLStyle("0");
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
-{{endregion}}
+```
 
 You can find a list of the properties that could be set for __ExcelMLStyle__:
         
@@ -113,9 +109,9 @@ __NumberFormat:__
 - Format
 
 
-#### __[C#] Example 7: Apply a style before exporting:__
+__Example 7: Apply a style before exporting:__
 
-{{region cs-gridview-export-events_9}}
+```C#
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("0");
@@ -150,7 +146,7 @@ __NumberFormat:__
 	
 	    e.Styles.Add(style);
 	}
-{{endregion}}
+```
         
 ## See Also
 

@@ -26,8 +26,8 @@ This happens because of a `MouseBinding` defined in the `InputBindings` collecti
 
 To avoid the issue, you can add a new `Style` for the `PaneHeader` element in the Resources of the window that opens on the new UI thread.
 
-#### __[XAML]__
-{{region kb-docking-invalidoperationexception-input-bindings-0}}
+
+```XAML
 	<UserControl.Resources>
 		<!--If you use NoXaml dlls please add BasedOn="{StaticResource PaneHeaderStyle}" to the Style object. For example: -->
 		<!--<Style TargetType="telerik:PaneHeader" BasedOn="{StaticResource PaneHeaderStyle}" >-->
@@ -45,7 +45,7 @@ To avoid the issue, you can add a new `Style` for the `PaneHeader` element in th
 			</Setter>
 		</Style>
 	</UserControl.Resources>
-{{endregion}}
+```
 
 In some cases, you may need to merge this `Style` in the `Resources` of the opened `ToolWindow`. To do this, you can use the `ToolWindowCreated` event of `RadDocking`, where you can access the `Resources` of the window in code-behind.
 

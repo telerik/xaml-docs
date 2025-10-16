@@ -23,18 +23,14 @@ This tutorial will demonstrate you the second approach by creating a column with
 * The first step is to create a class that inherits from __GridViewBoundColumnBase__ (this is the base class used to create a column with editing capabilities). Name the class __RadColorPickerColumn__.
           
 
-#### __[C#] Example 1: Creating the RadColorPickerColumn class__
+__Example 1: Creating the RadColorPickerColumn class__
 
-	{{region cs-radgridview-howto-create-custom-editor_0}}
+```C#
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 1: Creating the RadColorPickerColumn class__
-
-	{{region vb-radgridview-howto-create-custom-editor_1}}
+```
+```VB.NET
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	
@@ -84,16 +80,16 @@ This tutorial will demonstrate you the second approach by creating a column with
 	    End Property
 	    Public Shared ReadOnly MainPaletteProperty As DependencyProperty = DependencyProperty.Register("MainPalette", GetType(ColorPreset), GetType(RadColorPickerColumn), New PropertyMetadata(Nothing))
 	End Class
-{{endregion}}
+```
 
 There are several methods you should override:
 
 * __CreateCellElement()__ – override this method if you want to customize how cells that belongs to this column will look like. This method is called when __GridViewCell__ is prepared and returned element will be used as a __ContentPresenter__. If you do not override this method a __TextBlock__ control will be used as a default presenter.
           
 
-#### __[C#] Example 2: Overriding the CreateCellElement method__
+__Example 2: Overriding the CreateCellElement method__
 
-	{{region cs-radgridview-howto-create-custom-editor_2}}
+```C#
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -115,11 +111,8 @@ There are several methods you should override:
 	        return cellElement;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Overriding the CreateCellElement method__
-
-	{{region vb-radgridview-howto-create-custom-editor_3}}
+```
+```VB.NET
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 
@@ -140,13 +133,13 @@ There are several methods you should override:
 		Return cellElement
 	    End Function
 	End Class
-	{{endregion}}
+```
 
 You should note two things here: first, a border with bound background to the color from data item is created and second, a custom converter is used. The next code snippet shows you the code for the __ColorToBrushConverter__.
 
-#### __[C#] Example 3: The ColorToBrushConverter class__
+__Example 3: The ColorToBrushConverter class__
 
-	{{region cs-radgridview-howto-create-custom-editor_4}}
+```C#
 	public class ColorToBrushConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -163,11 +156,8 @@ You should note two things here: first, a border with bound background to the co
 	        return value;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: The ColorToBrushConverter class__
-
-	{{region vb-radgridview-howto-create-custom-editor_5}}
+```
+```VB.NET
 	Public Class ColorToBrushConverter
 	    Implements IValueConverter
 	
@@ -182,13 +172,13 @@ You should note two things here: first, a border with bound background to the co
 	        Return value
 	    End Function
 	End Class
-{{endregion}}
+```
 
 * __CreateCellEditElement()__ – override this method to create custom editor element (according to type of the property or some other business logic). This method must be overridden otherwise __GridViewCell__ will have no content when enters into edit mode.
 
-#### __[C#] Example 4: Overriding the CreateCellEditElement method__
+__Example 4: Overriding the CreateCellEditElement method__
 
-	{{region cs-radgridview-howto-create-custom-editor_6}}
+```C#
 	public override FrameworkElement CreateCellEditElement(GridViewCell cell, object dataItem)
 	{
 	    var cellEditElement = new RadColorPicker();
@@ -203,11 +193,8 @@ You should note two things here: first, a border with bound background to the co
 	
 	    return cellEditElement as FrameworkElement;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Overriding the CreateCellEditElement method__
-
-	{{region vb-radgridview-howto-create-custom-editor_7}}
+```
+```VB.NET
 	Public Overrides Function CreateCellEditElement(ByVal cell As GridViewCell, ByVal dataItem As Object) As FrameworkElement
 	    Dim cellEditElement = New RadColorPicker()
 	
@@ -221,13 +208,13 @@ You should note two things here: first, a border with bound background to the co
 	
 	    Return TryCast(cellEditElement, FrameworkElement)
 	End Function
-{{endregion}}
+```
 
 In this method an instance of a __RadColorPicker__ control is created and returned. In order to work properly as an editor you have to bind this editor to the underlying data property. This is done in the __CreateValueBinding()__ method:
 
-#### __[C#] Example 5: The CreateValueBinding() method__
+__Example 5: The CreateValueBinding() method__
 
-	{{region cs-radgridview-howto-create-custom-editor_8}}
+```C#
 	private Binding CreateValueBinding()
 	{
 	    Binding valueBinding = new Binding();
@@ -238,11 +225,8 @@ In this method an instance of a __RadColorPicker__ control is created and return
 	    valueBinding.Path = new PropertyPath(this.DataMemberBinding.Path.Path);
 	    return valueBinding;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: The CreateValueBinding() method__
-
-	{{region vb-radgridview-howto-create-custom-editor_9}}
+```
+```VB.NET
 	Private Function CreateValueBinding() As Binding
 	    Dim valueBinding As New Binding()
 	    valueBinding.Mode = BindingMode.TwoWay
@@ -252,7 +236,7 @@ In this method an instance of a __RadColorPicker__ control is created and return
 	    valueBinding.Path = New PropertyPath(Me.DataMemberBinding.Path.Path)
 	    Return valueBinding
 	End Function
-{{endregion}}
+```
 
 You should set __BindingMode__ to __TwoWay__, because this is an editor and you need to update data property which is bound to the parent __GridViewColumn__. The __NotifyOnValidationError__ and __ValidatesOnExceptions__ properties are related to validation engine (if any error or exception occurs while you set new value to the data object will result as validation error and editor will enter into invalid state (if editor has such state)).
 Set __UpdateSourceTrigger__ to __Explicit__ and allow __RadGridView__ to validate and update the value of the data item at the right moment. Of course every __TwoWay__ binding requires a path, so you take the path from the __DataMemberBinding__ property.
@@ -261,9 +245,9 @@ Another interesting line of the __CreateCellEditElement()__ method is: __cellEdi
 
 * __CopyPropertiesFrom()__
 
-#### __[C#] Example 6: Overriding the CopyPropertiesFrom method__
+__Example 6: Overriding the CopyPropertiesFrom method__
 
-	{{region cs-radgridview-howto-create-custom-editor_10}}
+```C#
 	public override void CopyPropertiesFrom(Telerik.Windows.Controls.GridViewColumn source)
 	{
 	    base.CopyPropertiesFrom(source);
@@ -290,11 +274,8 @@ Another interesting line of the __CreateCellEditElement()__ method is: __cellEdi
 	    typeof(ColorPreset),
 	    typeof(RadColorPickerColumn),
 	    new PropertyMetadata(null));
-{{endregion}}
-
-#### __[VB.NET] Example 6: Overriding the CopyPropertiesFrom method__
-
-	{{region vb-radgridview-howto-create-custom-editor_11}}
+```
+```VB.NET
 	Public Overrides Sub CopyPropertiesFrom(ByVal source As Telerik.Windows.Controls.GridViewColumn)
 	    MyBase.CopyPropertiesFrom(source)
 	    Dim _radColorPickerColumn = TryCast(source, RadColorPickerColumn)
@@ -313,13 +294,13 @@ Another interesting line of the __CreateCellEditElement()__ method is: __cellEdi
 	End Property
 	
 	Public Shared ReadOnly MainPaletteProperty As DependencyProperty = DependencyProperty.Register("MainPalette", GetType(ColorPreset), GetType(RadColorPickerColumn), New PropertyMetadata(Nothing))
-{{endregion}}
+```
 
 Here is the full code for the __RadColorPickerColumn__ class:
 
-#### __[C#] Example 7: The final RadColorPickerColumn class__
+__Example 7: The final RadColorPickerColumn class__
 
-	{{region cs-radgridview-howto-create-custom-editor_12}}
+```C#
 	public class RadColorPickerColumn : GridViewBoundColumnBase
 	{
 	    public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -380,11 +361,8 @@ Here is the full code for the __RadColorPickerColumn__ class:
 	        typeof(RadColorPickerColumn),
 	        new PropertyMetadata(null));
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: The final RadColorPickerColumn class__
-
-	{{region vb-radgridview-howto-create-custom-editor_13}}
+```
+```VB.NET
 	Public Class RadColorPickerColumn
 	    Inherits GridViewBoundColumnBase
 	
@@ -434,13 +412,13 @@ Here is the full code for the __RadColorPickerColumn__ class:
 	    End Property
 	    Public Shared ReadOnly MainPaletteProperty As DependencyProperty = DependencyProperty.Register("MainPalette", GetType(ColorPreset), GetType(RadColorPickerColumn), New PropertyMetadata(Nothing))
 	End Class
-{{endregion}}
+```
 
 * Use the just created custom column in XAML like the code below:
 
-#### __[XAML] Example 8: Defining a RadColorPickerColumn in XAML__
+__Example 8: Defining a RadColorPickerColumn in XAML__
 
-	{{region xaml-radgridview-howto-create-custom-editor_14}}
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	
 	    <Grid.Resources>
@@ -460,7 +438,7 @@ Here is the full code for the __RadColorPickerColumn__ class:
 	    </telerik:RadGridView>
 	
 	</Grid>
-{{endregion}}
+```
 
 The final result should be similar to the image below:
 
@@ -474,9 +452,9 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 
 * __UpdateSourceWithEditorValue()__
 
-#### __[C#] Example 9: Overriding the UpdateSourceWithEditorValue method__
+__Example 9: Overriding the UpdateSourceWithEditorValue method__
 
-	{{region cs-radgridview-howto-create-custom-editor_15}}
+```C#
 	public override IList<string> UpdateSourceWithEditorValue(GridViewCell gridViewCell)
 	{
 	    List<String> errors = new List<String>();
@@ -492,11 +470,8 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 	    }
 	    return errors.ToList();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 9: Overriding the UpdateSourceWithEditorValue method__
-
-	{{region vb-radgridview-howto-create-custom-editor_16}}
+```
+```VB.NET
 	Public Overrides Function UpdateSourceWithEditorValue(ByVal gridViewCell As GridViewCell) As IList(Of String)
 	    Dim errors As New List(Of String)()
 	    Dim editor As RadColorPicker = TryCast(gridViewCell.GetEditingElement(), RadColorPicker)
@@ -509,13 +484,13 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 	    End If
 	    Return errors.ToList()
 	End Function
-{{endregion}}
+```
 
 * __GetNewValueFromEditor()__
 
-#### __[C#] Example 10: Overriding the GetNewValueFromEditor method__
+__Example 10: Overriding the GetNewValueFromEditor method__
 
-	{{region cs-radgridview-howto-create-custom-editor_17}}
+```C#
 	public override object GetNewValueFromEditor(object editor)
 	{
 	    RadColorPicker colorPicker = editor as RadColorPicker;
@@ -528,11 +503,8 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 	        return null;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 10: Overriding the GetNewValueFromEditor method__
-
-	{{region vb-radgridview-howto-create-custom-editor_18}}
+```
+```VB.NET
 	Public Overrides Function GetNewValueFromEditor(ByVal editor As Object) As Object
 	    Dim colorPicker As RadColorPicker = TryCast(editor, RadColorPicker)
 	    If colorPicker IsNot Nothing Then
@@ -541,7 +513,7 @@ In order to integrate the __RadColorPickerColumn__ into __RadGridView__'s valida
 	        Return Nothing
 	    End If
 	End Function
-{{endregion}}
+```
 
 As you can see first method gathers required information from the actual editor (used by the validation engine), after UI validation is successful then new value is submitted to the data item via second method. This second method returns errors (if any) that occurred while new value is set to the data item (Data layer validation).
 

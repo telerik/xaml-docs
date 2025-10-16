@@ -15,23 +15,20 @@ The purpose of this topic is to show you how to change the __RadRibbonView__'s _
 
 The RadRibbonView exposes a string property named __Title__, which should be used in such cases.		
 
-#### __XAML__
 
-{{region radribbonview-howto-change-title_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="xRibbonView" Title="RadRibbonView Demo" />
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radribbonview-howto-change-title_1}}
+
+```C#
 	xRibbonView.Title = "RadRibbonView Demo";
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radribbonview-howto-change-title_2}}
+```
+```VB.NET
 	xRibbonView.Title = "RadRibbonView Demo";
-{{endregion}}
+```
 
 ![Rad Ribbon View How To Change The Title 2](images/RadRibbonView_HowTo_ChangeTheTitle_2.png)
 

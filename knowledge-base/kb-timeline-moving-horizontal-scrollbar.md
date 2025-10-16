@@ -30,17 +30,17 @@ How to move the horizontal scrollbar of RadTimeline manually.
 
 To control the horizontal scrollbar set the VisiblePeriodStart and VisiblePeriodEnd properties.
 
-#### __[XAML]__
-{{region kb-timeline-moving-horizontal-scrollbar-0}}
+
+```XAML
 	<telerik:RadTimeline VisiblePeriodStart="2019/6/22"
 						 VisiblePeriodEnd="2019/7/13" />
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-timeline-moving-horizontal-scrollbar-1}}
+
+```C#
 	this.radTimeline.VisiblePeriodStart = new DateTime(2019, 6, 22);
 	this.radTimeline.VisiblePeriodEnd = new DateTime(2019, 7, 13);
-{{endregion}}
+```
 
 > VisiblePeriodStart and VisiblePeriodEnd are dependency properties, so you can data bind them as well.
 

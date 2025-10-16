@@ -26,8 +26,8 @@ How to center the labels for RadTreeMapItems without children.
 
 [Extract and edit]({%slug styling-apperance-editing-control-templates%}) the RadTreeMapItem ControlTemplate and update the position of the element with x:Name="ContentPresenter" when the RadTreeMapItem does not have any children. __Example 1__ demonstrates this approach by adding a DataTrigger inside the ControlTemplate. 
 
-#### __[XAML] Example 1: Modifying the RadTreeMapItem ControlTemplate in the Office_Black theme__
-{{region xaml-kb-pivotmap-howto-center-labels-0}}
+__Example 1: Modifying the RadTreeMapItem ControlTemplate in the Office_Black theme__
+```XAML
 	<!-- If you are using the NoXaml dlls, you should add the BasedOn attribute: BasedOn="{StaticResource RadTreeMapItemStyle}"-->
     <Style TargetType="telerik:RadTreeMapItem" >
         <Setter Property="Template">
@@ -106,7 +106,7 @@ How to center the labels for RadTreeMapItems without children.
             </Setter.Value>
         </Setter>
     </Style>
-{{endregion}} 
+``` 
 
 >If you are using a different theme, make sure to exract and edit the ControlTemplate for the corresponding theme. 
 

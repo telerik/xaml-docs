@@ -22,19 +22,19 @@ To bind the __RadListBox__ to a collection of business objects, you should use i
 
 >tipConsider using __ObservableCollection<T>__ or one of the other existing collection classes like __List<T>__, __Collection<T>__, instead of implementing your own collection. If the scenario requires a custom collection to be implemented, use the __IList__ interface, which provides individual access by index to its items and the best performance.
 
-#### __[C#] Exmaple 1: Create an objects class__
+__Exmaple 1: Create an objects class__
 
-{{region cs-radlistbox-populating-with-data-binding-support-overview_1}}
+```C#
 	public class Country
 	{
 		public string Name { get; set; }
 		public string Capital { get; set; }
 	}
-{{endregion}}
+```
 
-#### __[C#] Exmaple 2: Create the ViewModel__
+__Exmaple 2: Create the ViewModel__
 
-{{region cs-radlistbox-populating-with-data-binding-support-overview_2}}
+```C#
 	public class MyViewModel : ViewModelBase
     {
         private ObservableCollection<Country> countries;
@@ -63,10 +63,10 @@ To bind the __RadListBox__ to a collection of business objects, you should use i
             }
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Create the RadListBox and set its ItemsSource__
-{{region xaml-radlistbox-populating-with-data-binding-support-overview_3}}
+__Example 3: Create the RadListBox and set its ItemsSource__
+```XAML
 	<Window.DataContext>
         <local:MyViewModel/>
     </Window.DataContext>
@@ -75,14 +75,14 @@ To bind the __RadListBox__ to a collection of business objects, you should use i
                             Width="200" Height="100"
                             ItemsSource="{Binding Countries}"/>
     </Grid>
-{{endregion}}
+```
 
 ## Data Templates
 
 The __ItemsSource__ property allows the __RadListBox__ to be bound to any collection that implements the __IEnumerable__ interface. For each item in the collection, a container of type __RadListBoxItem__ is created. By using the __ItemTemplate__, __ItemContainerStyle__ and __TemplateSelectors__ you can control the appearance of the dynamically created items.
 
-#### __[XAML] Example 4: Create DataTemplate and bind the Text property of the TextBlock to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
-{{region xaml-radlistbox-populating-with-data-binding-support-overview_4}}
+__Example 4: Create DataTemplate and bind the Text property of the TextBlock to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
+```XAML
 	<Window.DataContext>
         <local:MyViewModel/>
     </Window.DataContext>
@@ -99,12 +99,12 @@ The __ItemsSource__ property allows the __RadListBox__ to be bound to any collec
                             ItemsSource="{Binding Countries}"
                             ItemTemplate="{StaticResource ListBoxCustomItemTemplate}"/>
     </Grid>
-{{endregion}}
+```
 
 Besides the __RadListBox's ItemTemplate__ property, you could use the __DisplayMemberPath__ property for controlling the appearance of the created items.
 
-#### __[XAML] Example 5: Set DisplayMemberPath to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
-{{region xaml-radlistbox-populating-with-data-binding-support-overview_5}}
+__Example 5: Set DisplayMemberPath to 'Name' to show the names of the countries or set it to 'Capital' to show their capitals__
+```XAML
 	<Window.DataContext>
         <local:MyViewModel/>
     </Window.DataContext>
@@ -114,7 +114,7 @@ Besides the __RadListBox's ItemTemplate__ property, you could use the __DisplayM
                             ItemsSource="{Binding Countries}"
                             DisplayMemberPath="Capital"/>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result of Examples 4 and 5__
 ![Rad List Box ItemsSource DisplayMemberPath 01](images/RadListBox_PopulatingWithData_DataBindingSupportOverview_01.png)

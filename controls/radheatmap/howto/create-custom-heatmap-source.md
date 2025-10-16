@@ -18,8 +18,8 @@ To create a custom source, implement the __IHeatMapSource__ interface.
 
 The interface exposes few methods and properties that are used by the heatmap to get the data from the given collection. For the sake of the simplicity, the example uses a multidimensional array to store data in the heatmap source.
 
-#### __[C#] Example 1: Creating custom data item that will store the information for each cell in the heatmap control__
-{{region radheatmap-how-to-custom-heatmap-source-0}}
+__Example 1: Creating custom data item that will store the information for each cell in the heatmap control__
+```C#
 	public class CustomHeatMapItem
     {        
 		// Stores the color of the cell.
@@ -27,18 +27,16 @@ The interface exposes few methods and properties that are used by the heatmap to
 		// Stores the value of the cell.
         public double Value { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating custom data item that will store the information for each cell in the heatmap control__
-{{region radheatmap-how-to-custom-heatmap-source-1}}
+```
+```VB.NET
 	Public Class CustomHeatMapItem
 		Public Property Color As Color
 		Public Property Value As Double
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Example 2: Implementing the IHeatMapSource interface__
-{{region radheatmap-how-to-custom-heatmap-source-2}}
+__Example 2: Implementing the IHeatMapSource interface__
+```C#
 	public class CustomHeatMapSource : IHeatMapSource
     {
         private CustomHeatMapItem[,] array;
@@ -85,10 +83,8 @@ The interface exposes few methods and properties that are used by the heatmap to
             this.array = null;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Implementing the IHeatMapSource interface__
-{{region radheatmap-how-to-custom-heatmap-source-3}}
+```
+```VB.NET
 	Public Class CustomHeatMapSource
 		Inherits IHeatMapSource
 
@@ -135,14 +131,14 @@ The interface exposes few methods and properties that are used by the heatmap to
 			Me.array = Nothing
 		End Sub
 	End Class
-{{endregion}}
+```
 
 ## Creating Custom HeatMapDefinition
 
 To use the custom source, implement a custom definition that derives from the __HeatMapDefinition__ class. The class exposes several protected methods and a property that should be overridden.
 
-#### __[C#] Example 3: Implementing the custom HeatMapDefinition__
-{{region radheatmap-how-to-custom-heatmap-source-4}}
+__Example 3: Implementing the custom HeatMapDefinition__
+```C#
 	public class CustomHeatMapDefinition : HeatMapDefinition
 	{
 		private CustomHeatMapSource source;
@@ -182,10 +178,8 @@ To use the custom source, implement a custom definition that derives from the __
 			return (color.A << 24) | ((byte)(color.R * scaleApha) << 16) | ((byte)(color.G * scaleApha) << 8) | (byte)(color.B * scaleApha);
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Implementing the custom HeatMapDefinition__
-{{region radheatmap-how-to-custom-heatmap-source-5}}
+```
+```VB.NET
 	Public Class CustomHeatMapDefinition
 		Inherits HeatMapDefinition
 
@@ -225,14 +219,14 @@ To use the custom source, implement a custom definition that derives from the __
 						Or CType((color.B * scaleApha),Byte))))
 		End Function
 	End Class
-{{endregion}}
+```
 
 ## Using the Custom Definition
 
 To use the custom definition you can create a multidimensional array of CustomHeatMapItem elements and populate the CustomHeatMapSource with it. Then pass it to the custom definition.
 
-#### __[XAML] Example 4: Defining the RadHeatMap in XAML__
-{{region radheatmap-how-to-custom-heatmap-source-6}}
+__Example 4: Defining the RadHeatMap in XAML__
+```XAML
 	<telerik:RadHeatMap x:Name="heatmap">
 		<telerik:RadHeatMap.RowHeaderSettings>
 			<telerik:HeatMapRowHeaderSettings LabelInterval="100" LabelClipToBounds="False" />
@@ -241,10 +235,10 @@ To use the custom definition you can create a multidimensional array of CustomHe
 			<telerik:HeatMapColumnHeaderSettings LabelInterval="200" LabelClipToBounds="False" />
 		</telerik:RadHeatMap.ColumnHeaderSettings>            
 	</telerik:RadHeatMap>
-{{endregion}}
+```
 
-#### __[C#] Example 5: Populating the source with 4 million items and setting the heatmap definition__
-{{region radheatmap-how-to-custom-heatmap-source-7}}
+__Example 5: Populating the source with 4 million items and setting the heatmap definition__
+```C#
 
 	private static Random randomGenerator = new Random();
 	private static List<Color> colors = new List<Color> { Colors.Red, Colors.DarkBlue, Colors.Cornsilk, Colors.DarkGoldenrod, Colors.LightBlue, };
@@ -270,10 +264,8 @@ To use the custom definition you can create a multidimensional array of CustomHe
 		}
 		return data;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Populating the source with 4 million items and setting the heatmap definition__
-{{region radheatmap-how-to-custom-heatmap-source-8}}
+```
+```VB.NET
     Private Shared randomGenerator As Random = New Random()	
     Private Shared colors As List(Of Color) = New List(Of Color) From {
         Colors.Red,
@@ -303,7 +295,7 @@ To use the custom definition you can create a multidimensional array of CustomHe
         Next
         Return data
     End Function
-{{endregion}}
+```
 
 #### __Figure 1: HeatMap with 4 million cells__
 ![{{ site.framework_name }} RadHeatMap HeatMap with 4 million cells](images/radheatmap-how-to-custom-heatmap-source-0.png)

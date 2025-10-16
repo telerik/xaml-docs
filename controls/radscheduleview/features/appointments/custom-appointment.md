@@ -28,9 +28,9 @@ Let's create a simple task tracking system. For our Custom Appointment class we 
 
 >importantWhen inheriting the AppointmentBase class it is required to create a parameter-less constructor for the the custom class.
 
-#### __[C#] Example 1: Create Custom Appointment__
+__Example 1: Create Custom Appointment__
 
-{{region radscheduleview-features-appointments-custom-appointment_0}}
+```C#
 	public class Task:Appointment
 	{
 	    private bool isDone;
@@ -66,11 +66,8 @@ Let's create a simple task tracking system. For our Custom Appointment class we 
 	        base.CopyFrom(other);
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Create custom appointment__
-
-{{region radscheduleview-features-appointments-custom-appointment_1}}
+```
+```VB.NET
 	Public Class Task
 	 Inherits Appointment
 	 Private m_isDone As Boolean
@@ -99,13 +96,13 @@ Let's create a simple task tracking system. For our Custom Appointment class we 
 	  MyBase.CopyFrom(other)
 	 End Sub
 	End Class
-{{endregion}}
+```
 
 For the next step, it is important to set the __AppointmentsSource__ of RadScheduleView to be of type __IList<Task>__, because this way the ScheduleView knows that our custom appointments should be of type __Task__. __Example 2__ demonstrates how to create an __ObservableCollection<Task>__.        
 
-#### __[C#] Example 2: Create the TasksCollection__
+__Example 2: Create the TasksCollection__
 
-{{region radscheduleview-features-appointments-custom-appointment_2}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -132,11 +129,8 @@ For the next step, it is important to set the __AppointmentsSource__ of RadSched
 	         }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Create the TasksCollection__
-
-{{region radscheduleview-features-appointments-custom-appointment_3}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 
@@ -159,7 +153,7 @@ For the next step, it is important to set the __AppointmentsSource__ of RadSched
 				Next t
 			End Sub
 	End Class
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 2__
 
@@ -173,11 +167,11 @@ Now that we have our custom IsDone property, let's add a CheckBox for it and bin
 
 After you have extracted the default __EditAppointmentTemplate__, you can add a CheckBox as demonstrated in __Example 3__ which can replace the CheckBox with x:Name="AllDayEventCheckbox".
 
-#### __[XAML] Example 3: Bind the IsDone property__
+__Example 3: Bind the IsDone property__
 
-{{region radscheduleview-features-appointments-custom-appointment_4}}
+```XAML
 	 <CheckBox Grid.Row="4" Grid.Column="1" Margin="3" Content="Is done?" IsChecked="{Binding Occurrence.Appointment.IsDone, Mode=TwoWay}"/>
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 3__
 ![RadScheduleView with custom EditAppointmentDialogStyle](images/custom_appointment2.PNG)
@@ -190,11 +184,11 @@ Next, we are going to change the ControlTemplate of the AppointmentItem to refle
 
 The __DataContext__ of the AppointmentItem's ControlTemplate represents an __AppointmentProxy__, which holds the most important properties of the Appointment and the Appointment itself. We want to display a green dot for all tasks that are done. We will achieve this by adding an Ellipse in the __ControlTemplate__ and then binding its __Visibility__ to the __IsDone__ property of the __Task__ through a converter. The Ellipse demonstrated in __Example 4__ is added to the ControlTemplate of the VerticalStyle. The ControlTemplate's key is "AppointmentItemVerticalControlTemplate". You can refer to the [Editing Control Templates]({%slug styling-apperance-editing-control-templates%}) article for more information about extracting ControlTemplates.
 
-#### __[XAML] Example 4: Indicate the status of an appointment with an Ellipse__
+__Example 4: Indicate the status of an appointment with an Ellipse__
 
-{{region radscheduleview-features-appointments-custom-appointment_5}}
+```XAML
 	<Ellipse Fill="Green" Width="12" Height="12" VerticalAlignment="Top" Margin="10 5 5 5" HorizontalAlignment="Left" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
-{{endregion}}
+```
 
 ## Customizing the Appointment ToolTip
 
@@ -202,16 +196,16 @@ This step is, of course, optional. The customization of the Appointment ToolTip 
 
 __Example 5__ demonstrates how you can modify the Appointment ToolTipTemplate in order to add the text (Done) only for the tasks which are already done:
 
-#### __[XAML] Example 5: Define a ToolTipTemplate__
+__Example 5: Define a ToolTipTemplate__
 
-{{region radscheduleview-features-appointments-custom-appointment_6}}
+```XAML
 	<DataTemplate x:Key="ToolTipTemplate">
 	   <StackPanel Orientation="Horizontal" MinWidth="140" Margin="0 5">
 	      <TextBlock MaxWidth="200" TextWrapping="Wrap" Text="{Binding Subject}"/>
 	      <TextBlock Text="(Done)" Grid.Row="1" Margin="5 0 5 0" Foreground="#FF191D1A" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" FontStyle="Italic" />
 	   </StackPanel> 
 	</DataTemplate>
-{{endregion}}
+```
 
 #### __Figure 3: Result from Examples 4 and 5__
 

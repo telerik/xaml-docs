@@ -22,14 +22,14 @@ The dialog can be opened from the __Edit Image__ option in the context menu (rig
 
 The dialog can be shown by executing the `ShowImageEditorDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-image-editor-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowImageEditorDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowImageEditorDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-image-editor-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowImageEditorDialog();
-{{endregion}}
+```

@@ -22,14 +22,14 @@ The dialog can be opened from the __Insert Caption__ button in the __References_
 
 The dialog can be shown by executing the `ShowInsertCaptionDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-insert-captions-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowInsertCaptionDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowInsertCaptionDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-insert-captions-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowInsertCaptionDialog();
-{{endregion}}
+```

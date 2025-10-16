@@ -18,27 +18,25 @@ The following example demonstrates how to bind the `ItemsSource` property of `Ra
 
 1. Create a model for the items.
 
-	#### __[C#] Business object Item__  
-	{{region cs-radlistbox-how-to-group-items-0}}
+	__Business object Item__  
+	```C#
 		public class Item
 		{
 			public string Group { get; set; }
 			public string Name { get; set; }
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Business object Item__  
-	{{region vb-radlistbox-how-to-group-items-0}}
+	```
+	```VB.NET
 		Public Class Item
 			Public Property Group() As String
 			Public Property Name() As String
 		End Class
-	{{endregion}}
+	```
 
 2. Create a view model class holding the data and setup the `CollectionViewSource`. 
 
-	#### __[C#] ViewModel creation__  
-	{{region cs-radlistbox-how-to-group-items-1}}
+	__ViewModel creation__  
+	```C#
 		public ObservableCollection<Item> Collection { get; set; }
 		public CollectionViewSource CollectionView { get; set; }
 		public ViewModel()
@@ -60,10 +58,8 @@ The following example demonstrates how to bind the `ItemsSource` property of `Ra
 			view.Source = Collection;
 			CollectionView = view;
 		}
-	{{endregion}}
-
-	#### __[VB.NET] ViewModel creation__  
-	{{region vb-radlistbox-how-to-group-items-1}}
+	```
+	```VB.NET
 		Public Property Collection() As ObservableCollection(Of Item)
 		Public Property CollectionView() As CollectionViewSource
 		Public Sub New()
@@ -83,21 +79,21 @@ The following example demonstrates how to bind the `ItemsSource` property of `Ra
 			view.Source = Collection
 			CollectionView = view
 		End Sub
-	{{endregion}}
+	```
 
 3. Create a new instance of the view model and assign it to the DataContext of the view.
 
-	#### __[XAML] Set the ViewModel as DataContext__  
-	{{region xaml-radlistbox-how-to-group-items-0}}
+	__Set the ViewModel as DataContext__  
+	```XAML
 		<UserControl.DataContext>
 			<local:ViewModel/>
 		</UserControl.DataContext>
-	{{endregion}}
+	```
 
 4. Assign the `ItemsSource` and `GroupStyle` properties.
 
-	#### __[XAML] Set the ItemsSource and GroupStyle__  
-	{{region xaml-radlistbox-how-to-group-items-1}}
+	__Set the ItemsSource and GroupStyle__  
+	```XAML
 		<telerik:RadListBox x:Name="radlistbox" IsScrollIntoViewEnabled="False"
 								ItemsSource="{Binding CollectionView.View}"  
 								DisplayMemberPath="Name">
@@ -105,13 +101,12 @@ The following example demonstrates how to bind the `ItemsSource` property of `Ra
 				<GroupStyle/>
 			</telerik:RadListBox.GroupStyle>
 		</telerik:RadListBox>
-	{{endregion}}
+	```
 
 __RadListBox with grouping enabled__
 
 ![A picture showing RadListBox with its data grouped](images/radlistbox_how_to_group_items_01.png)
 	
 ## See Also  
-{% if site.framework_name == 'WPF' %}
- * [Get Started with UI for WPF]({%slug getting-started-first-steps%})
-{% endif %}
+
+* [Get Started with UI for WPF]({%slug getting-started-first-steps%})

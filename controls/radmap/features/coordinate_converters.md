@@ -19,8 +19,8 @@ The RadMap contains two built-in converters which convert coordinates from EPSG:
 
 The converter (OSGB36Converter/ EPSG900913Converter) can be specified by setting it to the __MapShapeReader.CoordinateConverter__ property.
 
-#### __[XAML] Example 1: Setting CoordinateConverter property__
-{{region radmap-features-coordinate-converters_0}}
+__Example 1: Setting CoordinateConverter property__
+```XAML
 	<telerik:RadMap>
 		<telerik:RadMap.Providers>
 			<telerik:OpenStreetMapProvider />
@@ -35,14 +35,14 @@ The converter (OSGB36Converter/ EPSG900913Converter) can be specified by setting
 			</telerik:VisualizationLayer.Reader>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## Custom Coordinate Converter
 
 The API of the RadMap allows you to use a custom coordinate converter by implementing the __ICoordinateConverter__ interface.
 
-#### __[C#] Example 2: Implement ICoordinateConverter__
-{{region cs-radmap-features-coordinate-converters_1}}
+__Example 2: Implement ICoordinateConverter__
+```C#
 	public class CustomCoordinateConverter : ICoordinateConverter
 	{
 		public LocationCollection ConvertBack(LocationCollection collection)
@@ -70,12 +70,12 @@ The API of the RadMap allows you to use a custom coordinate converter by impleme
 			return location.ToString();
 		}
 	}
-{{endregion}}
+```
 
 The custom coordinate converter can be assigned to the __MapShapeReader.CoordinateConverter__ property.
 
-#### __[XAML] Example 3: Setting CustomCoordinateConverter in XAML__
-{{region radmap-features-coordinate-converters_2}}
+__Example 3: Setting CustomCoordinateConverter in XAML__
+```XAML
 	<telerik:RadMap>
 		<telerik:RadMap.Providers>
 			<telerik:OpenStreetMapProvider />
@@ -90,7 +90,7 @@ The custom coordinate converter can be assigned to the __MapShapeReader.Coordina
 			</telerik:VisualizationLayer.Reader>
 		</telerik:VisualizationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## See Also
  * [Navigation]({%slug radmap-features-navigation%})

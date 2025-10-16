@@ -22,14 +22,14 @@ The dialog can be opened from the __Line Numbers__ drop down button in the __Pag
 
 The dialog can be shown by executing the `ShowLineNumberingDialogCommand`. See how to bind the command to an external button in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-line-numbers-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowLineNumberingDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, call the `ShowInsertHyperlinkDialog` method of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-line-numbers-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowLineNumberingDialog();
-{{endregion}}
+```

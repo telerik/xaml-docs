@@ -37,8 +37,8 @@ To customize RadRibbonView in order to separate its title from the tabs, follow 
 
 Refer to the following code snippet with the Office2016 theme applied to the control:
 
-#### __[XAML]__
-{{region kb-ribbonview-add-separator-between-title-and-ribbon-for-ribbonwindow-0}}
+
+```XAML
 	<ControlTemplate x:Key="RadRibbonViewTemplate" TargetType="telerik:RadRibbonView">
 		<Grid x:Name="RootPanel">
 			<!-- Omitted code... -->
@@ -77,7 +77,7 @@ Refer to the following code snippet with the Office2016 theme applied to the con
 	<Style TargetType="telerik:RadRibbonView" BasedOn="{StaticResource RadRibbonViewStyle}">
 		<Setter Property="Template" Value="{StaticResource RadRibbonViewTemplate}" />
 	</Style>
-{{endregion}}
+```
 
 ![Before (left) and after (right) visual example](images/kb-ribbonview-add-separator-between-title-and-ribbon-for-ribbonwindow-0.png)
 

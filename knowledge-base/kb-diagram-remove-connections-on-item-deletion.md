@@ -32,8 +32,8 @@ How to remove attached RadDiagramConnections when the associated diagram shape i
 
 To do this, you can use the RadDiagram's `ItemsChanging` event. In the event handler, you can access the deleted shape and remove its connections from the diagram. To access the connections attached to the shape, you can use the `IncomingLinks` and `OutgoingLinks` properties of the shape.
 
-#### __[C#]__
-{{region kb-diagram-remove-connections-on-item-deletion-0}}
+
+```C#
 	private void RadDiagram_ItemsChanging(object sender, Telerik.Windows.Controls.Diagrams.DiagramItemsChangingEventArgs e)
 	{
 		if (e.OldItems.Count() > 0)
@@ -54,4 +54,4 @@ To do this, you can use the RadDiagram's `ItemsChanging` event. In the event han
 			}
 		}
 	}
-{{endregion}}
+```

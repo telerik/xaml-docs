@@ -25,25 +25,21 @@ Here are the steps that you should follow to create a RadTimeBar with implicit W
 
 3. Declare the XAML resources that you will use. In our case this is Telerik.Windows.Controls.DataVisualization.xaml:
 
-	#### __XAML__
-
-	{{region radtimebar-hide-selection-range-title_0}}
-			<Application.Resources>
-				<ResourceDictionary>
-					<ResourceDictionary.MergedDictionaries>
-						<ResourceDictionary Source="Telerik.Windows.Controls.DataVisualization.xaml" />
-					</ResourceDictionary.MergedDictionaries>
-				</ResourceDictionary>
-			</Application.Resources>
-		{{endregion}}
+	```XAML
+		<Application.Resources>
+			<ResourceDictionary>
+				<ResourceDictionary.MergedDictionaries>
+					<ResourceDictionary Source="Telerik.Windows.Controls.DataVisualization.xaml" />
+				</ResourceDictionary.MergedDictionaries>
+			</ResourceDictionary>
+		</Application.Resources>
+	```
 
 4. Set *Telerik.Windows.Controls.StyleManager.IsEnabled* to false in your application constructor.
 
 Now let's add a sample TimeBar:
 
-#### __XAML__
-
-{{region radtimebar-hide-selection-range-title_1}}
+```XAML
 	<telerik:RadTimeBar Width="950" Height="250"
 	        Margin="0,30,0,0" 
 	        PeriodStart="01-01-2012"
@@ -59,17 +55,13 @@ Now let's add a sample TimeBar:
 	        <telerik:WeekInterval />
 	    </telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-	{{endregion}}
-
-
+```
 
 ![{{ site.framework_name }} RadTimeBar with Selection Rectangle](images/radtimebar_hide_selection_range_title.PNG)
 
 To hide the range selection title you'll need to remove it from the SelectionRange Style, which can be found in *Telerik.Windows.Controls.DataVisualization.xaml*:
 
-#### __XAML__
-
-{{region radtimebar-hide-selection-range-title_2}}
+```XAML
 	  <Style x:Key="SelectionRangeStyle" TargetType="Thumb">
 	    <Setter Property="BorderBrush" Value="{StaticResource TimeBar_SelectionThumb_Range_OuterBorder}" />
 	    <Setter Property="BorderThickness" Value="{StaticResource TimeBar_SelectionThumb_Range_OuterBorder_BorderThickness}" />
@@ -118,9 +110,7 @@ To hide the range selection title you'll need to remove it from the SelectionRan
 	      </Setter.Value>
 	    </Setter>
 	  </Style>
-	{{endregion}}
-
-
+```
 
 Run the application and check the result:
 

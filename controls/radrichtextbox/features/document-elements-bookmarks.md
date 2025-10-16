@@ -52,9 +52,9 @@ You can also add Bookmarks in a document you are creating manually. As both __Bo
 
 For example, you can keep a Dictionary<string, string> mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:
 
-#### __C#__
 
-{{region radrichtextbox-features-document-elements-bookmarks_0}}
+
+```C#
 	private void ReplaceContentOfBookmark(string bookmarkName)
 	{
 	    BookmarkRangeStart bookmark = this.radRichTextBox.Document.GetBookmarkByName(bookmarkName);
@@ -62,15 +62,15 @@ For example, you can keep a Dictionary<string, string> mapping each bookmark nam
 	    this.radRichTextBox.Delete(false);
 	    this.radRichTextBox.Insert(bookmarksToContent[bookmarkName]);
 	}
-{{endregion}}
+```
 
 
 
 If you want to preserve the bookmarks in the document and only change the text between the BookmarkRangeStart and BookmarkRangeEnd document elements, you can do so like this:
 
-#### __C#__
 
-{{region radrichtextbox-features-document-elements-bookmarks_1}}
+
+```C#
 	private void ChangeAllBookmarks(RadRichTextBox radRichTextBox)
 	{
 	    BookmarkRangeStart[] bookmarks = this.radRichTextBox.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();
@@ -91,7 +91,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 	        radRichTextBox.Insert(bookmarksToContent[item.Name]);
 	    }
 	}
-{{endregion}}
+```
 
 
 

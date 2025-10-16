@@ -16,12 +16,12 @@ When the chart is initially loaded it caches the size of most of its elements, a
 
 Lets take for example the scenario with custom LabelTemplate (of a chart axis) where the size of the element in the DataTemplate changes at run-time. Because the size of the ContentPresenter that wraps the element in the DataTemplate is cached, the element will be clipped if its size becomes bigger than the size of the ContentPresenter. In such case to trigger the size recalculation and update you can reset the LabelTemplate of the axis after you change the size of the element in the template.
 	  	  
-#### __[C#] Example 1: Updating the chart's API by resetting the LabelTemplate__
+__Example 1: Updating the chart's API by resetting the LabelTemplate__
 
-{{region radchartview-troubleshooting-clipped-axis-labels_0}}	
+```C#	
 	// change the size here
 	
 	var template = axis.LabelTemplate;
 	axis.LabelTemplate = null;
 	axis.LabelTemplate = template;
-{{endregion}}
+```

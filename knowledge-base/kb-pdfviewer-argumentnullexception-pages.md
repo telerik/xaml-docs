@@ -42,8 +42,8 @@ Changing the value of the start index from 1 to 0 fixes the issue and the modifi
 
 You can also automate the process by changing the stream that is being imported in PdfViewer. To achieve that, you will need to add an additional class to keep the logic about validating and repairing the data, similar to the following one:
 
-#### __[C#]__
-{{region kb-pdfviewer-troubleshooting-argumentnullexception-pdfviewer-0}}
+
+```C#
 
     public class CrossReferencesValidator
     {
@@ -196,12 +196,12 @@ You can also automate the process by changing the stream that is being imported 
         }
     }
 
-{{endregion}}
+```
 
 The next step is to ensure that the **CrossReferencesValidator.TryHandleInvalidCrossReferenceStartIndex()** method is called to check the validity of the PDF document and depending on the result, use the original or the modified stream to import the data in the viewer. For clarity, this logic is separated in a method:
 
-#### __[C#]__
-{{region kb-pdfviewer-troubleshooting-argumentnullexception-pdfviewer-1}}
+
+```C#
     
     private PdfDocumentSource CreateValidatedDocumentSource(string filePath)
     {
@@ -215,15 +215,15 @@ The next step is to ensure that the **CrossReferencesValidator.TryHandleInvalidC
     
         return new PdfDocumentSource(originalStream);
     }
-{{endregion}}
+```
 
 And here is how you can invoke this method to import the document:
 
-#### __[C#]__
-{{region kb-pdfviewer-troubleshooting-argumentnullexception-pdfviewer-2}}
+
+```C#
 
     this.pdfViewer.DocumentSource = this.CreateValidatedDocumentSource("../../Test.pdf");
-{{endregion}}
+```
 
 ## Notes
 

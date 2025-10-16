@@ -32,9 +32,9 @@ How to prevent maximization on the __RadWindow__ control, when the title bar is 
 
 To achieve this, you could subscribe to the __HostCreated__ event of the __Window__ control, and inside of it, set the __SourceInitialized__ event of the __HostWindow__ property provided by the __HostWindowCreatedEventArgs__ event arguments. Additionally, several fields and methods from the __Win32__ __API__ would be required, which are present in the below code snippet.
 
-#### __[C#]__
 
-{{region kb-window-prevent-double-click-maximization-0}}
+
+```C#
 	public partial class MainWindow : RadWindow
 	{
 		public MainWindow()
@@ -64,11 +64,8 @@ To achieve this, you could subscribe to the __HostCreated__ event of the __Windo
 			SetWindowLong(hwnd, GWL_STYLE, (int)(value & ~WS_MAXIMIZEBOX));
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET]__
-
-{{region kb-window-prevent-double-click-maximization-1}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 		Inherits RadWindow
 	
@@ -94,4 +91,4 @@ To achieve this, you could subscribe to the __HostCreated__ event of the __Windo
 			SetWindowLong(hwnd, GWL_STYLE, CInt((value And Not WS_MAXIMIZEBOX)))
 		End Sub
 	End Class
-{{endregion}}
+```

@@ -27,9 +27,9 @@ To do so follow these steps:
 
 2. Override its __SelectStyle__ method. Based on your conditions - you return the proper Style that will be applied to the framework element (row in our case).
 
-#### __[C#] Example 1: The StadiumCapacityStyle class__
+__Example 1: The StadiumCapacityStyle class__
 
-{{region cs-gridview-rowstyleselector_0}}
+```C#
 	public class StadiumCapacityStyle : StyleSelector
 	{
 	    public override Style SelectStyle(object item, DependencyObject container)
@@ -51,11 +51,8 @@ To do so follow these steps:
 	    public Style BigStadiumStyle { get; set; }
 	    public Style SmallStadiumStyle { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: The StadiumCapacityStyle class__
-
-{{region vb-gridview-rowstyleselector_1}}
+```
+```VB.NET
 	Public Class StadiumCapacityStyle
 	    Inherits StyleSelector
 	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
@@ -88,7 +85,7 @@ To do so follow these steps:
 	    End Property
 	    Private m_SmallStadiumStyle As Style
 	End Class
-{{endregion}}
+```
 
 In this case we have two different styles that could be applied:
 
@@ -99,9 +96,9 @@ Depending on the underlying data you cab select which style to apply.
 
 3.In the XAML file define the style selector as a resource and set the properties of the __BigStadiumStyle__ and __SmallStadiumStyle__:
 
-#### __[XAML] Example 2: Set the different styles for the style selector__
+__Example 2: Set the different styles for the style selector__
 
-{{region xaml-gridview-rowstyleselector_2}}
+```XAML
 	<Window.Resources>
 	    <my:StadiumCapacityStyle x:Key="StadiumCapacityStyle">
 	        <my:StadiumCapacityStyle.BigStadiumStyle>
@@ -116,27 +113,27 @@ Depending on the underlying data you cab select which style to apply.
 	        </my:StadiumCapacityStyle.SmallStadiumStyle>
 	    </my:StadiumCapacityStyle>
 	</Window.Resources>
-{{endregion}}
+```
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
 If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-overview%}), you should base the style on the one defined for the corresponding theme:
 
-#### __[XAML] Example 3: Base the style when using implicit styles__
+__Example 3: Base the style when using implicit styles__
 
-{{region xaml-gridview-rowstyleselector_4}}
+```XAML
 	<Style TargetType="telerik:GridViewRow" BasedOn="{StaticResource GridViewRowStyle}">
 	    <Setter Property="Background" Value="Yellow" />
 	</Style>
-{{endregion}}
+```
 
 4.Finally, set the __RowStyleSelector__ property:
 
-#### __[XAML] Example 4: Set RadGridView's RowStyleSelector__
+__Example 4: Set RadGridView's RowStyleSelector__
 
-{{region xaml-gridview-rowstyleselector_3}}
+```XAML
 	<telerik:RadGridView RowStyleSelector="{StaticResource StadiumCapacityStyle}" />
-{{endregion}}
+```
 
 >Since the virtualization of the control is turned on by default, it is not recommended to work with the visual elements (i.e. GridViewRow) and their properties. You should not set properties of GridViewRow inside SelectStyle method. [Read mode on UI Virtualization]({%slug radgridview-features-ui-virtualization%}).
 		 
@@ -146,12 +143,12 @@ If you are using our [Implicit Themes]({%slug styling-apperance-implicit-styles-
 
 If you've set the **AlternationCount** property, you can apply conditional styles only on the [alternating rows]({%slug radgridview-rows-alternating-rows%}) by specifying an **AlternateRowStyleSelector**.
 
-#### __[XAML] Example 5: Set RadGridView's AlternateRowStyleSelector__
+__Example 5: Set RadGridView's AlternateRowStyleSelector__
 
-{{region gridview-rowstyleselector_5}}
+```XAML
 
 	<telerik:RadGridView AlternateRowStyleSelector="{StaticResource StadiumCapacityStyle}" />
-{{endregion}}
+```
 
 **Figure 2** shows the result of using the same StyleSelector from the previous example, but setting it as the AlternateRowStyleSelector for the RadGridView.
 

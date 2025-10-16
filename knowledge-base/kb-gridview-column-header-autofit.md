@@ -30,13 +30,13 @@ When I change RadGridView column header from a longer to a shorter string, the c
 
 To make the header fit its content, reset the Width of the column when the Header changes.
 
-#### __[C#]__
-{{region kb-gridview-column-header-autofit-0}}
+
+```C#
 	public void MethodCalledWhenTheHeaderPropertyChanges()
 	{
 		var column = this.radGridView.Columns[0];
 		column.Width = new GridViewLength(1, GridViewLengthUnitType.Pixel);
 		column.Width = new GridViewLength(1, GridViewLengthUnitType.Auto);
 	}
-{{endregion}}
+```
 

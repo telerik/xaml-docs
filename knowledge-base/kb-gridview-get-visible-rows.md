@@ -34,8 +34,8 @@ To get the visible rows, you can first use the [ChildrenOfType<T> extension meth
 
 Then, you can iterate the rows collection and get only the rows which bounds are contained in the bounds of the parent `GridViewVirtualizingPanel`.
 
-#### __[C#]__
-{{region kb-gridview-get-visible-rows-0}}
+
+```C#
 	 private void GetVisibleRowsButton_Click(object sender, RoutedEventArgs e)
 	 {
 		 var panel = this.gridView.FindChildByType<GridViewVirtualizingPanel>();
@@ -53,5 +53,5 @@ Then, you can iterate the rows collection and get only the rows which bounds are
 		 bool result = viewport.Contains(elementBounds);
 		 return result;
 	 }
-{{endregion}}
+```
 

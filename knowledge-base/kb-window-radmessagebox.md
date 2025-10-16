@@ -26,8 +26,8 @@ You can use the [predefined RadWindow dialogs]({%slug radwindow-features-predefi
 
 The following example shows how to create a custom class and display different `RadWindow` dialog based on the given parameters.
 
-#### __[C#] Implementing RadMessageBox class__
-{{region kb-window-radmessagebox-0}}
+__Implementing RadMessageBox class__
+```C#
 	public sealed class RadMessageBox
 	{
 		private static readonly Dictionary<MessageBoxImage, string> messageBoxImageToGlyphDictionary = new Dictionary<MessageBoxImage, string>()
@@ -147,9 +147,9 @@ The following example shows how to create a custom class and display different `
 			return cancelButton;
 		}
 	}
-{{endregion}}
+```
 
-#### __[C#] Using the custom RadMessageBox class__
-{{region kb-window-radmessagebox-1}}
+__Using the custom RadMessageBox class__
+```C#
 	MessageBoxResult result = RadMessageBox.Show(ownerWindow, "Message Content", "Message Header", MessageBoxButton.OKCancel, MessageBoxImage.Question);
-{{endregion}}
+```

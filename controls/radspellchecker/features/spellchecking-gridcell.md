@@ -10,10 +10,6 @@ position: 1
 
 # SpellChecking GridCell
 
-
-
-
-
 >tipFor a quick review of the basics you can take a look at the [Getting Started]({%slug radspellchecker-getting-started%}) topic.
 
 Basically, there are two ways to spellcheck a grid cell:
@@ -28,9 +24,7 @@ If you choose this approach you can spellcheck only cells which contain a contro
 
 After that you can set the attached property telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True", which resides in the telerik namespace to the column and grid in which the cell is placed. Here is an example:
 
-#### __XAML__
-
-{{region radspellchecker-spellchecking-gridcell_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
 	   <telerik:RadGridView.Columns>
 	      <telerik:GridViewDataColumn telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
@@ -47,29 +41,20 @@ After that you can set the attached property telerik:RadGridViewSpellCheckHelper
 	      </telerik:GridViewDataColumn>
 	   </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
-
-
+```
 
 After this is done, every time you try to leave edit mode when in a cell, the spellchecking will be triggered and the CheckAllAtOnce dialog will show up with the contents of the control in the cell. You can perform all the spellchecking you want and when you click OK the text will be transferred back to the cell.
-
-
-
 
 ## Using Code Behind
 
 This approach is a little more complex than the former one. Here we can use different panels in the data template of the cell, and choose to spellcheck a certain control in this panel. To do that you need an ordinary button and an attached event handler to it in which you call the appropriate method:
 
-#### __C#__
-
-{{region radspellchecker-spellchecking-gridcell_1}}
+```C#
 	private void spellcheckBButton_Click(object sender, RoutedEventArgs e)
 	{
 	    RadGridViewSpellCheckHelper.CheckChildControl(this.radGridView, "textBox1");
 	}
-	{{endregion}}
-
-
+```
 
 >The example above shows how to perform this check on a RadGridView, if you want to do it on __DataGrid__, use __DataGridSpellCheckHelper__ instead of RadGridViewSpellCheckHelper.
 
@@ -77,9 +62,7 @@ As you see, the first argument is the data grid in which we perform the spellche
 
 Here is an example of the XAML:
 
-#### __XAML__
-
-{{region radspellchecker-spellchecking-gridcell_2}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" ItemsSource="{Binding}">
 	   <telerik:RadGridView.Columns>
 	      <telerik:GridViewDataColumn >
@@ -101,8 +84,4 @@ Here is an example of the XAML:
 	      </telerik:GridViewDataColumn>
 	   </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
-
-
-
-
+```

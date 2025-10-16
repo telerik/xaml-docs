@@ -12,11 +12,11 @@ position: 4
 
 The __RadTreeView__ allows you to control the indent of its items. You can do that by changing the value of the __ItemsIndent__ property. The default value of this property is 20.
 
-#### __[XAML] Example 1: Setting ItemsIndent Property__
+__Example 1: Setting ItemsIndent Property__
 
-{{region radtreeview-features-itemsindent_0}}
+```XAML
 	<telerik:RadTreeView ItemsIndent="0" ItemsSource="{Binding NodeColletion}" ItemTemplate="{StaticResource dataTemplate}"/>
-{{endregion}}
+```
 
 By setting the __ItemsIndent__ property to 0, we will vertically align all items in the RadTreeView. You can observe the outcome in __Figure 1__.
 
@@ -29,8 +29,8 @@ With the __2021 R1 SP1__ version of Telerik UI for WPF, we have to introduce the
 
 In __Figure 1__, the roots, and their nodes are vertically aligned. In a case when the nodes do not have children, the expander button will not be visible. Nevertheless, the expander ToggleButton is not visible. It still will occupy space depending on the __ExpanderButtonMinWidth__ property value. To completely remove the button, you can set the __ExpanderButtonMinWidth__ property to 0 and Collapsed the button. __Example 2__ demonstrate how you can do that through implicit style.
 
-#### __[XAML] Example 2: Collapsed Expander Button__
-{{region radtreeview-features-itemsindent_1}}
+__Example 2: Collapsed Expander Button__
+```XAML
 	<Style TargetType="telerik:RadTreeViewItem" BasedOn="{StaticResource RadTreeViewItemStyle}">
 		<Setter Property="ExpanderButtonMinWidth" Value="0" />
 		<Setter Property="ExpanderStyle">
@@ -41,7 +41,7 @@ In __Figure 1__, the roots, and their nodes are vertically aligned. In a case wh
 			</Setter.Value>
 		</Setter>
 	</Style>
-{{endregion}}
+```
 
 #### __Figure 2: Collapsed Expander Button__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_02.png)
@@ -59,8 +59,8 @@ To correctly adjust the nodes' lines, the __ItemsIndent__ and __ExpanderButtonMi
 
 In the above case, we will reduce the space by using the __ItemsIndent__ and __ExpanderButtonMinWidth__ properties. The __ExpanderButtonMinWidth__ property can be set to an odd value bigger than the path's width. In our case, the minimum value will be 17. 
 
-#### __[XAML] Example 3: Set Compact View__
-{{region radtreeview-features-itemsindent_2}}
+__Example 3: Set Compact View__
+```XAML
 	<Window.Resources>
 		<HierarchicalDataTemplate x:Key="dataTemplate" ItemsSource="{Binding Children}" >
 			<TextBlock Text="{Binding Header}" />
@@ -72,7 +72,7 @@ In the above case, we will reduce the space by using the __ItemsIndent__ and __E
 	<Grid>
 		<telerik:RadTreeView Background="Bisque" Loaded="RadTreeView_Loaded" ItemsIndent="9"  IsLineEnabled="True" IsRootLinesEnabled="True"  ItemsSource="{Binding NodeColletion}" ItemTemplate="{StaticResource dataTemplate}"/>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 4: Compact TreeView Lines__
 ![Rad Tree View Features ItemsIndent 1](images/RadTreeView_ItemsIndent_04.png)

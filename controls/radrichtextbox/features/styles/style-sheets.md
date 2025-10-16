@@ -32,9 +32,9 @@ __XamlFormatProvider__ has been extended to import and export style sheets to ba
 Here is an example of how to load a style sheet from a file using the __LoadStylesheet__ method of __XamlFormatProvider__:
 
 {% if site.site_name == 'WPF' %}
-#### __C#__
 
-{{region radrichtextbox-features-style-sheets_1}}
+
+```C#
     OpenFileDialog ofd = new OpenFileDialog();
     ofd.Filter = "Xaml Files|*.xaml";
     if (ofd.ShowDialog() == true)
@@ -45,13 +45,8 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
             stylesheet.ApplyStylesheetToDocument(this.editor.Document);
         }
     }
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-style-sheets_2}}
+```
+```VB.NET
     Dim ofd As New OpenFileDialog()
     ofd.Filter = "Xaml Files|*.xaml"
     If ofd.ShowDialog() = True Then
@@ -60,13 +55,13 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 		    stylesheet.ApplyStylesheetToDocument(Me.editor.Document)
 	    End Using
     End If
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'Silverlight' %}
 
-#### __C#__
 
-{{region radrichtextbox-features-style-sheets_3}}
+
+```C#
     OpenFileDialog ofd = new OpenFileDialog();
     ofd.Filter = "Xaml Files|*.xaml";
     if (ofd.ShowDialog() == true)
@@ -77,13 +72,8 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
             stylesheet.ApplyStylesheetToDocument(this.editor.Document);
         }
     }
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-style-sheets_4}}
+```
+```VB.NET
     Dim ofd As New OpenFileDialog()
     ofd.Filter = "Xaml Files|*.xaml"
     If ofd.ShowDialog() = True Then
@@ -92,15 +82,15 @@ Here is an example of how to load a style sheet from a file using the __LoadStyl
 		    stylesheet.ApplyStylesheetToDocument(Me.editor.Document)
 	    End Using
     End If
-{{endregion}}
+```
 {% endif %}
 
 This is how you can save a style sheet with the __SaveStyleSheet__ method of __XamlFormatProvider__:
         
 
-#### __C#__
 
-{{region radrichtextbox-features-style-sheets_5}}
+
+```C#
     SaveFileDialog sfd = new SaveFileDialog();
     sfd.Filter = "Xaml Files|\*.xaml";
     if (sfd.ShowDialog() == true)
@@ -112,13 +102,8 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
             XamlFormatProvider.SaveStylesheet(stylesheet, stream);
         }
     }
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-style-sheets_6}}
+```
+```VB.NET
     Dim sfd As New SaveFileDialog()
     sfd.Filter = "Xaml Files|\*.xaml"
     If sfd.ShowDialog() = True Then
@@ -128,6 +113,6 @@ This is how you can save a style sheet with the __SaveStyleSheet__ method of __X
 		    XamlFormatProvider.SaveStylesheet(stylesheet, stream)
 	    End Using
     End If
-{{endregion}}
+```
 
 

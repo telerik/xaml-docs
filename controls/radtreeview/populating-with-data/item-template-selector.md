@@ -24,27 +24,20 @@ To create your own selector you have to use Visual Studio.
 
 * Create a class and name it __LeagueDataTemplateSelector__. The __LeagueDataTemplateSelector__ must inherit from the __DataTemplateSelector__ class{% if site.site_name == 'Silverlight' %}, which is located into __Telerik.Windows.Controls__ assembly{% endif %}.
 	
-	#### __C#__
-
-	{{region radtreeview-populating-with-data-item-template-selector_0}}
+	```C#
 		public class LeagueDataTemplateSelector : DataTemplateSelector
 		{
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-populating-with-data-item-template-selector_1}}
+	```
+	```VB.NET
 		Public Class LeagueDataTemplateSelector
 			Inherits DataTemplateSelector
 		End Class
-		{{endregion}}
+	```
 
 * Override the __SelectTemplate__ method and implement your custom logic in it. The method accepts as arguments an __object__ and a __DependencyObject__. The object argument is the actual object being bound and the __DependecyObject__ is the container for it.			
 
-	#### __C#__
-
-	{{region radtreeview-populating-with-data-item-template-selector_2}}
+	```C#
 		private HierarchicalDataTemplate leagueTemplate;
 		private HierarchicalDataTemplate divisionTemplate;
 		private DataTemplate teamTemplate;
@@ -94,11 +87,8 @@ To create your own selector you have to use Visual Studio.
 				this.teamTemplate = value;
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-populating-with-data-item-template-selector_3}}
+	```
+	```VB.NET
 			Private leagueTemplate As HierarchicalDataTemplate
 			Private divisionTemplate As HierarchicalDataTemplate
 		Private teamTemplate As DataTemplate
@@ -139,57 +129,13 @@ To create your own selector you have to use Visual Studio.
 				Me.teamTemplate = value
 			End Set
 		End Property
-		{{endregion}}
-
-	{% if site.site_name == 'Silverlight' %}
-	> Please note that in order to use the __HierarchicalDataTemplate__ class, you need to add a using for the __Telerik.Windows.Controls__ namespace.
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-	> Please note that in order to use the __HierarchicalDataTemplate__ class, you need to add a using for the __System.Windows__ namespace.
-	{% endif %}
+	```
+	
+	> Please note that in order to use the __HierarchicalDataTemplate__ class, you need to add a using for the __System.Windows__ namespace.	
 
 * Define the created selector as a resource in your XAML and set it to the __ItemTemplateSelector__ property.
 
-	{% if site.site_name == 'Silverlight' %}
-	#### __XAML__
-
-	{{region radtreeview-populating-with-data-item-template-selector_4}}
-		<UserControl.Resources>
-			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-		
-			<DataTemplate x:Key="Team">
-				<TextBlock Text="{Binding TeamName}" Foreground="{Binding TeamColor}"/>
-			</DataTemplate>
-		
-			<telerik:HierarchicalDataTemplate x:Key="Division" ItemsSource="{Binding Teams}">
-				<TextBlock Text="{Binding DivisionName}" Foreground="{Binding DivisionColor}"/>
-			</telerik:HierarchicalDataTemplate>
-		
-			<telerik:HierarchicalDataTemplate x:Key="League" ItemsSource="{Binding Divisions}">
-				<TextBlock Text="{Binding LeagueName}" Foreground="{Binding LeagueColor}" />
-			</telerik:HierarchicalDataTemplate>
-		
-			<example:LeagueDataTemplateSelector x:Key="myDataTemplateSelector"
-				LeagueTemplate="{StaticResource League}"
-				DivisionTemplate="{StaticResource Division}"
-				TeamTemplate="{StaticResource Team}"/>
-		
-		</UserControl.Resources>
-		<Grid x:Name="LayoutRoot" Background="White">
-		
-			<telerik:RadTreeView x:Name="radTreeView"
-			   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
-			   ItemTemplateSelector="{StaticResource myDataTemplateSelector}"/>
-		
-		</Grid>
-		{{endregion}}
-
-	{% endif %}
-	{% if site.site_name == 'WPF' %}
-
-	#### __XAML__
-
-	{{region radtreeview-populating-with-data-item-template-selector_6}}
+	```XAML
 		<UserControl.Resources>
 			<sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 		
@@ -218,19 +164,15 @@ To create your own selector you have to use Visual Studio.
 			   ItemTemplateSelector="{StaticResource myDataTemplateSelector}"/>
 		
 		</Grid>
-		{{endregion}}
-
-	{% endif %}
+	```
 
 	The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
 
-	#### __XAML__
-
-	{{region radtreeview-populating-with-data-item-template-selector_5}}
+	```XAML
 		<telerik:RadTreeView
 		   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 		   ItemTemplateSelector="{StaticResource myDataTemplateSelector}" />
-		{{endregion}}
+	```
 
 And the result of the demo can be seen on the next figure: 
 ![{{ site.framework_name }} RadTreeView Item Template Selector](images/RadTreeView_TemplatingItemTemplateSelector_001.PNG)

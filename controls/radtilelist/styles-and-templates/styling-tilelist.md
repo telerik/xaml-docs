@@ -12,15 +12,12 @@ position: 0
 
 This topic will go through the process of styling the common elements of __RadTileList__.
 
-* [Styling the Tiles](#styling-the-tiles)
-* [Styling the TileGroupContainer](#styling-the-tilegroupcontainer)
-
 ## Styling the Tiles
 
 For the purpose of this example, the following definition of __RadTileList__ will be used.
 
-#### __[XAML] Example 1: Defining RadTileList in XAML__
-{{region xaml-radtilelist-styling-0}}
+__Example 1: Defining RadTileList in XAML__
+```XAML
 	<telerik:RadTileList >
             <telerik:RadTileList.Groups>
                 <telerik:TileGroup Header="Europe" DisplayIndex="0">
@@ -37,12 +34,12 @@ For the purpose of this example, the following definition of __RadTileList__ wil
                 </telerik:TileGroup>
             </telerik:RadTileList.Groups>
         </telerik:RadTileList>
-{{endregion}}
+```
 
 Then, defining a __Style__ for the __Tile__ can achieved as follows. This example demonstrates how an implicit style targeting the __Tile__ can be defined. Thus, it will be applied to all __Tile__ instances.
 
-#### __[XAML] Example 2: Defining Style for the Tiles__
-{{region xaml-radtilelist-styling-1}}
+__Example 2: Defining Style for the Tiles__
+```XAML
 	  <Window.Resources>
         <Style TargetType="telerik:Tile">
             <Setter Property="Width" Value="250"/>
@@ -50,7 +47,7 @@ Then, defining a __Style__ for the __Tile__ can achieved as follows. This exampl
             <Setter Property="Background" Value="LightSlateGray"/>
         </Style>
     </Window.Resources>
-{{endregion}}
+```
 
 This setup will result in the following output.
 
@@ -61,14 +58,14 @@ This setup will result in the following output.
 
 The default look of the group container can be altered by defining a style targeting __TileGroupContainer__.
 
-#### __[XAML] Example 3: Defining Style targeting TileGroupContainer__
-{{region xaml-radtilelist-styling-2}}
+__Example 3: Defining Style targeting TileGroupContainer__
+```XAML
 	<Style TargetType="telerik:TileGroupContainer">
         <Setter Property="Width" Value="250"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Foreground" Value="DarkRed"/>
     </Style>
-{{endregion}}
+```
 
 The visual appearance of the __TileGroupContainer__ will be as shown in the image below.
 

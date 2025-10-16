@@ -57,7 +57,7 @@ For more details on storing and protecting your NuGet Key, check the [Announcing
 
 There are two popular ways to use the Telerik NuGet server in a build:
 
-* [Using a nuget.config file with your projects](#using-a-nugetconfig-file-with-your-projects)
+* [Using a nuget.config file with your projects](#using-a-nuget-config-file-with-your-projects)
 
 * [Using only CLI commands](#using-only-cli-commands)
 
@@ -67,8 +67,8 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
 
 1. In your `nuget.config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-    #### __[XML]__
-    {{region installation-nuget-keys-0}}
+    
+    ```XML
         <configuration>
             <packageSources>
                 <clear/>
@@ -83,7 +83,7 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
             </packageSourceCredentials>
             ...
         </configuration>
-    {{endregion}}
+    ```
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 

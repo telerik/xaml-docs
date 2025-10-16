@@ -12,11 +12,11 @@ position: 3
 
 `RadCalculator` provides the `ValueChanged` event which is raised after the calculated value changes.
 
-#### __[C#] ValueChanged event handler__  
-{{region radcalculator-events-0}}
+__ValueChanged event handler__  
+```C#
 	private void RadCalculator_ValueChanged(object sender, Telerik.Windows.Controls.Calculator.ValueChangedEventArgs e)
 	{
 		decimal oldValue = e.OldValue;
 		decimal newValue = e.NewValue;
 	}
-{{endregion}}
+```

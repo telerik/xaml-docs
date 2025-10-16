@@ -20,7 +20,7 @@ The **DelegateCommand** class provides a simple **ICommand** implementation. It 
 The **DelegateCommand** constructor has two overloads. The first accepts just a Delegate to execute as a parameter. The second one accepts the **Delegate** to execute as well as a **Predicate** that allows/bans the execution.  
 
 #### **[C#] Example 1: DelegateCommand implementation in your ViewModel that accepts a delegate and a predicate**
-{{region cs-common-mvvm-delegate-command-implementation-0}}
+```C#
 	
     public class ViewModel
     {
@@ -48,11 +48,11 @@ The **DelegateCommand** constructor has two overloads. The first accepts just a 
             MessageBox.Show("Custom Command Executed!");
         }
     }
-{{endregion}}
+```
 	
 
 #### **[XAML] Example 2: Using the command in xaml**
-{{region xaml-common-mvvm-delegate-command-implementation-1}}
+```XAML
 		
     <Grid>
         <Grid.DataContext>
@@ -61,7 +61,7 @@ The **DelegateCommand** constructor has two overloads. The first accepts just a 
 
         <Button Command="{Binding CustomCommand}" Content="Execute command" VerticalAlignment="Bottom" />
     </Grid>
-{{endregion}}
+```
 
 ## See Also
 

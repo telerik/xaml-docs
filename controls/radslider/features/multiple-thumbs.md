@@ -16,9 +16,9 @@ As of **R3 2020**, the RadSlider allows you to define multiple thumbs with which
 
 This feature can be enabled by adding instances of the **SliderThumb** and **RangeSliderThumb** classes to its new **Thumbs** collection.
 
-#### __[XAML] Example 1: Defining multiple thumbs__
+__Example 1: Defining multiple thumbs__
 
-{{region xaml-radslider-multiple-thumbs_1}}
+```XAML
     <telerik:RadSlider Minimum="0" Maximum="300">
         <telerik:RadSlider.Thumbs>
             <telerik:RangeSliderThumb RangeStart="0" RangeEnd="100" />
@@ -26,7 +26,7 @@ This feature can be enabled by adding instances of the **SliderThumb** and **Ran
             <telerik:RangeSliderThumb RangeStart="200" RangeEnd="250" />
         </telerik:RadSlider.Thumbs>
     </telerik:RadSlider>
-{{endregion}}
+```
 
 #### Figure 1: RadSlider with multiple thumbs
 
@@ -86,9 +86,9 @@ Through the **ThumbStyle** property of the SliderThumbs, you can apply a specifi
 
 In the case of the RangeSliderThumb, this style is only applied to the left-most thumb and if you need to change the appearance of the other two thumbs, you need to also use the **MiddleThumbStyle** and **AlternateThumbStyle** to style the middle and right thumbs, respectively.
 
-#### __[XAML] Example 2: Styling the thumbs individually__
+__Example 2: Styling the thumbs individually__
 
-{{region xaml-radslider-multiple-thumbs_1}}
+```XAML
     <Grid>
         <Grid.Resources>
             <!-- If you're not using the NoXaml binaries, you need to remove the BasedOn attributes of the styles -->
@@ -109,19 +109,19 @@ In the case of the RangeSliderThumb, this style is only applied to the left-most
             </telerik:RadSlider.Thumbs>
         </telerik:RadSlider>
     </Grid>
-{{endregion}}
+```
 
 >importantPlease note that when using the [StyleManager theming approach]({%slug common-styling-apperance-setting-theme-wpf%}) you need to also define the **Height** for the middle thumb. This has been demonstrated in the following [knowledge base article]({%slug kb-slider-style-middle-thumb-style-manager%}).
 
 Alternatively, you can set the ThumbStyle, **SelectionMiddleThumbStyle** and AlternateThumbStyle properties on the RadSlider control itself and they will be passed onto all thumbs from the **Thumbs** collection.
 
-#### __[XAML] Example 3: Styling the thumbs through the properties of the RadSlider__
+__Example 3: Styling the thumbs through the properties of the RadSlider__
 
-{{region xaml-radslider-multiple-thumbs_2}}
+```XAML
     <!-- ... -->
     <telerik:RadSlider ThumbStyle="{StaticResource RedThumbStyle}" SelectionMiddleThumbStyle="{StaticResource GreenStyle}" AlternateThumbStyle="{StaticResource BlueThumbStyle}" Minimum="0" Maximum="100">
     <!-- ... -->
-{{endregion}}
+```
 
 #### Figure 5: Styling the thumbs
 

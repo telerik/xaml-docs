@@ -23,8 +23,8 @@ How to limit the width of the filter dialog (FilteringControl) in RadGridView fo
 
 To change the width of the filter dialog you can set the `Width` or `MaxWidth` of the `FilteringControl`. This can be done via the `FilteringControlStyle` property of the columns.
 
-#### __[XAML]__
-{{region kb-gridview-set-width-filteringcontrol-0}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
 		<telerik:GridViewDataColumn.FilteringControlStyle>
 			<!-- if you use the Telerik NoXaml dlls, you will need to add the following setting to the Style object -->
@@ -34,4 +34,4 @@ To change the width of the filter dialog you can set the `Width` or `MaxWidth` o
 			</Style>
 		</telerik:GridViewDataColumn.FilteringControlStyle>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```

@@ -38,10 +38,7 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
 > - For XAML: `xmlns:mentions="clr-namespace:Telerik.Windows.Documents.UI.Mentions;assembly=Telerik.Windows.Documents"`
 > - In code: `Telerik.Windows.Documents.UI.Mentions`
 
-#### [XAML] Example 1: Using PersonMentionProvider
-
-{{region radrichtextbox-features-mentions_0}}
-
+```XAML
     <telerik:RadRichTextBox x:Name="radRichTextBox" >
         <telerik:RadRichTextBox.MentionContext>
             <mentions:MentionContext>
@@ -61,12 +58,9 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
         </telerik:RadRichTextBox.MentionContext>
     </telerik:RadRichTextBox>
 
-{{endregion}}
+```
 
-#### [C#] Example 1: Using PersonMentionProvider
-
-{{region radrichtextbox-features-mentions_1}}
-
+```C#
     List<PersonMentionItem> personMentionItems = new List<PersonMentionItem>() {
                 new PersonMentionItem() { Name = "Maria Anders", Mail = "manders@somecompany.com", ImageSource = new BitmapImage(new Uri("../../../../Images/manders.png", UriKind.Relative)) },
                 new PersonMentionItem() { Name = "Antonio Taquería", Mail = "ataqueria@somecompany.com", ImageSource = new BitmapImage(new Uri("../../../../Images/ataqueria.png", UriKind.Relative)) },
@@ -79,11 +73,8 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
     personMentionProvider.ItemsSource = personMentionItems;
                 
     this.radRichTextBox.MentionContext.Providers.Add(personMentionProvider);                
-{{endregion}}
-
-#### [VB.NET] Example 1: Using PersonMentionProvider
-
-{{region radrichtextbox-features-mentions_2}}
+```
+```VB.NET
 
     Dim personMentionItems = New List(Of PersonMentionItem)() From {
         New PersonMentionItem() With {.Name = "Maria Anders", .Mail = "manders@somecompany.com", .ImageSource = New BitmapImage(New Uri("../../../../Images/manders.png", UriKind.Relative))},
@@ -96,7 +87,7 @@ For your convenience, RadRichTextBox comes with a default implementation of a me
     personMentionProvider.ItemsSource = personMentionItems
     
     Me.radRichTextBox.MentionContext.Providers.Add(personMentionProvider)
-{{endregion}}
+```
 
 **Figure 2** shows how the result of **Example 1** would look like in RadRichTextBox.
 
@@ -112,10 +103,7 @@ You can implement your own mention provider that enables you to visualize any ob
     
     This object should implement `INotifyPropertyChanged` so it can be later used in the data template for the mention item.
     
-    #### [C#] Example 2: Custom mention item
-    
-    {{region radrichtextbox-features-mentions_3}}
-    
+    ```C#    
         public class OrganizationInfo : INotifyPropertyChanged
         {
             private string name;
@@ -166,59 +154,54 @@ You can implement your own mention provider that enables you to visualize any ob
                 }
             }
         }
-    {{endregion}}
-    
-        #### [VB.NET] Example 2: Custom mention item
-    
-        {{region radrichtextbox-features-mentions_4}}
-        
-            Public Class OrganizationInfo
-                Inherits INotifyPropertyChanged
-            
-                Private name As String
-                Private abbreviation As String
-            
-                Public Property Name As String
-                    Get
-                        Return Me.name
-                    End Get
-                    Set(ByVal value As String)
-            
-                        If Me.name <> value Then
-                            Me.name = value
-                            Me.OnPropertyChanged("Name")
-                        End If
-                    End Set
-                End Property
-            
-                Public Property Abbreviation As String
-                    Get
-                        Return Me.abbreviation
-                    End Get
-                    Set(ByVal value As String)
-            
-                        If Me.abbreviation <> value Then
-                            Me.abbreviation = value
-                            Me.OnPropertyChanged("Abbreviation")
-                        End If
-                    End Set
-                End Property
-            
-                Public Event PropertyChanged As PropertyChangedEventHandler
-            
-                Private Sub OnPropertyChanged(ByVal propertyName As String)
-                    RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-                End Sub
-            End Class
-        {{endregion}}
+    ```
+	```VB.NET
+	
+		Public Class OrganizationInfo
+			Inherits INotifyPropertyChanged
+		
+			Private name As String
+			Private abbreviation As String
+		
+			Public Property Name As String
+				Get
+					Return Me.name
+				End Get
+				Set(ByVal value As String)
+		
+					If Me.name <> value Then
+						Me.name = value
+						Me.OnPropertyChanged("Name")
+					End If
+				End Set
+			End Property
+		
+			Public Property Abbreviation As String
+				Get
+					Return Me.abbreviation
+				End Get
+				Set(ByVal value As String)
+		
+					If Me.abbreviation <> value Then
+						Me.abbreviation = value
+						Me.OnPropertyChanged("Abbreviation")
+					End If
+				End Set
+			End Property
+		
+			Public Event PropertyChanged As PropertyChangedEventHandler
+		
+			Private Sub OnPropertyChanged(ByVal propertyName As String)
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End Sub
+		End Class
+	```
     
 1. Implement a custom mention provider
 
-    This is done by inheriting the `MentionProviderBase<T>` class where `T` is the mention item. You should implement the **InsertItem** and **DetermineItemVisibility** methods. For more information about them, check the [Customize the Insert Action](#customize-insert-action) and [Customize the Filtering](#customize-the-filtering) sections.
+    This is done by inheriting the `MentionProviderBase<T>` class where `T` is the mention item. You should implement the **InsertItem** and **DetermineItemVisibility** methods. For more information about them, check the [Customize the Insert Action](#customize-the-insert-action) and [Customize the Filtering](#customize-the-filtering) sections.
 
-    #### [C#] Example 3: Custom mention provider
-
-    {{region radrichtextbox-features-mentions_5}}
+    ```C#
             
         public class OrganizationMentionProvider : MentionProviderBase<OrganizationInfo>
         {
@@ -249,12 +232,8 @@ You can implement your own mention provider that enables you to visualize any ob
                 }
             }
         }
-    {{endregion}}
-            
-
-    #### [VB.NET] Example 3: Custom mention provider
-
-    {{region radrichtextbox-features-mentions_6}}
+    ```
+    ```VB.NET
             
         Public Class OrganizationMentionProvider
             Inherits MentionProviderBase(Of OrganizationInfo)
@@ -277,7 +256,7 @@ You can implement your own mention provider that enables you to visualize any ob
                 End If
             End Sub
         End Class
-    {{endregion}}
+    ```
                 
 1. Implement a data template for the custom mention provider
 
@@ -285,11 +264,7 @@ You can implement your own mention provider that enables you to visualize any ob
     
     > If more than one DataTemplate have the same DataType exception of type **InvalidOperationException** is thrown with a message *“This collection expects unique data types for every DataTemplate!”*. 
     
-        
-    #### [C#] Example 4: DataTemplate for the custom mention item
-
-    {{region radrichtextbox-features-mentions_7}}
-    
+    ```C#    
         string organizationDataTemplateXaml = @" <DataTemplate xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
                                                             xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' 
                                                             xmlns:local='clr-namespace:MentionsExample' 
@@ -302,12 +277,8 @@ You can implement your own mention provider that enables you to visualize any ob
         
         DataTemplate template = (DataTemplate)XamlReader.Load(XmlReader.Create(new StringReader(organizationDataTemplateXaml)));
 
-    {{endregion}}
-    
-    
-    #### [VB.NET] Example 4: DataTemplate for the custom mention item
-
-    {{region radrichtextbox-features-mentions_8}}
+    ```    
+    ```VB.NET
     
         Dim organizationDataTemplateXaml As String = " <DataTemplate xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
                                                                 xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' 
@@ -319,7 +290,7 @@ You can implement your own mention provider that enables you to visualize any ob
                                                             </StackPanel>
                                                     </DataTemplate>"
         Dim template As DataTemplate = CType(XamlReader.Load(XmlReader.Create(New StringReader(organizationDataTemplateXaml))), DataTemplate)
-    {{endregion}}
+    ```
     
 1. Register the mention provider with its mention character and the new data template
 
@@ -327,8 +298,7 @@ You can implement your own mention provider that enables you to visualize any ob
     
     #### [C#] Example 5: Add the provider and the data template to the MentionContext
     
-    {{region radrichtextbox-features-mentions_9}}
-    
+    ```C#    
         OrganizationMentionProvider organizationMentionProvider = new OrganizationMentionProvider();
         organizationMentionProvider.MentionCharacter = '#';
         
@@ -344,12 +314,8 @@ You can implement your own mention provider that enables you to visualize any ob
         this.radRichTextBox.MentionContext.Providers.Add(organizationMentionProvider);
         
         this.radRichTextBox.MentionContext.Templates.Add(template);  
-    {{endregion}}
-    
-    
-    #### [VB.NET] Example 5: Add the provider and the data template to the MentionContext
-    
-    {{region radrichtextbox-features-mentions_10}}
+    ```
+	```VB.NET
     
         Dim organizationMentionProvider As OrganizationMentionProvider = New OrganizationMentionProvider()
         organizationMentionProvider.MentionCharacter = "#"
@@ -379,7 +345,7 @@ You can implement your own mention provider that enables you to visualize any ob
         organizationMentionProvider.ItemsSource = organizations;
         Me.radRichTextBox.MentionContext.Providers.Add(organizationMentionProvider)
         Me.radRichTextBox.MentionContext.Templates.Add(Template)    
-    {{endregion}}    
+    ```    
     
 #### Figure 4: Custom mentions 
 ![{{ site.framework_name }} RadRichTextBox Custom mentions](images/RadRichTextBox_Mentions_03.gif)
@@ -388,9 +354,7 @@ You can implement your own mention provider that enables you to visualize any ob
 
 The mention character is the character that triggers the visibility of the drop-down with suggestions when found at the start of a span. Each mention provider must be associated with a **unique** mention character. The character for the default mention provider is '@'. If you need to change the default character for a provider , you can use its `MentionCharacter` property.
 
-#### [XAML] Example 6: Changing the mention character
-
-{{region radrichtextbox-features-mentions_11}}
+```XAML
 
     <mentions:PersonMentionProvider MentionCharacter="#">
         <mentions:PersonMentionProvider.ItemsSource>
@@ -399,23 +363,18 @@ The mention character is the character that triggers the visibility of the drop-
             </x:Array>
         </mentions:PersonMentionProvider.ItemsSource>
     </mentions:PersonMentionProvider>
-{{endregion}}
+```
 
-#### [C#] Example 6: Changing the mention character
-
-{{region radrichtextbox-features-mentions_12}}
+```C#
 
     PersonMentionProvider personMentionProvider = new PersonMentionProvider();
     personMentionProvider.MentionCharacter = '#';
-{{endregion}}
-
-#### [VB.NET] Example 6: Changing the mention character
-
-{{region radrichtextbox-features-mentions_13}}
+```
+```VB.NET
 
     Dim personMentionProvider As PersonMentionProvider = New PersonMentionProvider()
     personMentionProvider.MentionCharacter = "#"
-{{endregion}}
+```
 
 >If the mention character applied to a mention provider is already used by another provider, an **InvalidOperationException** is thrown.
 
@@ -423,9 +382,7 @@ The mention character is the character that triggers the visibility of the drop-
 
 You can implement your own logic determining what and how it is being inserted into the document when the users select an item from the suggestions. You might need to customize the insert logic of PersonMentionProvider or provide the one for your custom provider. This is achieved by creating a custom implementation of a provider and overriding the **InsertItem** method. In **Example 7** you can see how the insert action of a CustomPersonMentionProvider is implemented - it inserts only the name of the person instead of adding the mention character and a hyperlink with the person's email.
 
-#### [C#] Example 7: Custom insert action
-
-{{region radrichtextbox-features-mentions_14}}
+```C#
 
     public class CustomPersonMentionProvider : PersonMentionProvider
     {
@@ -438,11 +395,8 @@ You can implement your own logic determining what and how it is being inserted i
             }
         }
     }
-{{endregion}}
-
-#### [VB.NET] Example 7: Custom insert action
-
-{{region radrichtextbox-features-mentions_15}}
+```
+```VB.NET
 
     Public Class CustomPersonMentionProvider
         Inherits PersonMentionProvider
@@ -454,17 +408,15 @@ You can implement your own logic determining what and how it is being inserted i
             End If
         End Sub
     End Class
-{{endregion}}
+```
 
 ## Customize the Filtering
 
 After typing the mention character in the beginning of a span, the drop-down menu with suggestions shows. If the user continues to type, the list of suggestions is filtered. You can control how the items from the source collection are filtered by overriding the **DetermineItemVisibility** method in the concrete mention provider you are using. 
 
-**Example 8** shows how to implement filtering that matches only the items that start with the content inserted by the customer no matter of their casing.
+The next example shows how to implement filtering that matches only the items that start with the content inserted by the customer no matter of their casing.
 
-#### [C#] Example 8: Custom filtering
-
-{{region radrichtextbox-features-mentions_16}}
+```C#
 
     public class CustomPersonMentionProvider : PersonMentionProvider
     {
@@ -484,11 +436,8 @@ After typing the mention character in the beginning of a span, the drop-down men
             }
         }
     }
-{{endregion}}
-
-#### [VB.NET] Example 8: Custom filtering
-
-{{region radrichtextbox-features-mentions_17}}
+```
+```VB.NET
 
     Public Class CustomPersonMentionProvider
         Inherits PersonMentionProvider
@@ -503,8 +452,7 @@ After typing the mention character in the beginning of a span, the drop-down men
             End If
         End Function
     End Class
-{{endregion}}
-
+```
 
 ## Using Multiple Mention Providers
 

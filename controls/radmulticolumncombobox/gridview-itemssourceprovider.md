@@ -73,8 +73,8 @@ The __ContextMenu__ property of the __GridViewItemsSourceProvider__ allows you t
 
 The example below shows how to set the **ContextMenu** property of **GridVIewItemsSourceProvider**:
 
-#### __[XAML] Example 1: Set custom context menu__
-{{region xaml-radmulticolumncombobox--gridview-itemssourceprovider-0}}
+__Example 1: Set custom context menu__
+```XAML
 	<Window.Resources>
         <local:MyModel x:Key="MyModel"/>
         <ContextMenu x:Key="contextMenu">
@@ -91,7 +91,7 @@ The example below shows how to set the **ContextMenu** property of **GridVIewIte
             </telerik:RadMultiColumnComboBox.ItemsSourceProvider>
         </telerik:RadMultiColumnComboBox>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result of Example 1__
 ![RadMultiColumnComboBox with custom context menu](images/MultiColumnComboBox_GridViewItemsSourceProvider_01.png)
@@ -104,8 +104,8 @@ Since __R3 2020__, the GridViewItemsSourceProvider exposes the __CanUserSearchIn
 
 With the __R3 2020__ version of our controls, you can exclude columns from the built-in search functionality. To exclude a column, you can set the IsSearchable property of the column to false.
 
-#### __[XAML] Example 2: Exclude second column from search__
-{{region xaml-radmulticolumncombobox--gridview-itemssourceprovider-1}}
+__Example 2: Exclude second column from search__
+```XAML
 	<telerik:RadMultiColumnComboBox>
 		<telerik:RadMultiColumnComboBox.ItemsSourceProvider>
 			<telerik:GridViewItemsSourceProvider ItemsSource="{Binding MyObjects}" AutoGenerateColumns="false">
@@ -117,7 +117,7 @@ With the __R3 2020__ version of our controls, you can exclude columns from the b
 			</telerik:GridViewItemsSourceProvider>
 		</telerik:RadMultiColumnComboBox.ItemsSourceProvider>
 	</telerik:RadMultiColumnComboBox>
-{{endregion}}
+```
 
 
 ## See Also  

@@ -42,9 +42,9 @@ You can show three different ToolTips for the three different styles.
 
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
 
-{{region radpivotgrid-features-tooltips_1}}
+
+```XAML
 	<Window.Resources>
 	    <Style x:Key="CellToolTip" TargetType="ToolTip">
 	        <Setter Property="ContentTemplate">
@@ -83,15 +83,15 @@ You can show three different ToolTips for the three different styles.
 	                        CellTooltipStyle="{StaticResource CellToolTip}"
 	                        ColumnGroupTooltipStyle="{StaticResource ColumnToolTip}">
 	</Grid>
-{{endregion}}
+```
 
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
 
-{{region radpivotgrid-features-tooltips_2}}
+
+```XAML
 	<UserControl.Resources>
 	    <Style x:Key="CellToolTip" TargetType="ToolTip">
 	        <Setter Property="ContentTemplate">
@@ -130,7 +130,7 @@ You can show three different ToolTips for the three different styles.
 	                        CellTooltipStyle="{StaticResource CellToolTip}"
 	                        ColumnGroupTooltipStyle="{StaticResource ColumnToolTip}">
 	</Grid>
-{{endregion}}
+```
 {% endif %}
 
 >If you want to use the value of the cell in the ToolTip you should set Binding to Data property. To use the DisplayName of the cell you should set Binding to AggregateDescription.DisplayName. For RowGroupToolTipStyle and ColumnGroupTooltipStyle you should set Binding to GroupDescription.DisplayName property.          

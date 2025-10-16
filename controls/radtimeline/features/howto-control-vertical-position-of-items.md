@@ -30,9 +30,9 @@ You can change this default value of __TimeSpan.FromTicks(1)__ in order to influ
 
 2. Item 1: StartDate = new DateTime(2011, 1, 24), Duration = TimeSpan.FromDays(20)
 
-#### __XAML__
 
-{{region radtimeline-howto-control-vertical-position-of-timeline-items_0}}
+
+```XAML
 	 <telerik:RadTimeline PeriodStart="2011-01-01"
 	                        PeriodEnd="2012-01-01"
 	                        StartPath="Date"
@@ -47,7 +47,7 @@ You can change this default value of __TimeSpan.FromTicks(1)__ in order to influ
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
 	
-{{endregion}}
+```
 
 ![radtimeline-howto-control-vertical-position-of-timeline-items 01](images/radtimeline-howto-control-vertical-position-of-timeline-items_01.png)
 
@@ -59,9 +59,9 @@ The first item in the __ItemsSource__ of the __RadTimeline__ control is placed i
 
 The code sample below demonstrates how you can set the __AutoSort__ property of a __RadTimeline__ control:
 
-#### __XAML__
 
-{{region radtimeline-howto-control-vertical-position-of-timeline-items_1}}
+
+```XAML
 	  <telerik:RadTimeline PeriodStart="2011-01-01"
 	                        PeriodEnd="2012-01-01"
 	                        AutoSort="False"
@@ -75,7 +75,7 @@ The code sample below demonstrates how you can set the __AutoSort__ property of 
 	        <telerik:YearInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 
 You can check the difference in the result with __AutoSort__ set to True/False with the following __ItemsSource__:
 
@@ -93,9 +93,9 @@ Using the __ItemRowIndexGenerator__ property of the __RadTimeline__ control you 
 
 The example below shows how you can specify a custom item __RowIndex__ generator for a __RadTimeline__ control:
 
-#### __XAML__
 
-{{region radtimeline-howto-control-vertical-position-of-timeline-items_2}}
+
+```XAML
 	 <telerik:RadTimeline PeriodStart="2011-01-01"
 	                     PeriodEnd="2012-01-01"
 	                     StartPath="Date"
@@ -111,7 +111,7 @@ The example below shows how you can specify a custom item __RowIndex__ generator
 	        <telerik:YearInterval />
 	    </telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 
 ### The IItemRowIndexGenerator interface
 
@@ -119,9 +119,9 @@ An item __RowIndex__ generator is a class that implements the __IItemRowIndexGen
 
 Below you can find an implementation of a sample generator that positions every item in a new row:
 
-#### __C#__
 
-{{region radtimeline-howto-control-vertical-position-of-timeline-items_0}}
+
+```C#
 		using System.Collections.Generic;
 		using Telerik.Windows.Controls.Timeline;
 	
@@ -142,11 +142,8 @@ Below you can find an implementation of a sample generator that positions every 
 				}
 			}
 		}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-howto-control-vertical-position-of-timeline-items_0}}
+```
+```VB.NET
 		Public Class TimelineData
 			Public Property [Date]() As DateTime
 				Get
@@ -185,7 +182,7 @@ Below you can find an implementation of a sample generator that positions every 
 				Next
 			End Sub
 		End Class
-{{endregion}}
+```
 
 Using the item RowIndex generator above, you will get the following result:
 

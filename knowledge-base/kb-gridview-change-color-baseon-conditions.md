@@ -31,8 +31,8 @@ How to change the color of a GridViewCell based on the value of a property of th
 ## Solution
 To achieve the desired result, you need to create a converter with multiple conditions.
 
-#### __[C#]__
-{{region kb-gridview-change-color-baseon-conditions-0}}
+
+```C#
 	public class ValueToColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -53,10 +53,10 @@ To achieve the desired result, you need to create a converter with multiple cond
             throw new NotImplementedException();
         }
     }
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-gridview-change-color-baseon-conditions-1}}
+
+```XAML
     <Grid.Resources>
         <local:ValueToColorConverter x:Key="ColorConverter"/>
 	<!-- If you are using the StyleManager theming mechanism with the XAML binaries, remove the BasedOn attributes -->
@@ -64,4 +64,4 @@ To achieve the desired result, you need to create a converter with multiple cond
             <Setter Property="Background" Value="{Binding Value, Converter={StaticResource ColorConverter}}"/>
         </Style>
     </Grid.Resources>
-{{endregion}}
+```

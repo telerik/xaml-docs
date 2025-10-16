@@ -26,13 +26,13 @@ And of course, for those of you who don't need additional UI pop-ups, these can 
         
 By default, the __SelectionMiniToolBar__ has a transparency effect. This effect can be disabled with the __IsTransparencyEnabled__ property.
         
-#### __[C#] Example 1:  Disable the transparensy effect of the SelectionMiniToolBar__
+__Example 1:  Disable the transparensy effect of the SelectionMiniToolBar__
 
-{{region cs-radrichtextbox-features-selection-mini-toolbar_0}}
+```C#
 
     var miniToolbar = radRichTextBox.SelectionMiniToolBar as SelectionMiniToolBar;
     miniToolbar.IsTransparencyEnabled = false;
 
-{{endregion}}
+```
 
 

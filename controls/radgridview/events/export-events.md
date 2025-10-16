@@ -34,25 +34,22 @@ The __ElementExporting__ and __ElementExportingToDocument__ events can be cancel
 
 You can subscribe to the events either declaratively or from the code-behind, as shown in the next three examples.
 
-#### __[XAML] Example 1: Subscribe to events declaratively__
-{{region xaml-gridview-export-events_0}}
+__Example 1: Subscribe to events declaratively__
+```XAML
 	<telerik:RadGridView x:Name="RadGridView1"
 	             ElementExporting="RadGridView1_ElementExporting"
 	             ElementExported="RadGridView1_ElementExported" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Subscribe to events from the code-behind__
-{{region cs-gridview-export-events_1}}
+__Example 2: Subscribe to events from the code-behind__
+```C#
 	RadGridView1.ElementExporting += RadGridView1_ElementExporting;
 	RadGridView1.ElementExported += RadGridView1_ElementExported;
-{{endregion}}
-
-
-#### __[VB.NET] Example 2: Subscribe to events from the code-behind__  
-{{region vb-gridview-export-events_2}}
+```
+```VB.NET
 	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
 	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
-{{endregion}}
+```
 
 ## ElementExporting
 
@@ -90,9 +87,9 @@ The __ElementExported__ event takes argument of type __GridViewElementExportedEv
 
 You can use the __ElementExported__ event if you want to write additional data to the stream. A common scenario is to add [Row Details]({%slug radgridview-row-details-overview%}) to the exported data, as shown in __Example 3__.
 
-#### __[C#] Example 3: Add row details to the exported data__
+__Example 3: Add row details to the exported data__
 
-	{{region cs-gridview-export-events_5}}
+```C#
 	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
 	{
 	    if (e.Element == ExportElement.Row)
@@ -111,11 +108,8 @@ You can use the __ElementExported__ event if you want to write additional data t
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Add row details to the exported data__
-
-	{{region vb-gridview-export-events_6}}
+```
+```VB.NET
 	Private Sub RadGridView1_ElementExported(ByVal sender As Object, ByVal e As GridViewElementExportedEventArgs)
 	    If e.Element = ExportElement.Row Then
 	        Dim obj As Employee = TryCast(e.Context, Employee)
@@ -130,7 +124,7 @@ You can use the __ElementExported__ event if you want to write additional data t
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 You can see the result in **Figure 1**.
 
@@ -164,22 +158,19 @@ The event handler expects a __GridViewElementExportedToDocumentEventArgs__ argum
 You can define a style when the __InitializingExcelMLStyles__ event is raised, as shown in __Example 4__.
 
         
-#### __[C#] Example 4: Define a style__
+__Example 4: Define a style__
 
-	{{region cs-gridview-export-events_7}}
+```C#
 	ExcelMLStyle style = new ExcelMLStyle("0");
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Define a style__
-
-	{{region vb-gridview-export-events_8}}
+```
+```VB.NET
 	Dim style As New ExcelMLStyle("0")
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic
 	e.Styles.Add(style)
 	'
-{{endregion}}
+```
 
 Here is a list of the properties that could be set for __ExcelMLStyle__:
         
@@ -217,9 +208,9 @@ __NumberFormat__:
 
 __Example 5__ shows how to use __ExcelMLStyle__.
 
-#### __[C#] Example 5: Modify the style before exporting__
+__Example 5: Modify the style before exporting__
 
-	{{region cs-gridview-export-events_9}}
+```C#
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("0");
@@ -254,11 +245,8 @@ __Example 5__ shows how to use __ExcelMLStyle__.
 	
 	    e.Styles.Add(style);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Modify the style before exporting__
-
-	{{region vb-gridview-export-events_10}}
+```
+```VB.NET
 	Private Sub clubsGrid_InitializingExcelMLStyles_1(ByVal sender As Object, ByVal e As ExcelMLStylesEventArgs)
 	    Dim style As New ExcelMLStyle("0")
 	
@@ -292,7 +280,7 @@ __Example 5__ shows how to use __ExcelMLStyle__.
 	
 	    e.Styles.Add(style)
 	End Sub
-{{endregion}}
+```
         
 ## See Also
 

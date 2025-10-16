@@ -19,9 +19,9 @@ This help topic will demonstrate how to add location crosshair for RadChart as w
 
 To achieve the crosshair functionality you will add two [custom gridlines]({%slug radchart-features-annotations-custom-gridline%}) to the ChartArea (each of them parallel to one of the axes). Also, you will need three events – MouseEnter, MouseLeave and MouseMove to track the mouse cursor position and “move” the gridlines across the plot area (represented by ClipPanel element in the ChartArea template). First you need to hook up to the chart's Loaded event. When the chart is loaded you can easily get hold of the panel via the ChildrenOfType<T> extension method (add reference to the __Telerik.Windows.Controls__ namespace) like this:
 
-#### __C#__
 
-{{region cs-radchart-howto-create-location-crosshair-for-radchart_0}}
+
+```C#
 	private void OnChartLoaded(object sender, RoutedEventArgs e)
 	{
 	    var plotAreaPanel = this.chart.DefaultView.ChartArea.ChildrenOfType<ClipPanel>().FirstOrDefault();
@@ -29,20 +29,15 @@ To achieve the crosshair functionality you will add two [custom gridlines]({%slu
 	    plotAreaPanel.MouseMove += this.OnPlotAreaPanelMouseMove;
 	    plotAreaPanel.MouseLeave += this.OnPlotAreaPanelMouseLeave;
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-howto-create-location-crosshair-for-radchart_1}}
+```
+```VB.NET
 	Private Sub OnChartLoaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim plotAreaPanel = Me.chart.DefaultView.ChartArea.ChildrenOfType(Of ClipPanel)().FirstOrDefault()
 	    AddHandler plotAreaPanel.MouseEnter, AddressOf Me.OnPlotAreaPanelMouseEnter
 	    AddHandler plotAreaPanel.MouseMove, AddressOf Me.OnPlotAreaPanelMouseMove
 	    AddHandler plotAreaPanel.MouseLeave, AddressOf Me.OnPlotAreaPanelMouseLeave
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -52,9 +47,9 @@ By handling the MouseEnter and MouseLeave events you can add and remove the grid
 
 Knowing the current X and Y data values of the mouse cursor you can bind the pair of lines to the X and Y properties of their DataContext, ensuring that the two lines will intersect at the current mouse location. 
 
-#### __C#__
 
-{{region cs-radchart-howto-create-location-crosshair-for-radchart_2}}
+
+```C#
 	private void OnPlotAreaPanelMouseEnter(object sender, MouseEventArgs e)
 	{
 	    this.chart.DefaultView.ChartArea.Annotations.Add(xGridLine);
@@ -81,13 +76,8 @@ Knowing the current X and Y data values of the mouse cursor you can bind the pai
 	    this.chart.DefaultView.ChartArea.Annotations.Remove(xGridLine);
 	    this.chart.DefaultView.ChartArea.Annotations.Remove(yGridLine);
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-howto-create-location-crosshair-for-radchart_3}}
+```
+```VB.NET
 	Private Sub OnPlotAreaPanelMouseEnter(sender As Object, e As MouseEventArgs)
 	    Me.chart.DefaultView.ChartArea.Annotations.Add(xGridLine)
 	    Me.chart.DefaultView.ChartArea.Annotations.Add(yGridLine)
@@ -111,20 +101,20 @@ Knowing the current X and Y data values of the mouse cursor you can bind the pai
 	    Me.chart.DefaultView.ChartArea.Annotations.Remove(xGridLine)
 	    Me.chart.DefaultView.ChartArea.Annotations.Remove(yGridLine)
 	End Sub
-{{endregion}}
+```
 
 
 
 The Location Indicator consists of two textblocks. We modify their values in code behind, but you can easily modify the code in an MVVM friendly way.
 
-#### __XAML__
 
-{{region xaml-radchart-howto-create-location-crosshair-for-radchart_4}}
+
+```XAML
 	<StackPanel Orientation="Horizontal" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top">
 		<TextBlock x:Name="textX" Width="50" Margin="0,0,15,0" />
 		<TextBlock x:Name="textY" Width="50" />
 	</StackPanel>
-{{endregion}}
+```
 
 
 

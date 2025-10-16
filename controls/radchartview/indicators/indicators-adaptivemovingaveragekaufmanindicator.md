@@ -14,8 +14,8 @@ AdaptiveMovingAverageKaufmanIndicator acts as a moving average indicator, theref
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the period (in days) over which the indicator will be applied. To do this set the __Period__, __SlowPeriod__ and __FastPeriod__ properties.
 
-#### __[XAML] Example 1: Defining AdaptiveMovingAverageKaufmanIndicator__
-{{region radchartview-indicators-adaptivemovingaveragekaufmanindicator-0}}
+__Example 1: Defining AdaptiveMovingAverageKaufmanIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		<telerik:AdaptiveMovingAverageKaufmanIndicator Period="5" 
 													   SlowPeriod="10"
@@ -24,7 +24,7 @@ To set up the indicator you can set its __CategoryBinding, ValueBinding and Item
 													   ValueBinding="Close"
 													   ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: AdaptiveMovingAverageKaufmanIndicator
 <img src="images/radchartview-indicators-adaptivemovingaveragekaufmanindicator-0.png" style="width: 80%;">

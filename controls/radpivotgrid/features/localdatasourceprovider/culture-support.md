@@ -17,25 +17,25 @@ With the Q2 2014 release version of UI for {% if site.site_name == 'WPF' %}WPF{%
 
 You can easily apply the required culture by setting the __Culture__ property of the __LocalDataSourceProvider__ as shown below:        
 
-#### __XAML__
 
-{{region radpivotgrid-features-culture-support_1}}
+
+```XAML
 	<pivot:LocalDataSourceProvider x:Key="LocalDataProvider" Culture="en-US">
 		...
 	</pivot:LocalDataSourceProvider>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-culture-support_1}}
+
+```C#
 	var dataProvider = new LocalDataSourceProvider { Culture = new CultureInfo("en-US") };
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-features-culture-support_1}}
+```VB
 	Dim dataProvider = New LocalDataSourceProvider With {.Culture = New CultureInfo("en-US")}
-{{endregion}}
+```
 
 >By default when there isn't any Culture set the __LocalDataSourceProvider__ will use __InvariantCulture__ to display the data. In this case as a currency symbol will be displayed the one from the CurrentCulture.         
 
@@ -54,25 +54,25 @@ Figure 3: Without any Culture set (using the CurrentCulture for the currency sym
 
 If you would like to change the Culture at runtime you will need to manualy reset the ItemsSource of the __LocalDataSourceProvider__ and set the new Culture. For example, if the __LocalDataSourceProvider__ is defined in XAML you will be able to easily change the Culture as shown below:        
 
-#### __C#__
 
-{{region radpivotgrid-features-culture-support_2}}
+
+```C#
 	var provider = this.Resources["LocalDataProvider"] as LocalDataSourceProvider;
 	var itemsSource = provider.ItemsSource;
 	provider.ItemsSource = null;
 	provider.Culture = new CultureInfo("fr-FR");
 	provider.ItemsSource = itemsSource;
-{{endregion}}
+```
 
 #### __VB__
 
-{{region radpivotgrid-features-culture-support_2}}
+```VB
 	Dim provider = TryCast(Me.Resources("LocalDataProvider"), LocalDataSourceProvider)
 	Dim itemsSource = provider.ItemsSource
 	provider.ItemsSource = Nothing
 	provider.Culture = New CultureInfo("fr-FR")
 	provider.ItemsSource = itemsSource
-{{endregion}}
+```
 
 ## See Also
 

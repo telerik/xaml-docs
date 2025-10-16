@@ -40,8 +40,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 We will use __RadGridView__ control in order to visualize the data.
 
-#### __[XAML] Example 1: Using RadDataServiceDataSource with RadGridView__
-{{region raddataservicedatasource-getting-started-0}}
+__Example 1: Using RadDataServiceDataSource with RadGridView__
+```XAML
 	<telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Products" AutoLoad="True">
 		<telerik:RadDataServiceDataSource.DataServiceContext>
 			<local:ProductsContext/>
@@ -51,7 +51,7 @@ We will use __RadGridView__ control in order to visualize the data.
 	<telerik:RadGridView Grid.Row="0" ItemsSource="{Binding DataView, ElementName=customersDataSource}"
                      IsBusy="{Binding IsBusy, ElementName=customersDataSource}" 
                      ShowGroupPanel="False"/>
-{{endregion}}
+```
 
 ## See also
 - [Overview]({%slug raddataservicedatasource-overview%})

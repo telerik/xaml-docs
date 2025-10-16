@@ -18,8 +18,8 @@ This section contains an overview of how you can take advantage of the new barco
 
 __Example 1__ demonstrates how to upgrade the __RadBarcode128__ class.
 
-#### __[C#] Example 1: RadBarcode128 Upgrade__  
-{{region cs-barcode-upgrading_0}}
+__Example 1: RadBarcode128 Upgrade__  
+```C#
 
     <!-- old version -->
 	<telerik:RadBarcode128 Text="CODE 128" ShowChecksum="True" RestrictAspectRatio="False" />
@@ -30,12 +30,12 @@ __Example 1__ demonstrates how to upgrade the __RadBarcode128__ class.
             <telerik:Code128 AutoChecksum="True" SizingMode="Stretch" />
         </telerik:RadBarcode.Symbology>
     </telerik:RadBarcode>
-{{endregion}}
+```
 
 __Example 2__ demonstrates how to upgrade the __RadBarcodeQR__ class.
 
-#### __[C#] Example 2: RadBarcodeQR Upgrade__  
-{{region cs-barcode-upgrading_1}}
+__Example 2: RadBarcodeQR Upgrade__  
+```C#
 
     <!-- old version -->
 	<telerik:RadBarcodeQR ApplicationIndicator="App1"
@@ -57,12 +57,12 @@ __Example 2__ demonstrates how to upgrade the __RadBarcodeQR__ class.
                                     Version="11"/>
         </telerik:RadBarcode.Symbology>
     </telerik:RadBarcode>
-{{endregion}}
+```
 
 __Example 3__ demonstrates how to upgrade the __RadBarcodePDF417__ class.
 
-#### __[C#] Example 3: RadBarcodePDF417 Upgrade__  
-{{region cs-barcode-upgrading_2}}
+__Example 3: RadBarcodePDF417 Upgrade__  
+```C#
 
     <!-- old version -->
 	<telerik:RadBarcodePDF417 Columns="5"
@@ -80,7 +80,7 @@ __Example 3__ demonstrates how to upgrade the __RadBarcodePDF417__ class.
                                         ErrorCorrectionLevel="4"/>
         </telerik:RadBarcode.Symbology>
     </telerik:RadBarcode>
-{{endregion}}
+```
 
 ## Newly Supported Formats
 

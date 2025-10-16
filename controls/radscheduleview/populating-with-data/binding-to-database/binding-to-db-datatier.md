@@ -41,8 +41,8 @@ FK_SqlExceptionOccurrences_SqlAppointments	|	SqlAppointments - SqlExceptionOccur
 FK_SqlExceptionAppointments_SqlExceptionOccurrences	|	SqlExceptionOccurrences - SqlExceptionAppointments	|	One-to-many	|	Cascade
 
 
->* There is no table definition for the __IRecurrenceRule__ type because we don’t need it. Storing the __RecurrencePattern__ is enough to generate the recurrence rules at run-time.
->* We cannot save the Brush type into the database directly, that’s why we can save a string that represents the color and convert the string to __SolidColerBrush__ object when the TimeMarkers & Categories are loaded.
->* The __SqlAppointmentResource__ and __SqlExceptionResources__ are cross-tables between:
+* There is no table definition for the __IRecurrenceRule__ type because we don’t need it. Storing the __RecurrencePattern__ is enough to generate the recurrence rules at run-time.
+* We cannot save the Brush type into the database directly, that’s why we can save a string that represents the color and convert the string to __SolidColerBrush__ object when the TimeMarkers & Categories are loaded.
+* The __SqlAppointmentResource__ and __SqlExceptionResources__ are cross-tables between:
 	* SqlAppointments & SqlResources
 	* SqlExceptionAppointments & SqlResources

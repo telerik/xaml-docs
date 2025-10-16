@@ -55,8 +55,8 @@ To learn more about the column headers take a look at the [Column Headers]({%slu
 ## Text Properties
 __GridViewColumn__ provides out-of-the-box mechanism for customizing the visual appearance of its text content. This can be achieved through the __TextWrapping__, __TextAlignment__, __TextTrimming__ and __TextDecorations__ properties.
 
-#### __[XAML] Example 1: Setting the Text Properties of GridViewColumn__
-{{region xaml-gridview-columns-customizing-columns-0}}
+__Example 1: Setting the Text Properties of GridViewColumn__
+```XAML
 	<telerik:RadGridView Name="clubsGrid" 
                      ItemsSource="{Binding Clubs}"
                      AutoGenerateColumns="False"
@@ -77,7 +77,7 @@ __GridViewColumn__ provides out-of-the-box mechanism for customizing the visual 
                                         TextDecorations="Underline"/>
     		</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 #### __Figure 1: GridViewColumn with customized text properties__ 
 ![Telerik {{ site.framework_name }} DataGrid-text properties-column](images/gridview-textproperties-column.png)

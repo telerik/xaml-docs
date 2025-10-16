@@ -82,17 +82,17 @@ Here is a list of the common keyboard events exposed by the RadGridView, `GridVi
 
 In the following example, you can see how to subscribe to KeyDown and KeyUp events from XAML.
 
-#### __[XAML]Subscribe to KeyDown and KeyUp events__
-{{region xaml-gridview-overview-keyboard-support_0}}
+__Subscribe to KeyDown and KeyUp events__
+```XAML
 	<telerik:RadGridView x:Name="radGridView" KeyDown="radGridView_KeyDown" KeyUp="radGridView_KeyUp"/>
-{{endregion}}
+```
 
 >tipIt is always a good practice to attach your event handlers in the XAML, whenever your application logic allows this.
 
 The implementation of both event handlers is located in the code-behind file (C# or VB.NET) and looks like this:
 
-#### __[C#]Implementation of KeyUp and KeyDown events__
-{{region cs-gridview-overview-keyboard-support_1}}
+__Implementation of KeyUp and KeyDown events__
+```C#
 	private void radGridView_KeyDown(object sender, KeyEventArgs e)
 	{
 	    MessageBox.Show("The pressed key is: " + e.Key.ToString());
@@ -101,11 +101,8 @@ The implementation of both event handlers is located in the code-behind file (C#
 	{
 	    MessageBox.Show("The released key is: " + e.Key.ToString());
 	}
-{{endregion}}
-
-
-#### __[VB.NET]Implementation of KeyUp and KeyDown events__
-{{region vb-gridview-overview-keyboard-support_2}}
+```
+```VB.NET
 	Private Sub radGridView_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 	    MessageBox.Show("The pressed key is: " & e.Key.ToString())
 	End Sub
@@ -113,7 +110,7 @@ The implementation of both event handlers is located in the code-behind file (C#
 	Private Sub radGridView_KeyUp(ByVal sender As Object, ByVal e As KeyEventArgs)
 	    MessageBox.Show("The released key is: " & e.Key.ToString())
 	End Sub
-{{endregion}}
+```
 
 
 You can attach to the other keyboard events in the same way.

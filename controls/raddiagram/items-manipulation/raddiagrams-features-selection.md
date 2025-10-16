@@ -38,21 +38,21 @@ In order to change the way the __Selection Adorner Rectangle__ behaves, you can 
 
 In order to select items in XAML, you only need to set their __IsSelected__ property to true:		
 
-#### __XAML__
-{{region radiagram-features-selection-0}}
+
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
 								IsSelected="True"
 								Position="200 100"/>
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 ![raddiagram features selection isselected](images/raddiagram_features_selection_isselected.png)
 
 When multiple items are selected, they are automatically added in one Selection Adorner:
 
-#### __XAML__
-{{region radiagram-features-selection-1}}
+
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape x:Name="db1"
 								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
@@ -70,15 +70,15 @@ When multiple items are selected, they are automatically added in one Selection 
 								IsSelected="True"
 								Position="300 100" />
 	</telerik:RadDiagram>		
-{{endregion}}
+```
 
 ![raddiagram features selection multiselection](images/raddiagram_features_selection_multiselection.png)
 
 You may also want to use the __SelectedIndex__ or the __SelectedItem__ property of the __RadDiagram__:
 		
 
-#### __XAML__
-{{region radiagram-features-selection-2}}
+
+```XAML
 	<telerik:RadDiagram  SelectedIndex="1"
 						x:Name="diagram">
 		<telerik:RadDiagramShape x:Name="db1"
@@ -88,12 +88,12 @@ You may also want to use the __SelectedIndex__ or the __SelectedItem__ property 
 								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
 								Position="300 100" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 Or
 
-#### __XAML__
-{{region radiagram-features-selection-3}}
+
+```XAML
 	<telerik:RadDiagram  SelectedItem="{Binding ElementName=db2}"
 						x:Name="diagram">
 		<telerik:RadDiagramShape x:Name="db1"
@@ -103,7 +103,7 @@ Or
 								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
 								Position="300 100" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 Below is the result of the code snippets above:![raddiagram features selection selectedindex](images/raddiagram_features_selection_selectedindex.png)
 
@@ -113,19 +113,19 @@ When the __RadDiagram__ is bound to collection of business objects or ViewModels
 
 For example, you can have Selected property in your ViewModel and bind it to the Shape's __IsSelected__ like so:		
 
-#### __XAML__
-{{region radiagram-features-selection-4}}
+
+```XAML
 	<Style TargetType="telerik:RadDiagramShape">
 		<Setter Property="IsSelected" Value="{Binding Selected, Mode=TwoWay}" />
 	</Style>
-{{endregion}}
+```
 
 ## SelectAll
 
 You are able to select all __RadDiagramItems__ interactively (by Mouse or by pressing Ctrl + A), programmatically (via the __SelectAll()__ method), set IsSelected to every Shape and Connection via StyleBindings, or with Command. Below is shown how you can use the __SelectAll__ command:
 
-#### __XAML__
-{{region radiagram-features-selection-5}}
+
+```XAML
 	<telerik:RadDiagram x:Name="diagram" Height="200">
 		<telerik:RadDiagramShape x:Name="db1"
 								Geometry="{telerik:FlowChartShape ShapeType=Database1Shape}"
@@ -139,7 +139,7 @@ You are able to select all __RadDiagramItems__ interactively (by Mouse or by pre
 						Command="telerik:DiagramCommands.SelectAll"
 						CommandTarget="{Binding ElementName=diagram}"
 						Content="SelectAll" />
-{{endregion}}
+```
 
 ![raddiagram features selection select All](images/raddiagram_features_selection_selectAll.png)
 

@@ -32,15 +32,15 @@ How to display the ChartView trackball on right mouse button click.
 
 Subscribe to the __PositionChanging__ event of the __ChartTrackBallBehavior__ and reset the last position if the mouse right button wasn't not clicked. Then subscribe to the __MouseRightButtonDown__ event of RadCartesianChart and set the __Position__ property of the behavior manually.
 
-#### __[XAML]__
-{{region kb-chartview-display-trackball-right-click-0}}
+
+```XAML
 	<telerik:RadCartesianChart.Behaviors>
 		<telerik:ChartTrackBallBehavior PositionChanging="ChartTrackBallBehavior_PositionChanging" x:Name="trackballBehavior" />
 	</telerik:RadCartesianChart.Behaviors>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-chartview-display-trackball-right-click-1}}
+
+```C#
 	public partial class MainWindow : Window
     {
         private bool isManualPositionChange = false;
@@ -66,4 +66,4 @@ Subscribe to the __PositionChanging__ event of the __ChartTrackBallBehavior__ an
             this.trackballBehavior.Position = e.GetPosition(this.chart);
         }
     }
-{{endregion}}
+```

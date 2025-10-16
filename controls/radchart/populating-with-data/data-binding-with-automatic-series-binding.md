@@ -16,11 +16,7 @@ One of the features of the __RadChart__ is the automatic series mapping. With au
 
 >Note that SeriesDefinition set through the __RadChart.DefaultSeriesDefinition__ property does not support change notifications i.e. if you try to change a __RadChart.DefaultSeriesDefinition__ property after the control is databound, it will not have any effect till the next rebind operation. The recommended approach in this scenario would be to use unique __SeriesMapping.SeriesDefinition__ or alternatively you can access the generated DataSeries directly (i.e. RadChart.DefaultView.ChartArea.DataSeries[i]) and update its __DataSeries.Definition__ properties.
 
-The purpose of this tutorial is to show you how to use __RadChart__ with __Automatic Series Mappings__. The following cases will be examined:
-
-* [Binding to an array of integers](#Binding_to_an_Array_of_Integers)
-
-* [Binding to a list of business objects](#Binding_to_a_List_of_Business_Objects)
+The purpose of this tutorial is to show you how to use __RadChart__ with __Automatic Series Mappings__. 
 
 >The automatic mapping mode will not work for chart series that require multiple data fields for its correct operation (e.g. the __CandleStick__ type).
 
@@ -28,19 +24,14 @@ The purpose of this tutorial is to show you how to use __RadChart__ with __Autom
 
 Take a look at this simple array declaration:
 
-#### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_0}}
+
+```C#
 	int[] dataArray = new int[] { 12, 56, 23, 89, 12, 56, 34, 78, 32, 56 };
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_1}}
+```
+```VB.NET
 	Dim dataArray As Integer() = New Integer() {12, 56, 23, 89, 12, 56, 34, 78, 32, 56}
-{{endregion}}
+```
 
 
 
@@ -48,19 +39,14 @@ If you set it to the __ItemsSource__ property of the __RadChart__ control, you w
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_PopulatingWithData_AutomaticSeriesMapping_01.png)
 
-#### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_2}}
+
+```C#
 	radChart.ItemsSource = dataArray;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_3}}
+```
+```VB.NET
 	radChart.ItemsSource = dataArray
-{{endregion}}
+```
 
 
 
@@ -68,9 +54,9 @@ If you set it to the __ItemsSource__ property of the __RadChart__ control, you w
 
 If you have a list of business objects and you set it to the __ItemsSource__ property of the __RadChart__ control, the result will be one chart series per numeric property:
 
-#### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_4}}
+
+```C#
 	List<Manufacturer> data = new List<Manufacturer>();
 	data.Add(new Manufacturer("Toyota", 215, 462));
 	data.Add(new Manufacturer("General Motors", 192, 345));
@@ -82,13 +68,8 @@ If you have a list of business objects and you set it to the __ItemsSource__ pro
 	data.Add(new Manufacturer("Hyundai", 64, 133));
 	
 	this.telerkChart.ItemsSource = data;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_5}}
+```
+```VB.NET
 	Dim data As New List(Of Manufacturer)()
 	data.Add(New Manufacturer("Toyota", 215, 462))
 	data.Add(New Manufacturer("General Motors", 192, 345))
@@ -100,15 +81,15 @@ If you have a list of business objects and you set it to the __ItemsSource__ pro
 	data.Add(New Manufacturer("Hyundai", 64, 133))
 	
 	Me.telerkChart.ItemsSource = data
-{{endregion}}
+```
 
 
 
 Where the structure of the __Manufacturer__ class is:
 
-#### __C#__
 
-{{region cs-radchart-populating-with-data-data-binding-with-automatic-series-binding_6}}
+
+```C#
 	public class Manufacturer
 	{
 	    public Manufacturer( string name, int sales, int turnover )
@@ -133,13 +114,8 @@ Where the structure of the __Manufacturer__ class is:
 	        set;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-with-automatic-series-binding_7}}
+```
+```VB.NET
 	Public Class Manufacturer
 	    Public Sub New(ByVal name As String, ByVal sales As Integer, ByVal turnover As Integer)
 	        Me.Name = name
@@ -177,7 +153,7 @@ Where the structure of the __Manufacturer__ class is:
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 

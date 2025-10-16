@@ -12,8 +12,7 @@ position: 1
 
 With RadPdfViewer, you can provide the end users the ability to show, fill and save documents containing interactive forms. 
 
-The control renders each field according to its type and provides an easy way for the user to edit its value. [**Figure 1**](#figure1) shows a document containing text, list box, radio button and check box fields.
-
+The control renders each field according to its type and provides an easy way for the user to edit its value. **Figure 1** shows a document containing text, list box, radio button and check box fields.
 
 >In the versions between R1 and R3 2017, the content of the interactive forms is visualized read-only. The interactions with the form fields are supported since R3 2017. 
 
@@ -46,7 +45,6 @@ The form fields in a document are preserved in its **AcroForm** property. You ca
 
 After filling the forms, you can save the document using the Save As command.  
 
-<a name="figure1"><a/>
 #### **Figure 1: Interactive form fields in RadPdfViewer**
 ![{{ site.framework_name }} RadPdfViewer Interactive form fields in RadPdfViewer](images/PdfViewer_InteractiveForms_1.gif)
 

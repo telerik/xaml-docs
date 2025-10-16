@@ -30,8 +30,8 @@ How to add a clear button to the RadWatermarkTextBox control.
 
 You can add a button as the `AdditionalContent` of the RadWatermarkTextBox control and bind its `Command` property to the `RadWatermarkTextBoxCommands.Clear` command.
 
-#### __[XAML] Add clear button as AdditionalContent__ 
-{{region kb-watermarktextbox-add-clear-button-0}}
+__Add clear button as AdditionalContent__ 
+```XAML
 	<telerik:RadWatermarkTextBox.AdditionalContent>
 		<telerik:RadButton Focusable="False" IsBackgroundVisible="False"
 							Command="telerik:RadWatermarkTextBoxCommands.Clear"
@@ -40,7 +40,7 @@ You can add a button as the `AdditionalContent` of the RadWatermarkTextBox contr
 			<telerik:RadGlyph Glyph="{StaticResource GlyphClose}"/>
 		</telerik:RadButton>
 	</telerik:RadWatermarkTextBox.AdditionalContent>
-{{endregion}}
+```
 
 ## See Also
 * [AdditionalContent]({%slug radwatermarktextbox-features%}#clear-command)

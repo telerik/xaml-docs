@@ -61,8 +61,8 @@ __Example 1__ demonstrates how you can set up the RadEntityFrameworkCoreDataSour
 
 > In case you don't have a DbContext/database setup, you can check out the [MVVM Usage]({%slug entityframeworkcore-mvvm-usage%}) article, which shows how you can set them up from scratch.
 
-#### __[XAML] Example 1: Defining RadEntityFrameworkCoreDataSource in xaml__
-{{region xaml-entityframeworkcore-getting-started-0}}
+__Example 1: Defining RadEntityFrameworkCoreDataSource in xaml__
+```XAML
 
     <telerik:RadEntityFrameworkCoreDataSource Name="EntityFrameworkCoreDataSource" QueryName="Customers"> 
         <telerik:RadEntityFrameworkCoreDataSource.DbContext> 
@@ -70,14 +70,14 @@ __Example 1__ demonstrates how you can set up the RadEntityFrameworkCoreDataSour
         </telerik:RadEntityFrameworkCoreDataSource.DbContext> 
     </telerik:RadEntityFrameworkCoreDataSource> 
     <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=EntityFrameworkCoreDataSource}"/>
-{{endregion}}
+```
 
 ## RelatedObjects
 
 The __RelatedObjects__ property of the RadEntityFrameworkCoreDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders"  collection in case you want to get the related Orders for each Customer from the database. You can also specify several navigational property names separated by "/" characters and the control will use the ".ThenInclude()" method when retrieving them. 
 
-#### __[XAML] Example 2: Using the RelatedObjects__
-{{region xaml-entityframeworkcore-getting-started-1}}
+__Example 2: Using the RelatedObjects__
+```XAML
 
     <telerik:RadEntityFrameworkCoreDataSource x:Name="coreDataSource" QueryName="Customers">
         <telerik:RadEntityFrameworkCoreDataSource.RelatedObjects>
@@ -87,7 +87,7 @@ The __RelatedObjects__ property of the RadEntityFrameworkCoreDataSource allows y
             <local:NorthwindContext />
         </telerik:RadEntityFrameworkCoreDataSource.DbContext>
     </telerik:RadEntityFrameworkCoreDataSource>
-{{endregion}}
+```
 
 ## See also
 

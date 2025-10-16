@@ -24,9 +24,9 @@ To do so follow these steps:
 
 **2**. Override its __SelectTemplate__ method. Based on your conditions - you return the proper DataTemplate that will be applied to the framework element (cell in our case).
 
-#### __C#__
 
-{{region cs-gridview-cell-template-selector_0}}
+
+```C#
 	public class MyCellTemplateSelector : DataTemplateSelector
 	{
 	    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
@@ -48,11 +48,8 @@ To do so follow these steps:
 	    public DataTemplate bigStadium { get; set; }
 	    public DataTemplate smallStadium { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-cell-template-selector_1}}
+```
+```VB.NET
 	Public Class MyCellTemplateSelector
 	    Inherits DataTemplateSelector
 	    Public Overrides Function SelectTemplate(item As Object, container As System.Windows.DependencyObject) As System.Windows.DataTemplate
@@ -85,15 +82,15 @@ To do so follow these steps:
 	    End Property
 	    Private m_smallStadium As DataTemplate
 	End Class
-{{endregion}}
+```
 
 In this case we have two different DataTemplates that could be applied - bigStadium and smallStadium. Depending on the underlying data we choose / select which template to apply.
 
 **3**. In the XAML file define the template selector as a resource and set the properties of the bigStadium and smallStadium:
 
-#### __XAML__
 
-{{region xaml-gridview-cell-template-selector_2}}
+
+```XAML
 	<my:MyCellTemplateSelector x:Key="myCellTemplateSelector">
 	    <my:MyCellTemplateSelector.bigStadium>
 	        <DataTemplate>
@@ -112,18 +109,18 @@ In this case we have two different DataTemplates that could be applied - bigStad
 	        </DataTemplate>
 	    </my:MyCellTemplateSelector.smallStadium>
 	</my:MyCellTemplateSelector>
-{{endregion}}
+```
 
 **4**. Finally, set the __CellTemplateSelector__ property of the data column which represents the StadiumCapacity field:
 
-#### __XAML__
 
-{{region xaml-gridview-cell-template-selector_3}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
 	Header="Stadium" 
 	CellTemplateSelector="{StaticResource myCellTemplateSelector}"
 	DataFormatString="{}{0:N0}"/>
-{{endregion}}
+```
 
 You can use the **CellEditTemplateSelector** property in a similar manner with the only difference that the custom controls you define in the template will be displayed only once it enters edit mode.
 

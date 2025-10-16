@@ -34,8 +34,8 @@ How to use the AllowCrossVersion property with RadPersistenceFramework's Isolate
 
 2. Create a new IsolatedStorageProvider instance and pass the PersistenceManager in its constructor.
 
-#### __[C#]__
-{{region kb-persistenceframework-allowcrossversion-isolatedstorageprovider-0}}
+
+```C#
 	var manager = new PersistenceManager() { AllowCrossVersion = true };
 	var storageProvider = new IsolatedStorageProvider(manager);
-{{endregion}}
+```

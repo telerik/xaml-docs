@@ -36,8 +36,8 @@ This functionality can be achieved by tracking the keyboard input. You can attac
 In the following codes snippet, we will demonstrate how to implement this functionality. The specific here is to get the right start and end position of the entered text that will be replaced with a text snippet. First, we are getting the end position by creating a new instance of [DocumentPosition](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.documentposition) passing the current CaretPosition and the trackDocumentChangeEvents (This indicates whether the position is anchored to the end of the word. If true, the position is kept between the same characters when there is a modification in the content before the position.). And second, we are passing the endPosition instance to the DocumentPosition constructor and then move the start position adjusting all the characters from the entered text (including the Colon and Space symbols).
 Having both the start and the end position we can create a new Selection and using the RadRichTextBox` **Insert(string)** method (inserts text into the document at the specified position) we can overwrite this selection with a text snippet.
 
-#### __[C#]__ 
-{{region kb-richtextbox-auto-text-implementation}}
+ 
+```C#
 
     private void RadRichTextBox_KeyDown(object sender, KeyEventArgs e)
     {
@@ -86,7 +86,7 @@ Having both the start and the end position we can create a new Selection and usi
             this.isShiftPressed = false;
         }
     }
-{{endregion}}
+```
 
 ## See Also
 

@@ -51,9 +51,9 @@ As most features of the editor, the image editing capabilities can be easily dis
 To remove the image adorner from your application you can create a new __UILayersBuilder__ as shown [here]({%slug radrichtextbox-features-custom-ui-layers%}) and remove the __AdornerLayer__.
         
 
-#### __C#__
 
-{{region radrichtextbox-features-editing-images_0}}
+
+```C#
     public class CustomLayersBuilder : UILayersBuilder
     {
         protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
@@ -61,48 +61,48 @@ To remove the image adorner from your application you can create a new __UILayer
             uiLayerContainer.UILayers.Remove("AdornerLayer");
         }
     }
-{{endregion}}
+```
 
 
 
 Alternatively, you can disable the capabilities of the image adorner by accessing it though RadRichTextBox's  __ImageSelectionAdornerSettings__ property. This allows you to set the bolean properties __CanDrag__, __CanResize__ and __CanRotate__ which disable/enable respectively dragging of the image, resizing it or rotating it.
         
 
-#### __C#__
 
-{{region radrichtextbox-features-editing-images_5}}
+
+```C#
     this.radRichTextBox.ImageSelectionAdornerSettings.CanDrag = false;
     this.radRichTextBox.ImageSelectionAdornerSettings.CanResize = false;
     this.radRichTextBox.ImageSelectionAdornerSettings.CanRotate = false;
-{{endregion}}
+```
 
 
 
 In order to prevent the __ImageMiniToolBar__ from showing you should set the __IsImageMiniToolbarEnabled__ property to false either in XAML or in code-behind.
         
 
-#### __XAML__
 
-{{region radrichtextbox-features-editing-images_1}}
+
+```XAML
     <telerik:RadRichTextBox Name="radRichTextBox" IsImageMiniToolBarEnabled="False" />
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region radrichtextbox-features-editing-images_2}}
+
+```C#
     this.radRichTextBox.IsImageMiniToolBarEnabled = false;
-{{endregion}}
+```
 
 
 
 As for removing the image editing option from the context menu, you can do that by creating a custom menu builder, which derives from __ContextMenuContentBuilder__ and override the __CreateImageCommands()__ method.
         
 
-#### __C#__
 
-{{region radrichtextbox-features-editing-images_3}}
+
+```C#
     public class CustomMenuBuilder : ContextMenuContentBuilder
     {
         private RadRichTextBox radRichTextBox;
@@ -151,19 +151,19 @@ As for removing the image editing option from the context menu, you can do that 
             return menuItem;
         }
     }
-{{endregion}}
+```
 
 
 
 What is left to do is assign an instance of your class to the __ContentBuilder__ property of the context menu:
         
 
-#### __C#__
 
-{{region radrichtextbox-features-editing-images_4}}
+
+```C#
     Telerik.Windows.Controls.RichTextBoxUI.ContextMenu contextMenu = (Telerik.Windows.Controls.RichTextBoxUI.ContextMenu)this.radRichTextBox.ContextMenu;
     contextMenu.ContentBuilder = new CustomMenuBuilder(this.radRichTextBox);
-{{endregion}}
+```
 
 
 

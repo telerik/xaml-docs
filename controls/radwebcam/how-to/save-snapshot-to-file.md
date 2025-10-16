@@ -16,15 +16,15 @@ This article shows how to take and save a snapshot to a file.
 
 Add the control to the logical tree of the view and subscribe to the `SnapshotTaken` event.
 
-#### __[XAML] Defining RadWebCam__
-{{region radwebcam-save-snapshot-to-file-0}}
+__Defining RadWebCam__
+```XAML
 	<telerik:RadWebCam x:Name="radWebCam" SnapshotTaken="RadWebCam_SnapshotTaken"/>
-{{endregion}}
+```
 
 In the event handler you get access to a `BitmapSource` object holding the snapshot. You can use this to save it to the file system. 
 
-#### __[C#] Opening a file dialog in the SnapshotTaken event handler and saving it to a file__
-{{region radwebcam-save-snapshot-to-file-1}}
+__Opening a file dialog in the SnapshotTaken event handler and saving it to a file__
+```C#
 	private void RadWebCam_SnapshotTaken(object sender, RoutedEventArgs e)
 	{
 	    var args = (SnapshotTakenEventArgs)e;
@@ -42,7 +42,7 @@ In the event handler you get access to a `BitmapSource` object holding the snaps
 			}
 		}
 	}
-{{endregion}}
+```
 
 ## Taking Snapshot
 
@@ -54,10 +54,10 @@ __Take snapshot button__
 
 ![{{ site.framework_name }} RadWebCam Take Snapshot Button](images/radwebcam-save-snapshot-to-file-0.png)
 
-#### __[C#] Take Snapshot__
-{{region radwebcam-save-snapshot-to-file-2}}
+__Take Snapshot__
+```C#
 	this.radWebCam.TakeSnapshot();
-{{endregion}}
+```
 
 ## See Also  
 * [Getting Started]({%slug radwebcam-getting-started%})

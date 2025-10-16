@@ -18,8 +18,8 @@ The Telerik suite provides built-in extensions that can change different behavio
 
 >importantThis property can be set on the following controls: __RadDropDownButton, RadSplitButton, RadColorPicker, RadTimeSpanPicker, RadDateTimePicker, RadBreadCrumb__.
 
-#### __[XAML] Example 1: Set HandleMouseWheelWhenOpen attached property__
-{{region xaml-radbuttons-features-button-extensions_0}}
+__Example 1: Set HandleMouseWheelWhenOpen attached property__
+```XAML
 	<ScrollViewer Height="120">
 		<StackPanel Height="800" Background="Bisque">
 			<telerik:RadDropDownButton Content="Drop Down Button"  VerticalAlignment="Top" HorizontalAlignment="Left" telerik:DropDownExtensions.HandleMouseWheelWhenOpen="True">
@@ -38,7 +38,7 @@ The Telerik suite provides built-in extensions that can change different behavio
 			</telerik:RadDropDownButton>
 		</StackPanel>
 	</ScrollViewer>
-{{endregion}}
+```
 
 >importantThis property is not supported when the control (for example, RadDropDownButton) has its __KeepOpen__ property set to __True__.
 
@@ -46,8 +46,8 @@ The Telerik suite provides built-in extensions that can change different behavio
 
 * __FocusContentOnOpen:__ A boolean property that gets or sets if the drop-down content of a drop-down button control should be focused when its drop-down content is open. The default value is **false**.
 
-#### __[XAML] Example 2: Set FocusContentOnOpen attached property__
-{{region xaml-radbuttons-features-button-extensions_1}}
+__Example 2: Set FocusContentOnOpen attached property__
+```XAML
 	<telerik:RadDropDownButton Content="Drop Down Button"  VerticalAlignment="Top" HorizontalAlignment="Left" telerik:DropDownButtonExtensions.FocusContentOnOpen="True">
 		<telerik:RadDropDownButton.DropDownContent>
 			<telerik:RadListBox >
@@ -58,7 +58,7 @@ The Telerik suite provides built-in extensions that can change different behavio
 			</telerik:RadListBox>
 		</telerik:RadDropDownButton.DropDownContent>
 	</telerik:RadDropDownButton>
-{{endregion}}
+```
 
 ## See Also
 

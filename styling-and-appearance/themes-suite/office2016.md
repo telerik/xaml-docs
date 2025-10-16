@@ -159,11 +159,11 @@ There are two read-only brushes as well:
 
 And here is an example of how to change them:
 
-#### __[C#] Changing the read-only colors__
-{{region cs-styling-appearance-office2016-theme-0}}
+__Changing the read-only colors__
+```C#
 	Office2016Palette.Palette.ReadOnlyBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFBDD");
 	Office2016Palette.Palette.ReadOnlyBorderColor = (Color)ColorConverter.ConvertFromString("#5F5F5F");
-{{endregion}}
+```
 
 
 __Theme colors__
@@ -178,10 +178,10 @@ The general naming convention is: `Office2016Palette.Palette.[name]Color` is res
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-office2016-theme-1}}
+__Setting palette colors__
+```C#
 	Office2016Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Font Properties
 
@@ -193,32 +193,32 @@ The FontSize and FontFamily properties are public so you can easily modify the t
 
 The following example shows the default font sizes and families.
 
-#### __[C#] Default FontSize and FontFamily__
-{{region cs-styling-appearance-office2016-theme-2}}
+__Default FontSize and FontFamily__
+```C#
 	Office2016Palette.Palette.FontSizeS = 10;
 	Office2016Palette.Palette.FontSize = 12;
 	Office2016Palette.Palette.FontSizeL = 14;
 	Office2016Palette.Palette.FontFamily = new FontFamily(“Segoe UI”);
-{{endregion}}
+```
 
 The following examples show how to change the default FontFamily from "Segoe UI" to "Times New Roman" and the FontSize from __12__ to __14__ on a click of a button.
 
-#### __[XAML] Example view definition__
-{{region xaml-styling-appearance-office2016-theme-0}}
+__Example view definition__
+```XAML
 	<StackPanel>
 		<telerik:RadCalendar HorizontalAlignment="Center" />
 		<telerik:RadButton Content="Change Font" Click=" OnButtonChangeFontSizeClick " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 5 0 0"/>
 	</StackPanel>
-{{endregion}}
+```
 	
-#### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-office2016-theme-3}}
+__Changing the theme's FontSize and FontFamily__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Office2016Palette.Palette.FontSize = 14;
 		Office2016Palette.Palette.FontFamily = new FontFamily("Calibri");
 	}
-{{endregion}}
+```
 
 __Setting FontSize and FontFamily__
 
@@ -229,10 +229,10 @@ __Setting FontSize and FontFamily__
 
 The `Office2016` theme palette includes a `FocusThickness` property. It defines the thickness of the buttons’ focus border. As our design is inspired by the Microsoft Office, the focus border of the buttons is thicker than the one of the other controls and elements. By default the FocusThickness is set to __2__, but it is easily changeable in a similar way to the other palette properties.
 
-#### __[C#] Setting focus border thickness__
-{{region cs-styling-appearance-office2016-theme-4}}
+__Setting focus border thickness__
+```C#
 	Office2016Palette.Palette.FocusThickness = new Thickness(1);
-{{endregion}}
+```
 	
 __Setting the focus border thickness__
 
@@ -242,25 +242,25 @@ __Setting the focus border thickness__
 
 The Office2016 theme exposes an easy way to modify the corner radius of many elements in your application. You can use the corner radius properties of the palette. By default all radius values are 0.
 
-#### __[C#] Setting corner radius__
-{{region cs-styling-appearance-office2016-theme-5}}
+__Setting corner radius__
+```C#
 	Office2016Palette.Palette.CornerRadius = new CornerRadius(0,0,0,0);
 	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(0,0,0,0);
 	Office2016Palette.Palette.CornerRadiusBottom = new CornerRadius(0,0,0,0);
 	Office2016Palette.Palette.CornerRadiusLeft = new CornerRadius(0,0,0,0);
 	Office2016Palette.Palette.CornerRadiusRight = new CornerRadius(0,0,0,0);
-{{endregion}}
+```
 
 The following example shows how to change the default corner radius from 0 to 2.
 
-#### __[C#] Changing the default corner radius__
-{{region cs-styling-appearance-office2016-theme-6}}
+__Changing the default corner radius__
+```C#
 	Office2016Palette.Palette.CornerRadius = new CornerRadius(2); 
 	Office2016Palette.Palette.CornerRadiusBottom = new CornerRadius(0, 0, 2, 2);
 	Office2016Palette.Palette.CornerRadiusLeft = new CornerRadius(2, 0, 0, 2);
 	Office2016Palette.Palette.CornerRadiusRight = new CornerRadius(0, 2, 2, 0);
 	Office2016Palette.Palette.CornerRadiusTop = new CornerRadius(2, 2, 0, 0);
-{{endregion}}
+```
 
 __Setting the corner radius__
 
@@ -277,19 +277,19 @@ With Office2016 theme, an approach to add icons and icon-like images has been in
 
 Since each glyph’s string value is ambiguous and not related to its shape, we are providing a resource dictionary with key-value pairs for easier usage and referencing in projects. It also provides compatibility for future inclusions of new glyphs as it is updated to any shifts in the string values of the existing glyphs with no need to change the references in the projects.
 
-#### __[XAML] Adding the ResourceDictionary with the glyphs__
-{{region xaml-styling-appearance-office2016-theme-1}}
+__Adding the ResourceDictionary with the glyphs__
+```XAML
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
-{{endregion}}
+```
 
-#### __[XAML] Using glyphs__
-{{region xaml-styling-appearance-office2016-theme-2}}
+__Using glyphs__
+```XAML
 	<TextBlock FontFamily=”{StaticResource TelerikWebUI}”
 			   Foreground=”{telerik:Office2016Resource ResourceKey=IconBrush}”
 			   Text=”{StaticResource GlyphHeart}” 			   			   
 			   FontWeight=”Normal” 
 			   FontSize=”16” />
-{{endregion}}
+```
 
 __Heart glyph__
 
@@ -301,21 +301,21 @@ __Heart glyph__
 
 You can easily change the opacity of any disabled element by using the `DisabledOpacity` property of the `Office2016Palette`. The default value of the property is __0.5__.
 
-#### __[C#] Setting the disabled opacity__
-{{region cs-styling-appearance-office2016-theme-7}}
+__Setting the disabled opacity__
+```C#
 	Office2016Palette.Palette.DisabledOpacity = 0.3;
-{{endregion}}
+```
 
 __Setting the disabled opacity__
 
-![{{ site.framework_name }} Office2016 Setting the Disabled Opacity](../images/common-styling-appearance-office2016-theme-theme-5.png)	
+![{{ site.framework_name }} Office2016 Setting the Disabled Opacity](../images/common-styling-appearance-office2016-theme-5.png)	
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `Office2016Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-office2016-theme-3}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -323,7 +323,7 @@ When modifying fonts, colors, or other resources from the `Office2016Palette` an
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

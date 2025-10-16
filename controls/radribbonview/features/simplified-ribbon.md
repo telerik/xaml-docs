@@ -16,8 +16,8 @@ Since the __R2 2019__ version, you have the option of changing the default layou
 
 Before switching the layout, you have to define what will be shown in the simplified state of the RadRibboonView. This is done through the new __SimplifiedItems__ property of the [RadRibbonTab]({%slug radribbonview-ribbon-tab%}). You can also set the __SimplifiedContentHeight__ property in order to control the Height while the layout is simplified.
 
-#### __[XAML] Example 1: Setting the SimplifiedItems property__
-{{region xaml-radribbonview-simplified-ribbon-0}}
+__Example 1: Setting the SimplifiedItems property__
+```XAML
     <telerik:RadRibbonView x:Name="ribbonView" ApplicationName="Example" Title="RibbonView" ShowLayoutModeButton="True" SimplifiedContentHeight="40">
         <telerik:RadRibbonView.Resources>
             <DataTemplate x:Key="IconTemplate">
@@ -50,7 +50,7 @@ Before switching the layout, you have to define what will be shown in the simpli
             </telerik:RadRibbonGroup>
         </telerik:RadRibbonTab>
     </telerik:RadRibbonView>
-{{endregion}}
+```
 
 #### __Figure 1: Changing RadRibbonView layout in the Office2016 theme__
 ![Changing RadRibbonView layout in the Office2016 theme](images/RibbonView_LayoutMode_Change.gif)
@@ -69,33 +69,31 @@ In order to change the default layout mode, there are two options. Switch the la
 
 * __Switch the layout through the UI__: By default the button that switches between the default and the simplified layout is not visible. You can set the __ShowLayoutModeButton__ property to __True__ in order to show it. You can also set the __LayoutModeButtonContent__ property in order to change the Content of the switch button.
 
-    #### __[XAML] Example 2: Showing the LayoutMode button and changing its Content__
-    {{region xaml-radribbonview-simplified-ribbon-1}}
+    __Example 2: Showing the LayoutMode button and changing its Content__
+    ```XAML
         <telerik:RadRibbonView x:Name="ribbonView" ApplicationName="Example"  Title="RibbonView" ShowLayoutModeButton="True" LayoutModeButtonContent="Simplify" />
-    {{endregion}}
+    ```
 
     #### __Figure 2: LayoutMode button in the Office2016 theme__
     ![LayoutMode button in the Office2016 theme](images/RibbonView_LayoutModeButtonContent.png)
 
 * __Switch the layout programmatically__: In order to change the layout in code, you can set the __LayoutMode__ property to __Simplified__ or execute the __ToggleLayoutModeCommand__ command.
 
-    #### __[C#] Example 2: Switching the layout in code__
-    {{region cs-radribbonview-simplified-ribbon-1}}
+    __Example 2: Switching the layout in code__
+    ```C#
         this.ribbonView.LayoutMode = RibbonLayout.Simplified;
                 
         // or
 
         RibbonCommands.ToggleLayoutModeCommand.Execute(null, this.ribbonView);
-    {{endregion}}
-
-    #### __[VB.NET] Example 2: Switching the layout in code__
-    {{region vb-radribbonview-simplified-ribbon-2}}
+    ```
+	```VB.NET
         Me.ribbonView.LayoutMode = RibbonLayout.Simplified
 
         'or
 
         RibbonCommands.ToggleLayoutModeCommand.Execute(Nothing, Me.ribbonView)
-    {{endregion}}
+    ```
 
 ## Simplifying the Layout
 

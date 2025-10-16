@@ -20,22 +20,22 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 1. First you will need to create a __Country__ class with the necessary properties:            
 
-	#### __[C#]  Country class creation__
+	__Country class creation__
 
-	{{region cs-radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
+	```C#
 		public class Country
 		{
 			public string Name { get; set; }
 			public string Capital { get; set; }
 			public int Id { get; set; }
 		}
-	{{endregion}}
+	```
 
 2. Next you should create a __Countries__ collection in your ViewModel and populate it with some sample data:            
 
-	#### __[C#]  ViewModel declaration___
+	__ViewModel declaration___
 
-	{{region cs-radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
+	```C#
 		public class ViewModel : ViewModelBase
 		{
 			public ViewModel()
@@ -59,13 +59,13 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 			}
 			public ObservableCollection<Country> Countries { get; set; }
 		}
-	{{endregion}}
+	```
 
 3. In the App.xaml file merge the necessary __ResourceDictionary__ for the RadListBox control based on the theme you are using. This example uses the Office_Black theme:            
 
-	#### __[XAML]  Merging the necessary ResourceDictionary__
+	__Merging the necessary ResourceDictionary__
 
-	{{region xaml-radlistbox-styles-and-templates-customize-the-dragvisualprovider-0}}
+	```XAML
 		<Application.Resources>
 		    <ResourceDictionary>
 		        <ResourceDictionary.MergedDictionaries>
@@ -74,13 +74,13 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 		        </ResourceDictionary.MergedDictionaries>
 		    </ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```
 
 4. Next you will need to create a Style in the same file that targets __ListBoxDragVisual__ and set its Foreground, Background, BorderBrush and Template properties:           
 
-	#### __[XAML]  Style targeting ListBoxDragVisual__
+	__Style targeting ListBoxDragVisual__
 
-	{{region xaml-radlistbox-styles-and-templates-customize-the-dragvisualprovider-1}}
+	```XAML
 		<Style TargetType="telerikDragDrop:ListBoxDragVisual" BasedOn="{StaticResource DragVisualStyle}">
 		    <Setter Property="Foreground" Value="White"/>
 		    <Setter Property="BorderBrush" Value="DarkGreen"/>
@@ -128,7 +128,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 		        </Setter.Value>
 		    </Setter>
 		</Style>
-	{{endregion}}
+	```
 
 	You can find the entire ListBoxDragVisual Template code in each specific theme for the RadListBox control.            
 
@@ -136,9 +136,9 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 
 5. Finally you will need to declare the __RadListBox__ control. The xaml of the control should look like this:            
 
-	#### __[XAML]  RadListBox declaration__
+	__RadListBox declaration__
 
-	{{region xaml-radlistbox-styles-and-templates-customize-the-dragvisualprovider-2}}
+	```XAML
 		<telerik:RadListBox ItemsSource="{Binding Countries}" 
 		DisplayMemberPath="Name">
 		    <telerik:RadListBox.DragDropBehavior>
@@ -148,7 +148,7 @@ The next example will demonstrate the how to create a custom DragVisualProvider 
 		        <telerik:ListBoxDragVisualProvider/>
 		    </telerik:RadListBox.DragVisualProvider>
 		</telerik:RadListBox>
-	{{endregion}}
+	```
 
 	>tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/ListBox/CustomDragVisualStyle).
 

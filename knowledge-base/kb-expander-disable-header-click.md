@@ -26,14 +26,14 @@ How to disallow the clicking of the RadExpander's header.
 
 To achieve this requirement you can set the **IsHitTestVisible** property of the header button to **False**. This will prevent the propagation of mouse events to the button. To set the property of the button, you can use the **HeaderButtonStyle** property of RadExpander.
 
-#### __[XAML] Example 1: Disable header button click__
-    {{region xaml-kb-gridview-howto-datapager-persist-selection-1}}
+__Example 1: Disable header button click__
+    ```XAML
         <telerik:RadExpander.HeaderButtonStyle>
             <Style TargetType="telerik:RadToggleButton">
                 <Setter Property="IsHitTestVisible" Value="False" />
             </Style>
         </telerik:RadExpander.HeaderButtonStyle>
-    {{endregion}}
+    ```
 
 ## See Also
 * [How To Change the Action Triggering an Expand]({%slug radexpander-howto-change-expand-action%})

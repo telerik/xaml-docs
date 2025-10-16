@@ -19,8 +19,8 @@ The PromptRequest event is raised when the user clicks on the input button. The 
 * `InputText`&mdash;Gets the text, with which the prompt was initiated. Can be the text in the input textbox or the InputText property of an already generated item in case of retry.
 * `IsRetry`&mdash;Gets a boolean value indicating whether the event was initiated to retry for an already generated response.
 
-#### __[C#] Using the PromptRequest event to add a new response in the AIPrompt control__
-{{region radaiprompt-events-0}}
+__Using the PromptRequest event to add a new response in the AIPrompt control__
+```C#
     private void OnPromptRequested(object sender, PromptRequestEventArgs e)
     {
     	RadAIPrompt radAIPrompt = (RadAIPrompt)sender;
@@ -37,7 +37,7 @@ The PromptRequest event is raised when the user clicks on the input button. The 
     	//Adding the response from your AI model to the RadAIPrompt control
     	radAIPrompt.OutputItems.Add(responseAIPromptOutputItemModel);
     }
-{{endregion}}
+```
 
 ## See Also
 * [Suggestions]({%slug radaiprompt-suggestions%})

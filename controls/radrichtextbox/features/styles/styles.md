@@ -86,9 +86,9 @@ All the styles defined for a document are stored in its **StyleRepository** prop
 
 #### [C#] Example 1: Accessing a style from a document
 
-{{region radrichtextbox-features-styles_6}}
+```C#
 	StyleDefinition normalStyle = this.editor.Document.StyleRepository[RadDocumentDefaultStyles.NormalStyleName];
-{{endregion}}
+```
 
 
 ## Declaring New Styles
@@ -99,9 +99,9 @@ New styles can be declared and added to the **StylesRepository** of the document
 
 **Example 2** shows how a Character style can be defined and registered.
 
-#### __[C#] Example 2: Create and register a Character style__
+__Example 2: Create and register a Character style__
 
-{{region radrichtextbox-features-styles_0}}
+```C#
 
 	StyleDefinition charStyle = new StyleDefinition();
 	charStyle.Type = StyleType.Character;
@@ -112,7 +112,7 @@ New styles can be declared and added to the **StylesRepository** of the document
 	charStyle.Name = "charStyle";
 	
 	this.editor.Document.StyleRepository.Add(charStyle);
-{{endregion}}
+```
 
 
 
@@ -122,9 +122,9 @@ This style will set "Calibri" as a FontFamily to the part of the document it is 
 
 A paragraph style can be defined as follows:
 
-#### __[C#] Example 3: Create and register a Paragraph style__
+__Example 3: Create and register a Paragraph style__
 
-{{region radrichtextbox-features-styles_1}}
+```C#
 	StyleDefinition paragraphStyle = new StyleDefinition();
 	paragraphStyle.Type = StyleType.Paragraph;
 	paragraphStyle.ParagraphProperties.Background = Colors.Red;
@@ -133,7 +133,7 @@ A paragraph style can be defined as follows:
 	paragraphStyle.Name = "paragraphStyle";
 	
 	this.editor.Document.StyleRepository.Add(paragraphStyle);
-{{endregion}}
+```
 
 
 
@@ -143,9 +143,9 @@ When applied to a Paragraph, this style will set the Background color of the Par
 
 Linked styles should be used when both properties of Paragraph and Span should be set by the same style. They can be declared like demonstrated in **Example 4**.
 
-#### __[C#] Example 4: Create and register a linked style__
+__Example 4: Create and register a linked style__
 
-{{region radrichtextbox-features-styles_2}}
+```C#
 	StyleDefinition linkedParagraphStyle = new StyleDefinition();
 	linkedParagraphStyle.Type = StyleType.Paragraph;
 	linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow;
@@ -163,7 +163,7 @@ Linked styles should be used when both properties of Paragraph and Span should b
 	
 	this.editor.Document.StyleRepository.Add(linkedParagraphStyle);
 	this.editor.Document.StyleRepository.Add(linkedCharStyle);
-{{endregion}}
+```
 
 
 
@@ -181,11 +181,11 @@ Styles of type Paragraph follow the same logic and are applied to all paragraphs
 
 The code from **Example 5** applies the "linkedParagraphStyle" to the current Paragraph and the parts of the text which are selected.
 
-#### __[C#] Example 5: Apply custom style__
+__Example 5: Apply custom style__
 
-{{region radrichtextbox-features-styles_3}}
+```C#
 	this.editor.ChangeStyleName("linkedParagraphStyle");
-{{endregion}}
+```
 
 
 
@@ -203,36 +203,36 @@ The default style for table properties is __TableNormal__, which does not inheri
 All default styles as well as some other predefined styles can be applied using the members exposed by the __RadDocumentDefaultStyles__ class. The set of properties provided by the class are of type *string* and should be applied using the __StyleName__ property of the respective document element.
         
       
-#### __[C#] Example 6: Apply built-in style to a Table__
+__Example 6: Apply built-in style to a Table__
 
-{{region radrichtextbox-features-styles_4}}
+```C#
 
 	table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
-{{endregion}}
+```
 
 
 
 And a paragraph can have __Heading 1__ style applied to it like this:
         
 
-#### __[C#] Example 7: Apply built-in style to a Paragraph__
+__Example 7: Apply built-in style to a Paragraph__
 
-{{region radrichtextbox-features-styles_5}}
+```C#
 
 	paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
-{{endregion}}
+```
 
 ### Change Properties of the Default Styles
 
 You can obtain each of the pre-defined styles and modify it according to your preferences and requirements. **Example 8** shows how you can get the Normal style and modify its ParagraphProperties. 
 
-#### __[C#] Example 8: Modify default style__
+__Example 8: Modify default style__
 
-{{region radrichtextbox-features-styles_7}}
+```C#
 	StyleDefinition normalStyle = this.editor.Document.StyleRepository[RadDocumentDefaultStyles.NormalStyleName];
 	normalStyle.ParagraphProperties.AutomaticSpacingAfter = false;
 	normalStyle.ParagraphProperties.SpacingAfter = 0;
-{{endregion}}
+```
 
 >The styles are defined on document level and thus, if the document changes, the styles will be reset as well.
 

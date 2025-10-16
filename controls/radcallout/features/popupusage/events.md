@@ -18,10 +18,10 @@ This article lists the events of the RadCallout control when placed inside a Pop
 
 You can subscribe to the placement target element events of the Popup holding the RadCallout, using the CalloutPopupService.
 
-#### __[C#] Example 1: Add event handler to PopupOpening in XAML__
-		{{region xaml-radcallout-events_0}}			
-			<telerik:RadButton x:Name="myPlacementTargetElement" telerik:CalloutPopupService.PopupOpening="OnPopupOpening" Content="My Button"  />
-		{{endregion}}
+__Example 1: Add event handler to PopupOpening in XAML__
+```C#			
+	<telerik:RadButton x:Name="myPlacementTargetElement" telerik:CalloutPopupService.PopupOpening="OnPopupOpening" Content="My Button"  />
+```
 
 ## Subscribe to RadCallout Events in Code Behind
 
@@ -29,77 +29,77 @@ You can subscribe to the placement target element events of the Popup holding th
 
 	* **Cancel**: A boolean property that can be used to cancel the control from appearing. 
 
-	#### __[C#] Example 2: Add event handler to PopupOpening__
-		{{region cs-radcallout-events_1}}			
-			public MainWindow()
-			{
-				InitializeComponent();
-				CalloutPopupService.AddPopupOpeningHandler(myPlacementTargetElement, OnPopupOpening);
-			}						
-			private void OnPopupOpening(object sender, CancelRoutedEventArgs e)
-			{						
-			}
-		{{endregion}}
+	__Example 2: Add event handler to PopupOpening__
+	```C#			
+		public MainWindow()
+		{
+			InitializeComponent();
+			CalloutPopupService.AddPopupOpeningHandler(myPlacementTargetElement, OnPopupOpening);
+		}						
+		private void OnPopupOpening(object sender, CancelRoutedEventArgs e)
+		{						
+		}
+	```
 
 * **PopupOpened**: Occurs after the RadCallout is shown.
 
-	#### __[C#] Example 3: Add event handler to PopupOpened__
-		{{region cs-radcallout-events_2}}
-			public MainWindow()
-			{
-				InitializeComponent();
-				CalloutPopupService.AddPopupOpenedHandler(myPlacementTargetElement, OnPopupOpened);
-			}
-			private void OnPopupOpened(object sender, RoutedEventArgs e)
-			{						
-			}
-		{{endregion}}
+	__Example 3: Add event handler to PopupOpened__
+	```C#
+		public MainWindow()
+		{
+			InitializeComponent();
+			CalloutPopupService.AddPopupOpenedHandler(myPlacementTargetElement, OnPopupOpened);
+		}
+		private void OnPopupOpened(object sender, RoutedEventArgs e)
+		{						
+		}
+	```
 		
 * **PopupClosing**: Occurs before the RadCallout is closed. Through the __CancelRoutedEventArgs__, you can access the following property:
 
 	* **Cancel**: A boolean property that can be used to cancel the RadCallout control from closing. 
 
-	#### __[C#] Example 4: Add event handler to PopupClosing__
-		{{region cs-radcallout-events_3}}
-			public MainWindow()
-			{
-				InitializeComponent();
-				CalloutPopupService.AddPopupClosingHandler(myPlacementTargetElement, OnPopupClosing);
-			}
-			private void OnPopupClosing(object sender, CancelRoutedEventArgs e)
-			{						
-			}
-		{{endregion}}
+	__Example 4: Add event handler to PopupClosing__
+	```C#
+		public MainWindow()
+		{
+			InitializeComponent();
+			CalloutPopupService.AddPopupClosingHandler(myPlacementTargetElement, OnPopupClosing);
+		}
+		private void OnPopupClosing(object sender, CancelRoutedEventArgs e)
+		{						
+		}
+	```
 
 * **PopupClosed**: Occurs after the RadCallout is closed.
 
-	#### __[C#] Example 5: Add event handler to PopupClosed__
-		{{region cs-radcallout-events_4}}
-			public MainWindow()
-			{
-				InitializeComponent();
-				CalloutPopupService.AddPopupClosedHandler(myPlacementTargetElement, OnPopupClosed);
-			}
-			private void OnPopupClosed(object sender, RoutedEventArgs e)
-			{						
-			}
-		{{endregion}}
+	__Example 5: Add event handler to PopupClosed__
+	```C#
+		public MainWindow()
+		{
+			InitializeComponent();
+			CalloutPopupService.AddPopupClosedHandler(myPlacementTargetElement, OnPopupClosed);
+		}
+		private void OnPopupClosed(object sender, RoutedEventArgs e)
+		{						
+		}
+	```
 		
 ## Unsubscribe from RadCallout Events
 
 The __CalloutPopupService__ class expose several methods to remove the events handlers.
 
-#### __[C#] Example 6: Remove event handlers__
-	{{region cs-radcallout-events_5}}
-		public MainWindow()
-		{
-			InitializeComponent();
-			CalloutPopupService.RemovePopupOpeningHandler(myPlacementTargetElement, OnPopupOpening);
-			CalloutPopupService.RemovePopupOpenedHandler(myPlacementTargetElement, OnPopupOpened);
-			CalloutPopupService.RemovePopupClosingHandler(myPlacementTargetElement, OnPopupClosing);				
-			CalloutPopupService.RemovePopupClosedHandler(myPlacementTargetElement, OnPopupClosed);
-		}			
-	{{endregion}}
+__Example 6: Remove event handlers__
+```C#
+	public MainWindow()
+	{
+		InitializeComponent();
+		CalloutPopupService.RemovePopupOpeningHandler(myPlacementTargetElement, OnPopupOpening);
+		CalloutPopupService.RemovePopupOpenedHandler(myPlacementTargetElement, OnPopupOpened);
+		CalloutPopupService.RemovePopupClosingHandler(myPlacementTargetElement, OnPopupClosing);				
+		CalloutPopupService.RemovePopupClosedHandler(myPlacementTargetElement, OnPopupClosed);
+	}			
+```
 
 ## See Also
 

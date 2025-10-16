@@ -32,8 +32,8 @@ By default, the orientation of the RadCarouselPanel is horizontal. When the RadC
 
 You can override this logic in order for the panel to work as expected when its orientation is vertical. To do so and affect all panels in your application, you can create an attached behavior in which to handle the various swiping events.
 
-#### __[C#]__
-{{region cs-kb-carousel-troubleshooting-handle-verticalorientation-swipe-0}}
+
+```C#
 	public class VerticalSwipeBehavior
 	{
 		private RadCarouselPanel carouselPanel;
@@ -102,15 +102,15 @@ You can override this logic in order for the panel to work as expected when its 
 			this.swipeOffset = 0;
 		}
 	}
-{{endregion}}
+```
 
 We can create implicit style to target all RadCarouselPanel's.
 
-#### __[XAML]__
-{{region cs-kb-carousel-troubleshooting-handle-verticalorientation-swipe-1}}
+
+```XAML
 	<Style  TargetType="telerik:RadCarouselPanel">           
 		<Setter Property="local:VerticalSwipeBehavior.IsEnabled" Value="true" />
 	</Style>
-{{endregion}}
+```
 
 

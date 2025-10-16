@@ -18,15 +18,15 @@ The axis grid lines are part of the chart axis and are represented by the __Line
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View* from the menu. Declare a __Line__ control in your XAML.
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-apearance-styling-gridline_0}}
+
+```XAML
 	<Grid x:Name="LayoutRoot"
 	      Background="White">
 	    <!--...-->
 	    <Line />
 	</Grid>
-{{endregion}}
+```
 
 
 
@@ -38,21 +38,16 @@ After clicking the OK button, a style with target type __Line__ will be created 
 
 After finishing with the changes, it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
 
-{{region cs-radchart-styling-and-apearance-styling-gridline_1}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.GridLineStyle = this.Resources["GridLineStyle"] as Style;
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.GridLineStyle = this.Resources["GridLineStyle"] as Style;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-apearance-styling-gridline_2}}
+```
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.GridLineStyle = TryCast(Me.Resources("GridLineStyle"), Style)
 	Me.radChart.DefaultView.ChartArea.AxisY.AxisStyles.GridLineStyle = TryCast(Me.Resources("GridLineStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -64,14 +59,14 @@ Here is a snapshot of the sample result.
 
 Here is the final XAML for the __Style__:
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-apearance-styling-gridline_3}}
+
+```XAML
 	<Style x:Key="GridLineStyle" TargetType="Line">
 	    <Setter Property="Stroke" Value="Orange" />
 	    <Setter Property="StrokeThickness" Value="5" />
 	</Style>
-{{endregion}}
+```
 
 
 

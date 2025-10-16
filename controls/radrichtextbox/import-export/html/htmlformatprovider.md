@@ -20,25 +20,25 @@ In order to import an HTML document you can use the overloads of the __HtmlForma
 
 __Example 1__ shows how to use HtmlFormatProvider to import an HTML document from a file.
 
-#### __[C#] Example 1: Import HTML file__
+__Example 1: Import HTML file__
 
-{{region cs-radrichtextbox-import-export-html-htmlformatprovider_0}}
+```C#
     using (Stream input = File.OpenRead(@"Sample.html"))
     {
         HtmlFormatProvider provider = new HtmlFormatProvider();
         RadDocument document = provider.Import(input);
     }
-{{endregion}}
+```
 
 __Example 2__ shows how you can import an HTML string.
  
-#### __[C#] Example 2: Import HTML string__
+__Example 2: Import HTML string__
 
-{{region cs-radrichtextbox-import-export-html-htmlformatprovider_1}}
+```C#
     string html = "<p>hello world!</p>";
     HtmlFormatProvider provider = new HtmlFormatProvider();
     RadDocument document = provider.Import(html);
-{{endregion}}
+```
 
 The resulting __RadDocument__ can be used like any code-generated document.
         
@@ -48,26 +48,26 @@ With the overloads of the __Export()__ method you can export the document to an 
 
 __Example 3__ shows how to use the HtmlFormatProvider to export an instance of RadDocument to a file:
 
-#### __[C#] Example 3: Export HTML to file__
+__Example 3: Export HTML to file__
 
-{{region radrichtextbox-formats-and-conversion-html-htmlformatprovider_2}}
+```C#
     HtmlFormatProvider provider = new HtmlFormatProvider();
     using (Stream output = File.Create("Sample.html"))
     {
         RadDocument document = CreateRadDocument();
         provider.Export(document, output);
     }
-{{endregion}}
+```
 
 You can also export the document to a string variable like shown in __Example 4__.
 
-#### __[C#] Example 4: Export HTML to string__
+__Example 4: Export HTML to string__
 
-{{region radrichtextbox-formats-and-conversion-html-htmlformatprovider_3}}
+```C#
     RadDocument document = CreateRadDocument();
     HtmlFormatProvider provider = new HtmlFormatProvider();
     string html = provider.Export(document);
-{{endregion}}
+```
 
 >tip However, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using RadRichTextBox in a data bound scenarios. For such cases, the [DataProvider]({%slug radrichtextbox-features-data-providers%}) classes are used. They wrap the FormatProviders' functionality and allow its usage in XAML.
 

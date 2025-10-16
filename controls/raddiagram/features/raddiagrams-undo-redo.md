@@ -24,8 +24,8 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
 
 * __Redo()__ - this method reapplies the last operation that was undone in the __RadDiagram__.				  
 
-#### __XAML__
-{{region raddiagram-features-undo-redo_0}}
+
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -63,10 +63,10 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
 										  EndPoint="480,40" />
 		</telerik:RadDiagram>
 	</Grid>
-{{endregion}}
+```
 
-#### __C#__	
-{{region raddiagram-features-undo-redo-2}}
+	
+```C#
     private void Undo(object sender, RoutedEventArgs e)
     {
         diagram.Undo();
@@ -76,10 +76,8 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
     {
         diagram.Redo();
     }				  
-{{endregion}}
-
-#### __VB.NET__	
-{{region raddiagram-features-undo-redo-3}}
+```
+```VB.NET
     Private Sub Undo(sender As Object, e As RoutedEventArgs)
         diagram.Undo()
     End Sub
@@ -87,7 +85,7 @@ Telerik __RadDiagram__ class exposes two methods that allow you to take advantag
     Private Sub Redo(sender As Object, e As RoutedEventArgs)
         diagram.Redo()
     End Sub			
-{{endregion}}	
+```	
 
 ![Rad Diagram Features Undo Redo Methods](images/RadDiagram_Features_UndoRedo_Methods.png)
 
@@ -97,8 +95,8 @@ __Telerik Diagramming Framework__ exposes a set of commands that allow you to ea
 
 >For a full list of the Telerik __DiagramCommands__, please refer to the [Commands]({%slug raddiagrams-features-commands%}) tutorial.			  
 
-#### __XAML__
-{{region raddiagram-features-undo-redo_1}}
+
+```XAML
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -138,7 +136,7 @@ __Telerik Diagramming Framework__ exposes a set of commands that allow you to ea
                                           EndPoint="480,40" />
         </telerik:RadDiagram>
     </Grid>
-{{endregion}}
+```
 
 ### UndoRedoService
 

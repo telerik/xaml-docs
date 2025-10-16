@@ -19,15 +19,15 @@ You can order your data items by the result of a complex calculation without hav
 
 __Example 1: Create a generic SortDescriptor<T>.__
 
-#### __C#__
 
-{{region cs-gridview-howto-use-expression-descriptors_0}}
+
+```C#
 	var descriptor = new SortDescriptor<Employee, double>
 	{
 	    SortingExpression = e => e.Orders.SelectMany(o => o.Details).Sum(d => d.UnitPrice * d.Quantity),
 	    SortDirection = ListSortDirection.Descending
 	};
-{{endregion}}
+```
 
 Then, you should add the defined SortDescriptor to the __SortDescriptors collection__ of __RadGridView__.
 
@@ -39,15 +39,15 @@ You can also group objects by the result of an equally complex operation:
 
 __Example 2: Create a generic GroupDescriptor<T>.__
 
-#### __C#__
 
-{{region cs-gridview-howto-use-expression-descriptors_1}}
+
+```C#
 	var descriptor = new GroupDescriptor<Employee, int, int>
 	{
 	    GroupingExpression = e => e.Orders.Where(o => o.Details.Any(d => d.Product.ProductName.Contains("Syrup"))).Count(),
 	    SortDirection = ListSortDirection.Ascending
 	};
-{{endregion}}
+```
 
 Then, add the defined GroupDescriptor to the __GroupDescriptors collection__ of __RadGridView__.
         
@@ -60,11 +60,11 @@ The new FilterDescriptor<T> allows you to directly plug a predicate that determi
 
 __Example 3: Create a generic FilterDescriptor<T>.__
 
-#### __C#__
 
-{{region cs-gridview-howto-use-expression-descriptors_2}}
+
+```C#
 	var descriptor = new FilterDescriptor<Employee> { FilteringExpression = e => prospects.Contains(e) };
-{{endregion}}
+```
 
 Then, you should add the defined FilterDescriptor to the __FilterDescriptors collection__ of __RadGridView__.
 

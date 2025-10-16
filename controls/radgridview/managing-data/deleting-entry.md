@@ -20,8 +20,8 @@ To disable the `Del` key deletion set the `CanUserDeleteRows` property of `RadGr
 
 The following examples show how to manually remove items from the `ItemsSource`.
 
-#### __XAML__  
-{{region xaml-gridview-managing-data-deleting-entry_0}}
+  
+```XAML
 	<StackPanel x:Name="LayoutRoot">
 	    <Button Content="Delete"
 	    Click="Button_Click" />
@@ -30,13 +30,13 @@ The following examples show how to manually remove items from the `ItemsSource`.
 	        <!--...-->
 	    </telerik:RadGridView>
 	</StackPanel>
-{{endregion}}
+```
 
 To determine which items are to be removed, use the __SelectedItems__ collection of the __RadGridView__. You can also use the __SelectedItem__ or the __CurrentItem__ objects, but the __SelectedItems__ collection is more flexible and allows your deleting logic to function even by [multiple selection]({%slug gridview-multiple-selection%}).
 
-#### __C#__
 
-{{region cs-gridview-managing-data-deleting-entry_3}}
+
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	    ObservableCollection<Employee> itemsToRemove = new ObservableCollection<Employee>();
@@ -50,11 +50,8 @@ To determine which items are to be removed, use the __SelectedItems__ collection
 	        ((ObservableCollection<Employee>)this.radGridView.ItemsSource).Remove(item);
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-managing-data-deleting-entry_4}}
+```
+```VB.NET
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Dim itemsToRemove As New ObservableCollection(Of Employee)()
 	
@@ -65,15 +62,15 @@ To determine which items are to be removed, use the __SelectedItems__ collection
 	        DirectCast(Me.radGridView.ItemsSource, ObservableCollection(Of Employee)).Remove(item)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 When an item is removed from the __ItemsSource__ collection it is also removed from the __SelectedItems__ collection. This means that you cannot directly use the __SelectedItems__ in the same foreach, where the items get removed, because it will result in an exception. This is where the itemsToRemove comes in hand.
 
 Here is an example of a sample deleting logic implemented in the event handler for a Button's Click event.
 
-#### __C#__
 
-{{region cs-gridview-managing-data-deleting-entry_5}}
+
+```C#
 	private void Button2_Click(object sender, RoutedEventArgs e)
 	{
 	    if (this.radGridView.SelectedItems.Count == 0)
@@ -93,11 +90,8 @@ Here is an example of a sample deleting logic implemented in the event handler f
 	        ((ObservableCollection<Employee>)this.radGridView.ItemsSource).Remove(item as Employee);
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-managing-data-deleting-entry_6}}
+```
+```VB.NET
 	Private Sub Button2_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    If Me.radGridView.SelectedItems.Count = 0 Then
 	        Exit Sub
@@ -114,7 +108,7 @@ Here is an example of a sample deleting logic implemented in the event handler f
 	        DirectCast(Me.radGridView.ItemsSource, ObservableCollection(Of Employee)).Remove(TryCast(item, Employee))
 	    Next
 	End Sub
-{{endregion}}
+```
 
 In this example the implementation manages both the __RadGridView__ and the data storage. Of course it is up to the developer to shape the deleting logic, so it suits the application requirements in the best way.
 

@@ -14,10 +14,10 @@ RadCardView supports two orientation based layouts arranged in rows or columns.
 
 The layout is controlled with the __CardLayout__ property of RadCardView. The default property value is set to __Rows__. In this case, the cards are arranged horizontally. When the there is no more space, the cards are arranged in the next available row. The property can be set also to __Columns__. In this case, the cards are arranged vertically. When there is no more space, the cards are arranged in the next available column.
 
-#### __[XAML] Example 1: Setting cards layout__
-{{region radcardview-features-layout-0}}	
+__Example 1: Setting cards layout__
+```XAML	
 	<telerik:RadCardView CardLayout="Columns" />   
-{{endregion}}
+```
 
 #### Figure 1: Rows layout (default)
 ![{{ site.framework_name }} RadCardView Rows layout (default)](images/radcardview-features-card-layout-0.png)

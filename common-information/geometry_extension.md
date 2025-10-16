@@ -34,24 +34,24 @@ In **R3 2021** we introduced the **Geometry Extension** class which provides eas
 
 __Example 1 and Example 2__ demonstrate how you can use the extension in XAML and code-behind. To apply a custom geometry in code-behind, you can use the `GeometryFactory.SetGeometry()` method.
 
-#### __[XAML] Example 1: Set Custom Geometry in XAML__
-{{region xaml-radbadge-key-properties-0}}
+__Example 1: Set Custom Geometry in XAML__
+```XAML
 	<telerik:RadButton Width="85" Height="30" Content="Notifications"  VerticalAlignment="Center" HorizontalAlignment="Center">
 		<telerik:RadBadge.Badge>
 			<telerik:RadBadge Content="99" BadgeType="ContentOnly" Background="#FFFFC000" Geometry="{telerik:Geometry Type=Oval}" />
 		</telerik:RadBadge.Badge>
 	</telerik:RadButton>
-{{endregion}}
+```
 
 
-#### __[C#] Example 2: Set Custom Geometry In Code__
-{{region xaml-radbadge-key-properties-0}}
+__Example 2: Set Custom Geometry In Code__
+```C#
 	public Example()
 	{
 		this.InitializeComponent();
 		this.badge.Geometry = GeometryFactory.SetGeometry(GeometryType.Hexagon);
 	}
-{{endregion}}
+```
 
 Additional to this, all [glyph icons]({%slug common-styling-appearance-glyphs-reference-sheet%}) can be converted to `Geometry` objects using the [RadGlyph.GetGeometry]({%slug common-styling-appearance-radglyph%}#use-glyphs-as-geometry) static method.
 

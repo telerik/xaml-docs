@@ -22,24 +22,24 @@ To use __TxtFormatProvider__, you should add references to:
 
 In order to import a plain text document, you need to use the __Import()__ method of __TxtFormatProvider__. __Example 1__ shows how to use __TxtFormatProvider__ to import a document from a file.
 
-#### __[C#] Example 1: Import document from a file__
+__Example 1: Import document from a file__
 
-{{region cs-radrichtextbox-import-export-txt-txtformatprovider_0}}
+```C#
     TxtFormatProvider provider = new TxtFormatProvider();
     using (Stream input = File.OpenRead("Sample.txt"))
     {
         RadDocument document = provider.Import(input);
     }
-{{endregion}}
+```
 
 And here is how you can import a document from string:
         
-#### __[C#] Example 2: Import document from a string__
+__Example 2: Import document from a string__
 
-{{region cs-radrichtextbox-import-export-txt-txtformatprovider_1}}
+```C#
     TxtFormatProvider provider = new TxtFormatProvider();
     RadDocument document = provider.Import(input);
-{{endregion}}
+```
 
 The resulting __RadDocument__ can be manipulated like any code-generated document.
 
@@ -49,26 +49,26 @@ In order to export a document to plain text, you need to use the __Export()__ me
  
 __Example 3__ shows how to use __TxtFormatProvider__ to export __RadDocument__ to a file.
 
-#### __[C#] Example 3: Export a document to a file__
+__Example 3: Export a document to a file__
 
-{{region cs-radrichtextbox-formats-and-conversion-txt-txtformatprovider_2}}
+```C#
     TxtFormatProvider provider = new TxtFormatProvider();
     using (Stream output = File.OpenWrite("sample.txt"))
     {
         RadDocument document = CreateRadDocument();
         provider.Export(document, output);
     }
-{{endregion}}
+```
 
 You can also export the document to a string and preserve it in a database.
 
-#### __[C#] Example 4: Export a document to a string__
+__Example 4: Export a document to a string__
 
-{{region cs-radrichtextbox-formats-and-conversion-txt-txtformatprovider_3}}
+```C#
     TxtFormatProvider provider = new TxtFormatProvider();
     RadDocument document = CreateRadDocument();
     string output = provider.Export(document);
-{{endregion}}
+```
 
 >tipHowever, the format providers cannot be used in XAML and you have to implement a logic that will call their Import() and Export() methods. This is something that you might not want to be concerned with when using RadRichTextBox in a data bound scenarios. For such cases, the [DataProvider]({%slug radrichtextbox-features-data-providers%}) classes are used. They wrap the FormatProviders' functionality and allow its usage in XAML.
 

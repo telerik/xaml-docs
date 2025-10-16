@@ -53,11 +53,11 @@ Inserting any type of field in the document of an editor can be done with the __
 
 Insert a page field:
 
-#### __C#__
 
-{{region radrichtextbox-features-fields_0}}
+
+```C#
     this.radRichTextBox.InsertField(new PageField());
-{{endregion}}
+```
 
 ## Updating a Field
 
@@ -66,11 +66,11 @@ Update of a field can be triggered from the context menu or using the __UpdateFi
 
 Update a field:
 
-#### __C#__
 
-{{region radrichtextbox-features-fields_1}}
+
+```C#
     this.radRichTextBox.UpdateField(fieldRangeStart);
-{{endregion}}
+```
 
 ## Updating all Fields
 

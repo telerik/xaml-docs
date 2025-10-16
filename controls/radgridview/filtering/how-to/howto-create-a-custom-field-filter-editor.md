@@ -14,9 +14,9 @@ In case you do not like the default field filter editors that show up in the fil
 
 __Example 1__ shows how to create a RadDateTimePicker and use it as a custom field filter editor. Of course, in real life you will not need to do this since DateTime columns provide RadDateTimePickers automatically. This is juts an example illustrating how to wire up your custom field filter editor.
 
-#### __[C#] Example 1: Overriding the CreateFieldFilterEditor method__
+__Example 1: Overriding the CreateFieldFilterEditor method__
 
-{{region cs-gridview-filtering-howto-create-a-custom-field-filter-editor_0}}
+```C#
 	public class MyDateTimeColumn : Telerik.Windows.Controls.GridViewDataColumn
 	{
 	    public override FrameworkElement CreateFieldFilterEditor()
@@ -59,12 +59,8 @@ __Example 1__ shows how to create a RadDateTimePicker and use it as a custom fie
 	        }
 	    }
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 1: Overriding the CreateFieldFilterEditor method__
-
-{{region vb-gridview-filtering-howto-create-a-custom-field-filter-editor_1}}
+```
+```VB.NET
 	Public Class MyDateTimeColumn
 	    Inherits Telerik.Windows.Controls.GridViewDataColumn
 	    Public Overrides Function CreateFieldFilterEditor() As FrameworkElement
@@ -102,7 +98,7 @@ __Example 1__ shows how to create a RadDateTimePicker and use it as a custom fie
 	        End Function
 	    End Class
 	End Class
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 > You can check out a fully runnable example in the [Create a Custom TimeSpanPickerColumn]({%slug kb-gridview-howto-create-timespanpickercolumn%}) KB article. 

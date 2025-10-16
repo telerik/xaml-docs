@@ -21,8 +21,8 @@ The __ScatterSplineAreaSeries__ is visualized on the screen as a smooth line con
 
 You can use the definition from __Example 1__ to display a ScatterSplineAreaSeries.
 
-#### __[XAML] Example 1: Declaring a ScatterSplineAreaSeries in XAML__
-{{region radchartview-series-scattersplineareaseries_0}}
+__Example 1: Declaring a ScatterSplineAreaSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:LinearAxis />
@@ -44,7 +44,7 @@ You can use the definition from __Example 1__ to display a ScatterSplineAreaSeri
 		</telerik:ScatterSplineAreaSeries>
 	</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: ScatterSplineAreaSeries visual appearance__
 ![radchartview-series-scattersplineareaseries](images/radchartview-series-scattersplineareaseries.png)
@@ -74,9 +74,9 @@ You can use the definition from __Example 1__ to display a ScatterSplineAreaSeri
 
 You can use the YValueBinding and XValueBinding properties of the ScatterSplineAreaSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-scattersplineareaseries_1}}
+```C#
 	public class PlotInfo
     {
         public double XValue { get; set; }
@@ -89,12 +89,12 @@ You can use the YValueBinding and XValueBinding properties of the ScatterSplineA
 		new PlotInfo() { XValue = 0, YValue = 2},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a ScatterSplineAreaSeries in XAML__
-{{region radchartview-series-scattersplineareaseries_2}}	
+__Example 3: Specify a ScatterSplineAreaSeries in XAML__
+```XAML	
 	<telerik:ScatterSplineAreaSeries ItemsSource="{Binding}" YValueBinding="YValue" XValueBinding="XValue"/>
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -102,10 +102,10 @@ You can use the YValueBinding and XValueBinding properties of the ScatterSplineA
 
 The spline-type series provide two properties allowing to control the additional points calculated for the spline of the line. The tension is controlled via the `SplineTension` property. The tension works with relative values between 0 and 1. The default tension is set to `0.5d`.
 
-#### __[XAML] Example 4: Setting SplineTension__
-{{region radchartview-series-scattersplineareaseries_3}}	
+__Example 4: Setting SplineTension__
+```XAML	
 	 <telerik:ScatterSplineAreaSeries SplineTension="0.4" />
-{{endregion}}
+```
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
@@ -113,10 +113,10 @@ __Spline tension 0.8 (left) and 0.4 (right)__
 
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calculated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
-#### __[XAML] Example 5: Setting SplinePointsDistanceFactor__
-{{region radchartview-series-scattersplineareaseries_4}}	
+__Example 5: Setting SplinePointsDistanceFactor__
+```XAML	
 	 <telerik:ScatterSplineAreaSeries SplinePointsDistanceFactor="0.18" />
-{{endregion}}
+```
 
 __SplinePointsDistanceFactor set to 0.18__
 

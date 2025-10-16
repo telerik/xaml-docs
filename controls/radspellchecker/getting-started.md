@@ -38,14 +38,12 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 After adding reference to the aforementioned dlls, you can use the static class RadSpellChecker and its Check(Control controlToSpellCheck, SpellCheckingMode mode) method.
 
-#### __C#__
-
-{{region radspellchecker-getting-started_0}}
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 	   RadSpellChecker.Check(this.textBox1, SpellCheckingMode.WordByWord);
 	}
-{{endregion}}
+```
 
 For the RadSpellChecker to work properly there is just one more thing you need to provide: a class deriving from RadDictionary which loads a .TDF file containing a dictionary for a specific language. Such a class is defined in “__Telerik.Windows.Documents.Proofing.Dictionaries.En-US__” included in Telerik UI. It contains a dictionary you can use in order to spell check in English. If you reference it in your project, it will be loaded automatically by MEF. 
 
@@ -57,19 +55,13 @@ You can use RadSpellChecker for those controls by adding an attached property to
 
 >To use the RadSpellChecker in XAML you have to declare the following namespace:
 
-#### __XAML__
-
-{{region radspellchecker-getting-started_0}}
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+```
 
+The attached property for Telerik RadGridView is `telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled`:
 
-
-The attached property for Telerik RadGridView is telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled:
-
-#### __XAML__
-
-{{region radspellchecker-getting-started_1}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
 	   <telerik:RadGridView.Columns>
 	      <telerik:GridViewDataColumn telerik:RadGridViewSpellCheckHelper.IsSpellCheckingEnabled="True">
@@ -77,15 +69,11 @@ The attached property for Telerik RadGridView is telerik:RadGridViewSpellCheckHe
 	      </telerik:GridViewDataColumn>
 	   </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-	{{endregion}}
-
-
+```
 
 And the one for DataGrid is telerik:DataGridSpellCheckHelper.IsSpellCheckingEnabled:
 
-#### __XAML__
-
-{{region radspellchecker-getting-started_2}}
+```XAML
 	<sdk:DataGrid x:Name="dataGrid" telerik:DataGridSpellCheckHelper.IsSpellCheckingEnabled="True">
 	   <sdk:DataGrid.Columns>
 	      <sdk:DataGridTemplateColumn telerik:DataGridSpellCheckHelper.IsSpellCheckingEnabled="True">
@@ -93,7 +81,7 @@ And the one for DataGrid is telerik:DataGridSpellCheckHelper.IsSpellCheckingEnab
 	      </sdk:DataGridTemplateColumn>
 	   </sdk:DataGrid.Columns>
 	</sdk:DataGrid>
-{{endregion}}
+```
 
 
 Of course the GridViewDataColumn (or DataGridTemplateColumn) should contain a single control that can be spellchecked (implements IControlSpellChecker interface). [ReadMore]({%slug radspellchecker-spellchecking-gridcell%})
@@ -103,18 +91,13 @@ Of course the GridViewDataColumn (or DataGridTemplateColumn) should contain a si
 
 When the theme is [implictly set]({%slug styling-apperance-implicit-styles-overview%}) in your application, you should merge the required dictionaries. The full list of dictionaries needed for RadSpellChecker is available in the following snippet:
 
-#### __XAML__
-
-{{region radspellchecker-getting-started_3}}
-
+```XAML
     <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.xaml"/>
     <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.xaml"/>
     <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
     <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
     <ResourceDictionary Source="/Telerik.Windows.Themes.Office2019;component/Themes/Telerik.Windows.Documents.Proofing.xaml"/>
-
-
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources

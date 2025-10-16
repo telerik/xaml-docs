@@ -50,8 +50,8 @@ The following image describes the main elements of the RadBulletGraph control.
 
 The following examples show how to define a simple horizontal and vertical bullet graphs.
 
-#### __[XAML] Example 1: Defining horizontal bullet graph control__
-{{region radbulletgraph-getting-started-0}}
+__Example 1: Defining horizontal bullet graph control__
+```XAML
 	<telerik:RadHorizontalBulletGraph FeaturedMeasure="60"
 									  ComparativeMeasure="65" 
 									  ProjectedValue="75"
@@ -62,13 +62,13 @@ The following examples show how to define a simple horizontal and vertical bulle
 			<telerik:QualitativeRange Brush="#E8E8E8" />
 		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
 	</telerik:RadHorizontalBulletGraph>
-{{endregion}}
+```
 
 #### __Figure 2: RadHorizontalBulletGraph__
 ![{{ site.framework_name }} RadBulletGraph RadHorizontalBulletGraph](images/radbulletgraph_getting_started_0.png)
 
-#### __[XAML] Example 2: Defining vertical bullet graph control__
-{{region radbulletgraph-getting-started-1}}
+__Example 2: Defining vertical bullet graph control__
+```XAML
 	<telerik:RadVerticalBulletGraph FeaturedMeasure="60" 
 									ComparativeMeasure="65" 
 									ProjectedValue="75"
@@ -79,7 +79,7 @@ The following examples show how to define a simple horizontal and vertical bulle
 			<telerik:QualitativeRange Brush="#E8E8E8" />
 		</telerik:RadVerticalBulletGraph.QualitativeRanges>
 	</telerik:RadVerticalBulletGraph>
-{{endregion}}
+```
 
 #### __Figure 3: RadVerticalBulletGraph__
 ![{{ site.framework_name }} RadBulletGraph RadVerticalBulletGraph](images/radbulletgraph_getting_started_1.png)

@@ -15,7 +15,7 @@ The RadComboBox exposes the __ItemTemplate__ and __SelectionBoxTemplate__ proper
 
 ## Define an ItemTemplate
 
-If you want RadComboBox to visualize more information, you can define a custom DataTemplate and set it to the __ItemTemplate__ property of the control. This template will be applied to the selected item(when RadComboBox is not editable), as well as, all of the items displayed in the dropdown. For an example implementation, check out the [Define a Custom ItemTemplate]({%slug radcombobox-populating-with-data-binding-to-object%}#define-a-custom-itemtemplate) section of the __Binding to Collection__ article in our documentation.
+If you want RadComboBox to visualize more information, you can define a custom DataTemplate and set it to the __ItemTemplate__ property of the control. This template will be applied to the selected item(when RadComboBox is not editable), as well as, all of the items displayed in the dropdown. For an example implementation, check out the [Define a Custom ItemTemplate]({%slug radcombobox-populating-with-data-binding-to-object%}) section of the __Binding to Collection__ article in our documentation.
 
 ## Define a SelectionBoxTemplate
 
@@ -24,9 +24,4 @@ In order to define a separate template for the selected item of a Non-Editable R
 ## See Also
 
  * [Setting up AutoComplete]({%slug radcombobox-setting-up-autocomplete%})
-
- {% if site.site_name == 'Silverlight' %}
- * [Bind a RadComboBox to Enum Values]({%slug radcombobox-howto-bind-enum-values%})
- {% endif %}
-
  * [RadComboBox Virtualization]({%slug radcombobox-howto-virtualization%})

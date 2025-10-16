@@ -34,33 +34,33 @@ You can find the required assemblies for each control from the suite in the {% i
 
 You can include the control in your page by either dragging it from the toolbox in Visual Studio, or manually creating the control. Below is an example of how to create __RadTimeSpanPicker__ in XAML
 
-#### __[XAML]Example 1: Creating RadTimeSpanPicker__
+__Example 1: Creating RadTimeSpanPicker__
 
-{{region xaml-radtimespanpicker-getting-started_0}}
+```XAML
 	<telerik:RadTimeSpanPicker GenerateDefaultComponents="True"/>
-{{endregion}}
+```
 
 You can also create __RadTimeSpanPicker__ in code-behind:
 
-#### __[C#]Example 2:  Creating RadTimeSpanPicker in code__
+__Example 2:  Creating RadTimeSpanPicker in code__
 
-{{region cs-radtimespanpicker-getting-started_0}}
+```C#
 	RadTimeSpanPicker timeSpanPicker = new RadTimeSpanPicker();
 	timeSpanPicker.GenerateDefaultComponents = true;
-{{endregion}}
+```
 
-#### __[VB]Example 2:  Creating RadTimeSpanPicker in code__
+__Example 2:  Creating RadTimeSpanPicker in code__
 
-{{region vb-radtimespanpicker-getting-started_0}}
+```VB
 	Dim timeSpanPicker As New RadTimeSpanPicker()
 	timeSpanPicker.GenerateDefaultComponents = True
-{{endregion}}
+```
 
 By setting the __GenerateDefaultComponents__ property to __True__ the control will use the default components for hours, minutes and seconds. If you need to visualize some of the other built-in components or a custom component of your own you could add them as shown below to the TimeSpanComponents collection:
 
-#### __[XAML]Example 3: Adding TimeSpanComponents__
+__Example 3: Adding TimeSpanComponents__
 
-{{region xaml-radtimespanpicker-getting-started_1}}
+```XAML
 	<telerik:RadTimeSpanPicker>
 	    <telerik:RadTimeSpanPicker.TimeSpanComponents>
 		<telerik:DayTimeSpanComponent/>
@@ -70,7 +70,7 @@ By setting the __GenerateDefaultComponents__ property to __True__ the control wi
 		<telerik:MillisecondTimeSpanComponent/>
 	    </telerik:RadTimeSpanPicker.TimeSpanComponents>
 	</telerik:RadTimeSpanPicker>
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -89,8 +89,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radtimepicker-getting-started_4}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -100,7 +100,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

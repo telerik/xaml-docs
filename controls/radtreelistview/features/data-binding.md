@@ -20,21 +20,16 @@ Displaying data in the __RadGridView__ depends on the data binding mechanism. Th
 
 As a typical data control the __RadGridView__ displays data by binding to a source and generating visual elements for each item in it. The first thing that you have to do is to set the __ItemsSource__ property of the __RadGridView__.
 
-#### __C#__
 
-{{region radtreelistview-features-data-binding_0}}
+
+```C#
 
 	this.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData();
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtreelistview-features-data-binding_1}}
+```
+```VB.NET
 
 	Me.radTreeListView.ItemsSource = WarehouseService.GetWarehouseData()
-{{endregion}}
+```
 
 
 
@@ -50,9 +45,9 @@ Introduced to the __System.ComponentModel__ namespace collection views are fully
 
 The data in the __RadGridView__ is separated in columns. There are different types of columns, displaying different types of data. Usually the data is displayed in __GridViewDataColumns__, which can be manually generated, too. In order to display the data in it you can bind its __DataMemberBinding__ property. Here is an example of a manually defined column.
 
-#### __XAML__
 
-{{region radtreelistview-features-data-binding_2}}
+
+```XAML
 
 	<telerik:RadTreeListView x:Name="radTreeListView"
 	                            AutoGenerateColumns="False">
@@ -63,7 +58,7 @@ The data in the __RadGridView__ is separated in columns. There are different typ
 	                                    Header="Count" />
 	    </telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 
 
@@ -73,9 +68,9 @@ In order to display the hierarchical data the __RadTreeListView__ uses child tab
 
 >Note that a table definition will be generated for each row and it will have the same __DataContext__ as the row. So you have to bind to the property, marking the collection that contains the next level of the hierarchy. This property should have the same name at each level of the hierarchy. 
 
-#### __XAML__
 
-{{region radtreelistview-features-data-binding_3}}
+
+```XAML
 
 	<telerik:RadTreeListView x:Name="radTreeListView">
 	    <telerik:RadTreeListView.ChildTableDefinitions>
@@ -83,7 +78,7 @@ In order to display the hierarchical data the __RadTreeListView__ uses child tab
 	        </telerik:TreeListViewTableDefinition>
 	    </telerik:RadTreeListView.ChildTableDefinitions>
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 
 

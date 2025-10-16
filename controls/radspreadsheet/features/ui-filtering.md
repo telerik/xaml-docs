@@ -10,22 +10,7 @@ position: 5
 
 # Filtering
 
-
-
-This article briefly describes what is filtering and filters and how to work with them through the __RadSpreadsheet__ UI. It contains the following sections:
-      
-
-* [What Is Filtering?](#what-is-filtering?)
-
-* [How to Turn on Filtering for Current Selection](#how-to-turn-on-filtering-for-current-selection)
-
-* [Filtering Popup](#filtering-popup)
-
-* [Applying Filter](#applying-filter)
-
-* [Removing Filter](#removing-filter)
-
-* [How Do Filters Work?](#how-do-filters-work?)
+This article briefly describes what is filtering and filters and how to work with them through the __RadSpreadsheet__ UI.       
 
 ## What Is Filtering?
 

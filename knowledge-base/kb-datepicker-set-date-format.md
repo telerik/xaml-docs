@@ -32,10 +32,10 @@ How to change the default date-time format for the selected date in RadDatePicke
 
 You can assign the `Culture` property of the RadDatePicker. This way you can use the `DateTimeFormat` of the `CultureInfo` object.
 
-#### __[C#]__
-{{region kb-datepicker-set-date-format-0}}
+
+```C#
     var culture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone();
     culture.DateTimeFormat.ShortDatePattern = "MM/dd/yyyy";
     this.radDatePicker.Culture = culture;
-{{endregion}}
+```
 

@@ -33,13 +33,13 @@ How to data bind the Indicators collection of RadGauge.
 
 The Indicators property doesn't support data binding. One way to achieve this requirement, is to use an attached property.
 
-#### __[XAML]__
-{{region kb-gauge-indicators-databinding-0}}
-	<telerik:VerticalLinearScale local:IndicatorsBehavior.ItemsSource="{Binding Markers}" />
-{{endregion}}
 
-#### __[C#]__
-{{region kb-gauge-indicators-databinding-1}}
+```XAML
+	<telerik:VerticalLinearScale local:IndicatorsBehavior.ItemsSource="{Binding Markers}" />
+```
+
+
+```C#
 	public class IndicatorsBehavior
     {
         public static IEnumerable GetItemsSource(DependencyObject obj)
@@ -80,12 +80,12 @@ The Indicators property doesn't support data binding. One way to achieve this re
             }
         }
     }
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-gauge-indicators-databinding-2}}
+
+```C#
 	public class MainViewModel
     {
         public List<double> Markers { get; set; } = new List<double>() { 20, 50, 66 };
     }
-{{endregion}}
+```

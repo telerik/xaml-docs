@@ -551,17 +551,17 @@ The general naming convention is: `Office2019Palette.Palette.[name]Color` is res
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-office2019-theme-0}}
+__Setting palette colors__
+```C#
 	Office2019Palette.Palette.AccentBackgroundColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Changing Theme Variation
 
 The Office2019 theme comes with three color variations, inspired by the colors used in MS Office. The Light variation corresponds to Microsoft's Colorful Office theme, the Gray - to the Dark Gray Office2019 theme and the Dark - to the Black Office2019 theme. The following example demonstrates the ability to switch between the supported `Light`, `Gray`, `Dark` and `HighContrast` color palettes by calling the `LoadPreset()` method as shown below:
 
-#### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-office2019-theme-1}}
+__Changing the color variation of the theme__
+```C#
 	//default color variation 
 	Office2019Palette.LoadPreset(Office2019Palette.ColorVariation.Light);   
 	
@@ -573,7 +573,7 @@ The Office2019 theme comes with three color variations, inspired by the colors u
 
 	//HighContrast color variation 
 	Office2019Palette.LoadPreset(Office2019Palette.ColorVariation.HighContrast);  
-{{endregion}}
+```
 
 __Office2019 theme color variations__
 
@@ -593,24 +593,24 @@ The default font used in the theme is `Segoe UI`.
 
 The following example shows the default font sizes and families.
 
-#### __[C#] Default FontSize__
-{{region cs-styling-appearance-office2019-theme-2}}
+__Default FontSize__
+```C#
 	Office2019Palette.Palette.FontSize = 12;
 	Office2019Palette.Palette.FontSizeS = 13;
 	Office2019Palette.Palette.FontSizeM = 14;
 	Office2019Palette.Palette.FontSizeL = 16;
-{{endregion}}
+```
 
 The following example shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from __12__ to __18__.
 
-#### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-office2019-theme-3}}
+__Changing the theme's FontSize and FontFamily__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		Office2019Palette.Palette.FontSize = 18;
 		Office2019Palette.Palette.FontFamily = new FontFamily("Calibri Italic");
 	}
-{{endregion}}
+```
 
 __Setting FontSize and FontFamily__
 
@@ -628,15 +628,15 @@ The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the
 
 This example shows a `RadToggleButton` control with modified brushes for its different states through the `ThemeHelper` class:
 
-#### __[XAML] Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region xaml-styling-appearance-office2019-theme-0}}
+__Set RadToggleButton's visual appearance through the ThemeHelper class__
+```XAML
 	<telerik:RadToggleButton Content="RadToggleButton" 
 							 Margin="10"
 							 xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
 							 helpers:ThemeHelper.MouseOverBrush="{telerik:Office2019Resource ResourceKey=AccentMouseOverBrush}"
 							 helpers:ThemeHelper.PressedBrush="{telerik:Office2019Resource ResourceKey=ValidationBrush}"
 							 helpers:ThemeHelper.CheckedBrush="{telerik:Office2019Resource ResourceKey=AccentMainBrush}"/>
-{{endregion}}
+```
 
 __Appearance of the RadToggleButton in the different states__
 
@@ -648,30 +648,30 @@ The theme has a few built-in [color variations](#changing-theme-variation) - Lig
 
 To achieve this, first ensure that the Light [variation](#changing-theme-variation) is applied. This is the default one, so no explicit actions are required here. Then, set the following color properties:
 
-#### __[C#] Applying palette colors__		
-{{region cs-styling-appearance-office2019-theme-4}}
+__Applying palette colors__		
+```C#
 	Office2019Palette.Palette.ButtonBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
 	Office2019Palette.Palette.BaseBackgroundColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
 	Office2019Palette.Palette.AlternativeBackgroundColor = (Color)ColorConverter.ConvertFromString("#FAFAFA");
 	Office2019Palette.Palette.SecondaryBackgroundColor = (Color)ColorConverter.ConvertFromString("#F1F1F1");
-{{endregion}}
+```
 
 ## Changing Opacity 
 
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the Office2019Palette. The default values are __0.3__ and __0.6__ respectively. 
 
-#### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-office2019-theme-5}}
+__Changing the opacity__		
+```C#
 	Office2019Palette.Palette.DisabledOpacity = 0.5;
 	Office2019Palette.Palette.ReadOnlyOpacity = 0.5;
-{{endregion}}
+```
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `Office2019Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-office2019-theme-1}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -679,7 +679,7 @@ When modifying fonts, colors, or other resources from the `Office2019Palette` an
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

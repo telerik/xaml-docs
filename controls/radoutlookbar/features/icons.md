@@ -14,10 +14,10 @@ The __RadOutlookBarItems__ expose the __Icon__ and __SmallIcon__ properties. The
 
 The __Icon__ property gets or sets the icon of the __RadOutlookBarItem__ when it is in normal state – not minimized.
 
-#### __[XAML] Example 1: Setting Icon Property__
-{{region xaml-radoutlookbar-features-icons_0}}
+__Example 1: Setting Icon Property__
+```XAML
 	<telerik:RadOutlookBarItem Header="Folder List" Icon="foldersSmall.png" />
-{{endregion}}
+```
 
 #### __Figure 1 : Icon Property Result__
 ![outlookbar icons 01](images/outlookbar_features_icons_01.png)
@@ -27,10 +27,10 @@ The __SmallIcon__ property gets or sets the icon of the __RadOutlookBarItem__ wh
 #### __Figure 2 : Setting SmallIcon property__
 ![outlookbar icons 02](images/outlookbar_features_icons_02.png)
 
-#### __[XAML] Example 2: Setting IconMargin Property__
-{{region xaml-radoutlookbar-features-icons_1}}	
+__Example 2: Setting IconMargin Property__
+```XAML	
     <telerik:RadOutlookBarItem  Header="Folder List" Icon="foldersSmall.png" IconMargin="10">               
-{{endregion}} 
+``` 
 
 #### __Figure 3: IconMargin Property Result__
 ![outlookbar icons 03](images/outlookbar_features_icons_03.png)

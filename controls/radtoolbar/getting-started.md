@@ -39,18 +39,18 @@ Before proceeding with adding __RadToolBar__ to your project, make sure the requ
 
 You can add __RadToolBar__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadToolBar in XAML__
+__Example 1: Adding RadToolBar in XAML__
 
-{{region xaml-radtoolbar-getting-started_0}}
+```XAML
 	<telerik:RadToolBar />
-{{endregion}}
+```
 
 
 >In order to use __RadToolBar__ in XAML you have to add the namespace declaration shown in __Example 2__:
->#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region telerik-schemas}}
+>__Example 2: Declaring Telerik Namespace__
+>```XAML
 >    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
->{{endregion}}
+>```
 
 If you run the application you will see an empty toolbar as demonstrated in __Figure 1__. 
 
@@ -62,9 +62,9 @@ If you run the application you will see an empty toolbar as demonstrated in __Fi
 
 In order to populate the __RadToolBar__ control with data in XAML, you can add a few __RadButtons__ to it and set their Content property as in __Example 3__.
 
-#### __[XAML] Example 3: Adding RadButtons in XAML__
+__Example 3: Adding RadButtons in XAML__
 
-{{region xaml-radtoolbar-getting-started_1}}
+```XAML
 	<telerik:RadToolBar>
 		<telerik:RadButton Content="FILE" />
 		<telerik:RadButton Content="EDIT " />
@@ -73,7 +73,7 @@ In order to populate the __RadToolBar__ control with data in XAML, you can add a
 		<telerik:RadButton Content="DEBUG" />
 		<telerik:RadButton Content="HELP" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 Running the application will result in a populated __RadToolBar__ as shown in __Figure 2__.
 
@@ -102,8 +102,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radtoolbar-getting-started_7}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -113,7 +113,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

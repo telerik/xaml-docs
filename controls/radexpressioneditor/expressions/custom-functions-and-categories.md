@@ -16,7 +16,7 @@ To do so, you have to create a custom implementation of the **ExpressionEditorVi
 
 #### [C#] Example 1: The ExpressionEditorViewModel overrides
 
-{{region cs-radexpressioneditor-expressions-custom-functions-and-categories-1}}
+```C#
 
     public class CustomExpressionEditorViewModel : ExpressionEditorViewModel
     {
@@ -50,16 +50,16 @@ To do so, you have to create a custom implementation of the **ExpressionEditorVi
             return base.GetFieldsCategory();
         }
     }
-{{endregion}}
+```
 
 To assign the custom viewmodel to the RadExpressionEditor control, you have to set its **ViewModel** property.
 
 #### [C#] Example 2: Set RadExpressionEditor's ViewModel
 
-{{region cs-radexpressioneditor-expressions-custom-functions-and-categories-2}}
+```C#
 
     this.ExpressionEditor.ViewModel = new CustomExpressionEditorViewModel();
-{{endregion}}
+```
 
 ## Custom Categories
 
@@ -67,7 +67,7 @@ To add custom categories as well as remove certain predefined categories, you ne
 
 #### [C#] Example 3: Add custom categories
 
-{{region cs-radexpressioneditor-expressions-custom-functions-and-categories-3}}
+```C#
 
     protected override IEnumerable<EditorCategoryModel> GenerateCategories()
     {
@@ -90,11 +90,13 @@ To add custom categories as well as remove certain predefined categories, you ne
 
         return list;
     }
-{{endregion}}
+```
 
 **Example 3** adds a **Favorites** category with two subcategories - **Math** and **DateTime**. Each of the categories contains some static methods of the respective class. The results before and after respectively can be observed in **Figure 1**.
 
-{% figure 1, "Custom category", "custom-category.png" %}
+__Custom category__
+
+![](images/custom-category.png)
 
 ## Custom Functions
 
@@ -102,7 +104,7 @@ If you want to add your custom non-static functions to the control you need to s
 
 #### [C#] Example 4: Custom ExpressionFunctionContext
 
-{{region cs-radexpressioneditor-expressions-custom-functions-and-categories-4}}
+```C#
 
     public class CustomExpressionFunctionContext : ExpressionFunctionContext
     {
@@ -118,22 +120,22 @@ If you want to add your custom non-static functions to the control you need to s
             return input + 2;
         }
     }
-{{endregion}}
+```
 
 **Example 4** defines two custom instance functions which we can now pass to the ExpressionParser as show in **Example 5**.
 
 #### [C#] Example 5: Set the ExpressionFunctionContext.Context
 
-{{region cs-radexpressioneditor-expressions-custom-functions-and-categories-5}}
+```C#
 
     ExpressionFunctionContext.Context = new CustomExpressionFunctionContext();
-{{endregion}}
+```
 
 You can then add these functions in the **GetFunctionsItemModels** override as well as remove some of the predefined functions.
 
 #### [C#] Example 6: Add custom functions
 
-{{region cs-radexpressioneditor-expressions-custom-functions-and-categories-6}}
+```C#
 
     protected override IEnumerable<EditorModelBase> GetFunctionsItemModels()
     {
@@ -145,11 +147,13 @@ You can then add these functions in the **GetFunctionsItemModels** override as w
 
         return list;
     }
-{{endregion}}
+```
 
 **Example 6** adds the two custom functions defined in Example 4 to the **Other** subcategory. The results before and after respectively are illustrated in **Figure 2**. 
 
-{% figure 2, "Custom functions", "custom-functions.png" %}
+__Custom functions__
+
+![](images/custom-functions.png)
 
 ## Further Customizations
 
@@ -157,7 +161,7 @@ You can further customize the control by overriding the **GetFieldsItemModels**,
 
 #### [C#] Example 7: Remove operators, constants and fields and add subcategories to the Fields category
 
-{{region cs-radexpressioneditor-expressions-custom-functions-and-categories-7}}
+```C#
 
     protected override IEnumerable<EditorModelBase> GetOperatorsItemModels()
     {
@@ -201,7 +205,7 @@ You can further customize the control by overriding the **GetFieldsItemModels**,
         
         return fields;
     }
-{{endregion}}
+```
 
 The example above removes some of the operators, constants and the **Discontinued** field from the RadExpressionEditor. It also creates a subcategory for the Fields category which holds the **Car** field of the bound object.
 

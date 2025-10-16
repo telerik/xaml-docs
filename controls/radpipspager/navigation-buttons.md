@@ -21,14 +21,14 @@ The visibility of the navigation buttons is controlled via the `ButtonVisibility
 * `VisibleOnMouseOver`&mdash;This option is the default one. With it, the buttons will be visible when the mouse is over the RadPipsPager control.
 * `HiddenWhenDisabled`&mdash;When this option is chosen, each button will be hidden when it is in disabled state.
 
-#### __[XAML] Setting the ButtonVisibility property to Visible__
-{{region radpipspager-navigation-buttons-0}}
+__Setting the ButtonVisibility property to Visible__
+```XAML
     <telerik:RadPipsPager ButtonVisibility="Visible">
         <telerik:RadPipsPagerItem/>
         <telerik:RadPipsPagerItem/>
         <telerik:RadPipsPagerItem/>
     </telerik:RadPipsPager>
-{{endregion}}
+```
 
 __RadPipsPager with visible buttons__
 
@@ -38,8 +38,8 @@ __RadPipsPager with visible buttons__
 
 RadPipsPager exposes the `PreviousButtonStyle` and `NextButtonStyle` properties that will allow you to set custom styles to the navigation buttons. Both buttons are of the type `RadButton` and the custom styles will have to target this type of element.
 
-#### __[XAML] Setting custom styles to the PreviousButtonStyle and NextButtonStyle properties__
-{{region radpipspager-navigation-buttons-1}}
+__Setting custom styles to the PreviousButtonStyle and NextButtonStyle properties__
+```XAML
     <Grid>
         <Grid.Resources>
             <ResourceDictionary>
@@ -83,7 +83,7 @@ RadPipsPager exposes the `PreviousButtonStyle` and `NextButtonStyle` properties 
             <telerik:RadPipsPagerItem/>
         </telerik:RadPipsPager>
     </Grid>
-{{endregion}}
+```
 
 __RadPipsPager with custom styles for the navigation buttons__
 
@@ -93,7 +93,7 @@ __RadPipsPager with custom styles for the navigation buttons__
 
 You can specify a time interval, after which the navigation buttons will become hidden. This interval will begin after the mouse is out of the control or it stops moving when it's over it. To apply such a time interval, you can set the`AutoHideButtonsDelay` property of RadPipsPager. This property has a type of nullable `TimeSpan`. By default, this property will be __null__ and the buttons will not become hidden.
 
-#### __[XAML] Setting an auto-hide interval for the navigation buttons__
-{{region radpipspager-navigation-buttons-3}}
+__Setting an auto-hide interval for the navigation buttons__
+```XAML
     <telerik:RadPipsPager AutoHideButtonsDelay="00:00:05"/>
-{{endregion}}
+```

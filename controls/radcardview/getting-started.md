@@ -38,25 +38,25 @@ To display data in the control, provide a collection of business objects and ass
 
 The following example shows how to setup a basic card model and populate the ItemsSource of the control.
 
-#### __[C#] Example 1: Creating card model__
-{{region radcardview-getting-started-0}}
+__Example 1: Creating card model__
+```C#
 	public class CardInfo
     {
         public string Header { get; set; }
         public string Name { get; set; }
         public int Number { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Defining the control in XAML__
-{{region radcardview-getting-started-1}}
+__Example 2: Defining the control in XAML__
+```XAML
 	<telerik:RadCardView x:Name="cardView"  
 						 CardHeaderBinding="{Binding Header}"
                          MinorLength="140"/>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Populating the control with data__
-{{region radcardview-getting-started-2}}
+__Example 3: Populating the control with data__
+```C#
 	public MainWindow()
 	{
 	    InitializeComponent();          
@@ -67,7 +67,7 @@ The following example shows how to setup a basic card model and populate the Ite
 	    }
 	    this.cardView.ItemsSource = source;
 	}
-{{endregion}}
+```
 
 #### Figure 1: RadCardView example
 ![{{ site.framework_name }} RadCardView RadCardView example](images/radcardview-getting-started-0.png)
@@ -101,8 +101,8 @@ To change the theme, you can follow the steps below:
 
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 2: Merge the ResourceDictionaries__  
-{{region xaml-radcardview-getting-started_3}}
+__Example 2: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -113,7 +113,7 @@ __Example 2__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

@@ -22,23 +22,23 @@ In order to automatically export a custom column, without handling some of the e
 
 #### **[C#]Example 1: Overriden GetCellContent method**
  
-{{region cs-gridview-export-how-to-export-custom-column-1}}
+```C#
  	protected override object GetCellContent(object item)
 	{
 		var columnProperty = item.GetType().GetProperty(this.DataMemberBinding.Path.Path);
 		return string.Format("@ {0} @", columnProperty.GetValue(item, null) as string);
 	}
- {{endregion}}
+```
 
 #### **[C#]Example 2: Overriden GetExportCellContent method**
 
-{{region cs-gridview-export-how-to-export-custom-column-2}}
+```C#
 	protected override object GetExportCellContent(object item)
 	{
 		var columnProperty = item.GetType().GetProperty(this.DataMemberBinding.Path.Path);
 		return string.Format("@ {0} @", columnProperty.GetValue(item, null) as string);
 	}
-{{endregion}}
+```
 
 The values from the exported column will appear in Excel as shown in **Figure 1**.
 

@@ -26,8 +26,8 @@ Since *Q2 2011* two new attachable properties were added that allow you to confi
 
 Here is an example of a __Border__ that holds a __TextBlock__ with some information about the location:
 
-#### __XAML__
-{{region radmap-features-information-layer-framework-elements_0}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -48,7 +48,7 @@ Here is an example of a __Border__ that holds a __TextBlock__ with some informat
 	        </Border>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the result: 
 

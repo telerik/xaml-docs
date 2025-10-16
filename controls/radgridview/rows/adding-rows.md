@@ -21,10 +21,10 @@ __RadGridView__ gives you the ability to make the newly inserted row visible. Al
 * __Top__: Display the new row on top.          
 * __Bottom__: Display the new row at the bottom after the last standard row. Please note that this mode is supported only when __GroupRenderMode__ is __Flat__.
 
-#### __[XAML] Setting the new row position__
-{{region gridview-rows-adding-rows-0}}
+__Setting the new row position__
+```XAML
 	<telerik:RadGridView NewRowPosition="Top" />
-{{endregion}}
+```
  
 #### __Figure 2: Different positions of GridViewNewRow__
 ![Telerik {{ site.framework_name }} DataGrid addingnewrows 03](images/RadGridView_addingnewrows_03.png)
@@ -37,8 +37,8 @@ __RadGridView__ gives you the ability to make the newly inserted row visible. Al
 
 The default text of the __GridViewNewRow__ is *"Click here to add new item"*. However, you can change the content by creating a custom [LocalizationManager]({%slug common-localization%}), override the *GetStringOverride* method for the *GridViewAlwaysVisibleNewRow* resource and apply the custom manager to your application. 
 
-#### __[C#] Create custom LocalizationManager class__
-{{region gridview-rows-adding-rows-1}}
+__Create custom LocalizationManager class__
+```C#
 	class CustomLocalizationManager : LocalizationManager
     {
         public override string GetStringOverride(string key)
@@ -52,16 +52,16 @@ The default text of the __GridViewNewRow__ is *"Click here to add new item"*. Ho
            
         }
     }
-{{endregion}}
+```
         
-#### __[C#] Apply the custom LocalizationManager for your application__
-{{region gridview-rows-adding-rows-1}}
+__Apply the custom LocalizationManager for your application__
+```C#
 	 public MainWindow()
         {
             InitializeComponent();
             LocalizationManager.Manager = new CustomLocalizationManager();
         }
-{{endregion}}
+```
 
 __Figure 3__ shows the result after the custom LocalizationManager is applied.
 

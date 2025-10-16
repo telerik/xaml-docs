@@ -20,9 +20,7 @@ The final result should look like the snapshot below:
 	* __Telerik.Windows.Controls__
 * Then add the xml file describing the data that will be displayed in the __RadTreeView__ control. Below you can find a simple XML declaration, that we will use in this tutorial:
 
-	#### __XAML__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_0}}
+	```XAML
 		<?xml version="1.0" encoding="UTF-8"?>
 		<Items>
 			<XmlNodeItem Header="Animal">
@@ -53,13 +51,11 @@ The final result should look like the snapshot below:
 				</Items>
 			</XmlNodeItem>
 		</Items>
-		{{endregion}}
+	```
 		
 * Create a new class named __XmlNodeItem__. The class is pretty simple and it represents a separate node from the XML document. It has a __Header__ property and a collection of __XmlNodeItem__. Here is the source code:
 
-	#### __C#__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_1}}
+	```C#
 		public class XmlNodeItem
 		{
 			public XmlNodeItem()
@@ -78,11 +74,8 @@ The final result should look like the snapshot below:
 				set;
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_2}}
+	```
+	```VB.NET
 		Public Class XmlNodeItem
 			Public Sub New()
 				Me.Items = New ObservableCollection(Of XmlNodeItem)()
@@ -109,13 +102,11 @@ The final result should look like the snapshot below:
 				End Set
 			End Property
 		End Class
-		{{endregion}}
+	```
 
 * Create a new class named __XmlNodeItemList__, which derives from __ObservableCollection__ of __XmlNodeItem__. This is a collection that will be created from the XML file. The __RadTreeView__ will be bound to this collection.
 
-	#### __C#__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_3}}
+	```C#
 		[XmlRoot( ElementName = "Items" )]
 		public class XmlNodeItemList : ObservableCollection<XmlNodeItem>
 		{
@@ -127,11 +118,8 @@ The final result should look like the snapshot below:
 				}
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_4}}
+	```
+	```VB.NET
 		<XmlRoot(ElementName = "Items")> _
 		Public Class XmlNodeItemList
 			Inherits ObservableCollection(Of XmlNodeItem)
@@ -141,13 +129,11 @@ The final result should look like the snapshot below:
 				Next
 			End Sub
 		End Class
-		{{endregion}}
+	```
 
 * Create a new class named __RadTreeViewXmlDataSource__, which derives from __XmlNodeItemList__. Practically, this will be the data source (the model) for the treeview. The class takes a path to the XML file and deserialize the data in the private method __RetrieveData__.
 
-	#### __C#__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_5}}
+	```C#
 		public class RadTreeViewXmlDataSource : XmlNodeItemList
 		{
 			private string source;
@@ -171,11 +157,8 @@ The final result should look like the snapshot below:
 				return list;
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_7}}
+	```
+	```VB.NET
 		Public Class RadTreeViewXmlDataSource
 			Inherits XmlNodeItemList
 			Private m_source As String
@@ -197,12 +180,11 @@ The final result should look like the snapshot below:
 				Return list
 			End Function
 		End Class
-		{{endregion}}
+	```
 
 * The next step is to declare the __RadTreeViewXmlDataSource__ as a resource in your application.
 
-	#### __XAML__
-	{{region radtreeview-populating-with-data-data-binding-to-xml_9}}
+	```XAML
 		<UserControl.Resources>
 		
 			<example:RadTreeViewXmlDataSource x:Key="treeViewData"
@@ -211,16 +193,13 @@ The final result should look like the snapshot below:
 			<!--Create HierarchicalDataTemplate-->
 		
 		</UserControl.Resources>
-		{{endregion}}
-
+	```
 
 	> The __example__ alias points to the __local__ namespace used in your project.
 
 * Since the data is hierarchical, you need to declare a __HierarchicalDataTemplate__. If you want to learn about the hierarchical data template, read the topic about [Hierarchical Data Templates]({%slug radtreeview-populating-with-data-hierarchical-data-templates%}).
 
-	#### __XAML__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_11}}
+	```XAML
 		<UserControl.Resources>
 			<example:RadTreeViewXmlDataSource x:Key="treeViewData"
 				Source="RadTreeViewBindingToXml.xml"/>
@@ -228,20 +207,19 @@ The final result should look like the snapshot below:
 				<TextBlock Text="{Binding Header}" />
 			</HierarchicalDataTemplate>
 		</UserControl.Resources>
-		{{endregion}}
+	```
 
 * Finally, here is the treeview declaration. For __ItemsSource__ is used the __treeViewData__ resource. For __ItemTemplate__ is set the created in the previous step hierarchical data template.
 
-	#### __XAML__
-
-	{{region radtreeview-populating-with-data-data-binding-to-xml_12}}
+	```XAML
 		<telerik:RadTreeView
 			ItemTemplate="{StaticResource Item}"
 			ItemsSource="{Binding Source={StaticResource treeViewData}}"/>
-		{{endregion}}
+	```
 
 * Here is the final result.
-![{{ site.framework_name }} RadTreeView Binding to XML](images/RadTreeView_PopulatingWithDataBindingToXML_010.PNG)
+	
+	![{{ site.framework_name }} RadTreeView Binding to XML](images/RadTreeView_PopulatingWithDataBindingToXML_010.PNG)
 
 ## See Also
  * [DataBinding - Overview]({%slug radtreeview-populating-with-data-databinding-overview%})

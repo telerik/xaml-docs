@@ -32,8 +32,8 @@ In the following examples, we will demonstrate how to find a specific location b
    
 * __Find a place by Location__
 	In this example we will get the location on the MapMouseClick event of the RadMap.	
-	#### __[XAML] Example 1: Defining BingRestMapProvider in XAML__
-	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_0}}
+	__Example 1: Defining BingRestMapProvider in XAML__
+	```XAML
 		<telerik:RadMap x:Name="myMap" MapMouseClick="bingMap_MapMouseClick">
             <telerik:RadMap.Provider>
                 <telerik:BingRestMapProvider ApplicationId="Bing_Key" 
@@ -43,10 +43,10 @@ In the following examples, we will demonstrate how to find a specific location b
                                              Mode="Aerial"/>
             </telerik:RadMap.Provider>           
         </telerik:RadMap>
-	{{endregion}}
+	```
 	
-	#### __[C#] Example 2: Get location by mouse click__
-	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_1}}
+	__Example 2: Get location by mouse click__
+	```C#
 				
 		private void bingMap_MapMouseClick(object sender, MapMouseRoutedEventArgs eventArgs)
 		{
@@ -71,9 +71,8 @@ In the following examples, we will demonstrate how to find a specific location b
 		{
 			MessageBox.Show(e.Error.ToString());
 		}	
-	{{endregion}}
-	#### __[VB.NET] Example 2: Get location by mouse click__
-	{{region vb-radmap-features-providers-bing-rest-map-provider-search-location_2}}
+	```
+	```VB.NET
 		Private Sub myMap_MapMouseClick(sender As Object, eventArgs As MapMouseRoutedEventArgs)
 			GetSearchData(eventArgs.Location)
 		End Sub
@@ -95,14 +94,14 @@ In the following examples, we will demonstrate how to find a specific location b
 		Private Sub restProvider_SearchLocationError(sender As Object, e As BingRestSearchLocationErrorEventArgs)
 			MessageBox.Show(e.Error.ToString)
 		End Sub
-	{{endregion}}
+	```
 	
 * __Find a place by Address/String Query__
 
 	The approach here is almost the same as the one explained above. Here we are setting a string address to the Query property of the __BingRestSearchLocationRequest__ object.
 
-	#### __[XAML] Example 3: Defining BingRestMapProvider in XAML__
-	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_3}}
+	__Example 3: Defining BingRestMapProvider in XAML__
+	```XAML
 		<telerik:RadMap x:Name="myMap">
             <telerik:RadMap.Provider>
                 <telerik:BingRestMapProvider ApplicationId="Bing_Key" 
@@ -112,10 +111,10 @@ In the following examples, we will demonstrate how to find a specific location b
                                              Mode="Aerial"/>
             </telerik:RadMap.Provider>           
         </telerik:RadMap>
-	{{endregion}}
+	```
 	
-	#### __[C#] Example 3: Get a location by specific address__
-	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_4}}
+	__Example 3: Get a location by specific address__
+	```C#
 		public partial class MainWindow : Window
 		{
 			public MainWindow()
@@ -152,9 +151,8 @@ In the following examples, we will demonstrate how to find a specific location b
 				MessageBox.Show(e.Error.ToString());
 			}
 		}	
-	{{endregion}}	
-	#### __[VB.NET] Example 3: Get a location by specific address__
-	{{region vb-radmap-features-providers-bing-rest-map-provider-search-location_5}}
+	```
+	```VB.NET
 		Class MainWindow
 			Public Sub New()
 				InitializeComponent()
@@ -185,7 +183,7 @@ In the following examples, we will demonstrate how to find a specific location b
 				MessageBox.Show(e.Error.ToString)
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 ## Structured / Unstructured URL
 	
@@ -195,14 +193,14 @@ With the __R1 2018 SP2__ version of our controls, you can now change the type of
 
 Setting one of these URLs depends on how you have structured your query. To search for a location you can type it in structured form, for example, '1 Microsoft way, Redmond WA 98052'. In such a scenario you can use a __Structured URL__. On the other hand, if you type an unstructured address (or free form query) you should choose the unstructured Bing URL to get better results from the service.	
 
-#### __[C#] Example 4: Get a location by specific address__
-	{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_6}}	
-		BingRestMapProvider provider = new BingRestMapProvider(MapMode.Aerial, true, "Your Bing Map Key");
-		BingRestSearchLocationRequest request = new BingRestSearchLocationRequest();
-		request.SearchLocationOptions.UseUnstructuredQuery = true;
-		request.Query = "Your query";
-		this.provider.SearchLocationAsync(request);		
-	{{endregion}}
+__Example 4: Get a location by specific address__
+```C#	
+	BingRestMapProvider provider = new BingRestMapProvider(MapMode.Aerial, true, "Your Bing Map Key");
+	BingRestSearchLocationRequest request = new BingRestSearchLocationRequest();
+	request.SearchLocationOptions.UseUnstructuredQuery = true;
+	request.Query = "Your query";
+	this.provider.SearchLocationAsync(request);		
+```
 	
 ## See Also
  * [Providers Overview] ({%slug radmap-features-providers%})

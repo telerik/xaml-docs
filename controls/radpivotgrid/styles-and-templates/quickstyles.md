@@ -41,9 +41,9 @@ Figure 1: QuickStyle styling options
 
 __RadPivotGrid__ relays on the __QuickStyle__ in order to get visualized correctly. When applying a custom __QuickStyle__ it is highly recommended that the default one is extracted from the theme, modified as desired and applied afterwards. For example, you can see below the default __QuickStyle__ of __RadPivotGrid__ for Office Black Theme:        
 
-#### __XAML__
 
-{{region radpivotgrid-styles-and-templates-quickstyles_1}}
+
+```XAML
 	<pivot:QuickStyle x:Key="PivotGridQuickStyle">
 		<pivot:QuickStyle.HeaderRow>
 			<pivot:ElementProperties BorderThickness="1" BorderBrush="{StaticResource CellLines}"/>
@@ -123,7 +123,7 @@ __RadPivotGrid__ relays on the __QuickStyle__ in order to get visualized correct
 					Foreground="{StaticResource CellsForeground}"/>
 		</pivot:QuickStyle.GrandTotalColumn>
 	</pivot:QuickStyle>
-{{endregion}}
+```
 
 >importantWhen applying a custom __QuickStyle__ all of the properties of the default style should be included in order to have a correct appearance. If there are missing properties, the corresponding elements will appear without any styling.
 
@@ -133,11 +133,11 @@ __RadPivotGrid__ relays on the __QuickStyle__ in order to get visualized correct
 
 Afterwards the custom __QuickStyle__ should be applied the following way:        
 
-#### __XAML__
 
-{{region radpivotgrid-styles-and-templates-quickstyles_2}}
+
+```XAML
 	<pivot:RadPivotGrid x:Name="pivot" QuickStyle="{StaticResource PivotGridQuickStyle}" />
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/PivotGrid/PivotGridQuickStyles).
 

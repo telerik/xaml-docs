@@ -25,9 +25,7 @@ This is a snapshot of a regular __RadTreeView__ with a couple of items.
 
 And here is the XAML declaration:
 
-#### __XAML__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_0}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -39,15 +37,13 @@ And here is the XAML declaration:
 	        <telerik:RadTreeViewItem Header="Cycling"/>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+```
 
 By default all items in the treeview are enabled (their __IsEnabled__ property is set to __True__). That means you can select, expand, collapse, drag and drop these items. If you want to disable a specific item, just add the following attribute to the treeview item declaration: 
 
-#### __XAML__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_1}}
+```XAML
 	<telerik:RadTreeViewItem IsEnabled="False"/>
-	{{endregion}}
+```
 
 If you want to disable the whole treeview then add the same attribute to the treeview declaration. On the next snapshot the whole treeview is disabled. 
 
@@ -55,9 +51,7 @@ If you want to disable the whole treeview then add the same attribute to the tre
 
 Here is the XAML declaration. Note that if you set the __IsEnabled__ property to __False__ for the __RadTreeView__ object then all treeview items will be disabled. 
 
-#### __XAML__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_2}}
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView" IsEnabled="False">
 	    <telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
 	        <telerik:RadTreeViewItem Header="Football" IsExpanded="True">
@@ -69,47 +63,37 @@ Here is the XAML declaration. Note that if you set the __IsEnabled__ property to
 	        <telerik:RadTreeViewItem Header="Cycling"/>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+```
 
 ## Enable and Disable Items Programmatically
 
 In order to disable a treeview item, you have to set the __IsEnabled__ property of an instance of the __RadTreeViewItem__ class. 
 
-#### __C#__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_3}}
+```C#
 	private void DisableTreeViewItem()
 	{
 	    radTreeViewItemSoccer.IsEnabled = false;
 	}
-	{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_4}}
+```
+```VB.NET
 	Private Sub DisableTreeViewItem()
 	    radTreeViewItemSoccer.IsEnabled = False
 	End Sub
-	{{endregion}}
+```
 	
 If you want to disable the whole treeview then you have to set the __IsEnabled__ property of an instance of the __RadTreeView__ class. 
 
-#### __C#__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_5}}
+```C#
 	private void DisableTreeView()
 	{
 	    radTreeView.IsEnabled = false;
 	}
-	{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_6}}
+```
+```VB.NET
 	Private Sub DisableTreeView()
 	    radTreeView.IsEnabled = False
 	End Sub
-	{{endregion}}
+```
 
 >tip Consider disabling treeview items in XAML instead of code-behind whenever it's possible. This includes situations when you know what items you need to disable at design time.
 
@@ -117,26 +101,20 @@ If you want to disable the whole treeview then you have to set the __IsEnabled__
 
 Both __RadTreeView__ and __RadTreeViewItem__ offer you __IsEnabledChanged__ event which is raised, when the tree or an item is enabled/disabled.
 
-#### __XAML__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_7}}
+```XAML
 	<telerik:RadTreeViewItem Header="Soccer"
 	    x:Name="radTreeViewItemSoccer" IsEnabledChanged="radTreeViewItemSoccer_IsEnabledChanged"/>
-	{{endregion}}
+```
 
 You can also attach to the __IsEnabledChanged__ event in the code-behind.
 
-#### __C#__
 
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_8}}
+```C#
 	this.radTreeViewItemSoccer.IsEnabledChanged += new DependencyPropertyChangedEventHandler( radTreeViewItemSoccer_IsEnabledChanged );
-	{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-feautres-treeviewitem-enable-disable-items_9}}
+```
+```VB.NET
 	AddHandler Me.radTreeViewItemSoccer.IsEnabledChanged, AddressOf radTreeViewItemSoccer_IsEnabledChanged
-	{{endregion}}
+```
 
 ## See Also
  * [How to Edit An Item]({%slug radtreeview-feautres-treeviewitem-item-editing%})

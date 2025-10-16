@@ -16,9 +16,9 @@ __RadGridView__'s **MergedCellsStyleSelector** can be used to style merged cells
 
 To do so, first create a new class that inherits the **StyleSelector** class and override its **SelectStyle** method:
 
-#### __[C#] Example 1: The StadiumCapacityStyleSelector class__
+__Example 1: The StadiumCapacityStyleSelector class__
 
-	{{region gridview-styling-merged-cells-3}}
+```C#
 	public class StadiumCapacityStyleSelector : StyleSelector
     {
         public override Style SelectStyle(object item, DependencyObject container)
@@ -42,11 +42,8 @@ To do so, first create a new class that inherits the **StyleSelector** class and
         public Style BigStadiumStyle { get; set; }
         public Style SmallStadiumStyle { get; set; }
     }
-	{{endregion}}
-
-#### __[VB.NET] Example 1: The StadiumCapacityStyleSelector class__
-	
-	{{region gridview-styling-merged-cells-4}}
+```
+```VB.NET
 	Public Class StadiumCapacityStyleSelector
 		Inherits StyleSelector
 		Public Overrides Function SelectStyle(item As Object, container As DependencyObject) As Style
@@ -81,13 +78,13 @@ To do so, first create a new class that inherits the **StyleSelector** class and
 		End Property
 		Private m_SmallStadiumStyle As Style
 	End Class
-	{{endregion}}
+```
 
 In the XAML file, define the style selector as a resource and set the properties of the **BigStadiumStyle** and **SmallStadiumStyle**:
 
-#### __[XAML] Example 2: Setting the BigStadiumStyle and SmallStadiumStyle__
+__Example 2: Setting the BigStadiumStyle and SmallStadiumStyle__
 
-	{{region gridview-styling-merged-cells-5}}
+```XAML
 	<Grid.Resources>
         <my:StadiumCapacityStyleSelector x:Key="StadiumCapacityStyleSelector">
             <my:StadiumCapacityStyleSelector.BigStadiumStyle>
@@ -102,17 +99,17 @@ In the XAML file, define the style selector as a resource and set the properties
             </my:StadiumCapacityStyleSelector.SmallStadiumStyle>
         </my:StadiumCapacityStyleSelector>
 	</Grid.Resources>
-	{{endregion}}
+```
 
 >The **"my:"** prefix before **StadiumCapacityStyleSelector** specifies the mapping for the namespace of the project: **xmlns:my="..."**
 
 Finally, set the **MergedCellsStyleSelector** property:
 
-#### __[XAML] Example 3: Setting the MergedCellsStyleSelector property__
+__Example 3: Setting the MergedCellsStyleSelector property__
 
-	{{region gridview-styling-merged-cells-6}}
+```XAML
 	<telerik:RadGridView MergedCellsDirection="Vertical" MergedCellsStyleSelector="{StaticResource StadiumCapacityStyleSelector}" />
-	{{endregion}}
+```
 
 And here is the final result:
 

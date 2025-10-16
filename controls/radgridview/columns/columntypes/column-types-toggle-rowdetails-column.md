@@ -12,15 +12,15 @@ position: 10
 
 `GridViewToggleRowDetailsColumn` derives from [GridViewColumn]({%slug radgridview-columns-column-types-basic-column%}) class, which means that it isn't used to display data. The column is represented by an `GridViewToggleButton` control. Clicking on it will show [RowDetails]({%slug radgridview-row-details-overview%}) if they are available. This column will automatically link the created toggle buttons to the DetailsVisibilityProperty of each GridViewRow.
 
-#### __[XAML] Defining GridViewToggleRowDetailsColumn in XAML__
-{{region xaml-radgridview-columns-column-types-toggle-rowdetails-column_0}}
+__Defining GridViewToggleRowDetailsColumn in XAML__
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewToggleRowDetailsColumn />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __GridViewToggleRowDetailsColumn__
 
@@ -41,8 +41,8 @@ The GridViewToggleRowDetailsColumn exposes the `ExpandMode` property that will a
 
 The GridViewToggleRowDetailsColumn allows you to set a Style for the expand/collapse button. This is done via the `ToggleButtonStyle` property.
 
-#### __[XAML] Setting a Style for the ToggleButtonStyle__
-{{region radgridview-columns-column-types-toggle-rowdetails-column_1}}
+__Setting a Style for the ToggleButtonStyle__
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -57,7 +57,7 @@ The GridViewToggleRowDetailsColumn allows you to set a Style for the expand/coll
 			</telerik:GridViewToggleRowDetailsColumn>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __GridViewToggleRowDetailsColumn with custom Style for the ToggleButtonStyle property__
 

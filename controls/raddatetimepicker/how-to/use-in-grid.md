@@ -16,9 +16,9 @@ To do this you need to alter the default __CellEditTemplate__ in your __RadGridV
 
 For the purpose of this example the first thing you have to do is to define the __RadGridView__ and populate it with sample data. Below are the custom business object definitions, as well as the __RadGridView__ declaration.
 
-#### __C#__
 
-{{region cs-raddatetimepicker-how-to-use-in-grid_0}}
+
+```C#
 	public class Club
 	{
 	    public Club(string name, DateTime established, int stadiumCapacity)
@@ -52,13 +52,8 @@ For the purpose of this example the first thing you have to do is to define the 
 	        return clubs;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-raddatetimepicker-how-to-use-in-grid_1}}
+```
+```VB.NET
 	Public Class Club
 	    Public Sub New(name As String, established As DateTime, stadiumCapacity As Integer)
 	        Me.Name = name
@@ -101,11 +96,11 @@ For the purpose of this example the first thing you have to do is to define the 
 	        Return clubs
 	    End Function
 	End Class
-{{endregion}}
+```
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-how-to-use-in-grid_2}}
+
+```XAML
 	<telerik:RadGridView Name="radGridView"
 	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -118,25 +113,22 @@ For the purpose of this example the first thing you have to do is to define the 
 	                                    DataFormatString="{}{0:N0}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-raddatetimepicker-how-to-use-in-grid_3}}
+
+```C#
 	this.radGridView.ItemsSource = Club.GetClubs();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddatetimepicker-how-to-use-in-grid_4}}
+```
+```VB.NET
 	Me.radGridView.ItemsSource = Club.GetClubs()
-{{endregion}}
+```
 
 The next and final step in the example is to define the actual __CellTemplate__ used for the DateTime column. Here is the complete XAML:
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-how-to-use-in-grid_5}}
+
+```XAML
 	<telerik:RadGridView Name="radGridView1"
 	                     AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -155,7 +147,7 @@ The next and final step in the example is to define the actual __CellTemplate__ 
 	                                    DataFormatString="{}{0:N0}" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 Here is the result:
 

@@ -18,9 +18,9 @@ The tooltips are disabled by default but you can enable them by setting the __Se
 
 The example below shows candlestick chart bound to a collection of __TradeData__ objects, where the __TradeData__ object has the following structure:
 
-#### __C#__
 
-{{region cs-radchart-features-tooltips_0}}
+
+```C#
 	public class TradeData
 	{
 	    public string Emission
@@ -92,13 +92,8 @@ The example below shows candlestick chart bound to a collection of __TradeData__
 	        return tradeData;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-tooltips_1}}
+```
+```VB.NET
 	Public Class TradeData
 	    Public Property Emission() As String
 	        Get
@@ -369,7 +364,7 @@ The example below shows candlestick chart bound to a collection of __TradeData__
 	        Return tradeData
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 
@@ -377,9 +372,9 @@ You can set the __ShowItemToolTips__ property to __True__ declaratively or in th
 
 >Note that __ShowItemToolTips__ is a property of the __SeriesMapping.SeriesDefinition__, which means that you can control the tooltips for each series separately.
 
-#### __XAML__
 
-{{region xaml-radchart-features-tooltips_2}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -395,7 +390,7 @@ You can set the __ShowItemToolTips__ property to __True__ declaratively or in th
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -417,9 +412,9 @@ If the default tooltip does not fit your needs, you can use __DataPoint.Tooltip_
 
 You can also bind to __DataPoint.Tooltip__ property, using [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}) with __DataPointMember__ set to __Tooltip__. Below you can see how to bind the tooltip to the __Close__ property of the underlying __TradeData__ object:
 
-#### __XAML__
 
-{{region xaml-radchart-features-tooltips_3}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -436,7 +431,7 @@ You can also bind to __DataPoint.Tooltip__ property, using [SeriesMapping/ItemMa
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -452,9 +447,9 @@ For example, "__#OPEN{0.0000}__" means that the tooltip will take the value from
 
 You can construct more complex tooltips combining several tokens, for example: __"Open: #OPEN{C4}/Close: #CLOSE{C4}1&#x0a;#DATAITEM.Volume{###,###,##0}"__. This format expression uses three tokens to obtain the values from the underlying __DataPoint__ object's properties __Open__, __Close__ and __DataItem.Volume__. For more about __#DATAITEM__ token take a look at [Format Expressions]({%slug radchart-features-format-expressions%}).
 
-#### __XAML__
 
-{{region xaml-radchart-features-tooltips_4}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping LegendLabel="MSFT">
@@ -471,13 +466,13 @@ You can construct more complex tooltips combining several tokens, for example: _
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-tooltips_5}}
+
+```C#
 	RadChart radChart = new RadChart();
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.SeriesDefinition = new CandleStickSeriesDefinition();
@@ -488,13 +483,8 @@ You can construct more complex tooltips combining several tokens, for example: _
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Low", DataPointMember.Low) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Close", DataPointMember.Close) );
 	radChart.SeriesMappings.Add( seriesMapping );
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-tooltips_6}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.SeriesDefinition = New CandleStickSeriesDefinition()
@@ -505,7 +495,7 @@ You can construct more complex tooltips combining several tokens, for example: _
 	seriesMapping.ItemMappings.Add(New ItemMapping("Low", DataPointMember.Low))
 	seriesMapping.ItemMappings.Add(New ItemMapping("Close", DataPointMember.Close))
 	radChart.SeriesMappings.Add(seriesMapping)
-{{endregion}}
+```
 
 
 
@@ -532,9 +522,9 @@ The next example demonstrates how to use __StockToolTipControl__ - a custom user
 
 Now, __StockToolTipControl__ has to be created. It will show additional information in a grid:
 
-#### __XAML__
 
-{{region xaml-radchart-features-tooltips_7}}
+
+```XAML
 	<UserControl>
 	    <UserControl.Resources>
 	        <Style x:Key="textStyle" TargetType="TextBlock">
@@ -621,15 +611,15 @@ Now, __StockToolTipControl__ has to be created. It will show additional informat
 	        </Grid>
 	    </Border>
 	</UserControl>
-{{endregion}}
+```
 
 
 
 In the code-behind, there are a few properties - each one is setting the value of the appropriate text box:
 
-#### __C#__
 
-{{region cs-radchart-features-tooltips_8}}
+
+```C#
 	public partial class StockToolTipControl : UserControl
 	{
 	    public StockToolTipControl()
@@ -674,13 +664,8 @@ In the code-behind, there are a few properties - each one is setting the value o
 	        }
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-tooltips_9}}
+```
+```VB.NET
 	Partial Public Class StockToolTipControl
 	    Inherits UserControl
 	    Public Sub New()
@@ -715,15 +700,15 @@ In the code-behind, there are a few properties - each one is setting the value o
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 
 
 You can play with the colors to give the control a better look and feel.The next step is to assign an event handler to the __ChartArea.ItemToolTipOpening__ event:
 
-#### __XAML__
 
-{{region xaml-radchart-features-tooltips_10}}
+
+```XAML
 	<!--  Custom tooltip  -->
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
@@ -747,7 +732,7 @@ You can play with the colors to give the control a better look and feel.The next
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
@@ -760,9 +745,9 @@ __ItemToolTipOpening__ event handler has two parameters:
 
 The final step is to create a new instance of the __StockToolTipControl__ and to initialize its properties. __ItemToolTipEventArgs.DataPoint.DataItem__ has to be used. It holds the __TradingData__ object associated to this __DataPoint:__
 
-#### __C#__
 
-{{region cs-radchart-features-tooltips_11}}
+
+```C#
 	private void ChartArea_ItemToolTipOpening(ItemToolTip2D tooltip, ItemToolTipEventArgs e)
 	{
 	    TradeData tradeData = e.DataPoint.DataItem as TradeData;
@@ -775,13 +760,8 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	    stockToolTip.ForwardingPE = 17.93;
 	    tooltip.Content = stockToolTip;
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-tooltips_12}}
+```
+```VB.NET
 	Private Sub ChartArea_ItemToolTipOpening(ByVal tooltip As ItemToolTip2D, ByVal e As ItemToolTipEventArgs)
 	    Dim tradeData As TradeData = TryCast(e.DataPoint.DataItem, TradeData)
 	    Dim stockToolTip As New StockToolTipControl()
@@ -794,7 +774,7 @@ The final step is to create a new instance of the __StockToolTipControl__ and to
 	
 	    tooltip.Content = stockToolTip
 	End Sub
-{{endregion}}
+```
 
 
 

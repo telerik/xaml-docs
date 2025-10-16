@@ -32,9 +32,9 @@ The __DateTimeContinuousAxis__ is like a numerical axis but the axis value range
 
 Here is an example XAML snippet that demonstrates how to create chart with horizontal date time continuous axis:
         
-#### __[XAML] Example 1: Setting DateTimeContinuousAxis__
+__Example 1: Setting DateTimeContinuousAxis__
 
-{{region radchart-axes-datetimeaxes_0}}
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 	   <telerik:RadCartesianChart.HorizontalAxis>
 	      <telerik:DateTimeContinuousAxis LabelFitMode="MultiLine" LabelFormat="MMM yyyy"/>
@@ -49,13 +49,13 @@ Here is an example XAML snippet that demonstrates how to create chart with horiz
 	                        StrokeThickness="2"/>
 	   </telerik:RadCartesianChart.Series> 						
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 Below is the binding logic:        
 
-#### __[C#] Example 2: Setting the binding in code behind__
+__Example 2: Setting the binding in code behind__
 
-{{region radchart-axes-datetimeaxes_1}}
+```C#
 	public MainPage()
 	{
 	    InitializeComponent();
@@ -75,11 +75,8 @@ Below is the binding logic:
 	
 	    series.ItemsSource = dataSouce;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the binding in code behind__
-
-{{region radchart-axes-datetimeaxes_2}}
+```
+```VB.NET
 	Public Sub New()
 	   InitializeComponent()
 	
@@ -109,13 +106,13 @@ Below is the binding logic:
 	   series.ValueBinding = valueBinding
 	   series.ItemsSource = dataSource
 	End Sub
-{{endregion}}
+```
 
 And finally the definition of the ChartDataObject class:
 
-#### __[C#] Example 3: Creating the businesses object__
+__Example 3: Creating the businesses object__
 
-{{region radchart-axes-datetimeaxes_3}}
+```C#
 	public class ChartDataObject
 	{
 	    public DateTime Date
@@ -129,11 +126,8 @@ And finally the definition of the ChartDataObject class:
 	        set;
 	    }
 	}
-	{{endregion}}
-
-#### __[VB.NET] Example 3: Creating the businesses object__
-
-{{region radchart-axes-datetimeaxes_4}}
+```
+```VB.NET
 	Public Class ChartDataObject
 	    Dim _date As Date
 	    Dim _value As Double
@@ -156,7 +150,7 @@ And finally the definition of the ChartDataObject class:
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView with Horizontal DateTime Continuous Axis](images/radchartview-chart_datetime_continuous_axis.png)
 
@@ -168,9 +162,9 @@ The DateTime categorical axis is a categorical axis with Date-Time values which 
 
 * __DateTimeComponent__: A property of type __DateTimeComponent__ that gets or sets how data points will be grouped. The DateTime component property is an enumeration and it allows the following values: __Ticks, Year, Quarter, Month, Week, Hour, Minute, Second, Millisecond, Date, TimeOfDay, Day, DayOfWeek, DayOfYear.__
 
-#### __[XAML] Example 4: Setting the DateTimeCategoricalAxis axes__
+__Example 4: Setting the DateTimeCategoricalAxis axes__
 
-{{region radchart-axes-datetimeaxes_5}}
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 	   <telerik:RadCartesianChart.HorizontalAxis>
 	      <telerik:DateTimeCategoricalAxis LabelFitMode="MultiLine"
@@ -188,7 +182,7 @@ The DateTime categorical axis is a categorical axis with Date-Time values which 
 	
 	   </telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-	{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView with Horizontal DateTime Categorical Axis](images/radchartview-chart_datetime_categorical_axis.png)
 

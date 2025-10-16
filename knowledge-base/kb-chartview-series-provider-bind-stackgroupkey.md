@@ -32,18 +32,18 @@ The `StackGroupKey` property of the `BarSeries` class is not a `DependencyProper
 
 >important In order for the `StackGroupKey` property to be taken into account, the `CombineMode` property needs to be set to either `Stack` or `Stack100`.
 
-#### __[C#] Adding an additional property for the StackGroupKey in the view model of the series__
-{{region kb-chartview-series-provider-bind-stackgroupkey-0}}
+__Adding an additional property for the StackGroupKey in the view model of the series__
+```C#
     public class SeriesViewModel
     {
         //Property that holds the stack group key of the current series
         public object StackGroupKey { get; set; }
         public ObservableCollection<MyPointInfo> MyPoints { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML] Defining the series descriptor and binding the StackGroupKey to an attached property__
-{{region kb-chartview-series-provider-bind-stackgroupkey-1}}
+__Defining the series descriptor and binding the StackGroupKey to an attached property__
+```XAML
     <telerik:ChartSeriesProvider.SeriesDescriptors>
         <telerik:CategoricalSeriesDescriptor ItemsSourcePath="MyPoints" 
                                              CategoryPath="Category"
@@ -56,10 +56,10 @@ The `StackGroupKey` property of the `BarSeries` class is not a `DependencyProper
             </telerik:CategoricalSeriesDescriptor.Style>
         </telerik:CategoricalSeriesDescriptor>
     </telerik:ChartSeriesProvider.SeriesDescriptors>
-{{endregion}}
+```
 
-#### __[C#] Implementing the attached property that will set the StackGroupKey of each BarSeries__
-{{region kb-chartview-series-provider-bind-stackgroupkey-2}}
+__Implementing the attached property that will set the StackGroupKey of each BarSeries__
+```C#
     public class BarSeriesExtensions
     {
         public static object GetStackGroupKey(DependencyObject obj)
@@ -84,4 +84,4 @@ The `StackGroupKey` property of the `BarSeries` class is not a `DependencyProper
             }
         }
     }
-{{endregion}}
+```

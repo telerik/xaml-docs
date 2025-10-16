@@ -33,32 +33,32 @@ However, you may want to use a control which is not styled out of the box, such 
 
 Add a new `ToolBarContainerStyle` instance to the `ToolBarContainerStyleSelector` property of the `RadToolBar` element, and set its `TypeName` property to __"RadComboBox"__.
 
-#### __[XAML]__
 
-{{region kb-toolbar-create-consistent-style-for-combobox-0}}
+
+```XAML
 	<telerik:ToolBarContainerStyleSelector>
 	    <telerik:ToolBarContainerStyle TypeName="RadComboBox" />
 	</telerik:ToolBarContainerStyleSelector>
-{{endregion}}
+```
 
 When using certain themes, different properties would need to be changed, so that the RadComboBox element would look the same as the rest of the controls inside the RadToolBar instance.
 
 For `Office2019` and `Crystal` themes, modify the `Margin` property:
 
-#### __[XAML]__
 
-{{region kb-toolbar-create-consistent-style-for-combobox-1}}
+
+```XAML
 	<!--Set BasedOn property if NoXaml assemblies are used: BasedOn="{StaticResource RadComboBoxStyle}"-->
 	<Style x:Key="ToolBarRadComboBoxStyle" TargetType="telerik:RadComboBox">
 		<Setter Property="Margin" Value="1" />
 	</Style>
-{{endregion}}
+```
 
 For `VisualStudio2019` theme, modify the `BorderThickness`, `Margin`, and `Background` properties:
 
-#### __[XAML]__
 
-{{region kb-toolbar-create-consistent-style-for-combobox-2}}
+
+```XAML
 	<!--Set BasedOn property if NoXaml assemblies are used: BasedOn="{StaticResource RadComboBoxStyle}"-->
 	<Style x:Key="ToolBarRadComboBoxStyle" TargetType="telerik:RadComboBox">
 	    <Setter Property="BorderThickness" Value="0" />
@@ -78,17 +78,17 @@ For `VisualStudio2019` theme, modify the `BorderThickness`, `Margin`, and `Backg
 	        </Trigger>
 	    </Style.Triggers>
 	</Style>
-{{endregion}}
+```
 
 Finally, set the created `Style` to the `ContainerStyle` property of the newly introduced `ToolBarContainerStyle` element.
 
-#### __[XAML]__
 
-{{region kb-toolbar-create-consistent-style-for-combobox-3}}
+
+```XAML
 	<telerik:ToolBarContainerStyleSelector>
 	    <telerik:ToolBarContainerStyle TypeName="RadComboBox" ContainerStyle="{StaticResource ToolBarRadComboBoxStyle}" />
 	</telerik:ToolBarContainerStyleSelector>
-{{endregion}}
+```
 
 ## See Also
 

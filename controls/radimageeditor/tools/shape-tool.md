@@ -14,8 +14,8 @@ The Shape Tool is one of the tools, which come out-of-the-box with the __RadImag
 
 The tool could be added to the UI of __RadImageEditor__ as shown in __Example 1__.
 
-#### __[XAML] Example 1: Add Shape Tool__
-{{region xaml-radimageeditor-tools-shape-tool_0}}
+__Example 1: Add Shape Tool__
+```XAML
 	<telerik:ImageToolItem ImageKey="Shape" telerik:LocalizationManager.ResourceKey="ImageEditor_Shape" Command="commands:ImageEditorRoutedCommands.ExecuteTool">
 	    <telerik:ImageToolItem.CommandParameter>
 	        <tools:ShapeTool>
@@ -25,17 +25,17 @@ The tool could be added to the UI of __RadImageEditor__ as shown in __Example 1_
 	        </tools:ShapeTool>
 	    </telerik:ImageToolItem.CommandParameter>
 	</telerik:ImageToolItem>
-{{endregion}} 
+``` 
 
 The namespaces that should be registered are as follows:
 
-#### __[XAML] Example 2: Register namespaces__
-{{region xaml-radimageeditor-tools-shape-tool_1}}
+__Example 2: Register namespaces__
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	xmlns:tools="clr-namespace:Telerik.Windows.Media.Imaging.Tools;assembly=Telerik.Windows.Controls.ImageEditor"  
 	xmlns:shapes="clr-namespace:Telerik.Windows.Media.Imaging.Shapes;assembly=Telerik.Windows.Controls.ImageEditor"
 	xmlns:commands="clr-namespace:Telerik.Windows.Media.Imaging.ImageEditorCommands.RoutedCommands;assembly=Telerik.Windows.Controls.ImageEditor"
-{{endregion}}
+```
 
 By default, the __ShapeTool__ provides three predefined shapes:
 
@@ -59,17 +59,17 @@ The __Shape Tool__ provides an options to easily customize your shape – you ca
 You could customize the shapes in the __ShapeTool__ to fit specific requirements. To create a custom shape, the simple __IShape__ interface should be implemented. 
 
 
-#### __[C#] Example 3: Inherit the IShape interface__
-{{region cs-radimageeditor-tools-shape-tool_2}}
+__Example 3: Inherit the IShape interface__
+```C#
 	public class TelerikLogo : IShape
-{{endregion}}
+```
 
-#### __[VB] Example 3: Inherit the IShape interface__
-{{region vb-radimageeditor-tools-shape-tool_3}}
+__Example 3: Inherit the IShape interface__
+```VB
 	Public Class TelerikLogo
 	    Implements IShape
 	    '...
-{{endregion}}
+```
 
 It exposes two members:
 
@@ -78,8 +78,8 @@ It exposes two members:
 
 Example 4 shows a sample implementation of a custom shape.
 
-#### __[C#] Example 4: Implement custom shape__
-{{region cs-radimageeditor-tools-shape-tool_4}}
+__Example 4: Implement custom shape__
+```C#
 	public string DisplayName
 	{
 	    get
@@ -120,11 +120,11 @@ Example 4 shows a sample implementation of a custom shape.
 
 	    return logoGeometry;
 	}
-{{endregion}}
+```
 
 
-#### __[VB] Example 4: Implement custom shape__
-{{region vb-radimageeditor-tools-shape-tool_5}}
+__Example 4: Implement custom shape__
+```VB
 
 	Public ReadOnly Property DisplayName() As String Implements IShape.DisplayName
 	    Get
@@ -163,7 +163,7 @@ Example 4 shows a sample implementation of a custom shape.
 
 	    Return logoGeometry
 	End Function
-{{endregion}}
+```
 
 >tip You could download runnable project with Custom Shape from our [SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ImageEditor/Drawing)
 
@@ -172,27 +172,27 @@ Example 4 shows a sample implementation of a custom shape.
 
 After creating a custom shape, it should be registered in the tool. This could be achieved declaratively as well as in the code behind as shown in __Examples 5 and 6__. You could get or set the shapes in the __ShapeTool__ trough the __Shapes__ collection. 
 
-#### __[C#] Example 5: Add custom shape to the shape tool__
-{{region cs-radimageeditor-tools-shape-tool_6}}
+__Example 5: Add custom shape to the shape tool__
+```C#
 	ShapeTool tool = new ShapeTool();
 	tool.Shapes.Add(new RectangleShape());
 	tool.Shapes.Add(new EllipseShape());
 	tool.Shapes.Add(new LineShape());
 	tool.Shapes.Add(new TelerikLogo());
-{{endregion}}
+```
 
-#### __[VB] Example 5: Add custom shape to the shape tool__
-{{region vb-radimageeditor-tools-shape-tool_7}}
+__Example 5: Add custom shape to the shape tool__
+```VB
 	Dim tool As New ShapeTool()
 	tool.Shapes.Add(New RectangleShape())
 	tool.Shapes.Add(New EllipseShape())
 	tool.Shapes.Add(New LineShape())
 	tool.Shapes.Add(New TelerikLogo())
 
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Add custom shape to the shape tool__
-{{region xaml-radimageeditor-tools-shape-tool_8}}
+__Example 5: Add custom shape to the shape tool__
+```XAML
 	<tools:ShapeTool>
 	    <tools:ShapeTool.Shapes>
 	        <shapes:RectangleShape />
@@ -201,7 +201,7 @@ After creating a custom shape, it should be registered in the tool. This could b
 	        <local:TelerikLogo />
 	    </tools:ShapeTool.Shapes>
 	</tools:ShapeTool>
-{{endregion}}
+```
 
 ## See also
 

@@ -34,18 +34,18 @@ Set the __HorizontalContentAlignment__ property of RadTreeViewItem to Stretch.
 
 To apply this globally to all RadTreeViewItems in the treeview, use the ItemContainerStyle property.
 
-#### __[XAML]__
-{{region kb-treeview-stretch-item-content-horizontally-0}}
+
+```XAML
 	<telerik:RadTreeView.ItemContainerStyle>
 		<Style TargetType="telerik:RadTreeViewItem">
 			<Setter Property="HorizontalContentAlignment" Value="Stretch" />
 		</Style>
 	</telerik:RadTreeView.ItemContainerStyle>
-{{endregion}}
+```
 
 To apply it per item set the property directly on the RadTreeViewItem.
 
-#### __[XAML]__
-{{region kb-treeview-stretch-item-content-horizontally-1}}
+
+```XAML
 	<telerik:RadTreeViewItem HorizontalContentAlignment="Stretch" />
-{{endregion}}
+```

@@ -18,9 +18,9 @@ RadPropertyGrid auto-generates its property definitions by default based on the 
 
 However, sometimes you may decide on customizing or totally changing them. This can be achieved by setting the __AutoGeneratePropertyDefinitions__ to __"False"__ and defining those you require in the **PropertyDefinitions** collection. For example, instead of using a simple TextBox for editing the **Height** and **Width** properties of a **RadButton**, you may use a **RadNumericUpDown**:
 
-#### __[XAML] Example 1: Custom Property Definitions__
+__Example 1: Custom Property Definitions__
 
-{{region xaml-radpropertygrid-gettingstarted-customized-property-definitions_0}}
+```XAML
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -46,7 +46,7 @@ However, sometimes you may decide on customizing or totally changing them. This 
             </telerik:RadPropertyGrid.PropertyDefinitions>
         </telerik:RadPropertyGrid>
     </Grid>
-{{endregion}}
+```
 
 Then, your RadPropertyGrid will be displayed as shown in **Figure 2**.
 

@@ -34,17 +34,14 @@ The __Telerik.Windows.Controls.LocalizationManager__ allows you to easily locali
 
 To apply custom localization to your controls just instantiate your custom __LocalizationManager__ and set it to the static property __LocalizationManager.Manager__, before the creation of the UI.
 
-#### __C#__
 
-{{region radscheduleview-localization_0}}
+
+```C#
 	LocalizationManager.Manager = new CustomLocalizationManager();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-localization_1}}
+```
+```VB.NET
 	LocalizationManager.Manager = New CustomLocalizationManager()
-{{endregion}}
+```
 
 >__Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.__
 
@@ -80,21 +77,18 @@ The snapshot below shows the content of the __ScheduleViewResources.de.resx__ fi
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
 
-#### __C#__
 
-{{region radscheduleview-localization_2}}
+
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	   ResourceManager = ScheduleViewResources.ResourceManager
 	};
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-localization_3}}
+```
+```VB.NET
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
-{{endregion}}
+```
 
 {% if site.site_name == 'Silverlight' %}
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, >if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx__ files. For the >__Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others - to __No code generation__. Then, open the project >file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
@@ -109,9 +103,9 @@ Here is how the localized __RadScheduleView__ looks like:
 
 The other way to localize your __RadScheduleView__ control is to create a class that derives from the __ScheduleViewLocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below:
 
-#### __C#__
 
-{{region radscheduleview-localization_4}}
+
+```C#
 	public class CustomLocalizationManager : ScheduleViewLocalizationManager
 	{
 	   public override string GetStringOverride( string key )
@@ -136,11 +130,8 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 	       return base.GetStringOverride( key );
 	   }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-localization_5}}
+```
+```VB.NET
 	Public Class CustomLocalizationManager
 	    Inherits ScheduleViewLocalizationManager
 	    Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
@@ -163,15 +154,15 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 	        Return MyBase.GetStringOverride(key)
 	    End Function
 	End Class
-{{endregion}}
+```
 
 >important It is important for the custom localization manager to derive from __ScheduleViewLocalizationManager__ and not from __LocalizationManager__. 
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
 
-#### __C#__
 
-{{region radscheduleview-localization_6}}
+
+```C#
 	public override string GetStringOverride( string key )
 	{
 	   switch( key )
@@ -183,11 +174,8 @@ Of course, if you don't want to hard-code your translation inside your source co
 	   }
 	   return base.GetStringOverride( key );
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-localization_7}}
+```
+```VB.NET
 	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	    Select Case key
 	        '----------------------
@@ -197,7 +185,7 @@ Of course, if you don't want to hard-code your translation inside your source co
 	    End Select
 	    Return MyBase.GetStringOverride(key)
 	End Function
-{{endregion}}
+```
 
 ## RadScheduleView Resource Keys
 
@@ -396,9 +384,9 @@ __RadScheduleView__ provides you with built-in resources for several cultures:  
 
 To change the default culture, you should set the __CurrentCulture__ and the __CurrentUICulture__ of the __CurrentThread__. Note that this must happen in the code-behind of your __Application__ (__App.xaml.cs__) file, right before the UI initialization. The next code-snippet shows you how to change the __CurrentCulture__ to __Dutch__.
 
-#### __C#__
 
-{{region radscheduleview-localization_8}}
+
+```C#
 	public partial class App : Application
 	{
 	   public App()
@@ -408,4 +396,4 @@ To change the default culture, you should set the __CurrentCulture__ and the __C
 	       InitializeComponent();
 	   }
 	}
-{{endregion}}
+```

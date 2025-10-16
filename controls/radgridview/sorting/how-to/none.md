@@ -14,9 +14,9 @@ By design, when you click on the column header the sorting state is changed from
 
 To accomplish this you need to subscribe to the __Sorting__ event and define its handler as follows:
 
-#### __C#__
 
-{{region cs-gridview-sorting-none_0}}
+
+```C#
 	private void clubsGrid_Sorting(object sender, GridViewSortingEventArgs e)
 	{
 	    if (e.NewSortingState == SortingState.None)
@@ -24,17 +24,14 @@ To accomplish this you need to subscribe to the __Sorting__ event and define its
 	        e.NewSortingState = SortingState.Ascending;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-sorting-none_1}}
+```
+```VB.NET
 	Private Sub clubsGrid_Sorting(sender As Object, e As GridViewSortingEventArgs)
 	    If e.NewSortingState = SortingState.None Then
 	        e.NewSortingState = SortingState.Ascending
 	    End If
 	End Sub
-{{endregion}}
+```
 
 
 

@@ -34,19 +34,17 @@ The snapshot below shows the content of the __RibbonViewResources.de.resx__ file
 
 The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.				
 
-#### __C#__
-{{region radribbonview-localization_0}}
+
+```C#
 	LocalizationManager.Manager = new LocalizationManager()
 	{
 	ResourceManager = RibbonResources.ResourceManager
 	};
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-localization_1}}
+```
+```VB.NET
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = RibbonResources.ResourceManager
-{{endregion}}
+```
 
 >If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __RibbonResources.resx__ and __RibbonResources.nl.resx__ files. For the __RibbonResources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal__ or __Public__ and for others to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
 
@@ -56,8 +54,8 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 The other way to localize your __RadRibbonView__ control is to create a class that derives from the __LocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key, as it is shown below:				
 
-#### __C#__
-{{region radribbonview-localization_2}}
+
+```C#
 	public class CustomLocalizationManager : LocalizationManager
 	{
 	    public override string GetStringOverride( string key )
@@ -74,10 +72,8 @@ The other way to localize your __RadRibbonView__ control is to create a class th
 	        return base.GetStringOverride( key );
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-localization_3}}
+```
+```VB.NET
 	Public Class CustomLocalizationManager
 	    Inherits LocalizationManager
 	    Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
@@ -93,12 +89,12 @@ The other way to localize your __RadRibbonView__ control is to create a class th
 	        Return MyBase.GetStringOverride(key)
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Of course, if you don't want to hard-code your translation inside the source code, you can always use resource files:
 
-#### __C#__
-{{region radribbonview-localization_4}}
+
+```C#
 	public override string GetStringOverride( string key )
 	{
 	    switch( key )
@@ -108,10 +104,8 @@ Of course, if you don't want to hard-code your translation inside the source cod
 	    }
 	    return base.GetStringOverride( key );
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radribbonview-localization_5}}
+```
+```VB.NET
 	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
 	    Select Case key
 				Case "RibbonViewQATMinimize"
@@ -119,7 +113,7 @@ Of course, if you don't want to hard-code your translation inside the source cod
 			End Select
 	    Return MyBase.GetStringOverride(key)
 	End Function
-{{endregion}}
+```
 
 ## RadRibbonView Resource Keys
 

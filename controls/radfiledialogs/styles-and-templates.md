@@ -40,7 +40,7 @@ To modify the appearance of each of the individual elements, you should first cr
 
 #### [XAML] Example 1: Add title to the Custom Places Pane
 
-{{region xaml-radfiledialogs-styles-and-templates_0}}
+```XAML
     <ControlTemplate x:Key="ExplorerControlTemplate" TargetType="fileDialogs:ExplorerControl">
         <Border
         Background="{TemplateBinding Background}"
@@ -147,7 +147,7 @@ To modify the appearance of each of the individual elements, you should first cr
     <Style TargetType="fileDialogs:ExplorerControl">
         <Setter Property="Template" Value="{StaticResource ExplorerControlTemplate}"/>
     </Style>
-{{endregion}}
+```
 
 >tip If you're using [the NoXaml binaries]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __ExplorerControlStyle__.
 

@@ -12,20 +12,17 @@ position: 3
 
 The __DataProvider__ class exposes various methods and properties for extending and customizing the default behavior of its respective **RadVirtualGrid** control. **Examples 1 and 2** demonstrate how you can create and apply a custom DataProvider.
 
-#### __[C#] Example 1: Defining a Custom DataProvider__
+__Example 1: Defining a Custom DataProvider__
 
-{{region cs-radvirtualgrid-features_customdataprovider_0}}
+```C#
 	public class CustomDataProvider: DataProvider
     {
         public CustomDataProvider(IEnumerable source) : base(source)
         {
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining a Custom DataProvider__
-
-{{region vb-radvirtualgrid-features_customdataprovider_0}}
+```
+```VB.NET
 	Public Class CustomDataProvider
 		Inherits DataProvider
 
@@ -33,19 +30,16 @@ The __DataProvider__ class exposes various methods and properties for extending 
 			MyBase.New(source)
 		End Sub
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Example 2: Applying the Custom DataProvider__
+__Example 2: Applying the Custom DataProvider__
 
-{{region cs-radvirtualgrid-features_customdataprovider_1}}
+```C#
 	this.VirtualGrid.DataProvider = new CustomDataProvider(Club.GetClubs());
-{{endregion}}
-
-#### __[VB.NET] Example 2: Applying the Custom DataProvider__
-
-{{region vb-radvirtualgrid-features_customdataprovider_1}}
+```
+```VB.NET
     Me.VirtualGrid.DataProvider = New CustomDataProvider(Club.GetClubs())
-{{endregion}}
+```
 
 #### __Figure 1: RadVirtualGrid with applied custom DataProvider__
 

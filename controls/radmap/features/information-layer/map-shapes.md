@@ -36,8 +36,8 @@ The __MapShape__ class gives you the ability to specify caption for your Shapes 
 
 The most important things when using the __MapLine__ object are the __Point1__ and __Point2__ properties, which are of type __Location__. They define the start and the end points of the line. Here is an example.
 
-#### __XAML__
-{{region radmap-features-map-shapes_0}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
 	        Height="480">
@@ -48,7 +48,7 @@ The most important things when using the __MapLine__ object are the __Point1__ a
 	                    StrokeThickness="2" />
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Line](images/RadMap_Features_MapShapes_01.png)
 
@@ -72,8 +72,8 @@ Additionally you can use the following properties:
 
 Here is an example:
 
-#### __XAML__
-{{region radmap-features-map-shapes_1}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
 	        Height="480">
@@ -88,7 +88,7 @@ Here is an example:
 	                        StrokeThickness="2" />
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Rectangle](images/RadMap_Features_MapShapes_02.png)
 
@@ -108,8 +108,8 @@ To use the __MapEllipse__ in your __RadMap__ you have to set the following of it
 
 Here is an example:
 
-#### __XAML__
-{{region radmap-features-map-shapes_2}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
 	        Height="480">
@@ -122,7 +122,7 @@ Here is an example:
 	                    StrokeThickness="2" />
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Ellipse](images/RadMap_Features_MapShapes_03.png)
 
@@ -130,8 +130,8 @@ Here is an example:
 
 The only difference between the standard __Polyline__ and the __MapPolyline__ is that the __Points__ property of the __MapPolyline__ is a set of __Locations__. Here is an example:
 
-#### __XAML__
-{{region radmap-features-map-shapes_3}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
 	        Height="480">
@@ -141,7 +141,7 @@ The only difference between the standard __Polyline__ and the __MapPolyline__ is
 	                        StrokeThickness="2" />
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Polyline](images/RadMap_Features_MapShapes_04.png)
 
@@ -149,8 +149,8 @@ The only difference between the standard __Polyline__ and the __MapPolyline__ is
 
 The only difference between the standard __Polygon__ and the __MapPolygon__ is that the __Points__ property of the __MapPolygon__ is a set of __Locations__. Here is an example:
 
-#### __XAML__
-{{region radmap-features-map-shapes_4}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap" Width="600" Height="480">
 		<telerik:InformationLayer>
 			<telerik:MapPolygon Points="56,-100 56,-108 48,-108 48,-100"
@@ -166,7 +166,7 @@ The only difference between the standard __Polygon__ and the __MapPolygon__ is t
 			</telerik:MapPolygon>
 		</telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Polygon](images/RadMap_Features_MapShapes_05.png)
 
@@ -174,8 +174,8 @@ The only difference between the standard __Polygon__ and the __MapPolygon__ is t
 
 Except the __MapPath__ class you also have an analog for each standard __Geometry__ or __Segment__ class. Here is an example of an __MapPath__ that uses __MapArcSegments.__
 
-#### __XAML__
-{{region radmap-features-map-shapes_5}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	        Width="600"
 	        Height="480">
@@ -208,7 +208,7 @@ Except the __MapPath__ class you also have an analog for each standard __Geometr
 	        </telerik:MapPath>
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMap InformationLayer Map Path](images/RadMap_Features_MapShapes_06.png)
 

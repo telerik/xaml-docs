@@ -18,8 +18,7 @@ The following example demonstrates how to create a hierarchical data source and 
 
 1. Create a new class and name it __MyViewModel__:					  
 
-	#### __C#__
-	{{region cs-howto-display-hierarchical-data_0}}
+	```C#
 		public class MyViewModel
 		{
 		    public MyViewModel()
@@ -31,10 +30,8 @@ The following example demonstrates how to create a hierarchical data source and 
 		    public double Price { get; set; }
 		    public IList<object> RelatedItems { get; set; }
 		}
-	{{endregion}}
-
-	#### __VB.NET__
-	{{region vb-howto-display-hierarchical-data_1}}
+	```
+	```VB.NET
 		Public Class MyViewModel
 		    Public Sub New()
 		        Me.RelatedItems = New ObservableCollection(Of Object)()
@@ -76,7 +73,7 @@ The following example demonstrates how to create a hierarchical data source and 
 		    End Property
 		    Private _RelatedItems As IList(Of Object)
 		End Class
-	{{endregion}}
+	```
 
 	The class has four properties:							  
 
@@ -87,9 +84,8 @@ The following example demonstrates how to create a hierarchical data source and 
 	* Property __Title__ which is of type string.
 
 	* Property __RelatedItems__ which is a collection of objects. These are the child items. Add a static method to the class which aims to create some mock-up data:
-
-		#### __C#__
-		{{region cs-howto-display-hierarchical-data_2}}
+		
+		```C#
 			public static IList<object> GenerateItems()
 			{
 			    var result = new ObservableCollection<object>();
@@ -111,10 +107,8 @@ The following example demonstrates how to create a hierarchical data source and 
 			    }
 			    return result;
 			}
-	{{endregion}}
-		
-		#### __VB.NET__
-		{{region vb-howto-display-hierarchical-data_3}}
+		```
+		```VB.NET
 			Public Shared Function GenerateItems() As IList(Of Object)
 			    Dim result = New ObservableCollection(Of Object)()
 			    For Each num In Enumerable.Range(1, 5)
@@ -133,34 +127,11 @@ The following example demonstrates how to create a hierarchical data source and 
 			    Next
 			    Return result
 			End Function
-	{{endregion}}	
+		```	
 		
 1. Declare a __HierarchicalDataTemplate__ 
-
-	{% if site.site_name == 'Silverlight' %}
-	#### __XAML__
-	{{region xaml-howto-display-hierarchical-data_4}}
-		<UserControl.Resources>
-		    <DataTemplate x:Key="PanelBarItemTemplate">
-		        <StackPanel>
-		            <TextBlock Text="{Binding Title}"/>
-		            <TextBlock Text="{Binding DateCreated}"/>
-		            <TextBlock Text="{Binding Price}"/>
-		        </StackPanel>
-		    </DataTemplate>
-		
-		    <HierarchicalDataTemplate x:Key="PanelBarHeaderTemplate"
-		                               ItemsSource="{Binding RelatedItems}"
-		                               ItemTemplate="{StaticResource PanelBarItemTemplate}">
-		        <TextBlock Text="{Binding Title}" />
-		    </HierarchicalDataTemplate>
-		</UserControl.Resources>
-	{{endregion}}
-	{% endif %}
-
-	{% if site.site_name == 'WPF' %}
-	#### __XAML__
-	{{region xaml-howto-display-hierarchical-data_5}}
+	
+	```XAML
 		<Window.Resources>
 		    <DataTemplate x:Key="PanelBarItemTemplate">
 		        <StackPanel>
@@ -176,29 +147,24 @@ The following example demonstrates how to create a hierarchical data source and 
 		        <TextBlock Text="{Binding Title}" />
 		    </HierarchicalDataTemplate>
 		</Window.Resources>
-	{{endregion}}
-	{% endif %}
+	```
 
 1. Define the __RadPanelBar__ and set its __ItemTemplate__ property					  
 
-	#### __XAML__
-	{{region xaml-howto-display-hierarchical-data_6}}
+	```XAML
 		<telerik:RadPanelBar x:Name="radPanelBar" Width="200" 
 		               HorizontalAlignment="Center" VerticalAlignment="Top"
 		               ItemTemplate="{StaticResource PanelBarHeaderTemplate}">
 		</telerik:RadPanelBar>
-	{{endregion}}
+	```
 
 1. Set the __ItemsSource__ property of the __RadPanelBar__
 
-	#### __C#__
-	{{region cs-howto-display-hierarchical-data_7}}
+	```C#
 		this.radPanelBar.ItemsSource = MyViewModel.GenerateItems();
-	{{endregion}}
-
-	#### __VB.NET__
-	{{region vb-howto-display-hierarchical-data_8}}
-	Me.radPanelBar.ItemsSource = MyViewModel.GenerateItems()
-{{endregion}}
+	```
+	```VB.NET
+		Me.radPanelBar.ItemsSource = MyViewModel.GenerateItems()
+	```
 
 	![{{ site.framework_name }} RadPanelBar Hierarchical Data](images/PanelBar_HierarchicalData.png)

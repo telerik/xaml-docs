@@ -21,9 +21,9 @@ This tutorial will demonstrate how to use a **RadContextMenu** to add functional
 
 To start, first define a RadGridView, which will display a list of __Employee__ objects.
 
-#### __[XAML] Example 1: RadGridView definition__
+__Example 1: RadGridView definition__
 
-{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding FirstName}" Header="First Name"/>
@@ -32,15 +32,15 @@ To start, first define a RadGridView, which will display a list of __Employee__ 
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding IsMarried}" Header="Married"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 ## Attach RadContextMenu to RadGridView
 
 In order to add a RadContextMenu to the RadGridView control, you have to just set the __RadContextMenu.ContextMenu__ attached property.
 
-#### __[XAML] Example 2: Add RadContextMenu to RadGridView__
+__Example 2: Add RadContextMenu to RadGridView__
 
-{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_1}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView1" AutoGenerateColumns="False">
 	    <telerik:RadContextMenu.ContextMenu>
 	        <telerik:RadContextMenu x:Name="GridContextMenu" />
@@ -52,15 +52,15 @@ In order to add a RadContextMenu to the RadGridView control, you have to just se
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding IsMarried}" Header="Married"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 ## Configure the ItemContainerStyle for RadContextMenu
 
 The __RadContextMenu__ will be populated with dynamic data, so you have to prepare an __ItemContainerStyle__ that will display this data. The business object that will represent the data is defined in **Example 3**.
 
-#### __[C#] Example 3: The MenuItem class__
+__Example 3: The MenuItem class__
 
-{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_2}}
+```C#
 	public class MenuItem : INotifyPropertyChanged
 	{
 	    private bool isEnabled = true;
@@ -124,11 +124,8 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: The MenuItem class__
-
-{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_3}}
+```
+```VB.NET
 	Public Class MenuItem
 	    Implements INotifyPropertyChanged
 	
@@ -179,19 +176,19 @@ The __RadContextMenu__ will be populated with dynamic data, so you have to prepa
 	
 	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 Here is the __ItemContainerStyle__:
 
-#### __[XAML] Example 4: The ItemContainerStyle__
+__Example 4: The ItemContainerStyle__
 
-{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_4}}
+```XAML
 	<Style x:Key="MenuItemContainerStyle" TargetType="telerik:RadMenuItem">
 	    <Setter Property="Header" Value="{Binding Text}"/>
 	    <Setter Property="ItemsSource" Value="{Binding SubItems}"/>
 	    <Setter Property="IsEnabled" Value="{Binding IsEnabled}"/>
 	</Style>
-{{endregion}}
+```
 
 ## Display Different Menu Items Depending on Which RadGridView Part Is Clicked
 
@@ -229,25 +226,22 @@ The __RadContextMenu__ should display different items, depending on which part o
 
 As you can see, two data sources have to be provided for the __RadContextMenu__ - one when a header is clicked and a separate one when a row is clicked. For that purpose, create two collection fields in your __UserControl__ as demonstrated in **Example 5**.
 
-#### __[C#] Example 5: The two MenuItem collections__
+__Example 5: The two MenuItem collections__
 
-{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_7}}
+```C#
 	private ObservableCollection<MenuItem> headerContextMenuItems;
 	private ObservableCollection<MenuItem> rowContextMenuItems;
-{{endregion}}
-
-#### __[VB.NET] Example 5: The two MenuItem collections__
-
-{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_8}}
+```
+```VB.NET
 	Private headerContextMenuItems As ObservableCollection(Of MenuItem)
 	Private rowContextMenuItems As ObservableCollection(Of MenuItem)
-{{endregion}}
+```
 
 Now, initialize them by using methods similar to the ones demonstrated in **Example 6**.
 
-#### __[C#] Example 6: The helper methods to populate the RadContextMenu__
+__Example 6: The helper methods to populate the RadContextMenu__
 
-{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_9}}
+```C#
 	public RadGridViewIntegration()
 	{
 	    InitializeComponent();
@@ -296,11 +290,8 @@ Now, initialize them by using methods similar to the ones demonstrated in **Exam
 	    headerItems.Add(moveRightItem);
 	    this.headerContextMenuItems = headerItems;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: The helper methods to populate the RadContextMenu__
-
-{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_10}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.radGridView.ItemsSource = EmployeeService.GetEmployees()
@@ -344,13 +335,13 @@ Now, initialize them by using methods similar to the ones demonstrated in **Exam
 	    headerItems.Add(moveRightItem)
 	    Me.headerContextMenuItems = headerItems
 	End Sub
-{{endregion}}
+```
 
 Next you will need two properties that will return the clicked row and the clicked header. Define them in your __UserControl__ as follows by using the [GetClickedElement]({%slug radcontextmenu-features-working-with-radcontext-menu%}#get-the-clicked-element) method.
 
-#### __[C#] Example 7: The ClickedHeader and ClickedRow helper properties__
+__Example 7: The ClickedHeader and ClickedRow helper properties__
 
-{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_11}}
+```C#
 	private GridViewHeaderCell ClickedHeader
 	{
 	    get
@@ -365,11 +356,8 @@ Next you will need two properties that will return the clicked row and the click
 	        return this.GridContextMenu.GetClickedElement<GridViewRow>();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: The ClickedHeader and ClickedRow helper properties__
-
-{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_12}}
+```
+```VB.NET
 	Private ReadOnly Property ClickedHeader() As GridViewHeaderCell
 	    Get
 	        Return Me.GridContextMenu.GetClickedElement(Of GridViewHeaderCell)()
@@ -380,21 +368,21 @@ Next you will need two properties that will return the clicked row and the click
 	        Return Me.GridContextMenu.GetClickedElement(Of GridViewRow)()
 	    End Get
 	End Property
-{{endregion}}
+```
 
 The last thing to do is to attach an event handler to the __Opened__ event of the __RadContextMenu__. There you can implement the logic around changing the __ItemsSource__ of the __RadContextMenu__ depending on the clicked element.
 
-#### __[XAML] Example 8: Attach the Opened event handler__
+__Example 8: Attach the Opened event handler__
 
-{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_13}}
+```XAML
 	<telerik:RadContextMenu x:Name="GridContextMenu2"
 	                        ItemContainerStyle="{StaticResource MenuItemContainerStyle}"
 	                        Opened="GridContextMenu_Opened" />
-{{endregion}}
+```
 
-#### __[C#] Example 9: The Opened event handler definition__
+__Example 9: The Opened event handler definition__
 
-{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_14}}
+```C#
 	private void GridContextMenu_Opened(object sender, RoutedEventArgs e)
 	{
 	    if (this.ClickedHeader != null)
@@ -422,11 +410,8 @@ The last thing to do is to attach an event handler to the __Opened__ event of th
 	        this.GridContextMenu.ItemsSource = this.rowContextMenuItems;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 9: The Opened event handler definition__
-
-{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_15}}
+```
+```VB.NET
 	Private Sub GridContextMenu_Opened(sender As Object, e As RoutedEventArgs)
 	    If Me.ClickedHeader IsNot Nothing Then
 	        Me.GridContextMenu.ItemsSource = Me.headerContextMenuItems
@@ -445,7 +430,7 @@ The last thing to do is to attach an event handler to the __Opened__ event of th
 	        Me.GridContextMenu.ItemsSource = Me.rowContextMenuItems
 	    End If
 	End Sub
-{{endregion}}
+```
 
 The result once you click on a row or header is illustrated in **Figure 1**.
 
@@ -457,18 +442,18 @@ The result once you click on a row or header is illustrated in **Figure 1**.
 
 The last thing to do in this tutorial is to [handle the menu items' actions]({%slug radcontextmenu-how-to-handle-item-clicks%}). For this purpose, attach an event handler to the __ItemClick__ event of the __RadContextMenu__. In it, get the clicked item and, depending on its value, execute the appropriate code.
 
-#### __[XAML] Example 10: Attach the ItemClick event handler__
+__Example 10: Attach the ItemClick event handler__
 
-{{region xaml-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_16}}
+```XAML
 	<telerik:RadContextMenu x:Name="GridContextMenu3"
 	                        ItemContainerStyle="{StaticResource MenuItemContainerStyle}"
 	                        Opened="GridContextMenu_Opened"
 	                        ItemClick="GridContextMenu_ItemClick" />
-{{endregion}}
+```
 
-#### __[C#] Example 11: The ItemClick event handler definition__
+__Example 11: The ItemClick event handler definition__
 
-{{region cs-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_17}}
+```C#
 	private void GridContextMenu_ItemClick(object sender, Telerik.Windows.RadRoutedEventArgs e)
 	{
 	    MenuItem item = (e.OriginalSource as RadMenuItem).DataContext as MenuItem;
@@ -512,11 +497,8 @@ The last thing to do in this tutorial is to [handle the menu items' actions]({%s
 	            break;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 11: The ItemClick event handler definition__
-
-{{region vb-radcontextmenu-how-to-use-radcontextmenu-with-radgridview_18}}
+```
+```VB.NET
 	Private Sub GridContextMenu_ItemClick(sender As Object, e As Telerik.Windows.RadRoutedEventArgs)
 	    Dim item As MenuItem = TryCast((TryCast(e.OriginalSource, RadMenuItem)).DataContext, MenuItem)
 	    Select Case item.Text
@@ -556,7 +538,7 @@ The last thing to do in this tutorial is to [handle the menu items' actions]({%s
 	            Exit Select
 	    End Select
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

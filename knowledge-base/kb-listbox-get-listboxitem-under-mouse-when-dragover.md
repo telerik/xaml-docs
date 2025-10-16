@@ -32,14 +32,14 @@ How to get the RadListBoxItem element under the mouse when __DragDropManager.Dra
 
 In the DragOver or Drop event handler, get the OriginalSource of the event arguments. This is the element under the mouse. From it, you can use the ParentOfType<T> method to get the RadListBoxItem.
 
-#### __[C#]__
-{{region kb-listbox-get-listboxitem-under-mouse-when-dragover}}
+
+```C#
 	private void OnRadListBoxDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 		var elementUnderMouse = (FrameworkElement)e.OriginalSource;
 		var item = elementUnderMouse.ParentOfType<RadListBoxItem>();		
 	}
-{{endregion}}
+```
 
 Note that if you don't data bind the ItemsSource of RadListBox, the OriginalSource of the event arguments might be the RadListBoxItem itself.
 

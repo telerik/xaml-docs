@@ -16,15 +16,15 @@ This article shows how to customize the appearance of the RadTabControl's tab it
 
 The orientation of the tab items can be switched using the __TabOrientation__ property of RadTabControl. The supported orientations are __Horizontal__ and __Vertical__. The tabs are oriented horizontally by default.
 
-#### __[XAML] Example 1: Setting tab orientation__
-{{region radtabcontrol-appearance-customizing-tab-items-0}}
+__Example 1: Setting tab orientation__
+```XAML
 	<telerik:RadTabControl TabOrientation="Vertical">
 		<telerik:RadTabItem Header="Home" Content="Home content" />
 		<telerik:RadTabItem Header="View" Content="View content"/>
 		<telerik:RadTabItem Header="Insert" Content="Insert content"/>
 		<telerik:RadTabItem Header="Settings" Content="Settings content" />
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTabControl Tab Orientation Vertical](images/radtabcontrol-appearance-customizing-tab-items-0.png)
 
@@ -32,15 +32,15 @@ The orientation of the tab items can be switched using the __TabOrientation__ pr
 
 The size and spacing of the RadTabItem elements can be modified using the __Width__, __Height__, __Margin__ and __Padding__ properties inherited from the FrameworkElement base class.
 
-#### __[XAML] Example 2: Setting sizing and spacing of tab items__
-{{region radtabcontrol-appearance-customizing-tab-items-1}}
+__Example 2: Setting sizing and spacing of tab items__
+```XAML
 	<telerik:RadTabControl>
 		<telerik:RadTabItem Header="Home" Content="Home content" Margin="10 0 0 0" Width="150" Height="100"/>
 		<telerik:RadTabItem Header="View" Content="View content" Margin="10 0 0 0"/>
 		<telerik:RadTabItem Header="Insert" Content="Insert content" Margin="10 0 0 0"/>
 		<telerik:RadTabItem Header="Settings" Content="Settings content" Margin="10 0 0 0"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 >The Height setting of the RadTabItem will stretch the entire tabstrip area.
 
@@ -50,8 +50,8 @@ The size and spacing of the RadTabItem elements can be modified using the __Widt
 
 The RadTabItem elements can be customized using a single Style object. The Style is applied using the __ItemContainerStyle__ property of RadTabControl.
 
-#### __[XAML] Example 3: Setting ItemContainerStyle__
-{{region radtabcontrol-appearance-customizing-tab-items-2}}
+__Example 3: Setting ItemContainerStyle__
+```XAML
 	<telerik:RadTabControl>
 		<telerik:RadTabControl.ItemContainerStyle>
 			<Style TargetType="telerik:RadTabItem">
@@ -65,7 +65,7 @@ The RadTabItem elements can be customized using a single Style object. The Style
 		<telerik:RadTabItem Header="Insert" Content="Insert content"/>
 		<telerik:RadTabItem Header="Settings" Content="Settings content"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTabControl Tab Items with Close Button](images/radtabcontrol-appearance-customizing-tab-items-2.png)
 
@@ -77,17 +77,17 @@ The template of the RadTabItems can be customized using the __ItemTemplate__ pro
 
 The following example shows how to setup a basic model, populate RadTabControl with data and customize the template of the tabs.
 
-#### __[C#] Example 4: Defining tab model__
-{{region radtabcontrol-appearance-customizing-tab-items-3}}
+__Example 4: Defining tab model__
+```C#
 	public class TabInfo
     {
         public string Header { get; set; }
         public string Content { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 5: Populating the control with data__
-{{region radtabcontrol-appearance-customizing-tab-items-4}}
+__Example 5: Populating the control with data__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent();
@@ -99,10 +99,10 @@ The following example shows how to setup a basic model, populate RadTabControl w
 		   new TabInfo() { Header = "Settings", Content="Settings content" }
 		};
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 6: Setting up the ItemTemplate__
-{{region radtabcontrol-appearance-customizing-tab-items-5}}
+__Example 6: Setting up the ItemTemplate__
+```XAML
 	<telerik:RadTabControl ItemsSource="{Binding}">
 		<telerik:RadTabControl.ItemTemplate>
 			<DataTemplate>
@@ -117,14 +117,14 @@ The following example shows how to setup a basic model, populate RadTabControl w
 			</DataTemplate>
 		</telerik:RadTabControl.ContentTemplate>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTabControl Custom Italic Item Template](images/radtabcontrol-appearance-customizing-tab-items-3.png)
 
 The ItemTemplate is inherited by the __HeaderTemplate__ property of each RadTabItem. The HeaderTemplate property can be used as an alternative of the ItemTemplate.
 
-#### __[XAML] Example 7: Setting HeaderTemplate__
-{{region radtabcontrol-appearance-customizing-tab-items-6}}
+__Example 7: Setting HeaderTemplate__
+```XAML
 	<Grid>
 		<Grid.Resources>
 			<DataTemplate x:Key="TabHeaderTemplate">
@@ -138,7 +138,7 @@ The ItemTemplate is inherited by the __HeaderTemplate__ property of each RadTabI
 			<telerik:RadTabItem Header="Settings" Content="Settings content"/>
 		</telerik:RadTabControl>
 	</Grid>
-{{endregion}} 
+``` 
 
 The ItemTemplate and HeaderTemplate have corresponding DataTemplateSelector alternatives - the __ItemTemplateSelector__ and __HeaderTemplateSelector__ properties - that allow you to choose the DataTemplate based on a custom condition. Read how to implement a `DataTemplateSelector` in the corresponding [MSDN article](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.5).
 
@@ -148,9 +148,9 @@ The ItemTemplate and HeaderTemplate have corresponding DataTemplateSelector alte
 
 To change the background of the area behind the tab items (the [tabstrip]({%slug radtabcontrol-visual-structure%})), set the __HeaderBackground__ property of RadTabControl.
 
-#### __[XAML] Example 8: Setting HeaderBackground__
-{{region radtabcontrol-appearance-customizing-tab-items-7}}
+__Example 8: Setting HeaderBackground__
+```XAML
 	<telerik:RadTabControl HeaderBackground="#F6DC9D" />
-{{endregion}} 
+``` 
 
 ![{{ site.framework_name }} RadTabControl TabStrip Background](images/radtabcontrol-appearance-customizing-tab-items-4.png)

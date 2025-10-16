@@ -49,9 +49,9 @@ __AxisY.ExtendDirection__ is of type __AxisExtendDirection__ and has the followi
 
 In the example below you can see how changing the __ExtensionDirection__ properties reflects the charts. Also, notice the result when __MinorTickPointMultiplier__ is set to 5.
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-Y-axis_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -69,13 +69,13 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-Y-axis_1}}
+
+```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	//....
 	radChart.DefaultView.ChartArea.AxisY.MinorTicksVisibility = Visibility.Visible;
@@ -84,13 +84,8 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0";
 	radChart.DefaultView.ChartArea.AxisY.Title="Ampere [A]";
 	//....
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-Y-axis_2}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
 	radChart.DefaultView.ChartArea.AxisY.MinorTicksVisibility = Visibility.Visible
@@ -99,7 +94,7 @@ In the example below you can see how changing the __ExtensionDirection__ propert
 	radChart.DefaultView.ChartArea.AxisY.DefaultLabelFormat = "0"
 	radChart.DefaultView.ChartArea.AxisY.Title = "Ampere [A]"
 	'....'
-{{endregion}}
+```
 
 
 

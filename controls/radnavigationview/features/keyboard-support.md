@@ -41,9 +41,9 @@ This section describes the keyboard shortcuts supported by __RadNavigationView__
 
 In order to customize the behavior for a given shortcut or introduce custom behavior, the __HandleKeyDown__ virtual method can be overriden. __Example 1__ demonstrates how this can be done in order to prevent the closing of the Navigation Pane when the Escape key is hit.
 
-#### __[C#] Example 1: Overriding the RadNavigationView behavior for the Escape key__
+__Example 1: Overriding the RadNavigationView behavior for the Escape key__
 
-{{region cs-radnavigationview-features-keyboard-support-0}}
+```C#
 	public class CustomNavigationView : RadNavigationView
     {
         protected override bool HandleKeyDown(Key key)
@@ -56,11 +56,8 @@ In order to customize the behavior for a given shortcut or introduce custom beha
             return base.HandleKeyDown(key);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Overriding the RadNavigationView behavior for the Escape key__
-
-{{region vb-radnavigationview-features-keyboard-support-1}}
+```
+```VB.NET
 	Public Class CustomNavigationView
 	    Inherits RadNavigationView
 
@@ -72,16 +69,16 @@ In order to customize the behavior for a given shortcut or introduce custom beha
 			Return MyBase.HandleKeyDown(key)
 		End Function
     End Class
-{{endregion}}
+```
 
 ## Keyboard Navigation Selection
 
 By default, when the user is navigating through the RadNavigationViewItems with the keyboard, they are only highlighted, but not selected. However, you can change this behavior by setting the __CanKeyboardNavigationSelectItems__ property of the RadNavigationView to __True__. This way the RadNavigationViewItems will be selected when navigating through them.
 
-#### __[XAML] Example 1: Setting the CanKeyboardNavigationSelectItems property__
-{{region xaml-radnavigationview-features-keyboard-support-2}}
+__Example 1: Setting the CanKeyboardNavigationSelectItems property__
+```XAML
 	 <telerik:RadNavigationView CanKeyboardNavigationSelectItems="True" />
-{{endregion}}
+```
 
 ## See Also
 

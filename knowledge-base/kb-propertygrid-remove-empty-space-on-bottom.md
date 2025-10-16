@@ -35,9 +35,9 @@ To remove the white space, set the __VerticalAlignment__ of RadPropertyGrid to _
 
 To remove the gray space, set the __DescriptionPanelVisibility__ property to __Collapsed__.
 
-#### __[XAML]__
-{{region kb-propertygrid-remove-empty-space-on-bottom-0}}
+
+```XAML
 	<telerik:RadPropertyGrid DescriptionPanelVisibility="Collapsed"  VerticalAlignment="Top" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadPropertyGrid Remove Empty Space](images/kb-propertygrid-remove-empty-space-on-bottom-0.png)

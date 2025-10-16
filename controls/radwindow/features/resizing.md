@@ -24,19 +24,16 @@ Here is an example of a __RadWindow__ that can be resized, minimized or maximize
 
 >It's not a good practice do declare your __RadWindow__ as visual element in XAML. The only scenario, when it is meaningful to use the __RadWindow__ in XAML, is when it represents the entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __C#__
 
-{{region cs-radwindow-features-resizing_0}}
+
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.ResizeMode = ResizeMode.NoResize;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-resizing_1}}
+```
+```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.ResizeMode = ResizeMode.NoResize
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadWindow Resize Mode No Resize](images/RadWindow_Features_Resizing_01.png)
 

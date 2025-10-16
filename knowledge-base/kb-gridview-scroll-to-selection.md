@@ -24,8 +24,8 @@ To do that, you can use the `SelectionChanged` event of `RadGridView`. In the ev
 
 This approach can be wrapped in an attached property that can be re-used in multiple `RadGridView` instances.
 
-#### __[C#]__
-{{region kb-gridview-scroll-to-selection-0}}
+
+```C#
 	public class GridViewUtilities
 	{
 		public static readonly DependencyProperty ScrollSelectedIntoViewProperty =
@@ -75,9 +75,9 @@ This approach can be wrapped in an attached property that can be re-used in mult
 			}
 		} 
 	}
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region kb-gridview-scroll-to-selection-1}}
+
+```XAML
 	<telerik:RadGridView local:GridViewUtilities.ScrollSelectedIntoView="True"/>
-{{endregion}}
+```

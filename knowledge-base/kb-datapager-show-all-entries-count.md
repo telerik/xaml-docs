@@ -38,8 +38,8 @@ How to show the total count of all items in the RadDataPager control in a RadGri
 
 5. Set the newly added element to the second column via the Grid.SetColumn method and add it to the `Children` collection of the Grid panel.
 
-#### __[C#] Sample implementation__
-{{region kb-datapager-show-all-entries-count-0}}
+__Sample implementation__
+```C#
     private void RadDataPager_Loaded(object sender, RoutedEventArgs e)
     {
         RadDataPager radDataPager = (RadDataPager)sender;
@@ -77,10 +77,8 @@ How to show the total count of all items in the RadDataPager control in a RadGri
             gridPanel.Children.Add(totalInfoPanel);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Sample implementation__
-{{region kb-datapager-show-all-entries-count-1}}
+```
+```VB.NET
     Private Sub RadDataPager_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
         Dim radDataPager As RadDataPager = CType(sender, RadDataPager)
         Dim gridPanel As Grid = radDataPager.ChildrenOfType(Of Grid)().FirstOrDefault()
@@ -109,7 +107,7 @@ How to show the total count of all items in the RadDataPager control in a RadGri
             gridPanel.Children.Add(totalInfoPanel)
         End If
     End Sub
-{{endregion}}
+```
 
 __RadDataPager displaying the total items count__
 

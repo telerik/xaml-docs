@@ -16,8 +16,8 @@ The timeline items in a RadTimeline control can be displayed in groups. Addition
  
 In order to demonstrate the Grouping feature of the control, we will define a model and a viewmodel as demonstrated in __Example 1__.
 
-#### __[C#] Example 1: Defining the model and viewmodel__
-{{region cs-radtimeline-features-grouping-0}}
+__Example 1: Defining the model and viewmodel__
+```C#
 	public class RadTimelineDataItem
 	{
 		public DateTime StartDate { get; set; }
@@ -62,10 +62,8 @@ In order to demonstrate the Grouping feature of the control, we will define a mo
             this.TimelineItems = items;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the model and viewmodel__
-{{region vb-radtimeline-features-grouping-1}}
+```
+```VB.NET
 	Public Class RadTimelineDataItem
 		Public Property StartDate() As Date
 
@@ -111,7 +109,7 @@ In order to demonstrate the Grouping feature of the control, we will define a mo
 			Me.TimelineItems = items
 		End Sub
 	End Class
-{{endregion}}
+```
 
 ## Group Expand Modes
 
@@ -121,8 +119,8 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 
 * __None (Default)__: A value of __None__ indicates that the groups of timeline items are expanded by default and cannot be collapsed.       
 
-	#### __[XAML] Example 2: Setting the GroupExpandMode property to None__
-	{{region xaml-radtimeline-features-grouping-2}}
+	__Example 2: Setting the GroupExpandMode property to None__
+	```XAML
 		<!-- GroupPath is specified and GroupExpandMode is set to None -->
 		<Grid>
 			<Grid.DataContext>
@@ -145,15 +143,15 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 				</telerik:RadTimeline.Intervals>
 			</telerik:RadTimeline>
 		</Grid>
-	{{endregion}}
+	```
 
 	#### __Figure 1: Result from Example 2__
 	![Rad Timeline-features-grouping-0-Group Expand Mode-None](images/RadTimeline-features-grouping-0-GroupExpandMode-None.jpg)
 
 * __Single__: A value of __Single__ indicates that only one group of timeline items can be expanded at a time. By default, all groups of timeline items are collapsed in this mode.              
 
-	#### __[XAML] Example 3: Setting the GroupExpandMode to Single__
-	{{region xaml-radtimeline-features-grouping-3}}
+	__Example 3: Setting the GroupExpandMode to Single__
+	```XAML
 		<!-- GroupPath is specified and GroupExpandMode is set to Single -->
 		<Grid>
 			<Grid.DataContext>
@@ -176,15 +174,15 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 				</telerik:RadTimeline.Intervals>
 			</telerik:RadTimeline>
 		</Grid>
-	{{endregion}}
+	```
 
 	#### __Figure 2: Result from Example 3__
 	![Rad Timeline-features-grouping-1-Group Expand Mode-Single](images/RadTimeline-features-grouping-1-GroupExpandMode-Single.jpg)
 
 * __Multiple__: A value of __Multiple__ indicates that multiple groups of timeline items can be expanded at a time. By default, all groups of timeline items are collapsed in this mode.      
 
-	#### __[XAML] Example 4: Setting the GroupExpandMode to Multiple__
-	{{region xaml-radtimeline-features-grouping-4}}
+	__Example 4: Setting the GroupExpandMode to Multiple__
+	```XAML
 		<!-- GroupPath is specified and GroupExpandMode is set to Multiple -->
 		<Grid>
 			<Grid.DataContext>
@@ -207,7 +205,7 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 				</telerik:RadTimeline.Intervals>
 			</telerik:RadTimeline>
 		</Grid>
-	{{endregion}}
+	```
 
 	#### __Figure 2: Result from Example 4__
 	![Rad Timeline-features-grouping-2-Group Expand Mode-Multiple](images/RadTimeline-features-grouping-2-GroupExpandMode-Multiple.jpg)
@@ -218,30 +216,30 @@ Through the __GroupExpandMode__ property of the RadTimeline, you can control whe
 
 By default, the groups of timeline items are collapsed when the __GroupExpandMode__ is set to either Single or Multiple. You can use the following style to change this default state:        
 
-#### __[XAML] Example 5: Setting the IsExpanded property of the TimelineItemGroupControl through a style__
-{{region xaml-radtimeline-features-grouping-4}}
+__Example 5: Setting the IsExpanded property of the TimelineItemGroupControl through a style__
+```XAML
 	<!-- If you don't use NoXAML dlls you don't need the BasedOn setting. See the note in the begining of this help section. -->
     <Window.Resources>
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="True" />
 	</Style>
     </Window.Resources>
-{{endregion}}
+```
 
 In order to change the default state of specific groups of timeline items, you can use a converter:        
 
-#### __[XAML] Example 6: Setting the IsExpanded property of the TimelineItemGroupControl with a converter__
-{{region xaml-radtimeline-features-grouping-5}}
+__Example 6: Setting the IsExpanded property of the TimelineItemGroupControl with a converter__
+```XAML
 	<!-- If you don't use NoXAML dlls you don't need the BasedOn setting. See the note in the begining of this help section. -->
     <Window.Resources>
 	<Style TargetType="telerik:TimelineItemGroupControl" BasedOn="{StaticResource TimelineItemGroupControlStyle}">
 	    <Setter Property="IsExpanded" Value="{Binding GroupKey, Converter={StaticResource groupKeyToIsExpandedConverter}}" />
 	</Style>
     </Window.Resources>
-{{endregion}}
+```
 
-#### __[C#] Example 7: Defining the GroupKeyToIsExpandedConverter__
-{{region cs-radtimeline-features-grouping-6}}
+__Example 7: Defining the GroupKeyToIsExpandedConverter__
+```C#
 	public class GroupKeyToIsExpandedConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -259,10 +257,8 @@ In order to change the default state of specific groups of timeline items, you c
 	        throw new NotImplementedException();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: Defining the GroupKeyToIsExpandedConverter__
-{{region vb-radtimeline-features-grouping-7}}
+```
+```VB.NET
 	Public Class GroupKeyToIsExpandedConverter
 		Implements IValueConverter
 		Public Function Convert(value As Object, targetType As Type, parameter As Object, culture As CultureInfo) As Object
@@ -279,4 +275,4 @@ In order to change the default state of specific groups of timeline items, you c
 			Throw New NotImplementedException()
 		End Function
 	End Class
-{{endregion}}
+```

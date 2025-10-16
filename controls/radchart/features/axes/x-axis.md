@@ -48,9 +48,9 @@ __AxisX.Step__ and __AxisX.LabelStep__ are related:
 
 Here is an example for a __RadChart__ that makes use of the __Step__, __LabelStep__, __StepLableLevelCount__, __StepLabelLevelHeight__:
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-X-axis_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -81,13 +81,13 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-X-axis_1}}
+
+```C#
 	//....
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = false;
 	radChart.DefaultView.ChartArea.AxisX.MinValue = new DateTime( 2009, 1, 1 ).ToOADate();
@@ -97,13 +97,8 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
 	//....
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-X-axis_2}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = True
 	radChart.DefaultView.ChartArea.AxisX.Step = 5
@@ -119,7 +114,7 @@ Here is an example for a __RadChart__ that makes use of the __Step__, __LabelSte
 	sm.ItemMappings.Add(New ItemMapping("Date", DataPointMember.XValue))
 	sm.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	radChart.SeriesMappings.Add(sm)
-{{endregion}}
+```
 
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_x_axis_01a.png)
@@ -130,9 +125,9 @@ When __AutoRange__ is __False__, __TickDistance__ is omitted, because in this ca
 
 The following example demonstrates how to customize the __X-Axis__. The chart is bound (see [Data Binding Support Overview]({%slug radchart-populating-with-data-data-binding-support-overview%}) or [Data Binding with Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}) for more about data binding) to a list of business objects with two properties: __Date__ and __Value__ - of type __DateTime__ and __decimal__ respectively. The list contains data for a three months period.
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-X-axis_3}}
+
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping>
@@ -161,13 +156,13 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-X-axis_4}}
+
+```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = true;
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
@@ -179,13 +174,8 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 	sm.ItemMappings.Add( new ItemMapping( "Date", DataPointMember.XValue ) );
 	sm.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
 	radChart.SeriesMappings.Add( sm );
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-X-axis_5}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = True
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45
@@ -198,7 +188,7 @@ The following example demonstrates how to customize the __X-Axis__. The chart is
 	sm.ItemMappings.Add(New ItemMapping("Date", DataPointMember.XValue))
 	sm.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	radChart.SeriesMappings.Add(sm)
-{{endregion}}
+```
 
 
 
@@ -209,9 +199,9 @@ When __AutoRange__ is __True__, __RadChart__ calculates the __MinValue__, __MaxV
 
 However, the chart above could be improved if a bit more ticks are shown. When __AutoRange__ is __True__, then you can control the number of the ticks by playing with the __TickDistance__ property. This property allows you to specify at least how many pixels you want to have between two ticks. Thus, decreasing the tick distance, more ticks could be placed on the axis. If the axis looks overcrowded, increase __TickDistance__ value to reduce the number.
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-X-axis_6}}
+
+```XAML
 	<!--  ....  -->
 	<telerik:ChartArea.AxisX>
 	    <telerik:AxisX AutoRange="True"
@@ -221,27 +211,22 @@ However, the chart above could be improved if a bit more ticks are shown. When _
 	                   TicksDistance="15" />
 	</telerik:ChartArea.AxisX>
 	<!--  ....  -->
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-X-axis_7}}
+
+```C#
 	//....
 	radChart.DefaultView.ChartArea.AxisX.TicksDistance = 15;
 	//....
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-X-axis_8}}
+```
+```VB.NET
 	'....'
 	radChart.DefaultView.ChartArea.AxisX.TicksDistance = 15
 	'....'
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_x_axis_30.png)
 
@@ -249,9 +234,9 @@ As you can see, the number of the ticks is increased and the chart looks much be
 
 The same results you can achieve by setting the __AutoRange__ to __False__ and define __MinValue__, __MaxValue__ and __Step.__
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-X-axis_9}}
+
+```XAML
 	<!--  ...  -->
 	<telerik:ChartArea.AxisX>
 	    <telerik:AxisX AutoRange="False"
@@ -264,13 +249,13 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 	                   Step="5" />
 	</telerik:ChartArea.AxisX>
 	<!--  ...  -->
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-X-axis_10}}
+
+```C#
 	//....
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = false;
 	radChart.DefaultView.ChartArea.AxisX.MinValue = new DateTime( 2009, 1, 1 ).ToOADate();
@@ -280,13 +265,8 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
 	//....
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-X-axis_11}}
+```
+```VB.NET
 	radChart.DefaultView.ChartArea.AxisX.AutoRange = False
 	radChart.DefaultView.ChartArea.AxisX.MinValue = New DateTime(2009, 1, 1).ToOADate()
 	radChart.DefaultView.ChartArea.AxisX.MaxValue = New DateTime(2009, 3, 31).ToOADate()
@@ -294,7 +274,7 @@ The same results you can achieve by setting the __AutoRange__ to __False__ and d
 	radChart.DefaultView.ChartArea.AxisX.LabelStep = 2
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_X_axis_40.png)
 

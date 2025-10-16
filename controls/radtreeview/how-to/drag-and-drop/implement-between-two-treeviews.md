@@ -17,87 +17,9 @@ The picture below demonstrates the final result:
 
 ## Setting the RadTreeViews in XAML
 
-First you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement drag and drop operations, we won't focus on the definitions of the controls in xaml. However, please note to set the __RadTreeView IsDragDropEnabled__ property to __true__.
-        
-{% if site.site_name == 'Silverlight' %}
+First you can define the controls in your view. As the purpose of this tutorial is to demonstrate how to implement drag and drop operations, we won't focus on the definitions of the controls in xaml. However, please note to set the __RadTreeView IsDragDropEnabled__ property to __true__.        
 
-#### __XAML__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-0}}
-		<Grid>
-			<Grid.Resources>
-				<DataTemplate x:Key="mediaFilesTemplate">
-					<StackPanel Orientation="Horizontal">
-						<Image Width="16"
-						       Height="16"
-						       Source="Images/DefaultIcons/photos.png"
-						       Stretch="Fill" />
-						<TextBlock Text="{Binding ImageFilePath}" />
-					</StackPanel>
-				</DataTemplate>
-				<telerik:HierarchicalDataTemplate x:Key="localMachineTemplate"
-				                          ItemTemplate="{StaticResource mediaFilesTemplate}"
-				                          ItemsSource="{Binding MediaFiles}">
-					<TextBlock Text="{Binding Name}" />
-				</telerik:HierarchicalDataTemplate>
-	
-				<DataTemplate x:Key="resourceTemplate">
-					<StackPanel Orientation="Horizontal">
-						<Image Width="16"
-						       Height="16"
-						       Source="{Binding ImageFilePath}"
-						       Stretch="Fill" />
-						<TextBlock Text="{Binding Title}" />
-					</StackPanel>
-				</DataTemplate>
-	
-				<telerik:HierarchicalDataTemplate x:Key="applicationTemplate"
-				                          ItemTemplate="{StaticResource resourceTemplate}"
-				                          ItemsSource="{Binding Resources}">
-					<TextBlock Text="{Binding Name}" />
-				</telerik:HierarchicalDataTemplate>
-			</Grid.Resources>
-	
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="*" />
-			</Grid.ColumnDefinitions>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="30" />
-				<RowDefinition />
-			</Grid.RowDefinitions>
-	
-			<TextBlock Grid.Row="0"
-			           Grid.Column="0"
-			           HorizontalAlignment="Center"
-			           VerticalAlignment="Center"
-			           Text="File/Folders" />
-			<telerik:RadTreeView x:Name="xLocalMachineTree"
-			                     Grid.Row="1"
-			                     Grid.Column="0"
-			                     IsDragDropEnabled="True"
-			                     ItemTemplate="{StaticResource localMachineTemplate}" />
-	
-			<TextBlock Grid.Row="0"
-			           Grid.Column="1"
-			           HorizontalAlignment="Center"
-			           VerticalAlignment="Center"
-			           Text="MyApplication" />
-	
-			<telerik:RadTreeView x:Name="xApplicationTree"
-			                     Grid.Row="1"
-			                     Grid.Column="1"
-			                     IsDragDropEnabled="True"
-			                     ItemTemplate="{StaticResource applicationTemplate}"/>
-		</Grid>
-{{endregion}}
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-1}}
+```XAML
 		<Grid>
 			<Grid.Resources>
 				<DataTemplate x:Key="mediaFilesTemplate">
@@ -164,38 +86,29 @@ First you can define the controls in your view. As the purpose of this tutorial 
 			                     IsDragDropEnabled="True"
 			                     ItemTemplate="{StaticResource applicationTemplate}" />
 		</Grid>
-{{endregion}}
-
-{% endif %}
+```
 
 ## Create the View Models
 
 For the first __RadTreeView__ we can create a business class called __MediaFile__ that will hold information about images.
 
-#### __C#__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-3}}
+```C#
 	public class MediaFile
 	{
 		public string ImageTitle { get; set; }
 		public string ImageFilePath { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-3}}
+```
+```VB.NET
 	Public Class MediaFile
 	    Public Property ImageTitle() As String
 	    Public Property ImageFilePath() As String
 	End Class
-{{endregion}}
+```
 
 Then we can define a business class called __PartitionViewModel__ which will hold a collection of __MediaFiles__ and the name of a partition in the RadTreeView that represents the local machine tree.
 
-#### __C#__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-2}}
+```C#
 	public class PartitionViewModel
 	{
 	    public PartitionViewModel()
@@ -206,11 +119,8 @@ Then we can define a business class called __PartitionViewModel__ which will hol
 	    public string Name { get; set; }
 	    public ObservableCollection<MediaFile> MediaFiles { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-2}}
+```
+```VB.NET
 	Public Class PartitionViewModel
 	    Public Sub New()
 	        Me.MediaFiles = New ObservableCollection(Of MediaFile)()
@@ -235,34 +145,27 @@ Then we can define a business class called __PartitionViewModel__ which will hol
 	    End Property
 	    Private m_MediaFiles As ObservableCollection(Of MediaFile)
 	End Class
-{{endregion}}
+```
 
 For our second RadTreeView we can create a class called __Resource__ that will hold the information about the images in it.
 
-#### __C#__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-5}}
+```C#
 	public class Resource
 	{
 		public BitmapImage ImageFilePath { get; set; }
 		public string Title { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-5}}
+```
+```VB.NET
 	Public Class Resource
 	    Public Property ImageFilePath() As BitmapImage
 	    Public Property Title() As String
 	End Class
-{{endregion}}
+```
 
 Then we can define a class called __ApplicationViewModel__ which will hold a collection of __Resources__ and the name of an application.
 
-#### __C#__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-4}}
+```C#
 	public class ApplicationViewModel
 	{
 		public ApplicationViewModel()
@@ -274,11 +177,8 @@ Then we can define a class called __ApplicationViewModel__ which will hold a col
 	
 		public ObservableCollection<Resource> Resources { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-4}}
+```
+```VB.NET
 	Public Class ApplicationViewModel
 	    Public Sub New()
 	        Me.Resources = New ObservableCollection(Of Resource)()
@@ -288,13 +188,11 @@ Then we can define a class called __ApplicationViewModel__ which will hold a col
 	
 	    Public Property Resources() As ObservableCollection(Of Resource)
 	End Class
-{{endregion}}
+```
 
 Next we can define a __MainViewModel__ class that contains the collections which we will use to populate the __ItemsSource__ property of both __RadTreeViews__ For the first __RadTreeView__ will be populated with collection of __PartitionViewModel__ objects, whereas the second __RadTreeView__ will use a collection of __ApplicationViewModel__ objects.
 
-#### __C#__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-1}}
+```C#
 	public class MainViewModel
 	{
 		public MainViewModel()
@@ -344,11 +242,8 @@ Next we can define a __MainViewModel__ class that contains the collections which
 			this.Applications.Add(new ApplicationViewModel() { Name = "Desktop Client" });
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-1}}
+```
+```VB.NET
 	Public Class MainViewModel
 	    Public Sub New()
 	        Me.LocalMachinePartitions = New ObservableCollection(Of PartitionViewModel)()
@@ -420,7 +315,7 @@ Next we can define a __MainViewModel__ class that contains the collections which
 	        })
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## Implement the drag and drop logic
 
@@ -428,9 +323,7 @@ As was mentioned in the beginning of this article, the drop will be forbidden in
 
 Now let’s add the handlers for the __DragDropManager__ events listed above. We’ll do that in the code-behind.        
 
-#### __C#__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-6}}
+```C#
 	public MainPage()
 	{
 		InitializeComponent();
@@ -444,11 +337,8 @@ Now let’s add the handlers for the __DragDropManager__ events listed above. We
 	    DragDropManager.AddDragOverHandler(this.xApplicationTree, OnApplicationTreeDragOver, true);
 	    DragDropManager.AddDropHandler(this.xApplicationTree, OnApplicationTreeDrop, true);
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-6}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	
@@ -461,17 +351,15 @@ Now let’s add the handlers for the __DragDropManager__ events listed above. We
 	    DragDropManager.AddDragOverHandler(Me.xApplicationTree, OnApplicationTreeDragOver, True)
 	    DragDropManager.AddDropHandler(Me.xApplicationTree, OnApplicationTreeDrop, True)
 	End Sub
-{{endregion}}
+```
 
 Once we do so, we can start implementing the drag/drop handlers. For the purpose of this example we can only drop items to the __RadTreeView__ with __x:Name__ property set to *xApplicationTree*.        
 
->tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag. You can read more about the properties exposed by the type in the [Drag and Drop](7FC973CF-4B65-4682-99E0-024EE62925C7#TreeViewDragDropOptions) documentation article.
+>tip __RadTreeView__ drag operation creates an object of type __TreeViewDragDropOptions__ that holds all information related to the drag.
 
 Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we drop an item in the second __RadTreeView__ we create a new item of *Resource* type.
 
-#### __C#__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-8}}
+```C#
 	private void OnApplicationTreeDrop(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -528,11 +416,8 @@ Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we d
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-8}}
+```
+```VB.NET
 	Private Sub OnApplicationTreeDrop(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	    Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 	
@@ -586,13 +471,13 @@ Next, we have to handle the __Drop__ event for the *xApplicationTree*. When we d
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 In order to deny the nesting of __Resource__ files and update the visual representation of the __DropAction__ in the application tree, we can subscribe for the __DragOver__ event of the __DragDropManager__.
 
-#### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-7}}
+
+```C#
 	private void OnApplicationTreeDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -613,11 +498,8 @@ In order to deny the nesting of __Resource__ files and update the visual represe
 	
 	    options.UpdateDragVisual();
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-7}}
+```
+```VB.NET
 	Private Sub OnApplicationTreeDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	    Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 	    If options Is Nothing Then
@@ -633,13 +515,13 @@ In order to deny the nesting of __Resource__ files and update the visual represe
 	
 	    options.UpdateDragVisual()
 	End Sub
-{{endregion}}
+```
 
 To ensure that we cannot drop in the local machine tree, we can subscribe for the __DragOver__ event.
 
-#### __C#__
 
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-9}}
+
+```C#
 	private void OnLocalMachineTreeDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 	{
 	    var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -651,11 +533,8 @@ To ensure that we cannot drop in the local machine tree, we can subscribe for th
 	        e.Handled = true;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-implement-drag-and-drop-between-two-treeviews-9}}
+```
+```VB.NET
 	Private Sub OnLocalMachineTreeDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 	    Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 	    If options IsNot Nothing Then
@@ -665,7 +544,7 @@ To ensure that we cannot drop in the local machine tree, we can subscribe for th
 	        e.Handled = True
 	    End If
 	End Sub
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/TreeView/DragDropBetweenTreeViews).
 

@@ -18,9 +18,9 @@ Read more about __DataTemplateSelectors__ in the [Template Selectors]({%slug gri
 
 RadPropertyGrid enables its users to implement conditional editor __DataTemplate__ selection for its __PropertyGridFields__ trough a __DataTemplateSelector__:
 
-#### __[C#] Example 1: Creating custom DataTemplateSelector__
+__Example 1: Creating custom DataTemplateSelector__
 
-{{region cs-radpropertygrid-datatemplateselector_1}}
+```C#
 	public class Customer
 	{
 	    public string FirstName { get; set; }
@@ -48,11 +48,8 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 	    public DataTemplate PhoneNumberDataTemplate { get; set; }
 	    public DataTemplate StringDataTemplate { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating custom DataTemplateSelector__
-
-{{region vb-radpropertygrid-datatemplateselector_1}}
+```
+```VB.NET
 	Public Class Customer
 	    Public Property FirstName() As String
 	    Public Property LastName() As String
@@ -90,11 +87,11 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 	    End Property
 	    Private m_StringDataTemplate As DataTemplate
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Defining custom DataTemplateSelector__
+__Example 2: Defining custom DataTemplateSelector__
 
-{{region xaml-radpropertygrid-datatemplateselector_0}}
+```XAML
 			<Grid>
 			    <Grid.Resources>
 			        <local:FieldTemplateSelector x:Key="DataTemplateSelector">
@@ -114,7 +111,7 @@ RadPropertyGrid enables its users to implement conditional editor __DataTemplate
 			    </Grid.Resources>
 			    <telerik:RadPropertyGrid x:Name="rpg" EditorTemplateSelector="{StaticResource DataTemplateSelector}" />
 			</Grid>
-{{endregion}}
+```
 
 >You might wonder where these "telerik" and "local", in front of the tags RadPropertyGrid and __FieldTemplateSelector__, came from. Well, these are the names of the namespaces you give when you import the appropriate assembly or your custom __DataTemplateSelector__ class into the XAML file.
 

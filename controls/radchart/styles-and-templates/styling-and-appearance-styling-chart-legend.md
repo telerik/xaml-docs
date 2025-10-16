@@ -75,25 +75,25 @@ Here are the resources generated with the __ChartLegendItemStyle__:{% endif %}{%
 
 To apply the styles to the real controls, set the __ChartLegendItemStyle__ in the Style for the __ChartLegend__.
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-legend_0}}
+
+```XAML
 	<Style x:Key="ChartLegendStyle" TargetType="telerik:ChartLegend">
 	    <!--  ...  -->
 	    <Setter Property="LegendItemStyle" Value="{StaticResource ChartLegendItemStyle}" />
 	    <!--  ...  -->
 	</Style>
-{{endregion}}
+```
 
 
 
 After that set the __ChartLegendStyle__ to the __RadChart__.
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-legend_1}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart" LegendStyle="{StaticResource ChartLegendStyle}" />
-{{endregion}}
+```
 
 
 
@@ -101,9 +101,9 @@ After that set the __ChartLegendStyle__ to the __RadChart__.
 
 Here is the XAML, generated for the __Styles__:
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-chart-legend_2}}
+
+```XAML
 	<SolidColorBrush x:Key="LegendForeground" Color="#FF000000" />
 	<LinearGradientBrush x:Key="LegendItemMarkerMask" StartPoint="0.5,0" EndPoint="0.5,1">
 	    <GradientStop Offset="0.009" Color="#D8FFFFFF" />
@@ -303,7 +303,7 @@ Here is the XAML, generated for the __Styles__:
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 

@@ -52,17 +52,17 @@ Consequently, __EditorAttribute has various constructors__ that can be used depe
 
 For the purposes of this example, the definition of __RadPropertyGrid__ is:
 
-#### __[XAML] Example 1: Defining RadPropertyGrid__
+__Example 1: Defining RadPropertyGrid__
 
-	{{region xaml-radpropertygrid-editor-attribute_0}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="propertyGrid" Item="{Binding Captain}" />
-{{endregion}}
+```
 
 The property __Captain__ is defined in the ViewModel as follows:
 
-#### __[C#] Example 2: Defining property in the ViewModel__
+__Example 2: Defining property in the ViewModel__
 
-{{region cs-radpropertygrid-editor-attribute_8}}
+```C#
 	private Player captain;
 	public Player Captain
 	{
@@ -75,11 +75,8 @@ The property __Captain__ is defined in the ViewModel as follows:
 	        return this.captain;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining property in the ViewModel__
-
-{{region vb-radpropertygrid-editor-attribute_8}}
+```
+```VB.NET
 	Private _captain As Player
 	Public ReadOnly Property Captain() As Player
 	    Get
@@ -95,7 +92,7 @@ The property __Captain__ is defined in the ViewModel as follows:
 	        Return Me._captain
 	    End Get
 	End Property
-{{endregion}}
+```
 
 The definitions of the Custom editor __PhoneEditorControl__, the __Player business object__ used and the full implementation of the __PhoneNumber class__ can be found in the [Define Data](#define-data) section.
 
@@ -103,9 +100,9 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 * __EditorAttribute(Type editorType)__ – only the type of the editor can be specified:
         
 
-#### __[C#] Example 3: Specifying the type of the editor__
+__Example 3: Specifying the type of the editor__
 
-	{{region cs-radpropertygrid-editor-attribute_2}}
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl))]
 	public PhoneNumber PhoneNumber
@@ -123,11 +120,8 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Specifying the type of the editor__
-
-	{{region vb-radpropertygrid-editor-attribute_2}}
+```
+```VB.NET
 	Private _phoneNumber As PhoneNumber
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(PhoneEditorControl))>
 	Public Property PhoneNumber() As PhoneNumber
@@ -141,13 +135,13 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 
 * __EditorAttribute(string editorTypeName, string assemblyFile)__ – the string representation of the editor's type and the absolute file path of the assembly can be specified:
 
-#### __[C#] Example 4: Specifying the type of the editor as string and passing the absolute file path of the assembly__
+__Example 4: Specifying the type of the editor as string and passing the absolute file path of the assembly__
 	
-	{{region cs-radpropertygrid-editor-attribute_9}}
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", @"..\..\bin\Debug\PhoneEditor.dll")]
 	public PhoneNumber PhoneNumber
@@ -165,11 +159,8 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Specifying the type of the editor and the absolute file path of the assembly as string__
-	
-	{{region vb-radpropertygrid-editor-attribute_9}}
+```
+```VB.NET
 	Private _phoneNumber As PhoneNumber
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", "..\..\bin\Debug\PhoneEditor.dll")> _
 	Public Property PhoneNumber() As PhoneNumber
@@ -183,7 +174,7 @@ The definitions of the Custom editor __PhoneEditorControl__, the __Player busine
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 
 
 It will look like:
@@ -194,9 +185,9 @@ __Figure 1__: EditorAtrribute with editorType specified
 
 * __EditorAttribute(Type editorType, EditorStyle editorStyle)__ – the type of the editor and the style of the containing host:
 
-#### __[C#] Example 5: Specifying the type of the editor and the style of the containing host__
+__Example 5: Specifying the type of the editor and the style of the containing host__
 
-	{{region cs-radpropertygrid-editor-attribute_3}}
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(PhoneEditorControl), Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.DropDown)]
 	public PhoneNumber PhoneNumber
@@ -214,11 +205,8 @@ __Figure 1__: EditorAtrribute with editorType specified
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Specifying the type of the editor and the style of the containing host__
-
-	{{region vb-radpropertygrid-editor-attribute_3}}
+```
+```VB.NET
 	Private _phoneNumber As PhoneNumber
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(PhoneEditorControl), EditorStyle.DropDown)>
 	Public Property PhoneNumber() As PhoneNumber
@@ -232,13 +220,13 @@ __Figure 1__: EditorAtrribute with editorType specified
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 
 * __EditorAttribute(string editorTypeName, string assemblyFile, EditorStyle editorStyle)__ - the style of the containing host can be specified:
 
-#### __[C#] Example 6: Specifying the type of the editor and the absolute file path of the assembly as string, as well the style of the containing host__
+__Example 6: Specifying the type of the editor and the absolute file path of the assembly as string, as well the style of the containing host__
 
-	{{region cs-radpropertygrid-editor-attribute_10}}
+```C#
 	private PhoneNumber phoneNumber;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl", @"..\..\bin\Debug\PhoneEditor.dll",
 	Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)]
@@ -257,11 +245,8 @@ __Figure 1__: EditorAtrribute with editorType specified
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Specifying the type of the editor and the absolute file path of the assembly as string, as well the style of the containing host__
-	
-	{{region vb-radpropertygrid-editor-attribute_10}}
+```
+```VB.NET
 	Private _phoneNumber As PhoneNumber
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("EditorAttribute.PhoneEditorControl",
 	    "..\..\bin\Debug\PhoneEditor.dll", Telerik.Windows.Controls.Data.PropertyGrid.EditorStyle.Modal)> _
@@ -276,7 +261,7 @@ __Figure 1__: EditorAtrribute with editorType specified
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 
 In this case PhoneEditorControl will be defined in a DropDownEditor control and it will look like:
 
@@ -286,9 +271,9 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 
 * __EditorAttribute(Type editorType, string targetProperty)__ – the type of the editor and its property that you want to bind to. For instance:
 
-#### __[C#] Example 7: Specifying the type of the editor and the target property__
+__Example 7: Specifying the type of the editor and the target property__
 
-{{region cs-radpropertygrid-editor-attribute_4}}
+```C#
 	private int number;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(RadNumericUpDown), "Value")]
 	public int Number
@@ -303,11 +288,8 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: Specifying the type of the editor and the target property__
-
-{{region vb-radpropertygrid-editor-attribute_4}}
+```
+```VB.NET
 	Private _number As Integer
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(RadNumericUpDown), "Value")>
 	Public Property Number() As Integer
@@ -321,13 +303,13 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 
 * __EditorAttribute(string editorTypeName, string assemblyFile, string targetProperty)__ - the target property can be specified:
 
-#### __[C#] Example 8: Specifying the type of the editor and the absolute file path of the assembly as string, as well the target property__
+__Example 8: Specifying the type of the editor and the absolute file path of the assembly as string, as well the target property__
 
-	{{region cs-radpropertygrid-editor-attribute_11}}
+```C#
 	private int number;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("Telerik.Windows.Controls.RadNumericUpDown"
 	    , @"..\..\bin\Debug\Telerik.Windows.Controls.Input.dll", "Value")]
@@ -343,11 +325,8 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 8: Specifying the type of the editor and the absolute file path of the assembly as string, as well the target property__
-
-	{{region vb-radpropertygrid-editor-attribute_11}}
+```
+```VB.NET
 	Private _number As Integer
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("Telerik.Windows.Controls.RadNumericUpDown",
 	    "..\..\bin\Debug\Telerik.Windows.Controls.Input.dll", "Value")> _
@@ -362,7 +341,7 @@ __Figure 2__: EditorAtrribute with editorType and editorStyle specified
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 	
 In this case the property from your business object – Number – will be bound to the ValueProperty of RadNumericUpDown control.     
         
@@ -375,9 +354,9 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 
 * __EditorAttribute(Type editorType, string targetProperty, EditorStyle editorStyle)__ – with this constructor all properties are set – the type of the editor, its property that will be used for the binding and the type of the host it will be placed inside. For example:
 
-#### __[C#] Example 9: Specifying the type of the editor, the target property and style of the containing host__
+__Example 9: Specifying the type of the editor, the target property and style of the containing host__
 
-	{{region cs-radpropertygrid-editor-attribute_5}}
+```C#
 	private string name;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor(typeof(TextBox), "Text", EditorStyle.Modal)]
 	public string Name
@@ -392,11 +371,8 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 9: Specifying the type of the editor, the target property and style of the containing host__
-
-	{{region vb-radpropertygrid-editor-attribute_5}}
+```
+```VB.NET
 	Private _name As String
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor(GetType(TextBox), "Text", EditorStyle.Modal)>
 	Public Property Name() As String
@@ -410,13 +386,13 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 
 * __EditorAttribute(string editorTypeName, string assemblyFile, string targetProperty, EditorStyle editorStyle)__ - specifying both the target property
 
-#### __[C#] Example 10: Specifying the type of the editor and the absolute file path of the assembly as string, the target property and the style for the containing host__
+__Example 10: Specifying the type of the editor and the absolute file path of the assembly as string, the target property and the style for the containing host__
 
-	{{region cs-radpropertygrid-editor-attribute_12}}
+```C#
 	private string name;
 	[Telerik.Windows.Controls.Data.PropertyGrid.Editor("System.Windows.Controls.TextBox",
 	gram Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationFramework.dll",
@@ -433,11 +409,8 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example  10: Specifying the type of the editor and the absolute file path of the assembly as string, the target property and the style for the containing host__
-
-	{{region vb-radpropertygrid-editor-attribute_12}}
+```
+```VB.NET
 	Private _name As String
 	<Telerik.Windows.Controls.Data.PropertyGrid.Editor("System.Windows.Controls.TextBox",
 	    "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\PresentationFramework.dll", "Text",
@@ -453,7 +426,7 @@ __Figure 3__: EditorAtrribute with editorType and targetProperty specified
 	        End If
 	    End Set
 	End Property
-{{endregion}}
+```
 
 It will look like:
         
@@ -465,9 +438,9 @@ It will look like:
 
 The definition of the Custom editor __PhoneEditorControl__ is:
 
-#### __[XAML] Example 11: Defining the custom editor__
+__Example 11: Defining the custom editor__
 
-	{{region xaml-radpropertygrid-editor-attribute_1}}
+```XAML
 	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -489,13 +462,13 @@ The definition of the Custom editor __PhoneEditorControl__ is:
 	    </StackPanel>
 	
 	</UserControl>
-{{endregion}}
+```
 
 The definition of the __PhoneNumber__ class is:
 
-#### __[C#] Example 12: Defining PhoneNumber object__
+__Example 12: Defining PhoneNumber object__
 
-	{{region cs-radpropertygrid-editor-attribute_6}}
+```C#
 	public class PhoneNumber : INotifyPropertyChanged
 	{
 	    private string countryCode;
@@ -557,11 +530,8 @@ The definition of the __PhoneNumber__ class is:
 	            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 12: Defining PhoneNumber object__
-
-	{{region vb-radpropertygrid-editor-attribute_6}}
+```
+```VB.NET
 	Public Class PhoneNumber
 	    Implements INotifyPropertyChanged
 	
@@ -610,13 +580,13 @@ The definition of the __PhoneNumber__ class is:
 	        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 The definition of the __Player business object__ used for the example is:
 
-#### __[C#] Example 13: Defining Player object__
+__Example 13: Defining Player object__
 	
-	{{region cs-radpropertygrid-editor-attribute_7}}
+```C#
 	public class Player : INotifyPropertyChanged
 	{
 	    public event PropertyChangedEventHandler PropertyChanged;
@@ -725,11 +695,8 @@ The definition of the __Player business object__ used for the example is:
 	        this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 13: Defining Player object__
-	
-	{{region vb-radpropertygrid-editor-attribute_7}}
+```
+```VB.NET
 	Public Class Player
 	    Implements INotifyPropertyChanged
 	
@@ -826,7 +793,7 @@ The definition of the __Player business object__ used for the example is:
 	        Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## See Also
 

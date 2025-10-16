@@ -12,10 +12,6 @@ position: 0
 
 This topic covers the specific events exposed by the __RadGridView__ control and its sub elements __GridViewColumn__, __GridViewRow__ and __GridViewCell__. The events are first grouped by control and then by their general purpose.
 
-{% if site.has_cta_panels == true %}
-{% include cta-panel-small.html %}
-{% endif %}
-
 ## RadGridView
 
 ### Data Events
@@ -126,27 +122,26 @@ Get more information about the column resizing events [here]({%slug gridview-col
 
 * __RowIsExpandedChanged__: Occurs when a row's expanded state is changed - when its hierarchy child is expanded or collapsed.
 
-#### __[C#] Example 1: Shows if the row is expanded__
+	__Example 1: Shows if the row is expanded__
 
-    {{region cs-gridview-events-overview_0}}
-        private void ClubsGrid_RowIsExpandedChanged(object sender, Telerik.Windows.Controls.GridView.RowEventArgs e)
-        {
-            var row = e.Row as GridViewRow;
-            MessageBox.Show(row.IsExpanded.ToString());
-        }
-
-    {{endregion}}
+	```C#
+		private void ClubsGrid_RowIsExpandedChanged(object sender, Telerik.Windows.Controls.GridView.RowEventArgs e)
+		{
+		var row = e.Row as GridViewRow;
+		MessageBox.Show(row.IsExpanded.ToString());
+		}                        
+	```
 
 * __RowIsExpandedChanging__: Occurs when a row's expanded state is about to be changed - when its hierarchy child is expanded or collapsed.
 
-#### __[C#] Example 2: Cancel the expanding__
+	__Example 2: Cancel the expanding__
 
-    {{region cs-gridview-events-overview_1}}
-        private void ClubsGrid_RowIsExpandedChanging(object sender, Telerik.Windows.Controls.GridView.RowCancelEventArgs e)
-        {
-            e.Cancel = true;
-        }
-    {{endregion}}
+	```C#
+		private void ClubsGrid_RowIsExpandedChanging(object sender, Telerik.Windows.Controls.GridView.RowCancelEventArgs e)
+		{
+		e.Cancel = true;
+		}
+	```
 
 >Both __RowIsExpandedChanged__ and __RowIsExpandedChanging__ occur only when there is [Hierarchy]({%slug gridview-hierachy-overview%}) defined and won't be applied if using the __RowDetailsTemplate__ property with another __RadGridView__.
 
@@ -192,3 +187,4 @@ Get more information about the column resizing events [here]({%slug gridview-col
 * [Filtering Events]({%slug gridview-filtering-event-model%})
 * [Delete Events]({%slug gridview-events-delete%})
 * [Edit Events]({%slug gridview-events-edit%})
+

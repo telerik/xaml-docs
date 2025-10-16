@@ -24,29 +24,29 @@ The following example will guide you through the process of binding your RadAuto
 
 1. First you will need to add __RadAutoCompleteBox__ to your project:
 
-	#### __[XAML] Add RadAutoCompleteBox__
+	__Add RadAutoCompleteBox__
 
-	{{region xaml-radautocompletebox-populating-with-data-binding-to-object-0}}
+	```XAML
 		<telerik:RadAutoCompleteBox />
-	{{endregion}}
+	```
 
 1. Create a business object called Country:
 
-	#### __[C#] Creation of the object__
+	__Creation of the object__
 
-	{{region cs-radautocompletebox-populating-with-data-binding-to-object-0}}
+	```C#
 		public class Country
 		{
 		    public string Name { get; set; }
 		    public string Capital { get; set; }
 		}
-	{{endregion}}
+	```
 
 1. Create a new class named __ViewModel__. In fact, this will be the data source for the RadAutoCompleteBox and this class has only one purpose - to initialize a collection with sample data.
 
-	#### __[C#] ViewModel creation__
+	__ViewModel creation__
 
-	{{region cs-radautocompletebox-populating-with-data-binding-to-object-1}}
+	```C#
 		public class ViewModel
 		{
 		    public ObservableCollection<Country> Countries { get; set; }
@@ -70,34 +70,34 @@ The following example will guide you through the process of binding your RadAuto
 		        };
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Declare the __ViewModel__ as a resource in your XAML: 
 
-	#### __[XAML] Declaring the ViewModel__
+	__Declaring the ViewModel__
 
-	{{region xaml-radautocompletebox-populating-with-data-binding-to-object-2}}
+	```XAML
 		<UserControl.Resources>
 		    <local:ViewModel x:Key="ViewModel"/>
 		</UserControl.Resources>
-	{{endregion}}
+	```
 
 1. Update your __RadAutoCompleteBox__ declaration and its __ItemsSource__ property:
 
-	#### __[XAML] Update the ItemsSource property__
+	__Update the ItemsSource property__
 
-	{{region xaml-radautocompletebox-populating-with-data-binding-to-object-3}}
+	```XAML
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries, Source={StaticResource ViewModel}}"/>
-	{{endregion}}
+	```
 
 1. Set the DisplayMemberPath property of the control.
 
-	#### __[XAML] Setting the DisplayMemberPath__
+	__Setting the DisplayMemberPath__
 
-	{{region xaml-radautocompletebox-populating-with-data-binding-to-object-4}}
+	```XAML
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries, Source={StaticResource ViewModel}}"
 		                            DisplayMemberPath="Name"/>
-	{{endregion}}
+	```
 
 The next screenshots show the final result:
 
@@ -115,22 +115,22 @@ In the next code snippets we will demonstrate how to use these properties togeth
 
 1. Set the __DisplayMemberPath__ to a specific property of the used business object:
 
-	#### __[XAML] Setting the DisplayMemberPath__
+	__Setting the DisplayMemberPath__
 
-	{{region xaml-radautocompletebox-populating-with-data-binding-to-object-5}}
+	```XAML
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries, Source={StaticResource ViewModel}}"
 		                            DisplayMemberPath="Name"/>
-	{{endregion}}
+	```
 
 1. Set the __TextSearchPath__ to a specific property of the used business object: 
 
-	#### __[XAML] Setting the TextSearchPath__
+	__Setting the TextSearchPath__
 
-	{{region xaml-radautocompletebox-populating-with-data-binding-to-object-6}}
+	```XAML
 		<telerik:RadAutoCompleteBox ItemsSource="{Binding Countries, Source={StaticResource ViewModel}}"
 		                            DisplayMemberPath="Name"
 		                            TextSearchPath="Capital"/>
-	{{endregion}}
+	```
 
 The next screenshots show how __RadAutoCompleteBox__ behaves when its DisplayMemberPath and TextSearchPath properties are set:
 

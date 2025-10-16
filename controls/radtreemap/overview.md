@@ -31,7 +31,7 @@ __RadTreeMap__ and __RadPivotMap__ are data visualization controls used to displ
 
 * __Automatic items ordering__: The layout orientation (vertical or horizontal) will be chosen automatically - by calculating the available space for the given data. When horizontal orientation is applied - the child tiles are going to be stacked horizontally. Respectively vertical orientation will make the child tiles to be stacked vertically.
 
->tip Get started with the control with its [Getting Started]({%slug radtreemap-getting-started%}) help article that shows how to use it in a basic scenario.
+>tip Get started with the control with its [Getting Started]({%slug radtreemap-getting-started-treemap%}) help article that shows how to use it in a basic scenario.
 
 > Check out the online demo at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#Treemap/FirstLook){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
 

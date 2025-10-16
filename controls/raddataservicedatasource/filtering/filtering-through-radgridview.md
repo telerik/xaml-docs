@@ -16,9 +16,9 @@ position: 1
 
 If you bind __RadGridView.ItemsSource__ to __RadDataServiceDataSource.DataView__, you will get automatic server-side filtering. When the user defines his filtering criteria through __RadGridView’s__ UI, __RadGridView__ will automatically transfer the resulting __FilterDescriptors__ to __RadDataServiceDataSource__. If __RadDataServiceDataSource.AutoLoad__ is ___true___, the control will automatically go to the server and get the data that matches these __FilterDescriptors__:
 
-#### __XAML__
 
-{{region raddataservicedatasource-filtering-filtering-through-radgridview_0}}
+
+```XAML
 
 	<Grid x:Name="LayoutRoot" Background="White">
 	 <telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
@@ -30,7 +30,7 @@ If you bind __RadGridView.ItemsSource__ to __RadDataServiceDataSource.DataView__
 	      IsBusy="{Binding IsBusy, ElementName=customersDataSource}" 
 	    ShowGroupPanel="False"/>  
 	</Grid>
-{{endregion}}
+```
 
 
 

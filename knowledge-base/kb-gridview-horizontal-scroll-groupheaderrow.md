@@ -36,8 +36,8 @@ You can do this by [modifying the GroupHeaderRow's ControlTemplate]({%slug styli
 
 The following example shows how to use the `RowLoaded` event.
 
-#### __[C#]__
-{{region kb-gridview-horizontal-scroll-groupheaderrow-0}}
+
+```C#
 	private void gridView_RowLoaded(object sender, Telerik.Windows.Controls.GridView.RowLoadedEventArgs e)
 	{
 		if (e.Row is GroupHeaderRow)
@@ -48,5 +48,5 @@ The following example shows how to use the `RowLoaded` event.
 			Telerik.Windows.Controls.GridView.SelectiveScrollingGrid.SetSelectiveScrollingClip(button, true);
 		}
 	}
-{{endregion}}
+```
 

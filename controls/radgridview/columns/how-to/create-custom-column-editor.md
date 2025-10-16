@@ -14,9 +14,9 @@ This tutorial will guide you through the common task of creating a custom column
 
 * In the beginning you need __RadGridView__ populated with sample data. Below are the business object definition (__Example 1__), as well as __RadGridView__ declaration (__Example 2__).
 			
-#### __[C#] Example 1: Business object definition__
+__Example 1: Business object definition__
 
-	{{region cs-gridview-how-to-create-custom-captain-editor-column_0}}
+```C#
 	public class Club : INotifyPropertyChanged
 	{
 	    private string name;
@@ -118,11 +118,8 @@ This tutorial will guide you through the common task of creating a custom column
 	        this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Business object definition__
-
-	{{region vb-gridview-how-to-create-custom-captain-editor-column_0}}
+```
+```VB.NET
 	Public Class Club
 	    Implements INotifyPropertyChanged
 	    Private _name As String
@@ -209,13 +206,13 @@ This tutorial will guide you through the common task of creating a custom column
 	        Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 Note, that the __Club__ object has a __Captain__ property. The __Captain__ object itself, has two properties — __Name__, which is of type **string**, and __Position__, which is an **Enum**.
 
-#### __[XAML] Example 2: Initial declaration of RadGridView__
+__Example 2: Initial declaration of RadGridView__
 
-	{{region xaml-gridview-how-to-create-custom-captain-editor-column_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView" AutoGenerateColumns="False" ItemsSource="{Binding Clubs}">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
@@ -225,25 +222,22 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 	        <local:CustomColumn DataMemberBinding="{Binding Captain}" FilterMemberPath="Position"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Populating RadGridView__
+__Example 3: Populating RadGridView__
 
-	{{region cs-gridview-how-to-create-custom-captain-editor-column_6}}
+```C#
 	this.radGridView.ItemsSource = Club.GetClubs();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Populating RadGridView__
-
-	{{region vb-gridview-how-to-create-custom-captain-editor-column_6}}
+```
+```VB.NET
 	Me.radGridView.ItemsSource = Club.GetClubs()
-{{endregion}}
+```
 
 * The next step is to create a __UserControl__ with __TextBox__ and __RadComboBox__. Create a new __UserControl__ named __CustomCaptainEditor__ (__Example 4__ ).
 			
-#### __[XAML] Example 4: Declaration of CustomCaptainEditor  UserControl__
+__Example 4: Declaration of CustomCaptainEditor  UserControl__
 
-	{{region xaml-gridview-how-to-create-custom-captain-editor-column_1}}
+```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition />
@@ -254,11 +248,11 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 	                       ItemsSource="{Binding Positions, RelativeSource={RelativeSource AncestorType=my:CustomCaptainEditor}}"
 	                       DisplayMemberPath="Name" SelectedValuePath="Value"/>
 	</Grid>
-{{endregion}}
+```
 
-#### __[C#] Example 5: Code-behind definition of the CustomCaptainEditor UserControl__
+__Example 5: Code-behind definition of the CustomCaptainEditor UserControl__
 
-	{{region cs-gridview-how-to-create-custom-captain-editor-column_2}}
+```C#
 	public partial class CustomCaptainEditor : UserControl
 	{
 	    public static readonly DependencyProperty CaptainNameProperty =
@@ -310,11 +304,8 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Code-behind definition of the CustomCaptainEditor UserControl__
-
-	{{region vb-gridview-how-to-create-custom-captain-editor-column_2}}
+```
+```VB.NET
 	Partial Public Class CustomCaptainEditor
 	    Inherits UserControl
 	
@@ -355,15 +346,15 @@ Note, that the __Club__ object has a __Captain__ property. The __Captain__ objec
 	        End Get
 	    End Property
 	End Class
-{{endregion}}
+```
 
 Take a look at the code-behind of the control. Two additional dependency properties are created in order to enable binding to the __Name__ and __Position__ properties of the business model.
 
 * Create a new class named __CustomColumn__, which derives from __GridViewBoundColumnBase (Example 6)__.
 
-#### __[C#] Example 6: Definition of CustomColumn class__
+__Example 6: Definition of CustomColumn class__
 
-	{{region cs-gridview-how-to-create-custom-captain-editor-column_4}}
+```C#
 	public class CustomColumn : GridViewBoundColumnBase
 	{
 	   public override FrameworkElement CreateCellElement(GridViewCell cell, object dataItem)
@@ -399,11 +390,8 @@ Take a look at the code-behind of the control. Two additional dependency propert
 	       return binding;
 	   }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 6: Definition of CustomColumn class__
-
-	{{region vb-gridview-how-to-create-custom-captain-editor-column_4}}
+```
+```VB.NET
 	Public Class CustomColumn
 	    Inherits GridViewBoundColumnBase
 	
@@ -434,15 +422,15 @@ Take a look at the code-behind of the control. Two additional dependency propert
 	        Return binding
 	    End Function
 	End Class
-{{endregion}}
+```
 
 >In a scenario when there is a column.CellEditTemplate defined, the new value of the editor is not available in the arguments of the __CellEditEnded__ event raised when commiting an edit. To get the right value in __e.NewValue__, you should override the column's __GetNewValueFromEditor__ method.
 
 Here is the code of the custom converter we have used:
 
-#### __[C#] Example 7: The MyConverter class__
+__Example 7: The MyConverter class__
 
-	{{region cs-gridview-how-to-create-custom-captain-editor-column_5}}
+```C#
 	public class MyConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -461,11 +449,8 @@ Here is the code of the custom converter we have used:
 	        return value;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: The MyConverter class__
-
-	{{region cs-gridview-how-to-create-custom-captain-editor-column_5}}
+```
+```VB.NET
 	public class MyConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -484,7 +469,7 @@ Here is the code of the custom converter we have used:
 	        return value;
 	    }
 	}
-{{endregion}}
+```
 
 * Run your demo and try to edit a cell from the new custom column. The result should be similar to the snapshot in __Figure 1__.
 

@@ -17,15 +17,15 @@ You can also group objects by the result of an equally complex operation:
 
 __Example 1: Create a generic GroupDescriptor<T>.__
 
-#### __C#__
 
-{{region cs-gridview-howto-use-expression-descriptors_1}}
+
+```C#
 	var descriptor = new GroupDescriptor<Employee, int, int>
 	{
 	    GroupingExpression = e => e.Orders.Where(o => o.Details.Any(d => d.Product.ProductName.Contains("Syrup"))).Count(),
 	    SortDirection = ListSortDirection.Ascending
 	};
-{{endregion}}
+```
 
 Then, add the defined GroupDescriptor to the __GroupDescriptors collection__ of __RadGridView__.
         

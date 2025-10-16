@@ -14,11 +14,11 @@ __RadGridView__ allows you to have alternating rows should you need to improve r
 
 In order to define the pattern of alternation, you have to set the __AlternationCount__ property. For example, if you want to alternate each second row, you have to set its value to __2__. Setting the __AlternationCount__ property to __3__ shows an alternating color for each third row.
 
-#### __[XAML] Example 1: Setting the AlternationCount Property__
+__Example 1: Setting the AlternationCount Property__
 
-{{region xaml-radgridview-rows-alternating-rows_0}}
+```XAML
 	<telerik:RadGridView AlternationCount="2" />
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Rows Alternating Rows 02](images/RadGridView_Rows_Alternating_Rows_02.png)
 
@@ -28,11 +28,11 @@ In order to style the alternating rows, you can specify the __AlternateRowStyle_
 
 __Example 2__ shows __RadGridView__ with __AlternationCount__ set to __2__ and __AlternateRowBackground__ color set to __Coral__.
 
-#### __[XAML] Example 2: Setting the AlternateRowBackground Property__
-{{region xaml-radgridview-rows-alternating-rows_1}}
+__Example 2: Setting the AlternateRowBackground Property__
+```XAML
 	<telerik:RadGridView AlternationCount="2"
 	                   AlternateRowBackground="Coral" />
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Rows Alternating Rows 01](images/RadGridView_Rows_Alternating_Rows_01.png)
 

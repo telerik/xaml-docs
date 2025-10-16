@@ -30,11 +30,11 @@ Here is a brief description of each value in the __DisplayFormat__ enumerator pr
 
 For example:
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-formatting_0}}
+
+```XAML
 	<telerik:RadDateTimePicker DisplayFormat="Long"/>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDateTimePicker Long DisplayFormat](images/dateTimePicker_features_formatting_010.png)
 
@@ -44,23 +44,20 @@ You can change the __RadDateTimePicker__ control's culture via the __Culture__ p
 
 Here is an example:
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-formatting_1}}
+
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" Culture="de"/>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-raddatetimepicker-features-formatting_2}}
+
+```C#
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo( "de" );
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddatetimepicker-features-formatting_3}}
+```
+```VB.NET
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("de")
-{{endregion}}
+```
 
 Here is the result:
 
@@ -72,23 +69,18 @@ You can easily customize the date format in the __RadDateTimePicker__ through it
 
 Here is an example of defining a custom format for the __RadDateTimePicker's__ items:
 
-#### __C#__
 
-{{region cs-raddatetimepicker-features-formatting_4}}
+
+```C#
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo("en-US");
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM";
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "h tt";
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-raddatetimepicker-features-formatting_5}}
+```
+```VB.NET
 	Me.radDateTimePicker.Culture = New System.Globalization.CultureInfo("en-US")
 	Me.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "dd-MMM"
 	Me.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "h tt"
-{{endregion}}
+```
 
 >In this example the "tt" in the __ShortTimePattern__ represents the AM and PM values and also you have omitted the year from the __ShortDatePattern's__ definition.
 

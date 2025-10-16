@@ -32,13 +32,13 @@ Pasting a copied numeric value that contains untrimmed text does not work. In th
 
 Subscribe the RadNumericUpDown control to the DataObject's [Pastring event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.dataobject.addpastinghandler?view=net-5.0) and implement the pasting manually. 
 
-#### __C#__
-{{region kb-numericupdown-paste-whitespaces-value-0}}
-	DataObject.AddPastingHandler(this.numericUpDown, OnNumericUpDownPaste);
-{{endregion}}
 
-#### __C#__
-{{region kb-numericupdown-paste-whitespaces-value-1}}
+```C#
+	DataObject.AddPastingHandler(this.numericUpDown, OnNumericUpDownPaste);
+```
+
+
+```C#
 	private void OnNumericUpDownPaste(object sender, DataObjectPastingEventArgs e)
 	{
 		var copiedString = e.DataObject.GetData(typeof(string)) as string;
@@ -54,4 +54,4 @@ Subscribe the RadNumericUpDown control to the DataObject's [Pastring event](http
 			}
 		}
 	}
-{{endregion}}
+```

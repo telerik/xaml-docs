@@ -10,26 +10,23 @@ position: 3
 
 # Drag and Drop with RadListBox
 
-With our Q1 2013 release of __RadGanttView__ control we have introduced a new built-in feature in the control that allows drag and drop functionality between the GanttView control and an outside source.
+__RadGanttView__ allows drag and drop functionality between the GanttView control and an outside source.
 
 This help article demonstrates how to achieve drag and drop between __RadListBox__ and __RadGanttView__ controls.
 
->Before proceeding with this help article you should get familiar with [RadListBox: Binding To Object]({%slug radlistbox-populating-with-data-binding-to-object%}), [RadListBox: Drag and Drop Overview]({%slug radlistbox-features-dragdrop%}) and [RadGanttView: Implementing View-ViewModel]({%slug radganttview-populating-with-data-viewmodel%}).
-          
+>Before proceeding with this help article you should get familiar with [RadListBox: Binding To Object]({%slug radlistbox-populating-with-data-binding-to-object%}), [RadListBox: Drag and Drop Overview]({%slug radlistbox-features-dragdrop%}) and [RadGanttView: Implementing View-ViewModel]({%slug radganttview-populating-with-data-viewmodel%}).          
 
 1. First you will need to declare the __RadListBox__ control in the xaml and populate it with some sample data: 
 
-	#### __XAML__
-
-	{{region xaml-radganttview-dragdrop-radlistbox-0}}
+	```XAML
 		<telerik:RadListBox ItemsSource="{Binding Projects}" DisplayMemberPath="Name"/>
-	{{endregion}}
+	```
 
 	and the ViewModel should look like this:
 
-	#### __C#__
+	
 
-	{{region cs-radganttview-dragdrop-radlistbox-0}}
+	```C#
 		public class ViewModel : ViewModelBase
 		{
 		    private ObservableCollection<Project> projects;
@@ -61,13 +58,11 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 		        return projects;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Next you should declare the __RadGanttView__ control in the xaml and populate it with some sample data:
 
-	#### __XAML__
-
-	{{region xaml-radganttview-dragdrop-radlistbox-1}}
+	```XAML
 		<telerik:RadGanttView x:Name="radGanttView" 
 		TasksSource="{Binding GanttTasks}" 
 		VisibleRange="{Binding VisibleRange}">
@@ -77,13 +72,11 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 	and the ViewModel should look like this:
 
-	#### __C#__
-
-	{{region cs-radganttview-dragdrop-radlistbox-1}}
+	```C#
 		public class ViewModel : ViewModelBase
 		{
 		    //...
@@ -144,13 +137,11 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 		
 		    //...
 		}
-	{{endregion}}
+	```
 
 1. Create a custom __GanttDragDropBehavior__ and override its __CanStartDrag()__ method in order to restrict the drag and drop functionality from the Timeline of the GanttView control (in the current version of the control drag and drop from the Timeline is not supported):
 
-	#### __C#__
-
-	{{region cs-radganttview-dragdrop-radlistbox-2}}
+	```C#
 		public class CustomGanttDragDropBehavior : GanttDragDropBehavior
 		{
 		    protected override bool CanStartDrag(SchedulingDragDropState state)
@@ -158,13 +149,11 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 		        return state.IsReorderOperation;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Create a custom __DataConverter__ that will convert the drag data from the GanttView to the ListBox control:  
 
-	#### __C#__
-
-	{{region cs-radganttview-dragdrop-radlistbox-3}}
+	```C#
 		public class CustomGanttConverter : DataConverter
 		{
 		    public override object ConvertTo(object data, string format)
@@ -186,13 +175,11 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 		        return new[] { typeof(Project).FullName };
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Create a custom __DataConverter__ for that will convert data from ListBox to the GanttView control:
 
-	#### __C#__
-
-	{{region cs-radganttview-dragdrop-radlistbox-4}}
+	```C#
 		public class CustomListBoxConverter : DataConverter
 		{
 		    public override object ConvertTo(object data, string format)
@@ -208,13 +195,11 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 		        return new string[] { typeof(IDateRange).FullName};
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Declare the newly created GanttDragDropBehavior and converters to the ListBox and GanttView controls, the xaml of the two controls should look like this:
 
-	#### __XAML__
-
-	{{region xaml-radganttview-dragdrop-radlistbox-2}}
+	```XAML
 		<telerik:RadListBox ItemsSource="{Binding Projects}" 
 		AllowDrop="True"
 		ItemContainerStyle="{StaticResource DraggableListBoxItem}" 
@@ -245,7 +230,7 @@ This help article demonstrates how to achieve drag and drop between __RadListBox
 		        <local:CustomGanttDragDropBehavior/>
 		    </telerik:RadGanttView.DragDropBehavior>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 
 

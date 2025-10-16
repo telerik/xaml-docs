@@ -34,8 +34,8 @@ Set the Width and Height of the chart and then manually measure and arrange it. 
 
 Then use the __ExportExtensions.ExportToImage__ method to export the chart.
 
-#### __[C#]__
-{{region kb-chartview-export-to-image-in-code-0}}
+
+```C#
 	private void ExportChartToImage()
 	{
 		var chartUserControl = new ChartUserControl(); // this UserControl is the view where the RadCartesianChart control is defined.
@@ -64,4 +64,4 @@ Then use the __ExportExtensions.ExportToImage__ method to export the chart.
 			chart.UpdateLayout();
 		}
 	}
-{{endregion}}
+```

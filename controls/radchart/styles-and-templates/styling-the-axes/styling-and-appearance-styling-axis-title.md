@@ -32,21 +32,16 @@ If you go to the 'Resources' pane you will see that two additional __Styles__ ha
 
 After finishing with the changes it is time to set the style. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-axis-title_0}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TitleStyle = this.Resources["AxisTitleStyle"] as Style;
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TitleStyle = this.Resources["AxisTitleStyle"] as Style;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-axis-title_1}}
+```
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.AxisStyles.TitleStyle = TryCast(Me.Resources("AxisTitleStyle"), Style)
 	Me.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TitleStyle = TryCast(Me.Resources("AxisTitleStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -56,9 +51,9 @@ After finishing with the changes it is time to set the style. It can be set only
 
 Here is the final XAML for the __Style__:
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-axis-title_2}}
+
+```XAML
 	<Thickness x:Key="AxisTitleMargin">10,3,10,3</Thickness>
 	<Style x:Key="AxisTitleBorderStyle" TargetType="Border">
 	    <Setter Property="Margin" Value="0,5,0,0" />
@@ -99,7 +94,7 @@ Here is the final XAML for the __Style__:
 	    </Setter>
 	    <Setter Property="Foreground" Value="Orange" />
 	</Style>
-{{endregion}}
+```
 
 
 

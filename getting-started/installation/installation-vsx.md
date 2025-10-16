@@ -89,10 +89,10 @@ In order to use the __RadGridView__ control in your projects, you have to add re
 
 You can add __RadGridView__ manually by writing the XAML code in __Example 1__ or you can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 	
-#### __[XAML] Adding RadGridView in XAML__
-{{region xaml-gridview-getting-started2_0}}
+__Adding RadGridView in XAML__
+```XAML
 	<telerik:RadGridView />
-{{endregion}}
+```
 
 If you run the application, you will see an empty grid with no columns and rows as demonstrated below. 
 
@@ -104,8 +104,8 @@ __An empty grid__
 
 In order to populate the __RadGridView__ control with data, you should create a collection of business objects. Create a new class named __Profile__ and add several different type properties to it, as shown in __Example 2__.
 
-#### __[C#] Simple business class__  
-{{region cs-gridview-getting-started2_0}}
+__Simple business class__  
+```C#
 	    public class Profile
     {
         public int ID { get; set; }
@@ -113,22 +113,20 @@ In order to populate the __RadGridView__ control with data, you should create a 
         public DateTime Date { get; set; }
         public bool IsChecked { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Simple business class__
-{{region vb-gridview-getting-started2_0}}
+```
+```VB.NET
 	Public Class Profile
     Public Property ID As Integer
     Public Property Name As String
     Public Property Date As DateTime
     Public Property IsChecked As Boolean
 End Class
-{{endregion}}
+```
 
 Next, create a collection of Profile objects in the MainWindow and set the RadGridView ItemSource.  
 
-#### __[C#] Simple business class__
-{{region cs-gridview-getting-started2_0}}
+__Simple business class__
+```C#
 		public MainWindow()
     {
 		this.InitializeComponent();
@@ -141,10 +139,8 @@ Next, create a collection of Profile objects in the MainWindow and set the RadGr
         }
         gridView.ItemsSource = source;
     }
-{{endregion}}
-
-#### __[VB.NET] Simple business class__
-{{region vb-gridview-getting-started2_0}}
+```
+```VB.NET
 	Public Sub New()
     Me.InitializeComponent()
     Dim source = New ObservableCollection(Of Profile)()
@@ -163,12 +159,12 @@ Next, create a collection of Profile objects in the MainWindow and set the RadGr
     gridView.ItemsSource = source
 	End Sub
 	End Class
-{{endregion}}
+```
 
 Now that you have prepared the needed sample data, you need to bind it to each column in XAML as shown in the Example 4 below.
 
-#### __[XAML] Define RadGridView in XAML__
-{{region xaml-gridview-getting-started2_1}}
+__Define RadGridView in XAML__
+```XAML
 	<Grid>
         <telerik:RadGridView x:Name="gridView"
                              AutoGenerateColumns="False">
@@ -180,11 +176,11 @@ Now that you have prepared the needed sample data, you need to bind it to each c
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 Run the project and you should see something like this:
 
-![Main window with RadGridView](images/main-window-with-radgridview.png "Main window with RadGridView")
+![Main window with RadGridView](images/main-window-with-radgridview.png)
 
 ## Next Steps
 

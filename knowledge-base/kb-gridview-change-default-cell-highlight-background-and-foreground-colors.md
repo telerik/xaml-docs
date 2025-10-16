@@ -31,23 +31,23 @@ How to change the highlighted background and foreground colors of a matched Grid
 
 To change the background color, create a new `Style` and set its `TargetType` property to `GridViewCell`. Then, add a new setter for the `HighlightedBackground` property and set it to the desired value.
 
-#### __[XAML]__
-{{region gridview-change-default-cell-highlight-background-and-foreground-0}}
+
+```XAML
     <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource GridViewCellStyle}" -->
     <Style TargetType="telerik:GridViewCell">
         <Setter Property="HighlightedBackground" Value="Pink"/>
     </Style>
-{{endregion}}
+```
 
 To modify the foreground color of the matched GridViewCell, create a new `Style` and set its `TargetType` to `HighlightTextBlock`. After that, set the wanted foreground color to its `HighlightBrush` property.  
 
-#### __[XAML]__
-{{region gridview-change-default-cell-highlight-background-and-foreground-1}}
+
+```XAML
 	<!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource HighlightTextBlockStyle}" -->
 	<Style TargetType="telerik:HighlightTextBlock"> 
 	        <Setter Property="HighlightBrush" Value="White"/>        
 	</Style>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid search-panel-highlight-cell-background-color](images/gridview-change-default-cell-highlight-background-and-foreground-colors.png)
 

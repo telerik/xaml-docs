@@ -24,7 +24,7 @@ InvalidOperationException occurs in some cases when using the Telerik Windows8 t
 
 To fix the issue, call the `Freeze` method on the `Windows8Palette` object. 
 
-#### __[C#]__
-{{region kb-common-windows8-brushes-0}}
+
+```C#
 	Telerik.Windows.Controls.Windows8Palette.Palette.Freeze();
-{{endregion}}
+```

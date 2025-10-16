@@ -26,12 +26,12 @@ __RadRadialMenu__ control supports the following commands:
 
 __Example 1__ demonstrates how to navigate to another view in the RadRadialMenu using the NavigateToView command:
 
-#### __[C#] Example 1: Executing the NavigateToView command__
+__Example 1: Executing the NavigateToView command__
 
-{{region cs-radradialmenu-commands-radialmenu_1}}
+```C#
 	NavigateContext context = new NavigateContext(menuItem);
 	this.radialMenu.CommandService.ExecuteCommand(Telerik.Windows.Controls.RadialMenu.Commands.CommandId.NavigateToView, context);
-{{endregion}}
+```
 
 When the command executes the RadialMenu will navigate to the item passed as a parameter to the constructor of the NavigateContext class.
 
@@ -55,9 +55,9 @@ The next example will show how to implement custom command that will be executed
 
 1. First, create a custom class that inherits from the __RadialMenuCommand__ class. You need to set the __Id__ of the command to specify when it will be executed. If you wish to execute the default behavior, then you have to call the __Owner.CommandService.ExecuteDefaultCommand__ method in the __Execute__ method of the command as shown in __Example 2__. 
 
-	#### __[C#] Example 2: Creating a custom command__
+	__Example 2: Creating a custom command__
 
-	{{region cs-radradialmenu-commands-radialmenu_2}}
+	```C#
 		public class CustomMenuCommand : RadialMenuCommand
 		{
 		    public CustomMenuCommand()
@@ -82,13 +82,13 @@ The next example will show how to implement custom command that will be executed
 		        return true;
 		    }
 		}
-	{{endregion}}
+	```
 
 1. Then you have to define an instance of the custom command class in the __Commands__ collection of the __RadRadialMenu__ as demonstrated in __Example 3__.            
 
-	#### __[XAML] Example 3: Setting the custom command__
+	__Example 3: Setting the custom command__
 
-	{{region xaml-radradialmenu-commands-radialmenu_3}}
+	```XAML
 		<telerik:RadRadialMenu>
 		    <telerik:RadRadialMenu.Commands>
 		        <local:CustomMenuCommand />
@@ -102,7 +102,7 @@ The next example will show how to implement custom command that will be executed
 		        </telerik:RadRadialMenuItem>
 		    </telerik:RadRadialMenuItem>
 		</telerik:RadRadialMenu>
-	{{endregion}}
+	```
 
 ## See Also
 

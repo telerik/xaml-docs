@@ -16,10 +16,10 @@ This article demonstrates how to set the tooltip of the gridview's rows, columns
 
 First you should add a GridView to the user control and bind it to some data.
 
-#### __[XAML] Example 1: Bind RadGridView in XAML__
-{{region xaml-gridview-how-to-create-row-tooltip_0}}
+__Example 1: Bind RadGridView in XAML__
+```XAML
 	<telerik:RadGridView x:Name="gridView" ItemsSource="{Binding}" />
-{{endregion}}
+```
 
 ## ToolTip for Column's Cells
 
@@ -29,8 +29,8 @@ You can check the source code below on how to set a ToolTip for a specific colum
 
 To achive that you can define a __DataTemplate__ for the __ToolTipTemplate__ property for the column.
 
-#### __[XAML] Example 2: Setting ToolTipTemplate property__  
-{{region xaml-gridview-how-to-create-row-tooltip_1}}
+__Example 2: Setting ToolTipTemplate property__  
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding ID}" >
 	    <telerik:GridViewColumn.ToolTipTemplate>
 	        <DataTemplate>
@@ -42,7 +42,7 @@ To achive that you can define a __DataTemplate__ for the __ToolTipTemplate__ pro
 	        </DataTemplate>
 	    </telerik:GridViewColumn.ToolTipTemplate>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 Here you can add any arbitrary control.
 
@@ -50,12 +50,12 @@ Here you can add any arbitrary control.
 
 The duration of the tooltip enabled with the ToolTipTemplate, set the __ToolTipShowDuration__ property of the associated GridViewColumn element.
 
-#### __[XAML] Example 3: Setting ToolTipShowDuration property__  
-{{region xaml-gridview-how-to-create-row-tooltip_2}}
+__Example 3: Setting ToolTipShowDuration property__  
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding ID}" 
 				    ToolTipTemplate="{StaticResource MyColumnToolTipDataTemplate}"
 				    ToolTipShowDuration="8000" />
-{{endregion}}
+```
 
 ## ToolTip for a Column's Header Cell 
 
@@ -65,9 +65,9 @@ To add a __ToolTip__ to the header cells you can set a custom style to the __Hea
 
 * Predefine the HeaderCellStyle for the column. 
 
-#### __[XAML] Example 4: Setting custom style to the HeaderCellStyle property__
+__Example 4: Setting custom style to the HeaderCellStyle property__
 
-{{region xaml-gridview-how-to-create-row-tooltip_3}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
 	    <telerik:GridViewDataColumn.HeaderCellStyle>
 	        <Style TargetType="telerik:GridViewHeaderCell">
@@ -75,22 +75,22 @@ To add a __ToolTip__ to the header cells you can set a custom style to the __Hea
 	        </Style>
 	    </telerik:GridViewDataColumn.HeaderCellStyle>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 
 >tipYou can define the DataTemplate as a StaticResource and then directly assign the HeaderCellStyle property of the GridViewColumn.
 
 * Predefine the Header for the column.
 
-#### __[XAML] Example 5: Predefining the Header of the column__
+__Example 5: Predefining the Header of the column__
 
-{{region xaml-gridview-how-to-create-row-tooltip_4}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
 	    <telerik:GridViewDataColumn.Header>
 	        <TextBlock Text="Name" ToolTipService.ToolTip="My very long header"/>
 	    </telerik:GridViewDataColumn.Header>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 The final result should look like this:
 
@@ -102,13 +102,13 @@ To add a ToolTip to the grid view row, you can create an implicit style that tar
 
 >If you're using the NoXAML binaries, you need to base your style on the __GridViewRowStyle__.
 
-#### __[XAML] Example 6: Adding ToolTip to the GridViewRow__
+__Example 6: Adding ToolTip to the GridViewRow__
 
-{{region xaml-gridview-how-to-create-row-tooltip_5}}
+```XAML
 	<Style TargetType="telerik:GridViewRow">
 	    <Setter Property="ToolTipService.ToolTip" Value="MyToolTipText"/>
 	</Style>
-{{endregion}}
+```
 
 ## See Also
 

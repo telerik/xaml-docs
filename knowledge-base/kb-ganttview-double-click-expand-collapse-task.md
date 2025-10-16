@@ -22,8 +22,8 @@ How to add a double-click action that expands/collapses the clicked GanttTask in
 
 Subscribe to the `MouseDoubleClick` event on the RadGanttView control. Then, in the event handler use the `ExpandCollapseService` of the GanttView control to expand and collapse items. To get the collapse/expand state of the `GanttTask` objects, you can use the `GetItemWrapperByItemKey` of the `HierarchicalCollectionAdapter`.
 
-#### __[C#]__
-{{region kb-ganttview-double-click-expand-collapse-task-0}}
+
+```C#
 	private void RadGanttView_MouseDoubleClick(object sender, MouseButtonEventArgs args)
 	{
 		var gantt = (RadGanttView)sender;
@@ -44,4 +44,4 @@ Subscribe to the `MouseDoubleClick` event on the RadGanttView control. Then, in 
 			}
 		}                   
 	}
-{{endregion}}
+```

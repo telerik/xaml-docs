@@ -16,8 +16,8 @@ This article demonstrates how to create a custom drag cue that connects the drag
 
 The arrow visual used in this example is a custom Shape element that creates its geometry based on start and end points.
 
-#### __[C#] Example 1: Creating custom arrow visual__
-{{region dragdropmanager-howto-create-custom-drag-arrow-0}}
+__Example 1: Creating custom arrow visual__
+```C#
 	public sealed class ArrowShape : Shape
 	{
 		public double X1 { get; set; }
@@ -68,7 +68,7 @@ The arrow visual used in this example is a custom Shape element that creates its
 			return geometry;
 		}
 	}
-{{endregion}}
+```
 
 In order to update the geometry of the ArrowShape control when changing its X and Y values, call the __UpdateGeometry()__ method.
 
@@ -82,8 +82,8 @@ The behavior uses the __DragDropManager__ and its __DragInitialized, DragOver an
 
 The attached behavior also handles several additional cases - it allows to define a drag start threshold and also an offset between the mouse and the arrow's end point.
 
-#### __[C#] Example 2: Creating the dragdrop attached behavior that updates the arrow visual__
-{{region dragdropmanager-howto-create-custom-drag-arrow-1}}
+__Example 2: Creating the dragdrop attached behavior that updates the arrow visual__
+```C#
 	public static class DragDropManagerUtilities
     {
         private const double dragStartThreshold = 5;
@@ -196,14 +196,14 @@ The attached behavior also handles several additional cases - it allows to defin
             return Point.Subtract(new Point(x2, y2), new Point(x1, y1)).Length;
         }
     }
-{{endregion}}
+```
 
 ## Using the Custom Drag Arrow
 
 To demonstrate the custom drag arrow we will use two Border elements. A drag/drop opreation can be performed from one to the other.
 
-#### __[XAML] Example 3: Defining the view in XAML and setting the DragDropManagerUtilities.ShowArrowDragCue attached property__
-{{region dragdropmanager-howto-create-custom-drag-arrow-2}}
+__Example 3: Defining the view in XAML and setting the DragDropManagerUtilities.ShowArrowDragCue attached property__
+```XAML
 	<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -225,12 +225,12 @@ To demonstrate the custom drag arrow we will use two Border elements. A drag/dro
                        TextAlignment="Center" Foreground="White"/>
         </Border>
     </Grid>
-{{endregion}}
+```
 
 In order to use the DragDropManagerUtilities class logic you will need to set the __AllowedEffects__ of the drag operation to a value different than None. You can do this in the DragInitialize event handler.
 
-#### __[C#] Example 4: Implementing a basic drag/drop logic between the Border elements__
-{{region dragdropmanager-howto-create-custom-drag-arrow-3}}
+__Example 4: Implementing a basic drag/drop logic between the Border elements__
+```C#
 	public partial class MyUserControl : UserControl
     {
         public MyUserControl()
@@ -251,7 +251,7 @@ In order to use the DragDropManagerUtilities class logic you will need to set th
             MessageBox.Show("Dropped.");
         }
     }
-{{endregion}}
+```
 
 #### Figure 1: Custom drag arrow 
 ![dragdropmanager-howto-create-custom-drag-arrow-0.png](images/dragdropmanager-howto-create-custom-drag-arrow-0.png)

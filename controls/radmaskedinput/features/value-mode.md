@@ -14,10 +14,10 @@ position: 3
 
 __RadMaskedTextInput__ allows you to set the behavior of the Value property in a mask scenario (when the Mask property is set). By default the Value holds the characters without including the placeholders and the literals defined in the mask. You can alter this and allow the value to hold also literal and placeholders by setting the __ValueMode__ property of the control. The property is an enum of type ValueMode which contains several options described in the next sections.
 
-#### __[XAML] Example 1: Setting the value mode__
-{{region xaml-radmaskedinput-features-value-mode-0}}
+__Example 1: Setting the value mode__
+```XAML
 	<telerik:RadMaskedTextInput ValueMode="IncludeLiteralsAndPlaceholders"/>
-{{endregion}}
+```
 
 ## Plain mode
 

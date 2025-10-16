@@ -36,17 +36,17 @@ You can find the required assemblies for each control from the suite in the {% i
 
 In order to add a __RadContextMenu__ control to your __UserControl__ you have to declare the following namespace:
 
-#### __[XAML] Example 1__
+__Example 1__
 
-{{region xaml-contextmenu-getting-started_0}}
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+```
 
 This tutorial will show you how to attach a __RadContextMenu__ to a TextBox control. Here is the TextBox control definition.
 
-#### __[XAML] Example 2__
+__Example 2__
 
-{{region xaml-contextmenu-getting-started_1}}
+```XAML
 	<Grid x:Name="LayoutRoot"
 	      Background="White">
 	    <TextBox x:Name="InputBox"
@@ -54,16 +54,16 @@ This tutorial will show you how to attach a __RadContextMenu__ to a TextBox cont
 	             VerticalAlignment="Top">
 	    </TextBox>
 	</Grid>
-{{endregion}}
+```
 
 The next step is to set the __ContextMenu__ attached property of the __RadContextMenu__ class to the __TextBox__ control.
 
 {% if site.site_name == 'WPF' %}
 >*ContextMenu="{x:Null}"* is needed to override the default context menu of the textbox.
 
-#### __[XAML] Example 3__
+__Example 3__
 
-{{region xaml-contextmenu-getting-started_2}}
+```XAML
 	<Grid Background="White">
 	    <TextBox Width="200"
 	             VerticalAlignment="Top"
@@ -73,13 +73,13 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 	        </telerik:RadContextMenu.ContextMenu>
 	    </TextBox>
 	</Grid>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-#### __[XAML] Example 3__
+__Example 3__
 
-{{region xaml-contextmenu-getting-started_3}}
+```XAML
 	<TextBox Width="200"
 	         VerticalAlignment="Top"
 	         ContextMenu="{x:Null}">
@@ -93,7 +93,7 @@ The next step is to set the __ContextMenu__ attached property of the __RadContex
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 If you run the application and right-click on the TextBox you will see an empty context menu.
@@ -108,9 +108,9 @@ If you run the application and right-click on the TextBox you will see an empty 
 The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample declaration of several child menu items.
 
 {% if site.site_name == 'Silverlight' %}
-#### __[XAML] Example 4__
+__Example 4__
 
-{{region xaml-contextmenu-getting-started_5}}
+```XAML
 	<TextBox Width="200"
 	         VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
@@ -123,13 +123,13 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'WPF' %}
-#### __[XAML] Example 4__
+__Example 4__
 
-{{region xaml-contextmenu-getting-started_3}}
+```XAML
 	<TextBox Width="200"
 	         VerticalAlignment="Top"
 	         ContextMenu="{x:Null}">
@@ -143,7 +143,7 @@ The __RadContextMenu__ accepts __RadMenuItems__ as child items. Here is a sample
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 {% endif %}
 
 Here is a snapshot of the result.
@@ -203,8 +203,8 @@ To change the theme, you can follow the steps below:
 
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 5: Merge the ResourceDictionaries__  
-{{region xaml-radcontextmenu-getting-started_7}}
+__Example 5: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -214,7 +214,7 @@ __Example 5__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

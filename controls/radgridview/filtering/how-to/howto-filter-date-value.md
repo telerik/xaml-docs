@@ -16,9 +16,9 @@ Most probably, however, your __DateTime data contains a time part which is diffe
 
 A possible approach in the case when you also wish to filter out the **Time** portion is to handle the [FieldFilterEditorCreated]({%slug gridview-filtering-howto-customize-the-default-field-filter-editor%}) event and set the InputMode of the RadDateTimePicker editor to **DateTimePicker**. **Example 1** demonstrates how this can be achieved.
 
-#### __[C#] Example 1: Change the InputMode of the RadDateTimePicker filter editor to DateTimePicker__
+__Example 1: Change the InputMode of the RadDateTimePicker filter editor to DateTimePicker__
 
-{{region cs-gridview-filtering-howto-filter-date-time-value_0}}
+```C#
 	private void GridView_FieldFilterEditorCreated(object sender, Telerik.Windows.Controls.GridView.EditorCreatedEventArgs e)
 	{
 	    if (e.Column.UniqueName == "HireDate")
@@ -30,23 +30,23 @@ A possible approach in the case when you also wish to filter out the **Time** po
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 Another approach, if you want to filter only on the Date portion of the DateTime objects would be to __bind your column directly to the Date (or Year) property__ of the DateTime object.
 
-#### __[XAML] Example 2: Bind the column to the Date portion of the property__
+__Example 2: Bind the column to the Date portion of the property__
 
-{{region xaml-gridview-filtering-howto-filter-date-time-value_1}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding HireDate.Date}" />
-{{endregion}}
+```
 
 As an alternative solution, you can benefit from the [FilterMemberPath]({%slug gridview-filtering-basic%}#filtermemberpath) property of the column. You can use it to __filter the column on a property different from the one it displays__ in its cells.
 
-#### __[XAML] Example 3: Filter only on the Date portion of the property with FilterMemberPath__
+__Example 3: Filter only on the Date portion of the property with FilterMemberPath__
 
-{{region xaml-gridview-filtering-howto-filter-date-time-value_2}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding HireDate}" FilterMemberPath="HireDate.Date" />
-{{endregion}}
+```
 
 ## See Also
 

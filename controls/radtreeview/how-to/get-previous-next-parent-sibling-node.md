@@ -21,9 +21,9 @@ The __RadTreeViewItem__ class exposes properties which allow you to access:
 
 Here is a simple treeview declaration: 
 
-#### __XAML__
 
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_0}}
+
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -40,21 +40,21 @@ Here is a simple treeview declaration:
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_HowToGetPreviousNextSiblingParentNode_010.PNG)
 
 For example, you should attach to the __SelectionChanged__ event and in the event handler get the selected items. Find the treeview declaration and add the following attribute: 
 
-#### __XAML__
 
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_1}}
+
+```XAML
 	<telerik:RadTreeView Margin="8" x:Name="radTreeView" SelectionChanged="radTreeView_SelectionChanged">
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_2}}
+
+```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
 	{
 	    // Get a reference to the treeview
@@ -63,11 +63,8 @@ For example, you should attach to the __SelectionChanged__ event and in the even
 	    ObservableCollection<Object> selectedItems = treeView.SelectedItems;
 	    RadTreeViewItem item = selectedItems[ 0 ] as RadTreeViewItem;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_3}}
+```
+```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
 	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
@@ -77,7 +74,7 @@ For example, you should attach to the __SelectionChanged__ event and in the even
 	
 	    Dim item As RadTreeViewItem = TryCast(selectedItems(0), RadTreeViewItem)
 	End Sub
-{{endregion}}
+```
 
 ## Accessing the PreviousItem and PreviousSiblingItem 
 
@@ -87,9 +84,9 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 
 * If you select the treeview item with header "Indoor Cycling", then both of the properties will return you the treeview item with header "Road Cycling". 
 
-#### __C#__
 
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_4}}
+
+```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
 	{
 	    // Get a reference to the treeview
@@ -102,11 +99,8 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 	    RadTreeViewItem previousItem = item.PreviousItem;
 	    RadTreeViewItem previousSiblingItem = item.PreviousSiblingItem;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_5}}
+```
+```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
 	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
@@ -120,7 +114,7 @@ When you want to get the previous item in the hierarchy (no matter the level) yo
 	    Dim previousItem As RadTreeViewItem = item.PreviousItem
 	    Dim previousSiblingItem As RadTreeViewItem = item.PreviousSiblingItem
 	End Sub
-{{endregion}}
+```
 
 ## Accessing the NextItem and NextSiblingItem 
 
@@ -130,9 +124,9 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 
 * If you select the treeview item with header "Futsal", then both of the properties will return you the treeview item with header "Soccer". 
 
-#### __C#__
 
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_6}}
+
+```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
 	{
 	    // Get a reference to the treeview
@@ -148,11 +142,11 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 	    RadTreeViewItem nextItem = item.NextItem;
 	    RadTreeViewItem nextSiblingItem = item.NextSiblingItem;
 	}
-{{endregion}}
+```
 
-#### __XAML__
 
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_7}}
+
+```XAML
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
 	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
@@ -170,7 +164,7 @@ When you want to get the next item in the hierarchy (no matter the level) you ne
 	    Dim nextItem As RadTreeViewItem = item.NextItem
 	    Dim nextSiblingItem As RadTreeViewItem = item.NextSiblingItem
 	End Sub
-{{endregion}}
+```
 
 ## Accessing the ParentItem and RootItem 
 
@@ -180,9 +174,9 @@ If you want to get the parent item of the currently selected item, you should us
 
 * If you select the treeview item with header "Sport Categories", then the __ParentItem__ property will return you null, while the __RootItem__ property will return you the same treeview item (with header "Sport Categories"). 
 
-#### __C#__
 
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_8}}
+
+```C#
 	private void radTreeView_SelectionChanged( object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e )
 	{
 	    // Get a reference to the treeview
@@ -202,11 +196,8 @@ If you want to get the parent item of the currently selected item, you should us
 	    RadTreeViewItem parentItem = item.ParentItem;
 	    RadTreeViewItem rootItem = item.RootItem;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-get-previous-next-parent-sibling-node_9}}
+```
+```VB.NET
 	Private Sub radTreeView_SelectionChanged(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.SelectionChangedEventArgs)
 	    ' Get a reference to the treeview '
 	    Dim treeView As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
@@ -228,7 +219,7 @@ If you want to get the parent item of the currently selected item, you should us
 	    Dim parentItem As RadTreeViewItem = item.ParentItem
 	    Dim rootItem As RadTreeViewItem = item.RootItem
 	End Sub
-{{endregion}}
+```
 
 ## See Also
  * [Expand and Collapse Items]({%slug radtreeview-how-to-expand-and-collapse-items%})

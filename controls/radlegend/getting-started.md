@@ -39,8 +39,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 The RadLegend control is populated with data via its __Items__ collection. The collection is of type __LegendItemCollection__ and can be populated only with __LegendItem__ objects. By default the Items property is *null*.
 
-#### __[XAML] Example 1: Defining RadLegend in XAML__
-{{region radlegend-getting-started-0}}
+__Example 1: Defining RadLegend in XAML__
+```XAML
 	<telerik:RadLegend>
 	    <telerik:RadLegend.Items>
 	        <telerik:LegendItemCollection>
@@ -50,10 +50,10 @@ The RadLegend control is populated with data via its __Items__ collection. The c
 	        </telerik:LegendItemCollection>
 	    </telerik:RadLegend.Items>
 	</telerik:RadLegend>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining RadLegend in code__
-{{region radlegend-getting-started-1}}
+__Example 2: Defining RadLegend in code__
+```C#
 	RadLegend legend = new RadLegend();
 	legend.Items = new LegendItemCollection()
 	{
@@ -61,7 +61,7 @@ The RadLegend control is populated with data via its __Items__ collection. The c
 		new LegendItem() { Title = "Legend item 2", MarkerFill = new SolidColorBrush((Color)ColorConverter.ColorFromString("#FFCC3399")) },
 		new LegendItem() { Title = "Legend item 3", MarkerFill = new SolidColorBrush((Color)ColorConverter.ColorFromString("#FF5511BB")) },
 	};
-{{endregion}}
+```
 
 #### __Figure 1: RadLegend__
 ![{{ site.framework_name }} RadLegend RadLegend](images/radlegend-getting-started-0.png)

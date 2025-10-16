@@ -21,31 +21,27 @@ Furthermore, the API is extensible, so that you can implement a custom external 
 __RadRichTextBox's__ API exposes a method and a command for each of the three actions that can be performed against the clipboard: Cut, Copy and Paste. 
         
 
-#### __[C#] Example 1: Using the exposed methods to interact with the clipboard__
+__Example 1: Using the exposed methods to interact with the clipboard__
 
-{{region radrichtextbox-features-clipboard-support_0}}
+```C#
 
 	this.radRichTextBox.Copy();
 	this.radRichTextBox.Cut();
 	this.radRichTextBox.Paste();
-{{endregion}}
-
-
-#### __[VB.NET] Example 1: Using the exposed methods to interact with the clipboard__
-
-{{region radrichtextbox-features-clipboard-support_1}}
+```
+```VB.NET
 
 	Me.radRichTextBox.Copy()
 	Me.radRichTextBox.Cut()
 	Me.radRichTextBox.Paste()
-{{endregion}}
+```
 
 
 When building UI for the RichTextBox, the respective commands can be used:
 
-#### __[XAML] Example 2: Wiring UI to the commands related to the clipboard__
+__Example 2: Wiring UI to the commands related to the clipboard__
 
-{{region radrichtextbox-features-clipboard-support_2}}
+```XAML
 
 	<telerik:RadToolBar DataContext="{Binding ElementName=editor, Path=Commands}">
 	  <telerik:RadRibbonButton telerik:ScreenTip.Title="Cut"
@@ -58,7 +54,7 @@ When building UI for the RichTextBox, the respective commands can be used:
 	  			   telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=PasteCommand}"
 				   Text="Paste" />
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 >Note that the attached __telerik:RadRichTextBoxRibbonUI.RichTextCommand__ property works only with Ribbon buttons. With regular RadButtons and other buttons, you should use their __Command__ property instead.
           
@@ -97,9 +93,9 @@ Each Clipboard Handler contains the following properties:
 For instance, here is how you can clear the default clipboard handlers and add only a handler which uses __TxtFormatProvider__. In this way only plain text will be pasted when you copy from a source such as another rich text editor or a browser.
           
 
-#### __[C#] Example 3: Change the ClipboardHandlers__
+__Example 3: Change the ClipboardHandlers__
 
-{{region radrichtextbox-features-clipboard-support_3}}
+```C#
 
     ClipboardEx.ClipboardHandlers.Clear();
 
@@ -108,13 +104,8 @@ For instance, here is how you can clear the default clipboard handlers and add o
     clipboardHandler.DocumentFormatProvider = new TxtFormatProvider();
 
     ClipboardEx.ClipboardHandlers.Add(clipboardHandler);
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 3: Change the ClipboardHandlers__
-
-{{region radrichtextbox-features-clipboard-support_4}}
+```
+```VB.NET
 
     ClipboardEx.ClipboardHandlers.Clear()
 
@@ -123,7 +114,7 @@ For instance, here is how you can clear the default clipboard handlers and add o
     clipboardHandler.DocumentFormatProvider = New TxtFormatProvider()
 
     ClipboardEx.ClipboardHandlers.Add(clipboardHandler)
-{{endregion}}
+```
 
 
 
@@ -168,7 +159,7 @@ This class provides you with methods allowing you to easily work with the framew
 
 #### **[C#] Example 4: Working with the content of the clipboard**
 
-{{region radrichtextbox-features-clipboard-support_7}}
+```C#
 
     private void RadRichTextBox_CommandExecuting(object sender, CommandExecutingEventArgs e)
     {
@@ -187,12 +178,12 @@ This class provides you with methods allowing you to easily work with the framew
             this.radRichTextBox.InsertFragment(new DocumentFragment(document));
         }
     }
-{{endregion}}
+```
     
     
 #### **[VB.NET] Example 4: Working with the content of the clipboard**
 
-{{region radrichtextbox-features-clipboard-support_8}}
+```VB.NET
 
     Private Sub RadRichTextBox_CommandExecuting(ByVal sender As Object, ByVal e As CommandExecutingEventArgs)
         If TypeOf e.Command Is PasteCommand Then
@@ -204,7 +195,7 @@ This class provides you with methods allowing you to easily work with the framew
             Me.radRichTextBox.InsertFragment(New DocumentFragment(document))
         End If
     End Sub
-{{endregion}}
+```
     
 {% endif %}
 
@@ -216,9 +207,9 @@ In order to work around the limitation of the plain text only clipboard in Silve
 In that regard, we have introduced an interface – __IExternalClipboard__, which contains the following members:
           
 
-#### __[C#] Example 3: IExternalClipboard__
+__Example 3: IExternalClipboard__
 
-{{region radrichtextbox-features-clipboard-support_5}}
+```C#
 
     public interface IExternalClipboard
     {
@@ -226,19 +217,19 @@ In that regard, we have introduced an interface – __IExternalClipboard__, whic
         DocumentFragment GetFragment();
         void SetFragment(DocumentFragment fragment);
     }
-{{endregion}}
+```
 
 
 
 Basically, you should implement the interface and set the static property of __ClipboardEx__ named __ExternalClipboard__:
           
 
-#### __[C#] Example 4: Setting external clipboard__
+__Example 4: Setting external clipboard__
 
-{{region radrichtextbox-features-clipboard-support_6}}
+```C#
 
 	ClipboardEx.ExternalClipboard = new RichTextExternalClipboard();
-{{endregion}}
+```
 
 
 

@@ -20,9 +20,9 @@ There are two key properties that control the Height of the TimeRuler:
 
 * __MaxTimeRulerExtent__- gets or sets the maximum height of the TimeRuler in pixels. If the viewport is bigger than this value, empty space will appear below the time ruler.
 
-#### __XAML__
 
-{{region radscheduleview-end-user-capabilities-timerulerconfiguration_0}}
+
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"  
 	                          MinTimeRulerExtent="300" 
 	                          MaxTimeRulerExtent="600" >
@@ -32,7 +32,7 @@ There are two key properties that control the Height of the TimeRuler:
 	                <telerik:TimelineViewDefinition />
 	            </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 The TimeRuler resizes according the size of the RadScheduleView until the TimeRuler extend is between the Min/MaxTimeRulerExtent properties.
 

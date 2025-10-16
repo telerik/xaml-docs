@@ -41,12 +41,12 @@ How to remove indenting from `IconTemplate` of the `RadNavigationView` element.
 
 Use the [ChildrenOfType]({%slug common-visual-tree-helpers%}) extension method to get the `Grid` panel with `x:Name` set to "ItemContentGrid" and change the `Width` of the first `ColumnDefinition` .
 
-#### __[C#]__
-{{region kb-icontemplate-remove-indenting-0}}
+
+```C#
 	private void RadNavigationViewItem_Loaded(object sender, RoutedEventArgs e)
 	{
 		var itemContainer = (RadNavigationViewItem)sender;
 		var panel = itemContainer.ChildrenOfType<Grid>().FirstOrDefault(x => x.Name == "ItemContentGrid");
 		panel.ColumnDefinitions[0].Width = new GridLength(0);
 	}
-{{endregion}}
+```

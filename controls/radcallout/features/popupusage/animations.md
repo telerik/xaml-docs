@@ -25,17 +25,17 @@ The complete customization of the RadCallout animation is done from the __Callou
 
 For this tutorial, we are going to show the RadCallout inside a Popup on a button click and animate its opening and closing state. First, we need to define our RadButton control and subscribe to its __Click__ event.
 
-#### __[XAML] Example 1: Defining RadButton__
-{{region xaml-radcallout-features-animations-0}}
+__Example 1: Defining RadButton__
+```XAML
     <Grid>        
 		<telerik:RadButton Content="My Button" VerticalAlignment="Center" HorizontalAlignment="Center" Click="RadButton_Click" />
 	</Grid>
-{{endregion}}
+```
 
 In the click event handler, we can declare our RadCallout control. To show the control, we need to use the CalloutPopupService.Show() static method. The third parameter (not required) of this method accepts CalloutPopupSettings object. You can use these settings, for example, to change the position of the __Popup__, add animation, etc.
 
-#### __[C#] Example 2: Setting RadCallout in code behind__
-{{region csharp-radcallout-features-animations-1}}
+__Example 2: Setting RadCallout in code behind__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout" };
@@ -49,7 +49,7 @@ In the click event handler, we can declare our RadCallout control. To show the c
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 1: Popup animation__
 ![{{ site.framework_name }} RadCallout Popup animation](images/radcallout-features-animations_1.gif)
@@ -61,8 +61,8 @@ Several different built-in animations can be used to animate RadCallout placed i
 >To learn more about the easing functions you can take a look at this [MSDN help article](
 https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPError=-2147217396).
 
-#### __[C#] Example 3: Show and Close Animation with Easing functions applied__
-{{region csharp-radcallout-features-animations-4}}
+__Example 3: Show and Close Animation with Easing functions applied__
+```C#
 	private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout" };
@@ -80,7 +80,7 @@ https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPE
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 2: Animated Popup with Easing functions__
 ![{{ site.framework_name }} RadCallout Animated Popup with Easing functions](images/radcallout-features-animations_easing.gif)
@@ -89,8 +89,8 @@ https://msdn.microsoft.com/en-us/library/ee308751%28v=VS.100%29.aspx?f=255&MSPPE
 
 The __CalloutAnimation.Fade__ animation fades the Popup control opening/closing effect. 
 
-#### __[C#] Example 4: Setting Fade Animation__
-{{region csharp-radcallout-features-animations-5}}
+__Example 4: Setting Fade Animation__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout", CalloutType= CalloutType.Cloud };
@@ -108,7 +108,7 @@ The __CalloutAnimation.Fade__ animation fades the Popup control opening/closing 
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 3: Fade animation for opening and closing state__
 ![{{ site.framework_name }} RadCallout Fade animation for opening and closing state](images/radcallout-features-animations_fade_cloud.gif)
@@ -117,8 +117,8 @@ The __CalloutAnimation.Fade__ animation fades the Popup control opening/closing 
 
 The __CalloutAnimation.Move__ animation adds a moving effect to the opening/closing state of the Popup. 
 
-#### __[C#] Example 5: Setting Move Animation__
-{{region csharp-radcallout-features-animations-6}}
+__Example 5: Setting Move Animation__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout", CalloutType= CalloutType.Ellipse };
@@ -136,7 +136,7 @@ The __CalloutAnimation.Move__ animation adds a moving effect to the opening/clos
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 4: Move animation for opening and closing state__
 ![{{ site.framework_name }} RadCallout Move animation for opening and closing state](images/radcallout-features-animations_move_ellipse.gif)
@@ -145,8 +145,8 @@ The __CalloutAnimation.Move__ animation adds a moving effect to the opening/clos
 
 The __CalloutAnimation.FadeAndMove__ animation is represented by a combination of __Fade__ and __Move__ animations.
 
-#### __[C#] Example 6: Setting FadeAndMove Animation__
-{{region csharp-radcallout-features-animations-7}}
+__Example 6: Setting FadeAndMove Animation__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout", CalloutType= CalloutType.Kaboom };
@@ -164,7 +164,7 @@ The __CalloutAnimation.FadeAndMove__ animation is represented by a combination o
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 5: FadeAndMove animation for opening and closing state__
 ![{{ site.framework_name }} RadCallout FadeAndMove animation for opening and closing state](images/radcallout-features-animations_fademove_kaboom.gif)
@@ -173,8 +173,8 @@ The __CalloutAnimation.FadeAndMove__ animation is represented by a combination o
 
 The __CalloutAnimation.Reveal__ animation animates the clipping effect to the control.
 
-#### __[C#] Example 7: Setting Reveal Animation__
-{{region csharp-radcallout-features-animations-8}}
+__Example 7: Setting Reveal Animation__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout", CalloutType= CalloutType.Rectangle };
@@ -192,7 +192,7 @@ The __CalloutAnimation.Reveal__ animation animates the clipping effect to the co
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 6: Reveal animation for opening and closing state__
 ![{{ site.framework_name }} RadCallout Reveal animation for opening and closing state](images/radcallout-features-animations_reveal_rectangle.gif)
@@ -201,8 +201,8 @@ The __CalloutAnimation.Reveal__ animation animates the clipping effect to the co
 
 The __CalloutAnimation.FadeAndReveal__ animation is represented by a combination of __Fade__ and __Reveal__ animations.
 
-#### __[C#] Example 8: Setting FadeAndReveal Animation__
-{{region csharp-radcallout-features-animations-9}}
+__Example 8: Setting FadeAndReveal Animation__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout", CalloutType= CalloutType.RoundedRectangle };
@@ -220,7 +220,7 @@ The __CalloutAnimation.FadeAndReveal__ animation is represented by a combination
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 7: FadeAndReveal animation for opening and closing state__
 ![{{ site.framework_name }} RadCallout FadeAndReveal animation for opening and closing state](images/radcallout-features-animations_fadereveal_roundedrectangle.gif)
@@ -229,8 +229,8 @@ The __CalloutAnimation.FadeAndReveal__ animation is represented by a combination
 
 The __CalloutAnimation.Scale__ animation controls the scale of the object. This animation uses the center point of the control for scaling.
 
-#### __[C#] Example 9: Setting Scale Animation__
-{{region csharp-radcallout-features-animations-10}}
+__Example 9: Setting Scale Animation__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout", CalloutType= CalloutType.Cloud };
@@ -248,7 +248,7 @@ The __CalloutAnimation.Scale__ animation controls the scale of the object. This 
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 8: Scale animation for opening and closing state__
 ![{{ site.framework_name }} RadCallout Scale animation for opening and closing state](images/radcallout-features-animations_scale_cloud.gif)
@@ -257,8 +257,8 @@ The __CalloutAnimation.Scale__ animation controls the scale of the object. This 
 
 The __CalloutAnimation.FadeAndScale__ animation is represented by a combination of __Fade__ and __Scale__ animations.
 
-#### __[C#] Example 10: Setting FadeAndScale Animation__
-{{region csharp-radcallout-features-animations_11}}
+__Example 10: Setting FadeAndScale Animation__
+```C#
     private void RadButton_Click(object sender, RoutedEventArgs e)
 	{
 		RadCallout callout = new RadCallout() { Background = Brushes.DeepSkyBlue, Content = "My Callout", CalloutType= CalloutType.Ellipse };
@@ -276,7 +276,7 @@ The __CalloutAnimation.FadeAndScale__ animation is represented by a combination 
 
 		CalloutPopupService.Show(callout, sender as FrameworkElement, settings);
 	}
-{{endregion}}
+```
 
 #### __Figure 9: FadeAndScale animation for opening and closing state__
 ![{{ site.framework_name }} RadCallout FadeAndScale animation for opening and closing state](images/radcallout-features-animations_fadescale_ellipse.gif)
@@ -285,14 +285,14 @@ The __CalloutAnimation.FadeAndScale__ animation is represented by a combination 
 
 To globally disable the animation for all Popups elements holding RadCallout controls, CalloutPopupService.IsAnimationEnabled static property can be set to false.
 
-#### __[C#] Example 11: Disable Animation__
-{{region csharp-radcallout-features-animations-12}}
+__Example 11: Disable Animation__
+```C#
 	public MainWindow()
 	{           
 		InitializeComponent();
 		CalloutPopupService.IsAnimationEnabled = false;
 	}
-{{endregion}}
+```
 
 ## See Also
 

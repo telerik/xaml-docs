@@ -21,31 +21,29 @@ __RadToggleButton__ inherits from the native __ToggleButton__ control and implem
 
 You can instantiate __RadToggleButton__ in both XAML and code as shown in Examples 1 and 2.
 
-#### __[XAML] Example 1: Defining a button in XAML__
-{{region xaml-radbuttons-features-toggle-button_0}}
+__Example 1: Defining a button in XAML__
+```XAML
 	<telerik:RadToggleButton Content="Toggle Me!" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining a button in code__
-{{region cs-radbuttons-features-toggle-button_1}}
+__Example 2: Defining a button in code__
+```C#
 	RadToggleButton radToggleButton = new RadToggleButton() { Content = "Toggle Me!" };
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a button in code__
-{{region vb-radbuttons-features-toggle-button_2}}
+```
+```VB.NET
 	Dim radToggleButton As New RadToggleButton() With { _
 	    .Content = "Toggle Me!" _
 	}
-{{endregion}}
+```
 
 ## Enable Three State Mode
 
 To make __RadToggleButton__ to go into a three state mode you can just set its __IsThreeState__ property to __True__.
 
-#### __[XAML] Example 5: Enabling the three-state mode__
-{{region xaml-radbuttons-features-toggle-button_6}}
+__Example 5: Enabling the three-state mode__
+```XAML
 	<telerik:RadToggleButton IsThreeState="True" />
-{{endregion}}
+```
 
 ## Toggle Events
 
@@ -61,25 +59,23 @@ The toggle state of the button can be manually controlled via its __IsChecked__ 
 
 Here is an example of handling the __Checked__ event of a button.
 
-#### __[XAML] Example 3: Subscribing to the Checked event__
-{{region xaml-radbuttons-features-toggle-button_3}}
+__Example 3: Subscribing to the Checked event__
+```XAML
 	<telerik:RadToggleButton Content="Toggle Me!" Checked="RadToggleButton_Checked" />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Defining a Checked event handler__
-{{region cs-radbuttons-features-toggle-button_4}}
+__Example 4: Defining a Checked event handler__
+```C#
 	private void RadToggleButton_Checked(object sender, RoutedEventArgs e)
 	{
 	    //implement your logic here
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining a Checked event handler__
-{{region vb-radbuttons-features-toggle-button_5}}
+```
+```VB.NET
 	Private Sub RadToggleButton_Checked(sender As Object, e As RoutedEventArgs)
 	    'implement your logic here'
 	End Sub
-{{endregion}}
+```
 
 ## Customizing RadToggleButton
 

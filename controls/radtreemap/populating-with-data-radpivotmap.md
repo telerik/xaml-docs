@@ -14,20 +14,17 @@ __RadPivotMap__ expects data in tabular format and displays a treemap with group
 
 Assuming that you have the following class:
 
-#### __[C#] Example 1__
+__Example 1__
 
-{{region cs-radtreemap-populating-with-data-radpivotmap_0}}
+```C#
 	public class TestData
 	{
 	     public int Value { get; set; }
 	     public string Category { get; set; }
 	     public string Subcategory { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1__
-
-{{region radtreemap-populating-with-data-radpivotmap_1}}
+```
+```VB.NET
 	Private _category As String
 	    Public Property Category() As String
 	        Get
@@ -55,13 +52,13 @@ Assuming that you have the following class:
 	            _Subcategory = value
 	        End Set
 	    End Property
-{{endregion}}
+```
 
 Using the above class we can now create sample data.
 
-#### __[C#] Example 2__
+__Example 2__
 
-{{region radtreemap-populating-with-data-radpivotmap_0}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -74,13 +71,13 @@ Using the above class we can now create sample data.
 			new TestData { Category = "E", Subcategory = "200", Value = 30 },
 		};
 	}
-{{endregion}}
+```
 
 To bind the __RadPivotMap__ you should use the *__GroupDefinition__* collection and add several __GroupDefinitions__ - one for each of the properties as presented in the class. The __ValuePath__ property specifies from where the data should be taken. We can also change the color of the groups using [Colorizer]({%slug radtreemap-mappings%}).
 
-#### __[XAML] Example 3__
+__Example 3__
 
-{{region xaml-radtreemap-populating-with-data-radpivotmap_2}}
+```XAML
 	<Window.Resources>
 		<telerik:PaletteBrushes x:Key="PivotMapBrushes">
 			<SolidColorBrush Color="#69C7D3" />
@@ -104,7 +101,7 @@ To bind the __RadPivotMap__ you should use the *__GroupDefinition__* collection 
 			<telerik:GroupDefinition Member="SubCategory" />
 		</telerik:RadPivotMap.GroupDefinitions>
 	</telerik:RadPivotMap>
-{{endregion}}
+```
 
 #### __Figure 1__
 ![Telerik {{ site.framework_name }} PivotMap](images/radpivotmap-databinding.png)

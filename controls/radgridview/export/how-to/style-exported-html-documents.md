@@ -31,9 +31,9 @@ When using the ElementExporting event, the type of the VisualParameters property
 For example:
         
 
-#### __[C#] Example 1: Set the properties of the VisualParameters:__
+__Example 1: Set the properties of the VisualParameters:__
 
-{{region cs-gridview-export-html_1}}
+```C#
 	private void clubsGrid_ElementExporting_1(object sender, GridViewElementExportingEventArgs e)
 	{
 	    if (e.VisualParameters is GridViewHtmlVisualExportParameters)
@@ -50,7 +50,7 @@ For example:
 	        param.Width = 500;
 	    }
 	}
-{{endregion}}
+```
 
 You can read more about the export events [here]({%slug gridview-export-events%}).
 

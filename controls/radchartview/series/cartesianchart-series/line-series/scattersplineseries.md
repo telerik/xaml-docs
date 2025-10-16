@@ -21,8 +21,8 @@ This series is visualized on the screen as a smooth line connecting all data poi
 
 You can use the following definition to display a simple ScatterSplineSeries
 
-#### __[XAML] Example 1: Declaring a ScatterSplineSeries in XAML__
-{{region radchartview-series-scattersplineseries_0}}
+__Example 1: Declaring a ScatterSplineSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:LinearAxis/>
@@ -44,7 +44,7 @@ You can use the following definition to display a simple ScatterSplineSeries
 		</telerik:ScatterSplineSeries>
 	</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: ScatterSplineSeries visual appearance__
 ![radchartview-series-scattersplineseries](images/radchartview-series-scattersplineseries.png)
@@ -61,9 +61,9 @@ You can use the following definition to display a simple ScatterSplineSeries
 
 You can use the __YValueBinding__ and __XValueBinding__ properties of the ScatterSplineSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-scatterlineseries_1}}
+```C#
 	public class PlotInfo
     {
         public double XValue { get; set; }
@@ -76,21 +76,21 @@ You can use the __YValueBinding__ and __XValueBinding__ properties of the Scatte
 		new PlotInfo() { XValue = 0, YValue = 2},
 		//....
 	};
-{{endregion}}		
+```		
 
-#### __[XAML] Example 3: Specify a ScatterSplineSeries in XAML__
-{{region radchartview-series-scatterlineseries_2}}
+__Example 3: Specify a ScatterSplineSeries in XAML__
+```XAML
 	<telerik:ScatterSplineSeries ItemsSource="{Binding}" YValueBinding="YValue" XValueBinding="XValue"/>
-{{endregion}}
+```
 
 ## Spline Tension
 
 The spline-type series provide two properties allowing to control the additional points calculated for the spline of the line. The tension is controlled via the `SplineTension` property. The tension works with relative values between 0 and 1. The defualt tension is set to `0.5d`.
 
-#### __[XAML] Example 4: Setting SplineTension__
-{{region radchartview-series-scatterlineseries_3}}	
+__Example 4: Setting SplineTension__
+```XAML	
 	 <telerik:ScatterSplineSeries SplineTension="0.4" />
-{{endregion}}
+```
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
@@ -98,10 +98,10 @@ __Spline tension 0.8 (left) and 0.4 (right)__
 
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calcuated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
-#### __[XAML] Example 5: Setting SplinePointsDistanceFactor__
-{{region radchartview-series-scatterlineseries_4}}	
+__Example 5: Setting SplinePointsDistanceFactor__
+```XAML	
 	 <telerik:ScatterSplineSeries SplinePointsDistanceFactor="0.18" />
-{{endregion}}
+```
 
 __SplinePointsDistanceFactor set to 0.18__
 

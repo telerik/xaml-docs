@@ -23,8 +23,8 @@ How to resize the star shapes in RadRating in newer Telerik themes (Material and
 
 To change the size of the stars in `RadRating`, you can use a custom attached property that finds the `RadGlyph` elements and sets their `FontSize`. The property can be assigned to the `RadRatingItem` elements using an implicit style.
 
-#### __[C#] Defining the attached property__
-{{region kb-rating-resize-item-symbols-0}}
+__Defining the attached property__
+```C#
      public static class RadGlyphUtilities
     {
         public static double GetFontSize(DependencyObject obj)
@@ -79,17 +79,17 @@ To change the size of the stars in `RadRating`, you can use a custom attached pr
             }
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Using the attached property__
-{{region kb-rating-resize-item-symbols-0}}
+__Using the attached property__
+```XAML
 	<Window.Resources>
 		<Style TargetType="{x:Type telerik:RadRatingItem}">
 			<Setter Property="MaxWidth" Value="15" />
 			<Setter Property="local:RadGlyphUtilities.FontSize" Value="14" />
 		</Style>
 	</Window.Resources>
-{{endregion}}
+```
 
 
 

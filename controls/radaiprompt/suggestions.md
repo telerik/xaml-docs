@@ -12,8 +12,8 @@ position: 3
 
 The `RadAIPrompt` control allows you to define suggestions for the user prior to initiating a request. To do so, set the `AreSuggestionsVisible` property to __True__ of RadAIPrompt and add entries of the type of __string__ to its `Suggestions` collection. The Suggestions property expects a collection that implements the `IEnumerable` interface.
 
-#### __[C#] Showing Suggestions in the RadAIPrompt__
-{{region radaiprompt-suggestions-0}}
+__Showing Suggestions in the RadAIPrompt__
+```C#
     <telerik:RadAIPrompt x:Name="aiPrompt" AreSuggestionsVisible="True">
         <telerik:RadAIPromptInputItem />
         <telerik:RadAIPrompt.Suggestions>
@@ -27,7 +27,7 @@ The `RadAIPrompt` control allows you to define suggestions for the user prior to
             </x:Array>
         </telerik:RadAIPrompt.Suggestions>
     </telerik:RadAIPrompt>
-{{endregion}}
+```
 
 __RadAIPrompt with suggestions__
 
@@ -44,8 +44,8 @@ RadAIPrompt control exposes properties that will allow you to customize the appe
 
 The following example showscases the RadAIPrompt when the above properties are used:
 
-#### __[C#] Defining a sample model and a view model__
-{{region radaiprompt-suggestions-1}}
+__Defining a sample model and a view model__
+```C#
     public class SuggestionItem
     {
         public string SuggestionItemName { get; set; }
@@ -64,10 +64,10 @@ The following example showscases the RadAIPrompt when the above properties are u
 
         public ObservableCollection<SuggestionItem> SuggestionItems { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML] Defining the RadAIPrompt and its properties__
-{{region radaiprompt-suggestions-2}}
+__Defining the RadAIPrompt and its properties__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:SuggestionsViewModel/>
@@ -100,7 +100,7 @@ The following example showscases the RadAIPrompt when the above properties are u
             </telerik:RadAIPrompt.SuggestionsExpanderStyle>
         </telerik:RadAIPrompt>
     </Grid>
-{{endregion}}
+```
 
 __RadAIPrompt suggestions with custom appearance__
 

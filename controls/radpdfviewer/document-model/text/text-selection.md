@@ -18,11 +18,11 @@ __RadPdfViewer__ supports selection both through the UI and programmatically.
 
 In order to be able to select text from the UI, __RadPdfViewer__ must be in TextSelection mode. The mode of the viewer is specified by the __Mode__ property, which could be set as show in **Example 1**.
 
-#### __[C#] Example 1: Setting mode to RadPdfViewer__
+__Example 1: Setting mode to RadPdfViewer__
 
-{{region radpdfviewer-text-text-selection_0}}
+```C#
 	this.pdfViewer.Mode = Telerik.Windows.Documents.Fixed.UI.FixedDocumentViewerMode.TextSelection;
-{{endregion}}
+```
 
 
 
@@ -65,16 +65,16 @@ The methods for manipulating the selection include:
 
 **Example 2** demonstrates how the functionality of __TextPosition__ can be combined with that of __TextSelection__ in order to select the word that the caret is currently positioned in.
 
-#### __[C#] Example 2: Using TextPosition and TextSelection classes__
+__Example 2: Using TextPosition and TextSelection classes__
 
-{{region radpdfviewer-text-text-selection_1}}
+```C#
 	TextPosition start = new TextPosition(this.pdfViewer.Document.CaretPosition);
 	start.MoveToCurrentWordStart();
 	TextPosition end = new TextPosition(this.pdfViewer.Document.CaretPosition);
 	end.MoveToCurrentWordEnd();
 	this.pdfViewer.Document.Selection.SetSelection(start, end);
 	MessageBox.Show(this.pdfViewer.Document.Selection.GetSelectedText());
-{{endregion}}
+```
 
 
 
@@ -87,9 +87,9 @@ The methods for manipulating the selection include:
 
 #### **[C#] Example 3: Attaching to SelectionChanged**
 
-{{region radpdfviewer-text-text-selection_2}}
+```C#
 	 this.pdfViewer.Document.Selection.SelectionChanged += Selection_SelectionChanged;
-{{endregion}}
+```
 
 ## See Also
 

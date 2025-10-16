@@ -47,9 +47,9 @@ At this point, if you fill your panel with RadControls, you will have a function
 
 The next example demonstrates how to build a "Font" like __RadRibbonGroup__ using the __RadOrderedWrapPanel__.				
 
-#### __XAML__
 
-{{region radribbonview-ordered-wrap-panel_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" 
 	                                Title="My Title"
 	                                ApplicationName="My Application">
@@ -138,7 +138,7 @@ The next example demonstrates how to build a "Font" like __RadRibbonGroup__ usin
 	        </telerik:RadRibbonGroup>
 	    </telerik:RadRibbonTab>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadRibbonView RadOrderedWrapPanel Fonts Layout](images/RadRibbonView_Ordered_WrapPanel_Sample.png)
 
@@ -146,10 +146,10 @@ The next example demonstrates how to build a "Font" like __RadRibbonGroup__ usin
 
 The __CompressedThreshold__  property allows you to specify when the panel goes into __Compressed__ mode. For example, you may set this property to __CollapseThreshold.Never__.				
 
-#### __XAML__
-{{region radribbonview-ordered-wrap-panel_1}}
+
+```XAML
 	<telerik:RadOrderedWrapPanel CompressedThreshold="Never">
-{{endregion}}
+```
 
 In this case the panel never goes into __Compressed__ state, even though there isn't enough space to display all of its children.				
 
@@ -162,10 +162,10 @@ The next snapshot shows you the wrap panel from the first example in __compresse
 
 For example, you may wish to change the groups order. In this case you should set the __RadOrderedWrapPanel__'s __CompressedItemsOrder__ property. You can do it in XAML by specifying a comma-delimited list of integers like in the example below.				
 
-#### __XAML__
-{{region radribbonview-ordered-wrap-panel_2}}
+
+```XAML
 	<telerik:RadOrderedWrapPanel CompressedItemsOrder="0,3,2,4,1">
-{{endregion}}
+```
 
 And the result is shown on the next snapshot. Note how the order of the groups is altered.
 ![{{ site.framework_name }} RadRibbonView RadOrderedWrapPanel Compressed Order](images/RadRibbonView_Ordered_WrapPanel_CompressedOrder.png)

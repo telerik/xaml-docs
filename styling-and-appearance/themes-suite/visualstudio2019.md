@@ -255,10 +255,10 @@ The general naming convention is: `VisualStudio2019Palette.Palette.[name]Color` 
 
 Changing the colors can be achieved in code behind.
 
-#### __[C#] Setting palette colors__
-{{region cs-styling-appearance-visualstudio2019-theme-0}}
+__Setting palette colors__
+```C#
 	VisualStudio2019Palette.Palette.AccentColor = Color.FromRgb(255, 0, 0);
-{{endregion}}
+```
 
 ## Other Properties
 
@@ -269,14 +269,14 @@ Changing the colors can be achieved in code behind.
 
 Since the __R2 2021__ release of the __UI for WPF__ suite the VisualStudio2019 theme offers two color variations. The `Blue` variation corresponds to the Visual Studio 2019 IDE's Blue theme, and the `Dark` - to the Dark theme. The following example demonstrates the ability to switch between the supported Blue and Dark color palettes by calling the `LoadPreset` method as shown below:
 
-#### __[C#] Changing the color variation of the theme__
-{{region cs-styling-appearance-visualstudio2019-theme-1}}
+__Changing the color variation of the theme__
+```C#
 	//default color variation 
 	VisualStudio2019Palette.LoadPreset(VisualStudio2019Palette.ColorVariation.Blue);   
 
 	//Dark color variation 
 	VisualStudio2019Palette.LoadPreset(VisualStudio2019Palette.ColorVariation.Dark); 
-{{endregion}}
+```
 
 __VisualStudio2019 theme color variations__
 
@@ -296,25 +296,25 @@ The default font used in the theme is `Segoe UI`.
 
 The following shows the default font sizes and families.
 
-#### __[C#] Default FontSize__
-{{region cs-styling-appearance-visualstudio2019-theme-2}}
+__Default FontSize__
+```C#
 	VisualStudio2019Palette.Palette.FontSizeXS = 10;
 	VisualStudio2019Palette.Palette.FontSizeS = 11;
 	VisualStudio2019Palette.Palette.FontSize = 12;
 	VisualStudio2019Palette.Palette.FontSizeL = 13;
 	VisualStudio2019Palette.Palette.FontSizeXL = 20;
-{{endregion}}
+```
 
 This example shows how to change the default FontFamily from "Segoe UI" to "Calibri Italic" and the FontSize from __12__ to __16__.
 
-#### __[C#] Changing the theme's FontSize and FontFamily__
-{{region cs-styling-appearance-visualstudio2019-theme-3}}
+__Changing the theme's FontSize and FontFamily__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e)
 	{
 		VisualStudio2019Palette.Palette.FontSize = 16;
 		VisualStudio2019Palette.Palette.FontFamily = new FontFamily("Calibri Italic");
 	}
-{{endregion}}
+```
 
 __Setting FontSize and FontFamily__
 
@@ -332,15 +332,15 @@ The [ThemeHelper]({%slug styling-appearance-theme-helper%}) class is used in the
 
 This example shows a `RadToggleButton` control with modified brushes for its different states through the `ThemeHelper` class:
 
-#### __[XAML] Set RadToggleButton's visual appearance through the ThemeHelper class__
-{{region xaml-styling-appearance-visualstudio2019-theme-0}}
+__Set RadToggleButton's visual appearance through the ThemeHelper class__
+```XAML
 	<telerik:RadToggleButton Content="RadButton" 
 							 Margin="10"
 							 xmlns:helpers="clr-namespace:Telerik.Windows.Controls.Theming.Helpers;assembly=Telerik.Windows.Controls"
 							 helpers:ThemeHelper.MouseOverBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMouseOverBrush}"
 							 helpers:ThemeHelper.PressedBrush="{telerik:VisualStudio2019Resource ResourceKey=ValidationBrush}"
 							 helpers:ThemeHelper.CheckedBrush="{telerik:VisualStudio2019Resource ResourceKey=AccentMainBrush}"/>
-{{endregion}}
+```
 
 __Appearance of the RadToggleButton in the different states__
 ![RadToggleButton States](images/visualstudio2019-theme-togglebutton-states.png)
@@ -349,24 +349,22 @@ __Appearance of the RadToggleButton in the different states__
 
 If you need to change the opacity of the disabled and read-only elements, you can easily do so by using the `DisabledOpacity` and `ReadOnlyOpacity` properties of the VisualStudio2019Palette. The default values are __0.3__ and __0.6__ respectively. 
 
-#### __[C#] Changing the opacity__		
-{{region cs-styling-appearance-visualstudio2019-theme-4}}
+__Changing the opacity__		
+```C#
 	VisualStudio2019Palette.Palette.DisabledOpacity = 0.5;
 	VisualStudio2019Palette.Palette.ReadOnlyOpacity = 0.5;
-{{endregion}}
-	
-#### __[VB.NET] Changing the opacity__		
-{{region vb-styling-appearance-visualstudio2019-theme-0}}
+```
+```VB.NET
 	VisualStudio2019Palette.Palette.DisabledOpacity = 0.5
 	VisualStudio2019Palette.Palette.ReadOnlyOpacity = 0.5
-{{endregion}}
+```
 
 ## Merging Modified Palette Resources With StyleManager Theming Approach
 
 When modifying fonts, colors, or other resources from the `VisualStudio2019Palette` and `StyleManager` is used as theming mechanism, the theme's `ResourceDictionary` needs to be merged in __App.xaml__ file to apply the changes.
 
-#### __[XAML] Merging the theme's ResourceDictionary in App.xaml__
-{{region xaml-styling-appearance-visualstudio2019-theme-1}}
+__Merging the theme's ResourceDictionary in App.xaml__
+```XAML
 	<Application.Resources> 
 	    <ResourceDictionary> 
 	        <ResourceDictionary.MergedDictionaries> 
@@ -374,7 +372,7 @@ When modifying fonts, colors, or other resources from the `VisualStudio2019Palet
 	        </ResourceDictionary.MergedDictionaries> 
 	    </ResourceDictionary> 
 	</Application.Resources>
-{{endregion}}
+```
 
 ## See Also  
  * [Setting a Theme (Using  Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

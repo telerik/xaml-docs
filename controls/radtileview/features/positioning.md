@@ -16,8 +16,8 @@ The __Position__ property of the __RadTileViewItems__ controls the positions of 
 
 For the purposes of this article we will create a class that holds data for customer accounts in a bank and a viewmodel that holds a collection of customer accounts. The ItemsSource of the RadTileView will be the collection of customer accounts. We will order the positions the accounts by their balance in a descending order. 
 
-#### __[C#] Example 1: Creating the model and viewmodel__
-{{region cs-radtileview-positioning-0}}
+__Example 1: Creating the model and viewmodel__
+```C#
 	public class CustomerAccount : ViewModelBase
     {
         public string Name { get; set; }
@@ -109,10 +109,8 @@ For the purposes of this article we will create a class that holds data for cust
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the model and viewmodel__
-{{region vb-radtileview-positioning-1}}
+```
+```VB.NET
 	Public Class CustomerAccount
 	Inherits ViewModelBase
 
@@ -196,14 +194,14 @@ For the purposes of this article we will create a class that holds data for cust
 			Next customer
 		End Sub
 	End Class
-{{endregion}}
+```
 
 ## Creating the View
 
 Next, we will setup the RadTileView in xaml. We will create an __ItemTemplate__ and __ContentTemplate__ to configure how the RadTileViewItems will visualize the customer accounts. We will also bind the Position property of the RadTileViewItems to the Position property of the model through a Style.
 
-#### __[XAML] Example 2: Creating the model and viewmodel__
-{{region xaml-radtileview-positioning-2}}
+__Example 2: Creating the model and viewmodel__
+```XAML
 	<UserControl.Resources>
         <local:BankViewModel x:Key="ViewModel" />
     </UserControl.Resources>
@@ -235,7 +233,7 @@ Next, we will setup the RadTileView in xaml. We will create an __ItemTemplate__ 
                              ItemsSource="{Binding Customers}"
                              MinimizedColumnWidth="200"/>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadTileViewItems with customized position in the Office2016 theme__
 ![RadTileViewItems with customized position](images/radtileview_positioning_position.png)

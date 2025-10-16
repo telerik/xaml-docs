@@ -14,8 +14,8 @@ OscillatorIndicator is an indicator that varies over time within a values range 
 
 To set up the indicator you can set its __CategoryBinding, ValueBinding and ItemsSource__ properties. Additionally, you can control the periods (in days) over which the indicator will be applied. To do this set the __LongPeriod__ and __ShortPeriod__ properties.
 
-#### __[XAML] Example 1: OscillatorIndicator__
-{{region radchartview-indicators-oscillatorindicator-0}}
+__Example 1: OscillatorIndicator__
+```XAML
 	 <telerik:RadCartesianChart.Indicators>
 		<telerik:OscillatorIndicator LongPeriod="8" 													
 									 ShortPeriod="4"
@@ -23,7 +23,7 @@ To set up the indicator you can set its __CategoryBinding, ValueBinding and Item
 								     ValueBinding="Close"
 								     ItemsSource="{Binding Data}"/>
 	</telerik:RadCartesianChart.Indicators>
-{{endregion}}
+```
 
 #### Figure 1: OscillatorIndicator
 <img src="images/radchartview-indicators-oscillatorindicator-0.png" style="width: 80%;">

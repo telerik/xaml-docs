@@ -31,8 +31,7 @@ How to remove or change the background of a matching cell when you search as you
 1. [Extract the ControlTemplate]({%slug styling-apperance-editing-control-templates%}) of the GridViewCell element.
 2. In the ControlTemplate, find the VisualState with x:Name set to "Highlighted".
 	
-	#### __[XAML]__
-	{{region kb-gridview-remove-search-cell-background-0}}
+	```XAML
 		<VisualState x:Name="Highlighted">
 			<Storyboard>
 				<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="PART_CellBorder" Storyboard.TargetProperty="Background">
@@ -44,7 +43,7 @@ How to remove or change the background of a matching cell when you search as you
 				</ObjectAnimationUsingKeyFrames>
 			</Storyboard>
 		</VisualState>
-	{{endregion}}
+	```
 	
 3. Remove the Storyboard that targets the "PART_CellBorder" from the VisualState. If you want only to change the color instead of removing it, change the Color property of the SolidColorBrush element.
 

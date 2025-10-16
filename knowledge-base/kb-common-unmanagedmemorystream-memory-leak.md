@@ -25,8 +25,8 @@ This happens because of a [memory leak in WPF](https://stackoverflow.com/questio
 
 To prevent the memory leak, unregister the TelerikWebUI font using the RadGlyph API and then re-register again in the App class. Make sure to use the absolute path to the .ttf file when registering the font. 
 
-#### __[C#]__
-{{region kb-common-unmanagedmemorystream-memory-leak-0}}
+
+```C#
 	public App() 
 	{
 		var glyphType = typeof(RadGlyph);
@@ -42,7 +42,7 @@ To prevent the memory leak, unregister the TelerikWebUI font using the RadGlyph 
 		var telerikFont = (FontFamily)System.Windows.Markup.XamlReader.Parse(telerikFontString, parserContext);
 		RadGlyph.RegisterFont(telerikFont, "TelerikWebUI");
 	}
-{{endregion}}
+```
 
 The TelerikWebUI.ttf file can be found in the Telerik UI for WPF source code that can download from the product page. The file is under the following directory:
 

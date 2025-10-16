@@ -50,8 +50,8 @@ __RadGridView's__ validation tooltip styles are located in __Telerik.Windows.Con
 
 The default XAML markup for __GridViewCell’s__ validation tooltip uses the __Office\_Black theme__:
 
-#### __[XAML] Example 1: GridViewCell validation tooltip in the Office\_Black theme__
-{{region styling-validation-tooltip-in-gridview-0}}
+__Example 1: GridViewCell validation tooltip in the Office\_Black theme__
+```XAML
 	<ControlTemplate x:Key="GridViewCell_ValidationToolTipTemplate" TargetType="ToolTip">
 
     . . .
@@ -83,12 +83,12 @@ The default XAML markup for __GridViewCell’s__ validation tooltip uses the __O
     . . .
 
 	</ControlTemplate>
-{{endregion}}
+```
 
 Default XAML markup for __GridViewEditorPresenter’s__ validation tooltip uses the __Office\_Black theme__:
 
-#### __[XAML] Example 2: GridViewEditorPresenter validation tooltip in Office\_Black theme__
-{{region styling-validation-tooltip-in-gridview-1}}
+__Example 2: GridViewEditorPresenter validation tooltip in Office\_Black theme__
+```XAML
 	<ControlTemplate x:Key="GridViewEditorPresenter_ValidationToolTipTemplate" TargetType="ToolTip">
    
     . . .
@@ -108,12 +108,12 @@ Default XAML markup for __GridViewEditorPresenter’s__ validation tooltip uses 
     . . .
 
 	</ControlTemplate>
-{{endregion}}
+```
 
 Default XAML markup for __GridViewRow’s__ validation tooltip uses the __Office\_Black theme__:
 
-#### __[XAML] Example 3: GridViewRow validation tooltip in Office\_Black theme__
-{{region styling-validation-tooltip-in-gridview-2}}
+__Example 3: GridViewRow validation tooltip in Office\_Black theme__
+```XAML
 	<ControlTemplate x:Key="GridViewRow_ValidationToolTipTemplate" TargetType="ToolTip">
 
 	. . .
@@ -143,7 +143,7 @@ Default XAML markup for __GridViewRow’s__ validation tooltip uses the __Office
 	. . .
 
 	</ControlTemplate>
-{{endregion}}
+```
 
 ## See Also
 * [Validation]({%slug gridview-managing-data-validation%})

@@ -42,7 +42,7 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 
 #### [XAML] Example 1: Default UI
 
-{{region radpdfviewer-default-ui_0}}
+```XAML
 
 	<Grid>
 	    <Grid.RowDefinitions>
@@ -61,7 +61,7 @@ After dragging the RadPdfViewer control from the toolbox to the designer of Visu
 	        <telerik:RadPdfViewer x:Name="pdfViewer" Grid.Column="1" DataContext="{Binding CommandDescriptors, ElementName=pdfViewer}" telerik:RadPdfViewerAttachedComponents.RegisterSignSignatureDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterFindDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterSignaturePropertiesDialog="True" telerik:RadPdfViewerAttachedComponents.RegisterContextMenu="True"/>
 	    </Grid>
 	</Grid>
-{{endregion}}  
+```  
  
 ## Customizing the Default UI
 
@@ -76,7 +76,7 @@ The default value for all of the ToolBar Customization options is `true`. Unchec
 
 #### [XAML] Example 2: Using the properties of RadPdfViewerToolBar
 
-{{region radpdfviewer-default-ui_1}}
+```XAML
 
 	<telerik:RadPdfViewerToolBar RadPdfViewer="{Binding ElementName=pdfViewer, Mode=OneTime}" 
 	                                HasPrintButton="False" HasSaveButton="False" HasSignatureButton="False" 
@@ -84,7 +84,7 @@ The default value for all of the ToolBar Customization options is `true`. Unchec
 	                                HasPanTextSelectionGroup="False" HasPageUpButton="False" HasPagesCountGroup="False" 
 	                                HasPageDownButton="False" HasOpenButton="False" HasFitToWidthButton="False" 
 	                                HasFitToPageButton="False" HasCounterclockwiseButton="False" HasClockwiseButton="False"/>
-{{endregion}}  
+```  
 
 
 ### Customizing the Template of RadPdfViewerToolBar

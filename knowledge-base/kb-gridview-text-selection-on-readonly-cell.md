@@ -33,8 +33,8 @@ How to select the cell text when the GridView column is in readonly mode.
 
 Define a custom `CellTemplate` containing a read-only `TextBox` element.
 
-#### __[XAML]__
-{{region kb-gridview-text-selection-on-readonly-cell-0}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" IsReadOnly="True">
 		<telerik:GridViewDataColumn.CellTemplate>
 			<DataTemplate>
@@ -42,4 +42,4 @@ Define a custom `CellTemplate` containing a read-only `TextBox` element.
 			</DataTemplate>
 		</telerik:GridViewDataColumn.CellTemplate>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```

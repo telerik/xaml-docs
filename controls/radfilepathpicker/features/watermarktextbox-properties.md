@@ -15,10 +15,10 @@ The __RadFilePathPicker__ has a [RadWatermarkTextBox]({%slug watermarktextbox-ge
 
 The __WatermarkContent__ property of the control sets the [WatermarkContent]({%slug radwatermarktextbox-features%}#using-the-watermarkcontent-property) of the RadWatermarkTextBox. 
 
-#### __[XAML] Example 1: Setting the WatermarkContent__
-{{region xaml-radfilepathpicker-watermarktextbox-properties_0}}
+__Example 1: Setting the WatermarkContent__
+```XAML
 	<telerik:RadFilePathPicker WatermarkContent="Select a file!" />
-{{endregion}}
+```
 
 #### __Figure 1: RadFilePathPicker with WatermarkContent__
 ![RadFilePathPicker with WatermarkContent](images/FilePathPicker_WatermarkContent.png)
@@ -27,8 +27,8 @@ The __WatermarkContent__ property of the control sets the [WatermarkContent]({%s
 
 The __WatermarkTemplate__ property of the control sets the [WatermarkTemplate]({%slug radwatermarktextbox-features%}#using-watermarktemplate-property) of the RadWatermarkTextBox.
 
-#### __[XAML] Example 2: Setting the WatermarkTemplate__
-{{region xaml-radfilepathpicker-watermarktextbox-properties_1}}
+__Example 2: Setting the WatermarkTemplate__
+```XAML
 	<StackPanel>
         <StackPanel.Resources>
             <DataTemplate x:Key="WatermarkTemplate">
@@ -40,7 +40,7 @@ The __WatermarkTemplate__ property of the control sets the [WatermarkTemplate]({
         </StackPanel.Resources>
         <telerik:RadFilePathPicker WatermarkContent="Select a file" WatermarkTemplate="{StaticResource WatermarkTemplate}" />
     </StackPanel>
-{{endregion}}
+```
 
 #### __Figure 2: RadFilePathPicker with WatermarkTemplate__
 ![RadFilePathPicker with WatermarkTemplate](images/FilePathPicker_WatermarkTemplate.png)
@@ -49,11 +49,11 @@ The __WatermarkTemplate__ property of the control sets the [WatermarkTemplate]({
 
 The __EditorVisibility__ property controls the __Visibility__ of the RadWatermarkTextbox. 
 
-#### __[XAML] Example 3: Setting the WatermarkTemplate property__
-{{region xaml-radfilepathpicker-watermarktextbox-properties_2}}
+__Example 3: Setting the WatermarkTemplate property__
+```XAML
 
     <telerik:RadFilePathPicker EditorVisibility="Collapsed" />
-{{endregion}}
+```
 
 ## See Also
 

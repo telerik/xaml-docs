@@ -12,7 +12,9 @@ position: 12
 
 Each of the themes from the UI for {{ site.framework_name }} provides a custom default style for the **ScrollBars** in your application.
 
-{% figure 1, "Scrollbar in Windows8 theme", "windows8-scrollbar.png" %}
+__Scrollbar in Windows8 theme__
+
+![](images/windows8-scrollbar.png)
 
 The article will show you how to modify these styles to suit your requirements.
 
@@ -28,9 +30,9 @@ For the purposes of this article, we will assume that you're using the [implicit
 
 Before we modify the appearance of the control, let's first extract its default templates - **ScrollBarVerticalControlTemplate** and **ScrollBarHorizontalControlTemplate** - one for each **Orientation** of the control. You can place these templates in the App.xaml file of your application, for example.
 
-#### __[XAML] Example 1: Default ScrollBarVerticalControlTemplate__
+__Example 1: Default ScrollBarVerticalControlTemplate__
 
-{{region xaml-styling-apperance-styling-scrollbars-1}}
+```XAML
     <ControlTemplate x:Key="ScrollBarVerticalControlTemplate" TargetType="{x:Type ScrollBar}">
         <Grid>
             <Grid.RowDefinitions>
@@ -57,7 +59,7 @@ Before we modify the appearance of the control, let's first extract its default 
             <RepeatButton Style="{StaticResource RepeatButtonLineDownStyle}" Grid.Row="2" Command="{x:Static ScrollBar.LineDownCommand}"/>
         </Grid>
     </ControlTemplate>
-{{endregion}}
+```
 
 >The template above depends on the following 2 namespace declarations:
 * xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -67,9 +69,9 @@ The **ScrollBarHorizontalControlTemplate** has similar content.
     
 **Example 3** demonstrates the updated style with the two templates set which you can also place in your App.xaml file so that it affects all scrollbars in your application.
 
-#### __[XAML] Example 2: Apply the templates__
+__Example 2: Apply the templates__
 
-{{region xaml-styling-apperance-styling-scrollbars-2}}
+```XAML
     <Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource ScrollBarStyle}">
         <Setter Property="Template" Value="{StaticResource ScrollBarVerticalControlTemplate}"/>
         <Style.Triggers>
@@ -78,7 +80,7 @@ The **ScrollBarHorizontalControlTemplate** has similar content.
             </Trigger>
         </Style.Triggers>
     </Style>
-{{endregion}}
+```
 
 >If you're using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) approach for theming the controls, you will also need to extract the default **ScrollBarStyle**.
 
@@ -86,9 +88,9 @@ The **ScrollBarHorizontalControlTemplate** has similar content.
 
 Now that you've extracted the default style and templates, let's first increase the **Width** and **Height** of the scrollbars in the extracted style.
 
-#### __[XAML] Example 3: Increase scrollbar width__
+__Example 3: Increase scrollbar width__
 
-{{region xaml-styling-apperance-styling-scrollbars-3}}
+```XAML
     <Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource ScrollBarStyle}">
         <Setter Property="MinWidth" Value="20"/>
         <Setter Property="MinHeight" Value="20"/>
@@ -99,9 +101,11 @@ Now that you've extracted the default style and templates, let's first increase 
             </Trigger>
         </Style.Triggers>
     </Style>
-{{endregion}}
+```
 
-{% figure 2, "Scrollbars with increased size", "windows8-scrollbar-modified-size.png" %}
+__Scrollbars with increased size__
+
+![](images/windows8-scrollbar-modified-size.png)
 
 ## Styling the Arrows
 
@@ -109,9 +113,9 @@ Now let us increase the size of the arrows of the scrollbars as well as change t
 
 You then need to set these templates in the respective styles for the **RepeatButtons** - **RepeatButtonLineDownStyle** and **RepeatButtonLineUpStyle**. Note that you need to define these resources before your new custom scrollbar style.
 
-#### __[XAML] Example 4: Apply the templates__
+__Example 4: Apply the templates__
 
-{{region styling-apperance-styling-scrollbars-4}}
+```XAML
     <ControlTemplate x:Key="RepeatButtonLineDownTemplate" TargetType="RepeatButton">
         <Border Background="Transparent">
             <Grid>
@@ -130,21 +134,24 @@ You then need to set these templates in the respective styles for the **RepeatBu
     <Style x:Key="RepeatButtonLineDownStyle" TargetType="RepeatButton" BasedOn="{StaticResource RepeatButtonLineBaseStyle}">
         <Setter Property="Template" Value="{StaticResource RepeatButtonLineDownTemplate}"/>
     </Style>
-{{endregion}}
+```
 
 >If you're using the [StyleManager]({%slug styling-apperance-implicit-styles-overview%}#setting-a-theme-using-stylemanager) approach for theming the controls, you will also need to extract the **RepeatButtonLineBaseStyle**.
 
 You now need to do the same for the **RepeatButtonLineUpTemplate** and **RepeatButtonLineUpStyle** to style the other arrow.
     
-{% figure 3, "Scrollbars with increased arrow size", "windows8-scrollbar-modified-arrow-size.png" %}
+__Scrollbars with increased arrow size__
+
+![](images/windows8-scrollbar-modified-arrow-size.png)
+
     
 ## Styling the Thumbs
 
 Finally, to modify the background of the scrollbar's thumb, for example, you need to extract and edit the respective **Thumb** style - **ThumbVerticalStyle** or **ThumbHorizontalStyle**. Let's use the **Accent** brush instead of the **Basic** one for the thumbs **Track** element.
 
-#### __[XAML] Example 5: Change thumb color__
+__Example 5: Change thumb color__
 
-{{region styling-apperance-styling-scrollbars-5}}
+```XAML
     <Style x:Key="ThumbVerticalStyle" TargetType="Thumb">
         <Setter Property="IsTabStop" Value="False"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
@@ -171,9 +178,11 @@ Finally, to modify the background of the scrollbar's thumb, for example, you nee
             </Setter.Value>
         </Setter>
     </Style>
-{{endregion}}
+```
     
-{% figure 4, "Scrollbars with colored thumb", "windows8-scrollbar-modified-thumb.png" %}
+__Scrollbars with colored thumb__
+
+![](images/windows8-scrollbar-modified-thumb.png)
 
 ## See Also
 

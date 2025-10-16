@@ -32,6 +32,7 @@ This is a bug in the WPF framework that is [reported here](https://github.com/do
 
 The important part of the exception stacktrace is the following:
 
+```
 	System.ArithmeticException: Overflow or underflow in the arithmetic operation.
 	--- End of inner exception stack trace ---
 	at System.Windows.Media.Imaging.ColorConvertedBitmap.FinalizeCreation()
@@ -44,6 +45,7 @@ The important part of the exception stacktrace is the following:
 	at System.Windows.Media.Imaging.BitmapFrame.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy)
 	at System.Windows.Media.ImageSourceConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
 	at System.Windows.Baml2006.TypeConverterMarkupExtension.ProvideValue(IServiceProvider serviceProvider)
+```
 
 ## Solution 1
 
@@ -65,8 +67,8 @@ The FileDialogs are using this type of image settings only in its `LayoutTypeToI
 
 1. Create a new IValueConverter that internally uses the LayoutTypeToIconConverter. In the constructor of the converter, initialize the `LayoutTypeToIconConverter` and assign its image source properties.
 	
-	#### __[C#]__
-	{{region kb-filedialogs-typeconverter-exception-0}}
+	
+	```C#
 		public class CustomLayoutTypeToIconConverter : IValueConverter
 		{
 			private static LayoutTypeToIconConverter originalConverter = new LayoutTypeToIconConverter();
@@ -92,7 +94,7 @@ The FileDialogs are using this type of image settings only in its `LayoutTypeToI
 				throw new NotImplementedException();
 			}
 		}
-	{{endregion}}
+	```
 
 2. Find the __Telerik.Windows.Controls.FileDialogs.xaml__ file in the Telerik UI for WPF installation folder and open it.
 3. From the .xaml file, copy the following resources (with x:Keys set to) "layoutTypeIconConverter", "LayoutConfiguratorItemTemplate", "LayoutConfiguratorSelectedItemTemplate" and "ExplorerControlTemplate". Then, paste the resources in your project.
@@ -100,8 +102,8 @@ The FileDialogs are using this type of image settings only in its `LayoutTypeToI
 5. Add an implicit style that sets the `ControlTemplate` of the `ExplorerControl` to all file dialogs.
 6. You can wrap the resources in a new ResourceDictionary. The following example shows how the dictionary should look. The example uses the __Windows 11__ theme, but you can use the resources from any other theme.
 	
-	#### __[XAML]__
-	{{region kb-filedialogs-typeconverter-exception-1}}
+	
+	```XAML
 		<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 						xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 						xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
@@ -247,12 +249,11 @@ The FileDialogs are using this type of image settings only in its `LayoutTypeToI
 				<Setter Property="Template" Value="{StaticResource ExplorerControlTemplate}"/>
 			</Style>
 		</ResourceDictionary>
-	{{endregion}}
+	```
 
 7. Merge the resource dictionary in App.xaml.
-
-	#### __[XAML]__
-	{{region kb-filedialogs-typeconverter-exception-2}}
+	
+	```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>                
@@ -261,4 +262,4 @@ The FileDialogs are using this type of image settings only in its `LayoutTypeToI
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-	{{endregion}}
+	```

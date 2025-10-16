@@ -18,9 +18,9 @@ Before continuing with the code sample here's something important that you need 
 
 This article will demonstrate the binding of both. Let's start with our business object - a class with 3 properties - a Start and End date for our sample data and a collection of another class. This collection will represent our data so we'll need a duration property of TimeSpan type and a DateTime property.        
 
-#### __C#__
 
-{{region radtimeline-databinding_0}}
+
+```C#
 	public class Product
 	{
 		public IEnumerable<Item> Data { get; set; }
@@ -34,11 +34,8 @@ This article will demonstrate the binding of both. Let's start with our business
 		public TimeSpan Duration { get; set; }
 		public DateTime Date { get; set; }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-databinding_0}}
+```
+```VB.NET
 	Public Class Product
 		Public Property Data() As IEnumerable(Of Item)
 
@@ -50,13 +47,13 @@ This article will demonstrate the binding of both. Let's start with our business
 		Public Property Duration() As TimeSpan
 		Public Property [Date]() As Date
 	End Class
-{{endregion}}
+```
 
 Now we'll need to set values to the newly created properties and assign an instance of our class (the so called business object) to the DataContext that will be used to bind the RadTimeline:        
 
-#### __C#__
 
-{{region radtimeline-databinding_1}}
+
+```C#
 	public MainPage() //MainWindow in WPF
 	{
 		InitializeComponent();
@@ -81,11 +78,8 @@ Now we'll need to set values to the newly created properties and assign an insta
 		
 		this.DataContext = new Product() { Data = items, StartDate = startDate, EndDate = endDate, };
 	}	
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-databinding_1}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 	
@@ -106,13 +100,13 @@ Now we'll need to set values to the newly created properties and assign an insta
 	
 		Me.DataContext = New Product() With {.Data = items, .StartDate = startDate, .EndDate = endDate}
 	End Sub
-{{endregion}}
+```
 
 The following XAML creates a RadTimeline and binds it to our prepared collection of data using the properties mentioned in our [Properties]({%slug radtimeline-properties%}) topic.        
 
-#### __XAML__
 
-{{region radtimeline-databinding_2}}
+
+```XAML
 	<telerik:RadTimeline Height="250"
 						VerticalAlignment="Top"
 						Margin="6"
@@ -128,7 +122,7 @@ The following XAML creates a RadTimeline and binds it to our prepared collection
 			<telerik:DayInterval />
 		</telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 
 The result can be seen below:
 

@@ -26,8 +26,8 @@ The following example demonstrates how to use commands in an MVVM scenario.
 
 1. Define the command. The command is located in the __SampleViewModel__ class:		
 
-	#### __[C#] Example 1: Defining a command__
-	{{region cs-radbuttons-features-commands_0}}
+	__Example 1: Defining a command__
+	```C#
 	public class SampleViewModel
 	{
 		public SampleViewModel()
@@ -41,10 +41,8 @@ The following example demonstrates how to use commands in an MVVM scenario.
 			MessageBox.Show("MyCommand Executed");
 		} 
 	}
-	{{endregion}}
-
-	#### __[VB.NET] Example 1: Defining a command__
-	{{region vb-radbuttons-features-commands_1}}
+	```
+	```VB.NET
 		Public Class SampleViewModel
 			Public Sub New()
 				MyCommand = New DelegateCommand(AddressOf OnCommandExecuted)
@@ -56,37 +54,35 @@ The following example demonstrates how to use commands in an MVVM scenario.
 				MessageBox.Show("MyCommand Executed")
 			End Sub
 		End Class
-	{{endregion}}
+	```
 
 1. Set the __SampleViewModel__ as the __DataContext__ of your __UserControl__:		
 
-	#### __[C#] Example 2: Setting up the DataContext__  
-	{{region cs-radbuttons-features-commands_2}}
+	__Example 2: Setting up the DataContext__  
+	```C#
 		public Example()
 		{
 			InitializeComponent();
 			this.DataContext = new SampleViewModel();
 		}
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: Setting up the DataContext__  
-	{{region vb-radbuttons-features-commands_3}}
+	```
+	```VB.NET
 		Public Sub New()
 			InitializeComponent()
 			Me.DataContext = New SampleViewModel()
 		End Sub
-	{{endregion}}
+	```
 
 1. In the XAML provide the bindings for the command and set the command parameter:
 
-	#### __[XAML] Example 3: Setting up the Command and CommandParameter properties__  
-	{{region xaml-radbuttons-features-commands_4}}
+	__Example 3: Setting up the Command and CommandParameter properties__  
+	```XAML
 		<telerik:RadButton Content="My Button"
 						Command="{Binding MyCommand}"
 						CommandParameter="ParameterValue" />
-	{{endregion}}
+	```
 
-   >__RadButtons__ are located in the __Telerik.Windows.Controls.dll__ assembly. To use them in your project, add a reference to the assembly.{% if site.site_name == 'WPF' %} For more information, see the [Controls Dependencies](https://docs.telerik.com/devtools/wpf/common-information/installation-installing-dependencies-wpf) article.{% endif %}{% if site.site_name == 'Silverlight' %} For more information, see the [Controls Dependencies](https://docs.telerik.com/devtools/silverlight/common-information/installation-installing-dependencies) article.{% endif %}
+   >__RadButtons__ are located in the __Telerik.Windows.Controls.dll__ assembly. To use them in your project, add a reference to the assembly. For more information, see the [Controls Dependencies](https://docs.telerik.com/devtools/wpf/common-information/installation-installing-dependencies-wpf) article.
 
    >Then in XAML you have to declare the namespace: `xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"`
 

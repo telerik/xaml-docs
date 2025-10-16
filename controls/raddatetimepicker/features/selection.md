@@ -24,25 +24,22 @@ The following properties hold the information about the selection in the __RadDa
 
 * __SelectedTime__ - it is of type __TimeSpan?__ and corresponds to the selected time representation in the clock view of the control or __null__ if no time has been selected.
 * 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-selection_0}}
+
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker"
 	   SelectedDate="11/15/2010"
 	   SelectedTime="10:00"/>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-raddatetimepicker-features-selection_1}}
+
+```C#
 	this.radDateTimePicker.SelectedValue = new DateTime(2010, 1, 5, 10, 0, 0);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddatetimepicker-features-selection_2}}
+```
+```VB.NET
 	Me.radDateTimePicker.SelectedValue = New DateTime(2010, 1, 5, 10, 0, 0)
-{{endregion}}
+```
 
 ## Restricting the date item's selection
 
@@ -52,13 +49,13 @@ In the __RadDateTimePicker's__ calendar you can restrict the selectable items by
 
 * __SelectableDateEnd__ - this is the last selectable date in the __RadDateTimePicker__ calendar that a user will be able to select.
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-selection_3}}
+
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker1" 
 	   SelectableDateStart="8/10/2010"
 	   SelectableDateEnd="10/10/2010"/>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDateTimePicker with Custom Selectable Start and End Date](images/dateTimePicker_features_selection_010.png)
 
@@ -74,14 +71,14 @@ In the __RadDateTimePicker's__ clock view you can restrict the selectable time i
 
 Telerik introduced the __IsInputRestrictedToSelectableDates__ boolean property in Q1 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}. By using it you could easily restrict the user from selecting a date based on the entered text inside the input area of the control. The selectable range is defined by the values set for the __SelectableDateStart__ and  __SelectableDateEnd__ properties.
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-selection_4}}
+
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker2" 
 	   SelectableDateStart="8/10/2015"
 	   SelectableDateEnd="10/11/2015"
 	   IsInputRestrictedToSelectableDates="True"/>
-{{endregion}}
+```
 
 ## See Also
 

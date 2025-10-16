@@ -29,7 +29,7 @@ The following tutorial will guide you how to bind a __RadTaskBoard__ to a collec
 First, we will create our data, which is going to be used to populate the RadTaskBoard control.
 
 #### __[C#] Example 1: Creating the ViewModel
-{{region cs-radtaskboard-populating-with-data-binding-taskboardcardmodel-0}}
+```C#
     public class MainViewModel : ViewModelBase
     {
         public ObservableCollection<TaskBoardCardModel> Data { get; set; }
@@ -90,15 +90,15 @@ First, we will create our data, which is going to be used to populate the RadTas
         public string TagName { get; set; }
         public Brush TagColor { get; set; }
     }
-{{endregion}}
+```
 
 Next, we can go ahead and define the RadTaskBoard in our view.
 
 >The CategoryCollection and CategoryModel class can be accessed in XAML through the following namespace:  
 >`xmlns:taskBoard="clr-namespace:Telerik.Windows.Controls.TaskBoard;assembly=Telerik.Windows.Controls"`
 
-#### __[XAML] Example 2: Defining RadTaskBoard in XAML__
-{{region xaml-radtaskboard-populating-with-data-binding-taskboardcardmodel-1}}
+__Example 2: Defining RadTaskBoard in XAML__
+```XAML
     <telerik:RadTaskBoard x:Name="taskBoard" ItemsSource="{Binding Data}" GroupMemberPath="State">
         <telerik:RadTaskBoard.DataContext>
             <local:MainViewModel />
@@ -132,7 +132,7 @@ Next, we can go ahead and define the RadTaskBoard in our view.
             </DataTemplate>
         </telerik:RadTaskBoard.ItemTemplate>
 	</telerik:RadTaskBoard>
-{{endregion}}
+```
 
 >Note that you do not need to explicitly set the **ItemTemplate** property, but we do so in this example to demonstrate how you can apply customizations to the **RadTaskBoardCard** such as defining a **TagTemplate**.
 

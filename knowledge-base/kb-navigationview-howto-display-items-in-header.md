@@ -32,8 +32,8 @@ How to bind a collection of items to the pane header.
 
 You can achieve the desired result by using the [PaneHeaderTemplate]({%slug radnavigationview-header-and-footer%}) property of the control and using a **RelativeSource** binding to point to your header collection.
 
-#### __[C#]__
-{{region kb-navigationview-howto-display-items-in-header-0}}
+
+```C#
       <telerik:RadNavigationView.PaneHeaderTemplate>
           <DataTemplate>
               <StackPanel Orientation="Horizontal">
@@ -42,7 +42,7 @@ You can achieve the desired result by using the [PaneHeaderTemplate]({%slug radn
               </StackPanel>
           </DataTemplate>
       </telerik:RadNavigationView.PaneHeaderTemplate>
-{{endregion}}
+```
 
 ## See Also
 

@@ -33,8 +33,8 @@ Setting the `KeepDropDownOpen` property of RadMultiColumnComboBox to `False` ena
 
 To resolve this, set the `RestoreFocusToTargetElement` property of the `RadContextMenu` control to `True`.
 
-#### __[XAML]__
-{{region kb-dataform-comboboxfield-null-selection-1}}
+
+```XAML
 	<telerik:RadMultiColumnComboBox KeepDropDownOpen="False">
 			<telerik:RadContextMenu.ContextMenu>
 				<telerik:RadContextMenu RestoreFocusToTargetElement="True">
@@ -42,4 +42,4 @@ To resolve this, set the `RestoreFocusToTargetElement` property of the `RadConte
 				</telerik:RadContextMenu>
 			</telerik:RadContextMenu.ContextMenu>
 	</telerik:RadMultiColumnComboBox>
-{{endregion}}
+```

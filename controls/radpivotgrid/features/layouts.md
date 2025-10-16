@@ -32,24 +32,22 @@ When you create your report with __RadPivotGrid__ you may want to make the data 
 
 __RadPivotGrid__ uses two different layouts - horizontal layout(for columns) and vertical layout (for rows). By combining them you can change your generated report to look exactly as you need it. You can set them in your __XAML__ or in code behind:        
 
-#### __[XAML] Example 1: Setting the layout in XAML__  
-{{region radpivotgrid-features-layouts_1}}
+__Example 1: Setting the layout in XAML__  
+```XAML
 	<pivot:RadPivotGrid HorizontalLayout="Outline" VerticalLayout="Compact" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting the layout in code__  
-{{region radpivotgrid-features-layouts_1}}
+__Example 2: Setting the layout in code__  
+```C#
 	RadPivotGrid pivot = new RadPivotGrid();
 	pivot.HorizontalLayout = PivotLayoutType.Outline;
 	pivot.VerticalLayout = PivotLayoutType.Compact;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the layout in code__  
-{{region radpivotgrid-features-layouts_1}}
+```
+```VB.NET
 	Dim pivot As New RadPivotGrid()
 	pivot.HorizontalLayout = PivotLayoutType.Outline
 	pivot.VerticalLayout = PivotLayoutType.Compact
-{{endregion}}
+```
 
 ## Totals Position
 
@@ -83,29 +81,27 @@ Here is __RadPivotGrid__ with the following configuration:
 
 When you set the RowSubTotalsPosition property of the group description to a value different than None, the pivot renders the subtotals of the corresponding property group. You can alter this and hide the subtotals for a specific group via the __AutoShowSubTotals__ property of the corresponding group description object.
 
-#### __[XAML] Example 3: Hidding the subtotals in XAML__  
-{{region radpivotgrid-features-layouts-2}}	
+__Example 3: Hidding the subtotals in XAML__  
+```XAML	
 	<pivot:LocalDataSourceProvider.RowGroupDescriptions>
 		<pivot:PropertyGroupDescription PropertyName="Product" />
 		<pivot:DateTimeGroupDescription PropertyName="Date" Step="Month" AutoShowSubTotals="False"/>
 	</pivot:LocalDataSourceProvider.RowGroupDescriptions>
-{{endregion}}
+```
 
-#### __[C#] Example 4: Hidding the subtotals in code__  
-{{region radpivotgrid-features-layouts-3}}	
+__Example 4: Hidding the subtotals in code__  
+```C#	
 		dataSourceProvider.RowGroupDescriptions.Add(new PropertyGroupDescription() { PropertyName = "Product" });
 		dataSourceProvider.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "Date", Step = DateTimeStep.Month, AutoShowSubTotals = false });
-{{endregion}}
-
-#### __[VB.NET] Example 4: Hidding the subtotals in code__  
-{{region radpivotgrid-features-layouts-4}}
+```
+```VB.NET
 	dataSourceProvider.RowGroupDescriptions.Add(New PropertyGroupDescription() With { .PropertyName = "Product" })
 	dataSourceProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With {
         .PropertyName = "Date",
         .[Step] = DateTimeStep.Month,
         .AutoShowSubTotals = False
     })
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadPivotGrid Hidden Subtotals](images/pivotgrid-features-layouts-0.png)
 

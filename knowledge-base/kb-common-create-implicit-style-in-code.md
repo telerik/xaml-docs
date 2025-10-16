@@ -22,8 +22,8 @@ How to create an implicit style in code.
 
 Call the `Add` method of the corresponding `Resources` collection with the target type as first argument and the Style object as second.
 
-#### __[C#]__
-{{region kb-common-create-implicit-style-in-code}}
+
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -33,4 +33,4 @@ Call the `Add` method of the corresponding `Resources` collection with the targe
 
 		this.Resources.Add(typeof(Button), style);
 	}
-{{endregion}}
+```

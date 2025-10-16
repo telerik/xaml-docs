@@ -72,8 +72,8 @@ The event handler receives two arguments:
 
 	The default hyperlink navigation can be canceled by setting the `Handled` property of the `HyperlinkClickedEventArgs` to `true` or `IsTrustedUrl` to `false`. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecured address or from starting a local process.
 
-	#### __[C#] Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
-	{{region radrichtextbox-events-overview-0}}
+	__Prompting that the clicked linked may be unsafe and allows it to cancel the navigation action__  
+	```C#
 		private void RadRichTextBox_HyperlinkClicked(object sender, HyperlinkClickedEventArgs e)
 		{
 			var link = e.URL;
@@ -92,7 +92,7 @@ The event handler receives two arguments:
 				}
 			}
 		}
-	{{endregion}}
+	```
 
 * __IsReadOnlyChanged__ - occurs when __IsReadOnly__ value has changed. The event handler receives two arguments:
      * The sender argument contains the __RadRichTextBox__. This argument is of type object, but can be cast to the __RadRichTextBox__ type.

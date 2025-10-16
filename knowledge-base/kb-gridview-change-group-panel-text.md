@@ -30,14 +30,14 @@ How to change the text of the group panel of RadGridView.
 
 To change the text of the group panel of `RadGridView`, subscribe to its `Loaded` event and retrieve the `TextBlock` element with x:Name="panelText". To do so, you can use the [ChildrenOfType]({%slug common-visual-tree-helpers%}) extension method. Then, you can modify the `Text` property of the retrieved element.
 
-#### __[C#] Changing the text of the group panel of RadGridView__
-{{region kb-gridview-change-group-panel-text-0}}
+__Changing the text of the group panel of RadGridView__
+```C#
     private void RadGridView_Loaded(object sender, RoutedEventArgs e)
     {
         var groupPanelTextBlock = this.gridView.ChildrenOfType<TextBlock>().FirstOrDefault(x => x.Name == "panelText");
         groupPanelTextBlock.Text = "Modified group panel text";
     }
-{{endregion}}
+```
 
 __RadGridView with modified group panel text__
 

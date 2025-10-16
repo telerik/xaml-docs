@@ -21,7 +21,7 @@ The bellow code shows how you can create a table in the code behind and set its 
 
 #### [C#] Example 1: Generate a table and set its borders and background
 
-{{region radrichtextbox-document-elements-formatting-tables_0}}   
+```C#   
 
     public void SetBorders()
     {
@@ -68,11 +68,11 @@ The bellow code shows how you can create a table in the code behind and set its 
         editor.InsertTable(table);
     }
 
-{{endregion}}
+```
 
 #### __[VB.NET] Example 1: Generate a table and set its borders and background
 
-{{region radrichtextbox-document-elements-formatting-tablesVB_0}}   
+```VB.NET   
 
 	Public Sub SetBorders()
 		Dim table = New Table(10, 5)
@@ -113,7 +113,7 @@ The bellow code shows how you can create a table in the code behind and set its 
 	End Sub
 
 
-{{endregion}}
+```
 
 >caption Figure 1: Generate a table and set its borders and background
 
@@ -124,23 +124,20 @@ The bellow code shows how you can create a table in the code behind and set its 
 
 You can use the __StyleName__ property to set one of the predefined table styles.
 
-#### __[C#] Example 2: Set the StyleName__
+__Example 2: Set the StyleName__
 
-{{region radrichtextbox-document-elements-formatting-tables_1}}   
+```C#   
 
     var table = new Table(10, 5);
     table.StyleName = RadDocumentDefaultStyles.TableGridLightStyleName;
 
-{{endregion}}
-
-#### __[VB.NET] Example 2: Set the StyleName__
-
-{{region radrichtextbox-document-elements-formatting-tablesVB_1}}   
+```
+```VB.NET   
     
     Dim table = New Table(10, 5)
     table.StyleName = RadDocumentDefaultStyles.TableGridLightStyleName
 
-{{endregion}}
+```
 
 >caption Figure 2: Use predefined styles
 

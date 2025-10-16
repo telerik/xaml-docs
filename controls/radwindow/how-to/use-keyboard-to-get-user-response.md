@@ -22,9 +22,9 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 
 >tipTo learn more about how to use the __RadWindow__ as user control read [this topic]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __XAML__
 
-{{region xaml-radwindow-how-to-use-keyboard-to-get-user-response_0}}
+
+```XAML
 	<telerik:RadWindow x:Class="RadWindowSamples.RadWindowControl"
 	                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -49,11 +49,11 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	        </StackPanel>
 	    </Grid>
 	</telerik:RadWindow>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radwindow-how-to-use-keyboard-to-get-user-response_1}}
+
+```C#
 	private void OnButtonAcceptClicked(object sender, RoutedEventArgs e)
 	{
 	    this.DialogResult = true;
@@ -64,11 +64,8 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	    this.DialogResult = false;
 	    this.Close();
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-how-to-use-keyboard-to-get-user-response_2}}
+```
+```VB.NET
 	Private Sub OnButtonAcceptClicked(sender As Object, e As RoutedEventArgs)
 	    Me.DialogResult = True
 	    Me.Close()
@@ -77,7 +74,7 @@ Here is an example of how to create a window that responds to __Enter__ and __ES
 	    Me.DialogResult = False
 	    Me.Close()
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

@@ -23,11 +23,11 @@ Not all properties are exposed, so you can control only the ones that you have a
 
 In addition to the properties inherited from RadWindow, there is a property called __Theme__ of type __Telerik.Windows.Controls.Theme__. By setting it you apply a Telerik theme to the windows used by __RadSpellChecker__. 
 
-#### __[C#] Example 1: Apply a Theme to RadSpellChecker's Windows__
+__Example 1: Apply a Theme to RadSpellChecker's Windows__
 
-{{region radspellchecker-styling-radspellchecker_0}}
+```C#
 	RadSpellChecker.WindowSettings.Theme = new SummerTheme();
-{{endregion}}
+```
 
 
 

@@ -26,9 +26,9 @@ This topic will explain you how to:
 
 The __Paragraph__ can be used only in the context of a [Section]({%slug radrichtextbox-features-document-elements-section%}) or a TableCell element. The section exposes a collection of Blocks, to which the paragraphs can be added. This can also be done directly in XAML.
 
-#### __XAML__
 
-{{region radrichtextbox-features-document-elements-paragraph_0}}
+
+```XAML
 	<telerik:RadRichTextBox x:Name="radRichTextBox">
 	    <telerik:RadRichTextBox.Document>
 	        <telerik:RadDocument LayoutMode="Paged">
@@ -39,11 +39,11 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	        </telerik:RadDocument>
 	    </telerik:RadRichTextBox.Document>
 	</telerik:RadRichTextBox>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radrichtextbox-features-document-elements-paragraph_1}}
+
+```C#
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
 	section.Blocks.Add( paragraph );
@@ -51,11 +51,8 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	document.Sections.Add(section);
 	
 	this.radRichTextBox.Document = document;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-document-elements-paragraph_2}}
+```
+```VB.NET
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()
 	section.Blocks.Add(paragraph)
@@ -63,14 +60,14 @@ The __Paragraph__ can be used only in the context of a [Section]({%slug radricht
 	document.Sections.Add(section)
 	
 	Me.radRichTextBox.Document = document
-{{endregion}}
+```
 
 ## Add inline elements to a Paragraph
 
 To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage you have to use the Inlines collection of the Paragraph. In XAML you can directly wrap the inline elements inside the paragraph element.
 
-#### __XAML__
-{{region radrichtextbox-features-document-elements-paragraph_3}}
+
+```XAML
 	<telerik:RadRichTextBox x:Name="radRichTextBox">
 	    <telerik:RadDocument>
 	        <telerik:Section>
@@ -80,10 +77,10 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	        </telerik:Section>
 	    </telerik:RadDocument>
 	</telerik:RadRichTextBox>
-{{endregion}}
+```
 
-#### __C#__
-{{region radrichtextbox-features-document-elements-paragraph_4}}
+
+```C#
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
 	Span span = new Span("Span declared in code-behind");
@@ -93,10 +90,8 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	document.Sections.Add(section);
 	
 	this.radRichTextBox.Document = document;
-{{endregion}}
-
-#### __VB.NET__
-{{region radrichtextbox-features-document-elements-paragraph_5}}
+```
+```VB.NET
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()
 	Dim span As New Span("Span declared in code-behind")
@@ -106,7 +101,7 @@ To add inline elements such as Span, HyperlinkRangeStart and End, or InlineImage
 	document.Sections.Add(section)
 	
 	Me.radRichTextBox.Document = document
-{{endregion}}
+```
 
 ## Customize the Paragraph
 

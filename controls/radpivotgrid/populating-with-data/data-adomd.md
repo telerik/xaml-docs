@@ -60,9 +60,9 @@ You can define your __AdomdDataProvider__ as a *StaticResource* in the __XAML__ 
 
 >importantThe __pivot__ namespace is URI namespace: __xmlns:pivot="http://schemas.telerik.com/2008/xaml/presentation/pivot"__. It is mandatory to define it if you are using the __AdomdDataProvider__ in your XAML.				
 
-#### __XAML__
 
-{{region radpivotgrid-data-adomd_1}}
+
+```XAML
 	<Grid>
 	    <Grid.Resources>
 	        <pivot:AdomdDataProvider x:Key="ADOMDDataProvider"/>
@@ -75,35 +75,32 @@ You can define your __AdomdDataProvider__ as a *StaticResource* in the __XAML__ 
 	    <pivot:RadPivotGrid x:Name="radPivotGrid" DataProvider="{StaticResource ADOMDDataProvider}"/>
 	    <pivot:RadPivotFieldList x:Name="radPivotFieldList" Grid.Column="1" DataProvider="{StaticResource ADOMDDataProvider}"/>
 	</Grid>
-{{endregion}}
+```
 
 You can also create an object of type __AdomdDataProvider__ in the code behind and set it for your controls:
 
-#### __C#__
 
-{{region radpivotgrid-data-adomd_1}}
+
+```C#
 	AdomdDataProvider adomdDataProvider = new AdomdDataProvider();
 	
 	this.radPivotGrid.DataProvider = adomdDataProvider;
 	this.radPivotFieldList.DataProvider = adomdDataProvider;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-data-adomd_1}}
+```
+```VB.NET
 	Dim adomdDataProvider As New AdomdDataProvider()
 	
 	Me.radPivotGrid.DataProvider = adomdDataProvider
 	Me.radPivotFieldList.DataProvider = adomdDataProvider
-{{endregion}}
+```
 
 ## Connection to OLAP Cube
 
 To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to OLAP Cube. For this purpose we will set the ConnectionSettings property of the __AdomdDataProvider__. This can be done directly in the __XAML__ or in the code behind:      		
 
-#### __XAML__
 
-{{region radpivotgrid-data-adomd_2}}
+
+```XAML
 	<pivot:AdomdDataProvider x:Key="ADOMDDataProvider" >
 	    <pivot:AdomdDataProvider.ConnectionSettings>
 	        <pivot:AdomdConnectionSettings
@@ -113,11 +110,11 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	        </pivot:AdomdConnectionSettings>
 	    </pivot:AdomdDataProvider.ConnectionSettings>
 	</pivot:AdomdDataProvider>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-data-adomd_2}}
+
+```C#
 	AdomdConnectionSettings connectionSettings = new AdomdConnectionSettings();
 	connectionSettings.Cube = "Adventure Works";
 	connectionSettings.Database = "Adventure Works DW 2008R2";
@@ -125,11 +122,8 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	
 	AdomdDataProvider adomdDataProvider = new AdomdDataProvider();
 	adomdDataProvider.ConnectionSettings = connectionSettings;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-data-adomd_2}}
+```
+```VB.NET
 	Dim connectionSettings As New AdomdConnectionSettings()
 	connectionSettings.Cube = "Adventure Works"
 	connectionSettings.Database = "Adventure Works DW 2008R2"
@@ -137,7 +131,7 @@ To show data in __RadPivotGrid__ and __RadPivotFieldList__ we have to connect to
 	
 	Dim adomdDataProvider As New AdomdDataProvider()
 	adomdDataProvider.ConnectionSettings = connectionSettings
-{{endregion}}
+```
 
 ## Defining Group Descriptions
 
@@ -163,9 +157,9 @@ The __AdomdAggregateDescription__ is used to define data that has to be aggregat
 
 Here is how to define row, column group descriptions and aggregate descriptions:        
 
-#### __XAML__
 
-{{region radpivotgrid-data-adomd_3}}
+
+```XAML
 	<pivot:AdomdDataProvider.RowGroupDescriptions>
 	    <pivot:AdomdGroupDescription MemberName="[Date].[Calendar Year]"/>
 	</pivot:AdomdDataProvider.RowGroupDescriptions>
@@ -177,11 +171,11 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	<pivot:AdomdDataProvider.AggregateDescriptions>
 	    <pivot:AdomdAggregateDescription MemberName="[Measures].[Internet Order Quantity]" />
 	</pivot:AdomdDataProvider.AggregateDescriptions>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-data-adomd_3}}
+
+```C#
 	AdomdGroupDescription rowGroupDescription1 = new AdomdGroupDescription();
 	rowGroupDescription1.MemberName = "[Date].[Calendar Year]";
 	AdomdGroupDescription columnGropuDescription1 = new AdomdGroupDescription();
@@ -195,11 +189,8 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	adomdDataProvider.ColumnGroupDescriptions.Add(columnGropuDescription1);
 	adomdDataProvider.AggregateDescriptions.Add(aggregateDescription1);
 	adomdDataProvider.EndInit();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-data-adomd_3}}
+```
+```VB.NET
 	Dim rowGroupDescription1 As New AdomdGroupDescription()
 	rowGroupDescription1.MemberName = "[Date].[Calendar Year]"
 	Dim columnGropuDescription1 As New AdomdGroupDescription()
@@ -213,13 +204,13 @@ Here is how to define row, column group descriptions and aggregate descriptions:
 	adomdDataProvider.ColumnGroupDescriptions.Add(columnGropuDescription1)
 	adomdDataProvider.AggregateDescriptions.Add(aggregateDescription1)
 	adomdDataProvider.EndInit()
-{{endregion}}
+```
 
 The __AdomdFilterDescription__ is used to filter the data that will be included in the report. Filtering is applied for a specific member defined in *MemberName* property. *Condition* property defines the way to filter the items. Only the ones that pass the filter will be shown in __RadPivotGrid__. The filtering is based on the Unique Name of the members. For example, if you want to show only data for year 2005, you can define it like this:        
 
-#### __XAML__
 
-{{region radpivotgrid-data-adomd_4}}
+
+```XAML
 	<pivot:AdomdDataProvider.FilterDescriptions>
 	    <pivot:AdomdFilterDescription MemberName="[Date].[Calendar Year]">
 	        <pivot:AdomdFilterDescription.Condition>
@@ -231,29 +222,26 @@ The __AdomdFilterDescription__ is used to filter the data that will be included 
 	        </pivot:AdomdFilterDescription.Condition>
 	    </pivot:AdomdFilterDescription>
 	</pivot:AdomdDataProvider.FilterDescriptions>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-data-adomd_4}}
+
+```C#
 	OlapSetCondition condition = new OlapSetCondition();
 	condition.Comparison = SetComparison.Includes;
 	condition.Items.Add("[Date].[Calendar Year].&[2005]");
 	AdomdFilterDescription filterDescription = new AdomdFilterDescription();
 	filterDescription.MemberName = "[Date].[Calendar Year]";
 	filterDescription.Condition = condition;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-data-adomd_4}}
+```
+```VB.NET
 	Dim condition As New OlapSetCondition()
 	condition.Comparison = SetComparison.Includes
 	condition.Items.Add("[Date].[Calendar Year].&[2005]")
 	Dim filterDescription As New AdomdFilterDescription()
 	filterDescription.MemberName = "[Date].[Calendar Year]"
 	filterDescription.Condition = condition
-{{endregion}}
+```
 
 As you can see, __AdomdFilterDescription__ Condition expects object of type *OlapSetCondition*. *Items* property of the *OlapSetCondition* object is a collection of all objects that each item must match. In our case we are using string objects as the member names in OLAP Cubes are strings.        
 
@@ -263,9 +251,9 @@ As OLAP dimensions are hierarchical, you can use filters for each of the levels 
 
 In the blue rectangle are all attribute hierarchies - you can use them as a filter by adding them as a new __FilterGroupDescription__. In the red rectangle you can see the user-defined hierarchy of Date.Calendar dimension. You can filter your data by each of the members by adding it to the *Levels* property of __AdomdFilterDescription__:        
 
-#### __XAML__
 
-{{region radpivotgrid-data-adomd_5}}
+
+```XAML
 	<pivot:AdomdDataProvider.FilterDescriptions>
 	    <pivot:AdomdFilterDescription MemberName="[Date].[Calendar]">
 	        <pivot:AdomdFilterDescription.Levels>
@@ -290,11 +278,11 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	        </pivot:AdomdFilterDescription.Levels>
 	    </pivot:AdomdFilterDescription>
 	</pivot:AdomdDataProvider.FilterDescriptions>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-data-adomd_5}}
+
+```C#
 	AdomdFilterDescription topFilterDescription = new AdomdFilterDescription();
 	topFilterDescription.MemberName = "[Date].[Calendar]";
 	
@@ -313,11 +301,8 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	levelFilterDescription2.Condition = condition2;
 	topFilterDescription.Levels.Add(levelFilterDescription1);
 	topFilterDescription.Levels.Add(levelFilterDescription2);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-data-adomd_5}}
+```
+```VB.NET
 	Dim topFilterDescription As New AdomdFilterDescription()
 	topFilterDescription.MemberName = "[Date].[Calendar]"
 	
@@ -336,7 +321,7 @@ In the blue rectangle are all attribute hierarchies - you can use them as a filt
 	levelFilterDescription2.Condition = condition2
 	topFilterDescription.Levels.Add(levelFilterDescription1)
 	topFilterDescription.Levels.Add(levelFilterDescription2)
-{{endregion}}
+```
 
 ## See Also  
  * [RadPivotGrid Getting Started]({%slug radpivotgrid-getting-started%})

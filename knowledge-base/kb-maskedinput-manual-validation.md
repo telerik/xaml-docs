@@ -26,8 +26,8 @@ Implement custom validation by adding a ValidationError in code.
 
 If you want to mark the state of the control as invalid and display an error message in the RadMaskedInput controls and you do not want to [throw validation exceptions]({%slug radmaskedinput-features-validation%}) or use [data annotations]({%slug radmaskedinput-validation-regex%}), you can manually set a validation error in code by using the **ValidationError** class and the **Validation.MarkInvalid** method.
 
-#### __[C#]__
-{{region kb-maskedinput-manual-validation-0}}
+
+```C#
     private void MaskedInput_ValueChanged(object sender, Telerik.Windows.RadRoutedEventArgs e)
     {
         var input = sender as RadMaskedTextInput;
@@ -45,7 +45,7 @@ If you want to mark the state of the control as invalid and display an error mes
             Validation.ClearInvalid(this.MaskedInput.GetBindingExpression(RadMaskedTextInput.ValueProperty));
         }
     }
-{{endregion}}
+```
 
 You can notice that the **Validation.ClearInvalid** method can be used if the state of the binding should be marked as valid.
 

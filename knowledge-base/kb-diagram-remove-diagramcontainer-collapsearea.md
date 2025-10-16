@@ -30,11 +30,11 @@ Remove the collapsed area when the RadDiagramContainerShape is collapsed.
 
 Set the CollapsedContentTemplate property to empty DataTemplate.
 
-#### __[C#]__
-{{region kb-diagram-remove-diagramcontainer-collapsearea_2}}
+
+```C#
 	<telerik:RadDiagramContainerShape>
 		<telerik:RadDiagramContainerShape.CollapsedContentTemplate>
 			<DataTemplate/>
 		</telerik:RadDiagramContainerShape.CollapsedContentTemplate>
 	</telerik:RadDiagramContainerShape>
-{{endregion}}
+```

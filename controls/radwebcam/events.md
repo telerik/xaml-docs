@@ -20,8 +20,8 @@ The purpose of the event is to notify you that a snapshot has been taken and you
 
 The event arguments are of type `SnapshotTakenEventArgs` which expose a `Snapshot` property (of type BitmapSource).
 
-#### __[C#] Subscribing to the SnapshotTaken event__
-{{region radwebcam-events-0}}
+__Subscribing to the SnapshotTaken event__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();		
@@ -33,7 +33,7 @@ The event arguments are of type `SnapshotTakenEventArgs` which expose a `Snapsho
 		BitmapSource snapshot = e.Snapshot;
 		// here you save the source to a file, in memory, or to show it in the UI
 	}
-{{endregion}}
+```
 
 ## CameraError
 
@@ -43,8 +43,8 @@ The event can be used to notify you about the corresponding error, or to replace
 
 The event arguments are of type `CameraErrorEventArgs` and they expose an `Error` property that contains information about the error. The Error property is of type `ErrorInfo` which gives you access to the message and state of the error via the `Message` and `ErrorState` properties.
 
-#### __[C#] Subscribing to the CameraError event and replacing the no-camera error message__
-{{region radwebcam-events-1}}
+__Subscribing to the CameraError event and replacing the no-camera error message__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -58,7 +58,7 @@ The event arguments are of type `CameraErrorEventArgs` and they expose an `Error
 			e.Error.Message = "Cannot detect a camera device.";
 		}           
 	}
-{{endregion}}
+```
 
 __Customized error message__
 
@@ -70,8 +70,8 @@ The `RecordingStarted` event fires just before the camera control starts recordi
 
 The event arguments are of type `RecordingStartedEventArgs` and can be used to cancel the recording start. To do this, set the `Cancel` property to True.
 
-#### __[C#] Canceling the start recording action__
-{{region radwebcam-events-2}}
+__Canceling the start recording action__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -83,7 +83,7 @@ The event arguments are of type `RecordingStartedEventArgs` and can be used to c
 		MessageBoxResult result = MessageBox.Show("The video will be recorded at " + this.webCam.RecordingFilePath + "\n\rDo you want to start recording?", "Start Video Recording", MessageBoxButton.YesNo, MessageBoxImage.Question);
 		e.Cancel = result != MessageBoxResult.Yes;
 	}
-{{endregion}}
+```
 
 The `RecordingEnded` event fires when the camera control stops recording. 
 

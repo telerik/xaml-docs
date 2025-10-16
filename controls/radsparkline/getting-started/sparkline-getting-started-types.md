@@ -36,8 +36,8 @@ The sparkline suite contains several controls that provide different visualizati
 
 This section will go over the properties that are specific for each type of sparkline. For the purposes of the next examples, we will setup the model and viewmodel shown in __Example 1__.
 
-#### __[C#] Example 1: Setting up the model and viewmodel__
-{{region cs-radsparkline-getting-started-types-0}}	
+__Example 1: Setting up the model and viewmodel__
+```C#	
 	public class MyCost
 	{
 		public double Cost { get; set; }
@@ -68,10 +68,8 @@ This section will go over the properties that are specific for each type of spar
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting up the model and viewmodel__
-{{region vb-radsparkline-getting-started-types-1}}	
+```
+```VB.NET	
 	Public Class MyCost
 		Public Property Cost() As Double
 		Public Property UnitCost() As Double
@@ -111,7 +109,7 @@ This section will go over the properties that are specific for each type of spar
 			End Get
 		End Property
 	End Class
-{{endregion}}
+```
 
 
 #### RadLinearSparkline
@@ -125,8 +123,8 @@ This section will go over the properties that are specific for each type of spar
 
 >important If the Stroke property is set through the LineShapeStyle along with the LineStroke property, the value of the LineStroke property will be respected. 
 
-#### __[XAML] Example 2: Setting up the RadLinearSparkline__
-{{region xaml-radsparkline-getting-started-types-2}}	
+__Example 2: Setting up the RadLinearSparkline__
+```XAML	
 	<Grid>
 		<Grid.DataContext>
 			<local:ViewModel />
@@ -149,7 +147,7 @@ This section will go over the properties that are specific for each type of spar
 									XValuePath="Cost"
 									YValuePath="UnitCost" />
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 2__
 ![RadLinearSparkline](images/radlinearsparkline-type-specific.png)
@@ -162,8 +160,8 @@ This section will go over the properties that are specific for each type of spar
 * __ItemFill__: The brush that will be used for the fill of the ellipses representing the data. 
 * __ItemStyle__: This property allows you to apply a style for the items representing the data. The __TargetType__ of the Style should be __telerik:ScatterItem__. Use this property, if you want to change the shape with which the data points are visualized. 
 
-#### __[XAML] Example 3: Setting up the RadScatterSparkline__
-{{region xaml-radsparkline-getting-started-types-3}}	
+__Example 3: Setting up the RadScatterSparkline__
+```XAML	
 	<Grid>
 		<Grid.DataContext>
 			<local:ViewModel />
@@ -194,7 +192,7 @@ This section will go over the properties that are specific for each type of spar
 									 XValuePath="Cost"
 									 YValuePath="UnitCost" />
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 3__
 ![RadScatterSparkline](images/radscattersparkline-type-specific.png)
@@ -209,8 +207,8 @@ This section will go over the properties that are specific for each type of spar
 * __NegativeLineShapeStyle__: The style that will be applied to the polyline surrounding the negative part of the data. The __TargetType__ of this style should be __Polyline__.
 * __NegativeAreaShapeStyle__: The style that will be applied to the shape representing the negative part of the data. The __TargetType__ of this style should be __Polyline__.
 
-#### __[XAML] Example 4: Setting up the RadAreaSparkline__
-{{region xaml-radsparkline-getting-started-types-4}}	
+__Example 4: Setting up the RadAreaSparkline__
+```XAML	
 	<Grid>
 		<Grid.DataContext>
 			<local:ViewModel />
@@ -236,7 +234,7 @@ This section will go over the properties that are specific for each type of spar
 								  XValuePath="Cost"
 								  YValuePath="UnitCost" />
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 3: Result from Example 4__
 ![RadAreaSparkline](images/radareasparkline-type-specific.png)
@@ -245,8 +243,8 @@ This section will go over the properties that are specific for each type of spar
 * __ColumnLayoutMode__: Determines how the column representing the data points will be positioned. Takes a [ColumnLayoutMode](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.sparklines.columnlayoutmode) as a value. 
 * __ColumnWidthPercent__: Specifies how much of the allocated space will the columns take. The space available for one column is calculated by dividing the entire space by the number of items. 
 
-#### __[XAML] Example 5: Setting up the RadColumnSparkline__
-{{region xaml-radsparkline-getting-started-types-5}}	
+__Example 5: Setting up the RadColumnSparkline__
+```XAML	
 	<Grid>
 		<Grid.DataContext>
 			<local:ViewModel />
@@ -260,7 +258,7 @@ This section will go over the properties that are specific for each type of spar
 									XValuePath="Cost"
 									YValuePath="UnitCost" />
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 4: Result from Example 5__
 ![RadColumnSparkline](images/radcolumnsparkline-type-specific.png)

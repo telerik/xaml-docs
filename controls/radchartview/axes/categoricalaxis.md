@@ -12,8 +12,8 @@ position: 3
 
 The categorical axis displays a set of categories. The values for each category do not define the order in which they appear. Here is an example of a categorical axis with a few data points.
 
-#### __[XAML] Example 1: Chart with categorical axis__
-{{region xaml-radchart-axes-categoricalaxis_0}}
+__Example 1: Chart with categorical axis__
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -34,15 +34,15 @@ The categorical axis displays a set of categories. The values for each category 
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1__
 ![RadChartView with CategoricalAxis](images/radchartview-categoricalaxis.png)
 
 If a data point category is not defined, the series will set a category automatically. The category will be a numeric value determined by the position of the data point in the data source. For example, "1", "2", "3",etc."
 
-#### __[XAML] Example 2: Chart with no category defined for datapoints__
-{{region xaml-radchart-axes-categoricalaxis_1}}
+__Example 2: Chart with no category defined for datapoints__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart">
 	   <telerik:RadCartesianChart.HorizontalAxis>
 	      <telerik:CategoricalAxis/>
@@ -65,15 +65,15 @@ If a data point category is not defined, the series will set a category automati
 	      </telerik:LineSeries.DataPoints>
 	   </telerik:LineSeries>
 	</telerik:RadCartesianChart.Series>
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 2__
 ![RadChartView with CategoricalAxis](images/radchartview-chart_axes_categoricalaxis.png)
 
 You can customize the CategoricalAxis by utilizing its **LabelTemplate** property. Here is a simple implementation of a rectangle added in the LabelTemplate.
 
-#### __[XAML] Example 3: CategoricalAxis with LabelTemplate__
-{{region xaml-radchart-axes-categoricalaxis_2}}
+__Example 3: CategoricalAxis with LabelTemplate__
+```XAML
 	<Grid>
         <Grid.Resources>
             <DataTemplate x:Key="LabelTemplate" DataType="{x:Type telerik:CategoricalAxis}">
@@ -107,7 +107,7 @@ You can customize the CategoricalAxis by utilizing its **LabelTemplate** propert
             </telerik:RadCartesianChart.Series>
         </telerik:RadCartesianChart>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 3: Result from Example 3__
 ![CategoricalAxis with LabelTemplate](images/radchartview-categoricalaxis-labeltemplate.png)

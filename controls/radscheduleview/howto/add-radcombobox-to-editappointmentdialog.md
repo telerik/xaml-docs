@@ -18,8 +18,8 @@ The tutorial shows how to add an additional RadComboBox that allows you to choos
 
 This section shows how to set up the view model used for the example. The model will hold a collection of Appointment objects that are bound to the AppointmentsSource property of RadScheduleView. And also a collection of locations that will be shown in the RadComboBox control.
 
-#### __[C#] Example 1: Creating a basic view model__
-{{region scheduleview-howto-add-radcombobox-to-editappointmentdialog-0}}
+__Example 1: Creating a basic view model__
+```C#
 	public class MainViewModel : ViewModelBase
     {
         public ObservableCollection<string> Locations { get; set; }
@@ -31,7 +31,7 @@ This section shows how to set up the view model used for the example. The model 
             this.Locations = new ObservableCollection<string>() { "Sofia-301 Dobrudja", "Sofia-303 Trakia", "Sofia-304 Rose Fields", "Sofia-405 Iskar", "Sofia-605 Pirin" };
         }
     }
-{{endregion}}
+```
 
 ## Extracting and Modifying the SchedulerDialog Template
 
@@ -41,8 +41,8 @@ The following template was extracted from the [Office2013]({%slug common-styling
 
 The newly added RadComboBox is marked with a Xaml comment - &lt;!-- CHANGE --&gt;
 
-#### __[XAML] Example 2: Modified SchedulerDialog Style__
-{{region scheduleview-howto-add-radcombobox-to-editappointmentdialog-1}}
+__Example 2: Modified SchedulerDialog Style__
+```XAML
 	<Application.Resources>
 		<telerik:InvertedVisibilityConverter x:Key="InvertedVisibilityConverter" />
 		<telerik:BoolToInputModeConverter x:Key="BoolToInputModeConverter" />
@@ -318,7 +318,7 @@ The newly added RadComboBox is marked with a Xaml comment - &lt;!-- CHANGE --&gt
 			</Setter>
 		</Style>
 	</Application.Resources>	
-{{endregion}}
+```
 
 >tip We recommend using this Style only with this example. If you decide to use this approach please extract the SchedulerDialog Style according to your version of UI for {{ site.framework_name }} in order to ensure that the Style is up-to-date with the version.
 
@@ -326,8 +326,8 @@ The newly added RadComboBox is marked with a Xaml comment - &lt;!-- CHANGE --&gt
 
 To apply the custom template use the __EditAppointmentDialogStyle__ property of RadScheduleView.
 
-#### __[XAML] Example 3: Applying the custom dialog style__
-{{region scheduleview-howto-add-radcombobox-to-editappointmentdialog-2}}
+__Example 3: Applying the custom dialog style__
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" 
 							 AppointmentsSource="{Binding Appointments}"
 							 EditAppointmentDialogStyle="{StaticResource CustomEditAppointmentDialogStyle}">
@@ -337,12 +337,12 @@ To apply the custom template use the __EditAppointmentDialogStyle__ property of 
 			<telerik:MonthViewDefinition />
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}		
+```		
 
-#### __[C#] Example 4: Setting the view model__
-{{region scheduleview-howto-add-radcombobox-to-editappointmentdialog-3}}
+__Example 4: Setting the view model__
+```C#
 	this.scheduleView.DataContext = new MainViewModel();
-{{endregion}}
+```
 
 #### Figure 1: Edit appointment dialog with an additional combobox for the Location of the appointment.
 ![{{ site.framework_name }} RadScheduleView Edit appointment dialog with an additional combobox for the Location of the appointment.](images/scheduleview-howto-add-radcombobox-to-editappointmentdialog-0.png)

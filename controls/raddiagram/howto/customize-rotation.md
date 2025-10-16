@@ -18,24 +18,24 @@ In this tutorial we will examine a solution that takes a user-defined value and 
 
 First, let's create a sample __RadDiagram__ definition that has two __RadDiagramShape__ objects.				
 
-#### __XAML__
 
-{{region raddiagram-howto-customize-rotation-0}}
+
+```XAML
 	<telerik:RadDiagram x:Name="diagram" IsSnapToGridEnabled="False">
 		<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=BeginLoopShape}"
 								 Position="400 300" />
 		<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=ExternalDataShape}"
 								 Position="500 400" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 >tip Please note that in the __RadDiagram__ definition, the __SnapToGrid__ feature is disabled. If you enable it, you don't have to create a new __RotationService__ to customize the rotation step. Instead you can take advantage of the __RotationAngleSnap__ constant. It allows you to set the snapping angle when rotating items in a grid-snapping enabled __RadDiagram__. The default value of this constant is 5 degrees. And it can be easily changed by setting DiagramConstants.RotationAngleSnap = 55, but you will have to add a using statement for the __Telerik.Windows.Diagrams.Core__ namespace.					
 
 Next we can add a __TextBox__ control to let the user define the rotation step:				
 
-#### __XAML__
 
-{{region raddiagram-howto-customize-rotation-1}}
+
+```XAML
 	<StackPanel Width="200" HorizontalAlignment="Left">
 		<TextBlock FontSize="16"
 				   FontWeight="Bold"
@@ -44,15 +44,15 @@ Next we can add a __TextBox__ control to let the user define the rotation step:
 				 MaxWidth="160"
 				 Text="" />
 	</StackPanel>
-{{endregion}}
+```
 
 Now that our view is ready, we can configure the default rotation mechanism to take into account the rotation step defined by a user. In order to do so, we will have to create a custom __RotationService__ and use it within our diagramming instance. 
 
 The first step is to define a new class, let's call it __MyRotation__, that derives from the __RotationService__. As the __RotationService__ has a virtual method that calculates the angle of each rotation operation, we will override this method and implement logic that takes a user-defined value and uses it to calculate the rotation angle. This means that we need to define an __int__ property and use it in the __CalculateRotationAngle__ method implementation:
 
-#### __C#__
 
-{{region raddiagram-howto-customize-rotation-0}}
+
+```C#
 	public class MyRotation : RotationService
 	{
 	    private int rotationStep;
@@ -84,11 +84,8 @@ The first step is to define a new class, let's call it __MyRotation__, that deri
 	        return angle = Math.Floor(angle / this.RotationStep) * this.RotationStep;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region raddiagram-howto-customize-rotation-0}}
+```
+```VB.NET
 	Public Class MyRotation
 	    Inherits RotationService
 	
@@ -114,13 +111,13 @@ The first step is to define a new class, let's call it __MyRotation__, that deri
 	        Return angle
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Finally, we need to configure the diagram to use our custom rotation implementation instead of the default __RotationService__. This is why we need to create a new instance of the __MyRotation__ class in the code-behind file of our view. Then we need to make sure that the __RotationStep__ property is used as a binding path for the __Text__ property of the __rotationStep__:
 
-#### __C#__
 
-{{region raddiagram-howto-customize-rotation-1}}
+
+```C#
 	private MyRotation newRotationService;
 	private void InitializeNewServices()
 	{
@@ -134,11 +131,8 @@ Finally, we need to configure the diagram to use our custom rotation implementat
 	    //apply the binding on the rotationStep TextBox
 	    this.rotationStep.SetBinding(TextBox.TextProperty, binding);
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region raddiagram-howto-customize-rotation-1}}
+```
+```VB.NET
 	Private newRotationService As MyRotation
 	Private Sub InitializeNewServices()
 	
@@ -154,13 +148,13 @@ Finally, we need to configure the diagram to use our custom rotation implementat
 	    'apply the binding on the rotationStep TextBox'
 	    Me.rotationStep.SetBinding(TextBox.TextProperty, binding)
 	End Sub
-{{endregion}}
+```
 
 And now we can use the __newRotationService__ instance and register it through the __ServiceLocator__:
 
-#### __C#__
 
-{{region raddiagram-howto-customize-rotation-2}}
+
+```C#
 	private MyRotation newRotationService;
 	public Example()
 	{
@@ -169,11 +163,8 @@ And now we can use the __newRotationService__ instance and register it through t
 		this.InitializeNewServices();
 	    this.diagram.ServiceLocator.Register<IRotationService>(this.newRotationService);
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region raddiagram-howto-customize-rotation-2}}
+```
+```VB.NET
 	Private newRotationService As MyRotation
 	
 	Public Sub New()
@@ -182,7 +173,7 @@ And now we can use the __newRotationService__ instance and register it through t
 	    Me.InitializeNewServices()
 	    Me.diagram.ServiceLocator.Register(Of IRotationService)(Me.newRotationService)
 	End Sub
-{{endregion}}
+```
 
 If you run the solution now, the __rotationStep__ will display a value of __45__. This is why you will be able to rotate the __RadDiagramShapes__ with __45°__ on every step.
 

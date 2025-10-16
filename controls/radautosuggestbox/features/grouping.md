@@ -16,8 +16,8 @@ The following example shows how to populate the ItemsSource of RadAutoSuggestBox
 
 > Read more about the GroupStyle object expected by the __GroupStyle__ property in [MSDN](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.groupstyle?view=netframework-4.5).
 
-#### __[XAML] Example 1: Define RadAutoSuggestBox and enable grouping__
-{{region radautosuggestbox-features-grouping-0}}
+__Example 1: Define RadAutoSuggestBox and enable grouping__
+```XAML
 	<telerik:RadAutoSuggestBox x:Name="radAutoSuggestBox" 
 							   DisplayMemberPath="Name" 
 							   TextMemberPath="Name"
@@ -35,21 +35,21 @@ The following example shows how to populate the ItemsSource of RadAutoSuggestBox
 			</GroupStyle>
 		</telerik:RadAutoSuggestBox.GroupStyle>
 	</telerik:RadAutoSuggestBox>
-{{endregion}}
+```
 
 The GroupStyle setting is required in order to visualize the group headers.
 
-#### __[C#] Example 2: Create model for the items__
-{{region radautosuggestbox-features-grouping-1}}
+__Example 2: Create model for the items__
+```C#
 	public class SuggestionInfo
     {
         public string Name { get; set; }
         public string GroupKey { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Example 3: Populate the ItemsSource with ICollectionView object and prepare a filter__
-{{region radautosuggestbox-features-grouping-2}}
+__Example 3: Populate the ItemsSource with ICollectionView object and prepare a filter__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -74,10 +74,10 @@ The GroupStyle setting is required in order to visualize the group headers.
 	{
 		return ((SuggestionInfo)value).Name.ToLowerInvariant().Contains(this.radAutoSuggestBox.Text.ToLowerInvariant());
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 4: Trigger the ICollectionView filtering on TextChanged__
-{{region radautosuggestbox-features-grouping-3}}
+__Example 4: Trigger the ICollectionView filtering on TextChanged__
+```C#
 	private void RadAutoSuggestBox_TextChanged(object sender, Telerik.Windows.Controls.AutoSuggestBox.TextChangedEventArgs e)
 	{
 		if (e.Reason == TextChangeReason.UserInput)
@@ -86,7 +86,7 @@ The GroupStyle setting is required in order to visualize the group headers.
 			collectionView.Refresh();
 		}
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadAutoSuggestBox Grouping](images/radautosuggestbox-features-grouping-0.png)
 

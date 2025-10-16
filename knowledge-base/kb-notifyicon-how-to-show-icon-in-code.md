@@ -27,8 +27,8 @@ Display the RadNotifyIcon without opening a WPF Window.
 
 Instantiate the RadNotifyIcon in code and invoke its __AddIcon__ method.
 
-#### __[C#]__
-{{region cs-kb-notifyicon-how-to-show-icon-in-code-0}}
+
+```C#
      
     protected override void OnStartup(StartupEventArgs e)
     {
@@ -40,7 +40,7 @@ Instantiate the RadNotifyIcon in code and invoke its __AddIcon__ method.
         var icon = new RadNotifyIcon() { TrayIcon = iconImage, GuidItem = new Guid("12345678-9123-4567-8901-234567890123") };
         icon.AddIcon();
     }
-{{endregion}}
+```
 
 ## See Also
 

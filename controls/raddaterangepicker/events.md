@@ -14,8 +14,8 @@ This article lists the events specific to the `RadDateRangePicker` control.
 
 Currently, the control provides only a single dedicated event named `CustomRangesLoading`. It occurs when the predefined set of ranges is loading. The event can be used to modify or remove the ranges. The event arguments are of type `CustomRangesLoadingEventArgs`.
 
-#### __[C#] CustomRangesLoading event handler__
-{{region raddaterangepicker-events-0}}
+__CustomRangesLoading event handler__
+```C#
 	private void RadDateRangePicker_CustomRangesLoading(object sender, CustomRangesLoadingEventArgs e)
 	{
 		// removes the first predefined range
@@ -29,4 +29,4 @@ Currently, the control provides only a single dedicated event named `CustomRange
 		};
 		e.CustomRanges.Add(newRange);
 	}
-{{endregion}}
+```

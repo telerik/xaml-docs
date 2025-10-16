@@ -24,9 +24,9 @@ Here is a snapshot of the final result:
 
 >tipWe will create __RadWindow__ as a user control, the approach is explained in details [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __[XAML] RadWindow declaration__
+__RadWindow declaration__
 
-{{region xaml-radBusyIndicator-how-to-integrate-with-services-and-radwindow_0}}
+```XAML
 	<telerik:RadWindow x:Class="RadWindow1"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -45,13 +45,13 @@ Here is a snapshot of the final result:
 		</telerik:RadBusyIndicator>
 	    </Grid>
 	</telerik:RadWindow>
-{{endregion}}
+```
 
 Here is the sample data that is going to be retrieved:
 
-#### __[C#] Retrieved sample data__
+__Retrieved sample data__
 
-{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_1}}
+```C#
 	public class Employee
 	{
 	    public string FirstName
@@ -75,11 +75,11 @@ Here is the sample data that is going to be retrieved:
 	        set;
 	    }
 	}
-{{endregion}}
+```
 
-#### __[C#] EmployeeService class__
+__EmployeeService class__
 
-{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_2}}
+```C#
 	public class EmployeeService
 	{
 	    public static ObservableCollection<Employee> GetEmployees()
@@ -95,11 +95,11 @@ Here is the sample data that is going to be retrieved:
 	        return employees;
 	    }
 	}
-{{endregion}}
+```
 
-#### __[VB] Retrieved sample data__
+__Retrieved sample data__
 
-{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_3}}
+```VB
 	Public Class Employee
 	 Public Property FirstName() As String
 	  Get
@@ -138,11 +138,11 @@ Here is the sample data that is going to be retrieved:
 	 End Property
 	 Private m_Married As Boolean
 	End Class
-{{endregion}}
+```
 
-#### __[VB] EmployeeService class__
+__EmployeeService class__
 
-{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_4}}
+```VB
 	Public Class EmployeeService
 	 Public Shared Function GetEmployees() As ObservableCollection(Of Employee)
 	  Dim employees As New ObservableCollection(Of Employee)()
@@ -157,7 +157,7 @@ Here is the sample data that is going to be retrieved:
 	  Return employees
 	 End Function
 	End Class
-{{endregion}}
+```
 
 * In code you can use the __BackgroundWorker__ to make your service calls in a different thread:
 
@@ -168,9 +168,9 @@ Here is the sample data that is going to be retrieved:
 >In order to use the BackgroundWorker you will have to add the following using/import in your code:
 >* System.ComponentModel
 
-#### __[C#] BackgroundWorker usage__
+__BackgroundWorker usage__
 
-{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_5}}
+```C#
 	public partial class RadWindow1
 	{      
 		private BackgroundWorker worker = new BackgroundWorker();
@@ -205,11 +205,11 @@ Here is the sample data that is going to be retrieved:
 			}
 		}
 	}
-{{endregion}}
+```
 
-#### __[VB] BackgroundWorker usage__
+__BackgroundWorker usage__
 
-{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_6}}
+```VB
 	Public Class RadWindow1
 		Private worker As New BackgroundWorker()
 	
@@ -243,23 +243,23 @@ Here is the sample data that is going to be retrieved:
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 * Then just open the RadWindow:
 
-#### __[C#] Open RadWindow__
+__Open RadWindow__
 
-{{region cs-radBusyIndicator-how-to-integrate-with-services-and-radwindow_7}}
+```C#
 	var radWindow = new RadWindow1();
 	radWindow.Show();
-{{endregion}}
+```
 
-#### __[VB] Open RadWindow__
+__Open RadWindow__
 
-{{region vb-radBusyIndicator-how-to-integrate-with-services-and-radwindow_8}}
+```VB
 	Dim radWindow As RadWindow1 = New RadWindow1()
 	radWindow.Show()
-{{endregion}}
+```
 
 Here is the final result:
 

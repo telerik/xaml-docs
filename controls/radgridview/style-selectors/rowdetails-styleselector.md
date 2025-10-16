@@ -11,15 +11,13 @@ position: 5
 # RowDetailsStyleSelector
 
 This article illustrates how to conditionally style row details through RadGridView's **RowDetailsStyleSelector** property.
-		
->tipLearn more about [StyleSelectors]({%slug gridview-style-selectors-overview%}).
 
 First, create a new class which inherits the __StyleSelector__ class (which resides in the 
  {% if site.site_name == 'Silverlight' %}__Telerik.Windows.Controls__{% endif %}{% if site.site_name == 'WPF' %}__System.Windows.Controls__{% endif %} assembly) and override its __SelectStyle__ method. Based on your conditions you return the proper Style that will be applied to the **DetailsPresenter** element.
 
-#### __[C#] Example 1: The ConditionalStyleSelector class__
+__Example 1: The ConditionalStyleSelector class__
 
-{{region gridview-rowdetails-styleselector_0}}
+```C#
 
     public class ConditionalStyleSelector : StyleSelector
     {
@@ -44,11 +42,8 @@ First, create a new class which inherits the __StyleSelector__ class (which resi
         public Style BigStadiumStyle { get; set; }
         public Style SmallStadiumStyle { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: The ConditionalStyleSelector class__
-
-{{region gridview-rowdetails-styleselector_1}}
+```
+```VB.NET
 
 	Public Class StadiumCapacityStyle
 	 Inherits StyleSelector
@@ -82,7 +77,7 @@ First, create a new class which inherits the __StyleSelector__ class (which resi
 	 End Property
 	 Private m_SmallStadiumStyle As Style
 	End Class
-{{endregion}}
+```
 
 In this case we have two different styles that could be applied:
 
@@ -93,9 +88,9 @@ Depending on the underlying data you can select which style to apply.
 
 Next, in the XAML file define the style selector as a resource and set the properties of the __BigStadiumStyle__ and __SmallStadiumStyle__:
 
-#### __[XAML] Example 2: Set the different styles for the style selector__
+__Example 2: Set the different styles for the style selector__
 
-{{region gridview-rowdetails-styleselector_2}}
+```XAML
 		<Grid.Resources>
             <my:ConditionalStyleSelector x:Key="StadiumCapacityStyleSelector">
                 <my:ConditionalStyleSelector.BigStadiumStyle>
@@ -112,7 +107,7 @@ Next, in the XAML file define the style selector as a resource and set the prope
                 </my:ConditionalStyleSelector.SmallStadiumStyle>
             </my:ConditionalStyleSelector>
 		</Grid.Resources>
-{{endregion}}
+```
 
 >The __"my:"__ prefix before __StadiumCapacityStyle__ specifies the mapping for the namespace of the project: __xmlns:my="__
 
@@ -120,12 +115,12 @@ Next, in the XAML file define the style selector as a resource and set the prope
 
 Finally, set the __RowDetailsStyleSelector__ property of the RadGridView:
 
-#### __[XAML] Example 3: Set RadGridView's RowDetailsStyleSelector__
+__Example 3: Set RadGridView's RowDetailsStyleSelector__
 
-{{region gridview-rowdetails-styleselector_3}}
+```XAML
 
 	<telerik:RadGridView RowDetailsStyleSelector="{StaticResource StadiumCapacityStyleSelector}" />
-{{endregion}}
+```
 
 And here is the final result:
 

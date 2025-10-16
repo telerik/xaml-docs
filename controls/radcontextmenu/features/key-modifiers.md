@@ -26,9 +26,9 @@ The __ModifierKey__ property allows you to use a modifier key, which in combinat
 
 Here is an example of a __RadContextMenu__ that requires the Control button to be pressed in order to open.
 
-#### __XAML__
 
-{{region xaml-radcontextmenu-key-modifiers_0}}
+
+```XAML
 	<TextBox Width="200"
 	 VerticalAlignment="Top">
 	    <telerik:RadContextMenu.ContextMenu>
@@ -37,7 +37,7 @@ Here is an example of a __RadContextMenu__ that requires the Control button to b
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</TextBox>
-{{endregion}}
+```
 
 If you run your application and just right-click the __TextBox__ control, nothing will happen. The combination of holding the "__Control__" key and then right-clicking the button actually opens the __RadContextMenu__.
 

@@ -16,9 +16,9 @@ __RadGridView__ provides you with a built-in sorting functionality, which allows
 
 You can define sorting criteria either in the XAML or in the code-behind.
 
-#### __XAML__
 
-{{region xaml-gridview-overview-sorting_0}}
+
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.SortDescriptors>
@@ -27,29 +27,25 @@ You can define sorting criteria either in the XAML or in the code-behind.
 	    </telerik:RadGridView.SortDescriptors>
 	    <!--...-->
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 
 You can achieve the same result if you define your sorting criteria in the code-behind like this:
 
-#### __C#__
 
-{{region cs-gridview-overview-sorting_2}}
+
+```C#
 	SortDescriptor descriptor = new SortDescriptor();
 	descriptor.Member = "EmployeeID";
 	descriptor.SortDirection = ListSortDirection.Ascending;
 	this.radGridView.SortDescriptors.Add(descriptor);
-{{endregion}}
-
-
-#### __VB.NET__
-
-{{region vb-gridview-overview-sorting_3}}
+```
+```VB.NET
 	Dim descriptor As New SortDescriptor()
 	descriptor.Member = "EmployeeID"
 	descriptor.SortDirection = ListSortDirection.Ascending
 	Me.radGridView.SortDescriptors.Add(descriptor)
-{{endregion}}
+```
 
 
 >Note that since __SortDescriptors__ property is a __collection__, you can add more than one __SortDescriptor__ to a __RadGridView__.

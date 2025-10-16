@@ -33,8 +33,8 @@ Disable multiple appointments selection in RadScheduleView using a custom Appoin
 
 To allow only a single appointment to be selected you can create a custom [AppointmentSelectionBehavior]({%slug radscheduleview-features-appointment-selection-behavior%}) and override its __GetSelectedAppointments__ method.
 
-#### __[C#]__
-{{region kb-scheduleview-disable-multiple-selection-0}}
+
+```C#
 	public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
 	{
 		protected override IEnumerable<IOccurrence> GetSelectedAppointments(AppointmentSelectionState state, IOccurrence target)
@@ -48,4 +48,4 @@ To allow only a single appointment to be selected you can create a custom [Appoi
 			return originalSelection;
 		}
 	}
-{{endregion}}
+```

@@ -26,9 +26,9 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 
 * __Add the points more efficiently (ObservableCollection scenario)__ - the control is built around a model where any changes to the data are automatically shown on the screen. This is accomplished by detecting classes that implement the [INotifyPropertyChanged interface](http://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) and collections that implement the [INotifyCollectionChanged interface](http://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) and by registering to find out about changes as they occur. However, this system can be counterproductive in one scenario: starting with an empty collection and adding a bunch of data points all at once. By default, each new data point generates a change notification which prompts __RadChart__ to re-analyze the data, re-compute the axis properties, re-layout the visuals, etc. It would be more efficient to add all the points at once and then send a __single__ notification to the control that its data has changed. Unfortunately, the otherwise handy [ObservableCollection class](http://msdn.microsoft.com/en-us/library/ms668604.aspx) doesn't offer a good way of doing this but it is pretty easy to add: 
 
-#### __C#__
 
-{{region cs-radchart-performance-tips-and-tricks_0}}
+
+```C#
 	public class AddRangeObservableCollection<T> : ObservableCollection<T>
 	{
 	    private bool suppressOnCollectionChanged;
@@ -63,10 +63,8 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-radchart-performance-tips-and-tricks_1}}
+```
+```VB.NET
 	Public Class AddRangeObservableCollection(Of T)
 	    Inherits ObservableCollection(Of T)
 	    Private suppressOnCollectionChanged As Boolean
@@ -92,7 +90,7 @@ When having scenarios with large sets of data, you can experience a lower __RadC
 	        End If
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 ## See Also
  * [Overview]({%slug radchart-overview%})

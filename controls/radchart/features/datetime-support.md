@@ -20,9 +20,9 @@ You can populate your chart with __DateTime__ values by using __SeriesMapping__ 
 
 On the example below, __RadChart.ItemSource__ is set to a collection of __TradeData__ object. __TradeData__ has the following definition:
 
-#### __C#__
 
-{{region cs-radchart-features-datetime-support_0}}
+
+```C#
 	public class TradeData
 	{
 	    //...
@@ -30,13 +30,8 @@ On the example below, __RadChart.ItemSource__ is set to a collection of __TradeD
 	    public double Close { get; set; }
 	    //...
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-datetime-support_1}}
+```
+```VB.NET
 	Public Class TradeData
 	    '....'
 	    Private _FromDate As DateTime
@@ -60,13 +55,13 @@ On the example below, __RadChart.ItemSource__ is set to a collection of __TradeD
 	    End Property
 	    '....'
 	End Class
-{{endregion}}
+```
 
 Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-support-overview%}) the __TradeData.FromDate__ to __DataPointMember.XValue__ and __TradeDate.Close__ to __DataPointMember.YValue__ using [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}) mechanism. Additionally, the [X-Axis]({%slug radchart-features-axes-x-axis%}) is customized: the values are formatted (__radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat__ = "dd-MMM") and rotated on 45 degree (__radChart.DefaultView.ChartArea.AxisX.LabelRotatingAngle__ = 45):
 
-#### __XAML__
 
-{{region xaml-radchart-features-datetime-support_2}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart"
 	                  Width="511"
 	                  Height="362"
@@ -97,13 +92,13 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-datetime-support_3}}
+
+```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	SeriesMapping seriesMapping = new SeriesMapping();
 	seriesMapping.LegendLabel = "MSFT";
@@ -113,13 +108,8 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 	radChart.SeriesMappings.Add(seriesMapping);
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-datetime-support_4}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	Dim seriesMapping As New SeriesMapping()
 	seriesMapping.LegendLabel = "MSFT"
@@ -129,7 +119,7 @@ Now, you have to [bind]({%slug radchart-populating-with-data-data-binding-suppor
 	radChart.SeriesMappings.Add(seriesMapping)
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
 	radChart.DefaultView.ChartArea.AxisX.LabelRotationAngle = 45
-{{endregion}}
+```
 
 
 
@@ -145,9 +135,9 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 
 * The __AxisX.IsDateTime__ should be set to __True__.
 
-#### __XAML__
 
-{{region xaml-radchart-features-datetime-support_5}}
+
+```XAML
 	<telerik:RadChart Width="511"
 	                  Height="362"
 	                  HorizontalAlignment="Right"
@@ -191,11 +181,11 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radchart-features-datetime-support_6}}
+
+```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	//....
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = true;
@@ -218,11 +208,8 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	lineSeries.Add( new DataPoint() { YValue = 193, XValue = new DateTime( 2009, 11, 30 ).ToOADate() } );
 	lineSeries.Add( new DataPoint() { YValue = 176, XValue = new DateTime( 2009, 12, 31 ).ToOADate() } );
 	radChart.DefaultView.ChartArea.DataSeries.Add( lineSeries );
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radchart-features-datetime-support_7}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
 	radChart.DefaultView.ChartArea.AxisX.IsDateTime = True
@@ -245,7 +232,7 @@ This example uses data binding mechanism via [SeriesMapping/ItemMapping]({%slug 
 	lineSeries.Add(New DataPoint(New DateTime(2009, 11, 30).ToOADate(), 193))
 	lineSeries.Add(New DataPoint(New DateTime(2009, 12, 31).ToOADate(), 176))
 	radChart.DefaultView.ChartArea.DataSeries.Add(lineSeries)
-{{endregion}}
+```
 
 
 

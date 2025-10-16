@@ -19,21 +19,21 @@ RadMaskedTextInput allows you to enable an additional validation rule by definin
 The regex can be set via the __ValidationRegex__ property of the RadMaskedTextInput control.
 
 {% if site.site_name == 'WPF' %}
-#### __[XAML] Example 1: Setting regex validation__
-{{region xaml-radmaskedinput-features-regex-validation-0}}
+__Example 1: Setting regex validation__
+```XAML
 	<telerik:RadMaskedTextInput Mask="a20"                                    
 								ValidationRegex="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" 
 								maskedInput:ValidationHelper.DisplayValidationErrors="True"  />		
-{{endregion}}
+```
 {% endif %}
 
 
 {% if site.site_name == 'Silverlight' %}
-#### __[XAML] Example 1: Setting regex validation__
-{{region xaml-radmaskedinput-features-regex-validation-1}}
+__Example 1: Setting regex validation__
+```XAML
 	<telerik:RadMaskedTextInput Mask="a20"                                    
 								ValidationRegex="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" />		
-{{endregion}}
+```
 {% endif %}
 							
 __Example 1__ shows how to restrict the user to enter only a valid email address with a maximum text length of 20 alphanumeric or special characters.
@@ -51,24 +51,24 @@ You can access the predefined regular expressions via the __ValidationHelper__ c
 
 > The ValidationHelper class can be found in the following namespace: `xmlns:maskedInput="clr-namespace:Telerik.Windows.Controls.MaskedInput;assembly=Telerik.Windows.Controls.Input"`
 
-#### __[XAML] Example 2: Setting predefined regex in XAML__
-{{region xaml-radmaskedinput-features-regex-validation-2}}
+__Example 2: Setting predefined regex in XAML__
+```XAML
 	<telerik:RadMaskedTextInput ValidationRegex="{x:Static maskedInput:ValidationHelper.Email}" />		
-{{endregion}}
+```
 
-#### __[C#] Example 3: Setting predefined regex in code__
-{{region cs-radmaskedinput-features-regex-validation-3}}
+__Example 3: Setting predefined regex in code__
+```C#
 	this.maskedTextInput.ValidationRegex = ValidationHelper.Email;
-{{endregion}}
+```
 
 ## Set Error Message
 
 You can set the error that will be shown in the validation tooltip via the __ErrorMessage__ property of the RadMaskedInput control.
 
-#### __[XAML] Example 4: Setting predefined error message in XAML__
-{{region xaml-radmaskedinput-features-regex-validation-4}}
+__Example 4: Setting predefined error message in XAML__
+```XAML
 	<telerik:RadMaskedTextInput ErrorMessage="Invalid email address"/>
-{{endregion}}
+```
 
 #### __Figure 1: Custom error message__
 ![{{ site.framework_name }} RadMaskedInput Custom error message](images/radmaskedinput-features-regex-validation-0.png)
@@ -78,10 +78,10 @@ You can set the error that will be shown in the validation tooltip via the __Err
 
 The visual element that presents the validation errors is not displayed by default when there is an error. If you want to display it set the __ValidationHelper.DisplayValidationErrors__ attached property on the masked input control to __True__.
 
-#### __[XAML] Example 5: Enabling the validation errors visual__
-{{region xaml-radmaskedinput-features-regex-validation-5}}
+__Example 5: Enabling the validation errors visual__
+```XAML
 	<telerik:RadMaskedTextInput maskedInput:ValidationHelper.DisplayValidationErrors="True"  />
-{{endregion}}
+```
 {% endif %}
 
 ## See Also

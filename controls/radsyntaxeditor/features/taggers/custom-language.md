@@ -13,8 +13,8 @@ By using the **WordTaggerBase** as a base, you can create custom syntax highligh
 
 Let's define the following class which will be responsible for classifying the words of the opened document.
 
-#### __[C#] Example 1: The custom tagger__
-{{region cs-radsyntaxeditor-features-custom-language-1}}
+__Example 1: The custom tagger__
+```C#
     public class PythonTagger : WordTaggerBase
     {
         private static readonly string[] Keywords = new string[]
@@ -125,7 +125,7 @@ Let's define the following class which will be responsible for classifying the w
             return 0;
         }
     }
-{{endregion}}
+```
 
 The code above defines custom arrays of words which are then assigned a `Keyword`, `Comment`, `Operator` or the custom `Fruits` classification type.
 
@@ -137,8 +137,8 @@ Lastly, we override the `GetCharType` method to correctly highlight `blue_berry`
 
 We can then register the custom tagger in RadSyntaxEditor's `TaggersRegistry` just as we would with any other tagger. We also add custom `TextFormatDefinitions` with specific foregrounds for the `NumberLiteral`, `Operator` and the custom `FruitsClassificationType` which we created earlier.
 
-#### __[C#] Example 2: Registering the custom tagger__
-{{region cs-radsyntaxeditor-features-custom-language-2}}
+__Example 2: Registering the custom tagger__
+```C#
     var pythonTagger = new PythonTagger(this.syntaxEditor);
     if (!this.syntaxEditor.TaggersRegistry.IsTaggerRegistered(pythonTagger))
     {
@@ -148,7 +148,7 @@ We can then register the custom tagger in RadSyntaxEditor's `TaggersRegistry` ju
     this.syntaxEditor.TextFormatDefinitions.AddLast(ClassificationTypes.NumberLiteral, new TextFormatDefinition(new SolidColorBrush(Colors.Red)));
     this.syntaxEditor.TextFormatDefinitions.AddLast(ClassificationTypes.Operator, new TextFormatDefinition(new SolidColorBrush(Colors.YellowGreen)));
     this.syntaxEditor.TextFormatDefinitions.AddLast(PythonTagger.FruitsClassificationType, new TextFormatDefinition(new SolidColorBrush(Colors.LightCoral)));
-{{endregion}}
+```
 
 Upon loading some Python code in the editor you will observe a result similar to the one illustrated in **Figure 1**.
 

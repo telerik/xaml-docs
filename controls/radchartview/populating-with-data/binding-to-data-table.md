@@ -14,8 +14,8 @@ In this section we will demonstrated how to bind a ChartView to a DataTable.
 
 For the basis of this article we will declare a Bar Chart which is represented by the RadCartesianChart class. Here is the XAML declaration:        
 
-#### __XAML__
-{{region radchartview-populating-with-data-binding-to-data-table_0}}
+
+```XAML
 	<Grid>
 	    <Grid.RowDefinitions>
 	        <RowDefinition Height="7\*"/>
@@ -44,12 +44,12 @@ For the basis of this article we will declare a Bar Chart which is represented b
 	        <TextBlock Text="Expected" Margin="10, 0, 10, 0"/>
 	    </StackPanel>
 	</Grid>
-{{endregion}}
+```
 
 Next we will decalare a sample DataTable, containing 3 columns - actual (of type double), expected(of type double), month(of type DateTime). The "Actual" column will be the value source for the barSeries1 and the "Expected" - respectively for barSeries2. The values of the "Month" column will serve as the categories for both of these series.        
 
-#### __C#__
-{{region radchartview-populating-with-data-binding-to-data-table_0}}
+
+```C#
 	DataTable dt = new DataTable();
 	dt.Columns.Add("Expected", typeof(double));
 	dt.Columns.Add("Actual", typeof(double));
@@ -63,10 +63,8 @@ Next we will decalare a sample DataTable, containing 3 columns - actual (of type
 	dt.Rows.Add(7, 10, new DateTime(2013, 12, 1));
 	
 	this.DataContext = dt.Rows;
-{{endregion}}
-
-#### __VB.NET__
-{{region radchartview-populating-with-data-binding-to-data-table_1}}
+```
+```VB.NET
 	Dim dt As New DataTable()
 	dt.Columns.Add("Expected", GetType(Double))
 	dt.Columns.Add("Actual", GetType(Double))
@@ -80,7 +78,7 @@ Next we will decalare a sample DataTable, containing 3 columns - actual (of type
 	dt.Rows.Add(7, 10, New DateTime(2013, 12, 1))
 	
 	Me.DataContext = dt.Rows
-{{endregion}}
+```
 
 Using the traditional PropertyNameBinding the ChartView can only be bound to objects of type IEnumerable. In order for the binding to work with our DataTable we must use GenericDataPointBinding. It allows a lot more flexibility because it gives the control to user by allowing him to specify exactly how he wants to retrieve the data.        
 
@@ -92,8 +90,8 @@ The ChartView will automatically traverse the the DataRowsCollection of the Data
 
 Using lambda syntax (as shown below) we set the path to the values in the DataTable for the bar series to use.        
 
-#### __C#__
-{{region radchartview-populating-with-data-binding-to-data-table_2}}
+
+```C#
 	this.barSeries1.ValueBinding = new Telerik.Windows.Controls.ChartView.GenericDataPointBinding<DataRow, double>() 
 	{
 	    ValueSelector = row => (double)row["Actual"]
@@ -113,10 +111,8 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 	{
 	    ValueSelector = row => (DateTime)row["Month"]
 	};
-{{endregion}}
-
-#### __VB.NET__
-{{region radchartview-populating-with-data-binding-to-data-table_3}}
+```
+```VB.NET
 	Me.barSeries1.ValueBinding = New Telerik.Windows.Controls.ChartView.GenericDataPointBinding(Of DataRow, Double)() With { _
 		.ValueSelector = Function(row) CDbl(row("Actual")) _
 	}
@@ -132,7 +128,7 @@ Using lambda syntax (as shown below) we set the path to the values in the DataTa
 	Me.barSeries2.CategoryBinding = New Telerik.Windows.Controls.ChartView.GenericDataPointBinding(Of DataRow, DateTime)() With { _
 		.ValueSelector = Function(row) DirectCast(row("Month"), DateTime) _
 	}
-{{endregion}}
+```
 
 The final result:
 ![Result](images/RadChartView-binding_to_datatable.png)

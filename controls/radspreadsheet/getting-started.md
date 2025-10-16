@@ -12,17 +12,6 @@ position: 2
 
 This article explains how to add a __RadSpreadsheet__ control to a page in your application.
 
-It contains the following sections:
-
-* [Adding Telerik Assemblies Using NuGet](#adding-telerik-assemblies-using-nuget)
-* [Adding Assembly References Manually](#adding-assembly-references-manually)
-
-* [Namespaces](#namespaces)
-
-* [Spreadsheet and RibbonView](#spreadsheet-and-ribbonview)
-
-* [Open/Save Documents](#opensave-documents)
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use __RadSpreadsheet__ when working with NuGet packages, install the `Telerik.Windows.Controls.Spreadsheet.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
@@ -59,43 +48,28 @@ Note that in order to import/export in XLSX or export to PDF, the format provide
 If you want to use the sample UI provided in our demos you should add this reference as well:        
 
 * __Telerik.Windows.Controls.RibbonView.dll__
-{% if site.site_name == 'WPF' %}* __Telerik.Windows.Controls.SpreadsheetUI.dll__{% endif%}
+* __Telerik.Windows.Controls.SpreadsheetUI.dll__
 
 ## Namespaces
 
 For a bare-bone Spreadsheet control, you only need a declaration of the telerik schema:
 
-#### __XAML__
-
-{{region radspreadsheet-schemas_0}}
-
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-{{endregion}}
-
-
+```
 
 For the UI that enables the full-featured use of the control, you should also declare:
 
-#### __XAML__
-
-{{region radspreadsheet-schemas_1}}
-
+```XAML
 	xmlns:spreadsheetControls="clr-namespace:Telerik.Windows.Controls.Spreadsheet.Controls;assembly=Telerik.Windows.Controls.Spreadsheet"
 	xmlns:spreadsheet="clr-namespace:Telerik.Windows.Controls.Spreadsheet;assembly=Telerik.Windows.Controls.Spreadsheet"
-	{{endregion}}
-
+```
 
 Then, all that is left is to add the __Spreadsheet__ component to the page:
-      
 
-#### __XAML__
-
-{{region radspreadsheet-getting-started_2}}
-
+```XAML
 	<telerik:RadSpreadsheet x:Name="radSpreadsheet" />
-{{endregion}}
-
-
+```
 
 ## Spreadsheet and RibbonView
 

@@ -15,8 +15,8 @@ The Telerik RadTreeView supports styling its RadTreeViewItem elements.
 To style the items you can use the __ItemContainerStyle__ property of RadTreeView. The container created by the __RadTreeView__ for each item in the collection is of type __RadTreeViewItem__. The style defined for the ItemContainerStyle property should have the __RadTreeViewItem__ class as __TargetType__.
 
 {% if site.site_name == 'Silverlight' %}
-#### __[XAML] Example 1: RadTreeView definition__  
-{{region radtreeview-styling-and-appearance-item-container-style_0}}
+__Example 1: RadTreeView definition__  
+```XAML
 	<UserControl.Resources>	
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>	
 	    <DataTemplate x:Key="Team">
@@ -37,10 +37,10 @@ To style the items you can use the __ItemContainerStyle__ property of RadTreeVie
 	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 	       ItemTemplate="{StaticResource League}"/>	
 	</Grid>
-{{endregion}}  
+```  
 {% else %}
-#### __[XAML] Example 1: RadTreeView definition__  
-{{region radtreeview-styling-and-appearance-item-container-style_3}}
+__Example 1: RadTreeView definition__  
+```XAML
 	<UserControl.Resources>	
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>	
 	    <DataTemplate x:Key="Team">
@@ -61,7 +61,7 @@ To style the items you can use the __ItemContainerStyle__ property of RadTreeVie
 	       ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 	       ItemTemplate="{StaticResource League}"/>	
 	</Grid>
-{{endregion}}
+```
 {% endif %}
 
 The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ is covered in greater details in the chapter [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}).
@@ -75,8 +75,8 @@ The data source class __RadTreeViewSampleData__ assigned to the __RadTreeView__ 
 
 __Example 2__ demonstrates how to create an ItemContainerStyle, which sets the Foreground and IsExpanded properties of the items. 
 
-#### __[XAML] Example 2: ItemContainerStyle Definition__  
-{{region radtreeview-styling-and-appearance-item-container-style_1}}
+__Example 2: ItemContainerStyle Definition__  
+```XAML
  	<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 	<Style x:Key="myItemContainerStyle" TargetType="telerik:RadTreeViewItem" BasedOn="{StaticResource RadTreeViewItemStyle}">-->
 
@@ -84,15 +84,15 @@ __Example 2__ demonstrates how to create an ItemContainerStyle, which sets the F
 	    <Setter Property="Foreground" Value="Red"/>
 	    <Setter Property="IsExpanded" Value="True"/>
 	</Style>
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting the ItemContainerStyle property__  
-{{region radtreeview-styling-and-appearance-item-container-style_2}}
+__Example 3: Setting the ItemContainerStyle property__  
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView"
 	   ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 	   ItemTemplate="{StaticResource League}"
 	   ItemContainerStyle="{StaticResource myItemContainerStyle}"/>
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 3__
 ![RadTreeView with custom ItemContainerStyle](images/RadTreeView_TemplatingItemContainerStyle_010.PNG)

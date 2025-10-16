@@ -18,13 +18,13 @@ As its name states, the __GifMessage__ is intended to be used for displaying gif
 
 So, a __GifMessage__ can be defined as follows.
 
-#### __[C#] Example 1: Defining a GifMessage__
+__Example 1: Defining a GifMessage__
 
-{{region radchat-messages-gifmessage_01}}
+```C#
 	GifMessage gifMessage = new GifMessage(this.currentAuthor, new Uri("/Images/pbox.gif", UriKind.Relative));
 
 	this.chat.AddMessage(gifMessage);
-{{endregion}}
+```
 
 #### __Figure 1: Defining GifMessage__
 ![Defining GifMessage](images/RadChat_Messages_Gif_01.gif)

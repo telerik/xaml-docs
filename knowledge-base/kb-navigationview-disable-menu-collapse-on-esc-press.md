@@ -32,8 +32,8 @@ How to disable the closing of the RadNavigationView menu on Esc key press.
 
 Subscribe to the __PreviewKeyDown__ event of RadNavigationView and handle it in case the Esc key is pressed.
 
-#### __C#__
-{{region kb-navigationview-disable-menu-collapse-on-esc-press-0}}
+
+```C#
 	private void RadNavigationView_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
 	{
 		if (e.Key == System.Windows.Input.Key.Escape)
@@ -41,4 +41,4 @@ Subscribe to the __PreviewKeyDown__ event of RadNavigationView and handle it in 
 			e.Handled = true;
 		}
 	}
-{{endregion}}
+```

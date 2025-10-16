@@ -83,8 +83,8 @@ Here is a snapshot of the result:
 
 First, define a RadRibbonView with a QuickAccessToolbar:
 
-#### __[XAML] Example 1: RadRibbonView with QuickAccessToolbar__
-{{region xaml-radribbonview-styling-quickaccesstoolbar-0}}
+__Example 1: RadRibbonView with QuickAccessToolbar__
+```XAML
 	 <telerik:RadRibbonView ApplicationButtonContent="File">
         <telerik:RadRibbonView.QuickAccessToolBar>
             <telerik:QuickAccessToolBar>
@@ -93,12 +93,12 @@ First, define a RadRibbonView with a QuickAccessToolbar:
             </telerik:QuickAccessToolBar>
         </telerik:RadRibbonView.QuickAccessToolBar>
     </telerik:RadRibbonView>
-{{endregion}}
+```
 
 Then you will need a custom StyleSelector, which will choose a style for the RadRibbonButtons based on their text:
 
-#### __[C#] Example 2: Define ItemContainerStyleSelector__  
-{{region cs-radribbonview-styling-quickaccesstoolbar-2}}
+__Example 2: Define ItemContainerStyleSelector__  
+```C#
 	public class QATItemContainerStyleSelector : StyleSelector
     {
         public Style SaveStyle { get; set; }
@@ -122,10 +122,8 @@ Then you will need a custom StyleSelector, which will choose a style for the Rad
             return base.SelectStyle(item, container);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Define ItemContainerStyleSelector__  
-{{region vb-radribbonview-styling-quickaccesstoolbar-3}}
+```
+```VB.NET
     Public Class QATItemContainerStyleSelector
         Inherits StyleSelector
         Public Property SaveStyle() As Style
@@ -160,12 +158,12 @@ Then you will need a custom StyleSelector, which will choose a style for the Rad
             Return MyBase.SelectStyle(item, container)
         End Function
     End Class
-{{endregion}}
+```
 
 Finally, you shold define the two custom styles and assign the __QATItemContainerStyleSelector__ to the __ItemContainerStyleSelector__ property of the QuickAccessToolBar.
 
-#### __[XAML] Example 3: Define custom styles and set ItemContainerStyleSelector__
-{{region xaml-radribbonview-styling-quickaccesstoolbar-1}}
+__Example 3: Define custom styles and set ItemContainerStyleSelector__
+```XAML
 	<Style x:Key="PrintStyle" TargetType="telerik:RadRibbonButton" BasedOn="{StaticResource RadRibbonButtonStyle}">
             <Setter Property="Background" Value="Red" />
             <Setter Property="Size" Value="Medium" />
@@ -183,7 +181,7 @@ Finally, you shold define the two custom styles and assign the __QATItemContaine
     <Style BasedOn="{StaticResource QuickAccessToolBarStyle}" TargetType="telerik:QuickAccessToolBar">
         <Setter Property="ItemContainerStyleSelector" Value="{StaticResource QATItemContainerStyleSelector}" />
     </Style>
-{{endregion}}
+```
 
 > This example is implemented with [NoXaml Binaries]({%slug styling-apperance-implicit-styles-overview%}) and the styles are based on the [default styles]({%slug implicit-styles-styling-the-controls%}) for the theme.
 

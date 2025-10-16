@@ -10,17 +10,15 @@ position: 10
 
 # Display Labels And Tooltips For Annotations
 
-
-
 Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}) or [CustomGridLine]({%slug radchart-features-annotations-custom-gridline%}) allows you to customize their appearance using the *Background*, *Stroke* or *StrokeThickness* properties. However it is common scenario that you would like to have __Label__ or __Tooltip__ for your annotations and this is what this help topic will demonstrate.
 
 >The article demonstrates how to set Tooltip and Label for MarkedZone but the approach is the same for the other Annotations. __Adding Tooltip__
 
 ##### 1. To be able to see the Tooltips for MarkedZones you should re-template the Chart Area and put the Annotations Layer within the Zoom Layer. Then by using *TooltipService.ToolTip* property of the MarkedZone you can set custom tooltip:
 
-#### __XAML__
 
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_0}}
+
+```XAML
 	<Style x:Key="ChartAreaStyle" TargetType="telerik:ChartArea">
 	                <Setter Property="Template2D">
 	                    <Setter.Value>
@@ -97,15 +95,11 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 	                    </Setter.Value>
 	                </Setter>
 	            </Style>
-	{{endregion}}
-
-
+```
 
 ##### 2. Set the re-templated ChartArea Style to the RadChart. Then create new __MarkedZone__ and set custom string for it's *TooltipService.ToolTip* property:
 
-#### __XAML__
-
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_1}}
+```XAML
 	<telerik:RadChart x:Name="RadChart1" ItemsSource="{Binding Data}" BorderThickness="1,0,1,1" BorderBrush="Black">
 	            <telerik:RadChart.PaletteBrushes>
 	                <SolidColorBrush Color="Black" />
@@ -152,17 +146,13 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 	                </telerik:ChartDefaultView>
 	            </telerik:RadChart.DefaultView>
 	        </telerik:RadChart>
-	{{endregion}}
-
-
+```
 
 ## Adding Label
 
 ##### 1.  You can show any text in annotation zone by re-templating it and adding *TextBlock* in it's *ControlTemplate*. For this purpose the Rectangle and the newly added *TextBlock* are placed in a Grid. *The retemplated MarkedZone's Style* is as follows*:
 
-#### __XAML__
-
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_2}}
+```XAML
 	<Style x:Key="NewMarkedZones" TargetType="telerik:MarkedZone">
 	                <Setter Property="Background" Value="#33333333" />
 	                <Setter Property="Template" >
@@ -181,30 +171,22 @@ Annotations like [MarkedZone]({%slug radchart-features-annotations-marked-zone%}
 	                    </Setter.Value>
 	                </Setter>
 	            </Style>
-	{{endregion}}
-
-
+```
 
 Additionally the __TextWrapping__ property of the MarkedZone's Text Block is set to __Wrap__ - this way the overflowed text does not clips.
 
 ##### 2. Set the newly created Style to your MarkedZone and provide Label's content using the DataContext property:
 
-#### __XAML__
-
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_3}}
+```XAML
 	<telerik:MarkedZone StartY="0" EndY="4000" Style="{StaticResource NewMarkedZones}" DataContext="This is my custom label" Background="#FF9AD846" />
-	{{endregion}}
-
-
+```
 
 The result image shows the tooltip and the label:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToAnnotation_tooltip_and_label.png)
 
 The same can be achieved with __CustomGridLines__ like this:
 
-#### __XAML__
-
-{{region radchart-howto-display-labels-and-tooltips-for-annotations3_4}}
+```XAML
 	     <SolidColorBrush x:Key="AxisStroke" Color="#FF000000" />
 	
 	        <Style x:Key="gridLineStyle"
@@ -231,9 +213,7 @@ The same can be achieved with __CustomGridLines__ like this:
 	                </Setter.Value>
 	            </Setter>
 	        </Style>
-	{{endregion}}
-
-
+```
 
 Note that the position of the TextBlock is controlled via X1 and Y1 properties (the starting point of the GridLine) as taken using TemplateBinding. The result can be seen below:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToAnnotation_customGridline_label.PNG)

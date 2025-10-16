@@ -40,14 +40,14 @@ The overloads of the AppendDocument() method allow you to pass a parameter of ty
 
 #### **[C#] Example 1: Using the AppendDocument() method**
 
-{{region cs-radrichtextbox-features-merge-append-documents_1}}
+```C#
 
 	AppendDocumentOptions options = new AppendDocumentOptions();
 	options.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle;
 	options.FirstSourceSectionPropertiesResolutionMode = SectionPropertiesResolutionMode.Target;
 	
 	merger.AppendDocument(sourceDocument, options);
-{{endregion}}
+```
 
 
 There is another overload of AppendDocument() that takes only a RadDocument instance. When you use this overload, the default values of AppendDocumentOptions are used when merging documents.  

@@ -10,21 +10,11 @@ position: 2
 
 # Cross-Reference
 
-
-
 Cross-References represent fields that refer to a part of the document. When that part changes, these fields can be updated to reflect the change. You can have a Cross-Reference to a Caption, Heading or Bookmark. 
 
 You can insert a Cross-Reference from here:
 
 ![Rad Rich Text Box Features Cross Reference 01](images/RadRichTextBox_Features_Cross_Reference_01.png)
-
-This article covers:
-
-* [Insert Cross-Reference](#insert-cross-reference)
-
-* [Type of Cross-References](#types-of-cross-references)
-
-* [Inserting a Cross-Reference using RadRichTextBox’s API](#inserting-a-cross-reference-using-radrichtextbox’s-api)
 
 ## Insert Cross-Reference
 
@@ -107,36 +97,34 @@ All types of __Cross-References__ can be inserted using methods of __RadRichText
 
 Every bookmark has a unique name. So in order to insert a reference to a bookmark, you need its name. __RadRichTextBox__ has the following method:
 
-#### __C#__
 
-{{region radrichtextbox-features-cross-reference_1}}
+
+```C#
 	public void InsertCrossReferenceToBookmark(string bookmarkName, ReferenceContentType contentType, bool insertAsHyperlink)
-{{endregion}}
+```
 
 
 
-__ReferenceContentType__ is an enumeration that has five values – __EntireContent__, __OnlyLabelAndNumber__, __OnlyCaption__, __PageNumber__ and __RelativePosition__. As you can see, those values are the same as in the “Insert reference to:” combo box. You can see what every value means [here](#Type_of_Cross_References/Bookmark). The parameter “insertAsHyperlink” is pretty self-explanatory and also can be read about [in this article](#insert-cross-reference).
+__ReferenceContentType__ is an enumeration that has five values – __EntireContent__, __OnlyLabelAndNumber__, __OnlyCaption__, __PageNumber__ and __RelativePosition__. As you can see, those values are the same as in the “Insert reference to:” combo box. The parameter “insertAsHyperlink” is pretty self-explanatory and also can be read about [in this article](#insert-cross-reference).
 
 ### Inserting Cross-Reference to a Heading
 
 You have to pass the paragraph (with heading style applied, of course) that you want to create a Reference to. The method signature is as follows:
 
-#### __C#__
-
-{{region radrichtextbox-features-cross-reference_2}}
+```C#
 	public void InsertCrossReferenceToHeading(Paragraph headingParagraph, ReferenceContentType contentType, bool insertAsHyperlink)
-{{endregion}}
+```
 
 
 The parameters are almost the same, except the first one. It represents the paragraph you want to reference. The other two have the same purpose.Inserting Cross-Reference to a Caption
 
 The method signature is:
 
-#### __C#__
 
-{{region radrichtextbox-features-cross-reference_3}}
+
+```C#
 	public void InsertCrossReferenceToCaption(Paragraph captionParagraph, ReferenceContentType contentType, bool insertAsHyperlink)
-{{endregion}}
+```
 
 
 The first parameter represents the paragraph (__Caption__) you want to refer.

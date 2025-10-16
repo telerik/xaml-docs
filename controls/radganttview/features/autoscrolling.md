@@ -16,13 +16,13 @@ This feature will help end users by auto scrolling the visible area of the view 
 
 By default the auto scrolling functionality is enabled. In order to disable it you need to set the __ScrollingSettingsBehavior.IsEnabled__ attached property to false:
 
-#### __[XAML] Example 1: Disable AutoScrolling__
+__Example 1: Disable AutoScrolling__
 
-{{region xaml-radganttview-features-autoscrolling-1}}
+```XAML
 	<telerik:RadGanttView telerik:ScrollingSettingsBehavior.IsEnabled="False">
 		...
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 ### ScrollStep
 
@@ -30,12 +30,12 @@ The default value that is set to the __ScrollStep__ property is equal to 5px. Th
 
 The next code snippet demonstrates how to change the scrolling step in order to make the auto scrolling speed two times faster than its default value:
 
-#### __[XAML] Example 2: Increase ScrollStep__
-{{region xaml-radganttview-features-autoscrolling-2}}
+__Example 2: Increase ScrollStep__
+```XAML
 	<telerik:RadGanttView telerik:ScrollingSettingsBehavior.ScrollStep="10">
 		…
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 ### ScrollStepTime
 
@@ -43,12 +43,12 @@ __ScrollStepTime__ sets the time interval between the scroll steps of the auto s
 
 The next code snippet demonstrates how to set the scroll time interval to half a second:
 
-#### __[XAML] Example 3: Increase Scroll Step Time Interval__
-{{region xaml-radganttview-features-autoscrolling-3}}
+__Example 3: Increase Scroll Step Time Interval__
+```XAML
 	<telerik:RadGanttView telerik:ScrollingSettingsBehavior.ScrollStepTime="00:00:00.5">
 		…
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 ### ScrollAreaPadding
 
@@ -56,12 +56,12 @@ By setting __ScrollAreaPadding__ you can customize at which point the auto scrol
 
 The next example shows how to set the ScrollAreaPadding in order to achieve top/bottom padding of 50px and right/left padding of 100px:
 
-#### __[XAML] Example 4: Increase Scroll Area Padding__
-{{region xaml-radganttview-features-autoscrolling-4}}
+__Example 4: Increase Scroll Area Padding__
+```XAML
 	<telerik:RadGanttView telerik:ScrollingSettingsBehavior.ScrollAreaPadding="100, 50, 100, 50">
 		…
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 ## See Also
 

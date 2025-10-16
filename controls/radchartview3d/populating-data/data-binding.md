@@ -22,52 +22,52 @@ The properties are of type __DataPointBinding__ which is an abstract class that 
 
 The __PropertyNameDataPointBinding__ expect a path (name) to a property in the business object of the data point. The binding class  obtains the property using reflection, gets the corresponding value and assigns it to the data point model. This type of binding is used when you set the value binding properties in XAML.
 
-#### __[C#] Example 1: Using PropertyNameDataPointBinding__
-{{region cs-radchartview3d-populating-data-databinding-0}}
+__Example 1: Using PropertyNameDataPointBinding__
+```C#
 	chartSeries3D.XValueBinding = new PropertyNameDataPointBinding("MyXValue");
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Setting PropertyNameDataPointBinding in XAML__
-{{region xaml-radchartview3d-populating-data-databinding-1}}
+__Example 2: Setting PropertyNameDataPointBinding in XAML__
+```XAML
 	<telerik:BarSeries3D XValueBinding="MyXValue"/>
-{{endregion}}
+```
 
 The __GenericDataPointBinding&lt;TElement, TResult&gt;__ expects a function that selects a value from the business object. Then it sets this value to the corresponding property of the data point model. This type of binding can be used only in code. 
 
-#### __[C#] Example 3: Using GenericDataPointBinding__
-{{region cs-radchartview3d-populating-data-databinding-2}}
+__Example 3: Using GenericDataPointBinding__
+```C#
 	chartSeries3D.XValueBinding = new GenericDataPointBinding<MyBusinessObject, double>()
 	{
 		ValueSelector = x => x.MyXValue
 	};
-{{endregion}}
+```
 	
 In summary, to bind data to a 3D chart series, you will need to set 4 properties - __YValueBinding, XValueBinding, ZValueBinding and ItemsSource__.
 
-#### __[XAML] Example 4: Setting binding properties in XAML__
-{{region xaml-radchartview3d-populating-data-databinding-3}}
+__Example 4: Setting binding properties in XAML__
+```XAML
 	<telerik:BarSeries3D XValueBinding="MyXValue" 
                          YValueBinding="MyYValue" 
                          ZValueBinding="MyZValue" 
                          ItemsSource="{Binding MyBusinessObjects}"/>
-{{endregion}}
+```
 
 ## Complete Example
 
 This section contains a complete data binding example.
 
-#### __[C#] Step 1: Create the business object for the data point__
-{{region cs-radchartview3d-populating-data-databinding-4}}
+__Step 1: Create the business object for the data point__
+```C#
 	public class MyBusinessObject
 	{
 		public double XValue { get; set; }
 		public string YValue { get; set; }
 		public double ZValue { get; set; }
 	}
-{{endregion}}
+```
 
-#### __[XAML] Step 2: Set up the chart in XAML__
-{{region xaml-radchartview3d-populating-data-databinding-5}}
+__Step 2: Set up the chart in XAML__
+```XAML
 	<telerik:RadCartesianChart3D x:Name="chart">
 		<telerik:RadCartesianChart3D.XAxis>
 			<telerik:LinearAxis3D />
@@ -89,10 +89,10 @@ This section contains a complete data binding example.
 								 ItemsSource="{Binding}"/>
 		</telerik:RadCartesianChart3D.Series>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 
-#### __[C#] Step 3: Create a new collection and assing it to the DataContext of the chart__
-{{region cs-radchartview3d-populating-data-databinding-6}}
+__Step 3: Create a new collection and assing it to the DataContext of the chart__
+```C#
 	var source = new ObservableCollection<MyBusinessObject>();
 	source.Add(new MyBusinessObject() { XValue = 1, YValue = "C1", ZValue = 33 });
 	source.Add(new MyBusinessObject() { XValue = 2.23, YValue = "C2", ZValue = 44 });
@@ -101,7 +101,7 @@ This section contains a complete data binding example.
 	source.Add(new MyBusinessObject() { XValue = 4.5, YValue = "C2", ZValue = 23 });
 
 	chart.DataContext = source;
-{{endregion}}
+```
 	
 #### __Figure 1: Data bound BarSeris3D__
 ![{{ site.framework_name }} RadChartView3D Data bound BarSeris3D](images/radchartview3d-populating-data-databinding-0.png)

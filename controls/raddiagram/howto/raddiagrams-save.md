@@ -17,8 +17,8 @@ The following article will demonstrate how you can save the __RadDiagram__ in th
 
 Let's first configure our XAML. We'll keep it simple - two buttons for save and Load and a Diagram with one shape.
 
-#### __[XAML] Example 1: RadDiagram with a single shape and two buttons for save and load__
-{{region xaml-raddiagrams-howto-save-0}}
+__Example 1: RadDiagram with a single shape and two buttons for save and load__
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -33,7 +33,7 @@ Let's first configure our XAML. We'll keep it simple - two buttons for save and 
 			<telerik:RadButton Content="Load From Storage" x:Name="LoadButton" Click="LoadButton_Click" />
 		</StackPanel>
 	</Grid>
-{{endregion}}
+```
 
 In the code behind we are using the Click event handlers of our save/load buttons. On save, we use a __SaveFileDialog__ to create a new file or overwrite an existing text file.		
 
@@ -41,8 +41,8 @@ Then we use the __RadDiagram.Save()__ method which returns a string with the ser
 
 On Load, we open the created file using an __OpenFileDialog__ and use the __StreamReader__ and the __RadDiagram.Load()__ method to load the serialized XML.
 
-#### __[C#] Example 2: The Save and Load handlers__
-{{region cs-raddiagrams-howto-save-1}}
+__Example 2: The Save and Load handlers__
+```C#
 	public partial class MainWindow : Window
 	{
 		private string fileName;
@@ -83,10 +83,8 @@ On Load, we open the created file using an __OpenFileDialog__ and use the __Stre
             }
         }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: The Save and Load handlers__
-{{region raddiagrams-howto-save-2}}
+```
+```VB.NET
 	Partial Public Class MainWindow
 		 Inherits Window
 		   Private fileName As String
@@ -120,7 +118,7 @@ On Load, we open the created file using an __OpenFileDialog__ and use the __Stre
 			End Using
 		End Sub
     End Class
-{{endregion}}
+```
 
 > You can also replace the OpenFileDialog and SaveFileDialog with Telerik's [RadOpenFileDialog]({%slug radfiledialogs-radopenfiledialog%}) and [RadSaveFileDialog]({%slug radfiledialogs-radsavefiledialog%}) for a more consistent look.
 

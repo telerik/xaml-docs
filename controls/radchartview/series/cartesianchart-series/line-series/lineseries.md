@@ -21,8 +21,8 @@ This series is visualized on the screen as a straight line connecting all data p
 
 You can use the following definition to display a simple LineSeries
 
-#### __[XAML] Example 1: Declaring a LineSeries in XAML__
-{{region radchartview-series-lineseries_0}}
+__Example 1: Declaring a LineSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:CategoricalAxis/>
@@ -44,7 +44,7 @@ You can use the following definition to display a simple LineSeries
 		</telerik:LineSeries>
 	</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: LineSeries visual appearance__
 ![radchartview-series-lineseries](images/radchartview-series-lineseries.png)
@@ -61,9 +61,9 @@ You can use the following definition to display a simple LineSeries
 
 You can use the ValueBinding and CategoryBinding properties of the LineSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-lineseries_1}}
+```C#
 	public class PlotInfo
     {
         public string Category { get; set; }
@@ -76,12 +76,12 @@ You can use the ValueBinding and CategoryBinding properties of the LineSeries to
 		new PlotInfo() { Category = "January", Value = 2},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a LineSeries in XAML__
-{{region radchartview-series-lineseries_2}}	
+__Example 3: Specify a LineSeries in XAML__
+```XAML	
 	<telerik:LineSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value" />
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 

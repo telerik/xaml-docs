@@ -34,8 +34,8 @@ How to create a custom `UILayer` to customize the way that tooltips are shown su
 
 **2.** Implement a custom UILayer that derives from `TextToolTipUILayer`. In the `GetLinePartUIElement` method, you can get the `Rectangle` created by default and set the `ToolTipService.ShowDuration` attached property.
 
-#### __[C#] Creating a custom TextToolTipUILayer__
-{{region cs-kb-syntaxeditor-how-to-create-custom-tooltip-layer-0}}
+__Creating a custom TextToolTipUILayer__
+```C#
     public class CustomTextToolTipUILayer : TextToolTipUILayer
     {
         protected override FrameworkElement GetLinePartUIElement(ToolTipTag tag, Span span, UIUpdateContext updateContext)
@@ -45,12 +45,12 @@ How to create a custom `UILayer` to customize the way that tooltips are shown su
             return rectangle;
         }
     }
-{{endregion}}
+```
 
 **3.** To apply the custom UILayer, create a custom `UILayersBuilder` and override its `BuildUILayers` method. In the method, you can replace the default TextToolTipUILayer with the custom one using the `Remove` and `AddAfter` methods of the `UILayerStack`.
 
-#### __[C#] Creating a custom UILayersBuilder__
-{{region cs-kb-syntaxeditor-how-to-create-custom-tooltip-layer-1}}
+__Creating a custom UILayersBuilder__
+```C#
     public class CustomUILayersBuilder : UILayersBuilder
     {
         public override void BuildUILayers(UILayerStack uiLayers)
@@ -60,14 +60,14 @@ How to create a custom `UILayer` to customize the way that tooltips are shown su
             uiLayers.AddAfter(PredefinedUILayers.Text, new CustomTextToolTipUILayer());
         }
     }
-{{endregion}}
+```
 
 **4.** Apply the custom UILayersBuilder using the syntax editor's property with the same name.
 
-#### __[C#] Creating a custom UILayersBuilder__
-{{region cs-kb-syntaxeditor-how-to-create-custom-tooltip-layer-2}}
+__Creating a custom UILayersBuilder__
+```C#
     this.syntaxEditor.UILayersBuilder = new CustomUILayersBuilder();
-{{endregion}}
+```
 
 ## See Also
 

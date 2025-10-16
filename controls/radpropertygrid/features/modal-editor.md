@@ -16,23 +16,21 @@ The `ModalEditor` element allows you to edit the value of a `PropertyDefinition`
 
 The PropertyDefinition exposes the `EditorTemplate` property that will allow you to define a new ModalEditor instance for it. Via the `SourceProperty` of the ModalEditor, you can set the property from your business object that will be used for the binding. To use your custom editor, you can utilize the `Editor` property, which expects a value of the type of `FrameworkElement`.
 
-#### __[C#] Defining the business object__
-{{region radpropertygrid-features-modal-editor-0}}
+__Defining the business object__
+```C#
     public class CharacterInfo
     {
         public string ProtagonistName { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Defining the business object__
-{{region radpropertygrid-features-modal-editor-1}}
+```
+```VB.NET
     Public Class CharacterInfo
         Public Property ProtagonistName As String
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Setting the ModalEditor via the EditorTemplate property__
-{{region radpropertygrid-features-modal-editor-2}}
+__Setting the ModalEditor via the EditorTemplate property__
+```XAML
     <telerik:RadPropertyGrid.PropertyDefinitions>
         <telerik:PropertyDefinition DisplayName="Protagonist Name" Binding="{Binding ProtagonistName}">
             <telerik:PropertyDefinition.EditorTemplate>
@@ -46,7 +44,7 @@ The PropertyDefinition exposes the `EditorTemplate` property that will allow you
             </telerik:PropertyDefinition.EditorTemplate>
         </telerik:PropertyDefinition>
     </telerik:RadPropertyGrid.PropertyDefinitions>
-{{endregion}}
+```
 
 __ModalEditor defined via the EditorTemplate property__
 
@@ -56,22 +54,20 @@ __ModalEditor defined via the EditorTemplate property__
 
 When using the [EditorAttribute]({%slug radpropertygrid-editor-attribute%}), if its `EditorStyle` property is set to `Modal`, a new ModalEditor element is created.
 
-#### __[C#] Setting the EditorStyle property to Modal__
-{{region radpropertygrid-features-modal-editor-3}}
+__Setting the EditorStyle property to Modal__
+```C#
     public class CharacterInfo
     {
         [Editor(typeof(TextBox), "Text", EditorStyle.Modal)]
         public string ProtagonistName { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Setting the EditorStyle property to Modal__
-{{region radpropertygrid-features-modal-editor-4}}
+```
+```VB.NET
     Public Class CharacterInfo
         <Editor(GetType(TextBox), "Text", EditorStyle.Modal)>
         Public Property ProtagonistName As String
     End Class
-{{endregion}}
+```
 
 __ModalEditor defined via the EditorStyle property of the EditorAttribute__
 
@@ -81,17 +77,17 @@ __ModalEditor defined via the EditorStyle property of the EditorAttribute__
 
 To customize the ModalEditor element, you can either create a `Style` that targets it or use the [FieldLoaded]({%slug radpropertygrid-events%}) event. You can retrieve it through the `Content` property of the `Field` object that is provided by the event's arguments.
 
-#### __[XAML] Customizing the ModalEditor via a Style__
-{{region radpropertygrid-features-modal-editor-5}}
+__Customizing the ModalEditor via a Style__
+```XAML
     <!--If you are using NoXaml assemblies: BasedOn="{StaticResource ModalEditorStyle}"-->
     <Style TargetType="telerik:ModalEditor">
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Background" Value="Orange"/>
     </Style>
-{{endregion}}
+```
 
-#### __[C#] Customizing the ModalEditor via the FieldLoaded event__
-{{region radpropertygrid-features-modal-editor-6}}
+__Customizing the ModalEditor via the FieldLoaded event__
+```C#
     private void RadPropertyGrid_FieldLoaded(object sender, FieldEventArgs e)
     {
         var modalEditor = e.Field.Content as ModalEditor;
@@ -102,10 +98,8 @@ To customize the ModalEditor element, you can either create a `Style` that targe
             modalEditor.Background = Brushes.Orange;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Customizing the ModalEditor via the FieldLoaded event__
-{{region radpropertygrid-features-modal-editor-7}}
+```
+```VB.NET
     Private Sub RadPropertyGrid_FieldLoaded(ByVal sender As Object, ByVal e As FieldEventArgs)
         Dim modalEditor = TryCast(e.Field.Content, ModalEditor)
 
@@ -114,7 +108,7 @@ To customize the ModalEditor element, you can either create a `Style` that targe
             modalEditor.Background = Brushes.Orange
         End If
     End Sub
-{{endregion}}
+```
 
 __Customized ModalEditor__
 
@@ -126,18 +120,18 @@ The ModalEditor element provides the functionality to position the modal dialog 
 
 >important In order for the `WindowTop` and `WindowLeft` properties to be taken into account, the `WindowStartupLocation` property has to be set to `Manual`.
 
-#### __[XAML] Positioning the ModalEditor via Style__
-{{region radpropertygrid-features-modal-editor-8}}
+__Positioning the ModalEditor via Style__
+```XAML
     <!--If you are using NoXaml assemblies: BasedOn="{StaticResource ModalEditorStyle}"-->
 	<Style TargetType="telerik:ModalEditor">
 		<Setter Property="WindowStartupLocation" Value="Manual"/>
 		<Setter Property="WindowTop" Value="500"/>
 		<Setter Property="WindowLeft" Value="250"/>
 	</Style>
-{{endregion}}
+```
 
-#### __[C#] Positioning the ModalEditor via the FieldLoaded event__
-{{region radpropertygrid-features-modal-editor-9}}
+__Positioning the ModalEditor via the FieldLoaded event__
+```C#
 	private void PropertyGrid_FieldLoaded(object sender, Telerik.Windows.Controls.Data.PropertyGrid.FieldEventArgs e)
 	{
 		var modalEditor = e.Field.Content as ModalEditor;
@@ -149,10 +143,8 @@ The ModalEditor element provides the functionality to position the modal dialog 
 			modalEditor.WindowLeft = 250;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Positioning the ModalEditor via the FieldLoaded event__
-{{region radpropertygrid-features-modal-editor-10}}
+```
+```VB.NET
 	Private Sub PropertyGrid_FieldLoaded(ByVal sender As Object, ByVal e As Telerik.Windows.Controls.Data.PropertyGrid.FieldEventArgs)
 		Dim modalEditor = TryCast(e.Field.Content, ModalEditor)
 
@@ -162,7 +154,7 @@ The ModalEditor element provides the functionality to position the modal dialog 
 			modalEditor.WindowLeft = 250
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

@@ -33,9 +33,9 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can include the control in your page by either dragging it from the toolbox in Visual Studio or manually creating the control. __Example 1__ demonstrate how to create __RadTimeline__ in XAML.
 
-#### __[XAML] Example 1: Creating RadTimeline control__
+__Example 1: Creating RadTimeline control__
 
-{{region xaml-radtimeline-getting-started_0}}
+```XAML
 	   <telerik:RadTimeline PeriodStart="2016/01/01" 
                             PeriodEnd="2016/06/01" 
                             VisiblePeriodStart="2016/01/01" 
@@ -49,7 +49,7 @@ You can include the control in your page by either dragging it from the toolbox 
                 <telerik:HourInterval />
             </telerik:RadTimeline.Intervals>
         </telerik:RadTimeline>
-{{endregion}}
+```
 
 #### __Figure 1: RadTimeline visualization__
 ![{{ site.framework_name }} RadTimeline RadTimeline visualization](images/RadTimeline_Getting_Started_0.png)
@@ -80,8 +80,8 @@ To change the theme, you can follow the steps below:
 
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 2: Merge the ResourceDictionaries__  
-{{region radtimeline-getting-started_7}}
+__Example 2: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -91,7 +91,7 @@ __Example 2__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

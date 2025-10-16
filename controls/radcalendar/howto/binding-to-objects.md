@@ -18,9 +18,9 @@ To enable __TwoWay__ binding, the object that the Calendar is bound to should im
 
 Here is the Xaml for the example:
 
-#### __XAML__
 
-{{region xaml-radcalendar-binding-to-objects_0}}
+
+```XAML
 	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
 	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 	    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
@@ -35,13 +35,13 @@ Here is the Xaml for the example:
 	        </StackPanel>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 And the code-behind:
 
-#### __C#__
 
-{{region cs-radcalendar-binding-to-objects_1}}
+
+```C#
 	public partial class Default_Cs : UserControl
 	{
 	    OrderInfo myOrderInfo;
@@ -125,7 +125,7 @@ And the code-behind:
 	    /// </summary>
 	    public event PropertyChangedEventHandler PropertyChanged;
 	}
-{{endregion}}
+```
 
 In this example our business object, the Order info has a property ArrivalDate which we bind the calendar and the __TextBlock__ to. When the property changes, everything is updated accordingly regardless of whether we update the value in code (the click handler) or via the TwoWay binding.
 

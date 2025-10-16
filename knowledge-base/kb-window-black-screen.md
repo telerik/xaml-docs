@@ -33,8 +33,8 @@ Black screen is displayed when you open a WPF `RadWindow` or `RadRibbonWindow` a
 
 This happens when you create a custom control that derives from `RadWindow` or `RadRibbonWindow`. For example, if you use the [window as a UserControl]({%slug radwindow-how-to-use-radwindow-as-user-control%}). In this case, you should also define a style for the custom control and base it on the default window style. This is required for all custom controls that derive from Telerik controls. Read more in the [Styling the Controls]({%slug implicit-styles-styling-the-controls%}#styling-custom-controls) article.
 
-#### __[XAML] RadWindow style__
-{{region kb-window-black-screen-0}}
+__RadWindow style__
+```XAML
 	<ResourceDictionary>
 		<ResourceDictionary.MergedDictionaries>
 			<ResourceDictionary Source="Themes/System.Windows.xaml" />
@@ -45,10 +45,10 @@ This happens when you create a custom control that derives from `RadWindow` or `
 		<!-- style for a custom window -->	
 		<Style TargetType="local:MainWindow" BasedOn="{StaticResource RadWindowStyle}" />
 	</ResourceDictionary> 
-{{endregion}}
+```
 
-#### __[XAML] RadRibbonWindow style__
-{{region kb-window-black-screen-1}}
+__RadRibbonWindow style__
+```XAML
 	<ResourceDictionary>
 		<ResourceDictionary.MergedDictionaries>
 			<ResourceDictionary Source="Themes/System.Windows.xaml" />
@@ -60,4 +60,4 @@ This happens when you create a custom control that derives from `RadWindow` or `
 		<!-- style for a custom ribbon window -->	
 		<Style TargetType="local:MainWindow" BasedOn="{StaticResource RadRibbonWindowStyle}" />
 	</ResourceDictionary> 
-{{endregion}}
+```

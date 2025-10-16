@@ -12,23 +12,23 @@ position: 3
 
 You can move one item to a different group by using the built-in drag-drop functionality. The reordering of the items is enabled by default. To disable it you can set the __IsDragDropEnabled__ property of the __RadTaskBoard__ to false.
 
-#### __[XAML] Example 1: Disable Reordering of the Items__
-	{{region xaml-radtaskborad-features-reordering-items_0}}
-	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" IsDragDropEnabled="False" />
-	{{endregion}}
+__Example 1: Disable Reordering of the Items__
+```XAML
+   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" IsDragDropEnabled="False" />
+```
 	
 ## Drag Visual Providers
 
 The __DragVisualProvider__ enriches the drag-drop functionality of __RadTaskBoard__ control by providing a different visual DragCue to the dragged item. The DragVisualProvider can be set to:
 
-#### __[XAML] Example 2: Set DragVisualProvider__
-	{{region xaml-radtaskborad-features-reordering-items_1}}
-	   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" ItemsSource="{Binding Data}">
-			<telerik:RadTaskBoard.DragVisualProvider>
-				<telerik:ScreenshotDragVisualProvider />
-			</telerik:RadTaskBoard.DragVisualProvider>
-	   </telerik:RadTaskBoard>
-	{{endregion}}
+__Example 2: Set DragVisualProvider__
+```XAML
+   <telerik:RadTaskBoard x:Name="taskBoard" GroupMemberPath="State" ItemsSource="{Binding Data}">
+		<telerik:RadTaskBoard.DragVisualProvider>
+			<telerik:ScreenshotDragVisualProvider />
+		</telerik:RadTaskBoard.DragVisualProvider>
+   </telerik:RadTaskBoard>
+```
 
 * __ScreenshotDragVisualProvider__: Provides the exact visual representation of the dragged item. This provider is set by default to the __DragVisualProvider__ property.
 

@@ -14,11 +14,11 @@ With the Q1 2016 release of UI for {% if site.site_name == 'WPF' %}WPF{% endif %
 
 >When the __InputMode__ is set to __DatePicker__ and the user presses the Today button, only the current date will be selected. When the __InputMode__ is set to __TimePicker__ and the user presses the Today button, the current time will be selected.
 
-#### __[XAML] TodayButtonVisibility and TodayButtonContent__
+__TodayButtonVisibility and TodayButtonContent__
 
-{{region xaml-raddatetimepicker-todaybutton_0}}
+```XAML
 	<telerik:RadDateTimePicker TodayButtonVisibility="Visible" TodayButtonContent="Select Today/Now"/>
-{{endregion}}
+```
 
 The final result is shown on the snapshot below:
 

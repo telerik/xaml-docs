@@ -32,18 +32,18 @@ How to auto size RadImageEditor's picture so that no zooming is applied.
 
 Set the __ScaleFactor__ property of RadImageEditor to 0.
 
-#### __[XAML]__
-{{region kb-imageeditor-auto-size-picture-0}}
+
+```XAML
 	<telerik:RadImageEditor ScaleFactor="0" />
-{{endregion}}
+```
 
 If you use RadImageEditorUI, subscribe to its ImageEditorLoaded event and set the property there.
 
-#### __[C#]__
-{{region kb-imageeditor-auto-size-picture-1}}
+
+```C#
 	private void RadImageEditorUI_ImageEditorLoaded(object sender, EventArgs e)
 	{
 		var radImageEditorUI = (RadImageEditorUI)sender;
 		radImageEditorUI.ImageEditor.ScaleFactor = 0;
 	}
-{{endregion}}
+```

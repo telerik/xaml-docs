@@ -14,8 +14,8 @@ This article describes how to implement DynamicObject with dynamic (DLR) and sta
 
 The following model shows a class that derives from [DynamicObject](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject?view=netframework-4.8) and containing one CLR property called `Id`. When the RadGridView auto-generates its columns, the [TryGetMember](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.trygetmember?view=netframework-4.8) method of the DynamicObject class will be used to fetch the values for each column. This said, you will need to implement some logic in the method in order to allow RadGridView to work with the data - both CLR (Common Language Runtime) and DLR (Dynamic Language Runtime).
 
-#### __[C#] Example 1: DynamicObject implementation__
-{{region gridview-how-to-use-mixed-clr-dlr-properties-0}}
+__Example 1: DynamicObject implementation__
+```C#
 	public class RowInfo : DynamicObject, INotifyPropertyChanged
 	{     
 		private int id;	
@@ -91,10 +91,8 @@ The following model shows a class that derives from [DynamicObject](https://docs
 			}
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: DynamicObject implementation__
-{{region gridview-how-to-use-mixed-clr-dlr-properties-1}}
+```
+```VB.NET
 	Public Class RowInfo
 		Inherits DynamicObject
 		Implements INotifyPropertyChanged
@@ -160,10 +158,10 @@ The following model shows a class that derives from [DynamicObject](https://docs
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End Sub
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Example 2: Populating with data__
-{{region gridview-how-to-use-mixed-clr-dlr-properties-2}}
+__Example 2: Populating with data__
+```C#
 	public MyUserControl()
 	{
 		InitializeComponent();
@@ -182,10 +180,8 @@ The following model shows a class that derives from [DynamicObject](https://docs
 
 		this.DataContext = data;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Populating with data__
-{{region gridview-how-to-use-mixed-clr-dlr-properties-3}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Dim data = New ObservableCollection(Of RowInfo)()
@@ -204,12 +200,12 @@ The following model shows a class that derives from [DynamicObject](https://docs
 
 		Me.DataContext = data
 	End Sub
-{{endregion}}
+```
 
-#### __[XAML] Example 3: RadGridView definition__
-{{region gridview-how-to-use-mixed-clr-dlr-properties-4}}
+__Example 3: RadGridView definition__
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding}" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGridView with Mixed CLR and Dynamic Properties](images/gridview-how-to-use-mixed-clr-dlr-properties-0.png)
 

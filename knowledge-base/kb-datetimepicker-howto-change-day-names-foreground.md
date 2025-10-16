@@ -28,8 +28,8 @@ How to change the Foreground of the buttons for the day short names in RadCalend
 
 Create a custom DataTemplate that sets the Foreground of a TextBlock element inside its Triggers and assign the template to the __DayTemplate__ of the RadCalendar. If you are using a RadDateTimePicker, you can do that through its __CalendarStyle__ property. 
 
-#### __[XAML] Example 1: Conditionally coloring the day short names__
-{{region xaml-kb-datetimepicker-howto-change-day-names-foreground-0}}
+__Example 1: Conditionally coloring the day short names__
+```XAML
 
     <Grid xmlns:calendar="clr-namespace:Telerik.Windows.Controls.Calendar;assembly=Telerik.Windows.Controls.Input">
         <Grid.Resources>
@@ -50,7 +50,7 @@ Create a custom DataTemplate that sets the Foreground of a TextBlock element ins
         
         <telerik:RadDateTimePicker InputMode="DatePicker" CalendarStyle="{StaticResource CalendarStyle}"  VerticalAlignment="Center" HorizontalAlignment="Center" />
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1__
 ![RadCalendar with colored day short names](images/kb-datetimepicker-calendar-foreground-short-names.png)

@@ -14,8 +14,8 @@ The VirtualKeyboard component uses a DataTemplateSelector in order to determine 
 
 To customize the appearance, you can use the `VirtualKeyboardTemplateSelector` property of `RadVirtualKeyboard`. The following example shows how to define the selector with the default templates used by the VirtualKeyboard and modify their background, border and font size.
 
-#### __[XML] Defining VirtualKeyboardTemplateSelector__
-{{region radvirtualkeyboard-customize-keys-0}}
+__Defining VirtualKeyboardTemplateSelector__
+```XML
 	<UserControl.Resources>
 		<telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 		<telerik:VirtualKeyboardTemplateSelector x:Key="KeyTemplateSelector">
@@ -60,12 +60,12 @@ To customize the appearance, you can use the `VirtualKeyboardTemplateSelector` p
 			</telerik:VirtualKeyboardTemplateSelector.LockTemplate>
 		</telerik:VirtualKeyboardTemplateSelector>
 	</UserControl.Resources>		
-{{endregion}}
+```
 
-#### __[XAML] Setting the VirtualKeyboardTemplateSelector__
-{{region radvirtualkeyboard-customize-keys-1}}
+__Setting the VirtualKeyboardTemplateSelector__
+```XAML
 	<telerik:RadVirtualKeyboard VirtualKeyboardTemplateSelector="{StaticResource KeyTemplateSelector}" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadVirtualKeyboard Customized Keys Template Selector](images/radvirtualkeyboard-customize-keys-0.png)
 
@@ -75,8 +75,8 @@ To customize the appearance, you can use the `VirtualKeyboardTemplateSelector` p
 
 To extend the visualization of the keys even further you can extend its view models. This will allow you to define additional properties that can be used in the `DataTemplates` of the VirtualKeyboardTemplateSelector. The  extended view models can be used by implementing custom [keys factory]({%slug radvirtualkeyboard-keys-layout%}#keys-factory) class. The following example shows how to add properties for the background and foreground of the buttons.
 
-#### __[C#] Creating custom key view models in order to include background and foreground information__
-{{region radvirtualkeyboard-customize-keys-2}}
+__Creating custom key view models in order to include background and foreground information__
+```C#
 	public class CustomLockKeyViewModel : LockKeyViewModel
     {
         public CustomLockKeyViewModel(int virtualKey, double keyWidth, double keyHeight, string displayText) 
@@ -131,10 +131,10 @@ To extend the visualization of the keys even further you can extend its view mod
         public Brush Background { get; set; }
         public Brush Foreground { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Creating key factory__
-{{region radvirtualkeyboard-customize-keys-3}}
+__Creating key factory__
+```C#
 	public class CustomKeyFactory : DefaultKeyFactory
     {
         private static readonly List<int> specialColorKeyCodes = new List<int>()
@@ -221,10 +221,10 @@ To extend the visualization of the keys even further you can extend its view mod
             }
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Defining the key template selector__
-{{region radvirtualkeyboard-customize-keys-4}}
+__Defining the key template selector__
+```XAML
 	<UserControl.Resources>
         <telerik:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         <telerik:VirtualKeyboardTemplateSelector x:Key="KeyTemplateSelector">
@@ -269,16 +269,16 @@ To extend the visualization of the keys even further you can extend its view mod
             </telerik:VirtualKeyboardTemplateSelector.LockTemplate>
         </telerik:VirtualKeyboardTemplateSelector>
     </UserControl.Resources>
-{{endregion}}
+```
 
-#### __[XAML] Setting the custom key factory and the template selector__
-{{region radvirtualkeyboard-customize-keys-5}}
+__Setting the custom key factory and the template selector__
+```XAML
 	<telerik:RadVirtualKeyboard VirtualKeyboardTemplateSelector="{StaticResource KeyTemplateSelector}">
 		<telerik:RadVirtualKeyboard.KeyFactory>
 			<local:CustomKeyFactory />
 		</telerik:RadVirtualKeyboard.KeyFactory>
 	</telerik:RadVirtualKeyboard>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadVirtualKeyboard Custom Key Factory and Template Selector](images/radvirtualkeyboard-customize-keys-1.png)
 

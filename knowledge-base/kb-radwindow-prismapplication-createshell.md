@@ -31,8 +31,8 @@ Returning object of type RadWindow in the Prism 7 application CreateShell method
 
 Return null in CreateShell() method, and override OnInitialized() method to show the RadWindow.
 
-#### __[C#]__
-{{region kb-kb-radwindow-prismapplication-createshell-0}}
+
+```C#
 	public partial class App
 	{
 		protected override Window CreateShell()
@@ -56,5 +56,5 @@ Return null in CreateShell() method, and override OnInitialized() method to show
 
 		}
 	}
-{{endregion}}
+```
 

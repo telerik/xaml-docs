@@ -22,19 +22,16 @@ To display the data from the __WCF Data Service__, create a new WPF application 
 
 1. Add a new class inside the project and replace its declaration with the one demonstrated in __Example 1__.
 
-#### __[C#] Example 1: Defining the context__
+__Example 1: Defining the context__
 
-{{region raddataservicedatasource-getting-started-creating-the-client-application_0}}
+```C#
 
 	public class MyNorthwindContext : NorthwindEntities
 	{
 		public MyNorthwindContext() : base(new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)){}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the context__
-
-{{region raddataservicedatasource-getting-started-creating-the-client-application_1}}
+```
+```VB.NET
 
 	Public Class MyNorthwindContext
 	 Inherits NorthwindEntities
@@ -42,7 +39,7 @@ To display the data from the __WCF Data Service__, create a new WPF application 
 	  MyBase.New(New Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute))
 	 End Sub
 	End Class
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDataServiceDataSource Generated WCF Files](images/RadDataServiceDataSource_GeneratedClientCode_WPF.png){% endif %}
 
@@ -84,21 +81,16 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 
 1. Replace the class declaration with the following code:
 
-#### __C#__
 
-{{region raddataservicedatasource-getting-started-creating-the-client-application_2}}
+
+```C#
 
 	public class MyNorthwindContext : NorthwindEntities
 	{
 	 public MyNorthwindContext() : base(new Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute)){}
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region raddataservicedatasource-getting-started-creating-the-client-application_3}}
+```
+```VB.NET
 
 	Public Class MyNorthwindContext
 	 Inherits NorthwindEntities
@@ -106,7 +98,7 @@ To display the data from the __WCF Data Service__, create a new __Silverlight__ 
 	  MyBase.New(New Uri("http://services.odata.org/Northwind/Northwind.svc", UriKind.Absolute))
 	 End Sub
 	End Class
-{{endregion}}
+```
 
 
 

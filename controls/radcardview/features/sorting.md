@@ -23,10 +23,10 @@ The data items can be sorted by clicking on a data field descriptor from the [da
 
 To disable user sorting, set the __CanUserSortDescriptors__ property to __False__.
 
-#### __[XAML] Example 1: Setting the CanUserSortDescriptors property__
-{{region radcardview-features-sorting-0}}
+__Example 1: Setting the CanUserSortDescriptors property__
+```XAML
 	<telerik:RadCardView CanUserSortDescriptors="False" />
-{{endregion}}
+```
 
 Additionally, the sorting can be disabled per [CardDataFieldDescriptor]({%slug radcardview-features-datafielddescriptors%}) by setting its __AllowSorting__ property.
 
@@ -34,8 +34,8 @@ Additionally, the sorting can be disabled per [CardDataFieldDescriptor]({%slug r
 
 The following example shows how to setup RadCardView, populate it with a [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}) and add SortDescriptors in code.
 
-#### __[C#] Example 2: Defining the model__
-{{region radcardview-features-sorting-1}}
+__Example 2: Defining the model__
+```C#
 	public class CardInfo
     {
         public string Header { get; set; }
@@ -72,23 +72,23 @@ The following example shows how to setup RadCardView, populate it with a [Querya
             CollectionView.SortDescriptors.Add(new SortDescriptor() { Member = "Name", SortDirection = ListSortDirection.Descending });        
         }
     }
-{{endregion}} 
+``` 
 
 >tip Read the [QueryableCollectionView]({%slug consuming-data-queryablecollectionview%}#sorting) to see how to use the SortDescriptors collection of the QueryableCollectionView.
 
-#### __[C#] Example 3: Setting the DataContext__
-{{region radcardview-features-sorting-2}}
+__Example 3: Setting the DataContext__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.DataContext = new MainViewModel();
 	}
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Setting up the view__
-{{region radcardview-features-sorting-3}}
+__Example 4: Setting up the view__
+```XAML
 	<telerik:RadCardView ItemsSource="{Binding CollectionView}" CardHeaderBinding="{Binding Header}" />
-{{endregion}}
+```
 
 ## Events
 

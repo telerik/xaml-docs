@@ -40,8 +40,8 @@ Properties:
 |----|-----------|
 |Source|Gets or sets the source of the connection which should be of type deriving from NodeViewModelBase.|
 |Target|Gets or sets the target of the connection which should be of type deriving from NodeViewModelBase.|
-|SourceCapType|Gets or sets the CapType of the start of the represented connection. You can find more information regarding the different CapTypes in the [Connections](5a2d6cbf-4f5c-466c-baec-19360d30803d#CapTypes) article.|
-|TargetCapType|Gets or sets the CapType of the end of the represented connection. You can find more information regarding the different CapTypes in the [Connections](5a2d6cbf-4f5c-466c-baec-19360d30803d#CapTypes) article.|
+|SourceCapType|Gets or sets the CapType of the start of the represented connection. |
+|TargetCapType|Gets or sets the CapType of the end of the represented connection. |
 
 Inherited Properties:
 

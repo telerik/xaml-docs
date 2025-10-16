@@ -33,7 +33,7 @@ To change the theme, you can follow the steps below:
 **Example 1** demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
 #### [XAML] Example 1: Merge the ResourceDictionaries
-{{region radrichtextbox-getting-started-theming_0}}
+```XAML
 
 		<Application.Resources>
 			<ResourceDictionary>
@@ -49,7 +49,7 @@ To change the theme, you can follow the steps below:
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __RadRichTextBox with the Windows8 theme__  
 

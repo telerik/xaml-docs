@@ -24,9 +24,9 @@ With __Q3 2013__ official release we have introduced a new property for __GridVi
      
 **Example 1** shows how the property can be used.
     
-#### __[C#] Example 1: Clearing user-defined errors__
+__Example 1: Clearing user-defined errors__
 
-{{region cs-gridview-troubleshooting-validation-stays_0}}
+```C#
 	private void rgvTest_RowEditEnded(object sender, GridViewRowEditEndedEventArgs e)
 	{
 	    if (e.EditAction == GridViewEditAction.Cancel)
@@ -34,17 +34,14 @@ With __Q3 2013__ official release we have introduced a new property for __GridVi
 	        e.UserDefinedErrors.Clear();
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Clearing user-defined errors__
-
-{{region vb-gridview-troubleshooting-validation-stays_0}}
+```
+```VB.NET
 	Private Sub rgvTest_RowEditEnded(ByVal sender As Object, ByVal e As GridViewRowEditEndedEventArgs)
 		If e.EditAction = GridViewEditAction.Cancel Then
 			e.UserDefinedErrors.Clear()
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

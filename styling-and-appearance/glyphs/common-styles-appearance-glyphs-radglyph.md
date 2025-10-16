@@ -20,26 +20,26 @@ Apart from the **shorter load time** compared to the ordinary glyphs, the RadGly
 
 The RadGlyph can be used both standalone and as a markup extension. **Examples 1 and 2** demonstrate both approaches, respectively.
 
-#### __[XAML] Example 1: Define a RadGlyph in XAML__
+__Example 1: Define a RadGlyph in XAML__
 
-{{region xaml-common-styling-appearance-radglyph-1}}
+```XAML
 	<Label x:Name="label">
 		<telerik:RadGlyph Glyph="&#xe91e;" Foreground="Black" FontSize="100" />
 	</Label>
-{{endregion}}
+```
 
-#### __[C#] Example 1: Define a RadGlyph in code-behind__
+__Example 1: Define a RadGlyph in code-behind__
 
-{{region cs-common-styling-appearance-radglyph-1}}
+```C#
 	var glyph = new RadGlyph() { Glyph = "\uE91E", Foreground = Brushes.Black, FontSize = 100 };
 	this.label.Content = glyph;
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Use the RadGlyph markup extension__
+__Example 2: Use the RadGlyph markup extension__
 
-{{region xaml-common-styling-appearance-radglyph-2}}
+```XAML
 	<Image Source="{telerik:RadGlyph Glyph={StaticResource GlyphCs}, Foreground=Black}" />
-{{endregion}}
+```
 
 #### Figure 1: The result from examples 1 and 2
 
@@ -47,10 +47,10 @@ The RadGlyph can be used both standalone and as a markup extension. **Examples 1
 
 > In order to use the glyph references (such as **GlyphCs** in **Example 2**) as static resources in a project, you need to include the **Telerik.Windows.Controls.dll** and merge the **FontResources.xaml** dictionary in the application resources as demonstrated in **Example 3**. A list of the available glyphs and their resource keys can be found in the [Glyphs Reference Sheet]({%slug common-styling-appearance-glyphs-reference-sheet%}) article.
 
-#### __[XAML] Example 3: Adding the FontResources.xaml dictionary__
-{{region xaml-common-styling-appearance-radglyph-3}}
+__Example 3: Adding the FontResources.xaml dictionary__
+```XAML
 	<ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/> 
-{{endregion}}
+```
 
 ## Properties
 
@@ -78,7 +78,7 @@ The **RadGlyphExtension** cannot be set inline to the **Value** property of a St
 
 #### **[XAML] Example 4: Set Setter.Value XAML tag**
 
-{{region xaml-common-styling-appearance-radglyph-4}}
+```XAML
 	<Style TargetType="telerik:RadButton">
     	<Setter Property="Content">
         	<Setter.Value>
@@ -86,7 +86,7 @@ The **RadGlyphExtension** cannot be set inline to the **Value** property of a St
         	</Setter.Value>
     	</Setter>
 	</Style>
-{{endregion}}
+```
 
 ## Fonts
 
@@ -98,7 +98,7 @@ Another font that comes out of the box **since the R2 2022 release** is the **Te
 
 #### **[XAML] Example 5: Calendar glyph in TelerikFluentIcons and TelerikWebUI fonts respectively**
 
-{{region xaml-common-styling-appearance-radglyph-5}}
+```XAML
     <StackPanel Orientation="Horizontal">
         <Label>
             <telerik:RadGlyph Font="TelerikFluentIcons" Glyph="&#xe108;" Foreground="Black" FontSize="40"/>
@@ -107,7 +107,7 @@ Another font that comes out of the box **since the R2 2022 release** is the **Te
             <telerik:RadGlyph Glyph="&#xe108;" Foreground="Black" FontSize="40"/>
         </Label>
     </StackPanel>
-{{endregion}}
+```
 
 #### Figure 2: The calendar icon in the TelerikFluentIcons and TelerikWebUI fonts respectively
 
@@ -124,34 +124,34 @@ If you wish to use a custom font in your project, you first have to register it 
 
 **Example 3** shows how to register the **Webdings** typeface, which is included in all versions of Microsoft Windows **since Windows 98**.
 
-#### __[C#] Example 6: Register the Webdings typeface__
+__Example 6: Register the Webdings typeface__
 
-{{region cs-common-styling-appearance-radglyph-6}}
+```C#
 	static MainWindow()
 	{
 		RadGlyph.RegisterFont("Webdings");
 	}
-{{endregion}}
+```
 
 Please note that the RegisterFont overload which only accepts a string will only work if the font is **installed** on the client's machine. Otherwise you need to also pass the **FontFamily** as demonstrated in Example 5.
 
-#### __[C#] Example 7: Register the Webdings typeface__
+__Example 7: Register the Webdings typeface__
 
-{{region cs-common-styling-appearance-radglyph-7}}
+```C#
 	static MainWindow()
 	{            
 		var font = new FontFamily(new Uri("pack://application:,,,/"), "./Fonts/#Webdings");
 		RadGlyph.RegisterFont(font, "Webdings");
 	}
-{{endregion}}
+```
 
 You can then use the glyphs as follows:
 
-#### __[XAML] Example 8: Use the Webdings glyphs__
+__Example 8: Use the Webdings glyphs__
 
-{{region xaml-common-styling-appearance-radglyph-8}}
+```XAML
 	<Path Data="{telerik:RadGlyph Font=Webdings, Glyph=&#x00fc;}" Fill="{telerik:Office2016Resource ResourceKey=IconBrush}" Width="50" Height="50" Stretch="Uniform" />
-{{endregion}}
+```
 
 #### Figure 3: The resulting Webdings glyph
 
@@ -159,11 +159,11 @@ You can then use the glyphs as follows:
 
 ## Use Glyphs as Geometry
 
-#### __[XAML] Example 9: Set a RadPathButton's PathGeometry in XAML__
+__Example 9: Set a RadPathButton's PathGeometry in XAML__
 
-{{region xaml-common-styling-appearance-radglyph-9}}
+```XAML
 	<telerik:RadPathButton Width="50" Height="50" PathGeometry="{telerik:RadGlyph Glyph={StaticResource GlyphButton}}" />
-{{endregion}}
+```
 
 #### Figure 4: The RadPathButton in normal and hovered states in the Office2016 theme
 
@@ -171,9 +171,9 @@ You can then use the glyphs as follows:
 
 The same result can be achieved in code behind as demonstrated in **Example 6**. Note that it uses the static **RadGlyph.GetGeometry** method which takes two parameters - a glyph string and a font family.
 
-#### __[C#] Example 10: Set a RadPathButton's PathGeometry in code-behind__
+__Example 10: Set a RadPathButton's PathGeometry in code-behind__
 
-{{region cs-common-styling-appearance-radglyph-10}}
+```C#
 	private RadPathButton CreateButton()
 	{
 		var button = new RadPathButton();
@@ -189,15 +189,15 @@ The same result can be achieved in code behind as demonstrated in **Example 6**.
 		var character = (char) int.Parse(glyphInt, NumberStyles.HexNumber);
 		return character.ToString();
 	}
-{{endregion}}
+```
 
 > Please note that in this scenario we use the custom **GetGlyph** method to transform the 8-character code to a **single character**. This is required as otherwise all 8 characters will be displayed as-is.
 
 ## Use Glyphs as ImageSource
 
-#### __[XAML] Example 11: Provide ImageSource for RadTreeView items__
+__Example 11: Provide ImageSource for RadTreeView items__
 
-{{region xaml-common-styling-appearance-radglyph-11}}
+```XAML
 	<telerik:RadTreeView>
 		<telerik:RadTreeViewItem Header="Desktop"
 										DefaultImageSrc="{telerik:RadGlyph Type=Image, Glyph={StaticResource GlyphToggleFullScreenMode}}" />
@@ -213,7 +213,7 @@ The same result can be achieved in code behind as demonstrated in **Example 6**.
 											DefaultImageSrc="{telerik:RadGlyph Type=Image, Glyph={StaticResource GlyphExcel}}"/>
 		</telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 #### Figure 5: The resulting RadTreeView in the Office2016 theme
 

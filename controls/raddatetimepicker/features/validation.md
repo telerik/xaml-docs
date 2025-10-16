@@ -16,8 +16,8 @@ The data validation can be done through the [IDataErrorInfo](https://docs.micros
 
 When the IDataErrorInfo interface is implemented, the validation logic executes when a property changes, which allows you to return an error message that will be displayed in the UI. 
 
-#### __[C#] Example 1: View model with validation logic implementation__
-{{region raddatetimepicker-features-validation-0}}
+__Example 1: View model with validation logic implementation__
+```C#
 	public class ValidationViewModel : ViewModelBase, IDataErrorInfo
 	{
 		private DateTime date;
@@ -66,23 +66,23 @@ When the IDataErrorInfo interface is implemented, the validation logic executes 
 			return null;
 		}
 	}
-{{endregion}}
+```
 
 To show the data error, set the __ValidatesOnDataErrors__ property of the Binding to True.
 
-#### __[XAML] Example 2: RadDateTimePicker definition and ValidatesOnDataErrors setting__
-{{region raddatetimepicker-features-validation-1}}
+__Example 2: RadDateTimePicker definition and ValidatesOnDataErrors setting__
+```XAML
 	<telerik:RadDateTimePicker SelectedValue="{Binding Date, Mode=TwoWay, ValidatesOnDataErrors=True}" />
-{{endregion}}
+```
 
-#### __[C#] Example 3: Setting the view model__
-{{region raddatetimepicker-features-validation-2}}
+__Example 3: Setting the view model__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.DataContext = new ValidationViewModel() { Date = DateTime.Now }; 
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDateTimePicker with Custom Validation](images/raddatetimepicker-features-validation-0.png)
 

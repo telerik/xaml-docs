@@ -22,8 +22,8 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 
 > Note that when the ShowDialog method is called the UI of the host application will freeze until the dialog closes.
 
-#### __[C#] Example 1: Show a open file dialog__
-{{region cs-radfiledialogs-radopenfiledialog-0}}
+__Example 1: Show a open file dialog__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -43,7 +43,7 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 			}
 		}
 	}
-{{endregion}}
+```
 
 > The __Owner__ property holds a reference of the Window which owned the dialog. Before calling the __ShowDialog()__ method, the __Owner__ property should be set to ensure correct behavior. Ownership is established when this property is set.   
 
@@ -51,8 +51,8 @@ To show the dialog call its __ShowDialog__ method. If a valid file is opened whe
 
 You can open a read-only file stream for the selected file using the __OpenFile__ method. Or alternatively you can use the FileName and FileNames properties and open the file manually.
 
-#### __[C#] Example 2: Open a file stream__
-{{region cs-radfiledialogs-radopenfiledialog-1}}
+__Example 2: Open a file stream__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -72,14 +72,14 @@ You can open a read-only file stream for the selected file using the __OpenFile_
 			}
 		}
 	}
-{{endregion}}
+```
 
 ## Enabling Multiple Selection
 
 The dialog supports single and multiple selection modes. By default you can select only one file at a time. To alter this you can set the __Multiselect__ property of RadOpenFileDialog.
 
-#### __[C#] Example 3: Enable multiple selection__
-{{region cs-radfiledialogs-radopenfiledialog-2}}
+__Example 3: Enable multiple selection__
+```C#
 	private void ShowOpenFileDialog()
     {
         RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
@@ -87,7 +87,7 @@ The dialog supports single and multiple selection modes. By default you can sele
         openFileDialog.Multiselect = true;
         openFileDialog.ShowDialog();       
     }
-{{endregion}}
+```
 
 #### __Figure 2: Multiple selection__ 
 
@@ -99,8 +99,8 @@ You can get the paths of the selected files via the __FileName__ and __FileNames
 
 You can get only the name of the selected files, without the full path, via the __SafeFileNames__ collection property.
 
-#### __[C#] Example 3: Get the selected file names__
-{{region cs-radfiledialogs-radopenfiledialog-3}}
+__Example 3: Get the selected file names__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -123,7 +123,7 @@ You can get only the name of the selected files, without the full path, via the 
 			}
 		}
 	}
-{{endregion}}
+```
 
 The __FileName__ property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
@@ -133,18 +133,18 @@ You can save the last used directory by setting the __RestoreDirectory__ propert
 
 > The __RestoreDirectory__ property will save the last used directory only for the scope of its __RadOpenFileDialog__ class instance. Clicking __Cancel__ or __X__ instead of __Open__ in the RadOpenFileDialog, will not save the last used directory.
 
-#### __[C#] Example 4: Set RestoreDirectory property__
-{{region cs-radfiledialogs-radopenfolderdialog-4}}
+__Example 4: Set RestoreDirectory property__
+```C#
 	RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
 	openFileDialog.RestoreDirectory = true;
-{{endregion}}
+```
 
 ## Enabling ReadOnly CheckBox
 
 You can display a checkbox to control whether the file should be opened in readonly mode with the __ShowReadOnly__ property of the RadOpenFileDialog. You can control the state of that checkbox by using the __ReadOnlyChecked__ property of the RadOpenFileDialog.
 
-#### __[C#] Example 4: Enabling the ReadOnly CheckBox__
-{{region cs-radfiledialogs-radopenfiledialog-4}}
+__Example 4: Enabling the ReadOnly CheckBox__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -162,7 +162,7 @@ You can display a checkbox to control whether the file should be opened in reado
 			openFileDialog.ShowDialog();
 		}
 	}
-{{endregion}}
+```
 
 #### __Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox__ 
 ![RadOpenFileDialog with ReadOnlyCheckBox](images/radopenfiledialog-readonlycheckbox.png)
@@ -171,8 +171,8 @@ You can display a checkbox to control whether the file should be opened in reado
 
 As of **R1 2018**, the **RadOpenFileDialog** exposes a **DereferenceLinks** property indicating whether a file dialog returns the location of the file referenced by a shortcut or the location of the actual shortcut file (with the **.lnk** extension).
 
-#### __[C#] Example 5: Using the DereferenceLinks property__
-{{region cs-radfiledialogs-radopenfiledialog-5}}
+__Example 5: Using the DereferenceLinks property__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -196,7 +196,7 @@ As of **R1 2018**, the **RadOpenFileDialog** exposes a **DereferenceLinks** prop
 			}
 		}
 	}
-{{endregion}}
+```
 
 > If in multiple or single selection the first selected item is a link to a **directory** and DereferenceLinks is set to **True**, clicking the **Open** button will actually navigate to this directory.
 

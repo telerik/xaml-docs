@@ -22,8 +22,8 @@ When a RadMenuItem is selected you can navigate through its children using the a
 
 The Access Keys allows you to reach a specific RadMenuItem inside a RadMenu control by holding down the __Alt__ or __F10__ key and then pressing another key on the keyboard. To define an Access Key of a RadMenuItem you need to place an underscore character before the letter in the Header property of the control. 
 
-#### __[XAML] Setting Access Keys__
-{{region radmenu-keyboard-navigation-0}}
+__Setting Access Keys__
+```XAML
 	<telerik:RadMenu>
 		<telerik:RadMenuItem Header="\_File">
 			<telerik:RadMenuItem Header="\_New" />
@@ -42,16 +42,16 @@ The Access Keys allows you to reach a specific RadMenuItem inside a RadMenu cont
 			</telerik:RadMenuGroupItem>
 		</telerik:RadMenuItem>
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 Default behavior requires holding the Alt key and pressing the first letter after the underscore character - for example, *Alt+F* to activate the item with Header "New" from the above example. In case, you want to avoid holding the Alt key, you can set the [IsMainMenu]({%slug radmenu-features-main-menu%}) property of the RadMenu control. This way you can navigate between the RadMenuItems by pressing Alt once, which will display the available access keys. Keep in mind, that in this case, the first RadMenuItem will be focused.
 
-#### __[XAML] Main Menu__
-{{region radmenu-keyboard-navigation-1}}
+__Main Menu__
+```XAML
 	<telerik:RadMenu IsMainMenu="true">
 	 . . . . .
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 ## See Also
 

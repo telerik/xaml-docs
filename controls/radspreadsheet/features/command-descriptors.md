@@ -29,7 +29,7 @@ First you need to inherit the __WorksheetCommandDescriptors__ class. This will a
 
 #### __C# Example 1: Create a class that inherits WorksheetCommandDescriptors__
 
-{{region radspreadsheet-command-descriptors_0}}
+```C#
 
     class CustomDescriptors : WorksheetCommandDescriptors
     {
@@ -63,7 +63,7 @@ First you need to inherit the __WorksheetCommandDescriptors__ class. This will a
     }
 
 
-{{endregion}}
+```
 
 
 
@@ -71,7 +71,7 @@ The second step is to set the newly created class to the active worksheet editor
 
 #### __C# Example 2: Change the default command descriptors__
 
-{{region radspreadsheet-command-descriptors_1}}
+```C#
 
     private void RadSpreadsheet_ActiveSheetEditorChanged(object sender, EventArgs e)
     {
@@ -85,6 +85,6 @@ The second step is to set the newly created class to the active worksheet editor
 
 
 
-{{endregion}}
+```
 
 That is everything that is required to change the default command. Now when the open button is pressed or the Ctrl + O combination is used the custom command will be executed. 

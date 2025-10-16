@@ -26,8 +26,8 @@ The most common reason behind this is a missing resource(s) in the application R
 
 If you are upgrading or creating a project you could miss the fact that the referenced dlls are NoXaml and to miss merging the resources. In this case the Styles of the controls are not added in the application and therefore they don't have any UI defined. This is why the controls are missing.
 
-#### __[XAML] Example 1: Merging the resources required by RadCartesianChart in order to be displayed__
-{{region troubleshooting-invisible-controls-0}}
+__Example 1: Merging the resources required by RadCartesianChart in order to be displayed__
+```XAML
 	<Application>
 		<Application.Resources>
 			<ResourceDictionary>
@@ -39,7 +39,7 @@ If you are upgrading or creating a project you could miss the fact that the refe
 			</ResourceDictionary>
 		</Application.Resources>
 	</Application>
-{{endregion}}
+```
 
 >important Make sure that the ResourceDictionary files for all assemblies with UI components referenced in your project are merged in the resources.
 
@@ -47,12 +47,12 @@ If you are upgrading or creating a project you could miss the fact that the refe
 
 Sometimes only few controls could be missing. In that case it is highly possible that there is a Style that targets the controls but it doesn't inherit the default style. This happens because in NoXaml (implicit styles) scenario, the custom style completely overrides the default one. This means that the ControlTemplate of the element will be cleared unless you set it explicitly or [base the style on the default one]({%slug implicit-styles-styling-the-controls%}).
 
-#### __[XAML] Example 1: Base a custom RadComboBox Style to its default Style__
-{{region implicit-styles-styling-the-controls-0}}	
+__Example 1: Base a custom RadComboBox Style to its default Style__
+```XAML	
 	<Style TargetType="telerik:RadComboBox" BasedOn="{StaticResource RadComboBoxStyle}">
     	<Setter Property="Foreground" Value="Red" />
 	</Style>
-{{endregion}}
+```
 
 > Generally, the Key of the control's default Style uses the following naming convention: *ControlName + Style*. Examples: *RadComboBoxStyle*, *BarSeriesStyle*, *GridViewRowStyle*, *RadTreeViewItemStyle*, etc.
 

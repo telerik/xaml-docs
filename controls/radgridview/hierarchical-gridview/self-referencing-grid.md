@@ -16,9 +16,9 @@ This tutorial demonstrates how you can build a self-referencing hierarchy.
 
 **Example 1** demonstrates an ordinary __RadGridView__ declaration, populated with some data:
 
-#### __[XAML] Example 1: RadGridView declaration__
+__Example 1: RadGridView declaration__
 
-{{region xaml-gridview-self-referencing-grid_0}}
+```XAML
 	<Window.Resources>
         <my:MyViewModel x:Key="MyViewModel"/>
     </Window.Resources>
@@ -34,11 +34,11 @@ This tutorial demonstrates how you can build a self-referencing hierarchy.
 								Header="Title" />
 		</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Creating the ViewModel__
+__Example 2: Creating the ViewModel__
 
-{{region cs-gridview-self-referencing-grid_1}}
+```C#
 	public class MyViewModel
     {
     	private ObservableCollection<Employee> employees;
@@ -191,11 +191,8 @@ This tutorial demonstrates how you can build a self-referencing hierarchy.
             this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Creating the ViewModel__
-
-{{region vb-gridview-self-referencing-grid_2}}
+```
+```VB.NET
 	Public Class MyViewModel
 		Public ReadOnly Property Employees() As ObservableCollection(Of Employee)
 			Get
@@ -328,13 +325,13 @@ This tutorial demonstrates how you can build a self-referencing hierarchy.
 			Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
 		End Sub
 End Class
-{{endregion}}
+```
 
 The ChildTableDefinitions property of the RadGridView allows you to display objects which are related to objects of the same type, thus modelling a tree structure. **Example 3** demonstrates how this can be achieved with the Employee class defined in **Example 2**.
 
-#### __[XAML] Example 3: Setting the ChildTableDefinitions__
+__Example 3: Setting the ChildTableDefinitions__
 
-{{region xaml-gridview-self-referencing-grid_3}}
+```XAML
 	<telerik:RadGridView DataContext="{StaticResource MyViewModel}"
 						 ItemsSource="{Binding Employees}"
 						 AutoGenerateColumns="False">
@@ -349,7 +346,7 @@ The ChildTableDefinitions property of the RadGridView allows you to display obje
 		</telerik:GridViewTableDefinition.Relation>
 		<!--...-->
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 The __FieldDescriptorNamePair__ allows for specifying the relations between the objects in the __RadGridView's__ source. It has two important properties:
 
@@ -366,9 +363,9 @@ In the child __RadGridView__ the entries of the __RadGridView's__ source are dis
 
 You can specify more than one __FiledDescriptorNamePair__. For example, define a relation that specifies that the child objects should have the same title as the parent object.
 
-#### __[XAML] Example 4: Specifying two FiledDescriptorNamePair__
+__Example 4: Specifying two FiledDescriptorNamePair__
 
-{{region xaml-gridview-self-referencing-grid_6}}
+```XAML
 	<telerik:RadGridView DataContext="{StaticResource MyViewModel}"
 						 ItemsSource="{Binding Employees}"
 						 AutoGenerateColumns="False">
@@ -387,7 +384,7 @@ You can specify more than one __FiledDescriptorNamePair__. For example, define a
 	    </telerik:RadGridView.ChildTableDefinitions>
 	    <!--...-->
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 In **Figure 2** you can see that for the object with __Id__ equal to 3 only the employee with __ManagerId__ property equal to 3 and __Title__ equal to __Consultant__ is displayed.
 

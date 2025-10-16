@@ -16,8 +16,8 @@ The scatter bubble series is used to visualize three dimensional data. Each enti
 
 You can use the following definition to display a simple ScatterBubbleSeries:
 
-#### __XAML__
-{{region radchartview-series-scatterbubbleseries-0}}
+
+```XAML
 	<telerik:RadCartesianChart>
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:LinearAxis />
@@ -37,7 +37,7 @@ You can use the following definition to display a simple ScatterBubbleSeries:
 			</telerik:ScatterBubbleSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 The following image demonstrates the end result:
 ![radchartview-series-scatterbubbleseries](images/radchartview-series-scatterbubbleseries_01.png)
@@ -46,8 +46,7 @@ The following image demonstrates the end result:
 
 You can use the __XValueBinding__, __YValueBinding__ and the __BubbleSizeBinding__ properties of the ScatterBubbleSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __C#__
-{{region radchartview-series-scatterbubbleseries-1}}
+```C#
 	public class PlotInfo
 	{
 		public double XVal { get; set; }
@@ -61,12 +60,11 @@ You can use the __XValueBinding__, __YValueBinding__ and the __BubbleSizeBinding
 		new PlotInfo { XVal = 4, YVal = 20, Size = 50, },
 		//....
 	};
-{{endregion}}
+```
 	
-#### __XAML__
-{{region radchartview-series-scatterbubbleseries-2}}
+```XAML
 	<telerik:ScatterBubbleSeries ItemsSource="{Binding}" YValueBinding="YVal"  XValueBinding="XVal" BubbleSizeBinding="Size" />
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite
 
@@ -76,12 +74,11 @@ The series supports all standard features exposed by all other categorical serie
 
 * __DataPointLegendSettings__ - the series supports two types of legend settings, the first one is the common SeriesLegendSettings which can be used with all types of series and it maps each legend item to a series. The series supports an additional DataPointLegendSettings which maps the legend items per data point. 
 
-	#### __XAML__
-	{{region radchartview-series-scatterbubbleseries-3}}
+	```XAML
 		<telerik:ScatterBubbleSeries.LegendSettings>
 			<telerik:DataPointLegendSettings/>
 		</telerik:ScatterBubbleSeries.LegendSettings>
-	{{endregion}}
+	```
 	
 	![radchartview-series-scatterbubbleseries](images/radchartview-series-scatterbubbleseries_02.png)
 	
@@ -94,10 +91,9 @@ The series supports all standard features exposed by all other categorical serie
 
 * __Hover interactivity__ – RadCartesianChart exposes a property called HoverMode. This property can be used only by the bubble and bar series. If it is set to “FadeOtherSeries”, when you mouse over a data point, the bubbles from all other series will fade out. The default value of the property is “None”.
 
-	#### __XAML__
-	{{region radchartview-series-scatterbubbleseries-4}}
+	```XAML
 		<telerik:RadCartesianChart HoverMode="FadeOtherSeries">
-	{{endregion}}
+	```
 	
 	![radchartview-series-scatterbubbleseries](images/radchartview-series-scatterbubbleseries_04.png)
 	
@@ -113,8 +109,7 @@ You can customize the BubbleSize of each DataPoint by creating a custom bubble s
 
 The following code snippet demonstrates an example implementation of a bubble size selector:
 
-#### __C#__
-{{region radchartview-series-scatterbubbleseries-5}}
+```C#
     public class CustomBubbleSizeSelector : ChartBubbleSizeSelector
     {
         public static double SelectBubbleSize(double bubbleSize)
@@ -128,16 +123,15 @@ The following code snippet demonstrates an example implementation of a bubble si
             return new RadSize(size, size);
         }
     }
-{{endregion}}
+```
 
-#### __XAML__
-{{region radchartview-series-scatterbubbleseries-6}}
+```XAML
 	<FrameworkElement.Resources>
 		<local:CustomBubbleSizeSelector x:Key="CustomBubbleSizeSelector" />
     </FrameworkElement.Resources>
 	..........
     <telerik:ScatterBubbleSeries BubbleSizeSelector="{StaticResource selector}" >
-{{endregion}}
+```
 
 >tip You can find a runnable project demonstrating the BubbleSeries in our [GitHub SDK repository](https://github.com/telerik/xaml-sdk/tree/master/ChartView/WPF/BubbleSeriesAndNegativeValues).
 

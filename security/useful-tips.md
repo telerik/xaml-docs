@@ -36,7 +36,7 @@ In cases when the hyperlink is loaded dynamically from an unknown source, like f
 <br />  
 __The following resources show how to use the `HyperlinkClicked` event in the corresponding controls:__
 
-* [PdfViewer - Annotations article]({%slug radpdfviewer-document-model-annotations%}#handling-the-hyperlink-click-navigation)
+* [PdfViewer - Annotations article]({%slug radpdfviewer-document-model-annotations%})
 
 * [RichTextBox - Hyperlink article]({%slug radrichtextbox-features-document-elements-hyperlink%}#handling-the-hyperlink-click-navigation)
 

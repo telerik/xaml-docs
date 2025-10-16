@@ -28,8 +28,8 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 * __Any other characters__: (literals) All non-mask elements will appear as themselves within __RadMaskedTextInput__. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user.			  
 
-#### __[XAML] Example 1: Setting standard format codes__
-{{region xaml-radmaskedinput-features-mask-tokens_0}}
+__Example 1: Setting standard format codes__
+```XAML
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 	    <TextBlock Text="Mask: A" />
 	    <telerik:RadMaskedTextInput Margin="0,5,0,10" Mask="AAAAAA" />
@@ -44,7 +44,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	    <TextBlock Text="Mask: Any other characters" />
 	    <telerik:RadMaskedTextInput Mask="N\ame: llll" />
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Standard Mask Tokens](images/radmaskedinput_features_tokens_standard.png)
 
@@ -60,8 +60,8 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 * __#__: Digit pattern, not required. If this position is blank in the mask, it will be rendered as the character in the Placeholder property. Plus (+) and minus (-) signs are allowed.			  
 
-#### __[XAML] Example 2: Setting numeric format codes__
-{{region xaml-radmaskedinput-features-mask-tokens_1}}
+__Example 2: Setting numeric format codes__
+```XAML
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 	    <TextBlock Text="Currency Pattern" />
 	    <telerik:RadMaskedCurrencyInput Margin="0,5,0,10" 
@@ -84,7 +84,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	                                    Mask="#3.1"
 	                                    Value="111.234" />
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Numeric Mask Tokens](images/radmaskedinput_features_tokens_numeric.png)
 
@@ -116,8 +116,8 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 
 * __T__: Long time pattern.			  
 
-#### __[XAML] Example 3: Using defined tokens__
-{{region xaml-radmaskedinput-features-mask-tokens_2}}
+__Example 3: Using defined tokens__
+```XAML
 	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 	    <TextBlock Text="Mask: d" />
 	    <telerik:RadMaskedDateTimeInput Margin="0,5,0,10" Mask="d" />
@@ -146,7 +146,7 @@ The __RadMaskedInput__ controls expose a __Mask__ property to allow you to furth
 	    <TextBlock Text="Mask: T" />
 	    <telerik:RadMaskedDateTimeInput Margin="0,5,0,10" Mask="T" />
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput DateTime Mask Tokens](images/radmaskedinput_features_tokens_datetime.png)
 
@@ -192,8 +192,8 @@ When standard date codes are too restrictive, you can create your own custom for
 
 > The day time period can be changed using the keyboard arrows keys. When the caret is on the time period you can simply press __UP__ or __DOWN__ arrow keys from AM to PM and vice verse.
 
-#### __[XAML] Example 4: Setting custom DateTime format codes__
-{{region xaml-radmaskedinput-features-mask-tokens_3}}
+__Example 4: Setting custom DateTime format codes__
+```XAML
 	<StackPanel Background="White"
 	            Orientation="Horizontal"
 	            HorizontalAlignment="Center"
@@ -233,7 +233,7 @@ When standard date codes are too restrictive, you can create your own custom for
 	        <telerik:RadMaskedDateTimeInput Margin="0,5,0,10" Mask="hh:mm:ss:ff" />
 	    </StackPanel>
 	</StackPanel>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Custom DateTime Mask Tokens](images/radmaskedinput_features_tokens_datetime_custom.png)
 
@@ -245,10 +245,10 @@ When standard date codes are too restrictive, you can create your own custom for
 
 * __<__ - To Lower token		  
 
-#### __[XAML] Example 5: Setting modifier tokens__
-{{region xaml-radmaskedinput-features-mask-tokens_4}}
+__Example 5: Setting modifier tokens__
+```XAML
 	<telerik:RadMaskedTextInput Margin="0,5,0,10" Mask="&gt;a5&lt;a5" />
-{{endregion}}
+```
 
 >important Please note that the  "<" and ">" must be escaped in XAML, otherwise  the Visual Studio might throw an error.		  
 
@@ -262,19 +262,19 @@ When standard date codes are too restrictive, you can create your own custom for
 
 For instance: 
 
-#### __[XAML] Example 6: Customize mask property__
-{{region xaml-radmaskedinput-features-mask-tokens_5}}
+__Example 6: Customize mask property__
+```XAML
 	<telerik:RadMaskedNumericInput Mask="#3.2" />
-{{endregion}}
+```
 
 ## Allow Invalid Values
 
 In the __Mask__ scenario, the control will update its Value property only when its input passes the validation process. The validation rules are determined by the symbols set in the Mask property. Otherwise, the __ValueChanged__ event won't be triggered. To allow property change on every user input, you can set the __AllowInvalidValues__ property to True. 
 
-#### __[XAML] Example 7: Allow Invalid Values__
-{{region xaml-radmaskedinput-features-mask-tokens_5}}
+__Example 7: Allow Invalid Values__
+```XAML
 	<telerik:RadMaskedTextInput Mask="AAAAAA" AllowInvalidValues="true" />
-{{endregion}}
+```
  
 ## See Also
  * [Common Features]({%slug radmaskedinput-features-common%})

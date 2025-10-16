@@ -10,20 +10,15 @@ position: 0
 
 # Data Annotations
 
-
-
-## 
-
 By default the __RadDataFilter__ will use each of the fields provided by the underlying business object and will directly use the name of the member. If you have a scenario in which to allow the user to filter the data only by specific members and also to give them user friendly names, you have to use data annotations.
 
 >In order to use the data annotations you have to add a reference to the __System.ComponentModel.DataAnnotations.dll__ in your project.
 
 In this case you can use the __Display__ attribute and set the __AutoGenerateFilter__ and __ShortName__ data annotations in it. Here is an example for a __Person__ class, which exposes __Name__, __CompanyName__ and __Title__ properties. In this case the user is allowed only to filter by the __CompanyName__ and the __Title__ properties. Its display name is also changed to 'Company's Name'.
 
-#### [C#] Example 1: Defining class Person
+__Defining class Person__
 
-{{region raddatafilter-features-data-annotations_0}}
-
+```C# 
 	public class Person
 	{
 	    [Display( AutoGenerateFilter = false )]
@@ -44,13 +39,8 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 	        set;
 	    }
 	}
-	{{endregion}}
-
-
-
-#### [VB] Example 1: Defining class Person
-
-{{region raddatafilter-features-data-annotations_1}}
+```
+```VB.NET
 
 	Public Class Person
 	 <Display(AutoGenerateFilter = False)> _
@@ -83,9 +73,7 @@ In this case you can use the __Display__ attribute and set the __AutoGenerateFil
 	 End Property
 	 Private m_Title As String
 	End Class
-	{{endregion}}
-
-
+```
 
 If you filter a collection of __Person__ objects via the __RadDataFilter__ control, in the DropDown for the Data Members you should see the following:
 
@@ -95,13 +83,10 @@ Figure 1: RadDataFilter displaying all the members to filter on.
 You can customize Members shown in the ComboBox with available members to filter on (PART_SimpleFilterMemberComboBox) by specifying whether a property should be displayed or not via __BrowsableAttribute__.
 
 For example, you can apply the attribute like so:
-        
 
-#### [C#] Example 2: Setting a property to not be displayed
+__Setting a property to not be displayed__
 
-
-{{region raddatafilter-features-data-annotations_2}}
-	
+```C#	
 	[Browsable(false)]
 	[Display(ShortName = "Company's Address")]
 	public string CompanyAddress
@@ -109,9 +94,7 @@ For example, you can apply the attribute like so:
 	    get;
 	    set;
 	}
-	{{endregion}}
-
-
+```
 
 Figure 2: RadDataFilter displaying the Browsable members.
 

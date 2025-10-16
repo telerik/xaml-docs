@@ -12,8 +12,8 @@ position: 0
 
 `RadProgressBar` supports setting a complex structure of elements to the `ContentTemplate` property to represent the value set for the `Content` property. The Content property is of type __object__ and can hold a value of any type. 
 
-#### __[XAML] Setting the Content and ContentTemplate properties__
-{{region progressbar-custom-content-0}}
+__Setting the Content and ContentTemplate properties__
+```XAML
     <telerik:RadProgressBar x:Name="progressBar"
                             Minimum="0"
                             Maximum="100"
@@ -33,7 +33,7 @@ position: 0
             </DataTemplate>
         </telerik:RadProgressBar.ContentTemplate>
     </telerik:RadProgressBar>
-{{endregion}}
+```
 
 __RadProgressBar with set Content and ContentTemplate properties__
 
@@ -43,8 +43,8 @@ __RadProgressBar with set Content and ContentTemplate properties__
 
 RadProgressBar exposes the `ContentForeground` property that will allow you to set the foreground color for the content. It will also be applied when having a custom DataTemplate for the ContentTemplate property without explicitly setting the Foreground property of the elements inside of it.
 
-#### __[XAML] Setting the ContentForeground property__
-{{region progressbar-custom-content-1}}
+__Setting the ContentForeground property__
+```XAML
     <telerik:RadProgressBar x:Name="progressBar"
                             Minimum="0"
                             Maximum="100"
@@ -65,7 +65,7 @@ RadProgressBar exposes the `ContentForeground` property that will allow you to s
             </DataTemplate>
         </telerik:RadProgressBar.ContentTemplate>
     </telerik:RadProgressBar>
-{{endregion}}
+```
 
 __RadProgressBar with set ContentForeground property__
 
@@ -75,8 +75,8 @@ __RadProgressBar with set ContentForeground property__
 
 The RadProgressBar control allows you to position the content via the `VerticalContentAlignment` property. 
 
-#### __[XAML] Setting the VerticalContentAlignment property to Top__
-{{region progressbar-custom-content-2}}
+__Setting the VerticalContentAlignment property to Top__
+```XAML
     <telerik:RadProgressBar x:Name="progressBar"
                             Minimum="0"
                             Maximum="100"
@@ -98,7 +98,7 @@ The RadProgressBar control allows you to position the content via the `VerticalC
             </DataTemplate>
         </telerik:RadProgressBar.ContentTemplate>
     </telerik:RadProgressBar>
-{{endregion}}
+```
 
 __RadProgressBar with set VerticalContentAlignment property__
 

@@ -27,8 +27,8 @@ How to bind the __PathGeometry__ property of a RadPathButton to a glyph.
 
 Create a custom [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.ivalueconverter?view=netframework-4.7.2) that returns a geometry based on a glyph string and set it to the __Converter__ property of the __PathGeometry__ binding.
 
-#### __[C#]__
-{{region cs-kb-pathbutton-bind-pathgeometry-to-a-glyph-0}}
+
+```C#
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -62,17 +62,17 @@ Create a custom [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/sy
             return null;
         }
     }
-{{endregion}} 
+``` 
 
-#### __[XAML]__
-{{region xaml-kb-pathbutton-bind-pathgeometry-to-a-glyph-1}}
+
+```XAML
 	<Grid>
         <Grid.Resources>
             <local:StringToGeometryConverter x:Key="StringToGeometryConverter" />
         </Grid.Resources>
         <telerik:RadPathButton  PathGeometry="{Binding Glyph, Converter={StaticResource StringToGeometryConverter}}" Width="75" Height="50" Content="Test" ContentPlacement="Right" />
     </Grid>
-{{endregion}}
+```
 
 ![PathButton with PathGeometry bound to glyph](images/kb-pathbutton-bind-pathgeometry-to-glyph.png)
 

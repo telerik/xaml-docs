@@ -32,8 +32,8 @@ How to modify the display content of ChartTrackBallBehavior's TrackBallInfoContr
 
 Set the __DataPointInfoTemplate__ property of TrackBallInfoControl. To do this, use the __TrackBallInfoStyle__ property of RadCartesianChart.
 
-#### __[XAML]__
-{{region kb-chartview-customize-trackball-display-content-0}}
+
+```XAML
 	<telerik:RadCartesianChart.TrackBallInfoStyle>
 		<Style TargetType="telerik:TrackBallInfoControl">
 			<Setter Property="DataPointInfoTemplate">
@@ -45,6 +45,6 @@ Set the __DataPointInfoTemplate__ property of TrackBallInfoControl. To do this, 
 			</Setter>
 		</Style>
 	</telerik:RadCartesianChart.TrackBallInfoStyle>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Customize Trackball DisplayContent](images/kb-chartview-customize-trackball-display-content-0.png)

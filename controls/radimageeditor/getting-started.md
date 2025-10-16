@@ -33,9 +33,9 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 The next few code examples will demonstrate how to add a __RadImageEditor__ in XAML, load a sample picture and execute a command on that picture. __Example 1__ showcases a __RadImageEditor__ and a Button defined in XAML.
 
-#### __[XAML] Example 1: Defining a RadImageEditor in xaml__
+__Example 1: Defining a RadImageEditor in xaml__
 
-{{region xaml-radimageeditor-getting-started-0}}
+```XAML
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -44,20 +44,20 @@ The next few code examples will demonstrate how to add a __RadImageEditor__ in X
         <telerik:RadImageEditor x:Name="ImageEditor"/>
         <Button Click="Button_Click" Content="Rotate picture" Grid.Row="1" />
     </Grid>
-{{endregion}}
+```
 
 __Example 2__ shows the telerik namespace used in __Example 1__:
 
-#### __[XAML] Example 2: Telerik Namespace declaration__
-{{region xaml-radimageeditor-getting-started-1}}
+__Example 2: Telerik Namespace declaration__
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-{{endregion}}
+```
 
 In order to show a picture, you can set the __Image__ property of the __RadImageEditor__. It is of type [RadBitmap](https://docs.telerik.com/devtools/wpf/api/telerik.windows.media.imaging.radbitmap). __Example 3__ demonstrates how you can use the [ImageExampleHelper](https://github.com/telerik/xaml-sdk/blob/master/ImageEditor/RadImageEditorUIFirstLook/ImageExampleHelper.cs) class in order to load an Image. It assumes that there is a folder named "SampleImages" with an image named "RadImageEditor.png" inside the project. 
 
-#### __[C#] Example 3: Load image in RadImageEditor__
+__Example 3: Load image in RadImageEditor__
 
-{{region cs-radimageeditor-getting-started-2}}
+```C#
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -72,11 +72,8 @@ In order to show a picture, you can set the __Image__ property of the __RadImage
             this.ImageEditor.Commands.Rotate180.Execute(this.ImageEditor);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Load image in RadImageEditor__
-
-{{region vb-radimageeditor-getting-started-3}}
+```
+```VB.NET
     Partial Public Class MainWindow
     Inherits Window
 
@@ -90,11 +87,11 @@ In order to show a picture, you can set the __Image__ property of the __RadImage
 			Me.ImageEditor.Commands.Rotate180.Execute(Me.ImageEditor)
 		End Sub
     End Class
-{{endregion}}
+```
 
-#### __[C#] Example 4: ImageExampleHelper used in Example 3__
+__Example 4: ImageExampleHelper used in Example 3__
 
-{{region cs-radimageeditor-getting-started-4}}
+```C#
     public class ImageExampleHelper
     {
         private static string SampleImageFolder = "SampleImages/";
@@ -118,11 +115,8 @@ In order to show a picture, you can set the __Image__ property of the __RadImage
             return resourceUri;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: ImageExampleHelper used in Example 3__
-
-{{region vb-radimageeditor-getting-started-5}}
+```
+```VB.NET
     Public Class ImageExampleHelper
 	Private Shared SampleImageFolder As String = "SampleImages/"
 
@@ -142,7 +136,7 @@ In order to show a picture, you can set the __Image__ property of the __RadImage
 		Return resourceUri
 	End Function
     End Class
-{{endregion}}
+```
 
 #### __Figure 1: Result from the above examples__
 ![RadImageEditor rotating image](images/RadImageEditor_GettingStarted.gif)
@@ -173,8 +167,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radimageeditor-getting-started_6}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -185,7 +179,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

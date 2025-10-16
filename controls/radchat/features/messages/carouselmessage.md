@@ -19,8 +19,8 @@ The __CarouselMessage__ utilizes the [RadCarousel]({%slug carousel-overview%}) c
 
 For the purpose of this example a sample collection of [ImageCards]({%slug chat-items-imagecard%}) will be defined.
 
-#### __[C#] Example 1: Defining a CarouselMessage__ 
-{{region radchat-messages-carouselmessage_01}}
+__Example 1: Defining a CarouselMessage__ 
+```C#
 	List<ImageCardMessage> imageCards = new List<ImageCardMessage>();
 
             ImageCardMessage imageCardMessagePlane = new ImageCardMessage(this.currentAuthor);
@@ -50,7 +50,7 @@ For the purpose of this example a sample collection of [ImageCards]({%slug chat-
             CarouselMessage carouselMessage = new CarouselMessage(MessageDisplayPosition.Overlay, this.currentAuthor, imageCards);
 
             this.chat.AddMessage(carouselMessage);
-{{endregion}}
+```
 
 #### __Figure 1: Defining CarouselMessage__
 ![Defining CalendarMessage](images/RadChat_Messages_Carousel_01.png)

@@ -18,16 +18,16 @@ The __RadMenu__ allows you to display an icon for each of the menu items. This c
 
 When using static items you can directly access the __Icon__ property of each item. Respectively you can set it directly:
 
-#### __[XAML] Example 1: Setting the Icon property declaratively__
+__Example 1: Setting the Icon property declaratively__
 
-{{region xaml-radmenu-features-icons_0}}
+```XAML
 	<telerik:RadMenuItem Header="New File">
 	    <telerik:RadMenuItem.Icon>
 	        <Image Source="/Images/newFile.png" 
 	               Stretch="UniformToFill" />
 	    </telerik:RadMenuItem.Icon>
 	</telerik:RadMenuItem>
-{{endregion}}
+```
 
 **Figure 1** illustrates the resulting items.
 
@@ -43,9 +43,9 @@ When using dynamic items, you have to bind the __Icon__ property to a property o
 
 Let's assume you've defined the following class which exposes the icon Uri as well as a read-only property which returns an image from this Uri.
 
-#### __[C#] Example 2: MenuItem class with Uri and Image properties__
+__Example 2: MenuItem class with Uri and Image properties__
 
-{{region cs-radmenu-features-icons_1}}
+```C#
 	public class MenuItem
 	{
 	    //...
@@ -69,11 +69,8 @@ Let's assume you've defined the following class which exposes the icon Uri as we
 	
 	    //...
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: MenuItem class with Uri and Image properties__
-
-{{region vb-radmenu-features-icons_2}}
+```
+```VB.NET
 	Public Class MenuItem
 	    '...
 	    Public Property IconUrl() As Uri
@@ -91,15 +88,15 @@ Let's assume you've defined the following class which exposes the icon Uri as we
 	    End Property
 	    '...
 	End Class
-{{endregion}}
+```
 
 You can then bind the Icon using any of the two properties. Following the example from the [Binding to Dynamic Data]({%slug radmenu-populating-with-data-binding-to-dynamic-data%}) article, you can add the following setters to **ItemContainerStyle**.
 
 * If you wish to bind directly to a property of type Image:
 
-	#### __[XAML] Example 2: Setting the Icon property to an Image__
+	__Example 2: Setting the Icon property to an Image__
 
-	{{region xaml-radmenu-features-icons_0}}
+	```XAML
 		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 		<Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource RadMenuItemStyle}">--> 
 		
@@ -107,13 +104,13 @@ You can then bind the Icon using any of the two properties. Following the exampl
 			<!-- ... -->
 			<Setter Property="Icon" Value="{Binding Icon}" />
 		</Style>
-	{{endregion}}
+	```
 
 * If you wish to bind directly to a property of type Uri/string:
 
-	#### __[XAML] Example 3: Setting the Icon property to an Uri/string__
+	__Example 3: Setting the Icon property to an Uri/string__
 
-	{{region xaml-radmenu-features-icons_0}}
+	```XAML
 		<!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
 		<Style TargetType="telerik:RadMenuItem" BasedOn="{StaticResource RadMenuItemStyle}">--> 
 
@@ -128,7 +125,7 @@ You can then bind the Icon using any of the two properties. Following the exampl
                 </Setter.Value>
             </Setter>
         </Style>
-	{{endregion}}
+	```
 
 <!-- -->
 

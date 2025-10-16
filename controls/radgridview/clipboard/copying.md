@@ -34,24 +34,21 @@ Here's a list of all the available values:
 
 Here is an example on how to copy column headers as well as selected data:
 
-#### __[C#] Example 1: Setting the ClipboardCopyMode in code__
+__Example 1: Setting the ClipboardCopyMode in code__
 
-{{region cs-gridview-copying_0}}
+```C#
 	this.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells |
 	GridViewClipboardCopyMode.Header;
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting the ClipboardCopyMode in code__
-
-{{region vb-gridview-copying_1}}
+```
+```VB.NET
 	Me.radGridView.ClipboardCopyMode = GridViewClipboardCopyMode.Cells Or GridViewClipboardCopyMode.Header
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Setting the ClipboardCopyMode in xaml__
+__Example 2: Setting the ClipboardCopyMode in xaml__
 
-{{region xaml-gridview-copying_2}}
+```XAML
 	<telerik:RadGridView ClipboardCopyMode="Cells, Header" />
-{{endregion}}
+```
 
 ## Events
 
@@ -59,9 +56,9 @@ Here is an example on how to copy column headers as well as selected data:
 
 There are two events that allow you to control the copying operation: __Copying__ and __CopyingCellClipboardContent.__ The first allows you to cancel a copying operation, whereas the second event allows you to cancel copying for a single cell or override the value to be copied to the Clipboard. The latter is especially useful if you have columns with custom cell templates and you would like to be able to place their values in the clipboard. Here is an example of how you can accomplish that:
 
-#### __[C#] Example 3: The CopyingCellClipboardContent Event__
+__Example 3: The CopyingCellClipboardContent Event__
 
-{{region cs-gridview-copying_3}}
+```C#
 	private void radGridView_CopyingCellClipboardContent(object sender, GridViewCellClipboardEventArgs e)
 	{
 	    if (e.Cell.Column.UniqueName == "FullName")
@@ -70,18 +67,15 @@ There are two events that allow you to control the copying operation: __Copying_
 	        e.Value = string.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName);
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: The CopyingCellClipboardContent Event__
-
-{{region vb-gridview-copying_4}}
+```
+```VB.NET
 	Private Sub radGridView_CopyingCellClipboardContent(sender As Object, e As GridViewCellClipboardEventArgs)
 	    If e.Cell.Column.UniqueName = "FullName" Then
 	        Dim person = TryCast(e.Cell.Item, Person)
 	        e.Value = String.Format("{0} {1} {2}", person.FirstName, person.MiddleName, person.LastName)
 	    End If
 	End Sub
-{{endregion}}
+```
 
 >For some interesting examples, like how to skip copying of GridViewSelectColumn and GridViewToggleRowDetailsColumn, please check our [SDK example browser](https://demos.telerik.com/xaml-sdkbrowser/).
 

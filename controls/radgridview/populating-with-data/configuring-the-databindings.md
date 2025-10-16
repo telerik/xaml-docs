@@ -28,9 +28,9 @@ Last but not least, if the bound source collection implements the **IEditableCol
 
 For the purposes of this example the control will be bound to a collection of **Player** objects. Please note that the class inherits from **ViewModelBase** which is the Telerik implementation of the **INotifyPropertyChanged** interface.
 
-#### __[C#] Example 1: The Player class__
+__Example 1: The Player class__
 
-{{region cs-gridview-configuring-the-databindings_2}}
+```C#
     public class Player : ViewModelBase
     {
         private string name;
@@ -62,13 +62,13 @@ For the purposes of this example the control will be bound to a collection of **
             }
         }
     }
-{{endregion}}
+```
 
 The next step is to create an __ObservableCollection__ of Player objects in our viewmodel.
 
-#### __[C#] Example 2: Create an ObservableCollection in the viewmodel__
+__Example 2: Create an ObservableCollection in the viewmodel__
 
-{{region cs-gridview-configuring-the-databindings_2}}    
+```C#    
 	public class MainWindowViewModel : ViewModelBase
 	{
 		private ObservableCollection<Player> players;
@@ -90,30 +90,30 @@ The next step is to create an __ObservableCollection__ of Player objects in our 
 		    }
 		}
 	}
-{{endregion}}
+```
 
 All that's left is to bind this collection to our RadGridView control.
 
-#### __[XAML] Example 3: Bind the ItemsSource property__
+__Example 3: Bind the ItemsSource property__
 
-{{region xaml-gridview-configuring-the-databindings_3}}
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding Players}" />
-{{endregion}}
+```
 
 ## Binding the Columns
 
 By default, RadGridView will try to automatically generate columns based on the properties of the underlying data objects. If you would like to disable this functionality and manually define the columns yourself, you should set the control's **AutoGenerateColumns** property to **False** and manually populate the **Columns** collection.
 
-#### __[XAML] Example 3: Define a column in XAML__
+__Example 3: Define a column in XAML__
 
-{{region xaml-gridview-configuring-the-databindings_4}}
+```XAML
 	<telerik:RadGridView x:Name="playersGrid" ItemsSource="{Binding Players}" AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Number}" Header="Number" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 #### Figure 1: The rendered RadGridView
 

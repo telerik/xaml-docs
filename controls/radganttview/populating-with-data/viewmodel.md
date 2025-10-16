@@ -16,27 +16,27 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 
 * Add a new __RadGanttView__ declaration in your XAML:
 
-#### __XAML__
 
-{{region xaml-radganttview-populating-with-data-viewmodel_0}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView" />
-{{endregion}}
+```
 
 * Create a new class named __MyViewModel__:
 
-#### __C#__
 
-{{region cs-radganttview-populating-with-data-viewmodel_1}}
+
+```C#
 	public class MyViewModel
 	{
 	}
-{{endregion}}
+```
 
 * In the __MyViewModel__ class add Tasks property. We will bind the __TasksSource__ property of the __RadGanttView__ to this property. 
 
-#### __C#__
 
-{{region cs-radganttview-populating-with-data-viewmodel_2}}
+
+```C#
 	public class MyViewModel : PropertyChangedBase
 	{
 	    private ObservableCollection<GanttTask> tasks;
@@ -54,13 +54,13 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 * All we have to do is to initialize the tasks field: 
 
-#### __C#__
 
-{{region cs-radganttview-populating-with-data-viewmodel_3}}
+
+```C#
 	public MyViewModel()
 	{
 	    var date = DateTime.Now;
@@ -82,23 +82,23 @@ The purpose of this tutorial is to show you how to bind a __RadGanttView__ with 
 	
 	    this.tasks = new ObservableCollection<GanttTask>() { iterationTask };
 	}
-{{endregion}}
+```
 
 * The ViewModel is complete. Now, let's return to the View. Add TasksSource property to the definition of the __GanttView__:
 
-#### __XAML__
 
-{{region xaml-radganttview-populating-with-data-viewmodel_4}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}"  />
-{{endregion}}
+```
 
 * Finally, set the DataContext: 	
 
-#### __C#__
 
-{{region cs-radganttview-populating-with-data-viewmodel_5}}
+
+```C#
 	this.DataContext = new MyViewModel();
-{{endregion}}
+```
 
 And the result is:
 

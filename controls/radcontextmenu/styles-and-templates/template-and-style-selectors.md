@@ -19,8 +19,8 @@ Here is a list of the selectors provided by the RadContextMenu control:
 * `ItemContainerTemplateSelector`&mdash;Used to select a DataTemplate, which needs to contain an element of the type of RadMenuItem that will be displayed in the RadContextMenu control.
 * `ItemTemplateSelector`&mdash;Used to select the `DataTemplate` that is set as the `HeaderTemplate` property of the child RadMenuItem instances.
 
-#### __[C#] Define the ItemTemplateSelector__
-{{region radcontextmenu-populating-with-data-template-and-style-selectors_1}}
+__Define the ItemTemplateSelector__
+```C#
 	public class MyTemplateSelector : DataTemplateSelector
     {
         public DataTemplate CutTemplate { get; set; }
@@ -35,10 +35,10 @@ Here is a list of the selectors provided by the RadContextMenu control:
             return this.DefaultTemplate;
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Using the ItemTemplateSelector in XAML__
-{{region radcontextmenu-populating-with-data-template-and-style-selectors_0}}
+__Using the ItemTemplateSelector in XAML__
+```XAML
 	<Grid.Resources>
 	<!-- ... -->
         <local:MyTemplateSelector x:Key="MyTemplateSelector">
@@ -65,7 +65,7 @@ Here is a list of the selectors provided by the RadContextMenu control:
                                     ItemTemplateSelector="{StaticResource MyTemplateSelector}"/>
         </telerik:RadContextMenu.ContextMenu>
     </TextBox>
-{{endregion}}
+```
 
 __RadContextMenu with ItemTemplateSelector__ 
 
@@ -73,8 +73,8 @@ __RadContextMenu with ItemTemplateSelector__
 
 * __ItemContainerStyleSelector:__ Used to select the __Style__ that is applied to the child __RadMenuItems__.
 
-#### __[C#] Example 3: Define the ItemContainerStyleSelector__
-{{region radcontextmenu-populating-with-data-template-and-style-selectors_3}}
+__Example 3: Define the ItemContainerStyleSelector__
+```C#
 	public class MyStyleSelector : StyleSelector
     {
         public Style CutStyle { get; set; }
@@ -90,10 +90,10 @@ __RadContextMenu with ItemTemplateSelector__
             return this.DefaultStyle;
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 4: Using the ItemContainerStyleSelector in XAML__
-{{region radcontextmenu-populating-with-data-template-and-style-selectors_2}}
+__Example 4: Using the ItemContainerStyleSelector in XAML__
+```XAML
 	<Grid.Resources>
         <!-- ... -->
 	<local:MyStyleSelector x:Key="MyStyleSelector" DefaultStyle="{StaticResource MenuItemStyle}">
@@ -111,7 +111,7 @@ __RadContextMenu with ItemTemplateSelector__
                                     ItemContainerStyleSelector="{StaticResource MyStyleSelector}"/>
         </telerik:RadContextMenu.ContextMenu>
     </TextBox>
-{{endregion}}
+```
 
 __RadContextMenu with ItemContainerStyleSelector__ 
 

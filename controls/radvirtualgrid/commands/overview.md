@@ -54,8 +54,8 @@ All supported commands are defined in the __RadVirtualGridCommands__ class and a
 
 As the commands provided by __RadVirtualGrid__ are ICommands at their core, they do provide methods for both checking if they can be invoked - __CanExecute()__ and for invoking them - __Execute()__.
 
-#### __[C#] Example 1: Executing different commands__
-{{region radvirtualgrid-commands_overview_0}}
+__Example 1: Executing different commands__
+```C#
 	private void Button1_Click(object sender, RoutedEventArgs e)
 	{
 	    var moveDownCommand = RadVirtualGridCommands.MoveDown as RoutedUICommand;
@@ -65,12 +65,12 @@ As the commands provided by __RadVirtualGrid__ are ICommands at their core, they
 	    selectCommand.Execute(null, this.VirtualGrid);
 	    deleteCommand.Execute(null, this.VirtualGrid);
 	}
-{{endregion}}
+```
 
 In order to ensure that all commands will be executed in the correct sequence, it is advised to use __RadVirtualGrid's PendingCommands__ collection as demonstrated in __Example 2__.
 
-#### __[C#] Example 2: Executing different commands with the ExecutePendingCommand method__
-{{region radvirtualgrid-commands_overview_1}}
+__Example 2: Executing different commands with the ExecutePendingCommand method__
+```C#
 	 private void Button1_Click(object sender, RoutedEventArgs e)
         {
             this.VirtualGrid.PendingCommands.Add(RadVirtualGridCommands.MoveDown);
@@ -78,7 +78,7 @@ In order to ensure that all commands will be executed in the correct sequence, i
             this.VirtualGrid.PendingCommands.Add(RadVirtualGridCommands.Delete);
             this.VirtualGrid.ExecutePendingCommand();
         }
-{{endregion}}
+```
 
 ## See Also
 

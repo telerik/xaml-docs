@@ -12,21 +12,13 @@ position: 0
 
 This article demonstrates how to integrate an Azure's [SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) and display the data using the [RadGridView]({%slug gridview-getting-started2%}) and [RadDataPager]({%slug raddatapager-getting-started%}) controls. For the purpose, you will use the **QueryableEntityCollectionView** class which will transfer all the group, filter, sort and paging operations to the cloud.
 
-* [Set Up the Database](#set-up-the-database)
-* [Create the Application](#create-the-application)
-* [Reverse-engineer the Database Using Entity Framework](#reverse-engineer-the-database-using-entity-framework)
-* [Define the ViewModel](#define-the-viewmodel)
-* [Query the Data](#query-the-data)
-* [Save and Load Changes To and From the Database](#save-and-load-changes-to-and-from-the-database)
-* [Create the Layout](#create-the-layout)
-
-## Step 1: Set Up the Database
+## Set Up the Database
 
 Start by setting up the **AdventureWorksLT** database from the [Create an Azure SQL Database Tutorial](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal).
 
-## Step 2: Create the Application
+## Create the Application
 
-{% if site.framework_name == 'WPF' %}[Create a new WPF application]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}){% else %}[Create a new Silverlight application]({%slug installation-adding-to-application-create-application-and-adding-control%}){% endif %} and add the following assemblies which you will need.
+[Create a new WPF application]({%slug radcontrols-for-wpf-vs-extensions-project-creation%}) and add the following assemblies which you will need.
 
 * **Telerik.Windows.Controls**
 * **Telerik.Windows.Controls.Data**
@@ -35,7 +27,7 @@ Start by setting up the **AdventureWorksLT** database from the [Create an Azure 
 * **Telerik.Windows.Controls.Input**
 * **Telerik.Windows.Data**
 
-## Step 3: Reverse-engineer the Database Using Entity Framework
+## Reverse-engineer the Database Using Entity Framework
 
 1. Add a new item to your project and choose **ADO.NET Entity Data Model** from the list of available items.
 
@@ -57,13 +49,13 @@ Start by setting up the **AdventureWorksLT** database from the [Create an Azure 
 
 You are now able to work with the entities you chose through the created **DbContext** - AdventureWorksEntities in our case.
 
-## Step 4: Define the ViewModel
+## Define the ViewModel
 
 All the interaction with the Azure SQL Database will be done by the viewmodel. First define the properties which will be used to interact with the view.
 
-#### __[C#] Example 1: Define public properties__
+__Example 1: Define public properties__
 
-{{region cs-cloud-integration-azure-sql-database-1}}
+```C#
 
     public class MainWindowViewModel : ViewModelBase
 	{
@@ -103,15 +95,15 @@ All the interaction with the Azure SQL Database will be done by the viewmodel. F
 			}
 		}
 	}
-{{endregion}}
+```
 
-## Step 5: Query the Data
+## Query the Data
 
 Now what's left is to actually make the connection to the database and query the data. For the purpose, create a new **BackgroundWorker** in the viewmodel's constructor and handle the **DoWork** and **RunWorkerCompleted** events as shown in **Example 3**.
 
-#### __[C#] Example 2: Add logic to work with the SQL database__
+__Example 2: Add logic to work with the SQL database__
 
-{{region cs-cloud-integration-azure-sql-database-2}}
+```C#
 
     public class MainWindowViewModel : ViewModelBase
 	{
@@ -143,7 +135,7 @@ Now what's left is to actually make the connection to the database and query the
 			this.IsBusy = false;
 		}
 	}
-{{endregion}}
+```
 
 What the code in **Example 3** does is to set the **IsBusy** property so that some indication is displayed in the UI. It then initializes the **BackgroundWorker**, subscribes to its events and runs it asynchronously. The **DoWork** handler then creates a new instance of the **AdventureWorksEntities** class and gets its **ObjectContext** via the explicit implementation of the **IObjectContextAdapter** interface.
 
@@ -153,9 +145,9 @@ The **RunWorkerCompleted** event handler then creates a new instance of the gene
 
 The final step is to actually save any changes that are made the database as well as obtain the updated data in case any changes on the cloud have occured. **Example 4** demonstrates the code for these two operations.
 
-#### __[C#] Example 3: Save and load changes__
+__Example 3: Save and load changes__
 
-{{region cs-cloud-integration-azure-sql-database-3}}
+```C#
 
     public MainWindowViewModel()
     {
@@ -176,15 +168,15 @@ The final step is to actually save any changes that are made the database as wel
         this.IsBusy = true;
         this.worker.RunWorkerAsync();
     }
-{{endregion}}
+```
 
-## Step 6: Create the Layout
+## Create the Layout
 
 All that's left is to define the actual user interface clients of this application will use. The layout consists of a RadGridView to display the data, a RadDataPager to page it and two buttons - one to save the changes to the database and one to load newly-updated data from the cloud. Note that the **local** namespace in the example corresponds to the namespace where **MainWindowViewModel** resides.
 
-#### __[XAML] Example 4: The final layout__
+__Example 4: The final layout__
 
-{{region xaml-cloud-integration-azure-sql-database-4}}
+```XAML
 
     <Grid>
 		<Grid.DataContext>
@@ -201,7 +193,7 @@ All that's left is to define the actual user interface clients of this applicati
         <telerik:RadButton Grid.Row="2" Content="Save Changes" Command="{Binding SaveChangesCommand}" />
 		<telerik:RadButton Grid.Row="3" Content="Load Changes" Command="{Binding LoadDataCommand}" />
     </Grid>
-{{endregion}}
+```
 
 **Figure 1** demonstrates the final result in the **Office2016** theme.
 

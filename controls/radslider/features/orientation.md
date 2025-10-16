@@ -16,18 +16,18 @@ position: 1
 
 __RadSlider's__ __Orientation__ property can be set to either __Horizontal__ or __Vertical__.
 
-#### __XAML__
 
-{{region xaml-radslider-orientation_0}}
+
+```XAML
 	<telerik:RadSlider Orientation="Horizontal" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Orientation Horizontal](images/radslider_features_horizontal.png)
 
-#### __XAML__
 
-{{region xaml-radslider-orientation_1}}
+
+```XAML
 	<telerik:RadSlider Orientation="Vertical" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadSlider Orientation Vertical](images/radslider_features_vertical.png)

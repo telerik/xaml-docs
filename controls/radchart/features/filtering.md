@@ -34,17 +34,17 @@ Here is an example of implementing filtering.
 
 >tipTo use the __ChartFilterDescriptors__ in XAML you have to declare the following namespace:
 
-#### __XAML__
 
-{{region xaml-radchart-features-filtering_0}}
+
+```XAML
 	<!--  xmlns:telerikCharting="clr-namespace:Telerik.Windows.Controls.Charting;assembly=Telerik.Windows.Controls.Charting"  -->
-{{endregion}}
+```
 
 
 
-#### __XAML__
 
-{{region xaml-radchart-features-filtering_1}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.FilterDescriptors>
 	        <telerik:ChartFilterDescriptor Member="Quantity"
@@ -52,31 +52,26 @@ Here is an example of implementing filtering.
 	                                       Value="150" />
 	    </telerik:RadChart.FilterDescriptors>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-filtering_2}}
+
+```C#
 	ChartFilterDescriptor descriptor = new ChartFilterDescriptor();
 	descriptor.Member = "Quantity";
 	descriptor.Operator = FilterOperator.IsLessThanOrEqualTo;
 	descriptor.Value = 150;
 	this.radChart.FilterDescriptors.Add(descriptor);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-filtering_3}}
+```
+```VB.NET
 	Dim descriptor As New ChartFilterDescriptor()
 	descriptor.Member = "Quantity"
 	descriptor.[Operator] = FilterOperator.IsLessThanOrEqualTo
 	descriptor.Value = 150
 	Me.radChart.FilterDescriptors.Add(descriptor)
-{{endregion}}
+```
     
 Here is a snapshot of the result.
     ![{{ site.framework_name }} RadChart with Filtered Data](images/RadChart_Features_Filtering_02.png)

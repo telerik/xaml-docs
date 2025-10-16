@@ -26,14 +26,14 @@ The manage bibliographic references can be opened with the __Manage Sources__ bu
 
 The dialogs can be shown by executing the `ShowManageBibliographicSourcesDialogCommand` and `ShowAddNewBibliographicReferenceDialogCommand`. See how to bind the commands to external buttons in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-bibliographic-sources-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ShowManageBibliographicSourcesDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, you can call the `ShowAddNewBibliographicSourceDialog` and `ShowManageBibliographicSourcesDialog` methods of `RadRichTextBox`.
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-bibliographic-sources-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowAddNewBibliographicSourceDialog();
-{{endregion}}
+```

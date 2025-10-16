@@ -14,9 +14,9 @@ The __RadGridView__'s API offers you a __GridViewSelectColumn__, with the help o
 
 Here is a __RadGridView__ declaration, which is populated with some sample data.
 
-#### __XAML__
 
-{{region xaml-gridview-selection-via-checkbox_0}}
+
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                 IsReadOnly="False"
 	                 AutoGenerateColumns="False">
@@ -38,7 +38,7 @@ Here is a __RadGridView__ declaration, which is populated with some sample data.
 	        </telerik:GridViewDataColumn>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 The grid is shown on the next figure.
 
@@ -48,23 +48,23 @@ In order to enable the selection via checkbox behavior, you need to perform the 
 
 1. Enable __multiple selection__ for the __RadGridView__.
 
-#### __XAML__
 
-{{region xaml-gridview-selection-via-checkbox_1}}
+
+```XAML
 	<telerik:RadGridView SelectionMode="Extended">
-{{endregion}}
+```
 
 2. Add an additional __GridViewColumn__ of type __GridViewSelectColumn__.
 
-#### __XAML__
 
-{{region xaml-gridview-selection-via-checkbox_2}}
+
+```XAML
 	<telerik:RadGridView.Columns>
 	    <telerik:GridViewSelectColumn/>
 	    <!--...-->
 	</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 Here is the final result. When you select the CheckBox Header, then all rows will be automatically selected.
 

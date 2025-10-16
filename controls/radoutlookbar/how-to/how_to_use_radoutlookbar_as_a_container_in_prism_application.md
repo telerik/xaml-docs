@@ -44,8 +44,8 @@ __Delete MainPage.xaml__(*along with MainPage.xaml.cs*), add a __new folder__ ca
 
 Open __ShellView.xaml__ and __add__ a __RadOutlookBar__ control. __Register__ the __RadOutlookBar__ control with __Prism’s RegionManager__ by giving it a __RegionName__. In this case, registration can happen in XAML by annotating a UIElement with a RegionName attached property.
 
-#### __XAML__
-{{region xaml-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_0}}
+
+```XAML
 	<Grid>
 	    <Grid.ColumnDefinitions>
 	        <ColumnDefinition Width="300" />
@@ -54,7 +54,7 @@ Open __ShellView.xaml__ and __add__ a __RadOutlookBar__ control. __Register__ th
 	    <!--xmlns:prism="clr-namespace:Microsoft.Practices.Composite.Presentation.Regions;assembly=Microsoft.Practices.Composite.Presentation"-->
 	    <telerik:RadOutlookBar prism:RegionManager.RegionName="OutlookBarRegion" />
 	</Grid>
-{{endregion}}
+```
 
 Once a region has been defined via XAML, it will automatically be registered at run time with __RegionManager__, one of the composition services registered by the __bootstrapper__. __RegionManager__ is essentially a Dictionary where the key is the name of the region and the value is an instance of the IRegion interface.
 
@@ -70,8 +70,8 @@ The __Bootstrapper__ inherits __UnityBootstrapper__ and is the __starting point_
 
 For the moment we will do just step 1.
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_1}}
+
+```C#
 	public void Initialize()
 	{
 	    // Register views here.
@@ -80,35 +80,31 @@ For the moment we will do just step 1.
 	        return new ModuleAView().OutlookBarItem;
 	    });
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_1}}
+```
+```VB.NET
 	Public Sub Initialize()
 	    Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
 	                                                                    Return New ModuleAView().OutlookBarItem
 	                                                                End Function)
 	End Sub
-{{endregion}}
+```
 
 Now we have to actually run the bootstrapper. Go to __App.xaml.cs__ and modify the __Application_Startup__ event handler.				
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_2}}
+
+```C#
 	private void Application_Startup(object sender, StartupEventArgs e)
 	{
 	    Bootstrapper bootstrapper = new Bootstrapper();
 	    bootstrapper.Run();
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_2}}
+```
+```VB.NET
 	Private Sub Application_Startup(sender As Object, e As StartupEventArgs)
 	    Dim bootstrapper As New Bootstrapper()
 	    bootstrapper.Run()
 	End Sub
-{{endregion}}
+```
 
 Now if you run the application in this state, you will get the following error.
 
@@ -128,8 +124,8 @@ Make __ModuleA__ class implement the __IModule__ interface. The __IModule__ inte
 
 ![{{ site.framework_name }} RadOutlookBar Module Prism References](images/RadOutlookBar_Prism_08.png)
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_3}}
+
+```C#
 	public class ModuleA : IModule
 	{
 	    IUnityContainer container;
@@ -146,10 +142,8 @@ Make __ModuleA__ class implement the __IModule__ interface. The __IModule__ inte
 	        // Register views here.
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_3}}
+```
+```VB.NET
 	Public Class ModuleA
 	    Implements IModule
 	    Private container As IUnityContainer
@@ -163,14 +157,14 @@ Make __ModuleA__ class implement the __IModule__ interface. The __IModule__ inte
 	    Public Sub Initialize()
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 We will be back shortly with the implementation of the Initialize method.
 
 Now, __add a new folder__ to the __ModuleA__ class library and __call it Views__. __Add a new UserControl__ to the __Views__ folder and __call it ModuleAView__. __ModuleAView__ will contain a __RadTreeView__. Therefore, we need to add references to __Telerik.Windows.Controls.dll__ and __Telerik.Windows.Controls.Navigation.dll__ to __ModuleA__ class library. This is how __ModuleAView__ might look like:				
 
-#### __XAML__
-{{region xaml-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_1}}
+
+```XAML
 	<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
@@ -185,12 +179,12 @@ Now, __add a new folder__ to the __ModuleA__ class library and __call it Views__
 	        </telerik:RadTreeView>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 Now that we have our first view defined, we need to register it in the Initialize method.				
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_5}}
+
+```C#
 	public void Initialized()
 	{
 	    // Register views here.
@@ -199,10 +193,8 @@ Now that we have our first view defined, we need to register it in the Initializ
 	        return new ModuleAView();
 	    });
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_5}}
+```
+```VB.NET
 	Public Sub Initialized()
 	    ' Register views here.'
 	    Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
@@ -210,7 +202,7 @@ Now that we have our first view defined, we need to register it in the Initializ
 	
 	                                                                End Function)
 	End Sub
-{{endregion}}
+```
 
 If you remember, in the __ShellView__ we registered the __RadOutlookBar__ using __prism:RegionManager.RegionName="OutlookBarRegion"__. That is why the first parameter in the __RegisterViewWithRegion__ is called __OutlookBarRegion__.				
 
@@ -225,24 +217,22 @@ Since we have added a module, let’s create a module catalog. First of all, add
 
 Then __open__ the __Bootstrapper__ class and __override__ the __GetModuleCatalog()__ method.				
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_6}}
+
+```C#
 	protected override IModuleCatalog GetModuleCatalog()
 	{
 	    ModuleCatalog catalog = new ModuleCatalog();
 	    catalog.AddModule(typeof(ModuleA.ModuleA));
 	    return catalog;
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_6}}
+```
+```VB.NET
 	Protected Overrides Function GetModuleCatalog() As IModuleCatalog
 	    Dim catalog As New ModuleCatalog()
 	    catalog.AddModule(GetType(ModuleA.ModuleA))
 	    Return catalog
 	End Function
-{{endregion}}
+```
 
 So far, if you run the project you should get result similar to the one bellow:
 
@@ -250,8 +240,8 @@ So far, if you run the project you should get result similar to the one bellow:
 
 Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString() representation of the __ModuleAView__ class. To fix that we can add an __ItemHeader__ property to the __ModuleAView__ user control.				
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_7}}
+
+```C#
 	public ModuleAView()
 	{
 	    InitializeComponent();
@@ -259,10 +249,8 @@ Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString(
 	}
 	
 	public string ItemHeader { get; set; }
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_7}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.ItemHeader = "ModuleA"
@@ -277,14 +265,14 @@ Strangely, the __RadOutlookBarItem__ has no header and the title is a .ToString(
 	    End Set
 	End Property
 	Private m_ItemHeader As String
-{{endregion}}
+```
 
 Then, go to the __RadOutlookBar__’s definition in __ShellView.xaml__ and add a __DisplayMemberPath__ property pointing to __Header__.				
 
-#### __XAML__
-{{region xaml-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_2}}
+
+```XAML
 	<telerik:RadOutlookBar prism:RegionManager.RegionName="OutlookBarRegion" DisplayMemberPath="ItemHeader" />
-{{endregion}}
+```
 
 Now, if you run the project, you will see that the __RadOutlookBarItem__ has a header.
 
@@ -292,24 +280,22 @@ Now, if you run the project, you will see that the __RadOutlookBarItem__ has a h
 
 The last thing that needs to be done is to make the __Title__ area display __ModuleA__ as well. The fastest way to do this is to use the __TextSearch__ class that is located in the __Telerik.Windows.Controls__ namespace in __Telerik.Windows.Controls.dll__.
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_9}}
+
+```C#
 	public ModuleaView()
 	{
 	    this.InitializeComponent();
 	    this.ItemHeader = "ModuleA";
 	    Telerik.Windows.Controls.TextSearch.SetText(this, "ModuleA");
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_9}}
+```
+```VB.NET
 	Public Sub New()
 	    Me.InitializeComponent()
 	    Me.ItemHeader = "ModuleA"
 	    Telerik.Windows.Controls.TextSearch.SetText(Me, "ModuleA")
 	End Sub
-{{endregion}}
+```
 
 Now if you run the project, the output should be similar to the one bellow.
 
@@ -317,8 +303,8 @@ Now if you run the project, the output should be similar to the one bellow.
 
 Another approach to this scenario is to insert an actual __RadOutlookBarItem__. What I mean by that is instead of having in __ModuleAView.xaml__:				
 
-#### __XAML__
-{{region xaml-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_3}}
+
+```XAML
 	<Grid Background="White">
 	    <telerik:RadTreeView>
 	        <telerik:RadTreeViewItem Header="ModuleA Item 0">
@@ -329,12 +315,12 @@ Another approach to this scenario is to insert an actual __RadOutlookBarItem__. 
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeView>
 	</Grid>
-{{endregion}}
+```
 
 You can add the __RadTreeView__ as a content to a __RadOutlookBarItem__:				
 
-#### __XAML__
-{{region xaml-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_4}}
+
+```XAML
 	<Grid Background="White">
 	    <telerik:RadOutlookBarItem x:Name="outlookBarItem1" 
 	                               Title="Some Title"
@@ -349,12 +335,12 @@ You can add the __RadTreeView__ as a content to a __RadOutlookBarItem__:
 	        </telerik:RadTreeView>
 	    </telerik:RadOutlookBarItem>
 	</Grid>
-{{endregion}}
+```
 
 Now, instead of having an __ItemHeader__ property, you can create a property of type __RadOutlookBarItem__ and return a reference to __outlookBarItem1__:
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_12}}
+
+```C#
 	public ModuleAView()
 	{
 	    InitializeComponent();
@@ -366,10 +352,8 @@ Now, instead of having an __ItemHeader__ property, you can create a property of 
 	        return this.outlookBarItem1;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_12}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	End Sub
@@ -378,12 +362,12 @@ Now, instead of having an __ItemHeader__ property, you can create a property of 
 	        Return Me.outlookBarItem1
 	    End Get
 	End Property
-{{endregion}}
+```
 
 In the __Initialize()__ method of __ModuleA__.cs we will use the previously created __OutlookBarItem__ property:
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_13}}
+
+```C#
 	public void Initialize()
 	{
 	    // Register views here.
@@ -392,16 +376,14 @@ In the __Initialize()__ method of __ModuleA__.cs we will use the previously crea
 	        return new ModuleAView().OutlookBarItem;
 	    });
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_13}}
+```
+```VB.NET
 	Public Sub Initialize()
 	    Me.regionManager.RegisterViewWithRegion("OutlookBarRegion", Function()
 	                                                                    Return New ModuleAView().OutlookBarItem
 	                                                                End Function)
 	End Sub
-{{endregion}}
+```
 
 Remove __DisplayMemeberPath__ from __RadOutlookBar’s__ definition in __ShellView.xaml__ and run the project. If you get the following error, then we are on the right track.
 
@@ -409,8 +391,8 @@ Remove __DisplayMemeberPath__ from __RadOutlookBar’s__ definition in __ShellVi
 
 The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView.xaml__ is a child of __ModuleAView__, but we are adding it to __RadOutlookBar__ as well. Thus the problem, one and the same visual element cannot appear on more than one place in the visual tree of the application. To overcome this issue, in the constructor of __ModuleAView__ we need to remove whatever is in __LayoutRoot__.				
 
-#### __C#__
-{{region cs-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_14}}
+
+```C#
 	public ModuleAView()
 	{
 	    InitializeComponent();
@@ -424,10 +406,8 @@ The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView
 	        return this.outlookBarItem1;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region vb-How_to_Use_RadOutlookBar_as_a_Container_in_Prism_Application_14}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.LayoutRoot.Children.Clear()
@@ -438,7 +418,7 @@ The reason for it is that whatever is defined in __LayoutRoot__ of __ModuleAView
 	        Return Me.outlookBarItem1
 	    End Get
 	End Property
-{{endregion}}
+```
 
 Now if you run the project, everything should be fine.
 

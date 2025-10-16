@@ -27,24 +27,24 @@ __All charting controls__ in the RadChartView suite work with the following even
 
 The following events will be fired only for __RadCartesianChart__:
 * __PanOffsetChanged__: Occurs when the chart pan offset gets changed.
-	#### __[C#] Example 1: PanOffsetChanged event arguments__
-	{{region radchartview-events_0}}	
+	__Example 1: PanOffsetChanged event arguments__
+	```C#	
 		private void RadCartesianChart_PanOffsetChanged(object sender, ChartPanOffsetChangedEventArgs e)
 		{
 			Point previousPanOffset = e.PreviousPanOffset;
 			Point newPanOffset = e.NewPanOffset;
 		}
-	{{endregion}}
+	```
 	
 * __ZoomChanged__: Occurs when the chart zoom gets changed.
-	#### __[C#] Example 2: ZoomChanged event arguments__
-	{{region radchartview-events_1}}	
+	__Example 2: ZoomChanged event arguments__
+	```C#	
 		private void RadCartesianChart_ZoomChanged(object sender, ChartZoomChangedEventArgs e)
 		{
 			Size previousZoom = e.PreviousZoom;
 			Size newZoom = e.NewZoom;
 		}
-	{{endregion}}
+	```
 	
 ## Series Events
 
@@ -58,24 +58,24 @@ All chart series expose the following events:
 
 The __LinearAxis, LogarithmicAxis, DateTimeContinuousAxis__ continuous axes of the charts expose the following events
 * __ActualRangeChanged__: Occurs when the actual range changes.
-	#### __[C#] Example 3: ActualRangeChanged event arguments__
-	{{region radchartview-events_2}}	
+	__Example 3: ActualRangeChanged event arguments__
+	```C#	
 		private void DateTimeContinuousAxis_ActualRangeChanged(object sender, Telerik.Charting.DateTimeRangeChangedEventArgs e)
 		{
 			Telerik.Charting.ValueRange<System.DateTime> previousRange = e.PreviousRange;
 			Telerik.Charting.ValueRange<System.DateTime> newRange = e.NewRange;
 		}
-	{{endregion}}
+	```
 	
 * __ActualVisibleRangeChanged__: Occurs when the actual visible range changes.
-	#### __[C#] Example 4: ActualVisibleRangeChanged event arguments__
-	{{region radchartview-events_3}}	
+	__Example 4: ActualVisibleRangeChanged event arguments__
+	```C#	
 		private void DateTimeContinuousAxis_ActualVisibleRangeChanged(object sender, Telerik.Charting.DateTimeRangeChangedEventArgs e)
 		{
 			Telerik.Charting.ValueRange<System.DateTime> previousRange = e.PreviousRange;
 			Telerik.Charting.ValueRange<System.DateTime> newRange = e.NewRange;
 		}
-	{{endregion}}
+	```
 
 The __LinearAxis__ has an additional event which will be fired when the MajorStep property is changed.
 
@@ -88,73 +88,73 @@ The __LinearAxis__ has an additional event which will be fired when the MajorSte
 * __ChartCrosshairBehavior__: This behavior exposes the following event:
 
 	* __PositionChanged__: Occurs when the position of the lines that represent the crosshair change.
-	#### __[C#] Example 5: PositionChanged event arguments__
-	{{region radchartview-events_4}}	
+	__Example 5: PositionChanged event arguments__
+	```C#	
 		private void ChartCrosshairBehavior_PositionChanged(object sender, ChartCrosshairPositionChangedEventArgs e)
 		{
 			Telerik.Charting.DataTuple data = e.Data;
 			Point newPosition = e.Position;
 		}
-	{{endregion}}
+	```
 	
 * __ChartTrackBallBehavior__: This behavior exposes the following events:
 
 	* __PositionChanging__: Occurs when the value of the ChartTrackBallBehavior.Position property is changing. Allows for the new position to be modified.
-	#### __[C#] Example 6: PositionChanging event arguments__
-	{{region radchartview-events_5}}	
+	__Example 6: PositionChanging event arguments__
+	```C#	
 		private void ChartTrackBallBehavior_PositionChanging(object sender, TrackBallPositionChangingEventArgs e)
 		{
 			var previousPosition = e.PreviousPosition;
 			var newPosition = e.NewPosition;
 		}
-	{{endregion}}
+	```
 	
 	* __TrackInfoUpdated__: Occurs when a track info is updated, just before the UI that represents it is updated. Allows custom information to be displayed.	
-	#### __[C#] Example 6: TrackInfoUpdated event arguments__
-	{{region radchartview-events_5}}	
+	__Example 6: TrackInfoUpdated event arguments__
+	```C#	
 		private void ChartTrackBallBehavior_TrackInfoUpdated(object sender, TrackBallInfoEventArgs e)
 		{
 			ChartDataContext context = e.Context;
 			object test = e.Header;            
 		}
-	{{endregion}}
+	```
 	
 * __ChartSelectionBehavior__: This behavior exposes the following event:
 
 	* __SelectionChanged__: Occurs when the chart selection has changed.
-	#### __[C#] Example 7: SelectionChanged event arguments__
-	{{region radchartview-events_6}}	
+	__Example 7: SelectionChanged event arguments__
+	```C#	
 		private void ChartSelectionBehavior_SelectionChanged(object sender, ChartSelectionChangedEventArgs e)
 		{
 			var selectedPoints = e.AddedPoints;
 			var unSelectedPoints = e.RemovedPoints;
 		}
-	{{endregion}}  
+	```  
 
 ## Provider Events
 
 * __ChartSeriesProvider__: The series provider exposes the following events:
 
 	* __SeriesCreated__: Occurs when a series is created. Allows for the series to be additionally set up or completely replaced.  	
-	#### __[C#] Example 8: SeriesCreated event arguments__
-	{{region radchartview-events_7}}	
+	__Example 8: SeriesCreated event arguments__
+	```C#	
 		private void ChartSeriesProvider_SeriesCreated(object sender, ChartSeriesCreatedEventArgs e)
 		{
 			object test = e.Context;
 			ChartSeries createdSeries = e.Series;
 		}
-	{{endregion}}
+	```
 	
 * __ChartAnnotationsProvider__: The annotations provider exposes the following events:
 	* __AnnotationCreated__: Occurs when an annotation is created. Allows for the annotation to be additionally set up or completely replaced.  
-	#### __[C#] Example 9: AnnotationCreated event arguments__
-	{{region radchartview-events_8}}	
+	__Example 9: AnnotationCreated event arguments__
+	```C#	
 		private void ChartAnnotationsProvider_AnnotationCreated(object sender, ChartAnnotationCreatedEventArgs e)
 		{
 			object test = e.Context;
 			ChartAnnotation createdAnnotation = e.Annotation;
 		}
-	{{endregion}}	  
+	```	  
 	  
 ## See Also  
 * [Getting Started]({%slug radchartview-introduction%})

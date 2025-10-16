@@ -47,9 +47,9 @@ The following example demonstrates how to specify a label format expression to c
 
 The created chart is bound to a collection of __TradeData__ objects via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}), where the __TradeData__ object has the following structure:
 
-#### __C#__
 
-{{region cs-radchart-features-format-expressions_0}}
+
+```C#
 	public class TradeData
 	{
 	    public string Emission
@@ -98,13 +98,8 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 	        set;
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-format-expressions_1}}
+```
+```VB.NET
 	Public Class TradeData
 	    Private _Emission As String
 	    Public Property Emission() As String
@@ -196,13 +191,13 @@ The created chart is bound to a collection of __TradeData__ objects via [SeriesM
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 Take a look at the code snippet below and see how to define custom label format strings for your __RadChart__.
 
-#### __XAML__
 
-{{region xaml-radchart-features-format-expressions_2}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -235,13 +230,13 @@ Take a look at the code snippet below and see how to define custom label format 
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-format-expressions_3}}
+
+```C#
 	RadChart radChart = new RadChart();
 	//....
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM";
@@ -256,11 +251,8 @@ Take a look at the code snippet below and see how to define custom label format 
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Close", DataPointMember.YValue ) );
 	seriesMapping.ItemMappings.Add( new ItemMapping( "FromDate", DataPointMember.XValue ) );
 	radChart.SeriesMappings.Add( seriesMapping );
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radchart-features-format-expressions_4}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
 	radChart.DefaultView.ChartArea.AxisX.DefaultLabelFormat = "dd-MMM"
@@ -274,7 +266,7 @@ Take a look at the code snippet below and see how to define custom label format 
 	seriesMapping.ItemMappings.Add(New ItemMapping("Close", DataPointMember.YValue))
 	seriesMapping.ItemMappings.Add(New ItemMapping("FromDate", DataPointMember.XValue))
 	radChart.SeriesMappings.Add(seriesMapping)
-{{endregion}}
+```
 
 The specified label formats are:
 

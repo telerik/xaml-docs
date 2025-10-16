@@ -34,8 +34,8 @@ How to add a border around the drag visual of the tab item dragged out of RadTab
 
 2. In the event handler, get the DragVisual from the event arguments and set its __Stroke__ and __StrokeThickness__ properties.
 
-#### __[C#]__
-{{region kb-tabbedwindow-change-tab-appearance-when-dragging-0}}
+
+```C#
 	public partial class MainWindow : RadTabbedWindow
 	{
 		public MainWindow()
@@ -51,7 +51,7 @@ How to add a border around the drag visual of the tab item dragged out of RadTab
 			defaultDragVisual.StrokeThickness = 1;         
 		}
 	}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTabbedWindow Changing the Tab Appearance During Drag](images/kb-tabbedwindow-change-tab-appearance-when-dragging-0.png)
 

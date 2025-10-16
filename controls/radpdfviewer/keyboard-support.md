@@ -93,9 +93,9 @@ CaretMovementType.MoveToEndOfDocument</td></tr></table>
 
 The key bindings of the viewer can be retrieved using the __KeyBindings__ property. After that, you can proceed to modify the collection using the public API of the class:
 
-#### __C#__
 
-{{region radpdfviewer-keyboard-support_1}}
+
+```C#
 	public void Clear()                                                //Clears the collection
 	public void SetInputBindings(InputBindingCollection inputBindings) //Clears the current KeyBindings and sets the new ones.
 	
@@ -103,16 +103,16 @@ The key bindings of the viewer can be retrieved using the __KeyBindings__ proper
 	public void AddRange(IEnumerable<InputBinding> inputBindings)
 	
 	public void RegisterCommand(ICommand command, Key key, ModifierKeys modifierKeys = ModifierKeys.None, object commandParameter = null)
-{{endregion}}
+```
 
 
 
 Here is an example that shows how the default input bindings can be cleared and two ways of registering new key bindings:
 
-#### __C#__
 
-{{region radpdfviewer-keyboard-support_0}}
+
+```C#
 	this.pdfViewer.Clear();
 	this.pdfViewer.KeyBindings.Add(new KeyBinding(this.pdfViewer.Commands.PageUpCommand, new KeyGesture(Key.PageUp)));
 	this.pdfViewer.KeyBindings.RegisterCommandDescriptor(this.pdfViewer.CommandDescriptors.PageDownCommandDescriptor, Key.PageDown);
-{{endregion}}
+```

@@ -10,17 +10,13 @@ position: 11
 
 # Highlight PointMark On Click
 
-
-
-## 
-
 It is common scenario that you would like to select a single PointMark of Line Series for example. Since __InteractivityScope.Item__ (for more information see Interactivity Effects [topic]({%slug radchart-features-interactivity-effects%})) is not supported for series that do not render separate items (__Line__, __Spline__, __Area__, __Range__, and __all their stacked versions__) this help topic will demonstrate how to select single Line's PointMark and customise it. 
 
 ##### 1.  Create Line Chart Series. The following code snippet demonstrates LineSeries created using [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}).
 
-#### __C#__
 
-{{region radchart-howto-highlight-pointmark-on-click_0}}
+
+```C#
 	public MainPage() //MainWindow() for WPF
 	        {
 	            InitializeComponent();
@@ -58,12 +54,8 @@ It is common scenario that you would like to select a single PointMark of Line S
 	                this.YValue = yValue;
 	            }
 	        }
-	{{endregion}}
-
-
-#### __VB.NET__
-
-{{region radchart-howto-highlight-pointmark-on-click_1}}
+```
+```VB.NET
 	Public Sub New() 'MainWindow() for WPF
 	                  InitializeComponent()
 	                  Dim r As New Random()
@@ -92,15 +84,13 @@ It is common scenario that you would like to select a single PointMark of Line S
 	                        Me.YValue = yValue
 	                  End Sub
 	            End Class
-	{{endregion}}
-
-
+```
 
 ##### 2. Subscribe to the *ItemClick* event of the ChartArea and get a list of all PointMarks in the ChartArea using the ChildrenOfType<T> extension method. The next step is to figure out which PointMark is selected. Find the SingleOrDefault PointMark from the eventargs (e.DataPoint) which matches the datacontext of a pointmark in the collection of pointmarks:
 
-#### __C#__
 
-{{region radchart-howto-highlight-pointmark-on-click_2}}
+
+```C#
 	void ChartArea_ItemClick(object sender, ChartItemClickEventArgs e)
 	        {
 	            this.ClearPointMarkSelectedState();
@@ -113,30 +103,21 @@ It is common scenario that you would like to select a single PointMark of Line S
 	
 	            this.SetPointMarkSelectedState();
 	        }
-	{{endregion}}
-
-
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-highlight-pointmark-on-click_3}}
+```
+```VB.NET
 	Private Sub ChartArea_ItemClick(ByVal sender As Object, ByVal e As ChartItemClickEventArgs)
 	Me.ClearPointMarkSelectedState()
 	Dim pointMarks = radChart.DefaultView.ChartArea.ChildrenOfType(Of PointMark)().ToList(Of PointMark)()
 	Me.selectedPointMark = pointMarks.Where(Function(x) x.DataContext = e.DataPoint).SingleOrDefault()
 	Me.SetPointMarkSelectedState()
 	End Sub
-	{{endregion}}
+```
 
 
 
 ##### 3. The methods SetPointMarkSelectedState() and ClearPointMarkSelectedState() define what should be done with the selected PointMark (in this case the selected one's MarkerShape is set to Triangle and the Fill to Red) and how to return to it's default state when another one is selected (Circle MarkerShape and White Fill):
 
-#### __C#__
-
-{{region radchart-howto-highlight-pointmark-on-click_4}}
+```C#
 	private void SetPointMarkSelectedState()
 	        {
 	            if (this.selectedPointMark == null)
@@ -155,13 +136,8 @@ It is common scenario that you would like to select a single PointMark of Line S
 	            this.selectedPointMark.Fill = new SolidColorBrush(Colors.White);
 	            this.selectedPointMark.Shape = MarkerShape.Circle;
 	        }
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-highlight-pointmark-on-click_5}}
+```
+```VB.NET
 	Private Sub SetPointMarkSelectedState()
 	If Me.selectedPointMark Is Nothing Then
 	Return
@@ -177,9 +153,7 @@ It is common scenario that you would like to select a single PointMark of Line S
 	Me.selectedPointMark.Fill = New SolidColorBrush(Colors.White)
 	Me.selectedPointMark.Shape = MarkerShape.Circle
 	End Sub
-	{{endregion}}
-
-
+```
 
 The snapshot below shows the result:
 ![{{ site.framework_name }} RadChart  ](images/RadChart_HowToHighlightedPointMark_01.png)

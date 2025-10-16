@@ -34,13 +34,13 @@ The example will use the tooltips of the minimize, maximize, and close buttons o
 
 Create a new __.resx__ file that will contain the localized strings for the tooltips of the minimize, restore, maximize, and close buttons. Then, assign it to the `ResourceManager` property of the `LocalizationManager` class as shown [here]({%slug common-localization%}#localization-using-resourcemanager).
 
-#### __[C#] Setting a new .resx file to the ResourceManager property of the LocalizationManager__
-{{region kb-common-localizableresourceextension-0}}
+__Setting a new .resx file to the ResourceManager property of the LocalizationManager__
+```C#
     LocalizationManager.Manager = new LocalizationManager()
     {
         ResourceManager = MyResources.ResourceManager
     };
-{{endregion}}
+```
 
 __English translation for the tooltips texts__
 
@@ -52,8 +52,8 @@ __German translation for the tooltips texts__
 
 To apply the `LocalizableResourceExtension` markup extension on the buttons' `ToolTip` instances, extract the default `ControlTemplate` of the `RadWindow` element.
 
-#### __[XAML] Default ControlTemplate of the RadWindow control for the Windows 11 theme__
-{{region kb-common-localizableresourceextension-1}}
+__Default ControlTemplate of the RadWindow control for the Windows 11 theme__
+```XAML
     <Style TargetType="telerik:RadWindow" BasedOn="{StaticResource RadWindowStyle}">
         <Setter Property="Template">
             <Setter.Value>
@@ -234,12 +234,12 @@ To apply the `LocalizableResourceExtension` markup extension on the buttons' `To
             </Setter.Value>
         </Setter>
     </Style>
-{{endregion}}
+```
 
 Locate the `ToolTipService.ToolTip` attached properties on the `RadButton` instances for the minimize, restore, maximize, and close behavior. Then, you can use the LocalizableResourceExtension markup extension to set the custom localizable string.
 
-#### __[XAML] Using the LocalizableResourceExtension markup extension on the tooltips for the buttons of RadWindow__
-{{region kb-common-localizableresourceextension-2}}
+__Using the LocalizableResourceExtension markup extension on the tooltips for the buttons of RadWindow__
+```XAML
     <!--Rest of the default ControlTemplate implementation of RadWindow-->
     <StackPanel x:Name="HeaderButtons" Orientation="Horizontal">
         <telerik:RadButton x:Name="PART_MinimizeButton"
@@ -284,7 +284,7 @@ Locate the `ToolTipService.ToolTip` attached properties on the `RadButton` insta
         </telerik:RadButton>
     </StackPanel>
     <!--Rest of the default ControlTemplate implementation of RadWindow-->
-{{endregion}}
+```
 
 __Enabled dynamic localization on the RadWindow's buttons' tooltips__
 

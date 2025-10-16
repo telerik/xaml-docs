@@ -24,17 +24,15 @@ Below you can see the result of delete operation over the selected RadDiagramIte
 
 You can remove RadDiagramItems in code behind by using the __RadDiagram.Items__ collection and its __Remove()__ or __RemoveAt()__ methods:
 
-#### __C#__
-{{region raddiagrams-features-delete-0}}
+
+```C#
 	this.diagram.Items.RemoveAt(3);
 	this.diagram.Items.Remove(this.diagram.SelectedItems);
-{{endregion}}
-
-#### __VB.NET__
-{{region raddiagrams-features-delete-1}}
+```
+```VB.NET
 	Me.diagram.Items.RemoveAt(3)
 	Me.diagram.Items.Remove(Me.diagram.SelectedItems)
-{{endregion}}
+```
 
 ## Delete with DiagramCommands
 

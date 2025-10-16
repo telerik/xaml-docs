@@ -34,8 +34,8 @@ To create an image from a WPF control, the control should be measured and arrang
 
 The export iself, can be done with [ExportExtensions.ExportToImage]({%slug common-export-support%}) method.
 
-#### __[C#]__
-{{region kb-barcode-export-to-image-0}}
+
+```C#
 	public static void SaveQRCodeImage(string text)
 	{
 		var barcode = new RadBarcode();
@@ -64,4 +64,4 @@ The export iself, can be done with [ExportExtensions.ExportToImage]({%slug commo
 	//--------------
 
 	SaveQRCodeImage("https://docs.telerik.com/devtools/wpf/controls/radbarcode/barcode-getting-started");
-{{endregion}}
+```

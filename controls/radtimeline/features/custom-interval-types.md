@@ -18,8 +18,8 @@ The __Intervals__ collection contains items of type __IntervalBase__. That is wh
 
 The example below shows how you can add a custom interval type to the Intervals collection of a RadTimeline control:
 
-#### __XAML__
-{{region radtimeline-features-custom-interval-types-0}}
+
+```XAML
 	<telerik:RadTimeline PeriodStart="2011-01-01"
 						 PeriodEnd="2012-01-01">
 		<telerik:RadTimeline.Intervals>
@@ -27,7 +27,7 @@ The example below shows how you can add a custom interval type to the Intervals 
 			<telerik:MonthInterval />
 		</telerik:RadTimeline.Intervals>
 	</telerik:RadTimeline>
-{{endregion}}
+```
 	
 ## The IntervalBase class
 
@@ -39,8 +39,8 @@ A custom interval is a class that inherits the __IntervalBase__ class and implem
 
 Below you can find a sample custom interval implementation:
 
-#### __C#__
-{{region radtimeline-features-custom-interval-types-1}}
+
+```C#
 	using Telerik.Windows.Controls.TimeBar;
 	public class CustomInterval : IntervalBase
 	{
@@ -96,10 +96,8 @@ Below you can find a sample custom interval implementation:
 			return firstMonthOfInterval;
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radtimeline-features-custom-interval-types-2}}
+```
+```VB.NET
 	Imports Telerik.Windows.Controls.TimeBar
 	Public Class CustomInterval
 		Inherits IntervalBase
@@ -141,7 +139,7 @@ Below you can find a sample custom interval implementation:
 			Return firstMonthOfInterval
 		End Function
 	End Class
-{{endregion}}
+```
 
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/Timeline/WPF/CustomIntervalTypes).
 

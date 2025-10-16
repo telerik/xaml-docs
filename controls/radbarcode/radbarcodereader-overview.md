@@ -19,11 +19,11 @@ When decoding a barcode image, the control will either display the type and text
 
 And here is the XAML that produces the result:        
 
-#### __[XAML] Example 1: Barcode reader definition__  
-{{region xaml-radbarcodereader-overview-0}}
+__Example 1: Barcode reader definition__  
+```XAML
 	<!--The values below are the default ones, so you do not need to specify them-->
 	<telerik:RadBarcodeReader OpenButtonText="Choose Image" DecodeButtonText="Decode Image"/>
-{{endregion}}
+```
 
 The Choose Image button lets the user choose an image path, to the image which will be decoded. The Decode Image triggers the decoding algorithm. The underlying text area is updated with the result of the decoding process.        
 
@@ -48,9 +48,9 @@ The class also exposes a **DecodingComplete** event which is fired once the deco
 
 **Example 2** demonstrates how you can use the BarcodeDecoder class.
 
-#### __[C#] Example 2: Decoding an image with the BarcodeDecoder__
+__Example 2: Decoding an image with the BarcodeDecoder__
 
-{{region cs-radbarcodereader-overview-1}}
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 		var imageUri = new Uri("../../barcode.jpg", UriKind.Relative);
@@ -74,11 +74,8 @@ The class also exposes a **DecodingComplete** event which is fired once the deco
 			decodeResult = e.ErrorMessage;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Decoding an image with the BarcodeDecoder__
-
-{{region vb-radbarcodereader-overview-2}}
+```
+```VB.NET
 	Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Dim imageUri = New Uri("../../barcode.jpg", UriKind.Relative)
 		Dim imageSource = New BitmapImage(imageUri)
@@ -97,7 +94,7 @@ The class also exposes a **DecodingComplete** event which is fired once the deco
 			decodeResult = e.ErrorMessage
 		End If
 	End Sub
-{{endregion}}
+```
 
 ## Decoded Types
 
@@ -139,24 +136,22 @@ In addition, the following values can also be set:
 * **HeightModulated1D**: All height-modulated 1D barcodes.
 * **TwoDimensional**: All 2D barcodes.
 
-#### __[XAML] Example 3: Specify DecodeTypes of RadBarcodeReader__  
-{{region xaml-radbarcodereader-overview-3}}
+__Example 3: Specify DecodeTypes of RadBarcodeReader__  
+```XAML
 	<telerik:RadBarcodeReader DecodeTypes="Code11,Code39Extended,Codebar" />
-{{endregion}}
+```
 
 If you're using the **BarcodeDecoder** class to decode the barcode, similarly, you can use its **DecodeTypes** property to predefine the barcode types to be decoded.
 
-#### __[C#] Example 4: Specify DecodeTypes of BarcodeDecoder__  
-{{region cs-radbarcodereader-overview-4}}
+__Example 4: Specify DecodeTypes of BarcodeDecoder__  
+```C#
 	BarcodeDecoder decoder = new BarcodeDecoder();
 	decoder.DecodeTypes = BarcodeType.HeightModulated1D | BarcodeType.TwoDimensional;
-{{endregion}}
-
-#### __[VB.NET] Example 4: Specify DecodeTypes of BarcodeDecoder__  
-{{region vb-radbarcodereader-overview-4}}	
+```
+```VB.NET	
 	Dim decoder As New BarcodeDecoder()
 	decoder.DecodeTypes = BarcodeType.HeightModulated1D Or BarcodeType.TwoDimensional
-{{endregion}}
+```
 
 ## See Also
 

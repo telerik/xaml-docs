@@ -53,8 +53,8 @@ The __BingRestRouteRequest__ object provides __Options__ property of type __Bing
 	* __All__: Minimizes __(tries to avoid)__ the use of highways in the route.
 	* __RouteSummariesOnly__: Minimizes __(tries to avoid)__ the use of toll roads in the route.
 
-#### __[XAML] Example 1: Defining BingRestMapProvider XAML__
-{{region xaml-radmap-features-providers-bing-rest-map-provider-search-location_0}}	
+__Example 1: Defining BingRestMapProvider XAML__
+```XAML	
 	<telerik:RadMap x:Name="myMap">
 		<telerik:RadMap.Provider>
 			<telerik:BingRestMapProvider ApplicationId="Bing_Key" 
@@ -67,10 +67,10 @@ The __BingRestRouteRequest__ object provides __Options__ property of type __Bing
 									UseBitmapCache="False"/>
 		<telerik:VisualizationLayer Name="wayPointsLayer"/>
 	</telerik:RadMap>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Defining BingRestRouteRequest object__
-{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_1}}	
+__Example 2: Defining BingRestRouteRequest object__
+```C#	
 		private LocationCollection wayPoints = new LocationCollection();
         public BingRestRouteRequest request { get; set; }
         public MainWindow()
@@ -87,10 +87,8 @@ The __BingRestRouteRequest__ object provides __Options__ property of type __Bing
         {
             MessageBox.Show(e.Error.ToString());
         }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining BingRestRouteRequest object__
-{{region vb-radmap-features-providers-bing-rest-map-provider-search-location_2}}	
+```
+```VB.NET	
 	Private wayPoints As New LocationCollection()
 	Private request As BingRestRouteRequest
 	Public Sub New()
@@ -107,14 +105,14 @@ The __BingRestRouteRequest__ object provides __Options__ property of type __Bing
 	Private Sub BingRestMapProvider_CalculateRouteError(sender As Object, e As BingRestCalculateRouteErrorEventArgs)
 		MessageBox.Show(e.Error.ToString)
 	End Sub
-{{endregion}}
+```
 	
 ## Executing Routing
 	
 In order to execute a routing action you have to call the __CalculateRouteAsync()__ method of the __BingRestMapProvider__ and pass a __BingRestRouteRequest__ object as its argument. The __BingRestRouteRequest__ should contain the points which should take part in the desired order. To pass the location points to the request argument just use its __Waypoints__ property.
 	
-#### __[C#] Example 4: Calling the CalculateRouteAsync() methods__
-{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_3}}	
+__Example 4: Calling the CalculateRouteAsync() methods__
+```C#	
 	 private LocationCollection wayPoints = new LocationCollection();
         public BingRestRouteRequest request { get; set; }
         public MainWindow()
@@ -131,10 +129,8 @@ In order to execute a routing action you have to call the __CalculateRouteAsync(
             }
             this.restProvider.CalculateRouteAsync(request);
         }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Calling the CalculateRouteAsync() methods__
-{{region vb-radmap-features-providers-bing-rest-map-provider-search-location_4}}	
+```
+```VB.NET	
 	Private wayPoints As New LocationCollection()
     Private request As BingRestRouteRequest
     Public Sub New()
@@ -157,7 +153,7 @@ In order to execute a routing action you have to call the __CalculateRouteAsync(
     Private Sub BingRestMapProvider_CalculateRouteError(sender As Object, e As BingRestCalculateRouteErrorEventArgs)
         MessageBox.Show(e.Error.ToString)
     End Sub
-{{endregion}}
+```
 
 ## Routing Result	
 	
@@ -165,8 +161,8 @@ The result from the routing services is held by the Route object inside the __Bi
 		
 To get the result you have to access the Points collection of the __Telerik.Windows.Controls.DataVisualization.Map.BingRest.RoutePath__ object. In __Example 5__ the result is displayed by a PolylineData via the RadMap's visualization layer.	
 
-#### __[C#] Example 5: Handling the CalculateRouteCompleted event__
-{{region cs-radmap-features-providers-bing-rest-map-provider-search-location_5}}		
+__Example 5: Handling the CalculateRouteCompleted event__
+```C#		
 	private void BingRestMapProvider_CalculateRouteCompleted(object sender, BingRestRoutingCompletedEventArgs e)
 	{          
 		Telerik.Windows.Controls.DataVisualization.Map.BingRest.Route route = e.Route;
@@ -201,10 +197,8 @@ To get the result you have to access the Points collection of the __Telerik.Wind
 		};
 		return routeLine;
 	}	
-{{endregion}}
-	
-#### __[VB.NET] Example 5: Handling the CalculateRouteCompleted event__
-{{region vb-radmap-features-providers-bing-rest-map-provider-search-location_6}}	
+```
+```VB.NET	
 	Private Sub BingRestMapProvider_CalculateRouteCompleted(sender As Object, e As BingRestRoutingCompletedEventArgs)
         Dim route As Telerik.Windows.Controls.DataVisualization.Map.BingRest.Route = e.Route
         If route IsNot Nothing Then
@@ -232,7 +226,7 @@ To get the result you have to access the Points collection of the __Telerik.Wind
         routeLine.ShapeFill = shapeFill
         Return routeLine
     End Function
-{{endregion}}	
+```	
 	
 ## See Also
  * [Providers Overview] ({%slug radmap-features-providers%})

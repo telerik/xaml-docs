@@ -12,8 +12,8 @@ position: 4
 
 This article describes how you can control the __RadTileView__ animations. By default the animations are enabled. This can be changed using the __IsItemsAnimationEnabled__ property.
 
-#### __[XAML] Example 1: Disabling the animations__
-{{region radtileview-animation-0}}
+__Example 1: Disabling the animations__
+```XAML
 	<telerik:RadTileView IsItemsAnimationEnabled="False">
 		<telerik:RadTileViewItem Header="Item 1" />
 		<telerik:RadTileViewItem Header="Item 2" />
@@ -22,7 +22,7 @@ This article describes how you can control the __RadTileView__ animations. By de
 		<telerik:RadTileViewItem Header="Item 5" />
 		<telerik:RadTileViewItem Header="Item 6" />
 	</telerik:RadTileView>	
-{{endregion}}
+```
 
 There are two different animations available with the control.
 
@@ -30,26 +30,26 @@ There are two different animations available with the control.
 
 It occurs when items are swapped using drag. Or when the __Position__ property's value of a __RadTileViewItem__ is changed. The __RadTileView__ control allows you to change the animation duration and easing function. To do that use the __ReorderingDuration__ and __ReorderingEasing__ properties. 
 
-#### __[XAML] Example 2: Setting animation duration__
-{{region radtileview-animation-1}}
+__Example 2: Setting animation duration__
+```XAML
 	<telerik:RadTileView ReorderingDuration="0:0:2">
-{{endregion}}
+```
 
-#### __[C#] Example 3: Setting animation duration in code__
-{{region radtileview-animation-2}}
+__Example 3: Setting animation duration in code__
+```C#
 	tileview.ReorderingDuration = TimeSpan.FromSeconds(2);
-{{endregion}}
+```
 
 The __ReorderingEasing__ property is of type __IEasingFunction__ which means that you can use any of the easing functions provided by the {{ site.framework_name }} framework or create a custom one.
 
-#### __[XAML] Example 4: Setting animation easing__
-{{region radtileview-animation-3}}
+__Example 4: Setting animation easing__
+```XAML
 	<telerik:RadTileView>
 		<telerik:RadTileView.ReorderingEasing>
 			<BackEase />
 		</telerik:RadTileView.ReorderingEasing>            
 	</telerik:RadTileView>
-{{endregion}}
+```
 	
 ## Resizing animation
 

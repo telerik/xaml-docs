@@ -29,8 +29,8 @@ res_type: kb
 
 The palette settings are not working if you apply them just before openning a [RadSplashScreen]({%slug radsplashscreen-getting-started%}) in the App's OnStartup override. The following code snippet shows this setup.
 
-#### __[C#]__
-{{region kb-splashscreen-palette-settings-not-working-0}}
+
+```C#
 	protected override void OnStartup(StartupEventArgs e)
     {
 		StyleManager.ApplicationTheme = new FluentTheme();
@@ -42,14 +42,14 @@ The palette settings are not working if you apply them just before openning a [R
 		// show window here
 		RadSplashScreenManager.Close();
 	}
-{{endregion}}
+```
 
 ## Solution
 
 To resolve this, create a UserControl that hosts RadSplashScreen instance and apply the platte settings in the constructor of the UserControl. Then use the [generic Show method]({%slug radsplashscreen-getting-started%}#showing-custom-user-control-in-the-splash-screen) in order to display it.
 
-#### __[XAML]__
-{{region kb-splashscreen-palette-settings-not-working-1}}
+
+```XAML
 	<UserControl x:Class="WpfApp1.SplashScreenUserControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -76,10 +76,10 @@ To resolve this, create a UserControl that hosts RadSplashScreen instance and ap
 								 IsIndeterminate="{Binding IsIndeterminate}"
 								 ProgressBarVisibility="{Binding IsProgressBarVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
 	</UserControl>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-splashscreen-palette-settings-not-working-1}}
+
+```C#
 	public partial class SplashScreenUserControl : UserControl
     {
         public SplashScreenUserControl()
@@ -89,10 +89,10 @@ To resolve this, create a UserControl that hosts RadSplashScreen instance and ap
             InitializeComponent();
         }
     }
-{{endregion}}
+```
 
-#### __[C#]__
-{{region kb-splashscreen-palette-settings-not-working-2}}
+
+```C#
 	protected override void OnStartup(StartupEventArgs e)
     {
 		StyleManager.ApplicationTheme = new FluentTheme();		
@@ -101,7 +101,7 @@ To resolve this, create a UserControl that hosts RadSplashScreen instance and ap
 		// show window here
 		RadSplashScreenManager.Close();
 	}
-{{endregion}}
+```
 
 ## See Also  
 * [Fluent Theme]({%slug common-styling-appearance-fluent-theme%})

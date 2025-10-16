@@ -11,13 +11,7 @@ site_name: WPF
 
 # Setting a Theme with StyleManager
 
-This help article will show you how to set a built-in theme to Telerik UI for WPF. You will also see code examples for these related topics:      
-
-* [Setting Instance-Specific Built-in Theme in XAML](#setting-instance-specific-built-in-theme-in-xaml)
-
-* [Setting Instance-Specific Built-in Theme in the Code-Behind](#setting-instance-specific-built-in-theme-in-the-code-behind)
-
-* [Setting Application-Wide Built-in Theme in the Code-Behind](#setting-application-wide-built-in-theme-in-the-code-behind)
+This help article will show you how to set a built-in theme to Telerik UI for WPF. 
 
 See the Telerik themes in the [Avilable Themes]({%slug common-styling-appearance-available-themes%}) article.
 
@@ -27,22 +21,20 @@ In order to use one of the themes with the StyleManager you need to add referenc
 
 In order to change the theme of a single control in XAML you need to set the `StyleManager.Theme` attached property.
 
-#### __[XAML] Changing the theme of a RadSlider to Windows11 in XAML__  
-{{region common-styling-apperance-setting-theme-wpf_0}}	
+__Changing the theme of a RadSlider to Windows11 in XAML__  
+```XAML	
 	<telerikControls:RadSlider telerikControls:StyleManager.Theme="Windows11"/>	
-{{endregion}}
+```
 
 The following example shows how to change the theme of a single control in code-behind. 
 
-#### __[C#] Changing the theme of a RadSlider to Windows11 in code__  
-{{region common-styling-apperance-setting-theme-wpf_1}}
+__Changing the theme of a RadSlider to Windows11 in code__  
+```C#
 	StyleManager.SetTheme(this.radSlider, new Windows11Theme() );
-{{endregion}}
-
-#### __[VB.NET] Changing the theme of a RadSlider to Windows11 in code__  
-{{region common-styling-apperance-setting-theme-wpf_2}}
+```
+```VB.NET
 	StyleManager.SetTheme(Me.radSlider, New Windows11Theme())
-{{endregion}}
+```
 
 __RadSlider with Windows11 theme applied__  
 
@@ -52,8 +44,8 @@ __RadSlider with Windows11 theme applied__
 
 Changing the application theme is similar to changing the theme of single controls in WPF. However, changing the application theme has a much bigger impact as it affects all controls in the scope of your application. You can use the constructor of your application or the main window to set the desired theme. 
 
-#### __[C#] Set application-specific theme in the MainWindow constructor__  
-{{region common-styling-apperance-setting-theme-wpf_3}}
+__Set application-specific theme in the MainWindow constructor__  
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -62,10 +54,8 @@ Changing the application theme is similar to changing the theme of single contro
 			InitializeComponent();
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Set application-specific theme in the MainWindow constructor__  
-{{region common-styling-apperance-setting-theme-wpf_4}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 		Inherits Window
 		Public Sub New()
@@ -73,19 +63,17 @@ Changing the application theme is similar to changing the theme of single contro
 			InitializeComponent()
 		End Sub
 	End Class
-{{endregion}}
+```
 
-#### __[C#] Set application-specific theme in the App constructor__  
-{{region common-styling-apperance-setting-theme-wpf_5}}	
+__Set application-specific theme in the App constructor__  
+```C#	
 	public App()
 	{
 		StyleManager.ApplicationTheme = new Windows11Theme();
 		InitializeComponent();
 	}
-{{endregion}}
-
-#### __[VB.NET] Set application-specific theme in the App constructor__  
-{{region common-styling-apperance-setting-theme-wpf_6}}
+```
+```VB.NET
 	Public Class App
 		Inherits Application
 		Public Sub New()
@@ -93,7 +81,7 @@ Changing the application theme is similar to changing the theme of single contro
 			InitializeComponent()
 		End Sub
 	End Class
-{{endregion}}
+```
 	
 ## See Also
  * [Setting a Theme (Using Implicit Styles)]({%slug styling-apperance-implicit-styles-overview%})

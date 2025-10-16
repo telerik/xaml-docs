@@ -26,11 +26,11 @@ You can use either of the following methods:
 
 * Set the __ColumnWidth__ property of RadGridView to "__*__"
 
-#### __XAML__
 
-{{region xaml-gridview-troubleshooting-additional-column_0}}
+
+```XAML
 	<telerik:RadGridView ItemsSource="{Binding Clubs}" ColumnWidth="*" />
-{{endregion}}
+```
 
 The result would be:
 
@@ -38,13 +38,13 @@ The result would be:
 
 * Set the __Width__ of any of the columns to "__*__"
 
-#### __XAML__
 
-{{region xaml-gridview-troubleshooting-additional-column_1}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding StadiumCapacity}" 
 	            Header="Stadium" 
 	            Width="*"/>
-{{endregion}}
+```
 
 Now, the result would be:
 

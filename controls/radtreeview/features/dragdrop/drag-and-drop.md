@@ -14,8 +14,8 @@ The Telerik __RadTreeView__ control enhances further your application's capabili
 
 The following example shows a basic RadTreeView definition and enabled drag/drop feature. To enable the drag and drop, set the __IsDragDropEnabled__ property to True.
 
-#### __[XAML] Example 1: Enabling the drag and drop feature__
-{{region radtreeview-features-drag-and-drop-0}}
+__Example 1: Enabling the drag and drop feature__
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" IsDragDropEnabled="True">
 	    <telerik:RadTreeViewItem Header="Sport Categories">
 	        <telerik:RadTreeViewItem Header="Football">
@@ -32,25 +32,23 @@ The following example shows a basic RadTreeView definition and enabled drag/drop
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-{{endregion}}
+```
 
 #### Figure 1: Drag drop in action
 ![{{ site.framework_name }} RadTreeView Drag drop in action](images/RadTreeView-DragDrop-PreviewLine.png)
 
-#### __[C#] Example 2: Enabling the Drag/Drop functionality in code-behind__  
-{{region radtreeview-features-drag-and-drop-1}}
+__Example 2: Enabling the Drag/Drop functionality in code-behind__  
+```C#
 	private void EnableDragAndDrop()
 	{
 		radTreeView.IsDragDropEnabled = true;
 	}
-{{endregion}}
-	
-#### __[VB.NET] Example 2: Enable the Drag/Drop functionality in code-behind__  
-{{region radtreeview-features-drag-and-drop-2}}
+```
+```VB.NET
 	Private Sub EnableDragAndDrop()
 	    radTreeView.IsDragDropEnabled = True
 	End Sub
-{{endregion}}
+```
 
 >tip In data binding scenario it is recommended to assign an INotifyCollectionChanged implementation (like ObservableCollection&lt;T&gt;) to the ItemsSource of RadTreeView. Otherwise, the drag/drop actions won't be reflected properly in the UI. Additionally, the __ItemsSource__ of the treeview items where drag/drop action will happen should be initialized. In case, the corresponding ItemsSource is null, the drop action won't get executed. Also, if the ItemsSource of RadTreeView or RadTreeViewItem is not an __IList__ implementation, then the drop operation is not allowed.
 
@@ -58,27 +56,25 @@ The following example shows a basic RadTreeView definition and enabled drag/drop
 
 The drag operation is based on the selected items in RadTreeView. To enable dragging of multiple items you will need to enable the multiple selection feature. To do so, set the __SelectionMode__ property of RadTreeView to __Multiple__  or __Extended__. 
 
-#### __[XAML] Example 3: Turn on multi-selection__  
-{{region radtreeview-features-drag-and-drop-3}}
+__Example 3: Turn on multi-selection__  
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" 
 						 IsDragDropEnabled="True" 
 						 SelectionMode="Multiple">
-{{endregion}}
+```
 
-#### __[C#] Example 4: Turn on multi-selection in code-behind__  
-{{region radtreeview-features-drag-and-drop-4}}
+__Example 4: Turn on multi-selection in code-behind__  
+```C#
 	private void EnableDragOfMultipleNodes()
 	{
 	    radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: Turn on multi-selection in code-behind__  
-{{region radtreeview-features-drag-and-drop-5}}
+```
+```VB.NET
 	Private Sub EnableDragOfMultipleNodes()
 	    radTreeView.SelectionMode = Telerik.Windows.Controls.SelectionMode.Multiple
 	End Sub
-{{endregion}}
+```
 
 #### Figure 2: Dragging multiple items
 ![Rad Tree View-Drag Drop-Multiple Drag](images/RadTreeView-DragDrop-MultipleDrag.png)
@@ -103,8 +99,8 @@ In order for the drag and drop to work automatically the treeviews should work d
 
 The following example shows how to use the feature with two RadTreeView instances.
 
-#### __[XAML] Example 5: Define two RadTreeView controls__  
-{{region radtreeview-features-drag-and-drop-6}}
+__Example 5: Define two RadTreeView controls__  
+```XAML
 	<Grid>	
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition/>
@@ -143,7 +139,7 @@ The following example shows how to use the feature with two RadTreeView instance
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
 	</Grid>
-{{endregion}}
+```
 
 #### Figure 3: Dragging items between two treeviews 
 ![Rad Tree View-Drag Drop-Tree To Tree](images/RadTreeView-DragDrop-TreeToTree.png)

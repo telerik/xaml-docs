@@ -22,8 +22,8 @@ The Label Filter dialog show through the RadPivotFieldList (part of RadPivotGrid
 
 To resolve this, you need to enable keyboard input in WPF dialog opened in the WinForms application. This is done by calling the `ElementHost.EnableModelessKeyboardInterop` static method with the opened WPF Window instance.
 
-#### __[C#]__
-{{region kb-pivotgrid-enable-keyboard-input-in-winforms-0}}
+
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -39,4 +39,4 @@ To resolve this, you need to enable keyboard input in WPF dialog opened in the W
 			ElementHost.EnableModelessKeyboardInterop(window);
 		}
 	}
-{{endregion}}
+```

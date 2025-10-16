@@ -16,8 +16,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 
 * __Background__: Modifies the color of the progress track.						
 
-	#### __[XAML] Example 1: Setting a yellow background in XAML__
-	{{region xaml-radprogressbar-changing-colors_0}}
+	__Example 1: Setting a yellow background in XAML__
+	```XAML
 		<UserControl.Resources>
 			<Style x:Key="myStyle" TargetType="telerik:RadProgressBar">
 				<Setter Property="Background" Value="Yellow" />
@@ -29,10 +29,10 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 			<!-- Set Background directly -->
 			<telerik:RadProgressBar Background="Yellow" />
 		</Grid>
-	{{endregion}}
+	```
 
-	#### __[C#] Example 2: Setting a yellow background in code-behind__
-	{{region cs-radprogressbar-changing-colors_1}}
+	__Example 2: Setting a yellow background in code-behind__
+	```C#
 		RadProgressBar myProgressBar = new RadProgressBar();
 		// Set Background directly 
 		myProgressBar.Background = new SolidColorBrush(Colors.Yellow);
@@ -40,11 +40,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		Style myStyle = new Style(typeof(RadProgressBar));
 		myStyle.Setters.Add(new Setter(RadProgressBar.BackgroundProperty, new SolidColorBrush(Colors.Yellow)));
 		myProgressBar.Style = myStyle;
-	{{endregion}}
-
-	#### __[VB.NET] Example 2: Setting a yellow background in code-behind__
-
-	{{region vb-radprogressbar-changing-colors_2}}
+	```
+	```VB.NET
 		Dim myProgressBar As New RadProgressBar()
 		' Set Background directly '
 		myProgressBar.Background = New SolidColorBrush(Colors.Yellow)
@@ -52,7 +49,7 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		Dim myStyle As New Style(GetType(RadProgressBar))
 		myStyle.Setters.Add(New Setter(RadProgressBar.BackgroundProperty, New SolidColorBrush(Colors.Yellow)))
 		myProgressBar.Style = myStyle			
-	{{endregion}}
+	```
 
 	Here is how the control looks before and after the change of the __Background__ property:
 
@@ -66,8 +63,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 
 * __Foreground__: Modifies the color of the progress indicator.						
 
-	#### __[XAML] Example 3: Setting a yellow indicator in XAML__
-	{{region xaml-radprogressbar-changing-colors_3}}
+	__Example 3: Setting a yellow indicator in XAML__
+	```XAML
 		<Style x:Key="myStyle2" TargetType="telerik:RadProgressBar">
 			<Setter Property="Foreground" Value="Yellow" />
 		</Style>
@@ -75,10 +72,10 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		<telerik:RadProgressBar Value="50" Style="{StaticResource myStyle2}" />
 		<!--  Set Foreground directly  -->
 		<telerik:RadProgressBar Value="50" Foreground="Yellow" />
-	{{endregion}}
+	```
 
-	#### __[C#] Example 4: Setting a yellow indicator in code-behind__
-	{{region cs-radprogressbar-changing-colors_4}}
+	__Example 4: Setting a yellow indicator in code-behind__
+	```C#
 		// Set Foreground directly
 		myProgressBar.Foreground = new SolidColorBrush(Colors.Yellow);
 		// Set Foreground using a Style
@@ -86,10 +83,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myStyle2.Setters.Add(new Setter(RadProgressBar.ForegroundProperty, new SolidColorBrush(Colors.Yellow)));
 		myProgressBar.Value = 50;
 		myProgressBar.Style = myStyle2;
-	{{endregion}}
-
-	#### __[VB.NET] Example 4: Setting a yellow indicator in code-behind__
-	{{region vb-radprogressbar-changing-colors_5}}
+	```
+	```VB.NET
 		' Set Foreground directly'
 		myProgressBar.Foreground = New SolidColorBrush(Colors.Yellow)
 		' Set Foreground using a Style'
@@ -97,7 +92,7 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myStyle2.Setters.Add(New Setter(RadProgressBar.ForegroundProperty, New SolidColorBrush(Colors.Yellow)))
 		myProgressBar.Value = 50
 		myProgressBar.Style = myStyle2
-	{{endregion}}	
+	```	
 		
 	Here is how the control looks before and after the change of the __Foreground__ property:
 
@@ -111,8 +106,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 
 * __BorderBrush__: Modifies the color of the RadProgressBar outer border.					
 
-	#### __[XAML] Example 5: Setting a red border brush in XAML__
-	{{region xaml-radprogressbar-changing-colors_6}}
+	__Example 5: Setting a red border brush in XAML__
+	```XAML
 		<Style x:Key="myStyle3" TargetType="telerik:RadProgressBar">
 			<Setter Property="BorderBrush" Value="Red" />
 		</Style>
@@ -120,10 +115,10 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		<telerik:RadProgressBar Value="50" Style="{StaticResource myStyle3}" />
 		<!--  Set BorderBrush directly  -->
 		<telerik:RadProgressBar Value="50" BorderBrush="Red" />
-	{{endregion}}
+	```
 
-	#### __[C#] Example 6: Setting a red border brush in code-behind__
-	{{region cs-radprogressbar-changing-colors_7}}
+	__Example 6: Setting a red border brush in code-behind__
+	```C#
 		// Set BorderBrush  directly
 		myProgressBar.BorderBrush = new SolidColorBrush(Colors.Red);
 		// Set BorderBrush using a Style
@@ -131,10 +126,8 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myStyle3.Setters.Add(new Setter(RadProgressBar.BorderBrushProperty, new SolidColorBrush(Colors.Red)));
 		myProgressBar.Value = 50;
 		myProgressBar.Style = myStyle3;
-	{{endregion}}
-
-	#### __[VB.NET] Example 6: Setting a red border brush in code-behind__
-	{{region vb-radprogressbar-changing-colors_8}}
+	```
+	```VB.NET
 		' Set BorderBrush  directly'
 		myProgressBar.BorderBrush = New SolidColorBrush(Colors.Red)
 		' Set BorderBrush using a Style'
@@ -142,14 +135,14 @@ This article will demonstrate a few examples of using RadProgressBar's propertie
 		myStyle3.Setters.Add(New Setter(RadProgressBar.BorderBrushProperty, New SolidColorBrush(Colors.Red)))
 		myProgressBar.Value = 50;
 		myProgressBar.Style = myStyle3
-	{{endregion}}
+	```
 	
-	Here is how the control looks before and after the change of the __BorderBrush__ property:
-	
-	*Before:*
-	
-	![Rad Progress Bar default](images/RadProgressBar_default.png)
-	
-	*After:*
-	
-	![Rad Progress Bar red border](images/RadProgressBar_red_border.png)
+Here is how the control looks before and after the change of the __BorderBrush__ property:
+
+*Before:*
+
+![Rad Progress Bar default](images/RadProgressBar_default.png)
+
+*After:*
+
+![Rad Progress Bar red border](images/RadProgressBar_red_border.png)

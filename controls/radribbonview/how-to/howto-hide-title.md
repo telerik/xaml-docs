@@ -16,23 +16,20 @@ The __RadRibbonView__'s API allows you to hide the __Title__ bar of your ribbon 
 
 In order to do this, you need to set the __RadRibbonView__'s __TitleBarVisibility__ property to __Visibility.Collapsed__.
 
-#### __XAML__
 
-{{region radribbonview-howto-hide-title_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="xRibbonView" TitleBarVisibility="Collapsed" />
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radribbonview-howto-hide-title_1}}
+
+```C#
 	xRibbonView.TitleBarVisibility = Visibility.Collapsed;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radribbonview-howto-hide-title_2}}
+```
+```VB.NET
 	xRibbonView.TitleBarVisibility = Visibility.Collapsed;
-{{endregion}}
+```
 
 The result is shown on the next image - the title is hidden.
 ![Rad Ribbon View How To Hide The Title](images/RadRibbonView_HowTo_HideTheTitle.png)

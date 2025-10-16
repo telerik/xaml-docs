@@ -29,14 +29,14 @@ When the document is not modified, the command saves the original file stream wi
 Similarly to the other commands of **RadPdfViewer**, the **SaveAsCommand** can be wired to the UI using its [command descriptor]({%slug radpdfviewer-command-descriptors%}). **Example 1** shows how you can set up a button to execute the save operation when clicked.
  
 #### [XAML] Example 1: Wiring SaveAsCommand to UI
-{{region radpdfviewer-save-as_0}}
+```XAML
 	<telerik:RadButton Command="{Binding SaveAsCommandDescriptor.Command}" Visibility="{Binding SaveAsCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" >
 	    <ToolTipService.ToolTip>
 	        <TextBlock Text="Save As" />
 	    </ToolTipService.ToolTip>
 	    <Image Source="{telerik:IconResource IconRelativePath=save.png, IconSources={StaticResource IconPaths}}" Stretch="None" />
 	</telerik:RadButton>
-{{endregion}}
+```
 
 #### Figure 1: Save As button in RadPdfViewer's toolbar
 ![{{ site.framework_name }} RadPdfViewer Save As button in RadPdfViewer's toolbar](images/PdfViewer_SaveAs_2.png)
@@ -48,10 +48,10 @@ You can invoke the SaveAsCommand from your code as well. **Example 2** shows how
 
  
 #### [C#] Example 2: Invoking SaveAsCommand
-{{region radpdfviewer-save-as_1}}
+```C#
 
 	this.pdfViewer.CommandDescriptors.SaveAsCommandDescriptor.Command.Execute(null);
-{{endregion}}
+```
 {% endif %}
 
 
@@ -60,10 +60,10 @@ You can invoke the SaveAsCommand from your code as well. **Example 2** shows how
 The **SaveAsCommand** always shows a dialog to the users so they can choose a location to save the file to. If you would like to save the document without allowing interaction with the user, you can take advantage of the **Save() method** exposed by **RadPdfViewer**. The method takes a [**Stream**](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream) as a parameter and directly saves the document of **RadPdfViewer** into this stream.
 
 #### [C#] Example 3: Using the Save() method
-{{region radpdfviewer-save-as_2}}
+```C#
 
 	 this.pdfViewer.Save(new FileStream("Sample.pdf", FileMode.CreateNew));
-{{endregion}}
+```
 
 ## See Also
 

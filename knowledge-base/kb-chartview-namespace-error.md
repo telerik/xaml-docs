@@ -38,14 +38,14 @@ This issue can be observed also if you reference the Telerik UI for WPF nuget pa
 
 To resolve this remove the *Telerik.Windows.Controls.Charting* assembly from the project references. Or use a XAML namespace that points to the Telerik.Windows.Controls.ChartView namespace.
 
-#### __XAML__
-{{region kb-chartview-namespace-error-0}}  
+
+```XAML  
 	<Window xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 		xmlns:chartView="clr-namespace:Telerik.Windows.Controls.ChartView;assembly=Telerik.Windows.Controls.Chart">
-{{endregion}}
+```
 
-#### __XAML__
-{{region kb-chartview-namespace-error-1}}
+
+```XAML
 <!-- chartView points to xmlns:chartView="clr-namespace:Telerik.Windows.Controls.ChartView;assembly=Telerik.Windows.Controls.Chart" -->
 	<telerik:RadCartesianChart.Series>
 		<chartView:LineSeries Stroke="Orange" StrokeThickness="2">
@@ -59,4 +59,4 @@ To resolve this remove the *Telerik.Windows.Controls.Charting* assembly from the
 			</chartView:LineSeries.DataPoints>
 		</chartView:LineSeries>
 	</telerik:RadCartesianChart.Series>
-{{endregion}}
+```

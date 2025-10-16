@@ -26,8 +26,8 @@ The measures allows you to show the data performance on the bullet graph control
 	
 	This value is presented by a bar that can be used to show additional information about the data.
 
-#### __[XAML] Example 1: Setting measures__
-{{region radbulletgraph-features-measures-0}}
+__Example 1: Setting measures__
+```XAML
 	<telerik:RadHorizontalBulletGraph FeaturedMeasure="40" 
 									  ComparativeMeasure="65"                                           
 									  ProjectedValue="60">
@@ -37,7 +37,7 @@ The measures allows you to show the data performance on the bullet graph control
 			<telerik:QualitativeRange Brush="#E8E8E8" Value="100"/>
 		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
 	</telerik:RadHorizontalBulletGraph>
-{{endregion}}
+```
 
 #### Figure 1: RadBulletGraph
 ![radbulletgraph-features-measures-0.png](images/radbulletgraph-features-measures-0.png)
@@ -52,8 +52,8 @@ Each measure has a corresponding brush property that allows you to set its color
 
 Additionally, you can control the thickness of the ComparativeMeasure via the __ComparativeMeasureThickness__ property.
 
-#### __[XAML] Example 2: Customizing the measure colors__
-{{region radbulletgraph-features-measures-1}}
+__Example 2: Customizing the measure colors__
+```XAML
 	<telerik:RadHorizontalBulletGraph FeaturedMeasure="40" 
 									  ComparativeMeasure="65"                                           
 									  ProjectedValue="60"									  
@@ -67,7 +67,7 @@ Additionally, you can control the thickness of the ComparativeMeasure via the __
 			<telerik:QualitativeRange Brush="#E8E8E8" Value="100"/>
 		</telerik:RadHorizontalBulletGraph.QualitativeRanges>
 	</telerik:RadHorizontalBulletGraph>
-{{endregion}}
+```
 
 #### Figure 2: Customized measure colors
 ![radbulletgraph-features-measures-1.png](images/radbulletgraph-features-measures-1.png)

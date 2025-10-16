@@ -18,23 +18,18 @@ Programmatic filtering is performed by adding a __FilterDescriptor__ object to t
 
 For example: 
 
-#### __C#__
 
-{{region raddataservicedatasource-filtering-programmatic-filtering_0}}
+
+```C#
 
 	FilterDescriptor fd = new FilterDescriptor("PostalCode", FilterOperator.IsEqualTo, 1010);
 	this.radDataServiceDataSource.FilterDescriptors.Add(fd);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region raddataservicedatasource-filtering-programmatic-filtering_1}}
+```
+```VB.NET
 
 	Dim fd As New FilterDescriptor("PostalCode", FilterOperator.IsEqualTo, 1010)
 	Me.radDataServiceDataSource.FilterDescriptors.Add(fd)
-{{endregion}}
+```
 
 
 
@@ -46,9 +41,9 @@ On running the application, the following grid will be displayed:
 
 You can build infinitely nested hierarchies of filters by using the __CompositeFilterDescriptor__ class. The following code will return all people that were born in the 1980’s, but you could easily replace __f1__ or __f2__ with another composite filter to achieve logical nesting:
 
-#### __C#__
 
-{{region raddataservicedatasource-filtering-programmatic-filtering_2}}
+
+```C#
 
 	CompositeFilterDescriptor cfd = new CompositeFilterDescriptor();
 	cfd.LogicalOperator = FilterCompositionLogicalOperator.Or;
@@ -57,13 +52,8 @@ You can build infinitely nested hierarchies of filters by using the __CompositeF
 	FilterDescriptor f2 = new FilterDescriptor("City", FilterOperator.IsEqualTo, "Madrid");
 	cfd.FilterDescriptors.Add(f2);
 	this.radDataServiceDataSource.FilterDescriptors.Add(cfd);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region raddataservicedatasource-filtering-programmatic-filtering_3}}
+```
+```VB.NET
 
 	Dim cfd As New CompositeFilterDescriptor()
 	cfd.LogicalOperator = FilterCompositionLogicalOperator.[Or]
@@ -72,7 +62,7 @@ You can build infinitely nested hierarchies of filters by using the __CompositeF
 	Dim f2 As New FilterDescriptor("City", FilterOperator.IsEqualTo, "Madrid")
 	cfd.FilterDescriptors.Add(f2)
 	Me.radDataServiceDataSource.FilterDescriptors.Add(cfd)
-{{endregion}}
+```
 
 
 

@@ -21,9 +21,9 @@ Another approach for accomplishing the purpose will be to create a separate clas
 The custom class responsible for the update of the commands needs to be similar to the one below:
         
 
-#### __C#__
 
-{{region cs-GridView-Commands-KeyboardCommandProvider_0}}
+
+```C#
 	public class CustomKeyboardCommandProvider : DefaultKeyboardCommandProvider
 	{
 	    private GridViewDataControl parentGrid;
@@ -49,11 +49,8 @@ The custom class responsible for the update of the commands needs to be similar 
 	        return commandsToExecute;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-GridView-Commands-KeyboardCommandProvider_1}}
+```
+```VB.NET
 	Public Class CustomKeyboardCommandProvider
 	    Inherits DefaultKeyboardCommandProvider
 	    Private parentGrid As GridViewDataControl
@@ -74,7 +71,7 @@ The custom class responsible for the update of the commands needs to be similar 
 	        Return commandsToExecute
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 Following up the code-snippet above, a press of Enter key will result in saving the current changes,
@@ -85,19 +82,14 @@ commands for that particular key by calling the __Clear()__ method.
 The last thing to be done is to set __KeyboardCommandProvider__ Property of the __RadGridView__ to be the newly-created __CustomKeyboardCommandProvider__ class:
         
 
-#### __C#__
 
-{{region cs-GridView-Commands-KeyboardCommandProvider_2}}
+
+```C#
 	this.RadGridView1.KeyboardCommandProvider = new CustomKeyboardCommandProvider(this.RadGridView1);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-GridView-Commands-KeyboardCommandProvider_3}}
+```
+```VB.NET
 	Me.RadGridView1.KeyboardCommandProvider = New CustomKeyboardCommandProvider(Me.RadGridView1)
-{{endregion}}
+```
 
 
 >tipYou can download a runnable project of the previous example from our online SDK repository [here](https://github.com/telerik/xaml-sdk/tree/master/GridView/CustomKeyboardCommandProvider).

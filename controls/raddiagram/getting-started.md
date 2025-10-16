@@ -65,10 +65,10 @@ The __Graph Object Model__ is the main concept behind the diagramming framework.
 
 Before proceeding with adding __RadDiagram__ to your project, make sure the required assembly references are added to the project. When you want to create a diagram in your application, you first need to add the __RadDiagram__ control, as it represents the main canvas onto which the diagramming tools and shapes are drawn.		
 
-#### __[XAML] Example 1: Adding RadDiagram in XAML__  
-{{region raddiagram_getting_started_0}}
+__Example 1: Adding RadDiagram in XAML__  
+```XAML
 	<telerik:RadDiagram />
-{{endregion}}
+```
 
 #### __Figure 3: Default drawing canvas:__  
 ![Rad Diagram Getting Started](images/RadDiagram_GettingStarted.png)
@@ -83,20 +83,20 @@ Let's start with the condition of the "if-else" operator. In a block diagram, a 
 
 >tip The __RadDiagramShape__ exposes a __Geometry__ property that allows you to create a custom geometry or use predefined shape geometry. The predefined shape geometries in the __Telerik Diagramming Framework__ are described by the __ArrowShape__, __CommonShape__ and __FlowChartShape__ extension classes. For more information, pelase refer to the [DiagramShapes]({%slug raddiagrams-features-shapes%}) tutorial.		  
 
-#### __[XAML] Example 2: Adding RadDiagramShape in XAML__  
-{{region raddiagram_getting_started_1}}
+__Example 2: Adding RadDiagramShape in XAML__  
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __Figure 4: DecisionShape default visual look__  
 ![Rad Diagram Getting Started Decision Shape](images/RadDiagram_GettingStarted_DecisionShape.png)
 
 You can define the size of the shape and set its __Content__ and __x:Name__ properties to better describe it.		
 
-#### __[XAML] Example 3: Customize DecisionShape in XAML__  
-{{region raddiagram_getting_started_2}}
+__Example 3: Customize DecisionShape in XAML__  
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape x:Name="ConditionShape"
 								 Width="80"
@@ -105,15 +105,15 @@ You can define the size of the shape and set its __Content__ and __x:Name__ prop
 								 FontWeight="Bold"
 								 Geometry="{telerik:FlowChartShape ShapeType=DecisionShape}" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __Figure 5: Customized DecisionShape visual look__  
 ![Rad Diagram Getting Started Decision Shape Cont](images/RadDiagram_GettingStarted_DecisionShapeCont.png)
 
 To describe the statements of the "if-else" operator you can use the default geometry of the __RadDiagramShape__.		
 
-#### __[XAML] Example 4: Setting default geometry of the RadDiagramShape in XAML__  
-{{region raddiagram_getting_started_3}}
+__Example 4: Setting default geometry of the RadDiagramShape in XAML__  
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape x:Name="ConditionShape"
 								 Width="80"
@@ -130,15 +130,15 @@ To describe the statements of the "if-else" operator you can use the default geo
 								 Content="statement(s)"
 								 FontWeight="Bold" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __Figure 6: RadDiagramShapes without its Position property set__  
 ![Rad Diagram Getting Started Diagram Shape](images/RadDiagram_GettingStarted_DiagramShape.png)
 
 Adding multiple shapes in the __RadDiagram__ without setting their position, by default, will position all shapes at the top left corner of the drawing canvas. In order to rearrange their layout, you need to set the __Position__ property of each shape. This property is of type __Point__ and it gets or sets the coordinates of the top left point of a shape.		
 
-#### __[XAML] Example 5: Set the Position property in XAML__  
-{{region raddiagram_getting_started_4}}
+__Example 5: Set the Position property in XAML__  
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape x:Name="ConditionShape"
 								 Width="80"
@@ -158,15 +158,15 @@ Adding multiple shapes in the __RadDiagram__ without setting their position, by 
 								 FontWeight="Bold"
 								 Position="240,280" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __Figure 7: RadDiagramShape with its Position property set__  
 ![Rad Diagram Getting Started Position Shapes](images/RadDiagram_GettingStarted_PositionShapes.png)
 
 To describe the final result of the operator you can use an ellipse shape. __Telerik Diagramming Framework__ provides such a predefined shape. You can find a shape of type __EllipseShape__ in the __CommonShape__ extension class.		
 
-#### __[XAML] Example 6: Declaring EllipseShape in XAML__  
-{{region raddiagram_getting_started_5}}
+__Example 6: Declaring EllipseShape in XAML__  
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape x:Name="EndShape"
 								 Width="50"
@@ -175,7 +175,7 @@ To describe the final result of the operator you can use an ellipse shape. __Tel
 								 FontWeight="Bold"
 								 Geometry="{telerik:CommonShape ShapeType=EllipseShape}" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __Figure 8: Customized EllipseShape look__  
 ![Rad Diagram Getting Started Start Shape](images/RadDiagram_GettingStarted_StartShape.png)
@@ -184,8 +184,8 @@ To describe the final result of the operator you can use an ellipse shape. __Tel
 
 You can customize the content of the ellipse __RadDiagramShape__ to mark it as the end of the "if-else" flow diagram.		
 
-#### __[XAML] Example 7: Customize EllipseShape in XAML__  
-{{region raddiagram_getting_started_6}}
+__Example 7: Customize EllipseShape in XAML__  
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape x:Name="ConditionShape"
 								 Width="80"
@@ -219,7 +219,7 @@ You can customize the content of the ellipse __RadDiagramShape__ to mark it as t
 			</telerik:RadDiagramShape.ContentTemplate>
 		</telerik:RadDiagramShape>
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __Figure 9: Customized EllipseShape__
 
@@ -235,8 +235,8 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 
 * Add connections between the 'condition' shape and the 'statements' shapes:			
 
-	#### __[XAML] Example 8: Adding RadDiagramConnection in XAML__  
-	{{region raddiagram_getting_started_7}}
+	__Example 8: Adding RadDiagramConnection in XAML__  
+	```XAML
 		<telerik:RadDiagramConnection Content="if condition is false"
 									  FontWeight="Bold"
 									  Source="{Binding ElementName=ConditionShape}"
@@ -269,15 +269,15 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 				</DataTemplate>
 			</telerik:RadDiagramConnection.ContentTemplate>
 		</telerik:RadDiagramConnection>
-	{{endregion}}
+	```
 
 	#### __Figure 10: RadDiagramConnection visual example__
 	![Rad Diagram Getting Started Condition Connect](images/RadDiagram_GettingStartedConditionConnect.png)
 
 * Add connections between the 'statements' shape and the 'final result' shapes:		
 
-	#### __[XAML] Example 9: Add connection between shapes__
-	{{region raddiagram_getting_started_8}}
+	__Example 9: Add connection between shapes__
+	```XAML
 		<telerik:RadDiagramConnection Source="{Binding ElementName=StatementShape1}"
 									  SourceConnectorPosition="Bottom"
 									  StrokeThickness="2"
@@ -288,15 +288,15 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 									  StrokeThickness="2"
 									  Target="{Binding ElementName=EndShape}"
 									  TargetCapType="Arrow1Filled" />
-	{{endregion}}
+	```
 
 	#### __Figure 11: RadDiagramConnection visual example__
 	![Rad Diagram Getting Started End Connection](images/RadDiagram_GettingStartedEndConnection.png)
 
 * Add the connection that points to the start of the operator:			
 
-	#### __[XAML] Example 10: Setting custom DataTemplate to RadDiagramConnection__
-	{{region raddiagram_getting_started_9}}
+	__Example 10: Setting custom DataTemplate to RadDiagramConnection__
+	```XAML
 		<telerik:RadDiagramConnection HorizontalContentAlignment="Center"
 									  VerticalContentAlignment="Top"
 									  Content="Start"
@@ -313,7 +313,7 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 				</DataTemplate>
 			</telerik:RadDiagramConnection.ContentTemplate>
 		</telerik:RadDiagramConnection>
-	{{endregion}}
+	```
 	
 	#### __Figure 12: Customized RadDiagramConnection__
 	![Rad Diagram Getting Started Start Connection](images/RadDiagram_GettingStartedStartConnection.png)
@@ -322,8 +322,8 @@ In order to connect the shapes and finish the flow diagram of the "if-else" oper
 
 You can find the final XAML definition of the "if-else" flow diagram in __Example 11__.
 
-#### __[XAML] Example 11: Final "if-else" flow diagram XAML__
-{{region raddiagram_getting_started_10}}
+__Example 11: Final "if-else" flow diagram XAML__
+```XAML
 	<telerik:RadDiagram>
 		<telerik:RadDiagramShape x:Name="ConditionShape"
 								 Width="80"
@@ -414,7 +414,7 @@ You can find the final XAML definition of the "if-else" flow diagram in __Exampl
 									  Target="{Binding ElementName=EndShape}"
 									  TargetCapType="Arrow1Filled" />
 	</telerik:RadDiagram>
-{{endregion}}
+```
 
 #### __Figure 13: "if-else" operator flow diagram visual look__  
 ![Rad Diagram Getting Started Result](images/RadDiagram_GettingStartedResult.png)
@@ -439,8 +439,8 @@ To change the theme, you can follow the steps below:
 
 __Example 12__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 12: Merge the ResourceDictionaries__  
-{{region raddesktopalert-getting-started_6}}
+__Example 12: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -453,7 +453,7 @@ __Example 12__ demonstrates how to merge the ResourceDictionaries so that they a
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

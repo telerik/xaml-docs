@@ -30,8 +30,8 @@ The `XyzSeries3DDescriptor` exposes the following properties that are used to li
 
 >tip Setting those properties is enough to adjust the provider. This will auto-generate [PointSeries3D]({%slug radchartview3d-pointseries3d%}) instance for each item in the `Source` of the series provider.
 
-#### __[XAML]__
-{{region radchartview-features-chartseriesprovider-0}}
+
+```XAML
 	<telerik:RadCartesianChart3D Palette="Windows8">
 		<telerik:RadCartesianChart3D.XAxis>
 			<telerik:CategoricalAxis3D />
@@ -53,7 +53,7 @@ The `XyzSeries3DDescriptor` exposes the following properties that are used to li
 			</telerik:ChartSeriesProvider3D>
 		</telerik:RadCartesianChart3D.SeriesProvider>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 
 ## Determine the Series Type
 
@@ -63,14 +63,14 @@ The default created series is a `PointSeries3D`. To change this, you can use one
 
 The easiest way to determine the type of the series is to assign the `Style` property of the descriptor and set its `TargetType`.
 
-#### __[XAML]__
-{{region radchartview-features-chartseriesprovider-1}}
+
+```XAML
 	<telerik:XyzSeries3DDescriptor XValuePath="X" YValuePath="Y" ZValuePath="Z" ItemsSourcePath="Items">
 		<telerik:XyzSeries3DDescriptor.Style>
 			<Style TargetType="telerik:BarSeries3D" />
 		</telerik:XyzSeries3DDescriptor.Style>
 	</telerik:XyzSeries3DDescriptor>
-{{endregion}}
+```
 	
 >important If you use [NoXaml]({%slug xaml-vs-noxaml%}) dlls and the [implicit styles theming mechanism]({%slug styling-apperance-implicit-styles-overview%}), you must base the Style of the descriptor on the default style of the series. The setting should like something like this: `<Style TargetType="telerik:BarSeries3D" BasedOn="{StaticResource BarSeries3DStyle}">` . The same naming convention is us applicable for all other chart series - __SurfaceSeries3DStyle__, __PointSeries3DStyle__ and __LineSeries3DStyle__. If you don't set the BasedOn attribute when using NoXaml dlls, the series won't display any data points.
 
@@ -82,42 +82,42 @@ The `TypePath` allows you to define a chart series type that will be used when c
 
 If you provide a `Type` value to the `TypePath`, the `ChartSeriesDescriptor3D` will be able to automatically determine the type of the series that should be created.
 
-#### __[C#]__
-{{region radchartview-features-chartseriesprovider-2}}
+
+```C#
 	public class SeriesViewModel3D
 	{
 		public Type SeriesType { get; set; } // this can be typeof(PointSeries3D), typeof(BarSeries3D), etc.).
 		//other properties here
 	}
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region radchartview-features-chartseriesprovider-3}}
+
+```XAML
 	<telerik:XyzSeries3DDescriptor XValuePath="X" YValuePath="Y" ZValuePath="Z" ItemsSourcePath="Items" TypePath="SeriesType"/>
-{{endregion}}
+```
 
 If you provide a `string` or any other object to the `TypePath`, you will need to set also the `TypeConverter` property. It allows you to implement an `IValueConverter` that gets the value from the `TypePath` property and converts it to a Type, which is later used to create the chart series.
 
-#### __[C#]__
-{{region radchartview-features-chartseriesprovider-4}}
+
+```C#
 	public class SeriesViewModel3D
 	{
 		public string SeriesType { get; set; } // this can contain any value, but for this example, lets say you have values like "Bar", "Point", etc.
 		//other properties here
 	}
-{{endregion}}
+```
 
-#### __[XAML]__
-{{region radchartview-features-chartseriesprovider-5}}
+
+```XAML
 	<telerik:XyzSeries3DDescriptor XValuePath="X" YValuePath="Y" ZValuePath="Z" ItemsSourcePath="Items" TypePath="SeriesType">
 	<telerik:XyzSeries3DDescriptor.TypeConverter>
 			<local:SeriesTypeConverter />
 		</telerik:XyzSeries3DDescriptor.TypeConverter>
 	</telerik:XyzSeries3DDescriptor>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region radchartview-features-chartseriesprovider-6}}
+
+```C#
 	public class SeriesTypeConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -138,7 +138,7 @@ If you provide a `string` or any other object to the `TypePath`, you will need t
             throw new NotImplementedException();
         }
     }
-{{endregion}}
+```
 
 The `TypeConverter` will be invoked even if you don't set the `TypePath` property. In this case, the value in the `Convert` method of the converter will be the view model of the series.
 
@@ -146,8 +146,8 @@ The `TypeConverter` will be invoked even if you don't set the `TypePath` propert
 
 To use the [sampling support]({%slug radchartview3d-populating-data-sampling%}) with the series provider feature, you can set the `ChartDataSourceStyle` property of the `ChartSeriesDescriptor3D`.
 
-#### __[XAML]__
-{{region radchartview-features-chartseriesprovider-7}}
+
+```XAML
 	<telerik:XyzSeries3DDescriptor XValuePath="X" YValuePath="Y" ZValuePath="Z" ItemsSourcePath="Items" >
 		<telerik:XyzSeries3DDescriptor.ChartDataSourceStyle>
 			<Style TargetType="telerik:ChartDataSource">
@@ -155,14 +155,14 @@ To use the [sampling support]({%slug radchartview3d-populating-data-sampling%}) 
 			</Style>
 		</telerik:XyzSeries3DDescriptor.ChartDataSourceStyle>
 	</telerik:XyzSeries3DDescriptor>
-{{endregion}}   
+```   
 
 ## Assigning Descriptor to Item from the Source
 
 By default all descriptors in the series provider will use all the items in the data source. However, you can assign a descriptor to be applied only to a specific item from the data source (the `Source` property). To do so, set the `CollectionIndex` property of the `XyzSeries3DDescriptor`. For example, setting the property to `1` will use the descriptor only for the second item in the `Source` collection. This property is useful when, lets say, a BarSeries3D needs to be generated for the first data entry and PointSeries3D for the rest of the entries.
 
-#### __[XAML]__
-{{region radchartview-features-chartseriesprovider-8}}
+
+```XAML
 	<telerik:RadCartesianChart3D Palette="Windows8">
             <telerik:RadCartesianChart3D.XAxis>
                 <telerik:CategoricalAxis3D />
@@ -192,7 +192,7 @@ By default all descriptors in the series provider will use all the items in the 
                 </telerik:ChartSeriesProvider3D>
             </telerik:RadCartesianChart3D.SeriesProvider>
         </telerik:RadCartesianChart3D>
-{{endregion}} 
+``` 
 
 ## Events
 
@@ -204,13 +204,13 @@ The event arguments are of type `ChartSeries3DCreatedEventArgs` and expose the f
 
 > This event may be raised with the series being null (for example, in cases when a suitable descriptor was not found). In such a case, this event can still be used to create and set up a new series.
 	
-#### __[XAML]__
-{{region radchartview-features-chartseriesprovider-9}}
-	<telerik:ChartSeriesProvider3D SeriesCreated="ChartSeriesProvider3D_SeriesCreated"/>
-{{endregion}}
 
-#### __[C#]__
-{{region radchartview-features-chartseriesprovider-10}}
+```XAML
+	<telerik:ChartSeriesProvider3D SeriesCreated="ChartSeriesProvider3D_SeriesCreated"/>
+```
+
+
+```C#
 	private void ChartSeriesProvider3D_SeriesCreated(object sender, Telerik.Windows.Controls.ChartView.ChartSeries3DCreatedEventArgs e)
 	{
 		if (e.Series is PointSeries3D)
@@ -219,14 +219,14 @@ The event arguments are of type `ChartSeries3DCreatedEventArgs` and expose the f
 			pointSeries.DefaultVisualMaterial = new DiffuseMaterial(Brushes.Purple);                
 		}
 	}
-{{endregion}}
+```
 	
 ## Code Example
 
 In the following example, the chart is populated by a collection of 3 items, thus creating 3 series. There is a `XyzSeries3DDescriptor` with `CollectionIndex` set to `2` and a style with `TargetType` set to `PointSeries3D`. This means that there will be a BarSeries3D, created for the third item in the `Source` collection. There is another `XyzSeries3DDescriptor`, which is responsible for creating `PointSeries3D` for the rest of the items in the source collection.        
 
-#### __[XAML]__
-{{region xaml-radchartview-features-chartseriesprovider_3}}
+
+```XAML
 	<telerik:RadCartesianChart3D Palette="Fluent">
 		<telerik:RadCartesianChart3D.XAxis>
 			<telerik:CategoricalAxis3D />
@@ -263,10 +263,10 @@ In the following example, the chart is populated by a collection of 3 items, thu
 			</telerik:ChartSeriesProvider3D>
 		</telerik:RadCartesianChart3D.SeriesProvider>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 
-#### __[C#]__
-{{region cs-radchartview-features-chartseriesprovider_4}}
+
+```C#
 	public class PlotInfo3D
     {
         public object X { get; set; }
@@ -328,7 +328,7 @@ In the following example, the chart is populated by a collection of 3 items, thu
             };
         }
     }
-{{endregion}}
+```
 
 __Dynamic number of series generated using SeriesProvider3D__  
 

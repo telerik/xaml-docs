@@ -16,11 +16,11 @@ The __DrawTool__ is one of the tools that come out-of-the-box with the __RadImag
 
 Similarly to the other __RadImageEditor__ tools, the __DrawTool__ is located in the __Telerik.Windows.Media.Imaging.Tools__ namespace, inherits the [DrawToolBase]({%slug radimageeditor-howto-implement-drawtoolbase%}) class and can be defined in XAML as follows:
 
-#### __[XAML] Example 1: Define DrawTool__
+__Example 1: Define DrawTool__
 
-{{region xaml-radimageeditor-tools-drawing_0}}
+```XAML
 	<tools:DrawTool />
-{{endregion}}
+```
 
 
 ## Modifying
@@ -31,27 +31,24 @@ The __DrawTool__ introduces the following two properties which can be set by dec
 
 * __DefaultBrushColor__: Specifies the default brush color. The property is of type __Color__.
 
-#### __[XAML] Example 2: Customize DrawTool__
+__Example 2: Customize DrawTool__
 
-{{region xaml-radimageeditor-tools-drawing_1}}
+```XAML
 	<tools:DrawTool DefaultBrushColor="Blue" DefaultBrushSize="5"/>
-{{endregion}}
+```
 
-#### __[C#] Example 2: Customize DrawTool__
+__Example 2: Customize DrawTool__
 
-{{region cs-radimageeditor-tools-drawing_2}}
+```C#
 	DrawTool drawTool = new DrawTool();
 	drawTool.DefaultBrushColor = Colors.Blue;
 	drawTool.DefaultBrushSize = 5;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Customize DrawTool__
-
-{{region vb-radimageeditor-tools-drawing_3}}
+```
+```VB.NET
 	Dim drawTool = New DrawTool()
 	drawTool.DefaultBrushColor = Colors.Blue
 	drawTool.DefaultBrushSize = 5
-{{endregion}}
+```
 
 
 ## Inheritance and Customizing

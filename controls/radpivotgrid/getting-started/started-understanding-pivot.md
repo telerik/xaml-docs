@@ -70,27 +70,24 @@ You can see how the items in red and blue rectangles have changed their position
 
 As you can see we have two PropertyGroupDescriptions defined as RowGroupDescriptions and the first one is for property Name. Each group in __RadPivotGrid__ has totals, but the groups on the BottomLevel (which do not have children) show their totals right next to them("Direct Mail" and "Extra Discount" totals are on the same row), while the TopLevelGroups("Pen" and "Pencil") can show their totals at the Top, Bottom, Inline position or even can hide them. The position depends on the used Layout and the value of SubTotalsPosition property. You can find examples demonstrating how to set the __AggregatesLevel__ and __AggregatesPosition__ properties below:
 
-#### __XAML__
 
-{{region radpivotgrid-started-understanding-pivot_1}}
+
+```XAML
 	<pivot:LocalDataSourceProvider AggregatesLevel="0" AggregatesPosition="Rows" />
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-started-understanding-pivot_1}}
+
+```C#
 	var dataProvider = new LocalDataSourceProvider();
 	dataProvider.AggregatesLevel = 0;
 	dataProvider.AggregatesPosition = PivotAxis.Rows;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-started-understanding-pivot_1}}
+```
+```VB.NET
 	Dim dataProvider = New LocalDataSourceProvider()
 	dataProvider.AggregatesLevel = 0
 	dataProvider.AggregatesPosition = PivotAxis.Rows
-{{endregion}}
+```
 
 * __RadPivotFieldList__ - a powerful control for applying modifications on the DataProvider at runtime. If you have __RadPivotGrid__ and __RadPivotFieldList__ and they are using the same DataProvider, you can modify your pivot at runtime with __RadPivotFieldList__. Combination of these two controls is a very powerful business intelligence tool.
 

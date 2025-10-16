@@ -18,35 +18,33 @@ The __RibbonBackstage__ appears when a user __clicks__ the __Application Button_
 
 By default the __Backstage__ isn't opened. In order to control its state you can set the __RadRibbonView__'s __IsBackstageOpen__ property.
 
-#### __[XAML] Example 1: Set the IsBackstageOpen property__
-{{region radribbonview-ribbon-backstage_0}}
+__Example 1: Set the IsBackstageOpen property__
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application" IsBackstageOpen="True">
 	 ...
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ## Adding Backstage to the RadRibbonView
 
 In order to add a backstage to your __RadRibbonView__ control you need to set the __RadRibbonView__'s __Backstage__ property. The next several code-snippets show you how to do that in XAML, as well as in the code-behind.
 
-#### __[XAML] Example 2: Declaring RadRibbonBackstage in XAML__
-{{region radribbonview-ribbon-backstage_1}}
+__Example 2: Declaring RadRibbonBackstage in XAML__
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" Title="My Title" ApplicationName="My Application">
 	    <telerik:RadRibbonView.Backstage>
 	        <telerik:RadRibbonBackstage />
 	    </telerik:RadRibbonView.Backstage>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Declaring RadRibbonBackstage in code-behind__
-{{region radribbonview-ribbon-backstage_2}}
+__Example 3: Declaring RadRibbonBackstage in code-behind__
+```C#
 	this.radRibbonView.Backstage = new RadRibbonBackstage();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Declaring RadRibbonBackstage in code-behind__
-{{region radribbonview-ribbon-backstage_3}}
+```
+```VB.NET
 	Me.radRibbonView.Backstage = New RadRibbonBackstage()
-{{endregion}}
+```
 
 #### __Figure 1: RadRibbonBackstage default appearance__
 ![{{ site.framework_name }} RadRibbonView RadRibbonBackstage default appearance](images/RadRibbonView_Backstage_Empty.png)
@@ -55,8 +53,8 @@ In order to add a backstage to your __RadRibbonView__ control you need to set th
 
 The __Backstage__ control derives from the __RadTabControl__. That fact allows you to easily customize it by adding/removing __BackstageItems__ (the __BackstageItem__ derives from a __RadTabItem__).
 
-#### __[XAML] Example 4: Adding RadRibbonBackstageItem in XAML__
-{{region radribbonview-ribbon-backstage_4}}
+__Example 4: Adding RadRibbonBackstageItem in XAML__
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" 
 	                        Title="My Title"
 	                        ApplicationButtonContent="File"
@@ -73,7 +71,7 @@ The __Backstage__ control derives from the __RadTabControl__. That fact allows y
 	        </telerik:RadRibbonBackstage>
 	    </telerik:RadRibbonView.Backstage>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ## Backstage Properties
 
@@ -114,8 +112,8 @@ The __BackstageItem__ exposes the following properties that allow you to further
 
 	>If the __BackstageItem__ is not selectable the __CloseOnClick__ property is set to __True__ by default. However, if the item is selectable, then the __CloseOnClick__ property won't affect its behavior.
 
-#### __[XAML] Example 5: RadRibbonView with RadRibbonBackstage code example__
-{{region radribbonview-ribbon-backstage_5}}
+__Example 5: RadRibbonView with RadRibbonBackstage code example__
+```XAML
 	<telerik:RadRibbonView x:Name="radRibbonView" 
 	                        Title="My Title"
 	                        ApplicationName="My Application">
@@ -358,15 +356,15 @@ The __BackstageItem__ exposes the following properties that allow you to further
 	    <telerik:RadRibbonTab Header="View" />
 	    <telerik:RadRibbonTab Header="Text" />
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 #### __Figure 4: Customized RadRibbonBackstage__
 ![{{ site.framework_name }} RadRibbonView Customized RadRibbonBackstage](images/RadRibbonView_Backstage_Sample.png)
 
 The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that allows you to define the area over which the __Backstage__ will be displayed:
 
-#### __[XAML] Example 6: Specify BackstageClippingElement property__
-{{region radribbonview-ribbon-backstage_6}}
+__Example 6: Specify BackstageClippingElement property__
+```XAML
      <Grid x:Name="LayoutRoot" Background="White" ShowGridLines="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -393,7 +391,7 @@ The __RadRibbonView__ exposes the __BackstageClippingElement__ property, that al
             </telerik:RadRibbonView>
         </Grid>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 5: RadRibbonView with BackstageClippingElement property set__
 ![{{ site.framework_name }} RadRibbonView RadRibbonView with BackstageClippingElement property set](images/RadRibbonView_BackstageClippingElement_Sample.PNG)
@@ -404,14 +402,14 @@ The close button of the ribbon backstage control is displayed in the themes afte
 
 To hide the close button, set the __CloseButtonVisibility__ property of __RadRibbonBackstage__ to `Collapsed` or `Hidden`.
 
-#### __[XAML] Example 7: Setting CloseButtonVisibility__
-{{region radribbonview-ribbon-backstage_7}}
+__Example 7: Setting CloseButtonVisibility__
+```XAML
 	<telerik:RadRibbonView>		
 		<telerik:RadRibbonView.Backstage>
 			<telerik:RadRibbonBackstage BackstagePosition="Office2013" CloseButtonVisibility="Visible" />
 		</telerik:RadRibbonView.Backstage>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 #### __Figure 5: Hidden backstage close button in Fluent theme__
 ![{{ site.framework_name }} RadRibbonView Hidden backstage close button in Fluent theme](images/RadRibbonView_Backstage_Hidden_Close_Button.PNG)

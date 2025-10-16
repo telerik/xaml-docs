@@ -23,11 +23,11 @@ However, in case you aim at loading the right resources automatically by means o
 
 Here, under the section of &lt;Property Group&gt; is the element &lt;Supported Cultures&gt;. This is the place, where every language you want your application to support is defined. In case the desired default language is Spanish, for example, the code will be:
 
-#### __XAML__
 
-{{region xaml-gridview-localization-setting-default-startup-language3_0}}
+
+```XAML
 	  <SupportedCultures>es</SupportedCultures>
-{{endregion}}
+```
 
 Thus the framework is notified about the supported cultures and will include the satellite resource assemblies for all Telerik controls.
 
@@ -35,19 +35,16 @@ Thus the framework is notified about the supported cultures and will include the
 
 The thing that you must do for defining the language settings of the application, is to change the current culture of the application. Locate the application initialization logic and add some code in the method for Startup in App.xaml.cs:
 
-#### __C#__
 
-{{region cs-gridview-localization-setting-default-startup-language3_1}}
+
+```C#
 	Thread.CurrentThread.CurrentCulture = new CultureInfo("es");
 	Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-gridview-localization-setting-default-startup-language3_2}}
+```
+```VB.NET
 	Thread.CurrentThread.CurrentCulture = New CultureInfo("es")
 	Thread.CurrentThread.CurrentUICulture = New CultureInfo("es")
-{{endregion}}
+```
 
 {% endif %}
 

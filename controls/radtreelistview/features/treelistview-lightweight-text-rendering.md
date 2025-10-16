@@ -12,11 +12,10 @@ position: 24
 
 The `RadTreeListView` control provides the functionality to use a lightweight rendering mode for the cells' text, which will increase the performance. To enable this functionality, set the `EnableLightweightTextRendering` property to __True__. This alternative rendering mode will skip the creation of `TextBlock` elements that are used to display the cells' text. Instead, it will draw it in a separate panel.
 
-#### __[WPF] Enabling the lightweight rendering mode__
-{{region treelistview-lightweight-text-rendering-0}}
-    <telerik:RadTreeListView EnableLightweightTextRendering="True"
-                         GroupRenderMode="Flat"/>
-{{endregion}}
+__Enabling the lightweight rendering mode__
+```XAML
+    <telerik:RadTreeListView EnableLightweightTextRendering="True" GroupRenderMode="Flat"/>
+```
 
 ## Redraw Actions
 

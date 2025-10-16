@@ -31,8 +31,8 @@ How to display multiple DoughnutSeries in a single pie chart, without overlappin
 
 Adjust the positions of the series using their [RadiusFactor and InnerRadiusFactor]({%slug radchartview-series-doughnutseries%}#setting-the-doughnut-radius) properties.
 
-#### __[XAML]__
-{{region kb-chartview-display-multiple-donut-series-0}}
+
+```XAML
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:DoughnutSeries InnerRadiusFactor="0.58">
 			<telerik:DoughnutSeries.DataPoints>
@@ -51,6 +51,6 @@ Adjust the positions of the series using their [RadiusFactor and InnerRadiusFact
 			</telerik:DoughnutSeries.DataPoints>
 		</telerik:DoughnutSeries>
 	</telerik:RadPieChart>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Display Multiple Doughnut Series](images/kb-chartview-display-multiple-donut-series-0.png)

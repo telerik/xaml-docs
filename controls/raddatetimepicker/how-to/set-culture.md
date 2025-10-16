@@ -18,15 +18,15 @@ The __RadDateTimePicker__ control uses that Culture in order to parse the input 
 
 The next code snippet demonstrates how to set the CurrentCulture and CurrentUICulture to US culture:
 
-#### __C#__
 
-{{region cs-raddatetimepicker-how-to-set-culture-1}}
+
+```C#
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
 	Thread.CurrentThread.CurrentCulture = culture;
 	Thread.CurrentThread.CurrentUICulture = culture;
-{{endregion}}
+```
 
 The next figures show the difference with the custom en-US culture and the normal environment culture (which in this case is bg-BG):
 
@@ -51,9 +51,9 @@ The next code snippet shows how to set the date pattern in order to change the d
 {% if site.site_name == 'WPF' %}
 >In order for the parsing of the input date to be correct you need to make sure that the __DateSeparator__ is set to the desired symbol in the ShortDatePattern.
 
-#### __C#__
 
-{{region cs-raddatetimepicker-how-to-set-culture-2}}
+
+```C#
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
@@ -66,13 +66,13 @@ The next code snippet shows how to set the date pattern in order to change the d
 	culture.DateTimeFormat = dtfInfo;
 	Thread.CurrentThread.CurrentCulture = culture;
 	Thread.CurrentThread.CurrentUICulture = culture;
-{{endregion}}
+```
 {% endif %}
 
 {% if site.site_name == 'Silverlight' %}
-#### __C#__
 
-{{region cs-raddatetimepicker-how-to-set-culture-3}}
+
+```C#
 	InitializeComponent();
 	
 	var culture = new CultureInfo("en-US");
@@ -84,7 +84,7 @@ The next code snippet shows how to set the date pattern in order to change the d
 	culture.DateTimeFormat = dtfInfo;
 	Thread.CurrentThread.CurrentCulture = culture;
 	Thread.CurrentThread.CurrentUICulture = culture;
-{{endregion}}
+```
 {% endif %}
 
 The next figure shows the final result:

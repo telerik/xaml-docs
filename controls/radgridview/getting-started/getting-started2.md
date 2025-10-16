@@ -45,9 +45,9 @@ Before proceeding with adding __RadGridView__ to your project, make sure the req
 You can add __RadGridView__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
 
-#### __[XAML] Example 1: Adding RadGridView in XAML__
+__Example 1: Adding RadGridView in XAML__
 
-{{region xaml-gridview-getting-started2_0}}
+```XAML
 	<Window x:Class="WpfApp1.Window1"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -60,14 +60,15 @@ You can add __RadGridView__ manually by writing the XAML code in __Example 1__. 
 			<telerik:RadGridView/>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 
 
 >In order to use __RadGridView__ in XAML, you have to add the following namespace declaration:
->#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region xaml-gridview-getting-started2_3}}
+>__Example 2: Declaring Telerik Namespace__
+
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-{{endregion}}
+```
 
 
 
@@ -83,9 +84,9 @@ If you run the application, you will see an empty grid with no columns and rows 
 In order to populate the __RadGridView__ control with data, you should create a collection of business objects. For the purposes of this example, create a new class named __Club__ and add several properties to it, as shown in __Example 3__.
         
 
-#### __[C#] Example 3: Simple business class__
+__Example 3: Simple business class__
 
-{{region cs-gridview-getting-started2_0}}
+```C#
 	public class Club : INotifyPropertyChanged
 	{
 	    public event PropertyChangedEventHandler PropertyChanged;
@@ -154,12 +155,8 @@ In order to populate the __RadGridView__ control with data, you should create a 
 	        this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
 	    }
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 3: Simple business class__
-
-{{region vb-gridview-getting-started2_0}}
+```
+```VB.NET
 	Public Class Club
 	    Implements INotifyPropertyChanged
 	    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
@@ -223,7 +220,7 @@ In order to populate the __RadGridView__ control with data, you should create a 
 	        Me.OnPropertyChanged(New PropertyChangedEventArgs(propertyName))
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 
 >If you want to support two-way binding, your __Club__ class should implement the __INotifyPropertyChanged__ interface and raise the __PropertyChanged__ event every time a property value changes.
@@ -231,9 +228,9 @@ In order to populate the __RadGridView__ control with data, you should create a 
 Next, you should create the view model containing a collection of Club objects.            
      
 
-#### __[C#] Example 4: View model containing ObservableCollection of sample data__
+__Example 4: View model containing ObservableCollection of sample data__
 
-{{region cs-gridview-getting-started2_1}}
+```C#
 	public class MyViewModel : ViewModelBase
 	{
 	    private ObservableCollection<Club> clubs;
@@ -268,12 +265,8 @@ Next, you should create the view model containing a collection of Club objects.
 	        return clubs;
 	    }
 	}
-{{endregion}}
-
-
-#### __[VB.NET] Example 4: View model containing ObservableCollection of sample data__
-
-{{region vb-gridview-getting-started2_1}}
+```
+```VB.NET
 	Public Class MyViewModel
 	    Inherits ViewModelBase
 	    Private m_clubs As ObservableCollection(Of Club)
@@ -304,7 +297,7 @@ Next, you should create the view model containing a collection of Club objects.
 	        Return clubs
 	    End Function
 	End Class
-{{endregion}}
+```
 
 
 >tip __ViewModelBase__ is an abstract class implementing __INotifyPropertyChanged__. It resides in the Telerik.Windows.Controls namespace.
@@ -315,9 +308,9 @@ Now that you have prepared the needed sample data, it is time to bind __RadGridV
 __Example 5__ demonstrates how you can bind the ItemsSource collection in XAML. The _local_ namespace in the example corresponds to the namespace where __MyViewModel__ resides.
 
 
-#### __[XAML] Example 5: Bind RadGridView__
+__Example 5: Bind RadGridView__
 
-{{region xaml-gridview-getting-started2_1}}
+```XAML
 	<Window x:Class="WpfApp1.Window1"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -334,15 +327,15 @@ __Example 5__ demonstrates how you can bind the ItemsSource collection in XAML. 
 			<telerik:RadGridView x:Name="gridView" DataContext="{StaticResource MyViewModel}" ItemsSource="{Binding Clubs}"/>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 
 
 Alternatively, you can set the ItemsSource property in code-behind, as demonstrated in __Example 6__.
 
 
-#### __[C#] Example 6: Set ItemsSource in code__
+__Example 6: Set ItemsSource in code__
 
-{{region cs-gridview-getting-started2_2}}
+```C#
 	public partial class Window1 : Window
     {
         public Window1()
@@ -351,11 +344,8 @@ Alternatively, you can set the ItemsSource property in code-behind, as demonstra
             this.gridView.ItemsSource = new MyViewModel().Clubs;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 6: Set ItemsSource in code__
-
-{{region vb-gridview-getting-started2_2}}
+```
+```VB.NET
 	Public Partial Class Window1
 		Inherits Window
 
@@ -364,7 +354,7 @@ Alternatively, you can set the ItemsSource property in code-behind, as demonstra
 			Me.gridView.ItemsSource = New MyViewModel().Clubs
 		End Sub
 	End Class
-{{endregion}}
+```
 
 
 Running the application containing the code from Examples 1 - 6 will result in a populated __RadGridView__, like in __Figure 2__.
@@ -382,9 +372,9 @@ The __RadGridView__ from the examples above contains three columns, one for each
 __Example 7__ demonstrates how you can manually prevent the automatic generation and define columns. 
         
 
-#### __[XAML] Example 7: Manually defined columns__
+__Example 7: Manually defined columns__
 
-{{region xaml-gridview-getting-started2_2}}
+```XAML
 	<telerik:RadGridView x:Name="manualGridView" DataContext="{StaticResource MyViewModel}" 
 	                     ItemsSource="{Binding Clubs}" 
 	                     AutoGenerateColumns="False" >
@@ -393,7 +383,7 @@ __Example 7__ demonstrates how you can manually prevent the automatic generation
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Established}" Header="Established"/>
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 
 The code in __Example 7__ is shown in __Figure 3__. The XAML declaration of the __RadGridView__ contains two columns: the first one named "Club Name" is bound to the _Name_ property. The second named "Established" is bound, respectively, to __Established__. As a result, your grid control will have only two columns and no other column will be added because the __AutoGenerateColumns__ property is set to __False__.
@@ -432,8 +422,8 @@ To change the theme, you can follow the steps below:
 
 __Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 8: Merge the ResourceDictionaries__  
-{{region radtreeview-getting-started_08}}
+__Example 8: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -444,7 +434,7 @@ __Example 8__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 4__ shows __RadGridView__ with the **Windows8** theme applied.
 	

@@ -22,8 +22,8 @@ The __FunnelSeries__ displays a single series of data in progressively decreasin
 
 You can use the following definition to display a simple FunnelSeries:        
 
-#### __[XAML] Example 1: Declaring an FunnelSeries in XAML__
-{{region radchartview-series-funnelchart-funnelseries}}
+__Example 1: Declaring an FunnelSeries in XAML__
+```XAML
 	<telerik:RadFunnelChart Palette="Windows8">
 		<telerik:FunnelSeries>
 			<telerik:FunnelSeries.DataPoints>
@@ -35,7 +35,7 @@ You can use the following definition to display a simple FunnelSeries:
 			</telerik:FunnelSeries.DataPoints>
 		</telerik:FunnelSeries>
 	</telerik:RadFunnelChart>	
-{{endregion}}
+```
 
 #### __Figure 1: FunnelSeries visual appearance__
 ![ radchartview-series-funnelchart-funnelseries](images/radchartview-series-funnelseries.png)
@@ -58,9 +58,9 @@ You can use the following definition to display a simple FunnelSeries:
 
 You can use the ValueBinding property of the FunnelSeries to bind the DataPoint property to the property from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-funnelchart-funnelseries_1}}
+```C#
 	public class PlotInfo
     {
         public double Value { get; set; }
@@ -72,12 +72,12 @@ You can use the ValueBinding property of the FunnelSeries to bind the DataPoint 
 		new PlotInfo() { Value = 100},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a FunnelSeries in XAML__
-{{region radchartview-series-funnelchart-funnelseries_2}}	
+__Example 3: Specify a FunnelSeries in XAML__
+```XAML	
 	<telerik:FunnelSeries ItemsSource="{Binding}" ValueBinding="Value" />
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -91,8 +91,8 @@ FunnelSeries supports drawing of connector lines between the series' data points
 
 The following example demonstrates how to set the LabelConnectorsSettings propety:
 
-#### __[XAML] Example 4: Set label connectors__
-{{region radchartview-series-funnelchart-funnelseries_3}}
+__Example 4: Set label connectors__
+```XAML
 	<telerik:RadFunnelChart  Margin="50 50 100 50"  Palette="Windows8" ClipToBounds="False">
 		<telerik:FunnelSeries ShowLabels="True" Width="50" ClipToPlotArea="False">
 			<telerik:FunnelSeries.DataPoints>
@@ -110,7 +110,7 @@ The following example demonstrates how to set the LabelConnectorsSettings propet
 			</telerik:FunnelSeries.LabelConnectorsSettings>
 		</telerik:FunnelSeries>
 	</telerik:RadFunnelChart>
-{{endregion}}
+```
 
 #### __Figure 1: Label connectors visual appearance__
 ![ radchartview-series-funnelseries_labels](images/radchartview-series-funnelseries_labels.png)

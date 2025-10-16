@@ -14,9 +14,9 @@ In many scenarios you may need to implement a __RadContextMenu__ within the __Ra
 
 Let’s start with the following __RadScheduleView__ definition which includes Resources and a __RadContextMenu__ attached:
 
-#### __[XAML] Example 1: Defining RadScheduleView__
+__Example 1: Defining RadScheduleView__
 
-{{region radscheduleview-howto-get-clicked-element_0}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	        <telerik:DayViewDefinition />
@@ -45,7 +45,7 @@ Let’s start with the following __RadScheduleView__ definition which includes R
 	        </telerik:RadContextMenu>
 	    </telerik:RadContextMenu.ContextMenu>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 ## Determine Whether an Appointment or a Slot is Clicked
 
@@ -57,23 +57,23 @@ The process of determining whether an __Appointment__ or a __Slot__ is clicked w
 
 The built-in __NullToVisibilityConverer__  will set the __Visibility__ of the __MenuItems__ according the value of the __SelectedAppointment__ and the __SelectedSlot__. When the value is null the converter will return __Visibility.Collapsed__. 
 
-#### __[XAML] Example 2: Defined the needed IValueConverters__
+__Example 2: Defined the needed IValueConverters__
 
-{{region radscheduleview-howto-get-clicked-element_1}}
+```XAML
 	<Grid.Resources>
 	    <telerik:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
 	    <local:ClickedElementToResourceNameConverter x:Key="ClickedElementToResourceNameConverter" />
 	</Grid.Resources>
-{{endregion}}
+```
 
 
 **2.** Implement the __ClickedElementToResourceNameConverter__. 
 
 As its name hints, it will get the clicked item and return a simple string with __Resource__ name.
 
-#### __[C#] Example 3: Implement the ClickedElementToResourceNameConverter__
+__Example 3: Implement the ClickedElementToResourceNameConverter__
 
-{{region radscheduleview-howto-get-clicked-element_0}}
+```C#
 	public class ClickedElementToResourceNameConverter : IValueConverter
 	{
 	    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -100,32 +100,32 @@ As its name hints, it will get the clicked item and return a simple string with 
 	        return value;
 	    }
 	}
-{{endregion}}
+```
 
 **3.** Add two additional __RadMenuItems__. The first one will be shown when an Appointment is clicked and the second one when a Slot is clicked. 
 
 In order to get the __SelectedAppointment__ and the __SelectedSlot__, the __Menu__ property of __RadMenuItem__ can be used. It holds a reference to the __UIElement__ on which the __RadContextMenu__ is attached. This way, the values of the __SelectedAppointment__ and __SelectedSlot__ properties will be easily fetched through binding and used in the __Header__ of the __RadMenuItem__.
 
 
-#### __[XAML] Define the two RadMenuItems__
+__Define the two RadMenuItems__
 
-{{region radscheduleview-howto-get-clicked-element_2}}
+```XAML
 	<telerik:RadMenuItem
 	        Header="{Binding Path=Menu.UIElement.SelectedAppointment, RelativeSource={RelativeSource Self}, Converter={StaticResource ClickedElementToResourceNameConverter}}" 
 	        Visibility="{Binding Header, RelativeSource={RelativeSource Self}, Converter={StaticResource NullToVisibilityConverter}}" />
 	<telerik:RadMenuItem 
 	        Header="{Binding Path=Menu.UIElement.SelectedSlot, RelativeSource={RelativeSource Self}, Converter={StaticResource ClickedElementToResourceNameConverter}}" 
 	        Visibility="{Binding Header, RelativeSource={RelativeSource Self}, Converter={StaticResource NullToVisibilityConverter}}" />
-{{endregion}}  
+```  
 
 
 __Figure 1__ and __Figure 2__ demonstrate the final result.
 
 __Figure 1: When an Appointment is clicked the RadContextMenu will have information about its Resource__
-![radscheduleview how to get clicked element-1](images/radscheduleview_how to_get clicked element-1.png)
+![radscheduleview how to get clicked element-1](images/radscheduleview_how_to_get_clicked_element-1.png)
 
 __Figure 2: When an empty Slot is clicked the RadContextMenu will have information about its Resource__
-![radscheduleview how to get clicked element-2](images/radscheduleview_how to_get clicked element-2.png)
+![radscheduleview how to get clicked element-2](images/radscheduleview_how_to_get_clicked_element-2.png)
 
 ## See Also
 

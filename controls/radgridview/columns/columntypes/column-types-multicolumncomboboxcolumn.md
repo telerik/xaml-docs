@@ -60,8 +60,8 @@ __GridViewMultiColumnComboBoxColumn__ derives from [GridViewBoundColumnBase]({%s
 
 __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a GridViewMultiColumnComboBoxColumn. The RadGridView is populated with a collection of Departments, each of which holds a collection of Employees. The Employees collection is set as the ItemsSource of the GridViewMultiColumnComboBoxColumn.
 
-#### __[C#] Example 1: Defining the models and viewmodel__
-{{region cs-radmulticolumncombobox-dropdown-properties-0}}
+__Example 1: Defining the models and viewmodel__
+```C#
     public class Employee
     {
         public int ID { get; set; }
@@ -119,10 +119,8 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the models and viewmodel__
-{{region vb-radmulticolumncombobox-dropdown-properties-1}}
+```
+```VB.NET
     Public Class Employee
 		Public Property ID() As Integer
 		Public Property Name() As String
@@ -173,10 +171,10 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a
 			End Get
 		End Property
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Defining the xaml__
-{{region xaml-radmulticolumncombobox-dropdown-properties-2}}
+__Example 2: Defining the xaml__
+```XAML
 	<Window.DataContext>
 		<my:MyViewModel />
 	</Window.DataContext>
@@ -197,7 +195,7 @@ __Examples 1 and 2__ demonstrate how you can define some dummy data and set up a
             </telerik:RadGridView.Columns>
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 2 in the Office2016 theme__
 ![Setting up the MultiColumnComboBox Column in RadGridView - Telerik's {{ site.framework_name }} DataGrid](images/RadGridView_ColumnTypes_MultiColumnComboBox_01.png)

@@ -12,10 +12,6 @@ position: 1
 
 __RadPdfViewer__ is a control that allows you to display PDF files natively in {% if site.site_name == 'Silverlight' %} Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %}. This topic helps you to quickly get started using the control. It focuses on the following:      
 
-* [Adding the Required Assembly References](#assembly-references)
-* [Declaring RadPdfViewer in XAML](#adding-radpdfviewer-to-a-page)
-* [Wiring UI with the Commands of RadPdfViewer](#wiring-the-ui-with-radpdfviewer-commands)
-
 ## Adding Telerik Assemblies Using NuGet
 
 To use RadPdfViewer when working with NuGet packages, install the `Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml` package.
@@ -60,23 +56,23 @@ RadPdfViewer can also import and show documents containing predefined CMap table
 You have to first declare the Telerik namespace.
         
 
-#### __[XAML] Example 1: Declare the Telerik namespace__
+__Example 1: Declare the Telerik namespace__
 
-{{region xaml-radpdfviewer-getting-started_0}}
+```XAML
 	telerik="http://schemas.telerik.com/2008/xaml/presentation"     
-{{endregion}}
+```
 
 
 
 After that, you can add a RadPdfViewer, as shown in __Example 2__.
 
-#### __[XAML] Example 2: Create a PdfViewer__
+__Example 2: Create a PdfViewer__
 
-{{region xaml-radpdfviewer-getting-started_1}}
+```XAML
 	<Grid>
 	    <telerik:RadPdfViewer x:Name="pdfViewer"/>
 	</Grid>
-{{endregion}}
+```
 
 > When you create a RadPdfViewer, ensure that the control is __not__ placed in a container that measures its children in Infinity as this could lead to unexpected behavior of the viewer. Examples of such containers are __ScrollViewer__, __StackPanel__ or __Grid__ with row height and column width set to __*Auto__*. 
 
@@ -86,28 +82,28 @@ The navigation panel is separated from the control to provide better customizati
 {% if site.site_name == 'WPF' %}        
 >Since R1 2018, you can use the predefined UI of RadPdfViewer - __RadPdfViewerToolBar__. For more information, check the [Default UI]({%slug radpdfviewer-default-ui%}) topic.
 {% endif %}
-#### __[XAML] Example 3: Add a RadToolBar to RadPdfViewer__
+__Example 3: Add a RadToolBar to RadPdfViewer__
 
-{{region xaml-radpdfviewer-getting-started_2}}
+```XAML
 	<telerik:RadToolBar DataContext="{Binding ElementName=pdfViewer, Path=CommandDescriptors}">
 	    <!--...-->
 	</telerik:RadToolBar>
-{{endregion}}
+```
 
 >tipYou can download a complete runnable example that shows the default RadPdfViewer with RadToolBar configuration from the [Telerik® SDK repository](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/FirstLook). 
 
 You can then add buttons, combo boxes, etc., bound to the respective command descriptors of the viewer, as __Example 4__ shows.
 
-#### __[XAML] Example 4: Wire a CommandDescriptor to a RadButton__
+__Example 4: Wire a CommandDescriptor to a RadButton__
 
-{{region xaml-radpdfviewer-getting-started_3}}
+```XAML
 	<telerik:RadButton Command="{Binding OpenCommandDescriptor.Command}" Visibility="{Binding OpenCommandDescriptor.IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsBackgroundVisible="False">
 	    <ToolTipService.ToolTip>
 	        <TextBlock Text="Open" />
 	    </ToolTipService.ToolTip>
 	    <Image Source="{telerik:IconResource IconRelativePath=open.png, IconSources={StaticResource IconPaths}}" Stretch="None" />
 	</telerik:RadButton>
-{{endregion}}
+```
 
 
 >tipFor the whole configuration of a RadToolBar with all commands of the viewer, you can refer to the [Wiring UI]({%slug radpdfviewer-wiring-ui%}) article. More information about the command descriptors is available [here]({%slug radpdfviewer-command-descriptors%}).
@@ -134,8 +130,8 @@ To change the theme, you can follow the steps below:
 	
 __Example 5__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 5: Merge the ResourceDictionaries__  
-{{region radpdfviewer-getting-started_08}}
+__Example 5: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -144,7 +140,7 @@ __Example 5__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 1__ shows RadPdfViewer with the __Windows8__ theme applied.
 	

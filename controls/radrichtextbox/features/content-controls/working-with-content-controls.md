@@ -19,16 +19,16 @@ The content controls can be retrieved by using the __GetAnnotationMarkersOfType_
 
 #### Example 1: Get all content controls
 
-#### __C#__
 
-{{region radrichtextbox-features-working-with-content-controls_0}}
+
+```C#
 
     IEnumerable<SdtRangeStart> content_controls = this.radRichTextBox.Document.GetAnnotationMarkersOfType<SdtRangeStart>();
     foreach (SdtRangeStart item in content_controls)
     {
         Console.WriteLine("Type: {0} ID:{1}", item.SdtProperties.Type, item.SdtProperties.ID);
     }
-{{endregion}}
+```
 
 ### Set Content Controls Properties
 
@@ -36,9 +36,9 @@ This example show how one can iterate the items and add an item to to a existing
 
 #### Example 2: Adding items to a ComboBox or a DropDownList
 
-#### __C#__
 
-{{region radrichtextbox-features-working-with-content-controls_1}}
+
+```C#
 
     foreach (SdtRangeStart item in content_controls)
     {
@@ -52,7 +52,7 @@ This example show how one can iterate the items and add an item to to a existing
             properties.Items.Add(newItem);
         }
     }
-{{endregion}}
+```
 
 ## Insert New Content Controls
 
@@ -60,33 +60,33 @@ New content controls can be inserted trough one of the overloads of the **Insert
 
 #### Example 3: Inserting a content control
 
-#### __C#__
 
-{{region radrichtextbox-features-working-with-content-controls_2}}
+
+```C#
 
     this.radRichTextBox.InsertStructuredDocumentTag();
     // OR
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
     editor.InsertStructuredDocumentTag();
-{{endregion}}
+```
 
 #### Example 4: Inserting a content control using content control type
 
-#### __C#__
 
-{{region radrichtextbox-features-working-with-content-controls_3}}
+
+```C#
 
     this.radRichTextBox.InsertStructuredDocumentTag(SdtType.CheckBox);
     // OR
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
     editor.InsertStructuredDocumentTag(SdtType.CheckBox);
-{{endregion}}
+```
 
 #### Example 5: Inserting a content control using content control properties
 
-#### __C#__
 
-{{region radrichtextbox-features-working-with-content-controls_4}}
+
+```C#
 
     SdtProperties sdtProperties = new SdtProperties(SdtType.RichText)
     {
@@ -97,7 +97,7 @@ New content controls can be inserted trough one of the overloads of the **Insert
     // OR
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
     editor.InsertStructuredDocumentTag(sdtProperties);
-{{endregion}}
+```
 
 # See Also
 * [Content Controls Overview]({%slug radrichtextbox-features-content-controls%})

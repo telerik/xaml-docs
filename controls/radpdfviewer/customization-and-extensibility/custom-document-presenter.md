@@ -123,9 +123,9 @@ The following steps illustrate what you need to do to create and register a cust
 __Step 1:__ Create a class that inherits the abstract [__FixedPageLayoutInfo__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.layout.fixedpagelayoutinfo) class. This class is responsible for the page layout and should hold information about how to visualize a single page. Implement the base constructor and add your preferences.
         
 
-#### __[C#] Example 1: Implement FixedPageLayoutInfo__
+__Example 1: Implement FixedPageLayoutInfo__
 
-{{region radpdfviewer-customization-and-extensibility-custom-document-presenter_0}}
+```C#
 	public class SinglePageInfo : FixedPageLayoutInfo
 	{
 	    public SinglePageInfo(Telerik.Windows.Documents.Fixed.Model.RadFixedPage page, System.Windows.Rect positionInView)
@@ -134,14 +134,14 @@ __Step 1:__ Create a class that inherits the abstract [__FixedPageLayoutInfo__](
 	        //...
 	    }
 	}
-{{endregion}}
+```
 
 __Step 2:__ Create a class that inherits the abstract [__PagesLayoutManagerBase__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.layout.pageslayoutmanagerbase) class, and will be responsible for the layout of the document pages. Implement all abstract members of the class and override them according to your scenario.
        
 
-#### __[C#] Example 2: Implement PagesLayoutManagerBase__
+__Example 2: Implement PagesLayoutManagerBase__
 
-{{region radpdfviewer-customization-and-extensibility-custom-document-presenter_1}}
+```C#
     public class SinglePageLayoutManager : PagesLayoutManagerBase
     {
         private SinglePageInfo visiblePage;
@@ -174,7 +174,7 @@ __Step 2:__ Create a class that inherits the abstract [__PagesLayoutManagerBase_
             // Update pageLayoutInfos here.
         }
     }
-{{endregion}} 
+``` 
 
 
 __Step 3:__ Add a new class for your custom presenter that inherits the abstract [__FixedDocumentPresenterBase__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.fixeddocumentpresenterbase) class which, in turn, inherits the __IFixedDocumentPresenter__ interface.
@@ -187,11 +187,11 @@ __Step 4:__ Implement all the members of the __FixedDocumentPresenterBase__ clas
 __Step 5:__ Register the custom document presenter as demonstrated in **Example 3**.
         
 
-#### __[C#] Example 3: Register a custom document presenter__
+__Example 3: Register a custom document presenter__
 
-{{region radpdfviewer-customization-and-extensibility-custom-document-presenter_2}}
+```C#
 	        this.pdfViewer.RegisterPresenter("CustomPresenterName", new CustomSinglePagePresenter());
-{{endregion}}
+```
 
 
 

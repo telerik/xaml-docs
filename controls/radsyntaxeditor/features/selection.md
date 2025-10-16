@@ -44,32 +44,32 @@ Users can also select text by using their keyboard. Here's a list of the support
 You can modify the appearance of the selection in the control through the **SelectionFill** and **SelectionStroke** properties of RadSyntaxEditor.
 
 #### [XAML] Example 1: Customize the appearance of the selection
-{{region xaml-radsyntaxeditor-features-selection_1}}
+```XAML
 
     <telerik:RadSyntaxEditor x:Name="syntaxEditor" SelectionStroke="DarkRed">
         <telerik:RadSyntaxEditor.SelectionFill>
             <SolidColorBrush Color="Red" Opacity="0.5" />
         </telerik:RadSyntaxEditor.SelectionFill>
     </telerik:RadSyntaxEditor>
-{{endregion}}
+```
 
 
 #### [C#] Example 1: Customize the appearance of the selection
-{{region cs-radsyntaxeditor-features-selection_2}}
+```C#
 
 	this.syntaxEditor.SelectionFill = new System.Windows.Media.SolidColorBrush(Colors.Red); 
 	this.syntaxEditor.SelectionFill.Opacity = 0.2;
 	this.syntaxEditor.SelectionStroke = System.Windows.Media.Brushes.DarkRed;
-{{endregion}}
+```
 
 
 #### [VB.NET] Example 1: Customize the appearance of the selection
-{{region vb-radsyntaxeditor-features-selection_3}}
+```VB.NET
 	
 	Me.syntaxEditor.SelectionFill = New SolidColorBrush(Colors.Red)
 	Ме.syntaxEditor.SelectionFill.Opacity = 0.2
 	Ме.syntaxEditor.SelectionStroke = Brushes.DarkRed
-{{endregion}}
+```
 
 #### Figure 2: RadSyntaxEditor with custom selection colors
 
@@ -80,32 +80,32 @@ You can modify the appearance of the selection in the control through the **Sele
 Through the control's **Selection** property, you can programmatically manipulate the selection and get additional details for the selected span(s). **Example 2** demonstrates how you can get the entire selection as a string through the **GetSelectedText** method.
 
 #### [C#] Example 2: Customize the appearance of the selection
-{{region cs-radsyntaxeditor-features-selection_4}}
+```C#
 
     var selectedText = this.syntaxEditor.Selection.GetSelectedText(); 
-{{endregion}}
+```
 
 ## IsSelectionEnabled
 
 If you want to disable selection for your users, you can set the **IsSelectionEnabled** property of the control to **False**.
 
 #### [XAML] Example 3: Customize the appearance of the selection
-{{region xaml-radsyntaxeditor-features-selection_5}}
+```XAML
 
     <telerik:RadSyntaxEditor x:Name="syntaxEditor" IsSelectionEnabled="False" />
-{{endregion}}
+```
 
 #### [C#] Example 3: Customize the appearance of the selection
-{{region cs-radsyntaxeditor-features-selection_6}}
+```C#
 
 	this.syntaxEditor.IsSelectionEnabled = false;
-{{endregion}}
+```
 
 #### [VB.NET] Example 3: Customize the appearance of the selection
-{{region vb-radsyntaxeditor-features-selection_7}}
+```VB.NET
 	
 	Me.syntaxEditor.IsSelectionEnabled = false
-{{endregion}}
+```
 
 ## See Also
 

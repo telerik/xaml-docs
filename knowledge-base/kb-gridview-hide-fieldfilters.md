@@ -21,17 +21,17 @@ How to remove the field filters in the FilteringControl shown in the RadGridView
 
 To hide the two field filters, set the [ShowFieldFilters]({%slug gridview-filtering-basic%}) property of the GridView column to `false`.
 
-#### __[XAML]__
-{{region kb-gridview-hide-fieldfilters-0}}
+
+```XAML
 	<telerik:GridViewDataColumn ShowFieldFilters="False" />
-{{endregion}}
+```
 
 ## Solution 2
 
 To hide only one of the filters, use the Loaded event of the `FilteringControl` in order to access the corresponding visual elements. Then, set their `Visibility` to `Collapsed`.
 
-#### __[C#]__
-{{region kb-gridview-hide-fieldfilters-1}}
+
+```C#
 	static MainWindow()
 	{
 		EventManager.RegisterClassHandler(typeof(FilteringControl), FilteringControl.LoadedEvent, new RoutedEventHandler(OnFilteringControlLoaded));
@@ -60,4 +60,4 @@ To hide only one of the filters, use the Loaded event of the `FilteringControl` 
 			filter2Editor.Visibility = Visibility.Collapsed;
 		}
 	}
-{{endregion}}
+```

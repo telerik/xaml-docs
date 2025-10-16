@@ -32,13 +32,13 @@ To modify the orientation you just have to set the __Orientation__ property to o
 
 Here is an example of a __vertically__ oriented __RadMenu.__
 
-#### __XAML__
 
-{{region xaml-radmenu-features-orientation_0}}
+
+```XAML
 	<telerik:RadMenu Orientation="Vertical">
 	    ...
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 ![Rad Menu Features Orientation and Drop Down Placement 02](images/RadMenu_Features_Orientation_and_DropDownPlacement_02.png)
 
@@ -58,9 +58,9 @@ If there are any sub-menus in the __RadMenu__ their dropdown position can be spe
 
 Here is an example:
 
-#### __XAML__
 
-{{region xaml-radmenu-features-orientation_1}}
+
+```XAML
 	<telerik:RadMenu>
 	    ...
 	    <telerik:RadMenuItem Header="Edit" DropDownPlacement="Bottom">
@@ -73,7 +73,7 @@ Here is an example:
 	    </telerik:RadMenuItem>
 	    ...
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 ![Rad Menu Features Orientation and Drop Down Placement 03](images/RadMenu_Features_Orientation_and_DropDownPlacement_03.png)
 

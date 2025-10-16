@@ -34,15 +34,15 @@ When generating shapes automatically from the various data formats via __MapShap
 
 In case you are manually generating the shapes inside a layer, you have to manually wrap and pass the data to the ExtendedData property. This one by using the __ExtendedData__ and the __ExtendedPropertySet__ classes. Here is an example:
 
-#### __XAML__
-{{region radmap-features-extended-data_0}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer" />
 	</telerik:RadMap>
-{{endregion}}
+```
 
-#### __C#__
-{{region radmap-features-extended-data_1}}
+
+```C#
 	// Create extended property set.
 	// It can be shared between the number
 	// of the map shapes.
@@ -71,10 +71,8 @@ In case you are manually generating the shapes inside a layer, you have to manua
 	// Assign extended data to the map shape.
 	sofiaEllipse.ExtendedData = sofiaData;
 	this.informationLayer.Items.Add( sofiaEllipse );
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-features-extended-data_2}}
+```
+```VB.NET
 	' Create extended property set.'
 	' It can be shared between the number'
 	' of the map shapes.'
@@ -91,23 +89,23 @@ In case you are manually generating the shapes inside a layer, you have to manua
 	' Assign extended data to the map shape.'
 	sofiaEllipse.ExtendedData = sofiaData
 	Me.informationLayer.Items.Add(sofiaEllipse)
-{{endregion}}
+```
 
 ## Extended Data Converter
 
 To access the data stored in the __ExtendedData__ property simply bind directly to it and use the __ExtendedDataConverter__ class, that comes out of the box with the __RadMap__. To get the desired value you have to also pass the name of the respective property from the set as the __ConverterParameter__. Here is an example, based on the one in the previous section:
 
->tip You can pass a string to the ConvertParameter that combines the values of two or more properties from the Extended Data. To learn how to compose your format string read the [following topic](#ToolTipFormat).
+>tip You can pass a string to the ConvertParameter that combines the values of two or more properties from the Extended Data. 
 
-#### __XAML__
-{{region radmap-features-extended-data_3}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap">
 	    <telerik:InformationLayer x:Name="informationLayer" />
 	</telerik:RadMap>
-{{endregion}}
+```
 
-#### __C#__
-{{region radmap-features-extended-data_4}}
+
+```C#
 	ExtendedPropertySet propertySet = new ExtendedPropertySet();
 	propertySet.RegisterProperty( "Name", "City Name", typeof( string ), String.Empty );
 	propertySet.RegisterProperty( "Population", "Population", typeof( int ), 0 );
@@ -138,10 +136,8 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 	tooltip.SetBinding(ContentProperty, tooltipBinding );
 	ToolTipService.SetToolTip( sofiaEllipse, tooltip );
 	this.informationLayer.Items.Add( sofiaEllipse );
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-features-extended-data_5}}
+```
+```VB.NET
 	Dim propertySet As New ExtendedPropertySet()
 	propertySet.RegisterProperty("Name", "City Name", GetType(String), String.Empty)
 	propertySet.RegisterProperty("Population", "Population", GetType(Integer), 0)
@@ -156,7 +152,7 @@ To access the data stored in the __ExtendedData__ property simply bind directly 
 	_tooltip.SetBinding(ContentProperty, tooltipBinding)
 	ToolTipService.SetToolTip(sofiaEllipse, _tooltip)
 	Me.informationLayer.Items.Add(sofiaEllipse)
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

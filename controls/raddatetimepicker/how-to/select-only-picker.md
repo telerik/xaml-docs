@@ -16,7 +16,7 @@ To do this you will have to slightly modify the template of your __RadDateTimePi
 
 * Generate the default __RadDateTimePicker's__ template.
 
->tipTo see how to do this [read here]({%slug raddatetimepicker-styling-raddatetimepicker%}). You can also learn more about the __RadDateTimePicker's__[Template Structure]({%slug raddatetimepicker-styling-template-structure%}).
+>tipTo see how to do this [read here]({%slug raddatetimepicker-styling-raddatetimepicker%}).
 
 * Select the __RadWatermarkTextBox__ called __PART_DateTimeInput__ and set its __IsReadOnly__ property to __True__.
 

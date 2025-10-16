@@ -33,8 +33,8 @@ How to show a multipage Tiff file in the RadPdfViewer with the help of the _Syst
 
 This functionality can be achieved by splitting the multipage TIFF file into single page ones. Then to insert them into a [RadFixedDocument]({%slug radpdfviewer-document-model-radfixeddocument%}) as a **RadFixedPages** content.
 
-#### __[C#] Example 1: Loading the TIFF file__
-{{region kb-pdfviewer-load-multipage-tiff-using-tiffbitmapdecoder-0}}
+__Example 1: Loading the TIFF file__
+```C#
 
     private void LoadTiff(object sender, RoutedEventArgs e)
     {
@@ -53,10 +53,10 @@ This functionality can be achieved by splitting the multipage TIFF file into sin
         this.pdfViewer.Document = radFixedDocument;
     }
 
-{{endregion}}
+```
 
-#### __[C#] Example 2: Splitting the TIFF file__
-{{region kb-pdfviewer-load-multipage-tiff-using-tiffbitmapdecoder-1}}
+__Example 2: Splitting the TIFF file__
+```C#
 
     private Bitmap[] SplitTiff(string inputFilePath)
     {
@@ -87,10 +87,10 @@ This functionality can be achieved by splitting the multipage TIFF file into sin
         return bitmaps;
     }
 
-{{endregion}}
+```
 
-#### __[C#] Example 3: Converting the Bitmap to a BitmapSource__
-{{region kb-pdfviewer-load-multipage-tiff-using-tiffbitmapdecoder-2}}
+__Example 3: Converting the Bitmap to a BitmapSource__
+```C#
 
     private BitmapSource ConvertToBitmapSource(Bitmap bitmap)
     {
@@ -103,7 +103,7 @@ This functionality can be achieved by splitting the multipage TIFF file into sin
         return bitmapSource;
     }
 
-{{endregion}}
+```
 
 ## Notes
 

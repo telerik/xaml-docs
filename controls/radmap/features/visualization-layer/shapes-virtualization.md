@@ -58,21 +58,21 @@ The following example demonstrates how to use the __UI Virtualization__ feature 
 
 When you will try to load this file using the shape-file reader directly like the code below then the performance of zooming and panning will be very low.
 
-#### __XAML__
-{{region radmap-visualization-layer-shapes-virtualization_6}}	
+
+```XAML	
 	<telerik:VisualizationLayer x:Name="visualizationLayer" UseBitmapCache="False">
 		<telerik:VisualizationLayer.Reader>
 			<telerik:AsyncShapeFileReader Source="/ShapeVirtualization;component/Resources/County.shp" />
 		</telerik:VisualizationLayer.Reader>
 	</telerik:VisualizationLayer>
-{{endregion}}
+```
 	
 Such performance is a reason to use the __Map Shapes Virtualization__ to improve the performance of rendering.        
 
 If it is acceptable for your application just to restrict the zoom level, then it is possible to use built-in __MapShapeDataVirtualizationSource__. First you need to configure the __ZoomLevelGridList__ property. It can be configured to show counties from the zoom level 8 when the rendering is quite fast. It could be done with the following XAML code:
         
-#### __XAML__
-{{region radmap-visualization-layer-shapes-virtualization_0}}
+
+```XAML
     <UserControl x:Class="ShapeVirtualization.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -109,12 +109,12 @@ If it is acceptable for your application just to restrict the zoom level, then i
             </telerik:RadBusyIndicator>
         </Grid>
     </UserControl>
-{{endregion}}
+```
 
 To start loading the shape-file you should invoke the __MapShapeDataVirtualizationSource.ReadAsync__ method:
         
-#### __C#__
-{{region radmap-visualization-layer-shapes-virtualization_1}}
+
+```C#
 	using System.Windows;
 	using System.Windows.Controls;
 	
@@ -136,10 +136,8 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-visualization-layer-shapes-virtualization_2}}	
+```
+```VB.NET	
 	Partial Public Class MainPage
 		Inherits UserControl
 		Public Sub New()
@@ -153,12 +151,12 @@ To start loading the shape-file you should invoke the __MapShapeDataVirtualizati
 			Me.mapShapeDataVirtualizationSource.ReadAsync()
 		End Sub
 	End Class
-{{endregion}}
+```
 
 If your application cannot limit zoom level and it requires that some data still be visible on the low zoom levels (1 – 7) then you can use approach which show different sets of shapes for different zoom levels. For example, you can show the map of USA states for lower zoom levels (1-7). In this case you should design your own custom virtualization source class which will show data depend on the zoom level. The sample code below uses the “usa_states” shape-file which is also used in the [United States](https://demos.telerik.com/silverlight/#Map/Shapefile/UnitedStates) demo.
         
-#### __C#__
-{{region radmap-visualization-layer-shapes-virtualization_3}}
+
+```C#
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
@@ -294,10 +292,8 @@ If your application cannot limit zoom level and it requires that some data still
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-visualization-layer-shapes-virtualization_4}}	
+```
+```VB.NET	
 	Public Class ShapeDataVirtualizer
 		Implements IMapItemsVirtualizationSource
 		Private sateData As List(Of ExtendedDataProvider)
@@ -394,13 +390,13 @@ If your application cannot limit zoom level and it requires that some data still
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 The sample code of the custom virtualization source class is below.
 
 This class can be used in the XAML code like the following way:
-#### __XAML__
-{{region radmap-visualization-layer-shapes-virtualization_5}}
+
+```XAML
     <UserControl x:Class="ShapeVirtualization.MainPage"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -441,7 +437,7 @@ This class can be used in the XAML code like the following way:
             </telerik:RadBusyIndicator>
         </Grid>
     </UserControl>	
-{{endregion}}
+```
 
 In the snapshots below you can see how the above example will be displayed with different ZoomLevel settings.
 

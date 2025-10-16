@@ -43,8 +43,8 @@ RadAutoSuggestBox allows you to visualize a list of search results on demand whe
 
 In the following example you will see a sample data provider that returns a list of countries that is filtered and displayed on text changed.
 
-#### __[C#] Example 1: Creating sample data provider__
-{{region radautosuggestbox-getting-started-0}}
+__Example 1: Creating sample data provider__
+```C#
 	public static class CountryDataProvider
 	{
 		private static List<CountryInfo> Countries { get; set; }
@@ -75,20 +75,20 @@ In the following example you will see a sample data provider that returns a list
     {
         public string Name { get; set; }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Defining RadAutoSuggestBox and subscribing to TextChanged__
-{{region radautosuggestbox-getting-started-1}}
+__Example 2: Defining RadAutoSuggestBox and subscribing to TextChanged__
+```XAML
 	<telerik:RadAutoSuggestBox x:Name="radAutoSuggestBox"
 							   TextChanged="RadAutoSuggestBox_TextChanged"
 							   DisplayMemberPath="Name" 
 							   TextMemberPath="Name" 							   
 							   WatermarkContent="Type here" 
 							   NoResultsContent="No results found" />
-{{endregion}}
+```
 
-#### __[C#] Example 3: Implementing filtering in the TextChanged event handler__
-{{region radautosuggestbox-getting-started-2}}
+__Example 3: Implementing filtering in the TextChanged event handler__
+```C#
 	private void RadAutoSuggestBox_TextChanged(object sender, Controls.AutoSuggestBox.TextChangedEventArgs e)
 	{
 		if (e.Reason == TextChangeReason.UserInput)
@@ -96,7 +96,7 @@ In the following example you will see a sample data provider that returns a list
 			this.radAutoSuggestBox.ItemsSource = CountryDataProvider.GetCountriesByText(this.radAutoSuggestBox.Text);
 		}            
 	}
-{{endregion}}
+```
 
 The definition in __Example 2__ has few additional settings:
 
@@ -122,10 +122,10 @@ After selecting an item from the drop down list or click on the query icon, you 
 
 The drop down of the control can be opened or closed manually by setting its __IsDropDownOpen__ property.
 
-#### __[XAML] Example 2: Setting IsDropDownOpen__
-{{region radautosuggestbox-getting-started-3}}
+__Example 2: Setting IsDropDownOpen__
+```XAML
 	<telerik:RadAutoSuggestBox IsDropDownOpen="True" />
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -143,8 +143,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region xaml-radautosuggestbox-getting-started_4}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -154,7 +154,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the [StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf).
 

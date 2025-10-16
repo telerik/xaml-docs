@@ -18,9 +18,9 @@ This help article will show you how to create generic expression SortDescriptor&
 
 The __RadGridView__ control allows for ordering the data items by the result of a complex calculation without having to expose it through a read-only property. All you need to do is to use a __SortDescriptor&lt;TElement, TKey=&gt;__. In order to demonstrate this, we will setup the RadGridView as demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Setting up the RadGridView__
+__Example 1: Setting up the RadGridView__
 
-{{region xaml-gridview-howto-use-expression-descriptors_0}}
+```XAML
 	<Grid>
         <Grid.DataContext>
             <my:MyViewModel />
@@ -46,13 +46,13 @@ The __RadGridView__ control allows for ordering the data items by the result of 
             <Button Content="Add Generic SortDescriptor" Click="Button_Click" />
         </StackPanel>
     </Grid>
-{{endregion}}
+```
 
 After that, when the button is clicked we will create a generic SortDescriptor and add it to the __SortDescriptors__ collection of the RadGridView. Note, that in __Example 2__ we are simply returning a property of the bound object, however we have the option of working with all of its properties in order to construct a SortingExpression. 
 
-#### __[C#] Example 2: Create a generic SortDescriptor__
+__Example 2: Create a generic SortDescriptor__
 
-{{region cs-gridview-howto-use-expression-descriptors_1}}
+```C#
 	private void Button_Click(object sender, RoutedEventArgs e)
 	{
 		var descriptor = new SortDescriptor<Club, int>
@@ -63,7 +63,7 @@ After that, when the button is clicked we will create a generic SortDescriptor a
 
 		this.clubsGrid.SortDescriptors.Add(descriptor);
 	}
-{{endregion}}
+```
         
 > For more information you can check the [Sorting section]({%slug gridview-sorting-basics%}).
         

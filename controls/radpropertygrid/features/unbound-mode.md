@@ -18,9 +18,9 @@ When non-auto-generated PropertyDefinitions are used, RadPropertyGrid relies on 
 
 The following examples illustrate two possible hierarchies based on the following class definitions:
 
-#### __[C#] Example 1: Prepare sample objects__
+__Example 1: Prepare sample objects__
 
-	{{region cs-radpropertygrid-unbound-mode_2}}
+```C#
 	public class Employee
 	{
 	    public string Name { get; set; }
@@ -32,11 +32,8 @@ The following examples illustrate two possible hierarchies based on the followin
 	    public string Name { get; set; }
 	    public int ID { get; set; }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Prepare sample objects__
-
-	{{region vb-radpropertygrid-unbound-mode_2}}
+```
+```VB.NET
 	Public Class Employee
 	    Public Property Name() As String
 	    Public Property HireDate() As Date
@@ -46,13 +43,13 @@ The following examples illustrate two possible hierarchies based on the followin
 	    Public Property Name() As String
 	    Public Property ID() As Integer
 	End Class
-{{endregion}}
+```
 
 And the sample data:
 
-#### __[C#] Example 2: Prepare sample data__
+__Example 2: Prepare sample data__
 
-	{{region cs-radpropertygrid-unbound-mode_3}}
+```C#
 	InitializeComponent();
 	this.rpg.Item = new Employee()
 	{
@@ -64,11 +61,8 @@ And the sample data:
 	        Name = "US Department"
 	    }
 	};
-{{endregion}}
-
-#### __[VB.NET] Example 2: Prepare sample data__
-
-	{{region vb-radpropertygrid-unbound-mode_3}}
+```
+```VB.NET
 	Public Sub New()
 	    InitializeComponent()
 	    Me.rpg.Item = New Employee() With {
@@ -80,11 +74,11 @@ And the sample data:
 	        }
 	    }
 	End Sub
-{{endregion}}
+```
 
-#### __[XAML] Example 3: RadPropertyGrid UnboundMode first example__
+__Example 3: RadPropertyGrid UnboundMode first example__
 
-	{{region xaml-radpropertygrid-unbound-mode_0}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="rpg" 
 	                         AutoGenerateBindingPaths="False" 
 	                         AutoGeneratePropertyDefinitions="False" 
@@ -104,13 +98,13 @@ And the sample data:
 	        </telerik:PropertyDefinition>
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 ![Rad Property Grid Unboud Mode 1](images/RadPropertyGrid_UnboudMode1.png)
 
-#### __[XAML] Example 4: RadPropertyGrid UnboundMode second example__
+__Example 4: RadPropertyGrid UnboundMode second example__
 
-	{{region xaml-radpropertygrid-unbound-mode_1}}
+```XAML
 	<telerik:RadPropertyGrid x:Name="rpg1" 
 	                         AutoGenerateBindingPaths="False" 
 	                         AutoGeneratePropertyDefinitions="False" 
@@ -128,6 +122,6 @@ And the sample data:
 	        <telerik:PropertyDefinition DisplayName="HireDate" Binding="{Binding HireDate}" />
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 ![Rad Property Grid Unboud Mode 2](images/RadPropertyGrid_UnboudMode2.png)

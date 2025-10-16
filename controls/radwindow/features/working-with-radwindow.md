@@ -18,21 +18,18 @@ In order to use the __RadWindow__ in your application you have to add a referenc
 
 After the reference is available, you can declare a __RadWindow__. Here is an example.
 
-#### __C#__
 
-{{region cs-radwindow-features-working-with-radwindow_0}}
+
+```C#
 	RadWindow radWindow = new RadWindow();
 	radWindow.Width = 400;
 	radWindow.Height = 300;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-working-with-radwindow_1}}
+```
+```VB.NET
 	Dim radWindow As New RadWindow()
 	radWindow.Width = 400
 	radWindow.Height = 300
-{{endregion}}
+```
 
 ## Show the RadWindow
 
@@ -42,31 +39,25 @@ When you want to display the __RadWindow__ you have two options - to display it 
 
 Call the __Show()__ method of the __RadWindow__ instance to open it as a __normal window__.
 
-#### __C#__
 
-{{region cs-radwindow-features-working-with-radwindow_2}}
+
+```C#
 	radWindow.Show();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-working-with-radwindow_3}}
+```
+```VB.NET
 	radWindow.Show()
-{{endregion}}
+```
 
 Call the __ShowDialog()__ method of the __RadWindow__ instance to open it as a __modal dialog window__.
 
-#### __C#__
 
-{{region cs-radwindow-features-working-with-radwindow_4}}
+
+```C#
 	radWindow.ShowDialog();
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-working-with-radwindow_5}}
+```
+```VB.NET
 	radWindow.ShowDialog()
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadWindow Shown As Modal Dialog](images/RadWindow_Working_with_RadWindow_01.png)
 
@@ -82,45 +73,39 @@ If you have a window-specific content, use the __Content__ property.
 
 >The only scenario, where you can add content to the __RadWindow__ at design-time, is when the __RadWindow__ represents an entire user control. To learn more about that read [here]({%slug radwindow-how-to-use-radwindow-as-user-control%}).
 
-#### __C#__
 
-{{region cs-radwindow-features-working-with-radwindow_6}}
+
+```C#
 	Grid grid = new Grid();
 	grid.Background = new SolidColorBrush(Color.FromArgb(255, 240, 255, 255));
 	radWindow.Content = grid;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-working-with-radwindow_7}}
+```
+```VB.NET
 	Dim grid As New Grid()
 	grid.Background = New SolidColorBrush(Color.FromArgb(255, 240, 255, 255))
 	radWindow.Content = grid
-{{endregion}}
+```
 
 If you want to share a common layout structure for the content of multiple windows, define an appropriate __DataTemplate__ and set it to the __ContentTemplate__ property of the __RadWindow__.
 
-#### __XAML__
 
-{{region xaml-radwindow-features-working-with-radwindow_8}}
+
+```XAML
 	<UserControl.Resources>
 	    <DataTemplate x:Key="WindowContentTemplate">
 	        <Grid Background="Azure" />
 	    </DataTemplate>
 	</UserControl.Resources>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region cs-radwindow-features-working-with-radwindow_9}}
+
+```C#
 	radWindow.ContentTemplate = this.Resources["WindowContentTemplate"] as DataTemplate;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radwindow-features-working-with-radwindow_10}}
+```
+```VB.NET
 	radWindow.ContentTemplate = TryCast(Me.Resources("WindowContentTemplate"), DataTemplate)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadWindow Custom Content Template](images/RadWindow_Working_with_RadWindow_02.png)
 

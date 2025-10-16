@@ -18,9 +18,9 @@ You can modify the look of the __RadGanttView__ and its elements separately by s
 
 Let’s for example have a GanttView control defined like this:
 
-#### __XAML__
 
-{{region xaml-radganttview-styles-and-templates-overview_0}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.TimeRulerLines>
 	        <telerik:GroupTickLine>
@@ -39,7 +39,7 @@ Let’s for example have a GanttView control defined like this:
 	        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 The following scheme shows the name of each element  that can be styled:
 
@@ -51,9 +51,9 @@ In the next screenshots we will focus on the Columns part of the GanttView contr
 
 If we have CellTemplate and/or CellEditTemplate defined, the generated containers are different. For example, let&s change our GanttView Columns like this:
 
-#### __XAML__
 
-{{region xaml-radganttview-styles-and-templates-overview_4}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}" >
 	    <!--...-->
 	    <telerik:RadGanttView.Columns>
@@ -84,7 +84,7 @@ If we have CellTemplate and/or CellEditTemplate defined, the generated container
 	        <!--...-->
 	    </telerik:RadGanttView.Columns>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 The containers in the grid will be Cell/TreeCell instead of SimpleCell/SimpleTreeCell. Also the containers for editing will be CellEditing/TreeCellEditing:
 
@@ -92,16 +92,16 @@ The containers in the grid will be Cell/TreeCell instead of SimpleCell/SimpleTre
 
 In case we have SpecialSlots defined:
 
-#### __XAML__
 
-{{region xaml-radganttview-styles-and-templates-overview_1}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}" >
 	    <!--...-->
 	    <telerik:RadGanttView.SpecialSlotsGenerator>
 	        <telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
 	    </telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 We can style them as well:
 
@@ -161,14 +161,14 @@ Each of these containers listed in the table has a style formed by the name of t
 
 So, let’s create the following implicit style:
 
-#### __XAML__
 
-{{region xaml-radganttview-styles-and-templates-overview_2}}
+
+```XAML
 	<Style TargetType="telerik:EventContainer" BasedOn="{StaticResource EventContainerStyle}">
 	    <Setter Property="Foreground" Value="White" />
 	    <Setter Property="Background" Value="Navy" />
 	</Style>
-{{endregion}}
+```
 
 This will lead to the following result:
 
@@ -178,9 +178,9 @@ This will lead to the following result:
 
 In case you need to further customize an element, you could create an implicit style for it. Here is a simple example for the DragResizeSlotHighlightContainer element:
 
-#### __XAML__
 
-{{region xaml-radganttview-styles-and-templates-overview_3}}
+
+```XAML
 	<Style TargetType="gantt:DragResizeSlotHighlightContainer">
 	    <Setter Property="BorderBrush" Value="{x:Null}" />
 	    <Setter Property="BorderThickness" Value="0" />
@@ -204,6 +204,6 @@ In case you need to further customize an element, you could create an implicit s
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 After adding this Style, the element will look like this:![ganttview styles 07](images/ganttview_styles_07.png)

@@ -16,9 +16,9 @@ A calculated item is a new item in a row or column field in which the values are
 
 With __RadPivotGrid__ you are able to create different Groups that will be shown in Rows and Columns. But in some cases you may need to show additional items for specific group. In this case you may use Calculated Items. Calculated Items are added to a group description and they have access to different items from the same group. For example, lets say we want to calculate the average sales made by some of the salespeople, but not all of them. First we have to create a concrete class that implements the abstract *CalculatedItem* class. For this purpose the new class must implement GetValue method. In our scenario we'll show the average sales of four of the salespeople:       
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-calc-items_1}}
+
+```C#
 	public class MenAverageSales : CalculatedItem
 	{
 	    protected override AggregateValue GetValue(IAggregateSummaryValues aggregateSummaryValues)
@@ -39,11 +39,8 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 	        return new DoubleAggregateValue(average);
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-calc-items_1}}
+```
+```VB.NET
 	Public Class MenAverageSales
 	    Inherits CalculatedItem
 	
@@ -60,13 +57,13 @@ With __RadPivotGrid__ you are able to create different Groups that will be shown
 	        Return New DoubleAggregateValue(average)
 	    End Function
 	End Class
-{{endregion}}
+```
 
 As you can see the Calculated Item will show the average sales of four people. Now we just have to add it to the QueryablePropertyGroupDescription. In our case this will be the Salesperson group:       
 
-#### __XAML__
 
-{{region radpivotgrid-features-queryable-calc-items_2}}
+
+```XAML
 	<pivot:QueryableDataProvider.ColumnGroupDescriptions>
 	    <pivot:QueryablePropertyGroupDescription PropertyName="Salesperson">
 	        <pivot:QueryablePropertyGroupDescription.CalculatedItems>
@@ -74,29 +71,26 @@ As you can see the Calculated Item will show the average sales of four people. N
 	        </pivot:QueryablePropertyGroupDescription.CalculatedItems>
 	    </pivot:QueryablePropertyGroupDescription>
 	</pivot:QueryableDataProvider.ColumnGroupDescriptions>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-calc-items_2}}
+
+```C#
 	var propertyGroupDescription = new QueryablePropertyGroupDescription();
 	propertyGroupDescription.PropertyName = "Salesperson";
 	var calculatedItem = new MenAverageSales();
 	calculatedItem.GroupName = "Average Sales (Men)";
 	propertyGroupDescription.CalculatedItems.Add(calculatedItem);
 	dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-calc-items_2}}
+```
+```VB.NET
 	Dim propertyGroupDescription = New QueryablePropertyGroupDescription()
 	propertyGroupDescription.PropertyName = "Salesperson"
 	Dim calculatedItem = New MenAverageSales()
 	calculatedItem.GroupName = "Average Sales (Men)"
 	propertyGroupDescription.CalculatedItems.Add(calculatedItem)
 	dataProvider.ColumnGroupDescriptions.Add(propertyGroupDescription)
-{{endregion}}
+```
 
 ![Rad Pivot Grid Features Local Calc Items 01](images/RadPivotGrid_Features_Local_Calc_Items_01.png)
 
@@ -116,9 +110,9 @@ As you can see the Calculated Item will show the average sales of four people. N
 
 Calculated items can be added only to Group Descriptions. If you are using __RadPivotFieldList__ the users can remove the group for which you've added calculated items and this way the calculated items will be removed as well. Adding the same group in rows or columns will not show the calculated items anymore. In order to add them again you have to use *PrepareDescriptionForField* event of QueryableDataProvider and add the calculated items to the description:        
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-calc-items_3}}
+
+```C#
 	private void QueryableDataProvider_PrepareDescriptionForField(object sender, PrepareDescriptionForFieldEventArgs e)
 	{
 		if (e.DescriptionType == DataProviderDescriptionType.Group && e.FieldInfo.DisplayName == "Salesperson")
@@ -133,11 +127,8 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 			}
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-calc-items_3}}
+```
+```VB.NET
 	Private Sub QueryableDataProvider_PrepareDescriptionForField(ByVal sender As Object, ByVal e As PrepareDescriptionForFieldEventArgs)
 	    If e.DescriptionType = DataProviderDescriptionType.Group AndAlso e.FieldInfo.DisplayName = "Salesperson" Then
 	        Dim description = TryCast(e.Description, QueryablePropertyGroupDescription)
@@ -149,15 +140,15 @@ Calculated items can be added only to Group Descriptions. If you are using __Rad
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## Solve Order
 
 If you have calculated items in both rows and columns group descriptions, you have to define which of them will be used for the intersected cells. That's why each Calculated Item has *SolveOrder* property - when a cell is an intersection between two calculated items the one with higher solve order will be used.        
 
-#### __XAML__
 
-{{region radpivotgrid-features-queryable-calc-items_4}}
+
+```XAML
 	<pivot:QueryableDataProvider.RowGroupDescriptions>
 	    <pivot:QueryablePropertyGroupDescription PropertyName="Country">
 	        <pivot:QueryablePropertyGroupDescription.CalculatedItems>
@@ -173,11 +164,11 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	        </pivot:QueryablePropertyGroupDescription.CalculatedItems>
 	    </pivot:QueryablePropertyGroupDescription>
 	</pivot:QueryableDataProvider.ColumnGroupDescriptions>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radpivotgrid-features-queryable-calc-items_4}}
+
+```C#
 	var salesPersonGroupDescription = new QueryablePropertyGroupDescription();
 	salesPersonGroupDescription.PropertyName = "Salesperson";
 	var menAvgSalesCalculatedItem = new MenAverageSales();
@@ -194,11 +185,8 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	
 	dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription);
 	dataProvider.RowGroupDescriptions.Add(countryGroupDescription);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radpivotgrid-features-queryable-calc-items_4}}
+```
+```VB.NET
 	Dim salesPersonGroupDescription = New QueryablePropertyGroupDescription()
 	salesPersonGroupDescription.PropertyName = "Salesperson"
 	Dim menAvgSalesCalculatedItem = New MenAverageSales()
@@ -215,7 +203,7 @@ If you have calculated items in both rows and columns group descriptions, you ha
 	
 	dataProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
 	dataProvider.RowGroupDescriptions.Add(countryGroupDescription)
-{{endregion}}
+```
 
 Here is the result:
 

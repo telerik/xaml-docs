@@ -36,8 +36,8 @@ __SOLUTIONs__
 
 When an element is exported through the [ExportToXlsx]({%slug gridview-export-xlsx%}), [ExportToPdf]({%slug gridview-export-pdf%}) or [ExportToWorkbook]({%slug gridview-export-workbook%}) or methods, the arguments of the [ElementExportingToDocument]({%slug gridview-export-events-elementexporting-elementexported-todocument%}) event can be used to modify the visual appearance of the exported values and specify how they should be [formatted](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/format-codes#date-and-time-formatting) in Excel. This is achieved through the  `VisualParameters` property of the `GridViewCellExportingEventArgs`.
 
-#### __[C#] Exporting DateTime Values to Excel__
-{{region cs-gridview-export-how-to-export-datetime-1}}
+__Exporting DateTime Values to Excel__
+```C#
 	this.radGridView.ElementExportingToDocument += (s, e) =>
 	{
 	    if (e.Element == ExportElement.Cell)
@@ -53,10 +53,8 @@ When an element is exported through the [ExportToXlsx]({%slug gridview-export-xl
 	        }
 	    }
 	};
-{{endregion}}
-
-#### __[VB.NET] Exporting DateTime Values to Excel__
-{{region vb-gridview-export-how-to-export-datetime-2}}
+```
+```VB.NET
 	AddHandler Me.radGridView.ElementExportingToDocument, Sub(s, e)
 	                                                          If e.Element = ExportElement.Cell Then
 	                                                              Dim cellExportingArgs = TryCast(e, GridViewCellExportingEventArgs)
@@ -66,7 +64,7 @@ When an element is exported through the [ExportToXlsx]({%slug gridview-export-xl
 	                                                              End If
 	                                                          End If
 	                                                      End Sub 
-{{endregion}}
+```
 
 __Exporting DateTime values with ElementExportingToDocument__
 
@@ -76,8 +74,8 @@ __Exporting DateTime values with ElementExportingToDocument__
 
 When exporting the RadGridView with the [GridViewSpreadStreamExport class]({%slug gridview-export-spreadsheetstreamingexport%}), the event arguments of `ElementExportingToDocument` event will be of the type of `GridViewSpreadStreamElementExportingEventArgs`. To format the number value, create a new `SpreadCellFormat` instance and set the `NumberFormat` property. To apply the formatting, create a new SpreadStreamCellStyle instance, set the created `SpreadCellFormat` to its `CellFormat` property, and apply it to the `e.Style` property of the event arguments. 
 
-#### __[C#] Specify a format when exporting with the GridViewSpreadStreamExport class__
-{{region gridview-export-how-to-export-datetime-3}}
+__Specify a format when exporting with the GridViewSpreadStreamExport class__
+```C#
 	private static void SpreadStreamExport_ElementExportingToDocument(object sender, GridViewSpreadStreamElementExportingEventArgs e)
 	{
 		if (e.Element == SpreadStreamExportElement.Cell && e.Value is DateTime)
@@ -91,10 +89,8 @@ When exporting the RadGridView with the [GridViewSpreadStreamExport class]({%slu
 			};
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Specify a format when exporting with the GridViewSpreadStreamExport class__
-{{region gridview-export-how-to-export-datetime-4}}
+```
+```VB.NET
 	Private Shared Sub SpreadStreamExport_ElementExportingToDocument(ByVal sender As Object, ByVal e As GridViewSpreadStreamElementExportingEventArgs)
 	    If e.Element = SpreadStreamExportElement.Cell AndAlso TypeOf e.Value Is DateTime Then
 	        e.Style = New SpreadStreamCellStyle() With {
@@ -104,7 +100,7 @@ When exporting the RadGridView with the [GridViewSpreadStreamExport class]({%slu
 	        }
 	    End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 

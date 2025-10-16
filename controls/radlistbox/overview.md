@@ -35,15 +35,14 @@ __RadListBox__ is a {{ site.framework_name }} control used to display a list of 
 
 >caution  If you are using [NoXaml binaries]({%slug implicit-styles-styling-the-controls%}), and you have custom Style targeting RadListBoxItem, you have to base the style on the default one of the control. Example 1 demonstrates this approach. __Example 1__ demonstrate this approach.
 
-#### __[C#] Example 1: Implicit Style with BasedOn property set__
-	{{region cs-radlistbox-overview_1}}
+__Example 1: Implicit Style with BasedOn property set__
+```C#
 	 <Style TargetType="telerik:RadListBoxItem" BasedOn="{StaticResource RadListBoxItemStyle}"/>
-{{endregion}}
+```
 
-         
 >tip Get started with the control with its [Getting Started]({%slug radlistbox-getting-started%}) help article that shows how to use it in a basic scenario.
 
-> Check out the control demos at {% if site.site_name == 'Silverlight' %}[demos.telerik.com](https://demos.telerik.com/silverlight/#ListBox){% endif %}{% if site.site_name == 'WPF' %}[demos.telerik.com](https://demos.telerik.com/wpf/){% endif %}
+> Check out the control demos at [demos.telerik.com](https://demos.telerik.com/wpf/)
 
 {% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources

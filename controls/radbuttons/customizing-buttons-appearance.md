@@ -18,8 +18,8 @@ To modify the template of a button, you can set the `Template` property.
 
 The following example shows how to define implicit styles for all available RadButton elements. An implicit style is a `Style` object without its `x:Key` set, which will apply it to all elements of the corresponding `TargetType` in the style's scope.
 
-#### __[XAML] Implicit styles for the RadButton elements__
-{{region radbuttons-customizing-buttons-appearance-0}}
+__Implicit styles for the RadButton elements__
+```XAML
 	<Window.Resources>
 		<!-- In case you are using the NoXaml version of the Telerik dlls, you should also set the BasedOn property of the Style -->		
 		
@@ -80,12 +80,12 @@ The following example shows how to define implicit styles for all available RadB
 			<Setter Property="Background" Value="Bisque"/> 
 		</Style> 
 	</Window.Resources>
-{{endregion}}
+```
 
 If you need to apply a custom `Style` to a specific button instance, you can set its `x:Key` and then assign the `Style` property of the button.
 
-#### __[XAML] An explicit style for assigned to a RadButton element__
-{{region radbuttons-customizing-buttons-appearance-1}}
+__An explicit style for assigned to a RadButton element__
+```XAML
 	<Window.Resources>
 		<!-- In case you are using the NoXaml version of the Telerik dlls, you should also set the BasedOn property of the Style -->				
 		<!-- <Style x:Key="CustomButtonStyle" TargetType="telerik:RadButton" BasedOn="{StaticResource RadButtonStyle}">  -->
@@ -95,7 +95,7 @@ If you need to apply a custom `Style` to a specific button instance, you can set
 	</Window.Resources>	
 	<!-- -->
 	<telerik:RadButton Style="{StaticResource CustomButtonStyle}" />
-{{endregion}}
+```
 
 In case you need to modify the `ControlTemplate` of a button, you can [open the Telerik.Windows.Controls.xaml file]({%slug styling-apperance-editing-control-templates%}) and copy the template of the corresponding button in your project, and then change it as needed.
 

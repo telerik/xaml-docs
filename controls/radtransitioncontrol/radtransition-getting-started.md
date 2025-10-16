@@ -40,17 +40,17 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 In order to add a __RadTransitionControl__ to your application, you have to simply create an instance of it in your XAML. As the __RadTransitionControl__ is located in the __Telerik.Windows.Controls__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add the following namespace declaration in your __UserControl__:
 
-#### __[XAML] Example 1: Adding telerik namespace__
+__Example 1: Adding telerik namespace__
 
-{{region xaml-radtransition-getting-started_0}}
+```XAML
 	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Creating a RadTransitionControl__
+__Example 2: Creating a RadTransitionControl__
 
-{{region xaml-radtransition-getting-started_1}}
+```XAML
 	<telerik:RadTransitionControl x:Name="radTransitionControl" />
-{{endregion}}
+```
 
 >The __RadTransitionControl__ doesn't have any visual elements, so if it has no content, nothing will be visualized.
 
@@ -60,9 +60,9 @@ The RadTransitionControl is a content control. Besides displaying content it can
 
 Here is a sample __RadListBox__ definition, which is populated with RadListBoxItems with a string for __Content__.
 
-#### __[XAML] Example 3: Sample RadListBox definition__
+__Example 3: Sample RadListBox definition__
 
-{{region xaml-radtransition-getting-started_2}}
+```XAML
 	 <telerik:RadListBox x:Name="radListBox">
 		<telerik:RadListBox.Items>
 			<telerik:RadListBoxItem Content="Telerik UI" />
@@ -70,15 +70,15 @@ Here is a sample __RadListBox__ definition, which is populated with RadListBoxIt
 			<telerik:RadListBoxItem Content="Getting started" />
 		</telerik:RadListBox.Items>
 	</telerik:RadListBox>
-{{endregion}}
+```
 
 The content of the __RadTransitionControl__ should be represented by the content of the __SelectedItem__ in the __RadListBox__. This can be done by using element to element binding.
 
 >tipYou can learn more about binding the __RadTransitionControl__ in the [Data Binding]({%slug radtransition-features-data-binding%}) topic.
 
-#### __[XAML] Example 4: Binding RadTransitionControl Content__
+__Example 4: Binding RadTransitionControl Content__
 
-{{region xaml-radtransition-getting-started_3}}
+```XAML
 	<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -102,7 +102,7 @@ The content of the __RadTransitionControl__ should be represented by the content
             </telerik:RadTransitionControl>
         </Border>
     </Grid>
-{{endregion}}
+```
 
 If you run your application at this point, the content of the __RadTransitionControl__ should change when you select an item in the __RadListBox__.
 
@@ -114,17 +114,17 @@ The __RadTransitionControl__ automatically detects when the content is changed a
 
 As the built-in transition effects are located in the __Telerik.Windows.Controls.TransitionEffects__ namespace of the __Telerik.Windows.Controls__ assembly, you have to add the following namespace declaration in your __UserControl__:
 
-#### __[XAML] Example 5: Adding TransitionEffects namespace__
+__Example 5: Adding TransitionEffects namespace__
 
-{{region xaml-radtransition-getting-started_4}}
+```XAML
 	xmlns:telerikTransitions="clr-namespace:Telerik.Windows.Controls.TransitionEffects;assembly=Telerik.Windows.Controls"
-{{endregion}}
+```
 
 In order to change the applied transition you can set the __Transition__ property of the RadTransitionControl to one of the available transitions in the __TransitionEffects__ namespace.
 
-#### __[XAML] Example 6: Applying SlideAndZoomTransition to RadTransitionControl__
+__Example 6: Applying SlideAndZoomTransition to RadTransitionControl__
 
-{{region xaml-radtransition-getting-started_5}}
+```XAML
 	 <telerik:RadTransitionControl
                 			Grid.Column="1"
                             FontSize="35"
@@ -136,7 +136,7 @@ In order to change the applied transition you can set the __Transition__ propert
 			<telerikTransitions:SlideAndZoomTransition />
 		</telerik:RadTransitionControl.Transition>
 	</telerik:RadTransitionControl>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 6__
 ![SlideAndZoomTransition in RadTransitionControl](images/RadTransition_Getting_Started_01.png)

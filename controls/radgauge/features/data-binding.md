@@ -24,8 +24,8 @@ Additionally the indicators expose an API which allows you to control the displa
 
 Here is the __RadGauge__ instance and the sample value collection, which will be used throughout the examples in this topic:      
 
-#### __XAML__
-{{region radgauge-features-data-binding_0}}
+
+```XAML
 	<telerik:RadRadialGauge telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale Min="0"
 	                         Max="100"
@@ -36,10 +36,10 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
-#### __C#__
-{{region radgauge-features-data-binding_1}}
+
+```C#
 	public DataBindingSample()
 	{
 	    InitializeComponent();
@@ -49,16 +49,14 @@ Here is the __RadGauge__ instance and the sample value collection, which will be
 	    };
 	    this.radialBar.ValueSource = values;
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radgauge-features-data-binding_2}}
+```
+```VB.NET
 	Public Sub New()
 	 InitializeComponent()
 	 Dim values As New ObservableCollection(Of Double)() From {10, 15, 25, 17, 40, 50, 60, 70, 25, 15, 5, 10, 12, 18, 29, 37, 92}
 	 Me.radialBar.ValueSource = values
 	End Sub
-{{endregion}}
+```
 
 ## Start Playback
 
@@ -68,20 +66,18 @@ If you want to automatically display the values one after another with some pred
    
 Here is an example:   
 
-#### __C#__
-{{region radgauge-features-data-binding_3}}
+
+```C#
 	private void StartPlayback()
 	{
 	    this.radialBar.StartPlayback();
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radgauge-features-data-binding_4}}
+```
+```VB.NET
 	Private Sub StartPlayback()
 	 Me.radialBar.StartPlayback()
 	End Sub
-{{endregion}}
+```
 
 ## Stop Playback
 
@@ -91,59 +87,52 @@ To stop the automatic playback of the values you have simply to call the __StopP
 			
 Here is an example:          
 
-#### __C#__
-{{region radgauge-features-data-binding_5}}
+
+```C#
 	private void StopPlayback()
 	{
 	    this.radialBar.StopPlayback();
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radgauge-features-data-binding_6}}
+```
+```VB.NET
 	Private Sub StopPlayback()
 	 Me.radialBar.StopPlayback()
 	End Sub
-{{endregion}}
+```
 
 ## Move Next
 
 The indicator's API also allows you to manually navigate through the values collection. On of the methods exposed is the __MoveNext()__ one. It changes the displayed value to the next value in the collection, if present. Here is an example.        
 
-#### __C#__
-{{region radgauge-features-data-binding_7}}
+
+```C#
 	private void MoveNext()
 	{
 	    this.radialBar.MoveNext();
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radgauge-features-data-binding_8}}
+```
+```VB.NET
 	Private Sub MoveNext()
 	 Me.radialBar.MoveNext()
 	End Sub
-{{endregion}}
+```
 
 ## Move Previous
 
 The __MovePrevious()__ method is the other one used for manual navigation through the values collection. It displays the value previous to the current one. Here is an example.        
 
-#### __C#__
-{{region radgauge-features-data-binding_9}}
+
+```C#
 	private void MovePrevious()
 	{
 	    this.radialBar.MovePrevious();
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radgauge-features-data-binding_10}}
+```
+```VB.NET
 	Private Sub MovePrevious()
 	 Me.radialBar.MovePrevious()
 	End Sub
-{{endregion}}
+```
 
 ## Specifying the duration for each value
 
@@ -151,8 +140,8 @@ If you want every one of the values to be displayed a specific period of time yo
 
 Here is an example (a slight modification of the previous one):        
 
-#### __C#__
-{{region radgauge-features-data-binding_11}}
+
+```C#
 	public DataBindingSample()
 	{
 	    InitializeComponent();
@@ -178,10 +167,8 @@ Here is an example (a slight modification of the previous one):
 	    };
 	    this.radialBar.ValueSource = values;
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radgauge-features-data-binding_12}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Dim values As New List(Of PlaybackData)() From { _
@@ -256,4 +243,4 @@ Here is an example (a slight modification of the previous one):
 		}
 		Me.radialBar.ValueSource = values
 	End Sub
-{{endregion}}
+```

@@ -30,8 +30,8 @@ How to set the StaysOpen property of the RadVirtualGrid FilteringControl's paren
 
 To achieve this requirement,  utilize the `EventManager.RegisterClassHandler` method to subscribe to the `Loaded` event of each `FilteringControl` instance:
 
-#### __[C#] Subscribing to Loaded event of FilteringControl__
-{{region kb-virtualgrid-filteringcontrol-parent-popup-staysopen-0}}
+__Subscribing to Loaded event of FilteringControl__
+```C#
     public partial class MainWindow : Window
     {
         static MainWindow()
@@ -39,10 +39,8 @@ To achieve this requirement,  utilize the `EventManager.RegisterClassHandler` me
             EventManager.RegisterClassHandler(typeof(FilteringControl), LoadedEvent, new RoutedEventHandler (OnLoaded));
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Subscribing to Loaded event of FilteringControl__
-{{region kb-virtualgrid-filteringcontrol-parent-popup-staysopen-1}}
+```
+```VB.NET
     Public Partial Class MainWindow
         Inherits Window
 
@@ -50,12 +48,12 @@ To achieve this requirement,  utilize the `EventManager.RegisterClassHandler` me
             EventManager.RegisterClassHandler(GetType(FilteringControl), LoadedEvent, New RoutedEventHandler(OnLoaded))
         End Sub
     End Class
-{{endregion}}
+```
 
 In the added event handler, retrieve the parent `Popup` element of the FilteringControl instance using the [ParentOfType]({%slug common-visual-tree-helpers%}#parentoftypeextensions) extension method. Then, set its `StaysOpen` property to __False__.
 
-#### __[C#] Set the StaysOpen property of the parent Popup__
-{{region kb-virtualgrid-filteringcontrol-parent-popup-staysopen-2}}
+__Set the StaysOpen property of the parent Popup__
+```C#
 public partial class MainWindow : Window
     {
         static MainWindow()
@@ -75,10 +73,8 @@ public partial class MainWindow : Window
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Set the StaysOpen property of the parent Popup__
-{{region kb-virtualgrid-filteringcontrol-parent-popup-staysopen-3}}
+```
+```VB.NET
     Public Partial Class MainWindow
         Inherits Window
     
@@ -95,4 +91,4 @@ public partial class MainWindow : Window
             End If
         End Sub
     End Class
-{{endregion}}
+```

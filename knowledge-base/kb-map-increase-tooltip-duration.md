@@ -33,13 +33,13 @@ How to increase the tooltip duration for the items in the VisualizationLayer.
 1. Subscribe to the __MapShapeVisualizationCreated__ event of VisualizationLayer.
 2. Use the __ToolTipService.SetShowDuration__ method to set the tooltip duration for the generated visual element. To get the visual element use the Visualization property of the event arguments.
 
-#### __[C#]__
-{{region kb-map-increase-tooltip-duration-0}}
+
+```C#
 	private void VisualizationLayer_MapShapeVisualizationCreated(object sender, MapShapeOperationEventArgs e)
 	{
 		ToolTipService.SetShowDuration(e.Visualization, 1000);
 	}
-{{endregion}}
+```
 
 ## See Also
 * [VisualizationLayer]({%slug radmap-visualization-layer-introduction%})

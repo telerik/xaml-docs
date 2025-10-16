@@ -36,9 +36,9 @@ With **RadRichTextBox**, you can work with images from the following file format
 
 Here is an example of an __ImageInline__ element used in XAML at design time.
 
-#### __XAML__
 
-{{region radrichtextbox-features-document-elements-inlineimage_0}}
+
+```XAML
 	<telerik:RadRichTextBox x:Name="radRichTextBox" Height="500">
 	    <telerik:RadDocument>
 	        <telerik:Section>
@@ -48,15 +48,15 @@ Here is an example of an __ImageInline__ element used in XAML at design time.
 	        </telerik:Section>
 	    </telerik:RadDocument>
 	</telerik:RadRichTextBox>
-{{endregion}}
+```
 
 ## Add in Code Behind
 
 Here is an example of how to add an __ImageInline__ element in the code behind.
 
-#### __C#__
 
-{{region radrichtextbox-features-document-elements-inlineimage_1}}	
+
+```C#	
 	Section section = new Section();
 	Paragraph paragraph = new Paragraph();
 	Stream stream = Application.GetResourceStream(new Uri(@"/Help.RadRichTextBoxSamples;component/Demos/Images/RadRichTextBox.png", UriKind.RelativeOrAbsolute)).Stream;
@@ -65,11 +65,8 @@ Here is an example of how to add an __ImageInline__ element in the code behind.
 	paragraph.Inlines.Add(image);
 	section.Children.Add(paragraph);
 	this.radRichTextBox.Document.Sections.Add(section);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-document-elements-inlineimage_2}}
+```
+```VB.NET
 
 	Dim section As New Section()
 	Dim paragraph As New Paragraph()
@@ -79,22 +76,22 @@ Here is an example of how to add an __ImageInline__ element in the code behind.
 	paragraph.Inlines.Add(image)
 	section.Children.Add(paragraph)
 	Me.radRichTextBox.Document.Sections.Add(section)
-{{endregion}}
+```
 
 ## Add via UI
 
 Here is an example of how to allow the user to select an image and add it to the document. For that purpose a __RadButton__ and an __OpenFileDialog__ are used. When the file stream from the __OpenFileDialog__ gets obtained, it's passed to the __InsertImage()__ API method of the __RadRichTextBox__. This method takes as an argument the extension of the image, which can be again obtained from the __FileInfo__ object. After calling the __InsertImage()__ method, the image will appear in the document with its default width and height.
 
-#### __XAML__
 
-{{region radrichtextbox-features-document-elements-inlineimage_3}}
+
+```XAML
     <telerik:RadButton Content="Add Image" x:Name="ImageButton" Click="ImageButton_Click" />
     <telerik:RadRichTextBox x:Name="radRichTextBox" Height="500" LayoutMode="Paged" />
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radrichtextbox-features-document-elements-inlineimage_4}}
+
+```C#
 
     private void ImageButton_Click(object sender, RoutedEventArgs e)
     {
@@ -109,11 +106,8 @@ Here is an example of how to allow the user to select an image and add it to the
             this.radRichTextBox.InsertImage(stream, extension);
         }
     }
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-document-elements-inlineimage_5}}
+```
+```VB.NET
 	Private Sub ImageButton_Click(sender As Object, e As RoutedEventArgs)
 	 Dim openDialog As New OpenFileDialog()
 	 openDialog.Filter = "Images|*.jpg;*.png"
@@ -125,7 +119,7 @@ Here is an example of how to allow the user to select an image and add it to the
 	  Me.radRichTextBox.InsertImage(stream, extension)
 	 End If
 	End Sub
-{{endregion}}
+```
 
 ## See Also  
  * [Editing Images]({%slug radrichtextbox-features-editing-images%}) 

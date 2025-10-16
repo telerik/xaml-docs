@@ -24,7 +24,7 @@ In order to create a custom tool you need to create a class and derive it from y
 Here is how this can be done with both tools:
 
 #### **[C#] Example 1: Defining a custom tool**
-{{region raddiagram-howto-customize-path-pencil-tools-0}}
+```C#
     public class MyPathTool : PathTool
     {
     }
@@ -32,10 +32,10 @@ Here is how this can be done with both tools:
     public class MyPencilTool : PencilTool
     {
     }
-{{endregion}}
+```
 
 #### **[VB.NET] Example 1: Defining a custom tool**
-{{region raddiagram-howto-customize-path-pencil-tools-1}}
+```VB.NET
 	Public Class MyPathTool
 	Inherits PathTool
 
@@ -45,12 +45,12 @@ Here is how this can be done with both tools:
 	Inherits PencilTool
 
 	End Class
-{{endregion}}
+```
 
 You will also need to create a constructor for those tools which receives and assigns a string to the __Name__ property of the tool. Based on this Name, RadDiagram (de)selects the tools. 
 
 #### **[C#] Example 2: Defining constructor for the custom tool** 
-{{region raddiagram-howto-customize-path-pencil-tools-2}}
+```C#
 	public class MyPathTool : PathTool
     {
 		public MyPathTool(string name): base()
@@ -66,10 +66,10 @@ You will also need to create a constructor for those tools which receives and as
             this.Name = name;
         }
 	}
-{{endregion}}
+```
 
 #### **[VB.NET] Example 2: Defining constructor for the custom tool**
-{{region raddiagram-howto-customize-path-pencil-tools-3}}
+```VB.NET
 	Public Class MyPathTool
 		Inherits PathTool
 		Public Sub New(name As String)
@@ -85,7 +85,7 @@ You will also need to create a constructor for those tools which receives and as
 			Me.Name = name
 		End Sub
 	End Class
-{{endregion}}
+```
 
 ## Replace the Default Tools
 
@@ -94,7 +94,7 @@ Now you are ready to replace the existing tool in the RadDiagram. To do this, yo
 >You need to always replace the default tools if you need to customize some of the existing functionality. For this you need to use the exact same names to create your customized tools. Otherwise, the RadDiagram will not replace the default ones.
 
 #### **[C#] Example 3: Replacing the default tool**
-{{region raddiagram-howto-customize-path-pencil-tools-4}}
+```C#
 	void diagram_Loaded(object sender, RoutedEventArgs e)
 	{
 	    IToolService iservice = this.diagram.ServiceLocator.GetService<IToolService>();
@@ -113,10 +113,10 @@ Now you are ready to replace the existing tool in the RadDiagram. To do this, yo
 	        service.ActivateTool("PencilTool");
 	    }
 	}
-{{endregion}}
+```
 
 #### **[VB.NET] Example 3: Replacing the default tool**
-{{region raddiagram-howto-customize-path-pencil-tools-5}}
+```VB.NET
 	Private Sub diagram_Loaded(sender As Object, e As RoutedEventArgs)
 		Dim iservice As IToolService = Me.diagram.ServiceLocator.GetService(Of IToolService)()
 		Dim service As ToolService = TryCast(iservice, ToolService)
@@ -133,7 +133,7 @@ Now you are ready to replace the existing tool in the RadDiagram. To do this, yo
 			service.ActivateTool("PencilTool")
 		End If
 	End Sub
-{{endregion}}
+```
 
 >tip If you need to extend the list of available tools, you should add them to the **ToolList** collection of the ToolService.
 
@@ -144,7 +144,7 @@ If you attempt to use the custom tools at this point, they will act just like th
 To accomplish this, override the __CompleteTool()__ method of the Drawing tools like shown in **Example 4**.
 
 #### **[C#] Example 4: Override the CompleteTool() method**
-{{region raddiagram-howto-customize-path-pencil-tools-6}}
+```C#
 	public override void CompleteTool()
 	{
 	    base.CompleteTool();
@@ -152,17 +152,17 @@ To accomplish this, override the __CompleteTool()__ method of the Drawing tools 
 	    var service = (this.Graph as RadDiagram).ServiceLocator.GetService<IToolService>();
 	    service.ActivateTool(PointerTool.ToolName);
 	}
-{{endregion}}
+```
 
 #### **[VB.NET] Example 4: Override the CompleteTool() method**
-{{region raddiagram-howto-customize-path-pencil-tools-7}}
+```VB.NET
 	Public Overrides Sub CompleteTool()
 		MyBase.CompleteTool()
 	
 		Dim service = TryCast(Me.Graph, RadDiagram).ServiceLocator.GetService(Of IToolService)()
 		service.ActivateTool(PointerTool.ToolName)
 	End Sub
-{{endregion}}
+```
 
 In **Example 4**, the **ToolService** of the RadDiagram is used to switch the active tool. Invoking **ActivateTool()** after the **base()** method ensures that the tool will be switched after the new shape is created.
 

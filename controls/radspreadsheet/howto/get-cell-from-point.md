@@ -16,7 +16,7 @@ In order to get the cell under the mouse you need the position related to the to
 
 #### __C# Example 1: Get the cell under the mouse__
 
-{{region radspreadsheet-get-cell-from-point_0}}
+```C#
 
     private void MainWindow_Loaded(object sender, RoutedEventArgs e)
     {
@@ -38,5 +38,5 @@ In order to get the cell under the mouse you need the position related to the to
         this.radSpreadsheet.ActiveWorksheet.Cells[clickedCellIndex].SetValue(clickValue);
     }
 
-{{endregion}}
+```
 

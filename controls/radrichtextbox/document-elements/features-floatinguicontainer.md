@@ -14,8 +14,8 @@ position: 9
 
 The following example showcases how to add a `RadButton` element inside a FloatingUIContainer instance and display it in the RadDocument:
 
-#### __[C#] Adding a UIElement to a FloatingUIContainer__
-{{region radrichtextbox-features-document-elements-floatinguicontainer-0}}
+__Adding a UIElement to a FloatingUIContainer__
+```C#
     RadButton radButton = new RadButton()
     {
         Content = "Hello",
@@ -26,7 +26,7 @@ The following example showcases how to add a `RadButton` element inside a Floati
     FloatingUIContainer floatingContainer = new FloatingUIContainer(radButton, new Size(radButton.Width,    radButton.Height));
 
     radRichTextBox.InsertInline(floatingContainer);
-{{endregion}}
+```
 
 __RadRichTextBox with a FloatingUIContainer containing a RadButton element__
 

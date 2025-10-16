@@ -28,9 +28,9 @@ You will need to subscribe for the __Deactivated__ event of the MainWindow and e
 For example, you can close the popup with the following code:
         
 
-#### __[C#] Example 1: Closing the Filtering Popup from the Deactivated event__
+__Example 1: Closing the Filtering Popup from the Deactivated event__
 
-{{region cs-gridview-filtering-faq-popup-stays_0}}
+```C#
 	var FilterDialogs = this.radGridView.ChildrenOfType<Popup>().Where(p => p.Name == "PART_DropDownPopup");
 	if (FilterDialogs != null)
 	{
@@ -40,11 +40,8 @@ For example, you can close the popup with the following code:
 	            FilterDialog.IsOpen = false;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: Closing the Filtering Popup from the Deactivated event__
-
-{{region vb-gridview-filtering-faq-popup-stays_1}}
+```
+```VB.NET
 	Dim FilterDialogs = Me.radGridView.ChildrenOfType(Of Popup)().Where(Function(p) p.Name = "PART_DropDownPopup")
 	If FilterDialogs IsNot Nothing Then
 	    For Each FilterDialog As Popup In FilterDialogs
@@ -53,7 +50,7 @@ For example, you can close the popup with the following code:
 	        End If
 	    Next
 	End If
-{{endregion}}
+```
 
 __SOLUTION 2 (After Q1 2016)__
 
@@ -61,11 +58,11 @@ As of Q1 2016, we have introduced the **ShouldCloseFilteringPopupOnKeyboardFocus
 
 And here is how to set it:
 
-#### __[XAML] Example 2: Closing the Filtering Popup in XAML__
+__Example 2: Closing the Filtering Popup in XAML__
 
-{{region xaml-gridview-filtering-faq-popup-stays_2}}
+```XAML
 	<telerik:RadGridView ShouldCloseFilteringPopupOnKeyboardFocusChanged="True" />
-{{endregion}}
+```
 
 ## See Also
 

@@ -23,8 +23,8 @@ How to change the background and border brush a shape dragged from the RadDiagra
 
 You can subscribe to the `SerializationService.Default.ItemSerializing` event. In the event handler, you can update the "Background" and "BorderBrush" settings of the `SerializationInfo` object.
 
-#### __[C#]__
-{{region change-shape-colors-raddiagram-wpf-0}}
+
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -40,17 +40,17 @@ You can subscribe to the `SerializationService.Default.ItemSerializing` event. I
 			e.SerializationInfo["BorderBrush"] = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#8EC251"));
 		}
 	}
-{{endregion}}
+```
 
 In case you need to change also the colors of the shape when displayed inside the RadDiagramToolBox, then you can add an implicit style in the `RadDiagramToolBox.Resources` tag and target the `RadDiagramShape` controls.
 
-#### __[XAML]__
-{{region change-shape-colors-raddiagram-wpf-1}}
+
+```XAML
        <telerik:RadDiagramToolbox.Resources>
 		<Style TargetType="telerik:RadDiagramShape">
 			<Setter Property="Background" Value="#8EC251" />
 			<Setter Property="BorderBrush" Value="#8EC251" />
 		</Style>
 	</telerik:RadDiagramToolbox.Resources>
-{{endregion}}
+```
 

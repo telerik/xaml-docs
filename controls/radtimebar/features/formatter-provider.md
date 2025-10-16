@@ -17,9 +17,8 @@ This help topic will give an overview on the Formatter Provider feature of RadTi
 RadTimeBar provides means for customizing the interval formats through the __FormatterProvider__ property of the IntervalBase class. Using it, you can specify different formats for each interval.         
 
 The example below shows how formatter providers can be utilized (once they are implemented):
-#### __XAML__
 
-{{region radtimebar_formatter_provider_0}}
+```XAML
 	<telerik:RadTimeBar PeriodStart="2011-01-01"
 	                    PeriodEnd="2011-01-05"
 	                    VisiblePeriodStart="2011-01-01"
@@ -36,9 +35,7 @@ The example below shows how formatter providers can be utilized (once they are i
 	        <telerik:HourInterval FormatterProvider="{StaticResource HourFormatterProvider}"/>
 	    </telerik:RadTimeBar.Intervals>
 	</telerik:RadTimeBar>
-	{{endregion}}
-
-
+```
 
 ## The IIntervalFormatterProvider interface
 
@@ -49,9 +46,7 @@ A formatter provider is a class that implements the __IIntervalFormatterProvider
 
 Here is a sample hour formatter provider implementation:       
 
-#### __C#__
-
-{{region radtimebar_formatter_provider_0}}
+```C#
 	using  Telerik.Windows.Controls.TimeBar;
 	
 	public class HourFormatterProvider : IIntervalFormatterProvider
@@ -86,13 +81,8 @@ Here is a sample hour formatter provider implementation:
 	        return this.intervalSpanFormatters;
 	    }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radtimebar_formatter_provider_0}}
+```
+```VB.NET
 	Imports Telerik.Windows.Controls.TimeBar
 	
 	Public Class HourFormatterProvider
@@ -117,12 +107,9 @@ Here is a sample hour formatter provider implementation:
 	        Return Me.intervalSpanFormatters
 	    End Function
 	End Class
-	{{endregion}}
+```
 
-
-
-Below you can find screenshots showing when each format is used.
-        
+Below you can find screenshots showing when each format is used.        
 
 GetIntervalSpanFormatters is used (CurrentIntervalSpan is 12):
 ![timebar-formatter-provider-interval-span 12](images/timebar-formatter-provider-interval-span12.png)

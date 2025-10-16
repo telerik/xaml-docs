@@ -30,18 +30,18 @@ How to select a RadVirtualGrid cell region by dragging the mouse from one cell t
 
 To achieve this requirement, first set up handlers for the `MouseLeftButtonDown` and `MouseLeftButtonUp` events of RadVirtualGrid:
 
-#### __[C#] Adding the event handlers__ 
-{{region cs-kb-virtualgrid-mouse-drag-selection-0}}
+__Adding the event handlers__ 
+```C#
 	this.VirtualGrid.AddHandler(RadVirtualGrid.MouseLeftButtonDownEvent, new MouseButtonEventHandler(VirtualGrid_MouseLeftButtonDown), true);
 	this.VirtualGrid.AddHandler(RadVirtualGrid.MouseLeftButtonUpEvent, new MouseButtonEventHandler(VirtualGrid_MouseLeftButtonUp), true);
-{{endregion}}
+```
 
 Note that we do this with the `AddHandler` method so that we can set the `handledEventsToo` parameter. This is required, because the RadVirtualGrid internally handles these events and our custom handlers will not be invoked otherwise.
 
 Then, in the `MouseLeftButtonDown` event handler, with the help of the [GetRowIndexAtMousePosition and GetColumnIndexAtMousePosition]({%slug virtualgrid-get-row-or-column-index-of-the-mouse-position%}) methods we get ahold of the row and column indexes of the initial cell which will serve as an anchor for the selected region.
 
-#### __[C#] Handling the MouseLeftButtonDown event__ 
-{{region cs-kb-virtualgrid-mouse-drag-selection-1}}
+__Handling the MouseLeftButtonDown event__ 
+```C#
 	private int startRowIndex = -1;
 	private int startColumnIndex = -1;
 
@@ -52,12 +52,12 @@ Then, in the `MouseLeftButtonDown` event handler, with the help of the [GetRowIn
 		this.startRowIndex = virtualGrid.GetRowIndexAtMousePosition(border);
 		this.startColumnIndex = virtualGrid.GetColumnIndexAtMousePosition(border);
 	}
-{{endregion}}
+```
 
 Then in a similar fashion, we can obtain the last selected cell in the `MouseLeftButtonUp` event handler. Then, based on the start and end cells, we can create a new `CellRegion` and use the [SelectCellRegion]({%slug virtualgrid-programmatic-selection%}) method to select it.
 
-#### __[C#] Handling the MouseLeftButtonDown event__ 
-{{region cs-kb-virtualgrid-mouse-drag-selection-1}}
+__Handling the MouseLeftButtonDown event__ 
+```C#
 	private void VirtualGrid_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 	{
 		var virtualGrid = sender as RadVirtualGrid;
@@ -72,7 +72,7 @@ Then in a similar fashion, we can obtain the last selected cell in the `MouseLef
 
 		virtualGrid.SelectCellRegion(new CellRegion(left, top, width, height));
 	}
-{{endregion}}
+```
 
 >You can also perform the logic of the `MouseLeftButtonUp` event on `MouseMove` but you will need to add some additional logic to stop the selection process when the mouse button is released.
 

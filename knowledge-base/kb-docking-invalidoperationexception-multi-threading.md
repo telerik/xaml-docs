@@ -32,8 +32,8 @@ res_type: kb
 
 Define a custom Style targeting the PaneHeader control. Preferably, the Style should be defined in the Resources of the Window or UserControl that shows the RadDocking on the separate thread. The Style should re-define the mouse right-click input binding of the header.
 
-#### __[XAML]__
-{{region kb-docking-invalidoperationexception-multi-threading-0}}
+
+```XAML
 	<Window.Resources>
 		<!-- If you use NoXaml dlls set the following property on the Style object: BasedOn="{StaticResource PaneHeaderStyle}" -->
 		<Style TargetType="telerik:PaneHeader">
@@ -50,4 +50,4 @@ Define a custom Style targeting the PaneHeader control. Preferably, the Style sh
 			</Setter>
 		</Style>
 	</Window.Resources>
-{{endregion}}
+```

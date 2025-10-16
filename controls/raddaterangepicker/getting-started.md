@@ -32,37 +32,37 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 The following example shows how to define `RadDateRangePicker` in a XAML page. 
 
-#### __[XAML] Adding RadDateRangePicker in XAML__
-{{region raddaterangepicker-getting-started-0}}
+__Adding RadDateRangePicker in XAML__
+```XAML
 	<telerik:RadDateRangePicker />
-{{endregion}}
+```
 
 ![A picture showing RadDateRangePicker for WPF in Getting Started setup](images/raddaterangepicker-getting-started-0.png)
 
 To get started with the control you don't need to set any properties. In case you need to manually set the selected range, use the `StartDate` and `EndDate` of `RadDateRangePicker`. The properties can be set directly or via data binding.
 
-#### __[XAML] Setting the selection__
-{{region raddaterangepicker-getting-started-1}}
+__Setting the selection__
+```XAML
 	<telerik:RadDateRangePicker StartDate="2024/1/19" EndDate="2024/2/5" />
-{{endregion}}
+```
 
 ## Showing the Drop Down Manually
 
 The drop down with the calendars can be manually toggled via the `IsDropDownOpen` property of `RadDateRangePicker`.
 
-#### __[C#] Showing the drop down programmatically__
-{{region raddaterangepicker-getting-started-2}}
+__Showing the drop down programmatically__
+```C#
 	this.dateRangePicker.IsDropDownOpen = true;
-{{endregion}}
+```
 
 ## Read-Only Dates Text Input
 
 To make the date range text input area read-only, set the `IsReadOnly` property of `RadDateRangePicker` to `True`.
 
-#### __[C#] Making the text area read-only__
-{{region raddaterangepicker-getting-started-2}}
+__Making the text area read-only__
+```C#
 	<telerik:RadDateRangePicker IsReadOnly="True" />
-{{endregion}}
+```
 
 ![A picture showing a read-only RadDateRangePicker for WPF](images/raddaterangepicker-getting-started-1.png)
 

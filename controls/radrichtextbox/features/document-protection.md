@@ -33,9 +33,9 @@ The __PermissionInfo__ class allows you to create permission objects, which late
 
 The users that will be able to edit the document and the groups they are in can be declared like this:
 
-#### __[C#] Example 1: Set Permissions to Users__
+__Example 1: Set Permissions to Users__
 
-{{region radrichtextbox-features-document-protection_0}}
+```C#
 	this.radRichTextBox.Users = new PermissionInfoCollection() 
 	                        {
 	                            PermissionInfo.CreateEveryonePermissionInfo(),
@@ -44,7 +44,7 @@ The users that will be able to edit the document and the groups they are in can 
 	                            new PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"),
 	                            new PermissionInfo("Administrators", PermissionType.Group, "Administrators"),
 	                        };
-{{endregion}}
+```
 
 
 
@@ -59,61 +59,61 @@ The collection kept in the Users property of __RadRichTextBox__ is also used in 
 The current user of the document is set using the __CurrentUser__ property of the editor. It is of type __UserInfo__ - here in addition to the name, e-mail and user name of the user, the group that the user belongs to can also be passed.
         
 
-#### __[C#] Example 2: Change CurrentUser__
+__Example 2: Change CurrentUser__
 
-{{region radrichtextbox-features-document-protection_1}}
+```C#
 	 this.radRichTextBox.CurrentUser = new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com");
-{{endregion}}
+```
 
 
 
 You can also create a collection with the UserInfos that will be interracting with the document and wire it with some UI of yours. For example, if you set-up the collection as follows:
         
 
-#### __[C#] Example 3: Create Collection of UserInfo objects__
+__Example 3: Create Collection of UserInfo objects__
 
-{{region radrichtextbox-features-document-protection_2}}
+```C#
 	List<UserInfo> CurrentUsers = new List<UserInfo>() 
 	                {
 	                    new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
 	                    new UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
 	                    new UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com"),
 	                };
-{{endregion}}
+```
 
 
 
 You can declare a __RadComboBox__ which will be used to change the current user in the following way:
 
-#### __[XAML] Example 1: Declaring RadComboBox__
+__Example 1: Declaring RadComboBox__
 
-{{region radrichtextbox-features-document-protection_8}}
+```XAML
 	<telerik:RadRibbonComboBox x:Name="comboBoxLoggedUser" Height="23" Width="150" DisplayMemberPath="RealName" SelectionChanged="comboBoxLoggedUser_SelectionChanged" />
-{{endregion}}
+```
 
 
 
 and populate it like this:
 
-#### __[C#] Example 4: Populating RadComboBox__
+__Example 4: Populating RadComboBox__
 
-{{region radrichtextbox-features-document-protection_3}}
+```C#
 	this.comboBoxLoggedUser.ItemsSource = dataContext.CurrentUsers;
 	this.comboBoxLoggedUser.SelectedIndex = 0;
-{{endregion}}
+```
 
 
 
 Then, when the selected item of the combo changes, the CurrentUser of the editor will be updated:
 
-#### __[C#] Example 5: Update CurrentUser__
+__Example 5: Update CurrentUser__
 
-{{region radrichtextbox-features-document-protection_4}}
+```C#
 	private void comboBoxLoggedUser_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
 	{
 	    this.radRichTextBox.CurrentUser = this.comboBoxLoggedUser.SelectedItem as UserInfo;
 	}
-{{endregion}}
+```
 
 
 
@@ -128,36 +128,36 @@ The protection of the document can be turned on and off using the __ToggleDocume
 The command opens a dialog that allows you to enter a password. By clicking OK, the document protection starts to be enforced. You can use the command by binding a button to it:
         
 
-#### __[XAML] Example 2: Binding a button to ToggleDocumentProtectionCommand__
+__Example 2: Binding a button to ToggleDocumentProtectionCommand__
 
-{{region radrichtextbox-features-document-protection_9}}
+```XAML
     <telerik:RadRibbonToggleButton DataContext="{Binding ElementName=editor, Path=Commands}"  
                                    LargeImage="{telerik:IconResource IconRelativePath=32/ProtectDocument.png, IconSources={StaticResource IconSources}}" 
                                    telerik:RadRichTextBoxRibbonUI.RichTextCommand="{Binding Path=ToggleDocumentProtectionCommand}" 
                                    Size="Large" Text="Protect Document" 
                                    telerik:ScreenTip.Title="Toggle Document Protection" 
                                    telerik:ScreenTip.Description="Restrict how people edit specific parts of the document." />
-{{endregion}}
+```
 
 
 
 It is also possible to toggle document protection in code-behind, without showing a dialog:
 
-#### __[C#] Example 6: Protect Document in Code-Behind__
+__Example 6: Protect Document in Code-Behind__
 
-{{region radrichtextbox-features-document-protection_5}}
+```C#
     this.radRichTextBox.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password");
-{{endregion}}
+```
 
 
 
 The reverse operations can be executed like this:
 
-#### __[C#] Example 7: Unprotect Document in Code-Behind__
+__Example 7: Unprotect Document in Code-Behind__
 
-{{region radrichtextbox-features-document-protection_6}}
+```C#
     this.radRichTextBox.Document.UnprotectDocument("password");
-{{endregion}}
+```
 
 
 
@@ -170,15 +170,15 @@ DocumentProtection regions can be most easily created and modified through the C
 
 Here is an example:
 
-#### __[C#] Example 8: Editing Permissions__
+__Example 8: Editing Permissions__
 
-{{region radrichtextbox-features-document-protection_7}}
+```C#
 	PermissionRangeInfo info = new PermissionRangeInfo();
 	info.Type = PermissionType.Individual;
 	info.Name = this.radRichTextBox.CurrentUser.Username;
 	List<PermissionRangeInfo> infos = new List<PermissionRangeInfo>() { info };
 	this.radRichTextBox.InsertPermissionRange(infos);
-{{endregion}}
+```
 
 
 

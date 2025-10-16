@@ -29,8 +29,8 @@ __FlightCard__ is intended to display flight information in a structured user-fr
 
 A sample __FlightCard__ can be defined as follows.
 
-#### __[C#] Example 1: Defining a FlightCard__
-{{region radchat-messages-flightcard_01}}
+__Example 1: Defining a FlightCard__
+```C#
 	
             FlightCardMessage flightCardMessage = new FlightCardMessage(this.currentAuthor);
            
@@ -65,7 +65,7 @@ A sample __FlightCard__ can be defined as follows.
             flightCardMessage.Total = "$250.23";
 
             this.chat.AddMessage(flightCardMessage);
-{{endregion}}
+```
 
 This sample data will result in the following __FlightCard__.
 

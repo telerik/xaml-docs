@@ -28,9 +28,9 @@ To control the visibility of the ticks you have to use one fo the following prop
 
 These properties are available for both the x- and the y-axis. Here is an example of hiding the major ticks of the x-axis and configuring it to display 2 minor ticks between each two major ones.
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-ticks_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -46,29 +46,24 @@ These properties are available for both the x- and the y-axis. Here is an exampl
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
 You can do this in code-behind too.
 
-#### __C#__
 
-{{region cs-radchart-features-axes-ticks_1}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.AxisX.MajorTicksVisibility = System.Windows.Visibility.Collapsed;
 	this.radChart.DefaultView.ChartArea.AxisX.MinorTickPointMultiplier = 3;
 	this.radChart.DefaultView.ChartArea.AxisX.MinorTicksVisibility = System.Windows.Visibility.Visible;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-ticks_2}}
+```
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisX.MajorTicksVisibility = System.Windows.Visibility.Collapsed
 	Me.radChart.DefaultView.ChartArea.AxisX.MinorTickPointMultiplier = 3
 	Me.radChart.DefaultView.ChartArea.AxisX.MinorTicksVisibility = System.Windows.Visibility.Visible
-{{endregion}}
+```
 
 
 

@@ -21,8 +21,8 @@ The __SplineAreaSeries__ is visualized on the screen as a smooth line connecting
 
 You can use the definition from __Example 1__ to display an SplineAreaSeries.
 
-#### __[XAML] Example 1: Declaring a SplineAreaSeries in XAML__
-{{region radchartview-series-splineareaseries_0}}
+__Example 1: Declaring a SplineAreaSeries in XAML__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 	<telerik:RadCartesianChart.HorizontalAxis>
 		<telerik:CategoricalAxis/>
@@ -44,7 +44,7 @@ You can use the definition from __Example 1__ to display an SplineAreaSeries.
 		</telerik:SplineAreaSeries>
 	</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 1: SplineAreaSeries visual appearance__
 ![radchartview-series-splineareaseries](images/radchartview-series-splineareaseries.png)
@@ -74,9 +74,9 @@ You can use the definition from __Example 1__ to display an SplineAreaSeries.
 
 You can use the ValueBinding and CategoryBinding properties of the SplineAreaSeries to bind the DataPoints’ properties to the properties from your view models.
 
-#### __[C#] Example 2: Defining the view model__
+__Example 2: Defining the view model__
 
-{{region radchartview-series-scattersplineareaseries_1}}
+```C#
 	public class PlotInfo
     {	
         public string Category { get; set; }
@@ -89,12 +89,12 @@ You can use the ValueBinding and CategoryBinding properties of the SplineAreaSer
 		new PlotInfo() { Category = "January", Value = 2},
 		//....
 	};
-{{endregion}}	
+```	
 
-#### __[XAML] Example 3: Specify a SplineAreaSeries in XAML__
-{{region radchartview-series-splineareaseries_2}}	
+__Example 3: Specify a SplineAreaSeries in XAML__
+```XAML	
 	 <telerik:SplineAreaSeries ItemsSource="{Binding}" CategoryBinding="Category" ValueBinding="Value"/>
-{{endregion}}
+```
 
 >See the [Create Data-Bound Chart]({%slug radchartview-series-databinding%}) for more information on data binding in the RadChartView suite.
 
@@ -102,10 +102,10 @@ You can use the ValueBinding and CategoryBinding properties of the SplineAreaSer
 
 The spline-type series provide two properties allowing to control the additional points calculated for the spline of the line. The tension is controlled via the `SplineTension` property. The tension works with relative values between 0 and 1. The default tension is set to `0.5d`.
 
-#### __[XAML] Example 4: Setting SplineTension__
-{{region radchartview-series-splineareaseries_3}}	
+__Example 4: Setting SplineTension__
+```XAML	
 	 <telerik:SplineAreaSeries SplineTension="0.4" />
-{{endregion}}
+```
 
 __Spline tension 0.8 (left) and 0.4 (right)__
 
@@ -113,10 +113,10 @@ __Spline tension 0.8 (left) and 0.4 (right)__
 
 Additionally, you can control the smoothness of the spline using the `SplinePointsDistanceFactor` property. The property controls the distance between the additionally calculated spline points. The bigger the factor is the less points will be created, thus the line will become less smooth. The property works with values between 0 and 0.35. The default value is `0.03d`.
 
-#### __[XAML] Example 5: Setting SplinePointsDistanceFactor__
-{{region radchartview-series-splineareaseries_4}}	
+__Example 5: Setting SplinePointsDistanceFactor__
+```XAML	
 	 <telerik:SplineAreaSeries SplinePointsDistanceFactor="0.18" />
-{{endregion}}
+```
 
 __SplinePointsDistanceFactor set to 0.18__
 

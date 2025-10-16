@@ -20,23 +20,23 @@ Document variables provide a mechanism to store information in the document. The
 Each RadDocument instance has a dictionary of variables exposed by the __DocumentVariables__ property:
         
 
-#### __C#__
 
-{{region radrichtextbox-features-document-variables_0}}
+
+```C#
 	this.editor.Document.DocumentVariables
-{{endregion}}
+```
 
 
 
 This collection maps string keys to object values (most often strings). The values of the fields most often are strings again and contain the text that will be inserted in the document when the variable is inserted in the document and is evaluated. Variables can be added to this collection in one of the following ways:
         
 
-#### __C#__
 
-{{region radrichtextbox-features-document-variables_1}}
+
+```C#
 	this.editor.Document.DocumentVariables.Add("Name", "Andrew Fuller");
 	this.editor.Document.DocumentVariables["Job"] = "Software Engineer";
-{{endregion}}
+```
 
 
 
@@ -44,21 +44,21 @@ This code will add two variables to the document – “Name”, which will be e
 
 Removing variables from the collection can be done like this:
 
-#### __C#__
 
-{{region radrichtextbox-features-document-variables_2}}
+
+```C#
 	this.editor.Document.DocumentVariables.Remove("Name");
-{{endregion}}
+```
 
 
 
 Document variables can be inserted in the document using DocumentVariableField. Here is an example how the above created Name variable can be inserted in the current document of the editor:
 
-#### __C#__
 
-{{region radrichtextbox-features-document-variables_3}}
+
+```C#
 	DocumentVariableField docVariable = new DocumentVariableField() { VariableName = "Name" };
 	this.editor.InsertField(docVariable);	
-{{endregion}}
+```
 
 

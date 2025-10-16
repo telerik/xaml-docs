@@ -14,8 +14,8 @@ To change the fold size you can use the __FoldSize__ property of __RadBook__. It
 
 ![RadBook Fold Size](images/book_foldsize.png)
 
-#### __[XAML] Example 1: Changing the fold size__  
-{{region xaml-radbook-how-to-change-fold-size_0}}
+__Example 1: Changing the fold size__  
+```XAML
 	<telerik:RadBook x:Name="RadBook1" 
 	                    Margin="50"
 	                    FoldSize="150,150" RightPageIndex="1">
@@ -44,7 +44,7 @@ To change the fold size you can use the __FoldSize__ property of __RadBook__. It
 	                    Text="Page 4" />
 	    </telerik:RadBookItem>
 	</telerik:RadBook>
-{{endregion}}
+```
 
 ## See Also
  * [Getting Started]({%slug radbook-getting-started%})

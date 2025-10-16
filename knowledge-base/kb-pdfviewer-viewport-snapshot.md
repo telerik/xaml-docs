@@ -33,8 +33,8 @@ How to create a snapshot of the visible part (viewport) of a **PDF** document lo
 
 The first step is to create a custom [IUILayer](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.ui.layers.iuilayer), which will help us to obtain the Viewport and store it in the _VisiblePagesToViewport_ dictionary.
 
-#### __[C#] Example 1: Creating the custom IUILayer__
-{{region kb-pdfviewer-viewport-snapshot-0}}
+__Example 1: Creating the custom IUILayer__
+```C#
 
     public class ViewportUILayer : IUILayer
     {
@@ -68,12 +68,12 @@ The first step is to create a custom [IUILayer](https://docs.telerik.com/devtool
         }
     }
 
-{{endregion}}
+```
 
 The next step is to create a custom [UILayersBuilder](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.ui.layers.uilayersbuilder), which will help us to include the newly created ViewportUILayer into the [IUILayerContainer](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.ui.layers.iuilayercontainer).
 
-#### __[C#] Example 2: Creating the custom UILayersBuilder__
-{{region kb-pdfviewer-viewport-snapshot-1}}
+__Example 2: Creating the custom UILayersBuilder__
+```C#
 
     public class CustomLayersBuilder : UILayersBuilder
     {
@@ -85,12 +85,12 @@ The next step is to create a custom [UILayersBuilder](https://docs.telerik.com/d
         }
     }
 
-{{endregion}}
+```
 
 Using the ExtensibilityManager`s [RegisterLayersBuilder()](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.fixed.ui.extensibility.extensibilitymanager#collapsible-Telerik_Windows_Documents_Fixed_UI_Extensibility_ExtensibilityManager_RegisterLayersBuilder_Telerik_Windows_Documents_Fixed_UI_Layers_UILayersBuilder_) method we will register the CustomLayersBuilder.
 
-#### __[C#] Example 3: Registering the custom UILayersBuilder__
-{{region kb-pdfviewer-viewport-snapshot-2}}
+__Example 3: Registering the custom UILayersBuilder__
+```C#
 
     public RadFixedDocument document;
 
@@ -120,12 +120,12 @@ Using the ExtensibilityManager`s [RegisterLayersBuilder()](https://docs.telerik.
         // Implemented in Example 4
     }
 		
-{{endregion}}
+```
 
 Now when we have the _VisiblePagesToViewport_, we can iterate its pages and export the snapshots to the desired image format using the [ThumbnailFactory](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.thumbnailfactory) class. For the purpose of the example, we will generate a TIFF image.
 
-#### __[C#] Example 4: Exporting the images using the ThumbnailFactory__
-{{region kb-pdfviewer-viewport-snapshot-3}}
+__Example 4: Exporting the images using the ThumbnailFactory__
+```C#
 
     private void CreateSnapshot(object sender, RoutedEventArgs e)
     {
@@ -166,4 +166,4 @@ Now when we have the _VisiblePagesToViewport_, we can iterate its pages and expo
         }
     }
 
-{{endregion}}
+```

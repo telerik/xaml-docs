@@ -14,9 +14,9 @@ The default arrangement of the items in the Popup of __RadMenuItem__/__RadMenuGr
 
 We are going to use a __RadMenuGroupItem__ for the dropdown and set an IconTemplate to every __RadMenuItem__ inside of it. So at first we create a __Style__ that targets the __RadMenuGroupItem__ and in it sets the __ItemsPanel__ property to the desired value (in this case a vertically oriented __RadWrapPanel__ with maximum height of 350).
 
-#### __XAML__
 
-{{region xaml-radmenu-how-to-create-multicolumn-menu_0}}
+
+```XAML
 	<Style x:Key="MultiColumnMenuItemStyle" TargetType="telerik:RadMenuGroupItem">
 	    <Setter Property="ItemsPanel">
 	        <Setter.Value>
@@ -26,13 +26,13 @@ We are going to use a __RadMenuGroupItem__ for the dropdown and set an IconTempl
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 Apply the created style to the __RadMenuGroupItem__ items by setting it to the __ItemContainerStyle__ property of the desired top-level __RadMenuItem__.
 
-#### __XAML__
 
-{{region xaml-radmenu-how-to-create-multicolumn-menu_1}}
+
+```XAML
 	<telerik:RadMenu>
 	    <telerik:RadMenuItem Header="File" />
 	    <telerik:RadMenuItem Header="Options" ItemContainerStyle="{StaticResource MultiColumnMenuItemStyle}">
@@ -44,7 +44,7 @@ Apply the created style to the __RadMenuGroupItem__ items by setting it to the _
 	        </telerik:RadMenuGroupItem>
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 Here is a snapshot of the result.
 

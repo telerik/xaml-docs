@@ -20,9 +20,9 @@ Displaying a drill down chart in a single chart area means that the different hi
 
 The usage of a single chart area for displaying hierarchical data in a drill down form is the default behavior for the __RadChart__. So the only thing you have to do is to define the appropriate __ChartHierarchyViewDescriptor__ objects and add the to the __HierarchyViewDescriptors__ collection of the __RadChart__. Here is an example.
 
-#### __XAML__
 
-{{region xaml-radchart-features-drill-down-in-a-single-chart-area_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.HierarchicalViewDescriptors>
 	        <telerik:ChartHierarchicalViewDescriptor>
@@ -53,7 +53,7 @@ The usage of a single chart area for displaying hierarchical data in a drill dow
 	        </telerik:ChartHierarchicalViewDescriptor>
 	    </telerik:RadChart.HierarchicalViewDescriptors>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

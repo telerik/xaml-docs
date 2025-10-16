@@ -33,8 +33,8 @@ How to style the header cells when their parent column is filtered.
 
 To apply conditional styling of the header cells only when their parent column has a filter applied to it, you can create a style for the **GridViewHeaderCell** element with a **DataTrigger** pointing to the **IsActive** property of the respective column's **ColumnFilterDescriptor**.
 
-#### __[XAML]__
-{{region xaml-kb-gridview-style-filtered-column-header-cell-0}}
+
+```XAML
     <Style TargetType="telerik:GridViewHeaderCell">
         <Style.Triggers>
             <DataTrigger Binding="{Binding Path=Column.ColumnFilterDescriptor.(telerik:IColumnFilterDescriptor.IsActive), RelativeSource={RelativeSource Self}}" Value="True">
@@ -42,7 +42,7 @@ To apply conditional styling of the header cells only when their parent column h
             </DataTrigger>
         </Style.Triggers>
     </Style>
-{{endregion}}
+```
 
 ## See Also
 * [Styling Column Headers]({%slug gridview-styling-column-headers%})

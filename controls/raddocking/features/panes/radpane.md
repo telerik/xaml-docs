@@ -18,9 +18,9 @@ The __RadPane__ is the main content unit of the __RadDocking__ control. Its main
 
 **Example 1** demonstrates how to add two __RadPane__ instances to a __RadDocking__ control.
 
-#### __[XAML] Example 1: Add RadPanes to RadDocking__
+__Example 1: Add RadPanes to RadDocking__
 
-{{region xaml-raddocking-panes-radpane_0}}
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadSplitContainer x:Name="radSplitContainer">
 	        <telerik:RadPaneGroup x:Name="radPaneGroup">
@@ -33,11 +33,11 @@ The __RadPane__ is the main content unit of the __RadDocking__ control. Its main
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
-#### __[C#] Example 1: Add RadPanes to RadDocking__
+__Example 1: Add RadPanes to RadDocking__
 
-{{region cs-raddocking-panes-radpane_1}}
+```C#
 	RadPane radPane1 = new RadPane();
 	radPane1.Header = "Document 1";
 	radPane1.Content = new TextBlock() { Text = "Some simple text here" };
@@ -52,11 +52,8 @@ The __RadPane__ is the main content unit of the __RadDocking__ control. Its main
 	var radSplitContainer = new RadSplitContainer();
 	radSplitContainer.Items.Add(radPaneGroup);
 	radDocking.Items.Add(radSplitContainer);
-{{endregion}}
-
-#### __[VB.NET] Example 1: Add RadPanes to RadDocking__
-
-{{region vb-raddocking-panes-radpane_2}}
+```
+```VB.NET
 	Dim radPane1 As New RadPane()
 	radPane1.Header = "Document 1"
 	radPane1.Content = New TextBlock() With {.Text = "Some simple text here"}
@@ -71,7 +68,7 @@ The __RadPane__ is the main content unit of the __RadDocking__ control. Its main
 	Dim radSplitContainer = New RadSplitContainer()
 	radSplitContainer.Items.Add(radPaneGroup)
 	radDocking.Items.Add(radSplitContainer)
-{{endregion}}
+```
 
 **Figure 1** displays the resulting RadDocking control.
 

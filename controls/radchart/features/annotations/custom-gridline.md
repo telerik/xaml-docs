@@ -26,9 +26,9 @@ In order to customize the appearance of the __CustomGridLine__ you can simply se
 
 Here is an example:
 
-#### __XAML__
 
-{{region xaml-radchart-features-annotations-custom-gridline_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -45,39 +45,34 @@ Here is an example:
 	    </telerik:RadChart.DefaultView>
 	
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-annotations-custom-gridline_1}}
+
+```C#
 	CustomGridLine gridline = new CustomGridLine();
 	gridline.YIntercept = 150;
 	gridline.Stroke = new SolidColorBrush(Colors.Red);
 	gridline.StrokeThickness = 2;
 	this.radChart.DefaultView.ChartArea.Annotations.Add(gridline);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-annotations-custom-gridline_2}}
+```
+```VB.NET
 	Dim gridline As New CustomGridLine()
 	gridline.YIntercept = 150
 	gridline.Stroke = New SolidColorBrush(Colors.Red)
 	gridline.StrokeThickness = 2
 	Me.radChart.DefaultView.ChartArea.Annotations.Add(gridline)
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Annotations_CustomGridLine_01.png)
 
 Additional customizations can be done via the __ElementStyle__ property. It gets applied to the __Line__ element that visually represents the __CustomGridLine__. Via this style you can set the __StrokeDashArray__ property for example.
 
-#### __XAML__
 
-{{region xaml-radchart-features-annotations-custom-gridline_3}}
+
+```XAML
 	<FrameworkElement.Resources>
 	    <Style x:Key="CustomGridLineStyle"
 	    TargetType="Line">
@@ -103,7 +98,7 @@ Additional customizations can be done via the __ElementStyle__ property. It gets
 	    </telerik:RadChart.DefaultView>
 	    <!--...-->
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 

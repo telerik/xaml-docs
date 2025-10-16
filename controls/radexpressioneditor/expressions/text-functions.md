@@ -12,7 +12,9 @@ position: 5
 
 As of R1 2019, the RadExpression control also provides a number of functions for **string** manipulation. They can be found in the new **Text** subcategory illustrated in **Figure 1**.
  
-{% figure 1, "The Text functions subcategory", "text-functions.png" %}
+ __The Text functions subcategory__
+
+![](images/text-functions.png)
 
 Here is a full list of the available functions:
 
@@ -39,21 +41,20 @@ Here is a full list of the available functions:
 
 **Figure 2** demonstrates a possible use of the text functions for filtering a RadGridView control similarly to the example in the [Getting Started article]({%slug radexpressioneditor-getting-started%}).
 
-{% figure 2, "Filtering RadGridView via the text functions", "text-functions-example1.png" %}
+__Filtering RadGridView via the text functions__
+
+![](images/text-functions-example1.png)
 
 The same can be achieved via code-behind as well by using the code from **Example 1**.
 
-#### __[C#] Example 1: Creating the expression in code-behind__
+__Example 1: Creating the expression in code-behind__
 
-{{region cs-radexpressioneditor-expressions-text-functions-1}}
+```C#
     this.ExpressionEditor.ExpressionText = @"Name.EndsWith(""l"")";
-{{endregion}}
-
-#### __[VB.NET] Example 1: Creating the expression in code-behind__
-
-{{region vb-radexpressioneditor-expressions-text-functions-1}}
+```
+```VB.NET
     Me.ExpressionEditor.ExpressionText = "Name.EndsWith(""l"")"
-{{endregion}}
+```
 
 ## See Also
 

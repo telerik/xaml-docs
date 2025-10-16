@@ -33,30 +33,42 @@ When using any of the [Telerik themes]({%slug common-styling-appearance-availabl
 
 Most controls use the theme Palette's FontSize property, yet all themes support a different number of various font sizes. For example, if the Office2016Theme is applied to your application, you can change the following font size properties of its palette:
 
-#### __[C#] Example 1: Modifying the FontSize and FontFamily in the Office2016 theme__
-{{region kb-common-setting-fontsize-in-code-behind-for-a-telerik-theme-0}}
+__Example 1: Modifying the FontSize and FontFamily in the Office2016 theme__
+```C#
 	Office2016Palette.Palette.FontSizeS = 10; 
 	Office2016Palette.Palette.FontSize = 12; 
 	Office2016Palette.Palette.FontSizeL = 14;
 	Office2016Palette.Palette.FontFamily = new FontFamily("Segoe UI"); 
-{{endregion}}
+```
 
 The values assigned to the Palette's font size properties are the default ones. You can change them on a click of a button as well at run-time. The following Example 2 how to change the default FontFamily from "Segoe UI" to "Calibri" and the FontSize from 12 to 14.
 
 
-#### __[C#] Example 2: Changing the default FontSize and FontFamily in the Office2016 theme on a button click__
-{{region kb-common-setting-fontsize-in-code-behind-for-a-telerik-theme-1}}
+__Example 2: Changing the default FontSize and FontFamily in the Office2016 theme on a button click__
+```C#
 	private void OnButtonChangeFontSizeClick(object sender, RoutedEventArgs e) 
 	{ 
 		Office2016Palette.Palette.FontSize = 14; 
 		Office2016Palette.Palette.FontFamily = new FontFamily("Calibri"); 
 	} 
-{{endregion}}
+```
 
 #### __Figure 1: Setting different FontSize and FontFamily__
 ![{{ site.framework_name }} Setting different FontSize and FontFamily](../styling-and-appearance/images/common-styling-appearance-office2016-theme-1.png)	
 
-The approach used in the above code snippets is applicable for the following themes - [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Windows8Touch]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-fonts), [Office2013]({%slug common-styling-appearance-office2013-theme%}#changing-fonts), [VisualStudio2013]({%slug common-styling-appearance-visualstudio2013-theme%}#changing-fonts), [Office2016]({%slug common-styling-appearance-office2016-theme%}#changing-fonts), [Office2016Touch]({%slug common-styling-appearance-office2016touch-theme%}#changing-fonts), [Green]({%slug common-styling-appearance-green-theme%}#changing-fonts), [Fluent]({%slug common-styling-appearance-fluent-theme%}#changing-fonts), [Material]({%slug common-styling-appearance-material-theme%}#changing-fonts), [Crystal]({%slug common-styling-appearance-crystal-theme%}#changing-fonts) and [VisualStudio2019]({%slug common-styling-appearance-visualstudio2019-theme%}#changing-fonts).
+The approach used in the above code snippets is applicable for the following themes:
+
+* [Windows8]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-font-properties)
+* [Windows8Touch]({%slug common-styles-appearance-colorizing-metro-theme%}#changing-font-properties)
+* [Office2013]({%slug common-styling-appearance-office2013-theme%}#changing-font-properties)
+* [VisualStudio2013]({%slug common-styling-appearance-visualstudio2013-theme%}#changing-font-properties)
+* [Office2016]({%slug common-styling-appearance-office2016-theme%}#changing-font-properties)
+* [Office2016Touch]({%slug common-styling-appearance-office2016touch-theme%}#changing-font-properties)
+* [Green]({%slug common-styling-appearance-green-theme%}#changing-font-properties)
+* [Fluent]({%slug common-styling-appearance-fluent-theme%}#changing-font-properties)
+* [Material]({%slug common-styling-appearance-material-theme%}#changing-font-properties)
+* [Crystal]({%slug common-styling-appearance-crystal-theme%}#changing-font-properties) 
+* [VisualStudio2019]({%slug common-styling-appearance-visualstudio2019-theme%}#changing-font-properties).
 
 >If you are using a different theme, which does not have a palette, you can change the font size of the application through Application.Current.MainWindow.FontSize or apply it directly for the control you wish, e.g. this.dataGrid.FontSize = 20.
 

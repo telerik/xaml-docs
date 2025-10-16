@@ -17,13 +17,13 @@ The coding assistant is an AI code generator that provides specialized context t
 
 The Telerik AI Coding Assistant is available through:
 
-* [Telerik WPF GitHub Copilot Extension]({%slug ai-copilot-extension%})
-
-  > [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
-  >
-  > From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP servers](slug:ai-mcp-server). You can enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
-
+* [Telerik WPF GitHub Copilot Extension]({%slug ai-copilot-extension%})	  
+	
 * [Telerik WPF MCP Server]({%slug ai-mcp-server%})
+
+> [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
+>
+> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP servers](slug:ai-mcp-server). You can enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
 
 ### Key Differences
 
@@ -94,7 +94,7 @@ Data Usage:
 Data Storage:
 * Prompts and context are anonymized and stored only for statistical analysis and troubleshooting.
 * No association between prompts and your Telerik user account.
-* Usage metrics are collected to ensure [license compliance](#number-of-requests).
+* Usage metrics are collected to ensure [license compliance](#usage-limits).
 
 > Make sure also to review the terms and privacy policies of your selected AI model and AI client.
 

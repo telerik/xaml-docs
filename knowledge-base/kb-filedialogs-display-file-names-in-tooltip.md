@@ -33,22 +33,20 @@ How to display a tooltip that contains the name of a file.
 The files in the __Extra large icons__, __Large icons__, __Medium icons__, __Small icons__, __List__ and __Tiles__ views, are represented by a `RadListBoxItem`  element. To
 display a tooltip for this element, register two new event handlers for the RadListBoxItem class, via the `EventManager.RegisterClassHandler` method. These two handlers will be for the `MouseEnter` and `MouseLeave` events.
 
-#### __[C#] Register new MouseEnter and MouseLeave event handlers__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-0}}
+__Register new MouseEnter and MouseLeave event handlers__
+```C#
     EventManager.RegisterClassHandler(typeof(RadListBoxItem), RadListBoxItem.MouseEnterEvent, new MouseEventHandler(GetOnMouseEnter), true);
     EventManager.RegisterClassHandler(typeof(RadListBoxItem), RadListBoxItem.MouseLeaveEvent, new MouseEventHandler(GetOnLeaveEnter), true);
-{{endregion}}
-
-#### __[VB.NET] Register new MouseEnter and MouseLeave event handlers__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-1}}
+```
+```VB.NET
     EventManager.RegisterClassHandler(GetType(RadListBoxItem), RadListBoxItem.MouseEnterEvent, New MouseEventHandler(GetOnMouseEnter), True)
     EventManager.RegisterClassHandler(GetType(RadListBoxItem), RadListBoxItem.MouseLeaveEvent, New MouseEventHandler(GetOnLeaveEnter), True)
-{{endregion}}
+```
 
 To reach the name of a file or a directory, cast the Content property of the RadListBoxItem element to either `FileInfoWrapper` or `DirectoryInfoWrapper` type. The FileInfoWrapper class contains information for the files and DirectoryInfoWrapper class-for directories. The name for the file or directory can be retrieved, through the `Name` property of both of these classes.
 
-#### __[C#] Cast the Content property and retrieve the file/directory name__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-2}}
+__Cast the Content property and retrieve the file/directory name__
+```C#
     private static void GetOnMouseEnter(object sender, MouseEventArgs e)
     {
         RadListBoxItem item = (RadListBoxItem)sender;
@@ -64,10 +62,8 @@ To reach the name of a file or a directory, cast the Content property of the Rad
             string directoryName = directoryInfoWrapper.Name;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Cast the Content property and retrieve the file/directory name__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-3}}
+```
+```VB.NET
     Private Shared Sub GetOnMouseEnter(ByVal sender As Object, ByVal e As MouseEventArgs)
         Dim item As RadListBoxItem = CType(sender, RadListBoxItem)
 
@@ -79,12 +75,12 @@ To reach the name of a file or a directory, cast the Content property of the Rad
             Dim directoryName As String = directoryInfoWrapper.Name
         End If
     End Sub
-{{endregion}}
+```
 
 Create a `ToolTip` class instance and set its `Content` property to the name of the file/directory. Then, set this instance to the `ToolTip` property of the `RadListBoxItem` element.
 
-#### __[C#] Create and set ToolTip for RadListBoxItem__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-4}}
+__Create and set ToolTip for RadListBoxItem__
+```C#
     private static void GetOnMouseEnter(object sender, MouseEventArgs e)
     {
         RadListBoxItem item = (RadListBoxItem)sender;
@@ -122,10 +118,8 @@ Create a `ToolTip` class instance and set its `Content` property to the name of 
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Create and set ToolTip for RadListBoxItem__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-5}}
+```
+```VB.NET
     Private Shared Sub GetOnMouseEnter(ByVal sender As Object, ByVal e As MouseEventArgs)
         Dim item As RadListBoxItem = CType(sender, RadListBoxItem)
 
@@ -157,12 +151,12 @@ Create a `ToolTip` class instance and set its `Content` property to the name of 
             End If
         End If
     End Sub
-{{endregion}}
+```
 
 To control the delay of the initial display of the tooltip, you can use the `RadToolTipService.SetInitialShowDelay` method.
 
-#### __[C#] Set initial delay__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-6}}
+__Set initial delay__
+```C#
     RadListBoxItem item = (RadListBoxItem)sender;
 
     var delay = RadToolTipService.GetInitialShowDelay(item);
@@ -170,22 +164,20 @@ To control the delay of the initial display of the tooltip, you can use the `Rad
     {
         RadToolTipService.SetInitialShowDelay(item, 0);
     }
-{{endregion}}
-
-#### __[VB.NET] Set initial delay__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-7}}
+```
+```VB.NET
     Dim item As RadListBoxItem = CType(sender, RadListBoxItem)
 
     Dim delay = RadToolTipService.GetInitialShowDelay(item)
     If delay <> 0 Then
         RadToolTipService.SetInitialShowDelay(item, 0)
     End If
-{{endregion}}
+```
 
 Inside the registered handler for the `MouseLeave` event, set the `IsOpen` property of the ToolTip property to `False`, to close the tooltip.
 
-#### __[C#] Close the tooltip__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-8}}
+__Close the tooltip__
+```C#
     private void GetOnLeaveEnter(object sender, MouseEventArgs e)
     {
         RadListBoxItem item = (RadListBoxItem)sender;
@@ -195,10 +187,8 @@ Inside the registered handler for the `MouseLeave` event, set the `IsOpen` prope
             (item.ToolTip as ToolTip).IsOpen = false;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Close the tooltip__
-{{region kb-filedialogs-display-tooltip-on-radlistboxitem-9}}
+```
+```VB.NET
     Private Sub GetOnLeaveEnter(ByVal sender As Object, ByVal e As MouseEventArgs)
         Dim item As RadListBoxItem = CType(sender, RadListBoxItem)
     
@@ -206,4 +196,4 @@ Inside the registered handler for the `MouseLeave` event, set the `IsOpen` prope
             (TryCast(item.ToolTip, ToolTip)).IsOpen = False
         End If
     End Sub
-{{endregion}}
+```

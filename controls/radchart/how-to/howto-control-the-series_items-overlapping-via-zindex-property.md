@@ -10,17 +10,13 @@ position: 8
 
 # Control the Series Items overlapping via ZIndex property
 
-
-
-## 
-
 The following article demonstrates how to control the overlapping of [Bubbles](https://demos.telerik.com/silverlight/#Chart/Gallery/Bubble) when they are positioned too close. By selecting one of the Bubbles the *Canvas.ZIndex* attached property will increase it's value (by default it is 0) which will cause the selected Bubble to be positioned over the others.
 
 ##### 1. Create a class of Business Objects that will be used to populate the Chart:
 
-#### __C#__
 
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_0}}
+
+```C#
 	public class UserDataPoint
 	    {
 	        private double _y;
@@ -97,13 +93,8 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	        }
 	
 	      }
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_1}}
+```
+```VB.NET
 	Public Class UserDataPoint
 	            Private _y As Double
 	            Private _bubbleSize As Double
@@ -167,15 +158,11 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	            End Function
 	
 	      End Class
-	{{endregion}}
-
-
+```
 
 ##### 2. Create a BubbleViewModel class:
 
-#### __C#__
-
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_2}}
+```C#
 	public class BubbleViewModel
 	    {
 	        private List<UserDataPoint> _bubbleData;
@@ -193,13 +180,8 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	            }
 	        }
 	    }
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_3}}
+```
+```VB.NET
 	Public Class BubbleViewModel
 	Private _bubbleData As List(Of UserDataPoint)
 	Public ReadOnly Property BubbleData() As List(Of UserDataPoint)
@@ -211,33 +193,29 @@ The following article demonstrates how to control the overlapping of [Bubbles](h
 	End Get
 	End Property
 	End Class
-	{{endregion}}
-
-
+```
 
 ##### 3. Add a new RadChart declaration and new SeriesMapping (the Chart is populated via [Manual Series Mapping]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%})). 
 
-#### __XAML__
-
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_4}}
+```XAML
 	<TelerikChart:RadChart x:Name="RadChart1" ItemsSource="{Binding BubbleData}">
-	            <TelerikChart:RadChart.SeriesMappings>
-	                <TelerikCharting:SeriesMapping LegendLabel="Bubble Series 0">
-	                    <TelerikCharting:SeriesMapping.SeriesDefinition>
-	                        <TelerikCharting:BubbleSeriesDefinition  ItemStyle="{StaticResource CustomBubble}" BubbleSizeRelative="False">
-	                            <TelerikCharting:BubbleSeriesDefinition.InteractivitySettings>
-	                                <TelerikCharting:InteractivitySettings HoverScope="Item" SelectionMode="Single" SelectionScope="Item" />
-	                            </TelerikCharting:BubbleSeriesDefinition.InteractivitySettings>
-	                        </TelerikCharting:BubbleSeriesDefinition>
-	                    </TelerikCharting:SeriesMapping.SeriesDefinition>
-	                    <TelerikCharting:SeriesMapping.ItemMappings>
-	                        <TelerikCharting:ItemMapping FieldName="Y" DataPointMember="YValue" />
-	                        <TelerikCharting:ItemMapping FieldName="BubbleSize" DataPointMember="BubbleSize" />
-	                    </TelerikCharting:SeriesMapping.ItemMappings>
-	                </TelerikCharting:SeriesMapping>  
-	            </TelerikChart:RadChart.SeriesMappings>
-	        </TelerikChart:RadChart>
-	{{endregion}}
+		<TelerikChart:RadChart.SeriesMappings>
+			<TelerikCharting:SeriesMapping LegendLabel="Bubble Series 0">
+				<TelerikCharting:SeriesMapping.SeriesDefinition>
+					<TelerikCharting:BubbleSeriesDefinition  ItemStyle="{StaticResource CustomBubble}" BubbleSizeRelative="False">
+						<TelerikCharting:BubbleSeriesDefinition.InteractivitySettings>
+							<TelerikCharting:InteractivitySettings HoverScope="Item" SelectionMode="Single" SelectionScope="Item" />
+						</TelerikCharting:BubbleSeriesDefinition.InteractivitySettings>
+					</TelerikCharting:BubbleSeriesDefinition>
+				</TelerikCharting:SeriesMapping.SeriesDefinition>
+				<TelerikCharting:SeriesMapping.ItemMappings>
+					<TelerikCharting:ItemMapping FieldName="Y" DataPointMember="YValue" />
+					<TelerikCharting:ItemMapping FieldName="BubbleSize" DataPointMember="BubbleSize" />
+				</TelerikCharting:SeriesMapping.ItemMappings>
+			</TelerikCharting:SeriesMapping>  
+		</TelerikChart:RadChart.SeriesMappings>
+	</TelerikChart:RadChart>
+```
 
 
 
@@ -245,9 +223,7 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 
 ##### 4. In the MainPage.xaml.cs subscribe to __SelectionChanged__ event of the ChartArea and make sure there is only one Bubble Item Selected. Set the __Canvas.ZIndex__ property of the selected Bubble to 2000 and make it 0 for all others:
 
-#### __C#__
-
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_5}}
+```C#
 	public MainPage()
 	        {
 	            InitializeComponent();
@@ -274,13 +250,8 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 	                Canvas.SetZIndex(selectedBubble, 2000);
 	        }
 	}
-	{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radchart-howto-control-the-series_items-overlapping-via-zIndex-property_6}}
+```
+```VB.NET
 	Public Sub New()　
 	InitializeComponent()
 	AddHandler RadChart1.DefaultView.ChartArea.SelectionChanged, AddressOf ChartArea_SelectionChanged
@@ -300,9 +271,7 @@ Selection of Bubble Items is achieved via [Interactivity Effects](http://www.tel
 	Canvas.SetZIndex(selectedBubble, 2000)
 	End If
 	End Sub
-	{{endregion}}
-
-
+```
 
 ##### 5. The result:
 

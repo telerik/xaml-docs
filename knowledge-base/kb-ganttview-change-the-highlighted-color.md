@@ -32,8 +32,8 @@ Change the color of the highlighted items of RadGanttView.
 
 To achieve this behavior, you can implement a custom [attached property]({%slug common-mvvm-attached-behavior%}). It will retrive the elements responsible for the highlighted states of the EventContainer and SummaryContainer elements and update them based on its value. To retrieve the elements for the highlighted state, use the [ChildrenOfType]({%slug common-visual-tree-helpers%}#childrenoftypeextensions) extension method.
 
-#### __[C#] Custom attached property for modifying the highlighted items' color__
-{{region kb-ganttview-change-the-highlighted-color-0}}
+__Custom attached property for modifying the highlighted items' color__
+```C#
     public class EventContainerExtensions
     {
         public static SolidColorBrush GetEventContainerHighlightBrush(DependencyObject obj)
@@ -104,10 +104,10 @@ To achieve this behavior, you can implement a custom [attached property]({%slug 
             }
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Setting the EventContainerExtensions.EventContainerHighlightBrush attached property__
-{{region kb-ganttview-change-the-highlighted-color-1}}
+__Setting the EventContainerExtensions.EventContainerHighlightBrush attached property__
+```XAML
     <Grid.Resources>
         <!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource EventContainerStyle}" -->
         <Style TargetType="telerik:EventContainer">
@@ -118,7 +118,7 @@ To achieve this behavior, you can implement a custom [attached property]({%slug 
             <Setter Property="local:EventContainerExtensions.EventContainerHighlightBrush" Value="Orange"/>
         </Style>
     </Grid.Resources>
-{{endregion}}
+```
 
 __Windows 11 themed RadGanttView with different color for its highlighted items__
 

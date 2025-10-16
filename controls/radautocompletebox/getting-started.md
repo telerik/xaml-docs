@@ -41,35 +41,35 @@ You can include the control in your projects by either dragging it from the tool
 
 The following examples show how to create a __RadAutoCompleteBox__ control in the code-behind and in XAML:
 
-#### __[C#] Example 1: Creating a RadAutoCompleteBox in code-behind__
+__Example 1: Creating a RadAutoCompleteBox in code-behind__
 
-{{region cs-radautocompletebox-getting-started-0}}
+```C#
 	RadAutoCompleteBox autoCompleteBox = new RadAutoCompleteBox();
-{{endregion}}
+```
 
-#### __[VB] Example 1: Creating a RadAutoCompleteBox in code-behind__
+__Example 1: Creating a RadAutoCompleteBox in code-behind__
 
-{{region vb-radautocompletebox-getting-started-0}}
+```VB
 	Dim autoCompleteBox As New RadAutoCompleteBox()
-{{endregion}}
+```
 
-#### __[XAML] Example 1: Creating a RadAutoCompleteBox in XAML__
+__Example 1: Creating a RadAutoCompleteBox in XAML__
 
-{{region xaml-radautocompletebox-getting-started-0}}
+```XAML
 	<UserControl xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 	    <Grid x:Name="LayoutRoot" Background="White">
 	        <telerik:RadAutoCompleteBox x:Name="radAutoCompleteBox"/>
 	    </Grid>
 	</UserControl>
-{{endregion}}
+```
 
 ## Populate with Data
 
 In order to populate the RadAutoCompleteBox with data, you can set its **ItemsSource** property to any **IEnumerable** collection of items.
 
-#### __[C#] Example 2: Set RadAutoCompleteBox's ItemsSource__
+__Example 2: Set RadAutoCompleteBox's ItemsSource__
 
-{{region cs-radautocompletebox-getting-started-1}}
+```C#
     public MainWindow()
     {
         InitializeComponent();
@@ -92,7 +92,7 @@ In order to populate the RadAutoCompleteBox with data, you can set its **ItemsSo
 
         this.AutoComplete.ItemsSource = countries;
     }
-{{endregion}}
+```
 
 ## Customize the Control
 
@@ -100,16 +100,16 @@ To actually display results when using the ObservableCollection from **Example 2
 
 You can then set the control's [abundance of properties]({%slug radautocompletebox-features-key-properties%}) to customize it per your needs.
 
-#### __[C#] Example 3: Customize the RadAutoCompleteBox__
+__Example 3: Customize the RadAutoCompleteBox__
 
-{{region cs-radautocompletebox-getting-started-2}}
+```C#
     <telerik:RadAutoCompleteBox x:Name="autoComplete" 
                                     AutoCompleteMode="Suggest" 
                                     DisplayMemberPath="Name"
                                     TextSearchPath="Capital"
                                     TextSearchMode="Contains"
                                     WatermarkContent="Select a country..." />
-{{endregion}}
+```
 
 **Figure 1** illustrates the result from the code in **Example 3**.
 
@@ -132,8 +132,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region xaml-radautocompletebox-getting-started_3}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -143,7 +143,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

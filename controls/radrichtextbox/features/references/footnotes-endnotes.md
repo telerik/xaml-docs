@@ -69,65 +69,65 @@ Here is the list of the available properties concerning endnotes:
 
 Footnotes and endnotes all contain the __Note__ class which defines the note body and weather a special symbol should be used when visualizing the note in the document. Notes can be inserted in __RadRichtextBox__ using the following methods:
 
-#### __C#__
 
-{{region radrichtextbox-features-footnotes-endnotes_1}}
+
+```C#
 	public void InsertFootnote()
 	public void InsertFootnote(Note footnote)
 	public void InsertEndnote()
 	public void InsertEndnote(Note endnote)
-{{endregion}}
+```
 
 
 
 There is a set of document styles that are used inside notes content. It is recommended that when a note is created by code, these styles are used in the note body, so the document styling is persistent. There are some static helper methods that make the task of creating notes, that have the necessary styles applied, easier:
 
-#### __C#__
 
-{{region radrichtextbox-features-footnotes-endnotes_2}}
+
+```C#
 	public static Note CreateCustomMarkFootnote(string symbol, FontFamily fontFamily = null)
 	public static Note CreateCustomMarkEndnote(string symbol, FontFamily fontFamily = null)
 	public static Note CreateDefaultFootnote()
 	public static Note CreateDefaultEndnote()
-{{endregion}}
+```
 
 
 Here is for example how to insert a footnote with a custom mark – dollar sign with Calibri font:
 
-#### __C#__
 
-{{region radrichtextbox-features-footnotes-endnotes_3}}
+
+```C#
 	Note note = Note.CreateCustomMarkFootnote("$", new FontFamily("Calibri"));
 	this.radRichtextBox.InsertFootnote(note);
-{{endregion}}
+```
 
 
 ## Navigating and Scrolling
 
 You can programmatically navigate the document caret position through the notes in the document using the following methods of the __RadRichtextBox__:
 
-#### __C#__
 
-{{region radrichtextbox-features-footnotes-endnotes_4}}
+
+```C#
 	public void GoToNextFootnote()
 	public void GoToPreviousFootnote()
 	public void GoToNextEndnote()
 	public void GoToPreviousEndnote()
-{{endregion}}
+```
 
 
 
 You can use the __ScrollToNote()__ method to scroll the viewport so that a note content is visible. A reference to the note object can be obtained through the __FootnoteRangeStart__ and __EndnoteRangeStart__ annotations. These annotations are contained inside the document and mark the beginning of the note symbol that acts like a reference to the note. Here is an example of how to scroll to the content of the first endnote in the document:
 
-#### __C#__
 
-{{region radrichtextbox-features-footnotes-endnotes_5}}
+
+```C#
 	EndnoteRangeStart noteRangeStart = this.radRichtextBox.Document.EnumerateChildrenOfType<EndnoteRangeStart>().FirstOrDefault();
 	
 	if (noteRangeStart != null)
 	{ 
 	    this.radRichtextBox.ScrollToNote(noteRangeStart.Note);
 	}
-{{endregion}}
+```
 
 

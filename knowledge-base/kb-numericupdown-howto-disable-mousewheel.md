@@ -30,8 +30,8 @@ How to disable the RadNumericUpDown mouse wheel functionality.
 
 You can disable the scroll wheel functionality of the RadNumericUpDown control globally by defining an [attached behavior]({%slug common-mvvm-attached-behavior%}).
 
-#### __[C#] MouseWheelBehavior.cs__
-{{region kb-numericupdown-howto-disable-mousewheel-0}}
+__MouseWheelBehavior.cs__
+```C#
 	public class MouseWheelBehavior
 	{
 			public static bool GetIsEnabled(DependencyObject obj)
@@ -56,16 +56,16 @@ You can disable the scroll wheel functionality of the RadNumericUpDown control g
 					}
 			}
 	}
-{{endregion}}
+```
 
 You can then set this behavior via an implicit style to all instances in your application.
 
-#### __[XAML] App.xaml__
-{{region kb-numericupdown-howto-disable-mousewheel-1}}
+__App.xaml__
+```XAML
 	<Style TargetType="telerik:RadNumericUpDown">
 			<Setter Property="local:MouseWheelBehavior.IsEnabled" Value="False" />
 	</Style>
-{{endregion}}
+```
 
 ## See Also
 

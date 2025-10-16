@@ -32,8 +32,8 @@ How to set the background of a RadDocking's pane to transparent (including RadPa
 
 To remove the backround of a RadPane, add the following Styles:
 
-#### __[XAML]__
-{{region kb-docking-howto-set-pane-background-to-transparent-0}}
+
+```XAML
 	<Application.Resources>
   		<!-- If you are using the StyleManager theming mechanism with the XAML binaries, remove the BasedOn attributes -->
 		<Style TargetType="telerik:RadPane" BasedOn="{StaticResource RadPaneStyle}">
@@ -49,6 +49,6 @@ To remove the backround of a RadPane, add the following Styles:
 			<Setter Property="Background" Value="Transparent"/>
 		</Style>
 	</Application.Resources>
-{{endregion}}
+```
 
 > The setters for the **mat:MaterialAssist.IsShadowDisabled** properties are only needed for the **Crystal**, **Fluent** and **Material** themes.

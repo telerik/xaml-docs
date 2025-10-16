@@ -20,26 +20,26 @@ The 3D space in the __RadCartesianChart3D__ control is defined by three axes, on
 The linear and categorical 3D axes share some common features which you can find listed below.
 * __Labels visibility__: You can control the visibility of the axis labels using the __ShowLabels__ bool property.
 		
-	#### __[XAML] Example 1: Setting the labels visibility__
-	{{region xaml-radchartview-3d-axes-0}}
+	__Example 1: Setting the labels visibility__
+	```XAML
 		<telerik:LinearAxis3D ShowLabels="False"/>
-	{{endregion}}
+	```
 	
 	#### __Figure 2: The labels of all axes are hidden__	![{{ site.framework_name }} RadChartView3D The labels of all axes are hidden](images/radchartview-3d-axes-1.png)
 
 * __Label interval__: You can set the interval between the visible labels of the axis using the __LabelInterval__ property. This allows you to display labels only at a specific step. 
 
-	#### __[XAML] Example 2: Setting the label interval__
-	{{region xaml-radchartview-3d-axes-1}}
+	__Example 2: Setting the label interval__
+	```XAML
 		<telerik:LinearAxis3D LabelInterval="2" />
-	{{endregion}}
+	```
 
 	#### __Figure 3: Label interval__	![{{ site.framework_name }} RadChartView3D Label interval](images/radchartview-3d-axes-2.png)
  
 * __Label style__: You can define a custom style for the axis labels using the __LabelStyle__ property. The property accepts an object of type Style that targets a __TextBlock__ element.
 
-	#### __[XAML] Example 3: Setting the label style__
-	{{region xaml-radchartview-3d-axes-2}}
+	__Example 3: Setting the label style__
+	```XAML
 		<telerik:LinearAxis3D>
 		  <telerik:LinearAxis3D.LabelStyle>
 			 <Style TargetType="TextBlock">
@@ -48,14 +48,14 @@ The linear and categorical 3D axes share some common features which you can find
 			   </Style>
 		   </telerik:LinearAxis3D.LabelStyle>
 		</telerik:LinearAxis3D>
-	{{endregion}}	
+	```	
 
 	#### __Figure 4: Label style__	![{{ site.framework_name }} RadChartView3D Label style](images/radchartview-3d-axes-3.png)	
  
 * __Label template__: You can create a __DataTemplate__ that defines the appearance of the axis labels and set it to the __LabelTemplate__ property of the axis.
 
-	#### __[XAML] Example 4: Setting the label template__
-	{{region xaml-radchartview-3d-axes-3}}
+	__Example 4: Setting the label template__
+	```XAML
 		<telerik:LinearAxis3D>                    
 			<telerik:LinearAxis3D.LabelTemplate>
 				<DataTemplate>
@@ -66,7 +66,7 @@ The linear and categorical 3D axes share some common features which you can find
 				</DataTemplate>
 			</telerik:LinearAxis3D.LabelTemplate>
 		</telerik:LinearAxis3D>
-	{{endregion}}		 	
+	```		 	
 
 	#### __Figure 5: Label template__	![{{ site.framework_name }} RadChartView3D Label template](images/radchartview-3d-axes-4.png)
 	
@@ -74,19 +74,19 @@ The linear and categorical 3D axes share some common features which you can find
  
 * __Ticks length__: You can define the length of the axis ticks using the __MajorTickLength__ property.
 
-	#### __[XAML] Example 5: Setting the label template__
-	{{region xaml-radchartview-3d-axes-4}}
+	__Example 5: Setting the label template__
+	```XAML
 		<telerik:LinearAxis3D MajorTickLength="15">
-	{{endregion}}
+	```
 	
 	#### __Figure 6: Tick length__	![{{ site.framework_name }} RadChartView3D Tick length](images/radchartview-3d-axes-5.png)
 	 
 * __Plot mode__: You can set the strategy for positioning the data points along the axis using the __PlotMode__ property of the axis. 
 	
-	#### __[XAML] Example 6: Setting the plot mode__
-	{{region xaml-radchartview-3d-axes-5}}
+	__Example 6: Setting the plot mode__
+	```XAML
 		<telerik:CategoricalAxis3D PlotMode="BetweenTicks">
-	{{endregion}}
+	```
 	
 	The PlotMode property can have the following values:
 	
@@ -98,15 +98,15 @@ The linear and categorical 3D axes share some common features which you can find
 
 * __Title__: The __Title__ property allows you to display a heading positioned next to the axis. To customize the title appearance you can use the __TitleTemplate__ property.
 
-	#### __[XAML] Example 7: Setting the axis title__
-	{{region xaml-radchartview-3d-axes-6}}	
+	__Example 7: Setting the axis title__
+	```XAML	
 		<telerik:CategoricalAxis3D Title=”Axis title">
-	{{endregion}}		 
+	```		 
 
 	#### __Figure 8: Axis title__	![{{ site.framework_name }} RadChartView3D Axis title](images/radchartview-3d-axes-7.png)	
 	
-	#### __[XAML] Example 8: Setting the axis title template__
-	{{region xaml-radchartview-3d-axes-7}}	
+	__Example 8: Setting the axis title template__
+	```XAML	
 		<telerik:LinearAxis3D Title="Axis title">
 			<telerik:LinearAxis3D.TitleTemplate>
 				<DataTemplate>
@@ -114,23 +114,23 @@ The linear and categorical 3D axes share some common features which you can find
 				</DataTemplate>
 			</telerik:CategoricalAxis3D.TitleTemplate>
 		</telerik:CategoricalAxis3D>
-	{{endregion}}		 
+	```		 
 
 	#### __Figure 9: Axis title template__	![{{ site.framework_name }} RadChartView3D Axis title template](images/radchartview-3d-axes-8.png)	
 
 * __Smart labels__: You can avoid labels overlapping with the smart labels strategy of the axis. To enable this feature you can use the __SmartLabelsMode__ property. 
 
-	#### __[XAML] Example 9: Enabling the axis smart labels__
-	{{region xaml-radchartview-3d-axes-8}}	
+	__Example 9: Enabling the axis smart labels__
+	```XAML	
 		<telerik:CategoricalAxis3D SmartLabelsMode="SmartStep">
-	{{endregion}}
+	```
 	
 	#### __Figure 0: Smart labels mode__	![{{ site.framework_name }} RadChartView3D Smart labels mode](images/radchartview-3d-axes-9.png)
 
 * __Line style__: You can modify the appearance of the lines drawn for the axes by creating a style which targets the **Path** type and set it as the **LineStyle** property of the axis.
 
-	#### __[XAML] Example 10: Enabling the axis smart labels__
-	{{region xaml-radchartview-3d-axes-13}}	
+	__Example 10: Enabling the axis smart labels__
+	```XAML	
 		<telerik:LinearAxis3D>
 			<telerik:LinearAxis3D.LineStyle>
 				<Style TargetType="Path">
@@ -139,7 +139,7 @@ The linear and categorical 3D axes share some common features which you can find
 				</Style>
 			</telerik:LinearAxis3D.LineStyle>
 		</telerik:LinearAxis3D>
-	{{endregion}}
+	```
 	
 	#### __Figure 11: Styled lines of the Z axis__
 	![Styled lines of the Z axis](images/radchartview-3d-axes-13.png)
@@ -150,55 +150,55 @@ This type of axis has a notion of range which means that it has minimum, maximum
 
 * __Desired tick count__: You can use the __DesiredTickCount__ property of the axis to set the number of the desired ticks that will be displayed on the axis. Note that the property doesn’t set a fixed number of ticks, but it defines the preferred count and the chart tries to calculate them accordingly.
 
-	#### __[XAML] Example 11: Setting the desired tick count__
-	{{region xaml-radchartview-3d-axes-9}}	
+	__Example 11: Setting the desired tick count__
+	```XAML	
 		<telerik:LinearAxis3D DesiredTickCount="3" />
-	{{endregion}}		
+	```		
 
 * __Manual range__: You can use the __Minimum__ and __Maximum__ properties of the axis to set the range manually. To control the step between the ticks you can use the __MajorStep__ property.
 
-	#### __[XAML] Example 12: Setting manual range__
-	{{region xaml-radchartview-3d-axes-10}}	
+	__Example 12: Setting manual range__
+	```XAML	
 		<telerik:LinearAxis3D Minimum=”0” Maximum=”10” MajorStep="2.5" />
-	{{endregion}}
+	```
 	
 	#### __Figure 2: Manual range__	![{{ site.framework_name }} RadChartView3D Manual range](images/radchartview-3d-axes-10.png)
 
 * __Tick origin__: The axis tick positions are determined by the __MajorStep__ and the __TickOrigin__ properties. The ticks will be generated such that a tick is positioned at the given TickOrigin. 
 
-	#### __[XAML] Example 13: Setting the axis tick origin__
-	{{region xaml-radchartview-3d-axes-11}}	
+	__Example 13: Setting the axis tick origin__
+	```XAML	
 		<telerik:LinearAxis3D Minimum="0" Maximum="10" MajorStep="2.5" TickOrigin="5"/>
-	{{endregion}}
+	```
 		
 	#### __Figure 3: Tick origin__	![{{ site.framework_name }} RadChartView3D Tick origin](images/radchartview-3d-axes-11.png)	
 
 * __Label format__: You can use the LabelFormat property to format the values of the axis labels.
 
-	#### __[XAML] Example 14: Setting the axis label format__
-	{{region xaml-radchartview-3d-axes-12}}	
+	__Example 14: Setting the axis label format__
+	```XAML	
 		<telerik:LinearAxis3D LabelFormat="P0"/>
-	{{endregion}}
+	```
 	
 	#### __Figure 4: Label format__	![{{ site.framework_name }} RadChartView3D Label format](images/radchartview-3d-axes-12.png)	
 	
 * __Actual range__: Use the __ActualRange__ property of LinearAxis3D to get the actual data range of the axis (auto-generated or coming from the Minimum and Maximum properties). 
 
-	#### __[C#] Example 15: Get the actual range of the axis__
-	{{region xaml-radchartview-3d-axes-14}}	
+	__Example 15: Get the actual range of the axis__
+	```C#	
 		ValueRange<double> actualRange = this.linearAxis3D.ActualRange;
-	{{endregion}}
+	```
 	
 	When the range changes, the __ActualRangeChanged__ event fires.
 	
-	#### __[C#] Example 16: ActualRangeChanged event handler__
-	{{region xaml-radchartview-3d-axes-15}}	
+	__Example 16: ActualRangeChanged event handler__
+	```C#	
 		private void LinearAxis3D_ActualRangeChanged(object sender, Telerik.Charting.NumericalRangeChangedEventArgs e)
         {
             ValueRange<double> oldRange = e.PreviousRange;
             ValueRange<double> newRange = e.NewRange;
         }
-	{{endregion}}
+	```
 
 ## See Also  
 * [Getting Started]({%slug radchartview3d-getting-started%})

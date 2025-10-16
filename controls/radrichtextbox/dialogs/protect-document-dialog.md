@@ -41,12 +41,12 @@ The dialog can be shown by executing the following commands:
 
 See how to bind the commands to external buttons in the [Commands]({%slug radrichtextbox-features-commands%}) article.
 
-#### __[C#] Executing the show dialog command__
-{{region richtextbox-dialogs-protect-document-0}}
+__Executing the show dialog command__
+```C#
 	this.richTextBox.Commands.ToggleDocumentProtectionCommand.Execute();
 	
 	this.richTextBox.Commands.ShowChangeEditingPermissionsDialogCommand.Execute(null);
-{{endregion}}
+```
 
 Alternatively, you can use the following methods of `RadRichTextBox`:
 
@@ -54,9 +54,9 @@ Alternatively, you can use the following methods of `RadRichTextBox`:
 * `ShowUnprotectDocumentDialog`
 * `ShowChangeEditingPermissionsDialog`
 
-#### __[C#] Using the show dialog method__
-{{region richtextbox-dialogs-protect-document-1}}
+__Using the show dialog method__
+```C#
 	this.richTextBox.ShowProtectDocumentDialog();
 	
 	this.richTextBox.ShowChangeEditingPermissionsDialog();
-{{endregion}}
+```

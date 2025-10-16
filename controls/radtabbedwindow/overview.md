@@ -17,7 +17,9 @@ The RadTabbedWindow enables you to create browser-like interface which hosts its
 {% include cta-panel-overview.html %}
 {% endif %}
 
-{% figure 1, "RadTabbedWindow in the Office2016 theme", "tabbedwindow-overview.png" %}
+__RadTabbedWindow in the Office2016 theme__
+
+![](images/tabbedwindow-overview.png)
 
 ## Key Features
 

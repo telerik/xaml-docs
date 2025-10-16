@@ -20,19 +20,19 @@ RadToolBar with disabled items:
 
 You can disable an item placed inside the __RadToolBar__ by changing its __IsEnabled__ property:
 
-#### __XAML__
-{{region radtoolbar-enable-toolbar-items-0}}
+
+```XAML
     <telerik:RadToolBar x:Name="toolbar">
         <Button IsEnabled="False">
             <Image Source="/Images/Open.png" />
         </Button>
     </telerik:RadToolBar>
-{{endregion}}
+```
 
 If you want to disable all __RadToolBar__ items in code behind, you can traverse the Items collection of the control and change the enable state of each item:
 
-#### __C#__
-{{region radtoolbar-enable-toolbar-items-1}}
+
+```C#
 	foreach (object o in toolbar.Items)
 	{
 		Control control = o as Control;
@@ -41,16 +41,14 @@ If you want to disable all __RadToolBar__ items in code behind, you can traverse
 			control.IsEnabled = false;
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radtoolbar-enable-toolbar-items-2}}
+```
+```VB.NET
 	For Each o As Object In toolbar.Items
 		Dim control As Control = TryCast(o, Control)
 		If control IsNot Nothing Then
 			control.IsEnabled = False
 		End If
 	Next
-{{endregion}}
+```
 
 > The __TextBlock__ control inherits the __FrameworkElement__, but not the __Control__, i.e. it has not the __IsEnabled__ property. This is the reason that it can not be enabled and disabled.

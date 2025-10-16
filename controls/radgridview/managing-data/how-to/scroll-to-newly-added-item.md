@@ -14,9 +14,9 @@ This article shows how to scroll RadGridView to the newly added item.
 
 You can achieve this by using the [ScrollIntoViewAsync]({%slug gridview-scroll-item%}) method and the **CollectionChanged** event of the control's **Items** collection. For the purpose, you can create a [custom behavior](https://github.com/microsoft/XamlBehaviorsWpf) and attach it to your RadGridView control.
 
-#### __[C#] Example 1: The custom behavior__
+__Example 1: The custom behavior__
 
-{{region cs-gridview-how-to-scroll-to-newly-added-item_0}}
+```C#
     public class ScrollToNewItemBehavior : Behavior<RadGridView>
     {
         private RadGridView GridView
@@ -47,11 +47,8 @@ You can achieve this by using the [ScrollIntoViewAsync]({%slug gridview-scroll-i
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: The custom behavior__
-
-{{region vb-gridview-how-to-scroll-to-newly-added-item_1}}
+```
+```VB.NET
 	Public Class ScrollToNewItemBehavior
 		Inherits Behavior(Of RadGridView)
 
@@ -77,13 +74,13 @@ You can achieve this by using the [ScrollIntoViewAsync]({%slug gridview-scroll-i
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
 **Example 2** and **Example 3** demonstrate how you can apply the new behavior to all RadGridView instances in your application by creating an attached property which you can then use in an implicit style.
 
-#### __[C#] Example 2: Defining the attached property__
+__Example 2: Defining the attached property__
 
-{{region cs-gridview-how-to-scroll-to-newly-added-item_1}}
+```C#
     public class GridViewAttachedProperties
     {
         public static bool GetScrollToNewItem(DependencyObject obj)
@@ -120,11 +117,8 @@ You can achieve this by using the [ScrollIntoViewAsync]({%slug gridview-scroll-i
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the attached property__
-
-{{region vb-gridview-how-to-scroll-to-newly-added-item_2}}
+```
+```VB.NET
 	Public Class GridViewAttachedProperties
 		Public Shared Function GetScrollToNewItem(ByVal obj As DependencyObject) As Boolean
 			Return CBool(obj.GetValue(ScrollToNewItemProperty))
@@ -152,17 +146,17 @@ You can achieve this by using the [ScrollIntoViewAsync]({%slug gridview-scroll-i
 			End If
 		End Sub
 	End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Set the attached property in an implicit style__
+__Example 3: Set the attached property in an implicit style__
 
-{{region xaml-gridview-how-to-scroll-to-newly-added-item_3}}
+```XAML
     <Application.Resources>
         <Style TargetType="telerik:RadGridView">
             <Setter Property="local:GridViewAttachedProperties.ScrollToNewItem" Value="True" />
         </Style>
     </Application.Resources>
-{{endregion}}
+```
 
 >If you're using [implicit styles]({%slug styling-apperance-implicit-styles-overview%}), you should base your style on the __RadGridViewStyle__ as explained in [this article]({%slug implicit-styles-styling-the-controls%}).
 

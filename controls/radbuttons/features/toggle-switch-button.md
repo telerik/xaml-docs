@@ -22,23 +22,21 @@ __Toggle Switch Button__
 
 You can instantiate __RadToggleSwitchButton__ in both XAML and code as shown in Examples 1 and 2.
 
-#### __[XAML] Defining a toggle switch button in XAML__
-{{region xaml-radbuttons-features-toggle-switch-button_0}}
+__Defining a toggle switch button in XAML__
+```XAML
 	<telerik:RadToggleSwitchButton ContentPosition="Both" CheckedContent="ON" UncheckedContent="OFF" />
-{{endregion}}
+```
 
-#### __[C#] Defining a toggle switch button in code__
-{{region cs-radbuttons-features-toggle-switch-button_1}}
+__Defining a toggle switch button in code__
+```C#
 	RadToggleSwitchButton radToggleSwitchButton = new RadToggleSwitchButton() { CheckedContent = "ON", UncheckedContent = "OFF" };
-{{endregion}}
-
-#### __[VB.NET] Defining a toggle switch button in code__
-{{region vb-radbuttons-features-toggle-switch-button_2}}
+```
+```VB.NET
 	Dim radToggleSwitchButton As New RadToggleSwitchButton() With { 
 	    .CheckedContent = "ON" 
 		.UncheckedContent = "OFF"
 	}
-{{endregion}}
+```
 
 ## Setting Content Position
 
@@ -56,28 +54,28 @@ __ContentPosition property__
 
 To make __RadToggleSwitchButton__ to go into a three-state mode you can just set its __IsThreeState__ property to __True__.
 
-#### __[XAML] Enabling the three-state mode__
-{{region xaml-radbuttons-features-toggle-switch-button_6}}
+__Enabling the three-state mode__
+```XAML
 	<telerik:RadToggleSwitchButton IsThreeState="True" ContentPosition="Both" CheckedContent="ON" UncheckedContent="OFF" />
-{{endregion}}
+```
 
 ## Setting Checked and Unchecked Content
 
 Nevertheless, the RadToggleSwitchButton derives from RadToggleButton, the Content property here is not respected. Two new properties are created. These properties set the check and uncheck content state of the ToggleSwitchButton. Their position depends on the __ContentPosition__ property.
 
-#### __[XAML] Setting Check/UncheckContent property__
-{{region xaml-radbuttons-features-toggle-switch-button_6}}
+__Setting Check/UncheckContent property__
+```XAML
 	<telerik:RadToggleSwitchButton CheckedContent="Red" UncheckedContent="Green" />
-{{endregion}}
+```
 
 ## Setting Track Size
 
 To customize the size of the ToggleSwitchButton's track use its `TrackWidth` and `TrackHeight` properties.
 
-#### __[XAML] Setting track size properties__
-{{region xaml-radbuttons-features-toggle-switch-button_6}}
+__Setting track size properties__
+```XAML
 	<telerik:RadToggleSwitchButton UncheckedContent="Red" CheckedContent="Green" ContentPosition="Both" TrackHeight="30" TrackWidth="90" />
-{{endregion}}
+```
 
 __Change Track Height/Width__  
 
@@ -87,10 +85,10 @@ __Change Track Height/Width__
 
 To customize the size of the ToggleSwitchButton's thumb use its `ThumbWidth` and `ThumbHeight` properties.
 
-#### __[XAML] Setting thumb size properties__
-{{region xaml-radbuttons-features-toggle-switch-button_7}}
+__Setting thumb size properties__
+```XAML
 	<telerik:RadToggleSwitchButton UncheckedContent="Red" CheckedContent="Green" ContentPosition="Both" TrackHeight="30" TrackWidth="90" ThumbHeight="15" ThumbWidth="50"/>
-{{endregion}}
+```
 
 __Change Thumb Height/Width__  
 
@@ -100,14 +98,14 @@ __Change Thumb Height/Width__
 
 To set the corner radius of the track, set the `CheckedTrackRadius` and `UncheckedTrackRadius` properties of the button.
 
-#### __[XAML] Setting track corner radius properties__
-{{region xaml-radbuttons-features-toggle-switch-button-8}}
+__Setting track corner radius properties__
+```XAML
 	<telerik:RadToggleSwitchButton ContentPosition="Both" 
 				       CheckedContent="On" 
 				       UncheckedContent="Off"
 				       CheckedTrackRadius="10"
 				       UncheckedTrackRadius="10"/>
-{{endregion}}
+```
 
 __Tracks with radiuses of 5 and 10 pixels__  
 

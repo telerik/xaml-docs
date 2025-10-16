@@ -12,9 +12,9 @@ position: 11
 
 If you want to filter a column that is data-bound to a custom type, you need to make sure that your custom type meets certain criteria. We will use the type **Person** as an example.
 
-#### __[C#] Example 1: The Person class__
+__Example 1: The Person class__
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_0}}
+```C#
 	public class Person
 	{
 	    private readonly string name;
@@ -36,11 +36,8 @@ If you want to filter a column that is data-bound to a custom type, you need to 
 	        this.name = name;
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 1: The Person class__
-
-{{region vb-gridview-filtering-howto-filter-a-custom-type_0}}
+```
+```VB.NET
 	Public Class Person
 	    Private ReadOnly m_name As String
 	    Private m_age As Integer
@@ -64,15 +61,15 @@ If you want to filter a column that is data-bound to a custom type, you need to 
 	        Me.m_name = name
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 The first thing that you need to do is implement the generic **IEquatable** interface. It has a single method called **Equals**. Next, you need to override **Object.Equals(Object)** and **Object.GetHashCode**. MSDN states that if you implement generic **IEquatable**, you have to also override the base class implementations of Object.Equals(Object) and Object.GetHashCode so that their behavior is consistent with that of the generic IEquatable.Equals method.
 
 ## Implement IEquatable
 
-#### __[C#] Example 2: IEquatable implementation__
+__Example 2: IEquatable implementation__
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_1}}
+```C#
 	public class Person : IEquatable<Person>
 	{
 	    private readonly string name;
@@ -104,11 +101,8 @@ The first thing that you need to do is implement the generic **IEquatable** inte
 	        return StringComparer.Ordinal.Equals(this.Name, other.Name);
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: IEquatable implementation__
-
-{{region vb-gridview-filtering-howto-filter-a-custom-type_1}}
+```
+```VB.NET
 	Public Class Person
 	    Implements IEquatable(Of Person)
 	    Private ReadOnly m_name As String
@@ -141,15 +135,15 @@ The first thing that you need to do is implement the generic **IEquatable** inte
 	        Return StringComparer.Ordinal.Equals(Me.Name, other.Name)
 	    End Function
 	End Class
-{{endregion}}
+```
 
 ## Override Object.Equals(Object) and Object.GetHashCode
 
 If you do override Object.Equals(Object), your overridden implementation is also called in calls to the static Equals(System.Object, System.Object) method on your class. This ensures that all invocations of the Equals method return consistent results. Furthermore, the GetHashCode method will be used by the framework when the distinct values need to be discovered.
 
-#### __[C#] Example 3: Equals and GetHashCode overrides__
+__Example 3: Equals and GetHashCode overrides__
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_2}}
+```C#
 	public override bool Equals(object obj)
 	{
 		return ((IEquatable<Person>)this).Equals(obj as Person);
@@ -159,11 +153,8 @@ If you do override Object.Equals(Object), your overridden implementation is also
 	{
 		return this.Name.GetHashCode() ^ this.Age.GetHashCode();
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Equals and GetHashCode overrides__
-
-{{region vb-gridview-filtering-howto-filter-a-custom-type_2}}	
+```
+```VB.NET	
 	Public Overrides Function Equals(obj As Object) As Boolean
 		Return DirectCast(Me, IEquatable(Of Person)).Equals(TryCast(obj, Person))
 	End Function
@@ -171,36 +162,33 @@ If you do override Object.Equals(Object), your overridden implementation is also
 	Public Overrides Function GetHashCode() As Integer
 		Return Me.Name.GetHashCode() Xor Me.Age.GetHashCode()
 	End Function
-{{endregion}}
+```
 
 ## Override ToString
 
 Next, you need to override the **ToString** method of your type so that distinct values and grid cells display a friendly representation of your class. Here is what the class might look like:
 
-#### __[C#] Example 4: ToString override__
+__Example 4: ToString override__
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_3}}
+```C#
 	public override string ToString()
 	{
 		return this.Name;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 4: ToString override__
-
-{{region vb-gridview-filtering-howto-filter-a-custom-type_3}}	
+```
+```VB.NET	
 	Public Overrides Function ToString() As String
 		Return Me.Name
 	End Function
-{{endregion}}
+```
 
 ## Define a TypeConverter for String Conversions
 
 Next you will need to define a **TypeConverter** for string conversions. When RadGridView encounters a custom type it will use a plain TextBox for the field filter editors. The strings that user enters have to be converted to your custom type and vice versa. This can be achieved by specifying a TypeConverter on your class.
 
-#### __[C#] Example 5: Custom TypeConverter__
+__Example 5: Custom TypeConverter__
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_4}}
+```C#
 	public class PersonConverter : System.ComponentModel.TypeConverter
 	{
 	    public override bool CanConvertFrom(System.ComponentModel.ITypeDescriptorContext context, Type sourceType)
@@ -244,11 +232,8 @@ Next you will need to define a **TypeConverter** for string conversions. When Ra
 	        return base.ConvertTo(context, culture, value, destinationType);
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Custom TypeConverter__
-
-{{region vb-gridview-filtering-howto-filter-a-custom-type_4}}
+```
+```VB.NET
 	Public Class PersonConverter
 	    Inherits System.ComponentModel.TypeConverter
 	    Public Overrides Function CanConvertFrom(context As System.ComponentModel.ITypeDescriptorContext, sourceType As Type) As Boolean
@@ -284,30 +269,27 @@ Next you will need to define a **TypeConverter** for string conversions. When Ra
 	        Return MyBase.ConvertTo(context, culture, value, destinationType)
 	    End Function
 	End Class
-{{endregion}}
+```
 
 Do not forget to add the **TypeConverter** attribute on your class definition and point it to the custom TypeConverter that you just created.
 
-#### __[C#] Example 6: Adding the TypeConverter attribute__
+__Example 6: Adding the TypeConverter attribute__
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_5}}
+```C#
 	[TypeConverter(typeof(PersonConverter))]
     public class Person : IEquatable<Person>
     {
         // ...
     }
-{{endregion}}
-
-#### __[VB.NET] Example 6: Adding the TypeConverter attribute__
-
-{{region cs-gridview-filtering-howto-filter-a-custom-type_5}}
+```
+```VB.NET
 	<TypeConverter(GetType(PersonConverter))>
 	Public Class Person
 		Implements IEquatable(Of Person)
 
 		' ...
 	End Class
-{{endregion}}
+```
 
 If the plain TextBox does not suit your needs, you can provide your own field filter editor by overriding the **GridViewDataColumn.CreateFieldFilterEditor** method as described [here]({%slug gridview-filtering-howto-create-a-custom-field-filter-editor%}). You will no longer need a TypeConverter if your custom field filter editor is able to produce instances of your custom type.
 
@@ -315,9 +297,9 @@ If the plain TextBox does not suit your needs, you can provide your own field fi
 
 If you want to see the comparison filter operators (**Is Less Than**, etc.) you should override your custom type's comparison operators.
 
-#### __[C#] Example 7: Comparison operators override__
+__Example 7: Comparison operators override__
 
-{{region cs-gridview-filtering-howto-filter-a-custom-type_4}}
+```C#
 	public static bool operator <(Person left, Person right)
 	{
 	    return left.Age < right.Age;
@@ -337,11 +319,8 @@ If you want to see the comparison filter operators (**Is Less Than**, etc.) you 
 	{
 	    return left.Age >= right.Age;
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: Comparison operators override__
-
-{{region vb-gridview-filtering-howto-filter-a-custom-type_4}}
+```
+```VB.NET
 	Public Shared Operator <(left As Person, right As Person) As Boolean
 	    Return left.Age < right.Age
 	End Operator
@@ -357,7 +336,7 @@ If you want to see the comparison filter operators (**Is Less Than**, etc.) you 
 	Public Shared Operator >=(left As Person, right As Person) As Boolean
 	    Return left.Age >= right.Age
 	End Operator
-{{endregion}}
+```
 
 ## See Also
 

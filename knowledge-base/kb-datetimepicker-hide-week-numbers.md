@@ -32,8 +32,8 @@ How to hide the week numbers in the calendar of RadDateTimePicker.
 
 To hide the week numbers, set the __AreWeekNumbersVisible__ property of the RadCalendar control hosted in the RadDateTimePicker. You can do this using the **CalendarStyle** property of RadDateTimePicker.
 
-#### __[XAML]__
-{{region kb-datetimepicker-hide-week-numbers-0}}
+
+```XAML
 	<telerik:RadDateTimePicker InputMode="DatePicker">
 		<telerik:RadDateTimePicker.CalendarStyle>
 			<!-- if you use NoXaml dlls set the following property to the Style: BasedOn="{StaticResource RadCalendarStyle}" -->
@@ -42,4 +42,4 @@ To hide the week numbers, set the __AreWeekNumbersVisible__ property of the RadC
 			</Style>
 		</telerik:RadDateTimePicker.CalendarStyle>
 	</telerik:RadDateTimePicker>
-{{endregion}}
+```

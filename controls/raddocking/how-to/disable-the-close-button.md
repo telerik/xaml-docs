@@ -26,9 +26,9 @@ The first way to disable the close button is to simply __hide__ it. In order to 
 
 Here is a simple __RadDocking__ declaration with a single pane.
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-disable-the-close-button_0}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	        <telerik:RadSplitContainer>
@@ -40,7 +40,7 @@ Here is a simple __RadDocking__ declaration with a single pane.
 	        </telerik:RadSplitContainer>
 	    </telerik:RadDocking.DocumentHost>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 As you can see, by default the close button is enabled and you can close the pane anytime when you click the "X".
 
@@ -48,11 +48,11 @@ As you can see, by default the close button is enabled and you can close the pan
 
 So, find your __RadPane__ declaration and set the following attribute:
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-disable-the-close-button_1}}
+
+```XAML
 	<telerik:RadPane CanUserClose="False"/>
-{{endregion}}
+```
 
 Now, if you run your application, the close button will be no longer visible.
 
@@ -60,22 +60,19 @@ Now, if you run your application, the close button will be no longer visible.
 
 The same operation can be done in the code-behind. In order to do that, set the __CanUserClose__ property on an instance of the __RadPane__ class to __false__.
 
-#### __C#__
 
-{{region cs-raddocking-how-to-disable-the-close-button_2}}
+
+```C#
 	private void HideTheCloseButton()
 	{
 	    radPane.CanUserClose = false;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-disable-the-close-button_3}}
+```
+```VB.NET
 	Private Sub HideTheCloseButton()
 		radPane.CanUserClose = False
 	End Sub
-{{endregion}}
+```
 
 >Note that even the __CanUserClose__ property is set to False, when you drag your pane so that you make it floatable. The window that contains the pane will still have a close button visible. __However, you won't be able to close if you try to click the "X" button.__
 
@@ -85,30 +82,27 @@ The same operation can be done in the code-behind. In order to do that, set the 
 
 The second way to disable the close button is to handle the __PreviewClose__ event. So if you take a look again at the initial RadDocking declaration, attach to the __PreviewClose__ event of the __RadDocking__ class.
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-disable-the-close-button_4}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking1" PreviewClose="radDocking_PreviewClose">
-{{endregion}}
+```
 
 Switch to the code-behind and add the following code in the event handler:
 
-#### __C#__
 
-{{region cs-raddocking-how-to-disable-the-close-button_5}}
+
+```C#
 	private void radDocking_PreviewClose(object sender, Telerik.Windows.Controls.Docking.StateChangeEventArgs e)
 	{
 	    e.Handled = true;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-disable-the-close-button_6}}
+```
+```VB.NET
 	Private Sub radDocking_PreviewClose(ByVal sender As Object, ByVal e As StateChangeEventArgs)
 		e.Handled = True
 	End Sub
-{{endregion}}
+```
 
 Run your application. Note that the close button is now visible. However, if you try to click, the pane won't close. The same is valid when your window is floatable.
 

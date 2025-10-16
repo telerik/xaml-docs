@@ -30,14 +30,14 @@ Expanding or collapsing groups, while new items are being added, can cause the R
 
 Disable the collapse/expand animations. You can do this via an implicit style that targets the __TimelineItemGroupControl__, and set the __AnimationManager.AnimationSelector__ attached property to __null__.
 
-#### __[XAML]__
-{{region kb-timeline-expand-collapse-groups-no-items-0}}
+
+```XAML
 	<Window.Resources>
 		<Style TargetType="telerik:TimelineItemGroupControl">
 			<Setter Property="telerik:AnimationManager.AnimationSelector" Value="{x:Null}" />
 		</Style>
 	</Window.Resources>
-{{endregion}}
+```
 
 ## See Also
 

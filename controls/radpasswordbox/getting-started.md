@@ -38,17 +38,17 @@ Before proceeding with adding __RadPasswordBox__ to your project, make sure the 
 
 You can add __RadPasswordBox__ manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadPasswordBox in XAML__
+__Example 1: Adding RadPasswordBox in XAML__
 
-{{region passwordbox-getting-started_0}}
+```XAML
 	<telerik:RadPasswordBox Width="150" />
-{{endregion}}
+```
 
 >In order to use __RadPasswordBox__ in XAML you have to add the namespace declaration shown in __Example 2__:
->#### __[XAML] Example 2: Declaring Telerik Namespace__
->{{region telerik-schemas}}
+>__Example 2: Declaring Telerik Namespace__
+>```XAML
 >    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
->{{endregion}}
+>```
 
 If you run the application you will see the PasswordBox as illustrated in __Figure 1__. 
 
@@ -59,11 +59,11 @@ If you run the application you will see the PasswordBox as illustrated in __Figu
 
 When RadPasswordBox is empty and not focused, Watermark content can be shown. __Example 2__ demonstrates how to set Watermark text.
 
-#### __[XAML] Example 2: Setting a watermark__
+__Example 2: Setting a watermark__
 
-{{region passwordbox-getting-started_1}}
+```XAML
 	<telerik:RadPasswordBox Width="150" WatermarkContent="enter a password" />
-{{endregion}}
+```
 
 __Figure 2__ shows the result.
 
@@ -76,20 +76,20 @@ The Text property of the RadPasswordBox contains only the sequence of masking ch
 
 First we will declare the RadPasswordBox in XAML and bind a RadButton's Command property to a command from our view model.
 
-#### __[XAML] Example 3: Declare the RadPasswordBox in XAML__
+__Example 3: Declare the RadPasswordBox in XAML__
 
-{{region passwordbox-getting-started_2}}
+```XAML
 	<StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
 		<telerik:RadPasswordBox x:Name="passwordBox" WatermarkContent="enter a password" Width="150" Margin="0 0 10 0" />
 		<telerik:RadButton Content="Log in" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=passwordBox}"/>
 	</StackPanel>
-{{endregion}}
+```
 
 Now we just need to create our view model.
 
-#### __[C#] Example 3: Create ViewModel__
+__Example 3: Create ViewModel__
 
-{{region passwordbox-getting-started_2}}
+```C#
 	public  class ViewModel
 	{
 		public System.Windows.Input.ICommand LoginCommand { get; set; }
@@ -108,7 +108,7 @@ Now we just need to create our view model.
 			}
 		}
 	}
-{{endregion}}
+```
 
 Voilà! Now when you click on the Login button, the __LoginCommand.Execute()__ method will be called. Inside the method you can get the __RadPasswordBox__ from the parameter and see the entered password from the __Password__ property.
 
@@ -129,8 +129,8 @@ To change the theme, you can follow the steps below:
 
 __Example 4__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 4: Merge the ResourceDictionaries__  
-{{region radpasswordbox-getting-started_4}}
+__Example 4: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -139,7 +139,7 @@ __Example 4__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

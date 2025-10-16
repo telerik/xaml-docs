@@ -15,8 +15,8 @@ Telerik themes are not turned on by default in __RadToolTip__. This article desc
 
 The first approach that can be used for setting up the __RadToolTip__ theming is to set the __RadToolTipContentView__ control inside the __ToolTipContent__ property.
 
-#### __[XAML] Example 2: Setting ToolTipContent property__
-{{region radtooltip-theming-1}}
+__Example 2: Setting ToolTipContent property__
+```XAML
     <Ellipse Width="80" Height="80" Fill="#FF1B9DDE" Stroke="#FF1B9DDE" StrokeThickness="2"
            telerik:RadToolTipService.Placement="Top"
            telerik:RadToolTipService.VerticalOffset="-10">
@@ -26,12 +26,12 @@ The first approach that can be used for setting up the __RadToolTip__ theming is
             </telerik:RadToolTipContentView>
         </telerik:RadToolTipService.ToolTipContent>
     </Ellipse>
-{{endregion}}     
+```     
 
 The second approach to use predefined Telerik styles is to define a __ContentTemplate__ for the __RadToolTip__ component and use the __RadToolTipContentView__ control inside the template. The following code example demonstrates how to set up __RadToolTip__ to use the Telerik themes.
 
-#### __[XAML] Example 1: Setting ToolTipContentTemplate property__
-{{region radtooltip-theming-0}}
+__Example 1: Setting ToolTipContentTemplate property__
+```XAML
     <Ellipse Width="80" Height="80" Fill="#FF1B9DDE" Stroke="#FF1B9DDE" StrokeThickness="2"
               telerik:RadToolTipService.Placement="Top"
               telerik:RadToolTipService.VerticalOffset="-10"
@@ -44,7 +44,7 @@ The second approach to use predefined Telerik styles is to define a __ContentTem
             </DataTemplate>
         </telerik:RadToolTipService.ToolTipContentTemplate>
     </Ellipse>
-{{endregion}}   
+```   
 
 {% endif %}
 
@@ -54,8 +54,8 @@ Telerik themes are not turned on by default in __RadToolTip__. In order to use t
 
 The following code example demonstrates how to set up __RadToolTip__ to use the Telerik themes.
 
-#### __[XAML] Example 1: Setting ToolTipContentTemplate property__
-{{region radtooltip-theming-0}}
+__Example 1: Setting ToolTipContentTemplate property__
+```XAML
     <Ellipse Width="80" Height="80" Fill="#FF1B9DDE" Stroke="#FF1B9DDE" StrokeThickness="2"
               telerik:RadToolTipService.Placement="Top"
               telerik:RadToolTipService.VerticalOffset="-10"
@@ -68,12 +68,12 @@ The following code example demonstrates how to set up __RadToolTip__ to use the 
             </DataTemplate>
         </telerik:RadToolTipService.ToolTipContentTemplate>
     </Ellipse>
-{{endregion}}
+```
 
 Another approach that can be used for setting up the __RadToolTip__ theming is to set the __ToolTipContentTemplate__ property to null and then define the __RadToolTipContentView__ control inside the __ToolTipContent__.
 
-#### __[XAML] Example 2: Setting ToolTipContent property__
-{{region radtooltip-theming-1}}
+__Example 2: Setting ToolTipContent property__
+```XAML
     <Ellipse Width="80" Height="80" Fill="#FF1B9DDE" Stroke="#FF1B9DDE" StrokeThickness="2"
            telerik:RadToolTipService.Placement="Top"
            telerik:RadToolTipService.VerticalOffset="-10"
@@ -84,7 +84,7 @@ Another approach that can be used for setting up the __RadToolTip__ theming is t
 			</telerik:RadToolTipContentView>
 		</telerik:RadToolTipService.ToolTipContent>
     </Ellipse>
-{{endregion}}        
+```        
 
 {% endif %}
 

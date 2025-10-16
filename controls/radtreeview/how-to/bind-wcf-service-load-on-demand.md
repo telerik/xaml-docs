@@ -16,9 +16,9 @@ Here is a simple treeview declaration:
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __XAML__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_0}}
+
+```XAML
 	<UserControl.Resources>
 	
 	    <example:HierarchicalDataSource x:Key="Source" />
@@ -37,14 +37,14 @@ Here is a simple treeview declaration:
 	        ItemTemplate="{StaticResource NodeTemplate}"/>
 	
 	</Grid>
-{{endregion}}
+```
 
 {% endif %}
 {% if site.site_name == 'WPF' %}
 
-#### __XAML__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_33}}
+
+```XAML
 	<UserControl.Resources>
 	
 	    <example:HierarchicalDataSource x:Key="Source" />
@@ -63,15 +63,15 @@ Here is a simple treeview declaration:
 	        ItemTemplate="{StaticResource NodeTemplate}"/>
 	
 	</Grid>
-{{endregion}}
+```
 
 {% endif %}
 
 The web service will return an observable collection with objects of type __TableItem__. Here is the __TableItem__ structure: 
 
-#### __C#__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_2}}
+
+```C#
 	public class TableItem
 	{
 	    public TableItem()
@@ -99,11 +99,8 @@ The web service will return an observable collection with objects of type __Tabl
 	        set;
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_3}}
+```
+```VB.NET
 	Public Class TableItem
 	    Public Sub New()
 	        Me.Children = New List(Of TableItem)()
@@ -149,36 +146,33 @@ The web service will return an observable collection with objects of type __Tabl
 	        End Set
 	    End Property
 	End Class
-{{endregion}}
+```
 
 Now that you have the basis set up, it's time to go on. First you should create your data source object. Add a new class named __HierarchicalDataSource__ which derives from __ObservableCollection__ of __TableItem__. 
 
-#### __C#__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_4}}
+
+```C#
 	public class HierarchicalDataSource : ObservableCollection<TableItem>
 	{
 	    public HierarchicalDataSource()
 	    {
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_5}}
+```
+```VB.NET
 	Public Class HierarchicalDataSource
 	    Inherits ObservableCollection(Of TableItem)
 	    Public Sub New()
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 Next, you need to add a reference to the WCF service and load the data{% if site.site_name == 'Silverlight' %} asynchronously{% endif %}. You also need a list that holds all items that come from the web service result. 
 
-#### __C#__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_6}}
+
+```C#
 	public class HierarchicalDataSource : ObservableCollection<TableItem>
 	{
 	    // This list holds all the items that come from the web service result
@@ -213,11 +207,8 @@ Next, you need to add a reference to the WCF service and load the data{% if site
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_8}}
+```
+```VB.NET
 	Public Class HierarchicalDataSource
 	    Inherits ObservableCollection(Of TableItem)
 	    ' This list holds all the items that come from the web service result'
@@ -247,13 +238,13 @@ Next, you need to add a reference to the WCF service and load the data{% if site
 	        Next
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 Add the __FindChildren()__ method to the __HierarchicalDataSource__ file. It will find all child nodes by a given item. 
 
-#### __C#__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_10}}
+
+```C#
 	private void FindChildren( TableItem item )
 	{
 	    // find all the children of the item
@@ -267,11 +258,8 @@ Add the __FindChildren()__ method to the __HierarchicalDataSource__ file. It wil
 	        item.Children.Add( child );
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_11}}
+```
+```VB.NET
 	Private Sub FindChildren(ByVal item As TableItem)
 	    ' find all the children of the item'
 	    Dim children = unsortedList.Where(Function(x) x.ParentId = item.Id AndAlso x.Id <> item.Id)
@@ -284,13 +272,13 @@ Add the __FindChildren()__ method to the __HierarchicalDataSource__ file. It wil
 	        item.Children.Add(child)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 Add a public method named __LoadItemChildren()__. This method visits all current items and adds their direct children to the data source, if there are any. 
 
-#### __C#__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_12}}
+
+```C#
 	public void LoadItemChildren( TableItem item )
 	{
 	    foreach ( TableItem i in item.Children )
@@ -298,34 +286,31 @@ Add a public method named __LoadItemChildren()__. This method visits all current
 	        FindChildren( i );
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_13}}
+```
+```VB.NET
 	Public Sub LoadItemChildren(ByVal item As TableItem)
 	    For Each i As TableItem In item.Children
 	        FindChildren(i)
 	    Next
 	End Sub
-{{endregion}}
+```
 
 Finally add an event handler in your treeview declaration for the __Expanded__ event. 
 
-#### __XAML__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_14}}
+
+```XAML
 	<telerik:RadTreeView x:Name="radTreeView" Margin="8"
 	    Expanded="radTreeView_Expanded"
 	    ItemsSource="{Binding Source={StaticResource Source}}"
 	    ItemTemplate="{StaticResource NodeTemplate}"/>
-{{endregion}}
+```
 
 Switch to the code-behind and the following code to handle the event. 
 
-#### __C#__
 
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_15}}
+
+```C#
 	private void radTreeView_Expanded( object sender, Telerik.Windows.RadRoutedEventArgs e )
 	{
 	    Telerik.Windows.Controls.RadTreeView tree = sender as Telerik.Windows.Controls.RadTreeView;
@@ -341,11 +326,8 @@ Switch to the code-behind and the following code to handle the event.
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreeview-how-to-bind-wcf-service-load-on-demand_16}}
+```
+```VB.NET
 	Private Sub radTreeView_Expanded(ByVal sender As Object, ByVal e As Telerik.Windows.RadRoutedEventArgs)
 	    Dim tree As Telerik.Windows.Controls.RadTreeView = TryCast(sender, Telerik.Windows.Controls.RadTreeView)
 	    Dim item As RadTreeViewItem = TryCast(e.OriginalSource, RadTreeViewItem)
@@ -358,7 +340,7 @@ Switch to the code-behind and the following code to handle the event.
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 Here, you first get references to the treeview and the item that was expanded. Then, you get a reference to the hierarchical data source and call its __LoadItemChildren()__ method and pass the value of the expanded item. What the method does is fetching the children of that data item via the web service and adding them as children of the treeview.
 

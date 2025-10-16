@@ -20,9 +20,9 @@ You can use RadGridView's __ExportAsync__ method in order to export data asynchr
 
 The ExportAsync method can be used similar to the Export method: 
 
-#### __[C#] Example 1: Save RadGridView`s conteint in a Excel file__
+__Example 1: Save RadGridView`s conteint in a Excel file__
 
-{{region cs-gridview-export-async_0}}
+```C#
 	string extension = "xls";
 	SaveFileDialog dialog = new SaveFileDialog()
 	{
@@ -43,7 +43,7 @@ The ExportAsync method can be used similar to the Export method:
 	    }, true);
 	}
 	        }
-{{endregion}}
+```
 
 >Please note that you should specify a __True__ value for the __shouldDisposeStream__ parameter. That way the used resources will be disposed. Prior to version 2015 Q1 SP, the parameter is called __shouldDisposeString__.
           

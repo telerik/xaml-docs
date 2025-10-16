@@ -18,9 +18,9 @@ The __RadChart__ provides you with an __API__ for navigating between the hierarc
 
 Here is an example of two buttons, which call the respective methods.
 
-#### __XAML__
 
-{{region xaml-radchart-features-drill-down-navigation_0}}
+
+```XAML
 	<StackPanel>
 	    <Button x:Name="BackButton"
 	            Content="Back"
@@ -29,13 +29,13 @@ Here is an example of two buttons, which call the respective methods.
 	            Content="Forward"
 	            Click="ForwardButton_Click" />
 	</StackPanel>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-drill-down-navigation_1}}
+
+```C#
 	private void BackButton_Click(object sender, RoutedEventArgs e)
 	{
 	    this.radChart.HierarchyManager.Back();
@@ -44,19 +44,14 @@ Here is an example of two buttons, which call the respective methods.
 	{
 	    this.radChart.HierarchyManager.Forward();
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-drill-down-navigation_2}}
+```
+```VB.NET
 	Private Sub BackButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.radChart.HierarchyManager.Back()
 	End Sub
 	Private Sub ForwardButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 	    Me.radChart.HierarchyManager.Forward()
 	End Sub
-{{endregion}}
+```
 
 

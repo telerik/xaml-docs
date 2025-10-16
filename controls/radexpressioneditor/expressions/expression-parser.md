@@ -31,9 +31,9 @@ It exposes the following methods which you can use to parse your expressions:
 
 You can use the **Parse** method to try to directly parse the expression and return a LambdaExpression if successfully parsed. Please note, however, that an **ExpressionParserException** will be thrown if the expression cannot be parsed.
 
-#### __[C#] Example 1: Using the Parse method__
+__Example 1: Using the Parse method__
 
-{{region cs-radexpressioneditor-expression-parser-1}}
+```C#
     try
     {
         var lambdaExpression = expressionParser.Parse(expression);
@@ -43,7 +43,7 @@ You can use the **Parse** method to try to directly parse the expression and ret
     {
         var errorMessages = string.Join("\n", ex.Errors.Select(er => er.Message));
     }
-{{endregion}}
+```
 
 ## ParseAsync
 
@@ -53,9 +53,9 @@ The two overloads of the **ParseAsync** method operate in the same manner as the
 
 The **TryParse** method tries to convert the string representation of an expression to its LambdaExpression equivalent. The returned value indicates whether the conversion succeeded or failed. The **out** parameter will contain **null** if the parsing was unsuccessful.
 
-#### __[C#] Example 2: Using the TryParse method__
+__Example 2: Using the TryParse method__
 
-{{region cs-radexpressioneditor-expression-parser-2}}
+```C#
     LambdaExpression lambdaExpression;
     var isExpressionValid = expressionParser.TryParse(expression, out lambdaExpression);
     if (isExpressionValid)
@@ -66,23 +66,23 @@ The **TryParse** method tries to convert the string representation of an express
     {
         // display an error message
     }
-{{endregion}}
+```
 
 ## Item
 
 You can use the **Item** property to be able to access the public members of the passed object.
 
-#### __[C#] Example 3: Setting the Item property__
+__Example 3: Setting the Item property__
 
-{{region cs-radexpressioneditor-expression-parser-3}}
+```C#
     this.expressionParser.Item = this.ProductsGridView.SelectedItem;
-{{endregion}}
+```
 
 Note that when using the generated expression, you would then need to pass the same item as the parameter as shown in **Example 4**.
 
-#### __[C#] Example 4: Passing the Item as a parameter of the expression__
+__Example 4: Passing the Item as a parameter of the expression__
 
-{{region cs-radexpressioneditor-expression-parser-4}}
+```C#
     var lambdaExpression = this.expressionParser.Parse(expression);
     string result;
     if (lambdaExpression.Parameters.Count == 1)
@@ -93,7 +93,7 @@ Note that when using the generated expression, you would then need to pass the s
     {
         result = lambdaExpression.Compile().DynamicInvoke().ToString();
     }
-{{endregion}}
+```
 
 ## See also
 

@@ -24,9 +24,9 @@ It is common scenario that you would like to customize the appearance of the Poi
 
 - __PointMarkFill__ - will be applied to the PointMark Style to set the Fill for the PointMark.
 
-#### __C#__
 
-{{region cs-radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition_0}}
+
+```C#
 	public class Data : INotifyPropertyChanged
 	{
 	    private DateTime _date;
@@ -94,13 +94,8 @@ It is common scenario that you would like to customize the appearance of the Poi
 	            this.PointMarkFill = new SolidColorBrush(Colors.Blue);
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition_1}}
+```
+```VB.NET
 	Public Class Data
 	    Implements INotifyPropertyChanged
 	    Private _date As Date
@@ -162,25 +157,25 @@ It is common scenario that you would like to customize the appearance of the Poi
 	
 	    Public Event PropertyChanged(sender As Object, e As PropertyChangedEventArgs) Implements INotifyPropertyChanged.PropertyChanged
 	End Class
-{{endregion}}
+```
 
 
 
 Note that the check for setting the *PointMarkFill's* value is added in the end of the code snippet above.Add the RadChart declaration:
 
-#### __XAML__
 
-{{region xaml-radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition_2}}
+
+```XAML
 	<telerik:RadChart Name="chart"/>
-{{endregion}}
+```
 
 
 
 Retemplate the default PointMark Style - Add *Fill *Property databound to *DataItem.PointMarkFill* property of the class. Add the Style between the starting and ending tags of the UserControl:
 
-#### __XAML__
 
-{{region xaml-radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition_3}}
+
+```XAML
 	<Style x:Key="MyPointMark_Style" TargetType="telerik:PointMark">
 	    <Setter Property="Template">
 	        <Setter.Value>
@@ -204,13 +199,13 @@ Retemplate the default PointMark Style - Add *Fill *Property databound to *DataI
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
  Retemplate the default *SeriesItemLabel *Style so that the appropriate color will be set for each Label too:
 
-#### __XAML__
 
-{{region xaml-radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition_4}}
+
+```XAML
 	<Style x:Key="MySeriesItemLabel_Style" TargetType="telerik:SeriesItemLabel">
 	    <Setter Property="Padding" Value="2,0" />
 	    <Setter Property="IsHitTestVisible" Value="False"/>
@@ -255,15 +250,15 @@ Retemplate the default PointMark Style - Add *Fill *Property databound to *DataI
 	        </Setter.Value>
 	    </Setter>
 	</Style>
-{{endregion}}
+```
 
 
 
 The chart is populated with data in code-behind using [Manual Series Mappings]({%slug radchart-populating-with-data-data-binding-with-manual-series-mapping%}). The last line in the code snippet demonstrates how the Style for the PointMarks can be set.
 
-#### __C#__
 
-{{region cs-radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition_5}}
+
+```C#
 	List<Data> exportData = new List<Data>();
 	DateTime baseDate = DateTime.Today;
 	Random r = new Random();
@@ -285,13 +280,8 @@ The chart is populated with data in code-behind using [Manual Series Mappings]({
 	line.ShowItemLabels = true;
 	chart.DefaultSeriesDefinition.PointMarkItemStyle = this.Resources["MyPointMark_Style"] as Style;
 	chart.DefaultSeriesDefinition.SeriesItemLabelStyle = this.Resources["MySeriesItemLabel_Style"] as Style;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-howto-set-custom-fill-for-pointmarks-depending-on-condition_6}}
+```
+```VB.NET
 	Dim exportData As New List(Of Data)()
 	Dim baseDate As Date = Date.Today
 	Dim r As New Random()
@@ -312,7 +302,7 @@ The chart is populated with data in code-behind using [Manual Series Mappings]({
 	line.ShowItemLabels = True
 	chart.DefaultSeriesDefinition.PointMarkItemStyle = TryCast(Me.Resources("MyPointMark_Style"), Style)
 	chart.DefaultSeriesDefinition.SeriesItemLabelStyle = TryCast(Me.Resources("MySeriesItemLabel_Style"), Style)
-{{endregion}}
+```
 
 
 

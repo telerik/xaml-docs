@@ -32,9 +32,9 @@ How to remove the padding around the pane groups of the `RadDocking` control.
 
 To get rid of the extra space surrounding the panes in the pane group, which is defined inside a `DocumentHost` container, you would need to set the `Padding` property of the `RadPaneGroup` element, to 0. 
 
-#### __[XAML]__
 
-{{region kb-docking-remove-space-around-panegroup-documenthost_0}}
+
+```XAML
 	<telerik:RadDocking.DocumentHost>
 	    <telerik:RadSplitContainer>
 	        <telerik:RadPaneGroup Padding="0">
@@ -44,23 +44,23 @@ To get rid of the extra space surrounding the panes in the pane group, which is 
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking.DocumentHost>
-{{endregion}}
+```
 
 If you need to apply this to all of the `RadPaneGroup` instances, create a new `Style` with a `Setter` for the `Padding` property
 
-#### __[XAML]__
-{{region kb-docking-remove-space-around-panegroup-documenthost_1}}
+
+```XAML
 	<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
 	<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
 	<Style TargetType="telerik:RadPaneGroup">
 	    <Setter Property="Padding" Value="0" />
 	</Style>
-{{endregion}}
+```
 
 For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `RadPaneGroup` element's padding should be updated through a style trigger.
 
-#### __[XAML]__
-{{region kb-docking-remove-space-around-panegroup-documenthost_2}}
+
+```XAML
 	<!-- If you're using the NoXaml binaries, you need to base the custom style on the default one for the control, like so:
 	<Style TargetType="telerik:RadPaneGroup" BasedOn="{StaticResource RadPaneGroupStyle}"> -->
 	<Style TargetType="telerik:RadPaneGroup">
@@ -70,7 +70,7 @@ For the Fluent, Green, Material, Office2016 and Office2016Touch themes, the `Rad
 	        </Trigger>
 	    </Style.Triggers>
 	</Style>
-{{endregion}}
+```
 
 #### Figure 1: DocumentHost with and without the default padding in the Crystal theme
 

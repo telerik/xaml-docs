@@ -66,25 +66,22 @@ To disable the selection functionality you can set the __CanUserSelect__ propert
 
 >This will disable the selection only for the end-user. It will still be possible to manipulate the selection programmatically.
           
-#### __[XAML] Example 1: Set the CanUserSelect property in XAML__
+__Example 1: Set the CanUserSelect property in XAML__
 
-{{region xaml-gridview-selection-basics_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                 CanUserSelect="False">
 	</telerik:RadGridView>
-{{endregion}}
+```
 
-#### __[C#] Example 1: Set the CanUserSelect property in code-behind__
+__Example 1: Set the CanUserSelect property in code-behind__
 
-{{region cs-gridview-selection-basics_1}}
+```C#
 	this.radGridView.CanUserSelect = false;
-{{endregion}}
-
-#### __[VB.NET] Example 1: Set the CanUserSelect property in code-behind__
-
-{{region vb-gridview-selection-basics_2}}
+```
+```VB.NET
 	Me.radGridView.CanUserSelect = False
-{{endregion}}
+```
 
 ## DragElementAction
 

@@ -43,10 +43,10 @@ You can find the required assemblies for each control from the suite in the {% i
 
 You can add __RadTabControl__ manually in XAML as demonstrated in __Example 1__.
 
-#### __[XAML] Example 1: Adding RadTabControl in XAML__
-{{region radtabcontrol-gettingstarted-01}}
+__Example 1: Adding RadTabControl in XAML__
+```XAML
 	<telerik:RadTabControl />
-{{endregion}}
+```
 
 At this point, the control is empty and only its tab items panel and content container are displayed.
 
@@ -57,8 +57,8 @@ At this point, the control is empty and only its tab items panel and content con
 
 __RadTabControl__ works with __RadTabItem__ elements, which are added in the __Items__ collection of the control. The [RadTabItem]({%slug radtabcontrol-features-tabs-overview%}) class exposes a __Header__ property that is used to define the content of its header. 
 
-#### __[XAML] Example 2: Adding RadTabItems in XAML__
-{{region radtabcontrol-gettingstarted-02}}
+__Example 2: Adding RadTabItems in XAML__
+```XAML
 	<telerik:RadTabControl>
 		<telerik:RadTabControl.Items>
 			<telerik:RadTabItem Header="Tab 1" />
@@ -67,19 +67,17 @@ __RadTabControl__ works with __RadTabItem__ elements, which are added in the __I
 			<telerik:RadTabItem Header="Tab 4" />
 		</telerik:RadTabControl.Items>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
-#### __[C#] Example 3: Adding RadTabItems in code__
-{{region radtabcontrol-gettingstarted-03}}
+__Example 3: Adding RadTabItems in code__
+```C#
 	RadTabControl tabControl = new RadTabControl();
 	tabControl.Items.Add(new RadTabItem() { Header = "Tab 1" });
 	tabControl.Items.Add(new RadTabItem() { Header = "Tab 2" });
 	tabControl.Items.Add(new RadTabItem() { Header = "Tab 3" });
 	tabControl.Items.Add(new RadTabItem() { Header = "Tab 4" });
-{{endregion}}
-
-#### __[VB.NET] Example 3: Adding RadTabItems in code__
-{{region radtabcontrol-gettingstarted-04}}
+```
+```VB.NET
 	Dim tabControl As New RadTabControl()
 	tabControl.Items.Add(New RadTabItem() With { _
 		.Header = "Tab 1" _
@@ -93,7 +91,7 @@ __RadTabControl__ works with __RadTabItem__ elements, which are added in the __I
 	tabControl.Items.Add(New RadTabItem() With { _
 		.Header = "Tab 4" _
 	})
-{{endregion}}
+```
 
 #### __Figure 2: RadTabControl with several RadTabItems defined in its Items collection__
 ![{{ site.framework_name }} RadTabControl RadTabControl with several RadTabItems defined in its Items collection](images/radtabcontrol-getting-started-02.png)
@@ -108,8 +106,8 @@ __RadTabControl__ works with __RadTabItem__ elements, which are added in the __I
 
 __RadTabItem__ is a HeaderedContentControl, which means that it can have a header and content. You can use the Header and Content properties to define what to display in the tab. The __Content__ property of RadTabItem is of type object and it can contain UIElements, strings, business objects or any other element that inherits the System.Object class.
 
-#### __[XAML] Example 4: Setting a string as the value of the RadTabItem's Content property__
-{{region radtabcontrol-gettingstarted-05}}
+__Example 4: Setting a string as the value of the RadTabItem's Content property__
+```XAML
 	<telerik:RadTabControl>
 		<telerik:RadTabControl.Items>
 			<telerik:RadTabItem Header="Tab 1" Content="The content of tab item 1"/>
@@ -117,13 +115,13 @@ __RadTabItem__ is a HeaderedContentControl, which means that it can have a heade
 			<telerik:RadTabItem Header="Tab 3" />
 		</telerik:RadTabControl.Items>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 #### __Figure 3: RadTabItem with a string set as its content__
 ![{{ site.framework_name }} RadTabControl RadTabItem with a string set as its content](images/radtabcontrol-getting-started-03.png)
 
-#### __[XAML] Example 5: Setting a UIElement as the value of the RadTabItem's Content property__
-{{region radtabcontrol-gettingstarted-06}}
+__Example 5: Setting a UIElement as the value of the RadTabItem's Content property__
+```XAML
 	<telerik:RadTabControl>
 		<telerik:RadTabItem Header="Tab 1">
 			<telerik:RadTabItem.Content>
@@ -138,7 +136,7 @@ __RadTabItem__ is a HeaderedContentControl, which means that it can have a heade
 		<telerik:RadTabItem Header="Tab 2" />
 		<telerik:RadTabItem Header="Tab 3" />
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 #### __Figure 4: RadTabItem with a UIElement set as its content__
 ![{{ site.framework_name }} RadTabControl RadTabItem with a UIElement set as its content](images/radtabcontrol-getting-started-04.png)
@@ -151,17 +149,15 @@ The RadTabControl component allows you to data bind it to a collection of busine
 
 The model from __Example 6__ will be used to demonstrate a simple data binding scenario.
 
-#### __[C#] Example 6: Defining a model for the RadTabItems__
-{{region radtabcontrol-gettingstarted-07}}
+__Example 6: Defining a model for the RadTabItems__
+```C#
 	public class TabItemModel
     {
         public string Header { get; set; }
         public string Content { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 6: Defining a model for the RadTabItems__
-{{region radtabcontrol-gettingstarted-08}}
+```
+```VB.NET
 	Public Class TabItemModel
 		Public Property Header() As String
 			Get
@@ -182,12 +178,12 @@ The model from __Example 6__ will be used to demonstrate a simple data binding s
 		End Property
 		Private m_Content As String
 	End Class
-{{endregion}}
+```
 
 __Example 7__ and __Example 8__ show how you can populate a collection of business objects and bind it to the __ItemsSource__ of the tab control.
 
-#### __[C#] Example 7: Populating a collection of business objects and pass it as the DataContext of a RadTabControl__
-{{region radtabcontrol-gettingstarted-09}}
+__Example 7: Populating a collection of business objects and pass it as the DataContext of a RadTabControl__
+```C#
 	var source = new ObservableCollection<TabItemModel>()
 	{
 		new TabItemModel() 
@@ -207,10 +203,8 @@ __Example 7__ and __Example 8__ show how you can populate a collection of busine
 		},
 	};
 	this.tabControl.DataContext = source;
-{{endregion}}
-
-#### __[VB.NET] Example 7: Populating a collection of business objects and pass it as the DataContext of a RadTabControl__
-{{region radtabcontrol-gettingstarted-10}}
+```
+```VB.NET
 	Dim source = New ObservableCollection(Of TabItemModel)() From { _
 		New TabItemModel() With { _
 			.Header = "Tab 1", _
@@ -226,10 +220,10 @@ __Example 7__ and __Example 8__ show how you can populate a collection of busine
 		} _
 	}
 	Me.tabControl.DataContext = source
-{{endregion}}
+```
 
-#### __[XAML] Example 8: Binding the ItemsSource of a RadTabControl and defining the RadTabItems appearance__
-{{region radtabcontrol-gettingstarted-11}}
+__Example 8: Binding the ItemsSource of a RadTabControl and defining the RadTabItems appearance__
+```XAML
 	<telerik:RadTabControl x:Name="tabControl" ItemsSource="{Binding}">
 		<telerik:RadTabControl.ItemTemplate>
 			<DataTemplate>
@@ -247,7 +241,7 @@ __Example 7__ and __Example 8__ show how you can populate a collection of busine
 			</DataTemplate>
 		</telerik:RadTabControl.ContentTemplate>            
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 #### __Figure 5: Data binding a RadTabControl__
 ![{{ site.framework_name }} RadTabControl Data binding a RadTabControl](images/radtabcontrol-getting-started-05.png)
@@ -256,15 +250,15 @@ __Example 7__ and __Example 8__ show how you can populate a collection of busine
 
 RadTabControl allows you to control whether to display the tabs horizontally or vertically. You can do that through the __Orientation__ property of the tab control. Its default value is __Horizontal__ and therefore the items are positioned horizontally. Setting the property to __Vertical__ will rotate the headers of the tab items at 90 degrees.
 
-#### __[XAML] Example 9: Setting a UIElement as the value of the RadTabItem's Content property__
-{{region radtabcontrol-gettingstarted-12}}
+__Example 9: Setting a UIElement as the value of the RadTabItem's Content property__
+```XAML
     <telerik:RadTabControl TabOrientation="Vertical">		
 		<telerik:RadTabItem Header="Tab 1" />
 		<telerik:RadTabItem Header="Tab 2" />
 		<telerik:RadTabItem Header="Tab 3" />
 		<telerik:RadTabItem Header="Tab 4" />
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 #### __Figure 6: RadTabItem with a UIElement set as its content__
 ![{{ site.framework_name }} RadTabControl RadTabItem with a UIElement set as its content](images/radtabcontrol-getting-started-06.png)
@@ -287,8 +281,8 @@ To change the theme, you can follow the steps below:
 
 __Example 10__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 10: Merge the ResourceDictionaries__  
-{{region radtabcontrol-getting-started_7}}
+__Example 10: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -298,7 +292,7 @@ __Example 10__ demonstrates how to merge the ResourceDictionaries so that they a
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

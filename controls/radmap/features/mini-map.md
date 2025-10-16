@@ -46,8 +46,8 @@ The Mini Map control can also be used as a separate control like other map contr
 
 Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadExpander* as its wrapper and change the size of the Mini Map by respecting the size of the RadMap:        
 
-#### __XAML__
-{{region radmap-features-mini-map_0}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap1"
 	                MiniMapExpanderVisibility="Collapsed"
 	                SizeChanged="MapSizeChanged">
@@ -70,10 +70,10 @@ Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadE
 	        </telerik:MiniMap>
 	    </telerik:RadExpander>
 	</telerik:RadMap>
-{{endregion}}
+```
 
-#### __C#__
-{{region radmap-features-mini-map_1}}
+
+```C#
 	private const double MiniMapWidthScaleFactor = 0.15;
 	private const double MiniMapHeightScaleFactor = 0.2;
 	
@@ -82,10 +82,8 @@ Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadE
 	    this.MiniMap1.Width = e.NewSize.Width * MiniMapWidthScaleFactor;
 	    this.MiniMap1.Height = e.NewSize.Height * MiniMapHeightScaleFactor;
 	}
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-features-mini-map_2}}
+```
+```VB.NET
 	Private Const MiniMapWidthScaleFactor As Double = 0.15
 	Private Const MiniMapHeightScaleFactor As Double = 0.2
 	
@@ -93,7 +91,7 @@ Below you'll find a sample that demonstrates how to use the *MiniMap* with *RadE
 		Me.MiniMap1.Width = e.NewSize.Width * MiniMapWidthScaleFactor
 		Me.MiniMap1.Height = e.NewSize.Height * MiniMapHeightScaleFactor
 	End Sub
-{{endregion}}
+```
 
 By wiring to __MapSizeChanged__ event we are setting our Height and Width for the Mini Map so that it is always scaled by our own custom factor. This way the size of the MiniMap will respect the size of its parent Map.        
 

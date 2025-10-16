@@ -16,9 +16,7 @@ Following is an example demonstrating how to convert appointments between a List
 
 * Create the DataConverter:
 
-	#### __C#__
-
-	{{region dragdropmanager-behaviors-listboxandscheduleview_0}}
+	```C#
 		public class ScheduleViewToAppointmentConverter : DataConverter
 		{		
 			public override string[] GetConvertToFormats()
@@ -40,13 +38,11 @@ Following is an example demonstrating how to convert appointments between a List
 				return null;
 			}
 		}
-	{{endregion}}
+	```
 
 * Add CustomScheduleViewDragDropBehavior class which inherits ScheduleViewDragDropBehavior:      	
 
-	#### __C#__
-
-	{{region dragdropmanager-behaviors-listboxandscheduleview_1}}
+	```C#
 		public class CustomScheduleViewDragDropBehavior : ScheduleViewDragDropBehavior
 		{
 			public override IEnumerable<IOccurrence> ConvertDraggedData(object data)
@@ -63,13 +59,11 @@ Following is an example demonstrating how to convert appointments between a List
 				return base.ConvertDraggedData(data);
 			}
 		}
-	{{endregion}}
+	```
 
 * The final configuration of the two controls in XAML should look like:
 
-	#### __XAML__
-
-	{{region dragdropmanager-behaviors-listboxandscheduleview_2}}	
+	```XAML	
 		<telerik:RadScheduleView ...>
 			<telerik:RadScheduleView.ViewDefinitions>
 				<telerik:WeekViewDefinition />
@@ -87,7 +81,7 @@ Following is an example demonstrating how to convert appointments between a List
 				<drag:ListBoxDragDropBehavior />
 			</drag:ListBoxDragDrop.Behavior>	
 		</ListBox>
-	{{endregion}}
+	```
 
 Here is the result:
 

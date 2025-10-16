@@ -21,22 +21,22 @@ When __RadVirtualGrid__ populates its data through the __DataProvider__ mechanis
 
 The __ColumnSortDescriptor__ of a given column can be fetched through the __GetSortDescriptorForColumn__ method of __RadVirtualGrid__ by providing the index of the needed column.
 
-#### __[C#] Example 1: Getting the ColumnSortDescriptor of a column__
+__Example 1: Getting the ColumnSortDescriptor of a column__
 
-{{region radvirtualgrid-sorting-programmatic-sorting_0}}
+```C#
 	var sortDescriptor = this.VirtualGrid.GetSortDescriptorForColumn(0);
-{{endregion}}
+```
 
 Through the __ColumnSortDescriptor__, the sorting state can be set by manipulating its __SortDirection__ property.
 
 > In order the UI to be updated accordingly, the __IsActive__ property of the given __SortDescriptor__ needs to be set to __True__.
 
-#### __[C#] Example 2: Setting the SortDirection property__
+__Example 2: Setting the SortDirection property__
 
-{{region radvirtualgrid-sorting-programmatic-sorting_1}}
+```C#
 	var sortDescriptor = this.VirtualGrid.GetSortDescriptorForColumn(0);
 	sortDescriptor.SortDirection = System.ComponentModel.ListSortDirection.Ascending;
-{{endregion}}
+```
 
 ## See Also
 

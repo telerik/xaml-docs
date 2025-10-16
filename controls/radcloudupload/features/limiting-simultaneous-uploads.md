@@ -14,20 +14,18 @@ __RadCloudUpload__ allows you to control the maximum number of uploads that can 
 
 >The default value of the __MaximumSimultaneousUploadsCount__ property is __3__.
 
-#### __[XAML] Example 1: Setting the MaximumSimultaneousUploadsCount property in XAML__
-{{region radcloudupload-features-limiting-simultaneous-uploads-01}}
+__Example 1: Setting the MaximumSimultaneousUploadsCount property in XAML__
+```XAML
 	<telerik:RadCloudUpload MaximumSimultaneousUploadsCount="5" />
-{{endregion}}	
+```	
 
-#### __[C#] Example 2: Setting the MaximumSimultaneousUploadsCount property in code__
-{{region radcloudupload-features-limiting-simultaneous-uploads-02}}
+__Example 2: Setting the MaximumSimultaneousUploadsCount property in code__
+```C#
 	this.cloudUpload.MaximumSimultaneousUploadsCount = 5;
-{{endregion}}	
-
-#### __[VB.NET] Example 2: Setting the MaximumSimultaneousUploadsCount property in code__
-{{region radcloudupload-features-limiting-simultaneous-uploads-03}}
+```
+```VB.NET
 	Me.cloudUpload.MaximumSimultaneousUploadsCount = 5;
-{{endregion}}
+```
 
 ## See Also
 * [Providers]({%slug radcloudupload-features-providers%})

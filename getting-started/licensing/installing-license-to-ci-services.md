@@ -14,11 +14,11 @@ This article describes how to set up and activate your Telerik UI for WPF [licen
 
 When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet package as a project dependency. This package activates the Telerik UI for WPF components at build time by using the provided license key.
 
-> If you cannot use NuGet packages in your project, you can add the license key as an assembly attribute as shown in the [Installing License Key]({%slug installing-license-key%}#adding-a-license-key-to-projects-without-nuget-references) article.
+> If you cannot use NuGet packages in your project, you can add the license key as an assembly attribute as shown in the [Installing License Key]({%slug installing-license-key%}) article.
 
 The license activation process in a CI/CD environment involves the following steps:
 
-1. [Download a license key]({%slug installing-license-key%}#downloading-the-license-key) from your [Telerik account](https://www.telerik.com/account/your-licenses/license-keys).
+1. [Download a license key]({%slug installing-license-key%}) from your [Telerik account](https://www.telerik.com/account/your-licenses/license-keys).
 
 1. Add the `Telerik.Licensing` NuGet package as a project dependency: `<PackageReference Include="Telerik.Licensing" Version="1.*" />`
 

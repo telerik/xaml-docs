@@ -18,22 +18,20 @@ The __Empty Provider__ is a provider which doesn't connect to any real imagery s
 
 Here is an example of creating an __EmptyProivder__ and setting it to the __RadMap__:
 
-#### __XAML__
-{{region radmap-features-empty-provider_0}}
-	<telerik:RadMap x:Name="radMap" />
-{{endregion}}
 
-#### __C#__
-{{region radmap-features-empty-provider_1}}
+```XAML
+	<telerik:RadMap x:Name="radMap" />
+```
+
+
+```C#
 	EmptyProvider provider = new EmptyProvider();
 	this.radMap.Provider = provider;
-{{endregion}}
-
-#### __VB.NET__
-{{region radmap-features-empty-provider_2}}
+```
+```VB.NET
 	Dim provider As New EmptyProvider()
 	Me.radMap.Provider = provider
-{{endregion}}
+```
 
 ## See Also
  * [Providers Overview]({%slug radmap-features-providers%})

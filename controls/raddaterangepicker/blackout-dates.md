@@ -14,8 +14,8 @@ The blackout dates feature of the DateRangePicker component allows you to define
 
 The list of disabled dates is assigned through the `BlackoutDates` property of `RadDateRangePicker`. The property expects a collection of `DateTime` objects.
 
-#### __[C#] Blackout the weekends of the current month__
-{{region raddaterangepicker-blackout-dates-0}}
+__Blackout the weekends of the current month__
+```C#
 	var weekends = new ObservableCollection<DateTime>();
 	var daysInMonth = DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month);
 	var startDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
@@ -28,7 +28,7 @@ The list of disabled dates is assigned through the `BlackoutDates` property of `
 		}
 	}
 	this.dateRangePicker.BlackoutDates = weekends;
-{{endregion}}
+```
 
 ![Picture showing the blackout dates feature of WPF RadDateRangePicker](images/raddaterangepicker-blackout-dates-0.png)
 

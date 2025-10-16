@@ -34,17 +34,17 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 __Example 1__ demonstrates how you can define a RadNavigationView in xaml.
 
-#### __[XAML] Example 1: Defining RadNavigationView__
-{{region xaml-radnavigationview-getting-started-0}}
+__Example 1: Defining RadNavigationView__
+```XAML
     <telerik:RadNavigationView x:Name="navigationView"  />
-{{endregion}}
+```
 
 ## Populating with Items
 
 Populate the control with items by adding RadNavigationViewItems to its Items collection:
 
-#### __[XAML] Example 2: Populating with Items in xaml__
-{{region xaml-radnavigationview-getting-started-1}}
+__Example 2: Populating with Items in xaml__
+```XAML
     <telerik:RadNavigationView x:Name="navigationView" PaneHeader="Header">
         <telerik:RadNavigationView.Items>
             <telerik:RadNavigationViewItem Content="Bookmarks">
@@ -67,7 +67,7 @@ Populate the control with items by adding RadNavigationViewItems to its Items co
             <TextBlock Text="Content" Foreground="Black" Margin="5"/>
         </telerik:RadNavigationView.Content>
     </telerik:RadNavigationView>
-{{endregion}}
+```
 
 Another way to populate RadNavigationView with items is to use data binding. See the [DataBinding]({%slug radnavigationview-populating-with-data-databinding%}) article for details.
 
@@ -80,20 +80,18 @@ Another way to populate RadNavigationView with items is to use data binding. See
 
 By default, users can open or close the NavigationPane that hosts the RadNavigationViewItems by clicking the RadToggleButton. You can manage the state of the control programmatically by setting the __IsPaneOpen__ property of the __RadNavigationView__. This is demonstrated in __Examples 3 and 4__:
 
-#### __[XAML] Example 3: Setting the IsPaneOpen property in xaml__
-{{region cs-radnavigationview-getting-started-2}}
+__Example 3: Setting the IsPaneOpen property in xaml__
+```XAML
      <telerik:RadNavigationView x:Name="navigationView" IsPaneOpen="True" />
-{{endregion}}
+```
 
-#### __[C#] Example 4: Setting the IsPaneOpen property in code__
-{{region cs-radnavigationview-getting-started-3}}
+__Example 4: Setting the IsPaneOpen property in code__
+```C#
     this.navigationView.IsPaneOpen = true;
-{{endregion}}
-
-#### __[VB.NET] Example 4: Setting the IsPaneOpen property in code__
-{{region cs-radnavigationview-getting-started-4}}
+```
+```VB.NET
     Me.navigationView.IsPaneOpen = True
-{{endregion}}
+```
 
 ## Changing the Width of the Navigation Pane
 
@@ -103,8 +101,8 @@ By default, users can open or close the NavigationPane that hosts the RadNavigat
 
 __Example 5__ demonstrates how you can set the  property in order to increase the default width when the navigation pane is closed.
 
-#### __[XAML] Example 5: Setting the CompactPaneWidth property__
-{{region xaml-radnavigationview-getting-started-5}}
+__Example 5: Setting the CompactPaneWidth property__
+```XAML
      <telerik:RadNavigationView x:Name="navigationView" PaneHeader="Header" CompactPaneWidth="150">
         <telerik:RadNavigationView.Items>
             <telerik:RadNavigationViewItem Content="Bookmarks">
@@ -127,7 +125,7 @@ __Example 5__ demonstrates how you can set the  property in order to increase th
             <TextBlock Text="My Content" Foreground="Black" Margin="5"/>
         </telerik:RadNavigationView.Content>
     </telerik:RadNavigationView>
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 5 in the Office 2016 theme__
 ![RadNavigationView with CompactPaneWidth set](images/NavigationView_CompactPaneWidth.png)
@@ -171,8 +169,8 @@ To change the theme, you can follow the steps below:
 
 __Example 3__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 3: Merge the ResourceDictionaries__  
-{{region radnavigationview-getting-started_6}}
+__Example 3: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -182,7 +180,7 @@ __Example 3__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

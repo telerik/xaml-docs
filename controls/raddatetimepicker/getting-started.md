@@ -41,28 +41,25 @@ If you are not using NuGet packages, you can add a reference to the following as
 
 You can add RadDateTimePicker to your application manually by writing the XAML code in __Example 1__. You can also add the control by dragging it from the Visual Studio Toolbox and dropping it over the XAML view.
 
-#### __[XAML] Example 1: Adding RadDateTimePicker in XAML__
+__Example 1: Adding RadDateTimePicker in XAML__
 
-{{region xaml-raddatetimepicke-getting-started_1}}
+```XAML
 	<telerik:RadDateTimePicker />
-{{endregion}}
+```
 
 >In order to create the __RadDateTimePicker__ control you have to include the following namespace declaration:
 	_xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"_
 
 You can also create the __RadDateTimePicker__ in code-behind:
 
-#### __[C#] Example 2: Adding RadDateTimePicker in code-behind__
+__Example 2: Adding RadDateTimePicker in code-behind__
 
-{{region cs-raddatetimepicke-getting-started_2}}
+```C#
 	RadDateTimePicker radDateTimePicker = new RadDateTimePicker();
-{{endregion}}
-
-#### __[VB.NET] Example 2: Adding RadDateTimePicker in code-behind__
-
-{{region vb-raddatetimepicke-getting-started_3}}
+```
+```VB.NET
 	Dim radDateTimePicker As New RadDateTimePicker()
-{{endregion}}
+```
 
 If you run the application now you will see the default __RadDateTimePicker__ control with the default watermark content. Clicking on the control's drop down button will display a date and time representations from which you can select a single value.
 
@@ -80,43 +77,38 @@ You can get the selected value using the following properties:
 
 * __SelectedTime__: The __TimeOfDay__ part of the currently selected value.
 
-#### __[C#] Example 3: Getting the selected values__
-{{region cs-raddatetimepicke-getting-started_4}}
+__Example 3: Getting the selected values__
+```C#
 	DateTime? userSelectedValue = radDateTimePicker.SelectedValue;
 	DateTime? userSelectedDate = radDateTimePicker.SelectedDate;
 	TimeSpan? userSelectedTime = radDateTimePicker.SelectedTime;
-{{endregion}}
-
-#### __[VB.NET] Example 3: Getting the selected values__
-
-{{region vb-raddatetimepicke-getting-started_5}}
+```
+```VB.NET
 	Dim userSelectedValue As System.Nullable(Of DateTime) = radDateTimePicker.SelectedValue
 	Dim userSelectedDate As System.Nullable(Of DateTime) = radDateTimePicker.SelectedDate
 	Dim userSelectedTime As System.Nullable(Of TimeSpan) = radDateTimePicker.SelectedTime
-{{endregion}}
+```
 
 Normally you would want to bind the __SelectedValue__ property to your data as demonstrated in **Example 4**.
 
-#### __[XAML] Example 4: Binding SelectedValue__
+__Example 4: Binding SelectedValue__
 
-{{region xaml-raddatetimepicke-getting-started_6}}
+```XAML
 	<telerik:RadDateTimePicker SelectedValue="{Binding Established}" />
-{{endregion}}
+```
 
 ## Manually Updating the Bound Property
 
 In case the bound property value needs to be manually updated at some state, the __DateTimeText__ property of the control can simply be set to be equal to the __CurrentDateTimeText__ one. The __CurrentDateTimeText__ property is updated each time the user types in the textbox, whereas the __DateTimeText__ is updated once the textbox has lost focus, for example.  
 
-#### __[C#] Example 5: Manually updating the bound property__
+__Example 5: Manually updating the bound property__
 
-{{region cs-raddatetimepicke-getting-started_7}}
+```C#
 	this.DateTimePicker.DateTimeText = this.DateTimePicker.CurrentDateTimeText;
-{{endregion}}
-
-#### __[VB.NET] Example 5: Manually updating the bound property__
-{{region vb-raddatetimepicke-getting-started_7}}
+```
+```VB.NET
 	Me.DateTimePicker.DateTimeText = Me.DateTimePicker.CurrentDateTimeText
-{{endregion}}
+```
 
 ## Setting a Theme
 
@@ -134,8 +126,8 @@ To change the theme, you can follow the steps below:
 
 __Example 8__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 5: Merge the ResourceDictionaries__  
-{{region xaml-raddatetimepicke-getting-started_7}}
+__Example 5: Merge the ResourceDictionaries__  
+```XAML
 		<Application.Resources>
 			<ResourceDictionary>
 				<ResourceDictionary.MergedDictionaries>
@@ -145,7 +137,7 @@ __Example 8__ demonstrates how to merge the ResourceDictionaries so that they ar
 				</ResourceDictionary.MergedDictionaries>
 			</ResourceDictionary>
 		</Application.Resources>
-{{endregion}}
+```
 
 __Figure 2__ shows __RadDateTimePicker__ with the **Windows8** theme applied.
 	

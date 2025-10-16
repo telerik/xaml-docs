@@ -28,12 +28,12 @@ It opens the flyout on click or activation of a pane inside the auto hide area. 
 
 To set or get the current flyout behavior use the __FlyoutBehavior__ property of RadDocking.
 
-#### __[XAML] Example 1: Setting flyout behavior__
-{{region xaml-raddocking-features-panes-flyoutbehavior-0}}
+__Example 1: Setting flyout behavior__
+```XAML
 	<telerik:RadDocking.FlyoutBehavior>
         <telerik:ClickFlyoutBehavior/>
     </telerik:RadDocking.FlyoutBehavior>
-{{endregion}}
+```
 
 ## Custom Flyout Behavior
 
@@ -55,8 +55,8 @@ To create a custom flyout behavior, implement the __IFlyoutBehavior__ interface.
 
 The following example shows how to implement a __custom behavior__ that opens the flyout on click and animates the opening and closing.
 
-#### __[C#] Example 2: Custom flyout behavior__
-{{region cs-raddocking-features-panes-flyoutbehavior-1}}
+__Example 2: Custom flyout behavior__
+```C#
 	public class AnimatedFlyoutBehavior : IFlyoutBehavior
     {
         void IFlyoutBehavior.OnPaneActivated(IFlyoutHost host, RadPane targetPane)
@@ -105,14 +105,14 @@ The following example shows how to implement a __custom behavior__ that opens th
         {
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting the custom flyout behavior__
-{{region raddocking-features-panes-flyoutbehavior-2}}
+__Example 3: Setting the custom flyout behavior__
+```XAML
 	<telerik:RadDocking.FlyoutBehavior>
         <local:AnimatedFlyoutBehavior/>
     </telerik:RadDocking.FlyoutBehavior>
-{{endregion}}
+```
 
 >tip A runnable project with this example can be found in the [ClickFlyoutBehaviorWithAnimation](https://github.com/telerik/xaml-sdk/tree/master/Docking/ClickFlyoutBehaviorWithAnimation) SDK example.
 
@@ -120,7 +120,7 @@ The following example shows how to implement a __custom behavior__ that opens th
 
 The flyout popup element has a default minimum length of 50px. To change this, set the __FlyoutMinLength__ property of RadDocking. The property value applies to the width of the left and right auto-hide area flyouts and to the height of the top and bottom auto-hide area flyouts. 
 
-#### __[XAML] Example 2: Setting the minimum size of the flyout popup__
-{{region raddocking-features-panes-flyoutbehavior-3}}
+__Example 2: Setting the minimum size of the flyout popup__
+```XAML
 	<telerik:RadDocking FlyoutMinLength="150">
-{{endregion}}
+```

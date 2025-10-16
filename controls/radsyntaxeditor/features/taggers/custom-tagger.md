@@ -13,8 +13,8 @@ To create a custom tagger, you can inherit from the **abstract generic TaggerBas
 
 To demonstrate this we will create the following class which shows a tooltip on all occurrences of a specified search word.
 
-#### __[C#] Example 1: Registering taggers__
-{{region cs-radsyntaxeditor-features-custom-tagger-1}}
+__Example 1: Registering taggers__
+```C#
 
     public class SimpleToolTipTagger : TaggerBase<ToolTipTag>
     {
@@ -55,12 +55,12 @@ To demonstrate this we will create the following class which shows a tooltip on 
             this.CallOnTagsChanged(this.Document.CurrentSnapshot.Span);
         }
     }
-{{endregion}}
+```
 
 To use the tagger you need to register it in the **TaggersRegistry** as you would do with any other tagger. You can then call the **UpdateSearchWord** method to apply the tagger to any spans containing a specific word.
 
-#### __[C#] Example 2: Using the custom tagger__
-{{region cs-radsyntaxeditor-features-custom-tagger-2}}
+__Example 2: Using the custom tagger__
+```C#
 
     var simpleToolTipTagger = new SimpleToolTipTagger(this.syntaxEditor);
     if (!this.syntaxEditor.TaggersRegistry.IsTaggerRegistered(simpleToolTipTagger))
@@ -68,7 +68,7 @@ To use the tagger you need to register it in the **TaggersRegistry** as you woul
         this.syntaxEditor.TaggersRegistry.RegisterTagger(this.simpleToolTipTagger);
     }
     simpleToolTipTagger.UpdateSearchWord("Telerik");
-{{endregion}}
+```
 
 #### Figure 1: The custom tooltip tagger
 ![The custom tooltip tagger](images/syntaxeditor-taggers-custom.png)

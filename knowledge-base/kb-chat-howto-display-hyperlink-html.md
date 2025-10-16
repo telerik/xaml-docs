@@ -26,8 +26,8 @@ How to send a hyperlink in RadChat (Conversational UI).
 
 In order to display html/hyperlink, you can create a custom message and use a RadRichTextBox in order to show its contents. The first step is to inherit the __TextMessage__ class as shown in __Example 1__.
 
-#### __[C#] Example 1: Defining a custom message__
-{{region cs-kb-chat-howto-display-hyperlink-html-0}}
+__Example 1: Defining a custom message__
+```C#
 
 	public class HtmlMessage : TextMessage
     {
@@ -35,10 +35,8 @@ In order to display html/hyperlink, you can create a custom message and use a Ra
         {
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining a custom message__
-{{region vb-kb-chat-howto-display-hyperlink-html-1}}
+```
+```VB.NET
 
 	Public Class HtmlMessage
 	    Inherits TextMessage
@@ -47,12 +45,12 @@ In order to display html/hyperlink, you can create a custom message and use a Ra
 			MyBase.New(author, text, creationDate)
 		End Sub
     End Class
-{{endregion}}
+```
 
 After that we can inherit the __MessageTemplateSelector__ in order to choose a DataTemplate for the messages. 
 
-#### __[C#] Example 2: Defining a custom MessageTemplateSelector__
-{{region cs-kb-chat-howto-display-hyperlink-html-2}}
+__Example 2: Defining a custom MessageTemplateSelector__
+```C#
 
 	public class CustomMessageTemplateSelector : MessageTemplateSelector
     {
@@ -69,10 +67,8 @@ After that we can inherit the __MessageTemplateSelector__ in order to choose a D
             return base.SelectTemplate(item, container);
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a custom MessageTemplateSelector__
-{{region vb-kb-chat-howto-display-hyperlink-html-3}}
+```
+```VB.NET
 
 	Public Class CustomMessageTemplateSelector
 	    Inherits MessageTemplateSelector
@@ -88,12 +84,12 @@ After that we can inherit the __MessageTemplateSelector__ in order to choose a D
 			Return MyBase.SelectTemplate(item, container)
 		End Function
     End Class
-{{endregion}}
+```
 
 [Extract the xaml]({%slug styling-apperance-editing-control-templates%}) of the default MessageTemplateSelector for the theme that you are using and define the look of the custom HtmlMessage. Then we can use the custom selector in the __ItemTemplate__ of the __MessageGroup__ element as shown in __Example 3__. 
 
-#### __[XAML] Example 3: CustomMessageTemplateSelector in xaml__
-{{region vb-kb-chat-howto-display-hyperlink-html-4}}
+__Example 3: CustomMessageTemplateSelector in xaml__
+```XAML
 
 	<Grid>
         <Grid.Resources>
@@ -203,14 +199,14 @@ After that we can inherit the __MessageTemplateSelector__ in order to choose a D
     
         <telerik:RadChat x:Name="chat"   />
     </Grid>
-{{endregion}}
+```
 
 > The code shown in __Example 3__  is for the purposes of the demo and you should make sure to extract the xaml of the default MessageTemplateSelector for the theme that you are using. 
 
 __Example 4__ demonstrates how to add a message containing a hyperlink to the RadChat. 
 
-#### __[C#] Example 4: Adding a message__
-{{region cs-kb-chat-howto-display-hyperlink-html-5}}
+__Example 4: Adding a message__
+```C#
 
 	public MainWindow()
     {
@@ -219,10 +215,8 @@ __Example 4__ demonstrates how to add a message containing a hyperlink to the Ra
         this.chat.CurrentAuthor = new Author("TestAuthor");
         this.chat.AddMessage(new HtmlMessage(this.chat.CurrentAuthor, "<html>Visit our <a href=\"https://www.progress.com/\" >homepage</a>.</html>", DateTime.Now));
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Adding a message__
-{{region vb-kb-chat-howto-display-hyperlink-html-6}}
+```
+```VB.NET
 
 	Public Sub New()
 		InitializeComponent()
@@ -230,7 +224,7 @@ __Example 4__ demonstrates how to add a message containing a hyperlink to the Ra
 		Me.chat.CurrentAuthor = New Author("TestAuthor")
 		Me.chat.AddMessage(New HtmlMessage(Me.chat.CurrentAuthor, "<html>Visit our <a href=""https://www.progress.com/"" >homepage</a>.</html>", Date.Now))
     End Sub
-{{endregion}}
+```
 
 ## See Also
 

@@ -16,8 +16,8 @@ The line series visualizes three dimensional data represented by a line shape. E
 
 You can use the code from __Example 1__ to create a __LineSeries3D__. 
 
-#### __[XAML] Example 1: Defining series in XAML__	
-{{region radchartview3d-series-lineseries3d-0}}
+__Example 1: Defining series in XAML__	
+```XAML
 	<telerik:RadCartesianChart3D>
 		<telerik:RadCartesianChart3D.XAxis>
 			<telerik:LinearAxis3D/>
@@ -51,15 +51,15 @@ You can use the code from __Example 1__ to create a __LineSeries3D__.
 			<telerik:Chart3DCameraBehavior />
 		</telerik:RadCartesianChart3D.Behaviors>
 	</telerik:RadCartesianChart3D>
-{{endregion}}
+```
 	
 #### __Figure 1: LineSeries3D__
 ![{{ site.framework_name }} RadChartView3D LineSeries3D](images/radchartview-3d-lineseries3d-0.png)
 
 ## Data bound series
 
-#### __[C#] Example 2: Defining a model for the data points and setting up the data context__
-{{region radchartview3d-series-lineseries3d-1}}
+__Example 2: Defining a model for the data points and setting up the data context__
+```C#
 	public class PlotInfo
 	{
 		public double XValue { get; set; }
@@ -73,12 +73,12 @@ You can use the code from __Example 1__ to create a __LineSeries3D__.
 		new PlotInfo { XValue = 10, YValue = 20, ZValue = 150, },
 		//....
 	};
-{{endregion}}
+```
 
-#### __[XAML] Example 3: Setting up the series__
-{{region radchartview3d-series-lineseries3d-2}}
+__Example 3: Setting up the series__
+```XAML
 	<telerik:LineSeries3D XValueBinding="XValue"  YValueBinding="YValue" ZValueBinding=”ZValue” ItemsSource="{Binding}"/>
-{{endregion}}
+```
 
 ## Showing point visuals
 
@@ -86,15 +86,15 @@ The line series supports visual elements for its data points. They are disabled 
 
 To show the data point visual, set the __PointSize__ property of the series.
 
-#### __[XAML] Example 4: Setting point size in XAML__  
-{{region radchartview3d-series-lineseries3d-3}}
+__Example 4: Setting point size in XAML__  
+```XAML
 	<telerik:LineSeries3D PointSize="60 60 60">
-{{endregion}}
+```
 
-#### __[C#] Example 5: Setting point size in code__  
-{{region radchartview3d-series-lineseries3d-4}}
+__Example 5: Setting point size in code__  
+```C#
 	lineSeries.PointSize = new Size3D(60, 60, 60);
-{{endregion}}
+```
 
 #### __Figure 2: Point visuals shown__
 ![{{ site.framework_name }} RadChartView3D Point visuals shown](images/radchartview-3d-lineseries3d-1.png)
@@ -103,10 +103,10 @@ To show the data point visual, set the __PointSize__ property of the series.
 
 You can change the line size by setting the __DefaultLineVisualDiameter__ property of the series.
 
-#### __[C#] Example 6: Setting the line diameter__  
-{{region radchartview3d-series-lineseries3d-5}}
+__Example 6: Setting the line diameter__  
+```C#
 	 <telerik:LineSeries3D DefaultLineVisualDiameter="25">
-{{endregion}}
+```
 
 #### __Figure 3: Line diameter set to 25__
 ![{{ site.framework_name }} RadChartView3D Line diameter set to 25](images/radchartview-3d-lineseries3d-2.png)
@@ -127,8 +127,8 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 	
 	To change the color of the line you can use the __DefaultLineVisualMaterial__ property of the series.
 	
-	#### __[XAML] Example 7: Setting default line visual material__
-	{{region radchartview3d-series-lineseries3d-6}}
+	__Example 7: Setting default line visual material__
+	```XAML
 		<telerik:RadCartesianChart3D>          
 			<telerik:RadCartesianChart3D.Series>
 				<telerik:LineSeries3D>
@@ -140,7 +140,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
                     </telerik:LineSeries3D.DefaultLineVisualMaterial>
 				</telerik:LineSeries3D>
 		</telerik:RadCartesianChart3D>
-	{{endregion}}
+	```
 	
 	#### __Figure 4: Custom line visual material__	![{{ site.framework_name }} RadChartView3D Custom line visual material](images/radchartview-3d-lineseries3d-3.png)
 	
@@ -148,8 +148,8 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 
 	To change the geometry of the line segments you can use the __DefaultLineVisualGeometry__ property of the series.
 
-	#### __[XAML] Example 8: Setting default line visual geometry__
-	{{region radchartview3d-series-lineseries3d-7}}
+	__Example 8: Setting default line visual geometry__
+	```XAML
 		<telerik:RadCartesianChart3D>          
 			<telerik:RadCartesianChart3D.Series>
 				<telerik:LineSeries3D>
@@ -163,7 +163,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
                     </telerik:LineSeries3D.DefaultLineVisualGeometry>
 				</telerik:LineSeries3D>
 		</telerik:RadCartesianChart3D>
-	{{endregion}}
+	```
 	
 	#### __Figure 5: Custom line visual geometry__	![{{ site.framework_name }} RadChartView3D Custom line visual geometry](images/radchartview-3d-lineseries3d-4.png)	
 	
@@ -171,8 +171,8 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 
 	To change the material of the different line segments you can use the __DefaultLineVisualMaterialSelector__ property of the series.
 	
-	#### __[C#] Example 9: Implementing a material selector__
-	{{region radchartview3d-series-lineseries3d-8}}
+	__Example 9: Implementing a material selector__
+	```C#
 		public class LineMaterialSelector : MaterialSelector
 		{
 			private static Random randomNumberGenerator = new Random();
@@ -190,10 +190,10 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 				return new SolidColorBrush(Color.FromRgb(red, green, blue));
 			}
 		}
-	{{endregion}}
+	```
 	
-	#### __[XAML] Example 10: Setting default line visual material selector__
-	{{region radchartview3d-series-lineseries3d-9}}
+	__Example 10: Setting default line visual material selector__
+	```XAML
 		<telerik:RadCartesianChart3D>          
 			<telerik:RadCartesianChart3D.Series>
 				<telerik:LineSeries3D>
@@ -202,7 +202,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
                     </telerik:LineSeries3D.DefaultLineVisualMaterialSelector>
 				</telerik:LineSeries3D>
 		</telerik:RadCartesianChart3D>
-	{{endregion}}
+	```
 	
 	#### __Figure 6: Line with random colors__	![{{ site.framework_name }} RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-5.png)
 
@@ -210,8 +210,8 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 
 	To change the geometry of the different line segments you can use the __DefaultLineVisualGeometrySelector__ property of the series.
 	
-	#### __[C#] Example 11: Implementing a geometry selector__
-	{{region radchartview3d-series-lineseries3d-10}}
+	__Example 11: Implementing a geometry selector__
+	```C#
 		public class LineGeometrySelector : Geometry3DSelector
 		{
 			public Geometry3D Geometry1 { get; set; }
@@ -228,10 +228,10 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
 				return this.Geometry2;
 			}
 		}
-	{{endregion}}
+	```
 	
-	#### __[XAML] Example 12: Setting default line visual geometry selector__
-	{{region radchartview3d-series-lineseries3d-11}}
+	__Example 12: Setting default line visual geometry selector__
+	```XAML
 		<telerik:RadCartesianChart3D>          
 			<telerik:RadCartesianChart3D.Series>
 				<telerik:LineSeries3D>
@@ -259,7 +259,7 @@ The visual elements that represent the __LineSeries3D__'s line can be customized
                     </telerik:LineSeries3D.DefaultLineVisualGeometrySelector>
 				</telerik:LineSeries3D>
 		</telerik:RadCartesianChart3D>
-	{{endregion}}
+	```
 	
 	#### __Figure 7: Line with random colors__	![{{ site.framework_name }} RadChartView3D Line with random colors](images/radchartview-3d-lineseries3d-6.png)
 

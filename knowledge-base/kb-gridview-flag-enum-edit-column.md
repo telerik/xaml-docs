@@ -22,8 +22,8 @@ How to create a cell editor with a drop down that can be used to change the valu
 
 To do that, use the [FlagEnumEditor]({%slug radpropertygrid-radenumeditor%}) control in the [CellEditTemplate]({%slug radgridview-columns-celltemplate-and-celledittemplate%}) of the corresponding `GridViewDataColumn`.
 
-#### __[XAML]__
-{{region kb-gridview-flag-enum-edit-column-0}}
+
+```XAML
 	<telerik:RadGridView.Columns>
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding MyEnumProperty}">
 			<telerik:GridViewDataColumn.CellEditTemplate>
@@ -33,6 +33,6 @@ To do that, use the [FlagEnumEditor]({%slug radpropertygrid-radenumeditor%}) con
 			</telerik:GridViewDataColumn.CellEditTemplate>
 		</telerik:GridViewDataColumn>
 	</telerik:RadGridView.Columns>
-{{endregion}}
+```
 
 

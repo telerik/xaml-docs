@@ -40,12 +40,10 @@ The first approach is to blacklist your application. To do so, you can follow th
 
 The second approach is to set the `System.Windows.Media.RenderOptions.ProcessRenderMode` property to `System.Windows.Interop.RenderMode.SoftwareOnly` before showing any WPF windows.
 
-#### __[C#] Set the RenderOptions.ProcessRenderMode property__
-{{region kb-buttons-distorted-or-pixelated-buttons-0}}
+__Set the RenderOptions.ProcessRenderMode property__
+```C#
 	System.Windows.Media.RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.SoftwareOnly;
-{{endregion}}
-
-#### __[VB.NET] Set the RenderOptions.ProcessRenderMode property__
-{{region kb-buttons-distorted-or-pixelated-buttons-1}}
+```
+```VB.NET
 	System.Windows.Media.RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.SoftwareOnly
-{{endregion}}
+```

@@ -18,9 +18,9 @@ This article demonstrates how you can change the default look of the __RadPolarC
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __PolarLineSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-piechart-series_0}}
+
+```XAML
 
     <telerik:PolarLineSeries.ShapeStyle>
       <Style TargetType="Path">
@@ -30,7 +30,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
       </Style>
     </telerik:PolarLineSeries.ShapeStyle>
 
-{{endregion}}
+```
 
 ![radchartview-styles-and-templates-Polar Line Series-Shape Style](images/radchartview-styles-and-templates-PolarLineSeries-ShapeStyle.png)
 
@@ -38,9 +38,9 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __RadarLineSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-piechart-series_1}}	
+
+```XAML	
 
     <telerik:RadarLineSeries.ShapeStyle>
       <Style TargetType="Path">
@@ -50,7 +50,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
       </Style>
     </telerik:RadarLineSeries.ShapeStyle>
 
-{{endregion}}
+```
 
 ![radchartview-styles-and-templates-Radar Line Series-Shape Style](images/radchartview-styles-and-templates-RadarLineSeries-ShapeStyle.png)
 
@@ -60,9 +60,9 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __PolarAreaSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-piechart-series_2}}
+
+```XAML
 
     <telerik:PolarAreaSeries.ShapeStyle>
       <Style TargetType="Path">
@@ -73,7 +73,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
       </Style>
     </telerik:PolarAreaSeries.ShapeStyle>
 
-{{endregion}}
+```
 
 ![radchartview-styles-and-templates-Polar Area Series-Shape Style](images/radchartview-styles-and-templates-PolarAreaSeries-ShapeStyle.png)
 
@@ -81,9 +81,9 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __ShapeStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __RadarLineSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-piechart-series_3}}
+
+```XAML
 
     <telerik:RadarAreaSeries.ShapeStyle>
       <Style TargetType="Path">
@@ -93,7 +93,7 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
       </Style>
     </telerik:RadarAreaSeries.ShapeStyle>
   
-{{endregion}}
+```
 
 ![radchartview-styles-and-templates-Radar Area Series-Shape Style](images/radchartview-styles-and-templates-RadarAreaSeries-ShapeStyle.png)
 
@@ -103,9 +103,9 @@ This series expose the __ShapeStyle__ property. It is of type __Style__ and dete
 
 This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) element used to visualize the __PolarPointSeries__. Your custom style should target the native __Path__ component. You can set the property like this:
             
-#### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-piechart-series_4}}
+
+```XAML
 
     <telerik:PolarPointSeries.DefaultVisualStyle>
       <Style TargetType="Path">
@@ -113,7 +113,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
       </Style>
     </telerik:PolarPointSeries.DefaultVisualStyle>
     
-{{endregion}}
+```
 
 >tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.
 
@@ -123,9 +123,9 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
 
 This series expose the __DefaultVisualStyle__ property. It is of type __Style__ and determines the appearance of the series. Your custom style should target the native [Path](http://msdn.microsoft.com/en-us/library/system.windows.shapes.path(v=vs.110).aspx) component. You can set the property like this:
             
-#### __XAML__
 
-{{region radchartview-styles-and-templates-customizing-piechart-series_5}}
+
+```XAML
 
     <telerik:RadarPointSeries.DefaultVisualStyle>
       <Style TargetType="Path">
@@ -133,7 +133,7 @@ This series expose the __DefaultVisualStyle__ property. It is of type __Style__ 
       </Style>
     </telerik:RadarPointSeries.DefaultVisualStyle>
     
-{{endregion}}
+```
 
 
 >tipSince __Q1 2014__ all series exposing the __DefaultVisualStyle__ property, also expose the __DefaultVisualStyleSelector__ property. It is of type [StyleSelector](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector(v=vs.110).aspx) and gets or sets custom style-selection logic for a style that can be applied to each generated element.

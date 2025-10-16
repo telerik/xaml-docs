@@ -22,9 +22,9 @@ The purpose of this tutorial is to show how to use the Save/Load layout mechanis
 
 Create a new application and add the following initial __RadDocking__ declaration.
 
-#### __XAML__
 
-{{region xaml-raddocking-features-save-load-layout_0}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 	    <telerik:RadDocking.DocumentHost>
 	
@@ -89,7 +89,7 @@ Create a new application and add the following initial __RadDocking__ declaratio
 	        </telerik:RadPaneGroup>
 	    </telerik:RadSplitContainer>
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking Initial Layout](images/RadDocking_Features_SaveLoadLayout_010.png)
 
@@ -101,9 +101,9 @@ Perform the following steps:
 
 Set the __RadDocking.SerializationTag__ attached property for each one of the panes in your xaml declaration. If the SerializationTag is not set the Panes will be removed and new components will be created when the layout is loaded. If you want to preserve not only the Panes and load the same instances when the layout is loading you need to set the SerializationTag to all other components of RadDocking you want to preserve as well (RadPaneGroups, RadSplitContainers, RadPanes).
 
-#### __XAML__
 
-{{region xaml-raddocking-features-save-load-layout_1}}
+
+```XAML
 	<telerik:RadPane x:Name="LayoutXml1" Header="Layout Xml"
 	                 telerik:RadDocking.SerializationTag="LayoutXml"
 	                 telerik:RadDocking.FloatingSize="450, 400"/>
@@ -121,15 +121,15 @@ Set the __RadDocking.SerializationTag__ attached property for each one of the pa
 	                telerik:RadDocking.SerializationTag="PaneRight1"/>
 	<telerik:RadPane Header="Pane Top 1"
 	                telerik:RadDocking.SerializationTag="PaneTop1"/>
-{{endregion}}
+```
 
 Use the __SaveLayout__ method of the __RadDocking__ class. The following example demonstrates how to save the __RadDocking__ layout in the IsolatedStorage. The generated XML is returned as well.
 
 {% if site.site_name == 'Silverlight' %}
 		
-#### __C#__
 
-{{region cs-raddocking-features-save-load-layout_2}}
+
+```C#
 	private string SaveLayout()
 	{
 	    string xml;
@@ -147,11 +147,8 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 	    // Return the generated XML
 	    return xml;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-features-save-load-layout_3}}
+```
+```VB.NET
 	Private Function SaveLayout() As String
 		Dim xml As String
 		' Save your layout for example in the isolated storage.
@@ -166,13 +163,13 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 		' Return the generated XML
 		Return xml
 	End Function
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __C#__
 
-{{region cs-raddocking-features-save-load-layout_3}}
+
+```C#
 	private string SaveLayout()
 	{
 	    string xml;
@@ -190,11 +187,8 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 	    // Return the generated XML
 	    return xml;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-features-save-load-layout_3}}
+```
+```VB.NET
 	Private Function SaveLayout() As String
 		Dim xml As String
 		' Save your layout for example in the isolated storage.
@@ -209,7 +203,7 @@ Use the __SaveLayout__ method of the __RadDocking__ class. The following example
 		' Return the generated XML
 		Return xml
 	End Function
-{{endregion}}
+```
 
 {% endif %}
 
@@ -217,7 +211,7 @@ Here is how the result XML will look like for the above example:
 
 #### __XML__
 
-{{region xaml-raddocking-features-save-load-layout_4}}
+```XML
 	<RadDocking>
 	    <DocumentHost>
 	        <RadSplitContainer Dock="DockedLeft">
@@ -264,7 +258,7 @@ Here is how the result XML will look like for the above example:
 	        </RadSplitContainer>
 	    </SplitContainers>
 	</RadDocking>
-{{endregion}}
+```
 
 >There are two steps you should perform in order to save your layout (and one more that is optional):
 >	1. Mark all __RadPanes__ with the __RadDocking.SerializationTag__.
@@ -283,9 +277,9 @@ In order to load the docking layout you need to do absolutely the same things bu
 
 {% if site.site_name == 'Silverlight' %}
 
-#### __C#__
 
-{{region cs-raddocking-features-save-load-layout_5}}
+
+```C#
 	private void LoadLayout()
 	{
 	    // Load your layout from the isolated storage.
@@ -297,11 +291,8 @@ In order to load the docking layout you need to do absolutely the same things bu
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-features-save-load-layout_6}}
+```
+```VB.NET
 	Private Sub LoadLayout()
 		' Load your layout from the isolated storage.
 		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
@@ -310,13 +301,13 @@ In order to load the docking layout you need to do absolutely the same things bu
 			End Using
 		End Using
 	End Sub
-{{endregion}}
+```
 
 {% endif %}{% if site.site_name == 'WPF' %}
 
-#### __C#__
 
-{{region cs-raddocking-features-save-load-layout_6}}
+
+```C#
 	private void LoadLayout()
 	{
 	    // Load your layout from the isolated storage.
@@ -328,11 +319,8 @@ In order to load the docking layout you need to do absolutely the same things bu
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-features-save-load-layout_6}}
+```
+```VB.NET
 	Private Sub LoadLayout()
 		' Load your layout from the isolated storage.
 		Using storage As IsolatedStorageFile = IsolatedStorageFile.GetUserStoreForAssembly()
@@ -341,7 +329,7 @@ In order to load the docking layout you need to do absolutely the same things bu
 			End Using
 		End Using
 	End Sub
-{{endregion}}
+```
 
 {% endif %}
 
@@ -387,21 +375,18 @@ The event argument of the __CustomElementLoading__ event is of type __LayoutSeri
 
 >You have the ability to "say" whether these event to be fired or not, when the __SerializationTag__ is __not specified__. You should use the second overload of the __LoadLayout__ and __SaveLayout__ methods.
 
-#### __C#__
 
-{{region cs-raddocking-features-save-load-layout_7}}
+
+```C#
 	public void SaveLayout(Stream destination, bool raiseEventsIfNoSerializationTag)
 	{
 	
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-features-save-load-layout_8}}
+```
+```VB.NET
 	Public Sub SaveLayout(ByVal destination As Stream, ByVal raiseEventsIfNoSerializationTag As Boolean)
 	End Sub
-{{endregion}}
+```
 
 >By default when you use the __SaveLayout__ method only the layout (without the content) will be saved. That's why the most common use of the fourth events is to save (respectively load) the pane's content. In order to see how to do that take a look at the [Save/Load the Content of the Panes]({%slug raddocking-save-load-the-content-of-the-panes%}) topic.
 

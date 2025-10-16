@@ -32,10 +32,10 @@ How to refresh the UI of RadGridView when the current culture is changed, thus c
 
 RadGridView doesn't support dynamic localization. To get the desired effect, the GridView's ControlTemplate should be reset after the current culture changed.
 
-#### __[C#]__
-{{region kb-gridview-dynamic-localization-0}}
+
+```C#
 	LocalizationManager.Manager.Culture = newCulture;
 	var template = this.gridView.Template;
 	this.gridView.Template = null;
 	this.gridView.Template = template;
-{{endregion}}
+```

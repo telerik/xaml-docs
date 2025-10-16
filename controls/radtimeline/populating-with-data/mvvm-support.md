@@ -14,9 +14,7 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 
 1. We'll get started with a class with two properties - Duration and Date. They will be used to represent the two types of items in the Timeline. We'll also need a method that will set values to the newly created properties and will return a collection of our business objects.            
 
-	#### __C#__
-
-	{{region radtimeline-mvvm-support_1}}
+	```C#
 		public class Product
 		{
 			public TimeSpan Duration { get; set; }
@@ -45,11 +43,8 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 				return result;
 			}
 		}
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtimeline-mvvm-support_1}}
+	```
+	```VB.NET
 		Public Class Product
 			Public Property Duration() As TimeSpan
 			Public Property [Date]() As Date
@@ -73,15 +68,13 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 				Return result
 			End Function
 		End Class
-		{{endregion}}
+	```
 
 2. Create new class that inherits the ViewModelBase abstract class. This will be your ViewModel. What we'll need to add in it - an ObservableCollection that will be used as data source. In the constructor of the class call the GetData method we created in our Product class. (check Step 1.) The parameter of the method will represent the number of items in the timeline.            
 
 	>ViewModelBase class is part of the Telerik.Windows.Controls.dll
 
-	#### __C#__
-
-	{{region radtimeline-mvvm-support_2}}
+	```C#
 		public class ExampleViewModel : ViewModelBase
 		{
 			private ObservableCollection<Product> _data;
@@ -106,13 +99,8 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 				this.Data = Product.GetData(15);
 			}
 		}
-		{{endregion}}
-
-
-
-	#### __VB.NET__
-
-	{{region radtimeline-mvvm-support_2}}
+	```
+	```VB.NET
 		Public Class ExampleViewModel
 			Inherits ViewModelBase
 				Private _data As ObservableCollection(Of Product)
@@ -132,13 +120,11 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 					Me.Data = Product.GetData(15)
 				End Sub
 		End Class
-		{{endregion}}
+	```
 
 3. Add new RadTimeline declarations in XAML and bind the StartPath and DurationPath properties. To learn more about these properties, please check the [DataBinding]({%slug radtimeline-databinding%}) topic:            
 
-	#### __XAML__
-
-	{{region radtimeline-mvvm-support_0}}
+	```XAML
 		<telerik:RadTimeline Height="250" x:Name="RadTimeline1"
 							VerticalAlignment="Top"
 							Margin="6"
@@ -153,4 +139,4 @@ The __RadTimeline__ control can be used with great success with the Model-View-V
 				<telerik:DayInterval />
 			</telerik:RadTimeline.Intervals>
 		</telerik:RadTimeline>
-	{{endregion}}
+	```

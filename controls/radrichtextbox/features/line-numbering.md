@@ -53,7 +53,7 @@ The line numbering functionality can be programmatically used through the follow
        
 #### [C#] Example 1: Create and apply line numbering for the whole document
 
-{{region radrichtextbox-features-line-numbering_0}}
+```C#
 
 	Documents.Model.LineNumberings.LineNumbering numbering = new Telerik.Windows.Documents.Model.LineNumberings.LineNumbering(
 		start:10, 
@@ -63,7 +63,7 @@ The line numbering functionality can be programmatically used through the follow
 
 	this.radRichTextBox.Document.Selection.SelectAll();
 	this.radRichTextBox.ChangeSectionLineNumbering(numbering);
-{{endregion}}
+```
 
 You can also directly control the line numbering settings for a specific Section object through its **LineNumbering** property and suppress the numbering for a specific Paragraph using **SuppressLineNumbers**.
 

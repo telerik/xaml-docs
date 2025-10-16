@@ -20,25 +20,20 @@ By default this functionality is enabled and when a __RadPane__ is docked, pin/u
 
 You can also change the pin state of a __RadPane__ programmatically using the __RadPane__'s boolean property __IsPinned__.
 
-#### __[XAML] Example 1: Set the IsPinned property on a pane__
+__Example 1: Set the IsPinned property on a pane__
 
-{{region xaml-raddocking-panes-pinned-unpinned-panes_0}}
+```XAML
 	<telerik:RadPane x:Name="radPane" IsPinned="True"/>
-{{endregion}}
+```
 
-#### __[C#]__
-
-{{region cs-raddocking-panes-pinned-unpinned-panes_1}}
+```C#
 	radPane.IsPinned = true;
-{{endregion}}
-
-#### __[VB.NET]__
-
-{{region vb-raddocking-panes-pinned-unpinned-panes_2}}
+```
+```VB.NET
 	radPane.IsPinned = True
-{{endregion}}
+```
 
-You can also [pin](#Pinning_All_Panes)/[unpin](#Unpining_All_Panes) all of the panes inside of a [RadPaneGroup]({%slug raddocking-features-pane-groups%}) using the methods __group.PinAllPanes()__/__group.UnpinAllPanes()__.
+You can also pin/unpin all of the panes inside of a [RadPaneGroup]({%slug raddocking-features-pane-groups%}) using the __group.PinAllPanes()__ and __group.UnpinAllPanes()__ methods.
 
 ## Pinned Panes
 
@@ -82,23 +77,20 @@ If you don't want your __RadPanes__ to be pinnable just set the __CanUserPin__ p
 
 ![Docked pane with no pin button](images/RadDocking_Features_Panes_Pinn_Unpinn_050.png)
 
-#### __[XAML] Example 2: Disable pinning of panes via the CanUserPin property__
+__Example 2: Disable pinning of panes via the CanUserPin property__
 
-{{region xaml-raddocking-panes-pinned-unpinned-panes_3}}
+```XAML
 	<telerik:RadPane x:Name="radPane1" CanUserPin="False"/>
-{{endregion}}
+```
 
-#### __[C#]__
 
-{{region cs-raddocking-panes-pinned-unpinned-panes_4}}
+
+```C#
 	radPane.CanUserPin = false;
-{{endregion}}
-
-#### __[VB.NET]__
-
-{{region vb-raddocking-panes-pinned-unpinned-panes_5}}
+```
+```VB.NET
 	radPane.CanUserPin = False
-{{endregion}}
+```
 
 ## See Also
 

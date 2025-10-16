@@ -37,9 +37,9 @@ Demonstrating the __TypeConverter__ mechanism in the scope of RadPropertyGrid wi
 
 The example will use a __Club__ object which has a __Captain__ property of type __Player__.
 
-#### __[C#] Example 1: Defining the business object__
+__Example 1: Defining the business object__
 
-{{region cs-radpropertygrid-typeconverter-support_0}}
+```C#
 	 public class Club 
 	{
 	    private string name;
@@ -120,11 +120,8 @@ The example will use a __Club__ object which has a __Captain__ property of type 
 	         this.height = height;
 	     }
 	 }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Defining the business object__
-
-{{region vb-radpropertygrid-typeconverter-support_0}}
+```
+```VB.NET
 	Public Class Club
 	
 	    Private m_name As String
@@ -196,15 +193,15 @@ The example will use a __Club__ object which has a __Captain__ property of type 
 	        Me.m_height = height
 	    End Sub
 	End Class
-{{endregion}}
+```
 
 {% if site.site_name == 'WPF' %} 
 ## Display a Predefined List of Values for a Property with TypeConverter
 
 As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides support for a standard set of values that can be picked from a predefined list. This can be done through overriding the __GetStandardValuesSupported__ method.
 
-#### __[C#] Example 2: Defining a TypeConverter providing a default set of values__
-{{region cs-radpropertygrid-typeconverter-support_2}}
+__Example 2: Defining a TypeConverter providing a default set of values__
+```C#
 	 public class PlayerTypeConverter : TypeConverter
 	 {
 	     public override bool GetStandardValuesSupported(ITypeDescriptorContext context)
@@ -224,11 +221,8 @@ As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides suppo
 	                "Paul Ince", "Jamie Redknapp", "Sami Hyypia", "Steven Gerrard ", "Jordan Henderson" });
 	     }
 	 }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a TypeConverter providing a default set of values__
-
-{{region vb-radpropertygrid-typeconverter-support_2}}
+```
+```VB.NET
 	Public Class PlayerTypeConverter
 	    Inherits TypeConverter
 	    Public Overrides Function GetStandardValuesSupported(context As ITypeDescriptorContext) As Boolean
@@ -245,7 +239,7 @@ As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides suppo
 	            "Steven Gerrard ", "Jordan Henderson"})
 	    End Function
 	End Class
-{{endregion}}
+```
 
 > If __EditorAttribute__ is set to a specific property with a set __TypeConverter__ the __EditorAttribute__ is with lower priority - a default set of values will be visualized if the __GetStandardValuesSupported__ is overridden instead of an editor.
 
@@ -257,9 +251,9 @@ As of __R1 2017__, the TypeConverter mechanism of RadPropertyGrid provides suppo
 
 In this section, the definition of a culture aware TypeConverter will be demonstrated. The support for it is added as of __R1 2017__. For this purpose, the __Height__ property of the __Player__ object  will be used.
 
-#### __[C#] Example 3: Defining a culture aware TypeConverter__
+__Example 3: Defining a culture aware TypeConverter__
 
-{{region cs-radpropertygrid-typeconverter-support_3}}
+```C#
 	 public class PlayerTypeConverter1 : TypeConverter
 	 {
 	     private const double inchesToCentimetres = 2.54;
@@ -330,12 +324,8 @@ In this section, the definition of a culture aware TypeConverter will be demonst
 	         }
 	     }
 	 }
-{{endregion}}
-
-
-#### __[VB.NET] Example 3: Defining a culture-aware TypeConverter__
-
-{{region vb-radpropertygrid-typeconverter-support_3}}
+```
+```VB.NET
 	Public Class PlayerTypeConverter1
 	    Inherits TypeConverter
 	    Private Const inchesToCentimetres As Double = 2.54
@@ -392,7 +382,7 @@ In this section, the definition of a culture aware TypeConverter will be demonst
 	        End If
 	    End Function
 	End Class
-{{endregion}}
+```
 
 #### __Figure 2: Culture-aware TypeConverter__
 

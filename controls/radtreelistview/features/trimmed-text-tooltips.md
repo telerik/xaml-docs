@@ -16,17 +16,17 @@ As of **R1 2017** through the new **ShowToolTipOnTrimmedText** property you can 
 
 The ShowToolTipOnTrimmedText is applied to RadTreeListView's **GridViewHeaderCell**, **GridViewCell** and **GridViewFooterCell** elements. Setting it to **True** will result in a tooltip being showed if the cell's text is trimmed.
 
-#### __[XAML] Example 1: Setting RadTreeListView's ShowToolTipOnTrimmedText__
+__Example 1: Setting RadTreeListView's ShowToolTipOnTrimmedText__
 
-{{region xaml-radtreelistview-columns-trimmed-text-tooltips_1}}
+```XAML
 	<telerik:RadTreeListView ShowToolTipOnTrimmedText="True" />
-{{endregion}}
+```
 
-#### __[XAML] Example 2: Setting a column's ShowToolTipOnTrimmedText__
+__Example 2: Setting a column's ShowToolTipOnTrimmedText__
 
-{{region xaml-radtreelistview-columns-trimmed-text-tooltips_2}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" ShowToolTipOnTrimmedText="True" />
-{{endregion}}
+```
 
 Setting the ShowToolTipOnTrimmedText of a column will show tooltips for trimmed text only for the given column. Setting the same property of a RadTreeListView instance will set the ShowToolTipOnTrimmedText for all of its columns.
 

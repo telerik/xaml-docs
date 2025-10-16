@@ -12,9 +12,9 @@ position: 1
 
 For example, you may have the following __RadTileView__ declaration:
 
-#### __XAML__
 
-{{region radtileview-howto-enable-scrollbars_0}}
+
+```XAML
 	<telerik:RadTileView ColumnsCount="2">
 	    <telerik:RadTileViewItem Header="Item1">
 	        <TextBlock Text="Item1 Content" />
@@ -44,15 +44,15 @@ For example, you may have the following __RadTileView__ declaration:
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 ## Enable Restored Items ScrollBars
 
 In order to enable the horizontal and/or vertical scrollbar for the restored tiles you need to set the rows and columns size large enough to exceed the viewport of the __RadTileView__ control.
 
-#### __XAML__
 
-{{region radtileview-howto-enable-scrollbars_1}}
+
+```XAML
 	<telerik:RadTileView ColumnsCount="2" RowHeight="150" ColumnWidth="150">
 	    <telerik:RadTileViewItem Header="Item1">
 	        <TextBlock Text="Item1 Content" />
@@ -82,7 +82,7 @@ In order to enable the horizontal and/or vertical scrollbar for the restored til
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTileView Restored Items ScrollBars Enabled](images/radtileview_howto_enable_scrollbars.png)
 
@@ -90,9 +90,9 @@ In order to enable the horizontal and/or vertical scrollbar for the restored til
 
 In order to enable the minimized items __ScrollBar__, you need to set the __MinimizedRowHeight__ or __MinimizedColumnWidth__ properties thus limiting the size of the minimized tiles:
 
-#### __XAML__
 
-{{region radtileview-howto-enable-scrollbars_2}}
+
+```XAML
 	<telerik:RadTileView ColumnsCount="2" MinimizedRowHeight="150">
 	    <telerik:RadTileViewItem Header="Item1">
 	        <TextBlock Text="Item1 Content" />
@@ -122,7 +122,7 @@ In order to enable the minimized items __ScrollBar__, you need to set the __Mini
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTileView Minimized Items ScrollBars Enabled](images/radtileview_howto_enable_minimized_scrollbar.png)
 
@@ -130,9 +130,9 @@ In order to enable the minimized items __ScrollBar__, you need to set the __Mini
 
 In order to allow automatic scrolling while dragging a __RadTileViewItem__, you need to set the __RadTileView IsAutoScrollingEnabled__ property to __True.__
 
-#### __XAML__
 
-{{region radtileview-howto-enable-scrollbars_3}}
+
+```XAML
 	<telerik:RadTileView ColumnsCount="2" RowHeight="150" IsAutoScrollingEnabled="True">
 	    <telerik:RadTileViewItem Header="Item1">
 	        <TextBlock Text="Item1 Content" />
@@ -162,6 +162,6 @@ In order to allow automatic scrolling while dragging a __RadTileViewItem__, you 
 	        <TextBlock Text="Item9 Content" />
 	    </telerik:RadTileViewItem>
 	</telerik:RadTileView>
-{{endregion}}
+```
 
 Once this property is set, you will be able to drag an item near the end of the viewable area and keep it there for a moment thus starting the automatic scrolling.

@@ -19,21 +19,16 @@ __RadRichTextBox__ contains the **DocumentFormatProvidersManager** class that al
 The **DocumentFormatProvidersManager** class exposes a method that allows you to register format providers. The manager has the docx, html, rtf, pdf and txt format providers registered by default through [MEF]({%slug radrichtextbox-mef%}). The snippet in __Example 1__ illustrates how to register a custom format provider. The same can be used for registering the default format providers when the MEF fails to load them automatically due to restrictions, for example.
 
 
-#### __[C#] Example 1: Register provider__
+__Example 1: Register provider__
 
-{{region radrichtextbox-features-import-export-formatprovidersmanager_0}}
+```C#
    
     DocumentFormatProvidersManager.RegisterFormatProvider(new CustomHtmlFormatProvider());
-{{endregion}}
-
-
-
-#### __[VB.NET] Example 1: Register provider__
-
-{{region radrichtextbox-features-import-export-formatprovidersmanager_1}}
+```
+```VB.NET
 
 	DocumentFormatProvidersManager.RegisterFormatProvider(New CustomHtmlFormatProvider())
-{{endregion}}
+```
 
 You can also disable the automatic load of the default providers using the **AutomaticallyLoadFormatProviders** property. When it is set to `true`, you should manually take care of registering the format providers you would like to use in the application.
 
@@ -41,20 +36,18 @@ You can also disable the automatic load of the default providers using the **Aut
 
 The **DocumentFormatProvidersManager** class offers several approaches to retrieve the registered format providers. All the providers are available in the FormatProviders property. The class offers the **GetProviderByName()** static method that searches through the registered providers to find a provider with a specific name. Also, the manager exposes the __GetProvderByExtension()__ method. Both are useful when you need to obtain one of the default format providers used by the UI and tweak it using the exposed settings.
 
-#### __[C#] Example 2: Modify default provider's settings__
+__Example 2: Modify default provider's settings__
 
-{{region radrichtextbox-features-import-export-formatprovidersmanager_2}}
+```C#
 
     DocxFormatProvider docxFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("docx") as DocxFormatProvider;
     docxFormatProvider.ExportSettings.FieldResultMode = FieldDisplayMode.Code;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Modify default provider's settings__
-{{region radrichtextbox-features-import-export-formatprovidersmanager_3}}
+```
+```VB.NET
 
      Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
      docxFormatProvider.ExportSettings.FieldResultMode = FieldDisplayMode.Code
-{{endregion}}
+```
 
 
 The class also contains a static method  __GetSupportedExtensions()__ that returns an IEnumeable of the currently supported file extensions.

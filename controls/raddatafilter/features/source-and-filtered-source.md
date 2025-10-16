@@ -20,17 +20,14 @@ On the picture below you can see the flow of the collection you want to filter.
 
 When you assign an [IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) as the __Source__ of a __RadDataFilter__ it will automatically expose it through its __FilteredSource__ property. From then on, you can attach any number of __ItemsControls__ to the __FilteredSource__ and they will automatically display the filtered data. Here is demonstrated how to do this entirely in XAML.
 
-#### __XAML__
 
-{{region raddatafilter-features-source-and-filtered-source_0}}
 
+```XAML
 	<telerik:RadDataFilter x:Name="radDataFilter" />
 	<telerik:ListBox x:Name="listBox"
 	                    ItemsSource="{Binding FilteredSource, ElementName=radDataFilter}"
 	                    DisplayMemberPath="Name" />
-	{{endregion}}
-
-
+```
 
 ## See Also
 

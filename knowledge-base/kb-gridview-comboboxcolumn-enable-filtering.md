@@ -34,8 +34,8 @@ How to enable the editing and filtering of the `RadComboBox` of a `GridViewCombo
 
 To enable the editing, set the `IsComboBoxEditable` property of the `GridViewComboBoxColumn` to `true`. To enable also the filtering, set the `IsFilteringEnabled` property of the `RadComboBox` element to `true`.
 
-#### __[XAML]__  
-{{region kb-gridview-comboboxcolumn-enable-filtering-0}}
+  
+```XAML
 	<telerik:GridViewComboBoxColumn DataMemberBinding="{Binding CountryId}"
 									IsComboBoxEditable="True"
 									SelectedValueMemberPath="Id"
@@ -46,4 +46,4 @@ To enable the editing, set the `IsComboBoxEditable` property of the `GridViewCom
 				</Style>
 		</telerik:GridViewComboBoxColumn.EditorStyle>
 	</telerik:GridViewComboBoxColumn>
-{{endregion}}
+```

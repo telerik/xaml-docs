@@ -20,9 +20,9 @@ The following small practical samples will show you how to use this properties t
 
 There could be cases in __RadPivotMap__ when the text per rectangle is chopped due to the size of the rectangles calculated, it is not adjustable by just tuning the text length and size because the rectangle size is recalculated every time when window size is changed. To have a fully readable labels you may wrap your TextBlock in a control like ViewBox for example which resizes itself based on the size of its content and put it in the header of your rectangle using __LeafTemplate__ like this:
 
-#### __XAML__
 
-{{region radtreemap-styles-and-templates_0}}
+
+```XAML
 	<telerik:RadPivotMap x:Name="pivotMap" LayoutStrategy="Squarified" ValuePath="Gdp" LabelPath="City">
 	    <telerik:RadPivotMap.LeafTemplate>
 	        <DataTemplate>
@@ -35,13 +35,13 @@ There could be cases in __RadPivotMap__ when the text per rectangle is chopped d
 	        <telerik:GroupDefinition Member="Country" />
 	    </telerik:RadPivotMap.GroupDefinitions>
 	</telerik:RadPivotMap>
-{{endregion}}
+```
 
 This is the full source code of the sample:
 
-#### __C#__
 
-{{region radtreemap-styles-and-templates_1}}
+
+```C#
     public MainPage()
 	{
 	    InitializeComponent();
@@ -78,11 +78,8 @@ This is the full source code of the sample:
 	    };
 	    return data;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreemap-styles-and-templates_2}}
+```
+```VB.NET
 	  Public Sub New()
 		InitializeComponent()
 		pivotMap.ItemsSource = Me.GetData()
@@ -111,7 +108,7 @@ This is the full source code of the sample:
 		New GdpInfo() With {.Country = "USA", .City = "Austin which is in the Texas state", .Gdp = 4600}}
 		Return data
 	End Function
-{{endregion}}
+```
 
 >caution Since you wrapped the TextBlock in a ViewBox, the Size of the Text will change according to the space available which will lead to texts with different size (shown on the image below). If you don't want such appearance, you should consider removing the ViewBox and using __TextWrapping__ and __MaxWidth__ for the TextBlock-s.
 
@@ -124,9 +121,9 @@ You can customize the way __RadTreeMap__ Items look like per *TypeDefinition*. T
 
 >Please refer to the [Populating With Data RadTreeMap]({%slug radtreemap-populating-with-data-radtreemap%}) for the full source code of the sample.
 
-#### __XAML__
 
-{{region radtreemap-styles-and-templates_1}}
+
+```XAML
 	<telerik:RadTreeMap Name="treeMap1">
 		<telerik:RadTreeMap.TypeDefinitions>
 			<telerik:TypeDefinition TargetTypeName="File" ValuePath="Size" LabelPath="Name">
@@ -148,7 +145,7 @@ You can customize the way __RadTreeMap__ Items look like per *TypeDefinition*. T
 			<telerik:TypeDefinition TargetTypeName="Folder" ValuePath="Size" ChildrenPath="Children" LabelPath="Name" />
 		</telerik:RadTreeMap.TypeDefinitions>
 	</telerik:RadTreeMap>
-{{endregion}}
+```
 
 The result is shown on the following image:
 ![{{ site.framework_name }} RadTreeMap Custom Item Style](images/radtreemap_styles_and_templates.PNG)

@@ -27,10 +27,10 @@ You can get information about the plot area's boundaries via the __PlotAreaClip_
 
 By default the elements presented by the chart (series and annotations) are clipped into the plot area. Anything that leaves the boundaries won't be rendered. To alter this you can use the __ClipToPlotArea__ property that is exposed by the elements. Its __default value__ is __True__.
 
-#### __[XAML] Example 1: Setting ClipToPlotArea of a chart series__
-{{region xaml-radchartview-features-plot-area-0}}
+__Example 1: Setting ClipToPlotArea of a chart series__
+```XAML
 	 <telerik:PointSeries ClipToPlotArea="False" />
-{{endregion}}
+```
 
 #### __Figure 2: ClipToPlotArea example__
 ![ClipToPlotArea example](images/radchartview-features-plot-area-1.png)
@@ -39,14 +39,14 @@ By default the elements presented by the chart (series and annotations) are clip
 
 You can customize the plot area visual via the __PlotAreaStyle__ property of the chart. It is of type __Style__ and the expected __TargetType__ is __Border__ - the area's visual element.
 
-#### __[XAML] Example 2: Setting PlotAreaStyle__
-{{region xaml-radchartview-features-plot-area-1}}
+__Example 2: Setting PlotAreaStyle__
+```XAML
 	<telerik:RadCartesianChart.PlotAreaStyle>
 		<Style TargetType="Border">
 			<Setter Property="Background" Value="#FFFDB3" />
 		</Style>
 	</telerik:RadCartesianChart.PlotAreaStyle>
-{{endregion}}
+```
 
 #### __Figure 3: PlotAreaStyle example__
 ![PlotAreaStyle example](images/radchartview-features-plot-area-2.png)
@@ -55,8 +55,8 @@ You can customize the plot area visual via the __PlotAreaStyle__ property of the
 
 The stack order of the elements in the chart is determined by their positions in the items collection that holds them. You can additionally control which element is displayed on top by setting the elements' **ZIndex** property. RadChartView elements which have this property are [Series]({%slug radchartview-series-chartseries%}), [Annotations]({%slug radchartview-annotations-overview%}) and [Axes]({%slug radchartview-axes-axis%}).
 
-#### __[XAML] Example 3: Setting the ZIndex property__
-{{region xaml-radchartview-features-plot-area-2}}
+__Example 3: Setting the ZIndex property__
+```XAML
 	<telerik:RadCartesianChart x:Name="chart" Palette="Windows8">
             <telerik:RadCartesianChart.HorizontalAxis>
                 <telerik:CategoricalAxis/>
@@ -82,7 +82,7 @@ The stack order of the elements in the chart is determined by their positions in
                 </telerik:BarSeries>
             </telerik:RadCartesianChart.Series>
         </telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 4: ZIndex example__
 ![ZIndex example](images/radchartview-ZIndex.png)

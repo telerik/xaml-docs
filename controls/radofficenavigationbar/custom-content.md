@@ -14,10 +14,10 @@ position: 4
 
 Each RadOfficeNavigationBarItem supports setting complex structures of elements to its `ContentTemplate` and `CompactContentTemplate` properties. These structures will represent the values set to its `Content` and `CompactContent` properties. 
 
->important The CompactContent, CompactContentTemplate, and CompactContentTemplateSelector properties will be used when the `IsInCompactMode` property is set to __True__. To learn more about this items display mode, check the [View Modes]({%slug radofficenavigationbar-view-modes%}) article.
+>important The CompactContent, CompactContentTemplate, and CompactContentTemplateSelector properties will be used when the `IsInCompactMode` property is set to __True__. To learn more about this items display mode, check the [Display Modes]({%slug radofficenavigationbar-display-modes%}) article.
 
-#### __[XAML] Example complex ContentTemplate__
-{{region radofficenavigationbar-custom-content-0}}
+__Example complex ContentTemplate__
+```XAML
     <telerik:RadOfficeNavigationBarItem Content="Mail">
         <telerik:RadOfficeNavigationBarItem.ContentTemplate>
             <DataTemplate>
@@ -28,14 +28,14 @@ Each RadOfficeNavigationBarItem supports setting complex structures of elements 
             </DataTemplate>
         </telerik:RadOfficeNavigationBarItem.ContentTemplate>
     </telerik:RadOfficeNavigationBarItem>
-{{endregion}}
+```
 
 __RadOfficeNavigationBarItem with a custom ContentTemplate__
 
 ![{{ site.framework_name }} RadOfficeNavigationBarItem with a custom ContentTemplate](images/officenavigationbar-custom-content-0.png)
 
-#### __[XAML] Example complex CompactContentTemplate__
-{{region radofficenavigationbar-custom-content-1}}
+__Example complex CompactContentTemplate__
+```XAML
     <telerik:RadOfficeNavigationBar IsInCompactMode="True">
         <telerik:RadOfficeNavigationBarItem CompactContent="&#xe809;">
             <telerik:RadOfficeNavigationBarItem.CompactContentTemplate>
@@ -45,7 +45,7 @@ __RadOfficeNavigationBarItem with a custom ContentTemplate__
             </telerik:RadOfficeNavigationBarItem.CompactContentTemplate>
         </telerik:RadOfficeNavigationBarItem>
     </telerik:RadOfficeNavigationBar>
-{{endregion}}
+```
 
 __RadOfficeNavigationBarItem with a custom CompactContentTemplate__
 
@@ -61,27 +61,25 @@ For the purpose of the following example, the `ContentTemplateSelector` property
 
 Define a sample model class that will hold the name and the glyph as string of each item.
 
-#### __[C#] Define a model__
-{{region radofficenavigationbar-custom-content-2}}
+__Define a model__
+```C#
     public class ItemModel
     {
         public string Name { get; set; }
         public string GlyphString { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Define a model__
-{{region radofficenavigationbar-custom-content-3}}
+```
+```VB.NET
     Public Class ItemModel
         Public Property Name As String
         Public Property GlyphString As String
     End Class
-{{endregion}}
+```
 
 After that, create a view model that will contain a collection of ItemModels instances. This collection will be bound to the `ItemsSource` property of the `RadOfficeNavigationBar` control.
 
-#### __[C#] Define a view model__
-{{region radofficenavigationbar-custom-content-4}}
+__Define a view model__
+```C#
     public class ItemsViewModel
     {
         public ItemsViewModel()
@@ -95,10 +93,8 @@ After that, create a view model that will contain a collection of ItemModels ins
 
         public ObservableCollection<ItemModel> ItemModels { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Define a view model__
-{{region radofficenavigationbar-custom-content-5}}
+```
+```VB.NET
     Public Class ItemsViewModel
     Public Sub New()
     ItemModels = New ObservableCollection(Of ItemModel) From {
@@ -115,12 +111,12 @@ After that, create a view model that will contain a collection of ItemModels ins
 
     Public Property ItemModels As ObservableCollection(Of ItemModel)
     End Class
-{{endregion}}
+```
 
 Next, we can define a custom `DataTemplateSelector` class and override its `SelectTemplate` method. In it, we will check if the GlyphString property equals __"No glyph"__ and return different `DataTemplate` depending on this check.
 
-#### __[C#] Define a custom DataTemplateSelector__
-{{region radofficenavigationbar-custom-content-6}}
+__Define a custom DataTemplateSelector__
+```C#
     public class GlyphContentTemplateSelector : DataTemplateSelector
     {
         public DataTemplate GlyphDataTemplate { get; set; }
@@ -138,10 +134,8 @@ Next, we can define a custom `DataTemplateSelector` class and override its `Sele
             return this.GlyphDataTemplate;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Define a custom DataTemplateSelector__
-{{region radofficenavigationbar-custom-content-7}}
+```
+```VB.NET
     Public Class GlyphContentTemplateSelector
         Inherits DataTemplateSelector
         Public Property GlyphDataTemplate As DataTemplate
@@ -157,12 +151,12 @@ Next, we can define a custom `DataTemplateSelector` class and override its `Sele
             Return GlyphDataTemplate
         End Function
     End Class
-{{endregion}}
+```
 
 Create an instance of the custom DataTemplateSelector class in XAML and set it to each RadOfficeNavigationBarItem element.
 
-#### __[XAML] Instantiate the custom DataTemplateSelector in XAML__
-{{region radofficenavigationbar-custom-content-8}}
+__Instantiate the custom DataTemplateSelector in XAML__
+```XAML
     <Application.Resources>
         <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter"/>
 
@@ -189,19 +183,19 @@ Create an instance of the custom DataTemplateSelector class in XAML and set it t
             <Setter Property="ContentTemplateSelector" Value="{StaticResource GlyphContentTemplateSelector}"/>
         </Style>
     </Application.Resources>
-{{endregion}}
+```
 
 Finally, apply the new Style to the `ItemContainerStyle` property of the RadOfficeNavigationBar control.
 
-#### __[XAML] Set the custom Style to the ItemContainerStyle property__
-{{region radofficenavigationbar-custom-content-9}}
+__Set the custom Style to the ItemContainerStyle property__
+```XAML
     <Grid>
         <Grid.DataContext>
             <local:ItemsViewModel/>
         </Grid.DataContext>
         <telerik:RadOfficeNavigationBar ItemsSource="{Binding ItemModels}" ItemContainerStyle="{StaticResource OfficeNavigationBarItemStyle}"/>
     </Grid>
-{{endregion}}
+```
 
 __RadOfficeNavigationBarItems with custom ContentTemplateSelector__
 

@@ -21,9 +21,9 @@ RadCarousel does provide a built-in scroll bar that enables you to move the item
 
 Finally, the implementation should be as follows:
 
-#### __XAML__
 
-	{{region xaml-radcarousel-how-to-change-scroll-buttons_0}}
+
+```XAML
 	<Grid.Resources>
 	  <ResourceDictionary>
 	    <ResourceDictionary.MergedDictionaries>
@@ -48,11 +48,11 @@ Finally, the implementation should be as follows:
 	       Click="pageUpButton_Click"  Style="{StaticResource CarouselScrollButtonStyle}"/>
 	  </StackPanel>
 	</Grid>
-{{endregion}}
+```
 
-#### __C#__
 
-	{{region cs-radcarousel-how-to-change-scroll-buttons_1}}
+
+```C#
 	private void pageDownButton_Click(object sender, RoutedEventArgs e)
 	{
 	    this.RadCarousel1.FindCarouselPanel().PageDown();
@@ -69,11 +69,8 @@ Finally, the implementation should be as follows:
 	{
 	    this.RadCarousel1.FindCarouselPanel().PageUp();
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-	{{region vb-radcarousel-how-to-change-scroll-buttons_1}}
+```
+```VB.NET
 	Private Sub pageDownButton_Click(sender As Object, e As RoutedEventArgs)
 	    Me.RadCarousel1.FindCarouselPanel().PageDown()
 	End Sub
@@ -89,11 +86,9 @@ Finally, the implementation should be as follows:
 	Private Sub pageUpButton_Click(sender As Object, e As RoutedEventArgs)
 	    Me.RadCarousel1.FindCarouselPanel().PageUp()
 	End Sub
-{{endregion}}
+```
 
 Once you are done, the RadCarousel should be visualized as the image below:
 ![{{ site.framework_name }} RadCarousel Customized Buttons](images/RadCarousel_ChangeScrollButtons.png)
 
 Still, you are free to change the style of the buttons just as you want them to be. 
-
-

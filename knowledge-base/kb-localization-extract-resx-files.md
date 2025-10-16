@@ -36,8 +36,8 @@ The Telerik's default `.resx` files can be accessed by loading the __Telerik.Win
 
 To create new `.resx` files, you can use the [ResXResourceWriter](https://learn.microsoft.com/en-us/dotnet/api/system.resources.resxresourcewriter?view=windowsdesktop-7.0) class from the `System.Windows.Forms` assembly.
 
-#### __[C#__
-{{region kb-localization-extract-resx-files-0}}
+
+```C#
 	private void ExtractTelerikDefaultLocalizationResources()
 	{            
 		string newResourceFileNameFormat = @".\TelerikStrings{0}.resx";
@@ -71,7 +71,7 @@ To create new `.resx` files, you can use the [ResXResourceWriter](https://learn.
 			}
 		}
 	}
-{{endregion}}
+```
 
 ## See Also
 * [Localization]({%slug common-localization%}) 

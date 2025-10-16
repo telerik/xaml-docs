@@ -18,10 +18,10 @@ In scenarios, where you want to show custom content, when an empty string is ent
 
 In the following example, the user is asked to enter four digits:
 
-#### __[XAML] Example 1: Defining the RadMaskedTextInput control__
-{{region xaml-radmaskedinput-features-watermark_0}}
+__Example 1: Defining the RadMaskedTextInput control__
+```XAML
 	<telerik:RadMaskedTextInput Mask="####" />
-{{endregion}}
+```
 
 When an empty string is entered, then the default __Placeholder__(the character used to represent the absence of user input in a __RadMaskedInput__ control) will be displayed.				
 
@@ -29,17 +29,17 @@ When an empty string is entered, then the default __Placeholder__(the character 
 
 If the __EmptyContent__ property is set, then it will be displayed when an empty string is entered.				
 
-#### __[XAML] Example 2: Setting the EmptyContent property__
-{{region xaml-radmaskedinput-features-watermark_1}}
+__Example 2: Setting the EmptyContent property__
+```XAML
 	<telerik:RadMaskedTextInput Mask="####" EmptyContent="Please Enter Four Digits" />
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput Custom Empty Content](images/RadMaskedTextBox_Features_Watermark_Customized.png)
 
 The __EmptyContent__ property is of type object. Which means that you can set anything you want. For example:				
 
-#### __[XAML] Example 3: Setting custom RadWatermarkTextBox to the EmptyContent property__
-{{region xaml-radmaskedinput-features-watermark_2}}
+__Example 3: Setting custom RadWatermarkTextBox to the EmptyContent property__
+```XAML
 	<telerik:RadMaskedTextInput Mask="####">
 	    <telerik:RadMaskedTextInput.EmptyContent>
 	        <telerik:RadWatermarkTextBox Margin="3,0,0,0" BorderBrush="Transparent">
@@ -54,7 +54,7 @@ The __EmptyContent__ property is of type object. Which means that you can set an
 	        </telerik:RadWatermarkTextBox>
 	    </telerik:RadMaskedTextInput.EmptyContent>
 	</telerik:RadMaskedTextInput>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput RadWatermarkTextBox as Empty Content](images/RadMaskedTextBox_Features_Watermark_WatermarkTextBox_Default.png)
 
@@ -62,8 +62,8 @@ The __EmptyContent__ property is of type object. Which means that you can set an
 
 Similarly, you can use the __EmptyContentTemplate__ property for the same sort of scenarios. Note that in this case you should define a new __DataTemplate__ for the __EmptyContentTemplate__ property.				
 
-#### __[XAML] Example 4: Setting custom template to the EmptyContentTemplate property__
-{{region xaml-radmaskedinput-features-watermark_3}}
+__Example 4: Setting custom template to the EmptyContentTemplate property__
+```XAML
 	<telerik:RadMaskedTextInput Mask="####">
 	    <telerik:RadMaskedTextInput.EmptyContentTemplate>
 	        <DataTemplate>
@@ -81,7 +81,7 @@ Similarly, you can use the __EmptyContentTemplate__ property for the same sort o
 	        </DataTemplate>
 	    </telerik:RadMaskedTextInput.EmptyContentTemplate>
 	</telerik:RadMaskedTextInput>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadMaskedInput RadWatermarkTextBox in Empty Content Template](images/RadMaskedTextBox_Features_Watermark_WatermarkTextBox_Customized.png)
 

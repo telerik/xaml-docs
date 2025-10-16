@@ -39,8 +39,8 @@ The __ExportToPdf__ method uses additional libraries so you need to add referenc
 
 The following example shows how to use the method on a button click:
 
-#### __[C#] Example 1: Usage of Method ExportToPdf__
-{{region gridview-export-pdf-0}}
+__Example 1: Usage of Method ExportToPdf__
+```C#
 	private void btnExport_Click(object sender, RoutedEventArgs e)
 	{
 	    string extension = "pdf";
@@ -67,7 +67,7 @@ The following example shows how to use the method on a button click:
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 ## Export Default Styles
 
@@ -84,8 +84,8 @@ By default the ExportDefaultStyles property is set to false. You can see the res
 
 You can set the __ExportDefaultStyles__ value to __“true”__ and see the result (Figure 2)
 
-#### __[C#] Example 2: Configuring ExportDefaultStyles property__
-{{region gridview-export-pdf-1}}
+__Example 2: Configuring ExportDefaultStyles property__
+```C#
 	gridViewExport.ExportToPdf(stream,
     	new GridViewPdfExportOptions()
 		{
@@ -94,7 +94,7 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 		    ShowGroupFooters = true,
 		    ExportDefaultStyles = true
 		});   
-{{endregion}}
+```
 
 #### __Figure 2: Exporting with ExportDefaultStyles set to True__
 ![Telerik {{ site.framework_name }} DataGrid export-default-styles 4](../images/exportdefaultstyles4.png)
@@ -103,8 +103,8 @@ You can set the __ExportDefaultStyles__ value to __“true”__ and see the resu
 
 __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ property. Its default value is __True__, meaning that the column's width will be automatically fit based on its content. To disable this behavior, its value can be set to __False__.
 
-#### __[C#] Example 3: Setting the AutoFitColumnsWidth Property to False__
-{{region gridview-export-pdf-2}}
+__Example 3: Setting the AutoFitColumnsWidth Property to False__
+```C#
 	this.gridViewExport.ExportToPdf(stream,
     	new GridViewDocumentExportOptions()
 		{
@@ -114,7 +114,7 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 		    ExportDefaultStyles = true,
 		    AutoFitColumnsWidth = false
 		});
-{{endregion}}
+```
 
 #### __Figure 3: Exporting with AutoFitColumnsWidth set to False__
 ![Telerik {{ site.framework_name }} DataGrid autofit-columns-width-Pdf](../images/autofitcolumnswidthPdf.png)
@@ -123,9 +123,9 @@ __GridViewDocumentExportOptions__ expose the boolean __AutoFitColumnsWidth__ pro
 
 By default, the Aggregate results of the __GroupHeaderRow__ will be exported. Note, that this is an operation performed on data level. Hiding the GroupHeaderRow Aggregates in the UI through a Style targeting the __GroupHeaderRow__ element does not affect it. In order to disable the exporting of the GroupHeaderRow Aggregates, you can set the __ShowGroupHeaderColumnAggregates__ of the __GridViewDocumentExportOptions__ to __False__.
 
-#### __[C#] Example 4: Setting ShowGroupHeaderRowAggregates__
+__Example 4: Setting ShowGroupHeaderRowAggregates__
 
-{{region cs-gridview-export-pdf-3}}
+```C#
 	if (dialog.ShowDialog() == true)
             {
                 using (Stream stream = dialog.OpenFile())
@@ -140,7 +140,7 @@ By default, the Aggregate results of the __GroupHeaderRow__ will be exported. No
                         });
                 }
             }
-{{endregion}}
+```
 
 ## Events
 

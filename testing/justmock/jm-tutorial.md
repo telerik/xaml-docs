@@ -22,8 +22,8 @@ Let's start with details about the project's setup and what we have implemented.
 
 #### Sample UserControl Setup
 
-#### __[XAML] Example 1: Defining RadGridView in XAML__
-{{region just-mock-tutorial-0}}
+__Example 1: Defining RadGridView in XAML__
+```XAML
 	<UserControl x:Class="JustMockExampleApp.GridViewUserControl"
 				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -45,11 +45,11 @@ Let's start with details about the project's setup and what we have implemented.
 			</telerik:RadGridView>
 		</Grid>
 	</UserControl>
-{{endregion}}
+```
 
 
-#### __[C#] Example 2: Defining the rows model__
-{{region just-mock-tutorial-1}}
+__Example 2: Defining the rows model__
+```C#
 	public class Order
 	{
 		public int Id { get; set; }
@@ -112,10 +112,10 @@ Let's start with details about the project's setup and what we have implemented.
 			this.Quantity = quantity;
 		}
 	}
-{{endregion}}
+```
 
-#### __[C#] Example 3: Defining code behind__
-{{region just-mock-tutorial-2}}
+__Example 3: Defining code behind__
+```C#
 	public partial class GridViewUserControl : UserControl
 	{
 		private static Random rnd = new Random(0);
@@ -169,7 +169,7 @@ Let's start with details about the project's setup and what we have implemented.
 			return orders;
 		}
 	}  
-{{endregion}}
+```
 
 If you run the project, you are expected to obtain the following result.
 
@@ -202,8 +202,8 @@ Then, make sure that the profiler is enabled.
 
 The **GetData** method returns random data representing Orders collection where each order contains one or multiple products. We want to test whether the **SelectOrdersByProduct** method will select the correct number of rows in **RadGridView** passing a product name, e.g. select all orders that contain "Apple" product. Since we don't know what data will be returned from the **GetData** method, we don't know how many orders will have apples. So we are dependent on the collection. This dependency can be eliminated by forcing the **GetData** method to return a predefined collection where you will know how many apples exactly we have. 
 
-#### __[C#]__
-{{region just-mock-tutorial-3}}
+
+```C#
 	[TestMethod]
 	public void TestMethodSelectRows()
 	{
@@ -252,7 +252,7 @@ The **GetData** method returns random data representing Orders collection where 
 		userControl.SelectOrdersByProduct(productName);
 		Assert.IsTrue(userControl.GridView.SelectedItems.Count == 2);           
 	}
-{{endregion}}
+```
 
 Pay attention to the Mock.**Arrange** method call which will force the **GetData** method calls later in the unit test (Act section) to return a predefined collection where two orders contains apples. It is achieved with the help of the [ReturnsCollection](https://docs.telerik.com/devtools/justmock/advanced-usage/mocking-linq-queries) method. Then, we have full control on the data and we can expect two rows to be selected in the grid after calling the **SelectOrdersByProduct** method. 
 
@@ -260,8 +260,8 @@ Pay attention to the Mock.**Arrange** method call which will force the **GetData
 
 In the above example, the **SelectOrdersByProduct** method internally calls the **ContainsProduct** method of the **Order** class which returns a boolean result indicating whether a product name is contained in an order or not. In other words, we are dependent on the retured result of another method. In order to control our unit test to follow a strict path in its execution, we can mock the result to be always **false** so no rows will be selected in the grid. Thus, we can again test the quality of our **SelectOrdersByProduct** method but eliminate the dependency on the **ContainsProduct** method result.    
 
-#### __[C#]__
-{{region just-mock-tutorial-5}}
+
+```C#
 	[TestMethod]
 	public void TestMethodNoSelection()
 	{
@@ -284,7 +284,7 @@ In the above example, the **SelectOrdersByProduct** method internally calls the 
 		//Assert            
 		Assert.IsTrue(userControl.GridView.SelectedItems.Count == 0);
 	}
-{{endregion}}
+```
 
 In the Arrange section of our unit test we benefit the power of [Future Mocking](https://docs.telerik.com/devtools/justmock/advanced-usage/future-mocking) ensuring that the next **ContainsProduct** method calls will always return **false** no matter what data is actually contained in **RadGridView**. 
 
@@ -294,8 +294,8 @@ Very often a unit test may expect a certain event to be raised in order to valid
 
 Let's consider the example in which we need to test that a certain variable has an assigned value only when the middle row in **RadGridView** becomes current. If the middle row doesn't get current, this variable remains null.
 
-#### __[C#]__
-{{region just-mock-tutorial-6}}
+
+```C#
 	[TestMethod]
 	public void TestMethodRaiseEvent()
 	{
@@ -330,7 +330,7 @@ Let's consider the example in which we need to test that a certain variable has 
 		// Assert 
 		Assert.AreEqual(expected, actual);
 	}
-{{endregion}}
+```
 
 We use [Raise](https://docs.telerik.com/devtools/justmock/basic-usage/mock/raise.html) method in the Act section to raise the RadGridView.**SelectionChanged** event and pass a specific row to it. Before acting we have attached a delegate to the event. Executing the delegate will result in assigning the respective value to actual. Finally, we verify that expected and actual have the same value.
 
@@ -340,8 +340,8 @@ In case of dependencies on private methods in our unit tests, we can benefit fro
 
 In our **Order** class implementation, we have a private **GetTotalAmount** method. Usually, you are not allowed to call it in the unit tests project. However, with JustMock it is possible:
 
-#### __[C#]__
-{{region just-mock-tutorial-7}}
+
+```C#
 	[TestMethod]
 	public void TestPrivateMethodGetTotalAmount()
 	{
@@ -363,7 +363,7 @@ In our **Order** class implementation, we have a private **GetTotalAmount** meth
 		// Assert 
 		Assert.AreEqual(5f, actual);
 	}
-{{endregion}}
+```
 
 With all this demonstrated in this tutorial we only hint at the possibilities that [JustMock](https://www.telerik.com/products/mocking.aspx) offers. It definitely can add a value to any testing project. Happy Mocking!
 

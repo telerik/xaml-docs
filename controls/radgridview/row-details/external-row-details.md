@@ -20,9 +20,9 @@ The __RowDetailsProvider__ takes care to passing the needed data (the data templ
 
 Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid view to __Collapsed__ in order to prevent the row details to show both inside and outside the __RadGridView__.
 
-#### __[XAML] Example 1: Setting the RowDetailsVisibilityMode to Collapsed__
+__Example 1: Setting the RowDetailsVisibilityMode to Collapsed__
 
-{{region xaml-radgridview-row-details-external-row-details_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                 RowDetailsVisibilityMode="Collapsed">
 	    <telerik:RadGridView.RowDetailsTemplate>
@@ -38,21 +38,18 @@ Also, you may want to set the __RowDetailsVisibilityMode__ property of the grid 
 	</telerik:RadGridView>
 	<telerik:DetailsPresenter x:Name="ExternalPresenter"
 	                                  DetailsProvider="{Binding RowDetailsProvider, ElementName=radGridView}" />
-{{endregion}}
+```
 
 
 
-#### __[C#] Example 2: Setting the DetailsProvider__
+__Example 2: Setting the DetailsProvider__
 
-{{region cs-radgridview-row-details-external-row-details_1}}
+```C#
 	this.ExternalPresenter.DetailsProvider = this.radGridView.RowDetailsProvider;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the DetailsProvider__
-
-{{region vb-radgridview-row-details-external-row-details_2}}
+```
+```VB.NET
 	Me.ExternalPresenter.DetailsProvider = Me.radGridView.RowDetailsProvider
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid RowDetails 5](images/RadGridView_RowDetails_5.png)
 

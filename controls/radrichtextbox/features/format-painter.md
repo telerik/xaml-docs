@@ -55,7 +55,7 @@ Note, that these methods work with the current position and selection in the doc
         
 #### [C#] Example 1: Copy the formatting of the selected content and apply it to the first paragraph
 
-{{region radrichtextbox-features-format-painter_0}}
+```C#
 
 	this.radRichTextBox.CopyFormatting();
 	
@@ -69,7 +69,7 @@ Note, that these methods work with the current position and selection in the doc
 	this.radRichTextBox.Document.Selection.AddSelectionEnd(end);
 	
 	this.radRichTextBox.PasteFormatting();
-{{endregion}}
+```
 
 The example uses the **DocumentPosition** and **DocumentSelection** APIs to create different positions and select content. More information about these APIs is available in the [Positioning]({%slug radrichtextbox-features-positioning%}) and [Selection]({%slug radrichtextbox-features-selection%}) topics. 
 

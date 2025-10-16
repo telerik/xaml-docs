@@ -16,13 +16,13 @@ The offset can be set in the __DragDropManager.DragInitialize__ event handler, v
 
 The DragVisualOffset property can be used in combination with the __RelativeStartPoint__ property of DragInitializeEventArgs in order to calculate and set a proper offset. The RelativeStartPoint property gives you the relative coordinates of the mouse cursor when starting a drag operation.
 
-#### __[XAML] Example 1: Setting up the view__
-{{region dragdropmanager-howto-set-dragvisualoffset-0}}
+__Example 1: Setting up the view__
+```XAML
 	<Border x:Name="element" Background="#27A306" Width="100" Height="100" telerik:DragDropManager.AllowDrag="True" AllowDrop="True" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting DragVisualOffset__
-{{region dragdropmanager-howto-set-dragvisualoffset-1}}
+__Example 2: Setting DragVisualOffset__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -36,10 +36,8 @@ The DragVisualOffset property can be used in combination with the __RelativeStar
 
 		e.DragVisualOffset = new Point(e.RelativeStartPoint.X - 25, e.RelativeStartPoint.Y - 25);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting DragVisualOffset__
-{{region dragdropmanager-howto-set-dragvisualoffset-2}}	
+```
+```VB.NET	
     Public Sub New()
         InitializeComponent()
         DragDropManager.AddDragInitializeHandler(Me.element, AddressOf OnElementDragInitialize)
@@ -54,6 +52,6 @@ The DragVisualOffset property can be used in combination with the __RelativeStar
 		
         e.DragVisualOffset = New Point(e.RelativeStartPoint.X - 25, e.RelativeStartPoint.Y - 25)
     End Sub
-{{endregion}}
+```
 
 ![{{ site.framework_name }} Set Drag Visual Offset](images/dragdropmanager-howto-set-dragvisualoffset-0.png)

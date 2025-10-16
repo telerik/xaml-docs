@@ -15,8 +15,8 @@ The `RadSpreadSheet` control uses the [SpreadProcessing library](https://docs.te
 
 The following example showcases how to replace text in the current worksheet via the available API:
 
-#### __[XAML] Defining the RadSpreadsheet and UI elements for thе replace logic__
-{{region radspreadsheet-find-and-replace-0}}
+__Defining the RadSpreadsheet and UI elements for thе replace logic__
+```XAML
     <Grid>
         <Grid.Resources>
             <Style TargetType="telerik:RadWatermarkTextBox">
@@ -49,10 +49,10 @@ The following example showcases how to replace text in the current worksheet via
         </Grid>
         <telerik:RadSpreadsheet x:Name="spreadsheet" Grid.Row="1"/>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Using the avaliable API of the Worksheet class for thе replace logic__
-{{region radspreadsheet-find-and-replace-1}}
+__Using the avaliable API of the Worksheet class for thе replace logic__
+```C#
     private void OnReplaceButtonClicked(object sender, RoutedEventArgs e)
     {
         Worksheet activeWorksheet = this.spreadsheet.ActiveWorksheet;
@@ -71,7 +71,7 @@ The following example showcases how to replace text in the current worksheet via
             RadWindow.Alert("Replace was successful!");
         }
     }
-{{endregion}}
+```
 
 __RadSpreadsheet with a custom find and replace logic__
 

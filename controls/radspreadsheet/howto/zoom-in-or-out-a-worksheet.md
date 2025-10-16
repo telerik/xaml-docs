@@ -27,14 +27,14 @@ By using the [RadWorksheetEditor](https://docs.telerik.com/devtools/wpf/api/tele
 
 #### **C# Example 1: Zoom in**
 
-{{region radspreadsheet-zoom-in-or-out-a-worksheet_0}}
+```C#
 
     this.radSpreadsheet.ActiveWorksheetEditor.ScaleFactor = new Size(2, 2);
-{{endregion}}
+```
 
 #### **C# Example 1: Zoom out**
 
-{{region radspreadsheet-zoom-in-or-out-a-worksheet_1}}
+```C#
 
     this.radSpreadsheet.ActiveWorksheetEditor.ScaleFactor = new Size(0.5, 0.5);
-{{endregion}}
+```

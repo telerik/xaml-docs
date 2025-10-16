@@ -12,8 +12,8 @@ position: 6
 
 You can utilize all CRUD operations by working with the __DataView__ property of the __RadDataServiceDataSource__ control and add, edit or remove entities from the collection which is of type **DataItemCollection**. You can do that either programmatically via the API of the collection or leave the job to __RadGridView__ by binding its __ItemsSource__ to the DataView.
 
-#### __[XAML] Example 1: Bind the DataView collection to RadGridView's ItemsSource__
-{{region raddataservicedatasource-crud_1}}
+__Example 1: Bind the DataView collection to RadGridView's ItemsSource__
+```XAML
     <Grid>
         <telerik:RadDataServiceDataSource Name="customersDataSource" QueryName="Customers" AutoLoad="True">
             <telerik:RadDataServiceDataSource.DataServiceContext>
@@ -22,41 +22,37 @@ You can utilize all CRUD operations by working with the __DataView__ property of
         </telerik:RadDataServiceDataSource>
         <telerik:RadGridView ItemsSource="{Binding DataView, ElementName=customersDataSource}" IsBusy="{Binding IsBusy, ElementName=customersDataSource}" />
     </Grid>
-{{endregion}}
+```
 
 Once you're ready to submit the changes you can call the __SubmitChanges__ method of the control.
 
-#### __[C#] Example 2: Submit the changes in the view__
-{{region raddataservicedatasource-crud_2}}
+__Example 2: Submit the changes in the view__
+```C#
     private void SubmitButton_Click(object sender, RoutedEventArgs e)
     {
         this.CustomersDataSource.SubmitChanges();
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Submit the changes in the view__
-{{region raddataservicedatasource-crud_2}}
+```
+```VB.NET
 	Private Sub SubmitButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Me.CustomersDataSource.SubmitChanges()
 	End Sub
-{{endregion}}
+```
 
 In order to reject the changes and reload the original data from the server you need to call the __RejectChanges__ method of the control.
 
-#### __[C#] Example 3: Submit the changes in the view__
-{{region cs-raddataservicedatasource-crud_3}}
+__Example 3: Submit the changes in the view__
+```C#
     private void RejectButton_Click(object sender, RoutedEventArgs e)
     {
         this.CustomersDataSource.RejectChanges();
     }
-{{endregion}}
-
-#### __[VB.NET] Example 3: Submit the changes in the view__
-{{region vb-raddataservicedatasource-crud_3}}
+```
+```VB.NET
 	Private Sub RejectButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 		Me.CustomersDataSource.RejectChanges()
 	End Sub
-{{endregion}}
+```
 
 ## See Also
 * [Creating the Data-bound Controls]({%slug raddataservicedatasource-getting-started-creating-the-data-bound-controls%})

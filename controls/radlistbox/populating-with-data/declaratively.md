@@ -14,18 +14,18 @@ This tutorial will walk you through the common task of populating __RadListBox__
 
 Here is a regular __RadListBox__ declaration without items:
 
-#### __[XAML]  Declaring RadListBox__
+__Declaring RadListBox__
 
-{{region xaml-radlistbox-populating-with-data-declaratively_0}}
+```XAML
 	<telerik:RadListBox  Width="200">			
 	</telerik:RadListBox>
-{{endregion}}
+```
 
 In order to add listbox items you need to use the __RadListBox__'s __Items__ property. The Items property is an ItemCollection which contains your __RadListBoxItems__. For example, insert the following lines to the declaration of your __RadListBox__ and see how it will change.
 
-#### __[XAML]  Populating RadListBox with items__
+__Populating RadListBox with items__
 
-{{region xaml-radlistbox-populating-with-data-declaratively_1}}
+```XAML
 	<telerik:RadListBox  Width="200">
 		<telerik:RadListBoxItem Content="Australia" />
 		<telerik:RadListBoxItem Content="Brazil" />
@@ -34,7 +34,7 @@ In order to add listbox items you need to use the __RadListBox__'s __Items__ pro
 		<telerik:RadListBoxItem Content="England" />
 		<telerik:RadListBoxItem Content="Germany" />
 	</telerik:RadListBox>
-{{endregion}}
+```
 
 ![radlistbox populatingwithdata declaratively](images/radlistbox_populatingwithdata_declaratively.png)
 

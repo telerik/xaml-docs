@@ -32,10 +32,10 @@ The `Title` and `TitleTemplate` properties of the RadPane element allow you to i
 
 To change this behavior, you can manually increase the drag threshold by setting the `CaptionHeight` property of the `ToolWindow` element.
 
-#### __[XAML] Changing the CaptionHeight property__
-{{region kb-docking-caption-height-of-toolwindow-titlebar-0}}
+__Changing the CaptionHeight property__
+```XAML
 	<!-- If you use NoXaml dlls set the BasedOn property of the Style: BasedOn="{StaticResource ToolWindowStyle}" --> 
 	<Style TargetType="telerik:ToolWindow">
 	    <Setter Property="CaptionHeight" Value="60"/>
 	</Style>
-{{endregion}}
+```

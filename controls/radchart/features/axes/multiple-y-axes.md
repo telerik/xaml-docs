@@ -30,9 +30,9 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 
 * Third, for the second series mapping, __SeriesMapping.SeriesDefinition.AxisName__ is set to the name of the additionally added Y axis - "AxisY_South".
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-multiple-y-axes_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart">
 	    <telerik:RadChart.SeriesMappings>
 	        <telerik:SeriesMapping CollectionIndex="0" LegendLabel="North [MW]">
@@ -71,13 +71,13 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-multiple-y-axes_1}}
+
+```C#
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	//....
 	radChart.DefaultView.ChartArea.AxisY.Title = "Megawatt [MW]";
@@ -104,13 +104,8 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Value", DataPointMember.YValue ) );
 	radChart.SeriesMappings.Add( seriesMapping );
 	radChart.ItemsSource = this.DataContext;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-multiple-y-axes_2}}
+```
+```VB.NET
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
 	radChart.DefaultView.ChartArea.AxisY.Title = "Megawatt [MW]"
@@ -137,7 +132,7 @@ The following example demonstrates how to add another __Y-Axis__ and link it to 
 	seriesMapping.ItemMappings.Add(New ItemMapping("Value", DataPointMember.YValue))
 	radChart.SeriesMappings.Add(seriesMapping)
 	radChart.ItemsSource = Me.DataContext
-{{endregion}}
+```
 
 
 

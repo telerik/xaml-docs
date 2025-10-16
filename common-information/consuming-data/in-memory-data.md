@@ -20,8 +20,8 @@ The purpose of this tutorial is to show you how to create in-memory data and use
 
 The following example shows how to setup a basic data model along with a view model.
 
-#### __[C#] Creating in-memory data__  
-{{region consuming-data-in-memory-data_0}}
+__Creating in-memory data__  
+```C#
 	public class Category
     {
         public string CategoryName { get; internal set; }
@@ -67,11 +67,8 @@ The following example shows how to setup a basic data model along with a view mo
             return categories;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Creating in-memory data__
-
-{{region consuming-data-in-memory-data_1}}
+```
+```VB.NET
 	Public Class Category
 		Private privateCategoryName As String
 		Public Property CategoryName() As String
@@ -139,14 +136,14 @@ The following example shows how to setup a basic data model along with a view mo
 		End Function
 	End Class
 
-{{endregion}}
+```
 
 ## Setting In-Memory Data as DataSource In {{ site.framework_name }} Application
 
 You can set the in-memory data as a data source in xaml or in code.
 
-#### __[XAML] Setting the data source in xaml__  
-{{region consuming-data-in-memory-data_2}}
+__Setting the data source in xaml__  
+```XAML
     <Grid>
 	  	<Grid.DataContext>
             <local:ViewModel />
@@ -155,24 +152,22 @@ You can set the in-memory data as a data source in xaml or in code.
                              ItemsSource="{Binding Categories}" 
                              DisplayMemberPath="CategoryName"/>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Setting the data source in code__  
-{{region consuming-data-in-memory-data_3}}
+__Setting the data source in code__  
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
 		this.radTreeView.ItemsSource = new ViewModel().Categories;
 	}
-{{endregion}}
-
-#### __[VB.NET] Setting the data source in code__  
-{{region consuming-data-in-memory-data_4}}
+```
+```VB.NET
 	Public Sub New()
 		InitializeComponent()
 		Me.radTreeView.ItemsSource = (New ViewModel()).Categories
 	End Sub
-{{endregion}}
+```
 
 ## See Also  
 

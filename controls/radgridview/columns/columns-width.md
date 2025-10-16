@@ -22,26 +22,26 @@ You can set RadGridView's **ColumnWidth** property which will affect all columns
 
 #### **[XAML] Example 1: Setting RadGridView's ColumnWidth**
 
-{{region xaml-gridview-setting-columns-width_0}}
+```XAML
 
 		<telerik:RadGridView Name="clubsGrid" 
                              ItemsSource="{Binding Clubs}"
                              ColumnWidth="*">	
-{{endregion}}
+```
 
 #### **[C#] Example 2: Setting RadGridView's ColumnWidth in code**
 
-{{region cs-gridview-setting-columns-width_1}}
+```C#
 
 	this.clubsGrid.ColumnWidth = new Telerik.Windows.Controls.GridViewLength(1, Telerik.Windows.Controls.GridViewLengthUnitType.Star);
-{{endregion}}
+```
 
 #### **[VB.NET] Example 2: Setting RadGridView's ColumnWidth in code**
 
-{{region vb-gridview-setting-columns-width_2}}
+```VB.NET
 
 	Me.clubsGrid.ColumnWidth = New Telerik.Windows.Controls.GridViewLength(1, Telerik.Windows.Controls.GridViewLengthUnitType.Star)
-{{endregion}}
+```
 
 There are several values that you can assign to the property:
 
@@ -62,25 +62,25 @@ Apart from setting the width for all the columns within the **RadGridView**, you
 
 #### **[XAML] Example 3: Setting the width of a specific column**
 
-{{region xaml-gridview-setting-columns-width_3}}
+```XAML
 
 		<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
                                     Width="Auto" />	
-{{endregion}}
+```
 
 #### **[C#] Example 4: Setting the width of a specific column in code**
 
-{{region cs-gridview-setting-columns-width_4}}
+```C#
 
 	this.clubsGrid.Columns[0].Width = Telerik.Windows.Controls.GridViewLength.Auto;	
-{{endregion}}
+```
 
 #### **[VB.NET] Example 4: Setting the width of a specific column in code**
 
-{{region vb-gridview-setting-columns-width_5}}
+```VB.NET
 
 	Me.clubsGrid.Columns(0).Width = Telerik.Windows.Controls.GridViewLength.Auto	
-{{endregion}}
+```
 
 The values that could be assigned to the property are enumerated below:
 

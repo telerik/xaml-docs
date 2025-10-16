@@ -15,14 +15,14 @@ The __RadNavigationViewItem__ allows you to display a custom icon in its templat
 
 Since the __Icon__ property is of type object, you can set it to an image, glyph or any custom control. __Example 1__ demonstrates how you can set the Icon of __RadNavigationViewItem__ to a [RadGlyph]({%slug common-styling-appearance-radglyph%}).
 
-#### __[XAML] Example 1: Setting the Icon of a RadNavigationViewItem__
-{{region xaml-radnavigationview-item-icon-0}}
+__Example 1: Setting the Icon of a RadNavigationViewItem__
+```XAML
     <telerik:RadNavigationViewItem Content="Bookmarks" Width="200" Height="50" >
         <telerik:RadNavigationViewItem.Icon>
             <telerik:RadGlyph Glyph="&#xe303;" FontSize="16"/>
         </telerik:RadNavigationViewItem.Icon>
     </telerik:RadNavigationViewItem>
-{{endregion}}
+```
 
 #### __Figure 1: Result from Example 1 in the Office2016 theme__
 ![RadNaviationViewItem Icon](images/NavigationViewItem_Icon.png)
@@ -36,8 +36,8 @@ This section will demonstrate how this property can be used in a databinding sce
 
 First we will define a model for our items and a viewmodel which will hold a collection of those models. This is demonstrated in __Example 2__.
 
-#### __[C#] Example 2: Defining a model and a viewmodel__
-{{region cs-radnavigationview-item-icon-1}}
+__Example 2: Defining a model and a viewmodel__
+```C#
     public class MainViewModel
     {
         private readonly string[] glyphStrings = new string[] { "&#xe501;", "&#xe13d;", "&#xe500;" };
@@ -61,10 +61,8 @@ First we will define a model for our items and a viewmodel which will hold a col
         public string Title { get; set; }
         public string IconGlyph { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining a model and a viewmodel__
-{{region vb-radnavigationview-item-icon-2}}
+```
+```VB.NET
     Public Class MainViewModel
 		Private ReadOnly glyphStrings() As String = { "&#xe501;", "&#xe13d;", "&#xe500;" }
 
@@ -87,12 +85,12 @@ First we will define a model for our items and a viewmodel which will hold a col
 		Public Property Title() As String
 		Public Property IconGlyph() As String
 	End Class
-{{endregion}}
+```
 
 After that we can setup our __RadNavigationView__ and set its ItemsSource to an instance of our viewmodel. We also need to create a style targeting __RadNavigationViewItem__ in order to bind the properties of the NavigationItemModel class. Note, that a [StringToGlyphConverter]({%slug common-converters%}#stringtoglyphconverter) is used to convert the IconGlyph string property to a glyph. 
 
-#### __[XAML] Example 3: Setting up the view__
-{{region xaml-radnavigationview-item-icon-3}}
+__Example 3: Setting up the view__
+```XAML
     <Window.Resources>
         <local:MainViewModel x:Key="ViewModel" />
         <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />
@@ -115,7 +113,7 @@ After that we can setup our __RadNavigationView__ and set its ItemsSource to an 
     <Grid>
         <telerik:RadNavigationView DataContext="{StaticResource ViewModel}" ItemsSource="{Binding Items}" PaneHeader="Header" />
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 2: Result from Example 3 in the Office2016 theme__
 ![RadNavigationViewItems with Icons set through IconTemplate](images/NavigationViewItem_IconTemplate.png)
@@ -128,8 +126,8 @@ RadNavigationViewItem exposes an **IconTemplateSelector** property which allows 
 
 >For the purposes of this example, let's assume that the last string of the **glyphStrings** array from **Example 2** is changed to **&#x00fc**.
 
-#### __[C#] Example 4: Defining the IconTemplateSelector__
-{{region cs-radnavigationview-item-icon-4}}
+__Example 4: Defining the IconTemplateSelector__
+```C#
     public class IconTemplateSelector : DataTemplateSelector
     {
         public DataTemplate TelerikWebUITemplate { get; set; }
@@ -148,10 +146,8 @@ RadNavigationViewItem exposes an **IconTemplateSelector** property which allows 
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Defining the IconTemplateSelector__
-{{region vb-radnavigationview-item-icon-4}}
+```
+```VB.NET
     Public Class IconTemplateSelector
         Inherits DataTemplateSelector
 
@@ -167,10 +163,10 @@ RadNavigationViewItem exposes an **IconTemplateSelector** property which allows 
                 End If
             End Function
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Example 5: Using the IconTemplateSelector in XAML__
-{{region xaml-radnavigationview-item-icon-5}}
+__Example 5: Using the IconTemplateSelector in XAML__
+```XAML
     <Window.Resources>
         <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />
         <Style TargetType="telerik:RadNavigationViewItem" BasedOn="{StaticResource RadNavigationViewItemStyle}">
@@ -194,7 +190,7 @@ RadNavigationViewItem exposes an **IconTemplateSelector** property which allows 
             </Setter>
         </Style>
     </Window.Resources>
-{{endregion}}
+```
 
 #### __Figure 3: Result from Example 5 in the Office2016 theme__
 ![RadNavigationViewItems with Icons set through an IconTemplateSelector](images/NavigationViewItem_IconTemplateSelector.png)
@@ -203,10 +199,10 @@ RadNavigationViewItem exposes an **IconTemplateSelector** property which allows 
 
 To show or hide the icon of RadNaviationViewItem, set its __IconVisibility__ property.
 
-#### __[XAML] Example 6: Hiding the icon__
-{{region xaml-radnavigationview-item-icon-6}}
+__Example 6: Hiding the icon__
+```XAML
     <telerik:RadNavigationViewItem IconVisibility="Collapsed" />
-{{endregion}}
+```
 
 ## See Also
 

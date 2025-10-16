@@ -53,8 +53,8 @@ The control exposes a few properties that allow you to set a different content f
 
 > Each of the content properties has a corresponding content template property - __SmallContentTemplate__, __ContentTemplate__ and __LargeContentTemplate__
 
-#### __[XAML] Example 1: RadFluidContentControl definition in XAML__
-{{region fluidcontentcontrol-getting-started-0}}
+__Example 1: RadFluidContentControl definition in XAML__
+```XAML
 	<telerik:RadFluidContentControl>
 		<telerik:RadFluidContentControl.SmallContent>
 			<Border Background="Bisque">
@@ -72,7 +72,7 @@ The control exposes a few properties that allow you to set a different content f
 			</Border>
 		</telerik:RadFluidContentControl.LargeContent>
 	</telerik:RadFluidContentControl>
-{{endregion}}
+```
 
 #### __Figure 1: RadFluidContentControl with size 100,100__
 ![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with size 100,100](images/fluidcontentcontrol-getting-started-0.png)
@@ -88,8 +88,8 @@ To enable the size based mechanism set the __ContentChangeMode__ property of Rad
 
 >tip The size where the Normal content is visible is the size between NormalToSmallThreshold and NormalToLargeThreshold.
 
-#### __[XAML] Example 2: Setting thresholds__
-{{region fluidcontentcontrol-getting-started-1}}
+__Example 2: Setting thresholds__
+```XAML
 	 <telerik:RadFluidContentControl NormalToSmallThreshold="100,100" 
 									 NormalToLargeThreshold="300,300">
             <telerik:RadFluidContentControl.SmallContent>
@@ -108,7 +108,7 @@ To enable the size based mechanism set the __ContentChangeMode__ property of Rad
                 </Border>
             </telerik:RadFluidContentControl.LargeContent>
         </telerik:RadFluidContentControl>
-{{endregion}}
+```
 
 > The default ContentChangeMode default value is set to Automatic.
 
@@ -117,8 +117,8 @@ To enable the size based mechanism set the __ContentChangeMode__ property of Rad
 
 To enable the manual mechanism set the __ContentChangeMode__ property of RadFluidContentControl to __Manual__. This allows you to manually set the __State__ property of the control, thus changing the visible content.
 
-#### __[XAML] Example 2: Setting the content state manually__
-{{region fluidcontentcontrol-getting-started-2}}
+__Example 2: Setting the content state manually__
+```XAML
 	<telerik:RadFluidContentControl ContentChangeMode="Manual" State="Large">
 		<telerik:RadFluidContentControl.SmallContent>
 			<Border Background="Bisque">
@@ -136,7 +136,7 @@ To enable the manual mechanism set the __ContentChangeMode__ property of RadFlui
 			</Border>
 		</telerik:RadFluidContentControl.LargeContent>
 	</telerik:RadFluidContentControl>
-{{endregion}}
+```
 
 #### __Figure 3: RadFluidContentControl with large content manually set via the State property__
 ![{{ site.framework_name }} RadFluidContentControl RadFluidContentControl with large content manually set via the State property](images/fluidcontentcontrol-getting-started-2.png)

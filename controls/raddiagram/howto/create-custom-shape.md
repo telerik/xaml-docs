@@ -14,7 +14,7 @@ This tutorial will guide you through the task of creating a custom shape.
 
 In order to create a custom shape control, you need to define a custom control deriving from the __RadDiagramShapeBase__ or the __RadDiagramShape__ class.	
 
->With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-tafe-types-and-assemblies).
+>With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-safe-types-and-assemblies).
 
 >When deciding which class to inherit from, you need to keep in mind that the __RadDiagramShapeBase__ is the base class of the Diagramming shapes and therefore the __RadDiagramShape__ class derives from it. This is why when you need to create a custom shape, it's common to inherit the base class. However if you need a custom shape exposing a __Geometry__ property, then you'll need to derive from the __RadDiagramShape__ class.		  
 
@@ -26,37 +26,7 @@ Let's take this step by step:
 
 	Name the new control *CustomShape* and click OK. This action will create two new files in your application - a class file and a Generic.xaml file with the default style of your custom control.
 	
-	{% if site.site_name == 'Silverlight' %}
-	#### __C#__	
-	{{region raddiagram-howto-create-custom-shape-0}}
-		public class CustomShape : Control
-		{
-			public CustomShape()
-			{
-				this.DefaultStyleKey = typeof(CustomShape);
-			}
-		}
-	{{endregion}}
-	
-	#### __XAML__
-	{{region raddiagram-howto-create-custom-shape-1}}
-		<Style TargetType="{x:Type local:CustomShape}">
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="{x:Type local:CustomShape}">
-						<Border Background="{TemplateBinding Background}"
-								BorderBrush="{TemplateBinding BorderBrush}"
-								BorderThickness="{TemplateBinding BorderThickness}">
-						</Border>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>				
-	{{endregion}}
-	{% endif %}
-	{% if site.site_name == 'WPF' %}	
-	#### __C#__	
-	{{region raddiagram-howto-create-custom-shape-2}}
+	```C#
 		public class CustomShape : Control
 		{
 			static CustomShape()
@@ -64,10 +34,9 @@ Let's take this step by step:
 				DefaultStyleKeyProperty.OverrideMetadata(typeof(CustomShape), new FrameworkPropertyMetadata(typeof(CustomShape)));
 			}
 		}	
-	{{endregion}}
-
-	#### __XAML__
-	{{region raddiagram-howto-create-custom-shape-3}}
+	```
+	
+	```XAML
 		<Style TargetType="{x:Type local:CustomShape}">
 			<Setter Property="Template">
 				<Setter.Value>
@@ -80,23 +49,20 @@ Let's take this step by step:
 				</Setter.Value>
 			</Setter>
 		</Style>
-	{{endregion}}
-	{% endif %}
+	```
 
 * Change the type of the __CustomShape__ class to derive from __RadDiagramShapeBase__:			
 
-	#### __C#__
-	{{region raddiagram-howto-create-custom-shape-4}}
+	```C#
 		public class CustomShape : Telerik.Windows.Controls.Diagrams.RadDiagramShapeBase
 		{
 		  ...
 		}
-	{{endregion}}
+	```
 	
 * Modify the default __ControlTemplate__ of the __CustomShape__ to better fit your needs. In this tutorial we will create a radio station loading shape which displays the name and frequency of a radio station. It also indicates the current loading process and the rating of the station. Below you can find the custom __Style__ for that shape:			
 
-	#### __XAML__
-	{{region raddiagram-howto-create-custom-shape-5}}
+	```XAML
 		<Style TargetType="local:CustomShape">
 			<Setter Property="BorderThickness" Value="4" />
 			<Setter Property="BorderBrush" Value="#6C666666" />
@@ -204,16 +170,15 @@ Let's take this step by step:
 				</Setter.Value>
 			</Setter>
 		</Style>	
-	{{endregion}}		
+	```		
 		
 * Now that your custom control is defined and its __ControlTemplate__ is customized, you can use it as a shape in your Diagramming drawing canvas:			
 
-	#### __XAML__
-	{{region raddiagram-howto-create-custom-shape-6}}
+	```XAML
         <telerik:RadDiagram>
             <local:CustomShape />
         </telerik:RadDiagram>			  
-	{{endregion}}
+	```
 	
 	>The __local__ alias points to the namespace of the __CustomShape__ class. 
 	
@@ -224,8 +189,7 @@ Please note that in case you need to bind the __RadDiagram__ control to a collec
 
 > In scenarios where you want to create custom container shapes, you can override the GetShapeContainerForItemOverridem method of the RadDiagram. Inside the method, you can return your custom container shape.
 
-#### __C#__
-{{region raddiagram-howto-create-custom-shape-7}}
+```C#
 	public class CustomDiagram : RadDiagram
 	{
 		protected override bool IsItemItsOwnShapeContainerOverride(object item)
@@ -238,10 +202,8 @@ Please note that in case you need to bind the __RadDiagram__ control to a collec
 			return new CustomShape();
 		}
 	}			  
-{{endregion}}
-			  
-#### __VB.NET__	
-{{region raddiagram-howto-create-custom-shape-8}}
+```
+```VB.NET
 	Public Class CustomDiagram
 		Inherits RadDiagram
 		Protected Overrides Function IsItemItsOwnShapeContainerOverride(item As Object) As Boolean
@@ -252,7 +214,7 @@ Please note that in case you need to bind the __RadDiagram__ control to a collec
 			Return New CustomShape()
 		End Function
 	End Class		  
-{{endregion}}
+```
 	
 You can download a sample project from our {% if site.site_name == 'Silverlight' %}[CodeLibrary](http://www.telerik.com/community/code-library/silverlight/diagrams/how-to-create-a-custom-shape.aspx){% endif %}{% if site.site_name == 'WPF' %}[CodeLibrary](http://www.telerik.com/community/code-library/wpf/diagrams/how-to-create-a-custom-shape.aspx){% endif %}.		
 

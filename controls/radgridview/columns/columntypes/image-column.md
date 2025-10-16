@@ -22,9 +22,9 @@ Here is a list of the most important properties.
 
 >tipYou can bind GridViewImageColumn to a __string or a byte[] data__ via DataMemberBinding property.
 
-#### __[XAML] Example 1: Define GridViewImageColumn in XAML.__
+__Example 1: Define GridViewImageColumn in XAML.__
 
-{{region xaml-radgridview-columns-columntypes-image-column_0}}
+```XAML
 	<telerik:RadGridView x:Name="radGridView"
 	                 AutoGenerateColumns="False">
 	    <telerik:RadGridView.Columns>
@@ -32,7 +32,7 @@ Here is a list of the most important properties.
 	        <telerik:GridViewImageColumn DataMemberBinding="{Binding ImageUrl}" ImageStretch="None" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __The resulting RadGridView__  
 

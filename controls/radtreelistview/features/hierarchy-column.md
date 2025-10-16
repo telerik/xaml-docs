@@ -16,8 +16,8 @@ The RadTreeListView control allows you to control the both the column that conta
 
 By default, the first column contains the tree view UI. In order to change the column which holds it, you can set the `HierarchyColumnIndex` property to the desired value. The default value of this property is __0__.
 
-#### __[XAML] Changing the column that contains the tree view UI__
-{{region radtreelistview-features-hierarchy-column_0}}
+__Changing the column that contains the tree view UI__
+```XAML
 	<telerik:RadTreeListView x:Name="radTreeListView"
 	                            AutoGenerateColumns="False"
 	                            HierarchyColumnIndex="1">
@@ -32,7 +32,7 @@ By default, the first column contains the tree view UI. In order to change the c
 	                                    Header="Count" />
 	    </telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 __RadTreeListView with the tree view UI shown on the second column__
 
@@ -42,8 +42,8 @@ __RadTreeListView with the tree view UI shown on the second column__
 
 The RadTreeListView control allows you to control the indent of the hierarchy button via the `HierarchyIndent` property. The default value of this property is __20__.
 
-#### __[XAML] Changing the indent of the hierarchy button__
-{{region radtreelistview-features-hierarchy-column_1}}
+__Changing the indent of the hierarchy button__
+```XAML
 	<telerik:RadTreeListView x:Name="radTreeListView" 
 	                         AutoGenerateColumns="False" 
 	                         HierarchyIndent="40"
@@ -58,7 +58,7 @@ The RadTreeListView control allows you to control the indent of the hierarchy bu
 	                                Header="Count" />
 	    </telerik:RadTreeListView.Columns>
 	</telerik:RadTreeListView>
-{{endregion}}
+```
 
 __RadTreeListView with increased indent on the hierarchy button__
 

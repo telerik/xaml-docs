@@ -19,27 +19,22 @@ When __RadChart__ has no data to display, then a text message is shown in each _
 
 If you don't want to use __No Data__ message, just set __ChartArea.IsNoDataMessageEnabled__ to __False__ (which, by default is set to __True__). In this case, the message and the border will be hidden.
 
-#### __XAML__
 
-{{region xaml-radchart-features-no-data-control_0}}
+
+```XAML
 	<telerik:ChartArea NoDataString="Custom 'No Data' message" />
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-no-data-control_1}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.NoDataString = "Custom 'No Data' message";
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-no-data-control_2}}
+```
+```VB.NET
 	Me.telerikChart.DefaultView.ChartArea.NoDataString = "Custom 'No Data' message"
-{{endregion}}
+```
 
 
 

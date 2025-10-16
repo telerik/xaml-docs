@@ -32,9 +32,9 @@ Besides the __HorizontalFrom/To__ and __VerticalFrom/To__ properties that are us
 
 A __CartesianCustomLineAnnotation__ is defined like this:        
 
-#### __XAML__
 
-{{region radchartview_annotations_customline_0}}
+
+```XAML
 	<telerik:CartesianCustomLineAnnotation HorizontalFrom="0.5" VerticalFrom="1.5" 
 	                                       HorizontalTo="1.5" VerticalTo="0.0"/>
 	
@@ -49,7 +49,7 @@ A __CartesianCustomLineAnnotation__ is defined like this:
 	                                       Stroke="Orange"
 	                                       StrokeThickness="2"
 	                                       ZIndex="-200"/>
-{{endregion}}
+```
 
 By default, the __Stroke__ of the CustomLine is *#FF828282*.        
 

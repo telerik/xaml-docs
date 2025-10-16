@@ -22,11 +22,11 @@ This behavior can be controlled via the __InputMode__ property. The default valu
 
 You can change the value of this property in XAML as shown in this snippet:
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-input-modes_0}}
+
+```XAML
 	<telerik:RadDateTimePicker InputMode="DatePicker"/>
-{{endregion}}
+```
 
 Here is the result:
 
@@ -34,11 +34,11 @@ Here is the result:
 
 Similarly if you decide to have only the time picker you can choose the TimePicker input mode:
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-input-modes_1}}
+
+```XAML
 	<telerik:RadDateTimePicker InputMode="TimePicker"/>
-{{endregion}}
+```
 
 This leads to the following result:
 

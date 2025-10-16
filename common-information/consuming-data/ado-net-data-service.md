@@ -10,15 +10,15 @@ position: 2
 
 # Consuming WCF Data Service
 
-The purpose of this tutorial is to show you how to make a call to an ADO.NET Data Service in the context of a {% if site.site_name == 'Silverlight' %}Silverlight{% endif %}{% if site.site_name == 'WPF' %}WPF{% endif %} application. The following common tasks will be examined:
+The purpose of this tutorial is to show you how to make a call to an ADO.NET Data Service in the context of a WPF application. The following common tasks will be examined:
 
->tip You can check the Telerik [RadDataServiceDataSource]({%slug %}) which provides seamless integration between an user interface and data coming from a WCF Data Service.
+>tip You can check the Telerik [RadDataServiceDataSource]({%slug raddataservicedatasource-overview%}) which provides seamless integration between an user interface and data coming from a WCF Data Service.
 
 * Adding a reference.
 
 * Creating a new instance of the exposed entity.
 
-* Making {% if site.site_name == 'Silverlight' %}asynchronous{% endif %} call to the service and consuming the service result.
+* Making call to the service and consuming the service result.
 
 This tutorial will use the __Northwind__ database, which can be accessed from [http://services.odata.org/Northwind/Northwind.svc](http://services.odata.org/v4/Northwind/Northwind.svc)
 
@@ -45,9 +45,9 @@ Once the ADO.NET data service is added all needed assemblies will be included in
 
 ## Creating New Instance of the exposed Entities
 
-#### __[C#] Example 1: Create new instance of the NorthwindEntities__
+__Example 1: Create new instance of the NorthwindEntities__
 
-{{region consuming-data-ado-net-data-service_0}}
+```C#
 	public partial class MainWindow : Window
     {
         public MainWindow()
@@ -56,10 +56,8 @@ Once the ADO.NET data service is added all needed assemblies will be included in
             NorthwindEntities serviceClient = new NorthwindEntities(new Uri("http://services.odata.org/Northwind/Northwind.svc"));
         }
     }
-{{endregion}}
-	
-#### __[VB.NET] Example 1: Create new instance of the NorthwindEntities__
-{{region consuming-data-ado-net-data-service_1}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 		Inherits Window
 
@@ -68,7 +66,7 @@ Once the ADO.NET data service is added all needed assemblies will be included in
 			Dim serviceClient As NorthwindEntities = New NorthwindEntities(New Uri("http://services.odata.org/Northwind/Northwind.svc"))
 		End Sub
 	End Class
-{{endregion}}
+```
 
 __NorthwindEntities__ represents the runtime context of a given data service. While data services themselves are stateless, the context is not, so state on the client is maintained between interactions in order to support features such as identity resolution and optimistic concurrency.  
 
@@ -76,9 +74,7 @@ __NorthwindEntities__ represents the runtime context of a given data service. Wh
 
 Making a call to an ADO.NET Data Service is a simple process. Here is a sample code, demonstrating how to load all categories from the Categories table in the Northwind database: 
 
-#### __C#__
-
-{{region consuming-data-ado-net-data-service_4}}
+```C#
 	public partial class MainWindow : Window
 	{
 		public ObservableCollection<Category> Categories { get; set; }
@@ -92,11 +88,8 @@ Making a call to an ADO.NET Data Service is a simple process. Here is a sample c
 			}
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region consuming-data-ado-net-data-service_5}}
+```
+```VB.NET
 	Public Partial Class MainWindow
 		Inherits Window
 
@@ -111,4 +104,4 @@ Making a call to an ADO.NET Data Service is a simple process. Here is a sample c
 			Next
 		End Sub
 	End Class
-{{endregion}}
+```

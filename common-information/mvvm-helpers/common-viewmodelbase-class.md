@@ -13,7 +13,7 @@ position: 5
 The `ViewModelBase` abstract class is designed to serve as a base class for all the model classes in your application. It provides support for property change notifications. Instead of implementing the `INotifyPropertyChanged` interface in each individual view model, you can directly inherit `ViewModelBase`. 
 
 #### **[C#] Example 1: Custom ViewModel that inherits the abstract ViewModelBase class**
-{{region common-viewmodelbase-class-0}}
+```C#
     using Telerik.Windows.Controls;
     public class MyViewModel : ViewModelBase
     {
@@ -45,14 +45,14 @@ The `ViewModelBase` abstract class is designed to serve as a base class for all 
             }
         }
     }
-{{endregion}}
+```
 
 As shown in the previous example the `OnPropertyChanged` method gives a couple of overloads that can be used.
 
 The `ViewModelBase` class supports an additional approach for notifying the property change, via the the [CallerMemberName](https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callermembernameattribute(v=vs.110).aspx) attribute which is implemented in the `RaisePropertyChanged` method.
 
 #### **[C#] Example 2: Using the CallerMemberName attribute**:
-{{region common-viewmodelbase-class-1}}
+```C#
         public object SelectedItem
         {
             get { return this.selectedItem; }
@@ -65,7 +65,7 @@ The `ViewModelBase` class supports an additional approach for notifying the prop
                 }
             }
         }
-{{endregion}}
+```
 
 ## See Also
 * [EventToCommandBehavior]({%slug common-event-to-command-behavior%})

@@ -24,18 +24,6 @@ The __InformationLayer__ allows you to display additional data on top of the dis
 
 If elements are grouped into several regions on the map then it is recommended to use several information layers (one per region).
 
-This topic will make you familiar with the following:
-
-* [InformationLayer Item Types](#informationlayer-item-types)
-
-* [Adding an Item](#adding-an-item)
-
-* [Positioning an Item](#positioning-an-item)
-
-* [Binding Items](#binding-items)
-
-* [InformationLayer and InitializedCompleted](#InformationLayer_and_InitializedCompleted)
-
 ## InformationLayer Item Types
 
 The __InformationLayer__ allows you to display the following items:        
@@ -52,8 +40,8 @@ The __InformationLayer__ allows you to display the following items:
 
 In order to add an item to the __InformationLayer__, the only thing you have to do is to put it inside the __InformationLayer__'s tag. Here is an example:        
 
-#### __XAML__
-{{region radmap-features-information-layer_0}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -66,12 +54,12 @@ In order to add an item to the __InformationLayer__, the only thing you have to 
 	                    Fill="Transparent" />
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 If you want to add more than one element, you just have to place it after the previous element. Here is an example:
 
-#### __XAML__
-{{region radmap-features-information-layer_1}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -90,7 +78,7 @@ If you want to add more than one element, you just have to place it after the pr
 	                    Fill="Transparent" />
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 ## Positioning an Item
 
@@ -111,8 +99,8 @@ Here is an example for an __Ellipse__, positioned above Sofia, Bulgaria and visi
 <!-- -->
 >Note that the location of the element on the map coincides with its top left corner, not with its center. To change the position of the element towards the location you can use its __HorizontalAlignment__ or __VerticalAlignment__ properties or use the __HotSpot__ feature. To learn how read [here]({%slug radmap-features-hot-spots%}).          
 
-#### __XAML__
-{{region radmap-features-information-layer_2}}
+
+```XAML
 	<telerik:RadMap x:Name="radMap"
 	                Width="600"
 	                Height="480">
@@ -130,7 +118,7 @@ Here is an example for an __Ellipse__, positioned above Sofia, Bulgaria and visi
 	                    VerticalAlignment="Center" />
 	    </telerik:InformationLayer>
 	</telerik:RadMap>
-{{endregion}}
+```
 
 Here is a snapshot of the result:
 

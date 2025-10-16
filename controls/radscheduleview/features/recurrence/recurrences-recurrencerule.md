@@ -48,9 +48,9 @@ The __RecurrenceRule__ class has only one public constructor, which accepts a __
 
 >tipThe __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.        
 
-#### __C#__
 
-{{region radscheduleview-features-recurrences-recurrencerule_0}}
+
+```C#
 	var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
 	var fitnessAppointment = new Appointment()
 	{
@@ -65,11 +65,8 @@ The __RecurrenceRule__ class has only one public constructor, which accepts a __
 	    DaysOfWeekMask = RecurrenceDays.Monday | RecurrenceDays.Wednesday | RecurrenceDays.Friday
 	};        
 	fitnessAppointment.RecurrenceRule = new RecurrenceRule(recurrencePattern);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-features-recurrences-recurrencerule_1}}
+```
+```VB.NET
 	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 	Dim fitnessAppointment = New Appointment() With {
 	    .Start = startDate,
@@ -82,7 +79,7 @@ The __RecurrenceRule__ class has only one public constructor, which accepts a __
 	    .DaysOfWeekMask = RecurrenceDays.Monday Or RecurrenceDays.Wednesday Or RecurrenceDays.Friday
 	}
 	fitnessAppointment.RecurrenceRule = New RecurrenceRule(recurrencePattern)
-{{endregion}}
+```
 
 The above example shows you how to create a recurrence pattern, then how to associate it with a recurrence rule. Finally the recurrence rule is assigned to an appointment.
 
@@ -104,9 +101,9 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 * Create a new appointment. 
 
-#### __C#__
 
-{{region radscheduleview-features-recurrences-recurrencerule_2}}
+
+```C#
 	var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
 	var fitnessAppointment = new Appointment()
 	{
@@ -114,90 +111,75 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 	    End = startDate.AddHours(2),
 	    Subject = "Fitness"
 	};
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-features-recurrences-recurrencerule_3}}
+```
+```VB.NET
 	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 	Dim fitnessAppointment = New Appointment() With {
 	    .Start = startDate,
 	    .[End] = startDate.AddHours(2),
 	    .Subject = "Fitness"
 	}
-{{endregion}}
+```
 
 * Create a [RecurrencePattern]({%slug radscheduleview-features-recurrences-recurrencepattern%}).
 
-#### __C#__
 
-{{region radscheduleview-features-recurrences-recurrencerule_4}}
+
+```C#
 	var recurrencePattern = new RecurrencePattern()
 	{
 	    Frequency = RecurrenceFrequency.Daily,
 	    DaysOfWeekMask = RecurrenceDays.Wednesday,
 	    MaxOccurrences = 10
 	};
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-features-recurrences-recurrencerule_5}}
+```
+```VB.NET
 	Dim recurrencePattern = New RecurrencePattern() With {
 	    .Frequency = RecurrenceFrequency.Daily,
 	    .DaysOfWeekMask = RecurrenceDays.Wednesday,
 	    .MaxOccurrences = 10
 	}
-{{endregion}}
+```
 
 * [Create](#how-to-create-a-recurrence-rule-and-associate-it-with-an-appointment) a __RecurrenceRule__ and associate the create recurrence pattern with it.
           
 
-#### __C#__
 
-{{region radscheduleview-features-recurrences-recurrencerule_6}}
+
+```C#
 	var rule = new RecurrenceRule(recurrencePattern);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-features-recurrences-recurrencerule_7}}
+```
+```VB.NET
 	Dim rule = New RecurrenceRule(recurrencePattern)
-{{endregion}}
+```
 
 * Add an exception occurrence to the recurrence rule. 
 
-#### __C#__
 
-{{region radscheduleview-features-recurrences-recurrencerule_8}}
+
+```C#
 	var exceptionDate = fitnessAppointment.Copy()
 	exceptionDate.Start = fitnessAppointment.Start.AddDays(-1);
 	exceptionDate.End = fitnessAppointment.End.AddDays(-1);          
 	rule.AddException(startDate, exceptionDate);
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-features-recurrences-recurrencerule_9}}
+```
+```VB.NET
 	Dim exceptionDate = fitnessAppointment.Copy()
 	exceptionDate.Start = fitnessAppointment.Start.AddDays(-1)
 	exceptionDate.[End] = fitnessAppointment.[End].AddDays(-1)
 	rule.AddException(startDate, exceptionDate)
-{{endregion}}
+```
 
 * Associate the create recurrence rule with the appointment. 
 
-#### __C#__
 
-{{region radscheduleview-features-recurrences-recurrencerule_10}}
+
+```C#
 	fitnessAppointment.RecurrenceRule = rule;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radscheduleview-features-recurrences-recurrencerule_11}}
+```
+```VB.NET
 	fitnessAppointment.RecurrenceRule = rule
-{{endregion}}
+```
 
 When adding the created appointment to the __RadScheduleView__'s __AppointmentsSource__ collection the result should be similar to the snapshot below.
 

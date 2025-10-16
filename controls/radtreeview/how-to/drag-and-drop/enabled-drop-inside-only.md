@@ -14,43 +14,7 @@ This tutorial demonstrates how to enable dropping inside the __RadTreeViewItems_
 
 For the purpose of this tutorial will be used the following treeview declaration: 
 
-{% if site.site_name == 'Silverlight' %}
-#### __XAML__
-{{region radtreeview-how-to-enabled-drop-inside-only-0}}
-	<UserControl.Resources>
-	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
-	    <DataTemplate x:Key="Team">
-	        <TextBlock Text="{Binding Name}"/>
-	    </DataTemplate>
-	
-	    <telerik:HierarchicalDataTemplate x:Key="Division"
-	        ItemsSource="{Binding Teams}"
-	        ItemTemplate="{StaticResource Team}">
-	        <TextBlock Text="{Binding Name}"/>
-	    </telerik:HierarchicalDataTemplate>
-	
-	    <telerik:HierarchicalDataTemplate x:Key="League" 
-	        ItemsSource="{Binding Divisions}"
-	        ItemTemplate="{StaticResource Division}">
-	        <TextBlock Text="{Binding Name}"/>
-	    </telerik:HierarchicalDataTemplate>
-	</UserControl.Resources>
-	
-	<Grid x:Name="LayoutRoot" Background="White">
-	        <telerik:RadTreeView x:Name="xTreeView"
-	                             Margin="8"
-	                             IsDragDropEnabled="True"
-	                             ItemTemplate="{StaticResource League}"
-	                             ItemsSource="{Binding Source={StaticResource DataSource},
-	                                                   Path=LeaguesDataSource}"/>
-	</Grid>
-{{endregion}}
-
-{% endif %}
-{% if site.site_name == 'WPF' %}
-
-#### __XAML__
-{{region radtreeview-how-to-enabled-drop-inside-only-1}}
+```XAML
 	<UserControl.Resources>
 	    <sampleData:RadTreeViewSampleData x:Key="DataSource"/>
 	    <DataTemplate x:Key="Team">
@@ -75,9 +39,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 	        ItemsSource="{Binding Source={StaticResource DataSource}, Path=LeaguesDataSource}"
 	        ItemTemplate="{StaticResource League}"/>
 	</Grid>
-{{endregion}}
-
-{% endif %}
+```
 
 >tip The __RadTreeView__ is data bound to a collection of business objects. For more information, read the [Binding to Object]({%slug radtreeview-populating-with-data-data-binding-to-object%}) topic.
 
@@ -85,25 +47,18 @@ In order to implement only drop inside you need to perform the following steps:
 
 * Attach to the __DragDropManager DragOver__ event:			
 
-	#### __C#__
-
-	{{region radtreeview-how-to-enabled-drop-inside-only-0}}
+	```C#
 		DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, true)
-	{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-how-to-enabled-drop-inside-only-0}}
+	```
+	```VB.NET
 		DragDropManager.AddDragOverHandler(xTreeView, OnDragOver, True)
-	{{endregion}}
+	```
 
 	>tip __RadTreeView__ handles internally the __DragDropManager__ events and in order to invoke a custom handler, you need to explicitly specify that you're adding a handler that should be invoked even for already handled events. This is done through the last - __bool__ argument of the __DragDropManager.AddDragOverHandler__ extension method.			  
 
 * In the event handler you should use the following code:
 
-	#### __C#__
-
-	{{region radtreeview-how-to-enabled-drop-inside-only-1}}
+	```C#
 		private void OnDragOver(object sender, Telerik.Windows.DragDrop.DragEventArgs e)
 		{
 			var options = DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key) as TreeViewDragDropOptions;
@@ -113,11 +68,8 @@ In order to implement only drop inside you need to perform the following steps:
 				options.UpdateDragVisual();
 			}
 		}
-	{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtreeview-how-to-enabled-drop-inside-only-1}}
+	```
+	```VB.NET
 		Private Sub OnDragOver(sender As Object, e As Telerik.Windows.DragDrop.DragEventArgs)
 			Dim options = TryCast(DragDropPayloadManager.GetDataFromObject(e.Data, TreeViewDragDropOptions.Key), TreeViewDragDropOptions)
 			If options IsNot Nothing AndAlso options.DropPosition <> Telerik.Windows.Controls.DropPosition.Inside Then
@@ -125,7 +77,7 @@ In order to implement only drop inside you need to perform the following steps:
 				options.UpdateDragVisual()
 			End If
 		End Sub
-	{{endregion}}
+	```
 
 	Please note that if you want the changes applied on the __TreeViewDragDropOptions__ object to affect the __DragVisual__ element, you have to invoke the __UpdateDragVisual()__ method.			
 

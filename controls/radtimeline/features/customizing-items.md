@@ -10,9 +10,7 @@ position: 3
 
 # Customizing Items
 
-There are two ways you can change the template for the __RadTimeline__ items. You can either customize them with the use of ItemTemplateSelector, or with a  __TimelineItemTemplate / TimelineInstantItemTemplate__ property. This help article will walk you through these two approaches:
-* [TimelineItemTemplate / TimelineInstantItemTemplate property](#timelineitemtemplate/timelineinstantitemtemplate-property)
-* [ItemTemplateSelector](#itemtemplateselector)
+There are two ways you can change the template for the __RadTimeline__ items. You can either customize them with the use of ItemTemplateSelector, or with a  __TimelineItemTemplate / TimelineInstantItemTemplate__ property.
 
 ## TimelineItemTemplate and TimelineInstantItemTemplate 
 
@@ -20,9 +18,7 @@ There are two ways you can change the template for the __RadTimeline__ items. Yo
 
 The following example demonstrates how you can add custom Framework Element (Rectangle in this case) to present the instant and duration items. The customizations are made via DataTemplate and applied to the corresponding TimelineItemTemplate/TimelineInstantItemTemplate property in XAML. There is nothing special in code-behind, it is added for completeness of the sample.
 
-#### __XAML__
-
-{{region radtimeline-customizing_items_0 }}
+```XAML
 	 <UserControl.Resources>
 	        <DataTemplate x:Key="InstantItemTemplate">
 	            <Border Width="10" Height="10" Margin="0,0,0,5">
@@ -62,11 +58,11 @@ The following example demonstrates how you can add custom Framework Element (Rec
 	            </telerik:RadTimeline.Intervals>
 	        </telerik:RadTimeline>
 	    </Grid>
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radtimeline-customizing_items_1}}
+
+```C#
 		List<Item> dataSource = new List<Item>();
 		var startDate = new DateTime(2011, 1, 1);
 		var endDate = new DateTime(2011, 6, 1);
@@ -88,11 +84,8 @@ The following example demonstrates how you can add custom Framework Element (Rec
 			public TimeSpan Duration { get; set; }
 			public DateTime Date { get; set; }
 		}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-customizing_items_2}}
+```
+```VB.NET
 	    Dim dataSource As New List(Of Item)()
 		Dim startDate = New Date(2011, 1, 1)
 		Dim endDate = New Date(2011, 6, 1)
@@ -112,7 +105,7 @@ The following example demonstrates how you can add custom Framework Element (Rec
 		public class Item
 		public TimeSpan Duration {get;set;}
 		public Date Date {get;set;}
-{{endregion}}
+```
 
 
 You may see the result below:
@@ -126,9 +119,7 @@ We'll get started with creating a __CustomItemTemplateSelector__ class. It shoul
 
 >We are using the Product class from the previous section as datasource for our Timeline.
 
-#### __C#__
-
-{{region radtimeline-customizing_items_3}}
+```C#
 	 public class CustomItemTemplateSelector : DataTemplateSelector
 	    {
 	        public DataTemplate InstantItemTemplate { get; set; }
@@ -153,11 +144,8 @@ We'll get started with creating a __CustomItemTemplateSelector__ class. It shoul
 	                return this.InstantItemTemplate;
 	        }
 	    }
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-customizing_items_4}}
+```
+```VB.NET
 	 Public Class CustomItemTemplateSelector
 	 Inherits DataTemplateSelector
 		Public Property InstantItemTemplate() As DataTemplate
@@ -184,13 +172,13 @@ We'll get started with creating a __CustomItemTemplateSelector__ class. It shoul
 			End If
 		End Function
 	 End Class
-{{endregion}}
+```
 
 We'll extend the View Model we previously created with __CustomItemTemplateSelector__  property and field as shown below:
 
-#### __C#__
 
-{{region radtimeline-customizing_items_5}}
+
+```C#
 	private DataTemplateSelector customItemTemplateSelector;
 	public DataTemplateSelector CustomItemTemplateSelector
 	{
@@ -203,11 +191,8 @@ We'll extend the View Model we previously created with __CustomItemTemplateSelec
 			this.customItemTemplateSelector = value;
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-customizing_items_6}}
+```
+```VB.NET
 	Private customItemTemplateSelector_Renamed As DataTemplateSelector
 	Public Property CustomItemTemplateSelector() As DataTemplateSelector
 		Get
@@ -217,13 +202,13 @@ We'll extend the View Model we previously created with __CustomItemTemplateSelec
 			Me.customItemTemplateSelector_Renamed = value
 		End Set
 	End Property
-{{endregion}}
+```
 
 Now in XAML you may create an instance of the CustomItemTemplateSelector class, set the DataTemplates and provide it to the __ItemTemplateSelector__ property:
 
-#### __XAML__
 
-{{region radtimeline-customizing_items_7}}
+
+```XAML
 	  <UserControl.Resources>
 	        <DataTemplate x:Key="InstantItemTemplate">
 	            <Border Width="10" Height="10" Margin="0,0,0,5">
@@ -270,6 +255,6 @@ Now in XAML you may create an instance of the CustomItemTemplateSelector class, 
 	            </telerik:RadTimeline.Intervals>
 	        </telerik:RadTimeline>
 	    </Grid>
-{{endregion}}
+```
 
 The result is the same as the one shown in the previous section image.

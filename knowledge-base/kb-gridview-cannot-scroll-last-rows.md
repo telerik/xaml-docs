@@ -34,8 +34,8 @@ This happens when the RowHeight property value is smaller than the MinHeight of 
 
 To resolve this, ensure that the MinHeight of the pin button in the rows is 0 or a value smaller or equal than the RowHeight. To set the MinHeight, you can define an implicit style targeting GridViewPinButton and set its MinHeight property.
 
-#### __[XAML]__
-{{region kb-gridview-cannot-scroll-last-rows-0}}
+
+```XAML
 	<telerik:RadGridView GroupRenderMode="Flat"
 						 PinnedRowsPosition="Top"
 						 RowHeight="17">
@@ -45,4 +45,4 @@ To resolve this, ensure that the MinHeight of the pin button in the rows is 0 or
 			</Style>
 		</telerik:RadGridView.Resources>
 	</telerik:RadGridView>
-{{endregion}}
+```

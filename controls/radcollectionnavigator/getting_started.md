@@ -41,9 +41,9 @@ __Examples 1__ demonstrate how to utilize the CollectionView exposed by the RadC
 
 > The __MyViewModel__ class used in __Example 1__ is defined in __Example 4__ in the following [article]({%slug gridview-getting-started2%}).
 
-#### __[XAML] Example 1: RadCollectionNavigator bound to a ListBox__
+__Example 1: RadCollectionNavigator bound to a ListBox__
 
-{{region xaml-collectionnavigator-getting-started_0}}
+```XAML
 	<Grid x:Name="LayoutRoot"
 		  Background="White">
 		<Grid.DataContext>
@@ -62,7 +62,7 @@ __Examples 1__ demonstrate how to utilize the CollectionView exposed by the RadC
 			Grid.Row="1"
 			x:Name="collectionNavigator"/>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadCollectionNavigator in the Fluent theme__
 
@@ -85,8 +85,8 @@ To change the theme, you can follow the steps below:
 
 __Example 2__ demonstrates how to merge the ResourceDictionaries so that they are applied globally for the entire application.
 
-#### __[XAML] Example 2: Merge the ResourceDictionaries__  
-{{region xaml-collectionnavigator_getting_started_1}}
+__Example 2: Merge the ResourceDictionaries__  
+```XAML
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -96,7 +96,7 @@ __Example 2__ demonstrates how to merge the ResourceDictionaries so that they ar
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>
-{{endregion}}
+```
 
 >Alternatively, you can use the theme of the control via the {% if site.site_name == 'WPF' %}[StyleManager](https://docs.telerik.com/devtools/wpf/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme-wpf){% else %}[StyleManager](https://docs.telerik.com/devtools/silverlight/styling-and-appearance/stylemanager/common-styling-apperance-setting-theme){% endif %}.
 

@@ -38,11 +38,11 @@ When their **IsFrozen** property is **true**, Freezable objects are **free-threa
 
 Thus, to overcome this exception, you need to freeze the Freezable object before using it:
 
-#### __[C#] Example 1: Freeze the Freezable object__
-    {{region cs-kb-invalidoperationexception-freezable-1}}
+__Example 1: Freeze the Freezable object__
+    ```C#
 		var brush = (Brush)new BrushConverter().ConvertFrom("#4CAF50");
 		if (brush.CanFreeze)
 		{
 			brush.Freeze();
 		}
-    {{endregion}}
+    ```

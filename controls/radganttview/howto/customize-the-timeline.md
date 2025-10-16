@@ -34,9 +34,7 @@ The example will go through on the following key steps:
 
 1. First you will need to create a custom GanttTask and add the need GanttDeadLine property:
 
-	#### __C#__
-
-	{{region cs-radganttview-howto-customize-the-timeline-0}}
+	```C#
 			public class GanttDeadlineTask : GanttTask
 			{
 				private DateTime? ganttDeadLine;
@@ -57,13 +55,11 @@ The example will go through on the following key steps:
 					}
 				}
 			}
-	{{endregion}}
+	```
 
 1. Create a ViewModel, initialize and populate its __Tasks__ and __VisibleTime__ properties with some sample data:
 
-	#### __C#__
-
-	{{region cs-radganttview-howto-customize-the-timeline-1}}
+	```C#
 			public class MyViewModel : ViewModelBase
 			{
 				private ObservableCollection<GanttTask> _Tasks;
@@ -141,13 +137,11 @@ The example will go through on the following key steps:
 					}
 				}
 			}
-	{{endregion}}
+	```
 
 1. Next you will need to create a __TimeLineDeadlineEventInfo__ class that inherits SlotInfo class, this class will hold the information for the containers that need to be rendered in the TimeLine portion of the GanttView control:
 
-	#### __C#__
-
-	{{region cs-radganttview-howto-customize-the-timeline-2}}
+	```C#
 			public class TimeLineDeadlineEventInfo : SlotInfo
 			{
 			    public TimeLineDeadlineEventInfo(Range<long> timeRange, int index)
@@ -165,13 +159,11 @@ The example will go through on the following key steps:
 			        return base.GetHashCode();
 			    }
 			}
-	{{endregion}}
+	```
 
 1. Create __TimeLineDeadlineBehavior__ class that inherits DefaultGanttTimeLineVisualizationBehavior class and override its __GetEventInfos()__ method:
 
-	#### __C#__
-
-	{{region cs-radganttview-howto-customize-the-timeline-3}}
+	```C#
 			public class TimeLineDeadlineBehavior : DefaultGanttTimeLineVisualizationBehavior
 			{
 			    protected override IEnumerable<IEventInfo> GetEventInfos(TimeLineVisualizationState state, Telerik.Windows.Core.HierarchicalItem hierarchicalItem)
@@ -196,15 +188,13 @@ The example will go through on the following key steps:
 			        }
 			    }
 			}
-	{{endregion}}
+	```
 
 	>The __DefaultGanttTimeLineVisualizationBehavior__ is responsible for rendering the Tasks, their relations and highlight drag visual in the TimeLine portion of the control.
 
 1. Create a __TimeLineDeadlineBehavior__ property of type ITimeLineVisualizationBehavior and initialize it in the __ViewModel__.
 
-	#### __C#__
-
-	{{region cs-radganttview-howto-customize-the-timeline-4}}
+	```C#
 			public class MyViewModel : ViewModelBase
 			{
 			    //...
@@ -231,13 +221,11 @@ The example will go through on the following key steps:
 			        }
 			    }
 			}
-	{{endregion}}
+	```
 
 1. Create a custom __TimeLineDeadlineContainer__ that inherits Control class and implements IDataContainer interface: 
 
-	#### __C#__
-
-	{{region cs-radganttview-howto-customize-the-timeline-5}}
+	```C#
 			public class TimeLineDeadlineContainer : Control, IDataContainer
 			{
 				public TimeLineDeadlineContainer()
@@ -247,13 +235,11 @@ The example will go through on the following key steps:
 			
 				public object DataItem { get; set; }
 			}
-	{{endregion}}
+	```
 
 1. Create a Style that targets the newly created TimeLineDeadlineContainer and set its properties:
 
-	#### __XAML__
-
-	{{region xaml-radganttview-howto-customize-the-timeline-0}}
+	```XAML
 		<Style TargetType="local:TimeLineDeadlineContainer">
 		    <Setter Property="telerik:ZIndexManager.ZIndex" Value="100"/>
 		    <Setter Property="BorderBrush" Value="Red" />
@@ -269,13 +255,11 @@ The example will go through on the following key steps:
 		        </Setter.Value>
 		    </Setter>
 		</Style>
-	{{endregion}}
+	```
 
 1. Next you will need to create a custom __TimeLineDeadlineContainerSelector__ that inherits DefaultTimeLineContainerSelector and override its __GetContainerType()__ method in order to return the custom container.
 
-	#### __C#__
-
-	{{region cs-radganttview-howto-customize-the-timeline-6}}
+	```C#
 			public class TimeLineDeadlineContainerSelector : DefaultTimeLineContainerSelector
 			{
 				private static readonly ContainerTypeIdentifier timelineDeadlineEventInfoContainerType = ContainerTypeIdentifier.FromType<TimeLineDeadlineContainer>();
@@ -290,13 +274,11 @@ The example will go through on the following key steps:
 					return base.GetContainerType(item);
 				}
 			}
-	{{endregion}}
+	```
 
 1. Finally you will need to add the GanttView control in XAML by setting its __TasksSource__, __TimeLineVisualizationBehavior__, __VisibleRange__ and __TimelineContainerSelector__. The GanttView control should look like this:  
 
-	#### __XAML__
-
-	{{region xaml-radganttview-howto-customize-the-timeline-1}}
+	```XAML
 		<telerik:RadGanttView TasksSource="{Binding Tasks}"
 		TimeLineVisualizationBehavior="{Binding TimeLineDeadlineBehavior}"
 		VisibleRange="{Binding VisibleTime}"
@@ -310,7 +292,7 @@ The example will go through on the following key steps:
 		        <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="AutoHeaderAndContent"/>
 		    </telerik:RadGanttView.Columns>
 		</telerik:RadGanttView>
-	{{endregion}}
+	```
 
 The next screenshot shows the final result (the red lines represent the deadlines for each task):
 
@@ -322,9 +304,7 @@ The following example shows how to customize the __EventInfo__ and __TimeLineVis
 
 Repeat the steps from the preview example but on __step 3__ create the __EventInfo__ as follows:
 
-#### __C#__
-
-{{region cs-radganttview-howto-customize-the-timeline-7}}
+```C#
 		public class TimeLineDeadlineEventInfo : TimeSlotInfo
 		{
 			public TimeLineDeadlineEventInfo(Range<long> timeRange)
@@ -342,13 +322,11 @@ Repeat the steps from the preview example but on __step 3__ create the __EventIn
 				return base.GetHashCode();
 			}
 		}
-	{{endregion}}
+```
 
 And on __step 4__ create the custom __TimeLineDeadlineBehavior__ as follows:
 
-#### __C#__
-
-{{region cs-radganttview-howto-customize-the-timeline-8}}
+```C#
 		public class TimeLineDeadlineBehavior : DefaultGanttTimeLineVisualizationBehavior
 		{
 			private DateTime projectDeadline;
@@ -383,13 +361,11 @@ And on __step 4__ create the custom __TimeLineDeadlineBehavior__ as follows:
 				}
 			}
 		}
-	{{endregion}}
+```
 
 Finally we will need to create a __ProjectDeadline__ property in the ViewModel of type DateTime and initialize it with a sample data:
 
-#### __C#__
-
-{{region cs-radganttview-howto-customize-the-timeline-9}}
+```C#
 		public class MyViewModel : ViewModelBase
 		{
 		    //...
@@ -421,7 +397,7 @@ Finally we will need to create a __ProjectDeadline__ property in the ViewModel o
 		
 		    public TimeLineDeadlineBehavior _TimeLineDeadlineBehavior { get; set; }
 		}
-	{{endregion}}
+```
 
 The next screenshot shows the final result (the red line represents the ProjectDeadline):
 

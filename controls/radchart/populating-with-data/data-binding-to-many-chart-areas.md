@@ -24,9 +24,9 @@ The example below demonstrates how to bind two series to two different __ChartAr
 
 The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchart-populating-with-data-data-binding-support-overview%}). For each series, set the __ChartAreaName__ to the name of the previously defined __ChartArea__:
 
-#### __XAML__
 
-{{region xaml-radchart-populating-with-data-data-binding-to-many-chart-areas_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart" UseDefaultLayout="False">
 	    <Grid Margin="10,10,0,20">
 	        <Grid.RowDefinitions>
@@ -70,13 +70,9 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	        </telerik:SeriesMapping>
 	    </telerik:RadChart.SeriesMappings>
 	</telerik:RadChart>
-{{endregion}}
+```
 
-
-
-#### __C#__
-
-{{region cs-radchart-populating-with-data-data-binding-to-many-chart-areas_1}}
+```C#
 	//Creating new instance of RadChart control
 	Telerik.Windows.Controls.RadChart radChart = new Telerik.Windows.Controls.RadChart();
 	radChart.UseDefaultLayout = false;
@@ -132,13 +128,8 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	seriesMapping.ItemMappings.Add( new ItemMapping( "Description", DataPointMember.Label ) );
 	radChart.SeriesMappings.Add( seriesMapping );
 	//....
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-populating-with-data-data-binding-to-many-chart-areas_2}}
+```
+```VB.NET
 	'Creating new instance of RadChart control'
 	Dim radChart As New Telerik.Windows.Controls.RadChart()
 	'....'
@@ -193,9 +184,7 @@ The last step is to bind the data via [SeriesMapping/ItemMapping]({%slug radchar
 	seriesMapping.ItemMappings.Add(New ItemMapping("Description", DataPointMember.Label))
 	radChart.SeriesMappings.Add(seriesMapping)
 	'....'
-{{endregion}}
-
-
+```
 
 As you can see from the image below, the __RadChart__ layout is changed and contains two __ChartAreas__ - for year 2008 and for year 2009. Two series are created and for each one of them __CharAreaName__ property is set to the appropriate __ChartArea__. Thus, the data for year 2008 goes to the left __ChartArea__ while the data for 2009 goes to the right __ChartArea__. Another option is to use __SeriesMapping.AreaName__ from the code behind to set the desired instance of the __ChartArea__ directly:
 

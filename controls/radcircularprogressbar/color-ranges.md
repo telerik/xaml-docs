@@ -14,8 +14,8 @@ position: 5
 
 >important The secondary indicator and segments are not supported when having color ranges.
 
-#### __[XAML] RadCircularProgressBar with multiple color ranges__
-{{region radcircularprogressbar-color-ranges-0}}
+__RadCircularProgressBar with multiple color ranges__
+```XAML
     <telerik:RadCircularProgressBar Value="0.4">
         <telerik:RadCircularProgressBar.ColorRanges>
             <telerik:ProgressBarColorRange Color="GreenYellow" Start="0" End="0.1"/>
@@ -24,7 +24,7 @@ position: 5
             <telerik:ProgressBarColorRange Color="Green" Start="0.3" End="0.4"/>
         </telerik:RadCircularProgressBar.ColorRanges>
     </telerik:RadCircularProgressBar>
-{{endregion}}
+```
 
 ![RadCircularProgressBar with color ranges](images/radcircularprogressbar-color-ranges-0.png)
 
@@ -34,15 +34,15 @@ position: 5
 
 The following sample extends the implementation of the above example:
 
-#### __[XAML] Setting the IsGradient property__
-{{region radcircularprogressbar-color-ranges-1}}
+__Setting the IsGradient property__
+```XAML
     <telerik:RadCircularProgressBar.ColorRanges>
         <telerik:ProgressBarColorRange Color="GreenYellow" Start="0" End="0.1" IsGradient="True"/>
         <telerik:ProgressBarColorRange Color="LawnGreen" Start="0.1" End="0.2" IsGradient="True"/>
         <telerik:ProgressBarColorRange Color="LimeGreen" Start="0.2" End="0.3" IsGradient="True"/>
         <telerik:ProgressBarColorRange Color="Green" Start="0.3" End="0.4" IsGradient="True"/>
     </telerik:RadCircularProgressBar.ColorRanges>
-{{endregion}}
+```
 
 __RadCircularProgressBar with gradient color ranges__
 

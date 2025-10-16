@@ -31,8 +31,8 @@ You can find the required assemblies for each control from the suite in the {% i
 
 First, we can create the UI of the gallery (Example 1). We will use one panel to hold several Image elements that will represent the gallery with the small images (the thumbnails). Then we can add another panel that will display the selected image.
 
-#### __[XAML] Example 1: Defining the UI of the TouchManager example__
-{{region touchmanager-getting-started-0}}
+__Example 1: Defining the UI of the TouchManager example__
+```XAML
 	<Window x:Class="WpfApplication2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -69,7 +69,7 @@ First, we can create the UI of the gallery (Example 1). We will use one panel to
 			</Border>
 		</Grid>
 	</Window>
-{{endregion}}
+```
 
 This is the frame over which we will implement the touch interactions - swipe and tap. 
 
@@ -78,8 +78,8 @@ Here is an image that demonstrates the view:
 
 Let us start by implementing the swipe of the gallery items. We can do that by handling the swipe and swipe inertia events of TouchManager. Example 2 demonstrates how to subscribe to the events:
 
-#### __[C#] Example 2: Subscribing to TouchManager events__
-{{region touchmanager-getting-started-1}}
+__Example 2: Subscribing to TouchManager events__
+```C#
 	TouchManager.AddSwipeStartedEventHandler(this.galleryContainer, new TouchEventHandler(OnGallerySwipeStarted));
 	TouchManager.AddSwipeEventHandler(this.galleryContainer, new SwipeEventHandler(OnGallerySwipe));
 	TouchManager.AddSwipeFinishedEventHandler(this.galleryContainer, new TouchEventHandler(OnGallerySwipeFinished));
@@ -87,10 +87,8 @@ Let us start by implementing the swipe of the gallery items. We can do that by h
 	TouchManager.AddSwipeInertiaStartedEventHandler(this.galleryContainer, new RadRoutedEventHandler(OnGallerySwipeInertiaStarted));
 	TouchManager.AddSwipeInertiaEventHandler(this.galleryContainer, new SwipeInertiaEventHandler(OnGallerySwipeInertia));
 	TouchManager.AddSwipeInertiaFinishedEventHandler(this.galleryContainer, new RadRoutedEventHandler(OnGallerySwipeInertiaFinished));
-{{endregion}}
-
-#### __[VB.NET] Example 2: Subscribing to TouchManager events__
-{{region touchmanager-getting-started-2}}
+```
+```VB.NET
 	TouchManager.AddSwipeStartedEventHandler(Me.galleryContainer, New TouchEventHandler(AddressOf OnGallerySwipeStarted))
 	TouchManager.AddSwipeEventHandler(Me.galleryContainer, New SwipeEventHandler(AddressOf OnGallerySwipe))
 	TouchManager.AddSwipeFinishedEventHandler(Me.galleryContainer, New TouchEventHandler(AddressOf OnGallerySwipeFinished))
@@ -98,12 +96,12 @@ Let us start by implementing the swipe of the gallery items. We can do that by h
 	TouchManager.AddSwipeInertiaStartedEventHandler(Me.galleryContainer, New RadRoutedEventHandler(AddressOf OnGallerySwipeInertiaStarted))
 	TouchManager.AddSwipeInertiaEventHandler(Me.galleryContainer, New SwipeInertiaEventHandler(AddressOf OnGallerySwipeInertia))
 	TouchManager.AddSwipeInertiaFinishedEventHandler(Me.galleryContainer, New RadRoutedEventHandler(AddressOf OnGallerySwipeInertiaFinished))
-{{endregion}}
+```
 
 The logic for the swipe action will be implemented in the Swipe and SwipeInertia event handlers. We can place the implementation in a separate method and use it in the handlers.
 
-#### __[C#] Example 3: Event handlers implementation__
-{{region touchmanager-getting-started-3}}
+__Example 3: Event handlers implementation__
+```C#
 	private void OnGallerySwipe(object sender, SwipeEventArgs args)
 	{
 		args.Handled = true;
@@ -124,10 +122,8 @@ The logic for the swipe action will be implemented in the Swipe and SwipeInertia
 		newLeft = Math.Max(newLeft, this.galleryContainer.ActualWidth - this.galleryPanel.ActualWidth);
 		this.galleryPanel.Margin = new Thickness(newLeft, margin.Top, margin.Right, margin.Bottom);
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 3: Event handlers implementation__
-{{region touchmanager-getting-started-4}}
+```
+```VB.NET
 	Private Sub OnGallerySwipe(sender As Object, args As SwipeEventArgs)
 		args.Handled = True
 		Me.MoveGallery(args.HorizontalChange)
@@ -145,12 +141,12 @@ The logic for the swipe action will be implemented in the Swipe and SwipeInertia
 		newLeft = Math.Max(newLeft, Me.galleryContainer.ActualWidth - Me.galleryPanel.ActualWidth)
 		Me.galleryPanel.Margin = New Thickness(newLeft, margin.Top, margin.Right, margin.Bottom)
 	End Sub
-{{endregion}}
+```
 
 Although we are working directly only with the Swipe and SwipeInertia events, we are going to handle the related events for consistency - SwipeStarted, SwipeFinisihed, SwipeInertiaStarted and SwipeInertiaFinished. 
 
-#### __[C#] Example 4: Event handlers implementation__
-{{region touchmanager-getting-started-5}}
+__Example 4: Event handlers implementation__
+```C#
 	private void OnGallerySwipeStarted(object sender, TouchEventArgs args)
 	{
 		args.Handled = true;
@@ -170,10 +166,8 @@ Although we are working directly only with the Swipe and SwipeInertia events, we
 	{
 		e.Handled = true;
 	}
-{{endregion}}
-	
-#### __[VB.NET] Example 4: Event handlers implementation__
-{{region touchmanager-getting-started-6}}
+```
+```VB.NET
 	Private Sub OnGallerySwipeStarted(sender As Object, args As TouchEventArgs)
 		args.Handled = True
 	End Sub
@@ -189,7 +183,7 @@ Although we are working directly only with the Swipe and SwipeInertia events, we
 	Private Sub OnGallerySwipeInertiaFinished(sender As Object, e As RadRoutedEventArgs)
 		e.Handled = True
 	End Sub
-{{endregion}}
+```
 	
 > The __SwipeInertia__ event won't be fired unless the __SwipeInertiaStarted__ is handled.
 > `args.Handled=true`

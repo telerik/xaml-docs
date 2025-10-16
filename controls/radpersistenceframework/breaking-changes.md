@@ -24,8 +24,8 @@ The `IsolatedStorageProvider` is also affected as it uses the `PersistenceManage
 
 The following example shows how to properly initialize the manager and add allowed types. Read more about this in the [Allowed Types]({%slug persistence-framework-allowed-types%}) article.
 
-#### __[C#] Adding allowed types__
-{{region persistence-framework-breaking-changes-0}}
+__Adding allowed types__
+```C#
 	// add Telerik types
     PersistenceManager manager = new PersistenceManager()
 		.AllowNavigationControls()
@@ -35,7 +35,7 @@ The following example shows how to properly initialize the manager and add allow
 	manager.AllowedTypes.Add(typeof(MyCustomType));
 	
 	IsolatedStorageProvider isoProvider = new IsolatedStorageProvider(manager);
-{{endregion}}
+```
 
 ## See Also  
  * [Getting Started]({%slug persistence-framework-getting-started%})

@@ -14,8 +14,8 @@ The `RadSvgImage` component allows you to specify paint servers that will be app
 
 The following example shows how to utilize the CustomBrushes property:
 
-#### __[XML] Defining a sample SVG file__
-{{region radsvgimage-paint-servers-0}}
+__Defining a sample SVG file__
+```XML
     <?xml version="1.0" encoding="utf-8"?>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
@@ -32,24 +32,22 @@ The following example shows how to utilize the CustomBrushes property:
     		c4.2,1.8,9.2,0.1,11.5-3.9l19.4-33.5C378.8,331.2,377.8,326.2,374.1,323.4z M256,336c-26.5,0-48-21.5-48-48c0-26.5,21.5-48,48-48
     		s48,21.5,48,48C304,314.5,282.5,336,256,336z"/>
     </svg>
-{{endregion}}
+```
 
 Create a custom Dictionary<string, Brush> collection to define it in XAML:
 
-#### __[C#] Defining a custom Dictionary collection__
-{{region radsvgimage-paint-servers-1}}
+__Defining a custom Dictionary collection__
+```C#
     public class CustomDictionary : Dictionary<string, Brush> { }
-{{endregion}}
-
-#### __[VB.NET] Defining a custom Dictionary collection__
-{{region radsvgimage-paint-servers-2}}
+```
+```VB.NET
     Public Class CustomDictionary
         Inherits Dictionary(Of String, Brush)
     End Class
-{{endregion}}
+```
 
-#### __[XAML] Creating a new instance of the custom Dictionary and add entries__
-{{region radsvgimage-paint-servers-3}}
+__Creating a new instance of the custom Dictionary and add entries__
+```XAML
     <Grid>
         <Grid.Resources>
             <local:CustomDictionary x:Key="CustomBrushesDictionary">
@@ -58,10 +56,10 @@ Create a custom Dictionary<string, Brush> collection to define it in XAML:
             </local:CustomDictionary>
         </Grid.Resources>
     </Grid>
-{{endregion}}
+```
 
-#### __[XAML] Setting the new custom Dictionary instance to the CustomBrushes property__
-{{region radsvgimage-paint-servers-4}}
+__Setting the new custom Dictionary instance to the CustomBrushes property__
+```XAML
     <Grid>
         <Grid.Resources>
             <local:CustomDictionary x:Key="CustomBrushesDictionary">
@@ -76,7 +74,7 @@ Create a custom Dictionary<string, Brush> collection to define it in XAML:
                              Height="128">
         </telerik:RadSvgImage>
     </Grid>
-{{endregion}}
+```
 
 __RadSvgImage with custom Dictionary set to the CustomBrushes property__
 

@@ -16,9 +16,9 @@ position: 10
 
 In order to style all __ToolWindows__ in a RadDocking, you should create a style targeting __ToolWindow__.
 
-#### __[XAML] Example 1: Creating an implicit style targeting ToolWindow__
+__Example 1: Creating an implicit style targeting ToolWindow__
 
-{{region xaml-raddocking-styling-the-toolwindow-0}}
+```XAML
     <Application.Resources>
         <!-- If you are using the NoXaml binaries, you will have to base the style on the default one for the theme like so: 
         <Style TargetType="telerik:ToolWindow" BasedOn="{StaticResource ToolWindowStyle}">-->
@@ -42,7 +42,7 @@ In order to style all __ToolWindows__ in a RadDocking, you should create a style
             </telerik:RadPaneGroup>
         </telerik:RadSplitContainer>
     </telerik:RadDocking>
-{{endregion}}
+```
 
 >important It is important for the implicit style targeting ToolWindow to be placed in the Application's Resources as shown in __Example 1__. This is due to the fact that the ToolWindows are in a separate visual tree from the MainWindow.
 

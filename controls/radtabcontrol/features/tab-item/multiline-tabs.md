@@ -14,15 +14,15 @@ Multi-line tabs can be created using the __IsBreak__ property of the __RadTabIte
 
 ![{{ site.framework_name }} RadTabControl Multi-Line Tabs](images/RadTabControl_Figure_00650.png)
 
-#### __[XAML] Example 1: Set an item's IsBreak property__
+__Example 1: Set an item's IsBreak property__
 
-{{region radtabcontrol-features-multiline-tabs_0}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="0">
 	    <telerik:RadTabItem Header="Calendar"/>
 	    <telerik:RadTabItem Header="Colors" IsBreak="True"/>
 	    <telerik:RadTabItem Header="Quote"/>
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 In the above example the property __IsBreak__ of the tab item "Colors" is set to __True__ and the next tab item "Quote" is placed on a new line above all other tab items.
 
@@ -36,13 +36,13 @@ By default, the RadTabControl will display two arrows when the width of the tab 
 
 If you would, however, like all items to be in the viewport and appear one above the other in separate rows, you can set the control's **OverflowMode** property to **Wrap**. The result from setting this property can be seen in **Figure 2**.
 
-#### __[XAML] Example 2: Set the control's OverflowMode__
+__Example 2: Set the control's OverflowMode__
 
-{{region radtabcontrol-features-multiline-tabs_0}}
+```XAML
 	<telerik:RadTabControl x:Name="radTabControl" SelectedIndex="0" OverflowMode="Wrap">
 		<!-- ... -->
 	</telerik:RadTabControl>
-{{endregion}}
+```
 
 #### Figure 2: RadTabControl with Wrap OverflowMode
 

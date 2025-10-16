@@ -30,8 +30,8 @@ Implementing geocoding (searching) functionality using the Azure Maps services.
 
 To achieve geocoding functionality using the Azure Maps services, you can create a new helper class. It will create a URL request for the Microsoft's geocoding API and use the response to center the RadMap control. In order to receive a valid response from the geocoding API, you will need to pass a valid location and subscription key to the request URL string.
 
-#### __[C#] Implementing a helper class for retrieving the searched location__
-{{region kb-map-azuremapprovider-geocoding-0}}
+__Implementing a helper class for retrieving the searched location__
+```C#
     internal class AzureGeocodingHelper
     {
         private static HttpClient httpClient = new HttpClient();
@@ -72,10 +72,8 @@ To achieve geocoding functionality using the Azure Maps services, you can create
     {
         public List<double> Coordinates { get; set; }
     }
-{{endregion}}
-
-#### __[VB.NET] Implementing a helper class for retrieving the searched location__
-{{region kb-map-azuremapprovider-geocoding-1}}
+```
+```VB.NET
     Friend Class AzureGeocodingHelper
         Private Shared httpClient As HttpClient = New HttpClient()
 
@@ -105,12 +103,12 @@ To achieve geocoding functionality using the Azure Maps services, you can create
     Public Class Geometry
         Public Property Coordinates As List(Of Double)
     End Class
-{{endregion}}
+```
 
 Additionally, you can follow the next example, which showcases how to utilize the created `AzureGeocodingHelper` class and its `GetGeoCode` method.
 
-#### __[XAML] Defining the RadMap and the UI elements for the geocoding logic__
-{{region kb-map-azuremapprovider-geocoding-2}}
+__Defining the RadMap and the UI elements for the geocoding logic__
+```XAML
     <Grid>
         <Grid.Resources>
             <ResourceDictionary Source="/Telerik.Windows.Controls;component/Themes/FontResources.xaml"/>
@@ -134,10 +132,10 @@ Additionally, you can follow the next example, which showcases how to utilize th
             <telerik:VisualizationLayer x:Name="visualizationLayer"/>
         </telerik:RadMap>
     </Grid>
-{{endregion}}
+```
 
-#### __[C#] Utilizing the AzureGeocodingHelper class's GetGeoCode method__
-{{region kb-map-azuremapprovider-geocoding-3}}
+__Utilizing the AzureGeocodingHelper class's GetGeoCode method__
+```C#
     private async void RadButton_Click(object sender, RoutedEventArgs e)
     {
         try
@@ -153,10 +151,8 @@ Additionally, you can follow the next example, which showcases how to utilize th
             MessageBox.Show("Please, enter a another location");
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Utilizing the AzureGeocodingHelper class's GetGeoCode method__
-{{region kb-map-azuremapprovider-geocoding-4}}
+```
+```VB.NET
     Private Async Sub RadButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
         Try
             Dim location As Location = Await AzureGeocodingHelper.GetGeoCode(Me.textBoxSearchAddress.Text)
@@ -167,7 +163,7 @@ Additionally, you can follow the next example, which showcases how to utilize th
             MessageBox.Show("Please, enter a another location")
         End Try
     End Sub
-{{endregion}}
+```
 
 __RadMap with AzureMapProvider and geocoding functionality__
 

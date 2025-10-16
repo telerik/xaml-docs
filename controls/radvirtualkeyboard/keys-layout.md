@@ -22,10 +22,10 @@ To change the layout using one of the predefined schemes, set the `DefaultKeyboa
 
 * `Numpad`&mdash;Only the numpad keys
 
-#### __[XAML] Changing the default keyboard layout__
-{{region radvirtualkeyboard-keys-layout-0}}	
+__Changing the default keyboard layout__
+```XAML	
 	<telerik:RadVirtualKeyboard DefaultKeyboardLayout="Compact" />
-{{endregion}}
+```
 
 __Predefined key layouts in the following order - Numpad, Compact and Extended__
 ![{{ site.framework_name }} RadVirtualKeyboard Numpad Compact and Extended Layouts](images/radvirtualkeyboard-keys-layout-0.png)
@@ -34,8 +34,8 @@ __Predefined key layouts in the following order - Numpad, Compact and Extended__
 
 To define custom keys layout you will need to create a special XML file and then load it using the `LoadLayout` method of `RadVirtualKeyboard`. The following markup shows a version of the XML format used to generate the default keyboard layout:
 
-#### __[XML] Keys layout XML format example__
-{{region radvirtualkeyboard-keys-layout-1}}	
+__Keys layout XML format example__
+```XML	
 	<RadVirtualKeyboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<Grid>
 			<Grid.RowDefinitions>
@@ -231,7 +231,7 @@ To define custom keys layout you will need to create a special XML file and then
 			</KeysLayout>
 		</Grid>
 	</RadVirtualKeyboard>
-{{endregion}}
+```
 
 The following list describes the tags used in the XML file:
 
@@ -259,16 +259,16 @@ The following list describes the tags used in the XML file:
 
 Once the XML file with the layout is defined, you can load it using the `LoadLayout` method of `RadVirtualKeyboard`. The method allows you to provide an XML `string` or a `Stream` with the XML file information. In order to load the XML file when using the approach with the Stream, you may need to set its __Build Action__ in Visual Studio's Properties menu to __Resource__.
 
-#### __[C#] LoadLayout call with a string argument__
-{{region radvirtualkeyboard-keys-layout-2}}	
+__LoadLayout call with a string argument__
+```C#	
 	virtualKeyboard.LoadLayout(xmlString);
-{{endregion}}
+```
 
-#### __[C#] LoadLayout call with a Stream argument__
-{{region radvirtualkeyboard-keys-layout-3}}	
+__LoadLayout call with a Stream argument__
+```C#	
 	StreamResourceInfo info = Application.GetResourceStream(new Uri(@"/WpfApplication;component/keys-layout-file.xml", UriKind.Relative));
 	virtualKeyboard.LoadLayout(info.Stream);
-{{endregion}}
+```
 
 When the file is loaded, the control parses the XML and provides its values to the key factory that creates view models for the buttons. The key factory can be accessed or replaced through the `KeyFactory` property of `RadVirtualKeyboard`. The default key factory implementation is the `DefaultKeyFactory` class. Implementing a custom factory class will allow you to provide extended key view models (`BaseKeyViewModel`) in case you need to customize the keys appearance and functionalities.
 
@@ -276,10 +276,10 @@ When the file is loaded, the control parses the XML and provides its values to t
 
 When the `LoadLayout` method is used to load custom layout, the `DefaultKeyboardLayout` property is no longer applicable. Changing its value won't do anything. To enable the property again and return the default keys layouts, call the `LoadLayout` method with a `null` value.
 
-#### __[C#] Reset the default layout__
-{{region radvirtualkeyboard-keys-layout-4}}		
+__Reset the default layout__
+```C#		
 	  virtualKeyboard.LoadLayout(filename:null);
-{{endregion}}
+```
 
 ## Keys Factory
 

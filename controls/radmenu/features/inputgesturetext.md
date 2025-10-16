@@ -15,9 +15,9 @@ The __InputGestureText__ property of __RadMenuItem__ is used to display an input
 
 The following example demonstrates the use of the __InputGestureText__ property:
 
-#### __XAML__
 
-{{region xaml-radmenu-features-inputgesturetext_01}}
+
+```XAML
 	<telerik:RadMenu>
 	    <telerik:RadMenuItem Header="File" />
 	    <telerik:RadMenuItem Header="Edit">
@@ -42,7 +42,7 @@ The following example demonstrates the use of the __InputGestureText__ property:
 	        <telerik:RadMenuItem Header="Custom Command" Command="{Binding MyCommand}" InputGestureText="Ctrl+P" />
 	    </telerik:RadMenuItem>
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 ![Rad Menu-Features-Input Gesture Text-01](images/RadMenu_Features_InputGestureText_01.png)
 

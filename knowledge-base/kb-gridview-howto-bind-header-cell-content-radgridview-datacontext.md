@@ -30,11 +30,11 @@ How to bind the header cells' content to properties in RadGridView's DataContext
 
 As the DataContext of the **GridViewHeaderCell** is different than the one of its parent RadGridView control, in order to bind properties of its content to such in the viewmodel, you need to use a **RelativeSource** binding.
 
-#### __[XAML]__
-{{region xaml-kb-gridview-howto-bind-header-cell-content-radgridview-datacontext-0}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}">
 		<telerik:GridViewDataColumn.Header>
 			<TextBlock Text="{Binding DataContext.NamePropertyString, RelativeSource={RelativeSource AncestorType=telerik:RadGridView}}" />
 		</telerik:GridViewDataColumn.Header>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```

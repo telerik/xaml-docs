@@ -32,8 +32,8 @@ How to change windows handedness settings in code behind.
 
 To change the Windows Handedness settings in code, you can set the __SystemParameters.MenuDropAlignment__ property. The method need to be called after the InitializeComponent() method.
 
-#### __[C#]__
-{{region kb-common-change-windows-handedness-settings-0}}
+
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -53,4 +53,4 @@ To change the Windows Handedness settings in code, you can set the __SystemParam
 			field.SetValue(null, false);
 		}
 	}
-{{endregion}}
+```

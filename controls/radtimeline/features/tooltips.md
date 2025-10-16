@@ -18,9 +18,9 @@ For the purpose we'll need a timeline, which is bound to a collection of custom 
 
 We create a sample class with two properties - Duration of TimeSpan type and Date of DateTime type. Then set values for the properties and create a method that returns a collection of business objects. This way the Timeline will be able to display information about the currently hovered data point via the ToolTipTemplate.
 
-#### __C#__
 
-{{region radtimeline-tooltip_support_1}}
+
+```C#
 	public class Product
 	    {
 		public TimeSpan Duration { get; set; }
@@ -49,11 +49,8 @@ We create a sample class with two properties - Duration of TimeSpan type and Dat
 			return result;
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-tooltip_support_2}}
+```
+```VB.NET
 	Public Class Product
 		Public Property Duration() As TimeSpan
 		Public Property [Date]() As Date
@@ -77,13 +74,13 @@ We create a sample class with two properties - Duration of TimeSpan type and Dat
 			Return result
 		End Function
 	End Class
-{{endregion}}
+```
 
 Our *ViewModel* class consists of a single property - the collection of business objects that will be used as itemssource for the Timeline. In the constructor of the class call the GetData method we previously created in our Product class with as many items as you want to generate for your Timeline.
 
-#### __C#__
 
-{{region radtimeline-tooltip_support_3}}
+
+```C#
 	public class ExampleViewModel : ViewModelBase
 	{
 		private ObservableCollection<Product> _data;
@@ -108,11 +105,8 @@ Our *ViewModel* class consists of a single property - the collection of business
 			this.Data = Product.GetData(15);
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-tooltip_support_4}}
+```
+```VB.NET
 	   Public Class ExampleViewModel
 		   Inherits ViewModelBase
 			Private _data As ObservableCollection(Of Product)
@@ -132,13 +126,13 @@ Our *ViewModel* class consists of a single property - the collection of business
 				Me.Data = Product.GetData(15)
 			End Sub
 	   End Class
-{{endregion}}
+```
 
 Now we need to define our tooltip behavior and set its tooltip template. It will display the value of the hovered Timeline item.
 
-#### __XAML__
 
-{{region radtimeline-tooltip_support_0}}
+
+```XAML
 	 <UserControl.DataContext>
 	        <local:ExampleViewModel/>
 	    </UserControl.DataContext>
@@ -177,15 +171,15 @@ Now we need to define our tooltip behavior and set its tooltip template. It will
 	            </telerik:RadTimeline.Intervals>
 	        </telerik:RadTimeline>
 	    </Grid>
-{{endregion}}
+```
 
 
 
 Aside from binding the Timeline, we added a binding converter. Its purpose is to show you how you may set custom foreground for the tooltip information based on condition. You may find the DurationToBrushConverter implementations in the code snippet below:        
 
-#### __C#__
 
-{{region radtimeline-tooltip_support_5}}
+
+```C#
 	public class DurationToBrushConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -207,11 +201,8 @@ Aside from binding the Timeline, we added a binding converter. Its purpose is to
 			throw new NotImplementedException();
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtimeline-tooltip_support_6}}
+```
+```VB.NET
 	 Public Class DurationToBrushConverter
 		 Implements IValueConverter
 			Public Function Convert(ByVal value As Object, ByVal targetType As Type, ByVal parameter As Object, ByVal culture As System.Globalization.CultureInfo) As Object
@@ -229,7 +220,7 @@ Aside from binding the Timeline, we added a binding converter. Its purpose is to
 				Throw New NotImplementedException()
 			End Function
 	 End Class
-{{endregion}}
+```
 
 A sample tooltip can be seen below:
 ![Rad Time Line-tooltip](images/RadTimeLine-tooltip.PNG)

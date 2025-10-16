@@ -28,8 +28,8 @@ How to show a CheckBox in merged cells inside a column bound to a boolean proper
 
 Create a [MergedCellsStyleSelector]({%slug gridview-merged-cells-style-selector%}) and return a custom style targeting __GridViewMergedCell__ with its ContentTemplate containing a CheckBox. You can return this style only when the __Value__ of the __MergedCellInfo__ is of type bool.
 
-#### __[XAML]__
-{{region kb-gridview-merged-cells-in-checkbox-column-0}}
+
+```XAML
 	<Grid>
         <Grid.Resources>
             <DataTemplate x:Key="CheckBoxContentTemplate">
@@ -49,11 +49,11 @@ Create a [MergedCellsStyleSelector]({%slug gridview-merged-cells-style-selector%
                              MergedCellsStyleSelector="{StaticResource MergedCellStyleSelector}">
         </telerik:RadGridView>
     </Grid>
-{{endregion}}
+```
 
 
-#### __[C#]__
-{{region kb-gridview-merged-cells-in-checkbox-column-1}}
+
+```C#
 	public class MergedCellsStyleSelector : StyleSelector
     {
         public Style CheckBoxStyle { get; set; }
@@ -70,4 +70,4 @@ Create a [MergedCellsStyleSelector]({%slug gridview-merged-cells-style-selector%
             return base.SelectStyle(item, container);
         }
     }
-{{endregion}}
+```

@@ -24,17 +24,17 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 <!-- -->
 > Sometime it is necessary to adjust the horizontal and vertical alignments when you have changed the orientation - all this depends on the container that holds the __ToolBar__ or the tray control.					
 
-#### __XAML__
 
-{{region radtoolbar-orientation_1}}
+
+```XAML
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
 	<telerik:RadToolBar Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
 	<telerik:RadToolBarTray Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" />
-{{endregion}}
+```
 
-#### __C#__
 
-{{region radtoolbar-orientation_0}}
+
+```C#
 	using Telerik.Windows.Controls;
 
 	private void ToggleOrientation_Click(object sender, RoutedEventArgs e)
@@ -58,11 +58,8 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 			this.myToolbar.HorizontalAlignment = HorizontalAlignment.Stretch;
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtoolbar-orientation_0}}
+```
+```VB.NET
 	Imports Telerik.Windows.Controls
 
 	Private Sub ToggleOrientation_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -82,7 +79,7 @@ The __Orientation__ property is of type __System.Windows.Controls.Orientation__.
 			Me.myToolbar.HorizontalAlignment = HorizontalAlignment.Stretch
 		End If
 	End Sub	
-{{endregion}}
+```
 
 ## Preview
 ![{{ site.framework_name }} RadToolBar Orientation](images/RadToolBar_orientation.png)

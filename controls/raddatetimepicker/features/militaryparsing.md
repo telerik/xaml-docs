@@ -44,21 +44,21 @@ The only possible Time format is:
 
 So, let's have the following RadDateTimePicker:
 
-#### __XAML__
 
-{{region xaml-raddatetimepicker-features-militaryparsing_0}}
+
+```XAML
 	<telerik:RadDateTimePicker x:Name="radDateTimePicker" Width="200" />
-{{endregion}}
+```
 
 Here is how the military parsing can be set:
 
-#### __C#__
 
-{{region cs-raddatetimepicker-features-militaryparsing_1}}
+
+```C#
 	this.radDateTimePicker.Culture = new System.Globalization.CultureInfo("en-US");
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortDatePattern = "ddMMyyyy";
 	this.radDateTimePicker.Culture.DateTimeFormat.ShortTimePattern = "HHmm";
-{{endregion}}
+```
 
 And the result is:
 

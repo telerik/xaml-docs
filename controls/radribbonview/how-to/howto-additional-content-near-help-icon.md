@@ -16,8 +16,8 @@ The purpose of this tutorial is to show you how to add additional content near t
 
 To add additional content near the help button, you should use the __RadRibbonView__'s __TabStripAdditionalContent__ property. It is of type object and you can insert any content.
 
-#### __XAML__
-{{region radribbonview-howto-additional-content-near-help-buton_0}}
+
+```XAML
 	<telerik:RadRibbonView x:Name="xRibbonView" HelpButtonVisibility="Visible">
 	    <telerik:RadRibbonView.TabStripAdditionalContent>
 	        <StackPanel Orientation="Horizontal">
@@ -27,6 +27,6 @@ To add additional content near the help button, you should use the __RadRibbonVi
 	        </StackPanel>
 	    </telerik:RadRibbonView.TabStripAdditionalContent>
 	</telerik:RadRibbonView>
-{{endregion}}
+```
 
 ![Rad Ribbon View How To Additional Content](images/RadRibbonView_HowTo_Additional_Content.png)

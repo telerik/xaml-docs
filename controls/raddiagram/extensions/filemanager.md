@@ -26,8 +26,8 @@ FileManager class exposes two methods: LoadFromFile and SaveToFile. Depending on
 
 To demonstrate this extension we are going to create a very simple application. First we can go ahead and declare the RadDiagram in XAML and add some shapes. Then we can add two buttons for save and load behavior.
 
-#### __[XAML] Example 1: Specify your RadDiagram in XAML__
-{{region xaml-raddiagram-extensions-filemanager_0}}
+__Example 1: Specify your RadDiagram in XAML__
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"/>
@@ -45,12 +45,12 @@ To demonstrate this extension we are going to create a very simple application. 
 			<telerik:RadButton Content="Save"  Width="200" HorizontalAlignment="Right" Click="Save_Click"/>
 		</Grid>
 	</Grid>	
-{{endregion}}
+```
 
 Then we can subscribe to the Click event of the Save/Load buttons. The next step is to declare our FileManager and set its CurrentFile property. This property sets the path where the XML file will be saved on the user Disk.
 
-#### __[C#] Example 2: Specify FileManager and save/load the RadDiagram__
-{{region cs-raddiagram-extensions-filemanager_1}}
+__Example 2: Specify FileManager and save/load the RadDiagram__
+```C#
     public partial class MainWindow : Window
     {
         FileManager fileManager;
@@ -71,7 +71,7 @@ Then we can subscribe to the Click event of the Save/Load buttons. The next step
             fileManager.SaveToFile(FileLocation.Disk);
         }
     }
-{{endregion}}
+```
 
 
 ## See Also

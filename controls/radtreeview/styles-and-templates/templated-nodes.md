@@ -17,9 +17,7 @@ Here is how the final result should look like:
 
 For the purpose of this tutorial will be used the following treeview declaration: 
 
-#### __XAML__
-
-{{region radtreeview-styles-and-templates-templated-nodes_0}}
+```XAML
 	<telerik:RadTreeView IsExpandOnSingleClickEnabled="True">
 	    <telerik:RadTreeViewItem Header="THE FINAL">
 	        <telerik:RadTreeViewItem Header="Lakers">
@@ -50,7 +48,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 	        </telerik:RadTreeViewItem>
 	    </telerik:RadTreeViewItem>
 	</telerik:RadTreeView>
-	{{endregion}}
+```
 
 ![{{ site.framework_name }} RadTreeView Sample Declaration](images/RadTreeView_TemplatingTemplatedNodes_001.PNG)
 
@@ -58,9 +56,7 @@ For the purpose of this tutorial will be used the following treeview declaration
 
 	Declare the following style in the resources of your application. It will set the __ItemsPanel__ to a __StackPanel__ with __Horizontal__ orientation: 
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_1}}
+	```XAML
 		<Style TargetType="telerik:RadTreeViewItem" x:Key="TreeViewItemStyle">
 			<Setter Property="IsExpanded" Value="True"></Setter>
 			<Setter Property="ItemsPanel">
@@ -72,11 +68,9 @@ For the purpose of this tutorial will be used the following treeview declaration
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
-
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_2}}
+	```
+	
+	```XAML
 		<Style TargetType="{x:Type telerik:RadTreeViewItem}" x:Key="TreeViewItemStyle">
 			<Setter Property="IsExpanded" Value="True"></Setter>
 			<Setter Property="ItemsPanel">
@@ -88,13 +82,11 @@ For the purpose of this tutorial will be used the following treeview declaration
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+	```
 
 	Apply this style to the __ItemContainerStyle__ of the treeview and each treeview item. 
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_3}}
+	```XAML
 		<telerik:RadTreeView IsExpandOnSingleClickEnabled="True" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
 			<telerik:RadTreeViewItem Header="THE FINAL" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
 				<telerik:RadTreeViewItem Header="Lakers" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
@@ -125,13 +117,11 @@ For the purpose of this tutorial will be used the following treeview declaration
 				</telerik:RadTreeViewItem>
 			</telerik:RadTreeViewItem>
 		</telerik:RadTreeView>
-		{{endregion}}
+	```
 
 	Additionally you need to set the __ItemsPanel__ of the treeview: 
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_4}}
+	```XAML
 		<telerik:RadTreeView IsExpandOnSingleClickEnabled="True"
 			ItemContainerStyle="{StaticResource TreeViewItemStyle}">
 			<telerik:RadTreeView.ItemsPanel>
@@ -141,8 +131,8 @@ For the purpose of this tutorial will be used the following treeview declaration
 				</ItemsPanelTemplate>
 			</telerik:RadTreeView.ItemsPanel>
 			<telerik:RadTreeViewItem Header="THE FINAL" ItemContainerStyle="{StaticResource TreeViewItemStyle}">
-		......................
-		{{endregion}}
+			<!-- other XAML here -->
+	```
 
 	So far you should have the following result: 
 	![{{ site.framework_name }} RadTreeView Horizontal StackPanel](images/RadTreeView_TemplatingTemplatedNodes_010.PNG)
@@ -153,9 +143,7 @@ The next step is to make some visual enhancements in the tree.
 
 	Add the following style declaration in your resources and apply it on the __ExpanderStyle__ property of the treeview: 
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_5}}
+	```XAML
 		<Style TargetType="ToggleButton" x:Key="ExpanderStyle">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
@@ -218,11 +206,9 @@ The next step is to make some visual enhancements in the tree.
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+	```
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_6}}
+	```XAML
 		<Style TargetType="{x:Type ToggleButton}" x:Key="ExpanderStyle">
 			<Setter Property="IsEnabled" Value="True" />
 			<Setter Property="IsTabStop" Value="False" />
@@ -285,24 +271,20 @@ The next step is to make some visual enhancements in the tree.
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
-		
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_7}}
+	```
+	
+	```XAML
 		<telerik:RadTreeView IsExpandOnSingleClickEnabled="True"
 			ItemContainerStyle="{StaticResource TreeViewItemStyle}"
 			ExpanderStyle="{StaticResource ExpanderStyle}">
-		{{endregion}}
+	```
 
 	And the effect can be seen on the next snapshot:
 	![{{ site.framework_name }} RadTreeView Horizontal Expander Style](images/RadTreeView_TemplatingTemplatedNodes_020.PNG)
 
 * You need to create the template for the treeview nodes. Add the following __ControlTemplate__ declaration to your application resources: 
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_8}}
+	```XAML
 		<ControlTemplate TargetType="telerik:RadTreeViewItem"
 		   x:Key="TreeViewItemDefaultTemplate">
 			<Grid Margin="2" Height="Auto" VerticalAlignment="Top">
@@ -360,11 +342,9 @@ The next step is to make some visual enhancements in the tree.
 				<ItemsPresenter Grid.Row="1" x:Name="ItemsHost" Visibility="Collapsed" />
 			</Grid>        
 		</ControlTemplate>
-		{{endregion}}
-		
-	#### __XAML__
+	```
 
-	{{region radtreeview-styles-and-templates-templated-nodes_9}}
+	```XAML
 		<ControlTemplate TargetType="{x:Type telerik:RadTreeViewItem}"
 		   x:Key="TreeViewItemDefaultTemplate">
 			<Grid Margin="2" Height="Auto" VerticalAlignment="Top">
@@ -422,13 +402,11 @@ The next step is to make some visual enhancements in the tree.
 				<ItemsPresenter Grid.Row="1" x:Name="ItemsHost" Visibility="Collapsed" />
 			</Grid>        
 		</ControlTemplate>
-		{{endregion}}
+	```
 
 * In your __TreeViewItemStyle__ set the __Template__ property to the __ControlTemplate__ declared on the previous step: 
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_10}}
+	```XAML
 		<Style TargetType="telerik:RadTreeViewItem" x:Key="TreeViewItemStyle">
 			<Setter Property="Template" Value="{StaticResource TreeViewItemDefaultTemplate}" />
 			<Setter Property="IsExpanded" Value="True"></Setter>
@@ -441,11 +419,9 @@ The next step is to make some visual enhancements in the tree.
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+	```
 
-	#### __XAML__
-
-	{{region radtreeview-styles-and-templates-templated-nodes_11}}
+	```XAML
 		<Style TargetType="{x:Type telerik:RadTreeViewItem}" x:Key="TreeViewItemStyle">
 			<Setter Property="Template" Value="{StaticResource TreeViewItemDefaultTemplate}" />
 			<Setter Property="IsExpanded" Value="True"></Setter>
@@ -458,31 +434,18 @@ The next step is to make some visual enhancements in the tree.
 				</Setter.Value>
 			</Setter>
 		</Style>
-		{{endregion}}
+	```
 
 	We are one step closer to the desired result: 
 	![{{ site.framework_name }} RadTreeView Score Table](images/RadTreeView_TemplatingTemplatedNodes_030.PNG)
 
 In order to add animation to your treeview you need to use {% if site.site_name == 'WPF' %}triggers{% endif %}{% if site.site_name == 'Silverlight' %} the Visual State Manager{% endif %}. {% if site.site_name == 'Silverlight' %}Open your application in Expression Blend.{% endif %}
-
-{% if site.site_name == 'Silverlight' %}
-* Find the __TreeViewItemDefaultTemplate__in the Resources pane and open it for edit:
-![{{ site.framework_name }} RadTreeView Window Resources in Blend](images/RadTreeView_TemplatingTemplatedNodes_040.PNG)
-Add the following visual states and set the following properties:
-{% endif %}
-
 * __Selected__
 	* Set the __SelectionVisual__'s __Visibility__ to __Visible__
 * __Focused__
 	* Set the __FocusVisual__'s __Visibility__ to __Visible__
-	
-{% if site.site_name == 'Silverlight' %}
-Here is the final XAML for the __TreeViewItemDefaultTemplate__:
-{% endif %}
 
-#### __XAML__
-
-{{region radtreeview-styles-and-templates-templated-nodes_12}}
+```XAML
 	<ControlTemplate TargetType="telerik:RadTreeViewItem"
 	   x:Key="TreeViewItemDefaultTemplate">
 	    <Grid Margin="2" Height="Auto" VerticalAlignment="Top">
@@ -615,23 +578,17 @@ Here is the final XAML for the __TreeViewItemDefaultTemplate__:
 	        <ItemsPresenter Grid.Row="1" x:Name="ItemsHost" Visibility="Collapsed" />
 	    </Grid>
 	</ControlTemplate>
-	{{endregion}}
+```
 
-{% if site.site_name == 'WPF' %}
-
-Add three triggers to your control template, which are activated when the treeview item is selected, focused and expanded.{% endif %}
+Add three triggers to your control template, which are activated when the treeview item is selected, focused and expanded.
 
 * When the __IsSelected__ property is __True__, set the __SelectionVisual's__ visibility to __Visible__. Accordingly, when the __IsSelected__ property is __False__, set the __SelectionVisual's__ visibility to __Hidden__. 
 * When the __IsFocused__ property is __True__, set the __FocusVisual's__ visibility to __Visible__. Accordingly, when the __IsFocused__ property is __False__, set the __FocusVisual's__ visibility to __Hidden__. 
 * When the __IsExpanded__ property is __True__, set the __ItemHost's__ visibility to __Visible__. Accordingly, when the __IsExpanded__ property is __False__, set the __ItemHost's__ visibility to __Hidden__.
 
-{% if site.site_name == 'WPF' %}
 Here is the complete XAML for __ControlTemplate.Triggers__ section and the final result:
-{% endif %}
 
-#### __XAML__
-
-{{region radtreeview-styles-and-templates-templated-nodes_13}}
+```XAML
 	<ControlTemplate.Triggers>
 	    <Trigger Property="IsSelected" Value="True">
 	        <Trigger.EnterActions>
@@ -735,7 +692,7 @@ Here is the complete XAML for __ControlTemplate.Triggers__ section and the final
 	        </Trigger.ExitActions>
 	    </Trigger>
 	</ControlTemplate.Triggers>
-	{{endregion}}
+```
 
 And here is the final result:
 ![{{ site.framework_name }} RadTreeView Final Score Table](images/RadTreeView_TemplatingTemplatedNodes_060.PNG)

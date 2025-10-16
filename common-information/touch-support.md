@@ -62,24 +62,21 @@ RadSyntaxEditor | Scroll | Zoom | Click (move caret to position) | Selection mar
 
 As of version __Q2 2014__, we have introduced a new __IsTouchEnabled__ property, which controls the state of TouchManager on application level. It is enabled by default, but setting it to **False** will prevent any touch events to be fired.
 
-#### __[C#] Example 1: Disable touch support__
+__Example 1: Disable touch support__
 
-{{region cs-touch-support-1}}       
+```C#       
     public App()
     {
         TouchManager.IsTouchEnabled = false;
         this.InitializeComponent();
     }
-{{endregion}}
-		
-#### __[VB.NET] Example 1: Disable touch support__
-
-{{region vb-touch-support-1}}	
+```
+```VB.NET	
     Public Sub New()
 		TouchManager.IsTouchEnabled = False
 		Me.InitializeComponent()
 	End Sub
-{{endregion}}
+```
 
 >Disabling the IsTouchEnabled setting will unsubscribe only from the events provided by the TouchManager. The native events will still be triggered.
 

@@ -16,9 +16,9 @@ This article describes how you can create a custom SpecialSlot, add custom prope
 
 Let's for example have the following RadScheduleView grouped by "Calendar" ResourceType:
 
-#### __XAML__
 
-{{region radscheduleview-features-customslots_0}}
+
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>				
 			<telerik:WeekViewDefinition  />
@@ -38,15 +38,15 @@ Let's for example have the following RadScheduleView grouped by "Calendar" Resou
 			</telerik:GroupDescriptionCollection>
 		</telerik:RadScheduleView.GroupDescriptionsSource>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 We will define a custom Slot class, create a collection of custom Slot objects which then will be set to the SpecialSlotsSource property.Also in this tutorial we will crete custom ScheduleViewStyleSelector class and define the needed Styles.
 
 * First, create a class which inherits __Telerik.Windows.Controls.ScheduleView.Slot__ class:
 
-#### __C#__
 
-{{region radscheduleview-features-customslots_1}}
+
+```C#
 	public class BreakSlot : Slot
 	{
 		public string ImageSource { get; set; }
@@ -75,15 +75,15 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			}
 		}
 	}
-{{endregion}}
+```
 
 >Note how __Copy__ and __CopyFrom__ methods in the custom slot class are overriden!
 
 * Then you should create the collection of __BreakSlot__ objects and set their additional properties:
 
-#### __C#__
 
-{{region radscheduleview-features-customslots_2}}
+
+```C#
 	this.SpecialSlots = new ObservableCollection<Slot>()
 	{
 		new BreakSlot( new DateTime(2012, 1, 23, 12, 0, 0), new DateTime(2012, 1, 23, 13, 0, 0)) {
@@ -97,13 +97,13 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			Description = "coffee break"
 		}
 	};
-{{endregion}}
+```
 
 * The next step is to create the __ScheduleViewStyleSelector__ class:
 
-#### __C#__
 
-{{region radscheduleview-features-customslots_3}}
+
+```C#
 	public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
 	{
 		private Style breakSlotStyle;
@@ -130,13 +130,13 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			return base.SelectStyle(item, container, activeViewDefinition);
 		}
 	}
-{{endregion}}
+```
 
 * and to define the Style:
 
-#### __XAML__
 
-{{region radscheduleview-features-customslots_4}}
+
+```XAML
 	<local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
 		<local:SpecialSlotStyleSelector.BreakSlotStyle>
 			<Style TargetType="telerik:HighlightItem">
@@ -155,15 +155,15 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 			</Style>
 		</local:SpecialSlotStyleSelector.BreakSlotStyle>
 	</local:SpecialSlotStyleSelector>
-{{endregion}}
+```
 
 >If you're using [Implicit Styles]({%slug styling-apperance-implicit-styles-overview%}) please, notice that the Style that targets the __HighlightItem__ should be based on the default HighlightItemStyle.
 
 * Finally, bind them to __SpecialSlotsSource__ and __SpecialSlotsStyleSelector__ properties:
 
-#### __XAML__
 
-{{region radscheduleview-features-customslots_5}}
+
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 				SpecialSlotsSource="{Binding SpecialSlots}"
 				SpecialSlotStyleSelector="{StaticResource SpecialSlotStyleSelector}">
@@ -172,7 +172,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 		</telerik:RadScheduleView.ViewDefinitions>
 		...
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 Here is the result:
 

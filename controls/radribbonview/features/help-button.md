@@ -12,10 +12,10 @@ position: 10
 
 The `RadRibbonView` control allows you to display a help button, which is positioned on the right side of the component. To do so, set the `HelpButtonVisibility` property to `Visible`.
 
-#### __[XAML] Displaying the help button__
-{{region radribbonview-help-button-0}}
+__Displaying the help button__
+```XAML
     <telerik:RadRibbonView HelpButtonVisibility="Visible"/>
-{{endregion}}
+```
 
 __RadRibbonView with displayed help button__
 
@@ -25,17 +25,17 @@ __RadRibbonView with displayed help button__
 
 To set a different icon from the default one, you can use the `HelpButtonImageSource` property.
 
-#### __[XAML] Changing the help button image__
-{{region radribbonview-help-button-1}}
+__Changing the help button image__
+```XAML
     <telerik:RadRibbonView HelpButtonImageSource="myHelpButton.png"/> 
-{{endregion}}
+```
 
 ## Set a Custom Style for the Help Button
 
 The RadRibbonView control exposes the `HelpButtonStyle` property that allows you to customize the help button. To do so, set a new Style that targets the `RadRibbonButton` element.
 
-#### __[XAML] Setting a custom Style for the help button__
-{{region radribbonview-help-button-2}}
+__Setting a custom Style for the help button__
+```XAML
     <telerik:RadRibbonView.HelpButtonStyle>
         <!--If NoXaml is used: BasedOn="{StaticResource HelpButtonStyle}"-->
         <Style TargetType="telerik:RadRibbonButton">
@@ -44,7 +44,7 @@ The RadRibbonView control exposes the `HelpButtonStyle` property that allows you
             <Setter Property="BorderThickness" Value="3"/>
         </Style>
     </telerik:RadRibbonView.HelpButtonStyle>
-{{endregion}}
+```
 
 __RadRibbonView with custom style set to the help button__
 
@@ -56,15 +56,15 @@ The RadRibbonView control allows you to set a command for the help button via th
 
 The following example showcases how to use the HelpCommand property:
 
-#### __[XAML] Defining the RadRibbonView__
-{{region radribbonview-help-button-3}}
+__Defining the RadRibbonView__
+```XAML
     <telerik:RadRibbonView HelpButtonVisibility="Visible">
         <telerik:RadRibbonTab Header="Home"/>
     </telerik:RadRibbonView>
-{{endregion}}
+```
 
-#### __[C#] Defining the DelegateCommand__
-{{region radribbonview-help-button-4}}
+__Defining the DelegateCommand__
+```C#
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -89,14 +89,14 @@ The following example showcases how to use the HelpCommand property:
             MessageBox.Show("Help Command Executed");
         }
     }
-{{endregion}}
+```
 
-#### __[XAML] Setting the HelpCommand property__
-{{region radribbonview-help-button-5}}
+__Setting the HelpCommand property__
+```XAML
     <telerik:RadRibbonView HelpButtonVisibility="Visible" HelpCommand="{Binding}">
         <telerik:RadRibbonTab Header="Home"/>
     </telerik:RadRibbonView>
-{{endregion}}
+```
 
 >tip In addition you can use the `HelpCommandParameter` and the `HelpCommandTarget` properties of the RadRibbonView in order to pass additional data to the command.
 >tip Find a runnable project of the previous example in the [WPF Samples GitHub repository](https://github.com/telerik/xaml-sdk/tree/master/RibbonView/HelpFunctionality).

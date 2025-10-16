@@ -16,9 +16,9 @@ Columns in RadGridView may be grouped in __column groups__ visually represented 
 
 To enable __column grouping__ you need to add **GridViewColumnGroup** instances to RadGridView's **ColumnGroups** collection as illustrated in **Example 1**.
      
-#### __[XAML] Example 1: Define column groups__
+__Example 1: Define column groups__
 
-{{region xaml-gridview-columns-column-headers_3}}
+```XAML
 	<telerik:RadGridView x:Name="RadGridView1" GridLinesVisibility="Vertical" Width="450" CanUserFreezeColumns="False" AutoGenerateColumns="False" IsFilteringAllowed="False" ShowGroupPanel="False" RowIndicatorVisibility="Collapsed">
 	    <telerik:RadGridView.ColumnGroups>
 	        <telerik:GridViewColumnGroup Name="VehicleInfo" Header="Vehicle info" />
@@ -32,7 +32,7 @@ To enable __column grouping__ you need to add **GridViewColumnGroup** instances 
 	        <telerik:GridViewDataColumn DataMemberBinding="{Binding Height}" ColumnGroupName="Dimensions" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 #### Figure 1: RadGridView with Column Groups
 
@@ -48,16 +48,16 @@ Note also that the __GridViewColumnGroup__ class has a __Header__ property which
 
 Column groups can also be __nested__. **Example 2** shows how this is achieved.
  
-#### __[XAML] Example 2: Nested column groups__
+__Example 2: Nested column groups__
 
-{{region xaml-gridview-columns-column-headers_5}}
+```XAML
 	<telerik:RadGridView.ColumnGroups>
 	    <telerik:GridViewColumnGroup Name="Data" Header="Data">
 	        <telerik:GridViewColumnGroup Name="VehicleInfo" Header="Vehicle info" />
 	        <telerik:GridViewColumnGroup Name="Dimensions" Header="Dimensions" />
 	    </telerik:GridViewColumnGroup>
 	</telerik:RadGridView.ColumnGroups>
-{{endregion}}
+```
 
 #### Figure 2: Nested column groups
 
@@ -67,9 +67,9 @@ Column groups can also be __nested__. **Example 2** shows how this is achieved.
 
 You can define a __custom header__ for the __GridViewColumnGroup__ through its **HeaderTemplate**.
 
-#### __[XAML] Example 3: Define GridViewColumnGroup.HeaderTemplate__
+__Example 3: Define GridViewColumnGroup.HeaderTemplate__
 
-{{region xaml-gridview-columns-column-headers_6}}
+```XAML
 	<telerik:GridViewColumnGroup Name="Data">
 	    <telerik:GridViewColumnGroup.HeaderTemplate>
 	        <DataTemplate>
@@ -77,7 +77,7 @@ You can define a __custom header__ for the __GridViewColumnGroup__ through its *
 	        </DataTemplate>
 	    </telerik:GridViewColumnGroup.HeaderTemplate>
 	</telerik:GridViewColumnGroup>
-{{endregion}}
+```
 
 In addition, you can style the headers by defining a style targeting the **CommonColumnHeader** element and setting it as the **HeaderStyle** for the **GridViewColumnGroup**. For information on how to apply an implicit style, have a look at the [Styling Column Groups]({%slug gridview-styling-merged-column-headers%}) article.
 
@@ -95,27 +95,24 @@ This mode is especially useful in more complicated scenarios where additional fe
 
 As of **R3 2020 SP** the ColumnGroups property is of type [RadObservableCollection]({%slug consuming-data-radobservablecollection%}) which exposes the **AddRange** and **RemoveRange** methods that can be used when adding or removing multiple groups at once in order to improve performance.
 
-#### __[C#] Example 4: Add or remove multiple column groups at once__
+__Example 4: Add or remove multiple column groups at once__
 
-{{region cs-gridview-columns-column-headers_8}}
+```C#
 	this.GridView.ColumnGroups.AddRange(groupsToAdd);
 	
 	this.GridView.ColumnGroups.RemoveRange(groupsToRemove);
-{{endregion}}
-
-#### __[VB.NET] Example 4: Add or remove multiple column groups at once__
-
-{{region vb-gridview-columns-column-headers_8}}
+```
+```VB.NET
 	Me.GridView.ColumnGroups.AddRange(groupsToAdd)
 
 	Me.GridView.ColumnGroups.RemoveRange(groupsToRemove)
-{{endregion}}
+```
 
 An alternative is to use the **SuspendNotifications** and **ResumeNotifications** methods prior and after adding or removing the groups.
 
-#### __[C#] Example 5: Suspend and resume notifications__
+__Example 5: Suspend and resume notifications__
 
-{{region cs-gridview-columns-column-headers_9}}
+```C#
 	this.GridView.ColumnGroups.SuspendNotifications();
 	foreach (var group in groupsToAdd)
 	{
@@ -128,11 +125,8 @@ An alternative is to use the **SuspendNotifications** and **ResumeNotifications*
 	}
 
 	this.GridView.ColumnGroups.ResumeNotifications();
-{{endregion}}
-
-#### __[VB.NET] Example 5: Suspend and resume notifications__
-
-{{region vb-gridview-columns-column-headers_9}}
+```
+```VB.NET
 	Me.GridView.ColumnGroups.SuspendNotifications()
 	For Each group In groupsToAdd
 		Me.GridView.ColumnGroups.Add(group)
@@ -143,7 +137,7 @@ An alternative is to use the **SuspendNotifications** and **ResumeNotifications*
 	Next group
 
 	Me.GridView.ColumnGroups.ResumeNotifications()
-{{endregion}}
+```
 
 ## Specific Scenarios
 
@@ -151,9 +145,9 @@ This section will cover some specific scenarios when using column groups.
 
 For the purpose of this demonstration we will define the following groups.
 
-#### __[XAML] Example 6: Sample column groups setup__
+__Example 6: Sample column groups setup__
 
-{{region xaml-gridview-columns-column-headers_7}}
+```XAML
 	<telerik:RadGridView.ColumnGroups>			
 		<telerik:GridViewColumnGroup Name="Level2group1">
 			<telerik:GridViewColumnGroup Name="Level1group11"/>
@@ -164,7 +158,7 @@ For the purpose of this demonstration we will define the following groups.
 			<telerik:GridViewColumnGroup Name="Level1group22"/>
 		</telerik:GridViewColumnGroup>
 	</telerik:RadGridView.ColumnGroups>
-{{endregion}}
+```
 
 In case the user moves the frozen column splitter in the middle of an existing column group, then it will be __divided into two separate groups__. **Figures 3 to 5** demonstrate this scenario.
 

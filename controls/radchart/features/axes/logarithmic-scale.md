@@ -18,35 +18,30 @@ If you have a very large range of values on the Y-Axis, the points with the smal
 
 Here is an example of a __RadChart__ that visualizes the following values - 10, 100, 1000, 10000, 100000, 1000000.
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-logarithmic-scale_0}}
+
+```XAML
 	<telerik:RadChart x:Name="radChart" />
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-logarithmic-scale_1}}
+
+```C#
 	this.radChart.ItemsSource = new int[] { 10, 100, 1000, 10000, 100000, 1000000 };
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-logarithmic-scale_2}}
+```
+```VB.NET
 	Me.radChart.ItemsSource = New Integer() {10, 100, 1000, 10000, 100000, 1000000}
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChart  ](images/RadChart_Features_Axes_Logarithmic_Scale_01.png)
 
 Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 
-#### __XAML__
 
-{{region xaml-radchart-features-axes-logarithmic-scale_3}}
+
+```XAML
 	<telerik:RadChart>
 	    <telerik:RadChart.DefaultView>
 	        <telerik:ChartDefaultView>
@@ -60,23 +55,18 @@ Here is the same __RadChart__, but this time with logarithmic Y-Axis.
 	        </telerik:ChartDefaultView>
 	    </telerik:RadChart.DefaultView>
 	</telerik:RadChart>
-{{endregion}}
+```
 
 
 
-#### __C#__
 
-{{region cs-radchart-features-axes-logarithmic-scale_4}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = true;
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region vb-radchart-features-axes-logarithmic-scale_5}}
+```
+```VB.NET
 	Me.radChart.DefaultView.ChartArea.AxisY.IsLogarithmic = True
-{{endregion}}
+```
 
 
 

@@ -26,22 +26,18 @@ Some ViewDefinitions have specific properties. Here is a list of specific proper
 
 	The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __WeekGroupHeaderStringFormat__ property in WeekView:        
 
-	#### __XAML__
-	{{region radscheduleview-viewdefinition-specificproperties_1}}
+	```XAML
 		<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 			<telerik:RadScheduleView.ViewDefinitions>
 				<telerik:WeekViewDefinition ShowWeekGroupHeaders="True" WeekGroupHeaderStringFormat="Week number {0}, {1:D}" />
 			</telerik:RadScheduleView.ViewDefinitions>
 		</telerik:RadScheduleView>
-	{{endregion}}
+	```
 
-	#### __C#__
-	{{region radscheduleview-viewdefinition-specificproperties_2}}
+	```C#
 		weekDefinition.ShowWeekGroupHeaders = true;
 		weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
-	{{endregion}}
-
-	Here is the end result:
+	```
 
 	![RadScheduleView with Week Headers](images/scheduleview_features_specific_properties_1.png)
 
@@ -51,11 +47,11 @@ Some ViewDefinitions have specific properties. Here is a list of specific proper
 
 ## MonthView specific properties
 
-Here is a list of the properties that are specific for MonthView:
+The MonthView has a single specific property:
 
-* __AllowCustomAppointmentSize__ (available as of Q2 2014 in UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) – sets whether the appointments with custom size can be displayed in the MonthViewDefinition. By default __AllowCustomAppointmentSize__ is set to __False__.
+__AllowCustomAppointmentSize__ (available as of Q2 2014 in UI for WPF – sets whether the appointments with custom size can be displayed in the MonthViewDefinition. By default __AllowCustomAppointmentSize__ is set to __False__.
 
-![radscheduleview how to set custom appointment heights](images/radscheduleview_how to_set_custom_appointment_heights.png)
+![radscheduleview set appointment size](images/radscheduleview_how_to_set_custom_appointment_heights.png)
 
 >You can check the [Set Custom Appointment Height]({%slug radscheduleview-howto-set-custom-appointment-height%}) article for more details on how to implement appointments with custom height in MonthViewDefinition.
 
@@ -73,49 +69,40 @@ Here is a list of the properties that are specific for TimelineView:
 
 It sets whether the appointments will be stretched to fill all available space in the TimeSlot - by default it is set to __False__.
 
-#### __XAML__
-
-{{region radscheduleview-viewdefinition-specificproperties_2}}
+```XAML
 	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:TimelineViewDefinition StretchAppointments="True" />
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 ![scheduleview features specific properties 2](images/scheduleview_features_specific_properties_2.png)
 
 ### ApplyStartEndTimeToEachDay
 
-When the __DayStartTime__ and __DayEndTime__ properties are set to the TimelineViewDefinition, the __DayStartTime__ property gets applied only for the first day of the displayed range of days, while the __DayEndTime__ only for the last one. In order to apply them for each day of the VisibleDays range, the __ApplyStartEndTimeToEachDay__ property (introduced in Q1 2016 of UI for {% if site.site_name == 'WPF' %}WPF{% endif %}{% if site.site_name == 'Silverlight' %}Silverlight{% endif %}) needs to be set to __True__. The __ApplyStartEndTimeToEachDay__ is of type bool - its default value is __False__.
+When the __DayStartTime__ and __DayEndTime__ properties are set to the TimelineViewDefinition, the __DayStartTime__ property gets applied only for the first day of the displayed range of days, while the __DayEndTime__ only for the last one. In order to apply them for each day of the VisibleDays range, the __ApplyStartEndTimeToEachDay__ property (introduced in Q1 2016 of UI for WPF needs to be set to __True__. The __ApplyStartEndTimeToEachDay__ is of type bool - its default value is __False__.
 
 The following example illustrates how to set the DayStartTime, DayEndTime and ApplyStartEndTimeToEachDay for the TimelineView:
 
-#### __XAML__
-
-{{region radscheduleview-viewdefinitions-configuration_3}}
+```XAML
 	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.ViewDefinitions>
 			<telerik:TimelineViewDefinition DayStartTime="13:00:00" DayEndTime="14:30:00" ApplyStartEndTimeToEachDay="True"/>
 		</telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __C#__
-
-{{region radscheduleview-viewdefinition-configuration_3}}
+```C#
 	timelineDefinition.DayStartTime = new TimeSpan(13, 00, 0);
 	timelineDefinition.DayEndTime = new TimeSpan(14, 30, 0);
 	timelineDefinition.ApplyStartEndTimeToEachDay = true;
-{{endregion}}
-
-#### __VB__
-
-{{region radscheduleview-viewdefinition-configuration_0}}
+```
+```VB
 	timelineDefinition.DayStartTime = New TimeSpan(13, 0, 0)
 	timelineDefinition.DayEndTime = New TimeSpan(14, 30, 0)
 	timelineDefinition.ApplyStartEndTimeToEachDay = True
-{{endregion}}
+```
 
 
 >important Please notice that the __DayStartTime__ property should always be set to a time earlier than the __DayEndTime__, otherwise the start and end times won't be applied for each day.

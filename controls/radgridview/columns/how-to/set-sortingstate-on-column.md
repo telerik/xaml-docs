@@ -18,11 +18,11 @@ Generally, each GridViewColumn enables you to set it in a specific sorting state
 
 As it comes to RadGridView, this approach represents custom sorting logic and as being such, you have to set one more property - __IsCustomSortingEnabled__:
 
-#### __[XAML] Example 1: Setting SortingState for a column.__
+__Example 1: Setting SortingState for a column.__
 
-{{region xaml-gridview-set-sortingstate-on-column_1}}
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" SortingState="Ascending" IsCustomSortingEnabled="True"/>
-{{endregion}}
+```
 
 Once you define all the necessary properties, the corresponding column will be set in an Ascending sorting order. Furthermore, you will be able to handle the Sorting event of the RadGridView and perform any additional logic that you need.
 

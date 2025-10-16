@@ -36,9 +36,9 @@ You can also set custom colors for the Children of the __RadTreeMap__ item by us
 
 Sets the properties for the nodes of the __RadTreeMap__ and __RadPivotMap__ control depending on a custom business logic.
 
-#### __C#__
 
-{{region radtreemap-mappings_0}}
+
+```C#
 	public class FileCustomMapping : CustomMapping
 	{
 		protected override void Apply(RadTreeMapItem treemapItem, object dataItem)
@@ -59,11 +59,8 @@ Sets the properties for the nodes of the __RadTreeMap__ and __RadPivotMap__ cont
 			treemapItem.ClearValue(RadTreeMapItem.BackgroundProperty);
 		}
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region radtreemap-mappings_1}}
+```
+```VB.NET
 	Public Class FileCustomMapping
 		Inherits CustomMapping
 		Protected Overrides Sub Apply(ByVal treemapItem As RadTreeMapItem, ByVal dataItem As Object)
@@ -79,4 +76,4 @@ Sets the properties for the nodes of the __RadTreeMap__ and __RadPivotMap__ cont
 			  treemapItem.ClearValue(RadTreeMapItem.BackgroundProperty)
 		End Sub
     End Class
-{{endregion}}
+```

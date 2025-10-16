@@ -15,8 +15,8 @@ RadChartView supports drawing of connector lines between the series' data points
 * __MinLengthThreshold__: Gets or sets the min length threshold. If a label connector is shorter than this threshold, the label connector is not drawn.
 * __Style__: Gets or sets the connectors' style. The property accepts a Style targeting a Path element.
 
-#### __[XAML] Example 1: Setting LabelConnectorsSettings in XAML__
-{{region xaml-radchartview-features-labels-label-connectors_0}}
+__Example 1: Setting LabelConnectorsSettings in XAML__
+```XAML
 	<telerik:RadPieChart Palette="Windows8">
 		<telerik:PieSeries ShowLabels="True" RadiusFactor="0.6">
 			<telerik:PieSeries.DataPoints>
@@ -36,7 +36,7 @@ RadChartView supports drawing of connector lines between the series' data points
 			</telerik:PieSeries.LabelConnectorsSettings>
 		</telerik:PieSeries>            
 	</telerik:RadPieChart>
-{{endregion}}
+```
 
 #### __Figure 1: Label connectors visual appearance__
 ![{{ site.framework_name }} RadChartView Label connectors visual appearance](images/radchartview-features-smart-labels-labelconnectors_01.png.png)
@@ -51,8 +51,8 @@ With the __R3 2017__ release of UI for WPF controls you can customize the labels
 
 In the following example we will demonstrate how to customize the connectors appearance by adding additional points. First we will create custom class which derives from __FunnelSeries__ and override the __GetLabelConnector()__ method. In this method we will create new points which the framework will used to draw the connector across them.
 
-#### __[C#] Example 2: Overriding GetLabelConnector() method__
-{{region radchartview-features-labels-label-connectors_1}}
+__Example 2: Overriding GetLabelConnector() method__
+```C#
 	public class CustomFunnelSeries : FunnelSeries
     {
         protected override List<Point> GetLabelConnector(ChartSeriesLabelPositionInfo info)
@@ -84,12 +84,12 @@ In the following example we will demonstrate how to customize the connectors app
             return middlePoint;
         }
     }
-{{endregion}}
+```
 
 Next we will create custom __IValueConverter__ class to change the __Stroke__ of every connector.
 
-#### __[C#] Example 3: Specifying CustomFunnelSeries in XAML__
-{{region radchartview-features-labels-label-connectors_1}}
+__Example 3: Specifying CustomFunnelSeries in XAML__
+```C#
 	public class DataPointToBrushConverter : IValueConverter
 	{
 		public object Convert(object value, System.Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -108,12 +108,12 @@ Next we will create custom __IValueConverter__ class to change the __Stroke__ of
 			throw new System.NotImplementedException();
 		}
 	}
-{{endregion}}
+```
 
 Now we can add the custom funnel series into the view.
 
-#### __[C#] Example 4: Specifying CustomFunnelSeries in XAML__
-{{region radchartview-features-labels-label-connectors_2}}
+__Example 4: Specifying CustomFunnelSeries in XAML__
+```C#
 	<Grid>
         <Grid.Resources>
             <local:DataPointToBrushConverter x:Key="dataPointToBrushConverter"/>
@@ -140,7 +140,7 @@ Now we can add the custom funnel series into the view.
             </local:CustomFunnelSeries>          
         </telerik:RadFunnelChart>
     </Grid>
-{{endregion}}
+```
 
 #### __Figure 2: Customized connectors visual appereance__
 ![{{ site.framework_name }} RadChartView Customized connectors visual appereance](images/radchartview-features-customized-labelconnectors_02.png)

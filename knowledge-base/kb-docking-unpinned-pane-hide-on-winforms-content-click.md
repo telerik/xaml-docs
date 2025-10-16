@@ -36,11 +36,11 @@ The issue occurs because of the interoperation between the WinForms and WPF tech
 
 To prevent this, change the FlyoutBehavior property of RadDocking from its default HoverFlyoutBehavior to [ClickFlyoutBehavior]({%slug raddocking-features-panes-flyoutbehavior%}).
 
-#### __[XAML]__
-{{region kb-docking-unpinned-pane-hide-on-winforms-content-click-0}}
+
+```XAML
 	<telerik:RadDocking.FlyoutBehavior>
 		<telerik:ClickFlyoutBehavior/>
 	</telerik:RadDocking.FlyoutBehavior>
-{{endregion}}
+```
 
 

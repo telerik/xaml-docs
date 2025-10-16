@@ -10,22 +10,7 @@ position: 0
 
 # Troubleshooting Common Problems
 
-
-
 This article describes common problems that can be encountered when using __RadRichTextBox__ and their solutions.
-      
-
-It contains the following topics:{% if site.site_name == 'Silverlight' %}
-
-* [Missing Dialogs, Menus, Unable to Save/Load a File, SpellChecker Underlines Correct Words;](#missing-dialogs-and-menus,-unable-to-save/load-a-file,-spellchecker-underlines-correct-words)
-
-* [Missing Images in Lightswitch;](#missing-images-in-lightswitch)
-
-* [Exception when inserting or manipulating images.](#Exception_when_inserting_or_manipulating_images){% endif %}{% if site.site_name == 'WPF' %}
-
-* [Missing Dialogs, Menus, Unable to Save/Load a File, SpellChecker Underlines Correct Words;](#missing-dialogs-and-menus,-unable-to-save/load-a-file,-spellchecker-underlines-correct-words)
-
-* [Exception when inserting or manipulating images.](#Exception_when_inserting_or_manipulating_images){% endif %}
 
 ## Missing Dialogs and Menus, Unable to Save/Load a File, SpellChecker Underlines Correct Words
 
@@ -52,9 +37,9 @@ More often than not, this is sufficient to get everything working. RadRichTextBo
 However, there are some cases when MEF cannot find the assemblies and load the types. One example is if you have enabled Library Caching or you are using Prism. In these cases, you can pass the types that RadRichTextBox uses in a TypeCatalog to RadCompositionInitializer as shown below:
         
 
-#### __[C#] Example 1: Defining the catalog of types used by RadRichTextBox__
+__Example 1: Defining the catalog of types used by RadRichTextBox__
 
-{{region radrichtextbox-troubleshooting-troubleshooting-common-problems_0}}
+```C#
 	RadCompositionInitializer.Catalog = new TypeCatalog(
 	    // format providers
 	    typeof(XamlFormatProvider),
@@ -106,9 +91,7 @@ However, there are some cases when MEF cannot find the assemblies and load the t
 	    typeof(UnprotectDocumentDialog),
 	    typeof(WatermarkSettingsDialog)
 	    );
-{{endregion}}
-
-
+```
 
 This can be done on application start-up or in the constructor of your page, just before InitializeComponent().
 
@@ -121,11 +104,7 @@ This can be done on application start-up or in the constructor of your page, jus
 
 ## Exception when inserting or manipulating images
 
-{% if site.site_name == 'Silverlight' %}
-RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.95).aspx). {% endif %}
-
-{% if site.site_name == 'WPF' %}
-RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.100).aspx).{% endif %}
+RadRichTextBox uses the RadBitmap class to visualize images. RadBitmap, on the other hand, internally uses [WritableBitmap](http://msdn.microsoft.com/en-us/library/system.windows.media.imaging.writeablebitmap(v=vs.100).aspx).
 
 Unfortunately, WritableBitmap is not always very efficient when populated with an extremely large image and on some occasions inserting or manipulating (for example, applying an effect to) such image might cause performance diminishment as well as an OutOfMemoryЕxception. At this point there is no workaround for the issue.
     
@@ -137,14 +116,14 @@ The exception is reproducible only in scenarios with heavy usage of new threads.
 
 #### **[C#] Example 2: Shut down Dispatcher of a thread**
 
-{{region radrichtextbox-troubleshooting-common-problems_1}}
+```C#
 
     Thread thread = new Thread(() =>
     {
         // Thread logic
         System.Windows.Threading.Dispatcher.CurrentDispatcher.BeginInvokeShutdown(System.Windows.Threading.DispatcherPriority.Normal);
     });
-{{endregion}}
+```
 
 ## See Also
 

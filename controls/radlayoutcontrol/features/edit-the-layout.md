@@ -19,15 +19,15 @@ position: 3
 
 __RadLayoutControl__ supports rerranging and editing its layout at runtime. You can change the position, alignment and size of each layout group or UIElement that is direct child of a group or the control itself. Also, each group or UIElement can be removed from the layout. In order to do that the control should be in edit mode. This is done by setting the __IsInEditMode__ property of __RadLayoutControl__ to __True__.
 
-#### __[XAML] Example 1: Setting IsInEditMode in XAML__
-{{region layoutcontrol-features-edit-the-layout-01}}
+__Example 1: Setting IsInEditMode in XAML__
+```XAML
 	<telerik:RadLayoutControl x:Name="layoutControl" IsInEditMode="True" />
-{{endregion}}
+```
 
-#### __[C#] Example 2: Setting IsInEditMode in code__
-{{region layoutcontrol-getting-started-layoutpanel-02}}
+__Example 2: Setting IsInEditMode in code__
+```C#
 	this.layoutControl.IsInEditMode = true;
-{{endregion}}
+```
 	
 Setting the property to True will allow you to select the visual elements and groups, and drag them around.
 

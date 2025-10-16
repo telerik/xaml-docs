@@ -26,9 +26,9 @@ __FirstVisibleTime__ property is applied only with the initial load of the Sched
 
 __Example 1__ shows how the property can be set in XAML and __Example 2__ – in code-behind.
 
-#### __[XAML] Example 1__
+__Example 1__
 
-{{region radscheduleview-features-timeruler-scrolling_0}}
+```XAML
 	<telerik:RadScheduleView x:Name="ScheduleView"
 	    AppointmentsSource="{Binding Appointments}"                                  
 	                         FirstVisibleTime="8:00:00">
@@ -36,13 +36,13 @@ __Example 1__ shows how the property can be set in XAML and __Example 2__ – in
 	          <telerik:DayViewDefinition />
 	     </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
-#### __[C#] Example 2__
+__Example 2__
 
-{{region radscheduleview-features-timeruler-scrolling_1}}
+```C#
 	ScheduleView.FirstVisibleTime = TimeSpan.FromHours(8);
-{{endregion}}
+```
 
 The next screenshot shows how the ScheduleView looks on its initial load with and without FirstVisibleTIme set:
 
@@ -54,11 +54,11 @@ __ScrollIntoView__ method is used to scroll the ActiveViewDefinition to a specif
 
 __Example 3__ shows how you can scroll to a particular appointment:
 
-#### __[C#] Example 3__
+__Example 3__
 
-{{region radscheduleview-features-timeruler-scrolling_2}}
+```C#
 	ScheduleView.ScrollIntoView(meetingApp);
-{{endregion}}
+```
 
 The TimeRuler is scrolled, so that the appointment is visible:
 
@@ -66,11 +66,11 @@ The TimeRuler is scrolled, so that the appointment is visible:
 
 Calling the same method with a second parameter set to true as shown in __Example 4__:
 
-#### __[C#] Example 4__
+__Example 4__
 
-{{region radscheduleview-features-timeruler-scrolling_3}}
+```C#
 	ScheduleView.ScrollIntoView(meetingApp, true);
-{{endregion}}
+```
 
 leads to the following result:
 
@@ -84,11 +84,11 @@ __ScrollTimeRuler__ method scrolls the TimeRuler to the specified time. It accep
 
 __Example 5__ demonstrates how the method can be used:
 
-#### __[C#] Example 5__
+__Example 5__
 
-{{region radscheduleview-features-timeruler-scrolling_4}}
+```C#
 	ScheduleView.ScrollTimeRuler(TimeSpan.FromHours(10), true);
-{{endregion}}
+```
 
 And the result is:
 

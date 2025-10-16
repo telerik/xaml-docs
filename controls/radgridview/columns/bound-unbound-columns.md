@@ -14,12 +14,12 @@ When populating __RadGridView__ with data two logical types of columns can be us
 
 __Bound columns__ represent the data from __RadGridView's__ ItemsSource. They support data related functionality such as [sorting]({%slug gridview-sorting-basics%}), [filtering]({%slug gridview-filtering-basic%}), [grouping]({%slug gridview-grouping-basics%}), [aggregates]({%slug gridview-grouping-aggregates%}), etc. Typically the bound columns are of type __GridViewDataColumn__ with its __DataMemberBinding__ property set.
 
-#### __XAML__
 
-{{region xaml-gridview-columns-bound-unbound-columns_0}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding EmployeeID}"
 	                Header="ID (Bound)" />
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 1](images/RadGridView_BoundUnboundColumns_1.png)
 
@@ -27,9 +27,9 @@ __Unbound__ columns are used for displaying a custom content. Such custom conten
 
 Here is an example for unbound column:
 
-#### __XAML__
 
-{{region xaml-gridview-columns-bound-unbound-columns_1}}
+
+```XAML
 	<telerik:GridViewColumn Header="Name">
 	    <telerik:GridViewColumn.CellTemplate>
 	        <DataTemplate>
@@ -43,7 +43,7 @@ Here is an example for unbound column:
 	        </DataTemplate>
 	    </telerik:GridViewColumn.CellTemplate>
 	</telerik:GridViewColumn>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 2](images/RadGridView_BoundUnboundColumns_2.png)
 
@@ -53,9 +53,9 @@ Using __GridViewDataColumn__, however, can give you the advantages of both the b
 
 Here is the above sample of an unbound column transformed into a template column.
 
-#### __XAML__
 
-{{region xaml-gridview-columns-bound-unbound-columns_2}}
+
+```XAML
 	<telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name (Unbound)">
 	    <telerik:GridViewDataColumn.CellTemplate>
 	        <DataTemplate>
@@ -69,7 +69,7 @@ Here is the above sample of an unbound column transformed into a template column
 	        </DataTemplate>
 	    </telerik:GridViewDataColumn.CellTemplate>
 	</telerik:GridViewDataColumn>
-{{endregion}}
+```
 
 ![Telerik {{ site.framework_name }} DataGrid Bound Unbound Columns 3](images/RadGridView_BoundUnboundColumns_3.png)
 

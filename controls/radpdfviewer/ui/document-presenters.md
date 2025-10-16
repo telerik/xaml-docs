@@ -46,11 +46,11 @@ Both of those presenters inherit the abstract __Telerik.Windows.Documents.UI.Fix
 This document presenter displays the pages in a vertical order and is used by default by __RadPdfViewer__. There is a fixed margin between the pages, and each pages is centered horizontally inside the __RadPdfViewer__ viewport. The code from **Example 1** shows how to set it as the currently used presenter.
         
 
-#### __[C#] Example 1: Using FixedDocumentPagesPresenter__
+__Example 1: Using FixedDocumentPagesPresenter__
 
-{{region radpdfviewer-ui-document-presenters_0}}
+```C#
 	this.radPdfViewer.FixedDocumentPresenter = this.radPdfViewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentPagesPresenter);
-{{endregion}}
+```
 
 
 
@@ -63,11 +63,11 @@ This document presenter displays the pages in a vertical order and is used by de
 This document presenter displays a single page inside the viewport. The page is vertically and horizontally centered. **Example 2** shows how to set the __FixedDocumentSinglePageViewPresenter__ as the currently used presenter.      
         
 
-#### __[C#] Example 2: Using FixedDocumentSinglePageViewPresenter__
+__Example 2: Using FixedDocumentSinglePageViewPresenter__
 
-{{region radpdfviewer-ui-document-presenters_1}}
+```C#
 	this.radPdfViewer.FixedDocumentPresenter = this.radPdfViewer.GetRegisteredPresenter(FixedDocumentPresenterNames.FixedDocumentSinglePageViewPresenter);
-{{endregion}}
+```
 
 
 

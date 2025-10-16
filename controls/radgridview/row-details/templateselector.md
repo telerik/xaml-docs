@@ -31,9 +31,9 @@ To do so follow these steps:
 
 1. Override its __SelectTemplate__ method(__Example 1__). Based on your conditions - you return the proper __DataTemplate__ that will be applied to the framework element (__RadGridView__ in our case).
 				
-#### __[C#] Example 1: Custom implementation of a DataTemplateSelector__
+__Example 1: Custom implementation of a DataTemplateSelector__
 
-{{region cs-radgridview-row-details-templateselector-0}}
+```C#
 	public class MyCustomRowDetailsTemplateSelector : DataTemplateSelector
 	{
 	    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
@@ -55,12 +55,12 @@ To do so follow these steps:
 	    public DataTemplate BigStadium { get; set; }
 	    public DataTemplate SmallStadium { get; set; }
 	}
-{{endregion}}
+```
 
 
-#### __[VB] Example 1: Custom implementation of a DataTemplateSelector__
+__Example 1: Custom implementation of a DataTemplateSelector__
 
-{{region vb-radgridview-row-details-templateselector-0}}
+```VB
 	Public Class MyCustomRowDetailsTemplateSelector
 		Inherits DataTemplateSelector
 	
@@ -82,7 +82,7 @@ To do so follow these steps:
 	   Friend Class Club
 	       Public Property StadiumCapacity As Integer
 	   End Class
-{{endregion}}
+```
 
 In this case we have two different DataTemplates that could be applied - __bigStadium__ and __smallStadium__. Depending on the underlying data we choose / select which template to apply.
 			
@@ -90,9 +90,9 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 1. In the XAML file define the template selector as a resource and set the properties of the __bigStadium__ and __smallStadium__(__Example 2__).
 				
 
-#### __[XAML] Example 2: Definition of the bigStadium and smallStadium DataTemplates__
+__Example 2: Definition of the bigStadium and smallStadium DataTemplates__
 
-{{region xaml-radgridview-row-details-templateselector_0}}
+```XAML
 	<Grid.Resources>
 	    <Style x:Key="playersGridRowBackground"
 	BasedOn="{StaticResource GridViewRowStyle}"
@@ -143,13 +143,13 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 	        </local:MyCustomRowDetailsTemplateSelector.SmallStadium>
 	    </local:MyCustomRowDetailsTemplateSelector>
 	</Grid.Resources>
-{{endregion}}
+```
 
 1. Finally, set the __RowDetailsTemplateSelector__ property of __RadGridView__(__Example 3__).
 				 
-#### __[XAML] Example 3: Definition of RowDetailsTemplateSelector property of RadGridView__
+__Example 3: Definition of RowDetailsTemplateSelector property of RadGridView__
 
-{{region xaml-radgridview-row-details-templateselector_1}}
+```XAML
 	<telerik:RadGridView Name="clubsGrid"
 	      Margin="5"
 	      AutoGenerateColumns="False"
@@ -166,7 +166,7 @@ In this case we have two different DataTemplates that could be applied - __bigSt
 	            Header="Stadium" />
 	    </telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 >tipYou can download a runnable project of the demonstrated example in [the online SDK repository](https://github.com/telerik/xaml-sdk/tree/master/GridView/RowDetailsTemplateSelector). In addition to make finding and browsing the examples easier, you can take advantage of our [SDK Samples Browser]({%slug sdk-samples-browser%}).                 
 

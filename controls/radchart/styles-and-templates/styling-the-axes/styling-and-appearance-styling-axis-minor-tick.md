@@ -18,14 +18,14 @@ The axis minor tick lines are part of the chart axis and are represented by the 
 
 Open your __RadChart__ project in Expression Blend. To add the dummy __Line__ control you have to go to the XAML view. To do that select *View -> Active Document View -> XAML View* from the menu. Declare a __Line__ control in your XAML.
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-axis-minor-tick_0}}
+
+```XAML
 	<Grid x:Name="LayoutRoot" Background="White">
 	    <!--...-->
 	    <Line />
 	</Grid>
-{{endregion}}
+```
 
 To go back to the design view select *View -> Active Document View -> Design View* from the menu. In the 'Objects and Timeline' pane select the newly created __Line__ control. And select *Object -> Edit Style -> Create Empty* from the menu*. *You will be prompted for the name of the style and where to be placed within your application.
 
@@ -37,19 +37,16 @@ After clicking the OK button, a style with target type __Line__ will be created 
 
 After finishing with the changes, it is time to set the style to the __MinorTickLineStyle__ property. It can be set only through the procedural code, which means that you have to go to the Visual Studio and modify the code-behind file of your UserControl.
 
-#### __C#__
 
-{{region cs-radchart-styling-and-appearance-styling-axis-minor-tick_2}}
+
+```C#
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.MinorTickLineStyle = this.Resources["AxisYMinorTickStyle"] as Style;
 	this.radChart.DefaultView.ChartArea.AxisY.AxisStyles.TickLineStyle = this.Resources["AxisYTickStyle"] as Style;
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-radchart-styling-and-appearance-styling-axis-minor-tick_3}}
+```
+```VB.NET
 	Me.RadChart.DefaultView.ChartArea.AxisY.AxisStyles.MinorTickLineStyle = TryCast(Me.Resources("AxisYMinorTickStyle"), Style)
 	Me.RadChart.DefaultView.ChartArea.AxisY.AxisStyles.TickLineStyle = TryCast(Me.Resources("AxisYTickStyle"), Style)
-{{endregion}}
+```
 
 
 
@@ -60,16 +57,16 @@ After finishing with the changes, it is time to set the style to the __MinorTick
 
 Here is the final XAML for the __Styles:__
 
-#### __XAML__
 
-{{region xaml-radchart-styling-and-appearance-styling-axis-minor-tick_4}}
+
+```XAML
 	<Style x:Key="AxisYMinorTickStyle" TargetType="Line">
 	    <Setter Property="Stroke" Value="Orange" />
 	</Style>
 	<Style x:Key="AxisYTickStyle" TargetType="Line">
 	    <Setter Property="Stroke" Value="Orange" />
 	</Style>
-{{endregion}}
+```
 
 
 

@@ -12,8 +12,8 @@ position: 7
 
 `RadCircularProgressBar` allows you to visualize a second progress indicator. This is intended for scenarios where the primary indicator depends on the process of the secondary one. To display the second progress indicator, set the `SecondaryValue` property.
 
-#### __[XAML] Setting the SecondaryValue property__
-{{region radcircularprogressbar-buffer-0}}
+__Setting the SecondaryValue property__
+```XAML
     <telerik:RadCircularProgressBar Name="radCircularProgressBar"
                                     Minimum="0"
                                     Maximum="100" 
@@ -40,7 +40,7 @@ position: 7
             </Grid>
         </telerik:RadCircularProgressBar.Content>
     </telerik:RadCircularProgressBar>
-{{endregion}}
+```
 
 ![RadCircularProgressBar with second value](images/radcircularprogressbar-buffer-0.png)
 
@@ -48,8 +48,8 @@ position: 7
 
 You can colorize the primary and secondary progress indicators of the control. To do so, set the `IndicatorFill` and `SecondaryIndicatorFill` properties.
 
-#### __[XAML] Setting the IndicatorFill and SecondaryIndicatorFill properties__
-{{region radcircularprogressbar-buffer-1}}
+__Setting the IndicatorFill and SecondaryIndicatorFill properties__
+```XAML
     <telerik:RadCircularProgressBar Name="radCircularProgressBar"
                                     Minimum="0"
                                     Maximum="100" 
@@ -57,7 +57,7 @@ You can colorize the primary and secondary progress indicators of the control. T
                                     SecondaryValue="75"
                                     IndicatorFill="Green" 
                                     SecondaryIndicatorFill="LimeGreen"/>
-{{endregion}}
+```
 
 __The following image shows the result from the first code snippet when the IndicatorFill and SecondaryIndicatorFill properties are set__
 

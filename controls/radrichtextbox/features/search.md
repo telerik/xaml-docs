@@ -19,9 +19,9 @@ __RadRichTextBox__ supports searching the contents of the document along with pr
 
 The simplest scenario – finding a string in the content of the document can be implemented with the following code:
 
-#### __C#__
 
-{{region radrichtextbox-features-search_0}}
+
+```C#
 	private void SelectAllMatches(string toSearch)
 	{
 	    this.radRichTextBox.Document.Selection.Clear(); // this clears the selection before processing
@@ -32,13 +32,8 @@ The simplest scenario – finding a string in the content of the document can be
 	        this.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition);
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-search_1}}
+```
+```VB.NET
 	Private Sub SelectAllMatches(ByVal toSearch As String)
 	 Me.radRichTextBox.Document.Selection.Clear() ' this clears the selection before processing
 	 Dim search As New DocumentTextSearch(Me.radRichTextBox.Document)
@@ -47,7 +42,7 @@ The simplest scenario – finding a string in the content of the document can be
 	  Me.radRichTextBox.Document.Selection.AddSelectionEnd(textRange.EndPosition)
 	 Next textRange
 	End Sub
-{{endregion}}
+```
 
 
 
@@ -55,68 +50,53 @@ Note that the __FindAll()__ method of the DocumentTextSearch class takes a strin
 
 You can use all kind of regular expressions, such as __“(asp|silverlight)\s*control(s)?”__ (which would match both “ASP Controls” and “SilverlightControl”), __[a-z]*(.)\1[a-z]*__ (which finds all words that have a doubled letter), and basically everything else you can come up with. Make sure to use correct expressions if you want to utilize this functionality, or escape the string in case you want a simple search for a word that can contain special symbols like “?”, “+”, “{“ etc. This can be automatically done by invoking the following code before proceeding with the search.
 
-#### __C#__
 
-{{region radrichtextbox-features-search_2}}
+
+```C#
 	toSearch = Regex.Escape(toSearch);
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-search_3}}
+```
+```VB.NET
 	toSearch = Regex.Escape(toSearch)
-{{endregion}}
+```
 
 > You should have in mind that performing these actions in __DocumentContentChanged__ event handler will not only raise performance issues, but will also produce an infinite loop, as the changes of the formatting are also considered document changes.
 
 
 Selecting the results of the search is particularly useful, as most formatting commands that are executed on __RadRichTextBox__ (or its document) are selection-based, i.e. they operate on the currently selected parts of the document. You can use that fact by invoking one of these commands after having selected the words in the document. Here is an example.
 
-#### __C#__
 
-{{region radrichtextbox-features-search_4}}
+
+```C#
 	this.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray);  // will highlight all selected words in LightGray
 	this.radRichTextBox.ChangeFontSize(Unit.PointToDip(32));   // will increase the font size of the words to 30 DIP
 	this.radRichTextBox.ChangeFontFamily(new FontFamily("Comic Sans MS")); // will change the font family of the spans, containing these words.
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-search_5}}
+```
+```VB.NET
 	Me.radRichTextBox.ChangeTextHighlightColor(Colors.LightGray) \' will highlight all selected words in LightGray
 	Me.radRichTextBox.ChangeFontSize(Unit.PointToDip(32)) \' will increase the font size of the words to 30 DIP
 	Me.radRichTextBox.ChangeFontFamily(New FontFamily("Comic Sans MS")) \' will change the font family of the spans, containing these words.
-{{endregion}}
+```
 
 
 
 Most of the time, you would like to remove the selection at the end of the operations, which is done by calling the __Clear()__ method of the  __DocumentSelection__ object.
 
-#### __C#__
 
-{{region radrichtextbox-features-search_6}}
+
+```C#
 	this.radRichTextBox.Document.Selection.Clear();
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-search_7}}
+```
+```VB.NET
 	Me.radRichTextBox.Document.Selection.Clear()
-{{endregion}}
+```
 
 
 
 On a side note, the find and select functionality can be extended in order to implement a replace of all occurrences matching the searched string with another string. Here is a sample code:
 
-#### __C#__
 
-{{region radrichtextbox-features-search_8}}
+
+```C#
 	private void ReplaceAllMatches(string toSearch, string toReplaceWith)
 	{
 	    this.radRichTextBox.Document.Selection.Clear(); // this clears the selection before processing
@@ -136,13 +116,8 @@ On a side note, the find and select functionality can be extended in order to im
 	        textRange.EndPosition.Dispose();
 	    }
 	}
-{{endregion}}
-
-
-
-#### __VB.NET__
-
-{{region radrichtextbox-features-search_9}}
+```
+```VB.NET
 	Private Sub ReplaceAllMatches(ByVal toSearch As String, ByVal toReplaceWith As String)
 	 Me.radRichTextBox.Document.Selection.Clear() \' this clears the selection before processing
 	 Dim search As New DocumentTextSearch(Me.radRichTextBox.Document)
@@ -159,7 +134,7 @@ On a side note, the find and select functionality can be extended in order to im
 	  textRange.EndPosition.Dispose()
 	 Next textRange
 	End Sub
-{{endregion}}
+```
 
 
 

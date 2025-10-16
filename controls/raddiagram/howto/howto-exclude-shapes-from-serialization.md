@@ -13,7 +13,7 @@ site_name: WPF
 
 The following article will demonstrate how to exclude shapes from serialization.
 
->With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-tafe-types-and-assemblies).
+>With the __2024 Q3 SP1__ release, the RadDiagram control requires registering the custom types of shapes, connections, and connectors, in order to deserialize them successfully. Read more about this change [here]({%slug raddiagrams-features-serialization%}#allowing-safe-types-and-assemblies).
 
 For the purpose of this example, we will create the following view models.
 
@@ -23,8 +23,8 @@ For the purpose of this example, we will create the following view models.
 
 * __MyGraphSource__: A class deriving from the [SerializableGraphSourceBase]({%slug raddiagram-data-serializablegraphsource%}) class that represent the RadDiagram GraphSource.
 
-#### __[C#] Example 1: Creating view models__
-{{region cs-raddiagrams-howto-exclude-shape-from-serialization-0}}
+__Example 1: Creating view models__
+```C#
 	public class Node : NodeViewModelBase
 	{
 		public bool IsStatic { get; set; }
@@ -69,12 +69,12 @@ For the purpose of this example, we will create the following view models.
 			return null;
 		}
 	}
-{{endregion}}
+```
 
 Next to exclude a shape from serialization, create a custom class which derives from __SerializationService__ and override the __SerializeShapes__ method. Inside the method you can create custom logic to filter which shapes to be serialize and pass it to the __base.SerializeShapes()__ method.
 
-#### __[C#] Example 2: Creating custom SerializationService__
-{{region cs-raddiagrams-howto-exclude-shape-from-serialization-1}}
+__Example 2: Creating custom SerializationService__
+```C#
 	public class CustomSerializationService : SerializationService
 	{
 		public CustomSerializationService(IGraphInternal graph) : base(graph) { }
@@ -89,12 +89,12 @@ Next to exclude a shape from serialization, create a custom class which derives 
 			return base.SerializeShapes(filteredShapes);
 		}
 	}
-{{endregion}}
+```
 
 Next, define a RadDiagram control in the Xaml view. We'll keep it simple - two buttons for save and load and a diagram with two shapes.
 
-#### __[XAML] Example 2: Defining RadDiagram in XAML__
-{{region xaml-raddiagrams-howto-exclude-shape-from-serialization-1}}
+__Example 2: Defining RadDiagram in XAML__
+```XAML
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -120,12 +120,12 @@ Next, define a RadDiagram control in the Xaml view. We'll keep it simple - two b
             </telerik:RadDiagram>
         </Grid>
     </Grid>
-{{endregion}}
+```
 
 Finally, set the RadDiagram __GraphSource__ property, register the custom __SerializationService__ class and override the __Open and Save commands__ from the DiagramCommands class. Then using the [DiagramExtension FileManager]({%slug raddiagram-extensions-filemanager%}) class you can export the diagram into a file and load it again from it.
 
-#### __[C#] Example 2: Register the custom SerializationService__
-{{region cs-raddiagrams-howto-serialize-viewport-save-load-2}}
+__Example 2: Register the custom SerializationService__
+```C#
 	public partial class MainWindow : Window
 	{
 		private FileManager fileManager;
@@ -165,7 +165,7 @@ Finally, set the RadDiagram __GraphSource__ property, register the custom __Seri
 			}				
 		}
 	}
-{{endregion}}
+```
 
 ## See Also
  * [Serialization]({%slug raddiagrams-features-serialization%})

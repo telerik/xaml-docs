@@ -14,8 +14,8 @@ position: 1
 
 With the {{ site.framework_name }} framework you can take advantage of the __System.ComponentModel.DataAnnotations__ assembly. The following code snippet demonstrates how to use data annotation attributes to validate a property value. It is even better when you use __RIA services__, since this code will be automatically added for you by the __RIA Service's__ code generator.		
 
-#### __[C#] Example 1: Creating DataAnnotationAttributesValidationViewModel class__
-{{region cs-radmaskedinput-validation-regex_0}}
+__Example 1: Creating DataAnnotationAttributesValidationViewModel class__
+```C#
 	public class DataAnnotationAttributesValidationViewModel : ViewModelBase
     {
         private double doubleValue;
@@ -68,10 +68,8 @@ With the {{ site.framework_name }} framework you can take advantage of the __Sys
             }
         }
     }
-{{endregion}} 
-
-#### __[VB.NET] Example 1: Creating DataAnnotationAttributesValidationViewModel class__
-{{region vb-radmaskedinput-validation-regex_1}}
+```
+```VB.NET
 	Public Class DataAnnotationAttributesValidationViewModel
 		Inherits ViewModelBase
 		Private m_doubleValue As Double
@@ -124,7 +122,7 @@ With the {{ site.framework_name }} framework you can take advantage of the __Sys
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 >In order to use DataAnnotations you should add a reference to the __System.ComponentModel.DataAnnotations__ assembly.		  
 
@@ -132,8 +130,8 @@ With the {{ site.framework_name }} framework you can take advantage of the __Sys
 
 Now we need to define several __RadMaskedInput__ controls in XAML for displaying the sample data:		
 
-#### __[XAML] Example 2: Defining several RadMaskedInput controls__
-{{region xaml-radmaskedinput-validation-regex_2}}
+__Example 2: Defining several RadMaskedInput controls__
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
@@ -156,22 +154,19 @@ Now we need to define several __RadMaskedInput__ controls in XAML for displaying
 				ErrorMessage="{Binding Path=Text, ElementName=customErrorMessage}" AllowInvalidValues="True"
 				Value="{Binding Path=StringValue, Mode=TwoWay,ValidatesOnExceptions=True}" />
 	</Grid>
-{{endregion}}
+```
 
 >important Note that you have set __AllowInvalidValues__ to True. This ensures that the Setter of the properties will be fired even if the DataAnnotaion Validation does not succeed.		  
 
 And finally we need to set the __DataContext__ accordingly:		
 
-#### __[C#] Example 3: Setting the DataContext to the view model__
-{{region cs-radmaskedinput-validation-regex_3}}
+__Example 3: Setting the DataContext to the view model__
+```C#
 	this.DataContext = new DataAnnotationAttributesValidationViewModel();
-{{endregion}}
-
-#### __[VB.NET] Example 3: Setting the DataContext to the view model__
-
-{{region vb-radmaskedinput-validation-regex_4}}
+```
+```VB.NET
 	Me.DataContext = New DataAnnotationAttributesValidationViewModel()
-{{endregion}}
+```
 
 Below you can see how the MaskedInputs are being validated:		  
 
@@ -183,8 +178,8 @@ The __MaskedInput__ suite of controls allow validation through __Regular Express
 
 First, we need a view model:
 
-#### __[C#] Example 4: Creating MaskedInputViewModel class__
-{{region cs-radmaskedinput-validation-regex_5}}
+__Example 4: Creating MaskedInputViewModel class__
+```C#
 	public class MaskedInputViewModel : ViewModelBase
     {
         private string email = "username@email.com";
@@ -230,10 +225,8 @@ First, we need a view model:
             }
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 4: Creating MaskedInputViewModel class__
-{{region vb-radmaskedinput-validation-regex_6}}
+```
+```VB.NET
 	Public Class MaskedInputViewModel
 		Inherits ViewModelBase
 		Private m_email As String = "username@email.com"
@@ -271,7 +264,7 @@ First, we need a view model:
 			End Set
 		End Property
 	End Class
-{{endregion}}
+```
 
 >important Note that you have to invoke the __Validator.ValidateProperty__ method before setting a new value in the property setter.
 
@@ -279,18 +272,18 @@ In the above __MaskedInputViewModel__ implementation it is important to note the
 		
 Then you can define the __RadMaskedInput__ controls that will display the Email and WebAddress business properties:		
 
-#### __[XAML] Example 5: Defining  RadMaskedInput controls in XAML__
-{{region xaml-radmaskedinput-validation-regex_7}}
+__Example 5: Defining  RadMaskedInput controls in XAML__
+```XAML
 	<telerik:RadMaskedTextInput AllowInvalidValues="True" Value="{Binding Path=Email, Mode=TwoWay, ValidatesOnExceptions=True}"/>
 	<telerik:RadMaskedTextInput AllowInvalidValues="True" Value="{Binding Path=WebAddress, Mode=TwoWay, ValidatesOnExceptions=True}" Mask="a30" />
-{{endregion}}
+```
 
 >important Note that you have set __AllowInvalidValues__ to True. This ensures that the Setter of the properties will be fired even if the DataAnnotaion Validation does not succeed.
 		  
 And finally you need to set the __MaskedInputViewModel__ as __DataContext__ of the __MaskedTextInput__ controls:		
 
-#### __[XAML] Example 6: Setting the DataContext in XAML__
-{{region xaml-radmaskedinput-validation-regex_8}}
+__Example 6: Setting the DataContext in XAML__
+```XAML
 	<UserControl  
 		 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -319,4 +312,4 @@ And finally you need to set the __MaskedInputViewModel__ as __DataContext__ of t
 			</StackPanel>
 		</Grid>
 	</UserControl>
-{{endregion}}
+```

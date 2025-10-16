@@ -12,10 +12,10 @@ position: 4
 
 The `RadCalculatorPicker` control is a drop down button with a `RadCalculator` in its drop down content. The button content shows the calculated value of the calculator.
 
-#### __[XAML] Defining RadCalculatorPicker__
-{{region radcalculatorpicker-gettingstarted-0}}
+__Defining RadCalculatorPicker__
+```XAML
 	<telerik:RadCalculatorPicker Height="30" Width="200" />		
-{{endregion}}
+```
 
 __RadCalculatorPicker example__  
 
@@ -23,26 +23,26 @@ __RadCalculatorPicker example__
 
 The drop down state can be controlled manually with the `IsDropDownOpen` property of `RadCalculatorPicker`.
 
-#### __[C#] Opening the drop down content in code__
-{{region radcalculatorpicker-gettingstarted-1}}
+__Opening the drop down content in code__
+```C#
 	this.calculatorPicker.IsDropDownOpen = true;
-{{endregion}}
+```
 
 ## DataGrid Integration
 
 The following example shows how to utilize the `RadColorPicker` control as the cell editing element of a `RadGridView` column. To do so, define a custom `CellEditTemplate` for the column and in the `DataTemplate` add the calculator.
 
-#### __[C#] Defining a model for the RadGridView rows__
-{{region radcalculatorpicker-gettingstarted-2}}
+__Defining a model for the RadGridView rows__
+```C#
 	public class RowInfo
     {
         public string Name { get; set; }
         public double Value { get; set; }
     }
-{{endregion}}
+```
 
-#### __[C#] Populating the data source__
-{{region radcalculatorpicker-gettingstarted-3}}
+__Populating the data source__
+```C#
 	public MainWindow()
 	{		
 		InitializeComponent();
@@ -53,10 +53,10 @@ The following example shows how to utilize the `RadColorPicker` control as the c
 		}
 		DataContext = source;
 	}
-{{endregion}}
+```
 
-#### __[XAML] Defining the RadGridView and setting up the RadCalculatorPicker as the cell edit element__
-{{region radcalculatorpicker-gettingstarted-4}}
+__Defining the RadGridView and setting up the RadCalculatorPicker as the cell edit element__
+```XAML
 	<telerik:RadGridView GroupRenderMode="Flat"
 						 ItemsSource="{Binding}"						 
 						 AutoGenerateColumns="False">
@@ -71,7 +71,7 @@ The following example shows how to utilize the `RadColorPicker` control as the c
 			</telerik:GridViewDataColumn>
 		</telerik:RadGridView.Columns>
 	</telerik:RadGridView>
-{{endregion}}
+```
 
 __Using RadCalculatorPicker as a cell editor of RadGridView__  
 

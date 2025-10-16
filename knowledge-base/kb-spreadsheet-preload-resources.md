@@ -24,8 +24,8 @@ This problem may be noticeable by the users if the first RadSpreadsheet load hap
 
 To preload the RadSpreadsheet XAML resources, you can add the control in a dummy UserControl and display it when the main window gets initialized. This will ensure that the needed resources are loaded before the user has the chance to interact with the application. You can further improve the application's usability by showing the dummy control in a window opened on a separate UI thread.
 
-#### __[XAML] Defining the dummy UserControl__
-{{region kb-spreadsheet-preload-resources-0}}
+__Defining the dummy UserControl__
+```XAML
 	<UserControl x:Class="WpfApp1.SpreadsheetUserControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -39,10 +39,10 @@ To preload the RadSpreadsheet XAML resources, you can add the control in a dummy
 			<spreadSheetControls:RadSpreadsheetStatusBar x:Name="spreadsheetStatusBar" RadSpreadsheet="{Binding ElementName=spreadsheet, Mode=OneTime}" />
 		</Grid>
 	</UserControl>
-{{endregion}}
+```
 
-#### __[C#] Showing the window with the dummy UserControl__
-{{region kb-spreadsheet-preload-resources-1}}
+__Showing the window with the dummy UserControl__
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -79,4 +79,4 @@ To preload the RadSpreadsheet XAML resources, you can add the control in a dummy
 			// show the view with your actual RadSpreadsheet definition - for example this can happen on button click, tab selection, menu item click, etc.
 		}
 	}
-{{endregion}}
+```

@@ -22,28 +22,24 @@ The __ElementExporting__ event can be cancelled for a particular row or cell. If
 
 You can subscribe to the events either declaratively or from the code-behind like this:
 
-#### __[XAML] Example 1: Subscribe to events declaratively:__
+__Example 1: Subscribe to events declaratively:__
 
-{{region xaml-gridview-export-events-elementexporting-elementexported_0}}
+```XAML
 	<telerik:RadGridView x:Name="RadGridView1"
 	             ElementExporting="RadGridView1_ElementExporting"
 	             ElementExported="RadGridView1_ElementExported" />
-{{endregion}}
+```
 
-#### __[C#]Example 2: Subscribe to events from the code-behind:__
+__Example 2: Subscribe to events from the code-behind:__
 
-{{region cs-gridview-export-events-elementexporting-elementexported_1}}
+```C#
 	RadGridView1.ElementExporting += RadGridView1_ElementExporting;
 	RadGridView1.ElementExported += RadGridView1_ElementExported;
-{{endregion}}
-
-
-#### __[VB.NET]Example 3: Subscribe to events from the code-behind:__
-
-{{region vb-gridview-export-events-elementexporting-elementexported_2}}
+```
+```VB.NET
 	AddHandler RadGridView1.ElementExporting, AddressOf RadGridView1_ElementExporting
 	AddHandler RadGridView1.ElementExported, AddressOf RadGridView1_ElementExported
-{{endregion}}
+```
 
 ## ElementExporting
 
@@ -81,9 +77,9 @@ The event takes argument of type __GridViewElementExportedEventArgs__ which expo
 
 You can use this event if you want to write additional data to the stream. A common scenario is to add [Row Details]({%slug radgridview-row-details-overview%}) to the exported data :
 	
-#### __[C#] Example 4: Add row details to the exported data with ExportFormat.Html__
+__Example 4: Add row details to the exported data with ExportFormat.Html__
 
-{{region cs-gridview-export-events-elementexporting-elementexported_3}}
+```C#
 	private void RadGridView1_ElementExported(object sender, GridViewElementExportedEventArgs e)
 	{
 	    if (e.Element == ExportElement.Row)
@@ -102,11 +98,8 @@ You can use this event if you want to write additional data to the stream. A com
 	        }
 	    }
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 5: Add row details to the exported data with ExportFormat.Html__
-
-{{region vb-gridview-export-events-elementexporting-elementexported_4}}
+```
+```VB.NET
 	Private Sub RadGridView1_ElementExported(ByVal sender As Object, ByVal e As GridViewElementExportedEventArgs)
 	    If e.Element = ExportElement.Row Then
 	        Dim obj As Employee = TryCast(e.Context, Employee)
@@ -121,7 +114,7 @@ You can use this event if you want to write additional data to the stream. A com
 	        End If
 	    End If
 	End Sub
-{{endregion}}
+```
 
 The result is:
 
@@ -146,13 +139,13 @@ You can use these contexts to conditionally style and format the exported elemen
 You can define a Style when __InitializingExcelMLStyles__ event is raised.
 For example:
         
-#### __[C#] Example 6: Define a style:__
+__Example 6: Define a style:__
 
-{{region cs-gridview-export-events-elementexporting-elementexported_5}}
+```C#
 	ExcelMLStyle style = new ExcelMLStyle("0");
 	style.Alignment.Horizontal = ExcelMLHorizontalAlignment.Automatic;
 	e.Styles.Add(style);
-{{endregion}}
+```
 
 You can find a list of the properties that could be set for __ExcelMLStyle__:
         
@@ -189,9 +182,9 @@ __NumberFormat:__
 
 - Format
 
-#### __[C#] Example 7: Apply a style before exporting:__
+__Example 7: Apply a style before exporting:__
 
-{{region cs-gridview-export-events-elementexporting-elementexported_6}}
+```C#
 	private void clubsGrid_InitializingExcelMLStyles_1(object sender, ExcelMLStylesEventArgs e)
 	{
 	    ExcelMLStyle style = new ExcelMLStyle("0");
@@ -226,7 +219,7 @@ __NumberFormat:__
 	
 	    e.Styles.Add(style);
 	}
-{{endregion}}
+```
         
 ## See Also
 

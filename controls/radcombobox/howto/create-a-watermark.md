@@ -12,14 +12,14 @@ position: 9
 
 The __EmptyText__ property allows you to specify a string that will be shown when there is no selection. 
 
-#### __[XAML] Example 1: Setting the EmptyText property__
+__Example 1: Setting the EmptyText property__
 
-{{region xaml-radcombobox-create_a_watermark_0}}
+```XAML
 	<telerik:RadComboBox Width="200"
 						 ItemsSource="12345"
 						 EmptyText="Select an item">
 	</telerik:RadComboBox>
-{{endregion}}
+```
 
 #### __Figure 1: RadComboBox with IsEditable property set to True and EmptyText in the Office2016 theme__
 ![Editable RadComboBox with EmptyText displayed](images/ComboBox_EmptyText.png)
@@ -34,9 +34,9 @@ The __EmptyText__ property allows you to specify a string that will be shown whe
 
 The __EmptySelectionBoxTemplate__ gives you the ability to define a separate DataTemplate to be shown when there is no selected item. __Example 2__ demonstrates how to create and apply an __EmptySelectionBoxTemplate__.
 
-#### __[XAML] Example 2: Set the EmptySelectionBoxTemplate property__
+__Example 2: Set the EmptySelectionBoxTemplate property__
 
-{{region xaml-radcombobox-create_a_watermark_1}}
+```XAML
 	<StackPanel>
         <StackPanel.Resources>
             <DataTemplate x:Key="EmptyTemplate">
@@ -48,7 +48,7 @@ The __EmptySelectionBoxTemplate__ gives you the ability to define a separate Dat
                              EmptySelectionBoxTemplate="{StaticResource EmptyTemplate}">
         </telerik:RadComboBox>
     </StackPanel>
-{{endregion}}
+```
 
 #### __Figure 2: RadComboBox with EmptySelectionBoxTemplate in the Office2016 theme__
 ![RadComboBox with EmptySelectionBoxTemplate](images/ComboBox_EmptySelectionBoxTemplate.png)

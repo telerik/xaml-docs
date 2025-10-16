@@ -20,8 +20,8 @@ This article demonstrates how to implement a custom gesture and register it in T
 
 To begin creating the gesture recognizer, you must first define a class that derives from GestureRecognizerBase and override its abstract methods. 	
 	
-#### __[C#] Example 1: Defining the gesture recognizer__	
-{{region touchmanager-creating-custom-gesture-0}}
+__Example 1: Defining the gesture recognizer__	
+```C#
 	public class TwoFingerTapGestureRecognizer : GestureRecognizerBase
 	{
 		public TwoFingerTapGestureRecognizer(UIElement element)
@@ -52,10 +52,8 @@ To begin creating the gesture recognizer, you must first define a class that der
 			// code here
 		}
 	}
-{{endregion}}
-	
-#### __[VB.NET] Example 1: Defining the gesture recognizer__
-{{region touchmanager-creating-custom-gesture-1}}
+```
+```VB.NET
 	Public Class TwoFingerTapGestureRecognizer
 		Inherits GestureRecognizerBase
 		Public Sub New(element As UIElement)
@@ -80,7 +78,7 @@ To begin creating the gesture recognizer, you must first define a class that der
 			' code here '
 		End Sub
 	End Class
-{{endregion}}
+```
 	
 For this example, we will use only three of the gesture recognizer's methods: OnTouchDown, OnTouchUp and OnTouchLeave.
 
@@ -95,32 +93,30 @@ The example will use several helper fields:
 
 You can find the code definitions of the helper fields in the following code snippet:
 
-#### __[C#] Example 2: Defining the fields of the recognizer__  
-{{region touchmanager-creating-custom-gesture-2}}
+__Example 2: Defining the fields of the recognizer__  
+```C#
 	private static readonly TimeSpan AllowedInterval = TimeSpan.FromMilliseconds(300);
 	private static readonly int MaxTouchCount = 2;
 	private DateTime originTouchTime;
 	private bool isTwoFingerGesture;
 	private List<int> touchIds = new List<int>();
 	private List<WeakReference> handlers = new List<WeakReference>(); 
-{{endregion}}
-
-#### __[VB.NET] Example 2: Defining the fields of the recognizer__	
-{{region touchmanager-creating-custom-gesture-3}}
+```
+```VB.NET
 	Private Shared ReadOnly AllowedInterval As TimeSpan = TimeSpan.FromMilliseconds(2000)
 	Private Shared ReadOnly MaxTouchCount As Integer = 2
 	Private originTouchTime As DateTime
 	Private isTwoFingerGesture As Boolean
 	Private touchIds As New List(Of Integer)()
 	Private handlers As New List(Of WeakReference)()
-{{endregion}}
+```
 
 When we add the properties we can use them in the overrides of the gesture recognizer's methods. 
 
 * __OnTouchDown__: When this method is called, we can store the touch id in the *touchIds* collection. If this is the first touch, we are setting the *originTouchTime* to the current time. If this is the second touch, we set the *isTwoFingerGesture* property to __true__.
 	
-	#### __[C#] Example 3: Implementing logic in the OnTouchDown method__
-	{{region touchmanager-creating-custom-gesture-4}}
+	__Example 3: Implementing logic in the OnTouchDown method__
+	```C#
 		public override void OnTouchDown(GestureRecognizerEventArgs args)
 		{                        
 			this.touchIds.Add(args.TouchId);
@@ -130,10 +126,8 @@ When we add the properties we can use them in the overrides of the gesture recog
 			}
 			this.isTwoFingerGesture = this.touchIds.Count == MaxTouchCount;
 		}
-	{{endregion}}
-		
-	#### __[VB.NET] Example 3: Implementing logic in the OnTouchDown method__
-	{{region touchmanager-creating-custom-gesture-5}}
+	```
+	```VB.NET
 		Public Overrides Sub OnTouchDown(args As GestureRecognizerEventArgs)
 			Me.touchIds.Add(args.TouchId)
 			If Me.touchIds.Count = 1 Then
@@ -141,29 +135,27 @@ When we add the properties we can use them in the overrides of the gesture recog
 			End If
 			Me.isTwoFingerGesture = Me.touchIds.Count = MaxTouchCount
 		End Sub
-	{{endregion}}
+	```
 
 * __OnTouchLeave__: When this method is called, we can remove the touch id of the leaving touch from the *touchIds* collection.
 	
-	#### __[C#] Example 4: Implementing logic in the OnTouchLeave method__
-	{{region touchmanager-creating-custom-gesture-6}}
+	__Example 4: Implementing logic in the OnTouchLeave method__
+	```C#
 		public override void OnTouchLeave(GestureRecognizerEventArgs args)
         {
             this.touchIds.Remove(args.TouchId);
         }
-	{{endregion}}
-	
-	#### __[VB.NET] Example 4: Implementing logic in the OnTouchLeave method__
-	{{region touchmanager-creating-custom-gesture-7}}
+	```
+	```VB.NET
 		Public Overrides Sub OnTouchLeave(args As GestureRecognizerEventArgs)
 			Me.touchIds.Remove(args.TouchId)
 		End Sub
-	{{endregion}}
+	```
 		
 * __OnTouchUp__: When this method is called, we can remove the touch id of the leaving touch from the collection. Here we can also check if the gesture can be executed. 
 	
-	#### __[C#] Example 5: Implementing logic in the OnTouchUp method__
-	{{region touchmanager-creating-custom-gesture-8}}
+	__Example 5: Implementing logic in the OnTouchUp method__
+	```C#
 		public override void OnTouchUp(GestureRecognizerEventArgs args)
 		{
 			this.touchIds.Remove(args.TouchId);
@@ -179,10 +171,8 @@ When we add the properties we can use them in the overrides of the gesture recog
 				}
 			}
 		}
-	{{endregion}}
-		
-	#### __[VB.NET] Example 5: Implementing logic in the OnTouchUp method__	
-	{{region touchmanager-creating-custom-gesture-9}}
+	```
+	```VB.NET
 		Public Overrides Sub OnTouchUp(args As GestureRecognizerEventArgs)
 			Me.touchIds.Remove(args.TouchId)
 			If Me.touchIds.Count = 0 AndAlso Me.isTwoFingerGesture Then
@@ -194,7 +184,7 @@ When we add the properties we can use them in the overrides of the gesture recog
 				End If
 			End If
 		End Sub
-	{{endregion}}
+	```
 
 	Note that we are using the __CanActivateGesture()__ and __ActivateGesture()__ methods of the __GestureManager__ class. This way we ensure that the gesture will be activated only if there is no collision between this gesture and the one that is currently active (if any). 
 	
@@ -202,8 +192,8 @@ When we add the properties we can use them in the overrides of the gesture recog
 
 Example 6 is the main logic of the recognizer. In this example you'll see how to implement logic for storing the event handlers for the gesture. We can do this through a couple of public methods that accept event handlers as arguments and add/remove them in the *handlers* collection defined earlier.
 
-#### __[C#] Example 6: Implementing logic for associating event handlers with the recognizer__
-{{region touchmanager-creating-custom-gesture-10}}
+__Example 6: Implementing logic for associating event handlers with the recognizer__
+```C#
 	public void AddHandler(RoutedEventHandler handler)
 	{
 		this.handlers.Add(new WeakReference(handler));
@@ -222,10 +212,8 @@ Example 6 is the main logic of the recognizer. In this example you'll see how to
 		}
 		this.HasGestureHandlers = this.handlers.Count > 0;
 	}
-{{endregion}}
-	
-#### __[VB.NET] Example 6: Implementing logic for associating event handlers with the recognizer__	
-{{region touchmanager-creating-custom-gesture-11}}
+```
+```VB.NET
 	Public Sub AddHandler(handler As RoutedEventHandler)
 		Me.handlers.Add(New WeakReference(handler))
 		Me.HasGestureHandlers = True
@@ -240,14 +228,14 @@ Example 6 is the main logic of the recognizer. In this example you'll see how to
 		Next
 		Me.HasGestureHandlers = Me.handlers.Count > 0
 	End Sub
-{{endregion}}
+```
 	
 ## Implementing the gesture recognizer factory
 
 To add the gesture to a specific UIElement we need to create a recognizer factory that creates our gesture. The factory is a class that implements the __IGestureRecognizerFactory__ interface.
 
-#### __[C#] Example 7: Defining the gesture recognizer factory__
-{{region touchmanager-creating-custom-gesture-12}}
+__Example 7: Defining the gesture recognizer factory__
+```C#
 	public class TwoFingerTapGestureRecognizerFactory : IGestureRecognizerFactory
 	{
 		public GestureRecognizerBase CreateGestureRecognizer(System.Windows.UIElement element)
@@ -264,10 +252,8 @@ To add the gesture to a specific UIElement we need to create a recognizer factor
 		{            
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 7: Defining the gesture recognizer factory__
-{{region touchmanager-creating-custom-gesture-13}}
+```
+```VB.NET
 	Public Class TwoFingerTapGestureRecognizerFactory
 		Implements IGestureRecognizerFactory
 		Public Function CreateGestureRecognizer(element As System.Windows.UIElement) As GestureRecognizerBase
@@ -283,14 +269,14 @@ To add the gesture to a specific UIElement we need to create a recognizer factor
 		Public Sub RegisterGestureTransitions()
 		End Sub
 	End Class
-{{endregion}}
+```
 
 ## Using the gesture
 
 Lets start with defining the UIElement on which the gesture will be performed.
 
-#### __[XAML] Example 8: Defining the UI of the example__
-{{region touchmanager-creating-custom-gesture-14}}
+__Example 8: Defining the UI of the example__
+```XAML
 	<UserControl x:Class="WpfApplication1.Example"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -303,32 +289,30 @@ Lets start with defining the UIElement on which the gesture will be performed.
 			<Rectangle x:Name="element"  Width="200" Height="200" Fill="Orange" Margin="30"/>
 		</StackPanel>
 	</UserControl>
-{{endregion}}
+```
 
 To use the gesture we will need to register the gesture recognizer factory and create a recogonizer for the UIElement that should listen for it. Then we can add an event handler for the UIElement.
 
-#### __[C#] Example 9: Creating a new instance of the recognizer and associating it with a UIElement__
-{{region touchmanager-creating-custom-gesture-15}}
+__Example 9: Creating a new instance of the recognizer and associating it with a UIElement__
+```C#
 	GestureManager.RegisterGestureRecognizerFactory(new TwoFingerTapGestureRecognizerFactory());
 	//-----------
 	TwoFingerTapGestureRecognizer recognizer = GestureManager.GetOrCreateGestureRecognizer<TwoFingerTapGestureRecognizer>(uiElement);
 	recognizer.AddHandler(handler);
 	element.AddHandler(TwoFingerTapEvent, handler, false);  
-{{endregion}}	
-	
-#### __[VB.NET] Example 9: Creating a new instance of the recognizer and associating it with a UIElement__
-{{region touchmanager-creating-custom-gesture-16}}
+```
+```VB.NET
 	GestureManager.RegisterGestureRecognizerFactory(New TwoFingerTapGestureRecognizerFactory())
 	'-----------'
 	Dim recognizer As TwoFingerTapGestureRecognizer = GestureManager.GetOrCreateGestureRecognizer(Of TwoFingerTapGestureRecognizer)(uiElement)
 	recognizer.AddHandler(handler)
 	element.AddHandler(TwoFingerTapEvent, handler, False)
-{{endregion}}
+```
 
 In example 10 we will wrap the TwoFingerTapEvent and the logic for adding handlers in a helper class called GestureExtensions.
 
-#### __[C#] Example 10: Creating a helper class that raises an event when the gesture is performed__
-{{region touchmanager-creating-custom-gesture-17}}
+__Example 10: Creating a helper class that raises an event when the gesture is performed__
+```C#
 	public class GestureExtensions
     {
         private static readonly RoutedEvent TwoFingerTapEvent = EventManager.RegisterRoutedEvent(
@@ -349,10 +333,8 @@ In example 10 we will wrap the TwoFingerTapEvent and the logic for adding handle
             element.RaiseEvent(new RoutedEventArgs(TwoFingerTapEvent, element));
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 10: Creating a helper class that raises an event when the gesture is performed__
-{{region touchmanager-creating-custom-gesture-18}}
+```
+```VB.NET
 	Public Class GestureExtensions
 		Private Shared ReadOnly TwoFingerTapEvent As RoutedEvent = EventManager.RegisterRoutedEvent("TwoFingerTap", RoutingStrategy.Direct, GetType(RoutedEventHandler), GetType(TouchManager))
 
@@ -366,12 +348,12 @@ In example 10 we will wrap the TwoFingerTapEvent and the logic for adding handle
 			element.RaiseEvent(New RoutedEventArgs(TwoFingerTapEvent, element))
 		End Sub
 	End Class	
-{{endregion}}
+```
 	
 Here is an example for using the GestureExtensions class and adding logic that is executed when the two-finger tap gesture is activated:
 
-#### __[C#] Example 11: Associating the gesture recognizer with a UIElement__
-{{region touchmanager-creating-custom-gesture-19}}
+__Example 11: Associating the gesture recognizer with a UIElement__
+```C#
 	public partial class Example : UserControl
 	{
 		static Example()
@@ -390,10 +372,8 @@ Here is an example for using the GestureExtensions class and adding logic that i
 			this.element.Opacity = this.element.Opacity == 1 ? 0.5 : 1;
 		}
 	}
-{{endregion}}
-
-#### __[VB.NET] Example 11: Associating the gesture recognizer with a UIElement__
-{{region touchmanager-creating-custom-gesture-20}}
+```
+```VB.NET
 	Public Partial Class Example
 		Inherits UserControl
 		Shared Sub New()
@@ -409,7 +389,7 @@ Here is an example for using the GestureExtensions class and adding logic that i
 			Me.element.Opacity = If(Me.element.Opacity = 1, 0.5, 1)
 		End Sub
 	End Class	
-{{endregion}}
+```
 
 The following picture demonstrates the end result - changing the opacity when a two-fingers tap is performed on the Rectangle element.
 

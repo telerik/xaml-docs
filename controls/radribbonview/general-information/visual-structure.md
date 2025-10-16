@@ -27,7 +27,7 @@ The structure of a __RadRibbonView__ consists of the following main elements:
 
 * __Ribbon Group__ - this is one of the most frequently used container controls in the RibbonView structure. You can use the __RadRibbonGroup__ control to organize the controls in a more logical and convenient way for the user. Moreover, the ribbon group adjusts its dimensions and internal layout dynamically to best accommodate the available space. [Read more]({%slug radribbonview-ribbon-group%})
 
-* __Dialog Launcher__ - the dialog launcher button is located in the lower right corner of the ribbon group and it is hidden by default. You can use it to associate configuration dialogs with each ribbon group container. [Read more](#Enabling_the_Dialog_Launcher)
+* __Dialog Launcher__ - the dialog launcher button is located in the lower right corner of the ribbon group and it is hidden by default. You can use it to associate configuration dialogs with each ribbon group container.
 
 * __Button Group__ - use the __RadButtonGroup__ to organize your buttons with common functionality i.e. Increase, Decrease Font. 
 

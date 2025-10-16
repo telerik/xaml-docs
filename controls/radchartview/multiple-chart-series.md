@@ -16,8 +16,8 @@ The following article discusses the `RadCartesianChart` control, but the same AP
 
 To add multiple series instances, use the `Series` property of the chart.
 
-#### __[C#] Defining chart with multiple visualizations__
-{{region radchartview-multiple-series-0}}
+__Defining chart with multiple visualizations__
+```C#
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis/>
@@ -64,7 +64,7 @@ To add multiple series instances, use the `Series` property of the chart.
 			</telerik:LineSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 ![A picture showing multiple chart visualizations in the same plot area](images/radchartview-multiple-series-0.png)
 

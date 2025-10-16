@@ -38,8 +38,8 @@ In addition, add a reference to the **Telerik.Windows.Controls** assembly from y
 
 Lastly, define the following XAML in the generated **UserControl1.xaml** file:
 
-#### __[XAML] Example 1: The XAML layout in UserControl1.xaml__
-{{region xaml-wpf-controls-wf-app_0}}
+__Example 1: The XAML layout in UserControl1.xaml__
+```XAML
     <telerik:RadExpander Header="WPF controls in a WinForms application" IsExpanded="True">
         <telerik:RadListBox>
             <telerik:RadListBoxItem>Item1</telerik:RadListBoxItem>
@@ -47,7 +47,7 @@ Lastly, define the following XAML in the generated **UserControl1.xaml** file:
             <telerik:RadListBoxItem>Item3</telerik:RadListBoxItem>
         </telerik:RadListBox>
     </telerik:RadExpander>
-{{endregion}}
+```
 
 ## Create the WinForms Application
 
@@ -88,17 +88,17 @@ You generally implement the hosting code in the form's **Load** event handler. T
 
 In the Windows Forms Designer, double-click the form to create a Load event handler. At the top of Form1.cs, add the following using statements.
 
-#### __[C#] Example 2: Using statements__
-{{region cs-wpf-controls-wf-app_1}}
+__Example 2: Using statements__
+```C#
 	using System.Windows;
 	using System.Windows.Forms.Integration;
 	using System.Windows.Media;
-{{endregion}}
+```
 
 Then, replace the contents of the existing Form1 class with the following code.
 
-#### __[C#] Example 3: The Form class__
-{{region cs-wpf-controls-wf-app_2}}
+__Example 3: The Form class__
+```C#
     public partial class Form1 : Form
     {
         private ElementHost ctrlHost;
@@ -119,7 +119,7 @@ Then, replace the contents of the existing Form1 class with the following code.
             ctrlHost.Child = wpfAddressCtrl;
         }
     }
-{{endregion}}
+```
 
 The **Form1_Load** method in the preceding code shows the general procedure for hosting a WPF control:
 
@@ -144,8 +144,8 @@ If you're using the [implicit styles]({%slug styling-apperance-implicit-styles-o
 
 As there is no App.xaml file in which to do this (as would be the case in a standard WPF application), you can handle this programmatically by invoking the following method before instantiating the user control:
 
-#### __[C#] Example 3: Merging the theme's resource dictionaries programmatically__
-{{region cs-wpf-controls-wf-app_3}}
+__Example 3: Merging the theme's resource dictionaries programmatically__
+```C#
 	private void Form1_Load(object sender, EventArgs e)
 	{
 		ctrlHost = new ElementHost();
@@ -176,7 +176,7 @@ As there is no App.xaml file in which to do this (as would be the case in a stan
 					UriKind.Relative)) as ResourceDictionary);
 		}
 	}
-{{endregion}}
+```
 
 Please note that you also need to reference the theme dll in both the WPF class library and the WinForms application projects.
 

@@ -14,16 +14,16 @@ The date range can be selected through the UI or via the available API of the Da
 
 The selection can be assigned manually via the `StartDate` and `EndDate` properties of `RadDateRangePicker`.
 
-#### __[XAML] Setting the selection range in XAML__
-{{region raddaterangepicker-programmatic-selection-0}}
+__Setting the selection range in XAML__
+```XAML
 	<telerik:RadDateRangePicker StartDate="2024/1/19" EndDate="2024/2/5" />
-{{endregion}}
+```
 
-#### __[XAML] Setting the selection range in C#__
-{{region raddaterangepicker-programmatic-selection-1}}
+__Setting the selection range in C#__
+```XAML
 	this.dateRangePicker.StartDate = new DateTime(2024, 1, 19);
 	this.dateRangePicker.EndDate = new DateTime(2024, 2, 5);
-{{endregion}}
+```
 
 ![Picture showing WPF RadDateRangePicker with assigned selection range](images/raddaterangepicker-programmatic-selection-0.png)
 
@@ -31,16 +31,16 @@ The selection can be assigned manually via the `StartDate` and `EndDate` propert
 
 The dates available for selection can be limited via the `SelectableDateStart` and `SelectableDateEnd` properties of `RadDateRangePicker`. Setting this will disable all other dates in the calendars.
 
-#### __[XAML] Setting the selection range in XAML__
-{{region raddaterangepicker-programmatic-selection-0}}
+__Setting the selection range in XAML__
+```XAML
 	<telerik:RadDateRangePicker SelectableDateStart="2024/3/7" SelectableDateEnd="2024/3/27" />
-{{endregion}}
+```
 
-#### __[XAML] Setting the selection range in C#__
-{{region raddaterangepicker-programmatic-selection-1}}
+__Setting the selection range in C#__
+```XAML
 	this.dateRangePicker.SelectableDateStart = new DateTime(2024, 3, 7);
 	this.dateRangePicker.SelectableDateEnd = new DateTime(2024, 3, 27);
-{{endregion}}
+```
 
 ![Picture showing WPF RadDateRangePicker with a limited range of selectable dates](images/raddaterangepicker-programmatic-selection-1.png)
 

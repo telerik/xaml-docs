@@ -36,9 +36,9 @@ For example if you have named your custom theme __MyTheme__, the names of the st
 
 Here is a code snippet containing all the storyboards named for the __MyTheme__.
 
-#### __XAML__
 
-{{region xaml-radchart-styles-and-templates-creating-custom-theme-for-radchart_0}}
+
+```XAML
 	<!-- Custom Theme Animation BEGIN -->
 	<Storyboard BeginTime="00:00:00.5"
 	x:Key="MyBarStoryboard">
@@ -231,4 +231,4 @@ Here is a code snippet containing all the storyboards named for the __MyTheme__.
 	            BeginTime="00:00:00.2" />
 	</Storyboard>
 	<!-- Custom Theme Animation END -->
-{{endregion}}
+```

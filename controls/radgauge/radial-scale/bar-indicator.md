@@ -12,8 +12,8 @@ position: 4
 
 The Bar indicator is a colored bar that is drawn around scale bar. One of ends of this bar points to the scale value. To add bar indicator to the scale you have to include RadialBar element to the list of the scale indicators:
 
-#### __XAML__
-{{region radial-scale-bar-indicator_0}}
+
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale>
 	        <telerik:RadialScale.Indicators>
@@ -30,7 +30,7 @@ The Bar indicator is a colored bar that is drawn around scale bar. One of ends o
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 The Bar indicator supports the following features:
 
@@ -77,8 +77,8 @@ or
 
 To do it you need add few ranges to your scale and specify background of the indicator for every range. Then you should set UseRangeColor property of the bar indicator to true:
 
-#### __XAML__
-{{region radial-scale-bar-indicator_1}}
+
+```XAML
 	<telerik:RadRadialGauge Width="200" Height="200" telerik:StyleManager.Theme="Windows8">
 	    <telerik:RadialScale>
 	        <telerik:RadialScale.Ranges>
@@ -119,18 +119,18 @@ To do it you need add few ranges to your scale and specify background of the ind
 	        </telerik:RadialScale.Indicators>
 	    </telerik:RadialScale>
 	</telerik:RadRadialGauge>
-{{endregion}}
+```
 
 There several modes which can be used to colorize bar indicator. Example above uses default mode. If you'd like to have bar indicator with background consists of the stack of the range colors, then you should set RangeColorMode property to ProportionalBrush:
 
-#### __XAML__
-{{region radial-scale-bar-indicator_2}}
+
+```XAML
 	<telerik:RadialScale.Indicators telerik:StyleManager.Theme="Windows8">
 		<telerik:BarIndicator Name="radialBar" 
 			UseRangeColor="True" 
 			RangeColorMode="ProportionalBrush"
 			Value="70" />
 	 </telerik:RadialScale.Indicators>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadGauge RadialScale RangeColorMode ProportionalBrush](images/RadialBarProportionalBrush.png)

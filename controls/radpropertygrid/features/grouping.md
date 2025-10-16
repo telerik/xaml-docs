@@ -12,15 +12,15 @@ position: 13
 
 RadPropertyGrid supports grouping. Its __IsGrouped__ property controls the current RadPropertyGrid's state. You can set it to __true__ and you will have RadPropertyGrid __initially grouped__. If you set it to __false__, then you will have RadProperty __sorted__. By default the control is shown as sorted.
 
->Please note all the groups will be auto expanded. In case you want to initially collapse a group, you can do this once RadPropertyGrid is loaded using a Dispatcher. Please refer to the [Expand/Collapse Groups](#expandcollapse-groups) section below.
+>Please note all the groups will be auto expanded. In case you want to initially collapse a group, you can do this once RadPropertyGrid is loaded using a Dispatcher. Please refer to the [Expand/Collapse Groups](#expand-collapse-groups) section below.
 
 Another property you can configure is __SortAndGroupButtonsVisibility__. It sets the visibility mode of the sort and group buttons. By default the buttons will be visible.
 
 For example, lets have the following declaration of the RadPropertyGrid control:
 
-#### __[XAML] Example 1: Declaring RadPropertyGrid__
+__Example 1: Declaring RadPropertyGrid__
 
-	{{region xaml-radpropertygrid-grouping_0}}
+```XAML
 	<telerik:RadPropertyGrid Grid.Row="0" x:Name="PropertyGrid1"
 	                          RenderMode="Flat"
 	                          AutoGeneratePropertyDefinitions="False"
@@ -32,13 +32,13 @@ For example, lets have the following declaration of the RadPropertyGrid control:
 	        <telerik:PropertyDefinition Binding="{Binding HomePhone}" GroupName="Group Phone" DisplayName="HomePhone"/>
 	    </telerik:RadPropertyGrid.PropertyDefinitions>
 	</telerik:RadPropertyGrid>
-{{endregion}}
+```
 
 Its Item is set like so:
 
-#### __[C#] Example 2: Setting RadPropertyGrid Item__
+__Example 2: Setting RadPropertyGrid Item__
 
-	{{region cs-radpropertygrid-grouping_1}}
+```C#
 	Employee Employee = new Employee()
 	{
 	    FirstName = "Nancy",
@@ -47,11 +47,8 @@ Its Item is set like so:
 	    HomePhone = "(206) 555-9857"
 	};
 	this.PropertyGrid1.Item = Employee;
-{{endregion}}
-
-#### __[VB.NET] Example 2: Setting RadPropertyGrid Item__
-
-	{{region vb-radpropertygrid-grouping_1}}
+```
+```VB.NET
 	Dim Employee As New Employee() With {
 	    .FirstName = "Nancy",
 	    .LastName = "Davolio",
@@ -59,7 +56,7 @@ Its Item is set like so:
 	    .HomePhone = "(206) 555-9857"
 	}
 	Me.PropertyGrid1.Item = Employee
-{{endregion}}
+```
 
 Now, if you run your application, you will see this result:
 
@@ -73,59 +70,47 @@ He can also collapse and expand groups in RadPropertyGrid in code using its meth
 
 * __ExpandGroup(object GroupKey)__: Sets expand state for the given GroupDefinition
 
-#### __[C#] Example 3: Expanding RadPropertyGrid Group__
+__Example 3: Expanding RadPropertyGrid Group__
 
-	{{region cs-radpropertygrid-grouping_2}}
+```C#
 	this.PropertyGrid1.ExpandGroup("Group Name");
-{{endregion}}
-
-#### __[VB.NET] Example 3: Expanding RadPropertyGrid Group__
-
-	{{region vb-radpropertygrid-grouping_2}}
+```
+```VB.NET
 	Me.PropertyGrid1.ExpandGroup("Group Name")
-{{endregion}}
+```
 
 * __CollapseGroup(object GroupKey)__: Collapses the visual group for the given GroupDefinition
 
-#### __[C#] Example 4: Collapsing RadPropertyGrid Group__
+__Example 4: Collapsing RadPropertyGrid Group__
 
-	{{region cs-radpropertygrid-grouping_3}}
+```C#
 	this.PropertyGrid1.CollapseGroup("Group Name");
-{{endregion}}
-
-#### __[VB.NET] Example 4: Collapsing RadPropertyGrid Group__
-
-	{{region vb-radpropertygrid-grouping_3}}
+```
+```VB.NET
 	Me.PropertyGrid1.CollapseGroup("Group Name")
-{{endregion}}
+```
 
 * __ExpandAllGroups()__: Expands all groups recursively
 
-#### __[C#] Example 5: Expanding all RadPropertyGrid Groups__
+__Example 5: Expanding all RadPropertyGrid Groups__
 
-	{{region cs-radpropertygrid-grouping_4}}
+```C#
 	this.PropertyGrid1.ExpandAllGroups();
-{{endregion}}
-
-#### __[VB.NET] Example 5: Expanding all RadPropertyGrid Groups__
-
-	{{region vb-radpropertygrid-grouping_4}}
+```
+```VB.NET
 	Me.PropertyGrid1.ExpandAllGroups()
-{{endregion}}
+```
 
 * __CollapseAllGroups()__: Collapses all groups recursively.
 
-#### __[C#] Example 6: Collapsing all RadPropertyGrid Groups__
+__Example 6: Collapsing all RadPropertyGrid Groups__
 
-	{{region cs-radpropertygrid-grouping_5}}
+```C#
 	this.PropertyGrid1.CollapseAllGroups();
-{{endregion}}
-
-#### __[VB.NET] Example 6: Collapsing all RadPropertyGrid Groups__
-
-	{{region vb-radpropertygrid-grouping_5}}
+```
+```VB.NET
 	Me.PropertyGrid1.CollapseAllGroups()
-{{endregion}}
+```
 
 >importantYou need to set __RenderMode="Flat"__ in order to be able to execute the methods above. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
@@ -139,21 +124,18 @@ It has two methods:
 
 * __ResumeNotifications()__: Resumes the notifications.
 
-#### __[C#] Example 7: Suspending and Resuming notifications__
+__Example 7: Suspending and Resuming notifications__
 
-	{{region cs-radpropertygrid-grouping_6}}
+```C#
 	this.PropertyGrid1.GroupDefinitions.SuspendNotifications();
 	// Execute additional logic
 	this.PropertyGrid1.GroupDefinitions.ResumeNotifications();
-{{endregion}}
-
-#### __[VB.NET] Example 7: Suspending and Resuming notifications__
-
-	{{region vb-radpropertygrid-grouping_6}}
+```
+```VB.NET
 	Me.PropertyGrid1.GroupDefinitions.SuspendNotifications()
 	' Execute additional logic
 	Me.PropertyGrid1.GroupDefinitions.ResumeNotifications()
-{{endregion}}
+```
 
 >importantYou need to set __RenderMode="Flat"__ in order to be able to work with the GroupDefinitions collection. For more information check [Layout Rendering Modes]({%slug radpropertygrid-features-layout-rendering-modes%}).
 
@@ -161,17 +143,14 @@ It has two methods:
 
 As of **R2 2019**, the RadPropertyGrid control exposes a new boolean property - **AutoExpandGroups**. It controls whether groups should be expanded or not when loaded. The default value is **True** meaning that all groups are initially expanded.
 
-#### __[C#] Example 8: Set groups' initial state to collapsed__
+__Example 8: Set groups' initial state to collapsed__
 
-{{region cs-radpropertygrid-grouping_7}}
+```C#
 	this.PropertyGrid1.AutoExpandGroups = false;
-{{endregion}}
-
-#### __[VB.NET] Example 8: Set groups' initial state to collapsed__
-
-{{region vb-radpropertygrid-grouping_8}}
+```
+```VB.NET
 	this.PropertyGrid1.AutoExpandGroups = False
-{{endregion}}
+```
 
 ## See Also
 

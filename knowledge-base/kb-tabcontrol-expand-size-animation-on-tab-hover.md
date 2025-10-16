@@ -23,8 +23,8 @@ How to implement size expand animation for the `RadTabItem` triggered on mouse o
 
 One way to create this is to use `Storyboard` objects with `DoubleAnimation` that targets the `Width` or `Height` of the element in the `Header` of the `RadTabItem`.
 
-#### __[XAML]__
-{{region kb-tabcontrol-expand-size-animation-on-tab-hover-0}}
+
+```XAML
 	<Window.Resources>
 		<Storyboard x:Key="AnimateUp">
 			<DoubleAnimation Storyboard.Target="{Binding ElementName=pnl}"
@@ -95,5 +95,5 @@ One way to create this is to use `Storyboard` objects with `DoubleAnimation` tha
 			</telerik:RadTabControl.Items>
 		</telerik:RadTabControl>
 	</Grid>
-{{endregion}}
+```
 

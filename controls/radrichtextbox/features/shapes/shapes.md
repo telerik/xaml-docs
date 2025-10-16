@@ -44,11 +44,11 @@ The InsertShape() method of [RadDocumentEditor]({%slug radrichtextbox-features-r
 
 #### [C#] Example 1: Insert shape in a document
 
-{{region radrichtextbox-features-shapes_0}}
+```C#
 
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
     editor.InsertShape(ShapeType.Heart, new Size(100, 100));
-{{endregion}}
+```
 
 ## Editing Shapes in Code
 
@@ -56,10 +56,10 @@ The [RadDocumentEditor]({%slug radrichtextbox-features-raddocumenteditor%}) clas
 
 #### [C#] Example 2: Getting all shapes in a document
 
-{{region radrichtextbox-features-shapes_1}}
+```C#
 
     IEnumerable<ShapeInline> shapes = this.radRichTextBox.Document.EnumerateChildrenOfType<ShapeInline>();
-{{endregion}}
+```
 
 Once you have obtained the desired ShapeInline, you can apply the changes to it through the exposed methods:
 
@@ -73,7 +73,7 @@ Once you have obtained the desired ShapeInline, you can apply the changes to it 
 
 #### [C#] Example 3: Insert and modify shape
 
-{{region radrichtextbox-features-shapes_2}}
+```C#
 
     RadDocumentEditor editor = new RadDocumentEditor(this.radRichTextBox.Document);
     editor.InsertShape(ShapeType.ArrowPentagon, new Size(100, 100));
@@ -83,7 +83,7 @@ Once you have obtained the desired ShapeInline, you can apply the changes to it 
     editor.ChangeShapeOutlineFill(shape, new ShapeSolidFill(Colors.Chocolate));
     editor.ChangeShapeOutlineWidth(shape, 3);
     editor.ChangeShapeRotateAngle(shape, 99);
-{{endregion}}
+```
 
 
 ### Shape Fill 
@@ -94,13 +94,13 @@ The fill colors related to shapes are defined by two interfaces: **IShapeFill** 
 
 #### [C#] Example 4: Create different fill types
 
-{{region radrichtextbox-features-shapes_3}}
+```C#
 
     ShapeNoFill noFill = new ShapeNoFill();  
     ShapeSolidFill solidFill = new ShapeSolidFill(Colors.Green);
     ShapePatternFill patternFill = new ShapePatternFill(Telerik.Windows.Documents.Model.DrawingML.PatternType.Cross, Colors.White, Colors.Green);
     ShapeGradientFill gradientFill = new ShapeGradientFill(new RadialGradientBrush(Colors.White, Colors.Green));
-{{endregion}}
+```
 
 ## Getting the Content of a Shape
 
@@ -108,11 +108,11 @@ The **ShapeInline** class exposes the **Body** property to enable you access the
 
 #### [C#] Example 5: Get the shape content
 
-{{region radrichtextbox-features-shapes_4}}
+```C#
 
     ShapeInline shape = new ShapeInline();
     RadDocument doc = shape.Body;
-{{endregion}}
+```
 
 ## See Also
 * [RadDocument]({%slug radrichtextbox-features-document-elements-raddocument%})

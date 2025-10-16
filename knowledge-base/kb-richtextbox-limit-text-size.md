@@ -30,8 +30,8 @@ In this article, you will find how to restrict the input size of RadRichTextBox 
 ## Solution
 The described behavior can be achieved using the layout boxes generated to show the content. To obtain the last layout box inside the document after editing the content, you would need to subscribe to the **DocumentContentChanged** event of RadRichTextBox. Once you have found the last layout box, you can compare its Bottom position with the size of the control to find whether the content exceeds the allowed size. If so, invoke the **Undo()** method to cancel the last change. Here is an example in code:
 
-#### __[C#]__
-{{region kb-richtextbox-limit-text-size}}
+
+```C#
 
     private void RadRichTextBox_DocumentContentChanged(object sender, EventArgs e)
     {
@@ -42,4 +42,4 @@ The described behavior can be achieved using the layout boxes generated to show 
             this.radRichTextBox.Undo();
         }
     }
-{{endregion}}
+```

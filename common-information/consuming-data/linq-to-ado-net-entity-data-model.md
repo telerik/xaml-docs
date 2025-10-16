@@ -10,21 +10,9 @@ position: 10
 
 # Using LINQ to ADO.NET Entity Data Model
 
-The purpose of this article is to show you how to use __LINQ__ against __ADO.NET Entity Data Model__. It will cover how to:
+The purpose of this article is to show you how to use __LINQ__ against __ADO.NET Entity Data Model__. 
 
-* [Create the ADO.NET Entity Data Model](#create-the-adonet-entity-data-model)
-
-* [Query an entity from the database](#query-an-entity-from-the-database)
-
-* [Update an entity in the database](#update-an-entity-in-the-database)
-
-* [Insert a new record(s) in the database](#insert-a-new-records-in-the-database)
-
-* [Delete a record from the database](#delete-a-record-from-the-database)
-
-* [Retrieve a record with Server Side Paging](#retrieve-a-record-with-server-side-paging)
-
->tipThis tutorial uses the __Northwind__ database. You can get a SQL Query for the whole database from [here](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs). You can use __Microsoft SQL Management Studio__ to execute the query.  
+>tip This tutorial uses the __Northwind__ database. You can get a SQL Query for the whole database from [here](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs). You can use __Microsoft SQL Management Studio__ to execute the query.  
 
 ## Create the ADO.NET Entity Data Model
 
@@ -54,9 +42,9 @@ You can take advantage of the **Visual Studio Entity Data Model Wizard** to gene
 
 The code in __Example 1__ shows how to use LINQ query syntax to retrieve an __IEnumerable__ sequence of __Product__ objects.
 
-#### __[C#] Example 1: Query Product by CategoryName__
+__Example 1: Query Product by CategoryName__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_0}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -66,25 +54,25 @@ The code in __Example 1__ shows how to use LINQ query syntax to retrieve an __IE
 					select p;
 		IEnumerable<Product> products = query.ToList();
 	}
-{{endregion}}
+```
 
-#### __[VB] Example 1: Query Product by CategoryName__
+__Example 1: Query Product by CategoryName__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_1}}
+```VB
 	Dim dbContext As New NorthwindEntities()
 	Dim query = From p In dbContext.Products
 		Where p.Category.CategoryName = "Seafood"
 		Select p
 	Dim products As IEnumerable(Of Product) = query.ToList()
-{{endregion}}
+```
 
 ## Update an Entity in the Database
 
 The code in __Example 2__ demonstrates how to grab a single __Product__ object from the database, update its price, and then save the changes back to the database.
 
-#### __[C#] Example 2: Update UnitPrice of Product__
+__Example 2: Update UnitPrice of Product__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_2}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -93,24 +81,24 @@ The code in __Example 2__ demonstrates how to grab a single __Product__ object f
 		product.UnitPrice = 1000;
 		dbContext.SaveChanges();
 	}
-{{endregion}}
+```
 
-#### __[VB] Example 2: Update UnitPrice of Product__
+__Example 2: Update UnitPrice of Product__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_3}}
+```VB
 	Dim dbContext As New NorthwindEntities()
 	Dim product As Product = dbContext.Products.First(Function(p) p.ProductName = "Aniseed Syrup")
 	product.UnitPrice = 1000
 	dbContext.SaveChanges()
-{{endregion}}
+```
 
 ## Insert a New Record(s) in the Database
 
 The code in __Example 3__ shows you how to create a new __Category__ object. Then, it shows how to create two new __Products__ and associate them with the __Category__. Finally, all three objects are saved in the database.
         
-#### __[C#] Example 3: Insert Products with new Category__
+__Example 3: Insert Products with new Category__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_4}}
+```C#
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
@@ -134,11 +122,11 @@ The code in __Example 3__ shows you how to create a new __Category__ object. The
 			dbContext.SaveChanges();
 		}
 	}
-{{endregion}}
+```
 
-#### __[VB] Example 3: Insert Products with new Category__
+__Example 3: Insert Products with new Category__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_5}}
+```VB
 	Dim dbContext As New NorthwindEntities()
 	
 	Dim category As New Category()
@@ -155,15 +143,15 @@ The code in __Example 3__ shows you how to create a new __Category__ object. The
 	
 	dbContext.Categories.Add(category)
 	dbContext.SaveChanges()
-{{endregion}}
+```
 
 ## Delete a Record from the Database
 
 __Example 4__ demonstrates you how to delete all 'Test' products from the database.
 
-#### __[C#] Example 4: Delete a record based on a condition__
+__Example 4: Delete a record based on a condition__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_6}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -177,11 +165,11 @@ __Example 4__ demonstrates you how to delete all 'Test' products from the databa
 		}
 		dbContext.SaveChanges();
 	}
-{{endregion}}
+```
 
-#### __[VB] Example 4: Delete a record based on a condition__
+__Example 4: Delete a record based on a condition__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_7}}
+```VB
 	Dim dbContext As New NorthwindEntities()
 	Dim query = From p In dbContext.Products
 				Where p.ProductName.Contains("Test")
@@ -190,15 +178,15 @@ __Example 4__ demonstrates you how to delete all 'Test' products from the databa
 		dbContext.Products.Remove(p)
 	Next p
 	dbContext.SaveChanges()
-{{endregion}}
+```
 
 ## Retrieve a Record with Server-side Paging
 
 __Example 5__ shows you how to implement efficient server-side database paging. By using the __Skip()__ and __Take()__ methods, you will return 15 rows from the database - starting with row 300.
 
-#### __[C#] Example 5:Server-side Paging__
+__Example 5:Server-side Paging__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_8}}
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();
@@ -208,17 +196,17 @@ __Example 5__ shows you how to implement efficient server-side database paging. 
 						select p).Skip(300).Take(15);
 		IEnumerable<Product> products = query.ToList();
 	}
-{{endregion}}
+```
 
-#### __[VB] Example 5:Server-side Paging__
+__Example 5:Server-side Paging__
 
-{{region consuming-data-linq-to-ado-net-entity-data-model_9}}
+```VB
 	Dim dbContext As New NorthwindEntities()
 	Dim query = (From p In dbContext.Products
 				Where p.Category.CategoryName = "Aniseed Syrup"
 				Select p).Skip(300).Take(15)
 	Dim products As IEnumerable(Of Product) = query.ToList()
-{{endregion}}
+```
 
 ## See Also  
  * [Consuming WCF Data Service]({%slug consuming-data-ado-net-data-service%})

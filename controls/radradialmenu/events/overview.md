@@ -54,9 +54,9 @@ Available, since the __R1 2021__ release and occurs before a menu level changes.
 
 	* __AutoSizeMenuItems__: Gets or sets whether the level to which the user is navigating will have its segments [auto-sized]({%slug radradialmenu-features-configuration%}#automatically-size-the-menuitems).
 
-#### __[C#] Example 1: Handling the Navigating event__
+__Example 1: Handling the Navigating event__
 
-{{region cs-radradialmenu-events-overview_0}}
+```C#
 	private void RadRadialMenu_Navigating(object sender, Controls.RadialMenuNavigatingEventArgs e)
 	{
 		// Auto-size menu items only when they are more than 2
@@ -65,7 +65,7 @@ Available, since the __R1 2021__ release and occurs before a menu level changes.
 			e.AutoSizeMenuItems = false;
 		}
 	}
-{{endregion}}
+```
 
 ## RadRadialMenuItem Events
 

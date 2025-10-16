@@ -14,7 +14,7 @@ Localizing the strings used by the filtering UI is no different than localizing 
 
 #### __XML__
 
-{{region gridview-filtering-howto-localize-the-filtering-ui_0}}
+```XML
 
 	  <data name="GridViewClearFilter" xml:space="preserve">
 	    <value>Clear Filter</value>
@@ -97,4 +97,4 @@ Localizing the strings used by the filtering UI is no different than localizing 
 	  <data name="GridViewFilterIsNotEmpty" xml:space="preserve"> 
 	    <value>Is not empty</value> 
 	  </data> 
-{{endregion}}
+```

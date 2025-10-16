@@ -26,8 +26,8 @@ How to receive only one notification, when the user releases the RepeatButton in
 
 Inherit the RadNumericUpDown control and add a handler for the __MouseLeftButtonUp__ event of the RepeatButtons within the control. In that event handler, raise a custom RoutedEvent.
 
-#### __[C#]__
-{{region kb-numericupdown-howto-introduce-event-fired-when-repeatbuttons-are-released-0}}
+
+```C#
     public class MyNumericUpDown : RadNumericUpDown
     {
         public MyNumericUpDown()
@@ -56,11 +56,11 @@ Inherit the RadNumericUpDown control and add a handler for the __MouseLeftButton
             RaiseEvent(newEventArgs);
         }
     }
-{{endregion}}
+```
 
 If the [NoXaml]({%slug xaml-vs-noxaml%}#noxaml-assemblies) dlls are used, the custom control's style should be based on the default one like so:
 
-#### __[XAML]__
-{{region kb-numericupdown-howto-introduce-event-fired-when-repeatbuttons-are-released-1}}
+
+```XAML
         <Style TargetType="local:MyNumericUpDown" BasedOn="{StaticResource RadNumericUpDownStyle}" />
-{{endregion}}
+```

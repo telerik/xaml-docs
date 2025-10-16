@@ -16,8 +16,8 @@ The general use of mail merge is the creation of a document serving as a templat
 
 The first thing you need to do is assign a value to the ItemsSource property of the MailMergeDataSource of the document. For example, if you will be writing letters to Employees of a company, you can have a context which keeps a list of Employees, each Employee having a FirstName, LastName and JobTitle.
 
-#### __C#__   
-{{region radrichtextbox-features-mail-merge_0}}
+   
+```C#
 	public class ExamplesDataContext
     {
         private List<Employee> employees = new List<Employee>()
@@ -53,14 +53,14 @@ The first thing you need to do is assign a value to the ItemsSource property of 
 			get { return employees; }  
 		}
     }
-{{endregion}}
+```
 
 All that is left is to add the following line:
 
-#### __C#__  
-{{region radrichtextbox-features-mail-merge_1}}
+  
+```C#
 	this.radRichTextBox.Document.MailMergeDataSource.ItemsSource = new ExamplesDataContext().Employees;
-{{endregion}}
+```
 
 ## Performing Mail Merge
 
@@ -88,37 +88,37 @@ This same scenario can be carried out programmatically just as easily. The metho
 
 ### Creating a MergeField
 
-#### __C#__  
-{{region radrichtextbox-features-mail-merge_2}}
+  
+```C#
 	MergeField field = new MergeField() { PropertyPath = "FirstName" };
-{{endregion}}
+```
 
 This fields will look for the value of the FirstName property of the Employee objects.
 
 ### Changing the display mode of merge fields
 
-#### __C#__  
-{{region radrichtextbox-features-mail-merge_3}}
+  
+```C#
 	field.DisplayMode = FieldDisplayMode.Result; 	
 	this.radRichTextBox.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result); 
 	this.radRichTextBox.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result);
-{{endregion}}
+```
 
 
 ### Inserting a MergeField at the current position of the caret
 
-#### __C#__
 
-{{region radrichtextbox-features-mail-merge_4}}
+
+```C#
 	this.radRichTextBox.InsertField(field); 	
 	this.radRichTextBox.InsertField(field, FieldDisplayMode.DisplayName);
-{{endregion}}
+```
 
 ### Previewing the results of Mail Merge:
 
-#### __C#__
 
-{{region radrichtextbox-features-mail-merge_5}}
+
+```C#
 	this.radRichTextBox.PreviewFirstMailMergeDataRecord();
 	
 	this.radRichTextBox.PreviewLastMailMergeDataRecord();
@@ -128,13 +128,13 @@ This fields will look for the value of the FirstName property of the Employee ob
 	this.radRichTextBox.PreviewNextMailMergeDataRecord();
 	
 	this.radRichTextBox.PreviewPreviousMailMergeDataRecord();
-{{endregion}}
+```
 
 ### Performing MailMerge
 
-#### __C#__
 
-{{region radrichtextbox-features-mail-merge_6}}
+
+```C#
 	this.radRichTextBox.MailMergeCurrentRecord(); // returns a RadDocument that is the result of substituting the merge fields with the data from the current record. The current record can be specified through the MailMergeSource API:</para>
 	
 	this.radRichTextBox.Document.MailMergeDataSource.MoveToFirst();
@@ -148,6 +148,6 @@ This fields will look for the value of the FirstName property of the Employee ob
 	this.radRichTextBox.Document.MailMergeDataSource.MoveToIndex(index);
 	
 	this.radRichTextBox.MailMerge(false); // returns a RadDocument that is the result of Mail Merging all records. The parameter specifies if a page break should be inserted between the records (default value is true).
-{{endregion}}
+```
 
 You can further choose what you wish to do with the resulting RadDocument – assign it to a RadRichTextBox’s Document property, export it, etc.

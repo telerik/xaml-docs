@@ -31,13 +31,13 @@ __XamlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 
 >These events will be called when the __ImageExportMode__ enumeration property is set to __ImageExportingEvent__.
 
-#### __[C#] Example 1: Setting the ExportSettings of the XamlFormatProvider__
-{{region c#-radrichtextbox-import-export-xaml-settings_0}}
+__Example 1: Setting the ExportSettings of the XamlFormatProvider__
+```C#
 	XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();
 	XamlExportSettings settings = new XamlExportSettings();
 	settings.ImageExportMode = Telerik.Windows.Documents.FormatProviders.Xaml.ImageExportMode.UriSource;
 	xamlFormatProvider.ExportSettings = settings;
-{{endregion}}
+```
 
 ## Import Settings
 
@@ -50,8 +50,8 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 	- __Xaml__: The XAML string that is being imported. You can changed it and then pass it again to the property so the changed XAML is imported. 
 	- __SkipXamlValidation__: Allows you to skip the default XAML types validation. 
 
-#### __[C#] Example 2: Disable the default XAML validation__
-{{region c#-radrichtextbox-import-export-xaml-settings_2}}
+__Example 2: Disable the default XAML validation__
+```C#
 
 	XamlFormatProvider provider = new XamlFormatProvider();
     provider.ImportSettings.PreProcessingXaml += (s, args) => { 
@@ -59,10 +59,10 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
         args.SkipXamlValidation = true;
     };
 
-{{endregion}}
+```
 
-#### __[C#] Example 3: Setting the ExportSettings of the XamlFormatProvider__
-{{region c#-radrichtextbox-import-export-xaml-settings_1}}
+__Example 3: Setting the ExportSettings of the XamlFormatProvider__
+```C#
 
 	XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();
 	XamlImportSettings settings = new XamlImportSettings();
@@ -74,7 +74,7 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 		var img = e.Image;
 	}
 	
-{{endregion}}
+```
 
 ### Properties
 

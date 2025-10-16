@@ -14,8 +14,8 @@ Categorical series in RadChartView have a mechanism which can be used for combin
 
 >tip Categorical series which supports this mechanism are: __AreaSeries, BarSeries, LineSeries, PointSeries, RangeBarSeries, BoxPlotSeries__. RangeBarSeries and BoxPlotSeries support only None and Cluster modes.
 
-#### __[XAML] Example 1: Setting the CombineMode property__
-{{region xaml-radchartview-features-combinemode_0}}
+__Example 1: Setting the CombineMode property__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -50,7 +50,7 @@ Categorical series in RadChartView have a mechanism which can be used for combin
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 <!-- -->
 
@@ -78,8 +78,8 @@ Categorical series in RadChartView have a mechanism which can be used for combin
 
 If the **CombineMode** property of the series is either **Stack** or **Stack100**, the **StackGroupKey** property of the series can be set in order to define in which stack group it will be included. **Example 2** demonstrates this property.
 
-#### __[XAML] Example 2: Setting the StackGroupKey property__
-{{region xaml-radchartview-features-combinemode_1}}
+__Example 2: Setting the StackGroupKey property__
+```XAML
 	 <telerik:RadCartesianChart Palette="Windows8">
 		<telerik:RadCartesianChart.HorizontalAxis>
 			<telerik:CategoricalAxis />
@@ -114,7 +114,7 @@ If the **CombineMode** property of the series is either **Stack** or **Stack100*
 			</telerik:BarSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 #### __Figure 5: Result from Example 2__
 ![RadChartView series with CombineMode and StackGroupKey](images/radchartview-combinemode-stackgroupkey.png)
@@ -125,8 +125,8 @@ By default when you have mixed values (negative and positive) in the same catego
 
 To change this behavior and use a single stack for all values, set the __ChartViewExtensions.StackNegativeValuesSeparately__ attached property to __False__. The property is applied to the RadCartesianChart control.
 
-#### __[XAML] Example 3: Setting the ChartViewExtensions.StackNegativeValuesSeparately property__
-{{region xaml-radchartview-features-combinemode_2}}
+__Example 3: Setting the ChartViewExtensions.StackNegativeValuesSeparately property__
+```XAML
 	<telerik:RadCartesianChart Palette="Windows8" chartView:ChartViewExtensions.StackNegativeValuesSeparately="False">
 		<telerik:RadCartesianChart.VerticalAxis>
 			<telerik:LinearAxis />
@@ -165,7 +165,7 @@ To change this behavior and use a single stack for all values, set the __ChartVi
 			</telerik:AreaSeries>
 		</telerik:RadCartesianChart.Series>
 	</telerik:RadCartesianChart>
-{{endregion}}
+```
 
 > The "chartView" namespace refers to the following - `xmlns:chartView="clr-namespace:Telerik.Windows.Controls.ChartView;assembly=Telerik.Windows.Controls.Chart"`
 

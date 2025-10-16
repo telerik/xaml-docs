@@ -32,8 +32,8 @@ How to add a title to RadCartesianChart.
 
 To add a title, add the chart and a TextBlock in a Grid panel with two RowDefinitions.
 
-#### __[XAML]__
-{{region kb-chartview-add-chart-title-0}}
+
+```XAML
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
@@ -67,7 +67,7 @@ To add a title, add the chart and a TextBlock in a Grid panel with two RowDefini
 			</telerik:RadCartesianChart.Series>
 		</telerik:RadCartesianChart>
 	</Grid>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadChartView Add Chart Title](images/kb-chartview-add-chart-title-0.png)
 

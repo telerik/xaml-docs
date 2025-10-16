@@ -20,9 +20,9 @@ The purpose of this tutorial is to show you how to __freeze__ the entire layout 
 
 For the purpose of this tutorial the following __RadDocking__ declaration will be used:
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-freeze-the-layout_0}}
+
+```XAML
 	<telerik:RadDocking x:Name="radDocking">
 
 	    <telerik:RadSplitContainer InitialPosition="DockedLeft">
@@ -58,7 +58,7 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 	    </telerik:RadSplitContainer>
 
 	</telerik:RadDocking>
-{{endregion}}
+```
 
 ![{{ site.framework_name }} RadDocking Sample Declaration](images/RadDocking_HowTo_FreezeLayout_010.png)
 
@@ -66,9 +66,9 @@ For the purpose of this tutorial the following __RadDocking__ declaration will b
 
 In order to disable the close button, you need to set the __CanUserClose__ property of the __RadPane__ to __False__. So find the __RadPane__ declarations and set the __CanUserClose__ property:
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-freeze-the-layout_1}}
+
+```XAML
 	<!--...-->
 	<telerik:RadPane x:Name="radPane10" Header="Pane 1" CanUserClose="False"/>
 	<!--...-->
@@ -77,7 +77,7 @@ In order to disable the close button, you need to set the __CanUserClose__ prope
 	<telerik:RadPane x:Name="radPane30" Header="Pane 3" CanUserClose="False"/>
 	<!--...-->
 	<telerik:RadPane x:Name="radPane40" Header="Pane 4" CanUserClose="False"/>
-{{endregion}}
+```
 
 Here is the result:
 
@@ -87,9 +87,9 @@ Here is the result:
 
 In order to disable the pin/unpin button, you need to set the __CanUserPin__ property of the __RadPane__ to __False__. So find the __RadPane__ declarations and set the __CanUserPane__ property:
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-freeze-the-layout_2}}
+
+```XAML
 	<!--...-->
 	<telerik:RadPane x:Name="radPane11" Header="Pane 1" CanUserClose="False" CanUserPin="False"/>
 	<!--...-->
@@ -98,7 +98,7 @@ In order to disable the pin/unpin button, you need to set the __CanUserPin__ pro
 	<telerik:RadPane x:Name="radPane31" Header="Pane 3" CanUserClose="False" CanUserPin="False"/>
 	<!--...-->
 	<telerik:RadPane x:Name="radPane41" Header="Pane 4" CanUserClose="False" CanUserPin="False"/>
-{{endregion}}
+```
 
 Here is the result:
 
@@ -108,9 +108,9 @@ Here is the result:
 
 In order to disable the float behavior, you need to set the __CanFloat__ property of the __RadPane__ to __False__. Which means that the user will not be able to drag and drop the panes. So find the __RadPane__ declarations and set the __CanFloat__ property:
 
-#### __XAML__
 
-{{region xaml-raddocking-how-to-freeze-the-layout_3}}
+
+```XAML
 	<!--...-->
 	<telerik:RadPane x:Name="radPane12" Header="Pane 1" CanUserClose="False" CanUserPin="False" CanFloat="False"/>
 	<!--...-->
@@ -119,7 +119,7 @@ In order to disable the float behavior, you need to set the __CanFloat__ propert
 	<telerik:RadPane x:Name="radPane32" Header="Pane 3" CanUserClose="False" CanUserPin="False" CanFloat="False"/>
 	<!--...-->
 	<telerik:RadPane x:Name="radPane42" Header="Pane 4" CanUserClose="False" CanUserPin="False" CanFloat="False"/>
-{{endregion}}
+```
 
 ## Disable the Drop-Down Menu in the Pane Header
 
@@ -127,9 +127,9 @@ In order to remove the menu from the __RadPane__, you need to remove all the men
 
 Switch to the code-behind and clear the __MenuCommands__ collection of each __RadPane__.
 
-#### __C#__
 
-{{region cs-raddocking-how-to-freeze-the-layout_4}}
+
+```C#
 	private void DisableMenu()
 	{
 	    radPane1.ContextMenuTemplate = null;
@@ -137,18 +137,15 @@ Switch to the code-behind and clear the __MenuCommands__ collection of each __Ra
 	    radPane3.ContextMenuTemplate = null;
 	    radPane4.ContextMenuTemplate = null;
 	}
-{{endregion}}
-
-#### __VB.NET__
-
-{{region vb-raddocking-how-to-freeze-the-layout_5}}
+```
+```VB.NET
 	Private Sub DisableMenu()
 		radPane1.ContextMenuTemplate = Nothing
 		radPane2.ContextMenuTemplate = Nothing
 		radPane3.ContextMenuTemplate = Nothing
 		radPane4.ContextMenuTemplate = Nothing
 	End Sub
-{{endregion}}
+```
 
 Here is the result:
 

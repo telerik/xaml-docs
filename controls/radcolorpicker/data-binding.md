@@ -18,8 +18,8 @@ To replace the default colors in the palettes, set the `HeaderPaletteItemsSource
 
 The following example shows also how to replace the default color palette values, but this is not necessary. You can set only the `SelectedColor` property, if there is no need to change the default palettes.
 
-#### __[C#] Defining the view model__
-{{region radcolorpicker-data-binding-0}}
+__Defining the view model__
+```C#
 	public class MainViewModel : ViewModelBase
     {
         private static Random r = new Random(0);
@@ -63,41 +63,41 @@ The following example shows also how to replace the default color palette values
             return Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233));
         }
     }
-{{endregion}}
+```
 
-#### __[C#] Setting up the data context__
-{{region radcolorpicker-data-binding-1}}
+__Setting up the data context__
+```C#
 	public MainWindow()
 	{
 		InitializeComponent();           
 		DataContext = new MainViewModel();
 	}
-{{endregion}}
+```
 
-#### __[XAML] Data binding the properties__
-{{region radcolorpicker-data-binding-2}}
+__Data binding the properties__
+```XAML
 	<telerik:RadColorPicker SelectedColor="{Binding SelectedColor, Mode=TwoWay}"							
 				HeaderPaletteItemsSource="{Binding HeaderPaletteColors}" 
 				MainPaletteItemsSource="{Binding MainPaletteColors}"                             
 				StandardPaletteItemsSource="{Binding StandardPaletteColors}"/>
-{{endregion}}
+```
 
 ![A picture showing RadColorPicker with data bound properties and custom palette colors](images/radcolorpicker-data-binding-0.png)
 
 In case the palette items source collection are populated with custom objects (not of the `Color` type), the corresponding property that holds the color should be mapped with the `ColorPropertyPath` property of `RadColorPicker`.
 
-#### __[XAML] Setting the ColorPropertyPath__
-{{region radcolorpicker-data-binding-3}}
+__Setting the ColorPropertyPath__
+```XAML
 	<!-- this is required only if the palette items sources contain objects that are not of type System.Windows.Media.Color -->
 	<telerik:RadColorPicker ColorPropertyPath="MyColorProperty"/>
-{{endregion}}
+```
 
 ## Using Custom Item Template
 
 To replace the default rectangle appearance of the colors in the palette, set the `PaletteItemsTemplate` property of `RadColorPicker`.
 
-#### __[XAML] Setting the PaletteItemsTemplate__
-{{region radcolorpicker-data-binding-3}}
+__Setting the PaletteItemsTemplate__
+```XAML
 	<telerik:RadColorPicker SelectedColor="{Binding SelectedColor, Mode=TwoWay}"                         
 				HeaderPaletteItemsSource="{Binding HeaderPaletteColors}" 
 				MainPaletteItemsSource="{Binding MainPaletteColors}"                             
@@ -117,7 +117,7 @@ To replace the default rectangle appearance of the colors in the palette, set th
 			</DataTemplate>
 		</telerik:RadColorPicker.PaletteItemsTemplate>
 	</telerik:RadColorPicker>
-{{endregion}}
+```
 
 ![A picture showing RadColorPicker with custom items template](images/radcolorpicker-data-binding-1.png)
 

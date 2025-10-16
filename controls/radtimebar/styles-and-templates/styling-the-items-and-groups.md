@@ -37,9 +37,7 @@ This topic will show you how to perform the second one.
 
 6. Edit the ItemControl style as you need and add it as implicit style in your applicationFor example:
 
-	#### __XAML__
-
-	{{region radtimebar-styling-the-items-and-groups_0}}
+	```XAML
 		<UserControl.Resources>
 				<telerik:Windows8Theme x:Key="Theme" />
 		
@@ -201,54 +199,47 @@ This topic will show you how to perform the second one.
 			</Setter>
 		</Style>
 		
-			</UserControl.Resources>
+		</UserControl.Resources>
 			
-			<Grid x:Name="LayoutRoot">
-				<telerik:RadTimeBar x:Name="timeBar" Width="950" Height="250"   
-									PeriodStart="01-01-2012"
-									PeriodEnd="03/03/2012"
-									VisiblePeriodStart="01/01/2012"
-									VisiblePeriodEnd="06/01/2012"
-									SelectionStart="02/01/2012"
-									SelectionEnd="03/01/2012"                          
-									IsSnapToIntervalEnabled="True"
-									Style="{StaticResource CustomTimeBar}">
-					<telerik:RadTimeBar.Intervals>
-						<telerik:MonthInterval />
-						<telerik:WeekInterval />
-					</telerik:RadTimeBar.Intervals>
-					<telerik:RadAreaSparkline x:Name="sparkline"/>
-				</telerik:RadTimeBar>
-			</Grid>
-		{{endregion}}
+		<Grid x:Name="LayoutRoot">
+			<telerik:RadTimeBar x:Name="timeBar" Width="950" Height="250"   
+								PeriodStart="01-01-2012"
+								PeriodEnd="03/03/2012"
+								VisiblePeriodStart="01/01/2012"
+								VisiblePeriodEnd="06/01/2012"
+								SelectionStart="02/01/2012"
+								SelectionEnd="03/01/2012"                          
+								IsSnapToIntervalEnabled="True"
+								Style="{StaticResource CustomTimeBar}">
+				<telerik:RadTimeBar.Intervals>
+					<telerik:MonthInterval />
+					<telerik:WeekInterval />
+				</telerik:RadTimeBar.Intervals>
+				<telerik:RadAreaSparkline x:Name="sparkline"/>
+			</telerik:RadTimeBar>
+		</Grid>
+	```
 
-
-
-	#### __C#__
-
-	{{region radtimebar-styling-the-items-and-groups_1}}
-			Random r = new Random();
-			List<int> data = new List<int>();
-			for (DateTime currentDate = DateTime.Today; currentDate < DateTime.Today.AddDays(100);
-			  currentDate = currentDate.AddDays(1))
-			{
-				data.Add(r.Next(0, 60));
-			}
-			sparkline.ItemsSource = data;   
-		{{endregion}}
-
-	#### __VB.NET__
-
-	{{region radtimebar-styling-the-items-and-groups_1}}
-			Dim r As New Random()
-			Dim data As New List(Of Integer)()
-			Dim currentDate As Date = Date.Today
-			Do While currentDate < Date.Today.AddDays(100)
-				data.Add(r.Next(0, 60))
-				currentDate = currentDate.AddDays(1)
-			Loop
-			sparkline.ItemsSource = data
-		{{endregion}}
+	```C#
+		Random r = new Random();
+		List<int> data = new List<int>();
+		for (DateTime currentDate = DateTime.Today; currentDate < DateTime.Today.AddDays(100);
+		  currentDate = currentDate.AddDays(1))
+		{
+			data.Add(r.Next(0, 60));
+		}
+		sparkline.ItemsSource = data;   
+	```
+	```VB.NET
+		Dim r As New Random()
+		Dim data As New List(Of Integer)()
+		Dim currentDate As Date = Date.Today
+		Do While currentDate < Date.Today.AddDays(100)
+			data.Add(r.Next(0, 60))
+			currentDate = currentDate.AddDays(1)
+		Loop
+		sparkline.ItemsSource = data
+	```
 
 The result can be seen below:
 ![radtimebar styling items and groups](images/radtimebar_styling_items_and_groups.PNG)

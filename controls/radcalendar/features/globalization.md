@@ -10,7 +10,7 @@ position: 1
 
 # Globalization
 
-As of **R1 2017** RadCalendar supports the following .NET Framework calendar implementations:
+RadCalendar supports the following .NET Framework calendar implementations:
 
 * **ChineseLunisolarCalendar**, which represents the **Chinese lunisolar** calendar.
 
@@ -42,39 +42,33 @@ As of **R1 2017** RadCalendar supports the following .NET Framework calendar imp
 
 You can set the default calendar for the whole application or for a specific RadCalendar instance as demonstrated in **Example 1** and **Example 2**.
 
-#### __[C#] Example 1: Setting the default calendar application-wide__
+__Example 1: Setting the default calendar application-wide__
 
-	{{region cs-radcalendar-calendar-support-2}}
-		CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-        Thread.CurrentThread.CurrentCulture = arSA;
-        Thread.CurrentThread.CurrentUICulture = arSA;
-        arSA.DateTimeFormat.Calendar = new HijriCalendar();
-	{{endregion}}
+```C#
+	CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
+	Thread.CurrentThread.CurrentCulture = arSA;
+	Thread.CurrentThread.CurrentUICulture = arSA;
+	arSA.DateTimeFormat.Calendar = new HijriCalendar();
+```
+```VB.NET
+	Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
+	Thread.CurrentThread.CurrentCulture = arSA
+	Thread.CurrentThread.CurrentUICulture = arSA
+	arSA.DateTimeFormat.Calendar = New HijriCalendar()
+```
 
-#### __[VB.NET] Example 1: Setting the default calendar application-wide__
+__Example 2: Setting the calendar for a specific RadCalendar instance__
 
-	{{region vb-radcalendar-calendar-support-2}}
-		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
-		Thread.CurrentThread.CurrentCulture = arSA
-		Thread.CurrentThread.CurrentUICulture = arSA
-		arSA.DateTimeFormat.Calendar = New HijriCalendar()
-	{{endregion}}
-
-#### __[C#] Example 2: Setting the calendar for a specific RadCalendar instance__
-
-	{{region cs-radcalendar-calendar-support-1}}
-		CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
-        arSA.DateTimeFormat.Calendar = new HijriCalendar();
-        calendar.Culture = arSA;
-	{{endregion}}
-
-#### __[VB.NET] Example 2: Setting the calendar for a specific RadCalendar instance__
-
-	{{region vb-radcalendar-calendar-support-1}}
-		Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
-		arSA.DateTimeFormat.Calendar = New HijriCalendar()
-		calendar.Culture = arSA
-	{{endregion}}
+```C#
+	CultureInfo arSA = CultureInfo.CreateSpecificCulture("ar-SA");
+	arSA.DateTimeFormat.Calendar = new HijriCalendar();
+	calendar.Culture = arSA;
+```
+```VB.NET
+	Dim arSA As CultureInfo = CultureInfo.CreateSpecificCulture("ar-SA")
+	arSA.DateTimeFormat.Calendar = New HijriCalendar()
+	calendar.Culture = arSA
+```
 
 **Figure 1** demonstrates the final result:
 

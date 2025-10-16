@@ -16,8 +16,8 @@ This article demonstrates how the RadHeatmap control can be populated with data.
 
 In order to demonstrate how to populate a RadHeatMap with data, we will create a sample object that will hold temperature information and a viewmodel that will hold a collection of those objects.
 
-#### __[C#] Example 1: Setting up the model and viewmodel__
-{{region cs-radheatmap-populating-with-data_0}}
+__Example 1: Setting up the model and viewmodel__
+```C#
 	public class TempInfo
 	{
 		public DateTime Year { get; set; }
@@ -63,10 +63,8 @@ In order to demonstrate how to populate a RadHeatMap with data, we will create a
             return infos;
         }
     }
-{{endregion}}
-
-#### __[VB.NET] Example 1: Setting up the model and viewmodel__
-{{region vb-radheatmap-populating-with-data_1}}
+```
+```VB.NET
 	Public Class TempInfo
 		Public Property Year() As Date
 		Public Property Month() As String
@@ -143,14 +141,14 @@ In order to demonstrate how to populate a RadHeatMap with data, we will create a
 			Return infos
 		End Function
 	End Class
-{{endregion}}
+```
 
 ## Categorical definition
 
 In order to visualize our data we need to set the __Definition__ property of the control. __Example 2__ demonstrates how to set it to a __CategoricalDefinition__.
 
-#### __[XAML] Example 2: Setting the Definition to a CategoricalDefinition__
-{{region xaml-radheatmap-populating-with-data_2}}
+__Example 2: Setting the Definition to a CategoricalDefinition__
+```XAML
 	<Grid>
         <Grid.DataContext>
             <local:ViewModel />
@@ -169,7 +167,7 @@ In order to visualize our data we need to set the __Definition__ property of the
 			</telerik:RadHeatMap.RowHeaderSettings>
 		</telerik:RadHeatMap>
 	</Grid>
-{{endregion}}
+```
 
 #### __Figure 1: RadHeatMap with CategoricalDefinition__
 ![RadHeatMap with CategoricalDefinition](images/RadHeatMap_databinding_01.PNG)
@@ -178,8 +176,8 @@ In order to visualize our data we need to set the __Definition__ property of the
 
 Alternatively, we can also use a __VerticalDefinition__. We'll set the months as __HeaderPath__ of our HeatMap. Thus the months supplied by the Month property of our underlying source will be visualized as column headers. For each row we'll display the Temperature and Rain values of the corresponding month.	
 
-#### __[XAML] Example 3: Setting the Definition to a VerticalDefinition__
-{{region xaml-radheatmap-populating-with-data_3}}
+__Example 3: Setting the Definition to a VerticalDefinition__
+```XAML
 	<Grid>
         <Grid.DataContext>
             <local:ViewModel />
@@ -209,7 +207,7 @@ Alternatively, we can also use a __VerticalDefinition__. We'll set the months as
 			</telerik:RadHeatMap.Definition>
 		</telerik:RadHeatMap>
 	</Grid>		
-{{endregion}}
+```
 
 >tip You can use the same code to declare a HorizontalDefinition.
 

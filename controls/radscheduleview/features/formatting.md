@@ -44,9 +44,9 @@ This article covers the following topics:
 
 Let’s for example set the formatting properties of DayViewDefinition:
 
-#### __XAML__
 
-{{region radscheduleview-features-formatting_0}}
+
+```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	        <telerik:DayViewDefinition
@@ -56,7 +56,7 @@ Let’s for example set the formatting properties of DayViewDefinition:
 	        ...  
 	    </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 ![DayViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsdayview.png)
 
@@ -64,9 +64,9 @@ Let’s for example set the formatting properties of DayViewDefinition:
 
 Setting these properties to WeekViewDefinition will lead to similar result:        
 
-#### __XAML__
 
-{{region radscheduleview-features-formatting_1}}
+
+```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	        ...
@@ -77,7 +77,7 @@ Setting these properties to WeekViewDefinition will lead to similar result:
 	        ...  
 	    </telerik:RadScheduleView.ViewDefinitions>
 	 </telerik:RadScheduleView>
-{{endregion}}
+```
 
 ![WeekViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsweekview.png)
 
@@ -85,9 +85,9 @@ Setting these properties to WeekViewDefinition will lead to similar result:
 
 In MonthViewDefinition you can set the following formatting properties:
 
-#### __XAML__
 
-{{region radscheduleview-features-formatting_2}}
+
+```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	        ...                     
@@ -98,7 +98,7 @@ In MonthViewDefinition you can set the following formatting properties:
 	        ...
 	    </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 And the result is:
 
@@ -108,9 +108,9 @@ And the result is:
 
 Setting the formatting properties in TimelineViewDefinition like this:
 
-#### __XAML__
 
-{{region radscheduleview-features-formatting_3}}
+
+```XAML
 	<telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
 	    <telerik:RadScheduleView.ViewDefinitions>
 	        ...       
@@ -125,7 +125,7 @@ Setting the formatting properties in TimelineViewDefinition like this:
 	         ...
 	        </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
-{{endregion}}
+```
 
 results in the following look:
 

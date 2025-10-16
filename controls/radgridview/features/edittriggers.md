@@ -28,37 +28,37 @@ The edit start actions are defined with the `GridViewEditTriggers` enum that is 
 
 To change the edit triggers for all cells in the `RadGridView` instance, set its `EditTriggers` property.
 
-#### __[XAML] Setting RadGridView EditTriggers property__
-{{region gridview-edittriggers-0}}
+__Setting RadGridView EditTriggers property__
+```XAML
 	<telerik:RadGridView EditTriggers="F2"/>
-{{endregion}}
+```
 
 To change the edit triggers per column, set the `EditTriggers` property of the associated [GridViewColumn]({%slug radgridview-columns-column-types-boundcolumnbase%}) object.
 
-#### __[XAML] Setting GridViewColumn EditTriggers property__
-{{region gridview-edittriggers-1}}
+__Setting GridViewColumn EditTriggers property__
+```XAML
 	<telerik:RadGridView.Columns>
 		<telerik:GridViewDataColumn EditTriggers="F2" />
 	</telerik:RadGridView.Columns>
-{{endregion}}
+```
 
 The `GridViewEditTriggers` is a flag enum which means that you can combine multiple values, thus allowing multiple triggers.
 
-#### __[XAML] Setting the EditTriggers property to multiple values in XAML__
-{{region gridview-edittriggers-2}}
+__Setting the EditTriggers property to multiple values in XAML__
+```XAML
 	<telerik:RadGridView.Columns>
 		<telerik:GridViewDataColumn EditTriggers="CurrentCellClick,F2,TextInput" />
 	</telerik:RadGridView.Columns>
-{{endregion}}
+```
 
-#### __[C#] Setting the EditTriggers property to multiple values in code__
-{{region gridview-edittriggers-3}}
+__Setting the EditTriggers property to multiple values in code__
+```C#
 	this.gridView.EditTriggers = GridViewEditTriggers.CellClick | GridViewEditTriggers.F2;
-{{endregion}}
+```
 
 To disable the editing, set the `EditTriggers` property to `None`.
 
-#### __[XAML] Disabling editing by using the UI__
-{{region gridview-edittriggers-4}}
+__Disabling editing by using the UI__
+```XAML
 	<telerik:RadGridView EditTriggers="None"/>	
-{{endregion}}
+```

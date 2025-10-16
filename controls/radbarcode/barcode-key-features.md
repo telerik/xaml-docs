@@ -30,8 +30,8 @@ Through the **Symbology** property you could set the symbology that will be used
 
 __Example 1__ shows a RadBarcode with the Code39 symbology applied.
 
-#### __[XAML] Example 1: Code39 Symbology__
-{{region xaml-barcode-key-features-0}}
+__Example 1: Code39 Symbology__
+```XAML
 	<telerik:RadBarcode Width="250" Height="150" Value="58000106" Foreground="Black" 
 									HorizontalAlignment="Center" VerticalAlignment="Center">
 		<telerik:RadBarcode.Symbology>
@@ -41,7 +41,7 @@ __Example 1__ shows a RadBarcode with the Code39 symbology applied.
 							CodeTextSpacing="10"/>
 		</telerik:RadBarcode.Symbology>
 	</telerik:RadBarcode>
-{{endregion}}
+```
 
 #### Figure 1: RadBarcode With 1D Code39 Symbology
 
@@ -57,8 +57,8 @@ RadBarcode provides three sizing modes that will help you fine-tune the renderin
 
 __Example 2__ shows the same Barcode with Manual SizingMode:
 
-#### __[XAML] Example 2: Code39 SizingMode__
-{{region xaml-barcode-key-features-1}}
+__Example 2: Code39 SizingMode__
+```XAML
 	<telerik:RadBarcode Width="250" Height="150" Value="58000106" Foreground="Black" 
 									HorizontalAlignment="Center" VerticalAlignment="Center">
 		<telerik:RadBarcode.Symbology>
@@ -69,7 +69,7 @@ __Example 2__ shows the same Barcode with Manual SizingMode:
 						CodeTextSpacing="10"/>
 		</telerik:RadBarcode.Symbology>
 	</telerik:RadBarcode>
-{{endregion}}
+```
 
 #### Figure 2: Barcode with Manual SizingMode
 
@@ -85,8 +85,8 @@ By default, RadBarcode control automatically adds a checksum at the end of the b
 
 You could easily change the visual appearance of your Barcodes in order to match your application theme through **ForegroundColor** and **BackgroundColor** properties.
 
-#### __[XAML] Example 3: Changing the colors__
-{{region xaml-barcode-key-features-1}}
+__Example 3: Changing the colors__
+```XAML
 	<telerik:RadBarcode Width="250" Height="150" Foreground="DarkBlue" Background="Beige"
                                 HorizontalAlignment="Center" VerticalAlignment="Center"                               
                                 Value="58000106">
@@ -94,7 +94,7 @@ You could easily change the visual appearance of your Barcodes in order to match
 			<telerik:Code39 SizingMode="Stretch" />
 		</telerik:RadBarcode.Symbology>
 	</telerik:RadBarcode>
-{{endregion}}
+```
 
 #### Figure 3: Barcode With Customized Colors
 ![Barcode Colors](images/barcode_colors.png)

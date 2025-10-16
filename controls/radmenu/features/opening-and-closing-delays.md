@@ -16,15 +16,15 @@ The __RadMenu__ allows you to specify delays for its closing and opening actions
 
 Here is an example of a __RadMenu__ with a delay before opening a menu equal to one second and a delay before closing a menu also equal to one second.
 
-#### __XAML__
 
-{{region xaml-radmenu-features-opening-and-closing-delays_0}}
+
+```XAML
 	<telerik:RadMenu VerticalAlignment="Top"
 	                 ShowDelay="0:0:1"
 	                 HideDelay="0:0:1">
 	    ...
 	</telerik:RadMenu>
-{{endregion}}
+```
 
 ## See Also
 

@@ -22,8 +22,8 @@ res_type: kb
 
 This empty area is part of the `GridViewRow` visual. To hide it, you can set the row's `Background` property to `Transparent`. To customize the cells in actual columns, you can use an implicit Style targeting the `GridViewCell` visual (or use the `CellStyle` property of the columns).
 
-#### __[XAML]__
-{{region kb-gridview-remove-empty-column-area-background-0}}
+
+```XAML
 	<Window.Resources>
 	 <Style TargetType="telerik:GridViewCell">
 		 <Setter Property="Background" Value="#29293E" />
@@ -46,5 +46,5 @@ This empty area is part of the `GridViewRow` visual. To hide it, you can set the
 			 </telerik:RadGridView.Columns>
 		 </telerik:RadGridView>
 	</Grid>
-{{endregion}}
+```
 

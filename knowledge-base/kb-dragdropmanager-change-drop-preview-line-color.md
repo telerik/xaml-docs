@@ -32,10 +32,10 @@ How to change the color of the Drop Preview Line visual element.
 
 To change the color, create a style targeting the __LinearDropVisual__ element. Then set the __BorderBrush__ property to the desired color.
 
-#### __[XAML]__
 
-{{region kb-dragdropmanager-change-drop-preview-line-color-0}}	
+
+```XAML	
 	<Style TargetType="telerik:LinearDropVisual">
 		<Setter Property="BorderBrush" Value="Green"/>
 	</Style>
-{{endregion}}
+```

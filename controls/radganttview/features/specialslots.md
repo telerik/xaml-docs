@@ -26,15 +26,15 @@ We will go through each of them separately.
 
 SingleRangeGenerator applies a single special slot to the whole visible range of RadGanttView. It can be set like this:
 
-#### __XAML__
 
-{{region xaml-radganttview-specialslots_0}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.SpecialSlotsGenerator>
 	        <telerik:SingleRangeGenerator />
 	    </telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 And here is the end result:
 
@@ -50,15 +50,15 @@ WeekDaysGenerator allows you to set special slots on certain week days. It provi
 
 So it can be used to mark the working days, for example:
 
-#### __XAML__
 
-{{region xaml-radganttview-specialslots_1}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView1" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.SpecialSlotsGenerator>
 	        <telerik:WeekDaysGenerator FirstDay="Monday" DaysCount="5" />
 	    </telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 ![ganttview specialslots 2](images/ganttview_specialslots_2.png)
 
@@ -66,9 +66,9 @@ So it can be used to mark the working days, for example:
 
 You just need to create a custom class which implements __IRangeGenerator__ interface and implement GetRanges method which receives as a parameter the current VisibleRange of the GanttView:
 
-#### __C#__
 
-{{region cs-radganttview-specialslots_2}}
+
+```C#
 	public class CustomRangeGenerator : ViewModelBase, IRangeGenerator
 	{
 	    public System.Collections.Generic.IEnumerable<IDateRange> GetRanges(IDateRange visibleRange)
@@ -84,19 +84,19 @@ You just need to create a custom class which implements __IRangeGenerator__ inte
 	        }
 	    }
 	}
-{{endregion}}
+```
 
 Set the newly created class to the SpecialSlotsGenerator property:
 
-#### __XAML__
 
-{{region xaml-radganttview-specialslots_3}}
+
+```XAML
 	<telerik:RadGanttView x:Name="ganttView2" TasksSource="{Binding Tasks}" >
 	    <telerik:RadGanttView.SpecialSlotsGenerator>
 	        <local:CustomRangeGenerator />
 	    </telerik:RadGanttView.SpecialSlotsGenerator>
 	</telerik:RadGanttView>
-{{endregion}}
+```
 
 And the result is the following:
 

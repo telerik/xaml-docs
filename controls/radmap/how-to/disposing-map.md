@@ -14,10 +14,10 @@ The RadMap control usually needs to be disposed when you no longer use it. This 
 
 > The map is not disposed by default. You need to do this manually.
 
-#### __[C#] Example 1: Disposing RadMap__
-{{region radmap-how-to-dispose-radmap-0}}
+__Example 1: Disposing RadMap__
+```C#
 	radMap.Dispose();
-{{endregion}}
+```
 
 The [providers]({%slug radmap-features-providers%}) and the [VisualizationLayer]({%slug radmap-visualization-layer-introduction%}) also expose a Dispose method. This is useful if you want to change the layer or provider instances at run-time and release their resources.
 

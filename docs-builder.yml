@@ -13,6 +13,7 @@ search-engine-id: 001595215763381649090:jt1stbj813w
 avatar-path: ./images/avatar-ninja.svg
 no-results-image-path: ./images/ninja-no-results.svg
 enable-tabbed-code-blocks: true
+center-images: false
 pdf-cover-png-path: ./images/pdf-cover.png
 img-max-width: 100%
 table-layout: fixed

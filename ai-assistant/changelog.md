@@ -1,9 +1,9 @@
 ---
-title: Overview
+title: Changelog
 page_title: Telerik WPF AI Coding Assistant Changelog
 description: Find out about the latest changes and improvements in the Telerik WPF AI Coding Assistant.
-slug: ai-overview
-tags: telerik,wpf,ai,coding assistant
+slug: ai-changelog
+tags: telerik,wpf,ai,coding assistant,changelog,release,notes
 position: 4
 ---
 

@@ -32,7 +32,7 @@ You can find a complete list with the Operating Systems supported by .NET in the
 
 In order to develop applications with Telerik UI for WPF you need to have installed the following development tools:
 
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) 2015/2017/2019/2022
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) 2015/2017/2019/2022/2026
         
 * __.NET Framework / .NET__. The following versions are supported:	
 	* [.NET Framework 4.6.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462) to [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)	

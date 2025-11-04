@@ -55,6 +55,10 @@ __Telerik project templates__
 	</thead>
 	<tbody>
 		<tr>
+			<td width="33.6%">Visual Studio 2026</td>
+			<td width="66.3%">The Visual Studio 2026 is supported with the release of the 2025 Q4.</td>
+		</tr>
+		<tr>
 			<td width="33.6%">Visual Studio 2019 and 2022</td>
 			<td width="66.3%">The latest version of Telerik VSX is distributed and fully supported in these versions of Visual Studio. With Q2 2024, the Telerik VSX supports .NET Framework 4.6.2 and later projects and .NET 6 and later.</td>
 		</tr>		

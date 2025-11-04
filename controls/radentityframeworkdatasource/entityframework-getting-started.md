@@ -1,26 +1,26 @@
 ---
 title: Getting Started
 page_title: Getting Started
-description: Check our &quot;Getting Started&quot; documentation article for the RadEntityFrameworkDataSource {{ site.framework_name }} control.
+description: Check our &quot;Getting Started&quot; documentation article for the RadEntityFrameworkDataSource WPF control.
 slug: entityframework-getting-started
 tags: getting,started
 published: True
 position: 3
 ---
 
-# Getting Started with {{ site.framework_name }} EntityFrameworkDataSource
+# Getting Started with WPF EntityFrameworkDataSource
 
-This tutorial will walk you through the creation of a sample application that contains __RadGridView__ bound to __RadEntityFrameworkDataSource__.
+This tutorial will walk you through the creation of a sample application that contains `RadGridView` bound to `RadEntityFrameworkDataSource`.
 
 * [Creating the WPF Application](#creating-the-wpf-application)
 * [Creating the Model](#creating-the-model)
 * [Adding RadGridView and RadEntityFrameworkDataSource](#adding-radgridview-and-radentityframeworkdatasource)
 
-As of version __2013 Q3 SP1__ we have added support for __EntityFramework 6.0__. You will need to reference the __Telerik.Windows.Controls.EntityFramework60__ assembly, rather than the __Telerik.Windows.Controls.EntityFramework__ one in order for this to work.
+>With the release of the __2025 Q4__, the __Telerik.Windows.Controls.EntityFramework__ assembly has been removed. Instead, you will need to reference the __Telerik.Windows.Controls.EntityFramework60__ assembly, which is built against the __EntityFramework__ NuGet package with version __6.5.1__.
 
 ## Adding Telerik Assemblies Using NuGet
 
-To use __RadEntityFrameworkDataSource__ when working with NuGet packages, install the `Telerik.Windows.Controls.EntityFramework.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
+To use RadEntityFrameworkDataSource when working with NuGet packages, install the `Telerik.Windows.Controls.EntityFramework.for.Wpf.Xaml` package. The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
 Read more about NuGet installation in the [Installing UI for WPF from NuGet Package]({%slug nuget-installation%}) article.
 
@@ -28,7 +28,7 @@ Read more about NuGet installation in the [Installing UI for WPF from NuGet Pack
 
 ## Creating the WPF Application
 
-1. Note that __RadEntityFrameworkDataSource__ is built on top of the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/ef/ef6/). Basic Entity Framework experience is required for working with __RadEntityFrameworkDataSource__.
+1. Note that RadEntityFrameworkDataSource is built on top of the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/ef/ef6/). Basic Entity Framework experience is required for working with RadEntityFrameworkDataSource.
 
 2. Start Visual Studio and create a new WPF Application.
 
@@ -36,7 +36,7 @@ Read more about NuGet installation in the [Installing UI for WPF from NuGet Pack
 
 Now that we have the application, we will add our entity model using the AdventureWorks database. 
 
-1. In the project add a new __ADO.NET Entity Data Model__. You need to make sure that **Data** is selected from the left menu.
+1. In the project add a new __ADO.NET Entity Data Model__. You need to make sure that __Data__ is selected from the left menu.
 ![Rad Entity Framework Getting Started 1](images/RadEntityFramework_Getting_Started1.png)
 
 2. Choose to create a model using the code first approach from an existing database.
@@ -44,7 +44,7 @@ Now that we have the application, we will add our entity model using the Adventu
 
 3. Choose the data connection (for example the __AdventureWorks__ database). In order to learn how to add the AdventureWorks database, check out the [AdventureWorks Readme](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) article.
 
-4. Generate the entities from all of the tables in the __AdventureWorks__ database.
+4. Generate the entities from all of the tables in the AdventureWorks database.
 
 5. Click __Finish__ and __rebuild the solution__.
 
@@ -52,26 +52,18 @@ Now that we have the application, we will add our entity model using the Adventu
 
 Now let's go to the client side.
 
-**1.** Add References to the following __Telerik__ assemblies:
+**1.** Add References to the following Telerik assemblies:
 
 * __Telerik.Licensing.Runtime__
-* __Telerik.Windows.Controls__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
+* __Telerik.Windows.Controls__ (mandatory for both RadGridView and RadEntityFrameworkDataSource)
+* __Telerik.Windows.Controls.EntityFramework60__ (mandatory for RadEntityFrameworkDataSource with EF __6.0__ or later)
+* __Telerik.Windows.Controls.GridView__ (mandatory for RadGridView)
+* __Telerik.Windows.Controls.Input__ (mandatory for RadGridView)
+* __Telerik.Windows.Data__ (mandatory for both RadGridView and RadEntityFrameworkDataSource)
 
-* __Telerik.Windows.Controls.EntityFramework__ (mandatory for __RadEntityFrameworkDataSource__ with EF **5.0** or previous)
+**2.** Now add the RadGridView and RadEntityFrameworkDataSource controls to the main window. The following example demonstrates how you can do that.
 
-	or
-
-* __Telerik.Windows.Controls.EntityFramework60__ (mandatory for __RadEntityFrameworkDataSource__ with EF **6.0** or later)
-
-* __Telerik.Windows.Controls.GridView__ (mandatory for __RadGridView__)
-
-* __Telerik.Windows.Controls.Input__ (mandatory for __RadGridView__)
-
-* __Telerik.Windows.Data__ (mandatory for both __RadGridView__ and __RadEntityFrameworkDataSource__)
-
-**2.** Now add the __RadGridView__ and __RadEntityFrameworkDataSource__ controls to the main window. **Example 1** demonstrates how you can do that.
-
-__Example 1: Adding RadGridView and RadEntityFrameworkDataSource__
+__Adding RadGridView and RadEntityFrameworkDataSource__
 
 ```XAML
 	<Window x:Class="EntityFrameworkGettingStarted.MainWindow"
@@ -94,8 +86,6 @@ __Example 1: Adding RadGridView and RadEntityFrameworkDataSource__
 	</Window>
 ```
 
->importantSince __Q3 SP1 2012__ we have added the __RadEntityFrameworkDataSource.DbContext__ property which should be set instead of the **ObjectContext** property for versions of Entity Framework newer than version **5.0**. If you are using an older version of Entity Framework, you can set the **RadEntityFrameworkDataSource.ObjectContext** property.
-
 Several important things to notice:
 
 * The import of the telerik schema: __xmlns:telerik="[http://schemas.telerik.com/2008/xaml/presentation](http://schemas.telerik.com/2008/xaml/presentation)__
@@ -108,9 +98,9 @@ Several important things to notice:
 
 ## RelatedObjects
 
-The __RelatedObjects__ property of the RadEntityFrameworkDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders" collection in case you want to get the related Orders for each Customer from the database.
+The `RelatedObjects` property of the RadEntityFrameworkDataSource allows you to specify the names of the related entities that need to be retrieved. For example, if your main entity set is called "Customers", you might want to retrieve the "Orders" collection in case you want to get the related Orders for each Customer from the database.
 
-__Example 2: Using the RelatedObjects__
+__Using the RelatedObjects__
 ```XAML
     <telerik:RadEntityFrameworkDataSource Name="EntityFrameworkDataSource" QueryName="Customers">
         <telerik:RadEntityFrameworkDataSource.RelatedObjects>
@@ -122,7 +112,6 @@ __Example 2: Using the RelatedObjects__
     </telerik:RadEntityFrameworkDataSource>
 ```
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Learning Resources
 
 * [Telerik UI for WPF EntityFrameworkDataSource Component](https://www.telerik.com/products/wpf/entity-framework-data-source.aspx)
@@ -133,7 +122,6 @@ __Example 2: Using the RelatedObjects__
 * [Setting a Theme with Telerik UI for WPF]({%slug styling-apperance-implicit-styles-overview%})
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF License Agreement](https://www.telerik.com/purchase/license-agreement/wpf-dlw-s)
-{% endif %}
 
 ## See also
 

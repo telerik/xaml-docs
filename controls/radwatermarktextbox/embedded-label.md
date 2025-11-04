@@ -41,13 +41,15 @@ __Getting the state of the label__
 
 ## Customizing Appearance
 
-The label visual element is of type [Label](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.label?view=windowsdesktop-6.0). To customize its appearance, use the __LabelStyle__ property of RadWatermarkTextBox.
+The label visual element is of type `Telerik.Windows.Controls.Label`. To customize its appearance, use the `LabelStyle` property of `RadWatermarkTextBox`.
 
 __Customizing the label__
 ```XAML
 	<telerik:RadWatermarkTextBox Label="First Name">
 		<telerik:RadWatermarkTextBox.LabelStyle>
-			<Style TargetType="Label">
+			<!-- if you use the NoXaml dlls, set the BasedOn property as well: -->
+			<!--  <Style TargetType="telerik:Label" BasedOn="{StaticResource WatermarkTextBoxLabelStyle}"> -->			
+			<Style TargetType="telerik:Label">
 				<Setter Property="Foreground" Value="#5CB9DE" />                    
 				<Setter Property="FontStyle" Value="Italic" />                    
 			</Style>

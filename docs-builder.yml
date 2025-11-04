@@ -42,7 +42,7 @@ meta:
         relativeUrl: /knowledge-base
         hideChildren: true
     "*api":
-      pdfHidden: true
+        pdfHidden: true
     controls/radaiprompt:
         title: RadAIPrompt
     controls/radsvgimage:

@@ -32,9 +32,6 @@ __Business object Item__
 		public string Name { get; set; }
 	}
 ```
-
-__Business object Item__
-
 ```VB
 	Public Class Item
 	    Public Sub New(ByVal name As String)
@@ -96,9 +93,6 @@ __Creating the ViewModel__
 		return result;
 	}
 ```
-
-__Creating the ViewModel__
-
 ```VB
 	Private items_Renamed As ObservableCollection(Of Item)
 	Private selectedItemsSource_Renamed As ObservableCollection(Of Item)

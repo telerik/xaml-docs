@@ -41,6 +41,8 @@ meta:
         res_type: kb
         relativeUrl: /knowledge-base
         hideChildren: true
+    api:
+      pdfHidden: true
     controls/radaiprompt:
         title: RadAIPrompt
     controls/radsvgimage:

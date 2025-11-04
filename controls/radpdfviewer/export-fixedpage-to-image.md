@@ -5,7 +5,7 @@ description: Check our &quot;Exporting Fixed Page to Image&quot; documentation a
 slug: radpdfviewer-exporting-fixedpage-to-image
 tags: save,saving,exporting,radfixedpage,image,export,to
 published: True
-position: 4
+position: 8
 ---
 
 # Exporting Fixed Page to Image
@@ -30,4 +30,4 @@ The converter is defined in the __Telerik.Windows.Documents.Converters__ namespa
 
 * [Getting Started]({%slug radpdfviewer-getting-started%})
 * [Viewer Modes]({%slug radpdfviewer-viewer-modes%})
-* {% if site.site_name == 'Silverlight' %}[Thumbnail class](https://docs.telerik.com/devtools/silverlight/api/telerik.windows.documents.ui.thumbnail){% endif %}{% if site.site_name == 'WPF' %}[Thumbnail class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.thumbnail){% endif %}
+* [Thumbnail class](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.thumbnail)

@@ -5,7 +5,7 @@ description: Check our &quot;Interactive Forms&quot; documentation article for t
 slug: radpdfviewer-features-interactive-forms
 tags: interactive, forms, filling
 published: True
-position: 1
+position: 5
 ---
 
 # Interactive Forms
@@ -51,6 +51,4 @@ After filling the forms, you can save the document using the Save As command.
 ## See Also
 
 * [Showing a File]({%slug radpdfviewer-showing-a-file%})
-{% if site.site_name == 'WPF' %}
 * [Digital Signature]({%slug radpdfviewer-features-digital-signature%})
-{% endif %}

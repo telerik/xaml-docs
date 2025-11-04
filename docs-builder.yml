@@ -613,10 +613,7 @@ meta:
         position: 5
     controls/radpdfviewer/ui:
         title: UI
-        position: 6
-    controls/radpdfviewer/features:
-        title: Features
-        position: 7
+        position: 6    
     controls/radpdfviewer/customization-and-extensibility:
         title: Customization and Extensibility
         position: 8
@@ -1161,7 +1158,7 @@ redirects:
     type: Permanent
 -
     from: "^/controls/radprogressbar/changes-and-backwards-compatibility$"
-    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^/common-information/consuming-data/wcf-service.html$"
@@ -1176,7 +1173,7 @@ redirects:
     to: "/controls/radchartview/features/cartesianchartgrid-and-polarchartgrid"
     type: Permanent
 -
-    from: "^/controls/radsyntaxeditor/features/taggers$$"
+    from: "^/controls/radsyntaxeditor/features/taggers$"
     to: "/controls/radsyntaxeditor/features/taggers/overview"
     type: Permanent
 -
@@ -1944,7 +1941,7 @@ redirects:
     to: "/controls/raddiagram/diagramextensions-viewmodels/overview"
     type: Permanent
 -
-    from: "^controls/raddiagram/extensions/settingspane$$"
+    from: "^controls/raddiagram/extensions/settingspane$"
     to: "/controls/raddiagram/extensions/settingspane/settingspane_overview"
     type: Permanent
 -
@@ -1984,11 +1981,11 @@ redirects:
     to: "/controls/radbreadcrumb/overvew"
     type: Permanent
 -
-    from: "^controls/raddocking/overview$$"
+    from: "^controls/raddocking/overview$"
     to: "/controls/raddocking/overview2"
     type: Permanent
 -
-    from: "^controls/radcarousel/overview$$"
+    from: "^controls/radcarousel/overview$"
     to: "/controls/radcarousel/carousel-overview"
     type: Permanent
 -
@@ -1996,11 +1993,11 @@ redirects:
     to: "/controls/radcontextmenu/contextmenu-overview1"
     type: Permanent
 -
-    from: "^controls/radtabcontrol/overview$$"
+    from: "^controls/radtabcontrol/overview$"
     to: "/controls/radtabcontrol/overview2"
     type: Permanent
 -
-    from: "^controls/radtreeview/overview$$"
+    from: "^controls/radtreeview/overview$"
     to: "/controls/radtreeview/overview2"
     type: Permanent
 -
@@ -2020,7 +2017,7 @@ redirects:
     to: "/controls/radentityframeworkdatasource/entityframework-overview"
     type: Permanent
 -
-    from: "^controls/radgridview/overview$$"
+    from: "^controls/radgridview/overview$"
     to: "/controls/radgridview/overview2"
     type: Permanent
 -
@@ -2184,7 +2181,7 @@ redirects:
     to: "/getting-started/adding-telerik-ui-to-an-application/{R:1}"
     type: Permanent
 -
-    from: "^common-information/?$$"
+    from: "^common-information/?$"
     to: "/common-information/coded-ui-support"
     type: Permanent
 -
@@ -2404,19 +2401,19 @@ redirects:
     to: "/getting-started/installation/installation-installing-lib"
     type: Permanent
 -
-    from: "^getting-started/installation/installation-installing-from-zip$$"
+    from: "^getting-started/installation/installation-installing-from-zip$"
     to: "/getting-started/installation/installation-installing-from-zip-wpf"
     type: Permanent
 -
-    from: "^controls/radgridview/columns/how-to/styling-checkboxcolumn$$"
+    from: "^controls/radgridview/columns/how-to/styling-checkboxcolumn$"
     to: "/controls/radgridview/styles-and-templates/columns-styling-checkboxcolumn"
     type: Permanent
 -
-    from: "^controls/radrichtextbox/document-elements/features-tables$$"
+    from: "^controls/radrichtextbox/document-elements/features-tables$"
     to: "/controls/radrichtextbox/document-elements/table/table-overview"
     type: Permanent
 -
-    from: "^controls/radrichtextbox/features/repeat-table-header-row$$"
+    from: "^controls/radrichtextbox/features/repeat-table-header-row$"
     to: "/controls/radrichtextbox/document-elements/table/repeat-table-header-row"
     type: Permanent
 -
@@ -2425,19 +2422,19 @@ redirects:
     type: Permanent    
 -
     from: "^controls/radchartview/changes-and-backward-compatibility/changes$"
-    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/radchartview/changes-and-backward-compatibility/changes-backward-compatibility$"
-    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/raddiagram/changes-and-backwards-compatibility/changes$"
-    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/raddiagram/changes-and-backwards-compatibility/backward-compatibility$"
-    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/radgridview/styles-and-templates/templates-structure$"
@@ -2457,9 +2454,29 @@ redirects:
     type: Permanent
 -
     from: "^controls/radtreelistview/changes-and-backward-compatibility/changes$"
-    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
 -
     from: "^controls/radtreelistview/changes-and-backward-compatibility/radtreeliestview-backward-compatibility$"
-    to: "https://www.telerik.com/support/whats-new/$1/release-history"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
     type: Permanent
+-
+    from: "^controls/radpdfviewer/howto/zoom-in-or-out-a-radfixeddocument$"
+    to: "/controls/radpdfviewer/zoom-in-or-out-a-radfixeddocument"
+    type: Permanent 
+-
+    from: "^controls/radpdfviewer/changes-and-backward-compatibility/changes$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent
+-
+    from: "^controls/radpdfviewer/changes-and-backward-compatibility/backward-compatibility$"
+    to: "https://www.telerik.com/support/whats-new/wpf/release-history"
+    type: Permanent    
+-
+    from: "^controls/radpdfviewer/features/(.*)$"
+    to: "/controls/radpdfviewer/$1"
+    type: Permanent 
+-
+    from: "^controls/radpdfviewer/document-model/text/(.*)$"
+    to: "/controls/radpdfviewer/document-model/$1"
+    type: Permanent 

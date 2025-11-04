@@ -5,7 +5,7 @@ description: Check our &quot;Bookmarks (Outlines)&quot; documentation article fo
 slug: radpdfviewer-features-bookmarks
 tags: bookmarks, outlines
 published: True
-position: 0
+position: 4
 ---
 
 # Bookmarks (Outlines)

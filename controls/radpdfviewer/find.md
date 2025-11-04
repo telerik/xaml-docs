@@ -5,7 +5,7 @@ description: Check our &quot;Find&quot; documentation article for the RadPdfView
 slug: radpdfviewer-find
 tags: find, findall, findprevious
 published: True
-position: 6
+position: 10
 ---
 
 # Find

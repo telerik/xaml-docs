@@ -89,6 +89,17 @@ __Setting SelectedIndex__
 	<telerik:RadListBox x:Name="radListBox" Width="200" SelectedIndex="3" />
 ```
 
+## Using the SelectedItems Collection
+
+The selection is also saved in the `SelectedItems` collection of `RadListBox`. The collection stores multiple items when multiple selection is enabled. It can be used to access or add/remove items from the selection.
+
+```C#
+	IList selection = this.radListBox.SelectedItems;	
+```
+
+The `SelectedItems` property cannot be set, thus it cannot be data bound. In case the selection should be synced with the view model, the [ListBoxSelectedItemsBehavior.SelectedItemsSource]({%slug radlistbox-features-selecteditemssource
+%}) attached property can be used.
+
 ## Using the Text and TextPath / TextBinding
 
 Use the __RadListBox__'s __Text__ property whenever you want to get the string representation of the currently selected item.     	
@@ -103,4 +114,5 @@ By default, when its **ItemsSource** is reset, RadListBox will try to restore an
 
  * [Getting Started]({%slug radlistbox-getting-started%})
  
+
  * [Populating with Data]({%slug radlistbox-populating-with-data-overview%})

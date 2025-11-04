@@ -19,6 +19,7 @@ To use the Telerik WPF MCP server, you need:
 
 * [Node.js](https://nodejs.org/en) 18 or newer.
 * An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended).
+* Ensure that MCP servers are enabled in Visual Studio. Also, check if MCP access is managed by your GitHub organization. If that is the case, ensure that the organization allows MCP servers. Otherwise, Copilot won't try loading any MCPs.
 
 @[template](/_contentTemplates/ai-coding-assistant.md#getting-started)
 

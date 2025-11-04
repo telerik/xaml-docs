@@ -10,7 +10,7 @@ position: 0
 
 # Resolve Axis Labels Clipping
 
-This article describes common behavior that can be encountered when using LabelTemplate for the chart axis. In general, if you set the size of the element in the template (at run-time) to a size bigger than the presenter that owns the template, the element will be clipped. This behavior comes from the size caching mechanism of the chart.
+This article describes common behavior that can be encountered when [using LabelTemplate for the chart axis]({%slug radchartview-axes-labels%}). In general, if you set the size of the element in the template (at run-time) to a size bigger than the presenter that owns the template, the element will be clipped. This behavior comes from the size caching mechanism of the chart.
       
 When the chart is initially loaded it caches the size of most of its elements, as labels and data point visuals, to optimize the performance by re-using the cached sizes. In order to update the size of those elements, you will need to manually change something in the chart via its public API. For example, change the value of a property or call a method. 
 
@@ -25,3 +25,4 @@ __Example 1: Updating the chart's API by resetting the LabelTemplate__
 	axis.LabelTemplate = null;
 	axis.LabelTemplate = template;
 ```
+

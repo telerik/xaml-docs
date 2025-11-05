@@ -6,7 +6,7 @@ publish: false
 
 # Telerik UI for WPF Public Documentation
 
-Welcome to the GitHub repo for the [Telerik UI for WPF](http://www.telerik.com/wpf) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for WPF Documentation at [docs.telerik.com/devtools/wpf](https://docs.telerik.com/devtools/wpf). If you've arrived here wanting to search and read our docs, you will be better served heading over to [docs.telerik.com/devtools/wpf](https://docs.telerik.com/devtools/wpf) where our content is prettified and searchable.
+Welcome to the GitHub repo for the [Telerik UI for WPF](https://www.telerik.com/products/wpf/overview.aspx) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for WPF Documentation at [telerik.com/products/wpf/documentation](https://www.telerik.com/products/wpf/documentation/introduction). If you've arrived here wanting to search and read our docs, you will be better served heading over to [telerik.com/products/wpf/documentation](https://www.telerik.com/products/wpf/documentation/introduction) where our content is prettified and searchable.
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.
 
@@ -59,12 +59,6 @@ There are two ways you can contribute to the public Telerik UI for WPF documenta
 
     Once you've made your changes, commit, pull, merge, push and [send us a pull request](https://help.github.com/articles/using-pull-requests)! We — and XAML users everywhere — thank you for making our docs the best front-end library documentation on the web!
 
-## Running locally
-
-You can generate a static web site from the Telerik UI for WPF the documentation and browse it locally.
-
-Detailed instructions on how to achieve this can be found in the [docs-seed repository](https://github.com/telerik/docs-seed#local-setup).
-
 ## License
 
 The Telerik UI for WPF Documentation is licensed under an MIT license. This license applies to the markdown (.md) files in this site **ONLY**, and does not convey, override or modify any existing licenses covering the runtime source and components of Telerik UI for WPF. For information about available licenses for the Telerik UI for WPF click [here](http://www.telerik.com/purchase/license-agreement/wpf-dlw-s).
@@ -78,3 +72,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

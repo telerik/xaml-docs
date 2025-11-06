@@ -53,7 +53,7 @@ If you prefer to avoid setting your script key in the C# code, you can use the [
 	}
 ```
 
-In version __1.6.7__ of [TelerikLicensing](https://www.nuget.org/packages/Telerik.Licensing) a parameterless overload of the `TelerikLicensing.Register` was introduced. This will allow you to use the [approach with the TelerikLicense.cs file]({%slug installing-license-key%}) and call the register method without passing the script key in the C# code. Note that for this to work you will still need to add the [TelerikLicense.cs file]({%slug installing-license-key%}).
+In version __1.6.7__ of [TelerikLicensing](https://www.nuget.org/packages/Telerik.Licensing) a parameterless overload of the `TelerikLicensing.Register` was introduced. This will allow you to use the [approach with the TelerikLicense.cs file]({%slug installing-license-key%}) and call the register method without passing the script key in the C# code. Note that for this to work you will still need to add the [TelerikLicense.cs file]({%slug installing-license-key%}). Also, this approach should be used even if you install Telerik using the associated NuGet packages.
 
 ```csharp
 	public MyWPFUserControl()

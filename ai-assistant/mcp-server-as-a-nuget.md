@@ -9,7 +9,7 @@ position: 25
 
 # Telerik WPF MCP Server (NuGet)
 
-The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package, but is executed through the `dnx` command introduced with the .NET 10 SDK. It supplies specialized context about [Telerik UI for WPF components](https://www.telerik.com/WPF-ui) so AI-powered IDEs and tools can generate more accurate, tailored XAML and C# code.
+The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package, but is executed through the `dnx` command introduced with the .NET 10 SDK. It supplies specialized context about Telerik UI for WPF components so AI-powered IDEs and tools can generate more accurate, tailored XAML and C# code.
 
 ## Prerequisites
 

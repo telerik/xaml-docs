@@ -33,7 +33,7 @@ You can also download the application from the Windows Store.
 
 The application requires the following component in order to be installed and run locally:
 
-* [Microsoft .NET Desktop Runtime 9.0.0 (x64)](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+* [Microsoft .NET Desktop Runtime 10.0.0 (x64)](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 
 If this component is already installed, you can [launch](https://demos.telerik.com/wpf/WPF%20Demos.application) the application. Note that lauching the ClickOnce application (via the launch hyperlink) is possible only in Internet Explorer. Otherwise, you will need to [install](https://demos.telerik.com/wpf/setup.exe) the prerequisites before running the application. As a result the demos will be deployed on your computer and you will be able to run them locally.
 

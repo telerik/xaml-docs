@@ -26,9 +26,9 @@ The summarization feature requires you to install few more packages, aside from 
 <ItemGroup>
  <PackageReference Include="Azure.AI.OpenAI" Version="2.2.0-beta.2" />
  <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.3.0-preview.1.25161.3" />
- <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="2025.3.1110"/>
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="2025.3.1110" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="2025.3.1110" />
+ <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="2025.4.1110"/>
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="2025.4.1110" />
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="2025.4.1110" />
  <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="2025.3.1008" />
 </ItemGroup>
 ```
@@ -40,9 +40,9 @@ The summarization feature requires you to install few more packages, aside from 
  <PackageReference Include="Azure.AI.OpenAI" Version="2.2.0-beta.2" />
  <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.3.0-preview.1.25161.3" />
  <PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.3.0-preview.1.25161.3" />
- <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="2025.3.*" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="2025.3.*" />
- <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="2025.3.*" />
+ <PackageReference Include="Telerik.Windows.Controls.ConversationalUI.for.Wpf.Xaml" Version="2025.4.*" />
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewers.for.Wpf.Xaml" Version="2025.4.*" />
+ <PackageReference Include="Telerik.Windows.Controls.FixedDocumentViewersUI.for.Wpf.Xaml" Version="2025.4.*" />
  <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="*-*" />
 </ItemGroup>
 ```

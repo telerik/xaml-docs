@@ -26,12 +26,10 @@ __RadPdfViewer__ is a control that can display PDF files natively in {{ site.fra
 Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 
 * [**Interactive Forms**]({%slug radpdfviewer-features-interactive-forms%}): The control supports different types of interactive forms and enables the end user to modify their values.
-{% if site.site_name == 'WPF' %}
 
 * [**Bookmarks (Document Outlines)**]({%slug radpdfviewer-features-bookmarks%}): RadPdfViewer can show the bookmarks of the document and ease the navigation inside.
 
 * [**Digital Signatures**]({%slug radpdfviewer-features-digital-signature%}): The user can show digitally signed documents and validate the signatures inside. Signing a document is supported as well.
-{% endif %}
 
 * [**Saving a Document**]({%slug radpdfviewer-save-as%}): When the user modifies the forms in a document or signs it, or just want to create another file from the document, they can use the Save As functionality of the viewer. 
 
@@ -56,9 +54,9 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 * **RadPdfViewer** allows [**printing**]({%slug radpdfviewer-printing%}) of the document loaded in it.
 
 * You can [**rotate**]({%slug radpdfviewer-rotation%}) the document as well.
-{% if site.site_name == 'WPF' %}
+
 * An easy to use [**Predefined UI**]({%slug radpdfviewer-default-ui%}). The UI also provides a number of customization options to fit the different requirements you might have.
-{% endif %}
+
 * [**Context Menu**]({%slug radpdfviewer-context-menu%}) to provide easy access to several of the features of the control. 
 
 * Extensible support for different stream compression filters. [[Read more]({%slug radpdfviewer-customize-pdf-rendering%})]
@@ -69,7 +67,6 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 
 * Type3 fonts (Available in R1 2021).
 
-{% if site.site_name == 'WPF' %}
 ## Telerik UI for WPF Support and Learning Resources
 
 * [Telerik UI for WPF PDFViewer Homepage](https://www.telerik.com/products/wpf/pdf-viewer.aspx)
@@ -79,7 +76,6 @@ Some of the key features coming out-of-the-box with **RadPdfViewer** are:
 * [Telerik UI for WPF Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/16/telerik-ui-for-wpf) 
 * [Telerik UI for WPF PDFViewer Forums](https://www.telerik.com/forums/wpf)
 * [Telerik UI for WPF Knowledge Base](https://docs.telerik.com/devtools/wpf/knowledge-base)
-{% endif %}
 
 ## See Also   
  * [Getting Started]({%slug radpdfviewer-getting-started%})

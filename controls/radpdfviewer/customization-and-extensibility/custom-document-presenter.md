@@ -10,16 +10,11 @@ position: 2
 
 # Custom Document Presenter
 
+Document presenters in __RadPdfViewer__ are responsible for displaying the pages of a PDF document, as well as navigating the file and manipulating it. There are two presenters that come out-of-the-box and you can find more information about them  [here]({%slug radpdfviewer-ui-document-presenters%}).      
 
-
-Document presenters in __RadPdfViewer__ are responsible for displaying the pages of a PDF document, as well as navigating the file and manipulating it. There are two presenters that come out-of-the-box and you can find more information about them  [here]({%slug radpdfviewer-ui-document-presenters%}).
-      
-
-Additionally, __RadPDFViewer__ offers you the ability to create your own document presenter, which helps you design the presentational functionality of the document as you want.
-      
+Additionally, __RadPDFViewer__ offers you the ability to create your own document presenter, which helps you design the presentational functionality of the document as you want.      
 
 This article covers the following topics:
-      
 
 * [Implementing the IFixedDocumentPresenter Interface](#implementing-the-ifixeddocumentpresenter-interface)
 
@@ -32,7 +27,7 @@ This article covers the following topics:
 Implementing this interface allows you to create a fully functioning document presenter in __RadPdfViewer__. The interface contains the following members:
         
 
-* __Owner:__Тhis property is of type __Telerik.Windows.Documents.UI.IFixedDocumentViewer__ and is implemented by __RadPdfViewer__. The owner of your document presenter is the instance of __RadPdfViewer__ that uses the presenter.
+* __Owner__: Тhis property is of type __Telerik.Windows.Documents.UI.IFixedDocumentViewer__ and is implemented by __RadPdfViewer__. The owner of your document presenter is the instance of __RadPdfViewer__ that uses the presenter.
             
 
 * __PointerHandlersController:__ This property is of type  __Telerik.Windows.Documents.Fixed.UI.PointerHandlers.PointerHandlersController__ and the member is responsible for the behavior of __RadPdfViewer__ after mouse or touch events.
@@ -176,7 +171,6 @@ __Example 2: Implement PagesLayoutManagerBase__
     }
 ``` 
 
-
 __Step 3:__ Add a new class for your custom presenter that inherits the abstract [__FixedDocumentPresenterBase__](https://docs.telerik.com/devtools/wpf/api/telerik.windows.documents.ui.fixeddocumentpresenterbase) class which, in turn, inherits the __IFixedDocumentPresenter__ interface.
         
 
@@ -184,13 +178,12 @@ __Step 4:__ Implement all the members of the __FixedDocumentPresenterBase__ clas
 
 >To ensure that the content is loaded, verify that the **VisiblePages** property of FixedDocumentPresenterBase is set every time the visible pages in the presenter are changed.
 
-__Step 5:__ Register the custom document presenter as demonstrated in **Example 3**.
-        
+__Step 5:__ Register the custom document presenter as demonstrated in **Example 3**.        
 
 __Example 3: Register a custom document presenter__
 
 ```C#
-	        this.pdfViewer.RegisterPresenter("CustomPresenterName", new CustomSinglePagePresenter());
+	this.pdfViewer.RegisterPresenter("CustomPresenterName", new CustomSinglePagePresenter());
 ```
 
 

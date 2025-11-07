@@ -10,15 +10,11 @@ position: 0
 
 # Customize PDF Rendering
 
-
-
-__RadPdfViewer__ provides customization options for the way PDF documents are rendered.
-      
+__RadPdfViewer__ provides customization options for the way PDF documents are rendered.      
 
 ## Creating a Decoder
 
-When rendering the content, RadPdfViewer uses different decoders. It finds the decoder that it needs to use by its name. These are the decoders that can be plugged:
-        
+When rendering the content, RadPdfViewer uses different decoders. It finds the decoder that it needs to use by its name. These are the decoders that can be plugged:        
 
 * __ASCIIHexDecode__
 
@@ -70,8 +66,7 @@ Fully supported</td>
 
 >tip Although **JPXDecode** is not supported out-of-the-box, you can implement a custom decoder and enable RadPdfViewer to read and render the content that uses this filter following the guides in this article. An implementation of this scenario is available in the [Custom Decoder example](https://github.com/telerik/xaml-sdk/tree/master/PdfViewer/CustomDecoder) from our SDK repository as well. 
 
-All decoders implement the __IPdfFilter__ interface and if you decide, you can implement your own decoder and set the viewer to use it. RadPdfViewer uses the __Name__ property in order to recognize the filter - it must return one of the values listed above.
-        
+All decoders implement the __IPdfFilter__ interface and if you decide, you can implement your own decoder and set the viewer to use it. RadPdfViewer uses the __Name__ property in order to recognize the filter - it must return one of the values listed above.        
 
 For example, you can create a custom decoder for Tiff images by implementing the interface and setting the Name of the filter to CCITTFaxDecode. Then, just register the new class by calling FiltersManager.RegisterFilter() method and the viewer will use your implementation instead of the default one.
         
@@ -96,23 +91,7 @@ The cod from **Example 1** shows the members that should be implemented when inh
 	}
 ```
 
-
-You should also register the filter as demonstrated in **Example 2**:{% if site.site_name == 'Silverlight' %}
-
-#### **[C#] Example 2: Register a custom filter**
-
-```C#
-	private PDFAndTiffFilter _filter;
-	
-	public MainPage()
-	{
-	    _filter = new PDFAndTiffFilter();
-	    FiltersManager.RegisterFilter(_filter);
-	    InitializeComponent();
-	}
-```
-
-{% endif %}{% if site.site_name == 'WPF' %}
+You should also register the filter as demonstrated in **Example 2**:
 
 #### **[C#] Example 2: Register a custom filter**
 
@@ -126,8 +105,6 @@ You should also register the filter as demonstrated in **Example 2**:{% if site.
 	    InitializeComponent();
 	}
 ```
-
-{% endif %}
 
 The result that a custom filter should return depends on the type of the filter. For the binary filters it is enough to decode the byte array into decoded byte array using the respective algorithm. As for the filters listed below, additional transformation is required.
         

@@ -1,7 +1,7 @@
 ---
 title: Key Properties and Methods
 page_title: Key Properties and Methods
-description: Check our &quot;Key Properties and Methods&quot; documentation article for the RadMultiColumnComboBox {{ site.framework_name }} control.
+description: Check our &quot;Key Properties and Methods&quot; documentation article for the RadMultiColumnComboBox WPF control.
 slug: multicolumncombobox-dropdown-key-properties-and-methods
 tags: key, properties, methods
 published: True
@@ -10,21 +10,21 @@ position: 6
 
 # Key Properties and Methods
 
-The article lists the most important properties and methods of __RadMultiColumnComboBox__.
+The article lists the most important properties and methods of `RadMultiColumnComboBox`.
 
 ## Text Change Without Delay
 
-By default, the reaction of __RadMultiColumnComboBox__ to a text change will be deferred. In case when updating needs to be done immediately, the __DeferTextChange__ property can be set to __False__.
+By default, the reaction of RadMultiColumnComboBox to a text change will be deferred. In case when updating needs to be done immediately, the `DeferTextChange` property can be set to __False__.
 
 ## Disable Items Highlighting 
 
-With all settings for its __AutoCompleteMode, RadMultiColumnComboBox__ will highlight its items. This can be switched off by setting the __HighlightMatches__ property to __False__.
+With all settings for its AutoCompleteMode, RadMultiColumnComboBox will highlight its items. This can be switched off by setting the `HighlightMatches` property to __False__.
 
 ## Setting Text for an Empty Selection
 
-When there is no selection applied, the control will display an empty AutoCompleteBox. In case a custom text needs to be displayed in it, the __NullText__ property comes in handy.
+When there is no selection applied, the control will display an empty AutoCompleteBox. In case a custom text needs to be displayed in it, the `NullText` property comes in handy.
 
-__Example 1: Setting the NullText property__
+__Setting the NullText property__
 ```XAML
 	<telerik:RadMultiColumnComboBox VerticalAlignment="Top" DisplayMemberPath="Name" 
                                          NullText="Please enter input">
@@ -34,51 +34,56 @@ __Example 1: Setting the NullText property__
         </telerik:RadMultiColumnComboBox>
 ```
 
-#### __Figure 1: MultiColumnComboBox with NullText set__
+__MultiColumnComboBox with NullText set__
+
 ![MultiColumnComboBox with NullText set](images/MultiColumnComboBox_KeyProperties_01.png)
 
 ## Open,Close and Toggle the DropDown
 
 The following set of methods is provided for manipulating the visibility of the DropDown.
 
-* __OpenDropDown__: Opens the DropDown if it is closed.
-* __CloseDropDown__: Closes the DropDown if it is opened.
-* __ToggleDropDown__: Toggles the opened/closed state of the DropDown.
+* `OpenDropDown`&mdash;Opens the DropDown if it is closed.
+* `CloseDropDown`&mdash;Closes the DropDown if it is opened.
+* `ToggleDropDown`&mdash;Toggles the opened/closed state of the DropDown.
 
-## DropDownElementStyle
+## Drop Down Element Style
 
-Since __R1 2019 SP1__, RadMultiColumnComboBox exposes the __DropDownElementStyle__ property. Through it, you can get or set a Style that will be applied to the dropdown element.
+RadMultiColumnComboBox exposes the `DropDownElementStyle` property. Through it, you can get or set a Style that will be applied to the dropdown element.
 
 > The TargetType of the Style should match the type of the dropdown element.
 
 ## Search Mode
 
-With **R2 2019** we introduced a new **SearchMode** property which allows you to control how items are matched when search is executed. It has the following two possible values:
+The RadMultiColumnComboBox exposes a new `SearchMode` property which allows you to control how items are matched when search is executed. It has the following two possible values:
 
-* **MatchAnyTerm**: Items match the search operation when they fulfill any of the search terms. For example, if `John Terry` is inputted, items containing **any** of the terms "John" and "Terry" in any of their properties will be matched. This is the **default** value.
-* **MatchAllTerms**: Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `John Terry` is entered as the search text, only items which contain **both** terms ("John" and "Terry") in any of their properties will be matched.
+* `MatchAnyTerm`&mdash;Items match the search operation when they fulfill any of the search terms. For example, if `John Terry` is inputted, items containing __any__ of the terms "John" and "Terry" in any of their properties will be matched. This is the default value.
+* `MatchAllTerms`&mdash;Items match the search operation only when they fulfill all of the search terms. Continuing with the previous example, if `John Terry` is entered as the search text, only items which contain __both__ terms ("John" and "Terry") in any of their properties will be matched.
 
->important The SearchMode property takes effect only if the **AutoCompleteMode** of the control is **Search**.
+>important The SearchMode property takes effect only if the `AutoCompleteMode` of the control is `Search`.
 
-## SelectionOnFocus
+## Selection On Focus
 
-With the **R3 2020 SP1 version**, the __SelectionOnFocus__ property of the __RadMultiColumnComboBox__ control was introduced, which allows you to specify what will happen with the cursor when the control gets focus. 
+The RadMultiColumnComboBox control exposes the `SelectionOnFocus` property, which allows you to specify what will happen with the cursor when the control gets focus. 
 
-> This property is respected when the **SelectionBoxesVisibility** property is set to **Collapsed**.
+> This property is respected when the `SelectionBoxesVisibility` property is set to `Collapsed`.
 
-The values for the __SelectionOnFocus__ property are predefined in the __SelectionOnFocus__ enumeration. It exposes the following members:				
+The values for the SelectionOnFocus property are predefined in the `SelectionOnFocus` enumeration. It exposes the following members:				
 
-* __SelectAll__: Once the control is focused, it will select its whole text. 				
+* `SelectAll`&mdash;Once the control is focused, it will select its whole text. 				
+* `CaretToBeginning`&mdash;Once the control is focused, the cursor will be positioned at its beginning.		
+* `CaretToEnd`&mdash;Once the control is focused, the cursor will be positioned at its end.
+* `Unchanged`&mdash;Once the control is focused, the cursor's position won't be changed. This is the default value for the SelectionOnFocus property.
+* `Default`&mdash;Once the control is focused, the cursor will be positioned at its end.
+* `DefaultSelectAll`&mdash;This property changes the SelectionOnFocus behavior of the control depending on the source of the focus. If the control is focused on mouse click, the Default SelectionOnFocus behavior will be used. If, on the other hand, the control is focused using the __Tab__ key, the SelectAll SelectionOnFocus behavior will be used.
 
-* __CaretToBeginning__: Once the control is focused, the cursor will be positioned at its beginning.		
+## Clear Selection On Delete Or Back Key
 
-* __CaretToEnd__: Once the control is focused, the cursor will be positioned at its end.
+The RadMultiColumnComboBox control provides the ability to control if the selected item/s will be removed when pressing the Delete or Back key when typing into the input box. This is done via the `ClearSelectionOnDeleteOrBackKey` property and its default value is __True__. Setting it to __False__ will prevent the removal of selected items when pressing the  into the input box
 
-* __Unchanged__: Once the control is focused, the cursor's position won't be changed. This is the __default value__ for the __SelectionOnFocus__ property.
-
-* __Default__: Once the control is focused, the cursor will be positioned at its end.
-
-* __DefaultSelectAll__: This property changes the __SelectionOnFocus__ behavior of the control depending on the source of the focus. If the control is focused on mouse click, the __Default SelectionOnFocus__ behavior will be used. If, on the other hand, the control is focused using the __Tab__ key, the __SelectAll SelectionOnFocus__ behavior will be used.
+__Setting the ClearSelectionOnDeleteOrBackKey property__
+```XAML
+	<telerik:RadMultiColumnComboBox ClearSelectionOnDeleteOrBackKey="False"/>
+```
 
 ## See Also
 

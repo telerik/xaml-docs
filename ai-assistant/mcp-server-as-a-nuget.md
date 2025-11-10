@@ -9,22 +9,84 @@ position: 25
 
 # Telerik WPF MCP Server (NuGet)
 
-The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package, but is executed through the `dnx` command introduced with the .NET 10 SDK. It supplies specialized context about Telerik UI for WPF components so AI-powered IDEs and tools can generate more accurate, tailored XAML and C# code.
+The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is also available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package. Beginning with .NET 10 it can be executed directly via the `dnx` command. For .NET 8 and .NET 9 (where `dnx` is not available) you can install it as a local dotnet tool and invoke its executable.
 
 ## Prerequisites
 
-To use the Telerik WPF MCP server via NuGet, you need:
+| Target Runtime | Required SDK | Invocation Method | Notes |
+|----------------|--------------|-------------------|-------|
+| .NET 8 / .NET 9 | .NET 8 or .NET 9 SDK | Local dotnet tool (`telerik-wpf-mcp.exe`) | `dnx` not supported; install tool manually |
+| .NET 10 | .NET 10 SDK (Preview 6 or newer) | `dnx` dynamic execution | Simplest approach; no prior install step |
 
-* .NET 10 SDK (Preview 6 or newer) installed. The SDK is required for the `dnx` command.
+Common requirements:
+
 * An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports MCP tools (latest version recommended).
-* A WPF project targeting `net10.0-windows` if you want local project context to be part of AI responses.
+* A WPF project targeting `net8.0-windows`, `net9.0-windows`, or `net10.0-windows` if you want local project context to be part of AI responses.
 * A valid [Telerik license key]({%slug installing-license-key%}).
+
+## Summary of Installation Approaches
+
+| Aspect | .NET 8 / 9 | .NET 10 |
+|--------|------------|---------|
+| Availability of `dnx` | Not available | Available |
+| Install Command | `dotnet tool install --tool-path ./.tools Telerik.WPF.MCP` | None (resolved on demand) |
+| Executable Path | `./.tools/telerik-wpf-mcp.exe` | Handled by `dnx` |
+| .mcp.json Command | `.\\.tools\\telerik-wpf-mcp.exe` | `dnx` |
+| .mcp.json Args | _None_ | `Telerik.WPF.MCP`, `--yes` |
+| Update Version | Re-run tool install with `--version` or `tool update` | Handled by latest package resolved by `dnx` |
+| Offline Use | Requires prior tool install | Requires prior NuGet cache warm-up |
 
 ## Server Installation
 
-The NuGet-based server does not require a manual `dotnet add package` step. The `dnx` command will download and execute the NuGet package on demand.
+### .NET 8 / .NET 9
+
+Install the MCP server as a local tool in your solution root (or another chosen path):
+
+```powershell
+dotnet tool install --tool-path ./.tools Telerik.WPF.MCP
+```
+
+If updating:
+
+```powershell
+dotnet tool update --tool-path ./.tools Telerik.WPF.MCP
+```
+
+This creates the executable at `./.tools/telerik-wpf-mcp.exe`.
+
+### .NET 10
+
+No manual install step is needed. The `dnx` command will download and execute the NuGet package on demand.
 
 ## Server Configuration
+
+### .NET 8 / .NET 9 Configuration (`.mcp.json`)
+
+Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global usage):
+
+```json
+{
+  "servers": {
+    "telerik-wpf-assistant": {
+      "type": "stdio",
+      "command": ".\\.tools\\telerik-wpf-mcp.exe",
+      "env": {
+        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+      }
+    }
+  }
+}
+```
+
+If you prefer embedding the license string directly:
+
+```json
+"env": {
+  "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+}
+```
+
+### .NET 10 Configuration (`.mcp.json`)
 
 Use these settings when configuring the server in your MCP client:
 
@@ -38,33 +100,50 @@ Use these settings when configuring the server in your MCP client:
 
 ### Workspace-Specific Setup
 
-Add a `.mcp.json` file to your solution (root) folder:
+Add a `.mcp.json` file to your solution (root) folder. Choose the variant that matches your target .NET runtime:
+
+#### .NET 8 / .NET 9 Example
 
 ```json
 {
-  "inputs": [],
   "servers": {
     "telerik-wpf-assistant": {
       "type": "stdio",
-      "command": "dnx",
-      "args": ["Telerik.WPF.MCP", "--yes"],
+      "command": ".\\.tools\\telerik-wpf-mcp.exe",
       "env": {
-        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-        // or
-        "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
       }
     }
   }
 }
 ```
 
-Restart Visual Studio and enable the `telerik-wpf-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+#### .NET 10 Example (using `dnx`)
+
+```json
+{
+  "servers": {
+    "telerik-wpf-assistant": {
+      "type": "stdio",
+      "command": "dnx",
+      "args": ["Telerik.WPF.MCP", "--yes"],
+      "env": {
+        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+      }
+    }
+  }
+}
+```
+
+You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (see License Configuration section below for details and recommendations). The `inputs` array is optional and not required for current functionality.
+
+After saving the file, restart Visual Studio and enable the `telerik-wpf-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 ![](images/ai-mcp-server-0.png)
 
 ### Global Setup
 
-To enable the server globally for all projects, add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`).
+To enable the server globally for all projects, add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`). The same distinction applies: use the executable path for .NET 8/9, or `dnx` for .NET 10.
 
 ## License Configuration
 

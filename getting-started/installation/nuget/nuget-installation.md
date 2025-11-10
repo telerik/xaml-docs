@@ -41,7 +41,7 @@ The following steps show how to search and install nuget packages in the Telerik
 
 	![{{ site.framework_name }} Manage NuGet Packages Menu](images/nuget-installation-3.png)
 	
-1. Set the Telerik server as the current package source. This will prompt you to log into your telerik.com account. Enter user credentials and search for the needed package.
+1. Set the Telerik server as the current package source. This will prompt you to enter Telerik credentials. The exact credentials are `api-key` as the username and a NuGet API Key as the password. You can generate a key via the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your telerik.com account.
 
 1. Install the package. Some packages depend on other ones in the server, so they will be installed automatically if needed.
 

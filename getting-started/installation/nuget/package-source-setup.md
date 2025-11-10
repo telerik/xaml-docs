@@ -17,6 +17,20 @@ The Telerik server is an online package source that can be accessed through Visu
 
 > The NuGet v2 server at https://nuget.telerik.com/nuget was sunset in November 2024. The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure. To redirect your feed to the NuGet v3 protocol, all you have to do is to change  your NuGet package source URL to https://nuget.telerik.com/v3/index.json. 
 
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password.
+
+1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+1. Click Generate New Key +.
+
+	![Generate New Key + Button](images/nuget-package-source-setup-1.png)
+
+1. In the Key Note field, add a note that describes the API key.
+1. Click Generate Key.
+1. Select Copy and Close. Once you close the window, you can no longer copy the generated key. For security reasons, the API Keys page displays only a portion of the key.
+1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
+
+> API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+
 The following steps show how to setup the package source in Visual Studio. 
 
 1. Navigate to the Package Manager Settings menu in Visual Studio.
@@ -33,9 +47,25 @@ The following steps show how to setup the package source in Visual Studio.
 	
 1. The Telerik Server is added and ready to use. 
 
-Selecting the Telerik's source as the __Package source__ in Visual Studio will prompt you to enter your __telerik.com credentials__ (email and password).
+Selecting the Telerik's source as the __Package source__ in Visual Studio will prompt you to enter your credentials. Use `api-key` as the username and your generated API key as the password.
 
 Using this approach you can only use versions from __2016.3.1024 and later__. If you need to use a previous version of the suite you will need to create a [local package source](#using-a-local-package-source).
+
+### Reset Store Credentials
+
+If you previously stored credentials for the Telerik NuGet server, you need to reset them to be able to authenticate with your new API key. Here are the steps you need to follow:
+
+1. Remove the saved credentials in the [Windows Credential Manager](https://support.microsoft.com/en-us/windows/credential-manager-in-windows-1b5c916a-6a16-889f-8581-fc16e8165ac0). These credentials will appear as `nuget.telerik.com` or `VSCredentials_nuget.telerik.com` entries.
+1. Remove the Telerik NuGet package source from Visual Studio.
+1. If you have added the Telerik package source by using the .NET CLI, try to remove it by running the following commands:
+   
+   * [dotnet nuget list source](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-list-source)
+   * [dotnet nuget remove source](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-remove-source)
+
+1. Check if you have any credentials stored in `%AppData%\NuGet\Nuget.Config`. If so, remove them.
+1. Try to reset the Visual Studio user data by [forcing NuGet to ask for authentication](https://stackoverflow.com/questions/43550797/how-to-force-nuget-to-ask-for-authentication-when-connecting-to-a-private-feed).
+1. Restart Visual Studio.
+1. Add the Telerik NuGet package source again through Visual Studio or .NET CLI.
 
 ## Using a Local Package Source
 

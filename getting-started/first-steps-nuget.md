@@ -30,7 +30,7 @@ This will create an empty WPF project where you can install the NuGet packages.
 
 This article shows how to connect to the Telerik NuGet server but you can also download the packages locally and use them offline. Read more in the [Installing UI for WPF from a NuGet package]({%slug nuget-installation%}) article.
 
-To setup, the Telerik NuGet server, open the __Package Manager Settings__ menu in Visual Studio and create a new __package source__. Use `https://nuget.telerik.com/v3/index.json` as the __Source__. This step is described in details in the [Using the Telerik NuGet Server]({%slug nuget-package-source-setup%}) section of the NuGet article. Once you choose the Telerik package source in the Nuget manager, you will get prompted to login with your *telerik.com* account.
+To setup, the Telerik NuGet server, open the __Package Manager Settings__ menu in Visual Studio and create a new __package source__. Use `https://nuget.telerik.com/v3/index.json` as the __Source__. This step is described in details in the [Using the Telerik NuGet Server]({%slug nuget-package-source-setup%}) section of the NuGet article. Once you choose the Telerik package source in the Nuget manager, you will get prompted to enter your Telerik credentials. The exact credentials are `api-key` as the username and a NuGet API Key as the password. You can generate a key via the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your telerik.com account.
 
 To install a Telerik dll, search for the name of the corresponding assembly in the search bar and then install it in the project.
 

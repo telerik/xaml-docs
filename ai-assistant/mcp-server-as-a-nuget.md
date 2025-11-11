@@ -145,6 +145,18 @@ After saving the file, restart Visual Studio and enable the `telerik-wpf-assista
 
 To enable the server globally for all projects, add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`). The same distinction applies: use the executable path for .NET 8/9, or `dnx` for .NET 10.
 
+### Telerik Visual Studio Extension Setup:
+
+The `.mcp.json` file can be created and updated by using the [Telerik Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) menu in Visual Studio.
+
+![](images/ai-mcp-server-1.png)
+
+The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds  the Telerik server entry.
+
+The `Configure MCP Server for Solution` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) the  `.mcp.json` file in the solution directory.
+
+The `Add/Update GitHub Copilot Instructions` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) an [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio) file in the `.github\` folder of the solution (`\SolutionDir\.github\copilot-instructions.md`), which includes extra context that is automatically used with the prompt given to the Copilot chat in Visual Studio.
+
 ## License Configuration
 
 Add your [Telerik license key]({%slug installing-license-key%}) using one of these options in the `env` section.
@@ -179,11 +191,11 @@ After configuration and restart:
 2. Enable the `telerik-wpf-assistant` tool.
 3. Grant permissions when prompted (per session, workspace, or always).
 
-![](images/ai-mcp-server-1.png)
+![](images/ai-mcp-server-2.png)
 
 Start fresh sessions for unrelated prompts to avoid context pollution. You can check the Output pane of Visual Studio for diagnostics (select output from GitHub Copilot).
 
-![](images/ai-mcp-server-2.png)
+![](images/ai-mcp-server-3.png)
 
 ## Usage
 

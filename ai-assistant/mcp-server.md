@@ -7,11 +7,13 @@ tags: telerik,WPF,ai,ai server,dotnetWPF,coding assistant
 position: 20
 ---
 
-# Telerik WPF MCP Server
+# Telerik WPF MCP Server (Manual Installation)
 
 The Telerik WPF [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik UI for WPF components.
 
 This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik UI for WPF components](https://www.telerik.com/WPF-ui) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
+
+>tip The MCP server can be [installed also as a NuGet package]({%slug ai-mcp-server-as-a-nuget%}), instead of using __Node.js__ and `npm` commands as shown below.
 
 ## Prerequisites
 
@@ -105,6 +107,18 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 To enable the server globally for all projects, add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`).
 
+### Telerik Visual Studio Extension Setup:
+
+The `.mcp.json` file can be created and updated by using the [Telerik Visual Studio Extension]({%slug radcontrols-for-wpf-vs-extensions-overview-wpf%}) menu in Visual Studio.
+
+![](images/ai-mcp-server-1.png)
+
+The `Configure MCP Server Globally` option creates (or updates if existing) the global `%USERPROFILE%\.mcp.json` file and adds  the Telerik server entry.
+
+The `Configure MCP Server for Solution` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) the  `.mcp.json` file in the solution directory.
+
+The `Add/Update GitHub Copilot Instructions` option is visible only if you have a project opened in Visual Studio. The option creates (or updates if existing) an [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions?tool=visualstudio) file in the `.github\` folder of the solution (`\SolutionDir\.github\copilot-instructions.md`), which includes extra context that is automatically used with the prompt given to the Copilot chat in Visual Studio.
+
 ## Usage
 
 To use the Telerik MCP Server:
@@ -116,13 +130,13 @@ To use the Telerik MCP Server:
    
 1. Grant permissions when prompted (per session, workspace, or always).
 
-	![](images/ai-mcp-server-1.png)
+	![](images/ai-mcp-server-2.png)
 
 1. Start fresh sessions for unrelated prompts to avoid context pollution.
 
 You can check the Output pane of Visual Studio for diagnostics information related to Copilot. To display the relevant information, select to show output from GitHub Copilot.
 
-![](images/ai-mcp-server-2.png)
+![](images/ai-mcp-server-3.png)
 
 ### Improving Server Usage
 

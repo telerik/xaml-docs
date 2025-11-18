@@ -219,6 +219,5 @@ Examples you can try:
 
 ## See Also
 
-* [Telerik WPF GitHub Copilot Extension]({%slug ai-copilot-extension%})
 * [AI Coding Assistant Overview]({%slug ai-overview%})
 * [npm-based Telerik WPF MCP Server]({%slug ai-mcp-server%})

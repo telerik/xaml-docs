@@ -16,23 +16,10 @@ The coding assistant is an AI code generator that provides specialized context t
 ## Available Tools
 
 The Telerik AI Coding Assistant is available through:
-
-* [Telerik WPF GitHub Copilot Extension]({%slug ai-copilot-extension%})	  
 	
 * [Telerik WPF MCP Server]({%slug ai-mcp-server%})
 
-> [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps) on November 10, 2025, in favor of the Model Context Protocol (MCP) standard.
->
-> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP servers](slug:ai-mcp-server). You can enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
-
-### Key Differences
-
-| Feature                | MCP Server                                                                | GitHub Copilot Extension                                   |
-|------------------------|---------------------------------------------------------------------------|------------------------------------------------------------|
-| Prompt Handling        | Handles complex, multi-step prompts                                       | Offers shorter, focused code snippets                      |
-| Client Compatibility   | Works with MCP-enabled clients (e.g. Copilot Agent mode)         		 | Integrated as a Copilot extension                          |
-| Code Suggestions       | Can directly suggest changes and rebuild applications to verify code      | Provides detailed explanations alongside code suggestions  |
-| Response Focus         | Primarily code-focused                                                    | Better for learning and understanding implementation       |
+* [Telerik WPF MCP server as a NuGet Package]({%slug ai-mcp-server-as-a-nuget%})
 
 ## Getting Started
 
@@ -76,7 +63,7 @@ Access to the AI Coding Assistant depends on your [Telerik license type](https:/
 * Reactivating the same trial for a new release does not grant additional requests.
 * Designed for evaluating the feature before purchasing.
 
-> All Telerik AI tools share a single request quota for your Telerik account. Usage from the [Telerik Copilot extension]({%slug ai-copilot-extension%}) and [Telerik MCP server]({%slug ai-mcp-server%}) counts toward the same limit. Complex prompts in the MCP server may consume multiple requests.
+> All Telerik AI tools share a single request quota for your Telerik account. Usage from the [Telerik MCP server]({%slug ai-mcp-server%}) counts toward the same limit. Complex prompts in the MCP server may consume multiple requests.
 
 ## Privacy
 
@@ -105,6 +92,5 @@ Read the full guide in the dedicated [DPL AI Coding Assistant article](https://d
 
 ## Next Steps
 
-* Install the [Telerik WPF GitHub Copilot Extension]({%slug ai-copilot-extension%}).
 * Configure the [Telerik WPF MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client.
 * Explore the [Telerik UI for WPF Prompt Library]({%slug ai-prompt-library%}).

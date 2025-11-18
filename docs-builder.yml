@@ -2480,3 +2480,7 @@ redirects:
     from: "^controls/radpdfviewer/document-model/text/(.*)$"
     to: "/controls/radpdfviewer/document-model/$1"
     type: Permanent 
+-
+    from: "^ai-assistant/copilot-extension$"
+    to: "/ai-assistant/mcp-server"
+    type: Permanent 

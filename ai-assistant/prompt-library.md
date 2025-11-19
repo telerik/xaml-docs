@@ -4,7 +4,7 @@ page_title: Telerik UI for WPF Prompt Library
 description: Explore the collection of prompts that you can use with the Telerik UI for WPF AI Coding Assistant.
 slug: ai-prompt-library
 tags: telerik,wpf,ai,coding assistant,prompt,library
-position: 30
+position: 3
 ---
 
 # Telerik UI for WPF Prompt Library

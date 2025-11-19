@@ -76,36 +76,37 @@ The Telerik UI for WPF AI Coding Assistant currently covers the following compon
     <td><strong>RadProgressBar</strong></td>
     <td><strong>RadRadialMenu</strong></td>
     <td><strong>RadRating</strong></td>
-    <td><strong>RadSlideView</strong></td>
+    <td><strong>RadScheduleView</strong></td>    
   </tr>
   <tr>
+    <td><strong>RadSlideView</strong></td>
     <td><strong>RadSlider</strong></td>
     <td><strong>RadSplashScreen</strong></td>
-    <td><strong>RadStepProgressBar</strong></td>
-    <td><strong>RadSvgImage</strong></td>
+    <td><strong>RadStepProgressBar</strong></td>    
   </tr>
   <tr>
+    <td><strong>RadSvgImage</strong></td>
     <td><strong>RadTabControl</strong></td>
     <td><strong>RadTabbedWindow</strong></td>
     <td><strong>RadTaskBoard</strong></td>
-    <td><strong>RadTileList</strong></td>
   </tr>
-  <tr>
+  <tr>    
+    <td><strong>RadTileList</strong></td>
     <td><strong>RadTileView</strong></td>
     <td><strong>RadTimeSpanPicker</strong></td>
     <td><strong>RadToolBar</strong></td>
-    <td><strong>RadTransitionControl</strong></td>
   </tr>
   <tr>
+    <td><strong>RadTransitionControl</strong></td>
     <td><strong>RadTreeListView</strong></td>
     <td><strong>RadTreeView</strong></td>
     <td><strong>RadWatermarkTextBox</strong></td>
-    <td><strong>RadWindow</strong></td>
   </tr>
   <tr>
+    <td><strong>RadWindow</strong></td>
     <td><strong>RadWizard</strong></td>
     <td><strong>TouchManager</strong></td>
-    <td><strong>DragDropManager</strong></td>
+    <td><strong>DragDropManager</strong></td>    
   </tr>
 </table>
 #end

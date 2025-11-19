@@ -4,7 +4,7 @@ page_title: Telerik WPF MCP (Model Context Protocol) Server as a NuGet Package
 description: Learn how to add and use the Telerik WPF MCP Server via a NuGet package with the dnx command as a WPF AI coding assistant and code generator for better developer productivity. The Telerik WPF MCP server provides proprietary context about Telerik UI for WPF to AI-powered software.
 slug: ai-mcp-server-as-a-nuget
 tags: telerik,WPF,ai,ai server,dotnetWPF,coding assistant,nuget
-position: 25
+position: 2
 ---
 
 # Telerik WPF MCP Server (NuGet)

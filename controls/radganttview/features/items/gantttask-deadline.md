@@ -10,17 +10,13 @@ position: 5
 
 # GanttTask Deadline
 
-With the official Q2 2014 release of UI for WPF/SL you will have the option to use the __Deadline__ property of the __GanttTask__ and visualize an indicator showing whether the task is expired.  
-
-This help topic will describe the Deadline property in more details as well as how you could customize its behavior.
+RadGanttView tasks allow you to display an indicator showing whether the task is expired or not. You can enable this by setting the __Deadline__ property of the __GanttTask__ object. This help topic will describe the Deadline property in more details as well as how you could customize its behavior.
 
 ## Overview
 
 Setting the __Deadline__ property of the GanttTask visualizes a vertical line showing the deadline for finishing the task as well as an indicator showing whether the task is on time or delayed.
 
 __Example 1__ shows how the Deadline can be set.
-
-
 
 ```C#
 	var task = new GanttTask()
@@ -31,9 +27,6 @@ __Example 1__ shows how the Deadline can be set.
 	    Title = "Gantt Rendering"
 	};
 ```
-
-#### __VB__
-
 ```VB
 	Dim task = New GanttTask() With { _
 	    .Start = New DateTime(2014, 6, 6), _
@@ -57,8 +50,6 @@ In order to change this behavior, you will need to create a custom GanttTask and
 
 __Example 2__ shows how to override CheckIsExpired method.
 
-
-
 ```C#
 	public class CustomGanttTask : GanttTask
 	{
@@ -68,9 +59,6 @@ __Example 2__ shows how to override CheckIsExpired method.
 	    }
 	}
 ```
-
-#### __VB__
-
 ```VB
 	Public Class CustomGanttTask
 	    Inherits GanttTask
@@ -93,3 +81,4 @@ Figure 3: As soon as the Start goes after the Deadline, the task is marked as de
 ## See Also
 
  * [Custom GanttTask]({%slug radganttview-features-items-custom-gantttask%})
+

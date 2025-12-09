@@ -18,7 +18,6 @@ pdf-cover-png-path: ./images/pdf-cover.png
 img-max-width: 100%
 table-layout: fixed
 gitLastCommitDateEnabled: true
-search-provider: nuclia
 
 cta-overview: The @Subject is part of @ProductLink, a professional grade UI library with 160+ components for building modern and feature-rich applications. To try it out sign up for a free 30-day trial.
 cta-intro: "@ProductLink is a professional grade UI library with 160+ components for building modern and feature-rich applications. To try it out sign up for a free 30-day trial."

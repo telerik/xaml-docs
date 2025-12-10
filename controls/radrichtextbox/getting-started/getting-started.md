@@ -24,7 +24,7 @@ position: 0
 
 To use RadRichTextBox when working with NuGet packages in __.NET Framework 4.6.2__, install the `Telerik.Windows.Documents.for.Wpf.Xaml` package. In .NET Framework 4.6.2 you will need to install packages also for the format providers and the RichTextBoxUI component. In {{ site.minimum_net_core_version }} these components are merged in the RichTextBox package mentioned below.
 
-To use RadRichTextBox when working with NuGet packages in __{{ site.minimum_net_core_version }}__ and later, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml` package. 
+To use RadRichTextBox when working with NuGet packages in a __.NET__ project, install the `Telerik.Windows.Controls.RichTextBox.for.Wpf.Xaml` package. 
 
 The [package name may vary]({%slug nuget-available-packages%}) slightly based on the Telerik dlls set - [Xaml or NoXaml]({%slug xaml-vs-noxaml%})
 
